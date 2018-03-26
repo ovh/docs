@@ -1,0 +1,9 @@
+themes
+plugins
+accounts
+config
+data
+.revs
+.vscode
+
+.DS_Store

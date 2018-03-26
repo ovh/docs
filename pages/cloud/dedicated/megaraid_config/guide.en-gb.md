@@ -1,0 +1,131 @@
+---
+title: Configuring MegaRAID for RAID Level 0
+slug: using-the-maximum-amount-of-disk-space
+excerpt: This guide will help you to configure your server’s disks with RAID 0, which will allow you to use all your disks' usable space.
+section: Server Management
+---
+
+**Last updated 16th March, 2018**
+ 
+## Objective
+
+Redundant Array of Independent Disks (RAID) is a utility that mitigates data loss on a server by replicating data across two or more disks.
+
+The default RAID level for OVH server installations is RAID 1, which doubles the space taken up by your data, effectively halving the usable disk space.
+
+This guide will help you to configure your server’s disks with RAID 0, which will allow you to use all your disks' usable space.
+
+> [!warning]
+> 
+> Please note: RAID 0 provides **NO FAULT TOLERANCE** and **NO DATA REDUNDANCY**, making data loss in the event of disk failure highly likely.
+> 
+
+## Requirements
+
+- A dedicated server with hardware RAID
+- Root access to the server
+
+## Instructions
+
+### Using the OVH Control Panel
+
+**Step 1:** In your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Dedicated`{.action} menu and select your server
+
+**Step 2:** On the `Server status`{.action} tab, click the `Reinstall`{.action} button to install a new operating system with your custom RAID 0 configuration
+
+**Step 3:** Select **Install from an OVH template** and then click `Next`{.action}
+
+![megaraid](images/server_installation_raid0_01.png){.thumbnail}
+
+**Step 4:** Select the operating system you want to install and then click `Next`{.action}
+
+**Step 5:** Tick the box for **Customise the RAID hardware configuration**
+
+**Step 6:** Tick the box for **Customise the partition configuration**
+
+**Step 7:** Click `Next`{.action}
+
+![megaraid](images/server_installation_raid0_02.png){.thumbnail}
+
+**Step 8:** Select raid0 from the RAID drop-down list and click `Next`{.action}
+
+![megaraid](images/server_installation_raid0_03.png){.thumbnail}
+
+**Step 9:** Configure the partitions as you see fit and then click `Next`{.action}
+
+![megaraid](images/server_installation_raid0_04.png){.thumbnail}
+
+**Step 10:** Click `Confirm`{.action}
+
+![megaraid](images/server_installation_raid0_05.png){.thumbnail}
+
+**Step 11:** After your server has been installed, check the partition sizes by logging on to the server via SSH and running the following command:
+
+```sh
+df -h
+```
+
+### Using Rescue Mode
+
+**Step 1:** In your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Dedicated`{.action} menu and select your server
+
+**Step 2:** On the `Server status`{.action} tab, click the `Edit`{.action} button to change the boot system
+
+![megaraid](images/rescue_mode_raid0_01.png){.thumbnail}
+
+**Step 3:** Select `Boot on rescue mode`{.action}
+
+**Step 4:** Select `rescue64-pro`{.action} from the drop-down list
+
+**Step 5:** Type your email address in the `Get your updated username`{.action} field
+
+![megaraid](images/rescue_mode_raid0_02.png){.thumbnail}
+
+**Step 6:** Click `Next`{.action}
+
+**Step 7:** Click `Confirm`{.action}
+
+![megaraid](images/rescue_mode_raid0_03.png){.thumbnail}
+
+**Step 8:** Click the `Restart`{.action} button in your Control Panel.
+
+![megaraid](images/server_installation_raid0_06.png){.thumbnail}
+
+**Step 9:** When your server reboots, log in to it via SSH using the rescue mode credentials that were emailed to you.
+
+**Step 10:** In the command line, type the following commands to delete the existing RAID settings. All data in the RAID will be deleted:
+
+```sh
+MegaCli -CfgLdDel -L0 -a0
+MegaCli -CfgLdDel -Lall -aAll
+```
+
+**Step 11:** Type the following command to retrieve the slot device IDs of your disks:
+
+```sh
+MegaCli -PdList -aALL | egrep "Slot|Device ID"
+```
+
+**Step 12:** Type the following commands to configure RAID level 0:
+
+```sh
+MegaCli -CfgLDAdd -R0[252:0,252:1] -a0
+```
+
+In this example, 252 is the ID of the drive enclosure.
+
+**Step 13:** (optional) – After setting the new RAID level you can check the settings with the following command:
+
+```sh
+MegaCli -LDInfo -Lall -a0 |grep -i size
+```
+
+## Go further
+
+[Hot Swap – Hardware RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external}
+
+[Hot Swap – Software RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/){.external}
+
+[Software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external}
+
+Join our community of users on <https://community.ovh.com/en/>
