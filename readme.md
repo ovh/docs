@@ -24,9 +24,6 @@ Please :
 * If you ned 
 * Precise the nature of your contribution in the comment  ;
 
-All projects and everyone participating in it is governed by OVH Code Of Conduct. By participating, you are expected to uphold this code. Please read this before.
-
-
 
 ## Licensing
 
