@@ -20,7 +20,7 @@ We will be happy to take a look to your contributions. You can contribute to thi
 Please : 
 
 * Verify and test every actions you describe: do not write about things you cannot test by yourself ;
-* Prefer to use the English version of the Manager to take screenshots ;
+* Prefer to use the English version of the Control Panel to take screenshots ;
 * If you ned 
 * Precise the nature of your contribution in the comment  ;
 
