@@ -21,8 +21,7 @@ Please :
 
 * Verify and test every actions you describe: do not write about things you cannot test by yourself ;
 * Prefer to use the English version of the Manager to take screenshots ;
-* If you ned 
-* Precise the nature of your contribution in the comment  ;
+* If you need, precise the nature of your contribution in the comment.
 
 
 ## Licensing
