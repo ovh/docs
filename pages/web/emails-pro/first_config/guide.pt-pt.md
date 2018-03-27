@@ -1,11 +1,11 @@
 ---
-title: Como configurar o serviço E-mail Pro
+title: 'Como configurar o serviço E-mail Pro'
 slug: configuracao-inicial
-excerpt: Saiba como configurar o serviço E-mail Pro
+excerpt: 'Saiba como configurar o serviço E-mail Pro'
 section: Geral
 ---
 
-**Última atualização: 26/03/2018**
+**Última atualização: 23/03/2018**
 
 ## Sumário
 
@@ -75,11 +75,11 @@ No final do processo, verifique as informações apresentadas e clique em `Confi
 
 ### 3 - Configurar o domínio
 
-Quando o domínio adicionado estiver associado ao serviço, certifique-se que a configuração do mesmo está correta. Para tal, consulte a tabela apresentada em «Domínios associados».
+Quando o domínio adicionado estiver associado ao serviço, verifique se a configuração do mesmo está correta. Para tal, consulte a tabela apresentada em «Domínios associados».
 
 A coluna `Diagnóstico`{.action} indica se a configuração do domínio está correta ou não. Se apresentar uma etiqueta vermelha, terá de alterar a configuração.
 
-- **A configuração automática** pode demorar algumas horas até estar concretizada. Pode ver o estado do processo na Área de Cliente.
+- **A configuração automática ** pode demorar algumas horas até estar concretizada. Pode ver o estado do processo na Área de Cliente.
 - **Se indicou um domínio não gerido pela OVH**, clique na etiqueta vermelha para ver as alterações a realizar. As alterações podem demorar algumas horas até estarem concretizadas. Pode ver o estado do processo na Área de Cliente.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
@@ -102,7 +102,7 @@ Introduza os dados solicitados.
 |Nome a mostrar|Insira o nome do remetente apresentado nos e-mails enviados.|
 |Palavra-passe e confirmação|Indique uma palavra-passe, e introduza-a novamente para confirmar.| 
 
-De seguida, clique em `Seguinte`{.action}. Verifique as informações apresentadas e clique em `Confirmar`{.action} para dar início à configuração da conta.
+Depois, clique em `Seguinte`{.action}. Verifique as informações apresentadas e clique em `Confirmar`{.action} para dar início à configuração da conta.
 
 > [!primary]
 >
@@ -113,9 +113,9 @@ De seguida, clique em `Seguinte`{.action}. Verifique as informações apresentad
 
 ### 5 - Usar o serviço de e-mail
 
-As contas foram configuradas e estão prontas a usar. Para tal, aceda à aplicação web disponível em: <https://pro1.mail.ovh.net> e insira dos dados de acesso da sua conta.
+As contas foram configuradas e estão prontas a usar. Para tal, aceda à aplicação web disponível em: [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external} e insira os dados de acesso da sua conta.
 
-Se quiser, também pode configurar o seu endereço de e-mail num software (cliente) de correio eletrónico para receber e enviar mensagens no computador, smartphone ou tablet. Para saber como, consulte esta página: <https://docs.ovh.com/pt/emails-pro/>.
+Se quiser, também pode configurar o seu endereço de e-mail num software (cliente) de correio eletrónico para receber e enviar mensagens através do computador, smartphone ou tablet. Para saber como, consulte esta página: [https://docs.ovh.com/pt/emails-pro/](https://docs.ovh.com/pt/emails-pro/){.external}.
 
 ## Quer saber mais?
 
