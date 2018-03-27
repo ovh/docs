@@ -73,7 +73,7 @@ Ces règles lancent le script  **testing.php**  avec la variable GET contenant l
 ```php
 1. <?
 2. print("testing server <br/>\n");
-3. print("var: $var\n");
+3. print("var: {$_GET['var']}\n");
 4. ?>
 ```
 
