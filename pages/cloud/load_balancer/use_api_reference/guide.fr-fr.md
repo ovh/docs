@@ -50,7 +50,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {GET} /ipLoadbalancing/{serviceName}/udp/frontend
 > 
 
-### Crée d'un frontend
+### Crée un frontend
 
 > [!api]
 >
@@ -105,7 +105,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {GET} /ipLoadbalancing/{serviceName}/udp/farm
 > 
 
-### Crée d'une ferme
+### Crée une ferme
 
 > [!api]
 >
