@@ -111,7 +111,7 @@ L'activation du ProxyProtocol via l'API se fait de la même manière que via le 
 > @api {POST} /ipLoadbalancing/{serviceName}/refresh
 > 
 
-## Configuration du ProxyProtocol cote serveur
+## Configuration du ProxyProtocol coté serveur
 
 ### Nginx
 Nginx gère la version 1 du ProxyProtocol. Il est capable d'en extraire les principales informations, à savoir l'adresse IP et le port source du client tels que vu par votre service OVH Load Balancer. Dans Nginx, ces informations sont exposées à travers la variable proxy_protocol_addr. De même que pour son homologue HTTP X-Forwarded-For Nginx se servir de cette variable pour prendre en compte la bonne adresse source dans les logs avec le module ngx_http_realip.
@@ -233,11 +233,11 @@ Pour en savoir plus sur la configuration du module mod_remoteip nous vous invito
 
 
 ### HAProxy
-Le ProxyProtocol a été conçu par l'équipe de HAProxy. Il est donc le logiciel gérant le mieux ce protocole. Cela pourra être utile dans un scénario où le suivi de la véritable IP source cu client est indispensable mais le logiciel cible ne gère pas ce protocole. Ce sera le cas par exemple de MySQL et PostgreSQL pour n'en citer que 2.
+Le ProxyProtocol a été conçu par l'équipe de HAProxy. Il est donc le logiciel gérant le mieux ce protocole. Cela pourra être utile dans un scénario où le suivi de la véritable IP source du client est indispensable mais le logiciel cible ne gère pas ce protocole. Ce sera le cas par exemple de MySQL et PostgreSQL pour n'en citer que 2.
 
 Dans ce cas, une astuce est de placer une instance HAProxy locale, en frontal du logiciel et assurer la journalisation des requête et leur filtrage avancé dans l'instance HAProxy locale.
 
-Ce guide vous propose un exemple de configuration possible pour le port TCP 3306 utilisé par MySQL. Cette configuration n'a pas vocation a être une exemple complet mais plutôt à servir de base de manière à partir sur une configuration fonctionnelle.
+Ce guide vous propose un exemple de configuration possible pour le port TCP 3306 utilisé par MySQL. Cette configuration n'a pas vocation a être un exemple complet mais plutôt à servir de base de manière à partir sur une configuration fonctionnelle.
 
 - Installez HAProxy
 
