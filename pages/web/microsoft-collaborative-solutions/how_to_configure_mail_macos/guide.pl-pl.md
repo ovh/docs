@@ -1,11 +1,11 @@
 ---
-title: Konfiguracja konta Exchange w aplikacji Mail na macOS
+title: 'Konfiguracja konta Exchange w aplikacji Mail na macOS'
 slug: konfiguracja-mail-macos
-excerpt: Dowiedz się, jak skonfigurować Twoje konto Exchange w aplikacji Mail na macOS - El Capitan, Sierra i High Sierra
-section: Konfiguracja programu pocztowego Exchange
+excerpt: 'Dowiedz się, jak skonfigurować Twoje konto Exchange w aplikacji Mail na macOS - El Capitan, Sierra i High Sierra'
+section: 'Konfiguracja programu pocztowego Exchange'
 ---
 
-**Ostatnia aktualizacja dnia 2018-03-26**
+**Ostatnia aktualizacja dnia 2018-03-27**
 
 ## Wprowadzenie
 
@@ -16,9 +16,9 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 ## Wymagania początkowe
 
-- Wykupienie kont e-mail [Exchange](https://www.ovh.pl/emaile/){.external}.
-- Instalacja aplikacji Mail na Twoim urządzeniu.
-- Dane do logowania do konta e-mail, które chcesz skonfigurować.
+- Wykupienie kont e-mail [Exchange](https://www.ovh.pl/emaile/){.external}
+- Instalacja aplikacji Mail na Twoim urządzeniu
+- Dane do logowania do konta e-mail, które chcesz skonfigurować
 
 > [!primary]
 >
@@ -67,7 +67,7 @@ Jeśli nie udaje Ci się zalogować, zalecamy, abyś:
 
 - sprawdź konfigurację domeny w usłudze Exchange w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, zakładka `Powiązane domeny`{.action}, kolumna `Diagnostyka`{.action} w tabeli;
 
-- wprowadź ręcznie linki dostępowe do usługi Exchange. Kontynuuj operację mimo alertu o bezpieczeństwa certyfikatu, następnie wpisz w polach `URL wewnętrzny`{.action} i `URL zewnętrzny`{.action} informacje o serwerze, na którym hostowana jest Twoja usługa Exchange.
+- wprowadź ręcznie linki dostępowe do usługi Exchange. Kontynuuj operację mimo alertu o bezpieczeństwie certyfikatu, następnie wpisz w polach `URL wewnętrzny`{.action} i `URL zewnętrzny`{.action} informacje o serwerze, na którym hostowana jest Twoja usługa Exchange.
 
 W celu sprawdzenia nazwy serwera zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i przejdź do usługi Exchange. Następnie przejdź do zakładki `Informacje ogólne`{.action} i wyszukaj serwer, który pojawia się w ramce `Połączenie`{.action}.
 
@@ -75,10 +75,10 @@ W celu sprawdzenia nazwy serwera zaloguj się do [Panelu klienta](https://www.ov
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVH oferuje aplikację internetową posiadającą [funkcje do pracy zespołowej](https://www.ovh.pl/emaile/){.external} dostępną pod adresem <https://mail.ovh.net/pl/> . Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail przez Mail.
+OVH oferuje aplikację internetową posiadającą [funkcje do pracy zespołowej](https://www.ovh.pl/emaile/){.external} dostępną pod adresem <https://mail.ovh.net/pl/>. Możesz się do niej zalogować, używając tych samych danych, których użyłeś do konfiguracji konta e-mail przez Mail.
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail włączonego do usługi MX Plan lub do usługi hostingu w aplikacji Mail na urządzeniach z systemem macOS](https://docs.ovh.com/pl/emails/konfiguracja-mail-macos/){.external}.
+[Konfiguracja konta e-mail włączonego do usługi MX Plan lub do usługi hostingu w aplikacji Mail na urządzeniach z systemem macOS](https://docs.ovh.com/pl/emails/konfiguracja-mail-macos/){.external}
 
-Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com](https://community.ovh.com){.external}.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
