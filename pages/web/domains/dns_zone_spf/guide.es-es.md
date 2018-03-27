@@ -1,11 +1,11 @@
 ---
-title: Añadir un registro SPF a la configuración del dominio
-excerpt: Cómo añadir un registro SPF a la configuración de un dominio en OVH
+title: 'Añadir un registro SPF a la configuración del dominio'
+excerpt: 'Cómo añadir un registro SPF a la configuración de un dominio en OVH'
 slug: web_hosting_el_registro_spf
-section: DNS (servidor y zona)
+section: 'DNS (servidor y zona)'
 ---
 
-**Última actualización: 22/03/2018**
+**Última actualización: 27/03/2018**
 
 ## Objetivo
 
@@ -32,9 +32,9 @@ El SPF (Sender Policy Framework) permite que un servidor que recibe un mensaje d
 
 Antes de añadir o modificar un registro SPF en la configuración de su dominio, es importante entender para qué sirve. El registro SPF permite evitar posibles usurpaciones de identidad con las direcciones de correo electrónico que utilizan su nombre de dominio. 
 
-Esta acción es posible gracias a la información introducida en el propio SPF, que incluye los siguientes datos:
+Esto es posible gracias a la información introducida en el propio SPF, que incluye los siguientes datos:
 
-- **servidores o varias direcciones IP** para poder identificarlos como origen legítimo del envío;
+- **servidores o direcciones IP** para poder identificarlos como origen legítimo del envío;
 - **un calificador** para indicar al servidor que reciba los mensajes de correo una reacción específica en respuesta al mensaje considerado como no legítimo, es decir, procedente de un origen que represente un riesgo potencial.
 
 Así pues, usted deberá asegurarse de indicar en el SPF los orígenes de envíos que utilice para enviar emails con su nombre de dominio. Dichos orígenes pueden ser su propio servidor, el de su proveedor o una de las soluciones de correo electrónico de OVH.
@@ -54,20 +54,20 @@ Las siguientes soluciones aplican la configuración de OVH:
 
 Le recomendamos que, cuando contrate una de estas soluciones, utilice un SPF que incluya la información de OVH en la configuración de su dominio, como en el siguiente ejemplo:
 
-```bash
+```
 example.com IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
 Si su dominio utiliza la configuración de OVH, puede comprobar si ya tiene un SPF configurado. Para ello, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio. A continuación abra la pestaña `Zona DNS`{.action}. 
 
-Se mostrará una tabla con toda la configuración del dominio en OVH. Cada línea contiene un registro DNS.
+Se mostrará una tabla con toda la configuración del dominio en OVH. Cada línea de la tabla contiene un registro DNS.
 
 > [!primary]
 >
 > Si el dominio está registrado en OVH, puede comprobar si utiliza la configuración de OVH en la pestaña `Servidores DNS`{.action}.
 >
 
-Puede utilizar el menú desplegable para filtrar la entrada correspondiente al SPF. Este último puede aparecer en dos lugares diferentes: **TXT** o **SPF**. En la tabla, puede encontrar lo siguiente:
+Puede utilizar el menú desplegable para filtrar la entrada de la tabla correspondiente al SPF, que podría ser de dos tipos: **TXT** o **SPF**. En la tabla, puede encontrar lo siguiente:
 
 - **"v=spf1 include:mx.ovh.com ~all" en la columna «Destino»**: El dominio ya utiliza la configuración de OVH. Si no quiere utilizarla, más adelante explicamos cómo modificar la configuración.
 
@@ -88,14 +88,14 @@ Para modificar el registro SPF en la configuración de su dominio en OVH, conéc
 
 La tabla mostrará la configuración del dominio en OVH. Cada línea corresponde a un registro DNS.
 
-Para modificar o añadir un registro SPF, deberá añadir una nueva entrada en la zona DNS del dominio. Para ello, haga clic en `Añadir un registro`{.action}.
+Para modificar o añadir un SPF, deberá añadir un nuevo registro en la configuración (zona DNS) del dominio. Para ello, haga clic en `Añadir un registro`{.action}.
 
 ![Dominio](images/spf_records_add_entry_step1.png){.thumbnail}
 
 Se abrirá una ventana en la que podrá elegir diversos registros DNS. En lo que respecta a la creación de un registro SPF, existen dos posibilidades:
 
-- **añadir el SPF manualmente**: para usuarios experimentados o que dispongan de la información que deban introducir (comunicada por el proveedor que gestione su correo, por ejemplo);
-- **utilizar nuestro asistente de configuración SPF**: para usuarios no expertos o que no dispongan de la información necesaria.
+- **Añadir el SPF manualmente**: Para usuarios experimentados o que dispongan de la información que deban introducir (comunicada por el proveedor que gestione su correo, por ejemplo).
+- **Utilizar nuestro asistente de configuración SPF**: Para usuarios no expertos o que no dispongan de la información necesaria.
 
 El procedimiento varía en función de la opción elegida.
 
@@ -105,7 +105,7 @@ El procedimiento varía en función de la opción elegida.
 
 De todos los posibles registros que se ofrecen, haga clic en `TXT`{.action} y complete la información solicitada. En el campo `Valor`{.action}, introduzca el SPF que quiera utilizar.
 
-Para finalizar la acción, haga clic en `Siguiente`{.action}. Asegúrese de que la información es correcta y haga clic en `Confirmar`{.action}.
+Para finalizar, haga clic en `Siguiente`{.action}. Asegúrese de que la información es correcta y haga clic en `Confirmar`{.action}.
 
 > [!primary]
 >
@@ -116,7 +116,7 @@ Para finalizar la acción, haga clic en `Siguiente`{.action}. Asegúrese de que 
 
 #### Utilizar el asistente de configuración SPF de OVH
 
-De todos los posibles registros que se ofrecen, haga clic en `SPF`{.action}. A continuación, dispone de dos posibilidades:
+De todos los posibles registros, haga clic en `SPF`{.action}. A continuación, se le ofrecerán dos posibilidades:
 
 - utilizar el SPF para las soluciones de OVH (MX Plan, Email Pro y Hosted Exchange);
 - personalizar el SPF usando nuestro asistente.
@@ -135,7 +135,7 @@ Haga clic en el botón `Utilizar el SPF para hosting compartido OVH`{.action}. S
 
 El asistente de configuración le ayudará a personalizar el SPF. Para ello, deberá responder a las preguntas y proporcionar la información necesaria. Algunos elementos solicitados pueden dirigirse a usuarios experimentados.
 
-A continuación, los explicamos en detalle.
+A continuación, los explicamos en detalle:
 
 |Campo|Descripción|
 |---|---|
@@ -153,10 +153,10 @@ En lo relativo a la pregunta «**¿Hay otros servidores que envíen correo del d
 |---|---|
 |a|Introduzca aquí los dominios. Eso autorizará a los servidores que alojen los sitios web de los dominios indicados a enviar correo con sus direcciones.|
 |mx|Introduzca aquí los servidores que reciban el correo (servidores MX) si también pueden enviar correo, para identificarlos como origen de envío legítimo.|
-|ptr|Introduzca aquí el nombre de los hosts, que deben tener una inversa válida (mediante un registro PTR en la zona DNS). para identificarlos como origen de envío legítimo.|
+|ptr|Introduzca aquí el nombre de los hosts, que deben tener una inversa válida (mediante un registro PTR en la zona DNS), para identificarlos como origen de envío legítimo.|
 |ip4|Indique la IP o rango de IP (IPv4) autorizados a enviar correo con sus direcciones.|
 |ip6|Indique la IP o rango de IP (IPv6) autorizados a enviar correo con sus direcciones.|
-|include|Introduzca aquí los dominios para poder utilizar el SPF de estos últimos con su propio dominio. Por ejemplo, OVH utiliza este método en su configuración SPF: "v=spf1 include:mx.ovh.com ~all", lo que permite a OVH gestionar el SPF de mx.ovh.com y que así sus clientes puedan utilizarlo.|
+|include|Introduzca aquí los dominios cuyo SPF quiera utilizar con su propio dominio. Por ejemplo, OVH utiliza este método en su configuración SPF: "v=spf1 include:mx.ovh.com ~all", lo que permite a OVH gestionar el SPF de **mx.ovh.com** y que así sus clientes puedan utilizarlo.|
 
 Por último, en lo relativo a la pregunta «**¿La información que ha indicado describe todos los hosts que envían correo del dominio?**», dispone de tres opciones:
 
