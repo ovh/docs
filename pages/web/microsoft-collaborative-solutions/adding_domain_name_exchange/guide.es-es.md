@@ -1,11 +1,11 @@
 ---
-title: Añadir un dominio a un servicio Exchange
+title: 'Añadir un dominio a un servicio Exchange'
 slug: anadir-dominio-exchange
-excerpt: Cómo añadir un dominio a un servicio Exchange
-section: Configuración de Exchange
+excerpt: 'Cómo añadir un dominio a un servicio Exchange'
+section: 'Configuración de Exchange'
 ---
 
-**Última actualización: 26/03/2018**
+**Última actualización: 27/03/2018**
 
 ## Objetivo
 
@@ -92,10 +92,10 @@ Una vez asociado el dominio, asegúrese de que su configuración es correcta com
 
 > [!primary]
 >
-> El tiempo de propagación necesario para que la modificación de la configuración de un dominio sea plenamente efectiva es de un máximo de 1 a 24 horas.
+> El tiempo de propagación necesario para que la modificación de la configuración de un dominio sea plenamente efectiva es de un máximo de 4 a 24 horas.
 >
 
-Puede comprobar si la configuración del dominio es correcta en la pestaña `Dominios asociados`{.action} de su servicio Exchange. La etiqueta verde indica que el dominio está correctamente configurado. En caso contrario, es posible que la propagación todavía no haya finalizado.
+Puede comprobar si la configuración del dominio es correcta en la pestaña `Dominios asociados`{.action} de su servicio Exchange. La etiqueta verde indica que el dominio está correctamente configurado. Si sigue estando roja, es posible que la propagación todavía no haya finalizado.
 
 ![Diagnóstico del dominio](images/add_domain_exchange_step5.png){.thumbnail}
 
@@ -105,10 +105,12 @@ Una vez que haya añadido los dominios, ya puede configurar sus cuentas Exchange
 
 Recuerde que todas las direcciones creadas en el servicio Exchange podrán ver en el directorio el resto de direcciones asociadas al servicio, incluidas aquellas que posean un dominio diferente.
 
-Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVH pone a su disposición el *webmail* **Outlook Web Application** (OWA) al que podrá acceder en la dirección <https://mail.ovh.net/es/>. Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio. Si desea configurar su cuenta en un cliente de correo o un dispositivo externo (smartphone o tablet), o necesita ayuda sobre las funcionalidades de Exchange, consulte las guías de OVH sobre las [soluciones colaborativas de Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/){.external}.
+Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVH pone a su disposición el webmail **Outlook Web Application** (OWA), al que podrá acceder en la dirección <https://mail.ovh.net/es/>. Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio. Si desea configurar su cuenta en un cliente de correo o un dispositivo externo (smartphone o tablet), o necesita ayuda sobre las funcionalidades de Exchange, consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/){.external}.
 
-OVH ofrece licencias Outlook que podrá contratar en el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}, así como licencias Office 365, que podrá contratar en la página de [Office 365 de OVH](https://www.ovh.es/office-365/){.external}. Si desea disfrutar de un cliente de correo Outlook o de más programas de la suite Office, le recomendamos una de estas soluciones.
+OVH ofrece licencias de Outlook que podrá contratar en el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}, así como licencias de Office 365, disponibles en la página de [Office 365 de OVH](https://www.ovh.es/office-365/){.external}. Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
 
 ## Más información
+
+[Crear un registro CNAME al añadir un dominio asociado](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_anadir_un_registro_cname/){.external}
 
 Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
