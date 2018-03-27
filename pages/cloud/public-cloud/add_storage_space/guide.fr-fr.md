@@ -24,7 +24,7 @@ cloud](https://www.ovh.com/manager/cloud){.external}
 Vous pouvez ensuite choisir le type de conteneur selon vos besoins.
 
 
-### Pour de l'hebergement statique
+### Pour de l'hébergement statique
 Vous souhaitez héberger un site statique, une vitrine ?
 
 - Choisir hébergement statique
