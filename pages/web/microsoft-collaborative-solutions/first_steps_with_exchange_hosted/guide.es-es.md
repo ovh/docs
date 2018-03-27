@@ -1,12 +1,12 @@
 ---
-title: Primeros pasos con el servicio Hosted Exchange
-excerpt: Cómo configurar por primera vez el servicio Hosted Exchange
+title: 'Primeros pasos con el servicio Hosted Exchange'
+excerpt: 'Cómo configurar por primera vez el servicio Hosted Exchange'
 slug: exchange_20132016_primera_configuracion_del_servicio
-section: Configuración de Exchange
+section: 'Configuración de Exchange'
 order: 1
 ---
 
-**Última actualización: 26/03/2018**
+**Última actualización: 27/03/2018**
 
 ## Objetivo
 
@@ -91,7 +91,7 @@ Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVH
 
 Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/){.external}. Para un uso óptimo de su cuenta Exchange, asegúrese de que su software sea compatible con el servicio.
 
-OVH ofrece licencias de Outlook que podrá contratar en el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}, así como licencias de Office 365, que podrá contratar en la página de [Office 365 de OVH](https://www.ovh.es/office-365/){.external}. Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
+OVH ofrece licencias de Outlook, que podrá contratar en el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}, así como licencias de Office 365, disponibles en la página de [Office 365 de OVH](https://www.ovh.es/office-365/){.external}. Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
 
 > [!primary]
 >
@@ -102,11 +102,11 @@ OVH ofrece licencias de Outlook que podrá contratar en el [área de cliente de 
 
 ### 6. Configurar las funciones de colaboración (opcional)
 
-Una vez que el servicio Hosted Exchange haya sido configurado y esté operativo, puede activar las funcionalidades de colaboración en su [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}. Estas funcionalidades permiten crear recursos (salas de reuniones, equipamiento...) y grupos, entre otros. 
+Una vez que el servicio Hosted Exchange haya sido configurado y esté operativo, puede activar las funciones de colaboración en su [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}. Estas funciones permiten crear recursos (salas de reuniones, equipamiento...) y grupos, entre otros. 
 
-Para activar las diferentes funciones, seleccione su servicio Hosted Exchange en el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external} y abra la pestaña correspondiente a la acción que quiera realizar.
+Para activarlas, seleccione su servicio Hosted Exchange en el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external} y abra la pestaña correspondiente a la acción que quiera realizar.
 
-Para más información sobre estas funciones, consulte las guías de OVH sobre las [soluciones colaborativas de Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/){.external}.
+Para más información sobre estas funciones, consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/){.external}.
 
 ![Funciones colaborativas](images/first-steps-hosted-exchange-intro-to-functions.png){.external}
 
