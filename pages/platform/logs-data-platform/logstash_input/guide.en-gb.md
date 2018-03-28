@@ -118,7 +118,7 @@ To host this collector in the Logs Data Platform, you will need to configure it 
 
 - Check the **Collectors** panel below the Stream one and click on the button **Host a new collector**.
 - The Manager will then ask you to put a elegant name and a wonderful description.
-- Select your Software : Select **Logstash 2.4**.
+- Select your Software : Select **Logstash 5.6**.
 - Fill the main port of your input. We will put **4000** for now. Don't worry this is something you can change later.
 - If your Logstash collector must be started with only one instance, use the single instance toggle. It concerns input plugins that will consume the data from its source by itself (like the [Twitter one](https://docs.ovh.com/gb/en/logs-data-platform/quick-start/){.external}).
 - Finally select one of the stream you have to attach this collector to the stream you have. That means that every message that goes out of this collector is automatically routed to the stream. Click on the **Create this collector** button and TA-DA, your input is created.
@@ -217,7 +217,7 @@ This is an address of your collector for the cluster on Logs Data Platform. Send
 
 #### Logstash Version
 
-The version hosted by Logs Data Platform is the Logstash 2.4 (as of October 2016). Of course we will update to the new versions as soon as they become available.
+The version hosted by Logs Data Platform is the Logstash 5.6 (as of March 2018). Of course we will update to the new versions as soon as they become available.
 
 #### Logstash Plugins
 For your information, here is the list of Logstash plugins we support. Of course we will welcome any suggestion on additional plugins. Don't hesitate to contact us at [logs@ml.ovh.net](mailto:logs@ml.ovh.net){.external} (use this list to subscribe : [paas.logs-subscribe@ml.ovh.net](mailto:paas.logs-subscribe@ml.ovh.net){.external}).
