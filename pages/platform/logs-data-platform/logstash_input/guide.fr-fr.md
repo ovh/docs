@@ -39,7 +39,7 @@ Here is a small configuration file so you get an idea :
 
 ```ruby
  #input
- #The input part just launch tcp server that will listen on port 5000
+ #The input part just launch tcp server that will listen on port 4000
  #Each incoming line of log will be tagged as a syslog type.
  input {
      tcp {
