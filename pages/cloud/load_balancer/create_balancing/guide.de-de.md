@@ -57,7 +57,7 @@ Sie können die Einstellungen des Lastverteilungstyps anpassen, indem Sie die en
 
 - Details einer Farm einsehen
 
-Mit diesem Aufrufbefehl können Sie sich die Details einer Farm anzeigen lassen, wenn Sie deren ID kennen. Im folgenden Beispiel werden wir eine HTTP-Farm bearbeiten:
+Mit dieser API-Funktion können Sie sich die Details einer Farm anzeigen lassen, wenn Sie deren ID kennen. Im folgenden Beispiel werden wir eine HTTP-Farm bearbeiten:
 
 > [!api]
 >
