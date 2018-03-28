@@ -1,8 +1,8 @@
 ---
-title: Konfiguracja konta Exchange w Outlook 2016 na systemie Windows
+title: 'Konfiguracja konta Exchange w Outlook 2016 na systemie Windows'
 slug: konfiguracja-outlook-2016
-excerpt: Dowiedz się, jak skonfigurować konto Exchange w programie Outlook 2016 na urządzeniu z systemem Windows
-section: Konfiguracja programu pocztowego Exchange
+excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w programie Outlook 2016 na urządzeniu z systemem Windows'
+section: 'Konfiguracja programu pocztowego Exchange'
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-26**
@@ -63,7 +63,5 @@ OVH oferuje aplikację internetową posiadającą [funkcje do pracy zespołowej]
 ## Sprawdź również
 
 [Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, w programie Outlook 2016 na urządzeniu z systemem Windows](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016/){.external}
-
-[Konfiguracja konta E-mail Pro w programie Outlook 2016 na urządzeniu z systemem Windows](https://docs.ovh.com/gb/en/emails-pro/configuration-outlook-2016/){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
