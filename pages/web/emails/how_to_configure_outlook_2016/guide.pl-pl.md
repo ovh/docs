@@ -1,11 +1,11 @@
 ---
-title: Konfiguracja konta e-mail w Outlook 2016 na urządzeniu z systemem Windows
+title: 'Konfiguracja konta e-mail w Outlook 2016 na urządzeniu z systemem Windows'
 slug: konfiguracja-outlook-2016
-excerpt: Dowiedz się, jak skonfigurować Twoje konto e-mail MX Plan w programie Outlook 2016 na urządzeniu z systemem Windows
+excerpt: 'Dowiedz się, jak skonfigurować Twoje konto e-mail MX Plan w programie Outlook 2016 na urządzeniu z systemem Windows'
 section: Outlook
 ---
 
-**Ostatnia aktualizacja dnia 2018-03-26**
+**Ostatnia aktualizacja dnia 2018-03-28**
 
 ## Wprowadzenie
 
@@ -15,7 +15,7 @@ Konta usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych progra
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail MX Plan (zawartego w pakiecie MX Plan lub w usłudze [hostingu OVH](https://www.ovh.pl/hosting/){.external}
+- Posiadanie konta e-mail MX Plan (zawartego w pakiecie MX Plan lub w usłudze [hostingu OVH](https://www.ovh.pl/hosting/){.external})
 - Zainstalowany program Microsoft Outlook 2016 na Twoim urządzeniu
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
@@ -57,7 +57,7 @@ Podaj następnie wymagane informacje.
 
 - **dla poczty wychodzącej:**
 
-|Informacja|Opis |
+|Informacja|Opis|
 |---|---|
 |Serwer|Wpisz serwer « ssl0.ovh.net ».|
 |Port|Wskaż port « 465 ».|
@@ -93,8 +93,6 @@ Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zaczą�
 OVH oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Jest ona dostępna pod adresem <https://mail.ovh.net/pl/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ## Sprawdź również
-
-[Konfiguracja konta E-mail Pro w programie Outlook 2016 na urządzeniu z systemem Windows](https://docs.ovh.com/gb/en/emails-pro/configuration-outlook-2016/){.external}
 
 [Konfiguracja konta Exchange w programie Outlook 2016 na urządzeniu z systemem Windows](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-outlook-2016/){.external}
 
