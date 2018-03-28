@@ -91,7 +91,7 @@ Estas reglas lanzan el script testing.php con la variable GET que contiene la UR
 ```
 <?
 print("testing server <br/>\n");
-print("var: $var\n");
+print("var: {$_GET['var']}\n");
 ?>
 ```
 

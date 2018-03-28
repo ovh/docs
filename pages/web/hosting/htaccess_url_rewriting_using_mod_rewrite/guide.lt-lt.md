@@ -90,7 +90,7 @@ Tai kreipsis į failą testing.php ir iškart pateiks URL su GET tipo kintamuoju
 [code]
 <?
 print("testing server <br/>\n");
-print("var: $var\n");
+print("var: {$_GET['var']}\n");
 ?>
 
 
