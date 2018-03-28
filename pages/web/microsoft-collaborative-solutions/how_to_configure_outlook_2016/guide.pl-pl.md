@@ -25,6 +25,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 > Używasz programu Outlook 2016 na urządzeniu Mac? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook 2016 na urządzeniu Mac](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-outlook-2016-mac/){.external}.
 >
 
+
 ## W praktyce
 
 ### Etap 1: dodanie konta
