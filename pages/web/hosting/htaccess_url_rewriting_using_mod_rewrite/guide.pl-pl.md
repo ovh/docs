@@ -90,7 +90,7 @@ Reguły te uruchamiają skrypt testing.php ze zmienną GET zawierającą URL pod
 ```
 <?
 print("testing server <br/>\n");
-print("var: $var\n");
+print("var: {$_GET['var']}\n");
 ?>
 ```
 
