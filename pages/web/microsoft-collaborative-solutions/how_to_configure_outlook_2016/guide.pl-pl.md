@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w programie Outlook 20
 section: 'Konfiguracja programu pocztowego Exchange'
 ---
 
-**Ostatnia aktualizacja dnia 2018-03-26**
+**Ostatnia aktualizacja dnia 2018-03-28**
 
 ## Wprowadzenie
 
@@ -39,13 +39,13 @@ Po uruchomieniu aplikacji Outlook na Twoim urządzeniu możesz dodać konto, kor
 
 Wpisz Twój adres e-mail, po czym kliknij `Opcje zaawansowane`{.action}. Zaznacz kratkę obok komunikatu `Pozwól mi ręcznie skonfigurować moje konto`{.action}, a następnie kliknij `Połącz`{.action}. Spośród różnych rodzajów kont wybierz **Exchange**.
 
-Wyświetli się okienko, w którym należy wpisać **hasło**, które wybrałeś dla Twojego konta e-mail. Wpisz hasło, zaznacz kratkę „Zapamiętaj hasło na mojej liśccie haseł”, następnie kliknij `OK`{.action}.
+Wyświetli się okienko, w którym należy wpisać **hasło**, które wybrałeś dla Twojego konta e-mail. Wpisz hasło, zaznacz pole „Zapamiętaj hasło na mojej liście haseł”, następnie kliknij `OK`{.action}.
 
 > [!primary]
 >
 > Jeśli pojawi się komunikat, że Twoje konto nie mogło zostać w programie Outlook skonfigurowane, może to oznaczać, że pole SRV OVH nie jest poprawnie skonfigurowane w strefie DNS Twojej domeny.
 >
-> W takiej sytuacji zalecamy sprawdzenie konfiguracji domeny w usłudze Exchange w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, zakładka `Powiązane domeny`{.action}, kolumna `Diagnostyka`{.action} w tabeli;
+> W takiej sytuacji zalecamy sprawdzenie konfiguracji domeny w usłudze Exchange w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, zakładka `Powiązane domeny`{.action}, kolumna `Diagnostyka`{.action} w tabeli.
 >
 
 Jeśli konfiguracja Twojej domeny jest prawidłowa, wyświetli się komunikat, w którym zostaniesz poproszony o zezwolenie na połączenie z serwerem OVH. Zaakceptuj to połączenie w celu uruchomienia automatycznej konfiguracji Twojego konta Exchange.
@@ -58,7 +58,7 @@ Kiedy Twoje konto zostanie prawidłowo skonfigurowane i będzie dostępne z pozi
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVH oferuje aplikację internetową posiadającą [funkcje do pracy zespołowej](https://www.ovh.pl/emaile/){.external}. Jest ona dostępna pod adresem <https://mail.ovh.net/pl/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+OVH oferuje aplikację internetową posiadającą [funkcje do pracy zespołowej](https://www.ovh.pl/emaile/){.external}. Jest ona dostępna pod adresem <https://mail.ovh.net/pl/>. Możesz się do niej zalogować, używając tych samych danych, których użyłeś do konfigurowania konta e-mail.
 
 ## Sprawdź również
 
