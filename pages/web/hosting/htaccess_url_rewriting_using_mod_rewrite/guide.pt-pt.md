@@ -89,7 +89,7 @@ Estas regras iniciam o script testing.php com a variável GET a conter o URL atu
 ```
 <?
 print("testing server <br/>\n");
-print("var: $var\n");
+print("var: {$_GET['var']}\n");
 ?>
 ```
 
