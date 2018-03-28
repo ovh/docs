@@ -5,7 +5,7 @@ excerpt: Dowiedz się, jak skonfigurować konto Exchange w programie Outlook 201
 section: Konfiguracja programu pocztowego Exchange
 ---
 
-**Ostatnia aktualizacja dnia 2018-03-22**
+**Ostatnia aktualizacja dnia 2018-03-28**
 
 ## Wprowadzenie
 
@@ -21,7 +21,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 > [!primary]
 >
-> Używasz programu Outlook 2016 na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook 2016 na urządzeniu z systemem Windows](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook-2016/){.external}.
+> Używasz programu Outlook 2016 na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook 2016 na urządzeniu z systemem Windows](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-outlook-2016/){.external}.
 >
 
 ## W praktyce
@@ -60,8 +60,6 @@ OVH oferuje aplikację internetową wyposażoną w [funkcje do pracy zespołowej
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail, włączonego do usługi MX Plan lub do usługi hostingu, w programie Outlook na urządzeniu Mac](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016-mac/){.external}.
-
-[Konfiguracja konta E-mail Pro w programie Outlook 2016 na urządzeniu Mac](https://docs.ovh.com/fr/emails-pro/configuration-outlook-2016-mac/){.external}
+[Konfiguracja konta e-mail, włączonego do usługi MX Plan lub do usługi hostingu, w programie Outlook na urządzeniu Mac](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016-mac/){.external}.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
