@@ -1,145 +1,102 @@
 ---
-title: 'Hosting www: Konfiguracja na iPhone IOS 9.1'
-excerpt: ''
+title: 'Konfiguracja konta e-mail na urządzeniu iPhone lub iPad'
 slug: hosting_www_konfiguracja_na_iphone_ios_91
-legacy_guide_number: g2004
+excerpt: 'Dowiedz się, jak skonfigurować konto e-mail MX Plan na urządzeniu iPhone lub iPad'
+section: Apple
 ---
 
-## Wstępne wymagania
+**Ostatnia aktualizacja dnia 2018-03-29**
 
-- Aktywny adres e-mail na hostingu www OVH
-- Iphone z systemem IOS 9
+## Wprowadzenie
 
+Konta e-mail usługi MX Plan mogą być skonfigurowane w jednej z kompatybilnych aplikacji lub programów pocztowych. Dzięki temu możesz wysyłać i odbierać wiadomości, korzystając z wybranej przez Ciebie aplikacji.
 
+**Dowiedz się, jak skonfigurować konto e-mail MX Plan na urządzeniu iPhone lub iPad.**
 
+## Wymagania początkowe
 
-## Konto e-mail OVH na iPhonie
-Nie ma nic prostszego niż korzystanie z konta e-mail OVH na iPhonie. 
+- Posiadanie konta e-mail MX Plan (zawartego w pakiecie MX Plan lub w usłudze [hostingu OVH](https://www.ovh.pl/hosting/){.external})
+- Instalacja aplikacji Mail na Twoim urządzeniu
+- Dane do logowania do konta e-mail, które chcesz skonfigurować
 
-Z poziomi iPhone'a wejdź na stronę [https://ssl0.ovh.net/roundcube/auto/](https://ssl0.ovh.net/roundcube/auto/).
+> [!primary]
+>
+> Niniejszy przewodnik dotyczy konfiguracji wersji iOS 7 i późniejszych.
+>
 
-Wpisz adres e-mail, który posiadasz w OVH, kliknij na "Generer" i przejdź przez kolejne etapy. 
+## W praktyce
 
-Dzięki temu na Twoim iPhonie zostanie dodany profil, z którego będziesz mógł zacząć korzystać.
+Konfigurację można przeprowadzić na dwa różne sposoby:
 
+- **przy użyciu narzędzia Apple Devices**: kliknij link <https://autodiscover.mail.ovh.net/AppleDevices/> i postępuj zgodnie z kolejnymi;
 
-## Konfiguracja iPhone IOS 9 w trybie Imap
+- **przy użyciu asystenta konfiguracji w Twoim urządzeniu**.
 
+Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację kont e-mail na Twoim urządzeniu.
 
-## Część 1: Ustawienia
-Otwórz ustawienia w iPhonie.
+### Etap 1: dodanie konta
 
-![](images/img_3344.jpg){.thumbnail}
+Otwórz `Ustawienia`{.action} Twojego urządzenia. Możesz dodać konto, korzystając z jednej z dwóch dostępnych metod, w zależności od wersji iOS:
 
+- **wersja iOS 7, 8, 9 i 10**: kliknij `Poczta, Kontakty, Kalendarz`{.action}, następnie `Dodaj konto`{.action}. Wybierz `Inne`{.action}, następnie `Dodaj konto Mail`{.action};
 
-## Część 2: Poczta, Kontakty, Kalendarz
-Przejdź do sekcji "Poczta, Kontakty, Kalendarz".
+- **wersja iOS 11**: kliknij `Konta i hasła`{.action}, następnie `Dodaj konto`{.action}. Wybierz `Inne`{.action}, następnie `Dodaj konto Mail`{.action}.
 
-![](images/img_3748.jpg){.thumbnail}
+![mxplan](images/configuration-mail-ios-step1.png){.thumbnail}
 
+Wpisz informacje dotyczące Twojego konta:
 
-## Część 3: Dodawanie konta e-mail
-Wybierz "Dodaj konto".
+|Informacja|Opis|
+|---|---|
+|Nazwa|Wpisz nazwę nadawcy, która będzie się wyświetlać podczas wysyłki wiadomości e-mail przy użyciu tego konta.|
+|Konto e-mail|Wpisz pełny adres e-mail.|
+|Hasło|Wpisz hasło przypisane do tego konta e-mail.|
+|Opis |Wpisz nazwę pozwalającą odróżnić to konto od Twoich pozostałych kont wyświetlających się w aplikacji Mail.|
 
-![](images/img_3355.jpg){.thumbnail}
+Kliknij `Dalej`{.action}, po czym wpisz informacje, o które zostaniesz poproszony: 
 
+|Informacja|Opis| 
+|---|---| 
+|IMAP lub POP|Rekomendujemy użycie protokołu **IMAP** (ustawiony domyślnie). Możesz również wybrać **POP** (przechowywanie e-maili lokalnie w aplikacji Mail).|
+|Nazwa hosta (poczta przychodząca)|Wpisz serwer « ssl0.ovh.net ».|
+|Nazwa użytkownika (poczta przychodząca)|Wpisz pełny adres e-mail.|
+|Hasło (poczta przychodząca)|Wpisz hasło przypisane do tego konta e-mail.|  
+|Nazwa hosta (poczta wychodząca)|Wpisz serwer « ssl0.ovh.net ».|
+|Nazw użytkownika (poczta wychodząca)|Wpisz pełny adres e-mail.|
+|Hasło (poczta wychodząca)|Wpisz hasło przypisane do tego konta e-mail.| 
 
-## Część 4: Typ konta e-mail
-Wybierz "Inne" i "Dodaj konto Mail".
+Kliknij `Dalej`{.action}. Jeśli wpisane informacje są poprawne, logowanie zakończy się sukcesem.
 
-![](images/img_3354.jpg){.thumbnail}
+![Exchange](images/configuration-mail-ios-step2.png){.thumbnail}
 
+Na etapie wyboru aplikacji upewnij się, że zaznaczyłeś aplikację `Mail`{.action}, aby mogła ona używać tego konta, następnie kliknij `Zapisz`{.action}.
 
-## Część 5: Ustawienia konta e-mail
-Zostaniesz poproszony o podanie nazwiska, adresu e-mail i hasła do poczty. 
+Wykonaj test wysyłki e-maili, aby sprawdzić, czy konto zostało poprawnie skonfigurowane.
 
-Opis uzupełni się automatycznie.
+Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajdziesz parametry, których należy użyć w przypadku oferty MX Plan:
 
-Po wpisaniu tych informacji kliknij na "Dalej".
+- **konfiguracja IMAP**
 
-![](images/img_3749.jpg){.thumbnail}
+|Typ serwera|Nazwa serwera|SSL|Port|
+|---|---|---|---|
+|Serwer poczty przychodzącej|ssl0.ovh.net|Tak|993|
+|Serwer poczty wychodzącej|ssl0.ovh.net|Tak|465|
 
+- **konfiguracja POP**
 
-## Część 7: Ustawienia serwerów poczty przychodzącej i wychodzącej.
+|Typ serwera|Nazwa serwera|SSL|Port|
+|---|---|---|---|
+|Serwer poczty przychodzącej|ssl0.ovh.net|Tak|995|
+|Serwer poczty wychodzącej|ssl0.ovh.net|Tak|465|
 
-- Typ konta:
-IMAP / POP: Wybierz typ konta.
+### Etap 2: korzystanie z konta e-mail
 
+Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-![](images/img_3358.jpg){.thumbnail}
+OVH oferuje aplikację internetową dostępną pod adresem <https://mail.ovh.net/pl/> umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki. Możesz się do niej zalogować, używając tych samych danych, których użyłeś do logowania się do konta e-mail.
 
-- W części "Serwer poczty przychodzącej":
+## Sprawdź również
 
-Nazwa hosta: SSL0.OVH.NET
-Użytkownik: adres e-mail
-Hasło: hasło do konta e-mail
+[Konfiguracja konta Exchange na urządzeniu iPhone lub iPad](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_automatyczna_konfiguracja_z_poziomu_ios_iphone_-_ipad/){.external}.
 
-- W części "Serwer poczty wychodzącej":
-
-Nazwa hosta: SSL0.OVH.NET
-Użytkownik: adres e-mail
-Hasło: hasło do konta e-mail
-
-
-Kliknij na "Dalej"" po wpisaniu tych informacji.
-
-![](images/img_3351.jpg){.thumbnail}
-
-- Uwierzytelnianie za pomocą nazwy użytkownika i hasła dla serwera poczty wychodzącej jest niezbędne do działania wysyłki e-maili na naszych serwerach SMTP.
-
-
-
-
-## Część 9: Konfiguracja konta e-mail
-Dokończ konfigurowanie konta e-mail, wybierając opcje synchronizacji. 
-
-Kliknij na "Zachowaj", aby dokończyć dodawanie konta.
-
-![](images/img_3352.jpg){.thumbnail}
-
-
-## Konfiguracja POP
-Oto informacje do konfiguracji konta e-mail POP
-
-Konfiguracja POP z zabezpieczeniem SSL włączonym/green] lub wyłączonym:
-
-Adres Email : Cały adres e-mail
-Hasło: Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/manager/web/login/).
-Nazwa użytkownika: Cały adres e-mail
-Serwer poczty przychodzącej:ssl0.ovh.net
-Port serwera poczty przychodzącej:995 lub 110
-Serwer poczty wychodzącej:ssl0.ovh.net
-Port serwera poczty wychodzącej:465 lub 587
-
-Porty 110 i 587 są podawane, gdy zabezpieczenie SSL jest wyłączone.
-Porty 995 i 465 są podawane, gdy zabezpieczenie SSL jest włączone.
-
-|Porty|SSLwłączony|SSLwyłączony|
-|Wchodzący|995|110|
-|Wychodzący|465|587|
-
-
-
-
-## Konfiguracja IMAP
-Oto informacje do konfiguracji konta e-mai IMAP
-
-Konfiguracja IMAP z zabezpieczeniem SSL włączonym lub wyłączonym:
-
-Adres Email : Cały adres e-mail
-Hasło: Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/manager/web/login/).
-Nazwa użytkownika: Cały adres e-mail
-Serwer poczty przychodzącej:ssl0.ovh.net
-Port serwera poczty przychodzącej:993 lub 143
-Serwer poczty wychodzącej:ssl0.ovh.net
-Port serwera poczty wychodzącej:465 lub 587
-
-Porty 143 i 587 są podawane, gdy zabezpieczenie SSL jest wyłączone.
-Porty 993 i 465 są podawane, gdy zabezpieczenie SSL jest włączone.
-
-|Porty|SSLwłączony|SSLwyłączony|
-|Wchodzący|993|143|
-|Wychodzący|465|587|
-
-
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
