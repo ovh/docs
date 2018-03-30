@@ -37,7 +37,7 @@ Vanuit het Control Panel biedt OVH de klant een tool waarmee deze met 1 klik een
 
 - **Migratie van uw website naar OVH**
 
-Het migreren van een website kan kwetsbaar zijn, vooral als het om een werkende dienst gaat waarbij een onderbreking geen optie is. Wat dat betreft geeft deze handleiding maar een paar van de stappen aan die nodig zijn om uw diensten te kunnen verhuizen. Voor het volledige verhuisproces kunt u terecht in onze handleiding [Mijn website naar OVH verhuizen](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}.
+Het migreren van een website kan kwetsbaar zijn, vooral als het om een werkende dienst gaat waarbij een onderbreking geen optie is. Wat dat betreft geeft deze handleiding maar een paar van de stappen aan die nodig zijn om uw diensten te kunnen verhuizen. Voor het volledige verhuisproces kunt u terecht in onze handleiding [Mijn website naar OVH verhuizen](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external}.
 
 ### Stap 2: Installeer uw website 
 
@@ -82,7 +82,7 @@ Raadpleeg onze documentatie voor meer informatie over het geavanceerd installere
 
 Deze oplossing is van toepassing wanneer u een website wilt bouwen of verhuizen zonder gebruik te maken van de OVH-modules. U dient in het bezit te zijn van de bestanden van de website die u wenst te installeren. U dient dus handmatig in te loggen op uw opslagruimte om er de bestanden van de website naar te uploaden en deze vervolgens, indien mogelijk, te verbinden met een vooraf aangemaakte database.
 
-Er bestaat geen universeel stappenplan omdat de websites behoorlijk van elkaar kunnen verschillen, maar we kunnen u met onze documentatie wel op weg helpen met de op uw OVH-webhosting uit te voeren handelingen: [Mijn website online zetten](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/){.external} en [Mijn website naar OVH verhuizen](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external} indien van toepassing. Wanneer de website eenmaal handmatig is geïnstalleerd op uw webhosting, kunt u verder gaan met de hieronder vermelde stappen.
+Er bestaat geen universeel stappenplan omdat de websites behoorlijk van elkaar kunnen verschillen, maar we kunnen u met onze documentatie wel op weg helpen met de op uw OVH-webhosting uit te voeren handelingen: [Mijn website online zetten](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external} en [Mijn website naar OVH verhuizen](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external} indien van toepassing. Wanneer de website eenmaal handmatig is geïnstalleerd op uw webhosting, kunt u verder gaan met de hieronder vermelde stappen.
 
 ### Stap 3: Creëer uw e-mailadressen 
 
@@ -92,7 +92,7 @@ Deze stap is niet verplicht als u geen gebruik wenst te maken van de e-mailadres
 
 Volg de aanwijzingen voor aanmaken van uw e-mailadres. Herhaal deze stap om er meerdere aan te maken. Indien u uw e-mailadressen aan het verhuizen bent naar OVH, kunt u gebruik maken van onze tool [OVH Mail Migrator](https://omm.ovh.net/){.external} om u te helpen dit te voltooien. 
 
-Raadpleeg onze documentatie voor meer informatie over het aanmaken van een e-mailadres of over het verhuizen van uw diensten naar OVH: [Hoe maak ik een e-mailadres aan](https://docs.ovh.com/nl/emails/webhosting_e-mail_handleiding_het_aanmaken_van_een_e-mailadres/){.external} en [Een website naar OVH verhuizen](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external} indien van toepassing.
+Raadpleeg onze documentatie voor meer informatie over het aanmaken van een e-mailadres of over het verhuizen van uw diensten naar OVH: [Hoe maak ik een e-mailadres aan](https://docs.ovh.com/nl/emails/webhosting_e-mail_handleiding_het_aanmaken_van_een_e-mailadres/){.external} en [Een website naar OVH verhuizen](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external} indien van toepassing.
 
 ### Stap 4: Controleer of wijzig de configuratie van uw domein
 
@@ -134,7 +134,7 @@ U dient de DNS-zone van uw domein te controleren bij de provider die deze beheer
 
 - **Uw diensten (websites en e-mail) verhuizen naar OVH**
 
-In dit soort gevallen kunnen handelingen met betrekking tot DNS uw diensten onbeschikbaar maken als ze niet op het juiste moment worden uitgevoerd. Overeenkomstig de verschillende stappen die worden beschreven in onze documentatie [Mijn website verhuizen naar](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}, dient u de DNS-servers aan het einde van het proces te wijzigen.
+In dit soort gevallen kunnen handelingen met betrekking tot DNS uw diensten onbeschikbaar maken als ze niet op het juiste moment worden uitgevoerd. Overeenkomstig de verschillende stappen die worden beschreven in onze documentatie [Mijn website verhuizen naar](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external}, dient u de DNS-servers aan het einde van het proces te wijzigen.
 
 > [!primary]
 >
@@ -155,9 +155,9 @@ Raadpleeg onze gids voor meer informatie over het gebruik van RoundCube: [Gebrui
 
 ## Verder
 
-[Mijn website verhuizen naar OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}
+[Mijn website verhuizen naar OVH](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external}
 
-[Mijn website online zetten](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/){.external}
+[Mijn website online zetten](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external}
 
 [Een website installeren met 1-klik-modules](https://docs.ovh.com/nl/hosting/1-klik-modules/){.external}
 
@@ -165,6 +165,4 @@ Raadpleeg onze gids voor meer informatie over het gebruik van RoundCube: [Gebrui
 
 [Gebruik van RoundCube](https://docs.ovh.com/nl/emails/webmail_roundcube_gebruikershandleiding/){.external}
 
-[SSL certificaten op webhosting](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/){.external}
-
-Ga in gesprek met andere gebruikers op <https://community.ovh.com>.
+Ga in gesprek met andere gebruikers op <https://community.ovh.com/en/>.

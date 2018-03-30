@@ -35,7 +35,7 @@ Na Área de Cliente existe uma ferramenta que permite instalar um CMS com 1 cliq
 
 - **Transferir um site para a OVH**
 
-A transferência de um site é um procedimento um pouco mais complicado, sobretudo para um projeto que já está *online*, cujo acesso não pode ser interrompido. Este guia contém algumas instruções para ajudar a transferir um site para a OVH. Para mais informação sobre a transferência de um site, consulte o guia (em francês) [Transferir o meu site para a OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external} (versão PT disponível em breve).
+A transferência de um site é um procedimento um pouco mais complicado, sobretudo para um projeto que já está *online*, cujo acesso não pode ser interrompido. Este guia contém algumas instruções para ajudar a transferir um site para a OVH. Para mais informação sobre a transferência de um site, consulte o guia (em francês) [Transferir o meu site para a OVH](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (versão PT disponível em breve).
 
 ### 2 - Instalar CMS ou Transferir um site
 
@@ -80,7 +80,7 @@ Se desejar mais informação sobre o processo, consulte o guia: [Como instalar u
 
 Nesta situação, precisa de ter acesso aos ficheiros do site que irá transferir para o alojamento OVH. De seguida, terá de aceder ao espaço de alojamento, e efetuar a transferência dos ficheiros para a pasta correta. Se necessário, terá de associar o site a uma base de dados previamente criada.
 
-Atenção! Este processo pode variar de acordo com o tipo de site. Se precisar de mais informação, consulte os guias: [Colocar um site online](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external} e [Transferir um site para a OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external} (versão PT disponível em breve). O site está no alojamento OVH. Se quiser usar a solução de e-mail incluída no serviço, siga as instruções abaixo. Senão, passe à secção: **Domínios: Consultar, Verificar e Alterar dados DNS**.
+Atenção! Este processo pode variar de acordo com o tipo de site. Se precisar de mais informação, consulte os guias: [Colocar um site online](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external} e [Transferir um site para a OVH](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (versão PT disponível em breve). O site está no alojamento OVH. Se quiser usar a solução de e-mail incluída no serviço, siga as instruções abaixo. Senão, passe à secção: **Domínios: Consultar, Verificar e Alterar dados DNS**.
 
 ### 3 - Criar endereços de e-mail
 
@@ -90,7 +90,7 @@ A utilização dos serviços de e-mail incluídos no [alojamento web](https://ww
 
 Siga as instruções e insira a informação necessária. Repita este passo para criar mais endereços. Pretende transferir as suas mensagens de e-mail para a OVH? Use o [OVH Mail Migrator](https://omm.ovh.net/){.external}, e siga as instruções apresentadas. 
 
-Para mais informações, consulte o guia: [Como criar um endereço de e-mail](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external} e [Transferir o meu site para a OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external} (Versão PT disponível em breve).
+Para mais informações, consulte o guia: [Como criar um endereço de e-mail](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external} e [Transferir o meu site para a OVH](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (Versão PT disponível em breve).
 
 ### 4 - Domínios: Consultar, Verificar e Alterar dados DNS
 
@@ -132,7 +132,7 @@ Se o seu domínio estiver associado a uma zona DNS alojada noutro prestador de s
 
 - **Transferir serviços (sites e e-mail) para a OVH**
 
-Após a transferência do site para o alojamento OVH, terá que alterar os campos DNS. Neste tipo de situação, se as configurações DNS não forem executados de forma correta, os serviços (site ou e-mail) podem ficar indisponíveis. Como tal, deverá seguir as instruções indicadas no guia: [Transferir o meu site para a OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external} (versão PT disponível em breve).
+Após a transferência do site para o alojamento OVH, terá que alterar os campos DNS. Neste tipo de situação, se as configurações DNS não forem executados de forma correta, os serviços (site ou e-mail) podem ficar indisponíveis. Como tal, deverá seguir as instruções indicadas no guia: [Transferir o meu site para a OVH](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (versão PT disponível em breve).
 
 > [!primary]
 >
@@ -151,7 +151,7 @@ Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](
 
 ## Quer saber mais? Veja os guias abaixo
 
-[Transferir o meu site para a OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external} (Versão PT disponível em breve)
+[Transferir o meu site para a OVH](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (Versão PT disponível em breve)
 
 [Colocar o meu *site* online](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external}
 

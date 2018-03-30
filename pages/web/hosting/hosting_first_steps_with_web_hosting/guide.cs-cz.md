@@ -83,7 +83,7 @@ Detailní informace o instalaci modulů na jedno kliknutí v expertním režimu 
 
 Toto řešení využijte tehdy, chcete-li vytvořit nebo migrovat internetové stránky bez využití předinstalovaných modulů OVH. Rozhodnete-li se vydat touto cestou, ujistěte se prosím, že máte k dispozici příslušné soubory internetových stránek, které chcete nainstalovat. Pro úspěšné dokončení manuální instalace je nutné připojit se k FTP úložišti, nahrát na něj veškeré potřebné soubory a následně stránky pokud možno připojit k dříve vytvořené databázi.
 
-Detailní informace naleznete v následující dokumentaci: [Spuštění stránek online](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/){.external} a [Migrace webových stránek k OVH](https://docs.ovh.com/cz/cs/hosting/migrace-stranek-k-ovh/){.external}. Po úspěšné instalaci webových stránek se řiďte pokyny uvedenými v dalších částech této příručky.
+Detailní informace naleznete v následující dokumentaci: [Spuštění stránek online](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external} a [Migrace webových stránek k OVH](https://docs.ovh.com/cz/cs/hosting/migrace-stranek-k-ovh/){.external}. Po úspěšné instalaci webových stránek se řiďte pokyny uvedenými v dalších částech této příručky.
 
 ### Fáze 3: vytvoření e-mailové adresy
 
@@ -158,12 +158,10 @@ Detailní informaci o aplikaci RoundCube naleznete v následující příručce:
 
 [Migrace webových stránek k OVH](https://docs.ovh.com/cz/cs/hosting/migrace-stranek-k-ovh/){.external}
 
-[Spuštění stránek online](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/){.external}
+[Spuštění stránek online](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external}
 
 [Moduly na jedno kliknutí](https://docs.ovh.com/cz/cs/hosting/moduly-na-jedno-kliknuti/){.external}
 
 [Jak vytvořit e-mailovou adresu](https://docs.ovh.com/cz/cs/emails/webhosting_-_e-mail_prirucka_o_vytvareni_e-mailovych_adres/){.external}
 
-[Použití aplikace RoundCube](https://docs.ovh.com/fr/emails/utilisation-roundcube/){.external}
-
-Přidejte se k naší uživatelské komunitě na <https://community.ovh.com>.
+Přidejte se k naší uživatelské komunitě na <https://community.ovh.com/en/>.
