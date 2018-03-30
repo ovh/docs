@@ -36,7 +36,7 @@ OVH udostępnia w Panelu klienta narzędzia umożliwiające automatyczną instal
 
 - **Przenoszenie istniejącej już strony na serwer OVH**
 
-Przenoszenie strony może okazać się trudne, zwłaszcza jeżeli dotyczy ono świadczonych aktualnie usług, których przerwanie nie jest możliwe. Niniejszy przewodnik opisuje jedynie niektóre z etapów, które należy przeprowadzić w ramach przenoszenia usług. Aby zapoznać się z całym procesem przenoszenia strony internetowej zapraszamy do przeczytania przewodnika zatytułowanego [Przenoszenie strony internetowej na serwer OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}.
+Przenoszenie strony może okazać się trudne, zwłaszcza jeżeli dotyczy ono świadczonych aktualnie usług, których przerwanie nie jest możliwe. Niniejszy przewodnik opisuje jedynie niektóre z etapów, które należy przeprowadzić w ramach przenoszenia usług. Aby zapoznać się z całym procesem przenoszenia strony internetowej zapraszamy do przeczytania przewodnika zatytułowanego [Przenoszenie strony internetowej na serwer OVH](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}.
 
 ### Etap 2: instalacja strony internetowej
 
@@ -54,7 +54,7 @@ Aby rozpocząć instalację modułu, wybierz CMS, który chcesz zainstalować i 
 
 Teraz należy jedynie czekać na wiadomość e-mail z potwierdzeniem zainstalowania modułu i informacjami dotyczącymi logowania się na stronę. Następnie możesz przeprowadzić poniższe etapy.
 
-Jeżeli chcesz uzyskać więcej informacji dotyczących modułów OVH dostępnych z automatyczną instalacją, zapoznaj się z dokumentacją: [Instalacja strony za pomocą modułów](https://docs.ovh.com/fr/hosting/modules-en-1-clic/){.external}.
+Jeżeli chcesz uzyskać więcej informacji dotyczących modułów OVH dostępnych z automatyczną instalacją, zapoznaj się z dokumentacją: [Instalacja strony za pomocą modułów](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}.
 
 #### W pełni automatyczna instalacja z przygotowywaniem bazy danych, dla osób nie posiadających wymaganych umiejętności technicznych
 
@@ -75,13 +75,13 @@ Gdy baza danych została już utworzona, wybierz zakładkę `Moduły`{.action}, 
 
 Wpisz wymagane informacje aż do rozpoczęcia instalacji modułu. Teraz należy jedynie czekać na wiadomość e-mail z potwierdzeniem instalacji, a następnie przeprowadzić wskazane poniżej etapy.
 
-Jeżeli chcesz uzyskać więcej informacji dotyczących modułów OVH dostępnych za pomocą 1 kliknięcia, zapoznaj się z dokumentacją: [Instalacja strony za pomocą modułów](https://docs.ovh.com/fr/hosting/modules-en-1-clic/){.external}.
+Jeżeli chcesz uzyskać więcej informacji dotyczących modułów OVH dostępnych za pomocą 1 kliknięcia, zapoznaj się z dokumentacją: [Instalacja strony za pomocą modułów](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}.
 
 #### Konfiguracja ręczna, wymagane umiejętności techniczne
 
 Rozwiązanie to stosowane jest w przypadku tworzenia lub przenoszenia strony internetowej bez wykorzystywania modułów OVH. Konieczne jest posiadanie plików strony internetowej, którą chcesz zainstalować. Należy zalogować się ręcznie do przestrzeni dyskowej, aby wgrać pliki strony internetowej, a następnie, o ile to możliwe, połączyć ją z uprzednio utworzoną bazą danych.
 
-Biorąc pod uwagę, że strony internetowe mogą się w znaczącym stopniu od siebie różnić, nie ma uniwersalnego sposobu postępowania, jednak możemy pokierować Cię w zakresie hostingu OVH przy użyciu naszej dokumentacji: [Umieszczanie strony w sieci](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/){.external} oraz [Przenoszenie strony na serwer OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}, o ile jest on wykorzystywany. Gdy strona zostanie już ręcznie zainstalowana na hostingu, przeprowadź wskazane poniżej etapy.
+Biorąc pod uwagę, że strony internetowe mogą się w znaczącym stopniu od siebie różnić, nie ma uniwersalnego sposobu postępowania, jednak możemy pokierować Cię w zakresie hostingu OVH przy użyciu naszej dokumentacji: [Umieszczanie strony w sieci](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/){.external} oraz [Przenoszenie strony na serwer OVH](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}, o ile jest on wykorzystywany. Gdy strona zostanie już ręcznie zainstalowana na hostingu, przeprowadź wskazane poniżej etapy.
 
 ### Etap 3: tworzenie adresów e-mail
 
@@ -91,7 +91,7 @@ Możesz pominąć ten etap, jeżeli nie chcesz korzystać z adresów e-mail wcho
 
 Wpisz wymagane informacje aż do utworzenia adresu e-mail. Powtórz ten etap, aby utworzyć większą liczbę adresów. Jeżeli jesteś w trakcie przenoszenia Twoich adresów e-mail na serwer OVH, skorzystaj z naszego narzędzia [OVH Mail Migrator] (https://omm.ovh.net/){.external}, które pomoże Ci wykonać wszystkie kroki. 
 
-Jeżeli chcesz otrzymać więcej informacji dotyczących tworzenia adresu e-mail lub przenoszenia usług do OVH, zapoznaj się z dokumentacją: [Tworzenie konta e-mail](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external} oraz [Przenoszenie strony na serwer OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}, o ile jest on wykorzystywany.
+Jeżeli chcesz otrzymać więcej informacji dotyczących tworzenia adresu e-mail lub przenoszenia usług do OVH, zapoznaj się z dokumentacją: [Tworzenie konta e-mail](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external} oraz [Przenoszenie strony na serwer OVH](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}, o ile jest on wykorzystywany.
 
 ### Etap 4: weryfikacja lub modyfikacja konfiguracji domeny
 
@@ -134,7 +134,7 @@ Sprawdź strefę DNS Twojej domeny u usługodawcy, który nią zarządza. Jeżel
 
 - **Przenoszenie usług (stron internetowych i adresów e-mail) na serwer OVH**
 
-W takim przypadku zmiany wprowadzone w DNS mogą spowodować brak dostępności usług, jeżeli są przeprowadzane w nieodpowiednim momencie. Zgodnie z różnymi etapami opisanymi w dokumentacji [Przenoszenie strony na serwer OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}, zmiana serwerów DNS domeny powinna odbywać się na końcu procesu.
+W takim przypadku zmiany wprowadzone w DNS mogą spowodować brak dostępności usług, jeżeli są przeprowadzane w nieodpowiednim momencie. Zgodnie z różnymi etapami opisanymi w dokumentacji [Przenoszenie strony na serwer OVH](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}, zmiana serwerów DNS domeny powinna odbywać się na końcu procesu.
 
 > [!primary]
 >
@@ -150,11 +150,11 @@ Jeżeli chcesz otrzymać pomoc w zakresie funkcjonalności Twojej strony, zachę
 ### Etap 6: korzystanie z adresów e-mail
 
 Możesz już korzystać z adresów e-mail. W tym celu OVH udostępnia aplikację internetową (Webmail): RoundCube. Jest ona dostępna pod adresem <https://mail.ovh.net/>, gdzie uzyskasz informacje dotyczące danych do logowania na pocztę e-mail utworzoną na serwerze.
-Jeżeli chcesz otrzymać więcej informacji odnośnie korzystania z RoundCube, zapoznaj się z naszym przewodnikiem: [Korzystanie z RoundCube](https://docs.ovh.com/pl/emails/roundcube_use/){.external}. Jeżeli chcesz skonfigurować adres e-mail na komputerze lub urządzeniu mobilnym (np. na smartphonie lub tablecie), zapoznaj się z dokumentacją dostępną na poniższej stronie: <https://docs.ovh.com/pl/emails/>.
+Jeżeli chcesz otrzymać więcej informacji odnośnie korzystania z RoundCube, zapoznaj się z naszym przewodnikiem: [Korzystanie z RoundCube](https://docs.ovh.com/pl/emails/webmail_przewodnik_dotyczacy_interfejsu_roundcube/){.external}. Jeżeli chcesz skonfigurować adres e-mail na komputerze lub urządzeniu mobilnym (np. na smartphonie lub tablecie), zapoznaj się z dokumentacją dostępną na poniższej stronie: <https://docs.ovh.com/pl/emails/>.
 
 ## Sprawdź również
 
-[Przenoszenie strony na serwer OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}
+[Przenoszenie strony na serwer OVH](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
 
 [Umieszczanie strony w sieci](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/){.external}
 
@@ -162,6 +162,6 @@ Jeżeli chcesz otrzymać więcej informacji odnośnie korzystania z RoundCube, z
 
 [Tworzenie konta e-mail](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external}
 
-[Korzystanie z RoundCube](https://docs.ovh.com/pl/emails/roundcube_use/ ){.external}
+[Korzystanie z RoundCube](https://docs.ovh.com/pl/emails/webmail_przewodnik_dotyczacy_interfejsu_roundcube/){.external}
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

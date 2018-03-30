@@ -38,7 +38,7 @@ OVH on antanut asiakkaidensa käyttöön hallintapaneeliin työkalun, jolla void
 
 - **Olemassa olevan sivun siirtäminen OVH:lle**
 
-Verkkosivun migraatio saattaa osoittautua herkäksi toimenpiteeksi erityisesti kun se toteutetaan palveluilla, jotka ovat sillä hetkellä tuotannossa ja joilla palvelukatkosta ei saa tapahtua. Tässä mielessä tämä ohje kertaa vain jotkut palveluiden migraation vaiheet. Verkkosivuston migraatioprosessin täydellisen kuvauksen voit lukea ohjeesta [Verkkosivuston siirtäminen OVH:lle](https://docs.ovh.com/fi/hosting/webhotellit_sivuston_ja_sahkopostien_siirto_ilman_palvelun_katkosta/){.external}.
+Verkkosivun migraatio saattaa osoittautua herkäksi toimenpiteeksi erityisesti kun se toteutetaan palveluilla, jotka ovat sillä hetkellä tuotannossa ja joilla palvelukatkosta ei saa tapahtua. Tässä mielessä tämä ohje kertaa vain jotkut palveluiden migraation vaiheet. Verkkosivuston migraatioprosessin täydellisen kuvauksen voit lukea ohjeesta [Verkkosivuston siirtäminen OVH:lle](https://docs.ovh.com/fi/hosting/sivun-migraatio-ovhlle/){.external}.
 
 
 ### 2. vaihe: Verkkosivuston asennus
@@ -87,7 +87,7 @@ Jos haluat tietää lisää moduulin asennuksesta edistyneessä tilassa, tutustu
 
 Tämä vaihtoehto on sopiva silloin, kun haluat luoda tai siirtää verkkosivun käyttämättä OVH:n moduuleja. Sinulla on oltava hallussasi siirrettäväksi tarkoitetun sivun tiedostot. Tallennustilaan täytyy siis kirjautua manuaalisesti, ladata sivun tiedostot ja sitten, mikäli mahdollista, liittää ne aiemmin luotuun tietokantaan.
 
-Tähän ei ole olemassa yleistä ohjetta, sillä sivut voivat poiketa toisistaan hyvin paljon. Pystymme kuitenkin ohjaamaan sinua webhotellissasi suoritettavissa menettelyissä dokumentaatiomme avulla: [Kotisivujen siirto verkkoon](https://docs.ovh.com/fi/hosting/webhotellit_kotisivujen_siirto_verkkoon/){.external} ja [Verkkosivujen siirtäminen OVH:lle](https://docs.ovh.com/fi/hosting/webhotellit_sivuston_ja_sahkopostien_siirto_ilman_palvelun_katkosta/){.external}. Kun verkkosivusi on asennettu käsin webhotelliisi, voit seurata loput alla olevat vaiheet.
+Tähän ei ole olemassa yleistä ohjetta, sillä sivut voivat poiketa toisistaan hyvin paljon. Pystymme kuitenkin ohjaamaan sinua webhotellissasi suoritettavissa menettelyissä dokumentaatiomme avulla: [Kotisivujen siirto verkkoon](https://docs.ovh.com/fi/hosting/webhotellit_kotisivujen_siirto_verkkoon/){.external} ja [Verkkosivujen siirtäminen OVH:lle](https://docs.ovh.com/fi/hosting/sivun-migraatio-ovhlle/){.external}. Kun verkkosivusi on asennettu käsin webhotelliisi, voit seurata loput alla olevat vaiheet.
 
 
 ### 3. vaihe: Sähköpostiosoitteiden luonti
@@ -98,7 +98,7 @@ Tämä vaihe voi olla valinnainen, jos et halua käyttää [webhotellituotteesee
 
 Seuraa pyydettyjä tietoja sähköpostiosoitteesi luomiseen saakka. Toista vaihe useiden sähköpostiosoitteiden luomiseksi. Jos olet siirtämässä sähköpostejasi OVH:lle, kehotamme käyttämään apunasi [OVH Mail Migrator -työkaluamme](https://omm.ovh.net/){.external}. 
 
-Mikäli haluat lukea lisää sähköpostiosoitteen luomisesta tai palveluiden siirtämisestä OVH:lle, voit tutustua dokumentaatioomme: [Ohje postilaatikon luomiseen](https://docs.ovh.com/fi/emails/webhotellit_ja_sahkopostit_ohje_postilaatikon_luomiseen/){.external} ja [Verkkosivujen siirtäminen OVH:lle](https://docs.ovh.com/fi/hosting/webhotellit_sivuston_ja_sahkopostien_siirto_ilman_palvelun_katkosta/){.external}.
+Mikäli haluat lukea lisää sähköpostiosoitteen luomisesta tai palveluiden siirtämisestä OVH:lle, voit tutustua dokumentaatioomme: [Ohje postilaatikon luomiseen](https://docs.ovh.com/fi/emails/webhotellit_ja_sahkopostit_ohje_postilaatikon_luomiseen/){.external} ja [Verkkosivujen siirtäminen OVH:lle](https://docs.ovh.com/fi/hosting/sivun-migraatio-ovhlle/){.external}.
 
 
 ### 4. vaihe: Tarkista tai muokkaa verkkotunnuksesi konfiguraatiota
@@ -170,7 +170,7 @@ Lisää tietoa RoundCubesta löydät seuraavasta ohjeesta: [RoundCuben käyttö]
 
 ## Lisää aiheesta
 
-[Verkkosivun siirtäminen OVH:lle](https://docs.ovh.com/fi/hosting/webhotellit_sivuston_ja_sahkopostien_siirto_ilman_palvelun_katkosta/){.external}
+[Verkkosivun siirtäminen OVH:lle](https://docs.ovh.com/fi/hosting/sivun-migraatio-ovhlle/){.external}
 
 [Kotisivujen siirtäminen verkkoon](https://docs.ovh.com/fi/hosting/webhotellit_kotisivujen_siirto_verkkoon/){.external}
 
@@ -179,8 +179,5 @@ Lisää tietoa RoundCubesta löydät seuraavasta ohjeesta: [RoundCuben käyttö]
 [Postilaatikon luominen](https://docs.ovh.com/fi/emails/webhotellit_ja_sahkopostit_ohje_postilaatikon_luomiseen/){.external}
 
 [RoundCuben käyttö](https://docs.ovh.com/fi/emails/selainposti_roundcube-ohje/){.external}
-
-[SSL-varmenteet webhotelleissa](https://docs.ovh.com/fi/hosting/){.external}
-
 
 Viesti käyttäjäyhteisömme kanssa osoitteessa <https://ovh-hosting.fi/community/foorumi>.

@@ -37,7 +37,7 @@ In the Control Panel, OVH provides a tool that allows you to install a CMS in on
 
 - **Migrating an existing website to OVH**
 
-Website migration can sometimes be quite tricky, particularly if you are migrating a website that is currently online and cannot experience service interruptions. As a result, this guide only includes a few of the steps you will need to take to migrate your services. Please refer to our guide: [Migrating your website and emails to OVH]https://docs.ovh.com/lt/hosting/migrating-website-to-ovh/){.external}.
+Website migration can sometimes be quite tricky, particularly if you are migrating a website that is currently online and cannot experience service interruptions. As a result, this guide only includes a few of the steps you will need to take to migrate your services. Please refer to our guide: [Migrating your website and emails to OVH](https://docs.ovh.com/lt/hosting/migrating-website-to-ovh/){.external}.
 
 ### Step 2: Set up your website
 
