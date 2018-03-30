@@ -1,11 +1,11 @@
 ---
-title: Konfiguracja konta Exchange na urządzeniu iPhone lub iPad
+title: 'Konfiguracja konta Exchange na urządzeniu iPhone lub iPad'
 slug: exchange_20132016_automatyczna_konfiguracja_z_poziomu_ios_iphone_-_ipad
-excerpt: Dowiedz się, jak skonfigurować konto Exchange na urządzeniu iPhone lub iPad przy użyciu aplikacji Mail
-section: Konfiguracja konta Exchange na smartfonie/tablecie
+excerpt: 'Dowiedz się, jak skonfigurować konto Exchange na urządzeniu iPhone lub iPad przy użyciu aplikacji Mail'
+section: 'Konfiguracja konta Exchange na smartfonie/tablecie'
 ---
 
-**Ostatnia aktualizacja dnia 2018-03-22**
+**Ostatnia aktualizacja dnia 2018-03-29**
 
 ## Wprowadzenie
 
@@ -82,8 +82,6 @@ OVH oferuje również aplikację internetową posiadającą [funkcje do pracy ze
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail włączonego do usługi MX Plan lub do usługi hostingu na urządzeniu iPhone lub iPad](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-iphone-ios-91/){.external}.
+[Konfiguracja konta e-mail włączonego do usługi MX Plan lub do usługi hostingu na urządzeniu iPhone lub iPad](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_na_iphone_ios_91/){.external}.
 
-[Konfiguracja konta e-mail Pro na urządzeniu iPhone lub iPad](https://docs.ovh.com/fr/emails-pro/configuration-iphone/){.external}.
-
-Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com](https://community.ovh.com/en/){.external}
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

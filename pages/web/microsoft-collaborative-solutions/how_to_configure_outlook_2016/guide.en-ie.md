@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure your Exchange account in Outlook 2016 for Wi
 section: 'Exchange email client configuration'
 ---
 
-**Last updated 28th March 2018**
+**Last updated 30th March 2018**
 
 ## Objective
 
@@ -15,7 +15,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- You must have an [Exchange](https://www.ovh.co.uk/emails/){.external} account.
+- You must have an [Exchange](https://www.ovh.ie/emails/){.external} account.
 - You must have Microsoft Outlook 2016 installed on your device.
 - You need to have the required credentials for the email address you would like to configure.
 - The OVH SRV field must be set up correctly your domain name's DNS area.
@@ -58,7 +58,7 @@ Once your account has been correctly configured and can be accessed via Outlook 
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH offers a web application that includes various [collaborative features](https://www.ovh.co.uk/emails/){.external}, You can access this application at <https://mail.ovh.net/en/>. You can log in using your email credentials.
+OVH offers a web application that includes various [collaborative features](https://www.ovh.ie/emails/){.external}, You can access this application at <https://mail.ovh.net/ie/>. You can log in using your email credentials.
 
 ## Go further
 
