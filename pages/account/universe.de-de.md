@@ -1,7 +1,7 @@
 ---
-title: Account management
+title: Accountverwaltung
 slug: account
-excerpt: Manage your accounts and billing preferences at OVH
+excerpt: Verwalten Sie Ihre Accounts und Rechnungsinformationen bei OVH
 color: grey
 img: icone-user.png
 order: 4
