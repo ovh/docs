@@ -1,103 +1,74 @@
 ---
-title: 'Exchange 2013/2016: Konfiguracja w systemie Android'
-excerpt: ''
+title: 'Konfiguracja konta Exchange na urządzeniach Android poprzez aplikację Gmail'
 slug: exchange_20132016_konfiguracja_w_systemie_android
-legacy_guide_number: g1282
+excerpt: 'Dowiedz się, jak skonfigurować konto Exchange na urządzeniach z systemem Android poprzez aplikację Gmail'
+section: 'Konfiguracja Exchange na smartfonie/tablecie'
 ---
 
+**Ostatnia aktualizacja dnia 2018-03-29**
 
-## Część 1: E-mail
-Najpierw kliknij na ikonę "E-mail".
+## Wprowadzenie
 
-W naszym przykładzie mamy konto Hosted Exchange. Jest ono konfigurowane na Samsung Tab z systemem Android 4.1.2
+Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych.  Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji.
 
-Podczas dodawania konta sprawdź, czy połączenie 3G lub Wi-Fi jest aktywne.
+**Dowiedz się, jak skonfigurować konto Exchange na urządzeniach z systemem Android poprzez aplikację Gmail.**
 
-![](images/img_1149.jpg){.thumbnail}
+## Wymagania początkowe
 
+- Wykupienie konta e-mail [Exchange](https://www.ovh.pl/emaile/){.external}
+- Zainstalowana aplikacja Gmail na Twoim urządzeniu (możesz pobrać ją z Google Play Store)
+- Dane do logowania do konta e-mail, które chcesz skonfigurować
 
-## Część 2: Konfiguracja konta e-mail
-Wpisz swój cały adres e-mail Exchange 2013 i hasło zdefiniowane dla konta Exchange w [panelu klienta](https://www.ovh.com/manager/web/login.html).
+> [!primary]
+>
+> Niniejszy przewodnik został stworzony w oparciu o urządzenie Nexus 6 z wersją systemu Android 7.1.1. W celu ujednolicenia procedury korzystamy z aplikacji Gmail, którą można pobrać z Play Store. Jeśli wybierzesz inną aplikację, sposób postępowania będzie wyglądał inaczej. 
+>
 
-Następnie kliknij na "Konfiguracja ręczna".
+## W praktyce
 
-![](images/img_1150.jpg){.thumbnail}
+### Etap 1: dodanie konta
 
+Na ekranie Twojego urządzenia wybierz aplikację `Gmail`{.action}. Dodanie konta może zostać przeprowadzone na dwa różne sposoby:
 
-## Część 3: Rodzaj konta e-mail
-Wybierz "Microsoft Exchange ActiveSync", aby kontynuować konfigurację konta Exchange.
+- **jeśli nie jest skonfigurowane żadne konto**: postępuj zgodnie z instrukcjami etapu powitalnego, następnie kliknij `Dodaj konto e-mail`{.action}. W kolejnym kroku wybierz `Exchange i Office 365`{.action}; 
 
-![](images/img_1151.jpg){.thumbnail}
+- **jeśli inne konto jest już skonfigurowane**: kliknij piktogram w postaci trzech myślników na górze po lewej stronie, a następnie piktogram w postaci strzałki po prawej stronie nazwy skonfigurowanego konta. Następnie kliknij `Dodaj konto`{.action} i wybierz `Exchange i Office 365`{.action}. 
 
+![Exchange](images/configuration-exchange-gmail-application-android-step1.png){.thumbnail}
 
-## Część 4: Parametry serwera Exchange
-W przypadku zamówień realizowanych od 26/04/2016 serwer Exchange dla oferty Hosted to ex2.mail.ovh.net.
-Teraz możesz podać informacje dotyczące konta Exchange.
+Wpisz Twój adres e-mail i kliknij `Dalej`{.action}.
 
-"Domena\nazwa użytkownika": nie wpisuj domeny, dodaj anty-slash (altGr+8 na klawiaturze) i cały adres e-mail.
+Następnie wpisz hasło wybrane dla Twojego konta e-mail, nie wybieraj certyfikatu klienta, kliknij `Dalej`{.action}, aby kontynuować konfigurację. W trakcie konfiguracji konta może zaistnieć potrzeba połączenia z serwerem OVH. W takim przypadku urządzenie wyświetli powiadomienie: kliknij `OK`{.action}, aby połączyć się z serwerem.
 
-"Hasło: hasło zdefiniowane w [panelu klienta](https://www.ovh.com/manager/web/login.html).
+Wpisz parametry serwera poczty przychodzącej. Niektóre pola mogą być wstępnie uzupełnione.
 
-"Serwer Exchange": serwer konta Exchange.
-W przypadku oferty Hosted jest to ex.mail.ovh.net; w przypadku oferty Private należy podać nazwę serwera wybranego podczas instalacji.
+|Informacja|Opis| 
+|---|---| 
+|Domena/Nazwa użytkownika|Wpisz pełny adres e-mail.|  
+|Hasło|Wpisz hasło przypisane do tego konta e-mail.|
+|Certyfikat klienta|Pozostaw puste.|
+|Serwer|Wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange > `Połączenie`{.action}.|
+|Port|Wpisz port 443.|  
+|Typ zabezpieczenia|Wybierz « SSL/TLS ».|
 
-"Korzystaj z szyfrowanego połączenia (SSL)": ta opcja musi być zaznaczona.
+Następnie kliknij `Dalej`{.action}. Jeśli wpisane informacje są poprawne, logowanie zakończy się sukcesem.
 
-"Akceptuj wszystkie certyfikaty SSL": ta opcja musi być zaznaczona.
+![Exchange](images/configuration-exchange-gmail-application-android-step2.png){.thumbnail}
 
-Kliknij na "Dalej", aby kontynuować.
+Aby zakończyć konfigurację, zezwól serwerowi OVH na zdalne zarządzanie niektórymi funkcjami bezpieczeństwa związanymi z urządzeniem. Kliknij `OK`{.action}, zapoznaj się z informacjami, które się wyświetlą, po czym kliknij `Aktywuj administratora tego urządzenia`{.action}.
 
-![](images/img_1152.jpg){.thumbnail}
+Następnie nazwij konto w taki sposób, aby łatwo je było odróżnić od innych kontdostępnych w aplikacji. Następnie kliknij `Dalej`{.action}.
 
+Wykonaj test wysyłki e-maili, aby sprawdzić, czy konto zostało poprawnie skonfigurowane.
 
-## Część 5: Aktywacja
-Pojawi się wiadomość dotycząca polityki poufności. Należy ją zaakceptować klikając na "OK".
+### Etap 2: korzystanie z konta e-mail
 
-![](images/img_1154.jpg){.thumbnail}
+Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
+OVH oferuje również aplikację internetową posiadającą [funkcje do pracy zespołowej](https://www.ovh.pl/emaile/){.external}  dostępną pod adresem <https://mail.ovh.net/pl/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
-## Część 6: Zarządzanie bezpieczeństwem
-Druga wiadomość dotyczy zdalnej kontroli nad urządzeniem.
+## Sprawdź również
 
-Potwierdź ją klikając na "OK".
+[Konfiguracja konta e-mail, włączonego do usługi MX Plan lub do usługi hostingu, na urządzeniu z systemem Android przy użyciu aplikacji Gmail](https://docs.ovh.com/pl/emails/konfiguracja-android/){.external}
 
-![](images/img_1155.jpg){.thumbnail}
-
-
-## Część 7: Opcje konta
-W tym interfejsie możesz zdefiniować niektóre opcje dotyczące konfiguracji adresu e-mail Exchange. 
-
-Po zdefiniowaniu ustawień kliknij na "Dalej".
-
-![](images/img_1156.jpg){.thumbnail}
-
-
-## Część 8: Administrator urządzenia zewnętrznego
-W tym interfejsie określone są uprawnienia do aplikacji "E-mail" Android.
-
-Kontynuuj klikając na "Włącz".
-
-![](images/img_1157.jpg){.thumbnail}
-
-
-## Część 9: Zakończenie
-Na tym etapie możesz nazwać swoje konto e-mail. 
-
-Aby zakończyć instalację konta Exchange kliknij na "OK".
-
-![](images/img_1158.jpg){.thumbnail}
-
-
-## Interfejs e-mail
-Oto interfejs e-mail, z którego możesz korzystać. 
-
-Kliknięcie na ikonę z prawej strony u góry pozwoli na dostęp do ustawień konta Exchange.
-
-![](images/img_1159.jpg){.thumbnail}
-
-
-## Interfejs konfiguracyjny konta e-mail
-Interfejs ze skonfigurowanym kontem e-mail
-
-![](images/img_1160.jpg){.thumbnail}
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
