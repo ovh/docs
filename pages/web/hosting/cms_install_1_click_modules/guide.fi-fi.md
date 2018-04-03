@@ -17,7 +17,7 @@ Yhden klikkauksen moduuleilla voidaan asentaa verkkosivu helposti ja nopeasti (t
 ## Edellytykset
 
 - Sinulla on [webhotelli](https://www.ovh-hosting.fi/webhotelli/).
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth//).
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager).
 - Et ole ladannut tiedostoja hakemistoon, jonne moduuli asennetaan.
 - Verkkosivullasi käytettävän verkkotunnuksen (sekä haluttaessa myös aliverkkotunnuksen) on oltava tyyppiä multisite.
 
@@ -53,13 +53,12 @@ Avautuvassa ikkunassa voit valita haluamasi sisällönhallintajärjestelmän ja 
 
 Jos et löydä listalta haluamaasi verkkotunnusta, mene kuvakkeeseen `Multisite`{.action} ja lisää se. Yritä sitten moduulin lisäystä uudelleen.
 
-Voit myös katsoa apua ohjeesta [Verkkotunnuksen jakaminen usealle sivulle](https://docs.ovh.com/fi/hosting/){.external}
+Voit myös katsoa apua ohjeesta [Verkkotunnuksen jakaminen usealle sivulle](https://docs.ovh.com/fi/hosting/multisiten-konfigurointi-webhotellissa/){.external}.
 
 Kun olet valinnut verkkotunnuksen, sinun on valittava helpotettu tai edistynyt asennus:
 
 - Helpotettu asennus (oletusvalintana): toteutamme sisällönhallintajärjestelmän asennuksen ja välitämme sinulle tunnuksesi sen hallinnoimista varten. Tämä on helpoin ja nopein tapa asentaa moduuli.
 - Edistynyt asennus: voit räätälöidä sisällönhallintajärjestelmän asennuksessa sovellettavaa konfigurointia. Tätä varten tietokantaasi on syötettävä useita sisällönhallintajärjestelmän toiminnan kannalta välttämättömiä tietoja: kirjautumistiedot, asennushakemisto, asennuksen kieli, administraattorin tunnus jne.
-
 
 #### Moduulin yksinkertainen asennus
 
@@ -74,13 +73,11 @@ Toteuttaaksesi tämän asennuksen varmista, että kohtaa `Edistynyt asennus`{.ac
 
 Kun asennus on päättynyt saat sähköpostiviestin, joka sisältää sisällönhallintajärjestelmän käyttöliittymään tarvittavat tunnukset. Voit nyt kirjautua käyttöliittymään muokkaamaan verkkosivuasi.
 
-
 #### Moduulin edistynyt asennus
 
 Toteuttaaksesi tämän asennuksen varmista, että kohta `Edistynyt asennus`{.action} on rastitettu. Klikkaa sitten painiketta `Asenna`{.action}.
 
 ![Moduulin edistynyt asennus](images/advanced_installation.png){.thumbnail}
-
 
 ##### Valitse tietokanta.
 
@@ -107,7 +104,7 @@ Sinun on syötettävä seuraavat tiedot moduulin konfiguroimiseksi:
 - *administraattorin nimi tai sähköpostiosoite:* tämä on käyttäjätunnus, jota käytät sisällönhallintajärjestelmän käyttöliittymään kirjautumisessa.
 - *salasana:* tämä on salasana, jota tarvitset kirjautumisessa sisällönhallintajärjestelmän käyttöliittymään.
 - *verkkotunnus:* verkkotunnus, jolle haluat asentaa verkkosivusi.
-Voit myös katsoa apua ohjeesta [Webhotellin jakaminen usealle sivulle](https://docs.ovh.com/fi/hosting/).
+Voit myös katsoa apua ohjeesta [Webhotellin jakaminen usealle sivulle](https://docs.ovh.com/fi/hosting/multisiten-konfigurointi-webhotellissa/).
 - *kieli:* sisällönhallintajärjestelmän asennuskieli
 - *asennuspolku:* tämä täytetään automaattisesti verkkotunnuksen valinnan yhteydessä. Sitä on mahdollista täydentää syöttämällä alahakemistoja. 
 
@@ -143,9 +140,7 @@ Jos haluat apua sivusi toimintoihin liittyen, kehotamme siirtymään sisällönh
 
 [Sisällönhallintajärjestelmän valinta verkkosivun luomista varten](https://www.ovh-hosting.fi/webhotelli/website/cms-vertailu/){.external}
 
-[Kuinka jakaa webhotelli useille sivuille](https://docs.ovh.com/fi/hosting/){.external}
-
-[Tietokannan hallinta webhotellin kautta](https://docs.ovh.com/fi/hosting/){.external}
+[Kuinka jakaa webhotelli useille sivuille](https://docs.ovh.com/fi/hosting/multisiten-konfigurointi-webhotellissa/){.external}
 
 Tutustu [Private SQL -tuotteisiimme](https://www.ovh-hosting.fi/webhotelli/sql-optiot.xml){.external}
 
