@@ -17,13 +17,13 @@ Rozwiązanie Private SQL umożliwia korzystanie z instancji SQL, posiadającej d
 
 - Posiadanie usługi Private SQL (zawartego w ofercie [pakiecie hostingowym](https://www.ovh.pl/hosting/){.external} lub zakupionego w ramach [opcji SQL](https://www.ovh.pl/hosting/opcje-sql.xml){.external}).
 - Posiadanie [hostingu](https://www.ovh.pl/hosting/){.external} znajdującego się w tym samym centrum danych co instancja Private SQL (informacja ta widoczna jest w Panelu klienta OVH).
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth){.external}.
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## W praktyce
 
 ### Ogólne informacje o instancji
 
-Na pasku usług po lewej stronie [Panelu klienta](https://www.ovh.com/auth){.external} wybierz sekcję `Bazy danych`{.action}, a następnie określoną instancję SQL. Następnie wybierz zakładkę `Informacje ogólne`{.action}.
+Na pasku usług po lewej stronie [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} wybierz sekcję `Bazy danych`{.action}, a następnie określoną instancję SQL. Następnie wybierz zakładkę `Informacje ogólne`{.action}.
 
 > [!primary]
 >
@@ -159,4 +159,4 @@ Możesz dokończyć instalację swojej strony internetowej lub migrację bazy da
 
 [Wszystko o prywatnym serwerze SQL](https://docs.ovh.com/pl/hosting/prywatny_sql/){.external}
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
