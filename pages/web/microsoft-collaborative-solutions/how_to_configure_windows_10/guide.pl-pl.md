@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w aplikacji Poczta na 
 section: 'Konfiguracja programu pocztowego Exchange'
 ---
 
-**Ostatnia aktualizacja dnia 2018-03-28**
+**Ostatnia aktualizacja dnia 2018-04-03**
 
 ## Wprowadzenie
 
@@ -50,7 +50,7 @@ Następnie wpisz informacje:
 |Serwer wymaga szyfrowanego połączenia (SSL).|Pozostaw to pole zaznaczone.|
 |Nazwa konta|Wpisz nazwę pozwalającą odróżnić to konto od Twoich pozostałych kont wyświetlających się w aplikacji Poczta.|
 
-Po uzupełnieniu informacji, kliknij przycisk `Zaloguj się`{.action}{.action}. Jeśli dane są prawidłowe, logowanie zakończy się sukcesem.
+Po uzupełnieniu informacji, kliknij przycisk `Zaloguj się`{.action}. Jeśli dane są prawidłowe, logowanie zakończy się sukcesem.
 
 Wyświetli się wówczas okno z pytaniem, czy chcesz dodać konto. Zawiera ono również informacje o zmianach dotyczących niektórych funkcji Twojego urządzenia. Zapoznaj się z tymi informacjami, a następnie dodaj konto. 
 
