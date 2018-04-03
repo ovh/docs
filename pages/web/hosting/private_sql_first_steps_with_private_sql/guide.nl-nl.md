@@ -15,15 +15,15 @@ Met Private SQL kunt u profiteren van een SQL-instance in combinatie met OVH-web
 
 ## Vereisten
 
-- U moet beschikken over een Private SQL-instance (inbegrepen in een \[webhosting]-programma (https://www.ovh.nl/shared-hosting/){.external}, of besteld via een [SQL-optie](https://www.ovh.nl/shared-hosting){.external}).
+- U moet beschikken over een Private SQL-instance (inbegrepen in een [webhosting-programma](https://www.ovh.nl/shared-hosting/){.external}, of besteld via een [SQL-optie](https://www.ovh.nl/shared-hosting){.external}).
 - U moet beschikken over een[Webhosting](https://www.ovh.nl/shared-hosting/){.external} op hetzelfde datacenter als uw Private SQL-instance (u kunt deze informatie vinden in uw OVH Control Panel).
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth){.external}
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructie
 
 ### De algemene informatie van de instance weergeven
 
-In de servicebalk links van uw [OVH-Control Panel](https://www.ovh.com/auth){.external} gaat u naar het onderdeel `Databases`{.action} en vervolgens naar de betreffende SQL-instance. Ga na of u het tabblad `Algemene informatie`{.action} geopend hebt.
+In de servicebalk links van uw [OVH-Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} gaat u naar het onderdeel `Databases`{.action} en vervolgens naar de betreffende SQL-instance. Ga na of u het tabblad `Algemene informatie`{.action} geopend hebt.
 
 > [!primary]
 >
@@ -105,7 +105,7 @@ Op de nieuwe pagina selecteert u het gewenste recht en klikt hierop. Voor een st
 
 Deze stap is alleen van toepassing als u een bestaande, opgeslagen database wilt importeren (noodzakelijk als u uw site naar OVH verplaatst of als u uw database naar uw nieuwe Private SQL verplaatst). Als u geen database hoeft te importeren, kunt u doorgaan naar de volgende handeling.
 
-Er zijn verschillende technieken waaruit u kunt kiezen om een database te importeren. OVH stelt hiervoor een tool ter beschikking in uw Control Panel. We zullen ons richten op deze tool. Om andere importmethodes te gebruiken, kunt u de volgende documentatie raadplegen: voor een [MySQL- of MariaDB-database](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/#export-et-import-de-base-de-donnees-mysql-ou-mariadb-hors-espace-client_1){.external} ; voor een [PostgreSQL-database](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/#export-et-import-de-base-de-donnees-postgresql-hors-espace-client_1){.external}.
+Er zijn verschillende technieken waaruit u kunt kiezen om een database te importeren. OVH stelt hiervoor een tool ter beschikking in uw Control Panel. We zullen ons richten op deze tool.
 
 #### Stap 1: Open de database import 
 
@@ -158,6 +158,4 @@ U kunt de installatie van uw site of de verplaatsing van uw database op uw nieuw
 
 ## Verder
 
-[Alles over Private SQL](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/){.external}
-
-Ga in gesprek met andere communitygebruikers op [https://community.ovh.com](https://community.ovh.com).
+Ga in gesprek met andere communitygebruikers op <https://community.ovh.com/en/>.
