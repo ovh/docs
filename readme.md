@@ -12,6 +12,9 @@ This project is under active development, and new guides are added or updated on
 * [Grav CMS](https://getgrav.org/) - The editor used internally to produce and manage guides 
 * [Algolia](https://www.algolia.com/) - The search engine used in docs.ovh.com
 
+## Test it
+* [docs-developer-env](https://github.com/ovh/docs-developer-env) - Our developer environment over docker, to live test your guides with our theme.
+* [docs-rendering-engine](https://github.com/ovh/docs-rendering) - Our HTML templating engine based on Pelican. ISO-rendering of docs.ovh.com 
 
 ## Contributing
 
