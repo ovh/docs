@@ -16,7 +16,7 @@ De 1-klik modules maken een eenvoudige en snelle installatie van een Website mog
 ## Vereisten
 
 - U moet beschikken over een [webhosting](https://www.ovh.nl/shared-hosting/){.external}.
-- U moet erbonden zijn met de [OVH klantenruimte](https://www.ovh.com/auth//){.external}.
+- U moet erbonden zijn met de [OVH klantenruimte](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - Bestanden hoeven niet te worden gedownload in de directory waar uw module wordt geïnstalleerd.
 - Het domein (indien gewenst met subdomein) dat gebruikt zal worden voor uw website moet aangemeld zijn als multisite.
 
@@ -28,7 +28,7 @@ Een CMS (Content Management System) stelt u in staat een website te maken via ee
 
 OVH biedt 4 CMS met 1-klik modules. Wanneer u deze oplossing gebruikt, moet u dus in deze lijst uw keuze maken. Als u hier al een van hebt gekozen, kunt u doorgaan met de verschillende stappen van deze handleiding. Zo niet, dan kan deze [CMS vergelijking](https://www.ovh.nl/shared-hosting/website/vergelijking-cms/){.external} u helpen in uw keuze.
 
-Als u een CMS wilt installeren dat niet door de OVH 1-klik modules wordt aangeboden, dan kunt u het altijd handmatig op uw hosting installeren, onder voorbehoud van de compatibiliteit van dit CMS met uw product (vind ons product [hier] (https://www.ovh.nl/shared-hosting/){.external}.
+Als u een CMS wilt installeren dat niet door de OVH 1-klik modules wordt aangeboden, dan kunt u het altijd handmatig op uw hosting installeren, onder voorbehoud van de compatibiliteit van dit CMS met uw product (vind ons product [hier](https://www.ovh.nl/shared-hosting/){.external}).
 
 ![CMS logo](images/CMS_logo.png){.thumbnail}
 
@@ -50,7 +50,7 @@ Kies in het venster dat verschijnt het gewenste CMS en dan het domein waarop u u
 
 Als u niet het gewenste domein in de lijst vindt, ga dan naar de tab `Multisite`{.action} om hem toe te voegen, en probeer opnieuw om een module toe te voegen.
 
-Voor hulp kunt u ook de handleiding raadplegen [Webhosting delen tussen verschillende sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}.
+Voor hulp kunt u ook de handleiding raadplegen [Webhosting delen tussen verschillende sites](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/){.external}.
 
 Wanneer u het domein hebt geselecteerd, moet u kiezen tussen een eenvoudige of een geavanceerde installatie:
 
@@ -100,9 +100,9 @@ U moet nu voor de configuratie de volgende informatie invullen:
 
 - *naam of e-mail van de beheerder: *dit is de gebruikersnaam die u gebruikt om in te loggen met het beheer van uw CMS; 
 - *wachtwoord: *dit is het wachtwoord dat u gebruikt om in te loggen op de beheerinterface van uw CMS;
--*domein: *dit is het domein waarop u uw site wilt installeren;
-Voor hulp kunt u ook de handleiding raadplegen [Mijn webhosting verdelen over verschillende sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
--*taal: *dit is de taal waarin het CMS wordt geïnstalleerd;
+- *domein: *dit is het domein waarop u uw site wilt installeren;
+Voor hulp kunt u ook de handleiding raadplegen [Mijn webhosting verdelen over verschillende sites](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/).
+- *taal: *dit is de taal waarin het CMS wordt geïnstalleerd;
 - *installatieroute: *deze laatste wordt automatisch ingevuld bij de selectie van het domein. U heeft de mogelijkheid om hem aan te vullen door er subdirectories in te vullen. 
 
 Wanneer deze informatie volledig is ingevuld klikt u op de knop `Volgende`{.action}:
@@ -137,12 +137,10 @@ Wanneer u hulp bij de functies van uw site wilt, kunt u naar de site-editor van 
 
 [Een CMS kiezen om een website te maken](https://www.ovh.nl/shared-hosting/website/vergelijking-cms/){.external}
 
-[Webhosting delen tussen verschillende sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}.
-
-[Database-beheer bij gedeelde hosting](https://docs.ovh.com/fr/hosting/gestion-dune-base-de-donnees-depuis-un-hebergement-mutualise/){.external}
+[Webhosting delen tussen verschillende sites](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/){.external}.
 
 Ontdek ons [Private SQL product](https://www.ovh.nl/shared-hosting/sql-opties.xml){.external}
 
 Ontdek ons [CloudDB product](https://www.ovh.nl/cloud/cloud-databases/){.external}
 
-Ga in gesprek met onze community gebruikers via <https://community.ovh.com>
+Ga in gesprek met onze community gebruikers via <https://community.ovh.com/en/>

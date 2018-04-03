@@ -16,7 +16,7 @@ Moduły OVH umożliwiają łatwe i szybkie postawienie strony internetowej (bez 
 ## Wymagania początkowe
 
 - Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}.
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth//){.external}.
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - Pusty katalog na hostingu, w którym zostanie zainstalowany moduł.
 - Domena (wraz z subdomeną, jeśli jest potrzebna), skonfigurowana w ramach opcji MultiSite.
 
@@ -52,7 +52,7 @@ W wyświetlonym oknie wybierz CMS, a następnie domenę, na której chcesz posta
 
 Jeśli wybranej domeny nie ma na liście, przejdź do zakładki `MultiSite`{.action}, aby ją dodać i ponownie spróbuj dodać moduł.
 
-Dowiedz się więcej o dodawaniu domeny w opcji MultiSite z tego przewodnika [Jak rozdzielić hosting WWW na wiele stron](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}.
+Dowiedz się więcej o dodawaniu domeny w opcji MultiSite z tego przewodnika [Jak rozdzielić hosting WWW na wiele stron](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}.
 
 Po wybraniu domeny, wybierz prosty lub zaawansowany tryb instalacji:
 
@@ -103,7 +103,7 @@ Teraz podaj poniższe informacje potrzebne do skonfigurowania modułu:
 - *nazwa lub e-mail administratora:* chodzi o login, którego będziesz używać do logowania się do interfejsu administratora wojego CMS-a;
 - *hasło:* hasło, którego będziesz używać do logowania się do interfejsu administratora Twojego CMS-a;
 - *domena:* domena przypisana do strony WWW, którą chcesz zainstalować;
-Dowiedz się więcej o dodawaniu domeny w opcji MultiSite z tego przewodnika [Jak rozdzielić hosting WWW na wiele stron](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
+Dowiedz się więcej o dodawaniu domeny w opcji MultiSite z tego przewodnika [Jak rozdzielić hosting WWW na wiele stron](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
 - *język:* język wybranego CMS-a;
 - *ścieżka instalacji:* jest ona wpisywana automatycznie podczas wyboru domeny. Możesz ją uzupełnić dopisując katalogi podrzędne.
 
@@ -139,7 +139,7 @@ Jeśli chcesz uzyskać pomoc dotyczącą funkcjonalności Twojej strony, zachęc
 
 [Porównanie rozwiązań CMS](https://www.ovh.pl/hosting/website/porownanie-cms/){.external}
 
-[Jak rozdzielić hosting WWW na wiele stron](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
+[Jak rozdzielić hosting WWW na wiele stron](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
 
 [Zarządzanie bazą danych na hostingu](https://docs.ovh.com/pl/hosting/zarzadzanie-baza-danych-na-hostingu-www/){.external}
 
@@ -147,4 +147,4 @@ Poznaj instancje [Private SQL](https://www.ovh.pl/hosting/opcje-sql.xml){.extern
 
 Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com>
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

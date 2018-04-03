@@ -53,7 +53,7 @@ In the window that opens, select the CMS you would like to use, and the domain y
 
 If the domain you want to use does not appear in the list, go to the `Multi-site`{.action} tab to add it, then try adding a module again.
 
-You can also refer to the guide on How to add several websites onto your web hosting plan.
+You can also refer to the guide [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/lt/hosting/multisites-configuring-multiple-websites/).
 
 Once you have selected your domain, you must choose between basic or advanced installation:
 
@@ -104,7 +104,7 @@ Now, you will need to enter the following information to configure the module:
 - **Admin name or email address:** the username you will use to log in to your CMS admin interface.
 - **Password:** the password you will use to log in to your CMS admin interface.
 - **Domain:** the domain you wish to install your website on.
-You can also refer to the guide on How to add several websites onto your web hosting plan.
+You can also refer to the guide [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/lt/hosting/multisites-configuring-multiple-websites/).
 - **Language:** the language that the CMS will be installed in.
 - **Installation path:** this is automatically entered when you select your domain. You can also add subdirectories to it.
 
@@ -141,6 +141,8 @@ Below, we've included some links from these CMS publishers, to help you get star
 ## Go further
 
 [Choosing a CMS for building your website](https://www.ovh.lt/svetainiu-talpinimas/website/tvs-palyginimas/){.external}
+
+[Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/lt/hosting/multisites-configuring-multiple-websites/)
 
 See our [Private SQL services](https://www.ovh.lt/svetainiu-talpinimas/sql-parinktys.xml){.external}
 

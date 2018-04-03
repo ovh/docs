@@ -51,7 +51,7 @@ Otevře se nové okno, v jehož rámci budete požádáni o výběr požadované
 
 Pokud požadovanou doménu na seznamu nenajdete, přejděte do záložky `Multisite`{.action}, přidejte doménu a zopakujte předchozí kroky.
 
-V případě potíží se obraťte na následující příručku: [Jak rozdělit webhosting mezi několik webových stránek](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}.
+V případě potíží se obraťte na následující příručku: [Jak rozdělit webhosting mezi několik webových stránek](https://docs.ovh.com/cz/cs/hosting/konfigurace-multisite-webhosting/){.external}.
 
 Po specifikaci domény je zapotřebí vybrat mezi expresní a pokročilou instalací:
 
@@ -102,7 +102,7 @@ Nyní je potřeba vyplnit následující údaje pro účely konfigurace modulu:
 - *Jméno nebo e-mail administrátora:* používá se pro přihlášení k CMS.
 - *Heslo:* používá se pro přihlášení k CMS.
 - *Doména:* doména, na níž má být modul nainstalován.
-V případě potíží se obraťte na následující příručku: [Jak rozdělit webhosting mezi několik webových stránek](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}.
+V případě potíží se obraťte na následující příručku: [Jak rozdělit webhosting mezi několik webových stránek](https://docs.ovh.com/cz/cs/hosting/konfigurace-multisite-webhosting/){.external}.
 - *Jazyk:* jazyk modulu.
 - *Umístění instalace:* toto pole se vyplní automaticky při výběru domény. Instalační adresář lze upřesnit pomocí podadresářů.
 
@@ -138,12 +138,10 @@ V případě jakýchkoli nejasností je Vám k dispozici oficiální dokumentace
 
 [Výběr toho správného CMS pro vytvoření webových stránek](https://www.ovh.cz/webhosting/website/porovnani-cms/){.external}
 
-[Jak rozdělit webhosting mezi několik webových stránek](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
-
-[Správa databáze na sdíleném webhostingu](https://docs.ovh.com/fr/hosting/gestion-dune-base-de-donnees-depuis-un-hebergement-mutualise/){.external}
+[Jak rozdělit webhosting mezi několik webových stránek](https://docs.ovh.com/cz/cs/hosting/konfigurace-multisite-webhosting/){.external}
 
 Seznamte se s naší [nabídkou Private SQL](https://www.ovh.cz/webhosting/moznosti-sql.xml){.external}
 
 Seznamte se s naší [nabídkou CloudDB](https://www.ovh.cz/cloud/cloud-databases/){.external}
 
-Přidejte se k naší uživatelské komunitě na https://community.ovh.com
+Přidejte se k naší uživatelské komunitě na <https://community.ovh.com/en/>
