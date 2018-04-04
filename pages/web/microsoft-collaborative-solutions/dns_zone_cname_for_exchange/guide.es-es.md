@@ -1,89 +1,85 @@
 ---
-title: Exchange 2013/2016 Añadir un registro CNAME
-excerpt: Esta guía explica cómo añadir un registro CNAME a un dominio con el servicio Exchange 2013/2016
+title: 'Crear un registro CNAME para asociar un dominio'
 slug: exchange_20132016_anadir_un_registro_cname
-legacy_guide_number: g1519
-section: Configuración de Exchange
+excerpt: 'Cómo añadir un registro CNAME a un dominio asociado al servicio Exchange'
+section: 'Configuración de Exchange'
 ---
 
+**Última actualización: 04/04/2018**
 
-## ¿Qué indica el botón de diagnóstico CNAME?
-El botón de diagnóstico CNAME (de Canonical Name) aparece en casos concretos al declarar un dominio en la plataforma Exchange.
+## Objetivo
 
-Este botón le permite demostrar que usted es el administrador del dominio declarado.
+Al asociar un dominio a su servicio Exchange, es posible que deba configurar también un registro CNAME en la zona DNS de dicho dominio. Este registro permite garantizar que el dominio añadido es legítimo.
 
-![](images/img_2057.jpg){.thumbnail}
+**Esta guía explica por qué puede ser necesario crear un registro CNAME al asociar un dominio y cómo hacerlo.**
 
+## Requisitos
 
-## ¿Por qué aparece este botón de diagnóstico?
+- Estar conectado al [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}.
+- Estar en condiciones de administrar el servicio Exchange desde el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}.
+- Haber añadido al servicio Exchange un dominio que requiera la creación de un registro CNAME.
+- Poder modificar la configuración (la zona DNS) del dominio.
+
+## Procedimiento
+
+### 1. El diagnóstico CNAME de OVH
+
+En determinados casos, al declarar un dominio en su servicio Exchange aparece la etiqueta de diagnóstico **CNAME** (de Canonical Name).
+
+Esta etiqueta le permite demostrar que usted es el administrador del dominio que desea declarar.
+
 Puede aparecer por los siguientes motivos:
 
+- El dominio no está registrado en OVH.
+- El dominio no está administrado por el mismo ID de cliente que el servicio Exchange.
+- El dominio no utiliza la configuración de OVH (es decir, sus servidores DNS).
 
-- El dominio no está registrado en OVH: al declararlo seleccionó la opción «Introducir un dominio no registrado con OVH del que sea propietario».
+![Diagnóstico del dominio asociado](images/cname_exchange_diagnostic.png){.thumbnail}
 
-- El dominio está registrado con OVH y apunta a los servidores DNS de OVG, pero no está administrado por el mismo identificador de cliente (NIC) que el servicio Exchange.
+### 2. Obtener la configuración CNAME de OVH
 
-- El dominio está registrado en OVH pero no apunta a los servidores DNS de OVH.
+Abra la pestaña `Dominios asociados`{.action} de su servicio Exchange y haga clic en la etiqueta roja `CNAME`{.action} para obtener la información necesaria.
 
+El contenido que deberá tener el registro CNAME se muestra de la siguiente forma:
 
+![Configuración CNAME de OVH](images/cname_exchange_informations.png){.thumbnail}
 
-![](images/img_2058.jpg){.thumbnail}
+Existen dos posibilidades:
 
+- **Si el dominio utiliza la configuración de OVH**, puede realizar las operaciones que se describen a continuación directamente desde el área de cliente de OVH.
 
-## ¿Cómo crear el registro CNAME?
-Para empezar, haga clic en el botón de diagnóstico CNAME para obtener la información necesaria para crear el registro CNAME.
+- **Si el dominio no utiliza la configuración de OVH** (es decir, si no utiliza los servidores DNS de OVH), deberá realizar los cambios necesarios desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS.
 
-![](images/img_2059.jpg){.thumbnail}
+> [!primary]
+>
+> Si el dominio está registrado en OVH, puede comprobar si utiliza nuestra configuración desde el área de cliente. Para ello, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio. A continuación, abra la pestaña `Servidores DNS`{.action}.
+>
 
-## Si el dominio no está registrado con OVH:
-Cree el registro CNAME en su actual proveedor de DNS.
+### 3. Crear el registro CNAME en la zona DNS de OVH
 
-OVH pone a su disposición dos herramientas con las que podrá conocer cuál es el proveedor de DNS: [Dig](https://www.ovh.es/soporte/herramientas/dig_domain.pl) y [Whois](https://www.ovh.es/soporte/herramientas/check_whois.pl).
+Haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
-También es posible que los servidores DNS utilizados sean los de OVH, en cuyo caso deberá añadir el registro CNAME desde el [área de cliente web](https://www.ovh.com/manager/web/login.html). 
+Se mostrará una tabla con la configuración del dominio en OVH. Cada línea de la tabla contiene un registro DNS.
 
-Más adelante se explica cómo.
+Para añadir un registro CNAME, haga clic en el botón `Añadir un registro`{.action}.
 
-## Si el dominio está registrado con OVH y apunta a los servidores DNS de OVH pero no está administrado por el mismo identificador de cliente (NIC) que el servicio Exchange:
-Cree el registro CNAME desde el [área de cliente web](https://www.ovh.com/manager/web/login.html), conectándose con el identificador del administrador del dominio.
+![Añadir un registro a la zona DNS](images/cname_exchange_add_entry_step1.png){.thumbnail}
 
-Seleccione el dominio correspondiente, abra la pestaña «Zona DNS» y haga clic en «Añadir un registro».
+Se abrirá una ventana en la que podrá elegir diversos registros DNS. Haga clic en `CNAME`{.action} e introduzca la información obtenida durante el diagnóstico de Exchange.
 
-![](images/img_2060.jpg){.thumbnail}
+![Introducir los parámetros CNAME](images/cname_add_entry_dns_zone.png){.thumbnail}
 
-## Cómo añadir el registro CNAME en la zona DNS
-Cree el registro CNAME con la información obtenida anteriormente y finalice la creación del registro.
+Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}. Asegúrese de que la información es correcta y haga clic en `Confirmar`{.action}.
 
-En este caso, el cambio se aplicará enseguida: alrededor de una hora debería ser suficiente.
+> [!primary]
+>
+> La modificación tarda entre 4 y 24 horas en propagarse y ser efectiva.
+>
 
-![](images/img_2061.jpg){.thumbnail}
+Puede comprobar si la configuración del registro CNAME es correcta en la pestaña `Dominios asociados`{.action} de su servicio Exchange. La etiqueta verde indica que el dominio se ha añadido correctamente. Si sigue estando roja, es posible que la propagación todavía no haya finalizado.
 
-## Si el dominio está registrado con OVH pero no apunta a los servidores DNS de OVH:
-En este caso también deberá determinar a qué servidores DNS apunta el dominio y crear el registro CNAME en su proveedor. 
+![Diagnóstico del dominio asociado](images/cname_exchange_diagnostic_green.png){.thumbnail}
 
-Para ello puede utilizar las herramientas que OVH pone a su disposición: [Dig](https://www.ovh.es/soporte/herramientas/dig_domain.pl) y [Whois](https://www.ovh.es/soporte/herramientas/check_whois.pl).
+## Más información
 
-## Dig:
-En el ejemplo de la imagen, los servidores DNS utilizados son:
-
-DNS108.ovh.net
-NS108.ovh.net
-
-![](images/img_2062.jpg){.thumbnail}
-
-## Whois:
-En el ejemplo de la imagen, los servidores DNS utilizados son:
-
-DNS108.ovh.net
-NS108.ovh.net
-
-![](images/img_2063.jpg){.thumbnail}
-
-
-## ¿Cómo saber si el registro CNAME se ha añadido correctamente?
-La creación de un registro CNAME está sujeta a la propagación DNS, por lo que puede tardar de 4 a 24 horas. No obstante, las operaciones en este tipo de registro suelen aplicarse muy rápidamente. Así podrá seguir configurando su plataforma Exchange.
-
-Si recarga la página de su área de cliente, el botón de diagnóstico CNAME debe haber desaparecido y habrán aparecido los botones de diagnóstico MX y SRV.
-
-![](images/img_2064.jpg){.thumbnail}
-
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
