@@ -1,94 +1,73 @@
 ---
-title: 'Svetainių talpinimo el. paštas: el. pašto dėžutės kūrimo gidas'
-excerpt: El. pašto dėžutės kūrimas OVH svetainių talpinimo paslaugoje
+title: 'Creating an email address with your MX Plan package'
 slug: svetainiu_talpinimo_el_pastas_el_pasto_dezutes_kurimo_gidas
-legacy_guide_number: g1343
+excerpt: 'Find out how to create an email address with your MX Plan package'
+section: 'Managing your email address'
+order: 1
 ---
 
+**Last updated 4th April 2018**
 
-## Prisijungimas prie valdymo sąsajos
-Junkitės šiuo [adresu](https://www.ovh.com/manager/web//). Prisijungimui naudokite savo ID ir slaptažodį.
+## Objective
 
+The email addresses in your MX Plan allow you to send and receive your email through your preferred device.
 
-- Pasirinkite savo domeną meniu El. paštas.
+**Find out how to create an email address with your MX Plan package.**
 
-- Spragtelėkite El. paštas.
+## Requirements
 
-- Spragtelėkite Pridėti paskyrą.
+- You need to have an MX Plan email address (included in [OVH Web Hosting plans](https://www.ovh.lt/svetainiu-talpinimas/){.external} or available separately).
+- You must be able to create email addresses as part of your package.
+- You must have permission to manage the MX Plan concerned from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+## Instructions
 
+### Step 1: Log in to your email service's interface
 
-![](images/img_3636.jpg){.thumbnail}
-El. pašto dėžutes galėsite kurti, jeigu turėsite el. pašto planą:
+To begin the procedure, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click on `Emails`{.action} in the service menu on the left, then select the domain name for which you have taken out an MX Plan package. Next, go to the `Emails`{.action} tab.
 
+The table shown contains all the email addresses created as part of your MX Plan package.
 
-- Nemokamą planą Start10M (1 el. pašto dėžutė);
-- [OVH svetainių talpinimo planą](http://www.ovh.lt/svetainiu-talpinimas/) (10 - 1000 el. pašto dėžučių);
-- [MxPlan planą](http://www.ovh.lt/produktai/mxplan.xml) (5 - 1000 el. pašto dėžučių).
+![email](images/email-creation-step1.png){.thumbnail}
 
+### Step 2: Create the email address
 
+To create a new email address, click on `Create an email address`{.action}. In the pop-up window, enter the following information:
 
+|Information|Description|  
+|---|---|  
+|User name|Enter the name for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.|  
+|Account description|Enter a short description that will distinguish this account from any other accounts added in your OVH Control Panel.|  
+|Account size|Select the size of account you want. This size refers to the space available to your account for storing messages.|  
+|Password|Define the password for this account, then confirm it.|
 
-## El. pašto dėžutės informacija
-Atsidariusiame sąsajos lange įveskite el. pašto paskyros informaciją:
+Then click `Next`{.action}. Check that all the information displayed in the summary is correct. If it is, click on `Next`{.action} again.
 
-Paskyros pavadinimas: įveskite el. pašto adreso pradžią;
+Finally, click on `Confirm`{.action} to create the email address. You can repeat this process as many times as you like, to create multiple email addresses.
 
-Paskyros apibūdinimas: įveskite paskyros apibūdinimą (pasirinktinai);
+> [!primary]
+>
+> For security reasons, please follow the required conditions when you choose your password. We also recommend:
+>
+> - Not using the same password twice.
+>
+> - Setting a password that does not contain any personal information (don’t include your surname, first name, or date of birth, for example).
+>
+> - Renewing your password regularly.
+>
+> - Not keeping any written records of your password, and not sending passwords to other people using your email address.
+>
+> - Not saving your passwords in your browser, even if your browser offers to do so.
+>
 
-Paskyros dydis: pasirinkite el. pašto dėžutės dydį;
+![email](images/email-creation-step2.png){.thumbnail}
 
-Slaptažodis: įveskite el. pašto paskyros slaptažodį;
+### Step 3: Use the email address
 
-Pakartokite: pakartokite el. pašto paskyros slaptažodį.
+Now, you just need to use your email addresses. To help you get started, OVH offers Roundcube: an online webmail application. Roundcube is available at the following address: <https://mail.ovh.net/lt/>. You will need to enter the credentials for the email address that you created with OVH.
 
+If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our documentation via this portal: <https://docs.ovh.com/lt/emails/>.
 
-Dėmesio, slaptažodžiams taikomos tokios kūrimo taisyklės:
+## Go further
 
-
-- Mažiausiai 9 simboliai.
-- Daugiausiai 30 simbolių.
-- Negalima naudoti diakritinių ženklų.
-
-
-
-Spragtelėkite Patvirtinti.
-
-Matysite pranešimą apie paskyros kūrimą.
-
-El. pašto dėžučių konfigūravimui su įvairiomis programomis, skaitykite gidą:
-
-
-- [El. pašto konfigūravimo gidai](http://www.ovh.lt/svetainiu-talpinimas/gidai/).
-
-
-
-![](images/img_2385.jpg){.thumbnail}
-
-
-## Kaip keisti el. pašto slaptažodį?
-
-- Valdymo sąsajoje pasirinkite savo domeną, eikite į skyrių El. paštas, po to El. paštas -- Keisti slaptažodį atsiras spragtelėjus dantračio piktogramą, esančią šalia paskyros, kurios slaptažodį norite keisti.
-
-
-
-![](images/img_3637.jpg){.thumbnail}
-
-- Įveskite naują slaptažodį ir pakartokite jį.
-
-Senojo slaptažodžio nurodyti nereikės.
-
-
-Dėmesio, slaptažodžiams taikomos tokios kūrimo taisyklės:
-
-
-- Mažiausiai 9 simboliai.
-- Daugiausiai 30 simbolių.
-- Negalima naudoti diakritinių ženklų.
-
-
-Spragtelėkite Patvirtinti ir slaptažodis bus pakeistas.
-
-Slaptažodžio keitimas gali trukti kelias minutes.
-
-![](images/img_2387.jpg){.thumbnail}
+Join our community of users on <https://community.ovh.com/en/>.
