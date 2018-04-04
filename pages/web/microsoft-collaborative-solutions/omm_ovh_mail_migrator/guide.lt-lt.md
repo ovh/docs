@@ -1,160 +1,140 @@
 ---
-title: El. pasto paskyru migravimas naudojant OVH Mail Migrator
+title: 'Migrating email accounts using OVH Mail Migrator'
 slug: exchange-el-pasto-paskyru-migravimas-ovh-mail-migrator
-legacy_guide_number: 1624
-excerpt: OVH Mail Migrator sasajos naudojimas
+excerpt: 'Find out how to migrate your email accounts to OVH using our OVH Mail Migrator tool'
+section: 'Account migration'
 ---
 
-OMM (OVH Mail Migrator) įrankis suteikia galimybę perkelti jūsų el. pašto paskyrų turinį (pvz., el. laiškus, kontaktus, kalendorių, užduotis ir t.t.) į Exchange, E-mail Pro ar MX Plan paskyras. Kitaip nei naudojant ribojantį PST eksportą, jums nebereikės ilgai laukti.
+**Last updated 4th April 2018**
 
-Pirmiausia atidarykite puslapį: [OVH Mail Migrator](https://omm.ovh.net){.external}.
+## Objective
 
+[OVH Mail Migrator](https://omm.ovh.net/){.external} is a tool created by OVH. It is used to migrate your email accounts to your OVH email addresses. The process covers different types of content, such as emails, contacts, calendars and tasks, provided that they are compatible with your email addresses.
 
-## Naujas migravimas
-Spragtelėkite `New migration`{.action} ir pereikite prie kito žingsnio.
+**Find out how to migrate your email accounts to OVH using our OVH Mail Migrator tool.**
 
+## Requirements
 
-![emails](images/2795_en.png){.thumbnail}
+- You must have an email service with OVH, such as an [Exchange](https://www.ovh.lt/El_pastas/){.external}, [Email Pro](https://www.ovh.lt/El_pastas/email-pro/){.external} or MX Plan (via the MX Plan or included in an [OVH Web Hosting](https://www.ovh.lt/svetainiu-talpinimas/){.external} plan).
+- You must have the login details for the email accounts you want to migrate (the source accounts).
+- You must have the login details for the OVH email accounts that will be receiving the migrated data (the destination accounts).
 
+## Instructions
 
-### Paskyra, is kurios migruojate
-Pasirinkite paskyros, iš kurios migruojate, tipą ir įveskite serverio parametrus.
+[OVH Mail Migrator](https://omm.ovh.net/){.external} can be accessed from the page <https://omm.ovh.net/>. It handles three types of migration, and allows you to track their progress.
 
-Jeigu jūsų naudojama paskyra talpinama OVH, rinkitės: **Hosted by OVH** (Autodetect). Įveskite el. pašto adresą ir spauskite **Detect settings**.
+|Migration type|Description|
+|---|---|
+|Single migration|Migrates the contents of one email address to another email address. This solution is recommended for migrating one or several email addresses (the steps must be repeated for each address migrated).|
+|Migration by file|Migrates the contents of one email address, which have previously been extracted into a file, to another email address. This process is compatible with PST, ICS and VCF file formats.|
+|Multiple migration (project mode)|Is used to handle several migrations as part of a single project. This solution is aimed at people who are looking to migrate a large number of email addresses.|
 
-Po to gausite slaptažodžio užklausą.
+Please read the section of this guide that covers the most suitable migration for your project.
 
+### Carrying out a single migration
 
+Log in to the <https://omm.ovh.net/> tool, move the mouse over the `Migration`{.action} tab in the menu bar at the top of the page, then click `New Migration`{.action}
 
-> [!primary]
->
-> Pavyzdžiui, jei migruojate iš MX Plan į E-mail Pro:
-> Server type: Hosted by OVH
-> Login: Jūsų MX Plan el. pašto adresas
-> Spragtelėkite Detect settings
-> Password: Jūsų el. pašto paskyros slaptažodis
-> 
+![omm](images/omm-migration-create.png){.thumbnail}
 
+On the page that opens, you can now fill in the information for each section.
 
-### Paskyra, i kuria migruojate
+- **Account:** enter the information for the **source account** and the **destination account**. As a reminder, the contents of the **source account** will be migrated to the **destination account**.
 
-![emails](images/2796_en.png){.thumbnail}
+|Information|Description|
+|---|---|
+|Server type|Select the server type that matches your accounts. If one of them is an OVH account, you can use **Hosted by OVH (Autodetect)** to fill in this information automatically.|
+|Server URL|Enter the URL address of the server on which your accounts are hosted. This field may be filled in automatically when the server type is chosen.|
+|Login|Enter the full email address for your accounts.|
+|Administrator account with delegation|This field appears for certain server types only.|
+|Password|Enter the password for your accounts.|
 
-Pasirinkite naujos paskyros tipą, įveskite el. pašto adresą ir slaptažodį. Serverio parametrų laukai bus užpildyti automatiškai.
+- **Options:** select the elements you want to migrate. Some content may be unavailable, depending on the server type you have chosen.
 
+- **Information:** enter an email address you would like to use for receiving notifications on the migration process.
 
+Click `Start migration`{.action} once you have entered all the information. If the information is correct, the process will begin.
 
-> [!primary]
->
-> Pavyzdžiui, jei migruojate iš MX Plan į E-mail Pro:
-> Server type: Hosted by OVH
-> Login: Jūsų E-mail Pro el. pašto adresas
-> Spragtelėkite Detect settings
-> Password: Jūsų E-mail Pro el. pašto paskyros slaptažodis
-> 
+In the page that opens, you can track the migration progress. Remember to save the `Migration ID`{.action} shown, and to wait until the process is complete. The amount of time this will take varies depending on the number of elements to be migrated. If you want to return to this screen, please continue to the section on “Tracking a single migration” below.
 
+### Tracking a single migration
 
-### Parinktys
-Pasirinkite elementus, kuriuos ketinate perkelti:
+There are two ways you can track the progress of a single migration:
 
-**E-mails**: El. laiškai, išsaugant naudojamą katalogų architektūrą.
+- From the email received notifying you that the migration has begun.
+- From the page for the <https://omm.ovh.net/> tool, by moving your mouse over the `Migration`{.action} tab in the menu bar at the top of the page, then clicking `Track/Synchronise`{.action}. You will need to enter the `Migration ID`{.action} and the `Source account`{.action} concerned.
 
-**Calendars**: Kalendoriai, susiję su paskyra, atkuriant įvykius bei renginius (be kvietimų į renginius).
+![omm](images/omm-migration-track.png){.thumbnail}
 
-**Contacts**: Kontaktai, pridėti prie paskyros.
+In the page that opens, you can track the progress of your migration. There will be a message stating whether the process is going to start, is in progress, or has been completed. Depending on the status provided, several actions can be taken:
 
-**InboxRules**: Taisyklės, nustatytos paskyroje (taikoma Exchange 2010 Sp1 ir naujesnių versijų paskyroms).
+|Action|Description|
+|---|---|
+|Stop the process|Used to stop the migration. Any elements already migrated will remain in the destination account.|
+|Delete migrated elements|This is used to delete any elements that have already been migrated to the destination account. You can delete elements from a specific synchronisation point onwards.|
+|Synchronisation|This allows new elements that were not migrated during a previous synchronisation to be recovered between the source account and the destination account. This action can be viewed as a migration of the missing elements from the source account to the destination account.|
 
-**Contact groups**: Kontaktų grupės, sukurtos paskyroje.
+### Carrying out a migration by file
 
-**Out of office settings**: Taisyklės, nustatytos pertraukų (nebuvimo laikotarpių) valdiklyje.
+Log in to the <https://omm.ovh.net/> tool, move your mouse over the `PST/ICS/VCF`{.action} tab in the menu bar at the top of the page, then depending on which migration you want to carry out, click `New PST migration`{.action}, `New ICS migration`{.action} or `New VCF migration`{.action}.
 
-**Tasks**: Užduotys, numatytos paskyroje.
+For this step, you will need the file containing the content that you want to migrate.
 
+![omm](images/omm-migration-files.png){.thumbnail}
 
-![emails](images/3768_en.png){.thumbnail}
+On the page displayed, fill in the information for the **destination account** then click `Start migration`{.action}. As a reminder, the contents of the PST, ICS or VCF file will be migrated to the **destination account**.
 
+If the information entered is correct, you will be asked to select the file from your computer. Then click `Upload`{.action}, and wait for the file to load. This may take a while, depending on the file size. You can view the progress of your uploads on this page.
 
-### Uzbaigimas
-Migruojant POP/IMAP paskyras į E-mail Pro ir Exchange, galima rinktis tik **E-mails** parinktį.
+Once the upload is complete, re-enter the password for the **destination account**, then click `Start migration`{.action}. If the information entered is correct, you can launch the migration by clicking `Start migration`{.action} again.
 
-Jūs galite įvesti kitą el. pašto adresą, kuriuo bus siunčiami pranešimai apie migravimo eigą.
+In the page that opens, you can track the migration progress. Remember to save the `Migration ID`{.action} shown, and to wait until the process is complete. The amount of time this will take varies depending on the number of elements to be migrated. If you want to return to this screen, please continue to the section on “Tracking a migration by file” below.
 
-Įvedę visus duomenis, spragtelėkite `Start Migration`{.action} ir paleiskite operaciją.
+### Tracking a migration by file
 
-Neteisingai įvedus prisijungimo vardą ir (ar) slaptažodį ar nurodžius klaidingą serverį, matysite klaidą:
+There are two ways you can track a migration by PST, ICS or VCF file:
 
+- From the email received notifying you that the migration has begun.
 
-![emails](images/2441.png){.thumbnail}
+- From the page for the <https://omm.ovh.net/> tool, by moving your mouse over the `Migration`{.action} tab in the menu bar at the top of the page, then clicking `Track/Synchronise`{.action}. You will need to enter the `Migration ID`{.action} and the `Destination account`{.action} concerned.
 
-Po užduoties sukūrimo bus paleista migravimo operacija.
+![omm](images/omm-migration-track.png){.thumbnail}
 
-- Jūs galite stebėti migravimo eigą.
+In the page that opens, you can track the progress of your migration. There will be a message stating whether the process is going to start, is in progress, or has been completed. Depending on the status provided, several actions can be taken:
 
+|Action|Description|
+|---|---|
+|Stop the process|Used to stop the migration. Any elements already migrated will remain in the destination account.|
+|Delete migrated elements|This is used to delete the elements that have been migrated to the destination account.|
 
-![emails](images/2798_en.png){.thumbnail}
+### Carrying out and tracking a multiple migration (project mode)
 
+Log in to the <https://omm.ovh.net/> tool, move your mouse over the `Project`{.action} tab on the menu bar at the top of the page, then click `New multiple migration project`{.action}.
 
+![omm](images/omm-migration-project.png){.thumbnail}
 
-> [!success]
->
-> - 
-> Svarbu: įsidėmėkite migravimo užduoties numerį (Migration ID), taip galėsite greičiau surasti ir stebėti paskyros migravimo eigą.
-> 
-> 
+On the page that opens, fill in the information for the **New project:**
 
+|Information|Description|
+|---|---|
+|Name|Define a name for your migration project.|
+|Password|Define a password for your project, so that you can manage it from the OVH Mail Migrator tool.|
+|Email|Enter an email address for receiving notifications on the progress of your migration project.|
 
-## PST failo importas
-Turite .pst failą ir norite jį importuoti į savo el. pašto paskyrą? Tai įmanoma naudojant meniu `PST migration`{.action}.
+Then click `Create project`{.action}. In the page that opens, you can manage and track your migration project. Remember to save the **Project ID** shown.
 
+You can now begin migrating your accounts. To do this, you can use several tabs:
 
-![emails](images/3769_EN.png){.thumbnail}
+|Tab|Description|
+|---|---|
+|Continue|Used to track the progress of the migrations for your project. There is also a button you can use to pause and restart your migrations.|
+|Multiple creation|Used to add several migrations to the queue, by importing a file (CSV or Excel). This file must be in a specific format. We recommend using the templates provided.|
+|Add|Used to add migrations to the queue, one account at a time. However, you can keep the source and destination servers as default values.|
+|Options|Can be used to customise which elements the OVH Mail Migrator should migrate, and the number of concurrent requests that the tool can handle when carrying out migrations.|
+|Log out|Used to log out of the project tracking page. You can then log in, and track other migration projects.|
 
-Spragtelėkite `Pradėti migravimą`{.action}
+If you want to return to the tracking for your migration project, log in to the <https://omm.ovh.net/> tool, move your mouse over the `Project`{.action} tab on the menu bar at the top of the page, then click `Track a project`{.action}. You will need to enter the `Migration project ID`{.action}, and the `Password`{.action} associated with it.
 
-Po to galėsite pasirinkti savo PST failą naudojant meniu `Browse`{.action}
+## Go further
 
-
-![emails](images/3770.png){.thumbnail}
-
-Pasirinkus .pst failą, jums reikės pakartotinai įvesti paskyros, į kurią importuojama, slaptažodį, prieš pradedant migravimą.
-
-Pradėjus migravimą įsidėmėkite migravimo ID, jį reikės pateikti migravimo eigai stebėti.
-
-
-## Migravimo stebejimas
-Jūs galite stebėti paskyros migravimo eigą.
-
-Šiam tikslui jums reikės:
-
-- Migration ID (žr. ankstesnį žinsgnį)
-- Paskyros, iš kurios migruojate, el. pašto adreso
-
-Įveskite reikiamus duomenis, spauskite `Follow migration`{.action} ir patikrinkite migravimo būseną.
-
-
-![emails](images/2799_en.png){.thumbnail}
-
-Naujame lange matysite migravimo būseną. Jūs taip pat galėsite patikrinti operacijos eigą ir sužinoti, ar ji sėkmingai užbaigta.
-
-- 
-    1. Migration ID - migravimo operacijos numeris.
-- 
-    1. Creation date - migravimo operacijos sukūrimo data.
-- 
-    1. Last update - naujausias migravimo operacijos keitimas.
-- 
-    1. `Rollback`{.action} mygtukas suteikia galimybę atkurti paskyrą į pradinę būseną (iki migravimo).
-
-
-![emails](images/2800_en.png){.thumbnail}
-
-
-### Atsaukimas
-**Cancel**: Vykdomo etapo užbaigimas ir būsimų žingsnių atšaukimas.
-
-*Pavyzdžiui: jei migruojate kontaktus, 'Cancel' paspaudimu užbaigsite kontaktų migravimą,* *tačiau jei buvo pateikta ir kalendorių migravimo užklausa, ši užduotis nebus įvykdyta,* *operacija bus užbaigta.*
-
-
-### Grizimas atgal
-`Rollback`{.action} mygtukas suteikia galimybę atkurti paskirties paskyrą į pradinę būseną. Ši funkcija bus prieinama tik 48 valandas nuo migravimo proceso pabaigos.
+Join our community of users on <https://community.ovh.com/en/>.
