@@ -1,67 +1,82 @@
 ---
-title: 'Hosting www: Konfiguracja serwerów MX w strefie DNS OVH'
-excerpt: 'Hosting www: Konfiguracja serwerów MX w strefie DNS OVH'
+title: 'Dodanie rekordu MX w konfiguracji domeny'
 slug: hosting_www_konfiguracja_serwerow_mx_w_strefie_dns_ovh
-legacy_guide_number: g2012
+excerpt: 'Dowiedz się, jak dodać rekord MX do strefy DNs domeny'
+section: 'DNS i strefa DNS'
+order: 4
 ---
 
+**Ostatnia aktualizacja dnia 2018-04-03**
 
-## Posiadasz usługę e-mail w OVH.
-Jeśli korzystasz z e-maili zawartych w ofercie hostingu www, musisz używać wpisów MX OVH:
+## Wprowadzenie
 
-- Serwery mail [Anty-Wirus + Anty-Spam]:
+Pole MX umożliwia powiązanie domeny z serwerem poczty elektronicznej. Dzięki temu serwery poczty wychodzącej kierują wiadomości e-mail do odpowiednich adresów pocztowych. Istnieje prawdopodobieństwo, że dostawca Twoich usług dysponuje kilkoma serwerami poczty elektronicznej. W takim przypadku należy utworzyć kilka rekordów MX.
 
+**Dowiedz się, jak dodać rekord MX do konfiguracji domeny OVH.**
 
-|Typ pola|Priorytet|Adres docelowy|
-|MX|1|mx1.mail.ovh.net.|
-|MX|5|mx2.mail.ovh.net.|
-|MX|10|mx3.mail.ovh.net.|
+## Wymagania początkowe
 
+- Dostęp do interfejsu zarządzania domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Wybrana domena powinna używać konfiguracji OVH (serwerów DNS OVH)
 
+> [!warning]
+>
+> - Jeśli Twoja domena nie używa serwerów DNS OVH, zmodyfikuj rekordy MX w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny.
+>
+> - Jeśli Twoja domena jest zarejestrowana w OVH, możesz sprawdzić w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, w zakładce [Serwery DNS](https://www.ovh.com/auth/?action=gotomanager){.external}, czy używa ona konfiguracji OVH.
+>
 
-## Informacja:
-Aktualnie stare serwery MX nadal działają dla usług e-mail utworzonych przed 23/05/2016.
+## W praktyce
 
+### Etap 1: podstawowe informacje o rekordzie MX
 
-## Nie masz usługi e-mail w OVH
-Jeśli nie masz usługi e-mail w OVH, nie możesz odbierać e-maili, ponieważ nie posiadasz konta e-mail.
-W takiej sytuacji możesz korzystać z Aliasów (przekierowań).
+Rekord MX służy do powiązania Twojej domeny z serwerem dostarczonym przez dostawcę rozwiązania poczty elektronicznej, np. OVH. Kiedy osoba, z którą korespondujesz wysyła do Ciebie wiadomość e-mail, rekord MX wskazuje serwerowi poczty wychodzącej do jakiego serwera powinien ją skierować.
 
-Możesz na przykład utworzyć alias "alias@mojadomena.com" z przekierowaniem na istniejący adres e-mail "mojadres@mojainnadomena.com".
-W tym przypadku należy skorzystać z takiej konfiguracji:
-Serwer mail [Alias]:
-|Typ pola|Priorytet|Adres docelowy|
-|MX|1|redirect.ovh.net|
+Istnieje możliwość konfiguracji kilku rekordów MX dla jednej domeny. Każdemu z nich należy nadać priorytet. Dzięki temu serwery poczty wychodzącej będą otrzymywały informacje, do których serwerów mają wysyłać wiadomości w pierwszej kolejności. Pamiętaj, że możesz dodawać jedynie rekordy MX należące do tego samego zestawu i od tego samego dostawcy usługi.
 
+**Zmiana rekordów MX domeny jest operacją wymagającą wiedzy**: pomyłka w modyfikacji może uniemożliwić spływanie wiadomości e-mail na Twoje konta e-mail. Zalecamy w związku z tym dużą ostrożność podczas wykonywania tej operacji.
 
-Jeśli posiadasz ofertę e-mail, również możesz korzystać z Aliasów (przekierowań). Zapoznaj się z tym przewodnikiem: []({legacy}2001).
+### Etap 2: znajomość konfiguracji MX OVH
 
+Zapoznaj się z przedstawioną poniżej konfiguracją MX OVH przewidzianą dla rozwiązań MX Plan (występującą samodzielnie lub włączoną do oferty [hostingu](https://www.ovh.pl/hosting//){.external} oraz [Exchange](https://www.ovh.pl/emaile/){.external}. Na serwerach poczty elektronicznej OVH zainstalowane jest oprogramowanie antyspamowe i antywirusowe.
 
-## Masz usługę e-mail u innego dostawcy.
+|Domena|TTL|Typ rekordu|Priorytet|Adres docelowy|
+|---|---|---|---|---|
+|*pozostaw puste*|3600 |MX|1|mx0.mail.ovh.net.|
+|*pozostaw puste*|3600 |MX|5|mx1.mail.ovh.net.|
+|*pozostaw puste*|3600 |MX|50 |mx2.mail.ovh.net.|
+|*pozostaw puste*|3600 |MX|100|mx3.mail.ovh.net.|
 
-- Dysponujesz nazwą hosta dla serwera/serwerów MX:
+Teraz zastosuj rekordy MX w konfiguracji DNS Twojej domeny. Operacja ta została opisana w kolejnym etapie. 
 
+### Etap 3: modyfikacja konfiguracji rekordu MX OVH
 
-Jeśli Twoja domena korzysta ze strefy DNS OVH a usługa e-mail znajduje się u innego dostawcy (nie w OVH lub na serwerze dedykowanym), możesz skonfigurować strefę DNS w ten sam sposób, ale podając odpowiednie serwery MX:
-Serwery mail:
-|Typ pola|Prioriytet|Adres docelowy|
-|MX|1|twój serwer mail|
-|MX|5|twój kolejny serwer mail|
+Aby zmodyfikować rekordy MX w konfiguracji OVH Twojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Na pasku usług po lewej stronie kliknij `Domeny`{.action}, następnie wybierz domenę i przejdź do zakładki `Strefa DNS`{.action}.
 
+W tabeli, która się wyświetli znajdziesz konfigurację Twojej domeny OVH. Każdy wiersz odpowiada jednemu rekordowi DNS. Zalecamy sprawdzenie w pierwszym kroku, czy jakieś rekordy MX zostały już wcześniej dodane do konfiguracji DNS Twojej domeny. Możesz posłużyć się w tym celu oknem filtrowania.
 
+![dnsmxrecord](images/mx-records-dns-zone.png){.thumbnail}
 
-- Nie dysponujesz nazwami hostów, ale znasz jeden lub kilka adresów IP serwera/serwerów MX:
+Jeśli w konfiguracji są już zapisane rekordy MX i chcesz je zastąpić, kliknij ikonkę koła zębatego po prawej stronie każdego wiersza w tabeli odpowiadającego rekordowi, a następnie kliknij `Usuń rekord`{.action}. Jednocześnie zadbaj, aby domena cały czas posiadała co najmniej jeden rekord MX.
 
+Kliknij przycisk `Dodaj rekord`{.action}, następnie wybierz `MX`{.action}. Wpisz wymagane informacje w zależności od wybranego rozwiązania poczty elektronicznej:
 
-Jeśli Twoja domena korzysta ze strefy DNS OVH ale korzystasz z zewnętrznej usługi e-mail (na przykład na lokalnym serwerze), możesz skonfigurować swoją strefę DNS OVH tak, aby przypisać ten adres IP do nazwy hosta. Nie można wprowadzić wpisu MX w formie adresu IP.
-Serwer mail:
-|Subdomena|Typ pola|Priorytet|Adres docelowy|
-|mail2|A||IP serwera mail|
-||MX|1|mail2.twoja_domena|
+- **jeśli używasz rozwiązania poczty elektronicznej OVH**: wykorzystaj informacje opisane w [etapie 2: znajomość konfiguracji MX OVH](https://docs.ovh.com/pl/domains/hosting_www_konfiguracja_serwerow_mx_w_strefie_dns_ovh/#etap-2-znajomosc-konfiguracji-mx-ovh){.external};
 
+- **jeśli używasz innego rozwiązania**: wykorzystaj informacje podane przez dostawcę Twojej usługi.
 
+Po wpisaniu informacji zakończ ostatni etap, następnie kliknij `Zatwierdź`{.action}.
 
+> [!primary]
+>
+> W związku z wprowadzoną zmianą, należy wziąć pod uwagę czas propagacji, który wynosi od 4 do 24 godzin maksimum. Po tym czasie zmiana będzie aktywna.
+>
 
-## Czas propagacji
-Uwaga: Propagacja zmian w strefie DNS trwa do 24 godzin.
+## Sprawdź również
 
+[Informacje na temat serwerów DNS](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/){.external}
+
+[Modyfikacja strefy DNS OVH](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
