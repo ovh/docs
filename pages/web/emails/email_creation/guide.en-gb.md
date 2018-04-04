@@ -1,95 +1,73 @@
 ---
-title: 'Hosted email: How to set up an email address'
-excerpt: 'Hosted email: How to set up an email address'
+title: 'Creating an email address with your MX Plan package'
 slug: hosted_email_how_to_set_up_an_email_address
-section: Getting Started
+excerpt: 'Find out how to create an email address with your MX Plan package'
+section: 'Managing your email address'
+order: 1
 ---
 
+**Last updated 4th April 2018**
 
-## Log in to your control panel
-Log in to the [control panel](https://www.ovh.com/manager/web/) with your username (NIC handle) and password.
+## Objective
 
+The email addresses in your MX Plan allow you to send and receive your email through your preferred device.
 
-- Select your domain in the "Emails" menu. 
+**Find out how to create an email address with your MX Plan package.**
 
-- Select theEmail tab.
+## Requirements
 
-- Click Add an account.
+- You need to have an MX Plan email address (included in [OVH Web Hosting plans](https://www.ovh.co.uk/web-hosting/){.external} or available separately).
+- You must be able to create email addresses as part of your package.
+- You must have permission to manage the MX Plan concerned from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+## Instructions
 
+### Step 1: Log in to your email service's interface
 
-![](images/img_3636.jpg){.thumbnail}
-You must have a valid email service to be able to add email accounts:
+To begin the procedure, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click on `Emails`{.action} in the service menu on the left, then select the domain name for which you have taken out an MX Plan package. Next, go to the `Emails`{.action} tab.
 
+The table shown contains all the email addresses created as part of your MX Plan package.
 
-- Start10M free offer (1 email account)
-- [OVH Web Hosting](http://www.ovh.co.uk/web-hosting/) (10-1000 email accounts)
-- [MX Plan](http://www.ovh.co.uk/products/mxplan.xml) (5-1000 email accounts)
+![email](images/email-creation-step1.png){.thumbnail}
 
+### Step 2: Create the email address
 
+To create a new email address, click on `Create an email address`{.action}. In the pop-up window, enter the following information:
 
+|Information|Description|  
+|---|---|  
+|User name|Enter the name for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.|  
+|Account description|Enter a short description that will distinguish this account from any other accounts added in your OVH Control Panel.|  
+|Account size|Select the size of account you want. This size refers to the space available to your account for storing messages.|  
+|Password|Define the password for this account, then confirm it.|
 
-## Your email account details
-Enter the following information in the new window:
+Then click `Next`{.action}. Check that all the information displayed in the summary is correct. If it is, click on `Next`{.action} again.
 
-Account name: the email address.
+Finally, click on `Confirm`{.action} to create the email address. You can repeat this process as many times as you like, to create multiple email addresses.
 
-Description: a description of the email account.
+> [!primary]
+>
+> For security reasons, please follow the required conditions when you choose your password. We also recommend:
+>
+> - Not using the same password twice.
+>
+> - Setting a password that does not contain any personal information (don’t include your surname, first name, or date of birth, for example).
+>
+> - Renewing your password regularly.
+>
+> - Not keeping any written records of your password, and not sending passwords to other people using your email address.
+>
+> - Not saving your passwords in your browser, even if your browser offers to do so.
+>
 
-Account size: your email account quota.
+![email](images/email-creation-step2.png){.thumbnail}
 
-Password: a password for your email account.
+### Step 3: Use the email address
 
-Confirmation: confirm your password.
+Now, you just need to use your email addresses. To help you get started, OVH offers Roundcube: an online webmail application. Roundcube is available at the following address: <https://mail.ovh.net/en/>. You will need to enter the credentials for the email address that you created with OVH.
 
+If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our documentation via this portal: <https://docs.ovh.com/gb/en/emails/>.
 
-Please note that the password must comply with certain conditions: 
+## Go further
 
-
-- Minimum 9 characters.
-- Maximum 30 characters.
-- No accented characters.
-
-
-
-Click Confirm/Ok to continue.
-
-A notification will appear to inform you that your email account has been created.
-
-We recommend the following guides for configuring your email accounts:
-
-
-- [Email configuration guides](https://www.ovh.co.uk/web-hosting/guides/).
-
-
-
-![](images/img_2385.jpg){.thumbnail}
-
-
-## How do you change your email password?
-
-- Firstly select your domain in the "Emails" menu then go to "Email" -- Change the password by clicking on the cogwheel next to the relevant email account.
-
-
-
-![](images/img_3637.jpg){.thumbnail}
-
-- Re-enter the new password and confirm it.
-
-You will not need to enter your old password.
-
-
-Please note that the password must comply with certain conditions: 
-
-
-- Minimum 9 characters.
-- Maximum 30 characters.
-- No accented characters.
-
-
-
-Click Confirm/Ok to complete the password change.
-
-It may take a few minutes for your password change to take effect.
-
-![](images/img_2387.jpg){.thumbnail}
+Join our community of users on <https://community.ovh.com/en/>.
