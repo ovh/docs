@@ -56,7 +56,7 @@ The table that opens will display your domain name’s configuration at OVH. It 
 
 You can edit your domain name’s OVH DNS zone by adding, modifying or deleting DNS records. There are two ways you can do this:
 
-- **Modifying the zone manually, in text mode:** Only for users with advanced technical knowledge. In the `DNS Zone`{.action} tab, click `Modify in text mode`{.action}, then follow the steps provided.
+- **Modifying the zone manually, in text mode:** Only for users with advanced technical knowledge. In the `DNS Zone`{.action} tab, click `Change in text format`{.action}, then follow the steps provided.
 
 - **Using our configuration assistants.**
 

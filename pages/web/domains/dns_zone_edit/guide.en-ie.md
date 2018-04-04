@@ -1,184 +1,109 @@
 ---
-title: 'Hosting: How to edit my DNS zone?'
-excerpt: 'Hosting: How to edit my DNS zone?'
+title: 'Editing an OVH DNS zone'
 slug: hosting_how_to_edit_my_dns_zone
-legacy_guide_number: g1604
+excerpt: 'Find out how to edit an OVH DNS zone via your Control Panel'
+section: 'DNS and DNS zone'
+order: 3
 ---
 
+**Last updated 4th April 2018**
 
-## Definition
-The DNS (or Domain Name System) translates a domain name into an IP address (the actual location of your website), so that your requests can reach the target server.
+## Objective
 
-![](images/img_3710.jpg){.thumbnail}
+A Domain Name System (DNS) zone is a domain name’s config file. It is composed of technical information, otherwise called ‘records’. DNS zones are usually used to link your domain name to the server (or servers) that hosts your website and email addresses.
 
+**Find out how to edit your OVH DNS zone via your Control Panel.**
 
-## Difference between the DNS zone and DNS servers
+## Requirements
 
-## DNS servers
+- You must have permission to manage the domain name from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You need to use the OVH configuration for the domain name concerned (on its DNS servers).
 
-- DNS servers are the servers which have been assigned to a domain name. It is therefore these servers which respond first before handing over to the DNS zone.
+> [!warning]
+>
+> - If your domain name does not use the OVH DNS servers, you will need to edit the configuration using the interface given by the service provider that manages your domain name.
+> 
+> - If your domain name is registered with OVH, you can check if the domain name uses our configuration. To do this, go to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the domain concerned, and go to the `DNS servers`{.action} tab.
+>
 
+## Instructions
 
+**We strongly recommend taking great care when you edit a DNS zone.** Incorrect changes could make your website inaccessible, or prevent your email address from receiving new emails.
 
-## DNS zone
--The DNS zone is a file that stores different records which specify the addresses of servers hosting your site (A), or your emails(MX). These addresses can be in the form of IP addresses or host names.
+By understanding what each of these records does, you will gain a better understanding of the changes you will make if you edit your domain name’s DNS zone. We recommend reading the table below, which provides descriptions of each record.
 
+|Record type|Description|  
+|---|---|
+|A|The A record is used to point a domain name to an IPv4 address. For example, the IP address of the server your website is hosted on.|
+|AAAA|The AAAA record is used to point a domain name to an IPv6 address. For example, the IP address of the server your website is hosted on.|
+|CNAME|The CNAME record is used for IP aliasing. It points a domain name to a different, canonical domain name. For example, if *www.mypersonaldomain.ovh* is an alias of *mypersonaldomain.ovh*, this would mean that *www.mypersonaldomain.ovh* would use the IP address (or addresses) of *mypersonaldomain.ovh*.|
+|MX|The MX record is used to point a domain name to an email server. For example, the IP address of the server your email solution is hosted on. Your service provider may have several email servers. If this is the case, you will need to create multiple MX records.|
+|SRV|The SRV record is used to define information on the address of a server that manages a service. For example, this record can define the address of a SIP server, or the address of a server that enables an email client to be configured automatically using autodiscover.|
+|TXT|The TXT record is used to add a chosen value (in text format) to your domain name’s DNS settings. This record is often used during the verification process.|
+|SPF|The SPF record is used to avoid potential identity theft via the email addresses that use your domain name. For example, this record specifies that only your email service provider’s server must be identified as a legitimate sending source. To find out more about this, you can refer to our guide to [Adding an SPF record to your domain name’s DNS configuration](https://docs.ovh.com/ie/en/domains/web_hosting_the_spf_record/){.external}.|
+|CAA|The CAA record is used to list the certificate authorities authorised to deliver SSL certificates for a domain name.|
 
-## Why edit servers or DNS zone?
+### Step 1: Access the area for managing your domain’s OVH DNS zone
 
-## DNS servers
-It may be necessary to modify DNS servers when changing registrar. Indeed, some registrars do not allow you to continue using their servers after you have switched your domain name to a competitor .
-It is also possible that you have a dedicated server which uses a DNS server, and you want to use this to manage your domain .
+First of all, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
-## DNS Zone
-When you want to modify the server hosting your website or emails following change of hos, for example, you have to modify your DNS zone. Once this is updated, your domain will point to these new servers.
+The table that opens will display your domain name’s configuration at OVH. It is made up of several DNS records (one per row in the table). You can filter the table's contents by DNS record type, or by domain name.
 
+![dnszone](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
 
-## What factors affect propagation time?
+### Step 2: Edit your domain name’s DNS zone
 
-## The impact of TTL
-TTL (Time to Live) is the time period for which servers cache the information for your DNS records. 
-At OVH, newly created DNS zones are set to one hour TTL. (TTL = 3600)
+You can edit your domain name’s OVH DNS zone by adding, modifying or deleting DNS records. There are two ways you can do this:
 
+- **Modifying the zone manually, in text mode:** Only for users with advanced technical knowledge. In the `DNS Zone`{.action} tab, click `Change in text format`{.action}, then follow the steps provided.
 
-## Connecting to the customer account
+- **Using our configuration assistants.**
 
-- Connect to your [customer account](https://www.ovh.com/manager/web) with your nic-handle and password.
+From this point onwards, this guide will only cover configuration using our configuration assistants.
 
-- Click "Login" to confirm.
+> [!primary]
+>
+> Take note of the information you would like to modify in your DNS zone. If you are modifying your DNS zone because a service provider has asked you to do so, the service provider should have provided you with a list of records to edit.
+>
 
+- **Add a new DNS record**
 
+To add a new DNS record, stay on the `DNS Zone`{.action}  tab of your Control Panel, and click `Add an entry`{.action}, on the right-hand side of the table. Select the DNS record type, then follow the steps indicated.
 
-![](images/img_3711.jpg){.thumbnail}
+Please ensure that the record doesn’t already exist, and that it doesn’t point to a different target. To check this, you can filter content by record type or domain. If the record already exists, modify it using the steps described below.
 
+![dnszone](images/edit-dns-zone-ovh-add-entry.png){.thumbnail}
 
-## Selecting a domain
+- **Modifying an existing DNS record**
 
-- In the left hand menu, select "Domaines" then the domain you wish to modify.
+To modify a DNS record, stay in the `DNS Zone`{.action} tab in your Control Panel. Click the cogwheel icon to the right of the record you want to edit. Then click `Change entry`{.action}, and follow the steps indicated.
 
+![dnszone](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
 
+- **Deleting a DNS record**
 
-![](images/img_3712.jpg){.thumbnail}
+To delete a DNS record, stay on the `DNS Zone`{.action} tab in your Control Panel. Click the cogwheel icon to the right of the record you want to remove. Then click `Delete entry`{.action}, and follow the steps indicated.
 
+You can delete several records at once by ticking them on the left-hand side of the table, then clicking `Delete entry`{.action}.
 
-## Consulting the DNS zone
-Click on the "DNS Zone" in order to view your zone. Here you can see your different fields. You can also filter the display to make it easier.
+![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
-![](images/img_3714.jpg){.thumbnail}
+### Step 3: Wait for the changes to propagate
 
+Once you have modified your domain name’s OVH DNS zone, you will need to allow a maximum of 24 hours for the changes to fully propagate and be effective.
 
-## Modifying an entry
-In order to modify an entry, just click on the penci icon, "Next" and then et "Confirm".
+If you would like the propagation time to be shorter the next time you edit your OVH DNS zone, you can shorten it slightly by adjusting the TTL (*Time To Live*) that applies to all of the DNS records.
+To do this, go to the `DNS Zone`{.action} tab in your Control Panel, click `Default TTL`{.action}, and follow the steps indicated.
 
-![](images/img_3723.jpg){.thumbnail}
+You can also modify an individual DNS record’s TTL. You can only do this for one record at a time, by editing them or setting it when they are added.
 
+## Go further
 
-## Deleting an entry
-In order to modify an entry, you have to click on the trash icon and then click confirm.
+[General information about DNS servers](https://docs.ovh.com/ie/en/domains/web_hosting_general_information_about_dns_servers/){.external}.
 
-![](images/img_3724.jpg){.thumbnail}
+[Adding an SPF record to your domain name’s configuration](https://docs.ovh.com/ie/en/domains/web_hosting_the_spf_record/){.external}.
 
+[Protect your data from DNS cache poisoning with DNSSEC](https://www.ovh.ie/domains/dnssec_service.xml){.external}.
 
-## Reset configuration
-This button lets you reset your DNS zone configuration in order to rest all the fields by default.
-
-![](images/img_3715.jpg){.thumbnail}
-Click on the type of zone which you want then click on "Confirm":
-
-
-- Minimal entries: This choice will provide a zone with minimal entries needed for your domain to work.
-
-- Reset as normal: This choice will provide you with additional entries, like CNAM for FTP, etc.
-
-
-
-![](images/img_3716.jpg){.thumbnail}
-
-
-## Add an entry
-This button let's you add a new field in your DNS zone.
-
-![](images/img_3717.jpg){.thumbnail}
-You just have to choose the entry type and then click "Next".
-
-![](images/img_3718.jpg){.thumbnail}
-
-
-## Modify in text mode
-This button lets you edit your zone in text mode for advanced use. 
-This mode is useful for experienced users who want to carry out quick modifications.
-
-![](images/img_3719.jpg){.thumbnail}
-You just have to modify the text zone and click confirm.
-
-![](images/img_3720.jpg){.thumbnail}
-
-
-## Default TTL
-This button lets you modify your DNS zone's TTL in order to manage time period in cache.
-
-![](images/img_3721.jpg){.thumbnail}
-You just have to choose the TTL defaut that you want, and then click "Confirm".
-
-![](images/img_3722.jpg){.thumbnail}
-
-
-## A
-A Records point your domain name to an individual server using an IP address
-You cannot have a type A and a CNAME for the same host name.
-
-
-## MX
-MX Records point your domain name's email to its email provider.
-Only a host name can be indicated, not an IP address
-
-
-## CNAME
-CNAMEs entry is used to create an alias for a host name to another host name.
-Only a hostname can be specified, and not an IP address.
-You cannot have a CNAME and an A record for the same host name.
-
-
-## TXT
-A TXT record allows you to insert a text into your DNS zone.
-
-
-## SPF
-An SPF record lets you specify the servers authorised to send email with yout domain name. 
-More information here:
-
-- []({legacy}2028).
-
-
-
-
-## Check Zone
-This tool lets you check that your DNS servers have updated successfullly. 
-See the following guide:
-
-- []({legacy}1980).
-
-
-
-
-## DNSSEC
-This option lets you protect your domain against Cache Poisoning. 
-A guide is available here:
-
-- []({legacy}609).
-
-
-
-
-## Timings
-DNS Servers
-
-- All DNS server modifications can take up to 49 hours.
-
-
-DNS Zone
-
-- All DNS zone modifications can take up to 24 hours.
-
-
-
+Join our community of users on <https://community.ovh.com/en/>.
