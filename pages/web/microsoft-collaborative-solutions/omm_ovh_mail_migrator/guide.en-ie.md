@@ -1,146 +1,140 @@
 ---
-title: 'Exchange: Email account migration - OVH Mail Migrator'
-excerpt: 'Exchange: Email account migration - OVH mail migrator'
+title: 'Migrating email accounts using OVH Mail Migrator'
 slug: exchange_email_account_migration_-_ovh_mail_migrator
-legacy_guide_number: g1624
+excerpt: 'Find out how to migrate your email accounts to OVH using our OVH Mail Migrator tool'
+section: 'Account migration'
 ---
 
+**Last updated 4th April 2018**
 
-## Perform a migration
+## Objective
 
-## Log in to the interface
-Firstly, go to the [OVH Mail Migrator](https://omm.ovh.net) website.
+[OVH Mail Migrator](https://omm.ovh.net/){.external} is a tool created by OVH. It is used to migrate your email accounts to your OVH email addresses. The process covers different types of content, such as emails, contacts, calendars and tasks, provided that they are compatible with your email addresses.
 
+**Find out how to migrate your email accounts to OVH using our OVH Mail Migrator tool.**
 
-- Select "New migration" to go to the next step.
+## Requirements
 
+- You must have an email service with OVH, such as an [Exchange](https://www.ovh.ie/emails/){.external}, [Email Pro](https://www.ovh.ie/emails/email-pro/){.external} or MX Plan (via the MX Plan or included in an [OVH Web Hosting](https://www.ovh.ie/web-hosting/){.external} plan).
+- You must have the login details for the email accounts you want to migrate (the source accounts).
+- You must have the login details for the OVH email accounts that will be receiving the migrated data (the destination accounts).
 
+## Instructions
 
-![](images/img_2795.jpg){.thumbnail}
+[OVH Mail Migrator](https://omm.ovh.net/){.external} can be accessed from the page <https://omm.ovh.net/>. It handles three types of migration, and allows you to track their progress.
 
-## Migration settings
-You need to enter some information before launching the migration:
+|Migration type|Description|
+|---|---|
+|Single migration|Migrates the contents of one email address to another email address. This solution is recommended for migrating one or several email addresses (the steps must be repeated for each address migrated).|
+|Migration by file|Migrates the contents of one email address, which have previously been extracted into a file, to another email address. This process is compatible with PST, ICS and VCF file formats.|
+|Multiple migration (project mode)|Is used to handle several migrations as part of a single project. This solution is aimed at people who are looking to migrate a large number of email addresses.|
 
+Please read the section of this guide that covers the most suitable migration for your project.
 
-- 1.Source Exchange account information:
-Server type: The Exchange account you are migrating must be based on a compatible Exchange solution (version 2010 or above) or Gmail*.
-URL service: The URL for your Exchange server.
-Login: Your Exchange account login (usually your full email address).
-Password: Your Exchange account password.
+### Carrying out a single migration
 
-To migrate from one email account to your Exchange solution:
+Log in to the <https://omm.ovh.net/> tool, move the mouse over the `Migration`{.action} tab in the menu bar at the top of the page, then click `New Migration`{.action}
 
-Server type: choose Imap.
-Service URL: ssl0.ovh.net
-Login: Login for your email account: full email address
-Password: The password for your email account.
+![omm](images/omm-migration-create.png){.thumbnail}
 
-- 2.Destination Exchange account information:
-Server type: The type of OVH Exchange offer used.
-URL service: The service URL (filled in automatically).
-Login: Your Exchange login - usually your full email address.
-Password: Your Exchange account password.
+On the page that opens, you can now fill in the information for each section.
 
+- **Account:** enter the information for the **source account** and the **destination account**. As a reminder, the contents of the **source account** will be migrated to the **destination account**.
 
-NB: You can only migrate to an Exchange version 2013 account or higher.
+|Information|Description|
+|---|---|
+|Server type|Select the server type that matches your accounts. If one of them is an OVH account, you can use **Hosted by OVH (Autodetect)** to fill in this information automatically.|
+|Server URL|Enter the URL address of the server on which your accounts are hosted. This field may be filled in automatically when the server type is chosen.|
+|Login|Enter the full email address for your accounts.|
+|Administrator account with delegation|This field appears for certain server types only.|
+|Password|Enter the password for your accounts.|
 
-![](images/img_2796.jpg){.thumbnail}
-*Migration from a Gmail account towards an exchange 2013 account or higher:
+- **Options:** select the elements you want to migrate. Some content may be unavailable, depending on the server type you have chosen.
 
-![](images/img_2814.jpg){.thumbnail}
-you have to click on the Authorise Access button
-A Gmail page opens so you can enter your password:
+- **Information:** enter an email address you would like to use for receiving notifications on the migration process.
 
-![](images/img_2813.jpg){.thumbnail}
-If you're migrating from an Exchange service outside of OVH, you need to recreate the same email address in the [control panel](https://www.ovh.com/manager/web/login/). You will only be able to use it when your domain name's MX records have been updated and propagated. 
+Click `Start migration`{.action} once you have entered all the information. If the information is correct, the process will begin.
 
-If you're migrating an OVH Exchange 2010 account towards OVH Exchange 2013 or higher, you will need to give your new account a different name and then rename it once you've deleted your old account (in order to completely delete the old 2010 account please contact [support](https://www.ovh.co.uk/support/contact-us/)).
+In the page that opens, you can track the migration progress. Remember to save the `Migration ID`{.action} shown, and to wait until the process is complete. The amount of time this will take varies depending on the number of elements to be migrated. If you want to return to this screen, please continue to the section on “Tracking a single migration” below.
 
-- 3.Migration options:
-You need to select the different elements that you want to migrate:
-Emails: Emails, folder hierarchy is kept.
-Calendars: Calendars 
+### Tracking a single migration
 
-linked to the account, events will be kept but event requests will not be recreated.
-Contacts: Contacts 
-added to the account.
-Inbox rules: Rules 
-defined in the account, you need Exchange 2010 or higher.
-Contact groups: 
-Contact groups created in the account.
-Out of office settings: 
-Rules defined in the out of office assistant.
-Tasks: Tasks
-setup in the account.
+There are two ways you can track the progress of a single migration:
 
-- 4.Completion:
+- From the email received notifying you that the migration has begun.
+- From the page for the <https://omm.ovh.net/> tool, by moving your mouse over the `Migration`{.action} tab in the menu bar at the top of the page, then clicking `Track/Synchronise`{.action}. You will need to enter the `Migration ID`{.action} and the `Source account`{.action} concerned.
 
+![omm](images/omm-migration-track.png){.thumbnail}
 
-To migrate from pop/imap towards Exchange, select "E-mails"
+In the page that opens, you can track the progress of your migration. There will be a message stating whether the process is going to start, is in progress, or has been completed. Depending on the status provided, several actions can be taken:
 
-You can enter a "third party email" in order to get notifications about your migration.
+|Action|Description|
+|---|---|
+|Stop the process|Used to stop the migration. Any elements already migrated will remain in the destination account.|
+|Delete migrated elements|This is used to delete any elements that have already been migrated to the destination account. You can delete elements from a specific synchronisation point onwards.|
+|Synchronisation|This allows new elements that were not migrated during a previous synchronisation to be recovered between the source account and the destination account. This action can be viewed as a migration of the missing elements from the source account to the destination account.|
 
-![](images/img_3768.jpg){.thumbnail}
-Once you've filled in this information, click on Start migration".
+### Carrying out a migration by file
 
-## Error: login/password/server
-An error displays if you enter an incorrect login/password combination or server.
+Log in to the <https://omm.ovh.net/> tool, move your mouse over the `PST/ICS/VCF`{.action} tab in the menu bar at the top of the page, then depending on which migration you want to carry out, click `New PST migration`{.action}, `New ICS migration`{.action} or `New VCF migration`{.action}.
 
-![](images/img_2441.jpg){.thumbnail}
+For this step, you will need the file containing the content that you want to migrate.
 
-## Migration status
-The migration will be launched once you have created a task.
+![omm](images/omm-migration-files.png){.thumbnail}
 
+On the page displayed, fill in the information for the **destination account** then click `Start migration`{.action}. As a reminder, the contents of the PST, ICS or VCF file will be migrated to the **destination account**.
 
-- You can track the progress of the migration.
+If the information entered is correct, you will be asked to select the file from your computer. Then click `Upload`{.action}, and wait for the file to load. This may take a while, depending on the file size. You can view the progress of your uploads on this page.
 
-The migration can take some time depending on the amount of data in your account and your internet connection.
+Once the upload is complete, re-enter the password for the **destination account**, then click `Start migration`{.action}. If the information entered is correct, you can launch the migration by clicking `Start migration`{.action} again.
 
-Cancel: will cancel the next steps of the migration but will allow the current operation to complete.
+In the page that opens, you can track the migration progress. Remember to save the `Migration ID`{.action} shown, and to wait until the process is complete. The amount of time this will take varies depending on the number of elements to be migrated. If you want to return to this screen, please continue to the section on “Tracking a migration by file” below.
 
+### Tracking a migration by file
 
-![](images/img_2798.jpg){.thumbnail}
+There are two ways you can track a migration by PST, ICS or VCF file:
 
-- Important: make a note of the task number (task ID) so you can find and track your account migration.
+- From the email received notifying you that the migration has begun.
 
+- From the page for the <https://omm.ovh.net/> tool, by moving your mouse over the `Migration`{.action} tab in the menu bar at the top of the page, then clicking `Track/Synchronise`{.action}. You will need to enter the `Migration ID`{.action} and the `Destination account`{.action} concerned.
 
+![omm](images/omm-migration-track.png){.thumbnail}
 
+In the page that opens, you can track the progress of your migration. There will be a message stating whether the process is going to start, is in progress, or has been completed. Depending on the status provided, several actions can be taken:
 
-## Track the migration of my Exchange account
-You can track the various stages of the migration of your account.
+|Action|Description|
+|---|---|
+|Stop the process|Used to stop the migration. Any elements already migrated will remain in the destination account.|
+|Delete migrated elements|This is used to delete the elements that have been migrated to the destination account.|
 
-To do this, you will need:
+### Carrying out and tracking a multiple migration (project mode)
 
+Log in to the <https://omm.ovh.net/> tool, move your mouse over the `Project`{.action} tab on the menu bar at the top of the page, then click `New multiple migration project`{.action}.
 
-- The task number (task ID) of the current migration: Migration task ID that you noted when you launched the migration task.
-- your login for the source Exchange account (normally your full email address).
+![omm](images/omm-migration-project.png){.thumbnail}
 
+On the page that opens, fill in the information for the **New project:**
 
-Fill in the required fields and click "Follow" to view migration status.
+|Information|Description|
+|---|---|
+|Name|Define a name for your migration project.|
+|Password|Define a password for your project, so that you can manage it from the OVH Mail Migrator tool.|
+|Email|Enter an email address for receiving notifications on the progress of your migration project.|
 
-![](images/img_2799.jpg){.thumbnail}
-In the new window, you will see the migration status. You can check which stage the migration is at or if it has completed.
+Then click `Create project`{.action}. In the page that opens, you can manage and track your migration project. Remember to save the **Project ID** shown.
 
+You can now begin migrating your accounts. To do this, you can use several tabs:
 
-- 1.Migration task ID.
-- 2.Migration creation date.
-- 3.Last migration update.
-- 4.Rollback Lets you revert the account back to its original state (pre-migration).
+|Tab|Description|
+|---|---|
+|Continue|Used to track the progress of the migrations for your project. There is also a button you can use to pause and restart your migrations.|
+|Multiple creation|Used to add several migrations to the queue, by importing a file (CSV or Excel). This file must be in a specific format. We recommend using the templates provided.|
+|Add|Used to add migrations to the queue, one account at a time. However, you can keep the source and destination servers as default values.|
+|Options|Can be used to customise which elements the OVH Mail Migrator should migrate, and the number of concurrent requests that the tool can handle when carrying out migrations.|
+|Log out|Used to log out of the project tracking page. You can then log in, and track other migration projects.|
 
+If you want to return to the tracking for your migration project, log in to the <https://omm.ovh.net/> tool, move your mouse over the `Project`{.action} tab on the menu bar at the top of the page, then click `Track a project`{.action}. You will need to enter the `Migration project ID`{.action}, and the `Password`{.action} associated with it.
 
+## Go further
 
-![](images/img_2800.jpg){.thumbnail}
-
-
-## Cancel
-Cancel: will cancel the next steps of the migration but will allow the current operation to complete.
-Example: your contacts are currently migrating. If you click "Cancel", your contacts will be fully migrated. However, if you requested the migration of your calendars, this operation will not be performed and the migration will terminate.
-
-![](images/img_2802.jpg){.thumbnail}
-
-
-## Rollback
-Rollback: lets you revert the account back to its original state (pre-migration). This function is only available up to 48 hours after the migration has finished.
-
-![](images/img_2801.jpg){.thumbnail}
-
+Join our community of users on <https://community.ovh.com/en/>.
