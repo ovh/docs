@@ -1,10 +1,9 @@
 ---
-title: Comment mettre en place un certificat SSL EV sur mon site internet ?
+title: 'Comment mettre en place un certificat SSL EV sur mon site internet ?'
 slug: ssl-ev
-excerpt: Le certificat SSL EV garantit a vos utilisateurs l’existence juridique de votre entreprise et leur permet d’acheter sur votre site en toute confiance.
+excerpt: 'Le certificat SSL EV garantit à vos utilisateurs l’existence juridique de votre entreprise et leur permet d’acheter sur votre site en toute confiance.'
 section: SSL
 ---
-
 
 ## Informations generales
 Les certificats SSL EV commercialisés par OVH sont édités par l'autorité de certification Comodo. Elle est en charge de la vérification de l'existence juridique de votre entreprise.
@@ -28,19 +27,27 @@ Certificat SSL EV
 
 ## Comment commander un certificat SSL EV chez OVH ?
 
-### Si votre site internet est deja en place chez OVH
-Rendez-vous pour cela dans votre espace client afin de passer commande de votre futur certificat SSL EV.
+### Si votre site internet est déjà en place chez OVH
 
+Rendez-vous pour cela dans votre espace client afin de passer commande de votre futur certificat SSL EV :
 
-![hosting](images/activation1.png){.thumbnail}
+**Étape 1 : supprimer le certificat de base fourni gratuitement par OVH**
 
+Attention : cette tâche peut nécessiter quelques minutes.
 
-![hosting](images/activation2.png){.thumbnail}
+![hosting](images/activationnew1.png){.thumbnail}
+ 
+**Étape 2 : ajouter un nouveau certificat SSL**
+
+![hosting](images/activationnew2.png){.thumbnail}
+
+**Étape 3 : sélectionner le certificat payant**
+
+![hosting](images/activationnew3.png){.thumbnail}
 
 Vous n'avez qu'à suivre ensuite les différentes étapes.
 
-
-### Si votre site nexiste pas encore
+### Si votre site n'existe pas encore
 Nous vous proposerons directement lors de la commande d’un nouveau nom de domaine avec votre futur hébergement si vous souhaitez souscrire à un certificat SSL EV.
 
 
