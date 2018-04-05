@@ -1,158 +1,140 @@
 ---
-title: Migrace e-mailovych uctu prostrednictvim OMM
+title: 'Migrace e-mailových účtů prostřednictvím nástroje OVH Mail Migrator'
 slug: migrace-emailovych-uctu-prostrednictvim-ovh-mail-migrator
-legacy_guide_number: 1624
-excerpt: Seznameni s nastrojem OVH Mail Migrator
+excerpt: 'Seznámení s nástrojem OVH Mail Migrator'
+section: 'Migrace účtů'
 ---
 
-S pomocí nástroje OMM (OVH Mail Migrator) můžete snadno a rychle migrovat veškerý obsah svých Exchange účtů (e-maily, kontakty, kalendáře, úkoly) bez nutnosti exportu ve formátu .pst (což může být velmi složitý a zdlouhavý proces).
+**Poslední aktualizace 05/04/2018**
 
-Ze všeho nejdříve přejděte na následující odkaz: [OVH Mail Migrator](https://omm.ovh.net){.external}.
+## Cíl
 
+[OVH Mail Migrator](https://omm.ovh.net/){.external} je nástroj vyvinutý společností OVH,  který umožňuje rychlou a snadnou migraci e-mailových účtů na e-mailové adresy OVH. Migrační proces zahrnuje nejrůznější položky, jako např. e-maily, kontakty, kalendáře a úkoly (za předpokladu, že jsou kompatibilní s Vašimi e-mailovými adresami).
 
-## Spusteni nove migrace
-Kliknutím na tlačítko `New Migration`{.action} budete přeneseni do následujícího rozhraní:
+**Zjistěte, jak migrovat své e-mailové účty k OVH prostřednictvím nástroje OVH Mail Migrator.**
 
+## Prerekvizity
 
-![emails](images/2795_en.png){.thumbnail}
+- E-mailové řešení OVH, jako např. [Exchange](https://www.ovh.cz/emails/){.external}, [E-mail Pro](https://www.ovh.cz/emails/email-pro/){.external} nebo MX Plan (jako samostatné řešení nebo jako součást [webhostingového balíčku OVH](https://www.ovh.cz/webhosting/){.external}).
+- Přihlašovací údaje k e-mailovým účtům, které si přejete migrovat (dále jako „zdrojové účty“).
+- Přihlašovací údaje k e-mailovým účtům OVH, na něž si přejete migrovat data ze zdrojových účtů (dále jako „cílové účty“).
 
+## Postup
 
-### Zdrojovy ucet
-Zvolte svůj zdrojový účet a zadejte nastavení svého serveru.
+Nástroj [OVH Mail Migrator](https://omm.ovh.net/){.external} je dostupný na následující adrese: <https://omm.ovh.net/>. OMM provádí tři typy migrací a umožňuje sledovat jejich postup.
 
-Pokud je Váš zdrojový účet hostován u OVH, můžete zvolit možnost **Hosted by OVH** (Autodetect). Zadejte e-mailovou adresu a klikněte na **Detect Settings**.
+|Typ migrace|Popis|
+|---|---|
+|Jednoduchá migrace|Migruje obsah e-mailové adresy na jinou e-mailovou adresu.  Toto řešení je doporučováno v případě migrace jedné či více e-mailových adres (jednotlivé kroky je zapotřebí opakovat pro každou migraci zvlášť).|
+|Migrace souboru|Migruje obsah e-mailové adresy, jenž byl extrahován do souboru, na jinou e-mailovou adresu. Tento proces je kompatibilní s následujícími formáty: PST, ICS a VCF.|
+|Hromadná migrace|Umožňuje provádět správu většího počtu migrací v rámci jednoho projektu. Toto řešení je ideální pro migraci velkého počtu e-mailových adres.|
 
-Následně budete požádáni o zadání přístupového hesla.
+V návaznosti na předcházející tabulku pokračujte do té části příručky, která odpovídá Vašim požadavkům na migraci e-mailových účtů.
 
+### Jednoduchá migrace
 
+Přejděte na <https://omm.ovh.net/>, přesuňte kurzor myši na záložku `Migrace`{.action} (lišta v horní části stránky) a klikněte na tlačítko `Nová migrace`{.action}.
 
-> [!primary]
->
-> Příklad: migrace z MX Plan na E-mail Pro
-> Server type: Hosted by OVH
-> Login: zadejte svou e-mailovou adresu MX Plan
-> Klikněte na Detect Settings
-> Password: zadejte své přístupové heslo
-> 
+![omm](images/omm-migration-create.png){.thumbnail}
 
+Vyplňte požadované informace pro jednotlivé sekce.
 
-### Cilovy ucet
+- **Účet**: zadejte informace o **zdrojovém** a **cílovém účtu**. Mějte na paměti, že obsah **zdrojového účtu** bude migrován na **cílový účet**.
 
-![emails](images/2796_en.png){.thumbnail}
+|Informace|Popis|
+|---|---|
+|Typ serveru|V závislosti na svých účtech vyberte typ serveru. Pokud je jeden z nich účet OVH, můžete vybrat možnost automatického vyplnění informací „**Hosted by OVH (Autodetect)**“.|
+|URL serveru|Zadejte URL adresy serverů, na nichž jsou Vaše účty hostovány. Po výběru typu serveru může dojít k automatickému vyplnění tohoto pole.|
+|Login|Zadejte celé e-mailové adresy svých účtů.|
+|Administrátorský účet s delegací|Toto pole se zobrazuje pouze u určitých typů serverů.|
+|Heslo|Zadejte heslo ke svým e-mailovým účtům.|
 
-Zvolte typ svého nového účtu. Zadejte e-mailovou adresu a přístupové heslo. Nastavení serveru bude vyplněno automaticky.
+- **Možnosti**: vyberte položky, které si přejete migrovat. Určitý obsah může být v závislosti na vybraném typu serveru nedostupný.
 
+- **Informace**: zadejte e-mailovou adresu, na níž budou zasílány informace o průběhu migračního procesu.
 
+Po vyplnění požadovaných údajů klikněte na tlačítko `Spustit migraci`{.action}. Pokud jste zadali správné údaje, dojde k zahájení migrace.
 
-> [!primary]
->
-> Příklad: migrace z MX Plan na E-mail Pro
-> Server type: Hosted by OVH
-> Login: zadejte svou adresu E-mail Pro
-> Klikněte na Detect Settings
-> Password: zadejte heslo ke svému účtu E-mail Pro
-> 
+Na stránce pro sledování migrace můžete sledovat průběh migračního procesu. Nezapomeňte si poznamenat číslo migračního příkazu neboli `ID migrace`{.action} a vyčkejte na dokončení procesu. Celková doba procesu je závislá na objemu migrovaných dat.  Do tohoto rozhraní se můžete kdykoli vrátit. Přesný postup naleznete v následující sekci „Sledování jednoduché migrace“.
 
+### Sledování jednoduché migrace
 
-### Moznosti
-Zvolte jednotlivé prvky, které si přejete migrovat:
+Existují dva způsoby, jak přejít do rozhraní pro sledování jednoduché migrace:
 
-`Emails`{.action}: migrace e-mailů se zachováním hiearchie složek.
+- Prostřednictvím odkazu v e-mailu s informacemi o zahájení migrace
+- Prostřednictvím záložky `Migrace`{.action} v horní části stránek OMM <https://omm.ovh.net/>, kliknutím na tlačítko `Sledovat/Synchronizovat`{.action}. Abyste mohli postup migrace sledovat, budete muset vyplnit číslo migračního příkazu (`ID migrace`{.action}) a `zdrojový účet`{.action} migrace.
 
-`Calendars`{.action}: migrace kalendářů připojených k účtu. Jednotlivé události budou zachovány. Žádosti o účast na událostech nebudou znovu vytvořeny.
+![omm](images/omm-migration-track.png){.thumbnail}
 
-`Contacts`{.action}: migrace kontaktů.
+Po zadání požadovaných údajů dojde k zobrazení stránky s informacemi o probíhající migraci. Dozvíte se zde, zda proces čeká na zahájení, probíhá nebo byl již ukončen. V závislosti na aktuálním stavu migračního procesu je možné provést několik akcí:
 
-`Inbox rules`{.action}: migrace specifických pravidel pro příchozí poštu (vyžadován Exchange 2010 či vyšší).
+|action|Popis|
+|---|---|
+|Zastavit proces|Umožňuje zastavit probíhající migraci. Všechny migrované položky zůstávají na cílovém účtu.|
+|Odstranit migrované položky|Umožňuje odstranit již migrované položky z cílového účtu. Položky lze odstranit od předem specifikovaného synchronizačního bodu.|
+|Synchronizovat|Umožňuje obnovení nových položek, které nebyly zahrnuty v předcházející synchronizaci mezi zdrojovým a cílovým účtem. Tuto akci lze vnímat jako migraci chybějících položek ze zdrojového účtu na cílový účet.|
 
-`Contact groups`{.action}: migrace skupinových kontaktů.
+### Migrace souboru
 
-`Out of office settings`{.action}: migrace pravidel definovaných pro "out of office".
+Přejděte na <https://omm.ovh.net/>, přesuňte kurzor myši na záložku `PST / ICS / VCF`{.action} (lišta v horní části stránky) a v závislosti na požadovaném typu migrace klikněte na jedno z následujících tlačítek: `Nová migrace PST`{.action}, `Nová migrace ICS`{.action} nebo `Nová migrace VCF`{.action}.
 
-`Tasks`{.action}: migrace úkolů.
+Pro úspěšné dokončení tohoto druhu migrace budete potřebovat soubor s položkami, které si přejete migrovat.
 
+![omm](images/omm-migration-files.png){.thumbnail}
 
-![emails](images/3768_en.png){.thumbnail}
+Vyplňte požadované údaje o **cílovém účtu** a klikněte na tlačítko `Spustit migraci`{.action}. Mějte na paměti, že obsah souboru PST, ICS nebo VCF bude migrován na **cílový účet**.
 
+Pokud jste zadali správné údaje, budete vyzváni k nahrání souboru ze svého počítače. Vyberte příslušný soubor, klikněte na tlačítko `Nahrát`{.action} a vyčkejte, dokud se soubor nenahraje. Celková doba nahrávání závisí na velikosti souboru. Stav nahrávání souboru můžete sledovat na této stránce.
 
-### Dokonceni migrace
-V případě migrace z POP/IMAP na E-mail Pro či Exchange lze zvolit pouze možnost `Emails`{.action}.
+Jakmile dojde k nahrání souboru, zadejte heslo k **cílovému účtu** a klikněte na tlačítko `Spustit migraci`{.action}. Pokud jsou zadané údaje správné, budete moci migraci zahájit opětovným kliknutím na tlačítko `Spustit migraci`{.action}.
 
-V případě, že si přejete dostávat notifikace o probíhající migraci, zadejte sekundární e-mailovou adresu.
+Na stránce pro sledování migrace můžete sledovat průběh migračního procesu. Nezapomeňte si poznamenat číslo migračního příkazu neboli `ID migrace`{.action} a vyčkejte na dokončení procesu. Celková doba procesu je závislá na objemu migrovaných dat.  Do tohoto rozhraní se můžete kdykoli vrátit. Přesný postup naleznete v následující sekci „Sledování migrace souboru“.
 
-Jakmile vyplnítě všechna požadovaná pole, klikněte na tlačítko `Start migration`{.action}.
+### Sledování migrace souboru
 
-Pokud zadáte neplatné přihlašovací údaje (login/heslo), zobrazí se následující chybové hlášení:
+Existují dva způsoby, jak přejít do rozhraní pro sledování migrace souboru PST, ICS nebo VCF:
 
+- Prostřednictvím odkazu v e-mailu s informacemi o zahájení migrace
 
-![emails](images/2441.png){.thumbnail}
+- Prostřednictvím záložky `Migrace`{.action} v horní části stránek OMM <https://omm.ovh.net/>, kliknutím na tlačítko `Sledovat/Synchronizovat`{.action}. Abyste mohli postup migrace sledovat, budete muset vyplnit číslo migračního příkazu (`ID migrace`{.action}) a `zdrojový účet`{.action} migrace.
 
-Migrace se spustí ihned po vytvoření migračního příkazu.
+![omm](images/omm-migration-track.png){.thumbnail}
 
-- Proces migrace můžete sledovat v následujícím rozhraní:
+Po zadání požadovaných údajů dojde k zobrazení stránky s informacemi o probíhající migraci. Dozvíte se zde, zda proces čeká na zahájení, probíhá nebo byl již ukončen. V závislosti na aktuálním stavu migračního procesu je možné provést několik akcí:
 
+|action|Popis|
+|---|---|
+|Zastavit proces|Umožňuje zastavit probíhající migraci. Všechny migrované položky zůstávají na cílovém účtu.|
+|Odstranit migrované položky|Umožňuje odstranit již migrované položky z cílového účtu.|
 
-![emails](images/2798_en.png){.thumbnail}
+### Hromadná migrace
 
+Přejděte na <https://omm.ovh.net/>, přesuňte kurzor myši na záložku `Projekt`{.action} (lišta v horní části stránky) a klikněte na tlačítko `Nový projekt hromadné migrace`{.action}.
 
+![omm](images/omm-migration-project.png){.thumbnail}
 
-> [!success]
->
-> - 
-> Důležité upozornění: poznamenejte si číslo migračního příkazu (task ID). Bez tohoto čísla nebudete moci migrační proces později vyhledat.
-> 
-> 
+Vyplňte informace o **novém projektu**:
 
+|Informace|Popis|
+|---|---|
+|Název|Zadejte název projektu.|
+|Heslo|Zadejte přístupové heslo pro správu projektu.|
+|E-mail|Zadejte e-mailovou adresu, na níž budou zasílány informace o průběhu migračního procesu.|
 
-## Import souboru PST
-Pokud si do svého e-mailového účtu přejete importovat soubor s koncovkou .PST, můžete tak učinit prostřednictvím volby `PST Migration`{.action}.
+Následně klikněte na tlačítko `Vytvořit projekt`{.action}. Následující stránka slouží jako rozhraní pro správu a sledování migračního projektu. Nezapomeňte si poznamenat **ID projektu**.
 
+Nyní můžete začít s migrací svých účtů. Za tímto účelem je k dispozici několik záložek:
 
-![emails](images/3769_EN.png){.thumbnail}
+|Záložka|Popis|
+|---|---|
+|Pokračovat|Umožňuje sledovat stav jednotlivých migrací Vašeho projektu. K dispozici je i tlačítko pro pozastavení a restart Vašich migrací.|
+|Multiple creation|Umožňuje přidat několik migrací do fronty prostřednictvím souboru CSV nebo Excel. Tento soubor musí mít specifický formát. Doporučujeme proto použít některou z dostupných šablon.|
+|Přidat|Umožňuje přidat migrace do fronty. Zdrojové a cílové servery mohou zůstat ve výchozím nastavení.|
+|Možnosti|Umožňuje nastavit, které položky mají být prostřednictvím nástroje OMM migrovány, a nastavit počet simultánních požadavků, které nástroj může v průběhu provádění migrací zpracovávat.|
+|Odhlášení|Odhlášení z rozhraní pro správu a sledování migračního projektu. Po odhlášení se můžete kdykoli opětovně přihlásit a sledovat ostatní migrační procesy.|
 
-Klikněte na tlačítko `Start migration`{.action}
+Pokud se chcete vrátit do rozhraní pro sledování migračního projektu, přejděte na <https://omm.ovh.net/>, přesuňte kurzor myši na záložku `Projekt`{.action} (lišta v horní části stránky) a klikněte na tlačítko `Sledovat projekt`{.action}. Následně budete muset zadat `ID projektu`{.action} a `přístupové heslo`{.action}.
 
-Pomocí volby `Browse`{.action} vyberte soubor .PST určený pro import.
+## Kam dál
 
-
-![emails](images/3770.png){.thumbnail}
-
-Před zahájením migrace budete požádáni o zadání hesla k cílovému účtu.
-
-Po zahájení procesu dojde k zobrazení identifikátoru migrace (migration ID), bez něhož nebude možné v migraci pokračovat.
-
-
-## Sledovani probihajici migrace
-Ke sledování jednotlivých fází migračního procesu budete potřebovat:
-
-- Číslo migračního příkazu (task ID, viz předchozí krok).
-- Zdrojovou e-mailovou adresu.
-
-Vyplňte požadovaná pole a klikněte na talčítko `Follow`{.action}.
-
-
-![emails](images/2799_en.png){.thumbnail}
-
-V následujícím okně se zobrazí informace o probíhající migraci. Toto rozhraní skýtá informace o ukončených a probíhajících fázích migračního procesu.
-
-- 
-    1. Číslo migračního příkazu (task ID)
-- 
-    1. Datum vytvoření migrace
-- 
-    1. Poslední aktualizace
-- 
-    1. Tlačítko `Rollback`{.action} použijte v případě, že si svůj účet přejete vrátit do původního stavu (před migrací).
-
-
-![emails](images/2800_en.png){.thumbnail}
-
-
-### Zruseni migrace
-**Cancel**: dokončí právě probíhající operace a zruší následující kroky.
-
-*Příklad: právě probíhá migrace Vašich kontaktů následovaná migrací Vašich kalendářů.* *Pokud kliknete na tlačítko "Cancel", program dokončí migraci Vašich kontaktů,* *avšak migrace Vašich kalendářů (a spolu s ní i celý další migrační proces) bude zrušena.*
-
-
-### Rollback
-Tlačítko `Rollback`{.action} použijte v případě, že si svůj účet přejete vrátit do původního stavu (před migrací). Tato funkce je dostupná pod dobu 48 hodin od dokončení migrace.
+Přidejte se k naší uživatelské komunitě na <https://community.ovh.com/en/>.
