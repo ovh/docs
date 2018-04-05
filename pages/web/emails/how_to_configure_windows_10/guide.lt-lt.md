@@ -1,76 +1,90 @@
 ---
-title: 'El. paštas: Konfigūravimas Windows 10 aplinkoje'
-excerpt: ''
+title: 'Configuring your email address in the Mail application for Windows 10'
 slug: el_pastas_konfiguravimas_windows_10_aplinkoje
-legacy_guide_number: g2284
+excerpt: 'Find out how to configure your MX Plan email address in the Mail app for Windows 10.'
+section: Windows
 ---
 
+**Last updated 4th April 2018**
 
-## Reikalavimai
+## Objective
 
-- Veikiantis OVH el. pašto adresas
-- El. pašto programa (prieinama diegiant Windows 10)
+You can configure MX Plan email addresses on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application.
 
+**Find out how to configure your MX Plan email address in the Mail application for Windows 10.**
 
+## Requirements
 
+- You need to have an MX Plan email address (included in the MX Plan solution, and in [OVH Web Hosting plans](https://www.ovh.lt/svetainiu-talpinimas/){.external}).
+- You need to have the Mail app installed on your device.
+- You need to have the required credentials for the email address you would like to configure.
 
-## 1 dalis: paleidimas ir konfigūravimas
-Paaiškinsime, kaip konfigūruoti IMAP su įjungtaSSL apsauga. 
+## Instructions
 
-Paleiskite el. pašto programą.
+### Step 1: Add the account
 
-![](images/img_4485.jpg){.thumbnail}
-Spragtelėkite + Pridėti paskyrą centre.
+Once you have launched the Mail application on your device, you can add an account in two different ways:
 
-![](images/img_4486.jpg){.thumbnail}
-Spragtelėkite „Pažangus konfigūravimas“.
+- **When you open the app for the first time:** A window will appear, asking you to `Add account`{.action}.
 
-![](images/img_4489.jpg){.thumbnail}
-Spragtelėkite „El. paštas internetu“.
+- **If an account has already been set up**: click on `Accounts`{.action} in the menu bar to the left of the application, then on `Add account`{.action} in the menu that pops up on the right.
 
-![](images/img_4490.jpg){.thumbnail}
-Kaip pateiktame pavyzdyje, įveskite šiuos nustatymus:
+![mxplan](images/configuration-mail-windows-step1.png){.thumbnail}
 
+In the window that appears, click on `Advanced settings`{.action}, then select `Internet email`{.action} as the account type.
 
-- Paskyra: įveskite savo OVH el. pašto adresą
-- Vardas: įveskite savo vardą ir pavardę
-- Įeinančių el. laiškų serveris: įveskite ssl0.ovh.net
-- Paskyros tipas: pasirinkite IMAP4
-- El. pranešimų adresas: įveskite savo OVH el. pašto adresą
-- Naudotojas: įveskite savo OVH el. pašto adresą
-- Slaptažodis: įveskite savo OVH el. pašto adreso slaptažodį
-- Išeinančių el. laiškų serveris (SMTP): įveskite ssl0.ovh.net
-- Palikite pažymėtus 4 paskutinius pasirinkimus
-- Ir spauskite „Prisijungti“
+Enter the information requested:
 
+|Information|Description|
+|---|---|
+|Mail address|Enter your full email address.|
+|Username|Enter your full email address.|
+|Password|Enter the password for your email address.|
+|User name|Enter a name that will distinguish this account from any other accounts shown in your Mail app.|
+|Send your messages using this name|Enter the name that you wish to be displayed in the sender field when sending emails from this address.|
+|Incoming email server|Enter the server “ssl0.ovh.net:993”.|
+|Account type|We recommend using **IMAP4**. You can also select **POP** (in which emails are stored locally on your Mail app) in the drop-down menu.|
+|Outgoing email server|Enter the server “ssl0.mail.ovh.net:465”.|
 
+Make sure that the checkboxes are ticked for the following options:
 
-![](images/img_4496.jpg){.thumbnail}
-Jei teisingai įvedėte visus nustatymus, atsidarys patvirtinimo langas.
-Spragtelėkite „Baigta“ ir „Jūs esate pasiruošęs“.
+- Outgoing server requires authentication
+- Use the same user name and password for sending mail
+- Require SSL for incoming email
+- Require SSL for outgoing email
 
-![](images/img_4497.jpg){.thumbnail}
+Once you have entered this information, click `Sign in`{.action}. If all the information you have entered is correct, you will be able to log in to your account straight away.
 
+To check that the account has been correctly configured, you can send a test email.
 
-## 2 dalis: Siuntimo ir gavimo testas
-Spragtelėkite „+ Naujas pranešimas“.
+![mxplan](images/configuration-mail-windows-step2.png){.thumbnail}
 
-![](images/img_4498.jpg){.thumbnail}
-Laukelyje „Kam“ įveskite tą patį adresą, kaip ir laukelyje „Nuo“, kad galėtumėte sau išsiųsti el. laišką.
-Rašykite ką pageidaujate, po to spauskite Siųsti.
+If you need to enter any settings manually in your account preferences, the technical settings you will need to use with our MX Plan solution are listed below:
 
-![](images/img_4499.jpg){.thumbnail}
-Po kelių sekundžių prireikus spauskite atnaujinimo mygtuką, po to gausite savo el. laišką.
+- **For IMAP4 configuration**
 
-Jūsų OVH el. pašto adresas dabar yra sukonfigūruotas Windows 10 El. pašto aplikacijoje.
+|Server type|Server name|SSL|Port|
+|---|---|---|---|
+|Incoming|ssl0.ovh.net|Yes|993|
+|Outgoing|ssl0.ovh.net|Yes|465|
 
-![](images/img_4500.jpg){.thumbnail}
+- **For POP configuration**
 
+|Server type|Server name|SSL|Port|
+|---|---|---|---|
+|Incoming|ssl0.ovh.net|Yes|995|
+|Outgoing|ssl0.ovh.net|Yes|465|
 
-## 3 dalis: POP ar IMAP?
-Konfigūruodami jūs galite rinktis POP protokolą vietoje IMAP.
+### Step 2: Use the email address
 
-Prieš galutinį pasirinkimą, rekomenduojame sužinoti daugiau apie šių protokolų naudojimą.
+Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-Jei abejojate, rinkitės IMAP konfigūraciją.
+OVH also has a web application you can use to access your email account from your browser. You can access this application via the following address: <https://mail.ovh.net/lt/>. You can log in using your email credentials.
+ 
+## Go further
 
+[Configuring your Email Pro account in the Mail app for Windows](https://docs.ovh.com/lt/emails-pro/mail-configuration-windows-10/){.external}
+
+[Configuring your Exchange account in the Mail app for Windows](https://docs.ovh.com/lt/microsoft-collaborative-solutions/mail-configuration-windows-10/){.external}
+
+Join our community of users on <https://community.ovh.com/en/>.
