@@ -5,7 +5,7 @@ slug: deployer-infrastructure-avec-variables-et-sorties-formattees-heat-openstac
 section: 'L''orchestration avec Heat d''OpenStack'
 ---
 
-**Dernière mise à jour le 06/04/2018**
+**Dernière mise à jour le 06/04/2018 **
 
 ## Objectif
 
