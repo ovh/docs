@@ -1,10 +1,11 @@
 ---
-title: Travailler avec les Routes HTTP
+title: 'Travailler avec les Routes HTTP'
 slug: routes
-excerpt: Dirigez dynamiquement vos requêtes vers une ferme en particulier
+excerpt: 'Dirigez dynamiquement vos requêtes vers une ferme en particulier'
 section: Configuration
 ---
 
+**Dernière mise à jour le 06/04/2018**
 
 ## Objectif
 
@@ -12,48 +13,55 @@ Le service Load Balancer OVH redirige le trafic arrivant sur un Frontend vers le
 
 Dans certains cas, il est possible d'aller plus loin, et de router, rediriger ou rejeter le trafic selon divers critères. Par exemple, dans le cas d'un service HTTP(S), il est possible de filtrer le trafic en fonction de la méthode HTTP, de l'URL ou même de la valeur d'un Cookie ou d'un En-Tête ! Dans le service OVH Load Balancer, ce sont les `Route`{.action}. Une Route est une action particulière à réaliser si une ou plusieurs conditions sont réalisées.
 
-
 ## Prérequis
 
-- Disposer d'un Load Balancer sur une offre autorisant la création des routes
-
+- Disposer d'un [Load Balancer OVH](https://www.ovh.com/fr/solutions/load-balancer/){.external}.
+sur une offre autorisant la création des routes
+- Avoir accès à l'[API OVH](https://api.ovh.com/){.external}.
 
 ## En pratique
 
 > [!primary]
 >
-> Bien que ce guide se concentre sur les Routes HTTP, le même principe fonctionne en TCP (avec les Routes TCP). Cela peut servir pour diriger le trafic HTTP/2 vers une Ferme en particulier ou pour rejeter les requêtes venant de certaines IPs.
+> Bien que ce guide se concentre sur les routes HTTP, le même principe fonctionne en TCP (avec les routes TCP). Cela peut servir pour diriger le trafic HTTP/2 vers une Ferme en particulier ou pour rejeter les requêtes venant de certaines IPs.
 > 
 
 Cette fonctionnalité étant encore très jeune, elle est uniquement disponible dans l'API. Ce guide vous présentera les principes généraux ainsi que des scénarii d'utilisation des routes tirés de cas d'usages réels.
 
-- Introduction aux Routes
+- **Introduction aux routes**
 
 Une route sert à contrôler le trafic selon différents critères. Il est possible de les exprimer sous la forme de règles, ou conditions, et d'une action.
 
 Par exemple, *SI* l'URL _commence_ par '/wp-admin/' (1) *ET* que la connexion _est_ en HTTP (2) *ALORS* _rediriger_ vers la version HTTPS de la page (3).
 
-Dans cet exemple, il y a 2 règles : La connexion doit venir d'un Frontend HTTP (2) et son URL doit commencer par les pages d'administration de Wordpress (1). Il y a une action : rediriger vers la version HTTPS de la page (3). Il s'agit d'une action "finale". C'est à dire que si les règles sont validées, l'évaluation des routes s'arrête et l'action est exécutée.
+Dans cet exemple, il y a deux règles :
+- la connexion doit venir d'un frontend HTTP (2) ;
+- son URL doit commencer par les pages d'administration de WordPress (1).
 
+Associée à ces règles, il y a une action : rediriger vers la version HTTPS de la page (3).
+
+Il s'agit d'une action « finale ». C'est à dire que si les règles sont validées, l'évaluation des routes s'arrête et l'action est exécutée.
 
 ## Présentation de l'API
-L'API des Routes de votre service OVH Load Balancer a été pensée spécialement pour être souple, puissante et évolutive. Elle est organisée autour de 3 sections principales :
 
-1. Les APIs listant les règles et actions disponibles.
-1. Les APIs listant les routes configurées sur votre service OVH Load Balancer.
-1. Les APIs de configuration des routes de votre service OVH Load Balancer.
+La gestion des routes n'est accessible qu'au travers de l'[API OVH](https://api.ovh.com/){.external}. Elle est valide uniquement pour les protocoles `http`{.action} et `tcp`{.action}, le chemin `/ipLoadbalancing/{serviceName}/{protocole}/route/`{.action} expose l'API dédiée aux routes.
 
+L'API des routes de votre service OVH Load Balancer a été pensée spécialement pour être souple, puissante et évolutive. Elle est organisée autour de trois sections principales :
+
+1. les API listant les règles et actions disponibles.
+2. les API listant les routes configurées sur votre service OVH Load Balancer.
+3. les API de configuration des routes de votre service OVH Load Balancer.
 
 > [!primary]
 >
-> Pour n'afficher que les APIs liées aux Routes dans la console d'API OVH, vous pouvez utiliser le champ `filter`{.action} avec le mot clé route.
+> Pour n'afficher que les API liées aux outes dans la console d'API OVH, vous pouvez utiliser le champ `filter`{.action} avec le mot clé route.
 > 
 
 Lorsque vous souhaitez configurer une route ou des règles, la première chose à faire est de consulter les actions et les règles disponibles. Cela vous donnera les valeurs possibles pour les champs des APIs de configuration des routes et des règles.
 
 - Une Route peut avoir plusieurs Règles.
 - Une Route peut être attachée à un et un seul Frontend.
-- Un Frontend peut avoir plusieurs Routes. Dans ce cas, l'ordre d'évaluation dépend de leur type et de leur poids.
+- Un Frontend peut avoir plusieurs routes. Dans ce cas, l'ordre d'évaluation dépend de leur type et de leur poids.
 
 Quand une requête arrive sur votre service OVH Load Balancer, les routes sont évaluées successivement en suivant ces principes :
 
@@ -95,19 +103,19 @@ Cette deuxième section de l'API ne contient qu'un seul appel. Il a principaleme
 > @api {GET} /ipLoadbalancing/{serviceName}/definedRoutes
 > 
 
-Pour plus d'information sur cet appel, nous vous invitons à consulter la section [Manipulation des Routes](#manipulation-des-routes){.internal}, en bas de ce guide.
+Pour plus d'information sur cet appel, nous vous invitons à consulter la section [Manipulation des routes](#manipulation-des-routes){.internal}, en bas de ce guide.
 
 
 ### Configuration des routes
-Avec ces principes de base que sont les actions et règles disponibles et l'ordre d'évaluation des routes, les Routes peuvent être manipulées de la même manière que les Farms. Création d'une Route, sur laquelle il est possible d'attacher des Règles. Les valeurs possibles pour les règles et les actions étant définies par les appels d'API.
+Avec ces principes de base que sont les actions et règles disponibles et l'ordre d'évaluation des routes, les routes peuvent être manipulées de la même manière que les Farms. Création d'une Route, sur laquelle il est possible d'attacher des Règles. Les valeurs possibles pour les règles et les actions étant définies par les appels d'API.
 
-Pour plus d'informations sur ces méthodes, vous pouvez consulter la section [Manipulation des Routes](#manipulation-des-routes){.internal}, en bas de ce guide.
+Pour plus d'informations sur ces méthodes, vous pouvez consulter la section [Manipulation des routes](#manipulation-des-routes){.internal}, en bas de ce guide.
 
 
 ## Exemples
 Si vous n'êtes pas encore convaincu par la puissance des routes, cette section devrait vous convaincre pour de bon. Sans rentrer dans le détail des appels d'APIs, elle a pour vocation de présenter comment réaliser plusieurs cas d'utilisation inspirés de nos besoins internes chez OVH.
 
-Vous trouverez le détail des appels d'API dans la section [Manipulation des Routes](#manipulation-des-routes){.internal}, en bas de ce guide et les sections suivantes.
+Vous trouverez le détail des appels d'API dans la section [Manipulation des routes](#manipulation-des-routes){.internal}, en bas de ce guide et les sections suivantes.
 
 
 ### Forcer le HTTPS pour les pages de login Wordpress
@@ -159,7 +167,7 @@ C'est la fonctionnalité qui a rendu possible l'essor du web quand il en était 
 
 Par exemple, si votre infrastructure est composée d'un VPS par site Internet et d'un service OVH Load Balancer pour assurer la terminaison SSL/TLS et la redirection vers une page de maintenance avec un serveur de "backup" dans les Farms, il était auparavant nécessaire de disposer d'une IP Failover par site, routée vers votre service OVH Load Balancer et un Frontend par IP.
 
-Avec Les Routes, il devient possible de mutualiser le même Frontend et choisir la Farm de serveurs dynamiquement en fonction du champ "Host".
+Avec les routes, il devient possible de mutualiser le même Frontend et choisir la Farm de serveurs dynamiquement en fonction du champ "Host".
 
 Pour cela, vous aurez besoin :
 
@@ -269,14 +277,14 @@ Il ne reste qu'à appliquer la configuration dans la zone concernée.
 ### Router certaines IP et les clients volontaires vers la preproduction
 Quand un site prend de l'ampleur, on peut souhaiter mettre en place un environnement de préproduction permettant de valider les évolutions en cours, sans impacter la majorité des utilisateurs. Généralement, lorsque l'on configure ce type environnement, on cherche à réduire autant que possible l'écart entre la production et la préproduction de manière à détecter les problèmes avec le plus de précision possible. Une source de problème classique et pourtant souvent négligée est le nom de domaine. Il est parfois codé "en dur" dans un fichier ou un article. À ce moment, un lien pourra fonctionner en préproduction mais pas en production. Oups...
 
-Au lieu de mettre en place des règles basées sur le nom de domaine, on pourrait mettre en place des règles basées sur l'adresse IP source (par exemple, un proxy d'entreprise) et, éventuellement un Cookie pour les clients volontaires. Ces configurations peuvent être détectées avec deux Routes sur votre service OVH Load Balancer.
+Au lieu de mettre en place des règles basées sur le nom de domaine, on pourrait mettre en place des règles basées sur l'adresse IP source (par exemple, un proxy d'entreprise) et, éventuellement un Cookie pour les clients volontaires. Ces configurations peuvent être détectées avec deux routes sur votre service OVH Load Balancer.
 
 Pour cet exemple, on considérera :
 
 - que le proxy d'entreprise peut utiliser les adresses 42.42.42.0/24 et que le VPN utilise 1.2.3.4/32 ;
 - que les utilisateurs volontaires ont un Cookie "PreprodOptIn", dont la valeur n'a pas d'importance.
 
-Dans la pratique, vous aurez besoin de 2 routes identiques :
+Dans la pratique, vous aurez besoin de deux routes identiques :
 
 |Champ|Valeur et description|
 |---|---|
@@ -346,8 +354,8 @@ Il ne reste qu'à appliquer la configuration dans la zone concernée.
 Vous trouverez ici le détail des appels d'API liés aux routes. Pour une vue plus générale des fonctionnalités des routes, nous vous invitons d'abord à consulter la section [Présentation de l'API](#presentation-de-l-api){.internal} un peu plus haut dans ce guide.
 
 
-### Manipulation des Routes
-Les Routes TCP et HTTP se configurent de la même manière. Les routes étant plus puissantes en HTTP, cette section se concentre sur les routes et les règles HTTP. Le fonctionnement des routes TCP peut être extrapolé en remplaçant "http" par "tcp" dans les routes. Certains champs n'ayant de sens qu'en HTTP, ils ne sont pas disponibles en TCP.
+### Manipulation des routes
+Les routes TCP et HTTP se configurent de la même manière. Les routes étant plus puissantes en HTTP, cette section se concentre sur les routes et les règles HTTP. Le fonctionnement des routes TCP peut être extrapolé en remplaçant "http" par "tcp" dans les routes. Certains champs n'ayant de sens qu'en HTTP, ils ne sont pas disponibles en TCP.
 
 
 #### Lister les routes
@@ -626,7 +634,7 @@ Réponse
 |displayName|Nom d'affichage de la route|
 
 ### Actions disponibles
-Cet appel retourne la liste des actions disponibles pour les Routes TCP et HTTP ainsi que les valeurs attendues pour chacun des champs.
+Cet appel retourne la liste des actions disponibles pour les routes TCP et HTTP ainsi que les valeurs attendues pour chacun des champs.
 
 Si un champ est "null", cela signifie qu'aucune valeur n'est attendue. Si une valeur invalide est fournie, l'API retournera une erreur de validation.
 
@@ -738,7 +746,7 @@ Cette action dirige les requêtes vers une Farm spécifique, autre que la Ferme 
 
 
 ### Règles disponibles
-Cet appel retourne la liste des règles disponibles pour les Routes TCP et HTTP ainsi que les valeurs attendues pour chacun des champs.
+Cet appel retourne la liste des règles disponibles pour les routes TCP et HTTP ainsi que les valeurs attendues pour chacun des champs.
 
 Si un champ est "null", cela signifie qu'aucune valeur n'est attendue. Si une valeur invalide est fournie, l'API retournera une erreur de validation.
 
@@ -876,4 +884,3 @@ Cette règle permet de filtrer les requêtes en fonction de l'existence ou de la
 |hasSubField|oui|
 |matches|`is`, `in`, `contains`, `startswith`, `endswith` ou `matches`|
 |pattern|Chaîne de caractères ou expression régulière|
-
