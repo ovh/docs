@@ -1,16 +1,16 @@
 ---
-title: Aggiungere un record SPF alla configurazione di un dominio
-excerpt: Come aggiungere un record SPF alla configurazione di un dominio presso OVH
+title: 'Aggiungere un record SPF alla configurazione di un dominio'
+excerpt: 'Come aggiungere un record SPF alla configurazione di un dominio presso OVH'
 slug: hosting_condiviso_il_record_spf
-section: Uso avanzato
+section: 'Uso avanzato'
 order: 5
 ---
 
-**Ultimo aggiornamento: 26/03/2018**
+**Ultimo aggiornamento: 06/04/2018**
 
 ## Obiettivo
 
-Il record SPF (Sender Policy Framework) consente a un server di posta elettronica di verificare la legittima provenienza delle email che gli vengono recapitate. Questo record si aggiunge all’interno di una zona DNS di un dominio per identificare i server o gli indirizzi IP autorizzati a inviare email per il dominio stesso. 
+Il record SPF (Sender Policy Framework) consente a un server di posta elettronica di verificare la legittima provenienza delle email in entrata. Questo record si aggiunge all’interno di una zona DNS di un dominio per identificare i server o gli indirizzi IP autorizzati a inviare email per il dominio stesso. 
 
 **Come aggiungere un record SPF alla configurazione di un dominio presso OVH.**
 
@@ -22,8 +22,8 @@ Il record SPF (Sender Policy Framework) consente a un server di posta elettronic
 
 > [!warning]
 >
-> Se il tuo dominio non utilizza i server DNS OVH, è necessario modificare il record SPF tramite l’interfaccia del provider che gestisce i nameservers del tuo dominio.
->
+> Se il tuo dominio non utilizza i server DNS OVH, è necessario modificare il record SPF tramite l’interfaccia del provider che gestisce i nameserver del tuo dominio.
+> 
 > Se il tuo dominio è registrato presso OVH, puoi verificarne la configurazione attraverso lo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} cliccando sulla scheda `Server DNS`{.action}.
 >
 
@@ -31,9 +31,7 @@ Il record SPF (Sender Policy Framework) consente a un server di posta elettronic
 
 ### Step 1: a cosa serve il record SPF
 
-Prima di aggiungere o modificare un record SPF nella configurazione del tuo dominio, è fondamentale conoscerne l’utilità. Lo scopo del record SPF è quello di impedire agli spammer di utilizzare il tuo dominio per l'invio di email non autorizzate,
-
-attraverso un elenco di informazioni tra cui:
+Prima di aggiungere o modificare un record SPF nella configurazione del tuo dominio, è fondamentale conoscerne l’utilità. Lo scopo del record SPF è quello di impedire agli spammer di utilizzare il tuo dominio per l'invio di email non autorizzate, attraverso un elenco di informazioni tra cui:
 
 - **server o indirizzi IP**, per permettere di identificare quelli attendibili
 - **un qualificatore**, per indicare al server di posta in entrata come reagire a email indesiderate provenienti da fonti non verificate
@@ -56,10 +54,10 @@ La configurazione OVH si applica alle seguenti soluzioni:
 Quando ordini una di queste soluzioni, ti consigliamo di utilizzare nella zona DNS del tuo dominio un record SPF che includa le seguenti informazioni:
 
 ```bash
-miodominio.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
+mypersonaldomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-Se il tuo dominio è gestito da OVH, puoi verificare se è già presente un record SPF attraverso il menu di sinistra del tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}:  nella sezione `Domini`{.action} clicca sul dominio interessato e poi sulla scheda `Zona DNS`{.action}.
+Se il tuo dominio è gestito da OVH, puoi verificare se è già presente un record SPF attraverso il menu di sinistra del tuo [Spazio Cliente OVH](https://www.ovh.com/auth/){.external}:  nella sezione `Domini`{.action} clicca sul dominio interessato e poi sulla scheda `Zona DNS`{.action}.
 
 Apparirà una tabella che ti mostrerà la zona del tuo dominio, in cui ciascuna riga corrisponde a un diverso record DNS.  
 
@@ -68,13 +66,13 @@ Apparirà una tabella che ti mostrerà la zona del tuo dominio, in cui ciascuna 
 > Se il tuo dominio è registrato presso OVH, puoi verificarne i server DNS autoritativi cliccando sulla scheda `Server DNS`{.action}.
 >
 
-Per ritrovare la riga corrispondente al record SPF OVH all’interno della tabella, puoi effettuare la ricerca selezionando il filtro `TXT`{.action}. Da questo momento visualizzerai una delle seguenti informazioni nella colonna “Bersaglio”:
+Per ritrovare la riga corrispondente al record SPF OVH all’interno della tabella, puoi effettuare la ricerca selezionando un filtro tra `TXT`{.action} o `SPF`{.action}, in quanto il record potrebbe apparire sotto entrambi. Da questo momento visualizzerai una delle seguenti informazioni nella colonna “Bersaglio”:
 
-- **"v=spf1 include:mx.ovh.com ~all"**: il tuo dominio ha già la configurazione SPF di OVH Nel caso tu voglia apportare modifiche alla configurazione, potrai farlo nello step successivo.
+- **"v=spf1 include:mx.ovh.com ~all"**: il tuo dominio ha già la configurazione SPF di OVH. Nel caso tu voglia apportare modifiche alla configurazione, potrai farlo nello step successivo.
 
-- **Un record SPF che non corrisponde a quello indicato**: nel tuo dominio è già stato configurato un SPF personalizzato Potrai effettuare eventuali modifiche o scegliere la configurazione SPF di OVH nello step successivo.
+- **Un record SPF che non corrisponde a quello indicato**: nel tuo dominio è già stato configurato un SPF personalizzato. Potrai effettuare eventuali modifiche o scegliere la configurazione SPF di OVH nello step successivo.
 
-- **Nessun record SPF**: potrai aggiungerlo nello step successivo.  
+- **Nessun record SPF**: in questo caso potrai aggiungerlo nello step successivo.  
 
 > [!primary]
 >
@@ -89,7 +87,7 @@ Per modificare il record SPF, accedi allo [Spazio Cliente OVH](https://www.ovh.c
 
 La tabella ti mostra la zona DNS del tuo dominio in cui ciascuna riga corrisponde a un diverso record DNS.
 
-Per modificare o aggiungere un record SPF, è necessario aggiungere un nuovo accesso alla zona DNS del tuo dominio cliccando su `Aggiungi un record`{.action}.
+Per modificare o inserire un record SPF, è necessario aggiungere un nuovo accesso alla zona DNS del tuo dominio cliccando su `Aggiungi un record`{.action}.
 
 ![dominio](images/spf_records_add_entry_step1.png){.thumbnail}
 
@@ -104,9 +102,8 @@ In base alla tua decisione, la procedura da seguire sarà diversa.
 
 #### Aggiungi il record SPF manualmente
 
-Tra i record proposti, clicca su `TXT`{.action} poi completa con le informazioni richieste. Nella sezione `Valore`{.action}, inserisci il record SPF che vuoi utilizzare
-
-e clicca su `Seguente`{.action}. Assicurati che il riepilogo delle informazioni sia corretto, poi clicca su `Conferma`{.action}.
+Tra i record proposti, clicca su `TXT`{.action} poi completa con le informazioni richieste. Nella sezione `Valore`{.action}, inserisci il record SPF che vuoi utilizzare e clicca su `Seguente`{.action}.
+Assicurati che il riepilogo delle informazioni sia corretto, poi clicca su `Conferma`{.action}.
 
 > [!primary]
 >
@@ -134,13 +131,11 @@ Clicca sul pulsante `Utilizza il record SPF per l’hosting condiviso OVH`{.acti
 
 ##### Personalizza il record SPF
 
-La configurazione assistita ti consente di personalizzare gradualmente il tuo record SPF. Sarà sufficiente rispondere alle domande e inserire le informazioni necessarie. Poiché alcuni dati richiesti possono essere per utenti esperti,
-
-di seguito ti mostriamo una descrizione dettagliata.
+La configurazione assistita ti consente di personalizzare gradualmente il tuo record SPF. Sarà sufficiente rispondere alle domande e inserire i dati necessari. Alcune tra le informazioni richieste possono essere rivolte a utenti esperti, e pertanto di seguito ti forniamo una descrizione dettagliata.
 
 |Informazione|Descrizione|
 |---|---|
-|Sottodominio|Da completare se il record SPF dovrà essere applicato a un sottodominio del tuo dominio che utilizzi per inviare email|
+|Sottodominio|Da completare se il record SPF dovrà essere applicato a un sottodominio del dominio che utilizzi per inviare email|
 |TTL|È il tempo di validità del record DNS|
 |Autorizzi l'IP del dominio a inviare email?|Può essere rilevante se il tuo sito Internet e i tuoi indirizzi email sono ospitati su un server con lo stesso indirizzo IP (per esempio sul tuo server dedicato)|
 |Autorizzi i server MX a inviare email?|Può essere rilevante se i server che ricevono le tue email possono anche inviarle|
@@ -153,11 +148,11 @@ Alla domanda "**Altri server inviano mail dal tuo dominio?**" puoi rispondere co
 |Informazione|Descrizione|
 |---|---|
 |a|Inserisci qui i domini per consentire ai server che ne ospitano i siti Internet di inviare email|
-|mx|Inserisci qui i server che ricevono le email (server MX) se possono anche effettuare l’invio per il tuo dominio, in modo che saranno identificati come fonte d’invio legittima|
-|ptr|Inserisci qui i nomi degli host il cui *reverse* è operativo (grazie a un record PTR nella zona DNS), in modo che saranno identificati come fonte d’invio legittima|
+|mx|Inserisci i server che ricevono le email (server MX) se possono anche effettuare l’invio per il tuo dominio, in modo che saranno identificati come fonte d’invio legittima|
+|ptr|Inserisci i nomi degli host il cui *reverse* è operativo (grazie a un record PTR nella zona DNS), in modo che saranno identificati come fonte d’invio legittima|
 |ip4|Indica gli indirizzi IP o gli insiemi di IP (IPv4) autorizzati a inviare email|
 |ip6|Indica gli indirizzi IP o gli insiemi di IP (IPv6) autorizzati a inviare email|
-|include|Inserisci qui i domini per poter utilizzare il loro record SPF per il tuo dominio. Per esempio, OVH utilizza questo metodo nella configurazione SPF: "v=spf1  include:mx.ovh.com ~all", per consentire a OVH di gestire il record SPF semplificandone l’utilizzo ai propri utenti.|
+|include|Inserisci i domini per poter utilizzare il loro record SPF per il tuo dominio. Per esempio, OVH utilizza questo metodo nella configurazione SPF: "v=spf1  include:mx.ovh.com ~all", per consentire a OVH di gestire il record SPF semplificandone l’utilizzo ai propri utenti.|
 
 Infine, alla domanda "**Le informazioni che hai indicato descrivono tutti gli host che inviano mail dal tuo dominio?**", avrai tre opzioni di risposta:
 
@@ -178,6 +173,6 @@ Una volta inserite tutte le informazioni, clicca su `Seguente`{.action}, assicur
 
 ## Per saperne di più
 
-[I server DNS](https://docs.ovh.com/it/domains/web_hosting_gestisci_il_tuo_server_dns/){.external}
+[Web hosting: gestisci il tuo server DNS](https://docs.ovh.com/it/domains/web_hosting_gestisci_il_tuo_server_dns/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>
