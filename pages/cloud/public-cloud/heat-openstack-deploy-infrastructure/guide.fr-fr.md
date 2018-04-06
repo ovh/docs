@@ -5,7 +5,7 @@ excerpt: 'Découvrez une première approche de Heat et des *stacks* en déployan
 section: 'L''orchestration avec Heat d''OpenStack'
 ---
 
-**Dernière mise à jour le 06/03/2018**
+**Dernière mise à jour le 06/04/2018**
 
 ## Objectif
 
