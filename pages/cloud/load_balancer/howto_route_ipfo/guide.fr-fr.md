@@ -1,10 +1,11 @@
 ---
-title: Router une IP Failover
+title: 'Router une IP Failover'
 slug: route-ipfo
-excerpt: Router une IP failover
+excerpt: 'Router une IP failover'
 section: Configuration
 ---
 
+**Dernière mise à jour le 06/04/2018**
 
 ## Objectif
 
@@ -21,8 +22,24 @@ Pour plus d'informations sur le service OVH Load Balancer, nous vous conseillons
 
 ## Prérequis
 
-- Disposer d'un [Load Balancer OVH](https://www.ovh.com/fr/solutions/load-balancer/){.external}
-- Disposer d'une [IP Fail-Over](https://www.ovh.com/fr/serveurs_dedies/ip_fail-over.xml){.external}
+- Disposer d'un [Load Balancer OVH](https://www.ovh.com/fr/solutions/load-balancer/){.external} correctement configuré.
+- Disposer d'une [IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_fail-over.xml){.external}.
+
+> [!primary]
+>
+> **Configuration du Load Balancer requise**
+>
+> Afin de valider le changement dans la liste des IPs fail-over associées au Load Balancer, il est nécessaire de pouvoir actualiser celui-ci. Pour ce faire, plusieurs conditions doivent être réunies.
+> 
+> - Si le Load Balancer est dans un vRack, toutes les fermes doivent être dans le vRack. De plus, le Load Balancer doit disposer de son vLAN. Sinon, aucune ferme ne doit être dans un vRack.
+>
+> - Au moins un frontend présent. Tous les frontends doivent être valides. Ils peuvent donc être désactivés ou activés, avec soit :
+>    - une route valide (avec une règle de routage) ;
+>    - une redirection (`redirectLocation`{.action}) ;
+>    - une ferme par défaut.
+>
+> - Aucun autre rafraîchissement du Load Balancer ne doit être en cours. Un Load Balancer ne peut pas être actualisé/rafraîchi plusieurs fois en même temps. Cela n'aurait pas de sens quand à la configuration résultante.
+>
 
 ## En pratique
 
