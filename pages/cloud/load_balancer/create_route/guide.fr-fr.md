@@ -1,17 +1,17 @@
 ---
-title: 'Travailler avec les Routes HTTP'
+title: 'Travailler avec les routes HTTP'
 slug: routes
 excerpt: 'Dirigez dynamiquement vos requêtes vers une ferme en particulier'
 section: Configuration
 ---
 
-**Dernière mise à jour le 06/04/2018**
+**Dernière mise à jour le 09/04/2018**
 
 ## Objectif
 
 Le service Load Balancer OVH redirige le trafic arrivant sur un Frontend vers les Serveurs de la Ferme par défaut de ce Frontend, ou sa redirection par défaut.
 
-Dans certains cas, il est possible d'aller plus loin, et de router, rediriger ou rejeter le trafic selon divers critères. Par exemple, dans le cas d'un service HTTP(S), il est possible de filtrer le trafic en fonction de la méthode HTTP, de l'URL ou même de la valeur d'un Cookie ou d'un En-Tête ! Dans le service OVH Load Balancer, ce sont les `Route`{.action}. Une Route est une action particulière à réaliser si une ou plusieurs conditions sont réalisées.
+Dans certains cas, il est possible d'aller plus loin, et de router, rediriger ou rejeter le trafic selon divers critères. Par exemple, dans le cas d'un service HTTP(S), il est possible de filtrer le trafic en fonction de la méthode HTTP, de l'URL ou même de la valeur d'un Cookie ou d'un En-Tête ! Dans le service OVH Load Balancer, ce sont les `route`{.action}. Une route est une action particulière à réaliser si une ou plusieurs conditions sont réalisées.
 
 ## Prérequis
 
@@ -23,7 +23,7 @@ sur une offre autorisant la création des routes
 
 > [!primary]
 >
-> Bien que ce guide se concentre sur les routes HTTP, le même principe fonctionne en TCP (avec les routes TCP). Cela peut servir pour diriger le trafic HTTP/2 vers une Ferme en particulier ou pour rejeter les requêtes venant de certaines IPs.
+> Bien que ce guide se concentre sur les routes HTTP, le même principe fonctionne en TCP (avec les routes TCP). Cela peut servir pour diriger le trafic HTTP/2 vers une ferme en particulier ou pour rejeter les requêtes venant de certaines IPs.
 > 
 
 Cette fonctionnalité étant encore très jeune, elle est uniquement disponible dans l'API. Ce guide vous présentera les principes généraux ainsi que des scénarii d'utilisation des routes tirés de cas d'usages réels.
@@ -54,20 +54,20 @@ L'API des routes de votre service OVH Load Balancer a été pensée spécialemen
 
 > [!primary]
 >
-> Pour n'afficher que les API liées aux outes dans la console d'API OVH, vous pouvez utiliser le champ `filter`{.action} avec le mot clé route.
+> Pour n'afficher que les API liées aux routes dans la console d'API OVH, vous pouvez utiliser le champ `filter`{.action} avec le mot clé route.
 > 
 
 Lorsque vous souhaitez configurer une route ou des règles, la première chose à faire est de consulter les actions et les règles disponibles. Cela vous donnera les valeurs possibles pour les champs des APIs de configuration des routes et des règles.
 
-- Une Route peut avoir plusieurs Règles.
-- Une Route peut être attachée à un et un seul Frontend.
+- Une route peut avoir plusieurs Règles.
+- Une route peut être attachée à un et un seul Frontend.
 - Un Frontend peut avoir plusieurs routes. Dans ce cas, l'ordre d'évaluation dépend de leur type et de leur poids.
 
 Quand une requête arrive sur votre service OVH Load Balancer, les routes sont évaluées successivement en suivant ces principes :
 
 1. d'abord les routes de type reject et rewrite puis enfin les routes de type farm ;
 1. à l'intérieur de ces catégories, les routes sont évaluées par poids croissant ;
-1. si 2 routes ont le même poids, la première créée sera la première évaluée ;
+1. si deux routes ont le même poids, la première créée sera la première évaluée ;
 1. seule la première action dont toutes les règles sont validées est exécutée.
 
 ### Règles et actions disponibles
