@@ -57,8 +57,8 @@ Cliquez à présent sur le bouton `Se connecter`{.action}. Un message vous invit
 |Information|Description|  
 |---|---|  
 |Type de compte|Laissez IMAP déjà sélectionné dans le menu déroulant.| 
-|Serveur de réception|Renseignez le serveur *pro1.mail.ovh.net*.| 
-|Serveur d'envoi|Renseignez le serveur *pro1.mail.ovh.net*.|  
+|Serveur de réception|Renseignez le serveur « pro1.mail.ovh.net ».| 
+|Serveur d'envoi|Renseignez le serveur « pro1.mail.ovh.net ».|  
 
 Cliquez de nouveau sur le bouton `Se connecter`{.action}. Si les informations renseignées sont correctes, la connexion au compte réussira.
 
