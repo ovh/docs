@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak skonfigurować Twoje konto e-mail MX Plan w programi
 section: Outlook
 ---
 
-**Ostatnia aktualizacja dnia 2018-03-28**
+**Ostatnia aktualizacja dnia 2018-04-09**
 
 ## Wprowadzenie
 
@@ -90,7 +90,7 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajd
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVH oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Jest ona dostępna pod adresem <https://mail.ovh.net/pl/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+OVH oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przegladarki. Jest ona dostępna pod adresem <https://mail.ovh.net/pl/>. Możesz się do niej zalogować, używając tych samych danych, których używłeś do konfiguracji konta e-mail.
 
 ## Sprawdź również
 
