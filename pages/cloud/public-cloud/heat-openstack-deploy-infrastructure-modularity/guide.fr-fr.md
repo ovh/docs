@@ -28,7 +28,7 @@ Nous avons vu dans le guide intitulé « [Déployer une infrastructure simple av
 
 Heat permet de rendre les *stacks* paramétrables grâce à des variables. Nous allons ajouter celles-ci dans le fichier `parameter-template.yaml` :
 
-```
+```yaml
 heat_template_version: 2014-10-16
 
 description: Simple template to deploy a single compute instance with an attached volume
@@ -74,30 +74,30 @@ mountpoint: /dev/vdb
 
 Les entrées avec `{ get_param: xxx }` représentent des paramètres qu'il est possible d'éviter à la création. De cette manière, il est possible d'utiliser le même gabarit pour créer des *stacks* différentes :
 
-```
+```sh
 $ openstack stack create -t parameter-template.yaml --parameter key_name=heat_key --parameter image_id="Centos 7" --parameter size_gb=50 second-stack
 +---------------------+-----------------------------------------------------------------------------+
-| Field | Value |
+| Field               | Value                                                                       |
 +---------------------+-----------------------------------------------------------------------------+
-| id | 35ba3489-f48f-47fc-a0ed-cf17ad302e9c |
-| stack_name | second-stack |
-| description | Simple template to deploy a single compute instance with an attached volume |
-| creation_time | 2018-03-28T14:34:15Z |
-| updated_time | None |
-| stack_status | CREATE_IN_PROGRESS |
-| stack_status_reason | Stack CREATE started |
+| id                  | 35ba3489-f48f-47fc-a0ed-cf17ad302e9c                                        |
+| stack_name          | second-stack                                                                |
+| description         | Simple template to deploy a single compute instance with an attached volume |
+| creation_time       | 2018-03-28T14:34:15Z                                                        |
+| updated_time        | None                                                                        |
+| stack_status        | CREATE_IN_PROGRESS                                                          |
+| stack_status_reason | Stack CREATE started                                                        |
 +---------------------+-----------------------------------------------------------------------------+
 $ openstack stack create -t parameter-template.yaml --parameter key_name=heat_key --parameter image_id="Ubuntu 17.10" --parameter size_gb=10 third-stack
 +---------------------+-----------------------------------------------------------------------------+
-| Field | Value |
+| Field               | Value                                                                       |
 +---------------------+-----------------------------------------------------------------------------+
-| id | 10f5926e-fc7b-4ca0-914e-d3a964d0796a |
-| stack_name | third-stack |
-| description | Simple template to deploy a single compute instance with an attached volume |
-| creation_time | 2018-03-28T14:35:49Z |
-| updated_time | None |
-| stack_status | CREATE_IN_PROGRESS |
-| stack_status_reason | Stack CREATE started |
+| id                  | 10f5926e-fc7b-4ca0-914e-d3a964d0796a                                        |
+| stack_name          | third-stack                                                                 |
+| description         | Simple template to deploy a single compute instance with an attached volume |
+| creation_time       | 2018-03-28T14:35:49Z                                                        |
+| updated_time        | None                                                                        |
+| stack_status        | CREATE_IN_PROGRESS                                                          |
+| stack_status_reason | Stack CREATE started                                                        |
 +---------------------+-----------------------------------------------------------------------------+
 ```
 
@@ -107,7 +107,7 @@ $ openstack stack create -t parameter-template.yaml --parameter key_name=heat_ke
 
 Modifiez le fichier pour inclure la définition des *outputs*.
 
-```
+```yaml
 heat_template_version: 2014-10-16
 
 description: Simple template to deploy a single compute instance with an attached volume
@@ -161,21 +161,21 @@ value: { get_attr: [my_instance, networks, Ext-Net]}
 
 Une fois la *stack* créée, pour récupérer les informations formatées, utilisez `openstack stack output show` :
 
-```
+```sh
 $ openstack stack output show fourth-stack server_ip
 +--------------+----------------------------------------------------+
-| Field | Value |
+| Field        | Value                                              |
 +--------------+----------------------------------------------------+
-| description | This is a list of first ip addresses of the server |
-| output_key | server_ip |
-| output_value | [u'2001:41d0:801:1000::26', u'54.37.0.132'] |
+| description  | This is a list of first ip addresses of the server |
+| output_key   | server_ip                                          |
+| output_value | [u'2001:41d0:801:1000::26', u'54.37.0.132']        |
 +--------------+----------------------------------------------------+
 $ openstack stack output show fourth-stack server
 +--------------+-------------------------------------+
-| Field | Value |
+| Field        | Value                               |
 +--------------+-------------------------------------+
-| description | This is a list of server names. |
-| output_key | server |
+| description  | This is a list of server names.     |
+| output_key   | server                              |
 | output_value | four-stack-my_instance-jmeobt3egom3 |
 +--------------+-------------------------------------+
 ```
