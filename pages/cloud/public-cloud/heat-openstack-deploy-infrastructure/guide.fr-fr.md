@@ -81,7 +81,7 @@ Démarrez la plus petite infrastructure composée d'un seul serveur pour vous fa
 
 Créez un fichier nommé `basic-template.yaml` contenant ceci :
 
-```
+```yaml
 heat_template_version: 2014-10-16
 
 description: Simple template to deploy a single compute instance with an attached volume
@@ -111,70 +111,70 @@ resources:
 
 Créez ensuite votre  première *stack* avec la commande suivante :
 
-```
+```sh
 $ openstack stack create -t basic-template.yaml first-stack
 +---------------------+-----------------------------------------------------------------------------+
-| Field | Value |
+| Field               | Value                                                                       |
 +---------------------+-----------------------------------------------------------------------------+
-| id | f81ec642-96b6-4540-b323-d5184327ae34 |
-| stack_name | first-stack |
-| description | Simple template to deploy a single compute instance with an attached volume |
-| creation_time | 2018-03-27T16:12:36Z |
-| updated_time | None |
-| stack_status | CREATE_IN_PROGRESS |
-| stack_status_reason | Stack CREATE started |
+| id                  | f81ec642-96b6-4540-b323-d5184327ae34                                        |
+| stack_name          | first-stack                                                                 |
+| description         | Simple template to deploy a single compute instance with an attached volume |
+| creation_time       | 2018-03-27T16:12:36Z                                                        |
+| updated_time        | None                                                                        |
+| stack_status        | CREATE_IN_PROGRESS                                                          |
+| stack_status_reason | Stack CREATE started                                                        |
 +---------------------+-----------------------------------------------------------------------------+
 ```
 
 La *stack* est en cours de création. Après quelques secondes, vous pouvez vérifier son état :
 
-```
+```sh
 $ openstack stack show first-stack
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Field | Value |
+| Field                 | Value                                                                                                                                                |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-| id | f81ec642-96b6-4540-b323-d5184327ae34 |
-| stack_name | first-stack |
-| description | Simple template to deploy a single compute instance with an attached volume |
-| creation_time | 2018-03-27T16:12:36Z |
-| updated_time | None |
-| stack_status | CREATE_COMPLETE |
-| stack_status_reason | Stack CREATE completed successfully |
-| parameters | OS::project_id: d6eefcacfa68469fb1f26446daa5fa78 |
-| | OS::stack_id: f81ec642-96b6-4540-b323-d5184327ae34 |
-| | OS::stack_name: first-stack |
-| | |
-| outputs | [] |
-| | |
-| links | - href: https://orchestration.preprod.gra1.cloud.ovh.net/v1/d6eefcacfa68469fb1f26446daa5fa78/stacks/first-stack/f81ec642-96b6-4540-b323-d5184327ae34 |
-| | rel: self |
-| | |
-| capabilities | [] |
-| timeout_mins | None |
-| stack_user_project_id | 5043d0839de0449cb726bb88cfba02b8 |
-| parent | None |
-| deletion_time | None |
-| notification_topics | [] |
-| stack_owner | None |
-| tags | None |
-| disable_rollback | True |
+| id                    | f81ec642-96b6-4540-b323-d5184327ae34                                                                                                                 |
+| stack_name            | first-stack                                                                                                                                          |
+| description           | Simple template to deploy a single compute instance with an attached volume                                                                          |
+| creation_time         | 2018-03-27T16:12:36Z                                                                                                                                 |
+| updated_time          | None                                                                                                                                                 |
+| stack_status          | CREATE_COMPLETE                                                                                                                                      |
+| stack_status_reason   | Stack CREATE completed successfully                                                                                                                  |
+| parameters            | OS::project_id: d6eefcacfa68469fb1f26446daa5fa78                                                                                                     |
+|                       | OS::stack_id: f81ec642-96b6-4540-b323-d5184327ae34                                                                                                   |
+|                       | OS::stack_name: first-stack                                                                                                                          |
+|                       |                                                                                                                                                      |
+| outputs               | []                                                                                                                                                   |
+|                       |                                                                                                                                                      |
+| links                 | - href: https://orchestration.preprod.gra1.cloud.ovh.net/v1/d6eefcacfa68469fb1f26446daa5fa78/stacks/first-stack/f81ec642-96b6-4540-b323-d5184327ae34 |
+|                       | rel: self                                                                                                                                            |
+|                       |                                                                                                                                                      |
+| capabilities          | []                                                                                                                                                   |
+| timeout_mins          | None                                                                                                                                                 |
+| stack_user_project_id | 5043d0839de0449cb726bb88cfba02b8                                                                                                                     |
+| parent                | None                                                                                                                                                 |
+| deletion_time         | None                                                                                                                                                 |
+| notification_topics   | []                                                                                                                                                   |
+| stack_owner           | None                                                                                                                                                 |
+| tags                  | None                                                                                                                                                 |
+| disable_rollback      | True                                                                                                                                                 |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
 Comme pour les autres ressources OpenStack, il est possible de lister vos *stacks* :
 
-```
+```sh
 $ openstack stack list
 +--------------------------------------+-------------+-----------------+----------------------+--------------+
-| ID | Stack Name | Stack Status | Creation Time | Updated Time |
+| ID                                   | Stack Name  | Stack Status    | Creation Time        | Updated Time |
 +--------------------------------------+-------------+-----------------+----------------------+--------------+
-| f81ec642-96b6-4540-b323-d5184327ae34 | first-stack | CREATE_COMPLETE | 2018-03-27T16:12:36Z | None |
+| f81ec642-96b6-4540-b323-d5184327ae34 | first-stack | CREATE_COMPLETE | 2018-03-27T16:12:36Z | None         |
 +--------------------------------------+-------------+-----------------+----------------------+--------------+
 ```
 
 Comme vous avez pu le voir, une *stack* possède un état, au même titre qu'une instance. Pour lister l'historique d'une *stack*, utilisez :
 
-```
+```sh
 $ openstack stack event list first-stack
 2018-03-27 16:12:38Z [first-stack]: CREATE_IN_PROGRESS Stack CREATE started
 2018-03-27 16:12:38Z [first-stack.my_instance]: CREATE_IN_PROGRESS state changed
@@ -188,14 +188,14 @@ $ openstack stack event list first-stack
 
 De même, il est possible de voir les différentes ressources présentes dans la *stack*. Dans notre cas il n'y a qu'un serveur :
 
-```
+```sh
 $ openstack stack resource list first-stack
 +---------------+--------------------------------------+------------------------------+-----------------+----------------------+
-| resource_name | physical_resource_id | resource_type | resource_status | updated_time |
+| resource_name | physical_resource_id                 | resource_type                | resource_status | updated_time         |
 +---------------+--------------------------------------+------------------------------+-----------------+----------------------+
-| my_volume | 2fc5d81c-db47-4d21-9179-11895b332944 | OS::Cinder::Volume | CREATE_COMPLETE | 2018-03-27T16:12:38Z |
+| my_volume     | 2fc5d81c-db47-4d21-9179-11895b332944 | OS::Cinder::Volume           | CREATE_COMPLETE | 2018-03-27T16:12:38Z |
 | my_attachment | 2fc5d81c-db47-4d21-9179-11895b332944 | OS::Cinder::VolumeAttachment | CREATE_COMPLETE | 2018-03-27T16:12:38Z |
-| my_instance | 8263d0e0-5ad2-46f5-89a2-5b8ecea43b66 | OS::Nova::Server | CREATE_COMPLETE | 2018-03-27T16:12:38Z |
+| my_instance   | 8263d0e0-5ad2-46f5-89a2-5b8ecea43b66 | OS::Nova::Server             | CREATE_COMPLETE | 2018-03-27T16:12:38Z |
 +---------------+--------------------------------------+------------------------------+-----------------+----------------------+
 ```
 
@@ -203,7 +203,7 @@ Comme vous avez pu le voir, une *stack* regroupe un ensemble de ressources et so
 
 Nous allons supprimer la *stack* à présent :
 
-```
+```sh
 $ openstack stack delete first-stack
 Are you sure you want to delete this stack(s) [y/N]? y
 ```
