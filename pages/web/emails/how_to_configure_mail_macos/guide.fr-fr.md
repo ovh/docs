@@ -57,8 +57,8 @@ Cliquez à présent sur le bouton `Se connecter`{.action}. Un message vous invit
 |Information|Description|
 |---|---|
 |Type de compte|Nous conseillons une utilisation en **IMAP** (sélectionné par défaut). Vous pouvez cependant sélectionner **POP** (stockage des e-mails en local sur votre application Mail) dans le menu déroulant.|
-|Serveur de réception|Renseignez le serveur "ssl0.ovh.net".|
-|Serveur d'envoi|Renseignez le serveur "ssl0.ovh.net".|
+|Serveur de réception|Renseignez le serveur « ssl0.ovh.net ».|
+|Serveur d'envoi|Renseignez le serveur « ssl0.ovh.net ».|
 
 Cliquez de nouveau sur le bouton `Se connecter`{.action}. Si les informations renseignées sont correctes, la connexion au compte réussira.
 
