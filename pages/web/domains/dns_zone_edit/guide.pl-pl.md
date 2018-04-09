@@ -1,195 +1,111 @@
 ---
-title: 'Hosting www: Jak edytować strefę DNS?'
-excerpt: Jak edytować strefę DNS?
+title: 'Modyfikacja strefy DNS'
 slug: hosting_www_jak_edytowac_strefe_dns
-legacy_guide_number: g1604
+excerpt: 'Dowiedz się, jak edytować strefę DNS w Panelu klienta'
+section: 'DNS i strefa DNS'
+order: 3
 ---
 
+**Ostatnia aktualizacja dnia 2018-04-09**
 
-## Definicja
-DNS (Domain Name System) pozwala między innymi na przetłumaczenie domeny na adres IP, aby zapytania mogły być dostarczane do serwera docelowego.
+## Wprowadzenie
 
-![](images/img_3710.jpg){.thumbnail}
+Strefa Domain Name System (DNS) to plik konfiguracyjny domeny. Zawiera on informacje techniczne nazywane rekordami. W przypadku klasycznego użycia rekordy te umożliwiają powiązanie domeny z serwerem lub serwerami hostującymi stronę WWW i konta e-mail. 
 
+**Dowiedz się, jak w prosty sposób zmodyfikować strefę DNS w Panelu klienta.**
 
-## Różnica między serwerami i strefą DNS
+## Wymagania początkowe
 
-## Serwery DNS
+- Dostęp do interfejsu zarządzania domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Używanie przez domenę konfiguracji OVH (serwerów DNS OVH) 
 
-- Serwery DNS to serwery zadeklarowane dla nazwy domeny. To serwery najpierw odpowiadają, zanim zostanie zinterpretowana strefa DNS, która jest do nich przypisana.
+> [!warning]
+>
+> - Jeśli Twoja domena nie używa konfiguracji OVH, przeprowadź zmianę w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny. 
+>
+> - Jeśli domena jest zarejestrowana w OVH, możesz sprawdzić, czy używa konfiguracji OVH. Po wybraniu domeny w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, przejdź do zakładki `Serwery DNS`{.action}.
+>
 
+## W praktyce
 
+**Edycja strefy DNS jest operacją wymagającą odpowiedniej wiedzy**: wprowadzenie omyłkowej zmiany mogłoby na przykład uniemożliwić dostęp do Twojej strony WWW lub odbiór nowych wiadomości e-mail.
 
-## Strefa DNS
+Poznanie poszczególnych rekordów będzie pomocne w lepszym zrozumieniu zmian, które wprowadzisz w strefie DNS Twojej domeny. Dlatego zalecamy zapoznanie się z poniższą tabelą, w której zostały opisane wszystkie rekordy DNS. 
 
-- Strefa DNS to plik zawierający różne wpisy wskazujące między innymi adresy serwerów obsługujących stronę (A) lub e-maile (MX). Adresy te mogą mieć formę adresu IP lub nazwy hosta.
+|Typ rekordu|Opis| 
+|---|---|
+|A|Umożliwia powiązanie domeny z adresem IP (IPv4), na przykład z adresem IP serwera, na którym hostowana jest Twoja strona WWW.|
+|AAAA|Umożliwia powiązanie domeny z adresem IP (IPv6), na przykład z adresem IP serwera, na którym hostowana jest Twoja strona WWW.|
+|CNAME|Umożliwia używanie przez domenę adresu lub adresów IP innej domeny poprzez ich wzajemne powiązanie zgodnie z zasadą tworzenia aliasów domen. Przykładowo, jeśli *www.mypersonaldomain.ovh* jest aliasem*mypersonaldomain.ovh*, domena *www.mypersonaldomain.ovh* użyje adresu lub adresów IP domeny *mypersonaldomain.ovh*.|
+|MX|Umożliwia powiązanie domeny z serwerem poczty elektronicznej, na przykład adresem IP serwera, na którym hostowane jest Twoje konto e-mail. Jest prawdopodobne, że dostawca dysponuje kilkoma serwerami poczty e-mail. W takiej sytuacji należy utworzyć kilka pól MX.|
+|SRV|Umożliwia wskazanie adresu serwera zarządzającego usługą. Rekord ten może na przykład wskazywać adres serwera SIP lub adres serwera umożliwiającego programowi pocztowemu automatyczną konfigurację tzw. „autodiscover”.|
+|TXT|Umożliwia dodanie do parametrów DNS Twojej domeny dowolnej wartości (w formacie tekstowym). Rekord ten jest często używany podczas procesu weryfikacji.|
+|SPF|Pozwala zapobiegać przypadkom podszywania się pod adresy e-mail używające Twojej domeny. Rekord ten może na przykład wskazywać, że jedynie serwer dostawcy Twojego rozwiązania poczty elektronicznej może być identyfikowany jako legalne źródło wysyłki e-maili. Dowiedz się więcej w [dokumentacji OVH dotyczącej rekordu SPF](https://docs.ovh.com/pl/domains/uslugi_www_pole_spf/){.external}.|
+|CAA|Umożliwia wyświetlenie listy organizacji upoważnionych do wydawania certyfikatów SSL dla domeny.|
 
+### Etap 1: dostęp do interfejsu zarządzania strefą DNS
 
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz domenę. Teraz przejdź do zakładki `Strefa DNS`{.action}.
 
+W tabeli, która się wyświetli znajdziesz konfigurację Twojej domeny w OVH. Na konfigurację składają się rekordy DNS, każdy zaznaczony w oddzielnym wierszu tabeli. Możesz sortować zawartość tabeli według typu rekordu lub nazwy domeny. 
 
-## Dlaczego trzeba edytować serwery lub strefę DNS?
+![dnszone](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
 
-## Serwery DNS
-Może wystąpić sytuacja, w której trzeba będzie zmienić serwery DNS domeny (na przykład po zmianie operatora). Niektórzy dostawcy nie pozwalają na korzystanie ze swoich serwerów po przeniesieniu domeny do konkurencyjnego operatora. 
-Być może posiadasz serwer dedykowany, który jest serwerem DNS i chcesz z niego korzystać. 
+### Etap 2: edycja strefy DNS 
 
-Przewodnik na temat serwerów DNS jest dostępny tutaj:
+Możesz zmodyfikować strefę DNS domeny, dodając, zmieniając lub usuwając rekord DNS. Aby to zrobić, możesz skorzystać z jednej z dwóch metod:
 
-- []({legacy}2015).
+- **Ręczna modyfikacja strefy w trybie tekstowym**
 
+Zalecana tylko dla zaawansowanych użytkowników. W zakładce `Strefa DNS`{.action} kliknij `Modyfikacja w trybie tekstowym`{.action}, następnie postępuj zgodnie z kolejnymi instrukcjami, które będą się wyświetlały.
 
+- **Skorzystanie z asystenta konfiguracji**
 
-## Strefa DNS
-Gdy chcesz zmienić serwer obsługujący stronę www lub e-maile, na przykład po zmianie dostawcy usług, musisz zmodyfikować strefę DNS domeny. 
-Po zaktualizowaniu strefy domena będzie wskazywać na nowe serwery.
+Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu asystenta.
 
+> [!primary]
+>
+> Przygotuj informacje, które chcesz zmienić w strefie DNS. Jeśli przeprowadzasz modyfikację na prośbę dostawcy usługi, dostawca powinien przesłać Ci listę elementów do zmiany. 
+>
 
-## Czas propagacji
+- **Dodanie nowego rekordu DNS**
 
-## Wpływ ustawień TTL
-Time To Live (« czas życia » lub « długość życia »), czyli TTL, wskazuje okres, w którym informacja musi zostać zachowana w pamięci cache po modyfikacji.
-W OVH w nowo utworzonych strefach parametr TTL to jedna godzina (TTL = 3600).
+Aby dodać nowy rekord DNS, kliknij przycisk `Dodaj rekord`{.action} po prawej stronie tabeli w zakładce `Strefa DNS`{.action} w Panelu klienta. Wybierz typ pola DNS, następnie postępuj zgodnie z instrukcjami.
 
+Zalecamy uprzednie sprawdzenie, czy dany rekord już nie istnieje, i czy nie wskazuje na inny serwer. W tym celu włącz sortowanie zawartości tabeli według typu rekordu i nazwy domeny. Jeśli rekord już istnieje, rekomendujemy jego modyfikację zgodnie z procedurą opisaną poniżej.
 
-## Logowanie do panelu klienta
+![dnszone](images/edit-dns-zone-ovh-add-entry.png){.thumbnail}
 
-- Zaloguj się do [panelu klienta](https://www.ovh.com/manager/web) za pomocą identyfikatora klienta i hasła.
+- **Modyfikacja istniejącego rekordu DNS**
 
-- Kliknij na"Login".
+Aby zmodyfikować rekord DNS, kliknij ikonkę koła zębatego w tabeli po prawej stronie wybranego rekordu (zakładka `Strefa DNS`{.action} w Panelu klienta). Następnie kliknij `Zmień rekord`{.action}, po czym postępuj zgodnie z kolejnymi instrukcjami, które będą się wyświetlały. 
 
+![dnszone](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
 
+- **Usunięcie rekordu DNS**
 
-![](images/img_3711.jpg){.thumbnail}
+Aby usunąć rekord DNS, kliknij ikonkę koła zębatego w tabeli po prawej stronie wybranego rekordu (zakładka `Strefa DNS`{.action} w Panelu klienta). Następnie kliknij `Usuń rekord`{.action}, po czym postępuj zgodnie z instrukcjami.
 
+Możesz usunąć kilka rekordów za jednym razem, zaznaczając je wcześniej w lewej części tabeli i naciskając przycisk `Usuń`{.action}.
 
-## Wybór domeny
+![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
-- W menu z lewej strony wybierz "Domeny" i "domenę", dla której chcesz dokonać zmiany.
+### Etap 3: czas potrzebny na propagację
 
+Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny.
 
+Jeśli chcesz skrócić czas propagacji w przypadku kolejnych modyfikacji strefy DNS, możesz uczynić to, do pewnego stopnia, zmieniając TTL (*Time To Live*), który zostanie zastosowany do wszystkich rekordów strefy DNS.
+W tym celu kliknij przycisk `Domyślny TTL`{.action} w zakładce `Strefa DNS`{.action} w Panelu klienta, a następnie postępuj zgodnie z kolejnymi instrukcjami.
 
-![](images/img_3712.jpg){.thumbnail}
+Możliwa jest również modyfikacja TTL rekordu DNS. Operacja ta może zostać jednak przeprowadzona tylko rekord po rekordzie, poprzez modyfikację każdego z nich lub podczas dodawania rekordów. 
 
+## Sprawdź również
 
-## Sprawdzenie strefy DNS
-Kliknij na zakładkę "Strefa DNS", aby wyświetlić strefę DNS.
-W tej sekcji możesz sprawdzić poszczególne pola dostępne w strefie DNS.
-Możesz sortować wyświetlanie za pomocą rodzaju pola.
+[Informacje na temat serwerów DNS](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/){.external}
 
-![](images/img_3714.jpg){.thumbnail}
+[Konfiguracja rekordu SPF w strefie DNS](https://docs.ovh.com/pl/domains/uslugi_www_pole_spf/){.external}
 
+[Zabezpieczenie domeny przed Cache Poisoning za pomocą DNSSEC](https://www.ovh.pl/domeny/usluga_dnssec.xml){.external}
 
-## Zmiana wpisu
-Aby zmodyfikować wpis, należy kliknąć na ikonkę ołówka, dokonać zmiany i kliknąć na "Dalej" i na "Zatwierdź".
-
-![](images/img_3723.jpg){.thumbnail}
-
-
-## Usunięcie wpisu
-Aby usunąć wpis, należy kliknąć na ikonkę kosza i na zatwierdź.
-
-![](images/img_3724.jpg){.thumbnail}
-
-
-## Resetuj konfigurację
-Przycisk ten pozwala na zresetowanie strefy DNS i przywrócenie domyślnych wpisów.
-
-![](images/img_3715.jpg){.thumbnail}
-Zaznacz typ strefy i kliknij na przycisk "Zatwierdź":
-
-
-- Wpisy minimalne: Ten wybór dostarczy strefę z podstawowymi wpisami .
-
-- Normalny reset: Ten wybór dostarczy dodatkowe wpisy, takie jak CNAME dla FTP, itp.
-
-
-
-![](images/img_3716.jpg){.thumbnail}
-
-
-## Dodaj wpis
-Ten przycisk pozwala na dodanie nowego pola w strefie DNS.
-
-![](images/img_3717.jpg){.thumbnail}
-Wystarczy wybrać rodzaj wpisu i kliknąć na "Dalej".
-
-![](images/img_3718.jpg){.thumbnail}
-
-
-## Modyfikacja w trybie tekstowym
-Przycisk ten pozwala na edytowanie strefy DNS w trybie tekstowym.
-Tryb ten jest przeznaczony dla doświadczonych użytkowników, którzy chcą szybko dokonać zmian.
-
-![](images/img_3719.jpg){.thumbnail}
-Wystarczy dokonać zmian i zatwierdzić.
-
-![](images/img_3720.jpg){.thumbnail}
-
-
-## Domyślny TTL
-Przycisk ten pozwala na zmodyfikowanie parametru TTL w strefie DNS i na zarządzanie czasem umieszczenia informacji w pamięci cache.
-
-![](images/img_3721.jpg){.thumbnail}
-Wybierz domyślny TTL i kliknij na "Zatwierdź".
-
-![](images/img_3722.jpg){.thumbnail}
-
-
-## Pole A
-Wpis A to adres IPv4 hosta.
-Nie można posiadać wpisu A i wpisu CNAME dla tego samego hosta.
-
-
-## Pole MX
-Wpis MX odnosi się do serwera mailowego, który obsługuje konta e-mail domeny.
-Wpis ten musi mieć formę nazwy hosta, nie adresu IP.
-
-
-## Pole CNAME
-Wpis CNAME służy do utworzenia aliasu nazwy hosta i przekierowaniu go na inną nazwę hosta. Wpis ten musi mieć formę nazwy hosta, nie adresu IP.
-Nie można posiadać wpisu A i wpisu CNAME dla tego samego hosta.
-
-
-## Pole TXT
-Wpis TXT pozwala na wprowadzenie tekstu do strefy DNS.
-
-
-## Pole SPF
-Wpis SPF pozwala na zadeklarowanie serwerów uprawnionych do wysyłania e-maili z Twojej domeny. 
-Więcej informacji na ten temat znajduje się w tym przewodniku:
-
-- []({legacy}2028).
-
-
-
-
-## Zone Check
-Narzędzie to pozwala na sprawdzenie, czy aktualizacja serwerów DNS przebiegła pomyślnie. 
-Więcej informacji na ten temat znajduje się w tym przewodniku:
-
-- []({legacy}1980).
-
-
-
-
-## DNSSEC
-Ta opcja pozwala na zabezpieczenie domeny przed Cache Poisoning.
-Więcej informacji na ten temat znajduje się w tym przewodniku:
-
-- []({legacy}609).
-
-
-
-
-## Czas propagacji
-Serwery DNS
-
-- Zmiana serwerów DNS może trwać do 48 godzin.
-
-
-Strefa DNS
-
-- Zmiana wpisów w strefie DNS może trwać do 24 godzin.
-
-
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
