@@ -30,46 +30,46 @@ Heat permet de rendre les *stacks* paramétrables grâce à des variables. Nous 
 
 ```yaml
 heat_template_version: 2014-10-16
-
+ 
 description: Simple template to deploy a single compute instance with an attached volume
-
+ 
 parameters:
-key_name:
-type: string
-description: Name of a KeyPair to enable SSH access to the instance
-default: heat_key
-
-image_id:
-type: string
-description: Name of a cloud image in the catalog
-default: Debian 9
-
-size_gb:
-type: string
-description: Size of the volume
-default: 10
-
+  key_name:
+    type: string
+    description: Name of a KeyPair to enable SSH access to the instance
+    default: heat_key
+ 
+  image_id:
+    type: string
+    description: Name of a cloud image in the catalog
+    default: Debian 9
+ 
+  size_gb:
+    type: string
+    description: Size of the volume
+    default: 10
+ 
 resources:
-my_instance:
-type: OS::Nova::Server
-properties:
-key_name: { get_param: key_name }
-image: { get_param: image_id }
-flavor: c2-7
-networks:
-- network: Ext-Net
-
-my_volume:
-type: OS::Cinder::Volume
-properties:
-size: { get_param: size_gb }
-
-my_attachment:
-type: OS::Cinder::VolumeAttachment
-properties:
-instance_uuid: { get_resource: my_instance }
-volume_id: { get_resource: my_volume }
-mountpoint: /dev/vdb
+  my_instance:
+    type: OS::Nova::Server
+    properties:
+      key_name: { get_param: key_name }
+      image: { get_param: image_id }
+      flavor: c2-7
+      networks:
+        - network: Ext-Net
+ 
+  my_volume:
+    type: OS::Cinder::Volume
+    properties:
+      size: { get_param: size_gb }
+ 
+  my_attachment:
+      type: OS::Cinder::VolumeAttachment
+      properties:
+        instance_uuid:  { get_resource: my_instance }
+        volume_id: { get_resource: my_volume }
+        mountpoint: /dev/vdb
 ```
 
 Les entrées avec `{ get_param: xxx }` représentent des paramètres qu'il est possible d'éviter à la création. De cette manière, il est possible d'utiliser le même gabarit pour créer des *stacks* différentes :
@@ -109,54 +109,54 @@ Modifiez le fichier pour inclure la définition des *outputs*.
 
 ```yaml
 heat_template_version: 2014-10-16
-
+ 
 description: Simple template to deploy a single compute instance with an attached volume
-
+ 
 parameters:
-key_name:
-type: string
-description: Name of a KeyPair to enable SSH access to the instance
-default: heat_key
-
-image_id:
-type: string
-description: Name of a cloud image in the catalog
-default: Debian 9
-
-size_gb:
-type: string
-description: Size of the volume
-default: 10
-
+  key_name:
+    type: string
+    description: Name of a KeyPair to enable SSH access to the instance
+    default: heat_key
+ 
+  image_id:
+    type: string
+    description: Name of a cloud image in the catalog
+    default: Debian 9
+ 
+  size_gb:
+    type: string
+    description: Size of the volume
+    default: 10
+ 
 resources:
-my_instance:
-type: OS::Nova::Server
-properties:
-key_name: { get_param: key_name }
-image: { get_param: image_id }
-flavor: c2-7
-networks:
-- network: Ext-Net
-
-my_volume:
-type: OS::Cinder::Volume
-properties:
-size: { get_param: size_gb }
-
-my_attachment:
-type: OS::Cinder::VolumeAttachment
-properties:
-instance_uuid: { get_resource: my_instance }
-volume_id: { get_resource: my_volume }
-mountpoint: /dev/vdb
-
+  my_instance:
+    type: OS::Nova::Server
+    properties:
+      key_name: { get_param: key_name }
+      image: { get_param: image_id }
+      flavor: c2-7
+      networks:
+        - network: Ext-Net
+ 
+  my_volume:
+    type: OS::Cinder::Volume
+    properties:
+      size: { get_param: size_gb }
+ 
+  my_attachment:
+      type: OS::Cinder::VolumeAttachment
+      properties:
+        instance_uuid:  { get_resource: my_instance }
+        volume_id: { get_resource: my_volume }
+        mountpoint: /dev/vdb
+ 
 outputs:
-server:
-description: This is a list of server names.
-value: { get_attr: [my_instance, name]}
-server_ip:
-description: This is a list of first ip addresses of the server
-value: { get_attr: [my_instance, networks, Ext-Net]}
+ server:
+   description: This is a list of server names.
+   value: { get_attr: [my_instance, name]}
+ server_ip:
+   description: This is a list of first ip addresses of the server
+   value: { get_attr: [my_instance, networks, Ext-Net]}
 ```
 
 Une fois la *stack* créée, pour récupérer les informations formatées, utilisez `openstack stack output show` :
