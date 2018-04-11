@@ -81,8 +81,8 @@ OVH tarjoaa lisäksi verkkosovelluksen, jolla sähköpostiosoitteeseen voidaan p
 
 ## Lue lisää aiheesta
 
-[E-mail Pro -tilin konfigurointi Outlook 2016 -sovelluksella Mac-koneella.](https://docs.ovh.com/gb/en/emails-pro/configuration-outlook-2016-mac/){.external}
+[E-mail Pro -tilin konfigurointi Outlook 2016 -sovelluksella Mac-koneella.](https://docs.ovh.com/fi/emails-pro/konfigurointi-outlook-2016-mac/){.external}
 
-[Exchange -tilin konfigurointi Outlook 2016 -ohjelmalla Mac-koneella.](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/configuration-outlook-2016-mac/){.external}
+[Exchange -tilin konfigurointi Outlook 2016 -ohjelmalla Mac-koneella.](https://docs.ovh.com/fi/microsoft-collaborative-solutions/konfigurointi-outlook-2016-mac/){.external}
 
 Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en/>.
