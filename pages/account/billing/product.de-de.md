@@ -1,5 +1,5 @@
 ---
-title: Billing
+title: Abrechnung
 slug: billing
-excerpt: Manage and follow your OVH products billing
+excerpt: Verwalten Sie die Abrechnung Ihrer OVH Produkte
 ---
