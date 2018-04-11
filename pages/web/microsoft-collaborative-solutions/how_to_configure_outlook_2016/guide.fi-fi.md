@@ -22,7 +22,7 @@ Exchange -tilejä voidaan konfiguroida erilaisilla yhteensopivilla sähköpostio
 
 > [!primary]
 >
-> Käytätkö Outlook 2016 -ohjelmaa Mac-laitteella? Tutustu dokumentaatioomme: [Exchange-tilin konfigurointi macOS:n Mail-sovelluksessa](https://docs.ovh.com/fi/microsoft-collaborative-solutions/konfigurointi-outlook-2016-mac/){.external}.
+> Käytätkö Outlook 2016 -ohjelmaa Mac-laitteella? Tutustu dokumentaatioomme: [Exchange-tilin konfigurointi Outlook 2016 -sovelluksessa](https://docs.ovh.com/fi/microsoft-collaborative-solutions/konfigurointi-outlook-2016-mac/){.external}.
 >
 
 ## Käytännössä
