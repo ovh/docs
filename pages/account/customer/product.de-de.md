@@ -1,5 +1,5 @@
 ---
-title: Account informations
+title: Account Informationen
 slug: customer
-excerpt: Manage your personal info and security settings
+excerpt: Verwalten Sie Ihre persönlichen Informationen und Sicherheitseinstellungen
 ---
