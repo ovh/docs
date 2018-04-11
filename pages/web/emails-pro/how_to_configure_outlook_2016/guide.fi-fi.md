@@ -1,8 +1,8 @@
 ---
-title: E-mail Pro -tilin konfigurointi Outlook 2016 -sovelluksella Windowsissa
+title: 'E-mail Pro -tilin konfigurointi Outlook 2016 -sovelluksella Windowsissa'
 slug: konfigurointi-outlook-2016
-excerpt: Opi konfiguroimaan E-mail Pro -tili Outlook 2016 -sovelluksella Windowsissa
-section: Sähköpostiohjelman konfigurointi
+excerpt: 'Opi konfiguroimaan E-mail Pro -tili Outlook 2016 -sovelluksella Windowsissa'
+section: 'Sähköpostiohjelman konfigurointi'
 ---
 
 **Päivitetty 26.3.2018**
@@ -81,7 +81,7 @@ OVH tarjoaa lisäksi [ryhmätyöominaisuuksilla](https://www.ovh-hosting.fi/sahk
 
 ## Lue lisää aiheesta
 
-[MX Plan - tai webhotellituotteeseen sisältyvän sähköpostiosoitteen konfigurointi macOS Mail -sovelluksessa.](https://docs.ovh.com/fi/emails/konfigurointi-outlook-2016/){.external}
+[MX Plan - tai webhotellituotteeseen sisältyvän sähköpostiosoitteen konfigurointi Outlook 2016 -ohjelmalla Windowsissa.](https://docs.ovh.com/fi/emails/konfigurointi-outlook-2016/){.external}
 
 [Exchange-tilin konfigurointi Outlook 2016 -ohjelmalla Windowsissa.](https://docs.ovh.com/fi/microsoft-collaborative-solutions/konfigurointi-outlook-2016/){.external}
 
