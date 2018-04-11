@@ -166,7 +166,7 @@ Allowed `ISO 3166-1` country code (*[wikipedia](https://en.wikipedia.org/wiki/IS
 - `us`: United States
 
 __Note__
-Exhaustiv list of authorized language suffixes: `cz-cs`, `de-de`, `en-au`, `en-ca`, `en-ie`, `en-gb`, `en-us`, `es-es`, `es-us`, `fi-fi`, `fr-ca`, `fr-fr`, `it-it`, `lt-lt`, `nl-nl`, `pl-pl`, `pt-pt`.
+Exhaustiv list of authorized language suffixes: `cs-cz`, `de-de`, `en-au`, `en-ca`, `en-ie`, `en-gb`, `en-us`, `es-es`, `es-us`, `fi-fi`, `fr-ca`, `fr-fr`, `it-it`, `lt-lt`, `nl-nl`, `pl-pl`, `pt-pt`.
 
 ___
 
