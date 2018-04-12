@@ -68,7 +68,7 @@ Toujours positionné dans la partie `Scripts emails`{.action}, plusieurs boutons
 |Actions|Détails|
 |---|---|
 |Bloquer l'envoi|Permet de bloquer la distribution des envois d'e-mails automatisés de votre hébergement web. Les e-mails générés par vos scripts après le blocage ne seront pas envoyés, mais conservés dans une file d'attente pendant 72 heures maximum.|
-|Débloquer l'envoi|Permet de débloquer l'envoi des envois d'e-mails automatisés de votre hébergement web. Les e-mails présents dans la file d'attente seront également remis en distribution.|
+|Débloquer l'envoi|Permet de débloquer l'envoi des e-mails automatisés de votre hébergement web. Les e-mails présents dans la file d'attente seront également remis en distribution.|
 |Purger les e-mails|Permet d'effacer les e-mails présents dans la file d'attente et de débloquer leur envoi.|
 
 Pour réaliser l'action souhaitée, cliquez sur le bouton correspondant, puis sur `Valider`{.action}. Dans certain cas, l'action souhaitée peut nécessiter plusieurs minutes pour être pleinement effective.
