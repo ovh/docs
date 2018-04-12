@@ -66,7 +66,7 @@ Klik ten slotte op `Valideren`{.action} om de creatie van het e-mailadres te sta
 
 U hoeft nu alleen nog maar uw e-mailadressen te gebruiken. Hiervoor stelt OVH een online dienst ter beschikking (webmail): RoundCube. Deze is toegankelijk op het adres: <https://mail.ovh.net/nl/> waar u uw inloggegevens dient in te voeren voor uw bij OVH aangemaakte e-mailadres.
 
-Raadpleeg onze gids voor meer informatie over het gebruik van RoundCube: [Gebruik van RoundCube](https://docs.ovh.com/nl/emails/webmail_roundcube_gebruikershandleiding/){.external}{.external}. Indien u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: <https://docs.ovh.com/nl/emails/>.
+Raadpleeg onze gids voor meer informatie over het gebruik van RoundCube: [Gebruik van RoundCube](https://docs.ovh.com/nl/emails/webmail_roundcube_gebruikershandleiding/){.external}. Indien u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: <https://docs.ovh.com/nl/emails/>.
 
 ## Verder
 
