@@ -87,11 +87,6 @@ Voici un guide pour vous aider à le réaliser :
 
 [Un guide est disponible ici]({legacy}2028){.ref} .
 
-
-### Comment recuperer une sauvegarde de mes e-mails effaces par erreur ?
-Suivez [le guide de récupération de vos e-mails perdus](../outil_time_machine_-_recuperer_un_mail_supprime/guide.fr-fr.md){.ref}.
-
-
 ## Diagnostic
 
 ### Que verifier dans le cas d'un souci d'e-mail ?
