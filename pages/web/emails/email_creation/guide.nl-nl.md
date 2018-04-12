@@ -1,91 +1,73 @@
 ---
-title: 'Webhosting E-mail Handleiding: Het aanmaken van een e-mailadres'
-excerpt: Deze handleiding zal u helpen om uw e-mailadres aan te maken
+title: 'Creatie van een e-mailadres met MX Plan'
 slug: webhosting_e-mail_handleiding_het_aanmaken_van_een_e-mailadres
-legacy_guide_number: g1343
+excerpt: 'Leer hoe u een e-mailadres met MX Plan kunt aanmaken'
+section: 'Beheer uw e-mailadres'
+order: 1
 ---
 
+**Laatste update 12-04-2018**
 
-## Inloggen op het control panel
-Log in op het [Control Panel](https://www.ovh.com/managerv3/) met uw gebruikersnaam (NicHandle) en wachtwoord.
+## Introductie
 
--Selecteer het platform of het e-mail aanbod.
+Met de e-mailadressen in uw MX-plan kunt u uw e-mail verzenden en ontvangen via uw voorkeursapparaat.
 
--Selecteer de tab "E-mail".
+Deze handleiding legt uit hoe u een e-mailadres met MX Plan kunt creëren.
 
--Klik op "Account toevoegen".
+## Vereisten
 
-![](images/img_2384.jpg){.thumbnail}
-U moet over een geldige hosting beschikken om e-mailaccounts te kunnen toevoegen:
+- U moet beschikken over MX Plan (inbegrepen bij  [OVH-webhosting](https://www.ovh.com/nl/shared-hosting/){.external} of apart verkrijgbaar).
+- U moet nog steeds e-mailadressen kunnen maken als onderdeel van uw pakket.
+- U moet gemachtigd zijn om MX Plan te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+## Instructies
 
-- Gratis Start1M aanbod (1 e-mail account)
-- [OVH Webhosting](https://www.ovh.com/fr/hebergement-web/) (10 tot 1.000 e-mailaccounts)
-- [MXplan](http://www.ovh.com/fr/produits/mxplan.xml) (5 tot 1.000 e-mailaccounts)
+### Stap 1: Ga naar het beheer van uw e-maildienst
 
+Log in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} om met de procedure te beginnen. Klik op `E-mails`{.action} in het servicemenu aan de linkerkant en selecteer vervolgens de domeinnaam waarvoor u een MX Plan-pakket hebt afgesloten. Ga naar het `E-mails`{.action}-tabblad.
 
+De getoonde tabel bevat alle e-mailadressen die zijn aangemaakt als onderdeel van uw MX Plan-pakket.
 
+![E-mail](images/email-creation-step1.png){.thumbnail}
 
-## E-mailaccount gegevens
-Vul de gewenste gegevens in voor uw e-mailadres, in de nieuwe interface die verschijnt:
+### Stap 2: Gebruik e-mail
 
-Accountnaam: bepaal de naam van het e-mail adres.
+Om een nieuw e-mailadres aan te maken, klikt u op `Creëer e-mailadres`{.action}. Voer in het pop-upvenster de volgende informatie in:
 
-Beschrijving: stel een beschrijving van de e-mailaccount in.
+|Informatie|Omschrijving|  
+|---|---|  
+|Accountnaam|Voer de naam in die in uw e-mailadres staat (bijvoorbeeld uw voornaam). De betreffende domeinnaam is standaard al ingevoerd.|  
+|Accountbeschrijving|Voer een korte beschrijving in die dit account onderscheidt van andere accounts die zijn toegevoegd in uw OVH Control Panel.|  
+|Accountformaat|Selecteer de accountgrootte van uw voorkeur.  Deze grootte verwijst naar de ruimte die beschikbaar is voor uw account voor het opslaan van berichten.|  
+|Het wachtwoord|Definieer het wachtwoord voor dit account en bevestig het.|
 
-Grootte van de account: bepaal de quota van uw e-mailadres.
+Klik dan op `Volgende`{.action}. Controleer of alle informatie in de samenvatting correct is; als dat zo is, klik dan opnieuw op `Volgende`{.action}.
 
-Wachtwoord: kies het wachtwoord van uw e-mailaccount .
+Klik ten slotte op `Valideren`{.action} om de creatie van het e-mailadres te starten. U kunt dit proces zo vaak herhalen als nodig is om meerdere e-mailadressen te maken.
 
-Bevestiging: bevestig het wachtwoord van uw e-mailaccount.
+> [!primary]
+>
+> Om veiligheidsredenen verzoeken wij u de voorwaarden te respecteren die tijdens de registratie van een wachtwoord worden aangegeven. Ook raden we u aan: 
+>
+> - niet hetzelfde wachtwoord twee keer gebruiken;
+>
+> - om een wachtwoord te kiezen dat niets te maken heeft met uw persoonlijke informatie (vermijd bijvoorbeeld gebruik van uw naam, voornaam, of geboortedatum);
+>
+> - om uw wachtwoorden regelmatig te vernieuwen;
+>
+> - uw wachtwoorden niet op papier te schrijven of naar uw e-mailadres sturen;
+>
+> - uw wachtwoorden niet automatisch op te slaan in uw internetbrowser, zelfs als deze het aan u voorstelt.
+>
 
+![E-mail](images/email-creation-step2.png){.thumbnail}
 
-Let op: het wachtwoord moet voldoen aan bepaalde voorwaarden:
+### Stap 3: Gebruik e-mail
 
+U hoeft nu alleen nog maar uw e-mailadressen te gebruiken. Hiervoor stelt OVH een online dienst ter beschikking (webmail): RoundCube. Deze is toegankelijk op het adres: <https://mail.ovh.net/nl/> waar u uw inloggegevens dient in te voeren voor uw bij OVH aangemaakte e-mailadres.
 
-- Minimaal 9 tekens.
-- Maximaal 30 tekens.
-- Geen letter met accent.
+Raadpleeg onze gids voor meer informatie over het gebruik van RoundCube: [Gebruik van RoundCube](https://docs.ovh.com/nl/emails/webmail_roundcube_gebruikershandleiding/){.external}{.external}. Indien u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: <https://docs.ovh.com/nl/emails/>.
 
+## Verder
 
-
-Klik op "Valideren" om verder te gaan.
-
-Een melding betreffende het aanmaken van de e-mailaccount verschijnt.
-
-Om uw e-mailadressen te configureren, bevelen we deze handleidingen aan:
-
-
-- [E-mail configuratie handleidingen](https://www.ovh.com/fr/hebergement-web/guides/).
-
-
-
-![](images/img_2385.jpg){.thumbnail}
-
-
-## Hoe kan ik het wachtwoord van mijn e-mailadressen wijzigen? (1)
-
-- Selecteer eerst uw platform, ga naar "E-mail" -- "Wijzig het wachtwoord" en klik op het tandwieltje bij de e-mail die u wilt wijzigen.
-
-
-
-![](images/img_2386.jpg){.thumbnail}
-
-- Voer het nieuwe wachtwoord in en bevestig het.
-
-Het vorige wachtwoord is niet noodzakelijk.
-
-
-Let op: het wachtwoord moet voldoen aan bepaalde voorwaarden:
-
-
-- Minimaal 9 tekens.
-- Maximaal 30 tekens.
-- Geen letter met een accent.
-
-
-Klik op "Valideren" om de wijziging van uw wachtwoord te voltooien. 
-
-Na de wijziging van uw wachtwoord kan het een paar minuten duren voordat het effectief is.
-
-![](images/img_2387.jpg){.thumbnail}
+Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.
