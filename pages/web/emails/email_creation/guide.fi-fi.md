@@ -1,94 +1,73 @@
 ---
-title: 'Webhotellit ja sähköpostit: ohje postilaatikon luomiseen'
-excerpt: Postilaatikon luominen
-slug: webhotellit_ja_sahkopostit_ohje_postilaatikon_luomiseen
-legacy_guide_number: g1343
+title: 'Sähköpostiosoitteen luominen MX Plan -tuotteella'
+slug: sahkopostiosoitteen-luominen
+excerpt: 'Opi luomaan sähköpostiosoite MX Plan -tuotteella'
+section: 'Sähköpostiosoitteen hallinta'
+order: 1
 ---
 
+**Päivitetty 13.4.2018**
 
-## Hallintapaneeliin kirjautuminen
-Kirjaudu [hallintapaneeliin](https://www.ovh.com/manager/web/) käyttäen asiakastunnustasi ja sille määrittelemääsi salasanaa.
+## Tavoite
 
-Kun olet kirjautunut sisään, valitse verkkotunnus "Sähköpostit"-välilehdeltä.
+MX Plan -tuotteen sähköpostiosoitteilla voit lähettää ja vastaanottaa viestejä haluamallasi laitteella.
 
+**Opi luomaan sähköpostiosoite MX Plan -tuotteella.**
 
-- Valitse "Sähköposti".
+## Edellytykset
 
-- Klikkaa ”Lisää tili”.
+- Sinulla on MX Plan -tuote (sisältyy [OVH:n webhotellituotteeseen](https://www.ovh-hosting.fi/webhotelli/){.external} tai saatavilla erikseen).
+- Sinulla on vielä mahdollisuus luoda sähköpostiosoitteita tuotteesi puitteissa.
+- Sinulla on pääsyoikeudet MX Plan -tuotteen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+## Käytännössä
 
+### 1. vaihe: Mene sähköpostipalvelusi hallintaan
 
-![](images/img_3636.jpg){.thumbnail}
-Käytössäsi on oltava jokin voimassa oleva sähköpostituote, jotta voit lisätä sähköpostilaatikoita:
+Toimenpiteen aloittamiseksi kirjaudu [OVH:n hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}. Klikkaa kohtaa `Sähköpostit`{.action} vasemmalla olevassa palveluvalikossa ja valitse sitten verkkotunnus, jolle MX Plan -tuote on tilattu. Mene lopuksi välilehdelle `Sähköpostit`{.action}.
 
+Näkyviin tulevassa taulukossa on kaikki MX Plan -tuotteen yhteydessä luodut sähköpostiosoitteet.
 
-- Ilmainen Start 10M (yksi sähköpostilaatikko) (aktivoitavissa hallintapaneelista)
-- [OVH:n webhotelli](http://www.ovh-hosting.fi/jaettu-hosting/) (10–1000 sähköpostilaatikkoa)
-- [MX Plan](http://www.ovh-hosting.fi/tuotteet/mxplan.xml) (5–1000 sähköpostilaatikkoa)
+![sähköposti](images/email-creation-step1.png){.thumbnail}
 
+### 2. vaihe: Sähköpostiosoitteen luominen
 
+Luodaksesi uuden sähköpostiosoitteen klikkaa painiketta `Luo sähköpostiosoite`{.action}. Syötä avautuvassa ikkunassa pyydetyt tiedot:
 
+|Tieto|Kuvaus|  
+|---|---|  
+|Tilin nimi|Syötä nimi sähköpostiosoitteellesi (esimerkiksi etunimi.sukunimi). Kyseinen verkkotunnus on jo täytetty oletuksena.|  
+|Tilin kuvaus|Anna lyhyt kuvaus, jolla tunnistat tilin muista hallintapaneelissasi näkyvistä tileistä.|  
+|Tilin koko|Valitse haluttu koko tilille. Tämä on tila, jota sähköpostiosoitteesi hyödyntää viestien säilytyksessä.|  
+|Salasana|Määritä salasana osoitteelle ja vahvista se.|
 
-## Tiedot sähköpostitilistä
-Syötä halutut tiedot sähköpostiosoitteelle:
+Klikkaa `Seuraava`{.action}. Tarkista nyt yhteenvedossa näkyvät tiedot. Jos ne ovat oikein, klikkaa uudestaan `Seuraava`{.action}.
 
-Tilin nimi: sähköpostiosoite.
+Klikkaa lopuksi `Vahvista`{.action} käynnistääksesi sähköpostiosoitteen luominen. Toista tämä menettely niin monta kertaa kuin tarpeellista useamman sähköpostiosoitteen luomista varten.
 
-Kuvaus: voit määritellä sähköpostitilin kuvauksen.
+> [!primary]
+>
+> Turvallisuussyistä kehotamme noudattamaan salasanan valinnan yhteydessä ilmoitettuja ehtoja. Tässä lisäksi salasanoihin liittyvät suosituksemme:
+>
+> - Älä käytä samaa salasanaa kahdesti.
+>
+> - Valitse salasana, jolla ei ole yhteyttä henkilötietoihisi (vältä esimerkiksi viittauksia sukunimeesi, etunimeesi tai syntymäpäivään).
+>
+> - Uusi salasanasi säännöllisesti.
+>
+> - Älä kirjoita salasanaa paperille tai lähetä sitä sähköpostiosoitteeseesi.
+>
+> - Älä tallenna salasanojasi verkkoselaimeesi, vaikka selaimesi ehdottaisi sitä.
+>
 
-Tilin koko: määrittele sähköpostilaatikon kiintiö.
+![sähköposti](images/email-creation-step2.png){.thumbnail}
 
-Salasana: määrittele sähköpostitilin salasana.
+### 3. vaihe: Sähköpostiosoitteen käyttö
 
-Vahvistus: syötä salasana toisen kerran sen vahvistamiseksi.
+Enää ei ole muuta jäljellä kuin sähköpostiosoitteidesi käyttö. Tätä varten OVH tarjoaa käytettäväksi selaintyökalun (selainposti eli webmail) nimeltä RoundCube. Se on käytettävissä osoitteessa <https://mail.ovh.net/fi/>, jossa sinun on syötettävä OVH:lla luotuun sähköpostiosoitteeseen liittyvät tunnukset.
 
+Lisää tietoa RoundCubesta löydät seuraavasta ohjeesta: [RoundCuben käyttö](https://docs.ovh.com/fi/emails/selainposti_roundcube-ohje/){.external}. Jos haluat konfiguroida sähköpostiosoitteen sähköpostiohjelmistoon tai laitteeseen (esim. älypuhelin tai tabletti), tutustu dokumentaatioomme tässä portaalissa: <https://docs.ovh.com/fi/emails/>.
 
-Huomio, salasanan on noudatettava seuraavia ehtoja:
+## Lue lisää aiheesta
 
-
-- Vähintään 9 merkkiä.
-- Enintään 30 merkkiä.
-- Ei ääkkösiä tai aksentteja.
-
-
-
-Klikkaa "Hyväksy" jatkaaksesi.
-
-Ilmoitus sähköpostitilin luomisesta tulee näkyviin.
-
-Sähköpostiosoitteiden konfigurointia varten suosittelemme seuraavia ohjeita:
-
-
-- [Sähköpostin asetusohjeet](http://www.ovh-hosting.fi/webhotelli/ohjeet/)
-
-
-
-![](images/img_2385.jpg){.thumbnail}
-
-
-## Miten vaihtaa sähköpostilaatikon salasana?
-
-- Kirjaudu hallintapaneeliin, valitse verkkotunnus "Sähköpostit"-välilehdeltä. Sitten "Sähköposti", klikkaa hammasrattaan kuvaa tilin rivin oikealta puolelta ja valitse "Salasanamuutos".
-
-
-
-![](images/img_3637.jpg){.thumbnail}
-
-- Syötä ja vahvista uusi salasana.
-
-Vanhaa salasanaa ei tarvita.
-
-
-Huomio, salasanan on noudatettava seuraavia ehtoja:
-
-
-- Pituus vähintään 9 merkkiä.
-- Pituus enintään 30 merkkiä.
-- Ei ääkkösiä tai aksentteja.
-
-
-Klikkaa "Vahvista" vaihtaaksesi salasanan.
-
-Uusi salasana on voimassa muutaman minuutin kuluttua.
-
-![](images/img_2387.jpg){.thumbnail}
+Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en/>.
