@@ -75,7 +75,7 @@ Pokud bude nastavení účtu zapotřebí upravit manuálně, níže naleznete ne
 
 ### Fáze 2: použití e-mailu
 
-Po úspěšném dokončení konfigurace můžete svůj e-mail začít naplno využívat. Od teď můžete odesílat a přijímat správy prostřednictvím své aplikace Outlook 2016.
+Po úspěšném dokončení konfigurace můžete svůj e-mail začít naplno využívat. Od teď můžete odesílat a přijímat zprávy prostřednictvím své aplikace Outlook 2016.
 
 OVH nabízí webovou aplikaci, která umožňuje přístup k Vaší e-mailové adrese prostřednictvím internetového prohlížeče. Aplikace je dostupná na adrese <https://pro1.mail.ovh.net>. Přihlásit se můžete pomocí přihlašovacích údajů ke své e-mailové adrese.
 
