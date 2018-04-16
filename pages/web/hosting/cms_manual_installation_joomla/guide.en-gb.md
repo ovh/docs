@@ -9,7 +9,7 @@ legacy_guide_number: g1978
 
 ## Part 1: preparing for installation
 
-## [b]Necessary tools[/b]
+## Necessary tools
 To install the Joomla! platform on your shared hosting package, we advise your to get an FTP program such as  FileZilla (it's free).
 
 ## Necessary credentials
