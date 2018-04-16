@@ -1,6 +1,6 @@
 ---
 title: 'Sähköpostiosoitteen luominen MX Plan -tuotteella'
-slug: sahkopostiosoitteen-luominen
+slug: webhotellit_ja_sahkopostit_ohje_postilaatikon_luomiseen
 excerpt: 'Opi luomaan sähköpostiosoite MX Plan -tuotteella'
 section: 'Sähköpostiosoitteen hallinta'
 order: 1
