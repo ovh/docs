@@ -77,7 +77,7 @@ Pokud bude nastavení účtu zapotřebí upravit manuálně, níže naleznete te
 
 ### Fáze 2: použití e-mailu
 
-Po úspěšném dokončení konfigurace můžete svůj e-mail začít naplno využívat. Od teď můžete odesílat a přijímat správy prostřednictvím svého e-mailového klienta.
+Po úspěšném dokončení konfigurace můžete svůj e-mail začít naplno využívat. Od teď můžete odesílat a přijímat zprávy prostřednictvím svého e-mailového klienta.
 
 Vyzkoušejte také webovou aplikaci OVH s [funkcemi pro týmovou spolupráci](https://mail.ovh.net/cz/){.external}, která je dostupná na následující adrese: [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external}. Přihlásit se můžete pomocí přihlašovacích údajů své e-mailové adresy. 
 

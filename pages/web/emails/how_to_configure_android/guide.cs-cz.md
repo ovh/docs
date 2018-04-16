@@ -87,7 +87,7 @@ Pokud bude nastavení účtu zapotřebí upravit manuálně, níže naleznete ne
 
 ### Fáze 2: použití e-mailu
 
-Po úspěšném dokončení konfigurace můžete svůj e-mail začít naplno využívat. Od teď můžete odesílat a přijímat správy prostřednictvím svého Android zařízení.
+Po úspěšném dokončení konfigurace můžete svůj e-mail začít naplno využívat. Od teď můžete odesílat a přijímat zprávy prostřednictvím svého Android zařízení.
 
 OVH nabízí webovou aplikaci, která umožňuje přístup k Vaší e-mailové adrese prostřednictvím internetového prohlížeče. Aplikace je dostupná na adrese <https://mail.ovh.net/cz/>. Přihlásit se sem můžete pomocí přihlašovacích údajů ke své e-mailové adrese.
 

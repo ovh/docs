@@ -73,7 +73,7 @@ Informace o serveru naleznete v svém [Zákaznickém prostoru OVH](https://www.o
 
 ### Fáze 2: použití e-mailu
 
-Po úspěšném dokončení konfigurace můžete svůj e-mail začít naplno využívat. Od teď můžete odesílat a přijímat správy prostřednictvím svého macOS zařízení.
+Po úspěšném dokončení konfigurace můžete svůj e-mail začít naplno využívat. Od teď můžete odesílat a přijímat zprávy prostřednictvím svého macOS zařízení.
 
 Vyzkoušejte také webovou aplikaci OVH s [funkcemi pro týmovou spolupráci](https://www.ovh.com/fr/emails/){.external}, která je dostupná na následující adrese: <https://mail.ovh.net/cz/>. Přihlásit se můžete pomocí přihlašovacích údajů své e-mailové adresy.
 
