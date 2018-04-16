@@ -98,7 +98,7 @@ Vous avez le choix entre :
 
 ### Supprimer les spams
 
-|En-tête|Règle|Valeur|Action|
+||En-tête|Règle|Valeur|Action|
 |---|---|---|---|---|
 |Paramètres du filtre|Sujet du message|contient|[SPAM]|suppression|
 |Ce que le filtre va faire|Si le sujet du message|contient|la suite "[SPAM]",|alors, supprimer le message.|
@@ -106,8 +106,8 @@ Vous avez le choix entre :
 
 ### Rediriger les e-mails d'un destinataire
 
-|---|---|---|---|---|
 ||En-tête|Règle|Valeur|Action|
+|---|---|---|---|---|
 |Paramètres du filtre|De|contient|contact@test.com|rediriger vers une adresse distance : compta@finance.com|
 |Ce que le filtre va faire|Si l'expéditeur|est|contact@test.com,|alors, renvoyer l'e-mail vers compta@finance.com|
 
