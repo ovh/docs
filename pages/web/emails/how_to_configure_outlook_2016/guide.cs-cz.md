@@ -92,8 +92,8 @@ OVH nabízí webovou aplikaci, která umožňuje přístup k Vaší e-mailové a
 
 ## Kam dál
 
-[Konfigurace účtu E-mail Pro v aplikaci Outlook 2016 pro Windows](https://docs.ovh.com/gb/en/emails-pro/configuration-outlook-2016/){.external}
+[Konfigurace účtu E-mail Pro v aplikaci Outlook 2016 pro Windows](https://docs.ovh.com/cz/cs/emails-pro/konfigurace-outlook-2016/){.external}
 
-[Konfigurace účtu Exchange v aplikaci Outlook 2016 pro Windows](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/configuration-outlook-2016/){.external}
+[Konfigurace účtu Exchange v aplikaci Outlook 2016 pro Windows](https://docs.ovh.com/cz/cs/microsoft-collaborative-solutions/konfigurace-outlook-2016/){.external}
 
 Sdílejte své zkušenosti s uživatelskou komunitou na <https://community.ovh.com/en/>.
