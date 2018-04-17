@@ -57,7 +57,7 @@ Jūs galėsite, pavyzdžiui, importuoti savo ankstesnių virtualių mašinų atv
 
 
 
-- Architektūra: x86_x64
+- Architektūra: x86_64
 - Mažiausia disko vieta (GB): jei nenurodyta, pagal nutylėjimą bus 0
 - Mažiausias RAM kiekis (MB): jei nenurodyta, pagal nutylėjimą bus 0
 

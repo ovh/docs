@@ -55,7 +55,7 @@ In dieser Hilfe werden die Erstellung, der Start und die Löschung von Abbildern
 
 
 
-- Architektur: x86_x64
+- Architektur: x86_64
 - Minimum Festplatte (GB): Falls keine Angabe gemacht wird, wird der Standardwert 0 verwendet.
 - Minimum RAM (MB): Falls keine Angabe gemacht wird, wird der Standardwert 0 verwendet.
 

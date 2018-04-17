@@ -56,7 +56,7 @@ Przewodnik ten wyjaśnia poszczególne etapy tworzenia, uruchamiania i usuwania 
 
 
 
-- Architektura: x86_x64
+- Architektura: x86_64
 - Minimalny dysk (w GB): domyślna wartość to 0.
 - Minimalna ilość RAM (w MB): domyślna wartość to 0.
 

@@ -56,7 +56,7 @@ Este guia explica as diferentes etapas para a criação, para dar inicio e elimi
 
 
 
-- Arquitetura: x86_x64
+- Arquitetura: x86_64
 - Espaço de disco mínimo (em GB) : se não for especificado, o valor padrão será 0.
 - RAM mínima (em MB): se não for especificado, o valor padrão será 0.
 
