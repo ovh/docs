@@ -36,16 +36,16 @@ Une fois connecté, sélectionnez votre nom de domaine concerné dans la Section
 
 Dans le tableau listant vos différentes adresses e-mails, cliquez sur l'icône `Filtre`{.action} de l'adresse concernée.
 
-![emails](images/01.png){.thumbnail}
+![emails](images/img_3239.jpg){.thumbnail}
 
 Vous accéderez à la liste de vos filtres actuellement configurés pour cette adresse e-mail. Pour en ajouter un, cliquez donc sur le bouton à droite `Ajouter un Filtre`{.action}.
 
-![emails](images/02.png){.thumbnail}
+![emails](images/img_3240.jpg){.thumbnail}
 
 
 ## Comprendre la configuration des filtres d'e-mails
 
-![emails](images/3241.png){.thumbnail}
+![emails](images/img_3241.jpg){.thumbnail}
 
 
 ### Informations
@@ -134,4 +134,4 @@ Vous avez le choix entre :
 
 Dans ce cas, le configuration sera la suivante :
 
-![emails](images/3242.png){.thumbnail}
+![emails](images/img_3242.jpg){.thumbnail}
