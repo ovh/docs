@@ -47,7 +47,7 @@ Ce guide vous explique les différentes étapes de la création, du lancement et
 |VHD|Microsoft format|
 |VMDK|VMWare format|
 
-- Architecture : x86_x64
+- Architecture : x86_64
 - Espace disque minimal (en Go) : si non spécifié, la valeur par défaut sera 0.
 - RAM minimale (en Mo) : si non spécifiée, la valeur par défaut sera 0.
 
