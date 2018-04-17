@@ -29,7 +29,7 @@ Un Virtual Private Server (VPS) è un server dedicato virtualizzato. A differenz
 
 ## Procedura
 
-Per visualizzare le informazioni relative al tuo VPS, accedi alla sezione `Dedicato`{.action} del tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella colonna di sinistra, clicca su `VPS`{.action} e poi seleziona il tuo servizio. Nell’interfaccia vengono mostrate le informazioni generali al centro, le operazioni disponibili nei pulsanti a destra e, in basso, le opzioni aggiuntive.
+Per visualizzare le informazioni relative al tuo VPS, accedi alla sezione `Cloud`{.action} del tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella colonna di sinistra, clicca su `Server`{.action} e poi seleziona il tuo servizio. Nell’interfaccia vengono mostrate le informazioni generali al centro, le operazioni disponibili nei pulsanti a destra e, in basso, le opzioni aggiuntive.
 
 ### Accedi al tuo VPS
 
