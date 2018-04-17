@@ -31,7 +31,7 @@ Un servidor virtual privado (VPS, por sus siglas en inglés) es un servidor dedi
 
 ## Procedimiento
 
-Para consultar la información relacionada con su VPS, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Acceda a la sección `Dedicado`{.action} y, en la columna izquierda, haga clic en `VPS`{.action} y seleccione su VPS.
+Para consultar la información relacionada con su VPS, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Acceda a la sección `Cloud`{.action} y, en la columna izquierda, haga clic en `Servidores`{.action} y seleccione su VPS.
 
 En esta pantalla podrá consultar todo lo relacionado con su VPS. En el centro encontrará la información general; en el lado derecho, las acciones que puede realizar (con sus correspondientes botones) y, en la parte inferior, las diferentes opciones.
 

@@ -29,7 +29,7 @@ A virtual private server (VPS) is a virtualised dedicated server. Unlike web hos
 
 ## Instructions
 
-Once you have logged in to your [Control Panel](https://ca.ovh.com/auth/){.external}, you simply need to read the information about your VPS, go to the `Dedicated`{.action} section, then to `VPS`{.action} in the left-hand column. In this section, you will see everything about your VPS: general information in the middle, the operations you can perform listed as buttons on the right-hand side of the screen, and options at the very bottom.
+Once you have logged in to your [Control Panel](https://ca.ovh.com/auth/){.external}, you simply need to read the information about your VPS, go to the `Cloud`{.action} section, then to `Servers`{.action} in the left-hand column. In this section, you will see everything about your VPS: general information in the middle, the operations you can perform listed as buttons on the right-hand side of the screen, and options at the very bottom.
 
 ### Logging in to a VPS
 
