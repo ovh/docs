@@ -29,7 +29,7 @@ Un serveur privé virtuel (VPS, pour Virtual Private Server) est un serveur déd
 
 ## En pratique
 
-Une fois connecté sur votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, il vous suffira, pour consulter les informations liées à votre VPS, de vous rendre dans la partie `Dédié`{.action}, puis dans la colonne de gauche `VPS`{.action}. Vous verrez ici tout ce qui concerne votre VPS : les informations générales au milieu, les actions que vous pouvez effectuer sous la forme de boutons à droite de l'écran et les options tout en bas.
+Une fois connecté sur votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, il vous suffira, pour consulter les informations liées à votre VPS, de vous rendre dans la partie `Cloud`{.action}, puis dans la colonne de gauche `Serveurs`{.action}. Vous verrez ici tout ce qui concerne votre VPS : les informations générales au milieu, les actions que vous pouvez effectuer sous la forme de boutons à droite de l'écran et les options tout en bas.
 
 ### Se connecter en VPS
 
