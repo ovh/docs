@@ -56,7 +56,7 @@ Questa guida ti mostra come creare, caricare ed eliminare immagini nell'interfac
 
 
 
-- Architettura: x86_x64
+- Architettura: x86_64
 - Spazio disco minimo (in GB): se non specificato, il valore di default è 0.
 - RAM minima (in MB): se non specificato, il valore di default è 0.
 
