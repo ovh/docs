@@ -26,7 +26,7 @@ Wirtualny serwer prywatny (VPS, Virtual Private Server) to inaczej zwirtualizowa
 
 ## W praktyce
 
-W celu sprawdzenia informacji o Twoim serwerze VPS wystarczy po zalogowaniu się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} przejść do części `Dedykowany`{.action}, a następnie do `VPS`{.action} w kolumnie po lewej stronie. Znajdziesz tam wszystko, co dotyczy Twojego serwera VPS: informacje ogólne o środowisku, dostępne operacje, które możesz wykonywać w formie przycisków po prawej stronie ekranu, a u dołu strony dostępne opcje.
+W celu sprawdzenia informacji o Twoim serwerze VPS wystarczy po zalogowaniu się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} przejść do części `Cloud`{.action}, a następnie do `Serwery`{.action} w kolumnie po lewej stronie. Znajdziesz tam wszystko, co dotyczy Twojego serwera VPS: informacje ogólne o środowisku, dostępne operacje, które możesz wykonywać w formie przycisków po prawej stronie ekranu, a u dołu strony dostępne opcje.
 
 ### Logowanie do serwera VPS
 
