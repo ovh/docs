@@ -86,7 +86,7 @@ Durant la première étape, vous pourrez choisir votre pays, la langue souhaité
 
 Vous devez ensuite choisir le mot de passe pour l'utilisateur *administrator* :
 
-![Choix du mot de passe dans le sysprep](images/sysprep_first_step.png)
+![Choix du mot de passe dans le sysprep](images/sysprep_password.png)
 
 Il vous reste à valider votre choix avec `Finish`{.action}. L'instance va redémarrer et vous pourrez vous connecter sur votre serveur Windows.
 
