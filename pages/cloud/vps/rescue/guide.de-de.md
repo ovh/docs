@@ -5,7 +5,7 @@ excerpt: In dieser Anleitung erfahren Sie, wie Sie Ihren VPS in den Rescue-Modus
 section: Diagnose und Rescue-Modus
 ---
 
-**Stand 22.01.2018**
+**Stand 18.04.2018**
 
 ## Einleitung
 
@@ -27,11 +27,11 @@ In dieser Anleitung erfahren Sie, wie Sie Ihren VPS im Rescue-Modus neu starten.
 
 ## Beschreibung
 
-Wenn Sie in Ihrem Kundencenter eingeloggt sind, gehen Sie in den Bereich `Dedicated`{.action} und wählen Ihren VPS in der linken Spalte aus:
+Wenn Sie in Ihrem Kundencenter eingeloggt sind, gehen Sie in den Bereich `Cloud`{.action} und wählen Ihren VPS in der linken Spalte aus:
 
 ![VPS Bereich im Kundenbereich](images/vps_rescue1.png){.thumbnail}
 
-Auf der Hauptseite Ihres VPS klicken Sie rechts auf die Schaltfläche `Rescue-Modus`{.action} und dann auf `Bestätigen`{.action}, um den VPS im Rescue-Modus neu zu starten.
+Auf der Hauptseite Ihres VPS klicken Sie auf die Schaltfläche `Neustart im Rescue-Modus`{.action} und dann auf `Bestätigen`{.action}, um den VPS im Rescue-Modus neu zu starten.
 
 ![Validierung des Neustart in Rescue-Modus](images/vps_rescue2.png){.thumbnail}
 
@@ -44,11 +44,11 @@ Ein Ladebalken wird eingeblendet, der Sie über den Fortschritt des Neustarts in
 > Sie erhalten daraufhin eine automatische E-Mail mit den SSH-Zugangsdaten für den Rescue-Modus Ihres VPS. Diese E-Mail können Sie auch in Ihrem Kundencenter im Bereich `Mein Account`{.action} unter `Empfangene E-Mails`{.action} einsehen.
 > 
 
-Sie können sich nun via SSH im Rescue-Modus mit Ihrem VPS verbinden. Wenn die Änderungen im `Rescue-Modus`{.action} abgeschlossen sind, können Sie Ihren VPS über die Schaltfläche `Meinen VPS neu starten`{.action} auf der primären Festplatte neu starten.
+Sie können sich nun via SSH im Rescue-Modus mit Ihrem VPS verbinden. Wenn die Änderungen im `Rescue-Modus` abgeschlossen sind, können Sie Ihren VPS über die Schaltfläche `Meinen VPS neu starten`{.action} auf der primären Festplatte neu starten.
 
 
 ## Weiterführende Informationen
 
-[SSH Einführung](https://docs.ovh.com/gb/en/dedicated/ssh-introduction/){.external}
+[SSH Einführung](https://docs.ovh.com/de/dedicated/ssh-einfuehrung/){.external}
 
 Für den Austausch mit unserer User Community besuchen Sie <https://community.ovh.com/en/>.

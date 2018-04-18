@@ -26,11 +26,11 @@ Il Rescue mode offre il vantaggio di poter effettuare test o manipolazioni al mo
 
 ## Procedura
 
-Accedi alla sezione `Dedicato`{.action} dello Spazio Cliente OVH e seleziona il tuo VPS nella colonna di sinistra:
+Accedi alla sezione `Cloud`{.action} dello Spazio Cliente OVH e seleziona il tuo VPS nella colonna di sinistra:
 
 ![Sezione VPS nello Spazio Cliente OVH](images/vps_rescue1.png){.thumbnail}
 
-Clicca sul pulsante `Modalità rescue`{.action} a destra. Si apre una nuova finestra: per continuare, clicca su `Conferma`{.action}.
+Clicca sul pulsante `Riavvia in modalità rescue`{.action}. Si apre una nuova finestra: per continuare, clicca su `Conferma`{.action}.
 
 ![Conferma della modalità Rescue](images/vps_rescue2.png){.thumbnail}
 

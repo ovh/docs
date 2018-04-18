@@ -31,7 +31,7 @@ Une fois connecté à votre espace client, il faut aller dans la partie `Cloud`{
 
 ![Partie VPS dans l'espace client](images/vps_rescue1.png){.thumbnail}
 
-Sur l'écran principal de votre VPS, cliquez à droite sur le bouton `Redémarrer en mode rescue`{.action} et validez la confirmation de redémarrage :
+Sur l'écran principal de votre VPS, cliquez sur le bouton `Redémarrer en mode rescue`{.action} et validez la confirmation de redémarrage :
 
 ![Validation du mode Rescue](images/vps_rescue2.png){.thumbnail}
 

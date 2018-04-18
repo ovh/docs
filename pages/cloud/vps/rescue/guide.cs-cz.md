@@ -5,7 +5,7 @@ excerpt: Zjistěte jak restartovat své VPS v režimu rescue
 section: Diagnostika a režim rescue
 ---
 
-**Poslední aktualizace 06/02/2018**
+**Poslední aktualizace 18/04/2018**
 
 ## Cíl
 
@@ -22,16 +22,16 @@ Zjistěte jak restartovat své VPS v režimu rescue
 
 ## Prerekvizity
 
-Přístup do [Zákaznického prostoru OVH](https://ovh.com/auth){.external}.
+Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Postup
 
-Přejděte do Zákaznického prostoru OVH (sekce `Dedicated`{.action}) a v panelu po levé straně vyberte své VPS:
+Přejděte do Zákaznického prostoru OVH (sekce `Cloud`{.action}) a v panelu po levé straně vyberte své VPS:
 
 ![Administrační rozhraní VPS v Zákaznickém prostoru OVH](images/vps_rescue1.png){.thumbnail}
 
-V hlavním administračním rozhraní svého VPS klikněte na tlačítko `Režim Rescue`{.action} a potvrďte restart serveru.
+V hlavním administračním rozhraní svého VPS klikněte na tlačítko `Reboot do režimu rescue`{.action} a potvrďte restart serveru.
 
 ![Potvrzení režimu rescue](images/vps_rescue2.png){.thumbnail}
 
@@ -44,7 +44,7 @@ O průběhu celého procesu Vás bude informovat načítací lišta (restartová
 > Po dokončení předcházejícího kroku od nás obdržíte e-mail s SSH přístupovými údaji pro režim rescue. Tento e-mail je Vám k dispozici i v Zákaznickém prostoru OVH (`Můj účet`{.action} > `Přijaté e-maily`{.action}).
 > 
 
-Nyní se můžete prostřednictvím SSH připojit ke svému VPS, nabootovanému v režimu rescue. Jakmile provedete potřebné úpravy, jednoduše nabootujte své VPS z pevného disku kliknutím na tlačítko `Restartovat mé VPS`{.action} v Zákaznickém prostoru OVH.
+Nyní se můžete prostřednictvím SSH připojit ke svému VPS, nabootovanému v režimu rescue. Jakmile provedete potřebné úpravy, jednoduše nabootujte své VPS z pevného disku kliknutím na tlačítko `Reboot mého VPS`{.action} v Zákaznickém prostoru OVH.
 
 
 ## Kam dál

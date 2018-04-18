@@ -5,7 +5,7 @@ excerpt: Tässä ohjeessa kerrotaan, kuinka VPS käynnistetään Rescue-tilassa.
 section: Vianhaku ja Rescue-tila
 ---
 
-**Päivitetty 05.12.2017**
+**Päivitetty 18.04.2018**
 
 ## Tavoite
 
@@ -27,11 +27,11 @@ Tässä ohjeessa kerrotaan, kuinka VPS käynnistetään Rescue-tilassa.
 
 ## Käytännössä
 
-Kun olet kirjautunut hallintapaneeliisi, mene osioon `Dedikoidut`{.action} ja valitse VPS-palvelimesi vasemman puoleisesta valikosta: 
+Kun olet kirjautunut hallintapaneeliisi, mene osioon `Cloud`{.action} ja valitse VPS-palvelimesi vasemman puoleisesta valikosta: 
 
 ![VPS-osio hallintapaneelissa](images/vps_rescue1.png){.thumbnail}
 
-Klikkaa virtuaalipalvelimesi päänäytöllä oikealla olevaa painiketta `Rescue-tila`{.action} ja vahvista, että haluat käynnistää VPS:n uudelleen:
+Klikkaa `Uudelleenkäynnistys pelastustilassa`{.action} ja vahvista, että haluat käynnistää VPS:n uudelleen:
 
 ![Rescue-tilan vahvistus](images/vps_rescue2.png){.thumbnail}
 
@@ -39,7 +39,7 @@ Edistymisen osoittava palkki näyttää uudelleenkäynnistyksen etenemisen (täm
 
 ![Rescue-tilan eteneminen](images/rescue_task.png){.thumbnail}
 
->[!primary]
+> [!primary]
 >
 >Tämän vaiheen jälkeen saat automaattisesti sähköpostiviestin, joka sisältää SSH-tunnuksesi Rescue-tilassa. Löydät tämän viestin lisäksi hallintapaneelista (katso `Oma tili`{.action} > Vastaanotetut sähköpostit`{.action}).
 > 
