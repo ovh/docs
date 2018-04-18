@@ -1,76 +1,57 @@
 ---
-title: Transfer wychodzący domeny globalnej lub geograficznej
-excerpt: 'Przewodnik ten wyjaśnia, jak przenieść domenę globalną do innego operatora.'
+title: 'Transfer domeny z OVH do innego operatora'
 slug: transfer_wychodzacy_domeny_globalnej_lub_geograficznej
-legacy_guide_number: g1869
+excerpt: 'Dowiedz się, jak wykonać transfer domeny z OVH do wybranego operatora'
+section: Transfer
+order: 4
 ---
 
+**Ostatnia aktualizacja dnia 2018-04-18**
 
-## Domena globalna (GTLD)
+## Wprowadzenie
 
-Jeśli chcesz wykonać transfer domeny globalnej (.com, .net, .org, .info, .biz i inne) do innego operatora, upewnij się, że spełnia ona poniższe wymagania:
+Transfer domeny umożliwia jej przeniesienie do innego operatora. Po zakończeniu transferu, opłaty za domenę jak i zarządzanie ustawieniami serwerów DNS będziesz przeprowadzał u nowego operatora.
 
+**Dowiedz się, jak wykonać transfer domeny z OVH do wybranego operatora.**
 
-- Domena musi być aktywna. *
-- Domena powinna być 61 dni po rejestracji lub transferze.*
-- Nazwa firmy, nazwisko i imię właściciela nie powinny być zmieniane w ciągu ostatnich 61 dni. *
-- Transfer można wykonać najwcześniej 46 dni po odnowieniu domeny. (Zalecenie)
-- Adresy e-mail kontaktów w bazie Whois muszą być poprawne. *
-- Kontakty z bazy Whois i przede wszystkim właściciel powinien zostać poinformowany o zleceniu transferu. *
-- Domena nie może być zablokowana. *
-- Transfer można wykonać najpóźniej na 60 dni przed datą wygaśnięcia. *
+## Wymagania początkowe
+- Posiadanie domeny zarejestrowanej w OVH
+- Posiadanie uprawnień do złożenia wniosku o transfer domeny: właściciel i/lub administratorzy domeny powinni zostać poinformowani o wszczęciu takiej procedury
+- Dostęp do interfejsu zarządzania domeną w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Od momentu utworzenia domeny upłynęło więcej niż 61 dni, ponadto domena nie była w tym czasie przenoszona ani nie został zmieniony jej właściciel
 
+> [!primary]
+>
+> Niektóre rozszerzenia domeny podlegają specjalnej procedurze w zakresie zmiany operatora. Jeśli po wykonaniu poniżej opisanych etapów, nie udaje Ci się przenieść domeny, zalecamy kontakt z nowym operatorem w celu uzyskania dodatkowych informacji o krokach, jakie należy podjąć.
+>
 
-(*: Obowiązkowe)
+## W praktyce
 
+### Etap 1: wyłączenie ochrony przed transferem
 
-## Domena geograficzna (CCTLD)
+Aby wyłączyć ochronę przed transferem domeny, kliknij przycisk `Web`{.action} na pasku usług na górze strony w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Przejdź do sekcji `Domeny`{.action} po lewej stronie, następnie kliknij wybraną domenę. W zakładce `Informacje ogólne`{.action} kliknij suwak `Ochrona przed transferem`{.action}, następnie kliknij `Zatwierdź`{.action}.
 
-Jeśli chcesz wykonać transfer domeny geograficznej (.pl, .fr, .re, .eu, .be i inne) do innego operatora, upewnij się, że spełnia ona poniższe wymagania:
+> [!primary]
+>
+> Po odblokowaniu Twojej domeny masz siedem (7) dni, aby rozpocząć jej transfer do nowego operatora. Po upływie tego terminu domena zablokuje się automatycznie, jeśli nie zostanie złożony wniosek o jej przeniesienie.
+>
 
+![outgoingtransfer](images/outgoing-transfer-step2.png){.thumbnail}
 
-- Domena musi być aktywna. *
-- Transfer można wykonać najwcześniej 46 dni po odnowieniu domeny. (Zalecenie)
-- Kontakty z bazy Whois i przede wszystkim właściciel powinien zostać poinformowany o zleceniu transferu. *
-- Domena nie może być zablokowana. *
-- Transfer można wykonać najpóźniej na 60 dni przed datą wygaśnięcia. *
-- W przypadku domen .pl należy posiadać kod autoryzujący transfer (kod authinfo). Należy również upewnić się, że minęło minimum 5 dni od daty rejestracji domeny. W przypadku domen .pl przenoszonych z Nasku nie trzeba posiadać kodu authinfo - należy złożyć zamówienie na stronie ovh.pl i przesłać do Nasku odpowiedni wniosek o transfer domeny. 
+### Etap 2: pobranie kodu transferu (authinfo)
 
+Po odblokowaniu Twojej domeny do transferu, pobierz jej kod transferu. W tym celu, w zakładce `Informacje ogólne`{.action}, kliknij przycisk `AUTH/INFO`{.action} znajdujący się obok przycisku `Ochrona przed transferem`{.action}. Jeśli to konieczne, odśwież stronę.
 
-(*: Obowiązkowe)
+Pobierz kod, który wyświetla się w oknie.
 
+![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
 
-## Etap 1: Weryfikacja informacji o domenie
-Informacje te są dostępne w [panelu klienta](https://www.ovh.com/manager/web/login/).
-Zaloguj się na konto kontaktu administracyjnego.
+### Etap 3: rozpoczęcie transferu domeny do nowego operatora
 
-Po zalogowaniu wystarczy kliknąć na nazwę domeny w menu Domeny i na Informacje ogólne.
+Jeśli jeszcze tego nie zrobiłeś, skontaktuj się z Twoim nowym operatorem, aby rozpocząć transfer domeny. Podaj mu pobrany na Etapie 3 kod transferu w sposób zgodny z procedurą obowiązującą u tego operatora. 
 
-![](images/img_3692.jpg){.thumbnail}
+Aby dowiedzieć się więcej o procesie transferu, w tym terminie jego realizacji, zapoznaj się z informacjami podanymi przez Twojego nowego operatora.
 
+## Sprawdź również
 
-## Etap 2: Odblokowanie domeny
-Kliknij na przycisk wyłączenie w sekcji Ochrona przed transferem.
-
-![](images/img_3695.jpg){.thumbnail}
-Kliknij na Zatwierdź.
-
-![](images/img_3693.jpg){.thumbnail}
-Operacja ta może trwać kilka minut.
-
-![](images/img_3694.jpg){.thumbnail}
-
-
-## Etap 3: Pobranie kodu authinfo
-Po wyłączeniu ochrony pojawi się przycisk AUTH/INFO.
-
-![](images/img_3696.jpg){.thumbnail}
-Kliknij na przycisk AUTH/INFO. Wyświetli się okno z kodem do transferu.
-
-![](images/img_3697.jpg){.thumbnail}
- Domena będzie odblokowana przez 7 dni. Po tym czasie zostanie ponownie zablokowana.
-
-
-## Etap 4: Przekazanie informacji nowemu operatorowi domeny
-Procedura w OVH zakończyła się. Posiadasz teraz informacje niezbędne do wykonania transferu domeny.
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
