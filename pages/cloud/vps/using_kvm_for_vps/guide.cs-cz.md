@@ -5,7 +5,7 @@ slug: pouziti_kvm_na_vps
 section: První kroky
 ---
 
-**Poslední aktualizace 18/01/2018**
+**Poslední aktualizace 18/04/2018**
 
 ## Cíl
 

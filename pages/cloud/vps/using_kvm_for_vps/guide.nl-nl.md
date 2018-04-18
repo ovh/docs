@@ -5,7 +5,7 @@ slug: kvm_gebruiken_voor_vps
 section: Eerste stappen
 ---
 
-**Laatste update 16-01-2018**
+**Laatste update 18-04-2018**
 
 ## Introductie
 
@@ -21,7 +21,7 @@ De KVM-console staat een directe verbinding met uw VPS toe, zonder gebruik te ho
 
 ### Log in op de KVM via uw Control Panel
 
-Wanneer u op uw Control Panel bent ingelogd gaat u naar de beheerpagina van uw VPS. Rechts vindt u de knop `KVM`{.action}:
+Wanneer u op uw Control Panel bent ingelogd gaat u naar de beheerpagina van uw VPS. Vindt u de knop `KVM`{.action}:
 
 ![Selecteer de KVM-knop](images/activating_kvm_manager.png){.thumbnail}
 
@@ -61,6 +61,6 @@ In geval van een probleem met de KVM, wordt hier de API die aangeraden voor de t
 
 ## Verder 
 
-Ga in gesprek met onze communitygebruikers via: <https://community.ovh.com>.
+Ga in gesprek met onze communitygebruikers via: <https://community.ovh.com/en/>.
 
 

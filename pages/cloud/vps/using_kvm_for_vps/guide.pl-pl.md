@@ -5,7 +5,7 @@ slug: kvm_na_serwerach_vps
 section: Pierwsze kroki
 ---
 
-**Ostatnia aktualizacja dnia 2018-01-15**
+**Ostatnia aktualizacja dnia 2018-04-18**
 
 ## Wprowadzenie
 

@@ -5,7 +5,7 @@ slug: use-kvm-for-vps
 section: Getting started
 ---
 
-**Last updated 17/11/2017**
+**Last updated 18/04/2018**
 
 ## Objective
 
@@ -21,7 +21,7 @@ The KVM console allows you to connect directly to your VPS without the need to u
 
 ### Connecting to the KVM via the Control Panel
 
-After logging in to your Control Panel, simply go to the page for managing your VPS. On the right, you will see a button labelled `KVM`{.action}:
+After logging in to your Control Panel, simply go to the page for managing your VPS. You will see a button labelled `KVM`{.action}:
 
 ![Click on the KVM button](images/activating_kvm_manager.png){.thumbnail}
 

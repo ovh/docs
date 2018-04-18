@@ -5,7 +5,7 @@ slug: utilizza_il_kvm_sul_tuo_vps
 section: Per iniziare
 ---
 
-**Ultimo aggiornamento: 30/01/2018**
+**Ultimo aggiornamento: 18/04/2018**
 
 ## Obiettivo
 
@@ -21,7 +21,7 @@ La console KVM consente di stabilire una connessione diretta al tuo VPS senza ut
 
 ### Connettiti al KVM tramite lo Spazio Cliente OVH
 
-Accedi alla sezione “Dedicato” dello Spazio Cliente OVH e seleziona il tuo VPS nel menu a sinistra. Clicca sul pulsante `KVM`{.action}:
+Accedi alla sezione `Cloud`{.external} dello Spazio Cliente OVH e seleziona il tuo VPS nel menu a sinistra. Clicca sul pulsante `KVM`{.action}:
 
 ![Selezionare il pulsante KVM](images/activating_kvm_manager.png){.thumbnail}
 

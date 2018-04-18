@@ -5,7 +5,7 @@ slug: verwendung_von_kvm_fur_vps
 section: Erste Schritte
 ---
 
-**Stand 15.01.2018**
+**Stand 18.04.2018**
 
 ## Einleitung
 
