@@ -15,7 +15,7 @@ Konsola KVM umożliwia bezpośrednie połączenie z Twoim serwerem VPS bez konie
 
 ## Wymagania początkowe
 
-- Logowanie do [Panelu klienta OVH](https://www.ovh.com/auth){.external}
+- Logowanie do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## W praktyce
 

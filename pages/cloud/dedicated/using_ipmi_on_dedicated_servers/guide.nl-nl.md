@@ -15,7 +15,7 @@ Let op, u komt hierin ook de term KVM (Keyboard Video and Mouse) tegen, die onde
 
 ## Vereisten
 
-- U moet ingelogd zijn op uw [Control Panel](https://www.ovh.com/auth){.external} in het gedeelte `Dedicated servers`{.action} onder `Dedicated`{.action}.
+- U moet ingelogd zijn op uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in het gedeelte `Dedicated servers`{.action} onder `Dedicated`{.action}.
 
 ## Instructie
 

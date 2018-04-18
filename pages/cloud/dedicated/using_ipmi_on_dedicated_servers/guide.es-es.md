@@ -14,7 +14,7 @@ La consola IPMI (Intelligent Platform Management Interface) permite establecer u
 En otros documentos puede encontrar el término KVM, del inglés *keyboard, video and mouse* (teclado, vídeo y ratón), que se utiliza sobre todo en el caso de los VPS.
 
 ## Requisitos
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth){.external}, en la sección `Dedicado`{.action} > ` Servidores dedicados`{.action}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Dedicado`{.action} > ` Servidores dedicados`{.action}.
 
 ## Procedimiento
 

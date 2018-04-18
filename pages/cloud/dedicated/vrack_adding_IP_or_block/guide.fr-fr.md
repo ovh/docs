@@ -25,7 +25,7 @@ Pour ajouter un bloc IP dans un vRack via le manager, il faut :
 
 Pour enlever un bloc IP d'un vRack via le manager, il faut :
 
-- se rendre dans [l'espace client OVH](https://www.ovh.com/auth) ;
+- se rendre dans [l'espace client OVH](https://www.ovh.com/auth/?action=gotomanager) ;
 - cliquer sur la section `Réseaux`{.action} dans le menu de gauche ;
 - cliquer sur le vRack créé (pn-XXX ou le nom que vous avez donné) :
 

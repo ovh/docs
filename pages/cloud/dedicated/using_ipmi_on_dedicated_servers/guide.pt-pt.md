@@ -14,7 +14,7 @@ A interface IPMI (Intelligent Platform Management Interface) permite aceder dire
 Atenção: por vezes, poderá ouvir o termo KVM (Keyboard Video and Mouse), o equivalente à IPMI no âmbito dos VPS. 
 
 ## Requisitos
-- Aceder à [Área de Cliente](https://www.ovh.com/auth){.external}, clicar em `Dedicado`{.action} e selecionar `Servidores Dedicados`{.action}.
+- Aceder à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, clicar em `Dedicado`{.action} e selecionar `Servidores Dedicados`{.action}.
 
 ## Instruções
 

@@ -106,7 +106,7 @@ Existem dois registos DNS (campos A e MX) que permitem aceder ao seu site e rece
 
 - **Campo A (acesso ao site)**
 
-Para consultar o campo A, e os dados que deve usar na zona DNS, aceda à [Área de Cliente](https://www.ovh.com/auth){.external}. No menu à esquerda, selecione `Alojamentos`{.action}, e clique no alojamento contratado. De seguida, em `Informações gerais`{.action}, tome nota do endereço IP indicado para «IPv4».
+Para consultar o campo A, e os dados que deve usar na zona DNS, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. No menu à esquerda, selecione `Alojamentos`{.action}, e clique no alojamento contratado. De seguida, em `Informações gerais`{.action}, tome nota do endereço IP indicado para «IPv4».
 
 ![Alterar o campo A](images/know_the_OVH_A_records.png){/thumbnail}
 

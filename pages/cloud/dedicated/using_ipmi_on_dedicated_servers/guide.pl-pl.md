@@ -15,7 +15,7 @@ Uwaga: napotkasz również termin KVM (Keyboard Video and Mouse), który jest u�
 
 ## Wymagania początkowe
 
-- Zalogowanie do [panelu klienta] (https://www.ovh.com/auth) w sekcji `Dedykowane`{.action} następnie `Serwery Dedykowane`{.action}.
+- Zalogowanie do [panelu klienta] (https://www.ovh.com/auth/?action=gotomanager) w sekcji `Dedykowane`{.action} następnie `Serwery Dedykowane`{.action}.
 
 ## W praktyce
 

@@ -58,7 +58,7 @@ Kun verkkotunnuksesi aloituskonfiguraatio on valmis, voit myös halutessasi konf
 > Kaikki Exchange-palvelussasi luodut osoitteet voidaan näyttää palvelun kaikkien osoitteiden luettelossa, mukaan lukien ne, joilla on eri verkkotunnus. Irrottaaksesi verkkotunnukset näkymästä sinun on tilattava uusi Hosted Exchange-ratkaisu näille kyseisille verkkotunnuksille.
 >
 
-Uuden verkkotunnuksen lisäämiseksi valitse kyseinen Hosted Exchange -palvelu [hallintapaneelistasi](https://www.ovh.com/auth){.external} ja klikkaa välilehteä `Liitetyt verkkotunnukset`{.action}. Taulukossa näkyvät tällä hetkellä konfiguroidut tai palveluusi siirtymässä olevat verkkotunnukset. Uusien lisäämiseksi klikkaa painiketta `Lisää verkkotunnus`{.action} ja seuraa sitten prosessin eri vaiheita.
+Uuden verkkotunnuksen lisäämiseksi valitse kyseinen Hosted Exchange -palvelu [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager){.external} ja klikkaa välilehteä `Liitetyt verkkotunnukset`{.action}. Taulukossa näkyvät tällä hetkellä konfiguroidut tai palveluusi siirtymässä olevat verkkotunnukset. Uusien lisäämiseksi klikkaa painiketta `Lisää verkkotunnus`{.action} ja seuraa sitten prosessin eri vaiheita.
 
 Voit lukea lisää aiheesta dokumentaatiostamme [Verkkotunnuksen lisääminen Exchange-palveluun](https://docs.ovh.com/fi/microsoft-collaborative-solutions/verkkotunnuksen-lisaaminen-exchange-palveluun/){.external}.
 
@@ -91,7 +91,7 @@ Kun tilisi on konfiguroitu, voit aloittaa niiden käytön! Tätä varten OVH tar
 
 Jos haluat konfiguroida sähköpostiosoitteen sähköpostiohjelmistoon tai laitteeseen kuten älypuhelimelle tai tabletille, tutustu dokumentaatioomme tässä portaalissa: [https://docs.ovh.com/fi/microsoft-collaborative-solutions/](https://docs.ovh.com/fi/microsoft-collaborative-solutions/){.external}. Tarkista Exchange-osoitteen yhteensopivuus palvelun kanssa, jotta voit varmistua sen toimivan moitteettomasti ohjelmistossa.
 
-OVH tarjoaa Outlook-lisenssejä [hallintapaneelista](https://www.ovh.com/auth){.external} sekä Office 365 -lisenssejä sivulla [https://www.ovh-hosting.fi/office-365/](https://www.ovh-hosting.fi/office-365/){.external}. Suosittelemme jompaakumpaa näistä ratkaisuista, mikäli haluat hyödyntää Outlook-sähköpostiohjelmistoa tai useampaa Office Suiten ohjelmistoa tarpeidesi mukaan.
+OVH tarjoaa Outlook-lisenssejä [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager){.external} sekä Office 365 -lisenssejä sivulla [https://www.ovh-hosting.fi/office-365/](https://www.ovh-hosting.fi/office-365/){.external}. Suosittelemme jompaakumpaa näistä ratkaisuista, mikäli haluat hyödyntää Outlook-sähköpostiohjelmistoa tai useampaa Office Suiten ohjelmistoa tarpeidesi mukaan.
 
 > [!primary]
 >

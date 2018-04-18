@@ -15,7 +15,7 @@ Huomaa, että tulet törmäämään myös termiin KVM (Keyboard Video and Mouse)
 
 ## Edellytykset
 
-- Olet kirjautuneena [hallintapaneeliin](https://www.ovh.com/auth) osiossa `Dedikoidut`{.action}, sitten `Dedikoidut palvelimet`{.action}.
+- Olet kirjautuneena [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager) osiossa `Dedikoidut`{.action}, sitten `Dedikoidut palvelimet`{.action}.
 
 ## Käytännössä
 

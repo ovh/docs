@@ -15,7 +15,7 @@ Konzole KVM umožňuje přímé připojení k Vašemu VPS, bez nutnosti použit�
 
 ## Prerekvizity
 
-- Přihlášení do [Zákaznického prostoru OVH](https://www.ovh.com/auth).
+- Přihlášení do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager).
 
 ## Postup
 
