@@ -6,7 +6,7 @@ section: Aluksi
 order: 1
 ---
 
-**Päivitetty 19.12.2017**
+**Päivitetty 18.04.2018**
  
 ## Tavoite
 
@@ -23,7 +23,7 @@ Yksityinen virtuaalipalvelin (VPS eli Virtual Private Server) on virtualisoitu d
 
 ## Edellytykset
 
-- Olet varannut VPS-tuotteesi OVH:n sivuilta: <https://www.ovh-hosting.fi/vps/>
+- Olet varannut VPS-tuotteesi [OVH:n sivuilta](https://www.ovh-hosting.fi/vps/){.external}
 - Olet saanut asennuksen jälkeen käyttäjätunnuksesi sisältävän sähköpostiviestin (vahvistettu alkuperäisen tilauksesi yhteydessä).
 
 
@@ -72,9 +72,6 @@ Täällä voit lisäksi tilata lisenssejä (oikealla oleva painike `Tilaa`{.acti
 > 
 
 Hallintapaneelissa edistymispalkki kuvaa uudelleenasennuksen etenemistä. Se voi kestää jopa 30 minuuttia.
-
-![Uudelleenasennuksen eteneminen](images/reinstall_task.png){.thumbnail}
-
 
 ### VPS-palvelimesi tietoturva
 

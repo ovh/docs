@@ -6,7 +6,7 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 2018/01/23**
+**Last updated 2018/04/18**
  
 ## Objective
 
@@ -23,7 +23,7 @@ A virtual private server (VPS) is a virtualized dedicated server. Unlike a web h
 
 ## Requirements
 
-- You must have reserved your VPS on the OVH website: <https://www.ovh.com/ca/en/vps/>.
+- You must have reserved your VPS on the [OVH website](https://www.ovh.com/ca/en/vps/){.external}.
 - You must have received the email with your access ID after the installation (validated during the order).
 
 
@@ -71,16 +71,14 @@ A window will open, and you will need to choose:
 In this section, you can also order licenses (via the `Order`{.action} button on the right) or add your own SPLA Windows or SPLA SQL server license (`Add an SPLA license`{.action} button on the right).
 > 
 
-A progress bar will appear in your customer control panel, for the reinstallation - please note that it can take up to 30 minutes:
-
-![Installation progress](images/reinstall_task.png){.thumbnail}
+A progress bar will appear in your customer control panel, for the reinstallation - please note that it can take up to 30 minutes.
 
 
 ### Securing your VPS
 
 As explained in the “Objective” section of this guide, you are the administrator of your VPS. As such, you are responsible for your data and its security.
 
-Please refer to the guide on [Securing a VPS](https://docs.ovh.com/ca/en//vps/tips-for-securing-a-vps/){.external} if you wish to get some basic knowledge.
+Please refer to the guide on [Securing a VPS](https://docs.ovh.com/ca/en/vps/tips-for-securing-a-vps/){.external} if you wish to get some basic knowledge.
 
 
 ### Securing a domain with an SSL certificate

@@ -6,7 +6,7 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 3/01/2018**
+**Last updated 18/04/2018**
  
 ## Objective
 
@@ -23,7 +23,7 @@ A virtual private server (VPS) is a virtualised dedicated server. Unlike web hos
 
 ## Requirements
 
-- You need to have reserved your VPS on the OVH website: <https://www.ovh.com.au/vps/>.
+- You need to have reserved your VPS on the [OVH website](https://www.ovh.com.au/vps/){.external}.
 - You need to have received the email with your access ID after the installation (validated during your order).
 
 
@@ -71,9 +71,7 @@ A window will open, and you will be asked to choose:
 In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Add an SPLA licence`{.action} button on the right).
 > 
 
-A progress bar will appear in your Control Panel, for the reinstallation - please note that this can take up to 30 minutes:
-
-![Reinstallation progress](images/reinstall_task.png){.thumbnail}
+A progress bar will appear in your Control Panel, for the reinstallation - please note that this can take up to 30 minutes.
 
 
 ### Securing your VPS

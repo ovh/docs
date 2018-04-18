@@ -6,7 +6,7 @@ section: Eerste
 order: 1
 ---
 
-**Laatste update 22-01-2018**
+**Laatste update 18-04-2018**
  
 ## Introductie
 
@@ -23,7 +23,7 @@ Een virtual private server (VPS) is een dedicated virtual server. In tegenstelli
 
 ## Vereisten
 
-- U moet uw VPS gereserveerd hebben op de OVH-website: <https://www.ovh.nl/vps/>. 
+- U moet uw VPS gereserveerd hebben op de [OVH-website](https://www.ovh.nl/vps/){.external}.
 - U moet de e-mail met uw ID hebben ontvangen na de installatie (gevalideerd tijdens uw bestelling).
 
 
@@ -70,9 +70,7 @@ Er opent zich een venster waar u het volgende kunt kiezen:
 > Sommige distributies zoals Plesk of Windows vereisen vooraf een licentie die u, of bij OVH, of bij een andere leverancier kunt aanschaffen. Vervolgens moet u het handmatig, of via uw Control Panel integreren. U kunt uw licenties beheren in `Dedicated`{.action} vervolgens `Licenties`{.action}. Op deze plek kunt u ook licenties bestellen (knop rechts `Bestellen`{.action}) of uw eigen Windows SPLA of SQL SPLA Server licentie (knop rechts `Een SPLA licentie toevoegen`{.action}).
 > 
 
-Er verschijnt een voortgangsbalk in uw Control Panel, die de voortgang van de herinstallatie aangeeft, dit kan 30 minuten in beslag nemen:
-
-![Voortgang van de herinstallatie](images/reinstall_task.png){.thumbnail}
+Er verschijnt een voortgangsbalk in uw Control Panel, die de voortgang van de herinstallatie aangeeft, dit kan 30 minuten in beslag nemen.
 
 
 ### Beveilig uw VPS

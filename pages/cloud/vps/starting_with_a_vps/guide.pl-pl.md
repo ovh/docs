@@ -6,7 +6,7 @@ section: Pierwsze kroki
 order: 1
 ---
 
-**Ostatnia aktualizacja dnia 2018-01-12**
+**Ostatnia aktualizacja dnia 2018-04-18**
  
 ## Wprowadzenie
 
@@ -21,7 +21,7 @@ Wirtualny serwer prywatny (VPS, Virtual Private Server) to inaczej zwirtualizowa
 
 ## Wymagania początkowe
 
-- Zakupienie serwera VPS na stronie OVH: <https://www.ovh.pl/vps/>.
+- Zakupienie serwera VPS na [stronie OVH](https://www.ovh.pl/vps/){.external}.
 - Otrzymanie po instalacji wiadomości e-mail (po weryfikacji i zrealizowaniu zamówienia) zawierającej dane dostępowe.
 
 ## W praktyce
@@ -66,9 +66,7 @@ Otworzy się okienko, w którym należy wybrać:
 > W tym miejscu możesz także zamawiać licencje (przycisk po prawej `Zamów`{.action}) lub dodać własną licencję SPLA Windows lub SPLA SQL Server (przycisk po prawej `Dodaj licencję SPLA`{.action}).
 > 
 
-W Panelu klienta wyświetli się pasek postępu informujący o postępie reinstalacji, która może trwać do 30 minut:
-
-![Postęp reinstalacji](images/reinstall_task.png){.thumbnail}
+W Panelu klienta wyświetli się pasek postępu informujący o postępie reinstalacji, która może trwać do 30 minut.
 
 ### Zadbaj o bezpieczeństwo swojego serwera VPS
 
@@ -88,4 +86,4 @@ Jeśli chcesz tego dokonać w sposób bardziej zautomatyzowany, OVH oferuje [SSL
 
 [Wprowadzenie do protokołów SSH](https://docs.ovh.com/pl/dedicated/ssh-wprowadzenie/){.external}
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

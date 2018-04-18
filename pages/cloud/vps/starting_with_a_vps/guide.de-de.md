@@ -6,7 +6,7 @@ section: Erste Schritte
 order: 1
 ---
 
-**Stand 22.01.2018**
+**Stand 18.04.2018**
  
 ## Einleitung
 
@@ -23,7 +23,7 @@ Ein Virtual Private Server oder VPS ist ein virtualisierter Dedicated Server. Im
 
 ## Voraussetzungen
 
-- Sie haben einen VPS aus dem Angebot der OVH Website gebucht: <https://www.ovh.de/vps/>.
+- Sie haben einen VPS aus dem Angebot der [OVH Website](https://www.ovh.de/vps/){.external} gebucht.
 - Sie haben nach der Installation (Betriebssystem wird bei der Bestellung ausgewählt) eine E-Mail mit Ihren Zugangsdaten erhalten.
 
 
@@ -71,16 +71,14 @@ Es wird ein Fenster geöffnet, in dem Sie Folgendes auswählen:
 > Auf dieser Seite können Sie außerdem Lizenzen bestellen (Button rechts `Bestellen`{.action}) oder Ihre eigene Windows- oder SQL-Server-SPLA-Lizenz hinzufügen (Button rechts `Eine SPLA-Lizenz hinzufügen`{.action}).
 > 
 
-In Ihrem Kundencenter  wird ein Ladebalken eingeblendet, der Ihnen den Fortschritt der Neuinstallation anzeigt. Diese kann bis zu 30 Minuten dauern:
-
-![Fortschritt der Neuinstallation](images/reinstall_task.png){.thumbnail}
+In Ihrem Kundencenter  wird ein Ladebalken eingeblendet, der Ihnen den Fortschritt der Neuinstallation anzeigt. Diese kann bis zu 30 Minuten dauern
 
 
 ### Sicherheit Ihres VPS
 
 Wie im Abschnitt „Einleitung" In dieser Anleitung finden Sie einige Anhaltspunkte zur Verwaltung Ihres neuen und frisch installierten VPS. Dadurch sind Sie allein für Ihre Daten und deren Sicherheit verantwortlich. 
 
-Detaillierte Informationen zu diesem Thema finden Sie in unserer [Anleitung zur VPS Sicherheit](https://docs.ovh.com/de/vps/vps-sicherheit/).
+Detaillierte Informationen zu diesem Thema finden Sie in unserer [Anleitung zur VPS Sicherheit](https://docs.ovh.com/de/vps/vps-sicherheit/){.external}.
 
 
 ### Domain mit einem SSL-Zertifikat sichern
@@ -94,6 +92,6 @@ Sie können aber auch die automatische Lösung von OVH nutzen: [SSL Gateway](htt
 
 ## Weiterführende Informationen
 
-[SSH Einführung](https://docs.ovh.com/gb/en/dedicated/ssh-introduction/){.external}.
+[SSH Einführung](https://docs.ovh.com/de/dedicated/ssh-einfuehrung/){.external}.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

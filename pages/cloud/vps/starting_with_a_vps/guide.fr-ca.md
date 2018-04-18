@@ -6,7 +6,7 @@ section: Premiers pas
 order: 1
 ---
 
-**Dernière mise à jour le 25/01/2018**
+**Dernière mise à jour le 18/04/2018**
  
 ## Objectif
 
@@ -23,7 +23,7 @@ Un serveur privé virtuel (VPS, pour Virtual Private Server) est un serveur déd
 
 ## Prérequis
 
-- Avoir réservé votre VPS sur le site OVH : <https://www.ovh.com/ca/fr/vps/>.
+- Avoir réservé votre VPS sur le [site OVH](https://www.ovh.com/ca/fr/vps/){.external}.
 - Avoir reçu le courriel après l'installation (validée lors de la commande initiale) avec vos accès.
 
 
@@ -71,10 +71,7 @@ Une fenêtre s'ouvre et vous aurez alors à choisir :
 À cet endroit, vous pouvez également commander des licences (bouton à droite `Commander`{.action}) ou ajouter votre propre licence SPLA Windows ou SPLA SQL Server (bouton à droite `Ajouter une licence SPLA`{.action}).
 > 
 
-Dans votre espace client, une barre de progression s'affichera, vous informant de l'avancée de la réinstallation, celle-ci pouvant prendre jusqu'à 30 minutes :
-
-![Progression de la réinstallation](images/reinstall_task.png){.thumbnail}
-
+Dans votre espace client, une barre de progression s'affichera, vous informant de l'avancée de la réinstallation, celle-ci pouvant prendre jusqu'à 30 minutes.
 
 ### Sécuriser votre VPS
 
@@ -93,6 +90,6 @@ De manière plus automatique, OVH vous propose le [SSL Gateway](https://www.ovh.
 
 ## Aller plus loin
 
-[Introduction au SSH](https://docs.ovh.com/fr/dedicated/ssh-introduction/){.external}
+[Introduction au SSH](https://docs.ovh.com/ca/fr/dedicated/ssh-introduction/){.external}
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
