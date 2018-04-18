@@ -47,6 +47,7 @@ Syötä nyt pyydetyt tiedot:
 |Lähtevän postin palvelin|Syötä palvelin “pro1.mail.ovh.net:587”.|
 
 Varmista, että seuraavat ruudut on rastitettu:
+
 - “Lähtevän postin palvelin vaatii tunnistautumisen”
 - “Käytä sähköpostin lähetykseen samaa käyttäjänimeä ja salasanaa”
 - “Vaadi SSL-protokollaa saapuvalle postille”
