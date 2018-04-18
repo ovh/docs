@@ -6,7 +6,7 @@ section: Primeiros passos
 order: 1
 ---
 
-**Última atualização: 17/03/2018**
+**Última atualização: 18/04/2018**
  
 ## Sumário
 
@@ -23,7 +23,7 @@ Um VPS (Virtual Private Server) é um servidor dedicado virtual. Ao contrário d
 
 ## Requisitos
 
-- Ter contratado um VPS OVH: <https://www.ovh.pt/vps/>.
+- Ter contratado um [VPS OVH](https://www.ovh.pt/vps/){.external}.
 - Ter recebido um e-mail depois da instalação com os dados de utilizador.
 
 
@@ -66,10 +66,7 @@ Depois, surge uma janela onde poderá escolher:
 Nesta secção, pode adquirir licenças (clicando no botão à direita «Ações» e em `Encomendar`{.action}), ou adicionar a sua licença SPLA Windows ou SPLA SQL Server (clicando no botão à direita «Ações» e em `Adicionar uma licença SPLA`{.action}).
 > 
 
-Durante a instalação, irá surgir uma barra de progresso. Esta indica o andamento do processo. A reinstalação pode demorar até 30 minutos:
-
-![Progresso da reinstalação](images/reinstall_task.png){.thumbnail}
-
+Durante a instalação, irá surgir uma barra de progresso. Esta indica o andamento do processo. A reinstalação pode demorar até 30 minutos.
 
 ### Como proteger o VPS
 

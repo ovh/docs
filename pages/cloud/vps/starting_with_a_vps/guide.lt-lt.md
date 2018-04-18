@@ -6,7 +6,7 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 03rd January 2018**
+**Last updated 18th April 2018**
  
 ## Objective
 
@@ -23,7 +23,7 @@ A virtual private server (VPS) is a virtualised dedicated server. Unlike web hos
 
 ## Requirements
 
-- You need to have reserved your VPS on the OVH website: <https://www.ovh.ie/vps/>.
+- You need to have reserved your VPS on the [OVH website](https://www.ovh.ie/vps/).
 - You need to have received the email with your access ID after the installation (validated during your order).
 
 
@@ -71,16 +71,14 @@ A window will open, and you will be asked to choose:
 In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Add an SPLA licence`{.action} button on the right).
 > 
 
-A progress bar will appear in your Control Panel, for the reinstallation - please note that this can take up to 30 minutes:
-
-![Reinstallation progress](images/reinstall_task.png){.thumbnail}
+A progress bar will appear in your Control Panel, for the reinstallation - please note that this can take up to 30 minutes.
 
 
 ### Securing your VPS
 
 As explained in the “Objective” section of this guide, you are the administrator of your VPS. As such, you are responsible for your data and its security.
 
-Please refer to the guide on [Securing a VPS](https://docs.ovh.com/ie/en/vps/tips-for-securing-a-vps/) if you wish to get some basic tips.
+Please refer to the guide on [Securing a VPS](https://docs.ovh.com/lt/vps/tips-for-securing-a-vps/) if you wish to get some basic tips.
 
 
 ### Securing a domain with an SSL certificate
@@ -89,10 +87,10 @@ Once you have installed and secured your VPS, you may want to secure your domain
 
 You can install this SSL certificate yourself manually, directly on the VPS. Please refer to the official documentation that you have been using.
 
-For a more automated process, OVH also offers the [SSL Gateway](https://www.ovh.ie/ssl-gateway/). For more information, please refer to the [product page](https://www.ovh.ie/ssl-gateway/){.external} or [guide documents](https://docs.ovh.com/ie/en/ssl-gateway/){.external} on this solution.
+For a more automated process, OVH also offers the [SSL Gateway](https://www.ovh.lt/ssl-gateway/). For more information, please refer to the [product page](https://www.ovh.lt/ssl-gateway/){.external} or [guide documents](https://docs.ovh.com/lt/ssl-gateway/){.external} on this solution.
 
 ## Go further
 
-[Introduction to SSH](https://docs.ovh.com/ie/en/dedicated/ssh-introduction/){.external}
+[Introduction to SSH](https://docs.ovh.com/lt/dedicated/ssh-introduction/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -6,7 +6,7 @@ section: První kroky
 order: 1
 ---
 
-**Naposledy aktualizováno 17/01/2018**
+**Naposledy aktualizováno 18/04/2018**
  
 ## Cíl
 
@@ -70,16 +70,14 @@ Po kliknutí na tlačítko se otevře reinstalační nabídka. Vybírat budete z
 Zde je také možné licence objednávat (tlačítko `Objednat`{.action} v pravé části obrazovky) nebo přidávat vlastní licence Windows SPLA nebo SPLA SQL Server (tlačítko `Přidat licenci SPLA`{.action} v pravé části obrazovky).
 > 
 
-Jakmile potvrdíte svůj požadavek, budete moci v základním rozhraní pro správu svého VPS sledovat celkový průběh reinstalačního procesu, který může trvat až 30 minut:
-
-![Postup reinstalace](images/reinstall_task.png){.thumbnail}
+Jakmile potvrdíte svůj požadavek, budete moci v základním rozhraní pro správu svého VPS sledovat celkový průběh reinstalačního procesu, který může trvat až 30 minut.
 
 
 ### Zabezpečení VPS
 
 Jak již bylo řečeno v první části této příručky, jakožto pronajímatel VPS jste zároveň i jeho administrátorem. Z toho důvodu nesete plnou odpovědnost za uložená data a jejich bezpečnost.
 
-Pokud si nevíte rady se základními postupy pro zabezpečení svého VPS, podívejte se do následující příručky: [Zabezpečení VPS](https://docs.ovh.com/fr/vps/conseils-securisation-vps/){.external}.
+Pokud si nevíte rady se základními postupy pro zabezpečení svého VPS, podívejte se do následující příručky: [Zabezpečení VPS](https://docs.ovh.com/cz/cs/vps/tipy-pro-zabezpeceni-vps/){.external}.
 
 
 ### Zabezpečení domény s certifikátem SSL
@@ -92,6 +90,6 @@ OVH Vám zároveň nabízí možnost automatické iplementace SSL certifikátu, 
 
 ## Kam dál
 
-[Úvod do SSH](https://docs.ovh.com/fr/dedicated/ssh-introduction/){.external}
+[Úvod do SSH](https://docs.ovh.com/cz/cs/dedicated/ssh-uvod/){.external}
 
 Přidejte se k naší uživatelské komunitě na <https://community.ovh.com/en/>.

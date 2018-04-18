@@ -6,7 +6,7 @@ section: Per iniziare
 order: 1
 ---
 
-**Ultimo aggiornamento: 19/02/2018**
+**Ultimo aggiornamento: 18/04/2018**
  
 ## Obiettivo
 
@@ -23,7 +23,7 @@ Un Virtual Private Server (VPS) è un server dedicato virtualizzato. A differenz
 
 ## Prerequisiti
 
-- Aver ordinato un VPS sul sito OVH: <https://www.ovh.it/vps/>
+- Aver ordinato un VPS sul [sito OVH](https://www.ovh.it/vps/){.external}
 - Avere a disposizione le credenziali di accesso ricevute via email dopo l'installazione
 
 

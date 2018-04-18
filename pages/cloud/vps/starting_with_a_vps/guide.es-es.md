@@ -6,7 +6,7 @@ section: Primeros pasos
 order: 1
 ---
 
-**Última actualización: 01/02/2018**
+**Última actualización: 18/04/2018**
  
 ## Objetivo
 
@@ -75,9 +75,6 @@ Se abrirá una ventana donde deberá elegir:
 > 
 
 En el área de cliente se mostrará una barra de progreso indicando el estado de la tarea de reinstalación, que puede tardar hasta 30 minutos.
-
-![Progreso de la reinstalación](images/reinstall_task.png){.thumbnail}
-
 
 ### Proteger el VPS
 
