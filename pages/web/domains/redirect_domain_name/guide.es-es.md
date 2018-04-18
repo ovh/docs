@@ -30,7 +30,7 @@ Hay varias maneras de redirigir un dominio:
 
 - **Desde el área de cliente de OVH**: Puede utilizar el asistente de configuración para realizar la redirección.
 
-- **Mediante un archivo (es necesario tener conocimientos de programación)**: Usted mismo puede crear la redirección en un archivo (normalmente, un archivo *.htaccess*).
+- **Mediante un archivo (es necesario tener conocimientos de programación)**: Usted mismo puede crear la redirección en un archivo (normalmente, un archivo **.htaccess**).
 
 Tenga en cuenta que la redirección puede afectar al posicionamiento de su sitio web en los motores de búsqueda, por lo que deberá prestar especial atención a las acciones que realice. Si lo considera necesario, puede contactar con un experto en posicionamiento web.
 
