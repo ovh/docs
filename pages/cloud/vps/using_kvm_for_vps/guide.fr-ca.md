@@ -5,7 +5,7 @@ slug: utilisation-kvm-sur-vps
 section: Premiers pas
 ---
 
-**Dernière mise à jour le 25/01/2018**
+**Dernière mise à jour le 18/04/2018**
 
 ## Objectif
 
@@ -21,7 +21,7 @@ La console KVM permet une connexion directe à votre VPS sans avoir à utiliser 
 
 ### Connexion au KVM via l'espace client
 
-Une fois connecté à votre espace client, il vous suffit de vous rendre sur la page de gestion de votre VPS. Vous trouverez sur la droite un bouton `KVM`{.action} :
+Une fois connecté à votre espace client, il vous suffit de vous rendre sur la page de gestion de votre VPS. Vous trouverez un bouton `KVM`{.action} :
 
 ![Sélectionner le bouton KVM](images/activating_kvm_manager.png){.thumbnail}
 

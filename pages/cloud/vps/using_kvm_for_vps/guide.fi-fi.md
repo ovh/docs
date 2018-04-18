@@ -5,7 +5,7 @@ slug: kvm-kaytto-vps-palvelimella
 section: Aluksi
 ---
 
-**Päivitetty 27.12.2017**
+**Päivitetty 18.04.2018**
 
 ## Tavoite
 

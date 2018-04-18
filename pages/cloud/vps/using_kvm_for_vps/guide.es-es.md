@@ -5,7 +5,7 @@ slug: utilizar_el_kvm_para_los_vps
 section: Primeros pasos
 ---
 
-**Última actualización: 12/02/2018**
+**Última actualización: 18/04/2018**
 
 ## Objetivo
 
@@ -21,7 +21,7 @@ La consola KVM permite establecer una conexión directa con un VPS sin necesidad
 
 ### Conexión al KVM desde el área de cliente
 
-Una vez conectado al área de cliente, vaya a la sección  `Dedicado`{.action}. En la columna izquierda, haga clic en `VPS`{.action} y seleccione el VPS. Haga clic en el botón `KVM`{.action} que aparece a la derecha.
+Una vez conectado al área de cliente, vaya a la sección  `Cloud`{.action}. En la columna izquierda, haga clic en `Servidores`{.action} y seleccione el VPS. Haga clic en el botón `KVM`{.action} que aparece.
 
 ![Hacer clic en KVM](images/activating_kvm_manager.png){.thumbnail}
 
