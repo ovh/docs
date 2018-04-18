@@ -65,13 +65,14 @@ nano /etc/ssh/sshd_config
 > The command `nano` is given as an example; you can use the `vim` command, or any other command that allows you to edit the sshd_config file.
 >
 
-You then need to visualise the following line:
+You then need to find the following line:
 
 ```sh
-# What ports, IPs and protocols we listen for Port 22
+# What ports, IPs and protocols we listen for
+Port 22
 ```
 
-Replace number 22 with the port number of your choice. **Please do not enter a port number already used on your system**. Save, and exit the configuration file.
+Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. Save, and exit the configuration file.
 
 You then need to restart your service:
 
@@ -193,7 +194,7 @@ It is recommended that you create and adjust rules on this firewall, to fit your
 
 OVH solutions include a firewall at the entrance to the infrastructure, called the Firewall Network. Its implementation and configuration allow protocols to be blocked before they even arrive on your server.
 
-We also have a guide on [configuring this firewall network](https://docs.ovh.com/sg/en/dedicated/firewall-network/){.external}.
+We also have a guide on [configuring this firewall network](../../dedicated/firewall-network/){.ref}.
 
 ### Backing up your system and your data
 
@@ -209,6 +210,6 @@ You will find all information on our VPS backup solutions here: <https://www.ovh
 
 ## Go further
 
-[Firewall Network Guide](https://docs.ovh.com/sg/en/dedicated/firewall-network/)
+[Firewall Network Guide](../../dedicated/firewall-network/){.ref}
 
 Join our user community on <https://community.ovh.com/en/>.
