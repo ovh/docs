@@ -5,6 +5,7 @@ excerpt: Find here how to check the frequency of your CPU on the MC-64 OC server
 section: Server Management
 ---
 
+**Last updated 18th April 2018**
 
 ## Requirements
 The MC-64 OC range (2018) has an i7-7700k processor that has its base frequency at 4.2 Ghz, or 4.5 Ghz in turbo.
