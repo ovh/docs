@@ -16,7 +16,7 @@ Die KVM-Konsole ermöglicht eine direkte Verbindung zu Ihrem VPS, ohne externe S
 
 ## Voraussetzungen
 
-- Sie müssen im [OVH Kundencenter](https://www.ovh.com/auth){.external} eingeloggt sein.
+- Sie müssen im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt sein.
 
 ## Beschreibung
 

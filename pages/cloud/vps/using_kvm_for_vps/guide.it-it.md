@@ -15,7 +15,7 @@ La console KVM consente di stabilire una connessione diretta al tuo VPS senza ut
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Procedura
 

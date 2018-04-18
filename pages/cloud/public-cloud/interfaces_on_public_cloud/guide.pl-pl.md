@@ -11,7 +11,7 @@ section: Pierwsze kroki
 
 Usługa [Public Cloud](https://www.ovh.pl/public-cloud/){.external} ze względu na swoją specyfikę może być zarządzana za pośrednictwem różnych interfejsów użytkownika.
 
-Pierwszymi, do których uzyskujesz dostęp jako klient OVH, jest [Panel klienta](https://www.ovh.com/auth){.external} oraz [API OVH](https://api.ovh.com/){.external}.
+Pierwszymi, do których uzyskujesz dostęp jako klient OVH, jest [Panel klienta](https://www.ovh.com/auth/?action=gotomanager){.external} oraz [API OVH](https://api.ovh.com/){.external}.
 
 Panel klienta służy do zarządzania zakupionymi usługami, a także zarządzania kontem klienta OVH, w tym płatnościami, fakturami oraz własnością usług . Interfejs ten korzysta z API OVH, które również udostępniamy Klientom. 
 API OVH, może posłużyć do budowania własnych skryptów i aplikacji, aby w pełny i zautomatyzowany sposób zarządzać usługami według własnych potrzeb. Niektóre, zaawansowane funkcje są obecne tylko w OVH API.

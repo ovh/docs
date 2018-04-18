@@ -15,7 +15,7 @@ La console IPMI (Intelligent Platform Management Interface) permet d'établir un
 
 ## Prérequis
 
-- Être connecté à votre [espace client](https://www.ovh.com/auth) dans la partie `Dédié`{.action} puis `Serveurs Dédiés`{.action}.
+- Être connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager) dans la partie `Dédié`{.action} puis `Serveurs Dédiés`{.action}.
 
 ## En pratique
 

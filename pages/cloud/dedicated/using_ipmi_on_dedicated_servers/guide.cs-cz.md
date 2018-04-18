@@ -15,7 +15,7 @@ Mějte prosím na paměti, že toto řešení je někdy také označováno jako 
 
 ## Prerekvizity
 
-- Přihlášení do [Zákaznického prostoru OVH](https://www.ovh.com/auth){.external}, sekce `Dedicated`{.action}, záložka `Dedikované servery`{.action}.
+- Přihlášení do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sekce `Dedicated`{.action}, záložka `Dedikované servery`{.action}.
 
 ## Postup
 

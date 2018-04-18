@@ -15,7 +15,7 @@ Panel klienta oferuje liczne opcje zarządzania ustawieniami infrastruktury Priv
 
 ## Wymagania początkowe
 
-- Połączenie z [Panelem klienta OVH](https://www.ovh.com/auth){.external} w części `Dedykowane`{.action}, a następnie `Private Cloud`{.action}.
+- Połączenie z [Panelem klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external} w części `Dedykowane`{.action}, a następnie `Private Cloud`{.action}.
 - Posiadanie produktu [Private Cloud](https://www.ovh.pl/private-cloud/){.external}.
 
 
@@ -23,7 +23,7 @@ Panel klienta oferuje liczne opcje zarządzania ustawieniami infrastruktury Priv
 
 ### Strona główna
 
-Przechodząc w [Panelu klienta](https://www.ovh.com/auth){.external} do części `Dedykowane`{.action}, a następnie `Private Cloud`{.action} masz widok ogólny swojej usługi Private Cloud:
+Przechodząc w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} do części `Dedykowane`{.action}, a następnie `Private Cloud`{.action} masz widok ogólny swojej usługi Private Cloud:
 
 ![Informacje ogólne](images/manager_general.png){.thumbnail}
 
