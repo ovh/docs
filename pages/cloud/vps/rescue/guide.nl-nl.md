@@ -27,11 +27,11 @@ Ontdek hoe u uw VPS in de Reddingsmodus kunt opstarten.
 
 ## Instructies
 
-Nadat u bent ingelogd op uw Control Panel, gaat u naar het gedeelte `Dedicated`{.action} en kiest u uw VPS in de linkerkolom:
+Nadat u bent ingelogd op uw Control Panel, gaat u naar het gedeelte `Cloud`{.action} en kiest u uw VPS in de linkerkolom:
 
 ![VPS in uw Control Panel](images/vps_rescue1.png){.thumbnail}
 
-Klik in het hoofdvenster van uw VPS met de rechtermuisknop op `Reddingsmodus`{.action} en bevestig de herstart:
+Klik in het hoofdvenster van uw VPS met de rechtermuisknop op `Reboot in de rescue modus`{.action} en bevestig de herstart:
 
 ![Validatie van de Reddingsmodus](images/vps_rescue2.png){.thumbnail}
 
@@ -49,6 +49,6 @@ U kunt nu verbinding maken met de Reddingsmodus van uw VPS via SSH. Nadat uw con
 
 ## Ga verder
 
-[Introductie tot SSH](https://docs.ovh.com/fr/dedicated/ssh-introduction/)
+[Introductie tot SSH](https://docs.ovh.com/nl/dedicated/ssh-introductie/){.external}
 
-Ga in gesprek met onze communitygebruikers via <https://community.ovh.com> .
+Ga in gesprek met onze communitygebruikers via <https://community.ovh.com/en/> .

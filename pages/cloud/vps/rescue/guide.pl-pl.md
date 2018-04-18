@@ -5,7 +5,7 @@ excerpt: Sprawdź, jak włączyć serwer VPS w trybie Rescue
 section: Diagnostyka i tryb Rescue
 ---
 
-**Ostatnia aktualizacja dnia 2018-02-06**
+**Ostatnia aktualizacja dnia 2018-04-18**
 
 ## Wprowadzenie
 Tryb Rescue pozwala na uruchomienie serwera w niezależnej konfiguracji OVH. Dysk może więc zostać zamontowany jako niezależna partycja.
@@ -20,12 +20,13 @@ Tryb ten pozwala również na poprawianie błędów, które spowodowały odcięc
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## W praktyce
-Aby uruchomić serwer w trybie Rescue, należy zalogować się do **Panelu klienta** i przejść do sekcji **Dedicated**. W kolumnie z lewej strony wybierz swój VPS:
+
+Aby uruchomić serwer w trybie Rescue, należy zalogować się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i przejść do sekcji `Cloud`{.action}. W kolumnie z lewej strony wybierz swój VPS:
 
 
 ![horizon](images/vps_rescue1.png){.thumbnail}
 
-Na ekranie głównym z prawej strony odnajdziesz przycisk `Rescue Mode`{.action}. Zatwierdź **restart** serwera VPS.
+Na ekranie głównym z prawej strony odnajdziesz przycisk `Restartuj do trybu rescue`{.action}. Zatwierdź **restart** serwera VPS.
 
 ![horizon](images/vps_rescue2.png){.thumbnail}
 

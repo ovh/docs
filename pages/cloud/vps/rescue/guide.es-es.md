@@ -5,7 +5,7 @@ excerpt: Cómo reiniciar un VPS en modo de rescate.
 section: Diagnóstico y modo de rescate
 ---
 
-**Última actualización: 15/12/2017**
+**Última actualización: 18/04/2018**
 
 ## Objetivo
 
@@ -24,16 +24,16 @@ Esta gua explica cómo reiniciar un VPS en modo de rescate.
 
 ## Requisitos
 
-- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager).
+- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Procedimiento
 
-Para reiniciar el VPS en modo de rescate, conéctese al área de cliente y acceda a la sección `Dedicado`{.action}. Seleccione el VPS en la columna izquierda.
+Para reiniciar el VPS en modo de rescate, conéctese al área de cliente y acceda a la sección `Cloud`{.action}. Seleccione el VPS en la columna izquierda.
 
 ![Sección VPS en el área de cliente](images/vps_rescue1.png){.thumbnail}
 
-En la pantalla principal del VPS, haga clic en el botón `Modo de rescate`{.action}, situado en el lado derecho de la pantalla, y acepte la confirmación de reinicio del VPS.
+En la pantalla principal del VPS, haga clic en el botón `Reiniciar en modo de rescate`{.action} y acepte la confirmación de reinicio del VPS.
 
 ![Confirmación de reinicio en modo de rescate](images/vps_rescue2.png){.thumbnail}
 
