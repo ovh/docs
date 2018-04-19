@@ -2,6 +2,7 @@
 title: Choix de la grappe de disque pour installer un systeme d’exploitation
 slug: install-hybrid
 excerpt: Decouvrez ici comment choisir une grappe de disque pour installer votre systeme d’exploitation
+section: Divers
 ---
 
 
