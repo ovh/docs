@@ -65,13 +65,14 @@ nano /etc/ssh/sshd_config
 > The command `nano` is given as an example; you can use the `vim` command, or any other command that allows you to edit the sshd_config file.
 >
 
-You then need to visualise the following line:
+You then need to find the following line:
 
 ```sh
-# What ports, IPs and protocols we listen for Port 22
+# What ports, IPs and protocols we listen for
+Port 22
 ```
 
-Replace number 22 with the port number of your choice. **Please do not enter a port number already used on your system**. Save, and exit the configuration file.
+Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. Save, and exit the configuration file.
 
 You then need to restart your service:
 
@@ -209,6 +210,6 @@ You will find all information on our VPS backup solutions here: <https://www.ovh
 
 ## Go further
 
-[Firewall Network Guide](https://docs.ovh.com/ie/en/dedicated/firewall-network/)
+[Firewall Network Guide](https://docs.ovh.com/ie/en/dedicated/firewall-network/){.external}
 
-Join our user community on <https://community.ovh.com/>.
+Join our user community on <https://community.ovh.com/en/>.
