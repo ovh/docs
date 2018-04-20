@@ -5,11 +5,13 @@ excerpt: Ajouter des IP fail-over à votre configuration
 section: Réseau & IP
 ---
 
-**Dernière mise à jour le 23/01/2018**
+**Dernière mise à jour le 20/04/2018**
 
 ## Objectif
 
 L'alias d'IP (IP aliasing en anglais) est une configuration spéciale du réseau de votre serveur dédié, qui vous permet d'associer plusieurs adresses IP sur une seule interface réseau.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s1qDqQ0p07Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 **Ce guide vous explique comment réaliser cet ajout.**
 
