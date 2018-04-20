@@ -25,7 +25,7 @@ Al instalar un sistema operativo Windows Server, es posible que la clave de acti
 
 ### Eliminar la clave anterior
 
-Cuando el sistema está en versión de prueba, se registra una clave por defecto. Para modificarla, abra el cuadro de diálogo **Ejecutar** (teclas Windows`+`R`).
+Cuando el sistema está en versión de prueba, se registra una clave por defecto. Para modificarla, abra el cuadro de diálogo **Ejecutar** (teclas `Windows`+`R`).
 
 ![Abrir el cuadro de diálogo Ejecutar](images/executer.png){.thumbnail}
 
