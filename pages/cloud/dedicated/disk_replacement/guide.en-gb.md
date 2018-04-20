@@ -1,7 +1,7 @@
 ---
 title: Disk replacement
 slug: disk-replacement
-excerpt: This guide explains you the steps to follow in case of a disk replacement.
+excerpt: This guide will show you the steps to follow if you require a disk replacement.
 section: Server Management
 ---
 
