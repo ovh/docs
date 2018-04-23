@@ -1,8 +1,8 @@
 ---
-title: Rozliczanie należności za usługę Public Cloud
+title: 'Rozliczanie należności za usługę Public Cloud'
 slug: analizowanie_platnosci_i_zarzadzanie_nimi
-excerpt: Zasady i modele naliczania opłat
-section: Pierwsze kroki
+excerpt: 'Zasady i modele naliczania opłat'
+section: 'Pierwsze kroki'
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-19**
@@ -105,9 +105,12 @@ Jeśli w ciągu kolejnych 7 dni kwota nie zostanie uregulowana, projekt i jego s
 ## Sprawdź również
 
 [Tworzenie i usuwanie projektów Public Cloud](https://docs.ovh.com/pl/public-cloud/tworzenie-usuwanie-projektow/){.external}
+
 [Tworzenie i usuwanie instancji w Panelu klienta](https://docs.ovh.com/pl/public-cloud/tworzenie_instancji_w_panelu_klienta_ovh/){.external}
+
 [Zmiana typu rozliczenia z godzinowego na miesięczne dla instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/zmiana-typu-rozliczenia/){.external}
+
 [Korzystanie z vouchera](https://docs.ovh.com/pl/public-cloud/korzystanie-z-vouchera/){.external}
 
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
