@@ -1,8 +1,8 @@
 ---
-title: Interruption de service
+title: 'Interruption de service'
 slug: interruption-de-service
 legacy_guide_number: '7962663'
-section: Diagnostic et dépannage
+section: 'Diagnostic et dépannage'
 ---
 
 ### Préambule {#préambule}
@@ -46,8 +46,7 @@ Tapez dans la barre d'adresse de votre navigateur l'adresse <http://192.168.1.25
 
 **Quelle(s) vérification(s) devez-vous effectuer ?**
 
--   ****Avez-vous été démarché ou avez-vous entrepris des démarches auprès d'un autre fournisseur d'accès internet ? Si oui, suivez le guide [Écrasement de ligne xDSL]({legacy}7962640).
--   Vérifiez votre desserte interne ([La desserte interne]({originalUrl}/display/CRXDSL/La+desserte+interne)) :
+-   Vérifiez votre desserte interne
 
     → Vérifie**z la propreté et l'état des câbles** et de vos prises téléphoniques (les fils ne doivent pas être écrasés/endommagés ou oxydés).
 
