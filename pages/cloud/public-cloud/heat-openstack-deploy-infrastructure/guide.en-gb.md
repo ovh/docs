@@ -35,6 +35,7 @@ We will help you get started using Heat, and the *stacks* that represent orchest
 The text below is an example of the sort of instructions we could send to Heat, expressed in English.
 
 “My application is composed of:
+
 - three [B2-15](https://www.ovh.co.uk/public-cloud/instances/prices/){.external} front-end web servers
 - two [C2-30](https://www.ovh.co.uk/public-cloud/instances/prices/){.external} database servers
 - two additional disks connected to the database servers
