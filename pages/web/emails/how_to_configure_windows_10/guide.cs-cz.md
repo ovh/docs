@@ -83,8 +83,8 @@ OVH nabízí webovou aplikaci, která umožňuje přístup k Vaší e-mailové a
  
 ## Kam dál
 
-[Konfigurace účtů služby E-mail Pro v aplikaci Pošta pro Windows](https://docs.ovh.com/cz/cs/emails-pro/konfigurace-posta-windows-10/){.external}
+[Konfigurace účtů služby E-mail Pro v aplikaci Pošta pro Windows](https://docs.ovh.com/cz/cs/emails-pro/konfigurace-posta-windows-10/){.external}.
 
-[Konfigurace účtů služby Exchange v aplikaci Pošta pro Windows](https://docs.ovh.com/cz/cs/microsoft-collaborative-solutions/konfigurace-posta-windows-10/){.external}
+[Konfigurace účtů služby Exchange v aplikaci Pošta pro Windows](https://docs.ovh.com/cz/cs/microsoft-collaborative-solutions/konfigurace-posta-windows-10/){.external}.
 
 Sdílejte své zkušenosti s uživatelskou komunitou na <https://community.ovh.com/en/>.
