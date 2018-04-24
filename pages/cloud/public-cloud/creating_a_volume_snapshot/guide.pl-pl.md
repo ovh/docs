@@ -1,8 +1,8 @@
 ---
-title: 'Snapshot wolumenu instancji Public Cloud'
+title: Snapshot wolumenu instancji Public Cloud
 slug: migawka-wolumenu
-excerpt: 'Dowiedz się, jak wykonać i usunąć migawkę (snapshot) wolumenu'
-section: 'Zarządzanie z Panelu klienta'
+excerpt: Dowiedz się, jak wykonać i usunąć migawkę (snapshot) wolumenu
+section: Zarządzanie w Panelu klienta OVH
 ---
 
 **Ostatnia aktualizacja dnia 2018-04-18**

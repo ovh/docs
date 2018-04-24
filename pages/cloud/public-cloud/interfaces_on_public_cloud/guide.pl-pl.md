@@ -3,6 +3,7 @@ title: Interfejsy zarządzania dostępne w Public Cloud
 slug: interfejsy-zarzadzania-public-cloud
 excerpt: Dowiedz się, jakimi narzędziami zarządzać usługami Public Cloud
 section: Pierwsze kroki
+oder: 4
 ---
 
 **Ostatnia aktualizacja dnia 2018-02-18**
