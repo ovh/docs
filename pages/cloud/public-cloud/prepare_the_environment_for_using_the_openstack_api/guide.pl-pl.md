@@ -1,7 +1,7 @@
 ---
 title: Przygotowanie środowiska API OpenStack
-slug: przygotowanie_srodowiska_dla_api_openstack
 excerpt: Dowiedz się, jak przygotować środowisko do zarządzania usługami Public Cloud z lini komend
+slug: przygotowanie_srodowiska_dla_api_openstack
 section: Zarządzanie w OpenStack CLI
 ---
 
