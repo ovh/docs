@@ -3,7 +3,7 @@ title: Konfiguracja grup zabezpieczeń
 slug: konfiguracja_grupy_zabezpieczen
 excerpt: Dostosowywanie reguł filtrowania dla ruchu sieciowego w interfejsie Horizon.
 legacy_guide_number: g1925
-section: Zarządzanie w interfejsie Horizon
+section: Zarządzanie w interfejsie Horizon
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-12**
