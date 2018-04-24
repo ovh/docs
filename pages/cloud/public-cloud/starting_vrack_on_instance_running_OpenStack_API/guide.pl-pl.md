@@ -2,7 +2,7 @@
 title: Dodanie instancji Public Cloud do usługi vRack przez API OpenStack
 slug: uruchomienie-vrack-openstack-api
 excerpt: Uruchomienie usługi vRack dla już działających instancji Public Cloud za pomocą API OpenStack
-section: Zarządzanie z OpenStack CLI
+section: Zarządzanie w OpenStack CLI
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-19**

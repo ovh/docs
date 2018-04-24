@@ -2,7 +2,7 @@
 title: Zarządzanie grupami zabezpieczeń w API OpenStack
 slug: zarzadzanie-grupami-zabezpieczen-api-openstack
 excerpt: Tworzenie i usuwanie zestawów reguł filtrowania IP
-section: Zarządzanie z OpenStack CLI
+section: Zarządzanie w OpenStack CLI
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-13**

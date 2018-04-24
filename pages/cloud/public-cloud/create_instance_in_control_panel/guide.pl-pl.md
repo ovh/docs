@@ -3,6 +3,7 @@ title: Tworzenie i usuwanie instancji w Panelu klienta
 excerpt: Zarządzanie instancjami
 slug: tworzenie_instancji_w_panelu_klienta_ovh
 section: Pierwsze kroki
+order: 3
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-02**

@@ -3,6 +3,7 @@ title: Tworzenie i usuwanie projektów Public Cloud
 slug: tworzenie-usuwanie-projektow
 excerpt: Pierwszy krok do budowania własnej infrastruktury Public Cloud.
 section: Pierwsze kroki
+order: 2
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-09**

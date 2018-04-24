@@ -1,8 +1,9 @@
 ---
-title: 'Rozliczanie należności za usługę Public Cloud'
+title: Rozliczanie należności za usługę Public Cloud
 slug: analizowanie_platnosci_i_zarzadzanie_nimi
-excerpt: 'Zasady i modele naliczania opłat'
-section: 'Pierwsze kroki'
+excerpt: Zasady i modele naliczania opłat
+section: Pierwsze kroki
+order: 5
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-19**

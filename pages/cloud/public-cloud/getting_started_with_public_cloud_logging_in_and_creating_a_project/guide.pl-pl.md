@@ -4,6 +4,7 @@ excerpt: 'Przewodnik ten wyjaśnia, jak utworzyć pierwszy projekt w usłudze Pu
 slug: pierwsze_kroki_z_public_cloud_logowanie_i_utworzenie_projektu
 legacy_guide_number: g2329
 section: Pierwsze kroki
+order: 1
 ---
 
 
