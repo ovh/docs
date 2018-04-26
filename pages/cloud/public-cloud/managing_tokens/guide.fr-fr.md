@@ -53,7 +53,7 @@ L'outil en ligne de commande cURL permet de construire des requêtes de toutes p
 ### Demande de creation d'un token
 
 ```python
-1. $ curl -X POST $OS_AUTH_URL/tokens -H "Content-Type: application/json" -d '{"auth": {"tenantName": "'$OS_TENANT_NAME'", "passwordCredentials": {"username": "'$OS_USERNAME'", "password": "'$OS_PASSWORD'"}}}' | python -mjson.tool
+curl -X POST $OS_AUTH_URL/tokens -H "Content-Type: application/json" -d '{"auth": {"tenantName": "'$OS_TENANT_NAME'", "passwordCredentials": {"username": "'$OS_USERNAME'", "password": "'$OS_PASSWORD'"}}}' | python -mjson.tool
 ```
 
 - -X POST : méthode HTTP utilisée pour soumettre des données
@@ -66,50 +66,50 @@ La réponse du serveur ressemble à ceci :
 
 
 ```json
-1. {
-2.     "access": {
-3.         "metadata": {
-4.             "is_admin": 0,
-5.             "roles": [
-6.                 "9fe...fd4"
-7.             ]
-8.         },
-9.         "serviceCatalog": [
-10.             [...]
-11.             {
-12.                 "endpoints": [
-13.                     {
-14.                         "adminURL": "https://image.compute.sbg1.cloud.ovh.net/",
-15.                         "internalURL": "http://127.0.0.1:8888/v1/AUTH_9ea...ff0",
-16.                         "publicURL": "https://storage.sbg1.cloud.ovh.net/v1/AUTH_9ea...ff0",
-17.                         "region": "SBG1"
-18.                     }
-19.                 ],
-20.                 "endpoints_links": [],
-21.                 "name": "swift",
-22.                 "type": "object-store"
-23.             },
-24. 
-25.             [...]
-26.         ],
-27.         "token": {
-28.             "audit_ids": [
-29.                 "Mka...cmTw"
-30.             ],
-31.             "expires": "2015-10-02T14:53:15Z",
-32.             "id": "a4331ec98754472032f031e18b16bd00",
-33.             "issued_at": "2015-10-01T14:53:15.072501",
-34.             "tenant": {
-35.                 "description": null,
-36.                 "enabled": true,
-37.                 "id": "9ea...ff0",
-38.                 "name": "361...868"
-39.             }
-40.         },
-41. 
-42.         [...]
-43.     }
-44. }
+ {
+     "access": {
+         "metadata": {
+             "is_admin": 0,
+             "roles": [
+             "9fe...fd4"
+             ]
+        },
+        "serviceCatalog": [
+             [...]
+             {
+                 "endpoints": [
+                     {
+                         "adminURL": "https://image.compute.sbg1.cloud.ovh.net/",
+                         "internalURL": "http://127.0.0.1:8888/v1/AUTH_9ea...ff0",
+                         "publicURL": "https://storage.sbg1.cloud.ovh.net/v1/AUTH_9ea...ff0",
+                         "region": "SBG1"
+                    }
+                 ],
+                 "endpoints_links": [],
+                 "name": "swift",
+                 "type": "object-store"
+             },
+ 
+             [...]
+         ],
+         "token": {
+            "audit_ids": [
+                 "Mka...cmTw"
+             ],
+             "expires": "2015-10-02T14:53:15Z",
+             "id": "a4331ec98754472032f031e18b16bd00",
+             "issued_at": "2015-10-01T14:53:15.072501",
+             "tenant": {
+                 "description": null,
+                 "enabled": true,
+                 "id": "9ea...ff0",
+                 "name": "361...868"
+             }
+         },
+ 
+         [...]
+    }
+}
 ```
 
 
@@ -120,14 +120,14 @@ Pour le endpoint publicURL, il faut rechercher dans la section "object-store" et
 
 
 ```bash
-$ export endpoint="https://storage.sbg1.cloud.ovh.net/v1/AUTH_9ea...ff0"
+export endpoint="https://storage.sbg1.cloud.ovh.net/v1/AUTH_9ea...ff0"
 ```
 
 C'est l'adresse du endpoint du service d'object storage qui va permettre de requêter les informations sur l'objet.
 
 
 ```bash
-$ export token=a4331ec98754472032f031e18b16bd00
+export token=a4331ec98754472032f031e18b16bd00
 ```
 
 Ce token est maintenant l'élément d'authentification qui sera utilisé pour la requête suivante.
@@ -136,7 +136,7 @@ Ce token est maintenant l'élément d'authentification qui sera utilisé pour la
 ### Requete sur l'objet avec les informations recuperees
 
 ```bash
-$ curl -X GET $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg -H "X-Auth-Token: $token" -I
+curl -X GET $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg -H "X-Auth-Token: $token" -I
 ```
 
 - -X GET : méthode HTTP GET
@@ -173,7 +173,7 @@ L'installation de la librairie se fait à l'aide de pip.
 
 
 ```python
-1. $ pip install python-openstacksdk
+pip install python-openstacksdk
 ```
 
 Après l'initialisation de la connexion, les tokens sont gérés en arrière plan.
@@ -194,30 +194,31 @@ for cont in conn.object_store.containers():
 
 
 ### Exemple en PHP
+
 L'installation de la librairie require php-curl et composer.
 
 
 ```bash
-$ apt-get install php5-curl
-$ curl -sS https://getcomposer.org/installer | php
-$ php composer.phar require rackspace/php-opencloud
+apt-get install php5-curl
+curl -sS https://getcomposer.org/installer | php
+php composer.phar require rackspace/php-opencloud
 ```
 
 L'utilisation fonctionne également avec un connecteur qui va gérer les tokens.
 
 
 ```php
-1. <?php
-2. require '/var/www/vendor/autoload.php';
-3. use OpenCloud\OpenStack;
-4. $client = new OpenStack("https://auth.cloud.ovh.net/v2.0", array(
-5.     'username' => "vvQ...VBW",
-6.     'password' => "jCr...RGj",
-7.     'tenantName' => "361...868",
-8. ));
-9. $objectStoreService = $client->objectStoreService('swift', "GRA1");
-10. $cont = $objectStoreService->getContainer("photos");
-11. $obj = $cont->getPartialObject('fullsize/ovh-summit-2014-backstage-DS.jpg');
-12. print_r($obj->getMetadata());
-13. ?>
+<?php
+require '/var/www/vendor/autoload.php';
+use OpenCloud\OpenStack;
+$client = new OpenStack("https://auth.cloud.ovh.net/v2.0", array(
+    'username' => "vvQ...VBW",
+    'password' => "jCr...RGj",
+    'tenantName' => "361...868",
+));
+$objectStoreService = $client->objectStoreService('swift', "GRA1");
+$cont = $objectStoreService->getContainer("photos");
+$obj = $cont->getPartialObject('fullsize/ovh-summit-2014-backstage-DS.jpg');
+print_r($obj->getMetadata());
+?>
 ```
