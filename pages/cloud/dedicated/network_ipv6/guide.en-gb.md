@@ -32,9 +32,9 @@ If you want to have more than one IPv6 configured on your server (or want to use
 >
 > For example:
 > 
-> The IPv6 address of the server is 2607:5300:60:62ac::/64. The IPv6_GATEWAY will therefore be 2607:5300:60:62FF:FF:FF:FF:FF.
-> The IPv6 address of the server is 2001:41D0:1:46e::/64. The IPv6_GATEWAY will therefore be 2001:41D0:1:4FF:FF:FF:FF:FF.
-
+> - The IPv6 address of the server is 2607:5300:60:62ac::/64. The IPv6_GATEWAY will therefore be 2607:5300:60:62FF:FF:FF:FF:FF.
+> - The IPv6 address of the server is 2001:41D0:1:46e::/64. The IPv6_GATEWAY will therefore be 2001:41D0:1:4FF:FF:FF:FF:FF.
+>
 
 ### Debian and Debian-based operating systems
 
@@ -62,7 +62,14 @@ Your server's network configuration file is located in `/etc/network/interfaces`
 Amend the file so that it looks like the example below. In this example, the network interface is called `eth0:0`. The interface on your server may differ.
 
 ```sh
-iface eth0:0 inet6 static address YOUR_IPv6 netmask 128 post-up /sbin/ip -f inet6 route add IPv6_GATEWAY dev eth0:0 post-up /sbin/ip -f inet6 route add default via IPv6_GATEWAY pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0:0 pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
+iface eth0:0 inet6 static 
+    address YOUR_IPv6 
+    netmask 128
+
+post-up /sbin/ip -f inet6 route add IPv6_GATEWAY dev eth0:0 
+post-up /sbin/ip -f inet6 route add default via IPv6_GATEWAY 
+pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0:0 
+pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
 ```
 
 #### Step 4: Save the file and reboot the server
@@ -159,7 +166,9 @@ Your server's network configuration file is located in `/etc/rc.conf`. Use the c
 Amend the file so that it looks like the example below. In this example, the network interface is called eth0. The interface on your server may differ.
 
 ```sh
-IPv6_activate_all_interfaces="YES" IPv6_defaultrouter="IPv6_GATEWAY" ifconfig_em0_IPv6="inet6 YOUR_IPv6 prefixlen 64"
+IPv6_activate_all_interfaces="YES" 
+IPv6_defaultrouter="IPv6_GATEWAY" 
+ifconfig_em0_IPv6="inet6 YOUR_IPv6 prefixlen 64"
 ```
 
 #### Step 4: Save the file and reboot the server
@@ -204,7 +213,7 @@ Select `Internet Protocol Version 6`{.action}, then click `Properties`{.action}.
 
 ![Properties](images/ipv6_properties.png){.thumbnail}
 
-Enter your IPv6 configuration (`IPv6 address` in 1 and `Default Gateway` in 2) and click `OK`{.action}.
+Enter your IPv6 configuration (`IPv6 address` and `Default Gateway`) and click `OK`{.action}.
 
 ![Properties](images/ipv6_configuration.png){.thumbnail}
 
