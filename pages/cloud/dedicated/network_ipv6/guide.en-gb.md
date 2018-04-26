@@ -5,96 +5,73 @@ excerpt: This guide explains how to configure IPv6 addresses on our infrastructu
 section: Network Management
 ---
 
+**Last updated 26th April 2018**
+
+## Objective
+
+Internet Protocol version 6 (IPv6) is the latest version of the Internet Protocol (IP). It is designed to address the long-anticipated address exhaustion of its predecessor, IPv4, by using 128-bits addresses instead of 32-bits addresses. Every Dedicated Server comes with a /64 IPv6 block. This represents over 18 quintillion IP addresses that you can use at your convenience.
+
+**This guide explains how to configure IPv6 addresses on our infrastructure.**
 
 ## Requirements
-- A dedicated server
-- IP failover(s) with associated vMAC
-- Knowledge about [SSH](http://en.wikipedia.org/wiki/Secure_Shell){.external}
-- Basic knowledge in networking
 
-Internet Protocol version 6 (IPv6) is the latest version of the Internet Protocol (IP).
+- You need to have a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}.
+- You need to have [IP failover(s)](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external} with associated virtual MAC addresses.
+- You need to have all your IPv6 information (prefix / gateway...).
+- You need to have basic knowledge of [SSH](http://en.wikipedia.org/wiki/Secure_Shell) and networking.
 
-It is designed to address the long-anticipated address exhaustion of its predecessor, IPv4, by using 128-bits addresses instead of 32-bits addresses.
+## Instructions
 
-Every dedicated servers comes with a /64 IPv6 block. This represent 18,446,744,073,709,551,616 IPs addresses that you can use at your convenience.
+If you are using an OVH-provided Linux OS template to install your server, you will see that you already have the first (main) IPv6 configured right out of the box.
 
-IPv6 block assigned to your service
-
-The IPv6 you want to configure
-
-The prefix of your IPv6 Block (Ex: 2607:5300:60:62ac::/64 -> netmask = 64)
-
-The gateway of your IPv6 Block
-
-
-## Applying the configuration
-
+If you want to have more than one IPv6 configured on your server (or want to use it on a VM) you will need to have a failover IP configured with a vMAC. Otherwise, the IPv6 won’t be routed by our routers/switches.
 
 > [!primary]
 >
-> OVH DNS server is able to resolve IPv6 domain names ! You may refer to this guide <docs/cloud/dedicated/network_bridging>
-> to know how to add our DNS server in your
-> configuration.
+> The default Gateway for your IPv6 block (IPv6_GATEWAY) is always xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+>
+> For example:
 > 
-
-Every dedicated server comes with a /64 IPv6 block to use for your convenience.
-
-If you are using an OVH-provided OS template to install your server, you will see that you already have the first (MAIN) IPv6 configured right out of the box.
-
-If you want to use more than one IPv6 configured on your server (or want to use it on a VM) you will need to have a failover IP configured with a vMAC. Otherwise, the IPv6 won’t be routed by our routers/switches.
+> The IPv6 address of the server is 2607:5300:60:62ac::/64. The IPv6_GATEWAY will therefore be 2607:5300:60:62FF:FF:FF:FF:FF.
+> The IPv6 address of the server is 2001:41D0:1:46e::/64. The IPv6_GATEWAY will therefore be 2001:41D0:1:4FF:FF:FF:FF:FF.
 
 
-
-> [!primary]
->
-> The default Gateway for your IPv6 block (IPV6_GATEWAY) is always IP:v:6FF:FF:FF:FF:FF.
-> Some examples :
-> - The IPv6 of the server is 2607:5300:60:62ac::/64. The IPv6_GATEWAY will then be 2607:5300:60:62FF:FF:FF:FF:FF.
-> - The IPv6 of the server is 2001:41D0:1:46e::/64. The IPV6_GATEWAY will then be 2001:41D0:1:4FF:FF:FF:FF:FF.
->
-
-### Debian &amp; derivatives
-**File: /etc/network/interfaces**
-
-Assuming that your interface is eth0, the configuration should be like:
-
-
-```bash
-iface eth0 inet6 static
-    address YOUR_IPV6
-    netmask IPV6_PREFIX
-
-    post-up /sbin/ip -f inet6 route add IPV6_GATEWAY dev eth0
-    post-up /sbin/ip -f inet6 route add default via IPV6_GATEWAY
-    pre-down /sbin/ip -f inet6 route del IPV6_GATEWAY dev eth0
-    pre-down /sbin/ip -f inet6 route del default via IPV6_GATEWAY
-```
-
-
+### Debian and Debian-based operating systems
 
 > [!warning]
 >
-> Pre-emptively, we strongly suggest our customers to disable IPv6 autoconf and
-> router advertising to prevent known issues.
-> You can do so by adding the following lines to your sysctl.conf file:
+> Before following the steps below, we strongly suggest that you disable IPv6 autoconf and router advertising to prevent known issues. You can do so by adding the following lines to your `sysctl.conf` file:
 > 
-> ```bash
-> net.ipv6.conf.eth0.autoconf=0
-> net.ipv6.conf.eth0.accept_ra=0
-> ```
+> `bash net.IPv6.conf.eth0.autoconf=0 net.IPv6.conf.eth0.accept_ra=0`
 > 
-> Once this has been done, you can apply those rules by executing the following command:
-> ```sh
-> sysctl -p
-> ```
+> Once this has been done, you can apply those rules by executing the following command: `sh sysctl -p`.
 > 
 
-Once this has been configured, restart the network interface (or restart the Virtual Machine):
+#### Step 1: Open an SSH connection to your server
+
+You can open up a connection to your server using the command line terminal if you're using a Linux operating system. If you're using a Windows PC, you can install PuTTy, which is a terminal emulator for Windows. It will allow you to connect to your server and run commands.
+
+You can connect to your server using its IP address and your root credentials.
+
+#### Step 2: Open your server's network configuration file
+
+Your server's network configuration file is located in `/etc/network/interfaces`. Use the command line to locate the file and open it for editing.
+
+#### Step 3: Amend the network configuration file
+
+Amend the file so that it looks like the example below. In this example, the network interface is called `eth0:0`. The interface on your server may differ.
 
 ```sh
-service networking restart
+iface eth0:0 inet6 static address YOUR_IPv6 netmask 128 post-up /sbin/ip -f inet6 route add IPv6_GATEWAY dev eth0:0 post-up /sbin/ip -f inet6 route add default via IPv6_GATEWAY pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0:0 pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
 ```
-Finally to test the IPv6 connectivity, simply ping another IPv6 address:
+
+#### Step 4: Save the file and reboot the server
+
+Save your changes to the file and then reboot your server to apply the changes.
+
+#### Step 5: Test the IPv6 connectivity
+
+You can test IPv6 connectivity by running the commands shown below:
 
 ```sh
 ping6 -c 4 2001:4860:4860::8888
@@ -109,70 +86,128 @@ ping6 -c 4 2001:4860:4860::8888
 >>> 1 packets transmitted, 1 received, 0% packet loss, time 0ms
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
-If you are not able to ping this IPv6 address, don't hesitate to [contact our support](https://www.ovh.co.uk/support/){.external} !
 
 
-### Redhat &amp; derivatives
+If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
 
-
-> [!warning]
->
-> This example has been made with CentOS 7.0. Some result may differ in other redhat
-> derivatives.
-> 
-
-Assuming that your interface is eth0, the configuration should be like:
-
-**File: /etc/sysconfig/network-scripts/ifcfg-eth0**
-
-
-
-> [!primary]
->
-> In this example, I avoided the IPv4 Failover configuration to avoid confusion, but
-> the IPv6 configuration is made in the same configuration file.
-> 
-
-
-```bash
-IPV6INIT=yes
-IPV6_AUTOCONF=no
-IPV6_DEFROUTE=yes
-IPV6_FAILURE_FATAL=no
-IPV6ADDR=YOUR_IPV6/IPV6_PREFIX ---> (basically your IPV6 in CIDR notation)
-IPV6_DEFAULTGW=IPV6_GATEWAY
-```
-
-
-### FreeBSD 10
-**File: /etc/rc.conf**
-
-Assuming that your interface is em0, the configuration should be like:
-
-
-```bash
-ipv6_activate_all_interfaces="YES"
-ipv6_defaultrouter="IPV6_GATEWAY"
-ifconfig_em0_ipv6="inet6 YOUR_IPV6 prefixlen 64"
-```
-
-
+### Fedora 26 and above
 
 > [!warning]
 >
-> if you are using FreeBSD 8.3 or earlier version, the configure should look like:
-> 
-> ```bash
-> ipv6_enable="YES"
-> ipv6_defaultrouter="IPV6_GATEWAY"
-> ipv6_ifconfig_em0="YOUR_IPV6 prefixlen 64"
-> ```
+> This example has been made with CentOS 7.0. Results may vary when using other redhat derivatives.
 >
 
-### Windows 2008/2012/Hyper-V
+#### Step 1: Open an SSH connection to your server
 
+You can open up a connection to your server using the command line terminal if you're using a Linux operating system. If you're using a Windows PC, you can install PuTTy, which is a terminal emulator for Windows. It will allow you to connect to your server and run commands.
 
-> [!primary]
->
-> Work in progress..
-> 
+You can connect to your server using its IP address and your root credentials.
+
+#### Step 2: Open your server's network configuration file
+
+Your server's network configuration file is located in /etc/sysconfig/network-scripts/ifcfg-eth0. Use the command line to locate this file and open it for editing.
+
+#### Step 3: Amend the network configuration file
+
+Amend the file so that it looks like the example below. In this example, the network interface is called eth0. The interface on your server may differ. Also, we have omitted the IPv4 Failover configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
+
+```sh
+IPv6INIT=yes
+IPv6_AUTOCONF=no
+IPv6_DEFROUTE=yes
+IPv6_FAILURE_FATAL=no
+IPv6ADDR=YOUR_IPv6/IPv6_PREFIX ---> (basically your IPv6 in CIDR notation)
+IPv6_DEFAULTGW=IPv6_GATEWAY
+```
+
+#### Step 4: Save the file and reboot the server
+
+Save your changes to the file and then reboot your server to apply the changes.
+
+#### Step 5: Test the IPv6 connectivity
+
+You can test IPv6 connectivity by running the commands shown below:
+
+```sh
+ping6 -c 4 2001:4860:4860::8888
+
+>>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
+>>> 64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=55 time=23.6 ms
+>>> 64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=55 time=23.8 ms
+>>> 64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=55 time=23.9 ms
+>>> 64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=55 time=23.8 ms
+
+>>> --- 2001:4860:4860::8888 ping statistics ---
+>>> 1 packets transmitted, 1 received, 0% packet loss, time 0ms
+>>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
+```
+
+If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
+
+#### Step 1: Open an SSH connection to your server
+
+You can open up a connection to your server using the command line terminal if you're using a Linux operating system. If you're using a Windows PC, you can install PuTTy, which is a terminal emulator for Windows. It will allow you to connect to your server and run commands.
+
+You can connect to your server using its IP address and your root credentials.
+
+#### Step 2: Open your server's network configuration file
+
+Your server's network configuration file is located in `/etc/rc.conf`. Use the command line to locate this file and open it for editing.
+
+#### Step 3: Amend the network configuration file
+
+Amend the file so that it looks like the example below. In this example, the network interface is called eth0. The interface on your server may differ.
+
+```sh
+IPv6_activate_all_interfaces="YES" IPv6_defaultrouter="IPv6_GATEWAY" ifconfig_em0_IPv6="inet6 YOUR_IPv6 prefixlen 64"
+```
+
+#### Step 4: Save the file and reboot the server
+
+Save your changes to the file and then reboot your server to apply the changes.
+
+#### Step 5: Test the IPv6 connectivity
+
+You can test IPv6 connectivity by running the commands shown below:
+
+```
+ping6 -c 4 2001:4860:4860::8888
+
+>>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
+>>> 64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=55 time=23.6 ms
+>>> 64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=55 time=23.8 ms
+>>> 64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=55 time=23.9 ms
+>>> 64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=55 time=23.8 ms
+
+>>> --- 2001:4860:4860::8888 ping statistics ---
+>>> 1 packets transmitted, 1 received, 0% packet loss, time 0ms
+>>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
+```
+
+If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
+
+### Windows Server 2012
+
+To remotely connect to your Windows server, you'll need to establish a remote desktop connection to it. First, right-click on the network icon in the notification area to go to the `Network and Sharing Center`{.action}.
+
+![Network and Sharing Center](images/ipv6_network_sharing_center.png){.thumbnail}
+
+Click `Change adapter settings`{.action}.
+
+![Change adapter settings](images/ipv6_change_adapter_settings.png){.thumbnail}
+
+Right-click your network adapter, then click `Properties`{.action}.
+
+![Network Adapter Properties](images/ipv6_network_adapter_properties.png){.thumbnail}
+
+Select `Internet Protocol Version 6`{.action}, then click `Properties`{.action}.
+
+![Properties](images/ipv6_properties.png){.thumbnail}
+
+Enter your IPv6 configuration (`IPv6 address` in 1 and `Default Gateway` in 2) and click `OK`{.action}.
+
+![Properties](images/ipv6_configuration.png){.thumbnail}
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
