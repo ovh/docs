@@ -159,7 +159,7 @@ Za pomocą elementów pobranych wcześniej, można utworzyć instancję:
 
 
 ```
-admin@serveur-1:~$ nova boot --key_name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image bdcb5042-3548-40d0-b06f-79551d3b4377 Instance1
+admin@serveur-1:~$ nova boot --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image bdcb5042-3548-40d0-b06f-79551d3b4377 Instance1
 ```
 
 
