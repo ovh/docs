@@ -1,92 +1,73 @@
 ---
-title: 'Webhosting - e-mail: Příručka o vytváření e-mailových adres'
-excerpt: Příručka o vytváření e-mailů na webhostingových balíčcích OVH
+title: 'Vytvoření e-mailové adresy v rámci služby MX Plan'
 slug: webhosting_-_e-mail_prirucka_o_vytvareni_e-mailovych_adres
-legacy_guide_number: g1343
+excerpt: 'Zjistěte, jak vytvořit e-mailovou adresu v rámci služby MX Plan'
+section: 'Správa e-mailové adresy'
+order: 1
 ---
 
+**Poslední aktualizace 27/04/2018**
 
-## Připojení do Zákaznického prostoru
-Log into the [Control Panel](https://www.ovh.com/manager/web/) with your username (NIC-handle) and password.
+## Cíl
 
+E-mailové adresy MX Plan dovolují odesílat a přijímat zprávy prostřednictvím zařízení dle Vašeho vlastního výběru.
 
-- Select your domain in the "Emails" menu. 
+**Zjistěte, jak vytvořit e-mailovou adresu v rámci služby MX Plan.**
 
-- Select theEmail tab.
+## Prerekvizity
 
-- Click Add an account.
+- Služba MX Plan (jako samostatné řešení nebo jako součást [webhostingového balíčku OVH](https://www.ovh.cz/webhosting/){.external}).
+- Možnost vytvářet e-mailové adresy v rámci dané služby.
+- Dostatečná oprávnění k provádění úprav v konfiguraci služby prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+## Postup
 
+### Fáze 1: přístup do rozhraní pro správu služby
 
-![](images/img_3636.jpg){.thumbnail}
-Abyste mohli na doménu přidávat e-mailové účty, je potřeba na ní mít jednu z následujících služeb:
+Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. V levém postranním panelu rozbalte položku `E-maily`{.action} a vyberte doménu, na níž je daná služba MX Plan vytvořena. Poté přejděte do záložky `E-maily`{.action}.
 
+Tabulka obsahuje přehled všech e-mailových adres vytvořených v rámci služby MX Plan na dané doméně.
 
-- Webhosting zdarma Start10M (1 e-mailový účet)
-- [ Webhosting OVH ](http://www.ovh.cz/webhosting/) (10-1 000 e-mailových účtů)
-- [ MX Plan ](https://www.ovh.cz/produkty/mxplan.xml) (5-1 000 e-mailových účtů)
+![email](images/email-creation-step1.png){.thumbnail}
 
+### Fáze 2: vytvoření e-mailové adresy
 
+Pro vytvoření nové e-mailové adresy klikněte na tlačítko `Vytvořit e-mailovou adresu`{.action}. V dialogovém okně vyplňte požadované informace:
 
+|Informace|Popis|  
+|---|---|  
+|Název účtu|Zadejte požadovaný tvar e-mailové adresy (např. jméno.příjmení). Doména je vyplněna automaticky.|  
+|Popis účtu|Zadejte krátký popis, díky kterému účet rozpoznáte mezi dalšími účty v Zákaznickém prostoru OVH.|  
+|Velikost účtu|Vyberte požadovanou velikost účtu. Jedná se o celkový prostor vyhrazený pro ukládání zpráv dané e-mailové adresy.|  
+|Heslo|Zadejte a potvrďte přístupové heslo.|
 
-## Informace o Vašich e-mailových účtech
-Enter the following information in the new window:
+Následně klikněte na tlačítko `Další`{.action}. Ověřte zadané informace a znovu klikněte na tlačítko `Další`{.action}.
 
-Account name: the email address.
+Nakonec klikněte na tlačítko `Schválit`{.action}. Pokud si přejete vytvořit více e-mailových adres, postup opakujte.
 
-Description: a description of the email account.
+> [!primary]
+>
+> Heslo musí splňovat předem daná formální kritéria. Při vytváření hesla se proto řiďte uvedenými pokyny. Zároveň doporučujeme dbát následujících bezpečnostních opatření:
+>
+> - Nikdy nepoužívejte stejné heslo dvakrát.
+>
+> - Používejte hesla, která neobsahují Vaše osobní údaje (jméno, příjmení, datum narození apod.).
+>
+> - Heslo pravidelně aktualizujte.
+>
+> - Heslo si nikam nezapisujte a nesdílejte jej s ostatními lidmi prostřednictvím e-mailu.
+>
+> - Nedávejte svému webovému prohlížeči svolení k zapamatování hesla.
+>
 
-Account size: your email account quota.
+![email](images/email-creation-step2.png){.thumbnail}
 
-Password: a password for your email account.
+### Fáze 3: použití e-mailové adresy
 
-Confirmation: confirm your password.
+Nyní již nezbývá než začít své e-mailové adresy naplno využívat. Za tímto účelem můžete vyzkoušet webovou aplikaci OVH (webmail) s názvem RoundCube. OVH webmail je dostupný na následující adrese: <https://mail.ovh.net/cz/>. Pro přihlášení použijte identifikační údaje e-mailové adresy vytvořené prostřednictvím Zákaznického prostoru OVH.
 
+Pokud si svůj e-mail přejete nakonfigurovat na externím e-mailovém klientu, smartphonu či tabletu, podívejte se do následující dokumentace: <https://docs.ovh.com/cz/cs/emails/>
 
-Please note that the password must comply with certain conditions: 
+## Kam dál
 
-
-- Minimum 9 characters.
-- Maximum 30 characters.
-- No accented characters.
-
-
-
-Click Confirm/Ok to continue.
-
-A notification will appear to inform you that your email account has been created.
-
-We recommend the following guides for configuring your email accounts:
-
-
-- [Email configuration guides](https://www.ovh.co.uk/web-hosting/guides/).
-
-
-
-![](images/img_2385.jpg){.thumbnail}
-
-
-## Jak změnit heslo k e-mailovému účtu?
-Firstly select your domain in the "Emails" menu then go to "Email" -- Change the password by clicking on the gear icon next to the relevant email account.
-
-![](images/img_3637.jpg){.thumbnail}
-
-- Re-enter the new password and confirm it.
-
-You will not need to enter your old password.
-
-
-Please note that the password must comply with certain conditions: 
-
-
-- Minimum 9 characters.
-- Maximum 30 characters.
-- No accented characters.
-
-
-
-Click Confirm/Ok to complete the password change.
-
-It may take a few minutes for your password change to take effect.
-
-![](images/img_2387.jpg){.thumbnail}
+Sdílejte své zkušenosti s uživatelskou komunitou na <https://community.ovh.com/en/>.
