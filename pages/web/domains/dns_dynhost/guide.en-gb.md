@@ -35,7 +35,7 @@ This means that you can host your website on your own internet connection.
 
 - Log on to your [control panel](https://www.ovh.com/manager/web) with yout ID and password. 
 
-- Cliquez sur "Login" to confirm.
+- Click on "Login" to confirm.
 
 
 
@@ -112,7 +112,7 @@ Please note:
 
 
 
-## Bali Dynamic DNS (gratuit)
+## Bali Dynamic DNS (Free)
 
 - In  Bali Dynamic DNS, enter the requested fields in green, then click on "Update IP in database if necessary".
 
