@@ -89,7 +89,7 @@ Le NAS-HA peut être monté sur un serveur Windows ou Linux via les protocoles C
 ### Le NAS-HA est-il compatible avec le protocole FTP ?
 Non, l'offre n'est pas compatible avec le protocole FTP.
 
-### L'espace alloué est-il portionnable ?
+### L'espace alloué est-il partionnable ?
 Oui, il est nécessaire de créer une ou plusieurs partitions selon votre utilisation. La création de partition n'est pas limitée.
 
 ## Compatibilité du produit
