@@ -1,8 +1,8 @@
 ---
-title: Déployer un template OVF
+title: 'Déployer un template OVF'
 slug: deploiement-template-ovh
-excerpt: Découvrez comment déployer un template via le client lourd vSphere
-section: Services et options OVH
+excerpt: 'Découvrez comment déployer un template via le client lourd vSphere'
+section: 'Services et options OVH'
 ---
 
 **Dernière mise à jour le 23/03/2018**
@@ -11,16 +11,12 @@ section: Services et options OVH
 
 OVH propose des templates Windows (au format OVF) que vous pouvez déployer directement depuis votre client lourd vSphere.
 
-> [!warning]
->
-> Cette fonctionnalité n'est disponible qu'avec le client lourd de vSphere.
->
-
 **Ce guide vous explique où trouver les sources et comment procéder au déploiement.**
 
 ## Prérequis
 
-- Avoir accès au client lourd vSphere.
+- Avoir accès au client Web
+- Avoir activé les licences Windows depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (onglet `Licence Widows`{.action} du datacenter) 
 
 
 ## En pratique
@@ -40,7 +36,7 @@ Il vous suffit maintenant de faire un clic droit sur le template de votre choix 
 
 ### Déployer le template OVF
 
-Une fois connecté au client lourd vSphere, rendez-vous dans `File`{.action} puis `Deploy OVH Template...`{.action} :
+Une fois connecté au client web vSphere, rendez-vous sur la page `Hôtes et clusters`{.action} puis faites un clic droit sur votre datacenter et cliquez sur `Déployer le modèle OVF...`{.action} :
 
 ![Nom de photo](images/selectdeploy.png){.thumbnail}
 
@@ -48,11 +44,7 @@ Le menu contextuel s'ouvre, la configuration du déploiement va pouvoir commence
 
 ![Nom de photo](images/puturl.png){.thumbnail}
 
-Vous retrouvez tous les détails du template et, notamment, le mot de passe par défaut. Pour des raisons de sécurité, il est important de le changer dès votre première connexion :
-
-![Nom de photo](images/detailstemplate.png){.thumbnail}
-
-Choisissez le nom de votre machine virtuelle, ainsi que le datacentre dans lequel la déployer :
+L'étape suivante vous permet de choisir le datacenter :
 
 ![Nom de photo](images/selectdatacenter.png){.thumbnail}
 
@@ -60,20 +52,15 @@ Choisissez ensuite le cluster dans lequel la machine virtuelle va être déploy�
 
 ![Nom de photo](images/selectcluster.png){.thumbnail}
 
-Choisissez le datastore dans lequel la machine virtuelle va être stockée :
+Vous retrouvez tous les détails du template et, notamment, le mot de passe par défaut. Pour des raisons de sécurité, il est important de le changer dès votre première connexion :
+
+![Nom de photo](images/detailstemplate.png){.thumbnail}
+
+Choisissez le datastore dans lequel la machine virtuelle va être stockée ainsi que le format du disque :
 
 ![Nom de photo](images/selectdatastore.png){.thumbnail}
 
-Ici, nous avons le type de format de disque. Il n'est pas possible de le modifier sur une infrastructure Private Cloud :
-
-![Nom de photo](images/selectdisk.png){.thumbnail}
-
 Vous devez maintenant choisir le réseau qui sera utilisé.
-
-> [!warning]
->
-> Le `Local PortGroup` est séléctionné par défaut. Il est important de le modifier car vous n'avez pas de droits sur celui-ci.
-> 
 
 ![Nom de photo](images/selectnetwork.png){.thumbnail}
 
@@ -81,7 +68,7 @@ La configuration est quasiment terminée, vous avez accès à un résumé de la 
 
 ![Nom de photo](images/resume.png){.thumbnail}
 
-Après avoir cliqué sur `Finish`{.action}, une fenêtre de chargement s'affiche et vous permet de suivre le déploiement :
+Après avoir cliqué sur `Terminer`{.action}, une tâche est créée et vous permet de suivre le déploiement :
 
 ![Nom de photo](images/startdeploy.png){.thumbnail}
 
