@@ -1,9 +1,9 @@
 ---
-title: Accelerer mon site web en utilisant le CDN
+title: 'Accelerer mon site web en utilisant le CDN'
 slug: accelerer-mon-site-web-en-utilisant-le-cdn
 legacy_guide_number: 1290
-excerpt: Ameliorez votre site en accelerant son chargement sur votre hebergement Web grace au CDN
-section: Optimiser son site
+excerpt: 'Ameliorez votre site en accelerant son chargement sur votre hebergement Web grace au CDN'
+section: 'Optimiser son site'
 ---
 
 Si vous souhaitez améliorer l'expérience de vos utilisateur en accélérant votre site web, la technique la plus efficace est d'activer un CDN (Content Delivery Network). Ce dernier permet de mettre en cache les fichiers statiques tel que les images, les css et les javascripts, dans des serveurs plus proches de vos clients.
@@ -27,7 +27,7 @@ Au sein de votre espace "Hébergement web", la ligne "Option CDN" vous indique s
 - Sélectionnez le CDN que vous souhaitez activer. La différence se joue habituellement sur le nombre de Pop, c'est à dire le nombre de serveurs cache disponibles dans le monde. Plus d'informations ici [https://www.ovh.com/fr/hebergement-web/geocache.xml](https://www.ovh.com/fr/hebergement-web/geocache.xml){.external}
 - Sélectionnez la durée d'engagement (12 mois par défaut)
 - Validez les contrats
-- Vous serez redirigé vers le bon de commande. Une fois la commande payé, votre service sera disponible quelques minutes après et vous recevrez une facture.
+- Vous serez redirigé vers le bon de commande. Une fois la commande payée, votre service sera disponible quelques minutes après et vous recevrez une facture.
 
 
 ## Comment vider le cache du CDN ?
