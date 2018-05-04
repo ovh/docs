@@ -74,6 +74,23 @@ iface eth0 inet static
     pre-down route del default gw GATEWAY_IP
 ```
 
+**Debian 9**
+
+```bash
+auto lo eth0
+iface lo inet loopback
+iface eth0 inet static
+    address FAILOVER_IP
+    netmask 255.255.255.255
+    broadcast FAILOVER_IP
+    post-up ip route add GATEWAY_IP dev eth0
+    post-up ip route add default via GATEWAY_IP dev eth0
+    pre-down ip route del GATEWAY_IP dev eth0
+    pre-down ip route del default via GATEWAY_IP dev eth0
+```
+
+
+
 #### Redhat and Redhat based operating systems (CentOS 6, Scientific Linux, ClearOS, etc)
 
 1. Open up an SSH connection to your virtual machine
