@@ -1,11 +1,10 @@
 ---
-title: Optimisation des performances de votre site
+title: 'Optimisation des performances de votre site'
 slug: optimisation-performances-site
 legacy_guide_number: 1396
-excerpt: Vous trouverez dans ce guide differents conseils concernant l'analyse des lenteurs sur votre site web, ainsi que des pistes d'amelioration.
-section: Optimiser son site
+excerpt: 'Vous trouverez dans ce guide differents conseils concernant l''analyse des lenteurs sur votre site web, ainsi que des pistes d''amelioration.'
+section: 'Optimiser son site'
 ---
-
 
 ## Analyse
 
@@ -96,7 +95,7 @@ sans PHP-FPM120s2000128M
 >
 Voici un graphique d'exemple d'utilisation de  **PHP-FPM** .
 
-On remarque que suite à la mise en place de celui-ci, la charge CPU baisse radicalement, les performances du site sont donc accrus.
+On remarque que suite à la mise en place de celui-ci, la charge CPU baisse radicalement, les performances du site sont donc accrues.
 
 
 ![hosting](images/2167.png){.thumbnail}
