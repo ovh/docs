@@ -11,7 +11,7 @@ section: 'RAID & disques'
 
 Si vous constatez un défaut de disque ou que notre système vous a envoyé une notification par e-mail pour vous avertir de la défaillance d’un disque, vous devez prendre les mesures nécessaires pour le remplacer dès que possible.
 
-**Ce guide vous explique comment identifier un disque est défectueux et comment faire la demande de remplacement auprès de nos équipes.**
+**Ce guide vous explique comment identifier qu'un disque est défectueux et comment faire la demande de remplacement auprès de nos équipes.**
 
 > [!warning]
 >
@@ -32,23 +32,21 @@ Si vous constatez un défaut de disque ou que notre système vous a envoyé une 
 
 Avant de faire quoi que ce soit, **il est nécessaire d'effectuer une sauvegarde de vos données**. Le seul but d’un RAID, à l'exception du RAID 0 est de protéger vos données contre les défaillances des disques. Une fois qu’un disque est inutilisable, toutes vos données dépendent de la santé du ou des disques restants.
 
-Il est rare que deux disques soient défaillants en même temps, mais ce cas n’est pas impossible.
+S'il est rare que deux disques soient défaillants en même temps, ce cas n’est pas impossible.
 Aucun changement de disque ne sera effectué sans :
 -	une confirmation de votre part de la sauvegarde de vos données ;
 -	une confirmation que vous acceptez en connaissance de cause leur perte potentielle dûe au remplacement du disque.
 
 
-
 ### Détecter qu'un disque est défectueux
 
-Que vous ayez trouvé le problème par vous-même ou suite à une notification e-mail de notre système, il convient de vérifier la santé de tous les disques. La raison est simple : si vous avez deux disques en défaut dans un même ensemble RAID, nous commençerons par remplacer celui avec le plus d’erreurs.
-
+À la moindre alerte e-mail ou vérification de votre part vous signalant une défaillance, il est indispensable de vérifier la santé de tous vos disques. Et si deux disques faisant partie d'un même ensemble RAID présentent des défaillances, nous remplacerons en priorité celui comportant le plus d'erreurs.
 
 #### Serveur disposant d'un RAID logiciel
 
-Si vous avez un serveur disposant d'un RAID logiciel, référez-vous au guide [RAID Logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/){.external} afin de trouver les disques installés sur votre serveur.
+Si vous possédez un serveur disposant d'un RAID logiciel, référez-vous au guide [« RAID Logiciel »](https://docs.ovh.com/fr/dedicated/raid-soft/){.external} afin de trouver les disques installés sur votre serveur.
 
-Une fois que vous avez trouvé le chemin d'accès à vos disques, vous pouvez les tester en utilisant la commande `smartctl` de cette manière:
+Une fois que vous avez trouvé le chemin d'accès à vos disques, vous pouvez les tester en utilisant la commande `smartctl` de cette manière :
 
 ```sh
 smartctl -a /dev/sdX
@@ -56,7 +54,7 @@ smartctl -a /dev/sdX
 
 > [!primary]
 >
-> N'oubliez pas de remplacer `/dev/sdX` par le chemin d'accès à votre disque, le sdX étant le disque concerné, sdA, sdB...
+> N'oubliez pas de remplacer `/dev/sdX` par le chemin d'accès à votre disque, le sdX étant le disque concerné, sdA, sdB, etc.
 > 
 
 Cela vous permettra également de récupérer le numéro de série (*Serial Number*) du ou des disques à remplacer afin de les communiquer au technicien.
@@ -86,13 +84,13 @@ smartctl -a /dev/sda
 
 La ligne importante dans notre cas sera donc la suivante :
 
-`Serial Number:    5329T58N`
+**`Serial Number:    5329T58N`**
 
 #### Serveur disposant d'un RAID matériel
 
-Si vous avez un serveur disposant d'un RAID matériel, réferez-vous au guide [RAID Matériel](https://docs.ovh.com/fr/dedicated/raid-hard/){.external} et utilisez la procédure concernant votre type de contrôleur RAID pour trouver les chemins d'accès à vos disques.
+Si vous possédez un serveur disposant d'un RAID matériel, référez-vous au guide [« RAID Matériel »](https://docs.ovh.com/fr/dedicated/raid-hard/){.external} et utilisez la procédure concernant votre type de contrôleur RAID pour trouver les chemins d'accès à vos disques.
 
-Une fois que vous avez trouvé le chemin d'accès à vos disques, vous pouvez les tester en utilisant la commande `smartctl` de cette manière:
+Une fois que vous avez trouvé le chemin d'accès à vos disques, vous pouvez les tester en utilisant la commande `smartctl` de cette manière :
 
 ```sh
 smartctl -d megaraid,N -a /dev/sdX
@@ -100,7 +98,7 @@ smartctl -d megaraid,N -a /dev/sdX
 
 > [!primary]
 >
-> N'oubliez pas de remplacer /dev/sdX par le chemin d'accès à votre disque, le sdX étant le disque concerné, sdA, sdB...
+> N'oubliez pas de remplacer /dev/sdX par le chemin d'accès à votre disque, le sdX étant le disque concerné, sdA, sdB, etc.
 > 
 
 
@@ -111,18 +109,18 @@ smartctl -d megaraid,N -a /dev/sdX
 > Il vous faudra alors remplacer `megaraid` par `sat+megaraid` comme suit : `smartctl -d sat+megaraid,N -a /dev/sdX`.
 > 
 
-Pour une carte Raid LSI, vous pouvez tester les disques en utilisant la commande `smartctl` de cette manière:
+Pour une carte Raid LSI, vous pouvez tester les disques en utilisant la commande `smartctl` de cette manière :
 
 ```sh
 smartctl -a /dev/sgY
 ```
 
-Le numéro du RAID (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAID, etc.)
+Le numéro du RAID est à préciser (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAID, etc.)
 
 
 #### Serveur avec un disque NVMe
 
-Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode [Recue-pro](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external} sur lequel l'outil **nvme-cli** est installé par défaut.
+Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode [« Recue-pro »](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external} sur lequel l'outil **nvme-cli** est installé par défaut.
 
 Il faudra alors utiliser la commande `nvme list` afin de récupérer les numéros de série de vos disques :
 
@@ -137,37 +135,37 @@ root@rescue:~# nvme list
 
 ### Demander le remplacement du disque
 
-#### Remplacer le disque à froid (nécessitant une coupure du serveur)
+#### Remplacer le disque à froid (coupure du serveur requise)
 
-Pour demander le remplacement d'un disque, il vous suffit de créer un ticket auprès de notre support depuis l'[espace client OVH](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. Afin d'accélerer le processus, il convient de fournir les éléments liés aux tests. Voici un récapitulatif de ce qu'il faut :
+Pour demander le remplacement d'un disque, il vous suffit de créer un ticket auprès de notre support depuis votre [espace client OVH](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. Afin d'accélérer le processus, il convient de fournir les éléments liés aux tests. Voici un récapitulatif de ce qu'il faut :
 
-- **Le numéro de série du disque à remplacer ainsi que de tous les autres disques sains**. Pour récupérer le numéro de série du disque à remplacer, consultez [ce guide](https://docs.ovh.com/fr/dedicated/find-disk-serial-number/){.external}. Si pour une raison ou une autre il n'est pas possible d'extraire le numéro de série du disque, veuillez le notifier dans le ticket, et nous communiquer le numéro de série du/des disque(s) à ne pas remplacer. 
+- **le numéro de série du disque à remplacer ainsi que de tous les autres disques sains**. Pour récupérer le numéro de série du disque à remplacer, consultez [ce guide](https://docs.ovh.com/fr/dedicated/find-disk-serial-number/){.external}. Si, pour une raison ou une autre, il n'est pas possible d'extraire le numéro de série du disque, veuillez le notifier dans le ticket, et nous communiquer le numéro de série du ou des disques à ne pas remplacer. 
 
-Comme précisé précédemment, les numéros de tous les disques sont importants. Ils seront transmis au technicien en datacentre et éviteront une erreur lors de l'opération.
+Comme précisé précédemment, les numéros de tous les disques sont importants. Ils seront transmis au technicien en datacenter et éviteront une erreur lors de l'opération ;
 
-- **La date et l'heure de début de l'intervention**. Vous devez prévoir une courte interruption de service, mais vous pouvez planifier l'intervention 24h/24 - 7j/7.
+- **la date et l'heure de début de l'intervention**. Vous devez prévoir une courte interruption de service, mais vous pouvez planifier l'intervention 24 h/24 - 7 j/7 ;
 
-- **La confirmation que vous avez effectué la sauvegarde de vos données ou que vous acceptez la pleine responsabilité de toute perte de ces données.**
+- **La confirmation que vos données sont sauvegardées ou que vous acceptez la perte potentielle de ces informations.**
 
 
-#### Remplacer le disque à chaud (sans nécessité de coupure du serveur)
+#### Remplacer le disque à chaud (sans coupure du serveur)
 
 > [!primary]
 >
 > Ce type de remplacement n'est possible que pour les serveurs [FS-MAX](https://www.ovh.com/fr/serveurs_dedies/fs/1801fs05.xml){.external} et les serveurs [Big-HG](https://www.ovh.com/fr/serveurs_dedies/hg/1801bhg01.xml){.external} disposant d'une carte RAID.
 > 
 
-Dans le cas d'un remplacement à chaud sur un serveur avec une carte MegaRAID, dès que l'intervention est programmée il vous est demandé de faire clignoter la LED du disque à remplacer pour faciliter cette intervention.
+Dans le cas d'un remplacement à chaud sur un serveur avec une carte MegaRAID, il vous est demandé de faire clignoter la LED du disque à remplacer une fois l'intervention programmée pour faciliter le travail de nos équipes.
 
 Si votre serveur dispose d'une carte MegaRAID, voici les commandes à utiliser :
 
-- Pour démarrer le clignotement de la LED :
+- pour démarrer le clignotement de la LED ;
 
 ```sh
 MegaCli -PdLocate -start -physdrv[E0:S0] -a0
 ```
 
-- Pour arrêter le clignotement de la LED :
+- pour arrêter le clignotement de la LED ;
 
 ```sh
 MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
@@ -175,15 +173,15 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 
 > [!primary]
 >
-> Equivalent via la commande `storcli` :
+> Équivalent via la commande `storcli` :
 >
-> - Pour démarrer le clignotement de la LED :
+> - pour démarrer le clignotement de la LED :
 >
 > ```sh
 > storcli /c0/e0/s0 start locate
 > ```
 >
-> - Pour arrêter le clignotement de la LED :
+> - pour arrêter le clignotement de la LED :
 >
 > ```sh
 > storcli /c0/e0/s0 stop locate
@@ -193,14 +191,14 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 
 > [!primary]
 >
-> Malgré le clignotement de la LED n'oubliez pas de bien préciser dans le ticket d'assistance le numéro de série et le slot.
+> Malgré le clignotement de la LED n'oubliez pas de bien préciser dans le ticket d'assistance le numéro de série et le *slot* du disque.
 > 
 
 ### Une fois le remplacement effectué
 
-Si vous avez un serveur en RAID matériel, le RAID va se reconstruire par lui-même (l'*auto-rebuild*, activé par défaut, ne doit pas avoir été désactivé par vos soins). Notez que le processus de re-synchronisation peut prendre quelque minutes et impacter les performances de lecture/écriture de votre RAID.
+Si vous possédez un serveur en RAID matériel, le RAID va se reconstruire par lui-même. Attention, l'*auto-rebuild*, activé par défaut, ne doit pas avoir été désactivé par vos soins. Notez que le processus de resynchronisation peut prendre quelque minutes et diminuer les performances de lecture/écriture de votre RAID.
 
-Si vous avez un serveur en RAID logiciel, il convient de lancer manuellement la resynchronisation de vos disques. Pour cela n'hésitez pas à vous reporter à la documentation liée au [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft){.external}.
+Si vous possédez un serveur en RAID logiciel, il convient de lancer manuellement la resynchronisation de vos disques. Pour cela, n'hésitez pas à vous reporter à la documentation liée au [« RAID logiciel »](https://docs.ovh.com/fr/dedicated/raid-soft){.external}.
 
 
 ## Aller plus loin
