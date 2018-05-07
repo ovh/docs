@@ -1,164 +1,128 @@
 ---
 title: Rescue Mode
 slug: ovh-rescue
-excerpt: Rescue mode is designed for Linux servers. It allows to take control SSH on the machine and also to check the hardware of the server.
-section: Server Management
+excerpt: How to use rescue mode on a dedicated server
+section: Diagnostic and rescue mode
 ---
+
+**Last updated 7th May 2018**
+
+## Objective
+
+Rescue mode is a tool on your server that allows you to boot into a temporary operating system for the purpose of diagnosing and resolving issues. 
+
+**This guide will show you how to activate and use your server's rescue mode.**
 
 
 ## Requirements
-The advantage is that it is not necessary to contact support to schedule an intervention, because with rescue-mode you can run tests when it's best for you, and when it doesn't disturb the operations of your server.
 
-Refers to the primary IP of your server.
-
-
-### Software &amp; Administration
-- launch a **fsck** / **e2fsck**
-- consult and analyse **logs**
-- **correct** problems on softs
-- **rebuild** / **check** the RAID
-- **backup** the data
+- You need to have root access to your [dedicated server](https://www.ovh.lt/dedikuoti_serveriai/){.external} via the command line (SSH).
 
 
-### Hardware
-- **memtest**: to check the memory ( RAM )
-- **cpuburn**: to check your processor ( CPU )
-- **fsck** to check the file system
-- **state** to check the disk
-- **explorer** for your files
+## Instructions
 
-If one of the tests fails or shows errors, just log into the Manager, go to the "Support" section and then submit an incident. Simply send the result of your test, for example: server crashed during the cpu test. We will immediately intervene to replace your hardware.
+You can activate rescue mode by logging into your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager/){.external} and going to your server's page. Then go to `Server Status`{.action} > `General information`{.action} >`Boot`{.action} and click the `Edit`{.action} button to change the boot mode.
 
+![Boot mode edit](images/rescue-mode-01.png){.thumbnail}
 
+On the next screen, select `Boot on rescue mode`{.action}. If your server has a Linux based OS, select `rescue64-pro`{.action} from the dropdown list. If you have a Windows server, select `WinRescue`{.action}. Lastly, type your email address in the text field, then click `Next`{.action}.
 
-> [!warning]
->
-> - You must not use the web interface and SSH at the same time.
-> - You must not launch a disk check on the web interface and mount the partitions in ssh, this may cause the loss of your data!!
-> 
-> 
+![Rescue-pro mode](images/rescue-mode-03.png){.thumbnail}
+
+Confirm your options on the next screen and then reboot your server to apply your changes. Your server will now reboot in rescue mode, and you will receive the credentials for logging in via the email address you provided. To exit rescue mode, simply change the boot mode back to `Boot on the hard disk`{.action}, then reboot your server.
+
+![Restart server](images/rescue-mode-02.png){.thumbnail}
 
 
-## Procedure
+### Linux
 
-### Step 1 &#58; Activate Rescue Mode
-[Log into your Manager](https://www.ovh.com/manager){.external}, **Cloud** section, then **Servers**, **Netboot** and select the **rescue-pro mode**.
+- Using the web interface
 
-If possible soft-reboot your machine (in SSH: sudo reboot -r now) and carry out a hard reboot only if you don't have any other choice.
+Once your server has rebooted, you'll receive an email with your rescue mode access credentials. The email will also contain a link to the rescue mode web interface, which will give you access to the following tests:
 
-You will then receive an email containing the link and the password that will enable you to access your server in "rescue" mode.
+- Hard Drives: Checks the integrity of the server's hard drives with SMART tests
+- Processors: Checks that the server's CPU is functioning normally
+- Partitions (State): Performs verification of the drives
+- Partitions (File System): Performs verification of the server's file system
+- Partitions (Explore): A file browser used to explore your files. It is not possible to edit them with this tool, but you make backup of them
+- Memory: Performs a test of the installed RAM. If the RAM is faulty, it will be shown at the end of the test
 
-It may also occur that our technicians have already intervened on your server. If they do not diagnosis a hardware fault on the server, they will launch your server in "rescue" mode in order for you to proceed to the necessary verifications/corrections for its reinstallation.
+![Web Interface for Rescue mode](images/rescue-mode-04.png){.thumbnail}
+
+- SSH (command line)
+
+Once your server has rebooted, you'll receive an email with your rescue mode access credentials. After that, you should access your server via the command line in the usual way, but with the rescue mode root password (from the email we sent you) instead of the regular one.
+
+For example :
+
+```sh
+ssh root@IP_of_your_server
+root@IP_of_your_server password:
+```
 
 
-### Step 2 &#58; Hardware Check
-Once the server is in rescue mode you will receive an email containing a link and a password in order for you to connect and run hardware tests. Here is a overview of this interface:
+Most changes that you want to make to your server via SSH while in rescue mode will require you to mount a partition. This is because rescue mode has it's own (temporary) file system, so any file system changes you make in rescue mode will be lost once you reboot the server back into normal mode.
 
+Mounting partitions is done using the mount command in SSH, but you'll first need to list your partitions so that you can retrieve the name of the partition you want to mount. Please refer to the following code examples:
 
-![Rescue Mode Web Interface](images/rescue-web-interface.png){.thumbnail}
+```sh
+rescue:~# fdisk -l
 
+Disk /dev/hda 40.0 GB, 40020664320 bytes
+255 heads, 63 sectors/track, 4865 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
 
+Device Boot Start End Blocks Id System
+/dev/hda1 * 1 1305 10482381 83 Linux
+/dev/hda2 1306 4800 28073587+ 83 Linux
+/dev/hda3 4801 4865 522112+ 82 Linux swap / Solaris
+
+Disk /dev/sda 8254 MB, 8254390272 bytes
+16 heads, 32 sectors/track, 31488 cylinders
+Units = cylinders of 512 * 512 = 262144 bytes
+
+Device Boot Start End Blocks Id System
+/dev/sda1 1 31488 8060912 c W95 FAT32 (LBA)
+```
+
+Once you have the correct name of the partition you want to mount, you can mount it with the command shown below:
+
+```sh
+rescue:~# mount /dev/hda1 /mnt/
+```
 
 > [!primary]
 >
-> Check list
-> - 
-> Hard Drives: Enables you to see the disks installed
-> - 
-> Processors: Check the CPU. Here, it is possible that you won't get an error report, but that the server will reboot or freeze. It's a sign that there is a problem. You must contact us asap.
-> - 
-> Partitions State: Check the disk
-> - 
-> Partitions File System: Checks the file system. An inconsistency in the File System is often confused with a broken disk. Please note here, that usually you just need to reinstall the Operation system in order for everything to work again. Specially if the server detects files in the lost+found folder
-> - 
-> Partitions Explore: Enable you to explore the files. We can not edit via this tool, but we can save them for example. Very important: we can read logs of the machine without using ssh
-> - 
-> Memory: Check you RAM. Please note that a memtest takes a lot of CPU. If this test freeze or crash the machine, it's probably due to the fact that your CPU is broken or not well cooled. If the RAM is faulty you will get at the end of the test a report containing the errors
+> Your partition will now be mounted, allowing you to perform file system operations.
 > 
-> 
-
-This interface cannot detect all problems.
-
-For example irregular reboots etc. Do not hesitate to test it and to consult next the technical assistance that can help you to analyse the server.
-
-
-
-> [!warning]
+> If your server has a software RAID configuration, you will need to mount your raid volume (generally /dev/mdX).
 >
-> You might get the following error at 64 % of the RAM test:
-> your server hasn't reacted for a least 20 seconds
-> You can click on ok, it is often due to the fact that the test, which execute around 64% is very long.
-> It is most likely down, you can try to refresh the page.
-> If the server crashed while doing a cpu test, it is possible that the cpu is faulty.
-> 
 
 
-## Rescue in SSH
+### Windows
 
-### Step 1 &#58; Connecting
-Connect to your machine using SSH as usual. The only thing that change is the password. You must use the temporary root pass that is sent to you by email after the rescue mode.
+#### Accessing WinRescue
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"$ ";}</style> <pre class="highlight command-prompt"> <span class="prompt">ssh root@SERVER_IP</span> <span class="output">The authenticity of host 'SERVER_IP (SERVER_IP)' can't be established.</span> <span class="output">RSA key fingerprint is 02:11:f2:db:ad:42:86:de:f3:10:9a:fa:41:2d:09:77.</span> <span class="output">Are you sure you want to continue connecting (yes/no)? # <- yes</span> <span class="output">Warning: Permanently added 'SERVER_IP' (RSA) to the list of known hosts.</span> <span class="output">Password:</span> <span class="output">rescue:~#</span> </pre></div>
-Now you are connected but your files are not accessible. You must "mount" the file system.
+Once your server has rebooted, you'll receive an email with your rescue mode access credentials. To access rescue mode, you'll need to download and install a VNC console, or use the `IPMI` module in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager/){.external}.
 
+![Winrescue window](images/rescue-mode-06.png){.thumbnail}
 
-### Step 2 &#58; Mounting disk(s)
-Usually, /dev/xda1 is your root partition (/) and /dev/xda2 corresponds to /home.
+#### WinRescue tools
 
-Devices are such as:
+|Tool|Description|
+|---|---|
+|Freecommander|A file manager with all the standard functionality you would expect.|
+|NTPWdi|A user-friendly password manager. It lets you reactivate or change the passwords of user accounts on your server. This tool is very useful in the event of lost credentials, or for the reactivation of a security account.|
+|FileZilla|An open source FTP client. It supports SSH and SSLprotocols, and has a clear and intuitive drag and drop interface. It can be used for transferring your data to an FTP server, such as the FTP backup supplied with most of the OVH server models.|
+|7-ZIP|A file compression and archiving utility that reads the following formats: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR and Z. It also allows you to create your own archives in the following formats: z, XZ, BZIP2, GZIP, TAR, ZIP and WIM.|
+|Avast Virus Cleaner|An antivirus application with file scanning and cleansing capabilities.|
+|ActivNIC|Allows you to reactivate a deactivated network interface card.|
+|SRVFirewall|A script that can either activate or deactivate the firewall on your server.|
+|SysInternal|A Microsoft software suite comprised of many tools for network maintenance, process management and much more.|
+|Virtual Clone Drive|Allows you to mount ISO, BIN, and CCD files in a virtual CD drive.|
+|Firefox|A web browser.|
+|Testdisk|A powerful data recovery application. It allows you to recover and modify corrupted partitions, find lost partitions, repair a boot sector or even reconstruct a defective MBR.|
 
-- /dev/sd for SCSI, SATA, Raid Hard
-- /dev/hd for IDE disks
-- /dev/md for RAID Soft
-- /dev/rd/c0d0p for raid Mylex
-- /dev/ad4s1 for Freebsd systems
+## Go further
 
-You can also use devfs.
-
-If you don't know which disk you have, or which is its partition table, use the commands: fdisk ou sfdisk. Here is an example with the commands and their output:
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">fdisk -l</span> <span class="blank">&nbsp;</span> <span class="output">Disk /dev/hda 40.0 GB, 40020664320 bytes</span> <span class="output">255 heads, 63 sectors/track, 4865 cylinders</span> <span class="output">Units = cylinders of 16065 * 512 = 8225280 bytes</span> <span class="blank">&nbsp;</span> <span class="output">Device Boot Start End Blocks Id System</span> <span class="output">/dev/hda1 * 1 1305 10482381 83 Linux</span> <span class="output">/dev/hda2 1306 4800 28073587+ 83 Linux</span> <span class="output">/dev/hda3 4801 4865 522112+ 82 Linux swap / Solaris</span> <span class="blank">&nbsp;</span> <span class="output">Disk /dev/sda 8254 MB, 8254390272 bytes</span> <span class="output">16 heads, 32 sectors/track, 31488 cylinders</span> <span class="output">Units = cylinders of 512 * 512 = 262144 bytes</span> <span class="blank">&nbsp;</span> <span class="output">Device Boot Start End Blocks Id System</span> <span class="output">/dev/sda1 1 31488 8060912 c W95 FAT32 (LBA)</span> </pre></div>
-Here the server is equipped with two devices.
-
-The device /dev/hda is followed by a *. This means that it's the bootable disk. Next, we can see the usb key.
-
-To mount / of the server, you just need to:
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">mount /dev/hda1 /mnt/</span> </pre></div>
-The /home should be on /dev/hda2. We mount it after / with the command mount /dev/hda2 /mnt/home.
-
-The /home is not necessarily on /dev/hda2 and it is possible that your data is in /var, with Plesk Panel for example. To be sure of the configuration you can mount / and next cat /mnt/etc/fstab.
-
-This file contains the server partitions when it boots on its hard disk.
-
-Here is an example:
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">cat /mnt/etc/fstab</span> <span class="output">/dev/hda1 / ext3 errors=remount-ro 0 1</span> <span class="output">/dev/hda2 /var ext3 defaults,usrquota,grpquota 1 2</span> <span class="output">/dev/hda3 swap swap defaults 0 0</span> <span class="output">/dev/devpts /dev/pts devpts gid=5,mode=620 0 0</span> <span class="output">/dev/shm /dev/shm tmpfs defaults 0 0</span> <span class="output">/dev/proc /proc proc defaults 0 0</span> <span class="output">/dev/sys /sys sysfs defaults 0 0</span> </pre></div>
-Therefor /dev/hda2 is /var and not /home.
-
-You must then mount like so:
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">mount /dev/hda2 /mnt/var .</span> </pre></div>
-
-#### Mounting disk with an ESXi datastore
-To mount an ESXi datastore, you have to use the vmfs-fuse tool.
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">vmfs-fuse /dev/sdX /mnt</span> </pre></div>
-
-### Step 3 &#58; Chroot
-We can now edit files by using the path /mnt/var/.... for example or also /mnt/etc/lilo.conf, but to be able to do certain things you must be in root on the system that it is installed on the disk and that can not be done in the rescue-mode root.
-
-For these operations you must use the command chroot:
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">chroot /mnt/</span> </pre></div>
-We can see above that after chrooting the command response puts me in the / of the server. Now you can execute commands on your system.
-
-
-### Step 4 &#58; Exiting Rescue Mode
-After the modifications, we must go back to the manager in order to restore in Boot our usual Boot method.
-
-[Log into your Manager](https://www.ovh.com/manager){.external}, **Cloud** section, then **Servers**, **Netboot** and select the **boot from disk**.
-
-Once the right kernel is selected and validated, we carry out a soft reboot of the machine.
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">sudo reboot</span> <span class="output">Broadcast message from root (pts/0) (Fri Jan 19 03:14:07 2038):</span> <span class="output">The system is going down for reboot NOW!</span> </pre></div>
+Join our community of users on <https://community.ovh.com/en/>.
