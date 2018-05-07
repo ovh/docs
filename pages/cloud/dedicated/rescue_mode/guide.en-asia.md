@@ -5,7 +5,7 @@ excerpt: How to use rescue mode on a dedicated server
 section: Diagnostic and rescue mode
 ---
 
-**Last updated 7/05/2018**
+**Last updated 7th May 2018**
 
 ## Objective
 
@@ -16,7 +16,7 @@ Rescue mode is a tool on your server that allows you to boot into a temporary op
 
 ## Requirements
 
-- You need to have root access to your [dedicated server](https://www.ovh.com.au/dedicated-servers/){.external} via the command line (SSH).
+- You need to have root access to your [dedicated server](https://www.ovh.com/asia/dedicated-servers/){.external} via the command line (SSH).
 
 
 ## Instructions
