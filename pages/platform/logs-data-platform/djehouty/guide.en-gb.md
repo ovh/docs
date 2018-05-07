@@ -5,11 +5,11 @@ order: 3
 section: Use cases
 ---
 
-**Last updated 5th March, 2018**
+**Last updated 07th May, 2018**
 
 ## Objective
 
-This guide will show you how to push your logs to Logs Data Platform using Python.
+This guide will show you how to push your logs to Logs Data Platform using Python.
 
 [Djehouty](https://github.com/ovh/djehouty){.external} is intended to be a set of logging formatters and handlers to easily send log entries into Logs Data Platform.
 
@@ -106,7 +106,7 @@ gelf_logger.addHandler(GELFTCPSocketHandler(
 gelf_logger.info('test')
 ```
 
-#### Example: use case with LTSV over TCP/TLS
+#### Example&#58; Use case with LTSV over TCP/TLS
 
 ```python
 import logging
@@ -154,4 +154,4 @@ ltsv_logger.info("Bonjour '%s'", 'Cedric', extra={"lang": 'fr'})
 - Documentation: [Guides](https://docs.ovh.com/gb/en/logs-data-platform/){.external}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms-lab){.external}
 - Mailing List: [paas.logs-subscribe@ml.ovh.net](mailto:paas.logs-subscribe@ml.ovh.net){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-discovery~productId~%27logs%29){.external}xcxcxcxcxcxcxcxcxcxcxcxcxcxcxcxcxcxcxcxc
