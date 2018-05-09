@@ -1,10 +1,9 @@
 ---
-title: Les certificats SSL sur les hebergements web
+title: 'Les certificats SSL sur les hebergements web'
 slug: les-certificats-ssl-sur-les-hebergements-web
-excerpt: Vous trouverez dans ce guide des informations sur les differents certificats SSL sur nos hebergements Web.
+excerpt: 'Vous trouverez dans ce guide des informations sur les differents certificats SSL sur nos hebergements Web.'
 section: SSL
 ---
-
 
 ## Les differents certificats SSL
 
@@ -23,12 +22,6 @@ RewriteRule ^(.*)$ https://www.votredomaine.fr/$1 [R=301,L]
 Si vous utilisez un CMS, il se peut qu'il gére de manière native cette redirection. Consultez la documentation de votre CMS afin d'en savoir plus.
 
 Cependant, le fonctionnement de votre site peut être altéré si vous utilisez votre certificat SSL. Avant de communiquer dessus, vérifier que votre site ne tombe pas dans les erreurs courantes liées au déploiement du SSL, rendez-vous pour cela sur ce guide : [Éviter les pièges du SSL avec mon site web](https://docs.ovh.com/fr/hosting/eviter-les-pieges-du-ssl-avec-mon-site-web/){.external}.
-
-> [!alert]
->
-> Les certificats SSL gratuits (Let's Encrypt) ne sont pas compatibles avec les
-> domaines contenants des caractères accentués (IDN)
-> 
 
 ### Certificats SSL payants
 Nous proposerons prochainement des certificats SSL payants (de type DV, OV et EV) vous permettant de disposer d'un meilleur chiffrement ou une vérification des données par les registres de certificats par exemple.
