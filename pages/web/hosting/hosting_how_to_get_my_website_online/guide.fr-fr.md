@@ -1,313 +1,150 @@
 ---
-title: Mettre mon site en ligne
+title: 'Mettre en ligne un site internet sur son hébergement web'
 slug: mettre-mon-site-en-ligne
-excerpt: Ce guide vous donnera les bases pour mettre en place votre site Internet en toute serenite
-section: Premiers pas
+excerpt: 'Apprenez à mettre en ligne un site internet sur votre hébergement web OVH'
+section: 'Premiers pas'
+order: 2
 ---
 
+**Dernière mise à jour le 09/05/2018**
 
-## Déposer mes fichiers en FTP
+## Objectif
 
-### Généralités
+Sur le web, il existe une multitude de sites internet. Qu'il s'agisse de créer un blog ou une boutique en ligne, de partager une passion ou de promouvoir une activité professionnelle, votre [hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} vous permet d'y héberger le site internet que vous souhaitez, tant que celui-ci est compatible avec la [configuration de nos infrastructures](http://pro.ovh.net/infos/){.external}.
 
-Un site Internet est fonctionnel et s'affiche correctement, uniquement s'il est placé dans le répertoire adéquat. Considérant la norme standard, vous devez placer les fichiers de votre site Internet dans le répertoire "www" de votre hébergement mutualisé afin qu'il s'affiche. Pour cela, il est nécessaire de passer par une étape de transfert de fichiers sur votre hébergement. Il faudra donc utiliser un logiciel utilisant ce protocole de transfert de fichiers ( **F** ile  **T** ransfert  **P** rotocol). 
+**Apprenez à mettre en ligne un site internet sur votre hébergement web OVH.**
 
-Nous utiliserons [FileZilla](http://www.filezilla.fr){.external}, qui est un logiciel gratuit (gratuiciel).
+## Prérequis
 
+- Disposer d'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
+- Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/){.external} qui sera l'adresse sur laquelle votre site sera accessible.
+- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-### Récupérer mes identifiants FTP
+## En pratique
 
-Lors de la souscription à votre offre d'hébergement mutualisé OVH, vous avez reçu un e-mail suite à l'installation de vos services. Cet e-mail contient - entre autres - les identifiants FTP nécessaires. En fonction de votre offre et de votre domaine rattaché à l'hébergement, le sujet de l'e-mail se présente comme suit :
+### Étape 1 : délimiter votre projet
 
-```bash
-cas d'une offre Perso commandée pour le domaine "votre-domaine.tld"
+Posséder une vision claire de votre objectif est primordial pour mener à bien votre projet. Que souhaitez-vous faire avec votre site internet ? Comment le mettre en ligne ? Plusieurs possibilités s'offrent à vous pour concrétiser votre projet sur un hébergement web OVH.
 
-[OVH-perso] votre-domaine.tld installé
-```
+- **Utiliser un site clés en main grâce aux modules en 1 clic OVH** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.). OVH en propose quatre déjà compatibles avec nos infrastructures avec ses modules en 1 clic à découvrir sur la page [« Créer un site Internet avec les modules en 1 clic »](https://www.ovh.com/fr/hebergement-web/site/){.external}.
 
-Contenu :
+- **Utiliser un site clés en main à installer manuellement** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.) que vous devrez installer vous-même sur votre hébergement web OVH.
 
+- **Créer vous même votre site internet** : cette solution est plus technique et requiert des compétences en programmation, mais offre la possibilité de créer un projet sur mesure.
 
-```bash
-[...]
-VOS CODES FTP
--------------
+- **Migrer un site internet déjà existant chez OVH** : cette solution peut s’avérer sensible si une interruption n’est pas envisageable pour le site concerné. Pour vous aider dans cette démarche, nous vous invitons également à consulter cette documentation : [« Migrer son site et ses e-mails vers OVH »](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}.
 
-Ces codes vous permettront de mettre votre site en ligne
-(Attention: Vos données doivent être mises en place dans le répertoire www)
 
-Serveur ftp          : ftp.cluster0XX.hosting.ovh.net
-Login ou utilisateur : loginftp
-Mot de passe         : mDpFtP
+Après avoir évalué les différentes possibilités ci-dessus, deux choix s'offrent à vous :
 
-[...]
-```
+- **vous souhaitez utiliser nos modules en 1 clic** : reportez-vous aux instructions décrites dans notre documentation [« Installer son site avec les modules en 1 clic »](https://docs.ovh.com/fr/hosting/modules-en-1-clic/){.external} ;
 
-C'est donc ce couple login et mot de passe dont vous aurez besoin pour vous connecter.
-
-Si depuis l'installation, le mot de passe FTP a été modifié, récupérer le mot de passe dans cet e-mail ne servira à rien. Cela voudrait dire que vous l'avez modifié depuis l'espace client. Le login quant à lui est immuable, conservez-le.
-
-
-### Dans l'espace client
-
-Une fois connecté à votre espace client, sélectionnez votre hébergement concerné dans la section "Hébergement". Cliquez sur l'onglet  **"FTP"** . Cliquez sur la roue crantée à droite de votre login puis "changer le mot de passe". Le login associé est rappelé à ce niveau. Saisissez le nouveau mot de passe souhaité, confirmez-le et cliquez sur "Valider". Ce mot de passe doit faire entre 8 et 12 caractères alphanumériques.
-
-Il faudra patienter quelques minutes le temps de sa prise en compte.
-
-
-### Utiliser FileZilla
-
-*Un guide est disponible concernant l'utilisation de FileZilla :* [Utilisation du logiciel FileZilla avec votre hébergement](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/){.external}
-
-Les éléments que vous devez déjà avoir en votre possession :
-
-- les fichiers de votre site internet
-- le fichier de sauvegarde de votre base de données (si nécessaire)
-
-Vos identifiants FTP :
-
-- hôte : ftp.cluster0XX.hosting.ovh.net
-- login : votre login FTP
-- mot de passe : le mot de passe associé (cf. paragraphes précédents)
-- port : 21 (pour connexion SSH : 22 - à partir de l'offre Pro)
-
-
-![hosting](images/img_1858.jpg){.thumbnail}
-
-
-## Base de données
-
-### Généralités
-
-Une base de données vous permet de stocker les informations en lien avec votre site internet, ou de vos applications.
-
-Elle permet de stocker différents types de données, le contenu de votre site, les urls de vos pages, les informations de vos visiteurs.
-
-Différents moteurs de base de données sont accessibles sur les offres mutualisées d'OVH :  **MySQL** ou **PostgreSQL**.
-
-
-### Créer la base de données
-
-Lors de l'installation de votre offre d'hébergement, la base de données incluse n'est pas automatiquement installée sur l'offre. Vous ne recevez donc pas automatiquement ces informations par e-mail. Vous devrez dans un premier temps créer votre base de données. Connectez-vous à votre espace client, sélectionnez l'hébergement concerné dans la section `Hébergement`{.action}.
-
-Puis dans le menu `SQL`{.action} et `Créer une base de données`{.action}
-
-
-![hosting](images/img_2743.jpg){.thumbnail}
-
-Sélectionnez le moteur de la base de données : "Mysql ou PostgreSQL." Sélectionnez le type de base de données puis "Suivant"
-
-Il vous sera alors demandé de saisir un nom d'utilisateur et un mot de passe.
-
-Un e-mail avec les identifiants de la base de données vous sera envoyé.
-
-Vous recevez par e-mail, quelques minutes après, les informations relatives à votre base de données.
-
-
-![hosting](images/img_2694.jpg){.thumbnail}
-
-
-### Récupérer mes identifiants SQL
-
-- Attention votre base de données n'est pas automatiquement créée lors de l'installation de l'offre d'hébergement.
-
-Un e-mail avec les identifiants de la base de données vous sera envoyé suite à la création. Vous pouvez retrouver cet e-mail depuis votre espace client. Une fois connecté, cliquez sur le menu Support puis Historique des e-mails.
-
-
-![hosting](images/img_2747.jpg){.thumbnail}
-
-Le sujet de l'e-mail se présente comme suit :
-
-
-```bash
-[MySQL] La base MySQL Nom_de_la_BDD
-```
-
-Contenu :
-
-
-```bash
-[...]
-
-Votre base MySQL a été installée sur notre serveur.
-
-Voici les données techniques:
------------------------------
-
-MySQL:
-Serveur        : mysql51-66.pro
-Utilisateur    : Nom_de_la_BDD
-Nom de la base : Nom_de_la_BDD
-Mot de passe   : ************
-
-[...]
-```
-
-Il vous est possible de modifier le mot de passe de votre base de données directement depuis l'espace client.
-
-- Attention : modifier le mot de passe de la base de données n'est pas anodin. Cela peut entrainer une coupure du site ou des services utilisant cette base de données.
-
-Si vous souhaitez modifier le mot de passe de votre base de données rendez-vous sur l'espace client, sélectionnez votre hébergement, puis rendez-vous dans : "SQL" -> Il faut cliquer sur la roue crantée à droite de votre base puis : "changer le mot de passe".
-
-Vous aurez la possibilité de mettre à jour le mot de passe de votre base de données.
-
-*Pensez à mettre à jour le fichier de configuration de votre site afin qu'il se connecte à la base de données avec le nouveau mot de passe si un site hébergé est présent sur l'hébergement lors de la modification.*
-
-
-### Connexion PhpMyAdmin
-
-Vous devez dans un premier temps vous connecter sur [l'interface de PhpMyAdmin](https://phpmyadmin.ovh.net/){.external}.
-
-Vous devrez renseignez les champs demandés :
-
-- *Serveur :* utilisateur .mysql.db (l'utilisateur est renseigné dans l'e-mail de création de la base de données).
-- *Utilisateur :* il est renseigné dans l'e-mail de création de la base de données.
-- *Mot de passe :* le mot de passe de votre base de données.
-- *Version :* vous pouvez choisir de vous connecter sur la base de données actuelle, ou sur une sauvegarde à 1 ou 7 jours.
-
-Renseignez les paramètres demandés et cliquez sur `Exécuter`{.action} pour vous connecter.
-
-
-![hosting](images/img_1960.jpg){.thumbnail}
-
-
-> [!success]
+- **vous ne souhaitez pas utiliser nos modules en 1 clic** : vous devrez réaliser l'installation de votre site manuellement sur votre hébergement. Pour cela, les informations présentes dans cette documentation pourront vous aider dans vos démarches, mais elles ne se substituent pas à l'aide d'un webmaster.
+ 
+> [!warning]
 >
-> - Pour les bases de données de type MYSQL4 veuillez utiliser le lien renseigné en dessous de l'interface de connexion.
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 >
 
-### Exporter une base de données
+### Étape 2 : mise en ligne des fichiers du site sur l'espace de stockage
 
-Comment exporter ma base de données SQL ? Quelles sont les différentes méthodes pour réaliser le backup de ma base de données ?
+Mettre en ligne un site manuellement sur un hébergement nécessite  plusieurs manipulations. Certaines d'entre elles peuvent être facultatives selon le site que vous installez et il peut exister plusieurs manières de les réaliser. Cependant, pour la plupart des projets actuels, on peut distinguer deux grandes étapes accompagnant la mise en ligne d'un site internet ; la première étant le téléchargement des fichiers du site sur l'espace de stockage.
 
-*Un guide est disponible concernant l'exportation d'une base de données :* [Exportation des bases de données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/){.external}
+Cette mise en ligne se réalise en différentes sous-étapes.
 
+#### 1. Récupérer les fichiers du site.
 
-![hosting](images/img_1932.jpg){.thumbnail}
+Assurez-vous d'être en possession des fichiers du site que vous souhaitez mettre en ligne. Si vous êtes en train de migrer un site internet déjà existant, récupérez ces fichiers chez votre ancien hébergeur.
 
+#### 2. Se connecter à l'espace de stockage.
 
-### Importer une base de données
+Grâce à un identifiant FTP, un mot de passe et une adresse de serveur, vous serez en mesure de vous connecter à votre espace de stockage. Ces éléments vous ont été communiqués dans l'e-mail vous notifiant l'installation de votre hébergement. Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/){.external}.
 
-Comment importer le backup de ma base de données MySQL ? Quelles sont les différentes méthodes pour le faire ?
+Pour récupérer l'adresse du serveur ou l'identifiant vous permettant d'accéder à votre espace de stockage, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `FTP - SSH`{.action}.
 
-*Un guide est disponible concernant l'importation de base de données MySql :* [Importation d’une base de données MySql]({https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/){.external}
+![siteinstallation](images/get-website-online-step1.png){.thumbnail}
 
+Une fois tous les éléments en votre possession, la connexion à l'espace de stockage peut s'effectuer de trois manières différentes :
 
-![hosting](images/img_1933.jpg){.thumbnail}
+- **utiliser le FTP Explorer d'OVH** : vous permet d'accéder à votre espace de stockage depuis votre navigateur internet. Pour l'utiliser, toujours depuis l'onglet `FTP - SSH`{.action}, cliquez sur le bouton `FTP Explorer`{.action} ;
 
+- **utiliser un logiciel compatible avec le protocole FTP** : vous devrez installer un logiciel compatible sur votre ordinateur (comme FileZilla par exemple). Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVH n'ayant pas créé celui-ci ;
 
-### Réparer - optimiser - analyser
+- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées, ainsi qu'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} spécifique sont nécessaires pour utiliser ce type d'accès.
 
-Il vous est possible de réparer, d'optimiser ou d'analyser les tables de votre base de données.
+#### 3. Télécharger les fichiers sur l'espace de stockage.
 
-Pour cela connectez-vous à votre base de données depuis [l'interface de PhpMyAdmin](https://phpmyadmin.ovh.net/){.external}.
+Une fois connecté à votre espace de stockage, il ne vous reste plus qu'à mettre en ligne les fichiers de votre site. **Nous vous invitons à être particulièrement attentif quant au répertoire sur lequel vous allez télécharger les fichiers.** Dans un cas d'utilisation classique, le site doit être téléchargé dans le dossier « www ». Cependant, si vous utilisez votre hébergement pour héberger plusieurs sites internet, vous avez sûrement déclarer plusieurs **Multisite**.
 
-Sélectionnez ensuite la table pour laquelle vous souhaitez réaliser l'une de ces opérations.
+Pour vérifier le dossier dans lequel doit être publié le site internet, positionnez-vous sur l'onglet `Multisite`{.action} depuis votre espace client OVH. Dans le tableau qui s'affiche, pour le domaine souhaité, regardez le `Dossier racine`{.action} qui s'affiche. Publiez alors les fichiers du site dans ce dernier.
 
-Cliquez ensuite sur `Opérations`{.action} en haut à droite.
+Il se peut que vous trouviez sur votre espace de stockage un fichier s'intitulant « index.html ». Ce dernier peut avoir été créé par OVH lors de l'installation de votre hébergement pour afficher une page par défaut sur votre site internet. Si tel est le cas, n'oubliez pas de le supprimer lors de la mise en ligne de vos fichiers.
 
-Vous pourrez réaliser les différentes opérations souhaitées dans l'onglet `maintenance`{.action} de la table.
+![siteinstallation](images/get-website-online-step2.png){.thumbnail}
 
+### Étape 3 : lier le site internet à une base de données
 
-![hosting](images/img_1961.jpg){.thumbnail}
-
-
-### Utilisation du SQL privé
-
-Vous souhaitez savoir comment utiliser le serveur SQL Privé ? Savoir comment importer et exporter vos données ?
-
-*Un guide est disponible concernant l'utilisation du serveur SQL Privé :* [Tout sur le SQL Privé](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/){.external}
-
-
-![hosting](images/img_1866.jpg){.thumbnail}
-
-
-## Installer un CMS grâce aux modules en 1 clic OVH
-
-### Guide d'installation
-
-Vous avez besoin de [créer votre site](https://www.ovh.com/fr/hebergement-web/site/){.external} très rapidement sans besoin de connaissances techniques sur la création de sites ?
-
-*Un guide est disponible concernant l'installation des modules en 1 clic chez OVH :* [Installer son site avec les modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/){.external}
-
-
-![hosting](images/img_1930.jpg){.thumbnail}
-
-
-## Installer manuellement mon CMS
-
-### WordPress nouvelle installation
-
-WordPress est un système de gestion de contenus (CMS) qui permet de créer et gérer facilement un site web ou un blog. Gratuit et libre, WordPress peut être personnalisé grâce à de nombreux thèmes et extensions.
-
-- Blog & Site
-
-![hosting](images/img_1873.jpg){.thumbnail}
-
-
-### Joomla nouvelle installation
-
-Joomla est un système de gestion de contenus (CMS) Gratuit et libre, Joomla peut être personnalisé grâce à de nombreux thèmes et extensions. Ce CMS est un logiciel web qui permet de gérer en ligne un site Internet ou Intranet dynamique en toute simplicité.
-
-- Site Web
-
-
-![hosting](images/img_1874.jpg){.thumbnail}
-
-### PrestaShop nouvelle installation
-
-PrestaShop est une application Web open source permettant de créer une boutique en ligne dans le but de réaliser du commerce électronique.
-
-- Boutique en ligne
-
-![hosting](images/img_1862.jpg){.thumbnail}
-
-
-## Informations utiles
-
-### Fichier .ovhconfig
-
-Vous cherchez à modifier la version de PHP de votre hébergement mutualisé ? Ou encore d'activer phpfpm ?
-
-*Un guide est disponible concernant l'utilisation et la configuration du fichier .ovhconfig** : *
-
-- [Activer l’optimisation PHP sur son hébergement mutualisé OVH](https://docs.ovh.com/fr/hosting/activer-loptimisation-php-sur-son-hebergement-mutualise-ovh/){.external}
-- [Configurer le PHP sur son hébergement web (Mutu 2014)](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/){.external}
-
-
-![hosting](images/img_1867.jpg){.thumbnail}
-
-### Librairies disponibles sur les hébergements mutualisés
-
-Information sur les librairies disponibles :
-
-
-|Librairie|Disponibilité|
-|---|---|
-|ffmepg|non activé|
-|GD|activé|
-|imagemagik|activé|
-|zend (opcache)|activé|
-|PDO|activé|
-|Zip - Gzip|activé|
-
-
-![hosting](images/img_1867.jpg){.thumbnail}
-
-
-> [!success]
+> [!primary]
 >
-> Attention : via l'utilisation de PHP-FPM, et pour des raisons de sécurité, les options suivantes sont désactivées (dépréciées par PHP) :
->
-> - register_globals
-> - magic_quotes_gpc
+> Cette partie est facultative si votre site internet n'a pas besoin d'être relié à une base de données.
 >
 
-### Optimiser les performances de mon site web
+Aujourd'hui, la quasi-totalité des systèmes de gestion de contenu (CMS), tels que WordPress et Joomla! utilisent une base de données pour y stocker des éléments dits dynamiques, comme des commentaires ou des articles. Une connexion entre les fichiers du site et la base de données est donc indispensable afin que le site internet puisse fonctionner correctement. Pour cela, il existe un fichier de configuration disposant des informations de la base qui permet cette connexion.
 
-Vous souhaitez diagnostiquer les lenteurs de votre site internet ? Ou vous souhaitez simplement améliorer les performances de votre site ?
+Selon le site internet utilisé, ce lien doit être créé manuellement ou via une interface générée par le site lui-même. Il est réalisé en différentes sous-étapes, dont certaines peuvent être facultatives.
 
-*Un guide est disponible concernant le diagnostic des lenteurs sur votre site, et l'optimisation de ces performances :* [Optimisation des performances de votre site](https://docs.ovh.com/fr/hosting/optimisation-performances-site/){.external}
+#### 1. Récupérer la base de données existante (facultatif).
+
+Si vous êtes en train de migrer un site internet, récupérez la base de données existante chez votre ancien hébergeur. S'il s'agit d'un nouveau site, poursuivez vers l'étape suivante.
+
+#### 2. Créer la base de données chez OVH (facultatif).
+
+Si vous disposez déjà d'une base de données que vous souhaitez utiliser (issue d'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} ou d'une solution [SQL Privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external} ou [Cloud DB](https://www.ovh.com/fr/cloud/cloud-databases/){.external}), munissez-vous du nom d'utilisateur et de son mot de passe, du nom de la base de données ainsi que de l'adresse du serveur. Poursuivez alors vers l'étape suivante.
+
+Si vous souhaitez créer une nouvelle base de données chez OVH, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `Base de données`{.action}.
+
+Dès lors, cliquez sur le bouton `Créer une base de données`{.action} ou, si ce dernier n'apparaît pas, sur `Actions`{.action} puis sur `Créer une base de données`{.action}. Suivez alors les informations qui s'affichent.
+
+![siteinstallation](images/get-website-online-step3.png){.thumbnail}
 
 
-![hosting](images/img_1865.jpg){.thumbnail}
+#### 3. Importer la base de données existante (facultatif).
+
+Si vous êtes en train de migrer un site internet, importez la base de données existante dans celle nouvellement créée. S'il s'agit d'un nouveau site, poursuivez vers l'étape suivante.
+
+Il existe plusieurs méthodes pour effectuer cet import. OVH en propose un depuis son espace client. Une fois positionné sur la liste des bases de données créées sur votre service dans votre espace client OVH, cliquez sur les trois points à droite de la base de données nouvellement créée, puis sur `Importer un fichier`{.action}. Suivez alors les informations qui s'affichent.
+
+![siteinstallation](images/get-website-online-step4.png){.thumbnail}
+
+#### 4. Lier le site à la base de données.
+
+Une fois la base de données disponible et les fichiers téléchargés sur votre espace de stockage, il ne vous reste plus qu'à les relier. Pour cela, vous devez être en possession des informations permettant de vous connecter à la base de données : un nom d'utilisateur, son mot de passe, le nom de la base de données ainsi que de l'adresse du serveur.
+
+Créer ce lien dépend du site internet que vous êtes en train de mettre en ligne. Celui-ci est inhérent à la configuration du site internet et non à OVH. Nous vous recommandons donc de vous rapprocher de l'éditeur de votre site ou de faire appel à un professionnel tel qu'un prestataire spécialisé si vous souhaitez obtenir de l'aide pour réaliser cette manipulation.
+
+### Étape 4 : accéder à votre site internet
+
+Une fois les fichiers téléchargés sur votre espace de stockage et la base de données liée à ce dernier (si votre site en utilise une), vous pouvez à présent accéder à votre site internet. Celui-ci devrait ainsi s'afficher correctement par le biais de votre navigateur.
+
+Si vous constatez que celui-ci ne s'affiche pas correctement, nous vous conseillons de :
+
+- **vérifier la configuration du nom de domaine** : il se peut que la configuration DNS du nom de domaine ne permette pas à celui-ci d'afficher le site que vous venez de télécharger sur votre hébergement web OVH. Assurez-vous que l'enregistrement A paramétré actuellement dans la zone DNS de votre domaine correspond bien à l'adresse IP de votre hébergement web OVH ;
+
+- **vous assurer qu'aucun fichier n'est manquant** : il se peut que lors du téléchargement des fichiers vers votre hébergement web OVH, vous ayez oublié des fichiers ou qu'une erreur se soit produite. Soyez tout de même vigilant lors de vos manipulations afin de ne pas briser le lien entre les fichiers du site et la base de données (si ce dernier en utilise une) ;
+
+- **vérifier que le code du site ne comporte pas d'erreur** : cette vérification est sûrement la plus technique, mais il se peut que les fichiers que vous avez téléchargés comportent des erreurs et ne permettent pas au serveur d'afficher correctement, voir pas du tout, votre site internet.
+
+Pour rappel, si vous rencontrez des difficultés lors de la mise en ligne de votre site internet, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service (du CMS installé par exemple).
+
+## Aller plus loin
+
+[Migrer son site et ses e-mails vers OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}.
+
+[Installer son site avec les modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/){.external}.
+
+[Modifier le mot de passe d’un utilisateur FTP](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/){.external}.
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
