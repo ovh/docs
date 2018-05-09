@@ -33,7 +33,19 @@ To list the disks, you can use the following command: MegaCli -PdList -aALL | Eg
 
 For example :
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -PdList -aALL | egrep "Slot|Device ID|Device Id"</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 0</span> <span class="output">Device Id: 6</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 1</span> <span class="output">Device Id: 5</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 2</span> <span class="output">Device Id: 4</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 3</span> <span class="output">Device Id: 7</span> </pre></div>
+<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -PdList -aALL | egrep "Slot|Device ID|Device Id"</span>
+<span class="output">Enclosure Device ID: 252</span>
+<span class="output">Slot Number: 0</span>
+<span class="output">Device Id: 6</span>
+<span class="output">Enclosure Device ID: 252</span>
+<span class="output">Slot Number: 1</span>
+<span class="output">Device Id: 5</span>
+<span class="output">Enclosure Device ID: 252</span>
+<span class="output">Slot Number: 2</span>
+<span class="output">Device Id: 4</span>
+<span class="output">Enclosure Device ID: 252</span>
+<span class="output">Slot Number: 3</span>
+<span class="output">Device Id: 7</span> </pre></div>
 The MegaCli -PdList -aALL command, without *GREP*, can display all information on a disk.
 
 
@@ -41,7 +53,19 @@ The MegaCli -PdList -aALL command, without *GREP*, can display all information o
 > [!primary]
 >
 > Equivalent via the storcli command :
-> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">storcli /call show all</span> <span class="blank">&nbsp;</span> <span class="output">PD LIST :</span> <span class="output">=======</span> <span class="blank">&nbsp;</span> <span class="output">----------------------------------------------------------------------------</span> <span class="output">EID:Slt DID State DG       Size Intf Med SED PI SeSz Model               Sp</span> <span class="output">----------------------------------------------------------------------------</span> <span class="output">252:0     6 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span> <span class="output">252:1     5 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span> <span class="output">252:2     4 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span> <span class="output">252:3     7 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span> <span class="output">----------------------------------------------------------------------------</span> </pre></div>
+> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">storcli /call show all</span>
+<span class="blank">&nbsp;</span>
+<span class="output">PD LIST :</span>
+<span class="output">=======</span>
+<span class="blank">&nbsp;</span>
+<span class="output">----------------------------------------------------------------------------</span>
+<span class="output">EID:Slt DID State DG       Size Intf Med SED PI SeSz Model               Sp</span>
+<span class="output">----------------------------------------------------------------------------</span>
+<span class="output">252:0     6 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span>
+<span class="output">252:1     5 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span>
+<span class="output">252:2     4 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span>
+<span class="output">252:3     7 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span>
+<span class="output">----------------------------------------------------------------------------</span> </pre></div>
 > This is an excerpt from the return of the storcli command. Other information is visible, like the listing of the disks according to the raids etc ...
 > 
 
@@ -51,7 +75,8 @@ With MegaCLI, you can also list disks according to the raids with this command: 
 #### Test and identify a disk &#58;
 To test a disk / identify its serial number, you must perform the smartctl command as follows :
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">smartctl -a -d megaraid,6 /dev/sda | grep Serial</span> <span class="output">Serial Number:    BTWH509602CV800CGN</span> </pre></div>
+<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">smartctl -a -d megaraid,6 /dev/sda | grep Serial</span>
+<span class="output">Serial Number:    BTWH509602CV800CGN</span> </pre></div>
 The number **6** in this command corresponds to the Device ID of the disk (*Device ID* under MegaCLI, and *DID* under storCLI).
 
 This information is found in the disc listing, performed in the previous step.
@@ -66,12 +91,19 @@ In our example, we have Enclosure ID **252**, Slot ID **0**, and Serial Number *
 
 The command to flash the disk is as follows: MegaCli -PdLocate -start -physdrv [EncID: SlotID] -a0.
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -PdLocate -start -physdrv[252:0] -a0</span> <span class="blank">&nbsp;</span> <span class="output">Adapter: 0: Device at EnclId-252 SlotId-0  -- PD Locate Start Command was successfully sent to Firmware</span> <span class="blank">&nbsp;</span> <span class="output">Exit Code: 0x00</span> </pre></div>
+<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -PdLocate -start -physdrv[252:0] -a0</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Adapter: 0: Device at EnclId-252 SlotId-0  -- PD Locate Start Command was successfully sent to Firmware</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Exit Code: 0x00</span> </pre></div>
 
 > [!primary]
 >
 > Equivalent via the storcli command :
-> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">rescue:~# storcli /call /e252 /s0 start locate</span> <span class="output">Controller = 0</span> <span class="output">Status = Success</span> <span class="output">Description = Start Drive Locate Succeeded.</span> </pre></div>
+> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">rescue:~# storcli /call /e252 /s0 start locate</span>
+<span class="output">Controller = 0</span>
+<span class="output">Status = Success</span>
+<span class="output">Description = Start Drive Locate Succeeded.</span> </pre></div>
 
 To turn the disc off after the operation, simply replace the "start" with "stop" in the above commands.
 
@@ -81,13 +113,60 @@ At this point, the procedure is ready to be performed. You can then provide the 
 ### Step 3&#58; Check the rebuilding
 Once you have completed the Datacenter, you can re-test the RAID and disks, and see that the replaced disk is in **Rebuild**.
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -PdList -aALL | egrep "Slot|Device ID|state"</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 0</span> <span class="output">Firmware state: Rebuild</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 1</span> <span class="output">Firmware state: Online, Spun Up</span> <span class="output">...</span> </pre></div><div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">storcli /call show all</span> <span class="output">PD LIST :</span> <span class="output">=======</span> <span class="blank">&nbsp;</span> <span class="output">----------------------------------------------------------------------------</span> <span class="output">EID:Slt DID State DG       Size Intf Med SED PI SeSz Model               Sp</span> <span class="output">----------------------------------------------------------------------------</span> <span class="output">252:0     6 Rbld   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span> <span class="output">252:1     5 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span> <span class="output">252:2     4 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span> <span class="output">252:3     7 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span> </pre></div>
+<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -PdList -aALL | egrep "Slot|Device ID|state"</span>
+<span class="output">Enclosure Device ID: 252</span>
+<span class="output">Slot Number: 0</span>
+<span class="output">Firmware state: Rebuild</span>
+<span class="output">Enclosure Device ID: 252</span>
+<span class="output">Slot Number: 1</span>
+<span class="output">Firmware state: Online, Spun Up</span>
+<span class="output">...</span> </pre></div><div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">storcli /call show all</span>
+<span class="output">PD LIST :</span>
+<span class="output">=======</span>
+<span class="blank">&nbsp;</span>
+<span class="output">----------------------------------------------------------------------------</span>
+<span class="output">EID:Slt DID State DG       Size Intf Med SED PI SeSz Model               Sp</span>
+<span class="output">----------------------------------------------------------------------------</span>
+<span class="output">252:0     6 Rbld   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span>
+<span class="output">252:1     5 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span>
+<span class="output">252:2     4 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span>
+<span class="output">252:3     7 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span> </pre></div>
 The RAID is in state **Degraded** the time of reconstruction, this is normal.
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -LDInfo -Lall -aALL</span> <span class="blank">&nbsp;</span> <span class="blank">&nbsp;</span> <span class="output">Adapter 0 -- Virtual Drive Information:</span> <span class="output"> Drive: 0 (Target Id: 0)</span> <span class="output">Name                :</span> <span class="output">RAID Level          : Primary-1, Secondary-0, RAID Level Qualifier-0</span> <span class="output">Size                : 1.454 TB</span> <span class="output">Sector Size         : 512</span> <span class="output">Is VD emulated      : Yes</span> <span class="output">Mirror Data         : 1.454 TB</span> <span class="output">State               : Degraded</span> <span class="output">Strip Size          : 256 KB</span> <span class="output">Number Of Drives per span:2</span> <span class="output">Span Depth          : 2</span> <span class="output">Default Cache Policy: WriteThrough, ReadAhead, Direct, No Write Cache if Bad BBU</span> <span class="output">Current Cache Policy: WriteThrough, ReadAhead, Direct, No Write Cache if Bad BBU</span> <span class="output">Default Access Policy: Read/Write</span> <span class="output">Current Access Policy: Read/Write</span> <span class="output">Disk Cache Policy   : Enabled</span> <span class="output">Encryption Type     : None</span> <span class="output">Bad Blocks Exist: No</span> <span class="output">PI type: No PI</span> <span class="blank">&nbsp;</span> <span class="output">Is VD Cached: No</span> <span class="blank">&nbsp;</span> <span class="output">Exit Code: 0x00</span> </pre></div>
+<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -LDInfo -Lall -aALL</span>
+<span class="blank">&nbsp;</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Adapter 0 -- Virtual Drive Information:</span>
+<span class="output"> Drive: 0 (Target Id: 0)</span>
+<span class="output">Name                :</span>
+<span class="output">RAID Level          : Primary-1, Secondary-0, RAID Level Qualifier-0</span>
+<span class="output">Size                : 1.454 TB</span>
+<span class="output">Sector Size         : 512</span>
+<span class="output">Is VD emulated      : Yes</span>
+<span class="output">Mirror Data         : 1.454 TB</span>
+<span class="output">State               : Degraded</span>
+<span class="output">Strip Size          : 256 KB</span>
+<span class="output">Number Of Drives per span:2</span>
+<span class="output">Span Depth          : 2</span>
+<span class="output">Default Cache Policy: WriteThrough, ReadAhead, Direct, No Write Cache if Bad BBU</span>
+<span class="output">Current Cache Policy: WriteThrough, ReadAhead, Direct, No Write Cache if Bad BBU</span>
+<span class="output">Default Access Policy: Read/Write</span>
+<span class="output">Current Access Policy: Read/Write</span>
+<span class="output">Disk Cache Policy   : Enabled</span>
+<span class="output">Encryption Type     : None</span>
+<span class="output">Bad Blocks Exist: No</span>
+<span class="output">PI type: No PI</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Is VD Cached: No</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Exit Code: 0x00</span> </pre></div>
 Finally, you can also check the progress of the rebuild with the following command MegaCli -PDRbld -ShowProg -PhysDrv [EncID: SlotID] -a0
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -PDRbld -ShowProg -PhysDrv [252:0] -a0</span> <span class="blank">&nbsp;</span> <span class="output">Rebuild Progress on Device at Enclosure 252, Slot 0 Completed 93% in 0 Minutes.</span> <span class="blank">&nbsp;</span> <span class="output">Exit Code: 0x00</span> </pre></div>
+<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -PDRbld -ShowProg -PhysDrv [252:0] -a0</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Rebuild Progress on Device at Enclosure 252, Slot 0 Completed 93% in 0 Minutes.</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Exit Code: 0x00</span> </pre></div>
 
 > [!primary]
 >
@@ -208,7 +287,8 @@ For this we will need the **Enclosure ID**, the **Slot Number**, and **Serial Nu
 ### Step 1 &#58; Verify that the server has a MegaRaid card
 Before continuing, we will verify that the server has a MegaRAID card.
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">lspci | grep -i mega</span> <span class="output">0000:81:00.0 Mass storage controller: Avago (LSI / Symbios Logic) MegaRAID SAS Fusion Controller [vmhba2]</span> </pre></div>
+<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">lspci | grep -i mega</span>
+<span class="output">0000:81:00.0 Mass storage controller: Avago (LSI / Symbios Logic) MegaRAID SAS Fusion Controller [vmhba2]</span> </pre></div>
 Via the Vsphere client, you can also find this information in Manage, then Hardware Tab.
 
 
@@ -226,7 +306,19 @@ At first, we will list the disks present on the server while being able to recov
 
 
 #### List of disks
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdList -aALL | egrep "Slot|Device ID|Device Id"</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 0</span> <span class="output">Device Id: 4</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 1</span> <span class="output">Device Id: 7</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 2</span> <span class="output">Device Id: 5</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 3</span> <span class="output">Device Id: 6</span> </pre></div>
+<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdList -aALL | egrep "Slot|Device ID|Device Id"</span>
+<span class="output">Enclosure Device ID: 252</span>
+<span class="output">Slot Number: 0</span>
+<span class="output">Device Id: 4</span>
+<span class="output">Enclosure Device ID: 252</span>
+<span class="output">Slot Number: 1</span>
+<span class="output">Device Id: 7</span>
+<span class="output">Enclosure Device ID: 252</span>
+<span class="output">Slot Number: 2</span>
+<span class="output">Device Id: 5</span>
+<span class="output">Enclosure Device ID: 252</span>
+<span class="output">Slot Number: 3</span>
+<span class="output">Device Id: 6</span> </pre></div>
 We have therefore recovered the ID of our HS **Slot Number 1** which is **Device ID 7**, and its **Enclosure ID 252**.
 
 
@@ -244,19 +336,54 @@ In this case, we have 4 discs that have as **Enclosure ID** 252, and as **Slot N
 
 We will use the following command: ./MegaCli -PdLocate -stop -physdrv [EncID: SlotID] -a0
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdLocate -stop -physdrv[252:0] -a0</span> <span class="blank">&nbsp;</span> <span class="output">Adapter: 0: Device at EnclId-252 SlotId-0  -- PD Locate Stop Command was successfully sent to Firmware</span> <span class="blank">&nbsp;</span> <span class="output">Exit Code: 0x00</span> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdLocate -stop -physdrv[252:1] -a0</span> <span class="blank">&nbsp;</span> <span class="output">Adapter: 0: Device at EnclId-252 SlotId-1  -- PD Locate Stop Command was successfully sent to Firmware</span> <span class="blank">&nbsp;</span> <span class="output">Exit Code: 0x00</span> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdLocate -stop -physdrv[252:2] -a0</span> <span class="blank">&nbsp;</span> <span class="output">Adapter: 0: Device at EnclId-252 SlotId-2  -- PD Locate Stop Command was successfully sent to Firmware</span> <span class="blank">&nbsp;</span> <span class="output">Exit Code: 0x00</span> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdLocate -stop -physdrv[252:3] -a0</span> <span class="blank">&nbsp;</span> <span class="output">Adapter: 0: Device at EnclId-252 SlotId-3  -- PD Locate Stop Command was successfully sent to Firmware</span> <span class="blank">&nbsp;</span> <span class="output">Exit Code: 0x00</span> </pre></div>
+<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdLocate -stop -physdrv[252:0] -a0</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Adapter: 0: Device at EnclId-252 SlotId-0  -- PD Locate Stop Command was successfully sent to Firmware</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Exit Code: 0x00</span>
+<span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdLocate -stop -physdrv[252:1] -a0</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Adapter: 0: Device at EnclId-252 SlotId-1  -- PD Locate Stop Command was successfully sent to Firmware</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Exit Code: 0x00</span>
+<span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdLocate -stop -physdrv[252:2] -a0</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Adapter: 0: Device at EnclId-252 SlotId-2  -- PD Locate Stop Command was successfully sent to Firmware</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Exit Code: 0x00</span>
+<span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdLocate -stop -physdrv[252:3] -a0</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Adapter: 0: Device at EnclId-252 SlotId-3  -- PD Locate Stop Command was successfully sent to Firmware</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Exit Code: 0x00</span> </pre></div>
 We now switch to the disk we want to replace to turn on the LED.
 
 To do this, we use the following command: ./MegaCli -PdLocate -start -physdrv[EncID:SlotID] -a0
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdLocate -start -physdrv[252:1] -a0</span> <span class="blank">&nbsp;</span> <span class="output">Adapter: 0: Device at EnclId-252 SlotId-1  -- PD Locate Start Command was successfully sent to Firmware</span> <span class="blank">&nbsp;</span> <span class="output">Exit Code: 0x00</span> </pre></div>
+<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdLocate -start -physdrv[252:1] -a0</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Adapter: 0: Device at EnclId-252 SlotId-1  -- PD Locate Start Command was successfully sent to Firmware</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Exit Code: 0x00</span> </pre></div>
 At this point, the procedure is ready to be performed. You can then provide the information previously gathered (**Enclosure ID, Slot Number or Slot ID, Serial Number**), and indicate that the disc is turned on.
 
 
 ### Step 4 &#58; Check the rebuilding
 Once you have completed the Datacenter, you can re-test RAID and disks to verify that the replaced disk is in *Rebuild*.
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdList -aALL | egrep "Slot|Device ID|state"</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 0</span> <span class="output">Firmware state: Online, Spun Up</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 1</span> <span class="output">Firmware state: Rebuild</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 2</span> <span class="output">Firmware state: Online, Spun Up</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 3</span> <span class="output">Firmware state: Online, Spun Up</span> </pre></div>
+<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdList -aALL | egrep "Slot|Device ID|state"</span>
+<span class="output">Enclosure Device ID: 252</span>
+<span class="output">Slot Number: 0</span>
+<span class="output">Firmware state: Online, Spun Up</span>
+<span class="output">Enclosure Device ID: 252</span>
+<span class="output">Slot Number: 1</span>
+<span class="output">Firmware state: Rebuild</span>
+<span class="output">Enclosure Device ID: 252</span>
+<span class="output">Slot Number: 2</span>
+<span class="output">Firmware state: Online, Spun Up</span>
+<span class="output">Enclosure Device ID: 252</span>
+<span class="output">Slot Number: 3</span>
+<span class="output">Firmware state: Online, Spun Up</span> </pre></div>
 
 > [!primary]
 >
@@ -265,4 +392,8 @@ Once you have completed the Datacenter, you can re-test RAID and disks to verify
 
 You can also check the progress of the rebuild with the following command :
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PDRbld -ShowProg -PhysDrv [252:1] -a0</span> <span class="blank">&nbsp;</span> <span class="output">Rebuild Progress on Device at Enclosure 252, Slot 1 Completed 93% in 0 Minutes.</span> <span class="blank">&nbsp;</span> <span class="output">Exit Code: 0x00</span> </pre></div>
+<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PDRbld -ShowProg -PhysDrv [252:1] -a0</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Rebuild Progress on Device at Enclosure 252, Slot 1 Completed 93% in 0 Minutes.</span>
+<span class="blank">&nbsp;</span>
+<span class="output">Exit Code: 0x00</span> </pre></div>
