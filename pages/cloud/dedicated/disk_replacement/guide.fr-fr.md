@@ -20,7 +20,6 @@ Si vous constatez un défaut de disque ou que notre système vous a envoyé une 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 > 
 
-
 ## Prérequis
 
 - Être connecté en SSH à votre [serveur dédié OVH](https://www.ovh.com/fr/serveurs_dedies/){.external} avec l'accès *root* (Linux).
