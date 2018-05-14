@@ -6,8 +6,10 @@ section: Introduction
 order: 1
 ---
 
+**Last updated 15th May, 2018**
 
-## What are Geo Time series?
+
+## What are Time series?
 
 
 > [!primary]
@@ -29,6 +31,7 @@ Like in this small example, a graph with a value as an axis, and a time as the s
 
 
 ## Where can we find Time series?
+
 **Time Series are everywhere**, here are just few examples:
 
 - The evolution of the stock exchange

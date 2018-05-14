@@ -3,10 +3,13 @@ title: Introduction to Time Series
 slug: introduction
 excerpt: General concepts about Time Series
 section: Introduction
+order: 1
 ---
 
+**Last updated 15th May, 2018**
 
-## What are Geo Time series?
+
+## What are Time series?
 
 
 > [!primary]
@@ -17,17 +20,18 @@ section: Introduction
 We call a Time Series, a **sequence** of evolving values over time. These values, named **data points** or **measurements**, are added as they come, with a stable frequency or not.
 
 
-![introduction](images/intro_1.png){.thumbnail}
+![introduction](images/intro_1.png)
 
 To ease readability, let's visualise with colors instead of degrees values. We can use the Celcius degree as an Y axis to graph the temperature evolution along the day.
 
 
-![introduction](images/intro_2.png){.thumbnail}
+![introduction](images/intro_2.png)
 
 Like in this small example, a graph with a value as an axis, and a time as the second one is just a Time Series visualisation.
 
 
 ## Where can we find Time series?
+
 **Time Series are everywhere**, here are just few examples:
 
 - The evolution of the stock exchange
@@ -52,7 +56,7 @@ In the draw above, we have considered a simple series named **temperature**, but
 This why we need **labels** (or tags, dimensions,...) to enhance the data modeling. And now our data model looks like :
 
 
-![labels](images/intro_labels.png){.thumbnail}
+![labels](images/intro_labels.png)
 
 All rooms with be a simple value associated with a key *room*.
 
