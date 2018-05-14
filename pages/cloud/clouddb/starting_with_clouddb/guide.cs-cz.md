@@ -1,223 +1,179 @@
 ---
-title: Začínáme s CloudDB
+title: 'Začínáme s CloudDB'
 slug: zaciname-s-clouddb
-legacy_guide_number: 2216
-excerpt: Databáze snadno a rychle!
+excerpt: 'Zjistěte, jak používat službu CloudDB'
+section: 'První kroky'
 ---
 
+**Poslední aktualizace 11/05/2018**
 
-> [!faq]
+## Cíl
+
+Řešení CloudDB nabízí přístup k databázové instanci s garantovanými a dedikovanými zdroji. Jedná se o vysoce výkonou a flexibilní službu, určenou zejména pro zákazníky se specifickými požadavky na správu a provoz databáze.
+
+**Zjistěte, jak používat službu CloudDB.**
+
+## Prerekvizity
+
+- [CloudDB instance](https://www.ovh.cz/cloud/cloud-databases/){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+
+## Postup
+
+### Přístup do administračního rozhraní instance
+
+V levém postranním panelu [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} klikněte na sekci `Databáze`{.action} a vyberte svou databázovou instanci. Přejděte do záložky `Obecné informace`{.action}.
+
+> [!primary]
 >
-> Potřebujete pro své webové stránky či aplikaci databázi, ale unavuje Vás zabývat se její správou a údržbou?
->> 
->> Nezoufejte! Služba CloudDB je tu pro Vás.
->> 
+> Název služby CloudDB v Zákaznickém prostoru OVH obsahuje část Vašeho zákaznického identifikátoru (NIC-handle) a končí třemi číslicemi (001 pro první nainstalovanou službu CloudDB, 002 pro druhou atd.).
 >
 
-## Úvod
+V této záložce naleznete přehled těch nejdůležitějších informací týkajících se Vaší instance. Věnujte prosím chvíli svého času kontrole správnosti zobrazovaných údajů a ověřte, zda odpovídají níže uvedeným instrukcím.
 
-### Proč spravovaná databáze od OVH?
+|Informace|Popis|
+|---|---|
+|Stav služby|Zobrazuje aktuální stav instance (restart, spuštěno, suspendováno). Instance musí být před provedením jakýchkoli zásahů nejdříve restartována.|
+|Typ|Zobrazuje typ databázového systému, který je na serveru nainstalován.|
+|Verze|Udává verzi databázového systému, který je na serveru nainstalován. Ujistěte se prosím, zda jsou Vaše webové stránky s touto verzí kompatibilní.|
+|RAM|Uvádí informace o dostupné operační paměti a jejích případných přetečeních. Vaše CloudDB instance disponuje dedikovanou a garantovanou RAM. V případě potřeby můžete paměť RAM škálovat. Zároveň si můžete nastavit upozornění na její nadměrné využití.|
+|Infrastruktura|Zobrazuje typ infrastruktury, na níž Vaše instance běží. Jedná se o interní označení pro OVH infrastrukturu.|
+|Datacentrum|Zobrazuje informace o datacentru, v němž je daná instance vytvořena.  Ujistěte se prosím, že je Vaše webhostingové řešení hostováno ve stejném datacentru, jako Vaše databázová instance.|
+|Host|Udává informace o serveru, na němž instance běží. Jedná se o interní označení společnosti OVH, které se může objevit v oficiální komunikaci týkající se případných [incidentů](http://travaux.ovh.net/){.external}.|
 
-Inspirací pro vytvoření služby CloudDB byla zcela **triviální pravda**: dokonce i když víte, jak na to, nemusí být správa databáze vždy Vaší hlavní **prioritou**.
-
-Zabezpečení, aktualizace, monitoring, správa uživatelských práv, optimalizace výkonu apod... ze všech těchto úkonů se může postupem času vyklubat až příliš velký žrout Vašeho času a pozornosti.
-
-**Proč tedy nepřenechat komplexní správu své databáze na společnosti OVH a nezískat tak více prostoru pro to, co je skutečným předmětem Vašeho podnikání?**
-
-To je hlavním smyslem této služby. Ať jste úplný začátečník, profesionál s omezenými požadavky či provozovatel rozsáhlého clusteru, naším cílem je poskytnout Vám ideální podmínky pro růst Vašeho podnikání.
-
-
-### Výhody služby CloudDB
-
-**Rychlost a jednoduchost:**
-
-- Vytváření SQL databází prostřednictvím Zákaznického prostoru OVH.
-- Neomezené množství databází (v závislosti na dostupném diskovém prostoru).
-- Až 200 současných připojení.
-- Správa uživatelů a uživatelských práv prostřednictvím Zákaznického prostoru OVH.
-- Okamžitý přístup k metrikám a logům.
-
-**Vysoký výkon:**
-
-- Garantované zdroje RAM.
-- Prověřená infrastruktura.
-
-**Zabezpečení:**
-
-- 24/7 monitoring zajišťovaný našimi bezpečnostními experty.
-- Automatické zálohování na denní bázi.
-- Povinná IP autorizace.
-
-**Flexibilita:**
-
-- Kompatibilita se všemi produkty společnosti OVH (kromě sdíleného webhostingu) a obecně se všemi produkty připojenými k internetu.
-- Možnost volby verze SQL a přechodu na vyšší verzi služby (kdykoli).
-
-
-### Nabízené databáze
-
-V rámci služby CloudDB máte na výběr z několika databázových systémů (verzí serveru).
-
-**SQL**
-
-- MariaDB
-- PostgreSQL
-- MySQL
-
-Každá instance disponuje svými vlastními dedikovanými zdroji. Tyto zdroje jsou přerozdělovány mezi jednotlivé databáze.
-
-
-## Objednání služby CloudDB
-
-### Přihlášení do Zákaznického prostoru OVH
-
-Ze všeho nejdříve přejděte do Zákaznického prostoru OVH na adrese [https://www.ovh.cz/manager/web](https://www.ovh.cz/manager/web){.external}
-
-
-### Vytvoření objednávky
-
-V levém sloupci vyberte záložku **"Databáze"** a následně klikněte na tlačítko `Objednat databázi`{.action}.
-
-
-![commande manager](images/bouton-commande_EN.PNG){.thumbnail}
-
-V rámci prvního kroku objednávky vyberte následující možnost:
-
-- **"CloudDB"**
-
-Následně zadejte své individuální požadavky pro databázi:
-
-- **"Verze serveru"**
-- **"Velikost RAM"**
-- **"Datacentrum"**
-- **"Časové období"**
-
-
-![commande choix](images/choix-commande_EN.PNG){.thumbnail}
-
-Potvrďte souhlas se smluvními podmínkami a klikněte na tlačítko `Generovat objednávku`{.action}.
-
-
-![commande generation](images/generer-commande_EN.PNG){.thumbnail}
-
-
-## Obecné informace
-
-Po uhrazení objednávky se Vám v rámci Zákaznického prostoru zpřístupní rozhraní pro správu Vaší instance.
-
-
-![commande generation](images/infos-generales_EN.png){.thumbnail}
-
-
-## Vytvoření databáze a uživatelských účtů 
+![clouddb](images/clouddb-general-information.png){.thumbnail}
 
 ### Vytvoření databáze
 
-Pro vytvoření databáze přejděte do záložky **"Databáze"** a následně klikněte na tlačítko `Přidat databázi`{.action}.
+> [!primary]
+>
+> Tato část se nevztahuje na databázový systém Redis.
+>
+
+Chcete-li vytvořit novou databázi, přejděte do záložky `Databáze`{.action} a klikněte na tlačítko `Přidání databáze`{.action}.
 
 
-![creation bdd](images/creation-bdd_EN.png){.thumbnail}
+![clouddb](images/clouddb-add-database.png){.thumbnail}
 
-Zadejte název databáze a klikněte na tlačítko `Potvrdit`{.action}.
+V dialogovém okně sloužícím pro vytvoření nové databáze zároveň můžete:
 
+-  **Vytvořit uživatele**: uživatel bude na dané databázi moci provádět úkony ve stanoveném rozsahu (čtení, zápis apod.).
 
-![creation bdd](images/validation-bdd_EN.png){.thumbnail}
+- **Přidat autorizovanou IP adresu**: požadavky pocházející z této adresy budou automaticky autorizovány pro přístup k Vaší databázi.
 
+V závislosti na zvolených parametrech vyplňte požadované informace a klikněte na tlačítko `Schválit`{.action}.
 
-### Vytvoření uživatelského účtu 
+|Informace|Popis|
+|---|---|
+|Název databáze|Pojmenujte svou databázi.|
+|Uživatelské jméno|Zadejte jméno uživatele, který se bude moci k Vaší databázi připojit a provádět na ní příslušné operace (pouze pokud je zaškrtnuté políčko „*Vytvořit uživatele*“).|
+|Práva|Určete rozsah práv asociovaných s daným uživatelem. Pro standardní použití vyberte `Administrativní kontakt`{.action} (pouze pokud je zaškrtnuté políčko „*Vytvořit uživatele*“).|
+|Heslo|Zadejte uživatelské heslo a potvrďte jej (pouze pokud je zaškrtnuté políčko „*Vytvořit uživatele*“).|
+|IP/maska|Zadejte IP adresu či masku IP adresy, z níž pocházející požadavky budou automaticky autorizovány pro přístup k Vaší databázi (pouze pokud je zaškrtnuté políčko „*Přidat autorizovanou IP adresu*“).|
 
-Abyste mohli svou službu CloudDB začít naplno využívat, musíte nejprve vytvořit uživatele se specifickými právy pro připojení do databáze.
+> [!warning]
+>
+> Z bezpečnostních důvodů se prosím při vyplňování formuláře řiďte uvedenými pokyny.
+>
 
-Přejděte do záložky **"Uživatelé a oprávnění"** a klikněte na tlačítko `Přidat uživatele`{.action}.
+![clouddb](images/clouddb-add-database-step2.png){.thumbnail}
 
+### Vytvoření uživatele (volitelné)
 
-![hosting](images/creation-user_EN.png){.thumbnail}
+> [!primary]
+>
+> Tato část se nevztahuje na databázový systém Redis.
+>
 
-Zadejte **uživatelské jméno** a **heslo** a klikněte na tlačítko `Potvrdit`{.action}.
+Pokud jste uživatele vytvořili společně s databází, můžete tento krok přeskočit. Náročnější projekty však mohou vyžadovat vícero uživatelů s přístupem k databázi. Jeden z uživatelů přiřazených k databázi může mít například oprávnění pro čtení a zápis, zatímco jiný pouze pro čtení.
 
+ Chcete-li vytvořit nového uživatele, přejděte do záložky `Uživatelé a oprávnění`{.action} a klikněte na tlačítko `Přidat uživatele`{.action}.
 
-![hosting](images/validation-user_EN.png){.thumbnail}
+![clouddb](images/clouddb-add-user.png){.thumbnail}
 
+Vyplňte požadované informace a klikněte na tlačítko `Schválit`{.action}.
 
-### Správa uživatelských práv
+|Informace|Popis|
+|---|---|
+|Uživatelské jméno|Uživatelské jméno: zadejte jméno uživatele, který se bude moci k Vaší databázi připojit a provádět na ní příslušné operace. Příslušná oprávnění pro práci s databází budete moci novému uživateli přidělit v následující fázi.|
+|Heslo|Zadejte uživatelské heslo a potvrďte jej.|
 
-Přejděte do záložky **"Databáze"** a následně rozklikněte **"ozubené kolečko"** u příslušné databáze. Klikněte na tlačítko `Správa uživatelů`{.action}.
+> [!warning]
+>
+> Z bezpečnostních důvodů se prosím při vyplňování formuláře řiďte uvedenými pokyny.
+>
 
+![clouddb](images/clouddb-add-user-step2.png){.thumbnail}
 
-![hosting](images/gestion-user_EN.png){.thumbnail}
+Jakmile je uživatel vytvořen, je nutné mu přidělit oprávnění pro práci s databází (např. čtení, zápis nebo mazání dat). Za tímto účelem rozklikněte v tabulce uživatelů ikonku s třemi tečkami a vyberte možnost `Správa oprávnění`{.action}. Vyberte požadovaná oprávnění. Pro standardní použití vyberte možnost Administrativní kontakt.
 
-Vyberte práva, která si k danému uživateli přejete přiřadit.
+![clouddb](images/clouddb-add-rights.png){.thumbnail}
 
+### Import databáze
 
-![hosting](images/validation-droit_EN.png){.thumbnail}
+> [!primary]
+>
+> Tato část je relevantní pouze v případě, že si přejete provést import již existující databáze. V opačném případě přejděte k následující části.
+>
 
-Na výběr máte z následujících možností:
+Existuje několik způsobů, jak databázi importovat. V zákaznickém prostoru OVH je za tímto účelem k dispozici speciálně navržený nástroj. V závislosti na svých individuálních potřebách a znalostech můžete samozřejmě využít i jiná dostupná řešení.
 
-- **Administrátor:** uživatel může spouštět dotazy **Select/Insert/Update/Delete/Create/Alter/Drop**.
-- **Read/Write:** uživatel může spouštět dotazy **Select/Insert/Update/Delete**.
-- **Read :** uživatel může spouštět dotaz **Select**.
-- **Žádná práva:** uživatel nemůže v rámci dané databáze spouštět žádné dotazy.
+V následujících krocích se dozvíte, jak provést import databáze pomocí Zákaznického prostoru OVH.
 
+- **Fáze 1: přístup do rozhraní pro import**
 
-## IP autorizace
+Přejděte záložky `Databáze`{.action}, klikněte na ikonu ozubeného kolečka u příslušné databáze a následně vyberte možnost `Nahrát soubor`{.action}. V dialogovém okně zaškrtněte políčko `Importovat nový soubor`{.action} a klikněte na tlačítko `Další`{.action}.
 
-### Přidání serveru
+![clouddb](images/clouddb-add-import-step1.png){.thumbnail}
 
-Pro zpřístupnění Vaší služby CloudDB je nejprve zapotřebí specifikovat IP adresy, které budou oprávněny připojovat se k Vaší instanci.
+- **Fáze 2: výběr a odeslání souboru**
 
-Přejděte do záložky **"Autorizované IP adresy"** a klikněte na tlačítko `Přidat IP adresu/masku`{.action}.
+Pro snadnější vyhledání soubor pojmenujte. Pomocí tlačítka **Procházet...** nahrajte soubor ze svého počítače. Následně klikněte na tlačítko `Odeslat`{.action}. Vyčkejte, dokud se nezobrazí hlášení o úspěšném nahrání souboru. Poté klikněte na tlačítko `Další`{.action}.
 
+![clouddb](images/clouddb-add-import-step2.png){.thumbnail}
 
-![hosting](images/ip-autorisee_EN.png){.thumbnail}
+- **Fáze 3: import databáze**
 
-Zadejte IP adresu svého serveru či sítě a klikněte na tlačítko `Potvrdit`{.action}.
+V poslední fázi navolte přídavné možnosti a následně klikněte na tlačítko `Schválit`{.action}.
 
+|Přídavné možnosti|Popis|
+|---|---|
+|Vyprázdnit aktuální databázi|Obsah databáze bude kompletně vymazán a nahrazen obsahem importované zálohy.|
+|Po ukončení importu odeslat e-mail|O dokončení importu databáze budete informováni prostřednictvím e-mailu.|
 
-![hosting](images/validation-ip_EN.png){.thumbnail}
+![clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
 
+### Autorizace IP adresy
 
-## Práce s databází
+Pro zprovoznění přístupu k Vaší CloudDB instanci je zapotřebí specifikovat jednotlivé IP adresy či rozsahy IP adres, které se k Vašim databázím smějí připojit. Za tímto účelem přejděte do záložky `Autorizované IP adresy`{.action} a klikněte na tlačítko `Přidat IP adresu/masku`{.action}.
 
-V závislosti na druhu Vaší činnosti a typu databáze existuje velké množství způsobů, jak můžete svou databázi používat.
+![clouddb](images/clouddb-add-ip.png){.thumbnail}
 
-Podívejme se nyní a vzorový příklad práce s databází.
+Do pole `IP/maska`{.action} zadejte požadovanou IP adresu či masku. V případě zájmu vyplňte krátký popis. V závislosti na tom, zda si danou IP adresu či masku přejete autorizovat pouze pro přístup k databázím či SFTP (nebo obojímu), zaškrtněte příslušná pole. Nakonec klikněte na tlačítko `Schválit`{.action}.
 
+![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
-### Instalace redakčního systému WordPress s DBaaS lab a MySQL
+### Připojení webu k databázi
 
-- Vytvořte MySQL CloudDB.
-- Vytvořte databázi a přidělte k ní uživatele (nejprve vytvořte administrátorský účet).
-- Autorizujte IP adresu svého serveru pro komunikaci se službou CloudDB.
+Nyní, když je databáze vytvořena, alespoň jeden uživatel k ní má oprávnění a existuje zde alespoň jedna autorizovaná IP adresa pro přístup ke CloudDB instanci, nezbývá než databázi propojit s webovými stránkami. Tento krok lze v závislosti na tom, jaký web či CMS používáte (WordPress, Joomla! apod.) nebo v jaké fázi vytváření webových stránek se zrovna nacházíte, realizovat několika způsoby.
 
-V základním rozhraní pro správu Vaší instance vyhledejte následující informace:
+V zájmu úspěšného provedení této operace musíte mít k dispozici následující údaje:
 
-- Název hostitelského serveru
-- SQL Port
+|Informace|Popis|
+|---|---|
+|Název databáze|Název, který jste zadali při vytváření databáze. Přehled všech databází, které jsou aktuálně vytvořeny na CloudDB instanci, naleznete v záložce `Databáze`{.action}.|
+|Uživatelské jméno|Uživatelské jméno, které jste zadali při vytváření databáze nebo při vytváření samostatného uživatele. Přehled všech uživatelů, kteří jsou aktuálně vytvořeni na CloudDB instanci, naleznete v záložce `Uživatelé a oprávnění`{.action}.|
+|Uživatelské heslo|Heslo, které jste zadali při vytváření uživatele.|
+|Název hostitelského serveru|Server pro připojení Vašich webových stránek k databázi. Tato informace je k dispozici v záložce `Obecné informace`{.action}, v rámečku **Přístupové údaje**.|
+|Port serveru|Port pro připojení k Vaší CloudDB instanci. Tato informace je k dispozici v záložce `Obecné informace`{.action}, v rámečku **Přístupové údaje**.|
 
+> [!warning]
+>
+> V ojedinělých případech může dojít k tomu, že se políčko `port`{.action} v konfiguraci Vašich webových stránek nezobrazí. Pokud taková situace nastane, je toto pole zapotřebí přidat za název hostitele. Tyto údaje je nutné oddělit dvojtečkou *:* (příklad: nazevhostitele:port).
+>
 
-![Instance MySQL](images/infos-sql_EN.png){.thumbnail}
+![clouddb](images/clouddb-login-information.png){.thumbnail}
 
-- Název databáze
+## Kam dál
 
-
-![Instance MySQL](images/view-bdd_EN.PNG){.thumbnail}
-
-- Název uživatele
-
-
-![Instance MySQL](images/view-uer_EN.PNG){.thumbnail}
-
-Poznamenejte si URL a asociovaný port. Při instalaci WordPressu budete o tyto informace požádáni.
-
-
-![wordpress install](images/wordpress-config.png){.thumbnail}
-
-Výše uvedená pole tedy vyplníme následujícím způsobem:
-
-- **Database Name**: *base-test*
-- **UserName**: *user-1*
-- **Password**: heslo pro uživatelský účet *user-1*
-- **Database Host**: *xxx.dbaas.ovh.net:35102*
-- **Table prefix**: v tomto případě ponecháme výchozí nastavení.
-
-V ostatních případech se jednoduše řiďte standardními metodami připojení pro dané databáze, které jsou k dispozici v rámci oficiální dokumentace.
+Sdílejte své zkušenosti s uživatelskou komunitou na <https://community.ovh.com/en/>.
