@@ -192,16 +192,16 @@ Here, the disk still blank is the disk sdb.
 
 > [!warning]
 >
-> This step is irreversible. It is necessary to scrupulously respect the directions of replication at the risk of erasing everything.
+> This step is irreversible. It is important to take extra care when running these commands, entering these commands incorrectly will risk erasing everything.
 > 
 
-The procedure differs depending on the partitioning tables :
+The procedure differs depending on the type of partition tables :
 
-- MBR (Master Boot Record), you will need to use sfdisk.
-- GPT (GUID Partition Table), use sgdisk.
+- MBR (Master Boot Record), you will need to use `sfdisk`.
+- GPT (GUID Partition Table), use `gdisk`.
 
 
-#### How to determine them ?
+#### How to determine which type of partition table?
 
 If during the `fdisk -l`{.action} command you encounter the message below, it means that the table is in GTP. Otherwise, it is in MBR.
 
@@ -209,15 +209,15 @@ If during the `fdisk -l`{.action} command you encounter the message below, it me
 WARNING: GPT (GUID Partition Table) detected on /dev/sda! The util fdisk doesnt support GPT. Use GNU Parted. Passez à étape *Disque en GPT* sinon passez à l étape *Disque en MBR*. 
 ```
 
-#### In MBR &#58;
+#### For MBR &#58;
 
-In the case of the change of the SDA :
+If you had SDA replaced :
 
 ```sh
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
 ```
 
-In the case of the change of the SDB :
+If you had SDB replaced :
 
 ```sh
 sfdisk -d /dev/sda | sfdisk /dev/sdb 
@@ -225,19 +225,19 @@ sfdisk -d /dev/sda | sfdisk /dev/sdb
 
 It may happen that replication must be forced: *sfdisk: ERROR: sector 0 does not have an msdos signature* In this case, you must add to the previous `--force` command:
 
-In the case of the change of the SDA :
+If you had SDA replaced :
 
 ```sh
-fdisk -d /dev/sdb | sfdisk --force /dev/sda 
+sfdisk -d /dev/sdb | sfdisk --force /dev/sda 
 ```
 
-In the case of the change of the SDB :
+If you had SDB replaced :
 
 ```sh
 sfdisk -d /dev/sda | sfdisk --force /dev/sdb 
 ```
 
-#### In GPT &#58;
+#### For GPT &#58;
 
 In the case of the change of the SDA :
 
