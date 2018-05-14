@@ -90,7 +90,7 @@ Chunk Size : 64K
 
 #### Stop a partition
 
-To do this, you can use the command `mdadm --stop /dev/mdX:
+To do this, you can use the command `mdadm --stop /dev/mdX`:
 
 ```sh
 mdadm --stop /dev/md126 mdadm: stopped /dev/md126 
@@ -198,7 +198,7 @@ Here, the disk still blank is the disk sdb.
 The procedure differs depending on the type of partition tables :
 
 - MBR (Master Boot Record), you will need to use `sfdisk`.
-- GPT (GUID Partition Table), use `gdisk`.
+- GPT (GUID Partition Table), use `sgdisk`.
 
 
 #### How to determine which type of partition table?
@@ -318,7 +318,7 @@ They should be added in md1 and md2 as follows:
 
 ```sh
 mdadm /dev/md1 --manage --add /dev/sdb1 mdadm: added /dev/sdb1
-mdadm /dev/md2 --manage --add /dev/sdb2 mdadm: added /dev/sdb2 
+mdadm /dev/md2 --manage --add /dev/sdb2 mdadm: added /dev/sdb2
 ```
 
 Rebuilding is underway.
