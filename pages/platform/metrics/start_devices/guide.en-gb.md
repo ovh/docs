@@ -3,16 +3,10 @@ title: Connect an IoT Device
 slug: iot-devices
 excerpt: How to use Metrics with a connected IoT device
 section: Getting started
+order: 4
 ---
 
-
-## Get started
-- [](../start_order/guide.en-gb.md){.ref}
-- [](../start_manager/guide.en-gb.md){.ref}
-- [](../start_using/guide.en-gb.md){.ref}
-- [](../start_visualize/guide.en-gb.md){.ref}
-- [](../start_analytics/guide.en-gb.md){.ref}
-- => [](../guide.en-gb.md){.ref} <=
+**Last updated 15th May, 2018**
 
 
 ## IoT Devices

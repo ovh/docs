@@ -5,7 +5,7 @@ excerpt: How Metrics solves the complexity of Smart Grids
 section: Use cases
 ---
 
-
+**Last updated 15th May, 2018**
 
 > [!warning]
 >
@@ -24,6 +24,7 @@ Smart Grids are an initiative to connect buildings, cities, and infrastructure t
 ### Smart Infrastructures
 
 ## The Metrics value for Smart Grids
+
 Metrics platform has key features to help you store and analyze the data from the IoT world:
 
 - Computation is done server-side, your devices can get only the needed result of a query.
