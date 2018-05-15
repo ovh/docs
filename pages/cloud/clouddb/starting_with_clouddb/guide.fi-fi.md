@@ -1,204 +1,178 @@
 ---
-title: CloudDB-palvelun kayton aloitus
+title: 'CloudDB-palvelun käytön aloitus'
 slug: clouddb-palvelun-kayton-aloitus
-links: 
-   - docs/cloud/clouddb/utilisation-mysql-mariadb/
-   - docs/cloud/clouddb/utilisation-pgsql/
-legacy_guide_number: 2216
-excerpt: Tietokantoja ilman haittatekijoita!
+excerpt: 'Katso, kuinka CloudDB-ratkaisun käyttö aloitetaan'
+section: Aluksi
 ---
 
-Onko sinulla tietokannan vaativa verkkosivu tai sovellus, muttet halua hallinnoida sellaista? Tutustu CloudDB-tuotteeseen jo nyt! OVH huolehtii kaikesta.
+**Päivitetty 11.5.2018**
 
+## Tavoite
 
-## Yleista
+CloudDB-ratkaisun avulla on mahdollista käyttää tietokantainstanssia, jonka resurssit ovat dedikoituja ja taattuja. Palvelu tarjoaa enemmän suorituskykyä sekä joustavuutta ja on suunnattu pääasiassa asiakkaille, joilla on erikoistarpeita.
 
-### Miksi kayttaa hallinnoituja tietokantoja?
-Tämän tuotteen lähtökohtana on **yksinkertainen toteamus**: vaikka **osaisit** tehdä sen, ei tietokannan hallinnointi ole välttämättä sinulle kaikkein **tärkein** asia. Tietoturva, päivitykset, monitorointi, oikeuksien ja suorituskykyjen hallinta… siitä voi tulla hyvin nopeasti työlästä!
+**Katso, kuinka CloudDB-ratkaisun käyttö aloitetaan.**
 
-**Mikset siis jättäisi tätä työtä OVH:lle ja keskittyisi itse omaan toimintaasi?**
+## Edellytykset
 
-Tämä on päämäärämme. Tarkoituksenamme on koskettaa koko markkinoita yksityishenkilöistä ammattilaisiin, olivatpa tarpeet vähäiset tai suuria klustereita vaativat.
+- Sinulla on [CloudDB-instanssi](https://www.ovh-hosting.fi/cloud/cloud-databases/){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+## Käytännössä
 
-### CloudDB-tuotteen edut
-**Yksinkertainen ja nopea:**
+### Katso instanssin yleiset tiedot
 
-- SQL-tietokantojen luonti hallintapaneelin kautta
-- Rajaton määrä tietokantoja (varatun levytilan mukaan)
-- Jopa 200 samanaikaista yhteyttä
-- Käyttäjien ja oikeuksien hallinta hallintapaneelin kautta
-- Pääsy tilastoihin hallintapaneelin kautta
-- Pääsy lokitietoihin
+Mene [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} vasemmassa laidassa olevassa valikossa kohtaan `Tietokannat`{.action} ja sitten kyseessä olevaan instanssiin. Varmista, että olet kohdassa `Yleiset tiedot`{.action}.
 
-**Suorituskykyinen:**
+> [!primary]
+>
+> CloudDB-palvelusi nimi hallintapaneelissa sisältää osan asiakastunnuksestasi ja päättyy kolmeen lukuun (ensimmäisenä asennettu CloudDB-palvelu 001, toisena asennettu 002 jne.).
+>
 
-- Taatut RAM-resurssit
-- Testattu infrastruktuuri
+Voit tarkastella sieltä instanssiasi koskevia tärkeitä tietoja. Kehotamme varmistamaan huolellisesti, että tiedot ovat oikein tai vastaavat alla olevia esimerkkejä.
 
-**Tietoturva:**
+|Tieto|Yksityiskohdat|
+|---|---|
+|Palvelun tila|Näkyy erityisesti silloin, jos instanssi on käynnistetty, sitä ollaan käynnistämässä uudelleen tai jäädyttämässä. Instanssin on oltava käynnistettynä, jotta sillä voidaan tehdä toimintoja.|
+|Tyyppi|Näyttää palvelimen käyttämän tietokantajärjestelmän.|
+|Versio|Näyttää palvelimen käyttämän tietokantajärjestelmän version. Huolehdi verkkosivusi yhteensopivuudesta valitun version kanssa.|
+|RAM|Näyttää instanssia varten saatavilla olevan keskusmuistin sekä mahdolliset muistin ylitykset. CloudDB-instanssisi sisältää dedikoituja ja taattuja resursseja eli sen RAM-muistin. Tarpeen vaatiessa voit kehittää sitä ja saada ilmoituksia, mikäli kulutat kaikki instanssisi muistiresurssit.|
+|Infrastruktuuri|Näyttää instanssisi käyttämän infrastruktuurin. Kyseessä on OVH:n infrastruktuurille ominainen tieto.|
+|Konesali|Näyttää konesalin, jossa instanssi on luotu. Varmista, että instanssin konesali on sama kuin sivuasi ylläpitävän OVH:n webhotellin nykyinen tai tuleva konesali.|
+|Isäntäkone|Näyttää OVH:n palvelimen, johon instanssi on luotu. Kyseessä on OVH:n infrastruktuurille ominainen tieto, jota voidaan käyttää [häiriötilanteisiin](http://status.ovh.net/){.external} liittyvässä viestinnässä.|
 
-- Tiimimme monitoroivat vuorokauden ympäri vuoden jokaisena päivänä
-- Automaattiset varmuuskopiot joka päivä
-- Pakollinen IP-osoitteiden hyväksyntä
-
-**Kehittyvä:**
-
-- Yhteensopiva kaikkien OVH:n tuotteiden kanssa (paitsi webhotellit) sekä yleisemmin kaikkien julkista verkkoa käyttävien tuotteiden kanssa
-- Mahdollisuus valita SQL-versio tai vaihtaa milloin tahansa isompaan versioon
-
-
-### Moottorivaihtoehtomme
-Kun tilaat CloudDB-palvelun, voit valita useista tietokantajärjestelmistä:
-
-**SQL**
-
-- MySQL
-- PostgreSQL
-- MariaDB
-
-Jokaisella instanssilla on omat dedikoidut resurssinsa. Instanssin sisältämät tietokannat, yksi tai useampi, **jakavat** nämä resurssit keskenään.
-
-
-## Tilaa CloudDB-palvelu
-
-### Kirjautuminen hallintapaneeliin
-Mene instanssin ja tietokannan luomista varten [hallintapaneelin Web-osioon](https://www.ovh.com/manager/web/){.external}.
-
-
-### Tilaus
-Kun olet [Hallintapaneelin Web-osiossa](https://www.ovh.com/manager/web/){.external}, klikkaa kohtaa **"Tietokannat"** ja sitten `Tilaa tietokantoja`{.action}.
-
-
-![commande manager](images/bouton-commande_EN.PNG){.thumbnail}
-
-Tee tilaus valitsemalla alla olevista elementeistä:
-
-- **"CloudDB"**
-- **"Tietokantajärjestelmäsi"**
-- **"Sen RAM"**
-- **"Sen konesali"**
-- **"Haluttu kesto"**
-
-
-![commande choix](images/choix-commande_EN.PNG){.thumbnail}
-
-Hyväksy tämän jälkeen käyttöehdot ja klikkaa `+ Muodosta tilaus`{.action}.
-
-
-![commande generation](images/generer-commande_EN.PNG){.thumbnail}
-
-
-## Yleista tietoa
-Kun olet hallintapaneelissa, voit nähdä instanssisi yleiset tiedot.
-
-
-![commande generation](images/infos-generales_EN.png){.thumbnail}
-
-
-## Tietokantojen ja kayttajien luominen
+![clouddb](images/clouddb-general-information.png){.thumbnail}
 
 ### Tietokannan luominen
-Tässä kohtaa instanssisi on siis luotuna, mutta se on tyhjä.
 
-Klikkaa kuvaketta **"Tietokannat"**, sitten painiketta `+ Lisää tietokanta`{.action}.
+> [!primary]
+>
+> Tätä kohtaa ei sovelleta Redis-tietokantajärjestelmään.
+>
 
+Luo ensimmäinen tietokanta CloudDB-instanssissa klikkaamalla kuvaketta `Tietokannat`{.action} ja sitten painiketta `Lisää tietokanta`{.action}.
 
-![creation bdd](images/creation-bdd_EN.png){.thumbnail}
+![clouddb](images/clouddb-add-database.png){.thumbnail}
 
-Nimeä tietokantasi ja klikkaa `+ Vahvista`{.action}.
+Voit valita näkyviin tulevassa ikkunassa sekä lisäksi tietokannan luomishetkellä seuraavat toiminnot:
 
+-  **Luo käyttäjä**: käyttäjä voi suorittaa tietokantakyselyjä tietokannassasi (kuten tietojen lukeminen, lisääminen tai poistaminen).
 
-![creation bdd](images/validation-bdd_EN.png){.thumbnail}
+- **Lisää hyväksytty IP-osoite**: tästä osoitteesta tuleville kyselyille sallitaan pääsy tietokantaasi.
 
+Valintasi mukaan täydennä nyt pyydetyt tiedot ja klikkaa sitten painiketta `Vahvista`{.action}.
 
-### Kayttajan luominen
-Private SQL -palvelimen käyttämistä varten täytyy luoda käyttäjiä, joilla on tietyt oikeudet tietokantaan kirjautumista varten.
+|Tieto|Kuvaus|
+|---|---|
+|Tietokannan nimi|Tämä on tulevan tietokantasi nimi.|
+|Käyttäjänimi|Käyttäjä, joka voi kirjautua tietokantaasi ja tehdä siellä kyselyjä (valinnainen, jos ruutua “*Luo käyttäjä*” ei ole rastitettu).|
+|Oikeudet|Näillä tarkoitetaan käyttäjään yhdistettyjä oikeuksia, perinteistä käyttöä varten valitse `Administraattori`{.action} (valinnainen, jos ruutua “*Luo käyttäjä*” ei ole rastitettu).|
+|Salasana|Valitse salasana ja vahvista se (valinnainen, jos ruutua “*Luo käyttäjä*” ei ole rastitettu).|
+|IP/maski|IP-osoite, maski tai palvelimet, joilla on lupa yhdistää tietokantaasi (valinnainen, jos ruutua “*Lisää hyväksytty IP-osoite*” ei ole rastitettu).|
 
-Mene tätä varten kuvakkeeseen **"Käyttäjät ja oikeudet"** ja klikkaa lopuksi `+ Lisää käyttäjä`{.action}.
+> [!warning]
+>
+> Turvallisuussyistä kehotamme noudattamaan tietojen rekisteröinnin yhteydessä ilmoitettuja ehtoja.
+>
 
+![clouddb](images/clouddb-add-database-step2.png){.thumbnail}
 
-![hosting](images/creation-user_EN.png){.thumbnail}
+### Käyttäjän luominen
 
-Tämän jälkeen sinua pyydetään syöttämään **käyttäjänimi** ja **salasana** sekä klikkaamaan `Vahvista`{.action}.
+> [!primary]
+>
+> Tätä kohtaa ei sovelleta Redis-tietokantajärjestelmään.
+>
 
+Jos olet luonut käyttäjän tietokannan luonnin yhteydessä äskeisessä kohdassa, tämä vaihe ei ole pakollinen. Erityislaatuisessa projektissa voidaan kuitenkin tarvita useampia käyttäjiä, joilla on oikeudet päästä tietokantaan. Esimerkiksi yhdellä tietokannan käyttäjällä voi olla luku- ja kirjoitusoikeudet, kun taas toisella on ainoastaan lukuoikeudet.
 
-![hosting](images/validation-user_EN.png){.thumbnail}
+Jos projektisi ei kaipaa ylimääräistä käyttäjää, voit siirtyä seuraavaan vaiheeseen. Muussa tapauksessa voit klikata käyttäjän luomiseksi CloudDB-instanssiin kuvaketta `Käyttäjät ja oikeudet`{.action} ja sitten painiketta `Lisää käyttäjä`{.action}.
 
+![clouddb](images/clouddb-add-user.png){.thumbnail}
 
-### Kayttooikeuksien hallinta
-Mene välilehdelle **"Tietokannat"**, sitten klikkaa haluamasi tietokannan kohdalla **"hammasratas"**-kuvaketta ja lopuksi painiketta `+ Käyttäjien hallinta`{.action}.
+Täydennä nyt pyydetyt tiedot näkyviin tulevassa ikkunassa ja klikkaa sitten painiketta `Vahvista`{.action}.
 
+|Tieto|Kuvaus|
+|---|---|
+|Käyttäjänimi|Käyttäjä, joka voi yhdistää instanssiisi. Voit seuraavassa vaiheessa myöntää käyttäjälle oikeuksia tietokantaasi.|
+|Salasana|Valitse salasana ja vahvista se.|
 
-![hosting](images/gestion-user_EN.png){.thumbnail}
+> [!warning]
+>
+> Turvallisuussyistä kehotamme noudattamaan tietojen rekisteröinnin yhteydessä ilmoitettuja ehtoja.
+>
 
-Valitse seuraavaksi käyttöoikeudet valitsemallesi käyttäjälle.
+![clouddb](images/clouddb-add-user-step2.png){.thumbnail}
 
+Kun käyttäjä on luotu, on tarpeen myöntää käyttäjälle oikeuksia toimintojen toteuttamiseksi tietokannassasi (kuten luku, tietojen lisäys tai poisto). Klikkaa sitä varten hammasrattaan kuvaa ja sitten `Oikeuksien hallinta`{.action}. Valitse uudella sivulla haluttu oikeus klikkaamalla sitä. Perinteisessä käytössä valitse `Administraattori`{.action}.
 
-![hosting](images/validation-droit_EN.png){.thumbnail}
+![clouddb](images/clouddb-add-rights.png){.thumbnail}
 
-Tässä kuvaus kolmesta mahdollisesta vaihtoehdosta:
+### Tietokannan tuominen
 
-- **Administraattori:** Hyväksytyt pyyntötyypit **Select / Insert / Update / Delete / Create / Alter / Drop**
-- **Luku/Kirjoitus:** Hyväksytyt pyyntötyypit **Select / Insert / Update / Delete**
-- **Luku:** Hyväksytyt pyyntötyypit **Select**
-- **Ei mitään:** Ei oikeuksia tietokantaan
+> [!primary]
+>
+> Tätä vaihetta käytetään, jos tuot olemassa olevan tietokannan varmuuskopion. Muussa tapauksessa siirry seuraavaan vaiheeseen.
+>
 
+Tietokannan tuomiseen on olemassa useita tekniikoita. OVH:n hallintapaneelissa on käytettävissä tähän tarkoitukseen erityinen työkalu, johon keskitymme lähemmin. Voit kuitenkin käyttää toista tapaa mieltymystesi ja osaamisesi mukaan.
 
-## Hyvaksy IP-osoitteesi
+Alla olevissa vaiheissa käydään läpi tietokannan tuominen OVH:n hallintapaneelissa saatavilla olevalla työkalulla.
 
-### Palvelimen lisays
-Jotta kirjautuminen CloudDB-instanssiin onnistuu, on oheisessa valikossa määriteltävä hyväksytyt IP-osoitteet. Klikkaa kuvaketta **"Hyväksytyt IP-osoitteet"** ja sitten `+ Lisää IP-osoite/ maski`{.action}.
+- **1. Kirjaudu käyttöliittymään, jossa tuonti tapahtuu**
 
+Klikkaa `Tietokannat`{.action}-välilehdessä hammasrattaan kuvaa ja sitten `Tuo tiedosto`{.action}. Seuraavassa avautuvassa ikkunassa rastita kohta `Tuo uusi tiedosto`{.action} ja klikkaa sitten `Seuraava`{.action}.
 
-![hosting](images/ip-autorisee_EN.png){.thumbnail}
+![clouddb](images/clouddb-add-import-step1.png){.thumbnail}
 
-Anna palvelimesi tai verkon IP-osoite sekä kuvaus niin halutessasi. Klikkaa sitten `Vahvista`{.action}.
+- **2. Valitse ja lähetä varmuuskopiotiedosto**
 
+Anna tiedostonimi, jolla voit tunnistaa varmuuskopion myöhemmin, jos haluat palauttaa sen uudemman kerran. Valitse seuraavaksi kohdan **Tiedosto** vierestä tietokoneellasi oleva tietokannan varmuuskopiotiedosto, klikkaa sitten `Lähetä`{.action}. Odota, että käyttöliittymä ilmoittaa lähetyksen onnistumisesta ja klikkaa sitten painiketta `Seuraava`{.action}.
 
-![hosting](images/validation-ip_EN.png){.thumbnail}
+![clouddb](images/clouddb-add-import-step2.png){.thumbnail}
 
+- **3. Aloita tietokannan tuominen**
 
-## Tietokannan kaytto
-Onko konfiguraatiosi valmis? Täydellistä!
+Valitse lopuksi, sovelletaanko alla kuvattuja lisäoptioita vai ei. Klikkaa sitten `Vahvista`{.action}.
 
-Tietokantaa voidaan käyttää monin tavoin käyttötarkoituksestasi sekä valitusta moottorista riippuen.
+|Lisäoptiot|Kuvaus|
+|---|---|
+|Tyhjennä nykyinen tietokanta|Tietokantasi nykyinen sisältö poistetaan kokonaisuudessaan ja korvataan sitten varmuuskopiollasi.|
+|Lähetä sähköpostiviesti tuonnin päätyttyä|Saat sähköpostitse ilmoituksen, kun tietokantasi tuominen on suoritettu.|
 
-Katsotaanpa tyypillinen käyttöesimerkki.
+![clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
 
+### Hyväksy IP-osoite
 
-### Asenna WordPress DbaaS lab  ja MySQL-moottorilla
-- Luo CloudDB MySQL -instanssi.
-- Luo tietokanta, siihen liittyvä käyttäjä ja anna tälle ADMIN-oikeudet.
-- Hyväksy palvelimesi IP-osoite ja anna sille lupa yhdistää CloudDB-palveluusi.
+Jotta yhteys CloudDB-instanssiisi toimii, on ilmoitettava IP-osoitteet tai IP-alue, joiden on sallittu yhdistää tietokantaasi. Klikkaa sitä varten kuvaketta `Hyväksytyt IP-osoitteet`{.action} ja sitten painiketta `Lisää IP-osoite/maski`{.action}.
 
-Ota muistiin seuraavat tiedot hallintapaneelista:
+![clouddb](images/clouddb-add-ip.png){.thumbnail}
 
-- Isäntäpalvelimen nimi
-- SQL-portti
+Ilmoita näkyviin tulevassa ikkunassa IP-osoite tai maski, jonka haluat hyväksyä kohdassa `IP/maski`{.action}. Tämän jälkeen voit halutessasi lisätä kuvauksen. Päätä seuraavaksi, haluatko kirjautua ainoastaan tietokantoihin vai SFTP:hen. Klikkaa lopuksi `Vahvista`{.action}.
 
-![Instance MySQL](images/infos-sql_EN.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
-- Tietokanta
+### Yhdistä sivusi tietokantaan
 
-![Instance MySQL](images/view-bdd_EN.PNG){.thumbnail}
+Nyt kun tietokantasi on luotu, ja yhdellä tai useammalla käyttäjällä on siihen oikeudet ja vähintään yhdellä IP-osoitteella on lupa yhdistää CloudDB-instanssiisi, on jäljellä enää verkkosivusi liittäminen tietokantaan. Tämä vaihe voidaan toteuttaa monin tavoin, riippuen verkkosivustasi, käyttämästäsi sisällönhallintajärjestelmästä (WordPress, Joomla! jne.) tai vaiheesta, jossa olet verkkosivun asennusta toteuttaessa.
 
-- Käyttäjä
+Jotta voit suorittaa tämä toimenpiteen oikein, sinulla täytyy joka tapauksessa olla hallussasi seuraavat viisi tietoa:
 
-![Instance MySQL](images/view-uer_EN.PNG){.thumbnail}
+|Tieto|Kuvaus|
+|---|---|
+|Tietokannan nimi|Tämä on nimi, jonka määritit tietokannan luonnin yhteydessä. Voit löytää kaikki CloudDB-instanssissa luodut tietokannat välilehdeltä `Tietokannat`{.action}.|
+|Käyttäjänimi|Tämä on tietokannan luonnin yhteydessä määritetty käyttäjänimi tai mahdollinen ylimääräinen käyttäjä, jonka olet lisännyt. Voit löytää kaikki CloudDB-instanssissa luodut käyttäjät välilehdeltä `Käyttäjät ja oikeudet`{.action}.|
+|Käyttäjän salasana|Määrittämääsi käyttäjään liittyvä salasana.|
+|Isäntäpalvelimen nimi|Annettava palvelin, jotta sivusi voi yhdistää tietokantaan. Tämä tieto löytyy hallintapaneeliin osiosta **Kirjautumistiedot** ja sieltä välilehdeltä `Yleiset tiedot`{.action}.|
+|Palvelimen portti|Yhteysportti CloudDB-instanssiisi, jotta sivusi voi yhdistää tietokantaasi. Tämä tieto löytyy hallintapaneeliin osiosta **Kirjautumistiedot** ja sieltä välilehdeltä `Yleiset tiedot`{.action}.|
 
+> [!warning]
+>
+> Harvinaisissa tapauksissa kenttää `portti`{.action} ei voida tarjota sivusi konfiguraatiossa. Mikäli näin on, täytyy tämä kenttä lisätä isäntäpalvelimen nimen perään ja erottaa ne merkillä *:* (esimerkiksi isäntäpalvelimennimi:portti).
+>
 
-Kirjaa muistiin URL ja siihen liittyvä portti. WordPress pyytää näitä tietoja asennusvaiheessa.
+![clouddb](images/clouddb-login-information.png){.thumbnail}
 
+## Lue lisää aiheesta
 
-![wordpress install](images/wordpress-config.png){.thumbnail}
-
-Täytämme kentät siis seuravasti:
-
-- **Database Name**: *base-test*
-- **User Name**: *user-1*
-- **Password**: salasana, jonka valitsit käyttäjälle *user-1*
-- **Database Host**: *xxx.dbaas.ovh.net:35102* (kirjaa muistiin: **host:port**)
-- **Table prefix**: tässä esimerkissä emme muuta mitään tässä kohdassa
-
-Muissa käyttöesimerkeissä noudatamme käyttämiemme moottorien kaikkia virallisia kirjautumistapoja. Tutustu myös viralliseen dokumentaatioon.
+Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en/>.
