@@ -1,9 +1,8 @@
 ---
-title: Récuperer les métriques d’un SQL privé sur Grafana
+title: 'Récuperer les métriques d’un SQL privé sur Grafana'
 slug: recuperer-les-metriques-dun-sql-prive-sur-grafana
-legacy_guide_number: 2057
-excerpt: Ce guide va vous permettre de recuperer les metriques d'un SQL privé sur Grafana
-section: SQL Privé
+excerpt: 'Ce guide va vous permettre de recuperer les metriques d''un SQL privé sur Grafana'
+section: 'SQL Privé'
 ---
 
 Ce guide technique vous indiquera comment récupérer les métriques (RAM par exemple) de votre serveur SQL en utilisant Grafana.
@@ -54,14 +53,6 @@ docker run -i -p 80:3000 grafana/grafana
 ```
 
 Vous retrouverez plus d'informations sur [ce lien](http://docs.grafana.org/installation/docker/){.external}.
-
-
-
-> [!success]
->
-> Vous pouvez installer Grafana sans Docker, vous pouvez pour cela vous rendre sur
-> cette documentation.
-> 
 
 
 ### Un serveur SQL privé
@@ -178,11 +169,9 @@ Dans l'onglet "Axes & Grid", sélectionnez dans "Left Y" l'unité ""data" puis "
 ### Les metriques
 Voici 3 exemples de métriques pertinentes pour suivre vos performances sur votre SQL Privé :
 
-
 |RAM Maximum utilisable|memory.hierarchical_memory_limit|
+|---|---|
 |RAM Utilisée|memory.rss|
 |Nombre de connexions MySQL actives|mysql.active_connections|
 
-Vous retrouverez sur le lien suivant la documentation officielle sur les métriques Docker :
-
-- [https://docs.docker.com/engine/articles/runmetrics/](https://docs.docker.com/engine/articles/runmetrics/){.external}
+Vous retrouverez sur le lien suivant la documentation officielle sur les métriques Docker : <https://docs.docker.com/config/containers/runmetrics/>
