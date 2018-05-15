@@ -1,95 +1,80 @@
 ---
-title: Webhotellista lähetettyjen sähköpostien seuranta
-excerpt: Webhotellista lähetettyjen sähköpostien seuranta
+title: 'Webhotellin automatisoitujen sähköpostien seuranta ja hallinta'
 slug: webhotellista_lahetettyjen_sahkopostien_seuranta
-legacy_guide_number: g1974
+excerpt: 'Opi seuraamaan OVH:n webhotellin lähettämiä automatisoituja sähköpostiviestejä'
+section: Vianhaku
 ---
 
+**Päivitetty 11.5.2018**
 
-## Mene osioon ”Sähköpostien skriptit” hallintapaneelissasi.
+## Tavoite
 
-## Muutokset
+Automatisoidut sähköpostit ovat skriptien kautta lähetettyjä viestejä. Niitä käytetään esimerkiksi verkkosivusi yhteydenottokaavakkeessa ja niiden avulla vierailijasi voivat lähettää sinulle sähköpostiviestejä.
 
-- Kirjaudu ensin [hallintapaneeliin](https://www.ovh.com/manager/web).
-- Valitse vasemmasta pystyvalikosta ”Webhotellit” ja klikkaa tämän jälkeen omaa verkkotunnustasi.
-- Sen jälkeen klikkaa ”Enemmän +” ja lopuksi ”Sähköpostien skriptit”.
+**Opi seuraamaan OVH:n webhotellin lähettämiä automatisoituja sähköpostiviestejä.**
 
+## Edellytykset
 
+- Sinulla on [webhotellituote](https://www.ovh-hosting.fi/webhotelli/){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-![](images/img_3110.jpg){.thumbnail}
+> [!primary]
+>
+> Tämä ohje keskittyy ainoastaan OVH:n webhotellissasi sijaitsevista skripteistä lähetettyihin viesteihin.
+>
+> Haluatko hallita MX Plan -tuotteeseesi tai [OVH:n webhotelliisi](https://www.ovh-hosting.fi/webhotelli/){.external} sisältyviä sähköpostiosoitteita? Mene [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} osioon `Sähköpostit`{.action}.
+>
 
+## Käytännössä
 
-## Sähköpostien lähetyksen estäminen webhotellistasi
-Joskus sähköpostien lähetysmahdollisuus webhotellista on tarpeen estää väliaikaisesti.
+Webhotellisi automatisoitujen sähköpostien seuranta ja hallinnointi tapahtuu [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}. Kirjaudu hallintapaneeliin, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä olevan webhotellin nimi. Klikkaa sitten välilehteä `Enemmän +`{.action} ja sitten `Sähköpostien skriptit`{.action}.
 
-## Esimerkiksi seuraavissa tilanteissa:
+Näkyviin tulevalla sivulla voit seurata ja hallita OVH:n webhotellin lähettämiä automatisoituja sähköpostiviestejä.
 
-- Kun testaat skriptejä, jotka lähettävät sähköpostia
-- Jos webhotellisi on kräkkeröity spämmerin toimesta
+![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
+### Automatisoitujen sähköpostien lähetyksen seuranta
 
+Pysy edelleen osiossa `Sähköpostien skriptit`{.action}. Sivulla näkyy useita tietoja, joiden avulla voit nähdä yhdellä silmäyksellä skriptiesi generoimien automatisoitujen sähköpostien lähetyksen.
 
-## Huomioi:
-Sähköposteja ei poisteta, vaan niiden lähetys estetään 72 tunnin ajaksi. Tänä aikana voit joko poistaa sähköpostien lähetyseston, tai tyhjentää lähetysjonon.
-1. Klikkaa ”Estä lähetys” -painiketta.
+|Tieto|Yksityiskohdat|
+|---|---|
+|Palvelun tila|Näyttää webhotellisi automatisoituja sähköpostiviestejä lähettävän palvelun nykyisen tilan. Vihreässä ruudussa näkyvä tila merkitsee toiminnassa olevia lähetyksiä, kun taas punainen merkitsee sitä, ettei lähetyksiä toteuteta enää. Lähetysten hallinnointi vaihtelee tilasta riippuen, katso [“Automatisoitujen sähköpostien lähetyksen hallinnointi”](https://docs.ovh.com/fi/hosting/webhotellista_lahetettyjen_sahkopostien_seuranta/#automatisoitujen-sahkopostien-lahetyksen-hallinnointi){.external}.|
+|Virheviesti osoitteeseen|Virheraportti lähetetään valitsemaasi sähköpostiosoitteeseen. Voit määrittää sen painikkeella `Vaihda vastaanottajaa`{.action}. Tämä raportti sisältää webhotellistasi lähetetyt sähköpostiviestit, jotka ovat palautuneet OVH:lle virhetilassa, koska niitä ei voitu toimittaa eteenpäin. Painike `Virhetilassa olevat sähköpostit`{.action} mahdollistaa näiden raporttien tarkastelun milloin tahansa hallintapaneelissa.|
+|Lähetetyt viestit yhteensä|Näyttää lähetettyjen automatisoitujen sähköpostiviestien kokonaismäärän webhotellisi luomisesta alkaen.|
+|Tänään lähetetyt viestit|Näyttää ainoastaan tänään lähetettyjen automatisoitujen viestien kokonaismäärän.|
+|Virhetilassa olevat sähköspotit yhteensä|Näyttää virhetilassa olevien automatisoitujen sähköpostiviestin lukumäärän webhotellisi luomisesta alkaen. Ne ovat palautuneet OVH:lle, sillä niitä ei ole voitu toimittaa.|
+|Lähetettyjen sähköpostien historia|Näyttää kaavion, joka esittää webhotellistasi lähetettyjen sähköpostien historiatietoja edellisiltä päiviltä.|
 
-![](images/img_3111.jpg){.thumbnail}
-Tämän jälkeen klikkaa ”Vahvista”-painiketta.
+> [!primary]
+>
+> Webhotellin automatisoitujen sähköpostien epätoivotun käytön ehkäisemiseksi suosittelemme vahvasti luomaan turvajärjestelmän, kuten captcha-kentän lomakkeeseen verkkosivulle, josta viestejä lähetetään (esim. yhteydenottokaavake).
+>
 
-![](images/img_3112.jpg){.thumbnail}
-3. Saat toimenpiteen vahvistuksena eteesi seuraavan ilmoituksen: ”Pyyntö lähetetty onnistuneesti.”
+![hosting](images/monitoring-automatic-emails-step2.png){.thumbnail}
 
-![](images/img_3113.jpg){.thumbnail}
+Jos havaitset, ettei skriptiesi generoimia sähköpostiviestejä lähetetä, vaikka palvelun tila mahdollistaa lähetykset edelleen, suosittelemme:
 
-## Huomioitavaa:
-Kun toimenpide on käsitelty, näet palvelun tilana ”ei aktiivinen”
+- **tarkistamaan skriptit toteuttamalla lähetyksiä**: skriptit eivät onnistu lähettämään sähköpostiviestejä syntaksivirheen takia. Tarkista skriptien sisältö, kokeile sitten uudestaan.
 
-![](images/img_3114.jpg){.thumbnail}
+- **testaamaan sähköpostin lähetys testiskriptillä**: luo testiskripti, joka lähettää sähköpostin omaan osoitteeseesi. Jos vastaanotat viestin oikein, tarkoittaa se sitä, että viestien lähetyksestä vastaavat skriptit sisältävät virheitä. Osaamisestasi riippuen, testiskriptit voidaan löytää internetistä.
 
+- **toteuttamaan lähetyksesi SMTP-palvelinta käyttämällä**: älä määritä SMTP-palvelinta skriptiesi asetuksissa. Jos sinulla on käyttöliittymä verkkosivultasi tapahtuvaa sähköpostien lähetystä varten, tätä asetusta tulee voida muokata verkkosivun konfiguraatiossa.
 
-## Sähköpostien siivous
-Joissakin tilanteissa sähköpostien lähetysjono on tarpeen tyhjentää, esimerkiksi välttääksesi sen, että webhotellin sähköpostien lähetys estetään täysin OVH:n järjestelmän toimesta.
+### Automatisoitujen sähköpostien lähetyksen hallinnointi
 
-## Huomioitavaa:
-Kun lähtevän sähköpostin jono on siivottu, webhotellisi toiminta palautetaan normaaliksi automaattisesti. Tämän toimenpiteen suoritusaika on 5–10 minuuttia.
-1. Klikkaa ”Siivoa sähköpostit”.
+Pysy edelleen osiossa `Sähköpostien skriptit`{.action}. Useiden painikkeiden avulla on mahdollista hallita automatisoitujen sähköpostien lähetystä webhotellistasi. Palvelun tilasta riippuen jotkut eivät välttämättä ole käytettävissä.
 
-![](images/img_3115.jpg){.thumbnail}
-Tämän jälkeen klikkaa ”Vahvista”-painiketta.
+|Toiminto|Yksityiskohdat|
+|---|---|
+|Estä lähetys|Mahdollistaa automatisoitujen sähköpostien lähetyksen estämisen webhotellistasi. Skriptiesi generoimia sähköpostiviestejä ei lähetetä enää eston jälkeen, mutta ne säilytetään jonossa odottamassa enintään 72 tunnin ajan.|
+|Salli lähetys|Mahdollistaa automatisoitujen sähköpostien lähetyksen webhotellistasi. Myös jonossa odottavat viestit lähetetään.|
+|Siivoa sähköpostit|Pyyhkii jonossa odottavat viestit ja estää niiden lähetyksen.|
 
-![](images/img_3116.jpg){.thumbnail}
-3. Saat toimenpiteen vahvistuksena eteesi seuraavan ilmoituksen: ”Pyyntö lähetetty onnistuneesti.”
+Tee haluttu toiminto klikkaamalla kyseessä olevaa painiketta ja sitten `Vahvista`{.action}. Tietyissä tapauksissa halutun toiminnon toteutuminen kokonaisuudessaan saattaa vaatia useita minuutteja.
 
-![](images/img_3117.jpg){.thumbnail}
+![hosting](images/monitoring-automatic-emails-step3.png){.thumbnail}
 
-## Huomioitavaa:
-Kun toimenpidettä käsitellään, näet ”Palvelun tila”-osiossa tilana ”purge”.
+## Lue lisää aiheesta
 
-![](images/img_3118.jpg){.thumbnail}
-
-
-## Lähetyseston poisto
-Sähköpostien kulku normalisoituu, kun lähetät seuraavan viestin. Ne sähköpostit, joiden kulku oli estetty, lähetetään lähetyseston purkamisen jälkeen.
-1. Klikkaa ”Salli lähetys”.
-
-![](images/img_3122.jpg){.thumbnail}
-Tämän jälkeen klikkaa ”Vahvista”-painiketta.
-
-![](images/img_3123.jpg){.thumbnail}
-3. Saat toimenpiteen vahvistuksena eteesi seuraavan ilmoituksen: ”Pyyntö lähetetty onnistuneesti.”
-
-![](images/img_3124.jpg){.thumbnail}
-
-
-## Virheviestien vastaanottajaosoitteen muuttaminen
-Mikäli webhotellista lähtevien sähköpostien lähetyksen kanssa tulee virheitä, saat raportit seuraavana päivänä virheen tapahtumisesta.
-1. Klikkaa ensin ”Vaihda vastaanottajaa”.
-
-![](images/img_3119.jpg){.thumbnail}
-2. Syötä haluamasi sähköpostiosoite, jonka jälkeen klikkaa ”Vahvista”.
-
-![](images/img_3120.jpg){.thumbnail}
-3. Osoite on tallennettu järjestelmäämme, ja sitä käytetään virheraporttien vastaanottajaosoitteena heti muutoksen jälkeen.
-
-![](images/img_3121.jpg){.thumbnail}
-
+Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en/>.
