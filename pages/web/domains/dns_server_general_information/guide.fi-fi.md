@@ -1,139 +1,82 @@
 ---
-title: 'Webhotellit: Yleistä nimipalvelimista'
-excerpt: 'Webhotellit: Yleistä nimipalvelimista'
+title: 'OVH:n verkkotunnuksen nimipalvelinten muokkaus'
 slug: webhotellit_yleista_nimipalvelimista
-legacy_guide_number: g2015
+excerpt: 'Opi muokkaamaan OVH:n verkkotunnuksesi nimipalvelimia'
+section: 'DNS ja DNS-alue'
+order: 1
 ---
 
+**Päivitetty 15.5.2018**
 
-## Määritelmä
-DNS (Nimipalvelin) mahdollistaa muun muassa verkkotunnuksen kääntämisen IP-osoitteeksi, jotta komennot saavuttavat kohdepalvelimen.
+## Tavoite
 
-![](images/img_3413.jpg){.thumbnail}
+Nimipalvelimet ylläpitävät verkkotunnuksen DNS-konfiguraatiota. Niitä voidaan kutsua myös DNS-alueeksi, ja ne koostuvat teknisistä tiedoista eli tietueista. Perinteisessä käytössä niillä voidaan yhdistää verkkotunnuksesi ja palvelin tai palvelimet, jotka ylläpitävät verkkosivuasi ja sähköpostiosoitteitasi.
 
+Voidaan siis sanoa, että näiden nimipalvelimille varastoitujen DNS-tietueiden avulla verkkotunnuksesi voidaan saavuttaa Internetissä.
 
-## Nimipalvelimen ja DNS-alueen ero
+**Opi muokkaamaan OVH:n verkkotunnuksesi nimipalvelimia.**
 
-## Nimipalvelimet
+## Edellytykset
 
-- Nimipalvelimet ovat verkkotunnuksellesi määriteltyjä palvelimia. Siksi nämä palvelimet vastaavat ennen DNS- alueelle siirtymistä.
+- Sinulla on OVH:lla rekisteröity verkkotunnus.
+- Sinulla on pääsyoikeus verkkotunnuksen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+> [!warning]
+>
+> Jos verkkotunnustasi ei ole rekisteröity OVH:lla, sinun on tehtävä nimipalvelinten muokkaus verkkotunnustasi hallinnoivalla palveluntarjoajalla.
+>
 
+## Käytännössä
 
-## DNS-alue
+**DNS-alueen muokkauksessa on noudatettava varovaisuutta.** Epäasianmukaisen muutoksen tekeminen saattaa esimerkiksi estää pääsyn verkkosivullesi tai uusien viestien saapumisen sähköpostiosoitteisiisi. Ymmärtämällä tällaisten muokkausten vaikutukset, voit saada paremmin käsityksen muutoksista, joita tulet tekemään.
 
-- DNS-alue on teknisesti tiedosto, joka käsittää useita eri tietueita, jotka määrittelevät missä sivusto sijaitsee (A), tai mitkä sähköpostipalvelimet huolehtivat verkkotunnuksen sisääntulevasta sähköpostiliikenteestä (MX). Nämä osoitteet voivat olla numeeristen IP-osoitteiden muodossa, tai selkokielisenä (CNAME).
+Kun muokkaat verkkotunnuksesi nimipalvelimia, muokkaat sen käyttämää DNS-konfiguraatiota. Uusi konfiguraatio tallennetaan siis uusille määritetyille nimipalvelimille ja se korvaa vanhan. Teknisesti verkkotunnus käyttää siis uutta DNS-aluetta.
 
+Ole kuitenkin varovainen:
 
+- vanhan DNS-konfiguraation sisältöä ei kopioida automaattisesti uuteen. Varmista siis, että se sisältää kaikki tarvittavat elementit verkkotunnukseesi liitettyjen palveluiden (kuten verkkosivun ja sen sähköpostiosoitteiden) toimintaan.
 
+- Jos haluat muokata vain yhtä tämän hetkistä DNS-konfiguraatiota (kuten muokata tietuetta), suosittelemme muokkaamaan mieluummin DNS-aluetta. Apua siihen löydät tästä ohjeesta: [DNS-alueen muokkaus](https://docs.ovh.com/fi/domains/miten_dns-aluetta_muokataan/){.external}.
 
-## Miksi muokata palvelimia tai DNS-aluetta?
+> [!warning]
+>
+> Varmista ennen muutoksen aloittamista, ettei toimenpide estä verkkotunnuksesi saavutettavuutta. Jos olet epävarma, ota yhteyttä muutosta pyytävään henkilöön asian varmistamiseksi.
+>
 
-## Nimipalvelimet
-Nimipalvelimien muokkaus voi olla tarpeellista, kun vaihdat palveluntarjoajaa. Tietyt palveluntarjoajat eivät hyväksy palvelimien käyttöä, kun verkkotunnus on siirtynyt kilpailijalle.
-On myös mahdollista, että sinulla DNS-palvelinta käyttävä dedikoitupalvelin, jota haluat käyttää verkkotunnuksesi hallinnointiin.
+### 1. Mene verkkotunnuksesi OVH:n nimipalvelinten hallintaan
 
-## DNS-alue
-Kun haluat määritellä minne sivuston liikenne tai sähköpostit ohjautuvat, sinun täytyy muokata DNS-aluetta. Kun alue on muokattu ja päivitetty, verkkotunnuksesi osoittaa uuteen kohteeseen tai kohteisiin. 
+Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa `Verkkotunnukset`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva verkkotunnus. Mene lopuksi välilehdelle `Nimipalvelimet`{.action}.
 
-DNS-alueeseen liittyvä ohje on saatavilla alla olevasta linkistä:
+Näkyviin tuleva taulukko näyttää tämän hetkiset verkkotunnuksellesi määritetyt nimipalvelimet OVH:lla. Näkyvissä voi olla useita nimipalvelimia, joita kaikkia symboloi yksi taulukon rivi.
 
-- []({legacy}2015).
+![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
+### 2. Muokkaa verkkotunnuksesi nimipalvelimia
 
+Aloita nimipalvelinten muokkaus klikkaamalla painiketta `Muokkaa nimipalvelimia`{.action}.
 
+Muokkaa näkyviin tulevilla tekstialueilla nykyisistä nimipalvelimista niitä, jotka haluat määrittää. Lisätäksesi ylimääräisiä palvelimia olemassa olevaan listaan klikkaa `+`{.action}-merkkiä taulukon viimeisen rivin oikeassa reunassa ja näkyviin tulee ylimääräinen tekstialue.
 
-## Kirjautuminen hallintapaneeliin
+Kun tiedot on annettu, klikkaa painiketta `Aseta konfiguraatio`{.action}. Nimipalvelinten tila päivittyy taulukossa vastaamaan juuri tekemiäsi muutoksia.
 
-- Kirjaudu hallintapaneeliin [url="https://www.ovh.com/manager/web"] asiakastunnuksellasi ja sille määrittelemälläsi salasanalla.
+> [!primary]
+>
+> Painikkeella `Palauta nimipalvelimet`{.action} voidaan muuttaa verkkotunnuksen nykyiset nimipalvelimet OVH:n alkuperäisiksi nimipalvelimiksi. Suosittelemme käyttämään ainoastaan tätä vaihtoehtoa, jos haluat käyttää uudestaan OVH:n nimipalvelimia. 
+>
 
-- Klikkaa "Kirjaudu" toimenpiteen vahvistamiseksi.
+![dnsserver](images/edit-dns-server-ovh-step2.png){.thumbnail}
 
+### 3. Odota muokkauksen ajan
 
+Kun toimenpide on tehty, on odotettava sen toteutumista. Kaksi perättäistä määräaikaa on otettava huomioon:
 
-![](images/img_3411.jpg){.thumbnail}
+- OVH:lla toteutettu muutos täytyy rekisteröidä verkkotunnuspäätettäsi hallinnoivalla organisaatiolla. Voit seurata etenemistä [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} osassa `Verkkotunnukset`{.action}, vasemmanpuoleisessa palveluvalikossa kohdassa `Meneillään olevat operaatiot`{.action}.
 
+- Kun verkkotunnustasi hallinnoiva organisaatio on rekisteröinyt muutoksen, seuraa enintään 48 tunnin mittainen propagaatioaika ennen kuin muutokset ovat astuneet täysin voimaan.
 
-## Verkkotunnuksen valinta
+## Lue lisää aiheesta
 
-- Valitse vasemmalla olevasta valikosta "Verkkotunnukset", sitten muokattava "verkkotunnus".
+[Miten DNS-aluetta muokataan?](https://docs.ovh.com/fi/domains/miten_dns-aluetta_muokataan/){.external}
 
-
-
-![](images/img_3405.jpg){.thumbnail}
-
-
-## Uusien nimipalvelimien lisäys
-
-- Mene kohtaan "DNS-hallinta" ja valitse "Lisää nimipalvelin".
-
-
-
-![](images/img_3406.jpg){.thumbnail}
-
-- Ilmoita lisättävä ensimmäinen nimipalvelin, vahvista ja tee sitten sama toiselle nimipalvelimelle.
-
-
-
-![](images/img_3407.jpg){.thumbnail}
-
-
-## Vanhojen nimipalvelinten poisto
-
-- Klikkaa "roskakori"-kuvaketta poistettavian kahden vanhan nimipalvelimen kohdalla ja vahvista.
-
-
-
-![](images/img_3408.jpg){.thumbnail}
-
-- Poisto käynnissä.
-
-
-
-![](images/img_3409.jpg){.thumbnail}
-
-- Muutaman minuutin kuluttua toimenpide on valmis.
-
-
-
-![](images/img_3410.jpg){.thumbnail}
-
-
-## Nimipalvelinten nollaus oletuksena
-Jos muokkaat nimipalvelintasi väärin, voit nollata nimipalvelimesi oletuksena.
-
-
-- Mene kohtaan "DNS-hallinta" ja valitse "Nollaa nimipalvelin oletuksena".
-
-
-
-![](images/img_3416.jpg){.thumbnail}
-
-- Klikkaa "Vahvista" nollauksen vahvistamiseksi.
-
-
-
-![](images/img_3417.jpg){.thumbnail}
-
-
-## Kuinka tunnistaa OVH:n määrittelemät nimipalvelimet
-Jotta tunnistat OVH:n määrittelemät nimipalvelimet, klikkaa kohtaa "DNS-alue" ja näet alueellasi olevat kaksi "NS-rekisteriä".
-
-![](images/img_3418.jpg){.thumbnail}
-
-
-## Nimipalvelimien edistynyt hallinta Glue Registryn avulla
-Luodaksesi tilin Glue Registry -palveluun tutustu ohjeeseen: []({legacy}1568)
-
-
-## Kestot
-Nimipalvelimet
-
-
-- Kaikkien nimipalvelimien muutosten valmistumisessa voi kestää 48 tuntia. 
-
-DNS-alue
-- Kaikkien DNS-aluetta koskevien muutosten valmistuminen voi kestää 24 tuntia.
-
-
-
+Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en/>.
