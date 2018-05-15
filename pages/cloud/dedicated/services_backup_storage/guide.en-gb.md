@@ -1,391 +1,329 @@
 ---
-title: Backup storage
+title: 'Using backup storage on a dedicated server'
 slug: services-backup-storage
-excerpt: This guide explains how to enable the Backup Storage functionality and how to use.
+excerpt: 'This guide explains how to enable the Backup Storage functionality and how to use it.'
 section: Storage
 ---
 
+**Last updated 14th May, 2018**
+
+## Objective
+
+OVH provides 500 GB of free backup storage space with each Dedicated Server.
+
+**This guide explains how to enable and use this Backup storage space**.
 
 ## Requirements
-- Having an OVH Server.
-- Having access to the ManagerV6.
 
-OVH provide free backup storage for all of its dedicated servers.
+* Access to a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
+* Access to your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-The OVH backup storage is accessible via these popular protocols:
+## Instructions
 
-- FTPS
-- FTP
-- NFS
-- CIFS
+### Activate Backup storage
 
-The access is restricted by IP using ACL. You can create a ACL for the IPs that are on your server via the manager or the API. By default, all IPs in your account have FTP/FTPS access to the backup storage. The other protocols are not authorized by default. To authorize them you have to create a ACL.
+Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab, and click the `Activate the Backup Storage`{.action} button.
 
+![Activate Backup storage](images/backup-storage-01-edited.png){.thumbnail}
 
-## Procedure
 
-### Step 1 &#58; Activation
-To activate the backup storage;
+Then click the `Confirm`{.action} button.
 
-1. Log into your [Manager](https://www.ovh.com/manager/){.external}
-1. Select your server in the **Infrastructures** tab
-1. Select the **Backup storage** tab
-1. Click the **Activate the Backup Storage** button
+![Activate Backup storage](images/backup-storage-02.PNG){.thumbnail}
 
-![Activating Backup Storage](images/services-backup-storage-activate.png){.thumbnail}
+You will now receive an activation email, and your backup storage will be configured in a few minutes.
 
-1. Click Confirm
+### Set up access control
 
-![Confirm Backup Storage activation](images/services-backup-storage-activate-confirm.png){.thumbnail}
+Access to your Backup storage is restricted by IP address using an access control list (ACL). By default, all IPs in your account have FTP/FTPS access to the backup storage. The other protocols (NFS and CIFS) are not authorised by default. To authorise them, you will need to create an ACL.
 
-1. You should see a confirmation message and receive an activation email
+#### Add backup access
 
-![Activation completed](images/services-backup-storage-activate-done.png){.thumbnail}
+Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab, and click the `Add an access button`{.action}.
 
+![Add backup access](images/backup-storage-03-edited.png){.thumbnail}
 
-### Step 2 &#58; Usage summary
-1. Log into your Manager
-1. Select your server in the **Infrastructures** tab
-1. Select the **Backup storage** tab
-
-![Backup storage usage summary](images/services-backup-storage-usage.png){.thumbnail}
-
-There you will see the amount of space used versus the amount of space available in your backup storage.
-
-
-### Step 3 &#58; Reset password
-Backup storage passwords are generated automatically, for security reasons you cannot specify your own password.
-
-If you lost your password, you can generate a new one using this procedure:
-
-1. Go in your Manager
-1. Select your server in the **Infrastructures** tab
-1. Select the **Backup storage** tab
-1. Click the **Forgotten password?** button
-
-![Reset password](images/services-backup-storage-reset-password.png){.thumbnail}
-
-1. Click the Confirm button
-
-![Reset password confirmation](images/services-backup-storage-reset-password-confirm.png){.thumbnail}
-
-1. You should now see this message and receive an email with the new password
-
-![Reset password completed](images/services-backup-storage-reset-password-done.png){.thumbnail}
-
-
-## ACL Management
-To authorize IPs on your backup storage you need to create an ACL and allow a connection protocol for that IP.
-
-The ACL management can be done at two places, either with the Manager or with the API.
-
-
-### Step 1 &#58; Adding a new access
-To authorize an IP to a backup storage using the Manager:
-
-1. Log into your [Manager](https://www.ovh.com/manager/){.external}
-1. Select your server in the **Infrastructures** tab
-1. Select the **Backup storage** tab
-1. If the IP is not in the list click the **Add an access** button
-
-![Add access](images/services-backup-storage-access-add.png){.thumbnail}
-
-1. Select the IP or block you want to autorize
-
-![Add access](images/services-backup-storage-access-select.png){.thumbnail}
-
-1. Confirm your selection
-
-![Add access](images/services-backup-storage-access-confirm.png){.thumbnail}
-
-1. You should see a confirmation message
-
-![Add access](images/services-backup-storage-access-done.png){.thumbnail}
-
-
-### Step 2 &#58; Modifying an access
-To modify an existing access:
-
-1. Click on the "cog" in the last column and then on "**Modify the access**".
-
-![Modify access](images/services-backup-storage-access-modify.png){.thumbnail}
-
-1. Select the protocols you want to authorize for this IP or block:
-
-![Select protocols to add or remove for an IP](images/services-backup-storage-access-modify-select.png){.thumbnail}
-
-1. You should see a confirmation message;
-
-![Modify access](images/services-backup-storage-access-modify-done.png){.thumbnail}
-
-
-### Step 3 &#58; Deleting an access
-To delete an access:
-
-1. Click on the "cog" in the last column and then on "**Delete the access**".
-
-![Delete an access](images/services-backup-storage-access-modify.png){.thumbnail}
-
-1. Confirm the deletion :
-
-![Delete confirmation](images/services-backup-storage-delete-confirm.png){.thumbnail}
-
-1. You should see a confirmation message;
-
-![Access deleted](images/services-backup-storage-delete-done.png){.thumbnail}
-
-
-### Step 4 &#58; Deleting a backup
-1. Log into your [Manager](https://www.ovh.com/manager/){.external}
-1. Select your server in the **Infrastructures** tab
-1. Select the **Backup storage** tab
-1. Click the **Delete Backup Storage** button
-
-![Delete backup storage](images/services-backup-storage-delete-backup.png){.thumbnail}
-
-
-
-> [!critical]
->
-> This operation is non-reversible, all data is permanently destroyed!
-> 
-
-
-## Using the backup storage
-The backup storage service does not automatically backup your data, it only provide the space and the access protocols. It is your responsibility to implement an adequate backup strategy using the tools of your choice.
-
-
-### Step 1 &#58; FTP/FTPS
-
-#### ncftp (For Linux)
-
+You will then need to select the IP block that you want to authorise. After selecting the IP block, select the protocol you want to authorise, and then click the `Next`{.action} button.
 
 > [!primary]
 >
-> This command does not support the FTPS protocole. If you need secure
-> transfer you should use lftp or curl instead.
-> 
+> You can only authorise IP blocks in your OVH account to access the backup storage.
+>
 
-To save individual files you can use the following command:
+![Add backup access](images/backup-storage-07-edited.png){.thumbnail}
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"$ ";}</style> <pre class="highlight command-prompt"> <span class="prompt">ncftpput -uFTPUSER -pFTPPASS FTPBACKUPHOST /REMOTE/FOLDER /FILE/TO/SAVE</span> </pre></div>
-Replace the following variables with the correct information:
+Now confirm your options and click the `Finish`{.action} button.
 
-The FTP username
+![Add backup access](images/backup-storage-08-edited.png){.thumbnail}
 
-The FTP password
+You will now be able to access your server's backup storage from the IP block you selected.
 
-The hostname of the backup server
+#### Modifying Access
 
-The local file to upload
+To change the protocols for an authorised IP block, click the pencil icon for the IP block you want to modify, and then select/deselect the desired protocols. When you have finished, click the tick button to save your changes.
 
-The remote target directory where to save the file
+![Modifying access](images/backup-storage-13-edited.png){.thumbnail}
 
-To backup a folder, simply create an archive before uploading it:
+#### Deleting Access
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"$ ";}</style> <pre class="highlight command-prompt"> <span class="prompt">tar czf - /DIRTOSAVE | ncftpput -uFTPUSER -pFTPPASS -c FTPBACKUPHOST DIRNAME.tar.gz</span> </pre></div>
-The name of the directory you want to put in the archive
+To revoke authorisation for an IP block, click the trash can icon that appears at the end of the line.
 
-The FTP username
+![Modifying access](images/backup-storage-14-edited.png){.thumbnail}
 
-The FTP password
+And then click to confirm.
 
-The hostname of the backup server
+![Modifying access](images/backup-storage-14-edited.png){.thumbnail}
 
-The name of the directory you want to upload
+Access to the backup storage will now be revoked for that IP block.
+
+### Reset your password
+
+Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Forgotten your password`{.action} button.
+
+![Reset your password](images/backup-storage-04-edited.png){.thumbnail}
+
+Then click the `Confirm`{.action} button.
+
+![Reset your password](images/backup-storage-09.PNG){.thumbnail}
+
+A password recover email will now be sent to the email address registered to your admin account. Please follow the instructions in the email to reset your password.
+
+### Delete the Backup Storage
+
+Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Delete the Backup Storage button`{.action}
+
+![Delete the Backup storage](images/backup-storage-05-edited.png){.thumbnail}
+
+Click `Confirm`{.action} on the warning message to proceed with the deletion.
+
+![Delete the Backup storage](images/backup-storage-10.PNG){.thumbnail}
+
+The Backup storage will now be deleted after a few minutes.
+
+### Order disk space
+
+Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Order disk space`{.action} button.
+
+![Order disk space](images/backup-storage-06-edited.png){.thumbnail}
+
+Select the storage capacity you would like and then click the `Next`{.action} button.
+
+![Order disk space](images/backup-storage-11-edited.png){.thumbnail}
+
+Tick the box to confirm that you have read an understood the terms and conditions and then click the `Confirm`{.action} button.
+
+![Order disk space](images/backup-storage-12-edited.png){.thumbnail}
+
+An order will now be created. Once your payment has been processed, you will receive your additional storage space.
+
+### Using the backup storage
+
+> [!primary]
+>
+> The Backup storage service does not automatically back up your data, it only provides the space and the access protocols. It is your responsibility to implement an adequate backup strategy using the tools of your choice.
+>
+
+#### FTP/FTPS
+
+##### ncftp (for Linux)
+
+To save individual files to your backup storage, you can use the following command:
+
+```sh
+# ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
+```
+
+**Please note that this command does not support the FTPS protocol. If you need secure transfer you should use lftp or curl instead.**
+
+The code example above contains variables, which you will need to substitute with your own values.
+
+* **FtpUsername** : Your FTP username
+* **FtpPassword**: Your FTP password
+* **HostName**: The host name of your backup storage
+* **FolderLocation**: The path to the target folder where you want to save the file
+* **File**: The name of the file you want to save
+
+Backing up a folder is done by creating a folder archive, and then uploading it all with one command:
+
+```sh
+# tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName ArchiveName.tar.gz
+```
+
+The code example above contains variables, which you will need to substitute with your own values.
+
+* **FolderName**: The path to the folder you want to back up
+* **FtpUsername**: Your FTP username
+* **FtpPassword**: Your FTP password
+* **HostName**: The host name of your backup storage
+* **ArchiveName**: The name of the folder you want to back up
 
 To download an archive file from your backup storage, you can use the following command:
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"$ ";}</style> <pre class="highlight command-prompt"> <span class="prompt">ncftpget -v -u FTPPASS -p FTPPASS FTPBACKUPHOST /LOCALDIR /FILEBACKUP</span> </pre></div>
-The FTP username
+```sh
+# ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
+```
 
-The FTP password
+The code example above contains variables, which you will need to substitute with your own values.
 
-The hostname of the backup server
+* **FtpUsername**: Your FTP username
+* **FtpPassword**: Your FTP password
+* **HostName**: The host name of your backup storage
+* **LocalFolder**: The path to the local folder where you want to save the file
+* **File**: The path to the file you want to download
 
-The local target directory where to save the file
-
-The path to the file you want to download
-
-
-#### Curl (For Linux)
-
-
-> [!primary]
->
-> To use FTPS you must change the hostname of the backup storage.
-> For example, if the name of your backup storage is ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net,
-> you need to change it for ftpback-rbxX-YYY.mybackup.ovh.net.
-> You also need to add the -ssl flag to the commands below.
-> 
-
-To backup individual files, use the following command:
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"$ ";}</style> <pre class="highlight command-prompt"> <span class="prompt">curl -aT FILETOSAVE ftp://FTPUSER:FTPPASS@FTPBACKUPHOST/REMOTEDIR/</span> </pre></div>
-The name of the file you want to backup
-
-The FTP username
-
-The FTP password
-
-The hostname of the backup server
-
-The remote directory where the file should be uploaded
-
-To backup a directory:
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"$ ";}</style> <pre class="highlight command-prompt"> <span class="prompt">tar czf - /DIRTOSAVE | curl ftp://FTPUSER:FTPPASS@FTPBACKUPHOST/REMOTEDIR/DIRNAME-$(date +%Y%m%d%H%M).tar.gz -T -</span> </pre></div>
-Path of the directory to backup
-
-The FTP username
-
-The FTP password
-
-The hostname of the backup server
-
-The remote directory where the file should be uploaded
-
-The name of the directory to backup
-
-To download an archive from you backup storage you can use the following command:
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"$ ";}</style> <pre class="highlight command-prompt"> <span class="prompt">cd /LOCALDIR</span> <span class="prompt">curl -u FTPUSER:FTPPASS ftp://FTPBACKUPHOST/FILEBACKUP</span> </pre></div>
-The FTP username
-
-The FTP password
-
-The hostname of the backup server
-
-The local directory where to save the file
-
-Full path of the archive to download
-
-
-#### lftp (For Linux)
-
+##### Curl (for Linux)
 
 > [!primary]
 >
-> lftp use FTP+SSL/TLS by default. So you must change the hostname of the backup storage.
-> For example, if the name of your backup storage is ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net,
-> you need to change it for ftpback-rbxX-YYY.mybackup.ovh.net.
-> 
+> To use FTPS you must change the hostname of the backup storage. For example, if the name of your backup storage is ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net, you need to change it to ftpback-rbxX-YYY.mybackup.ovh.net. You also need to add the -ssl flag to the commands below.
+>
 
-To backup individual file use the following command:
+To save individual files to your backup storage, you can use the following command:
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"$ ";}</style> <pre class="highlight command-prompt"> <span class="prompt">lftp ftp://username:password@ftpback-rbxX-YYY.mybackup.ovh.net:21 -e "cd REMOTEDIR; put FILETOSAVE; quit"</span> </pre></div>
-Replace by FTP or FTPS
+```sh
+# curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
+```
 
-The FTP username
+The code example above contains variables, which you will need to substitute with your own values.
 
-The FTP password
+* **File**: The name of the file you want to save
+* **FtpUsername**: Your FTP username
+* **FtpPassword**: Your FTP password
+* **HostName**: The host name of your backup storage
+* **FolderLocation**: The path to the target folder where you want to save the file
 
-The hostname of the backup server
+Backing up a folder is done by creating a folder archive, and then uploading it all with one command:
 
-The remote directory where the file should be uploaded
+```sh
+# tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocation/ArchiveName-$(date +%Y%m%d%H%M).tar.gz -T -
+```
 
-Name of the file to backup
+The code example above contains variables, which you will need to substitute with your own values.
 
-To backup a directory, use the following command:
+* **FolderName**: The path to the folder you want to back up
+* **FtpUsername**: Your FTP username
+* **FtpPassword**: Your FTP password
+* **HostName**: The host name of your backup storage
+* **FolderLocation**: The path to the target folder where you want to save the folder
+* **ArchiveName**: The name of the folder you want to back up
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"$ ";}</style> <pre class="highlight command-prompt"> <span class="prompt">tar czf - /DIRTOSAVE | ftp://username:password@ftpback-rbxX-YYY.mybackup.ovh.net:21 -e "cd REMOTEDIR; put /dev/stdin -o DIRNAME-$(date +%Y%m%d%H%M).tar.gz;quit"</span> </pre></div>
-Replace by FTP or FTPS
+To download an archive file from your backup storage, you can use the following commands:
 
-Full path of the directory to backup
+```sh
+# cd /LocalFolder
+# curl -u FtpUsername:FtpPassword ftp://HostName/File 
+```
 
-The FTP username
+The code example above contains variables, which you will need to substitute with your own values.
 
-The FTP password
+* **FtpUsername**: Your FTP username
+* **FtpPassword**: Your FTP password
+* **HostName**: The host name of your backup storage
+* **LocalFolder**: The name of the local folder where you want to save the file
+* **File**: The path to the file you want to download
 
-The hostname of the backup server
-
-The remote directory where the file should be uploaded
-
-The name of the directory to backup
-
-To retrieve a file from the backup storage, use the following command:
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"$ ";}</style> <pre class="highlight command-prompt"> <span class="prompt">cd /LOCALDIR</span> <span class="prompt">lftp ftp://username:password@ftpback-rbxX-YYY.mybackup.ovh.net:21 -e "get /FILEBACKUP; quit"</span> </pre></div>
-Replace by FTP or FTPS
-
-The FTP username
-
-The FTP password
-
-The hostname of the backup server
-
-The local directory where to save the file
-
-Full path of the archive to download
-
-
-#### Filezilla (For Windows)
-1. Connect to your server using **Remote Desktop**.
-1. Open the Internet browser and download FileZilla. (When asked, it is not necessary to install complementary software)
-1. Launch FileZilla and use the FTP credentials you received by email
-The host of the backup storage
-
-The username of your backup storage
-
-The password of your backup storage
-
-1. Click **Quickconnect**
-
+##### lftp (for Linux)
 
 > [!primary]
 >
-> The left pane shows the local content of your server, the right pane
-> shows the content of your backup storage. You can drag and drop files from
-> one pane to another to upload or download file from your backup storage.
-> 
-
-
-### Step 2 &#58; NFS
-
-
-> [!primary]
+> lftp uses FTP+SSL/TLS by default. So you must change the host name of the backup storage. For example, if the name of your backup storage is ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net, you need to change it to ftpback-rbxX-YYY.mybackup.ovh.net.
 >
-> The NFS protocol is for use with Linux distributions. For Windows you
-> should use CIFS or FTP.
-> 
 
-First make sure you added the necessary ACLs to allow **NFS** protocol with the IP you want to use. If you did not, please refer to the [ACL Management](#acl-management){.internal} section.
+To save individual files to your backup storage, you can use the following command:
 
-Depending on your distribution, you might have to install the NFS client and start the NFS/portmap services.
+```sh
+# lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; quit"
+```
 
-Once you have the NFS client installed and portmap running, you can mount the NFS share like a normal partition:
+The code example above contains variables, which you will need to substitute with your own values.
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">mount -t nfs FTPBACKUPHOST:/export/ftpbackup/SERVICENAME /DOSSIERMOUNT</span> </pre></div>
-The host of the backup storage
+* **File**: The name of the file you want to save
+* **FtpUsername**: Your FTP username
+* **FtpPassword**: Your FTP password
+* **HostName**: The host name of your backup storage
+* **FolderLocation**: The path to the target folder where you want to save the file
 
-The name of your server (ex: ns0000000.ip-123-123-123.net)
+Backing up a folder is done by creating a folder archive, and then uploading it all with one command:
 
-The folder where you want to mount the NFS share
+```sh
+# tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put /dev/stdin -o ArchiveName-$(date +%Y%m%d%H%M).tar.gz;quit"
+```
 
-Once the share is mounted, you can use commands like cp and rsync like on a normal directory.
+The code example above contains variables, which you will need to substitute with your own values.
 
+* **FolderName**: The path to the folder you want to back up
+* **FtpUsername**: Your FTP username
+* **FtpPassword**: Your FTP password
+* **HostName**: The host name of your backup storage
+* **FolderLocation**: The path to the target folder where you want to save the folder
+* **ArchiveName**: The name of the folder you want to back up
 
-### Step 3 &#58; CIFS
-First make sure you added the necessary ACLs to allow **CIFS** protocol with the IP you want to use. If you did not, please refer to the [ACL Management](#acl-management){.internal} section.
+To download an archive file from your backup storage, you can use the following commands:
 
+```sh
+# cd /LocalFolder
+# lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
+```
 
-#### For Windows
-Open the command prompt and type the following command:
+The code example above contains variables, which you will need to substitute with your own values.
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"$ ";}</style> <pre class="highlight command-prompt"> <span class="prompt">net use z: \\FTPBACKUPHOST\SERVICENAME</span> </pre></div>
-The host of the backup storage
+* **FtpUsername**: Your FTP username
+* **FtpPassword**: Your FTP password
+* **HostName**: The host name of your backup storage
+* **LocalFolder**: The name of the local folder where you want to save the file
+* **File**: The path to the file you want to download
 
-The name of your server (ex: ns0000000.ip-123-123-123.net)
+##### Filezilla (for Windows)
 
-Once completed, you should now have a new **Z:** drive that you can use like a normal mounted share.
+After installing FileZilla on your server, you can configure it to connect to your backup storage using the FTP credentials that were emailed to you when you activated the Backup storage. To connect successfully, you will need the host name and password of your Backup storage.
 
+#### NFS
 
-#### For Linux
-Use SSH to connect to your server and type the following command:
+First make sure that you have authorised your IP blocks to access the storage and use the NFS protocol. Depending on your Linux operating system, you might have to install the **NFS** client and start the NFS/portmap service.
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">mount -t cifs -o sec=ntlm,uid=root,gid=100,dir_mode=0700,username=root,password= //FTPBACKUPHOST/SERVICENAME /mnt/DIRNAME</span> </pre></div>
-The host of the backup storage
+Once you have the NFS client installed and portmap running, you can mount the NFS share like a normal partition as shown below:
 
-The name of your server (ex: ns0000000.ip-123-123-123.net)
+```
+# mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+```
 
-Directory name where to mount the share (it **must** exists!)
+The code example above contains variables, which you will need to substitute with your own values.
+
+* **HostName**: The host name of your backup storage
+* **ServiceName**: The name of your server (e.g. ns0000000.ip-123-123-123.net)
+* **FolderMount**: The folder where you want to mount the NFS share
+
+Once the share is mounted, you can use commands like **cp** and rsync like on a normal directory.
+
+#### CIFS
+
+##### Windows
+
+Log on to your server, open the command prompt, and type the following command:
+
+```sh
+net use z: \\HostName\ServiceName
+```
+
+The code example above contains variables, which you will need to substitute with your own values.
+
+* **HostName**: The host name of your backup storage
+* **ServiceName**: The name of your server (e.g. ns0000000.ip-123-123-123.net)
+
+##### Linux
+
+Establish an SSH connection to your server, and type the following command:
+
+```sh
+# mount -t cifs -o sec=ntlm,uid=root,gid=100,dir_mode=0700,username=root,password= //HostName/ServiceName /mnt/FolderMount
+```
+
+The code example above contains variables, which you will need to substitute with your own values.
+
+* **HostName**: The host name of your backup storage
+* **ServiceName**: The name of your server (e.g. ns0000000.ip-123-123-123.net)
+* **FolderMount**: The folder where you want to mount the share (it must already exist)
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
