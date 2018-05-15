@@ -1,95 +1,80 @@
 ---
-title: 'Hosting www: Monitorowanie automatycznych e-maili'
-excerpt: Monitorowanie e-maili wysyłanych z hostingu www
+title: 'Monitoring i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu'
 slug: hosting_www_monitorowanie_automatycznych_e-maili
-section: Diagnostyka i bezpieczeństwo
+excerpt: 'Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVH'
+section: Diagnostyka
 ---
 
+**Ostatnia aktualizacja dnia 2018-05-14**
 
-## Dostęp do zakładki "Skrypty e-mail" w panelu klienta.
+## Wprowadzenie
 
-## Kroki do zrealizowania
+Automatyczne wiadomości e-mail są wysyłane za pomocą skryptów. Używane są na przykład w formularzach kontaktowych na stronie WWW.
 
-- Zaloguj się do [panelu klienta](https://www.ovh.com/manager/web/login/).
-- W menu z lewej strony w sekcji "Hosting kliknij na nazwe hostingu.
-- Kliknij na "Plus +" i wybierz "Skrypty e-mail".
+Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVH.
 
+## Wymagania początkowe
 
+- Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-![](images/img_3110.jpg){.thumbnail}
+> [!primary]
+>
+> Tematem tego przewodnika są tylko wiadomości e-mail wysyłane za pośrednictwem skryptów z Twojego hostingu w OVH.
+>
+> Aby zarządzać adresami e-mail zawartymi w MX Plan lub [hostingu OVH](https://www.ovh.pl/hosting/){.external}, przejdź do sekcji `E-maile`{.action} w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.
+>
 
+## W praktyce
 
-## Blokowanie wysyłki e-maili z hostingu
-Czasami należy zablokować wysyłkę e-maili z hostingu.
+Możesz monitorować i zarządzać automatycznymi wiadomościami e-mail w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Zaloguj się do Panelu klienta, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz z listy odpowiedni hosting. Teraz kliknij zakładkę `Więcej`{.action}, a następnie `Skrypty e-mail`{.action}.
 
-## W jakiej sytuacji?
+Wyświetli się strona, dzięki której będziesz mógł monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVH
 
-- Gdy wykonujesz test skryptu wysyłającego e-maile.
-- Gdy hosting został zhakowany przez spamera.
+![wysyłka wiadomości e-mail ze skryptu](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
+### Monitorowanie wysyłki automatycznych maili
 
+Strona, która wyświetliła się po kliknięciu `Skrypty e-mail`{.action}, podaje informacje umożliwiające bieżące monitorowanie aktywności związanych z wysyłką automatycznych wiadomości generowanych za pomocą skryptów. 
 
-## Uwaga:
-Żaden e-mail nie zostanie usunięty. E-maile będą wstrzymane przez 72 godziny. W tym czasie będziesz mógł odblokować wysyłkę lub wyczyścić kolejkę e-maili.
-1. Kliknij na przycisk "Zablokuj wysyłkę".
+|Informacja|Szczegóły|
+|---|---|
+|Status usługi|Pokazuje aktualny status usługi realizującej wysyłkę automatycznych maili z Twojego hostingu. Status w zielonej ramce oznacza poprawne wysyłanie e-maili, natomiast status w czerwonej ramce wskazuje, że e-maile nie są wysyłane. Od statusu usługi zależał będzie sposób zarządzania wysyłką. Sprawdź informacje na ten temat w poniższej sekcji niniejszego przewodnika [„Zarządzanie wysyłką automatycznych wiadomości e-mail”](https://docs.ovh.com/pl/hosting/hosting_www_monitorowanie_automatycznych_e-maili/#zarzadzanie-wysylka-automatycznych-wiadomosci-e-mail){.external}.|
+|Raporty o błędach|Możesz otrzymywać codzienny raport o błędach na dowolny adres e-mail. Możesz go określić, klikając przycisk `Zmień odbiorcę`{.action}. Raport o błędach zawiera listę wiadomości e-mail wysłanych z Twojego hostingu, które zostały zwrócone do OVH, gdyż nie mogły zostać dostarczone do odbiorców. Możesz także wyświetlić raport o błędach, klikając przycisk `Błędy wysyłki e-maili`{.action} w Panelu klienta.|
+|Łączna liczba wysłanych wiadomości|Pokazuje łączną liczbę automatycznych wiadomości e-mail wysłanych od momentu skonfigurowania Twojego hostingu.|
+|Wiadomości e-mail wysłane dzisiaj|Pokazuje łączną liczbę automatycznych wiadomości e-mail wysłanych tylko dzisiaj.|
+|Łączna liczba zwróconych wiadomości e-mail|Pokazuje łączną liczbę niedostarczonych automatycznych wiadomości e-mail wysłanych z Twojego hostingu od momentu jego skonfigurowania.|
+|Historia wysłanych wiadomości e-mail|Wykres pokazuje historię wiadomości e-mail wysłanych z Twojego mailingu w poprzednich dniach.|
 
-![](images/img_3111.jpg){.thumbnail}
-2. Następnie kliknij na "Zatwierdź".
+> [!primary]
+>
+> Aby zapobiec sytuacjom niepożądanej wysyłki automatycznych wiadomości e-mail z Twojego hostingu, zalecamy, aby formularze (np. formularz kontaktowy) na Twojej stronie WWW były wyposażone w system bezpieczeństwa, taki jak Captcha.
+>
 
-![](images/img_3112.jpg){.thumbnail}
-3. Pojawi się potwierdzenie.
+![wysyłka wiadomości e-mail ze skryptu](images/monitoring-automatic-emails-step2.png){.thumbnail}
 
-![](images/img_3113.jpg){.thumbnail}
+Jeśli Twoje automatyczne e-maile nie są wysyłane za pośrednictwem skryptów, mimo że status usługi wskazuje, że powinny być wysyłane, zalecamy wykonanie następujących czynności:
 
-## Uwaga:
-Będziesz mógł zauważyć, że status usługi przeszedł w tryb "Nieaktywny".
+- **sprawdź skrypty odpowiedzialne za wysyłkę**: istnieje możliwość, że skrypty nie wysyłają maili z powodu błędu składni. Sprawdź zawartość skryptów, jeśli to konieczne, skoryguj je, następnie podejmij nową próbę wysyłki;
 
-![](images/img_3114.jpg){.thumbnail}
+- **przeprowadź test wysyłki wiadomości e-mail za pośrednictwem skryptu testowego**: utwórz skrypt testowy, który wyśle wiadomość e-mail na Twój osobisty adres. Jeśli otrzymasz wiadomość e-mail, oznacza to, że Twoje skrypty, których używasz do wysyłki automatycznych e-maili zawierają błędy. Skrypty testowe są dostępne w Internecie.
 
+- **nie używaj serwera SMTP do wysyłki wiadomości e-mail**: nie wpisuj parametrów serwera SMTP do Twoich skryptów. Jeśli dysponujesz interfejsem do zarządzania wysyłką wiadomości e-mail z Twojej strony WWW, upewnij się, że parametry te można zmodyfikować w konfiguracji Twojej strony.
 
-## Czyszczenie kolejki e-maili
-Czasami konieczne jest wyczyszczenie kolejki e-maili na serwerze email, aby uniknąć nowej blokady. Aby móc wyczyścić e-maile, należy najpierw zablokować wysyłkę.
+### Zarządzanie wysyłką automatycznych wiadomości e-mail
 
-## Uwaga:
-Twoje konto zostanie automatycznie odblokowane. Operacja ta trwa 5-10 minut.
-1. Kliknij na przycisk "Wyczyść e-maile".
+Po kliknięciu `Skrypty e-mail`{.action} zobaczysz kilka przycisków umożliwiających zarządzanie wysyłką automatycznych wiadomości e-mail z Twojego hostingu. Niektóre z nich mogą być niedostępne w zależności od bieżącego statusu usługi.
 
-![](images/img_3115.jpg){.thumbnail}
-2. Następnie kliknij na "Zatwierdź".
+|Działania|Szczegóły|
+|---|---|
+|Blokuj wysyłkę|Pozwala zablokować dystrybucję automatycznych wiadomości e-mail wysyłanych z Twojego hostingu. Wiadomości e-mail generowane przez Twoje skrypty po zablokowaniu będą czekały w kolejce przez 72 godziny. |
+|Odblokuj wysyłkę|Pozwala odblokować wysyłkę automatycznych wiadomości e-mail z Twojego hostingu. Wiadomości oczekujące w kolejce zostaną ponownie przydzielone do dystrybucji.|
+|Usuń wiadomości e-mail|Pozwala usunąć wiadomości e-mail oczekujące w kolejce i odblokować ich wysyłkę.|
 
-![](images/img_3116.jpg){.thumbnail}
-3. Pojawi się potwierdzenie.
+Aby wykonać wybraną czynność, kliknij odpowiedni przycisk, a następnie `Zatwierdź`{.action}. W niektórych przypadkach należy odczekać kilka minut, zanim zmiany wprowadzone w wyniku jednej z powyższych czynności staną się widoczne.
 
-![](images/img_3117.jpg){.thumbnail}
+![wysyłka wiadomości e-mail ze skryptu](images/monitoring-automatic-emails-step3.png){.thumbnail}
 
-## Uwaga:
-Będziesz mógł zauważyć, że status usługi przeszedł w tryb "Czyszczenie".
+## Sprawdź również
 
-![](images/img_3118.jpg){.thumbnail}
-
-
-## Odblokowanie wysyłki
-Wysyłka rozpocznie się wraz z wysłaniem kolejnego e-maila. Zablokowane e-maile zostaną wysłane.
-1. Kliknij na przycisk "Odblokuj wysyłkę".
-
-![](images/img_3122.jpg){.thumbnail}
-2. Następnie kliknij na "Zatwierdź".
-
-![](images/img_3123.jpg){.thumbnail}
-3. Pojawi się potwierdzenie.
-
-![](images/img_3124.jpg){.thumbnail}
-
-
-## Zmiana odbiorcy raportów z błędami
-Jeśli pojawią się błędy związane z wysyłką e-maili z hostingu www, otrzymasz raport z błędami. Zostanie on wysłany kolejnego dnia.
-1. Kliknij na "Zmień odbiorcę".
-
-![](images/img_3119.jpg){.thumbnail}
-2. Wpisz wybrany adres e-mail i kliknij na "Zatwierdź".
-
-![](images/img_3120.jpg){.thumbnail}
-3. Pojawi się nowy adres.
-
-![](images/img_3121.jpg){.thumbnail}
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
