@@ -1,11 +1,11 @@
 ---
-title: Configurer HTTP/2 sur un service OVH Load Balancer
+title: 'Configurer HTTP/2 sur un service OVH Load Balancer'
 slug: iplb-http2
-excerpt: Configuration de HTTP/2 sur un service OVH Load Balancer
-section: Cas d'usage
+excerpt: 'Configuration de HTTP/2 sur un service OVH Load Balancer'
+section: 'Cas d''usage'
 ---
 
-**Dernière mise à jour le 15/11/2017**
+**Dernière mise à jour le 16/05/2018**
 
 ## Objectif
 
@@ -19,9 +19,10 @@ ALPN (Application-Layer Protocol Negotiation) est une extension TLS qui permet �
 
 ## Prérequis
 
-- Un frontend TCP est créé.
+- Disposer d'un [Load Balancer OVH](https://www.ovh.com/fr/solutions/load-balancer/){.external}.
+- Un frontend TCP est créé sur le port 443.
 - Une ferme TCP est créée et des serveurs sont ajoutés.
-
+- Avoir accès à l'[API OVH](https://api.ovh.com/){.external}.
 
 ## En pratique
 
@@ -38,36 +39,26 @@ Nous allons ajouter une route à notre service.
 
 #### Via l'API
 
-> [!faq]
+> [!api]
 >
-> Service :
+> @api {POST} /ipLoadbalancing/{serviceName}/tcp/route
+> 
+
+> [!warning]
 >
->> > [!api]
->> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/tcp/route
->> >
->>
->
+> Le paramètre weight permet de définir l'ordre d'évaluation de vos routes, la première qui est validée sera exécutée.
+> 
+
 > Paramètres :
->
->> > **serviceName** *
->> >
->> >> `<identifiant du Load Balancer>`
->> >
->> > **action**
->> >
->> >> **type**
->> >> >
->> >> > `"farm"`
->> >>
->> >> **target**
->> >> >
->> >> > `<id de votre ferme tcp qui doit savoir gérer le HTTP/2>`
->> >
->> > **frontendId**
->> >
->> >> `<id de votre frontend tcp 443>`
->
+
+|Champ|Valeur et description|
+|---|---|
+|serviceName|Identifiant de votre service OVH Load Balancer|
+|frontendId|Identifiant de votre Frontend TCP port 443|
+|displayName|"HTTP2 TCP route"|
+|weight|(vide)|
+|action.type|"farm"|
+|action.target|Identifiant de votre ferme tcp qui doit savoir gérer le HTTP/2|
 
 
 ### Ajouter une règle
@@ -78,38 +69,20 @@ Nous allons maintenant ajouter une règle à notre route.
 
 #### Via l'API
 
-> [!faq]
+> [!api]
 >
-> Service :
->
->> > [!api]
->> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
->> >
->>
->
+> @api {POST} /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
+> 
+
 > Paramètres :
->
->> > **serviceName** *
->> >
->> >> `<identifiant du Load Balancer>`
->> >
->> > **routeId**
->> >
->> >> `<id de la route créée ci-dessus>`
->> >
->> > **field**
->> >
->> >> `"protocol"`
->> >
->> > **match**
->> >
->> >> `"is"`
->> >
->> > **pattern**
->> >
->> >> `"http/2.0"`
->
+
+|Champ|Valeur et description|
+|---|---|
+|serviceName|Identifiant de votre service OVH Load Balancer|
+|routeId|Identifiant de la route précédemment créée|
+|field|"protocol" Le nom du champ qui doit vérifier la règle|
+|match|"is" Le type de la vérification à faire|
+|pattern|"http/2.0" La valeur à vérifier pour le champ spécifié|
 
 
 ### Appliquer les modifications
@@ -123,26 +96,18 @@ Si vous avez plusieurs zones, vous devrez appliquer la même configuration pour 
 
 Rafraîchir une zone :
 
-> [!faq]
+> [!api]
 >
-> Service :
->
->> > [!api]
->> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/refresh
->> >
->>
->
+> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> 
+
 > Paramètres :
->
->> > **serviceName** *
->> >
->> >> `<identifiant du Load Balancer>`
->> >
->> > **zone**
->> >
->> >> `<zone où déployer la configuration>`
->
+
+|Champ|Valeur et description|
+|---|---|
+|serviceName|Identifiant de votre service OVH Load Balancer|
+|zone|Identifiant de la zone sur laquelle vous voulez appliquer votre configuration|
+
 
 ### Valider
 
