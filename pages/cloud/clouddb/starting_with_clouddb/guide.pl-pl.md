@@ -1,206 +1,178 @@
 ---
-title: Pierwsze kroki z CloudDB
+title: 'Pierwsze kroki z usługą Cloud Databases'
 slug: pierwsze-kroki-z-clouddb
-links: 
-   - docs/cloud/clouddb/utilisation-mysql-mariadb/
-   - docs/cloud/clouddb/utilisation-pgsql/
-legacy_guide_number: 2216
-excerpt: Bazy danych bez wad!
+excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania CloudDB'
+section: 'Pierwsze kroki'
 ---
 
-Posiadasz stronę www lub aplikację, która korzysta z bazy danych, ale nie chcesz nią zarządzać? Odkryj ofertę CloudDB!
+**Ostatnia aktualizacja dnia 2018-05-15**
 
+## Wprowadzenie
 
-## Informacje ogolne
+Rozwiązanie Cloud Databases (w skrócie CloudDB) umożliwia korzystanie z baz danych zainstalowanych na instancji, której zasoby są dedykowane i gwarantowane. Usługa ta oferuje więcej wydajności i elastyczności. Przeznaczona jest dla klientów o specyficznych potrzebach.
 
-### Dlaczego warto korzystac z zarzadzanych baz danych?
-Operacje takie jak zabezpieczanie, aktualizowanie, monitorowanie, zarządzanie uprawnieniami i wydajnością bardzo szybko mogą stać się męczące.
+**Dowiedz się, jak rozpocząć korzystanie z rozwiązania CloudDB.**
 
-**Dlaczego więc nie pozostawić tej pracy OVH i skupić się na swojej działalności?**
+## Wymagania początkowe
 
-To nasz cel. Nasza oferta jest skierowana do wszystkich: do prywatnych użytkowników oraz do firm, do użytkowników o mniejszym i większym zapotrzebowaniu.
+- Posiadanie [instancji Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
+## W praktyce
 
-### Zalety oferty CloudDB
-**Proste i szybkie użytkowanie:**
+### Wyświetlanie informacji ogólnych o instancji
 
-- Tworzenie baz danych SQL w panelu klienta
-- Nieograniczona liczba baz danych (w ramach limitu przyznanej przestrzeni dyskowej)
-- Do 200 jednoczesnych połączeń
-- Zarządzanie użytkownikami i uprawnieniami w panelu klienta
-- Dostęp do metryk w panelu klienta
-- Dostęp do logów
+W menu usług po lewej stronie [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, przejdź do sekcji [Bazy danych](https://www.ovh.com/auth/?action=gotomanager){.external}, a następnie kliknij nazwę instancji. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
 
-**Wydajność:**
+> [!primary]
+>
+> Nazwa usługi CloudDB w Panelu klienta zawiera część Twojego identyfikatora klienta i kończy się trzema cyframi (001 dla pierwszej zainstalowanej usługi CloudDB, 002 dla drugiej, etc.).
+>
 
-- Gwarantowane zasoby pamięci RAM
-- Sprawdzona infrastruktura
+W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji. Sprawdź, czy wyświetlające się dane są poprawne i czy są zgodne z poniższymi parametrami.
 
-**Bezpieczeństwo:**
+|Informacja|Szczegóły|
+|---|---|
+|Status usługi|Pokazuje, czy instancja jest uruchomiona, w trakcie restartu czy zawieszona. Twoja instancja musi być uruchomiona, abyś mógł przeprowadzać na niej działania.|
+|Typ|Pokazuje system baz danych używany przez serwer.|
+|Wersja|Pokazuje wersję systemu baz danych używanego przez serwer. Upewnij się, czy Twoja strona WWW jest kompatybilna z wybraną wersją.|
+|RAM|Pokazuje pamięć operacyjną dostępną dla Twojej instancji oraz ewentualne przekroczenia pamięci. Twoja instancja CloudDB dysponuje dedykowaną i gwarantowaną pamięcią RAM. Jeśli zajdzie taka potrzeba, możesz zwiększyć pamięć RAM. Możesz również ustawić alert o jej całkowitym zużyciu.|
+|Infrastruktura|Pokazuje infrastrukturę używaną przez Twoją instancję. Jest to wewnętrzne oznaczenie infrastruktury OVH.|
+|Centrum danych|Pokazuje centrum danych, w którym została uruchomiona instancja. Upewnij się, czy Twoja instancja jest uruchomiona w tym samym centrum danych, co hosting, na którym jest (lub zostanie) utworzona Twoja strona WWW.|
+|Host|Pokazuje serwer OVH, na którym utworzona została instancja. Jest to wewnętrzne oznaczenie OVH, które może pojawić się w komunikatach dotyczących [prac modernizacyjnych i potencjalnych incydentów OVH](http://travaux.ovh.net/){.external}.|
 
-- Usługa monitorowana 24 godziny na dobę przez 7 dni w tygodniu
-- Automatyczne codzienne kopie zapasowe
-- Obowiązkowa autoryzacja IP
+![cloud databases - bazy danych na instancji](images/clouddb-general-information.png){.thumbnail}
 
-**Kompatybilność:**
+### Utworzenie bazy danych
 
-- Usługa kompatybilna z wszystkimi produktami OVH (poza hostingiem www)
-- Wybór wersji SQL i zmiana na wyższą wersją możliwa w każdej chwili
+> [!primary]
+>
+> Etap ten nie dotyczy systemu baz danych Redis.
+>
 
+Aby utworzyć pierwszą bazę danych na Twojej instancji CloudDB, kliknij zakładkę `Bazy danych`{.action}, następnie przycisk `Dodaj bazę danych`{.action}.
 
-### Proponowane silniki
-Podczas zamawiania oferty CloudDB należy wybrać system baz danych:
+![cloud databases - bazy danych na instancji](images/clouddb-add-database.png){.thumbnail}
 
-**SQL**
+Wyświetli się okno służące do utworzenia bazy danych. Możesz w nim również:
 
-- MySQL
-- PostgreSQL
-- MariaDB
+-  **utworzyć użytkownika**: użytkownik będzie mógł wykonywać zapytania do bazy danych (odczyt, zapis czy usunięcie danych).
 
-Każda instancja dysponuje własnymi dedykowanymi zasobami. Bazy, które się na niej znajdują, będą **współdzielić** zasoby między sobą.
+- **dodać autoryzowany adres IP**: żądania pochodzące z tego adresu będą uprawnione do uzyskiwania dostępu do bazy danych.
 
+W zależności od dokonanego wyboru, uzupełnij wymagane informacje, po czym kliknij `Zatwierdź`{.action}.
 
-## Jak zamowic oferte CloudDB?
+|Informacja|Opis|
+|---|---|
+|Nazwa bazy danych|Podaj nazwę Twojej przyszłej bazy danych.|
+|Nazwa użytkownika|Podaj nazwę użytkownika, który będzie miał uprawnienia do logowania się do bazy i wykonywania zapytań (opcjonalne, jeśli kratka „*Utwórz użytkownika*” nie jest zaznaczona).|
+|Uprawnienia|Określ zakres uprawnień powiązanych z użytkownikiem. W przypadku użytku standardowego wybierz opcję `Administrator`{.action} (opcjonalne, jeśli kratka „*Utwórz użytkownika*” nie jest zaznaczona).|
+|Hasło|Wybierz hasło, następnie potwierdź je (opcjonalne, jeśli kratka „*Utwórz użytkownika*” nie jest zaznaczona).|
+|IP/maska|Wprowadź adres IP lub maskę IP serwera lub serwerów, które będą miały prawo dostępu do Twoich baz danych (opcjonalne, jeśli kratka „*Dodaj autoryzowany adres IP*” nie jest zaznaczona).|
 
-### Logowanie do panelu klienta
-W pierwszej kolejności należy zalogować się do [Panelu klienta](https://www.ovh.com/manager/web/){.external}.
+> [!warning]
+>
+> Przy zapisywaniu informacji zalecamy zastosowanie zwyczajowych zasad bezpieczeństwa.
+>
 
+![cloud databases - bazy danych na instancji](images/clouddb-add-database-step2.png){.thumbnail}
 
-### Zamowienie
-Po zalogowaniu do [Panelu klienta](https://www.ovh.com/manager/web/){.external}, kliknij na **"Bazy danych"**, i na `Zamów bazy danych`{.action}.
+### Tworzenie użytkownika
 
+> [!primary]
+>
+> Etap ten nie dotyczy systemu baz danych Redis.
+>
 
-![commande manager](images/bouton-commande_EN.PNG){.thumbnail}
+Jeśli utworzyłeś jednocześnie użytkownika i bazę danych podczas poprzedniej operacji, etap ten jest opcjonalny. Należy jednak pamiętać, że w przypadku specyficznego projektu może okazać się konieczne, aby kilku uprawnionych użytkowników wykonywało operacje w Twojej bazie danych. Na przykład jeden z użytkowników może mieć uprawnienia do zapisu i odczytu, podczas gdy inny będzie będzie miał uprawnienia wyłącznie do odczytu.
 
-Złóż zamówienie wybierając poniższe elementy:
+Jeśli Twój projekt nie wymaga utworzenia dodatkowych użytkowników, możesz przejść do kolejnej operacji. Aby utworzyć nowego użytkownika, kliknij zakładkę `Użytkownicy i uprawnienia`{.action}, następnie przycisk `Dodaj użytkownika`{.action}.
 
-- **"CloudDB"**
-- **"System bazy danych"**
-- **"RAM"**
-- **"Datacenter"**
-- **"Czas abonamentu"**
+![cloud databases - bazy danych na instancji](images/clouddb-add-user.png){.thumbnail}
 
+Uzupełnij informacje w oknie, które się wyświetli, następnie kliknij `Zatwierdź`{.action}.
 
-![commande choix](images/choix-commande_EN.PNG){.thumbnail}
+|Informacja|Opis|
+|---|---|
+|Nazwa użytkownika|Podaj nazwę użytkownika, który będzie miał prawo logować się do Twojej instancji. Następnie przypisz mu uprawnienia do wykonywania czynności w Twojej bazie danych.|
+|Hasło|Wybierz hasło, a następnie je potwierdź.|
 
-Następnie zaakceptuj regulaminy i kliknij na `Złóż zamówienie`{.action}.
+> [!warning]
+>
+> Przy zapisywaniu informacji zalecamy zastosowanie zwyczajowych zasad bezpieczeństwa.
+>
 
+![cloud databases - bazy danych na instancji](images/clouddb-add-user-step2.png){.thumbnail}
 
-![commande generation](images/generer-commande_EN.PNG){.thumbnail}
+Po utworzeniu użytkownika przypisz mu uprawnienia do wykonywania czynności w bazie danych (takie jak uprawnienia do odczytu, zapisu lub usuwania danych). W tym celu kliknij ikonkę koła zębatego, a następnie kliknij `Zarządzaj uprawnieniami`{.action}. Wybierz odpowiednie uprawnienia. W przypadku standardowego użycia wybierz opcję `Administrator`{.action}.
 
+![cloud databases - bazy danych na instancji](images/clouddb-add-rights.png){.thumbnail}
 
-## Informacje ogolne
-W panelu klienta będą widoczne ogólne informacje na temat instancji.
+### Import bazy danych OVH
 
+> [!primary]
+>
+> Etap ten ma zastosowanie, jeśli chcesz zaimportować kopię zapasową już istniejącej bazy danych. Jeśli ten przypadek Cię nie dotyczy, przejdź do kolejnej operacji. 
+>
 
-![commande generation](images/infos-generales_EN.png){.thumbnail}
+Istnieje kilka metod importu bazy danych. Narzędzie służące do importu dostępne jest w Panelu klienta. Możesz jednak użyć innego narzędzia, zgodnie z Twoimi preferencjami i wiedzą.
 
+Poniższe etapy opisują, jak zaimportować bazę danych przy użyciu narzędzia dostępnego w Panelu klienta.
 
-## Tworzenie baz i uzytkownikow
+- **Etap 1: dostęp do interfejsu importu**
 
-### Zakadanie bazy danych
-Instancja została utworzona, ale jest ona pusta.
+Przejdź do zakładki `Bazy danych`{.action}, kliknij ikonkę koła zębatego, a następnie kliknij `Importuj plik`{.action}. W oknie, które się wyświetli zaznacz kratkę `Importuj nowy plik`{.action}, po czym kliknij `Dalej`{.action}.
 
-Kliknij na zakładkę **"Bazy danych"**, oraz na przycisk `Dodaj bazę danych`{.action}.
+![cloud databases - bazy danych na instancji](images/clouddb-add-import-step1.png){.thumbnail}
 
+- **Etap 2: wysyłanie pliku z kopią zapasową**
 
-![creation bdd](images/creation-bdd_EN.png){.thumbnail}
+Wprowadź nazwę pliku, która pozwoli Ci zidentyfikować tę kopię zapasową później, jeśli będziesz chciał odtworzyć z niej bazę. Następnie, obok opcji **Plik**, wybierz plik z kopią zapasową bazy danych na Twoim komputerze, a następnie kliknij `Wyślij`{.action}. Odczekaj, aż interfejs wskaże, że plik został pomyślnie wysłany, następnie kliknij przycisk `Dalej`{.action}.
 
-Wskaż nazwę dla Twojej bazy danych i kliknij na `Zatwierdź`{.action}.
+![cloud databases - bazy danych na instancji](images/clouddb-add-import-step2.png){.thumbnail}
 
+- **Etap 3: import bazy danych**
 
-![creation bdd](images/validation-bdd_EN.png){.thumbnail}
+Wybierz, lub nie, dodatkowe opcje opisane poniżej, a następnie kliknij `Zatwierdź`{.action}.
 
+|Opcje dodatkowe|Opis |
+|---|---|
+|Opróżnij aktualną bazę danych|Bieżąca zawartość bazy danych zostanie w całości usunięta, a następnie zastąpiona zawartością z kopii zapasowej.|
+|Wyślij powiadomienie e-mail po zakończeniu importu|Otrzymasz powiadomienie e-mail, gdy import bazy danych zostanie zakończony.|
 
-### Dodawanie uzytkownika
-Aby móc korzystać z oferty CloudDB, należy utworzyć użytkowników, którzy będą mieli specyficzne uprawnienia do logowania do bazy danych.
+![cloud databases - bazy danych na instancji](images/clouddb-add-import-step3.png){.thumbnail} 
 
-W tym celu należy przejść do zakładki **"Użytkownicy i uprawnienia"** i kliknąć na `Dodaj użytkownika`{.action}.
+### Autoryzacja adresu IP
 
+Aby uzyskać dostęp do instancji CloudDB, należy wskazać adresy IP lub zakresy adresów IP, które mogą się łączyć z Twoimi bazami danych.  Aby to zrobić, przejdź do zakładki `Autoryzowane adresy IP`{.action}, następnie kliknij `Dodaj adres IP/maskę`{.action}.
 
-![hosting](images/creation-user_EN.png){.thumbnail}
+![cloud databases - bazy danych na instancji](images/clouddb-add-ip.png){.thumbnail}
 
-Następnie zostaniesz poproszony o wpisanie **nazwy użytkownika** oraz **hasła** i o kliknięcie na `Zatwierdź`{.action}.
+W oknie, które się wyświetli wskaż adres IP lub maskę, którą chcesz autoryzować w `IP/maska`{.action}. Możesz również dodać opis. Zdecyduj, czy chcesz udzielić dostępu wyłącznie do baz danych czy również do SFTP. Następnie kliknij `Zatwierdź`{.action}.
 
+![cloud databases - bazy danych na instancji](images/clouddb-add-ip-step2.png){.thumbnail}
 
-![hosting](images/validation-user_EN.png){.thumbnail}
+### Powiązanie strony WWW z bazą danych
 
+Teraz, gdy Twoja baza danych została utworzona, jeden lub więcej użytkowników mają uprawnienia do wykonywania w niej operacji, przynajmniej jeden adres IP ma prawo dostępu do Twojej instancji CloudDB, pozostaje połączyć bazę danych ze stroną WWW. Możesz to zrobić na wiele sposobów, w zależności od Twojej strony WWW lub CMS (WordPress, Joomla!, etc...) czy też od bieżącego etapu tworzenia strony WWW.
 
-### Zarzadzanie uprawnieniami uzytkownikow
-Kliknij na zakładkę **"Bazy danych"**, i na ikonkę **"koła zębatego"** wybranej bazy danych. Kliknij na przycisk `Zarządzaj użytkownikami`{.action}.
+Aby pomyślnie zakończyć tę operację, potrzebne Ci będą następujące informacje:
 
+|Informacja|Opis |
+|---|---|
+|Nazwa bazy danych|Jest to nazwa, którą określiłeś podczas tworzenia bazy danych. Listę wszystkich baz danych utworzonych w instancji CloudDB znajdziesz w zakładce `Bazy danych`{.action}.|
+|Nazwa użytkownika|Jest to nazwa, którą określiłeś podczas tworzenia bazy danych lub ewentualnie nazwa użytkownika dodatkowego, którego utworzyłeś. Listę wszystkich użytkowników utworzonych w instancji CloudDB znajdziesz w zakładce `Użytkownicy i uprawnienia`{.action}.|
+|Hasło użytkownika|Jest to hasło przypisane podczas tworzenia użytkownika.|
+|Nazwa hosta|Jest to nazwa serwera, którą należy wprowadzić, aby Twoja strona WWW mogła się łączyć z Twoją bazą danych. Informacja ta jest dostępna w Panelu klienta w zakładce `Informacje ogólne`{.action} w części **Informacje o dostępie**.|
+|Port serwera|Jest to port do połączenia z Twoją instancją CloudDB, dzięki czemu twoja strona WWW może połączyć się z Twoją bazą danych. Informacja ta jest dostępna w Panelu klienta w zakładce `Informacje ogólne`{.action} w części **Informacje o dostępie**.|
 
-![hosting](images/gestion-user_EN.png){.thumbnail}
+> [!warning]
+>
+> W rzadkich przypadkach pole `port`{.action} może się nie pojawić w konfiguracji Twojej strony WWW. Jeśli taki przypadek wystąpi, pole to należy dodać po nazwie hosta. Dane te muszą być oddzielone dwukropkiem *:* (na przykład: nazwahosta: port).
+>
 
-Następnie wybierz uprawnienia dla użytkownika.
+![cloud databases - bazy danych na instancji](images/clouddb-login-information.png){.thumbnail}
 
+## Sprawdź również
 
-![hosting](images/validation-droit_EN.png){.thumbnail}
-
-Poniżej znajduje się opis 3 proponowanych uprawnień:
-
-- **Administrator:** Możliwość wykonywania zapytań typu **Select / Insert / Update / Delete / Create / Alter / Drop**
-- **Odczyt / Zapis:** Możliwość wykonywania zapytań typu **Select / Insert / Update / Delete**
-- **Odczyt:** Możliwość wykonywania zapytań typu **Select**
-- **Brak:** Brak uprawnień do bazy danych
-
-
-## Autoryzacja adresow IP
-
-### Dodawanie serwera
-Aby dostęp do instancji CloudDB działał, należy obowiązkowo określić autoryzowany adres lub adresy IP w tym menu.
-
-Kliknij na zakładkę **"Autoryzowane IP"** i kliknij na `Dodaj adres IP / maskę`{.action}.
-
-
-![hosting](images/ip-autorisee_EN.png){.thumbnail}
-
-Wskaż adres IP swojego serwera lub sieć oraz opis i kliknij na `Zatwierdź`{.action}.
-
-
-![hosting](images/validation-ip_EN.png){.thumbnail}
-
-
-## Korzystanie z bazy danych
-Po zakończeniu konfiguracji możesz rozpocząć korzystanie z bazy danych.
-
-Sposób korzystania z bazy danych zależy od zastosowania oraz wybranego silnika.
-
-Sprawdźmy typowy przypadek zastosowania.
-
-
-### Instalacja moduu WordPress z DBaaS i silnikiem MySQL
-- Utwórz instancję CloudDB MySQL.
-- Utwórz bazę danych i użytkownika i przypisz mu uprawnienia ADMIN.
-- Autoryzuj IP swojego serwera, aby logować się do usługi CloudDB.
-
-Pobierz poniższe informacje z panelu klienta:
-
-- Nazwa hosta
-- Port SQL
-
-![Instance MySQL](images/infos-sql_EN.png){.thumbnail}
-
-- Baza danych
-
-![Instance MySQL](images/view-bdd_EN.PNG){.thumbnail}
-
-- Użytkownik
-
-![Instance MySQL](images/view-uer_EN.PNG){.thumbnail}
-
-
-Zapisz adres URL i przypisany port. WordPress wymaga tych informacji podczas instalacji.
-
-
-![wordpress install](images/wordpress-config.png){.thumbnail}
-
-Następnie należy wypełnić poniższe pola:
-
-- **Database Name**: *base-test*
-- **User Name**: *user-1*
-- **Password**: hasło wybrane dla użytkownika *user-1*
-- **Database Host**: *xxx.dbaas.ovh.net:35102* (**host:port**)
-- **Table prefix**: Tutaj nic nie zmieniamy.
-
-W przypadku innych zastosowań należy przestrzegać oficjalnych metod logowania używanych silników. Zalecamy korzystanie z oficjalnej dokumentacji.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
