@@ -5,7 +5,7 @@ excerpt: Apprenez à configurer votre compte Exchange sur Mail de macOS El Capit
 section: Configuration client de messagerie Exchange
 ---
 
-**Dernière mise à jour le 02/02/2018**
+**Dernière mise à jour le 17/05/2018**
 
 ## Objectif
 
@@ -13,6 +13,13 @@ Les comptes Exchange peuvent être configurés sur un logiciel de messagerie com
 
 **Apprenez à configurer votre compte Exchange sur Mail de macOS El Capitan, Sierra et High Sierra.**
 
+
+> [!warning]
+>
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> 
 
 ## Prérequis
 

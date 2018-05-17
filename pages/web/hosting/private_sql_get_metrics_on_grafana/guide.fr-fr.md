@@ -15,6 +15,14 @@ Vous retrouverez sur le guide suivant comment utiliser et gérer votre serveur S
 - Il est possible de récupérer les métriques directement depuis votre espace client dans l'onglet "Métriques" sur les serveurs de type "Docker".
 
 
+> [!warning]
+>
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> 
+
+
 ## Que sont Docker et Grafana ?
 Docker est un logiciel libre qui automatise le déploiement d'applications dans des conteneurs logiciels.
 
