@@ -11,7 +11,7 @@ All docs appear on <https://docs.ovh.com>.
 
 ### Pull requests and commit form
 
-The contributions should be done using GitHub Pull Requests. We use a standard form for all commits : <Language - Type of change (Add / Update) - Directory name>. For example : FR Update Change email password. Product shortcut can be added if relevant.
+The contributions should be done using GitHub Pull Requests on **develop** branch only. We use a standard form for all commits : <Language - Type of change (Add / Update) - Directory name>. For example : FR Update Change email password. Product shortcut can be added if relevant.
 
 
 ### Pull Request Reviews
