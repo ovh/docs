@@ -56,20 +56,20 @@ Lorsque votre serveur dédié est configuré pour la première fois, vous recevr
 
 Accédez à la page de votre serveur dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le bouton `Réinstaller`{.action}.
 
-![Bouton Réinstaller](images/reinstalling-your-server-01-edited.png){.thumbnail}
+![Bouton Réinstaller](images/reinstalling-your-server-01.png){.thumbnail}
 
 Sur l’écran suivant, sélectionnez `Installer à partir d’un template OVH`{.action} (pour utiliser l’un de nos templates d’installation) ou `Installer un de vos gabarits`{.action} (pour utiliser le vôtre), puis cliquez sur `Suivant`{.action}.
 
-![Sélection de modèles](images/reinstalling-your-server-02.PNG){.thumbnail}
+![Sélection de modèles](images/reinstalling-your-server-02.png){.thumbnail}
 
 Sélectionnez le système d’exploitation que vous voulez installer et cliquez sur `Suivant`{.action}.
 
-![Sélection de fonctionnement](images/reinstalling-your-server-03.PNG){.thumbnail}
+![Sélection de fonctionnement](images/reinstalling-your-server-03.png){.thumbnail}
 
 Suivez le reste des instructions à l’écran, puis cliquez sur `Confirmer`{.action} pour poursuivre l’installation.
 
 
-> [!principal]
+> [!primary]
 >
 > Certains systèmes d'exploitation ou plateformes, tels que Plesk et Windows, nécessitent l'achat d'une licence avant leur installation. Vous pouvez acheter celle-ci par l'intermédiaire d'OVH dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la partie `Dédié`{.action}, puis `Licences`{.action} ou auprès d'un revendeur. Vous devrez ensuite l'intégrer manuellement, via le système d'exploitation lui-même, ou via votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}. 
 > 
@@ -117,7 +117,7 @@ Pour plus d’informations, référez-vous au guide sur [l’utilisation de l’
 
 S'il y a un problème avec votre serveur, la première étape de dépannage est le redémarrage de votre serveur en mode rescue. Pour l'activer connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et allez sur la page de votre serveur. Ensuite, allez sur `État du serveur`{.action}, puis sur `Informations générales`{.action} et `Boot`{.action}. Cliquez sur le bouton `Modifier`{.action} pour changer le mode démarrage.
 
-![Changer la sélection du démarrage](images/rescue-mode-01-edited.png){.thumbnail}
+![Changer la sélection du démarrage](images/rescue-mode-01.png){.thumbnail}
 
 Sur l’écran suivant, sélectionnez `Booter en mode rescue`{.action}, puis choisissez `rescue64-pro`{.action} dans la liste déroulante. Ajoutez votre adresse e-mail dans le champ de texte, puis cliquez sur `Suivant`{.action}.
 
@@ -125,7 +125,7 @@ Sur l’écran suivant, sélectionnez `Booter en mode rescue`{.action}, puis cho
 
 Confirmez vos options sur l'écran suivant, puis redémarrez votre serveur pour appliquer les modifications.
 
-![Confirmation et redémarrage](images/rescue-mode-02-edited.png){.thumbnail}
+![Confirmation et redémarrage](images/rescue-mode-02.png){.thumbnail}
 
 Votre serveur va maintenant redémarrer en mode rescue et vous recevrez les informations d'identification pour vous connecter via l'adresse e-mail que vous avez fournie. Pour quitter le mode rescue, changez simplement le mode de démarrage pour démarrer sur le disque dur, puis redémarrez votre serveur.
 
@@ -146,7 +146,7 @@ Une fois connecté sur l'interface web du mode rescue, vous pourrez exécuter de
 
 #### Interface web du mode rescue
 
-![L’interface Web](images/rescue-mode-04-edited.png){.thumbnail}
+![L’interface Web](images/rescue-mode-04.png){.thumbnail}
 
 ## Aller plus loin
 
