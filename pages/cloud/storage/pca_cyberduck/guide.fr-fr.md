@@ -17,7 +17,8 @@ Ce guide vous expliquera comment configurer Cyberduck afin de pouvoir gérer vot
 
 
 ### Prérequis
-- Un utilisateur Horizon configuré : voir le [guide](https://www.ovh.com/fr/publiccloud/guides/g1773.créer_un_acces_a_horizon/){.external}
+
+- Un utilisateur Horizon configuré : voir le [guide](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/){.external}
 - L'identifiant de votre projet. Il s'agit d'une chaine de caractères alphanumériques. Cette information est récupérable en naviguant dans un conteneur dans l'espace client, elle est identifiable dans l'URL du conteneur entre la chaine "AUTH_" et le slash suivant.
 
 
