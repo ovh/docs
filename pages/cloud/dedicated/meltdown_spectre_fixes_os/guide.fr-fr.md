@@ -6,7 +6,7 @@ section: Meltdown and Spectre informations
 
 <div id="main-content" class="wiki-content table-meltown-spectre">
    <p style="text-align: center;"><span style="color: rgb(51,102,255);"><br></span></p>
-   <p><strong>Last update: 26 Feb. at<span class="widont"> 01.00 pm CET</span></strong></p>
+   <p><strong>Last update: 17th May. at<span class="widont"> 04.30 pm CET</span></strong></p>
    <p><strong><strong>(this table reflects the situation at a given moment and is constantly evolving.)</strong></strong></p>
    <p style="text-align: center;"><span style="color: rgb(51,102,255);">&nbsp;</span></p>
    <h2 id="ExternalDocumentation/Proceduresforcustomers-Generalinformation">General information</h2>
