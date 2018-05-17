@@ -5,13 +5,20 @@ excerpt: Apprenez à configurer votre compte E-mail Pro sur Mail de macOS El Cap
 section: Configuration client de messagerie
 ---
 
-**Dernière mise à jour le 30/01/2018**
+**Dernière mise à jour le 17/05/2018**
 
 ## Objectif
 
 Les comptes E-mail Pro peuvent être configurés sur un logiciel de messagerie compatible. Cela vous permet d'utiliser votre adresse e-mail depuis l'application de votre choix.
 
 **Apprenez à configurer votre compte E-mail Pro sur Mail de macOS El Capitan, Sierra et High Sierra.**
+
+> [!warning]
+>
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> 
 
 ## Prérequis
 

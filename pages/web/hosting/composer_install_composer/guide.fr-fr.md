@@ -8,6 +8,13 @@ section: PHP
 
 ["Composer"](https://getcomposer.org/){.external} est un gestionnaire de dépendances créé pour le langage PHP. Il permet aux développeurs PHP d'inclure des librairies externes dans leurs programmes. "Composer" a permis aux projets PHP de simplifier la distribution de librairies et la maintenance de leur code. D'ailleurs, depuis la création de cet outil, de nombreuses bonnes pratiques de développement ont été proposées au sein de la communauté PHP et ont amélioré les librairies de la communauté PHP. Ces bonnes pratiques sont documentées sous la forme de [PSR](http://www.php-fig.org/){.external}.
 
+> [!warning]
+>
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> 
+
 
 ## Procedure
 

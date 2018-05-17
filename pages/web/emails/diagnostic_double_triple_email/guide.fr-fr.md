@@ -7,6 +7,13 @@ section: Diagnostic
 Vous nous contactez parfois pour nous indiquer recevoir des e-mails en double ou en triple dans votre logiciel de messagerie. Cela n’est pas un souci dû à notre infrastructure, pour le vérifier il vous suffit de vous [connecter au webmail](https://mail.ovh.net/){.external} et vous constaterez que vos e-mails ne sont présents qu’en un seul exemplaire.
 
 
+> [!warning]
+>
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> 
+
 ## Dou provient le probleme ?
 Votre client de messagerie est configuré pour relever votre courrier toutes les minutes, mais finalement en 1 minute, une session n’a pas assez de temps pour s’ouvrir et se fermer (cela dépend du nombre de messages, du débit Internet, de la puissance de l'ordinateur, etc ...).
 

@@ -7,13 +7,19 @@ section: Office 365
 ---
 
 
+> [!warning]
+>
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> 
+
 ## Configuration manuelle
 
 
 > [!warning]
 >
-> Ce guide ne fonctionne pas avec la licence Office 365 Business mais uniquement
-> pour la version ProPlus.
+> Ce guide ne fonctionne pas avec la licence Office 365 Business mais uniquement pour la version ProPlus.
 > 
 
 L'installation d'une licence O365 ProPlus sur un ordinateur partagé en utilisant les services Bureau à distance (RDS) ne fonctionne pas sans un paramétrage spécifique.
