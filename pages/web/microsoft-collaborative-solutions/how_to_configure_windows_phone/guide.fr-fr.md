@@ -89,3 +89,7 @@ Voici un aperçu de l'interface disponible pour la gestion des e-mails.
 
 
 ![emails](images/1141.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

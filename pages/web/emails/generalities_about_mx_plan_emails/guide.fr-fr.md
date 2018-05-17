@@ -66,3 +66,8 @@ Vous pourriez sinon rencontrer cette erreur :
 ```
 
 Si ce message d'erreur s'affiche, assurez-vous dans votre client de messagerie que l'authentification SMTP pour les messages sortants soit activée.
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

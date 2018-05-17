@@ -11,6 +11,13 @@ Cliquez [ici](http://www.ovh.com/fr/hebergement-web/faq){.external} pour retrouv
 Windows Mail est un logiciel de messagerie gratuit pour le système d'exploitation Windows, présenté comme le successeur d'Outlook Express Vous pouvez le retrouver via la page suivante : [Windows Mail (site officiel)](http://windows.microsoft.com/fr-fr/hotmail/home){.external}
 
 
+> [!warning]
+>
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> 
+
 ## Configuration de Windows Mail
 
 ### Ajouter le compte e-mail
@@ -104,3 +111,7 @@ Configuration  **IMAP**  avec sécurisation SSL activée ou désactivée :
 |---|---|---|
 |Entrant|993|143|
 |Sortant|465|587|
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

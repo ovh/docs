@@ -80,3 +80,7 @@ Une première synchronisation sera initiée avec les informations présentes sur
 
 
 ![emails](images/999.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

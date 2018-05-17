@@ -407,3 +407,7 @@ Un cadre devrait apparaître en dessous de la fenêtre de Cyberduck. Par la suit
 
 
 ![hosting](images/2364.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

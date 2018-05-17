@@ -88,3 +88,7 @@ Nous vous invitons à consulter les forums dédiés à la [solution Drupal](http
 
 ## Installation automatique
 Il est possible d'installer l'un de ces CMS de manière automatique en quelques clics depuis votre espace client, vous pouvez pour cela vous aider du guide suivant : []({legacy}1402){.ref}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

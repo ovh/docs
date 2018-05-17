@@ -141,3 +141,7 @@ Vous pouvez maintenant utiliser votre suite O365 depuis votre ordinateur partag�
 
 
 ![emails](images/4726.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

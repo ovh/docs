@@ -301,3 +301,7 @@ Cette vérification peut par exemple intervenir si vous constatez des lenteurs o
 
 
 ![hosting](images/2399.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

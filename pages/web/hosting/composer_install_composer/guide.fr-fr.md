@@ -76,3 +76,8 @@ php composer.phar install
 ```
 
 Pour utiliser cette librairie, vous pouvez vous référer à la documentation, ainsi qu'au code, disponibles sur [github](https://github.com/ovh/php-ovh){.external}
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

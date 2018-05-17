@@ -115,3 +115,7 @@ Votre compte est à présent configuré, vous pouvez utiliser votre BlackBerry H
 
 
 ![emails](images/1789.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

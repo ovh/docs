@@ -260,3 +260,8 @@ Il s'agit ici d'une erreur concernant la version PHP de votre serveur.
 La cause est simple : la dernière version du PHP n'a pas été activée.
 
 *Un guide est disponible concernant la modification de la version PHP sur l'offre mutualisée :* []({legacy}1207){.ref}
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

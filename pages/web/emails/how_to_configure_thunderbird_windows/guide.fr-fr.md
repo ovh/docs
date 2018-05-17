@@ -10,6 +10,12 @@ Cliquez [ici](http://www.ovh.com/fr/hebergement-web/guides){.external} pour retr
 
 La configuration est réalisée sur la version 24.2.0 de Thunderbird.
 
+> [!warning]
+>
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> 
 
 ## Configuration de Thunderbird
 
@@ -208,3 +214,7 @@ Les ports  **993**  et  **465**  correspondent à la sécurisation SSL activée.
 |---|---|---|
 |Entrant|993|143|
 |Sortant|465|587|
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

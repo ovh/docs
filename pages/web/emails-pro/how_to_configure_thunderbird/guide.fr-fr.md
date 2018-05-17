@@ -126,3 +126,8 @@ Si vous désirez configurer votre compte en POP, choisissez ce protocole lors de
 |---|---|
 |Serveur entrant|Votre adresse E-mail Pro|
 |Nom d'hôte du serveur|pro1.mail.ovh.net|
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

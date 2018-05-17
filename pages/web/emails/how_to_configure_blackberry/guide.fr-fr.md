@@ -6,6 +6,12 @@ excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur
 section: Autres clients de messagerie
 ---
 
+> [!warning]
+>
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> 
 
 ## Configuration du compte e-mail mutualise sous BlackBerry
 
@@ -170,3 +176,7 @@ Les ports  **143**  et  **587**  correspondent à la sécurisation SSL désactiv
 |---|---|---|
 |Entrant|993|143|
 |Sortant|465|587|
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

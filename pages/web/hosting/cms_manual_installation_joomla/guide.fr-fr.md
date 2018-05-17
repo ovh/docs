@@ -242,3 +242,7 @@ Sur les nouvelles offres 2014, si PHP-FPM est activé, alors la variable Magic Q
 
 
 ![hosting](images/3157.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
