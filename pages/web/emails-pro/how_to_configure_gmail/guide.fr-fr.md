@@ -73,3 +73,8 @@ Attendez quelques secondes, vous recevrez alors votre e-mail.
 Votre adresse E-mail Pro est maintenant bien configurée sur Gmail.
 
 ![hosting](images/06.png){.thumbnail}
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

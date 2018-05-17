@@ -52,3 +52,8 @@ Votre client de messagerie est configuré pour relever votre courrier toutes les
 
 ## Notions
 Comme l’explique l’un des responsables Outlook sur Microsoft Technet, *"la messagerie (e-mail) n’est pas de la messagerie instantanée. Les utilisateurs ont pris l’habitude de recevoir de plus en plus rapidement leurs e-mails, mais c’est une erreur, et surtout le protocole n’est pas fait pour.*
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

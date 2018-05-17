@@ -38,3 +38,7 @@ Comment modifier les droits d'un fichier ou répertoire : [Cliquer ici](https://
 Si vous programmez en perl par exemple, une erreur dans votre script se résume en une erreur 500. Vous ne pouvez pas avoir plus de details (question de securité). Pour debugger vos scripts, vous pouvez utiliser la connexion telnet/ssh (possible à partir de l'offre Pro).
 
 Reportez-vous au guide suivant pour de plus amples informations : <https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/>.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

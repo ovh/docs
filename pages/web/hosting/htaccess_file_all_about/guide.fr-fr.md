@@ -34,3 +34,7 @@ Avant de procéder, il est nécessaire de préciser quelques petites choses par 
 
 ### Les autres opérations réalisables avec des fichiers .htaccess
 - Ce guide détaille d'autres opérations qui peuvent être mises en place grâce au fichier .htaccess : [https://docs.ovh.com/fr/hosting/mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-htaccess/](https://docs.ovh.com/fr/hosting/mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-htaccess/){.external}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

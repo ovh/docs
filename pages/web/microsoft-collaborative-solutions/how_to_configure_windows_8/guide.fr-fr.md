@@ -211,3 +211,7 @@ Voici l'interface d'utilisation des e-mails.
 
 
 ![emails](images/1121.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -183,3 +183,7 @@ Voici 3 exemples de métriques pertinentes pour suivre vos performances sur votr
 |Nombre de connexions MySQL actives|mysql.active_connections|
 
 Vous retrouverez sur le lien suivant la documentation officielle sur les métriques Docker : <https://docs.docker.com/config/containers/runmetrics/>
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -70,3 +70,8 @@ De plus, la limite de stockage des e-mails correspond à l'espace de stockage li
 À savoir que si vous perdez les e-mails stockés sur votre ordinateur (panne, perte du disque dur ...), il ne sera pas possible de les récupérer. Il est donc conseillé de faire régulièrement des sauvegardes sur un autre support physique ou Cloud.
 
 - Notez que la plupart des clients de messagerie proposent une option pour conserver le stockage des e-mails sur le serveur, même en POP, afin de contourner ce désagrément.
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

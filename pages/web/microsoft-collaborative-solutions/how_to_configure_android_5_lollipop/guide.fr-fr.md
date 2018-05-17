@@ -103,3 +103,7 @@ La configuration de votre compte est alors terminée et fonctionnelle. Celui-ci 
 
 
 ![emails](images/3460.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

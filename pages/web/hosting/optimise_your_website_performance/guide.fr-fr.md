@@ -202,3 +202,7 @@ Exemple :
 - Éviter les options très gourmandes en ressources :
 
 Évitez d'utiliser "HAVING" par exemple qui alourdit vos requêtes , de la même manière évitez d'utiliser "GROUP BY" sauf si cela s'avère strictement nécessaire.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -121,3 +121,7 @@ Le dossier de Contacts partagés apparaît maintenant correctement.
 
 
 ![emails](images/1046.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

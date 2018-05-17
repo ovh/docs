@@ -90,3 +90,7 @@ Votre compte est à présent correctement configuré.
 
 
 ![emails](images/1474.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

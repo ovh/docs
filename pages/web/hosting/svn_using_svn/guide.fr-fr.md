@@ -174,3 +174,7 @@ Lorsque vous voudrez faire le checkout en local, les exemples fournis ne fonctio
 ```bash
 svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 ```
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

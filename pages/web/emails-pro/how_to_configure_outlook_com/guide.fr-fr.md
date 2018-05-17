@@ -106,3 +106,8 @@ Si vous désirez configurer votre compte en POP, choisissez ce protocole lors de
 |Chiffrement|SSL|
 |Serveur sortant (SMTP)|pro1.mail.ovh.net|
 |Port de serveur sortant|587|
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

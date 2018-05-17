@@ -223,3 +223,8 @@ Autre information utile : les fichiers de votre site doivent être déposés dan
 
 
 ![hosting](images/3173.png){.thumbnail}
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

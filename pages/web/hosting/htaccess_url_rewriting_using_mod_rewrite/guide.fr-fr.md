@@ -98,3 +98,8 @@ RewriteRule ^(.*)$ https://www.votredomaine.fr/$1 [R,L]
 
 ## Le fichier .htaccess
 Tout sur le fichier .htaccess sur le lien suivant : [Cliquer ici]({legacy}1967){.ref}
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
