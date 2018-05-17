@@ -81,3 +81,8 @@ Dans le champ "**À**" mettez la même adresse que celle avec laquelle vous envo
 Lors de la configuration, vous pouvez choisir le protocole **"POP"** au lieu de **"IMAP"**.
 
 Nous vous invitons à vous renseigner sur l'utilisation de ces deux protocoles avant de faire votre choix. Dans le doute, choisissez la configuration **"IMAP"**".
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -5,13 +5,22 @@ excerpt: Apprenez à configurer votre adresse e-mail MX Plan sur Outlook 2016 po
 section: Outlook
 ---
 
-**Dernière mise à jour le 19/03/2018**
+**Dernière mise à jour le 17/05/2018**
 
 ## Objectif
 
 Les adresses e-mail de l'offre MX Plan peuvent être configurées sur un logiciel de messagerie compatible. Cela vous permet d'envoyer et de recevoir vos messages depuis l'application de votre choix.
 
 **Apprenez à configurer votre adresse e-mail MX Plan sur Outlook 2016 pour Windows.**
+
+
+> [!warning]
+>
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> 
+
 
 ## Prérequis
 

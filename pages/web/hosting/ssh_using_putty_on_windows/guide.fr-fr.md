@@ -53,3 +53,7 @@ Il est normal à cette étape si vous ne voyez pas les caractères que vous tape
 
 ### Utilisation du SSH.
 Pour l'utilisation du SSH il faut maintenant vous diriger vers [ce guide]({legacy}1962){.ref}.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -145,3 +145,7 @@ Votre compte est à présent correctement configuré : vous pouvez démarrer vot
 
 
 ![emails](images/1557.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

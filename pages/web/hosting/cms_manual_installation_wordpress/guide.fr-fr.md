@@ -212,3 +212,8 @@ La cause est simple : la dernière version du PHP n'a pas été activée.
 
 
 ![hosting](images/3140.png){.thumbnail}
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

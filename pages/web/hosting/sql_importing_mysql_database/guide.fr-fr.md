@@ -200,3 +200,7 @@ Où nom_de_votre_base correspond au nom de la base dans laquelle vous importerez
 
 ### Lexique
 dump* : *fichier de sauvegarde de la base de données de votre site.*
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

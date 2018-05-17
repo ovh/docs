@@ -125,3 +125,7 @@ Voici, en image, un rappel des paramètres des comptes.
 
 
 ![emails](images/1133.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

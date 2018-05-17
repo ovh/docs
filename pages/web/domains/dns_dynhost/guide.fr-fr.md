@@ -143,3 +143,8 @@ Indiquez ici :
 
 
 ![hosting](images/img_3480.jpg){.thumbnail}
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
