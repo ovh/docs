@@ -2,6 +2,6 @@
 title: 'Dedicated servers'
 slug: dedicated
 excerpt: 'Get started with your OVH.com dedicated servers'
-sections: 'Getting started, Server Management, Network Management, SSH and SSH key, Advanced use, Diagnostic and rescue mode, Storage'
+sections: 'Getting started, Server Management, Network Management, Advanced use, Diagnostic and rescue mode, Storage'
 ---
 

@@ -1,9 +1,8 @@
 ---
-title: Introduction to SSH
+title: 'Introduction to SSH'
 slug: ssh-introduction
-excerpt: Learn how to use the SSH service to access your server 
-section: SSH and SSH key
-order: 1
+excerpt: 'Learn how to use the SSH service to access your server'
+section: 'Getting started'
 ---
 
 **Last updated 21st November 2017**
