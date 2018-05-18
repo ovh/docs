@@ -1,8 +1,9 @@
 ---
-title: Getting started with a dedicated server
+title: 'Getting started with a dedicated server'
 slug: getting-started-dedicated-server
-excerpt: This guide will give you a few tips to help you manage your newly-delivered dedicated server
-section: Getting started
+excerpt: 'This guide will give you a few tips to help you manage your newly-delivered dedicated server'
+section: 'Getting started'
+order: 1
 ---
 
 **Last updated 15th May 2018**
