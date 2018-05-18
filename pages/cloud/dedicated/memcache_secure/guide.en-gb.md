@@ -1,8 +1,8 @@
 ---
-title: Securing a server with a Memcached service
+title: 'Securing a server with a Memcached service'
 slug: securing-server-with-memcached-service
-excerpt: Find out how to secure your Memcached service
-section: Advanced
+excerpt: 'Find out how to secure your Memcached service'
+section: 'Advanced use'
 ---
 
 **Last updated 02nd March 2018**
