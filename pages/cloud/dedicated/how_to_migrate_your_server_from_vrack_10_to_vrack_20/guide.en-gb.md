@@ -1,11 +1,10 @@
 ---
-title: How to migrate your server from vrack 1.0 to vrack 2.0
-excerpt: How to migrate your server from vrack 1.0 to vrack 2.0
+title: 'How to migrate your server from vrack 1.0 to vrack 2.0'
+excerpt: 'How to migrate your server from vrack 1.0 to vrack 2.0'
 slug: how_to_migrate_your_server_from_vrack_10_to_vrack_20
 legacy_guide_number: g1994
-section: Network management
+section: 'Network Management'
 ---
-
 
 ## 
 This guide explains how to migrate from vrack 1.0 to vrack 2.0

@@ -1,9 +1,9 @@
 ---
-title: Choosing the Disk group to Install an Operating System
+title: 'Choosing the Disk group to Install an Operating System'
 slug: install-hybrid
-excerpt: Learn here how to choose a disk group to install your operating system
+excerpt: 'Learn here how to choose a disk group to install your operating system'
+section: 'Advanced use'
 ---
-
 
 ## Requirements
 At OVH, you can rent servers with one SATA disk group and one SSD disk group. We call them "Hybrid servers".
