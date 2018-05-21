@@ -1,11 +1,11 @@
 ---
-title: Configurer plusieurs serveurs dédiés dans le vRack
+title: 'Configurer plusieurs serveurs dédiés dans le vRack'
 slug: configurer-plusieurs-serveurs-dedies-dans-le-vrack
-excerpt: Apprenez à configurer plusieurs serveurs dédiés grâce au vRack
+excerpt: 'Apprenez à configurer plusieurs serveurs dédiés grâce au vRack'
 section: vRack
 ---
 
-**Dernière mise à jour le 06/02/2018**
+**Dernière mise à jour le 21/05/2018**
 
 ## Objectif
 
@@ -13,6 +13,8 @@ La technologie vRack (baie virtuelle) permet de regrouper plusieurs serveurs, qu
 
 **Apprenez à configurer deux ou plusieurs serveurs dédiés grâce au vRack.**
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8zLXuC3QmHU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Prérequis
 
