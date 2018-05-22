@@ -14,10 +14,10 @@ Un frontend sera créé pour écouter sur le port 80, tandis qu'un autre écoute
 
 Pour rappel, le service OVH Load Balancer est composé de 4 parties élémentaires :
 
-- les `Frontends`{.action} ;
-- les `Fermes`{.action} de serveurs et leurs `Serveurs`{.action} ;
-- les `Routes`{.action} avancée entre les Frontends et les Fermes de serveurs (bientôt disponible dans le manager) ;
-- les certificats `SSL`{.action}/TLS permettant de chiffrer les connexions TCP et/ou HTTP.
+- les `Frontends` ;
+- les `Fermes` de serveurs et leurs `Serveurs` ;
+- les `Routes` avancée entre les Frontends et les Fermes de serveurs (bientôt disponible dans le manager) ;
+- les certificats `SSL/TLS` permettant de chiffrer les connexions TCP et/ou HTTP.
 
 
 ## Prérequis
@@ -61,23 +61,23 @@ Via l'API OVH, dans la section
 Pour plus d'informations sur les fonctionnalités de l'API, consulter la page [](use_api_reference/guide.fr-fr.md){.ref}
 
 
-## Ajouter une `Ferme`{.action} de serveurs
+## Ajouter une Ferme de serveurs
 Nous allons ajouter une Ferme de serveurs HTTP à notre service, la partie en charge de répartir le trafic sur les serveurs.
 
 
 ### Via le Manager
-Dans l'onglet `+Fermes`{.action} de serveurs, cliquez sur le bouton `+HTTP/S`{.action}.
+Dans l'onglet `Fermes de serveurs`{.action} de serveurs, cliquez sur le bouton `Ajouter une ferme de serveurs`{.action}.
 
-Remplissez les champs, les seuls champs obligatoires pour une configuration simple sont le *ServiceName* et la *Zone*. Il est recommandé de définir explicitement un *Port*, généralement le port 80 pour un service web. Si aucun port n'est pas spécifié, votre OVH Load Balancer utilisera automatiquement le même port que le Frontend correspondant et les probes pourront ne pas fonctionner comme attendu.
+Remplissez les champs, les seuls champs obligatoires pour une configuration simple sont le *Protocole* et le *Datacentre*. Il est recommandé de définir explicitement un *Port*, généralement le port 80 pour un service web. Si aucun port n'est pas spécifié, votre OVH Load Balancer utilisera automatiquement le même port que le Frontend correspondant et les probes pourront ne pas fonctionner comme attendu.
 
-Si vous ajoutez plusieurs serveurs dans votre Ferme, il est recommandé de configurer une `Probe`{.action} HTTP. Lorsqu'une probe est configurée, le service OVH Load Balancer pourra automatiquement désactiver un serveur qui serait en panne ou en maintenance, de manière à ne pas impacter les visiteurs.
+Si vous ajoutez plusieurs serveurs dans votre Ferme, il est recommandé de configurer une `Sonde de disponibilité` HTTP. Lorsqu'une sonde est configurée, le service OVH Load Balancer pourra automatiquement désactiver un serveur qui serait en panne ou en maintenance, de manière à ne pas impacter les visiteurs.
 
 
 ![Ajout d'une ferme de serveurs via le Manager](images/add_backend.png){.thumbnail}
 
 Cliquez sur le bouton `Ajouter`{.action} une fois les champs remplis.
 
-Votre Ferme de serveurs devrait apparaitre dans la liste, sous l'onglet `Fermes`{.action}.
+Votre Ferme de serveurs devrait apparaitre dans la liste, sous l'onglet `Fermes de serveurs`{.action}.
 
 
 ![Détails de la ferme de serveurs créée](images/resume_backend.png){.thumbnail}
@@ -121,21 +121,21 @@ Votre Ferme de serveurs devrait apparaitre dans la liste, sous l'onglet `Fermes`
 > @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
-## Ajouter un `Serveur`{.action}
+## Ajouter un Serveur
 Nous allons maintenant ajouter un serveur à notre Ferme de serveurs.
 
 
 ### Via le Manager
-Toujours dans l'onglet `Ferme`{.action}, sélectionnez la Ferme dans laquelle vous souhaitez ajouter un serveur en cliquant sur la ligne correspondante. La liste des Serveurs déjà configurés dans la Ferme apparaît en dessous de la liste des Fermes, ainsi qu'un bouton `+Server`{.action}. Cliquez sur ce bouton pour ajouter un nouveau serveur.
+Toujours dans l'onglet `Fermes de serveurs`{.action}, sélectionnez la Ferme dans laquelle vous souhaitez ajouter un serveur en cliquant sur la ligne correspondante. La liste des Serveurs déjà configurés dans la Ferme apparaît en dessous de la liste des Fermes, ainsi qu'un bouton `Ajouter un serveur`{.action}. Cliquez sur ce bouton pour ajouter un nouveau serveur.
 
-Seuls les champs *Adresse IPv4* et *État* sont obligatoires. Si un serveur n'utilise pas le même port que celui défini plus haut dans la Ferme, il est possible de le surcharger dans la configuration du serveur. Cependant, afin de conserver une configuration la plus homogène et maintenable possible, il est recommandé de n'utiliser ce paramètre que dans les cas avancés.
+Seul le champ *Adresse IPv4* est obligatoire. Si un serveur n'utilise pas le même port que celui défini plus haut dans la Ferme, il est possible de le surcharger dans la configuration du serveur. Cependant, afin de conserver une configuration la plus homogène et maintenable possible, il est recommandé de n'utiliser ce paramètre que dans les cas avancés.
 
 
 ![Ajour d'un serveur dans une Ferme.](images/add_server.png){.thumbnail}
 
 Cliquez sur le bouton `Ajouter`{.action} une fois les champs remplis.
 
-Votre Serveur devrait apparaître dans la liste des Serveurs, dans l'onglet `Fermes`{.action}, juste en dessous de la liste des Fermes.
+Votre Serveur devrait apparaître dans la liste des Serveurs, dans l'onglet `Fermes de serveurs`{.action}, juste en dessous de la liste des Fermes.
 
 
 ![Détails du serveur créé.](images/resume_server.png){.thumbnail}
@@ -178,14 +178,14 @@ Votre Serveur devrait apparaître dans la liste des Serveurs, dans l'onglet `Fer
 > @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
-## Ajouter un `Frontend`{.action}
-Nous allons maintenant ajouter un `Frontend`{.action} à notre service et le connecter à notre Ferme de serveurs. Le Frontend est la partie de votre OVH Load Balancer qui sert à exposer votre service sur Internet. Dans un premier temps, nous allons le configurer en HTTP uniquement, sans certificat SSL/TLS.
+## Ajouter un Frontend
+Nous allons maintenant ajouter un `Frontend` à notre service et le connecter à notre Ferme de serveurs. Le Frontend est la partie de votre OVH Load Balancer qui sert à exposer votre service sur Internet. Dans un premier temps, nous allons le configurer en HTTP uniquement, sans certificat SSL/TLS.
 
 
 ### Via le Manager
-Dans l'onglet `+Frontends`{.action}, cliquez sur le bouton `+HTTP/S`{.action}.
+Dans l'onglet `Frontends`{.action}, cliquez sur le bouton `Ajouter un frontend`{.action}.
 
-Remplissez les champs, les seuls champs obligatoires pour une configuration simple sont le *ServiceName*, le *Port* (80 pour un service web HTTP standard) et la *Zone*. Si vous souhaitez que votre service soit disponible sur plusieurs ports en même temps, vous pouvez spécifier une liste de ports séparés par des virgules ou une plage de ports de la forme "START_PORT-END_PORT".
+Remplissez les champs, les seuls champs obligatoires pour une configuration simple sont le *Protocole*, le *Port* (80 pour un service web HTTP standard) et le *Datacentre*. Si vous souhaitez que votre service soit disponible sur plusieurs ports en même temps, vous pouvez spécifier une liste de ports séparés par des virgules ou une plage de ports de la forme "START_PORT-END_PORT".
 
 Si vous avez routé des IP Failovers vers votre service OVH Load Balancer, vous pouvez également attacher un Frontend à une ou plusieurs IP Failovers spécifiques.
 
@@ -237,7 +237,7 @@ Votre Frontend devrait apparaître dans la liste, sous l'onglet `Frontends`{.act
 > @api {DELETE} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
-## Ajouter un certificat `SSL`{.action}/TLS
+## Ajouter un certificat SSL/TLS
 La section précédente décrivait la configuration générale pour un Frontend HTTP. Cette section décrit les étapes supplémentaires pour activer le support du protocole HTTPS sur un Frontend HTTP. En particulier, il faudra :
 
 - basculer le Frontend sur le port 443, standard pour le protocole HTTPS ;
@@ -254,7 +254,6 @@ Si vous optez pour un certificat géré par votre service OVH Load Balancer, cel
 
 
 
-> [!info]
 >
 > Afin d'assurer la continuité de service lors du basculement de votre domaine vers l'IP de votre service OVH Load Balancer afin de valider votre certificat, une bonne pratique est de commencer par configurer et tester complètement la configuration HTTP sur le port 80. De cette manière, votre site reste accessible sans interruption.
 > Si votre site dispose déjà d'une connexion HTTPS et que vous souhaitez migrer vers des certificats gérés par votre service OVH Load Balancer, vous pouvez importer vos certificats existants, configurer et tester votre Frontend HTTPS et enfin commander un nouveau certificat pour le même domaine. Il sera automatiquement pris en compte avant l'expiration de votre ancien certificat.
@@ -264,19 +263,19 @@ Les certificats configurés sur votre service OVH Load Balancer sont automatique
 
 
 ### Via le Manager
-La liste des certificats SSL/TLS configurés sur votre service OVH Load Balancer se trouve dans l'onglet `+Frontends`{.action}, en dessous de la liste des Frontends. Cette interface vous propose les 2 options évoquées un peu plus haut, à savoir, importer un certificat `+SSL`{.action} existant et commander un `+Certificat Let's Encrypt`{.action} géré automatiquement par votre service OVH Load Balancer.
+La liste des certificats SSL/TLS configurés sur votre service OVH Load Balancer se trouve dans l'onglet `Certificats SSL`{.action}. Cette interface vous propose les 2 options évoquées un peu plus haut, à savoir, importer un certificat `Ajouter un certificat SSL`{.action} existant et `Commander un certificat SSL`{.action} géré automatiquement par votre service OVH Load Balancer.
 
 
 ![Boutons d'ajout de certificats](images/certificat.png){.thumbnail}
 
-Si vous optez pour l'importation d'un certificat SSL/TLS existant, cliquez sur `+SSL`{.action}. Les champs *Clef privée* et *Certificat*.
+Si vous optez pour l'importation d'un certificat SSL/TLS existant, cliquez sur `Ajouter un certificat SSL`{.action}. Les champs *Clef privée* et *Certificat* sont obligatoires.
 
-Cliquez sur le bouton `Ajouter`{.action} une fois les champs remplis. Votre certificat apparaîtra alors dans la liste des `Certificats actifs`{.action}, sous la liste des Frontends disponibles.
+Cliquez sur le bouton `Ajouter`{.action} une fois les champs remplis. Votre certificat apparaîtra alors dans la liste des certificats.
 
 
 ![Ajout d'un certificat existant](images/add_certificat_custom.png){.thumbnail}
 
-Pour ajouter un certificat Let's Encrypt, cliquez sur `+Certificat Let's Encrypt`{.action}, renseignez votre domaines, assurez vous que celui-ci pointe bien sur votre service OVH Load Balancer et laissez vous guider par les mails que vous recevrez. Vous le verrez ensuite apparaître dans la liste des certificats disponibles.
+Pour ajouter un certificat Let's Encrypt, cliquez sur `Commander un certificat SSL`{.action}, renseignez votre domaines, assurez vous que celui-ci pointe bien sur votre service OVH Load Balancer et laissez vous guider par les mails que vous recevrez. Vous le verrez ensuite apparaître dans la liste des certificats disponibles.
 
 
 ![Command d'un certificat Let's Encrypt](images/add_certificat_letsencrypt.png){.thumbnail}
@@ -335,7 +334,13 @@ Si vous avez plusieurs zones, vous devrez appliquer la même configuration pour 
 
 
 ### Via le Manager
-Rendez-vous sur la page principale de votre service OVH Load Balancer et cliquez sur les boutons `Appliquer:Zone`{.action} pour chacune des zones concernées.
+Rendez-vous sur la page d'accueil de votre service OVH Load Balancer et cliquez sur le bouton `Appliquer la configuration`{.action}.
+
+![Appliquer la configuration](images/btn_apply_configuration.png){.thumbnail}
+
+Selectionnez ensuite la liste des zones que vous souhaitez deployer, et cliquez sur le bouton `Appliquer la configuration`{.action}.
+
+![Appliquer la configuration zones](images/btn_apply_configuration_zones.png){.thumbnail}
 
 
 ### Via l'API
