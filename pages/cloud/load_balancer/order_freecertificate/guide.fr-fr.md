@@ -22,34 +22,33 @@ La première chose à faire est de configurer votre frontend pour gérer la term
 
 
 ### Via le Manager
-Dans la section `Frontends`{.action} de votre Manager, cliquez sur le bouton `+ HTTP/S`{.action} pour en créer un nouveau. Une fenêtre d'édition apparait alors avec une case `SSL`{.action} à cocher. Il faudra aussi renseigner le champ `Ferme par défaut`{.action} ou `Redirection HTTP`{.action}.
+Dans la section `Frontends` de votre Manager, cliquez sur le bouton `Ajouter un frontend`{.action} pour en créer un nouveau. Une fenêtre d'édition apparait alors, selectionnez le protocole `HTTPS`. Il faudra aussi renseigner le champ `Ferme par défaut` ou `Redirection HTTP` dans les paramètres avancés.
 
 
 ![Configuration la terminaison SSL d'un Frontend](images/enable_ssl_terminaison.png){.thumbnail}
 
-Cliquez sur le bouton `Mettre à jour`{.action} une fois le frontend configuré puis sur `Déployer la zone: VOTRE ZONE`{.action} pour appliquer vos changements dans la zone concernée.
+Une fois le frontend créé, il vous sera prospoé d'`Appliquer la configuration`{.action} pour appliquer vos changements dans la zone concernée.
 
 
 ### Via l'API
 Dans l'API, la terminaison SSL est spécifiée par le booléen ssl : (N'oubliez pas de renseigner defaultFarmId ou redirectLocation)
 
-
 > [!api]
 >
 > @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
-> 
-Puis appliquer les modifications :
+>
 
+Puis appliquer les modifications :
 
 > [!api]
 >
 > @api {POST} /ipLoadbalancing/{serviceName}/refresh
-> 
+>
 
 ## Commander le certificate SSL gratuit
 
 ### Via le Manager
-Dans la section `Frontends`{.action} de votre Manager, cliquez sur le bouton `+ Certificate SSL gratuit`{.action} pour en créer un nouveau. Une fenêtre d'édition apparait alors avec un champ `FQDN`{.action} à renseigner.
+Dans la section `Certificats SSL` de votre Manager, cliquez sur le bouton `Commander un certificat SSL`{.action} pour en créer un nouveau. Une fenêtre d'édition apparait alors avec un champ `FQDN` à renseigner.
 
 
 ![Ajouter un certificate SSL gratuit](images/add_freecertificate.png){.thumbnail}
@@ -62,12 +61,12 @@ Dans l'API, la commande se fait comme suit. Pour que la commande se finalise, il
 > [!api]
 >
 > @api {POST} /ipLoadbalancing/{serviceName}/freeCertificate
-> 
+>
 
 ## Suivi de la commande
 
 ### Via le Manager
-Dans la section `Tâches`{.action} de votre Manager, les tâches relatives à la commandes d'un certificat SSL gratuit correspondent à l'`Action`{.action} orderFreeCertificate
+Dans la section `Tâches`{.action} de votre Manager, les tâches relatives à la commandes d'un certificat SSL gratuit correspondent au type `orderFreeCertificate`.
 
 
 ### Via l'API
@@ -79,14 +78,14 @@ Vous pouvez spécifier le type d'action orderFreeCertificate pour affiner la rec
 > [!api]
 >
 > @api {GET} /ipLoadbalancing/{serviceName}/task
-> 
+>
 
 #### Retourner le statut d'une tache en particulier
 
 > [!api]
 >
 > @api {GET} /ipLoadbalancing/{serviceName}/task/{id}
-> 
+>
 
 ## Livraison du certificat SSL gratuit
 Une fois la commande finie, le certificat SSL est automatiquement installé sur votre service OVH Load Balancer.
