@@ -1,139 +1,82 @@
 ---
-title: 'Gedeelde hosting: Algemene informatie over DNS servers'
-excerpt: 'Gedeelde hosting: Algemene informatie over DNS servers'
+title: 'Wijziging van de DNS-servers voor een OVH-domeinnaam'
 slug: gedeelde_hosting_algemene_informatie_over_dns_servers
-legacy_guide_number: g2015
+excerpt: 'DNS-servers voor een OVH-domeinnaam wijzigen'
+section: 'DNS en DNS-zone'
+order: 1
 ---
 
+**Laatste update 22-05-2018**
 
-## Definitie
-De DNS (of DomeinNaamSysteem) zet een domeinnaam om naar een IP-adres (de werkelijke locatie van uw website) zodat uw verzoeken de target server kunnen bereiken.
+## Introductie
 
-![](images/img_3413.jpg){.thumbnail}
+DNS-servers zijn ontworpen om DNS-configuraties voor domeinnamen op te slaan. Deze configuratieruimtes, die DNS-zones worden genoemd, bevatten technische informatie in de vorm van records. DNS-zones worden meestal gebruikt om uw domeinnaam te koppelen aan de server (of servers) die uw website en e-mailadressen hosten.
 
+Met andere woorden, deze records die op DNS-servers zijn opgeslagen, maken uw domeinnamen toegankelijk op internet.
 
-## Het verschil tussen DNS servers en DNS zones
+Deze handleiding legt uit hoe u de DNS-servers voor uw OVH-domeinnaam wijzigen.
 
-## DNS servers
+## Vereisten
 
-- DNS servers zijn de servers die aan een domeinnaam zijn toegewezen. Het zijn daarom deze servers die als eerste reageren vooraf aan het overdragen naar de DNS zone.
+- U moet een domeinnaam hebben geregistreerd bij OVH.
+- U moet gemachtigd zijn om de betreffende domeinnaam te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+> [!warning]
+>
+> Als uw domeinnaam niet bij OVH is geregistreerd, moet u de DNS-servers bewerken met behulp van de interface van de serviceprovider die uw domeinnaam beheert.
+>
 
+## Instructies
 
-## DNS zone
+**We raden u ten zeerste aan voorzichtig te zijn wanneer u de DNS-servers van een domeinnaam bewerkt**: Onjuiste wijzigingen kunnen uw website ontoegankelijk maken en voorkomen dat uw e-mailadressen nieuwe e-mails ontvangen. Door meer te leren over de impact van het aanpassen van DNS-servers, kunt u een beter inzicht krijgen in de wijzigingen die u aanbrengt.
 
-- De DNS zone is een bestand dat verschillende items opslaat die de adressen specificeren van servers die uw website (A) of uw e-mails (MX) hosten. Dit kunnen adressen zijn in de vorm van IP-adressen of hostnamen.
+Wanneer u de DNS-servers van uw domeinnaam wijzigt, wijzigt u de DNS-configuratie. De nieuwe configuratie vervangt de oude en wordt opgeslagen op de nieuw ingestelde DNS-servers. Technisch gebruikt het domein dan een nieuwe DNS-zone.
 
+Echter:
 
+- De inhoud van de oude DNS-configuratie wordt niet automatisch gerepliceerd naar de nieuwe configuratie. Zorg ervoor dat uw nieuwe configuratie alle informatie bevat die nodig is om de aan uw domeinnaam gekoppelde diensten correct te laten werken (bijvoorbeeld uw website en e-mailadressen).
 
+- Als u slechts één element van uw huidige DNS-configuratie wilt bewerken (bijvoorbeeld één DNS-record), raden we u aan onze handleiding over het bewerken van de DNS-zone te raadplegen: [Wijziging van een OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}.
 
-## Waarom servers of DNS zone wijzigen?
+> [!warning]
+>
+> Voordat u begint met het aanbrengen van wijzigingen, moet u ervoor zorgen dat de wijzigingen die u gaat aanbrengen, uw domeinnaam niet ontoegankelijk maken. Als u hier niet zeker van bent, neem dan aub contact op met de persoon die u verzoekt deze wijzigingen aan te brengen.
+>
 
-## DNS servers
-Het kan nodig zijn om DNS servers te wijzigen bij het veranderen van register. Bij sommige registers is het niet mogelijk om gebruik te blijven maken van hun servers nadat u uw domeinnaam hebt overgezet naar een concurrent. 
-Ook is het mogelijk dat u een dedicated server heeft die gebruik maakt van een DNS server en u deze wilt gebruiken om uw domein te beheren.
+### Stap 1: Toegang tot het beheer van de DNS OVH-zone van uw domein
 
-## DNS zone
-Wanneer u de server, die uw website of e-mail host, wilt veranderen, bijvoorbeeld na een verandering van host dient u uw DNS zone aan te passen. 
-Zodra dit is aangepast zal uw domein wijzen naar de nieuwe servers. 
+Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Domeinen`{.action} in de dienstenbalk aan de linkerkant, kies dan de betreffende domeinnaam. Ga naar het `DNS-servers`{.action}-tabblad.
 
-Voor meer informatie over de DNS zone kunt u de volgende handleiding raadplegen: 
+De tabel die verschijnt, toont de DNS-servers die momenteel zijn ingesteld met OVH voor uw domeinnaam. Verschillende DNS-servers kunnen worden vermeld, met een rij in de tabel voor elke server.
 
-- []({legacy}2015).
+![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
+### Stap 2: Bewerk de DNS-servers van uw domein
 
+Klik op de knop `Wijzig DNS-servers`{.action} om met het bewerken van DNS-servers te beginnen.
 
+Vervang in de tekstvelden de huidige DNS-serverdetails met de informatie voor de nieuwe servers die u wilt instellen. Als u meer servers aan de huidige lijst wilt toevoegen, klikt u op het pictogram `+`{.action}, rechts van de laatste tabelregel. Er verschijnt dan een extra rij in de tabel, met tekstvelden die u kunt invullen.
 
-## Inloggen op uw klantaccount
+Nadat u deze informatie hebt ingevoerd, klikt u op `Configuratie toepassen`{.action}. De statussen voor de DNS-servers worden vervolgens in de tabel bijgewerkt met de nieuwe informatie die u zojuist hebt verstrekt.
 
-- Log in op uw 
-[klantaccount](https://www.ovh.com/manager/web) met uw NIC-handle en wachtwoord.
+> [!primary]
+>
+> Door op de knop `DNS-servers opnieuw instellen`{.action} te klikken, kunt u de huidige DNS-servers wijzigen door ze automatisch opnieuw in te stellen op de oorspronkelijke OVH DNS-servers. We raden u aan deze optie alleen te gebruiken als u de DNS-servers van OVH opnieuw wilt gebruiken. 
+>
 
-- Klik "Inloggen" om te bevestigen.
+![dnsserver](images/edit-dns-server-ovh-step2.png){.thumbnail}
 
+### Stap 3: Wacht tot de wijzigingen volledig zijn doorgevoerd
 
+Nadat u de vereiste wijzigingen hebt aangebracht, moet u wachten tot ze volledig effectief zijn. Er moet rekening worden gehouden met twee opeenvolgende termijnen:
 
-![](images/img_3411.jpg){.thumbnail}
+- De wijziging aan de OVH-kant moet in acht worden genomen door de organisatie die de extensie van uw domeinnaam beheert. U kunt de voortgang hiervan volgen in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} door naar het gedeelte `Domeinen`{.action} op de dienstenbalk aan de linkerkant te gaan, en vervolgens `Lopende procedures (‘Bewerkingen in uitvoering’)`{.action}.
 
+- Nadat de wijziging door de organisatie die uw domeinnaamextensie beheert, in aanmerking is genomen, moet u maximaal 48 uur wachten voordat de door u doorgevoerde wijzigingen volledig van kracht zijn.
 
-## Selecteren van een domein
+## Verder
 
-- In het linkermenu selecteert u "Domeinen" en vervolgens het domein dat gewijzigd moet worden.
+[Wijziging van een OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}.
 
-
-
-![](images/img_3405.jpg){.thumbnail}
-
-
-## Toevoegen van nieuwe DNS servers
-
-- Ga vervolgens naar "DNS beheer" en selecteer "DNS server toevoegen".
-
-
-
-![](images/img_3406.jpg){.thumbnail}
-
-- Geef de toe te voegen eerste DNS server aan, bevestig het en doe vervolgens hetzelfde voor de tweede DNS server.
-
-
-
-![](images/img_3407.jpg){.thumbnail}
-
-
-## Verwijderen van oude DNS servers
-Klik bij de twee oude DNS servers op het 
-"prullenbak" pictogram om ze te verwijderen en bevestig het.
-
-![](images/img_3408.jpg){.thumbnail}
-
-- Aan het verwijderen.
-
-
-
-![](images/img_3409.jpg){.thumbnail}
-
-- De update zal een paar minuten duren.
-
-
-
-![](images/img_3410.jpg){.thumbnail}
-
-
-## DNS servers standaard resetten
-Mocht u uw DNS onjuist manipuleren dan kunt u us DNS servers standaard laten resetten. 
-
-
-- Ga naar 'DNS beheer' en selecteer 'Standaard DNS reset'.
-
-
-
-![](images/img_3416.jpg){.thumbnail}
-
-- U hoeft de reset alleen maar te bevestigen.
-
-
-
-![](images/img_3417.jpg){.thumbnail}
-
-
-## Het controleren van de door OVH aan u toegewezen DNS servers
-Om erachter te komen welke DNS servers OVH aan u heeft toegewezen kunt u klikken op "DNS Zone" en dan kunt u de twee "NS records" bekijken die in uw zone aanwezig zijn.
-
-![](images/img_3418.jpg){.thumbnail}
-
-
-## Geavanceerd DNS beheer met Glue Registry
-Ga naar de volgende handleiding om uw Glue Registry te creëren:
-[]({legacy}1568)
-
-
-## Hoe lang duurt het voordat de DNS wijzigingen actief zijn?
-DNS Servers
-
-- Alle serverwijzigingen kunnen tot 48 uur in beslag nemen.
-
-DNS Zone
-- Alle wijzigingen in uw DNS zone kunnen tot 24 uur in beslag nemen.
-
-
-
+Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.
