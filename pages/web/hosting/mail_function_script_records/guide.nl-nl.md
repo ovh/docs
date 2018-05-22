@@ -1,94 +1,80 @@
 ---
-title: 'Web hosting: Monitoren van automatische e-mails'
-excerpt: Monitor e-mails vanaf uw web hosting account.
+title: 'Monitoring en beheer van geautomatiseerde e-mails in uw webhosting'
 slug: web_hosting_monitoren_van_automatische_e-mails
-legacy_guide_number: g1974
+excerpt: 'Ontdek hoe u geautomatiseerde e-mails, die vanuit uw OVH-webhosting worden verzonden, kunt monitoren en beheren'
+section: Diagnostisch
 ---
 
+**Laatste update 22-05-2018**
 
-## Ga naar 'Automatische e-mails' in uw klantaccount.
+## Introductie
 
-## - Log in op uw [url="https://www.ovh.com/manager/web/login/"][blue][u]klanaccount[/u][/blue][/url].
+Geautomatiseerde e-mails zijn berichten die via scripts worden verzonden. Ze worden bijvoorbeeld gebruikt in contactformulieren op uw website en stellen uw webgebruikers in staat u e-mails te sturen.
 
-- Klik in de linkerkolom in "Hosting" op uw hosting platform.
-- Klik vervolgens op "Meer +" en dan op "E-mail scripts".
+Deze handleiding legt uit hoe u geautomatiseerde e-mails, die vanuit uw OVH-webhosting worden verzonden, kunt monitoren en beheren.
 
+## Vereisten
 
+- U moet beschikken over een [OVH-webhosting plan](https://www.ovh.com/nl/shared-hosting/){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-![](images/img_3110.jpg){.thumbnail}
+> [!primary]
+>
+> Deze handleiding is alleen relevant voor e-mails die worden verzonden met behulp van scripts die zich bevinden in uw OVH-webhostingsplan.
+>
+> Wilt u e-mailadressen beheren die zijn opgenomen in uw MX Plan of in uw [OVH-webhosting](https://www.ovh.com/nl/shared-hosting/){.external}? Ga naar het gedeelte `Emails`{.action} van uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+>
 
+## Instructies
 
-## Blokkeer e-mailverzending
-Soms moet u voorkomen dat e-mails verzonden worden
+In uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} kunt u geautomatiseerde e-mails controleren en beheren die vanuit uw OVH-webhosting zijn verzonden. Log eerst in op uw OVH Control Panel, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhosting. Klik vervolgens op `Meer +`{.action} en vervolgens op `E-mailscripts`{.action}.
 
-## Wanneer?
+Met deze handleiding kunt u leren hoe u geautomatiseerde e-mails, die vanuit uw OVH-webhosting worden verzonden, kunt monitoren en beheren.
 
-- wanneer u e-mailverzending script tests uitvoert
-- wanneer u gehackt bent door een spammer
+![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
+### Volg geautomatiseerde e-mailzendingen
 
+De `E-mailscripts`{.action}-pagina bevat verschillende soorten informatie, die u kunt gebruiken om door het script gegenereerde geautomatiseerde e-mailactiviteiten in één oogopslag te bekijken.
 
-## Let op:
-Er zullen geen e-mails verwijderd worden, deze zullen 72 uur bewaard blijven. Gedurende deze periode kunt u het verzenden van e-mails blokkeren of vrijgeven.
-1. Klik op de Blokkeer e-mailverzending button.
+|Informatie|Details|
+|---|---|
+|Service status|Toont de huidige status van een dienst die geautomatiseerde e-mails verzendt vanuit uw webhosting. Een status in een groen vakje betekent dat e-mailverzending operationeel is, terwijl een status in een rood vakje betekent dat e-mails niet langer worden verzonden. Afhankelijk van deze status, varieert de manier waarop e-mail wordt verzonden. Raadpleeg voor meer informatie hierover het gedeelte [Verzending van geautomatiseerde e-mails beheren](https://docs.ovh.com/nl/hosting/web_hosting_monitoren_van_automatische_e-mails/#verzendstatus-beheren-voor-geautomatiseerde-e-mails){.external} in de handleiding.|
+|Stuur foutmeldingen naar|Ontvang dagelijks foutmeldingen op een e-mailadres van uw keuze. U kunt hiervoor een e-mailadres instellen door op de knop `Ontvanger wijzigen`{.action} te klikken. Dit rapport bevat e-mails die zijn verzonden vanuit uw webhosting en naar OVH zijn teruggestuurd, omdat ze geen ontvanger konden bereiken. Door op de knop `E-mails met foutmeldingen`{.action} te klikken, kunt u ook op elk gewenst moment rapporten lezen via uw OVH Control Panel.|
+|Totaal aantal verzonden e-mails|Geeft het totale aantal geautomatiseerde e-mails weer dat is verzonden sinds de creatie van uw OVH-webhosting.|
+|Vandaag verzonden e-mails |Toont het totale aantal geautomatiseerde e-mails dat alleen vandaag is verzonden.|
+|Totaal aantal e-mails met foutmeldingen|Geeft het totale aantal geautomatiseerde e-mails weer dat is verzonden sinds u uw webhosting bestelde, maar werd teruggestuurd naar OVH met foutmeldingen omdat deze de ontvangers niet konden bereiken.|
+|Log van verzonden e-mails|Geeft een grafiek weer die het logbestand vertegenwoordigt van e-mails die in de loop van de vorige dagen zijn verzonden vanuit uw webhosting.|
 
-![](images/img_3111.jpg){.thumbnail}
-Klik vervolgens op 'Bevestigen'.
+> [!primary]
+>
+> Om te voorkomen dat het geautomatiseerde e-mailsysteem van uw webhosting wordt misbruikt, raden we ten zeerste aan een beveiligingssysteem (bijvoorbeeld een captcha-test) in te stellen voor de formulieren op uw website die worden gebruikt voor het verzenden van e-mails (zoals een contactformulier).
+>
 
-![](images/img_3112.jpg){.thumbnail}
-3. Het volgende bericht zal verschijnen: 'Uw verzoek is verzonden.'
+![hosting](images/monitoring-automatic-emails-step2.png){.thumbnail}
 
-![](images/img_3113.jpg){.thumbnail}
+Als u merkt dat uw door het script gegenereerde e-mails niet langer worden verzonden, maar de servicestatus nog steeds e-mailverzending mogelijk maakt, adviseren wij:
 
-## Let op:
-U zult zien dat de service status zal veranderen naar 'Uitgeschakeld'.
+- **Controleer de scripts voor het verzenden van e-mails**: de scripts kunnen de e-mails mogelijk niet verzenden vanwege een syntaxisfout. Controleer de inhoud van uw scripts, corrigeer ze indien nodig en probeer het opnieuw.
 
-![](images/img_3114.jpg){.thumbnail}
+- **Test van e-mailverzending via een testscript**: schrijf een testscript dat een e-mail verzendt naar uw persoonlijke e-mailadres. Als u de e-mail kunt ontvangen, betekent dit dat uw e-mailverzendingsscripts fouten bevatten. Afhankelijk van uw kennis hierover, is het mogelijk om testscripts op internet te vinden;
 
+- **E-mails verzenden zonder de SMTP-server te gebruiken**: geef geen SMTP-server op in uw scriptparameters. Als u een interface hebt voor het beheren van het verzenden van e-mail vanaf uw website, moet u ervoor zorgen dat deze parameter kan worden gewijzigd in de configuratie van uw website.
 
-## E-mails vrijgeven
-Soms moet u al in de wachtrij staande  e-mails in uw account verwijderen om zo een nieuwe blokkade te voorkomen. Om uw e-mails vrij te geven moet u eerst e-mailverzending blokkeren, zoals hierboven uitgelegd.
+### Verzendstatus beheren voor geautomatiseerde e-mails
 
-## Let op:
-Uw account zal dan automatisch gedeblokkeerd worden. Dit proces kan 5 tot 10 minuten in beslag nemen.
-1. Klik "E-mails vrijgeven".
+Op de pagina `E-mailscripts`{.action} zijn er verschillende knoppen die u kunt gebruiken om geautomatiseerde e-mails te beheren die vanuit uw webhosting worden verzonden. Afhankelijk van de servicestatus zijn sommige opties mogelijk niet beschikbaar.
 
-![](images/img_3115.jpg){.thumbnail}
-Klik vervolgens op 'Bevestigen'.
+|Acties|Details|
+|---|---|
+|Verzenden blokkeren|Blokkeert automatische e-mails van uw webhosting. Zodra u het verzenden hebt geblokkeerd, worden door het script gegenereerde e-mails niet verzonden en worden deze maximaal 72 uur in een wachtrij opgeslagen.|
+|Blokkering opheffen|Blokkeert geautomatiseerde e-mails verzonden vanuit uw webhosting. Dit zorgt er ook voor dat e-mails die zijn opgeslagen in de openstaande wachtrij worden verzonden naar ontvangers.|
+|E-mails opschonen|Verwijdert de e-mails die zijn opgeslagen in de openstaande wachtrij en deblokkeert de e-mails die worden verzonden.|
 
-![](images/img_3116.jpg){.thumbnail}
-3. Het volgende bericht zal verschijnen: 'Uw verzoek is verzonden.'
+Als u acties wilt uitvoeren, klikt u op de betreffende knop en vervolgens op `Bevestigen`{.action}. In sommige gevallen duurt het enkele minuten voordat de actie die u wilt uitvoeren volledig effectief is.
 
-![](images/img_3117.jpg){.thumbnail}
+![hosting](images/monitoring-automatic-emails-step3.png){.thumbnail}
 
-## Let op:
-U zult zien dat de service status nu ingesteld zal zijn op "Vrijgeven".
+## Verder
 
-![](images/img_3118.jpg){.thumbnail}
-
-
-## Verzending deblokkeren.
-U zult in staat zijn uw volgende e-mail te kunnen verzenden. Geblokkeerde e-mails zullen verzonden worden.
-1. Klik Deblokkeer e-mailverzending.
-
-![](images/img_3122.jpg){.thumbnail}
-Klik vervolgens op 'Bevestigen'.
-
-![](images/img_3123.jpg){.thumbnail}
-3. Het volgende bericht zal verschijnen: 'Uw verzoek is verzonden.'
-
-![](images/img_3124.jpg){.thumbnail}
-
-
-## Wijzig de bestemming waar uw foutmeldingen naar worden verzonden
-Als een fout optreedt bij het verzenden van e-mail vanaf uw web hosting account, dan ontvangt u de volgende dag een verslag.
-1. Klik eerst op "Wijzig ontvanger".
-
-![](images/img_3119.jpg){.thumbnail}
-2. Voer het e-mailadres in en klik "Bevestigen".
-
-![](images/img_3120.jpg){.thumbnail}
-3. U zult zien dat het nieuwe adres vanaf nu weergegeven zal worden.
-
-![](images/img_3121.jpg){.thumbnail}
-
+Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.
