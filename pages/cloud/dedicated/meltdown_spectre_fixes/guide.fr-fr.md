@@ -1,3 +1,10 @@
+---
+title: Information about Meltdown and Spectre vulnerability fixes
+slug: information-about-meltdown-spectre-vulnerability-fixes
+section: Meltdown and Spectre informations
+fullwidth: true
+---
+
 <div id="main-content" class="wiki-content table-meltown-spectre">
    <p><strong>Last update 22. May.&nbsp; at<span class="widont">&nbsp;7.25am CET<br></span></strong></p>
    <p><strong>(this table reflects the situation at a given moment and is constantly evolving.)<br></strong></p>
