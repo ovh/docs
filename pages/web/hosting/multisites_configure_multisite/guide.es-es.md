@@ -2,11 +2,11 @@
 title: 'Alojar varios sitios web en un mismo hosting'
 slug: configurar-un-multisitio-en-un-alojamiento-web
 excerpt: 'Cómo utilizar un plan de hosting para alojar varios sitios web'
-section: 'Configuración del alojamiento'
+section: 'Primeros pasos'
 order: 1
 ---
 
-**Última actualización: 24/04/2018**
+**Última actualización: 22/05/2018**
 
 ## Objetivo
 
@@ -40,14 +40,14 @@ Aparecerá una tabla en la que se muestran todos los dominios añadidos al aloja
 
 Para añadir un nuevo dominio al alojamiento, haga clic en el botón `Añadir un dominio o subdominio`{.action} y siga los pasos que se indican.
 
-- **Añadir un dominio registrado con OVH**:
+**Añadir un dominio registrado con OVH**
 
 Solo se mostrarán los dominios que utilicen la configuración de OVH y que se encuentren bajo el mismo ID de cliente. Seleccione un dominio de la lista y haga clic en el botón `Siguiente`{.action}.
 Si ha seleccionado esta opción, vaya directamente al paso [3.1. Añadir un dominio registrado con OVH](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/#31-anadir-un-dominio-registrado-con-ovh){.external}.
 
-- **Añadir un dominio externo**:
+**Añadir un dominio externo**
 
-Haga clic en el botón [Siguiente](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/#32-anadir-un-dominio-externo){.external} e introduzca los datos del dominio externo que quiera asociar al alojamiento. Recuerde que, para poder añadir el dominio, es necesario tener permisos para modificar su configuración (zona DNS). Si ha seleccionado esta opción, vaya al paso [3.2. Añadir un dominio externo](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/#32-anadir-un-dominio-externo){.external}.
+Después de hacer clic en el botón `Siguiente`{.action}, introduzca los datos del dominio externo que quiera asociar al alojamiento. Recuerde que, para poder añadir el dominio, es necesario tener permisos para modificar su configuración (zona DNS). Si ha seleccionado esta opción, vaya directmente al paso [3.2. Añadir un dominio externo](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/#32-anadir-un-dominio-externo){.external}.
 
 ![Multisitio](images/add-multisite-step1.png){.thumbnail}
 
@@ -62,7 +62,7 @@ En la pestaña `Multisitio`{.action} de su alojamiento, haga clic en el botón `
 
 |Campo|Descripción|
 |---|---|
-|Dominio|El nombre de dominio seleccionado se autocompletará por defecto. También tiene la opción de introducir un subdominio (p. ej., «blog.example.com») y de crear simultáneamente el subdominio www (p. ej., «www.example.com»).|
+|Dominio|El nombre de dominio seleccionado se autocompletará por defecto. También puede introducir un subdominio (p. ej., «blog.example.com») o crear simultáneamente el subdominio www (p. ej., «www.example.com»).|
 |Carpeta raíz|Es el directorio de su espacio de almacenamiento en el que se alojará el dominio seleccionado. Si la carpeta no existe, se creará automáticamente.|
 |Activar IPv6|Permite activar el protocolo IPv6 en el dominio indicado. Más información en nuestra página sobre las [IP](https://www.ovh.es/hosting/ip.xml){.external}.|
 |SSL|Permite disfrutar de una conexión segura (https://) en el dominio seleccionado. Más información en nuestra página sobre [SSL](https://www.ovh.es/ssl/){.external}. Si activa conjuntamente las opciones SSL y CDN (Content Delivery Network), podrá disfrutar también del protocolo **HTTP2**.|
@@ -77,9 +77,9 @@ Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}.
 
 Compruebe que la información que se muestra es correcta.
 
-Al añadir un dominio registrado en OVH, podrá realizar automáticamente la configuración DNS marcando la casilla `Configuración automática (recomendado)`{.action}. Si prefiere configurarla de forma manual posteriormente, desmarque la casilla. En ese caso, se mostrará la información con las operaciones que debe realizar en el dominio.
+Al añadir un dominio registrado en OVH, podrá realizar automáticamente la configuración DNS marcando la casilla `Configuración automática (recomendado)`{.action}. Si prefiere configurarlo más adelante de forma manual, desmarque la casilla. En ese caso, se mostrará la información relativa a las operaciones que debe realizar en el dominio.
 
-Haga clic en `Aceptar`{.action} para añadir el dominio. Para más información sobre cómo realizar manualmente al configuración DNS, consulte la guía [Web Hosting: ¿Cómo editar mi zona DNS?](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}.
+Haga clic en `Aceptar`{.action} para añadir el dominio. Para más información sobre cómo realizar manualmente la configuración DNS, consulte la guía [Web Hosting: ¿Cómo editar mi zona DNS?](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}.
 
 > [!primary]
 >
@@ -92,15 +92,15 @@ Una vez añadido el dominio, puede ir directamente al paso [4. Publicación del 
 
 > [!primary]
 >
-> Este paso solo es pertinente si ha seleccionado la opción «Añadir un dominio externo», es decir, si su dominio no está registrado con OVH o no puede administrarlo desde el área de cliente de OVH. Si quiere añadir un dominio registrado con OVH, vaya al paso [3.1. Añadir un dominio registrado con OVH](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/#31-anadir-un-dominio-registrado-con-ovh){.external}.
+> Este paso solo es pertinente si ha seleccionado la opción «Añadir un dominio externo», es decir, si su dominio no está registrado con OVH o no puede administrarlo desde el área de cliente de OVH. Si quiere añadir un dominio registrado con OVH, vuelva al paso [3.1. Añadir un dominio registrado con OVH](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/#31-anadir-un-dominio-registrado-con-ovh){.external}.
 >
 
 En la pestaña `Multisitio`{.action} de su alojamiento, haga clic en el botón `Añadir un dominio o un subdominio`{.action}. Una vez seleccionado el dominio externo que quiera asociar al alojamiento, deberá personalizar su información.
-Algunas opciones incluidas en su [plan de hosting de OVH](https://www.ovh.es/hosting/){.external} no pueden activarse inmediatamente después de añadir un dominio. Es necesario añadir primero el dominio y activar dichas opciones posteriormente modificando la configuración del dominio.
+Algunas opciones incluidas en su [plan de hosting de OVH](https://www.ovh.es/hosting/){.external} no pueden activarse inmediatamente después de añadir un dominio. Es necesario añadir el dominio en primer lugar y posteriormente activar dichas opciones modificando la configuración del dominio.
 
 |Campo|Descripción|
 |---|---|
-|Dominio|Introduzca el dominio que quiera añadir al alojamiento. También puede introducir un subdominio (p. ej., «blog.example.com») y de crear simultáneamente el subdominio www (p. ej., «www.example.com»). Recuerde que, para poder añadir el dominio, es necesario tener permisos para modificar su configuración (su zona DNS).|
+|Dominio|Introduzca el dominio que quiera añadir al alojamiento. También puede introducir un subdominio (p. ej., «blog.example.com») o crear simultáneamente el subdominio www (p. ej., «www.example.com»). Recuerde que, para poder añadir el dominio, es necesario tener permisos para modificar su configuración (zona DNS).|
 |Carpeta raíz|Es el directorio de su espacio de almacenamiento en el que se alojará el dominio seleccionado. Si la carpeta no existe, se creará automáticamente una vez completada la operación.|
 |Activar IPv6|Permite activar el protocolo IPv6 en el dominio indicado. Más información en nuestra página sobre las [IP](https://www.ovh.es/hosting/ip.xml){.external}.|
 
@@ -116,8 +116,8 @@ A continuación le indicamos algunos datos relativos a la configuración del dom
 
 |Registro|¿Dónde encontrar la información?|Descripción|
 |---|---|---|
-|TXT|En la pestaña `Multisitio`{.action}, haga clic en `Configuración del código de verificación ovhcontrol`{.action}|Este código permite a OVH comprobar que la operación para añadir un dominio externo es legítima. Asegúrese de crear el registro TXT con el subdominio **ovhcontrol** (p. ej., «ovhcontrol.example.com»).|
-|A y AAAA|Pestaña `Información general`{.action}, en **IPv4** e **IPv6**|Permiten que su dominio muestre el sitio web que usted haya subido a su alojamiento.|
+|TXT|En la pestaña `Multisitio`{.action}, haga clic en `Configuración del código de verificación ovhcontrol`{.action}|Este código permite a OVH comprobar que la operación para añadir un dominio externo es legítima. Deberá crear el registro TXT con el subdominio **ovhcontrol** (p. ej., «ovhcontrol.example.com»).|
+|A y AAAA|Pestaña `Información general`{.action}, en **IPv4** e **IPv6**|Estos dos registros permiten que su dominio muestre el sitio web que usted haya subido a su alojamiento.|
 
 Una vez validado el dominio, este se añadirá temporalmente. A continuación deberá modificar su configuración (zona DNS) desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS. Una vez realizada la operación, los cambios tardarán entre 4 y 24 horas en propagarse y ser plenamente efectivos.
 
@@ -132,7 +132,7 @@ Una vez añadido el dominio o iniciada la operación de configuración, puede co
 
 Una vez añadido el dominio, solo tiene que publicar el sitio web correspondiente.
 
-Para ayudarle, OVH pone a su disposición sus módulos en un clic, que ofrecen una estructura de sitio web lista para usar. Para más información, consulte nuestra guía [Instalar un sitio web con un módulo en un clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/){.external}.
+Para ayudarle, OVH pone a su disposición una serie de módulos en un clic, que ofrecen una estructura de sitio web lista para usar. Para más información, consulte nuestra guía [Instalar un sitio web con un módulo en un clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/){.external}.
 
 Si quiere utilizar su hosting para alojar varios sitios web, deberá realizar esta operación tantas veces como sea necesario.
 
