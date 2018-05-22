@@ -1,12 +1,5 @@
----
-title: Information about Meltdown and Spectre vulnerability fixes
-slug: information-about-meltdown-spectre-vulnerability-fixes
-section: Meltdown and Spectre informations
-fullwidth: true
----
-
 <div id="main-content" class="wiki-content table-meltown-spectre">
-   <p><strong>Last update 21. Jan.&nbsp; at<span class="widont"> 8:00am CET<br></span></strong></p>
+   <p><strong>Last update 22. May.&nbsp; at<span class="widont">&nbsp;7.25am CET<br></span></strong></p>
    <p><strong>(this table reflects the situation at a given moment and is constantly evolving.)<br></strong></p>
    <p><strong><br></strong></p>
    <h2 id="SummaryOles-Introduction">Introduction<span style="color: rgb(0,0,0);"> <br></span></h2>
@@ -29,12 +22,12 @@ fullwidth: true
    <p>&nbsp;</p>
    <div class="table-wrap">
       <table class="wrapped relative-table confluenceTable tablesorter tablesorter-default stickyTableHeaders" style="width: 100%; padding: 0px;" role="grid">
-         <thead class="tableFloatingHeaderOriginal">
+                 <thead class="tableFloatingHeaderOriginal" style="position: static; margin-top: 0px; left: 325px; z-index: 3; width: 857px; top: 41px;">
             <tr role="row" class="tablesorter-headerRow">
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="&nbsp;: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="&nbsp;: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">&nbsp;</div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Spectre - Variant 1***Bounds Check Bypass(CVE-2017-5753): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="Spectre - Variant 1***Bounds Check Bypass(CVE-2017-5753): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Spectre - Variant 1</p>
                      <p style="text-align: center;">***</p>
@@ -42,7 +35,7 @@ fullwidth: true
                      <p style="text-align: center;"><em>(CVE-2017-5753)</em></p>
                   </div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Spectre - Variant 2***Branch Target Injection(CVE-2017-5715): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="Spectre - Variant 2***Branch Target Injection(CVE-2017-5715): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Spectre - Variant 2</p>
                      <p style="text-align: center;">***</p>
@@ -50,7 +43,7 @@ fullwidth: true
                      <p style="text-align: center;"><em>(CVE-2017-5715)</em></p>
                   </div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Meltdown***Rogue Data Cache LoadMeltdown(CVE-2017-5754): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="Meltdown***Rogue Data Cache LoadMeltdown(CVE-2017-5754): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Meltdown</p>
                      <p style="text-align: center;">***</p>
@@ -63,10 +56,10 @@ fullwidth: true
          </thead>
          <thead class="tableFloatingHeader" style="display: none;">
             <tr role="row" class="tablesorter-headerRow">
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="&nbsp;: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-sort="none" aria-label="&nbsp;: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">&nbsp;</div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Spectre - Variant 1***Bounds Check Bypass(CVE-2017-5753): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-sort="none" aria-label="Spectre - Variant 1***Bounds Check Bypass(CVE-2017-5753): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Spectre - Variant 1</p>
                      <p style="text-align: center;">***</p>
@@ -74,7 +67,7 @@ fullwidth: true
                      <p style="text-align: center;"><em>(CVE-2017-5753)</em></p>
                   </div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Spectre - Variant 2***Branch Target Injection(CVE-2017-5715): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-sort="none" aria-label="Spectre - Variant 2***Branch Target Injection(CVE-2017-5715): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Spectre - Variant 2</p>
                      <p style="text-align: center;">***</p>
@@ -82,7 +75,7 @@ fullwidth: true
                      <p style="text-align: center;"><em>(CVE-2017-5715)</em></p>
                   </div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Meltdown***Rogue Data Cache LoadMeltdown(CVE-2017-5754): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-sort="none" aria-label="Meltdown***Rogue Data Cache LoadMeltdown(CVE-2017-5754): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Meltdown</p>
                      <p style="text-align: center;">***</p>
@@ -98,9 +91,11 @@ fullwidth: true
                <td class="confluenceTd">Linux</td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <p><span>Status : <span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span><br></span></p>
+                     <p><span>Status : <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span><br></span></p>
                      <p><span><br></span></p>
-                     <p><span>Patch compilers and recompile software with LFENCE instruction to stop speculation.</span></p>
+                     <p><span>Most distributions have recompiled their Kernel using LFENCE instruction.</span></p>
+                     <p><span><br></span></p>
+                     <p><span>Softwares need to be recompiled with a patched compiler using LFENCE instruction to stop speculation.</span></p>
                   </div>
                </td>
                <td class="confluenceTd">
@@ -109,21 +104,20 @@ fullwidth: true
                      <p><span><br></span></p>
                      <p>Two conditions to be protected, A <strong>and</strong> B:</p>
                      <p><span>A) boot the OS with the new microcodes to activate new flags in CPU (the SPEC_CTRL and PRED_CMD MSRs). Two ways to do this:<br></span></p>
-                     <p style="margin-left: 30.0px;"><span>Option.1) charge microcode after BIOS and at the very beginning of kernel boot. The new microcode has to be loaded to the CPU each time the OS starts. Works well with Linux.&nbsp;<span>&nbsp;</span><span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></span> in progress with Windows.</span><span> <span><span><span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></span></span><br></span></p>
-                     <p style="margin-left: 30.0px;"><span>Option.2) upgrade BIOS, so BIOS will load new microcode in CPU, before the OS boot phase. Once the BIOS is upgraded, the system will load with new microcode automatically. Works with all OS. <span><span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></span><br></span></p>
-                     <p><span><br></span></p>
-                     <p><span>B) Install a kernel that is integrating the new IBRS and IBPB patches that are using the new CPU MSR, made available by the microcode update in A) to successfully mitigate the vulnerability.</span></p>
+                     <p style="margin-left: 30.0px;"><span>Option.1) charge microcode after BIOS and at the very beginning of kernel boot. The new microcode has to be loaded to the CPU each time the OS starts. </span></p>
+                     <p style="margin-left: 30.0px;"><span>&nbsp;</span>Option.2) upgrade BIOS, so BIOS will load new microcode in CPU, before the OS boot phase. Once the BIOS is upgraded, the system will load with new microcode automatically.</p>
+                     <p style="margin-left: 30.0px;"><span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span><span> OVH already released any microcode and BIOS that vendors provided.</span></p>
+                     <p>B) Install a kernel that is integrating the new IBRS and IBPB patches that are using the new CPU MSR, made available by the microcode update in A) to successfully mitigate the vulnerability.</p>
                      <p><span><br></span></p>
                      <p><span><br></span></p>
                      <p>On Linux, those patches have been integrated in latest kernels (4.14.14 as well as 4.9.77), and they have been compiled with a GCC with retpoline support. <span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></span></p>
-                     <p><span>On Windows, the latest updates integrate these patches, refer to the <a class="external-link" href="https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/" rel="nofollow">OS matrix </a>for details <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></span></p>
+                     <p>&nbsp;</p>
+                     <p><span><span>Openstack KVM/Qemu: <br><a class="external-link" href="https://lists.gnu.org/archive/html/qemu-devel/2018-01/msg00692.html" rel="nofollow">https://lists.gnu.org/archive/html/qemu-devel/2018-01/msg00692.html</a><br>KVM patches</span></span> show to guests the new capabilities of the host CPU from the new microcode. Then, with a patched guest kernel (same as point B) above), the guest will be able to protect himself.</p>
+                     <p>&nbsp;</p>
                      <p><span><br></span></p>
-                     <p><span><span>Openstack KVM/Qemu: <br> <a class="external-link" href="https://lists.gnu.org/archive/html/qemu-devel/2018-01/msg00692.html" rel="nofollow">https://lists.gnu.org/archive/html/qemu-devel/2018-01/msg00692.html</a><br> KVM patches looks like to be able to show to guests the new capabilities of the host CPU from the new microcode. Then, with a patched guest kernel (same as point B) above), the guest will be able to protect himself.</span><br> </span></p>
-                     <p><span><br></span></p>
-                     <p><u><strong>Mitigation 2: tests <span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></span></strong></u></p>
+                     <p><u><strong>Mitigation 2: <span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></span></strong></u></p>
                      <p><span>Patch compilers to avoid any indirect jump and use a static trampoline (aka retpoline) gcc have a pending patch to introduce this feature. <span>But if you recompile the kernel with this, it'll fix only the kernel itself. If the kernel is fixed, you'll not be able to read kernel memory, but you'll still be able to read other process memory. All software have to be recompiled with mitigation to be secured.</span></span></p>
-                     <p><span><span>OVH<br></span></span></p>
-                     <p><span><span><br> </span><a class="external-link" href="https://lkml.org/lkml/2018/1/3/780" rel="nofollow">https://lkml.org/lkml/2018/1/3/780</a></span></p>
+                     <p><span><a class="external-link" href="https://lkml.org/lkml/2018/1/3/780" rel="nofollow">https://lkml.org/lkml/2018/1/3/780</a></span></p>
                      <p><span><span><a class="external-link" href="https://googleprojectzero.blogspot.fr/2018/01/reading-privileged-memory-with-side.html" rel="nofollow">https://googleprojectzero.blogspot.fr/2018/01/reading-privileged-memory-with-side.html</a></span></span></p>
                      <p><span><span>GCC patches for retpoline: <a class="external-link" href="http://git.infradead.org/users/dwmw2/gcc-retpoline.git/shortlog/refs/heads/gcc-7_2_0-retpoline-20171219" rel="nofollow"> http://git.infradead.org/users/dwmw2/gcc-retpoline.git/shortlog/refs/heads/gcc-7_2_0-retpoline-20171219</a></span></span></p>
                   </div>
@@ -145,6 +139,8 @@ fullwidth: true
                <td class="confluenceTd">
                   <div class="content-wrapper">
                      <p>Status:&nbsp;<span><span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></span></span></p>
+                     <p><span><span><br></span></span></p>
+                     <p><span><span><span>Softwares need to be recompiled with a patched compiler using</span><span> LFENCE instruction to stop speculation.</span><br></span></span></p>
                   </div>
                </td>
                <td class="confluenceTd">
@@ -153,13 +149,14 @@ fullwidth: true
                      <p>&nbsp;</p>
                      <div>
                         A) boot the OS with the new microcodes to activate new flags in CPU (the SPEC_CTRL and PRED_CMD MSRs), there are 2 ways to do this:
-                        <p>&nbsp;</p>
-                        <p style="margin-left: 30.0px;">A.Option.1) charge microcode after BIOS and at the very beginning of kernel boot. In progress with Windows. <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
-                        <p style="margin-left: 30.0px;">A.Option.2) upgrade BIOS, so BIOS will load new microcode in CPU, before the OS boot phase. Once the BIOS is upgraded, the system will load with new microcode automatically. Works with all OS. <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
+                        <p style="margin-left: 30.0px;">A.Option.1) charge microcode after BIOS and at the very beginning of kernel boot. In progress with Windows.</p>
+                        <p style="margin-left: 30.0px;">A.Option.2) upgrade BIOS, so BIOS will load new microcode in CPU, before the OS boot phase. Once the BIOS is upgraded, the system will load with new microcode automatically. Works with all OS.</p>
+                        <p style="margin-left: 30.0px;"><span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span><span> OVH already released any microcode and BIOS that vendors provided.</span></p>
                         <p>&nbsp;</p>
                         <div>B) Install the latest Windows security updates that integrates the patches that are using the new CPU MSR, made available by the microcode update in A) to successfully mitigate the vulnerability. Note that you must also have a compatible Antivirus for this security install to be available, refer to the OS matrix for details.</div>
                      </div>
-                     <p>Status:&nbsp;<span><span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></span></span></p>
+                     <p>Status:&nbsp;<span><span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span> <span>refer to the </span><a class="external-link" href="https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/" rel="nofollow">OS matrix </a><span>for details</span></span></span></p>
+                     <p>&nbsp;</p>
                   </div>
                </td>
                <td class="confluenceTd">
@@ -172,20 +169,20 @@ fullwidth: true
                <td class="confluenceTd">BSD</td>
                <td style="text-align: center;" class="confluenceTd">
                   <div class="content-wrapper">
-                     <p><span> <span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span></span></p>
+                     <p><span> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></span></p>
+                     <p><span><a class="external-link" href="https://wiki.freebsd.org/SpeculativeExecutionVulnerabilities" rel="nofollow">https://wiki.freebsd.org/SpeculativeExecutionVulnerabilities</a><br></span></p>
                   </div>
                </td>
                <td style="text-align: center;" class="confluenceTd">
                   <div class="content-wrapper">
-                     <p><span> <span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span></span></p>
+                     <p><span> <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></span></p>
+                     <p><span><a class="external-link" href="https://wiki.freebsd.org/SpeculativeExecutionVulnerabilities" rel="nofollow" style="text-decoration: underline;text-align: center;">https://wiki.freebsd.org/SpeculativeExecutionVulnerabilities</a><br></span></p>
                   </div>
                </td>
                <td style="text-align: center;" class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>&nbsp;</p>
-                     <p><span>KPTI code has been committed: <a class="external-link" href="https://docs.freebsd.org/cgi/getmsg.cgi?fetch=2384492+0+current/svn-src-all" rel="nofollow">https://docs.freebsd.org/cgi/getmsg.cgi?fetch=2384492+0+current/svn-src-all</a></span></p>
-                     <p><span>Wait for its appearance in stable branches:&nbsp;</span></p>
-                     <span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span>
+                     <p style="text-align: center;"><span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
+                     <p style="text-align: center;"><a class="external-link" href="https://wiki.freebsd.org/SpeculativeExecutionVulnerabilities" rel="nofollow" style="text-decoration: underline;">https://wiki.freebsd.org/SpeculativeExecutionVulnerabilities</a></p>
                   </div>
                </td>
             </tr>
@@ -199,23 +196,23 @@ fullwidth: true
    <p>&nbsp;</p>
    <div class="table-wrap">
       <table class="wrapped relative-table confluenceTable tablesorter tablesorter-default stickyTableHeaders" style="width: 99.9576%; padding: 0px;" role="grid">
-         <thead class="tableFloatingHeaderOriginal">
+                 <thead class="tableFloatingHeaderOriginal" style="position: static; margin-top: 0px; left: 227.5px; z-index: 3; width: 955px; top: 92px;">
             <tr role="row" class="tablesorter-headerRow">
-               <th colspan="1" style="text-align: center; user-select: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="SERVICE: No sort applied, activate to apply an ascending sort">
+               <th colspan="1" style="text-align: center; -moz-user-select: none; min-width: 8px; max-width: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="SERVICE: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">SERVICE</div>
                </th>
-               <th colspan="1" style="text-align: center; user-select: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="PRODUCT: No sort applied, activate to apply an ascending sort">
+               <th colspan="1" style="text-align: center; -moz-user-select: none; min-width: 8px; max-width: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="PRODUCT: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">PRODUCT</div>
                </th>
-               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="&nbsp;: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="&nbsp;: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">&nbsp;</div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="WHAT HAS TO BE DONE By Who ?: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="WHAT HAS TO BE DONE By Who ?: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">WHAT HAS TO BE DONE By Who ?</p>
                   </div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Spectre - Variant 1***Bounds Check Bypass(CVE-2017-5753): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="Spectre - Variant 1***Bounds Check Bypass(CVE-2017-5753): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Spectre - Variant 1</p>
                      <p style="text-align: center;">***</p>
@@ -223,7 +220,7 @@ fullwidth: true
                      <p style="text-align: center;"><em>(CVE-2017-5753)</em></p>
                   </div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="5" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Spectre - Variant 2***Branch Target Injection(CVE-2017-5715): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="5" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="Spectre - Variant 2***Branch Target Injection(CVE-2017-5715): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Spectre - Variant 2</p>
                      <p style="text-align: center;">***</p>
@@ -231,7 +228,7 @@ fullwidth: true
                      <p style="text-align: center;"><em>(CVE-2017-5715)</em></p>
                   </div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="6" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Meltdown***Rogue Data Cache LoadMeltdown(CVE-2017-5754): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="6" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="Meltdown***Rogue Data Cache LoadMeltdown(CVE-2017-5754): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Meltdown</p>
                      <p style="text-align: center;">***</p>
@@ -244,21 +241,21 @@ fullwidth: true
          </thead>
          <thead class="tableFloatingHeader" style="display: none;">
             <tr role="row" class="tablesorter-headerRow">
-               <th colspan="1" style="text-align: center; user-select: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="SERVICE: No sort applied, activate to apply an ascending sort">
+               <th colspan="1" style="text-align: center; -moz-user-select: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="SERVICE: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">SERVICE</div>
                </th>
-               <th colspan="1" style="text-align: center; user-select: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="PRODUCT: No sort applied, activate to apply an ascending sort">
+               <th colspan="1" style="text-align: center; -moz-user-select: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="PRODUCT: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">PRODUCT</div>
                </th>
-               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="&nbsp;: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-sort="none" aria-label="&nbsp;: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">&nbsp;</div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="WHAT HAS TO BE DONE By Who ?: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-sort="none" aria-label="WHAT HAS TO BE DONE By Who ?: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">WHAT HAS TO BE DONE By Who ?</p>
                   </div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Spectre - Variant 1***Bounds Check Bypass(CVE-2017-5753): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-sort="none" aria-label="Spectre - Variant 1***Bounds Check Bypass(CVE-2017-5753): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Spectre - Variant 1</p>
                      <p style="text-align: center;">***</p>
@@ -266,7 +263,7 @@ fullwidth: true
                      <p style="text-align: center;"><em>(CVE-2017-5753)</em></p>
                   </div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="5" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Spectre - Variant 2***Branch Target Injection(CVE-2017-5715): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="5" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-sort="none" aria-label="Spectre - Variant 2***Branch Target Injection(CVE-2017-5715): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Spectre - Variant 2</p>
                      <p style="text-align: center;">***</p>
@@ -274,7 +271,7 @@ fullwidth: true
                      <p style="text-align: center;"><em>(CVE-2017-5715)</em></p>
                   </div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="6" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Meltdown***Rogue Data Cache LoadMeltdown(CVE-2017-5754): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="6" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-sort="none" aria-label="Meltdown***Rogue Data Cache LoadMeltdown(CVE-2017-5754): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Meltdown</p>
                      <p style="text-align: center;">***</p>
@@ -296,31 +293,30 @@ fullwidth: true
                <td class="confluenceTd">Service update (<em><span style="color: rgb(0,0,255);">OVH side</span></em>)</td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>Status: <span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span></p>
+                     <p>Status: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span><span>&nbsp;</span></p>
                   </div>
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>Status Mitigation 1: <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
+                     <p>Status: <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
                      <p>Linux:</p>
                      <ul style="list-style-type: square;">
                         <li>deploying intel microcode in netboot and disk boot via initramfs/<span>OVH Kernel</span><span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></span></li>
+                        <li>deploying intel microcode in via UEFI<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span><span><br></span></li>
                         <li><span>deploying microcode on disk boot&nbsp; <span>(3rd-party Kernels and distributor-supplied microcodes)</span> <span><span><span><span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></span></span></span></span></span></li>
                         <li><span>waiting for updated AMD microcodes <span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span><br></span></li>
                         <li>waiting for Kernel + GCC with the patch to use the new flags in CPU <span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></span></li>
                      </ul>
                      <p>Windows:</p>
                      <ul style="list-style-type: square;">
-                        <li>testing UEFI+microcode+windows</li>
-                        <li><span><span><span><span><span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></span></span></span></span></li>
-                        <li>deploying received BIOS per MB <span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span><br><br></li>
-                        <li>waiting for BIOS per MB&nbsp;</li>
+                        <li>testing UEFI+microcode+windows <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></li>
+                        <li>deploying received BIOS per MB <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span><br><br></li>
                      </ul>
                   </div>
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>Status: <span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></span></p>
+                     <p>Status: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span><span>&nbsp;</span></p>
                      <p>&nbsp;</p>
                      <p>Linux : 4.14.14 and 4.9.77 are available via Netboot</p>
                      <p>Windows: Microsoft proposes the patch.</p>
@@ -339,7 +335,7 @@ fullwidth: true
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>Linux: <span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span>Cloud IaaS/Baremetal</p>
+                     <p>Linux: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span><span>&nbsp;</span></p>
                      <p>&nbsp;</p>
                      Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
                      <p><a class="external-link" href="https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/" rel="nofollow"><em>Clic here for more information</em></a></p>
@@ -348,7 +344,6 @@ fullwidth: true
                <td class="confluenceTd">
                   <div class="content-wrapper">
                      <p>Linux:&nbsp; <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
-                     <p>&nbsp;</p>
                      <p>&nbsp;</p>
                      <p>Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
                      <p><a class="external-link" href="https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/" rel="nofollow"><em>Clic here for more information</em></a></p>
@@ -374,11 +369,10 @@ fullwidth: true
                <td colspan="1" class="confluenceTd">OpenStack KVM</td>
                <td class="confluenceTd">
                   <p>Service update (<em><span style="color: rgb(0,0,255);">OVH side</span></em>)</p>
-                  <p>(<a class="external-link" href="http://travaux.ovh.net/?do=details&amp;id=29261" rel="nofollow">Task 29261</a>)</p>
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>OS:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
+                     <p>OS:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                      <p>&nbsp;</p>
                      <p>VM to KVM: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span><span> (variant 1 doesn't cross VM boundaries)</span></p>
                      <p><span><br></span></p>
@@ -387,11 +381,11 @@ fullwidth: true
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>OS:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
+                     <p>Microcode:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
+                     <p>OS:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></p>
+                     <p>VM to KVM:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                      <p>&nbsp;</p>
-                     <p>VM to KVM:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline">WAIT</span> Cloud-IaaS/Baremetal</p>
-                     <p>&nbsp;</p>
-                     <p>VM to VM: <span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline">WAIT</span> Cloud-IaaS/Baremetal</p>
+                     <p>VM to VM: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                      <p>&nbsp;</p>
                      <p>MSR exposed to VM:&nbsp;<span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></span> update from KVM</p>
                   </div>
@@ -416,7 +410,7 @@ fullwidth: true
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
+                     <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
                      <p>&nbsp;</p>
                      Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
                      <p><a class="external-link" href="https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/" rel="nofollow"><em>Clic here for more information</em></a></p>
@@ -424,7 +418,7 @@ fullwidth: true
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
+                     <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
                      <p>&nbsp;</p>
                      Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
                      <p><a class="external-link" href="https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/" rel="nofollow"><em>Clic here for more information</em></a></p>
@@ -442,11 +436,10 @@ fullwidth: true
                <td colspan="1" class="confluenceTd">2014 powered by pCC</td>
                <td class="confluenceTd">
                   <p>Service update (<em><span style="color: rgb(0,0,255);">OVH side</span></em>)</p>
-                  <p>(<a class="external-link" href="http://travaux.ovh.net/?do=details&amp;id=29259" rel="nofollow">Task 29259</a>)</p>
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>OS:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span> Kernel</p>
+                     <p>OS:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
                      <p>&nbsp;</p>
                      <p>VM to ESXi:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span><span> (variant 1 doesn't cross VM boundaries)</span></p>
                      <p><span><br></span></p>
@@ -455,19 +448,20 @@ fullwidth: true
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>OS: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span> cause AMD</p>
+                     <p>OS: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                      <p>&nbsp;</p>
-                     <p>VM to ESXi:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span> cause AMD</p>
+                     <p>VM to ESXi:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                      <p>&nbsp;</p>
-                     <p>VM to VM:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span> cause AMD</p>
+                     <p>VM to VM:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                   </div>
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <div class="content-wrapper">OS: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span> cause AMD</div>
-                     <p>VM to ESXi:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span> cause AMD</p>
+                     <div class="content-wrapper">OS: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></div>
                      <p>&nbsp;</p>
-                     <p>VM to VM:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span> cause AMD</p>
+                     <p>VM to ESXi:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
+                     <p>&nbsp;</p>
+                     <p>VM to VM:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                   </div>
                </td>
             </tr>
@@ -499,14 +493,11 @@ fullwidth: true
                <td colspan="1" class="confluenceTd">2016 powered by pCI</td>
                <td class="confluenceTd">
                   <p>Service update (<em><span style="color: rgb(0,0,255);">OVH side</span></em>)</p>
-                  <p>(<a class="external-link" href="http://travaux.ovh.net/?do=details&amp;id=29260" rel="nofollow">Task 29260</a>)</p>
-                  <p><span style="color: rgb(0,0,0);">Live-migration started Varsovie and BHS (10% done)</span></p>
-                  <p><span style="color: rgb(0,0,0);">New regions are coming in the following days<br></span></p>
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
                      <div class="content-wrapper">
-                        <p>OS:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
+                        <p>OS:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
                         <p>&nbsp;</p>
                         <p>VM to KVM:&nbsp;<span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span><span> (variant 1 doesn't cross VM boundaries)</span></span></p>
                         <p><span><span><br></span></span></p>
@@ -516,7 +507,8 @@ fullwidth: true
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>OS:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
+                     <p>Microcode:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
+                     <p>OS:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></p>
                      <p>VM to KVM:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
                      <p>VM to VM: <span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
                      <p>&nbsp;</p>
@@ -539,7 +531,7 @@ fullwidth: true
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
+                     <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
                      <p>&nbsp;</p>
                      Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
                      <p><a class="external-link" href="https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/" rel="nofollow"><em>Clic here for more information</em></a></p>
@@ -547,7 +539,7 @@ fullwidth: true
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
+                     <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
                      <p>&nbsp;</p>
                      Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
                      <p><a class="external-link" href="https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/" rel="nofollow"><em>Clic here for more information</em></a></p>
@@ -571,8 +563,11 @@ fullwidth: true
                <td colspan="1" class="confluenceTd">vSphere 4.1/5.0/5.1/5.5</td>
                <td colspan="1" class="confluenceTd">Service (OVH/CUSTOMER)</td>
                <td colspan="1" class="confluenceTd">
-                  <p>There is no patch to protect vSphere 4.1/5.0/5.1, Ovh advices the customer to upgrade pCC to vSphere 6.0/6.5. It's free.</p>
-                  <p>vSphere 5.5 is vulnerable, waiting for VMware to patch. No ETA.</p>
+                  <div class="content-wrapper">
+                     <p><span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
+                     <p>There is no patch to protect vSphere 4.1/5.0/5.1, OVH advices the customer to upgrade pCC to vSphere 6.0/6.5. It's free.</p>
+                     <p>vSphere 5.5 is vulnerable, waiting for VMware to patch. No ETA.</p>
+                  </div>
                </td>
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">
@@ -595,7 +590,7 @@ fullwidth: true
                <td colspan="1" class="confluenceTd">vSphere 6.0/6.5</td>
                <td colspan="1" class="confluenceTd">
                   <p>Service update (<em><span style="color: rgb(0,0,255);">OVH side</span></em>)</p>
-                  <p>All host : 56% patched</p>
+                  <p>All host : 95% patched</p>
                </td>
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">
@@ -664,7 +659,7 @@ fullwidth: true
                <td class="confluenceTd">
                   <p>Service update (<em><span style="color: rgb(0,0,255);">OVH side</span></em>)</p>
                   <p><a class="external-link" href="http://travaux.ovh.net/?do=details&amp;id=29250" rel="nofollow">http://travaux.ovh.net/?do=details&amp;id=29250</a></p>
-                  <p>All host : 56% patched</p>
+                  <p>All host : 95% patched</p>
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
@@ -1303,12 +1298,12 @@ fullwidth: true
                </td>
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>Status:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
+                     <p>Status:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></p>
                   </div>
                </td>
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">
-                     <p>Status:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
+                     <p>Status:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></p>
                   </div>
                </td>
                <td colspan="1" class="confluenceTd">
@@ -1367,15 +1362,11 @@ fullwidth: true
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">
                      <p>Status:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">NOT EXPOSED</span></p>
-                     <p>&nbsp;</p>
-                     <p>Status:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
                   </div>
                </td>
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">
                      <p>Status:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">NOT EXPOSED</span></p>
-                     <p>&nbsp;</p>
-                     <p>Status:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
                   </div>
                </td>
                <td colspan="1" class="confluenceTd">
@@ -1404,15 +1395,11 @@ fullwidth: true
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">
                      <p>Status:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">NOT EXPOSED</span></p>
-                     <p>&nbsp;</p>
-                     <p>Status:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
                   </div>
                </td>
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">
                      <p>Status:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">NOT EXPOSED</span></p>
-                     <p>&nbsp;</p>
-                     <p>Status:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> Cloud-IaaS/Baremetal</p>
                   </div>
                </td>
                <td colspan="1" class="confluenceTd">
@@ -1616,4 +1603,8 @@ fullwidth: true
          </tbody>
       </table>
    </div>
+   <div id="floating-scrollbar" style="position: fixed; bottom: 0px; height: 30px; overflow-x: auto; overflow-y: hidden; display: none; left: 325px; width: 858px;">
+      <div style="border: 1px solid rgb(255, 255, 255); opacity: 0.01; width: 956px;"></div>
+   </div>
 </div>
+
