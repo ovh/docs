@@ -13,8 +13,10 @@ Le vRack est un réseau privé dédié qui crée un lien entre tous vos produits
 
 Avant de vous lancer, si vous ne l’avez pas encore lue, nous vous conseillons de consulter la présentation générale du service [Load Balancer](https://docs.ovh.com/fr/load-balancer/iplb-presentation/).
 
-***Attention, une fois liées à votre vRack, les fermes de votre Load Balancer seront dans l'incapacité de communiquer avec vos serveurs via leurs adresses IP publiques. Vous serez alors obligé d'utiliser leur adresse IP privée à l'intérieur du vRack.***
-
+> [!warning]
+>
+> Attention, une fois liées à votre vRack, les fermes de votre Load Balancer seront dans l'incapacité de communiquer avec vos serveurs via leurs adresses IP publiques. Vous serez alors obligé d'utiliser leur adresse IP privée à l'intérieur du vRack.***
+>
 
 ## Lister les services Load Balancer éligibles au vRack
 
@@ -25,7 +27,6 @@ Le `serviceName` dans l'API ci-dessous est celui de votre vRack, ex : `pn-1234`.
 > [!api]
 >
 > @api {GET} /vrack/{serviceName}/allowedServices
-> 
 >
 
 Vous trouverez vos services Load Balancer à l'index : `ipLoadbalancing`.
@@ -45,7 +46,6 @@ Pour attacher votre service Load Balancer à votre vRack, voici l'API concernée
 > [!api]
 >
 > @api {POST} /vrack/{serviceName}/ipLoadbalancing
-> 
 >
 
 Comme précédemment le `serviceName` ici est celui de votre vRack, ex: `pn-1234`.
@@ -57,7 +57,6 @@ Pour fonctionner, votre Load Balancer a besoin de connaître la topologie résea
 > [!api]
 >
 > @api {POST} /ipLoadbalancing/{serviceName}/vrack/network
-> 
 >
 
 Exemple de configuration :
@@ -76,7 +75,6 @@ Pour connaître la taille minimale de la plage à attribuer à natIp, un call AP
 > [!api]
 >
 > @api {GET} /ipLoadbalancing/{serviceName}/vrack/networkCreationRules
-> 
 >
 
 ## Configurer une ferme liée à un vRack
@@ -86,13 +84,11 @@ Vous pouvez maintenant créer votre ferme de serveurs dans le vRack. Pour ce fai
 > [!api]
 >
 > @api {POST} /ipLoadbalancing/{serviceName}/http/farm
-> 
 >
 
 > [!api]
 >
 > @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm
-> 
 >
 
 ## Suite de la configuration
