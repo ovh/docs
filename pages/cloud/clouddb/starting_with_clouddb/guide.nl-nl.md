@@ -1,206 +1,179 @@
 ---
-title: Aan de slag met CloudDB
+title: 'Aan de slag met CloudDB'
 slug: aan-de-slag-met-clouddb
-links: 
-   - docs/cloud/clouddb/utilisation-mysql-mariadb/
-   - docs/cloud/clouddb/utilisation-pgsql/
-legacy_guide_number: 2216
-excerpt: Databases Made Easy!
+excerpt: 'Ontdek hoe u een goed begin kunt maken met CloudDB'
+section: 'Aan de slag'
 ---
 
-Heeft u een website of applicatie en daarbij een database nodig? U wilt de database liever niet zelf beheren? Ontdek dan nu onze CloudDB dienst! OVH verzorgt alles!
+**Laatste update 22-05-2018**
 
+## Introductie
 
-## Overzicht
+De CloudDB-oplossing geeft u toegang tot een database-instance die dedicated, gegarandeerde resources biedt. Deze dienst biedt betere prestaties en meer flexibiliteit; het is over het algemeen bedoeld voor klanten met specifieke vereisten.
 
-### Waarom kiezen voor een beheerde database?
-Deze dienst is ontstaan uit een **simpele waarheid**: zelfs als u **weet** hoe een database moet worden beheerd, betekent dit niet dat dit per sé uw **prioriteit** is. Beveiliging, updates, monitoring, toegangsbeheer, performance, ... dit kan allemaal nogal oplopen!
+Deze handleiding legt uit hoe u aan de slag kunt met CloudDB.
 
-**Dus waarom zou u het niet aan OVH overlaten, zodat u zich kunt concentreren op uw bedrijf of project?**
+## Vereisten
 
-Of het nu gaat om een individuele beginner of professional, met weinig vereisten of een hele cluster: wij staan de gehele markt ten dienst.
+- U moet beschikken over een [CloudDB-instance](https://www.ovh.nl/cloud/cloud-databases/){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+## Instructies
 
-### De voordelen van CloudDB
-**Eenvoudig en snel:**
+### De algemene informatie van de instance weergeven
 
-- Creëer SQL databases via het Control Panel
-- Onbeperkt aantal databases (afhankelijk van de beschikbare diskruimte)
-- Tot 200 gelijktijdige verbindingen
-- Beheer van geassocieerde gebruikers en rechten via het Control Panel
-- Toegang tot metrics via het Control Panel
-- Toegang tot logs
+In de servicebalk links van uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} gaat u naar het onderdeel `Databases`{.action} en vervolgens naar de betreffende SQL-instance. Ga na of u het tabblad `Algemene informatie`{.action} geopend hebt.
 
-**High performance:**
+> [!primary]
+>
+> De naam van de CloudDB-service in uw OVH Control Panel bevat een deel van uw NIC handle en eindigt met drie cijfers (001 voor de eerste geïnstalleerde CloudDB-service, 002 voor de tweede, enz.).
+>
 
-- Gegarandeerde RAM resources
-- Goedgekeurde infrastructuur
+U kunt hier de belangrijke informatie van uw SQL-instance raadplegen. Wij nodigen u uit om even de tijd te nemen om u ervan te verzekeren dat de weergeven informatie juist is of overeenkomt met de onderstaande aanwijzingen.
 
-**Veiligheid:**
+|Informatie|Details|
+|---|---|
+|Service status|Het is vooral zichtbaar als de instance wordt gestart, deze wordt herstart, of geblokkeerd. Uw instance moet opnieuw worden opgestart om er acties op uit te voeren.|
+|Type|Toont het databasesysteem dat door de server wordt gebruikt.|
+|Versie|Toont de versie van het databasesysteem dat door de server wordt gebruikt. Controleer of uw website compatibel is met de door u gekozen versie.|
+|RAM|Toont het RAM-geheugen dat beschikbaar is voor uw instance, wordt ook weergegeven als u de RAM-limiet bijna overschrijdt. Uw CloudDB-instance beschikt over dedicated, gegarandeerde resources: zijn RAM-geheugen. Indien nodig kunt u het geheugen uitbreiden en worden gewaarschuwd als u het hele geheugen van uw instance gebruikt.|
+|Infrastructuur|Toont de infrastructuur die door uw instance wordt gebruikt. Deze informatie is kenmerkend aan de OVH-infrastructuur.|
+|Datacenter|Toont het datacenter waarin de instance is gecreëerd.  Ga na of het datacenter van uw instance hetzelfde is als dat van de OVH-host waar uw website wordt/zal worden gehost.|
+|Host|Toont de server waarop de instance is gecreëerd.  Deze informatie is kenmerkend aan OVH‘s infrastructuur en kan worden gebruikt in onze communicatie omtrent [OVH-incidenten](http://travaux.ovh.net/){.external}.|
 
-- 24/7 monitoring door onze teams
-- Automatische dagelijkse backups
-- Verplichte IP autorisatie
+![clouddb](images/clouddb-general-information.png){.thumbnail}
 
-**Flexibiliteit:**
+### Creëer een database 
 
-- Compatibel met alle OVH producten (behalve web hosting), en in het algemeen met alle producten verbonden met het internet
-- SQL versie-keuze en de mogelijkheid om later te switchen naar een hogere versie
+> [!primary]
+>
+> Deze stap is niet van toepassing op het Redis-databasesysteem.
+>
 
+Om uw eerste database op uw CloudDB-instance te maken, klikt u op het tabblad `Databases`{.action} en vervolgens op de knop `Een database toevoegen`{.action}.
 
-### Aangeboden databases
-Wanneer u registreert voor CloudDB dan kunt u kiezen tussen meerdere database systemen
 
-**SQL**
+![clouddb](images/clouddb-add-database.png){.thumbnail}
 
-- MySQL
-- PostgreSQL
-- MariaDB
+In het venster dat verschijnt, en tegelijkertijd tijdens het maken van de database, kunt het volgende kiezen:
 
-Elke instance heeft zijn eigen dedicated resources. De database(s) die het bevat, **delen** hun resources.
+-  **Een gebruiker aanmaken**: deze gebruiker kan verzoeken indienen bij uw database (zoals lezen, toevoegen of verwijderen van gegevens);
 
+- **Een geautoriseerd IP-adres toevoegen**: verzoeken die afkomstig zijn van dit adres hebben toegang tot uw database.
 
-## CloudDB bestellen
+Vul, afhankelijk van uw keuze, de gevraagde informatie in en klik op `Bevestigen`{.action}.
 
-### Log in op het Control Panel
-Om uw instance en vervolgens uw databases te creëren gaat u naar [het Control Panel](https://www.ovh.com/manager/web/){.external}.
+|Informatie|Omschrijving|
+|---|---|
+|Database naam|Dit is de naam van uw toekomstige database|
+|Gebruikersnaam|Dit is de gebruiker die kan inloggen op uw database en query's kan uitvoeren (optioneel als het selectievakje ‘Een gebruiker aanmaken’ niet is aangevinkt).|
+|Rechten|Dit zijn de rechten die aan de gebruiker worden gekoppeld; voor standaard gebruik selecteert u `Admin (Beheerder)`{.action} (optioneel als het vakje *‘Een gebruiker aanmaken’* niet is aangevinkt).|
+|Het wachtwoord|Selecteer een wachtwoord en bevestig het (optioneel als het vakje *‘Een gebruiker aanmaken’* niet is aangevinkt).|
+|IP/mask|Dit is het IP-adres of het IP-masker voor de server(s) geautoriseerd voor toegang tot uw databases (optioneel als het vakje *‘Een geautoriseerd IP-adres toevoegen’* niet is aangevinkt).|
 
+> [!warning]
+>
+> Om veiligheidsredenen verzoeken wij u de voorwaarden te respecteren die tijdens de registratie van informatie worden aangegeven.
+>
 
-### Bestellen
-Eenmaal in [het Control Panel](https://www.ovh.com/manager/web/){.external}, klikt u op **"Databases"**, en dan op `Order databases`{.action}.
+![clouddb](images/clouddb-add-database-step2.png){.thumbnail}
 
+### Creatie van een gebruiker  
 
-![commande manager](images/bouton-commande_EN.PNG){.thumbnail}
+> [!primary]
+>
+> Deze stap is niet van toepassing op het Redis-databasesysteem.
+>
 
-Plaats een bestelling en kies daarbij de volgende elementen:
+Deze stap is optioneel als u de gebruiker tegelijk met de database aangemaakt hebt in de vorige handeling. Voor een specifieker project kan het echter nodig zijn om meerdere gebruikers aan te maken die toegang hebben tot uw database. Eén van de gebruikers die aan uw database is gekoppeld, kan bijvoorbeeld lees- en schrijfrechten hebben terwijl de andere uitsluitend leesrechten heeft.
 
-- **"CloudDB"**
-- **"Your database system"**
-- **"Your RAM"**
-- **"Your datacentre"**
-- **"The desired duration"**
+Als u geen extra gebruiker voor uw project nodig hebt, kunt u meteen naar de volgende stap gaan. Om een gebruiker aan te maken, klikt u naar keuze op het tabblad `Gebruikers en rechten`{.action} en vervolgens op de knop `Een gebruiker toevoegen`{.action}.
 
+![clouddb](images/clouddb-add-user.png){.thumbnail}
 
-![commande choix](images/choix-commande_EN.PNG){.thumbnail}
+Vul, afhankelijk van uw keuze, de gevraagde informatie in en klik op `Bevestigen`{.action}.
 
-Bevestig de Algemene Voorwaarden en klik op `+ Generate the purchase order`{.action}.
+|Informatie|Omschrijving|
+|---|---|
+|Gebruikersnaam|Dit is de gebruiker die kan inloggen op uw instance. U kunt de gebruiker in de volgende stap rechten verlenen tot uw database.|
+|Het wachtwoord|Voer een wachtwoord in en bevestig het.|
 
+> [!warning]
+>
+> Om veiligheidsredenen verzoeken wij u de voorwaarden te respecteren die tijdens de registratie van informatie worden aangegeven.
+>
 
-![commande generation](images/generer-commande_EN.PNG){.thumbnail}
+![clouddb](images/clouddb-add-user-step2.png){.thumbnail}
 
+Als de gebruiker aangemaakt is, moet u er rechten aan verlenen zodat deze handelingen kan uitvoeren in uw database (zoals gegevens lezen, schrijven of verwijderen). Hiervoor klikt u op het tandwielpictogram en vervolgens op `Rechten beheren`{.action}. Op de nieuwe pagina selecteert u het gewenste recht en klikt hierop. Voor een standaard gebruik selecteert u Admin (Beheerder).
 
-## Algemene informatie
-Zodra u in het klantaccount bent kunt u algemene informatie over uw instance zien.
+![clouddb](images/clouddb-add-rights.png){.thumbnail}
 
+### Importatie van een database
 
-![commande generation](images/infos-generales_EN.png){.thumbnail}
+> [!primary]
+>
+> Deze stap is van toepassing als u de backup van een bestaande database wilt importeren. Als dit niet het geval is, gaat u naar de volgende stap.
+>
 
+Er zijn verschillende technieken waaruit u kunt kiezen om een database te importeren. Er is een tool beschikbaar in uw OVH Control Panel, en we gaan ons richten op deze methode. U kunt natuurlijk ook een andere methode gebruiken, als u dat liever doet en er bekend mee bent.
 
-## Creeer uw database en uw gebruikers
+De onderstaande stappen laten zien hoe u een database importeert met behulp van de tool die beschikbaar is in uw OVH Control Panel.
 
-### Creeer een database
-Uw instance wordt aangemaakt, maar deze zal leeg zijn.
+- **Stap 1: Toegang tot de import-interface**
 
-Klik op de **"Database"** tab, en daarna op de knop `+ Add a database`{.action}.
+Ga naar het tabblad `Databases`{.action} klik op het tandwielpictogram en vervolgens op `Een bestand importeren`{.action}. In het venster dat geopend wordt, selecteert u het vakje `Een nieuw bestand importeren`{.action} en klikt vervolgens op `Volgende`{.action}.
 
+![clouddb](images/clouddb-add-import-step1.png){.thumbnail}
 
-![creation bdd](images/creation-bdd_EN.png){.thumbnail}
+- **Stap 2: Selecteer en verzend het opgeslagen bestand**
 
-Voer een naam in voor uw database, en klik `+ confirm`{.action}.
+Voer een bestandsnaam in waarmee u deze backup later kunt identificeren als u deze later opnieuw wilt herstellen. Selecteer vervolgens naast **Bestand** het databasebackup-bestand van uw computer en klik op `Verzenden`{.action}. Wacht even tot de interface aangeeft dat het bestand met succes verzonden is en klik op de knop `Volgende`{.action}.
 
+![clouddb](images/clouddb-add-import-step2.png){.thumbnail}
 
-![creation bdd](images/validation-bdd_EN.png){.thumbnail}
+- **Stap 3: Start de database-import**
 
+Kies tot slot of de onderstaande aanvullende opties moeten worden toegepast en klik op `Bevestigen`{.action}.
 
-### Creeer een gebruiker
-Om gebruik te maken van CloudDB, creëert u een gebruiker met specifieke rechten voor verbinding met een database.
+|Aanvullende opties|Omschrijving|
+|---|---|
+|Maak de huidige database leeg|De inhoud in de database wordt volledig verwijderd en vervangen door de inhoud van uw backup.|
+|Stuur een e-mail zodra de import is voltooid|U ontvangt een e-mailmelding zodra het importeren van de database is voltooid.|
 
-Hiervoor gaat u naar de **"Users and rights"** tab en klikt u op `+ Add a user`{.action}.
+![clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
 
+### Autoriseer een IP-adres
 
-![hosting](images/creation-user_EN.png){.thumbnail}
+Om ervoor te zorgen dat uw CloudDB-instance toegankelijk is, moet u de IP-adressen of reeksen, die verbinding kunnen maken met uw database, invoeren. Klik hiervoor op het tabblad `Geautoriseerde IP-adressen`{.action} en klik vervolgens op `Een IP-adres / masker toevoegen`{.action}.
 
-Er zal van u worden gevraagd een  **gebruikersnaam** en **wachtwoord** in te voeren en te klikken op `Confirm`{.action}.
+![clouddb](images/clouddb-add-ip.png){.thumbnail}
 
+In het venster dat verschijnt, voert u het IP-adres of masker in dat u wilt autoriseren in `IP/mask`{.action}, samen met een beschrijving als u dat wenst. U kunt vervolgens beslissen of u alleen toegang wilt verlenen tot de databases of tot de SFTP. Klik vervolgens op `Bevestigen`{.action}. 
 
-![hosting](images/validation-user_EN.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
+### Uw site aan de database koppelen
 
-### Beheer gebruiksrechten
-Klik op de **"Database"** tab, dan op het **'tandwiel'** voor de gewenste database, en vervolgens op `+ Manage users`{.action}.
+Nu u uw database hebt gemaakt, één of meerdere gebruikers hebt aangemaakt met toegang ertoe, en minimaal één IP-adres hebt geautoriseerd in uw CloudDB-instance, hoeft u alleen nog maar uw website te koppelen aan de database. Deze stap kan op meerdere manieren worden uitgevoerd, afhankelijk van de site en de CMS die u gebruikt (WordPress, Joomla enz.) of de stap waarin u zich bevindt indien u een website aan het installeren bent.
 
+Om deze handeling met succes te kunnen uitvoeren, moet u over de volgende vijf gegevens beschikken:
 
-![hosting](images/gestion-user_EN.png){.thumbnail}
+|Informatie|Omschrijving|
+|---|---|
+|Naam van de database|De naam die u invoerde toen u uw database aanmaakte U kunt alle databases die in uw CloudDB-instance zijn gemaakt, bekijken op het tabblad `Databases`{.action}.|
+|Gebruikersnaam|De naam van de gebruiker die u hebt ingevoerd toen u de database aanmaakte, of de naam van een extra gebruiker die u in een later stadium hebt gemaakt. U kunt alle gebruikers die in uw CloudDB-instance zijn gemaakt, bekijken op het tabblad `Gebruikers en rechten`{.action}.|
+|Gebruikerswachtwoord|Het wachtwoord dat aan de gebruiker is gekoppeld, dat tijdens de vorige stappen is ingesteld.|
+|Server hostnaam|De server die moet worden ingevoerd om uw website aan te sluiten op uw database. U kunt deze informatie in uw Control Panel openen door naar het gedeelte **Verbindingen (Inloggen)** te gaan en vervolgens het tabblad `Algemene informatie`{.action}.|
+|Serverpoort|De poort voor verbinding met uw CloudDB-instance, zodat uw website verbinding kan maken met uw database. U kunt deze informatie in uw Control Panel openen door naar het gedeelte **Verbindingen (Inloggen)** te gaan en vervolgens het tabblad `Algemene informatie`{.action}.|
 
-Kies daarna de rechten voor de betreffende gebruiker
+> [!warning]
+>
+> In zeldzame gevallen wordt het veld `poort`{.action} niet voorgesteld in de configuratie van uw site. Als dit het geval is, moet u dit veld toevoegen na de hostnaam van uw server, en scheiden door *:* (voorbeeld: hostnaam:poort).
+>
 
+![clouddb](images/clouddb-login-information.png){.thumbnail}
 
-![hosting](images/validation-droit_EN.png){.thumbnail}
+## Verder
 
-U kunt kiezen uit de volgende rechten:
-
-- **Administator:** De gebruiker kan **Select/Insert/Update/Delete/Create/Alter/Drop** taken uitvoeren
-- **Read/Write:** De gebruiker kan **Select/Insert/Update/Delete** taken uitvoeren
-- **Read :** De gebruiker kan **Select** taken uitvoeren
-- **None:** Geen rechten op de gekozen database
-
-
-## IP autorisatie
-
-### Toevoeging van uw server
-Om uw CloudDB toegankelijk te maken moet u vaststellen welke IP's geautoriseerd zijn om te verbinden aan uw instance. Klik op de **"Authorised IPs"** tab, en dan op `+ Add an IP address/mask`{.action}.
-
-
-![hosting](images/ip-autorisee_EN.png){.thumbnail}
-
-Voer uw server of netwerk IP in, plus een beschrijving als u wilt, en klik op `Valider`{.action}.
-
-
-![hosting](images/validation-ip_EN.png){.thumbnail}
-
-
-## Database gebruik
-Alles geconfigureerd? Geweldig!
-
-Afhankelijk van uw use case en gekozen database, zijn er verschillende manieren om uw database te gebruiken.
-
-Laten we een kijkje nemen naar een typisch voorbeeld.
-
-
-### WordPress installeren met de DBaaS lab en MySQL
-- Creëer een MySQL CloudDB
-- Creëer een database en gebruiker gelinkt aan deze database, wijs eerst de ADMIN gebruiker toe.
-- Autoriseer uw server IP om uw CloudDB dienst te contacteren
-
-Haal de volgende informatie via uw Control Panel:
-
-- Host name
-- SQL Port
-
-
-![Instance MySQL](images/infos-sql_EN.png){.thumbnail}
-
-- Databases
-
-
-![Instance MySQL](images/view-bdd_EN.PNG){.thumbnail}
-
-- Gebruiker
-
-
-![Instance MySQL](images/view-uer_EN.PNG){.thumbnail}
-
-Noteer de URL en bijbehorende port. U heeft deze informatie nodig bij het installeren van WordPress.
-
-
-![wordpress install](images/wordpress-config.png){.thumbnail}
-
-We vullen de velden als volgt in:
-
-- **Database Name**: *base-test*
-- **UserName**: *user-1*
-- **Password**: het wachtwoord voor *user-1* gebruiker
-- **Database Host**: *xxx.dbaas.ovh.net:35102* (note: **host:port**)
-- **Table prefix**: geen wijziging in deze instance
-
-Voor andere use cases volgt u de standaard verbindingsmethoden voor de gebruikte databases, te vinden in officiële documentatie.
+Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.
