@@ -27,7 +27,7 @@ Dans la section `Frontends` de votre Manager, cliquez sur le bouton `Ajouter un 
 
 ![Configuration la terminaison SSL d'un Frontend](images/enable_ssl_terminaison.png){.thumbnail}
 
-Une fois le frontend créé, il vous sera prospoé d'`Appliquer la configuration`{.action} pour appliquer vos changements dans la zone concernée.
+Une fois le frontend créé, il vous sera proposé d'`Appliquer la configuration`{.action} pour appliquer vos changements dans la zone concernée.
 
 
 ### Via l'API
