@@ -1,7 +1,7 @@
 ---
-title: Méfiez-vous des arnaques - comment reconnaître des e-mails de fraude et de phishing
+title: 'Méfiez-vous des arnaques - comment reconnaître des e-mails de fraude et de phishing'
 slug: arnaques-fraude-phishing
-excerpt: Comment reconnaître un e-mail de phishing et que faire si vous avez cliqué sur un lien frauduleux ?
+excerpt: 'Comment reconnaître un e-mail de phishing et que faire si vous avez cliqué sur un lien frauduleux ?'
 section: Sécurité
 ---
 
@@ -51,6 +51,11 @@ Vous avez reçu un e-mail au nom d'OVH et vous voulez être sûr qu'il soit corr
 
 Si après les vérifications expliquées au-dessus, vous êtes certain que vous avez effectivement reçu un e-mail de phishing usurpant l'identité d'OVH, vous pouvez nous faire parvenir un maximum d’informations (le contenu de l'e-mail au minimum) à l’adresse e-mail suivante : **<fraude@ovh.com>**.
 
+
+> [!primary]
+> 
+> Veuillez noter que les informations que vous nous communiquerez pourront être partagées à des tiers afin de nous permettre de lutter contre ces menaces.
+> 
 
 ### J'ai saisi mes informations personnelles : que faire ?
 
