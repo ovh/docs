@@ -150,6 +150,6 @@ Choisissez "Import de votre certificat SSL" puis cliquez sur "Suivant".
 
 Renseignez le contenu de votre certificat et votre clé privée puis cliquez sur "Suivant".
 
-![hosting](images/4574.png){.thumbnail}
+![hosting](images/sslexterne.png){.thumbnail}
 
 L'import de votre certification sera disponible après quelques heures maximum, le temps qu'il soit déployé sur l'ensemble de l'infrastructure.
