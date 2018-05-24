@@ -1,123 +1,215 @@
 ---
-title: Disk replacement
+title: 'Replacing a defective disk'
 slug: disk-replacement
-excerpt: This guide will show you the steps to follow if you require a disk replacement.
-section: Server Management
+excerpt: 'Find out how to identify a defective disk, and request a replacement'
+section: 'Server Management'
 ---
 
-**Last updated 18th April 2018**
+**Last updated 21st May 2018**
+
+## Objective
+
+If you notice that a disk is faulty, or receive a notification email about a faulty disk, you must take the measures required to replace it as soon as possible.
+
+**This guide explains how to identify a defective disk, and how to request a disk replacement from our teams.**
+
+> [!warning]
+>
+> OVH is providing you with services that you will be responsible for. We have no access to these machines, and therefore cannot manage them, so we cannot provide administrative assistance. You are responsible for your own software and security management.
+> 
+> This guide is designed to assist you in common tasks as much as possible. However, we recommend that you call upon a specialist service provider if you experience any issues or doubts when it comes to managing, using or securing your server. You can find more information in the “Go further” section of this guide.
+> 
+
 
 ## Requirements
-If you see a disk failure or that our system sent you a notification email to notify you of a disk failure, you need to take steps to replace it as soon as possible.
+
+- You must be connected via SSH to your [OVH dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}, with *root access* (Linux).
 
 
-## Procedure
+## Instructions
 
-### Step 1 &#58; Backup
-Before doing anything, **it is really important to perform a backup**. The sole purpose of a RAID (except RAID 0) is to protect your data against hard disk failures. Once a disk is failing, all of your data depends on the health of the remaining disk.
+### Back up your data
 
-It is improbable that two drives fails at the same time, but it is not impossible. By all means, implement an adequate backup strategy.
+Before you do anything else, **you will need to back up your data**. The sole purpose of RAID, apart from RAID 0, is to protect your data against disks that become faulty. Once a disk becomes unusable, all of your data is reliant on the remaining disk (or disks) working properly.
 
-If you do not confirm that you have made your backup before asking for a disk replacement, you must state that you are aware of the risks and that you accept full responsibility for any data loss.
+Although it’s rare to have two disks become faulty at the same time, it’s not impossible.
 
+We will not carry out any disk replacements without:
 
-### Step 2 &#58;Find defective disk(s)
-Whether you have found the failure by yourself or if our system notified you, it is good practice to check the health of all hard disks.
-
-The reason is that if we have two failing disks in a RAID array, we will start by replacing the disk with the higher error count.
+- confirmation from you that you have backed up your data
+- confirmation that you accept full knowledge of the risk of data loss as a result of disk replacement
 
 
-#### Software RAID
-If you have a Software RAID, [use this guide](../raid-soft/){.ref} to find the installed disks on your server.
+### Detecting a defective disk
 
-Once you have found the device path of you disks, you can test them using smartctl like so:
+If you receive an email alert, or notice any signs that you might have a faulty disk, it is absolutely essential to check that all your disks are working properly. If two disks that make up part of the same RAID array seem to be faulty, we will replace the one that flags the highest number of errors as a priority.
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">smartctl -a /dev/sdX</span> </pre></div>
+#### Servers using soft RAID
 
-> [!primary]
->
-> Don't forget to replace /dev/sdX for the actual device path of your disk.
-> 
+If you have a server that uses soft RAID, please refer to the [software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external} guide to find the disks installed on your server.
 
-This will also allow you to retrieve the serial number of the disk(s) you want to replace, which is required by the technician.
+Once you have found the access path for your disks, you can test them using the `smartctl` command, as follows:
 
-Here is an example of the returned result.
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">smartctl -a -d ata /dev/sda</span>
-<span class="output">smartctl 5.41 2011-06-09 r3365 [x86_64-linux-3.14.32-xxxx-grs-ipv6-64] (local build)</span>
-<span class="output">Copyright (C) 2002-11 by Bruce Allen, http://smartmontools.sourceforge.net</span>
-<span class="blank">&nbsp;</span>
-<span class="output">=== START OF INFORMATION SECTION ===</span>
-<span class="output">Device Model:     TOSHIBA DT01ACA050</span>
-<span class="output">Serial Number:    5329T58NS</span>
-<span class="output">LU WWN Device Id: 5 000039 ff6d28993</span>
-<span class="output">Firmware Version: MS1OA750</span>
-<span class="output">User Capacity:    500 107 862 016 bytes [500 GB]</span>
-<span class="output">Sector Sizes:     512 bytes logical, 4096 bytes physical</span>
-<span class="output">Device is:        Not in smartctl database [for details use: -P showall]</span>
-<span class="output">ATA Version is:   8</span> <span class="output">ATA Standard is:  ATA-8-ACS revision 4</span>
-<span class="output">Local Time is:    Thu Nov 24 15:51:25 2016 CET</span> <span class="output">SMART support is: Available - device has SMART capability.</span>
-<span class="output">SMART support is: Enabled</span>
-</pre></div>
-
-#### For a NVMe Disk
-In the case of an NVMe disk, it will be necessary to place the server in Recue-pro mode on which the **nvme-cli** tool is installed by default.
-
-You will need to use the nvme list command to retrieve the serial numbers of your disks.
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">root@rescue:~# nvme list</span>
-<span class="output">Node             SN                   Model                                    Namespace Usage                      Format           FW Rev</span>
-<span class="output">---------------- -------------------- ---------------------------------------- --------- -------------------------- ---------------- --------</span>
-<span class="output">/dev/nvme0n1     CVPF636600YC450RGN   INTEL SSDPE2MX450G7                      1         450.10  GB / 450.10  GB    512   B +  0 B   MDV10253</span>
-<span class="output">/dev/nvme1n1     CVPF6333002Y450RGN   INTEL SSDPE2MX450G7                      1         450.10  GB / 450.10  GB    512   B +  0 B   MDV10253</span> </pre></div>
-
-#### Hardware RAID
-For Hardware RAID, [use this guide](../raid-hard/){.ref} and use the procedure related to your RAID controler to find out the device path of your disks.
-
-Once you have found the device path of you disks, you can test them using smartctl like so:
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">smartctl -d megaraid,N -a /dev/sdX</span> </pre></div>
-N is the drive's Device ID
-
-X is the RAID's device (/dev/sda = 1st RAID, /dev/sdb = 2nd RAID, etc.)
-
-
+```sh
+smartctl -a /dev/sdX
+```
 
 > [!primary]
 >
-> Don't forget to replace /dev/sdX for the actual device path of your disk.
+> Please remember to replace `/dev/sdX` with the access path to your disk, with sdX being the disk concerned, i.e. sdA, sdB, etc.
 > 
 
+By running this command, you can also retrieve the *Serial Number* of the disks that need to be replaced, so that you can give them to the technician.
+
+Here is an example of a result that may be returned:
+
+```sh
+smartctl -a /dev/sda
+
+>>> smartctl 5.41 2011-06-09 r3365 [x86_64-linux-3.14.32-xxxx-grs-ipv6-64] (local build)                                                                                          
+>>> Copyright (C) 2002-11 by Bruce Allen, http://smartmontools.sourceforge.net
+
+>>> === START OF INFORMATION SECTION ===
+>>> Device Model:     TOSHIBA DT01ACA050
+>>> Serial Number:    5329T58NS
+>>> LU WWN Device Id: 5 000039 ff6d28993
+>>> Firmware Version: MS1OA750
+>>> User Capacity:    500 107 862 016 bytes [500 GB]
+>>> Sector Sizes:     512 bytes logical, 4096 bytes physical
+>>> Device is:        Not in smartctl database [for details use: -P showall]
+>>> ATA Version is:   8
+>>> ATA Standard is:  ATA-8-ACS revision 4
+>>> Local Time is:    Thu Nov 24 15:51:25 2016 CET
+>>> SMART support is: Available - device has SMART capability.
+>>> SMART support is: Enabled
+```
+
+In this case, the line to look out for is as follows:
+
+**`Serial Number:    5329T58N`**
+
+#### Servers using hard RAID
+
+If you have a server that uses hard RAID, please refer to the [hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} guide, and use the appropriate procedure for your RAID controller type to find the access paths to your disks.
+
+Once you have found the access path for your disks, you can test them using the `smartctl` command, as follows:
+
+```sh
+smartctl -d megaraid,N -a /dev/sdX
+```
+
+> [!primary]
+>
+> Please remember to replace `/dev/sdX` with the access path to your disk, with sdX being the disk concerned, i.e. sdA, sdB, etc.
+> 
 
 
 > [!warning]
 >
-> In some cases, you may get the following message : /dev/sda [megaraid_disk_00][SAT]: Device open changed type from 'megaraid' to 'sat'.
-> You will then have to replace megaraid by sat+megaraid as following : smartctl -d sat+megaraid,N -a /dev/sdX
+> In some cases, the command may return the following message: `/dev/sda [megaraid_disk_00][SAT]: Device open changed type from 'megaraid' to 'sat'`.
+> 
+> In this case, you will need to replace `megaraid` with `sat+megaraid` as follows: `smartctl -d sat+megaraid,N -a /dev/sdX`.
 > 
 
-For a LSI Raid Card, you can test disks them using smartctl like so:
+For LSI RAID cards, you can test the disks using the `smartctl` command, as follows:
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">smartctl -a /dev/sgY</span> </pre></div>
-The disk's Device (/dev/sg0 = 1st disk, /dev/sg1 = 2nd disk, etc.)
+```sh
+smartctl -a /dev/sgY
+```
 
-
-### Step 3 &#58; Disk replacement
-To request a disk replacement, simply open a Support Ticket in the [OVH Manager](https://www.ovh.com/manager/){.external}.
-
-To accelerate the process, please provide the following informations:
-
-1. **A date and time including the time zone at which we should perform the replacement** (you must plan for a small down time, but replacements can be scheduled 24/7).
-2. **A confirmation that either you have made your backup or that you take full responsibility for any data loss**
-3. **The serial number of the hard disk we must change** (to find the hard disk's serial number, please follow this [this guide](../find-disk-serial-number/){.ref}) [[1]](#id2){.note-ref #id1}
-
-[[1]](#){.note-ref #id2} - ([1](#id1){.fn-backref}) 
-<cite>If for some reason it is not possible to retreive the Serial Number of the failing hard disk, please specify this in the ticket and provide the Serial Numbers of all the other disks.</cite>
+You will need to specify the RAID number (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAID, etc.).
 
 
-### Step 4 &#58; After the replacement
-If you have Hardware RAID, the RAID will automatically re-sync itself. Please note that the re-sync process can take some time and affect the read/write performances of your disks.
+#### Servers with NVMe disks
 
-Don't hesitate to consult [this guide](../raid-hard/){.ref} to verify the RAID's state.
+If you have an NVMe disk, you will need to put the server into [rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}, on which the **nvme-cli** tool is installed by default.
 
-If you have Software RAID, then you will have to manually rebuild your RAID array. [This guide explains how to do it](../raid-soft/){.ref}.
+You will then need to use the `nvme list` command, and retrieve your disks’ serial numbers:
+
+```sh
+root@rescue:~# nvme list
+>>> Node           SN                  Model                 Namespace Usage                     Format        FW Rev
+>>> -------------- ------------------- --------------------- --------- ------------------------- ------------- --------
+>>> /dev/nvme0n1   CVPF636600YC450RGN  INTEL SSDPE2MX450G7   1         450.10  GB / 450.10  GB   512  B +  0 B MDV10253
+>>> /dev/nvme1n1   CVPF6333002Y450RGN  INTEL SSDPE2MX450G7   1         450.10  GB / 450.10  GB   512  B +  0 B MDV10253
+```
+
+
+### Requesting a disk replacement
+
+#### Cold-swapping the disk (server downtime required)
+
+To request a disk replacement, you simply need to create a ticket through your [OVH control panel](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. You can speed up the process by providing the information required for the tests. Below is a list of what you will need to provide:
+
+- **The serial number of the disk that needs to be replaced, as well as the serial numbers for all other disks that are working properly**. To retrieve the serial number of the disk that needs to be replaced, please follow [this guide](https://docs.ovh.com/gb/en/dedicated/find-disk-serial-number/){.external}. If, for any reason, you are unable to retrieve the disk’s serial number, please let us know in the ticket, and list the serial numbers of the disks that don’t need to be replaced. 
+
+As a reminder, it’s important to include the serial numbers of all the disks. They will be sent to the datacentre technician, and this will avoid any mistakes being made as the replacement operation is carried out.
+
+- **The intervention date and time**. Please note that there will be a short service interruption, but you can schedule the intervention to take place anytime, 24/7.
+
+- **Confirmation that your data is backed up, and confirmation that you accept the potential risk of your data being lost.**
+
+
+#### Hot-swapping the disk (no server downtime)
+
+> [!primary]
+>
+> This replacement type is only possible for [FS-MAX](https://www.ovh.co.uk/dedicated_servers/fs/1801fs05.xml){.external} and [Big-HG](https://www.ovh.co.uk/dedicated_servers/hg/1801bhg01.xml){.external} servers that have a RAID card.
+> 
+
+If you are hot-swapping a disk on a server with a megaRAID card, please make the LED light flash for the disk that needs to be replaced, once the intervention has been scheduled. This will make the process easier for the teams who are working on the replacement operation.
+
+If your server uses a megaRAID card, please use the following commands:
+
+- To make the LED light flash:
+
+```sh
+MegaCli -PdLocate -start -physdrv[E0:S0] -a0
+```
+
+- To stop the LED light from flashing:
+
+```sh
+MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
+```
+
+> [!primary]
+>
+> Equivalent via the `storcli` command:
+>
+> - To make the LED light flash:
+>
+> ```sh
+> storcli /c0/e0/s0 start locate
+> ```
+>
+> - To stop the LED light from flashing:
+>
+> ```sh
+> storcli /c0/e0/s0 stop locate
+> ```
+>
+
+
+> [!primary]
+>
+> Even though you’re making the disk’s LED light flash, please remember to include the disk’s serial number and *slot* in your support ticket.
+> 
+
+### After the replacement is complete
+
+If you have a server that uses hard RAID, then the RAID will rebuild itself. Please note that *auto-rebuild* is enabled by default. For it to work, please ensure that you have not disabled it. The resync process will take a few minutes, and may decrease your RAID’s read/write performance.
+
+If you have a server that uses soft RAID, we recommend that you resync your disks manually. To do this, you can refer to our [software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external} guide.
+
+
+## Go further
+
+[Software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external}
+
+[Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard){.external}
+
+[Rescue Mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}
+
+
+Join our community of users on <https://community.ovh.com/en/>.
