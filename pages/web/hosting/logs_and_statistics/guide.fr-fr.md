@@ -1,15 +1,19 @@
 ---
-title: Consulter les statistiques et les logs de mon site heberge sur une offre mutualisee
+title: 'Consulter les statistiques et les logs de mon site heberge sur une offre mutualisee'
 slug: mutualise-consulter-les-statistiques-et-les-logs-de-mon-site
 legacy_guide_number: 1344
-excerpt: Retrouvez ici les demarches pour consulter les statistiques et logs de votre site internet
-section: Optimiser son site
+excerpt: 'Retrouvez ici les demarches pour consulter les statistiques et logs de votre site internet'
+section: 'Optimiser son site'
 ---
 
 L'accès aux statistiques de votre site est compris dans votre hébergement. Vous n'avez pas besoin de souscrire à un autre abonnement pour bénéficier de ce service.
 
 Cliquez [ici](http://www.ovh.com/fr/hebergement-web/faq){.external} pour retrouver nos différents guides des offres mutualisées.
 
+> [!warning]
+>
+> L'interprétation des logs et des statistiques d'un site internet peut se révéler complexe. Nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés pour les interpréter. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
+>
 
 ## Consulter les statistiques et les logs
 

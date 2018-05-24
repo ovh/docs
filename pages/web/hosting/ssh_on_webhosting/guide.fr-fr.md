@@ -1,9 +1,9 @@
 ---
-title: Le SSH sur les hébergements web
+title: 'Le SSH sur les hébergements web'
 slug: mutualise-le-ssh-sur-les-hebergements-mutualises
 legacy_guide_number: 1962
-excerpt: Retrouvez ici les manipulations possibles en SSH sur votre hébergement
-section: FTP et SSH
+excerpt: 'Retrouvez ici les manipulations possibles en SSH sur votre hébergement'
+section: 'FTP et SSH'
 ---
 
 Vous trouverez dans ce guide différentes informations et aides concernant l'utilisation du SSH sur vos hébergements.
@@ -45,6 +45,11 @@ Vous pouvez désactiver la connexion SSH d'un utilisateur en cliquant sur la rou
 
 
 ## Comment se connecter à votre hébergement en SSH ?
+
+> [!warning]
+>
+> Des connaissances plus avancées sont nécessaires pour utiliser ce type d’accès. Quelques informations sur comment procéder sont présentes ci-dessous mais elles ne peuvent se substituer à l’aide d’un webmaster. Nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
+>
 
 ### L'invite de commande
 Sous Linux :

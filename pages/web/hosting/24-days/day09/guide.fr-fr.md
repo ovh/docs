@@ -1,10 +1,17 @@
 ---
-title: Comprendre les statistiques et logs
+title: 'Comprendre les statistiques et logs'
 slug: day09
-excerpt: Analyser et optimiser le fonctionnement de son site
-section: Cas d'usage
+excerpt: 'Analyser et optimiser le fonctionnement de son site'
+section: 'Cas d''usage'
 hidden: true
 ---
+
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 mypersonaldomain.ovh est en ligne et les premières annonces sont désormais postées par des visiteurs externes. Comment surveiller et s’assurer que le site fonctionne correctement ?
 

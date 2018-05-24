@@ -1,14 +1,21 @@
 ---
-title: Choisir un hébergement web qui me correspond
+title: 'Choisir un hébergement web qui me correspond'
 slug: day03
-excerpt: Comment choisir son hebergement web ?
-section: Cas d'usage
+excerpt: 'Comment choisir son hebergement web ?'
+section: 'Cas d''usage'
 hidden: true
 ---
 
 Une fois le nom de domaine trouvé, il faut se mettre en quête de l’hébergement idéal.
 
 Comme nous l'avons vu le premier jour, un site web doit être hébergé sur un serveur. Ce peut être n'importe quel type de machine, y compris hébergé dans votre maison. Cependant, le risque de coupure y est important et il n'est pas imaginable pour un site comme mypersonaldomain.ovh d'avoir une coupure d'une semaine car vous êtes en vacances.
+
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 ## Option 1 &#58; configurer son serveur soi-meme
 Sur Airbnb, vous êtes plutôt du genre à rechercher des logements entiers que des chambres chez l’habitant. Vous souhaitez donc avoir votre serveur à vous et rien qu’à vous (par exemple pour y déployer une configuration un peu exotique). Configurer son serveur nécessite quelques compétences, mais avant cela il va vous falloir choisir quel type de serveur utiliser.

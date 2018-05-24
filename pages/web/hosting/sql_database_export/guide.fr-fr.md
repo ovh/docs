@@ -166,7 +166,7 @@ Une fois connecté à votre espace de stockage via une connexion en SSH, vous de
 mysqldump --host=adresse_du_serveur --user=nom_utilisateur --password=mot_de_passe_utilisateur nom_base_de_données > nom_fichier_sauvegarde.sql
 ```
 
-Prenez soin de remplacer les informations génériques dans ce script par les informations de la base de données concernée. Une fois la sauvegarde réalisée, il ne vous reste plus qu'à la récupérer sur votre propre machine.
+Prenez soin de remplacer les informations génériques de cette commande par les informations de la base de données concernée. Une fois la sauvegarde réalisée, il ne vous reste plus qu'à la récupérer sur votre propre machine.
 
 ## Aller plus loin
 

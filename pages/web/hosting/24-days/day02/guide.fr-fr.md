@@ -1,13 +1,20 @@
 ---
-title: Choisir et configurer un nom de domaine
+title: 'Choisir et configurer un nom de domaine'
 slug: day02
-excerpt: Ou comment s’assurer que les visiteurs vous retrouvent
-section: Cas d'usage
+excerpt: 'Ou comment s’assurer que les visiteurs vous retrouvent'
+section: 'Cas d''usage'
 ---
 
 mypersonaldomain.ovh est encore une super idée, sur le papier. Puisque le nom est déjà trouvé, il est temps de réserver le nom de domaine. Mais déjà, qu'est-ce qu'un nom de domaine ?
 
 Nous avons vu [hier le fonctionnement des sites web](https://docs.ovh.com/fr/hosting/24-days/day01/) sans parler des noms de domaine alors qu'il s'agit de l'un des points les plus importants d'un site web.
+
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 ## Qu'est ce qu'un nom de domaine ?
 Le nom de domaine, c'est comme une enseigne numérique : il représente votre activité avec un nom qui lui correspond. C’est un élément importants de votre identité virtuelle. Il permet d'accéder facilement à votre site web, mais aussi de gérer votre image en personnalisant les adresses e-mail : [georges@mypersonaldomain.ovh](mailto:georges@mypersonaldomain.ovh){.external} fait plus professionnel que l'adresse e-mail fournie par votre fournisseur d'accès.
