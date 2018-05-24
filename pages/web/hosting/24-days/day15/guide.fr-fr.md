@@ -1,10 +1,17 @@
 ---
-title: Mettre en place des tâches planifiées
+title: 'Mettre en place des tâches planifiées'
 slug: day15
-excerpt: Utiliser l'asynchrone pour accélerer le site web
-section: Cas d'usage
+excerpt: 'Utiliser l''asynchrone pour accélerer le site web'
+section: 'Cas d''usage'
 hidden: true
 ---
+
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 Certaines opérations requises par votre site web peuvent prendre du temps et être gourmandes en ressources : envoi d’e-mail à plusieurs destinataires, nettoyage de la base de données, ou génération de catalogue par exemple. Pour ces opérations, l'idéal est de configurer des tâches planifiées (ou cron), afin de ne pas impacter la vitesse de chargement des pages de votre site.
 

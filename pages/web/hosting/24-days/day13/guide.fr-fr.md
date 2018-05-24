@@ -1,9 +1,16 @@
 ---
-title: Envoyer des e-mails a vos utilisateurs
+title: 'Envoyer des e-mails a vos utilisateurs'
 slug: day13
-section: Cas d'usage
+section: 'Cas d''usage'
 hidden: true
 ---
+
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 Toute application a besoin d’envoyer des e-mails : pour notifier ses utilisateurs d’un événement, leur adresser des messages promotionnels ou encore les aider à récupérer leur mot de passe s’ils l’ont égaré… Configurer son site web pour que les e-mails arrivent correctement à leurs destinataires ?
 

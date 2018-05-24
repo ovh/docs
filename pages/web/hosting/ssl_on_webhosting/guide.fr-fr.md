@@ -10,8 +10,7 @@ section: SSL
 ### Certificats SSL Gratuit (Let's Encrypt)
 Votre offre d'hébergement web ajoute sur l'ensemble des sites un certificat SSL. Cela permet de chiffrer les communications entre les visiteurs et votre site. Il vous suffit d'utiliser **https://** à la place de **http://** et le flux entre votre ordinateur et votre site sera chiffré.
 
-Nous vous conseillons, si la version HTTPS de votre site fonctionne correctement, de créer une redirection afin que tous vos clients soient automatiquement redirigés sur la version chiffrée. Pour cela, il suffit d'ajouter ceci au sein de votre fichier .htaccess (ou de le créer à la racine de votre site s'il n'existe pas) :
-
+Nous vous conseillons, si la version HTTPS de votre site fonctionne correctement, de créer une redirection afin que tous vos clients soient automatiquement redirigés sur la version chiffrée. Pour cela, vous trouverez ci-dessous un exemple de script à insérer au sein d'un fichier .htaccess afin de vous aider dans votre démarche mais il ne se substitue pas à l’aide d’un webmaster.
 
 ```bash
 RewriteEngine On
@@ -19,9 +18,14 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.votredomaine.fr/$1 [R=301,L]
 ```
 
-Si vous utilisez un CMS, il se peut qu'il gére de manière native cette redirection. Consultez la documentation de votre CMS afin d'en savoir plus.
+Si vous utilisez un CMS (comme un WordPerss par exemple), il se peut que celui-ci gére de manière native cette redirection. Consultez la documentation de votre CMS afin d'en savoir plus.
 
 Cependant, le fonctionnement de votre site peut être altéré si vous utilisez votre certificat SSL. Avant de communiquer dessus, vérifier que votre site ne tombe pas dans les erreurs courantes liées au déploiement du SSL, rendez-vous pour cela sur ce guide : [Éviter les pièges du SSL avec mon site web](https://docs.ovh.com/fr/hosting/eviter-les-pieges-du-ssl-avec-mon-site-web/){.external}.
+
+> [!warning]
+>
+> La modification des fichiers d'un site internet requiert des compétences en programmation. Nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
+>
 
 ### Certificats SSL payants
 Nous proposerons prochainement des certificats SSL payants (de type DV, OV et EV) vous permettant de disposer d'un meilleur chiffrement ou une vérification des données par les registres de certificats par exemple.
@@ -123,17 +127,6 @@ Si aucun de vos multisites sur cet hébergement n'a de certificat SSL généré.
 Le fonctionnement de votre site peut être altéré si vous utilisez votre certificat SSL. Avant de communiquer dessus, vérifier que votre site ne tombe pas dans les erreurs courantes liées au déploiement du SSL de type mixed content ou duplicate content.
 
 Retrouvez plus d'information à ce sujet sur [Éviter les pièges du SSL avec mon site web](https://docs.ovh.com/fr/hosting/eviter-les-pieges-du-ssl-avec-mon-site-web/){.external}.
-
-## Astuce
-
-### Utiliser par defaut HTTPS
-Pour que votre site utilise par défaut une URL en HTTPS, il suffit d'ajouter ceci au sein de votre fichier .htaccess (ou de le créer à la racine de votre site s'il n'existe pas) :
-
-```bash
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.votredomaine.fr/$1 [R,L]
-```
 
 <a name="IMPORT_SSL"></a>
 

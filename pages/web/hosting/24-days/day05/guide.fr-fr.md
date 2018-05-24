@@ -1,14 +1,21 @@
 ---
-title: Mettre en ligne son site avec FTP
+title: 'Mettre en ligne son site avec FTP'
 slug: day05
-excerpt: Comment mettre en ligne son site web
-section: Cas d'usage
+excerpt: 'Comment mettre en ligne son site web'
+section: 'Cas d''usage'
 hidden: true
 ---
 
 Le blog de mypersonaldomain.ovh est en place, les équipes communication ont rédigé le premier billet du blog et il va parler de la révolution à venir dans les sites de petites annonces... Sauf que la page d'accueil de mypersonaldomain.ovh n'est pas encore prête. Il est temps de mettre en ligne notre page d'attente !
 
 Lorsque vous achetez un nom de domaine avec un hébergement web chez OVH, une page temporaire est mise en place tant que vous n’avez pas publié votre site. Bien entendu, promouvoir son site avant même de le mettre en ligne et de le personnaliser ne paraît pas très professionnel... C’est pour cela que mypersonaldomain.ovh a décidé de mettre en ligne une page d’accueil temporaire en attendant sa sortie officielle.
+
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 ## Créer sa premiere page web
 Lors du [premier jour](../day01/guide.fr-fr.md){.ref} de ce calendrier, nous avons vu que le serveur retourne des documents que le navigateur est en mesure d’interpréter. Généralement, il utilise trois langages :
