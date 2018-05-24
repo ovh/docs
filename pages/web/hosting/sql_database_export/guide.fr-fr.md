@@ -1,258 +1,173 @@
 ---
-title: Exportation des bases de données
+title: 'Récupérer la sauvegarde de la base de données d''un hébergement web'
 slug: exportation-bases-donnees
-legacy_guide_number: 1394
-excerpt: Vous trouverez dans ce guide differentes manieres d'exporter votre base de donnees depuis nos serveurs.
-section: Bases de données
+excerpt: 'Découvrez comment récupérer la sauvegarde d''une base de données de votre hébergement web OVH'
+section: 'Bases de données'
+order: 3
 ---
 
+**Dernière mise à jour le 24/05/2018**
 
-## Généralités
+## Objectif
 
-### Pre-requis
-Vous devez avoir en votre possession :
+Aujourd'hui utilisées par la quasi-totalité des systèmes de gestion de contenu (Content Management System ou CMS) comme WordPress, Joomla!, les bases de données permettent de stocker des éléments dits dynamiques comme des commentaires ou des articles par exemple. Pour diverses raisons, vous pouvez être amené à devoir réaliser une sauvegarde de votre base de données afin d'en récupérer le contenu.
 
-- Un accès à votre espace client.
-- Votre identifiant et le mot de passe de la base de données SQL ainsi que l'hôte sql qui vous permettent de vous y connecter.
+**Découvrez comment récupérer la sauvegarde d'une base de données de votre hébergement web OVH.**
 
+## Prérequis
 
-![hosting](images/1833.png){.thumbnail}
+- Disposer d'une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Selon la méthode de sauvegarde utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} ou des informations permettant de se connecter à la base de données.
 
+## En pratique
 
-## Exportation
+Avant de commencer cette manipulation, vous devez définir la méthode que vous allez utiliser pour récupérer la sauvegarde de la base de données. Plusieurs possibilités s’offrent à vous, suivant les compétences techniques dont vous disposez sur le sujet.
 
-### Depuis l'espace client
-Il vous est possible de récupérer la copie de votre base de données depuis l'espace client.
+- **Utiliser l'outil de sauvegarde d'OVH** : cette solution vous permet de récupérer des sauvegardes de vos bases de données depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Il s'agit de la solution la plus accessible, car elle ne demande pas de compétences techniques particulières.
 
-Ceci est la méthode la plus simple et la plus rapide afin de réaliser l'exportation de votre base de données.
+- **Réaliser la sauvegarde depuis l'interface web phpMyAdmin** : cette solution nécessite de se connecter à l'interface phpMyAdmin pour effectuer la manipulation. Savoir maîtriser cette dernière est donc nécessaire pour pouvoir l'utiliser.
 
-Vous devez dans un premier temps vous connecter à [l'espace client](https://www.ovh.com/manager/web){.external}.
+- **Utiliser un script réalisant la sauvegarde** : cette solution nécessite de créer un script enregistré sur votre hébergement web OVH, afin de pouvoir réaliser la sauvegarde. Des connaissances spécifiques pour cette création sont nécessaires.
 
-Une fois connecté à l'espace client, sélectionnez votre hébergement dans la section hébergement. Dans la partie "Hébergement" sélectionnez l'hébergement concerné puis onglet "Gestion SQL".
+- **Réaliser la sauvegarde depuis une commande SSH** : cette solution nécessite de vous connecter à votre espace de stockage via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
 
-*En fonction de la taille de votre base de données, la création de la sauvegarde de votre base peut être plus ou moins longue.*
+Certaines des méthodes ci-dessus ne sont pas inhérentes à une interface OVH. Vous devrez donc, pour ces dernières, réaliser la manipulation selon vos propres connaissances. Quelques informations sont présentes ci-dessous, mais elles ne peuvent se substituer à l’aide d’un webmaster. 
 
+Poursuivez la lecture de cette documentation selon la méthode de sauvegarde souhaitée.
 
-![hosting](images/2698.png){.thumbnail}
+> [!warning]
+>
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d’en assurer le bon fonctionnement.
+>
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d’informations dans la section « Aller plus loin » de ce guide.
+>
 
-Cliquez ensuite sur "la roue crantée" à droite de la base concerné puis créer un dump.
+### Récupérer une sauvegarde via l'outil d'OVH
 
-La liste des bases de données apparaît dans le tableau (cf. screen ci-contre).
+Pour accéder à l'outil de sauvegarde d'OVH, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
+Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, vous pourrez choisir de réaliser une nouvelle sauvegarde ainsi que d'en récupérer une via deux manipulations distinctes.
 
-![hosting](images/2699.png){.thumbnail}
+#### Étape 1 : effectuer une nouvelle sauvegarde de la base de données
 
-Vous devez ensuite sélectionner la date de votre backup: Maintenant, Hier, la semaine dernière.
+Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur les trois points à droite de la base de données dont vous souhaitez réaliser une sauvegarde, puis sur `Créer une sauvegarde`{.action}.
 
-Trois dates de sauvegarde sont récupérables :
+![databasedump](images/database-dump-step2.png){.thumbnail}
 
-- Maintenant : copie de la base de données à l'instant T.
-- Hier : copie de la base de données de la nuit (J-0), la sauvegarde récupérée est réalisés aux alentours de 3h du matin.
-- La semaine dernière : copie de la base de données à J-7, la sauvegarde récupérée est réalisée aux alentours de 3h du matin.
+Sur la fenêtre qui apparaît, sélectionnez la date souhaitée de la sauvegarde, puis cliquez sur le bouton `Suivant`{.action}. Assurez-vous que les informations dans le récapitulatif sont correctes, puis cliquez sur `Valider`{.action} pour initier la manipulation.
 
-Cliquez sur "Suivant" puis "Valider"pour lancer le rapatriement de votre sauvegarde SQL.
+Patientez le temps que la sauvegarde se réalise. Dès que celle-ci est disponible, vous pourrez la récupérer.
 
-Une fois validé, il vous faut patienter le temps que votre dump* soit rapatrié, ensuite vous recevrez un mail avec un lien permettant de télécharger le fichier de sauvegarde (dump).
+![databasedump](images/database-dump-step3.png){.thumbnail}
 
-Voici un exemple du sujet de l'e-mail reçu :
+#### Étape 2 : récupérer une sauvegarde de la base de données
 
+Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur les trois points à droite de la base de données dont vous souhaitez récupérer une sauvegarde, puis sur `Restaurer une sauvegarde`{.action}.
 
-```bash
-[OVH-SQL] testovh.ovh - Dump de votre base: testovhmod1
+![databasedump](images/database-dump-step4.png){.thumbnail}
+
+Le tableau qui s'affiche contient toutes les sauvegardes disponibles de la base de données sélectionnée. Vous pourrez y visionner la date précise des sauvegardes ainsi que celle à laquelle ces dernières seront supprimées de l'outil d'OVH.
+
+Pour télécharger une sauvegarde, cliquez sur les trois points à droite de celle que vous souhaitez récupérer, puis sur `Télécharger la sauvegarde`{.action}. Une fenêtre vous invitant à l'enregistrer sur votre machine apparaît. Acceptez, puis patienter le temps que la sauvegarde soit téléchargée.
+
+![databasedump](images/database-dump-step5.png){.thumbnail}
+
+### Récupérer une sauvegarde depuis l'interface web phpMyAdmin
+
+Pour réaliser la manipulation, vous devez vous connecter à phpMyAdmin. Pour connaître le lien d'accès à ce dernier, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+
+Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Cliquez dans ce dernier sur les trois points à droite de la base de données concernée puis sur `Accéder à phpMyAdmin`{.action}.
+
+![databasedump](images/database-dump-step6.png){.thumbnail}
+
+Une fois sur la page de phpMyAdmin, renseignez les informations de la base de données, choisissez dans le menu déroulant si vous souhaitez afficher les données actuelles de la base de données ou celles d'une sauvegarde antérieure, puis connectez-vous. Une fois connecté, rendez-vous à présent sur l'onglet `Exporter`{.action} où deux méthodes d'exportation sont proposées :
+
+- **méthode rapide** : vous pouvez définir le format d'export de la sauvegarde. Le plus courant est le format SQL, mais d'autres sont proposés selon vos besoins ;
+
+- **méthode personnalisée** : vous pouvez définir en détail les paramètres d'exportation de la sauvegarde.
+
+> [!warning]
+>
+> L'interface phpMyAdmin n'ayant pas été créée par OVH, vous devrez réaliser la manipulation selon vos propres connaissances. Nous vous recommandons de faire appel à un prestataire spécialisé et/ou de vous rapprocher du site l’éditeur de l'interface si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
+>
+
+### Récupérer une sauvegarde en utilisant un script
+
+La manipulation s'effectue en plusieurs étapes. Assurez-vous d'être en possession des informations permettant de se connecter à la base de données dont vous souhaitez réaliser la sauvegarde : un nom d’utilisateur, son mot de passe, le nom de la base de données ainsi que l’adresse du serveur.
+
+> [!warning]
+>
+> Cette solution est technique et requiert des compétences en programmation. Quelques informations sur la manière de procéder sont présentes ci-dessous. Cependant, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
+>
+
+#### Étape 1 : créer le script de sauvegarde
+
+La première étape consiste à créer le script qui permettra de réaliser la sauvegarde de la base de données. Vous trouverez ci-dessous un exemple de script pouvant vous aider dans votre démarche mais il ne se substitue pas à l’aide d’un webmaster.
+
+```php
+<?
+system("mysqldump --host=adresse_du_serveur --user=nom_utilisateur --password=mot_de_passe_utilisateur nom_base_de_données > nom_fichier_sauvegarde.sql");
+?>
 ```
 
-Un lien vers le fichier de sauvegarde sera disponible dans l'e-mail. La sauvegarde de votre base sera disponible sur un serveur distant pendant une durée de  **30**  jours.
+Prenez soin de remplacer les informations génériques dans ce script par les informations de la base de données concernée en vous aidant des éléments ci-dessous. Une fois le script terminé, nous vous conseillons de le nommer « sauvegarde.php » par exemple.
 
-Le fichier reçu sera compressé, il est conseillé de le décompresser avant d'importer votre fichier de sauvegarde SQL.
+|Informations|À remplacer par|
+|---|---|
+|adresse_du_serveur|L'adresse du serveur de la base de données concernée.|
+|nom_utilisateur|Le nom d'utilisateur disposant d'un accès à la base de données.|
+|mot_de_passe_utilisateur|Le mot de passe du nom d'utilisateur indiqué précédemment.|
+|nom_base_de_données|Le nom de la base de données concernée.|
+|nom_fichier_sauvegarde|Le nom que portera le fichier de sauvegarde une fois cette dernière exécutée.|
 
-
-![hosting](images/2700.png){.thumbnail}
-
-
-### Depuis PhpMyAdmin
-Si vous souhaitez réaliser l'exportation de la base de données depuis **PhpMyAdmin** .
-
-Vous devez dans un premier temps vous connecter sur [l'interface de PhpMyAdmin](https://phpmyadmin.ovh.net/){.external}. Une fois connecté, sélectionnez votre base de données (cf. cadre bleu screen ci-contre).
-
-Rendez-vous ensuite dans "Exporter".
-
-L'exportation rapide ne vous permet que de choisir le format concernant l'importation de votre base de données.
-
-Voyons dans la seconde partie l'exportation personnalisée qui sera plus complète.
-
-
-![hosting](images/1963.png){.thumbnail}
-
-Une fois connecté, sélectionnez votre base de données.
-
-Rendez-vous ensuite dans "Exporter".
-
-Sélectionnez "Personnalisée - afficher toutes les options possibles".
-
-*Différentes options vont apparaître.*
-
-**Table(s)** :
-
-Il vous est possible de sélectionner la totalité ou une partie des tables que vous souhaitez exporter.
-
-*Cela peut être intéressant lorsque votre base de données est très imposante, vous pouvez exporter puis importer votre base de données en plusieurs fois.*
-
-**Sortie** :
-
-Il vous est possible de définir ici si vous souhaitez générer votre sauvegarde SQL dans un fichier externe, ou afficher directement le résultat de la requête qu'il faudra copier.
-
-**Format** :
-
-Définissez le format d'exportation de votre base de données. Il est conseillé de laisser SQL.
-
-**Options spécifiques au format** :
-
-Il vous est possible de définir ce que vous souhaitez exporter de la table. Soit uniquement les structures ou les données, ou alors exporter les deux. Il est conseillé de renseigner "structure et données".
-
-**Options d'exportation** :
-
-Sélectionnez l'option d'exportation "Aucun des modes ci-dessus" afin d'éviter l'erreur associé au "Max_Allowed_Packet".
-
-*Ne seront vues dans ce guide que les options les plus importantes.*
-
-Afin de lancer l'exportation, cliquez sur "Exécuter".
-
-
-![hosting](images/1964.png){.thumbnail}
-
-Un lien vers votre dump* va ainsi pouvoir être téléchargé.
-
-Enregistrez le fichier que PhpMyAdmin vous propose de télécharger.
-
-
-![hosting](images/1848.png){.thumbnail}
-
-
-
-> [!success]
+> [!primary]
 >
-> - Il est possible depuis PhpMyAdmin de récupérer une sauvegarde de la
-> veille et de la semaine dernière depuis l'accueil de phpMyAdmin via
-> un menu déroulant.
->
-
-### En utilisant un script
-*Il vous est possible de créer ces scripts dans un fichier txt. Vous devrez leur donner l'extension correspondant au langage utilisé.*
-
-Cette solution est intéressante, car elle vous permet d'exporter des dumps* importants et est accessible pour tous les hébergements mutualisés.
-
-Dans les scripts ci-dessous, remplacez :
-
-- nom_de_la_base.sql par le nom de votre fichier.
-- serveur_sql par le nom du serveur sur lequel votre base de données est créé .
-- nom_de_la_base par le nom de votre base de données.
-- mot_de_passe par le mot de passe associé à votre base de données.
-- Uploadez via FTP le script que vous avez créé dans le répertoire www de votre hébergement, et appelez votre script avec le navigateur via cette url : [http://votre_domaine.com/backupbase.php](http://votre_domaine.com/backupbase.php){.external}
-
-**backupbase.php**  par le nom de votre fichier.
-
-Cette commande générera un ficher  **nom_de_la_base.sql**  dans le répertoire où le script est placé.
-
-Dans ce fichier, vous trouverez toutes les instructions SQL pour recréer la base telle qu'elle était lors de la sauvegarde avec l'ensemble de ses données.
-
-
-
-> [!success]
->
-> - Remarque 1 : Si jamais votre base est trop volumineuse, vous pouvez
-> faire un dump* table par table en ajoutant l'option "--tables
-> nom_de_la_table" à la fin pour avoir cette commande :
+> Vous pouvez réaliser une sauvegarde à partir d'une date antérieure en ajoutant un port dans votre script. Pour une sauvegarde à la date d'hier, utilisez le port « 3307 ». Pour une sauvegarde d'il y a sept jours, utilisez le port « 3317 ». 
 > 
-> mysqldump --host=serveur_sql --user=nom_de_la_base --password=mot_de_passe nom_de_la_base --tables nom_de_la_table > nom_de_la_base.sql
-> - Remarque 2 : Vous pouvez aussi compresser ce fichier pour mieux le
-> télécharger sur votre ordinateur (par FTP ou par le web).
-> 
-> Pour compresser le fichier, exécutez la commande gzip ce qui créera le fichier par l'extension .sql.gz :
-> system("gzip nom_de_la_base.sql");
-> 
-
-
-### Via une commande ssh
-- Récupérez votre identifiant et le mot de passe FTP qui vous permettent de vous connecter sur l'hébergement web.
-- Avoir une offre permettant l'accès via ssh ( [voir les
-caractéristiques de nos
-offres](https://www.ovh.com/fr/hebergement-web/){.external} )
-- [Connexion ssh mutualisé](http://guide.ovh.net/SshMutualise){.external}
-
-Connectez-vous en ssh à votre hébergement mutualisé.
-
-Dirigez-vous dans le répertoire voulu pour stocker la sauvegarde, et lancez cette commande :
-
-*Le code à renseigner et à compléter :*
-
-
-```bash
-mysqldump --host=serveur_sql --user=nom_de_la_base --password=mot_de_passe nom_de_la_base > nom_de_la_base.sql
-```
-
-*Le code complété en exemple :*
-
-
-```bash
-mysqldump --host=sql3 --user=testbackup --password=RtPgDsmL testbackup > testbackup.sql
-```
-
-
-### Depuis le service SQL privé
-Un guide concernant l'importation d'une base de données est disponible à ce niveau :
-
-- []({legacy}2023){.ref}
-
-
-## Informations utiles
-
-### Sauvegarde - Backup
-Si vous souhaitez récupérer une sauvegarde de l'une de vos bases de données à une date antérieure via l'utilisation d'un script, vous devrez préciser un numéro de port spécifique :
-
-Copie actuelle =  **3306** Hier =  **3307** Semaine dernière =  **3317**
-
-Exemple de code qu'il est possible d'utiliser :
-
-PHP :
-
-
-```bash
-system("mysqldump --host=serveur_sql --user=nom_de_la_base --password=mot_de_passe --port=3317 nom_de_la_base > nom_de_la_base.sql ");
-```
-
-
-
-> [!success]
->
-> - Ce système de backup est disponible pour les bases de données avec la
-> version Mysql5 minimum.
+> À noter que l'utilisation du port « 3306 » permettra de réaliser une sauvegarde des données actuellement présentes dans la base de données.
 >
 
-### Erreurs &quot;Max_Allowed_Packet&quot; lors de l'import du dump*
-Lors d'un dump*, il peut être intéressant de personnaliser l'export de votre base de données SQL via PhpMyAdmin.
+#### Étape 2 : télécharger le script sur l'espace de stockage
 
-Le but est d'éviter que tout le contenu d'une table soit ajouté via un seul "**INSERT INTO**" pour éviter les erreurs liées à la variable serveur "**Max_Allowed_Packet**" lors de l'import du dump* si le contenu de cette table est important.
+Une fois le script de sauvegarde correctement créé, vous devez le télécharger sur l'espace de stockage de votre hébergement web. Pour cela, vous devrez vous connecter à ce dernier. Si vous ne savez pas comment faire, reportez-vous aux informations décrites dans l'étape 2 de la documentation intitulée « [Se connecter à l’espace de stockage](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#2-se-connecter-a-lespace-de-stockage){.external} ».
 
-Exemple, si la table A contient 500 lignes, au lieu d'avoir un seul "INSERT INTO" pour les 500 lignes, il y aura à la place 500 "INSERT INTO".
+Afin de pouvoir mener à bien les étapes suivantes, téléchargez le script dans le dossier « www ». **Nous vous invitons à être particulièrement attentif quant au nom du fichier du script de sauvegarde.** Assurez-vous de ne pas écraser un fichier déjà existant portant le même nom sur l'espace de stockage lorsque vous allez télécharger le script. Si un message d'avertissement de ce type apparaît, modifiez le nom du script nouvellement créé pour un autre puis tentez de nouveau de le télécharger.
 
-**Via PhpMyAdmin** :
+#### Étape 3 : appeler le script
 
-Pour cela lors de votre export dans PhpMyAdmin, cochez l'option de création de données "Aucun des modes ci-dessus" afin d'éviter l'erreur associée au "Max_Allowed_Packet".
+À présent que le script est téléchargé sur l'espace de stockage, il ne reste plus qu'à initier le code présent dans celui-ci. Pour cela, il est nécessaire d'appeler le script.
 
-**En ssh** :
+Pour effectuer cette manipulation, vous devez accéder depuis votre navigateur internet à l'adresse URL complète du script (par exemple : mypersonaldomain.ovh/sauvegarde.php si vous avez nommé votre script « sauvegarde.php »). Si les informations renseignées dans le script sont correctes, la sauvegarde s'initie. Il ne vous reste plus qu'à patienter quelques instants le temps qu'elle s'exécute. Si ce n'est pas le cas, vérifiez les informations renseignées dans le script puis tentez de nouveau la manipulation.
 
-Vous devez utiliser l'option --*skip-extended-insert*.
+#### Étape 4 : récupérer la sauvegarde depuis l'espace de stockage
 
-L'option --extended-insert, incluse dans l'option --opt (Activée par  défaut), génère un unique INSERT INTO pour tout une table, il faut donc désactiver cette option grâce au :
+Une fois la sauvegarde réalisée, vous pouvez la récupérer dans le dossier où le script de sauvegarde a été téléchargé. La sauvegarde de la base de données doit porter le nom qui a été défini précédemment dans le script. Il ne vous reste donc plus qu'à récupérer la sauvegarde sur votre propre machine.
 
+Avant de terminer, nous vous conseillons vivement de supprimer le fichier de sauvegarde ainsi que le script du répertoire « www ».
 
-```bash
---skip-extended-insert
+> [!primary]
+>
+> L'utilisation d'un script de sauvegarde et des tâches planifiées (dites « CRON ») peuvent vous permettre d'automatiser des sauvegardes à une fréquence de votre choix. Apprenez-en plus sur les tâches planifiées via notre documentation : « [Mettre en place une tâche planifiée (CRON) sur son hébergement web](https://docs.ovh.com/fr/hosting/mutualise-taches-automatisees-cron/){.external} ».
+>
+
+### Récupérer une sauvegarde via une commande SSH
+
+Pour réaliser la manipulation, vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage.
+
+> [!warning]
+>
+> Des connaissances plus avancées sont nécessaires pour utiliser ce type d’accès. Quelques informations sur comment procéder sont présentes ci-dessous, cependant, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
+>
+
+Une fois connecté à votre espace de stockage via une connexion en SSH, vous devez utiliser une commande permettant de réaliser la sauvegarde de la base de données. Vous en trouverez une ci-dessous pouvant vous aider dans votre démarche. Prenez en compte que la sauvegarde sera réalisée dans le répertoire actif au moment où vous enverrez la commande dans votre terminal.
+
+```sh
+mysqldump --host=adresse_du_serveur --user=nom_utilisateur --password=mot_de_passe_utilisateur nom_base_de_données > nom_fichier_sauvegarde.sql
 ```
 
+Prenez soin de remplacer les informations génériques dans ce script par les informations de la base de données concernée. Une fois la sauvegarde réalisée, il ne vous reste plus qu'à la récupérer sur votre propre machine.
 
-![hosting](images/1965.png){.thumbnail}
+## Aller plus loin
 
-
-### Lexique
-dump* : *fichier de sauvegarde de la base de données de votre site.*
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
