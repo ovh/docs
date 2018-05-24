@@ -1,10 +1,17 @@
 ---
-title: Activer HTTPS
+title: 'Activer HTTPS'
 slug: day16
-excerpt: Depuis cette année, avoir son site en HTTPS est devenu la nouvelle norme !
-section: Cas d'usage
+excerpt: 'Depuis cette année, avoir son site en HTTPS est devenu la nouvelle norme !'
+section: 'Cas d''usage'
 hidden: true
 ---
+
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 Depuis le début de l'année 2016 et l'arrivée de Let's Encrypt, qui fournit des certificats cryptographiques gratuitement, le HTTPS est devenu la nouvelle norme. C'est pourquoi OVH a choisi de s'associer avec Let's Encrypt et de proposer par défaut le HTTPS sur tous les sites hébergés sur l’hébergement web.
 

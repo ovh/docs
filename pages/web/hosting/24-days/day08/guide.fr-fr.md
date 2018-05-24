@@ -1,10 +1,17 @@
 ---
-title: Utiliser les SQL Privé
+title: 'Utiliser les SQL Privé'
 slug: day08
-excerpt: Tenir la charge en cas de pic daffluence
-section: Cas d'usage
+excerpt: 'Tenir la charge en cas de pic daffluence'
+section: 'Cas d''usage'
 hidden: true
 ---
+
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 Pour déployer mypersonaldomain.ovh, nous nous sommes basés sur des bases de données mutualisées incluses dans notre offre d’hébergement web. Cependant, ces bases de données possèdent des limites en termes de nombre de connexions simultanées, que les pics de charges prévus sur mypersonaldomain.ovh risquent d’outrepasser.
 

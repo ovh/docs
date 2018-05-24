@@ -1,8 +1,8 @@
 ---
-title: Créer le blog d’entreprise
+title: 'Créer le blog d’entreprise'
 slug: day04
-excerpt: Ouvrir un blog pour communiquer
-section: Cas d'usage
+excerpt: 'Ouvrir un blog pour communiquer'
+section: 'Cas d''usage'
 hidden: true
 ---
 
@@ -12,6 +12,12 @@ Sur ce blog, l’équipe parlera des coulisses du développement du site, ainsi 
 
 Après la lecture du [jour 2](../day02/guide.fr-fr.md){.ref}, l’équipe a décidé d’ouvrir le blog sur le sous-domaine blog.mypersonaldomain.ovh, mais aussi d’enregistrer le domaine rondcoin.tech  et de le rediriger vers le blog.
 
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 ## Quelle technologie de blog choisir ?
 L’équipe de Rondcoin a longuement débattu de la technologie de blog à utiliser. Il en existe beaucoup en open source que les équipes peuvent installer sur un hébergement web OVH.

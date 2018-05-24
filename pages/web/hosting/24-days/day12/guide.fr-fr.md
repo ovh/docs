@@ -1,10 +1,17 @@
 ---
-title: Et les backups ?
+title: 'Et les backups ?'
 slug: day12
-excerpt: Mieux vaut prevenir que guerir
-section: Cas d'usage
+excerpt: 'Mieux vaut prevenir que guerir'
+section: 'Cas d''usage'
 hidden: true
 ---
+
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 Notre site web est en production et les petites annonces affluent. Cela laisse désormais un peu de temps à nos équipes techniques afin de se préparer au pire : remettre le site en marche après un incident. En effet, des attaques visant à effacer le site, ou encore des erreurs humaines peuvent toujours arriver.
 

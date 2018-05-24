@@ -1,9 +1,16 @@
 ---
-title: Les bases des sites web
+title: 'Les bases des sites web'
 slug: day01
-excerpt: Présentation et retour sur les fondamentaux d’un site web
-section: Cas d'usage
+excerpt: 'Présentation et retour sur les fondamentaux d’un site web'
+section: 'Cas d''usage'
 ---
+
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 ## Comment fonctionne un site web ?
 Naviguer sur Internet est une activité quotidienne pour la plupart des gens, mais le fonctionnement des sites web reste une science obscure pour beaucoup. Afin que votre ordinateur ou que votre tablette puisse naviguer sur un site web, trois éléments sont nécessaires : un navigateur web, un serveur contenant le site web et une connexion à Internet pour faire le lien entre les deux.

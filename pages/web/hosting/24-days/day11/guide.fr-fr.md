@@ -1,10 +1,17 @@
 ---
-title: Comment déployer une API ?
+title: 'Comment déployer une API ?'
 slug: day11
-excerpt: Fournir des outils aux développeurs tiers pour interagir avec son application
-section: Cas d'usage
+excerpt: 'Fournir des outils aux développeurs tiers pour interagir avec son application'
+section: 'Cas d''usage'
 hidden: true
 ---
+
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 De nombreuses plateformes en ligne proposent des API pour interagir avec leurs applications. Les avantages liés à la mise à disposition d’une API pour les développeurs tiers sont nombreux : intégration des services sur d’autres sites et applications mobiles, échanges de données, ajout de fonctionnalités à valeur ajoutée par l’intermédiaire de services complémentaires... Rondcoin a décidé d'ouvrir son API pour créer des applications mobiles exploitant la même base de données que celle du site.
 

@@ -1,14 +1,21 @@
 ---
-title: Configurer et utiliser une base de données
+title: 'Configurer et utiliser une base de données'
 slug: day06
-excerpt: Comment utiliser une base de donnees ?
-section: Cas d'usage
+excerpt: 'Comment utiliser une base de donnees ?'
+section: 'Cas d''usage'
 hidden: true
 ---
 
 Pour générer des pages de manière dynamique et sans qu'un humain ne mette à jour le site en FTP à chaque nouvelle publication, nous avons besoin d'une base de données afin d'y stocker les annonces.
 
 Hier, nous avons appris [comment déployer une page d’attente en FTP](https://docs.ovh.com/fr/hosting/24-days/day05/). Cette page était statique et impersonnelle : pas d’espace utilisateur, pas de possibilité pour le visiteur d’y apporter du contenu (en y postant une annonce par exemple).
+
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 ## Generation de page dynamique
 Le navigateur a besoin d’un contenu en HTML qu’il interprétera pour retranscrire les éléments sous la forme d’un site web. C’est donc ce que le serveur lui renvoie.

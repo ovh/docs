@@ -1,10 +1,17 @@
 ---
-title: Envoyer des newsletters avec Mailjet
+title: 'Envoyer des newsletters avec Mailjet'
 slug: day14
-excerpt: Tenez vos clients informes !
-section: Cas d'usage
+excerpt: 'Tenez vos clients informes !'
+section: 'Cas d''usage'
 hidden: true
 ---
+
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 Rondcoin a acquis une bonne base d’utilisateurs actifs et souhaite communiquer auprès d’eux au sujet des nouvelles fonctionnalités développées. Cependant, nous l'avons vu hier, l'envoi d'une newsletter via les hébergements web d’OVH peut avoir des effets secondaires. Pour cela, nous donnons aujourd'hui la parole à Mailjet qui se charge de ces envois pour vous.
 
