@@ -23,7 +23,7 @@ If you notice that a disk is faulty, or receive a notification email about a fau
 
 ## Requirements
 
-- You must be connected via SSH to your [OVH dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}, with *root access* (Linux).
+- You must be connected via SSH to your [OVH Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}, with *root access* (Linux).
 
 
 ## Instructions
@@ -139,7 +139,7 @@ root@rescue:~# nvme list
 
 #### Cold-swapping the disk (server downtime required)
 
-To request a disk replacement, you simply need to create a ticket through your [OVH control panel](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. You can speed up the process by providing the information required for the tests. Below is a list of what you will need to provide:
+To request a disk replacement, you simply need to create a ticket through your [OVH Control Panel](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. You can speed up the process by providing the information required for the tests. Below is a list of what you will need to provide:
 
 - **The serial number of the disk that needs to be replaced, as well as the serial numbers for all other disks that are working properly**. To retrieve the serial number of the disk that needs to be replaced, please follow [this guide](https://docs.ovh.com/gb/en/dedicated/find-disk-serial-number/){.external}. If, for any reason, you are unable to retrieve the disk’s serial number, please let us know in the ticket, and list the serial numbers of the disks that don’t need to be replaced. 
 
