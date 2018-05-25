@@ -16,7 +16,7 @@ At some point during the life of your server, you may encounter a fault due to a
 
 ## Requirements
 
-* You need to have access to your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager?action=gotomanager){.external}
+* You need to have access to your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 * You need to have access to your [dedicated server](https://www.ovh.com/asia/dedicated-servers/){.external}
 
 
@@ -24,7 +24,7 @@ At some point during the life of your server, you may encounter a fault due to a
 
 ### Activate rescue mode
 
-You can activate rescue mode by logging into your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager?action=gotomanager){.external}, and going to your server's page. Then go to `Server Status`{.action} > `General information`{.action} > `Boot`{.action} and click the `Edit`{.action} button to change the boot mode.
+You can activate rescue mode by logging into your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and going to your server's page. Then go to `Server Status`{.action} > `General information`{.action} > `Boot`{.action} and click the `Edit`{.action} button to change the boot mode.
 
 ![General Information](images/rescue-mode-01.png){.thumbnail}
 

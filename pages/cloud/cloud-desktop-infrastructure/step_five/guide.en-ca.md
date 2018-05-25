@@ -17,7 +17,7 @@ If you have followed the previous steps, you will have [created a pool](https://
 ## Requirements
 
 - You need to have either the VMware Horizon client or your browser open.
-- You need to know your access point's URL, which is available in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager?action=gotomanager){.external}.
+- You need to know your access point's URL, which is available in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - [Your user account must be authorised to access the desktop pool](https://docs.ovh.com/ca/en/cloud-desktop-infrastructure/assigning-desktop-access/){.external}.
 
 

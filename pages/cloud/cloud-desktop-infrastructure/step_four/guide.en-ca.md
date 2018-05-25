@@ -17,7 +17,7 @@ Now that you have [created your pool](https://docs.ovh.com/ca/en/cloud-desktop-i
 
 ## Requirements
 
-- You need to have created users in the Active Directory, if a [trust relationship has been created](https://docs.ovh.com/ca/en/cloud-desktop-infrastructure/approval-ad/){.external}, or created users via your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager?action=gotomanager){.external}.
+- You need to have created users in the Active Directory, if a [trust relationship has been created](https://docs.ovh.com/ca/en/cloud-desktop-infrastructure/approval-ad/){.external}, or created users via your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - You need to be logged in to the VMware Horizon 7.1 interface.
 
 
