@@ -1,11 +1,17 @@
 ---
-title: Conseils suite au piratage de votre site WordPress
+title: 'Conseils suite au piratage de votre site WordPress'
 slug: piratage-de-votre-site-wordpress-conseils-et-cas-dusages
 legacy_guide_number: 1874
-excerpt: Ce guide vous donne des conseils lorsque votre site WordPress s’est fait pirate
-section: Cas d'usage
+excerpt: 'Ce guide vous donne des conseils lorsque votre site WordPress s’est fait pirate'
+section: 'Cas d''usage'
 ---
 
+> [!warning]
+>
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+>
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+>
 
 ## Je me suis fait pirater &#58; que faire ?
 Vous disposez d'un site Wordpress hébergé chez OVH, et vous vous apercevez que votre site n'apparaît plus, ou qu'il est redirigé vers un autre site, ou encore votre site est rempli d'annonces intempestives.
