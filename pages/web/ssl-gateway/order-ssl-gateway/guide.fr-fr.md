@@ -1,10 +1,9 @@
 ---
-title: Commander un SSL Gateway
+title: 'Commander un SSL Gateway'
 slug: commander-un-ssl-gateway
-excerpt: Sécurisez les connexions vers votre site web
+excerpt: 'Sécurisez les connexions vers votre site web'
 section: Général
 ---
-
 
 ## Généralites
 
@@ -81,10 +80,7 @@ Une fois votre bon de commande validé, si vous n'avez pas coché la case de mod
 >> - Si votre identifiant est contact administrateur ou technique de cette zone DNS, une modification de celle-ci sera nécessaire dans votre espace client.
 >> - Si vous n'êtes pas contact de cette zone DNS, il vous faudra contacter la personne en charge de celle-ci afin de la modifier.
 >> 
->> > [!primary]
->> >
->> > Guide disponible : []({legacy}1604).
->> > 
+>> Reportez-vous aux instructions du guide « [Créer une zone DNS OVH pour un nom de domaine](https://docs.ovh.com/fr/domains/creer-une-zone-dns-pour-un-domaine-externe/){.external} » si nécessaire.
 >> 
 >
 > Cas 2 : votre zone DNS n'est pas gérée par les serveurs DNS mutualisés OVH.
