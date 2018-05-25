@@ -5,7 +5,7 @@ excerpt: This guide will give you a few tips to help you manage your newly-deliv
 section: Getting started
 ---
 
-**Last updated 2018/05/15**
+**Last updated 25/05/2018**
 
 ## Objective
 
@@ -16,8 +16,8 @@ A dedicated server is a physical server located in one of our datacentres. Unlik
 
 ## Requirements
 
-* A [dedicated server](https://www.ovh.com/ca/en/dedicated-servers/){.external} in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager?action=gotomanager){.external} with root to via SSH (Linux)
-* A [dedicated server](https://www.ovh.com/ca/en/dedicated-servers/){.external} in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager?action=gotomanager){.external} with administrative access via remote desktop (Windows).
+* A [dedicated server](https://www.ovh.com/asia/dedicated-servers/){.external} in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager?action=gotomanager){.external} with root to via SSH (Linux)
+* A [dedicated server](https://www.ovh.com/asia/dedicated-servers/){.external} in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager?action=gotomanager){.external} with administrative access via remote desktop (Windows).
 
 
 ## Instructions
@@ -65,7 +65,7 @@ Follow the rest of the instructions on the screen, then click `Confirm`{.action}
 
 > [!primary]
 >
-> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVH](https://www.ovh.com/ca/en/dedicated-servers/distributions/){.external}, or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [control panel](https://ca.ovh.com/auth/?action=gotomanager?action=gotomanager){.external}. You can manage your licences via the [control panel](https://ca.ovh.com/auth/?action=gotomanager?action=gotomanager){.external}, under `Dedicated`{.action}, then `Licences`{.action}. In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Add an SPLA licence`{.action} button on the right).
+> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVH](https://www.ovh.com/asia/dedicated-servers/distributions/){.external}, or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [control panel](https://ca.ovh.com/auth/?action=gotomanager?action=gotomanager){.external}. You can manage your licences via the [control panel](https://ca.ovh.com/auth/?action=gotomanager?action=gotomanager){.external}, under `Dedicated`{.action}, then `Licences`{.action}. In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Add an SPLA licence`{.action} button on the right).
 > 
 
 
@@ -87,13 +87,13 @@ Network bridging is the action taken by network equipment to create an aggregate
 
 The Network Bridge configuration is most commonly used in the context of virtualisation, to allow each Virtual Machine to have its own public IP address.
 
-For more information on network bridging, please refer to our guide: [Network Bridging](https://docs.ovh.com/ca/en/dedicated/network-bridging/){.external}.
+For more information on network bridging, please refer to our guide: [Network Bridging](https://docs.ovh.com/asia/en/dedicated/network-bridging/){.external}.
 
 #### IP aliasing
 
 IP aliasing is the process of associating two or more IP addresses to the same network interface. This allows your server to establish multiple connections to a network, each serving a different purpose.
 
-For detailed instructions on how to configure IP aliasing, please refer to [this guide](https://docs.ovh.com/ca/en/dedicated/network-ipaliasing/){.external}.
+For detailed instructions on how to configure IP aliasing, please refer to [this guide](https://docs.ovh.com/asia/en/dedicated/network-ipaliasing/){.external}.
 
 #### IPv6 configuration
 
@@ -103,7 +103,7 @@ All OVH dedicated servers are delivered with a /64 IPv6 block. To use the addres
 
 OVH deploys all its dedicated servers with an IPMI (Intelligent Platform Management Interface) console, which runs in your browser or from a Java applet, and enables you to connect directly to your server, even if it has no network connection. This makes it good for troubleshooting issues that may have taken your server offline.
 
-For more information, please refer to our guide: [Using the IPMI with dedicated servers](https://docs.ovh.com/ca/en/dedicated/use-ipmi-dedicated-servers/){.external}.
+For more information, please refer to our guide: [Using the IPMI with dedicated servers](https://docs.ovh.com/au/en/dedicated/use-ipmi-dedicated-servers/){.external}.
 
 ### Rescue mode
 
@@ -123,7 +123,7 @@ Confirm your options on the next screen and then reboot your server to apply the
 
 Your server will now reboot into rescue mode, and you will receive the credentials for logging in via the email address you provided. To exit rescue mode, simply change the boot mode back to boot on the hard disk, then reboot your server.
 
-To learn more about how you can use rescue mode to resolve issues with your server, please refer to our guide: [Rescue mode](https://docs.ovh.com/ca/en/dedicated/rescue-mode/){.external}.
+To learn more about how you can use rescue mode to resolve issues with your server, please refer to our guide: [Rescue mode](https://docs.ovh.com/au/en/dedicated/ovh-rescue/){.external}.
 
 
 #### Hardware diagnosis

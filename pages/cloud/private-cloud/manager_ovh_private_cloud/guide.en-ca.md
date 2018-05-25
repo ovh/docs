@@ -15,7 +15,7 @@ In your OVH Control Panel, you can choose from many Private Cloud settings optio
 
 ## Requirements
 
-- You must be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/){.external}. Go to the `Dedicated`{.action} section, then select `Private Cloud`{.action}.
+- You must be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Go to the `Dedicated`{.action} section, then select `Private Cloud`{.action}.
 - You must have a [Private Cloud](https://www.ovh.com/ca/en/private-cloud/){.external} product.
 
 
@@ -23,7 +23,7 @@ In your OVH Control Panel, you can choose from many Private Cloud settings optio
 
 ### General tab
 
-Once you have clicked `Dedicated`{.action}, and opened the `Private Cloud`{.action} section of your [OVH Control Panel](https://ca.ovh.com/auth){.external}, you will see a general overview of your Private Cloud:
+Once you have clicked `Dedicated`{.action}, and opened the `Private Cloud`{.action} section of your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, you will see a general overview of your Private Cloud:
 
 ![General information](images/manager_general.png){.thumbnail}
 
