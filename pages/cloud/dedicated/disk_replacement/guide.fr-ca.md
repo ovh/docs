@@ -1,11 +1,11 @@
 ---
-title: 'Remplacer un disque défectueux'
-slug: disk-replacement
-excerpt: 'Découvrez comment identifier un disque défectueux et demander son remplacement'
-section: 'RAID & disques'
+title: Remplacer un disque défectueux
+slug: remplacement-disque
+excerpt: Découvrez comment identifier un disque défectueux et demander son remplacement
+section: RAID & disques
 ---
 
-**Dernière mise à jour le 25/05/2018**
+**Dernière mise à jour le 2018/05/25**
 
 ## Objectif
 
@@ -22,7 +22,7 @@ Si vous constatez un défaut de disque ou que notre système vous a envoyé une 
 
 ## Prérequis
 
-- Être connecté en SSH à votre [serveur dédié OVH](https://www.ovh.com/fr/serveurs_dedies/){.external} avec l'accès *root* (Linux).
+- Être connecté en SSH à votre [serveur dédié OVH](https://www.ovh.com/ca/fr/serveurs-dedies/){.external} avec l'accès *root* (Linux).
 
 
 ## En pratique
@@ -119,7 +119,7 @@ Le numéro du RAID est à préciser (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAID, et
 
 #### Serveur avec un disque NVMe
 
-Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode [« Recue-pro »](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external} sur lequel l'outil **nvme-cli** est installé par défaut.
+Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode [« Recue-pro »](https://docs.ovh.com/ca/fr/dedicated/rescue-mode/){.external} sur lequel l'outil **nvme-cli** est installé par défaut.
 
 Il faudra alors utiliser la commande `nvme list` afin de récupérer les numéros de série de vos disques :
 
@@ -136,9 +136,9 @@ root@rescue:~# nvme list
 
 #### Remplacer le disque à froid (coupure du serveur requise)
 
-Pour demander le remplacement d'un disque, il vous suffit de créer un ticket auprès de notre support depuis votre [espace client OVH](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. Afin d'accélérer le processus, il convient de fournir les éléments liés aux tests. Voici un récapitulatif de ce qu'il faut :
+Pour demander le remplacement d'un disque, il vous suffit de créer un ticket auprès de notre support depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}. Afin d'accélérer le processus, il convient de fournir les éléments liés aux tests. Voici un récapitulatif de ce qu'il faut :
 
-- **le numéro de série du disque à remplacer ainsi que de tous les autres disques sains**. Pour récupérer le numéro de série du disque à remplacer, consultez [ce guide](https://docs.ovh.com/fr/dedicated/find-disk-serial-number/){.external}. Si, pour une raison ou une autre, il n'est pas possible d'extraire le numéro de série du disque, veuillez le notifier dans le ticket, et nous communiquer le numéro de série du ou des disques à ne pas remplacer. 
+- **le numéro de série du disque à remplacer ainsi que de tous les autres disques sains**. Pour récupérer le numéro de série du disque à remplacer, consultez [ce guide](https://docs.ovh.com/ca/fr/dedicated/trouver-serial-number-disque/){.external}. Si, pour une raison ou une autre, il n'est pas possible d'extraire le numéro de série du disque, veuillez le notifier dans le ticket, et nous communiquer le numéro de série du ou des disques à ne pas remplacer. 
 
 Comme précisé précédemment, les numéros de tous les disques sont importants. Ils seront transmis au technicien en datacenter et éviteront une erreur lors de l'opération ;
 
@@ -151,7 +151,7 @@ Comme précisé précédemment, les numéros de tous les disques sont importants
 
 > [!primary]
 >
-> Ce type de remplacement n'est possible que pour les serveurs [FS-MAX](https://www.ovh.com/fr/serveurs_dedies/fs/1801fs05.xml){.external} et les serveurs [Big-HG](https://www.ovh.com/fr/serveurs_dedies/hg/1801bhg01.xml){.external} disposant d'une carte RAID.
+> Ce type de remplacement n'est possible que pour les serveurs [Big-HG](https://www.ovh.com/ca/fr/serveurs-dedies/hg/1801bhg01.xml){.external} disposant d'une carte RAID.
 > 
 
 Dans le cas d'un remplacement à chaud sur un serveur avec une carte MegaRAID, il vous est demandé de faire clignoter la LED du disque à remplacer une fois l'intervention programmée pour faciliter le travail de nos équipes.
@@ -206,7 +206,7 @@ Si vous possédez un serveur en RAID logiciel, il convient de lancer manuellemen
 
 [RAID matériel](https://docs.ovh.com/fr/dedicated/raid-hard){.external}
 
-[Mode Rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external}
+[Mode Rescue](https://docs.ovh.com/ca/fr/dedicated/rescue-mode/){.external}
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
