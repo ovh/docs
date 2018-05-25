@@ -2,7 +2,7 @@
 title: 'Hardware Diagnostics'
 slug: hardware-diagnostics
 excerpt: 'This guide will show you how to diagnose hardware issues on your server.'
-section: Security
+section: 'Diagnostic and rescue mode'
 ---
 
 **Last updated 18th May 2018**
@@ -54,10 +54,10 @@ From the top of the web interface, you can click the `Start all tests`{.action} 
 
 The web interface allows you to run separate tests for:
 
-- Processors
-- Network connection
-- Memory
-- Disk partitions
+* Processors
+* Network connection
+* Memory
+* Disk partitions
 
 You will also be able to view your server's SMART logs, which give you detailed hard disk information.
 
@@ -85,12 +85,12 @@ To start the test, click the button as shown below.
 
 #### Disk Partitions
 
-The partitions test is comprised of a disk access test and a file system check. The disk access test checks if the system can communicate with your server's hard drives. The file system check uses the `fsck -fy` command to check the entire file system.
-
 > [!warning]
 >
 > Running a file system check on a damaged hard drive can result in data loss.
 >
+
+The partitions test is comprised of a disk access test and a file system check. The disk access test checks if the system can communicate with your server's hard drives. The file system check uses the `fsck -fy` command to check the entire file system.
 
 ![Disk test](images/partitions.png){.thumbnail}
 
