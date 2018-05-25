@@ -5,7 +5,7 @@ excerpt: Find out how to identify a defective disk, and request a replacement
 section: Server Management
 ---
 
-**Last updated 25/05/2018**
+**Last updated 25th May 2018**
 
 
 ## Objective
@@ -24,7 +24,7 @@ If you notice that a disk is faulty, or receive a notification email about a fau
 
 ## Requirements
 
-- You must be connected via SSH to your [OVH dedicated server](https://www.ovh.com.au/dedicated-servers/){.external}, with *root access* (Linux).
+- You must be connected via SSH to your [OVH dedicated server](https://www.ovh.com/asia/dedicated-servers/){.external}, with *root access* (Linux).
 
 
 ## Instructions
@@ -123,7 +123,7 @@ You will need to specify the RAID number (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAI
 
 #### Servers with NVMe disks
 
-If you have an NVMe disk, you will need to put the server into [rescue mode](https://docs.ovh.com/au/en/dedicated/ovh-rescue/){.external}, on which the **nvme-cli** tool is installed by default.
+If you have an NVMe disk, you will need to put the server into [rescue mode](https://docs.ovh.com/asia/en/dedicated/ovh-rescue/){.external}, on which the **nvme-cli** tool is installed by default.
 
 You will then need to use the `nvme list` command, and retrieve your disks’ serial numbers:
 
@@ -142,7 +142,7 @@ root@rescue:~# nvme list
 
 To request a disk replacement, you simply need to create a ticket through your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. You can speed up the process by providing the information required for the tests. Below is a list of what you will need to provide:
 
-- **The serial number of the disk that needs to be replaced, as well as the serial numbers for all other disks that are working properly**. To retrieve the serial number of the disk that needs to be replaced, please follow [this guide](https://docs.ovh.com/au/en/dedicated/cloud/dedicated/find-disk-serial-number/){.external}. If, for any reason, you are unable to retrieve the disk’s serial number, please let us know in the ticket, and list the serial numbers of the disks that don’t need to be replaced. 
+- **The serial number of the disk that needs to be replaced, as well as the serial numbers for all other disks that are working properly**. To retrieve the serial number of the disk that needs to be replaced, please follow [this guide](https://docs.ovh.com/asia/en/dedicated/cloud/dedicated/find-disk-serial-number/){.external}. If, for any reason, you are unable to retrieve the disk’s serial number, please let us know in the ticket, and list the serial numbers of the disks that don’t need to be replaced. 
 
 As a reminder, it’s important to include the serial numbers of all the disks. They will be sent to the datacentre technician, and this will avoid any mistakes being made as the replacement operation is carried out.
 
@@ -155,7 +155,7 @@ As a reminder, it’s important to include the serial numbers of all the disks. 
 
 > [!primary]
 >
-> This replacement type is only possible for [Big-HG](https://www.ovh.com.au/dedicated-servers/hg/1801bhg01.xml){.external} servers that have a RAID card.
+> This replacement type is only possible for [Big-HG](https://www.ovh.com/asia/dedicated-servers/hg/1801bhg01.xml){.external} servers that have a RAID card.
 > 
 
 If you are hot-swapping a disk on a server with a megaRAID card, please make the LED light flash for the disk that needs to be replaced, once the intervention has been scheduled. This will make the process easier for the teams who are working on the replacement operation.
@@ -210,7 +210,7 @@ If you have a server that uses soft RAID, we recommend that you resync your disk
 
 [Hardware RAID](https://docs.ovh.com/au/en/dedicated/raid-hard/){.external}
 
-[Rescue Mode](https://docs.ovh.com/au/en/dedicated/ovh-rescue/){.external}
+[Rescue Mode](https://docs.ovh.com/asia/en/dedicated/ovh-rescue/){.external}
 
 
 Join our community of users on <https://community.ovh.com/en/>.
