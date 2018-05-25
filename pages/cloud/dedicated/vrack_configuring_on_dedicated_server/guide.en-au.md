@@ -19,7 +19,7 @@ The vRack or virtual rack allows multiple servers to be grouped together (regard
 - A [vRack](https://www.ovh.com.au/solutions/vrack/){.external} service in your account
 - Two or more [vRack compatible servers](https://www.ovh.com.au/dedicated-servers/){.external}
 - You need to be logged in via SSH (or on your graphical user interface) on your Linux server (root access)
-- You need to be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/){.external}
+- You need to be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 - Your chosen private IP address range
 
 

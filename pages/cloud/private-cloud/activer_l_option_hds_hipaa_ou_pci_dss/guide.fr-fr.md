@@ -10,7 +10,7 @@ section: Services et options OVH
 
 Ces options peuvent être activées dans le cadre de l'hébergement de données de santé, ou encore de données bancaires. Une seule de ces options ne peut être activé sur une même infrastructure.
 
-Afin d'activer une option, rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager?action=gotomanager&from=https://www.ovh.com/fr/){.external-link}, au niveau de l'infrastructure sur laquelle vous devez activer l'option. L'option ne pourra être activée que si les options NSX et vRops sont activées, que vous avez activé la [politique d'accès au vCenter]({legacy}1442246) (comprenant l'ajout d'au moins [une IP autorisée]({legacy}1442255) à se connectée) et que vous avez [complété les informations du contact admin vSphere]({legacy}1441987) de l'infrastructure.
+Afin d'activer une option, rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/){.external-link}, au niveau de l'infrastructure sur laquelle vous devez activer l'option. L'option ne pourra être activée que si les options NSX et vRops sont activées, que vous avez activé la [politique d'accès au vCenter]({legacy}1442246) (comprenant l'ajout d'au moins [une IP autorisée]({legacy}1442255) à se connectée) et que vous avez [complété les informations du contact admin vSphere]({legacy}1441987) de l'infrastructure.
 
 ![](images/HomeSDDCManager.PNG){.thumbnail}
 

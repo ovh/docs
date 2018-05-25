@@ -15,7 +15,7 @@ L'espace client OVH vous propose de nombreuses options de paramétrage de votre 
 
 ## Prérequis
 
-- Être connecté à votre l'[espace client OVH](https://ca.ovh.com/auth){.external} dans la partie `Dédié`{.action} puis `Cloud Privé`{.action}.
+- Être connecté à votre l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la partie `Dédié`{.action} puis `Cloud Privé`{.action}.
 - Posséder un produit [Cloud Privé](https://www.ovh.com/fr/private-cloud/){.external}.
 
 
@@ -23,7 +23,7 @@ L'espace client OVH vous propose de nombreuses options de paramétrage de votre 
 
 ### Onglet général
 
-Une fois dans la partie `Dédié`{.action} puis `Cloud Privé`{.action} de votre [espace client OVH](https://ca.ovh.com/auth){.external}, vous aurez accès à un aperçu général de votre Cloud Privé :
+Une fois dans la partie `Dédié`{.action} puis `Cloud Privé`{.action} de votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, vous aurez accès à un aperçu général de votre Cloud Privé :
 
 ![Informations générales](images/manager_general.png){.thumbnail}
 

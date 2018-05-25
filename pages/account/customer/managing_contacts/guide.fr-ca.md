@@ -15,7 +15,7 @@ Un service créé chez OVH est généralement lié à plusieurs contacts. Ces de
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVH](https://ca.ovh.com/auth/){.external}
+- Être connecté à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}
 - Disposer d'un accès à l'adresse courriel entrée dans votre profil.
 - Disposer de droits suffisants  sur le service concerné.
 - Posséder l'identifiant client du nouveau contact (pour qui vous réalisez la modification).
@@ -26,7 +26,7 @@ Un service créé chez OVH est généralement lié à plusieurs contacts. Ces de
 
 ### Accéder à la gestion des contacts
 
-Dans la barre de menu située en haut de l'[espace client OVH](https://ca.ovh.com/auth/){.external}, cliquez sur votre identifiant client (précédé de votre prénom et nom) puis sur `Mon compte`{.action}. Dans le menu de gauche, cliquez ensuite sur `Mes contacts`{.action}.
+Dans la barre de menu située en haut de l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur votre identifiant client (précédé de votre prénom et nom) puis sur `Mon compte`{.action}. Dans le menu de gauche, cliquez ensuite sur `Mes contacts`{.action}.
 
 Le tableau qui apparaît permet ainsi de visionner les différents services pour lesquels votre identifiant client est renseigné en tant que contact.
 
@@ -88,7 +88,7 @@ Si l'un des contacts n'a pas reçu le courriel, il se peut que l'adresse de cont
 
 ![Gestion des contacts](images/contactmanagement5.png){.thumbnail}
 
-Si un seul contact a validé le changement, un message apparaîtra, vous informant que la demande est toujours en attente de validation par l'autre contact. Si l'un des contacts vient tout juste de valider une demande, il se peut que l'affichage dans l'[espace client OVH](https://ca.ovh.com/auth/){.external} se mette à jour sous quelques minutes.
+Si un seul contact a validé le changement, un message apparaîtra, vous informant que la demande est toujours en attente de validation par l'autre contact. Si l'un des contacts vient tout juste de valider une demande, il se peut que l'affichage dans l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} se mette à jour sous quelques minutes.
 
 ![Gestion des contacts](images/contactmanagement6.png){.thumbnail}
 

@@ -15,7 +15,7 @@ La console KVM permet une connexion directe à votre VPS sans avoir à utiliser 
 
 ## Prérequis
 
-- Être connecté à l'[espace client](https://ca.ovh.com/auth/).
+- Être connecté à l'[espace client](https://ca.ovh.com/auth/?action=gotomanager).
 
 ## En pratique
 

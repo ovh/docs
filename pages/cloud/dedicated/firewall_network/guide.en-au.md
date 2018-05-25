@@ -24,7 +24,7 @@ To protect its global infrastructure and its customers’ servers, OVH offers a 
 ## Requirements
 
 - You must have an OVH service with a Firewall Network ([Dedicated Server](https://www.ovh.com.au/dedicated-servers/){.external}, [VPS](https://www.ovh.com.au/vps/){.external}, [Public Cloud instance](https://www.ovh.com.au/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.com.au/private-cloud/){.external},  [Failover IP](https://www.ovh.com.au/dedicated-servers/ip_failover.xml){.external}, etc.)
-- You must have access to your [OVH Control Panel](https://ca.ovh.com/auth/){.external}.
+- You must have access to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - You must have basic network skills
 
 

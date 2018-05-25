@@ -5,7 +5,7 @@ excerpt: With the IPMI, you can log in to your server without having to use any 
 section: Getting started
 ---
 
-**Last updated 23/01/2018**
+**Last updated 25/05/2018**
 
 ## Objective
 
