@@ -24,7 +24,7 @@ Afin de protéger son infrastructure globale et les serveurs de ses clients, OVH
 ## Prérequis
 
 - Disposer d'un service OVH bénéficiant du Coupe-feu Réseau ([Serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/ca/fr/vps/){.external}, [instance Cloud Public](https://www.ovh.com/ca/fr/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.com/ca/fr/private-cloud/){.external}, [IP Failover](https://www.ovh.com/ca/fr/serveurs_dedies/ip_failover.xml){.external}...)
-- Avoir accès à l'[espace client OVH](https://ca.ovh.com/auth/){.external}.
+- Avoir accès à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - Avoir des connaissances de base en réseau.
 
 

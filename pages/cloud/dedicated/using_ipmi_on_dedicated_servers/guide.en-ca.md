@@ -15,7 +15,7 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 
 ## Requirements
 
-- You must be logged in to your [OVH Control Panel](https://www.ca.ovh.com/auth){.external}. Go to the `Dedicated`{.action} section, then select `Dedicated Servers`{.action}.
+- You must be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Go to the `Dedicated`{.action} section, then select `Dedicated Servers`{.action}.
 
 ## Instructions
 

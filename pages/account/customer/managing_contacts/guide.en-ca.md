@@ -15,7 +15,7 @@ OVH services are generally linked to several contacts. These contacts manage you
 
 ## Requirements
 
-- You must be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/){.external}.
+- You must be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - You must have access to the email address linked to your profile.
 - You must have the correct rights for the service concerned.
 - You must have the new contact’s NIC handle (the contact you want to add).
@@ -26,7 +26,7 @@ OVH services are generally linked to several contacts. These contacts manage you
 
 ### Accessing contact management
 
-In the menu bar at the top of the [OVH Control Panel](https://ca.ovh.com/auth/){.external}, click on your NIC handle (with your first name and surname at the front), then `My account`{.action}. In the left-hand menu, click `My contacts`{.action}.
+In the menu bar at the top of the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click on your NIC handle (with your first name and surname at the front), then `My account`{.action}. In the left-hand menu, click `My contacts`{.action}.
 
 The table that appears will show all of the services your NIC handle is registered with as a contact.
 
@@ -88,7 +88,7 @@ If one of the contacts has not received this email, the contact email address li
 
 ![Contact management](images/contactmanagement5.png){.thumbnail}
 
-If only one contact has validated the change, a message will appear confirming that the request is still pending validation from the other contact. If one of the contacts has just validated the request, it may take a few minutes for the information to be updated and appear correctly in the [OVH Control Panel](https://ca.ovh.com/auth/){.external}.
+If only one contact has validated the change, a message will appear confirming that the request is still pending validation from the other contact. If one of the contacts has just validated the request, it may take a few minutes for the information to be updated and appear correctly in the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ![Contact management](images/contactmanagement6.png){.thumbnail}
 

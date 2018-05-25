@@ -22,7 +22,7 @@ Découvrez dans ce guide comment redémarrer votre VPS en mode Rescue.
 
 ## Pérequis
 
-- Être connecté à votre [espace client](https://ca.ovh.com/auth/).
+- Être connecté à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager).
 
 
 ## En pratique

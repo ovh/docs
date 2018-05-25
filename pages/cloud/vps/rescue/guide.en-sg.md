@@ -22,7 +22,7 @@ This guide will show you how to reboot your VPS in rescue mode.
 
 ## Requirements
 
-- You must be logged in to your [Control Panel](https://ca.ovh.com/auth){.external}.
+- You must be logged in to your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Instructions
