@@ -1,96 +1,80 @@
 ---
-title: 'Svetainių talpinimas: automatinių el. laiškų kontrolė'
-excerpt: Iš svetainių talpinimo plano siunčiamų el. laiškų kontrolė
+title: 'Monitoring and managing automated emails in your Web Hosting plan'
 slug: svetainiu_talpinimas_automatiniu_el_laisku_kontrole
-legacy_guide_number: g1974
+excerpt: 'Find out how to monitor and manage automated emails sent from your OVH Web Hosting plan'
+section: Diagnostic
 ---
 
+**Last updated May 25th, 2018**
 
-## Prieiga prie automatinių el. laiškų skilties valdymo sąsajoje
+## Objective
 
-## Veiksmai
+Automated emails are messages that are sent via scripts. For example, they are used in contact forms on your website, and allow your web users to send you emails.
 
-- Prisijunkite prie savo [valdymo sąsajos](https://www.ovh.com/manager/web/login/).
-Jeigu nebeturite prieigos prie valdymo sąsajos, skaitykite [šį gidą](https://www.ovh.lt/gidai/g1909.prieiga-prie-slaptazodziu).
-- Kairiajame stulpelyje, skiltyje Svetainių talpinimas, spragtelėkite savo svetainių talpinimo planą.
-- Po to spauskite Daugiau + ir El. laiškų skriptai.
+**Find out how to monitor and manage automated emails sent from your OVH Web Hosting plan.**
 
+## Requirements
 
+- You must have an[OVH Web Hosting plan](https://www.ovh.lt/svetainiu-talpinimas/){.external}.
+- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-![](images/img_3110.jpg){.thumbnail}
+> [!primary]
+>
+> This guide is only relevant for emails sent using scripts located on your OVH Web Hosting plan.
+>
+> Are you looking to manage email addresses included in your MX Plan solution, or in your [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}? Go to the `Emails`{.action} section of your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+>
 
+## Instructions
 
-## Iš svetainių talpinimo plano siunčiamų el. laiškų blokavimas
-Kartais reikia blokuoti el. laiškų siuntimą iš svetainių talpinimo plano.
+In your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, you can monitor and manage automated emails sent from your OVH Web Hosting plan. To do this, log in to your Control Panel, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned from the list. Next, click `More +`{.action}, then `Email scripts`{.action}.
 
-## Kokiais atvejais?
+On the page that opens at this stage, you can monitor and manage automated emails sent from your OVH Web Hosting plan.
 
-- Kai testuojate el. laiškų siuntimo skriptą;
-- Įsilaužimo atveju, jei siunčiamas spam.
+![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
+### Monitor automated emails being sent
 
+The `Email scripts`{.action} page provides several different types of information, which you can use to view script-generated automated email activity at a glance.
 
-## Pastaba:
-Nebus ištrintas joks el. laiškas, visi el. laiškai pateks į 72 val. laukimo eilę. Per šias 72 valandas jūs galite arba atšaukti siuntimo blokavimą, arba išvalyti siuntimą.
-1. Spauskite mygtuką Blokuoti siuntimą.
+|Information|Details|
+|---|---|
+|Service status|Shows the current status of a service that sends automated emails from your Web Hosting plan. A status in a green box means that email sending is operational, whilst a status in a red box means that emails are no longer being sent. Depending on this status, the way that email sending is managed will vary. For more information on this, please refer to the [Managing send statuses for automated emails](https://docs.ovh.com/lt/hosting/svetainiu_talpinimas_automatiniu_el_laisku_kontrole/#managing-send-statuses-for-automated-emails){.external} section of this guide.|
+|Send error reports to|Receive daily error reports on an email address of your choice. You can define an email address for this by clicking the `Change recipient`{.action} button. This report will contain emails sent from your Web Hosting plan that bounced back to OVH with errors, because they could not reach a recipient. By clicking the `Emails with errors`{.action} button, you can read reports on such emails at any time, via your OVH Control Panel.|
+|Total number of emails sent|Shows the total number of automated emails sent since you ordered your OVH Web Hosting plan.|
+|Emails sent today|Shows the total number of automated emails sent today only.|
+|Total number of emails with errors|Shows the total number of automated emails sent since you ordered your Web Hosting plan that bounced back to OVH with errors because they could not reach recipients.|
+|Log of emails sent|Shows a graph representing the log of emails sent from your Web Hosting plan over the course of previous days.|
 
-![](images/img_3111.jpg){.thumbnail}
-2. Po to spauskite Patvirtinti.
+> [!primary]
+>
+> To stop your Web Hosting plan’s automated email system from being abused, we strongly recommend setting up a security system (e.g. a captcha test) for the forms on your website that are used to send emails (contact forms, for example).
+>
 
-![](images/img_3112.jpg){.thumbnail}
-3. Matysite tokį patvirtinimą.
+![hosting](images/monitoring-automatic-emails-step2.png){.thumbnail}
 
-![](images/img_3113.jpg){.thumbnail}
+If you notice that your script-generated emails are no longer being sent, but the service status still enables email sending, we advise:
 
-## Pastaba:
-Paslaugos būklė pasikeitė į Neaktyvi.
+- **Checking the email sending scripts.** The scripts may not be able to send the emails due to a syntax error. Check the content of your scripts, correct them if required, then try again.
 
-![](images/img_3114.jpg){.thumbnail}
+- **Testing email sending via a test script.** Write a test script that sends an email to your personal email address. If you are able to receive the email, it will mean that your email sending scripts contain errors. If your scriptwriting knowledge is basic, you can find test scripts available on the internet.
 
+- **Sending emails without using the SMTP server.** Don’t specify a SMTP server in your script parameters. If you have an interface for managing email sending from your website, you need to ensure that this parameter can be modified in your website’s configuration.
 
-## El. laiškų siuntimo eilės išvalymas
-Kartais jums gali prireikti išvalyti el. pašto serverio siuntimų eilę, kad išvengtumėte naujo blokavimo. Norėdami pasinaudoti galimybe išvalyti el. laiškus, pirmiausiai turite blokuoti siuntimą, kaip paaiškinta aukščiau.
+### Managing send statuses for automated emails
 
-## Pastaba:
-Po šių veiksmų jūsų paskyra bus automatiškai atblokuota. Ši operacija gali užtrukti 5-10 minučių.
-1. Spauskite mygtuką Išvalyti el. laiškus.
+On the `Email scripts`{.action} page, there are several buttons you can use to manage automated emails sent from your Web Hosting plan. Depending on the service status, some options may not be available.
 
-![](images/img_3115.jpg){.thumbnail}
-2. Po to spauskite Patvirtinti.
+|Actions|Details|
+|---|---|
+|Block sending|Blocks automated emails from being sent from your Web Hosting plan. Once you have blocked sending, script-generated emails will not be sent, and will be stored in a 'pending' queue for a maximum of 72 hours.|
+|Unblock sending|Unblocks automated emails from being sent from your Web Hosting plan. This will also cause any emails stored in the 'pending' queue to be sent out to recipients.|
+|Purge emails|Deletes the emails stored in the 'pending' queue, and unblocks emails from being sent.|
 
-![](images/img_3116.jpg){.thumbnail}
-3. Matysite tokį patvirtinimą.
+To perform any of these actions, click the corresponding button, then `Confirm`{.action}. In some cases, the action you want to perform will take several minutes to become fully effective.
 
-![](images/img_3117.jpg){.thumbnail}
+![hosting](images/monitoring-automatic-emails-step3.png){.thumbnail}
 
-## Pastaba:
-Paslaugos būklė pasikeitė į Išvalymas.
+## Go further
 
-![](images/img_3118.jpg){.thumbnail}
-
-
-## Siuntimo atblokavimas
-Persiuntimas bus pradėtas vykdyti iš naujo, kai bus išsiųstas kitas el. laiškas. Prieš tai užblokuoti el. laiškai bus perkelti į persiuntimą.
-1. Spauskite mygtuką Atblokuoti siuntimą.
-
-![](images/img_3122.jpg){.thumbnail}
-2. Po to spauskite Patvirtinti.
-
-![](images/img_3123.jpg){.thumbnail}
-3. Matysite tokį patvirtinimą.
-
-![](images/img_3124.jpg){.thumbnail}
-
-
-## Keisti klaidų pranešimų gavėją
-Jeigu siunčiant el. laiškus iš svetainių talpinimo plano įvyko klaida, jau kitą dieną gausite klaidos pranešimą.
-1. Visų pirma spauskite Keisti gavėją.
-
-![](images/img_3119.jpg){.thumbnail}
-2. Po to įveskite pageidaujamą el. pašto adresą ir spauskite Patvirtinti.
-
-![](images/img_3120.jpg){.thumbnail}
-3. Matysite naują el. pašto adresą.
-
-![](images/img_3121.jpg){.thumbnail}
-
+Join our community of users on <https://community.ovh.com/en/>.
