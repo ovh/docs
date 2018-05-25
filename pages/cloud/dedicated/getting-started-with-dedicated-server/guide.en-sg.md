@@ -16,8 +16,8 @@ A dedicated server is a physical server located in one of our datacentres. Unlik
 
 ## Requirements
 
-* A [dedicated server](https://www.ovh.com/asia/dedicated-servers/){.external} in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} with root to via SSH (Linux)
-* A [dedicated server](https://www.ovh.com/asia/dedicated-servers/){.external} in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} with administrative access via remote desktop (Windows).
+* A [dedicated server](https://www.ovh.com/sg/dedicated-servers/){.external} in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} with root to via SSH (Linux)
+* A [dedicated server](https://www.ovh.com/sg/dedicated-servers/){.external} in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} with administrative access via remote desktop (Windows).
 
 
 ## Instructions
@@ -65,7 +65,7 @@ Follow the rest of the instructions on the screen, then click `Confirm`{.action}
 
 > [!primary]
 >
-> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVH](https://www.ovh.com/asia/dedicated-servers/distributions/){.external}, or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. You can manage your licences via the [control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, under `Dedicated`{.action}, then `Licences`{.action}. In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Add an SPLA licence`{.action} button on the right).
+> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVH](https://www.ovh.com/sg/dedicated-servers/distributions/){.external}, or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. You can manage your licences via the [control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, under `Dedicated`{.action}, then `Licences`{.action}. In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Add an SPLA licence`{.action} button on the right).
 > 
 
 
