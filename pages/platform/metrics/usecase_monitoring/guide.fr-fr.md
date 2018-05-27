@@ -67,7 +67,7 @@ In fact, Systems like ["Apache mesos"](http://mesos.apache.org/){.external}, ["O
 You can find numerous Open Source exporters to install on your servers, like:
 
 - ["Scollector"](http://bosun.org/scollector/){.external}
-- ["Telegraf"](http://bosun.org/scollector/){.external}
+- ["Telegraf"](https://github.com/influxdata/telegraf){.external}
 - ["Snap"](http://snap-telemetry.io/){.external}
 - ["Beamium"](https://github.com/ovh/beamium){.external} and ["Noderig"](https://github.com/ovh/noderig){.external}
 - ["StatsD"](https://github.com/etsy/statsd){.external}
