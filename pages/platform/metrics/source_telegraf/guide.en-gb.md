@@ -48,7 +48,7 @@ In the configuration file, you need to add an host, like this:
   database = "telegraf" # required.
 ```
 
-Replace `WRITE_TOKEN` and `REGION` by your own information based on Metrics manager. Scollector is now configured!
+Replace `WRITE_TOKEN` and `REGION` by your own information based on Metrics manager. Telegraf is now configured!
 
 ## Going further
 
