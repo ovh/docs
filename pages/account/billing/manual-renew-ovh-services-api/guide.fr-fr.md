@@ -1,7 +1,7 @@
 ---
-title: 'Renouveler manuellement vos services via l''API OVH'
+title: 'Renouveler vos services via l''API OVH'
 slug: renouveler-manuellement-service-via-api
-excerpt: 'Découvrez comment renouveler manuellement vos services via API OVH'
+excerpt: 'Découvrez comment renouveler vos services via API OVH'
 section: 'Premiers pas'
 ---
 
@@ -10,9 +10,9 @@ section: 'Premiers pas'
 
 ## Objectif
 
-Nativement, OVH vous propose le renouvellement automatique de votre offre. Il est néanmoins possible de renouveler manuellement vos services en utilisant les API.
+Nativement, OVH vous propose le renouvellement automatique de votre offre. Il est néanmoins possible de renouveler vos services en utilisant les API.
 
-**Ce guide vous explique comment effectuer cette opération de renouvellement manuel.**
+**Ce guide vous explique comment effectuer cette opération de renouvellement.**
 
 ## Prérequis
 
