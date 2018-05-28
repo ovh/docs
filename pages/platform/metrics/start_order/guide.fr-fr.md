@@ -71,7 +71,7 @@ Once done, click to the Platforms tab.
 
 Metrics is protocol agnostic. It means you can push with one protocols, and query the same data with another one. 
 
-[Click here, to learn how to used the supported protocols with metrics and their corresponding endpoints](../protocol-overview). 
+[Click here, to learn how to used the supported protocols with metrics and their corresponding endpoints](https://docs.ovh.com/fr/metrics/protocol-overview/){.external}. 
 
 ![tokens](images/platforms.png){.thumbnail}
 
