@@ -1,83 +1,79 @@
 ---
-title: Configurar el vRack en un servidor dedicado (EN)
+title: 'Configurar varios servidores dedicados en el vRack'
 slug: configurar-vrack-en-servidor-dedicado
-excerpt: Help on how to configure the vRack on two or more dedicated servers
+excerpt: 'Cómo configurar varios servidores dedicados en el vRack'
 section: vRack
 ---
 
-**Last updated 30th January, 2018**
+**Última actualización: 29/05/2018**
 
-## Objective
+## Objetivo
 
-The vRack or virtual rack allows multiple servers to be grouped together (regardless of number and physical location in our datacentre) and connects them to a virtual switch within the same private network. Your servers can communicate privately and securely between each other (within a dedicated VLAN).
+La tecnología vRack (rack virtual) permite agrupar virtualmente varios servidores, independientemente de su número y su ubicación física en nuestros datacenters, y conectarlos a un switch virtual dentro de una misma red privada. De esa forma, los servidores pueden comunicarse entre sí de forma privada y segura a través de una VLAN dedicada.
 
-**This guide will help you to configure the vRack on two or more dedicated servers.**
-
-
-## Requirements
-
-- A [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service in your account
-- Two or more [vRack compatible servers](https://www.ovh.co.uk/dedicated_servers/){.external}
-- You need to be logged in via SSH (or on your graphical user interface) on your Linux server (root access)
-- You need to be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Your chosen private IP address range
+**Esta guía explica cómo configurar varios servidores dedicados en el vRack.**
 
 
-## Instructions
+## Requisitos
 
-### Add your servers to the vRack
+- Tener un [vRack](https://www.ovh.es/soluciones/vrack/){.external}.
+- Disponer de al menos dos [servidores compatibles con el vRack](https://www.ovh.es/servidores_dedicados/){.external}.
+- Estar conectado por SSH (o a través de una interfaz gráfica) al servidor Linux (con acceso *root*).
+- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Tener un rango de direcciones IP privadas.
 
-**Step 1.** Once the vRack is in your account go to the `Cloud`{.action} section of your control panel
 
-**Step 2.** Select the `vRack`{.action} menu from the left side of the control panel
+## Procedimiento
 
-**Step 3.** Select your vRack from the list
+### Añadir los servidores al vRack
 
-**Step 4.** From the list of eligible services, select the servers you want to add to the vRack and then click the `Add`{.action} button
+1. Una vez que haya añadido el vRack a su cuenta, acceda a la sección `Cloud`{.action} del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+2. En la columna izquierda, haga clic en `vRack`{.action} y seleccione el vRack.
+4. En la lista de servicios compatibles, seleccione los servidores que quiera añadir al vRack y haga clic en el botón `Añadir`{.action}.
 
-![vRack selection](images/vrack_selection.png){.thumbnail}
+![Selección del vRack](images/vrack_selection.png){.thumbnail}
 
-### Configure your network interfaces
+### Configurar las interfaces de red
 
-For example purposes, we’ll use an internal IP address range of *192.168.0.0/16*.
+En este ejemplo, vamos a utilizar el rango de direcciones IP internas **192.168.0.0/16**.
 
-Also, we’ve used the names of eth1 and eno4 for the secondary network interface. Your servers may use a different naming convention. To be sure, please check with the following commands.
+También usaremos los nombres **eth1** y **eno4** para la interfaz de red secundaria. Sus servidores pueden utilizar una nomenclatura diferente. Puede comprobarlo utilizando los comandos que indicamos a continuación.
 
-List your network interfaces with the following command:
+Para mostrar las interfaces de red, utilice el siguiente comando:
 
-```sh
+```
 ifconfig -a | grep eth | awk '{print $ 1}'
 ```
 
-The first interface in the list is your primary network connection. you can check which one is active with the following command:
+La primera interfaz de la lista hace referencia a su conexión de red principal. Para comprobar que esté activa, utilice los siguientes comandos:
 
-```sh
+```
 ifconfig eth1 up
 ```
 
-```sh
+```
 ethtool eth1 | grep "Link detected"
 ```
 
-If the command returns Link detected: no then this is the network interface you should use for your vRack configuration after running this command:
+Si este último comando le devuelve el mensaje **Link detected: no**, se trata de la interfaz de red que deberá utilizar para configurar el vRack. Ejecute entonces este comando:
 
-```sh
+```
 ifconfig eth1 down
 ```
 
-#### CentOS 6 and 7
+#### CentOS 6 y 7
 
-Open the network interface configuration file with the following command:
+Abra el archivo de configuración de la interfaz de red con el siguiente comando:
 
-```sh
+```
 vi /etc/sysconfig/network-scripts/ifcfg-eth1
 ```
 
-Press the `I` key on your keyboard to enter Insert Mode.
+Pulse la tecla `I` del teclado para pasar al modo de inserción.
 
-Configure the secondary network interface as follows: 
+Configure la interfaz de red secundaria como se indica a continuación:
 
-```sh
+```
 DEVICE=eth1
 BOOTPROTO=static
 IPADDR=192.168.0.1
@@ -86,188 +82,176 @@ ONBOOT=yes
 TYPE=Ethernet
 ```
 
-In the example above you can use any private IP range of your choice and any address within that range.
+En el ejemplo anterior, puede utilizar cualquier rango de IP privadas y cualquier dirección IP incluida dentro de ese rango.
 
-**Step 1.** Press the `ESC` key
-
-**Step 2.** Press `SHIFT`+ the colon key to bring up the editor prompt
-
-**Step 3.** Type `wq`
-
-**Step 4.** Press the `Enter` key
-
-**Step 5.** Reboot your server
-
-**Step 6.** Repeat all steps for your other server(s) and assign a unique IP address from your internal range. After doing this, your servers will be able to communicate with each other on the private network.
+1. Pulse la tecla `Esc`.
+2. Pulse las teclas `Shift + :` para abrir el editor.
+3. Introduzca **wq**.
+4. Pulse la tecla `Entrar`.
+5. Reinicie el servidor.
+6. Repita estos pasos en los demás servidores y asígneles una dirección IP única que pertenezca a su rango interno. 
+ 
+Una vez realizadas estas acciones, los servidores podrán comunicarse entre sí en la red privada.
 
 
-#### Debian 7 and 8
+#### Debian 7 y 8
 
-Open the network interface configuration file with the following command:
+Abra el archivo de configuración de la interfaz de red con el siguiente comando:
 
-```sh
+```
 nano /etc/network/interfaces
 ```
 
-Configure the secondary network interface as follows:
+Configure la interfaz de red secundaria como se indica a continuación:
 
-```sh
+```
 auto eth1
 iface eth1 inet static
-           address 192.168.0.1
-           netmask 255.255.0.0
+address 192.168.0.1
+netmask 255.255.0.0
 ```
 
-In the example above you can use any private IP range of your choice and any address within that range.
+En el ejemplo anterior, puede utilizar cualquier rango de IP privadas y cualquier dirección IP incluida dentro de ese rango.
 
 
-**Step 1.** `CTRL + X` to exit the network config file
+1. Pulse las teclas `CTRL + X` para salir del archivo de configuración de red.
+2. Pulse la tecla `Y` para guardar los cambios y, a continuación, pulse `Entrar`.
+3. Reinicie el servidor.
+4. Repita estos pasos en los demás servidores y asígneles una dirección IP única que pertenezca a su rango interno. 
 
-**Step 2.** Press the `Y` key to save your changes and then press `Enter`
-
-**Step 3.** Reboot your server
-
-**Step 4.** Repeat all steps for your other server(s) and assign a unique IP address from your internal range. After doing this, your servers will be able to communicate with each other on the private network.
+Una vez realizadas estas acciones, los servidores podrán comunicarse entre sí en la red privada.
 
 
 #### Debian 9
 
-Open the network interface configuration file with the following command:
+Abra el archivo de configuración de la interfaz de red con el siguiente comando:
 
-```sh
+```
 nano /etc/network/interfaces
 ```
 
-Configure the secondary network interface as follows:
+Configure la interfaz de red secundaria como se indica a continuación:
 
-```sh
+```
 auto eno4
 iface eno4 inet static
 address 192.168.0.1
 netmask 255.255.0.0
 ```
 
-In the example above you can use any private IP range of your choice and any address within that range.
+En el ejemplo anterior, puede utilizar cualquier rango de IP privadas y cualquier dirección IP incluida dentro de ese rango.
 
-**Step 1.** `CTRL + X` to exit the network config file
+1. Pulse las teclas `CTRL + X` para salir del archivo de configuración de red.
+2. Pulse la tecla `Y` para guardar los cambios y, a continuación, pulse `Entrar`.
+3. Reinicie el servidor.
+4. Repita estos pasos en los demás servidores y asígneles una dirección IP única que pertenezca a su rango interno.
 
-**Step 2.** Press the `Y` key to save your changes and then press `Enter`
-
-**Step 3.** Reboot your server
-
-**Step 4.**Step  Repeat all for your other server(s) and assign a unique IP address from your internal range. After doing this, your servers will be able to communicate with each other on the private network.
+Una vez realizadas estas acciones, los servidores podrán comunicarse entre sí en la red privada.
 
 
 #### Ubuntu Server 16
 
-Open the network interface configuration file with the following command:
+Abra el archivo de configuración de la interfaz de red con el siguiente comando:
 
-```sh
+```
 vi /etc/network/interfaces
 ```
 
-Press the `I` key on your keyboard to enter Insert Mode.
+Pulse la tecla `I` del teclado para pasar al modo de inserción.
 
-Configure the secondary network interface as follows: 
+Configure la interfaz de red secundaria como se indica a continuación:
 
-```sh
+```
 auto eth1
 iface eth1 inet static
-           address 192.168.0.1
-           netmask 255.255.0.0
+address 192.168.0.1
+netmask 255.255.0.0
 ```
 
-In the example above you can use any private IP range of your choice and any address within that range.
+En el ejemplo anterior, puede utilizar cualquier rango de IP privadas y cualquier dirección IP incluida dentro de ese rango.
 
-**Step 1.** Press the `ESC` key
+1. Pulse la tecla `Esc`.
+2. Pulse las teclas `Shift + :` para abrir el editor.
+3. Introduzca **wq**.
+4. Pulse la tecla `Entrar`.
+5. Reinicie el servidor.
+6. Repita estos pasos en los demás servidores y asígneles una dirección IP única que pertenezca a su rango interno.
 
-**Step 2.** Press `SHIFT` + the colon key to bring up the editor prompt
-
-**Step 3.** Type `wq`
-
-**Step 4.** Press the `Enter` key
-
-**Step 5.** Reboot your server
-
-**Step 6.** Repeat all steps for your other server(s) and assign a unique IP address from your internal range. After doing this, your servers will be able to communicate with each other on the private network.
-
+Una vez realizadas estas acciones, los servidores podrán comunicarse entre sí en la red privada.
 
 
 #### Ubuntu Server 17
 
-Open the network interface configuration file with the following command:
+Abra el archivo de configuración de la interfaz de red con el siguiente comando:
 
-```sh
+```
 nano /etc/network/interfaces
 ```
 
-Configure the secondary network interface as follows:
+Configure la interfaz de red secundaria como se indica a continuación:
 
-```sh
+```
 auto eno4
 iface eno4 inet static
 address 192.168.0.1
 netmask 255.255.0.0
 ```
 
-In the example above you can use any private IP range of your choice and any address within that range.
+En el ejemplo anterior, puede utilizar cualquier rango de IP privadas y cualquier dirección IP incluida dentro de ese rango.
 
-Step 1. CTRL + X to exit the network config file
-Step 2. Press the Y key to save your changes and then press Enter
-Step 3. Reboot your server
-Step 4. Repeat steps 1 to 5 for your other server(s) and assign a unique IP address from your internal range. After doing this, your servers will be able to communicate with each other on the private network.
+1. Pulse las teclas `CTRL + X` para salir del archivo de configuración de red.
+2. Pulse la tecla `Y` para guardar los cambios y, a continuación, pulse `Entrar`.
+3. Reinicie el servidor.
+4. Repita estos pasos en los demás servidores y asígneles una dirección IP única que pertenezca a su rango interno.
+
+Una vez realizadas estas acciones, los servidores podrán comunicarse entre sí en la red privada.
 
 
 #### Windows
 
-For example purposes, we’ll use an internal IP address range of 192.168.0.0/16.
+En este ejemplo, vamos a utilizar el rango de direcciones IP internas **192.168.0.0/16**.
 
-**Step 1.** Log onto your Windows server by remote desktop
+Siga estos pasos:
 
-**Step 2.** Click the `Start`{.action} button
+1. Conéctese a su servidor Windows a través del escritorio remoto.
+2. Haga clic en `Inicio`{.action}.
+3. Haga clic en `Panel de control`{.action}.
 
-**Step 3.** Click `Control Panel`{.action}
+   ![Panel de control de Windows](images/windows_control_panel.png){.thumbnail}
 
-![Windows Control Panel](images/windows_control_panel.png){.thumbnail}
+4. Haga clic en `Redes e Internet`{.action}.
 
-**Step 4.** Click `Network and Internet`{.action}
+   ![Redes e Internet](images/windows_network_and_internet.png){.thumbnail}
 
-![Network and Internet](images/windows_network_and_internet.png){.thumbnail}
+5. Haga clic en `Centro de redes y recursos compartidos`{.action}.
 
+   ![Centro de redes y recursos compartidos](images/windows_network_and_sharing_centre.png){.thumbnail}
 
-**Step 5.** Click `Network and Sharing Centre`{.action}
+6. Haga clic en `Cambiar configuración del adaptador`{.action}.
 
-![Network and Sharing Centre](images/windows_network_and_sharing_centre.png){.thumbnail}
+   ![Cambiar configuración del adaptador](images/windows_change_adapter_settings.png){.thumbnail}
 
+7. Haga clic derecho en la interfaz de red secundaria y seleccione `Propiedades`{.action}.
 
-**Step 6.** Click `Change Adapter Settings`{.action}
+   ![Propiedades de Windows](images/windows_properties_button.png){.thumbnail}
 
-![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
+9. Haga doble clic en `Protocolo de Internet versión 4 (TCP/IPv4)`{.action}.
 
+   ![Protocolo de Internet versión 4 (TCP/IPv4)](images/windows_ipv4.png){.thumbnail}
 
-**Step 7.** Right-click the secondary network interface
+10. Marque la opción `Usar la siguiente dirección IP`{.action}.
 
-**Step 8.** Click `Properties`{.action}
+    - En **Dirección IP** introduzca una dirección IP de su rango interno.
+    - En **Máscara de subred** introduzca **255.255.0.0**.
 
-![Windows Properties](images/windows_properties_button.png){.thumbnail}
+   ![Usar la siguiente dirección IP](images/windows_use_following_ip_address.png){.thumbnail}
 
-**Step 9.** Double-click `Internet Protocol Version 4 (TCP/IP/IPv4)`{.action}
+11. Haga clic en `Aceptar`{.action} para guardar los cambios.
+12. Reinicie el servidor.
+13. Repita estos pasos en los demás servidores y asígneles una dirección IP única que pertenezca a su rango interno. 
 
-![Internet Protocol Version 4 (TCP/IP/IPv4)](images/windows_ipv4.png){.thumbnail}
+Una vez realizadas estas acciones, los servidores podrán comunicarse entre sí en la red privada.
 
-**Step 10.** Click `Use the following IP address`:
+## Más información
 
-- For `IP address`: type in an IP from your internal range
-- For `Subnet mask`: type in 255.255.0.0
-
-![Use the following IP address](images/windows_use_following_ip_address.png){.thumbnail}
-
-**Step 11.** Click the `OK`{.action} button to save the changes.
-
-**Step 12.** Reboot your server
-
-**Step 13.** Repeat all steps for your other server(s) and assign a unique IP address from your internal range. After doing this, your servers will be able to communicate with each other on the private network.
-
-## Go further
-
-Join our community of users on <https://community.ovh.com/en/>.
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/).
