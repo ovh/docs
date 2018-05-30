@@ -1,22 +1,27 @@
 ---
-title: 'Déployer un template OVF'
+title: 'Déployer un template OVF Windows et SQL Server'
 slug: deploiement-template-ovh
-excerpt: 'Découvrez comment déployer un template via le client lourd vSphere'
+excerpt: 'Découvrez comment déployer un template Windows et SQL Server'
 section: 'Services et options OVH'
 ---
 
-**Dernière mise à jour le 23/03/2018**
+**Dernière mise à jour le 30/05/2018**
 
 ## Objectif
 
-OVH propose des templates Windows (au format OVF) que vous pouvez déployer directement depuis votre client lourd vSphere.
+OVH propose des templates Windows et SQL server (au format OVF) que vous pouvez déployer directement depuis votre client lourd vSphere (version 5.5 et 6.0) et depuis le client Web (flash et HTML 5 sur version 6.5).
 
 **Ce guide vous explique où trouver les sources et comment procéder au déploiement.**
 
+> [!primary]
+> 
+> Retrouvez sur cette [page](https://www.ovh.com/fr/private-cloud/options/images-licences.xml){.external} les tarifs des images proposées par OVH.
+>
+
 ## Prérequis
 
-- Avoir accès au client Web
-- Avoir activé les licences Windows depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (onglet `Licence Widows`{.action} du datacenter) 
+- Avoir accès au client Web ou au client lourd selon la version utilisée.
+- [Avoir activé les licences Windows](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#licence-windows){.external} depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (onglet `Licence Widows`{.action} du datacenter) 
 
 
 ## En pratique
@@ -27,9 +32,9 @@ Depuis un navigateur internet, rendez-vous sur la page d'accueil de votre Privat
 
 ![Nom de photo](images/gatewayssl.png){.thumbnail}
 
-Dans l'écran `Templates Library` qui s'affiche, sélectionnez `Windows`{.action}. Vous accédez alors au détail des templates Windows proposés.
+Dans l'écran `OVH Templates` qui s'affiche, vous accédez au détail des templates Windows et SQL proposés. 
 
-Il vous suffit maintenant de faire un clic droit sur le template de votre choix et de copier l'adresse du lien :
+Sélectionnez le template souhaité, une fenêtre s'ouvre et vous propose les liens qui vous serviront pour le déploiement en fonction de votre version de vSphere.
 
 ![Nom de photo](images/copylink.png){.thumbnail}
 
