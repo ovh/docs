@@ -1,66 +1,82 @@
 ---
-title: 'Web hosting: Configuring MX with the OVH DNS zone'
-excerpt: 'Web hosting: Configuring MX with the OVH DNS zone'
+title: 'Add an MX record to your domain name’s configuration'
 slug: web_hosting_configuring_mx_with_the_ovh_dns_zone
-legacy_guide_number: g2012
+excerpt: 'Find out how to add a MX record to your OVH domain name’s configuration'
+section: 'DNS and DNS zone'
+order: 4
 ---
 
+**Last updated 30th May 2018**
 
-## You have an email service with OVH
-If you have an OVH email service, you can use the MX listed servers below in your DNS zone:
+## Objective
 
-- Mail servers [Anti-Virus + Anti-Spam]:
+An MX record is used to point a domain name to an email server. It enables servers sending emails to your email addresses to know where they must transfer them to. Your service provider is likely to have several email servers. Because of this, you will need to create several MX records.
 
+**Find out how to add a MX record to your OVH domain name’s configuration.**
 
-|Record|Priority|Target|
-|MX|1|mx1.mail.ovh.net.|
-|MX|5|mx2.mail.ovh.net.|
-|MX|10|mx3.mail.ovh.net.|
+## Requirements
 
+- You must have permission to manage the domain name from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- The domain name must use the OVH configuration (i.e. the OVH DNS servers).
 
+> [!warning]
+>
+> - If your domain name does not use the OVH DNS servers, you will need to modify the MX records using the interface given by the provider that manages your domain name configuration.
+>
+> - If your domain name is registered with OVH, you can check if it is using the OVH configuration in your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Select the domain, and go to the `DNS servers`{.action} tab.
+>
 
-## Information:
-The old MX servers are still working for email services created before 23/05/2016, but it is better to use the MX servers above so you are up to date.
+## Instructions
 
+### Step 1: Understand the basic purpose of MX records
 
-## You do not have an email service with OVH
-If you do not have an OVH email service, you cannot receive email because you do not have an email account. However, you can use aliases (redirections).
+An MX record links your domain name to your email service provider’s servers (e.g. OVH’s servers). When you are sent an email, the server sending the email will use the MX record to find out which server it should deliver to.
 
-For example, create an "alias@mypersonaldomain.ovh alias, redirected to your real email "myaddress@myOtherdomain.com".
-In this instance you have to use the following configuration:
-Mail server [Alias]:
-|Record|Priority|Target|
-|MX|1|redirect.ovh.net|
+You can add multiple MX records to a single domain name, so you will need to define a priority for each record. By doing so, the servers sending emails to your email address will know which server they should deliver them to, by priority. However, please note that when you add multiple MX records, the servers they point to must belong to the same service provider.
 
+Generally speaking, **changing MX records is a tricky task**. If you make any mistakes configuring MX records, your email addresses may be unable to receive new emails as a result. For this reason, we strongly advise that you take great care when carrying out these configuration changes.
 
-Please note that you can use aliases (redirections) if you also have an email solution. See the email redirection guide: []({legacy}2001).
+### Step 2: Familiarise yourself with the OVH MX configuration
 
+In the table below, we have listed the OVH MX configuration to use for our MX Plan solutions (both as a standalone solution, or included as part of our [OVH Web Hosting plans](https://www.ovh.ie/web-hosting/){.external}, [Email Pro](https://www.ovh.ie/emails/email-pro/){.external} and [Exchange](https://www.ovh.ie/emails/){.external} solutions. Our email servers also have anti-spam and anti-virus protection.
 
-## You have an email service with another company
+|Domain|TTL|Record type|Priority|Target|
+|---|---|---|---|---|
+|*leave blank*|3600|MX|1|mx0.mail.ovh.net.|
+|*leave blank*|3600|MX|5|mx1.mail.ovh.net.|
+|*leave blank*|3600|MX|50|mx2.mail.ovh.net.|
+|*leave blank*|3600|MX|100|mx3.mail.ovh.net.|
 
-- You have a host name for your MX server(s)
+You will now need to add these MX records to your domain name’s DNS zone configuration. The next step will help you do so, in your domain name’s OVH DNS zone.
 
+### Step 3: Modify an OVH MX record’s configuration
 
-If your domain name uses an OVH DNS zone, but your email solution is hosted elsewhere (not at OVH or on a dedicated server), you can configure your OVH DNS zone in the same way, but with their mail servers instead of ours.
-Mail servers
-|Record|Priority|Target|
-|MX|1|your email server|
-|MX|5|your other email server|
+To modify the MX records in your domain’s OVH configuration, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Select `Domains`{.action} in the services menu on the left-hand side, click on the domain, then go to the `DNS Zone`{.action} tab.
 
+This table displays your domain’s OVH configuration. Each row corresponds to a DNS record. To start with, please check if the MX records already exist in your domain name’s OVH DNS zone configuration. You can do this using the search filter.
 
+![dnsmxrecord](images/mx-records-dns-zone.png){.thumbnail}
 
-- You do not have host names, but one or several IPs for your MX server(s)
+If there are already MX records and you would like to replace them, click the cogwheel icon on the right-hand side of each table row, then click `Delete record`{.action}. Please ensure, however, that you don’t delete all MX records before you add the new ones.
 
+To add a record, click `Add record`{.action}, then select `MX`{.action}. Fill in the information required, depending on the email solution you have ordered:
 
-If your domain name uses an OVH DNS zone, but your email service is external (on a local server for example), you can configure your OVH DNS zone in order to link this IP to a host name, because you cannot have an MX record pointint towards an IP address.
-Mail server
-|Subdomain|Record|Priority|Target|
-|mail2|A||Mail server IP|
-||MX|1|mail2.your_domain|
+- **If you have an OVH email solution:** Please refer to the information provided in [Step 2: Familiarise yourself with the OVH MX configuration](https://docs.ovh.com/ie/en/domains/web_hosting_configuring_mx_with_the_ovh_dns_zone/#step-2-familiarise-yourself-with-the-ovh-mx-configuration){.external}.
 
+- **If you are using an email solution from another service provider:** Please refer to the information given by your service provider.
 
+Once you have entered the information, finalise the steps, then click `Confirm`{.action}.
 
+> [!primary]
+>
+> The change can take 4-24 hours to fully propagate.
+>
 
-## Timing
-Also keep in mind, any DNS change can take up to 24 hours to propagate.
+## Go further
 
+[General information about DNS servers](https://docs.ovh.com/ie/en/domains/web_hosting_general_information_about_dns_servers/){.external}
+
+[Web hosting: How to edit your DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.
+
+Join our community of users on <https://community.ovh.com/en/>.
