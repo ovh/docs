@@ -1,137 +1,82 @@
 ---
-title: 'Web hosting: General information about DNS servers'
-excerpt: 'Web hosting: General information about DNS servers'
+title: 'Editing the DNS servers for an OVH domain name'
 slug: web_hosting_general_information_about_dns_servers
-legacy_guide_number: g2015
+excerpt: 'Find out how to edit the DNS servers for your OVH domain name'
+section: 'DNS and DNS zone'
+order: 1
 ---
 
+**Last updated May 11th, 2018**
 
-## Definition
-The DNS (or Domain Name System) translates a domain name into an IP address (the actual location of your website), so that your requests can reach the target server.
+## Objective
 
-![](images/img_3413.jpg){.thumbnail}
+DNS servers are designed to store DNS configurations for domain names. These configuration areas, which are called DNS zones, contain technical information in the form of records. DNS records are usually used to link your domain name to the server (or servers) that host your website and email addresses.
 
+In other words, these records stored on DNS servers are what make your domain names accessible on the internet.
 
-## The difference between DNS servers and DNS zones
+**Find out how to edit the DNS servers for your OVH domain name.**
 
-## DNS servers
+## Requirements
 
-- DNS servers are the servers which have been assigned to a domain name. It is therefore these servers which respond first before handing over to the DNS zone.
+- You must have a domain name registered with OVH.
+- You must have the appropriate permissions to manage the domain name from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+> [!warning]
+>
+> If your domain name is not registered with OVH, you will need to edit the DNS servers using the interface given by the service provider that manages it.
+>
 
+## Instructions
 
-## DNS zone
--The DNS zone is a file that stores different records which refer to, among other things, the addresses of the servers hosting your website (A), or your emails (MX). These addresses can take the form of IP addresses or host names.
+**We strongly recommend taking great care when you edit a domain name’s DNS servers.** Incorrect changes could render your website inaccessible, and prevent your email addresses from receiving new emails. By learning more about the impact of modifying DNS servers, you can get a better understanding of the changes you will make.
 
+When you modify your domain name’s DNS servers, you are modifying its DNS configuration. The new configuration replaces the old one, and is stored on the newly-set DNS servers. Technically, the domain then uses a new DNS zone.
 
-## Why should I edit servers or the DNS zone?
+However, it is important to note that:
 
-## DNS servers
-You may need to change DNS servers when switching registrar. Indeed, some registrars do not allow you to continue using their servers after you have switched your domain name to a competitor .
-You might also have your own dedicated server which uses a DNS server, and you want to use this to manage your domain .
+- The content of the old DNS configuration is not automatically replicated in the new configuration. Please ensure that your new configuration includes all of the information required for the services associated with your domain name to work properly (e.g. your website and email addresses).
 
-## DNS Zone
-When you want to change the server that hosts your website or your email. For example you may have changed host and need to modify your DNS zone.
-Once this has been updated, your domain will point to the new servers.
+- If you only want to edit a single element of your current DNS configuration (e.g. one DNS record), we recommend following our guide to editing the DNS zone instead: [Editing an OVH DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
-A guide on the DNS zone is available below:
+> [!warning]
+>
+> Before you start making any changes, please ensure that the changes you are about to make will not render your domain name inaccessible. If you are unsure about this, please check with the person asking you to make these changes.
+>
 
-- []({legacy}2015).
+### Step 1: Access the area for managing your domain’s OVH DNS servers
 
+First of all, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Next, go to the `DNS servers`{.action} tab.
 
+The table that appears will show the DNS servers currently set with OVH for your domain name. Several DNS servers may be listed, each with their own row in the table.
 
+![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
-## Logging on to your customer account
+### Step 2: Edit your domain’s DNS servers
 
-- Log on to your [customer account](https://www.ovh.com/manager/web) using your NIC handle and password.
+To start editing your DNS servers, click the `Modify DNS servers`{.action} button.
 
-- Click "Login" to confirm.
+In the text fields, replace the current DNS server details with the information for the new servers you would like to set. To add more servers to the current list, click the `+`{.action} icon to the right of the last table line. An additional row will then appear in the table, with text fields you can complete.
 
+Once you have entered this information, click `Apply configuration`{.action}. The statuses for the DNS servers will then update in the table, showing the new information that you have just provided.
 
+> [!primary]
+>
+> By clicking the `Reset the DNS servers`{.action} button, you can change the current DNS servers by automatically resetting them to the original OVH DNS servers. We advise only using this option if you would like to use OVH’s DNS servers again. 
+>
 
-![](images/img_3411.jpg){.thumbnail}
+![dnsserver](images/edit-dns-server-ovh-step2.png){.thumbnail}
 
+### Step 3: Wait for the modifications to fully propagate
 
-## Selecting a domain
+Once you have made the required changes, you will need to wait for them to become fully effective. Two successive time periods need to be taken into account:
 
-- In the left-hand menu, select "Domains", then select the domain you want to modify.
+- The change made on the OVH side needs to be taken into account by the organisation that manages your domain name extension. You can track the progress for this in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to the `Domains`{.action} section in the services bar on the left-hand side, then `Ongoing operations`{.action}.
 
+- Once the change has been taken into account by the organisation managing your domain name extension, you will need to wait for a maximum of 48 hours for the changes you have made to fully propagate.
 
+## Go further
 
-![](images/img_3405.jpg){.thumbnail}
+[Editing an OVH DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
-
-## Adding new DNS servers
-
-- Then go to "DNS management" and select "Add a DNS server".
-
-
-
-![](images/img_3406.jpg){.thumbnail}
-
-- Enter the first DNS server to be added, then confirm and do the same for the second DNS server.
-
-
-
-![](images/img_3407.jpg){.thumbnail}
-
-
-## Deleting old DNS servers
-
-- Click on the "trash" icon for the two old DNS servers to be deleted and then confirm.
-
-
-
-![](images/img_3408.jpg){.thumbnail}
-
-- Deletion in progress
-
-
-
-![](images/img_3409.jpg){.thumbnail}
-
-- The update will take a few minutes.
-
-
-
-![](images/img_3410.jpg){.thumbnail}
-
-
-## Reset DNS servers by default
-If you make a mistake with your DNS, you can reset your default DNS servers. 
-
-
-- Go to "DNS management" and select "Reset default DNS".
-
-
-
-![](images/img_3416.jpg){.thumbnail}
-
-- You just have to click "Confirm".
-
-
-
-![](images/img_3417.jpg){.thumbnail}
-
-
-## How to check the DNS servers which OVH has assigned to you
-In order to find out which DNS servers OVH has delegated to you, you can click on "DNS Zone", and then view the two "NS records" present in your zone.
-
-![](images/img_3418.jpg){.thumbnail}
-
-
-## Advanced management of DNS with Glue Registry
-To create your Glue Registry, see this guide:
-[]({legacy}1568)
-
-
-## Timings
-DNS Servers
-
-- All DNS server modifications can take up to 48h.
-
-DNS Zone
-- All modifications in your DNS zone can take up to 24h.
-
-
-
+Join our community of users on <https://community.ovh.com/en/>.
