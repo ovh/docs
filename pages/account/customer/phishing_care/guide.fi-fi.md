@@ -1,11 +1,11 @@
 ---
-title: Varo huijauksia - kuinka tunnistaa huijausviestit ja tietojenkalasteluyritykset
+title: 'Varo huijauksia - kuinka tunnistaa huijausviestit ja tietojenkalasteluyritykset'
 slug: huijaukset-petos-tietojenkalastelu
-excerpt: Kuinka tietojenkalasteluviestin tunnistaa, ja mitä on tehtävä, jos on klikannut vilpillistä linkkiä?
+excerpt: 'Kuinka tietojenkalasteluviestin tunnistaa, ja mitä on tehtävä, jos on klikannut vilpillistä linkkiä?'
 section: Tietoturva
 ---
 
-**Päivitetty 19.3.2018**
+**Päivitetty 30.5.2018**
 
 ## Tavoite
 
@@ -29,10 +29,16 @@ Olet saanut OVH:n nimissä lähetetyn viestin ja haluat varmistua sen aitoudesta
 
 ![OVH:n viestin ja tietojenkalasteluviestin erot](images/phishing_email.png){.thumbnail}
 
+> [!alert]
+> 
+> Tarkista, että nämä kolme ehtoa täyttyvät.
+> 
+
 |Numero - kuvaus|OVH:n sähköposti|Tietojenkalasteluviesti|
 |---|---|---|
-|1 - Aihe|OVH:n asiakastunnuksesi ja/tai tilisi sähköpostiosoite näkyy hakasulkeissa ennen otsikkoa.|Useimmiten viestissä on hakasulkeissa oleva merkintä “SPAM” eikä asiakastunnuksesi ole näkyvissä.|
-|2 - Linkki|Siirrä kursori linkin päälle ja näet suoraan linkin sisällön sitä kuitenkaan klikkaamatta (joko linkin vieressä kuten kuvakaappauksessa tai aivan selaimesi alaosassa). Tässä esimerkissä linkki on todella sivulle https://www.ovh.com.|Kun kursori siirretään esimerkissämme olevan linkin päälle, voidaan huomata, ettei sillä ole mitään tekemistä OVH:n kanssa. Älä klikkaa sitä.|
+|1 - Lähettäjä|Tarkista, että viestin lähettäjän osoite päättyy muotoon”@ovh-hosting.fi”, “@ovh.com”, “@soyoustart.com” tai “@kimsufi.com”.|Useimmiten viestissä on hakasulkeissa oleva merkintä “SPAM” eikä asiakastunnuksesi ole näkyvissä TAI se on virheellinen.|Viestin lähettäjä on väistämättä osoite, joka ei ole OVH:lta.|
+|2 - Aihe|Tarkista, että asiakastunnuksesi ** (alkaa OVH:lle rekisteröidyn sukunimesi ensimmäisellä kirjaimella ja sitä seuraa etunimesi ensimmäinen kirjain)** ja/tai tilisi sähköpostiosoite näkyy viestin aiheessa.|Useimmiten viestissä on hakasulkeissa oleva merkintä “SPAM” eikä asiakastunnuksesi ole näkyvissä TAI se on virheellinen.|
+|3 - Linkki|Siirrä kursori linkin päälle ja näet suoraan linkin sisällön sitä kuitenkaan klikkaamatta  (aivan selaimesi alaosassa). Tässä linkki on todella sivulle <https://www.ovh.com>.|Kun kursori siirretään esimerkissämme olevan linkin päälle, voidaan huomata, ettei sillä ole mitään tekemistä OVH:n kanssa. Älä klikkaa sitä.|
 
 
 > [!primary]
@@ -45,6 +51,10 @@ Olet saanut OVH:n nimissä lähetetyn viestin ja haluat varmistua sen aitoudesta
 
 Jos olet yllä olevien tarkistusten jälkeen varma, että olet saanut OVH:n asiakastietoja kalastelevan viestin, voit ilmoittaa meille asiasta lähettämällä mahdollisimman paljon tietoja (vähintään sähköpostin sisällön) osoitteeseen **<fraude@ovh.com>**.
 
+> [!primary]
+> 
+> Huomaa, että antamasi tiedot voidaan jakaa kolmansien osapuolten kanssa, jotta voimme torjua näitä uhkia.
+>
 
 ### Annoin henkilökohtaisia tietojani, mitä teen nyt?
 
@@ -52,7 +62,7 @@ Jos olet yllä olevien tarkistusten jälkeen varma, että olet saanut OVH:n asia
 
 Ainoa asia, mitä voit tehdä, on ottaa viipymättä yhteyttä pankkiisi tehdäksesi oikaisupyynnön. Ilmoita päivämäärä ja jos mahdollista kellonaika, jolloin syötit pankkikorttisi tiedot.
 
-**Ainoastaan oma pankkisi voi peruuttaa ulkopuolisen tekemät tapahtumat, joita kortillasi on mahdollisesti tietämättäsi tehty.   **
+**Ainoastaan oma pankkisi voi peruuttaa ulkopuolisen tekemät tapahtumat, joita kortillasi on mahdollisesti tietämättäsi tehty.**
 
 
 #### Jos olet syöttänyt OVH:n salasanasi huijaussivulle
