@@ -1,76 +1,93 @@
 ---
-title: Web hosting Error Sitio no instalado
-excerpt: En esta guía encontrará toda la información relativa a la página "Sitio no instalado" que puede aparecer en lugar de su sitio web.
+title: 'Solucionar el error «Sitio no instalado»'
 slug: web_hosting_error_sitio_no_instalado
-legacy_guide_number: g1585
+excerpt: 'Cómo solucionar el error «Sitio no instalado»'
 section: Diagnóstico
 ---
 
+**Última actualización: 30/05/2018**
 
-## Introducción
-La página «Sitio no instalado» se muestra cuando hay un error de punteo o cuando el dominio no está correctamente declarado en el servidor.
+## Objetivo
 
-Puede deberse a distintas causas:
+La página «Sitio no instalado» se muestra cuando la configuración DNS del dominio no es correcta o cuando el dominio que utiliza el sitio web no está configurado correctamente en el alojamiento web de OVH.
 
+**Esta guía explica cómo solucionar el error «Sitio no instalado».**
 
-- La redirección web está mal configurada.
+## Requisitos
 
-- El dominio o subdominio no está asociado al alojamiento. 
+- Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
+- Poder administrar el [plan de hosting de OVH](https://www.ovh.es/hosting/){.external} en el que está alojado el sitio web.
+- Poder administrar la configuración del dominio correspondiente (es decir, su zona DNS).
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-- La IP hacia la que apunta el dominio es errónea.
+## Procedimiento
 
+La página «Sitio no instalado» puede aparecer únicamente en dos casos:
 
+- El dominio que utiliza el sitio web no se ha añadido correctamente como **multisitio** a la configuración del alojamiento web de OVH.
+- El dominio que utiliza el sitio web no se ha asociado correctamente al alojamiento web de OVH porque la dirección IP que utiliza en su configuración DNS no es la correcta.
 
-![](images/img_2321.jpg){.thumbnail}
-Información útil:
+A continuación se explica cómo comprobar la configuración en ambos casos para solucionar el error «Sitio no instalado».
 
+![Sitio no instalado](images/site-not-installed-webpage.png){.thumbnail}
 
-- Al cambiar una dirección IP, el tiempo de propagación oscila entre 4 y 24 horas. Es posible que aparezca esta página hasta que finalice la propagación.
+### 1. Comprobar la configuración del alojamiento web (multisitio)
 
+Para comprobar que el dominio se ha añadido correctamente como multisitio al alojamiento, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento en el que esté alojado el sitio web que muestra la página «Sitio no instalado». A continuación, abra la pestaña `Multisitio`{.action}.
 
+Se mostrará una tabla que contiene todos los dominios añadidos al alojamiento como multisitio. Puede utilizar el campo de búsqueda para encontrar fácilmente el dominio en cuestión.
 
+Al buscar el dominio en la tabla pueden darse varias situaciones:
 
-## Error de configuración de una redirección web
-Una de las razones por las que puede aparecer esta página es que la redirección web esté solo parcialmente añadida. 
+|Casos posibles|Medidas que deberá adoptar|
+|---|---|
+|El dominio figura en la tabla|El dominio está correctamente añadido como multisitio al alojamiento web. Si ha añadido el dominio menos 15 minutos antes, espere a que transcurra este período de tiempo para que la página «Sitio no instalado» desaparezca. Si transcurridos unos minutos sigue apareciendo el mismo mensaje, vaya al paso [2. Comprobar la configuración DNS del dominio](https://docs.ovh.es/hosting/web_hosting_error_sitio_no_instalado/#2-comprobar-la-configuracion-dns-del-dominio){.external}.|
+|El dominio ha desaparecido de la tabla|Si había añadido el dominio, pero este ya no aparece en la tabla, es posible que no hubiera terminado todos los pasos para añadir el dominio al alojamiento web o que lo haya eliminado por error. En ese caso, siga todos los pasos descritos en la guía [Alojar varios sitios web en un mismo hosting](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/){.external} para volver a añadir el dominio.|
+|El dominio no aparece en la tabla|Todavía no ha añadido el dominio como multisitio al alojamiento de OVH. Para añadirlo, siga todos los pasos descritos en la guía [Alojar varios sitios web en un mismo hosting](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/){.external}.|
 
-Por ejemplo, puede haber configurado su dominio o subdominio para que apunten hacia la IP del servidor de redirección (213.186.33.5), pero sin crear la redirección en el [área de cliente](https://www.ovh.com/manager/web), o a la inversa.
+Si, a pesar de esto, la página «Sitio no instalado» sigue apareciendo en su sitio web, vaya al paso [2. Comprobar la configuración DNS del dominio](https://docs.ovh.es/hosting/web_hosting_error_sitio_no_instalado/#2-comprobar-la-configuracion-dns-del-dominio){.external}.
 
-Compruebe que ha creado correctamente la redirección web tanto para el dominio principal como para el subdominio «www» y que la IP a la que apuntan sea correcta (la IP del servidor de redirección es 213.186.33.5).
+### 2. Comprobar la configuración DNS del dominio
 
-Para más información sobre la creación de redirecciones, consulte esta guía:
+En primer lugar, deberá obtener la información relativa a la configuración de OVH que debe utilizar. Para ello, en la pestaña `Información general`{.action}, consulte las direcciones que aparecen bajo **IPv4** e **IPv6**.
 
-- []({legacy}1339).
+![Sitio no instalado](images/site-not-installed-know-a-records.png){.thumbnail}
 
+Esta información le permitirá comprobar la configuración DNS del dominio. Para ello, acceda al panel que le ofrezca su proveedor para gestionar los servidores DNS.
 
+> [!primary]
+>
+> Si el dominio está registrado con OVH, compruebe que utiliza nuestra configuración. En el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en` Dominios`{.action} en la columna izquierda y seleccione el dominio. A continuación, abra la pestaña `Servidores DNS`{.action}.
+>
 
-![](images/img_2268.jpg){.thumbnail}
+Según la configuración que utilice el dominio, puede realizar la comprobación de dos formas distintas:
 
+- **Si el dominio no utiliza la configuración de OVH** (es decir, si no utiliza los servidores DNS de OVH), deberá realizar la comprobación que se describe más abajo desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS.
 
-## Error de instalación en el alojamiento de alguno de los dominios o subdominios
-Otra de las razones por las que puede aparecer esta página es que uno de los dominios o subdominios no esté correctamente instalado.
+- **Si el dominio utiliza la configuración de OVH** (es decir, sus servidores DNS), puede realizar la comprobación desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, seleccione el dominio en la columna izquierda y abra la pestaña `Zona DNS`{.action}. Se mostrará una tabla que contiene la configuración DNS, con los distintos registros de su dominio (cada línea representa un registro distinto). Puede filtrar el contenido por tipo de registro o por dominio.
 
-Por ejemplo, puede haber configurado su dominio o subdominio para que apunten hacia la IP del servidor web (cluster), pero sin haberlos vinculado en el [área de cliente](https://www.ovh.com/manager/web).
+![Sitio no instalado](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
 
-![](images/img_2269.jpg){.thumbnail}
-Compruebe que ha añadido correctamente su dominio o subdominio desde el área de cliente con el botón «Asociar un dominio». No olvide hacer lo mismo con el subdominio «www».
+Compruebe que los registros DNS del dominio en el que se muestra la página «Sitio no instalado» están correctamente configurados como se indica a continuación:
 
-También hay que comprobar que la IP hacia la que apuntan es correcta (la IP del alojamiento se indica en el [área de cliente](https://www.ovh.com/manager/web)).
+|Registro|Destino|
+|---|---|
+|A|El destino debe corresponder a la dirección **IPv4** que aparecía en la pestaña `Información general`{.action} del dominio.|
+|AAAA|El destino debe corresponder a la dirección **IPv6** que aparecía en la pestaña `Información general`{.action} del dominio.|
 
-Para más información sobre la instalación de multidominios, consulte esta guía: 
+Por lo tanto, pueden darse dos situaciones:
 
-- []({legacy}1332)
+|Casos posibles|Medidas que deberá adoptar|
+|---|---|
+|Los destinos son correctos|Eso significa que la configuración del dominio es correcta. Si ha modificado la configuración DNS menos de 24 horas antes, espere a que transcurra este período de tiempo para que los cambios sean efectivos.|
+|Los destinos son incorrectos|Debe modificar la configuración del dominio. Si utiliza la configuración de OVH, siga los pasos indicados en la guía [¿Cómo editar mi zona DNS?](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}. Si no utiliza la configuración de OVH, siga las indicaciones que le ofrezca su proveedor de DNS. Una vez realizados los cambios necesarios, la modificación tarda un máximo de 24 horas en propagarse y ser efectiva.|
 
+Si ha realizado las acciones que se indican en esta guía y ha esperado el tiempo necesario, la página «Sitio no instalado» debería desaparecer.
 
+## Más información 
 
-![](images/img_3965.jpg){.thumbnail}
+[Alojar varios sitios en un mismo hosting](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/){.external}
 
+[¿Cómo editar mi zona DNS?](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}
 
-## Error en la IP hacia la que apunta el dominio
-Otro error posible es que el dominio no apunte hacia la IP adecuada o apunte hacia la IP de un alojamiento web en el que no esté instalado el dominio.
-
-Por ejemplo, usted puede tener el hosting para su dominio en el cluster12 y que la IP esté apuntando al cluster14.
-
-[Consultar la dirección IP de mi alojamiento web](https://www.ovh.es/g1290.cdn-geocache#acciones_desde_el_manager_v3_desactivar_el_acelerador_geocache).
-
-![](images/img_2274.jpg){.thumbnail}
-
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
