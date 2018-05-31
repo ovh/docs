@@ -1,11 +1,11 @@
 ---
-title: Configuring your email address in Outlook 2016 for Windows
+title: 'Configuring your email address in Outlook 2016 for Windows'
 slug: configuration-outlook-2016
-excerpt: Find out how to configure your MX Plan email address in Outlook 2016 for Windows
+excerpt: 'Find out how to configure your MX Plan email address in Outlook 2016 for Windows'
 section: Outlook
 ---
 
-**Last updated 26th March 2018**
+**Last updated 31st May 2018**
 
 ## Objective
 
@@ -21,7 +21,7 @@ You can configure MX Plan email addresses on email clients, if they are compatib
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Mac? Refer to our documentation: [Configuring an email address in Outlook 2016 for Mac](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016-mac/){.external}.
+> Are you using Outlook 2016 for Mac? Refer to our documentation: [Configuring an email address in Outlook 2016 for Mac](https://docs.ovh.com/ie/en/emails/configuration-outlook-2016-mac/){.external}.
 >
 
 ## Instructions
@@ -92,8 +92,8 @@ OVH also has a web application you can use to access your email account from you
 
 ## Go further
 
-[Configuring your Email Pro account in Outlook 2016 for Windows](https://docs.ovh.com/gb/en/emails-pro/configuration-outlook-2016/){.external}
+[Configuring your Email Pro account in Outlook 2016 for Windows](https://docs.ovh.com/ie/en/emails-pro/configuration-outlook-2016/){.external}
 
-[Configuring your Exchange account in Outlook 2016 for Windows](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/configuration-outlook-2016/){.external}
+[Configuring your Exchange account in Outlook 2016 for Windows](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/configuration-outlook-2016/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.
