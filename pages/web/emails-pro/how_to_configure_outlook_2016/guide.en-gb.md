@@ -1,11 +1,11 @@
 ---
-title: Configuring your Email Pro account in Outlook 2016 for Windows
+title: 'Configuring your Email Pro account in Outlook 2016 for Windows'
 slug: configuration-outlook-2016
-excerpt: Find out how to configure your Email Pro account in Outlook 2016 for Windows
-section: Email client configuration
+excerpt: 'Find out how to configure your Email Pro account in Outlook 2016 for Windows'
+section: 'Email client configuration'
 ---
 
-**Last updated 23rd March 2018**
+**Last updated 31st May 2018**
 
 ## Objective
 
@@ -36,7 +36,7 @@ Once you have launched the Outlook app on your device, you can add an account in
 
 ![emailpro](images/configuration-outlook-2016-windows-step1.png){.thumbnail}
 
-Enter your email address, then click `Advanced options`{.action}. Tick the box that appears next to `Configure my account manually`{.action}, then click `Connection`{.action}. Select **IMAP** from the list of account types.
+Enter your email address, then click `Advanced options`{.action}. Tick the box that appears next to `Let me set up my account manually`{.action}, then click `Connection`{.action}. Select **IMAP** from the list of account types.
 
 ![emailpro](images/configuration-outlook-2016-windows-step2.png){.thumbnail}
 
@@ -77,7 +77,7 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH also offers a web application that offers various [collaborative features](https://www.ovh.co.uk/emails/){.external},  accessible at <https://pro1.mail.ovh.net>. You can log in using your email credentials.
+OVH also offers a web application that includes various [collaborative features](https://www.ovh.co.uk/emails/){.external},  accessible at <https://pro1.mail.ovh.net>. You can log in using your email credentials.
 
 ## Go further
 

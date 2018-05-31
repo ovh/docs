@@ -1,15 +1,15 @@
 ---
-title: Configuring your Email Pro account in Outlook 2016 for Mac
+title: 'Configuring your Email Pro account in Outlook 2016 for Mac'
 slug: configuration-outlook-2016-mac
-excerpt: Find out how to configure your Email Pro account in Outlook 2016 for Mac.
-section: Email client configuration
+excerpt: 'Find out how to configure your Email Pro account in Outlook 2016 for Mac.'
+section: 'Email client configuration'
 ---
 
-**Last updated 23rd March 2018**
+**Last updated 31st May 2018**
 
 ## Objective
 
-You can configure Email Pro accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application.
+You can configure Email Pro accounts on email clients, if they are compatible. By doing so, you can use your email address with your preferred email application.
 
 **Find out how to configure your Email Pro account in Outlook 2016 for Mac.**
 
@@ -21,7 +21,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Windows? Consult our documentation: [Configuring your email address in Outlook 2016 for Windows](https://docs.ovh.com/gb/en/emails-pro/configuration-outlook-2016/){.external}.
+> Are you using Outlook 2016 for Windows? Read this guide: [Configuring your email address in Outlook 2016 for Windows](https://docs.ovh.com/gb/en/emails-pro/configuration-outlook-2016/){.external}.
 >
 
 ## Instructions
@@ -30,9 +30,9 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 Once you have launched Outlook on your device, you can add an account in two different ways:
 
-- **When you start the application for the first time**: a setup wizard will appear and prompt you to enter your email address.
+- **When you start the application for the first time.** A setup wizard will appear and prompt you to enter your email address.
 
-- **If you have already added an account:** Click `Tools`{.action} in the menu bar at the top of your screen, then `Accounts`{.action}. In the window that pops up, click `+`{.action}, then `New account`{.action}.
+- **If you have already added an account.** Click `Tools`{.action} in the menu bar at the top of your screen, then `Accounts`{.action}. In the window that pops up, click `+`{.action}, then `New account`{.action}.
 
 ![emailpro](images/configuration-outlook-2016-mac-step1.png){.thumbnail}
 
@@ -44,9 +44,9 @@ Enter your email address, then click `Continue`{.action}. For the provider, clic
 |Mail address|Enter a name that will distinguish this account from any other accounts added in your Outlook app.|
 |Username|Enter your full email address.|
 |Password|Enter the password for your email address.|
-|Incoming server|Enter the server “pro1.mail.ovh.net”. Leave the Use SSL to connect box ticked.|
+|Incoming server|Enter the server “pro1.mail.ovh.net”. Leave the "Use SSL to connect" box ticked.|
 |Incoming port|Enter port 993.|
-|Outgoing server|Enter the server “pro1.mail.ovh.net”. Leave the Use SSL to connect box ticked.|
+|Outgoing server|Enter the server “pro1.mail.ovh.net”. Leave the "Use SSL to connect" box ticked.|
 |Outgoing port|Enter port 587.|
 
 Once you have entered this information, click `Next`{.action}. If the information is correct, Outlook will successfully connect to the account.
@@ -66,7 +66,7 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH also offers a web application that offers various [collaborative features](https://www.ovh.co.uk/emails/){.external},  accessible at <https://pro1.mail.ovh.net>. You can log in using your email credentials.
+OVH also offers a web application that includes various [collaborative features](https://www.ovh.co.uk/emails/){.external}, accessible at <https://pro1.mail.ovh.net>. You can log in using your email credentials.
 
 ## Go further
 
