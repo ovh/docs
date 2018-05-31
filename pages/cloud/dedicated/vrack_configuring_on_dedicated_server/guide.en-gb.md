@@ -1,16 +1,19 @@
 ---
-title: 'Configuring the vRack on Your Dedicated Servers'
+title: 'Configuring the vRack on your dedicated servers'
 slug: configuring-vrack-on-dedicated-servers
 excerpt: 'Help on how to configure the vRack on two or more dedicated servers'
 section: 'Network Management'
 ---
 
-**Last updated 15th May, 2018**
+**Last updated 31st May 2018**
 
 ## Objective
+
 The vRack or virtual rack allows multiple servers to be grouped together (regardless of number and physical location in our datacentre) and connects them to a virtual switch within the same private network. Your servers can communicate privately and securely between each other (within a dedicated VLAN).
 
 **This guide will help you to configure the vRack on two or more dedicated servers.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requirements
 
