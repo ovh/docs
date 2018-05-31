@@ -1,11 +1,11 @@
 ---
-title: FAQ - Le renouvellement automatique chez OVH
+title: 'FAQ - Le renouvellement automatique chez OVH'
 slug: faq-renouvellement-automatique-ovh
-excerpt: Retrouvez ici les réponses à vos questions qui portent sur le nouveau processus de renouvellement automatique qui sera en production le 2 mai 2017.
+excerpt: 'Retrouvez ici les réponses à vos questions qui portent sur le nouveau processus de renouvellement automatique qui sera en production le 2 mai 2017.'
 section: FAQ
 ---
 
-La version anglaise de ce guide est disponible [ici](../faq_automatic_renewal_ovh/guide.en-gb.md)
+La version anglaise de ce guide est disponible [ici](https://docs.ovh.com/gb/en/billing/faq-automatic-renewal-ovh/){.external}.
 
 
 ## Quels sont les grands changements?
