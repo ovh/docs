@@ -1,342 +1,148 @@
 ---
-title: 'Web hosting: how to get my website online'
-description: 'Web hosting: how to get my website online'
+title: 'Publishing a website on your Web Hosting space'
 slug: web_hosting_how_to_get_my_website_online
-legacy_guide_number: g1374
+excerpt: 'Learn how to publish a website on your OVH web hosting space'
+section: 'Getting started'
+order: 2
 ---
 
+**Last updated 31st May 2018**
 
-## Overview
-A website can only work and display properly if it's placed in the correct directory. The general rule is that your website files should be placed in your web hosting package's "www" directory. To do this, you need to transfer your files to your web hosting package with software that uses File Transfer Protocol (FTP). We will use [FileZilla](http://filezilla-project.org/), a free solution.
+## Objective
 
+There are a multitude of different websites on the internet. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVH Web Hosting space](https://www.ovh.ie/web-hosting/){.external} lets you host the site you want, provided it is compatible with the [configuration of our infrastructures](http://pro.ovh.net/infos/){.external}.
 
-### Get your FTP login details
+**Learn how to publish a website on your OVH Web Hosting space.**
 
-## When you signed up for an OVH hosting package you will have received an email after your solution was installed.
-This email contains the necessary FTP credentials. 
-Depending on your solution and the domain connected to your hosting package, the subject of the email should look like this:
+## Requirements
 
+- You must have an [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}.
+- You must have received an email confirming that your Web Hosting plan has been set up.
+- You must have a [domain name](https://www.ovh.ie/domains/){.external} that can be used to access your website.
+- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-```
-/* Personal hosting package ordered for the "your-domain.tld" */
+## Instructions
 
-[OVH-perso] your-domain.tld installed
-```
+### Step 1: define your project
 
+Having a clear idea of your objective is essential if your project is to be a success. What do you want to do with your website? How will you publish it? There are several potential ways to make your project become a reality with your OVH Web Hosting plan:
 
-Content:
+- **Use a turn-key site, with OVH’s 1-click modules.** This solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). OVH offers four such 1-click modules, compatible with our infrastructures, on the [“Create a website with 1-click modules”](https://www.ovh.ie/web-hosting/website/){.external} page.
 
+- **Use a turn-key website that you install manually.** This solution gives you the benefit of a ready-made website structure that you can customise (themes, text, etc.), which you install yourself on your OVH Web Hosting space.
 
-```
-[...]
-YOUR FTP CODES
--------------
+- **Create your website yourself.** This is a more technical solution that requires programming skills, but it does give you the option of creating a tailor-made project.
 
-These codes will enable you to upload your website (Please note: Your data must be uploaded to the www directory)
+- **Migrate an existing website to OVH.** This solution may prove complicated if an interruption in service for the website concerned is not an option. To guide you through this process, you should consult the following guide: [“Migrating your website and emails to OVH”](https://docs.ovh.com/ie/en/hosting/migrating-website-to-ovh/){.external}.
 
-FTP server: ftp.your-domaine.tld or ftp.cluster0XX.ovh.net
-User login: ftplogin
-Password: mDpFtP
+Once you have examined these various possibilities, you can choose one of two options:
 
-[...]
-```
+- **You wish to use our 1-click modules.** Refer to the instructions set out in our [“Install your website with 1-click modules”](https://docs.ovh.com/ie/en/hosting/web_hosting_web_hosting_modules/){.external} guide;
 
+- **You do not wish to use our 1-click modules.** You will have to manually install your website on your hosting space. You may find the information set out in this documentation helpful, but it is no substitute for the assistance of a webmaster.
+ 
+> [!warning]
+>
+> OVH is providing you with services for which you are responsible, including with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> 
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you enlist the services of a specialist provider and/or contact the service's software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>
 
-You will need the username and password to log on. 
+### Step 2: putting your website files online in your storage space
 
-If the FTP password has changed since the solution was installed, the password in this email will be of no use. This means that you have changed it in the customer account. The user login cannot be changed, make sure your keep it safe.
+There are several steps involved in manually publishing a website on a hosting space. Some of these steps will be optional, depending on which site you install, and there may be multiple ways of carrying them out. For most existing projects, however, there are two major steps involved in publishing a website, the first of which is uploading the website’s files to the relevant storage space.
 
+Publication takes place in several sub-steps:
 
-### In the customer account
-Once you are logged in to your customer account, select your domain name in the "Hostings" section. 
-Click on the "FTP" tab. 
-Click the cogwheel to the right of your login then "change the password".
-You can change your password via the interface that appears.
-Enter the new password and confirm. Your password must have between 8 and 12 alphanumeric characters.
+#### 1. Gather the files for the website
 
+Make sure you have all the files for the website that you are looking to publish. If you are migrating an existing website, you can obtain these files from your former hosting provider.
 
-You will need to wait a few minutes for the change to take effect.
+#### 2. Log in to your storage space
 
+If you have an FTP username, a password and a server address, you will be able to log in to your storage space. These elements were sent to you in the email informing you that your OVH Web Hosting plan had been set up. If you are no longer in possession of the password, refer to the instructions set out in this guide: [“Changing the password for an FTP user”](https://docs.ovh.com/ie/en/hosting/modify-ftp-user-password/){.external}.
 
-### Use FileZilla
-There is a guide available that explains how to use FileZilla:[]({legacy}1380)
+To obtain the server address or username to allow you to access your storage space, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then click on `Hosting Plans`{.action} in the service bar on the left. Select the name of the hosting plan concerned and click on the `FTP - SSH`{.action} tab.
 
-For this you will need access to:
+![siteinstallation](images/get-website-online-step1.png){.thumbnail}
 
-- your website files
-- the database backup file (if necessary)
+Once you are in possession of all the elements, you have three different options for connecting to your storage space:
 
-Your FTP login details:
+- **Use OVH’s FTP Explorer.** This enables you to access your storage space via your browser. To use it, stay in the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
 
-- host: ftp.your-domain.tld or ftp.cluster0XX.ovh.net or newftp.cluster0XX.ovh.net
-- login (username): your FTP login
-- password: the FTP password (see above paragraphs)
-- port: 21 (to connect via SSH: 22 - from the Professional plan upwards)
+- **Use FTP-compatible software.** You will need to install an FTP-compatible program on your computer (e.g. FileZilla). Since OVH did not create the software package you have installed, please contact its publisher if you encounter any difficulties when using it.
 
+- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external} are required to use this type of access.
 
+#### 3. Uploading the files to the storage space
 
-![](images/img_1858.jpg){.thumbnail}
+Once you have logged in to your storage space, all you need to do is place the files for your website online. **We urge you to exercise particular care when selecting the folder to which you upload the files.** For conventional websites, the files should be uploaded to the “www” folder. However, if you host several websites on your hosting space, you have almost certainly registered several **Multisites**.
 
+To identify the folder from which the website should be published, go to the `Multisite`{.action} tab in your OVH Control Panel. In the table shown, check the `Root folder`{.action} stated for the domain in question. This is the folder in which you should publish the files for your website.
 
-## Get your FTP login details
+You may find a file called “index.html” in your storage space. This file may have been created by OVH during the installation of your Web Hosting plan in order to show a default page for your website. If this is the case, remember to delete it when you are putting your files online.
 
-### Via the customer account
-From the customer account, you can automatically restore an FTP backup of the files on your Web Hosting plan from an earlier date. 
+![siteinstallation](images/get-website-online-step2.png){.thumbnail}
 
-To do this, select your domain name in the customer account in the Hostings section..
+### Step 3: connecting your website to a database
 
-Go to "FTP" then "Restoring a backup".
+> [!primary]
+>
+> This step is optional if your website does not need to be connected to a database.
+>
 
-![](images/img_2690.jpg){.thumbnail}
-You can then choose the restoration date.
+Today, virtually all content management systems (CMSs), such as WordPress or Joomla!, use a database for storing dynamic elements, such as comments or articles. It is therefore essential for the files of the website and the database to be connected if the website is to function correctly. To establish this connection, a configuration file that contains the database’s information is used.
 
-Please note that restored data will overwrite the current data on your hosting package.
+Depending on the website used, this connection may need to be established manually, or via an interface generated by the site itself. This is done through several sub-steps, some of which may be optional.
 
-Click "Next" to confirm the operation. It will take a few hours for the files to be restored.
+#### 1. Recover the existing database (optional)
 
+If you are migrating an existing website, you can recover your existing database from your former hosting provider. If it is a new website, you can move on to the next step.
 
-- All of the FTP files will be restored with this system, which is not the case with FileZilla backup restore.
+#### 2. Create the database with OVH (optional)
 
+If you already have a database and wish to use it (from an [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}, a [Private SQL](https://www.ovh.ie/web-hosting/sql-options.xml){.external}, or a [Cloud DB](https://www.ovh.ie/cloud/cloud-databases/){.external}) you will need your username and password, the name of the database and the address of the server. You can now proceed to the next step.
 
+If you want to create a new database with OVH, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then click on `Hosting plans`{.action} in the services bar on the left. Select the name of the hosting plan concerned and click on the `Database`{.action} tab.
 
-### Via FileZilla?
-A guide on setting up and using FileZilla is available to you:[]({legacy}1593)
-## Databases
+Now click the `Create a database`{.action} button, or, if this button is not shown, click on `Actions`{.action}, then on `Create a database`{.action}. Follow the instructions shown.
 
-### Overview
-You can store data on your website or your applications with a database.
+![siteinstallation](images/get-website-online-step3.png){.thumbnail}
 
-A database lets you store different types of data: website content, URLs and information on your website visitors.
+#### 3. Import the existing database (optional)
 
-You can create either a MySQL, PostgreSQL or SQL Server (available with shared Windows hosting) database on your web hosting package.
+If you are migrating an existing website, you can import your existing database into the newly created one. If it is a new website, you can move on to the next step.
 
+There are several methods for importing a database. OVH offers one such method in your Control Panel. Once you are on the list of databases created for your services in your OVH Control Panel, click on the three dots to the right of the newly-created database, then on `Import file`{.action}. Now follow the instructions shown.
 
-### Create
-When you install your web hosting package, the database that comes with it is not automatically installed.
-You will therefore not get this information via email.
-First you have to create your database.
-Log on to your customer account, select the domain name in question in the Hostings section. 
+![siteinstallation](images/get-website-online-step4.png){.thumbnail}
 
-Then in the "SQL" menu go to "Create a database"
+#### 4. Connect your website to the database
 
-![](images/img_2743.jpg){.thumbnail}
+Once your database is available and you have uploaded your files to your storage space, all you need to do is connect them. To do this, you will need the following information: a username, the associated password, the name of the database and the address of the server.
 
-Select the database engine: “Mysql or PostgreSQL.” Select the type of database then "Next"
+How this connection is created will depend on the type of website you are publishing. This process is dictated by how your website is configured and has nothing to do with OVH. We therefore recommend that you contact your website’s editor or a similar professional (such as a specialist service provider) if you need assistance with this procedure.
 
-You will then be asked for a username and password. 
+### Step 4: access your website
 
-An email with the credentials for the database will be sent to you. 
+Once you have uploaded your files to your storage space and you have connected your database to it (if your website uses one), you can now access your website. Your site should display properly in your web browser.
 
-A few minutes later you will get an email with the information related to your database.
+If it does not display properly, we recommend that you:
 
-![](images/img_2694.jpg){.thumbnail}
+- **Check the configuration of the domain name.** The DNS configuration of your domain name may be preventing the website you have just uploaded to your OVH Web Hosting space from displaying correctly. Make sure that the A record currently configured in the DNS zone for your domain corresponds to the IP address of your OVH Web Hosting plan.
 
+- **Make sure that no files are missing.** When uploading your files to your OVH Web Hosting space, you may have forgotten to transfer some files, or an error may have occurred. Be careful during this process, however, to avoid breaking any links between the website’s files and the database (if the website uses one).
 
-### Get my SQL credentials
+- **Check that there are no errors in the site's code.** This is definitely the most technical check to carry out, but the files you have uploaded may contain errors, which are preventing the server from displaying your website correctly.
 
-- Please note your database is not automatically created when you install your hosting package.
+As a reminder, if you encounter difficulties when publishing your website, we recommend that you contact a specialist and/or the publisher of the service (the CMS installed, for example).
 
+## Go further
 
-An email with database credentials will be sent to you after you have created it.
-You can find this email again in your customer account. Once you are logged on, click on the Support menu then Email history.
+[Migrating your website and emails to OVH](https://docs.ovh.com/ie/en/hosting/migrating-website-to-ovh/){.external}
 
-![](images/img_2747.jpg){.thumbnail}
-The subject of the email will look something like this:
+[Install your website with 1-click modules](https://docs.ovh.com/ie/en/hosting/web_hosting_web_hosting_modules/){.external}
 
+[Modifying an FTP user password](https://docs.ovh.com/ie/en/hosting/modify-ftp-user-password/){.external}
 
-```
-[MySQL] Database_name_ MySQL database
-```
-
-
-Content:
-
-
-```
-[...]
-
-Your MySQL database has been installed on our server.
-
-Here are the technical details
-
-MySQL:
-Server: mysql51-66.pro
-User: Database_name
-Database name: Database_name
-Password: ************
-
-[...]
-```
-
-
-
-You can change the password for your database in the customer account.
-
-
-- Please note: changing your database password may cause your website or services that use the database to go down.
-
-
-If you wish to change your password, log in to the control panel. Select your domain name, then go to: "SQL" -> click on the cogwheel to the right of your database then: "Change the password".
-
-Here you can change your database password.
-
-Consider updating your configuration file to ensure that it connects to the database with the new password (if there was already a website on your hosting package when you changed the password).
-
-
-### Log into PhpMyAdmin
-Firstly, you will need to log in to [the PhpMyAdmin interface](https://phpmyadmin.ovh.net/).
-
-You need to fill in the required fields:
-
-
-- Server: user.mysql.db (as stated in the database creation email)
-
-- Username: provided in the database creation email
-
-- Password: your database password
-
-- Version: you can choose to log in to the current database, or to a snapshot from 1 or 7 days ago
-
-
-Fill in the requested fields and then click "Go" to log in.
-
-![](images/img_1960.jpg){.thumbnail}
-
-- For MySQL4 databases, please click on the link at the bottom of the login interface.
-
-
-
-
-### Export the database
-How do I export my SQL database? How can I back up my database?
-
-A guide on exporting databases is available to you:[]({legacy}1394)
-
-![](images/img_1932.jpg){.thumbnail}
-
-
-### Import the database
-How do I import the backup of my MySQL databases? What are the different ways of doing this?
-
-A guide on exporting databases is available to you:[]({legacy}1394)
-
-![](images/img_1933.jpg){.thumbnail}
-
-
-### Repare - Optimise - Analyse
-You can repare, optimise and analyse your database tables.
-
-For this, log in to your database from the [PhpMyAdmin interface](https://phpmyadmin.ovh.net/), and select the table you want to work with.
-
-Then click on "Operations" in the top right-hand corner.
-
-You can now carry out various operations on the table, in the table maintenance section.
-
-![](images/img_1961.jpg){.thumbnail}
-
-
-### Use Private SQL
-Want to know how to use Pirvate SQL, and how to import and export data?
-
-A guide on using Private SQL is available to you:[Private SQL user guide](http://guides.ovh.com/GuideSqlPrive)
-
-![](images/img_1866.jpg){.thumbnail}
-
-## 1-click Modules
-
-### Setup guide
-Do you need to set up your website quickly but have limited web knowledge?
-
-A guide on installing 1-click modules at OVH is available to you:[]({legacy}1402)
-
-![](images/img_1930.jpg){.thumbnail}
-
-
-### Install WordPress for the first time
-
-WordPress is a content management system (CMS) which lets you easily create and manage a website or blog. Free and open source, WordPress can be customised with themes and add-ons.
-
-
-- Blog & Site
-
-A guide on manually installing WordPress is available to you:[]({legacy}1375)
-
-
-![](images/img_1873.jpg){.thumbnail}
-
-
-### Install Joomla! for the first time
-
-Joomla is a content management system (CMS). It's free and open-source, and can be personalised with themes and add-ons.
-This CMS is a web application that lets you easily manage a website or dynamic intranet site.
-
-
-- Website
-
-A guide on manually installing Joomla is available to you:[]({legacy}1375)
-
-
-![](images/img_1874.jpg){.thumbnail}
-
-
-### Install PrestaShop for the first time
-
-PrestaShop is an open-source web application that lets you set up an e-commerce website to sell goods online.
-
-
-- Online shop
-
-A guide on manually installing PrestaShop is available to you:[]({legacy}1375)
-
-
-![](images/img_1862.jpg){.thumbnail}
-
-## Useful information
-
-### .ovhconfig file
-Do you want to update your version of PHP or activate phpfpm?
-
-]A guide on using and configuring .ovhconfig is available to you:
-
-
-- []({legacy}1175)
-
-- []({legacy}1207)
-
-
-
-![](images/img_1867.jpg){.thumbnail}
-
-
-### Libraries available on web hosting packages
-Information on available libraries:
-
-|Library|Availability| 
-|---|---|
-|ffmepg|not activated| 
-|GD|activated| 
-|imagemagik|activated| 
-|zend (opcache)|activated| 
-|PDO|activated| 
-|Zip - Gzip|activated|
-
-
-
-
-![](images/img_1867.jpg){.thumbnail}
-Please note: the following options are no longer active (they're no longer supported by PHP):
-
-
-- register_globals
-- magic_quotes_gpc
-
-
-
-
-### Optimise your website's performance
-Do you want to find out why your website is slow? Or do you just want to improve your website's performance?
-
-A guide on performing a diagnostic on your website's latency and optimising performance is available to you:[]({legacy}1396)
-
-![](images/img_1865.jpg){.thumbnail}
-
+Join our community of users on <https://community.ovh.com/en/>.
