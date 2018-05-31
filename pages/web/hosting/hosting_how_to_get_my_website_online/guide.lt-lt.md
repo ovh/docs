@@ -1,349 +1,148 @@
 ---
-title: 'Svetainių talpinimas: Svetainės įkėlimas į internetą'
-description: 'Šiame gide pateikiama informacija, kaip į OVH talpinimo planą įkelti svetainę.'
+title: 'Publishing a website on your Web Hosting space'
 slug: svetainiu_talpinimas_svetaines_ikelimas_i_interneta
-legacy_guide_number: g1374
+excerpt: 'Learn how to publish a website on your OVH web hosting space'
+section: 'Getting started'
+order: 2
 ---
 
+**Last updated 31st May 2018**
 
-## Bendra informacija
-Svetainė gerai veiks, kai įkelsite ją į tinkamą katalogą. Pagrindinė taisyklė OVH yra ta, kad svetaines reikia kelti į katalogą www. Būtent į šį katalogą (pagal nutylėjimą) keliami svetainės failai. Failų perkėlimui reikės programos, naudojančios FTP (File Transfer Protocol) protokolą.
-Mes rekomenduojame naudoti nemokamą programą [FileZilla](http://filezilla-project.org/).
+## Objective
 
+There are a multitude of different websites on the internet. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVH Web Hosting space](https://www.ovh.lt/svetainiu-talpinimas/){.external} lets you host the site you want, provided it is compatible with the [configuration of our infrastructures](http://pro.ovh.net/infos/){.external}.
 
-## FTP prisijungimo duomenys
+**Learn how to publish a website on your OVH Web Hosting space.**
 
-### Svetainių talpinimo plano diegimo el. laiškas
-OVH patvirtinus jūsų svetainių talpinimo plano užsakymą, el. paštu informuosime apie jūsų paslaugų įdiegimą.
+## Requirements
 
-Šiame el. laiške, tarp visų kitų duomenų, pateikti FTP prisijungimo duomenys.
+- You must have an [OVH Web Hosting plan](https://www.ovh.lt/svetainiu-talpinimas/){.external}.
+- You must have received an email confirming that your Web Hosting plan has been set up.
+- You must have a [domain name](https://www.ovh.lt/domenai/){.external} that can be used to access your website.
+- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-Priklausomai nuo užsakyto plano ir su jūsų talpinimo planu susieto domeno, el. laiško tema gali būti:
+## Instructions
 
+### Step 1: define your project
 
-```
-/* Asmeninis talpinimo planas užsakytas domenui jusu-domenas.tld */
+Having a clear idea of your objective is essential if your project is to be a success. What do you want to do with your website? How will you publish it? There are several potential ways to make your project become a reality with your OVH Web Hosting plan:
 
-[OVH-perso] jusu-domenas.tld įdiegtas
-```
+- **Use a turn-key site, with OVH’s 1-click modules.** This solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). OVH offers four such 1-click modules, compatible with our infrastructures, on the [“Create a website with 1-click modules”](https://www.ovh.lt/svetainiu-talpinimas/website/){.external} page.
 
+- **Use a turn-key website that you install manually.** This solution gives you the benefit of a ready-made website structure that you can customise (themes, text, etc.), which you install yourself on your OVH Web Hosting space.
 
-Turinys:
+- **Create your website yourself.** This is a more technical solution that requires programming skills, but it does give you the option of creating a tailor-made project.
 
+- **Migrate an existing website to OVH.** This solution may prove complicated if an interruption in service for the website concerned is not an option. To guide you through this process, you should consult the following guide: [“Migrating your website and emails to OVH”](https://docs.ovh.com/lt/hosting/migrating-website-to-ovh/){.external}.
 
-```
-[...]
-JŪSŲ FTP KODAI
---------------
+Once you have examined these various possibilities, you can choose one of two options:
 
-Šie kodai padės įkelti svetainę on-line 
-(Dėmesio: jūsų duomenys turi būti įkelti į www katalogą).
+- **You wish to use our 1-click modules.** Refer to the instructions set out in our [“Install your website with 1-click modules”](https://docs.ovh.com/lt/hosting/svetainiu_talpinimas_moduliu_diegimas_i_talpinimo_plana/){.external} guide;
 
-ftp serveris: ftp.jusu-domenas.tld ar ftp.cluster0XX.ovh.net
-Login ar naudotojas: loginftp
-Slaptažodis: mDpFtP
+- **You do not wish to use our 1-click modules.** You will have to manually install your website on your hosting space. You may find the information set out in this documentation helpful, but it is no substitute for the assistance of a webmaster.
+ 
+> [!warning]
+>
+> OVH is providing you with services for which you are responsible, including with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> 
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you enlist the services of a specialist provider and/or contact the service's software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>
 
-[...]
-```
+### Step 2: putting your website files online in your storage space
 
+There are several steps involved in manually publishing a website on a hosting space. Some of these steps will be optional, depending on which site you install, and there may be multiple ways of carrying them out. For most existing projects, however, there are two major steps involved in publishing a website, the first of which is uploading the website’s files to the relevant storage space.
 
-Taigi prisijungimui reikės naudotojo vardo ir slaptažodžio.
+Publication takes place in several sub-steps:
 
-Jeigu slaptažodis buvo pakeistas po įdiegimo, šiame el. laiške nebus slaptažodžio duomenų.
+#### 1. Gather the files for the website
 
-Vadinasi, slaptažodis buvo pakeistas jūsų valdymo sąsajoje. Naudotojo vardas lieka toks pat, išsaugokite jį.
+Make sure you have all the files for the website that you are looking to publish. If you are migrating an existing website, you can obtain these files from your former hosting provider.
 
+#### 2. Log in to your storage space
 
-### OVH valdymo sąsajoje
-Valdymo sąsajoje
+If you have an FTP username, a password and a server address, you will be able to log in to your storage space. These elements were sent to you in the email informing you that your OVH Web Hosting plan had been set up. If you are no longer in possession of the password, refer to the instructions set out in this guide: [“Changing the password for an FTP user”](https://docs.ovh.com/lt/hosting/modify-ftp-user-password/){.external}.
 
-Kai prisijungsite prie valdymo sąsajos, spragtelėkite savo talpinimo planą skiltyje Svetainių talpinimas.
-Pažymėkite langelį FTP.
-Savo prisijungimo vardo dešinėje spragtelėkite krumpliaratį ir Keisti slaptažodį. Šiame lygmenyje primenamas prisijungimo vardas. 
-Įveskite naują pageidaujamą slaptažodį ir patvirtinkite jį paspaudę Patvirtinti. Slaptažodis turi būti sudarytas iš 8 - 12 raidžių ir/ar skaičių.
+To obtain the server address or username to allow you to access your storage space, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then click on `Hosting Plans`{.action} in the service bar on the left. Select the name of the hosting plan concerned and click on the `FTP - SSH`{.action} tab.
 
-Slaptažodis bus pakeistas per kelias minutes.
+![siteinstallation](images/get-website-online-step1.png){.thumbnail}
 
+Once you are in possession of all the elements, you have three different options for connecting to your storage space:
 
-### FileZilla naudojimas
+- **Use OVH’s FTP Explorer.** This enables you to access your storage space via your browser. To use it, stay in the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
 
-FileZilla naudojimas aprašytas šiame gide:[]({legacy}1380)
+- **Use FTP-compatible software.** You will need to install an FTP-compatible program on your computer (e.g. FileZilla). Since OVH did not create the software package you have installed, please contact its publisher if you encounter any difficulties when using it.
 
-Jums reikės šių duomenų:
+- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} are required to use this type of access.
 
-- Svetainės failų;
-- Duomenų bazės kopijos (jeigu DB reikalinga).
+#### 3. Uploading the files to the storage space
 
-FTP prisijungimo duomenys:
+Once you have logged in to your storage space, all you need to do is place the files for your website online. **We urge you to exercise particular care when selecting the folder to which you upload the files.** For conventional websites, the files should be uploaded to the “www” folder. However, if you host several websites on your hosting space, you have almost certainly registered several **Multisites**.
 
-- Mazgas/host: ftp.jusu-domenas.tld, arba ftp.cluster0XX.ovh.net;
-- Prisijungimo vardas/login: jūsų FTP prisijungimo vardas;
-- Slaptažodis/password: FTP slaptažodis (žr. aukščiau);
-- Prievadas/port: 21 (Jeigu norite jungtis per SSH: 22; SSH prieiga suteikiama su PRO ir galingesniais planais).
+To identify the folder from which the website should be published, go to the `Multisite`{.action} tab in your OVH Control Panel. In the table shown, check the `Root folder`{.action} stated for the domain in question. This is the folder in which you should publish the files for your website.
 
+You may find a file called “index.html” in your storage space. This file may have been created by OVH during the installation of your Web Hosting plan in order to show a default page for your website. If this is the case, remember to delete it when you are putting your files online.
 
+![siteinstallation](images/get-website-online-step2.png){.thumbnail}
 
-![](images/img_1858.jpg){.thumbnail}
+### Step 3: connecting your website to a database
 
+> [!primary]
+>
+> This step is optional if your website does not need to be connected to a database.
+>
 
-## FTP prisijungimo duomenys
+Today, virtually all content management systems (CMSs), such as WordPress or Joomla!, use a database for storing dynamic elements, such as comments or articles. It is therefore essential for the files of the website and the database to be connected if the website is to function correctly. To establish this connection, a configuration file that contains the database’s information is used.
 
-### Valdymo sąsajoje
-Valdymo sąsajoje galite automatiškai atkurti FTP saugyklos kopiją, t.y. atstatyti failus į ankstesnę būseną.
+Depending on the website used, this connection may need to be established manually, or via an interface generated by the site itself. This is done through several sub-steps, some of which may be optional.
 
-Norėdami tai padaryti, prisijunkite prie valdymo sąsajos ir eikite į Svetainių talpinimas.
+#### 1. Recover the existing database (optional)
 
-Toliau FTP skiltyje pasirinkite Atkurti atsarginę kopiją.
+If you are migrating an existing website, you can recover your existing database from your former hosting provider. If it is a new website, you can move on to the next step.
 
-![](images/img_2690.jpg){.thumbnail}
-Pasirinkite atkūrimo datą.
+#### 2. Create the database with OVH (optional)
 
-Atkreipkite dėmesį, kad šis veiksmas pakeis visus FTP talpykloje esančius duomenis į pasirinktos datos būseną!
+If you already have a database and wish to use it (from an [OVH Web Hosting plan](https://www.ovh.lt/svetainiu-talpinimas/){.external}, a [Private SQL](https://www.ovh.lt/svetainiu-talpinimas/sql-parinktys.xml){.external}, or a [Cloud DB](https://www.ovh.lt/cloud/cloud-databases/){.external}) you will need your username and password, the name of the database and the address of the server. You can now proceed to the next step.
 
-Spragtelėkite Toliau, kad baigtumėte operaciją. Failų atkūrimas užtruks keletą ar keliolika minučių.
+If you want to create a new database with OVH, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then click on `Hosting plans`{.action} in the services bar on the left. Select the name of the hosting plan concerned and click on the `Database`{.action} tab.
 
+Now click the `Create a database`{.action} button, or, if this button is not shown, click on `Actions`{.action}, then on `Create a database`{.action}. Follow the instructions shown.
 
-- Jeigu nenorite atkurti visų FTP failų, naudokite failų perkėlimą per FileZilla.
+![siteinstallation](images/get-website-online-step3.png){.thumbnail}
 
+#### 3. Import the existing database (optional)
 
+If you are migrating an existing website, you can import your existing database into the newly created one. If it is a new website, you can move on to the next step.
 
-### Per FileZilla
-Esame paruošę atskirą visos atsarginės kopijos ar tam tikro failo atkūrimo FTP per FileZilla gidą:[]({legacy}1380)
+There are several methods for importing a database. OVH offers one such method in your Control Panel. Once you are on the list of databases created for your services in your OVH Control Panel, click on the three dots to the right of the newly-created database, then on `Import file`{.action}. Now follow the instructions shown.
 
+![siteinstallation](images/get-website-online-step4.png){.thumbnail}
 
-## Bendra informacija
-Duomenų bazės leidžia kaupti, saugoti ir nuskaityti duomenis, reikalingus svetainėms ar aplikacijoms, internete.
+#### 4. Connect your website to the database
 
-Duomenų bazėse galite saugoti įvairaus tipo duomenis, pvz., svetainės turinį, nuorodas ir lankytojų informaciją.
+Once your database is available and you have uploaded your files to your storage space, all you need to do is connect them. To do this, you will need the following information: a username, the associated password, the name of the database and the address of the server.
 
-OVH svetainių talpinimo planai suderinami su skirtingų tipų duomenų bazėmis: MySQL, PostgreSQL ir SQL Server (pastarosios duomenų bazės galimos tik su Windows talpinimo planais).
+How this connection is created will depend on the type of website you are publishing. This process is dictated by how your website is configured and has nothing to do with OVH. We therefore recommend that you contact your website’s editor or a similar professional (such as a specialist service provider) if you need assistance with this procedure.
 
-## Duomenų bazės 
+### Step 4: access your website
 
-### Kūrimas
-Diegiant jūsų svetainių talpinimo planą, įskaičiuota duomenų bazė nėra diegiama automatiškai.
-Todėl negausite šios informacijos automatiškai el. paštu.
-Pirmiausiai jūs turite sukurti savo duomenų bazę.
-Prisijunkite prie savo valdymo sąsajos ir Svetainių talpinimo skiltyje pasirinkite svetainių talpinimo planą.
+Once you have uploaded your files to your storage space and you have connected your database to it (if your website uses one), you can now access your website. Your site should display properly in your web browser.
 
-Po to meniu skiltyje SQL pasirinkite Sukurti duomenų bazę
+If it does not display properly, we recommend that you:
 
-![](images/img_2743.jpg){.thumbnail}
-Pasirinkite duomenų bazės variklį:
-Mysql ar PostgreSQL.
-Pasirinkite duomenų bazės tipą ir Toliau
+- **Check the configuration of the domain name.** The DNS configuration of your domain name may be preventing the website you have just uploaded to your OVH Web Hosting space from displaying correctly. Make sure that the A record currently configured in the DNS zone for your domain corresponds to the IP address of your OVH Web Hosting plan.
 
-Jums reikės įvesti naudotojo vardą ir slaptažodį.
+- **Make sure that no files are missing.** When uploading your files to your OVH Web Hosting space, you may have forgotten to transfer some files, or an error may have occurred. Be careful during this process, however, to avoid breaking any links between the website’s files and the database (if the website uses one).
 
-Prisijungimo prie duomenų bazės duomenys jums bus išsiųsti el. paštu.
+- **Check that there are no errors in the site's code.** This is definitely the most technical check to carry out, but the files you have uploaded may contain errors, which are preventing the server from displaying your website correctly.
 
-Po kelių minučių el. paštu gausite visą duomenų bazės informaciją.
+As a reminder, if you encounter difficulties when publishing your website, we recommend that you contact a specialist and/or the publisher of the service (the CMS installed, for example).
 
-![](images/img_2694.jpg){.thumbnail}
+## Go further
 
+[Migrating your website and emails to OVH](https://docs.ovh.com/lt/hosting/migrating-website-to-ovh/){.external}
 
-### SQL prisijungimo duomenys
+[Install your website with 1-click modules](https://docs.ovh.com/lt/hosting/svetainiu_talpinimas_moduliu_diegimas_i_talpinimo_plana/){.external}
 
-- Dėmesio: jūsų duomenų bazė nėra sukuriama automatiškai diegiant svetainių talpinimo planą.
+[Modifying an FTP user password](https://docs.ovh.com/lt/hosting/modify-ftp-user-password/){.external}
 
-
-Prisijungimo prie duomenų bazės duomenis gausite el. paštu tik po to, kai sukursite duomenų bazę.
-Šį el. laišką taip pat rasite savo valdymo sąsajoje. Prisijungus spragtelėkite meniu skiltį Pagalba ir El. laiškų istorija.
-
-![](images/img_2747.jpg){.thumbnail}
-El. laiško tema:
-
-
-```
-[MySQL] MySQL bazė DB_pavadinimas
-```
-
-
-Turinys:
-
-
-```
-[...]
-
-Jūsų MySQL bazė įdiegta mūsų serveryje.
-
-Parametrai:
------------
-
-MySQL:
-Serveris: mysql51-66.pro
-Naudotojo vardas: DB_pavadinimas
-Duomenų bazės pavadinimas: DB_pavadinimas
-Slaptažodis: ************
-
-[...]
-```
-
-Duomenų bazės slaptažodį galima keisti kliento sąsajoje.
-
-
-- Dėmesio: slaptažodžio keitimas gali sukelti problemų. Jeigu dėl slaptažodžio keitimo nebus negalima prisijungti prie duomenų bazės, gali neveikti svetainė ar paslaugos.
-
-
-Norėdami keisti duomenų bazės slaptažodį, junkitės prie kliento sąsajos, po to pasirinkite savo svetainių talpinimo planą ir SQL -> Spragtelėkite jūsų duomenų bazės dešinėje esantį krumpliaratį ir Keisti slaptažodį.
-
-Jūs galėsite atnaujinti savo duomenų bazės slaptažodį.
-
-Nepamirškite atnaujinti savo svetainės konfigūracinio failo (config). Taip užtikrinsite, kad svetainės variklis, jungdamasis su duomenų baze, naudos naują slaptažodį.
-
-
-### Prisijungimas per PhpMyAdmin
-Junkitės per bendrą [PhpMyAdmin sąsają](https://phpmyadmin.ovh.net/).
-
-Reikės pateikti šiuos duomenis:
-
-
-- Server: vartotojas.mysql.db (vartotojas nurodytas duomenų bazės kūrimo el. laiške).
-
-- Username: vartotojas, nurodytas duomenų bazės kūrimo el. laiške.
-
-- Password: duomenų bazės slaptažodis.
-
-- Version: šioje vietoje galite pasirinkti, ar jungtis prie naudojamos (darbinės) duomenų bazės, ar 1 - 7 dienų senumo kopijos.
-
-
-Užpildykite reikiamus laukus ir spragtelėkite Go, kad prisijungtumėte.
-
-![](images/img_1960.jpg){.thumbnail}
-
-- Jeigu naudojate MySQL4 duomenų bazes, spragtelėkite nuorodą, esančią prisijungimo sąsajos apačioje.
-
-
-
-
-### Duomenų bazės eksportavimas
-Kaip eksportuoti SQL duomenų bazę? Kaip padaryti atsargines duomenų bazių kopijas?
-
-Skaitykite duomenų bazės eksportavimo gidą:[]({legacy}1394)
-
-![](images/img_1932.jpg){.thumbnail}
-
-
-### Duomenų bazės importavimas
-Kaip importuoti SQL duomenų bazės atsargines kopijas? Kokie galimi importavimo būdai?
-
-Skaitykite MySql duomenų bazės importavimo gidą:[]({legacy}1393)
-
-![](images/img_1933.jpg){.thumbnail}
-
-
-### Taisymas - Optimizavimas - Analizė
-Galite atlikti duomenų bazių taisymus, jas optimizuoti bei analizuoti.
-
-Visa tai padarysite prisijungę prie [PhpMyAdmin sąsajos](https://phpmyadmin.ovh.net/).
-
-Prisijungę pasirinkite duomenų bazę, su kuria dirbsite.
-
-Po to, dešiniajame viršutiniame kampe, spragtelėkite Operacijos.
-
-Lentelės darbų skyriuje galėsite atlikti įvairias operacijas su pačia lentele.
-
-![](images/img_1961.jpg){.thumbnail}
-
-
-### Private SQL naudojimas
-Norite sužinoti, kaip naudoti Private SQL serverio paslaugą? Kaip joje importuoti ir eksportuoti duomenis?
-
-Skaitykite[Private SQL naudojimo gidą](http://guides.ovh.com/GuideSqlPrive)
-
-![](images/img_1866.jpg){.thumbnail}
-
-
-## Diegimo gidas
-Norite greitai susikurti svetainę nesimokydami svetainių kūrimo paslapčių?
-
-Skaitykite OVH modulių diegimo gidą:[]({legacy}1402)
-
-![](images/img_1930.jpg){.thumbnail}
-
-
-### Naujas WordPress diegimas
-
-WordPress – tai turinio valdymo sistema (TVS), leidžianti nesunkiai sukurti bei valdyti interneto svetainę arba internetinį dienoraštį (blogą). 
-Nemokamą ir laisvai prieinamą WordPress galima personalizuoti naudojant įvairias temas bei plėtinius.  
-
-
-- Dienoraštis ir svetainė
-
-Šiame gide pateikiama informacija apie WordPress TVS diegimą rankiniu būdu: []({legacy}1375)
-
-
-![](images/img_1873.jpg){.thumbnail}
-
-
-### Naujas Joomla diegimas
-
-Joomla - tai nemokama ir laisvai prieinama turinio valdymo sistema (TVS). Joomla galima personalizuoti naudojant įvairias temas bei plėtinius.
-Ši TVS – tai žiniatinklio programa, leidžianti visiškai paprastai valdyti interneto svetainę arba dinaminį intraneto puslapį. 
-
-
-- Interneto svetainė
-
-Šiame gide pateikiama informacija apie TVS Joomla diegimą: []({legacy}1375)
-
-
-![](images/img_1874.jpg){.thumbnail}
-
-
-### Naujas PrestaShop diegimas
-
-PrestaShop – tai atvirojo kodo žiniatinklio aplikacija, leidžianti sukurti e-parduotuvę ir vykdyti el. prekybą. 
-
-
-- Parduotuvė internete
-
-Šiame gide pateikiama informacija apie TVS PrestaShop diegimą rankiniu būdu: []({legacy}1375)
-
-
-![](images/img_1862.jpg){.thumbnail}
-
-
-## .ovhconfig failas
-Ketinate pakeisti savo interneto svetainių talpinimo plano PHP versiją? Arba aktyvuoti phpfpm?
-
-Šiuose giduose pateikiama informacija apie .ovhconfig failo naudojimą bei konfigūravimą:  
-
-
-- []({legacy}1175)
-
-- []({legacy}1207)
-
-
-
-![](images/img_1867.jpg){.thumbnail}
-
-
-## Galimos bendrų svetainių talpinimo planų bibliotekos
-Informacija apie prieinamas bibliotekas:
-
-|Biblioteka|Pasiekiamumas|
-|---|---|
-|ffmepg|neaktyvuota|
-|GD|aktyvuota|
-|imagemagik|aktyvuota|
-|zend (opcache)|aktyvuota|
-|PDO|aktyvuota|
-|Zip - Gzip|aktyvuota|
-
-![](images/img_1867.jpg){.thumbnail}
-Dėmesio: naudojant PHP-FPM, taip pat dėl saugumo priežasčių, šios parinktys išjungtos (nebenaudojamos PHP):
-
-
-- register_globals
-- magic_quotes_gpc
-
-
-
-
-## Mano interneto svetainės našumo optimizavimas
-Jūs norite ištirti lėtą savo interneto svetainės veikimą? Arba paprasčiausiai pagerinti savo interneto svetainės našumą?
-
-Šiame gide pateikiama informacija apie lėtai veikiančios interneto svetainės diagnostiką, taip pat našumo optimizavimą:[]({legacy}1396)
-
-![](images/img_1865.jpg){.thumbnail}
-
+Join our community of users on <https://community.ovh.com/en/>.
