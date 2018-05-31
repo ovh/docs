@@ -99,9 +99,9 @@ Vous aurez accès à la section `Gestion des transferts d'appels`avec les élém
 
 Il existe trois modes de transfert :
  
-    - `Transfert supervisé` : lorsque vous êtes en appel, vous appuyez sur la touche programmable. L'appel est mis en attente et vous appelez le second interlocuteur. Il faudra donc appuyer sur `transfert`{.action} pour transférer l'appel (les deux appels se trouvent sur deux touches programmables différentes) ;
-    - `Transfert accompagné` : lorsque vous êtes en appel, vous appuyez sur la touche programmable. L'appel est mis en attente et vous appelez le second interlocuteur. Il faudra donc appuyer sur `transfert`{.action} pour transférer l'appel (les deux appels sont situés sur la même touche programmable) ;
-    - `Transfert aveugle` : lorsque vous êtes en appel, vous appuyez sur la touche programmable et l'appel est transféré en aveugle sans autres actions.
+- `Transfert supervisé` : lorsque vous êtes en appel, vous appuyez sur la touche programmable. L'appel est mis en attente et vous appelez le second interlocuteur. Il faudra donc appuyer sur `transfert`{.action} pour transférer l'appel (les deux appels se trouvent sur deux touches programmables différentes) ;
+- `Transfert accompagné` : lorsque vous êtes en appel, vous appuyez sur la touche programmable. L'appel est mis en attente et vous appelez le second interlocuteur. Il faudra donc appuyer sur `transfert`{.action} pour transférer l'appel (les deux appels sont situés sur la même touche programmable) ;
+- `Transfert aveugle` : lorsque vous êtes en appel, vous appuyez sur la touche programmable et l'appel est transféré en aveugle sans autres actions.
 
 
 ## Aller plus loin
