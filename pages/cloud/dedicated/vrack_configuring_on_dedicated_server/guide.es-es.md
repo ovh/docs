@@ -211,44 +211,46 @@ Una vez realizadas estas acciones, los servidores podrán comunicarse entre sí 
 
 En este ejemplo, vamos a utilizar el rango de direcciones IP internas **192.168.0.0/16**.
 
-Siga estos pasos:
+Conéctese a su servidor Windows a través del escritorio remoto.
 
-1. Conéctese a su servidor Windows a través del escritorio remoto.
-2. Haga clic en `Inicio`{.action}.
-3. Haga clic en `Panel de control`{.action}.
+Haga clic en `Inicio`{.action}.
 
-   ![Panel de control de Windows](images/windows_control_panel.png){.thumbnail}
+Haga clic en `Panel de control`{.action}.
 
-4. Haga clic en `Redes e Internet`{.action}.
+![Panel de control de Windows](images/windows_control_panel.png){.thumbnail}
 
-   ![Redes e Internet](images/windows_network_and_internet.png){.thumbnail}
+Haga clic en `Redes e Internet`{.action}.
 
-5. Haga clic en `Centro de redes y recursos compartidos`{.action}.
+![Redes e Internet](images/windows_network_and_internet.png){.thumbnail}
 
-   ![Centro de redes y recursos compartidos](images/windows_network_and_sharing_centre.png){.thumbnail}
+Haga clic en `Centro de redes y recursos compartidos`{.action}.
 
-6. Haga clic en `Cambiar configuración del adaptador`{.action}.
+![Centro de redes y recursos compartidos](images/windows_network_and_sharing_centre.png){.thumbnail}
 
-   ![Cambiar configuración del adaptador](images/windows_change_adapter_settings.png){.thumbnail}
+Haga clic en `Cambiar configuración del adaptador`{.action}.
 
-7. Haga clic derecho en la interfaz de red secundaria y seleccione `Propiedades`{.action}.
+![Cambiar configuración del adaptador](images/windows_change_adapter_settings.png){.thumbnail}
 
-   ![Propiedades de Windows](images/windows_properties_button.png){.thumbnail}
+Haga clic derecho en la interfaz de red secundaria y seleccione `Propiedades`{.action}.
 
-9. Haga doble clic en `Protocolo de Internet versión 4 (TCP/IPv4)`{.action}.
+![Propiedades de Windows](images/windows_properties_button.png){.thumbnail}
 
-   ![Protocolo de Internet versión 4 (TCP/IPv4)](images/windows_ipv4.png){.thumbnail}
+Haga doble clic en `Protocolo de Internet versión 4 (TCP/IPv4)`{.action}.
 
-10. Marque la opción `Usar la siguiente dirección IP`{.action}.
+![Protocolo de Internet versión 4 (TCP/IPv4)](images/windows_ipv4.png){.thumbnail}
 
-    - En **Dirección IP** introduzca una dirección IP de su rango interno.
-    - En **Máscara de subred** introduzca **255.255.0.0**.
+Marque la opción `Usar la siguiente dirección IP`{.action}.
 
-   ![Usar la siguiente dirección IP](images/windows_use_following_ip_address.png){.thumbnail}
+- En **Dirección IP** introduzca una dirección IP de su rango interno.
+- En **Máscara de subred** introduzca **255.255.0.0**.
 
-11. Haga clic en `Aceptar`{.action} para guardar los cambios.
-12. Reinicie el servidor.
-13. Repita estos pasos en los demás servidores y asígneles una dirección IP única que pertenezca a su rango interno. 
+![Usar la siguiente dirección IP](images/windows_use_following_ip_address.png){.thumbnail}
+
+Haga clic en `Aceptar`{.action} para guardar los cambios.
+
+Reinicie el servidor.
+
+Repita estos pasos en los demás servidores y asígneles una dirección IP única que pertenezca a su rango interno. 
 
 Una vez realizadas estas acciones, los servidores podrán comunicarse entre sí en la red privada.
 
