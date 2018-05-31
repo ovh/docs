@@ -41,11 +41,11 @@ Al buscar el dominio en la tabla pueden darse varias situaciones:
 
 |Casos posibles|Medidas que deberá adoptar|
 |---|---|
-|El dominio figura en la tabla|El dominio está correctamente añadido como multisitio al alojamiento web. Si ha añadido el dominio menos 15 minutos antes, espere a que transcurra este período de tiempo para que la página «Sitio no instalado» desaparezca. Si transcurridos unos minutos sigue apareciendo el mismo mensaje, vaya al paso [2. Comprobar la configuración DNS del dominio](https://docs.ovh.es/hosting/web_hosting_error_sitio_no_instalado/#2-comprobar-la-configuracion-dns-del-dominio){.external}.|
+|El dominio figura en la tabla|El dominio está correctamente añadido como multisitio al alojamiento web. Si ha añadido el dominio menos 15 minutos antes, espere a que transcurra este período de tiempo para que la página «Sitio no instalado» desaparezca. Si transcurridos unos minutos sigue apareciendo el mismo mensaje, vaya al paso [2. Comprobar la configuración DNS del dominio](https://docs.ovh.com/es/hosting/web_hosting_error_sitio_no_instalado/#2-comprobar-la-configuracion-dns-del-dominio){.external}.|
 |El dominio ha desaparecido de la tabla|Si había añadido el dominio, pero este ya no aparece en la tabla, es posible que no hubiera terminado todos los pasos para añadir el dominio al alojamiento web o que lo haya eliminado por error. En ese caso, siga todos los pasos descritos en la guía [Alojar varios sitios web en un mismo hosting](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/){.external} para volver a añadir el dominio.|
 |El dominio no aparece en la tabla|Todavía no ha añadido el dominio como multisitio al alojamiento de OVH. Para añadirlo, siga todos los pasos descritos en la guía [Alojar varios sitios web en un mismo hosting](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/){.external}.|
 
-Si, a pesar de esto, la página «Sitio no instalado» sigue apareciendo en su sitio web, vaya al paso [2. Comprobar la configuración DNS del dominio](https://docs.ovh.es/hosting/web_hosting_error_sitio_no_instalado/#2-comprobar-la-configuracion-dns-del-dominio){.external}.
+Si, a pesar de esto, la página «Sitio no instalado» sigue apareciendo en su sitio web, vaya al paso [2. Comprobar la configuración DNS del dominio](https://docs.ovh.com/es/hosting/web_hosting_error_sitio_no_instalado/#2-comprobar-la-configuracion-dns-del-dominio){.external}.
 
 ### 2. Comprobar la configuración DNS del dominio
 

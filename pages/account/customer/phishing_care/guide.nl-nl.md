@@ -1,11 +1,11 @@
 ---
-title: Pas op voor oplichting - herken frauduleuze e-mail en phishing
+title: 'Pas op voor oplichting - herken frauduleuze e-mail en phishing'
 slug: herken-phishing
-excerpt: Hoe kunt u een phishing-bericht identificeren, en wat te doen als u op een frauduleuze link hebt geklikt?
+excerpt: 'Hoe kunt u een phishing-bericht identificeren, en wat te doen als u op een frauduleuze link hebt geklikt?'
 section: Veiligheid
 ---
 
-**Laatste update 17-03-2018**
+**Laatste update 30-05-2018**
 
 ## Introductie
 
@@ -29,10 +29,16 @@ U hebt een bericht ontvangen in naam van OVH, weet u zeker dat het authentiek is
 
 ![Verschil tussen OVH-mail en phishing-mail](images/phishing_email.png){.thumbnail}
 
+> [!alert]
+> 
+> Vergeet niet om ervoor te zorgen dat aan de volgende drie voorwaarden wordt voldaan:
+> 
+
 |Nummer - Omschrijving|OVH-mail|Phishing-mail|
 |---|---|---|
-|1 - Onderwerp|Uw OVH-ID en/of het e-mailadres van uw account staan tussen vierkante haken voor de titel.|Meestal wordt de e-mail tussen vierkante haken gemarkeerd als 'spam' en wordt uw gebruikersnaam niet weergegeven.|
-|2 - Link|Beweeg uw muis over de link, en u ziet de inhoud direct zonder erop te hoeven klikken (naast de link zoals in het screenshot, of helemaal onderaan uw browser). Hier is de link een authentieke link naar https://www.ovh.com.|In ons voorbeeld, door de muis over de link te houden, ziet u dat deze niets met OVH te maken heeft. Klik er niet op.|
+|1 - Afzender|Ga na of het adres voor het verzenden van de e-mail eindigt op "@ovh.com", "@soyoustart.com", of "@kimsufi.com".|Meestal wordt de e-mail tussen vierkante haken gemarkeerd als 'spam' en wordt uw gebruikersnaam niet weergegeven.|De afzender van de e-mail is per definitie een adres dat niet afkomstig is van OVH.|
+|2 - Onderwerp|Ga na of uw NIC handle** (beginnend met de eerste letter van uw achternaam geregistreerd bij OVH en de eerste letter van uw voornaam geregistreerd bij OVH)** en/of het e-mailadres van uw account wordt weergegeven in het onderwerp van het bericht.|Meestal wordt de e-mail tussen vierkante haken gemarkeerd als 'spam' en wordt uw gebruikersnaam niet weergegeven.|
+|3 - Link|Beweeg uw muis over de link, en u ziet de inhoud direct zonder erop te hoeven klikken (naast de link zoals in het screenshot, of helemaal onderaan uw browser). Hier verwijst de link inderdaad naar <https://www.ovh.com/>.|In ons voorbeeld, door de muis over de link te houden, ziet u dat deze niets met OVH te maken heeft. Klik er niet op. |
 
 
 > [!primary]
@@ -44,6 +50,12 @@ U hebt een bericht ontvangen in naam van OVH, weet u zeker dat het authentiek is
 
 
 Als u na de hierboven toegelichte controles zeker weet dat u inderdaad een phishing-mail hebt ontvangen die de identiteit van OVH nabootst, kunt u ons hiervan op de hoogte stellen door zoveel mogelijk informatie te sturen (minstens de inhoud van de e-mail) naar het volgende e-mailadres :**<fraude@ovh.com>**.
+
+> [!primary]
+> 
+> Let op: de informatie die u ons verstrekt wordt mogelijk met derden gedeeld om ons in staat te stellen deze bedreigingen te bestrijden.
+>
+
 
 
 ### Ik heb mijn persoonlijke info gegeven: wat moet ik doen?
@@ -57,7 +69,7 @@ Het enige dat u hoeft te doen, is meteen contact opnemen met uw bank om deze te 
 
 #### Als u uw OVH-wachtwoord hebt ingevoerd op een frauduleuze site
 
-Log in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} en wijzig uw wachtwoord onmiddellijk. We raden u ten zeerste aan dubbele authenticatie te activeren om uw account te beschermen.
+Log in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&){.external} en wijzig uw wachtwoord onmiddellijk. We raden u ten zeerste aan dubbele authenticatie te activeren om uw account te beschermen.
 
 > [!primary]
 >
