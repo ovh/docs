@@ -22,7 +22,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Mac? Read our guide: [Configuring your Exchange account in Outlook 2016 for Mac](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/configuration-outlook-2016-mac/){.external}.
+> Are you using Outlook 2016 for Mac? Read our guide: [Configuring your Exchange account in Outlook 2016 for Mac](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/configuration-outlook-2016-mac/){.external}.
 >
 
 ## Instructions
@@ -62,8 +62,8 @@ OVH offers a web application that includes various [collaborative features](http
 
 ## Go further
 
-[Configuring your email address provided as part of your MX Plan or web hosting plan in Outlook 2016 for Windows](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016/){.external}.
+[Configuring your email address provided as part of your MX Plan or web hosting plan in Outlook 2016 for Windows](https://docs.ovh.com/ie/en/emails/configuration-outlook-2016/){.external}.
 
-[Configuring your Email Pro account in Outlook 2016 for Windows](https://docs.ovh.com/gb/en/emails-pro/configuration-outlook-2016/){.external}
+[Configuring your Email Pro account in Outlook 2016 for Windows](https://docs.ovh.com/ie/en/emails-pro/configuration-outlook-2016/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.
