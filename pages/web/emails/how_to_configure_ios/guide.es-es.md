@@ -1,21 +1,21 @@
 ---
-title: Configurar una cuenta de correo electrónico en iPhone o iPad
-excerpt: Cómo configurar una cuenta MX Plan en un iPhone o iPad
+title: 'Configurar una cuenta de correo electrónico en iPhone o iPad'
+excerpt: 'Cómo configurar una cuenta MX Plan en un iPhone o iPad'
 slug: correo_guia_de_configuracion_en_iphone_ios_91
 section: Apple
 ---
 
-**Última actualización: 23/03/2018**
+**Última actualización: 31/05/2018**
 
 ## Objetivo
 
-Es posible configurar sus cuentas MX Plan en el cliente de correo o la aplicación que usted utilice, siempre que sean compatibles, para enviar y recibir mensajes desde el dispositivo que elija.
+Es posible configurar sus cuentas MX Plan en el cliente de correo que usted utilice, siempre que sea compatible, para enviar y recibir mensajes desde su dispositivo sin necesidad de una nueva aplicación.
 
-**Esta guía explica cómo configurar una cuenta MX Plan en un iPhone o iPad**.
+**Esta guía explica cómo configurar una cuenta MX Plan en un iPhone o iPad.**
 
 ## Requisitos
 
-- Disponer de una cuenta MX Plan (incluida en un MX Plan o en un plan de [hosting de OVH](https://www.ovh.es/hosting/){.external}).
+- Disponer de una cuenta MX Plan (incluida en un MX Plan o en un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}).
 - Tener la aplicación Mail instalada en su dispositivo.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
@@ -26,9 +26,9 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo o la aplicaci�
 
 ## Procedimiento
 
-Existen dos maneras diferentes de añadir la cuenta de correo a Mail:
+Existen dos maneras diferentes de añadir la cuenta de correo a su dispositivo:
 
-- **Utilizando nuestra herramienta Apple Devices**: Haga clic en el siguiente enlace y siga los pasos de configuración: <https://autodiscover.mail.ovh.net/AppleDevices/>
+- **Utilizando nuestra herramienta Apple Devices**: Pulse el siguiente enlace y siga los pasos de configuración: <https://autodiscover.mail.ovh.net/AppleDevices/>
 
 - **Utilizando el asistente de configuración de su dispositivo**.
 
@@ -38,9 +38,9 @@ Esta guía solo hace referencia a la configuración del correo desde su disposit
 
 Acceda a `Ajustes`{.action} en la pantalla de inicio de su dispositivo. Según la versión de iOS, podrá añadir su cuenta de correo de dos formas distintas:
 
-- **En iOS 7, 8, 9 y 10**: Acceda a `Correo, contactos, calendario`{.action} y haga clic en `Añadir cuenta`{.action}. A continuación, seleccione `Otra`{.action} > `Añadir cuenta`{.action}.
+- **En iOS 7, 8, 9 y 10**: Pulse `Correo, contactos, calend.`{.action} y luego `Añadir cuenta`{.action}. A continuación, seleccione `Otra`{.action} y pulse `Añadir cuenta de correo`{.action}.
 
-- **En iOS 11**: Acceda a `Cuentas y contraseñas`{.action} y haga clic en `Añadir cuenta`{.action}. A continuación, seleccione `Otra`{.action} > `Añadir cuenta`{.action}.
+- **En iOS 11**: Pulse `Cuentas y contraseñas`{.action} y luego `Añadir cuenta`{.action}. A continuación, seleccione `Otra`{.action} y pulse `Añadir cuenta de correo`{.action}.
 
 ![Exchange](images/configuration-mail-ios-step1.png){.thumbnail}
 
@@ -48,41 +48,42 @@ Cumplimente la información de su cuenta:
 
 |Campo|Descripción|
 |---|---|
-|Apellidos|Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes de correo desde esa dirección.|
-|Correo electrónico|Introduzca la dirección de correo electrónico completa.|
+|Nombre|Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes de correo desde esa dirección.|
+|Correo|Introduzca la dirección de correo electrónico completa.|
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
-|Descripción|Introduzca una descripción que le permita diferenciar su cuenta MX Plan del resto de cuentas de su aplicación Mail.|
+|Descripción|Introduzca una descripción que le permita diferenciar su cuenta MX Plan de las otras cuentas que tenga en su aplicación Mail.|
 
-A continuación, haga clic en `Siguiente`{.action} e introduzca la información de su cuenta:
+A continuación, pulse `Siguiente`{.action} e introduzca la información de su cuenta:
 
 |Campo|Descripción| 
 |---|---| 
-|IMAP o POP|Le recomendamos que utilice **IMAP** (opción por defecto). También puede elegir **POP** (almacenamiento de mensajes de correo en local en su aplicación Mail).|
-|Nombre de host (entrante)|Introduzca el servidor «ssl0.ovh.net».|
+|IMAP o POP|Le recomendamos que utilice **IMAP** (opción por defecto), aunque también puede elegir **POP** (almacenamiento de mensajes de correo en local en su aplicación Mail).|
+|Nombre de host (entrante)|Introduzca el servidor **ssl0.ovh.net**.|
 |Nombre de usuario (entrante)|Introduzca la dirección de correo electrónico completa.|
 |Contraseña (entrante)|Introduzca la contraseña de la dirección de correo electrónico.|  
-|Nombre de host (saliente)|Introduzca el servidor «ssl0.ovh.net».|
+|Nombre de host (saliente)|Introduzca el servidor **ssl0.ovh.net**.|
 |Nombre de usuario (saliente)|Introduzca la dirección de correo electrónico completa.|
 |Contraseña (saliente)|Introduzca la contraseña de la dirección de correo electrónico.| 
 
-A continuación, haga clic en `Siguiente`{.action}. Si los datos introducidos son correctos, la aplicación se conectará a la cuenta.
+A continuación, pulse `Siguiente`{.action}. Si los datos introducidos son correctos, la aplicación se conectará a la cuenta.
 
 ![Exchange](images/configuration-mail-ios-step2.png){.thumbnail}
 
-Al elegir las aplicaciones, asegúrese de dejar `Mail`{.action} marcado para que la aplicación pueda utilizar la cuenta, y haga clic en `Guardar`{.action}.
+Al elegir las aplicaciones, asegúrese de dejar `Mail`{.action} marcado para que la aplicación pueda utilizar la cuenta, y pulse `Guardar`{.action}.
 
-Si lo desea, puede realizar una prueba de envío desde la aplicación Mac de su dispositivo para comprobar que la cuenta esté correctamente configurada.
+Si lo desea, puede realizar una prueba de envío desde la aplicación Mail de su dispositivo para comprobar que la cuenta esté correctamente configurada.
 
 Si la aplicación le pide que introduzca de forma manual algunos datos técnicos en las preferencias de la cuenta, estos son los valores que debe utilizar para la solución MX Plan:
 
-- **Configuración en IMAP**
+**Configuración en IMAP**
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
 |Entrante|ssl0.ovh.net|Sí|993|
 |Saliente|ssl0.ovh.net|Sí|465|
 
-- **Configuración en POP**
+
+**Configuración en POP**
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
@@ -93,12 +94,8 @@ Si la aplicación le pide que introduzca de forma manual algunos datos técnicos
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVH ofrece una aplicación web con la que podrá acceder a su cuenta de correo electrónico desde el navegador, disponible en la dirección <https://mail.ovh.net/es/>. Puede acceder con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVH ofrece una aplicación web con la que podrá acceder a su cuenta de correo electrónico desde el navegador, disponible en la dirección [https://mail.ovh.net/es/](https://mail.ovh.net/es/){.external}. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 ## Más información
-
-[Configurar una cuenta Email Pro en iPhone o iPad](https://docs.ovh.com/es/emails-pro/configuracion-ios-iphone-ipad/){.external}.
-
-[Configurar una cuenta Exchange en iPhone o iPad](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-ios-iphone-ipad/){.external}.
 
 Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
