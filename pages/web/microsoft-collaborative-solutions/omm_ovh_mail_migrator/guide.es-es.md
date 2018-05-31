@@ -1,135 +1,139 @@
 ---
-title: Migrar una cuenta de correo con OVH Mail Migrator
+title: 'Migrar una cuenta de correo con OVH Mail Migrator'
 slug: exchange-migracion-de-cuentas-correo-ovh-mail-migrator
-legacy_guide_number: 1624
-excerpt: Cómo utilizar OVH Mail Migrator para migrar una cuenta de correo electrónico
-section: Migración de una cuenta
+excerpt: 'Cómo utilizar OVH Mail Migrator para migrar una cuenta de correo electrónico'
+section: 'Migración de una cuenta'
 ---
 
-**Última actualización: 12/01/2018**
+**Última actualización: 31/05/2018**
 
-## Introducción
+## Objetivo
 
-La herramienta OMM (OVH Mail Migrator) permite transferir el contenido de sus cuentas de correo electrónico a sus cuentas Exchange (correo, contactos, calendarios, tareas, etc.), Email Pro o MX Plan sin tener que recurrir a la exportación PST, que puede prolongarse y presenta limitaciones.
+[OVH Mail Migrator](https://omm.ovh.net/){.external} es una herramienta creada por OVH que permite migrar el contenido de una o más direcciones de correo electrónico a sus cuentas de correo en OVH. Es posible migrar mensajes de correo electrónico, contactos, calendarios y tareas, siempre que estas últimas sean compatibles con sus cuentas de correo electrónico. 
 
-En primer lugar, acceda a [OVH Mail Migrator](https://omm.ovh.net){.external}.
+**Esta guía explica cómo migrar una cuenta de correo hacia OVH con la herramienta OVH Mail Migrator.**
 
-## Realizar una migración
-Haga clic en `Nueva migración`{.action}.
+## Requisitos
 
-![emails](images/2795_en.png){.thumbnail}
+- Disponer de un servicio de correo en OVH, como las soluciones [Exchange](https://www.ovh.es/emails/hosted-exchange/){.external}, [Email Pro](https://www.ovh.es/emails/email-pro/){.external} o MX Plan (teniendo contratado un plan MX Plan o un plan de [hosting de OVH](https://www.ovh.es/hosting/){.external} que incluya este servicio).
+- Disponer de las claves de acceso de las cuentas de correo que quiera migrar (las cuentas de origen).
+- Disponer de las claves de acceso de las cuentas de correo de OVH a las que quiera migrar el contenido (las cuentas de destino).
 
-### Cuenta de origen
+## Procedimiento
 
-Elija el tipo de cuenta actual y cumplimente los parámetros del servidor.
+Acceda a la herramienta [OVH Mail Migrator](https://omm.ovh.net/){.external} en la dirección <https://omm.ovh.net/>. Es posible realizar tres tipos de migración:
 
-Si su cuenta de origen está alojada en OVH, elija **Hosted by OVH (Autodetect)**. Introduzca la dirección de correo electrónico y haga clic en `Detectar configuraciones`{.action}.
+|Tipo de migración|Descripción|
+|---|---|
+|Migración única|Permite migrar el contenido de una dirección de correo electrónico a otra dirección. Es el tipo de migración recomendado para migrar el contenido de una o varias direcciones (deberá repetir los pasos para cada cuenta que quiera migrar).|
+|Migración mediante archivo|Permite migrar el contenido de una dirección de correo electrónico, guardado previamente en un archivo, a otra dirección. Admite los formatos de archivo PST, ICS y VCF.|
+|Migración por lotes (modo proyecto)|Permite gestionar varias migraciones en un único proyecto. Es el tipo de migración recomendado para migrar un gran número de direcciones de correo electrónico.|
 
-A continuación deberá introducir la contraseña.
+Continúe esta guía en el apartado correspondiente al tipo de migración más adecuado en función de su proyecto.
 
-Por ejemplo, para migrar un MX Plan a Email Pro:
+### Realizar una migración única
 
-- Tipo de servidor: Hosted by OVH
-- Nombre de usuario: Dirección de correo electrónico MX Plan
-- Haga clic en «Detectar configuraciones».
-- Contraseña: Contraseña de su cuenta de correo
+Vaya a la página <https://omm.ovh.net/>. Sitúe el ratón sobre `Migración`{.action} en el menú superior y seleccione `Nueva migración`{.action}.
 
+![Nueva migración OMM](images/omm-migration-create.png){.thumbnail}
 
-### Cuenta de destino
+Introduzca la información solicitada en cada apartado.
 
-Elija el tipo de la nueva cuenta e introduzca su dirección de correo electrónico y la contraseña. Los parámetros del servidor se completarán automáticamente.
+- **Cuenta**: Introduzca los datos de la **cuenta de origen** y de la **cuenta de destino**. Le recordamos que el contenido de la **cuenta de origen** será migrado a la **cuenta de destino**.
 
-![emails](images/2796_en.png){.thumbnail}
+|Campo|Descripción|
+|---|---|
+|Tipo de servidor|Seleccione el tipo de servidor correspondiente a sus cuentas. Si una de ellas está en OVH, puede seleccionar **Hosted by OVH (Autodetect)** para que se autocomplete la información.|
+|URL del servidor|Introduzca la dirección del servidor en el que están alojadas sus cuentas. Es posible que este campo se autocomplete al elegir el tipo de servidor.|
+|Nombre de usuario|Introduzca la dirección de correo electrónico completa de sus cuentas.|
+|Cuenta de administrador con delegación|Este campo solo aparece con determinados tipos de servidores.|
+|Contraseña|Introduzca la contraseña de sus cuentas de correo electrónico.|
 
-Por ejemplo, para migrar un MX Plan a Email Pro:
+- **Opciones**: Seleccione el tipo de contenido que quiera migrar. En función del tipo de servidor elegido anteriormente, algunos elementos podrían no estar disponibles.
 
-- Tipo de servidor: Hosted by OVH
-- Nombre de usuario: Dirección de correo electrónico Email Pro
-- Haga clic en «Detectar configuraciones».
-- Contraseña: Contraseña de su cuenta de correo Email Pro
+- **Notificaciones**: Introduzca la dirección de correo electrónico en la que quiera recibir las notificaciones relativas a la migración.
 
+Una vez que haya introducido los datos, haga clic en el botón `Iniciar migración`{.action}. Si la información es correcta, comenzará la migración.
 
-### Opciones
+La página mostrará el progreso de la migración. Anote el **ID de migración** y espere a que termine la operación. Su duración dependerá de la cantidad de contenido migrada. A continuación se explica cómo consultar el estado de la migración.
 
-Seleccione los elementos que desee migrar:
+### Consultar el estado de una migración única
 
-- **Mensajes de correo electrónico:** Mensajes de correo, conservando la jerarquía de carpetas.
-- **Calendarios:** Calendarios asociados a la cuenta, volviendo a crear los eventos (sin las invitaciones).
-- **Contactos:** Contactos añadidos a la cuenta.
-- **Reglas:** Reglas creadas en la cuenta (requiere Exchange 2010 SP1 o superior).
-- **Grupos de contactos:** Grupos de contactos creados en la cuenta.
-- **Respuestas automáticas:** Reglas de respuesta automática creadas.
-- **Tareas:** Tareas creadas en la cuenta.
+Existen dos formas de consultar el estado de una migración única:
 
-![emails](images/3768_en.png){.thumbnail}
+- desde el mensaje de correo electrónico en el que se informa de que la migración ha comenzado;
+- desde la página correspondiente de la herramienta <https://omm.ovh.net/>, situando el ratón sobre `Migración`{.action} en el menú superior y seleccionando `Consultar/Sincronizar`{.action}. Una vez en la página, introduzca el **ID de migración** y la **Cuenta de origen**.
 
-### Finalización
+![Consultar el estado de la migración](images/omm-migration-track.png){.thumbnail}
 
-Para una migración POP/IMAP hacia Email Pro o Exchange, solo podrá seleccionar la opción `Mensajes de correo electrónico`{.action}.
+Se mostrará el estado de la migración. También aparecerá un mensaje indicándole si el proceso va a comenzar, ha comenzado o ya ha finalizado. Según el estado de la migración, podrá realizar diversas acciones:
 
-Puede indicar una dirección de correo diferente para recibir las notificaciones relativas al proceso de migración.
+|Acción|Descripción|
+|---|---|
+|Cancelar el proceso|Permite cancelar la migración. Los elementos que ya se hayan migrado permanecerán en la cuenta de destino.|
+|Deshacer|Permite eliminar de la cuenta de destino los elementos que ya se hayan migrado. Es posible eliminar los elementos a partir de un punto de sincronización determinado.|
+|Sincronizar|Permite recuperar nuevos elementos no migrados durante una sincronización anterior entre la cuenta de origen y la cuenta de destino. Esta operación migra los elementos que faltan en la cuenta de destino con respecto a la cuenta de origen.|
 
-Una vez haya introducido todos los datos, haga clic en `Iniciar migración`{.action} para ejecutar la operación.
+### Realizar una migración mediante archivo
 
-Si la pareja usuario-contraseña o el servidor introducido no son correctos, aparecerá el siguiente mensaje de error:
+Vaya a la página <https://omm.ovh.net/>. Sitúe el ratón sobre `Importación`{.action} en el menú superior y seleccione el tipo de migración que quiera realizar:  `Nueva migración PST`{.action}, `Nueva migración ICS`{.action} o `Nueva migración VCF`{.action}.
 
-![emails](images/2441.png){.thumbnail}
+Para poder realizar la migración de esta forma, debe disponer del archivo con el contenido que quiera migrar.
 
-Una vez creada la tarea, se ejecutará la operación de migración, durante la cual podrá seguir su progreso.
+![Migración mediante un archivo](images/omm-migration-files.png){.thumbnail}
 
-![emails](images/2798_en.png){.thumbnail}
+Introduzca la información de la **cuenta de destino** y haga clic en `Iniciar migración`{.action}. Le recordamos que el contenido del archivo PST, ICS o VCF será migrado a la **cuenta de destino**.
 
-> [!warning]
->
-> Importante: No olvide anotar el número de la tarea («ID de migración») para poder consultar en otro momento el progreso de la migración de su cuenta.
-> 
+Si la información introducida es correcta, deberá seleccionar el archivo en su ordenador. Haga clic en `Cargar`{.action} y espere mientras se carga. El tiempo de espera dependerá del tamaño del archivo. Puede consultar el progreso desde esa misma página.
 
-## Importación de archivos PST
+Una vez cargado el archivo, vuelva a introducir la contraseña de la **cuenta de destino** y haga clic en `Iniciar migración`{.action}. Si la información introducida es correcta, podrá iniciar la migración volviendo a hacer clic en el botón `Iniciar migración`{.action}.
 
-Si tiene un archivo .PST que quiera importar a su cuenta de correo, puede hacerlo desde el menú `PST`{.action}.
+La página mostrará el progreso de la migración. Anote el **ID de migración** y espere a que termine la operación. Su duración dependerá de la cantidad de contenido migrada. A continuación se explica cómo consultar el estado de la migración.
 
-![emails](images/3769_EN.png){.thumbnail}
+### Consultar una migración mediante archivo
 
-Haga clic en `Iniciar migración`{.action}.
+Existen dos formas de consultar el estado de una migración mediante archivo PST, ICS o VCF:
 
-A continuación seleccione el archivo PST con el botón `Examinar`{.action} o `Seleccionar archivo`{.action}.
+- desde el mensaje de correo electrónico en el que se informa de que la migración ha comenzado;
+- desde la página correspondiente de la herramienta <https://omm.ovh.net/>, situando el ratón sobre `Migración`{.action} en el menú superior y seleccionando `Consultar/Sincronizar`{.action}. Una vez en la página, introduzca el **ID de migración** y la **Cuenta de destino**.
 
-![emails](images/3770.png){.thumbnail}
+![Consultar el estado de la migración](images/omm-migration-track.png){.thumbnail}
 
-Una vez haya seleccionado el archivo .PST, deberá introducir la contraseña de la cuenta de destino antes de iniciar la migración.
+Se mostrará el estado de la migración. También aparecerá un mensaje indicándole si el proceso va a comenzar, ha comenzado o ya ha finalizado. Según el estado de la migración, podrá realizar diversas acciones:
 
-Cuando comience la migración, se mostrará el ID de migración. Anote este número, ya que lo necesitará para consultar el progreso de la misma.
+|Acción|Descripción|
+|---|---|
+|Cancelar el proceso|Permite cancelar la migración. Los elementos que ya se hayan migrado permanecerán en la cuenta de destino.|
+|Deshacer|Permite eliminar de la cuenta de destino los elementos que ya se hayan migrado.|
 
-## Consultar el estado de una migración
+### Realizar una migración por lotes (modo proyecto) y consultar su estado
 
-Puede consultar el progreso de la migración de su cuenta.
+Vaya a la página <https://omm.ovh.net/>. Sitúe el ratón sobre la opción `Proyecto`{.action} en el menú superior y seleccione `Nuevo proyecto de migración por lotes`{.action}.
 
-Para ello, necesitará:
+![Migración por lotes](images/omm-migration-project.png){.thumbnail}
 
-- el ID de migración (ver etapa anterior),
-- la dirección de correo de origen.
+Introduzca la información del **nuevo proyecto**:
 
-Introduzca los datos arriba indicados y haga clic en `Seguir`{.action} para consultar el estado de la migración.
+|Campo|Descripción|
+|---|---|
+|Nombre|Asigne un nombre al proyecto de migración.|
+|Contraseña|Establezca una contraseña para poder gestionar el proyecto de migración desde la herramienta OVH Mail Migrator.|
+|Correo electrónico|Introduzca la dirección de correo electrónico en la que quiera recibir las notificaciones relativas a la migración.|
 
-![emails](images/2799_en.png){.thumbnail}
+Haga clic en `Crear el proyecto`{.action}. A continuación podrá gestionar y consultar el estado del proyecto de migración. No olvide anotar el **ID del proyecto**.
 
-Se abrirá una nueva ventana en la podrá ver el estado de la migración. Así sabrá en qué fase se encuentra o si ya ha finalizado.
+Ya puede empezar a migrar el contenido de sus cuentas. Existen diversas pestañas disponibles:
 
-![emails](images/2800_en.png){.thumbnail}
+|Pestaña|Descripción|
+|---|---|
+|Continuar|Permite consultar el estado de las migraciones del proyecto. También puede poner en cola de espera o reanudar las migraciones.|
+|Creación por lotes|Permite añadir a la cola de espera varias migraciones mediante la importación de un archivo CSV o Excel. En este último caso, el archivo Excel debe tener un formato concreto, por lo que le recomendamos que utilice el modelo que le facilitamos.|
+|Añadir|Permite añadir migraciones a la cola de espera una a una. Es posible conservar los servidores de origen y de destino como valores por defecto.|
+|Opciones|Permite personalizar los elementos que debe migrar la herramienta OVH Mail Migrator, así como el número de peticiones simultáneas que la herramienta puede realizar al ejecutar las migraciones.|
+|Desconexión|Permite desconectarse de la página de seguimiento del proyecto para así poder volver a identificarse para consultar otro proyecto de migración, por ejemplo.|
 
-En dicha pantalla se muestran los siguientes datos:
+Si quiere consultar el estado de un proyecto de migración, acceda a la página <https://omm.ovh.net/>. Sitúe el ratón sobre la opción `Proyecto`{.action} en el menú superior y seleccione `Consultar el progreso de un proyecto`{.action}. Una vez en la página correspondiente, introduzca el **ID del proyecto de migración** y la **Contraseña**.
 
-- ID de la tarea correspondiente a la operación de migración.
-- Fecha de creación de la operación de migración.
-- Última modificación de la operación de migración.
-- Botones `Cancelar`{.action} y `Deshacer`{.action}, cuyo funcionamiento se explica a continuación.
+## Más información
 
-### Cancelar
-
-El botón `Cancelar`{.action} cancela las etapas restantes, aunque finaliza aquella que se esté realizando.
-
-Por ejemplo, si hace clic en el botón durante la migración de los contactos, la acción de migración de los contactos terminará, pero si había solicitado también la migración de los calendarios, esta no se realizará y la operación finalizará.
-
-### Deshacer
-
-El botón `Deshacer`{.action} permite restablecer la cuenta de destino a su estado inicial (anterior a la migración). Esta función solo está disponible durante las 48 horas posteriores a la finalización del proceso de migración.
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
