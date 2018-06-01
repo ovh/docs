@@ -1,11 +1,11 @@
 ---
-title: Configuring your Exchange account in Outlook 2016 for Mac
+title: 'Configuring your Exchange account in Outlook 2016 for Mac'
 slug: configuration-outlook-2016-mac
-excerpt: Find out how to configure your Exchange account in Outlook 2016 for Mac.
-section: Exchange email client configuration
+excerpt: 'Find out how to configure your Exchange account in Outlook 2016 for Mac.'
+section: 'Exchange email client configuration'
 ---
 
-**Last updated 23rd March 2018**
+**Last updated 1st June 2018**
 
 ## Objective
 
@@ -30,7 +30,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 Once you have launched Outlook on your device, you can add an account in two different ways:
 
-- **When you start the application for the first time**: a setup wizard will appear and prompt you to enter your email address.
+- **When you start the application for the first time:** A setup wizard will appear and prompt you to enter your email address.
 
 - **If you have already added an account:** Click `Tools`{.action} in the menu bar at the top of your screen, then `Accounts`{.action}. In the window that pops up, click `+`{.action}, then `New account`{.action}.
 
@@ -44,7 +44,7 @@ Enter your email address, then click `Continue`{.action}. If you are asked to ch
 |Mail address|Enter a name that will distinguish this account from any other accounts added in Outlook.|
 |DOMAIN\username or email address|Enter your full email address.|
 |Password|Enter the password for your email address.|
-|Server|Depending on the DNS configuration for your domain name, you may not need to enter the server. If you do need to enter it, enter the details for the server your Exchange service is hosted on. You will find these details in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
+|Server|Depending on the DNS configuration for your domain name, you may not need to enter the server. If you do, enter the details for the server your Exchange service is hosted on. You will find these details in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
 
 Once you have entered this information, click `Add account`{.action}. If the information is correct, Outlook will successfully connect to the account.
 
@@ -56,7 +56,7 @@ To check that the account has been properly configured, you can send a test emai
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH offers a web application that offers various [collaborative features](https://www.ovh.co.uk/emails/){.external},  You can access this application at <https://mail.ovh.net/en/>. You can log in using your email credentials.
+OVH offers a web application that includes various [collaborative features](https://www.ovh.co.uk/emails/){.external}, which can be accessed at <https://mail.ovh.net/en/>. You can log in using your email credentials.
 
 ## Go further
 
