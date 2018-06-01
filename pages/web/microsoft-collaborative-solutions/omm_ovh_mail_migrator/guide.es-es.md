@@ -5,7 +5,7 @@ excerpt: 'Cómo utilizar OVH Mail Migrator para migrar una cuenta de correo elec
 section: 'Migración de una cuenta'
 ---
 
-**Última actualización: 31/05/2018**
+**Última actualización: 01/06/2018**
 
 ## Objetivo
 
