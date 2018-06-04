@@ -6,22 +6,13 @@ section: 'Configuration de l''hébergement'
 order: 2
 ---
 
-**Dernière mise à jour le 30/05/2018**
+**Dernière mise à jour le 04/06/2018**
 
 ## Objectif
 
 La page d'avertissement « Site non installé » vous signale que la configuration DNS de votre nom de domaine n'est pas correcte ou que le nom de domaine utilisé par votre site internet n'a pas été correctement configuré sur votre hébergement web OVH.
 
 **Découvrez comment résoudre le cas de la page d'avertissement « Site non installé ».**
-
-> [!primary]
->
-> **Message du 30/05/2018** :
-> 
-> Si cette page apparaît sans que vous ayez récemment effectué des modifications dans votre espace client, nous vous invitons à consulter les informations présentes sur ce lien : <http://travaux.ovh.net/?do=details&id=31910>.
-> 
-> Nous nous excusons pour la gêne occasionnée et mettons tout en œuvre pour régler ce dysfonctionnement au plus vite
->
 
 ## Prérequis
 
