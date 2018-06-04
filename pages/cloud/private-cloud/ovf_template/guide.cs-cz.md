@@ -1,22 +1,27 @@
 ---
-title: 'Aplikace OVF šablony'
+title: 'Aplikace OVF šablony Windows a SQL server'
 slug: pouziti-sablony-ovh
-excerpt: 'Naučte se pracovat s OVF šablonou v tlustém klientovi vSphere'
+excerpt: 'Naučte se pracovat s OVF šablonou Windows a SQL server'
 section: 'Služby a volitelná rozšíření OVH'
 ---
 
-**Poslední aktualizace 28/05/2018**
+**Poslední aktualizace 04/06/2018**
 
 ## Cíl
 
-OVH poskytuje šablony operačních systémů Windows (ve formátu OVF), které lze na Vašem virtuálním stroji aplikovat přímo pomocí tlustého klienta vSphere.
+OVH poskytuje šablony Windows a SQL server (ve formátu OVF), které lze na Vašem virtuálním stroji aplikovat přímo pomocí tlustého klienta (verze 5.5 a 6.0) a webového klienta (flash a HTML 5 pro verzi 6.5) vSphere.
 
 **V této příručce se dozvíte, kde jsou umístěny zdrojové soubory a jak s nimi pracovat.**
 
+> [!primary]
+> 
+> Ceny jednotlivých diskových obrazů naleznete na [těchto stránkách](https://www.ovh.cz/private-cloud/moznosti/images-licences.xml){.external}.
+>
+
 ## Prerekvizity
 
-- Přístup k webovému klientovi
-- Aktivní licence Windows (aktivaci lze provést prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, záložka `Licence Windows`{.action} u příslušného datacentra). 
+- Přístup k webovému či tlustému klientovi v závislosti na používané verzi.
+- Aktivní licence Windows (aktivaci lze provést prostřednictvím [Zákaznického prostoru OVH](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/#windows-licence){.external}, záložka [Licence Windows](https://www.ovh.com/auth/?action=gotomanager){.external} u příslušného datacentra). 
 
 
 ## Postup
@@ -27,9 +32,9 @@ Prostřednictvím webového prohlížeče přejděte na hlavní stránku svého 
 
 ![Název obrázku](images/gatewayssl.png){.thumbnail}
 
-Na stránce `Templates Library` klikněte na `Windows`{.action}. Následně se zobrazí nabídka dostupných šablon pro jednotlivé operační systémy Windows.
+Na stránce `Templates Library` se zobrazí nabídka dostupných šablon pro jednotlivé operační systémy Windows a SQL server. 
 
-Klikněte pravým tlačítkem myši na požadovanou šablonu a zkopírujte si její URL adresu (Copy Link Andress):
+Vyberte požadovanou šablonu. Následně se zobrazí nabídka odkazů pro instalaci šablony v závislosti na Vámi používané verzi řešení vSphere.
 
 ![Název obrázku](images/copylink.png){.thumbnail}
 
@@ -40,7 +45,7 @@ Po připojení k webovému klientovi vSphere přejděte na stránku `Host and Cl
 
 ![Název obrázku](images/selectdeploy.png){.thumbnail}
 
-Zobrazí se kontextová nabídka, v jejímž rámci budete požádáni o upřesnění konfigurace aplikované šablony: Ze všeho nejdříve zadejte URL adresu šablony, kterou jste si v předcházející fázi zkopírovali do schránky:
+Zobrazí se kontextová nabídka, v jejímž rámci budete požádáni o upřesnění konfigurace aplikované šablony: ze všeho nejdříve zadejte URL adresu šablony, kterou jste si v předcházející fázi zkopírovali do schránky:
 
 ![Název obrázku](images/puturl.png){.thumbnail}
 
