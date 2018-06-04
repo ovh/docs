@@ -5,7 +5,7 @@ excerpt: This guide explains how to enable the Backup Storage functionality and 
 section: Storage
 ---
 
-**Last updated 4/06/2018**
+**Last updated 4th June 2018**
 
 ## Objective
 
@@ -15,14 +15,14 @@ OVH provides 500 GB of free backup storage space with each Dedicated Server.
 
 ## Requirements
 
-* Access to a [dedicated server](https://www.ovh.com.au/dedicated-servers/){.external}
-* Access to your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* Access to a [dedicated server](https://www.ovh.ie/dedicated_servers/){.external}
+* Access to your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 ### Activate Backup storage
 
-Log into your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab, and click the `Activate the Backup Storage`{.action} button.
+Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab, and click the `Activate the Backup Storage`{.action} button.
 
 ![Activate Backup storage](images/backup-storage-01-edited.png){.thumbnail}
 
@@ -39,7 +39,7 @@ Access to your Backup storage is restricted by IP address using an access contro
 
 #### Add backup access
 
-Log into your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab, and click the `Add an access button`{.action}.
+Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab, and click the `Add an access button`{.action}.
 
 ![Add backup access](images/backup-storage-03-edited.png){.thumbnail}
 
@@ -78,7 +78,7 @@ Access to the backup storage will now be revoked for that IP block.
 
 ### Reset your password
 
-Log into your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Forgotten your password`{.action} button.
+Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Forgotten your password`{.action} button.
 
 ![Reset your password](images/backup-storage-04-edited.png){.thumbnail}
 
@@ -90,7 +90,7 @@ A password recover email will now be sent to the email address registered to you
 
 ### Delete the Backup Storage
 
-Log into your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Delete the Backup Storage button`{.action}
+Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Delete the Backup Storage button`{.action}
 
 ![Delete the Backup storage](images/backup-storage-05-edited.png){.thumbnail}
 
@@ -102,7 +102,7 @@ The Backup storage will now be deleted after a few minutes.
 
 ### Order disk space
 
-Log into your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Order disk space`{.action} button.
+Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Order disk space`{.action} button.
 
 ![Order disk space](images/backup-storage-06-edited.png){.thumbnail}
 

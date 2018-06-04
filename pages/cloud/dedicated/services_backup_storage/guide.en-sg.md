@@ -5,7 +5,7 @@ excerpt: This guide explains how to enable the Backup Storage functionality and 
 section: Storage
 ---
 
-**Last updated 4/06/2018**
+**Last updated 4th June 2018**
 
 ## Objective
 
@@ -15,7 +15,7 @@ OVH provides 500 GB of free backup storage space with each Dedicated Server.
 
 ## Requirements
 
-* Access to a [dedicated server](https://www.ovh.com.au/dedicated-servers/){.external}
+* Access to a [dedicated server](https://www.ovh.com/sg/dedicated-servers/){.external}
 * Access to your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
