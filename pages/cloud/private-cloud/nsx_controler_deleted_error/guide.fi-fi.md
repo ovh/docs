@@ -46,4 +46,4 @@ Tämä selittää lisäksi hälytyksen NSX-hallintapaneelissa:
 
 ## Lue lisää aiheesta
 
-Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en>.
+Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en/>.
