@@ -6,7 +6,7 @@ section: Preparação
 order: 5
 ---
 
-**Última atualização: 17/05/2018**
+**Última atualização: 05/06/2018**
 
 ## Sumário
 
@@ -33,7 +33,7 @@ Já [criou uma pool - EN](https://docs.ovh.com/gb/en/cloud-desktop-infrastructur
 
 **Pode aceder ao seu ambiente de trabalho virtual a partir do navegador que preferir.**
 
-Para isso, clique no endereço indicado no e-mail recebido após a obtenção da [Cloud Desktop Infrastructure](https://www.ovh.pt/cloud/cloud-desktop/infrastructure/){.external}, em *Desktop Access*. O seu navegador por defeito vai abrir-se e mostrar uma janela na qual poderá escolher instalar o `VMware Horizon Client` ou o `VMware Horizon HTML Access`.
+Para isso, clique no endereço indicado no e-mail recebido após a obtenção da [Cloud Desktop Infrastructure](https://www.ovh.pt/cloud/cloud-desktop/infrastructure/){.external, em *Desktop Access*. O seu navegador padrão vai abrir-se e mostrar uma janela na qual poderá escolher instalar o `VMware Horizon Client` ou o `VMware Horizon HTML Access`.
 
 ![Entrada no Horizon](images/1200.png){.thumbnail}
 

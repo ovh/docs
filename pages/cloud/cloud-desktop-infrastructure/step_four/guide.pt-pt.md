@@ -6,7 +6,7 @@ section: Preparação
 order: 4
 ---
 
-**Última atualização: 17/05/2018**
+**Última atualização: 05/06/2018**
 
 ## Sumário
 
@@ -26,7 +26,7 @@ Agora que a [pool está criada - EN](https://docs.ovh.com/gb/en/cloud-desktop-in
 
 ### Gerir os utilizadores
 
-Quando obtém a plataforma, são criados dez utilizadores genéricos (*vdiXX*, em que XX representa um número).   As informações sobre a conexão são indicadas no e-mail de entrega.
+Quando obtém a plataforma, são criados dez utilizadores genéricos (vdiXX, em que XX representa um número). As informações sobre a conexão são indicadas no e-mail que recebe quando o serviço é entregue.
 
 A criação de novos utilizadores encontra-se explicada neste guia: [Criação de utilizadores - FR](https://docs.ovh.com/fr/cloud-desktop-infrastructure/create-users/){.external}
 
