@@ -5,14 +5,14 @@ slug: criar-eliminar-grupo-seguranca-no-horizon
 section: 'A partir da interface Horizon'
 ---
 
-**Última atualização: 21/05/2018**
+**Última atualização: 05/06/2018**
 
 
 ## Sumário
 
-Os grupos de segurança são conjuntos de regras de filtragem dos endereços IP e das portas que se aplicam a todas as instâncias de um dado projeto e que definem o acesso da rede à instância. As regras do grupo são específicas a um projeto. Os seus membros podem editar as regras por defeito para o grupo e adicionar novos conjuntos de regras.
+Os grupos de segurança são conjuntos de regras de filtragem dos endereços IP e das portas que se aplicam a todas as instâncias de um dado projeto e que definem o acesso da rede à instância. As regras do grupo são específicas a um projeto. Os seus membros podem editar as regras padrão para o grupo e adicionar novos conjuntos de regras.
 
-Todos os projetos dispõem de um grupo de segurança por defeito, utilizado para cada instância que não tem outro grupo de segurança definido. Na OVH, os parâmetros por defeito do grupo de segurança autorizam tanto o tráfego de saída quanto o tráfego de entrada da instância.
+Todos os projetos dispõem de um grupo de segurança de forma padrão, utilizado para cada instância que não tem outro grupo de segurança definido. Na OVH, os parâmetros padrão do grupo de segurança autorizam tanto o tráfego de saída quanto o tráfego de entrada da instância.
 
 **Este guia explica como criar e eliminar um grupo de segurança através da interface Horizon.**
 
