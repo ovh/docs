@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to retrieve the serial number of a disk i
 section: 'Server Management'
 ---
 
-**Last update 4th June 2018**
+**Last update 6th June 2018**
 
 ## Objective
 
@@ -98,9 +98,10 @@ In this example, there are two RAIDs configured on the server (Adapter 0 and Ada
 
 
 ##### Step 2: Recover disks informations
+
 Next, you will need to gather the physical disk informations using the following command:
 
-```
+```sh
 # MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g'
 
 Slot Number: 0
@@ -134,7 +135,7 @@ The Device ID and Adapter ID will be used to tell smartctl which disk to look fo
 
 The command should look like this:
 
-```
+```sh
 # smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
 ```
 
