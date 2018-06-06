@@ -151,11 +151,11 @@ The RAID Device ID will be displayed as follows: /dev/sda = 1st RAID, /dev/sdb =
 > ```
 > 
 > You must then replace megaraid with sat+megaraid:
-> 
+>
 > ```
 > smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial Serial Number:    1234567890
 > ```
-
+>
 
 #### Retrieve a disk's serial number (LSI RAID Controller)
 
