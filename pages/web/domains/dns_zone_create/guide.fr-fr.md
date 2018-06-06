@@ -1,112 +1,74 @@
 ---
-title: Créer une zone DNS OVH pour un nom de domaine
-legacy_guide_number: 2229
+title: 'Créer une zone DNS OVH pour un nom de domaine'
 slug: creer-une-zone-dns-pour-un-domaine-externe
-excerpt: Ce guide vous indique comment créer une zone DNS pour un domaine n’etant pas enregistre chez OVH.
-section: DNS et zone DNS
+excerpt: 'Apprenez à créer une zone DNS chez OVH pour votre nom de domaine via votre espace client'
+section: 'DNS et zone DNS'
 order: 2
 ---
 
+**Dernière mise à jour le 05/06/2018**
 
-## Généralités
+## Objectif
 
-### Prérequis
-Pour pouvoir Créer une Zone DNS pour un domaine externe, assurez-vous qu'il respecte les prérequis suivants :
+La zone Domain Name System (DNS) d’un nom de domaine constitue le fichier de configuration de ce dernier. Elle se compose d’informations techniques, appelées enregistrements. Dans une utilisation classique, ces enregistrements permettent de faire le lien entre votre nom de domaine et le ou les serveurs qui hébergent votre site internet et vos adresses e-mail.
 
-- Aucune opération ou bon de commande ne doit être en cours pour ce domaine chez OVH
-- Le domaine doit exister
-- Le SOA du domaine doit être correctement mis en place dans sa zone DNS
+Pour diverses raisons, vous pouvez être amené à créer une zone DNS pour votre nom de domaine chez OVH.
 
+**Apprenez à créer une zone DNS chez OVH pour votre nom de domaine via votre espace client.**
 
-## Procedure
+## Prérequis
 
-### Étape 1 &#58; Verification du domaine
-- Dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, appuyez sur le bouton `Commander`{.action} situé en haut à gauche, puis sur `Zone DNS`{.action}.
+- Disposer d’un nom de domaine.
+- Le nom de domaine concerné ne doit pas déjà disposer d'une zone DNS OVH ou faire l'objet d'une opération ou d'une commande en cours chez OVH.
+- La configuration technique du nom de domaine doit être correcte (état, SOA, etc.).
+- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+## En pratique
 
-![domains](images/dns-zone-add.png){.thumbnail}
+### Étape 1 : créer la zone DNS via l'espace client
 
-- Dans le cadre "Nom de domaine" , indiquez le domaine pour lequel créer la zone.
+Pour démarrer cette manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Commander`{.action} dans la barre de services à gauche, puis sur `Zone DNS`{.action}.
 
+Sur la page qui apparaît, renseignez le nom de domaine pour lequel vous souhaitez créer une zone DNS OVH. Patientez quelques instants le temps que l'outil effectue des vérifications concernant le nom de domaine.
 
-![domains](images/4296.png){.thumbnail}
+Si un message apparaît vous indiquant que la zone DNS ne peut pas être créée, vérifiez que le nom de domaine respecte les prérequis nécessaires ou demandez à la personne gérant celui-ci de le faire pour vous. Dès que tout est correct, tentez de nouveau la manipulation.
 
+![dnszonecreate](images/dns-zone-create-step1.png){.thumbnail}
 
+Dès que la vérification aboutit, vous devez choisir d'activer ou non les entrées minimales pour la zone DNS que vous allez créer. Ce choix n'est pas définitif puisque vous pourrez éditer les enregistrements de la zone DNS une fois cette dernière créée.
 
-> [!alert]
+|Activer les entrées minimales ?|Détails|
+|---|---|
+|Oui|Sélectionnez ce choix si vous souhaitez personnaliser vous-même la zone DNS par la suite.|
+|Non|Sélectionnez ce choix si vous prévoyez d'utiliser des services OVH comme un [hébergement web](https://www.ovh.com/fr/hebergement-web/){.external}, la zone étant préconfigurée à cet effet.|
+
+![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
+
+Une fois votre choix effectué, poursuivez les étapes jusqu'à la création de la zone DNS.
+
+### Étape 2 : éditer la zone DNS (facultatif)
+
+La zone DNS pour votre nom de domaine étant maintenant créée, vous pouvez dès à présent l'éditer. Cette manipulation est facultative, mais elle peut se révéler indispensable si vous souhaitez assurer la continuité de la disponibilité des services liés à ce nom de domaine (comme un site internet et des e-mails).
+
+Si vous souhaitez éditer cette zone DNS, toujours depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+
+> [!primary]
 >
-> - 
-> Si le domaine indiqué n'entre pas dans les prérequis, il ne sera pas
-> possible de créer de zone DNS
-> 
-> 
-
-
-![domains](images/4297.png){.thumbnail}
-
-
-
-> [!success]
+> Si vous venez juste de créer la zone DNS et que le nom de domaine n'apparaît pas encore dans la liste des vos services `Domaines`{.action}, patientez quelques instants puis rechargez la page.
 >
-> Si vous disposez d'un domaine n'ayant aucun serveur DNS de renseigné, OVH vous permet d'utiliser des serveurs DNS provisoires afin d'ajouter* la zone DNS :
-> - 
-> parking1.ovh.net
-> - 
-> parking2.ovh.net
-> 
-> 
 
+Dès lors, réalisez les manipulations nécessaires. Vous pouvez en apprendre plus sur l'édition d'une zone DNS grâce à notre documentation intitulée « [Éditer une zone DNS OVH](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external} ». Une fois la zone DNS OVH de votre nom de domaine modifiée, un temps de propagation de 4 à 24 heures maximum est nécessaire afin que les modifications soient effectives.
 
-### Étape 2 &#58; Choix du type de zone
-Il vous faudra ensuite choisir le type de zone DNS :
+### Étape 3 : modifier les serveurs DNS du nom de domaine
 
-- Minimale : Zone DNS avec les entrées minimales pour fonctionner (A, MX, CNAME, ...)
-- Normale : Zone DNS avec des entrées supplémentaires (CNAME vers serveur POP/IMAP/SMTP, ...)
+Une fois que la zone DNS chez OVH est prête à être utilisée, vous devez la relier à votre nom de domaine. Pour cela, récupérez au préalable les serveurs DNS d'OVH activés pour votre nom de domaine dans votre espace client. Ces derniers apparaissent en dessous de `Name Servers`{.action}.
 
+![dnszonecreate](images/dns-zone-create-step3.png){.thumbnail}
 
-![domains](images/4298.png){.thumbnail}
+Une fois en votre possession, **modifiez les serveurs DNS de votre nom de domaine depuis l’interface du prestataire gérant ce dernier.** Une fois la manipulation exécutée, un temps de propagation de 48 heures maximum est nécessaire afin que le changement soit pleinement effectif.
 
+## Aller plus loin
 
-### Étape 3 &#58; Validation
-- Cochez la case "J'ai lu et j'accepte les contrats" .
-- Cliquez ensuite sur "Générer le bon de commande" .
+[Éditer une zone DNS OVH](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external}.
 
-
-![domains](images/4299.png){.thumbnail}
-
-- Cliquez ensuite sur "Régler" .
-
-
-![domains](images/4300.png){.thumbnail}
-
-- Une fois sur le bon de commande, cliquez sur "Poursuivre" .
-
-
-![domains](images/4301.png){.thumbnail}
-
-
-
-> [!success]
->
-> La création de votre zone DNS est totalement gratuite.
-> 
-
-- Indiquez sur le code de sécurité et validez .
-
-
-![domains](images/4302.png){.thumbnail}
-
-
-### Étape 4 &#58; Confirmation de commande
-Vous pourrez ensuite visualiser que votre bon de commande est bien validé.
-
-
-![domains](images/4303.png){.thumbnail}
-
-
-
-> [!success]
->
-> Suite à la validation de votre bon de commande, un délai d'installation de
-> 30mn peut être nécessaire.
-> 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
