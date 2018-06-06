@@ -18,7 +18,7 @@ Si vous souhaitez déplacer vos objets d'un data-centre à un autre, ou même d'
 
 ## Configuration de la synchronisation
 
-### Creation de la cle de synchronisation
+### Creation de la clé de synchronisation
 Afin que les conteneurs puissent s'identifier, il faudra créer une clé puis la configurer sur chacun des conteneurs d'objets :
 
 - Créer la clé :
@@ -30,7 +30,7 @@ root@serveur-1:~$ sharedKey=$(openssl rand -base64 32)
 
 
 ### Configuration du conteneur destinataire
-Dans un premier temps, il faut configurer la clé sur le conteneur qui recevra les données. Dans notre cas, celui ci se trouve a BHS.
+Dans un premier temps, il faut configurer la clé sur le conteneur qui recevra les données. Dans notre cas, celui ci se trouve à BHS1.
 
 - Vérifier la région chargée dans les variables d'environnement :
 
@@ -46,7 +46,7 @@ OS_REGION_NAME=BHS1
 root@serveur-1:~$ swift post --sync-key "$sharedKey" containerBHS
 ```
 
-- Il est possible de vérifier que celle ci a bien été configuré grâce la commande suivante :
+- On vérifie que celle-ci as bien été configuré grâce la commande suivante et on récupère en même temps le contenu de la variable "Account" :
 
 ```bash
 root@serveur-1:~$ swift stat containerBHS
@@ -67,13 +67,11 @@ Meta Access-Control-Allow-Origin: https://www.ovh.com
                     Content-Type: text/plain; charset=utf-8
 ```
 
-- Récupérer l'adresse du conteneur destinataire pour ensuite la configurer sur le conteneur source :
+- Récupérer l'adresse du conteneur destinataire pour ensuite la configurer sur le conteneur source (Celle-ci est du type : "//OVH_PUBLIC_CLOUD/Région/Account/Conteneur")
 
 ```bash
-root@serveur-1:~$ destContainer=$(swift --debug stat containerBHS 2>&1 | grep 'curl -i.*storage' | awk '{ print $4 }')
+root@serveur-1:~$ export destContainer="//OVH_PUBLIC_CLOUD/BHS1/AUTH_b3e269xxxxxxxxxxxxxxxxxxxx2b0ba29/containerBHS"
 ```
-
-
 
 ### Configuration du conteneur source
 - Changer de région dans les variables d'environnement :
@@ -104,7 +102,7 @@ root@serveur-1:~$ swift stat containerGRA
            Bytes: 15
         Read ACL:
        Write ACL:
-         Sync To: https://storage.bhs1.cloud.ovh.net/v1/AUTH_b3e269f057d14af594542d6312b0ba29/containerBHS
+         Sync To: //OVH_PUBLIC_CLOUD/BHS1/AUTH_b3e269xxxxxxxxxxxxxxxxxxxx2b0ba29/containerBHS
         Sync Key: 4cA5j5LyaaG2wU4lDYnDmEwQSxnvIJv+y2qFnbnm6Kw=
    Accept-Ranges: bytes
       Connection: close
