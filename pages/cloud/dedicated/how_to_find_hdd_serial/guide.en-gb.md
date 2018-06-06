@@ -62,7 +62,7 @@ To retrieve the serial number of a Software RAID configuration, you must use the
 
 ```sh
 # .\smartctl -a /dev/sdX Serial Number: 1234567890
- ```
+```
 
 The device will be detected by the OS, and displayed as follows: /dev/sda, /dev/sdb, etc.
 
@@ -82,7 +82,7 @@ You can find the serial number using the smartctl command. However, prior to exe
 
 You can retrieve this information by using the following command:
 
-```
+```sh
 # MegaCli -LDInfo -Lall -aALL | egrep 'Adapter|Size' | grep -v Strip
 
 Adapter 0
@@ -166,7 +166,7 @@ You can refer to [this guide (LSI raid controller)](https://docs.ovh.com/gb/en/d
 Once you have found the sg device related to the hard disk you want to query, use the following command:
 
 ```sh
- # smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
+# smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
 ```
 
 The sg device number will be displayed as follows: /dev/sg0, /dev/sg1) etc.
