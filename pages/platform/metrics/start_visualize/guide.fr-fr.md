@@ -13,7 +13,7 @@ Multiple tools are available to graph your data, compose dashboards or show coun
 
 
 ### Grafana
-- **Grafana**: Do you know that we provide a free hosted [**Grafana**](https://grafana.tsaas.ovh.net){.external}?
+- **Grafana**: Do you know that we provide a free hosted [**Grafana**](https://grafana.metrics.ovh.net){.external}?
 
 
 ![header](images/grafana.png){.thumbnail}

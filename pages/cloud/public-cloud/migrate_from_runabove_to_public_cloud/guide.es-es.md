@@ -8,9 +8,7 @@ section: Miscelánea
 
 
 ## 
-Como podemos ver en su [página](https://www.runabove.com/index.xml), RunAbove es la marca que presenta todas las innovaciones de OVH a través de diferentes Labs como los [Desktop as a service](https://www.runabove.com/deskaas.xml) y obviamente todo lo relativo a [el IoT](https://www.runabove.com/iot-paas-timeseries.xml).
-
-Los Labs como [Object Storage](https://www.runabove.com/cloud-storage.xml), las [instancias](https://www.runabove.com/cloud-instance.xml) y los [discos adicionales](https://www.runabove.com/cloud-disks.xml) ya no están disponibles. Sin embargo, puede encontrarlos en [el Public Cloud de OVH](https://www.ovh.es/cloud/) con mayor detalle.
+Como podemos ver en su [página](https://www.runabove.com/index.xml), RunAbove es la marca que presenta todas las innovaciones de OVH a través de diferentes Labs.
 
 
 ## 

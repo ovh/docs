@@ -8,9 +8,7 @@ section: Resource management
 
 
 ## 
-As you can see on the [website](https://www.runabove.com/index.xml), RunAbove is now the brand representing all of OVH's innovations in various Lab forms such as [Desktop as a service](https://www.runabove.com/deskaas.xml) and of course everything to do with [IoT](https://www.runabove.com/iot-paas-timeseries.xml).
-
-b]Labs such as [Object Storage](https://www.runabove.com/cloud-storage.xml), [instances](https://www.runabove.com/cloud-instance.xml) and [additionnal volumes](https://www.runabove.com/cloud-disks.xml) are now closed. However, you can still find them on the [OVH Public Cloud](https://www.ovh.com/us/cloud/) in a new and improved version.
+As you can see on the [website](https://www.runabove.com/index.xml), RunAbove is now the brand representing all of OVH's innovations in various Lab forms.
 
 
 ## 
