@@ -1,11 +1,11 @@
 ---
-title: 'Hardware Diagnostics'
+title: 'Hardware diagnostics'
 slug: hardware-diagnostics
 excerpt: 'This guide will show you how to diagnose hardware issues on your server.'
 section: 'Diagnostic and rescue mode'
 ---
 
-**Last updated 18th May 2018**
+**Last updated 07th June 2018**
 
 ## Objective
 
@@ -16,29 +16,15 @@ At some point during the life of your server, you may encounter a fault due to a
 
 ## Requirements
 
-* Access to your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-* Access to your [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
+* A [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
+* [Rescue mode activated](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
 
 
 ## Instructions
 
-### Activate rescue mode
-
-You can activate rescue mode by logging into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and going to your server's page. Then go to `Server Status`{.action} > `General information`{.action} > `Boot`{.action} and click the `Edit`{.action} button to change the boot mode.
-
-![General Information](images/rescue-mode-01.png){.thumbnail}
-
-On the next screen, select `Boot on rescue mode`{.action}. If your server has a Linux-based OS, select `rescue64-pro`{.action} from the dropdown list. If you have a Windows server, select `WinRescue`{.action}. Lastly, type your email address in the text field, then click `Next`{.action}.
-
-![Change the Netboot](images/rescue-mode-03.png){.thumbnail}
-
-Confirm your options on the next screen, and then reboot your server to apply your changes. Your server will now reboot in rescue mode, and you will receive the credentials for logging in via the email address you provided. To exit rescue mode, simply change the boot mode back to `Boot on the hard disk`{.action}, then reboot your server.
-
-![Reboot the server](images/rescue-mode-02.png){.thumbnail}
-
 ### Use the web interface
 
-Once your server has rebooted, you'll receive an email with your rescue mode access credentials. The email will also contain a link to the rescue mode web interface. The link usually looks like this: <https://your_servers_ip_address:444>.
+Once your server has rebooted, you'll receive an email with your rescue mode access credentials. This email will contain a link to the rescue mode web interface. The link usually looks like this: *https://your_servers_ip_address:444*.
 
 After clicking the link, you be taken to the web interface, as shown below.
 
