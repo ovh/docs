@@ -1,7 +1,7 @@
 ---
 title: 'Actualizar el firewall Cisco ASA'
-excerpt: 'Cómo actualizar el firewall Cisco ASA'
 slug: actualizar-firewall-cisco-asa
+excerpt: 'Cómo actualizar el firewall Cisco ASA'
 section: 'Uso avanzado'
 ---
 
@@ -244,7 +244,7 @@ Conéctese al Cisco Adaptive Security Device Manager. Haga clic en `Tools`{.acti
 A continuación, elija las siguientes opciones:
 
 - **Image to Upload**: ASDM.
-- *Local File Path*: Haga clic en `Browse Local Files`{.action} y seleccione su versión del archivo binario del ASDM.
+- **Local File Path**: Haga clic en `Browse Local Files`{.action} y seleccione su versión del archivo binario del ASDM.
 
 A continuación, haga clic en `Upload Image`{.action}, y luego en `Yes`{.action} para confirmar que esa debe ser la imagen de arranque:
 
@@ -298,7 +298,7 @@ Conéctese al Cisco Adaptive Security Device Manager. Haga clic en `Tools`{.acti
 A continuación, elija las siguientes opciones:
 
 - **Image to Upload**: ASA.
-- *Local File Path*: Haga clic en `Browse Local Files`{.action} y seleccione su versión del archivo binario del ASA.
+- **Local File Path**: Haga clic en `Browse Local Files`{.action} y seleccione su versión del archivo binario del ASA.
 
  
 A continuación, haga clic en `Upload Image`{.action}, y luego en `Yes`{.action} para confirmar que esa debe ser la imagen de arranque:
@@ -352,7 +352,7 @@ Conéctese al Cisco Adaptive Security Device Manager. Haga clic en `Tools`{.acti
 
 ![Reiniciar el ASA a través del ASDM 1](images/asa5.jpg){.thumbnail}
 
-Para un reinicio inmediato, en `Reload Start Time`, seleccione la opción `Now`{.action} y haga clic en `Schedule Reload`{.action}. 
+Para un reinicio inmediato, en **Reload Start Time**, seleccione la opción `Now`{.action} y haga clic en `Schedule Reload`{.action}. A continuación, haga clic `Yes`{.action} para confirmar.
 
 ![Reiniciar el ASA a través del ASDM 2](images/asa6.jpg){.thumbnail}
 
