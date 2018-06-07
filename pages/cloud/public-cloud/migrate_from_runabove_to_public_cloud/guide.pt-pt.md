@@ -7,9 +7,7 @@ legacy_guide_number: g1942
 
 
 ## 
-Como é possível verificar no [site](https://www.runabove.com/index.xml), RunAbove é agora a marca que apresentará todas as inovações da OVH sob a forma de diferentes "Labs" como [Desktop as a service](https://www.runabove.com/deskaas.xml) e, evidentemente, tudo o que diz respeito à [IoT](https://www.runabove.com/iot-paas-timeseries.xml).
-
-Os Labs tais como [Object Storage](https://www.runabove.com/cloud-storage.xml), as [instâncias](https://www.runabove.com/cloud-instance.xml) e os [espaços de armazenamento adicionais](https://www.runabove.com/cloud-disks.xml) já estão encerrados. Poderá, contudo, encontrá-los no serviço [Public Cloud OVH](https://www.ovh.com/fr/cloud/) de forma "reforçada".
+Como é possível verificar no [site](https://www.runabove.com/index.xml), RunAbove é agora a marca que apresentará todas as inovações da OVH sob a forma de diferentes "Labs".
 
 
 ## 
