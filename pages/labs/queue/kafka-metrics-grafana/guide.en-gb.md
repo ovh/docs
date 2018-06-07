@@ -10,7 +10,7 @@ This tutorial assumes you already have an OVH account, have subscribed to [OVH K
 
 If you don't, have a look at our [Getting Started](https://community.runabove.com/kb/en/queue/getting-started-with-queue-as-a-service.html) guide that will also introduce you to Kafka.
 
-This guide will help you to understand step by step how to display your Kafka applications metrics using [Grafana](https://grafana.tsaas.ovh.com) and the [Metrics Data Platform](https://www.ovh.com/fr/data-platforms/metrics/).
+This guide will help you to understand step by step how to display your Kafka applications metrics using [Grafana](https://grafana.metrics.ovh.net) and the [Metrics Data Platform](https://www.ovh.com/fr/data-platforms/metrics/).
 
 ## Preparation
 ### Get your application credentials to use the Metrics API
@@ -21,7 +21,7 @@ Click on the application that you want to monitor, you will be by default in the
 ![Application ID](images/credentials.png)
 
 ## Grafana configuration
-Open [OVH Grafana](https://grafana.tsaas.ovh.com) and log in with your OVH account.
+Open [OVH Grafana](https://grafana.metrics.ovh.net) and log in with your OVH account.
 To configure a new datasource, you first need to create your own organization.
 
 ### Create your own organization
@@ -45,7 +45,7 @@ HTTP Settings:
 
   - Name: This is up to you
   - Type: OpenTSDB
-  - Url: https://opentsdb-gra1.tsaas.ovh.com
+  - Url: https://opentsdb.gra1.metrics.ovh.net
   - Access: Proxy
   - Http Auth: Basic Auth: true
   - With Credentials: false
