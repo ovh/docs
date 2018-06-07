@@ -16,7 +16,7 @@ Le mode rescue est un outil de votre serveur dédié. Il vous permet de démarre
 
 ## Prérequis
 
-- Avoir un accès en SSH (root) à votre [serveur dédié](https://www.ovh.co.uk/dedicated_servers/){.external}.
+- Avoir un accès en SSH (root) à votre [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
 
 
 ## En pratique
