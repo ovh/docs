@@ -7,10 +7,7 @@ legacy_guide_number: g1942
 
 
 ## 
-Kaip galima matyti [svetainėje](https://www.runabove.com/index.xml), RunAbove tampa būsimų OVH inovacijų prekės ženklu. Tai įvairios laboratorijos, pavyzdžiui, [Desktop as a service](https://www.runabove.com/deskaas.xml) ir [IoT](https://www.runabove.com/iot-paas-timeseries.xml).
-
-Laboratorijos, skirtos l'[Object Storage](https://www.runabove.com/cloud-storage.xml), [virtualioms mašinoms](https://www.runabove.com/cloud-instance.xml) ir [papildomiems diskams](https://www.runabove.com/cloud-disks.xml) jau nebeveikia RunAbove, tačiau jos padėjo patobulinti [OVH Public Cloud](https://www.ovh.com/fr/cloud/) paslaugą.
-
+Kaip galima matyti [svetainėje](https://www.runabove.com/index.xml), RunAbove tampa būsimų OVH inovacijų prekės ženklu.
 
 ## 
 Jei naudojotės RunAbove projektais, susijusiais su virtualiomis mašinomis, papildomais diskais ir objektų saugykla, jūs privalote kuo greičiau perkelti savo veiklą. Šiam tikslui paruošėme keletą gidų.

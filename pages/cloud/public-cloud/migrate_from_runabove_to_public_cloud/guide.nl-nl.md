@@ -7,10 +7,7 @@ legacy_guide_number: g1942
 
 
 ## 
-Zoals u op deze [site](https://www.runabove.com/index.xml) kunt zien, wordt RunAbove voortaan het merk dat alle OVH innovaties in de vorm van verschillende Labs presenteert zoals de [Desktop as a service](https://www.runabove.com/deskaas.xml) en natuurlijk alles dat om [IoT](https://www.runabove.com/iot-paas-timeseries.xml) draait. 
-
-De Labs zoals [Object Storage[/url, de [url="https://www.runabove.com/cloud-instance.xml"]instances](https://www.runabove.com/cloud-storage.xml) en de [extra volumes](https://www.runabove.com/cloud-disks.xml) zijn voortaan gesloten, u kunt ze echter terugvinden op [OVH Public Cloud](https://www.ovh.nl/cloud/).
-
+Zoals u op deze [site](https://www.runabove.com/index.xml) kunt zien. 
 
 ## 
 Vanwege de afsluitingsfase op RunAbove, moet u uw activiteiten die verbonden zijn met de instances, extra volumes en Object Storage zo snel mogelijk laten migreren. Meerdere handleidingen zijn voor u beschikbaar gesteld om u hierbij te helpen.
