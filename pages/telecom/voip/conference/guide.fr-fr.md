@@ -3,7 +3,6 @@ title: 'Créer et gérer des conférences téléphoniques'
 slug: conference
 excerpt: 'Découvrez comment créer et gérer une conférence téléphonique'
 legacy_guide_number: '7536737'
-space_name: Téléphonie
 section: 'Numéros ou alias'
 ---
 
@@ -19,7 +18,7 @@ La conférence permet à toutes les personnes composant un numéro donné d’ê
 ## Prérequis
 
 - Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external} dans la partie `Téléphonie`{.action}.
-- Posséder un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external}.
+- Avoir créé un [numéro](https://www.ovhtelecom.fr/telephonie/numeros/){.external} (un numéro porté ou un alias).
 
 
 ## En pratique
