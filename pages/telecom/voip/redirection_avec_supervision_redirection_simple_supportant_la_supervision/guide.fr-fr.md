@@ -20,7 +20,7 @@ Une redirection avec supervision (ou redirection simple supportant la supervisio
 ## Prérequis
 
 - Activer une [ligne VoIP](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
-- Avoir créé un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external}.
+- Avoir créé un [numéro](https://www.ovhtelecom.fr/telephonie/numeros/){.external} (un numéro porté ou un alias).
 - Être connecté à votre l'[espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external}.
 
 
