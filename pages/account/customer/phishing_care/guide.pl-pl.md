@@ -1,11 +1,11 @@
 ---
-title: Rozpoznawanie e-maili typu phishing
+title: 'Rozpoznawanie e-maili typu phishing'
 slug: oszustwa-phishing
-excerpt: Jak rozpoznać e-mail typu phishing i jak postępować, jeśli kliknąłeś w link wyłudzający informacje?
+excerpt: 'Jak rozpoznać e-mail typu phishing i jak postępować, jeśli kliknąłeś w link wyłudzający informacje?'
 section: Bezpieczeństwo
 ---
 
-**Ostatnia aktualizacja dnia 2018-03-19**
+**Ostatnia aktualizacja dnia 2018-06-12**
 
 ## Wprowadzenie
 
@@ -29,21 +29,32 @@ Otrzymałeś wiadomość e-mail od OVH i chcesz się upewnić, czy to nie phishi
 
 ![Różnica między e-mailem OVH a e-mailem typu phishing](images/phishing_email.png){.thumbnail}
 
+> [!alert]
+> 
+> Sprawdź, czy spełnione są trzy poniższe warunki:
+> 
+
 |Numer - opis|E-mail OVH|E-mail typu phishing|
 |---|---|---|
-|1 - Temat|W temacie wiadomości, na samym początku, widnieje Twój identyfikator klienta OVH i/lub adres e-mail przypisany do Twojego konta.|Bardzo często e-maile typu phishing są oznaczone w temacie w nawiasie kwadratowym jako "spam". Temat takiej wiadomości nie będzie też zawierał Twojego identyfikatora klienta OVH.|
-|2 - Link|Ustawienie kursora myszki na linku pozwoli Ci, bez kliknięcia w link, podejrzeć jego zawartość (w oknie obok linku lub w dolnej części przeglądarki internetowej). W tym przypadku widzisz link wskazujący na https://www.ovh.com.|Jednak kiedy najedziesz na niego kursorem, zobaczysz, że nie ma nic wspólnego z OVH. Nie klikaj w link.|
+|1 - Nadawca:|Sprawdź, czy adres użyty do wysyłki wiadomości e-mail jest w domenie: „@ovh.com”, „@soyoustart.com” lub „@kimsufi.com”.|Bardzo często e-maile typu phishing są oznaczone w temacie w nawiasie kwadratowym jako "spam". Temat takiej wiadomości nie będzie też zawierał Twojego identyfikatora klienta OVH lub będzie on nieprawidłowy.|
+|2 - Temat|Sprawdź, czy Twój identyfikator **(zaczynający się od pierwszej litery nazwiska i pierwszej litery imienia zarejestrowanych w OVH)** i/lub adres e-mail przypisany do Twojego konta figurują w temacie wiadomości.|Bardzo często e-maile typu phishing są oznaczone w temacie w nawiasie kwadratowym jako "spam". Temat takiej wiadomości nie będzie też zawierał Twojego identyfikatora klienta OVH lub będzie on nieprawidłowy.|
+|3 - Link|Ustawienie kursora myszki na linku pozwoli Ci, bez kliknięcia w link, podejrzeć jego zawartość (w dolnej części przeglądarki internetowej). W tym przypadku widzisz link wskazujący na https://www.ovh.com. |Kiedy najedziesz na link kursorem, zobaczysz, że nie ma on nic wspólnego z OVH. Nie klikaj w link.|
+
 
 
 > [!primary]
 > 
-> Pamiętaj, że do klientów Kimsufi ani So You Start nigdy nie wysyłamy e-maili jako OVH. Takie e-maile należy ignorować.
+> Pamiętaj, że do klientów Kimsufi ani So You Start nigdy nie wysyłamy e-maili dotyczących płatności jako OVH. Takie e-maile należy ignorować.
 > 
 
 #### Zgłaszanie e-maili typu phishing
 
 Jeśli po sprawdzeniu otrzymanej wiadomości zgodnie z podanymi wyżej wytycznymi podejrzewasz, że otrzymałeś e-mail typu phishing podszywający się pod OVH, prześlij nam jak najwięcej informacji (przynajmniej informację o zawartości e-maila) na następujący adres: **<fraude@ovh.com>**.
 
+> [!primary]
+> 
+> Pamiętaj, że informacje, które nam przekazujesz mogą być udostępniane stronom trzecim. Jest to konieczne, abyśmy mogli zwalczać te zagrożenia.
+> 
 
 ### Podałeś swoje dane osobowe: co powinieneś zrobić?
 
