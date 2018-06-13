@@ -1,13 +1,20 @@
 ---
-title: Configuration basique d’un SIP Trunk OVH sur 3CX Phone System
-excerpt: Configuration basique d'un SIP Trunk OVH avec l'IPBX 3CX Phone System et deux DDI.
+title: '3CX Phone System - configuration et utilisation'
+excerpt: 'Configuration basique d''un SIP Trunk OVH avec l''IPBX 3CX Phone System et deux DDI.'
 slug: configuration_basique_dun_sip_trunk_ovh_sur_3cx_phone_system
 legacy_guide_number: g1575
 section: IPBX
 ---
 
+> [!warning]
+> 
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+>
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+>
 
-## 
+## Prérequis
+
 Pour suivre ce guide il est important d’avoir les prérequis suivants : 
 
 
@@ -213,5 +220,6 @@ Le temps d’enregistrement minimum conseillé est de 1800 secondes. Pour modifi
 
 - Cliquez sur "Appliquer" pour confirmer la configuration.
 
+## Aller plus loin
 
-
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

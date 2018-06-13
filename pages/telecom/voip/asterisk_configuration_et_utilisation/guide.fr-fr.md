@@ -1,13 +1,18 @@
 ---
-title: Asterisk - configuration et utilisation
+title: 'Asterisk - configuration et utilisation'
 slug: asterisk-configuration-et-utilisation
 legacy_guide_number: '7536698'
-space_key: CRTEL
-space_name: Téléphonie
 section: IPBX
 ---
 
-### Préambule {#préambule}
+> [!warning]
+> 
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+>
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+>
+
+## Préambule {#préambule}
 
 Asterisk est un IPBX Software gratuit et disponible sur Linux. Cet IPBX très puissant vous permet de gérer votre téléphonie d'entreprise et de créer des services personnalisés. Vous trouverez dans ce guide les étapes pour bien démarrer en configurant votre ligne [**SIP Trunk**](https://www.ovhtelecom.fr/telephonie/sip_trunk/){.external-link}, la **présentation** de vos **numérosAlias** et le **routage** des appels selon le **numéroappelé**.
 
@@ -17,7 +22,7 @@ Niveau : Expert
 
 ------------------------------------------------------------------------
 
-### Prérequis {#prérequis}
+## Prérequis {#prérequis}
 
 Pour réaliser les étapes proposées dans ce guide, il faut :
 
@@ -45,7 +50,7 @@ Pour réaliser les étapes proposées dans ce guide, il faut :
 
 ------------------------------------------------------------------------
 
-### Installation {#installation}
+## Installation {#installation}
 
 Votre serveur est déjà installé. Dans ce guide, nous utilisons Debian 7 et partons du principe que vous avez déjà suivi et appliqué les recommandations de la partie **[sécurisation.](#Asterisk:configurationetutilisation-sécurisation)**
 
@@ -86,7 +91,7 @@ L'installation terminée. Vérifiez le bon fonctionnement en lançant la **conso
 
 ------------------------------------------------------------------------
 
-### Enregistrement de votre ligne {#enregistrement-de-votre-ligne}
+## Enregistrement de votre ligne {#enregistrement-de-votre-ligne}
 
 La configuration de la ligne s'effectue dans le fichier **sip.conf** localisé dans **/etc/asterisk**.
 
@@ -129,7 +134,7 @@ Vous obtenez alors l'information du REGISTER :
 
 ------------------------------------------------------------------------
 
-### Création et configuration des utilisateurs {#création-et-configuration-des-utilisateurs}
+## Création et configuration des utilisateurs {#création-et-configuration-des-utilisateurs}
 
 Dans ce guide, nous allons créer deux utilisateurs : **330** et **520**. Les utilisateurs sont à créer dans le fichier **sip.conf** :
 
@@ -167,3 +172,6 @@ Le dialplan est une partie importante : la stratégie de gestion des appels entr
         suivante exten => s,3,Hangup(16) ; La communication est termine
 
 
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
