@@ -1,13 +1,18 @@
 ---
-title: Freeswitch - configuration et utilisation
+title: 'Freeswitch - configuration et utilisation'
 slug: freeswitch-configuration-et-utilisation
 legacy_guide_number: '7536736'
-space_key: CRTEL
-space_name: Téléphonie
 section: IPBX
 ---
 
-### Préambule {#préambule}
+> [!warning]
+> 
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+>
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+>
+
+## Préambule {#préambule}
 
 Ce guide vous présente la configuration à utiliser pour enregistrer votre trunk sur Freeswitch mais aussi comment router les appels selon le numéro appelé et gérer la présentation du numéro selon l'extension utilisée.
 
@@ -29,7 +34,7 @@ Pour réaliser ce tutoriel, il faut :
 
 ------------------------------------------------------------------------
 
-### Installation {#installation}
+## Installation {#installation}
 
 Votre serveur est déjà installé. Nous utilisons Debian 7 dans ce guide et partons du principe que vous avez déjà suivi et appliqué les recommandations de la partie **[sécurisation](#Freeswitch:configurationetutilisation-securisation)**.
 
@@ -39,7 +44,7 @@ Pour faciliter la gestion, lancez Freeswitch en fond avec cette commande : **/us
 
 ------------------------------------------------------------------------
 
-### Enregistrement de votre ligne {#enregistrement-de-votre-ligne}
+## Enregistrement de votre ligne {#enregistrement-de-votre-ligne}
 
 Le fichier de configuration à créer pour enregistrer votre ligne se situe dans le répertoire **/usr/local/freeswitch/conf/sip\_profiles/external/**.
 
@@ -77,7 +82,7 @@ L'état **REGED** indique que le trunk est bien enregistré.
 
 ------------------------------------------------------------------------
 
-### Création et configuration des utilisateurs {#création-et-configuration-des-utilisateurs}
+## Création et configuration des utilisateurs {#création-et-configuration-des-utilisateurs}
 
 Les utilisateurs doivent être créés dans le répertoire **/usr/local/freeswitch/conf/directory/default/**. Dans notre guide nous allons créer l'extension **200** et **300** :
 
@@ -133,7 +138,7 @@ Il faut modifier le **dialplan** en local en conséquence :
         application="bridge" data="loopback/app=voicemail:default ${domain_name}
         ${dialed_extension}"/> </condition> </extension> [..]
 
-### Configuration du dialplan {#configuration-du-dialplan}
+## Configuration du dialplan {#configuration-du-dialplan}
 
 Nous allons dans un premier temps modifier le dialplan pour les appels sortants. Il se gère dans le fichier**/usr/local/freeswitch/conf/dialplan/default/01\_custom.xml** :
 
@@ -156,3 +161,7 @@ Le dialplan pour les appels entrants se gère dans le fichier**/usr/local/freesw
 **/usr/local/freeswitch/conf/dialplan/public/00\_inbound\_did.xml**
 
     <!-- Configuration pour le DDI 0366725520 --> <include> <extension name="public_did"> <condition field="${sip_to_user}" expression="(366725520)$"> <action application="set" data="domain_name=$${domain}"/> <action application="bridge" data="sofia/internal/200%${sip_profile}"/> </condition> </extension> </include> <!-- Configuration pour le DDI 185450330 --> <include> <extension name="public_did"> <condition field="${sip_to_user}" expression="(185450330)$"> <action application="set" data="domain_name=$${domain}"/> <action application="bridge" data="sofia/internal/300%${sip_profile}"/> </condition> </extension> </include> <!-- Joue un son lors d'un appel sur le trunk directement --> <include> <extension name="public_did"> <condition field="${sip_to_user}" expression="(972320690)$"> <action application="answer" /> <action application="playback" data="/tmp/son.wav"/> <!-- Si un appel arrive sur le trunk, le son "son.wav" est lu --> <action application="set" data="domain_name=$${domain}"/> </condition> </extension> </include>
+    
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
