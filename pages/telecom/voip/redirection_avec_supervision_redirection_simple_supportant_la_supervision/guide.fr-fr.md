@@ -3,7 +3,6 @@ title: 'Créer une redirection avec supervision (ou redirection simple supportan
 slug: redirection-avec-supervision-redirection-simple-supportant-la-supervision
 excerpt: 'Découvrez comment créer et gérer une redirection avec supervision'
 legacy_guide_number: '7536742'
-space_name: Téléphonie
 section: 'Numéros ou alias'
 ---
 
@@ -35,7 +34,7 @@ Le numéro est maintenant configuré avec une redirection avec supervision. Il r
 
 ![Paramétrage de la redirection avec supervision](images/ligne_cible.png){.thumbnail}
 
-Il reste à sélectionner la ligne cible de cette redirection dans la liste et à cliquer sur `Valider{.action}.
+Il reste à sélectionner la ligne cible de cette redirection dans la liste et à cliquer sur `Valider`{.action}.
 
 > [!primary]
 >
