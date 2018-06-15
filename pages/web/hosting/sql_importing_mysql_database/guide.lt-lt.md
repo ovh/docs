@@ -1,232 +1,171 @@
 ---
-title: 'Svetainių talpinimas: MySQL duomenų bazės importavimas'
-excerpt: MySQL duomenų bazės importavimas į turimą OVH svetainių talpinimo planą
-id: '1393'
+title: 'Importing a backup into a Web Hosting plan database'
 slug: svetainiu_talpinimas_mysql_duomenu_bazes_importavimas
-legacy_guide_number: g1393
+excerpt: 'Find out how to import a backup into a database on your OVH Web Hosting plan'
+section: Databases
+order: 4
 ---
 
+**Last updated 15th June 2018**
 
-## Reikalavimai
-Turite turėti ar žinoti:
+## Objective
 
+Databases are used in virtually all modern content management systems (CMS), such as WordPress or Joomla!, to store dynamic elements like comments or articles. For various reasons, you may find that you need to import data into one of your databases in order to modify or replace its contents.
 
-- Atsarginę duomenų bazės kopiją, dar vadinamą dump*, kuri buvo sukurta išsaugant duomenų bazę (kaip nurodyta šiame gide: []({legacy}1394)). 
+**Find out how to import a backup into a database on your OVH Web Hosting plan.**
 
-Atsarginė duomenų bazės kopija paprastai žymima plėtiniu .sql.
-Jeigu jūsų duomenų bazė yra kitur, rekomenduojame kreiptis į paslaugų teikėją, kad šis suteiktų informacijos apie duomenų bazės kopijos atlikimą.
+## Requirements
 
+- You must have an [OVH Web Hosting plan](https://www.ovh.lt/svetainiu-talpinimas/){.external}.
+- You must have a database created as part of an [OVH Web Hosting plan](https://www.ovh.lt/svetainiu-talpinimas/){.external}.
+- You must be in possession of the backup that you want to import into your database, or you must be able to retrieve it.
+- Depending on which import method you use, you must be able to administer the Web Hosting plan from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, or have the information you need in order to connect to the database.
 
-- Taip pat būtina žinoti SQL serverio pavadinimą, prisijungimo vardą ir slaptažodį, kad galėtumėte prisijungti prie naujos duomenų bazės. 
-Kaip gauti SQL prisijungimo duomenis, skaitykite gide []({legacy}1374)
+## Instructions
 
+Before you start, you must choose which method you are going to use to import the backup into the database concerned. There are three ways to do this, depending on the level of technical knowledge you have.
 
-![](images/img_1802.jpg){.thumbnail}
+- **Restore an earlier version of your database in just a few clicks**: this method can be used to restore the contents of your databases, thanks to the backups present in the OVH backup tool. This method does not require any particular technical knowledge, and can be carried out from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+- **Import your own backup file in just a few clicks**: this method lets you import the data from your own backup file, already in your possession, into one of your databases. This method can be carried out from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-## Per OVH valdymo sąsają
-Paprasčiausias ir greičiausias jūsų duomenų bazės importavimo sprendimas yra jūsų [OVH valdymo sąsajoje](https://www.ovh.com/manager/). Šio metodo privalumas: importuojant atsarginės kopijos failą netaikomi jokie dydžio apribojimai. 
+- **Carry out the import from the phpMyAdmin web interface**: this method involves logging in to the phpMyAdmin interface in order to carry out the procedure. You need to be familiar with the interface to use this method, and the backup file may not exceed a certain size.
 
-Prisijungę prie savo [valdymo sąsajos](https://www.ovh.com/manager/) su kliento ID ir slaptažodžiu, pasirinkite savo svetainių talpinimo planą kairėje, po to Duomenų bazės.
+- **Carry out the import using a script**: this solution requires writing a script, hosted on your OVH Web Hosting plan, which will perform the import. Writing this script requires a specific level of technical knowledge.
 
-![](images/img_4125.jpg){.thumbnail}
-Duomenų bazės, į kurią bus importuota jūsų asarginė kopija, dešinėje, spauskite krumpliaratį ir pasirinkite „Importuoti failą“.
+- **Carry out the import from an SSH command line**: this method involves using the SSH protocol to log in to your storage space, then using commands to interact with the storage space. More advanced knowledge and a specific [OVH Hosting Plan](https://www.ovh.lt/svetainiu-talpinimas/){.external} are required to use this type of access.
 
-Vadovaukitės tolimesniais žingsniais valdymo sąsajoje norėdami importuoti savo SQL atsarginę kopiją.
+Some of the methods listed above are not included in the OVH interface. You will, therefore, need to rely on your own knowledge to follow these methods. We have set out some instructions below, but they are not a substitute for the assistance of a webmaster.
 
-![](images/img_4126.jpg){.thumbnail}
+We recommend reading this guide, and focusing on the import method you wish to use.
 
+> [!warning]
+>
+> OVH is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>
 
-## Per PhpMyAdmin (MySQL)
-Prisijunkite prie duomenų bazės per PhpMyAdmin.
+### Restore a backup from your Control Panel
+First of all, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Next, go to the `Databases`{.action} tab.
 
-Prisijungimui naudokite adresą: [OVH PhpMyAdmin](https://phpmyadmin.ovh.net).
+The table shown contains all the email addresses created as part of your Web Hosting plan. You can now click on the three dots to the right of the database that you want to restore to an earlier version, then `Restore backup`{.action}. Please note that this will replace the current contents of the database with the contents of the backup.
 
-Taip pat esame paruošę PhpMyAdmin naudojimo gidą: []({legacy}1374).
+![databaseimport](images/database-import-step5.png){.thumbnail}
 
+All available backups for the database you have selected will now be diplayed. You can view the exact date of each backup, and the date on which they will be deleted from the OVH tool.
 
-- Kai prisijungsite prie PhpMyAdmin, pasirinkite duomenų bazę spragtelėdami jos pavadinimą (žr. iliustraciją, DB pavadinimas apibrauktas mėlynai).
+Click on the three dots to the right of the backup that you would like to restore, then on `Restore the backup`{.action}. In the popup window, check that the information is correct, then click `Confirm`{.action}. Then wait for the restore process to complete.
 
-- Spragtelėkite Importuoti.
+![databaseimport](images/database-import-step6.png){.thumbnail}
 
-- Spragtelėkite Naršyti/Browse ir pasirinkite atsarginės kopijos failą (dėmesio, failas negali viršyti 16 MB).
+### Import your own backup via your Control Panel
+First of all, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Next, go to the `Databases`{.action} tab.
 
-- Spragtelėkite Vykdyti/Go, kad pradėtumėte importavimą.
+The table shown contains all the databases created as part of your Web Hosting plan. You can now click on the three dots to the right of the database you want to import data into, then on `Import file`{.action}.
 
-Jeigu duomenų bazės kopiją parsisiuntėte per mūsų valdymo sąsają, nepamirškite išarchyvuoti failo prieš jį importuodami.
+![databaseimport](images/database-import-step1.png){.thumbnail}
 
+On the window that opens, select `Import a new file`{.action}, then click `Next`{.action}.
 
-![](images/img_1962.jpg){.thumbnail}
+> [!primary]
+>
+> By clicking the `Use an existing file`{.action} button, you can reimport data from a file you have already sent to the import tool.
+>
 
-## Pastaba:
+![databaseimport](images/database-import-step2.png){.thumbnail}
 
-- Importuojamas failas negali viršyti 16 MB.
+Enter a filename (which you can use to identify this backup at a later date, if you wish to restore it again), then next to `File`, select the database backup file on your computer. Click on `Send`{.action}.
 
+Wait until the interface confirms that the file has been sent successfully, then click `Next`{.action}.
 
+![databaseimport](images/database-import-step3.png){.thumbnail}
 
+Finally, you can choose whether or not to apply the additional options displayed:
 
-## Naudojant scenarijų, esantį talpinimo plane
-Naudodami teksto redaktorių galite susikurti importavimo scenarijų. Jam reikės priskirti naudojamos programavimo kalbos plėtinį.
+- **Empty the current database**: by ticking this box, the content currently stored in the database will be completely deleted, then replaced by your backup. If (and only if) you wish to replace the current contents of the database with the contents of the backup file, we recommend ticking this box.
 
-Pateiktuose scenarijų pavyzdžiuose keiskite šiuos duomenis:
+- **Send an email when the import is complete**: by ticking this box, you will be sent an email notification when the database import is complete.
 
+Once you have made your choice, click the `Confirm`{.action} button, and wait for the import process to finish.
 
-- database_name.sql duomenų bazės kopijos failo pavadinimas.
+![databaseimport](images/database-import-step4.png){.thumbnail}
 
-- server_sql serverio, į kurį importuosite duomenų bazę, pavadinimas.
+### Carry out the import from the phpMyAdmin web interface
 
-- database_name duomenų bazės pavadinimas.
+To carry out this procedure, you will need to log in to phpMyAdmin. To get the access link for this interface, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Next, go to the `Databases`{.action} tab.
 
-- password Duomenų bazės slaptažodis.
+The table shown contains all the databases created as part of your Web Hosting plan. In the table, click on the three dots to the right of the database concerned, then on `Go to phpMyAdmin`{.action}.
 
-Atsarginės duomenų bazės kopijos failą reikia įkelti į FTP saugyklą prieš paleidžiant scenarijų.
+![databaseimport](images/database-import-step7.png){.thumbnail}
 
+Once you are on the phpMyAdmin page, enter the database information, use the drop-down menu to access the data from the current version of the database, then log in. Once you have logged in, go to the `Import`{.action} tab, and enter the information requested. As a reminder, there is a limit to the size of the backup file you can use.
 
-## PHP (importbase.php):
-Scenarijaus kodas PHP kalba: 
+> [!warning]
+>
+> Since the phpMyAdmin interface was not developed by OVH, you will need to rely on your own knowledge to carry out the procedure. We recommend contacting a specialised provider and/or getting in touch with the publisher of the interface if you encounter any difficulties. We will not be able to assist you with this ourselves.
+>
 
+### Import a backup using a script
 
-```
+There are several stages to this procedure. Make sure you are in possession of the backup file you want to import, and the information that will let you connect to the database receiving the import. You will need a username, the associated password, the database name, and the server address.
+
+> [!warning]
+>
+> This solution is technical and requires programming knowledge. We have provided general information below on how to proceed. Nevertheless, we recommend that you contact a specialised provider if you encounter any difficulties. We will not be able to assist you ourselves.
+>
+
+#### Step 1: Create the import script
+
+The first step is to create the script you can use to carry out the import to your database. Below is an example of a script that can help you with this process, although it is not a substitute for the assistance of a webmaster.
+
+```php
 <?php
-echo "Duomenų bazė importuojama.......
-<br>";
-system("cat database_name.sql | mysql --host=server_sql --user=database_name --password=your_password database_name");
-echo "Baigta. Duomenų bazė sėkmingai importuota.";
+system("cat backup_filename.sql | mysql --host=server_address --user=user_name --password=user_password database_name");
 ?>
 ```
 
+Make sure you replace the generic information given in this script (e.g. ‘server_address’, ‘user_name’ etc.) with the actual information for the database concerned, using the elements below. Once the script is complete, we recommend naming it “import.php” (or something similar).
 
+|Information|Replace with|
+|---|---|
+|backup_file_name|The name of the backup file you wish to import.|
+|server_address|The server address for the database you want to import the data into.|
+|user_name|The name of the user with access permissions for the database concerned.|
+|user_password|The password for the username entered above.|
+|database_name|The name of the database in question.|
 
-## Perl (importbase.cgi) :
-Scenarijaus kodas Perl kalba: 
+#### Step 2: Upload the script and the backup to the storage space
 
+Once the import script has been written, you will need to upload it, along with the backup file you want to import to the storage space of your Web Hosting plan. To do this, you will need to log in to your storage space. If you do not know how to do this, please refer to the instructions in step 2 of our guide on getting your website online, “[Log in to your storage space](https://docs.ovh.com/lt/hosting/svetainiu_talpinimas_svetaines_ikelimas_i_interneta/#2-log-in-to-your-storage-space){.external}”.
 
-```
-#!/usr/bin/perl
+In order to carry out the following steps, you will need to upload the script and the backup file to the “www” folder. **We recommend taking special care when you name the import script file.** Make sure you do not overwrite an existing file with the same name in your storage space when you upload the script. If a warning message appears for this, change the name of the script you have just created, and try to upload it again.
 
-print "Duomenų bazė importuojama.......
-<br>";
-system("cat database_name.sql | mysql --host=server_sql --user=database_name --password=your_password database_name");
-print "Baigta. Duomenų bazė sėkmingai importuota.";
-```
+#### Step 3: Call the script
 
+Now that the import script and the backup file have been uploaded to your storage space, the last remaining step is to launch the procedure. To do this, you need to call the script.
 
+To do this, you will need to go to the full URL of the script from your web browser (e.g. mypersonaldomain.ovh/import.php, if you have saved your script as “import.php”). If the information entered in the script is correct, the import process will launch. The process of executing the script will take a few moments. If nothing happens, verify the information in the script and try to launch the procedure again.
 
-- Įkelkite scenarijų ir dump* failą per FTP į svetainės talpinimo plano katalogą www, tuomet paleiskite scenarijų naršyklėje įvedę adresą: http://jusu_domenas.tld/importbase.php
+Once you have imported the backup, we highly recommend deleting the backup file and the script from the “www” directory.
 
+### Import a backup using an SSH command
 
-Pakeiskite jusu_domenas.tld savo domenu, o importbase.php - visu failo pavadinimu (su plėtiniu).
+To follow this method, you will need to use commands from a terminal to interact with your storage space.
 
-Atsarginės kopijos failas yra suarchyvuotas?
+> [!warning]
+>
+> You will need more advanced technical knowledge to use this access method. Below you will find some information about how to proceed; nevertheless, we recommend that you contact a specialised provider if you encounter any difficulties. We will not be able to assist you with this ourselves.
+>
 
-Jeigu dump* failas yra suarchyvuotas (jo plėtinys yra .sql.gz), scenarijaus pradžioje įrašykite tokią eilutę:
+Once you have logged into your storage space via an SSH connection, you will need to run a command that will import your database. Below, there is an example of a command that you may find useful. Bear in mind that you need to upload the backup you want to import to your storage space in advance, and that you will need to send the command from your terminal, from within the folder in which the backup file is saved.
 
-
-```
-system("gunzip nom_de_la_base.sql.gz");
-```
-
-
-Pavyzdžiai:
-
-## PHP: dump išarchyvavimas + DB importavimas
-Visas kodas: 
-
-
-```
-<?php
-echo "Išarchyvuojamas failas.....
-<br>";
-system("gunzip testbackup.sql.gz");
-echo "Duomenų bazė importuojama......
-<br>";
-system("cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport");
-echo "Baigta. Duomenų bazė sėkmingai importuota.";
-?>
+```sh
+cat backup_filename.sql | mysql --host=server_address --user=user_name --password=user_password database_name
 ```
 
+Make sure you replace the generic information in this command (e.g. ‘user_name’, ‘user_password’ etc.) with the actual information for the database concerned. Once you have imported the backup, we recommend deleting the backup file, and the script from the directory to which you uploaded them.
 
+## Go further
 
-## Perl: dump išarchyvavimas + DB importavimas
-Visas kodas: 
-
-
-```
-#!/usr/bin/perl
-
-print "Išarchyvuojamas failas.....
-<br>";
-system("gunzip testbackup.sql.gz");
-print "Duomenų bazė importuojama.......
-<br>";
-system("cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport");
-print "Baigta. Duomenų bazė sėkmingai importuota.";
-```
-
-
-
-
-## Komandinėje eilutėje per SSH
-
-## Reikalavimai
-
-- Reikia žinoti savo FTP prisijungimo vardą ir slaptažodį. 
-FTP prisijungimo duomenų gavimo gidas: []({legacy}1374)
-
-- Talpinimo planas, prie kurio galima jungtis per SSH ([peržiūrėti talpinimo planų ypatybes](http://www.ovh.lt/svetainiu-talpinimas/)).
-
-
-Prisijungimo per SSH gidas:
-
-
-- [Prisijungimas per SSH](http://gidai.ovh.lt/SshTelnet).
-
-
-
-## Duomenų bazės importavimas per SSH
-Prisijunkite prie talpinimo plano per SSH.
-
-Pereikite į katalogą, į kurį įkeltas importavimui paruoštas failas. Po to įveskite komandą:
-
-Bendrinė komanda: 
-
-
-```
-cat nom_de_la_base.sql | mysql --host=serveur_sql --user=nom_de_la_base --password=mot_de_passe nom_de_la_base
-```
-
-
-Pavyzdys su netikrais duomenimis: 
-
-
-```
-cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport
-```
-
-
-
-
-## Naudojant privataus SQL serverio paslaugą
-Duomenų bazės importavimo gidas prieinamas čia:
-
-
-- [Private SQL duomenų bazės importavimas](https://www.ovh.lt/g2023.viskas-apie-private-sql)
-
-
-
-
-## Duomenų bazės pavadinimo klaida
-Atsarginės kopijos failo pradžioje gali prireikti įrašyti šią eilutę:
-
-
-```
-use duomenų_bazės_pavadinimas;
-```
-
-
-Čia duomenų_bazės_pavadinimas yra duomenų bazės, į kurią įkeliate informaciją, pavadinimas.
-
-
-## Leksika
-dump: specialus duomenų bazės atsarginės kopijos failas. 
-
+Join our community of users on <https://community.ovh.com/en/>.
