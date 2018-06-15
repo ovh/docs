@@ -1,214 +1,178 @@
 ---
-title: Getting started with CloudDB
+title: 'Getting started with the CloudDB service'
 slug: getting-started-with-clouddb
-links: 
-   - docs/cloud/clouddb/utilisation-mysql-mariadb/
-   - docs/cloud/clouddb/utilisation-pgsql/
-legacy_guide_number: 2216
-excerpt: Databases Made Easy!
-section: Getting started
+excerpt: 'Find out how to get started with the CloudDB service'
+section: 'Getting started'
 ---
 
+**Last updated 15th June 2018**
 
-> [!faq]
+## Objective
+
+The CloudDB solution gives you access to a database instance offering dedicated, guaranteed resources. This service offers better performance and greater flexibility. It is generally intended for customers with specific requirements.
+
+**Find out how to get started with a CloudDB service.**
+
+## Requirements
+
+- a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external}
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+
+## Instructions
+
+### View general information about the instance
+
+In the services bar on the left-hand side of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
+
+> [!primary]
 >
-> Have you got a website or application which needs a database, but you don't really want to have to manage it?
->> 
->> Discover the CloudDB service now! OVH takes care of everything!
->> 
->> 
+> The name of the CloudDB service in your OVH Control Panel contains part of your NIC handle (username), and ends with three figures (001 for the first CloudDB service installed, 002 for the second, etc.).
 >
 
-## Overview
+You can also view important information about your instance. Please take a few moments to ensure that the information displayed is correct, and corresponds to the instructions below.
 
-### Why use a managed database?
-This service arose from a **simple truth**: even if you **know** how to do it, managing a database is not necessarily your **priority**. Security, updates, monitoring, rights management, performance, ... all of this can start to become a bit tricky!
+|Information|Details|
+|---|---|
+|Service status|Mainly shows whether the instance has been rebooted, is in the process of rebooting, or is suspended. Your instance must be rebooted if you need to carry out any actions. |
+|Type|Shows the database system used by the server.|
+|Version|Shows the database system version used by the server. Check that your website is compatible with the version you have chosen.|
+|RAM|Shows the RAM available for your instance, also shows if you are close to exceeding the RAM limit. Your CloudDB instance uses dedicated, guaranteed resources: its RAM. If required, you can scale the RAM, and receive warnings if you are consuming all of your instance’s RAM resources.|
+|Infrastructure|Shows the infrastructure that your instance uses. This information relates to the OVH infrastructure.|
+|Datacentre|Shows the datacentre where the instance has been created. Make sure that your instance is hosted in the same datacentre as the OVH web hosting plan that your website is based on (or will be based on).|
+|Host|Shows the OVH server where your instance is. This information relates to the OVH infrastructure, and we may use it in our communication on [OVH incidents](http://status.ovh.net/){.external}.|
 
-**So why not leave this all to OVH so you can concentrate on your business or project?**
-
-This is the aim. Whether you are an individual, a professional, with limited requirements or an entire cluster, our aim is to address the entire market.
-
-
-### The advantages of CloudDB
-**Simple and quick:**
-
-- Create SQL databases via the Control Panel
-- Unlimited number of databases (depending on the available disk space)
-- Up to 200 concurrent connections
-- Management of associated users and rights via the Control Panel
-- Access to metrics via the Control Panel
-- Acess to logs
-
-**High performance:**
-
-- Guaranteed RAM resources
-- Approved infrastructure
-
-**Security:**
-
-- 24/7 monitoring from our teams
-- Automatic daily backups
-- Mandatory IP authorisation
-
-**Flexibility:**
-
-- Compatible with all OVH products (apart from web hosting), and more generally with all products connected to the internet
-- Choice of SQL version and ability to change to a higher version at any time
-
-
-### Databases offered
-When you sign up for CloudDB, you can choose between multiple database systems
-
-**SQL**
-
-- MySQL
-- PostgreSQL
-- MariaDB
-
-Each instance has its own dedicated resources. The database(s) that it contains, **share** their resources.
-
-
-## Order CloudDB
-
-### Log in to the Control Panel
-In order to create your instance and then your databases, you have to go to [the Control Panel](https://www.ovh.com/manager/web/){.external}.
-
-
-### Order
-Once you are in [the Control Panel](https://www.ovh.com/manager/web/){.external}, click on **"Databases"**, then on `Order databases`{.action}.
-
-
-![commande manager](images/bouton-commande_EN.PNG){.thumbnail}
-
-Place an order, choosing the elements below:
-
-- **"CloudDB"**
-- **"Your database system"**
-- **"Your RAM"**
-- **"Your datacentre"**
-- **"The desired duration"**
-
-
-![commande choix](images/choix-commande_EN.PNG){.thumbnail}
-
-Confirm the Terms and Conditions and click on `+ Generate the purchase order`{.action}.
-
-
-![commande generation](images/generer-commande_EN.PNG){.thumbnail}
-
-
-## General information
-Once you are in your customer account, you will be able to see general information about your instance.
-
-
-![commande generation](images/infos-generales_EN.png){.thumbnail}
-
-
-## Create your database and your users
+![clouddb](images/clouddb-general-information.png){.thumbnail}
 
 ### Create a database
-Your instance will be created, but empty.
 
-Click on the **"Database"** tab, then on the button `+ Add a database`{.action}.
+> [!primary]
+>
+> This step does not apply to the Redis database system.
+>
 
+To create your first database on your CloudDB instance, click on the `Databases`{.action} tab, then on the `Add a database`{.action} button.
 
-![creation bdd](images/creation-bdd_EN.png){.thumbnail}
+![clouddb](images/clouddb-add-database.png){.thumbnail}
 
-Enter a name for your database, and click `+ confirm`{.action}.
+In the window that pops up, and at the same time as you create the database, you can choose to:
 
+-  **Create a user**: this user will be able to submit requests to your database (such as reading, adding or deleting data).
 
-![creation bdd](images/validation-bdd_EN.png){.thumbnail}
+- **Add an authorised IP address**: requests coming from this address will be allowed to access your database.
 
+Fill in the information requested depending on what you choose to do, and click `Confirm`{.action}.
+
+|Information|Description|
+|---|---|
+|Database name|This is the name of your future database.|
+|Username|This is the user that can log in to your database and perform requests (optional if the “*Create a user*” box has not been ticked).|
+|Permissions|These are the permissions that will be associated with the user. For standard usage, select `Administrator`{.action} (optional if the “*Create a user*” box has not been ticked).|
+|Password|Select a password, then confirm it (optional if the “*Create a user*” box has not been ticked).|
+|IP/mask|This is the IP address or the IP mask for the server(s) that is/are authorised to access your databases (optional if the “*Add an authorised IP address*” box has not been ticked). |
+
+> [!warning]
+>
+> For security reasons, please follow the conditions required when you enter information.
+>
+
+![clouddb](images/clouddb-add-database-step2.png){.thumbnail}
 
 ### Create a user
-To use a CloudDB offer, you have to create a user with specific rights for connecting to a database.
 
-To do so, go to the **"Users and rights"** tab and click on `+ Add a user`{.action}.
+> [!primary]
+>
+> This step does not apply to the Redis database system.
+>
 
+If you created a user whilst creating a database in the previous step, this step is optional. However, for more specific projects, you may need several users to be able to access your database. For example, one user associated with a database may need to have read and write permissions, whilst another may need only read permissions.
 
-![hosting](images/creation-user_EN.png){.thumbnail}
+If you do not need an additional user for your project, you can move straight to the following step. If you do need to create a user in your CloudDB instance, you can click on the `Users and permissions`{.action} tab, then on the `Add a user`{.action} button.
 
-You will then be prompted to add a  **username** and a **password** then to click `Confirm`{.action}.
+![clouddb](images/clouddb-add-user.png){.thumbnail}
 
+In the window that pops up, fill in the information requested, and click `Confirm`{.action}.
 
-![hosting](images/validation-user_EN.png){.thumbnail}
+|Information|Description|
+|---|---|
+|Username|This is the user that can log in to your instance. You can give them permissions on your database in the next step.|
+|Password|Enter a password, then confirm it.|
 
+> [!warning]
+>
+> For security reasons, please follow the conditions required when you enter information.
+>
 
-### Manage user rights
-Click on the **"Database"** tab, then on the **"cogwheel"** for the desired database, and then on `+ Manage users`{.action}.
+![clouddb](images/clouddb-add-user-step2.png){.thumbnail}
 
+Once you have created a user, you will need to assign rights that allow them to perform actions on your database (such as reading, adding or deleting data). To do this, click on the cog wheel icon, then `Manage rights`{.action}. On the new page, select the right by clicking on it. For standard usage, select Administrator.
 
-![hosting](images/gestion-user_EN.png){.thumbnail}
+![clouddb](images/clouddb-add-rights.png){.thumbnail}
 
-Then choose the rights for the user in question
+### Import a database
 
+> [!primary]
+>
+> This step applies if you want to import the backup of an existing database. Otherwise, please go to the next step.
+>
 
-![hosting](images/validation-droit_EN.png){.thumbnail}
+There are several methods you can choose from to import a database. There is a tool available in your OVH Control Panel, and we are going to focus on this method. However, you may of course use another method, if you prefer to do so and are familiar with it.
 
-The different rights that you can choose are:
+The steps below show how to import a database using the tool available in your OVH Control Panel.
 
-- **Administator:** The user can run **Select/Insert/Update/Delete/Create/Alter/Drop** queries
-- **Read/Write:** The user can run **Select/Insert/Update/Delete**
-- **Read :** The user can run **Select** queries
-- **None:** No rights on the chosen database
+#### Step 1: Access the import interface.
 
+Go to the `Databases`{.action} tab, click on the cog wheel icon, then `Import a file`{.action}. On the window that opens, tick the `Import a new file`{.action} box, then click `Next`{.action}.
 
-## IP authorisation
+![clouddb](images/clouddb-add-import-step1.png){.thumbnail}
 
-### Adding your server
-In order to make your CloudDB accessible, you have to specify which IPs are authorised to connect to your instance. Click on the **"Authorised IPs"** tab, then on `+ Add an IP address/mask`{.action}.
+#### Step 2: Select and send the backup file.
 
+Enter a filename that will allow you to identify this backup later, if you want to restore it again. Then, next to **File**, select the database backup file from your computer, and click `Send`{.action}. Wait until the interface confirms that the file has been sent successfully, then click `Next`{.action}.
 
-![hosting](images/ip-autorisee_EN.png){.thumbnail}
+![clouddb](images/clouddb-add-import-step2.png){.thumbnail}
 
-Enter your server or network IP, plus a description if you want to, then click on `Valider`{.action}.
+#### Step 3: Launch the database importation.
 
+Finally, choose whether or not the additional options set out below should apply, and click `Confirm`{.action}.
 
-![hosting](images/validation-ip_EN.png){.thumbnail}
+|Additional options|Description|
+|---|---|
+|Empty the current database|The content in the database will be deleted entirely, and replaced by the content in your backup.|
+|Send an email once the importation is complete|You will be sent an email notification when the database import is complete.|
 
+![clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
 
-## Use your database
-Everything configured? Perfect!
+### Authorise an IP address
 
-Depending on your use case and the chosen database, there are multiple ways of using your database.
+In order for your CloudDB instance to be accessible, you must enter the IP addresses or ranges that can connect to your database. To do this, click on the `Authorised IPs`{.action} tab, then click `Add an IP address/mask`{.action}.
 
-Let's look at a typical example.
+![clouddb](images/clouddb-add-ip.png){.thumbnail}
 
+In the window that pops up, enter the IP address or mask that you wish to authorise in `IP/mask`{.action} together with a description if you wish. You can then decide if you want to grant access to the databases only, or to the SFTP as well. Finally, click `Confirm`{.action}.
 
-### Install WordPress with the DBaaS lab and MySQL
-- Create a MySQL CloudDB
-- Create a database and a user linked to this database, assign the ADMIN user first.
-- Authorise your server IP to contact your CloudDB service
+![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
-Retrieve the following information from your Control Panel:
+### Link your website to the database
 
-- Host name
-- SQL Port
+Now that you have created your database, one or several users with access, and authorised a minimum of one IP address in your CloudDB instance, you simply need to link your website to the database. You can use several methods, depending on your website, the CMS you are using (WordPress, Joomla! etc.), or the stage you are at, if you are setting up a website.
 
+No matter which method you choose to follow, you must have the following five pieces of information to hand, to ensure that you do this successfully:
 
-![Instance MySQL](images/infos-sql_EN.png){.thumbnail}
+|Information|Description|
+|---|---|
+|Database name|The name you entered when you created your database. You can view all the databases created in your CloudDB instance under the `Databases`{.action} tab.|
+|Username|The name of the user you entered when you created the database, or the name of an additional user that you created at a later stage. You can view all the users created in your CloudDB instance under the `Users and permissions`{.action} tab.|
+|User password|The password associated with the user, which was defined during the previous steps.|
+|Server host name|The server that needs to be entered for your website to be connected to your database. You can access this information in your Control Panel by going to the `Connections`{.action} section, then the General information tab.|
+|Server port|The port for connecting to your CloudDB instance, so that your website can connect to your database. You can access this information in your Control Panel by going to the `Connections`{.action} section, then the `General information`{.action} tab.|
 
-- Databases
+> [!warning]
+>
+> In some rare cases, the `port`{.action} field may not be available in your website’s configuration. If this is the case, you will need to add this field after your server’s host name, separating them with a *:* (e.g.: hostname:port).
+>
 
+![clouddb](images/clouddb-login-information.png){.thumbnail}
 
-![Instance MySQL](images/view-bdd_EN.PNG){.thumbnail}
+## Go further
 
-- User
-
-
-![Instance MySQL](images/view-uer_EN.PNG){.thumbnail}
-
-Note the URL and associated port. You will need this information when installing WordPress.
-
-
-![wordpress install](images/wordpress-config.png){.thumbnail}
-
-We will therefore fill in the fields as follows:
-
-- **Database Name**: *base-test*
-- **UserName**: *user-1*
-- **Password**: the password chosen for *user-1* user
-- **Database Host**: *xxx.dbaas.ovh.net:35102* (note: **host:port**)
-- **Table prefix**: we will not change in this instance
-
-For other use cases, just follow the standard connection methods for the databases used, found in official documentation.
+Join our community of users on <https://community.ovh.com/en/>.

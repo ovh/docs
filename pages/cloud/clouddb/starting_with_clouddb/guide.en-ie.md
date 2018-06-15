@@ -1,6 +1,6 @@
 ---
 title: 'Getting started with the CloudDB service'
-slug: pradzia-su-clouddb
+slug: getting-started-with-clouddb
 excerpt: 'Find out how to get started with the CloudDB service'
 section: 'Getting started'
 ---
@@ -15,7 +15,7 @@ The CloudDB solution gives you access to a database instance offering dedicated,
 
 ## Requirements
 
-- a [CloudDB instance](https://www.ovh.lt/cloud/cloud-databases/){.external}
+- a [CloudDB instance](https://www.ovh.ie/cloud/cloud-databases/){.external}
 - access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
