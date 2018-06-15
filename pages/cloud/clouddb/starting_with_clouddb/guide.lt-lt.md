@@ -1,204 +1,178 @@
 ---
-title: Pradzia su CloudDB
+title: 'Getting started with the CloudDB service'
 slug: pradzia-su-clouddb
-links: 
-   - docs/cloud/clouddb/utilisation-mysql-mariadb/
-   - docs/cloud/clouddb/utilisation-pgsql/
-legacy_guide_number: 2216
-excerpt: Duomenu bazes, be joms budingu apribojimu!
+excerpt: 'Find out how to get started with the CloudDB service'
+section: 'Getting started'
 ---
 
-Turite interneto svetainę ar programėlę, kuriai reikia duomenų bazės, bet nenorite jos valdyti? Atraskite CloudDB nedelsiant! OVH viskuo pasirūpins.
+**Last updated 15th June 2018**
 
+## Objective
 
-## Bendra informacija
+The CloudDB solution gives you access to a database instance offering dedicated, guaranteed resources. This service offers better performance and greater flexibility. It is generally intended for customers with specific requirements.
 
-### Kodel reiketu naudoti valdoma duomenu baze?
-Šiam pasiūlymui galioja **paprasta taisyklė**: net jeigu jūs **žinote** kaip tai daroma, duomenų bazės administravimas nėra jūsų **pirmenybė**. Apsauga, atnaujinimai, stebėjimas, teisių valdymas, našumas... visa tai gali greitai nuvarginti!
+**Find out how to get started with a CloudDB service.**
 
-**Taigi kodėl nepatikėjus šio darbo OVH ir nesusitelkus ties jūsų pagrindine veikla?**
+## Requirements
 
-Tai mūsų tikslas. Esate privatus asmuo ar profesionalas, reikia nedaug resursų ar kuriate didelį klasterį? Mes siekiame pasiūlyti įmanomus sprendimus rinkoje.
+- a [CloudDB instance](https://www.ovh.lt/cloud/cloud-databases/){.external}
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
+## Instructions
 
-### CloudDB privalumai
-**Paprasta ir greita:**
+### View general information about the instance
 
-- SQL duomenų bazės kūrimas kliento valdymo sąsajoje
-- Neribotas duomenų bazių skaičius (priklausomai nuo laisvos vietos diske)
-- Iki 200 vienalaikių jungčių
-- Naudotojų ir teisių valdymas kliento valdymo sąsajoje
-- Prieiga prie metrikos duomenų kliento valdymo sąsajoje
-- Prieiga prie sisteminių įrašų
+In the services bar on the left-hand side of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
 
-**Našu:**
+> [!primary]
+>
+> The name of the CloudDB service in your OVH Control Panel contains part of your NIC handle (username), and ends with three figures (001 for the first CloudDB service installed, 002 for the second, etc.).
+>
 
-- Garantuojami RAM resursai
-- Išbandyta infrastruktūra
+You can also view important information about your instance. Please take a few moments to ensure that the information displayed is correct, and corresponds to the instructions below.
 
-**Saugu:**
+|Information|Details|
+|---|---|
+|Service status|Mainly shows whether the instance has been rebooted, is in the process of rebooting, or is suspended. Your instance must be rebooted if you need to carry out any actions. |
+|Type|Shows the database system used by the server.|
+|Version|Shows the database system version used by the server. Check that your website is compatible with the version you have chosen.|
+|RAM|Shows the RAM available for your instance, also shows if you are close to exceeding the RAM limit. Your CloudDB instance uses dedicated, guaranteed resources: its RAM. If required, you can scale the RAM, and receive warnings if you are consuming all of your instance’s RAM resources.|
+|Infrastructure|Shows the infrastructure that your instance uses. This information relates to the OVH infrastructure.|
+|Datacentre|Shows the datacentre where the instance has been created. Make sure that your instance is hosted in the same datacentre as the OVH web hosting plan that your website is based on (or will be based on).|
+|Host|Shows the OVH server where your instance is. This information relates to the OVH infrastructure, and we may use it in our communication on [OVH incidents](http://status.ovh.net/){.external}.|
 
-- Stebėjimas 24 valandas per parą, 7 dienas per savaitę
-- Automatinis atsarginis kopijavimas, kasdien
-- Privalomas IP adreso(-ų) autorizavimas
+![clouddb](images/clouddb-general-information.png){.thumbnail}
 
-**Plečiama:**
+### Create a database
 
-- Suderinamumas su visais OVH produktais (išskyrus svetainių talpinimą) ir bendrai su bet kuriuo produktu, prijungtu prie interneto
-- SQL versijos pasirinkimas ir galimybė bet kuriuo metu migruoti į aukštesnio lygio versiją
+> [!primary]
+>
+> This step does not apply to the Redis database system.
+>
 
+To create your first database on your CloudDB instance, click on the `Databases`{.action} tab, then on the `Add a database`{.action} button.
 
-### Siulomi varikliai
-Užsakydami CloudDB, jūs galite rinktis iš įvairių duomenų bazių sistemų:
+![clouddb](images/clouddb-add-database.png){.thumbnail}
 
-**SQL**
+In the window that pops up, and at the same time as you create the database, you can choose to:
 
-- MySQL
-- PostgreSQL
-- MariaDB
+-  **Create a user**: this user will be able to submit requests to your database (such as reading, adding or deleting data).
 
-Kiekvienai virtualiai mašinai suteikiami nuosavi dedikuoti resursai. Duomenų bazės, įdiegtos virtualioje mašinoje, resursus naudoja **bendrai**.
+- **Add an authorised IP address**: requests coming from this address will be allowed to access your database.
 
+Fill in the information requested depending on what you choose to do, and click `Confirm`{.action}.
 
-## Uzsakykite CloudDB
+|Information|Description|
+|---|---|
+|Database name|This is the name of your future database.|
+|Username|This is the user that can log in to your database and perform requests (optional if the “*Create a user*” box has not been ticked).|
+|Permissions|These are the permissions that will be associated with the user. For standard usage, select `Administrator`{.action} (optional if the “*Create a user*” box has not been ticked).|
+|Password|Select a password, then confirm it (optional if the “*Create a user*” box has not been ticked).|
+|IP/mask|This is the IP address or the IP mask for the server(s) that is/are authorised to access your databases (optional if the “*Add an authorised IP address*” box has not been ticked). |
 
-### Prisijungimas prie valdymo sasajos
-Siekdami sukurti virtualią mašiną, po to duomenų bazes, jūs turėtumėte prisijungti prie [Web valdymo sąsajos](https://www.ovh.com/manager/web/){.external}.
+> [!warning]
+>
+> For security reasons, please follow the conditions required when you enter information.
+>
 
+![clouddb](images/clouddb-add-database-step2.png){.thumbnail}
 
-### Uzsakymas
-Prisijungę prie [Web valdymo sąsajos](https://www.ovh.com/manager/web/){.external}, spragtelėkite **Duomenų bazės**, po to `Užsakyti duomenų bazes`{.action}.
+### Create a user
 
+> [!primary]
+>
+> This step does not apply to the Redis database system.
+>
 
-![commande manager](images/bouton-commande_EN.PNG){.thumbnail}
+If you created a user whilst creating a database in the previous step, this step is optional. However, for more specific projects, you may need several users to be able to access your database. For example, one user associated with a database may need to have read and write permissions, whilst another may need only read permissions.
 
-Pateikite užsakymą pasirinkę šiuos elementus:
+If you do not need an additional user for your project, you can move straight to the following step. If you do need to create a user in your CloudDB instance, you can click on the `Users and permissions`{.action} tab, then on the `Add a user`{.action} button.
 
-- **CloudDB**
-- **Duomenų bazės sistema**
-- **RAM**
-- **Duomenų centras**
-- **Pageidaujama galiojimo trukmė**
+![clouddb](images/clouddb-add-user.png){.thumbnail}
 
+In the window that pops up, fill in the information requested, and click `Confirm`{.action}.
 
-![commande choix](images/choix-commande_EN.PNG){.thumbnail}
+|Information|Description|
+|---|---|
+|Username|This is the user that can log in to your instance. You can give them permissions on your database in the next step.|
+|Password|Enter a password, then confirm it.|
 
-Patvirtinkite sutartis ir spauskite `+ Generuoti užsakymą`{.action}.
+> [!warning]
+>
+> For security reasons, please follow the conditions required when you enter information.
+>
 
+![clouddb](images/clouddb-add-user-step2.png){.thumbnail}
 
-![commande generation](images/generer-commande_EN.PNG){.thumbnail}
+Once you have created a user, you will need to assign rights that allow them to perform actions on your database (such as reading, adding or deleting data). To do this, click on the cog wheel icon, then `Manage rights`{.action}. On the new page, select the right by clicking on it. For standard usage, select Administrator.
 
+![clouddb](images/clouddb-add-rights.png){.thumbnail}
 
-## Bendra informacija
-Valdymo sąsajoje galėsite peržiūrėti savo virtualios mašinos duomenis.
+### Import a database
 
+> [!primary]
+>
+> This step applies if you want to import the backup of an existing database. Otherwise, please go to the next step.
+>
 
-![commande generation](images/infos-generales_EN.png){.thumbnail}
+There are several methods you can choose from to import a database. There is a tool available in your OVH Control Panel, and we are going to focus on this method. However, you may of course use another method, if you prefer to do so and are familiar with it.
 
+The steps below show how to import a database using the tool available in your OVH Control Panel.
 
-## Duomenu baziu ir naudotoju kurimas
+#### Step 1: Access the import interface.
 
-### Duomenu bazes kurimas
-Šiame žingsnyje jūsų virtuali mašina sukurta, tačiau ji tuščia.
+Go to the `Databases`{.action} tab, click on the cog wheel icon, then `Import a file`{.action}. On the window that opens, tick the `Import a new file`{.action} box, then click `Next`{.action}.
 
-Spragtelėkite langelį **"Duomenų bazės"**, po to mygtuką `+ Pridėti duomenų bazę`{.action}.
+![clouddb](images/clouddb-add-import-step1.png){.thumbnail}
 
+#### Step 2: Select and send the backup file.
 
-![creation bdd](images/creation-bdd_EN.png){.thumbnail}
+Enter a filename that will allow you to identify this backup later, if you want to restore it again. Then, next to **File**, select the database backup file from your computer, and click `Send`{.action}. Wait until the interface confirms that the file has been sent successfully, then click `Next`{.action}.
 
-Įveskite duomenų bazės pavadinimą ir spauskite `+ patvirtinti`{.action}.
+![clouddb](images/clouddb-add-import-step2.png){.thumbnail}
 
+#### Step 3: Launch the database importation.
 
-![creation bdd](images/validation-bdd_EN.png){.thumbnail}
+Finally, choose whether or not the additional options set out below should apply, and click `Confirm`{.action}.
 
+|Additional options|Description|
+|---|---|
+|Empty the current database|The content in the database will be deleted entirely, and replaced by the content in your backup.|
+|Send an email once the importation is complete|You will be sent an email notification when the database import is complete.|
 
-### Naudotojo kurimas
-CloudDB paslaugos naudojimui būtina sukurti naudotojus, kuriems bus suteiktos prieigos prie duomenų bazės teisės.
+![clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
 
-Spragtelėkite langelį **Naudotojai ir teisės**, po to mygtuką `+ Pridėti naudotoją`{.action}.
+### Authorise an IP address
 
+In order for your CloudDB instance to be accessible, you must enter the IP addresses or ranges that can connect to your database. To do this, click on the `Authorised IPs`{.action} tab, then click `Add an IP address/mask`{.action}.
 
-![hosting](images/creation-user_EN.png){.thumbnail}
+![clouddb](images/clouddb-add-ip.png){.thumbnail}
 
-Įvedę **naudotojo pavadinimą** ir **slaptažodį**, spragtelėkite `Patvirtinti`{.action}.
+In the window that pops up, enter the IP address or mask that you wish to authorise in `IP/mask`{.action} together with a description if you wish. You can then decide if you want to grant access to the databases only, or to the SFTP as well. Finally, click `Confirm`{.action}.
 
+![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
-![hosting](images/validation-user_EN.png){.thumbnail}
+### Link your website to the database
 
+Now that you have created your database, one or several users with access, and authorised a minimum of one IP address in your CloudDB instance, you simply need to link your website to the database. You can use several methods, depending on your website, the CMS you are using (WordPress, Joomla! etc.), or the stage you are at, if you are setting up a website.
 
-### Naudotoju teisiu valdymas
-Spragtelėkite langelį **Duomenų bazės**, po to pasirinktos duomenų bazės **krumpiaratį** ir pagaliau mygtuką `+ Valdyti naudotojus`{.action}.
+No matter which method you choose to follow, you must have the following five pieces of information to hand, to ensure that you do this successfully:
 
+|Information|Description|
+|---|---|
+|Database name|The name you entered when you created your database. You can view all the databases created in your CloudDB instance under the `Databases`{.action} tab.|
+|Username|The name of the user you entered when you created the database, or the name of an additional user that you created at a later stage. You can view all the users created in your CloudDB instance under the `Users and permissions`{.action} tab.|
+|User password|The password associated with the user, which was defined during the previous steps.|
+|Server host name|The server that needs to be entered for your website to be connected to your database. You can access this information in your Control Panel by going to the `Connections`{.action} section, then the General information tab.|
+|Server port|The port for connecting to your CloudDB instance, so that your website can connect to your database. You can access this information in your Control Panel by going to the `Connections`{.action} section, then the `General information`{.action} tab.|
 
-![hosting](images/gestion-user.png){.thumbnail}
+> [!warning]
+>
+> In some rare cases, the `port`{.action} field may not be available in your website’s configuration. If this is the case, you will need to add this field after your server’s host name, separating them with a *:* (e.g.: hostname:port).
+>
 
-Pasirinkite teises jūsų pasirinktam naudotojui
+![clouddb](images/clouddb-login-information.png){.thumbnail}
 
+## Go further
 
-![hosting](images/validation-droit_EN.png){.thumbnail}
-
-Galimi šie teisių lygiai:
-
-- **Administratorius:** Leidžiama pateikti **Select / Insert / Update / Delete / Create / Alter / Drop** užklausas
-- **Skaitymas bei rašymas:** Leidžiama pateikti **Select / Insert / Update / Delete** užklausas
-- **Skaitymas:** Leidžiama pateikti **Select** užklausas
-- **Jokių teisių:** Jokių prieigos prie duomenų bazės teisių
-
-
-## Autorizuokite IP adresus
-
-### Serverio pridejimas
-Prieiga prie jūsų CloudDB virtualios mašinos bus veikianti, jei patikslinsite autorizuotą(-us) IP adresą(-us) šiame meniu. Spragtelėkite langelį **Autorizuoti IP**, po to `+ Pridėti IP adresą / potinklio šabloną`{.action}.
-
-
-![hosting](images/ip-autorisee_EN.png){.thumbnail}
-
-Nurodykite serverio ar tinklo IP adresą, pateikite aprašymą (pasirinktinai) ir spauskite `Patvirtinti`{.action}.
-
-
-![hosting](images/validation-ip_EN.png){.thumbnail}
-
-
-## Duomenu bazes naudotojimas
-Sukonfigūruota? Puiku!
-
-Atsižvelgiant į jūsų naudojimo atvejį ar pasirinktą variklį, jūsų duomenų bazė gali būti naudojama įvairiais būdais.
-
-Apžvelkime tipinį naudojimo atvejį.
-
-
-### WordPress idiegimas su DBaaS lab ir MySQL varikliu
-- Sukurkite CloudDB MySQL virtualią mašiną
-- Sukurkite duomenų bazę ir jai priskirtą naudotoją ir suteikite ADMIN teises.
-- Autorizuokite serverio IP adresui kreiptis į CloudDB
-
-Būtina žinoti šiuos duomenis, prieinamus valdymo sąsajoje:
-
-- Mazgo pavadinimas
-- SQL prievadas
-
-![Instance MySQL](images/infos-sql_EN.png){.thumbnail}
-
-- Duomenų bazė
-
-![Instance MySQL](images/view-bdd_EN.PNG){.thumbnail}
-
-- Naudotojas
-
-![Instance MySQL](images/view-uer_EN.PNG){.thumbnail}
-
-
-Atkreipkite dėmesį į URL ir susietą prievadą. WordPress reikalingi šie duomenys įdiegimo metu.
-
-
-![wordpress install](images/wordpress-config.png){.thumbnail}
-
-Taigi užpildysime laukus taip:
-
-- **Database Name**: *base-test*
-- **User Name**: *user-1*
-- **Password**: slaptažodis, kurį pasirinkote naudotojui *user-1*
-- **Database Host**: *xxx.dbaas.ovh.net:35102* (įsidėmėkite: **host:port**)
-- **Table prefix**: mūsų atveju, nereikalingi jokie keitimai
-
-Kitiems naudojimo atvejams rinkitės oficialius prieigos būdus, rekomenduojamus naudojamiems varikliams. Jei būtina, atsisiųskite oficialius dokumentus.
+Join our community of users on <https://community.ovh.com/en/>.
