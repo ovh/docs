@@ -1,189 +1,106 @@
 ---
-title: 'Web Hosting: ¿Cómo editar mi zona DNS?'
-excerpt: 'Web Hosting: ¿Cómo editar mi zona DNS?'
+title: 'Editar una zona DNS de OVH'
+excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVH'
 slug: web_hosting_como_editar_mi_zona_dns
-legacy_guide_number: g1604
-section: DNS (servidor y zona)
+section: 'Dominios y DNS'
 ---
 
+**Última actualización: 15/06/2018**
 
-## Definición
-El protocolo DNS (Domain Name System, por sus siglas en inglés) permite transformar un nombre de dominio en dirección IP para que las peticiones lleguen al servidor de destino.
+## Objetivo
 
-![](images/img_3710.jpg){.thumbnail}
+La zona DNS (Domain Name System) de un dominio es el archivo de configuración en el que se almacena su información técnica en forma de registros. Convencionalmente, estos registros sirven de enlace entre el dominio y el servidor o servidores en los que están alojados el sitio web y las cuentas de correo electrónico.
 
+**Esta guía explica cómo editar una zona DNS desde el área de cliente de OVH.**
 
-## Diferencias entre los servidores y la zona DNS
+## Requisitos
 
-## Servidores DNS
+- Tener acceso a la gestión del dominio desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Utilizar la configuración de OVH (es decir, sus servidores DNS) para el dominio en cuestión. 
 
-- Los servidores DNS son los servidores asociados a un nombre de dominio. Son, por lo tanto, los servidores que responderán en primer lugar antes de pasar el testigo a la zona DNS asociada.
+> [!warning]
+>
+> - Si el dominio no utiliza los servidores DNS de OVH, deberá realizar los cambios necesarios desde el panel que le ofrezca el proveedor que gestione la configuración de su dominio.
+> - Si el dominio está registrado con OVH, compruebe que utiliza nuestra configuración. Para ello, en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleccione el dominio en la columna izquierda y abra la pestaña `Servidores DNS`{.action}.
+>
 
+## Procedimiento
 
+**Editar una zona DNS es una operación delicada.** Una modificación errónea podría, por ejemplo, deshabilitar el acceso al sitio web o la recepción de nuevos mensajes en las direcciones de correo electrónico.
 
-## Zona DNS
+Conocer los distintos tipos de registros le permitirá entender mejor los cambios que debe realizar al editar la zona DNS del dominio. La siguiente tabla describe la función de cada registro:
 
-- La zona DNS es un archivo que contiene una serie de registros que indican, entre otros, las direcciones de los servidores que alojan su sitio (A) o sus correos (MX). Estas direcciones pueden adoptar la forma de una dirección IP o de nombres de hosts.
+|Registro|Descripción|  
+|---|---|
+|A|Permite asociar un dominio a una dirección IP (IPv4) como, por ejemplo, la dirección IP del servidor en la que está alojado el sitio web.|
+|AAAA|Permite asociar un dominio a una dirección IP (IPv6) como, por ejemplo, la dirección IP del servidor en la que está alojado el sitio web.|
+|CNAME|Permite que un dominio utilice la dirección o direcciones IP de otro dominio, al asociarlas mediante la creación de un alias. Por ejemplo, si **www.example.com** es un alias de **example.com**, significa que www.example.com utiliza la dirección o direcciones IP de example.com.|
+|MX|Permite asociar un dominio a un servidor de correo indicando la dirección del servidor en el que está alojada la solución de correo. Es probable que el proveedor disponga de varios servidores de correo, en cuyo caso será necesario crear varios registros MX.|
+|SRV|Indica la dirección del servidor que gestiona un servicio como, por ejemplo, la dirección de un servidor SIP o la de un servidor que permite que un cliente de correo se configure automáticamente mediante el *autodiscover*.|
+|TXT|Permite añadir el valor que desee (en formato de texto) a los parámetros DNS del dominio. Este registro suele utilizarse en procesos de verificación.|
+|SPF|Permite evitar posibles usurpaciones de identidad con las direcciones de correo electrónico que utilizan el dominio, por ejemplo, identificando el servidor de su proveedor de solución de correo electrónico como único origen de envío legítimo. Encontrará más información en nuestra guía sobre [cómo añadir un registro SPF a la configuración del dominio](https://docs.ovh.com/es/domains/web_hosting_el_registro_spf/){.external}.|
+|CAA|Permite indicar las autoridades de certificación autorizadas a emitir certificados SSL para un dominio.|
 
+### 1. Acceder a la gestión de la zona DNS del dominio
 
+Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
+Se mostrará una tabla con la configuración del dominio en OVH. Cada línea de la tabla contiene un registro DNS. Puede filtrar el contenido por tipo de registro o por dominio.
 
-## ¿Por qué es necesario editar los servidores o la zona DNS?
+![Zona DNS](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
 
-## Servidores DNS
-Es posible que necesite modificar sus servidores DNS al cambiar de agente registrador, ya que algunos registros no permiten seguir utilizando sus servidores al transferir su dominio a otro agente distinto. 
-También es posible que usted disponga de un servidor dedicado que funcione como servidor DNS y que desee utilizarlo para administrar su dominio. 
+### 2. Editar la zona DNS del dominio
 
-Si desea más información sobre los servidores DNS, consulte la siguiente guía:
+Para añadir, modificar o eliminar un registro DNS, es posible editar la zona DNS del dominio  de dos maneras distintas:
 
-## Zona DNS
-Si desea modificar el servidor que aloja su sitio web o sus servicios de correo debido a un cambio de alojamiento, por ejemplo, deberá modificar su zona DNS. 
-Una vez actualizada la zona DNS, su dominio apuntará a los nuevos servidores.
+- **Editando manualmente la zona en modo de texto** (solo para usuarios avanzados): En la pestaña `Zona DNS`{.action} del dominio, haga clic en el botón `Editar en modo de texto`{.action} situado a la derecha y siga los pasos que se indican.
+- **Utilizando nuestros asistentes de configuración**.
 
+Esta guía solo hace referencia a la configuración a través de nuestros asistentes.
 
-## ¿Por qué es necesario un tiempo de propagación?
+> [!primary]
+>
+> Compruebe que dispone de toda la información que desea modificar en la zona DNS de OVH. Si realiza la operación a petición de un proveedor de servicios, este último deberá proporcionarle la lista de elementos que deba modificar.
+>
 
-## Impacto del TTL
-El Time to Live («tiempo de vida» o «duración de vida»), también llamado TTL, indica el periodo durante el cual una información debe conservarse en caché tras una modificación. 
-En OVH, las zonas DNS de nueva creación tienen un TTL de una hora (TTL = 3600).
+#### Añadir un nuevo registro DNS
 
+Para añadir un nuevo registro DNS, en la pestaña `Zona DNS`{.action} del área de cliente, haga clic en el botón `Añadir un registro`{.action}, situado a la derecha de la tabla. Seleccione el tipo de registro DNS y siga los pasos que se indican.
 
-## Conexión al área de cliente
+No obstante, le recomendamos que antes se asegure de que el registro no exista ya y no apunte hacia un destino diferente. Para ello, puede filtrar el contenido de la tabla por tipo de registro o por dominio. Si el registro ya existe, modifíquelo mediante el procedimiento que se indica a continuación.
 
-- Conéctese al [área de cliente](https://www.ovh.com/manager/web) con su ID de cliente (NIC Handle) y contraseña. 
+![Zona DNS](images/edit-dns-zone-ovh-add-entry.png){.thumbnail}
 
-- Haga clic en «Login» para validar la operación.
+#### Modificar un registro DNS existente
 
+Para modificar un registro DNS, en la pestaña `Zona DNS`{.action} del área de cliente, haga clic en el icono con forma de rueda dentada situado al final de la línea correspondiente al registro que quiera modificar. A continuación, seleccione `Modificar el registro`{.action} y siga los pasos que se indican.
 
+![Zona DNS](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
 
-![](images/img_3711.jpg){.thumbnail}
+#### Eliminar un registro DNS
 
+Para eliminar un registro DNS, en la pestaña `Zona DNS`{.action} del área de cliente, haga clic en el icono con forma de rueda dentada situado al final de la línea correspondiente al registro que quiera eliminar. A continuación, seleccione `Eliminar el registro`{.action} y siga los pasos que se indican.
 
-## Selección del dominio
+Es posible eliminar varios registros al mismo tiempo. Para ello, marque las casillas correspondientes a los registros que quiera eliminar y haga clic en el botón `Eliminar`{.action} que aparecerá en la parte superior de la tabla.
 
-- Acceda a la sección «Dominios» en el menú de la izquierda y seleccione el dominio que desea modificar.
+![Zona DNS](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
+### 3. Esperar a que se propaguen los cambios
 
+Una vez que haya editado la zona DNS del dominio, la modificación tardará un máximo de 24 horas en propagarse y ser efectiva.
 
-![](images/img_3712.jpg){.thumbnail}
+Si quiere reducir este intervalo de tiempo en sucesivas ediciones de la zona DNS, puede modificarlo hasta cierto punto editando el TTL (*Time To Live*) aplicable a todos los registros de la zona DNS.
+Para ello, en la pestaña `Zona DNS`{.action} del área de cliente, haga clic en el botón `Modificar el TTL por defecto`{.action} y siga los pasos que se indican. 
 
+También es posible modificar el TTL de un registro DNS concreto. Esta operación solo puede realizarse en los registros uno a uno, al añadirlos o modificándolos como se indica más arriba.
 
-## Consulta de la zona DNS
-Acceda a la sección «Zona DNS» para consultar los diferentes campos de información sobre su zona DNS. 
-También puede ordenar la información que se muestra en función del tipo de campo.
+## Más información
 
-![](images/img_3714.jpg){.thumbnail}
+[Información general sobre los servidores DNS](https://docs.ovh.com/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
 
+[Añadir un registro SPF a la configuración del dominio](https://docs.ovh.com/es/domains/web_hosting_el_registro_spf/){.external}
 
-## Modificación de un registro
-Para modificar un registro, haga clic en el icono con forma de bolígrafo, realice los cambios que desee efectuar y haga clic en «Siguiente» > «Aceptar».
+[Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](https://www.ovh.es/dominios/servicio-dnssec.xml){.external}
 
-![](images/img_3723.jpg){.thumbnail}
-
-
-## Eliminación de un registro
-Para eliminar un registro, haga clic en el icono con forma de papelera > «Aceptar».
-
-![](images/img_3724.jpg){.thumbnail}
-
-
-## Restaurar la configuración
-Este botón le permite restaurar su zona DSN para restablecer todos los campos por defecto.
-
-![](images/img_3715.jpg){.thumbnail}
-Seleccione el tipo de zona y haga clic en «Aceptar»[/ blue]: 
-
-
-- Registros mínimos: Esta opción le ofrece la posibilidad de restaurar la zona con los registros de base para que su dominio funcione. 
-
-- Restauración normal: Esta opción le ofrece registros adicionales, como los CNAME para el FTP, etc.
-
-
-
-![](images/img_3716.jpg){.thumbnail}
-
-
-## Añadir un registro
-Este botón le permite añadir un nuevo campo a su zona DNS.
-
-![](images/img_3717.jpg){.thumbnail}
-Tan solo debe seleccionar el tipo de entrada y seguir los pasos que se le indican haciendo clic en «Siguiente».
-
-![](images/img_3718.jpg){.thumbnail}
-
-
-## Modificar en modo de texto
-Este botón le permite configurar su zona en modo de texto para un uso avanzado. Resulta una opción útil para aquellos usuarios con experiencia que desean realizar cambios rápidamente.
-
-![](images/img_3719.jpg){.thumbnail}
-Tan solo debe modificar la zona de texto y hacer clic en Siguiente:
-
-![](images/img_3720.jpg){.thumbnail}
-
-
-## TTL por defecto
-Este botón le permite modificar el TTL de su zona DNS para gestionar el tiempo de almacenamiento en caché.
-
-![](images/img_3721.jpg){.thumbnail}
-Para ello, seleccione el TTL por defecto que desee y haga clic en «Aceptar».
-
-![](images/img_3722.jpg){.thumbnail}
-
-
-## Campo de tipo A
-Un registro de tipo A sirve de enlace entre un nombre de host y una dirección IPv4.
-No es posible disponer de un tipo A y de un CNAME para el mismo nombre de host.
-
-
-## Campo de tipo MX
-Un registro MX especifica el servidor de correo responsable de la distribución de correos para un nombre de dominio específico.
-Solo se puede indicar un nombre de host, y no una dirección IP.
-
-
-## Campo de tipo CNAME
-Un registro CNAME permite crear un alias de un nombre de host hacia otro nombre de host. 
-Solo se puede indicar un nombre de host, y no una dirección IP.
-No es posible disponer de un CNAME y de un tipo A para el mismo nombre de host.
-
-
-## Campo de tipo TXT
-Un registro TXT permite insertar un texto en su zona DNS.
-
-
-## Campo de tipo SPF
-Un registro SPF permite que los servidores autorizados envíen mensajes de correo con su nombre de dominio. 
-Si desea más información, puede consultar la siguiente guía: 
-
-- []({legacy}2028).
-
-
-
-
-## Zona Check
-Esta herramienta le permite asegurarse de que la actualización de sus servidores DNS se realizará correctamente. 
-Si desea más información, puede consultar la siguiente guía: 
-
-- []({legacy}1980).
-
-
-
-
-## DNSSEC
-Esta opción le permite proteger su dominio frente al «cache poisoning». 
-Si desea más información, puede consultar la siguiente guía: 
-
-- []({legacy}609).
-
-
-
-
-## Plazos
-Servidores DNS
-
-- Todos los cambios en sus servidores DNS pueden tardar hasta 48 h.
-
-Zona DNS
-- Todos los cambios en su zona DNS pueden tardar hasta 24 h.
-
-
-
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
