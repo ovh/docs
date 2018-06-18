@@ -1,85 +1,51 @@
 ---
-title: Crear un acceso a Horizon
-excerpt: ''
+title: 'Conectarse a Horizon'
+excerpt: 'Cómo conectarse al panel de control Horizon'
 slug: crear_un_acceso_a_horizon
-section: Primeros pasos
+section: Horizon
 ---
 
+**Última actualización: 18/06/2018**
 
-## 
-Esta guía ofrece las indicaciones necesarias para crear un acceso a Horizon, el panel de administración oficial de OpenStack. Hay funcionalidades que solo están disponibles desde esta interfaz.
+## Objetivo
 
+Horizon es el panel de control de OpenStack. Algunas funciones de administración solo están disponibles desde esta interfaz gráfica.
 
-## 
-
-- Conéctese al [área de cliente cloud](https://www.ovh.com/manager/cloud/) y haga clic en «Gestión y consumo del proyecto».
-
-
-![](images/img_2879.jpg){.thumbnail}
-
-- Haga clic en «OpenStack».
+**Esta guía explica cómo conectarse a Horizon.**
 
 
+## Requisitos
 
-![](images/img_2880.jpg){.thumbnail}
-
-- Haga clic en «Añadir un usuario».
-
+- Haber creado un proyecto de Public Cloud.
 
 
-![](images/img_2702.jpg){.thumbnail}
+## Procedimiento
 
-- Introduzca una descripción del usuario.
+### Crear un usuario de OpenStack
 
+Para conectarse a Horizon, primero hay que crear un usuario de OpenStack. Para ello, en la sección `Cloud`{.action} del área de cliente, haga clic en `Servidores`{.action} en la columna izquierda y seleccione el proyecto. A continuación, haga clic en `OpenStack`{.action}, también en la columna izquierda.
 
+![Añadir un usuario](images/1_H_add_user.png){.thumbnail}
 
-## Importante:
-Esta descripción permitirá posteriormente reconocer fácilmente al usuario en la lista creada; no servirá como clave de conexión.
+Haga clic en el botón `Añadir un usuario`{.action} e introduzca una descripción del usuario. A continuación, se generará automáticamente el nombre de usuario y la contraseña. Una vez finalizada la operación, se mostrará un mensaje confirmando la creación de la cuenta.
 
-- Haga clic en «Crear el usuario».
+En el área del cliente podrá ver la contraseña, pero solo hasta que la página se actualice. Si lo desea, puede conservarla para volver a usarla la próxima vez que se conecte, o también puede generar una nueva contraseña haciendo clic en el icono `Regenerar la contraseña`{.action}, situado junto a la contraseña actual.
 
+![Menú proyecto](images/2_H_user_manage.png){.thumbnail}
 
+### Conectarse a OpenStack Horizon
 
-![](images/img_2703.jpg){.thumbnail}
+Para mostrar el menú, haga clic en el botón  `...`{.action}, situado al final de la línea, y seleccione `Abrir Openstack Horizon`{.action}. Se abrirá la página de conexión a [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external}. Introduzca su nombre de usuario y su contraseña, y haga clic en el botón `Connect`{.action}.
 
-- El usuario se creará. Conserve la contraseña generada automáticamente, ya que no será posible recuperarla más adelante.
+![Menú proyecto](images/3_H_open_menu.png){.thumbnail}
 
+![Pantalla de conexión](images/4_H_login_window.png){.thumbnail}
 
-La lista de usuarios se mostrará como en la siguiente imagen:
+Una vez conectado, podrá ver el panel de control de OpenStack, Horizon.
 
-![Lista de usuarios](images/img_2704.jpg){.thumbnail}
-En ella podrá ver, para cada usuario, el nombre, la descripción y tres botones que permiten respectivamente:
-
-- Regenerar la contraseña.
-
-
-
-![](images/img_2628.jpg){.thumbnail}
-
-## Atención:
-Este botón no muestra la contraseña, sino que genera una nueva.
-
-- Eliminar el usuario
+![Panel de control Horizon](images/5_H_view.png){.thumbnail}
 
 
+## Más información
 
-![](images/img_2629.jpg){.thumbnail}
-
-
-## 
-
-- Haga clic en el icono que representa una llave inglesa
-
-
-
-![](images/img_3031.jpg){.thumbnail}
-
-- Seleccione la opción «Abrir OpenStack Horizon»
-
-
-
-![](images/img_3032.jpg){.thumbnail}
-
-- Se abrirá la página [https://horizon.cloud.ovh.net](https://horizon.cloud.ovh.net). 
-
-- Introduzca el usuario y la contraseña OpenStack previamente creados.
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
