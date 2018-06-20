@@ -1,8 +1,8 @@
 ---
-title: Configurer son compte E-mail Pro sur l'application Courrier pour Windows 10
+title: 'Configurer son compte E-mail Pro sur l''application Courrier pour Windows 10'
 slug: configuration-courrier-windows-10
-excerpt: Apprenez à configurer un compte E-mail Pro sur l'application Courrier pour Windows 10
-section: Configuration client de messagerie
+excerpt: 'Apprenez à configurer un compte E-mail Pro sur l''application Courrier pour Windows 10'
+section: 'Configuration client de messagerie'
 ---
 
 **Dernière mise à jour le 17/05/2018**
@@ -54,6 +54,7 @@ Renseignez à présent les informations demandées :
 |Serveur de courrier sortant|Renseignez le serveur « pro1.mail.ovh.net:587 ».|
 
 Assurez-vous que les cases sont bien cochées pour les choix suivants :
+
 - « Le serveur sortant requiert l'authentification » ;
 - « Utiliser le même nom d'utilisateur et mot de passe pour l'envoi du courrier » ;
 - « Exiger le protocole SSL pour le courrier entrant » ;

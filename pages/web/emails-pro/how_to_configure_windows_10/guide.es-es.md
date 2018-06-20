@@ -46,6 +46,7 @@ Cumplimente la información de su cuenta:
 |Servidor de correo saliente|Introduzca el servidor **pro1.mail.ovh.net:587**.|
 
 Asegúrese de que las siguientes casillas estén marcadas:
+
 - El servidor saliente requiere autenticación
 - Utilice el mismo nombre de usuario y contraseña para enviar correo electrónico
 - Requerir SSL para el correo electrónico entrante
