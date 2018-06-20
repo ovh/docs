@@ -1,86 +1,85 @@
 ---
-title: Deploying a basic infrastructure with OpenStack Heat (BETA)
-slug: deploy-infrastructure-with-openstack-heat
-excerpt: Find out how to get started with Heat and stacks by deploying your first infrastructure
-section: Orchestration with OpenStack Heat
+title: Déployer une infrastructure simple avec Heat d'OpenStack (BÊTA)
+slug: deployer-infrastructure-avec-heat-openstack
+excerpt: Découvrez une première approche de Heat et des *stacks* en déployant votre première infrastructure
+section: L'orchestration avec Heat d'OpenStack
 ---
 
-**Last updated June 20th 2018**
+**Dernière mise à jour le 2018/06/20**
 
-## Objective
+## Objectif
 
-Heat is an infrastructure orchestration tool for OpenStack. It takes descriptive files as inputs. These files list the various elements of the infrastructure that need to be managed, as well as the behaviours to adopt following certain events. The purpose of this is to industrialise cloud infrastructure management using code. This is called **Infrastructure as code**.
+Heat est un outil d'orchestration d'infrastructures pour OpenStack. Il prend en entrée un fichier descriptif indiquant les différents éléments de l'infrastructure à piloter, ainsi que les comportements à adopter suite à certains événements. L'objectif : industrialiser la gestion d'infrastructures cloud par du code. C'est ce que l'on appelle l'**Infrastructure as Code**.
 
-We will help you get started using Heat, and the *stacks* that represent orchestrated infrastructures.
+Nous vous apportons une première approche de Heat et des *stacks* représentant des infrastructures orchestrées.
 
-**This guide will show you how to deploy your first basic infrastructure based on Heat.**
+**Ce guide vous montre comment déployer votre première infrastructure simple basée sur Heat.**
 
 > [!warning]
 >
-> OpenStack Heat is currently only deployed as a beta version. If you experience any difficulties and/or would like to discuss your experience with other users, you can send an email to the mailing list, <cloud@ml.ovh.net>, or get in touch on our community platform: <https://community.ovh.com/en/>.
+> Heat d'OpenStack est actuellement déployé en version bêta. En cas de difficulté et/ou si vous souhaitez échanger avec d'autres utilisateurs, vous pouvez envoyer un e-mail sur la mailing list <cloud@ml.ovh.net> ou sur notre forum d'entraide communautaire <https://community.ovh.com>.
 > 
 
-## Requirements
+## Prérequis
 
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-- a Public Cloud project
-- an OpenStack user account
-- how to manipulate YAML files
-- sign up your Public Cloud project for the beta test
+- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager).
+- Avoir créé un projet Cloud Public.
+- Posséder un compte utilisateur OpenStack.
+- Savoir manipuler un fichier YAML.
+- Avoir inscrit votre projet Cloud Public dans le test bêta.
 
-## Instructions
+## En pratique
 
-### Learn the basics about Heat
+### Découvrir Heat
 
-The text below is an example of the sort of instructions we could send to Heat, expressed in English.
+Dans notre langage, voici ce que l'on pourrait transmettre à Heat.
 
-“My application is composed of:
+« Mon application est composée de :
+- trois serveurs frontaux web de type [B2-15](https://www.ovh.com/ca/fr/cloud-public/instances/tarifs/){.external} ;
+- deux serveurs de base de données de type [C2-30](https://www.ovh.com/ca/fr/cloud-public/instances/tarifs/){.external} ;
+- deux disques additionnels raccordés aux serveurs de base de données ;
+- l'ensemble communique via un réseau privé ;
+- le scénario de *scaling* consiste à ajouter un serveur frontal web [B2-15](https://www.ovh.com/ca/fr/cloud-public/instances/tarifs/){.external}. »
 
-- three [B2-15](https://www.ovh.co.uk/public-cloud/instances/prices/){.external} front-end web servers
-- two [C2-30](https://www.ovh.co.uk/public-cloud/instances/prices/){.external} database servers
-- two additional disks connected to the database servers
-- all of these components communicate with one another via a private network
-- the *scaling* scenario consists of adding another [B2-15](https://www.ovh.co.uk/public-cloud/instances/prices/){.external} front-end web server.”
-
-Once you have done this, you can deploy your full infrastructure with a single command, and launch the *scaling* scenario as required.
+Suite à cela, il est possible déployer votre infrastructure complète avec une simple commande et de déclencher le scénario de *scaling* lorsque c'est pertinent.
 
 > [!primary]
 >
-> The *scaling* scenarios are available via a URL, and triggered by the user. New features are currently being integrated into the Public Cloud, and they will offer automatic triggering based on conditions such as very high CPU and RAM usage. These features will become available in a few weeks.
+> Les scénarios de *scaling* sont disponibles via une URL et sur déclenchement de la part de l'utilisateur. De nouvelles fonctionnalités sont en cours d'intégration sur Cloud Public pour proposer des déclenchements automatiques suite à une importante charge CPU ou RAM par exemple. Ces fonctionnalités arriveront d'ici quelques semaines.
 > 
 
-### Installing the client
+### Rappels sur l'installation du client
 
-It is best to install the client using the OpenStack command line.
+Il convient d'installer le client en ligne de commande d'OpenStack.
 
 > [!primary]
 >
-> The old command line clients for OpenStack (Nova, Cinder, Neutron, Heat) are at the end of their lifecycles. Because of this, it is important to use the new unified client, called **OpenStack**.
+> Les anciennes versions de clients en ligne de commande pour OpenStack (Nova, Cinder, Neutron, Heat) sont en fin de cycle de vie. Il est donc important d'utiliser le nouveau client unifié appelé **OpenStack**.
 > 
 
 ```sh
 # apt install python-openstackclient python-heatclient
 ```
 
-You can also install the client using pip.
+Vous pouvez également installer le client en utilisant pip.
 
 ```sh
 # apt install python-pip
 # pip install --upgrade python-openstackclient python-heatclient
 ```
 
-You will also need a SSH key to connect to your instances.
+Une clé SSH sera également nécessaire pour vous connecter aux instances.
 
 ```
 $ openstack keypair create heat_key > heat_key.priv
 $ chmod 600 heat_key.priv
 ```
 
-### Launch a basic infrastructure
+### Démarrer une infrastructure basique
 
-We recommend launching a very small infrastructure, composed of a single server, so that you can familiarise yourself with Heat *stacks*.
+Démarrez la plus petite infrastructure composée d'un seul serveur pour vous familiariser avec les *stacks* de Heat.
 
-Create a file with the name `basic-template.yaml`, and add the following into the file:
+Créez un fichier nommé `basic-template.yaml` contenant ceci :
 
 ```yaml
 heat_template_version: 2014-10-16
@@ -110,7 +109,7 @@ resources:
         mountpoint: /dev/vdb
 ```
 
-Then create your first *stack* with the following command:
+Créez ensuite votre  première *stack* avec la commande suivante :
 
 ```sh
 $ openstack stack create -t basic-template.yaml first-stack
@@ -127,7 +126,7 @@ $ openstack stack create -t basic-template.yaml first-stack
 +---------------------+-----------------------------------------------------------------------------+
 ```
 
-The *stack* is being created. After a few seconds, you can check its status:
+La *stack* est en cours de création. Après quelques secondes, vous pouvez vérifier son état :
 
 ```sh
 $ openstack stack show first-stack
@@ -162,7 +161,7 @@ $ openstack stack show first-stack
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-As with other OpenStack resources, you can list your *stacks*:
+Comme pour les autres ressources OpenStack, il est possible de lister vos *stacks* :
 
 ```sh
 $ openstack stack list
@@ -173,7 +172,7 @@ $ openstack stack list
 +--------------------------------------+-------------+-----------------+----------------------+--------------+
 ```
 
-As you can see, a *stack* has a status, just like an instance. To see the event list for a *stack*, use:
+Comme vous avez pu le voir, une *stack* possède un état, au même titre qu'une instance. Pour lister l'historique d'une *stack*, utilisez :
 
 ```sh
 $ openstack stack event list first-stack
@@ -187,7 +186,7 @@ $ openstack stack event list first-stack
 2018-03-27 16:13:04Z [first-stack]: CREATE_COMPLETE Stack CREATE completed successfully
 ```
 
-You can also see the various resources present in the *stack*. In this case, there is only one server:
+De même, il est possible de voir les différentes ressources présentes dans la *stack*. Dans notre cas il n'y a qu'un serveur :
 
 ```sh
 $ openstack stack resource list first-stack
@@ -200,15 +199,15 @@ $ openstack stack resource list first-stack
 +---------------+--------------------------------------+------------------------------+-----------------+----------------------+
 ```
 
-As you can see, a *stack* groups together a set of resources, and its lifecycle shows statuses, for which you can view the event list.
+Comme vous avez pu le voir, une *stack* regroupe un ensemble de ressources et son cycle de vie décrit des états dont l'historique est consultable.
 
-We will now delete this *stack*:
+Nous allons supprimer la *stack* à présent :
 
 ```sh
 $ openstack stack delete first-stack
 Are you sure you want to delete this stack(s) [y/N]? y
 ```
 
-## Go further
+## Aller plus loin
 
-Join our community of users on <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -5,7 +5,7 @@ excerpt: 'Find out how to use an FPGA card to convert BMP images to JPEG format'
 section: Tutorials
 ---
 
-**Last updated 20th June 2018**
+**Last updated 2018/06/20**
 
 ## Objective
 
@@ -18,7 +18,7 @@ Beyond converting images, the purpose of this guide is to show how FPGA cards wo
 ## Requirements
 
 - an OpenStack user account
-- set up the [OpenStack environment variables](https://docs.ovh.com/gb/en/public-cloud/deploy-infrastructure-with-variables-and-formatted-outputs-openstack-heat/){.external}
+- set up the [OpenStack environment variables](https://docs.ovh.com/ca/en/public-cloud/deploy-infrastructure-with-variables-and-formatted-outputs-openstack-heat/){.external}
 - [API credentials and your OVH authorisation keys](https://eu.api.ovh.com/g934.first_step_with_api){.external}
 - [an SSH key](https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys/){.external}
 - [the OpenStack client installed](https://github.com/openstack/python-openstackclient){.external}

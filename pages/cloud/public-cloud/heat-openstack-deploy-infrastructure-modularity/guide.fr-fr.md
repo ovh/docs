@@ -1,11 +1,11 @@
 ---
-title: 'Déployer une infrastructure avec des variables et des sorties formatées avec Heat d''OpenStack'
-excerpt: 'Découvrez comment exploiter les variables d''environnement en utilisant la modularité des gabarits Heat'
+title: Déployer une infrastructure avec des variables et des sorties formatées avec Heat d'OpenStack
+excerpt: Découvrez comment exploiter les variables d'environnement en utilisant la modularité des gabarits Heat
 slug: deployer-infrastructure-avec-variables-et-sorties-formatees-heat-openstack
-section: 'L''orchestration avec Heat d''OpenStack'
+section: L'orchestration avec Heat d'OpenStack
 ---
 
-**Dernière mise à jour le 06/04/2018 **
+**Dernière mise à jour le 20/06/2018**
 
 ## Objectif
 
