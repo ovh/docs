@@ -5,7 +5,7 @@ excerpt: 'Saiba como identificar um disco com defeito e pedir a sua substituiç�
 section: 'RAID e discos'
 ---
 
-**Última atualização: 14/06/2018**
+**Última atualização: 20/06/2018**
 
 ## Sumário
 
