@@ -1,93 +1,53 @@
 ---
-title: Criar um acesso à interface Horizon
-excerpt: ''
+title: 'Criar um acesso à interface Horizon'
 slug: criar_um_acesso_a_interface_horizon
-legacy_guide_number: g1773
+legacy_guide_number: 1773
+excerpt: 'Saiba como aceder à interface Horizon'
+section: 'A partir da interface Horizon'
+order: 1
 ---
 
+**Última atualização: 20/06/2018**
 
-## 
-Esta página dar-lhe-á indicações de como criar um acesso à interface Horizon, a interface de gestão oficialmente proposta por OpenStack.
-Várias funcionalidades não estão acessíveis senão a partir desta interface.
+## Sumário
 
+O Horizon é a interface gráfica de gestão do OpenStack. Certas funções de gestão só estão disponíveis a partir desta interface.
 
-## 
-
-- Ligue-se ao [Espaço Cliente](https://www.ovh.com/manager/cloud/) e aceda de seguida ao menu Gestão e consumos do projeto
+**Este guia ensina-o a aceder a ela.**
 
 
+## Requisitos
 
-![](images/img_2879.jpg){.thumbnail}
-
-- Clicar em OpenStack
-
+- Ter criado um projeto Public Cloud.
 
 
-![](images/img_2880.jpg){.thumbnail}
+## Instruções
 
-- Clicar em Adicionar um utilizador
+### Criar um utilizador OpenStack.
 
+Para aceder ao Horizon, é preciso, antes de mais, criar um utilizador OpenStack. Para isso, na Área de Cliente, clique em `Cloud`{.action}, a seguir em `Servidores`{.action} e selecione o projeto em causa. Clique no separador `OpenStack`{.action} na coluna da esquerda:
 
+![Adicionar utilizador](images/1_H_add_user.png){.thumbnail}
 
-![](images/img_2702.jpg){.thumbnail}
+Clique em `Adicionar um utilizador`{.action} e escolha uma descrição de utilizador. O ID e a palavra-passe serão gerados automaticamente. Quando a operação for concluída, surgirá uma mensagem de confirmação da criação da conta.
 
-- Introduzir a "descrição do utilizador"
+A palavra-passe ficará visível na Área de Cliente até à atualização da página. Pode conservá-la para a utilizar novamente numa conexão ulterior. Também é possível gerar uma nova palavra-passe se clicar no pictograma de atualização que figura ao lado da palavra-passe atual:
 
+![Menu projeto](images/2_H_password_refresh.png){.thumbnail}
 
+### Conectar-se ao OpenStack Horizon
 
-## Observação:
-Esta descrição servirá para reconhecer de forma fácil o utilizador na lista criada mas não servirá como credencial de acesso.
+Para ver o menu, clique no pictograma que representa três pontos na extremidade da linha `...`{.action}. A seguir, clique em `Abrir Openstack Horizon`{.action}. Surgirá então a página de conexão do [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external}. Para se conectar, introduza o seu ID  (`User Name`) e a sua palavra-passe.
 
-- Clicar em "Criar este utilizador"
+![Menu projeto](images/3_H_open_menu.png){.thumbnail}
 
+![Ecrã de conexão](images/4_H_login_window.png){.thumbnail}
 
+Uma vez conectado, surgirá a interface OpenStack Horizon:
 
-![](images/img_2703.jpg){.thumbnail}
-
-- Após a correta criação do utilizador, guarde a palavra-passe gerada de forma automática, pois não será possível recuperar esta palavra-passe posteriormente.
-
-
-A lista dos utilizadores tem a seguinte forma de apresentação:
-
-![Lista de utilizadores](images/img_2704.jpg){.thumbnail}
-Nessa lista serão apresentados nomes, descrições e 3 botões de ação para cada utilizador, permitindo cada um deles, respetivamente:
-
-- Reinicializar a palavra-passe
+![Interface Horizon](images/5_H_view.png){.thumbnail}
 
 
+## Quer saber mais?
 
-![](images/img_2628.jpg){.thumbnail}
-
-## Atenção:
-Isso não permite apresentar novamente a sua palavra-passe, uma nova palavra-passe será gerada.
-
-- Eliminar o utilizador
-
-
-
-![](images/img_2629.jpg){.thumbnail}
-
-
-## 
-
-- Clicar no ícone com uma chave representada
-
-
-
-![](images/img_3031.jpg){.thumbnail}
-
-- Selecionar a opção "Abrir OpenStack Horizon"
-
-
-
-![](images/img_3032.jpg){.thumbnail}
-
-- Chegará ao [seguinte endereço](https://horizon.cloud.ovh.net/project/)
-- Poder-se-á agora autenticar com o username e palavra-passe criados precedentemente
-
-
-
-
-## 
-[Voltar aos guias Cloud]({legacy}1785)
-
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
