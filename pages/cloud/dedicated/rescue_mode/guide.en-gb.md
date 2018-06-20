@@ -1,11 +1,11 @@
 ---
-title: Rescue Mode
+title: 'Rescue Mode'
 slug: rescue_mode
-excerpt: How to use rescue mode on a dedicated server
-section: Diagnostic and rescue mode
+excerpt: 'How to use rescue mode on a dedicated server'
+section: 'Diagnostic and rescue mode'
 ---
 
-**Last updated 7th May 2018**
+**Last updated 20th June 2018**
 
 ## Objective
 
@@ -13,15 +13,16 @@ Rescue mode is a tool on your server that allows you to boot into a temporary op
 
 **This guide will show you how to activate and use your server's rescue mode.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requirements
 
-- You need to have root access to your [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} via the command line (SSH).
+- Root access to your [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} via the command line (SSH).
 
 
 ## Instructions
 
-You can activate rescue mode by logging into your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager/){.external} and going to your server's page. Then go to `Server Status`{.action} > `General information`{.action} >`Boot`{.action} and click the `Edit`{.action} button to change the boot mode.
+You can activate rescue mode by logging into your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and going to your server's page. Then go to `Server Status`{.action} > `General information`{.action} >`Boot`{.action} and click the `Edit`{.action} button to change the boot mode.
 
 ![Boot mode edit](images/rescue-mode-01.png){.thumbnail}
 
