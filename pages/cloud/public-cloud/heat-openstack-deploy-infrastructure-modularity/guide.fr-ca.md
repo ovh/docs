@@ -1,31 +1,32 @@
 ---
-title: Deploying an infrastructure with variables and formatted outputs using OpenStack Heat (BETA)
-slug: deploy-infrastructure-with-variables-and-formatted-outputs-openstack-heat
-excerpt: Find out how to process environment variables using the modularity of Heat templates
-section: Orchestration with OpenStack Heat
+title: Déployer une infrastructure avec des variables et des sorties formatées avec Heat d'OpenStack
+excerpt: Découvrez comment exploiter les variables d'environnement en utilisant la modularité des gabarits Heat
+slug: deployer-infrastructure-avec-variables-et-sorties-formatees-heat-openstack
+section: L'orchestration avec Heat d'OpenStack
 ---
 
-**Last updated June 20th 2018**
+**Dernière mise à jour le 20/06/2018**
 
-## Objective
+## Objectif
 
-We recommend starting off by reading our guide on [Deploying a basic infrastructure with OpenStack Heat](https://docs.ovh.com/gb/en/public-cloud/deploy-infrastructure-with-openstack-heat/){.external}, which covers how to use Heat for creating and manipulating simple *stacks*. In this guide, we will go a step further by using parameters in these *stacks*.
+Nous avons vu dans le guide intitulé « [Déployer une infrastructure simple avec Heat d'OpenStack](https://docs.ovh.com/ca/fr/public-cloud/deployer-infrastructure-avec-heat-openstack/){.external} » comment utiliser Heat pour créer des *stacks* simples et les manipuler. Nous allons à présent voir comment aller plus loin en utilisant des paramètres dans ces *stacks*.
 
-**Find out how to format the output, so that you can use this information on the resources you have deployed.**
+**Apprenez comment formater la sortie pour utiliser les informations des ressources déployées.**
 
-## Requirements
 
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-- a Public Cloud project
-- an OpenStack user account
-- how to manipulate YAML files
-- sign up your Public Cloud project for the beta test
+## Prérequis
 
-## Instructions
+- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager).
+- Avoir créé un projet Cloud Public.
+- Posséder un compte utilisateur OpenStack.
+- Savoir manipuler un fichier YAML.
+- Avoir inscrit votre projet Public Cloud dans le test bêta.
 
-### Manage the parameters
+## En pratique
 
-Using variables, you can edit the parameters for *stacks* in Heat. We will add these into the file `parameter-template.yaml`:
+### Gérer les paramètres
+
+Heat permet de rendre les *stacks* paramétrables grâce à des variables. Nous allons ajouter celles-ci dans le fichier `parameter-template.yaml` :
 
 ```yaml
 heat_template_version: 2014-10-16
@@ -71,8 +72,7 @@ resources:
         mountpoint: /dev/vdb
 ```
 
-
-The entries with `{ get_param: xxx }` represent parameters you can avoid when you create the stack. This way, you can use the same template to  create different *stacks*:
+Les entrées avec `{ get_param: xxx }` représentent des paramètres qu'il est possible d'éviter à la création. De cette manière, il est possible d'utiliser le même gabarit pour créer des *stacks* différentes :
 
 ```sh
 $ openstack stack create -t parameter-template.yaml --parameter key_name=heat_key --parameter image_id="Centos 7" --parameter size_gb=50 second-stack
@@ -101,11 +101,11 @@ $ openstack stack create -t parameter-template.yaml --parameter key_name=heat_ke
 +---------------------+-----------------------------------------------------------------------------+
 ```
 
-### Go further with the parameters in the post-installation scripts
+### Aller plus loin avec les paramètres dans les scripts de post-installation
 
-At this point, it would be helpful for you to get output information once you have launched your *stack*, so that you can use this information for other processing operations.
+À présent, nous souhaitons obtenir les informations de sortie une fois notre *stack* lancée afin de les récupérer pour d'autres traitements.
 
-Modify the file to include the definition of *outputs*.
+Modifiez le fichier pour inclure la définition des *outputs*.
 
 ```yaml
 heat_template_version: 2014-10-16
@@ -155,11 +155,11 @@ outputs:
    description: This is a list of server names.
    value: { get_attr: [my_instance, name]}
  server_ip:
-   description: This is a list of first ip addresses of the server.
+   description: This is a list of first ip addresses of the server
    value: { get_attr: [my_instance, networks, Ext-Net]}
 ```
 
-Once you have created the *stack*, use `openstack stack output show` to retrieve the formatted information:
+Une fois la *stack* créée, pour récupérer les informations formatées, utilisez `openstack stack output show` :
 
 ```sh
 $ openstack stack output show fourth-stack server_ip
@@ -180,8 +180,8 @@ $ openstack stack output show fourth-stack server
 +--------------+-------------------------------------+
 ```
 
-You can find out more by reading the [official OpenStack documentation](https://docs.openstack.org/heat/pike/template_guide/hot_spec.html), but these guides should be enough to help you build your first infrastructure definitions using code.
+Il est possible d'aller plus loin ([voir la documentation d'OpenStack](https://docs.openstack.org/heat/pike/template_guide/hot_spec.html)), mais ces bases vous permettront de construire vos premières définitions d'infrastructure par du code.
 
-## Go further
+## Aller plus loin
 
-Join our community of users on <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
