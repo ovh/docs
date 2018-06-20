@@ -1,8 +1,8 @@
 ---
-title: Configuratie van uw Email Pro-account in de Courrier-app voor Windows 10
+title: 'Configuratie van uw Email Pro-account in de Courrier-app voor Windows 10'
 slug: configuratie-courrier-windows-10
-excerpt: Leer hoe u een E-mail Pro-account kunt instellen in de Courrier-app voor Windows 10
-section: Configuratie van een e-mailclient
+excerpt: 'Leer hoe u een E-mail Pro-account kunt instellen in de Courrier-app voor Windows 10'
+section: 'Configuratie van een e-mailclient'
 ---
 
 **Laatste update 23-03-2018**
@@ -47,6 +47,7 @@ Voer uw accountgegevens in:
 |Uitgaande e-mailserver|Voer de ‘pro1.mail.ovh.net:587’ server in.|
 
 Zorg ervoor dat de vakjes zijn aangevinkt bij:
+
 - "De uitgaande server vereist authenticatie"
 - "Gebruik dezelfde gebruikersnaam en wachtwoord voor het verzenden van e-mail"
 - "SSL vereisen voor inkomende e-mail"
