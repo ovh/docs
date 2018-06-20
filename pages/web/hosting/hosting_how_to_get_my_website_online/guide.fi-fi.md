@@ -1,356 +1,150 @@
 ---
-title: 'Webhotellit: Kotisivujen siirto verkkoon'
-description: 'Ohjeessa neuvotaan, miten kotisivut saadaan näkymään verkossa.'
-slug: webhotellit_kotisivujen_siirto_verkkoon
-legacy_guide_number: g1374
+title: 'Verkkosivun siirto verkkoon webhotellissa'
+slug: verkkosivun-siirto-verkkoon
+excerpt: 'Opi siirtämään verkkosivu verkkoon OVH:n webhotellissa'
+section: Aluksi
+order: 2
 ---
 
+**Päivitetty 20.6.2018**
 
-## Yleistä
-WWW-sivu on toiminnassa ja näkyy oikein ainoastaan silloin kun se on laitettu oikeaan hakemistoon.
-Yleensä Internet-sivujen tiedostot on sijoitettava webhotellin ”www”-hakemistoon sivujen näkymiseksi.
-Tätä varten on tiedostot siirrettävä ensin webhotelliin, mitä varten käytetään tiedostonsiirtoprotokollaa käyttävää ohjelmistoa (File Transfer Protocol).
-Ohjeessa käytetään [FileZillaa](https://filezilla-project.org/), joka on ilmainen FTP-asiakasohjelma.
+## Tavoite
 
+Verkossa on olemassa valtava määrä verkkosivuja. Olipa kyse blogin tai verkkokaupan perustamisesta, kiinnostuksen kohteen jakamisesta tai liiketoiminnan edistämisestä, [OVH:n webhotellilla](https://www.ovh-hosting.fi/webhotelli/){.external} voit ylläpitää haluamiasi verkkosivuja kunhan se on yhteensopiva [infrastruktuuriemme konfiguraation](http://pro.ovh.net/infos/){.external} kanssa.
 
-### FTP-kirjautumistietojen hakeminen
+**Opi siirtämään verkkosivu verkkoon OVH:n webhotellissa.**
 
-Sait OVH:n webhotellituotteen rekisteröinnin yhteydessä sähköpostin palveluiden asennukseen liittyen. Tämä sähköpostiviesti sisältää, muun muassa, tarvittavat FTP-tunnukset.
-Tuotteesta ja webhotelliin liitetystä verkkotunnuksesta riippuen sähköpostiviestin aihe on:
+## Edellytykset
 
+- Sinulla on [webhotellituote](https://www.ovh-hosting.fi/webhotelli){.external}.
+- Olet saanut webhotellisi asennusta koskevan vahvistussähköpostin.
+- Sinulla on [verkkotunnus](https://www.ovh-hosting.fi/verkkotunnukset){.external}, joka on osoite verkkosivullesi.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+## Käytännössä
 
-```
-/* kun kyseessä on Persotilaus verkkotunnukselle "verkkotunnuksesi.tld" */
+### 1. vaihe: Projektin rajaaminen
 
+Selkeä näkemys tavoitteista on erittäin tärkeää, jotta projektisi sujuu hyvin. Mitä haluat tehdä verkkosivullasi? Kuinka se siirretään verkkoon? OVH:n webhotellilla on olemassa useita mahdollisuuksia projektin konkreettiseen toteuttamiseen.
 
-[OVH-perso] asennettu verkkotunnuksesi.tld
-```
+- **Avaimet käteen -verkkosivun käyttäminen OVH:n yhden klikkauksen moduulilla**: tällä ratkaisulla voit hyödyntää käyttövalmiita ja räätälöitäviä rakenteita (teemat, tekstit jne.). OVH:lla on tarjolla neljä tällaista valmiiksi infrastruktuuriemme sekä niiden yhden klikkausten moduulien kanssa yhteensopivaa ratkaisua. Katso sitä varten sivua: [“Luo verkkosivu yhden klikkauksen moduulilla”](https://www.ovh-hosting.fi/webhotelli/website/){.external}.
 
+- **Käsin asennettavan avaimet käteen -verkkosivun käyttäminen**: tässä vaihtoehdossa voit hyödyntää käyttövalmista ja räätälöitävää rakennetta (teemat, tekstit jne.), jonka asennat itse OVH:n webhotelliisi.
 
+- **Sivun luominen itse**: tämä vaihtoehto on teknisempi ja edellyttää ohjelmointikokemusta, mutta tarjoaa mahdollisuuden mittatilausprojektin luomiseen.
 
-Sisältö:
+- **Olemassa olevan sivun siirtäminen OVH:lle**: tämä vaihtoehto voi vaatia varovaisuutta, jos palvelukatko ei ole mahdollinen kyseiselle sivulle. Voit katsoa apua menettelyyn dokumentaatiosta: [“Verkkosivun ja sähköpostiosoitteiden migraatio OVH:lle”](https://docs.ovh.com/fi/hosting/sivun-migraatio-ovhlle/){.external}.
 
 
-```
-[...]
-FTP KOODISI
--------------
+Kun olet arvioinut yllä olevat vaihtoehdot, voit valita kahdesta mahdollisuudesta:
 
-Näillä koodeilla voit siirtää sivusi verkkoon
-(Varoitus: Tietojen täytyy olla asetettu www-hakemistoon)
+- **haluat käyttää yhden klikkauksen moduulia**: siirry ohjeeseen [“Verkkosivun asennus yhden klikkauksen moduuleilla”](https://docs.ovh.com/fi/hosting/1-klikkauksen-moduulit/){.external}.
 
+- **et halua käyttää yhden klikkauksen moduuliamme**: verkkosivun asennus on toteutettava käsin webhotellissasi. Tästä dokumentaatiosta löytyy sitä varten tietoa, josta voi olla apua tässä menettelyssä. Tämä ei kuitenkaan korvaa webmasterin apua.
+ 
+> [!warning]
+>
+> OVH tarjoaa käyttöösi palveluja, joiden konfigurointi, hallinta ja vastuu kuuluvat sinulle. Tehtävänäsi on siis varmistaa palvelun kunnollinen toiminta.
+> 
+> Tämän ohjeen tarkoituksena on auttaa sinua yleisimmissä tehtävissä. Suosittelemme ottamaan kuitenkin yhteyttä erikoistuneeseen palveluntarjoajaan ja/tai palvelun kehittäjään, mikäli kohtaat hankaluuksia. Me emme voi tarjota avustusta asiassa. Lisätietoa tämän ohjeen kohdasta “Lisää aiheesta”.
+>
 
-ftp-palvelin: ftp.verkkotunnuksesi.tld tai
-ftp.cluster0XX.ovh.net
-Login tai käyttäjä: loginftp
-Salasana: mDpFtP
+### 2. vaihe: Sivun tiedostojen siirto verkkoon tallennustilassa
 
-[...]
-```
+Verkkosivun käsin tehtävä siirto verkkoon webhotellissa edellyttää useita toimenpiteitä. Tietyt toimenpiteet ovat valinnaisia asennettavasta verkkosivusta riippuen ja niiden toteutukseen voi olla olemassa useita eri tapoja. Suurimmassa osassa projekteja voidaan kuitenkin tunnistaa kaksi päävaihetta, jotka tukevat verkkosivun siirtoa verkkoon. Ensimmäinen näistä on sivun tiedostojen lataaminen tallennustilaan.
 
+Verkkoon siirto tapahtuu useassa alavaiheessa.
 
-Tarvitset siis tätä tunnusparia kirjautumiseen.
+#### 1. Hae sivun tiedostot
 
-Jos FTP-salsanaa on muokattu asennusken jälkeen, sähköpostissa oleva salasana on hyödytön. Tällöin olet muuttanut salasanaa hallintapaneelissa. Säilytä kuitenkin käyttäjätunnus, sillä se on muuttumaton.
+Varmista, että sinulla on tiedostot sivulle, jonka haluat siirtää verkkoon. Jos olet siirtämässä olemassa olevia verkkosivuja, hae tiedostot vanhalta palveluntarjoajaltasi.
 
+#### 2. Kirjaudu tallennustilaasi
 
-### Hallintapaneeli
-Hallintapaneelissa
-Kun olet kirjautunut hallintapaneeliin, valitse webhotellin verkkotunnus ja klikkaa "Webhotelli".
-Klikkaa "FTP-salasana"-kuvaketta.
-Aukenevalla sivulla voi muuttaa FTP-salasanan. 
-Käyttäjätunnus näkyy ruudulla "FTP-tunnus:" tekstin jälkeen.
+FTP-tunnisteen, salasanan sekä palvelimen osoitteen avulla voit kirjautua tallennustilaasi. Nämä tiedot löytyvät sähköpostiviestistä, jossa ilmoitettiin webhotellisi asennuksesta. Jos sinulla ei ole enää salasanaa, mene ohjeisiin, jotka on kuvattu dokumentaatiossa [“FTP-käyttäjän salasanan vaihtaminen”](https://docs.ovh.com/fi/hosting/ftp-kayttajan-salasanan-vaihtaminen/){.external}.
 
-Syötä uusi salasana, varmista se ja klikkaa "Vahvista". Salasanan on oltava 8 - 12 merkkiä pitkä ja se voi sisältää kirjaimia ja numeroita.
+Palvelimen osoitteen tai tallennustilaan kirjautumisen mahdollistavan tunnisteen voit hakea [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa sitten `Webhotellit`{.action} palveluvalikossa vasemmassa reunassa. Valitse kyseessä oleva webhotelli ja mene sitten välilehdelle `FTP-SSH`{.action}.
 
-Muutos astuu voimaan muutamassa minuutissa.
+![siteinstallation](images/get-website-online-step1.png){.thumbnail}
 
+Kun sinulla on kaikki tiedot, kirjautuminen tallennustilaan voi tapahtua kolmella eri tavalla:
 
-### FileZillan käyttö
+- **Käyttämällä FTP Exploreria**: voit kirjautua tallennustilaasi verkkoselaimesta. Käyttääksesi sitä klikkaa edelleen `FTP - SSH`{.action}-välilehdellä painiketta `FTP Explorer`{.action}
 
-Ks. ohjeet FileZillan käyttöön:[]({legacy}1380)
+- **Käyttämällä FTP-protokollan kanssa yhteensopivaa ohjelmistoa**: sinun on asennettava yhteensopiva ohjelmisto tietokoneellesi (esim. FileZilla). Kehotamme ottamaan yhteyttä asennetun ohjelmiston kehittäjään, jos haluat saada apua sen käytössä. OVH ei ole luonut ohjelmistoa.
 
-Sinulla on oltava tiedossa seuraavat tiedostot ja tiedot:
+- **Käyttämällä SSH-yhteyttä**: sinun on käytettävä päätteen kautta annettavia komentoja voidaksesi toimia vuorovaikutuksessa tallennustilasi kanssa. Tämän tyyppisen tavan käyttö edellyttää edistynyttä osaamista sekä tietyn [webhotellituotteen](https://www.ovh-hosting.fi/webhotelli/){.external}.
 
-- verkkosivun tiedostot
-- tietokannan varmuuskopiotiedosto (mikäli tarpeen)
+#### 3. Lataa tiedostot tallennustilaan
 
-FTP-tunnukset:
+Kun olet kirjautunut tallennustilaan, ei jäljellä ole enää muuta kuin sivusi tiedostojen siirto verkkoon. **Kehotamme erityiseen varovaisuuteen liittyen hakemistoon, johon tiedostot ladataan.** Perinteisessä käytössä sivun on oltava ladattu “www”-kansioon. Jos kuitenkin käytät webhotelliasi useamman verkkosivuston ylläpitoon, sinulla on varmastikin useita **“Multisite”**-sivuja.
 
-- palvelimen nimi: ftp.verkkotunnus.fi tai ftp.cluster0XX.ovh.net tai newftp.cluster0XX.ovh.net
-- tunnus: oma FTP-tunnus
-- salasana: FTP-tunnuksiin liittyvä salasana (ks. edelliset kohdat)
-- portti: 21 (SSH-yhteydelle: 22 – Pro-tuotetasosta alkaen)
+Voit tarkistaa oikean kansion, jossa verkkosivusi tulee julkaista, menemällä hallintapaneelisi välilehdelle `Multisite`{.action}. Näkyviin tulevassa taulukossa katso halutun verkkotunnuksen kohdalla näkyvä `Juurikansio`{.action}. Julkaise sitten sivut tässä kansiossa.
 
+On mahdollista, että löydät tallennustilastasi tiedoston nimeltä “index.html”. OVH on voinut luoda sen webhotellisi asennuksen yhteydessä näyttääkseen oletussivun verkkosivullasi. Jos näin on, muista poistaa se tiedostojesi verkkoon lisäyksen yhteydessä.
 
+![siteinstallation](images/get-website-online-step2.png){.thumbnail}
 
-![](images/img_1858.jpg){.thumbnail}
+### 3. vaihe: Verkkosivun yhdistäminen tietokantaan
 
+> [!primary]
+>
+> Tämä osa on valinnainen, mikäli verkkosivuasi ei tarvitse liittää tietokantaan.
+>
 
-## FTP-kirjautumistietojen hakeminen
+Nykyään lähes kaikki sisällönhallintajärjestelmät kuten WordPress ja Joomla!, käyttävät tietokantaa dynaamisten elementtien kuten kommenttien tai artikkeleiden tallennukseen. Yhteys sivun tiedostojen ja tietokannan välillä on siis välttämätön, jotta verkkosivu voi toimia kunnolla. Tätä varten on olemassa tietokannan tiedot sisältävä konfigurointitiedosto, joka mahdollistaa tämän yhteyden.
 
-### Hallintapaneelin kautta
-Voit palauttaa FTP-tilan automaattisesti edelliseen päivään hallintapaneelin kautta.
+Käytetystä verkkosivusta riippuen tämä yhteys on muodostettava käsin tai sivun itse muodostaman käyttöliittymän kautta. Se toteutetaan useassa vaiheessa, joista jotkut voivat olla valinnaisia.
 
-Valitse verkkotunnus hallintapaneelissa ja mene valikkoon "Webhotelli" >"FTP ja sitten "Palauta levytila".
+#### 1. Hae olemassa olevan tietokannan tiedot (valinnainen)
 
-![](images/img_2690.jpg){.thumbnail}
-Valitse seuraavaksi haluttu palautuspäivä. 
+Jos olet siirtämässä olemassa olevia verkkosivuja, hae olemassa oleva tietokanta vanhalta palveluntarjoajaltasi. Jos kyseessä on uusi verkkosivu, jatka seuraavaan vaiheeseen.
 
-Huomio: palautetut tiedot korvaavat webhotellin nykyisen sisällön.
+#### 2. Luo tietokanta OVH:lla (valinnainen)
 
-Klikkaa "Vahvista" aloittaaksesi operaation. Tiedostojen palautukseen kuluu muutamia tunteja.
+Jos sinulla on jo tietokanta, jota haluat käyttää ([OVH:n webhotellituotteeseen](https://www.ovh-hosting.fi/webhotelli/){.external} sisältyvä tai [Private SQL](https://www.ovh-hosting.fi/webhotelli/sql-optiot.xml){.external} tai [Cloud DB](https://www.ovh-hosting.fi/cloud/cloud-databases/){.external} -ratkaisu), syötä sen käyttäjänimi, tietokannan salasana sekä palvelimen osoite. Jatka sitten seuraavaan vaiheeseen.
 
+Jos haluat luoda uuden tietokannan OVH:lla, [kirjaudu hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external} ja klikkaa kohtaa `Webhotellit`{.action} vasemman puoleisessa palveluvalikossa. Valitse kyseessä oleva webhotelli ja mene sitten välilehdelle `Tietokannat`{.action}.
 
-- FTP-levytila palautetaan tällä tavalla kokonaisuudessaan päinvastoin kuin FileZillan varmuuskopiota palautettaessa.
+Klikkaa nyt painiketta `Luo tietokanta`{.action} tai jos sitä ei näy, kohtaa `Toiminnot`{.action} ja sitten `Luo tietokanta`{.action}. Seuraa sitten näkyviä tietoja.
 
+![siteinstallation](images/get-website-online-step3.png){.thumbnail}
 
 
-### Palautus Filezillan avulla
-Lue ohjeet FTP-tilan tai tiedostojen palautuksesta Filezillalla: []({legacy}1593)  FileZillan
+#### 3. Tuo olemassa oleva tietokanta (valinnainen)
 
-## Tietokantaan
+Jos olet siirtämässä olemassa olevia verkkosivuja, tuo olemassa oleva tietokanta juuri luotuun tietokantaan. Jos kyseessä on uusi verkkosivu, jatka seuraavaan vaiheeseen.
 
-### Yleistä
-Tietokantaan tallennetaan verkkosivuun, tai sovelluksiin, liittyvät tiedot.
+Tuonnin toteuttamiseen on olemassa useita eri tapoja. OVH tarjoaa yhtä tapaa hallintapaneelissa. Kun olet palvelussasi luotujen tietokantojen luettelossa OVH:n hallintapaneelissa, klikkaa kolmea pistettä juuri luodun tietokannan kohdalla ja sitten `Tuo tiedosto`{.action}. Seuraa sitten näkyviä tietoja.
 
-Tietokantaan voi tallentaa eri tyyppisiä tietoja kuten sivun sisältöä, sivujen URL-osoitteita tai kävijätietoja.
+![siteinstallation](images/get-website-online-step4.png){.thumbnail}
 
-OVH:n webhotelleissa voi käyttää useita eri tietokantamoottoreita: MySQL, PostgreSQL, SQL Server (saatavilla Windows-webhotelleissa).
+#### 4. Yhdistä sivusi tietokantaan
 
+Kun tietokantasi on saatavilla ja tiedostot ladattu tallennustilaasi, ne täytyy vielä yhdistää toisiinsa. Sitä varten tarvitset tiedot, joiden avulla voit kirjautua tietokantaan (käyttäjänimi, salasana, tietokannan nimi sekä palvelimen osoite).
 
-### Luominen
-Webhotelli-tuotteeseen sisältyvää tietokantaa ei asenneta automattisesti webhotellin asennuksen yhteydessä.
-Tietoja ei siis lähetetä automaattisesti sähköpostiisi.
-Luo ensin tietokanta.
-Kirjaudu hallintapaneeliin ja valitse haluttu webhotelli oikeasta osiosta.
+Yhteyden luominen riippuu verkkosivusta, jota olet siirtämässä verkkoon. Tämä on lähtöisin verkkosivusi konfiguraatiosta eikä OVH:lta. Suosittelemme siis ottamaan yhteyttä verkkosivusi kehittäjään tai asiantuntijaan kuten erikoistuneeseen palveluntarjoajaan, mikäli kaipaat apua toimenpiteessä.
 
-Mene sitten valikkoon "SQL" ->
-"Luo tietokanta"
+### 4. vaihe: Mene verkkosivullesi
 
-![](images/img_2743.jpg){.thumbnail}
-Valitse tietokantakone:
-"Mysql tai PostgreSQL."
-Valitse tietokannan tyyppi ja sitten "Seuraava"
+Kun tiedostot on ladattu tallennustilaasi ja siihen on liitetty tietokanta (jos sivusi käyttää sellaista), voit nyt päästä verkkosivullesi. Sen pitäisi nyt näkyä oikein verkkoselaimesi kautta.
 
-Seuraavaksi pyydetään syöttämään käyttäjätunnus ja salasana.
+Jos huomaat, ettei sivu näy oikein, suosittelemme:
 
-Tietokannan tunnukset lähetetään sinulle sähköpostitse.
+- **tarkistamaan verkkotunnuksesi konfiguroinnin**: voi olla, että nimipalvelimesi konfigurointi estää sitä näyttämästä OVH:n webhotelliin ladattua sivua. Varmista, että tällä hetkellä verkkotunnuksesi DNS-alueelle määritetty A-tietue vastaa OVH:n webhotellisi IP-osoitetta.
 
-Saat muutaman minuutin kuluessa sähköpostiviestin, joka sisältää tietokantaasi liittyvät tiedot.
+- **varmistamaan, ettei yhtään tiedostoa puutu**: on mahdollista, että ladatessasi tietoja OVH:n webhotellin, olet unohtanut tiedostoja tai on tapahtunut virhe. Ole kuitenkin valppaana muutoksia tehdessäsi, ettet riko sivun tiedostojen ja tietokannan välistä yhteyttä (jos sivu käyttää tietokantaa).
 
-![](images/img_2694.jpg){.thumbnail}
+- **tarkistamaan, ettei sivun koodissa ole virheitä**: tämä tarkistus on kaikkein teknisin, mutta lataamissasi tiedostoissa saattaa olla virheitä, joiden vuoksi sivu ei näy kunnolla tai ei ollenkaan.
 
+Muistathan, että mikäli sinulla on vaikeuksia sivun siirtämisessä verkkoon, suosittelemme ottamaan yhteyttä erikoistuneeseen palveluntarjoajaan ja/tai ottamaan yhteyttä palvelun kehittäjään (esim. käyttämäsi sisällönhallintajärjestelmän kehittäjään).
 
-### SQL-tunnukset
+## Lue lisää aiheesta
 
+[Verkkosivun ja sähköpostiosoitteiden migraatio OVH:lle](https://docs.ovh.com/fi/hosting/sivun-migraatio-ovhlle/){.external}.
 
-- Varoitus: tietokantaasi ei luoda automaattisesti webhotellin asennuksen yhteydessä. 
+[Verkkosivun asennus yhden klikkauksen moduuleilla](https://docs.ovh.com/fi/hosting/1-klikkauksen-moduulit){.external}.
 
+[FTP-käyttäjän salasanan vaihtaminen](https://docs.ovh.com/fi/hosting/ftp-kayttajan-salasanan-vaihtaminen/){.external}.
 
-Kun tietokanta on luotu, saat sähköpostitse tunnukset tietokantaan.
-Löydät tämän sähköpostin hallintapaneelista. Kun olet kirjautunut, klikkaa valikkoa Tuki ja sitten Sähköpostihistoria
-
-![](images/img_2747.jpg){.thumbnail}
-Sähköpostin otsikko on muotoa:
-
-
-```
-[MySQL] MySQL-tietokanta DB_nimi
-```
-
-
-Sisältö:
-
-
-```
-[...]
-
-MySQL-tietokantasi on asennettu palvelimellemme.
-
-Tekniset tiedot:
------------------------------
-
-MySQL:
-Palvelin: mysql51-66.pro
-Käyttäjä: DB_nimi
-Tietokannan nimi: DB_nimi
-Salasana: ************
-
-[...]
-```
-
-
-
-### Hallintapaneelissa
-Voit muuttaa tietokannan salasanan hallintapaneelissa.
-
-
-- Huomio: tietokannan salasanan muutos ei ole vähäpätöinen toiminto. Se voi aiheuttaa verkkosivun tai tietokantaa käyttävien palveluiden keskeytymisen.
-
-
-Mikäli haluat muuttaa tietokannan salasanan, mene Web-hallintapaneeliin ja valitse verkkotunnus. Seuraavaksi mene osioon ”Alustat” → verkkotunnus.fi → ”SQL” → klikkaa tietokantarivin oikealla puolella olevaa hammasrattaan kuvaa ja valitse ”Salasanamuutos”. 
-
-Voit päivittää tietokannan salasanan.
-
-Muista päivittää verkkosivun konfigurointitiedosto, jotta se yhdistää tietokantaan uudella salasanalla, jos webhotellissa on muutoksentekohetkellä verkkosivu olemassa.
-
-
-### phpMyAdmin-yhteys
-Kirjaudu [phpMyAdmin-käyttöliittymään](https://phpmyadmin.ovh.net/).
-
-Syötä pyydetyt tiedot kenttiin:
-
-
-- Palvelin: käyttäjä.mysql.db (käyttäjätunnus löytyy tietokannan luomisviestistä).
-
-- Käyttäjä: löytyy tietokannan luomisviestistä.
-
-- Salasana: tietokannan salasana.
-
-- Versio: voit valita kirjautumisen nykyiseen tietokantaan, tai 1 tai 7 päivän varmuuskopioon.
-
-
-Syötettyäsi kaikki tiedot, klikkaa "Suorita" kirjautuaksesi.
-
-![](images/img_1960.jpg){.thumbnail}
-
-- MYSQL4-tietokantoihin kirjautumiseen käytä käyttöliittymän alla annettua linkkiä.
-
-
-
-
-### Vienti
-Miten SQL-tietokanta viedään? Millä eri tavoilla tietokannan varmuuskopiointi on suoritettavissa?
-
-Ohje tietokantojen viennistä:[]({legacy}1394)
-
-![](images/img_1932.jpg){.thumbnail}
-
-
-### Tuonti
-Miten SQL-tietokannan varmuuskopio tuodaan? Millä eri tavoilla sen voi tehdä?
-
-Ohje MySql-tietokantojen tuonnista:[]({legacy}1393)
-
-![](images/img_1933.jpg){.thumbnail}
-
-
-### Korjaus – Optimointi – Analysointi
-Tietokantataulukkoja voi korjata, optimoida ja analysoida.
-
-Tätä varten kirjaudu [phpMyAdmin-käyttöliittymään](https://phpmyadmin.ovh.net/).
-
-Valitse ensin taulukko, jolle haluat toiminnot suorittaa. 
-
-Sitten klikkaa ylhäällä oikealla "Operaatiot".
-
-Huolto-välilehdellä voit sitten suorittaa halutut operaatiot.
-
-![](images/img_1961.jpg){.thumbnail}
-
-
-## Private SQL -käyttö
-M#iten Private SQL -palvelinta käytetään? Miten tietokanta tuodaan ja viedään?
-
-Pikaohje Private SQL -palvelimen käytöstä:[Private SQL -palvelin](http://ohjeet.ovh-hosting.fi/QuickUseSQLprivate)
-
-![](images/img_1866.jpg){.thumbnail}
-
-
-## Asennusohje
-Miten luoda nopeasti verkkosivu ilman teknistä erityisosaamista kotisivujen luonnista?
-
-Ohje sisällönhallintajärjestelmän asennukseen OVH:n helppoasennusmoduulien avulla:[]({legacy}1402)
-
-![](images/img_1930.jpg){.thumbnail}
-
-
-### Uusi WordPress-asennus
-
-WordPress on sisällönhallintajärjestelmä (CMS), jonka avulla voit luoda ja hallinnoida kotisivuja tai blogeja helposti.
-Ilmaista vapaan lähdekoodin WordPressiä voi kustomoida useiden teemojen ja laajennuksien ansiosta.
-
-
-- Blogi & verkkosivu
-
-Ohje WordPress-sisällönhallintajärjestelmän asentamiseen käsin:[]({legacy}1375)
-
-
-![](images/img_1873.jpg){.thumbnail}
-
-
-### Uusi Joomla-asennus
-
-Joomla on sisällönhallintajärjestelmä (CMS). Ilmaista vapaan lähdekoodin Joomlaa voi kustomoida useiden teemojen ja laajennuksien ansiosta. 
-Tämä sisällönhallintajärjestelmä on sovellus, jonka avulla voit hallita dynaamista verkkosivuja tai kokonaista intranetiä yksinkertaisesti.
-
-
-- Verkkosivu
-
-Ohje Joomla-sisällönhallintajärjestelmän asentamiseen käsin:[]({legacy}1375)
-
-
-![](images/img_1874.jpg){.thumbnail}
-
-
-### Uusi PrestaShop-asennus
-
-PrestaShop on vapaan lähdekoodin sovellus, jolla on mahdollista luoda verkkokauppa.
-
-
-- Verkkokauppa
-
-Ohje PrestaShop -sisällönhallintajärjestelmän asentamiseen käsin:[]({legacy}1375)
-
-
-![](images/img_1862.jpg){.thumbnail}
-
-
-## Tiedosto .ovhconfig
-Miten webhotellin PHP-versio muutetaan? Miten PHP-FPM aktivoidaan?
-
-Ohjeet .ovhconfig-tiedoston käytöstä ja konfiguroinnista:
-
-
-- []({legacy}1175)
-
-- []({legacy}1207)
-
-
-
-![](images/img_1867.jpg){.thumbnail}
-
-
-## Webhotellissa käytettävät kirjastot
-Tietoa käytettävistä kirjastoista:
-
-|Kirjasto|Saatavuus| 
-|---|---|
-|ffmepg|ei aktiivinen| 
-|GD|aktivoitu| 
-|imagemagik|aktivoitu| 
-|zend (opcache)|aktivoitu| 
-|PDO|aktivoitu| 
-|Zip - Gzip|aktivoitu|
-
-
-
-![](images/img_1867.jpg){.thumbnail}
-Huomio: PHP-FPM:ää käytettäessä, ja turvallisuussyistä, seuraavat optiot eivät ole aktiivisia:
-
-
-- register_globals
-- magic_quotes_gpc
-
-
-
-
-## Verkkosivun suoristuskyvyn optimointi
-Miten verkkosivun hidastelun syitä tutkitaan? Miten parannetaan verkkosivujen suorituskykyä?
-
-Ohje verkkosivun hidastelun syiden tutkimisesta ja suorituskyvyn parantamisesta:[]({legacy}1396)
-
-![](images/img_1865.jpg){.thumbnail}
-
+Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en/>.
