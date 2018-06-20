@@ -23,7 +23,7 @@ When you order your dedicated server, no security protocols are implemented nati
 
 ## Requirements
 
-* a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
+* a [dedicated server](https://www.ovh.com/sg/dedicated-servers/){.external}
 * a SSH access as administrative (root)
 
 ## Instructions
@@ -196,7 +196,7 @@ It is recommended that you create and adjust the rules on this firewall to fit y
 
 OVH servers include a firewall at the entrance to the infrastructure, called the Network Firewall. Its implementation and configuration allow protocols to be blocked before they even arrive on your server.
 
-We also have a guide to configuring the Network Firewall: <https://docs.ovh.com/gb/en/dedicated/firewall-network/>.
+We also have a guide to configuring the Network Firewall: <https://docs.ovh.com/asia/en/dedicated/firewall-network/>.
 
 ### Back up your system and your data
 
@@ -209,7 +209,7 @@ The concept of security is not limited to protecting a system against attacks. S
 
 You will need a third-party backup solution to replicate your data and transfer it to your backup storage.
 
-For more information on our backup storage solutions, please see our [backup storage guide](https://docs.ovh.com/gb/en/dedicated/services-backup-storage/){.external}.
+For more information on our backup storage solutions, please see our [backup storage guide](https://docs.ovh.com/asia/en/dedicated/services-backup-storage/){.external}.
 
 ## Go further
 
