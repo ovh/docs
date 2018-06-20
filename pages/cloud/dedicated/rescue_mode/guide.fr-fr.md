@@ -5,7 +5,7 @@ excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 25/05/2018**
+**Dernière mise à jour le 20/06/2018**
 
 ## Objectif
 
@@ -13,6 +13,7 @@ Le mode rescue est un outil de votre serveur dédié. Il vous permet de démarre
 
 **Ce guide vous explique comment activer et utiliser le mode rescue de votre serveur.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nvlAbXNM8Bk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Prérequis
 

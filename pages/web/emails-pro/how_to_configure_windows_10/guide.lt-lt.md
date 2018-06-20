@@ -47,6 +47,7 @@ Enter the information requested:
 |Outgoing email server|Enter the server “pro1.mail.ovh.net:587”.|
 
 Make sure that the checkboxes are ticked for the following options:
+
 - Outgoing server requires authentication
 - Use the same user name and password for sending mail
 - Require SSL for incoming email
