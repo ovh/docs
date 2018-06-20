@@ -33,7 +33,7 @@ Clique em `Adicionar um utilizador`{.action} e escolha uma descrição de utiliz
 
 A palavra-passe ficará visível na Área de Cliente até à atualização da página. Pode conservá-la para a utilizar novamente numa conexão ulterior. Também é possível gerar uma nova palavra-passe se clicar no pictograma de atualização que figura ao lado da palavra-passe atual:
 
-![Menu projeto](images/2_H_password_refresh.png){.thumbnail}
+![Menu projeto](images/2_H_user_manage.png){.thumbnail}
 
 ### Conectar-se ao OpenStack Horizon
 

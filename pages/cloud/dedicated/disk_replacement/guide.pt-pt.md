@@ -53,7 +53,7 @@ Quando tiver encontrado o caminho de acesso aos discos, pode testá-los da segui
 smartctl -a /dev/sdX
 ```
 
-> \[!primary]
+> [!primary]
 >
 > Não se esqueça de substituir `/dev/sdX` pelo caminho de acesso ao seu disco, sendo sdX o disco em causa, isto é, sdA, sdB, etc.
 > 
@@ -97,13 +97,13 @@ Quando tiver encontrado o caminho de acesso aos discos, pode testá-los da segui
 smartctl -d megaraid,N -a /dev/sdX
 ```
 
-> \[!primary]
+> [!primary]
 >
 > Não se esqueça de substituir /dev/sdX pelo caminho de acesso ao seu disco, sendo sdX o disco em causa, isto é, sdA, sdB, etc.
 > 
 
 
-> \[!warning]
+> [!warning]
 >
 > Em certos casos, poderá obter a mensagem seguinte: `/dev/sda [megaraid_disk_00][SAT]: Device open changed type from 'megaraid' to 'sat'`.
 > 
@@ -127,10 +127,10 @@ Então será necessário utilizar o comando `nvme list` para obter os números d
 
 ```sh
 root@rescue:~# nvme list
->>> Node           SN                  Model                 Namespace Usage                     Format        FW Rev
->>> -------------- ------------------- --------------------- --------- ------------------------- ------------- --------
->>> /dev/nvme0n1   CVPF636600YC450RGN  INTEL SSDPE2MX450G7   1         450.10  GB / 450.10  GB   512  B +  0 B MDV10253
->>> /dev/nvme1n1   CVPF6333002Y450RGN  INTEL SSDPE2MX450G7   1         450.10  GB / 450.10  GB   512  B +  0 B MDV10253
+>>> Node          SN                  Model                 Namespace Usage                     Format       FW Rev
+>>> ------------- ------------------- --------------------- --------- ------------------------ ------------- --------
+>>> /dev/nvme0n1  CVPF636600YC450RGN  INTEL SSDPE2MX450G7   1         450.10  GB / 450.10  GB   512  B + 0 B MDV10253
+>>> /dev/nvme1n1  CVPF6333002Y450RGN  INTEL SSDPE2MX450G7   1         450.10  GB / 450.10  GB   512  B + 0 B MDV10253
 ```
 
 
