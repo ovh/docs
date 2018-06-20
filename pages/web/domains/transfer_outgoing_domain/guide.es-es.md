@@ -1,74 +1,57 @@
 ---
-title: Transferencia saliente de un dominio genérico o geográfico
-excerpt: En esta guía encontrará toda la información necesaria para transferir su dominio genérico a otro agente registrador.
+title: 'Transferir un dominio de OVH a otro agente registrador'
 slug: transferencia_saliente_de_un_dominio_generico_o_geografico
-legacy_guide_number: g1869
-section: Operaciones en los dominios
+excerpt: 'Cómo transferir un dominio de OVH a otro agente registrador'
+section: 'Operaciones en los dominios'
+order: 3
 ---
 
+**Última actualización: 20/06/2018**
 
-## Dominio genérico (gTLD)
-Para transferir un dominio genérico (.com, .net, .org, .info, .biz y similares) a otro agente registrador, asegúrese de que cumple los siguientes requisitos:
+## Objetivo
 
+La transferencia de un dominio permite cambiar el agente registrador que lo gestiona. Es posible transferir un dominio de OVH a otro agente registrador.
 
-- El dominio no debe haber caducado*.
-- El dominio no debe haber sido creado o transferido en los últimos 61 días*.
-- La organización, los apellidos o el nombre del propietario no deben haber sido modificados en los últimos 61 días*.
-- El dominio no debe haber sido renovado en los últimos 46 días (recomendado). 
-- Las direcciones de correo electrónico de los contactos del Whois deben ser válidas*. 
-- Los contactos del Whois, y sobre todo el propietario, deben haber sido informados de la solicitud de transferencia*.
-- El dominio no debe estar bloqueado*. 
-- La fecha de caducidad debe ser superior a 60 días*.
+**Esta guía explica cómo transferir un dominio de OVH al agente registrador que usted elija.**
 
-*Obligatorio.
+## Requisitos
+- Tener un dominio registrado en OVH.
+- Estar facultado para solicitar la transferencia del dominio. El propietario y las personas que lo administren deben haber sido informados.
+- Tener acceso a la gestión del dominio desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- El dominio debe haber sido creado más de 61 días antes, y no debe haber sido transferido ni haber cambiado de propietario durante ese período.
 
+> [!primary]
+>
+> Para algunas extensiones de dominio será necesario seguir un procedimiento específico de transferencia. Si los pasos que se indican a continuación no le permiten transferir su dominio, contacte con su nuevo agente registrador para que este le informe sobre el procedimiento que debe seguir.
+>
 
+## Procedimiento
 
-## Dominio geográfico (ccTLD)
-Para transferir un dominio geográfico (.fr, .re, .eu, .be y similares) a otro agente registrador, asegúrese de que cumple los siguientes requisitos:
+### 1. Desactivar la protección contra la transferencia del dominio
 
+Para desactivar la protección de OVH contra la transferencia del dominio, también desde el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio. En la pestaña `Información general`{.action}, desmarque la opción `Protección contra la transferencia`{.action} y haga clic en `Aceptar`{.action}.
 
-- El dominio no debe haber caducado*.
-- El dominio no debe haber sido renovado en los últimos 46 días (recomendado).
-- Los contactos del Whois, y sobre todo el propietario, deben haber sido informados de la solicitud de transferencia*.
-- El dominio no debe estar bloqueado*.
-- La fecha de caducidad debe ser superior a 60 días*.
+> [!primary]
+>
+> Una vez desbloqueado el dominio, dispone de 7 días para solicitar su transferencia al nuevo agente registrador. Pasado ese plazo, el dominio volverá a bloquearse si no se ha realizado ninguna solicitud de transferencia.
+>
 
-*Obligatorio.
+![Transferencia saliente](images/outgoing-transfer-step2.png){.thumbnail}
 
+### 2. Obtener el código de transferencia
 
+Una vez desbloqueada la protección contra la transferencia, deberá obtener el código de transferencia del dominio. Para ello, en la pestaña `Información general`{.action}, haga clic en el enlace `Auth-Info`{.action}, situado junto a `Protección contra la transferencia`{.action}. Actualice la página si es necesario.
 
-## 1. Confirmación de la información del dominio
-Encontrará toda la información disponible en su [área de cliente](https://www.ovh.com/manager/web/login/). 
-Debe conectarse con el contacto administrador. 
+Guarde el código que aparecerá en una ventana.
 
-Una vez conectado, haga clic en su nombre de dominio en la sección «Dominios» y acceda al apartado «Información general».
+![Transferencia saliente](images/outgoing-transfer-step3.png){.thumbnail}
 
-![](images/img_3692.jpg){.thumbnail}
+### 3. Iniciar la transferencia al nuevo agente registrador
 
+Si todavía no lo ha hecho, contacte con el nuevo agente registrador para iniciar la transferencia del dominio y proporciónele el código de transferencia que obtuvo en el paso anterior.
 
-## 2. Desbloqueo del dominio
-Para desbloquear el dominio, haga clic en el botón de desactivación en el apartado «Protección contra la transferencia».
+Si desea información sobre los plazos de transferencia, consulte con el nuevo agente registrador.
 
-![](images/img_3695.jpg){.thumbnail}
-A continuación, haga clic en «Aceptar».
+## Más información
 
-![](images/img_3693.jpg){.thumbnail}
-La operación tardará algunos minutos en registrarse.
-
-![](images/img_3694.jpg){.thumbnail}
-
-
-## 3. Recuperación del código de transferencia
-Una vez desactivada la protección, aparecerá el botón «AUTH/INFO».
-
-![](images/img_3696.jpg){.thumbnail}
-Al hacer clic en este botón, aparecerá una nueva ventana con el código de transferencia.
-
-![](images/img_3697.jpg){.thumbnail}
-El dominio permanecerá desprotegido durante 7 días. Una vez transcurrido este plazo, volverá a bloquearse.
-
-
-## 4. Transmisión de la información a su nuevo agente registrador
-No tendrá que realizar ninguna otra operación con OVH. Ya cuenta con toda la información necesaria para transferir su dominio.
-
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
