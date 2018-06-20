@@ -5,14 +5,16 @@ excerpt: 'This guide will show you how to use network bridging to configure inte
 section: 'Network Management'
 ---
 
-**Last updated 24th May 2018**
+**Last updated 20th June 2018**
 
 ## Objective
 
 Bridged networking can be used to configure your Virtual Machines. Some tweaking is necessary to make the network configuration work on our network.
 
 **This guide will show you how to use network bridging to configure internet access for your virtual machines.**
- 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TZZbPe9hCOk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ## Requirements
 
 * You need to have a dedicated server with a hypervisor installed (Ex: [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
@@ -27,7 +29,7 @@ For example purposes, we will use the following values in our code samples, whic
 * FAILOVER_IP = The address of your failover IP
 * GATEWAY_IP = The address of your default gateway
 
-### Step 1: Assign a virtual MAC address
+### Assign a virtual MAC address
 
 Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table
 
@@ -172,6 +174,17 @@ nameserver 213.186.33.99 # OVH DNS Server
 ```
 
 Save and close the file, then reboot your virtual machine.
+
+#### Arch Linux
+
+```
+# ip link
+
+1: eno3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether ac:1f:6b:67:ce:a4 brd ff:ff:ff:ff:ff:ff
+2: eno4: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether ac:1f:6b:67:ce:a5 brd ff:ff:ff:ff:ff:ff
+```
 
 #### FreeBSD 8.0
 
