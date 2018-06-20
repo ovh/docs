@@ -5,19 +5,19 @@ excerpt: This guide will show you how to change the root password on a Linux ded
 section: Server Management
 ---
 
-**Last updated 20th June 2018**
+**Last updated 2018/06/20**
 
 ## Objective
 
-When you install or reinstall a distribution or operating system, you are given a root access password. We strongly recommend that you change it, as detailed in our guide to [securing a Dedicated Server](https://docs.ovh.com/gb/en/dedicated/securing-a-dedicated-server/#change-the-password-associated-with-the-root-user){.external}. You may also find that you have lost this password, and need to change it.
+When you install or reinstall a distribution or operating system, you are given a root access password. We strongly recommend that you change it, as detailed in our guide to [securing a Dedicated Server](https://docs.ovh.com/ca/en/dedicated/securing-a-dedicated-server/#change-the-password-associated-with-the-root-user){.external}. You may also find that you have lost this password, and need to change it.
 
 **This guide will take you through both scenarios and show you how to change the root password of your sever.**
 
 ## Requirements
 
-* a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
+* a [dedicated server](https://www.ovh.com/ca/en/dedicated-servers/){.external}
 * a root access to your server (in SSH)
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
@@ -46,7 +46,7 @@ passwd: password updated successfully
 
 #### Step 1: Identify the system partition
 
-After putting your server into [rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}, you will need to identify the system partition. You can do this with the following command:
+After putting your server into [rescue mode](https://docs.ovh.com/ca/en/dedicated/rescue-mode/){.external}, you will need to identify the system partition. You can do this with the following command:
 
 ```sh
 # fdisk -l
