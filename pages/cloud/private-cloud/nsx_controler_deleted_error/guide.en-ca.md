@@ -5,7 +5,7 @@ excerpt: 'Find out what the “Controller VM deleted” error message means'
 section: NSX
 ---
 
-**Last updated 20th June 2018**
+**Last updated 2018/06/20**
 
 ## Objective
 
@@ -22,7 +22,7 @@ In your NSX interface, you may encounter the *Controller VM deleted* message.
 
 ## Instructions
 
-In your [NSX interface](https://docs.ovh.com/gb/en/private-cloud/accessing-NSX-interface/), under the `Installation`{.action} section, the *Controller VM deleted* error message may appear under the name of the controller:
+In your [NSX interface](https://docs.ovh.com/ca/en/private-cloud/accessing-NSX-interface/), under the `Installation`{.action} section, the *Controller VM deleted* error message may appear under the name of the controller:
 
 ![Controller VM deleted error](images/controllervmdeleted.JPG)
 
