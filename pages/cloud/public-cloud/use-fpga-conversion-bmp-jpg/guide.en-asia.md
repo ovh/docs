@@ -18,9 +18,9 @@ Beyond converting images, the purpose of this guide is to show how FPGA cards wo
 ## Requirements
 
 - an OpenStack user account
-- set up the [OpenStack environment variables](https://docs.ovh.com/gb/en/public-cloud/deploy-infrastructure-with-variables-and-formatted-outputs-openstack-heat/){.external}
+- set up the [OpenStack environment variables](https://docs.ovh.com/asia/en/public-cloud/deploy-infrastructure-with-variables-and-formatted-outputs-openstack-heat/){.external}
 - [API credentials and your OVH authorisation keys](https://eu.api.ovh.com/g934.first_step_with_api){.external}
-- [an SSH key](https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys/){.external}
+- [an SSH key](https://docs.ovh.com/au/en/public-cloud/create-ssh-keys/){.external}
 - [the OpenStack client installed](https://github.com/openstack/python-openstackclient){.external}
 - [FPGA beta in Public Cloud](https://labs.ovh.com/fpga-accelerators-on-public-cloud){.external} registration
 - [Accelize credentials obtained](https://accelstore.accelize.com/user/register){.external}
