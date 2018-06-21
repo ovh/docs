@@ -5,7 +5,7 @@ excerpt: Find out how to identify a defective disk, and request a replacement
 section: Server Management
 ---
 
-**Last updated 25th May 2018**
+**Last updated 21st JuneMay 2018**
 
 ## Objective
 
@@ -23,8 +23,8 @@ If you notice that a disk is faulty, or receive a notification email about a fau
 
 ## Requirements
 
-- You must be connected via SSH to your [OVH Dedicated Server](https://www.ovh.lt/dedikuoti_serveriai/){.external}, with *root access* (Linux).
-
+- a [Dedicated Server](https://www.ovh.lt/dedikuoti_serveriai){.external}
+- administrative (root) access to the server via SSH
 
 ## Instructions
 
