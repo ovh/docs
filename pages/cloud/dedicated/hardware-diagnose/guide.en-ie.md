@@ -16,9 +16,8 @@ At some point during the life of your server, you may encounter a fault due to a
 
 ## Requirements
 
-* Access to your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-* Access to your [dedicated server](https://www.ovh.ie/dedicated_servers/){.external}
-
+* a [dedicated server](https://www.ovh.ie/dedicated_servers/){.external}
+* [rescue mode activated](https://docs.ovh.com/ie/en/dedicated/rescue_mode/){.external}
 
 ## Instructions
 

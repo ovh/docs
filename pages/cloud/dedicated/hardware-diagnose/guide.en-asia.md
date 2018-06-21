@@ -5,7 +5,7 @@ excerpt: This guide will show you how to diagnose hardware issues on your server
 section: Security
 ---
 
-**Last updated 25/05/2018**
+**Last updated 21st June 2018**
 
 ## Objective
 
@@ -16,8 +16,8 @@ At some point during the life of your server, you may encounter a fault due to a
 
 ## Requirements
 
-* You need to have access to your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
-* You need to have access to your [dedicated server](https://www.ovh.com/asia/dedicated-servers/){.external}
+* a [Dedicated Server](https://www.ovh.com/asia/dedicated-servers/){.external}
+* [rescue mode activated](https://docs.ovh.com/asia/en/dedicated/ovh-rescue/){.external}
 
 
 ## Instructions
