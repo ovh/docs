@@ -1,7 +1,7 @@
 ---
 title: Cloud Web
 slug: cloud-web
-sections: Introdução
+sections: Getting started
 ---
 
 > [!product-section]
