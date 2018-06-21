@@ -5,7 +5,7 @@ excerpt: 'Help on how to configure the vRack on two or more dedicated servers'
 section: 'Network Management'
 ---
 
-**Last updated 8th June 2018**
+**Last updated 21st June 2018**
 
 ## Objective
 
@@ -17,11 +17,12 @@ The vRack or virtual rack allows multiple servers to be grouped together (regard
 
 ## Requirements
 
-* A [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
-* Two or more [vRack compatible servers](https://www.ovh.co.uk/dedicated_servers/){.external}
-* Access to your servers via SSH (or on your graphical user interface) on your Linux server (root access)
-* Access to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-* Your chosen private IP address range
+- a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
+- two or more [vRack compatible servers](https://www.ovh.co.uk/dedicated_servers/){.external}
+- administrative (root) access to the server via SSH
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- your chosen private IP address range
+
 
 ## Instructions
 

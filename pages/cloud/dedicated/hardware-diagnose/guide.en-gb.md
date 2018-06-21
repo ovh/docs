@@ -16,8 +16,8 @@ At some point during the life of your server, you may encounter a fault due to a
 
 ## Requirements
 
-* A [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
-* [Rescue mode activated](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
+* a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
+* [rescue mode activated](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}
 
 
 ## Instructions
