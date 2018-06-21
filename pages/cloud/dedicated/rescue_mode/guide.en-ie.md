@@ -1,11 +1,11 @@
 ---
-title: Rescue Mode
+title: Activate and use rescue mode
 slug: rescue_mode
 excerpt: How to use rescue mode on a dedicated server
 section: Diagnostic and rescue mode
 ---
 
-**Last updated 7th May 2018**
+**Last updated 21st June 2018**
 
 ## Objective
 
@@ -13,10 +13,12 @@ Rescue mode is a tool on your server that allows you to boot into a temporary op
 
 **This guide will show you how to activate and use your server's rescue mode.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
 ## Requirements
 
-- You need to have root access to your [dedicated server](https://www.ovh.ie/dedicated_servers/){.external} via the command line (SSH).
+- a root access to your [dedicated server](https://www.ovh.ie/dedicated_servers/){.external} via the command line (SSH).
 
 
 ## Instructions
