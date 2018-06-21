@@ -1,50 +1,49 @@
 ---
-title: Assign Virtual MAC to Failover IP
+title: Assigning a Virtual MAC to a Failover IP
 slug: network-virtual-mac
-excerpt: OVH allows you to associate a virtual MAC address with an IP address, so that you can set up virtual machines with a bridge configuration on your server.
+excerpt: This guide will show you how to create a virtual MAC address and assign it to a failover IP address.
 section: Network Management
 ---
 
+**Last updated 21/06/2018**
+
+## Objective
+
+OVH allows you to associate a virtual MAC address with an IP address, so that you can set up virtual machines with a bridge configuration on your server.
+
+**This guide will show you how to create a virtual MAC address and assign it to a failover IP address.**
 
 ## Requirements
-To assign a virtual MAC to a Failover IP, you must:
 
-- Have a dedicated server.
-- Have a Failover IP address, or a Failover IP block (RIPE).
-- Access to the Customer area.
-
-
-## Assign a MAC address
-To assign a Virtual MAC address to a Failover IP, you first need to connect to your customer area.
-
-Once connected, go to the section `IP`{.action}.
-
-Then select the server concerned so that the Failover IP, or IP block, attached to it will appear.
-
-- For a Failover IP :
+* a [Dedicated Server](https://www.ovh.com.au/dedicated-servers/){.external}
+* a [failover IP address](https://www.ovh.com.au/dedicated-servers/ip_failover.xml){.external} or a failover IP block (RIPE)
+* access to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 
-![IPFO](images/IPFO.png){.thumbnail}
+## Instructions
 
-- For a Failover IP block :
+### Assign a MAC address
 
+To assign a virtual MAC address to a failover IP, you first need to connect to your OVH Control panel.
 
-![BlocIPFO](images/BlocFO.png){.thumbnail}
+Once connected, click the `Dedicated`{.action} menu and then click the `IP`{.action} section on the left side of the page.
 
+![IPFO](images/virtual_mac_01.png){.thumbnail}
 
+Once you're in the IP section, locate your failover IP address (or block) in the list and then click the `...`{.action} button to bring up the list of options.
+
+![IPFO](images/virtual_mac_02.png){.thumbnail}
+
+When the 'Add a virtual MAC' box appears, select a type from the dropdown list, enter a virtual machine name, and then click `Confirm`{.action}.
 
 > [!primary]
 >
-> A down arrow symbol is present for an IP block, click on it to display each IP address of the block. This will be necessary to assign a virtual MAC address for each IP of the block.
-> 
+> **Type:** Refers to the virtual MAC address type ('VmWare' will be a MAC address made for the VmWare ESXi system, while 'OVH' will be for any other type of virtualisation system).
+>
+> **Name of virtual machine:** Refers to the desired name for the virtual MAC address, in order to make it easy to identify this IP/MAC pair in the future.
+>
 
-Next, click the gear on the right, then select `Add Virtual MAC`{.action}.
-
-
-![MAC](images/mac.png){.thumbnail}
-
-**Type** : Corresponds to the virtual MAC address type (VmWare will be a MAC address made for the VmWare ESXi system, and OVH will be for any other type of virtualization system). **Nom de la machine virtuelle** : Corresponds to the desired name for the virtual MAC address, in order to find this IP/MAC pair more easily.
-
+![IPFO](images/virtual_mac_03.png){.thumbnail}
 
 
 > [!primary]
@@ -52,19 +51,17 @@ Next, click the gear on the right, then select `Add Virtual MAC`{.action}.
 > Do not forget to assign the virtual MAC address created in your virtual machine configuration.
 > 
 
-
-## Delete a MAC address
-
+### Delete a MAC address
 
 > [!warning]
 >
 > When a MAC address is deleted, it will not be recoverable.
 > 
 
-To remove a Virtual MAC address associated with a Failover IP, you must first connect to your client area.
+To remove a virtual MAC address associated with a failover IP, you must first connect to your [control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Once connected, go to the `IP`{.action} section and select the correct server, so that the failover IP (or IP block) attached to it appears.
 
-Once connected, go to the section `IP`{.action}.
+Finally, click on the `...`{.action} button on the right, then click `Delete a Virtual MAC`{.action}.
 
-Then select the server concerned so that the Failover IP, or IP block, attached to it will appear.
+## Go further
 
-Finally, click on the gear on the right, then select `Delete a Virtual MAC`{.action}.
+Join our community of users on <https://community.ovh.com/en/>

@@ -15,8 +15,8 @@ OVH allows you to associate a virtual MAC address with an IP address, so that yo
 
 ## Requirements
 
-* a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}
-* a [failover IP address](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external} or a failover IP block (RIPE)
+* a [Dedicated Server](https://www.ovh.ie/dedicated_servers/){.external}
+* a [failover IP address](https://www.ovh.ie/dedicated_servers/ip_failover.xml){.external} or a failover IP block (RIPE)
 * access to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 
