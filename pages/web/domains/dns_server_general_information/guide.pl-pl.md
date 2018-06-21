@@ -1,140 +1,83 @@
 ---
-title: 'Hosting www: Informacje na temat serwerów DNS'
-excerpt: 'Hosting www: Informacje na temat serwerów DNS'
+title: 'Zmiana serwerów DNS domeny w OVH'
 slug: hosting_www_informacje_na_temat_serwerow_dns
-legacy_guide_number: g2015
+excerpt: 'Dowiedz się, jak zmodyfikować serwery DNS Twojej domeny w OVH'
+section: 'DNS i strefa DNS'
+order: 1
 ---
 
+**Ostatnia aktualizacja dnia 2018-06-21**
 
-## Definicja
-DNS (Domain Name System) pozwala między innymi na przetłumaczenie domeny na adres IP, aby zapytania mogły być dostarczane do serwera docelowego.
+## Wprowadzenie
 
-![](images/img_3413.jpg){.thumbnail}
+Konfiguracja DNS, zwana także strefą DNS domeny zapisana jest na serwerach DNS. Zawiera ona informacje techniczne w postaci rekordów. Rekordy te umożliwiają powiązanie domeny z serwerem lub serwerami hostującymi stronę WWW i konta e-mail.
 
+Można więc powiedzieć, że dzięki rekordom DNS przechowywanym na serwerach DNS możliwe jest łączenie się z domeną przez Internet.
 
-## Różnica między serwerami i strefą DNS
+**Dowiedz się, jak modyfikować serwery DNS domeny OVH.**
 
-## Serwery DNS
+## Wymagania początkowe
 
-- Serwery DNS to serwery zadeklarowane dla nazwy domeny. To serwery najpierw odpowiadają, zanim zostanie zinterpretowana strefa DNS, która jest do nich przypisana.
+- Posiadanie domeny zarejestrowanej w OVH
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do interfejsu zarządzania domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 
+> [!warning]
+>
+> Jeśli Twoja domena nie jest zarejestrowana w OVH, przeprowadź modyfikację serwerów DNS w interfejsie dostawcy zarządzającego Twoją domeną.
+>
 
-## Strefa DNS
+## W praktyce
 
-- Strefa DNS to plik zawierający różne wpisy wskazujące między innymi adresy serwerów obsługujących stronę (A) lub e-maile (MX). Adresy te mogą mieć formę adresu IP lub nazwy hosta.
+**Edycja serwerów DNS jest operacją wymagającą odpowiedniej wiedzy**: wprowadzenie omyłkowej zmiany mogłoby uniemożliwić dostęp do Twojej strony WWW lub odbiór nowych wiadomości e-mail. Świadomość możliwych konsekwencji modyfikacji pozwoli Ci lepiej zrozumieć wprowadzane zmiany.
 
+Kiedy modyfikujesz serwery DNS Twojej domeny, zmieniasz również konfigurację DNS. Nowa konfiguracja zastępuje zatem poprzednią i jest przechowywana na nowych serwerach DNS. Z technicznego punktu widzenia domena używa nowej strefy DNS.
 
+Pamiętaj, że:
 
+- zawartość poprzedniej konfiguracji nie jest automatycznie kopiowana do nowej konfiguracji. Upewnij się zatem, czy nowa konfiguracja zawiera wszystkie elementy potrzebne do prawidłowego funkcjonowania usług powiązanych z Twoją domeną (jak np. strona WWW i konta e-mail).
 
-## Dlaczego trzeba edytować serwery lub strefę DNS?
+- jeśli chcesz zmodyfikować tylko jeden element aktualnej konfiguracji DNS (tj. jeden rekord DNS), zalecamy edycję strefy DNS zgodnie z instrukcjami zawartymi w tej dokumentacji:  [Edycja strefy DNS OVH](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}.
 
-## Serwery DNS
-Może wystąpić sytuacja, w której trzeba będzie zmienić serwery DNS domeny (na przykład po zmianie operatora). Niektórzy dostawcy nie pozwalają na korzystanie ze swoich serwerów po przeniesieniu domeny do konkurencyjnego operatora. 
-Być może posiadasz serwer dedykowany, który jest serwerem DNS i chcesz z niego korzystać.
+> [!warning]
+>
+> Przed rozpoczęciem jakichkolwiek zmian, upewnij się, że operacja nie uniemożliwi dostępu do Twojej domeny. Jeśli nie jesteś tego pewien, skonsultuj się z osobą, która poprosiła Cię o przeprowadzenie tej modyfikacji.
+>
 
-## Strefa DNS
-Gdy chcesz zmienić serwer obsługujący stronę www lub e-maile, na przykład po zmianie dostawcy usług, musisz zmodyfikować strefę DNS domeny. 
-Po zaktualizowaniu strefy domena będzie wskazywać na nowe serwery.
+### Etap 1: dostęp do interfejsu zarządzania serwerami DNS domeny
 
-Przewodnik na temat strefy DNS jest dostępny tutaj:
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią domenę. Teraz przejdź do zakładki `Serwery DNS`{.action}.
 
-- []({legacy}2015).
+Pojawi się tabela wyszczególniająca serwery DNS aktualnie skonfigurowane w OVH dla Twojej domeny. Może pojawić się kilka serwerów DNS, przy czym jeden serwer odpowiada jednej linii w tabeli. 
 
+![zmiana serwerów dns ovh](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
+### Etap 2: edycja serwerów DNS domeny
 
+Aby rozpocząć edycję serwerów DNS, kliknij przycisk `Zmień serwery DNS`{.action}.
 
-## Logowanie do panelu klienta
+Zastąp zawartość pól informacjami o nowych serwerach, które chcesz skonfigurować. Aby dodać nowe serwery do aktualnej listy, kliknij `+`{.action} po prawej stronie w ostatniej linii tabeli. Pojawi się wówczas dodatkowe pole do uzupełnienia.
 
-- Zaloguj się do [panelu klienta](https://www.ovh.com/manager/web) za pomocą identyfikatora klienta i hasła.
+Po uzupełnieniu informacji, kliknij przycisk `Zastosuj konfigurację`{.action}. Statusy serwerów DNS w tabeli są aktualizowane zgodnie z nowymi ustawieniami. 
 
-- Kliknij na"Login".
+> [!primary]
+>
+> Za pomocą przycisku `Resetuj serwery DNS`{.action} możesz przywrócić serwery skonfigurowane pierwotnie przez OVH.  Użyj tej opcji tylko wtedy, gdy chcesz ponownie korzystać z serwerów DNS OVH. 
+>
 
+![zmiana serwerów dns ovh](images/edit-dns-server-ovh-step2.png){.thumbnail}
 
+### Etap 3: oczekiwanie na efekty wprowadzonej zmiany
 
-![](images/img_3411.jpg){.thumbnail}
+Po zakończeniu operacji należy odczekać określony czas, zanim zmiany staną się widoczne.  Na czas oczekiwania składają się dwa czynniki:
 
+- zmiana wprowadzona w OVH musi zostać uwzględniona przez organizację zarządzającą rozszerzeniem Twojej domeny. Możesz śledzić postęp procesu w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} (sekcja `Domeny`{.action} na pasku usług po lewej stronie > `Operacje w toku`{.action});
 
-## Wybór domeny
+- po uwzględnieniu zmiany przez organizację zarządzającą rozszerzeniem domeny konieczny jest następnie czas propagacji wynoszący maksymalnie 48 godzin, aby modyfikacje stały się w pełni widoczne.
 
-- W menu z lewej strony wybierz "Domeny" i "domenę", dla której chcesz dokonać zmiany.
+## Sprawdź również
 
+[Modyfikacja strefy DNS OVH](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}
 
-
-![](images/img_3405.jpg){.thumbnail}
-
-
-## Dodawanie nowych serwerów DNS
-
-- Przejdź do sekcji "Zarządzanie DNS" i wybierz "Dodaj serwer DNS".
-
-
-
-![](images/img_3406.jpg){.thumbnail}
-
-- Wskaż pierwszy serwer DNS i zatwierdź operację. Następnie wykonaj to samo z drugim serwerem DNS.
-
-
-
-![](images/img_3407.jpg){.thumbnail}
-
-
-## Usuwanie starych serwerów DNS
-
-- Kliknij na ikonkę "kosza" na poziomie 2 starych serwerów DNS i zatwierdź.
-
-
-
-![](images/img_3408.jpg){.thumbnail}
-
-- Trwa usuwanie.
-
-
-
-![](images/img_3409.jpg){.thumbnail}
-
-- Operacja trwa kilka minut.
-
-
-
-![](images/img_3410.jpg){.thumbnail}
-
-
-## Resetowanie domyślnych serwerów DNS
-W przypadku wprowadzenia nieprawidłowej konfiguracji, można przywrócić domyślne serwery DNS.
-
-
-- Przejdź do sekcji "Zarządzanie DNS" i wybierz "Zresetuj domyślne serwery DNS".
-
-
-
-![](images/img_3416.jpg){.thumbnail}
-
-- Kliknij na "Zatwierdź", aby potwierdzić operację.
-
-
-
-![](images/img_3417.jpg){.thumbnail}
-
-
-## Jak sprawdzić serwery DNS przyznane przez OVH
-Aby sprawdzić, jakie serwery DNS zostały przyznane przez OVH, kliknij na "Strefa DNS". Są to 2 "wpisy NS" widoczne w strefie.
-
-![](images/img_3418.jpg){.thumbnail}
-
-
-## Zaawansowane zarządzanie serwerami DNS za pomocą Glue Registry
-Aby utworzyć własne Glue Registry, zapoznaj się z tym przewodnikiem:
-[]({legacy}1568)
-
-
-## Czas propagacji zmian
-Serwery DNS
-
-- Zmiana serwerów DNS może trwać do 48 godzin.
-
-Strefa DNS
-- Zmiana wpisów w strefie DNS może trwać do 24 godzin.
-
-
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
