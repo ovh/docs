@@ -1,5 +1,5 @@
 ---
 title: Cloud Web
-slug: cloudweb
+slug: cloud-web
 ---
 
