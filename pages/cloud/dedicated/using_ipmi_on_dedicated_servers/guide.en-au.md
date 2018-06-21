@@ -5,7 +5,7 @@ excerpt: With the IPMI, you can log in to your server without having to use any 
 section: Getting started
 ---
 
-**Last updated 23/01/2018**
+**Last updated 21/06/2018**
 
 ## Objective
 
@@ -15,7 +15,7 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 
 ## Requirements
 
-- You must be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Go to the `Dedicated`{.action} section, then select `Dedicated Servers`{.action}.
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
