@@ -13,6 +13,13 @@ sections: Per iniziare
 > - [Ospitare più siti su uno stesso hosting (in inglese)](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/)
 > - [Installare i moduli in 1 click OVH](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/)
 >
+> ### Email automatiche
+>
+> - [Monitorare e gestire le email automatiche in un piano di hosting (in inglese)](https://docs.ovh.com/gb/en/hosting/web_hosting_monitoring_automatic_emails/)
+>
+
+> [!product-section(right)]
+>
 > ### Password
 >
 > - [Modificare la password di un account FTP (in inglese)](https://docs.ovh.com/gb/en/hosting/modify-ftp-user-password/)
@@ -23,8 +30,4 @@ sections: Per iniziare
 > - [Creare un database nel piano di hosting (in inglese)](https://docs.ovh.com/gb/en/hosting/creating-database/)
 > - [Recuperare il backup di un database di un piano di hosting (in inglese)](https://docs.ovh.com/gb/en/hosting/web_hosting_database_export_guide/)
 > - [Importare il backup in un database di un piano di hosting (in inglese)](https://docs.ovh.com/gb/en/hosting/web_hosting_guide_to_importing_a_mysql_database/)
->
-> ### Email automatiche
->
-> - [Monitorare e gestire le email automatiche in un piano di hosting (in inglese)](https://docs.ovh.com/gb/en/hosting/web_hosting_monitoring_automatic_emails/)
 >

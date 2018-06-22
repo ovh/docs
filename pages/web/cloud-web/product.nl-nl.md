@@ -13,6 +13,13 @@ sections: Eerste stappen
 > - [Het hosten van meerdere websites op uw webhostingplan](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/)
 > - [Installatie van een site met 1-klik modules](https://docs.ovh.com/nl/hosting/1-klik-modules/)
 >
+> ### Geautomatiseerde e-mails
+>
+> - [Monitoring en beheer van geautomatiseerde e-mails in uw webhosting](https://docs.ovh.com/nl/hosting/web_hosting_monitoren_van_automatische_e-mails/)
+>
+
+> [!product-section(right)]
+>
 > ### Wachtwoord
 >
 > - [Wijziging van het wachtwoord van een FTP-gebruiker](https://docs.ovh.com/nl/hosting/wijzigen-wachtwoord-ftp-gebruiker/)
@@ -23,8 +30,4 @@ sections: Eerste stappen
 > - [Creatie van een database in uw webhostingplan](https://docs.ovh.com/nl/hosting/database-creatie/)
 > - [De backup van een webhosting-database ophalen (in het Engels)](https://docs.ovh.com/gb/en/hosting/web_hosting_database_export_guide/)
 > - [Een backup importeren in de database van een webhostingplan](https://docs.ovh.com/nl/hosting/gedeelde-handleiding-importeren-mysql-databank/)
->
-> ### Geautomatiseerde e-mails
->
-> - [Monitoring en beheer van geautomatiseerde e-mails in uw webhosting](https://docs.ovh.com/nl/hosting/web_hosting_monitoren_van_automatische_e-mails/)
 >

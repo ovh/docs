@@ -13,6 +13,13 @@ sections: Getting started
 > - [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/)
 > - [Setting up your website with 1-click modules](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/)
 >
+> ### Automated emails
+>
+> - [Monitoring and managing automated emails in your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_monitoring_automatic_emails/)
+>
+
+> [!product-section(right)]
+>
 > ### Password
 >
 > - [Modifying a FTP user password](https://docs.ovh.com/gb/en/hosting/modify-ftp-user-password/)
@@ -23,8 +30,4 @@ sections: Getting started
 > - [Creating a database in your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/creating-database/)
 > - [Retrieving the backup of a Web Hosting plan’s database](https://docs.ovh.com/gb/en/hosting/web_hosting_database_export_guide/)
 > - [Importing a backup into a Web Hosting plan database](https://docs.ovh.com/gb/en/hosting/web_hosting_guide_to_importing_a_mysql_database/)
->
-> ### Automated emails
->
-> - [Monitoring and managing automated emails in your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_monitoring_automatic_emails/)
 >
