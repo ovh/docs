@@ -5,6 +5,7 @@ slug: rescue_mode
 legacy_guide_number: g920
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## 
 In OVH esistono 2 tipi di modalità Rescue: Rescue Pro e WinRescue. La modalità Rescue Pro, pensata per i server Linux, ti permette di accedere in SSH alla tua macchina e verificare lo stato dell’hardware.
