@@ -6,6 +6,7 @@ legacy_guide_number: g920
 section: Diagnóstico y modo de rescate
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## 
 En OVH hay dos modos de rescate: el modo «rescue-pro» y el modo «WinRescue». Están disponibles en el área de cliente dedicado.

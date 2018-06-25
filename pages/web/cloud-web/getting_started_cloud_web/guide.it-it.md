@@ -1,11 +1,11 @@
 ---
-title: 'Iniziare a utilizzare un hosting Cloud Web'
+title: Iniziare a utilizzare un hosting Cloud Web
 slug: primi-passi-con-un-hosting-cloud-web
-excerpt: 'Come eseguire le prime operazioni su un Cloud Web'
-section: 'Per iniziare'
+excerpt: Come eseguire le prime operazioni su un Cloud Web
+section: Per iniziare
 ---
 
-**Ultimo aggiornamento: 21/06/2018**
+**Ultimo aggiornamento: 25/06/2018**
 
 ## Obiettivo
 

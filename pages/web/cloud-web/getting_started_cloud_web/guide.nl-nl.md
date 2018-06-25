@@ -1,11 +1,11 @@
 ---
-title: 'Aan de slag met een Cloud Web hostingplan'
+title: Aan de slag met een Cloud Web hostingplan
 slug: eerste-stappen-met-cloud-web
-excerpt: 'Ontdek hoe u kunt starten met een Cloud Web webhostingplan'
-section: 'Eerste stappen'
+excerpt: Ontdek hoe u kunt starten met een Cloud Web webhostingplan
+section: Eerste stappen
 ---
 
-**Laatste update 21-06-2018**
+**Laatste update 25-06-2018**
 
 ## Introductie
 

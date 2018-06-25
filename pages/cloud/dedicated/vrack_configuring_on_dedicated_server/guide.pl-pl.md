@@ -13,6 +13,8 @@ Technologia vRack (szafa wirtualna) umożliwia zgrupowanie dowolnej liczby serwe
 
 **Dowiedz się, jak połączyć dwa lub więcej serwerów dedykowanych siecią vRack.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ## Wymagania początkowe
 
 - Posiadanie usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
