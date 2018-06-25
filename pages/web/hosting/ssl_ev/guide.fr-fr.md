@@ -5,13 +5,15 @@ excerpt: 'Le certificat SSL EV garantit à vos utilisateurs l’existence juridi
 section: SSL
 ---
 
-## Informations generales
+## Informations générales
+
 Les certificats SSL EV commercialisés par OVH sont édités par l'autorité de certification Comodo. Elle est en charge de la vérification de l'existence juridique de votre entreprise.
 
 Retrouvez toutes les informations commerciales sur notre site : [https://www.ovh.com/fr/ssl/](https://www.ovh.com/fr/ssl/){.external}.
 
 
 ### Pourquoi un certificat SSL EV ?
+
 Les certificats SSL EV peuvent garantir que le site web visité est bien administré par la société éditrice et que celle-ci existe juridiquement. Lorsque vous consultez un site Internet sécurisé par un certificat SSL EV, ce dernier fait apparaître le nom de l'entreprise correspondante à proximité du fameux cadenas vert.
 
 Certificat SSL non EV
@@ -48,6 +50,7 @@ Attention : cette tâche peut nécessiter quelques minutes.
 Vous n'avez qu'à suivre ensuite les différentes étapes.
 
 ### Si votre site n'existe pas encore
+
 Nous vous proposerons directement lors de la commande d’un nouveau nom de domaine avec votre futur hébergement si vous souhaitez souscrire à un certificat SSL EV.
 
 
@@ -59,7 +62,8 @@ Il vous suffit ensuite de spécifier les informations de votre société :
 ![hosting](images/activation4.png){.thumbnail}
 
 
-## Comment valider ma societe ?
+## Comment valider ma société ?
+
 Après avoir passé commande chez OVH, vous recevrez un e-mail de la part de Comodo
 
 ```
@@ -165,7 +169,8 @@ Si votre société n'est pas présente sur cet annuaire, alors un e-mail vous se
 Lorsque Comodo a validé que votre société existe et que vous avez le pouvoir de la représenter, OVH recevra automatiquement votre certificat SSL EV et le déploiera automatiquement sur votre site web.
 
 
-## Quelles sont les conditions deligibilite ?
+## Quelles sont les conditions d'éligibilité ?
+
 Comme définies ici sur le lien suivant, voici un récapitulatif des conditions d’éligibilité : [https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/](https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/){.external}
 
 Sont éligibles uniquement les sociétés.
@@ -180,7 +185,7 @@ Sont vérifiés :
 - Nom, titre et autorité du signataire du contrat : Si le nom du signataire du contrat figure sur les documents d'enregistrement ou sur la base de données de la chambre des commerces, une vérification supplémentaire n'est généralement pas nécessaire. Si une validation plus approfondie est nécessaire, un appel sera effectué par Comodo afin de vérifier la légitimité de la demande.
 
 
-### Avertissement legal
+### Avertissement légal
 
 
 > [!alert]
