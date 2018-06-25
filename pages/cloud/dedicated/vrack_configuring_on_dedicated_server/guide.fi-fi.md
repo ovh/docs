@@ -13,6 +13,7 @@ vRack-virtuaaliräkkiteknologialla voidaan koota yhteen useita palvelimia riippu
 
 **Opi konfiguroimaan kaksi tai useampi dedikoitu palvelin virtuaaliräkissä.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Edellytykset
 
