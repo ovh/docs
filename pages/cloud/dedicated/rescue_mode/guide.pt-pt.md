@@ -6,6 +6,7 @@ legacy_guide_number: g920
 section: Diversos
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## 
 Existem 2 modos de Rescue na OVH, o modo de Rescue Pro e o WinRescue (disponíveis no modo avançado no Manager na secção Netboot). O modo de Rescue Pro foi desenvolvido para os servidores Linux. Este modo permite ao administrador do servidor a manipulação do seu servidor via SSH, e permite igualmente que o administrador verifique o hardware do mesmo.
