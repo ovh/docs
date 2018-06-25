@@ -1,11 +1,11 @@
 ---
-title: 'Getting started with a Cloud Web hosting plan'
+title: Getting started with a Cloud Web hosting plan
 slug: getting-started-with-cloud-web
-excerpt: 'Find out how to get started with a Cloud Web hosting plan'
-section: 'Getting started'
+excerpt: Find out how to get started with a Cloud Web hosting plan
+section: Getting started
 ---
 
-**Last updated 21st June 2018**
+**Last updated 25th June 2018**
 
 ## Objective
 
