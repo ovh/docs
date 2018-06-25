@@ -13,6 +13,7 @@ Virtual Rack (vRack)-technologie maakt het mogelijk om meerdere servers, ongeach
 
 **Leer hoe u meerdere dedicated servers op vRack kunt configureren.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Vereisten
 

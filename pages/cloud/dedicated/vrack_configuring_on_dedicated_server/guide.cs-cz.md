@@ -13,6 +13,7 @@ Technologie vRack (virtuální rack) umožňuje seskupení serverů (nezávisle 
 
 **Zjistěte, jak nakonfigurovat několik dedikovaných serverů se službou vRack.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Prerekvizity
 
