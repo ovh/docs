@@ -1,13 +1,13 @@
 ---
 title: Accessing the Horizon interface
-slug: configure_user_access_to_horizon
+slug: configure-user-access-to-horizon
 legacy_guide_number: 1773
 excerpt: Find out how to access the Horizon interface
 section: In the Horizon interface
 order: 1
 ---
 
-**Last updated 25th June 2018**
+**Last updated 25/06/2018**
 
 ## Objective
 
@@ -20,6 +20,7 @@ Horizon is the graphical management interface for OpenStack. Certain features ca
 
 - a Public Cloud project activated
 - access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+
 
 ## Instructions
 

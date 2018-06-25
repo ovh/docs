@@ -12,8 +12,8 @@ Public Cloud allows you to easily and quickly create virtual servers (instances)
 
 ### Prerequisites
 
-- Log in to the OVH Customer [Control Panel](https://www.ovh.com/manager/cloud/){.external}
-- [Create and configure a SSH key](../guide.en-au.md){.ref} in your OVH Public Cloud control panel
+- Log in to the OVH Customer [Control Panel](https://ca.ovh.com/manager/cloud/){.external}
+- [Create and configure a SSH key](../guide.en-sg.md){.ref} in your OVH Public Cloud control panel
 
 
 ## Creating the instance

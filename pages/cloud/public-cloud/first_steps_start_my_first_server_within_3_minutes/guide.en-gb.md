@@ -1,14 +1,13 @@
 ---
 title: Start a first cloud server within 3 minutes
 slug: start-a-first-cloud-server-within-3-min
-description: Getting started with creating an instance from the OVH web interface
-keywords: instance, control panel, interface, wizard, cloud server
 excerpt: Walk-through document on creating your first cloud server.
 section: Getting started
 ---
 
 
 ## Preamble
+
 Public Cloud allows you to easily and quickly create virtual servers (instances) at any time in just a few clicks. This guide will walk you through the creation of an instance.
 
 
