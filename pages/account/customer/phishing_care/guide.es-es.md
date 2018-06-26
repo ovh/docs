@@ -1,78 +1,77 @@
 ---
-title: Protejase contra el phishing&#58; como detectar los mensajes de correo fraudulento
+title: 'Protéjase contra el fraude: cómo detectar los mensajes de correo fraudulento y el phishing'
 slug: proteccion-ataque-phishing
-excerpt: Cuidado con el phishing! Aprenda a detectar los mensajes falsos en nombre de OVH que los ciberdelincuentes envian con fines fraudulentos.
+excerpt: 'Cómo reconocer un email de phishing y qué hacer si ha hecho clic en un enlace fraudulento'
 section: Seguridad
 ---
 
+**Última actualización: 26/06/2018**
+
+## Objetivo
+
+El **phishing** consiste en enviar mensajes de correo electrónico pidiendo a los destinatarios que sigan un enlace que les redirige a un formulario. Dicho formulario replica la identidad visual de una marca de forma fraudulenta e invita a los visitantes a introducir sus claves de acceso o datos personales.
+
+**Esta guía explica cómo reconocer un email de phishing y qué hacer si ha hecho clic en un enlace fraudulento.**
 
 
-> [!warning]
->
-> Agosto de 2017: Empiezan a circular correos electrónicos con facturas falsas de OVH (en general, por un importe de 5 €), que incluyen un enlace fraudulento con el que los ciberdelincuentes intentan obtener el número de tarjeta bancaria de los usuarios.
+## Requisitos
+
+- No hay requisitos específicos.
+
+
+## Procedimiento
+
+### He recibido un email de phishing en nombre de OVH
+
+#### Identificar un mensaje de phishing
+
+¿Ha recibido un email en nombre de OVH y quiere asegurarse de que es legítimo? A continuación le ofrecemos algunas claves que le ayudarán a distinguir visualmente un mensaje de correo de OVH de un intento de phishing.
+
+![Diferencia entre un email de OVH y un email de phishing](images/phishing_email.png){.thumbnail}
+
+> [!alert]
+> 
+> Compruebe siempre que se cumplan las tres condiciones siguientes.
 > 
 
-
-## Medidas sencillas para protegerse
-
-### Active la doble autenticacion en el acceso a su area de cliente OVH
-Conéctese al [área de cliente](https://www.ovh.com/manager/){.external} y acceda a `Mi cuenta`{.action}. Abra la pestaña `Seguridad`{.action} y haga clic en `Activar la doble autenticación`{.action}.
-
-La doble autenticación, también llamada autenticación de doble factor o fuerte, dificulta considerablemente el acceso fraudulento a su área de cliente, incluso si le han robado su ID de cliente y contraseña.
+|Elemento|Email de OVH|Email de phishing|
+|---|---|---|
+|Remitente|Compruebe que la dirección utilizada para enviar el mensaje de correo termina en **@ovh.com**, **@ovh.es**, **@soyoustart.com** o **@kimsufi.com**.|El remitente del correo será una dirección que no proviene de OVH.|
+|Asunto|Si su ID de cliente (que empieza con dos letras que corresponden a las iniciales del primer apellido y del nombre, según figura en su cuenta de OVH) o la dirección de correo electrónico asociada a su cuenta aparecen en el asunto del mensaje, verifique que son correctos.|Por lo general, el mensaje estará marcado como **spam**, indicándolo entre corchetes en el asunto, y no aparecerá su ID de cliente (o este será incorrecto).|
+|Enlace|Si sitúa el ratón sobre el enlace, podrá ver el destino en la parte inferior de su navegador sin tener que hacer clic en él. En la imagen, el enlace dirige efectivamente a <https://www.ovh.com/>.|En el email de phishing, al pasar el ratón sobre el enlace se observa que este no tiene ninguna relación con OVH. **No haga clic en él**.|
 
 
-### Compruebe la direccion del remitente
-Si la dirección no termina en «**@ovh.com**» o «**@ovh.es**», se trata sin duda alguna de un correo fraudulento.
+#### Informar de un email de phishing
 
-Sin embargo, es fácil modificar la dirección de correo del emisor, por lo que esta información por sí sola no es suficiente para confiar en la procedencia legítima de un mensaje de correo.
-
-
-### Compruebe que el mensaje es autentico directamente en el area de cliente OVH
-Conéctese a al [área de cliente](https://www.ovh.com/manager/){.external}. Además de acceder al historial de mensajes de correo enviados por OVH, también podrá comprobar si debe realizar cualquier acción urgente (por ejemplo, el pago de una factura), ya que en ese caso se mostrará un mensaje específico.
+Si, después de las comprobaciones anteriores, está seguro de haber recibido un mensaje de phishing usurpando la identidad de OVH, puede enviarnos tanta información como sea posible (al menos el contenido del email) a la siguiente dirección: **<fraud@ovh.com>**.
 
 
-### No abra los archivos adjuntos
-Los mensajes de correo de OVH nunca incluyen archivos adjuntos o programas, ya que pueden contener virus o programas espía.
+### ¿Qué hago si he introducido mis datos personales?
+
+#### Si ha introducido su número de tarjeta bancaria en una web fraudulenta
+
+Contacte inmediatamente con su banco para bloquear la tarjeta e indique la fecha y, si es posible, la hora en la que introdujo su número de tarjeta. **Su banco es el único que puede anular cualquier transacción fraudulenta que se haya realizado sin su conocimiento.**
 
 
-### Desconfie de las formulas genericas
-Los mensajes que OVH envía a sus usuarios suelen empezar con la fórmula «**Estimado/a cliente**», seguida de dos puntos. Preste especial atención a aquellos emails que utilicen un saludo genérico diferente.
+#### Si ha introducido su contraseña de OVH en una web fraudulenta
+
+Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&){.external} y cambie la contraseña inmediatamente. Asimismo, le aconsejamos encarecidamente que active la doble autenticación para proteger su cuenta de forma permanente.
+
+> [!primary]
+>
+> Para proteger sus datos, la contraseña debe seguir una serie de recomendaciones:
+>
+> - tener un mínimo de doce caracteres;
+> - incluir al menos tres tipos de caracteres diferentes;
+> - no elegir una palabra que esté en el diccionario;
+> - no incluir datos personales (nombre, apellidos o fecha de nacimiento); 
+> - no utilizar la misma contraseña para varias cuentas de usuario;
+> - guardar la contraseña en un gestor de contraseñas;
+> - cambiar la contraseña cada tres meses;
+> - utilizar una contraseña diferente a las utilizadas anteriormente.
+>
 
 
-### Mantenga la calma
-Los mensajes fraudulentos suelen tener un carácter urgente: su objetivo es hacer que los usuarios actúen de forma precipitada, olvidando normas básicas de seguridad.
+## Más información
 
-
-### Compruebe los enlaces
-Aunque parezcan legítimos, pueden ser enlaces falsos. Coloque el cursor sobre el enlace o el botón para ver la dirección URL a la que redirige. Si le parece sospechoso, no haga clic.
-
-Estos son los sitios oficiales de OVH:
-
-- ovh.com
-- ovh.co.uk, ovh.com.au, ovh.cz, ovh.de, ovh.es, ovh-hosting.fi, ovh.ie, ovh.it, ovh.lt, ovh.nl, ovh.pl, ovh.pt, ovh.sn, ovh.us
-- soyoustart.com
-- kimsufi.com
-- runabove.com
-- hubic.com
-- ovhtelecom.fr
-
-
-### Denuncie la pagina de phishing
-Ayúdenos a eliminar de la web aquellos sitios que emplean prácticas de phishing.
-
-Si cree que ha encontrado una página diseñada para suplantar a otra que sí es legítima con el fin de obtener información confidencial de los usuarios, puede indicarlo en las siguientes direcciones:
-
-- [https://safebrowsing.google.com/safebrowsing/report_phish/](https://safebrowsing.google.com/safebrowsing/report_phish/){.external}
-- [http://toolbar.netcraft.com/report_url](http://toolbar.netcraft.com/report_url){.external}
-
-
-## Si ya ha sido victima de un ataque de phishing
-
-### Si ha introducido su numero de tarjeta bancaria en un sitio fraudulento
-Contacte inmediatamente con su banco para bloquear la tarjeta e indique la fecha y, si es posible, la hora a la que introdujo su número de tarjeta. Su banco es el único que puede anular cualquier transacción fraudulenta que se haya realizado sin su conocimiento.
-
-
-### Si ha introducido su contrasena de OVH en un sitio fraudulento
-Conéctese a su área de cliente OVH y cambie la contraseña inmediatamente.
-
-Asimismo, le aconsejamos que active la doble autenticación para proteger su cuenta de forma permanente. Para ello, consulte la sección «**Active la doble autenticación en el acceso a su área de cliente OVH**» de esta misma guía.
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
