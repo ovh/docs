@@ -1,235 +1,173 @@
 ---
-title: 'Webhotellit: ohje MySQL-tietokannan tuonnista'
-excerpt: Ohjeessa neuvotaan MySQL-tietokannan tuonti.
-id: '1393'
-slug: webhotellit_ohje_mysql-tietokannan_tuonnista
-legacy_guide_number: g1393
+title: 'Varmuuskopion tuominen webhotellin tietokantaan'
+slug: ohje-mysql-tietokannan-tuominen
+excerpt: 'Katso, kuinka varmuuskopio tuodaan webhotellisi tietokantaan'
+section: Tietokannat
+order: 4
 ---
 
+**Päivitetty 26.6.2018**
 
-## Ennakkovaatimukset
-Tarvitset:
+## Tavoite
 
+Nykyään lähes kaikki sisällönhallintajärjestelmät (WordPress, Joomla! jne.) käyttävät tietokantoja, joilla voidaan tallentaa dynaamisia elementtejä kuten kommentteja tai artikkeleita. Eri syistä johtuen saatat joutua tuomaan tietoja johonkin tietokantaasi muokataksesi tai korvataksesi sen sisältöä.
 
-- Tietokantasi varmuuskopiotiedosto, nimeltään dump*, joka saatiin varmuuskopioitaessa kantaa (Ohje SQL-tietokantojen varmuuskopioinnista []({legacy}1394)).
-
-Useimmiten tietokannan varmuuskopio on .sql-tyyppinen.
-Jos tietokanta on luotu toisella palveluntarjoajalla kuin OVH:lla, suosittelemme, että otat heihin yhteyttä kuullaksesi, miten heidän palveluissaan voi tietokannat hakea. 
-
-
-- Lisäksi tarvitset käyttäjätunnuksen, salasanan sekä SQL-hostin tietokannasta, joiden avulla tietokantaan voi yhdistää.
-Ohje SQL-käyttäjätunnuksista[]({legacy}1374)
-
-
-![](images/img_1802.jpg){.thumbnail}
-
-
-## Hallintapaneelista
-Kaikkein helpoin ja nopein tapa tuoda tietokanta on tehdä se [hallintapaneelissa](https://www.ovh.com/manager/). Menetelmän etuna on, että varmuuskopion voi tuoda ilman kokorajoituksia.
-
-Kun olet kirjautunut [hallintapaneeliin](https://www.ovh.com/manager/)asiakastunnuksiasi käyttäen, valitse verkkotunnuksesi vasemmasta kohdasta. Avaa sitten kuvake Tietokannat.
-
-![](images/img_4125.jpg){.thumbnail}
-Valitse tietokanta, johon haluat tuoda varmuuskopion, klikkaa sen oikealla puolella olevaa hammasratasta ja valitse "Tuo tiedosto".
-
-Seuraa sitten hallintapaneeliin vaiheita SQL-varmuuskopion tuomiseksi.
-
-![](images/img_4126.jpg){.thumbnail}
-
-
-## MySQL:lle tarkoitetun PhpMyAdminin kautta
-Yhdistä tietokantaan PhpMyAdminin kautta.
-
-Yhdistääksesi käytä seuraavaa linkkiä:
-[PhpMyAdmin OVH](https://phpmyadmin.ovh.net).
-
-Ohje PhpMyAdminin käyttöön: []({legacy}1374)
-
-
-- Kun olet yhdistänyt PhpMyAdminiin, valitse tietokanta klikkaamalla sen nimeä (kehystetty sinisellä oheisessa kuvakaappauksessa).
-
-- Seuraavaksi klikkaa "Tuo".
-
-- Valitse varmuuskopiotiedosto klikkaamalla "Etsi" (huom. tiedostokoko ei saa olla yli 16 Mt).
-
-- Klikkaa "Suorita" aloittaaksesi tietokannan tuonnin.
-
-Jos haet tietokannan varmuuskopion hallintapaneelin kautta, muista purkaa tiedosto ennen sen tuontia.
-
-
-![](images/img_1962.jpg){.thumbnail}
-
-## Muistutus:
-
-- Tiedoston enimmäiskoko ei saa olla yli 16 Mt.
-
-
-
-
-## Webhotellissa olevan skriptin kautta
-Skriptejä voi kirjoittaa tekstitiedostossa. Anna tiedostopääte käytetyn kielen mukaan.
-
-Korvaa alla olevissa skripteissä:
-
-
-- tietokannan_nimi.sql oman tiedoston nimellä.
-
-- sql_palvelin sen palvelimen nimellä, jolla tietokanta on luotu.
-
-- tietokannan_nimi oman tietokannan nimellä.
-
-- salasana tietokantaan liittyvällä salasanalla.
-
-Varmuuskopiotiedosto on siirrettävä etukäteen FTP-yhteydellä webhotelliin.
-
-
-## PHP:llä (importbase.php):
-Käytettävä ja täydennettävä koodi: 
-
-
-```
-<?php
-echo "Tietokantaa palautetaan.......
-<br>";
-system("cat tietokannan_nimi.sql | mysql --host=sql_palvelin --user=tietokannan_nimi --password=salasana tietokannan_nimi");
-echo "Valmis. Tietokanta on paikallaan webhotellissa.";
-?>
-```
-
-
-
-## Perlillä (importbase.php):
-Käytettävä ja täydennettävä koodi: 
-
-
-```
-#!/usr/bin/perl
-
-print "Tietokantaa palautetaan.......
-<br>";
-system("cat tietokannan_nimi.sql | mysql --host=sql_palvelin --user=tietokannan_nimi --password=salasana tietokannan_nimi");
-print "Valmis. Tietokanta on paikallaan webhotellissa.";
-```
-
-
-
-- Siirrä FTP-yhteydellä sekä luotu skripti että tietokannan dump* webhotellin www-kansioon ja kutsu skriptiä selaimessa seuraavalla URL-osoitteella:
-
-http://oma_verkkotunnus.com/importbase.php 
-
-Korvaa oma_verkkotunnus.com omalla verkkotunnuksella ja importbase.php oman tiedoston nimellä.
-
-Onko varmuuskopiotiedosto pakattu?
-
-Mikäli dump* on pakattu, eli se on muotoa .sql.gz, riittää, että lisäät skriptin alkuun seuraavan komennon:
-
-
-```
-system("gunzip tietokannan_nimi.sql.gz");
-```
-
-
-Esimerkki:
-
-## PHP:llä: pakattu dump ja tietokannan haku
-Esimerkki koko skriptistä: 
-
-
-```
-<?php
-echo "Tiedoston purku.....
-<br>";
-system("gunzip testbackup.sql.gz");
-echo "Tietokantaa palautetaan......
-<br>";
-system("cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport");
-echo "Valmis. Tietokanta on paikallaan webhotellissa.";
-?>
-```
-
-
-
-## Perlillä: pakattu dump ja tietokannan haku
-Esimerkki koko skriptistä: 
-
-
-```
-#!/usr/bin/perl
-
-print "Tiedoston purku.....
-<br>";
-system("gunzip testbackup.sql.gz");
-print "Tietokantaa palautetaan.......
-<br>";
-system("cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport");
-print "Valmis. Tietokanta on paikallaan webhotellissa.";
-```
-
-
-
-
-## SSH-komennolla
+**Katso, kuinka varmuuskopio tuodaan webhotellisi tietokantaan.**
 
 ## Edellytykset
 
-- Tarvitset FTP-käyttäjätunnuksen ja siihen liittyvän salasanan yhdistääksesi webhotelliin.
-Ohje FTP-käyttäjätunnuksista[]({legacy}1374)
+- Sinulla on [webhotellituote](https://www.ovh-hosting.fi/webhotelli){.external}.
+- Sinulla on [OVH:n webhotellituotteen](https://www.ovh-hosting.fi/webhotelli){.external} yhteydessä luotu tietokanta.
+- Sinulla on varmuuskopio, jonka haluat tuoda tietokantaasi tai pystyt hankkimaan sen.
+- Tuontitavasta riippuen sinulla on pääsyoikeudet webhotellituotteesi hallintaan [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external} tai tiedot, joiden avulla voit kirjautua tietokantaan.
 
-- Tarvitset webhotellin, johon sisältyy SSH-yhteys 
+## Käytännössä
 
-([katso webhotelleihin sisältyvät palvelut](http://www.ovh-hosting.fi/webhotelli/))
+Ennen aloitusta sinun on määritettävä tapa, jolla kyseinen varmuuskopio tuodaan tietokantaan. Siihen on olemassa useita vaihtoehtoja teknisen osaamisesi tasosta riippuen.
 
-Alla ohje SSH-yhteydestä:
+- **Tietokannan palauttaminen muutamalla klikkauksella aiempaan päivämäärään**: tämä vaihtoehto palauttaa tietokannan sisällön OVH:n varmuuskopiointityökalussa olevien varmuuskopioiden ansiosta. Tämä vaihtoehto ei edellytä erityistä teknistä osaamista ja sen voi tehdä [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+- **Oman varmuuskopiotiedostosi tuonti muutamalla klikkauksella**: tämä vaihtoehto tuo oman etukäteen hallussasi olleen varmuuskopiotiedoston tiedot yhteen tietokannoistasi. Tämä vaihtoehto toteutetaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-- [SSH-yhteys](http://ohjeet.ovh-hosting.fi/SshTelnet)
+- **Tuonti phpMyAdmin-käyttöliittymän kautta**: tämä vaihtoehto edellyttää kirjautumista phpMyAdmin-käyttöliittymään toimenpiteen tekemistä varten. Käyttöliittymän käytön osaaminen on siis tarpeellista, jotta tätä vaihtoehtoa voidaan käyttää ja tiedoston koolle on asetettu raja.
 
+- **Tuonnin toteuttaminen skriptiä käyttämällä**: tämä vaihtoehto edellyttää OVH:n webhotellissa ylläpidetyn skriptin luomista tuonnin suorittamiseksi. Erityisosaamista skripteistä tarvitaan.
 
+- **Tuonnin toteuttaminen SSH-komennolla**: tämä vaihtoehto edellyttää kirjautumista datasäilöösi SSH-protokollalla sekä komentojen käyttämistä sen kanssa kommunikointiin. Tämän tyyppisen tavan käyttö edellyttää edistynyttä osaamista sekä tietyn [webhotellituotteen](https://www.ovh-hosting.fi/webhotelli){.external}.
 
-## Tietokannan tuonti SSH-yhteydellä
-Yhdistä SSH-yhteydellä webhotelliisi.
+Jotkut yllä mainitut menettelyt eivät tule OVH:n käyttöliittymästä. Sinun on siis tehtävä nämä toimenpiteet oman osaamisesi mukaan. Joitakin tietoja on esitetty alla, mutta ne eivät korvaa webmasterin apua.
 
-Mene hakemistoon, jonne sijoitit tuotavan tiedoston ja syötä sitten seuraava komento:
+Jatka tämän dokumentaation lukemista halutun tuontitavan mukaan.
 
-Käytettävä ja täydennettävä koodi: 
+> [!warning]
+>
+> OVH tarjoaa käyttöösi palveluja, joiden konfigurointi, hallinta ja vastuu kuuluvat sinulle. Tehtävänäsi on siis varmistaa palvelun kunnollinen toiminta.
+>
+> Tämän ohjeen tarkoituksena on auttaa sinua yleisimmissä tehtävissä. Suosittelemme ottamaan kuitenkin yhteyttä erikoistuneeseen palveluntarjoajaan ja/tai palvelun kehittäjään, mikäli kohtaat hankaluuksia. Me emme voi tarjota avustusta asiassa. Lisätietoa tämän ohjeen kohdasta “Lisää aiheesta”.
+>
 
+### Palauta varmuuskopio hallintapaneelissa
 
+Toimenpiteen tekemiseksi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
+
+Näkyviin tulevassa taulukossa on kaikki webhotellituotteen yhteydessä luodut tietokannat. Klikkaa nyt kolmea pistettä aiempaan päivään palautettavan tietokannan kohdalla, klikkaa sitten `Palauta varmuuskopio`{.action}. Huomaa, että tämä toiminto korvaa tietokannan nykyisen sisällön varmuuskopiolla.
+
+![databaseimport](images/database-import-step5.png){.thumbnail}
+
+Kaikki valitun tietokannan saatavilla olevat varmuuskopiot ovat nyt näkyvissä. Voit nähdä tässä varmuuskopioiden tarkan päivämäärän sekä päivän, jolloin nämä poistetaan OVH:n työkalusta.
+
+Klikkaa kolmea pistettä palautettavan varmuuskopion kohdalla ja kikkaa sitten `Palauta varmuuskopio`{.action}. Varmista, että tiedot ovat oikein näkyviin tulevassa ikkunassa ja klikkaa sitten `Vahvista`{.action}. Odota hetki palautuksen tapahtumista.
+
+![databaseimport](images/database-import-step6.png){.thumbnail}
+
+### Palauta oma varmuuskopiosi hallintapaneelissa
+
+Toimenpiteen tekemiseksi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
+
+Näkyviin tulevassa taulukossa on kaikki webhotellituotteen yhteydessä luodut tietokannat. Klikkaa nyt kolmea pistettä tietokannan kohdalla (sen, johon haluat tuoda tietoja), klikkaa sitten `Tuo tiedosto`{.action}.
+
+![databaseimport](images/database-import-step1.png){.thumbnail}
+
+Valitse seuraavaksi avautuvassa ikkunassa kohta `Tuo uusi tiedosto`{.action} ja klikkaa sitten `Seuraava`{.action}.
+
+> [!primary]
+>
+> Painikkeella `Käytä olemassa olevaa tiedostoa`{.action} voit tuoda uudestaan tuontityökaluun jo lähetetyn tiedoston tiedot.
+>
+
+![databaseimport](images/database-import-step2.png){.thumbnail}
+
+Anna tiedoston nimi (tämä mahdollistaa varmuuskopion tunnistamisen myöhemmin, jos haluat palauttaa sen uudestaan) ja valitse sitten kohdan `Tiedosto` vierestä tietokoneellasi oleva tietokannan varmuuskopiotiedosto. Klikkaa sitten `Lähetä`{.action}.
+
+Odota, että käyttöliittymä ilmoittaa lähetyksen onnistumisesta ja klikkaa sitten painiketta `Seuraava`{.action}.
+
+![databaseimport](images/database-import-step3.png){.thumbnail}
+
+Valitse lopuksi sovelletaanko näkyvissä olevia lisävalintoja vai ei:
+
+- **Tyhjennä nykyinen tietokanta**: kun rastitat tämän ruudun, tietokannan tämänhetkinen sisältö poistetaan kokonaan ja korvataan varmuuskopiolla. Suosittelemme rastittamaan tämän kohdan ainoastaan, jos haluat korvata tietokannan nykyisen sisällön varmuuskopiotiedostolla.
+
+- **Lähetä sähköpostiviesti tuonnin päätyttyä**: rastittamalla tämän kohdan saat sähköpostitse ilmoituksen, kun tietokantasi tuominen on suoritettu.
+
+Kun olet tehnyt valintasi, klikkaa painiketta `Vahvista`{.action}, odota sitten tuonnin päättymistä.
+
+![databaseimport](images/database-import-step4.png){.thumbnail}
+
+### Tuominen phpMyAdmin-verkkokäyttöliittymän kautta
+
+Tämän toimenpiteen toteuttamiseksi sinun on kirjauduttava phpMyAdmin-käyttöliittymään. Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
+
+Näkyviin tulevassa taulukossa on kaikki webhotellituotteen yhteydessä luodut tietokannat. Klikkaa kolmea pistettä halutun tietokannan oikealla puolella ja sitten `Pääsy phpMyAdminiin`{.action}.
+
+![databaseimport](images/database-import-step7.png){.thumbnail}
+
+Kun olet phpMyAdmin-sivulla, syötä tietokannan tiedot, valitse alasvetovalikosta pääsy tietokannan nykyisiin tietoihin ja kirjaudu. Kun olet kirjautunut, mene nyt välilehdelle `Import`{.action} ja täydennä pyydetyt tiedot. Muistathan, että varmuuskopiotiedoston koko on rajoitettu.
+
+> [!warning]
+>
+> Koska phpMyAdmin-käyttöliittymä ei ole OVH:n luoma, sinun on toteutettava tämä menettely oman osaamisesi mukaan. Suosittelemme ottamaan kuitenkin yhteyttä erikoistuneeseen palveluntarjoajaan ja/tai käyttöliittymän kehittäjään, mikäli kohtaat hankaluuksia. Me emme voi tarjota avustusta asiassa.
+>
+
+### Varmuuskopion tuominen skriptiä käyttämällä
+
+Toimenpide tapahtuu useassa vaiheessa. Varmista, että hallussasi on varmuuskopiotiedosto, jonka haluat tuoda. Lisäksi tarvitset tiedot, joiden avulla voit kirjautua tuonnin määränpäänä olevaan tietokantaan (käyttäjänimi, salasana, tietokannan nimi sekä palvelimen osoite).
+
+> [!warning]
+>
+> Tämä vaihtoehto on tekninen ja edellyttää ohjelmointiosaamista. Joitakin menettelyä koskevia tietoja on esitelty alla. Suosittelemme ottamaan kuitenkin yhteyttä erikoistuneeseen palveluntarjoajaan, mikäli kohtaat hankaluuksia. Me emme voi tarjota avustusta asiassa.
+>
+
+#### 1. vaihe: Tuontiskriptin luominen
+
+Ensimmäisessä vaiheessa luodaan skripti, jolla tuonti voidaan toteuttaa tietokantaan. Alla on näkyvissä esimerkkiskripti, jota voit käyttää apuna tässä toimenpiteessä. Se ei kuitenkaan korvaa webmasterin apua.
+
+```php
+<?php
+system("cat varmuuskopiotiedoston_nimi.sql | mysql --host=palvelimen_osoite --user=kayttäjänimi --password=käyttäjän_salasana tietokannan_nimi");
+?>
 ```
-cat tietokannan_nimi.sql | mysql --host=sql_palvelin --user=tietokannan_nimi --password=salasana tietokannan_nimi
+
+Korvaa huolellisesti tässä skriptissä näkyvät yleiset tiedot tietokantasi tiedoilla käyttäen apuna alla olevia elementtejä. Kun skripti on valmis, suosittelemme nimeämään sen esimerkiksi nimellä “import.php”.
+
+|Tiedot|Korvaava tieto|
+|---|---|
+|varmuuskopiotiedoston_nimi|Varmuuskopiotiedoston nimi, joka halutaan tuoda.|
+|palvelimen_osoite|Palvelimen osoite, jonka tietokannalle tiedot tuodaan.|
+|käyttäjänimi|Käyttäjänimi koskien käyttäjää, jolla on pääsyoikeudet tietokantaan.|
+|käyttäjän_salasana|Aiemmin mainitun käyttäjänimen salasana.|
+|tietokannan_nimi|Kyseessä olevan tietokannan nimi.|
+
+#### 2. vaihe: Skriptin lataus ja tallennus tallennustilaan
+
+Kun tuontiskripti on luotu, sinun on ladattava se sekä varmuuskopiotiedosto, jonka haluat tuoda webhotellisi tallennustilaan. Sitä varten sinun on kirjauduttava webhotelliisi. Jos et tiedä, kuinka se tapahtuu, katso dokumentaation “Verkkosivun siirto verkkoon” vaihetta 2 nimeltä “[Kirjaudu tallennustilaasi](https://docs.ovh.com/fi/hosting/verkkosivun-siirto-verkkoon/#2-kirjaudu-tallennustilaasi){.external}”.
+
+Jotta voit suorittaa vaiheet, lataa tuontiskripti sekä varmuuskopiointitiedosto “www”-kansioon.   **Kehotamme olemaan erityisen tarkkaavainen tuontiskriptin nimen suhteen.** Varmista, ettet tuhoa tallennustilassasi olemassa olevaa samannimistä tiedostoa, kun lataat skriptin. Jos tämän tyyppinen ilmoitus tulee näkyviin, muokkaa juuri luodun skriptin nimeä ja yritä latausta uudelleen.
+
+#### 3. vaihe: Skriptin kutsuminen
+
+Kun tuontiskripti ja varmuuskopiotiedosto on ladattu tallennustilaan, on jäljellä enää menettelyn käynnistäminen. Tätä varten skriptiä täytyy kutsua.
+
+Toimenpiteen toteuttamista varten on kirjauduttava verkkoselaimellasi skriptisi täydelliseen URL-osoitteeseen (esim. mypersonaldomain.ovh/import.php, jos olet antanut skriptisi nimeksi “import.php”). Jos skriptiin syötetyt tiedot ovat oikein, tuonti käynnistyy. Nyt on enää odotettava hetken sen toteutumista. Jos näin ei ole, tarkista skriptiin syötetyt tiedot ja yritä toimenpidettä uudelleen.
+
+Kun tuonti on toteutettu, suosittelemme vahvasti poistamaan varmuuskopiointitiedoston sekä “www”-hakemiston skriptin.
+
+### Tuo varmuuskopiotiedosto SSH-komennolla
+
+Toimenpiteen toteuttamiseksi sinun on käytettävä päätteen kautta annettavia komentoja, jotta voit toimia vuorovaikutuksessa tallennustilasi kanssa.
+
+> [!warning]
+>
+> Tämän tyyppisen yhteyden käyttämiseen tarvitaan kehittyneempää osaamista. Alla on esitelty joitakin tietoja menettelystä. Suosittelemme ottamaan kuitenkin yhteyttä erikoistuneeseen palveluntarjoajaan, mikäli kohtaat hankaluuksia. Me emme voi tarjota avustusta asiassa.
+>
+
+Kun olet kirjautunut tallennustilaasi SSH-yhteydellä, sinun on käytettävä tietokannan tuonnin mahdollistavaa komentoa. Alla on yksi, joka voi auttaa sinua menettelyssäsi. Huomaa, että tuotava varmuuskopiotiedosto on ladattava etukäteen tallennustilaan ja, että komento on lähetettävä päätteelle siirtymällä hakemistoon, jossa tämä sijaitsee.
+
+```sh
+cat varmuuskopiotiedoston_nimi.sql | mysql --host=palvelimen_osoite --user=kayttäjänimi --password=käyttäjän_salasana tietokannan_nimi
 ```
 
+Korvaa komennon yleiset tiedot kyseessä olevan tietokannan tiedoilla. Kun tuonti on toteutettu, suosittelemme vahvasti poistamaan varmuuskopiointitiedoston hakemistosta, johon sen latasit.
 
-Esimerkki koko skriptistä: 
+## Lue lisää aiheesta
 
-
-```
-cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport
-```
-
-
-
-
-## Private SQL -palvelun kautta
-Ohje tietokannan tuonnista:
-
-
-- [Private SQL tietokannan tuonti](https://www.ovh-hosting.fi/g2023.kaikki-mita-tarvitsee-tietaa-sql)
-
-
-
-
-## Tietokannan nimestä johtuva virhe
-Saattaa olla tarpeellista lisätä seuraava teksti varmuuskopiotiedoston alkuun:
-
-
-```
-use tietokannan_nimi;
-```
-
-
-Jossa tietokannan_nimi vastaa sen tietokannan nimeä, johon tiedot tuodaan.
-
-
-## Sanasto
-dump*: Verkkosivun tietokannan varmuuskopiotiedosto. 
-
+Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en/>.
