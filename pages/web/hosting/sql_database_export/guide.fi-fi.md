@@ -36,7 +36,7 @@ Jotkut yllä mainitut menettelyt eivät tule OVH:n käyttöliittymästä. Sinun 
 
 Jatka tämän dokumentaation lukemista halutun varmuuskopiointitavan mukaan.
 
-> \[!warning]
+> [!warning]
 >
 > OVH tarjoaa käyttöösi palveluja, joiden konfigurointi, hallinta ja vastuu kuuluvat sinulle. Tehtävänäsi on siis varmistaa palvelun kunnollinen toiminta.
 >
@@ -49,7 +49,7 @@ Varmuuskopiointityökaluun päästäksesi kirjaudu [hallintapaneeliisi](https://
 
 Näkyviin tulevassa taulukossa on kaikki webhotellituotteen yhteydessä luodut tietokannat. Nyt voit valita uuden varmuuskopioinnin tekemisen sekä varmuuskopion hakemisen kahdella erillisellä tavalla.
 
-#### 1\. vaihe: Uuden varmuuskopion ottaminen tietokannasta
+#### 1. vaihe: Uuden varmuuskopion ottaminen tietokannasta
 
 Edelleen välilehdellä `Tietokannat`{.action}, klikkaa kolmea pistettä varmuuskopioitavan tietokannan oikealla puolella ja sitten `Luo varmuuskopio`{.action}.
 
@@ -61,7 +61,7 @@ Odota, että varmuuskopio muodostuu. Voit hakea sen heti, kun se on saatavilla.
 
 ![databasedump](images/database-dump-step3.png){.thumbnail}
 
-#### 2\. vaihe: Tietokannan varmuuskopion hakeminen
+#### 2. vaihe: Tietokannan varmuuskopion hakeminen
 
 Edelleen välilehdellä `Tietokannat`{.action}, klikkaa kolmea pistettä halutun tietokannan oikealla puolella ja sitten `Palauta varmuuskopio`{.action}.
 
@@ -87,7 +87,7 @@ Kun olet phpMyAdmin-sivulla, syötä tietokannan tiedot, valitse alasvetovalikos
 
 - **personoitu tapa**: voit määrittää yksityiskohtaisesti varmuuskopion viemisen asetukset.
 
-> \[!warning]
+> [!warning]
 >
 > Koska phpMyAdmin-käyttöliittymä ei ole OVH:n luoma, sinun on toteutettava tämä menettely oman osaamisesi mukaan. Suosittelemme ottamaan kuitenkin yhteyttä erikoistuneeseen palveluntarjoajaan ja/tai käyttöliittymän kehittäjään, mikäli kohtaat hankaluuksia. Me emme siis voi tarjota avustusta asiassa.
 >
@@ -96,12 +96,12 @@ Kun olet phpMyAdmin-sivulla, syötä tietokannan tiedot, valitse alasvetovalikos
 
 Toimenpide tapahtuu useassa vaiheessa. Varmista, että sinulla on tiedot, joiden avulla voit kirjautua varmuuskopioitavaan tietokantaan (käyttäjänimi, salasana, tietokannan nimi sekä palvelimen osoite).
 
-> \[!warning]
+> [!warning]
 >
 > Tämä vaihtoehto on tekninen ja edellyttää ohjelmointiosaamista. Joitakin menettelyä koskevia tietoja on esitelty alla. Suosittelemme ottamaan kuitenkin yhteyttä erikoistuneeseen palveluntarjoajaan, mikäli kohtaat hankaluuksia. Me emme siis voi tarjota avustusta asiassa.
 >
 
-#### 1\. vaihe: Varmuuskopiointiskriptin luominen
+#### 1. vaihe: Varmuuskopiointiskriptin luominen
 
 Ensimmäisessä vaiheessa luodaan skripti, jolla tietokannan varmuuskopiointi voidaan toteuttaa. Alla on näkyvissä esimerkkiskripti, jota voit käyttää apuna tässä toimenpiteessä. Se ei kuitenkaan korvaa webmasterin apua.
 
@@ -121,32 +121,32 @@ Korvaa huolellisesti tässä skriptissä näkyvät yleiset tiedot tietokantasi t
 |tietokannan_nimi|Kyseessä olevan tietokannan nimi.|
 |varmuuskopiotiedoston_nimi|Nimi, jota varmuuskopiotiedosto käyttää kun varmuuskopiointi on suoritettu.|
 
-> \[!primary]
+> [!primary]
 >
 > Voit tehdä varmuuskopion aiemmasta päivämäärästä lisäämällä skriptiisi portin. Eilisen päivän varmuuskopiota varten käytä porttia “3307”. Seitsemän päivää aiempaa varmuuskopiota varten käytä porttia “3317”. 
 > 
 > Huomaa, että porttia “3306” käyttämällä voit tehdä varmuuskopion tietokantasi tämän hetkisistä tiedoista.
 >
 
-#### 2\. vaihe: Skriptin lataus tallennustilaan
+#### 2. vaihe: Skriptin lataus tallennustilaan
 
 Kun varmuuskopiointiskripti on luotu, sinun on ladattava se webhotellisi tallennustilaan. Sitä varten sinun on kirjauduttava webhotelliisi. Jos et tiedä, kuinka se tapahtuu, katso dokumentaation "Verkkosivun siirto verkkoon" vaihetta 2 nimeltä “[Kirjaudu tallennustilaasi](https://docs.ovh.com/fi/hosting/verkkosivun-siirto-verkkoon/#2-kirjaudu-tallennustilaasi){.external}”.
 
 Jotta voit suorittaa seuraavat vaiheet, lataa skripti “www”-kansioon. **Kehotamme olemaan erityisen tarkkaavainen varmuuskopiointiskriptin nimen suhteen.** Varmista, ettet tuhoa tallennustilassasi olemassa olevaa samannimistä tiedostoa, kun lataat skriptin. Jos tämän tyyppinen ilmoitus tulee näkyviin, muokkaa juuri luodun skriptin nimeä ja yritä latausta uudelleen.
 
-#### 3\. vaihe: Skriptin kutsuminen
+#### 3. vaihe: Skriptin kutsuminen
 
 Kun skripti on ladattu tallennustilaan, ei jäljellä ole muuta kuin siinä olevan koodin käynnistäminen. Tätä varten skriptiä täytyy kutsua.
 
 Toimenpiteen toteuttamista varten on kirjauduttava verkkoselaimellasi skriptisi täydelliseen URL-osoitteeseen (esim. mypersonaldomain.ovh/varmuuskopio.php, jos olet antanut skriptisi nimeksi “varmuuskopio.php”). Jos skriptiin syötetyt tiedot ovat oikein, varmuuskopiointi käynnistyy. Nyt on enää odotettava hetken sen toteutumista. Jos näin ei ole, tarkista skriptiin syötetyt tiedot ja yritä toimenpidettä uudelleen.
 
-#### 4\. vaihe: Varmuuskopion hakeminen tallennustilasta
+#### 4. vaihe: Varmuuskopion hakeminen tallennustilasta
 
 Kun varmuuskopiointi on suoritettu, voit hakea sen kansiosta, johon varmuuskopiointiskripti ladattiin. Tietokannan varmuuskopion nimi on oltava aiemmin skriptissä määritelty nimi. Jäljellä on siis enää varmuuskopion hakeminen omalle koneellesi.
 
 Ennen lopettamista suosittelemme vahvasti poistamaan varmuuskopiointitiedoston sekä “www”-hakemiston skriptin.
 
-> \[!primary]
+> [!primary]
 >
 > Varmuuskopiointiskriptejä sekä ajastettuja tehtäviä (“CRON”) käyttämällä voit automatisoida varmuuskopioinnin toistumisvälin valintasi mukaan. Lue lisää ajastetuista tehtävistä dokumentaatiostamme: “[Ajastetun tehtävän (CRON) asettaminen webhotellissa”](https://docs.ovh.com/fi/hosting/webhotelli_automatisoidut_tehtavatcron/){.external}.
 >
@@ -155,7 +155,7 @@ Ennen lopettamista suosittelemme vahvasti poistamaan varmuuskopiointitiedoston s
 
 Toimenpiteen toteuttamiseksi sinun on käytettävä päätteen kautta annettavia komentoja, jotta voit toimia vuorovaikutuksessa tallennustilasi kanssa.
 
-> \[!warning]
+> [!warning]
 >
 > Tämän tyyppisen yhteyden käyttämiseen tarvitaan kehittyneempää osaamista. Alla on esitelty joitakin tietoja menettelystä. Suosittelemme ottamaan kuitenkin yhteyttä erikoistuneeseen palveluntarjoajaan, mikäli kohtaat hankaluuksia. Me emme siis voi tarjota avustusta asiassa.
 >
