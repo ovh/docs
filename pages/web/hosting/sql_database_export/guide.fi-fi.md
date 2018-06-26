@@ -1,317 +1,173 @@
 ---
-title: 'Webhotellit: ohje MySQL-tietokannan viennistä'
-excerpt: Ohjeessa neuvotaan MySQL-tietokannan vienti palvelimiltamme.
-id: '1394'
-slug: webhotellit_ohje_mysql-tietokannan_viennista
-legacy_guide_number: g1394
+title: 'Webhotellin tietokannan varmuuskopion hakeminen'
+slug: tietokannan-hakeminen
+excerpt: 'Katso, kuinka haetaan webhotellisi tietokannan varmuuskopio'
+section: Tietokannat
+order: 3
 ---
 
+**Päivitetty 26.6.2018**
+
+## Tavoite
+
+Nykyään lähes kaikki sisällönhallintajärjestelmät (WordPress, Joomla! jne.) käyttävät tietokantoja, joilla voidaan tallentaa dynaamisia elementtejä kuten kommentteja tai artikkeleita. Erilaisista syistä johtuen saatat joutua tekemään tietokannastasi varmuuskopion sen tietojen hakemiseksi.
+
+**Katso, kuinka webhotellisi tietokannan varmuuskopio haetaan.**
 
 ## Edellytykset
-Tarvitset:
 
+- Sinulla on [webhotellituote](https://www.ovh-hosting.fi/webhotelli){.external}.
+- Sinulla on [OVH:n webhotellituotteen](https://www.ovh-hosting.fi/webhotelli){.external} yhteydessä luotu tietokanta.
+- Käytetystä varmuuskopiointitavasta riippuen, sinulla on pääsyoikeudet webhotellituotteesi hallintaan [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external} tai tiedot, joiden avulla voit kirjautua tietokantaan.
 
-- Mahdollisuuden kirjautua hallintapaneeliin.
+## Käytännössä
 
-- Käyttäjätunnuksen, SQL-tietokannan salasanan sekä SQL-hostin, joiden avulla tietokantaan voi yhdistää.
-Ohje SQL-käyttäjätunnuksista[]({legacy}1374)
+Ennen toimenpiteen aloitusta sinun on määritettävä tapa, jolla tietokannan varmuuskopio haetaan. Siihen on olemassa useita vaihtoehtoja teknisen osaamisesi tasosta riippuen.
 
+- **OVH:n varmuuskopiointityökalun käyttäminen**: tämän vaihtoehdon avulla voit hakea tietokantojesi varmuuskopioita [OVH:n hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager){.external}. Tämä on kaikkein helppokäyttöisin ratkaisu, sillä se ei edellytä teknistä erityisosaamista.
 
-Ohjeessa neuvotaan eri tapoja tietokantojen vientiin.
+- **Varmuuskopiointi phpMyAdmin-käyttöliittymän kautta**: tämä vaihtoehto edellyttää kirjautumista phpMyAdmin-käyttöliittymään toimenpiteen tekemistä varten. Käyttöliittymän hallinnan osaaminen on edellytyksenä sen käytölle.
 
-![](images/img_1833.jpg){.thumbnail}
+- **Varmuuskopioinnin toteuttaminen skriptillä**: tämä vaihtoehto edellyttää OVH:n webhotelliisi tallennetun skriptin luomista, jotta varmuuskopio voidaan toteuttaa. Tämän tyyppinen skriptin luominen edellyttää erityisosaamista.
 
+- **Varmuuskopioinnin toteuttaminen SSH-komennolla**: tämä vaihtoehto edellyttää kirjautumista tallennustilaasi SSH-protokollalla sekä komentojen käyttämistä sen kanssa kommunikointiin. Tämän tyyppisen tavan käyttö edellyttää edistynyttä osaamista sekä tietyn [webhotellituotteen](https://www.ovh-hosting.fi/webhotelli){.external}.
 
-## Hallintapaneeli
-Tietokannan kopio löytyy hallintapaneelista.
+Jotkut yllä mainitut menettelyt eivät tule OVH:n käyttöliittymästä. Sinun on siis toteutettava nämä toimenpiteet oman osaamisesi mukaan. Joitakin tietoja on esitetty alla, mutta ne eivät korvaa webmasterin apua. 
 
-Tämä on kaikkein helpoin ja nopein tapa tietokannan vientiin.
+Jatka tämän dokumentaation lukemista halutun varmuuskopiointitavan mukaan.
 
-Kirjaudu [hallintapaneeliin](https://www.ovh.com/manager/web).
+> \[!warning]
+>
+> OVH tarjoaa käyttöösi palveluja, joiden konfigurointi, hallinta ja vastuu kuuluvat sinulle. Tehtävänäsi on siis varmistaa palvelun kunnollinen toiminta.
+>
+> Tämän ohjeen tarkoituksena on auttaa sinua yleisimmissä tehtävissä. Suosittelemme ottamaan kuitenkin yhteyttä erikoistuneeseen palveluntarjoajaan ja/tai palvelun kehittäjään, mikäli kohtaat hankaluuksia. Me emme voi tarjota avustusta asiassa. Lisätietoa tämän ohjeen kohdasta “Lisää aiheesta”.
+>
 
-Kirjauduttuasi hallintapaneeliin, valitse ko. webhotelli Webhotelli-osiossa.
+### Varmuuskopion hakeminen OVH:n työkalun kautta
 
-## Vaihe 1
-"Webhotelli"-osiossa valitse kyseinen webhotelli ja sitten välilehti "SQL-hallinta".
+Varmuuskopiointityökaluun päästäksesi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
 
-Tietokannan koosta riippuu, miten pitkään tietokannan varmuuskopion luontiin menee.
+Näkyviin tulevassa taulukossa on kaikki webhotellituotteen yhteydessä luodut tietokannat. Nyt voit valita uuden varmuuskopioinnin tekemisen sekä varmuuskopion hakemisen kahdella erillisellä tavalla.
 
-![](images/img_2698.jpg){.thumbnail}
+#### 1\. vaihe: Uuden varmuuskopion ottaminen tietokannasta
 
-## Vaihe 2
-Klikkaa seuraavaksi kyseisen tietokantarivin päässä olevaa "hammasratasta" ja sitten luo dump.
+Edelleen välilehdellä `Tietokannat`{.action}, klikkaa kolmea pistettä varmuuskopioitavan tietokannan oikealla puolella ja sitten `Luo varmuuskopio`{.action}.
 
-Näkyviin tulee lista tietokannoista (ks. oheinen kuvakaappaus).
+![databasedump](images/database-dump-step2.png){.thumbnail}
 
-![](images/img_2699.jpg){.thumbnail}
+Valitse näkyviin tulevassa ikkunassa haluttu päivämäärä varmuuskopiolle ja klikkaa sitten painiketta `Seuraava`{.action}. Varmista, että yhteenvedon tiedot ovat oikein ja klikkaa sitten `Vahvista`{.action} toimenpiteen käynnistämiseksi.
 
-## Vaihe 3
-Valitse varmuuskopion ajankohta: nyt, eilen tai viime viikolla.
+Odota, että varmuuskopio muodostuu. Voit hakea sen heti, kun se on saatavilla.
 
-Varmuuskopiot löytyvät kolmesta ajankohdasta:
+![databasedump](images/database-dump-step3.png){.thumbnail}
 
+#### 2\. vaihe: Tietokannan varmuuskopion hakeminen
 
-- Nyt: kopio tietokannasta juuri nyt.
+Edelleen välilehdellä `Tietokannat`{.action}, klikkaa kolmea pistettä halutun tietokannan oikealla puolella ja sitten `Palauta varmuuskopio`{.action}.
 
-- Eilen: kopio tietokannasta edeltävältä yötä. Varmuuskopio on otettu aamuyöllä noin klo 4.
+![databasedump](images/database-dump-step4.png){.thumbnail}
 
-- Viime viikkoa: kopio tietokannasta on otettu seitsemän päivää sitten. Varmuuskopio on otettu aamuyöllä noin klo 4.
+Näkyviin tuleva taulukko näyttää kaikki valitun tietokannan saatavilla olevat varmuuskopiot. Voit nähdä tässä varmuuskopioiden tarkan päivämäärän sekä päivän, jolloin nämä poistetaan OVH:n työkalusta.
 
+Varmuuskopion lataamiseksi klikkaa kolmea pistettä sen vieressä ja sitten `Lataa varmuuskopio`{.action}. Tämän jälkeen avautuu ikkuna, jossa pyydetään tallentamaan se koneellesi. Hyväksy ja odota sitten varmuuskopion latautumista.
 
-Klikkaa "Seuraava" ja sitten "Hyväksy" SQL-varmuuskopion palauttamiseksi.
+![databasedump](images/database-dump-step5.png){.thumbnail}
 
-Odota kunnes dump* palautetaan. Saat linkin sähköpostilla varmuuskopiotiedoston (dump) lataamiseen.
+### Varmuuskopion hakeminen phpMyAdmin-käyttöliittymästä
 
-Esimerkki sähköpostin otsikosta:
+Tämän toimenpiteen toteuttamiseksi sinun on kirjauduttava phpMyAdmin-käyttöliittymään. Sen kirjautumislinkin löydät kirjautumalla [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
 
+Näkyviin tulevassa taulukossa on kaikki webhotellituotteen yhteydessä luodut tietokannat. Klikkaa kolmea pistettä halutun tietokannan oikealla puolella ja sitten `Pääsy phpMyAdminiin`{.action}.
 
-```
-[OVH-SQL] testovh.ovh - Tietokantadump: testovhmod1
-```
+![databasedump](images/database-dump-step6.png){.thumbnail}
 
+Kun olet phpMyAdmin-sivulla, syötä tietokannan tiedot, valitse alasvetovalikosta haluatko nähdä tietokannan nykyiset tiedot vai aiemman varmuuskopion tiedot ja sitten kirjaudu. Kun olet kirjautunut, mene välilehdelle `Export`{.action}, jossa on mahdollisuus valita kahdesta viemistavasta:
 
-Sähköpostissa lähetetään varmuuskopiotiedoston latauslinkki. Tietokannan varmuuskopio on käytettävissä palvelimella seuraavat 30 päivää.
+- **nopea tapa**: voit määrittää varmuuskopion viemismuodon. Yleisin on SQL-formaatti, mutta muitakin on tarjolla tarpeidesi mukaan.
 
-Tiedosto on pakattu. Suosittelemme sen purkamista ennen SQL-varmuuskopiotiedoston tuontia.
+- **personoitu tapa**: voit määrittää yksityiskohtaisesti varmuuskopion viemisen asetukset.
 
-![](images/img_2700.jpg){.thumbnail}
+> \[!warning]
+>
+> Koska phpMyAdmin-käyttöliittymä ei ole OVH:n luoma, sinun on toteutettava tämä menettely oman osaamisesi mukaan. Suosittelemme ottamaan kuitenkin yhteyttä erikoistuneeseen palveluntarjoajaan ja/tai käyttöliittymän kehittäjään, mikäli kohtaat hankaluuksia. Me emme siis voi tarjota avustusta asiassa.
+>
 
+### Varmuuskopion hakeminen skriptiä käyttämällä
 
-## PhpMyAdmin
-Jos haluat tuoda tietokannan PhpMyAdminin kautta, kirjaudu ensin [PhpMyAdminin käyttöliittymään](https://phpmyadmin.ovh.net/).
+Toimenpide tapahtuu useassa vaiheessa. Varmista, että sinulla on tiedot, joiden avulla voit kirjautua varmuuskopioitavaan tietokantaan (käyttäjänimi, salasana, tietokannan nimi sekä palvelimen osoite).
 
-## Nopea vientitapa
-Kirjautumisen jälkeen valitse tietokanta (ks. sininen kehys oheisessa kuvakaappauksessa).
+> \[!warning]
+>
+> Tämä vaihtoehto on tekninen ja edellyttää ohjelmointiosaamista. Joitakin menettelyä koskevia tietoja on esitelty alla. Suosittelemme ottamaan kuitenkin yhteyttä erikoistuneeseen palveluntarjoajaan, mikäli kohtaat hankaluuksia. Me emme siis voi tarjota avustusta asiassa.
+>
 
-Mene osioon "Vienti".
+#### 1\. vaihe: Varmuuskopiointiskriptin luominen
 
-Nopeaa vientitapaa käytettäessä ei ole mahdollista valita tietokannan muotoa vientiä varten.
+Ensimmäisessä vaiheessa luodaan skripti, jolla tietokannan varmuuskopiointi voidaan toteuttaa. Alla on näkyvissä esimerkkiskripti, jota voit käyttää apuna tässä toimenpiteessä. Se ei kuitenkaan korvaa webmasterin apua.
 
-Seuraavassa kappaleessa käsitellään mukautettua vientitapaa, jossa on enemmän vaihtoehtoja.
-
-![](images/img_1963.jpg){.thumbnail}
-
-## Mukautettu vienti
-Kirjautumisen jälkeen valitse tietokanta.
-
-Mene osioon "Vienti".
-
-Valitse "Mukautettu - näytä kaikki mahdolliset vaihtoehdot".
-
-Näkyviin tulee useita optioita.
-
-Taulu(t): 
-
-Voit valita kaikki taulukot tai osan niistä vientiä varten.
-
-Tämä voi olla käytännöllinen tapa, jos tietokanta on hyvin suuri. Sen voi viedä ja tuoda useaan kertaan.
-
-Output: 
-
-Voit määritellä haluatko luoda SQL-varmuuskopion ulkoiseen tiedostoon vai haluatko nähdä tuloksen, joka pitää kopioida.
-
-Muoto: 
-
-Valitse tietokannan vientitavan muoto. Suositeltu muoto on SQL.
-
-Muotoiluvaihtoehdot:
-
-Voit määritellä, mitä haluat viedä taulusta, joko vain rakenne tai vain tiedot, tai molemmat.
-Suositeltu valinta on "rakenne ja tiedot".
-
-Viennin vaihtoehdot:
-
-Valitse vientitapa "Ei mikään ylläolevista" välttääksesi virheen, joka liittyy "Max_Allowed_Packet".
-
-Tässä ohjeessa käsitellään vain tärkeimmät vaihtoehdot.
-
-Viennin aloittamiseksi klikkaa "Siirry".
-
-![](images/img_1964.jpg){.thumbnail}
-
-## Tiedoston .sql varmuuskopio
-Linkki dumppiin* voidaan nyt ladata.
-
-Tallenna PhpMyAdminin antama tiedosto.
-
-![](images/img_1848.jpg){.thumbnail}
-
-## Aikaisempi varmuuskopio
-
-- PhpMyAdminista on mahdollista hakea edellisen päivän ja edellisviikon varmuuskopio etusivulla avautuvan valikon kautta.
-
-
-
-
-## Skripti
-Skriptejä voi kirjoittaa tekstitiedostossa. Anna tiedostopääte käytetyn kielen mukaan.
-
-Skriptin käyttö on mielenkiintoista siksi, että sen avulla voi viedä isoja dumppeja* ja se on käytössä kaikissa webhotelleissa.
-
-Korvaa alla olevissa skripteissä:
-
-
-- tietokannan_nimi.sql oman tiedoston nimellä.
-
-- sql_palvelin sen palvelimen nimellä, jolla tietokanta on luotu.
-
-- tietokannan_nimi oman tietokannan nimellä.
-
-- salasana tietokantaan liittyvällä salasanalla.
-
-Varmuuskopiotiedosto on siirrettävä etukäteen FTP-yhteydellä webhotelliin.
-
-
-PHP:llä (backupbase.php):
-
-Käytettävä ja täydennettävä koodi: 
-
-
-```
-<? 
-echo "Tietokantaa varmuuskopioidaan.......
-<br>";
-system("mysqldump --host=sql_palvelin --user=tietokannan_nimi --password=salasana tietokannan_nimi > tietokannan_nimi.sql");
-echo "Valmis. Tietokannan voi hakea FTP-yhteydellä.";
+```php
+<?
+system("mysqldump --host=palvelimen_osoite --user=käyttäjänimi --password=käyttäjän_salasana tietokannan_nimi > varmuuskopiotiedoston_nimi.sql");
 ?>
 ```
 
+Korvaa huolellisesti tässä skriptissä näkyvät yleiset tiedot tietokantasi tiedoilla käyttäen apuna alla olevia elementtejä. Kun skripti on valmis, suosittelemme nimeämään sen esimerkiksi nimellä “varmuuskopio.php”.
 
-Perlillä (importbase.php):
-Käytettävä ja täydennettävä koodi: 
+|Tiedot|Korvaava tieto|
+|---|---|
+|palvelimen_osoite|Kyseessä olevan tietokannan palvelimen osoite.|
+|käyttäjänimi|Käyttäjänimi koskien käyttäjää, jolla on pääsyoikeudet tietokantaan.|
+|käyttäjän_salasana|Yllämainitun käyttäjänimen salasana.|
+|tietokannan_nimi|Kyseessä olevan tietokannan nimi.|
+|varmuuskopiotiedoston_nimi|Nimi, jota varmuuskopiotiedosto käyttää kun varmuuskopiointi on suoritettu.|
 
+> \[!primary]
+>
+> Voit tehdä varmuuskopion aiemmasta päivämäärästä lisäämällä skriptiisi portin. Eilisen päivän varmuuskopiota varten käytä porttia “3307”. Seitsemän päivää aiempaa varmuuskopiota varten käytä porttia “3317”. 
+> 
+> Huomaa, että porttia “3306” käyttämällä voit tehdä varmuuskopion tietokantasi tämän hetkisistä tiedoista.
+>
 
-```
-#!/usr/bin/perl
+#### 2\. vaihe: Skriptin lataus tallennustilaan
 
-print "Tietokantaa varmuuskopioidaan.......
-<br>";
-system("mysqldump --host=sql_palvelin --user=tietokannan_nimi --password=salasana tietokannan_nimi > tietokannan_nimi.sql");
-print "Valmis. Tietokannan voi hakea FTP-yhteydellä.";
-```
+Kun varmuuskopiointiskripti on luotu, sinun on ladattava se webhotellisi tallennustilaan. Sitä varten sinun on kirjauduttava webhotelliisi. Jos et tiedä, kuinka se tapahtuu, katso dokumentaation "Verkkosivun siirto verkkoon" vaihetta 2 nimeltä “[Kirjaudu tallennustilaasi](https://docs.ovh.com/fi/hosting/verkkosivun-siirto-verkkoon/#2-kirjaudu-tallennustilaasi){.external}”.
 
+Jotta voit suorittaa seuraavat vaiheet, lataa skripti “www”-kansioon. **Kehotamme olemaan erityisen tarkkaavainen varmuuskopiointiskriptin nimen suhteen.** Varmista, ettet tuhoa tallennustilassasi olemassa olevaa samannimistä tiedostoa, kun lataat skriptin. Jos tämän tyyppinen ilmoitus tulee näkyviin, muokkaa juuri luodun skriptin nimeä ja yritä latausta uudelleen.
 
+#### 3\. vaihe: Skriptin kutsuminen
 
-- Siirrä FTP-yhteydellä luotu skripti webhotellin www-kansioon ja kutsu skriptiä selaimessa seuraavalla URL-osoitteella:
+Kun skripti on ladattu tallennustilaan, ei jäljellä ole muuta kuin siinä olevan koodin käynnistäminen. Tätä varten skriptiä täytyy kutsua.
 
-http://oma_verkkotunnus.com/backupbase.php 
+Toimenpiteen toteuttamista varten on kirjauduttava verkkoselaimellasi skriptisi täydelliseen URL-osoitteeseen (esim. mypersonaldomain.ovh/varmuuskopio.php, jos olet antanut skriptisi nimeksi “varmuuskopio.php”). Jos skriptiin syötetyt tiedot ovat oikein, varmuuskopiointi käynnistyy. Nyt on enää odotettava hetken sen toteutumista. Jos näin ei ole, tarkista skriptiin syötetyt tiedot ja yritä toimenpidettä uudelleen.
 
-Korvaa oma_verkkotunnus.com omalla verkkotunnuksella ja backupbase.php oman tiedoston nimellä.
+#### 4\. vaihe: Varmuuskopion hakeminen tallennustilasta
 
-Komento luo tiedoston tietokannan_nimi.sql siihen kansioon, jossa skripti on.
+Kun varmuuskopiointi on suoritettu, voit hakea sen kansiosta, johon varmuuskopiointiskripti ladattiin. Tietokannan varmuuskopion nimi on oltava aiemmin skriptissä määritelty nimi. Jäljellä on siis enää varmuuskopion hakeminen omalle koneellesi.
 
-Tiedostosta löytyy kaikki SQL:n ohjeet kannan uudelleen luomiseksi sellaiseksi kuin se oli varmuuskopion aikana kaikkine tietoineen.
+Ennen lopettamista suosittelemme vahvasti poistamaan varmuuskopiointitiedoston sekä “www”-hakemiston skriptin.
 
-- Huom 1: Jos tietokanta on liian suuri, voit tehdä siitä dumpin* taulu taululta lisäämällä "--tables taulun_nimi" komennon loppuun seuraavasti:
+> \[!primary]
+>
+> Varmuuskopiointiskriptejä sekä ajastettuja tehtäviä (“CRON”) käyttämällä voit automatisoida varmuuskopioinnin toistumisvälin valintasi mukaan. Lue lisää ajastetuista tehtävistä dokumentaatiostamme: “[Ajastetun tehtävän (CRON) asettaminen webhotellissa”](https://docs.ovh.com/fi/hosting/webhotelli_automatisoidut_tehtavatcron/){.external}.
+>
 
-mysqldump --host=sql_palvelin --user=tietokannan_nimi --password=salasana tietokannan_nimi --tables taulun_nimi > tietokannan_nimi.sql
+### Varmuuskopiotiedoston hakeminen SSH-komennolla
 
+Toimenpiteen toteuttamiseksi sinun on käytettävä päätteen kautta annettavia komentoja, jotta voit toimia vuorovaikutuksessa tallennustilasi kanssa.
 
-- Huom 2: Tiedoston voi myös pakata, jolloin sen voi helpommin ladata tietokoneelle (FTP:n tai verkon kautta).
+> \[!warning]
+>
+> Tämän tyyppisen yhteyden käyttämiseen tarvitaan kehittyneempää osaamista. Alla on esitelty joitakin tietoja menettelystä. Suosittelemme ottamaan kuitenkin yhteyttä erikoistuneeseen palveluntarjoajaan, mikäli kohtaat hankaluuksia. Me emme siis voi tarjota avustusta asiassa.
+>
 
-Tiedoston pakkaamiseksi, suorita gzip komento, joka luo  .sql.gz-päätteisen tiedoston:
-system("gzip tietokannan_nimi.sql");
+Kun olet kirjautunut tallennustilaasi SSH-yhteydellä, sinun on käytettävä tietokannan varmuuskopioinnin mahdollistavaa komentoa. Alla on yksi, joka voi auttaa sinua menettelyssäsi. Huolehdi, että varmuuskopio tehdään aktiivisessa hakemistossa hetkellä, jolloin lähetät komennon päätteellesi.
 
-
-## SSH-komento
-
-## Edellytykset
-
-- Tarvitset FTP-käyttäjätunnuksen ja siihen liittyvän salasanan yhdistääksesi webhotelliin.
-Ohje FTP-käyttäjätunnuksista[]({legacy}1374)
-
-- Tarvitset webhotellin, johon sisältyy SSH-yhteys 
-
-([katso webhotelleihin sisältyvät palvelut](http://www.ovh-hosting.fi/webhotelli/))
-
-Alla ohje SSH-yhteydestä:
-
-
-- [SSH-yhteys](http://ohjeet.ovh-hosting.fi/SshTelnet)
-
-
-
-## Tietokannan vienti SSH-yhteydellä
-Yhdistä SSH-yhteydellä webhotelliisi.
-
-Mene hakemistoon, jonne haluat sijoittaa varmuuskopiotiedoston ja käynnistä sitten seuraava komento:
-
-Käytettävä ja täydennettävä koodi: 
-
-
-```
-mysqldump --host=sql_palvelin --user=tietokannan_nimi --password=salasana tietokannan_nimi > tietokannan_nimi.sql
+```sh
+mysqldump --host=palvelimen_osoite --user=käyttäjänimi --password=käyttäjän_salasana tietokannan_nimi > varmuuskopiotiedoston_nimi.sql
 ```
 
+Korvaa komennon yleiset tiedot huolellisesti kyseessä olevan tietokannan tiedoilla. Kun varmuuskopiointi on toteutettu, jäljellä on siis enää varmuuskopion hakeminen omalle koneellesi.
 
-Esimerkki koko skriptistä: 
+## Lue lisää aiheesta
 
-
-```
-mysqldump --host=sql3 --user=testbackup --password=RtPgDsmL testbackup > testbackup.sql
-```
-
-
-
-
-## Private SQL -palvelun kautta
-Ohje tietokannan viennistä:
-
-
-- []({legacy}2023)
-
-
-
-
-## Varmuuskopio - Backup
-Jos haluat hakea vanhan tietokannan skriptiä käyttäen, skriptissä on mainittava tietty portti:
-
-Nykyinen kopio = 3306
-Eilen = 3307
-Viime viikko = 3317
-
-Esimerkki koodista, jota voi käyttää:
-
-PHP :
-
-```
-system("mysqldump --host=sql_palvelin --user=tietokannan_nimi --password=salasana --port=3317 tietokannan_nimi > tietokannan_nimi.sql");
-```
-
-
-
-- Tämä varmuuskopiojärjestelmä on käytettävissä tietokannoille, joiden versio on vähintään Mysql5.
-
-
-
-
-## Virhe "Max_Allowed_Packet" dumpin* tuonnissa
-Dumpia* tehtäessä voi olla kiinnostavaa muokata SQL-tietokannan vientitapaa PhpMyAdminin kautta.
-
-Tarkoitus on välttää koko taulun sisällön lisäämistä käyttämällä "INSERT INTO" välttääkseen virheitä, jotka liittyvät "Max_Allowed_Packet"-palvelinmuuttujaan  dumpia* viedessä, mikäli taulun sisältö on suurikokoinen.
-
-Esimerkiksi, jos taulussa A on 500 riviä, sen sijaan, että 500 riville olisi vain yksi "INSERT INTO", käytetään 500 "INSERT INTO".
-
-PhpMyAdminin kautta:
-
-Valitse vientitavaksi "Ei mikään ylläolevista" välttääksesi virheen, joka liittyy "Max_Allowed_Packet".
-
-SSH:lla:
-
-Käytä optiota --skip-extended-insert.
-
-Optio --extended-insert, joka sisältyy optioon --opt (aktiivinen oletuksena), luo yhden ainoan INSERT INTO koko taululle, eli optio on poistettava käytöstä seuraavalla koodilla:
-
-
-```
---skip-extended-insert
-```
-
-
-
-![](images/img_1965.jpg){.thumbnail}
-
-
-## Sanasto
-dump*: Verkkosivun tietokannan varmuuskopiotiedosto. 
-
+Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en/>.
