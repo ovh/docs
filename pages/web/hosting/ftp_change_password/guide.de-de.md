@@ -6,7 +6,7 @@ section: 'FTP und SSH'
 order: 1
 ---
 
-**Stand 26.06.2018**
+**Stand 27.06.2018**
 
 ## Einleitung
 
