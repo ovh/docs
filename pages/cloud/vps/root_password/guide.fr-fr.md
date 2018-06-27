@@ -5,7 +5,7 @@ excerpt: Découvrez ici comment modifier le mot de passe root d’un VPS
 section: Diagnostic et mode Rescue
 ---
 
-**Dernière mise à jour le 20/11/2017**
+**Dernière mise à jour le 27/06/2018**
 
 ## Objectif
 
@@ -17,6 +17,7 @@ Découvrez comment modifier le mot de passe root d’un VPS.
 - Être connecté en SSH au VPS (accès root).
 - [Redémarrer le VPS en mode Rescue](https://docs.ovh.com/fr/vps/mode-rescue-vps/).
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b736xXk06AM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## En pratique
 

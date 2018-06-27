@@ -5,7 +5,7 @@ excerpt: Sprawdź, jak zmienić hasło root
 section: Diagnostyka i tryb Rescue
 ---
 
-**Ostatnia aktualizacja dnia 2018-02-21**
+**Ostatnia aktualizacja dnia 2018-06-27**
 
 ## Wprowadzenie
 
@@ -17,6 +17,7 @@ Sprawdź, jak zmienić hasło dostępowe root na serwerze VPS.
 - Dostęp SSH do VPS  (dostęp root).
 - [Restart serwera VPS w trybie Rescue](https://docs.ovh.com/pl/vps/rescue/){.external}.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## W praktyce
 

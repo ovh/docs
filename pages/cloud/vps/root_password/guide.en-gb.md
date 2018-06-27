@@ -5,7 +5,7 @@ excerpt: Learn how to change the root password of a VPS
 section: Diagnostic and rescue mode
 ---
 
-**Last updated 20th November 2017**
+**Last updated 27th June 2018**
 
 ## Objective
 
@@ -17,6 +17,7 @@ Learn how to change the root password of a VPS.
 - You must be connected via SSH to your VPS (root access).
 - [Reboot your VPS in rescue mode](https://docs.ovh.com/gb/en/vps/rescue/).
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Instructions
 

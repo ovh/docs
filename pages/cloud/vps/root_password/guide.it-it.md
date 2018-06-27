@@ -5,7 +5,7 @@ excerpt: Come modificare la password dell’utente root sui VPS OVH
 section: Diagnostica e modalità Rescue
 ---
 
-**Ultimo aggiornamento: 22/01/2018**
+**Ultimo aggiornamento: 27/06/2018**
 
 ## Obiettivo
 
@@ -17,6 +17,8 @@ Durante l’installazione o la reinstallazione di una distribuzione, viene forni
 
 - Avere accesso in SSH al VPS (root)
 - [Attivare la modalità Rescue sui VPS](https://docs.ovh.com/it/vps/rescue/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Procedura
 
