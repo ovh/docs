@@ -1,10 +1,11 @@
-﻿---
-title: Trasferire un dominio generico in OVH
+---
+title: 'Trasferire un dominio generico in OVH'
 slug: trasferire-un-dominio-generico-in-ovh
-excerpt: Come avviare la procedura di trasferimento di un dominio generico verso OVH
+excerpt: 'Come avviare la procedura di trasferimento di un dominio generico verso OVH'
 section: Trasferimenti
 ---
-**Ultimo aggiornamento: 26/02/2018**
+
+**Ultimo aggiornamento: 27/06/2018**
 
 ## Obiettivo
 
@@ -13,6 +14,7 @@ L’operazione di trasferimento consente di spostare un dominio da un Registrar 
 **Questa guida ti mostra la procedura da seguire per effettuare il trasferimento di un dominio generico in OVH.**
 
 ## Prerequisiti
+
 - Disporre di un dominio generico (ad esempio .com, .net, .info) registrato presso un altro provider
 - Essere abilitato a richiedere il trasferimento di un dominio
 - Il proprietario del dominio e coloro che lo gestiscono devono essere stati informati della richiesta di trasferimento
@@ -68,7 +70,7 @@ Ora che il tuo dominio è sbloccato e che disponi del codice necessario, è poss
 
 Inserisci il nome del tuo dominio e segui la procedura d‘ordine. Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella casella accanto al tuo dominio o, se ancora non ne sei in possesso, seleziona la casella `Indica il codice di autorizzazione successivamente nel tuo Spazio Cliente OVH`{.action}. Prima di continuare con la procedura, ti consigliamo di assicurarti di essere in grado di recuperare il codice. 
 
-Gli step successivi ti permettono di completare l’ordine scegliendo un [piano di hosting Web](https://www.ovh.it/hosting-web/){.external}, altri servizi OVH o server DNS. Le soluzioni proposte possono essere utili se il trasferimento del tuo dominio prevede anche un progetto di migrazione dei tuoi servizi (sito e email) in OVH. La guida [Migrare un sito e un servizio di posta in OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external} fornisce una panoramica della procedura da seguire per effettuare questa operazione.
+Gli step successivi ti permettono di completare l’ordine scegliendo un [piano di hosting Web](https://www.ovh.it/hosting-web/){.external}, altri servizi OVH o server DNS. Le soluzioni proposte possono essere utili se il trasferimento del tuo dominio prevede anche un progetto di migrazione dei tuoi servizi (sito e email) in OVH. La guida [Migrare un sito e un servizio di posta in OVH](https://docs.ovh.com/it/hosting/migrare-un-sito-in-ovh/){.external} fornisce una panoramica della procedura da seguire per effettuare questa operazione.
 
 > [!warning]
 >
@@ -125,6 +127,6 @@ Per i domini generici che prevedono il pagamento dell’operazione di trasferime
 
 ## Per saperne di più
 
-[Migrare un sito e un servizio di posta in OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}.
+[Migrare un sito e un servizio di posta in OVH](https://docs.ovh.com/it/hosting/migrare-un-sito-in-ovh/){.external}.
 
 Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
