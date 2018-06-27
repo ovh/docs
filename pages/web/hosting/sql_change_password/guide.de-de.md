@@ -1,7 +1,7 @@
 ---
 title: 'Passwort einer Webhosting-Datenbank ändern'
 slug: datenbank-passwort-aendern
-excerpt: 'In dieser Anleitung erfahren Sie, wie das Passwort einer Datenbank ändern, die im Rahmen eines Webhosting Angebots erstellt wurde.'
+excerpt: 'So ändern Sie das Passwort einer Datenbank, die im Rahmen eines Webhosting Angebots erstellt wurde.'
 section: Datenbanken
 order: 2
 ---
@@ -10,9 +10,9 @@ order: 2
 
 ## Einleitung
 
-In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel Kommentare oder Artikel, gespeichert werden. Diese Datenbanken werde heute von praktisch allen Content Management Systemen (CMS) wie WordPress oder Joomla! verwendet und sind über ein zugehöriges Passwort erreichbar.
+In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel Kommentare oder Artikel, gespeichert werden. Diese Datenbanken werden heute von praktisch allen Content Management Systemen (CMS) wie WordPress oder Joomla! verwendet und sind über ein zugehöriges Passwort erreichbar.
 
-**Hier erfahren Sie, wie das Passwort einer Datenbank ändern, die im Rahmen eines Webhosting Angebots erstellt wurde.**
+**Hier erfahren Sie, wie Sie das Passwort einer Datenbank ändern, die im Rahmen eines Webhosting Angebots erstellt wurde.**
 
 ## Voraussetzungen
 

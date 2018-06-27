@@ -10,7 +10,7 @@ order: 1
 
 ## Einleitung
 
-In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel Kommentare oder Artikel, gespeichert werden. Diese Datenbanken werde heute von praktisch allen Content Management Systemen (CMS) wie WordPress oder Joomla! verwendet.
+In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel Kommentare oder Artikel, gespeichert werden. Diese Datenbanken werden heute von praktisch allen Content Management Systemen (CMS) wie WordPress oder Joomla! verwendet.
 
 **In dieser Anleitung erfahren Sie, wie Sie eine Datenbank auf Ihrem OVH Webhosting erstellen.**
 
@@ -76,7 +76,7 @@ Geben Sie die geforderten Informationen an und klicken Sie anschließend auf `We
 
 Sie können Ihre Datenbank nun verwenden. Halten Sie hierzu folgende Informationen bereit: der von Ihnen angegebene Benutzer und das zugehörige Passwort, den von Ihnen angepassten Datenbanknamen sowie die Server-Adresse.
 
-Diese Informationen sind notwendig, um Ihre Website mit der Datenbank zu verbinden. Je nach Website wird diese Verbindung manuell eingerichtet oder über ein Interface der Website hergestellt. Da diese Einstellungen die Konfiguration Ihrer Website und nicht die OVH Dienste betreffen, empfehlen wir, den Herausgeber der Website oder einen spezialisierten Dienstleister zu kontaktieren, sollten Sie weitere Hilfe benötigen.
+Diese Informationen sind notwendig, um Ihre Website mit der Datenbank zu verbinden. Je nach Website wird die Verbindung manuell eingerichtet oder über ein Interface der Website hergestellt. Da diese Einstellungen die Konfiguration Ihrer Website und nicht die OVH Dienste betreffen, empfehlen wir, den Herausgeber der Website oder einen spezialisierten Dienstleister zu kontaktieren, sollten Sie weitere Hilfe benötigen.
 
 OVH stellt Ihnen eine Webanwendung zur Verfügung: phpMyAdmin. Den zugehörigen Link finden Sie im Kundencenter. Klicken Sie hierzu im Tab `Datenbanken`{.action} rechts neben der betreffenden Datenbank auf die drei Punkte und anschließend auf `Zugang zu phpMyAdmin`{.action}. Geben Sie dort die Login-Daten zu Ihrer OVH Datenbank ein.
 
