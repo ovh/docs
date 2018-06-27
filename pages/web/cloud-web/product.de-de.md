@@ -1,7 +1,7 @@
 ---
-title: Cloud Web
+title: 'Cloud Web'
 slug: cloud-web
-sections: Erste Schritte
+sections: 'Erste Schritte'
 ---
 
 > [!product-section]
@@ -10,7 +10,7 @@ sections: Erste Schritte
 >
 > - [Meine Seite online stellen](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/)
 > - [Migration Ihrer Website und E-Mails zu OVH](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/)
-> - [Hosting multiple websites on your Web Hosting plan (in Kürze auf Deutsch)](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/)
+> - [Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)
 > - [Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/)
 >
 > ### Automatische E-Mails
@@ -22,12 +22,12 @@ sections: Erste Schritte
 >
 > ### Passwort
 >
-> - [Modifying a FTP user password (in Kürze auf Deutsch)](https://docs.ovh.com/gb/en/hosting/modify-ftp-user-password/)
-> - [Changing the password for a Web Hosting plan database (in Kürze auf Deutsch)](https://docs.ovh.com/gb/en/hosting/change-password-database/)
+> - [Passwort eines FTP-Benutzers ändern](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/)
+> - [Passwort einer Webhosting-Datenbank ändern](https://docs.ovh.com/de/hosting/datenbank-passwort-aendern/)
 >
 > ### Datenbanken
 >
-> - [Creating a database in your Web Hosting plan (in Kürze auf Deutsch)](https://docs.ovh.com/gb/en/hosting/creating-database/)
+> - [Eine Datenbank auf Ihrem Webhosting erstellen](https://docs.ovh.com/de/hosting/datenbank-erstellen/)
 > - [Hilfe zum Export von Datenbanken](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/)
 > - [Import einer MySQL-Datenbank](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/)
 >
