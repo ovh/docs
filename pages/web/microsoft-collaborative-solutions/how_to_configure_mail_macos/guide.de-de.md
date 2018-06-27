@@ -63,7 +63,7 @@ Sie können eine Test-E-Mail versenden, um zu überprüfen, ob der Account korre
 
 ![Exchange](images/configuration-mail-macos-step3.png){.thumbnail}
 
-Sollten Sie Probleme bei der Verbindung Ihres Account haben, empfehlen wir Folgendes:
+Sollten Sie Probleme bei der Verbindung Ihres Accounts haben, empfehlen wir Folgendes:
 
 - Überprüfen Sie im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} die Domainkonfiguration Ihres Exchange Dienstes. Gehen Sie hierzu auf den Tab `Assoziierte Domains`{.action} und dann in die Spalte `Diagnose`{.action}.
 
