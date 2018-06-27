@@ -1,8 +1,8 @@
 ---
-title: Erste Schritte mit Cloud Web Hosting
+title: 'Erste Schritte mit Cloud Web Hosting'
 slug: erste-schritte-mit-cloud-web
-excerpt: In dieser Anleitung erfahren Sie, wie Sie richtig mit Ihrem Cloud Web Hosting starten
-section: Erste Schritte
+excerpt: 'In dieser Anleitung erfahren Sie, wie Sie richtig mit Ihrem Cloud Web Hosting starten'
+section: 'Erste Schritte'
 ---
 
 **Stand 25.06.2018**
@@ -101,7 +101,7 @@ Füllen Sie die folgenden Informationen sorgfältig aus:
 > Wenn Sie eine externe Domain hinzugefügt haben, muss zusätzlich ein TXT-Feld mit dem Namen **ovhcontrol** in der DNS-Konfiguration der Domain erstellt werden. Über dieses Feld kann OVH überprüfen, dass die Domain tatsächlich hinzugefügt werden darf. Wurde kein TXT-Feld erstellt, wird der Vorgang abgebrochen.
 >
 
-Wiederholen Sie diesen Schritt, falls Sie mehrere Domains zu Ihrem Cloud Web Hosting hinzufügen möchten. Weitere Informationen zum Hinzufügen einer Domain als Multisite finden Sie in unserer Anleitung: [„Hosting multiple websites on your Web Hosting plan“](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external} (in Kürze auf Deutsch).
+Wiederholen Sie diesen Schritt, falls Sie mehrere Domains zu Ihrem Cloud Web Hosting hinzufügen möchten. Weitere Informationen zum Hinzufügen einer Domain als Multisite finden Sie in unserer Anleitung: [„Mehrere Websites auf einem Webhosting einrichten“](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}.
 
 ![Cloud Web](images/cloud-web-first-steps-step3.png){.thumbnail}
 
@@ -138,7 +138,7 @@ Nun, da Ihr Projekt auf Ihrem Cloud Web Hosting eingerichtet ist, können Sie Ih
 
 Um eine oder mehrere E-Mail-Adressen anzulegen, klicken Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im linken Menü auf `E-Mails`{.action} und wählen Sie anschließen die Domain aus, die mit Ihrem Cloud Web Angebot verbunden ist.
 
-Um eine neue Adresse einzurichten, klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Anweisungen. Falls Sie Hilfe benötigen, finden Sie hier die zugehörige Dokumentation: [„Creating an email address with your MX Plan package“](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external} (in Kürze auf Deutsch).
+Um eine neue Adresse einzurichten, klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Anweisungen. Falls Sie Hilfe benötigen, finden Sie hier die zugehörige Dokumentation: [„Eine E-Mail-Adresse mit MX Plan erstellen“](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}.
 
 ![Cloud Web](images/cloud-web-first-steps-step5.png){.thumbnail}
 
@@ -172,7 +172,7 @@ Lesen Sie in der folgenden Tabelle, wo Sie die entsprechenden Änderungen vorneh
 
 |Verwendete DNS-Konfiguration|Wo nehme ich die Änderungen vor?|
 |---|---|
-|OVH|Begeben Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `Domains`{.action} zur betreffenden Domain. In dem Tab `DNS Zone`{.action} überprüfen Sie dann die Informationen und ändern diese gegebenenfalls ab. Wenn Sie weitere Hilfe benötigen, lesen Sie unsere Anleitung [„Editing an OVH DNS zone“](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external} (in Kürze auf Deutsch)|
+|OVH|Begeben Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `Domains`{.action} zur betreffenden Domain. In dem Tab `DNS Zone`{.action} überprüfen Sie dann die Informationen und ändern diese gegebenenfalls ab. Wenn Sie weitere Hilfe benötigen, lesen Sie unsere Anleitung [„Bearbeiten der OVH DNS-Zone“](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}|
 |Andere|Verwenden Sie das Interface des Anbieters, der die DNS-Konfiguration Ihrer Domain verwaltet. Bei Problemen wenden Sie sich bitte an Ihren Anbieter.|
 
 Die Änderung der DNS-Konfiguration Ihrer Domain erfordert eine Propagationszeit von bis zu 24 Stunden, bis sie voll wirksam ist. Falls Sie mehrere Domains als Multisite mit Ihrem Cloud Web Hosting verbunden haben, müssen die notwendigen Änderungen für jede Domain einzeln durchgeführt werden. 
@@ -197,9 +197,9 @@ Wenn Sie mehr Informationen über die Verwendung von RoundCube benötigen, werfe
 
 [Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/){.external}
 
-[„Hosting multiple websites on your Web Hosting plan“](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external} (in Kürze auf Deutsch)
+[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}
 
-[Creating an email address with your MX Plan package](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external} (in Kürze auf Deutsch)
+[Eine E-Mail-Adresse mit MX Plan erstellen](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}
 
 [Verwendung von RoundCube](https://docs.ovh.com/de/emails/webmail_verwendung_von_roundcube/){.external}
 

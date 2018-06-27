@@ -27,7 +27,7 @@ Die Domain Name System Zone (DNS-Zone) ist die Konfigurationsdatei einer Domain.
 
 ## Beschreibung
 
-**Seien Sie vorsichtig bei der Bearbeitung der DNS-Zone**\: Wenn Sie eine falsche Änderung vornehmen, kann es sein, dass Ihre Website nicht mehr erreichbar ist oder Ihre E-Mail-Adressen keine Nachrichten empfangen können.
+**Seien Sie vorsichtig bei der Bearbeitung der DNS-Zone**: Wenn Sie eine falsche Änderung vornehmen, kann es sein, dass Ihre Website nicht mehr erreichbar ist oder Ihre E-Mail-Adressen keine Nachrichten empfangen können.
 
 Ein genaueres Verständnis der verschiedenen Einträge ermöglicht es Ihnen, die notwendigen Änderungen der DNS-Zone Ihrer Domain besser zu bestimmen. Lesen Sie hierzu in der folgenden Tabelle die Beschreibungen zu den einzelnen Einträgen. 
 
