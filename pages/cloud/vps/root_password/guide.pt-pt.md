@@ -5,7 +5,7 @@ excerpt: Aprenda a alterar a palavra-passe root do seu VPS
 section: Diagnóstico e Modo Rescue
 ---
 
-**Última atualização 03/01/2018**
+**Última atualização 27/06/2018**
 
 ## Sumário
 
@@ -16,6 +16,7 @@ Quando instalar um sistema operativo, irá receber uma palavra-passe de acesso r
 - Estar ligado ao VPS com protocolo SSH (acesso root)
 - [Reiniciar o VPS em Modo Rescue](https://docs.ovh.com/pt/vps/rescue/)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Instruções
 
