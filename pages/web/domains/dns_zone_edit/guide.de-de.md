@@ -1,189 +1,107 @@
 ---
-title: Webhosting - Bearbeiten der DNS Zone
-excerpt: In dieser Hilfe wird die Bearbeitung der DNS Zone eines Domainnamens beschrieben.
+title: 'Bearbeiten der OVH DNS-Zone'
+excerpt: 'In dieser Anleitung erfahren Sie, wie Sie eine OVH DNS-Zone über Ihr Kundencenter bearbeiten.'
 slug: webhosting_bearbeiten_der_dns_zone
 legacy_guide_number: g1604
 ---
 
+**Stand 26.06.2018**
 
-## Definition
-Das DNS oder Domain Name System dient zur "Übersetzung" von Domainnamen (z.B. meine-seite.tld) in IP-Adressen (z.B. 12.34.56.78), damit Ihre Anfragen über das Netz an den Ziel-Server geleitet werden können.
+## Einleitung
 
-![](images/img_3710.jpg){.thumbnail}
+Die Domain Name System Zone (DNS-Zone) ist die Konfigurationsdatei einer Domain. Sie besteht aus technischen Angaben, die als Einträge bezeichnet werden. DNS-Zonen werden üblicherweise dazu verwendet, Ihre Domain mithilfe dieser Einträge mit dem oder den Servern zu verbinden, auf denen Ihre Website oder E-Mail-Adressen gehostet werden.
 
+**Hier erfahren Sie, wie Sie eine OVH DNS-Zone über Ihr Kundencenter bearbeiten.**
 
-## Unterschiede zwischen DNS Server / DNS Zone
+## Voraussetzungen
 
-## DNS Server
+- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} Zugriff auf die Verwaltung der betreffenden Domain.
+- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Die angegebene Domain verwendet die OVH Konfiguration (die OVH DNS-Server).
 
-- Die DNS Server sind die Nameserver, die für einen Domainnamen deklariert (im Whois eingetragen) sind. Diese Server beantworten Anfragen zur Namensauflösung der Domain.
+> [!warning]
+>
+> - Wenn Ihre Domain nicht die DNS-Server von OVH verwendet, muss die Änderung über das Interface des Anbieters vorgenommen werden, bei dem die Konfiguration Ihrer Domain verwaltet wird.
+> - Wenn Ihre Domain bei OVH registriert ist, können Sie überprüfen, ob sie unsere Konfiguration verwendet. Gehen Sie hierzu in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} zur betreffenden Domain und klicken Sie anschließend auf den Tab `DNS Server`{.action}.
+>
 
+## Beschreibung
 
+**Seien Sie vorsichtig bei der Bearbeitung der DNS-Zone**\: Wenn Sie eine falsche Änderung vornehmen, kann es sein, dass Ihre Website nicht mehr erreichbar ist oder Ihre E-Mail-Adressen keine Nachrichten empfangen können.
 
-## DNS Zone
+Ein genaueres Verständnis der verschiedenen Einträge ermöglicht es Ihnen, die notwendigen Änderungen der DNS-Zone Ihrer Domain besser zu bestimmen. Lesen Sie hierzu in der folgenden Tabelle die Beschreibungen zu den einzelnen Einträgen. 
 
-- Die DNS Zone ist eine Datei, in der die DNS Einstellungen für die dazugehörige Domain gespeichert sind. Die DNS Zone enthält verschiedene Einträge, zum Beispiel die Adresse des/der Server(s), auf dem Ihre Domain gehostet wird (A Eintrag), oder die für die Domain zuständigen E-Mail-Server (MX Eintrag).
+|Eintrag|Beschreibung|  
+|---|---|
+|A|Der A-Eintrag weist einer Domain eine IP-Adresse (IPv4) zu. Zum Beispiel: die IP-Adresse des Servers, auf dem Ihre Website gehostet ist.|
+|AAAA|Der AAAA-Eintrag weist einer Domain eine IP-Adresse (IPv6) zu. Zum Beispiel: die IP-Adresse des Servers, auf dem Ihre Website gehostet ist.|
+|CNAME|Erlaubt es einer Domain, den oder die IP-Adressen einer anderen Domain zu verwenden, indem diese durch die Erstellung eines Alias miteinander verbunden werden (IP-Aliasing). Ist zum Beispiel *www.mypersonaldomain.ovh* ein Alias von *mypersonaldomain.ovh*, so verwendet *www.mypersonaldomain.ovh* die IP-Adresse(n) von *mypersonaldomain.ovh*.|
+|MX|Der MX-Eintrag legt den für die E-Mail-Adressen der Domain zuständigen E-Mail-Server fest. Zum Beispiel: die IP-Adresse des Servers, auf dem Ihre E-Mail-Lösung gehostet ist. Wahrscheinlich verfügt Ihr Anbieter über mehrere E-Mail-Server. In dem Fall müssen mehrere MX-Einträge angelegt werden.|
+|SRV|Der SRV-Eintrag enthält Informationen zur Adresse eines Servers, der einen Dienst bereitstellt. Dieser Eintrag kann zum Beispiel die Adresse eines SIP-Servers angeben oder die Adresse eines Servers, den ein E-Mail-Client für die automatische Konfiguration per Autodiscover verwendet.|
+|TXT|Mit einem TXT-Eintrag können Sie zusätzliche, frei definierbare Werte (in Textform) zur DNS-Zone Ihrer Domain hinzufügen. Dieser Eintrag wird häufig für den Verifizierungsprozess verwendet.|
+|SPF|Mit dem SPF-Eintrag soll Identitätsdiebstahl und somit die missbräuchliche Verwendung von E-Mail-Adressen mit Ihrem Domainnamen verhindert werden. Mit diesem Eintrag kann zum Beispiel festgelegt werden, dass nur der Server des Anbieters Ihrer E-Mail-Lösung als legitime Quelle angesehen wird. Weitere Informationen hierzu finden Sie in unserer Anleitung [„Einen SPF-Eintrag zur Konfiguration Ihrer Domain hinzufügen“](https://docs.ovh.com/de/domains/webhosting_spf-eintrag/){.external}|
+|CAA|Der CAA-Eintrag wird dazu verwendet, die Zertifizierungsstellen aufzulisten, die SSL-Zertifikate für eine Domain ausstellen dürfen.|
 
+### Schritt 1: Auf die Verwaltung der OVH DNS-Zone Ihrer Domain zugreifen
 
+Loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Zone`{.action}.
 
+Die angezeigte Tabelle enthält die Konfiguration Ihrer Domain bei OVH. Sie besteht aus mehreren DNS-Einträgen, die in jeweils einer Zeile der Tabelle stehen. Sie können die Einträge nach dem Eintragstyp oder der zugehörigen Domain filtern.
 
-## Warum kann es erforderlich sein, die DNS Server zu ändern oder die DNS Zone zu bearbeiten?
+![dnszone](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
 
-## DNS Server
-Wenn Sie einen Transfer einer Domain zu einem anderen Registrar durchführen, müssen Sie häufig auch deren DNS Server ändern. In der Tat erlauben die meisten Anbieter nicht die weitere Verwendung ihrer Nameserver, wenn die Domain zu einem anderen Registrar übertragen wird. Oder Sie verfügen über eigene Dedicated Server, die Sie als DNS Server für Ihre Domain verwenden möchten.
+### Schritt 2: OVH DNS-Zone Ihrer Domain bearbeiten
 
-## DNS Zone
-Wenn Sie den Server wechseln möchten, auf dem Ihre Website gehostet wird, oder die für die Domain zuständigen E-Mail-Server umstellen möchten (zum Beispiel nach einem Wechsel des Anbieters), müssen Sie die Einstellungen in Ihrer DNS Zone bearbeiten.
-Sobald die Änderungen aktiv geworden sind - die Propagation der DNS Einstellungen nimmt einige Stunden in Anspruch - verweist Ihre Domain dann auf die neuen Server.
+Sie können die OVH DNS-Zone Ihrer Domain bearbeiten und DNS-Einträge hinzufügen, bearbeiten oder löschen. Hierzu haben Sie zwei Optionen:
 
+- **DNS-Zone manuell im Textmodus bearbeiten**: nur für fortgeschrittene Nutzer. Klicken Sie im Tab `DNS Zone`{.action} auf `Im Textmodus bearbeiten`{.action} und folgend Sie den Anweisungen.
 
-## Was bedeutet der TTL Wert in der DNS Zone?
+- **Konfigurationsassistenten verwenden**
 
-## TTL / Time to Live
-Der TTL Wert steht für Time to Live ("Lebensdauer") und bezeichnet den Zeitraum, in dem eine Information nach einer Änderung im Cache gehalten wird, bevor sie wieder aktualisiert wird.
-Bei OVH haben neu erstellte DNS Zonen eine TTL von 1 Stunde (TTL = 3600 Sekunden).
+Die vorliegende Anleitung beschreibt von hier an nur die Konfiguration über unsere Konfigurationsassistenten.
 
+> [!primary]
+>
+> Bitte halten Sie die Informationen bereit, die Sie in Ihrer OVH DNS-Zone ändern möchten. Wenn Sie diese Änderung auf Anfrage eines Dienstleisters durchführen, sollte Ihnen dieser eine Lister der vorzunehmenden Änderungen zugesandt haben.
+>
 
-## Verbindung mit dem Kundencenter
+- **Neuen DNS-Eintrag hinzufügen**
 
-- Verbinden Sie sich mit Ihrer OVH Kundenkennung und dem dazugehörigen Passwort mit Ihrem [OVH Kundencenter](https://www.ovh.com/manager/web/login/).
+Um einen neuen DNS-Eintrag hinzuzufügen, gehen Sie in Ihrem Kundencenter auf den Tab `DNS Zone`{.action} und klicken Sie rechts neben der Tabelle auf den Button `Einen Eintrag hinzufügen`{.action}. Wählen Sie den gewünschten Eintragstyp aus und folgen Sie den Anweisungen.
 
-- Klicken Sie auf "Login" um sich anzumelden.
+Wir empfehlen Ihnen, zunächst zu überprüfen, dass dieser Eintrag nicht bereits existiert und auf ein anderes Ziel verweist. Filtern Sie hierzu die angezeigten Einträge nach Eintragstyp oder der verbundenen Domain. Wenn der Eintrag bereits existiert, können Sie diesen, wie im nächsten Schritt beschrieben, bearbeiten.
 
+![dnszone](images/edit-dns-zone-ovh-add-entry.png){.thumbnail}
 
+- **Existierenden DNS-Eintrag bearbeiten**
 
-![](images/img_3711.jpg){.thumbnail}
+Um einen existierenden DNS-Eintrag zu bearbeiten, klicken Sie in Ihrem Kundencenter im Tab `DNS Zone`{.action} rechts neben dem entsprechenden Eintrag auf das Zahnrad-Symbol. Klicken Sie anschließend auf `Eintrag bearbeiten`{.action} und folgen Sie den angezeigten Schritten.
 
+![dnszone](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
 
-## Auswahl der Domain
+- **DNS-Eintrag löschen**
 
-- Klicken Sie in dem Menü auf der linken Seite unter "Domains" auf den gewünschten Domainnamen.
+Um einen DNS-Eintrag zu löschen, klicken Sie in Ihrem Kundencenter im Tab `DNS Zone`{.action} rechts neben dem entsprechenden Eintrag auf das Zahnrad-Symbol. Klicken Sie anschließend auf `Eintrag löschen`{.action} und folgen Sie den angezeigten Schritten.
 
+Sie können mehrere Einträge auf einmal löschen, indem Sie links in der Tabelle neben den betreffenden Einträgen einen Haken setzen und anschließend auf den Button `Löschen`{.action} klicken.
 
+![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
-![](images/img_3712.jpg){.thumbnail}
+### Schritt 3: Propagationszeit abwarten
 
+Die Änderung der DNS-Konfiguration Ihrer Domain erfordert eine Propagationszeit von bis zu 24 Stunden, bis sie voll wirksam ist.
 
-## Überblick über die Einstellungen der DNS Zone
-Klicken Sie auf die Rubrik "DNS Zone", um die DNS Zoneneinstellungen Ihrer Domain anzuzeigen.
-Für eine bessere Übersicht können Sie diese Anzeige auch nach Eintragstypen sortieren.
+Wenn Sie die Propagationszeit für die nächste Bearbeitung Ihrer OVH DNS-Zone verkürzen möchten, können Sie das bis zu einem gewissen Grad tun, indem Sie die TTL (*Time To Live*) anpassen, die für alle Einträge der DNS-Zone angewandt wird.
+Klicken Sie hierzu in Ihrem Kundencenter im Tab `DNS Zone`{.action} auf den Button `Standardmäßige TTL ändern`{.action} und folgen Sie den angezeigten Schritten. 
 
-![](images/img_3714.jpg){.thumbnail}
+Sie können auch die TTL eines DNS-Eintrags ändern. Diese Änderung muss jedoch für jeden Eintrag einzeln vorgenommen werden, indem Sie diesen bearbeiten oder bei Hinzufügen die entsprechende TTL angeben.
 
+## Weiterführende Informationen
 
-## Änderung eines Eintrags
-Um einen Eintrag zu ändern klicken Sie auf das Bleistift-Icon in der Zeile mit dem gewünschten Eintrag. Bearbeiten Sie den Eintrag wie gewünscht, klicken Sie auf "Weiter" und abschließend auf "Bestätigen".
+[Webhosting − Allgemeine Informationen zu den DNS-Servern](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/){.external}
 
-![](images/img_3723.jpg){.thumbnail}
+[Einen SPF-Eintrag zur Konfiguration Ihrer Domain hinzufügen](https://docs.ovh.com/de/domains/webhosting_spf-eintrag/){.external}
 
+[Schützen Sie Ihre Domain vor Cache Poisoning](https://www.ovh.de/domains/dnssec_dienst.xml){.external}
 
-## Löschung eines Eintrags
-Um einen Eintrag zu löschen klicken Sie auf das Papierkorb-Icon in der Zeile mit dem gewünschten Eintrag und dann auf "Bestätigen".
-
-![](images/img_3724.jpg){.thumbnail}
-
-
-## Zurücksetzen der Konfiguration
-Mit diesem Button können Sie die DNS Zone Ihrer Domain auf die standardmäßige Konfiguration zurücksetzen.
-
-![](images/img_3715.jpg){.thumbnail}
-Wählen Sie dazu den gewünschten Zonentyp aus und klicken Sie auf "Bestätigen":
-
-
-- DNS Zone mit minimalen Einträgen zurücksetzen: Mit dieser Option wird eine Zone erstellt, die lediglich über die unbedingt notwendigen Einträge verfügt, damit Ihre Domain funktioniert.
-
-- DNS Zone zurücksetzen: Mit dieser Option werden zusätzliche Einträge in der Zone erstellt, zum Beispiel CNAME Einträge für FTP...
-
-
-
-![](images/img_3716.jpg){.thumbnail}
-
-
-## Hinzufügen eines Eintrags
-Mit diesem Button können Sie einen neuen Eintrag zu Ihrer DNS Zone hinzufügen.
-
-![](images/img_3717.jpg){.thumbnail}
-Wählen Sie einfach den gewünschten Typ des Eintrags aus, klicken Sie auf "Weiter" und erstellen Sie Ihren Zoneneintrag.
-
-![](images/img_3718.jpg){.thumbnail}
-
-
-## Änderungen im Textmodus
-Mit diesem Button können Sie Ihre DNS Zone direkt im Textmodus bearbeiten.
-Diese Funktion ist insbesondere für fortgeschrittene Anwender nützlich, die schnelle Änderungen an den Zoneneinstellungen durchführen möchten.
-
-![](images/img_3719.jpg){.thumbnail}
-Bearbeiten Sie einfach die gewünschten Einträge direkt im angezeigten Fenster und bestätigen Sie die Änderungen.
-
-![](images/img_3720.jpg){.thumbnail}
-
-
-## Standardmäßige TTL
-Mit diesem Button können Sie die TTL (Time to Live, "Lebensdauer") Ihrer DNS Zone ändern, also den Zeitraum, in dem diese im Cache gehalten wird.
-
-![](images/img_3721.jpg){.thumbnail}
-Wählen Sie dazu einfach die gewünschte neue TTL aus und klicken Sie auf "Bestätigen".
-
-![](images/img_3722.jpg){.thumbnail}
-
-
-## A Eintrag
-Ein A Eintrag weist einen Domainnamen (Hostnamen) einer IPv4 Adresse zu.
-Es dürfen nicht gleichzeitig ein A Eintrag und ein CNAME Eintrag für den gleichen Hostnamen verwendet werden.
-
-
-## MX Eintrag
-Ein MX Eintrag legt den für die E-Mail-Adressen der Domain zuständigen E-Mail-Server fest.
-Als Ziel muss zwingend ein Hostname angegeben werden, keine IP-Adresse.
-
-
-## CNAME Eintrag
-Ein CNAME Eintrag dient zur Erstellung eines Alias von einem Hostnamen auf einen anderen Hostnamen.
-Als Ziel muss zwingend ein Hostname angegeben werden, keine IP-Adresse.
-Es dürfen nicht gleichzeitig ein A Eintrag und ein CNAME Eintrag für den gleichen Hostnamen verwendet werden.
-
-
-## TXT Eintrag
-Mit einem TXT Eintrag können Sie zusätzliche, frei definierbare Informationen in Textform zu Ihrer DNS Zone hinzufügen.
-
-
-## SPF Eintrag
-Mit einem SPF Eintrag können Sie festlegen, welche Server E-Mails mit Ihrem Domainnamen versenden dürfen.
-
-Mehr Informationen zu diesem Thema finden Sie in folgender Hilfe:
-
-- []({legacy}2028).
-
-
-
-
-## Zonecheck
-Mit diesem Tool können Sie überprüfen, dass das Update Ihrer DNS Server erfolgreich durchgeführt wird.
-
-Mehr Informationen zum Zonecheck finden Sie in folgender Hilfe:
-
-- []({legacy}1980).
-
-
-
-
-## DNSSEC
-Mit dieser Option können Sie Ihre Domain gegen Cache Poisoning schützen.
-
-Mehr Informationen zu DNSSEC finden Sie in folgender Hilfe:
-
-- []({legacy}609).
-
-
-
-
-## Wie lange dauert es, bis DNS Änderungen aktiv sind?
-DNS Server
-
-- Änderungen an den DNS Servern können bis zu 48 Stunden benötigen, bis sie aktiv sind.
-
-Zone DNS
-- Änderungen an der DNS Zone können bis zu 24 Stunden benötigen, bis sie aktiv sind.
-
-
-
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
