@@ -5,7 +5,7 @@ excerpt: In dieser Anleitung erfahren Sie, wie Sie das Root-Passwort Ihres VPS Ã
 section: Diagnose und Rettungsmodus
 ---
 
-**Stand 20.11.2017**
+**Stand 27.06.2018**
 
 ## Einleitung
 
@@ -16,6 +16,7 @@ Bei der Installation oder Neuinstallation einer Distribution wurde Ihnen ein Pas
 - Sie sind via SSH auf Ihrem VPS eingeloggt (Root-Zugriff)
 - [Neustart des VPS im Rescue-Modus](https://docs.ovh.com/de/vps/rescue/){.external}
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Beschreibung
 

@@ -5,7 +5,7 @@ excerpt: Cómo cambiar la contraseña «root» de un VPS
 section: Diagnóstico y modo de rescate
 ---
 
-**Última actualización: 01/02/2018**
+**Última actualización: 27/06/2018**
 
 ## Objetivo
 
@@ -16,6 +16,7 @@ Al instalar o reinstalar una distribución, recibirá una contraseña para acced
 - Estar conectado al VPS por SSH (acceso *root*).
 - [Reiniciar el VPS en modo de rescate](https://docs.ovh.com/es/vps/rescue/){.external}.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Procedimiento
 

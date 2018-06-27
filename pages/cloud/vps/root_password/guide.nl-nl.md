@@ -5,7 +5,7 @@ excerpt: Leer hoe u het root-wachtwoord van een VPS kunt wijzigen.
 section: Diagnose en Reddingsmodus
 ---
 
-** Laatste update 20/11/2017**
+**Laatste update 27/06/2018**
 
 ## Introductie
 
@@ -17,6 +17,7 @@ Leer hoe u het root-wachtwoord van een VPS kunt wijzigen.
 - U moet SSH-toegang tot de VPS hebben (root-toegang).
 - [Start uw VPS opnieuw op in de reddingsmodus.](https://docs.ovh.com/nl/vps/rescue)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Instructies
 
