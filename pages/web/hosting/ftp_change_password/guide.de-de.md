@@ -35,7 +35,7 @@ Entsprechend Ihrem [Webhosting Angebot](https://www.ovh.de/hosting/){.external} 
 
 - **für Angebote, mit denen nur ein FTP-Benutzer angelegt werden kann** (Start 10M und Basic): Klicken Sie in der Tabelle in der Spalte `Passwort`{.action} auf das Bleistift-Symbol, geben Sie im Textfeld das neue Passwort ein und bestätigen Sie die Änderung.
 
-- **für Angebote, mit denen mehrere FTP-Benutzer angelegt werden können** (Pro und Performance): Klicken Sie in der Tabelle rechts neben dem betreffenden Benutzer auf das Zahnrad-Symbol und anschließend auf `Passwort ändern`{.action}. Geben Sie im angezeigten Fenster das neue Passwort ein, bestätigen Sie dieses und klicken Sie anschließend auf den Button `Bestätigen`{.action}.
+- **für Angebote, mit denen mehrere FTP-Benutzer angelegt werden können** (Pro, Performance und Cloud Web): Klicken Sie in der Tabelle rechts neben dem betreffenden Benutzer auf das Zahnrad-Symbol und anschließend auf `Passwort ändern`{.action}. Geben Sie im angezeigten Fenster das neue Passwort ein, bestätigen Sie dieses und klicken Sie anschließend auf den Button `Bestätigen`{.action}.
 
 Die Änderung benötigt einige Minuten, bis sie wirksam ist.
 
