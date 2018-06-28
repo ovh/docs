@@ -69,8 +69,6 @@ Connectez-vous à votre [espace client](https://www.ovh.com/manager/web){.extern
 
 Dans la colonne "Etat" s'il apparaît "suspendu", cela indique que votre compte n'est plus actif.
 
-Dans ce cas, vous pouvez contacter notre support au 1007 afin de renouveler votre offre Exchange.
-
 
 ## Le pointage du domaine (reception uniquement)
 Concernant un souci de réception, il est nécessaire de vérifier le pointage de votre domaine.
@@ -87,7 +85,3 @@ Plusieurs possibilités de pointages sont possibles :
 La vérification du pointage se réalise au niveau de la zone DNS de votre domaine. Si vous pointez sur des DNS externes, il faudra vérifier la zone chez votre prestataire.
 
 Si vous utilisez les serveurs DNS OVH, il faut dans ce cas depuis votre [espace client](https://www.ovh.com/manager/web){.external} sélectionner votre domaine puis cliquer sur l'onglet "Zone DNS". Vérifiez ici les enregistrements de type MX.
-
-
-## Le probleme persiste ?
-Notre support reste disponible de 08h à 20h00 du lundi au vendredi et de 09h00 à 17h00 le samedi. Vous pouvez composer le 1007 ou nous envoyer un e-mail depuis votre [espace client](https://www.ovh.com/manager/web){.external}, section "Assistance".

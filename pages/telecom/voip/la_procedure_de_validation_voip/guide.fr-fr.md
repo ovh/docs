@@ -63,7 +63,6 @@ La procédure pour les clients **Français** est à renvoyer par **voiepostale**
     -   Photocopie recto/verso de votre pièce d'identité du président de l'association
     -   Copie de la publication au journal officiel des status de l'association
     -   Attestation du président de l'association indiquant que la personne dépositaire du dossier est habilitée à agir au nom de l'association
--   ***Collectivités*****:** Nous vous invitons à joindre notre support commercial au **1007** afin de vous accompagner dans votre commande
 
 ------------------------------------------------------------------------
 
