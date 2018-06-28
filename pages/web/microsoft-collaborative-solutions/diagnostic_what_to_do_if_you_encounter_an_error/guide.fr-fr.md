@@ -53,7 +53,7 @@ Il est nécessaire de répondre à cet e-mail afin de réaliser le déblocage du
 
 - ATTENTION : L'abonnement au compte est expiré :
 
-Dans ce cas votre abonnement n'est plus actif. La réception et l'envoi sont désactivés. Il est nécessaire de contacter notre support Exchange au  **1007**  afin de réactiver votre service.
+Dans ce cas votre abonnement n'est plus actif. La réception et l'envoi sont désactivés.
 
 - ATTENTION : Le compte est bloqué par la politique de sécurité :
 

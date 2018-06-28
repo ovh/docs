@@ -43,7 +43,7 @@ La correction du problème se fera en modifiant les paramètres avancés de votr
 
 -   Vous disposez d'un Plug&Phone OVH :
 
-Contactez-nous au 1007 ou par e-mail en suivant ce lien : [Support OVH](http://www.ovhtelecom.fr/support/support/support.xml){.external-link}
+Contactez par e-mail en suivant ce lien : [Support OVH](http://www.ovhtelecom.fr/support/support/support.xml){.external-link}
 
 ------------------------------------------------------------------------
 
@@ -72,7 +72,7 @@ Vous devez vous assurer qu'une même ligne n'est pas configurée sur deux ou plu
 
 -   Vous disposez d'un Plug&Phone OVH :
 
-Contactez-nous au 1007 ou par e-mail en suivant ce lien : [Support OVH](http://www.ovhtelecom.fr/support/support/support.xml){.external-link}
+Contactez-nous par e-mail en suivant ce lien : [Support OVH](http://www.ovhtelecom.fr/support/support/support.xml){.external-link}
 
 ------------------------------------------------------------------------
 
@@ -130,7 +130,7 @@ Un téléchargement ou le visionnage d'une vidéo va consommer de la bande passa
 
 -   la QoS (Quality of Service) : une bonne configuration de la QoS permet de favoriser le protocole SIP sur le reste du trafic de votre connexion internet.
 
-La configuration de la QoS dépend du modem ainsi que du fournisseur d'accès Internet. Si vous possédez une connexion internet OVH, n'hésitez pas à nous contacter au 1007 ou par e-mail en suivant ce lien : [Support OVH](http://www.ovhtelecom.fr/support/support/support.xml){.external-link}.
+La configuration de la QoS dépend du modem ainsi que du fournisseur d'accès Internet. Si vous possédez une connexion internet OVH, n'hésitez pas à nous contacter par e-mail en suivant ce lien : [Support OVH](http://www.ovhtelecom.fr/support/support/support.xml){.external-link}.
 
 -   l'architecture de votre réseau : un réseau surchargé associé à un routeur entrée de gamme peut générer de la gigue.
 
@@ -184,11 +184,11 @@ Pour identifier la cause de cette erreur :
     -   Cliquez sur "**Activer le nouveau téléphone**".
     -   Cliquez sur le bouton "**Gérer**".
     -   Pour activer le nouveau téléphone, cliquez sur "**Valider**".
-    -   Si vous avez contacté notre support, il se peut que le mot de passe de test temporaire soit encore actif. Contactez notre support au 1007 afin de vérifier qu'il est bien supprimé.
+    -   Si vous avez contacté notre support, il se peut que le mot de passe de test temporaire soit encore actif. 
 
 **Si vous utilisez votre propre équipement SIP :**
 
--   Si vous avez contacté notre support, il se peut que le mot de passe de test temporaire soit encore actif. Contactez notre support au 1007 afin de vérifier qu'il est bien supprimé.
+-   Si vous avez contacté notre support, il se peut que le mot de passe de test temporaire soit encore actif.
 -   Vérifiez que vous n'avez pas deux clients SIP enregistrés avec la même ligne.
 -   Vérifiez que le mot de passe SIP est correct dans votre configuration.
 -   Il se peut également que sur certains équipements, le REGISTER soit envoyé mais que votre équipement ne réponde pas au challenge. Vérifiez votre configuration pour ce point.

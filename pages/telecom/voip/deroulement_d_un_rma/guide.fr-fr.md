@@ -99,11 +99,3 @@ Passé le délai de clôture du RMA, soit au bout de 45 jours, vous recevez l'e-
         pas reçu le matériel lié au retour ouvert en date du #DATE# : Modèle : #MODEL# Réference/Mac : #REFERENCE# Le bon de
         retour, pour le renvoi de ce matériel, était le suivant : Lien vers le PDF du RMA. Nous sommes donc dans
         l'obligation de fermer votre ticket.
-
-Si vous aviez envoyé votre matériel et que vous avez quand même reçu cet mail, nous vous invitons à contacter notre support au 1007 (du lundi au vendredi de 08h00 à 20h00 et le samedi 09h00 à 17h00).
-
-------------------------------------------------------------------------
-
-
-
-
