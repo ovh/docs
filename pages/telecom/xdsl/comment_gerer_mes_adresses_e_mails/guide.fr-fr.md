@@ -103,7 +103,7 @@ Pour finir, une demande de confirmation pour la suppression apparaître. Suite �
 
 Le mail s'intitule : "**Suppression de votre Hosted Email !**".
 
-Si vous venez à **supprimer votre pack xDSL** mais que vous souhaitez **conserver vos comptes hosted**, sachez que cela est possible pour une durée de **6 mois**. Rapprochez-vous du support telecom au 1007 (ouvert du lundi au vendredi de 8h à 20h et le samedi de 9h à 17h) afin d'en effectuer la demande.
+Si vous venez à **supprimer votre pack xDSL** mais que vous souhaitez **conserver vos comptes hosted**, sachez que cela est possible pour une durée de **6 mois**. 
 
 -   **Exchange 2013** :
 

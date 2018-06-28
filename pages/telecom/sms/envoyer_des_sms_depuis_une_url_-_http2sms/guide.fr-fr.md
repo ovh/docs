@@ -87,7 +87,7 @@ Lors d'un échec, la cause est inscrite dans le champs message pour le json ou l
 - En cas de succès :
 
 ```xml
-<?xml version="1.0" encoding="UTF-8" ?><response><status>100</status><creditLeft>1007</creditLeft><smsIds><smsId>10867690</smsId></smsIds></response>
+<?xml version="1.0" encoding="UTF-8" ?><response><status>100</status><creditLeft>1987</creditLeft><smsIds><smsId>10867690</smsId></smsIds></response>
 ```
 
 - En cas d'échec :
@@ -102,7 +102,7 @@ Lors d'un échec, la cause est inscrite dans le champs message pour le json ou l
 - En cas de succès :
 
 ```json
-{"status":100,"creditLeft":"1007","SmsIds":["10867690"]}
+{"status":100,"creditLeft":"1987","SmsIds":["10867690"]}
 ```
 
 - En cas d'échec :
@@ -125,7 +125,7 @@ Lors d'un échec, la cause est inscrite dans le champs message pour le json ou l
 </HEAD>
 <BODY>
 OK<br>
-1007<br>
+1987<br>
 10867690<br>
 </BODY>
 </HTML>
@@ -152,7 +152,7 @@ KO<br>Missing message. For more informations : http://guides.ovh.com/httpToSms<b
 
 ```
 OK
-1007
+1987
 10867690
 ```
 

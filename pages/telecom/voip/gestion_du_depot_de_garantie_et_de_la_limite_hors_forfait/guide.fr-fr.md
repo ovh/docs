@@ -144,9 +144,3 @@ Si votre groupe est suspendu pour dépassement du hors-forfait autorisé, la pre
 -   Cliquez sur "**Consommation générale"**.
 
 Une fois cette vérification faite, vous pouvez débloquer le groupe en faisant un [dépôt de garantie par virement](#Gestiondudépôtdegarantieetdelalimitehorsforfait-DepotDeGarantie).
-
-Vous pouvez contacter le support au 1007 **avec une preuve de ce virement en possession** pour débloquer temporairement le groupe en attendant de recevoir réellement le paiement.
-
-------------------------------------------------------------------------
-
-

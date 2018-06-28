@@ -95,4 +95,4 @@ Vous devez régulariser une facture impayée dans les 7 jours à compter de l’
 
 - Votre question ne figure pas dans la FAQ ?
 
-Contactez-nous par [mail](https://www.ovh.com/fr/support/nous-contacter/){.external},  ou par téléphone au 1007 ( Gratuit depuis un poste fixe. Du lundi au vendredi, de 08h à 20h, le samedi de 09h à 17h. Numéro international : +33 972 10 10 07 Prix d'un appel local vers un fixe en France).
+Contactez-nous par [mail](https://www.ovh.com/fr/support/nous-contacter/){.external}.

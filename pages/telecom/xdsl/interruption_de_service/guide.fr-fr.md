@@ -70,8 +70,6 @@ Tapez dans la barre d'adresse de votre navigateur l'adresse <http://192.168.1.25
 
 -   Événement extérieur : le câble téléphonique a-t-il subit des dommages ? (ex : câble arraché suite à la chute d'un arbre, câble sectionné, poteau téléphonique endommagé). Dans ce cas de figure, vous pouvez déclarer le dommage directement sur <http://assistance.orange.fr/1013-dommage-reseau.php>. Événement climatique ? (Orage, vents forts).
 
-Si malgré toutes ces vérifications, le défaut de synchronisation est toujours présent, nous vous invitons à prendre contact au **1007** (gratuit depuis un poste fixe - Du**lundi au vendredi de 8h à 20h et le samedi de 9h à 17h**).
-
 ------------------------------------------------------------------------
 
 ### Connexion {#connexion}
@@ -99,8 +97,6 @@ Réinitialisation de votre modem OVH :
 ![](images/TG788vnreset.png){.thumbnail}
 
 Pour effectuer une réinitialisation de votre modem, restez appuyé sur le bouton "Reset" à l'aide d'un trombone jusqu'à ce que votre voyant "**Upgrade**" s'allume en bleu. Sur certaines versions de modems, ça sera le voyant "**Power**" qui passera à l'orange. Pour plus de détails, veuillez suivre le guide suivant : [Réinitialisation du modem]({legacy}18121042)
-
-Si malgré toutes ces vérifications le défaut de connexion persiste, nous vous invitons à prendre contact au **1007** (gratuit depuis un poste fixe - Du**lundi au vendredi de 8h à 20h et le samedi de 9h à 17h**).
 
 ------------------------------------------------------------------------
 
@@ -135,7 +131,7 @@ Que faire si votre modem est synchronisé mais non connecté :
 
     Le fonctionnement basique du modem (donc par défaut) est le mode **routeur**.
 
-    Pour effectuer la configuration de votre modem, rendez-vous sur son interface web (<http://192.168.1.254>) -&gt; "Thomson gateway" -&gt; "configuration" -&gt; "setup my thomson gateway".Ensuite, pour établir une connexion PPPoE sur le modem (ou sur votre routeur), récupérez vos identifiants de connexion PPPoE reçus par e-mail lors de l'activation de votre accès ou sur demande au le support (1007) puis, dans l'interface web, rendez-vous dans la rubrique "Broadband connexion" -&gt; "internet service" et renseignez les identifiants. (Si bridge, effectuez la connexion directement sur l'interface de votre routeur).
+    Pour effectuer la configuration de votre modem, rendez-vous sur son interface web (<http://192.168.1.254>) -&gt; "Thomson gateway" -&gt; "configuration" -&gt; "setup my thomson gateway".Ensuite, pour établir une connexion PPPoE sur le modem (ou sur votre routeur), récupérez vos identifiants de connexion PPPoE reçus par e-mail lors de l'activation de votre accès puis, dans l'interface web, rendez-vous dans la rubrique "Broadband connexion" -&gt; "internet service" et renseignez les identifiants. (Si bridge, effectuez la connexion directement sur l'interface de votre routeur).
 
 -   Votre modem n'est pas synchronisé : reportez-vous au premier point du paragraphe SDSL**.**
 
@@ -147,7 +143,6 @@ Pour configurer le modem OVH en bridge ou en mode routeur, récupérez un fichie
 
 Ensuite, rendez-vous sur l'interface web de votre modem <http://192.168.1.254> -&gt; Cliquez sur Thomson gateway -&gt; configuration -&gt; "save or restore my thomson gateway" et chargez le fichier .ini récupéré via le FTP.
 
-Si malgré toutes ces vérifications le défaut de synchronisation ou de connexion persiste, nous vous invitons à prendre contact au **1007** (gratuit depuis un poste fixe - Du**lundi au vendredi de 8h à 20h et le samedi de 9h à 17h**).
 
 ------------------------------------------------------------------------
 
