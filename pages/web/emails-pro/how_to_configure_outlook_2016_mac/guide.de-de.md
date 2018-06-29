@@ -21,7 +21,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 > [!primary]
 >
-> Sie verwenden Outlook 2016 für Windows? Die zugehörige Dokumentation finden Sie hier: [Konfiguration Ihrer E-Mail-Adresse auf Outlook 2016 für Mac](https://docs.ovh.com/de/emails-pro/konfiguration-outlook-2016/){.external}
+> Sie verwenden Outlook 2016 für Windows? Die zugehörige Dokumentation finden Sie hier: [Konfiguration Ihrer E-Mail-Adresse auf Outlook 2016 für Windows](https://docs.ovh.com/de/emails-pro/konfiguration-outlook-2016/){.external}
 >
 
 ## Beschreibung
