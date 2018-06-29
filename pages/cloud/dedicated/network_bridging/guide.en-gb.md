@@ -17,9 +17,9 @@ Bridged networking can be used to configure your Virtual Machines. Some tweaking
 
 ## Requirements
 
-* You need to have a dedicated server with a hypervisor installed (Ex: [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
-* You need to have at least one [failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml) address attached to the server
-* You need to have access to [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a dedicated server with a hypervisor installed (Ex: [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
+* at least one [failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml) address attached to the server
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
@@ -31,7 +31,7 @@ For example purposes, we will use the following values in our code samples, whic
 
 ### Assign a virtual MAC address
 
-Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table
+Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table
 
 ![Failover IP](images/virtual_mac_01.png){.thumbnail}
 
@@ -57,7 +57,7 @@ Then, your gateway address would be:
 
 #### Debian and Debian based operating systems (Ubuntu, CrunchBang, SteamOS, etc)
 
-Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in ``/etc/network/interfaces``. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
+Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/network/interfaces`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
 
 ```bash
 auto lo eth0
@@ -76,7 +76,7 @@ Save and close the file, then reboot the virtual machine.
 
 #### Redhat and Redhat based operating systems (CentOS 6, Scientific Linux, ClearOS, etc)
 
-Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in ``/etc/network/interfaces``. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
+Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/network/interfaces`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
 
 ```bash
 DEVICE=eth0
@@ -95,7 +95,7 @@ HWADDR=MY:VI:RT:UA:LM:AC
 
 Now, save and close the file.
 
-Next, open the virtual machine's routing file, which is located in ``/etc/sysconfig/network-scripts/route-eth0``. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
+Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/route-eth0`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
 
 ```bash
 GATEWAY_IP dev eth0
@@ -111,7 +111,7 @@ Save and close the file and then reboot your virtual machine.
 > For CentOS 7, the name of the network adapter will vary, depending on the installation options. You will need to verify the adapter name and use it to configure your virtual machine. Use the command `ipaddr`{.action} to find your interface name.
 > 
 
-Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in ``/etc/sysconfig/network-scripts/ifcfg-(interface name)``. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
+Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/sysconfig/network-scripts/ifcfg-(interface name)`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
 
 ```bash
 DEVICE=(insert interface Name)
@@ -130,7 +130,7 @@ HWADDR=MY:VI:RT:UA:LM:AC
 
 Save and close the file.
 
-Next, open the virtual machine's routing file, which is located in ``/etc/sysconfig/network-scripts/route-(interface-name)``. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
+Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/route-(interface-name)`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
 
 ```bash
 GATEWAY_IP - 255.255.255.255 (insert interface Name)
@@ -140,7 +140,7 @@ default GATEWAY_IP
 
 #### OpenSUSE
 
-Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in ``/etc/sysconfig/network/ifcfg-ens32``. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
+Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/sysconfig/network/ifcfg-ens32`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
 
 ```bash
 DEVICE=ens32
@@ -159,7 +159,7 @@ HWADDR=MY:VI:RT:UA:LM:AC
 
 Save and close the file.
 
-Next, open the virtual machine's routing file, which is located in ``/etc/sysconfig/network-scripts/ifroute-ens32``. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
+Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/ifroute-ens32`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
 
 ```bash
 GATEWAY_IP - 255.255.255.255 ens32
@@ -167,7 +167,7 @@ NETWORK_GW_VM - 255.255.255.0 ens32
 default GATEWAY_IP
 ```
 
-Next, open the virtual machine's DNS configuration file, which is located in ``/etc/sysconfig/network/resolv.conf``. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below.
+Next, open the virtual machine's DNS configuration file, which is located in `/etc/sysconfig/network/resolv.conf`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below.
 
 ```bash
 nameserver 213.186.33.99 # OVH DNS Server
@@ -188,7 +188,7 @@ Save and close the file, then reboot your virtual machine.
 
 #### FreeBSD 8.0
 
-Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in ``/etc/rc.conf``. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
+Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/rc.conf`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
 
 ```bash
 ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
