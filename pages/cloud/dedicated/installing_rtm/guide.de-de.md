@@ -35,7 +35,7 @@ Sobald Sie RTM im Bereich `Dedicated`{.action} Ihres Kundencenters installiert h
 Wenn Sie via SSH auf Ihrem Server eingeloggt sind, brauchen Sie nur noch folgenden Befehl auszuführen:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh | sh install_rtm.sh
+wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh ; sh install_rtm.sh
 ```
 
 ### Installation von RTM unter Windows

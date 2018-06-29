@@ -35,7 +35,7 @@ Voit valvoa palvelintasi, kun RTM on asennettu hallintapaneeliisi osiossa `Dedik
 Kun olet kirjautunut palvelimellesi SSH-yhteydellä, aja seuraava komento:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh | sh install_rtm.sh
+wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh ; sh install_rtm.sh
 ```
 
 ### RTM:n asentaminen Windowsilla
