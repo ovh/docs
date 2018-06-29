@@ -13,7 +13,7 @@ Lors de l'utilisation du Load-Balancer, vos clients ne se connectent pas directe
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/natIp
+> @api {GET} /ipLoadbalancing/{serviceName}/listNatIp
 > 
 
 

@@ -163,7 +163,7 @@ Don't forget to allow IPLoadbalancing trafic to your backends:
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/natIp
+> @api {GET} /ipLoadbalancing/{serviceName}/listNatIp
 > 
 Get IP range used by OVH Load Balancer: 10.108.0.0/16
 
