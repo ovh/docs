@@ -1,65 +1,72 @@
 ---
-title: Guía de creación de una dirección de correo electrónico
-excerpt: En esta guía encontrará toda la información necesaria para crear su dirección de correo electrónico.
+title: 'Crear una dirección de correo electrónico en un MX Plan'
+excerpt: 'Cómo crear una dirección de correo electrónico en la solución MX Plan'
 slug: correo_guia_de_creacion_de_una_direccion_de_correo_electronico
-section: Gestión de la cuenta de correo
+section: 'Gestión de la cuenta de correo'
 ---
 
-## Conexión al área de cliente
-Conéctese al [área de cliente](https://www.ovh.com/manager/web/) con su ID de cliente y contraseña.
+**Última actualización: 29/06/2018**
 
-Seleccione su dominio en la sección «Correo electrónico».
+## Objetivo
 
-Dentro del apartado «Correo electrónico», haga clic en «Añadir una cuenta».
+Las direcciones de correo de la solución MX Plan permiten enviar y recibir mensajes desde cualquier dispositivo.
 
-![](images/img_3636.jpg){.thumbnail}
-Para poder añadir cuentas, es necesario tener un producto de correo válido:
+**Esta guía explica cómo crear una dirección de correo electrónico en un MX Plan.**
 
-- Hosting gratuito Start 10M: 1 cuenta de correo.
-- [Web hosting OVH](https://www.ovh.es/hosting/): de 10 a 1.000 cuentas de correo.
-- [MX Plan](https://www.ovh.es/productos/mxplan.xml): de 5 a 1.000 cuentas de correo.
+## Requisitos
 
-## Información de la cuenta de correo
-En la nueva pantalla, introduzca los datos relativos a la dirección de correo electrónico:
+- Tener una solución MX Plan (incluida en un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external} o disponible por separado).
+- Poder crear más direcciones de correo electrónico en su MX Plan.
+- Tener acceso a la gestión del MX Plan desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-- Nombre de la cuenta: Indique el nombre de la dirección de correo que desee.
-- Descripción de la cuenta: Introduzca una descripción asociada a la cuenta.
-- Tamaño de la cuenta: Seleccione la capacidad de la cuenta de correo.
-- Contraseña: Introduzca una contraseña para la cuenta de correo.
-- Repetir contraseña: Repita la contraseña, para estar seguro de que la ha introducido correctamente.
+## Procedimiento
 
-La contraseña debe cumplir los siguientes criterios: 
+### 1. Acceder a la gestión del servicio de correo
 
-- mínimo 9 caracteres;
-- máximo 30 caracteres; 
-- sin caracteres acentuados.
+Para acceder a la gestión del servicio, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en `Correo electrónico`{.action} en la columna izquierda y seleccione el dominio para el que haya contratado la solución MX Plan. A continuación, abra la pestaña `Correo electrónico`{.action}.
 
-Haga clic en «Aceptar» para continuar.
+Se mostrará una tabla con toda las direcciones de correo electrónico creadas en el MX Plan.
 
-En la parte superior de la pantalla, aparecerá una notificación relativa a la creación de la cuenta de correo.
+![Correo electrónico](images/email-creation-step1.png){.thumbnail}
 
-Si necesita ayuda para configurar su direcciones de correo, le recomendamos estas guías:
+### 2. Crear la dirección de correo electrónico
 
-- [Guías de configuración del correo](https://www.ovh.es/hosting/guias/)
+Para crear una nueva dirección de correo electrónico, haga clic en el botón `Crear una dirección de correo`{.action}. A continuación, introduzca la información solicitada:
 
-![](images/img_2385.jpg){.thumbnail}
+|Campo|Descripción|  
+|---|---|  
+|Nombre de la cuenta|Introduzca el nombre que quiera asignarle a la dirección de correo (por ejemplo, nombre.apellido). El dominio aparecerá ya completado.|  
+|Descripción de la cuenta|Introduzca una descripción que le permita diferenciar esta cuenta del resto de cuentas de su área de cliente de OVH.|  
+|Tamaño de la cuenta|Seleccione el tamaño de la cuenta de correo, es decir, su capacidad para almacenar mensajes de correo electrónico.|  
+|Contraseña|Introduzca una contraseña para la cuenta de correo y confírmela.|
 
-## ¿Cómo cambiar la contraseña de mis direcciones de correo?
-En el [área de cliente](https://www.ovh.com/manager/web/), seleccione su dominio en la sección «Correo electrónico».
+Haga clic en `Siguiente`{.action} para continuar. Compruebe que la información que aparece es correcta y haga clic en `Siguiente`{.action}.
 
-Dentro del apartado «Correo electrónico», haga clic en el engranaje situado al final de la línea correspondiente a la cuenta de correo que desea modificar y seleccione «Cambiar la contraseña».
+Por último, haga clic en `Aceptar`{.action} para terminar de crear la dirección de correo. Repita esta operación para cada cuenta de correo que quiera crear.
 
-![](images/img_3637.jpg){.thumbnail}
-Introduzca la nueva contraseña y repítala en el segundo campo. No necesitará la antigua contraseña.
+> [!primary]
+>
+> Por motivos de seguridad, se recomienda respetar las indicaciones que se ofrecen al introducir la nueva contraseña. También es aconsejable:
+>
+> - No utilizar la misma contraseña dos veces.
+>
+> - Elegir una contraseña que no guarde ninguna relación con sus datos personales, evitando cualquier mención a su nombre, apellidos o fecha de nacimiento, por ejemplo.
+>
+> - Cambiar regularmente las contraseñas.
+>
+> - No anotar las contraseñas en un papel ni enviárselas por correo electrónico.
+>
+> - No guardar las contraseñas en el navegador de internet, aunque este se lo sugiera.
+>
 
-La contraseña debe cumplir los siguientes criterios: 
+![Correo electrónico](images/email-creation-step2.png){.thumbnail}
 
-- mínimo 9 caracteres;
-- máximo 30 caracteres; 
-- sin caracteres acentuados.
+### 3. Utilizar la dirección de correo electrónico
 
-Haga clic en «Aceptar».
+Para utilizar sus direcciones de correo electrónico, OVH pone a su disposición el cliente de correo web (webmail) Roundcube. Puede conectarse desde la dirección <https://www.ovh.es/mail/>, introduciendo las claves de su dirección de correo electrónico creada con OVH.
 
-El cambio de la contraseña puede tardar unos minutos en aplicarse.
+Para más información sobre el uso de Roundcube, consulte nuestra [Guía de uso de Roundcube](https://docs.ovh.com/es/emails/webmail_guia_de_uso_de_roundcube/){.external}. Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte la siguiente documentación: <https://docs.ovh.com/es/emails/>.
 
-![](images/img_2387.jpg){.thumbnail}
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
