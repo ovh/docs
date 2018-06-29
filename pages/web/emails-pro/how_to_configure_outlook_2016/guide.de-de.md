@@ -70,8 +70,8 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 
 |Servertyp|Servername|Verschlüsselungsmethode|Port|
 |---|---|---|---|
-|Für eintreffende E-Mails|pro1.mail.ovh.net|SSL/TLS|993|
-|Für ausgehende E-Mails|pro1.mail.ovh.net|STARTTLS|587|
+|Eingangsserver|pro1.mail.ovh.net|SSL/TLS|993|
+|Ausgangsserver|pro1.mail.ovh.net|STARTTLS|587|
 
 ### Schritt 2: E-Mail-Adresse verwenden
 
@@ -81,7 +81,7 @@ OVH bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen](htt
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder einem Webhosting-Angebot auf Outlook 2016 für Windows](https://docs.ovh.com/de/emails/konfiguration-outlook-2016/){.external}
+[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder einem Webhosting Angebot auf Outlook 2016 für Windows](https://docs.ovh.com/de/emails/konfiguration-outlook-2016/){.external}
 
 [Konfiguration von Exchange auf Outlook 2016 für Windows](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-automatische-konfiguration-auf-outlook-2016/){.external}
 
