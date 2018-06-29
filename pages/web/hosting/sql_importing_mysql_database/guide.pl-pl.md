@@ -1,231 +1,174 @@
 ---
-title: 'Hosting www: importowanie bazy danych MySql'
-excerpt: Przewodnik na temat importowania bazy danych.
-id: '1393'
-slug: hosting_www_importowanie_bazy_danych_mysql
-section: Bazy danych
+title: 'Import kopii zapasowej do bazy danych hostingu'
+slug: hosting-przewodnik-import-bazy-danych-mysql
+excerpt: 'Dowiedz się, jak importować kopię zapasową do bazy danych Twojego hostingu WWW OVH'
+section: 'Bazy danych'
+order: 4
 ---
 
+**Ostatnia aktualizacja dnia 2018-06-29**
 
-## Wstępne wymagania
-Musisz dysponować:
+## Wprowadzenie
 
+Bazy danych, wykorzystywane obecnie przez niemal wszystkie systemy zarządzania treścią ( Content Management System lub CMS), na przykład WordPress czy Joomla!, umożliwiają przechowywanie elementów dynamicznych, takich jak komentarze czy artykuły. Możesz z różnych powodów potrzebować zaimportować dane do jednej z Twoich baz, aby zmodyfikować lub zastąpić jej zawartość.
 
-- Plikiem z kopią bazy danych (dump*) otrzymanym podczas wykonywania kopii bazy danych (Przewodnik na temat kopii zapasowej bazy danych SQL []({legacy}1394)). Kopia bazy danych to zazwyczaj plik .sql. 
-Jeśli Twoja baza danych została utworzona u dostawcy innego niż OVH, skontaktuj się z nim, aby otrzymać informacje dotyczące uzyskania kopii bazy danych. 
+**Dowiedz się, jak importować kopię zapasową do bazy danych Twojego hostingu WWW OVH.**
 
-- Parametrami takimi jak identyfikator, hasło i serwer sql bazy danych, które pozwolą Ci na połączenie się z bazą danych. 
-Zapoznaj się z przewodnikiem na temat odzyskiwania danych do logowania do bazy SQL:[]({legacy}1374)
+## Wymagania początkowe
 
+- Posiadanie [hostingu WWW OVH](https://www.ovh.pl/hosting/){.external}
+- Posiadanie bazy danych utworzonej w ramach [pakietu hostingowego WWW OVH](https://www.ovh.pl/hosting/){.external}
+- Posiadanie kopii zapasowej danych, które chcesz importować do bazy lub które chcesz przywrócić
+- W zależności od metody importu, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} lub posiadanie informacji umożliwiających zalogowanie do bazy danych
 
-![](images/img_1802.jpg){.thumbnail}
+## W praktyce
 
+Przed rozpoczęciem operacji określ metodę, której użyjesz do importu kopii zapasowej do odpowiedniej bazy danych.  W zależności od Twoich kompetencji technicznych masz do wyboru kilka możliwości.
 
-## Z poziomu panelu klienta
-Najprostszym i najszybszym rozwiązaniem dotyczącym zaimportowania bazy danych jest wykonanie tej operacji w [panelu klienta OVH](https://www.ovh.com/manager/).
-Zaletą tej metody jest brak limitu rozmiaru importowanego pliku kopii zapasowej.
+- **Przywrócenie bazy danych z wcześniejszej daty**: rozwiązanie to umożliwia przywrócenie zawartości Twoich baz danych dzięki kopiom zapasowym zapisanym w narzędziu do tworzenia kopii zapasowych OVH. Rozwiązanie to nie wymaga specjalnych kompetencji technicznych, a operację można przeprowadzić w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-Po zalogowaniu do [panelu klienta](https://www.ovh.com/manager/) za pomocą identyfikatora klienta i hasła, wybierz hosting w menu z lewej strony i przejdź do sekcji Bazy danych.
+- **Import pliku z kopią zapasową**: rozwiązanie to umożliwia import danych z pliku kopii zapasowej do jednej z Twoich baz danych.  Operacja ta przeprowadzana jest w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-![](images/img_4125.jpg){.thumbnail}
-Z prawej strony bazy danych, do której chcesz zaimportować kopię, kliknij na ikonkę koła zębatego i wybierz "Importuj plik". 
+- **Import realizowany w interfejsie phpMyAdmin**: rozwiązanie wymaga zalogowania się do interfejsu phpMyAdmin. Aby skorzystać z tej metody, konieczna jest znajomość interfejsu phpMyAdmin. Ponadto należy pamiętać, że plik kopii zapasowej nie może przekraczać określonego rozmiaru.
 
-Następnie przejdź przez kolejne etapy, aby zaimportować kopię SQL.
+- **Import przy użyciu skryptu**: rozwiązanie wymaga utworzenia skryptu służącego do wykonania importu. Skrypt przechowywany jest na Twoim hostingu OVH. W przypadku tej metody konieczna jest odpowiednia wiedza umożliwiająca utworzenie skryptu. 
 
-![](images/img_4126.jpg){.thumbnail}
+- **Import przy użyciu komendy SSH**: rozwiązanie to wymaga zalogowania się do przestrzeni dyskowej przez protokół SSH, a następnie zastosowania odpowiednich komend pozwalających połączyć się z bazą danych. Ten typ dostępu możliwy jest, jeśli posiadasz zaawansowane umiejętności oraz masz wykupioną usługę [hostingu OVH](https://www.ovh.pl/hosting/){.external}.
 
+Niektóre z powyższych metod nie są powiązane z interfejsem OVH. W takich przypadkach wykonaj operację, bazując na własnej wiedzy. Poniżej zamieszczamy kilka pomocnych informacji, nie zastąpią one jednak pomocy technicznej webmastera.
 
-## Z poziomu PhpMyAdmin dla MySQL
-Połącz się z bazą danych za pomocą PhpMyAdmina.
+Przejdź do metody importu, która Cię interesuje opisanej w dalszej części dokumentacji.
 
-Interfejs ten jest dostępny na tej stronie:
-[PhpMyAdmin OVH](https://phpmyadmin.ovh.net)
+> [!warning]
+>
+> OVH udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie.  Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
+>
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+>
 
-Zapoznaj się z przewodnikiem na temat PhpMyAdmina: []({legacy}1374)
+### Przywracanie kopii zapasowej w Panelu klienta.
 
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
-- Po zalogowaniu do PhpMyAdmina wybierz bazę danych klikając na jej nazwę.
+Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie bazy danych, którą chcesz przywrócić do wcześniejszej daty, a następnie kliknij `Przywróć kopię zapasową`{.action}. Pamiętaj, że operacja ta spowoduje zastąpienie zawartości aktualnej bazy danych zawartością kopii zapasowej.
 
-- Następnie kliknij na "Importuj".
+![import bazy danych ovh](images/database-import-step5.png){.thumbnail}
 
-- Wybierz plik z kopia bazy klikając na "Przeglądaj" (uwaga: plik nie może przekroczyć 16 MB).
+Wyświetlą się wówczas wszystkie dostępne kopie zapasowe wybranej bazy danych. Będziesz mógł sprawdzić dokładną datę wykonanych kopii zapasowych, a także datę, w której zostaną one usunięte z narzędzia OVH.
 
-- Kliknij na "Wykonaj", aby uruchomić importowanie.
+Kliknij trzy kropki po prawej stronie kopii zapasowej, którą chcesz przywrócić, po czym kliknij `Przywróć kopię zapasową`{.action}. Upewnij się, że informacje, które wyświetlają się w oknie są poprawne, a następnie kliknij `Zatwierdź`{.action}. Teraz zaczekaj, aż przywracanie kopii zapasowej się zakończy.
 
-Jeśli pobierzesz kopię bazy danych z panelu klienta, rozpakuj plik przed jego zaimportowaniem.
+![import bazy danych ovh](images/database-import-step6.png){.thumbnail}
 
+### Import Twojej kopii zapasowej w Panelu klienta.
 
-![](images/img_1962.jpg){.thumbnail}
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
-## Przypomnienie:
+Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie bazy danych, do której chcesz importować dane, a następnie kliknij `Importuj plik`{.action}.
 
-- Plik nie może przekraczać 16 MB.
+![import bazy danych ovh](images/database-import-step1.png){.thumbnail}
 
+W oknie, które się wyświetli zaznacz kratkę Zaimportuj plik, po czym kliknij Dalej.
 
+> [!primary]
+>
+> Przycisk `Użyj istniejącego pliku`{.action} umożliwia ponowny import danych już wcześniej wysłanych do narzędzia służącego do importu. 
+>
 
+![import bazy danych ovh](images/database-import-step2.png){.thumbnail}
 
-## Z poziomu skryptu zainstalowanego na hostingu
-Tego typu skrypt możesz utworzyć w pliku txt. Plik powinien mieć rozszerzenie związane z używanym językiem.
+Wprowadź nazwę pliku (która pozwoli Ci zidentyfikować tę kopię zapasową, jeśli będziesz chciał przywrócić ją ponownie w późniejszym terminie), następnie, z listy widniejącej obok pola `Nazwa pliku`, wybierz plik kopii zapasowej bazy danych na Twoim komputerze. Kliknij `Wyślij`{.action}.
 
-W poniższych skryptach zastąp:
+Odczekaj, aż interfejs wskaże, że plik został pomyślnie wysłany, następnie kliknij przycisk Dalej.
 
+![import bazy danych ovh](images/database-import-step3.png){.thumbnail}
 
-- nazwa_bazy.sql nazwą pliku.
+Następnie zdecyduj, czy chcesz zastosować dodatkowe opcje, które się wyświetlają:
 
-- serwer_sql nazwą serwera, na którym utworzona jest baza danych.
+- **usuń aktualną bazę danych**: jeśli zaznaczysz tę kratkę, aktualna zawartość bazy danych zostanie w całości usunięta i zastąpiona zawartością kopii zapasowej.  Jeśli chcesz zastąpić aktualną zawartość bazy danych zawartością pliku kopii zapasowej, zalecamy zaznaczenie tej kratki;
 
-- nazwa_bazy nazwą bazy danych.
+- **wyślij wiadomość e-mail po zakończeniu importu**: jeśli zaznaczysz tę kratkę, otrzymasz powiadomienie e-mail po zakończeniu importu bazy danych. 
 
-- hasło hasłem przypisanym do bazy.
+Po dokonaniu wyboru, kliknij przycisk `Zatwierdź`{.action}, następnie zaczekaj, aż import zostanie ukończony.  
 
-Plik z kopią bazy powinien najpierw zostać umieszczony na FTP na hostingu.
+![import bazy danych ovh](images/database-import-step4.png){.thumbnail}
 
+### Import za pomocą interfejsu phpMyAdmin
 
-## W PHP (importbase.php):
-Kod do wpisania i uzupełnienia: 
+W celu przeprowadzenia operacji zaloguj się do phpMyAdmin. Aby uzyskać link dostępowy do phpMyAdmin, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
+Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie odpowiedniej bazy danych, po czym kliknij `Dostęp do phpMyAdmin`{.action}.
 
-```
+![import bazy danych ovh](images/database-import-step7.png){.thumbnail}
+
+Po uzyskaniu dostępu do strony phpMyAdmin wprowadź informacje dotyczące bazy danych, po czym zaznacz na rozwijanym menu opcję dostępu do aktualnych danych bazy, następnie zaloguj się.  Po zalogowaniu przejdź do zakładki `Import`{.action} i uzupełnij dane. Pamiętaj, że plik kopii zapasowej nie może przekraczać określonego rozmiaru.
+
+> [!warning]
+>
+> Ponieważ interfejs phpMyAdmin nie został utworzony przez OVH, wykonaj operację, bazując na własnej wiedzy. W przypadku  trudności zalecamy skorzystanie z pomocy specjalisty lub kontakt z producentem interfejsu. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
+>
+
+### Import kopii zapasowej przy użyciu skryptu
+
+Operacja składa się z kilku etapów.  Upewnij się, czy posiadasz plik kopii zapasowej, którą chcesz importować, jak również informacje potrzebne do zalogowania się do bazy danych, do której kopia zostanie zaimportowana: nazwa użytkownika, hasło, nazwa bazy danych oraz adres serwera. 
+
+> [!warning]
+>
+> Ten sposób wymaga umiejętności technicznych z zakresu programowania. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. Jednak w przypadku trudności zalecamy skorzystanie z pomocy specjalisty.  Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
+>
+
+#### Etap 1: utwórz skrypt importu
+
+Pierwszy etap polega na utworzeniu skryptu, dzięki któremu będziesz mógł wykonać import do bazy danych. Poniżej przykład skryptu, który może być pomocny w przeprowadzanej przez Ciebie operacji, nie zastąpi on jednak pomocy technicznej webmastera.
+
+```php
 <?php
-echo "Votre base est en cours de restauration.......
-<br>";
-system("cat nazwa_bazy.sql | mysql --host=serwer_sql --user=nazwa_bazy --password=hasło nazwa_bazy");
-echo "C'est fini. Votre base est en place sur cet hébergement.";
+system("cat nazwa_pliku.sql | mysql --host=adres_serwera --user=uzytkownik --password=haslo_uzytkownika nazwa_bazy_danych");
 ?>
 ```
 
+Pamiętaj, aby zastąpić informacje ogólne występujące w skrypcie informacjami dotyczącymi odpowiedniej bazy danych. Pomocne będą poniższe wskazówki. Po utworzeniu skryptu zalecamy nadać mu nazwę „import.php”.
 
+|Informacje|Czym należy zastąpić|
+|---|---|
+|nazwa_pliku|Nazwa pliku kopii zapasowej, którą chcesz importować.|
+|adres_serwera|Adres serwera bazy, do której zaimportujesz dane.|
+|uzytkownik|Nazwa użytkownika posiadającego dostęp do wybranej bazy danych.|
+|haslo_uzytkownika|Hasło przypisane do uprzednio podanej nazwy użytkownika.|
+|nazwa_bazy_danych|Nazwa odpowiedniej bazy danych.|
 
-## W perlu (importbase.cgi):
-Kod do wpisania i uzupełnienia: 
+#### Etap 2: pobierz skrypt oraz kopię zapasową i wykonaj import do przestrzeni dyskowej
 
+Po poprawnym utworzeniu skryptu importu pobierz skrypt oraz plik kopii zapasowej, którą chcesz zaimportować do przestrzeni dyskowej Twojego hostingu. W tym celu zaloguj się do przestrzeni dyskowej. Jeśli nie potrafisz tego zrobić, zapoznaj się z informacjami zawartymi w dokumentacji [Umieszczenie strony WWW w Internecie](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/){.external}.
 
-```
-#!/usr/bin/perl
+Aby móc przejść od kolejnych etapów, pobierz skrypt importu oraz plik kopii zapasowej do katalogu „WWW”. **Zalecamy szczególną ostrożność podczas nadawania nazwy plikowi skryptu importu.** Sprawdź, czy pobierając skrypt, nie nadpisujesz istniejącego wcześniej na przestrzeni dyskowej pliku noszącego tę samą nazwę. Jeśli pojawi się tego typu komunikat ostrzegawczy, zmieć nazwę nowo utworzonego skryptu, a następnie spróbuj ponownie go pobrać.
 
-print "Votre base est en cours de restauration.......
-<br>";
-system("cat nazwa_bazy.sql | mysql --host=serwer_sql --user=nazwa_bazy --password=hasło nazwa_bazy");
-print "C'est fini. Votre base est en place sur cet hébergement.";
-```
+#### Etap 3: uruchamianie skryptu
 
+Po zapisaniu skryptu importu oraz pliku kopii zapasowej na przestrzeni dyskowej, rozpocznij operację importu.  W tym celu wywołaj skrypt.
 
+Aby to uczynić, wpisz do przeglądarki internetowej pełny adres URL skryptu (na przykład: mypersonaldomain.ovh/import.php, jeśli nazwałeś skrypt „import.php”). Jeśli informacje podane w skrypcie są poprawne, import się rozpocznie. Należy zaczekać jakiś czas na zakończenie operacji. Jeśli tak się nie stanie, sprawdź informacje zawarte w skrypcie, po czym spróbuj ponownie.
 
-- Wgraj przez FTP utworzony skrypt i dump* bazy danych w katalogu www hostingu i odpytaj skrypt za pomocą przeglądarki: http://nazwa_domeny.com/importbase.php 
+Zalecamy, abyś po zakończeniu importu usunął z katalogu „WWW” pliki kopii zapasowej oraz skryptu.
 
+### Import kopii zapasowej przy użyciu komendy SSH
 
-Zastąp nazwa_domeny.com swoją nazwą domeny i importbase.php nazwą swojego pliku.
+Aby przeprowadzić tę operację, wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową.
 
-Twój plik jest spakowany?
+> [!warning]
+>
+> Aby korzystać z tego typu dostępu, konieczna jest zaawansowana wiedza techniczna. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania, jednak w przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego usługodawcy. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
+>
 
-Jeśli dump* jest spakowany, czyli ma formę .sql.gz, wystarczy umieścić to polecenie na początku skryptu:
+Po zalogowaniu się do przestrzeni dyskowej przy użyciu SSH wpisz komendę służącą do importu bazy danych. Poniżej przykład komendy, która może być pomocna w przeprowadzanej przez Ciebie operacji. Pamiętaj, że najpierw powinieneś pobrać kopię zapasową, którą chcesz importować do przestrzeni dyskowej oraz wysłać komendę do terminala po uprzednim odnalezieniu jej w odpowiednim katalogu.
 
-
-```
-system("gunzip nazwa_bazy.sql.gz");
-```
-
-
-Przykład:
-
-## W PHP: spakowany dump + przywrócenie bazy danych
-Przykład kodu: 
-
-
-```
-<?php
-echo "Décompression du fichier.....
-<br>";
-system("gunzip testbackup.sql.gz");
-echo "Votre base est en cours de restauration......
-<br>";
-system("cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport");
-echo "C'est fini. Votre base est en place sur cet hébergement.";
-?>
+```sh
+cat nazwa_pliku.sql | mysql --host=adres_serwera --user=uzytkownik --password=haslo_uzytkownika nazwa_bazy_danych");
 ```
 
+Pamiętaj, aby zastąpić informacje ogólne występujące w komendzie informacjami dotyczącymi odpowiedniej bazy danych.  Zalecamy, abyś po zakończeniu importu usunął plik kopii zapasowej, z katalogu, do którego został wcześniej pobrany. 
 
+## Sprawdź również
 
-## W perlu: spakowany dump + przywrócenie bazy danych
-Przykład kodu: 
-
-
-```
-#!/usr/bin/perl
-
-print "Décompression du fichier.....
-<br>";
-system("gunzip testbackup.sql.gz");
-print "Votre base est en cours de restauration.......
-<br>";
-system("cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport");
-print "C'est fini. Votre base est en place sur cet hébergement.";
-```
-
-
-
-
-## Z poziomu polecenia ssh
-
-## Wstępne wymagania
-
-- Przygotuj login i hasło do FTP. 
-Zapoznaj się z przewodnikiem na temat odzyskiwania danych do FTP: []({legacy}1374)
-
-- Musisz mieć ofertę z dostępem przez ssh ([sprawdź nasza ofertę](http://www.ovh.pl/hosting/))
-
-
-Poniżej znajduje się link do przewodnika na temat ssh na hostingu:
-
-
-- [SSH na hostingu](http://pomoc.ovh.pl/SshNaHostingu)
-
-
-
-## Importowanie bazy danych przez ssh
-Połącz się z hostingiem przez ssh.
-
-Przejdź do katalogu, w którym umieściłeś plik, który chcesz zaimportować i wpisz to polecenie:
-
-Kod do wpisania i uzupełnienia: 
-
-
-```
-cat nazwa_bazy.sql | mysql --host=serwer_sql --user=nazwa_bazy --password=hasło nazwa_bazy
-```
-
-
-Przykład kodu: 
-
-
-```
-cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport
-```
-
-
-
-
-## Z poziomu Prywatnego Serwera SQL
-Przewodnik dotyczący importowania bazy danych:
-
-
-- [Importowanie bazy danych na prywatnym serwerze SQL](https://www.ovh.pl/g2023.prywatny_serwer_sql#kopia_zapasowa_importowanie_przywracanie)
-
-
-
-
-## Błąd związany z nazwą bazy danych
-Możliwe, że trzeba będzie dodać tą linię w górnej części pliku kopii zapasowej: 
-
-
-```
-use nazwa_bazy;
-```
-
-
-Gdzie nazwa_bazy to nazwa bazy, do której importujesz te dane.
-
-
-## Słowniczek
-dump*: plik z kopią zapasową bazy danych strony.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
 
