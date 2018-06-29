@@ -6,7 +6,7 @@ section: Meltdown and Spectre informations
 
 <div id="main-content" class="wiki-content table-meltown-spectre">
    <p style="text-align: center;"><span style="color: rgb(51,102,255);"><br></span></p>
-   <p><strong>Last update: 17th May. at<span class="widont"> 04.30 pm CET</span></strong></p>
+   <p><strong>Last update: 29 jun. at<span class="widont"> 02.00 pm CET</span></strong></p>
    <p><strong><strong>(this table reflects the situation at a given moment and is constantly evolving.)</strong></strong></p>
    <p style="text-align: center;"><span style="color: rgb(51,102,255);">&nbsp;</span></p>
    <h2 id="ExternalDocumentation/Proceduresforcustomers-Generalinformation">General information</h2>
@@ -28,15 +28,15 @@ section: Meltdown and Spectre informations
    <p style="text-align: center;"><span style="color: rgb(51,102,255);"><br></span></p>
    <div class="table-wrap">
       <table class="relative-table wrapped confluenceTable tablesorter tablesorter-default stickyTableHeaders" style="margin-left: auto; margin-right: auto; width: 96.0865%; padding: 0px;" role="grid">
-         <thead class="tableFloatingHeaderOriginal" style="position: static; margin-top: 0px; left: 324px; z-index: 3; width: 1800px; top: 92px;">
+         <thead class="tableFloatingHeaderOriginal" style="position: static; margin-top: 0px; left: 354.317px; z-index: 3; width: 1438px; top: 92px;">
             <tr role="row" class="tablesorter-headerRow">
-               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="&nbsp;: No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="&nbsp;: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">&nbsp;</div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="OS: No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="OS: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">OS</div>
                </th>
-               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Spectre - Variant 1***Bounds Check Bypass(CVE-2017-5753): No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="Spectre - Variant 1***Bounds Check Bypass(CVE-2017-5753): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Spectre - Variant 1</p>
                      <p style="text-align: center;">***</p>
@@ -44,7 +44,7 @@ section: Meltdown and Spectre informations
                      <p style="text-align: center;"><em>(CVE-2017-5753)</em></p>
                   </div>
                </th>
-               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Spectre - Variant 2***Branch Target Injection(CVE-2017-5715): No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="Spectre - Variant 2***Branch Target Injection(CVE-2017-5715): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Spectre - Variant 2</p>
                      <p style="text-align: center;">***</p>
@@ -52,7 +52,7 @@ section: Meltdown and Spectre informations
                      <p style="text-align: center;"><em>(CVE-2017-5715)</em></p>
                   </div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Meltdown***Rogue Data Cache LoadMeltdown(CVE-2017-5754): No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="Meltdown***Rogue Data Cache LoadMeltdown(CVE-2017-5754): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Meltdown</p>
                      <p style="text-align: center;">***</p>
@@ -65,13 +65,13 @@ section: Meltdown and Spectre informations
          </thead>
          <thead class="tableFloatingHeader" style="display: none;">
             <tr role="row" class="tablesorter-headerRow">
-               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="&nbsp;: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-sort="none" aria-label="&nbsp;: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">&nbsp;</div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="OS: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-sort="none" aria-label="OS: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">OS</div>
                </th>
-               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Spectre - Variant 1***Bounds Check Bypass(CVE-2017-5753): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-sort="none" aria-label="Spectre - Variant 1***Bounds Check Bypass(CVE-2017-5753): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Spectre - Variant 1</p>
                      <p style="text-align: center;">***</p>
@@ -79,7 +79,7 @@ section: Meltdown and Spectre informations
                      <p style="text-align: center;"><em>(CVE-2017-5753)</em></p>
                   </div>
                </th>
-               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Spectre - Variant 2***Branch Target Injection(CVE-2017-5715): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-sort="none" aria-label="Spectre - Variant 2***Branch Target Injection(CVE-2017-5715): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Spectre - Variant 2</p>
                      <p style="text-align: center;">***</p>
@@ -87,7 +87,7 @@ section: Meltdown and Spectre informations
                      <p style="text-align: center;"><em>(CVE-2017-5715)</em></p>
                   </div>
                </th>
-               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Meltdown***Rogue Data Cache LoadMeltdown(CVE-2017-5754): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+               <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-sort="none" aria-label="Meltdown***Rogue Data Cache LoadMeltdown(CVE-2017-5754): No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">
                      <p style="text-align: center;">Meltdown</p>
                      <p style="text-align: center;">***</p>
@@ -634,7 +634,7 @@ section: Meltdown and Spectre informations
                </td>
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">
-                     <p><span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span></p>
+                     <p><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></p>
                   </div>
                </td>
                <td class="confluenceTd">
@@ -662,7 +662,7 @@ section: Meltdown and Spectre informations
                </td>
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">
-                     <p><span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span></p>
+                     <p><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span></p>
                   </div>
                </td>
                <td colspan="1" class="confluenceTd">
@@ -1260,7 +1260,7 @@ section: Meltdown and Spectre informations
       </table>
    </div>
    <div id="floating-scrollbar" style="position: fixed; bottom: 0px; height: 30px; overflow-x: auto; overflow-y: hidden; display: none; left: 325px; width: 858px;">
-      <div style="border: 1px solid rgb(255, 255, 255); opacity: 0.01; width: 1801px;"></div>
+      <div style="border: 1px solid rgb(255, 255, 255); opacity: 0.01; width: 940px;"></div>
    </div>
    <p>&nbsp;</p>
    <h2 id="ExternalDocumentation/Proceduresforcustomers-IntelaffectedCPUlist">Intel affected CPU list</h2>
