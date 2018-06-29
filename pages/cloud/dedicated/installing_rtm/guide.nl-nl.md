@@ -35,7 +35,7 @@ U kunt uw server controleren als de RTM is geïnstalleerd op uw Control Panel, i
 Zodra u via SSH bent ingelogd op uw server hoeft u alleen maar het volgende commando uit te voeren:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh | sh install_rtm.sh
+wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh ; sh install_rtm.sh
 ```
 
 ### Installatie van RTM op Windows
