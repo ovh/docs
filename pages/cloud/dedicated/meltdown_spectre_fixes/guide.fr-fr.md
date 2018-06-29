@@ -6,7 +6,7 @@ fullwidth: true
 ---
 
 <div id="main-content" class="wiki-content table-meltown-spectre">
-   <p><strong>Last update 22. May.&nbsp; at<span class="widont">&nbsp;7.25am CET<br></span></strong></p>
+   <p><strong>Last update 26. June.&nbsp; at<span class="widont">&nbsp;3:00pm CET<br></span></strong></p>
    <p><strong>(this table reflects the situation at a given moment and is constantly evolving.)<br></strong></p>
    <p><strong><br></strong></p>
    <h2 id="SummaryOles-Introduction">Introduction<span style="color: rgb(0,0,0);"> <br></span></h2>
@@ -29,7 +29,7 @@ fullwidth: true
    <p>&nbsp;</p>
    <div class="table-wrap">
       <table class="wrapped relative-table confluenceTable tablesorter tablesorter-default stickyTableHeaders" style="width: 100%; padding: 0px;" role="grid">
-                 <thead class="tableFloatingHeaderOriginal" style="position: static; margin-top: 0px; left: 325px; z-index: 3; width: 857px; top: 41px;">
+         <thead class="tableFloatingHeaderOriginal" style="position: static; margin-top: 0px; left: 325px; z-index: 3; width: 1497px; top: 41px;">
             <tr role="row" class="tablesorter-headerRow">
                <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none; min-width: 8px; max-width: none;" aria-sort="none" aria-label="&nbsp;: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">&nbsp;</div>
@@ -203,7 +203,7 @@ fullwidth: true
    <p>&nbsp;</p>
    <div class="table-wrap">
       <table class="wrapped relative-table confluenceTable tablesorter tablesorter-default stickyTableHeaders" style="width: 99.9576%; padding: 0px;" role="grid">
-                 <thead class="tableFloatingHeaderOriginal" style="position: static; margin-top: 0px; left: 227.5px; z-index: 3; width: 955px; top: 92px;">
+          <thead class="tableFloatingHeaderOriginal" style="position: static; margin-top: 0px; left: 325px; z-index: 3; width: 1496px; top: 92px;">
             <tr role="row" class="tablesorter-headerRow">
                <th colspan="1" style="text-align: center; -moz-user-select: none; min-width: 8px; max-width: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="SERVICE: No sort applied, activate to apply an ascending sort">
                   <div class="tablesorter-header-inner">SERVICE</div>
@@ -579,7 +579,7 @@ fullwidth: true
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">
                      <p>There is no patch to protect vSphere 4.1/5.0/5.1, Ovh advices the customer to upgrade pCC to vSphere 6.0/6.5. It's free.</p>
-                     <p>vSphere 5.5 : <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
+                     <p>vSphere 5.5 : <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                   </div>
                </td>
                <td colspan="1" class="confluenceTd">
@@ -597,14 +597,14 @@ fullwidth: true
                <td colspan="1" class="confluenceTd">vSphere 6.0/6.5</td>
                <td colspan="1" class="confluenceTd">
                   <p>Service update (<em><span style="color: rgb(0,0,255);">OVH side</span></em>)</p>
-                  <p>All host : 95% patched</p>
+                  <p>All host : 100% patched</p>
                </td>
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">
                      <p>OS:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                      <p>&nbsp;</p>
-                     <p>VM to KVM:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span><span>&nbsp;</span></p>
-                     <p><span>VM to VM:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></span><span>&nbsp;</span></p>
+                     <p>VM to KVM:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span><span>&nbsp;</span></p>
+                     <p><span>VM to VM:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></span><span>&nbsp;</span></p>
                      <p>&nbsp;</p>
                   </div>
                </td>
@@ -612,8 +612,8 @@ fullwidth: true
                   <div class="content-wrapper">
                      <p>OS: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                      <p>&nbsp;</p>
-                     <p>VM to ESXi: <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
-                     <p>VM to VM: <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
+                     <p>VM to ESXi: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
+                     <p>VM to VM: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                   </div>
                </td>
                <td colspan="1" class="confluenceTd">
@@ -666,22 +666,22 @@ fullwidth: true
                <td class="confluenceTd">
                   <p>Service update (<em><span style="color: rgb(0,0,255);">OVH side</span></em>)</p>
                   <p><a class="external-link" href="http://travaux.ovh.net/?do=details&amp;id=29250" rel="nofollow">http://travaux.ovh.net/?do=details&amp;id=29250</a></p>
-                  <p>All host : 95% patched</p>
+                  <p>All host : 100% patched</p>
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
                      <p>OS: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                      <p>&nbsp;</p>
-                     <p>VM to ESXi:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
-                     <p>VM to VM:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
+                     <p>VM to ESXi:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
+                     <p>VM to VM:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                   </div>
                </td>
                <td class="confluenceTd">
                   <div class="content-wrapper">
                      <p>OS: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                      <p>&nbsp;</p>
-                     <p>VM to ESXi: <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
-                     <p>VM to VM: <span class="status-macro aui-lozenge aui-lozenge-current conf-macro output-inline" data-hasbody="false" data-macro-name="status">IN PROGRESS</span></p>
+                     <p>VM to ESXi: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
+                     <p>VM to VM: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></p>
                      <p>&nbsp;</p>
                      <p>MSR exposed to VM: <span class="status-macro aui-lozenge aui-lozenge-complete conf-macro output-inline" data-hasbody="false" data-macro-name="status">WAIT</span> update from VMware</p>
                   </div>
@@ -1609,9 +1609,6 @@ fullwidth: true
             </tr>
          </tbody>
       </table>
-   </div>
-   <div id="floating-scrollbar" style="position: fixed; bottom: 0px; height: 30px; overflow-x: auto; overflow-y: hidden; display: none; left: 325px; width: 858px;">
-      <div style="border: 1px solid rgb(255, 255, 255); opacity: 0.01; width: 956px;"></div>
    </div>
 </div>
 
