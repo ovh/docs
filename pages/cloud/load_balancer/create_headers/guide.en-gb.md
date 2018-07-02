@@ -26,7 +26,7 @@ With this api call you can get IP Range of our servers.
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/natIp
+> @api {GET} /ipLoadbalancing/{serviceName}/listNatIp
 > 
 If you accept proxy-headers (X-Forwarded-*) from anywhere, some request could bypass your security policies.
 

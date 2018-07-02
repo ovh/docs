@@ -47,7 +47,7 @@ La liste des IPv4 de sortie potentiellement utilisées par votre service OVH Loa
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/natIp
+> @api {GET} /ipLoadbalancing/{serviceName}/listNatIp
 > 
 
 ## Presentation du ProxyProtocol

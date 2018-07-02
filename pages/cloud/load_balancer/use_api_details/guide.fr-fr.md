@@ -2854,7 +2854,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/natIp
+>> > @api {GET} /ipLoadbalancing/{serviceName}/listNatIp
 >> >
 >>
 >
