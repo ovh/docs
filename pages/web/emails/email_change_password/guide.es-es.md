@@ -6,7 +6,7 @@ section: 'Gestión de la cuenta de correo'
 order: 2
 ---
 
-**Última actualización: 29/06/2018**
+**Última actualización: 02/07/2018**
 
 ## Objetivo
 
@@ -64,7 +64,7 @@ Se abrirá una nueva ventana en la que deberá introducir la nueva contraseña. 
 
 Una vez que haya cambiado la contraseña, puede acceder a la dirección de correo electrónico de dos maneras distintas:
 
-- **Utilizar el cliente de correo web RoundCube**: Vaya a la dirección <https://www.ovh.es/mail/> e introduzca la dirección de correo y la nueva contraseña. Si acaba de cambiar la contraseña y la autenticación falla, espere unos minutos y vuelva a intentar conectarse.
+- **Utilizar el cliente de correo web Roundcube**: Vaya a la dirección <https://www.ovh.es/mail/> e introduzca la dirección de correo y la nueva contraseña. Si acaba de cambiar la contraseña y la autenticación falla, espere unos minutos y vuelva a intentar conectarse.
 
 - **Utilizar un cliente de correo compatible**: Deberá introducir la nueva contraseña en todos los dispositivos en los que haya configurado la dirección de correo electrónico. Es posible que aparezca una ventana de forma automática solicitándole que introduzca la nueva contraseña de la dirección de correo. En caso contrario, le recomendamos que contacte directamente con el editor del cliente de correo que utilice para saber cómo realizar la operación.
 
