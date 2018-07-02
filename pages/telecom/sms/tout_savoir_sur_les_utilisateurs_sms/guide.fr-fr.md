@@ -1,13 +1,11 @@
 ---
-title: Tout savoir sur les utilisateurs SMS
-excerpt: Fonctionnement des utilisateurs SMS
+title: 'Tout savoir sur les utilisateurs SMS'
+excerpt: 'Fonctionnement des utilisateurs SMS'
 slug: tout_savoir_sur_les_utilisateurs_sms
 legacy_guide_number: g2144
-section: Gérer mon offre
+section: 'Gérer mon offre'
 ---
 
-
-## 
 Un utilisateur SMS API peut être utile sur plusieurs niveaux.
 
 ![](images/img_4009.jpg){.thumbnail}
@@ -15,7 +13,6 @@ Un utilisateur SMS API peut être utile sur plusieurs niveaux.
 - D'une part, il permet au propriétaire du compte SMS de sécuriser ses accès lors d'un envoi de SMS via une API externe.
 
 En effet, le script appelant ne connaît que l'identifiant de l'utilisateur et son mot de passe, et non la session de l'identifiant client du propriétaire.
-
 
 - D'autre part, la création de plusieurs utilisateurs API peut être utile dans une entreprise, notamment pour une meilleure traçabilité. 
 
@@ -33,14 +30,9 @@ Cliquez ensuite sur le compte SMS désiré.
 
 
 ## Ajout de l'utilisateur SMS
-Cliquez sur l'onglet Utilisateurs API.
+Cliquez sur l'onglet Utilisateurs API. Cliquez ensuite sur Actions puis sur Ajouter.
 
-![](images/img_4808.jpg){.thumbnail}
-Cliquez ensuite sur Actions puis sur Ajouter.
-
-![](images/img_4809.jpg){.thumbnail}
 Le mot de passe d'un utilisateur doit se composer de 8 caractères alphanumériques et l'identifiant doit avoir entre 6 et 10 caractères alphanumériques.
-
 
 ## Connexion à l'interface
 Connectez-vous à la page [API.OVH.com](https://api.ovh.com/console/#/sms) et identifiez-vous.
@@ -49,38 +41,28 @@ Connectez-vous à la page [API.OVH.com](https://api.ovh.com/console/#/sms) et id
 
 
 ## Ajout de l'utilisateur
-Utilisez ensuite l'API POST /sms/{serviceName}/users
+Utilisez ensuite l'API ci-dessous :
+
+> [!api]
+>
+> @api {post} /sms/{serviceName}/users
+>
 
 -serviceName : votre compte SMS (ex : sms-ab1234-1)
 -login : l'identifiant de votre utilisateur
 -password : le mot de passe de votre utilisateur
 
 ![](images/img_3998.jpg){.thumbnail}
-Pour plus d'informations sur les API SMS, vous pouvez consulter les guides suivants :
 
-- []({legacy}1664).
-- []({legacy}1639).
-- []({legacy}1670).
-- []({legacy}1651).
-- []({legacy}1654).
-
-
-
-
-## 
-Plusieurs options sont disponibles pour les utilisateurs API.
-
-Afin d'en disposer cliquez sur la droite au niveau des Actions.
-
-![](images/img_4810.jpg){.thumbnail}
-
+Plusieurs options sont disponibles pour les utilisateurs API. Afin d'en disposer cliquez sur la droite au niveau des Actions.
 
 ## Quota
 Le quota attribué à chaque utilisateur vous permet de contrôler la consommation en SMS.
 
 Par défaut le quota est désactivé.
 
-![](images/img_4811.jpg){.thumbnail}
+![](images/img_4000.jpg){.thumbnail}
+
 Appliquez un nouveau quota après l'activation de la fonction.
 
 Vous ne pouvez pas attribuer un quota supérieur au crédit total du compte SMS.
@@ -94,7 +76,7 @@ Si vous souhaitez être alerté d'un seuil de quota d'un utilisateur par email e
 
 L'envoi d'un SMS pour une alerte est facturé au coût d'un envoi standard.
 
-![](images/img_4812.jpg){.thumbnail}
+![](images/img_4002.jpg){.thumbnail}
 
 
 ## Restriction par IP pour http2sms
@@ -102,20 +84,21 @@ Il est possible de sécuriser la fonction http2sms en appliquant des restriction
 
 Vous pouvez renseigner jusque 5 adresses IP différentes pour les envois de vos requêtes https.
 
-![](images/img_4813.jpg){.thumbnail}
+![](images/img_4006.jpg){.thumbnail}
 
 
 ## URL de callback
 Pour un suivi personnalisé des accusés de réception SMS (dlr), il est possible de spécifier une URL dite de CallBack.
 
-![](images/img_4814.jpg){.thumbnail}
-Lorsque le statut d'envoi du SMS est mis à jour, nous appelons l'URL spécifiée. Les valeurs suivantes sont automatiquement insérées dans la querystring :
+![](images/img_4007.jpg){.thumbnail}
 
+Lorsque le statut d'envoi du SMS est mis à jour, nous appelons l'URL spécifiée. Les valeurs suivantes sont automatiquement insérées dans la querystring :
 
 - id : numéro d'identification du SMS
 - ptt : code qui correspond à un état du SMS. Les états possibles sont les suivants :
 
-
+|État|Description|
+|---|---|
 |1|Notification d'état intermédiaire que le message n'a pas encore été livré en raison d'un problème de téléphone, mais est en cours de nouvel essai (Intermediate state notification that the message has not yet been delivered due to a phone related problem but is being retried).|
 |2|Utilisé pour indiquer que le message n'a pas encore été livré en raison d'un problème d'opérateur, mais est en cours de nouvel essai au sein du réseau (Used to indicate that the message has not yet been delivered due to some operator related problem but is being retried within the network).|
 |3|Utilisé pour indiquer que le message a été accepté par l'opérateur (Used to indicate that the message has been accepted by the operator).|
@@ -139,19 +122,15 @@ Lorsque le statut d'envoi du SMS est mis à jour, nous appelons l'URL spécifié
 |76|Le message a échoué car les combinaisons portées sont bloquées pour le client (le client a été mis liste noire de la destination) (The message was failed due to the ported combinations being blocked for client (the client has been blacklisted from the ported destination)).|
 |202|Le message a échoué en raison des combinaisons portées bloquées pour le client. Contactez le support client pour plus d'informations (The message was failed due to the ported combinations being blocked for the client. Please contact Client Support for additional information).|
 
-
-
 - date : date du "dlr"
 - description : id du dlr qui correspond à la description ci-dessous
 - descriptionDlr : description du status du dlr
 
-
+|État|Description|
+|---|---|
 |0|En création ou en attente (Creating or pending)|
 |1|Succès (Success)|
 |2|Echoué (Failed)|
 |4|En attente (Waiting)|
 |8|Tampon (Buffered)|
 |16|En erreur / non facturé (Error / not billed)|
-
-
-
