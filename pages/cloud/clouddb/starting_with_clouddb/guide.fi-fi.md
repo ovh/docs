@@ -38,7 +38,7 @@ Voit tarkastella sieltä instanssiasi koskevia tärkeitä tietoja. Kehotamme var
 |Versio|Näyttää palvelimen käyttämän tietokantajärjestelmän version. Huolehdi verkkosivusi yhteensopivuudesta valitun version kanssa.|
 |RAM|Näyttää instanssia varten saatavilla olevan keskusmuistin sekä mahdolliset muistin ylitykset. CloudDB-instanssisi sisältää dedikoituja ja taattuja resursseja eli sen RAM-muistin. Tarpeen vaatiessa voit kehittää sitä ja saada ilmoituksia, mikäli kulutat kaikki instanssisi muistiresurssit.|
 |Infrastruktuuri|Näyttää instanssisi käyttämän infrastruktuurin. Kyseessä on OVH:n infrastruktuurille ominainen tieto.|
-|Konesali|Näyttää konesalin, jossa instanssi on luotu. Varmista, että instanssin konesali on sama kuin sivuasi ylläpitävän OVH:n webhotellin nykyinen tai tuleva konesali.|
+|Konesali|Näyttää konesalin, jossa instanssi on luotu.|
 |Isäntäkone|Näyttää OVH:n palvelimen, johon instanssi on luotu. Kyseessä on OVH:n infrastruktuurille ominainen tieto, jota voidaan käyttää [häiriötilanteisiin](http://status.ovh.net/){.external} liittyvässä viestinnässä.|
 
 ![clouddb](images/clouddb-general-information.png){.thumbnail}
