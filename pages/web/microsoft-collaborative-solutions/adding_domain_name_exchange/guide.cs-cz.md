@@ -105,7 +105,7 @@ Jakmile ke službě Exchange úspěšně přidáte domény, můžete k nim přip
 
 Mějte prosím na paměti, že všechny adresy vytvořené na službě Exchange mohou zobrazit ostatní asociované adresy, a to včetně těch, které mají jinou doménu.
 
-Jakmile jsou Vaše účty nakonfigurovány, nezbývá než začít je naplno využívat! Za tímto účelem můžete vyzkoušet webovou aplikaci *OVH Webmail* **Outlook Web Application** (OWA), která je dostupná na následující adrese: <https://mail.ovh.net/cz/>. Pokud si svou e-mailovou adresu přejete používat na externím e-mailovém klientu, ověřte prosím kompatibilitu softwaru se službou Exchange. Detailní informace týkající se konfigurace služby Exchange na softwaru třetích stran a mobilních zařízeních naleznete v následující dokumentaci: <https://docs.ovh.com/cz/cs/microsoft-collaborative-solutions/>.
+Jakmile jsou Vaše účty nakonfigurovány, nezbývá než začít je naplno využívat! Za tímto účelem můžete vyzkoušet webovou aplikaci *OVH Webmail* **Outlook Web Application** (OWA), která je dostupná na následující adrese: <https://www.ovh.cz/mail/>. Pokud si svou e-mailovou adresu přejete používat na externím e-mailovém klientu, ověřte prosím kompatibilitu softwaru se službou Exchange. Detailní informace týkající se konfigurace služby Exchange na softwaru třetích stran a mobilních zařízeních naleznete v následující dokumentaci: <https://docs.ovh.com/cz/cs/microsoft-collaborative-solutions/>.
 
 Licence Outlook si můžete objednat prostřednictvím Zákaznického prostoru OVH. Licence Office 365 si můžete objednat na webových stránkách <https://www.ovh.cz/office-365/>. 
 

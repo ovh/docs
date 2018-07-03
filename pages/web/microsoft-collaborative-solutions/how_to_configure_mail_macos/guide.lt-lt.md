@@ -75,7 +75,7 @@ To find the server details you need, log in to your [OVH Control Panel](https://
 
 Once you have configured your email address, you can start using it to send and receive emails straight away!
 
-OVH also offers a web application that includes various [collaborative features](https://www.ovh.lt/El_pastas/){.external}. You can access it here, using your email credentials: <https://mail.ovh.net/lt/>.
+OVH also offers a web application that includes various [collaborative features](https://www.ovh.lt/El_pastas/){.external}. You can access it here, using your email credentials: <https://www.ovh.lt/mail/>.
 
 ## Go further
 

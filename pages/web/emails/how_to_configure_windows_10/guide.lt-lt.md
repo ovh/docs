@@ -79,7 +79,7 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH also has a web application you can use to access your email account from your browser. You can access this application via the following address: <https://mail.ovh.net/lt/>. You can log in using your email credentials.
+OVH also has a web application you can use to access your email account from your browser. You can access this application via the following address: <https://www.ovh.lt/mail/>. You can log in using your email credentials.
  
 ## Go further
 

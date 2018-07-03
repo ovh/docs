@@ -15,7 +15,7 @@ Będziesz mógł:
 3. Po zatwierdzeniu synchronizacji będziesz mógł zamknąć stronę. Twoje e-maile zostaną skopiowane na adres docelowy. Proces ten może zająć kilka godzin. 
 
 
-Narzędzie to jest dostępne bezpośrednio na stronie: [https://mail.ovh.net/pl/imapcopy/](https://mail.ovh.net/pl/imapcopy/)
+Narzędzie to jest dostępne bezpośrednio na stronie: [https://www.ovh.pl/mail/imapcopy/](https://www.ovh.pl/mail/imapcopy/)
 
 ![](images/img_1423.jpg){.thumbnail}
 

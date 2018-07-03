@@ -58,7 +58,7 @@ Once your account has been correctly configured and can be accessed via Outlook 
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH offers a web application that includes various [collaborative features](https://www.ovh.lt/El_pastas/){.external}, You can access this application at <https://mail.ovh.net/lt/>. You can log in using your email credentials.
+OVH offers a web application that includes various [collaborative features](https://www.ovh.lt/El_pastas/){.external}, You can access this application at <https://www.ovh.lt/mail/>. You can log in using your email credentials.
 
 ## Go further
 

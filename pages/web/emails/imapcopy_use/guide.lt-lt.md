@@ -14,7 +14,7 @@ Su šiuo įrankiu galėsite:
 2. Įvesti naujos el. pašto dėžutės informaciją;
 3. Kai patvirtinsite sinchronizavimą, galėsite uždaryti puslapį, o el. laiškai bus nukopijuoti. Tai gali trukti kelias valandas.
 
-Prie šio įrankio galite prisijungti adresu:[http://webmail.ovh.net/lt/imapcopy/](http://webmail.ovh.net/lt/imapcopy/)
+Prie šio įrankio galite prisijungti adresu:[http://webwww.ovh.lt/mail/imapcopy/](http://webwww.ovh.lt/mail/imapcopy/)
 
 ![](images/img_1423.jpg){.thumbnail}
 

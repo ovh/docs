@@ -86,7 +86,7 @@ The accounts that have not yet been configured configuration will appear in the 
 
 ### Step 5: Use your email addresses
 
-Once you have configured your accounts, you can now start using them. To do this, OVH offers the **Outlook Web Application** (OWA) webmail app. You can access this via the following address: [https://mail.ovh.net/lt/](https://mail.ovh.net/lt/){.external}. To log in, enter your email address credentials. If you require any assistance using OWA, please refer to our documentation via this link: [https://docs.ovh.com/lt/microsoft-collaborative-solutions/](https://docs.ovh.com/lt/microsoft-collaborative-solutions/){.external}.
+Once you have configured your accounts, you can now start using them. To do this, OVH offers the **Outlook Web Application** (OWA) webmail app. You can access this via the following address: [https://www.ovh.lt/mail/](https://www.ovh.lt/mail/){.external}. To log in, enter your email address credentials. If you require any assistance using OWA, please refer to our documentation via this link: [https://docs.ovh.com/lt/microsoft-collaborative-solutions/](https://docs.ovh.com/lt/microsoft-collaborative-solutions/){.external}.
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our documentation via this portal: [https://docs.ovh.com/lt/microsoft-collaborative-solutions/](https://docs.ovh.com/lt/microsoft-collaborative-solutions/){.external}. To optimise the way you use your Exchange email address on an email client, ensure that it is compatible with the service.
 

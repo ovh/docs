@@ -88,7 +88,7 @@ Als u handmatig instellingen in uw accountvoorkeuren moet invoeren, vindt u hier
 
 Nadat u uw e-mailadres hebt geconfigureerd, kunt u het gaan gebruiken! U kunt nu e-mails verzenden en ontvangen.
 
-OVH heeft ook een web-app die u kunt gebruiken om vanuit uw browser toegang te krijgen tot uw e-mailaccount. U kunt deze applicatie bereiken via <https://mail.ovh.net/nl/>. U kunt het openen met behulp van uw e-mailinloggegevens.
+OVH heeft ook een web-app die u kunt gebruiken om vanuit uw browser toegang te krijgen tot uw e-mailaccount. U kunt deze applicatie bereiken via <https://www.ovh.nl/mail/>. U kunt het openen met behulp van uw e-mailinloggegevens.
 
 ## Verder
 

@@ -64,7 +64,7 @@ Kliknij `Zatwierdź`{.action}, aby uruchomić proces tworzenia konta e-mail. Pow
 
 ### Etap 3: korzystanie z konta e-mail
 
-Zacznij używać Twoich kont e-mail. W tym celu możesz użyć udostępnionej przez OVH aplikacji online (webmail): RoundCube. Aplikacja dostępna jest pod adresem <https://mail.ovh.net/pl/>. Zaloguj się, wprowadzając dane identyfikacyjne przypisane do Twojego konta e-mail utworzonego w OVH.
+Zacznij używać Twoich kont e-mail. W tym celu możesz użyć udostępnionej przez OVH aplikacji online (webmail): RoundCube. Aplikacja dostępna jest pod adresem <https://www.ovh.pl/mail/>. Zaloguj się, wprowadzając dane identyfikacyjne przypisane do Twojego konta e-mail utworzonego w OVH.
 
 Jeśli chcesz uzyskać więcej informacji dotyczących korzystania z RoundCube, zapoznaj się z przewodnikiem: [Korzystanie z RoundCube](https://docs.ovh.com/pl/emails/webmail_przewodnik_dotyczacy_interfejsu_roundcube/){.external}. Jeśli chcesz skonfigurować Twoje konto e-mail w programie pocztowym lub urządzeniu typu smartfon lub tablet, skorzystaj z naszej dokumentacji dostępnej tutaj: <https://docs.ovh.com/pl/emails/>.
 
