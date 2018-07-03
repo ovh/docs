@@ -65,7 +65,7 @@ Voit tehdä testilähetyksen tarkistaaksesi, että tilisi asetukset on määrite
 
 Kun sähköpostiosoite on konfiguroitu, se on valmis käytettäväksi! Voit nyt lähettää ja vastaanottaa viestejä.
 
-OVH tarjoaa [ryhmätyöominaisuuksilla](https://www.ovh-hosting.fi/sahkopostit/){.external} varustetun verkkosovelluksen, joka on saatavilla osoitteessa [https://mail.ovh.net/fi/](https://mail.ovh.net/fi/){.external}. Voit kirjautua siihen sähköpostiosoitteeseesi liittyvillä tunnuksilla.
+OVH tarjoaa [ryhmätyöominaisuuksilla](https://www.ovh-hosting.fi/sahkopostit/){.external} varustetun verkkosovelluksen, joka on saatavilla osoitteessa [https://www.ovh-hosting.fi/mail/](https://www.ovh-hosting.fi/mail/){.external}. Voit kirjautua siihen sähköpostiosoitteeseesi liittyvillä tunnuksilla.
 
 ## Lue lisää aiheesta
 

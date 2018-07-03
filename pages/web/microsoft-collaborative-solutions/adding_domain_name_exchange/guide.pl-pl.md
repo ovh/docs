@@ -105,7 +105,7 @@ Po dodaniu wybranych domen do usługi Exchange możesz je skonfigurować z konta
 
 Wszystkie konta e-mail utworzone w ramach Twojej usługi Exchange mogą wyświetlać w katalogu wszystkie adresy e-mail powiązane z usługą Exchange, również te, które mają różne nazwy domen.
 
-Po skonfigurowaniu Twoich kont możesz zacząć ich używać. OVH udostępnia w tym celu interfejs Webmail **Outlook Web Application** (OWA) dostępny pod linkiem [https://mail.ovh.net/pl/](https://mail.ovh.net/pl/){.external}. 
+Po skonfigurowaniu Twoich kont możesz zacząć ich używać. OVH udostępnia w tym celu interfejs Webmail **Outlook Web Application** (OWA) dostępny pod linkiem [https://www.ovh.pl/mail/](https://www.ovh.pl/mail/){.external}. 
 Abyś mógł korzystać z konta Exchange w sposób optymalny, upewnij się, czy jest ono kompatybilne z Twoim programem pocztowym. Jeśli chcesz skonfigurować Twoje konto e-mail na smartfonie, tablecie lub programie pocztowym lub jeśli chcesz uzyskać pomoc w zakresie funkcji Exchange, skorzystaj z naszej dokumentacji dostępnej tutaj: [https://docs.ovh.com/pl/microsoft-collaborative-solutions/](https://docs.ovh.com/pl/microsoft-collaborative-solutions/){.external}.
 
 OVH oferuje licencje Outlook w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, a ponadto licencje Office 365 na stronie [https://www.ovh.pl/office-365/](https://www.ovh.pl/office-365/){.external}. Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.

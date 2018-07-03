@@ -86,7 +86,7 @@ V základním administračním rozhraní služby Hosted Exchange přejděte do z
 
 ### Fáze 5: používání e-mailových adres
 
-Jakmile jsou Vaše účty nakonfigurovány, nezbývá než začít je naplno využívat! Za tímto účelem můžete vyzkoušet webovou aplikaci OVH Webmail **Outlook Web Application** (OWA), která je dostupná na následující adrese: <https://mail.ovh.net/cz/>. Pro přihlášení jednoduše zadejte přístupové údaje ke své e-mailové adrese. Detailní informace o nástroji OWA naleznete v následující dokumentaci: <https://docs.ovh.com/cz/cs/microsoft-collaborative-solutions/>.
+Jakmile jsou Vaše účty nakonfigurovány, nezbývá než začít je naplno využívat! Za tímto účelem můžete vyzkoušet webovou aplikaci OVH Webmail **Outlook Web Application** (OWA), která je dostupná na následující adrese: <https://www.ovh.cz/mail/>. Pro přihlášení jednoduše zadejte přístupové údaje ke své e-mailové adrese. Detailní informace o nástroji OWA naleznete v následující dokumentaci: <https://docs.ovh.com/cz/cs/microsoft-collaborative-solutions/>.
 
 Pokud si svůj e-mail přejete nakonfigurovat na externím e-mailovém klientu, smartphonu či tabletu, podívejte se do následující dokumentace: <https://docs.ovh.com/cz/cs/microsoft-collaborative-solutions/>. Pro optimální výkon vždy prosím ověřte kompatibilitu používaného softwaru se službou Exchange.
 

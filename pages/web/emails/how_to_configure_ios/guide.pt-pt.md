@@ -93,7 +93,7 @@ Precisa de inserir os dados de forma manual nas preferências da conta? A tabela
 
 Após a configuração, a conta de e-mail está pronta a usar! Já pode enviar e receber mensagens no seu dispositivo.
 
-A OVH também disponibiliza uma aplicação que pode usar para aceder ao seu e-mail diretamente a partir do browser, disponível no endereço <https://mail.ovh.net/pt/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
+A OVH também disponibiliza uma aplicação que pode usar para aceder ao seu e-mail diretamente a partir do browser, disponível no endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
 
 ## Quer saber mais?
 

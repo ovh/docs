@@ -70,7 +70,7 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH also offers a web application that includes various [collaborative features](https://www.ovh.ie/emails/){.external}. You can access this application at <https://mail.ovh.net/ie/>. Log in using your email credentials.
+OVH also offers a web application that includes various [collaborative features](https://www.ovh.ie/emails/){.external}. You can access this application at <https://www.ovh.ie/mail/>. Log in using your email credentials.
 
 ## Go further
 

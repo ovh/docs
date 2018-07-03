@@ -56,7 +56,7 @@ Správnost nastavení ověřte odesláním zkušebního e-mailu.
 
 Po úspěšném dokončení konfigurace můžete svůj e-mail začít naplno využívat. Od teď můžete odesílat a přijímat zprávy prostřednictvím svého macOS zařízení.
 
-OVH nabízí webovou aplikaci, která umožňuje přístup k Vaší e-mailové adrese prostřednictvím internetového prohlížeče. Aplikace je dostupná na adrese <https://mail.ovh.net/cz/>. Přihlásit se můžete pomocí přihlašovacích údajů ke své e-mailové adrese.
+OVH nabízí webovou aplikaci, která umožňuje přístup k Vaší e-mailové adrese prostřednictvím internetového prohlížeče. Aplikace je dostupná na adrese <https://www.ovh.cz/mail/>. Přihlásit se můžete pomocí přihlašovacích údajů ke své e-mailové adrese.
 
 ## Kam dál
 

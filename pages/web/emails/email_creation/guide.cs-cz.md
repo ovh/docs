@@ -64,7 +64,7 @@ Nakonec klikněte na tlačítko `Schválit`{.action}. Pokud si přejete vytvoři
 
 ### Fáze 3: použití e-mailové adresy
 
-Nyní již nezbývá než začít své e-mailové adresy naplno využívat. Za tímto účelem můžete vyzkoušet webovou aplikaci OVH (webmail) s názvem RoundCube. OVH webmail je dostupný na následující adrese: <https://mail.ovh.net/cz/>. Pro přihlášení použijte identifikační údaje e-mailové adresy vytvořené prostřednictvím Zákaznického prostoru OVH.
+Nyní již nezbývá než začít své e-mailové adresy naplno využívat. Za tímto účelem můžete vyzkoušet webovou aplikaci OVH (webmail) s názvem RoundCube. OVH webmail je dostupný na následující adrese: <https://www.ovh.cz/mail/>. Pro přihlášení použijte identifikační údaje e-mailové adresy vytvořené prostřednictvím Zákaznického prostoru OVH.
 
 Pokud si svůj e-mail přejete nakonfigurovat na externím e-mailovém klientu, smartphonu či tabletu, podívejte se do následující dokumentace: <https://docs.ovh.com/cz/cs/emails/>
 

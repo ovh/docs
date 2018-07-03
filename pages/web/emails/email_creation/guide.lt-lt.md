@@ -64,7 +64,7 @@ Finally, click on `Confirm`{.action} to create the email address. You can repeat
 
 ### Step 3: Use the email address
 
-Now, you just need to use your email addresses. To help you get started, OVH offers Roundcube: an online webmail application. Roundcube is available at the following address: <https://mail.ovh.net/lt/>. You will need to enter the credentials for the email address that you created with OVH.
+Now, you just need to use your email addresses. To help you get started, OVH offers Roundcube: an online webmail application. Roundcube is available at the following address: <https://www.ovh.lt/mail/>. You will need to enter the credentials for the email address that you created with OVH.
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our documentation via this portal: <https://docs.ovh.com/lt/emails/>.
 

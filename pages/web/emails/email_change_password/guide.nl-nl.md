@@ -64,7 +64,7 @@ Voer in het venster dat verschijnt het nieuwe wachtwoord in, en klik op de knop 
 
 Als u uw wachtwoord hebt gewijzigd, kunt u naar uw e-mailadres gaan. Er zijn twee manieren om dit te doen:
 
-- **Door gebruik te maken van onze online applicatie Roundcube**: ga naar het adres <https://mail.ovh.net/nl/>, en voer vervolgens het betreffende e-mailadres en het nieuwe wachtwoord in. Als u zojuist het wachtwoord hebt gewijzigd en de authenticatie mislukt, wacht dan even en probeer vervolgens opnieuw in te loggen; 
+- **Door gebruik te maken van onze online applicatie Roundcube**: ga naar het adres <https://www.ovh.nl/mail/>, en voer vervolgens het betreffende e-mailadres en het nieuwe wachtwoord in. Als u zojuist het wachtwoord hebt gewijzigd en de authenticatie mislukt, wacht dan even en probeer vervolgens opnieuw in te loggen; 
 
 - **Door compatibele e-mailsoftware te gebruiken**: u moet het nieuwe wachtwoord invoeren op alle apparaten waarop uw e-mailadres is ingesteld. Het is mogelijk dat er automatisch een venster verschijnt dat u vraagt het nieuwe wachtwoord van het e-mailadres in te voeren.  Als dit niet het geval is, neemt u dan aub contact op met de uitgever van uw e-mailsoftware voor informatie over het instellen van het nieuwe wachtwoord, omdat deze procedure voor elk softwarepakket verschillend is.
 

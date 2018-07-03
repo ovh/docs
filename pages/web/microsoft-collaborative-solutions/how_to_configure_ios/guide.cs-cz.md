@@ -78,7 +78,7 @@ Správnost nastavení ověřte odesláním zkušebního e-mailu.
 
 Po úspěšném dokončení konfigurace můžete svůj e-mail začít naplno využívat. Od teď můžete odesílat a přijímat zprávy prostřednictvím svého iOS zařízení.
 
-Vyzkoušejte také webovou aplikaci OVH s [funkcemi pro týmovou spolupráci](https://www.ovh.cz/emails/){.external}, která je dostupná na následující adrese: <https://mail.ovh.net/cz/>. Přihlásit se můžete pomocí přihlašovacích údajů ke své e-mailové adrese.
+Vyzkoušejte také webovou aplikaci OVH s [funkcemi pro týmovou spolupráci](https://www.ovh.cz/emails/){.external}, která je dostupná na následující adrese: <https://www.ovh.cz/mail/>. Přihlásit se můžete pomocí přihlašovacích údajů ke své e-mailové adrese.
 
 ## Více informací
 

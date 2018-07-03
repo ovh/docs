@@ -149,7 +149,7 @@ Per maggiori informazioni sulle funzionalità disponibili, consulta la documenta
 
 ### Step 6: utilizza i tuoi account email
 
-A questo punto non ti resta che utilizzare i tuoi account di posta. OVH fornisce l'applicazione online RoundCube, disponibile all'indirizzo [https://mail.ovh.net/it/](https://mail.ovh.net/it/){.external}. Per accedervi, inserisci le credenziali associate all’indirizzo di posta creato in OVH.
+A questo punto non ti resta che utilizzare i tuoi account di posta. OVH fornisce l'applicazione online RoundCube, disponibile all'indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external}. Per accedervi, inserisci le credenziali associate all’indirizzo di posta creato in OVH.
 
 Per maggiori informazioni su questo servizio, consulta la nostra [guida all’utilizzo di RoundCube](https://docs.ovh.com/it/emails/webmail_guida_allutilizzo_di_roundcube/){.external}. Per configurare l’account email su un client di posta o un dispositivo (ad esempio, smartphone o tablet), fai riferimento alla documentazione disponibile a questa pagina: <https://docs.ovh.com/it/emails/>.
 

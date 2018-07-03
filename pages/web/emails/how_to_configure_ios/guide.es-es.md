@@ -94,7 +94,7 @@ Si la aplicación le pide que introduzca de forma manual algunos datos técnicos
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVH ofrece una aplicación web con la que podrá acceder a su cuenta de correo electrónico desde el navegador, disponible en la dirección [https://mail.ovh.net/es/](https://mail.ovh.net/es/){.external}. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVH ofrece una aplicación web con la que podrá acceder a su cuenta de correo electrónico desde el navegador, disponible en la dirección [https://www.ovh.es/mail/](https://www.ovh.es/mail/){.external}. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 ## Más información
 

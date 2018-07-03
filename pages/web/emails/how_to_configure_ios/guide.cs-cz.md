@@ -93,7 +93,7 @@ Pokud bude nastavení účtu zapotřebí upravit manuálně, níže naleznete ne
 
 Po úspěšném dokončení konfigurace můžete svůj e-mail začít naplno využívat. Od teď můžete odesílat a přijímat zprávy prostřednictvím svého iOS zařízení.
 
-OVH nabízí webovou aplikaci, která umožňuje přístup k Vaší e-mailové adrese prostřednictvím internetového prohlížeče (Webmail). Aplikace je dostupná na následující adrese: <https://mail.ovh.net/cz/>. Přihlásit se můžete pomocí přihlašovacích údajů ke své e-mailové adrese.
+OVH nabízí webovou aplikaci, která umožňuje přístup k Vaší e-mailové adrese prostřednictvím internetového prohlížeče (Webmail). Aplikace je dostupná na následující adrese: <https://www.ovh.cz/mail/>. Přihlásit se můžete pomocí přihlašovacích údajů ke své e-mailové adrese.
 
 ## Kam dál
 

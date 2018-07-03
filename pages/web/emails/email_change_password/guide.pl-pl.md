@@ -64,7 +64,7 @@ W oknie, które się wyświetli, wprowadź nowe hasło i kliknij przycisk Zatwie
 
 Po zmianie hasła możesz zalogować się do konta e-mail. Aby to zrobić, możesz skorzystać z jednej z dwóch metod:
 
-- **użyj aplikacji OVH RoundCube**: kliknij link <https://mail.ovh.net/pl/>, następnie wpisz odpowiedni adres e-mail oraz nowe hasło. Jeśli właśnie zmieniłeś hasło i uwierzytelnienie nie powiodło się, odczekaj kilka chwil, następnie spróbuj zalogować się ponownie;
+- **użyj aplikacji OVH RoundCube**: kliknij link <https://www.ovh.pl/mail/>, następnie wpisz odpowiedni adres e-mail oraz nowe hasło. Jeśli właśnie zmieniłeś hasło i uwierzytelnienie nie powiodło się, odczekaj kilka chwil, następnie spróbuj zalogować się ponownie;
 
 - **użyj kompatybilnego programu pocztowego**: konieczne jest wprowadzenie nowego hasła we wszystkich urządzeniach, w których konto e-mail zostało skonfigurowane. W przypadku niektórych programów pocztowych okno, do którego należy wpisać nowe hasło do konta e-mail wyświetli się automatycznie. Jeśli tak się nie stanie, sprawdź w dokumentacji programu pocztowego lub skontaktuj się z producentem, aby móc przeprowadzić tę operację.
 

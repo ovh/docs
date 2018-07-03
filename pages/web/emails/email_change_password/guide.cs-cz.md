@@ -64,7 +64,7 @@ Zadejte nové heslo. Změnu potvrďte kliknutím na tlačítko Schválit.
 
 Po změně hesla můžete svou e-mailovou adresu opět používat. Existují dva způsoby, jak se k e-mailu přihlásit:
 
-- **Prostřednictvím naší online aplikace RoundCube (Webmail)**: přejděte na adresu <https://mail.ovh.net/cz/>. Následně vyplňte své přihlašovací údaje (e-mailová adresa a nové heslo). Pokud přihlášení selže, může to být z toho důvodu, že nové heslo ještě nenabylo platnost. V takovém případě vyčkejte několik minut a poté to zkuste znovu.
+- **Prostřednictvím naší online aplikace RoundCube (Webmail)**: přejděte na adresu <https://www.ovh.cz/mail/>. Následně vyplňte své přihlašovací údaje (e-mailová adresa a nové heslo). Pokud přihlášení selže, může to být z toho důvodu, že nové heslo ještě nenabylo platnost. V takovém případě vyčkejte několik minut a poté to zkuste znovu.
 
 - **Prostřednictvím kompatibilního e-mailového klienta**: v případě změny hesla je nutné přihlašovací údaje v konfiguraci e-mailového klienta nejprve aktualizovat. V určitých případech můžete být o zadání nového hesla požádáni automaticky. V ostatních případech je nové heslo zapotřebí zadat do konfiguračního rozhraní daného softwaru manuálně. 
 
