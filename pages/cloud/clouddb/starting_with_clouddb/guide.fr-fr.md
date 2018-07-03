@@ -38,7 +38,7 @@ Vous pouvez y consulter les informations importantes concernant votre instance. 
 |Version|Affiche la version du système de bases de données utilisée par le serveur. Veillez à la compatibilité de votre site avec la version choisie.|
 |RAM|Affiche la mémoire vive disponible pour votre instance ainsi que les éventuels dépassements de mémoire. Votre instance CloudDB dispose de ressources dédiées et garanties : sa mémoire RAM. Si besoin, vous pouvez faire évoluer cette dernière et être prévenu si vous consommez toutes les ressources mémoire de votre instance.|
 |Infrastructure|Affiche l'infrastructure utilisée par votre instance. Il s'agit d'une information inhérente à l'infrastructure d'OVH.|
-|Datacenter|Affiche le centre de données dans lequel l'instance a été créée. Assurez-vous que le datacenter de votre instance est le même que celui de l'hébergement web OVH où votre site internet est – ou sera – hébergé.|
+|Datacenter|Affiche le centre de données dans lequel l'instance a été créée.|
 |Host|Affiche le serveur OVH dans lequel votre instance est créée. Il s'agit d'une information inhérente à l'infrastructure d'OVH et peut être utilisée dans nos communications liées aux [incidents OVH](http://travaux.ovh.net/){.external}.|
 
 ![clouddb](images/clouddb-general-information.png){.thumbnail}

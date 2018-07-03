@@ -38,7 +38,7 @@ You can also view important information about your instance. Please take a few m
 |Version|Shows the database system version used by the server. Check that your website is compatible with the version you have chosen.|
 |RAM|Shows the RAM available for your instance, also shows if you are close to exceeding the RAM limit. Your CloudDB instance uses dedicated, guaranteed resources: its RAM. If required, you can scale the RAM, and receive warnings if you are consuming all of your instance’s RAM resources.|
 |Infrastructure|Shows the infrastructure that your instance uses. This information relates to the OVH infrastructure.|
-|Datacentre|Shows the datacentre where the instance has been created. Make sure that your instance is hosted in the same datacentre as the OVH web hosting plan that your website is based on (or will be based on).|
+|Datacentre|Shows the datacentre where the instance has been created.|
 |Host|Shows the OVH server where your instance is. This information relates to the OVH infrastructure, and we may use it in our communication on [OVH incidents](http://status.ovh.net/){.external}.|
 
 ![clouddb](images/clouddb-general-information.png){.thumbnail}

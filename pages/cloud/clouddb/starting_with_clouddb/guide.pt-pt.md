@@ -39,7 +39,7 @@ Aí pode consultar as informações mais relevantes relativamente à sua instân
 |Versão|Indica a versão do sistema da base de dados usado pelo servidor. Por favor, verifique a compatibilidade do seu site com a versão selecionada.|
 |RAM|Indica a RAM disponível para a instância, e avisa quando os limites da RAM são ultrapassados. A sua instância CloudDB dispõe de recursos dedicados e garantidos: a sua memória RAM. Se precisar de mais recursos, pode fazer um upgrade e receber notificações quando o limite de memória for atingido.|
 |Infraestrutura|Indica a infraestrutura / plataforma usada pela sua instância (i.e. informação relativa à infraestrutura da OVH). Trata-se de uma informação inerente à infraestrutura da OVH.|
-|Datacenter|Indica o datacenter onde instância está alojada. Certifique-se que a instância e o alojamento web usado pelo seu site estão no mesmo datacenter.|
+|Datacenter|Indica o datacenter onde instância está alojada.|
 |Host|Indica o servidor OVH onde a instância foi criada. Esta informação, inerente à infraestrutura da OVH, poderá ser incluída na página sobre o [Estado dos Serviços](http://travaux.ovh.net/){.external}.|
 
 ![clouddb](images/clouddb-general-information.png){.thumbnail}
