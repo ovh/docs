@@ -38,7 +38,7 @@ W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji. Sprawd
 |Wersja|Pokazuje wersję systemu baz danych używanego przez serwer. Upewnij się, czy Twoja strona WWW jest kompatybilna z wybraną wersją.|
 |RAM|Pokazuje pamięć operacyjną dostępną dla Twojej instancji oraz ewentualne przekroczenia pamięci. Twoja instancja CloudDB dysponuje dedykowaną i gwarantowaną pamięcią RAM. Jeśli zajdzie taka potrzeba, możesz zwiększyć pamięć RAM. Możesz również ustawić alert o jej całkowitym zużyciu.|
 |Infrastruktura|Pokazuje infrastrukturę używaną przez Twoją instancję. Jest to wewnętrzne oznaczenie infrastruktury OVH.|
-|Centrum danych|Pokazuje centrum danych, w którym została uruchomiona instancja. Upewnij się, czy Twoja instancja jest uruchomiona w tym samym centrum danych, co hosting, na którym jest (lub zostanie) utworzona Twoja strona WWW.|
+|Centrum danych|Pokazuje centrum danych, w którym została uruchomiona instancja.|
 |Host|Pokazuje serwer OVH, na którym utworzona została instancja. Jest to wewnętrzne oznaczenie OVH, które może pojawić się w komunikatach dotyczących [prac modernizacyjnych i potencjalnych incydentów OVH](http://travaux.ovh.net/){.external}.|
 
 ![cloud databases - bazy danych na instancji](images/clouddb-general-information.png){.thumbnail}

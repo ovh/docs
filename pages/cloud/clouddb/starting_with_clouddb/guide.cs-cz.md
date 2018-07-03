@@ -38,7 +38,7 @@ V této záložce naleznete přehled těch nejdůležitějších informací týk
 |Verze|Udává verzi databázového systému, který je na serveru nainstalován. Ujistěte se prosím, zda jsou Vaše webové stránky s touto verzí kompatibilní.|
 |RAM|Uvádí informace o dostupné operační paměti a jejích případných přetečeních. Vaše CloudDB instance disponuje dedikovanou a garantovanou RAM. V případě potřeby můžete paměť RAM škálovat. Zároveň si můžete nastavit upozornění na její nadměrné využití.|
 |Infrastruktura|Zobrazuje typ infrastruktury, na níž Vaše instance běží. Jedná se o interní označení pro OVH infrastrukturu.|
-|Datacentrum|Zobrazuje informace o datacentru, v němž je daná instance vytvořena.  Ujistěte se prosím, že je Vaše webhostingové řešení hostováno ve stejném datacentru, jako Vaše databázová instance.|
+|Datacentrum|Zobrazuje informace o datacentru, v němž je daná instance vytvořena.|
 |Host|Udává informace o serveru, na němž instance běží. Jedná se o interní označení společnosti OVH, které se může objevit v oficiální komunikaci týkající se případných [incidentů](http://travaux.ovh.net/){.external}.|
 
 ![clouddb](images/clouddb-general-information.png){.thumbnail}
