@@ -1,206 +1,178 @@
 ---
-title: Empezar con CloudDB
+title: 'Primeros pasos con el servicio Cloud Databases'
 slug: empezar-con-clouddb
-legacy_guide_number: 2216
-excerpt: Las ventajas de las bases de datos, sin sus inconvenientes
-section: Primeros pasos
+excerpt: 'Cómo empezar a utilizar la solución Cloud Databases'
+section: 'Primeros pasos'
 ---
 
-¿Tiene un sitio web o aplicación que requiere una base de datos, pero no quiere tener que administrarla? ¡Descubra ya CloudDB, la solución de bases de datos en la que OVH se encarga de todo!
+**Última actualización: 03/07/2018**
 
+## Objetivo
 
-## Introduccion
+La solución Cloud Databases permite disfrutar de una instancia de bases de datos con recursos dedicados y garantizados. Debido al elevado rendimiento y flexibilidad que ofrece este servicio, está destinado principalmente a clientes con necesidades específicas.
 
-### Por que utilizar bases de datos administradas
-Este producto parte de una simple observación: aunque sepan hacerlo, administrar una base de datos no suele ser una prioridad para los usuarios.
+**Esta guía explica cómo empezar a utilizar la solución Cloud Databases.**
 
-Securización, actualizaciones, monitorización, gestión de los permisos, rendimiento...: no es difícil que acaben conviertiéndose en un incordio.
+## Requisitos
 
-Entonces, ¿por qué no dejar esa tarea a OVH y centrarse en su actividad?
+- Tener una instancia [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-Ese es nuestro objetivo. Ya sea particular o profesional, ya tenga una pequeña base de datos o un gran cluster, sus necesidades están cubiertas.
+## Procedimiento
 
+### Ver la información general del servicio
 
-### Ventajas de CloudDB
-**Fácil y rápido:**
+En la columna izquierda de la sección Web del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio Cloud Databases correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
 
-- Creación de bases de datos SQL a través del área de cliente
-- Número ilimitado de bases de datos (en el límite del espacio en disco asignado)
-- Hasta 200 conexiones simultáneas
-- Gestión de los usuarios y permisos asociados desde el área de cliente
-- Acceso a las métricas desde el área de cliente
-- Acceso a los logs
+> [!primary]
+>
+> El nombre del servicio Cloud Databases en el área de cliente de OVH contiene una parte de su ID de cliente y termina en tres cifras («001» para el primer servicio Cloud Databases instalado, «002» para el segundo y así sucesivamente).
+>
 
-**Potente:**
+En dicha pestaña podrá consultar la información más importante relativa al servicio. Compruebe que los datos mostrados son correctos y se corresponden con las indicaciones que se ofrecen a continuación.
 
-- Recursos de RAM garantizados
-- Infraestructura a toda prueba
+|Campo|Detalles|
+|---|---|
+|Estado del servicio|Indica si el servicio está iniciado, se está reiniciando o está suspendido. El servicio debe estar iniciado para poder realizar cualquier tipo de acción.|
+|Tipo|Muestra el sistema de bases de datos utilizado por la instancia.|
+|Versión|Muestra la versión del sistema de bases de datos utilizado por la instancia. Asegúrese de que su sitio web es compatible con la versión elegida.|
+|RAM|Muestra la memoria RAM disponible para la instancia e indica si se ha sobrepasado dicha cantidad de memoria. La instancia Cloud Databases tiene recursos de RAM dedicados y garantizados. Si lo necesita, puede aumentar la capacidad de RAM de la instancia, así como recibir alertas si consume todos los recursos de RAM asignados.|
+|Infraestructura|Muestra la infraestructura utilizada por la instancia. Se trata de una información inherente a la infraestructura de OVH.|
+|Datacenter|Muestra el centro de datos en el que se ha creado la instancia Cloud Databases. Asegúrese de que el datacenter sea el mismo que el del servicio (VPS, servidor dedicado, Public Cloud...) que aloje su sitio web.|
+|Host|Indica el servidor de OVH en el que se ha creado la instancia. Se trata de una información inherente a la infraestructura de OVH y se utiliza en nuestras comunicaciones relacionadas con [incidencias](http://status.ovh.es){.external}.|
 
-**Seguro:**
-
-- Monitorización 24x7 por nuestro equipo
-- Backups automáticos diarios
-- Autorización obligatoria de direcciones IP
-
-**Escalable:**
-
-- Compatible con todos los productos de OVH (excepto los alojamientos compartidos) y, más generalmente, con cualquier producto conectado a la red pública
-- Elección de la versión de SQL y posibilidad de cambiar en cualquier momento a una versión superior
-
-
-### Motores ofrecidos
-Al contratar un CloudDB, puede elegir entre diversos sistemas de bases de datos **SQL**:
-
-- MySQL
-- PostgreSQL
-- MariaDB
-
-Cada instancia dispone de sus propios recursos dedicados.
-
-En caso de que una instancia contenga varias bases de datos, estas **comparten** los recursos.
-
-
-## Contratar CloudDB
-
-### Conexion al area de cliente
-Para poder crear su instancia y, seguidamente, sus bases de datos, acceda al [área de cliente Web](https://www.ovh.com/manager/web/){.external}.
-
-
-### Pedido
-En la columna izquierda, seleccione `Bases de datos`{.action} y haga clic en `Contratar bases de datos`{.action}.
-
-
-![pedido manager](images/bouton-commande_EN.PNG){.thumbnail}
-
-En **Tipo de bases de datos**, seleccione `CloudDB`{.action}.
-
-En **Personalización**, elija el sistema de bases de datos que desee, la RAM y el datacenter.
-
-Indique la duración deseada.
-
-
-![elección pedido](images/bouton-commande_EN.PNG){.thumbnail}
-
-Acepte los contratos y haga clic en `Generar la orden de pedido`{.action}.
-
-
-![generación del pedido](images/bouton-commande_EN.PNG){.thumbnail}
-
-
-## Informacion general
-Una vez en el espacio de su CloudDB del área de cliente, podrá ver la información general del servicio.
-
-
-![generación del pedido](images/infos-generales_EN.png){.thumbnail}
-
-
-## Crear bases de datos y usuarios
+![Cloud Databases](images/clouddb-general-information.png){.thumbnail}
 
 ### Crear una base de datos
-La instancia ya se ha creado, pero todavía está vacía.
 
-Abra la pestaña `Bases de datos`{.action} y haga clic en el botón `Añadir una base de datos`{.action}.
+> [!primary]
+>
+> Este paso no es aplicable a los sistemas de bases de datos Redis.
+>
+
+Para crear una base de datos en una instancia Cloud Databases, abra la pestaña `Bases de datos`{.action} y haga clic en el botón `Añadir una base de datos`{.action}.
 
 
-![creación de base de datos](images/creation-bdd_EN.png){.thumbnail}
+![Cloud Databases](images/clouddb-add-database.png){.thumbnail}
 
-Asigne un nombre a la base de datos y haga clic en `Aceptar`{.action}.
+Se abrirá una ventana en la que podrá elegir las siguientes opciones relativas a la nueva base de datos:
 
+-  **Crear un usuario**: El nuevo usuario podrá realizar consultas a la base de datos tales como lectura, inserción o eliminación de datos.
+- **Añadir una dirección IP autorizada**: Las consultas provenientes de dicha dirección IP estarán autorizadas a acceder a las bases de datos.
 
-![creación de base de datos](images/validation-bdd_EN.png){.thumbnail}
+Complete la información solicitada y haga clic en `Aceptar`{.action}.
 
+|Campo|Descripción|
+|---|---|
+|Nombre de la BD|Nombre que quiera asignar a la base de datos.|
+|Nombre de usuario|Usuario que podrá conectarse a la base de datos y realizar consultas (obligatorio si la casilla `Crear un usuario`{.action} está marcada).|
+|Permisos|Permisos que tendrá el usuario sobre la base de datos (obligatorio si la casilla `Crear un usuario`{.action} está marcada). Para un uso convencional, seleccione `Administrador`{.action} |
+|Contraseña|Introduzca una contraseña y luego confírmela introduciéndola de nuevo (obligatorio si la casilla `Crear un usuario`{.action} está marcada).|
+|IP/Máscara|Dirección IP o máscara de red del servidor o servidores autorizados a acceder a las bases de datos (obligatorio si la casilla `Añadir una dirección IP autorizada`{.action} está marcada).|
+
+> [!warning]
+>
+> Por motivos de seguridad, los datos introducidos deben cumplir los criterios indicados.
+>
+
+![Cloud Databases](images/clouddb-add-database-step2.png){.thumbnail}
 
 ### Crear un usuario
-Para utilizar una instancia CloudDB, es necesario crear usuarios con permisos específicos para conectarse a una base de datos.
 
-Para ello, abra la pestaña `Usuarios y permisos`{.action} y haga clic en `Añadir un usuario`{.action}.
+> [!primary]
+>
+> Este paso no es aplicable a los sistemas de bases de datos Redis.
+>
 
+Si ha creado el usuario junto con la base de datos en la operación anterior, no tendrá que realizar esta etapa. No obstante, en determinados proyectos puede ser necesario habilitar a varios usuarios para que intervengan en la base de datos. Por ejemplo, uno de los usuarios puede tener permisos de lectura y escritura, y otro, solo de lectura.
 
-![añadir un usuario](images/creation-user_EN.png){.thumbnail}
+Si su proyecto no requiere usuarios adicionales, puede omitir este paso. En caso contrario, para crear un usuario en su instancia Cloud Databases, abra la pestaña `Usuarios y permisos`{.action} y haga clic en el botón `Añadir un usuario`{.action}.
 
-Introduzca un **nombre de usuario** y una **contraseña** y haga clic en `Aceptar`{.action}.
+![Cloud Databases](images/clouddb-add-user.png){.thumbnail}
 
+Se abrirá una ventana en la que deberá completar la información solicitada y hacer clic en `Aceptar`{.action}.
 
-![añadir un usuario](images/validation-user_EN.png){.thumbnail}
+|Campo|Descripción|
+|---|---|
+|Nombre de usuario|Usuario que podrá conectarse al servicio. Más adelante podrá asignarle permisos sobre la base de datos.|
+|Contraseña|Introduzca una contraseña y luego confírmela en el campo `Repetir contraseña`{.action}.|
 
+> [!warning]
+>
+> Por motivos de seguridad, los datos introducidos deben cumplir los criterios indicados.
+>
 
-### Gestionar los permisos de los usuarios
-Abra la pestaña `Bases de datos`{.action}, haga clic en el icono con forma de **rueda dentada** situado al final de la línea correspondiente a la base de datos y seleccione `Gestionar los usuarios`{.action}.
+![Cloud Databases](images/clouddb-add-user-step2.png){.thumbnail}
 
+Una vez que haya creado el usuario, deberá asignarle permisos para que pueda realizar acciones en la base de datos, tales como la lectura, la inserción o la eliminación de datos. Para ello, haga clic en el botón `...`{.action} situado al final de la línea correspondiente al usuario y seleccione `Editar los permisos`{.action}. En la nueva página, seleccione los permisos marcando la opción correspondiente. Para un uso convencional, seleccione `Administrador`{.action}.
 
-![gestionar los usuarios](images/gestion-user_EN.png){.thumbnail}
+![Cloud Databases](images/clouddb-add-rights.png){.thumbnail}
 
-Elija los permisos para los usuarios que desee.
+### Importar una base de datos
 
+> [!primary]
+>
+> Esta operación solo es necesaria si desea importar una copia de seguridad de una base de datos preexistente. Si no tiene que importar ninguna base de datos, puede omitir este paso.
+>
 
-![gestionar los usuarios](images/validation-droit_EN.png){.thumbnail}
+Hay varias maneras de importar una base de datos. OVH ofrece una herramienta que permite hacerlo desde el área de cliente. No obstante, puede utilizar cualquier otro método de importación en función de sus preferencias y conocimientos.
 
-A continuación se ofrece la descripción de los permisos existentes:
+A continuación se explica cómo importar una base de datos utilizando la herramienta que OVH pone a su disposición en el área de cliente.
 
-- **Administrador:** Autorización de las consultas de tipo **Select, Insert, Update, Delete, Create, Alter** y **Drop**.
-- **Lectura-Escritura:** Autorización de las consultas de tipo **Select, Insert, Update** y **Delete**.
-- **Lectura:** Autorización de las consultas de tipo **Select**.
-- **Ninguno:** Sin permisos sobre la base.
+**1. Acceder a la función de importación**
 
+Abra la pestaña `Bases de datos`{.action}, haga clic en el icono con forma de rueda dentada correspondiente a la base de datos y seleccione `Importar un archivo`{.action}. Se abrirá una ventana en la que deberá marcar la opción `Importar un nuevo archivo`{.action}. Haga clic en `Siguiente`{.action}.
 
-## Autorizar las IP
+![Cloud Databases](images/clouddb-add-import-step1.png){.thumbnail}
 
-### Anadir el servidor
-Para poder acceder a la instancia de CloudDB, es necesario especificar las IP autorizadas desde este menú.
+**2. Seleccione y envíe el archivo de la copia de seguridad**
 
-Abra la pestaña `IP autorizadas`{.action} y haga clic en `Añadir una dirección IP/máscara`{.action}.
+Asigne un nombre al archivo para poder identificar la copia de seguridad más adelante si quiere restaurarla. A continuación, seleccione el archivo de la copia de seguridad en su ordenador y haga clic en `Enviar`{.action}. Espere hasta que la pantalla indique que el archivo se ha enviado correctamente y haga clic en `Siguiente`{.action}.
 
+![Cloud Databases](images/clouddb-add-import-step2.png){.thumbnail}
 
-![añadir el servidor](images/ip-autorisee_EN.png){.thumbnail}
+**3. Ejecute la importación de la base de datos**
 
-Indique la IP del servidor o red y, opcionalmente, una descripción, y haga clic en `Aceptar`{.action}.
+Por último, seleccione las opciones adicionales que quiera que se apliquen y haga clic en `Aceptar`{.action}.
 
+|Opciones adicionales|Descripción|
+|---|---|
+|Vaciar la base de datos actual|Todo el contenido existente en la base de datos se eliminará y será sustituido por el de la copia de seguridad.|
+|Enviar un email cuando termine la importación|Si marca la casilla, se enviará una notificación por correo electrónico cuando haya finalizado la importación de la base de datos.|
 
-![añadir el servidor](images/validation-ip_EN.png){.thumbnail}
+![Cloud Databases](images/clouddb-add-import-step3.png){.thumbnail} 
 
+### Autorizar una dirección IP
 
-## Utilizar la base de datos
-Una vez haya finalizado la configuración, existen múltiples formas de utilizar la base de datos, según el caso de uso y el motor elegido.
+Para que sea posible acceder a la instancia Cloud Databases, deberá indicar las direcciones IP o rangos de IP autorizados a conectarse a la base de datos. Para ello, abra la pestaña `IP autorizadas`{.action} y haga clic en el botón `Añadir una dirección IP/máscara`{.action}.
 
-A continuación vamos a ver un caso de uso típico.
+![Cloud Databases](images/clouddb-add-ip.png){.thumbnail}
 
+En la nueva ventana, indique en **IP/máscara** la dirección IP o la máscara de red que quiera autorizar y, si lo desea, añada una descripción. Indique si quiere autorizar el acceso únicamente a las bases de datos o también al SFTP. Para terminar, haga clic en `Aceptar`{.action}.
 
-### Instalar WordPress con el lab DBaaS y el motor MySQL
-Cree una instancia CloudDB MySQL.
+![Cloud Databases](images/clouddb-add-ip-step2.png){.thumbnail}
 
-Cree una base de datos y un usuario asociado a dicha base de datos, y asígnele permisos de **admin**.
+### Conectar el sitio web con la base de datos
 
-Autorice a la IP del servidor a acceder al servicio CloudDB.
+Una vez que la base de datos está creada, que uno o más usuarios tienen permisos sobre la misma y que hay al menos una dirección IP autorizada a acceder a la instancia Cloud Databases, solo queda conectar el sitio web a la base de datos. Esto puede hacerse de varias formas, en función del sitio web o del CMS utilizado (WordPress, Joomla...), y dependiendo de la fase en la que se encuentre si está instalando un sitio web.
 
-Consulte en su área de cliente la siguiente información:
+Para poder realizar esta operación, deberá disponer de los siguientes datos:
 
-- Nombre de host
-- Puerto SQL
+|Campo|Descripción|
+|---|---|
+|Nombre de la base de datos|Nombre que le haya asignado a la base de datos al crearla. Puede consultar todas las bases de datos creadas en su servicio Cloud Databases en la pestaña `Bases de datos`{.action}.|
+|Nombre de usuario|Nombre que le haya asignado al usuario al crear la base de datos o al añadir el usuario adicional, en su caso. Puede consultar todos los usuarios creados en su servicio Cloud Databases en la pestaña `Usuarios y permisos`{.action}.|
+|Contraseña del usuario|Contraseña asociada al usuario, que habrá establecido en las operaciones anteriores.|
+|Nombre del host|Servidor en el que está alojado el servicio de bases de datos. Es necesario para que el sitio web pueda conectarse a la base de datos, y puede consultarlo en el área de cliente, en la pestaña `Información general`{.action}, dentro del recuadro **Información de conexión**.|
+|Puerto|Puerto de conexión al servicio Cloud Databases. Es necesario para que el sitio web pueda conectarse a la base de datos, y puede consultarlo en el área de cliente, en la pestaña `Información general`{.action}, dentro del recuadro **Información de conexión**.|
 
-![instancia MySQL](images/infos-sql_EN.png){.thumbnail}
+> [!warning]
+>
+> Existe la posibilidad de que, en la configuración del sitio web, no aparezca el campo `Puerto`{.action}. En ese caso, deberá añadirlo a continuación del nombre del host, separándolo con dos puntos (**nombredehost:puerto**).
+>
 
-- Base de datos
+![Cloud Databases](images/clouddb-login-information.png){.thumbnail}
 
-![instancia MySQL](images/view-bdd_EN.PNG){.thumbnail}
+## Más información
 
-- Usuario
-
-![instancia MySQL](images/view-uer_EN.PNG){.thumbnail}
-
-
-WordPress le pedirá esos datos durante la instalación.
-
-
-![instalación de wordpress](images/wordpress-config.png){.thumbnail}
-
-Cumplimente los campos como se indica a continuación (aquí se indican los valores utilizados en esta guía):
-
-- **Nombre de la base de datos:** base-test
-- **Nombre de Usuario:** user-1
-- **Contraseña:** la contraseña que haya elegido para el usuario «user-1»
-- **Servidor de la base de datos:** xxx.dbaas.ovh.net:35102 (debe tener el formato **host:puerto**)
-- **Prefijo de tabla:** en este caso no es necesario cambiar nada
-
-Para otros casos de uso, seguiremos el método de conexión oficial de los motores utilizados.
-
-No dude en consultar la documentación oficial.
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.

@@ -1,94 +1,78 @@
 ---
-title: Web hosting Seguimiento de los mensajes de correo automatizados
-excerpt: Seguimiento del los mensajes de correo automatizados enviados desde su alojamiento compartido
+title: 'Gestionar los mensajes de correo automatizados'
 slug: web_hosting_seguimiento_de_los_mensajes_de_correo_automatizados
+excerpt: 'Cómo realizar el seguimiento y la gestión de los emails automatizados enviados desde un alojamiento web de OVH'
 section: Diagnóstico
 ---
 
+**Última actualización: 03/07/2018**
 
-## Acceder al apartado «Scripts de mensajes» en su área de cliente
+## Objetivo
 
-## - Conéctese a su [url="https://www.ovh.com/manager/web/login/"][blue][u]área de cliente[/u][/blue][/url].
+Los mensajes de correo automatizados son emails enviados mediante scripts. Se utilizan, por ejemplo, para que los visitantes de un sitio web puedan enviarle mensajes de correo electrónico a través de un formulario de contacto.
 
-- Seleccione el nombre de su alojamiento en la sección «Alojamientos» situada en la columna de la izquierda. 
-- Haga clic en «Más +» y seleccione la opción «Scripts de mensajes».
+**Esta guía explica cómo gestionar los mensajes de correo automatizados enviados desde un alojamiento web de OVH.**
 
+## Requisitos
 
+- Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-![](images/img_3110.jpg){.thumbnail}
+> [!primary]
+>
+> Esta guía solo es aplicable a los mensajes de correo electrónico enviados desde los scripts de un alojamiento web de OVH. Si quiere gestionar las direcciones de correo electrónico incluidas en su solución MX Plan o en su [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}, vaya a la sección `Correo electrónico`{.action} del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+>
 
+## Procedimiento
 
-## Bloquear el envío de mensajes de correo desde su alojamiento
-En algunas ocasiones puede ser necesario bloquear el envío de mensajes de correo desde su alojamiento.
+El seguimiento y la gestión de los emails automatizados de un alojamiento web de OVH se realizan desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, en la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, haga clic en `Más +`{.action} y seleccione `Scripts de correo electrónico`{.action}.
 
-## ¿En qué situaciones sería necesario?
+En la nueva página podrá gestionar los emails automatizados enviados desde el alojamiento web de OVH y realizar un seguimiento de los envíos.
 
-- Cuando realice pruebas de script de envío de correos. 
-- Cuando su sitio sea utilizado por un hacker para el envío de spam.
+![Alojamiento](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
+### Seguimiento del envío de mensajes de correo automatizados
 
+En `Scripts de correo electrónico`{.action} también podrá consultar toda la información relativa al envío de los emails automatizados generados desde los scripts.
 
-## Importante:
-No se eliminará ningún mensaje, sino que se mantendrán en espera durante 72 h. Durante este periodo de tiempo podrá, bien desbloquear el envío, bien eliminar los mensajes.
-1. Haga clic en el botón «Bloquear el envío».
+|Campo|Detalles|
+|---|---|
+|Estado del servicio|Muestra el estado actual del servicio que realiza los envíos de mensajes de correo automatizados del alojamiento web. El color verde indica que los envíos se están realizando correctamente, mientras que el color rojo indica que no se están enviando mensajes. En función del estado, las operaciones que podrá realizar sobre los envíos serán diferentes. Para más información, vaya a la sección [Gestionar el envío de mensajes de correo automatizados](https://docs.ovh.com/es/hosting/web_hosting_seguimiento_de_los_mensajes_de_correo_automatizados/#gestionar-el-envio-de-mensajes-de-correo-automatizados){.external}.|
+|Informes de error a|Envía un informe de errores diario a la dirección de correo electrónico que usted indique. Puede cambiar dicha dirección haciendo clic en el botón `Cambiar el destinatario`{.action}. En el informe se indican los mensajes de correo enviados desde el alojamiento web que han vuelto a OVH porque no han podido entregarse. En cualquier momento puede consultar estos informes haciendo clic en el botón `Mensajes en error`{.action} situado a la derecha. |
+|Total de mensajes enviados|Indica el número de mensajes de correo automatizados enviados desde la creación del alojamiento web en OVH.|
+|Mensajes enviados hoy|Indica el número de mensajes de correo automatizados enviados ese día.|
+|Total de mensajes en error|Indica el número total de mensajes de correo automatizados enviados desde la creación del alojamiento web que han vuelto a OVH porque no han podido entregarse.|
+|Historial de mensajes enviados|Muestra una gráfica con los mensajes enviados desde el alojamiento web en los días previos.|
 
-![](images/img_3111.jpg){.thumbnail}
-2. A continuación, haga clic en «Aceptar».
+> [!primary]
+>
+> Para evitar un uso no deseado de los mensajes de correo automatizados de su alojamiento web, le recomendamos encarecidamente que establezca un sistema de seguridad (como un captcha) en los formularios de su sitio web que envíen mensajes de correo electrónico (como formularios de contacto).
+>
 
-![](images/img_3112.jpg){.thumbnail}
-3. Aparecerá el siguiente mensaje de confirmación:
+![Alojamiento](images/monitoring-automatic-emails-step2.png){.thumbnail}
 
-![](images/img_3113.jpg){.thumbnail}
+Si el estado del servicio permite el envío, pero los mensajes de correo electrónico generados desde sus scripts no se envían, le recomendamos que realice las siguientes acciones:
 
-## Observación:
-El estado del servicio pasará a «inactivo».
+- **Revisar los scripts que realizan el envío**: Es posible que los scripts no puedan enviar mensajes de correo electrónico debido a un error de sintaxis. Revise el contenido de los scripts, corríjalo si es necesario y vuelva a intentar enviar mensajes.
 
-![](images/img_3114.jpg){.thumbnail}
+- **Enviar un mensaje de correo mediante un script de prueba**: Cree un script de prueba que envíe un mensaje de correo electrónico a su dirección personal. Si recibe el mensaje, significa que los scripts encargados de realizar el envío contienen errores. Si necesita ayuda, puede encontrar scripts de prueba en internet.
 
+- **Realizar el envío sin utilizar un servidor SMTP**: No especifique ningún servidor SMTP en los parámetros de sus scripts. Si dispone de una interfaz para administrar el envío de mensaje de correo electrónico desde su sitio web, puede modificar este parámetro en la configuración del sitio web.
 
-## Depurar la cola de envío de mensajes
-En ocasiones, será necesario depurar la cola de envío de mensajes del servidor para evitar un nuevo bloqueo. Para poder eliminar los mensajes, deberá bloquear en primer lugar su envío, tal y como hemos explicado previamente.
+### Gestionar el envío de mensajes de correo automatizados
 
-## Importante:
-Tras eliminar estos mensajes, su cuenta se desbloqueará automáticamente. La operación tardará entre 5 y 10 minutos.
-1. Haga clic en el botón «Eliminar los mensajes».
+La pestaña `Scripts de correo electrónico`{.action} incluye diversos botones con los que podrá gestionar el envío de emails automatizados desde su alojamiento web. Según el estado del servicio, algunas opciones podrían no estar disponibles.
 
-![](images/img_3115.jpg){.thumbnail}
-2. A continuación, haga clic en «Aceptar».
+|Acciones|Descripción|
+|---|---|
+|Bloquear el envío|Bloquea el envío de mensajes de correo automatizados de su alojamiento web. Con el bloqueo activado, los emails generados por sus scripts no se enviarán y se guardarán en una cola de espera durante un máximo de 72 horas.|
+|Desbloquear el envío|Desbloquea el envío de los mensajes de correo automatizados de su alojamiento web. Los emails que estén en la cola de espera también se enviarán.|
+|Eliminar los mensajes|Elimina los mensajes de correo electrónico de la cola de espera y desbloquea su envío.|
 
-![](images/img_3116.jpg){.thumbnail}
-3. Aparecerá el siguiente mensaje de confirmación:
+Para realizar cualquiera de las acciones anteriores, haga clic en el botón correspondiente y a continuación en `Aceptar`{.action}. En algunos casos, la acción seleccionada puede tardar unos minutos en realizarse.
 
-![](images/img_3117.jpg){.thumbnail}
+![Alojamiento](images/monitoring-automatic-emails-step3.png){.thumbnail}
 
-## Observación:
-El estado del servicio pasará a «depuración».
+## Más información
 
-![](images/img_3118.jpg){.thumbnail}
-
-
-## Desbloquear el envío
-Al desbloquear el envío de mensajes, el servicio se reanudará cuando envíe el siguiente mensaje. Los mensajes que estuvieran bloqueados volverán a entrar en la cola de distribución.
-1. Haga clic en el botón «Desbloquear el envío».
-
-![](images/img_3122.jpg){.thumbnail}
-2. A continuación, haga clic en «Aceptar».
-
-![](images/img_3123.jpg){.thumbnail}
-3. Aparecerá el siguiente mensaje de confirmación:
-
-![](images/img_3124.jpg){.thumbnail}
-
-
-## Modificar el destinatario de los informes de error
-Si se producen errores al enviar mensajes desde su alojamiento web, recibirá un informe al día siguiente.
-1. Haga clic en «Cambiar el destinatario».
-
-![](images/img_3119.jpg){.thumbnail}
-2. Indique, a continuación, la dirección de correo en la que desea recibir los informes de error y haga clic en «Aceptar».
-
-![](images/img_3120.jpg){.thumbnail}
-3. Se mostrará la nueva dirección de correo que haya indicado.
-
-![](images/img_3121.jpg){.thumbnail}
-
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
