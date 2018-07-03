@@ -64,7 +64,7 @@ Enter your new password twice in the window that opens, and click `Confirm`{.act
 
 Once you have changed your password, you can access your email address. There are two ways you can do this:
 
-- **By using our online application, Roundcube**: Go to <https://mail.ovh.net/en/>, then enter your email address and the new password. If you have just modified your password and the authentication fails, wait a few moments, then try to sign in again.
+- **By using our online application, Roundcube**: Go to <https://www.ovh.co.uk/mail/>, then enter your email address and the new password. If you have just modified your password and the authentication fails, wait a few moments, then try to sign in again.
 
 - **By using compatible email software**: You will need to enter the new password on all the devices on which your email address has been set up. A window may pop up automatically, asking you to do this. If it does not, please contact your email software's publisher to find out how to enter the new password, as this procedure is different for every software package.
 

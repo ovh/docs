@@ -64,7 +64,7 @@ Syötä näkyviin tulevassa ikkunassa haluamasi salasana, vahvista se ja klikkaa
 
 Kun salasanaa on muokattu, voit kirjautua sähköpostiosoitteeseen. Siihen on kaksi vaihtoehtoa:
 
-- **käyttämällä RoundCube-verkkosovellustamme**: mene osoitteeseen <https://mail.ovh.net/fi/> ja syötä kyseinen sähköpostiosoite sekä sen uusi salasana. Jos olet juuri muokannut salasanaa, eikä tunnistautuminen onnistu, yritä kirjautumista hetken kuluttua uudelleen.
+- **käyttämällä RoundCube-verkkosovellustamme**: mene osoitteeseen <https://www.ovh-hosting.fi/mail/> ja syötä kyseinen sähköpostiosoite sekä sen uusi salasana. Jos olet juuri muokannut salasanaa, eikä tunnistautuminen onnistu, yritä kirjautumista hetken kuluttua uudelleen.
 
 - **käyttämällä yhteensopivaa sähköpostiohjelmistoa**: on tärkeää antaa uusi salasana kaikkiin laitteisiin, joihin sähköpostiosoite on konfiguroitu. Sähköpostiosoitteen uutta salasanaa pyytävä ikkuna saattaa avautua automaattisesti. Mikäli näin ei tapahdu, kehotamme ottamaan yhteyttä sähköpostiohjelmiston kehittäjään ja selvittämään, miten salasana syötetään. Menettely on erilainen eri ohjelmistoilla.
 

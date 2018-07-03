@@ -65,7 +65,7 @@ To check that the account has been correctly configured, you can send a test ema
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH also offers a web application that has [collaborative features](https://www.ovh.ie/emails/){.external}, accessible via <https://mail.ovh.net/en/>. You can log in using your email credentials.
+OVH also offers a web application that has [collaborative features](https://www.ovh.ie/emails/){.external}, accessible via <https://www.ovh.ie/mail/>. You can log in using your email credentials.
 
 ## Go further
 

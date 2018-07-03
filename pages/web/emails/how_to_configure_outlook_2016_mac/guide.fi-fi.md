@@ -77,7 +77,7 @@ Jos täytät käsin teknisiä kenttiä tilisi valinnoissa, näet alla MX Plan -t
 
 Kun sähköpostiosoite on konfiguroitu, se on valmis käytettäväksi! Voit nyt lähettää ja vastaanottaa viestejä.
 
-OVH tarjoaa lisäksi verkkosovelluksen, jolla sähköpostiosoitteeseen voidaan päästä verkkoselaimella. Se on käytettävissä osoitteessa <https://mail.ovh.net/fi/>. Voit kirjautua siihen sähköpostiosoitteeseesi liittyvillä tunnuksilla.
+OVH tarjoaa lisäksi verkkosovelluksen, jolla sähköpostiosoitteeseen voidaan päästä verkkoselaimella. Se on käytettävissä osoitteessa <https://www.ovh-hosting.fi/mail/>. Voit kirjautua siihen sähköpostiosoitteeseesi liittyvillä tunnuksilla.
 
 ## Lue lisää aiheesta
 

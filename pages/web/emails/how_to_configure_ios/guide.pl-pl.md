@@ -93,7 +93,7 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajd
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVH oferuje aplikację internetową dostępną pod adresem <https://mail.ovh.net/pl/> umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki. Możesz się do niej zalogować, używając tych samych danych, których użyłeś do logowania się do konta e-mail.
+OVH oferuje aplikację internetową dostępną pod adresem <https://www.ovh.pl/mail/> umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki. Możesz się do niej zalogować, używając tych samych danych, których użyłeś do logowania się do konta e-mail.
 
 ## Sprawdź również
 

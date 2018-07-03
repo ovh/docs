@@ -78,7 +78,7 @@ Faça um teste de envio para confirmar se está tudo OK configuração.
 
 Após a configuração, a conta de e-mail está pronta a usar! Já pode enviar e receber mensagens no seu dispositivo.
 
-A OVH disponibiliza uma aplicação web com funcionalidades de [colaboração online](https://www.ovh.pt/emails/){.external} acessível através do endereço <https://mail.ovh.net/pt/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
+A OVH disponibiliza uma aplicação web com funcionalidades de [colaboração online](https://www.ovh.pt/emails/){.external} acessível através do endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
 
 ## Quer saber mais?
 

@@ -15,7 +15,7 @@ Hai a disposizione diverse opzioni:
 3. Dopo aver confermato la sincronizzazione, chiudi la pagina. Le tue email saranno copiate nella cartella di destinazione. Questa operazione potrebbe richiedere diverse ore.
 
 
-Accedi direttamente da questo indirizzo: [http://mail.ovh.net/it/imapcopy/](http://mail.ovh.net/it/imapcopy/)
+Accedi direttamente da questo indirizzo: [http://www.ovh.it/mail/imapcopy/](http://www.ovh.it/mail/imapcopy/)
 
 ![](images/img_1423.jpg){.thumbnail}
 

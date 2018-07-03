@@ -87,7 +87,7 @@ La tabla mostrará las cuentas pendientes de configurar con el formato **@config
 
 ### 5. Utilizar las direcciones de correo
 
-Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVH pone a su disposición el webmail **Outlook Web Application** (OWA). Puede acceder a él en la dirección <https://mail.ovh.net/es/>, introduciendo las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVH sobre las [Soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/){.external}, en el apartado relativo a Outlook Web Application (OWA).
+Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVH pone a su disposición el webmail **Outlook Web Application** (OWA). Puede acceder a él en la dirección <https://www.ovh.es/mail/>, introduciendo las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVH sobre las [Soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/){.external}, en el apartado relativo a Outlook Web Application (OWA).
 
 Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/){.external}. Para un uso óptimo de su cuenta Exchange, asegúrese de que su software sea compatible con el servicio.
 

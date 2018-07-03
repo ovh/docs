@@ -57,7 +57,7 @@ Als u wilt controleren of het account correct is geconfigureerd, kunt u een test
 
 Nadat u uw e-mailadres hebt geconfigureerd, kunt u het gaan gebruiken! U kunt nu e-mails verzenden en ontvangen.
 
-OVH biedt ook een web-app met [teamwerk-functies](https://www.ovh.com/nl/emails/){.external}. U kunt deze applicatie bereiken via <https://mail.ovh.net/nl/>. U kunt het openen met behulp van uw e-mailinloggegevens.
+OVH biedt ook een web-app met [teamwerk-functies](https://www.ovh.com/nl/emails/){.external}. U kunt deze applicatie bereiken via <https://www.ovh.nl/mail/>. U kunt het openen met behulp van uw e-mailinloggegevens.
 
 ## Verder
 

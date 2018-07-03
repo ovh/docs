@@ -86,7 +86,7 @@ Konta oczekujące na konfigurację wyświetlane są w tabeli w postaci “*@conf
 
 ### Etap 5: korzystanie z kont e-mail
 
-Po skonfigurowaniu Twoich kont możesz zacząć ich używać. OVH udostępnia w tym celu interfejs webmail **Outlook Web Application** (OWA). Znajdziesz go pod linkiem [https://mail.ovh.net/pl/](https://www.ovh.com/fr/mail/){.external}. Aby się zalogować, wpisz dane identyfikacyjne przypisane do Twojego konta e-mail. Jeśli potrzebujesz pomocy w zakresie użytkowania OWA, skorzystaj z naszej dokumentacji dostępnej pod linkiem: [https://docs.ovh.com/pl/microsoft-collaborative-solutions/](https://docs.ovh.com/pl/microsoft-collaborative-solutions/){.external}.
+Po skonfigurowaniu Twoich kont możesz zacząć ich używać. OVH udostępnia w tym celu interfejs webmail **Outlook Web Application** (OWA). Znajdziesz go pod linkiem [https://www.ovh.pl/mail/](https://www.ovh.com/fr/mail/){.external}. Aby się zalogować, wpisz dane identyfikacyjne przypisane do Twojego konta e-mail. Jeśli potrzebujesz pomocy w zakresie użytkowania OWA, skorzystaj z naszej dokumentacji dostępnej pod linkiem: [https://docs.ovh.com/pl/microsoft-collaborative-solutions/](https://docs.ovh.com/pl/microsoft-collaborative-solutions/){.external}.
 
 Jeśli chcesz skonfigurować Twoje konto e-mail na smartfonie, tablecie lub programie pocztowym, skorzystaj z naszej dokumentacji dostępnej tutaj: [https://docs.ovh.com/pl/microsoft-collaborative-solutions/](https://docs.ovh.com/pl/microsoft-collaborative-solutions/){.external}. Abyś mógł korzystać z konta Exchange w sposób optymalny, upewnij się, czy jest ono kompatybilne z Twoim programem pocztowym.
 

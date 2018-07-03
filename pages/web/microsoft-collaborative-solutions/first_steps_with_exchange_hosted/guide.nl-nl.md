@@ -86,7 +86,7 @@ U ziet een tabel met alle accounts die momenteel zijn geconfigureerd of die binn
 
 ### Stap 5: Maak gebruik van uw e-mailadressen 
 
-Nadat u uw accounts hebt geconfigureerd, hoeft u ze alleen nog maar te gebruiken! Om dit te doen, biedt OVH de **Outlook Web Application** (OWA) webmail-app. U kunt dit via het volgende adres openen: [https://mail.ovh.net/nl/](https://mail.ovh.net/nl/){.external}. Voer uw e-mailadresgegevens in om u in te loggen. Als u hulp nodig heeft bij het gebruik van OWA, raadpleeg dan onze documentatie via deze link: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](https://docs.ovh.com/nl/microsoft-collaborative-solutions/){.external}.
+Nadat u uw accounts hebt geconfigureerd, hoeft u ze alleen nog maar te gebruiken! Om dit te doen, biedt OVH de **Outlook Web Application** (OWA) webmail-app. U kunt dit via het volgende adres openen: [https://www.ovh.nl/mail/](https://www.ovh.nl/mail/){.external}. Voer uw e-mailadresgegevens in om u in te loggen. Als u hulp nodig heeft bij het gebruik van OWA, raadpleeg dan onze documentatie via deze link: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](https://docs.ovh.com/nl/microsoft-collaborative-solutions/){.external}.
 
 Als u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](https://docs.ovh.com/nl/microsoft-collaborative-solutions/){.external}. Als u de manier wilt optimaliseren waarop u uw Exchange-e-mailadres op een e-mailclient gebruikt, moet u ervoor zorgen dat deze compatibel is met de dienst.
 

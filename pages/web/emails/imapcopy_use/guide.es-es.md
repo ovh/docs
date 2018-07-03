@@ -15,7 +15,7 @@ Solo tendrá que seguir estos pasos:
 2. Introducir la información relativa a la nueva cuenta de correo.
 3. Una vez aceptada la sincronización, podrá cerrar la página. El correo se copiará a la cuenta de destino. Esta operación puede tardar varias horas.
 
-Puede acceder directamente desde la siguiente dirección: [http://webmail.ovh.net/es/imapcopy/](http://webmail.ovh.net/es/imapcopy/)
+Puede acceder directamente desde la siguiente dirección: [http://webwww.ovh.es/mail/imapcopy/](http://webwww.ovh.es/mail/imapcopy/)
 
 ![](images/img_1423.jpg){.thumbnail}
 

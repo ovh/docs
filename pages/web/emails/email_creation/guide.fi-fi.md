@@ -64,7 +64,7 @@ Klikkaa lopuksi `Vahvista`{.action} käynnistääksesi sähköpostiosoitteen luo
 
 ### 3. vaihe: Sähköpostiosoitteen käyttö
 
-Enää ei ole muuta jäljellä kuin sähköpostiosoitteidesi käyttö. Tätä varten OVH tarjoaa käytettäväksi selaintyökalun (selainposti eli webmail) nimeltä RoundCube. Se on käytettävissä osoitteessa <https://mail.ovh.net/fi/>, jossa sinun on syötettävä OVH:lla luotuun sähköpostiosoitteeseen liittyvät tunnukset.
+Enää ei ole muuta jäljellä kuin sähköpostiosoitteidesi käyttö. Tätä varten OVH tarjoaa käytettäväksi selaintyökalun (selainposti eli webmail) nimeltä RoundCube. Se on käytettävissä osoitteessa <https://www.ovh-hosting.fi/mail/>, jossa sinun on syötettävä OVH:lla luotuun sähköpostiosoitteeseen liittyvät tunnukset.
 
 Lisää tietoa RoundCubesta löydät seuraavasta ohjeesta: [RoundCuben käyttö](https://docs.ovh.com/fi/emails/selainposti_roundcube-ohje/){.external}. Jos haluat konfiguroida sähköpostiosoitteen sähköpostiohjelmistoon tai laitteeseen (esim. älypuhelin tai tabletti), tutustu dokumentaatioomme tässä portaalissa: <https://docs.ovh.com/fi/emails/>.
 

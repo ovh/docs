@@ -87,7 +87,7 @@ Konfigurointia odottavat tilit näkyvät taulukossa muodossa “*@configureme.me
 
 ### 5. vaihe: Sähköpostiosoitteiden käyttö
 
-Kun tilisi on konfiguroitu, voit aloittaa niiden käytön! Tätä varten OVH tarjoaa käytettäväksi **Outlook Web Application** (OWA) -selainpostin. Se on saatavilla osoitteessa [https://mail.ovh.net/fi/](https://mail.ovh.net/fi/){.external}. Kirjautuaksesi sisään anna sähköpostiosoitteeseesi liittyvät käyttäjätunnukset. Mikäli haluat saada apua OWAn käyttöön liittyen, tutustu dokumentaatioomme tästä linkistä [https://docs.ovh.com/fi/microsoft-collaborative-solutions/](https://docs.ovh.com/fi/microsoft-collaborative-solutions/){.external}.
+Kun tilisi on konfiguroitu, voit aloittaa niiden käytön! Tätä varten OVH tarjoaa käytettäväksi **Outlook Web Application** (OWA) -selainpostin. Se on saatavilla osoitteessa [https://www.ovh-hosting.fi/mail/](https://www.ovh-hosting.fi/mail/){.external}. Kirjautuaksesi sisään anna sähköpostiosoitteeseesi liittyvät käyttäjätunnukset. Mikäli haluat saada apua OWAn käyttöön liittyen, tutustu dokumentaatioomme tästä linkistä [https://docs.ovh.com/fi/microsoft-collaborative-solutions/](https://docs.ovh.com/fi/microsoft-collaborative-solutions/){.external}.
 
 Jos haluat konfiguroida sähköpostiosoitteen sähköpostiohjelmistoon tai laitteeseen kuten älypuhelimelle tai tabletille, tutustu dokumentaatioomme tässä portaalissa: [https://docs.ovh.com/fi/microsoft-collaborative-solutions/](https://docs.ovh.com/fi/microsoft-collaborative-solutions/){.external}. Tarkista Exchange-osoitteen yhteensopivuus palvelun kanssa, jotta voit varmistua sen toimivan moitteettomasti ohjelmistossa.
 
