@@ -1,141 +1,82 @@
 ---
-title: 'Web hosting: Información general sobre los servidores DNS'
-excerpt: 'Web hosting: Información general sobre los servidores DNS'
+title: 'Cambiar los servidores DNS de un dominio en OVH'
 slug: web_hosting_informacion_general_sobre_los_servidores_dns
-legacy_guide_number: g2015
-section: DNS (servidor y zona)
+excerpt: 'Cómo cambiar los servidores DNS de un dominio en OVH'
+section: 'DNS (servidor y zona)'
+order: 1
 ---
 
+**Última actualización: 06/07/2018**
 
-## Definición
-El protocolo DNS (Domain Name System, por sus siglas en inglés) permite transformar un nombre de dominio en dirección IP para que las peticiones lleguen al servidor de destino.
+## Objetivo
 
-![](images/img_3413.jpg){.thumbnail}
+Los servidores DNS alojan la configuración DNS de los dominios. La configuración DNS, también llamada zona DNS, contiene una serie de datos técnicos: los registros. Convencionalmente, estos registros sirven de enlace entre el dominio y el servidor o servidores en los que están alojados el sitio web y las cuentas de correo electrónico.
 
+Así pues, podemos decir que los registros DNS, que se almacenan en los servidores DNS, son los que permiten que se pueda acceder a los dominios desde internet.
 
-## Diferencias entre los servidores y la zona DNS
+**Esta guía explica cómo cambiar los servidores DNS de un dominio en OVH.**
 
-## Servidores DNS
+## Requisitos
 
-- Los servidores DNS son los servidores asociados a un nombre de dominio. Son, por lo tanto, los servidores que responderán en primer lugar antes de pasar el testigo a la zona DNS asociada.
+- Tener un [dominio](https://www.ovh.es/dominios/){.external} registrado en OVH.
+- Tener acceso a la gestión del dominio desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+> [!warning]
+>
+> Si el dominio no está registrado en OVH, deberá editar los servidores DNS desde el panel que le ofrezca el proveedor que tenga su gestión.
+>
 
+## Procedimiento
 
-## Zona DNS
+**Editar los servidores DNS de un dominio es una operación delicada.** Una modificación errónea podría deshabilitar el acceso al sitio web y la recepción de nuevos mensajes en las direcciones de correo electrónico. A continuación explicamos lo que ocurre cuando se editan los servidores DNS para que entienda las consecuencias que ello implica sobre el dominio.
 
-- La zona DNS es un archivo que contiene una serie de registros que indican, entre otros, las direcciones de los servidores que alojan su sitio (A) o sus correos (MX). Estas direcciones pueden adoptar la forma de una dirección IP o de nombres de hosts.
+Al cambiar los servidores DNS de un dominio, también se modifica la configuración DNS que utiliza dicho dominio. La nueva configuración se almacena en los nuevos servidores DNS configurados, sustituyendo a la antigua configuración. Técnicamente, el dominio utiliza una nueva zona DNS.
 
+Tenga en cuenta los siguientes aspectos:
 
+- El contenido de la antigua configuración DNS no se replica automáticamente en la nueva. Por lo tanto, deberá asegurarse de que la nueva configuración contiene todos los elementos necesarios para el buen funcionamiento de los servicios asociados al dominio (como un sitio web o direcciones de correo electrónico).
 
+- Si quiere modificar un único elemento de la configuración DNS actual (un registro, por ejemplo), le recomendamos que edite la zona DNS como se indica en la guía [Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}.
 
-## ¿Por qué es necesario editar los servidores o la zona DNS?
+> [!warning]
+>
+> Antes de realizar cualquier cambio, asegúrese de que la modificación no hará que su dominio deje de estar accesible. Si no está seguro, puede ponerse en contacto con la persona que haya solicitado la modificación para confirmar que es correcta.
+>
 
-## Servidores DNS
-Es posible que necesite modificar sus servidores DNS al cambiar de agente registrador, ya que algunos registros no permiten seguir utilizando sus servidores al transferir su dominio a otro agente distinto. 
-También es posible que usted disponga de un servidor dedicado que funcione como servidor DNS y que desee utilizarlo para administrar su dominio.
+### 1. Acceder a la gestión de los servidores DNS del dominio
 
-## Zona DNS
-Si desea modificar el servidor que aloja su sitio web o sus servicios de correo debido a un cambio de alojamiento, por ejemplo, deberá modificar su zona DNS. 
-Una vez actualizada la zona DNS, su dominio apuntará a los nuevos servidores. 
+Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Servidores DNS`{.action}.
 
-Si desea más información sobre la zona DNS, consulte la siguiente guía: 
+Se mostrará una tabla con los servidores DNS configurados actualmente en OVH para el dominio. Cada línea de la tabla contiene un servidor DNS (puede haber varios).
 
-- []({legacy}2015).
+![Servidor DNS](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
+### 2. Editar los servidores DNS del dominio
 
+Para editar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action}.
 
+Sustituya en los campos de texto los servidores DNS actuales por los nuevos servidores que desee configurar. Para añadir más servidores a la lista, haga clic en el botón `+`{.action} situado al final de la última línea.
 
-## Conexión al área de cliente
+Una vez que haya introducido los nuevos servidores, haga clic en el botón `Aplicar la configuración`{.action}. El estado de los servidores DNS se actualizará en la tabla, mostrando los cambios que acaba de realizar.
 
-- Conéctese a su [área de cliente](https://www.ovh.com/manager/web) con su ID de cliente (NIC Handle) y contraseña. 
+> [!primary]
+>
+> El botón `Restaurar los servidores DNS`{.action} permite sustituir los servidores DNS actuales del dominio por los servidores de OVH de origen. Le recomendamos que solo utilice esta opción si quiere volver a utilizar los servidores DNS de OVH. 
+>
 
-- Haga clic en «Login» para validar la operación.
+![Servidor DNS](images/edit-dns-server-ovh-step2.png){.thumbnail}
 
+### 3. Esperar a que se apliquen los cambios
 
+Una vez que haya editado los servidores DNS, deberá esperar a que se apliquen los cambios. Ocurrirán dos cosas:
 
-![](images/img_3411.jpg){.thumbnail}
+- En primer lugar, el organismo encargado de gestionar la extensión del dominio debe aplicar los cambios realizados desde OVH. Puede consultar el progreso en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, en la columna izquierda, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
 
+- Una vez que el organismo encargado de gestionar la extensión del dominio haya aplicado los cambios, la modificación tarda un máximo de 48 horas en propagarse y ser efectiva.
 
-## Selección del dominio
+## Más información
 
-- Acceda a la sección «Dominios» en el menú de la izquierda y seleccione el dominio que desee modificar.
+[Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}
 
-
-
-![](images/img_3405.jpg){.thumbnail}
-
-
-## Agregar nuevos servidores DNS
-
-- Acceda a la sección «Gestión de DNS» y seleccione la opción «Añadir un servidor DNS».
-
-
-
-![](images/img_3406.jpg){.thumbnail}
-
-- Indique el primer servidor DNS que desee añadir, acepte y realice la misma operación para el segundo servidor DNS.
-
-
-
-![](images/img_3407.jpg){.thumbnail}
-
-
-## Eliminar mis antiguos servidores DNS
-
-- Haga clic en el icono con forma de papelera para eliminar sus antiguos servidores DNS y, a continuación, valide la operación.
-
-
-
-![](images/img_3408.jpg){.thumbnail}
-
-- Espere mientras se realiza la operación.
-
-
-
-![](images/img_3409.jpg){.thumbnail}
-
-- Trascurridos unos minutos, se completará la operación.
-
-
-
-![](images/img_3410.jpg){.thumbnail}
-
-
-## Reiniciar servidores DNS por defecto
-Si usted realiza una operación incorrecta, podrá reestablecer sus servidores DNS por defecto.
-
-
-- Acceda a la sección «Gestión de DNS» y seleccione la opción «Reiniciar DNS por defecto».
-
-
-
-![](images/img_3416.jpg){.thumbnail}
-
-- Haga clic en «Aceptar» para confirmar la operación.
-
-
-
-![](images/img_3417.jpg){.thumbnail}
-
-
-## ¿Cómo saber qué servidores DNS le ha asignado OVH?
-Si desea conocer qué servidores DNS le ha asignado OVH, acceda a la información haciendo clic en la sección «Zona DNS», en la que aparecerán los dos registros NS de su zona.
-
-![](images/img_3418.jpg){.thumbnail}
-
-
-## Gestión avanzada de DNS con el registro Glue
-Si desea información sobre cómo crear sus registros Glue, consulte la siguiente guía: 
-[]({legacy}1568)
-
-
-## Plazos
-Servidores DNS
-
-- Todos los cambios en sus servidores DNS pueden tardar hasta 48 h.
-
-Zona DNS
-- Todos los cambios en su zona DNS pueden tardar hasta 24 h.
-
-
-
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
