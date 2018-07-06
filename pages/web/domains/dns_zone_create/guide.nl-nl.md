@@ -1,97 +1,75 @@
 ---
-title: Creëer een DNS zone voor een domein dat niet geregistreerd is bij OVH.
-excerpt: Creëer een DNS zone voor een domein dat niet geregistreerd is bij OVH.
+title: 'Creatie van een OVH DNS-zone voor een domeinnaam'
 slug: creeer_een_dns_zone_voor_een_domein_dat_niet_geregistreerd_is_bij_ovh
+excerpt: 'Ontdek hoe u via uw Control Panel een OVH DNS-zone voor uw domeinnaam kunt aanmaken'
 legacy_guide_number: g2229
+section: 'DNS en DNS-zone'
+order: 2
 ---
 
+**Laatste update 06-07-2018**
+
+## Introductie
+
+Een Domain Name System (DNS) -zone is het configuratiebestand van een domeinnaam. Het is samengesteld uit technische informatie, ook wel 'records' genoemd. DNS-zones worden meestal gebruikt om uw domeinnaam te koppelen aan de server (of servers) die uw website en e-mailadressen hosten.
+
+Om een aantal redenen moet u mogelijk een DNS-zone aanmaken voor uw domeinnaam bij OVH.
+
+**Deze handleiding legt uit hoe u een OVH DNS-zone voor uw domeinnaam kunt creëren via uw Control Panel.**
 
 ## Vereisten
-Om een DNS zone aan te maken voor een domein dat niet geregistreerd is bij OVH dient u na te gaan dat het aan de volgende vereisten voldoet: 
 
+- U moet beschikken over een domeinnaam.
+- De betreffende domeinnaam mag nog geen OVH DNS-zone hebben, of deel uitmaken van een actie of bestelling die momenteel bij OVH wordt verwerkt.
+- De technische configuratie van de domeinnaam moet correct zijn (status, SOA, etc.).
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-- Er kunnen voor dit domein geen bestaande bestellingen of acties openstaan bij OVH
-- Het domein moet bestaan
-- Het SOA-record van het domein moet aangegeven zijn in de DNS zone.
+## Instructies
 
+### Stap 1: Creëer de DNS-zone via het Control Panel.
 
+Log u eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Bestelling`{.action} in de dienstenbalk aan de linkerkant en vervolgens op `DNS-zone`{.action}.
 
+Voer in het popup-venster de domeinnaam in waarvoor u een OVH DNS wilt aanmaken. Wacht dan even totdat de tool zijn verificaties op de domeinnaam uitvoert.
 
-## Stap 1: domeinverificatie
+Als er een bericht verschijnt met de melding dat de DNS-zone niet kan worden aangemaakt, controleer dan of de domeinnaam voldoet aan de vereisten of vraag de persoon die de domeinnaam beheert om dit voor u te doen. Zodra u zeker weet dat de domeinnaam aan de vereisten voldoet en correct is geconfigureerd, probeert u het opnieuw.
 
-- In het domeinonderdeel van uw control panel klikt u op Add DNS zone.
+![dnszonecreate](images/dns-zone-create-step1.png){.thumbnail}
 
+Nadat de verificaties zijn voltooid, moet u kiezen of u de minimale records wilt inschakelen voor de DNS-zone die u gaat maken. De manier waarop u uw DNS-records instelt, is niet permanent. U kunt de records wijzigen nadat u de DNS-zone hebt gemaakt.
 
+|Minimale records inschakelen?|Details|
+|---|---|
+|Ja|Selecteer deze optie als u de DNS-zone in een later stadium zelf wilt aanpassen.|
+|Nee|Selecteer deze optie als u van plan bent om OVH diensten te gebruiken zoals een webhostingabonnement, omdat de zone al vooraf is geconfigureerd.|
 
-![](images/img_4295.jpg){.thumbnail}
-In het Domain name onderdeel geeft u het domein aan waar u de zone voor wilt aanmaken.
+![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 
-![](images/img_4296.jpg){.thumbnail}
+Nadat u een optie hebt geselecteerd, gaat u door met het volgen van de volgende stappen totdat u de DNS-zone hebt aangemaakt.
 
-## Let op:
+### Stap 2: Bewerk de DNS-zone (optioneel).
 
-- Als het aangegeven domein niet aan de vereisten voldoet dan kan er geen DNS zone voor aangemaakt worden.
+Nu de DNS-zone van uw domeinnaam is gecreëerd, kunt u deze bewerken. Deze stap is optioneel, maar het kan van cruciaal belang zijn als u ervoor wilt zorgen dat aan uw domeinnaam gekoppelde diensten (bijvoorbeeld uw website en e-maildiensten) geen downtime ervaren.
 
+Als u deze DNS-zone wilt bewerken, klikt u in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} op `Domeinen`{.action} op de dienstenbalk aan de linkerkant en kiest u vervolgens de betreffende domeinnaam. Ga naar het `DNS-zone`{.action}-tabblad.
 
+> [!primary]
+>
+> Als u zojuist de DNS-zone hebt gemaakt, maar de domeinnaam niet wordt weergegeven onder de lijst met diensten in het gedeelte `Domeinen`{.action}, wacht dan even. Laad vervolgens de pagina opnieuw.
+>
 
-![](images/img_4297.jpg){.thumbnail}
+Zodra het verschijnt, brengt u de vereiste wijzigingen aan. Lees de volgende handleiding voor meer informatie over [bewerking van een DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}. Nadat u de OVH DNS-zone van uw domeinnaam hebt gewijzigd, kan het van 4 tot 24 uur in beslag nemen voordat de wijzigingen volledig zijn doorgevoerd en effectief zijn.
 
-## Tip:
-Als u een domein zonder DNS server heeft dan kunt u bij OVH tijdelijke DNS servers gebruiken voor het toevoegen van de * DNS zone:
+### Stap 3: Bewerk de DNS-servers voor een OVH domeinnaam
 
-- parking1.ovh.net
-- parking2.ovh.net
+Zodra de OVH DNS-zone klaar is om te worden gebruikt, kunt u deze koppelen aan uw domeinnaam. Om dit te doen, moet u de details ophalen voor de OVH DNS-servers die voor uw domeinnaam zijn geactiveerd in uw OVH Control Panel. De servers verschijnen onder `Name Servers`{.action}.
 
+![dnszonecreate](images/dns-zone-create-step3.png){.thumbnail}
 
+Zodra u over de gegevens beschikt, kunt u de **DNS-servers van uw domeinnaam bewerken met behulp van de interface die wordt verstrekt door de serviceprovider van uw domeinnaam**. Wanneer het bewerken is voltooid, is een propagatietijd van maximaal 48 uur vereist voordat de wijziging is doorgevoerd.
 
+## Verder
 
-## Stap 2: kies zone type
-Vervolgens dient u het DNS zone type te kiezen: 
+[Wijziging van een OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}.
 
-- Minimal: DNS zone met het minimum benodigde records om te kunnen functioneren (A, MX, CNAME, ...)
-- Normal: DNS zone met aanvullende records (CNAME naar POP/IMAP/SMTP server, ...)
-
-
-
-![](images/img_4298.jpg){.thumbnail}
-
-
-## Stap 3: Bevestiging
-
-- Vink het vakje 'I have read and understood the terms and conditions' aan.
-- Klik dan op 'Generate purchase order'.
-
-
-
-![](images/img_4299.jpg){.thumbnail}
-
-- Klik vervolgens op 'Settle'.
-
-
-
-![](images/img_4300.jpg){.thumbnail}
-
-- Zodra u bij de bestelling bent aangekomen klikt u op 'Continue'.
-
-
-
-![](images/img_4301.jpg){.thumbnail}
-
-## Informatie:
-Creatie van een DNS zone is geheel gratis.
-
-- Geef de veiligheidscode aan en bevestig.
-
-
-
-![](images/img_4302.jpg){.thumbnail}
-
-
-## Stap 4: Bevestig de bestelling
-Vervolgens kunt u zien of de bestelling is gevalideerd.
-
-![](images/img_4303.jpg){.thumbnail}
-
-## Informatie:
-Na de validatie van uw bestelling kan de installatie ongeveer 30 minuten in beslag nemen.
-
+Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.
