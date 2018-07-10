@@ -98,7 +98,7 @@ Por último, reinicie la interfaz con el siguiente comando:
 ```
 
 
-### Debian 9+, Ubuntu 17+, Fedora 26+ y Arch Linux
+### Debian 9+, Ubuntu 17+, Fedora 26+
 
 En estas distribuciones, el método de denominación de las interfaces como eth0, eth1, etc. cambia, por lo que utilizaremos de forma más genérica el **systemd-network**.
 
@@ -132,6 +132,27 @@ Por último, reinicie la interfaz con el siguiente comando:
 
 ```sh
 systemctl restart systemd-networkd
+```
+
+
+### Arch
+
+#### 1. Añadir la IP a la interfaz deseada
+
+Por defecto la interfaz principal suele ser ```eth0```.
+
+El parámetro ``label eth0:fo1`` es totalmente opcional.
+
+```sh
+ip address add 22.33.44.55/32 broadcast + dev eth0 label eth0:fo1
+```
+
+No es necesario reiniciar ningún servicio
+
+#### Para eliminar la IP
+
+```sh
+ip addr del 22.33.44.55/32 dev eth0
 ```
 
 
