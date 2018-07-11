@@ -5,7 +5,7 @@ excerpt: 'Saiba como começar num plano de alojamento Cloud Web'
 section: Introdução
 ---
 
-**Última atualização: 05/07/2018**
+**Última atualização: 11/07/2018**
 
 ## Sumário
 
@@ -77,7 +77,7 @@ var http = require('http');
 http.createServer(function(request, response) {  
     response.writeHeader(200, {"Content-Type": "text/html"});  
 
-    response.write( process.env. 'DB_DATABASE');
+    response.write( process.env. DB_DATABASE);
 
     response.end();  
 }).listen(80);

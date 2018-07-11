@@ -5,7 +5,7 @@ excerpt: Cómo empezar con un alojamiento Cloud Web
 section: Primeros pasos
 ---
 
-**Última actualización: 25/06/2018**
+**Última actualización: 11/07/2018**
 
 ## Objetivo
 
@@ -74,7 +74,7 @@ var http = require('http');
 http.createServer(function(request, response) {  
     response.writeHeader(200, {"Content-Type": "text/html"});  
 
-    response.write( process.env. 'DB_DATABASE');
+    response.write( process.env. DB_DATABASE);
 
     response.end();  
 }).listen(80);
