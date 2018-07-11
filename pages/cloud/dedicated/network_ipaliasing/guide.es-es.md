@@ -135,11 +135,11 @@ systemctl restart systemd-networkd
 ```
 
 
-### Arch
+### Arch (systemctl)
 
-#### 1. Añadir la IP a la interfaz deseada
+#### 0. Añadir interfaz temporal
 
-Por defecto la interfaz principal suele ser ```eth0```.
+Para probar primero la IP, añadiremos en caliente la IP la interfaz de red que queramos que escuche (lo podemos averiguar con ```ifconfig```). Por defecto la interfaz principal suele ser ```eth0```.
 
 El parámetro ``label eth0:fo1`` es totalmente opcional.
 
@@ -147,13 +147,57 @@ El parámetro ``label eth0:fo1`` es totalmente opcional.
 ip address add 22.33.44.55/32 broadcast + dev eth0 label eth0:fo1
 ```
 
-No es necesario reiniciar ningún servicio
-
-#### Para eliminar la IP
+Si podemos hacer peticiones, es el momento de eliminar la IP y crear el servicio.
 
 ```sh
 ip addr del 22.33.44.55/32 dev eth0
 ```
+
+#### 1. Crear el servicio
+
+Creamos un nuevo servicio.
+
+```sh
+ /etc/systemd/system/failoverIP.service
+```
+
+```
+[Unit]
+Description=Failover Adding IP on boot
+# Wait until network is up
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+# Only start once when network works
+Type=oneshot
+ExecStart=/usr/bin/failoverIP
+
+[Install]
+WantedBy=multi-user.target
+```
+
+#### 2. Crear el script del servicio
+
+```sh
+/usr/bin/failoverIP
+```
+
+Aprovecharemos el comando del paso 0
+```
+#!/bin/bash
+ip address add 22.33.44.55/32 broadcast + dev eth0 label eth0:fo1
+```
+
+#### 3. Activación del servicio
+
+Por último, tendremos que habilitar el servicio y arrancarlo (si hemos eliminado la IP en el paso 0).
+
+```sh
+chmod 755 /usr/bin/failoverIP
+systemctl enable failoverIP.service
+systemctl start failoverIP.service
+``` 
 
 
 ### CentOS y Fedora (25 y anteriores)
