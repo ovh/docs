@@ -5,7 +5,7 @@ excerpt: Dowiedz się, jak rozpocząć korzystanie z hostingu Cloud Web
 section: Pierwsze kroki
 ---
 
-**Ostatnia aktualizacja dnia 2018-06-25**
+**Ostatnia aktualizacja dnia 2018-07-11**
 
 ## Wprowadzenie
 
@@ -76,7 +76,7 @@ var http = require('http');
 http.createServer(function(request, response) {  
     response.writeHeader(200, {"Content-Type": "text/html"});  
 
-    response.write( process.env. 'DB_DATABASE');
+    response.write( process.env. DB_DATABASE);
 
     response.end();  
 }).listen(80);
