@@ -9,19 +9,19 @@ section: 'Servicios y opciones de OVH'
 
 ## Objetivo
 
-OVH pone a su disposición plantillas Windows y SQL Server (en formato OVF) que nuestros clientes puede desplegar directamente desde su cliente de escritorio vSphere (versiones 5.5 y 6.0) y desde el cliente web (Flash y HTML5 en versión 6.5).
+OVH pone a su disposición plantillas de Windows y SQL Server (en formato OVF) que nuestros clientes pueden desplegar directamente desde su cliente de escritorio vSphere (versiones 5.5 y 6.0) y desde el cliente web (Flash y HTML5 en la versión 6.5).
 
 **Esta guía explica dónde encontrar las plantillas y cómo desplegarlas.**
 
 > [!primary]
 > 
-> En [esta página](https://www.ovh.es/private-cloud/opciones/imagenes-licencias.xml){.external} puede consultar el precio de las imágenes que OVH pone a su disposición.
+> En [esta página](https://www.ovh.es/private-cloud/opciones/imagenes-licencias.xml){.external} puede consultar el precio del licenciamiento de las imágenes que OVH pone a su disposición.
 >
 
 ## Requisitos
 
 - Tener acceso al cliente web o al cliente de escritorio, según la versión utilizada.
-- Haber activado las [licencias de Windows](https://www.ovh.es/private-cloud/opciones/imagenes-licencias.xml){.external} desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (pestaña `Licencia Widows`{.action} del datacenter). 
+- Haber activado las [licencias de Windows](https://www.ovh.es/private-cloud/opciones/imagenes-licencias.xml){.external} desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (en la pestaña `Licencia Widows`{.action} de la plataforma). 
 
 
 ## Procedimiento
@@ -41,11 +41,11 @@ Al seleccionar la plantilla, se abrirá una ventana con los enlaces necesarios p
 
 ### Desplegar la plantilla OVF
 
-Una vez conectado al cliente web vSphere, vaya a la página `Hosts y clusters`{.action} y, a continuación, haga clic derecho en su datacenter y seleccione `Deploy OVF Template...`{.action}.
+Una vez conectado al cliente web vSphere, haga clic en `Hosts and Clusters`{.action}. A continuación, haga clic derecho en el datacenter y seleccione `Deploy OVF Template...`{.action}.
 
 ![Desplegar la plantilla](images/selectdeploy.png){.thumbnail}
 
-Se abrirá el menú contextual, donde podrá configurar el despliegue. En primer lugar, introduzca la URL obtenida como se explica más arriba.
+Se abrirá un cuadro de diálogo donde podrá configurar el despliegue. En primer lugar, introduzca la URL obtenida como se explica más arriba.
 
 ![Seleccionar la plantilla](images/puturl.png){.thumbnail}
 
@@ -57,7 +57,7 @@ Seleccione a continuación el cluster en el que quiera desplegar la máquina vir
 
 ![Elección del cluster](images/selectcluster.png){.thumbnail}
 
-Encontrará todos los detalles de la plantilla, incluyendo la contraseña predeterminada. Por seguridad, es importante que la cambie la primera vez que se conecte.
+A continuación se mostrarán todos los detalles de la plantilla, incluyendo la contraseña predeterminada. Por seguridad, es importante que la cambie la primera vez que se conecte.
 
 ![Detalles de la plantilla](images/detailstemplate.png){.thumbnail}
 
@@ -69,17 +69,17 @@ Ahora elija la red que quiera utilizar.
 
 ![Elección de la red](images/selectnetwork.png){.thumbnail}
 
-La configuración ya está casi terminada. Se mostrará un resumen de la configuración elegida.
+Se mostrará un resumen de la configuración elegida. Compruebe que sea correcta.
 
 ![Resumen de la configuración](images/resume.png){.thumbnail}
 
-Cuando haga clic en `Finish`{.action}, se creará una tarea y se indicará el progreso del despliegue.
+Cuando haga clic en `Finish`{.action}, se creará una tarea en la que podrá consultar el progreso del despliegue.
 
 ![Consultar el progreso del despliegue](images/startdeploy.png){.thumbnail}
 
-Una vez finalizado el despliegue, puede cerrar esta ventana.
+Una vez finalizado el despliegue, ya puede cerrar esta ventana.
 
-La máquina virtual desplegada ya aparecerá en el inventario.
+La máquina virtual desplegada aparecerá en el inventario.
 
 ![Inventario](images/inventory.png){.thumbnail}
 
