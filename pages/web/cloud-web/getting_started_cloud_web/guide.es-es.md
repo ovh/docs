@@ -74,7 +74,7 @@ var http = require('http');
 http.createServer(function(request, response) {  
     response.writeHeader(200, {"Content-Type": "text/html"});  
 
-    response.write( process.env. DB_DATABASE);
+    response.write( process.env.DB_DATABASE);
 
     response.end();  
 }).listen(80);
