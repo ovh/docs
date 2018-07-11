@@ -6,7 +6,7 @@ section: 'Bases de données'
 order: 3
 ---
 
-**Dernière mise à jour le 24/05/2018**
+**Dernière mise à jour le 11/07/2018**
 
 ## Objectif
 
@@ -123,7 +123,7 @@ Prenez soin de remplacer les informations génériques dans ce script par les in
 
 > [!primary]
 >
-> Vous pouvez réaliser une sauvegarde à partir d'une date antérieure en ajoutant un port dans votre script. Pour une sauvegarde à la date d'hier, utilisez le port « 3307 ». Pour une sauvegarde d'il y a sept jours, utilisez le port « 3317 ». 
+> Si le datacenter de votre hébergement web est Paris (P19), vous pouvez réaliser une sauvegarde à partir d'une date antérieure en ajoutant un port dans votre script. Pour une sauvegarde à la date d'hier, utilisez le port « 3307 ». Pour une sauvegarde d'il y a sept jours, utilisez le port « 3317 ». 
 > 
 > À noter que l'utilisation du port « 3306 » permettra de réaliser une sauvegarde des données actuellement présentes dans la base de données.
 >
