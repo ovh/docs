@@ -5,7 +5,7 @@ excerpt: Zjistěte, jak na webhosting Cloud Web
 section: První kroky
 ---
 
-**Poslední aktualizace 25/06/2018**
+**Poslední aktualizace 11/07/2018**
 
 ## Cíl
 
@@ -76,7 +76,7 @@ var http = require('http');
 http.createServer(function(request, response) {  
     response.writeHeader(200, {"Content-Type": "text/html"});  
 
-    response.write( process.env. 'DB_DATABASE');
+    response.write( process.env. DB_DATABASE);
 
     response.end();  
 }).listen(80);

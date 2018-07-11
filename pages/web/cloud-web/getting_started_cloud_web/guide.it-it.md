@@ -5,7 +5,7 @@ excerpt: Come eseguire le prime operazioni su un Cloud Web
 section: Per iniziare
 ---
 
-**Ultimo aggiornamento: 25/06/2018**
+**Ultimo aggiornamento: 11/07/2018**
 
 ## Obiettivo
 
@@ -76,7 +76,7 @@ var http = require('http');
 http.createServer(function(request, response) {  
     response.writeHeader(200, {"Content-Type": "text/html"});  
 
-    response.write( process.env. 'DB_DATABASE');
+    response.write( process.env. DB_DATABASE);
 
     response.end();  
 }).listen(80);

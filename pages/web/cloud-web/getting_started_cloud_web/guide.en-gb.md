@@ -5,7 +5,7 @@ excerpt: Find out how to get started with a Cloud Web hosting plan
 section: Getting started
 ---
 
-**Last updated 25th June 2018**
+**Last updated 11th July 2018**
 
 ## Objective
 
@@ -76,7 +76,7 @@ var http = require('http');
 http.createServer(function(request, response) {  
     response.writeHeader(200, {"Content-Type": "text/html"});  
 
-    response.write( process.env. 'DB_DATABASE');
+    response.write( process.env. DB_DATABASE);
 
     response.end();  
 }).listen(80);

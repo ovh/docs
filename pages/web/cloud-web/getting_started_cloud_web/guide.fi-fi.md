@@ -5,7 +5,7 @@ excerpt: 'Katso, kuinka webhotellin käyttö aloitetaan.'
 section: Aluksi
 ---
 
-**Päivitetty 25.6.2018**
+**Päivitetty 11.7.2018**
 
 ## Tavoite
 
@@ -76,7 +76,7 @@ var http = require('http');
 http.createServer(function(request, response) {  
     response.writeHeader(200, {"Content-Type": "text/html"});  
 
-    response.write( process.env. 'DB_DATABASE');
+    response.write( process.env. DB_DATABASE);
 
     response.end();  
 }).listen(80);

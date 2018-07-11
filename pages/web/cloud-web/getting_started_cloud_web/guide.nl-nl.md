@@ -5,7 +5,7 @@ excerpt: Ontdek hoe u kunt starten met een Cloud Web webhostingplan
 section: Eerste stappen
 ---
 
-**Laatste update 25-06-2018**
+**Laatste update 11-07-2018**
 
 ## Introductie
 
@@ -76,7 +76,7 @@ var http = require('http');
 http.createServer(function(request, response) {  
     response.writeHeader(200, {"Content-Type": "text/html"});  
 
-    response.write( process.env. 'DB_DATABASE');
+    response.write( process.env. DB_DATABASE);
 
     response.end();  
 }).listen(80);
