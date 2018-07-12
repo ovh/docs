@@ -1,149 +1,85 @@
 ---
-title: 'Interruption de service'
+title: 'Rétablir son service suite à une coupure complète ou partielle'
 slug: interruption-de-service
-legacy_guide_number: '7962663'
+excerpt: 'Découvrez comment rétablir votre service suite à une coupure complète ou partielle'
 section: 'Diagnostic et dépannage'
 ---
 
-### Préambule {#préambule}
+**Dernière mise à jour le 12/07/2018**
 
-Il arrive qu'un accès xDSL soit touché par une interruption de service. Afin de dépanner votre connexion, il faut vous poser les bonnes questions : défaut de branchements ?, problème administratif ?, dysfonctionnement provenant de la ligne ?, etc.
+## Objectif
 
-**Sommaire :**
+Vous n'avez actuellement pas accès à Internet ou vous rencontrez des coupures intermittentes ? Nous vous proposons quelques vérifications et manipulations simples pouvant vous permettre de vous dépanner seul et de rétablir votre service.
 
-Niveau : Débutant
+**Découvrez comment rétablir votre service suite à sa coupure complète ou partielle.**
 
-------------------------------------------------------------------------
+## Prérequis
 
-### Prérequis {#prérequis}
+- Se trouver physiquement près du modem pour effectuer les actions.
 
--   Disposer d'un accès xDSL.
--   Votre accès ne doit pas présenter d'impayé.
+## En pratique
 
-------------------------------------------------------------------------
+Avant de débuter, il est essentiel de pouvoir vérifier les voyants lumineux de votre modem afin d'identifier la nature de la coupure que vous rencontrez. Une fois les voyants sous vos yeux, poursuivez la lecture de cette documentation en fonction de l'état de ces derniers.
 
-### Synchronisation {#synchronisation}
+- [Aucun voyant n'est allumé sur votre modem](https://docs.ovh.com/fr/xdsl/interruption-de-service/#si-aucun-voyant-nest-allume){.external}.
+- [Des voyants sont allumés (clignotant ou fixe)](https://docs.ovh.com/fr/xdsl/interruption-de-service/#si-des-voyants-sont-allumes-clignotant-ou-fixe){.external}.
 
-**Comment le constater :**
+### Si aucun voyant n'est allumé
 
-Physiquement sur le modem :****
+Vérifiez d'abord l'alimentation électrique de votre modem en réalisant les manipulations ci-dessous :
 
-Les différents états possible du voyant**"Broadband"** :
+- **branchez l'alimentation de votre modem sur une autre prise électrique.** Ceci vous permettra de vérifier si l'incident provient de la prise actuellement utilisée. N'hésitez pas à débrancher puis rebrancher l'alimentation de votre modem pour écarter un éventuel mauvais contact ;
 
--   **Fixe** : synchronisation établie ;
--   **Clignotant** : pas de synchronisation ;
--   **Éteint** : dysfonctionnement matériel ou aucun signal provenant de la ligne.
+- **débranchez puis rebranchez le câble d'alimentation électrique situé à l'arrière de votre modem.** Ceci vous permettra d'écarter une nouvelle fois un mauvais contact éventuel ;
 
-![](images/broaband.png){.thumbnail}
+- **assurez-vous que le bouton d'alimentation de votre modem est en position « 1 », « ON » ou simplement enfoncé.** Cette position est différente selon le modem que vous utilisez. Vous trouverez ci-dessous des photos vous permettant de mieux identifier l'endroit où se situe le bouton d'alimentation selon votre modem.
 
-Via l'interface WEB :
+|Modem|Branchement|
+|---|---|
+|Technicolor TG789vn|![modemelectrique](images/TG789_power.png){.thumbnail}|
+|Technicolor TG799vac|![modemelectrique](images/TG799_power.jpg){.thumbnail}|
+|Technicolor TG788vn|![modemelectrique](images/TG788v1_power.png){.thumbnail}|
+|Technicolor TG788vn v2|![modemelectrique](images/TG788v2_power.png){.thumbnail}|
 
-Tapez dans la barre d'adresse de votre navigateur l'adresse <http://192.168.1.254> et cliquez sur "**Connexion large bande**", "**Connexion DSL**" :
+Si, malgré ces manipulations, votre modem ne s'allume toujours pas, effectuez une réinitialisation de ce dernier. Si besoin, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVH](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/){.external} ».
 
-![](images/interfacewebsynchro.png){.thumbnail}
+### Si des voyants sont allumés (clignotant ou fixe)
 
-------------------------------------------------------------------------
+Si des voyants sont allumés sur votre modem, cela indique que celui-ci semble fonctionner correctement. Il vous reste maintenant à déterminer la cause de l'incident que vous rencontrez.
 
-**Quelle(s) vérification(s) devez-vous effectuer ?**
+> [!warning]
+>
+> Avant de poursuivre, vérifiez si votre accès est affecté par un incident en cours en vous rendant sur le lien suivant : <https://www.ovhtelecom.fr/xdsl/incident/#/>. Si c'est le cas, prenez connaissance des éléments renseignés sur la page, puis patientez le temps de sa résolution.
+>
 
--   Vérifiez votre desserte interne
+Si aucun incident déclaré n'est en cours, la coupure peut provenir de trois sources :
 
-    → Vérifie**z la propreté et l'état des câbles** et de vos prises téléphoniques (les fils ne doivent pas être écrasés/endommagés ou oxydés).
+- **un défaut de configuration** : un élément, souvent lié à la configuration de votre ordinateur ou à vos branchements, pertube le bon fonctionnement de votre connexion ;
+- **un défaut de connexion** : votre modem est correctement synchronisé, mais n'a pas la possibilité de vous connecter à Internet ; 
+- **une perte de synchronisation** : un perturbateur se situant entre votre modem et le noeud de raccordement des abonnés (ou « NRA » ; soit la centrale téléphonique) perturbe le bon fonctionnement de votre accès. Dans la majorité des cas, ce perturbateur se situe à votre domicile. 
 
-    → Changez/testez avec un autre câblage (filtre ADSL, câble RJ11).
+> [!primary]
+>
+> On parle de synchronisation lorsque votre modem réussit à se synchroniser à l'équipement opérateur se trouvant dans le noeud de raccordement des abonnés (ou « NRA »). Cette synchronisation est indispensable pour que votre accès, et donc votre connexion, soit fonctionnelle.
+>
 
-    → Recherche de parasites : domotiques raccordés sur la ligne téléphonique (interphone, alarme, parafoudre, etc.).
+L'état des voyants de votre modem vous aidera à déterminer la cause de l'incident que vous rencontrez. Aidez-vous des informations du tableau ci-dessous :
 
-    → Si **dégroupage partiel** : prenez contact avec votre opérateur de ligne analogique afin de demander un**test Mirabel.** Ce test permet de tester la continuité électrique de votre ligne analogique. Même si votre ligne semble fonctionnelle, ce test est primordial pour la résolution de votre problème.
+|Voyant Broadband|Voyant Internet|Signification|Détails|
+|---|---|---|---|
+|Vert fixe|Vert fixe|Service fonctionnel|Le service jusqu'à votre modem est fonctionnel et peut être utilisé.| 
+|Vert fixe|Vert clignotant|Service fonctionnel|Le modem échange actuellement des données (un appareil utilise le service ou le monitoring de la ligne est actif).| 
+|Vert clignotant|Éteint|Perte de synchronisation|Votre modem essaye de rétablir la synchronisation de votre accès.| 
+|Éteint|Éteint|Perte de synchronisation|Votre modem n'est pas synchronisé.| 
+|Vert fixe|Éteint|Défaut de connexion|Votre modem est synchronisé, mais n'a pas la possibilité de vous connecter à Internet.| 
+|Vert fixe|Rouge fixe|Défaut de connexion|Votre modem est synchronisé, mais n'a pas la possibilité de vous connecter à Internet.| 
 
-    → Testez sur une autre prise téléphonique, sans rallonge et/ou directement sur la prise dti/test.
+Dès lors, en fonction des voyants, vous avez plusieurs possibilités :
 
-    → Effectuez un **test croisé**. Ce test consiste à vérifier le bon fonctionnement de votre équipement. Au choix :
+- **le service jusqu'à votre modem est fonctionnel** : vérifiez les branchements de votre modem jusqu'à vos appareils (un ordinateur par exemple) ainsi que la configuration de ces derniers ;
+- **la coupure est liée à un défaut de connexion** : essayez de redémarrer ou de réinitialiser votre modem. Si besoin, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVH](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/){.external} ».
+- **la coupure est liée à une perte de synchronisation** : reportez-vous aux instructions décrites dans notre documentation « [Rétablir la synchronisation d'une connexion suite à une coupure](https://docs.ovh.com/fr/xdsl/retablir-synchronisation-suite-coupure/){.external} ».
 
-    -   soit tester un autre modem de type ADSL sur votre prise téléphonique. Si la synchronisation s’établit, alors nous orienterons le diagnostique sur un défaut matériel.
+## Aller plus loin
 
-    -   soit tester votre modem OVH sur un autre lien ADSL, quel que soit l'opérateur. Le voyant "**broadband**" doit s'allumer de manière **fixe**.
-
-→ Redémarrer l'équipement et lancez une **réinitialisation** si nécessaire.
-
-**![](images/warning.png){.thumbnail} Attention, une réinitialisation de l'équipement entraînera la perte de la configuration actuelle du modem** (règle NAT, changement d'adresse IP du modem, DHCP, etc.).
-
--   Événement extérieur : le câble téléphonique a-t-il subit des dommages ? (ex : câble arraché suite à la chute d'un arbre, câble sectionné, poteau téléphonique endommagé). Dans ce cas de figure, vous pouvez déclarer le dommage directement sur <http://assistance.orange.fr/1013-dommage-reseau.php>. Événement climatique ? (Orage, vents forts).
-
-------------------------------------------------------------------------
-
-### Connexion {#connexion}
-
-Comment différencier un défaut de synchronisation d'un défaut de connexion ?
-
-Tout d'abord, vérifiez la réaction de votre voyant "**Broadband**". Celui-ci doit être fixe. Si celui-ci se met à clignoter, nous nous orienterons sur un diagnostic de perte de synchronisation (aussi appelé "**bagot**") → cf. paragraphe [**Synchronisation**](#Interruptiondeservice-synchro).
-
-Ensuite, vérifiez l'état du voyant "internet" :
-
--   Le voyant est **rouge** : connexion non établie.
--   Le voyant est**vert fixe/clignotant** : connexion établie.
-
-Avant d'effectuer des tests, posez-vous les questions suivantes :
-
--   Avez-vous été démarché ou entrepris des démarches auprès d'un autre fournisseur d'accès internet ?
--   Avez-vous effectué une modification au niveau de votre réseau local ou sur la configuration du modem ?
-
-Nous vous invitons à effectuer dans un premier temps un redémarrage de votre modem. Si cela reste sans effet, effectuez une réinitialisation de votre équipement.
-
-**![](images/warning.png){.thumbnail} Attention, une réinitialisation de l'équipement entraînera la perte de la configuration actuelle du modem** (règle NAT, changement d'adresse IP du modem, DHCP, etc.).
-
-Réinitialisation de votre modem OVH :
-
-![](images/TG788vnreset.png){.thumbnail}
-
-Pour effectuer une réinitialisation de votre modem, restez appuyé sur le bouton "Reset" à l'aide d'un trombone jusqu'à ce que votre voyant "**Upgrade**" s'allume en bleu. Sur certaines versions de modems, ça sera le voyant "**Power**" qui passera à l'orange. Pour plus de détails, veuillez suivre le guide suivant : [Réinitialisation du modem]({legacy}18121042)
-
-------------------------------------------------------------------------
-
-### SDSL {#sdsl}
-
-1) Synchronisation :
-
-Sur les accès SDSL, les tests à effectuer sont moindres que sur les liens ADSL/VDSL.
-
-Pour constater la synchronisation sur votre modem SDSL : vérifiez l'état de votre voyant "**Broadband**" ou "**DSL**" :
-
--   le voyant est fixe : synchronisation établie ;
--   le voyant clignotte continuellement : plus de synchronisation.
-
-Test à effectuer :
-
--   Testez avec un autre câble RJ11.
--   Si votre paire est raccordée sur une prise gigogne (en "T"), changez le filtre ADSL en plus du câble RJ11.
--   Si le raccordement a été effectué par vos soins à la mise en service, sachez que le type de câble préconisé pour le raccordement doit être de **catégorie 5E**.
--   Vérifiez votre connectique ainsi que la propreté de vos câbles.
--   Testez avec un autre modem SDSL si vous en avez la possibilité.
-
-2) Connexion :
-
-*Opérateur de collecte* :
-
-Si votre accès est raccordé sur des équipements appartenant à l'opérateur de collecte : l'authentification s'effectue à l'aide du protocole PPPoE.
-
-Que faire si votre modem est synchronisé mais non connecté :
-
--   Votre modem est-il synchronisé ? Si oui, vérifiez dans un premier temps le type de configuration que vous souhaitez : configuration **routeur** ou en **pont** ("bridge").
-
-    Le fonctionnement basique du modem (donc par défaut) est le mode **routeur**.
-
-    Pour effectuer la configuration de votre modem, rendez-vous sur son interface web (<http://192.168.1.254>) -&gt; "Thomson gateway" -&gt; "configuration" -&gt; "setup my thomson gateway".Ensuite, pour établir une connexion PPPoE sur le modem (ou sur votre routeur), récupérez vos identifiants de connexion PPPoE reçus par e-mail lors de l'activation de votre accès puis, dans l'interface web, rendez-vous dans la rubrique "Broadband connexion" -&gt; "internet service" et renseignez les identifiants. (Si bridge, effectuez la connexion directement sur l'interface de votre routeur).
-
--   Votre modem n'est pas synchronisé : reportez-vous au premier point du paragraphe SDSL**.**
-
-*OVH* :
-
-Sur les équipements OVH, nous utilisons le protocole IPoE pour établir la connexion. Cela veut dire que l'on attribue une adresse IP publique à l'équipement qui tente de se connecter.
-
-Pour configurer le modem OVH en bridge ou en mode routeur, récupérez un fichier de configuration directement sur : <ftp://ftp.ovh.net/made-in-ovh/xdsl/modems/>.
-
-Ensuite, rendez-vous sur l'interface web de votre modem <http://192.168.1.254> -&gt; Cliquez sur Thomson gateway -&gt; configuration -&gt; "save or restore my thomson gateway" et chargez le fichier .ini récupéré via le FTP.
-
-
-------------------------------------------------------------------------
-
-
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
