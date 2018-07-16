@@ -23,7 +23,7 @@ Une coupure de synchronisation est généralement occasionnée par un élément 
 
 Avant de débuter, assurez-vous que la panne que vous rencontrez actuellement est bien liée à une coupure de synchronisation. Aidez-vous des voyants de votre modem pour le vérifier. 
 
-Si cela est nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Rétablir son service suite à une coupure complète ou partielle](https://docs.ovh.com/fr/){.external} » afin de vous en assurer. Dès lors, si la panne rencontrée est bien liée à une coupure de synchronisation, poursuivez la lecture de cette documentation afin de réaliser quelques vérifications préalables. 
+Si cela est nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Rétablir son service suite à une coupure complète ou partielle](https://docs.ovh.com/fr/xdsl/interruption-de-service/){.external} » afin de vous en assurer. Dès lors, si la panne rencontrée est bien liée à une coupure de synchronisation, poursuivez la lecture de cette documentation afin de réaliser quelques vérifications préalables. 
 
 ### Étape 2 : réaliser des vérifications préalables
 
