@@ -1,17 +1,22 @@
 ---
-title: Using the IPMI with dedicated servers
+title: 'Using the IPMI with dedicated servers'
 slug: use-ipmi-dedicated-servers
-excerpt: With the IPMI, you can log in to your server without having to use any external software.
-section: Getting started
+excerpt: 'With the IPMI, you can log in to your server without having to use any external software.'
+section: 'Getting started'
 ---
 
-**Last updated 21st June 2018**
+**Last updated 16th July 2018**
 
 ## Objective
 
-With the IPMI (Intelligent Platform Management Interface) console, you can access your dedicated server directly, without needing to use any external software (e.g. a terminal or PuTTY). This guide will explain how to access your servers using this console.
+With the IPMI (Intelligent Platform Management Interface) console, you can access your dedicated server directly, without needing to use any external software (e.g. a terminal or PuTTY).
 
-Please note that you may also see the term KVM (Keyboard Video and Mouse) used for this solution, namely for VPS products.
+**This guide will explain how to access your servers using this console.**
+
+> [!primary]
+>
+Please note that you may also see the term KVM (Keyboard, Video, and Mouse) used for this solution, in connection with our [VPS](https://www.ovh.co.uk/vps/){.external} products.
+>
 
 ## Requirements
 
@@ -27,7 +32,7 @@ You will need to ensure that Java is installed on your desktop for the Java appl
 
 In the `IPMI`{.action} section of your Control Panel, click on `From a Java applet (KVM)`{.action}:
 
-![IPMI Java initiated](images/java_ipmi_initiate.png){.thumbnail}
+![IPMI Java initiated](images/ipmi-applet-01.png){.thumbnail}
 
 Download the file `kvm.jnlp` when you are prompted to do so, then click `Run`:
 
@@ -43,7 +48,7 @@ You can now manage your server using the IPMI console.
 
 Although we would recommend that you log in via the Java applet, you can also access the IPMI using Serial over LAN. To do so, click on `From your browser (SoL)` in the `IPMI`{.action} section of your Control Panel.
 
-![IPMI SoL activation](images/sol_ipmi_activation.png){.thumbnail}
+![IPMI SoL activation](images/ipmi-console-01.png){.thumbnail}
 
 > [!warning]
 >
@@ -54,11 +59,11 @@ Although we would recommend that you log in via the Java applet, you can also ac
 
 If your IPMI stops responding, you can test it by clicking on `Test IPMI`{.action}:
 
-![IPMI test](images/ipmi_test.png){.thumbnail}
+![IPMI test](images/ipmi-test-01.png){.thumbnail}
 
 If everything appears to be normal, as per our example, you may be experiencing a local technical issue (internet connection, local desktop). If the issue is with the IPMI itself, you can reboot it by clicking `Reboot IPMI`{.action}.
 
-![IPMI test](images/ipmi_reboot.png){.thumbnail}
+![IPMI test](images/ipmi-reboot-01.png){.thumbnail}
 
 It will take several minutes for the IPMI to reboot.
 
