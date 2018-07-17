@@ -1,14 +1,14 @@
 ---
-title: Configuring the Firewall Network
+title: 'Configuring the Network Firewall'
 slug: firewall-network
-section: Network Management
+section: 'Network Management'
 ---
 
-**Last updated 16th November 2017**
+**Last updated 16th July 2018**
 
 ## Objective
 
-To protect its global infrastructure and its customers’ servers, OVH offers a firewall that can be configured and integrated into the **Anti-DDoS** (VAC) solution: the Firewall Network. This is an option that will enable you to limit how much your service is exposed to attacks from the public network.
+To protect its global infrastructure and its customers’ servers, OVH offers a firewall that can be configured and integrated into the **Anti-DDoS** (VAC) solution: the Network Firewall. This is an option that will enable you to limit how much your service is exposed to attacks from the public network.
 
 **This guide will take you through the steps for its configuration**.
 
@@ -23,31 +23,30 @@ To protect its global infrastructure and its customers’ servers, OVH offers a 
 
 ## Requirements
 
-- You must have an OVH service with a Firewall Network ([Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}, [VPS](https://www.ovh.co.uk/vps/){.external}, [Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external},  [Failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external}, etc.)
-- You must have access to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- You must have basic network skills
-
+- an OVH service with a Network Firewall ([Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}, [VPS](https://www.ovh.co.uk/vps/){.external}, [Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external},  [Failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external}, etc.)
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- basic network skills
 
 ## Instructions
 
-### Enable the Firewall Network
+### Enable the Network Firewall
 
 > [!primary]
 >
-> The Firewall Network protects the IPs that are associated with a machine. You must therefore configure each IP separately; it is not possible to configure the server as a whole.
+> The Network Firewall protects the IPs that are associated with a machine. You must therefore configure each IP separately; it is not possible to configure the server as a whole.
 > 
 
 You can enable and configure it manually from the Control Panel in the `IP`{.action} section, by clicking on the gear icon to the right of the relevant IPv4.
 
-![Enabling the Firewall Network](images/firewall_creation.png){.thumbnail}
+![Enabling the Firewall Network](images/firewall-create-01.png){.thumbnail}
 
 - You will then be asked for confirmation:
 
-![Confirmation](images/creationvalid.png){.thumbnail}
+![Confirmation](images/firewall-create-02.png){.thumbnail}
 
 - You can then `Enable the firewall`{.action} and `Configure the Firewall`{.action} by clicking once more on the gear icon next to the IPv4:
 
-![Applying the rules in the configuration](images/activationconfig.png){.thumbnail}
+![Applying the rules in the configuration](images/firewall-create-03.png){.thumbnail}
 
 You can set up to **20 rules per IP**.
 
@@ -59,20 +58,17 @@ You can set up to **20 rules per IP**.
 > If you do have any, remember to check your firewall rules regularly, even if you disable it.
 > 
 
-
 > [!primary]
 >
-> - The UDP fragmentation is blocked (DROP) as a default setting. When you enable the Firewall Network, if you use a VPN, remember to correctly configure your maximum transmission unit (MTU). For example, on OpenVPN, you can tick `MTU test`{.action}.
-> - The Firewall Network is not taken into account within the OVH network, so the rules set up do not affect the connections in this internal network.
+> - The UDP fragmentation is blocked (DROP) as a default setting. When you enable the Network Firewall, if you use a VPN, remember to correctly configure your maximum transmission unit (MTU). For example, on OpenVPN, you can tick `MTU test`{.action}.
+> - The Network Firewall is not taken into account within the OVH network, so the rules set up do not affect the connections in this internal network.
 >
 
-
-### Configuring the Firewall Network
+### Configuring the Network Firewall
 
 To add a rule, right-click on `Add a rule`{.action}:
 
-
-![Add a rule](images/ajoutregle1.png){.thumbnail}
+![Add a rule](images/firewall-configure-01.png){.thumbnail}
 
 For each rule you must choose:
 
@@ -84,9 +80,7 @@ For each rule you must choose:
 - the destination port (TCP only)
 - the TCP options (TCP only)
 
-
-![Details on adding a rule](images/ajoutregle4.png){.thumbnail}
-
+![Details on adding a rule](images/firewall-configure-02.png){.thumbnail}
 
 > [!primary]
 >
@@ -94,12 +88,11 @@ For each rule you must choose:
 > - Priority 19: refuses all of the IPv4 protocol if any rules before 19th (the last possible) are not filled in.
 > 
 
-
 ### Configuration example
 
 To make sure that only the SSH (22), HTTP (80), HTTPS (443), and UDP (on port 10000) ports are left open when authorising the ICMP, you need to follow the rules below:
 
-![Configuration example](images/exemple.png){.thumbnail}
+![Configuration example](images/firewall-configure-03.png){.thumbnail}
 
 The rules are sorted chronologically from 0 (the first rule read) to 19 (the last). The chain stops being scanned as soon as a rule is applied to the packet.
 
@@ -107,7 +100,7 @@ For example, a packet for TCP port 80 will be captured by rule 2 and the rules t
 
 > [!warning]
 >
-> If anti-DDoS mitigation is enabled, your Firewall Network rules will be applied, even if you have disabled them. If you wish to disable it, remember to delete your rules.
+> If anti-DDoS mitigation is enabled, your Network Firewall rules will be applied, even if you have disabled them. If you wish to disable it, remember to delete your rules.
 > 
 
 ## Go further
