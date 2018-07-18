@@ -1,174 +1,187 @@
 ---
-title: Comment récupérer le numero de série d’un disque dur ?
+title: 'Récupérer le numéro de série d''un disque dur'
 slug: find-disk-serial-number
-excerpt: Retrouvez ici comment récupérer le numéro de série d’un disque dans le but de procéder à son remplacement.
-section: RAID & disques
+excerpt: 'Découvrez comment récupérer le numéro de série d''un disque dur dans le but de procéder à son remplacement'
+section: 'RAID & disques'
 ---
+
+**Dernière mise à jour le 18/07/2018**
+
+## Objectif
+
+Pour minimiser le risque d'erreur pendant le remplacement d’un disque dur, nous demandons à nos clients de nous fournir le numéro de série du disque qu'ils souhaitent remplacer. Si vous ne l'avez pas encore fait, n'hésitez pas à vous reporter à notre documentation sur le [remplacement d'un disque dur](https://docs.ovh.com/fr/dedicated/disk-replacement/){.external} pour bien en comprendre la procédure.
+
+**Ce guide vous explique comment récupérer le ou les numéros de série de votre ou de vos disques. Dans la plupart des cas, vous pouvez le trouver en testant vos disques durs individuellement avec l'outil smartmontools.**
 
 
 ## Prérequis
-Pour minimiser le risque d'erreur pendant le remplacement d’un disque, nous demandons à nos clients de nous fournir le numéro de série du disque qu’ils souhaitent remplacer.
 
-Dans certain cas, par exemple avec un disque dur non détecté, il est impossible d’extraire le numéro de série.
-
-Quand c’est le cas, fournissez-nous les numéros de série de tous les autres disques et demandez le remplacement du disque dont le numéro de série n’est pas listé.
-
-Dans la plupart des cas, vous pouvez le récupérer en utilisant l'utilitaire smartmontools qui vous permet de tester les disques.
-
-Pour réaliser ces manipulations, il faut :
-
-- Avoir un accès SSH.
-- Avoir le besoin de remplacer un disque.
-- L'utilitaire sas2ircu doit être installé au préalable. (disponible via le moteur de recherche [broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}). Concerne uniquement Windows.
+- Être connecté en SSH avec l'identifiant root [Linux] ou le compte administrateur [Windows].
+- Avoir installé l'utilitaire sas2ircu sur votre serveur Windows (disponible via le moteur de recherche [broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
 
 
+## En pratique
 
 > [!primary]
 >
-> Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode Rescue-pro, et utiliser l'outil nvme-cli installé par défaut.
+> Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode [Rescue64](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external} et d'utiliser l'outil nvme-cli installé par défaut.
 > 
 
+### Récupérer le numéro de série d'un disque avec un RAID logiciel
 
-## Pour un RAID Logiciel
-
-### Sous Linux
-Pour trouver vos numéros de série lorsque vous êtes sur un serveur en RAID Logiciel, il vous faut utiliser smartctl:
+Pour récupérer le numéro de série de votre disque dur avec une configuration RAID logiciel, vous pouvez simplement utiliser `smartctl` :
 
 ```sh
-smartctl -a /dev/sdX | grep Serial
->>> Serial Number:    KKKKKKKKKK
+smartctl -a /dev/sdX | grep Serial Serial Number:    XXXXXXX
 ```
 
-Le périphérique détecté par votre OS (Ex: /dev/sda, /dev/sdb, etc..)
+Le périphérique est détecté par le système d'exploitation (ex. : /dev/sda, /dev/sdb, etc.).
 
 
-#### Pour un disque NVMe
-Il sera nécessaire d'utiliser la commande nvme list :
+### Récupérer le numéro de série d'un disque NVMe
+
+Pour les disques NVMe, il sera nécessaire d'utiliser la commande `nvme list` :
 
 ```sh
-root@rescue:~# nvme list
->>> Node             SN                   Model               Namespace Usage                    Format           FW Rev
->>> ---------------- ------------------- -------------------- --------- ------------------------ ---------------- --------
->>> /dev/nvme0n1     CVPF636600YC450RGN   INTEL SSDPE2MX450G7    1      450.10  GB / 450.10  GB   512   B +  0 B  MDV10253
->>> /dev/nvme1n1     CVPF6333002Y450RGN   INTEL SSDPE2MX450G7    1      450.10  GB / 450.10  GB   512   B +  0 B  MDV10253
+nvme list
+
+Node          SN                  Model                Namespace  Usage                      Format   FW Rev
+/dev/nvme0n1  CVPF636600YC450RGN  INTEL SSDPE2MX450G7  1          450.10 GB / 450.10 GB 512  B + 0 B  MDV10253
+/dev/nvme1n1  CVPF6333002Y450RGN  INTEL SSDPE2MX450G7  1          450.10 GB / 450.10 GB 512  B + 0 B  MDV10253
 ```
 
-On peut alors constater les numéro de série des nos disques NVMe (nvme0 et nvme1).
+Vous pouvez alors voir les numéros de série de vos différents disques NVMe (« nvme0 » et « nvme1 »).
 
 
-### Sous Windows
-Le guide sous Windows est semblable, dans l’ensemble, au guide sous Linux. En effet, nous allons utiliser l'utilitaire : sas2ircu, et les commandes sont les mêmes que sous Linux.
+### Récupérer le numéro de série d'un disque sous Windows
+
+Le guide basé sur Windows est globalement similaire à celui basé sur Linux. Nous allons utiliser l’utilitaire sas2ircu avec les mêmes commandes que celles utilisées pour Linux.
 
 > [!primary]
 >
-> Il sera important de lancer le terminal de commande en tant qu'administrateur pour ne pas avoir d'erreur.
+> Vous devrez exécuter le terminal de commande avec les droits d'administrateur pour éviter des erreurs.
 > 
 
-Pour récupérer le numéro de série dans le cas d'un RAID Logiciel, il vous faut utiliser la commande suivante :
+Pour récupérer le numéro de série d'une configuration RAID logiciel, vous devez utiliser la commande suivante :
 
 ```sh
-.\smartctl -a /dev/sdX
->>> Serial Number:    KKKKKKKKKK
+.\smartctl -a /dev/sdX Serial Number: 1234567890
 ```
 
-Le périphérique détecté par votre OS (Ex: /dev/sda, /dev/sdb, etc..)
-
+Le périphérique sera détecté par le système d'exploitation et affiché comme suit : `/dev/sda`, `/dev/sdb`, etc.
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
 
-## Pour un RAID Matériel
-Pour des commandes plus avancées, il vous faudra utiliser le guide [RAID Matériel](../raid_hard/guide.fr-fr.md){.ref}.
+### Récupérer le numéro de série d'un disque avec un RAID matériel
+
+Pour un aperçu détaillé de ces commandes et de la façon de tester vos disques durs, reportez-vous à ce [guide](https://docs.ovh.com/fr/dedicated/raid-hard/){.external}.
 
 
-### Controleur MegaRaid
+#### Contrôleur MegaRaid
 
-#### Étape 1 : Relever les ensembles de RAID
-Vous pouvez trouver les numéros de série des disques en utilisant la commande smartctl. Néanmoins, il vous faudra trouver combien d'ensemble de RAID il y a sur votre serveur.
+##### Étape 1 : récupérer les ensembles RAID
+
+Vous pouvez trouver les numéros de série des disques en utilisant la commande `smartctl`. Cependant, avant d’exécuter cette commande, il vous faudra trouver combien d’ensembles de RAID (ou disques virtuels) se trouvent sur votre serveur.
 
 Vous pouvez obtenir cette information en utilisant la commande suivante :
 
 ```sh
 MegaCli -LDInfo -Lall -aALL | egrep 'Adapter|Size' | grep -v Strip
->>> Adapter 0 — Virtual Drive Information:
->>> Size : 36.321 GB
->>> Adapter 1 — Virtual Drive Information:
->>> Size : 2.727 TB
+
+Adapter 0
+
+Virtual Drive Information: Size : 36.321 GB
+
+Adapter 1
+
+Virtual Drive Information: Size : 2.727 TB
 ```
 
-Dans cet exemple, il y a deux RAID configurés sur le serveur (Adapter 0 and Adapter 1). Ils devraient être reliés à /dev/sda et /dev/sdb.
+Dans cet exemple, il existe deux RAID configurés sur le serveur (« Adapter 0 » et « Adapter 1 »). Ceux-ci devraient être mappés à `/dev/sda` et `/dev/sdb`.
 
 
-#### Étape 2 : Récupérer les informations disques
-Ensuite, vous allez devoir trouver les informations des disques dur avec la commande suivante:
+##### Étape 2 : récupérer les informations des disques
+
+Vous devez ensuite rassembler les informations sur le disque physique en utilisant la commande suivante :
 
 ```sh
-MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g'
+ MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g'
 
->>> Slot Number: 0
->>> Device Id: 4
->>> Raw Size: 279.460 GB [0x22eec130 Sectors]
->>> Firmware state: Online, Spun Up
->>> Inquiry Data: BTWL3450062J300PGN  INTEL SSDSC2BB300G4                     D2010355
+Slot Number: 0
+Device Id: 4
+Raw Size: 279.460 GB [0x22eec130 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data: BTWL3450062J300PGN  INTEL SSDSC2BB300G4                     D2010355
 
->>> Slot Number: 1
->>> Device Id: 5
->>> Raw Size: 279.460 GB [0x22eec130 Sectors]
->>> Firmware state: Online, Spun Up
->>> Inquiry Data: BTWL345003X6300PGN  INTEL SSDSC2BB300G4                     D2010355
+Slot Number: 1
+Device Id: 5
+Raw Size: 279.460 GB [0x22eec130 Sectors] 
+Firmware state: Online, Spun Up 
+Inquiry Data: BTWL345003X6300PGN  INTEL SSDSC2BB300G4                     D2010355
 
->>> Slot Number: 2
->>> Device Id: 7
->>> Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
->>> Firmware state: Online, Spun Up
->>> Inquiry Data:       PN2234P8K2PKDYHGST HUS724030ALA640                    MF8OAA70
+Slot Number: 2
+Device Id: 7
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors] 
+Firmware state: Online, Spun Up 
+Inquiry Data:       PN2234P8K2PKDYHGST HUS724030ALA640                    MF8OAA70
 
->>> Slot Number: 3
->>> Device Id: 6
->>> Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
->>> Firmware state: Online, Spun Up
->>> Inquiry Data:       PN2234P8JYP59YHGST HUS724030ALA640                    MF8OAA70
+Slot Number: 3 
+Device Id: 6 
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors] 
+Firmware state: Online, Spun Up 
+Inquiry Data:       PN2234P8JYP59YHGST HUS724030ALA640                    MF8OAA70
 ```
 
-#### Étape 3 : Récupérer le numéro de série
-Le Device ID et l'Adapter ID seront utilisés pour spécifier à smartctl quel disque rechercher et dans quel ensemble de RAID.
+##### Étape 3 : récupérer le numéro de série
 
-La commande devrait donc ressemble à ceci:
+Les ID du périphérique et de l'adaptateur seront utilisés pour indiquer à `smartctl` quel disque rechercher dans quel ensemble RAID.
+
+La commande devrait donc ressembler à ceci :
 
 ```sh
-smartctl -d megaraid,N -a /dev/sdX | grep Serial
->>> Serial Number:    XXXXXXX
+smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
 ```
 
-Le Device ID du disque
-
-Le périphérique du RAID : /dev/sda = 1er RAID, /dev/sdb = 2ème RAID, etc.
+L'ID du périphérique RAID sera affiché comme suit : `/dev/sda` = 1er RAID, `/dev/sdb` = 2e RAID, etc.
 
 
 > [!primary]
 >
-> Dans certaines situations, il se peut que vous receviez ce résultat:
+> Dans certaines situations, vous pouvez recevoir ce résultat :
+> 
+> ```
+> /dev/sda [megaraid_disk_00] [SAT]: Device open changed type from 'megaraid' to 'sat'
+> ```
+> 
+> Vous devez alors remplacer `megaraid` par `sat+megaraid`:
 >
->/dev/sda [megaraid_disk_00] [SAT]: Device open changed type from 'megaraid' to 'sat'
->
->
->Vous devez alors remplacer megaraid par sat+megaraid:
->
->smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial
->Serial Number:    XXXXXXX
->
+> ```
+> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial Serial Number:    1234567890
+> ```
 >
 
-### Contrôleur LSI
-Les contrôleur RAID LSI utilisent un module appelé sg-map qui relie des périphériques à des chemins /dev/sgX (**X** étant le numéro du périphérique).
+#### Récupérer le numéro de série d'un disque (Contrôleur RAID LSI)
 
-Vous pouvez utiliser [ce guide (LSI raid controller)](../guide.fr-fr.md){.ref} afin de déterminer quel disque correspond à quel device sg.
+Le contrôleur RAID LSI utilise un module appelé `sg-map`, qui mappe les périphériques dans `/dev/sgX` (**X** étant le numéro définissant le périphérique).
 
-Une fois que vous savez quel disque correspond à quel device sg, utilisez la commande suivante:
+Vous pouvez vous référer à [ce guide](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} pour déterminer quel disque dur correspond à un périphérique sg désigné.
+
+Une fois que vous avez trouvé le périphérique sg lié au disque dur que vous voulez analyser, utilisez la commande suivante :
 
 ```sh
-smartctl -a /dev/sgX | grep Serial
->>> Serial Number:    XXXXXXX
+smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
 ```
 
-Le numéro de périphérique sg (Ex: /dev/sg0, /dev/sg1)
+Le numéro du périphérique sg sera affiché comme suit : `/dev/sg0`, `/dev/sg1`...
+
+
+## Aller plus loin
+
+[Remplacer un disque défectueux](https://docs.ovh.com/fr/dedicated/disk-replacement/){.external}
+
+[Configurer un RAID matériel](https://docs.ovh.com/fr/dedicated/raid-hard/){.external}
+
+[Congiruer un RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/){.external}
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
