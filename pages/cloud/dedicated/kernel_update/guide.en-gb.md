@@ -1,19 +1,22 @@
 ---
-title: Updating the kernel on a dedicated server
-excerpt: Find out how to update the kernel for distributions that use an OVH core
+title: 'Updating the kernel on a dedicated server'
+excerpt: 'Find out how to update the kernel for distributions that use an OVH core'
 slug: updating-kernel-dedicated-server
-section: Advanced use
+section: 'Advanced use'
 ---
 
-**Last updated 16th January 2018**
+**Last updated 19th July 2018**
 
 ## Objective
 
-OVH gives you the possibility to easily boot your Linux machine using an updated kernel using the netboot startup system. However, it may be advantageous if your operating system’s kernel is also updated locally (on disk).
+OVH [dedicated servers](https://www.ovh.co.uk/dedicated_servers/){.external} are easily able to boot into a Linux operating system using an updated kernel with the netboot startup system. However, it's best practice to update the kernel on the local machine.
 
-**This guide explains how to update the kernel for distributions that use an OVH core.**
+**This guide will show you how to update the kernel for distributions that use an OVH core.**
 
-By default, all system snapshots offered on OVH dedicated servers use an optimised OVH core. If you have replaced these snapshots with your own distribution, please refer to your distribution’s official documentation.
+> [!warning]
+>
+By default, all system snapshots offered on OVH [dedicated servers](https://www.ovh.co.uk/dedicated_servers/){.external} use an optimised OVH core. If you have replaced these snapshots with your own distribution, please refer to your distribution’s official documentation.
+>
 
 > [!primary]
 >
@@ -22,10 +25,11 @@ By default, all system snapshots offered on OVH dedicated servers use an optimis
 > We make this guide available to assist you in this update. However, we recommend that you contact a specialized provider if you are facing any issues or have any doubts about managing, using or securing your server.
 >
 
-## Prerequisites:
+## Requirements
 
-- Root access to the server (SSH).
-- Backup of your data (see the official documentation for your distribution).
+- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
+- root access to the server via SSH
+- backup of your data (see the official documentation for your distribution)
 
 ## Instructions
 
