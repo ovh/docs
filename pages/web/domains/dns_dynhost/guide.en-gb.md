@@ -1,134 +1,91 @@
 ---
-title: 'Hosting: DynHost'
-excerpt: 'Hosting: DynHost'
+title: 'Configuring a dynamic DNS for a domain name'
+excerpt: 'Find out how to configure a dynamic DNS record (DynHost) for your OVH domain name'
 slug: hosting_dynhost
+section: 'DNS and DNS zone'
 legacy_guide_number: g2024
 ---
 
+**Last updated 19th July 2018**
 
-## Prerequisites
+## Objective
 
-- Have a domain registered at OVH
-- Use OVH DNS servers for your domain
+A Domain Name System (DNS) zone is a domain name’s config file. It is composed of technical information, otherwise called ‘records’. For a number of applications, such as hosting your own gaming server without a fixed IP address, dynamically updating a DNS record may be necessary to avoid any prolonged service interruptions. 
 
+**Find out how to configure a dynamic DNS record (DynHost) for your OVH domain name.**
 
+## Requirements
 
+- permission to manage the domain name from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- the OVH domain name configuration (on OVH's DNS servers)
+- The DynHost record you are about to create must not already exist as an A record in your domain name’s OVH DNS zone.
 
-## Definitions
+> [!warning]
+>
+> - If your domain name does not use OVH's DNS servers, you will need to contact the service provider managing its configuration in order to find out what approach you need to take.
+> 
+> - If your domain name is registered with OVH, you can check if the domain name is using our configuration. To do this, go to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the domain concerned, and go to the `DNS servers`{.action} tab.
+>
 
-- IP address
+## Instructions
 
-On the Internet, computers communicate with each other using the TCP/IP protocol which identifies each computer using a unique string of numbers: xxx.xxx.xxx.xxx.
+### Step 1: Create a DynHost username.
 
+The first step involves creating a DynHost username. Once you do so, you can then update the dynamic DNS record you would like to create. First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Next, go to the `DynHost`{.action} tab.
 
-- DNS
+![dynhost](images/use-dynhost-step1.png){.thumbnail}
 
-Users communicate with IP addresses. DNS (Domain Name System) provides the service that allows the translation between user-friendly names and IP address numbers.
+Click on the `Manage access`{.action} button, then `Create a username`{.action}. In the pop-up window, enter the following information:
 
+|Information|Description|
+|---|---|
+|Username suffix|Define a suffix for the DynHost username you are creating.|
+|Subdomain|Specify the subdomain you are creating the dynamic DNS record for.|
+|Password|Define a password for the DynHost username, then confirm it.|
 
-## What is the DynHOST for?
-If you have an internet connection, your IP might change each time you reconnect. DynHOST lets you point your domain or a sub-domain to an IP, and to update this IP in real time, if it changes, using an ID and password. 
-This means that you can host your website on your own internet connection.
+Once you have filled in all of the required fields, click `Confirm`{.action}. The username will then appear in the table on the current page. Repeat this step if you need additional DynHost usernames.
 
+![dynhost](images/use-dynhost-step2.png){.thumbnail}
 
-## Logging on to the control panel
+### Step 2: Create the dynamic DNS record (DynHost).
 
-- Log on to your [control panel](https://www.ovh.com/manager/web) with yout ID and password. 
+This second step involves creating the DNS record that must be updated dynamically. As a reminder, it must not already exist in your domain name’s OVH DNS zone as an A record. For advice on how to check this and delete the A record if necessary, please read our guide to [Editing an OVH DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
-- Click on "Login" to confirm.
+Once you are ready to create the DynHost record, go to the `DynHost`{.action} tab, then click `Add a DynHost`{.action}. In the pop-up window, enter the following information:
 
+|Information|Description|
+|---|---|
+|Subdomain|Enter the subdomain that the DNS record must be dynamically updated for. This subdomain must be identical to the one you entered when you created the DynHost username.|
+|Target IP|Enter the IP address that must currently be used by the DNS record. In accordance with DynHost principles, the IP will then be updated.|
 
+Once you have filled in all of the required fields, click `Confirm`{.action}. The DynHost record will then appear in the table on the current page. Repeat this step if you need additional DynHost records.
 
-![](images/img_3443.jpg){.thumbnail}
+![dynhost](images/use-dynhost-step3.png){.thumbnail}
 
+### Step 3: Automate the DynHost change.
 
-## Domain selection
+Now that the username and the DynHost record have been created, this final step involves automating updates to the DNS record, so they are made dynamically. To do this, you need to use a client that regularly checks if the target IP has changed, so that it can be updated as required.
 
-- In the left-hand menu, select "Domains", then the "domain" you are creating a DynHost for.
+> [!warning]
+>
+> You will need to rely on your own knowledge to set up and configure the client. We have provided general information on how to proceed below. Nevertheless, we recommend contacting a specialist provider if you encounter any difficulties. We will not be able to assist you with this ourselves. 
+>
 
+There is a wide range of options for this, so please note that this client may already be installed on your server or computer. Otherwise, it may already be available on your router’s interface, if it is compatible. Once you have chosen and installed the client, you will need to configure it using the details for the DynHost username you created in step 1.
 
+Depending on the client you are using, you may need to provide an update URL address, as well as further information on the DynHost username and subdomain concerned. If this is the case, use the URL template below, and take care to replace the generic information with your own information:
 
-![](images/img_3444.jpg){.thumbnail}
+http://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
 
+|Information|Replace with|
+|---|---|
+|$HOSTNAME|The subdomain you are modifying the DNS configuration for.|
+|$IP|The new target IP address.|
 
-## Managing access
+To check that the target IP address has been updated, go to the `DynHost`{.action} tab in the OVH Control Panel. Check the IP address that appears in the `Target`{.action} column.
 
-- Click on the DynHost tab, then click "Manage access".
+![dynhost](images/use-dynhost-step4.png){.thumbnail}
 
+## Go further
 
-
-![](images/img_3458.jpg){.thumbnail}
-Then click on "Create an identifier".
-
-![](images/img_3459.jpg){.thumbnail}
-
-- Enter the information requested:
-
-- The login suffix
-- Sub-domain
-- Password
-
-
-Then click "Confirm".
-
-![](images/img_3461.jpg){.thumbnail}
-Then you can view the account that you have just created, as well as the associated sub-domain.
-
-- Then click the back button.
-
-
-
-![](images/img_3463.jpg){.thumbnail}
-
-
-## Creating a DynHost
-Click on "Add a DynHost".
-
-![](images/img_3464.jpg){.thumbnail}
-Enter:
-
-- The sub-domain
-- The the current destination IP
-- Then click "Confirm".
-
-
-
-![](images/img_3465.jpg){.thumbnail}
-Please note:
-
-- It will take 24 hours to create this record
-
-
-
-- You can then see that your DynHost and sub-domain and its IP has been created.
-
-
-
-![](images/img_3470.jpg){.thumbnail}
-Please note:
-
-- The A record will automatically be created in your DNS zone. You therefore do not need to creare it before or after your DynHost.
-
-
-
-
-## Bali Dynamic DNS (Free)
-
-- In  Bali Dynamic DNS, enter the requested fields in green, then click on "Update IP in database if necessary".
-
-
-
-![](images/img_3477.jpg){.thumbnail}
-The status "IP changed" will be displayed, which means that your IP has been updated.
-
-![](images/img_3478.jpg){.thumbnail}
-
-
-## Direct Update (Shareware)
-
-- In Direct Update, you just have to enter the fields in vert and don't forget to untick the "Disable/ignore this account" box.
-
-
-
-![](images/img_3480.jpg){.thumbnail}
-
+Join our community of users on <https://community.ovh.com/en/>.
