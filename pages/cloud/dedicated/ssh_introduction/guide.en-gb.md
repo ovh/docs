@@ -1,30 +1,32 @@
 ---
-title: 'Introduction to SSH'
+title: 'Getting started with SSH'
 slug: ssh-introduction
 excerpt: 'Learn how to use the SSH service to access your server'
 section: 'Getting started'
 ---
 
-**Last updated 21st November 2017**
+**Last updated 19th July 2017**
 
 ## Objective
 
 SSH (Secure Shell) communication protocol is natively installed on all OVH servers (VPS, dedicated servers, Public Cloud instances).
 
-**Learn how to use the SSH service to access your server.**
+**This guide will introduce you to using SSH to connect to your server.**
 
 ## Requirements
 
-- SSH is installed on all machines. You can use it to connect securely to your server, and have full control over it.
-
+- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
+- administrative (root) access to the server via SSH
 
 ## Instructions
 
 ### Compatible software
 
-Many software applications enable you to connect via SSH. To help you, here are some examples.
+Many software applications enable you to connect to your server via SSH. To help you, here are some examples:
 
-#### On Windows
+#### Connecting from a Windows PC
+
+To connect to your server from a Windows PC, you can use any of the following applications:
 
 - [PuTTy](http://www.putty.org/){.external} (Free)
 - [MobaXterm](https://mobaxterm.mobatek.net/) (free version and paid version)
@@ -32,35 +34,31 @@ Many software applications enable you to connect via SSH. To help you, here are 
 
 For the latest Windows 10 and Windows Server versions, developer mode gives you access to a bash console. Here is a link to the Microsoft documentation: <https://msdn.microsoft.com/en-gb/commandline/wsl/install-win10>.
 
-#### On Mac
+#### Connecting from a Mac
 
-- The `Terminal`{.action} tool is delivered with Mac OS X, and is systematically installed on the machine.
+The `Terminal`{.action} tool comes with with Mac OS X can be used to establish an SSH connection to your server.
 
+#### Connecting from a Linux computer
 
-#### On Linux
+From a Linux computer, you can use the `Console`{.action} or `Terminal`{.action} tool to connect to your server via SSH.
 
-- The `Console`{.action} or `Terminal`{.action} tool is natively installed, and can be used to connect.
-- For managing multiple tabs, the `Terminator`terminal emulator can be installed. You can read an Ubuntu manual page for Terminator here: <http://manpages.ubuntu.com/manpages/zesty/man1/terminator.1.html>.
-- [OpenSSH](http://www.openssh.com){.external} (Free).
+You can also use the `Terminator` tool, which is a terminal emulator that can be used to manage multiple SSH connections in different tabs. You can read an Ubuntu manual for Terminator here: <http://manpages.ubuntu.com/manpages/zesty/man1/terminator.1.html>.
 
+Besides these applications, you can also use [OpenSSH](http://www.openssh.com){.external} for free.
 
 ### Steps for connecting via SSH
 
 #### Step 1: Connecting for the first time
 
-To connect to your machine via SSH, you will need two details:
+To connect to your machine via SSH, you will need the server’s IPv4 address or name, and the server’s root password, which you received by email when the server was first set up.
 
-- the server’s IPv4 address or name;
-- the server’s root password (received by email when it was set up).
-
-
-You can connect using the following command:
+after opening the command line console, enter the following command:
 
 ```sh
 ssh root@server_IP
 ```
 
-Or this:
+Alternatively, you can use the following command:
 
 ```sh
 ssh root@server_name
@@ -77,16 +75,15 @@ Password:
 root@vps12345:~#
 ```
 
-When you first connect, your SSH client will receive an RSA key fingerprint, which is a fingerprint of the server you are connecting to. This is verified for each new connection. If the fingerprint changes, you will be informed, and this will mean something has changed:
+When you first connect, your SSH client will receive an RSA key fingerprint, which is a fingerprint of the server you are connecting to. This is verified for each new connection. If the fingerprint changes, you will be informed, and this means that one fo the following has occured:
 
-- the machine has been reinstalled;
-- the SSH server has been reinstalled;
-- you are connecting to another machine.
+- the machine has been reinstalled
+- the SSH server has been reinstalled
+- you are connecting to another machine
 
 When you first connect, you must accept the fingerprint that will be saved onto your desktop by your SSH client.
 
-
-#### Step 2: the manual
+#### Step 2: accessing the SSH manual
 
 On Linux distributions, you will have access to a manual with all of the commands available, and their arguments.
 
@@ -94,16 +91,9 @@ On Linux distributions, you will have access to a manual with all of the command
 man bash
 ```
 
-#### Step 3: updates
+#### Step 3: updating your SSH client
 
-Both your SSH client and your distribution must be kept up-to-date. You can check this with the following command:
-
-```sh
-ssh -V
-```
-
-If you have any doubts, please refer to the documentation for the SSH client you are using.
-
+Your SSH client must be kept up-to-date to function properly. Please refer to the documentation for the SSH client you are using to find out how to update it.
 
 ## Go further
 
