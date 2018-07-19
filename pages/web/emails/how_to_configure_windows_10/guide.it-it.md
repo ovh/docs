@@ -1,72 +1,96 @@
 ---
-title: 'Servizio Email: guida alla configurazione dell’app Posta di Windows 10'
-excerpt: ''
-slug: servizio_email_guida_alla_configurazione_dellapp_posta_di_windows_10
+title: 'Configurare un account MX Plan sull’applicazione Posta per Windows 10'
+slug: configurazione-posta-windows-10
+excerpt: 'Scopri come configurare un account email MX Plan sull’applicazione Posta per Windows'
 legacy_guide_number: g2284
+section: Windows
 ---
 
+**Ultimo aggiornamento: 19/07/2018**
 
-## Di cosa hai bisogno?
+## Obiettivo
 
-- Un account email OVH attivo
-- Il client Posta, disponibile al momento dell'installazione di Windows 10
+Gli indirizzi email dell’offerta MX Plan possono essere configurati su un client di posta elettronica compatibile per consentirti di inviare e ricevere messaggi dall'applicazione che preferisci.
 
+**Questa guida ti mostra come configurare il tuo indirizzo email MX Plan nell’applicazione Posta per Windows.**
 
+## Prerequisiti
 
+- Disporre di un indirizzo email MX Plan compreso nell’offerta MX Plan o in un’offerta di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
+- Aver installato l’applicazione Posta sul proprio dispositivo
+- Disporre delle credenziali associate all’indirizzo email da configurare
 
-## Parte 1: avvio e configurazione
-In questa guida configuriamo un account IMAP con protocollo SSL attivo.
+> [!primary]
+>
+> Utilizzi una versione precedente di Windows? Consulta la nostra documentazione: [Configurare un account di posta elettronica nell’applicazione Posta per Windows 8](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_windows_8/){.external}
+>
 
-![](images/img_4485.jpg){.thumbnail}
-Apri l'app Posta e clicca su + Aggiungi un account.
+## Procedura
 
-![](images/img_4486.jpg){.thumbnail}
-Clicca su Configurazione avanzata.
+### Step 1: aggiungi il tuo account
 
-![](images/img_4489.jpg){.thumbnail}
-Clicca su Email Internet.
+Una volta avviata l’applicazione Posta sul tuo dispositivo, puoi aggiungere un nuovo account in due modi diversi.
 
-![](images/img_4490.jpg){.thumbnail}
+- **Al primo avvio dell’applicazione**: si apre una finestra che ti invita a cliccare su `Aggiungi account`{.action}.
+
+- **Se è già stato impostato un account**: clicca su `Account`{.action} nella barra dei menu a sinistra e poi su `Aggiungi account`{.action} nel menu che appare a destra.
+
+![mxplan](images/configuration-mail-windows-step1.png){.thumbnail}
+
+Clicca su `Configurazione avanzata`{.action} e seleziona `Internet email`{.action} come tipo di account.
+
 Inserisci le informazioni richieste:
 
+|Informazione|Descrizione|
+|---|---|
+|Indirizzo di posta elettronica|Inserisci l’indirizzo email completo.|
+|Nome utente|Inserisci l’indirizzo email completo.|
+|Password|Digita la password associata all’account.|
+|Nome dell’account|Inserisci un nome che ti permetterà di riconoscere questo account tra quelli presenti nella tua applicazione Posta.|
+|Invia i tuoi messaggi utilizzando questo nome|Indica il nome che comparirà come mittente dei messaggi inviati da questo indirizzo.|
+|Server di posta in entrata|Inserisci il server “ssl0.ovh.net”.|
+|Tipo di account|Ti consigliamo di usare il protocollo **IMAP4**. Tuttavia puoi selezionare **POP** (archiviazione di email sulla tua applicazione Posta) nel menù a tendina.|
+|Server di posta in uscita|Inserisci il server “ssl0.ovh.net”.|
 
-- Nome account: il tuo indirizzo email OVH
-- Il tuo nome: il tuo nome e cognome
-- Server email in arrivo: ssl0.ovh.net
-- Tipo di account: IMAP4
-- Indirizzo email: il tuo indirizzo email OVH
-- Nome utente: il tuo indirizzo email OVH
-- Password: la password del tuo account email OVH
-- Server email (SMTP) in uscita: ssl0.ovh.net
-- Lascia selezionate le ultime 4 opzioni
-- Clicca su "Accesso"
+Assicurati di aver selezionato correttamente le seguenti voci:
 
+- “Il server in uscita richiede l’autenticazione”
+- “Utilizzare lo stesso nome utente e la password per l’invio della posta”
+- “Richiedere il protocollo SSL per la posta in entrata”
+- “Richiedere il protocollo SSL per la posta in uscita”
 
+Una volta inseriti tutti i dati, clicca su `Continua`{.action}. Se le informazioni inserite sono corrette, l’accesso all’account andrà a buon fine.
 
-![](images/img_4496.jpg){.thumbnail}
-Se hai inserito correttamente tutti i parametri, compare una finestra di conferma.
-Clicca su "Fine".
+Per verificare la corretta configurazione dell’account esegui un test di invio.
 
-![](images/img_4497.jpg){.thumbnail}
+![mxplan](images/configuration-mail-windows-step2.png){.thumbnail}
 
+Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco i parametri da utilizzare con il nostro servizio MX Plan: 
 
-## Parte 2: esegui un test di invio e ricezione
-Clicca su "+ Nuovo".
+- **per la configurazione con IMAP4**
 
-![](images/img_4498.jpg){.thumbnail}
-Per inviarti il test, inserisci nel campo "A" lo stesso indirizzo presente nel campo "Da".
-Scrivi il testo del messaggio e clicca su Invia.
+|Tipo di server |Nome del server|SSL|Porta|
+|---|---|---|---|
+|In entrata|ssl0.ovh.net|Sì|993|
+|In uscita|ssl0.ovh.net|Sì|465|
 
-![](images/img_4499.jpg){.thumbnail}
-Aspetta qualche secondo e, se necessario, clicca sul pulsante per aggiornare la pagina.
+- **per la configurazione con POP**
 
-Se ricevi il tuo messaggio, significa che il tuo account email OVH è configurato correttamente sulla tua app Posta di Windows 10.
+|Tipo di server |Nome del server|SSL|Porta|
+|---|---|---|---|
+|In entrata|ssl0.ovh.net|Sì|995|
+|In uscita|ssl0.ovh.net|Sì|465|
 
-![](images/img_4500.jpg){.thumbnail}
+### Step 2: utilizza il tuo account
 
+Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-## Parte 3: POP o IMAP?
-Durante la configurazione, puoi scegliere se utilizzare il protocollo POP o IMAP.
+OVH propone un’applicazione Web per accedere al tuo account email direttamente dal tuo browser, disponibile alla pagina <https://www.ovh.it/mail/> e accessibile con le credenziali del tuo account.
+ 
+## Per saperne di più
 
-Prima di scegliere, ti consigliamo di informarti sull'utilizzo dei due protocolli. In caso di dubbio, scegli la configurazione IMAP.
+[Configurare un account E-mail Pro nell’applicazione Posta per Windows](https://docs.ovh.com/fr/emails-pro/configurazione-posta-windows-10){.external}
 
+[Configurare un account Exchange nell’applicazione Posta per Windows 10](https://docs.ovh.com/it/microsoft-collaborative-solutions/configurazione-posta-windows-10/){.external}
+
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
