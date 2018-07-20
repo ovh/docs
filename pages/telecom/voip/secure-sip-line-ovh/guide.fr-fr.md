@@ -99,6 +99,7 @@ Une fois les informations complétées, cliquez sur `Valider`{.action}. Vous ave
 
 ![securiser-sip](images/secure-sip-part6.png){.thumbnail}
 
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
