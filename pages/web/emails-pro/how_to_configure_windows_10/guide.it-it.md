@@ -73,7 +73,7 @@ OVH propone anche un’applicazione Web con [funzionalità collaborative](https:
 
 ## Per saperne di più
 
-[Configurare un account MX Plan sull’applicazione Posta per Windows 10](https://docs.ovh.com/it/emails/configurazione-posta-windows-10){.external}
+[Configurare un account MX Plan sull’applicazione Posta per Windows 10](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_dellapp_posta_di_windows_10/){.external}
 
 [Configurare un account Exchange sull’applicazione Posta per Windows 10](https://docs.ovh.com/it/microsoft-collaborative-solutions/configurazione-posta-windows-10/){.external}
 
