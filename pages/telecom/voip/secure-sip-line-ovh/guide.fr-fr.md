@@ -1,7 +1,7 @@
 ---
-title: 'Sécuriser sa ligne SIP OVH'
-slug: securiser-ligne-sip
-excerpt: 'Découvrez comment sécuriser l’accès à vos lignes SIP grâce à une restriction par IP'
+title: 'Restreindre sa ligne SIP OVH par IP'
+slug: restreindre-ligne-sip-par-ip
+excerpt: 'Découvrez comment restreindre l’accès à vos lignes SIP grâce à une restriction par IP'
 section: 'Lignes téléphoniques'
 ---
 
