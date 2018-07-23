@@ -319,8 +319,10 @@ Il manque sdb1 dans md1 et sdb2 dans md2.
 Il faut les ajouter dans md1 et md2 comme suit :
 
 ```sh
-mdadm /dev/md1 --manage --add /dev/sdb1 mdadm: added /dev/sdb1
-mdadm /dev/md2 --manage --add /dev/sdb2 mdadm: added /dev/sdb2 
+mdadm /dev/md1 --manage --add /dev/sdb1
+mdadm: added /dev/sdb1
+mdadm /dev/md2 --manage --add /dev/sdb2
+mdadm: added /dev/sdb2 
 ```
 
 La reconstruction est en cours.

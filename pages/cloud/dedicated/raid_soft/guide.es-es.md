@@ -309,8 +309,10 @@ Faltan **sdb1** en **md1** y **sdb2** en **md2**.
 Es necesario añadirlos como se indica a continuación:
 
 ```sh
-mdadm /dev/md1 --manage --add /dev/sdb1 mdadm: added /dev/sdb1 
-mdadm /dev/md2 --manage --add /dev/sdb2 mdadm: added /dev/sdb2 
+mdadm /dev/md1 --manage --add /dev/sdb1
+mdadm: added /dev/sdb1 
+mdadm /dev/md2 --manage --add /dev/sdb2
+mdadm: added /dev/sdb2 
 ```
 
 Durante la reconstrucción se mostrará lo siguiente:
