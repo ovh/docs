@@ -1,24 +1,24 @@
 ---
-title: IPv6 Configuration
+title: 'Configuring IPv6 on dedicated servers'
 slug: network-ipv6
-excerpt: This guide explains how to configure IPv6 addresses on our infrastructure.
-section: Network Management
+excerpt: 'This guide explains how to configure IPv6 addresses on our infrastructure.'
+section: 'Network Management'
 ---
 
-**Last updated 26th April 2018**
+**Last updated 20th July 2018**
 
 ## Objective
 
-Internet Protocol version 6 (IPv6) is the latest version of the Internet Protocol (IP). It is designed to address the long-anticipated address exhaustion of its predecessor, IPv4, by using 128-bits addresses instead of 32-bits addresses. Every Dedicated Server comes with a /64 IPv6 block. This represents over 18 quintillion IP addresses that you can use at your convenience.
+Internet Protocol version 6 (IPv6) is the latest version of the Internet Protocol (IP). It is designed to address the long-anticipated address exhaustion of its predecessor, IPv4, by using 128-bit addresses instead of 32-bit addresses. Every OVH Dedicated Server comes with a /64 IPv6 block. This represents over 18 quintillion IP addresses that you can use at your convenience.
 
 **This guide explains how to configure IPv6 addresses on our infrastructure.**
 
 ## Requirements
 
-- You need to have a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}.
-- You need to have [IP failover(s)](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external} with associated virtual MAC addresses.
-- You need to have all your IPv6 information (prefix / gateway...).
-- You need to have basic knowledge of [SSH](http://en.wikipedia.org/wiki/Secure_Shell) and networking.
+- a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}
+- [IP failover(s)](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external} with associated virtual MAC addresses
+- all your IPv6 information (prefix, gateway etc.)
+- a basic knowledge of [SSH](http://en.wikipedia.org/wiki/Secure_Shell) and networking
 
 ## Instructions
 
@@ -28,7 +28,7 @@ If you want to have more than one IPv6 configured on your server (or want to use
 
 > [!primary]
 >
-> The default Gateway for your IPv6 block (IPv6_GATEWAY) is always xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> The default gateway for your IPv6 block (IPv6_GATEWAY) is always xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
 >
 > For example:
 > 
@@ -40,9 +40,11 @@ If you want to have more than one IPv6 configured on your server (or want to use
 
 > [!warning]
 >
-> Before following the steps below, we strongly suggest that you disable IPv6 autoconf and router advertising to prevent known issues. You can do so by adding the following lines to your `sysctl.conf` file:
+> Before following the steps below, we strongly suggest that you disable IPv6 autoconf and router advertising to prevent known issues. You can do so by adding the following lines to your `sysctl.conf` file, which is located in /etc/sysctl.conf:
 > 
-> `bash net.IPv6.conf.eth0.autoconf=0 net.IPv6.conf.eth0.accept_ra=0`
+> `net.IPv6.conf.all.autoconf=0`
+> 
+> `net.IPv6.conf.all.accept_ra=0`
 > 
 > Once this has been done, you can apply those rules by executing the following command: `sh sysctl -p`.
 > 
@@ -59,16 +61,16 @@ Your server's network configuration file is located in `/etc/network/interfaces`
 
 #### Step 3: Amend the network configuration file
 
-Amend the file so that it looks like the example below. In this example, the network interface is called `eth0:0`. The interface on your server may differ.
+Amend the file so that it looks like the example below. In this example, the network interface is called `eth0`. The interface on your server may differ.
 
 ```sh
-iface eth0:0 inet6 static 
+iface eth0 inet6 static 
     address YOUR_IPv6 
     netmask 128
 
-post-up /sbin/ip -f inet6 route add IPv6_GATEWAY dev eth0:0 
+post-up /sbin/ip -f inet6 route add IPv6_GATEWAY dev eth0 
 post-up /sbin/ip -f inet6 route add default via IPv6_GATEWAY 
-pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0:0 
+pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0
 pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
 ```
 
@@ -78,7 +80,7 @@ Save your changes to the file and then reboot your server to apply the changes.
 
 #### Step 5: Test the IPv6 connectivity
 
-You can test IPv6 connectivity by running the commands shown below:
+You can test the IPv6 connectivity by running the commands shown below:
 
 ```sh
 ping6 -c 4 2001:4860:4860::8888
@@ -101,7 +103,7 @@ If you are not able to ping this IPv6 address, check your configuration and try 
 
 > [!warning]
 >
-> This example has been made with CentOS 7.0. Results may vary when using other redhat derivatives.
+> This example has been made with CentOS 7.0. Results may vary when using other Redhat derivatives.
 >
 
 #### Step 1: Open an SSH connection to your server
@@ -133,7 +135,7 @@ Save your changes to the file and then reboot your server to apply the changes.
 
 #### Step 5: Test the IPv6 connectivity
 
-You can test IPv6 connectivity by running the commands shown below:
+You can test the IPv6 connectivity by running the commands shown below:
 
 ```sh
 ping6 -c 4 2001:4860:4860::8888
@@ -150,6 +152,8 @@ ping6 -c 4 2001:4860:4860::8888
 ```
 
 If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
+
+### FreeBSD
 
 #### Step 1: Open an SSH connection to your server
 
@@ -177,7 +181,7 @@ Save your changes to the file and then reboot your server to apply the changes.
 
 #### Step 5: Test the IPv6 connectivity
 
-You can test IPv6 connectivity by running the commands shown below:
+You can test the IPv6 connectivity by running the commands shown below:
 
 ```
 ping6 -c 4 2001:4860:4860::8888
@@ -194,6 +198,54 @@ ping6 -c 4 2001:4860:4860::8888
 ```
 
 If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
+
+### Ubuntu 18.04
+
+#### Step 1: Open an SSH connection to your server
+
+Using a command line utility, establish an SSH connection to your server.
+
+#### Step 2: Open your server's network configuration file
+
+Open the network configuration file located in /etc/systemd/network. For demonstration purposes, our file is called 50-default.network.
+
+#### Step 3: Amend the network configuration file
+
+Using a text editor, amend the file by adding the following lines to the relevant sections as shown in the example below:
+
+```sh
+[Network]
+Destination=Gateway_Address
+
+[Address]
+Address=IPv6_Address/64
+
+[Route]
+Destination=Gateway_Address
+Scope=link
+```
+
+#### Step 4: Save the file and reboot the server
+
+Save your changes to the file and then reboot your server to apply the changes.
+
+#### Step 5: Test the IPv6 connectivity
+
+You can test the IPv6 connectivity by running the commands shown below:
+
+```
+ping6 -c 4 2001:4860:4860::8888
+
+PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
+64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=57 time=4.07 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=57 time=4.07 ms
+
+--- 2001:4860:4860::8888 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
+```
 
 ### Windows Server 2012
 
