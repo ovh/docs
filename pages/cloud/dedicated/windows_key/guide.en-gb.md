@@ -1,34 +1,29 @@
 ---
-title: Changing a Windows Server product key
-excerpt: Find out how to modify your Windows Server product key
+title: 'Changing a Windows Server product key'
+excerpt: 'Find out how to modify your Windows Server product key'
 slug: windows-key
-section: Server Management
+section: 'Server Management'
 ---
 
-**Last updated 22nd February 2018**
+**Last updated 20th July 2018**
 
 ## Objective
 
 When you install a Windows Server operating system, the product key – also known as a KMS (Key Management Service) key – may not be installed correctly. In such cases, the operating system has been installed with a 120-day trial key. Once this time period elapses, the operating system can no longer be used. 
 
-**This guide will explain how to change the product key for your Windows Server environment.**
-
+**This guide will show you how to change the product key for your Windows Server environment.**
 
 ## Requirements
 
-- You will need a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} with Windows installed.
-- You need to have a Windows SPLA licence, or have [ordered one](https://www.ovh.co.uk/dedicated_servers/2014-windows-licences-pricing.xml){.external}.
-- You need to have remote desktop access.
-
+- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} with Windows installed
+- a [Windows SPLA licence](https://www.ovh.co.uk/dedicated_servers/2014-windows-licences-pricing.xml){.external} in your account
+- access to your server via remote desktop connection
 
 ## Instructions
 
 ### Uninstall the default product key
 
-When your operating system is in trial mode, a default product key is installed. To modify it, open the `Run`{.action} dialogue box (Windows key + `R`{.action}):
-
-![Run dialogue box activation](images/executer.png){.thumbnail}
-
+When your operating system is in trial mode, a default product key is installed. To modify it, open the `Run`{.action} dialogue box by pressing the Windows key on your keyboard + `R`{.action}.
 
 ![Run](images/executer2.png){.thumbnail}
 
@@ -74,7 +69,7 @@ Source: [Microsoft MSDN](http://ovh.to/Ne52XWQ){.external}.
 > 
 
 
-### Go to kms.ovh.net
+### Associate your product key
 
 To associate your key with our automated activation system, enter the command below in the `Run`{.action} dialogue box:
 
