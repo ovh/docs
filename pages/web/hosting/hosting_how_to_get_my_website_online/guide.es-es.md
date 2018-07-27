@@ -1,281 +1,150 @@
 ---
-title: 'Web hosting: Publicar un sitio web en internet'
-description: 'Web hosting: Publicar un sitio web en internet'
+title: 'Publicar un sitio web en internet'
 slug: web_hosting_publicar_un_sitio_web_en_internet
-legacy_guide_number: g1374
-section: Primeros pasos
+excerpt: 'Cómo subir un sitio web a un alojamiento de OVH para publicarlo en internet'
+section: 'Primeros pasos'
+order: 2
 ---
 
+**Última actualización: 24/07/2018**
 
-## Introducción
-Un sitio web solo funciona y se muestra correctamente si está colocado en el directorio adecuado.
+## Objetivo
 
-Por lo general, deberá transferir los archivos de su sitio web a la carpeta www  de su alojamiento compartido con un cliente de FTP (file transfer protocol).
+Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere crear un blog o una tienda online como compartir una afición o promover una actividad profesional, los [planes de hosting de OVH](https://www.ovh.es/hosting/){.external} le permiten alojar cualquier sitio web, siempre que sea compatible con la [configuración de nuestras infraestructuras](http://pro.ovh.net/infos/){.external}.
 
-En esta guía utilizaremos [FileZilla](https://filezilla-project.org/), que es un programa gratuito de código abierto.
+**Esta guía explica cómo publicar en internet un sitio web alojado en un plan de hosting de OVH.**
 
+## Requisitos
 
-## Recuperar un backup FTP
+- Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
+- Haber recibido el email de confirmación de la instalación de su alojamiento web.
+- Disponer de un [dominio](https://www.ovh.es/dominios/){.external} con el que poder acceder a su sitio web.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-### Email de instalación del alojamiento
-Cuando contrató su plan de web hosting OVH, una vez instalados sus servicios le enviamos por correo electrónico las claves FTP necesarias.
+## Procedimiento
 
-Para conectarse, necesitará el usuario y la contraseña que se indican en dicho mensaje.
+### 1. Definir el proyecto
 
-Si hubiera cambiado la contraseña FTP después de la instalación, la contraseña que se indica en el email no le servirá.
+Para llevar su proyecto a buen puerto, es importante tener una visión clara de su objetivo. ¿Qué quiere conseguir con su sitio web? ¿Cómo quiere publicarlo? Los alojamientos web de OVH le ofrecen diversas posibilidades para hacer realidad su proyecto:
 
-Puede consultar el email de instalación desde el área de cliente, en «Administración» > «Mis parámetros» > «Histórico de los emails».
+- **Crear un sitio web llave en mano con los módulos en un clic de OVH**: Los módulos en un clic permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.). OVH ofrece cuatro módulos en un clic compatibles con nuestras infraestructuras, que puede consultar en la página [Crear un sitio web con los CMS más populares](https://www.ovh.es/hosting/website/){.external}.
 
-### Área de cliente
-Seleccione el dominio y haga clic en «Alojamiento» > «Contraseña FTP».
+- **Crear un sitio web llave en mano con instalación manual**: Esta solución permite tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.), pero que deberá instalar usted mismo en su alojamiento web de OVH.
 
-Desde ahí podrá consultar su usuario FTP y cambiar la contraseña FTP. Para esto último, simplemente introduzca la nueva contraseña, confírmela en el siguiente campo y haga clic en «Aceptar». 
+- **Crear usted mismo un sitio web**: Esta opción le permitirá crear un proyecto a medida, aunque es la más técnica y requiere conocimientos de programación.
 
-La contraseña debe tener entre 8 y 12 caracteres alfanuméricos.
+- **Migrar un sitio web ya existente a OVH**: Esta opción es delicada si no desea que se interrumpa el acceso al sitio web. Si necesita ayuda para migrar su sitio web, puede consultar la guía [Migrar un sitio web y el correo a OVH](https://docs.ovh.com/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}.
 
-El cambio tarda unos minutos en aplicarse.
 
+Según el método elegido para llevar a cabo su proyecto, tendrá dos posibilidades:
 
-### Utilizar FileZilla
+- **Utilizar nuestros módulos en un clic**: Para más información, consulte la guía [Instalar un sitio web con un módulo en un clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/){.external}.
 
-La siguiente guía explica en detalle cómo utilizar FileZilla:
+- **No utilizar nuestros módulos en un clic**: En ese caso, deberá instalar el sitio web en su alojamiento manualmente. La información que ofrece esta guía puede serle útil. No obstante, si necesita ayuda, puede ponerse en contacto con un webmaster.
+ 
+> [!warning]
+>
+> La responsabilidad sobre la configuración y la gestión de los servicios que OVH pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+> 
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
+>
 
-- []({legacy}1380)
+### 2. Colocar los archivos del sitio web en el espacio de almacenamiento
 
+Para subir un sitio web a un alojamiento manualmente es necesario realizar diversas acciones. Puede haber varias formas de realizarlas y, en función del sitio web, algunas de ellas son opcionales. No obstante, en la mayoría de los proyectos actuales, podemos diferenciar dos grandes etapas a la hora de publicar un sitio web en internet. La primera de ellas, que consiste en subir los archivos del sitio web al espacio de almacenamiento, se explica en este apartado.
 
-Necesitará los archivos de su sitio web, el dump (archivo de backup) de su base de datos, en su caso, y sus claves FTP:
+Para ello, debe realizar las acciones que se indican a continuación.
 
-- servidor: ftp.su-dominio.tld o ftp.cluster0XX.ovh.net o newftp.cluster0XX.ovh.net
-- usuario: su usuario de FTP
-- contraseña: la contraseña de FTP (ver más arriba)
-- puerto: 21 (para conexión SSH a partir de plan Profesional, puerto 22)
+#### 2.1. Obtener los archivos del sitio web
 
+Asegúrese de tener los archivos del sitio web que quiera publicar. Si va a migrar un sitio web que ya exista, deberá descargarse los archivos desde su anterior proveedor.
 
+#### 2.2. Conectarse al espacio de almacenamiento
 
-![](images/img_1858.jpg){.thumbnail}
+Para conectarse al espacio de almacenamiento, necesitará un usuario FTP, la contraseña y la dirección del servidor. Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no tiene la contraseña, consulte la guía [Cambiar la contraseña de un usuario FTP](https://docs.ovh.com/es/hosting/cambiar-contrasena-usuario-ftp/){.external}.
 
+Para consultar la dirección del servidor o el usuario necesarios para acceder al espacio de almacenamiento, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} y haga clic en `Alojamientos`{.action} en la columna izquierda. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}.
 
-### Recuperar un backup FTP
+![Instalación de un sitio web](images/get-website-online-step1.png){.thumbnail}
 
-#### Desde el área de cliente
-Desde el área de cliente, puede restaurar automáticamente su espacio FTP a una fecha anterior.
+Una vez que disponga de todos los datos necesarios, podrá conectarse a su espacio de almacenamiento de tres formas diferentes:
 
-Para ello, en el área de cliente, seleccione su dominio y haga clic en  «Alojamiento» > «Restaurar mi espacio web».
+- **Explorador FTP de OVH**: Le permite acceder al espacio de almacenamiento desde un navegador web. Para utilizarlo, en la pestaña `FTP - SSH`{.action}, haga clic en el botón `Explorador FTP`{.action}.
 
-![](images/img_2310.jpg){.thumbnail}
-A continuación podrá elegir la fecha de restauración deseada.
+- **Cliente FTP**: Deberá instalar en su ordenador un programa compatible con el protocolo FTP (como FileZilla, por ejemplo). Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del programa.
 
-Atención: Los datos restaurados sustituirán a los actuales del alojamiento.
+- **Acceso SSH**: Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos desde un terminal. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVH](https://www.ovh.es/hosting/){.external} son compatibles.
 
-Haga clic en «Aceptar» para confirmar la operación. Es necesario esperar unas horas para que se restauren los archivos.
+#### 2.3. Cargar los archivos en el espacio de almacenamiento
 
-Con este sistema, se restaura la totalidad del espacio FTP, al contrario que con la recuperación de copias de seguridad mediante FileZilla.
+Una vez que se haya conectado al espacio de almacenamiento, solo tendrá que subir los archivos del sitio web. **Preste especial atención al directorio en el que vaya a colocar los archivos**. Para un uso convencional, deberá cargar el sitio web en la carpeta «www». Sin embargo, si quiere utilizar el alojamiento para alojar varios sitios web, deberá utilizar la opción de multisitio.
 
-![](images/img_2311.jpg){.thumbnail}
+Para conocer la carpeta en la que debe colocar el sitio web, vaya a la pestaña `Multisitio`{.action} del área de cliente de OVH. Aparecerá una tabla en la que podrá consultar la **Carpeta raíz** del dominio correspondiente. Ese es el directorio en el que debe colocar los archivos del sitio web.
 
-#### Si necesita ayuda para configurar y utilizar FileZilla, consulte la siguiente guía:
+Es posible que en el espacio de almacenamiento ya haya un archivo denominado **index.html**, que puede haber sido creado por OVH durante la instalación del alojamiento para mostrar una página por defecto en el sitio web. En ese caso, no olvide eliminarlo (o renombrarlo) antes de colocar sus archivos.
 
-- []({legacy}1380)
+![Instalación de un sitio web](images/get-website-online-step2.png){.thumbnail}
 
+### 3. Conectar el sitio web a una base de datos
 
+> [!primary]
+>
+> Si su sitio web no está conectado a una base de datos, puede omitir este paso.
+>
 
+En la actualidad, prácticamente todos los sistemas de gestión de contenidos (CMS), como WordPress o Joomla, utilizan bases de datos para almacenar los elementos dinámicos, como comentarios o artículos. Para que el sitio web funcione correctamente, es imprescindible conectar los archivos del sitio web a la base de datos mediante un archivo de configuración que contiene la información de conexión a la base de datos.
 
-## Base de datos
-Una base de datos permite almacenar la información relacionada con su sitio web o sus aplicaciones. Esta información puede ser de distinto tipo: contenido de la web, direcciones de las páginas, datos de los visitantes...
+Según el sitio web, la conexión puede realizarse, o bien manualmente, o bien a través de un panel de administración generado por el propio sitio web. Para ello, debe realizar las acciones que se indican a continuación.
 
-Los planes de web hosting de OVH son compatibles con diferentes motores de bases de datos: MySQL o PostgreSQL).
+#### 3.1. Obtener la base de datos existente (opcional)
 
-### Email de instalación de la base de datos
-Contratando un plan de web hosting OVH, puede crear una o más bases de datos (en función del producto).
+Si va a migrar un sitio web que ya existe, descargue la base de datos desde su anterior proveedor. Si se trata de un sitio web nuevo, omita este paso.
 
-Las bases de datos no se crean automáticamente al instalar el plan de alojamiento. Deberá crearlas manualmente.
+#### 3.2. Crear la base de datos en OVH (opcional)
 
-Para ello, acceda a su área de cliente, seleccione el alojamiento y haga clic en «Alojamiento»> «Gestión SQL».
+Si ya dispone de una base de datos (incluida con un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}, una solución [SQL Privado](https://www.ovh.es/hosting/opciones-sql.xml){.external} o [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}), necesitará el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor. Una vez disponga de estos datos, vaya al siguiente paso.
 
-Seleccione «Base nueva», cumplimente en los campos la información solicitada y finalice la creación de la base de datos.
+Si quiere crear una nueva base de datos en OVH, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `Bases de datos`{.action}.
 
-Una vez creada, le enviaremos por correo electrónico los identificadores de la base de datos.
+A continuación, haga clic en `Crear una base de datos`{.action} o, si este botón no aparece, en `Acciones`{.action} > `Crear una base de datos`{.action}. Introduzca la información solicitada.
 
-Si no encuentra el email, puede consultarlo en su área de cliente, en «Administración» > «Mis parámetros» > «Histórico de los emails».
+![Instalación de un sitio web](images/get-website-online-step3.png){.thumbnail}
 
-### Desde el área de cliente
-Puede cambiar la contraseña de su base de datos directamente desde el área de cliente.
 
-Atención: Si cambia la contraseña de la base de datos, puede provocar un corte del sitio web o de los servicios que utilizan dicha base de datos.
+#### 3.3. Importar una base de datos existente (opcional)
 
-Si quiere cambiar la contraseña de la base de datos, acceda al área de cliente, seleccione su dominio y haga clic en «Alojamiento»> «Gestión SQL» > «Contraseña».
+Si está migrando un sitio web, deberá importar la base de datos existente en la que acaba de crear. Si se trata de un sitio web nuevo, omita este paso.
 
-Desde ahí podrá actualizar la contraseña de su base de datos.
+Existen diversas formas de realizar la importación. OVH le ofrece la posibilidad de hacerlo desde el área de cliente. Para ello, sitúese en la tabla que contiene las bases de datos creadas en su servicio, haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos recién creada y seleccione la opción `Importar un archivo`{.action}. Introduzca la información solicitada.
 
-Si cuando cambie la contraseña ya tiene un sitio web, no olvide actualizar el archivo de configuración del sitio para que se conecte a la base de datos con la nueva contraseña.
+![Instalación de un sitio web](images/get-website-online-step4.png){.thumbnail}
 
+#### 3.4. Conectar el sitio web a la base de datos
 
-### Creación
-Al instalar un alojamiento, la base de datos incluida no se instala automáticamente, por lo que deberá crearla manualmente.
+Una vez que la base de datos esté disponible y que haya cargado los archivos en el espacio de almacenamiento, solo tendrá que conectar ambos. En primer lugar, asegúrese de que tiene la información necesaria para conectarse a la base de datos: el nombre de usuario, la contraseña, el nombre de la base de datos y la dirección del servidor.
 
-Para ello, acceda a su área de cliente, seleccione el alojamiento y haga clic en «Alojamiento»> «Gestión SQL» > «Base nueva».
+La forma de realizar la conexión con la base de datos dependerá del sitio web que quiera publicar. Esta operación no forma parte de la configuración de los servicios de OVH sino del sitio web, por lo que, si necesita ayuda para realizarla, le recomendamos que se ponga en contacto con el editor del sitio web o con un profesional especializado.
 
-Cumplimente en los campos la información solicitada y haga clic en «Aceptar» para finalizar la creación de la base de datos.
+### 4. Acceder al sitio web
 
-Unos minutos después, recibirá por correo electrónico la información relativa a la base de datos.
+Una vez que haya cargado los archivos en el espacio de almacenamiento y que la base de datos (si el sitio web utiliza una) esté conectada, ya podrá visitar su sitio web, que debería mostrarse correctamente al introducir la dirección en el navegador.
 
-Si ya había creado su base de datos, puede consultar el email en su área de cliente, en «Administración» > «Mis parámetros» > «Histórico de los emails».
+Si no puede ver el sitio web, le recomendamos lo siguiente:
 
-![](images/img_1859.jpg){.thumbnail}
+- **Compruebe la configuración del dominio**: Es posible que la configuración DNS del dominio no permita que este último muestre el sitio web que acaba de subir al alojamiento web de OVH. Asegúrese de que el registro A actualmente configurado en la zona DNS del dominio se corresponde con la dirección IP de su alojamiento web de OVH.
 
+- **Compruebe que no falta ningún archivo**: Es posible que, al cargar los archivos en su alojamiento web de OVH, haya olvidado algún archivo o se haya producido un error. Preste atención al realizar las distintas operaciones para no romper la conexión entre los archivos del sitio web y la base de datos (si el sitio web utiliza una).
 
-### Conexión con phpMyAdmin
-Conéctese a la interfaz de [phpMyAdmin](https://phpmyadmin.ovh.net/).
+- **Compruebe que no hay errores en el código del sitio web**: Esta comprobación es más técnica, pero es posible que los archivos que haya cargado tengan errores y no permitan que el servidor muestre correctamente o en absoluto el sitio web.
 
-Introduzca la información solicitada en los campos: 
+Le recomendamos que, si necesita ayuda para publicar su sitio web, se ponga en contacto con el editor del servicio (del CMS instalado, por ejemplo) o con un profesional especializado.
 
+## Más información
 
-- Servidor: USUARIO.mysql.db
+[Migrar un sitio web y el correo a OVH](https://docs.ovh.com/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}
 
-- Usuario: Se indica en el email de creación de la base de datos.
+[Instalar un sitio web con los módulos en un clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/){.external}
 
-- Contraseña: La contraseña de la base de datos.
+[Cambiar la contraseña de un usuario FTP](https://docs.ovh.com/es/hosting/cambiar-contrasena-usuario-ftp/){.external}
 
-- Versión: Puede conectarse a la base de datos actual o al backup del día o la semana anterior.
-
-
-Haga clic en «Continuar» para conectarse.
-
-![](images/img_1960.jpg){.thumbnail}
-Para las bases de datos MySQL4, utilice el enlace que aparece en la parte inferior de la pantalla de conexión.
-
-
-### Exportación
-Para saber cómo exportar una base de datos SQL o conocer los distintos métodos para realizar un backup de la base de datos, consulte la guía relativa a la exportación de bases de datos:
-
-- []({legacy}1394)
-
-
-
-![](images/img_1932.jpg){.thumbnail}
-
-
-### Importación
-Para saber cómo importar una base de datos MySQL o conocer los distintos métodos para hacerlo, consulte la guía relativa a la importación de bases de datos MySQL:
-
-- []({legacy}1393)
-
-
-
-![](images/img_1933.jpg){.thumbnail}
-
-
-### Reparación, optimización, análisis
-Puede reparar, optimizar o analizar las tablas de su base de datos.
-
-Para ello, conéctese a su base de datos mediante [phpMyAdmin](https://phpmyadmin.ovh.net/).
-
-Seleccione la tabla para la que quiera realizar una de estas operaciones y haga clic en la pestaña «Operaciones».
-
-En el apartado de mantenimiento de la tabla podrá realizar la operación que desee.
-
-![](images/img_1961.jpg){.thumbnail}
-
-
-### Uso de SQL Privado
-Para saber cómo utilizar el servidor SQL Privado o cómo exportar e importar sus datos, consulte esta guía:
-[Guía de uso de SQL Privado](http://guias.ovh.es/SqlPrivado)
-
-![](images/img_1866.jpg){.thumbnail}
-
-
-## Guía de instalación
-Si quiere crear su sitio web rápidamente y sin necesidad de conocimientos técnicos sobre desarrollo web, consulte la guía relativa a la instalación de módulos en un clic en OVH:
-
-- []({legacy}1402)
-
-
-![](images/img_1930.jpg){.thumbnail}
-
-
-### Nueva instalación de WordPress
-
-WordPress es un gestor de contenidos (CMS) que permite crear y gestionar fácilmente un sitio web o blog.
-
-WordPress es gratuito y libre, y puede personalizarse con múltiples temas y plugins.
-
-Si necesita ayuda para instalar WordPress manualmente, consulte esta guía:
-
-- []({legacy}1375)
-
-
-
-![](images/img_1873.jpg){.thumbnail}
-
-
-### Nueva instalación de Joomla
-
-Joomla es un gestor de contenidos (CMS) gratuito y libre, que se puede personalizar con múltiples temas y extensiones.
-
-Este CMS permite gestionar online un sitio web o una intranet dinámicos de forma muy sencilla.
-
-Si necesita ayuda para instalar Joomla manualmente, consulte esta guía:
-
-- []({legacy}1375)
-
-
-
-![](images/img_1874.jpg){.thumbnail}
-
-
-### Nueva instalación de PrestaShop
-
-PrestaShop es una aplicación web «open source» que permite crear una tienda online para comercio electrónico. 
-
-Si necesita ayuda para instalar PrestaShop manualmente, consulte esta guía:
-
-- []({legacy}1375)
-
-
-
-![](images/img_1862.jpg){.thumbnail}
-
-
-## Archivo .ovhconfig
-Si quiere cambiar la versión de PHP de su alojamiento o activar PHP-FPM, consulte las siguientes guías:  
-
-- []({legacy}1175)
-- []({legacy}1207)
-
-
-
-![](images/img_1867.jpg){.thumbnail}
-
-
-## Librerías
-Librerías disponibles en los alojamientos:
-
-|Library|Disponibilidad| 
-|---|---|
-|ffmepg|no activada| 
-|GD|activada| 
-|imagemagik|activada| 
-|zend (opcache)|activada| 
-|PDO|activada| 
-|Zip - Gzip|activada|
-
-
-
-![](images/img_1867.jpg){.thumbnail}
-Atención: Si utiliza PHP-FPM, las siguientes opciones se desactivan por motivos de seguridad (deprecadas por PHP):
-
-- register_globals
-- magic_quotes_gpc
-
-
-
-
-## Optimización del rendimiento del sitio web
-Si desea diagnosticar la ralentización de su sitio web o quiere mejorar su rendimineto, consulte esta guía:
-
-- []({legacy}1396)
-
-
-
-![](images/img_1865.jpg){.thumbnail}
-
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.

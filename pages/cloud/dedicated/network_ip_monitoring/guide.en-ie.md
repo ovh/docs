@@ -7,7 +7,7 @@ section: Network Management
 
 
 ## Requirements
-The monitoring service allows to monitor the status of your machine and automatically trigger the intervention of a technician in the datacenter.
+The monitoring service allows OVH to monitor the status of your machine and automatically trigger the intervention of a technician in the datacenter.
 
 All the servers of our customers and the entire network are monitored 24/7 by OVH technical teams.
 
@@ -18,12 +18,12 @@ To implement a restrictive firewall, especially on ICMP, and continue to benefit
 To do this, you must have :
 
 - An OVH product on which you have installed a Firewall.
-- Have an access to the Firewall rules.
+- Have access to the Firewall rules.
 
 
 ## IP to be authorized
 
-|Reverse|IP|Protocole|
+|Reverse|IP|Protocol|
 |---|---|---|
 |mrtg-rbx-100|37.187.231.251|icmp|
 |mrtg-sbg-100|37.187.231.251|icmp|

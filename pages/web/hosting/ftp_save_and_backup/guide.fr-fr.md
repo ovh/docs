@@ -1,111 +1,135 @@
 ---
-title: Restauration de l’hebergement (FTP) via FileZilla ou via l’espace client
+title: 'Restaurer l''espace de stockage de son hébergement web'
 slug: restauration-ftp-filezilla-espace-client
-legacy_guide_number: 1593
-excerpt: Retrouvez ici comment restaurer votre hebergement (FTP) depuis le manager, ou avec Filezilla
-section: FTP et SSH
+excerpt: 'Apprenez à restaurer un fichier ou l''intégralité de l''espace de stockage de votre hébergement web'
+section: 'FTP et SSH'
 ---
 
-Vous avez supprimé un fichier par mégarde ? Des scripts ont été modifiés et votre site ne fonctionne plus ?
+**Dernière mise à jour le 26/07/2018**
 
-OVH met à votre disposition 5 sauvegardes de vos données, suivant la date désirée.
+## Objectif
 
-Ce guide vous explique comment restaurer la partie FTP.
+Votre offre d'hébergement web OVH vous donne accès à un espace de stockage sur lequel vous pouvez héberger vos sites internet. Pour diverses raisons, comme la suppression ou la modification d'un fichier rendant inaccessible un site, vous pouvez être amené à devoir restaurer l'ensemble des données de votre espace de stockage, ou simplement un fichier stocké dans celui-ci.
 
+**Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web.**
 
-## Recuperation via l'espace client
-Depuis l'espace client, il vous est possible de restaurer automatiquement votre espace FTP à une date antérieure.
+## Prérequis
 
-Pour cela dans l'espace client, sélectionnez l'hébergement concerné dans la section Hébergement.
+- Disposer d'une offre d'[hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} (ne fonctionne pas avec un hébergement Cloud Web).
+- Selon la méthode utilisée, disposer d’un accès à la gestion de l’offre d’hébergement web depuis l’[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} ou du mot de passe de l'utilisateur FTP vous permettant d'accéder à votre espace de stockage. 
 
-Rendez-vous dans "**FTP-SSH**" puis "Restaurer une sauvegarde".
+## En pratique
 
+Avant de débuter, assurez-vous que les dates de restauration proposées peuvent vous permettre de restaurer l'espace de stockage de votre hébergement web à la date souhaitée :
 
-![hosting](images/2310.png){.thumbnail}
+- le jour même, à 00 h 01 du matin ;
+- la veille, à 00 h 01 du matin ;
+- l’avant-veille, à 00 h 01 du matin ;
+- le dimanche précédent, à 01 h 00 du matin ;
+- le dimanche, deux semaines avant, à 01h00 du matin.
 
-Il vous est ensuite possible de choisir la date de restauration voulue via le menu déroulant.
+Si vous souhaitiez bénéficier d'une sauvegarde plus ancienne, OVH ne sera pas en mesure de vous la fournir. Reportez-vous à une éventuelle sauvegarde personnelle de votre site que vous auriez pu effectuer par le passé. 
 
-Attention les données restaurées viendront remplacer les données actuelles de l'hébergement.
+Définissez également la méthode de restauration que vous allez utiliser :
 
-Cliquez sur "Suivant" pour confirmer l'opération. La totalité du FTP est restaurée avec ce système contrairement à la récupération de sauvegarde via FileZilla.
+|Méthode de restauration|Description|
+|---|---|
+|Restauration depuis l'espace client|Restaure intégralement le contenu de l'espace de stockage. Le contenu actuel sera entièrement remplacé par celui de la sauvegarde sélectionnée.|
+|Restauration depuis un logiciel ou une interface|Permet de vous connecter en lecture seule à une sauvegarde de l'espace de stockage. Bien qu'un peu plus technique, cette méthode vous permet de récupérer un ou plusieurs fichiers à une date antérieure, sans avoir à écraser intégralement le contenu de l'espace de stockage.|
 
+Une fois prêt, poursuivez la lecture de cette documentation en fonction de la méthode de restauration choisie.
 
+- « [Restaurer l'espace de stockage depuis l'espace client](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/#restaurer-lespace-de-stockage-depuis-lespace-client){.external} ».
 
-> [!primary]
+- « [Restaurer un fichier depuis un logiciel ou une interface](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/#restaurer-un-fichier-depuis-un-logiciel-ou-une-interface){.external} ».
+
+### Restaurer l'espace de stockage depuis l'espace client
+
+Pour effectuer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Restaurer une sauvegarde`{.action}.
+
+![backupftp](images/backupftp-step1.png){.thumbnail}
+
+Dans la fenêtre qui s'affiche, sélectionnez la date de restauration souhaitée dans le menu déroulant en vous aidant des informations ci-dessous :
+
+|Date affichée|Date technique de la sauvegarde|
+|---|---|
+|J-1|Le jour même, à 00 h 01 du matin.|
+|J-2|La veille, à 00 h 01 du matin.|
+|J-3|L’avant-veille, à 00 h 01 du matin.|
+|1 semaine|Le dimanche précédent, à 00 h 01 du matin.|
+|2 semaines|Le dimanche, deux semaines avant, à 00 h 01 du matin.|
+
+Une fois la date sélectionnée, cliquez sur le bouton `Suivant`{.action}. 
+
+![backupftp](images/backupftp-step2.png){.thumbnail}
+
+Prenez quelques instants afin de vous assurer qu'aucun fichier ne sera perdu suite à la restauration, comme un fichier que vous auriez placé sur votre espace de stockage après la date de restauration choisie. Comme précisé, la restauration va en effet écraser l'ensemble des données actuelles afin de les remplacer par celles de la sauvegarde.
+
+Dès que vous êtes prêt à initier la sauvegarde, cliquez sur le bouton `Valider`{.action}.
+
+### Restaurer un fichier depuis un logiciel ou une interface
+
+La manipulation s’effectue en plusieurs étapes. Assurez-vous d'être en possession du mot de passe de l'utilisateur FTP vous permettant d'accéder à votre espace de stockage. 
+
+> [!warning]
 >
-> La restauration via l'espace client peut prendre quelques heures avant d'être finalisée.
-> Suivez l'opération dans l'onglet "Tâches en cours".
-> 
+> Cette solution requiert des connaissances à propos du logiciel ou de l'interface que vous allez utiliser. Nous vous proposons quelques informations sur la manière de procéder ci-dessous. Cependant, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de vous rapprocher de l’éditeur du logiciel ou de l’interface si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance.
+>
 
+#### Étape 1 : définir le logiciel ou l'interface à utiliser
 
-## Recuperation via FileZilla
+Dans un premier temps, définissez le logiciel ou l'interface que vous allez utiliser pour vous connecter à la sauvegarde de votre espace de stockage. Si vous le connaissez déjà, passez tout de suite à l'étape 2. Dans le cas contraire, nous vous recommandons d'utiliser l'une des trois solutions suivantes :
 
-### Nom d'hote
-Connectez-vous à votre client FTP (dans notre exemple FileZilla : [https://www.ovh.com/fr/hosting/guides/g1380.mutualise_guide_utilisation_filezilla](https://www.ovh.com/fr/hosting/guides/g1380.mutualise_guide_utilisation_filezilla){.external} ).
+- **utiliser le logiciel FileZilla** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVH met à votre disposition la documentation [« Utiliser le logiciel FileZilla avec son hébergement web »](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/){.external}, vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
 
-Renseignez votre nom d'hôte dans le champ correspondant. Généralement *ftp.votre_nom_de_domaine.com* ou *ftp.votrecluster.hosting.ovh.net*.
+- **utiliser le logiciel Cyberduck** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVH met à votre disposition la documentation [« Utiliser le logiciel Cyberduck avec son hébergement web »](https://docs.ovh.com/fr/hosting/utilisation-cyberduck-mac/){.external}, vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
 
-Exemple : Avec votre domaine monsite.com Votre nom d'hôte sera : ftp.monsite.com ou ftp.cluster0XX.hosting.ovh.net (remplacez les "XX" par votre cluster)
+- **utiliser l'interface du FTP Explorer** : vous devrez au préalable accéder à cette dernière via votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Une fois connecté, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `FTP Explorer`{.action}.
 
-[Retrouver vos identifiants FTP ?]({legacy}1374){.ref}
+Dès que vous êtes prêt à poursuivre la manipulation, continuez vers l'étape suivante.
 
-- Vous devez utiliser votre mot de passe FTP habituel.
-- Le port à renseigner est le port 21.
+![backupftp](images/backupftp-step3.png){.thumbnail}
 
+#### Étape 2 : se connecter à la sauvegarde
 
-![hosting](images/2314.png){.thumbnail}
+Depuis l'interface ou le logiciel sélectionné, vous allez devoir vous connecter à votre espace de stockage pour accéder aux données de la sauvegarde que vous voulez récupérer. Pour cela, vous devrez être en possession du nom d'utilisateur FTP, de son mot de passe et du nom d'hôte de votre serveur FTP.
 
+Vous pouvez retrouver ces informations dans l'onglet `FTP - SSH`{.action} de votre hébergement. Si vous n’êtes plus en possession du mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/){.external}.
 
-### Login Ftp
-Renseignez le login FTP suivant la sauvegarde que vous souhaitez récupérer. A savoir :
+![backupftp](images/backupftp-step4.png){.thumbnail}
 
-- **MonIdentifiantFtp-snap0** : sauvegarde à J-0 (le jour même à 00H01 du matin)
-- **MonIdentifiantFtp-snap1** : sauvegarde à J-1 (la veille à 00h01 du matin)
-- **MonIdentifiantFtp-snap2** : sauvegarde à J-2 (l'avant-veille à 00H01 du matin)
-- **MonIdentifiantFtp-snap3** : sauvegarde à S-1 (le dimanche précédent, à 01h00 du matin)
-- **MonIdentifiantFtp-snap4** : sauvegarde à S-2 (le dimanche 2 semaines avant, à 01h00 du matin)
+Vous devrez compléter votre nom d'utilisateur (ou « login ») FTP principal d'un suffixe déterminant la sauvegarde à laquelle vous vous connecterez. Aidez-vous des indications ci-dessous pour savoir comment accéder à la sauvegarde souhaitée :
 
-Par exemple, votre login FTP pour récupérer une sauvegarde de l'avant-veille sera :
+|Date de la sauvegarde|Suffixe à ajouter|Exemple de nom d'utilisateur complété|
+|---|---|
+|Le jour même, à 00 h 01 du matin.|-snap0|utilisateurftp**-snap0**|
+|La veille, à 00 h 01 du matin.|-snap1|utilisateurftp**-snap1**|
+|L’avant-veille, à 00 h 01 du matin.|-snap2|utilisateurftp**-snap2**|
+|Le dimanche précédent, à 00 h 01 du matin.|-snap3|utilisateurftp**-snap3**|
+|Le dimanche deux semaines avant, à 00 h 01 du matin.|-snap4|utilisateurftp**-snap4**|
 
-- toto-snap2
+Prenez soin de remplacer l’information générique « utilisateurftp » par votre propre nom d'utilisateur FTP principal. Conservez cependant le suffixe définissant la date de sauvegarde à laquelle vous souhaitez accéder.
 
+La méthode pour vous connecter à votre espace de stockage diffère selon l'interface ou le logiciel utilisé. Vous trouverez ci-dessous une image présentant la connexion depuis l'interface de FTP Explorer.
 
-![hosting](images/2315.png){.thumbnail}
+![backupftp](images/backupftp-step5.png){.thumbnail}
 
+#### Étape 3 : récupérer le ou les fichiers souhaités
 
-### Mot de passe FTP
-Renseignez votre mot de passe FTP habituel.
+Une fois connecté, récupérez le ou les fichiers que vous souhaitez restaurer. Pour cela, explorez le contenu de votre espace de stockage jusqu'à ces derniers, puis récupérez-les. La manipulation diffère selon le logiciel ou l'interface que vous utilisez.
 
-Il s'agit du même mot de passe que votre accès FTP classique, modifiable dans votre espace client, section Hébergement.
+Avant de passer à l'étape suivante, assurez-vous d'avoir récupéré tous les fichiers que vous souhaitez restaurer, puis déconnectez-vous de votre espace de stockage.
 
-Validez ensuite vos informations afin d'établir la connexion.
+#### Étape 4 : restaurer le ou les fichiers souhaités
 
+Une fois le ou les fichiers en votre possession, connectez-vous de nouveau à votre espace de stockage. Cependant, n'ajoutez pas de suffixe à votre utilisateur FTP pour vous connecter. En ne renseignant pas ce suffixe, vous vous connecterez au contenu actuel de votre espace de stockage et non à une sauvegarde antérieure.
 
-![hosting](images/2316.png){.thumbnail}
+Une fois connecté, il ne vous reste plus qu'à restaurer le ou les fichiers souhaités. Pour cela, explorez le contenu de votre espace de stockage jusqu'à ces derniers, puis téléchargez-les en remplaçant les anciens fichiers.
 
+## Aller plus loin
 
-### Recuperation de la sauvegarde des fichiers
-Récupérez les fichiers et dossiers de votre choix, les fichiers présents correspondront à la sauvegarde demandée.
+[Utiliser le logiciel FileZilla avec son hébergement web](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/){.external}.
 
-Un simple glissé-déposé de la partie "Site distant" vers "Site local" vous permet de récupérer vos données directement sur votre ordinateur.
+[Utiliser le logiciel Cyberduck avec son hébergement web](https://docs.ovh.com/fr/hosting/utilisation-cyberduck-mac/){.external}.
 
-Retrouvez le guide sur FileZilla si besoin : [https://www.ovh.com/fr/hosting/guides/g1380.mutualise_guide_utilisation_filezilla](https://www.ovh.com/fr/hosting/guides/g1380.mutualise_guide_utilisation_filezilla){.external}
-
-
-![hosting](images/2317.png){.thumbnail}
-
-
-### Connexion a l'hebergement web actuel
-Connectez-vous désormais avec vos identifiants FTP classiques afin de vous connecter sur votre hébergement web actuel, et plus à l'espace de sauvegarde.
-
-
-![hosting](images/2318.png){.thumbnail}
-
-
-### Mise en place des fichiers de sauvegarde
-Transférez enfin les données récupérées au préalable sur votre ordinateur vers le site distant.
-
-De la même façon, un simple glissé-déposé de gauche à droite vous permettra de copier vos fichiers et dossiers en quelques instants.
-
-
-![hosting](images/2319.png){.thumbnail}
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
