@@ -80,7 +80,7 @@ Vous verrez ensuite le certificat dans l'état  **À générer** . Cela signifie
 
 C'est un état temporaire. De cette façon vous pouvez configurer tout vos multisites/SSL à la suite, puis regénérer votre certificat SSL afin de réduire les délais de ces changements.
 
-Afin que le protocole HTTPS soit actif sur ce multisite, il reste à regénérer le certificat SSL. Repositionnez-vous sur l'onglet **Informations générales**, puis cliquez sur le bouton **Actions** puis sur **+Regénérer le certificat SSL**. Dans la fenêtre qui apparait, validez la manipulation. Le protocole HTTPS pour ce multisite est disponible sous quelques heures, le temps de le déployer sur l'ensemble de l'infrastructure.
+Afin que le protocole HTTPS soit actif sur ce multisite, il reste à regénérer le certificat SSL. Repositionnez-vous sur l'onglet **Informations générales**, puis cliquez sur le bouton **Actions** puis sur **Regénérer le certificat SSL**. Dans la fenêtre qui apparait, validez la manipulation. Le protocole HTTPS pour ce multisite est disponible sous quelques heures, le temps de le déployer sur l'ensemble de l'infrastructure.
 
 ![hosting](images/4593-2.png){.thumbnail}
 
