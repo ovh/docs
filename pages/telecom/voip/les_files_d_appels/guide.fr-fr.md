@@ -5,8 +5,7 @@ excerpt: 'Apprenez à configurer intégralement une file d''appels sur un numér
 section: 'Numéros ou alias'
 ---
 
- 
-**Dernière mise à jour le 18/06/2018** 
+**Dernière mise à jour le 26/07/2018** 
  
 ## Objectif
  
@@ -55,7 +54,7 @@ Il existe deux possibilités concernant l'ajout d'un membre :
  
 - **le numéro concerné est une ligne OVH et est renseigné en tant que contact à votre identifiant client** : cliquez sur l'icône en forme de loupe à droite de la zone de texte, sélectionnez le numéro souhaité, puis cliquez sur `Valider`{.action}. Pour en ajouter plusieurs, cliquez sur le bouton `Ajouter un autre numéro`{.action} et répétez la manipulation autant de fois que nécessaire ;
  
-- **le numéro concerné n'est pas une ligne OVH ou n'est pas renseigné en tant que contact à votre identifiant client** : entrez manuellement le numéro au format international (0033 pour la France par exemple) dans la zone de texte. Pour en ajouter plusieurs, cliquez sur le bouton `Ajouter un autre numéro`{.action} pour faire apparaître une nouvelle zone de texte.
+- **le numéro concerné n'est pas une ligne OVH ou n'est pas renseigné en tant que contact à votre identifiant client** : entrez manuellement le numéro au format international (0033 pour la France par exemple) dans la zone de texte. Pour en ajouter plusieurs, cliquez sur le bouton `Ajouter un autre numéro`{.action} pour faire apparaître une nouvelle zone de texte. Sachez que les communications vers un numéro non enregistré chez OVH seront facturées selon [les tarifs en vigueur](https://www.ovhtelecom.fr/telephonie/decouvrez/tarifs_telephonie.xml){.external}.
  
 Définissez ensuite trois paramètres supplémentaires pour les numéros sélectionnés précédemment. Si vous souhaitez personnaliser ces valeurs par numéro, vous devrez les ajouter un par un depuis la même interface. 
  
@@ -67,9 +66,9 @@ Définissez ensuite trois paramètres supplémentaires pour les numéros sélect
  
 > [!primary]
 >
-> Assurez-vous que les paramètres des numéros externes sont en adéquation avec la stratégie de votre file d'appels définie précédemment dans les options.
+> Assurez-vous que les paramètres des numéros externes sont en adéquation avec la stratégie de votre file d'appels définie précédemment dans les options. 
 > 
-> Par exemple, si le délai de sonnerie est supérieur à celui du déclenchement du répondeur, la file d'appels ne pourra plus suivre la configuration de sonnerie prévue.
+> Par exemple, si le délai de sonnerie est supérieur à celui du déclenchement du répondeur, la file d'appels ne pourra plus suivre la configuration de sonnerie prévue. 
 >
 
 Une fois les numéros et les paramètres définis, cliquez sur le bouton `Ajouter`{.action}. Les numéros apparaissent alors dans la liste des membres. 
