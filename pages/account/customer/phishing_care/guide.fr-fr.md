@@ -1,17 +1,17 @@
 ---
-title: 'Méfiez-vous des arnaques - comment reconnaître des e-mails de fraude et de phishing'
+title: 'Méfiez-vous des arnaques - comment reconnaître des e-mails ou SMS de fraude et de phishing'
 slug: arnaques-fraude-phishing
 excerpt: 'Comment reconnaître un e-mail de phishing et que faire si vous avez cliqué sur un lien frauduleux ?'
 section: Sécurité
 ---
 
-**Dernière mise à jour le 21/03/2018**
+**Dernière mise à jour le 27/07/2018**
 
 ## Objectif
 
-Le phishing est l’envoi d’un e-mail vous invitant à cliquer sur un lien vous redirigeant vers un formulaire. Celui-ci reprend frauduleusement les couleurs d’une marque et vous invite à entrer vos identifiants personnels.
+Le phishing est l’envoi d’un e-mail ou d'un SMS vous invitant à cliquer sur un lien vous redirigeant vers un formulaire. Celui-ci reprend frauduleusement les couleurs d’une marque et vous invite à entrer vos identifiants personnels.
 
-**Ce guide vous explique comment reconnaître un e-mail de phishing et quoi faire si vous avez cliqué sur un lien frauduleux.**
+**Ce guide vous explique comment reconnaître un e-mail ou un SMS de phishing et quoi faire si vous avez cliqué sur un lien frauduleux.**
 
 
 ## Prérequis
@@ -21,7 +21,7 @@ Le phishing est l’envoi d’un e-mail vous invitant à cliquer sur un lien vou
 
 ## En pratique
 
-### J'ai reçu un e-mail de phishing au nom d'OVH
+### J'ai reçu un e-mail ou un SMS de phishing au nom d'OVH
 
 #### Identifier un e-mail de phishing
 
@@ -36,7 +36,7 @@ Vous avez reçu un e-mail au nom d'OVH et vous voulez être sûr qu'il soit corr
 
 |Numéro - description|E-mail OVH|E-mail de phishing|
 |---|---|---|
-|1 - Expéditeur|Vérifiez que l’adresse utilisée pour l’envoi de l’e-mail se termine par « @ovh.com », « @soyoustart.com » ou « @kimsufi.com.|La plupart du temps, l'e-mail sera marqué comme « spam » entre crochets et votre identifiant n'apparaîtra pas OU sera incorrect.|L'expéditeur du mail sera forcément une adresse qui ne vient pas d'OVH.|
+|1 - Expéditeur|Vérifiez que l’adresse utilisée pour l’envoi de l’e-mail se termine par « @ovh.com », « @soyoustart.com » ou « @kimsufi.com.|La plupart du temps, l'e-mail sera marqué comme « spam » entre crochets et votre identifiant n'apparaîtra pas OU sera incorrect. L'expéditeur du mail sera forcément une adresse qui ne vient pas d'OVH.|
 |2 - Objet|Vérifiez que votre identifiant **(commençant par la première lettre du nom enregistré chez OVH puis par la première lettre du prénom enregistré chez OVH)** et/ou l’adresse e-mail de votre compte figurent dans l’objet du message.|La plupart du temps, l'e-mail sera marqué comme « spam » entre crochets et votre identifiant n'apparaîtra pas OU sera incorrect.|
 |3 - Lien|Passez votre souris sur le lien et vous en verrez directement le contenu sans avoir à cliquer dessus (tout en bas de votre navigateur). Ici, le lien renvoie bien vers https://www.ovh.com/.|Dans notre exemple, en passant la souris sur le lien, vous remarquez que celui-ci n'a rien à voir avec OVH. Ne cliquez pas.|
 
@@ -45,6 +45,16 @@ Vous avez reçu un e-mail au nom d'OVH et vous voulez être sûr qu'il soit corr
 > 
 > Pour les clients des marques Kimsufi ou So you Start, vous n'aurez jamais à régler quoi que ce soit chez OVH. Donc ne tenez pas compte de ce type d'e-mail.
 > 
+
+
+#### Identifier un SMS de phishing
+
+OVH ne vous enverra **jamais** de SMS vous invitant à régler une facture. Les seuls SMS que nous envoyons sont liés à la double authentification dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+
+Vous trouverez ci-dessous 2 exemples de SMS, le premier est correct et correspond à la double authentification et le second un SMS de fraude :
+
+![SMS frauduleux](images/sms.png){.thumbnail}
+
 
 #### Signaler un e-mail de phishing
 
