@@ -5,7 +5,7 @@ excerpt: 'This guide will help you to configure your server’s disks with RAID 
 section: 'Server Management'
 ---
 
-**Last updated 19th July 2018**
+**Last updated 30th July 2018**
  
 ## Objective
 
@@ -22,8 +22,8 @@ The default RAID level for OVH server installations is RAID 1, which doubles the
 
 ## Requirements
 
-- A dedicated server with hardware RAID
-- Root access to the server
+- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} with hardware RAID
+- administrative (root) access to the server via SSH
 
 ## Instructions
 
