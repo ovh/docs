@@ -9,8 +9,8 @@ section: Fonctionnalités OVH
 
 ## Objectif
 
-L'offre Private Cloud permet d'ajouter des ressources en facturation horraire.
-**Ce guide décrit comment ajouter une ressource horraire depuis l'interface vSphere du Private Cloud** 
+L'offre Private Cloud permet d'ajouter des ressources en facturation horaire.
+**Ce guide décrit comment ajouter une ressource horaire depuis l'interface vSphere du Private Cloud** 
 
 ## Prérequis
 
@@ -27,7 +27,7 @@ Afin d'accéder à l'interface d'ajouts de ressources horaires, vous devez séle
 
 ![](images/AddHost_01.png){.thumbnail}
 
-pour notre exemple nous choisissons d'ajouter un host en ressources horaires, une fois votre choix effectué, cliquer sur le bouton "Next"
+Pour notre exemple, nous choisissons d'ajouter un host en ressources horaires, une fois votre choix effectué, cliquer sur le bouton "Next"
 
 Pour ajouter un datastore il faut sélectionner l'onglet "Add OVH Storage"
 
