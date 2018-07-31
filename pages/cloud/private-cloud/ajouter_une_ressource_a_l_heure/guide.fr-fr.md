@@ -1,8 +1,8 @@
 ---
-title: 'Ajouter une ressource à l’heure'
+title: Ajouter une ressource à l’heure
 slug: ajouter-une-ressource-a-l-heure
 legacy_guide_number: '7766721'
-section: 'Fonctionnalités OVH'
+section: Fonctionnalités OVH
 ---
 
 **Dernière mise à jour le 01/08/2018**
@@ -17,7 +17,7 @@ L'offre Private Cloud permet d'ajouter des ressources en facturation horraire.
 * Posséder un Private Cloud.
 * Il faut que l'utilisateur connecté ait le droit "Ajout de ressources" pour le datacenter concerné dans le manager OVH.
 
-![](images/ressources5.png){.thumbnail}
+![](images/AddRessourceGrant.png){.thumbnail}
 
 ## En pratique
 
