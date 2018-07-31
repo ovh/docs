@@ -31,12 +31,12 @@ La partie **IP Blocks** liste l'ensemble des IPs de votre bloc, attention de ne 
 
 - La première IP annonce votre bloc sur le routeur.
 - La dernière IP est le **Broadcast**.
-- L'avant dernière est votre **Gateway**.
+- L'avant-dernière est votre **Gateway**.
 - Les deux IPs avant la Gateway sont utilisées en tant que **HSRP** sur les routeurs (Hot Standby Router Protocol).
 
 ![](images/Network_03.png){.thumbnail}
 
-Afin de remonter au plugin OVH que vos IP publiques sont déjà utilisés il est nécessaire de réaliser une requête ARP (arping) depuis la/les machines virtuelles utilisant vos IP publiques. Attention certaines configurations avec un firewall virtuel ne permettent pas la remontée des adresses MAC si le protocole ARP n'est pas autorisé.
+Afin de remonter au plugin OVH que vos IPs publiques sont déjà utilisés il est nécessaire de réaliser une requête ARP (arping) depuis la/les machines virtuelles utilisant vos IPs publiques. Attention certaines configurations avec un firewall virtuel ne permettent pas la remontée des adresses MAC si le protocole ARP n'est pas autorisé.
 
 Enfin vous pouvez configurer vos reverses IP, par exemple pour un serveur mail, dns et autres.. (ce paramétrage est aussi accessible depuis votre espace client et l'API de OVH.).
 Cliquer sur les 3 points verticaux à gauche de l'IP. Puis cliquer sur **Edit Reverse**.
