@@ -63,7 +63,7 @@ On Debian based distributions, update the kernel package using the following com
 ```sh
 apt-get update && apt-get dist-upgrade
 ```
-On Debian based distributions, update the kernel package using the following command:
+On RedHat based distributions, update the kernel package using the following command:
 
 ```sh
 yum update
