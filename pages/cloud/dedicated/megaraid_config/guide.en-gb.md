@@ -5,7 +5,7 @@ excerpt: 'This guide will help you to configure your server’s disks with RAID 
 section: 'Server Management'
 ---
 
-**Last updated 30th July 2018**
+**Last updated 2nd August 2018**
  
 ## Objective
 
@@ -29,7 +29,7 @@ The default RAID level for OVH server installations is RAID 1, which doubles the
 
 ### Using the OVH Control Panel
 
-In your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Dedicated`{.action} menu and select your server.
+In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Dedicated`{.action} menu and select your server.
 
 Next, on the `Server status`{.action} tab, click the `Reinstall`{.action} button to install a new operating system with your custom RAID 0 configuration.
 
@@ -61,7 +61,7 @@ After your server has been installed, check the partition sizes by logging on to
 df -h
 ```
 
-### Using Rescue Mode
+### Using rescue mode
 
 In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Dedicated`{.action} menu and select your server.
 
@@ -79,7 +79,7 @@ Click `Next`{.action} and then click `Confirm`{.action} on the following screen.
 
 ![megaraid](images/rescue_mode_raid0_03.png){.thumbnail}
 
-Click the `Restart`{.action} button in your Control Panel.
+Click the `Restart`{.action} button in the [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ![megaraid](images/server_installation_raid0_06.png){.thumbnail}
 
