@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to use network bridging to configure inte
 section: 'Network Management'
 ---
 
-**Last updated 30th July 2018**
+**Last updated 2nd August 2018**
 
 ## Objective
 
