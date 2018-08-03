@@ -1,11 +1,11 @@
 ---
 title: 'Updating the kernel on a dedicated server'
-excerpt: 'Find out how to update the kernel for distributions that use an OVH core'
 slug: updating-kernel-dedicated-server
+excerpt: 'Find out how to update the kernel for distributions that use an OVH core'
 section: 'Advanced use'
 ---
 
-**Last updated 19th July 2018**
+**Last updated 03rd August 2018**
 
 ## Objective
 
@@ -51,7 +51,35 @@ uname -r
 
 In this case, the kernel version is  **4.09.76-xxxx-std-ipv6-64**.
 
-### Update the kernel
+
+### Update the kernel using OVH Packages
+
+On Debian based and RedHat based distributions the kernel is installed using package manager.
+
+#### Step 1: Update the kernel package
+
+On Debian based distributions, update the kernel package using the following command:
+
+```sh
+apt-get update && apt-get dist-upgrade
+```
+
+On RedHat based distributions, update the kernel package using the following command:
+
+```sh
+yum update
+```
+
+#### Step 2: Reboot the server
+
+In order for the modifications to take effect, you must to reboot the server:
+
+```sh
+reboot
+```
+
+
+### Update the kernel without using OVH packages
 
 #### Step 1: Navigate to the correct directory
 
@@ -107,7 +135,7 @@ reboot
 
 ### Rollback
 
-In the event that you made an mistake or received an error, you have the possibility rollback. To rollback, the server must be placed in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}. This will require you to mount your system using the following commands:
+In the event that you make a mistake or receive an error, it's possible to rollback your changes. To do so, the server must be placed in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}. This will require you to mount your system using the following commands:
 
 ```sh
 mount /dev/md1 /mnt
@@ -115,7 +143,7 @@ mount /dev/md1 /mnt
 
 > [!primary]
 >
-> In this example, the root directory (or slash `/`) is named *md1*. Please note the name can vary. To verify the name of your root directory, type the following command:
+> In this example, the root directory (or slash `/`) is named *md1*. Please note, the name can vary. To verify the name of your root directory, type the following command:
 >
 > `fdisk`or `lsblk`
 >
@@ -164,9 +192,9 @@ uname -r
 
 > [!primary]
 >
-> You can refer to your distribution’s vendor’s website to verify if the new version of the kernel is patched to protect you against the Meltdown and Spectrum vulnerabilities.
+> You can refer to the website of your distribution’s vendor to verify if the new version of the kernel is patched to protect you against the Meltdown and Spectrum vulnerabilities.
 >
-> If needed, there are a number of tools (for example this one: <https://github.com/speed47/spectre-meltdown-checker>) that identify if the kernel being used is vulnerable or not.
+> If necessary, there are a number of tools (for example this one: <https://github.com/speed47/spectre-meltdown-checker>) that identify if the kernel being used is vulnerable or not.
 >
 > **OVH cannot guarantee the reliability of any third-party tools and these tools should be used at your own risk. **
 >
