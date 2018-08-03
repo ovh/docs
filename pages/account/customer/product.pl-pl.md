@@ -1,5 +1,6 @@
 ---
-title: Account informations
+title: 'Konto klienta'
 slug: customer
-excerpt: Manage your personal info and security settings
+excerpt: 'Zarządzaj swoimi danymi oraz ustawieniami dotyczącymi bezpieczeństwa'
 ---
+

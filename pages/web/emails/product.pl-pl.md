@@ -1,5 +1,6 @@
 ---
-title: Hosted email - MX Plan
+title: 'Hosted e-mail - MX Plan'
 slug: emails
-excertp: All you need to know about hosted email
+excertp: 'Wszystko o konfiguracji kont e-mail'
 ---
+
