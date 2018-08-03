@@ -51,7 +51,33 @@ uname -r
 
 In this case, the kernel version is  **4.09.76-xxxx-std-ipv6-64**.
 
-### Update the kernel
+
+### Update the kernel using OVH Packages
+
+On Debian based and RedHat based distributions the kernel is installed using package manager.
+
+#### Step 1: Update the kernel package
+
+On Debian based distributions, update the kernel package using the following command:
+
+```sh
+apt-get update && apt-get dist-upgrade
+```
+On RedHat based distributions, update the kernel package using the following command:
+
+```sh
+yum update
+```
+
+#### Step 2: Reboot the server
+
+In order for the modifications to take effect, you must to reboot the server:
+
+```sh
+reboot
+```
+
+### Update the kernel without using OVH packages
 
 #### Step 1: Navigate to the correct directory
 
