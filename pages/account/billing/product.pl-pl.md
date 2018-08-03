@@ -1,5 +1,6 @@
 ---
-title: Billing
+title: Płatności
 slug: billing
-excerpt: Manage and follow your OVH products billing
+excerpt: 'Zarządzaj płatnościami i fakturami'
 ---
+

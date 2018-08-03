@@ -1,5 +1,6 @@
 ---
-title: Domains and  DNS
+title: 'Domeny i DNS'
 slug: domains
-except: All you need to know about domains
+except: 'Wszystko o domenach i konfiguracji DNS'
 ---
+

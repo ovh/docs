@@ -1,5 +1,6 @@
 ---
-title: Dedicated servers
+title: 'Serwery dedykowane'
 slug: dedicated
-excerpt: Get started with your OVH.com dedicated servers
+excerpt: 'Dowiedz się więcej na temat serwerów dedykowanych OVH'
 ---
+

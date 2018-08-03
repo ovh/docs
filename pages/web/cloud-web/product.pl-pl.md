@@ -1,7 +1,7 @@
 ---
-title: Cloud Web
+title: 'Cloud Web'
 slug: cloud-web
-sections: Pierwsze kroki
+sections: 'Pierwsze kroki'
 ---
 
 > [!product-section]
@@ -20,7 +20,7 @@ sections: Pierwsze kroki
 
 > [!product-section(right)]
 >
-> ### Hasło
+> ### Zmiana haseł
 >
 > - [Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/)
 > - [Zmiana hasła do bazy danych na hostingu](https://docs.ovh.com/pl/hosting/zmiana-hasla-do-bazy-danych/)

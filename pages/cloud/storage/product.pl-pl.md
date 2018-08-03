@@ -1,5 +1,6 @@
 ---
 title: Storage
 slug: storage
-excerpt: Dokumentacja dotyczaca produktow do przechowywania danych
+excerpt: 'Dowiedz się, jak korzystać z rozwiązań do przechowywania danych'
 ---
+

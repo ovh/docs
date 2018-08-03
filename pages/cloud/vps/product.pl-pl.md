@@ -1,5 +1,6 @@
 ---
 title: VPS
 slug: vps
-excerpt: Using your OVH VPS
+excerpt: 'Dowiedz się, jak korzystać z serwera VPS'
 ---
+
