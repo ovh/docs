@@ -1,15 +1,15 @@
 ---
-title: Mettre à jour le kernel sur un serveur dédié
-excerpt: Découvrez comment mettre à jour le kernel d’une distribution utilisant un noyau OVH
+title: 'Mettre à jour le kernel sur un serveur dédié'
 slug: mettre-a-jour-kernel-serveur-dedie
-section: Utilisation avancée
+excerpt: 'Découvrez comment mettre à jour le kernel d’une distribution utilisant un noyau OVH'
+section: 'Utilisation avancée'
 ---
 
-**Dernière mise à jour le 16/01/2018**
+**Dernière mise à jour le 03/08/2018**
 
 ## Objectif
 
-OVH vous donne la possibilité de garder facilement un kernel à jour sur votre système Linux grâce au système de démarrage *netboot*. 
+OVH vous donne la possibilité de garder facilement un kernel à jour sur votre système Linux, grâce au système de démarrage *netboot*. 
 
 Il est cependant fortement recommandé de mettre à jour sur le disque votre système d’exploitation (OS) auquel est lié votre kernel.
 
@@ -20,7 +20,7 @@ Par défaut, l’ensemble des images système proposées sur les serveurs dédi�
 
 > [!warning]
 >
-> OVH met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d'en assurer la gestion logicielle et la sécurisation au quotidien. 
+> OVH met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d'en assurer la gestion logicielle et la sécurisation au quotidien.
 > 
 > Nous mettons ce guide à votre disposition afin de vous accompagner sur cette mise à jour. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur.
 >
@@ -50,7 +50,35 @@ uname -r
 
 La version du kernel est dans ce cas **4.09.76-xxxx-std-ipv6-64**.
 
-### Mettre à jour le kernel
+### Mettre à jour le kernel en utilisant les paquets OVH
+
+Dans les distributions basées sur Debian et RedHat, le kernel est mis à jour en utilisant le gestionnaire de paquets.
+
+
+#### Étape 1 : mettre à jour le kernel
+
+Dans les distributions basées sur Debian, la mise à jour du kernel s'effectue avec la commande suivante :
+
+```sh
+apt-get update && apt-get dist-upgrade
+```
+
+Dans les distributions basées sur RedHat, la mise à jour du kernel s'effectue avec la commande suivante :
+
+```sh
+yum update
+```
+
+#### Étape 2 : redémarrer le serveur
+
+Pour que les modifications prennent effet, il faut redémarrer le serveur :
+
+```sh
+reboot
+```
+
+
+### Mettre à jour le kernel sans utiliser les paquets OVH
 
 #### Étape 1 : se placer dans le bon répertoire
 
@@ -62,13 +90,13 @@ cd /boot
 
 #### Étape 2 : récupérer l'image
 
-Sans recompilation du kernel, il suffit de télécharger la version bzImage souhaitée, idéalement la dernière version. Vous trouverez les images à l'adresse suivante : <ftp://ftp.ovh.net/made-in-ovh/bzImage/>. 
+Sans recompilation du kernel, il suffit de télécharger la version bzImage souhaitée (idéalement la dernière version). Vous trouverez les images à l'adresse suivante : <ftp://ftp.ovh.net/made-in-ovh/bzImage/>. 
 
-Les kernels sont monolithiques, c’est-à-dire qu'ils ne prennent pas en compte les modules Kernel : CEPH, NBD, ZFS...
+Les kernels sont monolithiques, c’est-à-dire qu'ils ne prennent pas en compte les modules kernel : CEPH, NBD, ZFS…
 
-Reprenons notre exemple. Nous avions en version de kernel : **4.09.76-xxxx-std-ipv6-64**.
+Reprenons notre exemple, dont la version du kernel était : **4.09.76-xxxx-std-ipv6-64**.
 
-Il faudra donc télécharger l'image suivante avec la commande ci-dessous :
+Ici, il faudrait donc télécharger l'image suivante avec la commande ci-dessous :
 
 ```sh
 wget ftp://ftp.ovh.net/made-in-ovh/bzImage/4.14.13/bzImage-4.14.13-xxxx-std-ipv6-64
@@ -76,13 +104,13 @@ wget ftp://ftp.ovh.net/made-in-ovh/bzImage/4.14.13/bzImage-4.14.13-xxxx-std-ipv6
 
 #### Étape 3 : mettre à jour le programme d'amorçage (GRUB)
 
-Enfin, mettez à jour le programme d'amorçage (GRUB) avec la commande suivante :
+Mettez à jour le programme d'amorçage (GRUB) avec la commande suivante :
 
 ```sh
 update-grub
 ```
 
-Vous aurez alors ce retour de commande :
+Vous obtiendrez alors ce retour de commande :
 
 ```sh
 Generating grub configuration file ...
@@ -91,14 +119,14 @@ done
 
 > [!primary]
 >
-> Vérifiez bien la présence du fichier suivant (nécessaire à la mise à jour) dans votre configuration : `06_OVHkernel`. Vous pouvez vérifier la présence de ce fichier avec la commande suivante :
+> Assurez-vous de la présence du fichier suivant (nécessaire à la mise à jour) dans votre configuration : `06_OVHkernel`. Vous pouvez effectuer cette vérification avec la commande suivante :
 >
 > `ls /etc/grub.d/`
 >
 
 #### Étape 4 : redémarrer le serveur
 
-Afin que les modifications soient prises en compte, il vous reste à redémarrer le serveur :
+Afin que les modifications soient prises en compte, il vous suffit de redémarrer le serveur :
 
 ```sh
 reboot
@@ -114,7 +142,7 @@ mount /dev/md1 /mnt
 
 > [!primary]
 >
-> Dans cet exemple la racine (ou slash `/`) est nommée *md1*. Le nom peut cependant être différent. Pour vous assurer du nom de votre racine il suffit d’entrer la commande suivante :
+> Dans cet exemple, la racine (ou slash `/`) est nommée *md1*. Le nom peut cependant être différent. Pour vérifier le nom de votre racine, il suffit d’entrer la commande suivante :
 >
 > `fdisk`ou `lsblk`
 >
@@ -141,7 +169,7 @@ Placez-vous ensuite dans le répertoire `/boot` et supprimez les derniers fichie
 rm bzImage-4.14.13-xxxx-std-ipv6-64
 ```
 
-Il faut à nouveau mettre à jour le système d'amorçage :
+Puis il faut de nouveau mettre à jour le système d'amorçage :
 
 ```sh
 update-grub
@@ -155,7 +183,7 @@ reboot
 
 ### Vérifier que la mise à jour est correctement appliquée
 
-Une fois la mise à jour effectuée, il est possible de vérifier la version du kernel nouvellement installée via la commande :
+Une fois la mise à jour effectuée, il est possible de vérifier la version du kernel nouvellement installé via la commande :
 
 ```sh
 uname –r
@@ -163,9 +191,9 @@ uname –r
 
 > [!primary]
 >
-> Dans le cadre des vulnérabilités Meltdown et Spectre, vous pouvez consulter le site de l’éditeur de votre distribution afin de vérifier que cette nouvelle version du kernel est patchée pour vous prémunir contre ces dernières.
+> Dans le cadre des vulnérabilités Meltdown et Spectre, vous pouvez consulter le site de l’éditeur de votre distribution afin de vérifier que cette nouvelle version du kernel vous prémunit contre ces menaces.
 >
-> En cas de besoin, il existe un certain nombre d’outils (par exemple celui-ci : <https://github.com/speed47/spectre-meltdown-checker>) vous permettant de savoir si le kernel utilisé est vulnérable ou non.
+> En cas de besoin, il existe un certain nombre d’outils (dont <https://github.com/speed47/spectre-meltdown-checker>) vous permettant de savoir si le kernel utilisé est vulnérable ou non.
 >
 > **OVH ne peut garantir la fiabilité d’outils externes, vous utilisez ces derniers à vos risques et périls.**
 >
