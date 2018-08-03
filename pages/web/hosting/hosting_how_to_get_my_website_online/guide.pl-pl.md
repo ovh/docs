@@ -1,344 +1,149 @@
 ---
-title: 'Hosting www: umieszczenie strony w Internecie'
-description: Przewodnik na temat umieszczania strony www w Internecie
+title: 'Instalacja strony WWW na hostingu OVH'
 slug: hosting_www_umieszczenie_strony_w_internecie
-section: Pierwsze kroki
+description: 'Dowiedz się, jak uruchomić stronę WWW na Twoim hostingu OVH'
+section: 'Pierwsze kroki'
 ---
 
+**Ostatnia aktualizacja dnia 2018-08-03**
 
-## Informacje ogólne
-Strona internetowa działa i wyświetla się prawidłowo, jeśli jest umieszczona w odpowiednim katalogu. 
-Pliki strony internetowej należy umieścić w katalogu "www" na hostingu.
-Aby przenieść pliki, należy skorzystać z programu obsługującego protokół transferu plików (File Transfert Protocole).
-My korzystamy z darmowego programu [FileZilla](http://www.filezilla.pl).
+## Wprowadzenie
 
+Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prezentującą Twoją działalność) na [hostingu OVH](https://www.ovh.pl/hosting/){.external}, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVH](http://pro.ovh.net/infos/){.external}.
 
-## Dane FTP
+**Dowiedz się, jak zainstalować stronę WWW na Twoim hostingu OVH.**
 
-### E-mail dotyczący instalacji hostingu
-Po zainstalowaniu hostingu www OVH otrzymasz e-mail z informacjami na temat hostingu. 
-E-mail ten zawiera między innymi dane do logowania FTP. 
-E-mail ten wygląda jak poniżej:
+## Wymagania początkowe
 
+- Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
+- Otrzymanie wiadomości e-mail z potwierdzeniem, że Twój hosting został zainstalowany
+- Posiadanie [domeny](https://www.ovh.pl/domeny/){.external}, pod którą będzie Twoja strona WWW
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-```
-/* Przykład oferty Perso zamówionej dla domeny "twoja-domena.tld" */
+## W praktyce
 
-[OVH-perso] Hosting Perso dla domeny twoja-domena.tld został zainstalowany
-```
+### Etap 1: określenie ram projektu
 
+Jasno określony cel jest kluczowy dla realizacji Twojego projektu. Do czego zamierzasz wykorzystać Twoją stronę WWW? Jak ją uruchomić online? Hosting OVH daje Ci kilka możliwości.
 
-Treść:
+- **Użycie gotowego modułu OVH**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). Firma OVH proponuje cztery moduły CMS kompatybilne z jej infrastrukturą, o których możesz dowiedzieć się więcej na stronie: [Twoja strona WWW dzięki modułom CMS](https://www.ovh.pl/hosting/website/).
 
+- **Ręczna instalacja gotowego systemu CMS**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.) i samodzielnie instalujesz na Twoim hostingu OVH.
 
-```
-[...]
-DOSTĘP FTP
--------------
+- **Samodzielna budowa strony WWW**: ta opcja wymaga kompetencji w zakresie programowania, ale daje możliwość stworzenia projektu na miarę.
 
-Dane te umożliwiają skopiowanie zawartości strony na serwer i umieszczenie jej w katalogu "www" za pomocą programu FTP.
+- **Przeniesienie istniejącej strony WWW do OVH**: operacja ta może mieć krytyczne znaczenie, jeśli niewskazana jest przerwa w dostępie do strony WWW. W przypadku wyboru tej opcji zachęcamy do zapoznania się z przewodnikiem: [Przeniesienie strony WWW i kont e-mail do OVH](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
 
-Serwer ftp: ftp.twoja-domena.tld lub ftp.cluster0XX.ovh.net
-Login lub użytkownik: loginftp
-Hasło: mDpFtP
 
-[...]
-```
+Po przeanalizowaniu powyższych opcji, masz dwie możliwości:
 
+- **chcesz użyć gotowego modułu OVH**: zapoznaj się z instrukcjami w przewodniku [Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external};
 
-W e-mailu znajduje się login i hasło niezbędne do logowania. 
+- **nie chcesz użyć gotowego modułu OVH**: przeprowadź ręczną instalację Twojej strony WWW na hostingu OVH. Informacje zawarte w przewodniku pomogą Ci w przeprowadzeniu operacji, nie zastąpią jednak wsparcia wyspecjalizowanego webmastera.
+ 
+> [!warning]
+>
+> OVH udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie.  Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
+> 
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+>
 
-Hasło można zmienić w panelu klienta. Login jest niezmienny.
+### Etap 2: wgranie plików strony WWW na przestrzeń dyskową
 
+Ręczna instalacja strony WWW na hostingu wymaga przeprowadzenia kilku operacji. Niektóre z nich mogą być opcjonalne w zależności od strony WWW, którą instalujesz. Możliwe są też różne sposoby przeprowadzenia operacji. W przypadku większości aktualnych projektów rozróżniamy dwa główne etapy uruchamiania strony WWW na hostingu. Pierwszy z nich to wgranie plików strony WWW na przestrzeń dyskową.
 
-### W panelu klienta
-Po zalogowaniu do panelu klienta wybierz domenę przypisaną do hostingu i kliknij na "FTP". 
-Kliknij na ikonkę koła zębatego i wybierz opcję "Zmień hasło".
-Interfejs pozwoli Ci na zmianę hasła do FTP. 
-Login jest widoczny w polu "Login".
-Wpisz nowe hasło, potwierdź je i kliknij na "Zatwierdź". Hasło musi zawierać od 8 do 12 znaków alfanumerycznych. 
+Proces uruchomienia strony dzieli się na kilka etapów.
 
-Nowe hasło zostanie wzięte pod uwagę w ciągu kilku minut.
+#### 1. Pobranie plików strony WWW
 
+Upewnij się, czy posiadasz pliki, które chcesz umieścić online. Jeśli przenosisz istniejącą stronę WWW do OVH, pobierz pliki od poprzedniego dostawcy hostingu.
 
-### Program FileZilla
+#### 2. Logowanie do przestrzeni dyskowej 
 
-Przewodnik na temat korzystania z programu FileZilla:[]({legacy}1380)
+W tym celu użyj loginu FTP, hasła i adresu serwera.  Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz hasła, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}.
 
-Elementy, którymi musisz dysponować:
+Aby uzyskać adres serwera lub login umożliwiający dostęp do przestrzeni dyskowej, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, następnie kliknij `Hosting`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}.
 
-- pliki strony internetowej
-- plik z kopią bazy danych (jeśli to konieczne)
+![instalacja strony www](images/get-website-online-step1.png){.thumbnail}
 
-Dane do FTP:
+Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz uzyskać dostęp do przestrzeni dyskowej trzema różnymi metodami:
 
-- host: ftp.twoja-domena.tld lub ftp.cluster0XX.ovh.net lub newftp.cluster0XX.ovh.net
-- login: login FTP
-- hasło: hasło do ftp (sprawdź poprzednie paragrafy)
-- port: 21 (w przypadku połączenia przez SSH: 22 - od oferty Pro)
+- **FTP Explorer**: umożliwia dostęp do przestrzeni dyskowej przy użyciu przeglądarki internetowej. Aby skorzystać z tej opcji, pozostań w zakładce`FTP - SSH`{.action} i kliknij przycisk `FTP Explorer`{.action};
 
+- **program kompatybilny z protokołem FTP**: zainstaluj na Twoim komputerze odpowiedni program, np. FileZilla; Jeśli chcesz uzyskać pomoc w zakresie korzystania z tego programu, skontaktuj się z jego producentem.
 
+- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową. W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external} z dostępem SSH.
 
-![](images/img_1858.jpg){.thumbnail}
+#### 3. Zapisanie plików na przestrzeni dyskowej
 
+Po zalogowaniu się do przestrzeni dyskowej, wgraj pliki strony WWW na Twój hosting. **Zalecamy szczególną ostrożność przy wyborze katalogu, w którym zapiszesz pliki.** W przypadku instalacji tylko jednej strony www na hostingu, pliki powinny znaleźć się w katalogu „www”. Jeśli jednak zainstalowałeś na Twoim hostingu kilka stron WWW, z pewnością skonfigurowałeś kilka różnych katalogów dla domen w opcji **MultiSite**.
 
-## Dane FTP
+Aby sprawdzić, w którym katalogu powinna zostać opublikowana strona WWW, przejdź do zakładki `MultiSite`{.action} w Panelu klienta. W tabeli, która się wyświetla dla wybranej domeny znajdź `Katalog główny`{.action}. Następnie opublikuj w nim pliki strony WWW.
 
-### Przez panel klienta
-W panelu klienta można automatycznie przywrócić kopie zapasową FTP.
+Istnieje możliwość, że na Twojej przestrzeni dyskowej znajdziesz plik zatytułowany „index.html”. Plik ten mógł zostać utworzony przez OVH w trakcie instalacji hostingu w celu wyświetlenia domyślnej strony internetowej. W takim przypadku pamiętaj, aby go usunąć podczas uruchomienia Twojej strony.
 
-W panelu klienta wybierz nazwę domeny.
+![instalacja strony www](images/get-website-online-step2.png){.thumbnail}
 
-Przejdź do zakładki "FTP" i wybierz "Przywróć kopię zapasową".
+### Etap 3: połączenie strony www z bazą danych
 
-![](images/img_2690.jpg){.thumbnail}
-Możesz wybrać datę kopii zapasowej.
+> [!primary]
+>
+> Ten etap jest opcjonalny, jeśli Twoja strona WWW nie musi być powiązana z bazą danych.
+>
 
-Uwaga: przywrócone dane zastąpią aktualne dane znajdujące się na hostingu.
+Obecnie niemal wszystkie systemy zarządzania treścią (WordPress, Joomla!, etc.) wykorzystują bazę danych do przechowywania elementów dynamicznych, takich jak komentarze czy artykuły. Połączenie plików strony WWW z bazą danych jest zatem niezbędne, aby strona poprawnie działała. Umożliwia to plik konfiguracyjny zawierający informacje dotyczące połączenia z bazą danych. 
 
-Kliknij na "Zatwierdź", aby zatwierdzić operację. Przywracanie plików może trwać kilka godzin.
+W zależności od typu używanej strony WWW połączenie to musi zostać przeprowadzone ręcznie lub przez interfejs wygenerowany przez CMS. Połączenie realizowane jest w kilku etapach. Niektóre z nich mogą być opcjonalne.
 
+#### 1. Pobranie istniejącej bazy danych (opcjonalnie)
 
-- W tym przypadku przywracana jest cała kopia FTP.
+Jeśli przenosisz istniejącą stronę WWW do OVH, pobierz bazę danych od poprzedniego dostawcy hostingu. W przypadku nowej strony, przejdź do kolejnego etapu.
 
+#### 2. Utworzenie bazy danych w OVH (opcjonalnie)
 
+Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVH](https://www.ovh.pl/hosting/){.external}, rozwiązania [Private SQL](https://www.ovh.pl/hosting/opcje-sql.xml){.external} lub [Cloud DB](https://www.ovh.pl/cloud/cloud-databases//){.external}), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
 
-### Konfiguracja programu FileZilla
-Skorzystaj z przewodnika na ten temat:[]({legacy}1380)
+Jeśli chcesz utworzyć nową bazę danych w OVH, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i kliknij `Hosting`{.action} na pasku usług po lewej stronie. Zaznacz nazwę odpowiedniego hostingu i przejdź do zakładki `Baza danych`{.action}.
 
-## Baza danych
+Następnie kliknij przycisk `Utwórz bazę danych`{.action} lub, jeśli przycisk się nie wyświetla, kliknij przycisk `Operacje`{.action}, po czym przycisk `Utwórz bazę danych`{.action}. Teraz postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
 
-### Informacje ogólne
-Baza danych pozwala na przechowywanie danych związanych ze stroną internetową lub z aplikacjami. 
+![instalacja strony www](images/get-website-online-step3.png){.thumbnail}
 
-Baza danych pozwala na przechowywanie różnych typów danych, treści strony, adresów url stron, informacji o użytkownikach. 
 
-Na hostingach www OVH dostępne są różne silniki baz danych: MySQL, PostgreSQL.
+#### 3. Import istniejącej bazy danych (opcjonalnie)
 
+Jeśli przenosisz stronę WWW do OVH, zaimportuj istniejącą bazę danych do nowo utworzonej bazy. W przypadku nowej strony, przejdź do kolejnego etapu.
 
-### Zakładanie bazy danych
-Baza danych nie jest automatycznie tworzona podczas instalowania hostingu.
-Nie otrzymasz więc w e-mailu informacji na temat bazy danych.
-Najpierw należy utworzyć bazę danych.
-Zaloguj się do panelu klienta i wybierz swój hosting z menu Hosting.
+Istnieje kilka metod importu. OVH udostępnia jedną z tych metod w Panelu klienta. Przejdź do listy baz danych utworzonych w ramach usługi w Panelu klienta, kliknij trzy kropki po prawej stronie nowo utworzonej bazy danych, a następnie kliknij `Importuj plik`{.action}. Teraz postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
 
-W sekcji "Baza danych" wybierz "Stwórz bazę danych".
+![instalacja strony www](images/get-website-online-step4.png){.thumbnail}
 
-![](images/img_2743.jpg){.thumbnail}
-Wybierz silnik bazy danych: "Mysql lub PostgreSQL".
+#### 4. Połączenie strony WWW z bazą danych
 
-Wybierz rodzaj bazy danych i kliknij na "Dalej".
+Kiedy baza danych jest już dostępna, a pliki zapisane na Twojej przestrzeni dyskowej możesz połączyć stronę z bazą. Przygotuj informacje potrzebne do zalogowania się do bazy danych: nazwa użytkownika, hasło, nazwa bazy danych oraz adres serwera. 
 
-Zostaniesz poproszony o wpisanie nazwy użytkownika i hasła.
+Sposób połączenia strony z bazą zależy od typu strony (np. rodzaju CMS’a), którą chcesz uruchomić. Operacja ta wymaga konfiguracji Twojej strony WWW, a nie samego rozwiązania OVH. Zalecamy zatem skontaktowanie się z administratorem strony lub wyspecjalizowanym w tym zakresie webmasterem.
 
-Otrzymasz e-mail z danymi do logowania dla bazy danych.
+### Etap 4: dostęp do Twojej strony WWW
 
-![](images/img_2694.jpg){.thumbnail}
+Po zapisaniu plików na przestrzeni dyskowej i połączeniu z nią bazy danych (jeśli Twoja strona WWW używa bazy) możesz otworzyć Twoją stronę w przeglądarce. Powinna wyświetlić się poprawnie. 
 
+Jeśli nie wyświetla się, zalecamy następujące kroki:
 
-### Dane do logowania do bazy SQL
+- **sprawdź konfigurację domeny**: możliwe, że konfiguracja DNS domeny nie pozwala poprawnie wyświetlać strony, którą właśnie zainstalowałeś na Twoim hostingu. Upewnij się, że rekord A skonfigurowany aktualnie w strefie DNS Twojej domeny odpowiada adresowi IP Twojego hostingu.
 
-- Uwaga: Baza danych nie jest tworzona automatycznie podczas instalacji hostingu.
+- **upewnij się, że nie brakuje żadnego pliku**: możliwe, że podczas zapisywania plików na Twoim hostingu OVH pominąłeś jakieś pliki lub wystąpił błąd. Zalecamy ostrożność podczas wykonywania operacji, aby nie nastąpiło zerwanie połączenia pomiędzy stroną WWW a bazą danych (jeśli strona używa bazy).
 
+- **sprawdź, czy kod strony nie zawiera błędu**: istnieje możliwość, że pobrane pliki zawierają błędy i nie pozwalają serwerowi wyświetlać poprawnie części lub całej zawartości Twojej strony.
 
-Po założeniu bazy danych w panelu klienta otrzymasz e-mail z danymi do logowania.
-E-mail ten jest również dostępny w panelu klienta. Po zalogowaniu kliknij na Moje konto i na Otrzymane e-maile.
+Przypominamy, że w przypadku trudności podczas uruchamiania Twojej strony na hostingu możesz skontaktować się z wyspecjalizowanym webmasterem lub administratorem usługi (np. zainstalowanego CMS).
 
-![](images/img_2747.jpg){.thumbnail}
-Otrzymany e-mail wygląda tak:
+## Sprawdź również
 
+[Przeniesienie strony WWW i kont e-mail do OVH](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
 
-```
-[MySQL] Baza MySQL nazwa_bazy
-```
+[Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www//){.external}
 
+[Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}
 
-Treść:
-
-
-```
-[...]
-
-Nowa baza MySQL została zainstalowana na naszym serwerze.
-
-Oto dane techniczne:
------------------------------
-
-MySQL:
-Serwer : mysql51-66.pro
-Użytkownik: nazwa_bazy
-Nazwa bazy: nazwa_bazy
-Hasło: ************
-
-[...]
-```
-
-
-Możesz zmienić hasło do bazy danych w panelu klienta. 
-
-
-- Uwaga: zmiana hasła do bazy danych może spowodować przerwę w działaniu strony www lub usług korzystających z tej bazy danych.
-
-
-Jeśli chcesz zmienić hasło do bazy danych zaloguj się do panelu klienta, wybierz domenę i kliknij na ikonkę "SQL" ->  koło zębate -> "Zmień hasło".
-
-W tej sekcji będziesz miał możliwość zaktualizowania hasła do bazy danych.
-
-Zaktualizuj plik konfiguracyjny swojej strony tak, aby łączył się on z bazą danych za pomocą nowego hasła.
-
-
-### Logowanie do interfejsu PhpMyAdmin
-Przejdź na stronę [interfejsu PhpMyAdmin](https://phpmyadmin.ovh.net/).
-
-Wypełnij wymagane pola:
-
-
-- Serwer: użytkownik.mysql.db (nazwa użytkownika znajduje się w e-mailu otrzymanym po założeniu bazy danych).
-
-- Użytkownik: nazwa użytkownika znajduje się w e-mailu otrzymanym po założeniu bazy danych
-- Hasło: hasło do bazy danych
-
-- Wersja: możesz zalogować się do aktualnej bazy danych lub do kopii bazy sprzed 1 lub 7 dni. 
-
-
-Wpisz parametry i kliknij na "Wykonaj", aby się zalogować.
-
-![](images/img_1960.jpg){.thumbnail}
-
-- W przypadku baz danych MYSQL4 prosimy o korzystanie z linka podanego w dolnej część interfejsu.
-
-
-
-
-### Eksportowanie
-Jak wyeksportować bazę danych? Jakie są sposoby wykonania kopii zapasowej bazy danych?
-
-Skorzystaj z przewodnika na temat eksportu bazy danych:[]({legacy}1394)
-
-![](images/img_1932.jpg){.thumbnail}
-
-
-### Importowanie
-Jak zaimportować kopię zapasową bazy danych MySQL? 
-
-Skorzystaj z przewodnika na temat importowania bazy danych MySql:[]({legacy}1393)
-
-![](images/img_1933.jpg){.thumbnail}
-
-
-### Popraw - Optymalizuj - Analizuj
-Możesz naprawiać, optymalizować i analizować tabele bazy danych. 
-
-Połącz się z bazą danych z poziomu url="https://phpmyadmin.ovh.net/"]interfejsu PhpMyAdmin[/url].
-
-Następnie wybierz tabelę, dla której chcesz wykonać jedna z tych operacji.
-
-Kliknij na "Operacje".
-
-![](images/img_1961.jpg){.thumbnail}
-
-
-### Prywatny serwer SQL
-Chcesz wiedzieć, jak używać Prywatnego Serwera SQL? Jak importować i eksportować dane?
-
-Skorzystaj z tego przewodnika:[Przewodnik dotyczący korzystania z Prywatnego Serwera SQL](http://pomoc.ovh.pl/SzybkiWstepDoPrywatnegoSerweraSql)
-
-![](images/img_1866.jpg){.thumbnail}
-
-
-## Przewodnik dotyczący instalacji
-Chcesz szybko założyć stronę internetową i nie posiadasz technicznej wiedzy na temat tworzenia stron www?
-
-Skorzystaj z przewodnika na temat instalowania modułów za 1 kliknięciem w OVH:[]({legacy}1402)
-
-![](images/img_1930.jpg){.thumbnail}
-
-
-### WordPress - nowa instalacja
-
-WordPress to system zarządzania treścią (CMS), który pozwala na tworzenie i proste zarządzanie stroną www lub blogiem. 
-
-WordPress to darmowy moduł możliwy do personalizacji za pomocą licznych motywów i rozszerzeń. 
-
-
-- Blog & Strona
-
-Skorzystaj z przewodnika na temat ręcznej instalacji modułu WordPress :[]({legacy}1375)
-
-
-![](images/img_1873.jpg){.thumbnail}
-
-
-### Joomla - nowa instalacja
-
-Joonla to system zarządzania treścią (CMS). Jest to darmowy moduł możliwy do personalizacji za pomocą licznych motywów i rozszerzeń. 
-
-CMS ten pozwala na proste zarządzanie dynamiczną stroną internetową.
-
-
-- Strona www
-
-Skorzystaj z przewodnika na temat ręcznej instalacji modułu Joomla :[]({legacy}1375)
-
-
-![](images/img_1874.jpg){.thumbnail}
-
-
-### PrestaShop - nowa instalacja
-
-PrestaShop to aplikacja www open source pozwalająca na założenie sklepu internetowego. 
-
-
-- Sklep internetowy
-
-Skorzystaj z przewodnika na temat ręcznej instalacji modułu PrestaShop :[]({legacy}1375)
-
-
-![](images/img_1862.jpg){.thumbnail}
-
-
-## Plik .ovhconfig
-Chcesz zmienić wersję PHP na hostingu www? Chcesz włączyć phpfpm?
-
-Skorzystaj z przewodnika dotyczącego konfiguracji pliku .ovhconfig:
-
-
-- []({legacy}1175)
-
-- []({legacy}1207)
-
-
-
-![](images/img_1867.jpg){.thumbnail}
-
-
-## Biblioteki dostępne na hostingu www
-Informacja na temat dostępnych bibliotek:
-
-|Biblioteka|Dostępność|
-|---|---|
-|ffmepg|nie aktywna|
-|GD|aktywna|
-|imagemagik|aktywna|
-|zend (opcache)|aktywna|
-|PDO|aktywna|
-|Zip - Gzip|aktywna|
-
-
-![](images/img_1867.jpg){.thumbnail}
-Uwaga: w przypadku korzystania z PHP-FPM, poniższe opcje są wyłączone (ze względów bezpieczeństwa): 
-
-
-- register_globals
-- magic_quotes_gpc
-
-
-
-
-## Optymalizacja wydajności strony www
-Chcesz sprawdzić, dlaczego Twoja strona internetowa działa wolno? A może chcesz zoptymalizować jej wydajność?
-
-Skorzystaj z przewodnika dotyczącego diagnozowania spowolnień na stronie www i optymalizowania wydajności strony:[]({legacy}1396)
-
-![](images/img_1865.jpg){.thumbnail}
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
