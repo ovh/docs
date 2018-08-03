@@ -1,10 +1,9 @@
 ---
-title: OVH Load Balancer &#58; HTTP Header
+title: 'OVH Load Balancer &#58; HTTP Header'
 slug: http-headers
-excerpt: Get HTTP Headers on your services behind OVH Load Balancer
-section: IP management
+excerpt: 'Get HTTP Headers on your services behind OVH Load Balancer'
+section: 'IP management'
 ---
-
 
 ## Introduction
 With any frontend service like CDN, IP Loadbalancing in front of your services, the IP of your clients is hidden by this service.
@@ -18,7 +17,8 @@ In your log, you'll only see privateIP, and we'll fix this.
 ```
 
 
-## Avertissement
+## Warning
+
 You need to restrict access to your webservices from our IP Loadbalancing.
 
 With this api call you can get IP Range of our servers.
