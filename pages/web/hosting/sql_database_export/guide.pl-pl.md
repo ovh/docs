@@ -1,310 +1,173 @@
 ---
-title: Eksportowanie bazy danych
-excerpt: Przewodnik ten przedstawia różne sposoby eksportowania bazy danych z naszych serwerów.
+title: 'Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW'
+excerpt: 'Dowiedz się, jak pobrać kopię zapasową bazy danych Twojego hostingu WWW OVH'
 id: '1394'
-slug: database_export
-section: Bazy danych
+slug: eksport-bazy-danych
+section: 'Bazy danych'
 ---
 
+**Ostatnia aktualizacja dnia 2018-08-02**
 
-## Wstępne wymagania
-Musisz dysponować:
+## Wprowadzenie
 
+Bazy danych, wykorzystywane obecnie przez niemal wszystkie systemy zarządzania treścią ( Content Management System lub CMS), na przykład WordPress czy Joomla!, umożliwiają przechowywanie elementów dynamicznych, takich jak komentarze czy artykuły. Mogą zaistnieć sytuacje, w których będziesz potrzebował wykonać kopię zapasową bazy danych w celu późniejszego odzyskania jej zawartości.
 
-- Dostępem do panelu klienta.
+**Dowiedz się, jak pobrać kopię zapasową bazy danych Twojego hostingu WWW OVH.**
 
-- Parametrami takimi jak identyfikator, hasło i serwer sql bazy danych, które pozwolą Ci na połączenie się z bazą danych. 
-Zapoznaj się z przewodnikiem na temat odzyskiwania danych do logowania do bazy SQL:[]({legacy}1374)
+## Wymagania początkowe
 
+- Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
+- Posiadanie bazy danych utworzonej w ramach pakietu [hostingowego WWW OVH](https://www.ovh.pl/hosting/){.external}
+- W zależności od metody tworzenia kopii zapasowej, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} lub posiadanie informacji umożliwiających zalogowanie do bazy danych
 
-![](images/img_1833.jpg){.thumbnail}
+## W praktyce
 
+Przed rozpoczęciem operacji określ metodę, której użyjesz do pobrania kopii zapasowej bazy danych.  W zależności od Twoich kompetencji technicznych masz do wyboru kilka możliwości.
 
-## Z poziomu panelu klienta
-Możesz uzyskać kopię bazy danych w panelu klienta.
+- **Użycie narzędzia OVH do eksportu kopii zapasowych**: rozwiązanie to umożliwia pobranie kopii zapasowych baz danych w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Jest to bardzo przystępne rozwiązanie, nie wymaga zaawansowanych kompetencji technicznych.
 
-Jest to najprostsza i najszybsza metoda wyeksportowania bazy danych. 
+- **Wykonanie kopii zapasowej w interfejsie phpMyAdmin**: przed operacją należy zalogować się do interfejsu phpMyAdmin. Konieczna jest zatem umiejętność korzystania z tego interfejsu.
 
-Najpierw należy zalogować się do url="https://www.ovh.com/manager/web"]panelu klienta[/url].
+- **Użycie skryptu do tworzenia kopii zapasowych**: rozwiązanie to, do wykonania kopii zapasowej, wymaga utworzenia skryptu zarejestrowanego na Twoim hostingu OVH. W przypadku tej metody konieczna jest odpowiednia wiedza umożliwiająca utworzenie skryptu. 
 
-Po zalogowaniu do panelu klienta wybierz hosting w sekcji Hosting.
+- **Wykonanie kopii zapasowej przy użyciu komendy SSH**: rozwiązanie to wymaga zalogowania się do przestrzeni dyskowej przez protokół SSH, a następnie zastosowania odpowiednich komend pozwalających połączyć się z bazą danych. Ten typ dostępu możliwy jest, jeśli posiadasz zaawansowane umiejętności oraz masz wykupioną usługę [hostingu OVH](https://www.ovh.pl/hosting/){.external}.
 
-## Etap 1
-W części "Hosting" wybierz "SQL".
+Niektóre z powyższych metod nie są powiązane z interfejsem OVH. W takich przypadkach wykonaj operację, bazując na własnej wiedzy. Poniżej zamieszczamy kilka pomocnych informacji, nie zastąpią one jednak pomocy technicznej webmastera. 
 
-Czas realizacji kopii zapasowej zależy od rozmiaru bazy danych.
+Przejdź do metody tworzenia kopii zapasowej, która Cię interesuje opisanej w dalszej części dokumentacji.
 
-![](images/img_2698.jpg){.thumbnail}
+> \[!warning]
+>
+> OVH udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie.  Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
+>
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+>
 
-## Etap 2
-Kliknij na "ikonkę koła zębatego" z prawej strony wybranej bazy danych i wybierz Utwórz zrzut.
+### Pobieranie kopii zapasowej za pomocą narzędzia OVH
 
-Pojawi się lista baz danych.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
-![](images/img_2699.jpg){.thumbnail}
+Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Teraz możesz utworzyć nową kopię zapasową lub pobrać istniejącą, korzystając z jednej z dwóch dostępnych metod.
 
-## Etap 3
-Wybierz datę kopii zapasowej. Do wyboru są trzy daty:
+#### Etap 1: utwórz nową kopię zapasową bazy danych
 
+W zakładce `Bazy danych`{.action} kliknij trzy kropki po prawej stronie bazy, której kopię chcesz utworzyć, a następnie kliknij `Utwórz kopię zapasową`{.action}.
 
+![database dump](images/database-dump-step2.png){.thumbnail}
 
-- Aktualna kopia: aktualna kopia bazy danych.
+W oknie, które się pojawi, wybierz datę utworzenia kopii zapasowej, następnie kliknij przycisk `Dalej`{.action}. Upewnij się, że informacje w podsumowaniu są poprawne, następnie kliknij `Zatwierdź`{.action}, aby rozpocząć operację.
 
-- Wczoraj: kopia bazy danych z nocy (J-0), kopia jest realizowana około godziny 3 rano.
+Odczekaj chwilę, aż kopia zapasowa zostanie utworzona. Kiedy kopia będzie już dostępna, będziesz mógł ją pobrać.
 
-- Zeszły tydzień: kopia bazy danych z J-7, kopia jest wykonywana około 3 rano.
+![database dump](images/database-dump-step3.png){.thumbnail}
 
+#### Etap 2: przywracanie kopii bazy danych
 
-Kliknij na "Dalej" i na "Zatwierdź", aby rozpocząć pobieranie kopii zapasowej SQL.
+W zakładce `Bazy danych`{.action} kliknij trzy kropki po prawej stronie bazy, której kopię chcesz pobrać, a następnie kliknij `Przywróć kopię zapasową`{.action}.
 
-Po zatwierdzeniu należy poczekać na utworzenie pliku dump*. Otrzymasz e-mail z linkiem pozwalającym na pobranie pliku kopii zapasowej (dump).
+![database dump](images/database-dump-step4.png){.thumbnail}
 
-Oto przykład tematu otrzymanego e-maila:
+Tabela, która się wyświetla zawiera wszystkie dostępne kopie zapasowe bazy danych.  Możesz wyświetlić dokładną datę utworzenia kopii zapasowych, a także datę, kiedy zostaną one usunięte z narzędzia OVH.
 
+Aby pobrać kopię zapasową, kliknij trzy kropki po jej prawej stronie, a następnie `Pobierz kopię zapasową`{.action}. Pojawi się okno z prośbą, abyś zapisał ją na Twoim  komputerze. Zaakceptuj, po czym odczekaj, aż kopia zapasowa zostanie pobrana.
 
-```
-[OVH-SQL] testovh.ovh - Dump bazy danych: testovhmod1
-```
+![database dump](images/database-dump-step5.png){.thumbnail}
 
+### Pobieranie kopii zapasowej za pomocą interfejsu phpMyAdmin
 
-W e-mailu znajduje się link do kopii zapasowej. Kopia zapasowa bazy będzie dostępna na zdalnym serwerze przez 30 dni.
+W celu przeprowadzenia operacji zaloguj się do phpMyAdmin. Aby uzyskać link dostępowy do phpMyAdmin, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
-Otrzymany plik będzie spakowany. Należy go rozpakować przed zaimportowaniem pliku.
+Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie odpowiedniej bazy danych, po czym kliknij `Dostęp do phpMyAdmin`{.action}.
 
-![](images/img_2700.jpg){.thumbnail}
+![database dump](images/database-dump-step6.png){.thumbnail}
 
+Po uzyskaniu dostępu do strony phpMyAdmin wprowadź informacje dotyczące bazy danych, po czym zaznacz na rozwijanym menu, czy chcesz wyświetlić aktualne dane czy dane dotyczące wcześniej wykonanej kopii zapasowej, następnie zaloguj się.  Po zalogowaniu przejdź do zakładki `Eksportuj`{.action}, gdzie dostępne są dwie metody eksportu:
 
-## Z poziomu interfejsu PhpMyAdmin
-Jeśli chcesz wykonać eksport bazy danych z poziomu interfejsu PhpMyAdmin.
+- **metoda podstawowa**: możesz określić format eksportu kopii zapasowej. Najpopularniejszym formatem jest SQL, ale dostępne są również inne - zgodnie z Twoimi potrzebami;
 
-Najpierw należy się zalogować do [interfejsu PhpMyAdmin](https://phpmyadmin.ovh.net/).
+- **metoda spersonalizowana**: możesz określić szczegółowe parametry eksportu kopii zapasowej.
 
-## Szybki eksport
-Po zalogowaniu wybierz bazę danych. 
+> \[!warning]
+>
+> Ponieważ interfejs phpMyAdmin nie został utworzony przez OVH, wykonaj operację, bazując na własnej wiedzy. W przypadku trudności zalecamy skorzystanie z pomocy specjalisty lub kontakt z producentem interfejsu. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
+>
 
-Wybierz opcję "Eksport".
+### Pobieranie kopii zapasowej za pomocą skryptu
 
-Szybki eksport pozwala na wybranie tylko formatu dotyczącego importowania bazy danych. 
+Operacja składa się z kilku etapów.  Upewnij się, czy posiadasz informacje potrzebne do zalogowania się do bazy danych, której kopię zapasową chcesz utworzyć: nazwa użytkownika, hasło, nazwa bazy danych oraz adres serwera. 
 
-W drugiej części zobaczymy spersonalizowana opcję eksportowania, która jest bardziej kompletna.
+> \[!warning]
+>
+> Ta metoda wymaga umiejętności technicznych z zakresu programowania. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. Jednak w przypadku trudności zalecamy skorzystanie z pomocy specjalisty.  Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
+>
 
-![](images/img_1963.jpg){.thumbnail}
+#### Etap 1: utwórz skrypt kopii zapasowej
 
-## Spersonalizowany eksport
-Po zalogowaniu wybierz bazę danych.
+Pierwszy etap polega na utworzeniu skryptu, dzięki któremu będziesz mógł utworzyć kopię zapasową bazy danych. Poniżej przykład skryptu, który może być pomocny w przeprowadzanej przez Ciebie operacji, nie zastąpi on jednak pomocy technicznej webmastera.
 
-Przejdź do sekcji "Eksport".
-
-Wybierz wyświetlanie wszystkich dostępnych opcji. 
-
-Pojawią się różne opcje.
-
-Tabele: 
-
-Możesz wybrać tabele, które chcesz wyeksportować. 
-
-Opcja ta jest przydatna, gdy baza danych jest bardzo duża. Możesz wielokrotnie eksportować i importować bazę danych.
-
-Wyjście 
-
-Możesz zdefiniować, czy chcesz wygenerować kopię zapasową SQL w zewnętrznym pliku czy bezpośrednio wyświetlić wynik zapytania, który trzeba będzie skopiować. 
-
-Format: 
-
-Zdefiniuj format eksportu bazy danych. Zaleca się pozostawienie formatu SQL. 
-
-Opcje dotyczące formatu:
-
-Możesz zdefiniować, co chcesz wyeksportować z tabeli: albo tylko strukturę lub dane albo strukturę i dane. Zaleca się wybranie struktury i danych. 
-
-Opcje eksportu:
-
-Wybierz opcję eksportu "Żaden z poniższych trybów", aby uniknąć błędu związanego z "Max_Allowed_Packet".
-
-W tym przewodniku opisujemy tylko najważniejsze opcje.
-
-Aby rozpocząć eksportowanie, kliknij na "Wykonaj".
-
-![](images/img_1964.jpg){.thumbnail}
-
-## Kopia zapasowa pliku .sql
-Będziesz mógł pobrać link do pliku dump*. 
-
-Zapisz plik proponowany do pobrania w interfejsie PhpMyAdmin.
-
-![](images/img_1848.jpg){.thumbnail}
-
-## Wcześniejsza kopia zapasowa
-
-- W interfejsie PhpMyAdmin można pobrać kopie zapasową z dnia wczorajszego o z ostatniego tygodnia korzystając z rozwijalnego menu.
-
-
-
-
-## Za pomocą skryptu
-Skrypty te możesz utworzyć w pliku txt. Należy im nadać rozszerzenie zgodne z używanym językiem.
-
-Rozwiązanie to pozwala na eksportowanie dużych kopii baz danych i jest dostępne na wszystkich hostingach www.
-
-W poniższych skryptach zastąp:
-
-
-- nazwa_bazy.sql nazwą pliku.
-
-- serwer_sql nazwą serwera, na którym utworzona jest baza danych.
-
-- nazwa_bazy nazwą bazy danych.
-
-- hasło hasłem przypisanym do bazy.
-
-Plik z kopią bazy powinien najpierw zostać umieszczony na FTP na hostingu.
-
-
-W php (backupbase.php):
-Kod do wpisania i uzupełnienia: 
-
-
-```
+```php
 <?
-echo "Votre base est en cours de sauvegarde.......";
-system("mysqldump --host=serwer_sql --user=nazwa_bazy --password=hasło nazwa_bazy > nazwa_bazy.sql");
-echo "C'est fini. Vous pouvez récupérer la base par FTP";
+system("mysqldump --host=adres_serwera --user=uzytkownik --password=haslo nazwa_bazy_danych > nazwa_pliku_kopii_zapasowej.sql");
 ?>
 ```
 
+Pamiętaj, aby zastąpić informacje ogólne występujące w skrypcie informacjami dotyczącymi odpowiedniej bazy danych. Pomocne będą poniższe wskazówki. Po utworzeniu skryptu zalecamy nadać mu nazwę „kopia_zapasowa.php”.
 
-W perlu (backupbase.cgi) :
-Kod do wpisania i uzupełnienia: 
+|Informacje|Czym należy zastąpić|
+|---|---|
+|adres_serwera|Nazwa serwera odpowiedniej bazy danych.|
+|uzytkownik|Nazwa użytkownika posiadającego dostęp do bazy danych.|
+|haslo_uzytkownika|Hasło przypisane do uprzednio podanej nazwy użytkownika. |
+|nazwa_bazy_danych|Nazwa wybranej bazy danych|
+|nazwa_pliku_kopii_zapasowej|Nazwa nadana plikowi kopii zapasowej po jego utworzeniu.|
 
+> \[!primary]
+>
+> Możesz utworzyć kopię zapasową odnosząc się do wcześniejszej daty, dodając do skryptu port. W przypadku kopii zapasowej z datą dnia poprzedniego użyj portu „3307”. W przypadku kopii zapasowej sprzed 7 dni użyj portu „3317”. 
+> 
+> Pamiętaj, że użycie portu „3306” umożliwia utworzenie kopii zapasowej danych aktualnie występujących w bazie.
+>
 
-```
-#!/usr/bin/perl
-print "Votre base est en cours de sauvegarde.......";
-system("mysqldump --host=serwer_sql --user=nazwa_bazy --password=hasło nazwa_bazy > nazwa_bazy.sql");
-print "C'est fini. Vous pouvez récupérer la base par FTP";
-```
+#### Etap 2: pobierz skrypt i wykonaj import do przestrzeni dyskowej
 
+Po poprawnym utworzeniu skryptu, pobierz go do przestrzeni dyskowej Twojego hostingu. W tym celu zaloguj się do przestrzeni dyskowej. Jeśli nie potrafisz tego zrobić, zapoznaj się z informacjami zawartymi w opisie etapu 2 przewodnika [Logowanie do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/){.external}.
 
-- Wgraj przez FTP utworzony skrypt w katalogu www hostingu i odpytaj skrypt za pomocą przeglądarki: http://nazwa_domeny.com/backupbase.php.
+Aby móc przejść od kolejnych etapów, zapisz skrypt do katalogu „WWW”. **Zalecamy szczególną ostrożność podczas nadawania nazwy plikowi skryptu kopii zapasowej.** Sprawdź, czy zapisując skrypt, nie nadpisujesz istniejącego wcześniej na przestrzeni dyskowej pliku noszącego tę samą nazwę. Jeśli pojawi się tego typu komunikat ostrzegawczy, zmień nazwę nowo utworzonego skryptu, a następnie spróbuj ponownie go zapisać.
 
+#### Etap 3: uruchamianie skryptu
 
-Zastąp nazwa_domeny.com swoją nazwą domeny i backupbase.php nazwą swojego pliku.
+Po zapisaniu skryptu na przestrzeni dyskowej, uruchom go. W tym celu wywołaj skrypt w przeglądarce.
 
-To polecenie wygeneruje plik nazwa_bazy.sql w katalogu, w którym znajduje się skrypt.
+Aby to uczynić, wpisz do przeglądarki internetowej pełny adres URL skryptu (na przykład: mypersonaldomain.ovh/kopia_zapasowa.php, jeśli nazwałeś skrypt „kopia_zapasowa.php”). Jeśli informacje wprowadzone do skryptu są prawidłowe, kopia zapasowa zostanie wykonana. Odczekaj chwilę, aż to nastąpi. Jeśli tak się nie stanie, sprawdź informacje zawarte w skrypcie, po czym spróbuj ponownie.
 
-W pliku tym odnajdziesz wszystkie instrukcje SQL dotyczące odtworzenia bazy.
+#### Etap 4: pobierz kopię zapasową z przestrzeni dyskowej
 
-- Uwaga nr 1: Jeśli Twoja baza danych jest bardzo duża, możesz wykonać dump* tabela po tabeli dodając opcję "--tables nazwa_tabeli" na końcu, aby uzyskać to polecenie:
+Po utworzeniu kopii zapasowej, możesz ją pobrać z katalogu, do którego zapisany został skrypt kopii zapasowej. Nazwa kopii zapasowej bazy danych musi brzmieć, jak nazwa wprowadzona wcześniej do skryptu. Teraz pobierz kopię zapasową na Twój komputer.
 
+Zalecamy, abyś po pobieraniu pliku z kopią zapasową usunął z katalogu „WWW” pliki kopii zapasowej oraz skryptu.
 
-mysqldump --host=serwer_sql --user=nazwa_bazy --password=hasło nazwa_bazy --tables nazwa_tabeli > nazwa_bazy.sql
+> \[!primary]
+>
+> Używając skryptu kopii zapasowej oraz narzędzia do planowania zadań („CRON”), będziesz mógł zautomatyzować tworzenie kopii zapasowych i wybrać częstotliwość ich tworzenia. Dowiedz się więcej o planowaniu zadań z dokumentacji: [Narzędzie do planowania zadań (CRON) na hostingu](https://docs.ovh.com/pl/hosting/hosting_www_automatyczne_zadania_cron/){.external}.
+>
 
+### Pobieranie kopii zapasowej przy użyciu komendy SSH
 
-- Uwaga nr 2: Możesz również spakować ten plik, aby ułatwić jego pobieranie na komputer (przez FTP lub www).
+Aby przeprowadzić operację, wpisz odpowiednie komendy w terminalu i połącz się z przestrzenią dyskową.
 
-Aby spakować plik wykonać polecenie gzip. Zostanie utworzony plik z rozszerzeniem .sql.gz:
+> \[!warning]
+>
+> Aby korzystać z tego typu dostępu, konieczna jest zaawansowana wiedza techniczna. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania, jednak w przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego usługodawcy. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
+>
 
-system("gzip nazwa_bazy.sql");
+Po zalogowaniu się do przestrzeni dyskowej przy użyciu SSH wpisz komendę służącą do utworzenia kopii zapasowej bazy danych. Poniżej przykład komendy, która może być pomocna w przeprowadzanej przez Ciebie operacji. Pamiętaj, że kopia zapasowa zostanie zapisana w aktywnym katalogu w momencie, gdy wyślesz komendę do terminala. 
 
-
-## Poprzez ssh
-
-## Wstępne wymagania
-
-- Przygotuj login i hasło do FTP. 
-Zapoznaj się z przewodnikiem na temat odzyskiwania danych do FTP: []({legacy}1374)
-
-- Musisz mieć ofertę z dostępem przez ssh ([sprawdź nasza ofertę](http://www.ovh.pl/hosting/))
-
-
-Poniżej znajduje się link do przewodnika na temat ssh na hostingu:
-
-
-- [SSH na hostingu](http://pomoc.ovh.pl/SshNaHostingu)
-
-
-
-## Eksport bazy danych przez ssh
-Połącz się z hostingiem przez ssh.
-
-Przejdź do katalogu, w którym chcesz umieścić kopie zapasową i wpisz to polecenie:
-
-Kod do wpisania i do uzupełnienia: 
-
-
-```
-mysqldump --host=serwer_sql --user=nazwa_bazy --password=hasło nazwa_bazy > nazwa_bazy.sql
+```sh
+system("mysqldump --host=adres_serwera --user=uzytkownik --password=haslo nazwa_bazy_danych > nazwa_pliku_kopii_zapasowej.sql");
 ```
 
+Pamiętaj, aby zastąpić informacje ogólne występujące w komendzie informacjami dotyczącymi odpowiedniej bazy danych. Teraz pobierz kopię zapasową na Twój komputer.
 
-Przykładowy kod: 
+## Sprawdź również
 
-
-```
-mysqldump --host=sql3 --user=testbackup --password=RtPgDsmL testbackup > testbackup.sql
-```
-
-
-
-
-## Z poziomu usługi Prywatnego Serwera SQL
-Przewodnik dotyczący eksportowania bazy danych:
-
-
-- []({legacy}2023)
-
-
-
-
-## Kopia zapasowa
-Jeśli chcesz poprzez skrypt odzyskać wcześniejszą kopie zapasową bazy danych, należy wskazać określony numer portu:
-
-Aktualna kopia = 3306
-Wczoraj = 3307
-Poprzedni tydzień = 3317
-
-Przykład kodu:
-
-PHP :
-
-```
-system("mysqldump --host=serwer_sql --user=nazwa_bazy --password=hasło --port=3317 nazwa_bazy > nazwa_bazy.sql ");
-```
-
-
-
-- Ten system kopii zapasowych jest dostępny dla baz danych w wersji minimum Mysql5.
-
-
-
-
-## Błędy "Max_Allowed_Packet" podczas importowania pliku dump*
-Podczas wykonywania kopii zapasowej można spersonalizować eksport bazy danych SQL używając interfejsu PhpMyAdmin.
-
-Dzięki temu można uniknąć dodania całej zawartości tabeli poprzez "INSERT INTO", aby uniknąć błędów związanych ze zmienną serwera "Max_Allowed_Packet" podczas importowania pliku dump*, jeśli zawartość tej tabeli jest duża. 
-
-Na przykład: jeśli tabela A zawiera 500 linii, zamiast korzystać z samego "INSERT INTO" dla 500 linii, należy wykonać 500 "INSERT INTO".
-
-Poprzez interfejs PhpMyAdmin:
-
-Podczas wykonywania eksportu w interfejsie PhpMyAdmin, zaznacz opcję tworzenia danych "Żaden z poniższych trybów", aby uniknąć błędów związanych z "Max_Allowed_Packet".
-
-Poprzez ssh:
-
-Skorzystaj z opcji --skip-extended-insert.
-
-Opcja --extended-insert, zawarta w opcji --opt (aktywnej domyślnie), generuje unikalne zapytanie INSERT INTO dla całej tabeli. Trzeba więc wyłączyć tą opcję:
-
-
-```
---skip-extended-insert
-```
-
-
-
-![](images/img_1965.jpg){.thumbnail}
-
-
-## Słowniczek
-dump*: plik kopii zapasowej bazy danych. 
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.

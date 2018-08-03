@@ -1,5 +1,6 @@
 ---
-title: SSL Gateway
+title: 'SSL Gateway'
 slug: ssl-gateway
-excerpt: Security accessible to everyone
+excerpt: 'Bezpieczeństwo dostępne dla wszystkich'
 ---
+
