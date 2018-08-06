@@ -1,98 +1,74 @@
 ---
-title: Create a DNS zone for a domain which is not registered at OVH.
-excerpt: Create a DNS zone for a domain which is not registered at OVH.
+title: 'Creating an OVH DNS zone for a domain name'
 slug: create_a_dns_zone_for_a_domain_which_is_not_registered_at_ovh
+excerpt: 'Find out how to create an OVH DNS zone for your domain name via the OVH Control Panel'
 legacy_guide_number: g2229
+section: 'DNS and DNS zone'
+order: 2
 ---
 
+**Last updated 06th August 2018**
 
-## Prerequisites
-To create a DNS zone for a domain which is not registered at OVH, make sure that it meets the following criteria:
+## Objective
 
+A Domain Name System (DNS) zone is a domain name’s config file. It is composed of technical information, otherwise called ‘records’. DNS zones are usually used to link your domain name to the server (or servers) that host your website and email addresses.
 
-- You must not have any existing purchase orders or operations for this domain at OVH
-- The domain must exist
-- The domain's SOA must be included in its DNS zone
+For a number of reasons, you may need to create a DNS zone for your domain name at OVH.
 
+**Find out how to create an OVH DNS zone for your domain name via the OVH Control Panel.**
 
+## Requirements
 
+- a domain name that does not already have an OVH DNS zone, and is not part of an operation or order currently being processed at OVH
+- correct technical configuration for your domain name (status, SOA, etc.)
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-## Step 1: Domain verification
+## Instructions
 
-- In the domain section of your control panel, click on "Add DNS zone".
+### Step 1: Create the DNS zone via the OVH Control Panel.
 
+First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Order`{.action} in the services bar on the left-hand side, then `DNS zone`{.action}.
 
+In the page that pops up, enter the domain name you would like to create an OVH DNS for. Then wait a few moments for the tool to carry out its verifications on the domain name.
 
-![](images/img_4295.jpg){.thumbnail}
-In the "Domain name" section, specify the domain for which you want to create the zone.
+If a message appears notifying you that the DNS zone cannot be created, check that the domain name follows the requirements listed above, or ask the person managing it to do this for you. Once you have ensured that the domain name meets all requirements and is correctly configured, try again.
 
-![](images/img_4296.jpg){.thumbnail}
+![dnszonecreate](images/dns-zone-create-step1.png){.thumbnail}
 
-## Please note:
+Once the verifications are complete, you must choose whether to enable the minimal records for the DNS zone you are going to create. The way you set your DNS records is not permanent. You can change the records after you have created the DNS zone. 
 
-- If the domain specified does not meet the prerequisites, you will not be able to create a DNS zone
+|Enable minimal records?|Details|
+|---|---|
+|Yes|Select this option if you would like to customise the DNS zone yourself at a later stage.|
+|No|Select this option if you are planning to use OVH services like a [Web Hosting plan](https://www.ovh.co.uk/web-hosting){.external}, since the zone has already been pre-configured.|
 
+![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 
+Once you have selected an option, continue following the next steps until you have created the DNS zone.
 
-![](images/img_4297.jpg){.thumbnail}
+### Step 2: Edit the DNS zone (optional).
 
-## Tip:
-If you have a domain which does not have a DNS server that you can enter, OVH will let your use temporary DNS servers in order to add the * DNS zone:
+Now that your domain name’s DNS zone has been created, you can edit it. This step is optional, but it may be essential if you want to ensure that any services linked to your domain name do not experience any downtime (e.g. your website and email services).
 
-- parking1.ovh.net
-- parking2.ovh.net
+If you would like to edit this DNS zone, in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
-(*) There may be a 48 hour delay before DNS servers are propagated.
+> [!primary]
+>
+> If you have just created the DNS zone but the domain name doesn’t appear under the list of services in the `Domains`{.action} section, please wait a few moments, then reload the page.
+>
 
+Once it appears, make the required changes. To learn more about how to edit a DNS zone, please read our guide to [Editing an OVH DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}. Once you have modified your domain name’s OVH DNS zone, you will need to allow 4-24 hours for the changes to fully propagate and take effect.
 
+### Step 3: Edit the DNS servers for a domain name.
 
-## Step 2: Choose zone type
-You then have to choose the DNS zone type:
+Once the OVH DNS zone is ready to be used, you can then link it to your domain name. To do this, you will need to retrieve the details for the OVH DNS servers activated for your domain name in the OVH Control Panel. The servers will appear below `Name Servers`{.action}.
 
-- Minimal: DNS zone with the minimum records that it needs to work (A, MX, CNAME, ...)
-- Normal: DNS zone with additional records (CNAME towards POP/IMAP/SMTP server, ...)
+![dnszonecreate](images/dns-zone-create-step3.png){.thumbnail}
 
+Once you have the details, **edit your domain name’s DNS servers using the interface supplied by your domain name’s service provider.** Once you have modified the DNS zone configuration, you will need to allow 48 hours for the changes to fully propagate.
 
+## Go further
 
-![](images/img_4298.jpg){.thumbnail}
+[Editing an OVH DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
-
-## Step 3: Confirmation
-
-- Tick the box "I have read and understood the terms and conditions".
-- Then click "Generate purchase order".
-
-
-
-![](images/img_4299.jpg){.thumbnail}
-
-- Then click "Settle".
-
-
-
-![](images/img_4300.jpg){.thumbnail}
-
-- Once you are on the purchase order, click "Continue".
-
-
-
-![](images/img_4301.jpg){.thumbnail}
-
-## Information:
-It is completely free to create a DNS zone.
-
-- Enter the security code and confirm.
-
-
-
-![](images/img_4302.jpg){.thumbnail}
-
-
-## Step 4: Confirm the order
-You can then see if your purchase order has been validated.
-
-![](images/img_4303.jpg){.thumbnail}
-
-## Information:
-After validating your purchase order, there will be a necessary delay of 30 minutes prior to installation.
-
+Join our community of users on <https://community.ovh.com/en/>.
