@@ -1,101 +1,74 @@
 ---
-title: DNS zonos kūrimas išoriniam domenui
-excerpt: DNS zonos kūrimas išoriniam domenui
+title: Creating an OVH DNS zone for a domain name
 slug: dns_zonos_kurimas_isoriniam_domenui
+excerpt: Find out how to create an OVH DNS zone for your domain name via the OVH Control Panel
 legacy_guide_number: g2229
+section: DNS and DNS zone
+order: 2
 ---
 
+**Last updated 07th August 2018**
 
-## Reikalavimai
-Norėdami sukurti DNS zoną išoriniam domenui, įsitikinkite, kad laikomasi šių reikalavimų:
+## Objective
 
+A Domain Name System (DNS) zone is a domain name’s config file. It is composed of technical information, otherwise called ‘records’. DNS zones are usually used to link your domain name to the server (or servers) that host your website and email addresses.
 
-- šiam domenui neturi būti vykdoma jokia kita operacija ar papildomas užsakymas OVH;
-- domenas turi galioti;
-- domeno SOA turi būti teisingai sukonfigūruotas DNS zonoje.
+For a number of reasons, you may need to create a DNS zone for your domain name at OVH.
 
+**Find out how to create an OVH DNS zone for your domain name via the OVH Control Panel.**
 
+## Requirements
 
+- a domain name that does not already have an OVH DNS zone, and is not part of an operation or order currently being processed at OVH
+- correct technical configuration for your domain name (status, SOA, etc.)
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-## 1 žingsnis: domeno tikrinimas
+## Instructions
 
-- Jūsų kliento valdymo sąsajos domeno skiltyje spauskite Pridėti DNS zoną.
+### Step 1: Create the DNS zone via the OVH Control Panel.
 
+First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Order`{.action} in the services bar on the left-hand side, then `DNS zone`{.action}.
 
+In the page that pops up, enter the domain name you would like to create an OVH DNS for. Then wait a few moments for the tool to carry out its verifications on the domain name.
 
-![](images/img_4295.jpg){.thumbnail}
+If a message appears notifying you that the DNS zone cannot be created, check that the domain name follows the requirements listed above, or ask the person managing it to do this for you. Once you have ensured that the domain name meets all requirements and is correctly configured, try again.
 
-- Langelyje Domenas nurodykite domeną, kuriam sukursite zoną.
+![dnszonecreate](images/dns-zone-create-step1.png){.thumbnail}
 
+Once the verifications are complete, you must choose whether to enable the minimal records for the DNS zone you are going to create. The way you set your DNS records is not permanent. You can change the records after you have created the DNS zone. 
 
+|Enable minimal records?|Details|
+|---|---|
+|Yes|Select this option if you would like to customise the DNS zone yourself at a later stage.|
+|No|Select this option if you are planning to use OVH services like a [Web Hosting plan](https://www.ovh.lt/svetainiu-talpinimas/){.external}, since the zone has already been pre-configured.|
 
-![](images/img_4296.jpg){.thumbnail}
+![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 
-## Dėmesio:
+Once you have selected an option, continue following the next steps until you have created the DNS zone.
 
-- Jeigu įvestas domenas neatitinka reikalavimų, negalėsite sukurti DNS zonos
+### Step 2: Edit the DNS zone (optional).
 
+Now that your domain name’s DNS zone has been created, you can edit it. This step is optional, but it may be essential if you want to ensure that any services linked to your domain name do not experience any downtime (e.g. your website and email services).
 
+If you would like to edit this DNS zone, in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
-![](images/img_4297.jpg){.thumbnail}
+> [!primary]
+>
+> If you have just created the DNS zone but the domain name doesn’t appear under the list of services in the `Domains`{.action} section, please wait a few moments, then reload the page.
+>
 
-## Patarimas:
-Jeigu jūsų domenui nenurodytas joks DNS serveris, OVH leidžia naudoti laikinus DNS serverius, leidžiančius pridėti* DNS zoną: 
+Once it appears, make the required changes. To learn more about how to edit a DNS zone, please read our guide to [Editing an OVH DNS zone](https://docs.ovh.com/lt/domains/svetainiu_talpinimas_kaip_redaguoti_dns_zona/){.external}. Once you have modified your domain name’s OVH DNS zone, you will need to allow 4-24 hours for the changes to fully propagate and take effect.
 
-- parking1.ovh.net
-- parking2.ovh.net
+### Step 3: Edit the DNS servers for a domain name.
 
-(*) DNS serverių paskelbimui gali prireikti iki 48 val.
+Once the OVH DNS zone is ready to be used, you can then link it to your domain name. To do this, you will need to retrieve the details for the OVH DNS servers activated for your domain name in the OVH Control Panel. The servers will appear below `Name Servers`{.action}.
 
+![dnszonecreate](images/dns-zone-create-step3.png){.thumbnail}
 
+Once you have the details, **edit your domain name’s DNS servers using the interface supplied by your domain name’s service provider.** Once you have modified the DNS zone configuration, you will need to allow 48 hours for the changes to fully propagate.
 
-## 2 etapas: zonos tipo pasirinkimas
-Jums reikės pasirinkti DNS zonos tipą:
+## Go further
 
-- Minimali: DNS zona su minimaliais įrašais, kurie būtini veikimui (A, MX, CNAME, ...)
-- Normali: DNS zona su papildomais įrašais (CNAME serveriui POP/IMAP/SMTP, ...)
+[Editing an OVH DNS zone](https://docs.ovh.com/lt/domains/svetainiu_talpinimas_kaip_redaguoti_dns_zona/){.external}.
 
-
-
-![](images/img_4298.jpg){.thumbnail}
-
-
-## 3 žingsnis: patvirtinimas
-
-- Pažymėkite Perskaičiau ir patvirtinu sutikimą su sutartimis.
-- Spauskite Generuoti užsakymą.
-
-
-
-![](images/img_4299.jpg){.thumbnail}
-
-- Spauskite Apmokėti.
-
-
-
-![](images/img_4300.jpg){.thumbnail}
-
-- Užsakymo puslapyje spauskite Tęsti.
-
-
-
-![](images/img_4301.jpg){.thumbnail}
-
-## Svarbu:
-Jūsų DNS zonos kūrimas yra visiškai nemokamas.
-
-- Nurodykite saugumo kodą ir patvirtinkite.
-
-
-
-![](images/img_4302.jpg){.thumbnail}
-
-
-## 4 žinsgnis: užsakymo patvirtinimas
-Jūs galėsite peržiūrėti savo užsakymą ir įsitikinti, kad užsakymas patvirtintas.
-
-![](images/img_4303.jpg){.thumbnail}
-
-## Svarbu:
-Po užsakymo patvirtinimo diegimas atliekamas per 30 min.
-
+Join our community of users on <https://community.ovh.com/en/>.
