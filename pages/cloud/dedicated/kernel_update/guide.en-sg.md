@@ -1,31 +1,35 @@
 ---
 title: Updating the kernel on a dedicated server
-excerpt: Find out how to update the kernel for distributions that use an OVH core
 slug: updating-kernel-dedicated-server
+excerpt: Find out how to update the kernel for distributions that use an OVH core
 section: Advanced use
 ---
 
-**Last updated 31/01/2018**
+**Last updated 07/08/2018**
 
 ## Objective
 
-OVH gives you the possibility to easily boot your Linux machine using an updated kernel using the netboot startup system. However, it may be advantageous if your operating system’s kernel is also updated locally (on disk).
+[OVH Dedicated Servers](https://www.ovh.com/sg/dedicated-servers/){.external} are easily able to boot into a Linux operating system using an updated kernel with the netboot startup system. However, it's best practice to update the kernel on the local machine.
 
-**This guide explains how to update the kernel for distributions that use an OVH core.**
+**This guide will show you how to update the kernel for distributions that use an OVH core.**
 
-By default, all system snapshots offered on OVH dedicated servers use an optimised OVH core. If you have replaced these snapshots with your own distribution, please refer to your distribution’s official documentation.
+> [!warning]
+>
+> By default, all system snapshots offered on [OVH Dedicated Servers](https://www.ovh.com/sg/dedicated-servers/){.external} use an optimised OVH core. If you have replaced these snapshots with your own distribution, please refer to your distribution’s official documentation.
+>
 
 > [!primary]
 >
-> OVH provides self-managed machines that you are responsible for administering.  We have no access to these machines and therefore cannot manage them. It is up to you to ensure that your machine is secured and software is up to date.
+> OVH provides self-managed machines that you are responsible for administering. We have no access to these machines and therefore cannot manage them. It is up to you to ensure that your machine is secured and your software is up to date.
 >
-> We make this guide available to assist you in this update. However, we recommend that you contact a specialized provider if you are facing any issues or have any doubts about managing, using or securing your server.
+> We have made this guide available to assist you in applying this update. However, we recommend that you contact a specialist provider if you are facing any issues or have any doubts about managing, using or securing your server.
 >
 
-## Prerequisites:
+## Requirements
 
-- Root access to the server (SSH).
-- Backup of your data (see the official documentation for your distribution).
+- an [OVH Dedicated Server](https://www.ovh.com/sg/dedicated-servers/){.external}
+- root access to the server via SSH
+- a backup of your data (see the official documentation for your distribution)
 
 ## Instructions
 
@@ -47,7 +51,35 @@ uname -r
 
 In this case, the kernel version is  **4.09.76-xxxx-std-ipv6-64**.
 
-### Update the kernel
+
+### Update the kernel using OVH packages
+
+On Debian-based and RedHat-based distributions, the kernel is installed using the package manager.
+
+#### Step 1: Update the kernel package
+
+On Debian-based distributions, update the kernel package using the following command:
+
+```sh
+apt-get update && apt-get dist-upgrade
+```
+
+On RedHat-based distributions, update the kernel package using the following command:
+
+```sh
+yum update
+```
+
+#### Step 2: Reboot the server
+
+In order for the modifications to take effect, you must reboot the server:
+
+```sh
+reboot
+```
+
+
+### Update the kernel without using OVH packages
 
 #### Step 1: Navigate to the correct directory
 
@@ -59,13 +91,13 @@ cd /boot
 
 #### Step 2: Get the image
 
-Without recompiling the kernel, download the appropriate bzImage version, ideally the latest one. You can find the images at the following address: <ftp://ftp.ovh.net/made-in-ovh/bzImage/>. 
+Without recompiling the kernel, download the appropriate bzImage version, ideally the latest one. You can find these images at the following address: <ftp://ftp.ovh.net/made-in-ovh/bzImage/>. 
 
-Kernels are monolithic, so they don’t take into account kernel modules such as: CEPH, NBD, ZFS...
+Kernels are monolithic, so they don’t take into account kernel modules, such as CEPH, NBD, ZFS...
 
-Let’s go back to our example. We had kernel version: **4.09.76-xxxx-std-ipv6-64**.
+Let’s return to our example. We have this kernel version: **4.09.76-xxxx-std-ipv6-64**.
 
-We need to download the following image using this command:
+We therefore need to download the image using this command:
 
 ```sh
 wget ftp://ftp.ovh.net/made-in-ovh/bzImage/4.14.13/bzImage-4.14.13-xxxx-std-ipv6-64
@@ -95,7 +127,7 @@ done
 
 #### Step 4: Reboot the server
 
-In order for the modifications to take effect, you must to reboot the server:
+In order for the modifications to take effect, you must reboot the server, using the following command:
 
 ```sh
 reboot
@@ -103,7 +135,7 @@ reboot
 
 ### Rollback
 
-In the event that you made an mistake or received an error, you have the possibility rollback. To rollback, the server must be placed in [Rescue mode](https://docs.ovh.com/au/en/dedicated/ovh-rescue/){.external}. This will require you to mount your system using the following commands:
+In the event that you make a mistake or receive an error, it's possible to rollback your changes. To do so, the server must be placed in [Rescue mode](https://docs.ovh.com/sg/en/dedicated/ovh-rescue/){.external}. This will require you to mount your system using the following commands:
 
 ```sh
 mount /dev/md1 /mnt
@@ -111,7 +143,7 @@ mount /dev/md1 /mnt
 
 > [!primary]
 >
-> In this example, the root directory (or slash `/`) is named *md1*. Please note the name can vary. To verify the name of your root directory, type the following command:
+> In this example, the root directory (or slash `/`) is named *md1*. Please note, the name can vary. To verify the name of your root directory, type the following command:
 >
 > `fdisk`or `lsblk`
 >
@@ -160,19 +192,19 @@ uname -r
 
 > [!primary]
 >
-> You can refer to your distribution’s vendor’s website to verify if the new version of the kernel is patched to protect you against the Meltdown and Spectrum vulnerabilities.
+> You can refer to the website of your distribution’s vendor to verify if the new version of the kernel is patched to protect you against the Meltdown and Spectrum vulnerabilities.
 >
-> If needed, there are a number of tools (for example this one: <https://github.com/speed47/spectre-meltdown-checker>) that identify if the kernel being used is vulnerable or not.
+> If necessary, there are a number of tools (for example, this one: <https://github.com/speed47/spectre-meltdown-checker>) that identify if the kernel being used is vulnerable or not.
 >
-> **OVH cannot guarantee the reliability of any third-party tools and these tools should be used at your own risk. **
+> **OVH cannot guarantee the reliability of any third-party tools and these should be used at your own risk. **
 >
 
 ## Go further
 
-[Rescue Mode](https://docs.ovh.com/au/en/dedicated/ovh-rescue/){.external}.
+[Rescue Mode](https://docs.ovh.com/sg/en/dedicated/ovh-rescue/){.external}.
 
 [Information on Meltdown and Spectre  vulnerabilities](https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/){.external}.
 
-[Updated following Meltdown and Spectrum vulnerabilities by operating system](https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/){.external}.
+[Update following Meltdown and Spectrum vulnerabilities by operating system](https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/){.external}.
 
-Join our user community on  <https://community.ovh.com/en/>.
+Join our user community on  <https://community.ovh.com/en/>
