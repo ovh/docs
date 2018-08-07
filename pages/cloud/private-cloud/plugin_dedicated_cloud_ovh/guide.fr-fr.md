@@ -1,31 +1,47 @@
 ---
-title: Plugin Dedicated Cloud OVH
+title: 'Utiliser le plugin Private Cloud OVH'
 slug: plugin-private-cloud-ovh
-section: Fonctionnalités OVH
+excerpt: 'Découvrez comment utiliser le plugin Private Cloud OVH'
+section: 'Fonctionnalités OVH'
 ---
 
+**Dernière mise à jour le 07/08/2018**
 
-Le Plugin **Dedicated Cloud OVH** permet d'ajouter en quelques minutes (selon disponibilité) des **ressources dédiés** à votre infrastructure.
+## Objectif
 
-Il est nécessaire pour votre utilisateur vSphere d'[obtenir les droits d'ajout de ressources]({legacy}6094888) pour utiliser ce plugin.
+Le plugin Private Cloud d'OVH vous permet d'ajouter, en quelques minutes, des ressources dédiées à votre infrastructure.
 
-Nous proposons deux ressources dédiés en facturation horaire :
+**Découvrez comment utiliser ce plugin.**
 
-- Hôtes
-- Data-stores
 
-La facturation de ces ressources ainsi que leur disponibilité sont des informations qui sont présentes dans le plugin, permettant ainsi de prévoir le délai de livraison ainsi que le prix estimé de la ressource selon sa durée de location.
+## Prérequis
 
-Depuis le client web vSphere, il vous suffit de vous rendre dans la partie "Host and Cluster", de développer l'arborescence de gauche. Vous pourrez alors accéder aux onglets du plugin via le **Datacentre** ou le **Cluster**, onglet "Manage".
+- Posséder une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
+- Accéder à l’interface de gestion vSphere.
 
-Le menu "Add OVH Host" est consacré aux **hôtes** affichant le détail technique, sa disponibilité et son prix avec la possibilité de commander cette ressource.
 
-![](images/AddHost.PNG){.thumbnail}
+## En pratique
 
-La commande des **data-stores** supplémentaires se situe dans le menu "Add OVH Storage".
+Deux ressources dédiées sont proposées en facturation horaire :
+- les serveurs hôtes ;
+- les datastores.
 
-![](images/AddDatastore.PNG){.thumbnail}
+Depuis le client web vSphere, il suffit de vous rendre dans la partie "Host and Cluster" et de développer l'arborescence de gauche. Vous accédez alors aux menus du plugin via l'onglet `Configure`{.action} du datacenter ou du cluster.
 
-Une alternative à l'accès de chaque plugin est de passer par un simple clic droit sur le **Datacentre** ou le **Cluster** de l'infrastructure, et de passer par le choix "OVH Dedicated Cloud".
+![](images/addhost_01.png){.thumbnail}
 
-![](images/RightClick.PNG){.thumbnail}
+Le menu `Add OVH Host`{.action} est consacré aux serveurs hôtes. Il affiche leurs détails techniques et permet de les commander.
+
+![](images/addhost_02.png){.thumbnail}
+
+La commande de datastores supplémentaires s'effectue, elle, dans le menu `Add OVH Storage`{.action}.
+
+![](images/addstorage_02.png){.thumbnail}
+
+À noter qu'il existe une alternative pour accéder à ces menus. En effet, vous pouvez aussi effectuer un clic droit sur le datacenter ou le cluster de l'infrastructure, puis choisir `OVH Dedicated Cloud`{.action}.
+
+![Option OVH Dedicated Cloud](images/rightclick.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
