@@ -48,7 +48,7 @@ uname -r
 4.09.76-xxxx-std-ipv6-64
 ```
 
-En este caso, la versión del kernel es **4.09.76-xxxx-std-ipv6-64**.
+En este caso, la versión del kernel es **4.9.118-xxxx-std-ipv6-64**.
 
 ### Actualizar el kernel 
 
@@ -62,16 +62,16 @@ cd /boot
 
 #### 2. Descargar la imagen
 
-Si no vamos a recompilar el kernel, solo hay que descargar la versión **bzImage** deseada, preferentemente la última versión. Las imágenes se encuentran en la siguiente dirección: <ftp://ftp.ovh.net/made-in-ovh/bzImage/>. 
+Si no vamos a recompilar el kernel, solo hay que descargar la versión **bzImage** deseada, preferentemente la última versión. Las imágenes se encuentran en la siguiente dirección: <https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/>. 
 
 Los kernels son monolíticos, es decir, que no tienen en cuenta los módulos de kernel Ceph, NBD, ZFS, etc.
 
-Volviendo al ejemplo, teníamos la siguiente versión de kernel: **4.09.76-xxxx-std-ipv6-64**.
+Volviendo al ejemplo, teníamos la siguiente versión de kernel: **4.9.118-xxxx-std-ipv6-64**.
 
 Por lo tanto, deberemos descargar una imagen superior con el siguiente comando:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/bzImage/4.14.13/bzImage-4.14.13-xxxx-std-ipv6-64
+wget https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/4.9.118/313405/bzImage/4.9.118-xxxx-std-ipv6-64/bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 #### 3. Actualizar el programa de arranque (GRUB)

@@ -49,7 +49,7 @@ uname -r
 4.09.76-xxxx-std-ipv6-64
 ```
 
-In this case, the kernel version is  **4.09.76-xxxx-std-ipv6-64**.
+In this case, the kernel version is  **4.9.118-xxxx-std-ipv6-64**.
 
 
 ### Update the kernel using OVH packages
@@ -91,16 +91,16 @@ cd /boot
 
 #### Step 2: Get the image
 
-Without recompiling the kernel, download the appropriate bzImage version, ideally the latest one. You can find these images at the following address: <ftp://ftp.ovh.net/made-in-ovh/bzImage/>. 
+Without recompiling the kernel, download the appropriate bzImage version, ideally the latest one. You can find these images at the following address: <https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/>. 
 
 Kernels are monolithic, so they don’t take into account kernel modules, such as CEPH, NBD, ZFS...
 
-Let’s return to our example. We have this kernel version: **4.09.76-xxxx-std-ipv6-64**.
+Let’s return to our example. We have this kernel version: **4.9.118-xxxx-std-ipv6-64**.
 
 We therefore need to download the image using this command:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/bzImage/4.14.13/bzImage-4.14.13-xxxx-std-ipv6-64
+wget https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/4.9.118/313405/bzImage/4.9.118-xxxx-std-ipv6-64/bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 #### Step 3: Update the boot loader program (GRUB)

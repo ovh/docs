@@ -48,7 +48,7 @@ uname -r
 4.09.76-xxxx-std-ipv6-64
 ```
 
-La version du kernel est dans ce cas **4.09.76-xxxx-std-ipv6-64**.
+La version du kernel est dans ce cas **4.9.118-xxxx-std-ipv6-64**.
 
 ### Mettre à jour le kernel en utilisant les paquets OVH
 
@@ -90,16 +90,16 @@ cd /boot
 
 #### Étape 2 : récupérer l'image
 
-Sans recompilation du kernel, il suffit de télécharger la version bzImage souhaitée (idéalement la dernière version). Vous trouverez les images à l'adresse suivante : <ftp://ftp.ovh.net/made-in-ovh/bzImage/>. 
+Sans recompilation du kernel, il suffit de télécharger la version bzImage souhaitée (idéalement la dernière version). Vous trouverez les images à l'adresse suivante : <https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/>. 
 
 Les kernels sont monolithiques, c’est-à-dire qu'ils ne prennent pas en compte les modules kernel : CEPH, NBD, ZFS…
 
-Reprenons notre exemple, dont la version du kernel était : **4.09.76-xxxx-std-ipv6-64**.
+Reprenons notre exemple, dont la version du kernel était : **4.9.118-xxxx-std-ipv6-64**.
 
 Ici, il faudrait donc télécharger l'image suivante avec la commande ci-dessous :
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/bzImage/4.14.13/bzImage-4.14.13-xxxx-std-ipv6-64
+wget https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/4.9.118/313405/bzImage/4.9.118-xxxx-std-ipv6-64/bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 #### Étape 3 : mettre à jour le programme d'amorçage (GRUB)
