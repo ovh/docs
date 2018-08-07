@@ -1,10 +1,9 @@
 ---
-title: Prepare the environment for using the OpenStack API
-excerpt: Prepare the environment for using the OpenStack API
+title: 'Prepare the environment for using the OpenStack API'
+excerpt: 'Prepare the environment for using the OpenStack API'
 slug: prepare_the_environment_for_using_the_openstack_api
-section: Getting started
+section: 'Getting started'
 ---
-
 
 ## 
 In order to manage your Public Cloud services from a terminal, you can install OpenStack clients with Python.
@@ -63,9 +62,8 @@ admin@vps187763:~$ glance help
 - Update repositories:
 
 ```
-root@vps187763:~# apt-get update
+root@vps187763:~# yum update
 ```
-
 
 - Install rpm rdo-release:
 
