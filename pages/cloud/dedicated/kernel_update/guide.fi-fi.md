@@ -56,16 +56,16 @@ cd /boot
 
 #### 2. vaihe: Imagen hakeminen
 
-Ilman kernelin uudelleenkokoamista riittää halutun, mieluiten viimeisimmän, bzImage-version lataaminen. Löydät imaget seuraavasta osoitteesta: <ftp://ftp.ovh.net/made-in-ovh/bzImage/>. 
+Ilman kernelin uudelleenkokoamista riittää halutun, mieluiten viimeisimmän, bzImage-version lataaminen. Löydät imaget seuraavasta osoitteesta: <https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/>. 
 
 Kernelit ovat monoliittisia eli ne eivät huomio Kernel-, CEPH-, NBD- tai ZFS-moduuleja jne.
 
-Palataan esimerkkitapaukseemme. Olimme kernelin versiossa: **4.09.76-xxxx-std-ipv6-64**.
+Palataan esimerkkitapaukseemme. Olimme kernelin versiossa: **4.9.118-xxxx-std-ipv6-64**.
 
 On siis ladattava seuraava image alla olevalla komennolla:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/bzImage/4.14.13/bzImage-4.14.13-xxxx-std-ipv6-64
+wget https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/4.9.118/313405/bzImage/4.9.118-xxxx-std-ipv6-64/bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 #### 3\. vaihe: Esilatausohjelman (GRUB) päivitys

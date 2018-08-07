@@ -56,16 +56,16 @@ cd /boot
 
 #### Stap 2: Verkrijg de afbeelding  
 
-Zonder de kernel opnieuw te compileren, hoeft u alleen maar de juiste bzImage-versie te downloaden, bij voorkeur de nieuwste versie. U vindt de afbeeldingen hier: <ftp://ftp.ovh.net/made-in-ovh/bzImage/>. 
+Zonder de kernel opnieuw te compileren, hoeft u alleen maar de juiste bzImage-versie te downloaden, bij voorkeur de nieuwste versie. U vindt de afbeeldingen hier: <https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/>. 
 
 De kernels zijn monolithisch, wat wil zeggen dat ze geen rekening houden met modules als KERNEL, CEPH, NBD, ZFS, ..
 
-Laten we teruggaan naar ons voorbeeld. We hadden deze kernelversie:  **4.09.76-xxxx-std-ipv6-64**
+Laten we teruggaan naar ons voorbeeld. We hadden deze kernelversie:  **4.9.118-xxxx-std-ipv6-64**
 
 We moeten daarom de volgende afbeelding downloaden met het commando:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/bzImage/4.14.13/bzImage-4.14.13-xxxx-std-ipv6-64
+wget https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/4.9.118/313405/bzImage/4.9.118-xxxx-std-ipv6-64/bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 #### Stap 3: Update het boot-programma (GRUB)

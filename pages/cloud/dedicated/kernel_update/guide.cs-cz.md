@@ -56,16 +56,16 @@ cd /boot
 
 #### Fáze 2: stažení image
 
-Aniž by bylo zapotřebí rekompilovat kernel, stáhněte příslušnou verzi bzImage (ideálně tu nejnovější). Image naleznete na následující adrese: <ftp://ftp.ovh.net/made-in-ovh/bzImage/>. 
+Aniž by bylo zapotřebí rekompilovat kernel, stáhněte příslušnou verzi bzImage (ideálně tu nejnovější). Image naleznete na následující adrese: <https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/>. 
 
 Kernely jsou monolitické, což znamená, že veškerý kód běží v jednom paměťovém prostoru (nejsou zde brány v úvahu moduly jako CEPH, NBD ZFS a další).
 
-Vraťme se nyní zpět k našemu příkladu. Verze našeho kernelu je následující: **4.09.76-xxxx-std-ipv6-64**.
+Vraťme se nyní zpět k našemu příkladu. Verze našeho kernelu je následující: **4.9.118-xxxx-std-ipv6-64**.
 
 Nyní je tedy zapotřebí stáhnout příslušný image zadáním následujícího příkazu:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/bzImage/4.14.13/bzImage-4.14.13-xxxx-std-ipv6-64
+wget https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/4.9.118/313405/bzImage/4.9.118-xxxx-std-ipv6-64/bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 #### Fáze 3: aktualizace bootovacího programu (GRUB)

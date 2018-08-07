@@ -55,16 +55,16 @@ cd /boot
 
 #### 2 - Aceder à imagem
 
-Sem recompilar o kernel, transfira a versão bzImage pretendida, de preferência a última versão. As imagens estão disponíveis no seguinte endereço: <ftp://ftp.ovh.net/made-in-ovh/bzImage/>. 
+Sem recompilar o kernel, transfira a versão bzImage pretendida, de preferência a última versão. As imagens estão disponíveis no seguinte endereço: <https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/>. 
 
 Os kernel são monolíticos, ou seja, não têm em conta os módulos Kernel Ceph, NBD, ZFS, etc.
 
-No nosso exemplo, a versão kernel é:  **4.09.76-xxxx-std-ipv6-64**.
+No nosso exemplo, a versão kernel é:  **4.9.118-xxxx-std-ipv6-64**.
 
 Como tal, é necessário transferir imagem abaixo através do comando:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/bzImage/4.14.13/bzImage-4.14.13-xxxx-std-ipv6-64
+wget https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/4.9.118/313405/bzImage/4.9.118-xxxx-std-ipv6-64/bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 #### 3 -Atualizar o programa de arranque (GRUB)

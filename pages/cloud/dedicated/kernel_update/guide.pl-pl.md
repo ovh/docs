@@ -56,16 +56,16 @@ cd /boot
 
 #### Etap 2: pobranie obrazu kernela
 
-Ponowna kompilacja jądra nie jest konieczna, pobierz wersję bzImage, najlepiej najnowszą. Obrazy znajdziesz pod następującym linkiem: <ftp://ftp.ovh.net/made-in-ovh/bzImage/>. 
+Ponowna kompilacja jądra nie jest konieczna, pobierz wersję bzImage, najlepiej najnowszą. Obrazy znajdziesz pod następującym linkiem: <https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/>. 
 
 Jądra są monolityczne, co oznacza, że nie uwzględniają modułów :CEPH, NBD, ZFS...
 
-Możesz to zaobserwować w podanym przykładzie. Dla jądra w wersji: **4.09.76-xxxx-std-ipv6-64**.
+Możesz to zaobserwować w podanym przykładzie. Dla jądra w wersji: **4.9.118-xxxx-std-ipv6-64**.
 
 Pobierz następujący obraz wraz z poleceniem:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/bzImage/4.14.13/bzImage-4.14.13-xxxx-std-ipv6-64
+wget https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/4.9.118/313405/bzImage/4.9.118-xxxx-std-ipv6-64/bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 #### Etap 3: aktualizacja programu rozruchowego (GRUB)

@@ -1,11 +1,11 @@
 ---
-title: Déployer une instance GPU
+title: 'Déployer une instance GPU'
 slug: deployer-une-instance-gpu
-excerpt: Découvrez comment déployer une instance GPU sous Linux ou Windows
-section: Depuis espace client OVH
+excerpt: 'Découvrez comment déployer une instance GPU sous Linux ou Windows'
+section: 'Depuis espace client OVH'
 ---
 
-**Dernière mise à jour le 14/03/2018**
+**Dernière mise à jour le 07/08/2018**
 
 ## Objectif
 
@@ -15,7 +15,7 @@ Les GPU proposés sont des NVIDIA GeForce GTX 1060, GTX 1070 ou GTX 1080Ti.
 
 > [!warning]
 >
-> Les instances GPU sont, pour l'instant, disponibles uniquement sur le datacenter de GRA3. Vous aurez peut-être besoin de créer un nouveau projet et de sélectionner la nouvelle gamme 2017. Plus d'informations [ici](https://docs.ovh.com/fr/public-cloud/faq-comment-comprendre-la-nouvelle-nomenclature-de-la-gamme-2017/).
+> Les instances GPU sont, pour l'instant, disponibles uniquement sur le datacenter de GRA3, GRA5 et BHS3. Vous aurez peut-être besoin de créer un nouveau projet et de sélectionner la nouvelle gamme 2017. Plus d'informations [ici](https://docs.ovh.com/fr/public-cloud/faq-comment-comprendre-la-nouvelle-nomenclature-de-la-gamme-2017/).
 > 
 
 **Ce guide vous explique comment déployer une instance GPU sous Linux ou sous Windows**
@@ -23,8 +23,7 @@ Les GPU proposés sont des NVIDIA GeForce GTX 1060, GTX 1070 ou GTX 1080Ti.
 
 ## Prérequis
 
-
-
+- Avoir créé un projet Public Cloud qui a accès aux régions où le GPU est disponible (GRA3, GRA5 et BHS3).
 
 ## En pratique
 
@@ -108,7 +107,7 @@ Nous fournissons des images spéciales, reposant sur un BIOS virtuel UEFI, qui p
 
 > [!warning]
 >
-> Il ne nous est pas possible de garantir que la  solution fonctionnera avec toutes les versions futures du driver NVIDIA. Nos images contiennent une version du driver qui fonctionne et supporte les GPU que nous fournissons. 
+> Il ne nous est pas possible de garantir que la  solution fonctionnera avec toutes les versions futures du driver NVIDIA.
 >
 > Avant toute mise à jour du driver NVIDIA il est fortement recommandé de prendre un snapshot qui vous permettra de revenir en arrière le cas échéant.
 >
