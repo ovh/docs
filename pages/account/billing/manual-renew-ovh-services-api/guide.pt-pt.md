@@ -1,6 +1,6 @@
 ---
 title: 'Renovar os seus serviços através da API OVH'
-slug: renovar-serviço-atraves-api
+slug: renovar-servico-atraves-api
 excerpt: 'Saiba como renovar os seus serviços através da API OVH'
 section: Introdução
 ---
