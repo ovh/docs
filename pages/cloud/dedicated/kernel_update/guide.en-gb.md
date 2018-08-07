@@ -1,8 +1,8 @@
 ---
-title: 'Updating the kernel on a dedicated server'
+title: Updating the kernel on a dedicated server
 slug: updating-kernel-dedicated-server
-excerpt: 'Find out how to update the kernel for distributions that use an OVH core'
-section: 'Advanced use'
+excerpt: Find out how to update the kernel for distributions that use an OVH core
+section: Advanced use
 ---
 
 **Last updated 03rd August 2018**
@@ -15,7 +15,7 @@ section: 'Advanced use'
 
 > [!warning]
 >
-By default, all system snapshots offered on [OVH Dedicated Servers](https://www.ovh.co.uk/dedicated_servers/){.external} use an optimised OVH core. If you have replaced these snapshots with your own distribution, please refer to your distribution’s official documentation.
+> By default, all system snapshots offered on [OVH Dedicated Servers](https://www.ovh.co.uk/dedicated_servers/){.external} use an optimised OVH core. If you have replaced these snapshots with your own distribution, please refer to your distribution’s official documentation.
 >
 
 > [!primary]

@@ -1,17 +1,15 @@
 ---
-title: 'Mettre à jour le kernel sur un serveur dédié'
+title: Mettre à jour le kernel sur un serveur dédié
 slug: mettre-a-jour-kernel-serveur-dedie
-excerpt: 'Découvrez comment mettre à jour le kernel d’une distribution utilisant un noyau OVH'
-section: 'Utilisation avancée'
+excerpt: Découvrez comment mettre à jour le kernel d’une distribution utilisant un noyau OVH
+section: Utilisation avancée
 ---
 
-**Dernière mise à jour le 03/08/2018**
+**Dernière mise à jour le 07/08/2018**
 
 ## Objectif
 
-OVH vous donne la possibilité de garder facilement un kernel à jour sur votre système Linux, grâce au système de démarrage *netboot*. 
-
-Il est cependant fortement recommandé de mettre à jour sur le disque votre système d’exploitation (OS) auquel est lié votre kernel.
+OVH vous donne la possibilité de garder facilement un kernel à jour sur votre système Linux, grâce au système de démarrage *netboot*. Il est cependant fortement recommandé de mettre à jour sur le disque votre système d’exploitation (OS) auquel est lié votre kernel.
 
 **Ce guide vous explique comment mettre à jour le kernel dans le cadre d’une distribution utilisant un noyau OVH.**
 
@@ -25,10 +23,13 @@ Par défaut, l’ensemble des images système proposées sur les serveurs dédi�
 > Nous mettons ce guide à votre disposition afin de vous accompagner sur cette mise à jour. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur.
 >
 
+
 ## Prérequis
 
-- Avoir l'accès root au serveur (SSH).
+- Posséder un [serveur dédié OVH](https://www.ovh.com/fr/serveurs_dedies/){.external}.
+- Être connecté en SSH avec l'identifiant root [Linux].
 - Avoir effectué au préalable une sauvegarde des données (consultez la documentation officielle de votre distribution).
+
 
 ## En pratique
 
