@@ -1,12 +1,11 @@
 ---
 title: 'Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW'
 excerpt: 'Dowiedz się, jak pobrać kopię zapasową bazy danych Twojego hostingu WWW OVH'
-id: '1394'
 slug: eksport-bazy-danych
 section: 'Bazy danych'
 ---
 
-**Ostatnia aktualizacja dnia 2018-08-02**
+**Ostatnia aktualizacja dnia 2018-08-/07**
 
 ## Wprowadzenie
 
@@ -36,7 +35,7 @@ Niektóre z powyższych metod nie są powiązane z interfejsem OVH. W takich prz
 
 Przejdź do metody tworzenia kopii zapasowej, która Cię interesuje opisanej w dalszej części dokumentacji.
 
-> \[!warning]
+> [!warning]
 >
 > OVH udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie.  Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
 >
@@ -87,7 +86,7 @@ Po uzyskaniu dostępu do strony phpMyAdmin wprowadź informacje dotyczące bazy 
 
 - **metoda spersonalizowana**: możesz określić szczegółowe parametry eksportu kopii zapasowej.
 
-> \[!warning]
+> [!warning]
 >
 > Ponieważ interfejs phpMyAdmin nie został utworzony przez OVH, wykonaj operację, bazując na własnej wiedzy. W przypadku trudności zalecamy skorzystanie z pomocy specjalisty lub kontakt z producentem interfejsu. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
 >
@@ -96,7 +95,7 @@ Po uzyskaniu dostępu do strony phpMyAdmin wprowadź informacje dotyczące bazy 
 
 Operacja składa się z kilku etapów.  Upewnij się, czy posiadasz informacje potrzebne do zalogowania się do bazy danych, której kopię zapasową chcesz utworzyć: nazwa użytkownika, hasło, nazwa bazy danych oraz adres serwera. 
 
-> \[!warning]
+> [!warning]
 >
 > Ta metoda wymaga umiejętności technicznych z zakresu programowania. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. Jednak w przypadku trudności zalecamy skorzystanie z pomocy specjalisty.  Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
 >
@@ -121,7 +120,7 @@ Pamiętaj, aby zastąpić informacje ogólne występujące w skrypcie informacja
 |nazwa_bazy_danych|Nazwa wybranej bazy danych|
 |nazwa_pliku_kopii_zapasowej|Nazwa nadana plikowi kopii zapasowej po jego utworzeniu.|
 
-> \[!primary]
+> [!primary]
 >
 > Możesz utworzyć kopię zapasową odnosząc się do wcześniejszej daty, dodając do skryptu port. W przypadku kopii zapasowej z datą dnia poprzedniego użyj portu „3307”. W przypadku kopii zapasowej sprzed 7 dni użyj portu „3317”. 
 > 
@@ -146,7 +145,7 @@ Po utworzeniu kopii zapasowej, możesz ją pobrać z katalogu, do którego zapis
 
 Zalecamy, abyś po pobieraniu pliku z kopią zapasową usunął z katalogu „WWW” pliki kopii zapasowej oraz skryptu.
 
-> \[!primary]
+> [!primary]
 >
 > Używając skryptu kopii zapasowej oraz narzędzia do planowania zadań („CRON”), będziesz mógł zautomatyzować tworzenie kopii zapasowych i wybrać częstotliwość ich tworzenia. Dowiedz się więcej o planowaniu zadań z dokumentacji: [Narzędzie do planowania zadań (CRON) na hostingu](https://docs.ovh.com/pl/hosting/hosting_www_automatyczne_zadania_cron/){.external}.
 >
@@ -155,7 +154,7 @@ Zalecamy, abyś po pobieraniu pliku z kopią zapasową usunął z katalogu „WW
 
 Aby przeprowadzić operację, wpisz odpowiednie komendy w terminalu i połącz się z przestrzenią dyskową.
 
-> \[!warning]
+> [!warning]
 >
 > Aby korzystać z tego typu dostępu, konieczna jest zaawansowana wiedza techniczna. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania, jednak w przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego usługodawcy. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
 >
