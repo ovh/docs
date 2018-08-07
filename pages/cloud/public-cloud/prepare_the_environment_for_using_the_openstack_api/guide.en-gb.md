@@ -63,7 +63,7 @@ admin@vps187763:~$ glance help
 - Update repositories:
 
 ```
-root@vps187763:~# apt-get update
+[root@vps187769 ~]# yum update -y
 ```
 
 
