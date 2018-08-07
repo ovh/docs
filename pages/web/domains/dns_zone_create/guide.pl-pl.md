@@ -1,101 +1,73 @@
 ---
-title: Utworzenie strefy DNS dla zewnętrznej domeny
-excerpt: Utworzenie strefy DNS dla zewnętrznej domeny
+title: 'Utworzenie strefy DNS dla domeny'
+excerpt: 'Dowiedz się, jak utworzyć strefę DNS w OVH dla Twojej domeny, korzystając z Panelu klienta'
 slug: utworzenie_strefy_dns_dla_zewnetrznej_domeny
+section: 'DNS i strefa DNS'
+order: 2
 legacy_guide_number: g2229
 ---
 
+**Ostatnia aktualizacja dnia 2018-08-07**
 
-## Wymagania
-Jeśli chcesz utworzyć strefę DNS dla zewnętrznej domeny, sprawdź, czy spełnia one poniższe wymagania:
+## Wprowadzenie
 
+Strefa Domain Name System (DNS) to plik konfiguracyjny domeny. Zawiera on informacje techniczne nazywane rekordami. W przypadku klasycznego użycia rekordy te umożliwiają powiązanie domeny z serwerem lub serwerami hostującymi stronę WWW i konta e-mail. 
 
-- Dla domeny tej nie może być wykonywana żadna operacja ani żadne zamówienie w OVH.
-- Domena musi istnieć. 
-- SOA domeny musi byc poprawnie wprowadzone w strefie DNS domeny.
+**Dowiedz się, jak utworzyć strefę DNS w OVH dla Twojej domeny, korzystając z Panelu klienta.**
 
+## Wymagania początkowe
 
+- Zarejestrowana domena
+- Domena nie może mieć strefy DNS OVH i nie może być przedmiotem trwającej operacji lub zamówienia w OVH
+- Prawidłowa konfiguracja techniczna domeny (status, SOA, etc.)
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
+## W praktyce
 
-## Etap 1: Weryfikacja domeny
+### Etap 1: utworzenie strefy DNS w Panelu klienta
 
-- W panelu klienta w menu "Domeny" kliknij na "Dodaj strefę DNS".
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Zamów`{.action} na pasku usług po lewej stronie, następnie kliknij `Strefa DNS`{.action}. 
 
+Na stronie, która się pojawi, wpisz nazwę domeny, dla której chcesz utworzyć strefę DNS. Odczekaj chwilę, aż narzędzie OVH dokona weryfikacji domeny.
 
+Jeśli pojawi się komunikat informujący, że strefa DNS nie może być utworzona, sprawdź, czy domena spełnia niezbędne wymagania lub poproś, aby zrobiła to osoba zarządzająca domeną.  Po zweryfikowaniu ustawień spróbuj ponownie.
 
-![](images/img_4295.jpg){.thumbnail}
+![dodanie domeny do dns](images/dns-zone-create-step1.png){.thumbnail}
 
-- W ramce "Domena" wpisz domenę, dla której chcesz utworzyć strefę DNS.
+Wybierz, czy chcesz aktywować wersję minimum dla tworzonej strefy DNS. Wybór ten nie jest ostateczny, ponieważ możesz edytować rekordy strefy DNS po jej utworzeniu.
 
+|Czy chcesz aktywować wersję minimalną?|Szczegóły|
+|---|---|
+|Tak|Wybierz tę opcję, jeśli chcesz następnie spersonalizować strefę DNS.|
+|Nie|Wybierz tę opcję, jeśli zamierzasz korzystać z domeny wraz z [hostingiem OVH](https://www.ovh.pl/hosting/){.external}. Strefa DNS jest w tym przypadku wstępnie skonfigurowana.|
 
+![dodanie domeny do dns](images/dns-zone-create-step2.png){.thumbnail}
 
-![](images/img_4296.jpg){.thumbnail}
+Po wybraniu odpowiedniej opcji postępuj zgodnie z instrukcjami podanymi w kolejnych etapach, aż do utworzenia strefy DNS.
 
-## Uwaga:
+### Etap 2: edycja strefy DNS (opcjonalnie)
 
-- Jeśli wpisana domena nie spełnia podanych wymagań, nie będzie można utworzyć dla niej strefy DNS.
+Po utworzeniu strefy DNS Twojej domeny możesz ją edytować. Operacja ta jest opcjonalna, jednak może okazać się niezbędna, jeśli chcesz zapewnić nieprzerwaną dostępność usług powiązanych z tą domeną (takich jak strona WWW i konta e-mail).
 
+Aby edytować strefę DNS, pozostań zalogowany do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią domenę. Teraz przejdź do zakładki `Strefa DNS`{.action}.
 
+> [!primary]
+>
+> Jeśli właśnie utworzyłeś strefę DNS i nazwa domeny jeszcze się nie wyświetla na liście Twoich usług `Domeny`{.action}, odczekaj chwilę, po czym odśwież stronę.
+>
 
-![](images/img_4297.jpg){.thumbnail}
+Następnie, przeprowadź niezbędne operacje. Więcej informacji o edycji strefy DNS znajdziesz w przewodniku [Modyfikacja strefy DNS OVH](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}. Czas propagacji wprowadzonych w strefie DNS zmian wynosi od 4 do 24 godzin.
 
-## Uwaga:
-Jeśli posiadasz domenę bez żadnego serwera DNS, możesz skorzystać z tymczasowych serwerów DNS OVH, aby dodać * w strefie DNS:
+### Etap 3: zmiana serwerów DNS domeny
 
-- parking1.ovh.net
-- parking2.ovh.net
+Kiedy strefa DNS jest gotowa do użytku, powiąż ja z Twoją domeną. Aby to zrobić, w pierwszym kroku pobierz serwery DNS OVH aktywowane dla Twojej domeny w Panelu klienta. Nazwy serwerów wyświetlają się pod `Name Servers`, w zakładce `Strefa DNS`{.action}.
 
-(*) Propagacja serwerów DNS trwa około 48 godzin.
+![dodanie domeny do dns](images/dns-zone-create-step3.png){.thumbnail}
 
+Następnie **zmodyfikuj serwery DNS domeny za pośrednictwem interfejsu administratora domeny.** Od momentu zmiany konfiguracji DNS muszą upłynąć 48 godziny, aby modyfikacja stała się efektywna.
 
+## Sprawdź również
 
-## Etap 2: Wybór typu strefy
-Następnie wybierz typ strefy DNS:
+[Modyfikacja strefy DNS OVH](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}.
 
-- Minimalna: Strefa DNS z minimalnymi wpisami wystarczającymi do działania (A, MX, CNAME, ...)
-- Normalna: Strefa DNS z dodatkowymi wpisami (CNAME dla serwera POP/IMAP/SMTP, ...)
-
-
-
-![](images/img_4298.jpg){.thumbnail}
-
-
-## Etap 3: Potwierdzenie
-
-- Zaznacz pole "Przeczytałem i akceptuję regulaminy".
-- Kliknij na "Złóż zamówienie".
-
-
-
-![](images/img_4299.jpg){.thumbnail}
-
-- Kliknij na "Zamów".
-
-
-
-![](images/img_4300.jpg){.thumbnail}
-
-- Na zamówieniu kliknij na "Dalej" na dole w części Darmowa realizacja zamówienia.
-
-
-
-![](images/img_4301.jpg){.thumbnail}
-
-## Informacja:
-Utworzenie strefy DNS jest całkowicie darmowe.
-
-- Wpisz kod i zatwierdź.
-
-
-
-![](images/img_4302.jpg){.thumbnail}
-
-
-## Etap 4: Potwierdzenie zlecenia
-Zlecenie utworzenia strefy DNS zostało zatwierdzone.
-
-![](images/img_4303.jpg){.thumbnail}
-
-## Informacja:
-Instalacja trwa około 30 minut od momentu zatwierdzenia zamówienia.
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
