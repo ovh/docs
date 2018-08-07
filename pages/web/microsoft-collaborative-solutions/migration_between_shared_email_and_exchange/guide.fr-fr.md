@@ -1,15 +1,15 @@
 ---
-title: Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange
+title: 'Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange'
 slug: migration-adresse-e-mail-mutualisee-vers-exchange
-excerpt: Apprenez comment migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange
-section: Migration de compte
+excerpt: 'Apprenez comment migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange'
+section: 'Migration de compte'
 ---
 
-**Dernière mise à jour le 29/11/2017**
+**Dernière mise à jour le 07/08/2018**
 
 ## Objectif
 
-OVH propose plusieurs solutions e-mail : le MX Plan , vendu seul ou compris dans une offre d'hébergement web, E-mail Pro et Exchange. Ces dernières bénéficient de fonctionnalités propres et peuvent s'adapter à plusieurs usages. Vos besoins évoluent ? OVH met à votre disposition un outil de migration vous permettant de passer d'une solution à une autre.
+OVH propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dans une offre d'hébergement web), E-mail Pro et Exchange. Celles-ci bénéficient de fonctionnalités propres et peuvent s'adapter à plusieurs usages. Vos besoins évoluent ? OVH met à votre disposition un outil de migration vous permettant de passer d'une solution à une autre.
 
 **Apprenez comment migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange.**
 
@@ -25,15 +25,14 @@ OVH propose plusieurs solutions e-mail : le MX Plan , vendu seul ou compris dans
 
 ### Étape 1 : délimiter votre projet
 
-Les solutions E-mail Pro et Hosted Exchange disposent d'une base de fonctionnalités communes. Néanmoins, des différences subsistent dans les utilisations que vous pouvez avoir avec une offre plutôt qu'une autre. En choisissant une adresse Exchange, vous disposez de la totalité des fonctions collaboratives, comme la synchronisation du calendrier et des contacts. La solution E-mail Pro, quant à elle, en proposera quelques-unes mais celles-ci seront limitées à une utilisation via un webmail uniquement.
+Les solutions E-mail Pro et Hosted Exchange disposent d'une base de fonctionnalités commune. Néanmoins, des différences subsistent selon les cas d'utilisation. En choisissant une adresse Exchange, vous disposez de la totalité des fonctions collaboratives, comme la synchronisation du calendrier et des contacts. La solution E-mail Pro, quant à elle, en propose quelques-unes mais celles-ci sont limitées à une utilisation via un webmail uniquement.
 
-Avant de poursuivre, il est donc important de savoir vers quelle offre vous souhaitez migrer vos adresses e-mail MX Plan. Pour vous aider dans votre choix, consultez la page des [solutions e-mails professionnelles d'OVH](https://www.ovh.com/fr/emails/){.external} qui propose un comparatif détaillé des offres. Vous avez la possibilité de cumuler les solutions et donc d'utiliser pour un même nom de domaine un ou plusieurs comptes E-mail Pro et Exchange. Par ailleurs, si vous devez migrer plusieurs comptes, nous vous conseillons de mettre en place un plan de migration.
+Avant de poursuivre, il est donc important de savoir vers quelle offre vous souhaitez migrer vos adresses e-mail MX Plan. Pour vous aider dans ce choix, consultez la page des [solutions e-mails professionnelles d'OVH](https://www.ovh.com/fr/emails/){.external} qui propose un comparatif détaillé des offres. Vous avez la possibilité de cumuler les solutions et donc d'utiliser pour un même nom de domaine un ou plusieurs comptes E-mail Pro et Exchange. Par ailleurs, si vous devez migrer plusieurs comptes, nous vous conseillons de mettre en place un plan de migration.
 
 
 ### Étape 2 : commander vos comptes E-mail Pro ou Exchange
 
 Cette étape est facultative si :
-
 - vous êtes déjà en possession de comptes ;
 - vous disposez déjà d'un service Exchange ou E-mail Pro vers lequel vous effectuez cette migration.
 
@@ -42,57 +41,48 @@ Dans le cas contraire, pour réaliser la manipulation, connectez-vous à votre [
 
 ### Étape 3 : réaliser une migration automatique
 
-Afin que cette dernière se passe au mieux, vous devez avoir en votre possession quelques informations avant de l'effectuer. **Une fois la migration confirmée, vous ne pourrez plus accéder à votre ancienne adresse e-mail MX Plan ni annuler le processus de migration**.
+La migration peut être effectuée depuis deux interfaces :
+- **celle de l'assistant de configuration Hosted Exchange**, uniquement si vous venez de commander un service Hosted Exchange et que vous n'avez encore rien paramétré sur ce dernier ;
+- **celle du MX Plan**, dès que vous êtes en possession d'un service E-mail Pro ou Exchange (déjà configuré ou non) et d'une adresse MX Plan que vous souhaitez migrer.
 
-De ce fait, nous vous conseillons vivement de :
+Une fois que vous êtes prêt, poursuivez la lecture de cette documentation selon l'interface sélectionnée. Nous vous rappelons que le délai de migration dépend de la quantité de contenu à migrer vers votre nouveau compte. Celui-ci peut varier de quelques minutes à plusieurs heures.
 
-- réaliser la migration à un horaire propice ;
-- réaliser un export de votre carnet d'adresses pour les utilisateurs du webmail RoundCube. Vous pouvez vous aider de notre documentation : [Utilisation de RoundCube](https://docs.ovh.com/fr/emails/utilisation-roundcube/#exporter-votre-carnet-dadresses){.external}.
-
-Même si vous ne pourrez plus accéder à votre adresse e-mail actuelle, les messages déjà réceptionnés ainsi que ceux reçus ne seront pas perdus et immédiatement accessibles depuis votre nouveau compte. Nous vous rappelons également que le délai de migration dépend de la quantité de contenu à migrer vers votre nouveau compte. Celui-ci peut varier de quelques minutes à plusieurs heures.
-
-Une fois que vous êtes prêt, la migration peut se réaliser depuis deux interfaces :
-
-- **celle de l'assistant de configuration Hosted Exchange** : peut être utilisée uniquement si vous venez de commander un service Hosted Exchange et que vous n'avez encore rien paramétré sur ce dernier ;
-- **celle du MX Plan** : peut être utilisée dès que vous êtes en possession d'un service E-mail Pro ou Exchange (déjà configuré ou non).
+> [!warning]
+>
+> Une fois la migration confirmée, vous ne pourrez plus accéder à votre ancienne adresse e-mail MX Plan ni annuler le processus de migration. Nous vous conseillons vivement de réaliser cette opération à un horaire propice.
+>
+> Même si vous ne pourrez plus accéder à votre adresse e-mail actuelle, les messages déjà réceptionnés ainsi que ceux reçus ne seront pas perdus. Tous seront immédiatement accessibles depuis votre nouveau compte.
+>
 
 #### Migration depuis l'assistant de configuration Hosted Exchange
 
-Pour y accéder, sélectionnez dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} le service concerné dans la barre de services à gauche. L'assistant devrait apparaître et vous aider à la configuration de votre nouveau service Hosted Exchange. Durant ce processus, vous pourrez sélectionner les comptes e-mails MX Plan à migrer.
+Pour y accéder, sélectionnez dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} le service concerné dans la barre de services à gauche. L'assistant devrait apparaître afin de vous aider à configurer votre nouveau service Hosted Exchange. Durant ce processus, vous pourrez sélectionner les comptes e-mails MX Plan à migrer.
 
 Si l'assistant de configuration ne s'affiche pas, les informations générales du service Hosted Exchange apparaîtront à la place. Dans ce cas, vous devrez réaliser la migration de vos comptes via l'interface MX Plan.
 
 #### Migration depuis l'interface MX Plan
 
-Pour réaliser la migration depuis cette interface, rendez-vous dans la section `E-mails`{.action} dans la barre de services à gauche de votre espace client OVH, puis sur le service portant le nom de domaine de vos adresses e-mail. Cliquez maintenant sur le logo en forme de roue dentée sur la ligne du compte e-mail concerné (également appelé compte source) puis sur `Migrer le compte`{.action}.
+Pour réaliser la migration depuis cette interface, rendez-vous dans la section `E-mails`{.action} dans la barre de services à gauche de votre espace client OVH. Choisissez alors le service portant le nom de domaine de vos adresses e-mail. Cliquez sur le logo en forme de roue dentée sur la ligne du compte e-mail concerné (également appelé compte source) puis sur `Migrer le compte`{.action}.
 
 ![exchange](images/access_the_migration_tool.png){.thumbnail}
 
-Dans la fenêtre qui s'affiche, sélectionnez l'offre de destination (le choix que vous avez fait lorsque vous avez défini votre projet), puis le service de destination (que vous possédez déjà ou que vous venez de commander).
+Dans la fenêtre qui s'affiche, sélectionnez le service de destination (celui vers lequel vous souhaitez migrer l'adresse) puis cliquez sur `Suivant`{.action}. S'il possède au minimum un compte « libre » (c'est-à-dire encore non paramétré), la migration s'effectuera vers l'un de ces comptes. Dès lors, prenez connaissance des informations qui s'affichent, validez-les, puis cliquez sur `Suivant`{.action} afin de poursuivre la manipulation.
 
-Si le service sélectionné ne possède pas de compte disponible pour la migration, un bouton `Commander des comptes`{.action} apparaîtra. Cliquez dessus, suivez les étapes de commande, puis patientez le temps que les comptes soient installés pour effectuer de nouveau la manipulation.
+Si vous ne possédez pas de compte « libre », un bouton `Commander des comptes`{.action} apparaîtra. Suivez les étapes, puis patientez le temps que ceux-ci soient installés pour effectuer de nouveau la manipulation.
 
-A contrario, si vous possédez déjà un compte, ce dernier apparaîtra dans le récapitulatif en bas de la fenêtre. Celui-ci correspond toujours à un compte non paramétré sur le service choisi. Cliquez sur `Suivant`{.action} pour poursuivre la manipulation.
+Confirmez enfin le mot de passe de l'adresse e-mail source (celle que vous voulez migrer), puis cliquez sur `Migrer`{.action}. Cette manipulation sera à répéter autant de fois que nécessaire pour la migration d'autres comptes.
 
-![exchange](images/account_migration_step1.png){.thumbnail}
-
-La page suivante affiche un récapitulatif des informations renseignées. Nous vous invitons à vérifier ces dernières, puis à cliquer sur `Suivant`{.action}.
-
-![exchange](images/account_migration_step2.png){.thumbnail}
-
-Sur la page qui s'affiche ensuite, prenez quelques instants pour lire les informations affichées, renseigner le mot de passe de l'adresse e-mail source (celle que vous voulez migrer), puis cliquez sur `Confirmer`{.action}. Cette manipulation sera à répéter autant de fois que nécessaire pour la migration d'autres comptes.
-
-![exchange](images/account_migration_step3.png){.thumbnail}
+![exchange](images/account_migration_steps.png){.thumbnail}
 
 ### Étape 4 : vérifier ou modifier la configuration de votre domaine
 
-À cette étape, vos adresse e-mail doivent avoir été migrées et être déjà fonctionnelles. De plus, nous vous invitons à vous assurer que la configuration de votre domaine est correcte en consultant votre espace client.
+À cette étape, vos adresses e-mail doivent déjà être migrées et fonctionnelles. De plus, nous vous invitons à vous assurer que la configuration de votre domaine est correcte en consultant votre espace client.
 
-Pour cela, sélectionnez le service E-mail Pro ou Exchange concerné dans la barre de services à gauche, puis rendez-vous sur l'onglet `Domaines associés`{.action}. Dans le tableau qui s'affiche, la colonne "Diagnostic" vous permettra de voir si la configuration DNS est correcte. Une pastille rouge apparaîtra pour vous indiquer que la configuration doit être modifiée.
+Pour cela, sélectionnez le service E-mail Pro ou Exchange concerné dans la barre de services à gauche, puis rendez-vous sur l'onglet `Domaines associés`{.action}. Dans le tableau qui s'affiche, la colonne « Diagnostic » vous permettra de voir si la configuration DNS est correcte : une pastille rouge apparaît si la configuration doit être modifiée.
 
 > [!primary]
 >
-> Si vous venez juste de réaliser la migration ou si vous venez de modifier un enregistrement DNS de votre domaine, il se peut que l’affichage dans l’[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} se mette à jour sous quelques heures.
+> Si vous venez juste de réaliser la migration ou de modifier un enregistrement DNS de votre domaine, il se peut que l’affichage dans l’[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} nécessite quelques heures pour se mettre à jour.
 >
 
 Pour modifier la configuration, cliquez sur la pastille rouge et réalisez la manipulation demandée. Cette dernière nécessite un temps de propagation de 4 à 24 heures maximum avant d’être pleinement effective.
@@ -101,17 +91,15 @@ Pour modifier la configuration, cliquez sur la pastille rouge et réalisez la ma
 
 ### Étape 5 : utiliser vos adresses e-mail migrées
 
-Il ne vous reste plus qu’à utiliser vos adresses e-mail migrées. Pour cela, OVH met à disposition un applicatif en ligne (une WebApp). Ce dernier est accessible à l’adresse [https://mail.ovh.net/](https://mail.ovh.net/){.external} où vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
+Il ne vous reste plus qu’à utiliser vos adresses e-mail migrées. Pour cela, OVH met à disposition un applicatif en ligne (_web app_) accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous devez y renseigner les identifiants relatifs à votre adresse e-mail.
 
-Si vous aviez configuré l'un des comptes migrés sur un client de messagerie (comme Outlook), vous devrez de nouveau le configurer. Les informations de connexion au serveur OVH ont changé suite à la migration. Pour vous aider dans vos manipulations, consultez notre documentation depuis la section des guides consacrés à E-mail Pro : [https://docs.ovh.com/fr/emails-pro/](https://docs.ovh.com/fr/emails-pro/){.external} et celle dédiée à Hosted Exchange : [https://docs.ovh.com/fr/microsoft-collaborative-solutions/](https://docs.ovh.com/fr/microsoft-collaborative-solutions/){.external}. Si vous n'êtes pas en mesure de reconfigurer le compte dans l'immédiat, l'accès via l'applicatif en ligne est toujours possible.
+Si vous avez configuré l'un des comptes migrés sur un client de messagerie (comme Outlook), vous devez de nouveau le paramétrer. Les informations de connexion au serveur OVH ont changé suite à la migration. Pour vous aider dans vos manipulations, consultez notre documentation depuis les sections des guides consacrées à E-mail Pro ([https://docs.ovh.com/fr/emails-pro/](https://docs.ovh.com/fr/emails-pro/){.external}) et Hosted Exchange ([https://docs.ovh.com/fr/microsoft-collaborative-solutions/](https://docs.ovh.com/fr/microsoft-collaborative-solutions/){.external}). Si vous n'êtes pas en mesure de reconfigurer le compte dans l'immédiat, l'accès via l'applicatif en ligne est toujours possible.
 
 > [!primary]
 >
-> Vous avez également la possibilité de migrer manuellement des adresses e-mail vers OVH en utilisant notre outil [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external}. Pour cela, vous devrez être en possession des informations (utilisateur, mot de passe, serveurs) de l'e-mail source et de destination pour réaliser une migration via cet outil. 
+> Vous pouvez également migrer manuellement des adresses e-mail vers OVH en utilisant notre outil [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external}. Pour cela, vous devez être en possession des informations (utilisateur, mot de passe, serveurs) de l'e-mail source et de destination.
 >
 
 ## Aller plus loin
-
-[Utilisation de RoundCube](https://docs.ovh.com/fr/emails/utilisation-roundcube/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
