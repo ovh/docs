@@ -1,8 +1,8 @@
 ---
-title: Démarrez avec MySQL et MariaDB
+title: 'Démarrez avec MySQL et MariaDB'
 slug: demarrez-avec-mysql-et-mariadb
-excerpt: Utilisez vos bases de données
-section: Premiers pas
+excerpt: 'Utilisez vos bases de données'
+section: 'Premiers pas'
 ---
 
 Vous désirez utiliser MySQL ou MariaDB ? Découvrez comment créer et gérer vos bases de données en toute simplicité !
@@ -104,8 +104,7 @@ Vous êtes maintenant bien connecté à votre base de données :
 
 
 ### Connexion par phpMyAdmin
-*Bientôt disponible dans un autre guide.*
-
+Vous pouvez utiliser phpMyAdmin pour explorer le contenu de votre base de données. Pour cela, installez phpMyAdmin sur votre propre serveur ou hébergement web. Durant cette installation, veillez à bien paramétrer les informations de votre serveur CloudDB et de la base de données souhaitée afin que phpMyAdmin puisse s'y connecter.
 
 ## Exporter une base de donnees MySQL ou MariaDB
 
