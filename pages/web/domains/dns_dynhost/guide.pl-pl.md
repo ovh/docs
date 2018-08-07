@@ -1,144 +1,92 @@
 ---
-title: 'Hosting www: DynHost'
-excerpt: 'Hosting www: DynHost'
+title: 'Konfiguracja dynamicznego DNS dla domeny'
+excerpt: 'Dowiedz się, jak skonfigurować dynamiczny rekord DNS (DynHost) dla Twojej domeny'
 slug: hosting_www_dynhost
+section: 'DNS i strefa DNS'
+order: 6
 legacy_guide_number: g2024
 ---
 
+**Ostatnia aktualizacja dnia 2018-08-07**
 
-## Wymagania
+## Wprowadzenie
 
-- Domena zarejestrowana w OVH
-- Korzystanie z serwerów DNS OVH
+Strefa Domain Name System (DNS) to plik konfiguracyjny domeny. Zawiera on informacje techniczne nazywane rekordami. Konfiguracja dynamicznego rekordu DNS, np. w przypadku gdy hostujesz własny serwer i nie korzystasz ze stałego adresu IP, może okazać się niezbędna, gdyż pozwoli Ci uniknąć dłuższej przerwy w dostępności Twoich usług. 
 
+**Dowiedz się, jak skonfigurować dynamiczny rekord DNS (DynHost) dla Twojej domeny.**
 
+## Wymagania początkowe
 
+- Dostęp do interfejsu zarządzania domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Używanie przez domenę konfiguracji OVH (serwerów DNS OVH) 
+- Rekord DynHost nie może już istnieć w strefie DNS OVH Twojej domeny jako rekord „A”
 
-## Definicje
+> [!warning]
+>
+> - Jeśli Twoja domena nie używa serwerów DNS OVH, zwróć się do administratora zarządzającego jej konfiguracją, aby dowiedzieć się, jakie kroki powinieneś podjąć.
+> 
+> - Jeśli domena jest zarejestrowana w OVH, możesz sprawdzić, czy używa konfiguracji OVH. Po wybraniu domeny w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, przejdź do zakładki `Serwery DNS`{.action}.
+>
 
-- Adres IP
+## W praktyce
 
-W Internecie komputery komunikują się ze sobą za pomocą protokołu TCP/IP, który identyfikuje każdą maszynę i każdy komputer na podstawie adresu: xxx.xxx.xxx.xxx.
+### Etap 1: utworzenie identyfikatora DynHost
 
+Pierwszy etap polega na utworzeniu identyfikatora DynHost. Dzięki temu będziesz mógł aktualizować dynamiczny rekord DNS, który chcesz utworzyć. Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią domenę. Teraz przejdź do zakładki `DynHost`{.action}.
 
-- DNS
+![dynhost](images/use-dynhost-step1.png){.thumbnail}
 
-Użytkownicy komunikują się za pomocą adresów IP. Adresy te są definiowane w nazwy stacji lub w prostsze adresy, czyli serwery DNS (Domain Name System).
+Kliknij przycisk `Zarządzaj dostępami`{.action}, a następnie kliknij `Utwórz identyfikator`{.action}. W oknie, które się wyświetla, wprowadź wymagane informacje:
 
+|Informacje|Opis|
+|---|---|
+|Sufiks identyfikatora|Określ sufiks dla identyfikatora DynHost, który aktualnie tworzysz.|
+|Subdomena|Podaj subdomenę związaną z tworzeniem dynamicznego rekordu DNS.|
+|Hasło|Określ hasło przypisane do identyfikatora DynHost, a następnie je zatwierdź.|
 
-## Do czego służy opcja DynHOST?
-Jeśli dysponujesz dostępem do Internetu, IP Twojego łącza może się zmieniać przy każdym połączeniu.
-Opcja DynHOST pozwala na wskazanie domeny lub subdomeny na IP łącza, a jeśli IP się zmieni, na dokonanie jego aktualizacji w czasie rzeczywstym za pomocą identyfikatora i hasła.
+Po uzupełnieniu pól kliknij przycisk `Zatwierdź`{.action}. Identyfikator pojawi się wówczas w tabeli figurującej na aktualnej stronie. Jeśli potrzebujesz dodatkowych loginów DynHost, powtórz ten etap tyle razy, ile to konieczne.
 
+![dynhost](images/use-dynhost-step2.png){.thumbnail}
 
-## Logowanie do panelu klienta
+### Etap 2: tworzenie dynamicznego rekordu DNS (DynHost)
 
-- Zaloguj się do [panelu klienta](https://www.ovh.com/manager/web) za pomocą identyfikatora klienta i hasła.
+Drugi etap polega na utworzeniu rekordu DNS, który będzie aktualizowany dynamicznie. Rekord DynHost nie może już istnieć w strefie DNS OVH Twojej domeny jako rekord „A”. Aby zweryfikować rekord, i w razie potrzeby go usunąć, zapoznaj się z informacjami zawartymi w przewodniku [Modyfikacja DNS OVH](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}.
 
-- Kliknij na "Login".
+Gdy jesteś gotowy, aby utworzyć rekord DynHost, przejdź ponownie na stronę główną w zakładce `DynHost`{.action}, a następnie kliknij przycisk `Dodaj wpis DynHost`{.action}. W oknie, które się wyświetla, wprowadź wymagane informacje:
 
+|Informacje|Opis|
+|---|---|
+|Subdomena|Wpisz subdomenę, której rekord DNS ma być aktualizowany dynamicznie. Subdomena ta ma odpowiadać subdomenie wskazanej podczas tworzenia identyfikatora DynHost.|
+|Docelowy adres IP |Podaj adres IP, który ma być aktualnie używany przez rekord DNS. Zgodnie z zasadą DynHost adres IP zostanie następnie zaktualizowany.|
 
+Po uzupełnieniu pól kliknij przycisk `Zatwierdź`{.action}. Rekord DynHost pojawi się wówczas w tabeli figurującej na aktualnej stronie. Jeśli potrzebujesz dodatkowych identyfikatorów DynHost, powtórz ten etap tyle razy, ile to konieczne.
 
-![](images/img_3443.jpg){.thumbnail}
+![dynhost](images/use-dynhost-step3.png){.thumbnail}
 
+### Etap 3: automatyzacja zmiany DynHost
 
-## Wybór domeny
+Po utworzeniu identyfikatora i rekordu ostatni etap polega na zautomatyzowaniu aktualizacji rekordu DNS, aby następowała ona dynamicznie. W tym celu konieczne jest użycie klienta, który będzie regularnie sprawdzał, czy docelowy adres IP zmienił się, i który będzie go aktualizował.
 
-- W menu z lewej strony wybierz "Domeny" i kliknij na "swoją domenę".
+> [!warning]
+>
+> Instalację i konfigurację klienta przeprowadź we własnym zakresie zgodnie z Twoją wiedzą. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. Jednak w przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego usługodawcy. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. 
+>
 
+Pamiętaj, że klient może być zainstalowany na Twoim serwerze lub komputerze albo może być już dostępny w interfejsie Twojego routera, jeśli router jest kompatybilny. Po wybraniu i zainstalowaniu klienta skonfiguruj go, używając informacji o utworzonym na wcześniejszym etapie użytkowniku DynHost.
 
+W zależności od używanego klienta, poza informacjami o identyfikatorze DynHost i o danej subdomenie, może być również wymagany adres URL aktualizacji. W takim przypadku użyj podanego poniżej adresu URL i zastąp w nim informacje ogólne:
 
-![](images/img_3444.jpg){.thumbnail}
+http://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
 
+|Informacje|Czym należy zastąpić|
+|---|---|
+|$HOSTNAME|Subdomena, której dotyczy modyfikacja.|
+|$IP|Nowy docelowy adres IP.|
 
-## Zarządzanie dostępami
+Możesz sprawdzić, czy docelowy adres IP został zaktualizowany w Panelu klienta, w zakładce `DynHost`{.action}. Sprawdź adres IP, który wyświetla się w kolumnie `Docelowy adres IP`{.action}.
 
-- Kliknij na zakładkę DynHost i na "Zarządzanie dostępami".
+![dynhost](images/use-dynhost-step4.png){.thumbnail}
 
+## Sprawdź również
 
-
-![](images/img_3458.jpg){.thumbnail}
-
-- Kliknij na "Utwórz identyfikator klienta".
-
-
-
-![](images/img_3459.jpg){.thumbnail}
-
-- Wpisz wymagane informacje:
-
-- Identyfikator
-- Subdomena
-- Hasło
-
-- Kliknij na "Zatwierdź".
-
-
-
-![](images/img_3461.jpg){.thumbnail}
-Następnie będziesz mógł sprawdzić utworzone konto oraz przypisaną subdomenę.
-
-- Kliknij na przycisk powrót.
-
-
-
-![](images/img_3463.jpg){.thumbnail}
-
-
-## Tworzenie DynHosta
-
-- Kliknij na "Dodaj DynHost".
-
-
-
-![](images/img_3464.jpg){.thumbnail}
-Wskaż tutaj:
-
-- Subdomenę, na której chcesz uruchomić opcję DynHost.
-- Aktualny docelowy adres IP
-- Kliknij na "Zatwierdź".
-
-
-
-![](images/img_3465.jpg){.thumbnail}
-Uwaga:
-
-- Tworzenie tego pola trwa 24 godziny.
-
-
-
-- Następnie będziesz mógł sprawdzić, czy DynHost został prawidłowo utworzony.
-
-
-
-![](images/img_3470.jpg){.thumbnail}
-Uwaga:
-
-- Wpis A w strefie DNS jest dodawany automatycznie. Nie trzeba go dodawać ręcznie.
-
-
-
-
-## Bali Dynamic DNS (darmowe)
-
-- W Bali Dynamic DNS wypełnij pola oznaczone na zielono i kliknij na "Update IP in database if necessary".
-
-
-
-![](images/img_3477.jpg){.thumbnail}
-
-- Pojawi się status "IP changed", co oznacza, że adres IP został zaktualizowany.
-
-
-
-![](images/img_3478.jpg){.thumbnail}
-
-
-## Direct Update (Shareware)
-
-- W Direct Update wystarczy wypełnić pola oznaczone na zielono i odznaczyć pole "Wyłącz/zignoruj to konto".
-
-
-
-![](images/img_3480.jpg){.thumbnail}
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
