@@ -1,104 +1,77 @@
 ---
-title: 'Exchange: configurazione di Android'
-excerpt: ''
+title: 'Configurare un account Exchange su Android tramite l’applicazione Gmail'
+excerpt: 'Scopri come configurare un account Exchange su Android tramite l’applicazione Gmail'
 slug: exchange_configurazione_di_android
 legacy_guide_number: g1282
+section: 'Configurazione smartphone/tablet compatibile Exchange'
 ---
 
+**Ultimo aggiornamento: 08/08/2018**
 
-## Parte 1: email
-Clicca sull'icona Email.
+## Obiettivo
 
-Nel nostro caso, l'account Exchange è di tipo Hosted, configurato su un Samsung Tab su Android 4.1.2
+Gli account Exchange possono essere configurati su client di posta compatibili, per permetterti di utilizzare il tuo account email dal dispositivo che preferisci. 
 
-Quando aggiungi un account, verifica che la connessione 3G o Wi-Fi sia attiva.
-
-![](images/img_1149.jpg){.thumbnail}
+**Scopri come configurare un account Exchange su Android tramite l’applicazione Gmail.**
 
 
-## Parte 2: configurazione di account email
-Inserisci il tuo indirizzo emailì Exchange completo e la password definita nel tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login.html) per l'account Exchange.
+## Prerequisiti
 
-Clicca su Configurazione manuale per continuare.
+- Disporre di un’offerta [Exchange](https://www.ovh.it/emails/){.external}
+- Aver installato l’applicazione Gmail sul proprio dispositivo. Puoi scaricare quest’ultima da Google Play Store.
+- Disporre delle credenziali associate all’account email da configurare
 
-![](images/img_1150.jpg){.thumbnail}
-
-
-## Parte 3: tipo di account email
-Seleziona Microsoft Exchange ActiveSync per proseguire nella configurazione dell'account Exchange.
-
-![](images/img_1151.jpg){.thumbnail}
+> [!primary]
+>
+> Questa guida è stata realizzata da un dispositivo Nexus 6 utilizzando la versione 7.1.1 di Android. Per una questione di uniformità, utilizziamo l’applicazione Gmail scaricabile da Play Store. Se desideri utilizzare un’altra applicazione, dovrai seguire un’altra procedura. 
+>
 
 
-## Parte 4: impostazioni del server Exchange
-Per gli ordini effettuati dal 26/04/2016, per il server Exchange per un'offerta Hosted è: ex2.mail.ovh.net.
-Inserisci le informazioni del tuo account email Exchange.
+## Procedura
 
-Dominio\username: non inserire il dominio, inserisci un backslash (\) e il tuo indirizzo email completo.
+### Step 1: aggiungi il tuo account
 
-Password: password definita nel tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login.html).
+Sulla schermata Home del tuo dispositivo clicca sull’applicazione `Gmail`{.action}. L’account si può aggiungere in due diversi modi:
 
-Server Exchange: il server del tuo account Exchange.
-Nel nostro caso, per un'offerta Hosted, si tratta di ex.mail.ovh.net.
-Per un'offerta Private, inserisci il nome del server che hai scelto al momento dell'installazione.
+- **Nel caso in cui non sia stato impostato nessun account**: dopo la schermata di benvenuto clicca su `Aggiungi un indirizzo e-mail`{.action}. Quindi seleziona `Exchange e Office 365`{.action}; 
 
-Utilizza una connessione sicura (SSL): seleziona questa opzione.
+- **Nel caso in cui sia già stato impostato un account**: clicca sull’icona con i tre puntini in alto a sinistra e poi su quella a forma di freccia che trovi a destra del nome dell’account già impostato. Quindi clicca su `Aggiungi un account`{.action} e seleziona `Exchange e Office 365`{.action}. 
 
-Accetta tutti i certificati SSL: seleziona questa opzione.
+![exchange](images/configuration-exchange-gmail-application-android-step1.png){.thumbnail}
 
-Clicca su Avanti per continuare.
+Inserisci il tuo indirizzo e-mail e clicca su `Avanti`{.action}.
 
-![](images/img_1152.jpg){.thumbnail}
+A questo punto indica la password del tuo indirizzo e-mail, non spuntare “Usa certificato del client” e clicca su `Avanti`{.action} per continuare. Per configurare il tuo account puoi connetterti al server OVH. In questo caso, sullo schermo del tuo dispositivo vedrai apparire un avviso: clicca quindi su `OK`{.action} per avviare la connessione.
 
+Imposta i parametri del server in entrata. Alcuni campi possono essere pre-compilati. 
 
-## Parte 5: attivazione
-Ti appare un messaggio con la normativa sulla Privacy, conferma cliccando "OK".
+|Informazione|Descrizione| 
+|---|---| 
+|Dominio/Nome utente|Inserisci l’indirizzo email completo.|  
+|Password|Digita la password associata all’account.|
+|Certificato del client|Non spuntare questa casella.|
+|Server|Seleziona il server che ospita il tuo servizio Exchange. Puoi ritrovarlo sul tuo spazio clienti OVH nel menù a tendina `Informazioni generali`{.action} del servizio Exchange interessato, e in seguito sotto la voce `Connessione`{.action}.|
+|Porta|Indica la porta 443.|  
+|Tipo di sicurezza|Seleziona «SSL/TLS».|
 
-![](images/img_1154.jpg){.thumbnail}
+Clicca su `Avanti`{.action}. Se le informazioni inserite sono corrette, l’accesso all’account andrà a buon fine.
 
+![exchange](images/configuration-exchange-gmail-application-android-step2.png){.thumbnail}
 
-## Parte 6: amministrazione di sicurezza
-Ti appare un messaggio che richiede di confermare il controllo della periferica da remoto.
+Per terminare la configurazione, devi autorizzare il server OVH a verificare alcune funzionalità inerenti la sicurezza del tuo dispositivo. Clicca su `OK`{.action}, assicurati di aver letto le informazioni che appaiono sulla finestra di dialogo e clicca su `Attivare l’amministratore del dispositivo`{.action}.
 
-Conferma cliccando "OK".
+Rinomina il tuo account in modo da riconoscerlo tra quelli elencati nell’applicazione. Clicca su `Avanti`{.action}.
 
-![](images/img_1155.jpg){.thumbnail}
+Invia un’email di test per verificare la corretta configurazione dell’account.
 
+### Step 2: utilizza il tuo account
 
-## Parte 7: opzioni dell'account
-Definisci alcune opzioni di configurazione per il tuo indirizzo Exchange.
+Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-A modifica completata, clicca su "Avanti" per continuare.
+OVH propone un’applicazione Web con [funzionalità collaborative](https://www.ovh.it/emails/){.external}, disponibile alla pagina [https://pro1.mail.ovh.net](https://www.ovh.it/mail/){.external} e accessibile con le credenziali del tuo account.
 
-![](images/img_1156.jpg){.thumbnail}
+## Per saperne di più
 
+[Configurare un indirizzo e-mail compreso nell’offerta MX Plan o in un’offerta di hosting web su Android tramite l’applicazione Gmail](https://docs.ovh.com/gb/en/emails/configuration-android/){.external}.
 
-## Parte 8: amministratore del dispositivo
-Definiamo i diritti da attribuire all'interfaccia dell'applicazione "Email" di Android.
-
-Continua cliccando su "Attiva".
-
-![](images/img_1157.jpg){.thumbnail}
-
-
-## Parte 9: finalizzazione
-Puoi rinominare il tuo account di posta.
-
-Per completare l'installazione del tuo account Exchange, clicca su "OK".
-
-![](images/img_1158.jpg){.thumbnail}
-
-
-## Interfaccia email
-Questa è l'interfaccia email che puoi utilizzare. 
-
-Clicca sull'icona in alto a destra per accedere alle impostazioni del tuo account Exchange.
-
-![](images/img_1159.jpg){.thumbnail}
-
-
-## Interfaccia di configurazione email
-Questa è l'interfaccia che puoi utilizzare.
-
-![](images/img_1160.jpg){.thumbnail}
-
+Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/en/](https://www.ovh.it/community/en/){.external}.
