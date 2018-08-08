@@ -1,7 +1,7 @@
 ---
-title: Installer son site avec les modules en 1 clic
+title: 'Installer son site avec les modules en 1 clic'
 slug: modules-en-1-clic
-excerpt: Découvrez comment installer votre site via nos modules en 1 clic
+excerpt: 'Découvrez comment installer votre site via nos modules en 1 clic'
 section: CMS
 order: 1
 ---
@@ -18,7 +18,7 @@ Les modules en 1 clic permettent l'installation facile et rapide d'un site Inter
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovh.com/fr/hebergement-web/).
+- Disposer d'une offre d'[hébergement web](https://www.ovh.com/fr/hebergement-web/) compatible.
 - Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager).
 - Ne pas avoir téléchargé de fichiers dans le répertoire où sera installé votre module.
 - Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site internet doit être déclaré en tant que multisite.
