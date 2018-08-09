@@ -1,102 +1,74 @@
 ---
-title: DNS-alueen luominen ulkopuoliselle verkkotunnukselle
-excerpt: DNS-alueen luominen ulkopuoliselle verkkotunnukselle
-slug: dns-alueen_luominen_ulkopuoliselle_verkkotunnukselle
-legacy_guide_number: g2229
+title: 'OVH:n DNS-alueen luominen verkkotunnukselle'
+slug: dns_alueen_luominen_ulkopuoliselle_verkkotunnukselle
+excerpt: 'Opi luomaan DNS-alue verkkotunnuksellesi hallintapaneelisi kautta OVH:lla'
+section: 'DNS ja DNS-alue'
+order: 2
 ---
 
+**Päivitetty 9.8.2018**
+
+## Tavoite
+
+Verkkotunnuksen Domain Name System (DNS) -alue muodostaa sen konfigurointitiedoston. Se koostuu teknisistä tiedoista, joita kutsutaan tietueiksi. Perinteisessä käytössä näillä tietueilla voidaan yhdistää verkkotunnuksesi ja palvelin tai palvelimet, jotka ylläpitävät verkkosivuasi ja sähköpostiosoitteitasi.
+
+On erilaisia syitä, joiden vuoksi saatat joutua luomaan DNS-alueen verkkotunnuksellesi OVH:lla.
+
+**Opi luomaan DNS-alue verkkotunnuksellesi hallintapaneelisi kautta OVH:lla.**
 
 ## Edellytykset
-Voidaksesi luoda DNS-alueen ulkopuoliselle verkkotunnukselle varmista että seuraavat edellytykset täyttyvät:
 
+- Sinulla on verkkotunnus.
+- Kyseisellä verkkotunnuksella ei ole ennestään OVH:n DNS-aluetta eikä sillä ole meneillään toimenpidettä tai tilausta OVH:lla.
+- Verkkotunnuksen tekninen konfigurointi on oikein (tila, SOA jne.).
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-- Yhtään toimenpidettä tai tilausta ei ole käynnissä kyseisellä verkkotunnuksella OVH:lla
-- Verkkotunnus on olemassa
-- Verkkotunnuksen SOA on käynnistetty oikein DNS-alueella
+## Käytännössä
 
+### 1\. vaihe: DNS-alueen luominen hallintapaneelissa
 
+Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa `Tilaa`{.action} vasemman reunan valikossa ja sitten `DNS-alue`{.action}.
 
+Syötä näkyviin tulevalle sivulle verkkotunnus, jolle haluat luoda DNS-alueen. Odota hetki, että työkalu suorittaa verkkotunnusta koskevat tarkistukset.
 
-## 1. Vaihe: Verkkotunnuksen tarkistus
+Jos näkyviin ilmestyvä viesti ilmoittaa, ettei DNS-aluetta voida luoda, tarkista, että verkkotunnus noudattaa vaadittuja ennakkoedellytyksiä tai pyydä verkkotunnusta hallinnoivaa henkilöä tekemään tämä tarkistus. Kun kaikki on oikein, yritä menettelyä uudestaan.
 
-- Klikkaa asiakastunnuksesi verkkotunnusosiossa "Lisää DNS-alue".
+![dnszonecreate](images/dns-zone-create-step1.png){.thumbnail}
 
+Kun tarkastus on tehty, sinun on valittava aktivoitko vähimmäistietueet DNS-alueelle, jota olet luomassa. Valinta ei ole lopullinen, sillä voit muokata tietueita DNS-alueen luomisen jälkeen.
 
+|Aktivoitko vähimmäistietueet?|Yksityiskohdat|
+|---|---|
+|Kyllä|Valitse tämä, jos haluat jatkossa personoida DNS-aluetta itse.|
+|Ei|Valitse tämä, jos tarkoituksesi on käyttää OVH:n palveluja kuten [webhotellia](https://www.ovh-hosting.fi/webhotelli/){.external}, joissa alue on esikonfiguroitu.|
 
-![](images/img_4295.jpg){.thumbnail}
+![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 
-- Kohdassa "Verkkotunnuksen nimi" ilmoita verkkotunnus jolle haluat luoda DNS-alueen.
+Kun olet tehnyt valintasi, seuraa vaiheita DNS-alueen luomiseen saakka.
 
+### 2\. vaihe: DNS-alueen muokkaus (valinnainen)
 
+Kun verkkotunnuksesi DNS-alue on luotu, voit muokata sitä. Tämä toimenpide on valinnainen, mutta se voi olla välttämätön, jos haluat varmistua verkkotunnukseen liitettyjen palveluidesi (kuten verkkosivujen ja sähköpostiosoitteiden) käytettävyydestä.
 
-![](images/img_4296.jpg){.thumbnail}
+Jos haluat muokata DNS-aluetta [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Verkkotunnukset`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva verkkotunnus. Mene lopuksi välilehdelle `DNS-alue`{.action}.
 
-## Huomio:
+> \[!primary]
+>
+> Jos olet juuri luonut DNS-alueen eikä verkkotunnustasi näy vielä `Verkkotunnusten`{.action} palvelulistassasi, odota hetki ja lataa sitten sivu uudelleen.
+>
 
-- Mikäli ilmoitettu verkkotunus ei täytä vaatimuksia, ei DNS-alueen luominen ole mahdollista.
+Tee tämän jälkeen tarvittavat toimenpiteet. Voit lukea lisää DNS-alueen muokkauksesta dokumentaatiostamme [“OVH:n DNS-alueen muokkaus”](https://docs.ovh.com/fi/domains/miten_dns-aluetta_muokataan/){.external}. Kun verkkotunnuksesi OVH:n DNS-aluetta on muokattu, tarvitaan enintään 4-24 tuntia kestävä propagaatioaika, jotta muutokset astuvat voimaan.
 
+### 3\. vaihe: OVH:n verkkotunnuksen nimipalvelinten muokkaus
 
+Kun DNS-alue OVH:lla on valmis käytettäväksi, sinun on liitettävä siihen verkkotunnuksesi. Hae sitä varten etukäteen verkkotunnustasi varten aktivoidut nimipalvelimet hallintapaneelista. Nämä näkyvät kohdan `Name Servers`{.action} alla.
 
-![](images/img_4297.jpg){.thumbnail}
+![dnszonecreate](images/dns-zone-create-step3.png){.thumbnail}
 
-## Vinkki:
-Mikäli sinulla on verkkotunnus, jolle ei ole osoitettu yhtään nimipalvelinta, OVH antaa käytettäväksi tilapäisiä nimipalvelimia jotta voit lisätä * DNS-alueen:
+Kun sinulla on verkkotunnuksesi nimipalvelimet, **muokkaa nimipalvelimia verkkotunnustasi hallinnoivan palveluntarjoajan käyttöliittymässä.** Kun toimenpide on tehty, tarvitaan enintään 48 tunnin propagaatioaika ennen kuin muutos on astunut voimaan.
 
-- parking1.ovh.net
-- parking2.ovh.net
+## Lue lisää aiheesta
 
-(*) Nimipalvelinten propagaatiossa on mahdollisesti 48 tunnin viive.
+[Miten DNS-aluetta muokataan?](https://docs.ovh.com/fi/domains/miten_dns-aluetta_muokataan/){.external}
 
-
-
-## 2. Vaihe: Alueen tyypin valinta
-Valitse seuraavaksi DNS-alueen tyyppi:
-
-
-- Minimaalinen: DNS-alue minimaalisilla toimintaan tarvittavilla elementeillä (A,MX,CNAME,...)
-- Normaali: DNS-alue ylimääräisillä elementeillä (CNAME kohti POP/IMAP/SMTP -palvelinta,...)
-
-
-
-![](images/img_4298.jpg){.thumbnail}
-
-
-## 3. Vaihe: Vahvistus
-
-- Ruksaa laatikko "Olen lukenut ja hyväksynyt käyttöehdot"
-- Klikkaa sitten "Luo tilausvahvistus".
-
-
-
-![](images/img_4299.jpg){.thumbnail}
-
-- Klikkaa sitten "Maksa".
-
-
-
-![](images/img_4300.jpg){.thumbnail}
-
-- Kun olet oikeassa tilausvahvistuksessa, klikkaa "Jatka".
-
-
-
-![](images/img_4301.jpg){.thumbnail}
-
-## Tietoa:
-DNS-alueen luominen on täysin maksutonta.
-
-- Ilmoita turvakoodi ja vahvista.
-
-
-
-![](images/img_4302.jpg){.thumbnail}
-
-
-## 4. Vaihe: Tilauksen vahvistaminen
-Voit seuraavaksi tarkistaa, että tilausvahvistuksesi vahvistaminen onnistui.
-
-![](images/img_4303.jpg){.thumbnail}
-
-## Tietoa:
-Tilauksen vahvistamisen jälkeen asennuksessa on mahdollinen 30 minuutin viive.
-
+Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en/>.
