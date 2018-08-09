@@ -25,7 +25,7 @@ On erilaisia syitä, joiden vuoksi saatat joutua luomaan DNS-alueen verkkotunnuk
 
 ## Käytännössä
 
-### 1\. vaihe: DNS-alueen luominen hallintapaneelissa
+### 1. vaihe: DNS-alueen luominen hallintapaneelissa
 
 Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa `Tilaa`{.action} vasemman reunan valikossa ja sitten `DNS-alue`{.action}.
 
@@ -46,20 +46,20 @@ Kun tarkastus on tehty, sinun on valittava aktivoitko vähimmäistietueet DNS-al
 
 Kun olet tehnyt valintasi, seuraa vaiheita DNS-alueen luomiseen saakka.
 
-### 2\. vaihe: DNS-alueen muokkaus (valinnainen)
+### 2. vaihe: DNS-alueen muokkaus (valinnainen)
 
 Kun verkkotunnuksesi DNS-alue on luotu, voit muokata sitä. Tämä toimenpide on valinnainen, mutta se voi olla välttämätön, jos haluat varmistua verkkotunnukseen liitettyjen palveluidesi (kuten verkkosivujen ja sähköpostiosoitteiden) käytettävyydestä.
 
 Jos haluat muokata DNS-aluetta [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Verkkotunnukset`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva verkkotunnus. Mene lopuksi välilehdelle `DNS-alue`{.action}.
 
-> \[!primary]
+> [!primary]
 >
 > Jos olet juuri luonut DNS-alueen eikä verkkotunnustasi näy vielä `Verkkotunnusten`{.action} palvelulistassasi, odota hetki ja lataa sitten sivu uudelleen.
 >
 
 Tee tämän jälkeen tarvittavat toimenpiteet. Voit lukea lisää DNS-alueen muokkauksesta dokumentaatiostamme [“OVH:n DNS-alueen muokkaus”](https://docs.ovh.com/fi/domains/miten_dns-aluetta_muokataan/){.external}. Kun verkkotunnuksesi OVH:n DNS-aluetta on muokattu, tarvitaan enintään 4-24 tuntia kestävä propagaatioaika, jotta muutokset astuvat voimaan.
 
-### 3\. vaihe: OVH:n verkkotunnuksen nimipalvelinten muokkaus
+### 3. vaihe: OVH:n verkkotunnuksen nimipalvelinten muokkaus
 
 Kun DNS-alue OVH:lla on valmis käytettäväksi, sinun on liitettävä siihen verkkotunnuksesi. Hae sitä varten etukäteen verkkotunnustasi varten aktivoidut nimipalvelimet hallintapaneelista. Nämä näkyvät kohdan `Name Servers`{.action} alla.
 
