@@ -17,6 +17,15 @@ Si vous utilisez un `Frontend`{.action} HTTP, nous vous recommandons le guide []
 Si vous utilisez un `Frontend`{.action} TCP, alors ce guide est pour vous.
 
 
+## Obligations légales
+Vous pouvez être tenus de conserver des logs et certaines données relatives au trafic en vertu des lois et règlementations vous étant applicables. Il vous incombe de respecter ces obligations.
+
+__A titre d’exemple :__
+
+* [L’article L34-1 du Code des postes et des communications électroniques](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006070987&idArticle=LEGIARTI000006465770&dateTexte=&categorieLien=cid) ainsi que le [décret n°2006-358 du 24 mars 2006 relatif à la conservation des données des communications électroniques](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000637071&dateTexte=20180110) imposent notamment à toute personne physique ou morale fournissant au public un service de communications électroniques de conserver des données d'identification des personnes utilisatrices des services fournis, etc. ;
+* La [loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique](https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=JORFARTI000002457442&cidTexte=JORFTEXT000000801164) et le [décret n° 2011-219 du 25 février 2011](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000023646013&categorieLien=id) imposent notamment aux personnes dont l’activité est d’offrir un accès à des services de communication au public en ligne de conserver pour chaque connexion les données relatives à l’identifiant de la connexion, les dates et heure de début et de fin de la connexion, etc.
+
+
 ## Prérequis
 Ce guide est un guide avancé. Il fait l'hypothèse que vous vous êtes déjà familiarisé avec les fonctionnalités principales de votre service OVH Load Balancer, en particulier, les `Frontend`{.action} et les `Fermes`{.action}. Si ce n'est pas encore le cas, nous vous recommandons de vister le guide [](../create_http_httpsguide.fr-fr.md){.ref}. Ce guide est plus particulièrement orienté sur les services HTTP mais les principes généraux sont les mêmes.
 
