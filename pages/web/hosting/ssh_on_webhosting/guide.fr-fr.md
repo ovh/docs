@@ -31,18 +31,13 @@ SSH vous permet de vous connecter à votre hébergement et d'en manipuler les fi
 ### Activer / Desactiver le SSH pour un utilisateur
 Vous pouvez gérer vos logins SSH dans votre espace client. Il suffit pour cela de cliquer sur le nom de votre hébergement dans la colonne de gauche, puis de vous rendre dans l'onglet "FTP - SSH".
 
-Lorsque vous créez un nouvel utilisateur FTP, cela lui active la connexion SSH, par défaut.
+Vous pouvez activer ou désactiver la connexion SSH d'un utilisateur en cliquant sur la roue dentée à droite de son login puis sur "Modifier".
 
+![hosting](images/3945-2.png){.thumbnail}
 
-![hosting](images/3945.png){.thumbnail}
+Dans la fenêtre qui apparaît, à côté de **Connexion SSH**, sélectionnez "Activé" ou "Désactivé" puis validez la modification.
 
-Vous pouvez désactiver la connexion SSH d'un utilisateur en cliquant sur la roue dentée à droite de son login puis sur "Modifier".
-
-*Cette modification sera effective sous quelques minutes.*
-
-
-![hosting](images/3946.png){.thumbnail}
-
+![hosting](images/3946-2.png){.thumbnail}
 
 ## Comment se connecter à votre hébergement en SSH ?
 
@@ -51,37 +46,29 @@ Vous pouvez désactiver la connexion SSH d'un utilisateur en cliquant sur la rou
 > Des connaissances plus avancées sont nécessaires pour utiliser ce type d’accès. Quelques informations sur comment procéder sont présentes ci-dessous mais elles ne peuvent se substituer à l’aide d’un webmaster. Nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
 >
 
-### L'invite de commande
-Sous Linux :
+Pour vous connecter en SSH à votre hébergement, vous allez devoir utiliser un invite de commande. Selon le système d'exploitation de votre machine (Windows, macOS, Linux), un invite de commande peut être déjà installé sur cette dernière.
 
-- Sous KDE : Ouvez le menu principal (par défaut en bas à gauche de votre écran), puis dans la barre de recherche qui apparait, tapez "konsole", puis cliquez sur le premier résultat de la recherche.
-- Cliquez sur le disque dur sur votre bureau, ensuite cliquez sur le répertoire applications, puis sur le répertoire utilitaire et enfin sur l'application "Terminal"
+Si ce n'est pas le cas, vous allez devoir en installer un de votre côté. Si votre système d'exploitation est Windows, reportez-vous aux instructions décrites dans notre documentation « [Utilisation de Putty sur Windows](https://docs.ovh.com/fr/hosting/utilisation-putty-windows/){.external} ». Pour les autres systèmes, l'invite de commande se nomme généralement « Terminal ».
 
+Une fois que vous êtes prêt, connectez-vous à votre espace de stockage en SSH. Pour cela, utiliser la commande :
 
+```sh
+ssh ftpuser@ftpserver
+```
+
+Prenez soin de remplacer les informations génériques présentes dans ce script par les informations correspondantes à votre accès.
+
+|Informations|À remplacer par|
+|---|---|
+|ftpuser|L'utilisateur FTP avec lequel vous souhaitez vous connecter. Celui-ci doit bien bénéficier d'un accès SSH activé.|
+|ftpserver|L'adresse du serveur FTP.|
+
+Renseignez par la suite le mot de passe relatif à l'identifiant FTP. Si les informations sont correctes, la connexion à votre espace de stockage en SSH s'effectue.
 
 > [!primary]
 >
-> - Si vous n'avez pas de client SSH natif, il faut donc en télécharger un
-> (Windows 10 inclut dorénavant un client SSH natif).
-> 
-> Par exemple, Putty, à télécharger ici.
-> 
-
-
-### La connexion à votre hébergement en SSH
-
-#### Sous Linux et Mac
-Pour vous connecter à votre hébergement en SSH, ouvrez votre invite de commande, comme indiqué ci-dessus.
-
-Comme dans l'exemple ci-dessous, renseignez vos identifiants SSH (FTP). Pour plus de renseignement sur ces identifiants, [consultez ce guide](../guide.fr-fr.md){.ref} .
-
-
-![hosting](images/3093.png){.thumbnail}
-
-
-#### Sous Windows
-Pour Windows, le mieux est de suivre ce guide sur [Putty]({legacy}1964){.ref} .
-
+> Les connexions sortantes en SSH sont filtrées sur l'infrastructure de nos hébergements web. Cependant, certaines plateformes populaires permettant de gérer vos codes ne sont pas concernées par ce filtrage et sont par conséquent accessibles.
+>
 
 ## Utilisation du SSH
 
