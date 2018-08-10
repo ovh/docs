@@ -1,30 +1,52 @@
 ---
-title: Suppression data-store
+title: 'Supprimer un datastore'
 slug: suppression-data-store
+excerpt: 'Découvrez comment supprimer un datastore de votre Private Cloud'
 legacy_guide_number: '7766789'
-section: Fonctionnalités OVH
+section: 'Fonctionnalités OVH'
 ---
 
+**Dernière mise à jour le 10/08/2018**
 
-Attention il n'est pas possible de supprimer les **deux data-stores 300 Go** inclus dans votre pack. Pour des raisons de sécurité, la demande suppression échouera si vous avez des machines virtuelles présentes sur le data-store concerné.
+## Objectif
 
-Sélection
----------
+Dans certains cas il peut être utile de supprimer un datastore de votre cluster, par exemple pour le remplacer ou le faire évoluer vers une taille supérieure.
 
-Afin de supprimer un datastore, la première étape consiste à faite un "clic droit" sur le datastore en questions puis sélectionner "OVH Dedicated Cloud" puis "Remove storage"
+**Ce guide vous explique comment retirer en toute sécurité un datastore de votre infrastructure.**
 
-![](images/datastore1.png){.thumbnail}
 
-Validation
-----------
+## Prérequis
 
-Afin de valider la suppression du datastore il est nécessaire de cliquer sur le bouton "Next"
+* Posséder une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
+* Accéder à l’interface de gestion vSphere.
 
-![](images/datastore2.png){.thumbnail}
 
-Suivi de la tache
------------------
+## En pratique
 
-Vous pouvez surveiller la progression de la suppression du datastore via les taches récentes.
+> [!warning]
+>
+> Attention, il n'est pas possible de supprimer les **deux datastores de 300 Go ou 1,2 To** inclus dans votre pack. Pour des raisons de sécurité, la demande de suppression échouera également si vous avez des machines virtuelles (VM) présentes sur le datastore concerné (vous trouverez la liste dans la fenêtre de validation).
+> 
 
-![](images/datastore3.png){.thumbnail}
+
+Pour supprimer un datastore, la première étape consiste à effectuer un clic droit sur la ressource concernée. Sélectionnez `OVH Private Cloud`{.action}, puis `Remove storage`{.action}.
+
+![Choix du datastore](images/removestorage_01.png){.thumbnail}
+
+Une fenêtre de confirmation s'ouvre. Validez alors avec `Next`{.action}.
+
+![Confirmation de la suppression](images/removestorage_02.png){.thumbnail}
+
+La demande de suppression est dès lors prise en compte.
+
+![Suppression validée](images/removestorage_03.png){.thumbnail}
+
+
+Il est possible de surveiller la progression de la suppression du datastore via les tâches récentes.
+
+![Tâche de suivi de la suppression](images/removedatastore.png){.thumbnail}
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
