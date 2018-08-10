@@ -5,7 +5,7 @@ excerpt: 'Apprenez à restaurer un fichier ou l''intégralité de l''espace de s
 section: 'FTP et SSH'
 ---
 
-**Dernière mise à jour le 26/07/2018**
+**Dernière mise à jour le 10/08/2018**
 
 ## Objectif
 
@@ -101,7 +101,7 @@ Vous pouvez retrouver ces informations dans l'onglet `FTP - SSH`{.action} de vot
 Vous devrez compléter votre nom d'utilisateur (ou « login ») FTP principal d'un suffixe déterminant la sauvegarde à laquelle vous vous connecterez. Aidez-vous des indications ci-dessous pour savoir comment accéder à la sauvegarde souhaitée :
 
 |Date de la sauvegarde|Suffixe à ajouter|Exemple de nom d'utilisateur complété|
-|---|---|
+|---|---|---|
 |Le jour même, à 00 h 01 du matin.|-snap0|utilisateurftp**-snap0**|
 |La veille, à 00 h 01 du matin.|-snap1|utilisateurftp**-snap1**|
 |L’avant-veille, à 00 h 01 du matin.|-snap2|utilisateurftp**-snap2**|
