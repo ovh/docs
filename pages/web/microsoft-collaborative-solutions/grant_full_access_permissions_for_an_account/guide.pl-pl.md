@@ -1,61 +1,140 @@
 ---
-title: 'Exchange 2013: Przyznanie uprawnień "Full Access"'
-excerpt: ''
+title: 'Delegowanie uprawnień do konta Exchange'
+excerpt: 'Dowiedz się, jak zezwolić innym osobom na zarządzanie skrzynką Exchange'
 slug: exchange_2013_przyznanie_uprawnien_full_access
+section: 'Funkcjonalności i współdzielenie Exchange'
 legacy_guide_number: g1249
 ---
 
+**Ostatnia aktualizacja z dnia 2018-08-13**
 
-## Aktywacja uprawnień Full Access - część 1:
-Operację tą można wykonać z poziomu panelu [Manager](https://www.ovh.com/manager/web/login.html).
+## Wprowadzenie
 
-Po zalogowaniu wybierz usługę Exchange. 
+Usługa Exchange umożliwia korzystanie z profesjonalnych kont e-mail, które ułatwiają pracę zespołową dzięki kilku funkcjonalnościom. Jedna z nich pozwala na oddelegowanie określonych praw, takich jak prawo dostępu czy do wysyłania poczty, dla różnych kont Exchange.
 
-W zakładce Konto e-mail kliknij na ikonę składającą się z trzech kropek.
+**Dowiedz się, jak przydzielać uprawnienia do konta Exchange.**
 
-Następnie wybierz "Zarządzaj delegacjami".
+## Wymagania początkowe
 
-![](images/img_1025.jpg){.thumbnail}
+- Wykupienie usługi [Exchange](https://www.ovh.pl/emaile/){.external}
+- Posiadanie co najmniej dwóch aktywnych kont Exchange skonfigurowanych na tej samej platformie Exchange OVH
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager)
+- Posiadanie danych dostępowych do konta Exchange, dla którego przydzielone zostaną nowe prawa
 
+## W praktyce
 
-## Aktywacja uprawnień Full Access - część 2:
-Pojawi się nowy interfejs.
+Zanim rozpoczniesz operację, określ prawo lub prawa, które chcesz przydzielić. Pamiętaj, że kiedy nadajesz uprawnienia, przydzielasz jednemu lub kilku kontom Exchange dodatkowe prawa do wybranej skrzynki Exchange.
 
-Możesz wybrać uprawnienia "Full Access" oraz "uprawnienie do wysyłki" dla wskazanego konta.
+|Uprawnienia|Opis|
+|---|---|
+|Prawo do wysyłki poczty|Umożliwia wysyłkę poczty „jako” (Send as) W tym przypadku jako konto nadawcy nie wyświetli się konto, z którego faktycznie realizowana jest wysyłka, lecz konto, do którego zostały przydzielone uprawnienia do wysyłki. Nie pojawi się żadna wzmianka o tym, że wiadomość została wysłana przez innego nadawcę.|
+|Uprawnienia do wysyłki „w imieniu”|Umożliwia wysyłkę poczty „w imieniu” (On behalf of). W tym przypadku nie wyświetli się konto, z którego faktycznie realizowana jest wysyłka, lecz konto, któremu przydzielone zostały uprawnienia do wysyłki „w imieniu”. Pojawi się jednak wzmianka o tym, że wiadomość została wysłana „w imieniu konta”, które zrealizowało przesyłkę.|
+|Prawo dostępu|Umożliwia dostęp do danego konta tylko w trybie odczytu poprzez utworzenie odpowiednich uprawnień. Dostęp ten nie zezwala na wysyłkę poczty, a jedynie na wgląd do treści.|
 
-Następnie kliknij na "Dalej"
+> [!warning]
+>
+> Nie ma możliwości połączenia „prawa do wysyłki” z „prawem do wysyłki od”. Inne kombinacje są możliwe.
+> 
 
-![](images/img_1026.jpg){.thumbnail}
+Po określeniu konta, dla którego będziesz nadawał uprawnienia, wybraniu praw, które przydzielisz oraz wybraniu konta lub kont, którym przydzielisz dodatkowe prawa, przejdź do pierwszego etapu.
 
+### Etap 1: nadanie uprawnień
 
-## Aktywacja uprawnień Full Access - część 3:
-Pojawi się interfejs, w którym należy potwierdzić operacje. 
+Aby rozpocząć operację, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, po czym kliknij `Exchange`{.action}. Następnie kliknij nazwę usługi Exchange, w której znajduje się konto, do którego będziesz nadawał uprawnienia. Teraz przejdź do zakładki `Konta e-mail`{.action}.
 
-Aktywacja może trwać kilka minut. 
+Pojawi się tabela, w której wyświetlają się konta powiązane z Twoją usługą Exchange. Kliknij trzy kropki po prawej stronie nazwy konta, do którego chcesz utworzyć uprawnienie, następnie kliknij `Zarządzaj uprawnieniami`{.action}.
 
-Potwierdź klikając na "Zastosuj"
+![delegacja uprawnień exchange](images/delegation-step1.png){.thumbnail}
 
-![](images/img_1027.jpg){.thumbnail}
+Na stronie, która się wyświetla zaznacz prawa, które chcesz przydzielić. Powiąż je z jednym lub kilkoma uprawnionymi kontami. Kliknij `Dalej`{.action}.
 
+![delegacja uprawnień exchange](images/delegation-step2.png){.thumbnail}
 
-## Aktywacja w interfejsie OWA - część 1:
-Możesz teraz sprawdzić, czy konto e-mail "test" ma możliwość weryfikacji konta e-mail "config".
+Sprawdź dokładnie podsumowanie zmian. Jeśli są poprawne, kliknij `Zatwierdź`{.action}. W ciągu kilku minut uprawnienia zostaną utworzone na serwerach OVH.
 
-Jeśli chcesz wyświetlić wszystko w tym samym interfejsie:
+Po skonfigurowaniu uprawnienia konto*test@mypersonnaldomain.ovh* będzie mogło wykonać zaznaczone operacje na koncie *test2@mypersonnaldomain.ovh*.
 
-Kliknij prawym przyciskiem myszy na konto e-mail i wybierz "dodaj współdzielony katalog"
+### Etap 2: używanie udostępnionej skrzynki
 
-![](images/img_1028.jpg){.thumbnail}
+Teraz możesz zacząć korzystać z uprawnienia. Upewnij się, że posiadasz dane dostępowe do konta Exchange, dla którego przydzielone zostały nowe prawa. 
 
+Sposób postępowania jest inny w zależności od prawa lub praw, jakie przydzieliłeś oraz programu lub interfejsu, którego będziesz używał do dostępu do konta Exchange. Kontynuuj lekturę niniejszego przewodnika w sekcji, która dotyczy prawa lub praw, które Cię dotyczą.
 
-## Aktywacja w interfejsie OWA - część 2:
-Dodaj skrzynkę e-mail "config". Kliknij na "dodaj".
+- [Korzystanie z „prawa dostępu”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-delegowanie-uprawnien-pelny-dostep-do-skrzynki/#21-korzystanie-z-prawa-dostepu){.external}
 
-![](images/img_1029.jpg){.thumbnail}
+- [Korzystanie z „prawa do wysyłki poczty”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-delegowanie-uprawnien-pelny-dostep-do-skrzynki/#22-korzystanie-z-prawa-do-wysylki-poczty){.external}
 
+- [Korzystanie z „prawa do wysyłki poczty w imieniu”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-delegowanie-uprawnien-pelny-dostep-do-skrzynki/#23-korzystanie-prawa-do-wysylki-w-imieniu){.external}
 
-## Aktywacja w interfejsie OWA - część 3:
-Konto e-mail "config" poprawnie wyświetla się w interfejsie [Webmail Exchange](https://ex.mail.ovh.net/owa).
+> [!warning]
+>
+> Rozwiązanie to wymaga znajomości programu lub interfejsu, którego będziesz używał. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. W przypadku trudności zalecamy skorzystanie z pomocy specjalisty lub kontakt z producentem programu lub interfejsu. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
+>
 
-![](images/img_1030.jpg){.thumbnail}
+#### Korzystanie z „prawa dostępu”
 
+- **Przy użyciu webmail Outlook Web Application (OWA)**
+
+Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta Exchange, dla którego udzielone zastało dane prawo. Po zalogowaniu kliknij prawym przyciskiem myszy nazwę konta w menu po lewej stronie, następnie zaznacz `Dodaj współdzielony katalog`{.action}.
+
+W oknie, które się wyświetla wskaż nazwę konta, którego dotyczy przyznane prawo, a następnie kliknij `Dodaj`{.action}. Konto wyświetla się wówczas w menu po lewej stronie. Możesz przejrzeć jego zawartość. 
+
+![delegacja uprawnień exchange](images/delegation-step3.png){.thumbnail}
+
+- **Przy użyciu programu Outlook dla Windows**
+
+Przejdź do programu Outlook 2016 i kliknij `Plik`{.action} na pasku menu na górze ekranu, a następnie kliknij `Ustawienia konta`{.action}. W rozwijanym menu kliknij ponownie `Parametry konta`{.action}. W oknie, które się wyświetla wybierz konto, którego dotyczy przydzielone prawo, a następnie kliknij `Modyfikuj`{.action}. 
+
+![delegacja uprawnień exchange](images/delegation-step4.png){.thumbnail}
+
+Teraz kliknij `Ustawienia dodatkowe`{.action}. W nowym oknie przejdź do zakładki `Zaawansowane`{.action}, a następnie kliknij `Dodaj`{.action}. Wprowadź nazwę konta, dla którego zostało utworzone prawo, następnie zatwierdź dodanie. Konto wyświetla się wówczas w menu po lewej stronie. Możesz przejrzeć jego zawartość.
+
+![delegacja uprawnień exchange](images/delegation-step5.png){.thumbnail}
+
+#### 2.2 Korzystanie z „prawa do wysyłki poczty”
+
+- **Przy użyciu webmail Outlook Web Application (OWA)**
+
+Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta Exchange, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
+
+W obszarze, który się wyświetli kliknij przycisk z trzema kropkami, po czym kliknij `Wyświetl pole „Od”`{.action}. Teraz kliknij przycisk `Od`{.action} i zaznacz konto (do którego posiadasz przydzielone prawo), które wyświetli się jako nadawca . Jeśli żądane konto się nie wyświetla, usuń to, które zostało wprowadzone i wpisz odpowiednie. 
+
+Teraz możesz zredagować wiadomość e-mail i wysłać ją. 
+
+![delegacja uprawnień exchange](images/delegation-step6.png){.thumbnail}
+
+- **Przy użyciu programu Outlook dla Windows**
+
+Po otwarciu programu Outlook 2016 zacznij pisać nową wiadomość. Upewnij się, czy przycisk `Od`{.action} wyświetla się w oknie wiadomości. Jeśli nie wyświetla się, przejdź do zakładki `Opcje`{.action}, następnie kliknij `Wyświetl „Od”`{.action}.
+
+Teraz kliknij przycisk `Od`{.action} i zaznacz konto (do którego posiadasz przydzielone prawo), które wyświetli się jako nadawca . Jeśli konto się nie wyświetla, kliknij `Inne`{.action}, wprowadź odpowiednie konto i zatwierdź. 
+
+Teraz możesz zredagować wiadomość e-mail i wysłać ją. 
+
+![delegacja uprawnień exchange](images/delegation-step7.png){.thumbnail}
+
+#### 2.3 Korzystanie z „prawa do wysyłki poczty w imieniu” 
+
+- **Przy użyciu webmail Outlook Web Application (OWA)**
+
+Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta Exchange, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
+
+W obszarze, który się wyświetli kliknij przycisk z trzema kropkami, po czym kliknij `Wyświetl pole „Od”`{.action} Teraz kliknij przycisk `Od`{.action} i zaznacz konto (do którego posiadasz przydzielone prawo), które wyświetli się jako nadawca . Jeśli żądane konto się nie wyświetla, usuń to, które zostało wprowadzone i wpisz odpowiednie. 
+
+Teraz możesz zredagować wiadomość e-mail i wysłać ją. 
+
+![delegacja uprawnień exchange](images/delegation-step6.png){.thumbnail}
+
+- **Przy użyciu programu Outlook dla Windows**
+
+Po otwarciu programu Outlook 2016 zacznij pisać nową wiadomość. Upewnij się, czy przycisk `Od`{.action} wyświetla się w oknie wiadomości. Jeśli nie wyświetla się, przejdź do zakładki `Opcje`{.action}, następnie kliknij `Wyświetl „Od”`{.action}.
+
+Teraz kliknij przycisk `Od`{.action} i zaznacz konto (do którego posiadasz przydzielone prawo), które wyświetli się jako nadawca . Jeśli konto się nie wyświetla, kliknij `Inne`{.action}, wprowadź odpowiednie konto i zatwierdź. 
+
+Teraz możesz zredagować wiadomość e-mail i wysłać ją. 
+
+![delegacja uprawnień exchange](images/delegation-step7.png){.thumbnail}
+
+## Sprawdź również
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

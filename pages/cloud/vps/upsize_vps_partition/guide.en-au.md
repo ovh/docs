@@ -51,7 +51,7 @@ sdb 254:16 0 25G 0 disk
 To unmount your partition, use the following command:
 
 ```sh
-unmount /dev/sdb1
+umount /dev/sdb1
 ```
 
 ### Check the filesystem
