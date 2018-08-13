@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 2
 ---
 
-**Ostatnia aktualizacja z dnia 2018-08-10**
+**Ostatnia aktualizacja z dnia 2018-08-13**
 
 ## Wprowadzenie
 
@@ -220,4 +220,4 @@ Więcej informacji o naszych rozwiązaniach do przechowywania kopii zapasowych z
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
