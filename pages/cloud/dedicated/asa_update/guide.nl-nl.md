@@ -1,8 +1,8 @@
 ---
-title: Upgraden van de CISCO ASA firewall
-excerpt: Ontdek hoe u uw CISCO ASA firewall kunt upgraden
+title: 'Upgraden van de CISCO ASA firewall'
+excerpt: 'Ontdek hoe u uw CISCO ASA firewall kunt upgraden'
 slug: upgrade-firewall-cisco-asa
-section: Geavanceerd gebruik
+section: 'Geavanceerd gebruik'
 ---
 
 **Laatste update 12-03-2018**
@@ -150,8 +150,8 @@ boot system disk0:/asa847-30-k8.bin
 asdm image disk0:/asdm-771.bin
 ```
 
-- *boot system* \: la version de l'ASA
-- *asdm image* \: la version de l'ASDM
+- *boot system*: ASA versie
+- *asdm image*: ASDM versie
 
 
 ### Ga na welke binaire afbeelding moet worden gebruikt
@@ -243,7 +243,7 @@ Log u in op Cisco Adaptive Security Device Manager. Ga vervolgens naar `Tools`{.
 
 Selecteer in het volgende venster:
 
-- *Image to upload* : ASDM;
+- *Image to upload*: ASDM;
 - *Local File Patch*: klik `Browse Local Files`{.action} en kies uw ASDM binaire beeldversie.
 
 Om uw keuze te bevestigen, klikt u op `Upload Image`{.action} en vervolgens op `Yes`{.action} om te bevestigen dat dit de boot-afbeelding zou moeten zijn:
@@ -297,7 +297,7 @@ Log u in op Cisco Adaptive Security Device Manager. Ga vervolgens naar `Tools`{.
 
 Selecteer in het volgende venster:
 
-- *Image to upload* : ASA;
+- *Image to upload*: ASA;
 - *Local File Patch*: klik `Browse Local Files`{.action} en kies uw ASDM binaire beeldversie.
 
  
@@ -425,7 +425,6 @@ Cryptochecksum: 4b86b1e4 2e731d6b 9d1fc491 a5eae0f3
 Hiervoor gaat u naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in het gedeelte `Dedicated`{.action}. Kies vervolgens uw dedicated server, en `Cisco ASA Firewall`{.action}. Klik vervolgens op `Cisco ASA-firewall inschakelen`{.action} aan de rechterkant.
 
 ![Schakel ASA in](images/customer_panel_asa_enable.png){.thumbnail}
-
 
 
 Uw ASA is geüpgraded. 
