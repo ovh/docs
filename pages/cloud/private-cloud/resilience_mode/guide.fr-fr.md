@@ -1,52 +1,72 @@
 ---
-title: Mode résilience
+title: 'Utiliser le mode résilience'
 slug: mode-resilience
+excerpt: 'Découvrez comment utiliser le mode résilience d''OVH'
 legacy_guide_number: '7766742'
-space_key: VS
-space_name: vSphere as a Service
-section: Fonctionnalités OVH
+section: 'Fonctionnalités OVH'
 ---
 
+**Dernière mise à jour le 13/08/2018**
+
+## Objectif
+
+Le mode résilience est un outil développé par OVH, qui simule une panne sur l'un de vos serveurs hôtes (_hosts_). Cela vous permet de vérifier qu'un système de type *High Availability* (HA) et *Fault Tolerance* (FT) fonctionne correctement dans votre cluster **en développement**.
+
+**Ce guide vous explique comment utiliser le mode résilience d'OVH.**
+
+## Prérequis
+
+* Posséder une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
+* Accéder à l’interface de gestion vSphere.
 
 
-Le **mode résilience** est un outil développé par OVH pour simuler une panne sur l'un de vos hôtes et donc de vérifier que le système que vous avez mis en place de type High Availability (HA) et Fault Tolerance (FT) fonctionne correctement dans votre Cluster **en développement**.
 
-Prérequis:
-----------
+## En pratique
 
-1.  Le hôte doit être dans un **Cluster**.
-2.  L'option **HA** (High Availability) doit être activée.
-3.  Un **autre hôte** dans le Cluster doit être disponible et en état de fonctionnement.
-4.  Attention c'est un test pour un **environnement de développement**, ne pas réaliser ce type d'opération en **production**.
+Avant tout, assurez-vous des points suivants :
+- le serveur hôte doit être dans un cluster ;
+- l'option *High Availability* (HA) doit être activée ;
+- un autre serveur hôte dans le cluster doit être disponible et en état de fonctionnement.
 
-Un simple "clic droit" sur un hôte et sélectionnez l'option qui se nomme **"OVH Dedicated Cloud"** puis "**Resilience**"
+> [!warning]
+>
+> Ceci est un test pour un **environnement de développement**. Il ne faut pas réaliser ce type d'opération en **production**.
+> 
 
-![Clic droit sur l'hôte](images/resilience1.png){.thumbnail}
 
-Validation
-----------
+### Activer le mode résilience
 
-Il vous faudra ensuite cliquer sur le bouton "Next", après avoir préalablement vérifié que tous les prérequis sont respectés.
+Une fois connecté au client vSphere, rendez-vous dans l’inventaire de vos serveurs hôtes et cluster. Sélectionnez le serveur hôte concerné avec un simple clic droit. Cliquez ensuite sur `OVH Private Cloud`{.action}, puis sur `Resilience`{.action}.
 
-![](images/resilience2.png){.thumbnail}
+![Clic-droit sur l'hôte pour activer le mode résilience](images/resilience_01.png){.thumbnail}
 
-conditions d'utilisation
-------------------------
+Après avoir vérifié que tous les prérequis sont respectés, cliquez sur le bouton `Next`{.action}.
 
-Il sera nécessaire de valider les conditions d'utilisations avant de lancer le test.
+![Vérification des prérequis et validation](images/resilience_02.png){.thumbnail}
 
-![](images/resilience3.png){.thumbnail}
+Il est nécessaire de valider les conditions d'utilisation avant de lancer le test. Après avoir coché la case `I accept the terms of the failure simulation agreement`{.action}, cliquez sur le bouton `Next`{.action}.
 
-Résultat
---------
+![Validation des conditions d'utilisation](images/resilience_03.png){.thumbnail}
 
-Quelques minutes suffisent pour rendre indisponible votre hôte.
+La demande d'activation est bien prise en compte.
 
-![](images/resilience4.png){.thumbnail}
+![Activation du mode résilience en cours](images/resilience_04.png){.thumbnail}
 
-Annulation
-----------
+En quelques minutes, le serveur hôte deviendra indisponible.
 
-Cliquez de nouveau sur le mode résilience pour finaliser la simulation.
+![Hôte indisponible](images/resilience_05.png){.thumbnail}
 
-![Finalisation de la simulation](images/resilience6.png){.thumbnail}
+
+### Désactiver le mode résilience
+
+Pour finaliser la simulation, cliquez à nouveau sur le mode résilience.
+
+![Finalisation de la simulation](images/resilience_06.png){.thumbnail}
+
+La demande de désactivation est bien prise en compte.
+
+![Désactivation du mode résilience en cours](images/resilience_07.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
