@@ -13,6 +13,7 @@ section: Configurations techniques complexes
 - Rendez vous dans l'onglet **" Network > Interfaces "**
 - Éditez la configuration de l'interface **IF0**
 - Dans le champ "Protocol", sélectionnez "Unmanaged"
+- Valider le choix du nouveau "Protocole" avec : Switch protocol
 - Enfin cliquez sur "Save & Apply"
 
 
