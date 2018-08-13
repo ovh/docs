@@ -1,7 +1,7 @@
 ---
 title: 'Delegowanie uprawnień do konta Exchange'
-excerpt: 'Dowiedz się, jak zezwolić innym osobom na zarządzanie skrzynką Exchange'
 slug: exchange_2013_przyznanie_uprawnien_full_access
+excerpt: 'Dowiedz się, jak zezwolić innym osobom na zarządzanie skrzynką Exchange'
 section: 'Funkcjonalności i współdzielenie Exchange'
 legacy_guide_number: g1249
 ---
@@ -60,18 +60,18 @@ Teraz możesz zacząć korzystać z uprawnienia. Upewnij się, że posiadasz dan
 
 Sposób postępowania jest inny w zależności od prawa lub praw, jakie przydzieliłeś oraz programu lub interfejsu, którego będziesz używał do dostępu do konta Exchange. Kontynuuj lekturę niniejszego przewodnika w sekcji, która dotyczy prawa lub praw, które Cię dotyczą.
 
-- [Korzystanie z „prawa dostępu”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-delegowanie-uprawnien-pelny-dostep-do-skrzynki/#21-korzystanie-z-prawa-dostepu){.external}
+- [Korzystanie z „prawa dostępu”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2013_przyznanie_uprawnien_full_access/#21-korzystanie-z-prawa-dostepu){.external}
 
-- [Korzystanie z „prawa do wysyłki poczty”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-delegowanie-uprawnien-pelny-dostep-do-skrzynki/#22-korzystanie-z-prawa-do-wysylki-poczty){.external}
+- [Korzystanie z „prawa do wysyłki poczty”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2013_przyznanie_uprawnien_full_access/#22-korzystanie-z-prawa-do-wysylki-poczty){.external}
 
-- [Korzystanie z „prawa do wysyłki poczty w imieniu”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-delegowanie-uprawnien-pelny-dostep-do-skrzynki/#23-korzystanie-prawa-do-wysylki-w-imieniu){.external}
+- [Korzystanie z „prawa do wysyłki poczty w imieniu”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2013_przyznanie_uprawnien_full_access/#23-korzystanie-z-prawa-do-wysylki-poczty-w-imieniu){.external}
 
 > [!warning]
 >
 > Rozwiązanie to wymaga znajomości programu lub interfejsu, którego będziesz używał. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. W przypadku trudności zalecamy skorzystanie z pomocy specjalisty lub kontakt z producentem programu lub interfejsu. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
 >
 
-#### Korzystanie z „prawa dostępu”
+#### 2.1 Korzystanie z „prawa dostępu”
 
 - **Przy użyciu webmail Outlook Web Application (OWA)**
 
