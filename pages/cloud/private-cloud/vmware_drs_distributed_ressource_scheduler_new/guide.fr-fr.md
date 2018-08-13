@@ -1,6 +1,6 @@
 ---
 title: VMware DRS (Distributed Ressource Scheduler)
-slug: vmware-drs-distributed-ressource-scheduler-new
+slug: vmware-drs-distributed-ressource-scheduler
 legacy_guide_number: '7766797'
 section: Fonctionnalités VMware vSphere
 ---
