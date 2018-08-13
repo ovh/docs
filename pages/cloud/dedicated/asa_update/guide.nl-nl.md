@@ -150,8 +150,8 @@ boot system disk0:/asa847-30-k8.bin
 asdm image disk0:/asdm-771.bin
 ```
 
-- *boot system*: la version de l'ASA
-- *asdm image*: la version de l'ASDM
+- *boot system*: ASA versie
+- *asdm image*: ASDM versie
 
 
 ### Ga na welke binaire afbeelding moet worden gebruikt
