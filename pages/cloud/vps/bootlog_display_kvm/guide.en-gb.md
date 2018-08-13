@@ -66,7 +66,7 @@ vdb 8:16 0 10G 0 disk
 On a VPS in rescue mode, the primary disk is already mounted. Therefore, it first needs to be unmounted and then remounted with the correct settings:
 
 ```sh
-unmount /dev/sdb1
+umount /dev/sdb1
 ```
 
 ### Step 2: mount the disk
