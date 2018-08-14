@@ -21,7 +21,7 @@ Nous allons voir comment déployer et utiliser cette solution en quelques clics.
 * Posséder une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
 * [Donner le droit "Ajout de ressources"](https://docs.ovh.com/fr/private-cloud/changer-les-droits-d-un-utilisateur/){.external} pour le datacenter concerné à l'utilisateur depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 * Être connecté au client vSphere.
-* Avoir activer [HA](https://docs.ovh.com/fr/private-cloud/vmware-ha-high-availability){.external} et [DRS](https://docs.ovh.com/fr/private-cloud/vmware-drs-distributed-ressource-scheduler){.external} sur le(s) cluster(s).
+* Avoir activer [HA](https://docs.ovh.com/fr/private-cloud/vmware-ha-high-availability){.external} et [DRS](https://docs.ovh.com/fr/private-cloud/vmware-drs-distributed-ressource-scheduler-new){.external} sur le(s) cluster(s).
 * Avoir activer la [gestion des licences Windows](https://docs.ovh.com/fr/private-cloud/facturation-private-cloud/#licences-windows){.external} sur le Private Cloud
 
 
