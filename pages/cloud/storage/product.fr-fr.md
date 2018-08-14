@@ -1,5 +1,6 @@
 ---
-title: Stockage
+title: 'Stockage et sauvegarde'
 slug: storage
-excerpt: Débuter avec vos produits de stockage OVH
+excerpt: 'Débuter avec vos produits de stockage et sauvegarde OVH'
 ---
+
