@@ -5,7 +5,7 @@ excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 11/07/2018**
+**Dernière mise à jour le 16/08/2018**
 
 ## Objectif
 
@@ -22,7 +22,7 @@ Le mode rescue est un outil de votre serveur dédié. Il vous permet de démarre
 
 ## En pratique
 
-Vous pouvez activer le mode rescue en vous connectant à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager/){.external}. Choisissez votre serveur dans la partie `Dédié`{.action} puis `Serveurs Dédiés`{.action}. Allez ensuite dans `État du serveur`{.action} > `Informations générales`{.action} > `Boot`{.action} et cliquez sur le bouton `Modifier`{.action} pour changer le mode de démarrage.
+Vous pouvez activer le mode rescue en vous connectant à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager/){.external}. Choisissez votre serveur dans la partie `Dédié`{.action} puis `Serveurs Dédiés`{.action}. Allez ensuite dans `État du serveur`{.action} > `Informations générales`{.action} > `...`{.action} et cliquez sur le bouton `Modifier`{.action} pour changer le mode de démarrage.
 
 ![Modifier le mode de démarrage](images/rescue-mode-01.png){.thumbnail}
 
@@ -30,10 +30,11 @@ Sur l’écran suivant, sélectionnez `Booter en mode rescue`{.action}. Si votre
 
 ![Mode rescue-pro](images/rescue-mode-03.png){.thumbnail}
 
-Confirmez vos options sur l'écran suivant, puis redémarrez votre serveur pour appliquer les modifications. Votre serveur va maintenant redémarrer en mode rescue et vous recevrez les informations d'identification pour vous connecter via l'adresse e-mail que vous avez fournie. Pour quitter le mode rescue, changez simplement le mode de démarrage en `Booter sur le disque dur`{.action} puis redémarrez votre serveur.
+Confirmez vos options sur l'écran suivant, puis redémarrez votre serveur pour appliquer les modifications. 
 
 ![Redémarrer le serveur](images/rescue-mode-02.png){.thumbnail}
 
+Votre serveur va maintenant redémarrer en mode rescue et vous recevrez les informations d'identification pour vous connecter via l'adresse e-mail que vous avez fournie. Pour quitter le mode rescue, changez simplement le mode de démarrage en `Booter sur le disque dur`{.action} puis redémarrez de nouveau votre serveur.
 
 ### Linux
 
