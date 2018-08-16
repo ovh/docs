@@ -2,7 +2,8 @@
 title: Your domain ZoneCheck
 excerpt: This guide explains how to Zone Check your domain.
 slug: your_domain_zonecheck
-legacy_guide_number: g1980
+section: DNS and DNS zone
+order: 8
 ---
 
 

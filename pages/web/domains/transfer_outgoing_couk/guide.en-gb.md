@@ -2,7 +2,8 @@
 title: Outgoing .co.uk domain name transfer
 excerpt: Outgoing .co.uk domain name transfer
 slug: outgoing_couk_domain_name_transfer
-legacy_guide_number: g2225
+section: Transfer
+order: 5
 ---
 
 

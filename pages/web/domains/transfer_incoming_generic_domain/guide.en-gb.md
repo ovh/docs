@@ -2,7 +2,8 @@
 title: Transferring a generic domain name to OVH 
 slug: transfer-generic-domain
 excerpt: Find out how to transfer a generic domain name to OVH 
-section: Transfers
+section: Transfer
+order: 1
 ---
 **Last updated 18th January 2018**
 

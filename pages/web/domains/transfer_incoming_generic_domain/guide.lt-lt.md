@@ -2,7 +2,8 @@
 title: Transferring a generic domain name to OVH 
 excerpt: Find out how to transfer a generic domain name to OVH 
 slug: svetainiu_talpinimas_bendrinio_domeno_com_net_org_info_biz_perkelimas
-section: Transfers
+section: Transfer
+order: 1
 ---
 
 **Last updated 18th January 2018**

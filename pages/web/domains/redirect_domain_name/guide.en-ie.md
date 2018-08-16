@@ -3,6 +3,7 @@ title: Redirecting a domain name managed by OVH
 slug: redirect-domain-name
 excerpt: Find out about the various redirection types, and how to create one for a domain name managed by OVH
 section: General
+order: 1
 ---
 
 **Last updated 25th January 2018**

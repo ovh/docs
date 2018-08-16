@@ -2,7 +2,8 @@
 title: 'Svetainių talpinimas: domeno .co.uk perkėlimo gidas'
 excerpt: 'Svetainių talpinimas: domeno .co.uk perkėlimo gidas'
 slug: svetainiu_talpinimas_domeno_couk_perkelimo_gidas
-legacy_guide_number: g2026
+section: Transfer
+order: 3
 ---
 
 
