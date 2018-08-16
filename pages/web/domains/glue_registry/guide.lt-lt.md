@@ -2,7 +2,8 @@
 title: Glue Registry
 excerpt: Kam skirtas Glue Registry?
 slug: glue_registry
-legacy_guide_number: g1568
+section: DNS and DNS zone
+order: 7
 ---
 
 

@@ -2,7 +2,8 @@
 title: Antrinio DNS konfigūravimas
 excerpt: Domeno konfigūravimas antriniame DNS
 slug: antrinio_dns_konfiguravimas
-legacy_guide_number: g1477
+section: DNS and DNS zone
+order: 9
 ---
 
 

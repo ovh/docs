@@ -3,6 +3,8 @@ title: Secure your domain with DNSSEC
 excerpt: ''
 slug: secure_your_domain_with_dnssec
 legacy_guide_number: g609
+section: Security
+order: 1
 ---
 
 

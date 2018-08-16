@@ -2,7 +2,8 @@
 title: 'Web hosting: How to transfer a .co.uk domain name'
 excerpt: 'Web hosting: How to transfer a .co.uk domain name'
 slug: web_hosting_how_to_transfer_a_couk_domain_name
-legacy_guide_number: g2026
+section: Transfer
+order: 3
 ---
 
 

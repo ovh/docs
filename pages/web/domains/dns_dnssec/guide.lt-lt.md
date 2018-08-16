@@ -2,7 +2,8 @@
 title: Apsaugokite savo domeną su DNSSEC
 excerpt: ''
 slug: apsaugokite_savo_domena_su_dnssec
-legacy_guide_number: g609
+section: Security
+order: 1
 ---
 
 

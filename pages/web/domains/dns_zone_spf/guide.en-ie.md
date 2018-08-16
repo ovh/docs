@@ -2,7 +2,8 @@
 title: Add an SPF record to the configuration of your domain name
 excerpt: Learn how to add an SPF record to the configuration of your OVH domain name
 slug: web_hosting_the_spf_record
-section: Advanced
+section: DNS and DNS zone
+order: 5
 ---
 
 **Last updated 02/02/2018**

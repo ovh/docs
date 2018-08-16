@@ -2,7 +2,8 @@
 title: Domeno zonos tikrinimas
 excerpt: 'Šiame gide paaiškinama, kaip atlikti domeno zonos tikrinimą (Zone check).'
 slug: domeno_zonos_tikrinimas
-legacy_guide_number: g1980
+section: DNS and DNS zone
+order: 8
 ---
 
 

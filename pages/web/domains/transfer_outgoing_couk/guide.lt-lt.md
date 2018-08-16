@@ -2,7 +2,8 @@
 title: Išeinantis domeno .co.uk perkėlimas
 excerpt: Išeinantis domeno .co.uk perkėlimas
 slug: iseinantis_domeno_couk_perkelimas
-legacy_guide_number: g2225
+section: Transfer
+order: 5
 ---
 
 

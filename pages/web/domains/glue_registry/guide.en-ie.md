@@ -2,7 +2,8 @@
 title: Glue Registry
 excerpt: What is Glue Registry for?
 slug: glue_registry
-legacy_guide_number: g1568
+section: DNS and DNS zone
+order: 7
 ---
 
 
