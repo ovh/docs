@@ -52,7 +52,7 @@ Même si la connexion via l'applet Java est conseillée, l'utilisation de l'IPMI
 
 ### Tester et redémarrer l'IPMI
 
-Il est possible que l'IPMI ne réponde plus. Si vous n'arrivez pas à y accéder, vous pouvez effectuer un test dans un premier temps en cliquant sur `Tester IPMI`{.action} :
+Il est possible que l'IPMI ne réponde plus. Si vous n'arrivez pas à y accéder, vous pouvez effectuer un test dans un premier temps en cliquant sur `Tester IPMI`{.action} et visualiser le résultat du diagnostic :
 
 ![IPMI test](images/ipmi_test.png){.thumbnail}
 
