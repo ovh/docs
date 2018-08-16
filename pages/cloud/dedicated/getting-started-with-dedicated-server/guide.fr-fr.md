@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment prendre en main votre nouveau serveur dédié'
 section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 16/05/2018**
+**Dernière mise à jour le 16/08/2018**
 
 ## Objectif
 
@@ -54,7 +54,7 @@ Lorsque votre serveur dédié est configuré pour la première fois, vous recevr
 
 ### Installation ou réinstallation de votre serveur dédié
 
-Accédez à la page de votre serveur dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le bouton `Réinstaller`{.action}.
+Accédez à la page de votre serveur dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, puis dans `Informations générales` cliquez sur `...`{.action} puis `Réinstaller`{.action} dans la section `Système (OS)`.
 
 ![Bouton Réinstaller](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -84,6 +84,8 @@ Comme expliqué dans la section « Objectif » de ce guide, vous êtes l'adminis
 * changez votre port SSH par défaut (port 22) pour un autre port ;
 * changez votre mot de passe root ;
 * créez un nouvel utilisateur de système avec un accès restreint pour une utilisation quotidienne.
+
+Plus d'informations dans notre [guide](https://docs.ovh.com/fr/dedicated/securiser-un-serveur-dedie/){.external}.
 
 
 ### Configurer un réseau
