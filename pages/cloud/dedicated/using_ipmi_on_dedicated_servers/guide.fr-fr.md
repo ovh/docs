@@ -5,7 +5,7 @@ excerpt: 'L''IPMI permet de vous connecter à votre serveur sans utiliser un log
 section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 17/01/2018**
+**Dernière mise à jour le 16/08/2018**
 
 ## Objectif
 
@@ -15,7 +15,8 @@ La console IPMI (Intelligent Platform Management Interface) permet d'établir un
 
 ## Prérequis
 
-- Être connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager) dans la partie `Dédié`{.action} puis `Serveurs Dédiés`{.action}.
+- Être connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager).
+
 
 ## En pratique
 
