@@ -1,21 +1,21 @@
 ---
-title: Zabezpečení VPS
+title: 'Zabezpečení VPS'
 slug: tipy-pro-zabezpeceni-vps
-section: První kroky
+section: 'První kroky'
 ---
 
-**Poslední aktualizace 22/02/2018**
+**Poslední aktualizace 16/08/2018**
 
 ## Cíl
 
 Virtuální privátní servery jsou dodávány s předinstalovanou systémovou distribucí, avšak bez jakýchkoli nativních bezpečnostních protokolů. Jakožto správce a zprostředkovatel hardwaru nedisponuje společnost OVH žádnými přístupovými právy k severu, a proto se o jeho zabezpečení musíte postarat sami.
 
-V této příručce naleznete několik užitečných rad pro zabezpečení Vašeho serveru.
+**V této příručce naleznete několik užitečných rad pro zabezpečení Vašeho serveru.**
 
  
 > [!warning]
 >
-> Společnost OVH Vám dává k dispozici stroje, za jejichž správu nesete plnou odpovědnost.  Společnost OVH není administrátorským subjektem těchto strojů a nedisponuje žádnými přístupovými právy.  Z toho důvodu spočívá zajištění každodenní správy softwaru a zabezpečení stroje pouze na Vás. Tato příručka slouží jako úvod do nejčastějších úkonů spojených se správou a zabezpečením Vašeho serveru.  Pokud narazíte na jakékoli potíže či pochybnosti ohledně správy, použití nebo zabezpečení svého serveru, obraťte se prosím na profesionálního serverového administrátora. Další informace naleznete v poslední sekci této příručky. 
+> Společnost OVH Vám dává k dispozici stroje, za jejichž správu nesete plnou odpovědnost.  Společnost OVH není administrátorským subjektem těchto strojů a nedisponuje žádnými přístupovými právy. Z toho důvodu spočívá zajištění každodenní správy softwaru a zabezpečení stroje pouze na Vás. Tato příručka slouží jako úvod do nejčastějších úkonů spojených se správou a zabezpečením Vašeho serveru.  Pokud narazíte na jakékoli potíže či pochybnosti ohledně správy, použití nebo zabezpečení svého serveru, obraťte se prosím na profesionálního serverového administrátora. Další informace naleznete v poslední sekci této příručky. 
 > 
 
 
@@ -135,7 +135,7 @@ Následně přejděte do následující sekce:
 
 V řádku `PermitRootLogin` nahraďte hodnotu **yes** hodnotou **no**.
 
-Aby provedené změny mohli vstoupit v platnost, je zapotřebí provést restart služby SSH:
+Aby provedené změny mohly vstoupit v platnost, je zapotřebí provést restart služby SSH:
 
 ```sh
 /etc/init.d/ssh restart
@@ -182,7 +182,7 @@ Holá systémová distribuce implicitně zahrnuje firewallovou službu Iptables.
 iptables -L
 ```
 
-Doporučujeme vytvoření a přizpůsobení alespoň základních bezpečnostních pravidel tak, aby korespondovali s bezpečnostními požadavky Vaší služby. Detailní informace týkající se nastavení firewallu Iptables naleznete v oficiální dokumentaci příslušné systémové distribuce.
+Doporučujeme vytvoření a přizpůsobení alespoň základních bezpečnostních pravidel tak, aby korespondovala s bezpečnostními požadavky Vaší služby. Detailní informace týkající se nastavení firewallu Iptables naleznete v oficiální dokumentaci příslušné systémové distribuce.
 
 ### Konfigurace síťového firewallu OVH
 
