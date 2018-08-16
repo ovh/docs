@@ -1,76 +1,90 @@
 ---
-title: Betrug erkennen - So schützen Sie sich vor Phishing und betrügerischen E-Mails
+title: 'Betrug erkennen − So schützen Sie sich vor Phishing und betrügerischen E-Mails'
 slug: e-mail-betrug-phishing
-excerpt: Immer mehr Internetbetrüger versuchen mit gefälschten E-Mails an Geld und Daten zu kommen. Wir erklären Ihnen, wie Sie diese am besten erkennen
+excerpt: 'Wie können Sie eine Phishing-Mail erkennen und was ist zu tun, wenn Sie auf einen betrügerischen Link geklickt haben?'
+section: Sicherheit
 ---
 
-> [!warning]
->
-> August 2017: Es kursieren E-Mails mit gefälschten Zahlungsaufforderungen von OVH (meist in Höhe von 5 €). Diese enthalten einen falschen Link, über den Betrüger versuchen, an Ihre Zahlungsinformationen zu kommen. Seien Sie daher besonders vorsichtig.
+**Stand 16.08.2018**
+
+## Einleitung
+
+Beim Phishing werden betrügerische E-Mails versandt, in denen Sie dazu aufgefordert werden, auf einen Link zu klicken, der Sie zu einem Formular weiterleitet. Dieses Formular imitiert das bekannte Design einer Marke und Sie werden gebeten, Ihre Login-Daten einzugeben. 
+
+**Hier erfahren Sie, wie Sie eine Phishing-Mail erkennen und was zu tun ist, wenn Sie auf einen betrügerischen Link geklickt haben.**
+
+
+## Voraussetzungen
+
+- Keine spezifischen Voraussetzungen
+
+
+## Beschreibung
+
+### Sie haben eine Phishing-Mail von OVH erhalten
+
+#### Phishing-Mails identifizieren
+
+Sie haben eine angebliche E-Mail von OVH erhalten und möchten überprüfen, ob OVH auch tatsächlich der Absender ist? Auf den folgenden Abbildungen sehen Sie einige Unterschiede zwischen einer E-Mail von OVH und einem Phishing-Versuch.
+
+![Unterschied OVH E-Mail und Phishing-Mail](images/phishing_email.png){.thumbnail}
+
+> [!alert]
+> 
+> Überprüfen Sie unbedingt die folgenden drei Punkte.
+> 
+
+|Nummer - Beschreibung|E-Mail von OVH|Phishing-Mail|
+|---|---|---|
+|1 - Absender|Überprüfen Sie, ob die Absenderadresse auf „@ovh.com“, „@ovh.de", „@soyoustart.com“ oder „@kimsufi.com“ endet.|Der Absender der E-Mail ist keine OVH Adresse.|
+|2 - Betreff|Überprüfen Sie, ob Ihre Kundenkennung **(beginnend mit dem jeweils ersten Buchstaben Ihres bei OVH registrierten Namens und Vornamens)** und/oder die E-Mail-Adresse Ihres Accounts in der Betreffzeile stehen.|In den meisten Fällen ist die E-Mail in eckigen Klammern als „Spam“ gekennzeichnet und Ihre Kontaktdaten erscheinen nicht ODER sind falsch.|
+|3 - Link|Gehen Sie mit Ihrer Maus über den Link. Sie sehen den Inhalt dann direkt (unten in Ihrem Browserfenster), ohne auf den Link zu klicken. In unserem Beispiel verweist der Link auf https://www.ovh.com/.|In der Beispielabbildung sehen Sie, dass der Link nichts mit OVH zu tun hat. Klicken Sie nicht auf einen solchen Link.|
+
+
+> [!primary]
+> 
+> Als Kunde bei Kimsufi oder So you Start müssen Sie nie etwas bei OVH bezahlen. Derartige E-Mails können Sie also einfach ignorieren.
+> 
+
+#### Phishing-Mails melden
+
+
+Wenn Sie sich nach den oben stehenden Kontrollen sicher sind, dass Sie eine Phishing-Mail im Namen von OVH erhalten haben, senden Sie uns bitte möglichst ausführliche Informationen dazu (mindestens den Inhalt der E-Mail) an folgende Adresse: **<fraude@ovh.com>**.
+
+> [!primary]
+> 
+> Bitte beachten Sie, dass diese von Ihnen gesendeten Informationen gegebenenfalls an Drittparteien weitergeleitet werden, um derartige Bedrohungen zu bekämpfen.
 > 
 
 
-## Einfache Tipps zum Schutz vor Phishing
+### Sie haben persönliche Informationen angegeben. Was nun?
 
-### Aktivieren Sie die Zwei-Faktor-Authentifizierung im OVH Kundencenter
-Verbinden Sie sich über [https://www.ovh.com/manager/](https://www.ovh.com/manager/){.external} mit Ihrem Kundencenter und gehen Sie unter „Mein Account“ in den Bereich „Sicherheit“. Klicken Sie anschließend auf „Die Zwei-Faktor-Authentifizierung aktivieren“.
+#### Sie haben Ihre Zahlungsinformationen auf einer betrügerischen Website angegeben
 
-Hierbei wird bei der Authentifizierung ein zweiter Faktor hinzugefügt (auch als „starke Authentifizierung“ bezeichnet). So ist es bedeutend schwieriger, unerlaubt auf Ihr Kundencenter zuzugreifen, auch wenn Ihre Kundenkennung und Ihr Passwort gestohlen werden.
+Kontaktieren Sie umgehend Ihren Zahlungsdienstleister, um Ihr jeweiliges Zahlungsmittel sperren zu lassen.  Geben Sie das Datum und wenn möglich den Zeitpunkt an, zu dem Sie Ihre Zahlungsinformationen eingegeben haben.
 
-
-### Uberprufen Sie die Sendeadresse
-Erhalten Sie eine angebliche E-Mail von OVH, deren Adresse nicht auf „@ovh.de“ oder „@ovh.com“ endet, so handelt es sich wahrscheinlich um eine betrügerische E-Mail.
-
-Allerdings kann die E-Mail-Adresse des Absenders recht einfach gefälscht werden. Daher reicht diese Vorsichtsmaßnahme alleine nicht aus, um betrügerische E-Mails zu erkennen.
+**Nur Ihr Zahlungsdienstleister kann betrügerische Transaktionen stornieren, die möglicherweise bereits ohne Ihr Wissen in Auftrag gegeben wurden.**
 
 
-### Schauen Sie in Ihrem OVH Kundencenter nach
-Verbinden Sie sich über [https://www.ovh.com/manager/](https://www.ovh.com/manager/){.external} mit Ihrem Kundencenter. Wenn eine dringende Aktion Ihrerseits erforderlich ist (zum Beispiel bei einer Zahlungsaufforderung), erhalten Sie nicht nur eine E-Mail von OVH. Auch direkt im Kundencenter wird eine entsprechende Nachricht angezeigt.
+#### Sie haben Ihr OVH Passwort auf einer betrügerischen Website angegeben
+
+Loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&){.external} ein und ändern Sie sofort Ihr Passwort. Wir empfehlen Ihnen, auch die Zwei-Faktor-Authentifizierung zu aktivieren, um Ihren Account in Zukunft besser zu schützen.
+
+> [!primary]
+>
+> Damit Ihre Daten optimal geschützt sind, sollte Ihr Passwort folgende Anforderungen erfüllen:
+>
+> - Das Passwort muss mindestens 8 Zeichen umfassen.
+> - Es muss mindestens 3 verschiedene Zeichentypen enthalten.
+> - Es darf kein Wort aus dem Wörterbuch sein.
+> - Es darf keine personenbezogenen Daten (Vorname, Nachname oder Geburtsdatum) enthalten.
+> - Es darf nicht für mehrere Benutzerzugänge verwendet werden.
+> - Es muss in einem Passwort-Manager gespeichert sein.
+> - Es muss alle drei Monate geändert werden.
+> - Es muss sich von den vorherigen Passwörtern unterscheiden.
+>
 
 
-### Offnen Sie keine Anhange
-Eine echte E-Mail von OVH enthält niemals Anhänge. Diese können Viren, Trojaner oder Spyware enthalten.
+## Weiterführende Informationen
 
-
-### Lesen Sie den Text aufmerksam durch
-Wenn Sie ungewöhnlich klingende Übersetzungen mit falschen Begriffen oder auffälligen Rechtschreibfehlern entdecken, handelt es sich mit Sicherheit um eine betrügerische E-Mail.
-
-
-### Seien Sie vorsichtig bei generischen Anreden
-Eine E-Mail von OVH enthält in der Regel Angaben zu Ihrer Identität. Seien sie daher besonders vorsichtig bei E-Mails mit unpersönlichen Anreden wie „Sehr geehrter Nutzer“ oder „Sehr geehrter [ihre-adresse@e-mail.com](mailto:ihre-adresse@e-mail.com){.external}“.
-
-
-### Lassen Sie sich nicht drangen
-Betrügerische E-Mails täuschen oft eine besondere Dringlichkeit vor, damit Sie das Gefühl haben, möglichst schnell reagieren zu müssen und dabei grundlegende Sicherheitsregeln vergessen.
-
-
-### Prufen Sie enthaltene Links
-Links können durchaus richtig aussehen, aber dennoch auf eine gefälschte Seite führen. Gehen Sie mit der Maus über den Link oder Button in der E-Mail, um die Internetadresse (URL) anzuzeigen.
-
-Klicken Sie nicht darauf, falls Ihnen etwas an der Adresse verdächtig erscheint.
-
-Bei den folgenden Seiten handelt es sich um offizielle Seiten von OVH:
-
-- ovh.com, ovh.com.au, ovh.co.uk, ovh.cz, ovh.de, ovh.es, ovh-hosting.fi, ovh.ie,
-- ovh.it, ovh.lt, ovh.nl, ovh.pl, ovh.pt, ovh.sn, ovh.us
-- soyoustart.com
-- kimsufi.com
-- runabove.com
-- hubic.com
-- ovhtelecom.fr
-
-
-### Melden Sie Phishing-Seiten
-Helfen Sie dabei, Phishing-Seiten aus dem Internet zu entfernen. Wenn Sie glauben, dass Sie eine gefälschte Website gefunden haben, über die persönliche Daten von Internetnutzern gesammelt werden, können Sie diese auf [https://safebrowsing.google.com/safebrowsing/report_phish/](https://safebrowsing.google.com/safebrowsing/report_phish/){.external} melden.
-
-
-## Was tun, wenn Sie Opfer von Phishing wurden?
-
-### Sie haben Ihre Zahlungsinformationen auf einer betrugerischen Website angegeben
-Kontaktieren Sie umgehend Ihren Zahlungsdienstleister, um Ihr jeweiliges Zahlungsmittel sperren zu lassen und geben Sie wenn möglich den Zeitpunkt an, zu dem Sie Ihre Zahlungsinformationen angegeben haben.
-
-Nur Ihr Zahlungsdienstleister kann Zahlungen stornieren, die möglicherweise bereits ohne Ihr Wissen durchgeführt wurden.
-
-
-### Sie haben Ihr OVH Passwort auf einer betrugerischen Website angegeben
-Gehen Sie in Ihr OVH Kundencenter und ändern Sie sofort Ihr Passwort. Wir empfehlen Ihnen, auch die Zwei-Faktor-Authentifizierung zu aktivieren, um Ihren Account in Zukunft besser zu schützen. Wie Sie diese aktivieren, können Sie im ersten Teil dieser Anleitung nachlesen.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
