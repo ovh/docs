@@ -1,92 +1,52 @@
 ---
-title: Erstellung eines Zugangs zu Horizon
-excerpt: ''
+title: 'Auf das Horizon-Interface zugreifen'
+excerpt: 'In dieser Anleitung erfahren Sie, wie Sie auf das Horizon-Interface zugreifen.'
 slug: erstellung_eines_zugangs_zu_horizon
 legacy_guide_number: g1773
+section: 'Über das Horizon-Interface'
 ---
 
+**Stand 16.08.2018**
 
-## 
-In dieser Hilfe wird die Erstellung eines Zugangs zu Horizon beschrieben, dem von OpenStack angebotenen offiziellen Verwaltungs-Interface. Einige Funktionen sind nur in diesem Interface verfügbar.
+## Einleitung
 
+Horizon ist das grafische Verwaltungsinterface von OpenStack. Manche Funktionen sind ausschließlich über dieses Interface verfügbar.
 
-## 
-
-- Verbinden Sie sich mit dem [Kundencenter](https://www.ovh.com/manager/cloud/) und begeben Sie sich in das Menü Verwaltung und Verbrauch des Projekts
-
+**Hier erfahren Sie, wie Sie auf das Horizon-Interface zugreifen.**
 
 
-![](images/img_2879.jpg){.thumbnail}
+## Voraussetzungen
 
-- Klicken Sie auf OpenStack
-
-
-
-![](images/img_2880.jpg){.thumbnail}
-
-- Klicken Sie auf Einen Benutzer hinzufügen
+- Sie haben ein Public Cloud Projekt erstellt.
 
 
+## Beschreibung
 
-![](images/img_2702.jpg){.thumbnail}
+### OpenStack-Benutzer erstellen
 
-- Geben Sie eine "Beschreibung des Benutzers" an
+Für den Zugriff auf Horizon benötigen Sie zunächst einen OpenStack-Benutzer. Gehen Sie hierfür in Ihrem Kundencenter in den Bereich `Cloud`{.action} und dort in den Bereich `Server`{.action}. Wählen Sie dann das betreffende Projekt aus  und klicken Sie anschließend in der linken Spalte auf `OpenStack`{.action}:
 
+![Benutzer hinzufügen](images/1_H_add_user.png){.thumbnail}
 
+Klicken Sie nun auf den Button `Einen Benutzer hinzufügen`{.action} und geben Sie anschließend eine Beschreibung für diesen Benutzer an. Der Login sowie das Passwort werden dann automatisch erstellt. Sobald dieser Vorgang abgeschlossen ist, wird eine Bestätigungsmeldung zur Erstellung des Benutzerkontos angezeigt.
 
-## Hinweis:
-Diese Beschreibung dient lediglich dazu, den Benutzer einfacher in der Liste aufzufinden - sie wird nicht für die Verbindung verwendet.
+Das Passwort bleibt im Kundencenter bis zur Aktualisierung der Seite sichtbar. Dieses Passwort kann aufbewahrt und für einen späteren Login erneut verwendet werden. Bei Bedarf kann aber auch ein neues Passwort erstellt werden. Klicken Sie hierfür auf das kleine Aktualisierungs-Icon neben Ihrem aktuellen Passwort:
 
-- Klicken Sie auf Diesen Benutzer erstellen
+![Projektmenü](images/2_H_user_manage.png){.thumbnail}
 
+### In OpenStack Horizon einloggen
 
+Um das Menü anzuzeigen, klicken Sie auf das kleine Piktogramm am Ende der Zeile (`...`{.action}). Klicken Sie dort auf den Link `OpenStack Horizon öffnen`{.action}. Nun erscheint die Login-Seite von [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external}. Um sich einzuloggen, geben Sie einfach Ihren Benutzernamen (`User Name`) und Ihr Passwort ein.
 
-![](images/img_2703.jpg){.thumbnail}
+![Projektmenü](images/3_H_open_menu.png){.thumbnail}
 
-- Der Benutzer wurde erstellt, bewahren Sie das automatisch erstellte Passwort gut auf, da dieses später nicht mehr abgerufen werden kann.
+![Login-Seite](images/4_H_login_window.png){.thumbnail}
 
+Nach dem Login erscheint das OpenStack Horizon-Interface:
 
-Sie haben dann Zugriff auf die Liste der Benutzer:
-
-![Liste der Benutzer](images/img_2704.jpg){.thumbnail}
-Dort werden für jeden Benutzer die Kennung, die Beschreibung sowie drei Buttons angezeigt. Diese erlauben:
-
-- Das Zurücksetzen des Passworts
-
-
-
-![](images/img_2628.jpg){.thumbnail}
-
-## Achtung:
-Mit dieser Funktion wird nicht Ihr bestehendes Passwort angezeigt, sondern es wird ein neues Passwort generiert.
-
-- Das Löschen des Benutzers
+![Horizon-Interface](images/5_H_view.png){.thumbnail}
 
 
+## Weiterführende Informationen
 
-![](images/img_2629.jpg){.thumbnail}
-
-
-## 
-
-- Klicken Sie auf das Schraubenschlüssel-Icon
-
-
-
-![](images/img_3031.jpg){.thumbnail}
-
-- Wählen Sie OpenStack Horizon öffnen aus
-
-
-
-![](images/img_3032.jpg){.thumbnail}
-
-- Sie gelangen dann zu [folgender Adresse](https://horizon.cloud.ovh.net/project/)
-- Dort können Sie sich mit der zuvor erstellten Benutzerkennung und dem dazugehörigen Passwort anmelden.
-
-
-
-
-## 
-[Zurück zum Index der Cloud Hilfen]({legacy}1785)
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
