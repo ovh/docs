@@ -34,7 +34,7 @@ Confirmez vos options sur l'écran suivant, puis redémarrez votre serveur pour 
 
 ![Redémarrer le serveur](images/rescue-mode-02.png){.thumbnail}
 
-Votre serveur va maintenant redémarrer en mode rescue et vous recevrez les informations d'identification pour vous connecter via l'adresse e-mail que vous avez fournie. Pour quitter le mode rescue, changez simplement le mode de démarrage en `Booter sur le disque dur`{.action} puis redémarrez de nouveau votre serveur.
+Votre serveur va maintenant redémarrer en mode rescue, vous recevrez ensuite les informations d'identification pour vous connecter via l'adresse e-mail que vous avez fournie. Pour quitter le mode rescue, changez simplement le mode de démarrage en `Booter sur le disque dur`{.action} puis redémarrez de nouveau votre serveur.
 
 ### Linux
 
