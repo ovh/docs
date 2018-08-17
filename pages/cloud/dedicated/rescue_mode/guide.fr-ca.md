@@ -1,11 +1,11 @@
 ---
-title: Activer et utiliser le mode rescue
+title: 'Activer et utiliser le mode rescue'
 slug: rescue-mode
-excerpt: Comment activer et utiliser le mode rescue sur un serveur dédié
-section: Diagnostic et mode Rescue
+excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
+section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 21/06/2018**
+**Dernière mise à jour le 16/08/2018**
 
 ## Objectif
 
@@ -17,12 +17,12 @@ Le mode rescue est un outil de votre serveur dédié. Il vous permet de démarre
 
 ## Prérequis
 
-- Avoir un accès en SSH (root) à votre [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}.
+- Avoir un accès en SSH (root) à votre [serveur dédié](https://www.ovh.com/ca/fr/serveurs-dedies/){.external}.
 
 
 ## En pratique
 
-Vous pouvez activer le mode rescue en vous connectant à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager/){.external}. Choisissez votre serveur dans la partie `Dédié`{.action} puis `Serveurs Dédiés`{.action}. Allez ensuite dans `État du serveur`{.action} > `Informations générales`{.action} > `Boot`{.action} et cliquez sur le bouton `Modifier`{.action} pour changer le mode de démarrage.
+Vous pouvez activer le mode rescue en vous connectant à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager/){.external}. Choisissez votre serveur dans la partie `Dédié`{.action} puis `Serveurs Dédiés`{.action}. Allez ensuite dans `État du serveur`{.action} > `Informations générales`{.action} > `...`{.action} et cliquez sur le bouton `Modifier`{.action} pour changer le mode de démarrage.
 
 ![Modifier le mode de démarrage](images/rescue-mode-01.png){.thumbnail}
 
@@ -30,10 +30,11 @@ Sur l’écran suivant, sélectionnez `Booter en mode rescue`{.action}. Si votre
 
 ![Mode rescue-pro](images/rescue-mode-03.png){.thumbnail}
 
-Confirmez vos options sur l'écran suivant, puis redémarrez votre serveur pour appliquer les modifications. Votre serveur va maintenant redémarrer en mode rescue et vous recevrez les informations d'identification pour vous connecter via l'adresse e-mail que vous avez fournie. Pour quitter le mode rescue, changez simplement le mode de démarrage en `Booter sur le disque dur`{.action} puis redémarrez votre serveur.
+Confirmez vos options sur l'écran suivant, puis redémarrez votre serveur pour appliquer les modifications. 
 
 ![Redémarrer le serveur](images/rescue-mode-02.png){.thumbnail}
 
+Votre serveur va maintenant redémarrer en mode rescue, vous recevrez ensuite les informations d'identification pour vous connecter via l'adresse e-mail que vous avez fournie. Pour quitter le mode rescue, changez simplement le mode de démarrage en `Booter sur le disque dur`{.action} puis redémarrez de nouveau votre serveur.
 
 ### Linux
 
@@ -51,6 +52,12 @@ Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos inform
 ![Interface web du mode rescue](images/rescue-mode-04.png){.thumbnail}
 
 #### Utiliser le SSH (lignes de commande)
+
+
+> [!primary]
+> 
+> En cas d'utilisation d'une clé SSH (active également dans votre espace client OVH), aucun mot de passe ne vous sera envoyé. Une fois le serveur en mode Rescue vous pourrez vous connectez directement avec votre clé SSH).
+>
 
 Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos informations d'accès en mode rescue. Vous devrez alors accéder à votre serveur via les lignes de commande habituelles, mais en utilisant le mot de passe root du mode rescue au lieu du vôtre.
 
@@ -103,7 +110,7 @@ rescue:~# mount /dev/hda1 /mnt/
 
 #### Accéder à WinRescue
 
-Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos informations d'accès en mode rescue. Pour les utiliser, vous devrez télécharger et installer une console VNC ou utiliser le module `IPMI` dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager/){.external}.
+Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos informations d'accès en mode rescue. Pour les utiliser, vous devrez télécharger et installer une console VNC ou utiliser le module `IPMI` dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager/){.external}.
 
 ![Winrescue Windows](images/rescue-mode-06.png){.thumbnail}
 
