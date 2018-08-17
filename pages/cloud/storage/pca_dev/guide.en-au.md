@@ -68,7 +68,8 @@ Note: The following gives the syntax for unscoped authorization i.e. the token w
          }
      }
  }
- ```
+```
+
 **Sample response**
 
 ```
@@ -140,7 +141,7 @@ Note: The following gives the syntax for unscoped authorization i.e. the token w
        }
     }
  }
- ```
+```
 
 ## Regions
 OVH Public Cloud Archive is available in various geographical regions. Regions are composed of zones, themselves formed by set of resources potentially placed in distinct datacenters. Each region comes with a service endpoint. An exhaustive list of usable regions for OVH Public Cloud Archive and OVH Public Cloud Storage is easily identifiable from the service catalog of the [Authentication](#authentication){.internal} step.
@@ -188,7 +189,8 @@ Note that a container's storage policy is immutable.
  Host: storage.<region>.cloud.ovh.net
  X-Auth-Token: <token>
  X-Storage-Policy: PCA
- ```
+```
+
 **Sample request**
 
 ```
@@ -196,7 +198,7 @@ Note that a container's storage policy is immutable.
  Host: storage.gra1.cloud.ovh.net
  X-Auth-Token: 3caec5b614a94326b0e9b847661e3d6a
  X-Storage-Policy: PCA
- ```
+```
 **Sample response**
 
 ```
@@ -205,14 +207,14 @@ Note that a container's storage policy is immutable.
  X-Trans-Id: tx2acf06eb506d441ab605a-0058c15384
  X-Openstack-Request-Id: tx2acf06eb506d441ab605a-0058c15384
  Date: Thu, 09 Mar 2017 13:07:17 GMT
- ```
+```
 
 ### Getting a container inventory
 When you upload an archive, OVH Public Cloud Archive updates the container inventory with informations about this archive. This inventory is created and available for reading immediately after the archive data has been entirely received.
 
 In order to support the particularities of at-rest storage, OVH has slighty modified the generation of this inventory compared to regular Openstack Swift infrastructures with the aim to include additionnal information related to its particular storage process. This assures you have essential informations about your archive, such as its unsealing state and the retrieval delay before it is ready for download.
 
-See greater details about this [request](../api/guide.en-au.md){.ref}.
+See greater details about this [request](../api/guide.en-gb.md){.ref}.
 
 **Syntax**
 
@@ -221,7 +223,7 @@ See greater details about this [request](../api/guide.en-au.md){.ref}.
  Host: storage.<region>.cloud.ovh.net
  Accept: application/json
  X-Auth-Token: <token>
- ```
+```
 **Sample request**
 
 ```
@@ -229,7 +231,7 @@ See greater details about this [request](../api/guide.en-au.md){.ref}.
  Host: storage.gra1.cloud.ovh.net
  Accept: application/json
  X-Auth-Token: 3caec5b614a94326b0e9b847661e3d6a
- ```
+```
 **Sample response**
 
 ```
@@ -275,7 +277,7 @@ See greater details about this [request](../api/guide.en-au.md){.ref}.
        "last_modified" : "2017-03-07T15:13:42.624310"
     }
  ]
- ```
+```
 
 ### Deleting a container
 If you wish to delete a container, you first need to delete all archives it contains. Once a container is empty, deletion is a simple operation that solely requires the container name.
@@ -286,14 +288,14 @@ If you wish to delete a container, you first need to delete all archives it cont
  DELETE /v1/<account>/<container> HTTP/1.1
  Host: storage.<region>.cloud.ovh.net
  X-Auth-Token: <token>
- ```
+```
 **Sample request**
 
 ```
  DELETE /v1/AUTH_e80c212388cd4d509abc959643993b9f/archives HTTP/1.1
  Host: storage.gra1.cloud.ovh.net
  X-Auth-Token: 3caec5b614a94326b0e9b847661e3d6a
- ```
+```
 **Sample response**
 
 ```
@@ -302,7 +304,7 @@ If you wish to delete a container, you first need to delete all archives it cont
  X-Trans-Id: txc578ec094c764908a9feb-0058c153cc
  X-Openstack-Request-Id: txc578ec094c764908a9feb-0058c153cc
  Date: Thu, 09 Mar 2017 13:08:28 GMT
- ```
+```
 
 ## Archives
 OVH Public Cloud Archive provides you with the ability to transfer generic objects called archives. An archive can be of any size and its content can be of any type. An archive differs from a traditional Openstack Swift object as it carries a supplementary attribute: the *retrieval state*. Indeed, archives can be sealed and unsealed.
@@ -326,7 +328,7 @@ When uploading an archive to OVH Public Cloud Archive, it is very important to v
  X-Auth-Token: <token>
  Content-Length: <archive_size>
  Etag: <archive_md5sum>
- ```
+```
 **Sample request**
 
 ```
@@ -337,7 +339,7 @@ When uploading an archive to OVH Public Cloud Archive, it is very important to v
  Etag: 1e50210a0202497fb79bc38b6ade6c34
  
  [bytes]
- ```
+```
 **Sample response**
 
 ```
@@ -348,14 +350,14 @@ When uploading an archive to OVH Public Cloud Archive, it is very important to v
  X-Trans-Id: txa1e833e835c749a883ff4-0058c16e71
  X-Openstack-Request-Id: txa1e833e835c749a883ff4-0058c16e71
  Date: Thu, 09 Mar 2017 15:02:18 GMT
- ```
+```
 
 ### Unsealing an archive
 OVH Public Cloud Archive stores data so that cost is optimal at the expense of some latency in the retrieval process. To access your archive, an unsealing request must be received with the container and archive names it relates to.
 
 Archive unseal requests are identical to archive download requests. Only the response sent by OVH Public Cloud Archive differs and is a particularity of the underlying Openstack Swift infrastructure that OVH runs. Once an unsealing request is received it cannot be cancelled. Further unsealing requests will have no other effect than polling the operation ETA.
 
-See further explanations about this [request](../api/guide.en-au.md){.ref}.
+See further explanations about this [request](../api/guide.en-gb.md){.ref}.
 
 **Syntax**
 
@@ -363,14 +365,14 @@ See further explanations about this [request](../api/guide.en-au.md){.ref}.
  GET /v1/<account>/<container>/<archive> HTTP/1.1
  Host: storage.<region>.cloud.ovh.net
  X-Auth-Token: <token>
- ```
+```
 **Sample request**
 
 ```
  GET /v1/AUTH_e80c212388cd4d509abc959643993b9f/archives/archive.zip HTTP/1.1
  Host: storage.gra1.cloud.ovh.net
  X-Auth-Token: 3caec5b614a94326b0e9b847661e3d6a
- ```
+```
 **Sample response**
 
 ```
@@ -382,7 +384,7 @@ See further explanations about this [request](../api/guide.en-au.md){.ref}.
  Date: Thu, 09 Mar 2017 16:13:05 GMT
  
  <html><h1>Too Many Requests</h1><p>Too Many Requests.</p></html>
- ```
+```
 
 ### Downloading an archive
 Once you archive has been unsealed in OVH Public Cloud Archive, you can download it during 24 hours with unlimited throughput and access frequency. At the end of the retrieval span, the archive will be sealed again.
@@ -395,14 +397,14 @@ Since OVH Public Cloud Archive is optimized for at-rest storage, if a new unseal
  GET /v1/<account>/<container>/<archive> HTTP/1.1
  Host: storage.<region>.cloud.ovh.net
  X-Auth-Token: <token>
- ```
+```
 **Sample request**
 
 ```
  GET /v1/AUTH_e80c212388cd4d509abc959643993b9f/archives/archive.zip HTTP/1.1
  Host: storage.gra1.cloud.ovh.net
  X-Auth-Token: 3caec5b614a94326b0e9b847661e3d6a
- ```
+```
 **Sample response**
 
 ```
@@ -412,7 +414,7 @@ Since OVH Public Cloud Archive is optimized for at-rest storage, if a new unseal
  Etag: 1e50210a0202497fb79bc38b6ade6c34
  
  [bytes]
- ```
+```
 
 ### Deleting an archive
 Even though archive downloading has inherent latency involved, archive deletion is a one step operation processed immediately by OVH Public Cloud Archive. Be aware that as such this operation is irrevocable and cannot be cancelled. To delete an archive you need to provide its name and the container it is stored in.
@@ -423,14 +425,14 @@ Even though archive downloading has inherent latency involved, archive deletion 
  DELETE /v1/<account>/<container>/<archive> HTTP/1.1
  Host: storage.<region>.cloud.ovh.net
  X-Auth-Token: <token>
- ```
+```
 **Sample request**
 
 ```
  DELETE /v1/AUTH_e80c212388cd4d509abc959643993b9f/archives/archive1.zip HTTP/1.1
  Host: storage.gra1.cloud.ovh.net
  X-Auth-Token: 3caec5b614a94326b0e9b847661e3d6a
- ```
+```
 **Sample response**
 
 ```
@@ -439,4 +441,4 @@ Even though archive downloading has inherent latency involved, archive deletion 
  X-Trans-Id: txcf8e98d30f714c85a323d-0058c16813
  X-Openstack-Request-Id: txcf8e98d30f714c85a323d-0058c16813
  Date: Thu, 09 Mar 2017 14:35:00 GMT
- ```
+```

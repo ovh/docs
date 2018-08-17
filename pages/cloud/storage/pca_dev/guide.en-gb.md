@@ -69,6 +69,7 @@ Note: The following gives the syntax for unscoped authorization i.e. the token w
      }
  }
 ```
+
 **Sample response**
 
 ```
@@ -189,6 +190,7 @@ Note that a container's storage policy is immutable.
  X-Auth-Token: <token>
  X-Storage-Policy: PCA
 ```
+
 **Sample request**
 
 ```
@@ -196,7 +198,7 @@ Note that a container's storage policy is immutable.
  Host: storage.gra1.cloud.ovh.net
  X-Auth-Token: 3caec5b614a94326b0e9b847661e3d6a
  X-Storage-Policy: PCA
- ```
+```
 **Sample response**
 
 ```
