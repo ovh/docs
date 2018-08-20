@@ -1,11 +1,11 @@
 ---
-title: Použití konzole IPMI pro dedikované servery 
-slug: pouziti-ipmi-dedikovane-servery 
-excerpt: Díky IPMI se můžete připojit ke svému serveru bez použití externího softwaru 
-section: Začínáme
+title: 'Použití konzole IPMI pro dedikované servery'
+slug: pouziti-ipmi-dedikovane-servery
+excerpt: 'Díky IPMI se můžete připojit ke svému serveru bez použití externího softwaru'
+section: 'První kroky'
 ---
 
-**Poslední aktualizace 01/02/2018**
+**Poslední aktualizace 20/08/2018**
 
 ## Cíl
 
@@ -15,7 +15,8 @@ Mějte prosím na paměti, že toto řešení je někdy také označováno jako 
 
 ## Prerekvizity
 
-- Přihlášení do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sekce `Dedicated`{.action}, záložka `Dedikované servery`{.action}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager).
+
 
 ## Postup
 
@@ -23,7 +24,7 @@ Připojení pomocí konzole IPMI lze provést dvěma způsoby: prostřednictvím
 
 ### Připojení přes Java applet
 
-Má-li Java applet fungovat, musí být na Vašem počítači nainstalováno prostředí Java. Pokud na Vašem počítači prostředí Java chybí, přejděte na [oficiální stránky](https://www.java.com/fr/download/){.external}.
+Má-li Java applet fungovat, musí být na Vašem počítači nainstalováno prostředí Java. Pokud na Vašem počítači prostředí Java chybí, přejděte na [oficiální stránky](https://www.java.com/en/download/){.external}.
 
 V Zákaznickém prostoru OVH přejděte do sekce  `IPMI`{.action} a klikněte na tlačítko `Java applet (KVM)`{.action}:
 
@@ -64,4 +65,4 @@ Restart může trvat několik minut.
 
 ## Kam dál
 
-Přidejte se k naší uživatelské komunitě na <https://community.ovh.com/en/>.
+Sdílejte své zkušenosti s uživatelskou komunitou na <https://community.ovh.com/en/>.
