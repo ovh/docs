@@ -1,11 +1,11 @@
 ---
-title: Verwendung der IPMI-Konsole für Dedicated Server
+title: 'Verwendung der IPMI-Konsole für Dedicated Server'
 slug: verwendung-ipmi-dedicated-server
-excerpt: Mit IPMI können Sie sich mit Ihrem Server verbinden, ohne auf externe Software zurückgreifen zu müssen.
+excerpt: 'Mit IPMI können Sie sich mit Ihrem Server verbinden, ohne auf externe Software zurückgreifen zu müssen.'
 section: Starthilfe
 ---
 
-**Stand 22.02.2018**
+**Stand 20.08.2018**
 
 ## Einleitung
 
@@ -15,7 +15,7 @@ Bitte beachten Sie, dass in der Anleitung auch der Begriff KVM (Keyboard Video a
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Dedicated`{.action} unter `Dedicated Server`{.action}.
+- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
 
 ## Beschreibung
 
@@ -41,9 +41,9 @@ Danach können Sie Ihren Server wie gewohnt verwalten.
 
 ### Verbindung über den Browser (Serial over LAN - SoL).
 
-Auch wenn die Verbindung per Java-Applet empfohlen wird, ist es durchaus möglich, IPMI auch über den Browser (Serial over LAN) zu verwenden. Klicken Sie dazu im Tab `IPMI`{.action} auf den Button `Mit Ihrem Browser (SoL)`:
+Auch wenn die Verbindung per Java-Applet empfohlen wird, ist es durchaus möglich, IPMI auch über den Browser (Serial over LAN) zu verwenden. Klicken Sie dazu im Tab `IPMI`{.action} auf den Button `Mit Ihrem Browser (SoL)`{.action}:
 
-![IPMI SoL activation](images/sol_ipmi_activation.png){.thumbnail}
+![IPMI SoL Aktivierung](images/sol_ipmi_activation.png){.thumbnail}
 
 > [!warning]
 >
@@ -52,13 +52,13 @@ Auch wenn die Verbindung per Java-Applet empfohlen wird, ist es durchaus möglic
 
 ### IPMI testen und neu starten
 
-Es ist möglich, dass IPMI nicht mehr reagiert. Wenn Sie keine Verbindung zu IPMI herstellen können, führen Sie zunächst einen Funktionstest durch, indem Sie auf `IPMI Test`{.action} klicken:
+Es ist möglich, dass IPMI nicht mehr reagiert. Wenn Sie keine Verbindung zu IPMI herstellen können, führen Sie zunächst einen Funktionstest durch, indem Sie auf `IPMI Test`{.action} klicken und sich das Diagnoseergebnis anzeigen lassen:
 
-![IPMI test](images/ipmi_test.png){.thumbnail}
+![IPMI Test](images/ipmi_test.png){.thumbnail}
 
 Wenn, wie in unserem Beispiel, alles normal erscheint, liegt wahrscheinlich ein lokales Problem vor (Internetverbindung, Fehler auf lokalem Rechner usw.). Wenn das Problem mit IPMI zusammenhängt, können Sie mit einem Klick auf die Schaltfläche `IPMI neu starten`{.action} einen Neustart durchführen.
 
-![IPMI test](images/ipmi_reboot.png){.thumbnail}
+![IPMI Test](images/ipmi_reboot.png){.thumbnail}
 
 Der Neustart dauert mehrere Minuten.
 
