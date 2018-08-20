@@ -1,14 +1,14 @@
 ---
-title: Configuratie van het OVH
+title: 'Configuratie van de Network Firewall '
 slug: firewall-network
-section: Netwerk & IP
+section: 'Netwerk & IP'
 ---
 
 **Laatste update 18-01-2018**
 
 ## Introductie
 
-Om de wereldwijde infrastructuur en servers van zijn klanten te beschermen, biedt OVH een configureerbare firewall die kan worden geïntegreerd met de **Anti-DDoS** (VAC) -oplossing: Firewall Network. Deze optie beperkt de gevoeligheid van diensten voor aanvallen vanaf het openbare netwerk.
+Om de wereldwijde infrastructuur en servers van zijn klanten te beschermen, biedt OVH een configureerbare firewall die kan worden geïntegreerd met de **Anti-DDoS** (VAC) -oplossing: Network Firewall. Deze optie beperkt de gevoeligheid van diensten voor aanvallen vanaf het openbare netwerk.
 
 **Deze handleiding beschrijft hoe u het kunt configureren**.
 
@@ -23,14 +23,14 @@ Om de wereldwijde infrastructuur en servers van zijn klanten te beschermen, bied
 
 ## Vereisten
 
-- U moet geabonneerd zijn op een OVH-dienst met de optie Firewall Network: ([Dedicated server](https://www.ovh.nl/dedicated_servers/){.external}, [VPS](https://www.ovh.nl/vps/){.external}, [Public Cloud instance](https://www.ovh.nl/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.nl/private-cloud/){.external}, [Failover-IP](https://www.ovh.nl/dedicated_servers/ip_failover.xml){.external}...)   
+- U moet geabonneerd zijn op een OVH dienst met de Network Firewall optie: ([Dedicated server](https://www.ovh.nl/dedicated_servers/){.external}, [VPS](https://www.ovh.nl/vps/){.external}, [Public Cloud instance](https://www.ovh.nl/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.nl/private-cloud/){.external}, [Failover-IP](https://www.ovh.nl/dedicated_servers/ip_failover.xml){.external}...)   
 - U moet toegang hebben tot een [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - U moet basiskennis hebben van netwerken. 
 
 
 ## Instructie
 
-### Activeer Firewall Network
+### Activeer de Network Firewall
 
 > [!primary]
 >
@@ -61,11 +61,11 @@ U kunt maximaal **20 regels per IP-adres** instellen.
 > [!primary]
 >
 > - UDP-fragmentatie is standaard uitgeschakeld (DROP). Als u een VPN gebruikt, vergeet dan niet - na activering van het firewallnetwerk - om uw maximale transmissie-eenheid (MTU) correct te configureren. Op OpenVPN kunt u bijvoorbeeld de `MTU-test` aanvinken.
-> - Firewall Network heeft geen invloed op het OVH-netwerk. De gedefinieerde regels hebben daarom geen effect op de verbindingen in het interne netwerk.
+> - Network Firewall heeft geen invloed op het OVH netwerk. De gedefinieerde regels hebben daarom geen effect op de verbindingen in het interne netwerk.
 >
 
 
-### Configureer Firewall Network
+### Configureer Network Firewall
 
 Regel wordt toegevoegd door rechts te klikken op `Regel toevoegen`{.action}:
 
@@ -110,4 +110,4 @@ Een pakket voor poort 80 / TCP wordt bijvoorbeeld opgevangen door regel nummer 2
 
 ## Verder
 
-Ga in gesprek met onze communitygebruikers via <https://community.ovh.com>.
+Ga in gesprek met onze communitygebruikers via <https://community.ovh.com/en/>.
