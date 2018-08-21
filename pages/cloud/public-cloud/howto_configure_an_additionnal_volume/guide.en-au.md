@@ -7,14 +7,14 @@ section: Storage
 
 
 ## Preamble
-You have probably [created a new additional volume](../guide.en-au.md){.ref}, or an additional disk.
+You have probably [created a new additional volume](https://docs.ovh.com/gb/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/){.ref}, or an additional disk.
 
 This guide will explain how to create an additional disk, and then how to attach it to one of your instances.
 
 
 ### Prerequisites
-- An [instance](../guide.en-au.md){.ref}
-- An [additional volume](../guide.en-au.md){.ref} attached
+- An [instance](https://docs.ovh.com/gb/en/public-cloud/create_an_instance_in_your_ovh_customer_account/){.external}
+- An [additional volume](https://docs.ovh.com/gb/en/public-cloud/create-an-additional-volume-and-attach-it-to-an-instance/){.external} attached
 
 
 ## Disk mount
