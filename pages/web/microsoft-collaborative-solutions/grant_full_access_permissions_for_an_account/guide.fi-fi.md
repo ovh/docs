@@ -1,55 +1,139 @@
 ---
-title: 'Exchange 2013: Täysien oikeuksien antaminen tilille'
-excerpt: ''
+title: 'Oikeuksien jakaminen Exchange-tilillä'
 slug: exchange_2013_taysien_oikeuksien_antaminen_tilille
-legacy_guide_number: g1249
+excerpt: 'Katso, kuinka voit antaa Exchange-tilisi oikeuksia toiselle osapuolelle'
+section: 'Ominaisuudet ja Exchangen jakaminen'
 ---
 
+**Päivitetty 21.8.2018**
 
-## Täysien oikeuksien antaminen: Vaihe 1
-Tämä toimenpide pitää tehdä [Web Hallintapaneelissa](https://www.ovh.com/manager/web/login.html).
+## Tavoite
 
-Kun olet kirjautunut, valitse Exchange palvelusi klikkaamalla sitä vasemmalta kohdasta "Platforms".
+Exchange-palvelun avulla voidaan hyödyntää yrityssähköpostiosoitteita, jotka helpottavat eri ominaisuuksiensa ansiosta tiimityöskentelyä. Yksi niistä mahdollistaa tiettyjen oikeuksien jakamisen (kuten viestien lähetyksen tai pääsyoikeuden) eri Exchange-tilien välillä.
 
-Klikkaa "Email accounts" välilehteä, sitten klikkaa "More actions" ikonia oikealla (kolme sinistä pistettä) ja valitse "Manage delegations".
+**Katso, kuinka voit antaa Exchange-tilisi oikeuksia toiselle osapuolelle.**
 
-![](images/img_1025.jpg){.thumbnail}
+## Edellytykset
 
+- Sinulla on [Exchange-tuote](https://www.ovh-hosting.fi/sahkopostit/){.external}.
+- Sinulla on vähintään kaksi aktiivista Exchange-tiliä konfiguroituna samalla OVH:n Exchange-alustalla.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager).
+- Sinulla on tunnukset sille Exchange-tilille, joka tulee saamaan uusia jaettuja oikeuksia.
 
-## Täysien oikeuksien antaminen: Vaihe 2
-Hallinnoinnin konfigurointi-ikkuna aukeaa ja siellä voit antaa lähetysoikeudet tai lukuoikeudet haluamallesi tilille.
+## Käytännössä
 
-Rastita vain laatikot ja klikkaa "Next".
+Ennen aloittamista määritä oikeudet, jotka tulet jakamaan. Muistathan, että oikeuksia jakaessasi annat yhdelle tai useammalle Exchange-tilille ylimääräisiä oikeuksia kyseistä Exchange-tiliä koskien.
 
-![](images/img_1026.jpg){.thumbnail}
+|Oikeudet|Kuvaus|
+|---|---|
+|Lähetysoikeudet|Mahdollistaa sähköpostiviestin lähetyksen toisen nimissä. Viestin lähettänyt tili ei näy lähettäjänä vaan tili, johon tällä on lähetysoikeudet. Viestissä ei ole mainintaa siitä, että se on lähetetty toisen henkilön kautta.|
+|Edustajakäyttöoikeudet|Mahdollistaa sähköpostiviestin lähetyksen toisen puolesta. Viestin lähettänyt tili ei näy lähettäjänä vaan tili, johon tällä on edustuskäyttöoikeudet. Viestissä kuitenkin lukee, että se on lähetetty viestin oikean lähettäjän toimesta.|
+|Pääsyoikeudet|Antaa pelkän lukuoikeuden tilille, jonka pääsyoikeus on jaettu. Tämä oikeus ei mahdollista viestien lähetystä vaan ainoastaan sisällön lukemisen.|
 
+> [!warning]
+>
+> “Lähetysoikeutta” ei ole mahdollista yhdistää “Edustajakäyttöoikeuksien” kanssa. Muut yhdistelmät ovat kuitenkin mahdollisia.
+> 
 
-## Täysien oikeuksien antaminen: Vaihe 3
-Yhteenveto delegoinneista ilmestyy hyväksyttäväksesi.
+Kun olet tunnistanut tilin, jonka oikeuksia jaetaan, määrittänyt jaettavat oikeudet sekä tunnistanut lisäksi ylimääräiset oikeudet saavan tilin tai tilit, jatka seuraavaan vaiheeseen.
 
-Voi kestää hetken, että kaikki muutokset astuvat voimaan.
+### 1\. vaihe: Jaon toteutus
 
-Klikkaa "Confirm".
+Toimenpiteen aloittamiseksi kirjaudu [OVH:n hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}. Klikkaa kohtaa `Microsoft`{.action} vasemman reunan palveluvalikossa, sitten `Exchange`{.action}. Klikkaa sitten sitä Exchange-palvelua, jossa tili, jonka oikeuksia jaetaan, sijaitsee. Mene lopuksi välilehdelle `Sähköpostit`{.action}.
 
-![](images/img_1027.jpg){.thumbnail}
+Näkyviin tulevassa taulukossa on kaikki Exchange-palveluusi liitetyt tilit. Klikkaa oikeuksien jakamisen kohteena olevan tilin oikealla puolella olevaa kolmea pistettä ja sitten `Valtuutusten hallinta`{.action}.
 
+![valtuutus](images/delegation-step1.png){.thumbnail}
 
-## Outlook Web Appin asetukset: Vaihe 1
-Voit nyt tarkistaa että toisen käyttäjän tili näkyy ensimmäiselle käyttäjälle.
+Valitse näkyviin tulevalla sivulla oikeudet, jotka haluat jakaa. Niiden on vastattava yhtä tai useampaa oikeudet saavaa tiliä. Klikkaa sitten `Seuraava`{.action}.
 
-Jos halaut nähdä kaiken yhdessä näkymässä, oikealla napilla klikkaa sähköpostitilisi nimeä vasemmalla ja sitten valitse "add shared folder".
+![valtuutus](images/delegation-step2.png){.thumbnail}
 
-![](images/img_1028.jpg){.thumbnail}
+Käytä muutama minuutti muutosten yhteenvedon huolelliseen tarkistamiseen. Jos kaikki on kunnossa, klikkaa `Vahvista`{.action}. Muutaman minuutin kuluttua jako luodaan palvelimillamme.
 
+Kun jako on konfiguroitu, *test@mypersonnaldomain.ovh* voi suorittaa tilille *test2@mypersonnaldomain.ovh* valitut toiminnot.
 
-## Outlook Web Appin asetukset: Vaihe 2
-Syötä toisen tilin käyttäjänimi hakukenttään ja klikkaa "add".
+### 2\. vaihe: Jaettujen oikeuksien käyttäminen
 
-![](images/img_1029.jpg){.thumbnail}
+Nyt kun oikeudet on jaettu, ei ole muuta jäljellä kuin niiden käyttö. Varmista ennen jatkamista, että sinulla on jaetut oikeudet saaneen Exchange-tilin tunnukset.
 
+Toimintatapa on erilainen riippuen jaetuista oikeuksista sekä ohjelmistosta tai verkkokäyttöliittymästä, jota käytät Exchange-tilillesi kirjautumista varten. Jatka tämän dokumentaation lukemista jakamiesi oikeuksien mukaan.
 
-## Outlook Web Appin asetukset: Vaihe 3
-Toisen käyttäjän tili näkyy nyt oikein listassa vasemmalla [Outlook Web Appissa](https://ex.mail.ovh.net/owa).
+- [“Pääsyoikeuden” käyttäminen](https://docs.ovh.com/fi/microsoft-collaborative-solutions/exchange_2013_taysien_oikeuksien_antaminen_tilille/#21-paasyoikeuden-kayttaminen){.external}
 
-![](images/img_1030.jpg){.thumbnail}
+- [“Lähetysoikeuden” käyttäminen](https://docs.ovh.com/fi/microsoft-collaborative-solutions/exchange_2013_taysien_oikeuksien_antaminen_tilille/#22-lahetysoikeuden-kayttaminen){.external}
 
+- [“Edustajakäyttöoikeuksien” käyttäminen](https://docs.ovh.com/fi/microsoft-collaborative-solutions/exchange_2013_taysien_oikeuksien_antaminen_tilille/#23-edustajakayttoikeuksien-kayttaminen){.external}
+
+> [!warning]
+>
+> Tämä ratkaisu edellyttää osaamista käyttämästäsi sovelluksesta tai käyttöliittymästä. Joitakin menettelyä koskevia tietoja on esitelty alla. Suosittelemme ottamaan kuitenkin yhteyttä erikoistuneeseen palveluntarjoajaan ja/tai sovelluksen tai käyttöliittymän kehittäjään, mikäli kohtaat hankaluuksia. Me emme voi tarjota avustusta asiassa.
+>
+
+#### 2.1 “Pääsyoikeuden” käyttäminen
+
+- **Webmail Outlook Web Application (OWA)**
+
+Mene osoitteeseen <https://www.ovh-hosting.fi/mail/> ja syötä jaettuja oikeuksia sisältävän Exchange-tilin tunnukset. Kun olet kirjautunut, klikkaa hiiren oikeaa painiketta vasemman puoleisessa valikossa ja valitse sitten `Lisää jaettu tiedosto`{.action}.
+
+Anna näkyviin tulevassa ikkunassa tilin nimi (sen, jonka oikeuksia on jaettu sinulle) ja klikkaa sitten `Lisää`{.action}. Tili näkyy nyt vasemman reunan valikossa ja sen sisältöä voidaan tarkastella.
+
+![valtuutus](images/delegation-step3.png){.thumbnail}
+
+- **Outlook Windowsille**
+
+Klikkaa Outlook 2016 -sovelluksessasi yläreunan valintapalkissa kohtaa `Tiedosto`{.action} ja klikkaa sitten `Tilin asetukset`{.action}. Klikkaa alasvetovalikosta uudestaan `Tilin asetukset`{.action}. Valitse näkyviin tulevassa ikkunassa jaetut oikeudet saanut tili ja klikkaa sitten `Muokkaa`{.action}. 
+
+![valtuutus](images/delegation-step4.png){.thumbnail}
+
+Klikkaa nyt `Lisäasetukset`{.action}. Valitse uudessa ikkunassa välilehti `Edistynyt`{.action} ja klikkaa sitten `Lisää`{.action}. Syötä jaetut oikeudet saaneen tilin nimi ja vahvista lisäys sen päätökseen asti. Tili näkyy nyt vasemman reunan valikossa ja sen sisältöä voidaan tarkastella.
+
+![valtuutus](images/delegation-step5.png){.thumbnail}
+
+#### 2.2 “Lähetysoikeuden” käyttäminen
+
+- **Webmail Outlook Web Application (OWA)**
+
+Mene osoitteeseen <https://www.ovh-hosting.fi/mail/> ja syötä jaettuja oikeuksia sisältävän Exchange-tilin tunnukset. Kun olet kirjautunut, aloita uuden viestin kirjoitus painamalla painiketta `+Uusi`{.action}.
+
+Klikkaa näkyviin tulevalla alueella kolmea pistettä esittävää painiketta ja sitten ` Näytä Lähettäjä-kenttä`{.action}. Klikkaa sitten painiketta `Lähettäjä`{.action} ja valitse osoite, joka näkyy lähettäjänä (jonka jaetut oikeudet sinulla on). Jos se ei tule näkyviin, poista jo syötetty osoite ja kirjoita haluamasi. 
+
+Nyt tarvitsee vain kirjoittaa ja lähettää viesti. 
+
+![valtuutus](images/delegation-step6.png){.thumbnail}
+
+- **Outlook Windowsille**
+
+Aloita Outlook 2016 -sovelluksellasi uuden viestin kirjoittaminen. Varmista, että painike `Lähettäjä`{.action} näkyy kirjoitusikkunassa. Jos näin ei ole, siirry välilehdelle `Asetukset`{.action} ja klikkaa sitten `Näytä Lähettäjä`{.action}.
+
+Klikkaa sitten painiketta `Lähettäjä`{.action} ja valitse osoite, joka näkyy lähettäjänä (jonka jaetut oikeudet sinulla on). Mikäli se ei tule näkyviin, klikkaa kohtaa `Muu sähköpostiosoite`{.action}, syötä haluamasi osoite ja vahvista. 
+
+Nyt tarvitsee vain kirjoittaa ja lähettää viesti. 
+
+![valtuutus](images/delegation-step7.png){.thumbnail}
+
+#### “Edustajakäyttöoikeuksien” käyttäminen
+
+- **Webmail Outlook Web Application (OWA)**
+
+Mene osoitteeseen <https://www.ovh-hosting.fi/mail/> ja syötä jaettuja oikeuksia sisältävän Exchange-tilin tunnukset. Kun olet kirjautunut, aloita uuden viestin kirjoitus painamalla painiketta `+Uusi`{.action}.
+
+Klikkaa näkyviin tulevalla alueella kolmea pistettä esittävää painiketta ja sitten ` Näytä Lähettäjä-kenttä`{.action}. Klikkaa sitten painiketta `Lähettäjä`{.action} ja valitse osoite, joka näkyy lähettäjänä (jonka jaetut oikeudet sinulla on). Jos se ei tule näkyviin, poista jo syötetty osoite ja kirjoita haluamasi. 
+
+Nyt tarvitsee vain kirjoittaa ja lähettää viesti. 
+
+![valtuutus](images/delegation-step6.png){.thumbnail}
+
+- **Outlook Windowsille**
+
+Aloita Outlook 2016 -sovelluksellasi uuden viestin kirjoittaminen. Varmista, että painike `Lähettäjä`{.action} näkyy kirjoitusikkunassa. Jos näin ei ole, siirry välilehdelle `Asetukset`{.action} ja klikkaa sitten `Näytä Lähettäjä`{.action}.
+
+Klikkaa sitten painiketta `Lähettäjä`{.action} ja valitse osoite, joka näkyy lähettäjänä (jonka jaetut oikeudet sinulla on). Mikäli se ei tule näkyviin, klikkaa kohtaa `Muu sähköpostiosoite`{.action}, syötä haluamasi osoite ja vahvista. 
+
+Nyt tarvitsee vain kirjoittaa ja lähettää viesti. 
+
+![valtuutus](images/delegation-step7.png){.thumbnail}
+
+## Lue lisää aiheesta
+
+Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en/>.
