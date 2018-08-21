@@ -35,7 +35,7 @@ Dopo aver installato RTM, potrai monitorare il server dallo Spazio Cliente, attr
 Una volta stabilita la connessione in SSH sul tuo server, è sufficiente eseguire il seguente comando:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh ; sh install_rtm.sh
+wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh ; /bin/bash install_rtm.sh
 ```
 
 ### Installa RTM con Windows

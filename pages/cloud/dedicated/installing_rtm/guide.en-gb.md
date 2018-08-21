@@ -39,7 +39,7 @@ Once you have installed the RTM via your Control Panel, you can monitor your ser
 Once you have logged in via SSH on your server, simply run the following command:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh ; sh install_rtm.sh
+wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh ; /bin/bash install_rtm.sh
 ```
 
 ### Installing RTM in Windows

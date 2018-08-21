@@ -35,7 +35,7 @@ Po zainstalowaniu narzędzia RTM możesz monitorować serwer z poziomu Panelu kl
 Po połączeniu z serwerem protokołem SSH należy wpisać następujące polecenie:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh ; sh install_rtm.sh
+wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh ; /bin/bash install_rtm.sh
 ```
 
 ### Instalowanie RTM w systemie Windows
