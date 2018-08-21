@@ -1,11 +1,11 @@
 ---
-title: 'Finding the serial number of a hard disk'
+title: Finding the serial number of a hard disk
 slug: find-disk-serial-number
-excerpt: 'This guide will show you how to retrieve the serial number of a disk in order to proceed with its replacement.'
-section: 'Server Management'
+excerpt: This guide will show you how to retrieve the serial number of a disk in order to proceed with its replacement.
+section: Server Management
 ---
 
-**Last update 20th July 2018**
+**Last update 21st August 2018**
 
 ## Objective
 
@@ -31,7 +31,7 @@ To minimise the chance of human error during hard disk replacements, we ask our 
 To retrieve your hard drive's serial number with a software RAID configuration, you can simply use smartctl:
 
 ```sh
-# smartctl -a /dev/sdX | grep Serial Serial Number:    XXXXXXX
+smartctl -a /dev/sdX | grep Serial Serial Number:    XXXXXXX
 ```
 
 The device is detected by the OS (ex: /dev/sda, /dev/sdb, etc.).
@@ -62,7 +62,7 @@ The Windows-based guide is generally similar to the Linux-based guide. We will u
 To retrieve the serial number of a Software RAID configuration, you must use the following command:
 
 ```sh
-# .\smartctl -a /dev/sdX Serial Number: 1234567890
+.\smartctl -a /dev/sdX Serial Number: 1234567890
 ```
 
 The device will be detected by the OS, and displayed as follows: /dev/sda, /dev/sdb, etc.
@@ -72,7 +72,7 @@ The device will be detected by the OS, and displayed as follows: /dev/sda, /dev/
 
 ### Retrieve a disk's serial number (Hardware RAID)
 
-For an in-depth look of these commands and how to test your hard disks, refer to [this guide (LSI raid controller)](https://docs.ovh.com/gb/en/dedicated/raid-hard/#lsi-raid-controller_1){.external}.
+For an in-depth look of these commands and how to test your hard disks, refer to [this guide (LSI raid controller)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}.
 
 
 #### MegaRaid Controller
@@ -84,7 +84,7 @@ You can find the serial number using the smartctl command. However, prior to exe
 You can retrieve this information by using the following command:
 
 ```sh
-# MegaCli -LDInfo -Lall -aALL | egrep 'Adapter|Size' | grep -v Strip
+MegaCli -LDInfo -Lall -aALL | egrep 'Adapter|Size' | grep -v Strip
 
 Adapter 0
 
@@ -103,7 +103,7 @@ In this example, there are two RAIDs configured on the server (Adapter 0 and Ada
 Next, you will need to gather the physical disk informations using the following command:
 
 ```sh
-# MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g'
+MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g'
 
 Slot Number: 0
 Device Id: 4
@@ -137,7 +137,7 @@ The Device ID and Adapter ID will be used to tell smartctl which disk to look fo
 The command should look like this:
 
 ```sh
-# smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
+smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
 ```
 
 The RAID Device ID will be displayed as follows: /dev/sda = 1st RAID, /dev/sdb = 2nd RAID, etc.
@@ -162,12 +162,12 @@ The RAID Device ID will be displayed as follows: /dev/sda = 1st RAID, /dev/sdb =
 
 LSI RAID controller uses a module called sg-map which maps devices in /dev/sgX (**X** being the number defining the device).
 
-You can refer to [this guide (LSI raid controller)](https://docs.ovh.com/gb/en/dedicated/raid-hard/#lsi-raid-controller_1){.external} to find which hard drive relates to a designated sg device.
+You can refer to [this guide (LSI raid controller)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} to find which hard drive relates to a designated sg device.
 
 Once you have found the sg device related to the hard disk you want to query, use the following command:
 
 ```sh
-# smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
+smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
 ```
 
 The sg device number will be displayed as follows: /dev/sg0, /dev/sg1) etc.
