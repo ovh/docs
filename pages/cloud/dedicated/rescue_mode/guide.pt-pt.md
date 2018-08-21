@@ -1,7 +1,7 @@
 ---
 title: 'Ativar e utilizar o modo rescue'
 excerpt: 'Como ativar e utilizar o modo rescue num servidor dedicado'
-slug: ovh-rescue
+slug: rescue_mode
 legacy_guide_number: g920
 section: 'Diagnóstico e Modo Rescue'
 ---
