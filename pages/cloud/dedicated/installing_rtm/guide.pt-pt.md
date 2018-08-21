@@ -35,7 +35,7 @@ Poderá controlar o servidor quando o RTM estiver instalado na sua Área de Clie
 Quando estiver conectado ao seu servidor em SSH, basta executar o comando seguinte:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh ; sh install_rtm.sh
+wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh ; /bin/bash install_rtm.sh
 ```
 
 ### Instalar o RTM em Windows

@@ -35,7 +35,7 @@ Po instalaci řešení RTM budete moci ve svém Zákaznickém prostoru OVH (sekc
 Jakmile se ke svému serveru připojíte přes SSH, zadejte následující příkaz:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh ; sh install_rtm.sh
+wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh ; /bin/bash install_rtm.sh
 ```
 
 ### Instalace RTM na Windows
