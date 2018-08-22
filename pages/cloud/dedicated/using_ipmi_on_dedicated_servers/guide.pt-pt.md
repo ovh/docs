@@ -1,30 +1,32 @@
 ---
-title: Como usar a IPMI com servidores dedicados
+title: 'Como utilizar o IPMI com servidores dedicados'
 slug: usar-ipmi-servidores-dedicados
-excerpt: A IPMI permite aceder e gerir diretamente um servidor, sem necessidade de usar outro software
+excerpt: 'O IPMI permite aceder diretamente ao seu servidor, sem necessidade de usar outro software'
 section: Introdução
 ---
 
-**Última atualização no dia 01/02/2018**
+**Última atualização: 22/08/2018**
 
 ## Sumário
 
-A interface IPMI (Intelligent Platform Management Interface) permite aceder diretamente ao seu servidor dedicado, sem necessidade de usar outro software (e.g. terminal ou Putty). Este guia explica como começar a usar o terminal IPMI
+A interface IPMI (Intelligent Platform Management Interface) permite aceder diretamente ao seu servidor dedicado, sem necessidade de usar outro software (e.g. terminal ou Putty). Este manual explica como começar a usar o terminal IPMI.
 
-Atenção: por vezes, poderá ouvir o termo KVM (Keyboard Video and Mouse), o equivalente à IPMI no âmbito dos VPS. 
+Atenção: por vezes, poderá encontrar o termo KVM (Keyboard Video and Mouse), o equivalente ao IPMI no âmbito dos VPS 
 
 ## Requisitos
-- Aceder à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, clicar em `Dedicado`{.action} e selecionar `Servidores Dedicados`{.action}.
+
+- Aceder à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager).
+
 
 ## Instruções
 
 Existem dois métodos diferentes para usar a interface IPMI: através da applet Java (o método aconselhado); ou do navegador (Serial over LAN / SoL).
 
-### Aceder com applet Java
+### Aceder com a applet Java
 
-Atenção: para usar a applet Java, tem que ter o java instalado no computador. Para instalar o Java, aceda à [página oficial](https://www.java.com/pt_br/download/){.external} do software.
+Atenção: para usar a applet Java, tem que ter o java instalado no computador. Para instalar o Java, aceda à [página oficial](https://www.java.com/pt_BR/download/){.external} do software.
 
-Na Área de Cliente, secção `IPMI`{.action}, clique em `A partir da applet java (KVM)`{.action}:
+Na Área de Cliente, na secção `IPMI`{.action}, clique em `A partir de applet java (KVM)`{.action}:
 
 ![IPMI Java initiated](images/java_ipmi_initiate.png){.thumbnail}
 
@@ -36,11 +38,11 @@ De seguida, irá surgir uma janela onde serão solicitados os dados de acesso `r
 
 ![IPMI Java login](images/java_ipmi_login.png){.thumbnail}
 
-Agora j� pode gerir o seu servidor.
+A partir de agora, pode gerir o seu servidor.
 
-### Aceder através do navegador (browser) via Serial over LAN (SoL)
+### Aceder através do navegador, via Serial over LAN (SoL)
 
-O acesso via applet é o mais aconselhado. No entanto, também pode usar a IPMI através de Serial over LAN. Para isso, clique em `IPMI`{.action} e selecione `A partir do seu navegador (SoL)`{.action}:
+O acesso via applet é o mais aconselhado. No entanto, também pode usar o IPMI através de Serial over LAN. Para isso, clique em `IPMI`{.action}, e selecione `A partir do seu navegador (SoL)`{.action}:
 
 ![IPMI SoL activation](images/sol_ipmi_activation.png){.thumbnail}
 
@@ -49,13 +51,13 @@ O acesso via applet é o mais aconselhado. No entanto, também pode usar a IPMI 
 > O acesso SoL pode demorar alguns minutos, razão pela qual a applet java é a opção aconselhada.
 >
 
-### Testar e reiniciar a IPMI
+### Testar e reiniciar o IPMI
 
-Eventualmente, a IPMI pode deixar de responder. Se não conseguir aceder à interface, pode efetuar um teste clicando em `Testar IPMI`{.action}:
+Eventualmente, o IPMI pode deixar de responder. Se não conseguir aceder à interface, pode efetuar um teste clicando em `Testar o IPMI`{.action} e visualizar o resultado do diagnóstico:
 
 ![IPMI test](images/ipmi_test.png){.thumbnail}
 
-Se estiver tudo normal, como no nosso exemplo, o problema pode estar relacionado com a ligação à internet ou mesmo com o seu computador. Se o problema com a IPMI persistir, experimente reiniciar a interface clicando em `Reiniciar IPMI`{.action}.
+Se estiver tudo normal, como no nosso exemplo, o problema pode estar relacionado com a ligação à Internet ou mesmo com o seu computador. Se o problema com o IPMI persistir, experimente reiniciar a interface clicando em `Reiniciar o IPMI`{.action}.
 
 ![IPMI test](images/ipmi_reboot.png){.thumbnail}
 
@@ -63,4 +65,4 @@ Este processo demora alguns minutos.
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com a nossa comunidade de utilizadores: [Comunidade OVH](https://community.ovh.com/en/){.external}.
