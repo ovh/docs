@@ -1,5 +1,5 @@
 ---
-title: E-mail Pro
+title: E-Mail Pro
 slug: emails-pro
-excertp: All you need to know about E-mail Pro
+excertp: All you need to know about E-Mail Pro
 ---

@@ -2,7 +2,7 @@
 title: Root-Passwort auf einem VPS ändern
 slug: root-password
 excerpt: In dieser Anleitung erfahren Sie, wie Sie das Root-Passwort Ihres VPS ändern
-section: Diagnose und Rettungsmodus
+section: Diagnose und Rescue-Modus
 ---
 
 **Stand 27.06.2018**

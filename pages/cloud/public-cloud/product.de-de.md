@@ -1,5 +1,5 @@
 ---
 title: Public Cloud
 slug: public-cloud
-excerpt: Use Public Cloud with OVH
+excerpt: So verwenden Sie die OVH Public Cloud
 ---
