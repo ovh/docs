@@ -1,4 +1,4 @@
 ---
-title: Hosting
+title: Webhosting
 slug: hosting
 ---
