@@ -1,11 +1,11 @@
 ---
-title: Configurer sa solution E-mail Pro
+title: 'Configurer sa solution E-mail Pro'
 slug: premiere-configuration
-excerpt: Découvrez comment réaliser la configuration de votre solution E-mail Pro
+excerpt: 'Découvrez comment réaliser la configuration de votre solution E-mail Pro'
 section: Général
 ---
 
-**Dernière mise à jour le 22/12/2017**
+**Dernière mise à jour le 22/08/2018**
 
 ## Objectif
 
@@ -71,18 +71,28 @@ Cliquez sur le bouton `Suivant`{.action} pour poursuivre l'ajout du domaine.
 
 ![emailpro](images/first_config_email_pro_add_domain_step3.png){.thumbnail}
 
-En fin de configuration, nous vous invitons à vérifier les informations qui s'affichent puis à cliquer sur le bouton `Confirmer`{.action} pour initier l'ajout du domaine.
+En fin de configuration, nous vous invitons à vérifier les informations qui s'affichent puis à cliquer sur le bouton `Confirmer`{.action} pour lancer l'ajout du domaine.
 
 ### Étape 3 : configurer votre nom de domaine
 
-Une fois le domaine ajouté en tant que domaine associé, assurez-vous que la configuration de ce dernier est correcte grâce au tableau qui s'affiche.
+Une fois le nom de domaine ajouté en tant que domaine associé, vérifiez son paramétrage grâce au tableau qui s'affiche.
 
-La colonne `Diagnostic`{.action} vous permettra de voir si la configuration du nom de domaine est correcte. Une pastille rouge apparaîtra pour vous indiquer que cette dernière doit être modifiée.
+La colonne `Diagnostic`{.action} vous permet de contrôler la configuration des champs MX du nom de domaine. Une pastille rouge apparaîtra si ces paramètres doivent être modifiés.
 
 - **Si vous avez choisi une configuration automatique lors de l'ajout du domaine** : l’affichage dans l’espace client OVH peut prendre quelques heures.
-- **Si vous avez renseigné un nom de domaine non géré par OVH** : cliquez sur la pastille de couleur rouge pour afficher les modifications que vous devez réaliser. Si vous venez juste de les effectuer, l’affichage dans l’espace client OVH peut prendre quelques heures.
+- **Si vous avez renseigné un nom de domaine non géré par OVH** : cliquez sur la pastille rouge afin de découvrir les modifications à réaliser. Si vous venez juste de les effectuer, l’affichage dans l’espace client OVH peut prendre quelques heures.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
+
+Même si cela est facultatif, vous avez également la possibilité d'ajouter un champ SRV à la configuration de votre nom de domaine. Il devrait permettre à un logiciel de messagerie ou à un autre appareil, comme un _smartphone_ ou une tablette, de récupérer automatiquement les éléments nécessaires pour configurer votre compte E-mail Pro (serveurs, ports et protocoles de sécurité).
+
+Si vous ne souhaitez pas en bénéficier, allez directement à l'étape 4. Dans le cas contraire, ajoutez le champ SRV depuis l’interface du prestataire gérant la configuration de votre nom de domaine. S'il s'agit d'OVH, reportez-vous aux instructions décrites dans notre documentation « [Éditer une zone DNS OVH](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external} » en utilisant les éléments ci-dessous :
+
+|Domaine|Type d'enregistrement|Priorité|Poids|Port|Cible|
+|---|---|---|---|---|
+|_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
+
+N'oubliez pas de remplacer l’information générique « mypersonaldomain.ovh » par votre nom de domaine.
 
 ### Étape 4 : configurer les comptes E-mail Pro
 
@@ -113,9 +123,14 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 
 ### Étape 5 : utiliser vos adresses e-mail
 
-Une fois vos comptes configurés, il ne reste plus qu'à les utiliser ! Pour cela, OVH met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external} et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
+Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVH met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse <https://pro1.mail.ovh.net> et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
 
-Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil (comme un smartphone ou une tablette), consultez nos documentations depuis ce portail : [https://docs.ovh.com/fr/emails-pro/](https://docs.ovh.com/fr/emails-pro/){.external}.
+Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil, comme un _smartphone_ ou une tablette, consultez nos documentations depuis ce portail : <https://docs.ovh.com/fr/emails-pro/>. Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre compte E-mail Pro, retrouvez ci-dessous les paramètres à utiliser :
+
+|Type de serveur|Nom du serveur|Type de sécurité|Port|
+|---|---|---|---|
+|Entrant|pro1.mail.ovh.net|SSL/TLS|993|
+|Sortant|pro1.mail.ovh.net|STARTTLS|587|
 
 ## Aller plus loin
 
