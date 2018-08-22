@@ -1,97 +1,126 @@
 ---
-title: Veeam Backup as a Service
+title: 'Activer et utiliser Veeam Backup Managed'
 slug: veeam-backup-as-a-service
+excerpt: 'Découvrez comment activer et utiliser l''option Veeam Backup Managed'
 legacy_guide_number: '2883711'
-section: Services et options OVH
+section: 'Services et options OVH'
 ---
 
+**Dernière mise à jour le 22/08/2018**
 
-![](images/veeambackup.png){.thumbnail}
+## Objectif
 
-Veeam est un éditeur de logiciel spécialisé dans les solutions de backup et de plan de reprise d'activité sur des environnements virtualisés. vSphere est la solution principale adressée par la suite de logiciel Veeam Availability Suite. L'offre Veeam Backup as a Service s'appuie sur cette brique logicielle pour fournir une solution de backup à la demande.
+Veeam est un éditeur de logiciel spécialisé dans les solutions de sauvegarde et de plan de reprise d'activité (PRA) dans des environnements virtualisés. L'offre Veeam Backup Managed s'appuie sur la brique logicielle Veeam Availability Suite pour vous fournir une solution de backup à la demande.
 
-Les sauvegardes sont réalisées à l'aide d'une machine virtuelle située à l’intérieur même de votre infrastructure Dedicated Cloud. Les données sauvegardées, quant à elles, sont externalisées vers un espace de stockage indépendant, chez OVH. Les sauvegardes s'effectuent la nuit, avec une durée de rétention de 14 à 20 jours.
+Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située à l’intérieur même de votre infrastructure [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}. Les données sauvegardées sont, quant à elles, externalisées vers un espace de stockage indépendant, chez OVH. Les sauvegardes s'effectuent la nuit, avec une durée de rétention de 14 à 20 jours.
 
-Nous allons voir comment déployer et utiliser cette solution en quelques clics.
+**Ce guide vous explique comment déployer et utiliser l'option Veeam Backup Managed en quelques minutes.**
 
-Prérequis
----------
+## Prérequis
 
-Certaines options sont nécessaires pour faire fonctionner ce service. Il faut notamment activer les options HA et DRS dans vSphere ainsi que la [gestion des licences Windows](https://pccdocs.ovh.net/display/VS/Licences+SPLA+Windows) depuis le manager.
+* Posséder une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
+* [Donner le droit « Ajout de ressources »](https://docs.ovh.com/fr/private-cloud/changer-les-droits-d-un-utilisateur/){.external} pour le datacenter concerné à l'utilisateur depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté au client vSphere.
+* Avoir activé la [haute disponibilité (HA)](https://docs.ovh.com/fr/private-cloud/vmware-ha-high-availability){.external}.
+* Avoir activé le [Distributed Ressource Scheduler (DRS)](https://docs.ovh.com/fr/private-cloud/vmware-drs-distributed-ressource-scheduler-new){.external} sur le ou les clusters.
+* Mettre en place la [gestion des licences Windows](https://docs.ovh.com/fr/private-cloud/facturation-private-cloud/#licences-windows){.external} sur le Private Cloud.
 
-------------------------------------------------------------------------
 
-Étape 1 : Demander la mise en place du service
-----------------------------------------------
+## En pratique
 
-La première étape consiste à demander l'activation du service. Cela se fait très simplement depuis votre [espace client OVH](https://www.ovh.com/manager/web/login/){.external-link}.
+### Activer le service
 
-- Dans la partie "Infrastructure" de l'onglet "Dedicated", cliquer sur l'infrastructure vSphere concernée puis sur le datacenter souhaité.
-- Un bouton "Activate Backup" permet de faire la demande d'activation.
-- Après la mise en place, un e-mail de confirmation est envoyé et un nouveau message apparait dans le manager : "*Status: The backup is activated*". A partir de ce moment là, le service est utilisable directement depuis vSphere.
+La première étape consiste à activer le service depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Pour cela, rendez-vous dans la partie `Private Cloud`{.action} de l'onglet `Dédié`{.action}. Cliquez sur l'infrastructure vSphere concernée, puis sur le datacenter souhaité. Choisissez l'onglet `Backup`{.action} et validez l'activation en cliquant sur `Activer le backup`{.action}.
 
-Automatisation
---------------
+![Activer le backup](images/backuppcc_01.png){.thumbnail}
 
-Suite à cette demande, OVH se charge de toute la mise en place. Cela se traduit par la création d'une nouvelle machine virtuelle au sein d'un pool de ressources nommé "ovhVeeamServers". Cette machine, qui nécessite 2 vCPU et 2 Go de RAM, prendra en charge la gestion des backups vers un espace de stockage à laquelle elle seule peut accéder. Vous n'avez aucun droit de gestion sur cette machine, qui est gérée directement par les équipes d'OVH.L'installation de cette machine est réalisée sous 2 heures, sous réserve de ne pas se trouver dans l'un des cas suivants :
+Une fois l'option installée, un e-mail de confirmation vous est envoyé et un nouveau message apparaît dans l'espace client : **Etat: Le backup est activé**. Le service est dès lors utilisable directement depuis vSphere.
 
-- aucun cluster
-- DRS inactif
-- ressources insuffisantes
+![Service activé](images/backuppcc_02.png){.thumbnail}
 
-La résiliation du service s'effectue au sein de votre espace client, dans l'onglet "Backup" de votre datacenter : "Désactiver le backup".
+Vous verrez apparaître sur votre infrastructure vSphere une machine virtuelle correspondant au serveur de sauvegarde :
 
-![](images/veeambackup2.png){.thumbnail}
+![Serveur de sauvegarde](images/backupserver.png){.thumbnail}
 
-![](images/veeambackup3.png){.thumbnail}
 
-------------------------------------------------------------------------
+### Activer la sauvegarde pour les machines virtuelles souhaitées
 
-Étape 2 : Activer le backup pour les VM souhaitées
---------------------------------------------------
+Maintenant que le service est en place, il suffit de réaliser les demandes de sauvegarde pour chaque machine virtuelle identifiée comme critique depuis le vSphere Web Client.
 
-Maintenant que le service est en place, il suffit de faire les demandes de backup pour chaque VM à backuper (les VM que vous aurez identifiées comme critiques), depuis le vSphere Client (et non depuis le webclient).
+Faites un clic droit sur une machine virtuelle, puis choisissez `Backup Management`{.action}.
 
-- Avec un clic droit sur la VM, sélectionner "Backup Managment".
-- Une fenêtre s'ouvre pour permettre la création du job de backup. Si le navigateur vous affiche un avertissement de sécurité, ajoutez l'URL comme adresse de confiance, sans quoi vous ne pourrez pas valider votre backup.
-- Sélectionner "Create", un message d'information indiquant "*creating...*" apparaît.
+![Backup Management](images/backupvm_01.png){.thumbnail}
 
-Veeam est informé de cette nouvelle demande de backup et procède à la création du job de backup de la VM. Chaque nuit, à partir de 22h, une sauvegarde sera programmée en suivant le schéma suivant :
+Une fenêtre s'ouvre pour créer le travail de sauvegarde. Cliquez alors sur `Enable backup on this VM`{.action} pour lancer la demande d'activation.
 
-1.  Le 1er jour, un backup complet est fait.
-2.  Les 6 jours suivants seront des sauvegardes incrémentales.
-3.  Le 8ème jour, un nouveau backup complet est fait.
-4.  Les 6 jours suivants seront des sauvegardes incrémentales.
-5.  Le 15ème jour, un nouveau backup complet est fait.
-6.  Les 6 jours suivants seront des sauvegardes incrémentales.
-7.  Le 21ème jour, un nouveau backup complet est fait, les backup des étapes 1 et 2 sont supprimés (J-20 à J-13).
+![Activation de la sauvegarde](images/backupvm_02.png){.thumbnail}
 
-Ce fonctionnement garantit la disponibilité d'au minimum 14 backups à tout instant.
+Une fenêtre de confirmation apparaît. Cliquez simplement sur `OK`{.action}.
 
-Chaque jour, un e-mail contenant les statuts de l'ensemble des jobs effectués est envoyé à l'adresse du compte OVH.
+![Confirmation de la sauvegarde](images/backupvm_03.png){.thumbnail}
 
-Info
-----
+Veeam est informé de cette nouvelle demande et crée le travail de sauvegarde de la machine virtuelle. Chaque nuit, à partir de 22 heures, une sauvegarde sera programmée selon le schéma suivant :
 
-Pour désactiver le Backup, sélectionnez le datacenter dans votre inventaire et dirigez-vous dans l'onglet "Backup Management". Sur cette page vous aurez la liste de vos jobs, le nombre de backups, le dernier statuts du job... et la possibilité de supprimer les jobs.Attention ! l La suppression d'une machine virtuelle de votre inventaire ou du disque ne désactive pas le job relatif à cette machine.
+1.  Le 1er jour, un backup complet est effectué.
+2.  Les 6 jours suivants, des sauvegardes incrémentales sont réalisées.
+3.  Le 8e jour, un nouveau backup complet est effectué.
+4.  Les 6 jours suivants, des sauvegardes incrémentales sont réalisées.
+5.  Le 15e jour, un nouveau backup complet est effectué.
+6.  Les 6 jours suivants, des sauvegardes incrémentales sont réalisées.
+7.  Le 21e jour, un nouveau backup complet est effectué ; les sauvegardes des étapes 1 et 2 sont supprimées (J-20 à J-13).
 
-![](images/veeambackup4.png){.thumbnail}
+Ce fonctionnement garantit la disponibilité d'un minimum de 14 backups à tout instant.
 
-![](images/veeambackup5.png){.thumbnail}
+Chaque jour, un e-mail contenant les statuts de l'ensemble des travaux effectués est envoyé à l'adresse du compte OVH.
 
-------------------------------------------------------------------------
+> [!warning]
+>
+> La suppression d'une machine virtuelle de votre inventaire ou d'un disque ne désactive pas le travail de sauvegarde relatif à cette machine. Celui-ci apparaîtra en erreur dans le rapport.
+>
 
-Étape 3 : Restaurer un backup
------------------------------
+### Restaurer une sauvegarde
 
-Une fois qu'au moins une sauvegarde ait été réalisée, la restauration peut se faire tout aussi simplement que la demande de backup.
+Faites un clic droit sur la machine virtuelle à restaurer. Sélectionnez `OVH Private Cloud`{.action}, puis `Restore Backup`{.action}.
 
-- Clic droit sur la VM concernée, sélectionner "Backup Managment".
-- Sélectionner la date du backup à restaurer.
-- Sélectionner la destination parmi les datastores de l'infrastructure et valider.
+![Restauration du backup](images/restorebackup_01.png){.thumbnail}
 
-Un job de restauration va être lancé et une nouvelle machine virtuelle sera créée à partir du backup sélectionné. Le nom de la VM commencera par "veeam\_", puis par le nom d'origine de la VM et terminera par la date et l'heure du backup de laquelle elle est issue. Par exemple : veeam\_debian (restored to 11-03-2015 22:00:58)
+Une fenêtre s'ouvre pour créer le travail de restauration. Vérifiez bien le nom de la machine, sélectionnez la date de sauvegarde à restaurer et choisissez le datastore (espace de stockage utilisé comme cible de restauration). Cliquez sur `Restore Backup`{.action} pour lancer la restauration.
 
-![](images/veeambackup6.png){.thumbnail}
+![Initialisation de la restauration](images/restorebackup_02.png){.thumbnail}
 
-![](images/veeambackup7.png){.thumbnail}
+Une fenêtre confirme alors que le serveur Veeam est informé de cette nouvelle demande et que la création du travail de restauration de la machine virtuelle a été effectuée.
+
+![Validation de la restauration](images/restorebackup_03.png){.thumbnail}
+
+La machine est restaurée à côté de la machine source.
+
+![La machine source est restaurée](images/restorebackup_04.png){.thumbnail}
+
+> [!warning]
+>
+> Attention, la machine restaurée est connectée au réseau. Si vous démarrez celle-ci sans avoir désactivé la machine source, il risque d'y avoir un conflit d'adresse IP.
+>
+
+![Conflit d'IP](images/restorebackup_05.png){.thumbnail}
+
+Pour effectuer ces actions, vous pouvez sélectionner le datacenter dans votre inventaire, cliquer sur l'onglet `Configure`{.action}, puis choisir `OVH Backup Management`{.action}. Dans cette page, vous avez accès à la liste de vos travaux de sauvegarde, avec le nombre de backups et le dernier statut du travail.
+
+### Désactiver la sauvegarde d'une machine virtuelle
+
+Faites un clic droit sur la machine contenant la sauvegarde à désactiver. Sélectionnez `OVH Private Cloud`{.action}, puis `Backup Management`{.action}.
+
+![Désactivation de la machine](images/disablebackup_01.png){.thumbnail}
+
+Dans la fenêtre qui s'ouvre, il suffit de cliquer sur `Disable Backup on this VM`{.action} pour désactiver la sauvegarde.
+
+![Désactivation de la sauvegarde](images/disablebackup_02.png){.thumbnail}
+
+Confirmez ensuite la désactivation en cliquant sur `OK`{.action}.
+
+![Confirmation de désactivation](images/disablebackup_03.png){.thumbnail}
+
+Pour effectuer ces actions, vous pouvez sélectionner le datacenter dans votre inventaire, cliquer sur l'onglet `Configure`{.action}, puis choisir `OVH Backup Management`{.action}. Dans cette page, vous avez accès à la liste de vos travaux de sauvegarde, avec le nombre de backups et le dernier statut du travail.
+
+## Aller plus loin
+
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
