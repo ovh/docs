@@ -114,7 +114,27 @@ Cette action a pour effet de créer le fichier `eula.txt` à la racine de votre 
 
 Votre serveur est ensuite prêt à être lancé.
 
-Il suffit de le démarrer avec la commande suivante :
+Lors de l'étape 1, nous avons installé le paquet `screen` qui permet d'ouvrir plusieurs sessions de terminal (*shell* en anglais). Nous allons démarrer Minecraft dans une nouvelle session et ainsi le lancer en tâche de fond. `screen` dispose de nombreux avantages pour notre cas d'usage, comme l'exécution de plusieurs serveurs Minecraft en simultané.
+
+Au préalable, nous allons créer un nouveau `shell` nommé `minecraft1` :
+
+```sh
+screen -S minecraft1
+```
+
+La fenêtre active de votre terminal change, vous basculez automatiquement sur une nouvelle session `shell`. Vous pouvez créer d'autres `shells` si nécessaire et les lister via la fonction suivante :
+
+```sh
+screen -ls
+```
+
+Pour passer d'un `shell`à un autre, il existe des raccourcis claviers comme `CTRL+a n`{.action} pour aller au suivant. Cette action est aussi possible en ligne de commande, en tapant le nom du `shell` :
+
+```sh
+screen -x another_shell
+```
+
+Placez-vous dans le shell `minecraft1` que vous venez de créer, puis démarrez un serveur Minecraft avec la commande suivante :
 
 ```sh
 java -jar fichierduserveurtelecharge.jar
@@ -144,4 +164,4 @@ Votre serveur Vanilla Minecraft est désormais installé sur votre VPS. Avant de
 
 À noter que cette installation fonctionne tout aussi bien sur un serveur dédié ou du Public Cloud OVH. Avec ces solutions, vous profitez également de ressources physiques garanties et stables à tout moment de la journée.
 
-Enfin, pour ajouter des add-ons et configurer plus finement votre serveur Minecraft, consultez la documentation officielle sur <https://help.mojang.com/>.
+Enfin, pour ajouter des add-ons et configurer plus finement votre serveur Minecraft, consultez la documentation officielle sur <https://help.mojang.com/>. D'autres versions personnalisées existent, comme la prometteuse Minecraft Bukkit, et sont également compatibles avec les produits OVH.
