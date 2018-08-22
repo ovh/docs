@@ -65,7 +65,7 @@ Par exemple :
 
 ```sh
 ssh root@IP_de_votre_serveur
-root@IP_du_mot_de_passe_de_votre_serveur:
+root@*IP_du_serveurs*'s password:
 ```
 
 La plupart des modifications apportées à votre serveur via SSH en mode rescue nécessitent le montage d'une partition. En effet, ce mode possède son propre système de fichiers temporaire. Par conséquent, les modifications apportées au système de fichiers en mode rescue seront perdues lors du redémarrage du serveur en mode normal.
