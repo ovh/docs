@@ -15,10 +15,7 @@ Votre ligne téléphonique OVH vous permet de recevoir et d'émettre des appels.
 
 ## Prérequis
 
-- Disposer de l'une des combinaisons de services ci-contre : 
-   - au moins deux [lignes VoIP OVH](https://www.ovhtelecom.fr/telephonie/voip/){.external} ;
-   - au moins une [ligne VoIP OVH](https://www.ovhtelecom.fr/telephonie/voip/){.external} et un [numéro alias OVH](https://www.ovhtelecom.fr/telephonie/numeros/){.external} ;
-   - une ligne Trunk.
+- Disposer de l'une des combinaisons de services ci-contre : « au moins deux [lignes VoIP OVH](https://www.ovhtelecom.fr/telephonie/voip/){.external} » ou « au moins une [ligne VoIP OVH](https://www.ovhtelecom.fr/telephonie/voip/){.external} et un [numéro alias OVH](https://www.ovhtelecom.fr/telephonie/numeros/){.external} » ou « une ligne Trunk ».
 - Posséder un [forfait compatible](https://www.ovhtelecom.fr/telephonie/services_inclus/){.external} avec le service « Fonctionnalités du téléphone ».
 - Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
 
@@ -131,7 +128,9 @@ Une fois votre choix fait, cliquez sur le bouton `Appliquer les modifications`{.
 > [!warning]
 >
 > Avant de poursuivre, assurez-vous que  :
+>
 > - le numéro que vous souhaitez présenter n'est pas associé à une ligne OVH (SIP ou Trunk, par exemple). Seuls les numéros alias pourront être présentés ; 
+> 
 > - le numéro pour lequel vous souhaitez modifier la présentation dispose bien d'une redirection avec présentation. Si besoin, reportez-vous aux instructions décrites dans notre documentation « [Créer une redirection avec présentation](https://docs.ovh.com/fr/voip/creer-redirection-avec-presentation/){.external} ».
 >
 

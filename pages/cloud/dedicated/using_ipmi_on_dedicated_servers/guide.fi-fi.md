@@ -1,11 +1,11 @@
 ---
-title: IPMI-konsolin käyttö dedikoiduilla palvelimilla
+title: 'IPMI-konsolin käyttö dedikoiduilla palvelimilla'
 slug: ipmi-konsolin-kaytto-dedikoidut-palvelimet
-excerpt: IPMIn avulla voidaan kirjautua dedikoituun palvelimeen ilman ulkopuolisen ohjelmiston käyttöä.
-section: Näin pääset alkuun
+excerpt: 'IPMIn avulla voidaan kirjautua dedikoituun palvelimeen ilman ulkopuolisen ohjelmiston käyttöä.'
+section: Aluksi
 ---
 
-**Päivitetty 22.12.2017**
+**Päivitetty 22.8.2018**
 
 ## Tavoite
 
@@ -15,15 +15,16 @@ Huomaa, että tulet törmäämään myös termiin KVM (Keyboard Video and Mouse)
 
 ## Edellytykset
 
-- Olet kirjautuneena [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager) osiossa `Dedikoidut`{.action}, sitten `Dedikoidut palvelimet`{.action}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager).
+
 
 ## Käytännössä
 
-Kirjautuminen IPMIin tapahtuu kahdella tavalla, joko Java sovelmalla (suositeltu) tai selaimella (Serial over LAN).
+Kirjautuminen IPMIin tapahtuu kahdella tavalla, joko Java-sovelmalla (suositeltu) tai selaimella (Serial over LAN).
 
 ### Java-sovelmaan kirjautuminen
 
-Jotta Java-sovelma toimii, täytyy Javan olla asennettuna työpisteellesi. Jos näin ei ole, mene [ Javan viralliselle sivulle](https://www.java.com/en/download/).
+Jotta Java-sovelma toimii, täytyy Javan olla asennettuna työpisteellesi. Jos näin ei ole, mene [Javan viralliselle sivulle](https://www.java.com/en/download/){.external}.
 
 Klikkaa sitten hallintapaneelisi `IPMI`{.action}-osiossa kohtaa `Java-sovelmalla (KVM)`{.action}:
 
@@ -39,10 +40,9 @@ Tulet nyt kirjautumissivulle, jossa pyydetään pääkäyttäjän eli `root`-tun
 
 Tämän jälkeen voit hallinnoida normaalisti palvelintasi.
 
-
 ### Kirjautuminen Serial over LAN (SoL) -selaimella
 
-Vaikka suosittelemme kirjautumista Java-sovelman kautta, on IPMIn käyttö mahdollista myös Serial over LAN -selaimella. Klikkaa tätä varten osiota `IPMI`{.action} `Selaimessasi (SoL)`:
+Vaikka suosittelemme kirjautumista Java-sovelman kautta, on IPMIn käyttö mahdollista myös Serial over LAN -selaimella. Klikkaa tätä varten osiota `IPMI`{.action} `Selaimessasi (SoL)`{.action}:
 
 ![IPMI SoL activation](images/sol_ipmi_activation.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Vaikka suosittelemme kirjautumista Java-sovelman kautta, on IPMIn käyttö mahdo
 
 ### IPMIn testaus ja uudelleenkäynnistys
 
-On mahdollista, ettei IPMI vastaa enää. Jos et pääse sinne, voit tehdä ensiksi testin klikkaamalla kohtaa `Testaa IPMI`{.action}:
+On mahdollista, ettei IPMI vastaa enää. Jos et pääse sinne, voit tehdä ensiksi testin klikkaamalla kohtaa `Testaa IPMI`{.action} ja näet vianhaun tuloksen:
 
 ![IPMI testi](images/ipmi_test.png){.thumbnail}
 
@@ -65,4 +65,4 @@ Uudelleenkäynnistys kestää joitakin minuutteja.
 
 ## Lisää aiheesta
 
-Viesti käyttäjäyhteisömme kanssa osoitteessa <https://www.ovh-hosting.fi/community/foorumi>.
+Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en/>.
