@@ -65,7 +65,7 @@ Příklad:
 
 ```sh
 ssh root@IP_de_votre_serveur
-root@IP_du_mot_de_passe_de_votre_serveur:
+root@*IP_du_serveurs*'s password:
 ```
 
 Většina změn prováděných na serveru prostřednictvím SSH v režimu rescue vyžaduje připojení diskového oddílu. Je tomu tak z toho důvodu, že režim rescue disponuje svým vlastním souborovým systémem, v důsledku čehož budou všechny změny v souborovém systému po restartu do standardního režimu ztraceny. 
