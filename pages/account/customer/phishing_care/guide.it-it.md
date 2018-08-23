@@ -1,5 +1,5 @@
 ---
-title: 'Proteggersi dalle truffe - come riconoscere email fraudolente e di phishing'
+title: 'Proteggersi dalle truffe: come riconoscere email fraudolente e di phishing'
 slug: truffe-frode-phishing
 excerpt: 'Come riconoscere un’email di phishing e cosa fare se si clicca su un link fraudolento'
 section: Sicurezza
@@ -27,7 +27,7 @@ Il phishing consiste nell’invio di un’email contenente un link che ti reindi
 
 Hai ricevuto un’email a nome di OVH e vuoi essere sicuro che sia corretta? Ecco alcuni elementi che possono aiutarti a distinguere un’email OVH da un tentativo di phishing.
 
-Differenza tra email OVH ed email di phishing
+![Différence entre e-mail OVH et e-mail de phishing](images/phishing_email.png){.thumbnail}
 
 > [!alert]
 > 
