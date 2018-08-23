@@ -1,10 +1,10 @@
 ---
-title: Instalacja VMware Tools
+title: 'Instalacja VMware Tools'
 excerpt: ''
 slug: instalacja_vmware_tools
+section: 'Zarządzanie wirtualnymi maszynami'
 legacy_guide_number: g621
 ---
-
 
 ## 
 Należy zalogować się do vSphere (poprzez program lokalny lub za pomocą połączenia RDP dostarczonego podczas aktywacji usługi Private Cloud).

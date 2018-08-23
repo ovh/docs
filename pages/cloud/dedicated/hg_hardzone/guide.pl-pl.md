@@ -1,7 +1,8 @@
 ---
-title: HG Hardzone
-excerpt: Instrukcja dotycząca wykonania testów wydajności na serwerze HG Hardzone
+title: 'HG Hardzone'
+excerpt: 'Instrukcja dotycząca wykonania testów wydajności na serwerze HG Hardzone'
 slug: hg_hardzone
+section: Inne
 legacy_guide_number: g1517
 ---
 

@@ -1,10 +1,10 @@
 ---
-title: Korzystanie z vScope
-excerpt: ''
+title: vScope
+excerpt: 'Dowiedz się, jak korzystać z vScope'
 slug: korzystanie_z_vscope
+section: 'Usługi i opcje OVH'
 legacy_guide_number: g718
 ---
-
 
 ## Dostęp
 vScope jest dostępny pod poniższym adresem (do dostosowania w zależności od usługi Dedicated Cloud):

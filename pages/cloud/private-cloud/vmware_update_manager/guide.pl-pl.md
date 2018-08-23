@@ -1,10 +1,10 @@
 ---
-title: Korzystanie z VMware Update Manager
-excerpt: ''
+title: 'VMware Update Manager'
+excerpt: 'Dowiedz się, jak korzystać z VMware Update Manager'
 slug: korzystanie_z_vmware_update_manager
+section: 'Funkcjonalności VMware vSphere'
 legacy_guide_number: g591
 ---
-
 
 ## Wymagania
 Poniżej przedstawimy instalacje wtyczki Update Manager na vSphere Client.
