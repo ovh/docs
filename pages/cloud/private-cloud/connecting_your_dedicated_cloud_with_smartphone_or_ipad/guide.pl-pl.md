@@ -1,17 +1,17 @@
 ---
-title: Połączenie z usługą Dedicated Cloud z poziomu smartphone’a i iPada
+title: 'Połączenie z Private Cloud z poziomu smartfona i tableta'
 excerpt: ''
 slug: polaczenie_z_usluga_dedicated_cloud_z_poziomu_smartphonea_i_ipada
+section: 'Pierwsze kroki'
 legacy_guide_number: g623
 ---
 
+## 
+Aby zalogować się do Dedicated Cloud w wersji mobilnej, należy być w posiadaniu smartphone'a lub iPada. W przypadku iPada, poza interfejsem www,  możesz korzystać z aplikacji « VMware vSphere Client », która jest dostępna bezpłatnie na App Store.
+
 
 ## 
-Aby zalogować się do DEdicated Cloud w wersji mobilnej, należy być w posiadaniu smartphone'a lub iPada. W przypadku iPada, poza interfejsem www,  możesz korzystać z aplikacji « VMware vSphere Client », która jest dostępna bezpłatnie na App Store.
-
-
-## 
-W przeglądarce www otwórz stronę [https://vcma.ovh.com](https://vcma.ovh.com):
+W przeglądarce WWW otwórz stronę [https://vcma.ovh.com](https://vcma.ovh.com):
 
 ![](images/img_148.jpg){.thumbnail}
 Podaj nazwę PCC i dane do logowania:

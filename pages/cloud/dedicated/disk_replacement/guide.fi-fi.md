@@ -171,7 +171,7 @@ MegaCli -PdLocate -start -physdrv[E0:S0] -a0
 MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 ```
 
-> [primary]
+> [!primary]
 >
 > Sama `storcli`-komennon kautta:
 >
@@ -189,7 +189,7 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 >
 
 
-> [primary]
+> [!primary]
 >
 > Vaikka LED-valo vilkkuukin, muista merkitä tikettiin levyn sarjanumero ja *slot*.
 > 

@@ -1,10 +1,10 @@
 ---
-title: VMware Storage VMotion
+title: 'VMware Storage VMotion'
 excerpt: ''
 slug: vmware_storage_vmotion
+section: 'Funkcjonalności VMware vSphere'
 legacy_guide_number: g687
 ---
-
 
 ## 
 Storage vMotion pozwala na zmianę lokalizacji przestrzeni dyskowej plików wirtualnej maszyny z zachowaniem działania wirtualnej maszyny. 

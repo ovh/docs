@@ -1,10 +1,10 @@
 ---
-title: Skonfiguruj alert
+title: 'Tworzenie alertu'
 excerpt: ''
 slug: skonfiguruj_alert
+section: 'Zarządzanie wirtualnymi maszynami'
 legacy_guide_number: g599
 ---
-
 
 ## 
 Należy zalogować się do panelu vSphere (za pomocą lokalnego programu lub połączenia RDP dostarczonego po aktywacji usługi PCC).
