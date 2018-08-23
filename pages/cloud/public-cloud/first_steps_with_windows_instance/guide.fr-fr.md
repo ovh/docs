@@ -1,10 +1,9 @@
 ---
-title: Débuter avec une instance Windows
+title: 'Débuter avec une instance Windows'
 slug: debuter-avec-une-instance-windows
 legacy_guide_number: 1995
 section: Tutoriels
 ---
-
 
 ## Préambule
 Il est possible d'utiliser le Public Cloud si vous souhaitez héberger des site Web sous IIS ou encore vos applications compatibles uniquement avec Windows. En effet, pour les instances de types EG et SP uniquement, il est possible d'installer Windows Server 2012 r2 (à raison d'un coût supplémentaire pour la licence).
@@ -15,7 +14,7 @@ Ce guide vous explique comment débuter avec une instance Windows.
 
 
 ### Prérequis
-- [Créer une instance dans l'espace client OVH](../guide.fr-fr.md){.ref} sours Windows Server 2012
+- [Créer une instance dans l'espace client OVH](../guide.fr-fr.md){.ref} sous Windows Server 2012
 
 
 ## Premier Pas
