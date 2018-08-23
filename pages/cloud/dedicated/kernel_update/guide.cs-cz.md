@@ -1,50 +1,85 @@
 ---
-title: Aktualizace kernelu na dedikovaném serveru
-excerpt: Zjistěte, jak aktualizovat jádro operačního systému
+title: 'Aktualizace kernelu na dedikovaném serveru'
 slug: aktualizace-kernelu-dedikovany-server
-section: Pokročilé použití
+excerpt: 'Zjistěte, jak aktualizovat OVH jádro na své distribuci'
+section: 'Pokročilé použití'
 ---
 
-**Poslední aktualizace 01/02/2018**
+**Poslední aktualizace 23/08/2018**
 
 ## Cíl
 
-OVH Vám nabízí možnost snadné aktualizace kernelu Vaší linuxové distribuce prostřednictvím služby *netboot*. Nicméně i přesto může být výhodné udržovat kernel systémové distribuce (OS) aktuální i na Vašem pevném disku.
+Dedikované servery OVH lze snadno nabootovat do Linuxového operačního systému pomocí *síťového netboot* (jádro aktualizováno společností OVH a aktuální při každém spuštění serveru). Doporučujeme však (a jde o osvědčenou praktiku) updatovat jádro přímo na operačním systému nainstalovaném na serveru.
 
-**V této příručce se dozvíte, jak na aktualizaci svého kernelu.**
+**Zjistěte, jak aktualizovat OVH jádro na své distribuci.**
+
+Ve výchozím stavu používají všechny systémové obrazy nabízené na dedikovaných serverech OVH optimalizované jádro OVH. V případě nahrazení těchto obrazů vlastní systémovou distribucí se obraťte na oficiální dokumentaci vydavatele příslušné distribuce.
+
 
 > [!warning]
 >
-> Společnost OVH Vám dává k dispozici stroje, za jejichž správu nesete plnou odpovědnost.  Společnost OVH není administrátorským subjektem těchto strojů a nedisponuje žádnými přístupovými právy. Z toho důvodu spočívá zajištění každodenní správy softwaru a zabezpečení stroje pouze na Vás. 
-> Tato příručka slouží jako asistent pro zvládání těch nejběžnějších úkonů spojených se správou Vašeho serveru. Pokud narazíte na jakékoli potíže či pochybnosti ohledně správy, použití nebo zabezpečení svého serveru, obraťte se prosím na profesionálního serverového administrátora.
+> Společnost OVH Vám dává k dispozici stroje, za jejichž správu nesete plnou odpovědnost. Společnost OVH není administrátorským subjektem těchto strojů a nedisponuje žádnými přístupovými právy. Z toho důvodu spočívá zajištění každodenní správy softwaru a zabezpečení stroje pouze na Vás. 
+> 
+> Tato příručka slouží jako průvodce aktualizačním procesem kernelu na dedikovaném serveru. Pokud narazíte na jakékoli potíže či pochybnosti ohledně správy, použití nebo zabezpečení svého serveru, obraťte se prosím na profesionálního serverového administrátora.
 >
+
 
 ## Prerekvizity
 
-- Root přístup k serveru (SSH).
+- [Dedikovaný server OVH](https://www.ovh.cz/dedikovane_servery/){.external}.
+- SSH root přístup k serveru.
 - Záloha dat (pro pomoc se zálohováním dat se obraťte na oficiální dokumentaci své systémové distribuce).
+
 
 ## Postup
 
 ### Identifikace kernelu
 
-Za účelem zjištění aktuální verze Vašeho kernelu zadejte následující příkaz:
+Za účelem zjištění aktuální verze svého kernelu zadejte následující příkaz:
 
 ```sh
-uname -a
+uname -r
 ```
 
 Příklad:
 
 ```sh
-uname -a
+uname -r
 
 4.09.76-xxxx-std-ipv6-64
 ```
 
-V tomto případě je verze kernelu *4.09.76-xxxx-std-ipv6-64*\*.
+Verze kernelu je v tomto případě následující: **4.9.118-xxxx-std-ipv6-64**.
 
-### Aktualizace kernelu
+### Aktualizace kernelu pomocí balíčků OVH
+
+V případě Debian a RedHat distribucí je kernel instalován pomocí správce balíčků.
+
+
+#### Fáze 1: aktualizace kernelu
+
+V případě Debian distribucí zadejte následující příkaz:
+
+```sh
+apt-get update && apt-get dist-upgrade
+```
+
+V případě RedHat distribucí zadejte následující příkaz:
+
+```sh
+yum update
+```
+
+#### Fáze 2: restart serveru
+
+Aby provedené změny mohly vstoupit v platnost, je nejdříve zapotřebí provést restart serveru:
+
+```sh
+reboot
+```
+
+
+### Aktualizace kernelu bez použití balíčků OVH
 
 #### Fáze 1: umístění do správného adresáře
 
@@ -58,11 +93,11 @@ cd /boot
 
 Aniž by bylo zapotřebí rekompilovat kernel, stáhněte příslušnou verzi bzImage (ideálně tu nejnovější). Image naleznete na následující adrese: <https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/>. 
 
-Kernely jsou monolitické, což znamená, že veškerý kód běží v jednom paměťovém prostoru (nejsou zde brány v úvahu moduly jako CEPH, NBD ZFS a další).
+Kernely jsou monolitické, což znamená, že celý kód běží v jednom paměťovém prostoru (nejsou zde brány v úvahu moduly jako CEPH, NBD ZFS a další). 
 
-Vraťme se nyní zpět k našemu příkladu. Verze našeho kernelu je následující: **4.9.118-xxxx-std-ipv6-64**.
+Vraťme se nyní k našemu příkladu. Aktuální verze našeho kernelu je: **4.9.118-xxxx-std-ipv6-64**.
 
-Nyní je tedy zapotřebí stáhnout příslušný image zadáním následujícího příkazu:
+Nyní je zapotřebí stáhnout příslušný image zadáním následujícího příkazu:
 
 ```sh
 wget https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/4.9.118/313405/bzImage/4.9.118-xxxx-std-ipv6-64/bzImage-4.9.118-xxxx-std-ipv6-64
@@ -85,22 +120,22 @@ done
 
 > [!primary]
 >
-> Nyní zkontrolujte, zda se ve Vaší konfiguraci nachází následující soubor (nezbytný k provedení aktualizace): `06_OVHkernel`. Přítomnost souboru můžete ověřit zadáním následujícího příkazu:
+> Zkontrolujte, zda se ve Vaší konfiguraci nachází následující soubor (nezbytný k provedení aktualizace): `06_OVHkernel`. Ověření lze provést zadáním následujícího příkazu:
 >
 > `ls /etc/grub.d/`
 >
 
 #### Fáze 4: restart serveru
 
-Aby provedené úpravy mohly vstoupit v platnost, je zapotřebí restartovat server:
+Aby provedené změny mohly vstoupit v platnost, je nejdříve zapotřebí provést restart serveru:
 
 ```sh
 reboot
 ```
 
-### Návrat do předchozího stavu
+### Návrat do původního stavu
 
-Pokud dojde k chybné manipulaci či neočekávané chybě, je možné vrátit se do předchozího stavu. Za tímto účelem je nutné server restartovat v režimu rescue. Následně je zapotřebí připojit systém zadáním následujících příkazů:
+Pokud dojde k chybné manipulaci či neočekávané chybě, je možné vrátit se do původního stavu. Za tímto účelem je nutné server restartovat do [režimu rescue](https://docs.ovh.com/cz/cs/dedicated/ovh-rescue/){.external}. Následně je zapotřebí připojit systém zadáním následujících příkazů:
 
 ```sh
 mount /dev/md1 /mnt
@@ -108,7 +143,7 @@ mount /dev/md1 /mnt
 
 > [!primary]
 >
-> V našem případě je root (nebo lomítko `/`) pojmenován jako *md1*. Název se však může v jednotlivých případech lišit. Pro ověření názvu stačí zadat následující příkaz:
+> V našem případě je root adresář (nebo lomítko `/`) pojmenován jako *md1*. Název se však může v jednotlivých případech lišit. Pro ověření názvu stačí zadat následující příkaz:
 >
 > `fdisk`nebo `lsblk`
 >
@@ -157,16 +192,16 @@ uname –r
 
 > [!primary]
 >
-> Pokud jde o ochranu před nedávnými exploity Meltdown a Spectre, obraťte se na oficiální stránky vydavatele Vaší systémové distribuce a ověřte si, zda je nová verze Vašeho kernelu proti těmto hrozbám zabezpečena.
+> Pokud jde o ochranu před nedávnými exploity Meltdown a Spectre, obraťte se na oficiální stránky vydavatele své systémové distribuce a ověřte si, zda je nová verze Vašeho kernelu proti těmto hrozbám zabezpečena.
 >
-> V případě potřeby existuje hned několik nástrojů (například tento: <https://github.com/speed47/spectre-meltdown-checker>), které Vám umožní zjistit, zda je Vámi používaný kernel zranitelný, či nikoli.
+> V případě potřeby existuje hned několik nástrojů (jako například tento: <https://github.com/speed47/spectre-meltdown-checker>), které Vám umožní zjistit, zda je Vámi používaný kernel zranitelný, či nikoli.
 >
 > **Společnost OVH nemůže ručit za spolehlivost jakýchkoli externích nástrojů. Odpovědnost za jejich využití spadá na administrátora služby.**
 >
 
 ## Kam dál
 
-[Režim rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external}.
+[Režim rescue](https://docs.ovh.com/cz/cs/dedicated/ovh-rescue/){.external}.
 
 [Informace ohledně bezpečnostních hrozeb Meltdown a Spectre (EN)](https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/){.external}.
 
