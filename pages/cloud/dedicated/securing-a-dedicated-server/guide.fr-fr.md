@@ -25,7 +25,7 @@ Lorsque vous commandez votre serveur dédié, aucun protocole de sécurité n'es
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
-- Être connecté en SSH (accès root) sous Linux ou en en tant qu'administrateur sous Windows.
+- Être connecté en SSH (accès root) sous Linux ou en tant qu'administrateur sous Windows.
 
 
 ## En pratique
