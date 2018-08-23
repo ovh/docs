@@ -1,0 +1,13 @@
+# Section for kickstart template
+ks_root_password: test
+ks_vckeymap: "fr"
+ks_xlayouts: "fr"
+
+# Section for commons variables
+unattended_install_iso: centos7_unattended_install.iso
+
+# Section specific to the create_iso.yaml recipe
+centos_mirror: http://centos.mirrors.ovh.net/ftp.centos.org
+centos_install_iso: /7/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso
+
+# Section specific to the create_template.yaml recipe
