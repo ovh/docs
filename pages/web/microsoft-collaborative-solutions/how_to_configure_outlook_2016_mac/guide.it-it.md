@@ -1,6 +1,6 @@
 ---
 title: 'Configurare un account Exchange su Outlook 2016 per Mac'
-slug: configurazione-outlook-2016-mac
+slug: configurazione-exchange-outlook-2016-windows
 excerpt: 'Scopri come configurare un account Exchange su Outlook 2016 per Mac'
 section: 'Configurazione di un client di posta elettronica Exchange'
 ---
@@ -16,7 +16,7 @@ Gli account Exchange possono essere configurati su client di posta compatibili p
 ## Prerequisiti
 
 - Disporre di una soluzione [Exchange](https://www.ovh.it/emails/){.external}
-- Aver installato líapplicazione Microsoft Outlook sul proprio Mac
+- Aver installato l'applicazione Microsoft Outlook sul proprio Mac
 - Disporre delle credenziali associate allíaccount email da configurare
 
 > [!primary]
@@ -56,11 +56,11 @@ Per verificare la corretta configurazione dell'account esegui un test di invio.
 
 Una volta configurato l'indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVH propone un'applicazione Web che dispone di [funzioni collaborative](https://www.ovh.it/emails/){.external} disponibile all'indirizzo [https://www.ovh.it](https://www.ovh.it){.external} e accessibile con le credenziali del tuo account.
+OVH propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovh.it/emails/){.external} disponibile all'indirizzo [https://www.ovh.it](https://www.ovh.it){.external} e accessibile con le credenziali del tuo account.
 
 ## Per saperne di più
 
-[Configurare un indirizzo email compreso nellíofferta MX Plan o in uníofferta di hosting Web su Outlook 2016 per Mac](https://docs.ovh.com/it/emails/configurazione-outlook-2016-mac/){.external}
+[Configurare un indirizzo email compreso nell'offerta MX Plan o in un'offerta di hosting Web su Outlook 2016 per Mac](https://docs.ovh.com/it/emails/configurazione-outlook-2016-mac/){.external}
 
 [Configurare un account Email Pro su Outlook 2016 per Mac](https://docs.ovh.com/it/emails-pro/configurazione-outlook-2016-mac/){.external}
 
