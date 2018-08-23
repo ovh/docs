@@ -1,7 +1,7 @@
 ---
 title: 'Configurare un indirizzo email su Android tramite l’applicazione Gmail'
 slug: configurazione-android-6
-excerpt: 'Scopri come configurare un indirizzo e-mail MX Plan su Android tramite l’applicazione Gmail'
+excerpt: 'Scopri come configurare un indirizzo email MX Plan su Android tramite l’applicazione Gmail'
 section: Android
 ---
 
@@ -30,7 +30,7 @@ Questa guida ti mostra come configurare un indirizzo email MX Plan su Android tr
 
 Sulla schermata Home del tuo dispositivo clicca sull’ `applicazione Gmail`{.action}. L’aggiunta di un account si può effettuare in due modi diversi:
 
-- Se non è stato impostato nessun account: dopo la schermata di benvenuto clicca su `Aggiungi un indirizzo email`{.action}. Quindi seleziona `Altro`{.action}; 
+- Se non è stato impostato nessun account: dopo la schermata di benvenuto clicca su `Aggiungi un indirizzo email`{.action}. Quindi seleziona `Altro`{.action}.
 
 - Se è già stato impostato un account: clicca sull’icona con i tre puntini in alto a sinistra e poi su quella a forma di freccia che trovi a destra del nome dell’account già impostato.  Quindi clicca su `Aggiungi un account`{.action} e seleziona `Altro`{.action}. 
 

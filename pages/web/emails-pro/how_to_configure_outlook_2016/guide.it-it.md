@@ -46,18 +46,18 @@ Compila i campi richiesti:
 
 |Informazione|Descrizione|
 |---|---|
-|Server|Inserisci il server “pro1.mail.ovh.net”|
-|Porta|Indica la porta «993»|
-|Metodo di cifratura|Seleziona “SSL/TLS”|
+|Server|Inserisci il server 'pro1.mail.ovh.net'|
+|Porta|Indica la porta '993'|
+|Metodo di cifratura|Seleziona 'SSL/TLS'|
 |Richiedere l’autorizzazione |Non selezionare la voce “Richiedere l’autenticazione tramite password sicura (SPA) durante la connessione”.|
 
 - **per la posta in uscita:**
 
 |Informazione|Descrizione|
 |---|---|
-|Server|Inserisci il server “pro1.mail.ovh.net”|
-|Porta|Indica la porta «587»|
-|Metodo di cifratura|Seleziona “STARTTLS”|
+|Server|Inserisci il server 'pro1.mail.ovh.net'|
+|Porta|Indica la porta '587'|
+|Metodo di cifratura|Seleziona 'STARTTLS'|
 |Richiedere l’autorizzazione |Non selezionare la voce “Richiedere l’autenticazione tramite password sicura (SPA) durante la connessione”.|
 
 Una volta inserite le informazioni, clicca su `Avanti`{.action} e inserisci la **password** dell’indirizzo email. Se le informazioni inserite sono corrette, l’accesso all’account andrà a buon fine.
