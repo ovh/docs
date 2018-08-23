@@ -1,0 +1,57 @@
+#version=DEVEL
+# System authorization information
+auth --enableshadow --passalgo=sha512
+# Use CDROM installation media
+cdrom
+# Use text mode install
+text
+# Firewall configuration
+firewall --disabled
+# Run the Setup Agent on first boot
+firstboot --disable
+ignoredisk --only-use=sda
+# Keyboard layouts
+#keyboard --vckeymap=fr --xlayouts='fr'
+keyboard --vckeymap={{ks_vckeymap or 'us'}} --xlayouts='{{ks_xlayouts or ''}}'
+
+# System language
+lang en_US.UTF-8
+
+# Network information
+network  --bootproto=dhcp --device=ens160 --onboot=off --ipv6=auto --no-activate
+network  --hostname=localhost.localdomain
+
+# Root password
+rootpw --plaintext '{{ks_root_password or 'test'}}'
+# Below would work but pulls python dependencies
+# password=`python -c "import crypt, getpass, pwd; print(crypt.crypt('test', '\$6\$saltsalt\$'))"`
+# rootpw --iscrypted $password
+# System services
+services --enabled="chronyd"
+# Do not configure the X Window System
+skipx
+# System timezone
+timezone Etc/UTC --isUtc
+# System bootloader configuration
+bootloader --location=mbr --boot-drive=sda
+autopart --type=lvm
+# Partition clearing information
+clearpart --all --initlabel --drives=sda
+
+%packages
+@core
+chrony
+open-vm-tools
+%end
+
+%addon com_redhat_kdump --disable --reserve-mb='auto'
+%end
+
+%anaconda
+pwpolicy root --minlen=6 --minquality=1 --notstrict --nochanges --notempty
+pwpolicy user --minlen=6 --minquality=1 --notstrict --nochanges --emptyok
+pwpolicy luks --minlen=6 --minquality=1 --notstrict --nochanges --notempty
+%end
+
+# Reboot after installation
+reboot --eject
