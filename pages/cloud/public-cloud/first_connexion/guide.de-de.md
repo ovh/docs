@@ -18,7 +18,7 @@ Der Login auf Ihre Public Cloud Instanz funktioniert auf dieselbe Weise wie ein 
 ## Voraussetzungen
 
 - Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
-- Sie haben eine[Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/){.external} erstellt.
+- Sie haben eine [Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/){.external} erstellt.
 
 
 ## Beschreibung
