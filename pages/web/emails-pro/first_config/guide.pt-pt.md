@@ -5,20 +5,20 @@ excerpt: 'Saiba como configurar o serviço E-mail Pro'
 section: Geral
 ---
 
-**Última atualização: 23/03/2018**
+**Última atualização: 22/08/2018**
 
 ## Sumário
 
- A solução E-mail Pro permite beneficiar de endereços de e-mail profissionais a preços muito vantajosos para o seu negócio ou atividade.
+Adquiriu um serviço E-mail Pro, que lhe permite beneficiar de endereços de e-mail profissionais a preços muito vantajosos para o seu negócio ou atividade.
 
-**Aprenda a configurar o serviço E-mail Pro.**
+**Saiba como configurar o serviço E-mail Pro.**
 
 ## Requisitos
 
 - Ter o serviço [E-mail Pro](https://www.ovh.pt/emails/email-pro/){.external}.
 - Ter recebido o e-mail com a confirmação da instalação do serviço E-mail Pro.
 - Dispor de um domínio.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instruções
 
@@ -35,9 +35,9 @@ Para tal, clique em `E-mail Pro`{.action} no menu à esquerda e selecione o nome
 
 ### 2 - Adicionar o domínio
 
-Depois de contratar o serviço E-mail Pro, surge uma janela na Área de Cliente para `Adicionar um domínio`{.action}. Se isso não acontecer, clique em `Domínios associados`{.action} e em `Adicionar um domínio`{.action}.
+Depois de contratar o serviço E-mail Pro, surge uma janela na Área de Cliente para `Adicionar domínio`{.action}. Se isso não acontecer, clique em `Domínios associados`{.action} e, depois, em `Adicionar domínio`{.action}.
 
-Depois escolha uma das seguintes opções:
+Deverá escolher uma das seguintes opções:
 
 - **selecionar um domínio da lista**: inclui os domínios geridos pela OVH associados ao seu identificador de cliente;
 - **introduzir um domínio não gerido pela OVH**: neste caso, para que o serviço E-mail Pro possa funcionar corretamente, precisa de alterar a configuração no sistema (Zona DNS) do agente que gere o domínio.
@@ -46,14 +46,14 @@ Selecione a opção adequada e clique em `Seguinte`{.action}.
 
 ![emailpro](images/first_config_email_pro_add_domain.png){.thumbnail}
 
-A nova janela apresenta informações relativas ao tipo de configuração do domínio.
+A nova janela apresenta informações relativas ao tipo de configuração do modo.
 
 - **Se indicou um domínio não gerido pela OVH**, o modo non-authoritative será configurado como predefinido.
-- **Se escolheu um domínio gerido pela OVH**, tem duas opções à escolha.
+- **Se escolheu um domínio gerido pela OVH**, tem de escolher entre as duas opções.
 
-|Modalidade|Descrição|
+|Modo|Descrição|
 |---|---|
-|Authoritative|Para usar o seu domínio apenas com o serviço E-mail Pro. Esta opção não permite o uso de outro serviço de e-mail com a solução E-mail Pro.|
+|Authoritative|Para usar o seu domínio apenas com o serviço E-mail Pro. Esta opção não permite o uso de outro serviço de e-mail com o E-mail Pro.|
 |Non-Authoritative|Para usar o seu domínio com a solução E-mail Pro e outro serviço de correio eletrónico.| 
 
 > [!primary]
@@ -67,7 +67,7 @@ Clique em `Seguinte`{.action} para adicionar o domínio.
 
 **Se escolheu um domínio gerido pela OVH**, a configuração será realizada de forma automática. Para tal, basta selecionar as opções desejadas e clicar em `Seguinte`{.action} para adicionar o domínio.
 
-**Se indicou um domínio não gerido pela OVH**, a configuração será feita no passo seguinte («Configurar domínio»).
+**Se indicou um domínio não gerido pela OVH**, a configuração será feita no passo seguinte.
 
 ![emailpro](images/first_config_email_pro_add_domain_step3.png){.thumbnail}
 
@@ -75,20 +75,30 @@ No final do processo, verifique as informações apresentadas e clique em `Confi
 
 ### 3 - Configurar o domínio
 
-Quando o domínio adicionado estiver associado ao serviço, verifique se a configuração do mesmo está correta. Para tal, consulte a tabela apresentada em «Domínios associados».
+Depois de adicionar o domínio enquanto domínio associado, verifique as configurações através da tabela apresentada.
 
-A coluna `Diagnóstico`{.action} indica se a configuração do domínio está correta ou não. Se apresentar uma etiqueta vermelha, terá de alterar a configuração.
+A coluna `Diagnóstico`{.action} permite-lhe controlar a configuração dos campos MX do domínio. Se apresentar uma etiqueta vermelha, terá de alterar a configuração.
 
-- **A configuração automática ** pode demorar algumas horas até estar concretizada. Pode ver o estado do processo na Área de Cliente.
+- **Se optou por uma configuração automática quando adicionou o domínio,** poderá demorar algumas horas até ficar visível na Área de Cliente.
 - **Se indicou um domínio não gerido pela OVH**, clique na etiqueta vermelha para ver as alterações a realizar. As alterações podem demorar algumas horas até estarem concretizadas. Pode ver o estado do processo na Área de Cliente.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
 
+Apesar de ser opcional, também tem a possibilidade de adicionar um campo SRV à configuração do seu domínio. Deverá permitir que um software de e-mails ou outro dispositivo (por exemplo, um _smartphone_ ou um tablet) recupere automaticamente os elementos necessários para configurar a sua conta E-mail Pro (servidores, portas e protocolos de segurança).
+
+Se isto não for do seu interesse, passe diretamente para a etapa 4. Caso contrário, adicione o campo SRV a partir do sistema do agente responsável pela gestão do seu domínio. Se o agente for a OVH, consulte as instruções descritas na nossa documentação sobre como [Editar uma zona DNS da OVH](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external} (versão inglesa) através dos elementos abaixo:
+
+|Domínio|Tipo de registo|Prioridade|Peso|Porta|Alvo|
+|---|---|---|---|---|
+|\_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
+
+Não se esqueça de substituir a informação geral “mypersonaldomain.ovh” pelo nome do seu domínio.
+
 ### 4 - Configurar as contas E-mail Pro
 
-Para configurar os endereços de e-mail, aceda a `Contas de e-mail`{.action}. Na tabela, as contas contratadas apresentam o seguinte formato: «*@configureme.me*».
+Para configurar os endereços de e-mail, aceda a `Contas de e-mail`{.action}. Na tabela, as contas contratadas apresentam o seguinte formato: “*@configureme.me*”.
 
-Para configurar as contas, clique no ícone em forma de lápis.
+Para as configurar, clique no ícone em forma de lápis.
 
 ![emailpro](images/first_config_email_pro_configure_email_accounts.png){.thumbnail}
 
@@ -113,10 +123,15 @@ Depois, clique em `Seguinte`{.action}. Verifique as informações apresentadas e
 
 ### 5 - Usar o serviço de e-mail
 
-As contas foram configuradas e estão prontas a usar. Para tal, aceda à aplicação web disponível em: [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external} e insira os dados de acesso da sua conta.
+As contas foram configuradas e estão prontas a usar. Para tal, a OVH disponibiliza uma aplicação online. Pode aceder através do endereço <https://pro1.mail.ovh.net> e deverá preencher os dados associados ao endereço de e-mail.
 
-Se quiser, também pode configurar o seu endereço de e-mail num software (cliente) de correio eletrónico para receber e enviar mensagens através do computador, smartphone ou tablet. Para saber como, consulte esta página: [https://docs.ovh.com/pt/emails-pro/](https://docs.ovh.com/pt/emails-pro/){.external}.
+Se desejar associar o seu endereço de e-mail a um software de correio eletrónico ou dispositivo, como um _smartphone_ ou um tablet, consulte a página: <https://docs.ovh.com/pt/emails-pro/>. Se pretender obter mais informações sobre os elementos necessários para configurar a sua conta E-mail Pro, consulte as configurações que deverá utilizar:
+
+|Tipo de servidor|Nome do servidor|Tipo de segurança|Porta|
+|---|---|---|---|
+|Receção|pro1.mail.ovh.net|SSL/TLS|993|
+|Envio|pro1.mail.ovh.net|STARTTLS|587|
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com a nossa comunidade de utilizadores: [Comunidade OVH](https://community.ovh.com/en/){.external}.
