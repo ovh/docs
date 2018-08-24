@@ -34,7 +34,7 @@ Nachdem Sie sich in VMware Horizon eingeloggt haben, gehen Sie wie folgt vor:
 
 > [!primary]
 >
-> Es gibt drei Haupttypen der Desktop-Pools: * automatisiert*, *manuell* und *RDS*.
+> Es gibt drei Haupttypen der Desktop-Pools: *automatisiert*, *manuell* und *RDS*.
 > 
 > - Die *automatisierten* Desktop-Pool-Typen werden auf Basis einer Vorlage oder eines Snapshots einer virtuellen Maschine (VM) erstellt.
 > 
