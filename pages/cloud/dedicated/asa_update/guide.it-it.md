@@ -1,17 +1,17 @@
 ---
-title: 'Aggiornare il firewall CISCO ASA'
-excerpt: 'Scopri come aggiornare il tuo firewall CISCO ASA'
+title: 'Aggiornare il Firewall CISCO ASA'
+excerpt: 'Scopri come aggiornare il tuo Firewall CISCO ASA'
 slug: aggiornare-firewall-cisco-asa
 section: 'Uso avanzato'
 ---
 
-**Ultimo aggiornamento: 07/08/2018**
+**Ultimo aggiornamento: 24/08/2018**
 
 ## Obiettivo
 
-Per proteggere in maniera ottimale il tuo sistema, il tuo firewall CISCO Adaptive Security Appliance (ASA) deve regolarmente essere aggiornato con le ultime patch. In questo modo potrai evitare eventuali vulnerabilità di sicurezza.
+Per proteggere in maniera ottimale il tuo sistema è necessario aggiornare regolarmente il tuo Firewall CISCO Adaptive Security Appliance (ASA) con le ultime patch. In questo modo potrai evitare eventuali vulnerabilità di sicurezza.
 
-**Questa guida ti spiega come effettuare l’aggiornamento del firewall CISCO ASA.**
+**Questa guida ti mostra come effettuare l’aggiornamento del Firewall CISCO ASA.**
 
 
 ## Prerequisiti
@@ -21,15 +21,15 @@ Per proteggere in maniera ottimale il tuo sistema, il tuo firewall CISCO Adaptiv
 
 ## Procedura
 
-### Disattivare il firewall Cisco ASA dallo spazio clienti
+### Disattivare il Firewall Cisco ASA dallo Spazio Cliente
 
-La procedura di aggiornamento richiede diversi riavvii: per tale motivo, ti consigliamo di disattivare il firewall Cisco ASA per non rendere il server indisponibile durante questo processo. 
+La procedura di aggiornamento richiede diversi riavvii: per tale motivo, ti consigliamo di disattivare il Firewall Cisco ASA per non rendere il server indisponibile durante questo processo. 
 
-Per far ciò, vai nel tuo [spazio cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Dedicato`{.action}. In seguito scegli il tuo server dedicato, poi `Firewall Cisco ASA`{.action}. Infine clicca a destra su `Disattiva il firewall Cisco ASA`{.action}.
+Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Dedicato`{.action}, scegli il tuo server dedicato e poi `Firewall Cisco ASA`{.action}. Infine clicca a destra su `Disattiva il Firewall Cisco ASA`{.action}.
 
 ![Disattivazione di Cisco ASA](images/customer_panel_asa_disable.png){.thumbnail} 
 
-### Registrare la configurazione
+### Registra la configurazione
 
 #### Primo metodo: via ASDM
 
@@ -40,7 +40,7 @@ Connettiti al Cisco Adaptive Security Device Manager (o ASDM), poi scegli `File`
 
 #### Secondo metodo: via SSH
 
-Connettiti al firewall Cisco ASA utilizzando il protocollo SSH:
+Connettiti al Firewall Cisco ASA utilizzando il protocollo SSH:
 
 ```sh
 user@desk:~$ ssh adminovh@IP_ASA
@@ -52,7 +52,7 @@ asa12345>en
 Password: ********
 ```
 
-Quindi digita il comando seguente:
+Quindi digita il seguente comando:
 
 ```sh
 asa12345# write memory
@@ -69,12 +69,12 @@ Crea un file locale, ad esempio `backupAsa.txt`. Quindi, connettiti via ASDM e v
 
 ![Salvare la configurazione via ASDM 1](images/asa2.jpg){.thumbnail} 
 
-Nel menù contestuale che si è aperto, scegli il file locale che hai precedentemente creato (con `Browse Local...`{.action}) poi salva la configurazione cliccando su `Backup`{.action}.
+Nel menu contestuale che appare, scegli il file locale che hai precedentemente creato (con `Browse Local...`{.action}) poi salva la configurazione cliccando su `Backup`{.action}.
 
 ![Salvare la configurazione via ASDM 2](images/asa3.jpg){.thumbnail}
 
 
-### Riavviare il firewall Cisco ASA
+### Riavvia il Firewall Cisco ASA
 
 Questo step è importante poiché è necessario assicurarsi che il Cisco ASA funzioni e sia accessibile dopo un semplice riavvio. 
 
@@ -84,7 +84,7 @@ Connettiti al Cisco Adaptive Security Device Manager, poi scegli `Tools`{.action
 
 ![Riavviare il firewall ASA via ASDM 1](images/asa5.jpg){.thumbnail}
 
-Per un riavvio immediato, nella finestra che appare seleziona in `Reload Start Time` > `Now`{.action} > `Schedule Reload`{.action}. 
+Per un riavvio immediato, nella finestra che appare seleziona in `Reload Start Time`{.action} > `Now`{.action} > `Schedule Reload`{.action}. 
 
 ![Riavviare il firewall Cisco ASA via ASDM 2](images/asa6.jpg){.thumbnail}
 
@@ -92,7 +92,7 @@ Per un riavvio immediato, nella finestra che appare seleziona in `Reload Start T
 
 #### Secondo metodo: via SSH
 
-Connettiti in SSH al firewall Cisco ASA e inserisci il comando `reload`: 
+Connettiti in SSH al Firewall Cisco ASA e inserisci il comando `reload`{.action}: 
 
 ```sh
 asa12345# reload
@@ -110,26 +110,24 @@ Shutting down File system
 Il riavvio per ricaricare la configurazione richiederà alcuni minuti.
 
 
-### Riattivare il firewall Cisco ASA dallo spazio clienti
+### Riattiva il Firewall Cisco ASA dallo Spazio Cliente
 
-Come per il primo step, vai nel tuo [spazio cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Dedicato`{.action}. In seguito seleziona il tuo server dedicato, poi `Firewall Cisco ASA`{.action}. Infine clicca a destra su `Attivare il firewall Cisco ASA`{.action}.
+Come per il primo step, accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Dedicato`{.action}. Dopodiché seleziona il tuo server dedicato, poi `Firewall Cisco ASA`{.action}. Infine clicca a destra su `Attivare il Firewall Cisco ASA`{.action}.
 
 ![Attivazione del firewall Cisco ASA. ](images/customer_panel_asa_enable.png){.thumbnail}
 
+Dopo il riavvio, quando il Firewall Cisco ASA è avviato, verifica che tutti i servizi sul tuo server funzionino correttamente e passa allo step successivo. Se dovessi riscontrare problemi, effettua le adeguate verifiche per risolvere i malfunzionamenti prima di passare agli step successivi. 
 
-Dopo il riavvio, quando il firewall Cisco ASA è avviato, verifica che tutti i servizi sul tuo server funzionino correttamente. Se tutto funziona correttamente, passa allo step successivo.  Se dovessi riscontrare dei blocchi, effettua le adeguate verifiche per risolvere i malfunzionamenti prima di passare agli step successivi. 
+### Disattiva nuovamente il Firewall ASA dallo Spazio Cliente
 
+A questo punto è necessario disattivare il Firewall ASA come al primo step.
 
-### Disattivare nuovamente il firewall ASA dallo spazio clienti
-
-A questo punto è necessario disattivare il firewall ASA come al primo step.
-
-Per questo, vai nel tuo [spazio cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Dedicato`{.action}. In seguito scegli il tuo server dedicato, poi `Firewall Cisco ASA`{.action}. Infine clicca a destra su `Attivare il firewall Cisco ASA.`{.action}.
+Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, nella sezione `Dedicato`{.action}, scegli il tuo server dedicato, poi `Firewall Cisco ASA`{.action}. Infine clicca a destra su `Attivare il firewall Cisco ASA.`{.action}.
 
 ![Disattivazione di Cisco ASA](images/customer_panel_asa_disable.png){.thumbnail}
 
 
-### Verifica il file binario utilizzato attualmente.
+### Verifica il file binario utilizzato attualmente
 
 #### Primo metodo: via ASDM
 
@@ -149,13 +147,13 @@ boot system disk0:/asa847-30-k8.bin
 asdm image disk0:/asdm-771.bin
 ```
 
-- boot system : la versione del firewall ASA
-- asdm image: la versione del firewall ASDM
+- boot system : la versione del Firewall ASA
+- asdm image: la versione del Firewall ASDM
 
 
 ### Verifica il file binario da utilizzare
 
-Per trovare il file binario da utilizzare, fai riferimento alla tabella seguente: 
+Per trovare il file binario da utilizzare, fai riferimento alla seguente tabella: 
 
 |Versione attuale ASA|Prima versione verso la quale effettuare l’aggiornamento|In seguito aggiornare verso|
 |---|---|---|
@@ -173,12 +171,11 @@ Per trovare il file binario da utilizzare, fai riferimento alla tabella seguente
 
 Ad esempio, se il tuo ASA è su una versione 8.4(2), bisognerà prima aggiornare il sistema verso la versione 8.4(6), successivamente aggiornare verso 8.4(7+) o 9.2+.
 
-
 Per ulteriori informazioni fai riferimento alla [guida Cisco](https://www.cisco.com/c/en/us/td/docs/security/asa/upgrade/asa-upgrade.html){.external}.
 
 > [!primary]
 >
-> Per i firewall Cisco ASA con 256 MB di memoria, ti consigliamo di aggiornare solo fino alla versione 8.4(x). Le versioni 9.1(x) e 9.2(x) utilizzeranno quasi tutta la memoria disponibile ancora prima di avviarsi. 
+> Per i Firewall Cisco ASA con 256 MB di memoria, ti consigliamo di aggiornare solo fino alla versione 8.4(x). Le versioni 9.1(x) e 9.2(x) utilizzeranno quasi tutta la memoria disponibile ancora prima di avviarsi. 
 >
 
 Ci sono due metodi per verificare la versione che stai utilizzando: 
@@ -198,12 +195,13 @@ Hardware: ASA5505, 512 MB RAM, CPU CPU Geode 500 MHz
 ![Verifica la versione del binario nell’ASDM 2](images/asa11.jpg){.thumbnail}
 
 
-### Rimuovere i file binari inutilizzati
+### Rimuovi i file binari inutilizzati
 
 Prima di aggiungere i nuovi file binari, conviene eliminare quelli vecchi. 
 
 #### Primo metodo: via ASDM
-Connettiti al Cisco Adaptive Security Device Manager.  Poi vai su `Tools`{.action} e clicca su `File Management...`{.action}. 
+
+Connettiti al Cisco Adaptive Security Device Manager. Poi vai su `Tools`{.action} e clicca su `File Management...`{.action}. 
 
 ![Rimuovere i file binari inutilizzati nell’ASDM 1](images/asa12.jpg){.thumbnail}
 
@@ -231,7 +229,7 @@ Delete filename [asdm-721-150.bin]?
 Delete disk0:/asdm-721-150.bin?[confirm]
 ```
 
-### Aggiungere e installare i file binari ASDM
+### Aggiungi e installa i file binari ASDM
 
 #### Primo metodo: via ASDM
 
@@ -239,10 +237,10 @@ Connettiti al Cisco Adaptive Security Device Manager. Dopodiché vai su `Tools`{
 
 ![Aggiungere e installare i file binari ASDM tramite ASDM 1](images/asa14.jpg){.thumbnail}
 
-Nello schermo successivo seleziona :
+Nella schermata successiva seleziona:
 
-- *Image to upload*:  ASDM ;
-- *Local File Patch*: digita `Browse Local Files`{.action} e scegli la tua versione dal file binario dell’ASDM. 
+- *Image to upload*:  ASDM
+- *Local File Patch*: digita `Browse Local Files`{.action} e scegli la tua versione dal file binario dell’ASDM
 
 Infine convalida la tua scelta cliccando su `Upload Image`{.action} e clicca su `Yes`{.action} per confermare che quest’immagine diventi l’immagine di avvio. 
 
@@ -253,7 +251,7 @@ Infine convalida la tua scelta cliccando su `Upload Image`{.action} e clicca su 
 
 #### Secondo metodo: via SSH
 
-Il file binario deve essere archiviato su un server FTP prima di iniziare. Dovrai quindi configurare il firewall ASA in SSH e salvarne la configurazione: 
+Prima di iniziare, è necessario archiviare il file binario su un server FTP. Successivamente, puoi configurare il Firewall ASA in SSH e salvarne la configurazione: 
 
 ```sh
 asa12345# copy ftp://USER:PASSWORD@FTP_IP/FOLDER/asdm-781.bin flash:asdm-781.bin
@@ -285,7 +283,7 @@ asa12345(config)# end
 asa12345# write memory
 ```
 
-### Aggiungere e installare i nuovi file binari ASA
+### Aggiungi e installa i nuovi file binari ASA
 
 #### Primo metodo: via ASDM
 
@@ -293,10 +291,10 @@ Connettiti al Cisco Adaptive Security Device Manager. Vai su `Tools`{.action} e 
 
 ![Aggiungere e installare i file binari ASA via ASDM 1](images/asa14.jpg){.thumbnail}
 
-Nella schermata successivo seleziona :
+Nella schermata successiva seleziona:
 
-- *Image to upload*:  ASA ;
-- *Local File Patch*: clicca su `Browse Local Files` e scegli la tua versione dal file binario ASA. 
+- *Image to upload*: ASA
+- *Local File Patch*: clicca su `Browse Local Files` e scegli la tua versione dal file binario ASA
 
  
 Per confermare la tua scelta clicca su `Upload Image`{.action}, quindi clicca su `Yes`{.action} per confermare che quest’immagine diventerà l’immagine di avvio. 
@@ -339,7 +337,7 @@ asa12345(config)# end
 asa12345# write memory
 ```
 
-### Riavviare il firewall Cisco ASA
+### Riavvia il Firewall Cisco ASA
 
 Questo step è importante poiché è necessario assicurarsi che il Cisco ASA funzioni e sia accessibile dopo un semplice riavvio. 
 
@@ -358,7 +356,7 @@ Per un riavvio immediato, nella finestra che appare seleziona in Reload Start Ti
 
 #### Secondo metodo: via SSH
 
-Connettiti in SSH al firewall Cisco ASA e digita il comando `reload`: 
+Connettiti in SSH al Firewall Cisco ASA e digita il comando `reload`: 
 
 ```sh
 asa12345# reload
@@ -384,9 +382,9 @@ Il riavvio per ricaricare la configurazione richiederà alcuni minuti.
 >
 
 
-### Correggere la configurazione
+### Correggi la configurazione
 
-Durante l’aggiornamento di Cisco ASA dalle versioni precedenti alla 8.4.6, troverai questa nuova configurazione dopo il riavvio: 
+Durante l’aggiornamento di Cisco ASA dalle versioni precedenti alla 8.4.6, dopo il riavvio troverai questa nuova configurazione: 
 
 ```sh
 asa12345# sh run | i permit-
@@ -395,7 +393,7 @@ no arp permit-nonconnected
 ```
 
 
-La configurazione deve essere corretta come segue:
+È necessario correggere la configurazione come segue:
 
 ```sh
 asa12345# conf t
@@ -415,18 +413,18 @@ Cryptochecksum: 4b86b1e4 2e731d6b 9d1fc491 a5eae0f3
 
 
 
-### Riattivare il firewall Cisco ASA dallo spazio clienti
+### Riattiva il Firewall Cisco ASA dallo Spazio Cliente
 
-Come per il primo step, vai nel tuo [spazio clienti OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Dedicato`{.action}. In seguito seleziona il tuo server dedicato, poi `Firewall Cisco ASA`{.action}. Infine clicca a destra su `Attiva il firewall Cisco ASA`{.action}.
+Come per il primo step, accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Dedicato`{.action}. In seguito seleziona il tuo server dedicato, poi `Firewall Cisco ASA`{.action}. Infine clicca a destra su `Attiva il firewall Cisco ASA`{.action}.
 
 ![Attivazione del firewall Cisco ASA](images/customer_panel_asa_enable.png){.thumbnail}
 
 
-Il tuo ASA è ora aggiornato
+Il tuo ASA è ora aggiornato.
 
 ![Firewall Cisco ASA aggiornato](images/asa22.jpg){.thumbnail}
 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.

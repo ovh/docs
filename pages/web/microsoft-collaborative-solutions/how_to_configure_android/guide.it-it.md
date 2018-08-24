@@ -72,6 +72,6 @@ OVH propone un’applicazione Web con [funzionalità collaborative](https://www.
 
 ## Per saperne di più
 
-[Configurare un indirizzo e-mail compreso nell’offerta MX Plan o in un’offerta di hosting web su Android tramite l’applicazione Gmail](https://docs.ovh.com/gb/en/emails/configuration-android/){.external}.
+[Configurare un indirizzo email su Android tramite l’applicazione Gmail](https://docs.ovh.com/it/emails/configurazione-android-6/){.external}.
 
 Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.

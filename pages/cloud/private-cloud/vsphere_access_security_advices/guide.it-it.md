@@ -42,14 +42,14 @@ Per creare di un account utente è necessario inserire una password.
 >
 > Per rendere più sicuri i tuoi dati, la tua password deve possedere le seguenti caratteristiche:
 >
-> - contenere minimo otto caratteri; 
-> - contenere minimo tre tipi di caratteri; 
-> - non essere tratta dal dizionario; 
-> - non deve contenere informazioni personali (il tuo nome, cognome o data di nascita); 
-> - non deve essere utilizzata per molteplici utenti; 
-> - essere archiviata in un password manager; 
-> - essere cambiata ogni tre mesi; 
-> - essere diversa dalle password precedenti.
+> - contenere minimo otto caratteri
+> - contenere minimo tre tipi di caratteri
+> - non essere tratta dal dizionario
+> - non deve contenere informazioni personali (il tuo nome, cognome o data di nascita)
+> - non deve essere utilizzata per molteplici utenti
+> - essere archiviata in un password manager
+> - essere cambiata ogni tre mesi
+> - essere diversa dalle password precedenti
 >
 
 In seguito potrai gestire i diritti di ogni utente cliccando sulla ruota dentata a destra di ciascun nome utente: 
@@ -58,12 +58,12 @@ In seguito potrai gestire i diritti di ogni utente cliccando sulla ruota dentata
 
 ### Limitare i tempi di sessione
 
-Al termine dell’utilizzo, si consiglia di chiudere la sessione aperta col tuo account. Per limitare i tempi di connessione, è possibile impostare un timeout per la scadenza della sessione. 
+Al termine dell’utilizzo, si consiglia sempre di chiudere la sessione aperta con il tuo account. Per limitare i tempi di connessione, è possibile impostare un timeout per la scadenza della sessione. 
 
-Puoi compiere questa operazione dal tuo [Spazio clienti OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Dopo l’accesso al tuo Private Cloud, seleziona `Sicurezza`{.action}. Clicca sul tasto `Modifica il timeout di sessione`{.action} situato a destra.  La finestra che si apre ti permetterà di stabilire la durata (in minuti) di una sessione. 
+Puoi compiere questa operazione dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Dopo l’accesso al tuo Private Cloud, seleziona `Sicurezza`{.action}. Clicca sul tasto `Modifica il timeout di sessione`{.action} situato a destra. La finestra che si apre ti permetterà di stabilire la durata (in minuti) di una sessione. 
 
 ![Scadenza della sessione](images/expiration.png){.thumbnail}
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.

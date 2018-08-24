@@ -1,10 +1,10 @@
 ---
-title: Utilizzare l'Object Storage con Rclone
+title: 'Utilizzare l''Object Storage con Rclone'
 slug: sync-rclone-object-storage
-section: Object Storage
+section: 'Object Storage'
 ---
 
-**Ultimo aggiornamento: 19/02/2018**
+**Ultimo aggiornamento: 24/08/2018**
 
 ## Obiettivo
 
