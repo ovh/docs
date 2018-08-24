@@ -5,38 +5,38 @@ excerpt: 'Scopri come rendere più sicuro l’accesso al tuo client vSphere Web'
 section: 'Per iniziare'
 ---
 
-**Ultimo aggiornamento: 07/08/2018**
+**Ultimo aggiornamento: 23/08/2018**
 
 ## Obiettivo
 
 Per garantire l’integrità della tua infrastruttura, è opportuno restringerne l’accesso. Per fare ciò, ti proponiamo vari metodi. 
 
-**Impara a rendere rapidamente e facilmente più sicuro l’accesso al tuo client vSphere grazie ad alcuni nostri consigli.** 
+**Questa guida ti mostra come rendere rapidamente e facilmente più sicuro l’accesso al tuo client vSphere grazie ad alcuni nostri consigli.** 
 
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio clienti OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 
 ## Procedura
 
-### Controllare gli accessi tramite IP
+### Controlla gli accessi tramite IP
 
 Il primo consiglio riguarda la restrizione di accesso tramite IP. Ti consigliamo di operare sempre con un sistema di registrazione su whitelist. Questa tecnica si basa sul principio del divieto di tutti gli indirizzi IP, con eccezione per gli indirizzi che possono avere accesso alla tua infrastruttura. 
 
-Questa azione è possibile direttamente dal tuo [Spazio clienti OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Dopo aver effettuato l’accesso alla sezione Private Cloud, vai su `Sicurezza`{.action}. Comparirà una tabella sulla quale potrai vedere gli indirizzi IP autorizzati o rifiutati. Per aggiungerne di nuovi, clicca a destra su `Aggiungi IP`{.action}: 
+Questa azione è possibile direttamente dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Dopo aver effettuato l’accesso alla sezione Private Cloud, vai su `Sicurezza`{.action}. Comparirà una tabella sulla quale potrai vedere gli indirizzi IP autorizzati o rifiutati. Per aggiungerne di nuovi, clicca a destra su `Aggiungi IP`{.action}: 
 
 ![Aggiunta IP](images/adding_ip.png){.thumbnail}
 
 
-### Creare utenti specifici
+### Crea utenti specifici
 
-Ti consigliamo vivamente di creare un account utente per ogni persona che accede alla tua infrastruttura. Anche questa operazione si effettua nello [Spazio clienti OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, ma questa volta dalla scheda `Utenti`{.action}. Per aggiungerne di nuovi, clicca sul pulsante situato a destra: `Crea un utente`{.action}.
+Ti consigliamo vivamente di creare un account utente per ogni persona che accede alla tua infrastruttura. Anche questa operazione si effettua nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, ma questa volta dalla scheda `Utenti`{.action}. Per aggiungerne di nuovi, clicca sul pulsante a destra: `Crea un utente`{.action}.
 
 ![Utenti](images/users.png){.thumbnail}
 
-Durante la creazione di un account utente, verrà richiesta una password. 
+Per creare di un account utente è necessario inserire una password. 
 
 > [!primary]
 >

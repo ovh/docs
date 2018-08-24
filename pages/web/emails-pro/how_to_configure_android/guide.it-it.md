@@ -1,22 +1,22 @@
 ---
 title: 'Configurare un account Email Pro su Android tramite l’applicazione Gmail'
 slug: configurazione-android
-excerpt: 'Scopri come configurare un account E-mail Pro su Android tramite l’applicazione Gmail'
+excerpt: 'Scopri come configurare un account Email Pro su Android tramite l’applicazione Gmail'
 section: 'Configurazione di un client di posta'
 ---
 
-**Ultimo aggiornamento: 08/08/2018**
+**Ultimo aggiornamento: 23/08/2018**
 
 ## Obiettivo
 
-Gli account Email Pro possono essere configurati su diversi client di posta elettronica compatibili per permetterti di utilizzare il tuo account email dal dispositivo che preferisci.
+È possibile configurare un account Email Pro su diversi client di posta elettronica compatibili per permetterti di utilizzare il tuo account email dal dispositivo che preferisci.
 
-**Scopri come configurare un account Email Pro su Android tramite l’applicazione Gmail.**
+**Questa guida ti mostra come configurare un account Email Pro su Android tramite l’applicazione Gmail.**
 
 ## Prerequisiti
 
 - Disporre di una soluzione [Email Pro](https://www.ovh.it/emails/email-pro/){.external}
-- Aver installato l’applicazione Gmail sul proprio dispositivo. Puoi scaricare quest’ultima da Google Play Store.
+- Aver installato l’applicazione Gmail sul proprio dispositivo, che puoi scaricare da Google Play Store
 - Disporre delle credenziali associate all’account email da configurare
 
 > [!primary]
@@ -36,9 +36,9 @@ Sulla schermata Home del tuo dispositivo clicca sull’applicazione `Gmail`{.act
 
 ![emailpro](images/configuration-email-pro-gmail-application-android-step1.png){.thumbnail}
 
-Inserisci il tuo indirizzo e-mail e clicca su `Avanti`{.action}.
+Inserisci il tuo indirizzo email e clicca su `Avanti`{.action}.
 
-Nel momento in cui scegli il tipo di account seleziona IMAP e poi digita la password del tuo indirizzo e-mail. Clicca su `Avanti`{.action} per continuare la configurazione.
+Nel momento in cui scegli il tipo di account seleziona IMAP e poi digita la password del tuo indirizzo email. Clicca su `Avanti`{.action} per continuare con la configurazione.
 
 ![emailpro](images/configuration-email-pro-gmail-application-android-step2.png){.thumbnail}
 
@@ -48,16 +48,16 @@ Imposta i parametri del server in entrata.
 |---|---| 
 |Nome utente (server posta in uscita)|Inserisci l’indirizzo email completo.|  
 |Password|Digita la password associata all’account.|
-|Server|Inserisci il server “pro1.mail.ovh.net”.|
+|Server|Inserisci il server 'pro1.mail.ovh.net'.|
 
-Fai clic su `Avanti`{.action} e inserisci le impostazioni del server in uscita. 
+Clicca su `Avanti`{.action} e inserisci le impostazioni del server in uscita. 
 
 |Informazione|Descrizione| 
 |---|---| 
 |Richiedere una connessione |Assicurati che il pulsante sia selezionato.|
 |Nome utente (server posta in uscita)|Inserisci l’indirizzo email completo.|  
 |Password|Digita la password associata all’account.|
-|Server SMTP|Inserisci il server “pro1.mail.ovh.net”.|
+|Server SMTP|Inserisci il server 'pro1.mail.ovh.net'.|
 
 Clicca su `Avanti`{.action}. Se le informazioni inserite sono corrette, l’accesso all’account andrà a buon fine.
 
@@ -86,4 +86,4 @@ OVH propone un’applicazione Web con [funzionalità collaborative](https://www.
 
 [Configurare un account Exchange su Android tramite l’applicazione Gmail](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_configurazione_di_android/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en](https://community.ovh.com/en/){.external}. 
+Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}. 
