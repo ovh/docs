@@ -1,11 +1,10 @@
 ---
-title: Crea un container di oggetti
-excerpt: Crea un container di oggetti
+title: 'Creare un container di oggetti'
+excerpt: 'Come creare un container di oggetti'
 slug: crea_un_container_di_oggetti
-section: Object Storage
+section: 'Object Storage'
 legacy_guide_number: g1921
 ---
-
 
 ## 
 Per utilizzare la soluzione di storage del tuo Public Cloud OVH, è necessario innanzi tutto creare un container per archiviare i tuoi file.
@@ -15,7 +14,7 @@ Questa guida ti mostra come creare un container dall'interfaccia Horizon di Open
 
 ## Requisiti necessari
 
-- [Crea un utente per accedere a Horizon]({legacy}1773)
+- [Creare un utente per accedere a Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/){.external}
 
 
 
