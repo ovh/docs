@@ -1,5 +1,5 @@
 ---
-title: 'Comment installer un serveur LAMP sous Debian 9'
+title: 'Comment installer un serveur LAMP sous Debian 9 et Ubuntu 18'
 slug: installer-lamp-debian-ubuntu
 excerpt: 'Laissez-vous guider pour installer un serveur LAMP'
 section: Tutoriel
@@ -110,7 +110,7 @@ service apache2 restart => permet de relancer ou recharger le service
 ```
 
 
-## Étape 4 : installez PHP
+### Étape 4 : installez PHP
 
 Nous passons ensuite à l'installation de la troisième brique, le langage de programmation PHP.
 
@@ -154,7 +154,7 @@ Une fois visualisé, nous vous recommandons vivement de **supprimer le fichier `
 
 
 
-## Étape 5 : installez le système de base de données MySQL/MariaDB
+### Étape 5 : installez le système de base de données MySQL/MariaDB
 
 Nous arrivons à la quatrième et dernière brique du *stack* LAMP, le système de bases de données.
 
