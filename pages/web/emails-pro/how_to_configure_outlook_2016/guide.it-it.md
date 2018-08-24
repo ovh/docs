@@ -1,7 +1,7 @@
 ---
 title: 'Configurare un account Email Pro su Outlook 2016 per Windows'
 slug: configurazione-outlook-2016
-excerpt: 'Scopri come configurare un account E-mail Pro su Outlook 2016 per Windows'
+excerpt: 'Scopri come configurare un account Email Pro su Outlook 2016 per Windows'
 section: 'Configurazione di un client di posta'
 ---
 
@@ -81,7 +81,7 @@ OVH propone anche un’applicazione Web con [funzionalità collaborative](https:
 
 ## Per saperne di più
 
-[Configurare un indirizzo email compreso nell’offerta MX Plan o in un’offerta di hosting web su Outlook 2016 per Windows](https://docs.ovh.com/it/emails/configurazione-outlook-2016-mac/){.external}){.external}
+[Configurare un indirizzo email compreso nell’offerta MX Plan o in un’offerta di hosting web su Outlook 2016 per Windows](https://docs.ovh.com/it/emails/configurazione-outlook-2016-mac/){.external}{.external}
 
 [Configurare un account Exchange su Outlook 2016 per Windows](https://docs.ovh.com/it/microsoft-collaborative-solutions/configurazione-exchange-outlook-2016-windows/){.external}
 
