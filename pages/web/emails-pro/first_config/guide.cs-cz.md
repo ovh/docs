@@ -1,11 +1,11 @@
 ---
-title: Konfigurace služby E-mail Pro
+title: 'Konfigurace služby E-mail Pro'
 slug: prvotni-nastaveni
-excerpt: Zjistěte, jak nastavit svou službu E-mail Pro
+excerpt: 'Zjistěte, jak nakonfigurovat svou službu E-mail Pro'
 section: Obecné
 ---
 
-**Poslední aktualizace 19/03/2018**
+**Poslední aktualizace 24/08/2018**
 
 ## Cíl
 
@@ -18,13 +18,13 @@ Právě jste si zakoupili službu E-mail Pro, v jejímž rámci získáváte př
 - Služba [E-mail Pro](https://www.ovh.cz/emails/email-pro/){.external}.
 - E-mail s potvrzením o úspěšném dokončení instalace Vaší služby.
 - Doména.
-- Přístup do [Zákaznického prostoru OVH](https://ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Postup
 
 ### Fáze 1: přístup do rozhraní pro správu služby
 
-Jakmile je služba E-mail Pro vytvořena a dostupná, můžete ji začít spravovat prostřednictvím [Zákaznického prostoru OVH](https://ovh.com/auth/?action=gotomanager){.external}.
+Jakmile je služba E-mail Pro vytvořena a dostupná, můžete ji začít spravovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 V levém postranním panelu vyberte sekci `E-mail Pro`{.action} a následně klikněte na požadovanou službu.
 
@@ -37,7 +37,7 @@ V levém postranním panelu vyberte sekci `E-mail Pro`{.action} a následně kli
 
 Po objednání služby E-mail Pro se automaticky otevře okno s výzvou pro `Přidání domény`{.action}. Pokud se tak nestane, přejděte do záložky `Asociované domény`{.action} a klikněte na tlačítko `Přidat doménu`{.action}.
 
-Budete požádáni o volbu mezi následujícími možnostmi:
+Budete požádáni o výběr mezi následujícími možnostmi:
 
 - **Zvolte doménu ze seznamu**: vybírat můžete pouze z domén, které jsou asociovány s Vaším zákaznickým identifikátorem a které používají konfiguraci OVH.
 - **Přidat externí doménu**: pro správnou funkčnost služby E-mail Pro musíte být schopni provádět úpravy v nastavení externí domény (DNS zóna).
@@ -75,14 +75,24 @@ V poslední části konfiguračního procesu ověřte zadané informace a klikn�
 
 ### Fáze 3: konfigurace domény
 
-Po připojení domény k řešení E-mail Pro (záložka asociované domény) se pomocí tabulky v administračním rozhraní služby ujistěte, zda je doména nakonfigurována správně.
+Po přidání domény ověřte její konfiguraci v tabulce asociovaných domén.
 
-Kolonka `Diagnostika`{.action} indikuje správnost konfigurace. Je-li zapotřebí konfiguraci upravit, objeví se červené políčko.
+Ve sloupci Diagnostika můžete po kliknutí na MX pole provádět konfiguraci MX záznamů své domény. Pokud budou v MX konfiguraci domény zapotřebí provést jakékoli změny, bude mít MX pole červenou barvu.
 
 - **Pokud jste při přidávání domény zvolili automatickou konfiguraci**: zobrazení v Zákaznickém prostoru OVH může trvat několik hodin. 
 - **Pokud jste přidali externí doménu**: pro zobrazení úprav, které je zapotřebí provést, klikněte na červené políčko. Pokud jste požadované úpravy právě provedli, jejich zobrazení v Zákaznickém prostoru OVH může trvat několik hodin.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
+
+Do konfigurace své domény můžete rovněž přidat i SRV záznam. SRV záznam se používá pro definování adresy serveru, spravujícího nějakou službu. Příklad: tento záznam může definovat adresu SIP serveru, nebo adresu serveru umožňujícího automatickou konfiguraci e-mailového klienta (na základě principu autodiscover).
+
+Pokud si SRV záznam do konfigurace své domény nepřejete přidat, přejděte k další fázi příručky. V opačném případě SRV záznam vytvořte pomocí správcovského rozhraní své domény. Pokud je Vaše doména spravována společností OVH, postupujte podle instrukcí uvedených v následující dokumentaci: [Modifikace DNS zóny](https://docs.ovh.com/cz/cs/domains/modifikace-dns-zony/){.external}.
+
+|Doména|Typ záznamu|Priorita|Váha|Port|Cíl|
+|---|---|---|---|---|
+|_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
+
+Nezapomeňte za generický název domény „mypersonaldomain.ovh“ dosadit příslušnou doménou.
 
 ### Fáze 4: nastavení účtů služby E-mail Pro
 
@@ -97,27 +107,32 @@ Vyplňte požadované informace.
 
 |Název|Popis|
 |---|---|
-|E-mailový účet|Zadejte požadovaný tvar e-mailové adresy (např. Vaše jméno.příjmení) a vyberte příslušnou doménu ze seznamu. |
+|E-mailový účet|Zadejte požadovaný tvar e-mailové adresy (např. Vaše jméno.příjmení) a vyberte příslušnou doménu ze seznamu.|
 |Jméno|Vyplňte křestní jméno.|
 |Příjmení|Vyplňte příjmení.|
-|Zobrazované jméno|Zadejte jméno, které bude při odesílání e-mailů z tohoto účtu uvedeno jako odesílatel. |
+|Zobrazované jméno|Zadejte jméno, které bude při odesílání e-mailů z tohoto účtu uvedeno jako odesílatel.|
 |Heslo a potvrzení|Zadejte heslo a potvrďte jej.| 
 
 Jakmile jsou informace kompletní, klikněte na tlačítko `Další`{.action}, ověřte zobrazené informace a klikněte na tlačítko `Schválit`{.action}. Následně započne proces konfigurace účtu.
 
 > [!primary]
 >
-> V závislosti na počtu Vašich účtů tuto fázi opakujte tolikrát, kolikrát je zapotřebí,  Účty si můžete kdykoli doobjednat kliknutím na tlačítko `Objednávka účtů`{.action}.
+> V závislosti na počtu Vašich účtů tuto fázi opakujte tolikrát, kolikrát je zapotřebí. Účty si můžete kdykoli doobjednat kliknutím na tlačítko `Objednávka účtů`{.action}.
 >
 
 ![emailpro](images/first_config_email_pro_configure_email_accounts_step2.png){.thumbnail}
 
 ### Fáze 5: používání e-mailových adres
 
-Jakmile jsou Vaše účty nakonfigurovány, nezbývá než začít je naplno využívat! Za tímto účelem můžete vyzkoušet webovou aplikaci OVH (*Webmail*). OVH Webmail je dostupný na následující adrese: [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external}. Pro přihlášení použijte identifikační údaje e-mailové adresy vytvořené prostřednictvím Zákaznického prostoru OVH.
+Jakmile jsou Vaše účty nakonfigurovány, nezbývá než začít je naplno využívat! Za tímto účelem můžete vyzkoušet webovou aplikaci OVH (*Webmail*). OVH webmail je dostupný na následující adrese: <https://pro1.mail.ovh.net>. Pro přihlášení použijte identifikační údaje e-mailové adresy vytvořené prostřednictvím Zákaznického prostoru OVH.
 
-Pokud si svůj e-mail přejete nakonfigurovat na externím e-mailovém klientu, smartphonu či tabletu, podívejte se do následující dokumentace: [https://docs.ovh.com/cz/cs/emails-pro/](https://docs.ovh.com/cz/cs/emails-pro/){.external}.
+Pokud si svůj e-mail přejete nakonfigurovat na externím e-mailovém klientu, smartphonu či tabletu, podívejte se do následující dokumentace: <https://docs.ovh.com/cz/cs/emails-pro/>. Níže naleznete základní technické informace týkající se Vaší služby E-mail Pro:
+
+|Typ serveru|Název serveru|Typ zabezpečení|Port|
+|---|---|---|---|
+|Příchozí|pro1.mail.ovh.net|SSL / TLS|993|
+|Odchozí|pro1.mail.ovh.net|STARTTLS|587|
 
 ## Kam dál
 
-Sdílejte své zkušenosti s uživatelskou komunitou na [https://community.ovh.com](https://community.ovh.com){.external}.
+Sdílejte své zkušenosti s uživatelskou komunitou na [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
