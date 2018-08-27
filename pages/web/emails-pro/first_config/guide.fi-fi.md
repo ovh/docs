@@ -1,11 +1,11 @@
 ---
-title: E-mail Pron konfigurointi
+title: 'E-mail Pro konfigurointi'
 slug: ensimmainen-konfigurointi
-excerpt: Katso, kuinka E-mail Pro -ratkaisu konfiguroidaan
+excerpt: 'Katso, kuinka E-mail Pro -ratkaisu konfiguroidaan. '
 section: Yleistä
 ---
 
-**Päivitetty 15.01.2018**
+**Päivitetty 27.8.2018**
 
 ## Tavoite
 
@@ -18,22 +18,24 @@ Olet hankkinut E-mail Pro -ratkaisun. Sen avulla saat käyttöösi yrityskäytt�
 - Sinulla on [E-mail Pro -tuote](https://www.ovh-hosting.fi/sahkopostit/email-pro/){.external}.
 - Olet saanut vahvistussähköpostin E-mail Pro -ratkaisun asennusta koskien.
 - Sinulla on verkkotunnus.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Käytännössä
 
-### 1. vaihe: Mene palvelusi hallintaan
+### 1\. vaihe: Mene palvelusi hallintaan
 
 Kun E-mail Pro -palvelusi on luotu ja käytettävissä, voit hallita sitä [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 Kirjautuaksesi palveluun klikkaa kohtaa `E-mail Pro`{.action} vasemmassa reunassa olevassa valikossa, ja valitse sitten kyseinen palvelu.
 
+ 
 > [!primary]
->
+> 
 > E-mail Pro -palvelusi nimi hallintapaneelissa on *emailpro-*alkuinen ja sisältää osan asiakastunnuksesta ja päättyy lukuun (1 ensimmäisenä asennettu E-mail Pro -palvelu, 2 toisena asennettu jne.)
 >
 
-### 2. vaihe: Verkkotunnuksen lisäys
+
+### 2\. vaihe: Verkkotunnuksen lisäys
 
 Jos olet juuri tilannut E-mail Pro -palvelusi, avautuu eteesi automaattisesti ikkuna, jossa kehotetaan `Lisäämään verkkotunnus`{.action}.  Mikäli ikkuna ei avaudu, mene kuvakkeeseen `Liitetyt verkkotunnukset`{.action} ja klikkaa sitten painiketta `Lisää verkkotunnus`{.action}.
 
@@ -71,20 +73,30 @@ Klikkaa painiketta `Seuraava`{.action} jatkaaksesi verkkotunnuksen lisäykseen.
 
 ![emailpro](images/first_config_email_pro_add_domain_step3.png){.thumbnail}
 
-Konfiguroinnin lopussa kehotamme tarkistamaan näkyvät tiedot ja klikkaamaan sitten painiketta `Vahvista`{.action} käynnistääksesi verkkotunnuksen lisäyksen.
+Konfiguroinnin lopussa kehotamme tarkistamaan näkyvät tiedot ja klikkaamaan sitten painiketta `Vahvista`{.action} verkkotunnuksen lisäyksen käynnistämiseksi.
 
-### 3. vaihe: Verkkotunnuksen konfigurointi
+### 3\. vaihe: Verkkotunnuksen konfigurointi
 
-Kun verkkotunnus on lisätty liitettynä verkkotunnuksena, varmista, että sen konfigurointi on oikein esiin tulevan taulukon avulla.
+Kun verkkotunnus on lisätty liitettynä verkkotunnuksena, tarkista sen asetukset näkyviin tulevassa taulukossa.
 
-`Vianhaku`{.action}-sarakkeen avulla voit nähdä, onko verkkotunnuksen konfigurointi oikein. Punainen pyörylä ilmoittaa, mikäli sitä täytyy muokata.
+`Vianhaku`{.action}-sarakkeen avulla voit hallita verkkotunnuksen MX-kenttien konfigurointia. Näkyvissä on punainen pyörylä, mikäli asetuksia tarvitsee muokata.
 
 - **Jos olet valinnut automaattisen konfiguroinnin verkkotunnuksen lisäyksen jälkeen**: voi kestää useita tunteja, ennen kuin se on näkyvissä hallintapaneelissa.
 - **Jos olet syöttänyt verkkotunnuksen, joka ei ole OVH:n hallitsema**: klikkaa punaista pyörylää katsoaksesi tarvittavat muokkaukset. Jos olet juuri tehnyt ne, voi kestää useita tunteja ennen kuin ne ovat näkyvissä hallintapaneelissa.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
 
-### 4. vaihe: Konfiguroi E-mail Pro -tilit
+Vaikka tämä on valinnaista, sinulla on lisäksi mahdollisuus lisätä SRV-kenttä verkkotunnuksesi konfiguraatioon. Tämän avulla sähköpostiohjelmisto tai muu laite, kuten _älypuhelin_ tai tabletti voi hakea automaattisesti E-mail Pro -tilisi konfiguraatioon tarvittavat elementit (palvelimet, portit ja tietoturvaprotokollat).
+
+Jos et halua hyödyntää tätä ominaisuutta, siirry suoraan seuraavaan vaiheeseen. Muussa tapauksessa lisää SRV-kenttä verkkotunnuksesi DNS-konfiguraatiota hallinnoivan palveluntarjoajan käyttöliittymässä. Jos kyseessä on OVH, katso dokumentaatiossa [“DNS-alueen muokkaus”](https://docs.ovh.com/fi/domains/miten_dns-aluetta_muokataan/){.external} kuvattuja ohjeita ja käytä alla olevia elementtejä:
+
+|Verkkotunnus|Tietueen tyyppi|Prioriteetti|Painoarvo|Portti|Kohde|
+|---|---|---|---|---|
+|\_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
+
+Muista korvata yleinen tieto “mypersonaldomain.ovh” omalla verkkotunnuksellasi.
+
+### 4\. vaihe: Konfiguroi E-mail Pro -tilit
 
 Siirry sähköpostiosoitteiden konfiguroimiseksi kuvakkeeseen `Sähköpostitilit`{.action}. Taulu näyttää tilit, jotka olet tilannut muodossa “*@configureme.me*”.
 
@@ -106,17 +118,23 @@ Kun tiedot on täytetty, klikkaa painiketta `Seuraava`{.action}, tarkista näkyv
 
 > [!primary]
 >
-> Tee tämä vaihe niin monta kertaa kuin on tarvetta, omistamiesi tilien lukumäärän mukaan. Voit tilata lisää tilejä painikkeesta `Lisää tilejä`{.action}.
+> Tee tämä vaihe niin monta kertaa kuin on tarvetta, omistamiesi tilien lukumäärän mukaan. Voit tilata lisää tilejä painikkeesta `Tilaa tilejä`{.action}.
 >
+
 
 ![emailpro](images/first_config_email_pro_configure_email_accounts_step2.png){.thumbnail}
 
-### 5. vaihe: Sähköpostiosoitteiden käyttö
+### 5\. vaihe: Sähköpostiosoitteiden käyttö
 
-Kun tilisi on konfiguroitu, voit aloittaa niiden käytön! Tätä varten OVH tarjoaa käytettäväksi selainpostin. Se on käytettävissä osoitteessa [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external}, jossa sinun on syötettävä sähköpostiosoitteeseesi liittyvät käyttäjätunnukset.
+Kun tilisi on konfiguroitu, voit aloittaa niiden käytön! Tätä varten OVH tarjoaa käytettäväksi selainpostin. Se on käytettävissä osoitteessa <https://pro1.mail.ovh.net>, jossa sinun on syötettävä OVH:lla luotuun sähköpostiosoitteeseen liittyvät tunnukset.
 
-Jos haluat konfiguroida sähköpostiosoitteen sähköpostiohjelmistoon tai laitteeseen (esim. älypuhelin tai tabletti), tutustu dokumentaatioomme tässä portaalissa: [https://docs.ovh.com/fi/emails-pro/](https://docs.ovh.com/fi/emails-pro/){.external}.
+Jos haluat konfiguroida sähköpostiosoitteen sähköpostiohjelmistoon tai laitteeseen (esim. älypuhelin tai tabletti), tutustu dokumentaatioomme tässä portaalissa: <https://docs.ovh.com/fi/emails-pro/>. Jos haluat yksinkertaisesti E-mail Pro -tilisi konfigurointiin tarvittavat elementit, voit katsoa alta käytettävät asetukset:
 
-## Lisää aiheesta
+|Palvelimen tyyppi|Palvelimen nimi|Salaus|Portti|
+|---|---|---|---|
+|Saapuva|pro1.mail.ovh.net|SSL/TLS|993|
+|Lähtevä|pro1.mail.ovh.net|STARTTLS|587|
 
-Viesti käyttäjäyhteisömme kanssa osoitteessa [https://ovh-hosting.fi/community/foorumi](https://community.ovh.com){.external}.
+## Lue lisää aiheesta
+
+Viesti käyttäjäyhteisömme kanssa osoitteessa [https://community.ovh.com/en](https://community.ovh.com/en/){.external}.
