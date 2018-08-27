@@ -1,8 +1,8 @@
 ---
-title: Demarrez avec PostgreSQL
+title: 'Demarrez avec PostgreSQL'
 slug: demarrez-avec-postgresql
-excerpt: Utilisez vos bases de donnees
-section: Premiers pas
+excerpt: 'Utilisez vos bases de donnees'
+section: 'Premiers pas'
 ---
 
 Vous désirez utiliser PostgreSQL ? Découvrez comment créer et gérer vos bases de données en toute simplicité !
@@ -92,19 +92,21 @@ Vous êtes maintenant bien connecté à votre base de données :
 *Bientôt disponible dans un autre guide.*
 
 
-## Exporter une base de donnees PostgreSQL
+## Exporter et importer une base de donnees PostgreSQL
 
-### Exporter ma base en ligne de commande
+- **Exporter ma base en ligne de commande**
 
 ```bash
 pg_dump --host=serveur --port=port --user=utilisateur --password=password nom_de_la_base > nom_de_la_base.sql
 ```
 
-
-## Importer une base de donnees PostgreSQL
-
-### Importer ma base en ligne de commande
+- **Importer ma base en ligne de commande**
 
 ```bash
 psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la_base < nom_de_la_base.sql
 ```
+
+> [!primary]
+>
+> Dans certains cas, il se peut que la RAM disponible dans votre instance CloudDB ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVH dans l'espace client. Reportez-vous à la documentation [« Premiers pas avec le service CloudDB »](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/#importation-dune-base-de-donnees){.external} si nécessaire.
+>
