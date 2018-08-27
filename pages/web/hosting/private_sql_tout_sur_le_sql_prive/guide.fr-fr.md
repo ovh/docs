@@ -1,9 +1,9 @@
 ---
-title: Tout sur le SQL privé
+title: 'Tout sur le SQL privé'
 slug: tout-sur-le-sql-prive
 legacy_guide_number: 2023
-excerpt: Gerez votre instance et vos bases de donnees
-section: SQL Privé
+excerpt: 'Gerez votre instance et vos bases de donnees'
+section: 'SQL Privé'
 ---
 
 Le service SQL Privé a été conçu pour les besoins importants ou spécifiques sur les bases de données. Avec un serveur SQL Privé, vous disposez de votre propre serveur de base de données tout en bénéficiant de la tranquillité d'un hébergement géré par OVH. Vous disposez de ressources réservées à votre seul usage et non de ressources partagées.
@@ -504,6 +504,11 @@ Choisissez ensuite si vous désirez **"vider"** la base de données à restaurer
 
 ## Export et import de base de donnees MySQL ou MariaDB hors espace client
 
+> [!primary]
+>
+> Dans certains cas, il se peut que la RAM disponible dans votre instance SQL Privé ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVH dans l'espace client. Reportez-vous à la section [« Sauvegarde, restauration et importation depuis l’espace client »](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/#sauvegarde-restauration-et-importation-depuis-lespace-client_1){.external} de cette documentation.
+>
+
 ### Exporter ma base MySQL ou MariaDB depuis phpMyAdmin
 Pour exporter votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable, vous pouvez pour cela vous aider du paragraphe ci-dessus.
 
@@ -602,6 +607,11 @@ cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --p
 >
 
 ## Export et import de base de donnees PostgreSQL hors espace client
+
+> [!primary]
+>
+> Dans certains cas, il se peut que la RAM disponible dans votre instance SQL Privé ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVH dans l'espace client. Reportez-vous à la section [« Sauvegarde, restauration et importation depuis l’espace client »](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/#sauvegarde-restauration-et-importation-depuis-lespace-client_1){.external} de cette documentation.
+>
 
 ### Exporter ma base PostgreSQL en ligne de commande
 

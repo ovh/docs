@@ -106,19 +106,21 @@ Vous êtes maintenant bien connecté à votre base de données :
 ### Connexion par phpMyAdmin
 Vous pouvez utiliser phpMyAdmin pour explorer le contenu de votre base de données. Pour cela, installez phpMyAdmin sur votre propre serveur ou hébergement web. Durant cette installation, veillez à bien paramétrer les informations de votre serveur CloudDB et de la base de données souhaitée afin que phpMyAdmin puisse s'y connecter.
 
-## Exporter une base de donnees MySQL ou MariaDB
+## Exporter et importer une base de donnees MySQL ou MariaDB
 
-### Exporter ma base en ligne de commande
+- **Exporter ma base en ligne de commande**
 
 ```bash
 mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_de_la_base > nom_de_la_base.sql
 ```
 
-
-## Importer une base de donnees MySQL ou MariaDB
-
-### Importer ma base en ligne de commande
+- **Importer ma base en ligne de commande**
 
 ```bash
 cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --password=password nom_de_la_base
 ```
+
+> [!primary]
+>
+> Dans certains cas, il se peut que la RAM disponible dans votre instance CloudDB ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVH dans l'espace client. Reportez-vous à la documentation [« Premiers pas avec le service CloudDB »](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/#importation-dune-base-de-donnees){.external} si nécessaire.
+>
