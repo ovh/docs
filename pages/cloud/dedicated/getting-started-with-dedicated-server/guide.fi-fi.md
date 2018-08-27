@@ -96,7 +96,7 @@ Bridge-IP-tila on laitteen tekemä toimenpide globaalin verkon luomiseksi kahdes
 
 Kyseessä on konfiguraatio, jota käytetään useimmiten virtualisoinnissa, jotta jokaiselle virtuaalikoneelle saadaan oma julkinen IP-osoite.
 
-Lisätietoa voit katsoa [Bridge-IP-tilaa](https://docs.ovh.com/gb/en/dedicated/network-bridging/){.external} käsittelevästä ohjeesta (EN).
+Lisätietoa voit katsoa [Bridge-IP-tilaa](https://docs.ovh.com/gb/en/dedicated/network-bridging/){.external} käsittelevästä ohjeesta (EN link).
 
 #### IP-osoitteen tila aliaksena
 
