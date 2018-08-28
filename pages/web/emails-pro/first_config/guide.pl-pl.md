@@ -90,9 +90,9 @@ Jeśli nie chcesz korzystać z tej możliwości, przejdź od razu do etapu nr 4.
 
 |Domena|Typ rekordu|Priorytet|Waga|Port|Adres docelowy|
 |---|---|---|---|---|
-|\_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
+|\_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.  
 
-Pamiętaj, żeby zastąpić ogólną informację „mypersonaldomain.ovh” nazwą Twojej domeny.
+Pamiętaj, żeby zastąpić ogólną informację „mypersonaldomain.ovh” nazwą Twojej domeny.|
 
 ### Etap 4: konfiguracja i korzystanie z kont E-mail Pro
 
