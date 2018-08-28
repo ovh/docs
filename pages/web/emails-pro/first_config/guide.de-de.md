@@ -1,11 +1,11 @@
 ---
-title: Konfiguration von E-Mail Pro
+title: 'Konfiguration von E-Mail Pro'
 slug: erstkonfiguration
-excerpt: Hier erfahren Sie, wie Sie Ihre E-Mail Pro Lösung einrichten
+excerpt: 'Hier erfahren Sie, wie Sie Ihre E-Mail Pro Lösung einrichten'
 section: Allgemein
 ---
 
-**Stand 21.03.2018**
+**Stand 28.08.2018**
 
 ## Einleitung
 
@@ -77,12 +77,22 @@ Am Ende der Konfiguration werden Sie aufgefordert, die angezeigten Informationen
 
 Sobald die Domain als assoziierte Domain hinzugefügt ist, überprüfen Sie bitte in der angezeigten Tabelle, dass die Konfiguration korrekt ist.
 
-In der Spalte `Diagnose`{.action} können Sie sehen, ob die Konfiguration der Domain korrekt ist. Ein rotes Kästchen zeigt an, dass die Konfiguration geändert werden muss.
+In der Spalte `Diagnose`{.action} können Sie sehen, ob die Konfiguration der MX-Felder der Domain korrekt ist. Ein rotes Kästchen zeigt an, dass die Konfiguration geändert werden muss.
 
 - **Wenn Sie beim Hinzufügen der Domain die automatische Konfiguration gewählt haben**: Es kann einige Stunden dauern, bis diese im OVH Kundencenter angezeigt wird.
 - **Wenn Sie eine nicht von OVH verwaltete Domain angegeben haben**: Klicken Sie auf das rote Kästchen, um zu sehen, welche Änderungen notwendig sind. Wenn Sie diese erst durchgeführt haben, kann es einige Stunden dauern, bis sie im OVH Kundencenter angezeigt werden.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
+
+Sie können optional auch ein SRV-Feld zur Domainkonfiguration hinzufügen. Dieses ermöglicht es einem E-Mail-Client oder einem anderen Gerät wie zum Beispiel einem _Smartphone_ oder Tablett, automatisch die notwendigen Informationen abzurufen, um Ihren E-Mail Pro Account zu konfigurieren (Server, Ports und Sicherheitsprotokolle).
+
+Wenn Sie diese Änderung nicht vornehmen möchten, gehen Sie direkt zum nachfolgenden Schritt. Möchten Sie das SRV-Feld einrichten, fügen Sie dieses über das Interface des Anbieters hinzu, der die DNS-Konfiguration Ihrer Domain verwaltet. Handelt es sich hierbei um OVH, folgen Sie den Angaben in der Dokumentation „[Bearbeiten der OVH DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}“ und verwenden Sie dabei die folgenden Elemente:
+
+|Domain|Eintrag|Priorität|Gewichtung|Port|Ziel|
+|---|---|---|---|---|
+|\_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
+
+Denken Sie daran, die allgemeine Information „mypersonaldomain.ovh“ durch Ihre Domain zu ersetzen.
 
 ### Schritt 4: E-Mail Pro Accounts konfigurieren
 
@@ -113,9 +123,14 @@ Wenn alle Angaben vollständig sind, klicken Sie auf `Weiter`{.action}. Überpr�
 
 ### Schritt 5: Ihre E-Mail-Adressen verwenden
 
-Nach Abschluss der Konfiguration können Sie Ihre E-Mail-Adressen verwenden. Dazu stellt Ihnen OVH eine Online-Anwendung (eine *Webapp*) zur Verfügung. Diese ist unter folgender Adresse erreichbar <https://pro1.mail.ovh.net>.
+Nach Abschluss der Konfiguration können Sie Ihre E-Mail-Adressen verwenden. Dazu stellt Ihnen OVH eine Online-Anwendung (eine *Webapp*) zur Verfügung. Diese App ist über die Adresse <https://pro1.mail.ovh.net> erreichbar, auf der Sie die Login-Daten für Ihre E-Mail-Adresse eingeben.
 
-Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder auf einem Gerät (wie zum Beispiel einem Smartphone oder Tablet) einrichten möchten, lesen Sie bitte die entsprechende Anleitung: <https://docs.ovh.com/de/emails-pro/>.
+Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem _Smartphone_ oder einem Tablet) einrichten möchten, werfen Sie bitte einen Blick in die jeweilige Anleitung unter <https://docs.ovh.com/de/emails-pro/>. Wenn Sie nur die erforderlichen Informationen zur Konfiguration Ihres E-Mail Pro Accounts benötigen, verwenden Sie die folgenden Einstellungen:
+
+|Servertyp|Servername|Sicherheitstyp|Port|
+|---|---|---|---|
+|Eingangsserver|pro1.mail.ovh.net|SSL/TLS|993|
+|Ausgangsserver|pro1.mail.ovh.net|STARTTLS|587|
 
 ## Weiterführende Informationen
 
