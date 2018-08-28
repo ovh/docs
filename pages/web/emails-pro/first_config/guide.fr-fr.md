@@ -90,7 +90,7 @@ Si vous ne souhaitez pas en bénéficier, allez directement à l'étape 4. Dans 
 
 |Domaine|Type d'enregistrement|Priorité|Poids|Port|Cible|
 |---|---|---|---|---|
-|_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
+|_autodiscover._tcp.*mypersonaldomain.ovh*_|SRV|0|0|443|autodiscover.mail.ovh.net.|
 
 N'oubliez pas de remplacer l’information générique « mypersonaldomain.ovh » par votre nom de domaine.
 
