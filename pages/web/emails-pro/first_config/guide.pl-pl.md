@@ -89,8 +89,8 @@ Możesz również dodać opcjonalnie pole SRV do konfiguracji Twojej domeny. Pow
 Jeśli nie chcesz korzystać z tej możliwości, przejdź od razu do etapu nr 4. W przeciwnym razie dodaj pole SRV w interfejsie dostawcy zarządzającego konfiguracją DNS Twojej domeny. Jeśli jest nim OVH, postępuj zgodnie z instrukcjami podanymi w naszej dokumentacji [Edycja strefy DNS OVH](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}. Użyj poniższych elementów:
 
 |Domena|Typ rekordu|Priorytet|Waga|Port|Adres docelowy|
-|---|---|---|---|---|
-|_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
+|---|---|---|---|---|---|
+|_autodiscover._tcp.*mypersonaldomain.ovh*_|SRV|0|0|443|autodiscover.mail.ovh.net.|
 
 Pamiętaj, żeby zastąpić ogólną informację „mypersonaldomain.ovh” nazwą Twojej domeny.
 
