@@ -1,56 +1,137 @@
 ---
-title: 'Exchange 2013: Dar permisos «full access» a una cuenta'
-excerpt: ''
+title: 'Delegar permisos en una cuenta Exchange'
 slug: exchange_2013_dar_permisos_full_access_a_una_cuenta
-legacy_guide_number: g1249
-section: Funcionalidades de Exchange
+excerpt: 'Cómo delegar permisos de su cuenta Exchange en otra cuenta'
+section: 'Funcionalidades de Exchange'
 ---
 
+**Última actualización: 29/08/2018**
 
-## Creación del full access, etapa 1
-La operación debe realizarse desde el [área de cliente](https://www.ovh.com/manager/web/login.html).
+## Objetivo
 
-Conéctese y seleccione su servicio Exchange.
+El servicio Exchange permite disfrutar de direcciones de correo profesionales, que facilitan el trabajo colaborativo gracias a sus diversas funcionalidades. Entre ellas, se encuentra la posibilidad de delegar permisos específicos (como permisos de envío o de acceso) entre diferentes cuentas Exchange.
 
-En la pestaña «Cuentas de correo», haga clic en el icono «Más acciones», formado por tres puntos.
+**Esta guía explica cómo delegar permisos de su cuenta Exchange en otra cuenta.**
 
-A continuación seleccione «Gestionar las delegaciones».
+## Requisitos
 
-![](images/img_1025.jpg){.thumbnail}
+- Tener un servicio [Exchange](https://www.ovh.es/emails/){.external}.
+- Tener al menos dos cuentas Exchange activas configuradas en una misma plataforma Exchange de OVH.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager).
+- Tener las claves de la cuenta Exchange que disfrutará de los nuevos permisos delegados.
 
+## Procedimiento
 
-## Creación del full access, etapa 2
-Se abrirá un cuadro de diálogo, en el podrá elegir, para la cuenta seleccionada, quién tendrá permisos de acceso (full access) o de envío.
+Antes de empezar, debe decidir qué permisos quiere delegar. Le recordamos que una delegación consiste en conceder a una o varias cuentas Exchange permisos adicionales sobre una determinada cuenta Exchange.
 
-Haga clic en «Siguiente» para continuar.
+|Permisos|Descripción|
+|---|---|
+|Permiso de «enviar como»|Permite realizar un envío como si se tratase de otra persona. El que aparece como remitente del mensaje no es la cuenta que realiza el envío, sino la cuenta sobre la que se tienen permisos de «enviar como». El destinatario no sabrá que el mensaje se ha enviado desde otra cuenta, ya que no hay ninguna indicación al respecto.|
+|Permiso de «enviar en nombre de»|Permite realizar un envío en nombre de otra persona. El que aparece como remitente del mensaje es la cuenta que efectivamente realiza el envío, en la que han delegado permisos de «enviar en nombre de». Se incluye una mención indicando que el mensaje se ha enviado en nombre de otra persona.|
+|Permiso de acceso completo|Otorga acceso de solo lectura a la cuenta en la que se ha delegado este permiso. Este acceso permite consultar el contenido, pero no realizar envíos.|
 
-![](images/img_1026.jpg){.thumbnail}
+> [!warning]
+>
+> No es posible combinar el permiso de «enviar como» con el permiso de «enviar en nombre de». Las demás combinaciones sí son posibles.
+> 
 
+Una vez que haya identificado la cuenta cuyos permisos quiere delegar y que haya decidido qué permisos concretos quiere otorgar y a qué cuentas quiere hacerlo, puede continuar en el primer paso de esta guía.
 
-## Creación del full access, etapa 3
-En esta ventana deberá confirmar los cambios haciendo clic en «Aceptar».
+### 1. Activar la delegación
 
-Es necesario esperar unos minutos para que sean efectivos.
+Para acceder a la gestión del servicio, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. Haga clic en el nombre del servicio Exchange al que pertenezca la cuenta cuyos permisos quiera delegar. A continuación, abra la pestaña `Cuentas de correo`{.action}.
 
-![](images/img_1027.jpg){.thumbnail}
+Se mostrará una tabla que contiene las cuentas creadas en el servicio Exchange. Haga clic en los tres puntos situados al final de la línea correspondiente a la cuenta y seleccione `Gestionar las delegaciones`{.action}.
 
+![Delegación de permisos](images/delegation-step1.png){.thumbnail}
 
-## Visualización en OWA, etapa 1
-Después de crear la delegación, puede comprobar en [Outlook Web App](https://ex.mail.ovh.net/owa) que la cuenta de correo a la que ha dado permisos, en este caso «test», tenga la posibilidad de ver la cuenta de correo «config».
+En la nueva página, marque las casillas correspondientes a los permisos que quiera delegar en cada cuenta, en su caso. Haga clic en `Siguiente`{.action} para continuar.
 
-Para ver las dos cuentas en una misma pantalla, haga clic derecho en su cuenta de correo y seleccione «agregar carpeta compartida...».
+![Delegación de permisos](images/delegation-step2.png){.thumbnail}
 
-![](images/img_1028.jpg){.thumbnail}
+Compruebe que los cambios que va a realizar son correctos y, si lo son, haga clic en `Aceptar`{.action}. La delegación tardará unos minutos en crearse en nuestros servidores.
 
+Una vez configurada la delegación del ejemplo anterior, **test@mypersonaldomainname.ovh** podrá realizar las acciones correspondientes en la cuenta **test2@mypersonaldomainname.ovh**.
 
-## Visualización en OWA, etapa 2
-Añada el buzón de correo correspondiente, que en este caso se llama «config», y haga clic en «agregar».
+### 2. Utilizar los permisos delegados
 
-![](images/img_1029.jpg){.thumbnail}
+Una vez configurada la delegación, ya puede empezar a utilizarla. Compruebe que tiene las claves de acceso de la cuenta Exchange en la que haya delegado los nuevos permisos.
 
+El procedimiento es distinto según el permiso, y depende también de la aplicación (cliente de correo local o web) que utilice para conectarse a su cuenta Exchange. Continúe leyendo esta guía en el apartado correspondiente al permiso o permisos que haya delegado.
 
-## Visualización en OWA, etapa 3
-La cuenta de correo «config» aparecerá en el webmail Outlook Web App.
+- [Utilizar el permiso de acceso completo](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-dar-permisos-full-access-a-una-cuenta/#21-utilizar-el-permiso-de-acceso-completo){.external}
+- [Utilizar el permiso de «enviar como»](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-dar-permisos-full-access-a-una-cuenta/#22-utilizar-el-permiso-de-enviar-como){.external}
+- [Utilizar el permiso de «enviar en nombre de»](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-dar-permisos-full-access-a-una-cuenta/#23-utilizar-el-permiso-de-enviar-en-nombre-de){.external}
 
-![](images/img_1030.jpg){.thumbnail}
+> [!warning]
+>
+> Para realizar las siguientes acciones, debe tener conocimientos sobre el programa o la interfaz que vaya a utilizar. A continuación ofrecemos algunas indicaciones. Sin embargo, le recomendamos que, si necesita ayuda, contacte con un proveedor de servicios especializado o con el editor del programa o la interfaz. Nosotros no podremos asistirle.
+>
 
+#### 2.1. Utilizar el permiso de acceso completo
+
+**Desde Outlook Web Application (OWA)**
+
+Vaya a la dirección <https://www.ovh.es/mail/> e introduzca las claves de la cuenta Exchange que dispone del permiso delegado. Una vez que se haya conectado, haga clic derecho en el nombre de la cuenta en el menú de la izquierda y seleccione `Agregar carpeta compartida`{.action}.
+
+En la nueva ventana, indique el nombre de la cuenta para la que tiene el permiso delegado y haga clic en `Agregar`{.action}. La cuenta aparecerá en el menú de la izquierda, y podrá explorar su contenido.
+
+![Delegación de permisos](images/delegation-step3.png){.thumbnail}
+
+**Desde Outlook para Windows**
+
+En Outlook 2016, haga clic en `Archivo`{.action} en el menú situado en la parte superior de la pantalla y luego en `Configuración de la cuenta`{.action}. En el menú desplegable, seleccione `Configuración de la cuenta`{.action}. Seleccione la cuenta que disfruta del permiso delegado y haga clic en `Cambiar`{.action}. 
+
+![Delegación de permisos](images/delegation-step4.png){.thumbnail}
+
+A continuación, haga clic en `Más configuraciones`{.action}. En la nueva ventana, abra la pestaña `Avanzadas`{.action} y haga clic en `Agregar`{.action}. Introduzca el nombre de la cuenta de la que tiene permisos delegados y siga los pasos que se indican para añadirla. La cuenta aparecerá en el menú de la izquierda, y podrá explorar su contenido.
+
+![Delegación de permisos](images/delegation-step5.png){.thumbnail}
+
+#### 2.2. Utilizar el permiso de «enviar como»
+
+**Desde Outlook Web Application (OWA)**
+
+Vaya a la dirección <https://www.ovh.es/mail/> e introduzca las claves de la cuenta Exchange que dispone del permiso delegado. Una vez que se haya conectado, puede empezar a redactar un nuevo mensaje haciendo clic en el botón `+ Nuevo`{.action}.
+
+En la ventana de redacción, haga clic en el botón `···`{.action} (Más acciones) y seleccione `Mostrar De`{.action}. A continuación, haga clic en `De`{.action} y seleccione la dirección que quiera que aparezca como remitente (y para la que usted debe disponer del permiso delegado). Si dicha dirección no aparece, elimine la dirección predeterminada e introduzca la nueva dirección. 
+
+Ya puede redactar su mensaje y enviarlo. 
+
+![Delegación de permisos](images/delegation-step6.png){.thumbnail}
+
+**Desde Outlook para Windows**
+
+En Outlook 2016, abra la ventana de redacción de un nuevo mensaje. Compruebe si aparece el botón `De`{.action}. Si no aparece, abra la pestaña `Opciones`{.action} y seleccione `De`{.action} en el grupo **Mostrar campos**.
+
+A continuación, haga clic en `De`{.action} y seleccione la dirección que quiera que aparezca como remitente (y para la que usted debe disponer del permiso delegado). Si la dirección no aparece, haga clic en `Otra dirección de correo electrónico`{.action}, introduzca la dirección deseada y acepte. 
+
+Ya puede redactar su mensaje y enviarlo. 
+
+![Delegación de permisos](images/delegation-step7.png){.thumbnail}
+
+#### 2.3. Utilizar el permiso de «enviar en nombre de»
+
+**Desde Outlook Web Application (OWA)**
+
+Vaya a la dirección <https://www.ovh.es/mail/> e introduzca las claves de la cuenta Exchange que dispone del permiso delegado. Una vez que se haya conectado, puede empezar a redactar un nuevo mensaje haciendo clic en el botón `+ Nuevo`{.action}.
+
+En la ventana de redacción, haga clic en el botón `···`{.action} (Más acciones) y seleccione `Mostrar De`{.action}. A continuación, haga clic en `De`{.action} y seleccione la dirección que quiera que aparezca como remitente (y para la que usted debe disponer del permiso delegado). Si dicha dirección no aparece, elimine la dirección predeterminada e introduzca la nueva dirección. 
+
+Ya puede redactar su mensaje y enviarlo. 
+
+![Delegación de permisos](images/delegation-step6.png){.thumbnail}
+
+**Desde Outlook para Windows**
+
+En Outlook 2016, abra la ventana de redacción de un nuevo mensaje. Compruebe si aparece el botón `De`{.action}. Si no aparece, abra la pestaña `Opciones`{.action} y seleccione `De`{.action} en el grupo **Mostrar campos**.
+
+A continuación, haga clic en `De`{.action} y seleccione la dirección que quiera que aparezca como remitente (y para la que usted debe disponer del permiso delegado). Si la dirección no aparece, haga clic en `Otra dirección de correo electrónico`{.action}, introduzca la dirección deseada y acepte. 
+
+Ya puede redactar su mensaje y enviarlo. 
+
+![Delegación de permisos](images/delegation-step7.png){.thumbnail}
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
