@@ -89,7 +89,7 @@ Même si cela est facultatif, vous avez également la possibilité d'ajouter un 
 Si vous ne souhaitez pas en bénéficier, allez directement à l'étape 4. Dans le cas contraire, ajoutez le champ SRV depuis l’interface du prestataire gérant la configuration de votre nom de domaine. S'il s'agit d'OVH, reportez-vous aux instructions décrites dans notre documentation « [Éditer une zone DNS OVH](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external} » en utilisant les éléments ci-dessous :
 
 |Domaine|Type d'enregistrement|Priorité|Poids|Port|Cible|
-|---|---|---|---|---|
+|---|---|---|---|---|---|
 |_autodiscover._tcp.*mypersonaldomain.ovh*_|SRV|0|0|443|autodiscover.mail.ovh.net.|
 
 N'oubliez pas de remplacer l’information générique « mypersonaldomain.ovh » par votre nom de domaine.
