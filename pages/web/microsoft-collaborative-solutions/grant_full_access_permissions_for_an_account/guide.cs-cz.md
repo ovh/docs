@@ -61,7 +61,7 @@ Použití delegovaných oprávnění se liší v závislosti na typu delegovaný
 
 - [2.1 Přístupové oprávnění](https://docs.ovh.com/cz/cs/microsoft-collaborative-solutions/exchange-ucet-pristupova-prava/#21-pristupove-opravneni){.external}
 
-- - [2.2 "Odeslat jako"](https://docs.ovh.com/cz/cs/microsoft-collaborative-solutions/exchange-ucet-pristupova-prava/#22-odeslat-jako){.external}
+- [2.2 "Odeslat jako"](https://docs.ovh.com/cz/cs/microsoft-collaborative-solutions/exchange-ucet-pristupova-prava/#22-odeslat-jako){.external}
 
 - [2.3 "Odeslat z"](https://docs.ovh.com/cz/cs/microsoft-collaborative-solutions/exchange-ucet-pristupova-prava/#23-odeslat-z){.external}
 
