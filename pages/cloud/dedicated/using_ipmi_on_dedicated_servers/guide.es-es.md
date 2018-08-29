@@ -1,11 +1,11 @@
 ---
-title: Utilizar IPMI en un servidor dedicado
+title: 'Utilizar IPMI en un servidor dedicado'
 slug: utilizar-ipmi-servidor-dedicado
-excerpt: Cómo conectarse a un servidor mediante IPMI, sin necesidad de utilizar software externo
-section: Primeros pasos
+excerpt: 'Cómo conectarse a un servidor mediante IPMI, sin necesidad de utilizar software externo'
+section: 'Primeros pasos'
 ---
 
-**Última actualización: 01/02/2018**
+**Última actualización: 24/08/2018**
 
 ## Objetivo
 
@@ -14,7 +14,9 @@ La consola IPMI (Intelligent Platform Management Interface) permite establecer u
 En otros documentos puede encontrar el término KVM, del inglés *keyboard, video and mouse* (teclado, vídeo y ratón), que se utiliza sobre todo en el caso de los VPS.
 
 ## Requisitos
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Dedicado`{.action} > ` Servidores dedicados`{.action}.
+
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager), en la sección `Dedicado`{.action} > `Servidores dedicados`{.action}.
+
 
 ## Procedimiento
 
@@ -24,7 +26,7 @@ Es posible conectarse al IPMI de dos formas: con el applet Java (recomendado) o 
 
 Para que el applet funcione, debe tener Java instalado en su ordenador. Si todavía no lo ha instalado, visite [la web oficial](https://www.java.com/es/download/){.external}.
 
-Abra la pestaña `IPMI`{.action} del área de cliente y haga clic en el botón `Desde un applet Java (KVM)`{.action}.
+Abra la pestaña `IPMI`{.action} del área de cliente y haga clic en el el botón `Desde un applet Java (KVM)`{.action}.
 
 ![Inicio Java IPMI](images/java_ipmi_initiate.png){.thumbnail}
 
@@ -51,7 +53,7 @@ Aunque le recomendamos utilizar la conexión a través del applet Java, también
 
 ### Probar y reiniciar IPMI
 
-Es posible que IPMI deje de responder. Si no puede acceder, realice una prueba haciendo clic en el botón `Probar IPMI`{.action}.
+Es posible que IPMI deje de responder. Si no puede acceder, realice una prueba haciendo clic en el botón `Probar IPMI`{.action} y consulte el resultado del diagnóstico.
 
 ![Probar IPMI](images/ipmi_test.png){.thumbnail}
 
@@ -63,4 +65,4 @@ El reinicio puede tardar varios minutos.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
