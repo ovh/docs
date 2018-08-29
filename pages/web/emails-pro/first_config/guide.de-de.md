@@ -89,7 +89,7 @@ Sie können optional auch ein SRV-Feld zur Domainkonfiguration hinzufügen. Dies
 Wenn Sie diese Änderung nicht vornehmen möchten, gehen Sie direkt zum nachfolgenden Schritt. Möchten Sie das SRV-Feld einrichten, fügen Sie dieses über das Interface des Anbieters hinzu, der die DNS-Konfiguration Ihrer Domain verwaltet. Handelt es sich hierbei um OVH, folgen Sie den Angaben in der Dokumentation „[Bearbeiten der OVH DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}“ und verwenden Sie dabei die folgenden Elemente:
 
 |Domain|Eintrag|Priorität|Gewichtung|Port|Ziel|
-|---|---|---|---|---|
+|---|---|---|---|---|---|
 |\_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
 
 Denken Sie daran, die allgemeine Information „mypersonaldomain.ovh“ durch Ihre Domain zu ersetzen.
