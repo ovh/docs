@@ -5,7 +5,7 @@ excerpt: 'Ontdek hoe u uw Backup Storage kunt activeren en gebruiken'
 section: Opslagruimte
 ---
 
-** Laatste update 29-08-2018 **
+**Laatste update 29-08-2018**
 
 ## Introductie
 
