@@ -1,32 +1,31 @@
 ---
-title: Firewall Network -palomuurin konfigurointi 
-slug: firewall-network 
-section: Verkko & IP
+title: 'Firewall Network -palomuurin konfigurointi'
+slug: firewall-network
+excerpt: 'Katso, kuinka Firewall Network -palomuuri konfiguroidaan'
+section: 'Verkko & IP'
 ---
 
-**Päivitetty 11.12.2017**
+**Päivitetty 30.8.2018**
 
 ## Tavoite
 
+Globaalin infrastruktuurinsa ja asiakkaidensa palvelinten suojaamiseksi OVH tarjoaa **Anti-DDoS-ratkaisuun** integroidun Firewall Network -palomuurin. Se on lisäoptio, jonka avulla voidaan rajoittaa palvelun alttiutta joutua julkisesta verkosta tulevien verkkohyökkäysten kohteeksi.
 
-Globaalin infrastruktuurinsa ja asiakkaidensa palvelinten suojaamiseksi OVH tarjoaa **Anti-DDoS**-ratkaisuun (VAC) integroidun Firewall Network -palomuurin, jonka asetuksia voidaan muokata. Se on lisäoptio, jonka avulla voidaan rajoittaa palvelun alttiutta joutua julkisesta verkosta tulevien verkkohyökkäysten kohteeksi.
-
-**Tässä ohjeessa kerrotaan kuinka se konfiguroidaan**
+**Tässä ohjeessa kerrotaan, kuinka Firewall Network -palomuuri konfiguroidaan.**
 
 
 > [!primary]
 >
-> VAC*: Lisätietoa palvelunestohyökkäysten VAC-estojärjestelmästämme täältä: <https://www.ovh-hosting.fi/anti-ddos/>.
+> Lisätietoa Anti-DDoS-ratkaisustamme löydät täältä: <https://www.ovh-hosting.fi/anti-ddos/>
 > 
 
-![VAC selitettynä tarkemmin](images/vac-inside.png){.thumbnail}
+![VACin tarkempi kuvaus](images/vac-inside.png){.thumbnail}
 
 
 ## Edellytykset
 
-- Sinulla on OVH:n palvelu, johon sisältyy Firewall Network ([kuten dedikoitu palvelin](https://www.ovh-hosting.fi/dedikoidut_palvelimet){.external}, [VPS](https://www.ovh-hosting.fi/vps/){.external}, [Public Cloud -instanssi](https://www.ovh-hosting.fi/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh-hosting.fi/private-cloud/){.external}, [Fail-over IP](https://www.ovh-hosting.fi/dedikoidut_palvelimet/ip_failover.xml){.external})
-- Sinulla on pääsyoikeudet [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Sinulla on perustuntemusta verkosta.
+- Sinulla on palvelu, johon sisältyy Firewall Network ([dedikoitu palvelin](https://www.ovh-hosting.fi/dedikoidut_palvelimet/){.external}, [virtuaalipalvelin](https://www.ovh-hosting.fi/vps/){.external}, [Public Cloud -instanssi](https://www.ovh-hosting.fi/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh-hosting.fi/private-cloud/){.external}, [Fail-over IP -osoite](https://www.ovh-hosting.fi/dedikoidut_palvelimet/ip_failover.xml){.external}, jne.)
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Käytännössä
@@ -38,25 +37,25 @@ Globaalin infrastruktuurinsa ja asiakkaidensa palvelinten suojaamiseksi OVH tarj
 > Firewall Network suojaa yhteen koneeseen liittyvät IP-osoitteet. Jokainen IP-osoite on siis konfiguroitava erikseen, mitään palvelimen yleistä konfigurointia ei ole mahdollista tehdä.
 > 
 
-Aktivointi ja konfigurointi tapahtuvat käsin hallintapaneelin `IP`{.action}-osiossa klikkaamalla kyseessä olevan IPv4:n oikealla puolella olevaa hammasratasta.
+Kun olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}, mene `IP`{.action}-osioon ja klikkaa `...`{.action} halutun IPv4-palomuurin aktivoimiseksi.
 
-![Firewall Network -palomuurin aktivoiminen](images/firewall_creation.png){.thumbnail}
+![Firewall Network -palomuurin aktivointi](images/firewall_creation.png){.thumbnail}
 
-- Tämän jälkeen pyydetään vahvistusta:
+Tämän jälkeen sinulta pyydetään vahvistusta.
 
 ![Vahvistus](images/creationvalid.png){.thumbnail}
 
-
-- Tämän jälkeen palomuuri on aktivoitava `Aktivoi palomuuri`{.action} ja konfiguroitava `Konfiguroi palomuuri`{.action} klikkaamalla uudestaan IPv4-osoitteen vieressä olevaa hammasratasta.
+Klikkaa sitten `Aktivoi palomuuri`{.action} (1) ja valitse `Palomuurin konfigurointi`{.action} (2) aloittaaksesi asetusten määrittämisen.
 
 ![Konfiguroinnin aktivointi](images/activationconfig.png){.thumbnail}
 
 Voit asettaa jopa **20 sääntöä IP-osoitetta kohti**.
 
-
 > [!warning]
 >
-> Palomuuri aktivoituu automaattisesti jokaisessa palvelunestohyökkäyksessä eikä sitä voida kytkeä pois päältä ennen hyökkäyksen päättymistä. Tästä syystä on tärkeää pitää palomuurin säännöt ajan tasalla. Oletuksena sinulla ei ole konfiguroituja sääntöjä, joten kaikki yhteydet voidaan muodostaa. Jos sinulla on niitä, muista tarkistaa palomuurisäännöt säännöllisesti, vaikka kytkisitkin palomuurin pois päältä.
+> Palomuuri aktivoituu automaattisesti jokaisessa hajautetussa palvelunestohyökkäyksessä eikä sitä voida kytkeä pois päältä ennen hyökkäyksen päättymistä. Tästä syystä on tärkeää pitää palomuurin säännöt ajan tasalla.
+> Oletuksena sinulla ei ole konfiguroituja sääntöjä, joten kaikki yhteydet voidaan muodostaa.
+> Jos sinulla on niitä, muista tarkistaa ne säännöllisesti, vaikka poistaisitkin palomuurin käytöstä.
 > 
 
 
@@ -67,39 +66,35 @@ Voit asettaa jopa **20 sääntöä IP-osoitetta kohti**.
 >
 
 
-### Konfiguroi Firewall Network
+### Firewall Network -palomuurin konfigurointi
 
-Sääntö lisätään klikkaamalla oikealla `Lisää sääntö` {.action}:
+Lisää sääntö klikkaamalla kohtaa `Lisää sääntö`{.action}.
 
-
-![Lisää sääntö](images/ajoutregle1.png){.thumbnail}
+![Säännön lisääminen](images/ajoutregle1.png){.thumbnail}
 
 Voit valita jokaiselle säännölle:
-
-- prioriteetin (asteikolla 0 - 19, jossa 0 on ensimmäisenä käytettävä sääntö jne.)
-- toiminnan (`Hyväksytty`{.action} tai `Hylätty`{.action})
-- protokollan
-- IP-osoitteen (valinnainen)
-- lähdeportin (vain TCP)
-- kohdeportin (vain TCP)
-- TCP-lisäoptiot (vain TCP)
-
+\- prioriteetin (asteikolla 0 - 19, jossa 0 on ensimmäisenä käytettävä sääntö jne.)
+\- toiminnon (`Hyväksytty`{.action} tai `Hylätty`{.action})
+\- protokollan
+\- IP-osoitteen (valinnainen)
+\- lähdeportin (vain TCP)
+\- kohdeportin (vain TCP)
+\- TCP-lisäoptiot (vain TCP)
 
 ![Tiedot säännön lisäämisestä](images/ajoutregle4.png){.thumbnail}
 
 
 > [!primary]
 >
-> - Prioriteetti 0: on suositeltavaa sallia TCP-protokolla kaikilla IP-osoitteilla lisäoptiolla `established`{.action}. `Established`-lisäoptiolla voidaan tarkistaa, että paketti kuuluu aiemmin avattuun istuntoon (jo käynnistettyyn). Jos et salli sitä, palvelin ei vastaanota TCP-protokollan vastauksia SYN/ACK-kyselyihin.
+> - Prioriteetti 0: on suositeltavaa sallia TCP-protokolla kaikilla IP-osoitteilla `established`{.action}-lisäoptiolla. Sillä voidaan tarkistaa, että paketti kuuluu aiemmin avattuun istuntoon (jo käynnistettyyn). Jos et salli sitä, palvelin ei vastaanota TCP-protokollan vastauksia SYN/ACK-kyselyihin.
 > - Prioriteetti 19: kaikkien IPv4-protokollien esto mikäli yhtään sääntöä ennen 19\. sääntöä (viimeinen mahdollinen sääntö) ei ole täytetty.
 > 
 
-
 ### Esimerkki konfiguraatioista
 
-Jotta jätät avoimeksi ainoastaan SSH (22), HTTP (80), HTTPS (443), UDP (portissa 10000) -portit ICMP:n hyväksymällä, on seurattava seuraavia sääntöjä:
+Jotta jätät avoimeksi ainoastaan SSH (22), HTTP (80), HTTPS (443) ja UDP (10000) -portit ICMP:n hyväksymällä, on seurattava seuraavia sääntöjä:
 
-![Esimerkki konfiguraatiosta](images/exemple.png){.thumbnail}
+![Esimerkki konfiguraatioista](images/exemple.png){.thumbnail}
 
 Säännöt ovat kronologisessa järjestyksessä nollasta (ensimmäisenä luettava sääntö) 19\. sääntöön (viimeisenä luettu sääntö). Ketjun läpikäynti keskeytyy sillä hetkellä, kun jotakin sääntöä sovelletaan saapuneeseen pakettiin.
 
@@ -107,9 +102,9 @@ Esimerkki porttiin 80/TCP tarkoitettu paketti napataan säännön 2 mukaisesti e
 
 > [!warning]
 >
-> Mikäli Anti-DDoS-mitigaatio aktivoituu, aktivoituvat myös Firewall Network -säännöt vaikka olisit kytkenyt ne pois päältä. Mikäli palomuuri kytketään pois päältä, muista poistaa säännöt.
+> Mikäli Anti-DDoS-mitigaatio aktivoituu, aktivoituvat myös Firewall Network -säännöt, vaikka olisit kytkenyt ne pois päältä. Mikäli palomuuri kytketään pois päältä, muista poistaa säännöt.
 > 
 
 ## Lue lisää aiheesta
 
-Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://ovh-hosting.fi/community/foorumi>.
+Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en/>.
