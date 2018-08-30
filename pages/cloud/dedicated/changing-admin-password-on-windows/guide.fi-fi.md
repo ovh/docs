@@ -5,7 +5,7 @@ excerpt: 'Katso, kuinka administraattorin salasana vaihdetaan dedikoidulla Windo
 section: 'Vianhaku ja Rescue-tila'
 ---
 
-**Päivitetty 18.7.2018**
+**Päivitetty 30.8.2018**
 
 ## Tavoite
 
