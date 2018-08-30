@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment activer et utiliser le service Backup Storage'
 section: Stockage
 ---
 
-**Dernière mise à jour le 05/07/2018**
+**Dernière mise à jour le 29/08/2018**
 
 ## Objectif
 
@@ -107,7 +107,7 @@ Sélectionnez la capacité de stockage que vous souhaitez obtenir, puis cliquez 
 
 ![Choix de l'espace supplémentaire](images/additional_space_order_selection.png){.thumbnail}
 
-Il vous reste à lire et valider les conditions générales ainsi que la demande en cliquant sur `Confirmer`{.action}
+Il vous reste à lire et valider les conditions générales ainsi que la demande en cliquant sur `Valider`{.action}
 
 Un bon de commande va être créé. Une fois votre paiement effectué, l'espace de stockage supplémentaire sera mis à votre disposition.
 
