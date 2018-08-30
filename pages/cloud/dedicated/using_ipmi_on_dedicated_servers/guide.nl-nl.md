@@ -1,11 +1,11 @@
 ---
-title: Het gebruik van IPMI voor dedicated servers
+title: 'IPMI gebruiken voor dedicated servers'
 slug: gebruik-ipmi-dedicated-servers
-excerpt: Met de IPMI kunt u inloggen op uw server zonder externe software te gebruiken
-section: Aan de slag
+excerpt: 'Met de IPMI kunt u inloggen op uw server zonder externe software te gebruiken'
+section: 'Aan de slag'
 ---
 
-**Laatste update op 18-01-2018**
+**Laatste update 16-08-2018**
 
 ## Introductie
 
@@ -15,7 +15,8 @@ Let op, u komt hierin ook de term KVM (Keyboard Video and Mouse) tegen, die onde
 
 ## Vereisten
 
-- U moet ingelogd zijn op uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in het gedeelte `Dedicated servers`{.action} onder `Dedicated`{.action}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+
 
 ## Instructie
 
@@ -23,9 +24,9 @@ De IPMI-verbinding kan via twee methodes plaatsvinden: de java-applet (aanbevole
 
 ### Verbinding maken via de java-applet
 
-Java moet op uw computer geïnstalleerd zijn om te kunnen functioneren. Als dit nog niet het geval is, gaat u naar de [officiële pagina](https://www.java.com/fr/download/){.external}.
+Java moet op uw computer geïnstalleerd zijn om te kunnen functioneren. Als dit nog niet het geval is, gaat u naar de [officiële pagina](https://www.java.com/nl/download/){.external}.
 
-In het gedeelte `IPMI`{.action} van uw Control Panel klikt u vervolgens op `Via een java-applet (KVM)`{.action} :
+In het gedeelte `IPMI`{.action} van uw Control Panel klikt u vervolgens op `Via een java-applet (KVM)`{.action}:
 
 ![IPMI Java initiated](images/java_ipmi_initiate.png){.thumbnail}
 
@@ -52,7 +53,7 @@ Hoewel de verbinding via de java-applet wordt aanbevolen, is het gebruik van IPM
 
 ### Daarom wordt verbinding via de applet aanbevolen.
 
-De IPMI testen en opnieuw starten Als u geen toegang kunt krijgen, kunt u in eerste instantie een test uitvoeren door te klikken op `IPMI testen`{.action}:
+De IPMI testen en opnieuw starten Als u geen toegang kunt krijgen, kunt u in eerste instantie een test uitvoeren door te klikken op `IPMI testen`{.action} en het resultaat van de diagnose te bekijken:
 
 ![IPMI test](images/ipmi_test.png){.thumbnail}
 
@@ -64,4 +65,4 @@ Het opnieuw starten duurt een paar minuten.
 
 ## Verder
 
-Ga in gesprek met andere gebruikers op <https://community.ovh.com>.
+Ga in gesprek met onze communitygebruikers via <https://community.ovh.com/en/>.
