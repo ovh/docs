@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment changer le mot de passe administrateur sur un serve
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 18/07/2018**
+**Dernière mise à jour le 30/08/2018**
 
 ## Objectif
 
