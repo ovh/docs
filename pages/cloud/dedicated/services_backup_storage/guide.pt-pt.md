@@ -134,11 +134,11 @@ ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **FtpUsername**\: o seu nome de utilizador FTP.
-* **FtpPassword**\: a sua palavra-passe FTP.
-* **HostName**\: o nome do seu Backup Storage.
-* **FolderLocation**\: o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
-* **File**\: o nome do ficheiro que pretende guardar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua palavra-passe FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **FolderLocation**: o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
+* **File**: o nome do ficheiro que pretende guardar.
 
 Para guardar um diretório, só precisa de o arquivar e transferi-lo no seu diretório de backup:
 
@@ -148,11 +148,11 @@ tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName Archi
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **FolderName**\: o caminho de acesso ao diretório que pretende guardar.
-* **FtpUsername**\: o seu nome de utilizador FTP.
-* **FtpPassword**\: a sua palavra-passe FTP.
-* **HostName**\: o nome do seu Backup Storage.
-* **ArchiveName**\: o nome do diretório que pretende guardar.
+* **FolderName**: o caminho de acesso ao diretório que pretende guardar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua palavra-passe FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **ArchiveName**: o nome do diretório que pretende guardar.
 
 Para descarregar um ficheiro de arquivo a partir do seu espaço de armazenamento, pode utilizar o comando seguinte:
 
@@ -162,11 +162,11 @@ ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **FtpUsername**\: o seu nome de utilizador FTP.
-* **FtpPassword**\: a sua palavra-passe FTP.
-* **HostName**\: o nome do seu Backup Storage.
-* **LocalFolder**\: o caminho de acesso ao diretório local no qual pretende gravar o ficheiro.
-* **File**\: o caminho de acesso ao ficheiro que pretende descarregar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua palavra-passe FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **LocalFolder**: o caminho de acesso ao diretório local no qual pretende gravar o ficheiro.
+* **File**: o caminho de acesso ao ficheiro que pretende descarregar.
 
 ##### cURL (para Linux)
 
@@ -183,11 +183,11 @@ curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **File**\: o nome do ficheiro que pretende guardar.
-* **FtpUsername**\: o seu nome de utilizador FTP.
-* **FtpPassword**\: a sua palavra-passe FTP.
-* **HostName**\: o nome do seu Backup Storage.
-* **FolderLocation**\: o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
+* **File**: o nome do ficheiro que pretende guardar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua palavra-passe FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **FolderLocation**: o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
 
 Para guardar um diretório, só precisa de o arquivar e transferi-lo no seu diretório de backup:
 
@@ -197,12 +197,12 @@ tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocati
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **FolderName**\: o caminho de acesso ao diretório que pretende guardar.
-* **FtpUsername**\: o seu nome de utilizador FTP.
-* **FtpPassword**\: a sua palavra-passe FTP.
-* **HostName**\: o nome do seu Backup Storage.
-* **FolderLocation**\: o caminho de acesso ao diretório local no qual pretende gravar o ficheiro.
-* **ArchiveName**\: o nome do diretório que pretende guardar.
+* **FolderName**: o caminho de acesso ao diretório que pretende guardar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua palavra-passe FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **FolderLocation**: o caminho de acesso ao diretório local no qual pretende gravar o ficheiro.
+* **ArchiveName**: o nome do diretório que pretende guardar.
 
 Para descarregar um ficheiro de arquivo a partir do seu espaço de armazenamento, pode utilizar o comando seguinte:
 
@@ -213,11 +213,11 @@ curl -u FtpUsername:FtpPassword ftp://HostName/File
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **FtpUsername**\: o seu nome de utilizador FTP.
-* **FtpPassword**\: a sua palavra-passe FTP.
-* **HostName**\: o nome do seu Backup Storage.
-* **LocalFolder**\: o nome do diretório local no qual pretende gravar o ficheiro.
-* **File**\: o caminho de acesso ao ficheiro que pretende descarregar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua palavra-passe FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **LocalFolder**: o nome do diretório local no qual pretende gravar o ficheiro.
+* **File**: o caminho de acesso ao ficheiro que pretende descarregar.
 
 
 ##### lftp (para Linux)
@@ -235,11 +235,11 @@ lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; 
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **File**\: o nome do ficheiro que pretende guardar.
-* **FtpUsername**\: o seu nome de utilizador FTP.
-* **FtpPassword**\: a sua palavra-passe FTP.
-* **HostName**\: o nome do seu Backup Storage.
-* **FolderLocation**\: o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
+* **File**: o nome do ficheiro que pretende guardar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua palavra-passe FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **FolderLocation**: o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
 
 Para guardar um diretório, só precisa de o arquivar e transferi-lo no seu diretório de backup:
 
@@ -249,12 +249,12 @@ tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderL
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **FolderName**\: o caminho de acesso ao diretório que pretende guardar.
-* **FtpUsername**\: o seu nome de utilizador FTP.
-* **FtpPassword**\: a sua palavra-passe FTP.
-* **HostName**\: o nome do seu Backup Storage.
-* **FolderLocation**\: o caminho de acesso ao diretório local no qual pretende gravar o ficheiro.
-* **ArchiveName**\: o nome do diretório que pretende guardar.
+* **FolderName**: o caminho de acesso ao diretório que pretende guardar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua palavra-passe FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **FolderLocation**: o caminho de acesso ao diretório local no qual pretende gravar o ficheiro.
+* **ArchiveName**: o nome do diretório que pretende guardar.
 
 Para descarregar um ficheiro de arquivo a partir do seu espaço de armazenamento, pode utilizar o comando seguinte:
 
@@ -265,11 +265,11 @@ lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **FtpUsername**\: o seu nome de utilizador FTP.
-* **FtpPassword**\: a sua palavra-passe FTP.
-* **HostName**\: o nome do seu Backup Storage.
-* **LocalFolder**\: o nome do diretório local no qual pretende gravar o ficheiro.
-* **File**\: o caminho de acesso ao ficheiro que pretende descarregar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua palavra-passe FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **LocalFolder**: o nome do diretório local no qual pretende gravar o ficheiro.
+* **File**: o caminho de acesso ao ficheiro que pretende descarregar.
 
 ##### FileZilla
 
@@ -288,9 +288,9 @@ mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **HostName**\: o nome do seu Backup Storage.
-* **ServiceName**\: o nome do seu servidor (ex: ns0000000.ip-123-123-123.net).
-* **FolderMount**\: o diretório onde pretende estabelecer a partilha NFS.
+* **HostName**: o nome do seu Backup Storage.
+* **ServiceName**: o nome do seu servidor (ex: ns0000000.ip-123-123-123.net).
+* **FolderMount**: o diretório onde pretende estabelecer a partilha NFS.
 
 Depois de estabelecer a partilha, pode utilizar os comandos **cp** e rsync, tal como procederia com um diretório normal.
 
@@ -307,8 +307,8 @@ net use z: \\HostName\ServiceName
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **HostName**\: o nome do seu Backup Storage.
-* **ServiceName**\: o nome do seu servidor (ex: ns0000000.ip-123-123-123.net).
+* **HostName**: o nome do seu Backup Storage.
+* **ServiceName**: o nome do seu servidor (ex: ns0000000.ip-123-123-123.net).
 
 ##### Linux
 
