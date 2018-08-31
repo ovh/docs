@@ -6,7 +6,7 @@ section: 'DNS (servidor y zona)'
 order: 2
 ---
 
-**Última actualización: 30/08/2018**
+**Última actualización: 31/08/2018**
 
 ## Objetivo
 
@@ -57,11 +57,11 @@ Para editar la zona DNS, conéctese al [área de cliente de OVH](https://www.ovh
 > Si acaba de crear la zona DNS y el dominio no aparece en la lista de dominios, espere unos instantes y vuelva a cargar la página.
 >
 
-A continuación realice las operaciones necesarias. Para más información sobre la edición de una zona DNS, consulte nuestra guía  [Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}.  Una vez que haya editado la zona DNS del dominio, los cambios tardarán entre 4 y 24 horas en propagarse y ser efectivos.
+A continuación realice las operaciones necesarias. Para más información sobre la edición de una zona DNS, consulte nuestra guía  [Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}. Una vez que haya editado la zona DNS del dominio, los cambios tardarán entre 4 y 24 horas en propagarse y ser efectivos.
 
 ### 3. Cambiar los servidores DNS de un dominio
 
-Una vez que esté lista la zona DNS en OVH, ya puede asociarla a su dominio. Para ello, consulte en el área de cliente cuáles son los servidores DNS de OVH activos para su dominio. La lista de dichos servidores se encuentra en la pestaña `Servidores DNS`{.action}.
+Una vez que esté lista la zona DNS en OVH, ya puede asociarla a su dominio. Para ello, consulte en el área de cliente cuáles son los servidores DNS de OVH activos para su dominio. Puede verlos en la zona superior de la pantalla, bajo **Name Servers**.
 
 ![Creación de la zona DNS](images/dns-zone-create-step3.png){.thumbnail}
 
