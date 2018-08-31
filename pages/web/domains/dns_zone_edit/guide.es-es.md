@@ -2,7 +2,7 @@
 title: 'Editar una zona DNS de OVH'
 excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVH'
 slug: web_hosting_como_editar_mi_zona_dns
-section: 'Dominios y DNS'
+section: 'DNS (servidor y zona)'
 ---
 
 **Última actualización: 15/06/2018**
