@@ -1,11 +1,11 @@
 ---
-title: Migrar un sitio web y el correo a OVH
-excerpt: Cómo migrar un sitio web y el correo a OVH sin cortes del servicio
+title: 'Migrar un sitio web y el correo a OVH'
 slug: web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio
-section: Primeros pasos
+excerpt: 'Cómo migrar un sitio web y el correo a OVH sin cortes del servicio'
+section: 'Primeros pasos'
 ---
 
-**Última actualización: 12/03/2018**
+**Última actualización: 31/08/2018**
 
 ## Objetivo
 
@@ -61,7 +61,7 @@ Deberá realizar varias acciones.
 |---|---|
 |1. Realizar una copia de seguridad del sitio web|Debe tratarse de una copia de seguridad completa del sitio web, incluyendo los archivos y, en su caso, las bases de datos. Dicha copia de seguridad es fundamental para realizar la migración del sitio web a OVH.|
 |2. Publicar el sitio web con OVH|Conéctese a su espacio de almacenamiento (FTP) y suba los archivos del sitio web a la carpeta **www**. Las claves de conexión al espacio FTP se envían por correo electrónico al instalar el alojamiento.|
-|3. Crear una base de datos en OVH|Si su sitio web utiliza una base de datos, deberá crear una nueva en OVH desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.|
+|3. Crear una base de datos en OVH|Si su sitio web utiliza una base de datos, deberá [crear una nueva en OVH](https://docs.ovh.com/es/hosting/crear-base-de-datos/){.external} desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.|
 |4. Importar los datos de la base de datos|Importe la copia de seguridad de la base de datos utilizando [la herramienta que OVH pone a su disposición](https://docs.ovh.com/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/){.external} en el área de cliente.|
 |5. Conectar el sitio web a la nueva base de datos|En el archivo de configuración de su sitio web seguirá guardada la información de su anterior base de datos. Edite dicho archivo, presente en su espacio de almacenamiento de OVH, indicando la información de la nueva base de datos en OVH.|
 
@@ -92,7 +92,7 @@ Deberá realizar varias acciones.
 |Acción|Descripción|
 |---|---|
 |1. Migrar el contenido de las cuentas de correo a OVH|La herramienta [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} permite copiar el contenido de las cuentas de correo electrónico que tuviera con su anterior proveedor a sus cuentas creadas en OVH.|
-|2. Usar sus direcciones |Ya puede acceder a sus cuentas de correo electrónico de OVH desde una aplicación web ([webmail](https://mail.ovh.net/){.external}). Si ha configurado alguna de las direcciones en un cliente de correo (p. ej. Outlook), deberá volver a configurarla para sustituir los servidores de su anterior proveedor por los de OVH (que se indican en la [guía correspondiente a su cliente de correo](https://docs.ovh.com/es/emails/){.external}).|
+|2. Usar sus direcciones |Ya puede acceder a sus cuentas de correo electrónico de OVH desde una aplicación web ([webmail](https://www.ovh.es/mail/){.external}). Si ha configurado alguna de las direcciones en un cliente de correo (p. ej. Outlook), deberá volver a configurarla para sustituir los servidores de su anterior proveedor por los de OVH (que se indican en la [guía correspondiente a su cliente de correo](https://docs.ovh.com/es/emails/){.external}).|
 
 #### 6. Transferir el dominio a OVH
 
@@ -165,7 +165,7 @@ Deberá realizar varias acciones.
 |Acción|Descripción|
 |---|---|
 |1. Migrar el contenido de las cuentas de correo a OVH|La herramienta [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} permite copiar el contenido de las cuentas de correo electrónico que tuviera con su anterior proveedor a sus cuentas creadas con OVH.|
-|2. Usar sus direcciones |Ya puede acceder a sus cuentas de correo electrónico de OVH desde una aplicación web ([webmail](https://mail.ovh.net/){.external}). Si ha configurado alguna de las direcciones en un cliente de correo (p. ej. Outlook), deberá volver a configurarla para sustituir los servidores de su anterior proveedor por los de OVH (que se indican en la [guía correspondiente a su cliente de correo](https://docs.ovh.com/es/emails/){.external}.|
+|2. Usar sus direcciones |Ya puede acceder a sus cuentas de correo electrónico de OVH desde una aplicación web ([webmail](https://www.ovh.es/mail/){.external}). Si ha configurado alguna de las direcciones en un cliente de correo (p. ej. Outlook), deberá volver a configurarla para sustituir los servidores de su anterior proveedor por los de OVH (que se indican en la [guía correspondiente a su cliente de correo](https://docs.ovh.com/es/emails/){.external}.|
 
 ¡Su sitio web, sus cuentas de correo y su dominio ya están en OVH!
 

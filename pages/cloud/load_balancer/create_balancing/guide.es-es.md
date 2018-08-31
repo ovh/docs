@@ -1,7 +1,7 @@
 ---
-title: Modos de balanceo
+title: 'Modos de balanceo'
 slug: modos-de-balanceo
-excerpt: Modos de balanceo de la carga del Load Balancer de OVH
+excerpt: 'Modos de balanceo de la carga del Load Balancer de OVH'
 section: Configuración
 ---
 
@@ -25,14 +25,14 @@ El nuevo Load Balancer de OVH ofrece distintos tipos de balanceo de la carga de 
 
 En las granjas de servidores, el balanceo de carga determina la forma en la que las peticiones se distribuirán entre los distintos servidores de la granja.
 
-Para conocer las principales características del servicio Load Balancer de OVH, consulte la [página de presentación comercial](https://www.ovh.es/soluciones/load-balancer/){.external}.
+Para conocer las principales características del Load Balancer de OVH, consulte la [guía de presentación del servicio](https://docs.ovh.com/es/load-balancer/presentacion-load-balancer/){.external}.
 
 |Algoritmo|Funcionalidades|
 |---|---|
+|Round-robin|Elige un servidor tras otro en cada conexión. Es el algoritmo utilizado por defecto.|
 |First|El primer servidor disponible recibe la conexión. El orden de los servidores se elige en función de su ID, de menor a mayor.|
-|LeastConn|Elige el servidor con menos conexiones activas. Se recomienda elegir este algoritmo para sesiones prolongadas con poco tráfico. En los grupos de servidores que tienen el mismo número de conexiones activas, se aplica el algoritmo round-robin.|
-|Round-robin|Elige un servidor tras otro en cada conexión. Es el algoritmo utilizado por defecto. |
-|Origen|Este algoritmo realiza una función de *hash* en la dirección IP de origen y divide el resultado entre el número de servidores activos en ese momento. Cada dirección IP de origen siempre será dirigida al mismo servidor, mientras este permanezca activo.|
+|Least|Elige el servidor con menos conexiones activas. Se recomienda elegir este algoritmo para sesiones prolongadas con poco tráfico. En los grupos de servidores que tienen el mismo número de conexiones activas, se aplica el algoritmo round-robin.|
+|Source|Este algoritmo realiza una función de *hash* en la dirección IP de origen y divide el resultado entre el número de servidores activos en ese momento. Cada dirección IP de origen siempre será dirigida al mismo servidor, mientras este permanezca activo.|
 |URI|Este algoritmo realiza una función de *hash* en una parte de la URI (o en la URI entera) y divide el resultado entre el número de servidores activos en ese momento. Cada URI siempre será dirigida al mismo servidor, mientras este permanezca activo.|
 
 

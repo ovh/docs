@@ -1,12 +1,12 @@
 ---
-title: Primeros pasos con un VPS
-excerpt: Cómo utilizar un VPS
+title: 'Primeros pasos con un VPS'
 slug: primeros-pasos-con-vps
-section: Primeros pasos
+excerpt: 'Cómo utilizar un VPS'
+section: 'Primeros pasos'
 order: 1
 ---
 
-**Última actualización: 18/04/2018**
+**Última actualización: 31/08/2018**
  
 ## Objetivo
 
@@ -80,7 +80,7 @@ En el área de cliente se mostrará una barra de progreso indicando el estado de
 
 Como se recuerda en el apartado «Objetivo» de esta guía, usted es el administrador de su VPS y, por lo tanto, el responsable de los datos almacenados, así como de su seguridad.
 
-Para más información, consulte nuestras [guías sobre VPS](https://docs.ovh.com/es/vps/){.external}.
+Nuestra guía relativa a la [seguridad de los VPS](https://docs.ovh.com/es/vps/consejos-proteccion-vps/){.external} ofrece unas nociones básicas sobre este aspecto.
 
 
 ### Proteger el dominio con un certificado SSL
@@ -95,4 +95,4 @@ Si prefiere automatizar la protección de su sitio web, OVH le ofrece la soluci�
 
 [Introducción al SSH](https://docs.ovh.com/es/dedicated/introduccion-ssh/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
