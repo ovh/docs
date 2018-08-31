@@ -1,6 +1,6 @@
 ---
 title: 'Rechten van een Exchange account delen'
-slug: overdracht-rechten-full-access-account
+slug: exchange_2013_het_geven_van_full_access_rechten_op_een_account
 excerpt: 'Ontdek hoe u de rechten van uw Exchange account aan een andere gebruiker kunt geven'
 section: 'Functies en delen van Exchange'
 ---
