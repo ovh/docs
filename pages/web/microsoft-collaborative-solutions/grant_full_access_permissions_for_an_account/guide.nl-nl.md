@@ -63,7 +63,7 @@ Dit werkt anders, afhankelijk van de rechten die u hebt gedelegeerd, en ook de s
 
 - [‘Verzenden als’-recht gebruiken](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange_2013_het_geven_van_full_access_rechten_op_een_account/#22-gebruik-van-uw-verzenden-als-recht){.external}
 
-- [‘Verzenden namens’-recht gebruiken](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange_2013_het_geven_van_full_access_rechten_op_een_account/#22-gebruik-van-uw-verzenden-namens-recht){.external}
+- [‘Verzenden namens’-recht gebruiken](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange_2013_het_geven_van_full_access_rechten_op_een_account/#23-gebruik-van-uw-verzenden-namens-recht){.external}
 
 > [!warning]
 >
