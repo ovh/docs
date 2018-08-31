@@ -1,55 +1,139 @@
 ---
-title: 'Exchange 2013: Het geven van "Full Access" rechten op een account'
-excerpt: ''
-slug: exchange_2013_het_geven_van_full_access_rechten_op_een_account
-legacy_guide_number: g1249
+title: 'Rechten van een Exchange account delen'
+slug: overdracht-rechten-full-access-account
+excerpt: 'Ontdek hoe u de rechten van uw Exchange account aan een andere gebruiker kunt geven'
+section: 'Functies en delen van Exchange'
 ---
 
+**Laatste update 31-08-2018**
 
-## Deel 1: Het instellen van de "Full Access" rechten
-Dit moet worden uitgevoerd via het[Web Control Panel](https://www.ovh.com/manager/web/login.html).
+## Introductie
 
-Zodra u bent ingelogd, selecteert u uw Exchange dienst. 
+Met Exchange kunt u zakelijke e-mailadressen gebruiken die het voor een team gemakkelijker maken om met verschillende functies te werken. Een van deze functies is de mogelijkheid om specifieke rechten (bijvoorbeeld het verzenden of openen van berichten) te delen tussen verschillende Exchange accounts.
 
-Ga naar "Email accounts", klik vervolgens op de icon uiterst rechts met de drie blauwe stippen en selecteer "Manage delegations".
+**Deze handleiding geeft informatie over de overdracht van uw Exchange rechten.**
 
-![](images/img_1025.jpg){.thumbnail}
+## Vereisten
 
+- U moet beschikken over [Exchange](https://www.ovh.nl/emails/){.external}.
+- U moet beschikken over minstens twee actieve Exchange accounts op hetzelfde OVH Exchange platform. 
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+- U moet toegang hebben tot het Exchange account waarvan rechten worden toegewezen.
 
-## Deel 2: Het instellen van de "Full Access" rechten
-Het delegatie configuratie venster zal openen, waar u  verzendrechten of toegangsrechten kunt toewijzen aan de gekozen account.
+## Instructie
 
-Vink de vakjes aan en klik vervolgens op "Next".
+Bepaal voordat u begint welke rechten u wil delen. Houd er rekening mee dat wanneer u de rechten deelt, u extra rechten verleent aan een of meer Exchange gebruikers voor dat Exchange account.
 
-![](images/img_1026.jpg){.thumbnail}
+|Rechten|Omschrijving|
+|---|---|
+|‘Verzenden als’-recht|Hiermee kan de gebruiker 'verzenden als' een ander account. De gebruiker die de e-mail verzendt, wordt niet als afzender weergegeven. In plaats daarvan wordt het account waarvoor de gebruiker het recht 'verzenden als' heeft, weergegeven als de afzender. Er wordt niet vermeld dat het bericht door een andere persoon is verzonden.|
+|‘Verzenden namens’-recht|Staat de gebruiker toe om namens een ander account te verzenden. De gebruiker die de e-mail verzendt, wordt niet als afzender weergegeven. In plaats daarvan wordt het account waarvoor de gebruiker het recht 'verzenden namens' heeft, weergegeven als de afzender. De e-mail wordt echter voorzien van een opmerking die aangeeft dat de oorspronkelijke afzender anders is.|
+|Het recht op toegang |Geeft de gebruiker alleen-lezen toegang tot het account waarvan toegangsrechten zijn toebedeeld. Met dit toegangstype kan de gebruiker geen e-mails verzenden. Hiermee kunnen ze alleen inhoud bekijken.|
 
+> [!warning]
+>
+> U kunt het recht 'Verzenden als' niet tegelijkertijd gebruiken met het recht 'Verzenden namens'. Er zijn echter wel andere combinaties mogelijk.
+> 
 
-## Deel 3: Het instellen van de "Full Access" rechten
-Op de volgende pagina kunt u de geselecteerde rechten bevestigen.
+Wanneer u het account waaraan u rechten wilt toebedelen, de rechten die u wilt toebedelen en de gebruikers die deze rechten zullen ontvangen, hebt vastgesteld, gaat u naar de volgende stap.
 
-Het kan enige ogenblikken duren voordat de instellingen actief worden.
+### Stap 1: Uitvoeren van de overdracht
 
-Klik op "Bevestigen".
+Log in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} om met de bewerking te beginnen. Klik op `Microsoft`{.action} in de dienstenbalk aan de linkerkant en vervolgens op `Exchange`{.action}. Klik vervolgens op de naam van de Exchange dienst met het account waarvan u de rechten wilt toebedelen. Ga naar het E-mailaccounts-tabblad.
 
-![](images/img_1027.jpg){.thumbnail}
+In de weergegeven tabel worden alle accounts getoond die aan uw Exchange zijn gekoppeld. Klik op de drie stippen rechts van het account waarvoor u rechten wilt delegeren en vervolgens `Autorisaties beheren`{.action}.
 
+![Autorisatie](images/delegation-step1.png){.thumbnail} 
 
-## Deel 1: Instellen op de Outlook Web App
-U kunt nu controleren of de account van de andere gebruiker zichtbaar is voor de eerste account.
+Selecteer op de pagina die verschijnt welke rechten u wilt delen. U moet ze koppelen aan een of meer accounts waaraan u de rechten wilt verlenen. Klik dan op `Volgende`{.action}.
 
-Indien u alles in een interface wilt zien, klik dan met de rechtermuisknop op uw e-mailaccountnaam aan de linkerkant en selecteer vervolgens "add shared folder"[/ green].
+![Autorisatie](images/delegation-step1.png){.thumbnail} 
 
-![](images/img_1028.jpg){.thumbnail}
+Neem even de tijd om het wijzigingsoverzicht te bekijken. Als alles correct is, klikt u op `Bevestigen`{.action}. Binnen een paar minuten wordt de delegatie op onze servers aangemaakt.
 
+Nadat de delegatie is geconfigureerd, kan *test@mypersonaldomain.ovh* de geselecteerde acties uitvoeren op het account *test2@mypersonaldomain.ovh*.
 
-## Deel 2: Instellen met de Outlook Web App
-Voeg de e-mail inbox "config" toe, en klik vervolgens op "toevoegen".
+### Stap 2: De gedeelde rechten gebruiken
 
-![](images/img_1029.jpg){.thumbnail}
+Nu de rechten gedeeld zijn, kunnen ze worden toegepast.  Voordat u verder gaat, moet u ervoor zorgen dat u over de inloggegevens beschikt voor het Exchange account waaraan de nieuwe gemachtigde rechten zijn verleend.
 
+Dit werkt anders, afhankelijk van de rechten die u hebt gedelegeerd, en ook de software of webinterface die u gebruikt voor toegang tot uw Exchange account. Vanaf dit punt in de handleiding kunt u de instructies volgen die relevant zijn voor de rechten die u hebt gedelegeerd.
 
-## Deel 3: Instellen op de Outlook Web App
-De "config" e-mailaccount verschijnt nu correct in de [Webmail Exchange](https://ex.mail.ovh.net/owa).
+- [Toegangsrecht gebruiken](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange_2013_het_geven_van_full_access_rechten_op_een_account/#21-gebruik-van-uw-toegangsrecht){.external}
 
-![](images/img_1030.jpg){.thumbnail}
+- [‘Verzenden als’-recht gebruiken](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange_2013_het_geven_van_full_access_rechten_op_een_account/#22-gebruik-van-uw-verzenden-als-recht){.external}
 
+- [‘Verzenden namens’-recht gebruiken](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange_2013_het_geven_van_full_access_rechten_op_een_account/#22-gebruik-van-uw-verzenden-namens-recht){.external}
+
+> [!warning]
+>
+> Deze oplossing vereist kennis van de software of interface die u wilt gebruiken. Hieronder vindt u enige informatie over hoe u verder moet gaan. We raden u echter aan om contact op te nemen met een gespecialiseerde serviceprovider en/of ontwikkelaar van de gebruikersinterface als u problemen ondervindt. We kunnen u hier niet zelf helpen.
+>
+
+#### 2.1 Gebruik van uw toegangsrecht 
+
+- **Vanaf de Outlook Web Applicatie (OWA)**
+
+Ga naar het adres <https://www.ovh.nl/mail/> en voer de Exchange accounts in met gedeelde rechten. Nadat u bent ingelogd, klikt u met de rechtermuisknop op de naam van het account in het menu aan de linkerkant en selecteert u vervolgens `Een gedeeld bestand toevoegen`{.action}.
+
+In het popup-venster, voert u de naam in voor het account met de gedelegeerde rechten en klikt u vervolgens op `Toevoegen`{.action}. Het account verschijnt dan in het menu aan de linkerkant en u kunt de inhoud ervan bekijken.
+
+![Autorisatie](images/delegation-step3.png){.thumbnail} 
+
+- **Vanaf de Outlook applicatie voor Windows**
+
+Klik in Outlook 2016 op `Bestand`{.action} in de menubalk bovenaan het scherm en vervolgens op `Accountinstellingen`{.action}. Klik in het vervolgkeuzemenu opnieuw op `Accountinstellingen`{.action}. Selecteer in het popup-venster het account met de gemachtigde rechten en klikt u vervolgens op `Wijzigen`{.action}. 
+
+![Autorisatie](images/delegation-step3.png){.thumbnail} 
+
+Klik vervolgens op `Extra instellingen`{.action}. Ga in het nieuwe venster naar het tabblad `Geavanceerd`{.action} en klik vervolgens op `Toevoegen`{.action}. Voer de naam in van het account dat het gedelegeerde recht zal gebruiken en bevestig vervolgens de toevoeging. Het account verschijnt dan in het menu aan de linkerkant en u kunt de inhoud ervan bekijken.
+
+![Autorisatie](images/delegation-step3.png){.thumbnail} 
+
+#### 2.2 Gebruik van uw ‘Verzenden als’-recht 
+
+- **Vanaf de Outlook Web Applicatie (OWA)**
+
+Ga naar het adres <https://www.ovh.nl/mail/> en voer de Exchange accounts in met gedeelde rechten. Zodra u bent ingelogd, begint u met het bewerken van een nieuw e-mailadres door op `+ Nieuw`{.action} te klikken.
+
+Klik in het gebied dat verschijnt op de drie stippen en klik vervolgens op `Afzenderveld weergeven`{.action}. Klik vervolgens op de knop `Afzender`{.action} en selecteer het e-mailadres dat u als afzender wilt weergeven (het adres waarvoor u de rechten hebt overgedragen). Als dit niet verschijnt, verwijdert u het adres dat al getoond wordt en voert u het adres in dat u wilt weergeven. 
+
+U kunt nu uw e-mail schrijven en verzenden. 
+
+![Autorisatie](images/delegation-step3.png){.thumbnail} 
+
+- **Vanaf de Outlook applicatie voor Windows**
+
+Na het openen van Outlook 2016 begint u met het schrijven van een nieuw bericht. Zorg ervoor dat de knop `Afzender`{.action} wordt weergegeven in het berichtvenster. Als dit niet wordt weergegeven, gaat u naar het tabblad `Opties`{.action} en klikt u vervolgens op `Afzender weergeven`{.action}.
+
+Klik vervolgens op de knop `Afzender`{.action} en selecteer het e-mailadres dat u als afzender wilt weergeven (het adres waarvoor u de rechten hebt overgedragen). Als het account niet wordt weergegeven, klikt u op `Overig`{.action}, voert u het juiste account in en bevestigt u het. 
+
+U kunt nu uw e-mail schrijven en verzenden. 
+
+![Autorisatie](images/delegation-step3.png){.thumbnail} 
+
+#### 2.3 Gebruik van uw ‘Verzenden namens’-recht 
+
+- **Vanaf de Outlook Web Applicatie (OWA)**
+
+Ga naar het adres <https://www.ovh.nl/mail/> en voer de Exchange accounts in met gedeelde rechten. Zodra u bent ingelogd, begint u met het bewerken van een nieuw e-mailadres door op `+ Nieuw`{.action} te klikken.
+
+Klik in het gebied dat verschijnt op de drie stippen en klik vervolgens op `Afzenderveld weergeven`{.action}. Klik vervolgens op de knop `Afzender`{.action} en selecteer het e-mailadres dat u als afzender wilt weergeven (het adres waarvoor u de rechten hebt overgedragen). Als dit niet verschijnt, verwijdert u het adres dat al getoond wordt en voert u het adres in dat u wilt weergeven. 
+
+U kunt nu uw e-mail schrijven en verzenden. 
+
+![Autorisatie](images/delegation-step3.png){.thumbnail}
+
+- **Vanaf de Outlook applicatie voor Windows**
+
+Na het openen van Outlook 2016 begint u met het schrijven van een nieuw bericht. Zorg ervoor dat de knop `Afzender`{.action} wordt weergegeven in het berichtvenster. Als dit niet wordt weergegeven, gaat u naar het tabblad `Opties`{.action} en klikt u vervolgens op `Afzender weergeven`{.action}.
+
+Klik vervolgens op de knop `Afzender`{.action} en selecteer het e-mailadres dat u als afzender wilt weergeven (het adres waarvoor u de rechten hebt overgedragen). Als het account niet wordt weergegeven, klikt u op `Overig`{.action}, voert u het juiste account in en bevestigt u het. 
+
+U kunt nu uw e-mail schrijven en verzenden. 
+
+![Autorisatie](images/delegation-step3.png){.thumbnail} 
+
+## Verder
+
+Ga in gesprek met onze communitygebruikers via <https://community.ovh.com/en/>.
