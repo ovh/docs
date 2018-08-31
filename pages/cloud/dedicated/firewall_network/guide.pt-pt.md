@@ -1,31 +1,30 @@
 ---
-title: Como configurar a Firewall Network
+title: 'Configurar a Firewall Network'
 slug: firewall-network
-section: Redes & IP
+section: 'Redes & IP'
 ---
 
-**Última atualização 03/01/2018**
+**Última atualização: 31/08/2018**
 
 ## Sumário
 
-O sistema **Anti-DDoS** (VAC) inclui a Firewall Network, uma firewall com várias opções de configuração. A Firewall Network ajuda a proteger a infraestrutura global da OVH e os servidores dos clientes, reduzindo a exposição aos ataques provenientes da rede pública.
+Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OVH propõe uma firewall com várias opções de configuração integrada na solução **Anti-DDoS**: a Firewall Network. Esta opção permite limitar a exposição dos serviços aos ataques provenientes da rede pública.
 
-**O presente guia explica como configurar a Firewall Network**.
+**Este manual explica como configurar a Firewall Network.**
 
 
 > [!primary]
 >
-> VAC*: Para mais informações sobre o VAC, o nosso sistema de proteção contra ataques DDoS, clique em: https://www.ovh.pt/anti-ddos/
+> Para obter mais informações sobre a nossa solução Anti-DDoS, consulte a página: <https://www.ovh.pt/anti-ddos/>.
 > 
 
-![Tudo sobre o sistema VAC](images/vac-inside.png){.thumbnail}
+![ Tudo sobre o sistema VAC](images/vac-inside.png){.thumbnail}
 
 
 ## Requisitos
 
-- Dispor de um serviço OVH com Firewall Network incluída: [Servidor Dedicado](https://www.ovh.pt/servidores_dedicados/), [VPS](https://www.ovh.pt/vps/), [Instância Public Cloud](https://www.ovh.pt/public-cloud/instances/), [Private Cloud](https://www.ovh.pt/private-cloud/), [IP Failover](https://www.ovh.pt/servidores_dedicados/ip_failover.xml)...)
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager).
-- Ter conhecimentos básicos de rede.
+- Dispor de um serviço OVH com Firewall Network incluída: [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}, [VPS](https://www.ovh.pt/vps/){.external}, [instância Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pt/private-cloud/){.external}, [IP Failover](https://www.ovh.pt/servidores_dedicados/ip_failover.xml){.external}, etc.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Instruções
@@ -34,69 +33,65 @@ O sistema **Anti-DDoS** (VAC) inclui a Firewall Network, uma firewall com vária
 
 > [!primary]
 >
-> A Firewall Network foi concebida para proteger os IP associados a uma máquina. Cada IP deverá ser configurado de forma independente. Neste momento, não é possível fazer uma configuração simultânea dos IP do servidor.
+> A Firewall Network foi concebida para proteger os endereços de IP associados a uma máquina. Cada IP deverá ser configurado de forma independente. Não é possível realizar uma configuração simultânea dos IP do servidor.
 > 
 
-A ativação e a configuração são efetuadas manualmente a partir da Área de Cliente, secção `IP`{.action} (serviço dedicado). Primeiro, clique na roda dentada à direita do IPv4 para criar a firewall.
+Depois de aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, vá à secção `IP`{.action} e clique em `...`{.action} para ativar a firewall no IPv4 pretendido.
 
 ![Ativação da Firewall Network](images/firewall_creation.png){.thumbnail}
 
-- De seguida, deverá confirmar a opção.
+É-lhe solicitada uma confirmação.
 
 ![Validação](images/creationvalid.png){.thumbnail}
 
-- Clique novamente na roda dentada para `Ativar a Firewall`{.action}  `e Configurar a Firewall`{.action}.
+Em seguida, clique em `Ativar a firewall`{.action} (1) e selecione a opção `Configurar a Firewall`{.action} (2) para iniciar a configuração.
 
-![Ativação e Configuração](images/activationconfig.png){.thumbnail}
+![Ativação da configuração ](images/activationconfig.png){.thumbnail}
 
 Pode definir até **20 regras para cada IP**.
 
-
 > [!warning]
 >
-> A Firewall é ativada automaticamente sempre que houver um ataque DDoS, só podendo ser desativada depois de o ataque ter terminado. Por isso, é necessário manter as definições da firewall sempre atualizadas. Inicialmente, o serviço não tem qualquer regra definida. Logo todas as ligações são permitidas. Se tiver regras definidas, estas deverão ser verificadas com regularidade, mesmo que a firewall esteja desativada.
+> A firewall é ativada automaticamente sempre que houver um ataque DDoS, só podendo ser desativada depois de o ataque ter terminado. Por isso, é necessário manter as definições da firewall sempre atualizadas.
+> Por predefinição, o serviço não tem qualquer regra definida, por isso todas as ligações são permitidas.
+> Se possuir alguma, verifique-as regularmente mesmo se desativar a firewall.
 > 
-
 
 
 > [!primary]
 >
-> - O serviço vem com a UDP fragmentation bloqueada (DROP). Após a ativação da Firewall Network, e se usar uma VPN, deverá configurar corretamente a maximum transmission unit (MTU). Por exemplo, em Open VPN, pode selecionar `MTU test`{.action}.
+> - A fragmentação UDP está bloqueada por predefinição (DROP). Após a ativação da Firewall Network, e se usar uma VPN, deverá configurar corretamente a maximum transmission unit (MTU). Por exemplo, em OpenVPN, pode selecionar `MTU test`{.action}.
 > - A Firewall Network não produz efeitos dentro da rede OVH. Ou seja, as regras implementadas não irão afetar as ligações dentro da rede OVH.
 >
 
 
 ### Configurar a Firewall Network
 
-Para criar uma regra deverá clicar em `Adicionar regra`{.action}:
-
+Adicione uma regra através da opção  `Adicionar uma regra`{.action}.
 
 ![Adicionar uma regra](images/ajoutregle1.png){.thumbnail}
 
-Para cada regra deverá selecionar:
-
-- o nível prioridade (de 0 a 19: quanto mais baixo o valor, maior o nível de prioridade de uma regra relativamente às outras);
-- uma ação (`Autorizar`{.action} ou `Recusar`{.action});
-- o protocolo;
-- um IP (opcional);
-- a porta de origem (apenas TCP);
-- a porta de destino (apenas TCP);
-- as opções TCP (apenas TCP);
-
+Para cada regra, deve selecionar:
+\- o nível prioridade (de 0 a 19, sendo que é aplicada a primeira regra);
+\- uma ação (`Autorizar`{.action} ou `Recusar`{.action});
+\- o protocolo;
+\- um IP (opcional);
+\- a porta de origem (apenas TCP);
+\- a porta de destino (apenas TCP);
+\- as opções TCP (apenas TCP).
 
 ![Como adicionar uma regra](images/ajoutregle4.png){.thumbnail}
 
 
 > [!primary]
 >
-> - Prioridade 0: é aconselhável autorizar o protocolo TCP para todos os IP com uma opção `established`{.action}. A opção `established`{.action} permite verificar se o pacote faz parte de uma sessão já iniciada. Se não der autorização, o servidor não irá receber as respostas do protocolo TCP aos pedidos de ligação (requests) SYN/ACK.
+> - Prioridade 0: é aconselhável autorizar o protocolo TCP para todos os IP com uma opção `established`{.action}. Esta opção permite verificar se o pacote faz parte de uma sessão já iniciada. Se não der autorização, o servidor não irá receber as respostas do protocolo TCP aos pedidos de ligação (requests) SYN/ACK.
 > - Prioridade 19: se não tiver sido definida nenhuma regra com prioridade inferior a 19 (a última possível), os protocolos para IPv4 serão todos recusados.
 > 
 
-
 ### Exemplo de configuração
 
-Para garantir que só ficarão abertas as portas SSH (22), HTTP (80), HTTPS (443), UDP (na porta 10 000) ao autorizar o ICMP, devemos seguir as seguintes regras:
+Para garantir que só ficarão abertas as portas SSH (22), HTTP (80), HTTPS (443) e UDP (10000) ao autorizar o ICMP, é necessário seguir as seguintes regras:
 
 ![Exemplo de configuração](images/exemple.png){.thumbnail}
 
@@ -109,6 +104,6 @@ Por exemplo, um pacote destinado à porta 80/TCP é identificado pela regra 2 e 
 > Em caso de ativação da mitigação Anti-DDoS, as regras da Firewall Network serão ativadas, mesmo tendo sido desativadas anteriormente. Se optar  pela desativação, não se esqueça de eliminar as regras.
 > 
 
-## Para saber mais
+## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com a nossa comunidade de utilizadores: [Comunidade OVH.](https://community.ovh.com/en/)
