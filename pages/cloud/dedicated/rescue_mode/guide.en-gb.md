@@ -1,70 +1,76 @@
 ---
-title: Activate and use rescue mode
-slug: rescue_mode
-excerpt: How to use rescue mode on a dedicated server
-section: Diagnostic and rescue mode
+title: 'Activating and using rescue mode'
+slug: ovh-rescue
+excerpt: 'How to activate and use rescue mode on a Dedicated Server'
+section: 'Diagnostic and rescue mode'
 ---
 
-**Last updated 21st June 2018**
+**Last updated 16th August 2018**
 
 ## Objective
 
-Rescue mode is a tool on your server that allows you to boot into a temporary operating system for the purpose of diagnosing and resolving issues. 
+Rescue mode is a tool on your Dedicated Server. You can use it to boot into a temporary operating system, in order to diagnose and resolve issues.
 
 **This guide will show you how to activate and use your server's rescue mode.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requirements
 
-- a root access to your [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external} via the command line (SSH).
+- administrative (root) access to your [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external} via SSH
 
 
 ## Instructions
 
-You can activate rescue mode by logging into your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and going to your server's page. Then go to `Server Status`{.action} > `General information`{.action} >`Boot`{.action} and click the `Edit`{.action} button to change the boot mode.
+You can activate rescue mode by logging into the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager/){.external}. Select your server by going to the `Dedicated`{.action} section, then `Dedicated Servers`{.action}. Then go to `Server status`{.action} > `General information`{.action} > `...`{.action} and click `Edit`{.action} to change the boot mode.
 
-![Boot mode edit](images/rescue-mode-01.png){.thumbnail}
+![Modify boot mode](images/rescue-mode-01.png){.thumbnail}
 
-On the next screen, select `Boot on rescue mode`{.action}. If your server has a Linux based OS, select `rescue64-pro`{.action} from the dropdown list. If you have a Windows server, select `WinRescue`{.action}. Lastly, type your email address in the text field, then click `Next`{.action}.
+On the next screen, select `Boot in rescue mode`{.action}. If your server has a Linux-based OS, select `rescue64-pro`{.action} from the dropdown list. If you have a Windows server, select `WinRescue`{.action}. Lastly, enter your email address in the text field, then click `Next`{.action}.
 
-![Rescue-pro mode](images/rescue-mode-03.png){.thumbnail}
+![Mode rescue-pro](images/rescue-mode-03.png){.thumbnail}
 
-Confirm your options on the next screen and then reboot your server to apply your changes. Your server will now reboot in rescue mode, and you will receive the credentials for logging in via the email address you provided. To exit rescue mode, simply change the boot mode back to `Boot on the hard disk`{.action}, then reboot your server.
+Confirm your options on the next screen, then reboot your server to apply your changes. 
 
-![Restart server](images/rescue-mode-02.png){.thumbnail}
+![Reboot the server](images/rescue-mode-02.png){.thumbnail}
 
+Your server will now reboot in rescue mode, and you will receive the credentials for logging in via the email address you provided. To exit rescue mode, simply change the boot mode back to `Boot on the hard disk`{.action}, then reboot your server again.
 
 ### Linux
 
-- Using the web interface
+#### Use the web interface.
 
-Once your server has rebooted, you'll receive an email with your rescue mode access credentials. The email will also contain a link to the rescue mode web interface, which will give you access to the following tests:
+Once your server has rebooted, you will receive an email with your rescue mode access credentials. The email will also contain a link to the rescue mode web interface, which you can use to perform the following tests:
 
-- Hard Drives: Checks the integrity of the server's hard drives with SMART tests
-- Processors: Checks that the server's CPU is functioning normally
-- Partitions (State): Performs verification of the drives
-- Partitions (File System): Performs verification of the server's file system
-- Partitions (Explore): A file browser used to explore your files. It is not possible to edit them with this tool, but you make backup of them
-- Memory: Performs a test of the installed RAM. If the RAM is faulty, it will be shown at the end of the test
+- <b>Hard disks.</b> Checks their integrity with SMART tests.
+- <b>Processors.</b> Checks that they are functioning normally.
+- <b>Partitions (states).</b> Checks the states of readers.
+- <b>Partitions (file systems).</b> Checks the server’s file system.
+- <b>Partitions (explore).</b> Launches a browser for exploring files. You cannot edit them with this tool, but you can back them up.
+- <b>Memory.</b> Checks the RAM installed on the server.
 
-![Web Interface for Rescue mode](images/rescue-mode-04.png){.thumbnail}
+![Web interface for rescue mode](images/rescue-mode-04.png){.thumbnail}
 
-- SSH (command line)
+#### Use SSH (command line).
 
-Once your server has rebooted, you'll receive an email with your rescue mode access credentials. After that, you should access your server via the command line in the usual way, but with the rescue mode root password (from the email we sent you) instead of the regular one.
 
-For example :
+> [!primary]
+> 
+> If you are using an SSH key (also active in the OVH Control Panel), you will not be sent a password. Once the server is in rescue mode, you can connect directly via your SSH key.
+>
+
+Once your server has rebooted, you will receive an email with your rescue mode access credentials. You will then need to access your server via the usual command lines, using the root password for rescue mode rather than your own.
+
+For example:
 
 ```sh
-ssh root@IP_of_your_server
-root@IP_of_your_server password:
+ssh root@your_server_IP
+root@your_server_password:
 ```
 
+For most changes you make to your server via SSH while in rescue mode, you will need to mount a partition. This mode has its own temporary file system, so any file system changes you make in rescue mode will be lost once you reboot the server back in normal mode.
 
-Most changes that you want to make to your server via SSH while in rescue mode will require you to mount a partition. This is because rescue mode has it's own (temporary) file system, so any file system changes you make in rescue mode will be lost once you reboot the server back into normal mode.
-
-Mounting partitions is done using the mount command in SSH, but you'll first need to list your partitions so that you can retrieve the name of the partition you want to mount. Please refer to the following code examples:
+You can mount partitions using the `mount` command in SSH. Firstly, you will need to list your partitions, so that you can retrieve the name of the partition you would like to mount. You can refer to the following code examples:
 
 ```sh
 rescue:~# fdisk -l
@@ -86,7 +92,7 @@ Device Boot Start End Blocks Id System
 /dev/sda1 1 31488 8060912 c W95 FAT32 (LBA)
 ```
 
-Once you have the correct name of the partition you want to mount, you can mount it with the command shown below:
+Once you have found the name of the partition you want to mount, use the command below:
 
 ```sh
 rescue:~# mount /dev/hda1 /mnt/
@@ -94,35 +100,35 @@ rescue:~# mount /dev/hda1 /mnt/
 
 > [!primary]
 >
-> Your partition will now be mounted, allowing you to perform file system operations.
+> Your partition will now be mounted. You can then carry out operations on the file system.
 > 
-> If your server has a software RAID configuration, you will need to mount your raid volume (generally /dev/mdX).
+> If your server uses a softRAID configuration, you will need to mount your RAID volume (generally `/dev/mdX`).
 >
 
 
 ### Windows
 
-#### Accessing WinRescue
+#### Access WinRescue.
 
-Once your server has rebooted, you'll receive an email with your rescue mode access credentials. To access rescue mode, you'll need to download and install a VNC console, or use the `IPMI` module in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager/){.external}.
+Once your server has rebooted, you will receive an email with your rescue mode access credentials. To use them, you will need to download and install a VNC console, or use the `IPMI` module in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager/){.external}.
 
-![Winrescue window](images/rescue-mode-06.png){.thumbnail}
+![Winrescue Windows](images/rescue-mode-06.png){.thumbnail}
 
-#### WinRescue tools
+#### WinRescue tool
 
-|Tool|Description|
+|Tools|Description|
 |---|---|
-|Freecommander|A file manager with all the standard functionality you would expect.|
-|NTPWdi|A user-friendly password manager. It lets you reactivate or change the passwords of user accounts on your server. This tool is very useful in the event of lost credentials, or for the reactivation of a security account.|
-|FileZilla|An open source FTP client. It supports SSH and SSLprotocols, and has a clear and intuitive drag and drop interface. It can be used for transferring your data to an FTP server, such as the FTP backup supplied with most of the OVH server models.|
-|7-ZIP|A file compression and archiving utility that reads the following formats: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR and Z. It also allows you to create your own archives in the following formats: z, XZ, BZIP2, GZIP, TAR, ZIP and WIM.|
-|Avast Virus Cleaner|An antivirus application with file scanning and cleansing capabilities.|
-|ActivNIC|Allows you to reactivate a deactivated network interface card.|
-|SRVFirewall|A script that can either activate or deactivate the firewall on your server.|
-|SysInternal|A Microsoft software suite comprised of many tools for network maintenance, process management and much more.|
-|Virtual Clone Drive|Allows you to mount ISO, BIN, and CCD files in a virtual CD drive.|
+|Freecommander|A file manager with all the standard features you would need.|
+|NTPWdi|An easy-to-use password manager. You can use it to reactivate or change the passwords of user accounts on your server. This tool is useful if you ever lose your credentials, or need to reactivate a security account.|
+|FileZilla|An open-source FTP client. It supports SSH and SSL protocols, and has a clear and intuitive drag-and-drop interface. You can use it to transfer your data to an FTP server, like the FTP backup service included with most OVH server models.|
+|7-Zip|A utility for compressing and archiving files, which reads the following formats: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR and Z. You can also use it to create your own archives in the following formats: BZIP2, GZIP, TAR, WIM, XZ, Z and ZIP.|
+|Avast Virus Cleaner|An anti-virus application that scans and cleans files.|
+|ActivNIC|A tool you can use to enable a disabled network interface card.|
+|SRVFirewall|A script that enables and disables the firewall on your server.|
+|SysInternal|A software suite from Microsoft that includes several tools you can use to carry out network maintenance, and manage processes.|
+|Virtual Clone Drive|A tool you can use to mount BIN, CCD and ISO files in a virtual CD reader.|
 |Firefox|A web browser.|
-|Testdisk|A powerful data recovery application. It allows you to recover and modify corrupted partitions, find lost partitions, repair a boot sector or even reconstruct a defective MBR.|
+|TestDisk|A powerful data recovery application. You can use it to recover and modify corrupted partitions, find lost partitions, repair a boot sector and even rebuild a defective MBR.|
 
 ## Go further
 
