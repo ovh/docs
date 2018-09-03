@@ -13,7 +13,6 @@ Každý [dedikovaný server OVH](https://www.ovh.cz/dedikovane_servery/){.extern
 
 Zjistěte, jak aktivovat a používat funkci Backup Storage na svém dedikovaném serveru.
 
-
 ## Prerekvizity
 
 - [Dedikovaný server OVH](https://www.ovh.cz/dedikovane_servery/){.external}.
