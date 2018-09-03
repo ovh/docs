@@ -1,6 +1,6 @@
 ---
 title: 'Configuring an email address on the Gmail online interface'
-slug: svetainiu_talpinimo_el_pastas_konfiguravimas_gmail_sasajoje
+slug: gmail-configuration
 excerpt: 'Find out how to configure an MX Plan email address on the Gmail online interface'
 section: 'Other email clients'
 ---
@@ -22,7 +22,7 @@ You can configure MX Plan email addresses on email clients and online interfaces
 
 ## Requirements
 
-- an MX Plan email address (included in the MX Plan solution and [OVH Web Hosting plans](https://www.ovh.lt/svetainiu-talpinimas/){.external})
+- an MX Plan email address (included in the MX Plan solution and [OVH Web Hosting plans](https://www.ovh.ie/web-hosting/){.external})
 - credentials for the OVH email address you want to configure
 - credentials for the Gmail account you want to configure the OVH email address on
 
@@ -87,7 +87,7 @@ Once you have filled in the information requested, tick the box next to `Secured
 
 ![mxplan](images/configuration-gmail-web-step5.png){.thumbnail}
 
-At this stage, you simply need to confirm this addition by entering the confirmation code sent to your OVH email address. To receive it, log on to our online interface as usual, via: <https://www.ovh.lt/mail/>. 
+At this stage, you simply need to confirm this addition by entering the confirmation code sent to your OVH email address. To receive it, log on to our online interface as usual, via: <https://www.ovh.ie/mail/>. 
 
 Once you have pressed confirm, the OVH email address will then appear in the `Accounts and Import`{.action} tab, which you accessed to start with.
 
@@ -99,7 +99,7 @@ To send an email from your OVH email address via the Gmail online interface, you
 
 ![mxplan](images/configuration-gmail-web-step6.png){.thumbnail}
 
-Please also note that you can still use our online interface, accessible via <https://www.ovh.lt/mail/>, to access your OVH email address. You just need to use your usual credentials to log in.
+Please also note that you can still use our online interface, accessible via <https://www.ovh.ie/mail/>, to access your OVH email address. You just need to use your usual credentials to log in.
 
 ## Go further
 
