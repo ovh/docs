@@ -1,185 +1,107 @@
 ---
-title: Web hosting modifica la tua zona DNS
-excerpt: Questa guida contiene le informazioni utili relative alla modifica della tua zona DNS.
+title: 'Modificare una zona DNS di OVH'
+excerpt: 'Scopri come modificare una zona DNS OVH dallo Spazio Cliente'
 slug: web_hosting_modifica_la_tua_zona_dns
 legacy_guide_number: g1604
 ---
 
+**Ultimo aggiornamento: 31/08/2018**
 
-## Definizione
-Il DNS (o Domain Name System) è un sistema che permette di tradurre un dominio in indirizzo IP, in modo che le tue richieste possano raggiungere il server di destinazione.
+## Obiettivo
 
-![](images/img_3710.jpg){.thumbnail}
+La zona <i>Domain Name System</i> (DNS) di un dominio consiste nel file di configurazione in cui si archiviano le relative informazioni tecniche, denominate record.  Convenzionalmente, questi record consentono di collegare il tuo dominio al server o ai server che ospitano il tuo sito Internet e i tuoi indirizzi email.
 
+**Questa guida ti mostra come modificare una zona DNS OVH dal tuo Spazio Cliente.**
 
-## Differenze server/zona DNS
+## Prerequisiti
 
-## Server DNS
+- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Utilizzare i server DNS di OVH per la configurazione del dominio in questione
 
-- I server DNS sono i server dichiarati per un dominio. Rispondono per primi alle richieste e poi le reindirizzano alla zona DNS associata.
+> [!warning]
+>
+> - Se il dominio non utilizza i server DNS di OVH, è necessario realizzare la modifica dall’interfaccia del provider che gestisce la configurazione del tuo dominio.
+> - Se il dominio è registrato presso OVH, verifica che utilizzi la nostra configurazione accedendo allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} > `Server DNS`{.action} e seleziona il tuo dominio.
+>
 
+## Procedura
 
+**La modifica di una zona DNS è un’operazione delicata.** Effettuare una modifica inappropriata potrebbe, ad esempio, rendere impossibile l’accesso al tuo sito Internet o la ricezione di nuovi messaggi di posta elettronica.
 
-## Zona DNS
+Essere a conoscenza delle diverse tipologie di record consente di modificare al meglio la zona DNS del dominio. La seguente tabella descrive la funzione di ciascun record. 
 
-- La zona DNS è un file che contiene i diversi record corrispondenti agli indirizzi dei server che ospitano il tuo sito (A) o le tue email (MX). Questi indirizzi possono essere indirizzi IP o nomi di host.
+|Record|Descrizione|  
+|---|---|
+|A|Consente di associare un dominio a un indirizzo IP (IPv4) come, ad esempio, l’indirizzo IP del server nel quale è ospitato il tuo sito Web.|
+|AAAA|Consente di associare un dominio a un indirizzo IP (IPv6). come, ad esempio, l’indirizzo IP del server nel quale è ospitato il tuo sito Web.|
+|CNAME|Consente che un dominio possa utilizzare il o gli indirizzi IP di un altro dominio collegandoli tra loro attraverso la creazione di un alias. Ad esempio, se *www.mypersonaldomain.ovh* è un alias di *mypersonaldomain.ovh*, ciò indica che *www.mypersonaldomain.ovh* utilizzerà il o gli indirizzi IP di *mypersonaldomain.ovh*.|
+|MX|Consente di associare un dominio a un server di posta come, ad esempio, l’indirizzo IP del server in cui è ospitata la tua soluzione email. È possibile che il provider disponga di vari server di posta: in questo caso darà necessario creare altrettanti record MX.|
+|SRV|Consente di indicare l’indirizzo di un server che gestisce un servizio. Ad esempio, questo record può indicare l’indirizzo di un server SIP o quello di un server che consente a un client di posta elettronica di configurarsi automaticamente attraverso l’<i>autodiscover</i>.|
+|TXT|Consente di aggiungere il valore della tua scelta (in formato testo) ai parametri DNS del tuo dominio. Questo record è quello utilizzato durante i processi di verifica.|
+|SPF|Consente di impedire agli spammer di utilizzare il tuo dominio per l'invio di email non autorizzate. Ad esempio, questo record può stabilire che solo il server del tuo provider di soluzioni email deve essere identificato come legittima fonte di invio. Per saperne di più consulta la nostra guida su [come aggiungere un record SPF alla configurazione di un dominio](https://docs.ovh.com/it/domains/hosting_condiviso_il_record_spf/){.external}.|
+|CAA|Consente di elencare le autorità di certificazione autorizzate a fornire certificati SSL per un dominio.|
 
+### Step 1: accedi alla gestione della zona DNS del tuo dominio
 
+Come prima cosa, connettiti al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca su `Domini`{.action} nella barra del menu a sinistra, poi seleziona il nome del dominio interessato. Infine, seleziona la scheda` Zona DNS`{.action}.
 
+La griglia mostra la configurazione del tuo dominio in OVH costituita dai vari record DNS, a ciascuno dei quali corrisponde una riga. Puoi filtrare il contenuto per tipo di record o per dominio.
 
-## Perché modificare i tuoi server o la tua zona DNS?
+![dnszone](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
 
-## Server DNS
-La modifica dei tuoi server DNS potrebbe essere necessaria, ad esempio, se decidi di cambiare Registrar. Alcuni di essi, infatti, non consentono di continuare a utilizzare i loro server a coloro che decidono di trasferire il proprio dominio alla concorrenza.
-È possibile anche utilizzare uno dei tuoi server dedicati come server DNS, per gestire il tuo dominio.
+### Step 2: modifica la zona DNS del tuo dominio
 
-## Zona DNS
-La modifica della tua zona DNS è necessaria se decidi di cambiare il server che ospita il tuo sito o le tue email, ad esempio in seguito al passaggio a un altro provider.
-Una volta che hai aggiornato la zona DNS, il tuo dominio punterà verso i nuovi server.
+Puoi modificare la zona DNS del tuo dominio aggiungendo, modificando o rimuovendo un record DNS. Per fare ciò, ci sono due possibilità:
 
+- **modificare manualmente la zona utilizzando l’editor di testo**(solo per gli utenti esperti): nella scheda `Zona DNS`{.action}, clicca su `Utilizza l’editor di testo`{.action}, poi segui gli step;
 
-## Tempo di propagazione DNS
+- **utilizzare la configurazione assistita**.
 
-## TTL (Time To Live)
-Il Time To Live ("tempo di vita" o "durata di vita"), chiamato TTL, indica per quanto tempo un'informazione viene conservata in cache dopo essere stata modificata.
-In OVH, il TTL delle zone DNS create è di un'ora (TTL = 3600).
+Da questo momento, questa guida mostrerà soltanto la configurazione assistita.
 
+> [!primary]
+>
+> Procurati le informazioni da modificare nella tua zona DNS. Se effettui questa modifica su richiesta di un provider di servizi, quest’ultimo ti ha precedentemente comunicato la lista degli elementi da modificare.
+>
 
-## Accedi al tuo Spazio Cliente OVH
+- **Aggiungi un nuovo record DNS**
 
-- Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web), inserisci le tue credenziali e clicca su Login.
+Per aggiungere un nuovo record DNS, rimanendo posizionato sulla scheda `Zona DNS`{.action} del tuo Spazio Cliente, clicca sul pulsante `Aggiungi un record`{.action} nella tabella a destra. Seleziona il tipo di record DNS, poi segui gli step.
 
+Verifica che questo record non esista già e che non punti a un target differente. Pertanto, filtra il contenuto della tabella per tipo di record o per dominio. Se quest’ultimo esiste già, ti invitiamo a modificarlo seguendo l’operazione descritta qui di seguito.
 
+![dnszone](images/edit-dns-zone-ovh-add-entry.png){.thumbnail}
 
-![](images/img_3711.jpg){.thumbnail}
+- **Modifica un record DNS esistente**
 
+Per modificare un record DNS, sempre dalla scheda `Zona DNS`{.action} del tuo Spazio Cliente, clicca sull’icona a forma di ingranaggio sulla destra del record selezionato. Poi clicca su `Modifica il record`{.action} e segui gli step.
 
-## Seleziona il tuo dominio
+![dnszone](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
 
-- Nella sezione Domini del menu a sinistra, seleziona il dominio che vuoi modificare.
+- **Elimina un record DNS** 
 
+Per eliminare un record DNS, rimanendo posizionato sulla scheda `Zona DNS`{.action} del tuo Spazio Cliente, clicca sull’icona a forma di ingranaggio sulla destra del record selezionato. Poi clicca su `Elimina il record`{.action}, dopodiché segui gli step.
 
+Puoi eliminare più record in una volta sola selezionando le caselle corrispondenti sulla sinistra, poi cliccando sul tasto `Elimina`{.action}.
 
-![](images/img_3712.jpg){.thumbnail}
+![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
+### Step 3: attendi il tempo di propagazione
 
-## Visualizza la configurazione della tua zona DNS
-Per visualizzare la configurazione della tua zona e i record presenti, clicca sulla tab Zona DNS.
-Se preferisci, puoi eseguire una ricerca per tipo di record.
+Una volta modificata la configurazione DNS del tuo dominio, la propagazione delle modifiche potrebbe richiedere fino a 24 ore.
 
-![](images/img_3714.jpg){.thumbnail}
+Se vuoi ridurre il tempo di propagazione per le prossime modifiche della tua zona DNS, è possibile modificarlo regolando il TTL (*Time To Live*) che si applicherà a tutti i record della zona DNS.
+Per fare ciò, vai sulla scheda `Zona DNS`{.action} del tuo Spazio Cliente, clicca sul tasto `Modifica il TTL di default`{.action} e poi segui gli step. 
 
+Inoltre è possibile modificare il TTL di un record DNS. Tuttavia, questa operazione si può effettuare soltanto record per record, nel momento in cui vengono modificati oppure aggiunti.
 
-## Modifica un record
-Per modificare un record, clicca sull'icona a forma di matita e, dopo aver apportato la tua modifica, clicca su Seguente e poi su Conferma.
+## Per saperne di più
 
-![](images/img_3723.jpg){.thumbnail}
+[Generalità sui server DNS](https://docs.ovh.com/it/domains/web_hosting_gestisci_il_tuo_server_dns/){.external}
 
+[Aggiungere un record SPF alla configurazione di un dominio](https://docs.ovh.com/it/domains/hosting_condiviso_il_record_spf/){.external}
 
-## Elimina un record
-Per eliminare un record, clicca sull'icona a forma di Cestino e Conferma.
+[Proteggi il tuo dominio dal Cache Poisoning con DNSSEC](https://www.ovh.it/domini/servizio_dnssec.xml){.external}
 
-![](images/img_3724.jpg){.thumbnail}
-
-
-## Ripristina la configurazione
-Il tasto "Reinstalla la configurazione" ti permette di ripristinare i campi predefiniti della tua zona DNS.
-
-![](images/img_3715.jpg){.thumbnail}
-Seleziona l'opzione di reinstallazione e clicca su Conferma:
-
-
-- Numero minimo di record: questa opzione ripristina nella tua zona i record di base per il funzionamento del tuo dominio.
-
-- Ripristino normale: questa opzione ripristina nella tua zona anche record aggiuntivi, ad esempio i CNAME per l'FTP.
-
-
-
-![](images/img_3716.jpg){.thumbnail}
-
-
-## Aggiungi un record
-Il tasto "Aggiungere un accesso" ti permette di aggiungere un nuovo record nella tua zona DNS.
-
-![](images/img_3717.jpg){.thumbnail}
-Per farlo, è sufficiente selezionare il tipo di record e cliccare su Seguente.
-
-![](images/img_3718.jpg){.thumbnail}
-
-
-## Effettua una modifica utilizzando l'editor di testo
-Il tasto "Utilizza l'editor di testo" ti permette di modificare la tua zona utilizzando un editor di testo. Questa modalità è utile per gli utenti avanzati che vogliono effettuare rapidamente le loro modifiche.
-
-![](images/img_3719.jpg){.thumbnail}
-Per eseguire questa operazione, è sufficiente iserire il testo delle zone DNS e confermare.
-
-![](images/img_3720.jpg){.thumbnail}
-
-
-## TTL predefinito
-Il tasto "TTL predefinito" ti permette di modificare il TTL della tua zona DNS e gestire il tempo di conservazione in cache dei tuoi dati.
-
-![](images/img_3721.jpg){.thumbnail}
-Per farlo, modifica il campo TTL predefinito e Conferma.
-
-![](images/img_3722.jpg){.thumbnail}
-
-
-## Record di tipo A
-Un record di tipo A crea una corrispondenza tra un hostname e un indirizzo IPv4.
-Non è possibile utilizzare un record di tipo A e uno di tipo CNAME per lo stesso hostname.
-
-
-## Record di tipo MX
-I record MX indicano il server che gestisce l'invio e la ricezione della posta elettronica.
-Non è possibile indicare un indirizzo IP, ma esclusivamente un hostname.
-
-
-## Record di tipo CNAME
-I record CNAME servono a creare l'alias di un hostname, consentendo di collegarlo ad un altro. Non è possibile indicare un indirizzo IP, ma esclusivamente un hostname.
-Non è possibile utilizzare un record di tipo A e uno di tipo CNAME per lo stesso hostname.
-
-
-## Record di tipo TXT
-I record TXT permettono di inserire un testo nella tua zona DNS.
-
-
-## Record di tipo SPF
-Un record SPF permette di dichiarare i server autorizzati a inviare email con il tuo dominio.
-Per maggiori informazioni, consulta questa guida:
-
-- []({legacy}2028).
-
-
-
-
-## Zona Check
-Grazie a questo strumento sei sicuro che l'aggiornamento dei tuoi server DNS avverrà correttamente.
-Consulta la guida disponibile:
-
-- []({legacy}1980).
-
-
-
-
-## DNSSEC
-Questa opzione ti permette di proteggere il tuo dominio contro il Cache Poisoning.
-Consulta la guida disponibile:
-
-- []({legacy}609).
-
-
-
-
-## Quanto tempo serve perché le modifiche siano effettive?
-Server DNS
-
-- Per diventare effettive, le modifiche apportate ai tuoi server DNS possono richiedere fino a 48 ore.
-
-
-Zona DNS
-
-- Per diventare effettive, le modifiche apportate alla tua zona DNS possono richiedere fino a 24 ore.
-
-
-
+Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}
