@@ -31,7 +31,7 @@ Tabulka nabízí přehled všech domén připojených k Vašemu webhostingu. Ně
 
 > [!primary]
 >
-> Pokud provádíte migraci webových stránek a chcete předejít případné nedostupnosti své služby, pokračujte rovnou k **Fázi 4: spuštění stránek online**.
+> Pokud provádíte migraci webových stránek a chcete předejít případné nedostupnosti své služby, pokračujte rovnou k [Fázi 4: spuštění stránek online](https://docs.ovh.com/cz/cs/hosting/konfigurace-multisite-webhosting/#faze-4-spusteni-stranek-online){.external}.
 >
 
 ![multisite](images/access-multisite-ovh.png){.thumbnail}
@@ -42,11 +42,11 @@ Pro přidání nové domény k webhostingovému řešení klikněte na tlačítk
 
 - **Přidání domény registrované u společnosti OVH**:
 
-Zvolte doménu ze seznamu: vybírat můžete pouze z domén, které jsou asociovány s Vaším zákaznickým identifikátorem a které používají konfiguraci OVH. Vyberte doménu ze seznamu a klikněte na tlačítko `Další`{.action}. Pokud jste zvolili tento postup, řiďte se pokyny uvedenými ve fázi **3.1: přidání domény registrované u společnosti OVH**.
+Zvolte doménu ze seznamu: vybírat můžete pouze z domén, které jsou asociovány s Vaším zákaznickým identifikátorem a které používají konfiguraci OVH. Vyberte doménu ze seznamu a klikněte na tlačítko `Další`{.action}. Pokud jste zvolili tento postup, řiďte se pokyny uvedenými ve fázi [3.1: přidání domény registrované u společnosti OVH](https://docs.ovh.com/cz/cs/hosting/konfigurace-multisite-webhosting/#faze-31-pridani-domeny-registrovane-u-spolecnosti-ovh){.external}.
 
 - **Přidání externí domény**:
 
-Zadejte externí doménu, kterou si na svůj webhosting přejete přidat. Mějte prosím na paměti, že pro úspěšné přidání externí domény musíte disponovat dostatečnými právy pro provádění úprav v její DNS konfiguraci. Pokud jste zvolili tento postup, řiďte se pokyny uvedenými ve fázi **3.2: přidání externí domény**.
+Zadejte externí doménu, kterou si na svůj webhosting přejete přidat. Mějte prosím na paměti, že pro úspěšné přidání externí domény musíte disponovat dostatečnými právy pro provádění úprav v její DNS konfiguraci. Pokud jste zvolili tento postup, řiďte se pokyny uvedenými ve fázi [3.2: přidání externí domény](https://docs.ovh.com/cz/cs/hosting/konfigurace-multisite-webhosting/#faze-32-pridani-externi-domeny){.external}.
 
 ![multisite](images/add-multisite-step1.png){.thumbnail}
 
@@ -54,7 +54,7 @@ Zadejte externí doménu, kterou si na svůj webhosting přejete přidat. Mějte
 
 > [!primary]
 >
-> Tato fáze popisuje postup pro „přidání domény registrované u společnosti OVH“. Pro přidání externí domény postupujte podle pokynů uvedených ve fázi **3.2: přidání externí domény**.
+> Tato fáze popisuje postup pro „přidání domény registrované u společnosti OVH“. Pro přidání externí domény postupujte podle pokynů uvedených ve fázi [3.2: přidání externí domény](https://docs.ovh.com/cz/cs/hosting/konfigurace-multisite-webhosting/#faze-32-pridani-externi-domeny){.external}.
 >
 
  V závislosti na Vašem [webhostingovém balíčku OVH](https://www.ovh.cz/webhosting/){.external} nemusí být některé možnosti nastavení dostupné.
@@ -80,13 +80,13 @@ Pokud upřednostňujete **manuální konfiguraci DNS**, nechte políčko nezašk
 
 Nakonec klikněte na tlačítko `Schválit`{.action}. Celý proces by neměl trvat déle než hodinu. Propagace změn v DNS zóně však může trvat 4 až 24 hodin.
 
-Po úspěšném přidání domény pokračujte k **Fázi 4: Spuštění stránek online**.
+Po úspěšném přidání domény pokračujte k [Fázi 4: spuštění stránek online](https://docs.ovh.com/cz/cs/hosting/konfigurace-multisite-webhosting/#faze-4-spusteni-stranek-online){.external}.
 
 ### Fáze 3.2: přidání externí domény
 
 > [!primary]
 >
-> Tato fáze popisuje postup pro „přidání externí domény“ (tzn. takové domény, která není registrována u společnosti OVH, nebo k níž nemáte přístup v rámci svého Zákaznického prostoru OVH). Pro přidání domény registrované u společnosti OVH postupujte podle pokynů uvedených ve fázi **3.1: přidání domény registrované u společnosti OVH**. 
+> Tato fáze popisuje postup pro „přidání externí domény“ (tzn. takové domény, která není registrována u společnosti OVH, nebo k níž nemáte přístup v rámci svého Zákaznického prostoru OVH). Pro přidání domény registrované u společnosti OVH postupujte podle pokynů uvedených ve fázi [3.1: přidání domény registrované u společnosti OVH](https://docs.ovh.com/cz/cs/hosting/konfigurace-multisite-webhosting/#faze-31-pridani-domeny-registrovane-u-spolecnosti-ovh){.external}. 
 >
 
 Nejdříve je zapotřebí provést konfiguraci přidání domény. Některé funkce zahrnuté ve Vašem webhostingovém balíčku OVH nemohou být aktivovány ihned po přidání domény. Za účelem jejich aktivace budete nejdříve muset dokončit tuto fázi upravením nastavení domény.
@@ -125,15 +125,12 @@ Po úspěšném přidání domény nezbývá než uveřejnit Vaše webové strá
 
 V případě zájmu o integraci ready-to-use řešení vyzkoušejte naše Moduly na jedno kliknutí. Detailní informace o instalaci webových stránek za použití Modulů na jedno kliknutí naleznete v následující dokumentaci: [Moduly na jedno kliknutí](https://docs.ovh.com/cz/cs/hosting/moduly-na-jedno-kliknuti/){.external}. 
 
- 
-
 > [!primary]
 >
 > Pokud si přejete přidat další webové stránky, výše popsaný proces opakujte pro každou z nich.
 >
-> Při rozdělování webhostingu mezi vícero webových stránek mějte prosím na paměti, že čím více stránek na daném webhostingu běží, tím větší nároky jsou na alokované zdroje kladeny. Detailní informace o kapacitách jednotlivých webhostingových balíčků naleznete na následující stránce: [OVH Webhosting](https://www.ovh.cz/webhosting/{.external}.
+> Při rozdělování webhostingu mezi vícero webových stránek mějte prosím na paměti, že čím více stránek na daném webhostingu běží, tím větší nároky jsou na alokované zdroje kladeny. Detailní informace o kapacitách jednotlivých webhostingových balíčků naleznete na následující stránce: [OVH Webhosting](https://www.ovh.cz/webhosting/){.external}.
 >
-
 
 ## Kam dál
 
