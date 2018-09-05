@@ -5,7 +5,7 @@ excerpt: 'Apprenez à configurer intégralement une file d''appels sur un numér
 section: 'Numéros ou alias'
 ---
 
-**Dernière mise à jour le 26/07/2018** 
+**Dernière mise à jour le 05/09/2018** 
  
 ## Objectif
  
@@ -95,7 +95,7 @@ Pour rappel, nous vous conseillons d'être vigilant concernant les paramètres q
  
 #### 1. Définir une stratégie d'appels
  
-Dans les options de la file d'appels, vous avez la possibilité de définir une stratégie concernant la manière dont les membres de la file vont sonner. Pour la définir ou la modifier, toujours connecté à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et positionné sur le numéro alias concerné, cliquez sur l'onglet `Configuration du numéro`{.action}, puis sur `Gérer les membres`{.action}.
+Dans les options de la file d'appels, vous avez la possibilité de définir une stratégie concernant la manière dont les membres de la file vont sonner. Pour la définir ou la modifier, toujours connecté à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et positionné sur le numéro alias concerné, cliquez sur l'onglet `Configuration du numéro`{.action}, puis sur `Gérer les options`{.action}.
  
 Modifiez alors la stratégie en vous aidant des informations ci-dessous :
  
