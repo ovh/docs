@@ -6,7 +6,7 @@ section: 'Configuração do alojamento'
 order: 1
 ---
 
-**Última atualização: 03/09/2018**
+**Última atualização: 05/09/2018**
 
 ## Sumário
 
@@ -42,7 +42,7 @@ Para adicionar um novo domínio ao alojamento web, clique no botão `Adicionar u
 
 - **Adicionar um domínio registado na OVH**:
 
-Apenas são apresentados os domínios que incluem a configuração OVH e que foram indicados como contactos para o seu ID de cliente. Selecione um da lista e clique no botão `Seguinte`{.action}. Em seguida, consulte o passo [3.1 - “Adicionar um domínio registado na OVH”](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/#31-adicionar-um-dominio-registado-na-OVH){.external}.
+Apenas são apresentados os domínios que incluem a configuração OVH e que foram indicados como contactos para o seu ID de cliente. Selecione um da lista e clique no botão `Seguinte`{.action}. Em seguida, consulte o passo [3.1 - “Adicionar um domínio registado na OVH”](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/#31-adicionar-um-dominio-registado-na-ovh){.external}.
 
 - **Adicionar um domínio externo**:
 
@@ -77,7 +77,7 @@ Concluída esta etapa, clique no botão `Seguinte`{.action}. Sugerimos que verif
 Ao selecionar um nome de domínio registado na OVH, tem a possibilidade de modificar automaticamente ou manualmente a sua configuração DNS:
 
 - **para uma configuração DNS automática**: selecione a opção `Configuração automática (recomendada)`{.action};
-- **para uma configuração DNS manual**: desselecione a opção `Configuração automática (recomendada)`{.action} e recupere as informações apresentadas que pretende modificar. Quando efetuar esta configuração, consulte a documentação [“Editing an OVH DNS zone” (versão inglesa - Editar uma zona DNS OVH)](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
+- **para uma configuração DNS manual**: desselecione a opção `Configuração automática (recomendada)`{.action} e recupere as informações apresentadas que pretende modificar. Quando efetuar esta configuração, consulte a documentação [“Editing an OVH DNS zone”](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external} (versão inglesa - Editar uma zona DNS OVH).
 
 Em seguida, clique no botão `Validar`{.action} para adicionar o domínio. Esta operação pode demorar até uma hora. No entanto, a propagação das alterações da configuração DNS do seu domínio pode demorar entre 4 a 24 horas.
 
@@ -87,7 +87,7 @@ Depois de adicionar o domínio, consulte o passo [4 - “Publicação do site”
 
 > [!primary]
 >
-> Este passo aplica-se apenas caso tenha selecionado a opção “Adicionar um domínio externo” (domínio registado fora da OVH ou sem gestão a partir da Área de Cliente). Para um domínio registado na OVH, consulte novamente o passo [3.1 - “Adicionar um domínio registado na OVH”](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-31-ajouter-un-domaine-enregistre-chez-ovh){.external}.
+> Este passo aplica-se apenas caso tenha selecionado a opção “Adicionar um domínio externo” (domínio registado fora da OVH ou sem gestão a partir da Área de Cliente). Para um domínio registado na OVH, consulte novamente o passo [3.1 - “Adicionar um domínio registado na OVH”](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/#31-adicionar-um-dominio-registado-na-ovh){.external}.
 >
 
 Aqui, deverá personalizar a adição do domínio. Tenha em atenção que algumas opções incluídas na sua oferta de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} não podem ser ativadas durante este processo. Deverá finalizar esta operação antes de as poder ativar, alterando as definições do Multi-site quando este for adicionado.
