@@ -1,5 +1,5 @@
 ---
-title: 'Efetuar o backup das minhas informações e das minhas bases de dados para um servidor de armazenamento'
+title: 'Fazer o backup das informações e das bases de dados para um servidor de armazenamento'
 slug: backup-informacoes-bases-de-dados-servidor-armazenamento
 excerpt: 'Proteger dados em 5 passos'
 section: Tutoriais
