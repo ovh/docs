@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment rétablir votre service suite à une coupure compl�
 section: 'Diagnostic et dépannage'
 ---
 
-**Dernière mise à jour le 12/07/2018**
+**Dernière mise à jour le 05/09/2018**
 
 ## Objectif
 
@@ -70,7 +70,7 @@ L'état des voyants de votre modem vous aidera à déterminer la cause de l'inci
 |Vert fixe|Vert fixe|Service fonctionnel|Le service jusqu'à votre modem est fonctionnel et peut être utilisé.| 
 |Vert fixe|Vert clignotant|Service fonctionnel|Le modem échange actuellement des données (un appareil utilise le service ou le monitoring de la ligne est actif).| 
 |Vert clignotant|Éteint|Perte de synchronisation|Votre modem essaye de rétablir la synchronisation de votre accès.| 
-|Éteint|Éteint|Perte de synchronisation|Votre modem n'est pas synchronisé.| 
+|Éteint|Éteint|Pas de synchronisation|Votre modem n'est actuellement pas synchronisé.| 
 |Vert fixe|Éteint|Défaut de connexion|Votre modem est synchronisé, mais n'a pas la possibilité de vous connecter à Internet.| 
 |Vert fixe|Rouge fixe|Défaut de connexion|Votre modem est synchronisé, mais n'a pas la possibilité de vous connecter à Internet.| 
 
