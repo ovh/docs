@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to use network bridging to configure inte
 section: 'Network Management'
 ---
 
-**Last updated 2nd August 2018**
+**Last updated 5th September 2018**
 
 ## Objective
 
@@ -17,7 +17,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 
 ## Requirements
 
-* a dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
+* a Dedicated Server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
 * at least one [failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml) address attached to the server
 * access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
@@ -45,7 +45,7 @@ Select `OVH`{.action} from the `Type`{.action} dropdown box, type a name in the 
 
 ### Determine the gateway address
 
-To configure your virtual machines for internet access, you will need to know the gateway of your host machine (i.e your dedicated server). The gateway address is made up of the first three octets of your server's main IP address, plus 254 as the last octect. For example, if your server's main IP address is:
+To configure your virtual machines for internet access, you will need to know the gateway of your host machine (i.e. your Dedicated Server). The gateway address is made up of the first three octets of your server's main IP address, with 254 as the last octect. For example, if your server's main IP address is:
 
 * 123.456.789.012
 
@@ -224,7 +224,7 @@ Now start the network profile, as shown below:
 # netctl start eno3
 ```
 
-Next, stop and disable dhcp service:
+Next, stop and disable the dhcp service:
 
 ```ssh
 # systemctl stop dhcpcd
@@ -248,22 +248,51 @@ Save and close the file, then reboot your virtual machine.
 
 #### Ubuntu 18.04
 
-First, establish an SSH connection to your virtual machine and open the network configuration file located in /etc/systemd/network. For demonstration purposes, our file is called 50-cloud-init.yaml.
+First, establish an SSH connection to your virtual machine and open the network configuration file located in `/etc/netplan/` with the following command. For demonstration purposes, our file is called `50-cloud-init.yaml`.
+
 ```sh
-[Network]
-Description=network interface on public network, with default route
-DHCP=no
-Address=Failover_IP/24
-Gateway=Gateway_Address
+# nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Once you've made the changes, save and close the file, then reboot your virtual machine.
+Once the file is open for editing, amend it with the following code:
+
+```sh
+network:
+    ethernets:
+        your-network-interface:
+            addresses:
+            - your-failover-ip/32
+            nameservers:
+                addresses:
+                - 213.186.33.99
+                search: []
+            optional: true
+            routes:
+                - to: 0.0.0.0/0
+                  via: your-gateway-ip
+                  on-link: true
+    version: 2
+```
+
+Once you've made the changes, save and close the file, then run the following command:
+
+```sh
+# netplan try
+Warning: Stopping systemd-networkd.service, but it can still be activated by:
+  systemd-networkd.socket
+Do you want to keep these settings?
+
+Press ENTER before the timeout to accept the new configuration
+
+Changes will revert in 120 seconds
+Configuration accepted.
+```
 
 #### Windows Server 2012 / Hyper-V
 
 Before configuring your virtual machine, you'll need to create a virtual switch.
 
-From the command line of your dedicated server, run `IPconfig /ALL`{.action} and then note the name of the network adapter that contains the server's main IP address.
+From the command line of your Dedicated Server, run `IPconfig /ALL`{.action} and then note the name of the network adapter that contains the server's main IP address.
 
 In the Hyper-V Manager, create a new virtual switch and set the connection type to `External`{.action}.
 
@@ -282,7 +311,7 @@ Next, expand the network adapter and click on `Advanced Features`{.action}, chan
 
 ![networkbridging](images/network-bridging-windows-2012-2.jpg){.thumbnail}
 
-Next, start the VM and log in as an administrator, then go to `Control Panel`{.action} > `Network and Sharing Center`{.action}. Click on the `Connections: Ethernet`{.action} link, then click on the `Properties`{.action} button to show the ethernet properties.
+Next, start the VM and log in as an administrator, then go to `Control Panel`{.action} > `Network and Sharing Center`{.action}. Click on the `Connections: Ethernet`{.action} link, then click on the `Properties`{.action} button to view the ethernet properties.
 
 Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, and then click on the `Properties`{.action} button to show IPv4 properties.
 
@@ -290,7 +319,7 @@ Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, and then click on the 
 
 In the IPv4 Properties window, select `Use the following IP address`{.action}. Enter the failover IP into the IP address field, and enter 255.255.255.255 into the subnet mask.
 
-Next, enter your server’s gateway IP address into the default gateway (your server’s IP, ending with 254), and enter 213.186.33.99 into the `Preferred DNS Server`{.action} field.
+Next, enter your server’s gateway IP address into the default gateway (i.e. your server’s IP, ending with 254), and enter 213.186.33.99 into the `Preferred DNS Server`{.action} field.
 
 Click `OK`{.action}, and ignore the warning message about the gateway IP and assigned IP not being in the same subnet.
 
