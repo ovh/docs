@@ -1,11 +1,12 @@
 ---
-title: Převod generické domény k OVH
+title: 'Převod generické domény k OVH'
 slug: prevod-genericke-domeny
-excerpt: Zjistěte, jak převést generickou doménu ke společnosti OVH
-section: Převody
+excerpt: 'Zjistěte, jak převést generickou doménu ke společnosti OVH.'
+section: Převod
+order: 1
 ---
 
-**Poslední aktualizace 16/03/2018**
+**Poslední aktualizace 05/09/2018**
 
 ## Cíl
 
@@ -14,43 +15,47 @@ Převedením domény lze změnit jejího registrátora. Generickou doménu je mo
 **Zjistěte, jak převést generickou doménu ke společnosti OVH.**
 
 ## Prerekvizity
-- Generická doména (.cz, .com, .net apod.) registrovaná u jiného doménového registrátora.
+
+- Generická doména registrovaná u jiného doménového registrátora.
 - Dostatečná oprávnění pro vytvoření požadavku na převod domény. Vlastník domény a/nebo její administrátoři musejí být s požadavkem na převod domény obeznámeni.
-- Doména musí být starší 61 dnů.
-- Na doméně nesmí být za posledních 61 dnů provedena změna vlastníka. Doména nesmí být v daném období převáděna.
-- Doména musí být odemčena pro převod.
 - Musíte disponovat kódem pro převod domény. Pokud kód nemáte, musíte mít možnost ho získat.
-- Kontaktní e-mailové adresy, uvedené v registru *WHOIS*, musí být aktuální.
+- Doména musí být starší 60 dnů.
+- Na doméně nesmí být za posledních 60 dnů provedena změna vlastníka. Doména nesmí být v daném období převáděna.
+- Doména musí být odemčena pro převod.
 
 ## Postup
-### Fáze 1: ověření informací o doméně
 
-Je Vaše doména v současné době registrována u jiného doménového registrátora? Přejte si tento fakt změnit a převést svou doménu ke společnosti OVH?
+Je Vaše doména v současné době registrována u jiného doménového registrátora? Přejte si tento fakt změnit a převést svou doménu ke společnosti OVH? Pokud ano, můžete tak učinit prostřednictvím následujících instrukcí.
 
-Pokud ano, můžete tak učinit prostřednictvím následujících instrukcí. Do procesu převedení domény je zapojeno několik stran a organizací: společnost OVH, Váš současný doménový registrátor a třetí strany. Úspěšné dokončení procesu vyžaduje získání několika ověření. Z toho důvodu je nezbytné, aby veškeré informace týkající se dané domény byly aktuální.
-
-Informace o své doméně můžete aktualizovat prostřednictvím našeho nástroje *WHOIS*, který je dostupný na následující adrese: [https://www.ovh.cz/podpora/nastroje/check_whois.pl](https://www.ovh.cz/podpora/nastroje/check_whois.pl){.external}. Výsledná zpráva, kterou obdržíte po zadání domény, obsahuje několik důležitých informací.
-
-- **Pokud jsou uvedené informace správné**, kontaktujte svého současného registrátora a požádejte ho o odemčení domény. 
-
-- **Pokud jsou uvedené informace nesprávné**, kontaktujte svého současného registrátora a požádejte ho o kontrolu/modifikaci údajů.
-
-> [!primary]
->
-> Pokud si nejste jisti tím, kdo je současným registrátorem Vaší domény, zadejte svou doménu do [nástroje](https://www.ovh.cz/podpora/nastroje/check_whois.pl){.external} *WHOIS*. Požadované údaje naleznete v kolonce „Registrant“.
->
-
-Následující tabulka nabízí přehled jednotlivých kroků, které je za účelem převedení domény nutné vykonat.
+Do procesu převedení domény je zapojeno několik stran a organizací: společnost OVH, Váš současný doménový registrátor a třetí strany. Následující tabulka nabízí přehled jednotlivých kroků, které je za účelem převedení domény nutné vykonat:
 
 |Krok|Popis|Koho se týká?|Kde?|Jak dlouho?|
 |---|---|---|---|---|
-|1|Odemčení domény|Administrátor domény; se souhlasem vlastníka domény|U aktuálního registrátora domény|Záleží na Vás|
-|2|Získání kódu pro převod domény|Administrátor domény; se souhlasem vlastníka domény|U aktuálního registrátora domény|Záleží na Vás|
+|1|Ověření informací o doméně|Administrátor domény|U aktuálního registrátora domény|Záleží na Vás|
+|2|Odemčení domény a získání kódu pro převod domény|Administrátor domény; se souhlasem vlastníka domény|U aktuálního registrátora domény|Záleží na Vás|
 |3|Vytvoření požadavku na převod domény|Kdokoli, kdo má k dispozici kód pro převod domény; se souhlasem vlastníka domény|U nového registrátora domény (například OVH)|Záleží na Vás|
-|4|První fáze ověření převodu domény|Vlastník domény a administrátor domény, který je uveden u nového registrátora|Prostřednictvím e-mailu|Maximálně 5 dní|
-|5|Druhá fáze ověření převodu domény|Současný registrátor domény|Prostřednictvím požadavku odeslaného správci doménové koncovky |Maximálně 5 dní|
+|4.1|První fáze ověření převodu domény|Vlastník domény a administrátor domény, který je uveden u nového registrátora|Prostřednictvím e-mailu|Maximálně 5 dní|
+|4.2|Druhá fáze ověření převodu domény|Současný registrátor domény|Prostřednictvím požadavku odeslaného správci doménové koncovky |Maximálně 5 dní|
 
-### Fáze 2: odemčení domény
+> [!warning]
+>
+> Tento postup se vztahuje na převod většiny doménových koncovek. Detailní informace o převodech jednotlivých domén naleznete na následující stránce: <https://www.ovh.cz/domeny/cenik/>. 
+>
+
+### Krok 1: ověření informací o doméně
+
+**Ze všeho nejdříve je zapotřebí ověřit, zda jsou veškeré informace týkající se dané domény aktuální.** Tyto informace byly až do nedávna veřejně přístupné v registru WHOIS. Společně s nabytím platnosti Obecného nařízení o ochraně osobních údajů (GDPR) se však situace změnila. Z toho důvodu se při ověřování informací doporučujeme obrátit na současného registrátora domény.
+
+- **Pokud jsou informace aktuální**, kontaktujte svého současného registrátora a požádejte ho o odemčení domény (viz další kapitola). 
+
+- **V opačném případě kontaktujte svého současného registrátora a požádejte ho o kontrolu/modifikaci údajů.**
+
+> [!primary]
+>
+> Pokud si nejste jisti tím, kdo je současným registrátorem Vaší domény, zadejte svou doménu do [nástroje](https://www.ovh.com/cgi-bin/whois.pl){.external} *WHOIS*. Požadované údaje naleznete v kolonce „Registrant“.
+>
+
+### Krok 2: odemčení domény a získání kódu pro převod
 
 Jakmile úspěšně ověříte informace týkající se Vaší domény, bude doménu zapotřebí odemknout pro převod. Tento krok lze provést pouze prostřednictvím současného doménového registrátora. Zkontaktujte proto svého poskytovatele a zeptejte se ho, co je pro odemčení domény z Vaší strany nutné vykonat.
 
@@ -63,33 +68,37 @@ Mějte prosím na paměti, že společnost OVH není současným registrátorem 
 > Jakmile doménu odemknete, máte 7 dní na započetí jejího převodu ke společnosti OVH. Pokud nepožádáte o změnu registrátora, dojde po uplynutí této lhůty k opětovnému uzamčení domény.
 >
 
-### Fáze 3: vytvoření požadavku na převod domény
+### Krok 3: vytvoření požadavku na převod domény
 
-Nyní, když je Vaše doména odemčena a disponujete kódem pro její převod, můžete vytvořit oficiální požadavek na převod domény ke společnosti OVH. Za tímto účelem je na [našich webových stránkách](https://www.ovh.cz/){.external} zapotřebí vytvořit objednávku převodu domény.
+Nyní, když je Vaše doména odemčena a disponujete kódem pro její převod, můžete vytvořit oficiální požadavek na převod domény ke společnosti OVH. Za tímto účelem je na [našich webových stránkách](https://www.ovh.cz/){.external} zapotřebí vytvořit objednávku převodu domény. Zadejte svou doménu a postupujte podle instrukcí.
 
-Zadejte svou doménu a postupujte podle instrukcí. Jakmile budete požádáni o zadání kódu pro převod, vložte jej do okénka vedle domény. Pokud kód ještě nemáte, můžete zaškrtnout políčko `Zadat kód později`{.action}. Než však budete v procesu pokračovat, ujistěte se prosím, že kód budete schopni co nejrychleji získat. 
+Jakmile budete požádáni o zadání kódu pro převod, vložte jej do okénka vedle domény. Pokud kód ještě nemáte, můžete zaškrtnout políčko `Zadat kód později`{.action}. Než však budete v procesu pokračovat, ujistěte se prosím, že kód budete schopni co nejrychleji získat. 
 
 Objednávku převodu domény je možné rozšířit o [webhostingové řešení OVH](https://www.ovh.cz/webhosting/){.external}, DNS servery či jiná webová řešení OVH. Pokud k OVH plánujete migrovat své služby (webové stránky a e-maily), může Vás tato nabídka zaujmout. Detailní informace týkající se migrace uvedených služeb k OVH naleznete v následující příručce: [Migrace stránek a e-mailových účtů k OVH](https://docs.ovh.com/cz/cs/hosting/migrace-stranek-k-ovh/){.external}.
 
 > [!warning]
 >
-> Při volbě DNS serverů v průběhu objednávky buďte nanejvýš ostražití. Pokud je Vaše doména asociována s webovými stránkami či e-mailovou službou, ujistěte se prosím, že zadáváte DNS servery, které Vaše doména v současné době používá.
+> V průběhu objednávky věnujte prosím zvýšenou pozornost následujícím bodům:
+>
+> - **Informace o majiteli domény**: abyste se vyhnuli podezření z pokusu o krádež domény, ujistěte se, že se informace o majiteli domény shodují s těmi, které jsou uvedené u současného registrátora.
+>
+> - **Nastavení DNS serverů**: pokud je Vaše doména asociována s webovými stránkami či e-mailovou službou, ujistěte se prosím, že zadáváte DNS servery, které Vaše doména v současné době používá.  
 >
 
-Převod domény ke společnosti OVH bude zahájen ihned po uhrazení vytvořené objednávky.  Průběh procesu budete v závislosti na typu koncovky dané domény moci sledovat v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Převod domény ke společnosti OVH bude zahájen ihned po uhrazení vytvořené objednávky. Průběh procesu budete v závislosti na typu koncovky dané domény moci sledovat v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (sekce `Domény`{.action}, záložka `Nedávné úkoly`{.action}).
 
-### Fáze 4: ověření převodu
+### Krok 4.1: první fáze ověření převodu domény
 
-Pro úspěšné převedení domény k novému registrátorovi je zapotřebí projít dvoufázovým ověřovacím procesem.
-
-#### První fáze ověření
-
-Tato fáze je zahájena ihned po spuštění procesu pro převod domény a trvá maximálně 5 dní. V průběhu první fáze jsou odesílány celkem dva požadavky na ověření.
+Pro úspěšné převedení domény k novému registrátorovi je zapotřebí projít dvoufázovým ověřovacím procesem. První fáze je zahájena ihned po spuštění procesu pro převod domény a trvá maximálně 5 dní. V průběhu první fáze jsou odesílány celkem dva požadavky na ověření.
 
 |Komu je požadavek určen?|Kam je požadavek odesílán?|
 |---|---|
-|Vlastník domény|E-mailová adresa vlastníka domény, uvedená v databázi *WHOIS*|
+|Vlastník domény|E-mailová adresa vlastníka domény, uvedená v databázi *WHOIS* (pokud je zde přístupná). V opačném případě je požadavek odeslán na e-mailovou adresu uvedenou při vytváření objednávky u společnosti OVH.|
 |Administrátor domény u OVH|E-mailová adresa administrátora, uvedená v jeho OVH účtu|
+
+Ověření výše uvedených kontaktů probíhá v rozhraní OVH. E-maily, které jsou v rámci první ověřovací fáze rozesílány, obsahují odkaz do tohoto rozhraní. 
+
+![doména](images/domaintransfer_gTLD_validation.png){.thumbnail}
 
 V závislosti na obdržených odpovědích mohou nastat následující scénáře:
 
@@ -97,16 +106,12 @@ V závislosti na obdržených odpovědích mohou nastat následující scénář
 |---|---|
 |Ověření vlastníka i administrátora|Postup k druhé části ověřovacího procesu (maximálně 24 hodin)|
 |Pouze jedno ověření (lhostejno od koho) a jedna žádost bez reakce|Postup k druhé části ověřovacího procesu (po uplynutí 5 dnů)|
-|Ani jedno ověření|Ověřovací proces je po uplynutí 5 dnů přerušen|
+|Ani jedno ověření|Postup k druhé části ověřovacího procesu (po uplynutí 5 dnů)|
 |Negativní reakce (lhostejno od koho)|Ověřovací proces je okamžitě přerušen|
-
-Ověření výše uvedených kontaktů probíhá v rozhraní OVH. E-maily, které jsou v rámci první ověřovací fáze rozesílány, obsahují odkaz do tohoto rozhraní. Rozhraní skýtá možnost ověřit – a případně i upravit – uvedené informace.
-
-![domain](images/domaintransfer_gTLD_validation.png){.thumbnail}
 
 Pokud dojde k přerušení ověřovacího procesu, ujistěte se prosím, že s tím jednotlivé strany souhlasí. Zároveň se ujistěte, že jsou jejich e-mailové adresy aktuální. Převod domény lze později obnovit prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (sekce `Domény`{.action}, záložka `Probíhající operace`{.action}).
 
-#### Druhá fáze ověření
+### Krok 4.2: druhá fáze ověření převodu domény
 
 V rámci druhé fáze ověření obdrží současný registrátor domény (stále ještě se nejedná o společnost OVH) požadavek na ověření. V závislosti na obdržených odpovědích mohou nastat následující scénáře:
 
@@ -118,11 +123,11 @@ V rámci druhé fáze ověření obdrží současný registrátor domény (stál
 
 Pokud dojde k zamítnutí ze strany současného registrátora, pokuste se ho prosím zkontaktovat a zjistit důvody, které ho k tomuto rozhodnutí dovedly. Převod domény lze později obnovit prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (sekce `Domény`{.action}, záložka `Probíhající operace`{.action}).
 
-### Fáze 5: správa domény
+### Krok 5: administrace domény u společnosti OVH
 
 Jakmile je celý proces úspěšně dokončen, můžete svou doménu začít spravovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-Upozornění: v případě každého zpoplatněného převodu generické domény navyšuje společnost OVH jako kompenzaci expirační dobu domény o jeden rok.
+
 
 ## Kam dál
 
