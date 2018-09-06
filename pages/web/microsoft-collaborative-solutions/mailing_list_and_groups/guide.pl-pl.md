@@ -1,10 +1,10 @@
 ---
-title: 'Exchange 2013/2016: korzystanie z grup (wewnętrzne grupy dyskusyjne)'
+title: 'Korzystanie z grup (mailing listy) dostępnych z kontem Exchange'
 excerpt: ''
 slug: exchange_20132016_korzystanie_z_grup_wewnetrzne_grupy_dyskusyjne
+section: 'Funkcjonalności i współdzielenie Exchange'
 legacy_guide_number: g1258
 ---
-
 
 ## Aktywacja w panelu Manager - część 1
 Najpierw należy zalogować się do [panelu klienta](https://www.ovh.com/manager/web/login.html).

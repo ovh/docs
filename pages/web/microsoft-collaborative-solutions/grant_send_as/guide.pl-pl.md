@@ -1,10 +1,10 @@
 ---
-title: 'Exchange 2013: Send As (wyślij jako)'
+title: 'Wysyłka wiadomości z konta Exchange - Send As (wyślij jako)'
 excerpt: ''
 slug: exchange_2013_send_as_wyslij_jako
+section: 'Funkcjonalności i współdzielenie Exchange'
 legacy_guide_number: g1250
 ---
-
 
 ## Konfiguracja uprawnień Send As - część 1:
 Operacje opisane w tej części należy wykonać w panelu [Manager](https://www.ovh.com/manager/web/login.html).

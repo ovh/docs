@@ -1,10 +1,10 @@
 ---
-title: 'Exchange 2016: współdzielenie kalendarza poprzez webmail OWA'
+title: 'Exchange 2016: współdzielenie kalendarza w interfejsie OWA'
 excerpt: ''
 slug: exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa
+section: 'Outlook Web Application (Aplikacja WWW)'
 legacy_guide_number: g1923
 ---
-
 
 ## Zezwolenie na współdzielenie kalendarza - etap 2
 Udostępnianie zostanie wykonane z konta ovhguide@support-exchange.eu na konto ovhguide2@support-exchange.eu.

@@ -1,10 +1,10 @@
 ---
-title: 'Exchange 2016: współdzielenie katalogu poprzez webmail OWA'
+title: 'Exchange 2016: współdzielenie katalogu w interfejsie OWA'
 excerpt: ''
 slug: exchange_2016_wspoldzielenie_katalogu_poprzez_webmail_owa
+section: 'Outlook Web Application (Aplikacja WWW)'
 legacy_guide_number: g1929
 ---
-
 
 ## Zezwolenie na współdzielenia skrzynki e-mail - część 1
 W naszym przykładzie folder będzie udostępniany przez konto ovhguide@support-exchange.eu dla konta ovhguide2@support-exchange.eu.

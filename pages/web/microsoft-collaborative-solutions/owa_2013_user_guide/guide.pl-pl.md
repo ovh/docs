@@ -1,10 +1,10 @@
 ---
-title: 'Exchange 2013: przewodnik dotyczący korzystania z Outlook Web App'
-excerpt: Przewodnik na temat korzystania z Outlook Web App
+title: 'Exchange 2013: przewodnik dotyczący korzystania z Outlook Web App (OWA)'
+excerpt: 'Przewodnik na temat korzystania z Outlook Web App'
 slug: exchange_2013_przewodnik_dotyczacy_korzystania_z_outlook_web_app
+section: 'Outlook Web Application (Aplikacja WWW)'
 legacy_guide_number: g1522
 ---
-
 
 ## Czym jest Outlook Web App (OWA)?
 OWA to webmail dla usługi Exchange 2013. Interfejs ten pozwala na sprawdzanie i używanie konta Exchange jak również na korzystanie z różnych funkcji tego konta z poziomu klasycznej strony internetowej. 

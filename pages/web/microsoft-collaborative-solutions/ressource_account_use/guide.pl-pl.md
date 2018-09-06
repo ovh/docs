@@ -1,10 +1,10 @@
 ---
-title: 'Exchange 2013/2016: Korzystanie z kont zasobów'
+title: 'Korzystanie z kont zasobów'
 excerpt: 'Przewodnik opisuje, w jaki sposób korzystać z kont zasobów.'
 slug: exchange_20132016_korzystanie_z_kont_zasobow
+section: 'Funkcjonalności i współdzielenie Exchange'
 legacy_guide_number: g1325
 ---
-
 
 ## Tworzenie zasobu - część 1
 Aby utworzyć zasób, zaloguj się do [panelu klienta](https://www.ovh.com/manager/web/login.html).

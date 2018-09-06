@@ -1,10 +1,10 @@
 ---
-title: Zarządzanie odnawianiem usługi Hosted Exchange
-excerpt: Zarządzanie odnawianiem produktów Microsoft
+title: 'Zarządzanie odnawianiem usługi Hosted Exchange'
+excerpt: 'Zarządzanie odnawianiem produktów Microsoft'
 slug: zarzadzanie_odnawianiem_uslugi_hosted_exchange
+section: Inne
 legacy_guide_number: g2013
 ---
-
 
 ## Informacje ogólne
 Produkty z oferty Microsoft (Exchange2013/2016, Office 365) są domyślnie odnawiane automatycznie. Faktury można opłacać na dwa sposoby:

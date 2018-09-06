@@ -2,9 +2,9 @@
 title: 'Exchange 2013/2016: Automatyczny podpis - Disclaimer'
 excerpt: 'Przewodnik ten opisuje, w jaki sposób dodać automatyczny podpis.'
 slug: exchange_20132016_automatyczny_podpis_-_disclaimer
+section: 'Funkcjonalności i współdzielenie Exchange'
 legacy_guide_number: g1330
 ---
-
 
 ## Aktywacja - część 1
 Zaloguj się do [panelu klienta](https://www.ovh.com/manager/web/login.html).

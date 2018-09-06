@@ -1,10 +1,10 @@
 ---
-title: 'Exchange 2013/2016: Konfiguracja w programie Thunderbird'
+title: 'Konfiguracja konta Exchange w programie Thunderbird'
 excerpt: ''
 slug: exchange_20132016_konfiguracja_w_programie_thunderbird
+section: 'Konfiguracja programu pocztowego IMAP/POP'
 legacy_guide_number: g1278
 ---
-
 
 ## Część 1: Uruchamianie
 Uruchom aplikację "Thunderbird" zainstalowaną na komputerze.
