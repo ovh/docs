@@ -1,8 +1,8 @@
 ---
-title: Zarządzanie usługą Office 365 Reseller (CSP2)
+title: 'Zarządzanie usługą Office 365 Reseller (CSP2)'
 slug: zarzadzanie-licencje-office-365-reseller-csp2
-excerpt: Zobacz, jak zarządzać usługą Office 365 Reseller (CSP2) w OVH
-section: Office 365
+excerpt: 'Zobacz, jak zarządzać usługą Office 365 Reseller (CSP2) w OVH'
+section: 'Office 365'
 ---
 
 **Ostatnia aktualizacja dnia 2018-02-07**

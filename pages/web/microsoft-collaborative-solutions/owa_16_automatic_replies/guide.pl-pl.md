@@ -1,10 +1,10 @@
 ---
-title: 'Exchange 2016: Uruchomienie autorespondera w interfejsie owa'
+title: 'Exchange 2016: Uruchomienie autorespondera w interfejsie OWA'
 excerpt: 'Exchange 2016: Uruchomienie autorespondera w interfejsie owa'
 slug: exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa
+section: 'Outlook Web Application (Aplikacja WWW)'
 legacy_guide_number: g1922
 ---
-
 
 ## Informacje ogólne
 Funkcja ta pozwala na tworzenie autoresponderów przydatnych w przypadku nieobecności lub automatycznych odpowiedzi.
