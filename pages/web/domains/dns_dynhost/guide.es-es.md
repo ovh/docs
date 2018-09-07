@@ -1,108 +1,93 @@
 ---
-title: 'Web hosting: DynHost'
-excerpt: 'Web hosting: DynHost'
+title: 'Configurar un DNS dinámico en un dominio'
 slug: web_hosting_dynhost
-legacy_guide_number: g2024
-section: DNS (servidor y zona)
+excerpt: 'Cómo configurar un registro DNS dinámico (DynHost) en un dominio de OVH'
+section: 'DNS (servidor y zona)'
+order: 6
 ---
 
+**Última actualización: 05/09/2018**
+
+## Objetivo
+
+La zona DNS (Domain Name System) de un dominio es el archivo de configuración en el que se almacena su información técnica en forma de registros. Existen diversos motivos por los que puede ser necesaria la actualización dinámica de un registro DNS para evitar la interrupción prolongada de un servicio. Esto sucede, por ejemplo, cuando el usuario aloja su propio servidor de juego sin disponer de una dirección IP fija. 
+
+**Esta guía explica cómo configurar un registro DNS dinámico (DynHost) en un dominio de OVH.**
 
 ## Requisitos
 
-- Disponer de un dominio registrado en OVH. 
-- Utilizar los servidores DNS compartidos de OVH para su dominio.
+- Tener acceso a la gestión del dominio desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Utilizar la configuración de OVH (es decir, sus servidores DNS) para el dominio en cuestión. 
+- El registro DynHost que vaya a crear no debe existir en la zona DNS de OVH del dominio como registro A.
 
+> [!warning]
+>
+> - Si el dominio no utiliza los servidores DNS de OVH, debe ponerse en contacto con el proveedor que gestione su configuración para que le informe de los pasos a seguir.
+> 
+> - Si el dominio está registrado con OVH, compruebe que utiliza nuestra configuración. Para ello, en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleccione el dominio en la columna izquierda y abra la pestaña `Servidores DNS`{.action}.
+>
 
+## Procedimiento
 
+### 1. Crear un usuario DynHost
 
-## Definiciones
+En primer lugar, debe crear un usuario DynHost. Este usuario es necesario para que posteriormente pueda actualizarse el registro DNS dinámico. Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. Abra la pestaña `DynHost`{.action}.
 
-- Dirección IP
+![DynHost](images/use-dynhost-step1.png){.thumbnail}
 
-En internet, los ordenadores se comunican entre sí gracias al protocolo TCP/IP que permite identificar a cada dispositivo de red y a cada ordenador en forma de dirección con el siguiente formato: xxx.xxx.xxx.xxx.
+Haga clic en el botón `Gestionar los accesos`{.action} y luego en el botón `Crear un usuario`{.action}. Introduzca la información solicitada:
 
+|Campo|Descripción|
+|---|---|
+|Sufijo del usuario|Establezca un sufijo para el usuario DynHost.|
+|Subdominio|Indique el subdominio para el que quiere crear el registro DNS dinámico.|
+|Contraseña|Establezca una contraseña para el usuario DynHost y confírmela.|
 
-- DNS
+Una vez que haya completado todos los campos, haga clic en `Aceptar`{.action}. El usuario aparecerá en la tabla.
+ Repita esta operación para cada usuario DynHost que quiera crear.
 
-Los usuarios se comunican mediante direcciones IP, pero para hacerlo más fácil, estas direcciones IP se definen como nombres de estación o direcciones más fáciles de recordar: son los DNS (Domain Name System).
+![DynHost](images/use-dynhost-step2.png){.thumbnail}
 
+### 2. Crear un registro DNS dinámico (DynHost)
 
-## ¿Para qué sirve la opción DynHost?
-Si dispone de conexión a internet, la IP desde la que se conecta podría cambiar cada vez que vuelva a conectarse. La opción DynHost le permite hacer que su dominio o subdominio apunte a una dirección IP de conexión y, si esta cambia, actualizarla en tiempo real con su ID de cliente y contraseña.
+En segundo lugar, debe crear el registro DNS que se actualizará automáticamente. Le recordamos que el registro DynHost no debe existir en la zona DNS de OVH del dominio como registro A. Para comprobarlo y, en su caso, eliminar dicho registro, consulte nuestra guía [Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}.
 
+Para crear el registro DynHost, vuelva a la página principal de la pestaña `DynHost`{.action} y haga clic en el botón `Añadir un DynHost`{.action}. Introduzca la información solicitada:
 
-## Conexión al área de cliente
-Conéctese al [área de cliente](https://www.ovh.com/manager/web) con su ID de cliente y contraseña. 
+|Campo|Descripción|
+|---|---|
+|Subdominio|Introduzca el subdominio al que pertenezca el registro DNS que deberá actualizarse dinámicamente. Este subdominio debe ser el mismo que haya indicado anteriormente al crear el usuario DynHost.|
+|IP de destino|Introduzca la dirección IP que utilice actualmente el registro DNS. Esta dirección se actualizará posteriormente según el principio DynHost.|
 
-Haga clic en «Login» para acceder.
+Una vez que haya completado todos los campos, haga clic en `Aceptar`{.action}. El registro aparecerá en la tabla.
+ Repita esta operación para cada registro DynHost que quiera crear.
 
-![](images/img_3443.jpg){.thumbnail}
+![DynHost](images/use-dynhost-step3.png){.thumbnail}
 
+### 3. Automatizar la actualización del DynHost
 
-## Selección del dominio
-En la columna izquierda, acceda a la sección «Dominios» y seleccione el dominio para el que quiera crear un DynHost.
+Por último, una vez que haya creado el usuario y el registro DynHost, debe automatizar la actualización de este último para que dicha actualización se realice dinámicamente. Para ello, es necesario utilizar un cliente que permita comprobar regularmente si la dirección IP de destino ha cambiado para actualizarla.
 
-![](images/img_3444.jpg){.thumbnail}
+> [!warning]
+>
+> Usted mismo deberá encargarse de instalar y configurar dicho cliente.  A continuación ofrecemos algunas indicaciones sobre cómo hacerlo. No obstante, si necesita ayuda, le recomendamos que contacte con un proveedor especializado. Nosotros no podremos asistirle. 
+>
 
+Puede instalar un cliente en el servidor o en su ordenador. También existe la posibilidad de que disponga de un cliente en la interfaz de su router, si este es compatible. Una vez que haya elegido e instalado el cliente, deberá configurarlo utilizando la información del usuario DynHost creado anteriormente.
 
-## Gestión de los accesos
-Abra la pestaña «DynHost» y haga clic en el botón «Gestionar los accesos».
+Según el cliente elegido, es posible que, además de los elementos del usuario DynHost y del subdominio correspondiente, sea necesaria una URL de actualización. En tal caso, utilice la siguiente URL sustituyendo la información genérica:
 
-![](images/img_3458.jpg){.thumbnail}
-A continuación, haga clic en «Crear un usuario».
+http://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
 
-![](images/img_3459.jpg){.thumbnail}
-Introduzca la información en los campos: 
+|Valor|Sustituir por...|
+|---|---|
+|$HOSTNAME|El subdominio afectado por la actualización.|
+|$IP|La nueva dirección IP de destino.|
 
+Puede verificar si la dirección IP de destino se ha actualizado correctamente en la pestaña `DynHost`{.action} del área de cliente. Compruebe la dirección IP que aparece en la columna `Destino`{.action}.
 
-- Sufijo del usuario
-- Subdominio
-- Contraseña
-- Repetir contraseña
+![DynHost](images/use-dynhost-step4.png){.thumbnail}
 
+## Más información
 
-A continuación, haga clic en «Aceptar».
-
-![](images/img_3461.jpg){.thumbnail}
-Una vez creado el usuario, podrá ver la cuenta que acaba de crear y el subdominio asociado. 
-
-Haga clic en la flecha situada sobre la tabla para volver.
-
-![](images/img_3463.jpg){.thumbnail}
-
-
-## Adición de un DynHost
-Haga clic en «Añadir un DynHost».
-
-![](images/img_3464.jpg){.thumbnail}
-Introduzca la siguiente información: 
-
-
-- El subdominio en el que desea crear el DynHost
-- La dirección IP de destino actual
-
-
-A continuación, haga clic en «Aceptar».
-
-![](images/img_3465.jpg){.thumbnail}
-Atención: Este registro tarda 24 horas en crearse.
-Una vez creado el registro DynHost, podrá visualizarlo con el subdominio y su dirección IP.
-
-![](images/img_3470.jpg){.thumbnail}
-Atención: La creación del registro de tipo A en la zona DNS es automática. No debe crearlo manualmente ni antes ni después de crear el DynHost.
-
-
-## Bali Dynamic DNS (freeware)
-En Bali Dynamics DNS, introduzca la información que se indica en la imagen con un recuadro de color verde y haga clic en «Update IP in database if necessary».
-
-![](images/img_3477.jpg){.thumbnail}
-Se mostrará el siguiente estado: «IP changed», indicando que la dirección IP se ha actualizado correctamente.
-
-![](images/img_3478.jpg){.thumbnail}
-
-
-## Direct Update (shareware)
-En Direct Update, introduzca la información que se indica en la imagen con un recuadro de color verde y desmarque la casilla «Disable/ignore this account».
-
-![](images/img_3480.jpg){.thumbnail}
-
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
