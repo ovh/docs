@@ -89,7 +89,7 @@ You can also add an SRV record to your domain name’s configuration, but this i
 If you do not want to add an SRV record, please skip this step and move on to step 4. Otherwise, you can add an SRV record using the interface given by the service provider managing your domain name’s DNS configuration. If your domain name’s DNS configuration is managed by OVH, please refer to our guide on [Editing an OVH DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external} using the information below:
 
 |Domain|Record type|Priority|Weight|Port|Target|
-|---|---|---|---|---|
+|---|---|---|---|---|---|
 |_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
 
 Please remember to replace the generic example (mypersonaldomain.ovh) with your own domain name.
