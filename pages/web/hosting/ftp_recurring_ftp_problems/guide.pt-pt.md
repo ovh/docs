@@ -1,20 +1,15 @@
 ---
 title: 'Partilhado: Os problemas FTP recorrentes'
+slug: partilhado_os_problemas_ftp_recorrentes
 excerpt: 'Partilhado: Os problemas FTP recorrentes'
 id: '1996'
-slug: partilhado_os_problemas_ftp_recorrentes
 legacy_guide_number: g1996
 ---
-
 
 ## Transferi os meus ficheiros com um software FTP mas nada é apresentado
 
 - É necessário verificar que os ficheiros do seu website estão presentes na pasta /www do seu alojamento.
 - Se efetuou uma modificação na sua zona DNS, é necessário aguardar entre 4-24 horas.
-- Em caso de erro 500, "Internal Server error", queira consultar o seguinte guia: []({legacy}1987)
-
-
-
 
 ## Os meus códigos FTP não funcionam
 Confirme que recopiou a password correta. O melhor é mesmo copiar/colar (Ctrl-C Ctrl-V em windows). Atenção à confusão que pode haver com o l (L) e 1 (um) bem como o O (a letra o) e 0 (zero).

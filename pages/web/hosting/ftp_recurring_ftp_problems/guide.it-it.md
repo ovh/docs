@@ -1,19 +1,15 @@
 ---
 title: 'Hosting condiviso: problemi FTP ricorrenti'
+slug: hosting_condiviso_problemi_ftp_ricorrenti
 excerpt: 'Hosting condiviso: problemi FTP ricorrenti'
 id: '1996'
-slug: hosting_condiviso_problemi_ftp_ricorrenti
 legacy_guide_number: g1996
 ---
-
 
 ## Hai trasferito i tuoi file via FTP, ma non riesci a visualizzare il tuo sito
 
 - Verifica di aver salvato i file del tuo sito nella directory /www del tuo hosting.
 - Se hai apportato modifiche alla tua zona DNS, la propagazione potrebbe richiedere da 4 a 24 ore.
-- In caso di errore 500 (Internal server error), consulta la guida []({legacy}1987).
-
-
 
 
 ## Le tue credenziali FTP non funzionano

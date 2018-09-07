@@ -1,19 +1,15 @@
 ---
 title: 'Hosting www: Częste problemy FTP'
+slug: hosting_www_czeste_problemy_ftp
 excerpt: 'Hosting www: Częste problemy FTP'
 id: '1996'
-slug: hosting_www_czeste_problemy_ftp
-section: FTP i SSH - zdalny dostęp
+section: 'FTP i SSH - zdalny dostęp'
 ---
-
 
 ## Przeniosłem pliki za pomocą programu FTP, ale strona się nie wyświetla.
 
 - W takiej sytuacji należy sprawdzić, czy pliki strony zostały umieszczone w katalogu /www na hostingu.
 - Jeśli wykonywałeś zmiany w strefie DNS, poczekaj na rozpropagowanie się zmian (od 4 do 24 godzin). 
-- W przypadku błędu 500 ("Internal server error") skorzystaj z tego przewodnika: []({legacy}1987)
-
-
 
 
 ## Dane do FTP nie działają.

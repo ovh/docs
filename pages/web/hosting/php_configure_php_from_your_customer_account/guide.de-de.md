@@ -1,10 +1,9 @@
 ---
 title: 'Webhosting: So ändern Sie die PHP-Version von Ihrem Kundencenter aus'
-excerpt: So ändern Sie die PHP-Version von Ihrem Kundencenter aus
 slug: webhosting_so_andern_sie_die_php-version_von_ihrem_kundencenter_aus
+excerpt: 'So ändern Sie die PHP-Version von Ihrem Kundencenter aus'
 legacy_guide_number: g1999
 ---
-
 
 ## Informationen zu PHP
 
@@ -98,9 +97,7 @@ Wenn Sie aufgrund von Problemen zu einer älteren PHP-Version zurückkehren müs
 - [WordPress](http://blog.wpde.org/category/release)
 - [Joomla!](https://docs.joomla.org/Portal:Upgrading_Versions/de)
 - [Drupal](http://www.drupalcenter.de/handbuch/update)
-- [url="http://doc.prestashop.com/display/PS16/Updating+PrestaShop"]Prestashop (English)[/url]
-
-...
+- [PrestaShop](http://doc.prestashop.com/display/PS16/Updating+PrestaShop) (English)
 
 2. Wenn Ihre Webseite auf einer personalisierten Lösung basiert, sollten Sie die [offiziellen Guides zur Umstellung der PHP-Version](http://php.net/manual/de/appendices.php) lesen.
 Wenn Sie nicht der Entwickler Ihrer Webseite sind, wenden Sie sich an Ihren Webmaster

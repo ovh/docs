@@ -1,9 +1,9 @@
 ---
-title: Utiliser mon offre e-mail Mutualisee et mon offre Exchange simultanement
+title: 'Utiliser mon offre e-mail Mutualisee et mon offre Exchange simultanement'
 slug: utiliser-mon-offre-e-mail-mutualisee-et-mon-offre-exchange-simultanement
 legacy_guide_number: 1221
-excerpt: Retrouvez ici la procedure pour faire cohabiter des e-mails pop/imap OVH avec une offre Exchange
-section: Configuration de l’offre Exchange
+excerpt: 'Retrouvez ici la procedure pour faire cohabiter des e-mails pop/imap OVH avec une offre Exchange'
+section: 'Configuration de l’offre Exchange'
 ---
 
 Vous souhaitez utiliser simultanément vos services  **Exchange**  et **l'offre Mutualisée OVH** .
@@ -87,15 +87,13 @@ Le SRV se compose d'un sous-domaine :  **_autodiscover._tcp.votre-domaine.com.**
 
 - Vous devrez indiquer les informations ci-dessous :
 
+|Informations|Description|
 |---|---|
 |La priorité|0|
 |Le poids|0|
 |Le port|443|
 |La cible offre Hosted|ex.mail.ovh.net ou ex2.mail.ovh.net|
 |La cible offre Private|Votre-nom-d-hôte|
-
-offre Hostedoffre Private
-
 
 
 > [!success]
@@ -106,8 +104,6 @@ offre Hostedoffre Private
 > totalité de vos comptes e-mails.
 > 
 
-
-
 > [!success]
 >
 > Pour toutes commandes réalisées depuis le 26/04/2016, le serveur MX pour la
@@ -117,11 +113,10 @@ offre Hostedoffre Private
 
 Concernant les serveurs de réception (MX), il faudra manuellement les modifier depuis la zone DNS de votre domaine :
 
+|Offres|Champs|
 |---|---|
 |Offre Hosted sans antispam (mode non autoritatif)|ex.mail.ovh.net ou ex2.mail.ovh.net|
-
-|---|---|---|---|---|
-|Offre Hosted avec antispam (mode autoritatif/non autoritatif : Exchange + mxplan)|mx0.mail.ovh.net|mx1.mail.ovh.net|mx2.mail.ovh.net|mx3.mail.ovh.net|
+|Offre Hosted avec antispam (mode autoritatif/non autoritatif : Exchange + mxplan)|mx0.mail.ovh.net, mx1.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net|
 
 Si vous avez coché la configuration automatique des MX (nécessaire pour la réception des e-mails) et que vous devez passer en mode non autoritatif (compatibilité avec un service e-mail pop/imap) : *Il faudra environ 4 à 24 heures afin que ces modifications soient appliquées.*
 
@@ -168,12 +163,11 @@ Cela se réalise soit à l'ajout du domaine sur le service Exchange dans le mana
 
 Rappel des champs MX :
 
+
+|Offres|Champs|
 |---|---|
 |Offre Hosted sans antispam (mode non autoritatif)|ex.mail.ovh.net ou ex2.mail.ovh.net|
-
-|---|---|---|---|---|
-|Offre Hosted avec antispam (mode autoritatif/non autoritatif : Exchange + mxplan)|mx0.mail.ovh.net|mx1.mail.ovh.net|mx2.mail.ovh.net|mx3.mail.ovh.net|
-
+|Offre Hosted avec antispam (mode autoritatif/non autoritatif : Exchange + mxplan)|mx0.mail.ovh.net, mx1.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net|
 
 ### Configuration du Mx relay&#58;
 Si vous désirez renseigner un serveur mail externe afin d'utiliser l'offre Exchange et votre propre serveur, il vous est possible de le faire directement dans l'espace client grâce  au  **Mx relay** .

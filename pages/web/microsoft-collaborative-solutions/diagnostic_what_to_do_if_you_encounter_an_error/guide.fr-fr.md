@@ -1,9 +1,9 @@
 ---
-title: Diagnostic Exchange &#58; Que faire en cas d’erreur ?
-legacy_guide_number: 2277
+title: 'Diagnostic Exchange &#58; Que faire en cas d’erreur ?'
 slug: diagnostic-exchange-que-faire-en-cas-derreur
-excerpt: Retrouvez ici les differentes actions possibles suite a un diagnostic Exchange.
-section: Exchange Divers
+legacy_guide_number: 2277
+excerpt: 'Retrouvez ici les differentes actions possibles suite a un diagnostic Exchange.'
+section: 'Exchange Divers'
 ---
 
 Vous avez réalisé un diagnostic de votre compte Exchange et une ou plusieurs erreurs apparaissent. Nous allons pour chaque étape décrire les actions qui peuvent la/les corriger.
@@ -73,7 +73,7 @@ Vous pouvez aussi mettre à jour le mot de passe depuis votre service Exchange, 
 
 Cette erreur indique une impossibilité de réception d'e-mail et sera aussi liée à cette erreur :  **ATTENTION : L'email de test n'a pas été reçu** .
 
-Voici les serveurs MX valident pour l'offre Exchange :
+Voici les serveurs MX valides pour l'offre Exchange :
 
 - Exchange seul : mx1.mail.ovh.net
 - Exchange + E-mail pop/imap hébergé par OVH : mx1.mail.ovh.net
@@ -86,6 +86,7 @@ Vous pouvez vérifier votre champs SRV dans la zone DNS de votre domaine.
 
 Voici le champ SRV requis pour une offre Exchange :
 
+|Informations|Description|
 |---|---|
 |La priorité|0|
 |Le poids|0|

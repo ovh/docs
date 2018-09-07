@@ -1,10 +1,9 @@
 ---
 title: 'Exchange Enterprise: Konfiguration Ihrer Dienstleistung'
-excerpt: 'Exchange Enterprise: Konfiguration Ihrer Dienstleistung'
 slug: exchange_enterprise_konfiguration_ihrer_dienstleistung
+excerpt: 'Exchange Enterprise: Konfiguration Ihrer Dienstleistung'
 legacy_guide_number: g2214
 ---
-
 
 ## Schritt 1: Zugang zur Dienstleistung
 Wenn Sie Ihr Enterprise Exchange eben erst bezahlt haben, müssen Sie zunächst die in [dieser Anleitung](https://www.ovh.de/g2074.exchange_premiers_pas_avec_un_serveur_private) beschriebenen Schritte ausführen, bevor Sie die hier erklärten Aktionen ausführen können.
@@ -22,7 +21,7 @@ Sie haben unmittelbaren Zugriff auf folgende Funktionen:
 - Allgemeine Informationen
 - Assoziierte Domains
 - E-Mail Accounts
-- Gruppen: []({legacy}1258)
+- Gruppen
 - Externe Kontakte
 - Freigegebene Postfächer
 
@@ -30,8 +29,8 @@ Sie haben unmittelbaren Zugriff auf folgende Funktionen:
 Über den Tab "Mehr+" :
 
 
-- Ressourcen: []({legacy}1325)
-- Fußzeilen: []({legacy}1330)
+- Ressourcen
+- Fußzeilen
 - Aktuelle Tasks
 - Verwaltung der Sicherheits-Policy
 
@@ -89,7 +88,8 @@ Das SRV besteht aus einer Subdomain: _autodiscover._tcp.ihre-domain.com.
 
 - Sie müssen folgende Angaben machen:
 
-
+|-|-|
+|---|---|
 |Priorität|0|
 |Gewicht|0|
 |Port|443|
@@ -98,10 +98,10 @@ Das SRV besteht aus einer Subdomain: _autodiscover._tcp.ihre-domain.com.
 
 Bei den Eingangsservern (MX) müssen Sie Ihre Domain über die DNS Zone manuell anpassen:
 
-|Angebot Enterprise ohne Antispam|nicht-autoritativer Modus + POP/IMAP-E-Mail-Service nicht von OVH gehostet| Ihr-Host-Name|
-
-
-|Angebot Enterprise mit Antispam (autoritativer/nicht-autoritativer Modus + POP/IMAP-E-Mail-Service von OVH gehostet)|mx0.mail.ovh.net.|mx1.mail.ovh.net.|mx2.mail.ovh.net.|mx3.mail.ovh.net.|
+|-|-|
+|---|---|
+|Angebot Enterprise ohne Antispam / nicht-autoritativer Modus + POP/IMAP-E-Mail-Service nicht von OVH gehostet| Ihr-Host-Name|
+|Angebot Enterprise mit Antispam (autoritativer/nicht-autoritativer Modus + POP/IMAP-E-Mail-Service von OVH gehostet)|mx0.mail.ovh.net, mx1.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net|
 
 Wenn Sie das Häkchen bei der "automatischen Konfiguration" der MX gesetzt hatten (notwendig für den E-Mail-Eingang) und in den nicht-autoritativen Modus wechseln müssen (Kompatibilität mit einem POP/IMAP-E-Mail-Service):
 
@@ -152,8 +152,6 @@ Nicht-alphabetische Zeichen (zum Beispiel: !, $, #, %)
 
 ## Abschluss der Installation
 Ihre Exchange Enterprise Dienstleistung ist nun konfiguriert!
-
-Tipp: Sie können auch über das OWA Webmail-Interface auf Ihre E-Mails zugreifen:[]({legacy}1522); []({legacy}1918)
 
 Weitere Informationen zu diesem Thema finden Sie in unseren [Hilfen zu Exchange](https://www.ovh.de/emails/hosted-exchange/anleitungen/) sowie in unseren [Online-FAQ](https://www.ovh.de/emails/hosted-exchange/faq/).
 
