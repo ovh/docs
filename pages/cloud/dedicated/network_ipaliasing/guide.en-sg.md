@@ -1,11 +1,11 @@
 ---
-title: Configuring IP aliasing
+title: 'Configuring IP aliasing'
 slug: network-ipaliasing
-excerpt: Adding failover IPs to your configuration
-section: Network Management
+excerpt: 'Adding failover IPs to your configuration'
+section: 'Network Management'
 ---
 
-**Last updated 31/01/2018**
+**Last updated 07/09/2018**
 
 ## Objective
 
@@ -78,7 +78,9 @@ auto eth0:1
 iface eth0:1 inet static
 address IP_FAILOVER2
 netmask 255.255.255.255
+```
 
+```
 # IPFO 1
 post-up /sbin/ifconfig eth0:0 IP_FAILOVER1 netmask 255.255.255.255 broadcast IP_FAILOVER1
 pre-down /sbin/ifconfig eth0:0 down

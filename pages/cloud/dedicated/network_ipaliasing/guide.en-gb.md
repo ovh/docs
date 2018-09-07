@@ -5,7 +5,7 @@ excerpt: 'This guide explains how to add failover IPs to your configuration'
 section: 'Network Management'
 ---
 
-**Last updated 17th July 2018**
+**Last updated 7th September 2018**
 
 ## Objective
 
@@ -77,7 +77,9 @@ auto eth0:1
 iface eth0:1 inet static
 address IP_FAILOVER2
 netmask 255.255.255.255
+```
 
+```
 # IPFO 1
 post-up /sbin/ifconfig eth0:0 IP_FAILOVER1 netmask 255.255.255.255 broadcast IP_FAILOVER1
 pre-down /sbin/ifconfig eth0:0 down
@@ -197,7 +199,6 @@ editor /etc/conf.d/net
 
 Therefore, you need to add the following:
 
-
 ```bash
 config_eth0=( "SERVER_IP netmask 255.255.255.0" "IP_FAILOVER netmask 255.255.255.255 brd IP_FAILOVER" )
 ```
@@ -216,7 +217,6 @@ routes_eth0=( "default gw SERVER_IP.254" )
 ```
 
 In order to ping your failover IP, simply restart the network interface.
-
 
 #### Step 3: Restart the interface
 
@@ -287,16 +287,42 @@ You now need to restart your interface:
 
 ### Ubuntu 18.04
 
-First, establish an SSH connection to your server and open the network configuration file located in `/etc/systemd/network`. For demonstration purposes, our file is called 50-default.network.
+Each failover IP address will need its own line in the configuration file. The configuration file is called 50-cloud-init.yaml and is located in /etc/netplan.
 
-Edit the file by adding an additional line for your second IP address as shown below.
+#### Step 1: Create the configuration file
+
+Connect to your server via SSH and run the following command:
 
 ```sh
-DHCP=no
-Address=Main_IP/24
-Address=Failover_IP/32
+# nano /etc/netplan/50-cloud-init.yaml
 ```
-Once you've made the changes, save and close the file, then reboot the server.
+
+Next, edit the file with the content below:
+
+```sh
+# This file is generated from information provided by
+# the datasource.  Changes to it will not persist across an instance.
+# To disable cloud-init's network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+
+network:
+    version: 2
+    ethernets:
+        your_network_interface:
+            dhcp4: true
+            match:
+                macaddress: fa:xx:xx:xx:xx:63
+            set-name: your_network_interface
+            addresses:
+            - your_failover_ip/32
+```
+
+Save and close the file. You can test the configuration with the following command:
+
+Next, run the following commands to apply the configuration:
+
+Repeat this procedure for each failover IP address.
 
 ### Windows Server
 

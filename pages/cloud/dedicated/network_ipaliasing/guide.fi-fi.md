@@ -1,11 +1,11 @@
 ---
-title: IP-osoitteen konfigurointi aliaksena 
+title: 'IP-osoitteen konfigurointi aliaksena'
 slug: network-ipaliasing
-excerpt: Fail-over IP -osoitteiden lisääminen konfiguraatioon 
-section: Verkko & IP
+excerpt: 'Fail-over IP -osoitteiden lisääminen konfiguraatioon'
+section: 'Verkko & IP'
 ---
 
-**Päivitetty 27.12.2017**
+**Päivitetty 07.09.2017**
 
 ## Tavoite
 
@@ -74,7 +74,9 @@ netmask 255.255.255.255
 auto eth0:1
 iface eth0:1 inet static
 address IP_FAILOVER2 netmask 255.255.255.255
+```
 
+```
 # IPFO 1
 post-up /sbin/ifconfig eth0:0 IP_FAILOVER1 netmask 255.255.255.255 broadcast IP_FAILOVER1 pre-down /sbin/ifconfig eth0:0 down
 

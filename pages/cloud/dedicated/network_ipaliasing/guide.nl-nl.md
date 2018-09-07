@@ -1,11 +1,11 @@
 ---
-title: Configuratie van uw IP als alias
+title: 'Configuratie van uw IP als alias'
 slug: network-ipaliasing
-excerpt: Failover IP's toevoegen aan uw configuratie-onderdeel
-section: Netwerk & IP
+excerpt: 'Failover IP''s toevoegen aan uw configuratie-onderdeel'
+section: 'Netwerk & IP'
 ---
 
-**Laatste update 18-01-2018**
+**Laatste update 07-09-2018**
 
 ## Introductie
 
@@ -63,7 +63,9 @@ auto eth0 iface eth0 inet static address SERVER\_IP netmask 255.255.255.0 broadc
 auto eth0:0 iface eth0:0 inet static address IP_FAILOVER1 netmask 255.255.255.255
 
 auto eth0:1 iface eth0:1 inet static address IP_FAILOVER2 netmask 255.255.255.255
+```
 
+```
 # IPFO 1
 post-up /sbin/ifconfig eth0:0 IP_FAILOVER1 netmask 255.255.255.255 broadcast IP_FAILOVER1 pre-down /sbin/ifconfig eth0:0 down
 

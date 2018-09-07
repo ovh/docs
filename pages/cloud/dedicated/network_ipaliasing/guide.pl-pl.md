@@ -1,11 +1,11 @@
 ---
-title: Konfiguracja adresu IP Failover jako aliasu
+title: 'Konfiguracja adresu IP Failover jako aliasu'
 slug: network-ip-alias
-excerpt: Dowiedz się, jak dodać kilka adresów IP Failover do interfejsu
-section: Sieć & IP
+excerpt: 'Dowiedz się, jak dodać kilka adresów IP Failover do interfejsu'
+section: 'Sieć & IP'
 ---
 
-**Ostatnia aktualizacja dnia 2018-01-30**
+**Ostatnia aktualizacja dnia 2018-07-09**
 
 ## Wprowadzenie
 
@@ -76,7 +76,9 @@ auto eth0:1
 iface eth0:1 inet static
 address IP_FAILOVER2
 netmask 255.255.255.255
+```
 
+```
 # IPFO 1
 post-up /sbin/ifconfig eth0:0 IP_FAILOVER1 netmask 255.255.255.255 broadcast IP_FAILOVER1
 pre-down /sbin/ifconfig eth0:0 down
