@@ -1,11 +1,11 @@
 ---
-title: Configurar una IP como alias
+title: 'Configurar una IP como alias'
 slug: network-ipaliasing
-excerpt: Cómo añadir direcciones IP Failover a la configuración de un servidor
-section: Red e IP
+excerpt: 'Cómo añadir direcciones IP Failover a la configuración de un servidor'
+section: 'Red e IP'
 ---
 
-**Última actualización: 22/02/2018**
+**Última actualización: 07/09/2018**
 
 ## Objetivo
 
@@ -78,7 +78,9 @@ auto eth0:1
 iface eth0:1 inet static
 address IP_FAILOVER2
 netmask 255.255.255.255
+```
 
+```
 # IPFO 1
 post-up /sbin/ifconfig eth0:0 IP_FAILOVER1 netmask 255.255.255.255 broadcast IP_FAILOVER1
 pre-down /sbin/ifconfig eth0:0 down
