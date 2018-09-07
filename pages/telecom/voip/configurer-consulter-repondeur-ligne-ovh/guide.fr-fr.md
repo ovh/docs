@@ -5,7 +5,7 @@ excerpt: 'Apprenez à configurer et utiliser le répondeur de votre ligne télé
 section: 'Lignes téléphoniques'
 ---
 
-**Dernière mise à jour le 05/09/2018**
+**Dernière mise à jour le 07/09/2018**
 
 ## Objectif
 
@@ -27,7 +27,7 @@ Vous avez également la possibilité de modifier l'association d'une ligne à so
 Poursuivez la lecture de cette documentation selon la manipulation que vous souhaitez réaliser avec votre répondeur.
 
 - [Consulter le répondeur](https://docs.ovh.com/fr/voip/configurer-consulter-repondeur-ligne-ovh/#consulter-son-repondeur){.external}.
-- [Personnaliser la configuration de son répondeur](https://docs.ovh.com/fr/voip/configurer-consulter-repondeur-ligne-ovh/#personnaliser-la-configuration-de-son-repondeur){.external}.
+- [Personnaliser la configuration de son répondeur](https://docs.ovh.com/fr/voip/configurer-consulter-repondeur-ligne-ovh/#personnaliser-la-configuration-de-son-repondeur_1){.external}.
 - [Associer une ligne à un répondeur](https://docs.ovh.com/fr/voip/configurer-consulter-repondeur-ligne-ovh/#associer-une-ligne-a-un-repondeur){.external}.
 
 ### Consulter son répondeur
@@ -60,7 +60,7 @@ Une fois en communication avec le serveur de messagerie, laissez-vous guider par
 
 Si vous n'avez pas défini de mot de passe d'accès à distance : connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} partie Télécom, cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous ensuite sur l'onglet `Répondeur`{.action}, cliquez sur `Mot de passe accès répondeur`{.action} et suivez les indications.
 
-#### Consulter le répondeur via votre espace client
+#### Consulter son répondeur via votre espace client
 
 Connecté à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie Télécom, cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne pour laquelle vous souhaitez consulter le répondeur. Positionnez-vous ensuite sur l'onglet `Répondeur`{.action} et cliquez sur `Écoute et gestion des messages`{.action}.
 
@@ -74,7 +74,7 @@ Sur la nouvelle page, un tableau apparaît, dans lequel les messages se trouvent
 
 Vous recevez une notification par e-mail sur les adresses renseignées dans la configuration du répondeur. Ceux-ci peuvent simplement vous notifier de la disponibilité d'un nouveau message mais peuvent aussi, selon votre choix, contenir en pièce jointe ce dernier.  
 
-Si vous souhaitez consulter ou modifier les adresses e-mail utilisées pour les notifications, reportez-vous aux instructions de la section « [Personnaliser la configuration de son répondeur](https://docs.ovh.com/fr/voip/configurer-consulter-repondeur-ligne-ovh/#etape-2-personnaliser-la-configuration-de-son-repondeur){.external} » de cette documentation.
+Si vous souhaitez consulter ou modifier les adresses e-mail utilisées pour les notifications, reportez-vous aux instructions de la section « [Personnaliser la configuration de son répondeur](https://docs.ovh.com/fr/voip/configurer-consulter-repondeur-ligne-ovh/#personnaliser-la-configuration-de-son-repondeur_1){.external} » de cette documentation.
 
 ### Personnaliser la configuration de son répondeur
 
