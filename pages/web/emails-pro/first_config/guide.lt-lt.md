@@ -1,52 +1,52 @@
 ---
-title: Configuring your Email Pro solution
+title: 'Configuring your Email Pro solution'
 slug: first-configuration-email-pro
-excerpt: Find out how to configure your Email Pro solution
+excerpt: 'Find out how to configure your Email Pro solution'
 section: General
 ---
 
-**Last updated 2nd February 2018**
+**Last updated 7th September 2018**
 
 ## Objective
 
-You have just purchased a Email Pro solution, which gives you affordable professional email addresses to support or start up your business.
+You have just purchased an Email Pro solution, which gives you affordable professional email addresses to support or start up your business.
 
 **Find out how to configure your Email Pro solution.**
 
 ## Requirements
 
-- You must have an [Email Pro](https://www.ovh.lt/El_pastas/email-pro/){.external} solution.
-- You need to have received an email confirming that your Email Pro solution has been set up.
-- You must have a domain name.
-- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- an [Email Pro](https://www.ovh.lt/El_pastas/email-pro/){.external} solution
+- an email confirming that your Email Pro solution has been set up
+- a domain name
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
-### Step 1: Log in to the interface of your service
+### Step 1: Log in to your service’s interface.
 
-Once the Email Pro service has been created and is available, you can manage it from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Once the Email Pro service has been created and is available, you can manage it from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 To do this, log in to the Control Panel, click on `Email Pro`{.action} in the services menu on the left, then select the appropriate service.
 
 > [!primary]
 >
-> The name of an Email Pro service in your OVH Control Panel begins with *emailpro-*, contains part of your NIC handle and ends with a figure (1 for the first Email Pro service installed, 2 for the second, etc.).
+> The name of an Email Pro service in the OVH Control Panel begins with *emailpro-*, contains part of your NIC handle, and ends with a figure (1 for the first Email Pro service installed, 2 for the second, etc.).
 >
 
-### Step 2: Add your domain name
+### Step 2: Add your domain name.
 
-If you have just ordered your Email Pro service, a window will automatically open prompting you to `Add a domain`{.action}. If the window does not appear, go to the `Associated domains`{.action} tab, then click on the `Add a domain`{.action} button.
+If you have just ordered your Email Pro service, a window will automatically pop up, prompting you to `Add a domain`{.action}. If the window does not pop up, go to the `Associated domains`{.action} tab, then click on the `Add a domain`{.action} button.
 
-You must choose from:
+You will need to choose from:
 
-- **Select a domain in the list**: only the domains that use the OVH configuration and are connected to your NIC handle will appear.
-- **Enter a domain name that is not managed by your OVH account**: you should be able to modify the domain name’s configuration (its DNS zone) so that the Email Pro service can function correctly.
+- **Choose a domain from the list.** Only the domains that use the OVH configuration and are connected to your NIC handle will appear.
+- **Enter a domain name which is not managed by your OVH account.** You should be able to modify the domain name’s configuration (its DNS zone) so that the Email Pro service can function correctly.
 
-Once you have made this choice, click on the `Next`{.action} button.
+Once you have selected an option, click on the `Next`{.action} button.
 
 ![emailpro](images/first_config_email_pro_add_domain.png){.thumbnail}
 
-The window will then show information on configuring a mode.
+The window will then appear, showing information on configuring a mode.
 
 - **If you have entered a non-OVH domain name**: nonauthoritative mode will be configured by default.
 - **If you have selected an OVH domain name in the list**: you must choose between two modes.
@@ -58,7 +58,7 @@ The window will then show information on configuring a mode.
 
 > [!primary]
 >
-> The mode choice is not definitive, it can be modified from the OVH Control Panel later on.
+> The mode choice is not definitive. It can be modified via the OVH Control Panel later on.
 >
 
 Click on the `Next`{.action} button to continue adding the domain.
@@ -71,20 +71,30 @@ Click on the `Next`{.action} button to continue adding the domain.
 
 ![emailpro](images/first_config_email_pro_add_domain_step3.png){.thumbnail}
 
-At the end of the configuration process, we will ask you to check the information entered, then click on the `Confirm`{.action} button to start adding the domain.
+At the end of the configuration process, we will ask you to check the information you have entered, then click on the `Confirm`{.action} button to add the domain.
 
-### Step 3: Configure your domain name
+### Step 3: Configure your domain name.
 
-Once the domain has been added as an associated domain, make sure that its configuration is correct by using the table displayed.
+Once you have added the domain name as an associated domain, check its configuration using the table that pops up.
 
-You can use the `Diagnostic`{.action} column to see if the domain name configuration is correct. A red box indicates that it must be modified.
+You can use the `Diagnosis`{.action} column to check the domain name’s MX record configuration. A red box will appear if these configurations need to be changed.
 
-- **If you chose automatic configuration when adding the domain**: it can take a few hours before it appears on the Control Panel.
-- **If you have entered a non-OVH domain name**: click on the red box to view the modifications that you must make. If you have just done this, it may take a few hours to show up on the OVH Control Panel.
+- **If you chose automatic configuration when you added the domain:** it can take a few hours before it appears on the OVH Control Panel.
+- **If you entered a non-OVH domain name:** click on the red box to view the changes you need to make. If you have just made the changes, they may take a few hours to show up on the OVH Control Panel.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
 
-### Step 4: Configure the Email Pro accounts
+You can also add an SRV record to your domain name’s configuration, but this is optional and not a requirement. You can use it to ensure that an email application or other device (e.g. a smartphone or tablet) can automatically retrieve the elements required to configure your Email Pro account (servers, ports and security protocols).
+
+If you do not want to add an SRV record, please skip this step and move on to step 4. Otherwise, you can add an SRV record using the interface given by the service provider managing your domain name’s DNS configuration. If your domain name’s DNS configuration is managed by OVH, please refer to our guide on [Editing an OVH DNS zone](https://docs.ovh.com/lt/domains/svetainiu_talpinimas_kaip_redaguoti_dns_zona/){.external} using the information below:
+
+|Domain|Record type|Priority|Weight|Port|Target|
+|---|---|---|---|---|
+|_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
+
+Please remember to replace the generic example (mypersonaldomain.ovh) with your own domain name.
+
+### Step 4: Configure the Email Pro accounts.
 
 To configure your email addresses, go to the `Email accounts`{.action} tab. The table displays the accounts that you have ordered in this format: “*@configureme.me*”.
 
@@ -92,7 +102,7 @@ To configure them, click on the pencil icon.
 
 ![emailpro](images/first_config_email_pro_configure_email_accounts.png){.thumbnail}
 
-Complete the information displayed.
+Enter the information requested.
 
 |Title|Description|
 |---|---|
@@ -106,22 +116,22 @@ Once the information is complete, click on the `Next`{.action} button, check the
 
 > [!primary]
 >
-> Repeat this step as necessary according to the number of accounts you have. You can order additional accounts using the `Add more accounts`{.action} button.
+> Repeat this step as necessary according to the number of accounts you have. You can order additional accounts using the `Order accounts`{.action} button.
 >
 
 ![emailpro](images/first_config_email_pro_configure_email_accounts_step2.png){.thumbnail}
 
-### Step 5: Use your email addresses
+### Step 5: Use your email addresses.
 
-Once you have configured your accounts, you can now start using them! To do this, OVH offers an online application (a *webapp*). You can access this application via the following address: [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external}. You will need to enter the login details of your email address.
+Once you have configured your accounts, you can start using them straight away. To do this, OVH offers an online application (a *web app*). RoundCube is available at the following address: <https://pro1.mail.ovh.net>.You will need to enter your email credentials.
 
-If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to the information below: 
+If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our documentation via this portal: <https://docs.ovh.com/lt/emails-pro/>.  If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
 
-|Server type|Server name|SSL|Port|
+|Server type|Server name|Security type|Port|
 |---|---|---|---|
-|Incoming|pro1.mail.ovh.net|Yes|993|
-|Outgoing|pro1.mail.ovh.net|Yes|587|
+|Incoming|pro1.mail.ovh.net|SSL/TLS|993|
+|Outgoing|pro1.mail.ovh.net|STARTTLS|587|
 
 ## Go further
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our community of users on <https://community.ovh.com/en/>.
