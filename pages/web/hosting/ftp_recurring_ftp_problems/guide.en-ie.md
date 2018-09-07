@@ -1,18 +1,14 @@
 ---
-title: Recurring FTP problems
-excerpt: Recurring FTP problems
+title: 'Recurring FTP problems'
 slug: recurring_ftp_problems
+excerpt: 'Recurring FTP problems'
 legacy_guide_number: g1996
 ---
-
 
 ## I have uploaded my files through FTP software, but they are not showing
 
 - Make sure you copy your files to the WWW folder on your web server or they may not be visible.
 - If you have changed your DNS zone, it can take between 4 and 24 hours for those updates to propagate throughout the Internet.
-- If you have a 500 "Internal server error", please see this guide: []({legacy}1987)
-
-
 
 
 ## My FTP codes do not work
