@@ -1,7 +1,7 @@
 ---
 title: 'Configurare un account Exchange su Android tramite l’applicazione Gmail'
-excerpt: 'Scopri come configurare un account Exchange su Android tramite l’applicazione Gmail'
 slug: exchange_configurazione_di_android
+excerpt: 'Scopri come configurare un account Exchange su Android tramite l’applicazione Gmail'
 legacy_guide_number: g1282
 section: 'Configurazione smartphone/tablet compatibile Exchange'
 ---
@@ -68,7 +68,7 @@ Invia un’email di test per verificare la corretta configurazione dell’accoun
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVH propone un’applicazione Web con [funzionalità collaborative](https://www.ovh.it/emails/){.external}, disponibile alla pagina [https://pro1.mail.ovh.net](https://www.ovh.it/mail/){.external} e accessibile con le credenziali del tuo account.
+OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovh.it/emails/){.external}. Accedi a questo link [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} utilizzando le credenziali del tuo account.
 
 ## Per saperne di più
 
