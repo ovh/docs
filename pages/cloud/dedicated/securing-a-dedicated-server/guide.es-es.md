@@ -32,9 +32,7 @@ Los servidores dedicados no incluyen de forma nativa ningún protocolo de seguri
 
 > [!primary]
 >
-> Esta guía es genérica.
- Tenga en cuenta que deberá adaptar los comandos en función de la distribución o el sistema operativo que utilice. En algunos casos le aconsejamos que utilice herramientas externas. Si necesita ayuda sobre el uso de dichas herramientas, puede consultar su documentación oficial.  
-
+> Esta guía es genérica. Tenga en cuenta que deberá adaptar los comandos en función de la distribución o el sistema operativo que utilice. En algunos casos le aconsejamos que utilice herramientas externas. Si necesita ayuda sobre el uso de dichas herramientas, puede consultar su documentación oficial.  
 >
 
 ### Actualizar el sistema

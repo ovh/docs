@@ -33,7 +33,6 @@ Kiedy zamawiasz serwer dedykowany, nie jest na nim natywnie zaimplementowany ża
 > [!primary]
 >
 > Niniejsza instrukcja ma charakter poglądowy. Być może będziesz musiał dostosować niektóre komendy do konkretnej dystrybucji i/lub systemu operacyjnego, którego używasz. W niektórych sytuacjach rekomendujemy użycie narzędzi zewnętrznych. W przypadku pytań dotyczących korzystania z tych narzędzi zapoznaj się z oficjalną dokumentacją producenta.  
-
 >
 
 ### Aktualizacja systemu

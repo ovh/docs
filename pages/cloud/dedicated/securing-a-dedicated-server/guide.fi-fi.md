@@ -33,7 +33,6 @@ Kun tilaat dedikoidun palvelimen, mitään suojausprotokollaa ei oteta natiivist
 > [!primary]
 >
 > Tämä ohje on yleiseen käyttöön. On mahdollista, että joudut mukauttamaan joitakin komentoja käyttämäsi distribuution ja/tai käyttöjärjestelmän mukaan. Tietyt neuvot voivat viitata kolmannen osapuolen työkalun käyttämiseen. Niiden käyttöön liittyvissä kysymyksissä voit tutustua kyseisen työkalun viralliseen dokumentaatioon.  
-
 >
 
 ### Järjestelmäsi päivitys

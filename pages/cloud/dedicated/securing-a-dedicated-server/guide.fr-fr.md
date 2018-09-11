@@ -33,7 +33,6 @@ Lorsque vous commandez votre serveur dédié, aucun protocole de sécurité n'es
 > [!primary]
 >
 > Ce guide est à usage général. Il est possible que vous deviez adapter quelques commandes en fonction de la distribution et/ou du système d'exploitation que vous utilisez. Certains conseils pourront vous suggérer l'utilisation d'outil tiers. En cas de question quant à leur utilisation, veuillez vous référer à leur documentation officielle.  
-
 >
 
 ### Mettre à jour votre système

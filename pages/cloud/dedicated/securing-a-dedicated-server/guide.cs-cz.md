@@ -33,7 +33,6 @@ V této příručce naleznete několik důležitých rad pro efektivní zabezpe�
 > [!primary]
 >
 > V následujícím textu Vám nabídneme několik praktických rad pro zabezpečení Vašeho serveru. Mějte však na paměti, že tato příručka o dané problematice pojednává pouze z obecného hlediska. Některé příkazy nemusejí na určitých systémových distribucích fungovat, a je proto zapotřebí je příslušně upravit.  Některé tipy zahrnují použití nástrojů třetích stran. V případě jakýchkoli potíží s těmito nástroji se prosím obraťte na oficiální dokumentaci vydavatele.  
-
 >
 
 ### Aktualizace systému
