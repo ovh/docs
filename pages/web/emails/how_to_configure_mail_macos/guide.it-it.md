@@ -1,206 +1,95 @@
 ---
-title: 'Servizio Email: guida alla configurazione su Mail di MAC - El Capitan'
-excerpt: ''
+title: 'Configurare un account email su Mail di macOS'
 slug: servizio_email_guida_alla_configurazione_su_mail_di_mac_-_el_capitan
+excerpt: 'Scopri come configurare un indirizzo email MX Plan su Mail di macOS El Capitan, Sierra e High Sierra'
 legacy_guide_number: g1965
 ---
 
+**Ultimo aggiornamento: 11/09/2018**
 
-## Il tuo account email OVH sul tuo Mac in 1 click
-Se vuoi configurare il tuo account email OVH sul tuo Mac, la configurazione automatica è la soluzione più semplice.
+## Obiettivo
 
-Dal tuo Mac, accedi alla pagina [https://ssl0.ovh.net/roundcube/auto/](https://ssl0.ovh.net/roundcube/auto/), inserisci il tuo indirizzo email OVH e clicca su "Generer", poi segui le indicazioni.
+Gli account MX Plan possono essere configurati su client di posta compatibili, per permetterti di utilizzare il tuo account email dall’applicazione che preferisci. 
 
-Il tuo profilo è aggiunto sul tuo Mac e puoi iniziare a utilizzarlo!
+**Questa guida ti mostra come configurare un account email MX Plan su Mail di macOS El Capitan, Sierra e High Sierra.**
 
+## Prerequisiti
 
-## Parte 1: avvio
-Apri il tuo programma Mail di Mac. 
+- Disporre di un account email MX Plan (compreso in una soluzione MX Plan o in piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external})
+- Aver installato l’applicazione Mail sul proprio dispositivo
+- Disporre delle credenziali associate all’account email da configurare
 
+> [!primary]
+>
+> Questa guida è valida per versioni di macOS El Capitan, Sierra, High Sierra. 
+>
 
-- 1. Se hai già configurato il tuo account (riquadro arancione dell'immagine):
+## Procedura
 
-Clicca su Account....
+La configurazione dell’account può essere effettuata in due modi diversi:
 
-- 2. Se non hai ancora configurato il tuo account (riquadro verde dell'immagine):
+- **in pochi click con il nostro tool Apple Devices**: accedi alla pagina [https://autodiscover.mail.ovh.net/AppleDevices/](https://autodiscover.mail.ovh.net/AppleDevices/){.external} e segui gli step di configurazione
 
-Seleziona Aggiungi un altro account e-mail....
+- **tramite la configurazione guidata dell’applicazione Mail** disponibile sul tuo dispositivo
 
+Questa guida descrive esclusivamente gli step di configurazione dell’applicazione Mail.
 
-![](images/img_3095.jpg){.thumbnail}
+### Step 1: aggiungi il tuo account
 
+Una volta avviata l’applicazione Mail sul tuo dispositivo, puoi aggiungere un nuovo account in due modi diversi.
 
-## Parte 2: informazioni dell'account
-Per configurare il tuo account email, inserisci queste informazioni:
+- **Al primo avvio dell’applicazione** si apre una finestra da cui è possibile scegliere l’account da utilizzare con Mail.  Seleziona `Altro account Mail...`{.action} e continua;
 
+- **Se hai già configurato un account**, clicca su `Mail`{.action} in alto nello schermo e poi su `Aggiungi account`{.action}. Seleziona Altro account Mail... e continua.
 
-- Nome completo:il nome che verrà visualizzato nei tuoi messaggi inviati.
+![mxplan](images/configuration-mail-macos-step1.png){.thumbnail}
 
-- Indirizzo e-mail:il tuo indirizzo email completo.
+Inserisci le informazioni del tuo account:
 
-- Password:la password del tuo account.
+|Informazione|Descrizione|
+|---|---|
+|Nome|Indica il nome che comparirà come mittente dei messaggi inviati da questo indirizzo|
+|Indirizzo email|Inserisci l’indirizzo email completo|
+|Password|Inserisci la password associata all’account|
 
+Dopo aver cliccato sul pulsante `Accedi`{.action}, un messaggio ti inviterà a continuare, poi a inserire ulteriori informazioni:
 
-Clicca su Crea per continuare.
+|Informazione|Descrizione|
+|---|---|
+|Tipo account|L’opzione di default è **IMAP** (di default), ma puoi selezionare l’opzione **POP** (archiviazione di email in locale sulla tua applicazione Mail) nel menu a tendina |
+|Server di posta in entrata|Inserisci il server “ssl0.ovh.net”|
+|Server di posta in uscita|Inserisci il server “ssl0.ovh.net”|
 
-![](images/img_3096.jpg){.thumbnail}
+Clicca di nuovo sul pulsante `Accedi`{.action}. Se le informazioni inserite sono corrette, l’accesso all’account andrà a buon fine.
 
+![mxplan](images/configuration-mail-macos-step1.png){.thumbnail}
 
-## Parte 3: configura il server di posta in entrata e in uscita
-Ti viene richiesto di configurare il tuo server di posta in entrata e in uscita.
+Per il corretto funzionamento del tuo account assicurati che durante la scelta delle applicazioni la voce `Mail`{.action} sia selezionata, poi clicca su `Fine`{.action}.
 
-Inserisci le informazioni richieste:
+Per verificare la corretta configurazione dell’account esegui un test di invio.
 
+Se hai necessità di inserire manualmente le preferenze per il tuo account, di seguito trovi i parametri da utilizzare con il nostro servizio MX Plan.
 
-- Indirizzo e-mail:il tuo indirizzo email completo.
+- **Per una configurazione in IMAP**
 
-- Nome utente:il tuo indirizzo email completo.
+|Tipo di server|Nome del server|SSL|Porta|
+|---|---|---|---|
+|In entrata|ssl0.ovh.net|Sì|993|
+|In uscita|ssl0.ovh.net|Sì|465| 
 
-- Password:la password del tuo account.
+- **Per una configurazione in POP**
 
-- Tipo di account:scegli la configurazione del tuo client di posta, POP o IMAP.
+|Tipo di server|Nome del server|SSL|Porta|
+|---|---|---|---|
+|In entrata|ssl0.ovh.net|Sì|995|
+|In uscita|ssl0.ovh.net|Sì|465|
 
-- Server di posta in entrata:inserisci il server SSL0.OVH.NET
+### Step 2 : utilizza il tuo account
 
-- Server di posta in uscita:inserisci il server SSL0.OVH.NET
+Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
 
+OVH propone un’applicazione Web disponibile alla pagina [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} e accessibile con le credenziali del tuo account.
 
+## Per saperne di più
 
-![](images/img_3097.jpg){.thumbnail}
-
-
-## Modifica SMTP
-Per accedere ai parametri SMTP del tuo account email, avvia Mail di Mac, clicca su Mail e poi su Preferenze...
-
-![](images/img_3098.jpg){.thumbnail}
-Seleziona l'account email per visualizzarne le informazioni.
-
-
-- Tipo account: la configurazione scelta per l'account di posta elettronica IMAP
-
-- Descrizione: il nome dell'account Mail visualizzato nel client.
-
-- Alias: il nome dell'indirizzo email visualizzato dal destinatario.
-
-- Indirizzo e-mail: il tuo indirizzo email completo.
-
-- Nome completo: il nome visualizzato per l'account Mail.
-
-- Server di posta in entrata: il server di posta in arrivo, SSL0.OVH.NET
-
-- Nome utente: il tuo indirizzo email completo.
-
-- Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/).
-
-- Server di posta in uscita (SMTP): il server di posta in uscita configurato per il tuo account.
-
-
-
-![](images/img_3099.jpg){.thumbnail}
-Per modificare la configurazione del server SMTP, clicca sulla freccia di fianco al nome del tuo server SMTP.
-
-Visualizzi la lista dei server disponibili. (solo se sono presenti altri server SMTP).
-
-
-- Clicca su Modifica elenco del server SMTP...
-
-
-
-![](images/img_3100.jpg){.thumbnail}
-
-
-## Parametri SMTP
-A questo punto, puoi modificare uno dei server SMTP che visualizzi nell'elenco.
-
-Nella sezione Informazioni account trovi queste informazioni:
-
-
-- Descrizione: il nome visualizzato per il server SMTP.
-
-- Nome server: il server di posta SSL0.OVH.NET.
-
-
-Nella sezione Avanzate trovi queste informazioni:
-
-
-- Rileva automaticamente le impostazioni dell'account: deseleziona questa opzione.
-
-- Porta: inserisci la porta 465.
-
-- Usa SSL (Secure Sockets Layer):
-
-Se hai inserito SSL0.OVH.NET, puoi selezionare o deselezionare questa opzione per attivare o disattivare il protocollo SSL.
-
-
-- Autenticazione: inserisci "Password".
-
-- Consenti autenticazione non sicura: deseleziona questa opzione.
-
-- Nome utente: il tuo indirizzo email completo.
-
-- Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/).
-
-
-
-![](images/img_3101.jpg){.thumbnail}
-
-- L'autenticazione tramite password è un parametro indispensabile per inviare email utilizzando i nostri server SMTP.
-
-- Se l'autenticazione tramite password non è attiva, un ticket incidente Open SMTP ti informa che l'autenticazione "POP before SMTP" non è supportata. Per inviare messaggi di posta, è necessario attivare l'autentificazione tramite password.
-
-
-
-
-## Configurazione POP
-Ecco le informazioni necessarie alla configurazione di un account email POP.
-
-Configurazione POP con protocollo SSL attivato o disattivato:
-
-Indirizzo email: il tuo indirizzo email completo.
-Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/).
-Nome utente: il tuo indirizzo email completo.
-Server in entrata: il server di posta in arrivo, SSL0.OVH.NET.
-Porta del server in entrata: 995 o 110
-Server in uscita: il server di posta in uscita, SSL0.OVH.NET.
-Porta del server in uscita:465 o 587.
-
-Se utilizzi le porte 110 e 587, il protocollo SSL è disattivato.
-Se utilizzi le porte 995 e 465, il protocollo SSL è attivato.
-
-
-- Ricordati che è necessario attivare [l'autenticazione](#informazioni_sulla_configurazione_del_server_smtp_parametri_smtp) del server di posta in uscita SMTP.
-
-
-|Porte|SSLattivato|SSLdisattivato|
-|In entrata|995|110|
-|In uscita|465|587|
-
-
-
-
-## Configurazione IMAP
-Ecco le informazioni necessarie alla configurazione di un account email IMAP.
-
-Configurazione IMAP con protocollo SSL attivato o disattivato:
-
-Indirizzo email: il tuo indirizzo email completo.
-Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/).
-Nome utente: il tuo indirizzo email completo.
-Server in entrata: il server di posta in arrivo, SSL0.OVH.NET.
-Porta del server in entrata:993 o 143.
-Server in uscita: il server di posta in uscita, SSL0.OVH.NET.
-Porta del server in uscita:465 o 587.
-
-Se utilizzi le porte 143 e 587, il protocollo SSL è disattivato.
-Se utilizzi le porte 993 e 465, il protocollo SSL è attivato.
-
-
-- Ricordati che è necessario attivare [l'autenticazione](#informazioni_sulla_configurazione_del_server_smtp_parametri_smtp) del server di posta in uscita SMTP.
-
-
-|Porte|SSLattivato|SSLdisattivato|
-|In entrata|993|143|
-|In uscita|465|587|
-
-
-
+Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
