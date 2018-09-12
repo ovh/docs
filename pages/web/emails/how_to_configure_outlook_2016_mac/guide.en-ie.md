@@ -44,9 +44,9 @@ Enter your email address, then click `Continue`{.action}. For the provider, clic
 |Mail address|Enter a name that will distinguish this account from any other accounts added in your Outlook app.|
 |Username|Enter your full email address.|
 |Password|Enter the password for your email address.|
-|Incoming server|Enter the server “ssl0.mail.ovh.net”. Leave the **Use SSL to connect** box ticked.|
+|Incoming server|Enter the server “ssl0.ovh.net”. Leave the **Use SSL to connect** box ticked.|
 |Incoming port|Enter port 993.|
-|Outgoing server|Enter the server “ssl0.mail.ovh.net”. Leave the **Use SSL to connect** box ticked.|
+|Outgoing server|Enter the server “ssl0.ovh.net”. Leave the **Use SSL to connect** box ticked.|
 |Outgoing port|Enter port 465.|
 
 Once you have entered this information, click `Next`{.action}. If the information is correct, Outlook will successfully connect to the account.

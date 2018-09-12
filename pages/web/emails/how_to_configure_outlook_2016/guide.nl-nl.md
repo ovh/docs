@@ -48,7 +48,7 @@ Vul vervolgens de gevraagde informatie in.
 
 |Informatie|Omschrijving|
 |---|---|
-|Server|Voer de ssl0.mail.ovh.net server in.|
+|Server|Voer de ssl0.ovh.net server in.|
 |Poort|Voer poort '993' in.|
 |Encryptiemethode|Selecteer 'SSL/TLS'.|
 |Vereis verificatie |Vink het selectievakje ‘Verifieer beveiligde wachtwoordverificatie (SPA) bij login’ niet aan.|
@@ -57,7 +57,7 @@ Vul vervolgens de gevraagde informatie in.
 
 |Informatie|Omschrijving|
 |---|---|
-|Server|Voer de ssl0.mail.ovh.net server in.|
+|Server|Voer de ssl0.ovh.net server in.|
 |Poort|Voer poort '465' in.|
 |Encryptiemethode|Selecteer 'SSL/TLS'.|
 |Vereis verificatie |Vink het selectievakje ‘Verifieer beveiligde wachtwoordverificatie (SPA) bij login’ niet aan.|

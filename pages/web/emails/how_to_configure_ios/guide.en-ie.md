@@ -58,10 +58,10 @@ Tap `Next`{.action}, and enter the information requested:
 |Information|Description| 
 |---|---| 
 |IMAP or POP|We recommend using **IMAP** (selected by default). You can also select **POP** (emails stored locally on your Mail app) in the drop-down menu.|
-|Host name (incoming)|Enter the server “ssl0.mail.ovh.net”.|
+|Host name (incoming)|Enter the server “ssl0.ovh.net”.|
 |Username (incoming)|Enter your full email address.|
 |Password (incoming)|Enter the password for your email address.|  
-|Host name (outgoing)|Enter the server “ssl0.mail.ovh.net”.|
+|Host name (outgoing)|Enter the server “ssl0.ovh.net”.|
 |Username (outgoing)|Enter your full email address.|
 |Password (outgoing)|Enter the password for your email address.| 
 

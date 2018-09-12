@@ -57,8 +57,8 @@ Klik dan op de knop `Inloggen`{.action}.  Er zal een bericht verschijnen om verd
 |Informatie|Omschrijving|
 |---|---|
 |Soort account|We raden aan **IMAP** te gebruiken (standaard geselecteerd). U kunt ook **POP** (e-mails die lokaal zijn opgeslagen in uw Mail-app) selecteren in het vervolgkeuzemenu.|
-|Inkomende server|Voer de ssl0.mail.ovh.net server in.|
-|Uitgaande server|Voer de ssl0.mail.ovh.net server in.|
+|Inkomende server|Voer de ssl0.ovh.net server in.|
+|Uitgaande server|Voer de ssl0.ovh.net server in.|
 
 Klik dan op de knop `Inloggen`{.action}.  Als de ingevoerde informatie correct is, is het aanmelden bij het account gelukt.
 

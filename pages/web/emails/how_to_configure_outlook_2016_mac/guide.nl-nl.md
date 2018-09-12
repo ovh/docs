@@ -44,9 +44,9 @@ Voer uw e-mailwachtwoord in en klik op `Volgende`{.action}. Klik voor de provide
 |Postadres|Voer de naam in waarmee u dit account kunt herkennen tussen andere die worden weergegeven in uw Outlook-app.|
 |Gebruikersnaam|Voer het volledige e-mailadres in.|
 |Het wachtwoord|Voer het wachtwoord van het e-mailadres in.|
-|Inkomende server|Voer de ssl0.mail.ovh.net server in. Laat het vak **SSL gebruiken voor login** aangevinkt.|
+|Inkomende server|Voer de ssl0.ovh.net server in. Laat het vak **SSL gebruiken voor login** aangevinkt.|
 |Inkomende poort|Voer poort 993 in.|
-|Uitgaande server|Voer de ssl0.mail.ovh.net server in. Laat het vak **SSL gebruiken voor login** aangevinkt.|
+|Uitgaande server|Voer de ssl0.ovh.net server in. Laat het vak **SSL gebruiken voor login** aangevinkt.|
 |Uitgaande poort|Voer poort 465 in.|
 
 Nadat u deze informatie hebt ingevoerd, klikt u op `Volgende`{.action}. Als de informatie correct is, maakt Outlook verbinding met het account.

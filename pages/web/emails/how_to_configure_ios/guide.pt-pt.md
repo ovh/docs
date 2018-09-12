@@ -58,10 +58,10 @@ Carregue em `Seguinte`{.action} e introduza as informações pedidas:
 |Informação|Descrição| 
 |---|---| 
 |IMAP ou POP|Aconselhamos uma utilização em **IMAP** (selecionado por defeito). No entanto, pode selecionar a opção **POP** (e-mails armazenados localmente na aplicação Mail) no menu.|
-|Host name (receção)|Introduza o servidor ssl0.mail.ovh.net.|
+|Host name (receção)|Introduza o servidor ssl0.ovh.net.|
 |Nome de utilizador (receção)|Insira o endereço de e-mail completo.|
 |Palavra-passe (receção)|Insira a palavra-passe do e-mail.|  
-|Host name (envio)|Introduza o servidor ssl0.mail.ovh.net.|
+|Host name (envio)|Introduza o servidor ssl0.ovh.net.|
 |Nome de utilizador (envio)|Insira o endereço de e-mail completo.|
 |Palavra-passe (envio)|Insira a palavra-passe do e-mail.| 
 
