@@ -5,6 +5,8 @@ excerpt: 'Daten-Backup in 5 Schritten'
 section: Tutorial
 ---
 
+**Stand: 12.09.2018**
+
 ## Einleitung
 
 Ihre elektronischen Daten sind äußerst wichtig: Verlust oder Beschädigung dieser Daten führen schnell zu echten Problemen für Ihr Business. Es besteht immer ein gewisses Risiko. Daher empfehlen wir, mindestens täglich Backups durchzuführen und diese idealerweise auf einer Storage-Lösung zu speichern, die von Ihren Produktionsinfrastrukturen getrennt ist.
