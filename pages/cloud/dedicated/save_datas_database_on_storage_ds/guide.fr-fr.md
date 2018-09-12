@@ -5,7 +5,7 @@ excerpt: 'Sécuriser ses données en 5 étapes'
 section: Tutoriel
 ---
 
-## Introduction 
+## Introduction
 
 Vos données informatiques sont sensibles : une perte ou une altération de celles-ci peut vite entraîner des situations problématiques pour votre activité. Le risque zéro n'existant pas, il est conseillé de réaliser des sauvegardes au moins quotidiennement et, de préférence, dans un serveur ou une solution de stockage différent de vos infrastructures de production.
 
