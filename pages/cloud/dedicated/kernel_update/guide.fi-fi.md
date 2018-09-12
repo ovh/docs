@@ -1,28 +1,35 @@
 ---
-title: Kernelin päivitys dedikoidulla palvelimella
-excerpt: Lue, kuinka käyttöjärjestelmän ydin eli kernel päivitetään
+title: 'Kernelin päivitys dedikoidulla palvelimella'
 slug: kernelin-paivitys-dedikoitu-palvelin
-section: Edistynyt käyttö
+excerpt: 'Katso, kuinka distribuution kernel päivitetään OVH:n ydintä käyttämällä'
+section: 'Edistynyt käyttö'
 ---
 
-**Päivitetty 22.1.2018**
+**Päivitetty 12.9.2018**
 
 ## Tavoite
 
-OVH tarjoaa mahdollisuuden pitää Linux-käyttöjärjestelmäsi kernel helposti ajan tasalla *netboot*-käynnistysjärjestelmällä. Voi kuitenkin olla hyödyllistä, että käyttöjärjestelmääsi (OS) liittyvä kernel on ajan tasalla myös levylläsi.
+OVH tarjoaa mahdollisuuden pitää Linux-käyttöjärjestelmäsi kernel helposti ajan tasalla *netboot*-käynnistysjärjestelmällä. On kuitenkin suositeltavaa päivittää se kovalevyllä, johon käyttöjärjestelmäsi (OS) on liitetty.
 
-**Tässä ohjeessa kerrotaan, kuinka kernel päivitetään.**
+**Tässä ohjeessa kerrotaan, kuinka distribuution kernel päivitetään OVH:n ydintä käyttäen.**
 
-> [!warning]
+Oletuksena kaikki OVH:n dedikoiduille palvelimille tarjotut järjestelmäimaget käyttävät optimoitua OVH:n ydintä.  Nämä imaget omilla distribuutioillaan korvanneille käyttäjille suositellaan tutustumista näiden jälkimmäisten virallisiin dokumentaatioihin.
+
+
+> 
 >
 > OVH tarjoaa käyttöösi koneita, jotka ovat sinun vastuullasi. Koska meillä ei ole minkäänlaisia käyttöoikeuksia koneisiin, emme ole niiden administraattoreja. Siksi sinun tehtävänäsi on varmistaa ohjelmistojen hallinta sekä suojaus päivittäin.
-> Tämän ohjeen tarkoituksena on auttaa sinua yleisimmissä tehtävissä. Suosittelemme kuitenkin ottamaan yhteyttä erikoistuneeseen palveluntarjoajaan, mikäli sinulla on vaikeuksia tai epäselvyyksiä palvelimen hallintaan, käyttöön tai suojaamiseen liittyen.
+> 
+> Tämän ohjeen tarkoituksena on auttaa sinua tässä päivityksessä. Suosittelemme kuitenkin ottamaan yhteyttä erikoistuneeseen palveluntarjoajaan, mikäli sinulla on vaikeuksia tai epäselvyyksiä palvelimen hallintaan, käyttöön tai suojaamiseen liittyen.
 >
+
 
 ## Edellytykset
 
-- Sinulla on pääkäyttöoikeus palvelimelle (SSH).
+- Sinulla on [dedikoitu palvelin.](https://www.ovh-hosting.fi/dedikoidut_palvelimet/){.external}
+- Sinulla on SSH-yhteys pääkäyttäjän tunnuksella \[Linux].
 - Olet tehnyt tiedoista aiemmin varmuuskopion (tutustu distribuutiosi viralliseen dokumentaatioon).
+
 
 ## Käytännössä
 
@@ -42,11 +49,39 @@ uname -r
 4.09.76-xxxx-std-ipv6-64
 ```
 
-Kernelin versio on tässä tapauksessa *4.09.76-xxxx-std-ipv6-64*\*.
+Kernelin versio on tässä tapauksessa **4.9.118-xxxx-std-ipv6-64**.
 
-### Kernelin päivitys
+### Kernelin päivitys OVH:n paketteja käyttäen
 
-#### 1. vaihe: Oikeaan hakemistoon meneminen
+Distribuutioissa, joiden perustana on Debian ja RedHat, kernel päivitetään pakettienhallintaa käyttämällä.
+
+
+#### 1.vaihe: Kernelin päivitys
+
+Debianiin perustuvissa distribuutioissa kernelin päivitys tapahtuu seuraavalla komennolla:
+
+```sh
+apt-get update && apt-get dist-upgrade
+```
+
+RedHat-järjestelmään perustuvissa distribuutioissa kernelin päivitys tapahtuu seuraavalla komennolla:
+
+```sh
+yum update
+```
+
+#### 2\. vaihe: Palvelimen uudelleenkäynnistäminen
+
+Palvelin on käynnistettävä uudelleen, jotta muokkaukset astuvat voimaan:
+
+```sh
+reboot
+```
+
+
+### Kernelin päivitys ilman OVH:n pakettien käyttämistä
+
+#### 1\. vaihe: Oikeaan hakemistoon meneminen
 
 Kernelin image on laitettava seuraavaan hakemistoon:
 
@@ -54,15 +89,15 @@ Kernelin image on laitettava seuraavaan hakemistoon:
 cd /boot
 ```
 
-#### 2. vaihe: Imagen hakeminen
+#### 2\. vaihe: Imagen hakeminen
 
-Ilman kernelin uudelleenkokoamista riittää halutun, mieluiten viimeisimmän, bzImage-version lataaminen. Löydät imaget seuraavasta osoitteesta: <https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/>. 
+Ilman kernelin uudelleenkokoamista riittää halutun bzImage-version (mieluiten viimeisimmän) lataaminen. Löydät imaget seuraavasta osoitteesta: <https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/>. 
 
-Kernelit ovat monoliittisia eli ne eivät huomio Kernel-, CEPH-, NBD- tai ZFS-moduuleja jne.
+Kernelit ovat monoliittisia eli ne eivät huomioi kernel-moduuleja: CEPH, NBD, ZFS...
 
-Palataan esimerkkitapaukseemme. Olimme kernelin versiossa: **4.9.118-xxxx-std-ipv6-64**.
+Palataan esimerkkiimme, jonka kernelin versio oli: **4.9.118-xxxx-std-ipv6-64**.
 
-On siis ladattava seuraava image alla olevalla komennolla:
+Siinä on siis ladattava seuraava image alla olevalla komennolla:
 
 ```sh
 wget https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/4.9.118/313405/bzImage/4.9.118-xxxx-std-ipv6-64/bzImage-4.9.118-xxxx-std-ipv6-64
@@ -70,7 +105,7 @@ wget https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/4.9.118/313405/b
 
 #### 3\. vaihe: Esilatausohjelman (GRUB) päivitys
 
-Päivitä lopuksi esilatausohjelma (GRUB) seuraavalla komennolla:
+Päivitä esilatausohjelma (GRUB) seuraavalla komennolla:
 
 ```sh
 update-grub
@@ -83,14 +118,14 @@ Generating grub configuration file ...
 done
 ```
 
-> [!primary]
+> 
 >
-> Tarkista, että seuraava tiedosto (tarvitaan päivitystä varten) on konfiguraatiossasi: `06_OVHkernel`. Voit tarkistaa sen olemassaolon seuraavalla komennolla:
+> Tarkista, että seuraava tiedosto (tarvitaan päivitystä varten) on konfiguraatiossasi: `06_OVHkernel`. Voit tehdä tarkistuksen seuraavalla komennolla:
 >
 > `ls /etc/grub.d/`
 >
 
-#### 4. vaihe: Palvelimen uudelleenkäynnistäminen
+#### 4\. vaihe: Palvelimen uudelleenkäynnistäminen
 
 Jotta muokkaukset rekisteröidään, on palvelin vielä käynnistettävä uudelleen:
 
@@ -106,9 +141,9 @@ Mikäli teet vahingossa jotain väärin tai tapahtuu virhe, voit aina palata taa
 mount /dev/md1 /mnt
 ```
 
-> [!primary]
+> 
 >
-> Tässä esimerkissä juuri (tai slahs `/`) on nimeltään *md1*. Nimi voi kuitenkin olla eri. Voit varmistaa juuren nimen syöttämällä seuraavan komennon:
+> Tässä esimerkissä juuri (tai slahs `/`) on nimeltään *md1*. Nimi voi kuitenkin olla eri. Voit tarkistaa juuren nimen syöttämällä seuraavan komennon:
 >
 > `fdisk` tai `lsblk`
 >
@@ -135,7 +170,7 @@ Mene seuraavaksi `/boot`-hakemistoon ja poista viimeiset asennetut tiedostot (ko
 rm bzImage-4.14.13-xxxx-std-ipv6-64
 ```
 
-Esilatausohjelma on päivitettävä uudelleen:
+Tämän jälkeen esilatausohjelma on päivitettävä uudelleen:
 
 ```sh
 update-grub
@@ -149,13 +184,13 @@ reboot
 
 ### Tarkista, että päivitystä on sovellettu oikein.
 
-Kun päivitys on suoritettu, on mahdollistaa tarkistaa juuri asennetun kernelin versio komennolla:
+Kun päivitys on suoritettu, on mahdollista tarkistaa juuri asennetun kernelin versio komennolla:
 
 ```sh
 uname –r
 ```
 
-> [!primary]
+> 
 >
 > Meltdown- ja Spectre-haavoittuvuuksiin liittyen voit tutustua distribuutiosi kehittäjän sivuihin ja tarkistaa, että kernelin uusi versio sisältää korjauspaketin näitä haavoittuvuuksia vastaan.
 >
@@ -166,10 +201,10 @@ uname –r
 
 ## Lue lisää aiheesta
 
-[Rescue-tila.](https://docs.ovh.com/fidedicated/){external}
+[Rescue-tila.](https://docs.ovh.com/fi/dedicated/ovh-rescue/){.external}
 
 [Tietoa Meltdown- ja Spectre-haavoittuvuuksista -EN-.](https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/){.external}
 
 [Käyttöjärjestelmäkohtaiset päivitykset Meltdown- ja Spectre-haavoittuvuuksien johdosta -EN-.](https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/){.external}
 
-Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://ovh-hosting.fi/community/foorumi>.
+Viesti käyttäjäyhteisömme kanssa osoitteessa: <https://community.ovh.com/en/>.
