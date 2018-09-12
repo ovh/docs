@@ -44,7 +44,7 @@ Enter the information requested:
 |Send your messages using this name|Enter the name that you wish to be displayed in the sender field when sending emails from this address.|
 |Incoming email server|Enter the server “ssl0.ovh.net:993”.|
 |Account type|We recommend using **IMAP4**. You can also select **POP** (in which emails are stored locally on your Mail app) in the drop-down menu.|
-|Outgoing email server|Enter the server “ssl0.mail.ovh.net:465”.|
+|Outgoing email server|Enter the server “ssl0.ovh.net:465”.|
 
 Make sure that the checkboxes are ticked for the following options:
 

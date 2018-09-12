@@ -51,7 +51,7 @@ Now enter the settings for the POP server (incoming server) of your OVH email ad
 |---|---| 
 |Username|Enter your **full** email address.|  
 |Password|Enter the password for your email address.|
-|POP server|Enter the server “ssl0.mail.ovh.net”.|
+|POP server|Enter the server “ssl0.ovh.net”.|
 |Port|Select port 995.|
 
 Regarding the options you can select:
@@ -78,7 +78,7 @@ Now enter the settings for the SMTP server (outgoing server) of your OVH email a
 
 |Information|Description| 
 |---|---| 
-|SMTP server|Enter the server “ssl0.mail.ovh.net”.|
+|SMTP server|Enter the server “ssl0.ovh.net”.|
 |Port|Select port 587.|
 |Username|Enter your **full** email address.|  
 |Password|Enter the password for your email address.|

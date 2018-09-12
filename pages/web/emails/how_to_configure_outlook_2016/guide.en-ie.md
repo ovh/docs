@@ -48,7 +48,7 @@ Then fill in the information requested.
 
 |Information|Description|
 |---|---|
-|Server|Enter the server “ssl0.mail.ovh.net”.|
+|Server|Enter the server “ssl0.ovh.net”.|
 |Port|Enter port “993”.|
 |Encryption method|Select “SSL/TLS”.|
 |Require authentication|Do not tick the “Require secure password authentication (SPA) on connection” box.|
@@ -57,7 +57,7 @@ Then fill in the information requested.
 
 |Information|Description|
 |---|---|
-|Server|Enter the server “ssl0.mail.ovh.net”.|
+|Server|Enter the server “ssl0.ovh.net”.|
 |Port|Enter port “465”.|
 |Encryption method|Select “SSL/TLS”.|
 |Require authentication|Do not tick the “Require secure password authentication (SPA) on connection” box.|

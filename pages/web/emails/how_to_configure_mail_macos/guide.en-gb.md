@@ -57,8 +57,8 @@ Click on the `Log in`{.action} button. A message will appear, prompting you to c
 |Information|Description|
 |---|---|
 |Account type|We recommend using **IMAP** (selected by default). You can also select **POP** (in which your emails will be stored locally, on your Mail app) in the drop-down menu.|
-|Incoming server|Enter the following server: ssl0.mail.ovh.net.|
-|Outgoing server|Enter the following server: ssl0.mail.ovh.net.|
+|Incoming server|Enter the following server: ssl0.ovh.net.|
+|Outgoing server|Enter the following server: ssl0.ovh.net.|
 
 Click again on the `Log in`{.action} button. If all the information you have entered is correct, you will be able to log in to your account straight away.
 
