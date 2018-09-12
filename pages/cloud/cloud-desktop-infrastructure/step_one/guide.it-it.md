@@ -6,7 +6,7 @@ section: Procedura
 order: 1
 ---
 
-**Ultimo aggiornamento: 10/09/2018**
+**Ultimo aggiornamento: 12/09/2018**
 
 ## Obiettivo
 
