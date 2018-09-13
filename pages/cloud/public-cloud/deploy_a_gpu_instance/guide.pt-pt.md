@@ -5,7 +5,7 @@ excerpt: 'Saiba como criar uma instância GPU em Linux ou Windows'
 section: 'A partir da Área de Cliente OVH'
 ---
 
-**Última atualização: 12/09/2018**
+**Última atualização: 13/09/2018**
 
 ## Sumário
 
@@ -114,7 +114,7 @@ A OVH disponibiliza imagens especiais que assentam num BIOS virtual UEFI e que p
 
 Uma vez a instância GPU iniciada, é preciso instalar o driver NVIDIA a partir do [site oficial](http://www.nvidia.fr/Download/index.aspx){.external}.
 
-Inicie uma instância utilizando um dos flavors GPU (win-g1-15, win-g1-30, etc.).
+Inicie uma instância utilizando uma das características da GPU (win-g1-15, win-g1-30, etc.).
 
 Alguns minutos mais tarde, a instância é iniciada. Depois, só falta instalar o piloto necessário, que de seguida aparecerá aqui:
 
