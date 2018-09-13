@@ -5,7 +5,7 @@ excerpt: 'Leer hoe u uw Network Firewall kunt instellen'
 section: 'Netwerk & IP'
 ---
 
-**Laatste update 12-09-2018**
+**Laatste update 13-09-2018**
 
 ## Introductie
 
@@ -100,7 +100,7 @@ De regels worden chronologisch gerangschikt van 0 (eerste toegepaste regel) tot 
 
 Een pakket voor poort 80/TCP wordt bijvoorbeeld opgevangen door regel nummer 2, dus de volgende regels worden niet getest. Een pakket bestemd voor poort 25/TCP wordt alleen onderschept door de laatste regel (nummer 19). Regel 19 blokkeert dan het pakket, omdat OVH geen communicatie toestaat op poort 25 in de vorige regels.
 
-> \[!warning]
+> [!warning]
 >
 > Als u anti-DDOS inschakelt, worden de regels van uw Network Firewall automatisch geactiveerd, zelfs als u deze regels elders hebt uitgeschakeld. Als u het wilt uitschakelen, vergeet dan niet om uw regels te verwijderen.
 > 
