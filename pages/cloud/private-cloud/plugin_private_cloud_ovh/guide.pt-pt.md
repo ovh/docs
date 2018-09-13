@@ -5,7 +5,7 @@ excerpt: 'Saiba como utilizar o plugin Private Cloud da OVH'
 section: 'Funcionalidades da OVH'
 ---
 
-**Última atualização: 12/09/2018**
+**Última atualização: 13/09/2018**
 
 ## Sumário
 
@@ -26,11 +26,11 @@ Existem dois recursos dedicados com faturação à hora:
 os servidores host
 e os datastores.
 
-A partir do cliente web vSphere, só precisa de aceder à parte “Host and Cluster” e criar uma arborescência à esquerda. Desta forma, irá aceder aos menus do plugin através da janela  `Configure`{.action} do datacenter ou do cluster.
+A partir do cliente web vSphere, só precisa de aceder à parte “Host and Cluster” e abrir a arborescência à esquerda. Desta forma, irá aceder aos menus do plugin através da janela  `Configure`{.action} do datacenter ou do cluster.
 
 ![](images/addhost_01.png){.thumbnail}
 
-O menu `Add OVH Host`{.action} é dedicado aos servidores host. Apresenta os detalhes técnicos e permite encomendá-los.
+O menu `Add OVH Host`{.action} é dedicado aos servidores host: apresenta os detalhes técnicos e permite encomendá-los.
 
 ![](images/addhost_02.png){.thumbnail}
 
