@@ -61,7 +61,7 @@ Remplissez ensuite les informations demandées. Les numéros doivent être rense
 Pour importer des contacts dans le carnet de contacts, cliquez sur le bouton `Actions`{.action}, puis sur `Importer`{.action}. Dans la fenêtre qui s'affiche, cliquez sur le bouton `Fichier de contact`{.action}. Pour être accepté par l'outil d'import, le fichier doit être au format .csv et respecter une forme précise dans son contenu. Vous trouverez un exemple ci-dessous :
 
 |group|surname|name|workPhone|workMobile|homePhone|homeMobile|countryCode|
-|---|---|---|---||---|---|---|---|
+|---|---|---|---|---|---|---|---|
 |Aucune|OVH|Support|100000000| | |6000000000|33|
 
 Vous pouvez également utiliser une version texte en séparant chaque celulle du tableau par un point-virgule (donnant par exemple : « Aucune;OVH;Support;100000000;;;6000000000;33 »). Une fois le fichier sélectionné dans la fenêtre d'import, cliquez sur le bouton `Valider`{.action}.
