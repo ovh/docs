@@ -5,7 +5,7 @@ excerpt: 'Ontdek hoe u hardwarestoringen op uw server kunt diagnosticeren'
 section: Veiligheid
 ---
 
-**Laatste update 08-06-2018**
+**Laatste update 09-13-2018**
 
 ## Introductie
 
@@ -77,7 +77,7 @@ Klik op de knop om de test te starten, zoals weergegeven in de afbeelding hieron
 
 De schijfpartitietest bevat een inlogtest voor een schijf en een bestandssysteemscan. De schijftoegangstest controleert of het systeem kan communiceren met de harde schijven van uw server. De controle van het bestandssysteem maakt gebruik van het `fsck -fy` commando.
 
-> \[!warning]
+> [!warning]
 >
 > Het uitvoeren van een bestandssysteemcontrole op een beschadigde harde schijf kan leiden tot gegevensverlies.
 >
