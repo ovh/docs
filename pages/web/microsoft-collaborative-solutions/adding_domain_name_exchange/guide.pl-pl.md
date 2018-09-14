@@ -1,8 +1,8 @@
 ---
-title: Dodanie domeny do usługi Exchange
+title: 'Dodanie domeny do usługi Exchange'
 slug: dodanie-domeny-exchange
-excerpt: Dowiedz się, jak dodać domenę do Twojej usługi Exchange
-section: Konfiguracja usługi Exchange
+excerpt: 'Dowiedz się, jak dodać domenę do Twojej usługi Exchange'
+section: 'Konfiguracja usługi Exchange'
 ---
 
 **Ostatnia aktualizacja dnia 2018-01-31**

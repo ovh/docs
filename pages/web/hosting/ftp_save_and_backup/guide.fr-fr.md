@@ -5,7 +5,7 @@ excerpt: 'Apprenez à restaurer un fichier ou l''intégralité de l''espace de s
 section: 'FTP et SSH'
 ---
 
-**Dernière mise à jour le 10/08/2018**
+**Dernière mise à jour le 07/09/2018**
 
 ## Objectif
 
@@ -56,8 +56,8 @@ Dans la fenêtre qui s'affiche, sélectionnez la date de restauration souhaitée
 |J-1|Le jour même, à 00 h 01 du matin.|
 |J-2|La veille, à 00 h 01 du matin.|
 |J-3|L’avant-veille, à 00 h 01 du matin.|
-|1 semaine|Le dimanche précédent, à 00 h 01 du matin.|
-|2 semaines|Le dimanche, deux semaines avant, à 00 h 01 du matin.|
+|1 semaine|Le dimanche précédent, à 01 h 00 du matin.|
+|2 semaines|Le dimanche, deux semaines avant, à 01 h 00 du matin.|
 
 Une fois la date sélectionnée, cliquez sur le bouton `Suivant`{.action}. 
 
@@ -105,8 +105,8 @@ Vous devrez compléter votre nom d'utilisateur (ou « login ») FTP principal d'
 |Le jour même, à 00 h 01 du matin.|-snap0|utilisateurftp**-snap0**|
 |La veille, à 00 h 01 du matin.|-snap1|utilisateurftp**-snap1**|
 |L’avant-veille, à 00 h 01 du matin.|-snap2|utilisateurftp**-snap2**|
-|Le dimanche précédent, à 00 h 01 du matin.|-snap3|utilisateurftp**-snap3**|
-|Le dimanche deux semaines avant, à 00 h 01 du matin.|-snap4|utilisateurftp**-snap4**|
+|Le dimanche précédent, à 01 h 00 du matin.|-snap3|utilisateurftp**-snap3**|
+|Le dimanche deux semaines avant, à 01 h 00 du matin.|-snap4|utilisateurftp**-snap4**|
 
 Prenez soin de remplacer l’information générique « utilisateurftp » par votre propre nom d'utilisateur FTP principal. Conservez cependant le suffixe définissant la date de sauvegarde à laquelle vous souhaitez accéder.
 

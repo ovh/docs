@@ -1,10 +1,10 @@
 ---
-title: Aktywacja usługi Sharepoint OVH i zarządzanie nią
-excerpt: Aktywacja usługi Sharepoint OVH i zarządzanie nią
+title: 'Aktywacja i zarządzanie usługą Sharepoint'
+excerpt: 'Aktywacja usługi Sharepoint OVH i zarządzanie nią'
 slug: aktywacja_uslugi_sharepoint_ovh_i_zarzadzanie_nia
+section: Sharepoint
 legacy_guide_number: g2249
 ---
-
 
 ## 
 Wymagania: Należy posiadać usługę Exchange Hosted 2013 lub 2016.

@@ -2,9 +2,9 @@
 title: 'Diagnostyka Exchange: Co zrobić w przypadku błędu?'
 excerpt: 'Diagnostyka Exchange: Co zrobić w przypadku błędu?'
 slug: diagnostyka_exchange_co_zrobic_w_przypadku_bledu
+section: Inne
 legacy_guide_number: g2277
 ---
-
 
 ## Wykonanie diagnostyki
 Zaloguj się do [panelu klienta OVH](https://www.ovh.com/manager/web/login/).

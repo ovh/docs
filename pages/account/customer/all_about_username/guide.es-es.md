@@ -1,13 +1,12 @@
 ---
-title: Todo sobre el ID de cliente de OVH
+title: 'Todo sobre el ID de cliente de OVH'
 slug: todo-sobre-el-id-de-cliente
 legacy_guide_number: 2123
-excerpt: Esta guia explica para que sirve el ID de cliente y como podemos obtenerlo.
-section: Primeros pasos
+excerpt: 'Esta guía explica para qué sirve el ID de cliente y cómo podemos obtenerlo'
+section: 'Primeros pasos'
 ---
 
-
-## Para que sirve?
+## ¿Para qué sirve?
 El ID de cliente (también llamado NIC Handle) permite:
 
 - realizar pedidos online;
@@ -17,7 +16,7 @@ El ID de cliente (también llamado NIC Handle) permite:
 Tiene el siguiente formato: **dm429850-OVH**
 
 
-## Como crear un ID de cliente?
+## ¿Cómo crear un ID de cliente?
 Si aún no tiene un ID de cliente, acceda a la siguiente [página](https://www.ovh.es/soporte/new_nic.xml){.external}.
 
 Complete el formulario para crear su cuenta introduciendo una dirección de correo electrónico válida.
@@ -32,27 +31,20 @@ Complete el formulario para crear su cuenta introduciendo una dirección de corr
 Una vez enviado el formulario, recibirá un mensaje de correo electrónico confirmando la creación de su cuenta. Conserve su ID de cliente y, sobre todo, la contraseña asociada en un lugar seguro.
 
 
-## Donde puedo encontrar mi ID de cliente?
+## ¿Dónde puedo encontrar mi ID de cliente?
 
-### En el email de confirmacion
+### En el email de confirmación
 Su ID de cliente se incluye en el mensaje de correo electrónico de confirmación que recibirá al crear su cuenta, en los mensajes de confirmación que recibirá al realizar un pedido o una renovación, así como en las notificaciones de conexión a su cuenta.
 
 
-### En sus facturas
-Su ID de cliente aparece en todas sus facturas, en la esquina superior derecha junto con el resto de información de utilidad.
-
-
-![manager](images/3948.png){.thumbnail}
-
-
-### En su area de cliente
+### En su área de cliente
 Al conectarse a su área de cliente, su ID de cliente aparece en la esquina superior derecha, junto a su nombre de usuario.
 
 
 ![manager](images/3949.png){.thumbnail}
 
 
-## Como recuperar mi contrasena?
+## ¿Cómo recuperar mi contraseña?
 Puede recuperar su contraseña desde la página de conexión. Para ello, haga clic en el enlace «¿No recuerda su ID de cliente o contraseña?» que aparece en la página de conexión de su [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 Recibirá un mensaje de correo electrónico en la dirección de contacto con el que podrá modificar su contraseña.
@@ -63,7 +55,7 @@ Si no puede acceder a esta dirección, utilice el siguiente  [procedimiento](htt
 ![manager](images/3936.png){.thumbnail}
 
 
-## Informacion personal
+## Información personal
 
 ### Cambiar los datos
 Puede cambiar los datos de su cuenta desde el área de cliente.
@@ -86,7 +78,7 @@ Modifique sus datos haga clic en «Aceptar».
 ![manager](images/3955.png){.thumbnail}
 
 
-### Informacion util
+### Información útil
 Si desea modificar la dirección de correo electrónico del contacto principal, deberá validar esta modificación mediante un código que recibirá en la dirección de correo del contacto principal actual.
 
 Una vez que haya recibido este código, haga clic en el botón «He recibido el código de verificación».
@@ -107,5 +99,5 @@ Introduzca el código en el campo «Código de verificación» y acepte la opera
 > 
 
 
-## Gestion de contactos
+## Gestión de contactos
 Si desea más información sobre cómo gestionar sus contactos, consulte esta [guía]({legacy}1858){.ref}.

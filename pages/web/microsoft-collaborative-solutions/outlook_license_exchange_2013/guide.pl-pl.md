@@ -1,10 +1,10 @@
 ---
-title: 'Exchange 2013: Przewodnik dotyczący licencji Outlook Exchange 2013'
-excerpt: Przewodnik na temat licencji Outlook Exchange 2013
+title: 'Zamawianie licencji MS Outlook'
+excerpt: 'Przewodnik na temat licencji Outlook Exchange 2013'
 slug: exchange_2013_przewodnik_dotyczacy_licencji_outlook_exchange_2013
+section: 'Konfiguracja programu pocztowego Exchange'
 legacy_guide_number: g1718
 ---
-
 
 ## Licencja Outlook Exchange 2013
 OVH proponuje oficjalny program poczty elektronicznej Outlook w cenie 8 PLN netto/miesiąc. Będzie on przypisany do konta Exchange 2013 OVH, które posiadasz.

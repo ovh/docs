@@ -1,10 +1,10 @@
 ---
-title: 'Exchange 2016: Utworzenie przekierowania e-mail w panelu OWA'
+title: 'Exchange 2016: Utworzenie przekierowania e-mail w interfejsie OWA'
 excerpt: 'Exchange 2016: Utworzenie przekierowania e-mail w panelu OWA'
 slug: exchange_2016_utworzenie_przekierowania_e-mail_w_panelu_owa
+section: 'Outlook Web Application (Aplikacja WWW)'
 legacy_guide_number: g1920
 ---
-
 
 ## Aktywacja - Etap 1
 Opisujemy, jak dodać przekierowanie e-mail w interfejsie [Webmail Exchange](https://ex.mail.ovh.net/owa/).

@@ -5,7 +5,7 @@ excerpt: 'How to activate and use rescue mode on a Dedicated Server'
 section: 'Diagnostic and rescue mode'
 ---
 
-**Last updated 16th August 2018**
+**Last updated 12th September 2018**
 
 ## Objective
 

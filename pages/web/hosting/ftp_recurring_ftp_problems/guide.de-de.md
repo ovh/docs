@@ -1,18 +1,14 @@
 ---
 title: 'Webhosting: Häufige FTP-Probleme'
-excerpt: 'Webhosting: Häufige FTP-Probleme'
 slug: webhosting_haufige_ftp-probleme
+excerpt: 'Webhosting: Häufige FTP-Probleme'
 legacy_guide_number: g1996
 ---
-
 
 ## Ich habe meine Dateien mit einer FTP-Programm übertragen, aber es wird nichts angezeigt.
 
 - Überprüfen Sie, ob die Dateien Ihrer Seite im /www Verzeichnis Ihres Hostings abgelegt sind.
 - Wenn Sie eine Änderung an Ihrer DNS Zone vorgenommen haben, kann es zu einer Verzögerung von 4 bis 24 Stunden kommen.
-- Bei einem Fehler 500 "Internal Server Error" lesen Sie folgende Hilfe: []({legacy}1987)
-
-
 
 
 ## Meine FTP-Codes funktionieren nicht

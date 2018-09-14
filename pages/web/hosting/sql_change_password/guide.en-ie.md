@@ -43,7 +43,7 @@ Today, virtually all CMSs (WordPress, Joomla!, etc.) use a database for storing 
 
 First of all, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, go to the `Databases`{.action} tab.
 
-The table shown contains all the email addresses created as part of your Web Hosting plan.
+The table shown contains all the databases created as part of your Web Hosting plan.
 
 ![databasepassword](images/database-password-step1.png){.thumbnail}
 

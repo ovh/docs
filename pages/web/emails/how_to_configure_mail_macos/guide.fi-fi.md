@@ -57,8 +57,8 @@ Klikkaa nyt painiketta `Kirjaudu sisään`{.action}. Viesti kehottaa jatkamaan j
 |Tieto|Kuvaus|
 |---|---|
 |Tilin tyyppi|Suosittelemme **IMAP-protokollan** käyttöä (oletusvalinta). Voit kuitenkin valita **POP-protokollan** (sähköpostien säilytys paikallisesti Mail-sovelluksessa) alasvetovalikosta.|
-|Saapuva sähköpostipalvelin|Syötä palvelin “ssl0.mail.ovh.net”.|
-|Lähtevä sähköpostipalvelin|Syötä palvelin “ssl0.mail.ovh.net”.|
+|Saapuva sähköpostipalvelin|Syötä palvelin “ssl0.ovh.net”.|
+|Lähtevä sähköpostipalvelin|Syötä palvelin “ssl0.ovh.net”.|
 
 Klikkaa nyt uudestaan painiketta `Kirjaudu sisään`{.action}. Jos syötetyt tiedot ovat oikein, kirjautuminen tilille onnistuu.
 

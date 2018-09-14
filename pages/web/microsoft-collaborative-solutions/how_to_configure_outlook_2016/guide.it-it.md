@@ -58,7 +58,7 @@ Dopo aver configurato correttamente il tuo account e averlo reso accessibile da 
 
 Una volta configurato l'indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovh.it/emails/){.external}, disponibile all'indirizzo [https://www.ovh.it](https://www.ovh.it){.external}. Puoi collegarti utilizzando le credenziali del tuo account.
+OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovh.it/emails/){.external}. Accedi a questo link [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} utilizzando le credenziali del tuo account.
 
 ## Per saperne di più
 

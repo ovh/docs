@@ -50,7 +50,7 @@ Enter the incoming server settings:
 |---|---| 
 |Username|Enter your full email address.|  
 |Password|Enter the password for your email address.|
-|Server|Enter the server “ssl0.mail.ovh.net”.|
+|Server|Enter the server “ssl0.ovh.net”.|
 
 Tap `Next`{.action}, then enter the outgoing server settings:
 
@@ -59,7 +59,7 @@ Tap `Next`{.action}, then enter the outgoing server settings:
 |Request a connection|Ensure that this button is enabled.|
 |Username|Enter your full email address.|  
 |Password|Enter the password for your email address.|
-|SMTP server|Enter the server “ssl0.mail.ovh.net”.|
+|SMTP server|Enter the server “ssl0.ovh.net”.|
 
 Then tap `Next`{.action}. If all the information you have entered is correct, you will be able to log in to your account straight away.
 

@@ -47,9 +47,9 @@ Voer uw accountgegevens in:
 |Het wachtwoord|Voer het wachtwoord van het e-mailadres in.|
 |Accountnaam|Voer de naam in waarmee u dit account kunt herkennen tussen andere die worden weergegeven in uw Courrier-app.|
 |Verzendt uw berichten met deze naam|Voer de afzendernaam in die u wilt laten weergeven wanneer u e-mails vanaf dit adres verzendt.|
-|Inkomende e-mailserver |Voer de ‘ssl0.mail.ovh.net:993’ server in.|
+|Inkomende e-mailserver |Voer de ‘ssl0.ovh.net:993’ server in.|
 |Soort account|We raden aan **IMAP4** te gebruiken. U kunt ook **POP** (e-mails die lokaal zijn opgeslagen in uw Mail-app) selecteren in het vervolgkeuzemenu.|
-|Uitgaande e-mailserver|Voer de ‘ssl0.mail.ovh.net:465’ server in.|
+|Uitgaande e-mailserver|Voer de ‘ssl0.ovh.net:465’ server in.|
 
 Zorg ervoor dat de vakjes zijn aangevinkt bij: 
 

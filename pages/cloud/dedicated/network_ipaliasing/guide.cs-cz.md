@@ -1,11 +1,11 @@
 ---
-title: Jak nakonfigurovat IP jako alias
+title: 'Jak nakonfigurovat IP jako alias'
 slug: network-ipaliasing
-excerpt: Přidání IP fail-over adres k Vaší konfiguraci
-section: Síť a IP adresy
+excerpt: 'Přidání IP fail-over adres k Vaší konfiguraci'
+section: 'Síť a IP adresy'
 ---
 
-**Poslední aktualizace 18/01/2018**
+**Poslední aktualizace 07/09/2018**
 
 ## Cíl
 
@@ -78,7 +78,9 @@ auto eth0:1
 iface eth0:1 inet static 
 address IP_FAILOVER2 
 netmask 255.255.255.255
+```
 
+```
 # IPFO 1
 post-up /sbin/ifconfig eth0:0 IP_FAILOVER1 netmask 255.255.255.255 broadcast IP_FAILOVER1 
 pre-down /sbin/ifconfig eth0:0 down

@@ -33,7 +33,6 @@ Wenn Sie einen dedizierten Server bestellen, ist auf diesem noch kein Sicherheit
 > [!primary]
 >
 > Dies ist eine allgemeine Anleitung. Es kann sein, dass aufgrund der Distribution und/oder des Betriebssystems, das Sie verwenden, einige Befehle entsprechend angepasst werden müssen. In manchen Tipps wird Ihnen geraten, ein Tool eines Dritten zu verwenden. Bei Fragen zur Nutzung eines solchen Tools lesen Sie bitte die offizielle Dokumentation des jeweiligen Herausgebers.  
-
 >
 
 ### Ihr System aktualisieren

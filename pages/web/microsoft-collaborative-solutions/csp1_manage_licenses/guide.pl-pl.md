@@ -1,10 +1,10 @@
 ---
-title: Zamówienie grupy licencji Office 365 OVH
-excerpt: Zamówienie licencji Office 365 OVH
+title: 'Zamówienie grupy licencji Office 365 OVH'
+excerpt: 'Zamówienie licencji Office 365 OVH'
 slug: zamowienie_grupy_licencji_office_365_ovh
+section: 'Office 365'
 legacy_guide_number: g1960
 ---
-
 
 ## Na stronie OVH.pl
 Licencje Office 365 można zamówić w panelu klienta lub na stronie [OVH.pl](https://www.ovh.pl/office-365-business).

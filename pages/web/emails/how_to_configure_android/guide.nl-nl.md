@@ -50,7 +50,7 @@ Vul de gegevens van de inkomende server in:
 |---|---| 
 |Gebruikersnaam|Voer het volledige e-mailadres in.|  
 |Het wachtwoord|Voer het wachtwoord van het e-mailadres in.|
-|Server|Voer de ssl0.mail.ovh.net server in.|
+|Server|Voer de ssl0.ovh.net server in.|
 
 Druk op `Volgende`{.action} en vul de gegevens van de uitgaande server in:
 
@@ -59,7 +59,7 @@ Druk op `Volgende`{.action} en vul de gegevens van de uitgaande server in:
 |Vereist inloggen|Zorg ervoor dat deze knop is ingeschakeld.|
 |Gebruikersnaam|Voer het volledige e-mailadres in.|  
 |Het wachtwoord|Voer het wachtwoord van het e-mailadres in.|
-|SMTP-server|Voer de ssl0.mail.ovh.net server in.|
+|SMTP-server|Voer de ssl0.ovh.net server in.|
 
 Tik nu op `Volgende`{.action}. Als de ingevoerde informatie correct is, is het aanmelden bij het account gelukt.
 

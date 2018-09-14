@@ -1,10 +1,10 @@
 ---
-title: 'Exchange 2013/2016: Konfiguracja w systemie Windows 8'
+title: 'Konfiguracja konta Exchange w systemie Windows 8'
 excerpt: ''
 slug: exchange_20132016_konfiguracja_w_systemie_windows_8
+section: 'Konfiguracja programu pocztowego IMAP/POP'
 legacy_guide_number: g1273
 ---
-
 
 ## Część 1: Uruchamianie
 W pierwszej kolejności otwórz aplikację "Poczta elektroniczna" w systemie Windows 8 na ekranie komputera.

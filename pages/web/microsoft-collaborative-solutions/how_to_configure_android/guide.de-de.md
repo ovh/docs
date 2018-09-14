@@ -1,102 +1,77 @@
 ---
-title: 'Exchange 2013/2016: Konfiguration in Android'
-excerpt: ''
+title: 'Konfiguration Ihres Exchange Accounts in Android über die Gmail-App'
+excerpt: 'In dieser Anleitung erfahren Sie, wie Sie Ihren Exchange Account in Android über die Gmail-App einrichten.'
 slug: exchange_20132016_konfiguration_in_android
 legacy_guide_number: g1282
+section: 'Konfiguration von Exchange auf kompatiblen Smartphones/Tablets'
 ---
 
+**Stand 14.09.2018**
 
-## Teil 1: E-Mail
-Klicken Sie auf das Icon "E-Mail".
+## Einleitung
 
-In unserem Beispiel wird ein Hosted Exchange Account verwendet, der auf einem Samsung Tablet mit Android 4.1.2 konfiguriert wird.
+Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden.
 
-Stellen Sie vor dem Hinzufügen des Accounts sicher, dass Ihre 3G- oder WLAN-Verbindung aktiv ist.
+**Hier erfahren Sie, wie Sie Ihren Exchange Account in Android über die Gmail-App einrichten.**
 
-![](images/img_1149.jpg){.thumbnail}
+## Voraussetzungen
 
+- Sie besitzen ein [Exchange](https://www.ovh.de/emails/){.external} Angebot.
+- Die Gmail-App ist auf Ihrem Gerät installiert. Sie können diese über den Google Play Store installieren.
+- Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
-## Teil 2: Konfiguration des E-Mail-Accounts
-Geben Sie Ihre vollständige Exchange E-Mail-Adresse und das in Ihrem [OVH Kundencenter](https://www.ovh.com/manager/web/login.html) für den Exchange Account angegebene Passwort ein.
+> [!primary]
+>
+> Diese Anleitung wurde über ein Nexus-6-Gerät mit Android Version 7.1.1 erstellt. Aus Konsistenzgründen verwenden wir die Gmail-App, die über den Google Play Store heruntergeladen werden kann. Wenn Sie eine andere App verwenden möchten, wird sich die Vorgehensweise dementsprechend unterscheiden.
+>
 
-Klicken Sie anschließend auf "Manuelles Einrichten", um fortzufahren.
+## Beschreibung
 
-![](images/img_1150.jpg){.thumbnail}
+### Schritt 1: Account hinzufügen
 
+Tippen Sie auf dem Bildschirm Ihres Geräts auf die `Gmail`{.action}-App. Es gibt zwei Möglichkeiten, um Ihren Account hinzuzufügen:
 
-## Teil 3: Typ des E-Mail-Accounts
-Wählen Sie hier "Microsoft Exchange ActiveSync" aus, um mit der Konfiguration Ihres Exchange Accounts fortzufahren.
+- **Wenn noch kein Account eingerichtet ist**: Tippen Sie sich durch das Willkommensfenster und dann auf `E-Mail-Adresse hinzufügen`{.action}. Wählen Sie anschließend `Exchange und Office 365`{.action} aus. 
 
-![](images/img_1151.jpg){.thumbnail}
+- **Wenn bereits ein Account eingerichtet ist**: Tippen Sie oben links auf das Icon mit den drei Strichen, dann auf das Pfeilsymbol rechts neben dem bereits eingerichteten Account. Tippen Sie anschließend auf `Konto hinzufügen`{.action} und wählen Sie `Exchange und Office 365`{.action} aus. 
 
+![Exchange](images/configuration-exchange-gmail-application-android-step1.png){.thumbnail}
 
-## Teil 4: Einstellungen des Exchange Servers
-Für alle nach dem 26.04.2016 getätigten Bestellungen ist der Exchange Server für ein Hosted Angebot: ex2.mail.ovh.net.
-Tragen Sie hier die Angaben Ihres Exchange E-Mail-Accounts ein.
+Geben Sie Ihre E-Mail-Adresse ein und tippen Sie dann auf `Weiter`{.action}.
 
-"Domain \ Benutzername": tragen Sie hier einen Backslash ("\") gefolgt von der vollständigen Exchange E-Mail-Adresse ein.
+Geben Sie nun das Passwort Ihrer E-Mail-Adresse ein, wählen Sie kein Clientzertifikat aus und klicken Sie auf `Weiter`{.action}, um mit der Konfiguration fortzufahren. Es kann sein, dass sich die App mit dem OVH Server verbindet, um Ihren Account einzurichten. Ist das der Fall, erscheint eine entsprechende Nachricht auf Ihrem Gerät. Tippen Sie auf `OK`{.action}, um die Verbindung vorzunehmen.
 
-"Passwort": das in Ihrem [OVH Kundencenter](https://www.ovh.com/manager/web/login.html) für den Exchange Account angegebene Passwort.
+Geben Sie nun die Einstellungen des Eingangsservers ein. Manche Felder werden gegebenenfalls automatisch ausgefüllt.
 
-"Exchange Server": Der Server Ihres Exchange Accounts.
-In unserem Beispiel eines Hosted Exchange Angebots handelt es sich um den Server ex.mail.ovh.net
-Bei einem Private Exchange Angebot müssen Sie den Namen des Servers angeben, den Sie bei der Installation ausgewählt haben.
+|Information|Beschreibung| 
+|---|---| 
+|Domain/Nutzername|Geben Sie die vollständige E-Mail-Adresse ein.|  
+|Passwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
+|Clientzertifikat|Wählen Sie nichts aus.|
+|Server|Tragen Sie hier den Server ein, auf dem Ihr Exchange Dienst gehostet ist. Sie finden die Angaben zum Server im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}, indem Sie den entsprechenden Exchange Dienst auswählen, auf den Tab `Allgemeine Informationen`{.action} tippen und dort in den Bereich `Verbindung`{.action} gehen.|
+|Port|Tragen Sie den Port „443“ ein.|  
+|Sicherheitstyp|Wählen Sie „SSL/TLS“ aus.|
 
-"Verschlüsselte Verbindung verwenden (SSL)": muss ausgewählt sein.
+Tippen Sie anschließend auf `Weiter`{.action}. Wenn Ihre Angaben korrekt sind, wird die Verbindung zu Ihrem Account hergestellt.
 
-"Alle SSL Zertifikate akzeptieren": muss ausgewählt sein.
+![Exchange](images/configuration-exchange-gmail-application-android-step2.png){.thumbnail}
 
-Klicken Sie anschließend auf "Weiter".
+Um die Konfiguration abzuschließen, erlauben Sie dem OVH Server bestimmte Sicherheitsfunktionen Ihres Geräts remote zu steuern. Tippen Sie auf `OK`{.action}, lesen Sie die Informationen im angezeigten Fenster und tippen Sie dann auf `Diesen Geräteadministrator aktivieren`{.action}.
 
-![](images/img_1152.jpg){.thumbnail}
+Nun können Sie einen Namen für Ihren Account festlegen, um diesen von anderen in Ihrer App angezeigten Accounts zu unterscheiden. Tippen Sie anschließend auf `Weiter`{.action}.
 
+Sie können eine Test-E-Mail versenden, um zu überprüfen, dass der Account korrekt eingerichtet ist.
 
-## Teil 5: Aktivierung
-Es wird nun ein Hinweis zu den Datenschutzbedingungen angezeigt, der mit einem Klick auf "OK" bestätigt werden muss.
+### Schritt 2: E-Mail-Adresse verwenden
 
-![](images/img_1154.jpg){.thumbnail}
+Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
+Eine OVH Webanwendung mit [kollaborativen Funktionen](https://www.ovh.de/emails/){.external} ist verfügbar unter [https://www.ovh.de/mail/](https://www.ovh.de/mail/){.external}. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
-## Teil 6: Sicherheitsabfrage
-Ein zweiter Hinweis zu den Sicherheitsfunktionen wird angezeigt, der mit einem Klick auf "OK" bestätigt werden muss.
+## Weiterführende Informationen
 
-![](images/img_1155.jpg){.thumbnail}
+[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder einem Webhosting Angebot in Android über die Gmail-App](https://docs.ovh.com/de/emails/konfiguration-android){.external}
 
+[Konfiguration Ihres E-Mail Pro Accounts in Android über die Gmail-App](https://docs.ovh.com/de/emails-pro/konfiguration-android){.external}
 
-## Teil 7: Account-Optionen
-Sie können nun verschiedene Konfigurationseinstellungen für die Exchange E-Mail-Adresse tätigen.
-
-Sobald dies erfolgt ist klicken Sie auf "Weiter".
-
-![](images/img_1156.jpg){.thumbnail}
-
-
-## Teil 8: Remote-Sicherheitsverwaltung
-In diesem Interface werden die Rechte der "E-Mail" App von Android aufgeführt.
-
-Klicken Sie auf "Aktivieren" um fortzufahren.
-
-![](images/img_1157.jpg){.thumbnail}
-
-
-## Teil 9: Fertigstellung
-Sie können nun noch eine Bezeichnung für Ihren E-Mail-Account angeben.
-
-Klicken Sie auf "OK", um die Installation Ihres Exchange Accounts abzuschließen.
-
-![](images/img_1158.jpg){.thumbnail}
-
-
-## E-Mail Interface
-Hier sehen Sie ein Bild des E-Mail Interfaces, wie es auf Ihrem Gerät angezeigt wird.
-
-Mit einem Klick auf das Icon oben rechts gelangen Sie zu den Einstellungen des Exchange Accounts.
-
-![](images/img_1159.jpg){.thumbnail}
-
-
-## Konfigurations-Interface
-Hier sehen Sie ein Bild des Konfigurations-Interfaces, wie es auf Ihrem Gerät angezeigt wird.
-
-![](images/img_1160.jpg){.thumbnail}
-
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

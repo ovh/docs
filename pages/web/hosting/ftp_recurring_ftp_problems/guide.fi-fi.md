@@ -1,19 +1,14 @@
 ---
 title: 'Webhotelli: Yleisimmät FTP-ongelmat'
-excerpt: 'Webhotelli: Yleisimmät FTP-ongelmat'
 slug: webhotelli_yleisimmat_ftp-ongelmat
+excerpt: 'Webhotelli: Yleisimmät FTP-ongelmat'
 legacy_guide_number: g1996
 ---
-
 
 ## Olen siirtänyt tiedostoni FTP-ohjelmistolla, mutta mitään ei tule näkyviin.
 
 - Tarkista, että sivusi tiedostot ovat varmasti webhotellisi www-hakemistossa.
 - Jos olet tehnyt muutoksia DNS-alueella, saattaa niiden propagaatioviive olla 4 - 24 tuntia.
-- Jos saat virheilmoituksen  500, "Internal server error", katso tätä opasta: []({legacy}1987)
-
-
-
 
 ## Ftp-koodini eivät toimi
 Tarkista, että olet kopioinut salasanan oikein. Varminta on käyttää leikkaa/liimaa toimintoa (Ctrl-C Ctrl-V windowsissa). Huomaa ero l (L) ja 1 (yksi) välillä sekä O (kirjain) ja 0 (nolla) välillä. 

@@ -1,9 +1,9 @@
 ---
-title: Ręczna konfiguracja programu Outlook
-excerpt: Jeśli nie masz możliwości utworzenia pola SRV niezbędnego do automatycznej konfiguracji programu Outlook, postępuj zgodnie z tym przewodnikiem.
+title: 'Ręczna konfiguracja programu Outlook'
+excerpt: 'Jeśli nie masz możliwości utworzenia pola SRV niezbędnego do automatycznej konfiguracji programu Outlook, postępuj zgodnie z tym przewodnikiem.'
+section: 'Konfiguracja programu pocztowego Exchange'
 slug: reczna_konfiguracja_programu_outlook
 ---
-
 
 ## Uzyskanie GUID Exchange
 Aby ręcznie skonfigurować program Outlook, należy najpierw uzyskać GUID dostępny w panelu klienta klikając na "Konfiguracja"z prawej strony adresu do skonfigurowania. 

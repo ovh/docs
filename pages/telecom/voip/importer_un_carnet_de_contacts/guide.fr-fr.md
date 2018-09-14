@@ -1,82 +1,100 @@
 ---
-title: Importer un carnet de contacts
-excerpt: ''
+title: 'Gérer un carnet de contacts sur une ligne SIP'
 slug: importer_un_carnet_de_contacts
-legacy_guide_number: g2200
-section: Lignes téléphoniques
+excerpt: 'Apprenez à gérer un carnet de contacts sur une ligne SIP OVH'
+section: 'Lignes téléphoniques'
 ---
 
+**Dernière mise à jour le 11/09/2018**
 
-## Connexion à votre Espace Client
+## Objectif
 
-Afin de pouvoir importer votre carnet de contacts afin que celui-ci s'implémente sur votre téléphone, rendez-vous sur votre [espace client](https://www.ovhtelecom.fr/manager/#/), rubrique Télécom. 
+Votre ligne SIP OVH vous permet de recevoir et d’émettre des appels. Afin de rendre les interactions avec vos correspondants plus faciles, vous avez la possibilité de créer un carnet de contacts permettant de retrouver ou d'identifier ceux-ci directement depuis vos téléphones, dans le répertoire ou lors d'un appel entrant.
 
-Sélectionnez ensuite Téléphonie dans les menus de gauche.
-
-![](images/img_4157.jpg){.thumbnail}
-
-
-## 
-Vous avez deux possibilités :
-
-- Mettre un carnet de contacts par ligne (seul l'utilisateur de la ligne aura accès à celui-ci)
-- Mettre un carnet de contacts par groupe (l'ensemble des lignes se trouvant dans le groupe possédera alors ce carnet)
-
-
-Rendez vous sur la partie Carnet de contacts dans la navigation de la ligne ou dans la partie groupe.
-
-![](images/img_4144.jpg){.thumbnail}
-Cliquez sur Carnet d'adresses puis sur Nouveau.
-Nommez alors votre nouveau carnet.
-
-![](images/img_4156.jpg){.thumbnail}
-Cliquez sur Contact puis sur Nouveau.
-
-![](images/img_4155.jpg){.thumbnail}
-Remplissez les champs nécessaires.
-
-![](images/img_4148.jpg){.thumbnail}
-
+**Apprenez à gérer le carnet de contacts et les numéros abrégés de vos lignes SIP OVH.**
 
 ## Prérequis
 
-- Tout caractère accentué est automatiquement remplacé par son équivalent non accentué.
+- Disposer au moins d'une [ligne SIP OVH](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
+- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
 
-- Les caractères spéciaux ne sont pas acceptés dans l'import du fichier. Les contacts comprenant ce type de caractères ne seront pas importés et seront indiqués dans le mail de compte-rendu.
+## En pratique
 
-- Nous conseillons des carnets d'adresses ne dépassant pas 2000 contacts. 
+### Étape 1 : accéder à la gestion du carnet de contacts
 
-- Tous vos contacts devront être sur la même feuille de votre tableur.
+Vous avez la possibilité de gérer le carnet de contacts d'une seule ligne ou d'un groupe de lignes, permettant ainsi à toutes les lignes rattachées à ce groupe d'en bénéficier.
 
-- L'import de votre carnet s'effectue de façon asynchrone, un message vous indique que votre carnet est en cours d'import et un rapport par mail sera effectué quelques minutes plus tard.
+- **Pour accéder à la gestion du carnet de contacts d'une seule ligne** :
 
+Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et assurez-vous de vous situer dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Téléphone`{.action} et cliquez sur `Carnets de contacts`{.action}.
+ 
+![carnetcontacts](images/carnet-contacts-step1.png){.thumbnail}
 
+- **Pour accéder à la gestion du carnet de contacts d'un groupe de lignes** :
 
+Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et assurez-vous de vous situer dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis cliquez sur le groupe de lignes concerné. Cliquez enfin sur le bouton `Carnet de contacts`{.action}.
+ 
+![carnetcontacts](images/carnet-contacts-step2.png){.thumbnail}
 
-## Format du tableur
+### Étape 2 : gérer le carnet de contacts
 
-Si vous souhaitez intégrer un carnet déjà existant, ce dernier devra avoir la forme ci-contre dans un tableur.
+La gestion du carnet de contacts s'effectue de la même manière, que vous ayez sélectionné une seule ligne ou un groupe de lignes. Poursuivez en fonction de la manipulation que vous souhaitez réaliser.
 
-![](images/img_4160.jpg){.thumbnail}
-Si vous ouvrez ce fichier avec le bloc-notes vous aurez la forme ci-contre.
+#### Créer un carnet de contact
 
-![](images/img_4159.jpg){.thumbnail}
-Vous pouvez renseignez vos numéros au format +33xxxxxxxxx / 0033xxxxxxxxx / 0123456789 ou tout autre indicatif. 
-Attention : Si aucun indicatif n'est renseigné sur vos numéros ou dans la colonne "countryCode" nous rajoutons automatiquement l'indicatif du pays de votre identifiant client.
-Exemple : Votre identifiant client est renseigné en pays "Belgique", si dans votre carnet vous renseignez un numéro de type national "031111111" celui-ci sera automatiquement convertie en "+3231111111"
-Vous avez également la possibilité d'exporter un carnet d'adresses déjà créé depuis l'espace client afin de disposer du patron.
+Pour créer un carnet de contact, renseignez le nom du carnet dans la zone de texte en dessous de « Nom du carnet de contacts », puis cliquez sur le bouton `Créer le carnet de contacts`{.action}.
 
-![](images/img_4151.jpg){.thumbnail}
+![carnetcontacts](images/carnet-contacts-step3.png){.thumbnail}
 
+#### Ajouter ou modifier un contact
 
-## Importation dans l'espace client
-Afin d'effectuer un import de votre fichier, cliquez sur Carnet d'adresses puis sur import/export, Format CSV ou fichier au format Excel, Importer.
+Pour ajouter un nouveau contact, cliquez sur le bouton `Actions`{.action}, puis sur `Ajouter`{.action}. Pour modifier un contact existant, cliquez sur le bouton représentant trois points à droite du contact concerné, puis sur `Éditer`{.action}.
 
-![](images/img_4152.jpg){.thumbnail}
-Cliquez sur l'icône d'exploration, puis allez chercher votre fichier sur votre ordinateur.
+![carnetcontacts](images/carnet-contacts-step4.png){.thumbnail}
 
-![](images/img_4154.jpg){.thumbnail}
-Importez ensuite votre fichier.
+Remplissez ensuite les informations demandées. Les numéros doivent être renseignés au format international (par exemple, « 0033100000000 » pour un numéro français). Une fois les informations complétées, cliquez sur le bouton `Valider`{.action} pour ajouter le contact. Répétez cette manipulation autant de fois que nécessaire.
 
-![](images/img_4153.jpg){.thumbnail}
+![carnetcontacts](images/carnet-contacts-step5.png){.thumbnail}
 
+#### Importer des contacts
+
+Pour importer des contacts dans le carnet de contacts, cliquez sur le bouton `Actions`{.action}, puis sur `Importer`{.action}. Dans la fenêtre qui s'affiche, cliquez sur le bouton `Fichier de contact`{.action}. Pour être accepté par l'outil d'import, le fichier doit être au format .csv et respecter une forme précise dans son contenu. Vous trouverez un exemple ci-dessous :
+
+|group|surname|name|workPhone|workMobile|homePhone|homeMobile|countryCode|
+|---|---|---|---|---|---|---|---|
+|Aucune|OVH|Support|100000000| | |6000000000|33|
+
+Vous pouvez également utiliser une version texte en séparant chaque celulle du tableau par un point-virgule (donnant par exemple : « Aucune;OVH;Support;100000000;;;6000000000;33 »). Une fois le fichier sélectionné dans la fenêtre d'import, cliquez sur le bouton `Valider`{.action}.
+
+> [!warning]
+>
+> Si aucun indicatif pays n'est renseigné dans la colonne « countryCode », nous y ajouterons automatiquement l'indicatif correspondant au pays de votre identifiant client. 
+>
+
+![carnetcontacts](images/carnet-contacts-step6.png){.thumbnail}
+
+#### Télécharger le carnet de contacts
+
+Pour télécharger la liste actuelle des contacts ajoutés dans le carnet, cliquez sur le bouton `Actions`{.action}, puis sur `Exporter`{.action}. Une fenêtre vous invitant à enregistrer le fichier apparaît alors.
+
+Le fichier obtenu sera au format .csv.
+
+#### Supprimer un ou plusieurs contacts
+
+Pour supprimer un seul contact, cliquez sur le bouton représentant trois points à droite du contact concerné, puis sur `Supprimer`{.action}. Pour en supprimer plusieurs, cochez la case à gauche des contacts concernés, puis cliquez sur `Supprimer les contacts sélectionnés`{.action}.
+
+![carnetcontacts](images/carnet-contacts-step7.png){.thumbnail}
+
+#### Supprimer un carnet de contacts
+
+Pour supprimer un carnet de contacts, cliquez sur le bouton `Supprimer le carnet de contacts`{.action}, puis sur `Valider`{.action}.
+
+### Étape 3 : utiliser le carnet de contacts sur votre téléphone
+
+Afin que votre téléphone puisse utiliser le carnet de contacts ou récupérer les éventuelles modifications effectuées dans celui-ci, commencez par le redémarrer. Une fois votre téléphone redémarré, il devrait avoir téléchargé le nouveau carnet de contacts.
+
+À noter que si vous utilisez un téléphone Cisco, seul le numéro du contact sera affiché (et non son nom et son prénom) lors d'un appel sortant, même si ce dernier est présent dans le carnet de contacts dans votre espace client. Ce comportement est spécifique aux téléphones Cisco. Si vous souhaitez afficher le nom de vos correspondants, vous devrez enregistrer ces informations dans votre téléphone. 
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

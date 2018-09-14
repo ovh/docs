@@ -50,7 +50,7 @@ Imposta i parametri del server in entrata:
 |---|---| 
 |Nome utente|Inserisci l’indirizzo email completo|  
 |Password|Digita la password associata all’account|
-|Server|Inserisci il server “ssl0.mail.ovh.net”|
+|Server|Inserisci il server “ssl0.ovh.net”|
 
 Fai clic su `Avanti`{.action} e inserisci le impostazioni del server in uscita. 
 
@@ -59,7 +59,7 @@ Fai clic su `Avanti`{.action} e inserisci le impostazioni del server in uscita.
 |Richiedere una connessione|Assicurati che questo pulsante sia selezionato|
 |Nome utente|Inserisci l’indirizzo email completo|  
 |Password|Digita la password associata all’account|
-|Server SMTP|Inserisci il server “ssl0.mail.ovh.net”|
+|Server SMTP|Inserisci il server “ssl0.ovh.net”|
 
 Clicca su `Avanti`{.action}. Se le informazioni inserite sono corrette, l’accesso all’account andrà a buon fine.
 

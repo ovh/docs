@@ -125,7 +125,7 @@ Po wprowadzeniu informacji, kliknij przycisk `Dalej`{.action}, sprawdź dane, kt
 
 Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz użyć udostępnionej przez OVH aplikacji online (*webapp*). Aplikacja dostępna jest pod adresem <https://pro1.mail.ovh.net>. Zaloguj się, wprowadzając dane identyfikacyjne przypisane do Twojego konta e-mail utworzonego w OVH.
 
-Jeśli chcesz skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu typu smartfon lub tablet, skorzystaj z naszej dokumentacji dostępnej tutaj: <https://docs.ovh.com/pl/email-pro/>. Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta E-mail Pro:
+Jeśli chcesz skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu typu smartfon lub tablet, skorzystaj z naszej dokumentacji dostępnej tutaj: <https://docs.ovh.com/pl/emails-pro/>. Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta E-mail Pro:
 
 |Typ serwera|Nazwa serwera|Typ zabezpieczenia|Port|
 |---|---|---|---|

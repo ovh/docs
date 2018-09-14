@@ -5,7 +5,7 @@ excerpt: 'Leer hoe u een MX Plan e-mailadres op de online interface van Gmail ku
 section: 'Andere e-mailclients'
 ---
 
-**Laatste update 03-07-2018**
+**Laatste update 10-09-2018**
 
 ## Introductie
 
@@ -51,7 +51,7 @@ Voer nu de instellingen in voor de POP-server (inkomende server) van uw OVH e-ma
 |---|---| 
 |Gebruikersnaam|Voer het **volledige** e-mailadres in.|  
 |Het wachtwoord|Voer het wachtwoord van het e-mailadres in. |
-|POP-server|Voer de ssl0.mail.ovh.net server in.|
+|POP-server|Voer de ssl0.ovh.net server in.|
 |Poort|Selecteer poort 995.|
 
 Wat betreft de keuzes kunt u het volgende aanvinken:
@@ -78,7 +78,7 @@ Voer nu de instellingen in voor de SMTP-server (uitgaande server) van uw OVH e-m
 
 |Informatie|Omschrijving| 
 |---|---| 
-|SMTP-server|Voer de ssl0.mail.ovh.net server in.|
+|SMTP-server|Voer de ssl0.ovh.net server in.|  
 |Poort|Selecteer poort 587.|
 |Gebruikersnaam|Voer het **volledige** e-mailadres in.|  
 |Het wachtwoord|Voer het wachtwoord van het e-mailadres in. |

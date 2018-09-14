@@ -1,8 +1,8 @@
 ---
-title: Tworzenie pola CNAME po dodaniu przypisanej domeny
+title: 'Tworzenie pola CNAME po dodaniu przypisanej domeny'
 slug: exchange_20132016_dodanie_pola_cname
-excerpt: Dowiesz się, jak potwierdzić własność domeny dodanej do konta Exchange
-section: Konfiguracja usługi Exchange
+excerpt: 'Dowiesz się, jak potwierdzić własność domeny dodanej do konta Exchange'
+section: 'Konfiguracja usługi Exchange'
 ---
 
 **Ostatnia aktualizacja dnia 2018-01-31**

@@ -1,10 +1,10 @@
 ---
-title: 'Exchange: Pierwsze kroki na serwerze Private'
-excerpt: Pierwsze kroki na serwerze Private
+title: 'Exchange: Pierwsze kroki z serwerem Private Exchange'
+excerpt: 'Pierwsza konfiguracja serwera Private Exchange'
 slug: exchange_pierwsze_kroki_na_serwerze_private
+section: 'Konfiguracja usługi Exchange'
 legacy_guide_number: g2074
 ---
-
 
 ## Etap 1: e-mail konfiguracyjny
 Po opłaceniu zamówienia otrzymasz e-mail dotyczący zainstalowania serwera "Private".
