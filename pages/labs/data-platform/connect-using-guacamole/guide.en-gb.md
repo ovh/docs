@@ -3,7 +3,7 @@ title: Connect to your Data Platform using Guacamole
 excerpt: Connect to your platform via your web browser, either to run complex data jobs
 or to administrate the platform.
 section: How-tos
-order: 3
+order: 4
 ---
 
 ## What is Guacamole ?

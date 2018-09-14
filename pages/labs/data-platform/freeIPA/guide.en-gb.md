@@ -1,7 +1,7 @@
 ---
 title: About FreeIPA
 section: Advanced topics
-order: 5
+order: 3
 ---
 
 ## What is FreeIPA

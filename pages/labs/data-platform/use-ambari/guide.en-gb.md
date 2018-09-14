@@ -1,8 +1,8 @@
 ---
 title: Use Apache Ambari
 excerpt: First steps with Apache Ambari
-section: How-tos
-order: 4
+section: Getting started
+order: 3
 ---
 
 ## Cluster overview using Ambari
