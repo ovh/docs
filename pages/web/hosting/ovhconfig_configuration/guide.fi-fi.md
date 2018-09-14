@@ -41,7 +41,7 @@ Tarvitset pääkäyttäjän FTP-käyttäjätunnuksen, sen salasanan sekä FTP-pa
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 
-#### 2. vaihe: Hae tai luo .ovhconfig.tiedosto
+#### 2. vaihe: Hae tai luo .ovhconfig-tiedosto
 
 Kun olet kirjautunut tallennustilaasi, voit nähdä kaikki siellä ylläpidetyt tiedostot. Pysy webhotellisi juuressa (jota symboloi “/”). Löydät sieltä webhotellisi .ovhconfig-tiedoston.
 

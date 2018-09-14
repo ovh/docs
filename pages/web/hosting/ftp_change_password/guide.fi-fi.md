@@ -1,8 +1,8 @@
 ---
-title: FTP-käyttäjän salasanan vaihtaminen
+title: 'FTP-käyttäjän salasanan vaihtaminen'
 slug: ftp-kayttajan-salasanan-vaihtaminen
-excerpt: Opi vaihtamaan OVH:n webhotellissasi luodun FTP-käyttäjän salasana
-section: FTP ja SSH
+excerpt: 'Opi vaihtamaan OVH:n webhotellissasi luodun FTP-käyttäjän salasana'
+section: 'FTP ja SSH'
 order: 1
 ---
 
@@ -35,7 +35,7 @@ Webhotellissasi luodun FTP-käyttäjän salasanan vaihtaminen tapahtuu kahdella 
 
 - **Tuotteissa jotka eivät voi luoda FTP-käyttäjiä** (Start 10M, Personal): klikkaa kynän kuvaa taulukon sarakkeessa `Salasana`{.action}, syötä uusi salasana tekstialueelle ja vahvista muutos.
 
-- **Tuotteissa, joissa on mahdollista luoda FTP-käyttäjiä** (Pro ja Performance): klikkaa taulukossa halutun käyttäjän oikealla puolella olevaa hammasrattaan kuvaa ja siten `Vaihda salasana`{.action}. Syötä näkyviin tulevassa ikkunassa haluamasi salasana, vahvista se ja klikkaa painiketta `Vahvista`{.action}.
+- **Tuotteissa, joissa on mahdollista luoda FTP-käyttäjiä** (Pro, Performance ja Cloud Web): klikkaa taulukossa halutun käyttäjän oikealla puolella olevaa hammasrattaan kuvaa ja siten `Vaihda salasana`{.action}. Syötä näkyviin tulevassa ikkunassa haluamasi salasana, vahvista se ja klikkaa painiketta `Vahvista`{.action}.
 
 Muutos astuu voimaan joidenkin minuuttien kuluessa.
 
