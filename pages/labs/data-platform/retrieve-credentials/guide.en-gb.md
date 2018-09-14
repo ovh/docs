@@ -1,8 +1,8 @@
 ---
 title: Retrieve your credentials
 excerpt: Learn how to retrieve your Data Platform credentials after installation
-section: Getting started
-order: 3
+section: How-tos
+order: 1
 ---
 
 When your data platform is installed, it is initialized with a master password. This password must always be kept safe

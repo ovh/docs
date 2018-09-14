@@ -38,6 +38,34 @@ You can add new users using the idM web interface of your platform:
 credentials are cached on the nodes for performances reasons.
 >
 
+
+### Reset a user Password
+It happends that a user forgot his password. In such case, the user may want to reset his password.
+
+1. Navigate to `https://ipa.{cluster_id}.datalake.ovh`
+2. Login with your credentials
+4. On the top right dropdown menu, select *change password*
+![User informations](images/idm-self-password-reset.png)
+5. Then fill in the password definition form
+![Reset password form](images/idm-self-password-reset-form.png)
+
+It can also happen that the administrator wants to reset a user password because of a security issue
+(mainly in case of exposed password):
+
+1. Navigate to `https://ipa.{cluster_id}.datalake.ovh`
+2. Login with your administrator credentials
+3. Navigate to  *Identity* > *Users* and click on the username
+4. On the *action* menu dropdown, select *reset password*
+![User informations](images/idm-user-password-reset.png)
+5. Then fill in the temporary password definition
+![Reset password form](images/idm-user-password-reset-form.png)
+6. Give the temporary to the concerned user
+
+> [!info]
+>
+> After a admin password reset, the user will have to change the temporary password at the first connection.
+>
+
 ### Manage SSH keys
 Each user is able to manage its own SSH public keys to connect on the platform:
 

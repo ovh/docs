@@ -11,18 +11,24 @@ OVH Analytics Data Platform provides a one-click pre-configured Hadoop stack des
 to store and process high volumes of data across OVH Public Cloud
 infrastructure.
 
-The solution is based on [a standard open source Hadoop distribution](https://hortonworks.com/products/data-platforms/hdp/),
+Deploy a big data stack is usually tricky and takes a lot of time. OVH Analytics Data Platform
+reduces the setup cost of such platform. Indeed, in only 1 hour, get your fully working big data stack
+ready to use, and start to use it.
+
+As we consider open source software like a durable way of development, we chose to base all our service
+on open source software. Analytics data platform is based on [a standard open source Hadoop distribution](https://hortonworks.com/products/data-platforms/hdp/),
 it namely includes:
-  [HDFS](https://hortonworks.com/apache/hdfs/)
-| [Hive](https://hortonworks.com/apache/hive/)
-| [HBase](https://hortonworks.com/apache/hbase/)
-| [Kafka](https://hortonworks.com/apache/kafka/)
-| [Spark](https://hortonworks.com/apache/spark/)
-| [Presto](https://prestodb.io/)(soon).
+
+- [HDFS](https://hortonworks.com/apache/hdfs/) the distributed filesystem of Hadoop ecosystem
+- [Hive](https://hortonworks.com/apache/hive/) a SQL engine running on top of HDFS
+- [HBase](https://hortonworks.com/apache/hbase/) a distributed columnar storage
+- [Kafka](https://hortonworks.com/apache/kafka/) the famous messaging queue system
+- [Spark](https://hortonworks.com/apache/spark/) a complete data processor handling ETL as much as machine learning
+- [Presto](https://prestodb.io/) (soon).
 
 With OVH Analytics, you can handle a wide range of use cases including
-business intelligence, IoT, marketing analysis, AI, data cleaning, and
-predictive maintenance.
+**business intelligence**, **IoT**, **marketing analysis**, **AI**, **data cleaning**, and
+**predictive maintenance**.
 
 ### One-click big data platform
 
