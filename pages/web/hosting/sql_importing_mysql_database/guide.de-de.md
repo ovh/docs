@@ -1,179 +1,175 @@
 ---
-title: 'Webhosting: Import einer MySQL-Datenbank'
-excerpt: 'Webhosting: Import einer MySQL-Datenbank'
+title: 'Backup in eine Webhosting-Datenbank importieren'
+excerpt: 'In dieser Anleitung erfahren Sie, wie Sie ein Backup in die Datenbank Ihres OVH Webhostings importieren.'
 id: '1393'
 slug: webhosting_import_einer_mysql-datenbank
 legacy_guide_number: g1393
+section: Datenbanken
+order: 4
 ---
 
+**Stand 14.09.2018**
+
+## Einleitung
+
+Fast alle Content-Management-Systeme (CMS) wie WordPress oder Joomla! verwenden heutzutage Datenbanken, um sogenannte dynamischen Inhalte wie beispielsweise Kommentare oder Artikel zu speichern. Aus verschiedenen Gründen kann es vorkommen, dass Sie Daten in eine Ihrer Datenbanken importieren möchten, um deren Inhalt zu ändern oder zu ersetzen.
+
+**Hier erfahren Sie, wie Sie ein Backup in die Datenbank Ihres OVH Webhostings importieren.**
+
 ## Voraussetzungen
-Sie benötigen:
 
-- Die Backup-Datei Ihrer Datenbank, auch Dump* genannt.(Eine Anleitung zum Backup von SQL-Datenbanknen finden Sie hier: [https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/).
+- Sie haben ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
+- Ihr [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot beinhaltet eine Datenbank.
+- Sie haben Zugriff auf das Backup, das Sie in Ihre Datenbanken importieren möchten.
+- Je nach der verwendeten Import-Methode benötigen Sie Zugriff auf die Verwaltung Ihres Webhosting Angebots über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}, oder die erforderlichen Login-Daten, um sich mit der Datenbank zu verbinden.
 
-Das Datenbank-Backup ist in der Regel im Format .sql.
-Wenn Ihre Datenbank nicht bei OVH erstellt wurde, empfehlen wir eine Kontaktaufnahme zu dem Drittanbeiter, um Informationen zum Datenbankimport über seinen Service einzuholen. 
+## Beschreibung
 
-- Außerdem benötigen Sie Ihr Login und das zugehörige Passwort sowie den SQL-Host der Datenbank, um sich mit der Datenbank zu verbinden.
+Bevor Sie beginnen, wählen Sie die Methode aus, die Sie für den Import des Backups in die betreffende Datenbank anwenden möchten. Entsprechend Ihrer technischen Kenntnisse zu diesem Thema stehen Ihnen mehrere Möglichkeiten zur Verfügung.
 
-![](images/img_1802.jpg){.thumbnail}
+- **Eine ältere Version Ihrer Datenbank mit wenigen Klicks wiederherstellen**: Dank der regelmäßigen Sicherungen des Backup-Tools von OVH können Sie den Inhalt Ihrer Datenbanken wiederherstellen. Hierzu sind keine besonderen technischen Kenntnisse erforderlich und Sie können das Backup über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ausführen.
 
+- **Ihre eigene Backup-Datei mit wenigen Klicks importieren**: Sie können Ihre eigene, von Ihnen zuvor erstellte Backup-Datei in eine Ihrer Datenbanken importieren. Loggen Sie sich hierfür in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein.
 
-## Über Ihr OVH Kundencenter
-Die einfachste und schnellste Lösung für den Import Ihrer Datenbank ist die Verwendung des [OVH Kundencenters](https://www.ovh.com/manager/).
-Der große Vorteil besteht darin, dass es hier kein Größenlimit à für die Backup-Datei gibt.
+- **Backup über das phpMyAdmin-Webinterface importieren**: Loggen Sie sich im phpMyAdmin-Interface ein, um dort den Import durchzuführen. Für diese Methode benötigen Sie Grundkenntnisse im Umgang mit phpMyAdmin. Außerdem darf Ihre Backup-Datei eine bestimmte Größe nicht überschreiten.
 
-Loggen Sie sich mit Ihrer Kundenkennung und dem zugehörigen Passwort in Ihr [Kundencenter](https://www.ovh.com/manager/) ein. Wählen Sie dann im Menü links das gewünschte Hosting aus und begeben Sie sich dann in den Tab Datenbank.
+- **Backup über ein Skript importieren**: Hierzu muss zunächst ein Skript geschrieben und auf Ihrem OVH Webhosting gespeichert werden. Für das Schreiben des Skripts sind spezifische technische Kenntnisse erforderlich.
 
-![](images/img_4125.jpg){.thumbnail}
+- **Backup über einen SSH-Befehl importieren**: Verbinden Sie sich hierfür via SSH mit Ihrem Speicherplatz und verwenden Sie die entsprechenden Befehle für den Import. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot erforderlich.
 
-Klicken Sie auf das kleine Zahnrad rechts neben der Datenbank, in die Sie Ihr Backup importieren möchten, und wählen Sie "Import einer Datei".
+Einige der oben aufgeführten Methoden lassen sich nicht über ein OVH Interface ausführen. Daher können wir Ihnen nicht sagen, wie diese umzusetzen sind. Im Folgenden geben wir Ihnen hierzu zwar einige Informationen, sie ersetzen jedoch nicht die Unterstützung eines Webmasters.
 
-Folgen Sie anschließend den Anweisungen im Kundencenter, um Ihr SQL-Backup zu importieren.
+Folgen Sie dieser Anleitung nun entsprechend der von Ihnen gewählten Import-Methode.
 
-![](images/img_4126.jpg){.thumbnail}
+> [!warning]
+>
+> OVH stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+>
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVH leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+>
 
-## Über PhpMyAdmin für MySQL
-Verbinden Sie sich über PhpMyAdmin mit Ihrer Datenbank.
+### Backup über das Kundencenter wiederherstellen
 
-Folgen Sie hierfür folgendem Link [OVH PhpMyAdmin](https://phpmyadmin.ovh.net)
+Loggen Sie sich hierfür im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
-- Wenn Sie mit PhpMyAdmin verbunden sind, wählen Sie die gewünschte Datenbank durch einen Klick auf den Namen  aus (der blaue Rahmen links oben im Screenshot).
+Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Klicken Sie nun auf die drei Punkte rechts neben der Datenbank, die Sie wieder auf eine ältere Version zurücksetzen möchten, und wählen Sie dann `Eine Sicherung wiederherstellen`{.action}. Bitte beachten Sie, dass der aktuelle Inhalt der Datenbank durch den Inhalt des ausgewählten Backups ersetzt wird.
 
-- Klicken Sie anschließend auf "Importieren".
+![Datenbankimport](images/database-import-step5.png){.thumbnail}
 
-- Wählen Sie Ihre Backup-Datei durch Klick auf "Durchsuchen" (Bitte beachten Sie: Die Dateigröße darf 16 MB nicht überschreiten).
+Es werden Ihnen nun alle verfügbaren Backups der ausgewählten Datenbank angezeigt. In der Tabelle finden Sie das genaue Erstellungsdatum des jeweiligen Backups sowie das Datum, zu dem dieses vom OVH Backup-Tool wieder gelöscht wird.
 
-- Klicken Sie auf "Ausführen", um den Import zu starten.
+Klicken Sie auf die drei Punkte rechts neben dem Backup, das Sie wiederherstellen möchten, und gehen Sie dann auf `Sicherung wiederherstellen`{.action}. Vergewissern Sie sich, dass die Informationen im angezeigten Fenster korrekt sind, und klicken Sie dann auf `Bestätigen`{.action}. Warten Sie, bis die Wiederherstellung abgeschlossen ist.
 
-Wenn Sie ein Backup über Ihr Kundencenter wiederherstellen, denken Sie daran, die Datei vor dem Import zu dekompromieren.
+![Datenbankimport](images/database-import-step6.png){.thumbnail}
 
-![](images/img_1962.jpg){.thumbnail}
+### Eigene Backup-Datei über das Kundencenter importieren
 
-## Bitte beachten:
+Loggen Sie sich hierfür im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
-- Die Größe der Datei darf 16 MB nicht überschreiten.
+Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Klicken Sie nun auf die drei Punkte rechts neben der Datenbank, in die Sie die Daten importieren möchten, und wählen Sie dann `Datei importieren`{.action}.
 
-## Über ein Skript auf Ihrem Hosting
-Sie können auch Skripte in einer txt.-Datei erstellen. Denken Sie daran, die Dateiendung he nach verwendeter Skriptsprache anzupassen.
+![Datenbankimport](images/database-import-step1.png){.thumbnail}
 
-In untenstehenden Skripten nehmen Sie folgende Änderungen vor:
+Wählen Sie im angezeigten Fenster `Eine neue Datei importieren`{.action} und klicken Sie anschließend auf `Weiter`{.action}.
 
-- name_der_datenbank.sql durch den Namen Ihrer Datei.
+> [!primary]
+>
+> Über den Button `Bestehende Datei verwenden`{.action} können Sie die Daten einer bereits an das Import-Tool versendeten Datei erneut importieren.
+>
 
-- sql_server durch den Namen des Servers, auf dem Sie die Datenbank erstellt haben.
+![Datenbankimport](images/database-import-step2.png){.thumbnail}
 
-- name_der_datenbank durch den Namen Ihrer Datenbank.
+Geben Sie einen Dateinamen ein (über den Sie das Backup zu einem späteren Zeitpunkt finden und wiederherstellen können). Wählen Sie dann unter `Datei` die Backup-Datei der Datenbank auf Ihrem Computer aus. Klicken Sie auf `Absenden`{.action}.
 
-- passwort durch das zu Ihrer Datenbank gehörige Passwort.
+Warten Sie, bis die Meldung erscheint, dass die Datei erfolgreich übermittelt wurde, und klicken Sie dann auf `Weiter`{.action}.
 
-Ihre Backup-Datei muss vorab über FTP auf Ihrem Hosting abgelegt werden.
+![Datenbankimport](images/database-import-step3.png){.thumbnail}
 
-## PHP (importbase.php):
-Bitte den Code entsprechend anpassen und eingeben: 
+Wenn Sie möchten, können Sie nun die angezeigten Zusatzoptionen auswählen:
 
-```
+- **Aktuelle Datenbank leeren**: Setzen Sie hier einen Haken, um den gesamten aktuellen Inhalt Ihrer Datenbank zu löschen und durch den Inhalt Ihres Backups zu ersetzen. Setzen Sie den Haken wirklich nur, wenn Sie den aktuellen Inhalt Ihrer Datenbank vollständig mit dem Inhalt der Backup-Datei ersetzen möchten.
+
+- **E-Mail-Benachrichtigung, wenn der Import abgeschlossen ist**: Setzen Sie hier einen Haken, um per E-Mail über den Abschluss des Datenbankimports benachrichtigt zu werden.
+
+Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf `Bestätigen`{.action} und warten Sie, bis der Import abgeschlossen ist.
+
+![Datenbankimport](images/database-import-step4.png){.thumbnail}
+
+### Backup über das phpMyAdmin-Webinterface importieren
+
+Loggen Sie sich auf phpMyAdmin ein, um den Import durchzuführen. Loggen Sie sich hierfür zunächst im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
+
+Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Klicken Sie auf die drei Punkte rechts neben der betreffenden Datenbank und gehen Sie dann auf `Zugang zu phpMyAdmin`{.action}.
+
+![Datenbankimport](images/database-import-step7.png){.thumbnail}
+
+Geben Sie im phpMyAdmin-Webinterface die Informationen zu Ihrer Datenbank ein, wählen Sie über das Drop-down-Menü die aktuellen Daten der Datenbank (Current) und loggen Sie sich ein. Gehen Sie nach dem Login auf den Tab `Importieren`{.action} und vervollständigen Sie die angeforderten Informationen. Zur Erinnerung: Die Backup-Datei darf eine bestimmte Größe nicht überschreiten.
+
+> [!warning]
+>
+> Da das phpMyAdmin-Webinterface nicht von OVH entwickelt wurde, können wir Ihnen nicht sagen, wie der Import durchzuführen ist. Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister zu kontaktieren und/oder sich auf der Website des Herausgebers zu informieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+>
+
+### Backup über ein Skript importieren
+
+Für diese Methode sind mehrere Schritte notwendig. Vergewissern Sie sich, dass Sie über die Backup-Datei verfügen, die Sie importieren möchten. Außerdem benötigen Sie die Login-Informationen für die Datenbank, in die importiert werden soll: Benutzername, das zugehörige Passwort, Name der Datenbank und Serveradresse.
+
+> [!warning]
+>
+> Für diese Methode sind Programmierkenntnisse erforderlich. Im Folgenden geben wir Ihnen einige Informationen zur Vorgehensweise, empfehlen Ihnen aber dennoch, einen spezialisierten Dienstleister zu kontaktieren, falls Sie Hilfe brauchen. Für externe Dienstleistungen bietet OVH leider keine Unterstützung.
+>
+
+#### Schritt 1: Importskript schreiben
+
+Im ersten Schritt wird ein Skript geschrieben, um den Import in die Datenbank durchzuführen. Im Folgenden finden Sie ein Beispielskript, um Ihnen hierbei zu helfen. Es ersetzt allerdings nicht die Hilfe eines Webmasters.
+
+```php
 <?php
-echo "Ihre Datenbank wird wiederhergestellt.......
-<br>";
-system("cat name_der_datenbank.sql | mysql --host=sql_server --user=name_der_datenbank --password=passwort name_der_datenbank");
-echo "Vorgang abgeschlossen.";
+system("cat name_backup_datei.sql | mysql --host=server_adresse --user=name_benutzer --password=benutzer_passwort name_datenbank");
 ?>
 ```
 
-## Perl (importbase.cgi) :
-Bitte den Code entsprechend anpassen und eingeben: 
+Achten Sie darauf, die allgemeinen Informationen im Beispielskript mit den Informationen der betreffenden Datenbank zu ersetzen. Die folgende Tabelle listet die zu ersetzenden Elemente auf. Wir empfehlen Ihnen, das Skript am Ende zum Beispiel „import.php“ zu nennen.
 
-```
-#!/usr/bin/perl
+|Information|Ersetzen durch|
+|---|---|
+|name_backup_datei|Name der Backup-Datei, die Sie importieren möchten.|
+|server_adresse|Serveradresse der Datenbank, in die Sie die Daten importieren möchten.|
+|name_benutzer|Name des Benutzers, der Zugriff auf die betreffende Datenbank hat.|
+|benutzer_passwort|Zugehöriges Passwort zum oben genannten Benutzernamen.|
+|name_datenbank|Name der betreffenden Datenbank.|
 
-print "Ihre Datenbank wird wiederhergestellt.......
-<br>";
-system("cat name_der_datenbank.sql | mysql --host=sql_server --user=name_der_datenbank --password=passwort name_der_datenbank");
-print "Vorgang abgeschlossen.";
-```
+#### Schritt 2: Skript und Backup auf Ihren Speicherplatz hochladen
 
-- Laden Sie das erstellte Skript sowie den Dump* Ihrer Datenbank per FTP in das www Verzeichnis Ihres Hostings und rufen Sie das Skript über Ihren Browser mit folgender URL auf: http://ihre_domain.com/importbase.php
+Nachdem Sie das Importskript erstellt haben, laden Sie es zusammen mit der Backup-Datei hoch, die Sie in den Speicherplatz Ihres Webhostings importieren möchten. Loggen Sie sich hierfür in Ihren Speicherplatz ein. Sollten Sie nicht wissen, wie der Login funktioniert, lesen Sie Schritt 2 der Anleitung „[Log in to your storage space](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/#2-log-in-to-your-storage-space){.external}“ (Englisch).
 
-Ersetzen Sie ihre_domain.com durch Ihren Domainnamen und importbase.php durch den Namen Ihrer Datei.
+Laden Sie das Importskript und die Backup-Datei in den „www“-Ordner, um die folgenden Schritte durchzuführen. **Achten Sie bitte besonders auf den Dateinamen des Importskripts.** Stellen Sie sicher, dass Sie beim Hochladen des Skripts keine bereits im Speicherplatz vorhandene Datei löschen, die denselben Namen trägt. Erscheint ein entsprechender Warnhinweis, ändern Sie den Skriptnamen und laden Sie es anschließend erneut hoch.
 
-Ihre Backup-Datei ist komprimiert?
+#### Schritt 3: Skript aufrufen
 
-Falls Ihr Dump* einmal komprimiert ist, also in der Form .sql.gz vorliegt, müssen Sie lediglich folgenden Befehl an den Anfang des Skripts setzen:
+Nachdem das Importskript und die Backup-Datei auf den Speicherplatz hochgeladen wurden, kann der Import gestartet werden. Hierzu muss zunächst das Skript aufgerufen werden.
 
-```
-system("gunzip name_der_datenbank.sql.gz");
-```
+Um das Skript aufzurufen, geben Sie die vollständige Skript-URL in Ihrem Webbrowser ein (zum Beispiel: mypersonaldomain.ovh/import.php, wenn Sie Ihr Skript „import.php“ genannt haben). Wenn die im Skript eingegebenen Informationen korrekt sind, startet der Import. Warten Sie nun noch einen Moment, bis der Import abgeschlossen ist. Sollte der Import nicht starten, überprüfen Sie die im Skript eingegeben Informationen und starten Sie den Vorgang erneut.
 
-Beispiel:
+Wir empfehlen Ihnen dringend, nach dem Import die Backup-Datei und das Skript aus dem „www“-Verzeichnis zu löschen.
 
-## PHP: komprimierter Dump + DB-Wiederherstellung
-Beispielcode: 
+### Backup via SSH importieren
 
-```
-<?php
-echo "Datei wird dekomprimiert.....
-<br>";
-system("gunzip testbackup.sql.gz");
-echo "Ihre Datenbank wird wiederhergestellt......
-<br>";
-system("cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport");
-echo "Vorgang abgeschlossen.";
-?>
+Bei dieser Methode werden Befehle über ein Terminal eingegeben, um mit Ihrem Speicherplatz zu interagieren.
+
+> [!warning]
+>
+> Für diese Art des Zugriffs sind fortgeschrittene Kenntnisse erforderlich. Im Folgenden geben wir Ihnen einige Informationen zur Vorgehensweise, empfehlen Ihnen aber dennoch, einen spezialisierten Dienstleister zu kontaktieren, falls Sie Hilfe brauchen. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+>
+
+Wenn Sie sich via SSH in Ihren Speicherplatz eingeloggt haben, geben Sie einen Befehl für den Import der Datenbank ein. Im Folgenden finden Sie ein Beispiel, um Ihnen dabei zu helfen. Bevor Sie den Befehl über das Terminal ausführen, stellen Sie bitte sicher, dass Sie das Backup, das Sie importieren möchten, bereits auf den Speicherplatz hochgeladen haben und dass Sie sich in dem Verzeichnis befinden, in dem die Backup-Datei liegt.
+
+```sh
+cat name_backup_datei.sql | mysql --host=server_adresse --user=name_benutzer--password=benutzer_passwort name_datenbank
 ```
 
-## Perl: komprimierter Dump + DB-Wiederherstellung
-Beispielcode: 
+Achten Sie außerdem darauf, die allgemeinen Informationen des Beispielbefehls mit den spezifischen Informationen der betreffenden Datenbank zu ersetzen. Wir empfehlen Ihnen, nach dem Import die Backup-Datei aus dem Verzeichnis, in das Sie sie hochgeladen haben, zu löschen.
 
-```
-#!/usr/bin/perl
+## Weiterführende Informationen
 
-print "Datei wird dekomprimiert.....
-<br>";
-system("gunzip testbackup.sql.gz");
-print "Ihre Datenbank wird wiederhergestellt.......
-<br>";
-system("cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport");
-print "Vorgang abgeschlossen.";
-```
-
-## Über einen Befehl via SSH
-
-## Sie benötigen:
-
-- FTP-Login und Passwort, damit Sie sich mit Ihrem Webhosting verbinden können.
-
-- Ein Angebot, bei dem eine SSH-Verbindung möglich ist ([Details zu unseren Angeboten](https://www.ovh.de/hosting/))
-
-Eine Anleitung zur SSH-Verbindung finden Sie hier:
-
-- [https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings/](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings/)
-
-## Datenbankimport via SSH
-Verbinden Sie sich per SSH mit ihrem Webhosting her.
-
-Begeben Sie sich in das Verzeichnis, wo Sie die zu importierende Datei abgelegt haben. Dann müssen Sie folgenden Befehl eingeben:
-
-Bitte den Code entsprechend anpassen und eingeben: 
-
-```
-cat name_der_datenbank.sql | mysql --host=sql_server --user=name_der_datenbank --password=passwort name_der_datenbank
-```
-
-Hier ein Beispiel für einen korrekten Code: 
-
-```
-cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport
-```
-
-## Fehler aufgrund des Datenbanknamens
-Es kann auch notwendig sein, folgende Zeile oben in Ihrer Backup-Datei zu ergänzen:
-
-```
-use name_der_datenbank;
-```
-
-name_der_datenbank entspricht hier dem Namen der Datenbank, in die Sie diese Daten importieren möchten.
-
-## Glossar
-*Dump: Backup-Datei der Datenbank Ihrer Webseite.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
