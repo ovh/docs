@@ -21,7 +21,7 @@ section: Getting Started
 
 - [iPad iOS 7](https://www.ovh.co.uk/hosting/guides/g1348.mail_mutualise_guide_configuration_sous_ipad_ios_7)
 
-[iPhone iOS 3](https://www.ovh.co.uk/fr/hosting/guides/g1296.mail_mutualise_guide_configuration_iphone_ios_3)
+- [iPhone iOS 3](https://www.ovh.co.uk/fr/hosting/guides/g1296.mail_mutualise_guide_configuration_iphone_ios_3)
 
 - [iPhone iOS 9.1](https://www.ovh.co.uk/fr/hosting/guides/g2004.mail_mutualise_guide_configuration_iphone_ios_91)
 
@@ -53,35 +53,35 @@ section: Getting Started
 ## Access
 You can send and receive emails via our Webmail by [clicking here](https://ssl0.ovh.net/en/:).
 
-Access a guide on how to use Webmail [url=https://www.ovh.co.uk/fr/hosting/guides/g1302.webmail_guide_utilisation_roundcube"]
-here[/url].
+Access a guide on how to use Webmail [here](https://www.ovh.co.uk/fr/hosting/guides/g1302.webmail_guide_utilisation_roundcube).
 
-![](images/img_2007.jpg){.thumbnail}
+![](images/img_2007.jpg)
+
+
 
 
 ## IMAP configuration (Recommended)
 Here is the information you need to enter to set up an IMAP email account.
 
-Configure IMAP with SSL security enabled or disabled: 
+Configure IMAP with SSL security enabled or disabled:
 
-Email address: Your full email address.
-Password: The password you set in the [Control Panel](https://www.ovh.com/manager/web/login.html).
-User name: Your full OVH email address.
-Incoming server The incoming mail server:SSL0.OVH.NET
-Incoming server port:993 or 143
-Outgoing server: The outgoing mail server SSL0.OVH.NET
-Outgoing server port:465 or 587
+|Option|Value|
+|---|---|
+|Email address|Your full email address.|
+|Password|The password you set in the [Control Panel](https://www.ovh.com/manager/web/login.html).|
+|User name|Your full OVH email address.|
+|Incoming server|ssl0.ovh.net|
+|Incoming server port|993 or 143|
+|Outgoing server|ssl0.ovh.net|
+|Outgoing server port|465 or 587|
+|Outgoing server requires authentication|Yes|
 
 Ports 143 and 587 correspond to a disabled SSL Security.
+
 Ports 993 and 465 correspond to enabled SSL security. 
 
-
-- You have to enable authentication for the SMTP outgoing server.
-
-
-| Ports | SSL
-enabled | SSL
-disabled |
+|Ports|SSL enabled|SSL disabled|
+|---|---|---|
 |Incoming|993|143|
 |Outgoing|465|587|
 
@@ -93,24 +93,24 @@ Here is the information you need to enter to set up a POP email account.
 
 Configure POP with SSL security enabled or disabled: 
 
-Email address: Your full email address.
-Password: The password you set in the [Control Panel](https://www.ovh.com/manager/web/login.html).
-User name: Your full OVH email address.
-Incoming server The incoming mail server: SSL0.OVH.NET
-Incoming server port: 995 or 110
-Outgoing server: The outgoing mail server: SSL0.OVH.NET
-Outgoing server port:465[/] or 587
+|Option|Value|
+|---|---|
+|Email address|Your full email address.|
+|Password|The password you set in the [Control Panel](https://www.ovh.com/manager/web/login.html).|
+|User name|Your full OVH email address.|
+|Incoming server|ssl0.ovh.net|
+|Incoming server port|995 or 110|
+|Outgoing server|ssl0.ovh.net|
+|Outgoing server port|465 or 587|
+|Outgoing server requires authentication|Yes|
 
-Ports 110 and 
-587 correspond to a disabled SSL Security.
+
+Ports 110 and 587 correspond to a disabled SSL Security.
+
 Ports 995 and 465 correspond to an enabled SSL Security.
 
-
-- You have to enable authentication for the outgoing SMTP server.
-
-
-| Ports | SSL
-enabled | SSLdisabled |
+|Ports|SSL enabled|SSLdisabled|
+|---|---|---|
 |Incoming|995|110|
 |Outgoing|465|587|
 
@@ -129,7 +129,4 @@ Otherwise, this error may occur:
 
 
 
-- Make sure that SMTP authentication for outgoing messages is enabled in your email client.
-
-
-
+Make sure that SMTP authentication for outgoing messages is enabled in your email client.
