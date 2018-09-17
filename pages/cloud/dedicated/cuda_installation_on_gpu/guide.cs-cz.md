@@ -1,5 +1,5 @@
 ---
-title: Instalace CUDA na dedikovaném serveru GPU
+title: 'Instalace CUDA na dedikovaném serveru GPU'
 slug: instalace-cuda-dedikovany-server
 section: Ostatní
 ---
@@ -170,4 +170,4 @@ Wed Nov 1 09:14:38 2017
 
 ## Více informací
 
-Sdílejte své zkušenosti s uživatelskou komunitou na <https://community.ovh.com>.
+Sdílejte své zkušenosti s uživatelskou komunitou na <https://www.ovh.cz/community/knowledge/>.
