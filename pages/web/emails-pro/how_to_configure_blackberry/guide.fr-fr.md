@@ -3,7 +3,7 @@ title: BlackBerry - Configuration de l’adresse E-mail Pro
 slug: configuration-blackberry
 excerpt: Retrouvez ici comment configurer votre adresse E-mail Pro sur BlackBerry
 section: Configuration client de messagerie
-order: 10
+order: 91
 ---
 
 ## Généralités
