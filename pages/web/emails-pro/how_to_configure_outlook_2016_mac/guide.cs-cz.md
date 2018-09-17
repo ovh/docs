@@ -3,6 +3,7 @@ title: 'Konfigurace účtů E-mail Pro v aplikaci Outlook 2016 pro Mac'
 slug: konfigurace-outlook-2016-mac
 excerpt: 'Zjistěte, jak nakonfigurovat účet E-mail Pro v aplikaci Outlook 2016 pro operační systém macOS'
 section: 'Konfigurace e-mailového klienta'
+order: 2
 ---
 
 **Poslední aktualizace 11/04/2018**

@@ -3,6 +3,7 @@ title: Configurer son compte E-mail Pro sur Android via l'application Gmail
 slug: configuration-android
 excerpt: Apprenez à configurer un compte E-mail Pro sur Android, via l'application Gmail
 section: Configuration client de messagerie
+order: 5
 ---
 
 **Dernière mise à jour le 21/02/2018**

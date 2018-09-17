@@ -2,7 +2,8 @@
 title: 'Configuring an Email Pro account on the Gmail online interface'
 slug: gmail-configuration
 excerpt: 'Find out how to configure an Email Pro account on the Gmail online interface'
-section: 'Other email clients'
+section: 'Email client configuration'
+order: 6
 ---
 
 **Last updated 07th July 2018**

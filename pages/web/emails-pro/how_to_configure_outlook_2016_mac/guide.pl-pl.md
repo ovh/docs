@@ -3,6 +3,7 @@ title: 'Konfiguracja konta E-mail Pro w programie Outlook 2016 na urządzeniu Ma
 slug: konfiguracja-outlook-2016-mac
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook 2016 na urządzeniu Mac'
 section: 'Konfiguracja programu pocztowego'
+order: 2
 ---
 
 **Ostatnia aktualizacja dnia 2018-08-06**

@@ -3,6 +3,7 @@ title: Outlook.com - Configuration de l’adresse E-mail Pro
 slug: configuration-outlook-com
 excerpt: Retrouvez ici les informations pour configurer votre adresse E-mail Pro sur outlook.com
 section: Configuration client de messagerie
+order: 8
 ---
 
 ## Généralités

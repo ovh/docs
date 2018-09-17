@@ -3,6 +3,7 @@ title: Konfigurace účtů služby E-mail Pro na iPhonu nebo iPadu
 slug: konfigurace-ios
 excerpt: Zjistěte, jak nakonfigurovat účet E-mail Pro v aplikaci Mail na svém iPhonu či iPadu
 section: Konfigurace e-mailového klienta
+order: 3
 ---
 
 **Poslední aktualizace 20/03/2018**

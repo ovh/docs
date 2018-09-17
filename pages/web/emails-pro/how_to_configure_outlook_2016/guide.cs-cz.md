@@ -3,6 +3,7 @@ title: 'Konfigurace účtů E-mail Pro v aplikaci Outlook 2016 pro Windows'
 slug: konfigurace-outlook-2016
 excerpt: 'Zjistěte, jak nakonfigurovat účet E-mail Pro v aplikaci Outlook 2016 pro operační systém Windows'
 section: 'Konfigurace e-mailového klienta'
+order: 1
 ---
 
 **Poslední aktualizace 11/04/2018**

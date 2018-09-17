@@ -3,6 +3,7 @@ title: 'Konfiguracja konta E-mail Pro na urządzeniu z Android przy użyciu apli
 slug: konfiguracja-android
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro na urządzeniu z systemem Android przy użyciu aplikacji Gmail'
 section: 'Konfiguracja programu pocztowego'
+order: 5
 ---
 
 **Ostatnia aktualizacja dnia 2018-08-06**
