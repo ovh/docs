@@ -3,6 +3,7 @@ title: 'Konfiguration von E-Mail Pro auf Outlook 2016 für Windows'
 slug: konfiguration-outlook-2016
 excerpt: 'So konfigurieren Sie Ihren E-Mail Pro Account auf Outlook 2016 für Windows'
 section: 'Konfiguration des E-Mail-Clients'
+order: 1
 ---
 
 **Stand 29.06.2018**

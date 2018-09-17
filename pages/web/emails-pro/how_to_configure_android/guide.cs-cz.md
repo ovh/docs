@@ -3,6 +3,7 @@ title: Konfigurace účtu E-mail Pro na Androidu prostřednictvím aplikace Gmai
 slug: konfigurace-android
 excerpt: Zjistěte, jak nakonfigurovat účet E-mail Pro na Androidu prostřednictvím aplikace Gmail
 section: Konfigurace e-mailového klienta
+order: 5
 ---
 
 **Poslední aktualizace 22/03/2018**

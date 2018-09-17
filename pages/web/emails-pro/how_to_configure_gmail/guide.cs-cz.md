@@ -2,7 +2,8 @@
 title: 'Konfigurace účtu E-mail Pro v rozhraní Gmail'
 slug: konfigurace-gmail
 excerpt: 'Seznamte se s postupem pro konfiguraci účtu služby E-mail Pro </br>v online rozhraní Gmail'
-section: 'Ostatní platformy'
+section: 'Konfigurace e-mailového klienta'
+order: 6
 ---
 
 **Poslední aktualizace 03/08/2018**

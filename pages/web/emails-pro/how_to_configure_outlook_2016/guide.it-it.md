@@ -3,6 +3,7 @@ title: 'Configurare un account Email Pro su Outlook 2016 per Windows'
 slug: configurazione-outlook-2016
 excerpt: 'Scopri come configurare un account Email Pro su Outlook 2016 per Windows'
 section: 'Configurazione di un client di posta'
+order: 1
 ---
 
 **Ultimo aggiornamento: 23/08/2018**

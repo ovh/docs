@@ -3,6 +3,7 @@ title: Configurar una cuenta Email Pro en Mail de macOS
 slug: configurar-email-pro-mail-macos
 excerpt: Cómo configurar una cuenta Email Pro en Mail de macOS El Capitan, Sierra y High Sierra
 section: Configuración del cliente de correo
+order: 4
 ---
 
 **Última actualización: 12/03/2018**

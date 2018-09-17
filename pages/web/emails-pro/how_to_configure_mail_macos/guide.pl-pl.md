@@ -3,6 +3,7 @@ title: 'Konfiguracja konta E-mail Pro w aplikacji Mail na urządzeniach z system
 slug: konfiguracja-email-pro-mail-macos
 excerpt: 'Dowiedz się, jak skonfigurować Twoje konto E-mail Pro w aplikacji Mail na urządzeniach z systemami macOS: El Capitan, Sierra i High Sierra'
 section: 'Konfiguracja programu pocztowego'
+order: 4
 ---
 
 **Ostatnia aktualizacja dnia 2018-08-02**

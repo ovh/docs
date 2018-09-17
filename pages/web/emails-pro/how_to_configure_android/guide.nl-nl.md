@@ -3,6 +3,7 @@ title: Configuratie van uw E-mail Pro op Android via de Gmail-app
 slug: configuratie-android
 excerpt: Leer hoe u een E-mail Pro-account kunt configureren op Android, via de Gmail-app
 section: Configuratie van een e-mailclient
+order: 5
 ---
 
 **Laatste update 26-02-2018**

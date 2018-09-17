@@ -3,6 +3,7 @@ title: 'Konfiguracja konta e-mail Pro na urządzeniu iPhone lub iPad'
 slug: konfiguracja-iphone
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro na urządzeniu iPhone lub iPad przy użyciu aplikacji Mail'
 section: 'Konfiguracja programu pocztowego'
+order: 3
 ---
 
 **Ostatnia aktualizacja dnia 2018-08-01**

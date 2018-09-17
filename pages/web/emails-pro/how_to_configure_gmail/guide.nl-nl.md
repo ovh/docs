@@ -2,7 +2,8 @@
 title: 'Configuratie van uw E-mail Pro account op de Gmail webinterface'
 slug: configuratie-gmail
 excerpt: 'Ontdek hoe u uw E-mail Pro account op de online interface van Gmail kunt configureren. '
-section: 'Andere e-mailclients'
+section: 'Configuratie van een e-mailclient'
+order: 6
 ---
 
 **Laatste update 07-06-2018**

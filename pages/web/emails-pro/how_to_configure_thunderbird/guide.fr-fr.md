@@ -3,6 +3,7 @@ title: Thunderbird 45.8.0 - Configuration de l’adresse E-mail Pro
 slug: configuration-thunderbird-45-8-0
 excerpt: Retrouvez ici comment configurer votre adresse E-mail Pro sur Thunderbird 45.8.0
 section: Configuration client de messagerie
+order: 9
 ---
 
 ## Généralités

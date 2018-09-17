@@ -3,6 +3,7 @@ title: 'Konfiguration von E-Mail Pro auf iPhone oder iPad'
 slug: iphone-konfiguration
 excerpt: 'Hier erfahren Sie, wie Sie einen E-Mail Pro Account via Mail App auf einem iPhone oder iPad einrichten.'
 section: 'Konfiguration des E-Mail-Clients'
+order: 3
 ---
 
 **Stand 27.06.2018**

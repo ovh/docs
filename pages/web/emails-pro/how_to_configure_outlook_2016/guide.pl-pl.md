@@ -3,6 +3,7 @@ title: 'Konfiguracja konta E-mail Pro w programie Outlook 2016 na systemie Windo
 slug: konfiguracja-outlook-2016
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook 2016 na urządzeniu z systemem Windows'
 section: 'Konfiguracja programu pocztowego'
+order: 1
 ---
 
 **Ostatnia aktualizacja dnia 2018-08-06**

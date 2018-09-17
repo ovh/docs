@@ -3,6 +3,7 @@ title: 'Configuring your Email Pro account in the Mail application for Windows 1
 slug: mail-configuration-windows-10
 excerpt: 'Find out how to configure an Email Pro account on the Mail application for Windows 10'
 section: 'Email client configuration'
+order: 7
 ---
 
 **Last updated 4th April 2018**

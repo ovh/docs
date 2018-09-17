@@ -3,6 +3,7 @@ title: 'Konfiguration Ihres E-Mail Pro Accounts in Android über die Gmail-App'
 slug: konfiguration-android
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie Ihren E-Mail Pro Account in Android über die Gmail-App einrichten.'
 section: 'Konfiguration des E-Mail-Clients'
+order: 5
 ---
 
 **Stand 14.09.2018**
