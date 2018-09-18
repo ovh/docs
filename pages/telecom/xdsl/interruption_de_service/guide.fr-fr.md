@@ -5,13 +5,18 @@ excerpt: 'Découvrez comment rétablir votre service suite à une coupure compl�
 section: 'Diagnostic et dépannage'
 ---
 
-**Dernière mise à jour le 05/09/2018**
+**Dernière mise à jour le 18/09/2018**
 
 ## Objectif
 
 Vous n'avez actuellement pas accès à Internet ou vous rencontrez des coupures intermittentes ? Nous vous proposons quelques vérifications et manipulations simples pouvant vous permettre de vous dépanner seul et de rétablir votre service.
 
 **Découvrez comment rétablir votre service suite à sa coupure complète ou partielle.**
+
+> [!primary]
+>
+> Pour vous accompagner au mieux dans le rétablissement de vos services, vous avez également la possibilité d'utiliser notre assistant de dépannage. Pour y accéder, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} dans la section « Télécom ». Une fois positionné sur l'accès internet concerné, cliquez sur `Lancer le diagnostic`{.action}. 
+>
 
 ## Prérequis
 
