@@ -5,13 +5,19 @@ excerpt: 'Découvrez comment rétablir la synchronisation de votre ligne xDSL OV
 section: 'Diagnostic et dépannage'
 ---
 
-**Dernière mise à jour le 09/07/2018**
+**Dernière mise à jour le 18/09/2018**
 
 ## Objectif
 
 Une coupure de synchronisation est généralement occasionnée par un élément se situant à votre domicile. Quelques vérifications et manipulations simples peuvent vous permettre de dépanner vous-même la situation et de rétablir votre accès à Internet.
 
 **Découvrez comment rétablir la synchronisation de votre ligne xDSL OVH suite à une coupure.**
+
+> [!primary]
+>
+> Pour vous accompagner au mieux dans le rétablissement de vos services, vous avez également la possibilité d'utiliser notre assistant de dépannage. Pour y accéder, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} dans la section « Télécom ». Une fois positionné sur l'accès internet concerné, cliquez sur `Lancer le diagnostic`{.action}. 
+>
+
 
 ## Prérequis
 
