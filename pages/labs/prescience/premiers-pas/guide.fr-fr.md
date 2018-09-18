@@ -67,7 +67,7 @@ Au fil de votre utilisation, cet affichage sera composé de la liste d'exécutio
 
 ## Liste des sources
 
-Tout algorithme d'apprentissage automatique repose sur un jeu de données initial. Dans le cas de Pescience, ce jeu de données s'appelle « la source » et il correspond aux données brutes, non modifiées, que l'utilisateur dépose sur l'application et qui seront utilisées comme base des traitements.
+Tout algorithme d'apprentissage automatique repose sur un jeu de données initial. Dans le cas de Prescience, ce jeu de données s'appelle « la source » et il correspond aux données brutes, non modifiées, que l'utilisateur dépose sur l'application et qui seront utilisées comme base des traitements.
 
 Afin de lister toutes les sources déposées sur l'application, cliquez sur l'onglet `Sources`{.action}.
 
@@ -139,7 +139,7 @@ Une fois le *dataset* construit, Prescience est prêt à démarrer une optimisat
 
 La phase d'optimisation consiste à trouver l'algorithme, ainsi que les hyperparamètres associés qui permettront de générer le meilleur modèle de prédiction sur notre jeu de données.
 
-Pour ce faire, le système démarre plusieurs entraînements avec différents algorithmes et hyperparamètres sur plusieurs sous-ensembles de notre jeu de données (aussi appelé « k-fold »). Les résultats de ces entraînements sont ensuite agrégés par le système afin de sélectionner les hyperparamètres les plus pertinents à tester pour les prochaines itérations.
+Pour ce faire, le système démarre plusieurs entraînements avec différents algorithmes et hyperparamètres sur plusieurs sous-ensembles de notre jeu de données (aussi appelés « k-fold »). Les résultats de ces entraînements sont ensuite agrégés par le système afin de sélectionner les hyperparamètres les plus pertinents à tester pour les prochaines itérations.
 
 Cette phase d'optimisation possède un budget initial renseigné par l'utilisateur. Elle ne s'arrête pas tant que le budget n'est pas épuisé.
 
