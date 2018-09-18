@@ -6,7 +6,7 @@ legacy_guide_number: '7766560'
 section: 'OVH functies'
 ---
 
-**Laatste update 17-09-2018**
+**Laatste update 18-09-2018**
 
 ## Introductie
 
@@ -31,10 +31,11 @@ U bevindt zich nu in het onderdeel `Summary`, hier worden uw IP-blokken en de ba
 ![Informatie over IP's en blokken](images/network_02.png){.thumbnail}
 
 In het gedeelte **IP Block** worden alle IP-adressen van uw blok vermeld. Let op, u kunt **vijf van de IP-blokken niet gebruiken; deze zijn gereserveerd** voor configuratie en hoge beschikbaarheid:
-- Het eerste IP-adres, dit geeft uw blok op de router aan;
-- Het laatste IP-adres, dit is de **broadcast**;
-- Het op één na laatste IP-adres, uw **gateway**;
-- Twee IP-adressen vóór de gateway, die worden gebruikt als HSRP (Hot Standby Router Protocol) op de routers.
+
+* Het eerste IP-adres, dit geeft uw blok op de router aan;
+* Het laatste IP-adres, dit is de **broadcast**;
+* Het op één na laatste IP-adres, uw **gateway**;
+* Twee IP-adressen vóór de gateway, die worden gebruikt als HSRP (Hot Standby Router Protocol) op de routers.
 
 ![IP-blokken](images/network_03.png){.thumbnail}
 
