@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment prendre en main la plateforme OVH Prescience'
 section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 07/09/2018**
+**Dernière mise à jour le 19/09/2018**
 
 ## Objectif
 
