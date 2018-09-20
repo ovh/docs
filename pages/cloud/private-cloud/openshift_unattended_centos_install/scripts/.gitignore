@@ -3,3 +3,4 @@ CentOS-7-x86_64-DVD-1804.iso
 kickstart.iso
 *.retry
 activate
+myvars.yml

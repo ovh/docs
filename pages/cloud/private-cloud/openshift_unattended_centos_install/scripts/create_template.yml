@@ -3,7 +3,6 @@
   hosts: localhost
 
   environment:
-    GOVC_URL: "{{ govc_url | default(ansible_env.GOVC_URL) }}"
     GOVC_USERNAME: "{{ govc_username | default(ansible_env.GOVC_USERNAME) }}"
     GOVC_PASSWORD: "{{ govc_password | default(ansible_env.GOVC_PASSWORD) }}"
 
