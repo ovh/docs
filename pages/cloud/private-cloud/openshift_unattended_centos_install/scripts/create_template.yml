@@ -1,0 +1,148 @@
+---
+- name: Recipe Centos template
+  hosts: localhost
+
+  environment:
+    GOVC_URL: "{{ govc_url | default(ansible_env.GOVC_URL) }}"
+    GOVC_USERNAME: "{{ govc_username | default(ansible_env.GOVC_USERNAME) }}"
+    GOVC_PASSWORD: "{{ govc_password | default(ansible_env.GOVC_PASSWORD) }}"
+
+  vars:
+    centos_iso: "{{ centos_iso_url | basename }}"
+
+  tasks:
+    - name: Check if govc is installed
+      command: which govc
+
+    - name: Check if govc is configured
+      command: govc about
+
+    - name: Get remote ISO "{{ ds_iso_dir }}/{{ centos_iso }}" info
+      command: govc datastore.ls -json -l -ds "{{ datastore }}" "{{ ds_iso_dir }}/{{ centos_iso }}"
+      register: centos_iso_remote_stat
+      ignore_errors: yes
+
+    # - name: Extract remote ISO "{{ ds_iso_dir }}/{{ centos_iso }}" size
+    #   set_fact:
+    #     centos_iso_remote_stat: "{{ {'size': 0 if centos_iso_remote_stat.rc != 0 else (centos_iso_remote_stat.stdout | from_json)[0].File[0].FileSize} }}"
+
+    - name: Upload "{{ centos_iso }}" to "{{ ds_iso_dir }}/"
+      vsphere_copy:
+        login: "{{ ansible_env.GOVC_USERNAME }}"
+        password: "{{ ansible_env.GOVC_PASSWORD }}"
+        datacenter: "{{ datacenter }}"
+        datastore: "{{ datastore }}"
+        host: "{{ host }}"
+        path: "{{ ds_iso_dir }}/{{ centos_iso }}"
+        src: "{{ playbook_dir }}/{{ centos_iso }}"
+      when: centos_iso_remote_stat.rc != 0
+
+    - name: Delete existing remote file "{{ ds_iso_dir }}/kickstart.iso"
+      command: govc datastore.rm -ds "{{ datastore }}" "{{ ds_iso_dir }}/kickstart.iso"
+      ignore_errors: yes
+
+    - name: Upload kickstart.iso to "{{ ds_iso_dir }}/"
+      vsphere_copy:
+        login: "{{ ansible_env.GOVC_USERNAME }}"
+        password: "{{ ansible_env.GOVC_PASSWORD }}"
+        datacenter: "{{ datacenter }}"
+        datastore: "{{ datastore }}"
+        host: "{{ host }}"
+        path: "{{ ds_iso_dir }}/kickstart.iso"
+        src: "{{ playbook_dir }}/kickstart.iso"
+
+    - name: Remove "{{ template_name }}"
+      vmware_guest:
+        username: "{{ ansible_env.GOVC_USERNAME }}"
+        password: "{{ ansible_env.GOVC_PASSWORD }}"
+        hostname: "{{ host }}"
+        name: "{{ template_name }}"
+        force: true
+        state: absent
+      ignore_errors: yes
+
+    # # - name: Create VM "{{ template_name }}"
+    # #   vmware_guest:
+    # #     username: "{{ ansible_env.GOVC_USERNAME }}"
+    # #     password: "{{ ansible_env.GOVC_PASSWORD }}"
+    # #     hostname: "{{ host }}"
+    # #     folder: "{{ ds_vm_dir }}"
+    # #     name: "{{ template_name }}"
+    # #     datacenter: "{{ datacenter }}"
+    # #     guest_id: centos64Guest
+    # #     cdrom:
+    # #       type: iso
+    # #       iso_path: "[{{ datastore }}] {{ ds_iso_dir }}/{{ centos_iso }}"
+    # #     cdrom:
+    # #       type: iso
+    # #       iso_path: "[{{ datastore }}] {{ ds_iso_dir }}/kickstart.iso"
+    # #     disk:
+    # #     - size_gb: 8
+    # #       type: thin
+    # #       datastore: "{{ datastore }}"
+    # #     hardware:
+    # #       memory_mb: 1024
+    # #       num_cpus: 1
+    # #     networks:
+    # #     - name: "{{ vm_network }}"
+    # #     state: poweredoff
+
+    - name: Create VM "{{ template_name }}"
+      command: govc vm.create -ds "{{ datastore }}" -pool "{{ ressource_pool }}" -net "{{ vm_network }}" -g centos64Guest -m 2048 -c 2 -disk 16GB -on=0 -annotation "Centos7 template" "{{ template_name }}"
+
+    - name: Add CDROM device
+      command: govc device.cdrom.add -vm "{{ template_name }}"
+      register: cdrom1
+
+    - name: Insert CDROM "{{ cdrom1.stdout }}"
+      command: govc device.cdrom.insert -ds "{{ datastore }}" -device "{{ cdrom1.stdout }}" -vm "{{ template_name }}" "{{ ds_iso_dir }}/{{ centos_iso }}"
+    
+    - name: Add CDROM device
+      command: govc device.cdrom.add -vm "{{ template_name }}"
+      register: cdrom2
+
+    - name: Insert CDROM "{{ cdrom2.stdout }}"
+      command: govc device.cdrom.insert -ds "{{ datastore }}" -device "{{ cdrom2.stdout }}" -vm "{{ template_name }}" "{{ ds_iso_dir }}/kickstart.iso"
+
+    - name: Change boot order
+      command: govc device.boot -vm "{{ template_name }}" -order cdrom,disk
+
+    - name: Start VM "{{ template_name }}"
+      vmware_guest:
+        username: "{{ ansible_env.GOVC_USERNAME }}"
+        password: "{{ ansible_env.GOVC_PASSWORD }}"
+        hostname: "{{ host }}"
+        name: "{{ template_name }}"
+        state: poweredon
+
+    - name: Wait for VMware tools to become available
+      vmware_guest_tools_wait:
+        username: "{{ ansible_env.GOVC_USERNAME }}"
+        password: "{{ ansible_env.GOVC_PASSWORD }}"
+        hostname: "{{ host }}"
+        name: "{{ template_name }}"
+
+    - name: Stop VM "{{ template_name }}"
+      vmware_guest:
+        username: "{{ ansible_env.GOVC_USERNAME }}"
+        password: "{{ ansible_env.GOVC_PASSWORD }}"
+        hostname: "{{ host }}"
+        name: "{{ template_name }}"
+        state: poweredoff
+
+    - name: Change boot order
+      command: govc device.boot -vm "{{ template_name }}" -order disk
+
+    - name: Eject CDROM device "{{ cdrom1.stdout }}"
+      command: govc device.cdrom.eject -device "{{ cdrom1.stdout }}" -vm "{{ template_name }}"
+
+    - name: Eject CDROM device "{{ cdrom2.stdout }}"
+      command: govc device.cdrom.eject -device "{{ cdrom2.stdout }}" -vm "{{ template_name }}"
+
+    - name: Convert "{{ template_name }}" to a template
+      vmware_guest:
+        username: "{{ ansible_env.GOVC_USERNAME }}"
+        password: "{{ ansible_env.GOVC_PASSWORD }}"
+        hostname: "{{ host }}"
+        name: "{{ template_name }}"
+        is_template: yes

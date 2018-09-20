@@ -1,0 +1,48 @@
+---
+- name: Recipe to create unattended install centos iso file
+  hosts: localhost
+
+  vars:
+    centos_iso: "{{ centos_iso_url | basename }}"
+
+  tasks:
+  - name: Check if iso already fetched
+    stat:
+      path: "{{ playbook_dir }}/{{ centos_iso }}"
+    register: iso_install
+
+  - name: Download Centos installation iso file (might take a while)
+    get_url:
+      url: "{{ centos_iso_url }}"
+      dest: "{{ playbook_dir }}/{{ centos_iso }}"
+      mode: 0440
+    when: iso_install.stat.exists == False
+
+  - name: Extract open-vm-tools package from ISO
+    iso_extract:
+      image: "{{ playbook_dir }}/{{ centos_iso }}"
+      dest: "{{ playbook_dir }}"
+      files:
+      - Packages/TRANS.TBL
+
+  - name: Ensure open-vm-tools package is present
+    command: grep "open-vm-tools-.*\.rpm" "{{ playbook_dir }}/TRANS.TBL"
+
+  - name: Clean extracted files
+    file:
+      state: absent
+      path: "{{ playbook_dir }}/TRANS.TBL"
+
+  - name: create temporary kickstart iso directory
+    tempfile:
+      state: directory
+      suffix: ks
+    register: ks_tmp_dir
+
+  - name: Generate Kickstart file
+    template:
+      src: "{{ playbook_dir }}/kickstart.cfg.j2"
+      dest: "{{ ks_tmp_dir.path }}/KS.CFG"
+
+  - name: Create iso file
+    command: genisoimage -V OEMDRV -o "{{ playbook_dir }}/kickstart.iso" "{{ ks_tmp_dir.path }}"
