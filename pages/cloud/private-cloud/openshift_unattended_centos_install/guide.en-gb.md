@@ -109,4 +109,4 @@ We have learn how to create a custion unattended installation CentOS ISO file an
 
 ## Go further
 
-The next step is to deploy our first [OpenShift Origin mono-server instance]({filename}../openshift_mono_server/guide.en-us.md).
+The next step is to deploy our first [OpenShift Origin mono-server instance]({filename}../openshift_mono_server/guide.en-gb.md).
