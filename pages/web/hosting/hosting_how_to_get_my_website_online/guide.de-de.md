@@ -1,342 +1,152 @@
 ---
-title: 'Webhosting: Meine Seite online stellen'
-description: 'Webhosting: Meine Seite online stellen'
+title: 'Eine Website auf Ihrem Webhosting online stellen'
 slug: webhosting_meine_seite_online_stellen
+description: 'Webhosting: Meine Seite online stellen'
 legacy_guide_number: g1374
+excerpt: 'So stellen Sie eine Website auf Ihrem OVH Webhosting online'
+section: 'Erste Schritte'
+order: 2
 ---
 
+**Stand 20.09.2018**
 
-## Dateien per FTP übertragen
+## Einleitung
 
-###  Allgemeines
-Damit eine Internetseite korrekt funktioniert und angezeigt wird, muss sie im richtigen Verzeichnis platziert sein. Normalerweise ist dies das "www"-Verzeichnis Ihres Webhostings.
-In einem ersten Schritt müssen Sie Ihre Dateien auf Ihr Hosting übertragen. Hierfür benötigen Sie ein FTP-Programm (File Transfer Protocol).
-Wir empfehlen hierfür die kostenlose Software [FileZilla](http://www.filezilla.de).
+Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einrichten oder einen Onlineshop eröffnen, mit anderen Ihr Hobby teilen oder Ihr Unternehmen darstellen und am Markt platzieren möchten: Sie können die gewünschte Website auf Ihrem [OVH Webhosting](https://www.ovh.de/hosting/){.external} hosten, solange diese mit der [Konfiguration unserer Infrastrukturen](http://pro.ovh.net/infos/){.external} kompatibel ist.
 
+**Hier erfahren Sie, wie Sie eine Website auf Ihrem OVH Webhosting online stellen.**
 
-### FTP-Zugangsdaten
+## Voraussetzungen
 
-Bei Bestellung Ihres OVH Hosting-Pakets wurde Ihnen eine E-Mail zur Verwendung Ihrer Services zugesandt. Darin finden Sie unter anderem Ihre FTP-Login-Daten. Je nach gewähltem Angebot und zugehöriger Domain sieht der Betreff in etwa folgendermaßen aus:
+- Sie besitzen ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
+- Sie haben die Bestätigungs-E-Mail zur Installation Ihres Webhostings erhalten.
+- Sie besitzen eine [Domain](https://www.ovh.de/domains/){.external}, über die Ihre Website erreichbar sein wird.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
 
-```
-/* Beispiel eines Angebots Perso für die Domain "ihre-domain.tld" */
+## Beschreibung
 
-[OVH Info] Webhosting für ihre-domain.tld installiert
-```
+### Schritt 1: Ihr Projekt definieren
 
+Um Ihr Vorhaben erfolgreich umzusetzen, ist es wichtig, dass Sie Ihr Ziel klar vor Augen haben. Was ist der Zweck Ihrer Website? Wie soll Sie online gestellt werden? Über Ihr OVH Webhosting Angebot stehen Ihnen mehrere Möglichkeiten für Ihr Website-Projekt zur Verfügung.
 
-Inhalt:
+- **Website mithilfe von 1-Klick-Modulen online stellen**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). OVH stellt Ihnen 4 verschiedene 1-Klick-Module zur Verfügung, die mit unseren Infrastrukturen kompatibel sind. Nähere Informationen finden Sie in der Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/){.external}.
 
+- **Website über gebrauchsfertige Vorlage manuell installieren**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). Die Vorlage installieren Sie selbst auf Ihrem OVH Webhosting.
 
-```
-[...]
-FTP-ZUGANGSDATEN:
+- **Website selbst erstellen**: Hier sind sowohl technische als auch Programmierkenntnisse erforderlich. Aber Sie haben auch die größte Gestaltungsfreiheit für eine Website ganz nach Ihren Vorstellungen.
 
-Mit diesen Zugangsdaten können Sie Ihre Website online stellen
-(Achtung: Ihre Daten müssen im Verzeichnis /www abgelegt werden)
+- **Bestehende Website zu OVH migrieren**: Die Migration einer Website kann sich als schwierig erweisen, wenn dabei eine Unterbrechung des Dienstes vermieden werden soll. Um Ihnen bei diesem Vorgang zu helfen, haben wir die folgende Anleitung erstellt: [„Migration Ihrer Website und E-Mails zu OVH“](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}.
 
-FTP-Server: ftp.ihre-domain.tld oder ftp.cluster0XX.ovh.net
-Benutzerlogin: loginftp
-Passwort: mDpFtP
 
-[...]
-```
+Nachdem Sie eine der Möglichkeiten ausgewählt haben, ergeben sich die folgenden zwei Optionen:
 
+- **Sie möchten Ihre Website mithilfe von 1-Klick-Modulen online stellen**: Lesen Sie die zugehörige Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/){.external}.
 
-Stellen Sie mit Ihrem Benutzerlogin und dem zugehörigen Passwort eine Verbindung her.
+- **Sie möchten keine 1-Klick-Module verwenden**: Stellen Sie Ihre Website manuell auf Ihrem Hosting online. In dieser Anleitung geben wir Ihnen einige Informationen, die Ihnen hierbei helfen. Sie ersetzen jedoch nicht die Unterstützung eines Webmasters.
+ 
+> [!warning]
+>
+> OVH stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVH leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+>
 
-Falls seit der Installation das FTP-Passwort über Ihr Kundencenter geändert wurde, können Sie das Passwort aus obiger Mail nicht mehr verwenden. Das Login hingegen ist unveränderlich. Bewahren Sie dieses gut auf.
+### Schritt 2: Websitedateien im Speicherplatz online stellen
 
+Um eine Website manuell auf einem Webhosting online zu stellen, sind mehrere Schritte notwendig. Je nach der zu installierenden Website sind manche Schritte optional und die Vorgehensweise kann ebenfalls unterschiedlich sein. Dennoch sind für die meisten gängigen Website-Projekte zwei hauptsächliche Schritte auszuführen, um eine Website online zu stellen − und als Erstes müssen die Dateien der Seite auf den Speicherplatz hochgeladen werden.
 
-### Passwortänderung über das Kundencenter
-Loggen Sie sich in Ihr Kundencenter ein und wählen Sie das betreffende Hosting im Menü links unter "Hosting-Pakete" aus.
-Klicken Sie dann auf den Tab "FTP-SSH".
-Klicken Sie dann auf das kleine Zahnrad neben Ihrem Login und anschließend auf "Das Passwort ändern".
-Auf der nachfolgenden Seite sehen Sie noch einmal Ihren Benutzerlogin.
-Geben Sie das gewünschte neue Passwort an, bestätigen Sie es durch erneute Eingabe und klicken Sie dann auf den Button "Bestätigen".
+Hierfür sind wiederum verschiedene Zwischenschritte nötig.
 
-Es kann einige Minuten dauern, bis die Änderung wirksam wird.
+#### 1. Websitedateien zusammentragen
 
+Vergewissern Sie sich, dass Sie alle Dateien der Website haben, die Sie online stellen möchten. Wenn Sie eine bereits bestehende Website migrieren möchten, erhalten Sie die Dateien bei Ihrem bisherigen Hosting-Anbieter.
 
-### Verwendung von FileZilla
+#### 2. In den Speicherplatz einloggen
 
-Zur Verwendung von FileZilla gibt es eine eigene Hilfe: [Hilfe zur Verwendung von FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/).
+Sie können sich mit einem FTP-Login, dem zugehörigen Passwort und einer Serveradresse in Ihren Speicherplatz einloggen. Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Hostings mitgeteilt. Wenn Sie kein Passwort besitzen, lesen Sie bitte die Anleitung [„Passwort eines FTP-Benutzers ändern“](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/){.external}.
 
-Sie benötigen folgende Informationen:
+Loggen Sie sich für die Serveradresse oder Ihre Login-Daten, die Sie für den Zugriff auf Ihren Speicherplatz benötigen, im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und klicken Sie links im Menü auf `Hosting-Pakete`{.action}. Wählen Sie das gewünschte Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}.
 
-- die Dateien Ihrer Webseite
-- ggf. die Backup-Dateien Ihrer Datenbank
+![website installation](images/get-website-online-step1.png){.thumbnail}
 
-Ihre FTP-Login-Daten:
+Wenn Sie alle nötigen Informationen haben, können Sie sich in Ihren Speicherplatz einloggen. Hierfür haben Sie drei Möglichkeiten:
 
-- Host: ftp.ihre-domain.tld  oder ftp.cluster0XX.ovh.net
-- Login: Ihr FTP-Login
-- Passwort: das zugehörige Passwort (vgl. die vorangegangenen Abschnitte)
-- Port: 21 (für SSH-Verbindung: 22 - beim Angebot Pro)
+- **OVH FTP-Explorer verwenden**: Dieser ermöglicht es Ihnen, über einen Webbrowser auf Ihren Speicherplatz zuzugreifen. Bleiben Sie für diese Option im Tab `FTP - SSH`{.action} und klicken Sie auf den Button `FTP Explorer`{.action}.
 
+- **FTP-kompatibles Programm verwenden**: Installieren Sie einen FTP-Client auf Ihrem Computer (zum Beispiel FileZilla). Bitte kontaktieren Sie den Herausgeber der installierten Software, wenn Sie für deren Verwendung Hilfe brauchen, da sie nicht von OVH entwickelt wurde.
 
+- **SSH-Zugang verwenden**: Um auf Ihren Speicherplatz zuzugreifen, müssen die entsprechenden Befehle in einem Terminal ausgeführt werden. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot erforderlich.
 
-![](images/img_1858.jpg){.thumbnail}
+#### 3. Dateien auf Ihren Speicherplatz hochladen
 
+Nachdem Sie sich in Ihren Speicherplatz eingeloggt haben, können Sie die Dateien Ihrer Website hochladen. **Achten Sie bitte besonders darauf, in welches Verzeichnis Sie die Dateien hochladen.** Standardmäßig werden diese im „www“-Ordner abgelegt. Sollten Sie über Ihr Webhosting mehrere Websites betreiben, haben Sie mit Sicherheit mehrere **Multisites** angelegt.
 
-## FTP-Zugangsdaten
+Gehen Sie in Ihrem OVH Kundencenter auf den Tab `Multisite`{.action}, um zu überprüfen, in welchem Ordner die neue Website veröffentlicht wird. Achten Sie in der angezeigten Tabelle auf das für die gewünschte Domain angegebene `Wurzelverzeichnis`{.action}. Veröffentlichen Sie die Dateien in diesem Verzeichnis.
 
-### Über das Kundencenter
-Über das Kundencenter können Sie Ihren FTP-Speicherplatz automatisch auf einen früheren Zeitpunkt zurücksetzen.
+Es kann sein, dass Sie auf Ihrem Speicherplatz eine Datei mit dem Namen „index.html“ finden. Diese wurde gegebenenfalls bei der Installation Ihres Hostings von OVH erstellt, um für Ihre Domain zunächst eine Standardseite anzuzeigen. Vergessen Sie bitte nicht, diese Datei zu löschen, wenn Sie Ihre Dateien online stellen.
 
-Wählen Sie hierfür im Kundencenter das betreffende Hosting im Menübereich "Hosting-Pakete" aus.
+![website installation](images/get-website-online-step2.png){.thumbnail}
 
-Gehen Sie dann in den Tab "FTP - SSH" und klicken Sie dort oben rechts auf den Button "Eine Sicherung wiederherstellen".
+### Schritt 3: Website mit einer Datenbank verbinden
 
-![](images/img_2690.jpg){.thumbnail}
-Im nächsten Schritt können Sie im Drop-Down-Menü die gewünschte Sicherung auswählen.
+> [!primary]
+>
+> Dieser Schritt ist optional, wenn Ihre Website nicht mit einer Datenbank verbunden werden muss.
+>
 
-Bitte beachten Sie: Die wiederhergestellten Daten werden die aktuellen Daten Ihres Hostings komplett ersetzen.
+Heute verwenden praktisch alle Content Management Systeme (CMS) wie WordPress oder Joomla! eine Datenbank, um dynamische Elemente einer Website wie zum Beispiel Kommentare oder Artikel zu speichern. Die Websitedateien und die Datenbank müssen unbedingt miteinander verbunden werden, damit die Seite korrekt funktioniert. Die Verbindung wird mithilfe einer Konfigurationsdatei hergestellt, die Informationen zur Datenbank enthält.
 
-Klicken Sie auf "Weiter", um den Vorgang zu berstätigen. Die Wiederherstellung der Dateien wird einige Stunden in Anspruch nehmen.
+Je nach Website wird die Verbindung manuell eingerichtet oder über ein Interface der Website hergestellt. Hierzu werden verschiedene Zwischenschritte durchgeführt, von denen einige optional sein können.
 
+#### 1. Bestehende Datenbank übertragen (optional)
 
-- Bei dieser Methode wird Ihr FTP-Speicherplatz komplett wiederhergestellt. Anders verhält es sich bei der Wiederherstellung einer Sicherung über FileZilla.
+Wenn Sie eine bereits bestehende Website migrieren, erhalten Sie die Datenbankdateien bei Ihrem bisherigen Hosting-Anbieter. Wenn Sie eine neue Website erstellen, können Sie direkt zum nächsten Schritt übergehen.
 
+#### 2. Datenbank bei OVH erstellen (optional)
 
+Wenn Sie bereits eine Datenbank besitzen, die Sie verwenden möchten (beispielsweise aus einem [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot oder einer [SQL Private](https://www.ovh.de/hosting/sql-optionen.xml){.external} oder [Cloud DB](https://www.ovh.de/cloud/cloud-databases/){.external} Lösung), halten Sie bitte folgende Informationen bereit: Benutzername, zugehöriges Passwort, Name der Datenbank sowie die Serveradresse. Gehen Sie nun zum nächsten Schritt über.
 
-### Via FileZilla
-Zur Wiederherstellung einer vollständiger Sicherung oder einer bestimmten Datei via FileZilla gibt es eine eigene Hilfe: []({legacy}1593)
+Wenn Sie eine neue Datenbank bei OVH erstellen möchten, loggen Sie sich im [ OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und klicken Sie links im Menü auf `Hosting-Pakete`{.action}. Wählen Sie das gewünschte Hosting aus und gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
-## Datenbank
+Klicken Sie nun auf den Button `Datenbank erstellen`{.action} oder, wenn der Button nicht angezeigt wird, auf `Aktionen`{.action} und dann auf `Datenbank erstellen`{.action}. Folgen Sie nun den angezeigten Informationen.
 
-### Allgemeines
-In einer Datenbank können Sie die Informationen abspeichern, die zu Ihrer Webseite oder zu Ihren Applikationen gehören.
+![website installation](images/get-website-online-step3.png){.thumbnail}
 
-Sie können darin verschiedene Typen von Daten speichern: den Inhalt Ihrer Webseite, die URLs der Unterseiten, Informationen über Ihre Nutzer.
 
-Bei den OVH Webhosting gibt es verschiedene Datenbank-Engines: MySQL, PostgreSQL, SQL Server (verfügbar für das Angebot Windows).
+#### 3. Bestehende Datenbank importieren (optional)
 
+Wenn Sie eine bereits bestehende Website migrieren, importieren Sie die bestehende Datenbank in die neu erstellte Datenbank. Wenn Sie eine neue Website erstellen, können Sie direkt zum nächsten Schritt übergehen.
 
-### Erstellung
-Bei der Installation Ihres Webhostings wird die Inklusiv-Datenbank nicht automatisch installiert.
-Sie bekommen also auch nicht automatisch eine E-Mail mit entsprechenden Informationen.
-Zunächst müssen Sie Ihre Datenbank selbst erstellen.
-Loggen Sie sich in Ihr Kundencenter ein und wählen Sie das betreffende Hosting aus.
+Für den Import gibt es mehrere Möglichkeiten, beispielsweise über das OVH Kundencenter. Gehen Sie hierzu in Ihrem OVH Kundencenter zur Liste der Datenbanken, die für Ihren Dienst erstellt wurden, klicken Sie auf die drei Punkte rechts neben der neu erstellten Datenbank und dann auf `Datei importieren`{.action}. Folgen Sie nun den angezeigten Informationen.
 
-Klicken Sie dann im Menü "Datenbank" rechts auf den Button "Eine Datenbank erstellen".
+![website installation](images/get-website-online-step4.png){.thumbnail}
 
-![](images/img_2743.jpg){.thumbnail}
-Wählen Sie dann die Datenbank-Engine aus: "Mysql oder PostgreSQL."
-Wählen Sie außerdem den Datenbanktyp aus und klicken Sie anschließend auf "Weiter"
+#### 4. Website mit der Datenbank verbinden
 
-Im nächsten Schritt müssen Sie einen Benutzernamen und Passwort angeben.
+Nun, da die Datenbank verfügbar ist und Sie die Dateien in den Speicherplatz hochgeladenen haben, müssen diese nur noch miteinander verbunden werden. Vergewissern Sie sich, dass Sie über die Login-Daten der Datenbank verfügen: Benutzername, das zugehörige Passwort, Name der Datenbank und Serveradresse.
 
-Sie erhalten eine E-Mail mit den Login-Daten für die Datenbank.
+Wie Website und Datenbank miteinander verbunden werden, hängt von der Website ab, die Sie online stellen möchten. Die Vorgehensweise variiert je nach Konfiguration Ihrer Website und hat nichts mit OVH zu tun. Wir empfehlen Ihnen deshalb, den Herausgeber Ihrer Website oder einen spezialisierten Dienstleister zu kontaktieren, falls Sie weitere Hilfe benötigen.
 
-Einige Minuten später erhalten Sie eine weitere E-Mail mit allen Informationen zu Ihrer Datenbank.
+### Schritt 4: Auf Ihre Website zugreifen
 
-![](images/img_2694.jpg){.thumbnail}
+Nachdem Sie die Dateien auf den Speicherplatz hochgeladen und die Datenbank mit Ihrem Speicherplatz verbunden haben (falls Ihre Seite eine Datenbank nutzt), können Sie auf Ihre Website zugreifen. Sie sollte nun korrekt in Ihrem Webbrowser angezeigt werden.
 
+Ist das nicht der Fall, empfehlen wir Ihnen Folgendes:
 
-### Meine SQL-Login-Daten
+- **Überprüfen Sie die Konfiguration der Domain**: Eine fehlerhafte DNS-Konfiguration Ihrer Domain kann dazu führen, dass die gerade auf Ihr OVH Webhosting hochgeladene Website nicht korrekt angezeigt wird. Vergewissern Sie sich, dass der A-Eintrag in der DNS-Zone Ihrer Domain mit der IP-Adresse Ihres OVH Webhostings übereinstimmt.
 
-#### In der Info-Mail zur Datenbankinstallation
+- **Stellen Sie sicher, dass keine Dateien fehlen**: Es kann sein, dass Sie beim Hochladen der Dateien in Ihr OVH Webhosting einige Dateien vergessen haben oder ein Fehler aufgetreten ist. Gehen Sie bei entsprechenden Änderungen bitte vorsichtig vor, um die Verbindung zwischen der Website und der Datenbank nicht zu unterbrechen (falls Ihre Seite eine Datenbank nutzt).
 
-- Bitte beachten Sie: Bei der Installation Ihres Webhostings wird die Datenbank nicht automatisch erstellt.
+- **Überprüfen Sie den Code der Website auf Fehler**: Diese Überprüfung ist zwar technisch anspruchsvoll, aber es kann sein, dass die hochgeladenen Dateien Fehler enthalten und der Server die Website deshalb nicht korrekt oder überhaupt nicht anzeigen kann.
 
+Sollten Sie bei der Veröffentlichung Ihrer Website Schwierigkeiten haben, empfehlen wir Ihnen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes (zum Beispiel des installierten CMS) zu kontaktieren.
 
-Nach der Erstellung wird Ihnen eine E-Mail mit den Login-Daten für Ihre Datenbank zugesandt.
-Sie finden diese E-Mail auch jederzeit in Ihrem Kundencenter. Loggen Sie sich ein und klicken Sie rechts oben auf Namen/Login, dann auf "Mein Account" und dort im Menü links auf "Empfangene E-Mails".
+## Weiterführende Informationen
 
-![](images/img_2747.jpg){.thumbnail}
-Der Betreff dieser Mail sieht folgendermaßen aus:
+[Migration Ihrer Website und E-Mails zu OVH](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}
 
+[Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/){.external}
 
-```
-[OVH Info] MySQL Datenbank name_der_db
-```
+[Passwort eines FTP-Benutzers ändern](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/){.external}
 
-
-Inhalt:
-
-
-```
-[...]
-
-Ihre MySQL Datenbank wurde auf unserem Server installiert.
-
-Hier die technischen Daten:
----------------------------
-
-MySQL: 
-Server            : mysql51-66.pro
-Benutzername      : name_der_db
-Name der Datenbank: name_der_db
-Passwort          : nur Sie kennen es
-
-[...]
-```
-
-
-
-#### Passwortänderung über das Kundencenter
-Sie können das Passwort Ihrer Datenbank direkt über das Kundencenter ändern.
-
-
-- Bitte beachten Sie: Sie sollten bei der Änderung des Passworts sehr umsichtig vorgehen: Durch die Änderung können Webseiten und Services, die die Datenbank verwenden, unterbrochen werden.
-
-
-Wenn Sie das Passwort Ihrer Datenbank ändern möchten, wählen Sie im Kundencenter das betreffende Hosting aus und klicken Sie im Tab "Datenbank" auf das kleine Zahnrad neben der betreffenden Datenbank und anschließend auf "Das Passwort ändern".
-
-Falls sich zum Zeitpunkt der Änderung eine Webseite auf Ihrem Hosting befindet, denken Sie daran, auch die Konfigurationsdatei Ihrer Webseite anzupassen, damit diese sich mit dem neuen korrekten Passwort mit der Datenbank verbinden kann.
-
-
-### PhpMyAdmin-Verbindung
-Zunächst müssen Sie sich mit dem [PhpMyAdmin-Interface](https://phpmyadmin.ovh.net/) verbinden.
-
-Füllen Sie folgende Felder aus:
-
-
-- Server: Nutzer.mysql.db (den Nutzer finden Sie in der E-Mail zur Erstellung der Datenbank).
-
-- Benutzername: Den Nutzer finden Sie in der E-Mail zur Erstellung der Datenbank.
-
-- Password: das Passwort Ihrer Datenbank.
-
-- Version: Sie können sich wahlweise mit der aktuellen Version Ihrer Datenbank ("current") oder mit einer 1 oder 7 Tag(e) alten Sicherung verbinden.
-
-
-Klicken Sie dann auf"OK", um die Verbindung herzustellen.
-
-![](images/img_1960.jpg){.thumbnail}
-
-- Für Datenbanken des Typs MYSQL4 verwenden Sie bitte den Link unterhalb der Eingabemaske.
-
-
-
-
-### Export
-Wie exportiere ich meine SQL-Datenbank? Welche verschiedenen Backup-Möglichkeiten gibt es?
-
-Alles zum Export erfahren Sie in folgender Anleitung: []({legacy}1394)
-
-![](images/img_1932.jpg){.thumbnail}
-
-
-### Import
-Wie importiere ich ein Backup meiner SQL-Datenbank? Welche verschiedenen Möglichkeiten habe ich?
-
-Alles zum Import erfahren Sie in folgender Anleitung: []({legacy}1393)
-
-![](images/img_1933.jpg){.thumbnail}
-
-
-### Reparieren - Optimieren - Analysieren
-Sie können die Tabellen Ihrer Datenbank reparieren, optimieren und analysieren.
-
-Verbinden Sie sich hierfür über das [PhpMyAdmin-Interface](https://phpmyadmin.ovh.net/) mit Ihrer Datenbank.
-
-Wählen Sie dann die Tabelle aus, für die Sie eine der oben genannten Operationen ausführen möchten.
-
-Klicken Sie rechts oben auf "Operationen".
-
-Im Tab zur Wartung Ihrer Tabelle können Sie die gewünschten Operationen ausführen.
-
-![](images/img_1961.jpg){.thumbnail}
-
-
-### Verwendung von SQL Private
-Sie möchten erfahren, wie Sie einen SQL Private Server sinnvoll einsetzen? Und wie Sie Ihre Daten importieren oder exportieren?
-
-In unserer Hilfe zum Thema erfahren Sie [alles Wissenswerte zum SQL Private Angebot](https://www.ovh.de/g2023.alles_zum_sql_private)
-
-![](images/img_1866.jpg){.thumbnail}
-
-
-## Anleitung für die Installation
-Sie möchten ohne technische Vorkenntnisse möglichst schnell Ihre eigene Webseite erstellen?
-
-Zur Installation unserer OVH 1-Klick-Webhosting-Module gibt es eine eigene Hilfe: []({legacy}1402)
-
-![](images/img_1930.jpg){.thumbnail}
-
-
-### WordPress installieren
-
-WordPress ist ein Content Management System (CMS), mit dem Sie kinderleicht eine Webseite oder einen Blog erstellen und verwalten können.
-
-- Blogs & Webseiten
-
-Eine Anleitung zur manuellen Installation von WordPress finden Sie hier: []({legacy}1375)
-
-
-![](images/img_1873.jpg){.thumbnail}
-
-
-### Joomla! installieren
-
-Joomla ist ein Content Management System (CMS), mit dem Sie eine dynamische Internet- oder Intranetseite kinderleicht online verwalten können.
-
-- Webseiten
-
-Eine Anleitung zur manuellen Installation von Joomla! finden Sie hier:[]({legacy}1375)
-
-
-![](images/img_1874.jpg){.thumbnail}
-
-
-### PrestaShop installieren
-
-PrestaShop ist eine Open-Source Web-App, mit der Sie Ihren eigenen Online-Shop erstellen können.
-
-- Online-Shop
-
-Eine Anleitung zur manuellen Installation von PrestaShop finden Sie hier:[]({legacy}1375)
-
-
-![](images/img_1862.jpg){.thumbnail}
-
-## Nützliche Informationen
-
-### .ovhconfig-Datei
-Sie möchten die PHP-Version Ihres Hostings ändern? Oder PHP-FPM aktivieren?
-
-Folgende Anleitungen zur Verwendung und Konfiguration der .ovhconfig-Datei haben wir für Sie erstellt:
-
-
-- <https://docs.ovh.com/de/hosting/enable_php_optimisation_with_ovh_web_hosting/>
-
-- <https://docs.ovh.com/de/hosting/konfiguration_von_php_fur_ein_ovh_webhosting_2014/>
-
-
-
-![](images/img_1867.jpg){.thumbnail}
-
-
-### Verfügbare Bibliotheken auf den OVH Webhostings
-Information über die verfügbaren Bibliotheken:
-
-|Library|Verfügbarkeit|
-|---|---|
-|ffmepg|nicht aktiviert|
-|GD|aktiviert|
-|imagemagik|aktiviert|
-|zend (opcache)|aktiviert|
-|PDO|aktiviert|
-|Zip - Gzip|aktiviert|
-
-
-
-![](images/img_1867.jpg){.thumbnail}
-Bitte beachten Sie: Bei Verwendung von PHP-FPM sind aus Sicherheitsgründen folgende Optionen deaktiviert:
-
-
-- register_globals
-- magic_quotes_gpc
-
-
-
-
-### Die Performance meiner Webseite optimieren
-Sie möchten mithilfe einer Diagnose die Schwachstellen Ihrer Webseite identifizieren? Oder Sie möchten ganz einfach die Performance verbessern?
-
-Eine Anleitung mit allen nötigen Informationen zum Thema finden Sie hier: <https://docs.ovh.com/de/hosting/webhosting_optimierung_der_performance_ihrer_webseite/>
-
-![](images/img_1865.jpg){.thumbnail}
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
