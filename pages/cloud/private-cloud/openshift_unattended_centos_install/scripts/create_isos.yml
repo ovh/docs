@@ -6,6 +6,12 @@
     centos_iso: "{{ centos_iso_url | basename }}"
 
   tasks:
+  - name: Install packages
+    package:
+      name:
+        - genisoimage
+      state: present
+
   - name: Check if iso already fetched
     stat:
       path: "{{ playbook_dir }}/{{ centos_iso }}"
