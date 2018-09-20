@@ -1,6 +1,6 @@
 ---
 title: 'Webhotellin PHP-version vaihtaminen'
-slug: php-konfigurointi-ovh-webhotellissa
+slug: php-konfigurointi_ovhn_webhotellissa
 excerpt: 'Katso, kuinka OVH:n webhotellin PHP-versio vaihdetaan'
 section: PHP
 order: 1
