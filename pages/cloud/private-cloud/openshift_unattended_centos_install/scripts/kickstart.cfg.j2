@@ -12,7 +12,7 @@ firstboot --disable
 ignoredisk --only-use=sda
 # Keyboard layouts
 #keyboard --vckeymap=fr --xlayouts='fr'
-keyboard --vckeymap={{ks_vckeymap or 'us'}} --xlayouts='{{ks_xlayouts or ''}}'
+keyboard --vckeymap={{ ks_vckeymap | default('us') }} --xlayouts='{{ ks_xlayouts | default('') }}'
 
 # System language
 lang en_US.UTF-8
@@ -22,7 +22,7 @@ network  --bootproto=dhcp --device=ens160 --onboot=off --ipv6=auto --no-activate
 network  --hostname=localhost.localdomain
 
 # Root password
-rootpw --plaintext '{{ks_root_password or 'test'}}'
+rootpw --plaintext {{ ks_root_password | default('test') }}
 # Below would work but pulls python dependencies
 # password=`python -c "import crypt, getpass, pwd; print(crypt.crypt('test', '\$6\$saltsalt\$'))"`
 # rootpw --iscrypted $password
