@@ -1,126 +1,101 @@
 ---
-title: Create an instance in your OVH customer account
-excerpt: Create an instance in your OVH customer account
+title: 'Create an instance in your OVH customer account'
 slug: create_an_instance_in_your_ovh_customer_account
+excerpt: 'This guide will show you how to create an instance in your Public Cloud account.'
 legacy_guide_number: g1775
+section: 'Getting started'
 ---
 
+**Last updated 21st September 2018**
 
-## 
-The Public Cloud lets you create virtual servers (instances) quickly and easily in just a few clicks. 
-These instances are similar to [OVH VPS](http://www.ovh.co.uk/vps/) but not exactly the same. 
-Here are the main differences between VPS and Public Cloud instances:
+## Objective
 
-VPS:
+The [Public Cloud](https://www.ovh.ie/public-cloud/instances/){.external} lets you create instances (i.e. virtual servers) quickly and easily, in just a few clicks.
 
-- Simple customer interface
-- Focused on a single machine
-- A large number of distributions provided
+**This guide will show you how to create an instance in your Public Cloud account.**
 
+## Requirements
 
-Public Cloud Instance:
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud](https://www.ovh.ie/public-cloud/instances/){.external} project created in your OVH account
+* an SSH key created in your OVH customer account
 
-- Choose to pay monthly or by the hour
-- OpenStack API
-- Instances working together
+## Intructions
 
+> [!primary]
+>
+The rest of this guide assumes that you have set the view of your cloud project to `Infrastructure`{.action}. You can change the view with the toggle switch on the right-hand side of the page, as shown below:
+>
 
-This guide will explain how to create an instance.
+![view](images/pci-instance-view-01.png){.thumbnail}
 
+### Add an instance
 
-## Prerequisites
+First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Cloud`{.action} menu.
 
-- You must be logged in to your [OVH customer account](https://www.ovh.com/manager/cloud/)
-- You must have created and configued an SSH key in your OVH customer account. Guide: []({legacy}1769)
+![cloud menu](images/pci-instance-cloud-01.png){.thumbnail}
 
+Next, select your cloud project under the `Servers`{.action} list on the left-hand side of the page.
 
+![servers list](images/pci-instance-servers-01.png){.thumbnail}
 
+After selecting your project, click the `Infrastructure`{.action} option.
 
-## Add a server
+![infrastructure](images/pci-instance-infrastructure-01.png){.thumbnail}
 
-- Click the Add button in the top left
+Now, click the `Actions`{.action} button.
 
+![actions](images/pci-instance-actions-01.png){.thumbnail}
 
+Next, click the `Add a server`{.action} button.
 
-![](images/img_2707.jpg){.thumbnail}
+![add an instance](images/pci-instance-actions-02.png){.thumbnail}
 
-- Choose Add a server
+### Configure the instance
 
+After clicking the `Add a server`{.action} button, the configuration settings will appear as shown below.
 
+![configure an instance](images/pci-instance-configuration-01.png){.thumbnail}
 
-![](images/img_2708.jpg){.thumbnail}
+These settings allow you to configure:
 
+* the datacentre and region where the instance will be hosted
+* the server's operating system
+* the server model
+* an SSH key for security (not needed for Windows servers)
+* several advanced options
 
-## Choose the server characteristics
+> [!primary]
+>
+Please note that for Windows servers, authentication is password based, so SSH keys are not used at all.
+>
 
-- When you click on the arrow to the right of the model a new menu will appear:
 
+When you have configured the options you want, decide whether you want the instance to be billed hourly or monthly and toggle the billing switch accordingly.
 
+![configure an instance](images/pci-instance-configuration-02.png){.thumbnail}
 
-![](images/img_2709.jpg){.thumbnail}
-You can then choose your instance type:
+Finally, click the `Launch now`{.action} button to create the instance.
 
-- VPS-SSD range
+![configure an instance](images/pci-instance-configuration-03.png){.thumbnail}
 
-|from 1 to 2 vCores|from 2 G to 8 GB of RAM|from 10 to 40 GB of storage|
+Your instance will now be created. It may take a few minutes to finalise.
 
+Once the instance has been created, your login information will be displayed, which you can copy to your computer's clipboard by clicking the copy icon.
 
+![login](images/pci-instance-login-01.png){.thumbnail}
 
-- CPU range 
+The newly-created instance will now be visible in your account.
 
-|from 2 to 32 vCores|from 7 to 120 GB of Ram|from 200 to 1600 GB of storage|
+![account](images/pci-instance-created-01.png){.thumbnail}
 
+> [!warning]
+>
+When you create an instance and choose to pay monthly, you must keep this instance for at least until the end of the current month.
+>
 
+## Go further
 
-- RAM range 
+[Getting started with Public Cloud](https://docs.ovh.com/ie/en/public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project/){.external}
 
-|from 2 to 16 vCores|from 30 to 240 GB of RAM|from 200 to 1600 GB of storage|
-
-
-
-
-## Choose the operating system
-
-- For example Ubuntu 14.04
-
-
-
-![](images/img_2710.jpg){.thumbnail}
-
-
-## Choose the datacentre region
-For example Strasbourg
-
-![](images/img_2711.jpg){.thumbnail}
-
-
-## Select the SSH key
-
-- For example:
-
-
-
-![](images/img_2712.jpg){.thumbnail}
-
-## Information
-When a Windows instance has been created, it is not necessary to configure an SSH key.
-
-
-## Name the virtual server and restart
-
-- Name the virtual server
-- Choose to pay by the hour or per month.
-
-
-
-## Warning:
-When you create an instance and choose to pay monthly you must keep this instance for at least until the end of the current month.
-
-- Click Launch now
-
-
-
-
-## 
- 
-
+Join our community of users on <https://community.ovh.com/en/>.
