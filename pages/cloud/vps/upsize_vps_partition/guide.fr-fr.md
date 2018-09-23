@@ -72,6 +72,7 @@ Pass 5: Checking group summary information
 > [!warning]
 >
 > Si vous constatez une erreur de type `bad magic number in superblock`, ne continuez pas. Une procédure pour régler cette difficulté vous est expliquée à la fin de ce guide.
+> Si la commande e2fsck renvoie une erreur du type : `/dev/vdb1 has unsupported feature(s): metadata_csum` suivi de `e2fsck: Get a newer version of e2fsck!`, alors il faut, comme indiqué, mettre à jour e2fsck. Si la dernière version n'est pas disponible via `apt` (ou autre package manager), il faut la compiler from source. Les étapes à suivre sont décrites [ici](https://askubuntu.com/a/808650).
 
 ### Ouvrir l’application fdisk
 
