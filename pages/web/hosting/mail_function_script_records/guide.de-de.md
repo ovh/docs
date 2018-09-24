@@ -1,95 +1,81 @@
 ---
-title: 'Webhosting: Verwaltung automatischer E-Mails'
-excerpt: Verwaltung der automatischen E-Mails von Ihrem Webhosting
+title: 'Automatische E-Mails Ihres Webhostings verwalten'
+excerpt: 'In dieser Anleitung erfahren Sie, wie Sie über Ihr OVH Webhosting versendete automatische E-Mails verfolgen und verwalten.'
 slug: webhosting_verwaltung_automatischer_e-mails
 legacy_guide_number: g1974
+section: Diagnose
 ---
 
+**Stand 24.09.2018**
 
-## Greifen Sie auf die "automatischen Mails" in Ihrem Kundencenter zu
+## Einleitung
 
-## - Loggen Sie sich zunächst in Ihr [url="https://www.ovh.com/manager/web/login/"][blue][u]Kundencenter ein[/u][/blue][/url].
-Sollten Sie sich nicht mehr einloggen können, hilft Ihnen [diese Anleitung](https://www.ovh.de/g1909.mutualise_gerer_et_acceder_a_ses_mots_de_passe#les_differents_mots_de_passe_lies_au_service_mutualise_dovh_lacces_au_manager_dovh).
+Automatische E-Mails werden über ein Skript versendet. Sie werden beispielsweise im Kontaktformular auf Ihrer Website verwendet und ermöglichen es, dass die Besucher der Website Ihnen Nachrichten senden.
 
-- Klicken Sie im Menü links unter "Hosting-Pakete" auf den Namen Ihres Hostings.
-- Klicken Sie dann rechts auf den Button "Mehr +" und dort auf "E-Mail Skripte".
+**Hier erfahren Sie, wie Sie automatische E-Mails verfolgen und verwalten können, die über Ihr OVH Webhosting versendet werden.**
 
+## Voraussetzungen
 
+- Sie besitzen ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
 
-![](images/img_3110.jpg){.thumbnail}
+> [!primary]
+>
+> Diese Anleitung bezieht sich nur auf E-Mails, die über Skripte auf Ihrem OVH Webhosting versendet werden.
+>
+> Wenn Sie E-Mail-Adressen aus Ihrem MX Plan Angebot oder Ihrem [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot verwalten möchten, gehen Sie in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} in den Bereich `E-Mails`{.action}.
+>
 
+## Beschreibung
 
-## Den Versand von E-Mails blockieren
-Manchmal kann es nötig sein, den Versand von E-Mail von Ihrem Hosting zu blockieren.
+Sie können automatische E-Mails, die von Ihrem Webhosting aus versendet werden, über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} verfolgen und verwalten. Loggen Sie sich hierzu im Kundencenter ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Klicken Sie dann auf den Tab `Mehr +`{.action} und auf `E-Mail-Skripte`{.action}.
 
-## In welchen Situationen?
+Auf der angezeigten Seite können Sie die von Ihrem OVH Webhosting aus gesendeten automatischen E-Mails verfolgen und verwalten.
 
-- Wenn Sie Ihre E-Mail-Skripte testen wollen.
-- Wenn Sie von einem Spammer gehackt wurden.
+![Hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
+### Versand automatischer E-Mails nachverfolgen
 
+Bleiben Sie im Bereich `E-Mail-Skripte`{.action}. Auf der Seite werden Ihnen auf einen Blick alle Informationen zu den E-Mails angezeigt, die automatisch über ein Skript versendet werden.
 
-## Bitte beachten Sie:
-Dabei werden keine E-Mails gelöscht, sie werden lediglich für 72 Stunden in Wartestellung versetzt. Sie können während dieses Zeitraums entweder den Versand entsperren oder die Mails löschen.
-1. Klicken Sie auf "Versand blockieren".
+|Information|Details|
+|---|---|
+|Status der Dienstleistung|Zeigt den aktuellen Status des Dienstes an, der automatische E-Mails von Ihrem Webhosting aus versendet. Bei grün hinterlegtem Status ist der Versand aktiv. Ein rot hinterlegter Status bedeutet, dass keine E-Mails gesendet werden. Je nach Status unterscheidet sich die Versandverwaltung; siehe [„Versand automatischer E-Mails verwalten“](https://docs.ovh.com/de/hosting/webhosting_verwaltung_automatischer_e-mails/#versand-automatischer-e-mails-verwalten){.external}.|
+|Fehlerbericht an|Sie können einen täglichen Fehlerbericht an eine E-Mail-Adresse Ihrer Wahl erhalten. Diese können Sie über den Button `Empfänger ändern`{.action} neu festlegen. Im Fehlerbericht werden die von Ihrem Webhosting aus gesendeten E-Mails aufgelistet, bei deren Versand OVH eine Fehlermeldung erhalten hat, da sie nicht zugestellt werden konnten. Die Berichte können Sie außerdem jederzeit in Ihrem OVH Kundencenter über den Button `E-Mails im Fehlerstatus`{.action} einsehen.|
+|Gesamtzahl versandter E-Mails|Zeigt die Gesamtzahl der seit der Erstellung Ihres OVH Webhostings versendeten automatischen E-Mails an.|
+|Heute versandte E-Mails|Zeigt die Gesamtzahl der am aktuellen Tag versendeten automatischen E-Mails an.|
+|Gesamtzahl E-Mails im Fehlerstatus|Zeigt die Gesamtzahl der seit der Erstellung Ihres OVH Webhostings versendeten automatischen E-Mails an, bei deren Versand OVH eine Fehlermeldung erhalten hat, da sie nicht zugestellt werden konnten.|
+|History der versandten E-Mails|Zeigt eine Grafik an, die die History der von Ihrem Webhosting aus versendeten E-Mails bis zum aktuellen Tag darstellt.|
 
-![](images/img_3111.jpg){.thumbnail}
-2. Klicken Sie dann auf "Bestätigen".
+> [!primary]
+>
+> Um Missbrauch beim automatisierten Versand von E-Mails über Ihr Webhosting zu vermeiden, empfehlen wir Ihnen dringend, ein Sicherheitssystem wie einen Captcha für Formulare auf Ihrer Website einzurichten, über die E-Mails versendet werden (beispielsweise Kontaktformulare).
+>
 
-![](images/img_3112.jpg){.thumbnail}
-3. Die Änderung wird bestätigt.
+![Hosting](images/monitoring-automatic-emails-step2.png){.thumbnail}
 
-![](images/img_3113.jpg){.thumbnail}
+Sollten Sie feststellen, dass die über Ihre Skripte generierten E-Mails nicht mehr versendet werden, obwohl der Status als „aktiv“ angezeigt wird, nehmen Sie die folgenden Schritte vor:
 
-## Bitte beachten Sie:
-Der Status der Dienstleistung ändert sich auf "Inaktiv".
+- **Versandskripte überprüfen**: Die Skripte können Syntaxfehler enthalten, wodurch der Versand der E-Mails nicht mehr möglich ist. Überprüfen Sie den Inhalt Ihrer Skripte und korrigieren Sie wenn nötig die Syntax. Versuchen Sie es anschließend erneut.
 
-![](images/img_3114.jpg){.thumbnail}
+- **E-Mail-Versand über ein Testskript testen**: Schreiben Sie ein Testskript, um eine E-Mail an Ihre persönliche Adresse zu senden. Wenn Sie die Nachricht korrekt empfangen, bedeutet das, dass Ihre Versandskripte Fehler enthalten. Sollten Sie Hilfe beim Schreiben des Skripts benötigen, orientieren Sie sich an Testskripts im Internet.
 
+- **Versand ohne Angabe des SMTP-Servers**: Geben Sie in den Skript-Einstellungen keinen SMTP-Server an. Wenn Sie ein Interface verwenden, um den E-Mail-Versand über Ihre Website zu verwalten, muss diese Einstellung auch in dessen Konfiguration bearbeitet werden können.
 
-## E-Mails bereinigen
-Manchmal kann es notwendig sein, die E-Mails auf dem Server zu bereinigen, um einer erneuten Blockierung vorzubeugen. Um die E-Mails zu bereinigen, müssen Sie zunächst den Versand blockieren (s. Erklärung unten).
+### Versand automatischer E-Mails verwalten
 
-## Bitte beachten Sie:
-Ihr Account wird anschließend automatisch wieder entsperrt. Diese Operation nimmt etwa 5 bis 10 Minuten in Anspruch.
-1. Klicken Sie auf "E-Mails bereinigen".
+Bleiben Sie im Bereich `E-Mail-Skripte`{.action}. Dort finden Sie mehrere Buttons, um den Versand automatischer E-Mails über Ihr Webhosting zu verwalten. Je nach Status der Dienstleistung sind einige Optionen möglicherweise nicht verfügbar.
 
-![](images/img_3115.jpg){.thumbnail}
-2. Klicken Sie dann auf "Bestätigen".
+|Aktionen|Details|
+|---|---|
+|Versand blockieren|Stoppt den Versand automatischer E-Mails von Ihrem Webhosting aus. E-Mails, die nach der Sperrung über Ihre Skripte generiert werden, werden nicht versendet, sondern für bis zu 72 Stunden in einer Warteschleife gespeichert.|
+|Versand entsperren|Setzt den Versand automatischer E-Mails von Ihrem Webhosting aus fort und versendet die E-Mails in der Warteschleife.|
+|E-Mails bereinigen|Löscht E-Mails aus der Warteschleife und setzt anschließend den Versand fort.|
 
-![](images/img_3116.jpg){.thumbnail}
-3. Die Änderung wird bestätigt.
+Klicken Sie für die gewünschte Aktion auf den entsprechenden Button und dann auf `Bestätigen`{.action}. In manchen Fällen kann es einige Minuten dauern, bis die Aktion vollständig ausgeführt ist.
 
-![](images/img_3117.jpg){.thumbnail}
+![Hosting](images/monitoring-automatic-emails-step3.png){.thumbnail}
 
-## Bitte beachten Sie:
-Der Status der Dienstleistung ändert sich auf "Bereinigen".
+## Weiterführende Informationen
 
-![](images/img_3118.jpg){.thumbnail}
-
-
-## Versand entsperren
-Die Verteilung wird ab der nächsten E-Mail wieder regulär vorgenommen. Blockierte E-Mails werden wieder in den Verteiler aufgenommen.
-1. Klicken Sie auf "Versand entsperren".
-
-![](images/img_3122.jpg){.thumbnail}
-2. Klicken Sie dann auf "Bestätigen".
-
-![](images/img_3123.jpg){.thumbnail}
-3. Die Änderung wird bestätigt.
-
-![](images/img_3124.jpg){.thumbnail}
-
-
-## Den Empfänger für Fehlerberichte ändern
-Wenn beim Versand von E-Mails aus Ihrem Webhosting Fehler auftreten, erhalten Sie am Folgetag einen Fehlerbericht per E-Mail.
-1. Klicken Sie auf "Den Empfänger ändern".
-
-![](images/img_3119.jpg){.thumbnail}
-2. Geben Sie anschließend die gewünschte E-Mail-Adresse ein und klicken Sie auf "Bestätigen".
-
-![](images/img_3120.jpg){.thumbnail}
-3. In der Übersicht wird nun die neue Empfängeradresse angezeigt.
-
-![](images/img_3121.jpg){.thumbnail}
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
