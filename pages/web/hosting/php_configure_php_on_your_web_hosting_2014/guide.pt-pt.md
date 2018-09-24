@@ -1,220 +1,71 @@
 ---
-title: Configurar o PHP num Alojamento Web (Alojamentos 2014) OVH
-excerpt: Este guia irá guiá-lo na configuração do PHP no seu alojamento web na OVH
+title: 'Mudar a versão de PHP do alojamento web'
+excerpt: 'Saiba como mudar a versão de PHP do seu alojamento web da OVH'
 id: '1207'
 slug: configurar_o_php_num_alojamento_web_alojamentos_2014_ovh
 legacy_guide_number: g1207
 ---
 
+**Última atualização: 24/09/2018**
 
-## Como escolher a minha versão PHP?
+## Sumário
 
-## No seu Espaço cliente
-Encontrará neste guia a explicação sobre como ativar o PHP FPM e como definir a versão de PHP graças ao ficheiro .ovhconfig, embora possa, de forma simples, realizá-lo no seu espaço cliente com a ajuda do seguinte guia: []({legacy}1999)
-Para configurar PHP graças ao ficheiro .ovhconfig manualmente, é necessário colocar o ficheiro ".ovhconfig" na raiz do seu alojamento através de FTP.
+Na Internet, existem inúmeros sites. O seu [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} permite-lhe alojar o site que quiser, desde que seja compatível com a [configuração das nossas infraestruturas](http://pro.ovh.net/infos/){.external}. Neste sentido, poderá querer alterar a versão de PHP utilizada pelo seu alojamento web.
 
-Para utilizar o PHP 5.6, por exemplo, este ficheiro ".ovhconfig" deverá conter o código:
+**Saiba como mudar a versão de PHP do seu alojamento web da OVH.**
 
+## Requisitos
 
-```
-app.engine=php
-app.engine.version=5.6
-http.firewall=none
-environment=production
-```
+- Ter um serviço de [alojamento web OVH](https://www.ovh.pt/alojamento-partilhado/){.external} (exceto Cloud Web).
+- Consoante o método utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager) ou às informações que lhe permitem aceder ao seu espaço de armazenamento. 
 
+## Instruções
 
+Atualmente, existem várias versões da linguagem de programação PHP. As versões mais recentes incluem correções, e incorporam ou dispensam determinadas funcionalidades. A OVH propõe as principais versões mais recentes de PHP que poderá consultar na seguinte ligação: <https://www.ovh.pt/alojamento-partilhado/php.xml>. 
 
+Uma vez que as novas versões podem não incluir determinadas funcionalidades, **certifique-se de que a nova versão de PHP é compatível com o seu website antes de realizar qualquer alteração.**
 
-## Quais as versões de PHP que estão disponíveis?
-Pode utilizar as seguintes versões PHP:
+### 1 - Verificar a compatibilidade do site
 
-- 7.0
-- 5.6 (versão padrão)
-- 5.5 (em breve obsoleta, não recomendada)
-- 5.4 (versão obsoleta)
-- 5.3 (versão obsoleta)
+Embora a OVH trate da instalação das versões mais recentes de PHP nos seus servidores, cabe-lhe a si, enquanto webmaster, garantir que o seu website está sempre atualizado e compatível com as versões mais recentes de PHP. Dependendo do site que utiliza, existem duas formas de verificar:
 
+1. **Utilizo um site “chave na mão”, como um sistema de gestão de conteúdos (Content Management System ou CMS)**, como por exemplo o WordPress ou o Joomla!: 
+- consulte a documentação oficial criada pelo editor do CMS que utiliza; 
+- Tome nota das informações relativamente aos requisitos técnicos indispensáveis para o funcionamento do seu CMS, assim como à manipulação necessária para o atualizar;
+- caso seja necessário, atualize o seu CMS garantindo que a nova versão é compatível com o alojamento da OVH.
 
-Nota: as versões inferior não são mantidas pelo editor e iremos pará-las progressivamente. Continuarmos as atualizações em função da saída de novas versões de PHP e iremos parar o suporte às anteriores. Desta forma, deverá atualizar as suas páginas regularmente.
-Pode seguir os planos e a progressão dessas operações através dos trabalhos...
+2. **Utilizo um site baseado numa solução personalizada**: 
+- entre em contacto com o webmaster que criou o website;
+- para saber mais sobre as migrações de versões acessíveis, consulte a documentação oficial PHP: <http://php.net/manual/pt_BR/appendices.php>;
+- caso seja necessário, atualize o código do seu site garantindo que este é compatível com o alojamento da OVH.
 
-Atenção, após a introdução do ficheiro ".ovhconfig", a versão PHP utilizada será aquela que está definida no parâmetro app.engine.version. As diretivas do seu .htaccess como o SetEnv PHP_VER.... serão ignoradas 
+Tem a possibilidade de conhecer a versão de PHP que está a ser utilizada pelo seu alojamento: 
 
+|Meios|Descrição|
+|---|---|
+|Através da Área de Cliente|Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento correspondente. Na janela `Informações gerais`{.action}, localize a versão abaixo de **“Versão global de PHP”**. Se vir um símbolo redondo azul, aguarde alguns minutos para que a versão seja atualizada.|
+|Através de um script|Crie um script **.php** incluindo apenas o código `<?php phpinfo(); ?>`. Deverá publicá-lo no seu espaço de armazenamento e aceder-lhe através do seu endereço URL completo.|
 
-## Criei o meu ficheiro "[b][orange].ovhconfig[/orange][/b]" e obtenho o erro de "Not Implemented"
-Isso significa que o motor ou a versão especificada no seu ficheiro ".ovhconfig" não existe.
-Não hesite em consultar o ficheiro error.log do seu site para obter mais informações sobre o erro.
+![phpversion](images/change-php-version-step1.png){.thumbnail}
 
+Se não conseguir verificar a compatibilidade do seu website com a nova versão de PHP, pode tentar alterar a versão atual e retroceder, caso seja necessário (desaconselhamos fortemente este método). No entanto, corre o risco de gerar uma falha no seu site. Aliás, mesmo que o site continue a ser apresentado após a alteração, é possível que alguma funcionalidade tenha sido afetada e deixe de funcionar. 
 
-## O que significa a diretiva environment?
-Ela permite especificar a cache dos ficheiros estáticos bem como os comportamentos dos erros de PHP
+Avance para o passo seguinte para efetuar a alteração.
 
-Em modo development:
+### 2 - Alterar a versão de PHP do seu alojamento web
 
-- não é aplicado qualquer cache
-- os logs de PHP aparecem no seu site (display_errors=On)
+Existem duas formas de alterar a versão de PHP do seu alojamento web:
 
+- **através de um assistente de configuração a partir da Área de Cliente**: esta solução é menos técnica e requer uma ligação à Área de Cliente, onde poderá escolher as a nova versão de PHP pretendida. Consulte o manual [“Alterar a configuração do alojamento web”](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/){.external};
 
-Em modo production: (opção padrão)
+- **alterando manualmente um ficheiro no seu espaço de armazenamento**: esta solução é mais técnica e precisa de aceder ao seu espaço de armazenamento, onde deverá alterar o ficheiro “.ovhconfig”. Consulte o manual [“Configurar o ficheiro .ovhconfig do alojamento web”](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/){.external}.
 
-- os ficheiros estáticos tais como imagens, vídeos ou áudio têm uma "expiração" maior, o que fará com que esses ficheiros fiquem mais tempo armazenados na cache dos browsers.
-- os logs de PHP não aparecem no seu site (display_errors=Off)
+Para os amantes de tecnologia: a alteração da versão de PHP através de um ficheiro .htaccess já não é possível nas ofertas de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} mais recentes. A diretiva que permite mudar a versão de PHP no ficheiro .htaccess não permite a utilização de versões recentes de PHP nas nossas infraestruturas. Desta forma, é obrigatório utilizar o ficheiro “.ovhconfig” com a ajuda do manual [“Configurar o ficheiro .ovhconfig do alojamento web”](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/){.external}.
 
+## Quer saber mais?
 
+[Alterar a configuração do alojamento web](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web//){.external}
 
+[Configurar o ficheiro .ovhconfig do alojamento web](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/){.external}
 
-## O que significa a diretiva http.firewall?
-Esta diretiva permite-lhe ativar uma firewall aplicacional do tipo mod_security, para tal deve introduzir: security
-de forma padrão, o http.firewall está como none
-
-
-## Modificar o ambiente de execução graças à diretiva container.image
-Os alojamentos Web OVH permitem que modifique o ambiente de execução na qual o seu alojamento funciona.
-Esta alteração permite que beneficie de uma configuração estável a longo termo ou que beneficie das últimas atualizações dos softwares fornecidos pela OVH.
-
-Para tal basta que adicione a seguinte linha:
-
-
-```
-; __container.image__
-;
-; values:
-; stable: current recommended and up-to-date environment
-; legacy: former stable environment, only receiving security updates, being feature-freezed
-; testing: "experimental" environment dedicated to functionalities beta testing before being merged into stable
-;
-container.image=stable
-```
-
-
-Esta diretiva aplica-se à integralidade do seu alojamento e apenas poderá estar presente no ficheiro .ovhconfig presente na raiz do seu alojamento.
-
-Caso tenha vários ficheiros .ovhconfig em diferentes pastas no mesmo alojamento, a diretiva  "container.image" somente poderá ser definida no ficheiro presente na raiz do seu alojamento*.
-
-Poderá encontrar uma descrição dos diferentes ambiente de execução no seguinte guia:
-[]({legacy}2149)
-
-* Neste caso poderá definir apenas a diretiva "container.image" no ficheiro .ovhconfig presente na raiz do alojamento, e o resto das diretivas poderá defini-las nos ficheiros .ovhconfig presentes nas sub-pastas.
-
-
-## Detalhes sobre o ficheiro .ovhconfig
-Veja o detalhe da aplicação do ficheiro de configuração:
-
-
-```
-; ovhconfig
-;
-; this file must be placed in $HOME/.ovhconfig or in $DOCUMENT_ROOT/.ovhconfig
-
-; __app.engine__
-;
-; values: php (php engine + opcache accelerator)
-; notice: if php, a phpcgi engine will be activated as fallback (if previous engine crash)
-;
-; php:
-; IMPORTANT: register_globals and magic_quotes_gpc are off for security
-; php options .htaccess (like php version) are ignored
-; phpcgi:
-; IMPORTANT this is a fallback or previous system
-; in this case __app.engine.version__ will be considerated as AUTO and php version will be old system
-; (meaning depending .htaccess or .phpX extension)
-;
-app.engine=php
-
-; __app.engine.version__ specify version of your engine
-;
-; for php:
-; default: 5.6
-; for phpcgi:
-; this options is ignored (= fallback in AUTO)
-;
-app.engine.version=5.6
-
-; __http.firewall__ used to add application firewall (filter http requests)
-;
-; values: none | security
-; default: none
-;
-http.firewall=none
-
-; __environment__
-;
-; values: production | development
-;
-; production:
-; apache will maximise local cache
-; mod_expires will grow up TTL of js, css, pdf, images, video, audio
-; you can override it changing expiration explicitly or in your .htaccess
-; feel free to look on our guide.
-; development:
-; no expiration is added, files are not locally in cache,
-; will speed up tests but decrease performances
-;
-; choosen environment will also be available in your variable ENVIRONMENT unix env
-;
-; default: production
-;
-environment=development
-```
-
-
-
-
-## Quais as versões de PHP que estão disponíveis?
-Se utiliza um CMS (tipo WordPress, Joomla, PrestaShop, etc), poderá encontrar as informações úteis na documentação disponível no seu site oficial, ou no espaço de administração do módulo.
-Se o CMS que possui é ainda mantido e atualizado pelo seu editor, e a sua versão está atualizada, não deverá ter problemas em suportar as últimas versões de PHP. A maioria dos CMS integra uma ferramenta de atualização simplificada, permitindo que o atualize facilmente. Alguns gerem-se sozinhos, como o Wordpress a partir da versão 7.3, no final de 2013.
-
-Se o seu site é baseado num desenvolvimento próprio ou uma outra solução personalizada, deverá determinar qual(ais) a(s) versão(ões) de PHP se adequa(m).
-
-Para informação, veja a lista das alterações incompatíveis entre as versões de PHP:
-> de PHP 4 para a versão PHP 5 : http://www.php.net/manual/fr/migration5.incompatible.php
-> de PHP 5.1 para a versão PHP 5.2 : http://www.php.net/manual/en/migration52.incompatible.php
-> de PHP 5.2 para a versão PHP 5.3 : http://www.php.net/manual/en/migration53.incompatible.php
-> de PHP 5.3 para a versão PHP 5.4 : http://www.php.net/manual/en/migration54.incompatible.php
-> de PHP 5.4 para a versão PHP 5.5 : http://www.php.net/manual/en/migration55.incompatible.php
-> de PHP 5.5 para a versão PHP 5.6 : http://www.php.net/manual/en/migration56.incompatible.php
-> de PHP 5.6 à PHP 7.0 : http://php.net/manual/en/migration70.deprecated.php
-
-
-## Como escolher a minha versão PHP?
-Após determinar qual a versão PHP que deve utilizar poderá utilizar o seguinte guia para o ajudar com a modificação:
-[]({legacy}1999)
-
-
-## Onde colocar o meu ficheiro .ovhconfig?
-
-## Dispõe de um alojamento com um único website
-Na maior parte dos casos, apenas dispõe de um só website no seu alojamento.
-
-Lembramos que é possível a edição e a geração do ficheiro .ovhconfig diretamente no seu Espaço Cliente, e poderá consultar o seguinte guia para o ajudar nessa operação: []({legacy}1999)
-
-Se deseja efetuá-lo manualmente, o ficheiro .ovhconfig deve ser colocado na raiz do seu alojamento, ou seja, na primeira pasta ("/") como na imagem.
-
-
-- As sub-pastas utilizarão os parâmetros deste ficheiro.
-
-
-
-![](images/img_3764.jpg){.thumbnail}
-
-## Definiu vários "domínios associados" que não necessitam de configurações diferentes.
-Pode deste caso consultar o próximo parágrafo.
-
-
-- Todos os domínios associados utilizarão os parâmetros do ficheiro .ovhconfig presente na raiz do seu alojamento.
-
-
-
-## Definiu vários "domínios associados" que necessitam de diferentes configurações.
-É possível definir uma versão de PHP diferente para cada um dos domínios associados, e nesse caso é necessário colocar um ficheiro .ovhconfig em cada uma das pastas alvo definidas para os seus domínios associados.
-
-Se nenhum ficheiro .ovhconfig está presente na pasta alvo do seu domínio associado, será utilizado o ficheiro .ovhconfig presente na raiz do seu alojamento.
-
-Desaconselhamos a utilização de diferentes ambientes num mesmo alojamento ao utilizar ficheiros .ovhconfig diferentes. Esta utilização poderá levar a incompatibilidades entre versões de PHP. Sugerimos que segmente os seus websites por diferentes utilizações para não encontrar problemas para este tipo de utilizações. 
-
-
-## É possível modificar a configuração PHP do meu alojamento Web?
-Diferentes configurações estão disponíveis no seu alojamento Web, e poderá encontrar uma descrição dos diferentes ambientes de execução no seguinte guia:
-[]({legacy}2149)
-
+Fale com a nossa comunidade de utilizadores: [Comunidade OVH](https://community.ovh.com/en/){.external}
