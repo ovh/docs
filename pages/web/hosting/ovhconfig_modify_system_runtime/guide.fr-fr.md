@@ -6,7 +6,7 @@ section: 'Configuration de l''hébergement'
 order: 3
 ---
 
-**Dernière mise à jour le 03/09/2018**
+**Dernière mise à jour le 24/09/2018**
 
 ## Objectif
 
@@ -34,7 +34,7 @@ Lorsque vous changez la configuration de votre hébergement, vous modifiez celle
 
 #### Étape 1 : accéder à la gestion de la configuration de l'hébergement
 
-Pour démarrer cette manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Assurez-vous enfin d'être bien positionné sur l'onglet `Informations générales`{.action}, puis cliquez sur le bouton `Modifier la configuration`{.action}.
+Pour démarrer cette manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. Cliquez ensuite sur le bouton représentant trois points, puis sur `Modifier la configuration`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
