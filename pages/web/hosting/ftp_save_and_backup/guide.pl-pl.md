@@ -57,7 +57,7 @@ W oknie, które się wyświetla wybierz z rozwijanego menu odpowiednią dla Cieb
 |D-2|wczoraj, o 00:01 rano;|
 |D-3|przedwczoraj, o 00:01 rano;|
 |1 tydzień temu|poprzednia niedziela, o 01:00 rano;|
-|2 tygodnie temu|niedziela dwa tygodnie temu, o 00:01 rano.|
+|2 tygodnie temu|niedziela dwa tygodnie temu, o 01:00 rano.|
 
 Po wybraniu daty, kliknij przycisk `Dalej`{.action}. 
 
@@ -101,7 +101,7 @@ Możesz odnaleźć te informacje w zakładce `FTP - SSH`{.action} na Twoim hosti
 Uzupełnij Twoją nazwę głównego użytkownika („login”) FTP sufiksem wskazującym kopię zapasową, do której chcesz się zalogować. W uzyskaniu dostępu do wybranej kopii zapasowej pomogą Ci poniższe wskazówki:
 
 |Data wykonania kopii zapasowej|Sufiks do dodania:|Przykład uzupełnionej nazwy użytkownika|
-|---|---|
+|---|---|---|
 |dzisiaj, o 00:01 rano;|-snap0|uzytkownikftp**-snap0**|
 |wczoraj, o 00:01 rano;|-snap1|uzytkownikftp**-snap1**|
 |przedwczoraj, o 00:01 rano;|-snap2|uzytkownikftp**-snap2**|

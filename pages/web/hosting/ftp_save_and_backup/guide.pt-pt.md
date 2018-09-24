@@ -101,7 +101,7 @@ Pode consultar estas informações na janela `FTP - SSH`{.action} do seu alojame
 Deverá adicionar um sufixo ao seu nome de utilizador (ou “login”) FTP principal, especificando a cópia de segurança à qual quer aceder. A seguir, poderá encontrar alguns exemplos sobre como aceder à cópia de segurança desejada.
 
 |Data da cópia de segurança|Sufixo que deve adicionar|Exemplo de nome de utilizador completo|
-|---|---|
+|---|---|---|
 |No mesmo dia, às 00h01 da manhã.|-snap0|utilizadorftp**-snap0**
 |No dia anterior, às 00h01 da manhã.|-snap1|utilizadorftp**-snap1**
 |Dois dias antes, às 00h01 da manhã.|-snap2|utilizadorftp**-snap2**

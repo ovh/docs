@@ -99,7 +99,7 @@ Tyto informace naleznete v základním administračním rozhraní svého webhost
 Pro připojení k FTP záloze je zapotřebí přihlásit se pomocí kombinace FTP uživatelského jména a názvu příslušné zálohy. V následující tabulce naleznete veškeré potřebné údaje:
 
 |Datum vytvoření zálohy|Přípona|Příklad výsledného loginu|
-|---|---|
+|---|---|---|
 |Dnes, 00:01 ráno|-snap0|ftpuzivatel**-snap0**|
 |Včera, 00:01 ráno|-snap1|ftpuzivatel**-snap1**|
 |Předevčírem, 00:01 ráno|-snap2|ftpuzivatel**-snap2**|
