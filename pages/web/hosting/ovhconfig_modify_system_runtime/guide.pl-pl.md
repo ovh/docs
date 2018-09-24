@@ -102,7 +102,7 @@ Zmiana frameworka umożliwia modyfikację niektórych parametrów technicznych T
 Po dokonaniu wyboru masz dwie możliwości przeprowadzenia zmiany:
 
 - **w Panelu klienta**: postępuj zgodnie z instrukcjami zawartymi w sekcji niniejszego przewodnika zatytułowanej [Modyfikacja konfiguracji hostingu w Panelu klienta](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/#zmiana-konfiguracji-hostingu-w-panelu-klienta){.external};
-- **modyfikując ręcznie plik .ovhconfig**: to rozwiązanie wymagające wiedzy technicznej i połączenia z przestrzenią dyskową FTP. Jeśli chcesz zmodyfikować plik **.ovhconfig**, postępuj zgodnie z instrukcjami zawartymi w przewodniku [Konfiguracja pliku .ovhconfig na hostingu](https://docs.ovh.com/fr/hosting/configurer-fichier-ovhconfig/){.external}.
+- **modyfikując ręcznie plik .ovhconfig**: to rozwiązanie wymagające wiedzy technicznej i połączenia z przestrzenią dyskową FTP. Jeśli chcesz zmodyfikować plik **.ovhconfig**, postępuj zgodnie z instrukcjami zawartymi w przewodniku [Konfiguracja pliku .ovhconfig na hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/){.external}.
 
 #### Wersja PHP
 
