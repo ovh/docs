@@ -16,17 +16,22 @@ This first guide will go throught:
 ## Requirements
 - an access to a vSphere instance
 - a terminal with root access for package installation. It can be a Debian under [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux), CentOS, Ubuntu, ...
+
 > [!primary]
 > 
 > The resources used to automate this guide are available [here](https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/openshift_unattended_centos_install/scripts/) folder.
 > 
+
 From your terminal, install `ansible` and `govc`.
+
 If you use `python-2`, make sure to use `ansible-2.7` or above due to issue [#42237](https://github.com/ansible/ansible/pull/42237) otherwise, switch to `python-3` and `ansible-2.6.4`
+
 All variables are set in a `vars.yml` file that needs to be edited before running the playbooks
 
 ### GOVC installation
 `govc` is a Go client using the vSphere API. You can fetch the latest release from the [Release](https://github.com/vmware/govmomi/releases) page.
 After an `unzip` or `tar` and `chmod +x`, you'll need to setup at least three environmnent variables.
+
 ```shell
 export GOVC_URL=https://pcc-xxx-xxx-xxx-xxx.ovh.com/sdk
 export GOVC_USERNAME=username
