@@ -50,8 +50,7 @@ Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotoman
 
 Se abrirá una ventana en la que deberá seleccionar la fecha de restauración deseada en el menú desplegable.
 
-|Fecha
-|Momento de la copia de seguridad|
+|Fecha|Momento de la copia de seguridad|
 |---|---|
 |1 día antes|El mismo día, a las 00:01|
 |2 días antes|El día anterior, a las 00:01|
