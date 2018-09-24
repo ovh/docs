@@ -1,102 +1,82 @@
 ---
-title: Network Bridging
+title: 'Configuring a network bridge'
 slug: network-bridging
-excerpt: Bridged networking can be used to configure your Virtual Machines. Some tweaking is necessary to make the network configuration work on our network.
-section: Network Management
+excerpt: 'This guide will show you how to use network bridging to configure internet access for your virtual machines'
+section: 'Network Management'
 ---
 
+**Last updated 24/09/2018**
+
+## Objective
+
+Bridged networking can be used to configure your virtual machines. Some tweaking is necessary to make the network configuration work on our network.
+
+**This guide will show you how to use network bridging to configure internet access for your virtual machines.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TZZbPe9hCOk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requirements
-- A dedicated server with an hypervisor installed (Ex: [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
-- Have assigned a mac to a virtual IP FailOver
-- Knowledge about [SSH](http://en.wikipedia.org/wiki/Secure_Shell){.external}
 
-The configuration examples keywords in capital letters that you must change for your own values. For example; IP_FAIL_OVER which you must change for your failover IP.
+* a Dedicated Server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
+* at least one [failover IP](https://www.ovh.com.au/dedicated-servers/ip_failover.xml) address attached to the server
+* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
-The primary IP of your dedicated server.
+## Instructions
 
-The Failover IP you want to configure
+For this example, we will use the following values in our code samples, which should be replaced with your own values:
 
-Your server IP with the last octet replaced by 254
+* SERVER_IP = The main IP address of your server
+* FAILOVER_IP = The address of your failover IP
+* GATEWAY_IP = The address of your default gateway
 
+### Assign a virtual MAC address
 
-## Procedure
+Log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
 
-### Step 1 &#58; Determining the gateway
-To configure Virtual Machines, you need to know the gateway of your host machine (*nsxxx.ovh.net*; *ksxxx.ovh.net*; *nsxxxxxxx.ip-xxxxxx.eu*; ...). To do this, you must replace the last octet of the IP address assigned to your server with .254.
+![Failover IP](images/virtual_mac_01.png){.thumbnail}
 
-You can find the IP of your server in the [OVH Manager](https://www.ovh.com/manager/){.external}.
+Click on the three dots to open the `Context`{.action} menu, and click `Add a virtual MAC`{.action}.
 
-**For example**:
+![Add a virtual MAC (1)](images/virtual_mac_02.png){.thumbnail}
 
-- IP of your server : 123.456.789.012
-- Gateway's IP is your server's main IP ending in .254
-- So the gateway's IP is: 123.456.789.254
+Select `OVH`{.action} from the `Type`{.action} dropdown box, type a name in the `Name of virtual machine`{.action} field, and then confirm your options.
 
+![Add a virtual MAC (2)](images/virtual_mac_03.png){.thumbnail}
 
-### Step 2 &#58; Applying the configuration
+### Determine the gateway address
 
+To configure your virtual machines for internet access, you will need to know the gateway of your host machine (i.e. your Dedicated Server). The gateway address is made up of the first three octets of your server's main IP address, with 254 as the last octect. For example, if your server's main IP address is:
 
-> [!warning]
->
-> The gateway you need to use in your virtual machine should not be,
-> The IP of your dedicated server or IP failover but you must use the gateway
-> provides for your dedicated server. You must in no case use:
-> ```sh
-> route add default gw dev eth0
-> ```
-> Otherwise you may cut your IP for the virtual server. To determine the correct gateway to use:
-> - IP failover is: YYY.YYY.YYY.YYY
-> - Main IP of your dedicated server: XXX.XXX.XXX.XXX
-> - So the IP of the gateway for your virtual machine (GATEWAY_VM) : **XXX.XXX.XXX**.254
-> 
-> This gateway will be referred as GATEWAY_VM later in the guide.
-> 
+* 123.456.789.012
 
+Your gateway address would therefore be:
 
-#### Debian &amp; derivatives (Ubuntu, CrunchBang, SteamOS...)
-**File: /etc/network/interfaces**
+* 123.456.789.254
 
+### Apply the configuration
+
+#### Debian and Debian-based operating systems (Ubuntu, CrunchBang, SteamOS, etc.)
+
+Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/network/interfaces`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
-    address IP.FAIL.OVER
+    address FAILOVER_IP
     netmask 255.255.255.255
-    broadcast IP.FAIL.OVER
-    post-up route add GATEWAY_VM dev eth0
-    post-up route add default gw GATEWAY_VM
-    pre-down route del GATEWAY_VM dev eth0
-    pre-down route del default gw GATEWAY_VM
+    broadcast FAILOVER_IP
+    post-up route add GATEWAY_IP dev eth0
+    post-up route add default gw GATEWAY_IP
+    pre-down route del GATEWAY_IP dev eth0
+    pre-down route del default gw GATEWAY_IP
 ```
 
-**File: /etc/resolv.conf**
+Save and close the file, then reboot the virtual machine.
 
+#### Redhat and Redhat-based operating systems (CentOS 6, Scientific Linux, ClearOS, etc.)
 
-```bash
-nameserver 213.186.33.99 # OVH DNS Server
-```
-
-
-
-> [!primary]
->
-> For Debian 6, dns server configuration is done directly in the
-> file /etc/network/interfaces where you have to find this section:
-> 
-> ```bash
-> # dns-* options are implemented by the resolvconf package, if installed (default)
-> dns-nameservers 213.186.33.99 # OVH DNS Server
-> dns-search ovh.net # For faster hosts resolution on the OVH network
-> ```
->
-Don't hesitate to check this [guide](https://wiki.debian.org/fr/Bind9){.external} provided by **Debian** for a advanced configuration.
-
-
-#### Redhat &amp; derivatives (CentOS 6, Scientific Linux, ClearOS...)
-**File: /etc/sysconfig/network-scripts/ifcfg-eth0**
-
+Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/network/interfaces`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
 DEVICE=eth0
@@ -107,39 +87,31 @@ IPV6INIT=no
 PEERDNS=yes
 TYPE=Ethernet
 NETMASK=255.255.255.255
-IPADDR=IP.FAIL.OVER
-GATEWAY=GATEWAY_VM
+IPADDR=FAILOVER_IP
+GATEWAY=GATEWAY_IP
 ARP=yes
 HWADDR=MY:VI:RT:UA:LM:AC
 ```
 
-**File : /etc/sysconfig/network-scripts/route-eth0**
+Now, save and close the file.
 
-
-```bash
-GATEWAY_VM dev eth0
-default via GATEWAY_VM dev eth0
-```
-
-**File : /etc/resolv.conf**
-
+Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/route-eth0`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
-nameserver 213.186.33.99 # OVH DNS Server
+GATEWAY_IP dev eth0
+default via GATEWAY_IP dev eth0
 ```
 
+Save and close the file, then reboot your virtual machine.
 
 #### CentOS 7
 
-
-> [!warning]
->
-> For CentOS 7, the network adapter will vary depending on the installation.
-> You will need to verify what is the adapter name and use it to configure your Virtual Machine. Use the command ipaddr to find your interface name.
+> [!primary]
+> 
+> For CentOS 7, the name of the network adapter will vary, depending on the installation options. You will need to verify the adapter name and use it to configure your virtual machine. Use the command `ipaddr`{.action} to find your interface name.
 > 
 
-**File: /etc/sysconfig/network-scripts/ifcfg-(insert interface Name)**
-
+Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/sysconfig/network-scripts/ifcfg-(interface name)`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
 DEVICE=(insert interface Name)
@@ -150,54 +122,25 @@ IPV6INIT=no
 PEERDNS=yes
 TYPE=Ethernet
 NETMASK=255.255.255.255
-IPADDR=IP.FAIL.OVER
-GATEWAY=GATEWAY_VM
+IPADDR=FAILOVER_IP
+GATEWAY=GATEWAY_IP
 ARP=yes
 HWADDR=MY:VI:RT:UA:LM:AC
 ```
 
+Save and close the file.
 
-
-> [!primary]
->
-> 
-> > [!faq]
-> >
-> > If the file route-(insert interface Name) does not exist, you'll have to create it.
-> >> 
-> For CentOS 7, NETWORK_GW_VM is the main IP of your server where you replace the last octet by 0.
-> >
-> 
-
-**File: /etc/sysconfig/network-scripts/route-(insert interface Name)**
-
+Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/route-(interface-name)`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
-GATEWAY_VM - 255.255.255.255 (insert interface Name)
+GATEWAY_IP - 255.255.255.255 (insert interface Name)
 NETWORK_GW_VM - 255.255.255.0 (insert interface Name)
-default GATEWAY_VM
+default GATEWAY_IP
 ```
-
-**File: /etc/resolv.conf**
-
-
-```bash
-nameserver 213.186.33.99
-```
-
 
 #### OpenSUSE
 
-
-> [!primary]
->
-> For OpenSUSE, NETWORK_GW_VM is the main IP of your server where you replace the last octet by 0.
-> 
-
-If the file ifcfg-ens32 does not exist, you'll have to create it.
-
-**File : /etc/sysconfig/network/ifcfg-ens32**
-
+Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/sysconfig/network/ifcfg-ens32`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
 DEVICE=ens32
@@ -208,112 +151,182 @@ USERCTL=no
 IPV6INIT=no
 TYPE=Ethernet
 STARTMODE=auto
-IPADDR=IP.FAIL.OVER
+IPADDR=FAILOVER_IP
 NETMASK=255.255.255.255
-GATEWAY=GATEWAY_VM
+GATEWAY=GATEWAY_IP
 HWADDR=MY:VI:RT:UA:LM:AC
 ```
 
-If the file ifroute-ens32 does not exist, you'll have to create it.
+Save and close the file.
 
-**File : /etc/sysconfig/network/ifroute-ens32**
-
+Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/ifroute-ens32`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
-GATEWAY_VM - 255.255.255.255 ens32
+GATEWAY_IP - 255.255.255.255 ens32
 NETWORK_GW_VM - 255.255.255.0 ens32
-default GATEWAY_VM
+default GATEWAY_IP
 ```
 
-In /etc/sysconfig/network/config, you need to have:
-
-
-```bash
-NETCONFIG_DNS_STATIC_SERVERS=”213.186.33.99”
-```
-
-
-#### FreeBSD 8.0
-**File : /etc/rc.conf**
-
-
-```bash
-ifconfig_em0="inet IP.FAIL.OVER netmask 255.255.255.255 broadcast IP.FAIL.OVER"
-static_routes="net1 net2"
-route_net1="-net GATEWAY_VM/32 IP.FAIL.OVER"
-route_net2="default GATEWAY_VM"
-```
-
-**File : /etc/resolv.conf**
-
+Next, open the virtual machine's DNS configuration file, which is located in `/etc/sysconfig/network/resolv.conf`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below:
 
 ```bash
 nameserver 213.186.33.99 # OVH DNS Server
 ```
 
+Save and close the file, then reboot your virtual machine.
 
-#### Windows Server 2012 / Hyper-V
-First you need to create Virtual Switch.
+#### Arch Linux
 
-1. On the command line of the host server run IPconfig /ALL
-1. Note the name of the network adapter that contains the IP address of the server's assigned IP.
-1. In Hyper-V manager create the a new virtual switch.
-- Connection Type is **External**
-- Select the adapter with the server's IP
-- Check Allow management OS to share this network adapter
+First, establish an SSH connection to your virtual machine and install **Netctl**, which is a command line utility used for configuring network interfaces:
 
+```ssh
+# apt-get netctl
+```
 
-![Virtual Switch Manager](images/network-bridging-windows-2012-1.jpg){.thumbnail}
+Once Netctl has been installed, run the following command to determine the name of your virtual machine's network interface:
 
+```
+# ip link
 
+1: eno3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether ac:1f:6b:67:ce:a4 brd ff:ff:ff:ff:ff:ff
+```
 
-> [!primary]
->
-> This step only is required once for a hyper-v server. For all VMs, a virtual switch is required to connect the VM's virtual network adapters to the server's physical adapter.
-> 
+From the output above, we can see that the name of our network interface is **eno3**. This is for demonstration purposes. Your interface will likely have a different name.
 
-Then select the VM that you wish to add the Failover IP. Use the Hyper-V Manager to change the settings of the VM (it needs to be shutdown).
+Next, copy the contents of the Netctl static configuration file, and create a new file with the name of your network interface:
 
-1. Expand the Network Adapter and click on **Advanced Features**.
-1. Change the MAC address to Static and enter the Virtual MAC address for Failover IP.
-1. Press **OK** to apply changes.
+```ssh
+# cp /etc/netctl/examples/ethernet-static /etc/netctl/eno3
+```
 
-![Hyper-V Manager](images/network-bridging-windows-2012-2.jpg){.thumbnail}
-
-Start the VM and log in as an administrator.
-
-1. Control Panel > Network and Share Center
-1. Click on the **Connections: Ethernet** link
-1. Click on **Properties** Button to show Ethernet Properties
-1. Select **Internet Protocol Version 4 (TCP/IPv4)**
-1. Click on **Properties** Button to show IP V4 Properties
-
-![Ethernet Properties](images/network-bridging-windows-2012-3.jpg){.thumbnail}
-
-On the IPv4 Properties window:
-
-1. Select the **Use the following IP address**
-1. Enter the Failover IP into the IP Address
-1. Enter 255.255.255.255 into the Subnet Mask
-1. Enter your server's gateway IP address into the Default Gateway (your server's IP ending with 254)
-1. Enter 213.186.33.99 into the Preferred DNS Server.
-1. Press **OK** and ignore the warning message about the gateway IP and Assigned IP not being in the same subnet.
-
-![Ethernet Properties](images/network-bridging-windows-2012-4.jpg){.thumbnail}
-
-Finally, reboot server and the VM should be connected to the internet using the failover IP.
-
-
-#### Other distributions
-Here is the network configuration required in the Virtual Machine:
-
-- **ip**: IP_FAIL_OVER
-- **netmask**: 255.255.255.255
-
-It is also required to add a default gateway to the Virtual Machine:
+Next, edit the file you just created, substituting the values for your failover IP address, subnet mask, gateway address and DNS address. **For the subnet mask, please use the address that was emailed to you when you purchased the failover IP address.**
 
 ```sh
-route add GATEWAY_VM dev eth0
-route add default gw GATEWAY_VM
+Description='A basic static ethernet connection'
+Interface=eno3
+Connection=ethernet
+IP=FAILOVER_IP
+Address=('255.255.255.255')
+Gateway=('GATEWAY_IP')
+DNS=('213.186.33.99')
 ```
-You will then need to configure the DNS of your machine so that it can make domain resolution. The IP of the OVH DNS server is 213.186.33.99.
+
+Next, enable the network card to start automatically on every reboot with the following command:
+
+```sh
+# netctl enable eno3
+```
+
+Now start the network profile, as shown below:
+
+```ssh
+# netctl start eno3
+```
+
+Next, stop and disable the dhcp service:
+
+```ssh
+# systemctl stop dhcpcd
+# systemctl disable dhcpcd
+```
+
+Finally, restart your system for the changes to take effect.
+
+#### FreeBSD 8.0
+
+Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/rc.conf`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
+
+```bash
+ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
+static_routes="net1 net2"
+route_net1="-net GATEWAY_IP/32 FAILOVER_IP"
+route_net2="default GATEWAY_IP"
+```
+
+Save and close the file, then reboot your virtual machine.
+
+#### Ubuntu 18.04
+
+First, establish an SSH connection to your virtual machine and open the network configuration file located in `/etc/netplan/` with the following command. For demonstration purposes, our file is called `50-cloud-init.yaml`.
+
+```sh
+# nano /etc/netplan/50-cloud-init.yaml
+```
+
+Once the file is open for editing, amend it with the following code:
+
+```sh
+network:
+    ethernets:
+        your-network-interface:
+            addresses:
+            - your-failover-ip/32
+            nameservers:
+                addresses:
+                - 213.186.33.99
+                search: []
+            optional: true
+            routes:
+                - to: 0.0.0.0/0
+                  via: your-gateway-ip
+                  on-link: true
+    version: 2
+```
+
+Once you've made the changes, save and close the file, then run the following command:
+
+```sh
+# netplan try
+Warning: Stopping systemd-networkd.service, but it can still be activated by:
+  systemd-networkd.socket
+Do you want to keep these settings?
+
+Press ENTER before the timeout to accept the new configuration
+
+Changes will revert in 120 seconds
+Configuration accepted.
+```
+
+#### Windows Server 2012 / Hyper-V
+
+Before configuring your virtual machine, you'll need to create a virtual switch.
+
+From the command line of your Dedicated Server, run `IPconfig /ALL`{.action} and then note the name of the network adapter that contains the server's main IP address.
+
+In the Hyper-V Manager, create a new virtual switch and set the connection type to `External`{.action}.
+
+Select the adapter with the server’s IP, then check `Allow management operating system to share this network adapter`{.action}.
+
+![networkbridging](images/network-bridging-windows-2012-1.jpg){.thumbnail}
+
+> [!primary]
+> 
+>This step is only required once for a hyper-v server. For all VMs, a virtual switch is required to connect the VM’s virtual network adapters to the server’s physical adapter.
+> 
+
+Next, select the VM that you wish to add the failover IP to. Use the Hyper-V Manager to change the settings of the VM and shut it down.
+
+Next, expand the network adapter and click on `Advanced Features`{.action}, change the MAC address to `static`{.action}, and enter the virtual MAC address for the failover IP. Once you have entered these settings, press `OK`{.action} to apply the changes.
+
+![networkbridging](images/network-bridging-windows-2012-2.jpg){.thumbnail}
+
+Next, start the VM and log in as an administrator, then go to `Control Panel`{.action} > `Network and Sharing Center`{.action}. Click on the `Connections: Ethernet`{.action} link, then click on the `Properties`{.action} button to view the ethernet properties.
+
+Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, and then click on the `Properties`{.action} button to show IPv4 properties.
+
+![networkbridging](images/network-bridging-windows-2012-3.jpg){.thumbnail}
+
+In the IPv4 Properties window, select `Use the following IP address`{.action}. Enter the failover IP into the IP address field, and enter 255.255.255.255 into the subnet mask.
+
+Next, enter your server’s gateway IP address into the default gateway (i.e. your server’s IP, ending with 254), and enter 213.186.33.99 into the `Preferred DNS Server`{.action} field.
+
+Click `OK`{.action}, and ignore the warning message about the gateway IP and assigned IP not being in the same subnet.
+
+Finally, reboot the server. The VM should then be connected to the internet using the failover IP.
+
+![networkbridging](images/network-bridging-windows-2012-4.jpg){.thumbnail}
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
