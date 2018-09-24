@@ -6,11 +6,11 @@ section: Procedura
 order: 2
 ---
 
-**Ultimo aggiornamento: 13/09/2018**
+**Ultimo aggiornamento: 21/09/2018**
 
 ## Obiettivo
 
-Vediamo adesso come utilizzare [Cloud Desktop Infrastructure](https://www.ovh.es/cloud/cloud-desktop/infrastructure/){.external}.
+Vediamo adesso come utilizzare [Cloud Desktop Infrastructure](https://www.ovh.it/cloud/cloud-desktop/infrastructure/){.external}.
 
 **Questa guida ti mostra come avviare un <i>pool</i> automatico di macchine Linked Clones.**
 
@@ -80,7 +80,7 @@ Al fine di potersi basare su uno stato immutabile della macchina virtuale che fu
 
 ![Titre de snapshot](images/1202.png){.thumbnail}
 
-Adesso che hai creato il template, scopri come [creare un <i>pool</i>](https://docs.ovh.it/cloud-desktop-infrastructure/creare-un-pool/).
+Adesso che hai creato il template, scopri come [creare un <i>pool</i>](https://docs.ovh.com/it/cloud-desktop-infrastructure/creare-un-pool/).
 
 ## Per saperne di più
 

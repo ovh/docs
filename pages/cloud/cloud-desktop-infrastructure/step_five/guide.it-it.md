@@ -10,7 +10,7 @@ order: 5
 
 ## Obiettivo
 
-Grazie alle guide precedenti, hai potuto [creare un pool](https://docs.ovh.com/it/cloud-desktop-infrastructure/creare-un-pool/){.external} e [fornire agli utenti l’accesso ai desktop virtuali](https://docs.ovh.it/cloud-desktop-infrastructure/assegnare-desktop-virtuali){.external}. A questo punto non ti resta che connetterti ai tuoi desktop virtuali.
+Grazie alle guide precedenti, hai potuto [creare un pool](https://docs.ovh.com/it/cloud-desktop-infrastructure/creare-un-pool/){.external} e [fornire agli utenti l’accesso ai desktop virtuali](https://docs.ovh.com/it/cloud-desktop-infrastructure/assegnare-desktop-virtuali){.external}. A questo punto non ti resta che connetterti ai tuoi desktop virtuali.
 
 **Questa guida ti mostra come effettuare il log in.**
 
@@ -18,7 +18,7 @@ Grazie alle guide precedenti, hai potuto [creare un pool](https://docs.ovh.com/i
 
 - Aprire il client VMware Horizon oppure un browser
 - Conoscere l’indirizzo (URL) del proprio punto di accesso, disponibile nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
-- [Aver autorizzato il proprio utente sul pool](https://docs.ovh.it/cloud-desktop-infrastructure/assegnare-desktop-virtuali){.external}
+- [Aver autorizzato il proprio utente sul pool](https://docs.ovh.com/it/cloud-desktop-infrastructure/assegnare-desktop-virtuali){.external}
 
 
 ## Procedura
@@ -49,7 +49,7 @@ Per fare ciò, clicca sull’indirizzo indicato nell’email ricevuta dopo la co
 Puoi scaricarlo collegandoti all’indirizzo: [VMware Horizon client](https://my.vmware.com/en/web/vmware/info/slug/desktop_end_user_computing/vmware_horizon_clients/4_0){.external}.
 
 - Una volta avviato il client, clicca su `+`{.action} o `Aggiungere un server`{.action}.
-- Inserisci l’indirizzo di connessione al tuo desktop virtuale (indicato nell’email che hai ricevuto dopo la consegna del tuo [Cloud Desktop Infrastructure](https://www.ovh.com/fr/cloud/cloud-desktop/infrastructure/){.external} in *Desktop Access*).
+- Inserisci l’indirizzo di connessione al tuo desktop virtuale (indicato nell’email che hai ricevuto dopo la consegna del tuo [Cloud Desktop Infrastructure](https://www.ovh.it/cloud/cloud-desktop/infrastructure/){.external} in *Desktop Access*).
 - Clicca sul server appena creato.
 - Inserisci quindi le tue credenziali e poi clicca su `Login`{.action}.
 

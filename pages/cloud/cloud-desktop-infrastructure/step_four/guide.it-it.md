@@ -6,13 +6,13 @@ section: Procedura
 order: 4
 ---
 
-**Ultimo aggiornamento: 20/09/2018**
+**Ultimo aggiornamento: 21/09/2018**
 
 ## Obiettivo
 
 Una volta [creato il pool](https://docs.ovh.com/it/cloud-desktop-infrastructure/creare-un-pool/){.external}, vediamo come autorizzare gli utenti ad accedere ai vari desktop virtuali.
 
-**Questa guida ti mostra come aggiungere gli utenti**
+**Questa guida ti mostra come aggiungere gli utenti.**
 
 
 ## Prerequisiti
@@ -40,7 +40,7 @@ Le operazioni si svolgono all’interno di VMware Horizon 7.1. La scheda `Entitl
 ![Selection de l'utilisateur](images/1201.png){.thumbnail}
 
 
-A questo punto gli utenti associati a un pool possono[ connettersi e utilizzare i desktop virtuali.](https://docs.ovh.it/cloud-desktop-infrastructure/connessione-desktop-virtuale/){.external}
+A questo punto gli utenti associati a un pool possono[ connettersi e utilizzare i desktop virtuali.](https://docs.ovh.com/it/cloud-desktop-infrastructure/connessione-desktop-virtuale/){.external}
 
 
 ## Per saperne di più
