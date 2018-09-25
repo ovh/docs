@@ -101,7 +101,7 @@ You can find this information in the `FTP - SSH`{.action} tab of your Web Hostin
 You will need to enter your primary username (or FTP login) with a suffix determining the backup you want to connect to. Please use the information below to find out how to access the backup you want:
 
 |Backup date|Suffix to add|Example of filled-in username|
-|---|---|
+|---|---|---|
 |The same day, at 00:01 (UTC+1)|-snap0|ftpuser**-snap0**|
 |One day ago, at 00:01 (UTC+1)|-snap1|ftpuser**-snap1**|
 |Two days ago, at 00:01 (UTC+1)|-snap2|ftpuser**-snap2**|
