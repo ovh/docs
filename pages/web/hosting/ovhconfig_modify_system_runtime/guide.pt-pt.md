@@ -1,12 +1,12 @@
 ---
 title: 'Alterar a configuração do alojamento web'
-excerpt: 'Saiba como alterar a configuração do seu alojamento web da OVH'
 slug: modificar_o_ambiente_de_execucao_do_meu_alojamento_web
+excerpt: 'Saiba como alterar a configuração do seu alojamento web da OVH'
 section: 'Configuração do alojamento'
 order: 3
 ---
 
-**Última atualização: 24/09/2018**
+**Última atualização: 25/09/2018**
 
 ## Sumário
 
@@ -34,7 +34,7 @@ Ao alterar a configuração do seu alojamento, estará a alterar a configuraçã
 
 #### 1 - Aceder à gestão da configuração do alojamento
 
-Para iniciar esta operação, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o alojamento web em causa. Na janela `Informações gerais`{.action}, clique em `Alterar configuração`{.action}.
+Para iniciar esta operação, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o alojamento web em causa. Na janela `Informações gerais`{.action}, secção Configuração: clique no botão das reticências junto à versão e, em seguida, selecione a opção `Alterar configuração`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
