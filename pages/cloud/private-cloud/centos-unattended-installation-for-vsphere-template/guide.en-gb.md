@@ -10,16 +10,18 @@ order: 10
 
 ## Objective
 This first guide will go throught:
-1. create a [CentOS](https://www.centos.org/) 7 ISO with a kickstart config file
-2. create a virtual image template inside vSphere on OVH [Private Cloud Computing](https://www.ovh.com/private-cloud/)
+
+1. Create a [CentOS](https://www.centos.org/) 7 ISO with a kickstart config file
+2. Create a virtual image template inside vSphere on OVH [Private Cloud Computing](https://www.ovh.com/private-cloud/)
 
 ## Requirements
+
 - an access to a vSphere instance
 - a terminal with root access for package installation. It can be a Debian under [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux), CentOS, Ubuntu, ...
 
 > [!primary]
 > 
-> The resources used to automate this guide are available [here](https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/openshift_unattended_centos_install/scripts/) folder.
+> The resources used to automate this guide are available in this folder : https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/openshift_unattended_centos_install/scripts/
 > 
 
 From your terminal, install `ansible` and `govc`.
@@ -95,3 +97,5 @@ We have learn how to create a custion unattended installation CentOS ISO file an
 
 ## Go further
 The next step is to deploy our first [OpenShift Origin mono-server instance]({filename}../openshift_mono_server/guide.en-gb.md).
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
