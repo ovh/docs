@@ -6,7 +6,7 @@ section: 'Configuration de l''hébergement'
 order: 3
 ---
 
-**Dernière mise à jour le 24/09/2018**
+**Dernière mise à jour le 25/09/2018**
 
 ## Objectif
 
@@ -53,7 +53,7 @@ Sur la fenêtre qui apparaît, deux choix sont possibles. Sélectionnez celui qu
 
 > [!primary]
 >
-> Changer le moteur d'exécution de votre hébergement web réinitialise automatiquement les sessions PHP.
+> Changer l'environnement d'exécution de votre hébergement web réinitialise automatiquement les sessions PHP.
 > 
 
 Dès que vous êtes prêt, cliquez sur `Valider`{.action} pour appliquer la modification. Patientez quelques instants le temps qu'elle se réalise.
