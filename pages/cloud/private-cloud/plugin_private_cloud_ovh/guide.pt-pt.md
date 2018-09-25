@@ -5,7 +5,7 @@ excerpt: 'Saiba como utilizar o plugin Private Cloud da OVH'
 section: 'Funcionalidades da OVH'
 ---
 
-**Última atualização: 13/09/2018**
+**Última atualização: 25/09/2018**
 
 ## Sumário
 
@@ -38,7 +38,7 @@ A encomenda de datastores adicionais é feita no menu `Add OVH Storage`{.action}
 
 ![](images/addstorage_02.png){.thumbnail}
 
-Nota: existe uma alternativa para aceder a estes menus. Para o fazer, clique com o botão direito do rato no datacenter ou no cluster da infraestrutura e, em seguida, selecione a opção `OVH Dedicated Cloud`{.action}.
+Nota: existe uma alternativa para aceder a estes menus. Para o fazer, clique com o botão direito do rato no datacenter ou no cluster da infraestrutura e, em seguida, selecione a opção `OVH Private Cloud`{.action}.
 
 ![Opção OVH Dedicated Cloud](images/rightclick.png){.thumbnail}
 
