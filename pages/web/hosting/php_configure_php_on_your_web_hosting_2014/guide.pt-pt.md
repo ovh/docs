@@ -1,8 +1,8 @@
 ---
 title: 'Mudar a versão de PHP do alojamento web'
+slug: configurar_o_php_num_alojamento_web_alojamentos_2014_ovh
 excerpt: 'Saiba como mudar a versão de PHP do seu alojamento web da OVH'
 id: '1207'
-slug: configurar_o_php_num_alojamento_web_alojamentos_2014_ovh
 legacy_guide_number: g1207
 ---
 
@@ -30,14 +30,14 @@ Uma vez que as novas versões podem não incluir determinadas funcionalidades, *
 Embora a OVH trate da instalação das versões mais recentes de PHP nos seus servidores, cabe-lhe a si, enquanto webmaster, garantir que o seu website está sempre atualizado e compatível com as versões mais recentes de PHP. Dependendo do site que utiliza, existem duas formas de verificar:
 
 1. **Utilizo um site “chave na mão”, como um sistema de gestão de conteúdos (Content Management System ou CMS)**, como por exemplo o WordPress ou o Joomla!: 
-- consulte a documentação oficial criada pelo editor do CMS que utiliza; 
+- Consulte a documentação oficial criada pelo editor do CMS que utiliza; 
 - Tome nota das informações relativamente aos requisitos técnicos indispensáveis para o funcionamento do seu CMS, assim como à manipulação necessária para o atualizar;
-- caso seja necessário, atualize o seu CMS garantindo que a nova versão é compatível com o alojamento da OVH.
+- Caso seja necessário, atualize o seu CMS garantindo que a nova versão é compatível com o alojamento da OVH.
 
 2. **Utilizo um site baseado numa solução personalizada**: 
-- entre em contacto com o webmaster que criou o website;
-- para saber mais sobre as migrações de versões acessíveis, consulte a documentação oficial PHP: <http://php.net/manual/pt_BR/appendices.php>;
-- caso seja necessário, atualize o código do seu site garantindo que este é compatível com o alojamento da OVH.
+- Entre em contacto com o webmaster que criou o website;
+- Para saber mais sobre as migrações de versões acessíveis, consulte a documentação oficial PHP: <http://php.net/manual/pt_BR/appendices.php>;
+- Caso seja necessário, atualize o código do seu site garantindo que este é compatível com o alojamento da OVH.
 
 Tem a possibilidade de conhecer a versão de PHP que está a ser utilizada pelo seu alojamento: 
 
@@ -48,7 +48,7 @@ Tem a possibilidade de conhecer a versão de PHP que está a ser utilizada pelo 
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}
 
-Se não conseguir verificar a compatibilidade do seu website com a nova versão de PHP, pode tentar alterar a versão atual e retroceder, caso seja necessário (desaconselhamos fortemente este método). No entanto, corre o risco de gerar uma falha no seu site. Aliás, mesmo que o site continue a ser apresentado após a alteração, é possível que alguma funcionalidade tenha sido afetada e deixe de funcionar. 
+Se não conseguir verificar a compatibilidade do seu website com a nova versão de PHP, pode tentar alterar a versão atual e retroceder, caso seja necessário (**desaconselhamos fortemente este método**). No entanto, corre o risco de gerar uma falha no seu site. Aliás, mesmo que o site continue a ser apresentado após a alteração, é possível que alguma funcionalidade tenha sido afetada e deixe de funcionar. 
 
 Avance para o passo seguinte para efetuar a alteração.
 
