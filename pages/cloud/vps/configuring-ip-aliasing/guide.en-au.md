@@ -5,7 +5,7 @@ excerpt: 'This guide explains how to add failover IPs to your configuration'
 section: 'Network Management'
 ---
 
-**Last updated 24/09/2018**
+**Last updated 25/09/2018**
 
 ## Objective
 
