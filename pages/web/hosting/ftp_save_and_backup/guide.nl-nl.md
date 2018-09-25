@@ -122,7 +122,7 @@ Voordat u doorgaat naar de volgende stap, moet u ervoor zorgen dat u alle bestan
 
 #### Stap 4: Herstel de bestanden.
 
-Zodra u de bestanden hebt die u moet terugzetten, maakt u opnieuw verbinding met uw opslagruimte. Voeg deze keer echter geen FTP-gebruikersnaam toe omin te loggen. Door dit achtervoegsel niet in te voeren, maakt u verbinding met de huidige inhoud op uw opslagruimte en niet met een backup van een eerdere datum.
+Zodra u de bestanden hebt die u moet terugzetten, maakt u opnieuw verbinding met uw opslagruimte. Voeg deze keer echter geen FTP-gebruikersnaam toe om in te loggen. Door dit achtervoegsel niet in te voeren, maakt u verbinding met de huidige inhoud op uw opslagruimte en niet met een backup van een eerdere datum.
 
 Wanneer u eenmaal bent ingelogd, kunt u de gewenste bestanden herstellen. Om dit te doen, onderzoekt u de inhoud van uw opslagruimte totdat u ze vindt, downloadt u ze en overschrijft u de oude bestanden.
 
