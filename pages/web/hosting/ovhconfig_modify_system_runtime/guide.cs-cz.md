@@ -6,7 +6,7 @@ section: Konfigurace
 order: 3
 ---
 
-**Poslední aktualizace 20/09/2018**
+**Poslední aktualizace 25/09/2018**
 
 ## Cíl
 
@@ -34,7 +34,7 @@ Při úpravách konfigurace webhostingu dochází k úpravám v konfiguraci, kte
 
 #### Fáze 1: přístup do administračního rozhraní webhostingu
 
-Přihlaste se do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V záložce `Základní informace`{.action} klikněte na tlačítko `Upravit konfiguraci`{.action} (karta Konfigurace).
+Přihlaste se do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V záložce `Základní informace`{.action} přejděte do karty Konfigurace. V řádku `Verze globálního PHP`{.action} klikněte na ikonku tří teček `(...)`{.action} a vyberte možnost `Upravit konfiguraci`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
