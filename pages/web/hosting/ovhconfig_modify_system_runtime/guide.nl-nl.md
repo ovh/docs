@@ -6,7 +6,7 @@ section: 'Configuratie van het webhostingplan'
 order: 3
 ---
 
-**Laatste update 24-09-2018**
+**Laatste update 25-09-2018**
 
 ## Introductie
 
@@ -34,7 +34,7 @@ Wanneer u de configuratie van uw webhostingplan wijzigt, bewerkt u ook de config
 
 #### Stap 1: Ga naar de configuratie van de webhosting
 
-Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Zorg ervoor dat u zich op het tabblad `Algemene informatie`{.action} bevindt en klik vervolgens op de knop `Configuratie bewerken`{.action}.
+Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Zorg ervoor dat u zich op het tabblad `Algemene informatie`{.action} bevindt, klik op `...`{.action} en klik vervolgens op de knop `Configuratie bewerken`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
