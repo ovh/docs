@@ -95,9 +95,10 @@ Porty 993 i 465 są podawane, gdy zabezpieczenie SSL jest włączone.
 - Należy obowiązkowo włączyć uwierzytelnianie serwera SMTP.
 
 
-|Porty|SSLwłączony|SSLwyłaczony|
-|Przychodzące|993|143|
-|Wychodzące|465|587|
+|Porty       |SSL włączony|SSL wyłaczony|
+|------------|------------|-------------|
+|Przychodzące|993         | 143         |
+|Wychodzące  |465         | 587         |
 
 
 
@@ -122,9 +123,10 @@ Porty 995 i 465 są podawane, gdy zabezpieczenie SSL jest włączone.
 - Należy obowiązkowo włączyć uwierzytelnianie serwera SMTP.
 
 
-|Porty|SSLwłączony|SSLwyłaczony|
-|Przychodzące|995|110|
-|Wychodzące|465|587|
+|Porty       |SSL włączony|SSL wyłaczony|
+|------------|------------|-------------|
+|Przychodzące| 995        | 110         |
+|Wychodzące  | 465        | 587         |
 
 
 
