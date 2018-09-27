@@ -161,19 +161,29 @@ ansible-playbook -vvv --extra-vars @vars.yml setup_openshift.yml
 Once done, we need to SSH to the host with `ssh root@<your host ip>` and the last missing steps are:
 
 - running the ansible installation playbook
-`cd openshift-ansible*`
-`ansible-playbook -vv -i /root/hosts.localhost playbooks/prerequisites.yml`
-`ansible-playbook -vv -i /root/hosts.localhost playbooks/deploy_cluster.yml`
+
+```shell
+cd openshift-ansible*
+ansible-playbook -vv -i /root/hosts.localhost playbooks/prerequisites.yml
+ansible-playbook -vv -i /root/hosts.localhost playbooks/deploy_cluster.yml
+```
 
 - Configuring your adming account
-`htpasswd -c -b ${htaccess_path} admin your_password`
-`oc adm policy add-cluster-role-to-user cluster-admin admin`
 
+```shell
+htpasswd -c -b ${htaccess_path} admin your_password
+oc adm policy add-cluster-role-to-user cluster-admin admin
+```
 - Run your first Hello-world example
-`oc run hello-world --replicas=2 --image=gcr.io/google-samples/node-hello:1.0 --port=8080`
-`oc expose deploymentconfig hello-world --type=NodePort --name=hello-world`
 
-You can get the exposed port via `oc get service hello-world -o json | jq '.spec.ports[0].nodePort'` and try to browse and do a cURL on `http://<ip>:<exposed port>`. You just deployed a containerized web application on your Private Cloud with OpenShift!
+```shell
+oc run hello-world --replicas=2 --image=gcr.io/google-samples/node-hello:1.0 --port=8080
+oc expose deploymentconfig hello-world --type=NodePort --name=hello-world
+```
+
+You can get the exposed port via `oc get service hello-world -o json | jq '.spec.ports[0].nodePort'` and try to browse and do a cURL on `http://<ip>:<exposed port>`.
+
+You just deployed a containerized web application on your Private Cloud with OpenShift!
 
 ## Conclusion
 
