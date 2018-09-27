@@ -54,18 +54,4 @@
       content: |
         openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider', 'file': '/etc/origin/master/htpasswd'}]
         # openshift_master_external_ip_network_cidrs=['137.74.98.33']
-
-# ansible-playbook -vv -i inventory/hosts.localhost playbooks/prerequisites.yml
-# ansible-playbook -vv -i inventory/hosts.localhost playbooks/deploy_cluster.yml
-# htpasswd -c -b /etc/origin/master/htpasswd developer ovhovh32
-# oc adm policy add-cluster-role-to-user cluster-admin developer
-
-# oc run hello-world --replicas=2 --image=gcr.io/google-samples/node-hello:1.0 --port=8080
-# oc expose deploymentconfig hello-world --type=NodePort --name=hello-world
-# oc get service hello-world -o json
-
-# oc get service hello-world -o json | jq '.spec.ports[0].nodePort'
-
-
-# oc get nodes
-
+      

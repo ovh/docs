@@ -164,14 +164,14 @@ Once done, we need to SSH to the host with `ssh root@<your host ip>` and the las
 
 ```shell
 cd openshift-ansible*
-ansible-playbook -vv -i /root/hosts.localhost playbooks/prerequisites.yml
-ansible-playbook -vv -i /root/hosts.localhost playbooks/deploy_cluster.yml
+ansible-playbook -vv -i inventory/hosts.localhost playbooks/prerequisites.yml
+ansible-playbook -vv -i inventory/hosts.localhost playbooks/deploy_cluster.yml
 ```
 
 - Configuring your adming account
 
 ```shell
-htpasswd -c -b ${htaccess_path} admin your_password
+htpasswd -c -b /etc/origin/master/htpasswd admin your_password
 oc adm policy add-cluster-role-to-user cluster-admin admin
 ```
 
