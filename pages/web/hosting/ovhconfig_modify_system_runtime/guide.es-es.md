@@ -44,12 +44,12 @@ Si el botón `Cambiar la configuración`{.action} aparece oscurecido, es posible
 
 #### 2. Comprobar la configuración del alojamiento web
 
-La ventana ofrece dos opciones posibles. Seleccione la operación que desea realizar y haga clic en `Siguiente`{.action}.
+La ventana ofrece dos opciones posibles. Seleccione la operación que desee realizar y haga clic en `Siguiente`{.action}.
 
 |Operación|Detalle|
 |---|---|
 |Volver a la configuración anterior|Seleccione la configuración que quiera restaurar en el menú desplegable **Historial**. Si no ha realizado ningún cambio anteriormente, esta opción no estará disponible.|
-|Modificar la configuración actual|Seleccione los cambios que quiera realizar en la configuración. Para más información sobre las distintas opciones de configuración, consulte el apartado [Descubrir las configuraciones disponibles](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#opciones-de-configuracion-disponibles){.external} de esta guía.|
+|Modificar la configuración actual|Seleccione los cambios que quiera realizar en la configuración. Para más información sobre las distintas opciones de configuración, consulte el apartado [Opciones de configuración disponibles](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#opciones-de-configuracion-disponibles_1){.external} de esta guía.|
 
 > [!primary]
 >
@@ -120,17 +120,17 @@ La elección del motor de PHP permite activar o desactivar el acelerador de PHP 
 
 Puede cambiar el motor de PHP de su alojamiento web de dos formas distintas:
 
-- **Desde el área de cliente**: Siga los pasos que se describen en la sección [Modificar la configuración del alojamiento web desde el área de cliente](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#modificar-la-configuracion-del-alojamiento-web-desde-el-area-de-cliente){.external} de esta guía. Para activar el acelerador de PHP (PHP-FPM), seleccione «php» como motor. Para desactivarlo, seleccione «phpcgi».
+- **Desde el área de cliente**: Siga los pasos que se describen en el apartado [Modificar la configuración del alojamiento web desde el área de cliente](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#modificar-la-configuracion-del-alojamiento-web-desde-el-area-de-cliente){.external} de esta guía. Para activar el acelerador de PHP (PHP-FPM), seleccione «php» como motor. Para desactivarlo, seleccione «phpcgi».
 - **Modificando manualmente el archivo «.ovhconfig»**: Esta opción es más técnica y requiere estar conectado al espacio de almacenamiento. Si quiere editar el archivo **.ovhconfig**, consulte la guía [Configurar el archivo «.ovhconfig» de un alojamiento web](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/){.external}.
 
 #### Modo
 
 El modo permite gestionar el comportamiento del cacheado de los archivos estáticos del sitio web (las imágenes, por ejemplo) y el tratamiento de los errores PHP (que se suelen utilizar cuando un sitio web muestra una página en blanco, por ejemplo). Puede elegir entre dos modos:
 
-|Modo|Cacheado de los archivos estáticos|Tratamiento de los errores PHP|
+|Modo|Almacenamiento en caché de los archivos estáticos|Tratamiento de los errores PHP|
 |---|---|---|
 |**producción**|Maximiza el almacenamiento en caché de los archivos estáticos en los navegadores web.|Los errores de PHP no se muestran en el sitio web.|
-|**desarrollo**|No se aplica ningún cacheado.|Los errores de PHP se muestran en el sitio web.|
+|**desarrollo**|No se almacena ningún archivo en caché.|Los errores de PHP se muestran en el sitio web.|
 
 Puede cambiar el modo de su alojamiento web de dos formas distintas:
 
