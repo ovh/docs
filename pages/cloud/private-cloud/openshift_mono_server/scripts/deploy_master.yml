@@ -1,0 +1,77 @@
+---
+- name: Recipe Centos template
+  hosts: localhost
+
+  environment:
+    GOVC_USERNAME: "{{ govc_username | default(ansible_env.GOVC_USERNAME) }}"
+    GOVC_PASSWORD: "{{ govc_password | default(ansible_env.GOVC_PASSWORD) }}"
+
+  tasks:
+    - name: Check if govc is installed
+      command: which govc
+
+    - name: Check if govc is configured
+      command: govc about
+
+    - name: Create "{{ ds_vm_dir }}" folder
+      command: govc folder.create vm/"{{ ds_vm_dir }}"
+      ignore_errors: yes
+
+    - name: Clone the template from "{{ template_name }}"
+      vmware_guest:
+        username: "{{ ansible_env.GOVC_USERNAME }}"
+        password: "{{ ansible_env.GOVC_PASSWORD }}"
+        hostname: "{{ host }}"
+        name: "{{ vm_name }}"
+        template: "{{ template_name }}"
+        datacenter: "{{ datacenter }}"
+        folder: "{{ ds_vm_dir }}"
+        state: poweredon
+
+    - name: Wait for VMware tools to become available for "{{ vm_name }}"
+      vmware_guest_tools_wait:
+        username: "{{ ansible_env.GOVC_USERNAME }}"
+        password: "{{ ansible_env.GOVC_PASSWORD }}"
+        hostname: "{{ host }}"
+        name: "{{ vm_name }}"
+
+    - name: Copy ssh key inside playbook dir (https://github.com/ansible/ansible/issues/7106#issuecomment-127825573)
+      copy:
+        src: "{{ ssh_key_pub }}"
+        dest: "{{ playbook_dir }}/ssh_key.pub"
+
+    - name: Generate setup shell script
+      template:
+        src: "{{ playbook_dir }}/set_config.sh.j2"
+        dest: "{{ playbook_dir }}/set_config.sh"
+
+    - name: copy file to vm
+      vmware_guest_file_operation:
+        username: "{{ ansible_env.GOVC_USERNAME }}"
+        password: "{{ ansible_env.GOVC_PASSWORD }}"
+        hostname: "{{ host }}"
+        vm_id: "{{ vm_name }}"
+        datacenter: "{{ datacenter }}"
+        vm_username: root
+        vm_password: "{{ root_password }}"
+        copy:
+            src: "{{ playbook_dir }}/set_config.sh"
+            dest: "/root/set_config.sh"
+            overwrite: True
+
+    - name: Set server config
+      vmware_vm_shell:
+        username: "{{ ansible_env.GOVC_USERNAME }}"
+        password: "{{ ansible_env.GOVC_PASSWORD }}"
+        hostname: "{{ host }}"
+        vm_id: "{{ vm_name }}"
+        datacenter: "{{ datacenter }}"
+        vm_username: root
+        vm_password: "{{ root_password }}"
+        vm_shell: "/bin/sh"
+        vm_shell_args: "/root/set_config.sh"
+        # vm_shell_env:
+        #   - "PATH=/bin"
+        #   - "VAR=test"
+        # vm_shell_cwd: "/tmp"
+      register: shell_command_output

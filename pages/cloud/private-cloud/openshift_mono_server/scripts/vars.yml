@@ -1,0 +1,18 @@
+host: pcc-123-456-789-123.ovh.com
+datacenter: pcc-123-456-789-123_datacenter2709
+datastore: pcc-005738 # govc ls -t Datastore '/*/datastore/Shared Storages/*'
+ressource_pool: Cluster1/Resources # govc ls -t ResourcePool '/*/host/*'
+vm_network: VM Network # govc ls -t DistributedVirtualPortgroup '/*/network/*-dvs/VM Network'
+
+template_name: Centos7
+ds_vm_dir: openshift
+
+vm_name: mono-server
+root_password: test
+ssh_key_priv: "{{ ansible_env.HOME }}/.ssh/id_ecdsa"
+ssh_key_pub: "{{ ansible_env.HOME }}/.ssh/id_ecdsa.pub"
+hostname: "{{ vm_name }}"
+ip: "123.45.67.33"
+netmask: "255.255.255.240"
+broadcast: "123.45.67.47"
+gw: "123.45.67.46"
