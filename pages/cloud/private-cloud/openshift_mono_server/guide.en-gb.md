@@ -174,6 +174,7 @@ ansible-playbook -vv -i /root/hosts.localhost playbooks/deploy_cluster.yml
 htpasswd -c -b ${htaccess_path} admin your_password
 oc adm policy add-cluster-role-to-user cluster-admin admin
 ```
+
 - Run your first Hello-world example
 
 ```shell
