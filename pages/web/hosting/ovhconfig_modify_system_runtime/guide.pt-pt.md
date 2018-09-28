@@ -6,7 +6,7 @@ section: 'Configuração do alojamento'
 order: 3
 ---
 
-**Última atualização: 25/09/2018**
+**Última atualização: 28/09/2018**
 
 ## Sumário
 
@@ -112,7 +112,7 @@ Existem várias formas de alterar a versão de PHP do seu alojamento web:
 - **através da Área de Cliente**: utilize as instruções indicadas na secção [Alterar a configuração do alojamento web a partir da Área de Cliente](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/#alterar-a-configuracao-do-alojamento-web-a-partir-da-area-de-cliente){.external} deste manual;
 - **alterando manualmente um ficheiro no seu espaço de armazenamento**: esta solução é mais técnica e precisa de aceder ao seu espaço de armazenamento. 
 
-Para mais informações sobre a alteração de uma versão de PHP, consulte o nosso manual [Alterar a versão de PHP de um alojamento web da OVH](https://docs.ovh.com/pt/hosting/configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/){.external}.
+Para mais informações sobre a alteração de uma versão de PHP, consulte o nosso manual [Mudar a versão de PHP de um alojamento web da OVH](https://docs.ovh.com/pt/hosting/configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/){.external}.
 
 #### Motor PHP
 
