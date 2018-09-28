@@ -1,11 +1,10 @@
 ---
-title: Que faire si mon site est ferme pour hack ?
+title: 'Que faire si mon site est ferme pour hack ?'
 slug: site-ferme-pour-hack
 legacy_guide_number: 1392
-excerpt: Dans ce guide vous trouverez differentes informations et de l'aide concernant la fermeture de votre hebergement mutualise suite a un hack de votre site.
+excerpt: 'Dans ce guide vous trouverez differentes informations et de l''aide concernant la fermeture de votre hebergement mutualise suite a un hack de votre site.'
 section: Diagnostic
 ---
-
 
 ## Systeme anti-hack OVH
 
@@ -16,9 +15,9 @@ Il faut que vous sachiez que si votre site a été fermé, ce n'est nullement da
 
 On peut penser qu'il nous suffirait de couper le programme ou le script infecté pour que le problème soit réglé... L'expérience montre que lorsqu'une faille est trouvée sur un site web, les hacks se font plus fréquents et généralement plus agressifs. Notre système surveille régulièrement l'état du serveur, cependant il peut suffire de quelques secondes à un pirate(Hacker) ou un robot(Bot) pour causer des dommages importants sur votre site ou sur les serveurs.
 
-Par conséquent, il vous est demandé de [trouver la faille et de la corriger avant toute réouverture](#corrections_reperer_et_corriger_la_faille_de_securite){.external}.
+Par conséquent, il vous est demandé de trouver la faille et de la corriger avant toute réouverture].
 
-*Notre système coupe tous les programmes apparentés à des hacks ainsi que si le hacker a laissé une* [backdoor*](#information_utile_lexique){.external} *lui permettant de se reconnecter très facilement. Nous empêchons ainsi le hacker/bot de poursuivre ses opérations.*
+*Notre système coupe tous les programmes apparentés à des hacks ainsi que si le hacker a laissé une **backdoor** *lui permettant de se reconnecter très facilement. Nous empêchons ainsi le hacker/bot de poursuivre ses opérations.*
 
 
 ![hosting](images/1790.png){.thumbnail}
@@ -81,8 +80,6 @@ Cliquez ensuite sur le  **deuxième lien** .
 
 ![hosting](images/4202.png){.thumbnail}
 
-*Un guide est disponible concernant l'accès aux logs :* []({legacy}1344){.ref}
-
 - 1 Relevez la date et l'heure du mail d'alerte que vous avez reçu ;
 - 2 Consultez vos logs en partant de cet horaire et en élargissant progressivement le champ de recherche sur des horaires antérieurs jusqu'à repérer une entrée incorrecte (étrange, différente des autres, etc.). Cela peut demander un peu de pratique ou de connaissance du format des requêtes suivant les cas. Prêtez plutôt attention aux requêtes de type POST, qui sont la principale source de hack ;
 - 3 Relevez le script attaqué par cette requête ;
@@ -93,8 +90,6 @@ Cliquez ensuite sur le  **deuxième lien** .
 ![hosting](images/2834.png){.thumbnail}
 
 **Important** :
-
-
 
 > [!alert]
 >
@@ -118,8 +113,6 @@ Dans les deux cas il est demandé de corriger la faille de sécurité et pas sim
 
 **Important** :
 
-
-
 > [!alert]
 >
 > Pour cela il faut vous rapprocher d'un professionnel WebMaster.
@@ -134,12 +127,10 @@ Les étapes liées au passage en état hack :
 - 2 Un email est envoyé afin de vous prévenir qu'un blocage va être réalisé ;
 - 3 Modification de l'état de l'hébergement réalisée après quelques heures en fonction de la raison du blocage ;
 - 4 Vous devez supprimer les fichiers malveillants et corriger la faille de sécurité ;
-- 5 Il vous est possible de rouvrir directement l'hébergement (suivez les indications renseignés [en fin de ce
-guide](#informations_utiles_reouverture_via_filezilla){.external} ).
+- 5 Il vous est possible de rouvrir directement l'hébergement (suivez les indications renseignés en fin de ce guide.
 
 
 ![hosting](images/4208.png){.thumbnail}
-
 
 
 > [!success]
@@ -151,7 +142,6 @@ guide](#informations_utiles_reouverture_via_filezilla){.external} ).
 > assistance de votre espace client afin de préciser les modifications
 > réalisées pour corriger le problème.
 >
-<a name="Reopen"></a>
 
 ### Reouverture suite passage en etat Bloque
 Les étapes liées au passage en état hack :
@@ -162,13 +152,9 @@ Les étapes liées au passage en état hack :
 - 4 Vous devez obligatoirement contacter notre support en répondant sur l'email ouvert afin de demander à débloquer l'hébergement et expliquer les modifications qui vont être réalisées ;
 - 5 Suite à votre retour sur l'email, notre support peut modifier l'état de votre hébergement en état hack s'il estime que les modifications que vous allez apporter sont suffisantes ;
 - 6 Vous devez supprimer les fichiers malveillants et corriger la faille de sécurité ;
-- 7 Il vous est possible de rouvrir ensuite l'hébergement (suivez les indications renseignées [en fin de ce
-guide](#informations_utiles_reouverture_via_filezilla){.external} ) il reste préférable de répondre sur l'email afin que les administrateurs s'assurent que la modification réalisées soit suffisantes.
-
+- 7 Il vous est possible de rouvrir ensuite l'hébergement (suivez les indications renseignées[en fin de ce guide]) il reste préférable de répondre sur l'email afin que les administrateurs s'assurent que la modification réalisées soit suffisantes.
 
 ![hosting](images/4210.png){.thumbnail}
-
-
 
 > [!success]
 >
@@ -183,15 +169,14 @@ guide](#informations_utiles_reouverture_via_filezilla){.external} ) il reste pr�
 
 Si le délai des 3 heures est passé et que votre site n'est toujours pas en ligne, veuillez contacter notre support.
 
-
 ![hosting](images/2137.png){.thumbnail}
-
-<a name="Information"></a>
 
 ## Informations utiles
 
 ### Precautions a prendre
-Voici quelques précautions à prendre afin d'éviter au maximum les attaques : 1-  Quand vous installez votre blog, boutique en ligne, le login par défaut est "admin". Dans la mesure du possible, changez "admin" par autre login. Mais attention, il faut être sûr que cela n'impacte pas votre site. Posez la question sur le forum de l'éditeur de votre cms.
+Voici quelques précautions à prendre afin d'éviter au maximum les attaques : 
+
+1-  Quand vous installez votre blog, boutique en ligne, le login par défaut est "admin". Dans la mesure du possible, changez "admin" par autre login. Mais attention, il faut être sûr que cela n'impacte pas votre site. Posez la question sur le forum de l'éditeur de votre cms.
 
 2- Ne jamais utiliser le même mot de passe pour le FTP, base SQL, email, interface d'administration du site web. Utiliser un mot de passe contenant : chiffre, lettre et des majuscules/minuscules.
 
@@ -199,13 +184,12 @@ Voici quelques précautions à prendre afin d'éviter au maximum les attaques : 
 
 4- Effectuer les mises à jour de l'éditeur de votre cms (Wordpress, Joomla!, Prestashop).
 
-
 ### Bloquer une IP
 Suggestion pour améliorer la sécurité :
 
 Une première solution peut être de bloquer l'IP de l'attaque, mais il s'agit d'une solution temporaire, étant donné qu'un autre attaquant pourrait profiter de la même faille.
 
-Pour savoir comment bloquer une IP sur votre site : [.htaccess Protection IP](http://guides.ovh.com/HtaccessProtectIP){.external}. Interdiction à l'aide d'un fichier .htaccess
+Pour savoir comment bloquer une IP sur votre site : <https://docs.ovh.com/fr/hosting/mutualise-tout-sur-le-fichier-htaccess/>
 
 Exemple:
 
@@ -232,7 +216,7 @@ Une fois la source du problème corrigée, remettez les bons droits/chmod en 705
 - Récupérez votre identifiant et le mot de passe FTP qui vous permettent de vous connecter sur l'hébergement web.
 - Avoir un logiciel ftp ou client ftp, par exemple FileZilla
 
-[]({legacy}1380){.ref} Ouvrez FileZilla, cliquez sur "Serveur" puis sélectionnez "Entrez une commande FTP".
+Ouvrez FileZilla, cliquez sur "Serveur" puis sélectionnez "Entrez une commande FTP".
 
 *Dans FileZilla à la place de "Entrez une commande FTP" il est possible d'avoir "Saisir une commande personnalisée".*
 
@@ -336,9 +320,7 @@ Validez en cliquant sur l'icône pour exécuter votre commande FTP.
 
 ### Reouverture via SSH
 - Récupérez votre identifiant et le mot de passe FTP qui vous permettent de vous connecter sur l'hébergement web.
-- Avoir une offre permettant l'accès via SSH ( [voir les
-caractéristiques de nos
-offres](https://www.ovh.com/fr/hebergement-web/){.external} )
+- Avoir une offre permettant l'accès via SSH ( [voir les caractéristiques de nos offres](https://www.ovh.com/fr/hebergement-web/){.external} )
 - [Connexion ssh mutualisé](http://guide.ovh.net/SshMutualise){.external}
 
 Dans un premier temps vérifiez que votre site est bien fermé avec la commande :
