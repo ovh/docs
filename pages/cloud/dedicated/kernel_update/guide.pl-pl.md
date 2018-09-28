@@ -1,28 +1,33 @@
 ---
-title: Aktualizacja jądra na serwerze dedykowanym
-excerpt: Dowiedz się, jak zaktualizować kernel
+title: 'Aktualizacja jądra na serwerze dedykowanym'
 slug: aktualizacja-jadro-kernel-serwer-dedykowany
-section: Poziom zaawansowany
+excerpt: 'Dowiedz się, jak zaktualizować kernel dystrybucji za pomocą jądra OVH'
+section: 'Poziom zaawansowany'
 ---
 
-**Ostatnia aktualizacja dnia 2018-01-11**
+**Ostatnia aktualizacja z dnia 28-09-2018**
 
 ## Wprowadzenie
 
-Dzięki rozwiązaniu OVH masz możliwość aktualizacji jądra (kernela) w systemie Linux za pomocą funkcji *netboot*. Rekomendujemy również aktualizację jądra powiązanego z systemem eksploatacyjnym (OS) na Twoim dysku.
+Dzięki rozwiązaniu OVH, na [serwerach dedykowanych](https://www.ovh.pl/serwery_dedykowane/){.external} masz możliwość aktualizacji jądra (kernela) w systemie Linux za pomocą funkcji *netboot*. Zalecamy jednocześnie aktualizację na dysku systemu operacyjnego, z którym powiązany jest Twój kernel.
 
-**Z niniejszego przewodnika dowiesz się, jak przeprowadzić aktualizację jądra.**
+**Niniejszy przewodnik wyjaśnia, jak zaktualizować kernel dystrybucji za pomocą jądra OVH.**
+
+Wszystkie obrazy systemu na serwerach dedykowanych OVH używają domyślnie zoptymalizowanego jądra OVH. Użytkownicy, którzy zastąpili te obrazy swoją własną dystrybucją proszeni są o zapoznanie się z oficjalną dokumentacją, która jej dotyczy.
 
 > [!warning]
 >
-> OVH oddaje do Twojej dyspozycji serwery, którymi samodzielnie zarządzasz. OVH nie ma dostępu do Twoich serwerów i nie pełni funkcji administratora. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. 
-> Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy.
+OVH oddaje do Twojej dyspozycji serwery, którymi samodzielnie zarządzasz. OVH nie ma dostępu do Twoich serwerów i nie pełni funkcji administratora. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
+>
+Niniejszy przewodnik ułatwi Ci przeprowadzenie tej aktualizacji. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy.
 >
 
 ## Wymagania początkowe
 
-- Dostęp root do serwera (SSH).
-- Wykonanie kopii zapasowej danych (zgodnie z dokumentacją dotyczącą Twojej dystrybucji).
+- Posiadanie [serwera dedykowanego OVH](https://www.ovh.pl/serwery_dedykowane/){.external}
+- Połączenie przez SSH z użytkownikiem root (Linux)
+- Wykonanie kopii zapasowej danych (zgodnie z dokumentacją dotyczącą Twojej dystrybucji)
+
 
 ## W praktyce
 
@@ -42,9 +47,37 @@ uname -r
 4.09.76-xxxx-std-ipv6-64
 ```
 
-W tym przypadku wersja jądra to: *4.09.76-xxxx-std-ipv6-64*\*.
+W tym przypadku wersja jądra to: **4.9.118-xxxx-std-ipv6-64**.
 
-### Aktualizacja jądra 
+### Aktualizacja jądra przy użyciu pakietów OVH
+
+W dystrybucjach opartych na Debianie i RedHat jądro jest aktualizowane przy użyciu interfejsu zarządzania pakietami.
+
+
+#### Etap 1: aktualizacja jądra
+
+W dystrybucjach opartych na Debianie aktualizacja jądra realizowana jest za pomocą polecenia:
+
+```sh
+apt-get update && apt-get dist-upgrade
+```
+
+W dystrybucjach opartych na RedHat aktualizacja jądra realizowana jest za pomocą polecenia:
+
+```sh
+yum update
+```
+
+#### Etap 2: restart serwera
+
+Zrestartuj serwer, aby wprowadzone modyfikacje zostały uwzględnione:
+
+```sh
+reboot
+```
+
+
+### Aktualizacja jądra bez użycia pakietów OVH
 
 #### Etap 1: odnalezienie odpowiedniego katalogu
 
@@ -58,9 +91,9 @@ cd /boot
 
 Ponowna kompilacja jądra nie jest konieczna, pobierz wersję bzImage, najlepiej najnowszą. Obrazy znajdziesz pod następującym linkiem: <https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/>. 
 
-Jądra są monolityczne, co oznacza, że nie uwzględniają modułów :CEPH, NBD, ZFS...
+Jądra są monolityczne, co oznacza, że nie uwzględniają modułów: CEPH, NBD, ZFS…
 
-Możesz to zaobserwować w podanym przykładzie. Dla jądra w wersji: **4.9.118-xxxx-std-ipv6-64**.
+Wróćmy do przykładu z następującą wersją jądra: **4.9.118-xxxx-std-ipv6-64**.
 
 Pobierz następujący obraz wraz z poleceniem:
 
@@ -70,7 +103,7 @@ wget https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/4.9.118/313405/b
 
 #### Etap 3: aktualizacja programu rozruchowego (GRUB)
 
-Zaktualizuj program rozruchowy GRUB, używając następującego polecenia:
+Zaktualizuj program rozruchowy (GRUB), używając następującego polecenia:
 
 ```sh
 update-grub
@@ -85,7 +118,7 @@ done
 
 > [!primary]
 >
-> Sprawdź obecność następującego pliku (niezbędnego do przeprowadzenia aktualizacji) w Twojej konfiguracji: `06_OVHkernel`. Aby sprawdzić obecność pliku, użyj następującego polecenia:
+> Sprawdź obecność następującego pliku (niezbędnego do przeprowadzenia aktualizacji) w Twojej konfiguracji: `06_OVHkernel`. Możesz przeprowadzić weryfikację przy użyciu polecenia:
 >
 > `ls /etc/grub.d/`
 >
@@ -100,7 +133,7 @@ reboot
 
 ### Cofnięcie modyfikacji
 
-W przypadku wykonania nieprawidłowej operacji lub błędu możesz cofnąć wprowadzone zmiany. W tym celu ustaw na serwerze [tryb Rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external}. Następnie podmontuj system, używając następujących poleceń:
+W przypadku wykonania nieprawidłowej operacji lub błędu możesz cofnąć wprowadzone modyfikacje. W tym celu ustaw na serwerze [tryb Rescue](https://docs.ovh.com/pl/dedicated/ovh-rescue/){.external}. Następnie zainstaluj system, używając następujących poleceń:
 
 ```sh
 mount /dev/md1 /mnt
@@ -129,7 +162,7 @@ mount -t sysfs sys /mnt/sys
 chroot /mnt
 ```
 
-Następnie przejdź do katalogu `/boot` i usuń ostatnio zainstalowane pliki (komenda `rm`). W podanym przypadku musisz wpisać polecenie w następującym formacie:
+Następnie przejdź do katalogu `/boot` i usuń ostatnio zainstalowane pliki (komenda`rm`). W podanym przypadku musisz wpisać polecenie w następującym formacie:
 
 ```sh
 rm bzImage-4.14.13-xxxx-std-ipv6-64
@@ -141,13 +174,13 @@ Konieczna jest ponowna aktualizacja programu rozruchowego:
 update-grub
 ```
 
-Następnie wyjdź z trybu Rescue, restartując serwer z dysku, i uruchom ponownie serwer, wpisując polecenie:
+Następnie wyjdź z trybu Rescue (restartując serwer z dysku) i uruchom ponownie oprogramowanie, wpisując polecenie:
 
 ```sh
 reboot
 ```
 
-### Weryfikacja aktualizacji
+### Sprawdź, czy aktualizacja się powiodła.
 
 Po zakończeniu aktualizacji sprawdź nowo zainstalowaną wersję jądra, wpisując następujące polecenie:
 
@@ -166,7 +199,7 @@ uname –r
 
 ## Sprawdź również
 
-[Tryb Rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external}
+[Tryb Rescue](https://docs.ovh.com/pl/dedicated/ovh-rescue/){.external}
 
 [Informacje dotyczące podatności Meltdown i Spectre - wersja angielska](https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/){.external}
 
