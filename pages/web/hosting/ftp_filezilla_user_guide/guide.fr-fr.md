@@ -1,9 +1,9 @@
 ---
-title: Utilisation logiciel FileZilla avec votre hebergement
+title: 'Utilisation logiciel FileZilla avec votre hebergement'
 slug: mutualise-guide-utilisation-filezilla
 legacy_guide_number: 1380
-excerpt: Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur votre hebergement mutualise.
-section: FTP et SSH
+excerpt: 'Retrouvez ici un tutoriel pour l''utilisation du logiciel Filezilla sur votre hebergement mutualise.'
+section: 'FTP et SSH'
 ---
 
 Retrouvez dans ce guide de l'aide concernant l'utilisation du logiciel FileZilla.
@@ -89,7 +89,7 @@ S'il s'agit d'une offre d'hébergement "Start10M", vérifiez que "SFTP" est coch
 
 Dans les autres cas :
 
-- Cliquez sur la roue crantée <i class="fa fa-gear"></i> à côté de votre login puis sur `Modifier`{.action}.
+- Cliquez sur la roue crantée à côté de votre login puis sur `Modifier`{.action}.
 
 ![Activation SFTP 1](images/enable_sftp_1.png){.thumbnail}
 
