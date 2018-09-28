@@ -38,7 +38,7 @@ Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
-Als de knop `Configuratie bewerken`{.action} grijs wordt weergegeven, is mogelijk een **global PHP-versie controle** actief. Als dat het geval is, verschijnt er een cirkelvormig blauw pictogram naast die versie. Wacht enkele minuten tot de knop `Configuratie bewerken`{.action} weer beschikbaar is.
+Als de knop `Configuratie bewerken`{.action} grijs wordt weergegeven, is mogelijk een **global PHP version** controle actief. Als dat het geval is, verschijnt er een cirkelvormig blauw pictogram naast die versie. Wacht enkele minuten tot de knop `Configuratie bewerken`{.action} weer beschikbaar is.
 
 ![hostingconfiguration](images/change-hosting-configuration-step2.png){.thumbnail}
 
