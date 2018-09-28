@@ -714,3 +714,35 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```bash
 91.134.248.211
 ```
+
+## Cluster 027
+
+Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
+
+|Pays|Code Pays|IPv4|IPv6|
+|---|---|----|---|
+|France|FR|54.36.91.62|2001:41d0:301::27|
+|Irlande|IE|54.36.31.145|2001:41d0:301:3::27|
+|Portugal|PT|193.70.24.82|2001:41d0:301:2::27|
+|Royaume-Uni|UK|54.36.203.165|2001:41d0:301:12::27|
+|Italie|IT|178.32.138.212|2001:41d0:301:11::27|
+|Espagne|ES|213.32.37.233|2001:41d0:301:4::27|
+|Pologne|PL|178.32.203.125|2001:41d0:301:5::27|
+|République tchèque|CZ|54.37.182.230|2001:41d0:301:6::27|
+|Pays-Bas|NL|54.36.41.83|2001:41d0:301:7::27|
+|Finlande|FI|188.165.140.194|2001:41d0:301:8::27|
+|Lituanie|LT|51.255.97.18|2001:41d0:301:9::27|
+|Allemagne|DE|91.134.179.251|2001:41d0:301:1::27|
+
+Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+```bash
+145.239.51.129
+```
+
+Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
+
+
+```bash
+54.37.121.239
+```
