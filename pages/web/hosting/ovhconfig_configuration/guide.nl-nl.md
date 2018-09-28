@@ -12,11 +12,11 @@ order: 4
 
 Onder bepaalde omstandigheden kan het nodig zijn om specifieke wijzigingen aan te brengen aan uw [webhosting](https://www.ovh.nl/shared-hosting/){.external}. Om u te helpen heeft OVH een **.ovhconfig**-bestand verstrekt, waarmee u bepaalde instellingen kunt bewerken.
 
-Deze handleiding bescrhrijft hoe het .ovhconfig-bestand kan worden gewijzigd. 
+Deze handleiding beschrijft hoe het .ovhconfig-bestand kan worden gewijzigd. 
 
 ## Vereisten
 
-- U moet beschikken over een [OVH webhostingplan](https://www.ovh.nl/shared-hosting/){.external} (behalve Cloud Web).
+- U moet beschikken over een [OVH webhostingplan](https://www.ovh.nl/shared-hosting/){.external} (met uitzondering van Cloud Web).
 - U moet beschikken over het wachtwoord van de FTP-gebruiker voor toegang tot uw opslagruimte. 
 
 ## Instructie
