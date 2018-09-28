@@ -44,7 +44,7 @@ Si cela est utile à votre démarche, vous avez la possibilité de connaître la
 |Moyens|Description|
 |---|---|
 |Via l'espace client|Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Positionné sur l'onglet `Informations générales`{.action}, repérez la version en dessous de « **Version PHP globale** ». Si un symbole rond de couleur bleue est présent à la place, patientez quelques minutes le temps que la version s'actualise.|
-|Via un script|Créez un script **.php** contenant uniquement le code `<?php phpinfo(); ?>`. Vous devrez le mettre en ligne sur votre espace de stockage, puis l'appeler en acccédant à son adresse URL complète.|
+|Via un script|Créez un script **.php** contenant uniquement le code `<?php phpinfo(); ?>`. Vous devrez le mettre en ligne sur votre espace de stockage, puis l'appeler en accédant à son adresse URL complète.|
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}
 
