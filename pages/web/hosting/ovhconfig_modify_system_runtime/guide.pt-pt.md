@@ -49,7 +49,7 @@ Aparecerá uma janela com duas opções possíveis. Selecione a operação que d
 |Escolha|Detalhes|
 |---|---|
 |Voltar a uma configuração anterior|Depois de selecionar esta opção, escolha a configuração que deseja restaurar junto da opção `Escolha histórica`. Esta opção não estará disponível se não tiver efetuado nenhuma alteração anteriormente.|
-|Modificar a configuração atual|Escolha as alterações que pretende aplicar à configuração. Para obter mais informações sobre as várias opções de configuração, aceda à secção [Descobrir as configurações disponíveis](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/#descobrir-as-configuracoes-disponiveis){.external} deste manual.|
+|Modificar a configuração atual|Escolha as alterações que pretende aplicar à configuração. Para obter mais informações sobre as várias opções de configuração, aceda à secção [Descobrir as configurações disponíveis](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/#descobrir-as-configuracoes-disponiveis_1){.external} deste manual.|
 
 > [!primary]
 >
@@ -139,4 +139,4 @@ Pode alterar o modo utilizado pelo seu alojamento web de duas formas:
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: [Comunidade OVH](https://community.ovh.com/en/){.external}
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}

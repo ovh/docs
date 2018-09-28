@@ -1,118 +1,98 @@
 ---
-title: Commander, associer ou changer un téléphone
+title: 'Gérer le téléphone Plug & Phone d''une ligne SIP'
 slug: commander-associer-ou-changer-un-telephone
-legacy_guide_number: '7536705'
-space_key: CRTEL
-space_name: Téléphonie
-section: Lignes téléphoniques
+excerpt: 'Apprenez à gérer le téléphone Plug & Phone de votre ligne SIP OVH'
+section: 'Lignes téléphoniques'
 ---
 
-Préambule
+**Dernière mise à jour le 26/09/2018**
 
-Votre téléphone ne correspond plus à vos besoins ? Vous souhaitez en changer, le rendre ou encore commander un téléphone pour l'associer à une ligne qui ne disposait d'aucun terminal auparavant ?
+## Objectif
 
-Voyons comment mettre cela en œuvre dans ce guide.
+Votre ligne SIP OVH vous permet de recevoir et d’émettre des appels depuis l'appareil de votre choix. Celui-ci peut notamment être un téléphone Plug & Phone OVH que vous pouvez gérer depuis votre espace client OVH.
 
-**Sommaire :**
+**Apprenez à gérer le téléphone Plug & Phone de votre ligne SIP OVH.**
 
-Niveau : Débutant
+## Prérequis
 
-------------------------------------------------------------------------
+- Disposer d'une [ligne SIP OVH](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
+- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
 
-### Commander un téléphone {#commander-un-téléphone}
+## En pratique
 
-L'opération se déroule sur le Manager Téléphonie.
+Votre ligne SIP OVH peut être associée à un téléphone Plug & Phone OVH. Cela vous permet ainsi de gérer ce dernier depuis votre espace client. Cette gestion s'effectue par le biais de plusieurs manipulations. Poursuivez la lecture de cette documentation selon celle que vous souhaitez réaliser.
 
-Sélectionnez dans la liste la ligne pour laquelle vous souhaitez disposer d'un téléphone, puis cliquer sur "**Téléphone**" dans le menu de Navigation :
+- [Obtenir un téléphone Plug & Phone OVH](https://docs.ovh.com/fr/voip/commander-associer-ou-changer-un-telephone/#obtenir-un-telephone-plug-phone-ovh){.external} : vous permet d'obtenir votre premier téléphone Plug & Phone OVH ou d'en obtenir un supplémentaire.
 
-![](images/01.jpg){.thumbnail}
+- [Changer ou renvoyer le téléphone Plug & Phone de votre ligne](https://docs.ovh.com/fr/voip/commander-associer-ou-changer-un-telephone/#changer-ou-renvoyer-le-telephone-plug-phone-de-votre-ligne){.external} : vous permet de changer le téléphone Plug & Phone OVH actuellement associé à votre ligne SIP ou de le renvoyer si vous n'en avez plus l'utilité.
 
-Cliquez ensuite sur "**Commander un Plug & Phone**", puis en-dessous de "**Commander un équipement**", cliquez sur "**Cliquez pour ouvrir...**"
+- [Rattacher votre ligne à un téléphone Plug & Phone](https://docs.ovh.com/fr/voip/commander-associer-ou-changer-un-telephone/#rattacher-votre-ligne-a-un-telephone-plug-phone){.external} : vous permet de rattacher une ligne SIP à un téléphone Plug & Phone OVH que vous possédez déjà.
 
-![](images/02.jpg){.thumbnail}
+- [Détacher votre ligne d'un téléphone Plug & Phone](https://docs.ovh.com/fr/voip/commander-associer-ou-changer-un-telephone/#detacher-votre-ligne-dun-telephone-plug-phone){.external} : vous permet de détacher de votre ligne SIP le téléphone Plug & Phone OVH actuellement associé à celle-ci. 
 
-![](images/03.jpg){.thumbnail}
+### Obtenir un téléphone Plug & Phone OVH
 
-Sélectionnez le téléphone que vous souhaitez commander puis cliquez sur "**Suivant**".
+Vous pouvez obtenir un téléphone Plug & Phone OVH pour une ligne SIP non rattachée à un téléphone OVH. 
 
-L'envoi est facturé 9.99 € HT. Il vous faut maintenant choisir le mode d'expédition.
+Pour cela, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} dans la section `Télécom`, cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée. Positionnez-vous ensuite sur l'onglet `Téléphone`{.action}, puis cliquez sur `Commander un Plug & Phone`{.action}.
 
-![](images/04.jpg){.thumbnail}
+![plug&phone](images/plug-and-phone-step1.png){.thumbnail}
 
-**Un envoi par DHL** utilisera l'adresse de livraison située dans la section "Livraison". Par défaut, il s'agit de l'adresse du nic-handle de connexion au Manager.
+Sur la page qui s'affiche, dans la partie « Commander un équipement », sélectionnez dans le menu déroulant le téléphone que vous souhaitez obtenir, puis suivez les étapes qui apparaissent.
 
-**Un envoi par Mondial Relay** déroulera un plan de votre ville et affichera la liste des points relais les plus proches.
+Si vous souhaitez rattacher votre ligne SIP à un équipement OVH que vous possédez déjà et qui s'affiche dans l'espace client, suivez les instructions de la section « [Rattacher votre ligne à un téléphone Plug & Phone](https://docs.ovh.com/fr/voip/commander-associer-ou-changer-un-telephone/#rattacher-votre-ligne-a-un-telephone-plug-phone){.external} » de cette documentation. 
 
-Sélectionnez alors votre point relais et cliquez sur "**Suivant**".
+![plug&phone](images/plug-and-phone-step2.png){.thumbnail}
 
-Un résumé s'affiche, précisant le choix de votre téléphone, le choix du mode de livraison ainsi que le coût.
+### Changer ou renvoyer le téléphone Plug & Phone de votre ligne
 
-En cochant "**J'ai lu et j'accepte le contrat**" puis en cliquant sur "**Valider**", la commande sera prise en compte et le téléphone sera expédié sous 24 heures ouvrées.
+Lorsque vous possédez une ligne SIP OVH actuellement rattachée à un téléphone Plug & Phone OVH, vous avez la possibilité de :
 
-![](images/05.jpg){.thumbnail}
+- changer votre téléphone Plug & Phone actuel pour un autre modèle ;
+- renvoyer le téléphone Plug & Phone que vous possédez actuellement. Cette possibilité peut ne pas être disponible selon l'offre dont vous disposez.
 
-------------------------------------------------------------------------
+Pour débuter, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} dans la section `Télécom`, cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée. Positionnez-vous ensuite sur l'onglet `Téléphone`{.action}, puis cliquez sur `Changer de téléphone Plug & Phone`{.action}.
 
-### Changer un téléphone {#changer-un-téléphone}
+![plug&phone](images/plug-and-phone-step3.png){.thumbnail}
 
-L'opération se déroule sur le Manager Téléphonie.
+Sur la page qui s'affiche, dans la partie « Commander un équipement », sélectionnez dans le menu déroulant l'action que vous souhaitez réaliser, puis suivez les étapes qui apparaissent.
 
-Sélectionnez dans la liste la ligne pour laquelle vous souhaitez disposer d'un téléphone et cliquez sur "**Téléphone**" dans le menu de Navigation :
+|Actions|Description|  
+|---|---|  
+|Renvoyer mon équipement actuel|Permet de renvoyer le téléphone actuellement rattaché à votre ligne SIP, si votre offre le permet. Assurez-vous de prendre connaissance de la procédure qui apparaît dans la partie « Informations ».| 
+|Changer pour le ...|Permet de changer le téléphone actuellement rattaché à votre ligne SIP pour un autre équipement. Assurez-vous de prendre connaissance de la procédure qui apparaît dans la partie « Informations ».| 
 
-![](images/01.jpg){.thumbnail}
+![plug&phone](images/plug-and-phone-step4.png){.thumbnail}
 
-Cliquez ensuite sur "**Changer de téléphone Plug & Phone**".
+### Rattacher votre ligne à un téléphone Plug & Phone
 
-![](images/06.jpg){.thumbnail}
+Certains téléphones Plug & Phone OVH peuvent être associés à plusieurs lignes SIP. Vous avez donc la possibilité de rattacher une ligne SIP OVH à un téléphone que vous possédez déjà, seulement si :
 
-Sélectionnez le téléphone que vous souhaitez commander et cliquez sur "**Suivant**".
+- la ligne SIP sélectionnée n'est actuellement rattachée à aucun téléphone Plug & Phone OVH ;
+- le téléphone Plug & Phone OVH sélectionné peut accueillir une ligne configurée supplémentaire.
 
-![](images/07.jpg){.thumbnail}
+Si tel est le cas, pour réaliser la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} dans la section `Télécom`, cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée (n'étant actuellement rattachée à aucun téléphone Plug & Phone). Positionnez-vous ensuite sur l'onglet `Téléphone`{.action}, puis cliquez sur `Commander un Plug & Phone`{.action}.
 
-L'envoi est facturé 9.99 € HT. Il vous faut maintenant choisir le mode d'expédition.
+![plug&phone](images/plug-and-phone-step1.png){.thumbnail}
 
-![](images/04.jpg){.thumbnail}
+Sur la page qui s'affiche, dans la partie « Rattacher la ligne à un équipement actuel », sélectionnez l'équipement sur lequel vous souhaitez rattacher votre ligne SIP, indiquez l'adresse IP publique de celui-ci, puis cliquez sur le bouton `Attacher`{.action}.
 
-**Un envoi par DHL** utilisera l'adresse de livraison située dans la section "Livraison". Par défaut, il s'agit de l'adresse du nic-handle de connexion au Manager.
+Si vous en avez besoin, vous avez la possibilité d'obtenir un téléphone Plug & Phone OVH supplémentaire. Pour cela, suivez les instructions de la section « [Obtenir un téléphone Plug & Phone OVH](https://docs.ovh.com/fr/voip/commander-associer-ou-changer-un-telephone/#obtenir-un-telephone-plug-phone-ovh){.external} » de cette documentation. 
 
-**Un envoi par Mondial Relay** déroulera un plan de votre ville et affichera la liste des points relais les plus proches.
+![plug&phone](images/plug-and-phone-step5.png){.thumbnail}
 
-Sélectionnez alors votre point relais et cliquez sur "**Suivant**".
+### Détacher votre ligne d'un téléphone Plug & Phone
 
-Un résumé s'affiche, précisant le choix de votre téléphone, du mode de livraison ainsi que le coût.
+Vous avez la possibilité de détacher une ligne SIP d'un téléphone Plug & Phone OVH disposant de plusieurs lignes SIP configurées. Pour cela, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et assurez-vous de vous situer dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
 
-En cochant "**J'ai lu et j'accepte le contrat**" puis en cliquant sur "**Valider**", la commande sera prise en compte et le téléphone sera expédié sous 24 heures ouvrées.
+Positionnez-vous ensuite sur l'onglet `Téléphone`{.action}, puis cliquez sur `Changer de téléphone Plug & Phone`{.action}.
 
-![](images/05.jpg){.thumbnail}
+![plug&phone](images/plug-and-phone-step3.png){.thumbnail}
 
-------------------------------------------------------------------------
+Sur la page qui s'affiche, dans la partie « Détacher la ligne d'un Plug & Phone », renseignez l'adresse IP publique de celui-ci, puis cliquez sur `Détacher`{.action}. 
 
-### Associer une ligne à un téléphone {#associer-une-ligne-à-un-téléphone}
+![plug&phone](images/plug-and-phone-step6.png){.thumbnail}
 
-Certains téléphones permettent d'y associer plusieurs lignes. Pour associer une ligne à un téléphone, il faut au préalable que la ligne ne soit associée à aucun téléphone.
+## Aller plus loin
 
-Pour ce faire, rendez-vous dans le Manager Téléphonie puis cliquez sur "**Téléphone**".
-
-![](images/01.jpg){.thumbnail}
-
-Cliquez ensuite sur "**Commander un Plug & Phone**" :
-
-![](images/02.jpg){.thumbnail}
-
-Si l'un de vos téléphones est compatible avec la fonction, il s'affichera dans la partie haute de l'écran suivant. Sélectionnez alors le téléphone.
-
-Son IP publique s'affichera automatiquement suite à la sélection.
-
-![](images/08.jpg){.thumbnail}
-
-Une fenêtre de confirmation s'affiche, cliquez alors sur "**Valider**".
-
-![](images/09.jpg){.thumbnail}
-
-L'opération sera réalisée dans les 5 minutes après avoir cliqué sur "**Valider**".
-
-------------------------------------------------------------------------
-
-
-
-
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
