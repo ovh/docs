@@ -1,12 +1,12 @@
 ---
-title: Étape 3 - créer votre première flotte de bureaux virtuels (ou pool)
+title: 'Étape 3 - créer votre première flotte de bureaux virtuels (ou pool)'
 slug: howto-create-pool
-excerpt: Découvrez comment créer votre premier pool depuis VMware Horizon 7.1
-section: Mise en place
+excerpt: 'Découvrez comment créer votre premier pool depuis VMware Horizon 7.1'
+section: 'Mise en place'
 order: 3
 ---
 
-**Dernière mise à jour le 15/02/2018**
+**Dernière mise à jour le 24/09/2018**
 
 ## Objectif
 
@@ -119,7 +119,7 @@ Après vous être authentifié dans VMware Horizon, voici la marche à suivre :
 
 La création du pool peut prendre un certain temps, cela dépend du modèle utilisé. En cas d'erreur, la partie `Inventory` du pool donne des détails sur la création de chacune des VM et vous permet de comprendre l'origine du problème.
 
-Maintenant que le pool a été créé, voyons comment [attribuer des bureaux virtuels aux utilisateurs](https://docs.ovh.com/fr/cloud-desktop-infrastructure/howto-create-pool/){.external}.
+Maintenant que le pool a été créé, voyons comment [attribuer des bureaux virtuels aux utilisateurs](https://docs.ovh.com/fr/cloud-desktop-infrastructure/attribution-desk/){.external}.
 
 
 ## Aller plus loin

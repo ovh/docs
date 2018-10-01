@@ -3,6 +3,7 @@ title: 'E-mail Pro -tilin konfigurointi Outlook 2016 -sovelluksella Windowsissa'
 slug: konfigurointi-outlook-2016
 excerpt: 'Opi konfiguroimaan E-mail Pro -tili Outlook 2016 -sovelluksella Windowsissa'
 section: 'Sähköpostiohjelman konfigurointi'
+order: 1
 ---
 
 **Päivitetty 26.3.2018**

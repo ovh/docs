@@ -6,7 +6,7 @@ section: Databases
 order: 4
 ---
 
-**Last updated 15th June 2018**
+**Last updated 25th September 2018**
 
 ## Objective
 
@@ -16,10 +16,10 @@ Databases are used in virtually all modern content management systems (CMS), suc
 
 ## Requirements
 
-- You must have an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}.
-- You must have a database created as part of an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}.
-- You must be in possession of the backup that you want to import into your database, or you must be able to retrieve it.
-- Depending on which import method you use, you must be able to administer the Web Hosting plan from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, or have the information you need in order to connect to the database.
+- an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
+- a database created as part of an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
+- access to the backup that you want to import into your database, or the ability to retrieve it
+- Depending on which import method you use, you must be able to administer the Web Hosting plan from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, or have the information you need in order to connect to the database.
 
 ## Instructions
 
@@ -46,7 +46,7 @@ We recommend reading this guide, and focusing on the import method you wish to u
 > This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
 >
 
-### Restore a backup from your Control Panel
+### Restore a backup from the Control Panel.
 First of all, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Next, go to the `Databases`{.action} tab.
 
 The table shown contains all the databases created as part of your Web Hosting plan. You can now click on the three dots to the right of the database that you want to restore to an earlier version, then `Restore backup`{.action}. Please note that this will replace the current contents of the database with the contents of the backup.
@@ -59,7 +59,7 @@ Click on the three dots to the right of the backup that you would like to restor
 
 ![databaseimport](images/database-import-step6.png){.thumbnail}
 
-### Import your own backup via your Control Panel
+### Import your own backup via your Control Panel.
 First of all, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Next, go to the `Databases`{.action} tab.
 
 The table shown contains all the databases created as part of your Web Hosting plan. You can now click on the three dots to the right of the database you want to import data into, then on `Import file`{.action}.
@@ -83,15 +83,15 @@ Wait until the interface confirms that the file has been sent successfully, then
 
 Finally, you can choose whether or not to apply the additional options displayed:
 
-- **Empty the current database**: by ticking this box, the content currently stored in the database will be completely deleted, then replaced by your backup. If (and only if) you wish to replace the current contents of the database with the contents of the backup file, we recommend ticking this box.
+- **Empty the current database.** By ticking this box, the content currently stored in the database will be completely deleted, then replaced by your backup. If (and only if) you wish to replace the current contents of the database with the contents of the backup file, we recommend ticking this box.
 
-- **Send an email when the import is complete**: by ticking this box, you will be sent an email notification when the database import is complete.
+- **Send an email when the import is complete.** By ticking this box, you will be sent an email notification when the database import is complete.
 
 Once you have made your choice, click the `Confirm`{.action} button, and wait for the import process to finish.
 
 ![databaseimport](images/database-import-step4.png){.thumbnail}
 
-### Carry out the import from the phpMyAdmin web interface
+### Carry out the import from the phpMyAdmin web interface.
 
 To carry out this procedure, you will need to log in to phpMyAdmin. To get the access link for this interface, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Next, go to the `Databases`{.action} tab.
 
@@ -106,7 +106,7 @@ Once you are on the phpMyAdmin page, enter the database information, use the dro
 > Since the phpMyAdmin interface was not developed by OVH, you will need to rely on your own knowledge to carry out the procedure. We recommend contacting a specialised provider and/or getting in touch with the publisher of the interface if you encounter any difficulties. We will not be able to assist you with this ourselves.
 >
 
-### Import a backup using a script
+### Import a backup using a script.
 
 There are several stages to this procedure. Make sure you are in possession of the backup file you want to import, and the information that will let you connect to the database receiving the import. You will need a username, the associated password, the database name, and the server address.
 
@@ -115,7 +115,7 @@ There are several stages to this procedure. Make sure you are in possession of t
 > This solution is technical and requires programming knowledge. We have provided general information below on how to proceed. Nevertheless, we recommend that you contact a specialised provider if you encounter any difficulties. We will not be able to assist you ourselves.
 >
 
-#### Step 1: Create the import script
+#### Step 1: Create the import script.
 
 The first step is to create the script you can use to carry out the import to your database. Below is an example of a script that can help you with this process, although it is not a substitute for the assistance of a webmaster.
 
@@ -135,13 +135,13 @@ Make sure you replace the generic information given in this script (e.g. ‘serv
 |user_password|The password for the username entered above.|
 |database_name|The name of the database in question.|
 
-#### Step 2: Upload the script and the backup to the storage space
+#### Step 2: Upload the script and the backup to the storage space.
 
 Once the import script has been written, you will need to upload it, along with the backup file you want to import to the storage space of your Web Hosting plan. To do this, you will need to log in to your storage space. If you do not know how to do this, please refer to the instructions in step 2 of our guide on getting your website online, “[Log in to your storage space](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/#2-log-in-to-your-storage-space){.external}”.
 
 In order to carry out the following steps, you will need to upload the script and the backup file to the “www” folder. **We recommend taking special care when you name the import script file.** Make sure you do not overwrite an existing file with the same name in your storage space when you upload the script. If a warning message appears for this, change the name of the script you have just created, and try to upload it again.
 
-#### Step 3: Call the script
+#### Step 3: Call the script.
 
 Now that the import script and the backup file have been uploaded to your storage space, the last remaining step is to launch the procedure. To do this, you need to call the script.
 
@@ -149,7 +149,7 @@ To do this, you will need to go to the full URL of the script from your web brow
 
 Once you have imported the backup, we highly recommend deleting the backup file and the script from the “www” directory.
 
-### Import a backup using an SSH command
+### Import a backup using an SSH command.
 
 To follow this method, you will need to use commands from a terminal to interact with your storage space.
 

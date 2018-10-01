@@ -6,11 +6,11 @@ section: Procedura
 order: 3
 ---
 
-**Ultimo aggiornamento: 13/09/2018**
+**Ultimo aggiornamento: 21/09/2018**
 
 ## Obiettivo
 
-Dopo aver [eseguito l’accesso all’interfaccia VMWare Horizon](https://docs.ovh.com/it/cloud-desktop-infrastructure/piattaforma-horizon-7/){.external} e aver [creato il template di un <i>pool</i>](https://docs.ovh.it/cloud-desktop-infrastructure/creare-template-pool/){.external}, è il momento di creare il tuo primo <i>pool</i>.
+Dopo aver [eseguito l’accesso all’interfaccia VMWare Horizon](https://docs.ovh.com/it/cloud-desktop-infrastructure/piattaforma-horizon-7/){.external} e aver [creato il template di un <i>pool</i>](https://docs.ovh.com/it/cloud-desktop-infrastructure/creare-template-pool/){.external}, è il momento di creare il tuo primo <i>pool</i>.
 
 **Questa guida ti mostra come creare un pool utilizzando VMware Horizon 7.1.**
 
@@ -118,7 +118,7 @@ Dopo aver eseguito l’accesso a VMware Horizon, segui i seguenti passaggi:
 
 La creazione del <i>pool</i> può richiedere una lunga attesa a seconda del template utilizzato. In caso di errore, la sezione `Inventory` del <i>pool</i> fornisce i dettagli sulla creazione di ogni VM e ti permette di capire l’origine del problema.
 
-Adesso che hai creato il <i>pool</i>, vedremo come [assegnare i desktop virtuali agli utenti](https://docs.ovh.it/cloud-desktop-infrastructure/assegnare-desktop-virtuali/){.external}.
+Adesso che hai creato il <i>pool</i>, vedremo come [assegnare i desktop virtuali agli utenti](https://docs.ovh.com/it/cloud-desktop-infrastructure/assegnare-desktop-virtuali/){.external}.
 
 
 ## Per saperne di più

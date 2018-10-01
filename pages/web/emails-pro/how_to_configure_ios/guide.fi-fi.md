@@ -3,6 +3,7 @@ title: E-mail Pro -tilin konfigurointi iPhonella tai iPadilla
 slug: konfigurointi-iphone
 excerpt: Opi konfiguroimaan E-mail Pro -tili iPhonella tai iPadilla Mail-sovelluksen avulla
 section: Sähköpostiohjelman konfigurointi
+order: 3
 ---
 
 **Päivitetty 22.2.2018**

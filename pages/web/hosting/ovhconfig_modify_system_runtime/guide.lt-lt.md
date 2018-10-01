@@ -1,126 +1,141 @@
 ---
-title: Svetainių talpinimo plano vykdymo aplinkos keitimas
-excerpt: Svetainių talpinimo plano vykdymo aplinkos keitimas
-id: '2149'
+title: 'Modifying the configuration of a Web Hosting plan'
 slug: svetainiu_talpinimo_plano_vykdymo_aplinkos_keitimas
+excerpt: 'Find out how to modify the configuration of an OVH Web Hosting plan'
 legacy_guide_number: g2149
 ---
 
+**Last updated 25th September 2018**
 
-## Kaip keisti vykdymo aplinką?
+## Objective
 
-## OVH valdymo sąsajoje
-Pasirinkite savo svetainių talpinimo planą ir spauskite Keisti konfigūraciją.
+There are a range of different configurations you can use for OVH Web Hosting plans. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, you can host whatever website you want on your [OVH Web Hosting plan](https://www.ovh.lt/svetainiu-talpinimas/){.external}, provided that it is compatible with [our infrastructures’ configurations](http://pro.ovh.net/infos/){.external}.
 
-![](images/img_4127.jpg){.thumbnail}
-Jūs turite pakeisti esamą konfigūraciją.
+**Find out how to modify the configuration of an OVH Web Hosting plan from the OVH Control Panel.**
 
-![](images/img_4128.jpg){.thumbnail}
-Atsidariusiame sąraše pasirinkite vieną iš žemiau aprašytų aplinkų.
+## Requirements
 
-![](images/img_4129.jpg){.thumbnail}
+- an [OVH Web Hosting plan](https://www.ovh.lt/svetainiu-talpinimas/){.external} (excluding Cloud Web)
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
-## Naudojant .ovhconfig failą
-Atnaujinimas atliekamas jūsų svetainių talpinimo plano šakninio katalogo .ovhconfig faile.
-Taigi keitimai atliekami arba valdymo sąsajoje, arba tiesiai .ovhconfig faile.
+## Instructions
 
-Daugiau informacijos apie .ovhconfig rasite čia: []({legacy}1207)
+**Changing the configuration of your Web Hosting plan is a delicate procedure.** Any mistakes configuring it could make your website inaccessible as a result. By learning more about the impact of making configuration changes, you can get a better understanding of the changes you will make.
 
+When you modify your Web Hosting plan’s configuration, you will change the configuration used by your website, too. Although our infrastructures offer a range of configuration types, you will need to ensure that the configuration type you have selected is compatible with your website.
 
-## Įvairios vykdymo aplinkos
+> [!warning]
+>
+> Before you start making any changes, please ensure that the changes you are about to make will not make your website inaccessible. If you have any doubts about what you need to do, or encounter any difficulties, we recommend contacting a specialist provider. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide. 
+> 
 
-## Legacy aplinka
-Tai tradicinė aplinka svetainių talpinimo planuose. Anksčiau tai buvo vienintelė prieinama konfigūracija.
+### Modify your Web Hosting plan’s configuration via the OVH Control Panel
 
+#### Step 1: Access the Web Hosting plan’s configuration management.
 
-- Ši aplinka nuolat palaikoma. Tačiau rekomenduojama pereiti prie Stable aplinkos, jei norite naudotis stabiliais automatiniais atnaujinimais. Legacy aplinka gali būti naudinga ankstesnėms svetainėms, naudojančioms senas PHP versijas, arba jau nebepalaikomoms programoms (pavyzdžiui, ankstesnei mysql bazių jungčiai).
+First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the Web Hosting plan concerned. Click on the `...`{.action} button, then select `Modify configuration`{.action}.
 
+![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
-Jūs turite pridėti šią eilutę prie savo .ovhconfig* failo:
+If the `Modify configuration`{.action} button is greyed out, it may be because of an ongoing **global PHP version** verification. If this is the case, a blue wheel will appear next to the version, indicating that a verification is in progress. Wait a few minutes for the `Modify configuration`{.action} button to become accessible again.
 
+![hostingconfiguration](images/change-hosting-configuration-step2.png){.thumbnail}
 
-```
-container.image=legacy
-```
+#### Step 2: Check your Web Hosting plan’s configuration.
 
+In the window that pops up, you can pick from two options. Select the one corresponding to the action you want to carry out, then click `Next`{.action}.
 
+|Choice|Details|
+|---|---|
+|“Return to a previous configuration”|After you have selected this option, choose the configuration to restore on the `Logs choice` side. This option will not be available if you have not made any configuration changes in the past.|
+|“Modify the current configuration”|Once you have selected this option, choose the modifications you would like to make to the configuration from the fields that appear. If required, you can read more about them by going to the [View the configurations available](https://docs.ovh.com/lt/hosting/svetainiu_talpinimo_plano_vykdymo_aplinkos_keitimas/#view-the-configurations-available){.external} section in this documentation.|
 
-## Stable aplinka
-Ši aplinka jums leidžia naudotis stabiliais automatiniais atnaujinimais.
+> [!primary]
+>
+> When you change the runtime environment for your Web Hosting plan, PHP sessions are automatically restarted.
+> 
 
-Jūs turite pridėti šią eilutę prie savo .ovhconfig* failo:
+Once you are ready to do this, click `Confirm`{.action} to apply the modifications. Wait a few minutes for the process to complete.
 
+![hostingconfiguration](images/change-hosting-configuration-step3.png){.thumbnail}
 
-```
-container.image=stable
-```
+### View the configurations available.
 
+When you modify your Web Hosting plan’s configuration, you can choose from a range of configuration types. From this point onwards, you can follow the guide section relevant to the configuration type you would like to use.
 
+- [Runtime environment](https://docs.ovh.com/lt/hosting/svetainiu_talpinimo_plano_vykdymo_aplinkos_keitimas/#runtime-environment){.external}
+- [PHP version](https://docs.ovh.com/lt/hosting/svetainiu_talpinimo_plano_vykdymo_aplinkos_keitimas/#php-version){.external}
+- [PHP engine](https://docs.ovh.com/lt/hosting/svetainiu_talpinimo_plano_vykdymo_aplinkos_keitimas/#php-engine){.external}
+- [Mode](https://docs.ovh.com/lt/hosting/svetainiu_talpinimo_plano_vykdymo_aplinkos_keitimas/#mode){.external}
 
-## Jessie.i386 aplinka
-Ši aplinka leidžia naudotis Debian Jessie programinės įrangos lygmeniu.
+#### Runtime environment
 
+By changing the runtime environment, you can edit certain technical values for your Web Hosting plan. **Before you start making any changes, ensure that the runtime environment you want to apply is compatible with your website.** 
 
-- Būtent ši versija siūloma šiuo metu, jei renkatės Stable vykdymo aplinką.
-
-
-Jūs turite pridėti šią eilutę prie savo .ovhconfig* failo:
-
-
-```
-container.image=jessie.i386
-```
-
-
-Rinktis Jessie.i386 vietoje Stable nerekomenduojama, tačiau toks pasirinkimas leidžia užtikrinti, kad Stable aplinkai pakeitus atvaizdą, atnaujinimas nepaveiks svetainės. Toks atvejis galimas tik jeigu svetainėje naudojamos išorinės programos (ne php skriptai).
-
-## Testing aplinka
-Ši aplinka leidžia naudotis patobulinimais, pataisymais, naujais atvaizdais, naujomis technologijomis, tačiau be garantijų.
-
-Jūs turite pridėti šią eilutę prie savo .ovhconfig* failo:
-
-
-```
-container.image=testing
-```
-
-
-*Tai .ovhconfig failas, esantis jūsų svetainių talpinimo plano šakniniame kataloge "/".
-
-
-## Atvaizdų skirtumai
-|Aplinkos|legacy|stable|testing|jessie.i386|
-|---|---|---|---|
-|Aplinkos|legacy|stable|testing|jessie.i386|
-|Susijęs atvaizdas|legacy|jessie.i386|jessie.i386|jessie.i386|
-|Minimali PHP versija|4.4|5.3|5.3|5.3|
-|Openssl|0.9.8o|1.0.1k (suderinama su TLS1.2)|1.0.1k (suderinama su TLS1.2)|1.0.1k (suderinama su TLS1.2)|
-|Plėtinys php imagick||x|x|x|
-|Plėtinys php memcache|x|x|x|x|
-|Plėtinys php memcached||x|x|x|
-|Plėtinys php mongo (PHP 5.4, 5.5, 5.6)||x|x|x|
-|Plėtinys mysqlnd (en utf-8 uniquement)||x|x|x|
-|Plėtinys redis||x|x|x|
-|Opcache**|x|x|x|x|
-|Python|2.6|2.7 et 3.4|2.7 et 3.4|2.7 et 3.4|
+|Environment|Legacy|stable|testing|jessie.i386|
+|---|---|---|---|---|
+|Linked image|Legacy|jessie.i386|jessie.i386|jessie.i386|
+|Minimum PHP version|4.4|5.3|5.3|5.3|
+|Openssl|0.9.8o|1.0.1k (TLS1.2 compatible)|1.0.1k (TLS1.2 compatible)|1.0.1k (TLS1.2 compatible)|
+|Imagick PHP extension| - | Yes | Yes | Yes |
+|Memcache PHP extension (PHP 5.6)| Yes | Yes | Yes | Yes |
+|Memcached PHP extension (PHP 5.6)| - | Yes | Yes | Yes |
+|Mongo PHP extension (PHP 5.4, 5.5, 5.6)| - | Yes | Yes | Yes |
+|Mysqlnd extension (in utf-8 only)| - | Yes | Yes | Yes |
+|Redis extension| - | Yes | Yes | Yes |
+|Opcache| Yes | Yes | Yes | Yes |
+|Python|2.6|2.7 and 3.4|2.7 and 3.4|2.7 and 3.4|
 |Ruby|1.8.7|2.1.5|2.1.5|2.1.5|
 |Rails|2.3.5|4.1.8|4.1.8|4.1.8|
 |Perl|5.10|5.20|5.20|5.20|
 |git|1.7.2.5|2.1.4|2.1.4|2.1.4|
 
+> [!primary]
+>
+> The ‘legacy’ environment may be useful for older websites that still use old PHP versions. However, we strongly advise using a stable environment that has the latest updates. **Ensure that your website is compatible before you make any changes.**
+> 
 
-**Būtina įjungti PHP-FPM: []({legacy}1175)
+Once you have chosen your runtime environment, you can change it in two different ways:
 
+- **Via the OVH Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan’s configuration via the OVH Control Panel](https://docs.ovh.com/lt/hosting/svetainiu_talpinimo_plano_vykdymo_aplinkos_keitimas/#modify-web-hosting-plans-configuration-via-ovh-control-panel){.external} section of this guide.
+- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space.
 
-## Ar vykdymo aplinkos keitimas paveiks visą mano svetainių talpinimo planą?
-Jūsų vykdymo aplinkos keitimas turės įtakos viso svetainių talpinimo plano veikimui.
-Todėl vienu metu neleidžiama naudoti dviejų skirtingų vykdymo aplinkų.
+#### PHP version
 
+There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVH offers the very latest PHP versions, and you can view a list of them here: <https://www.ovh.lt/svetainiu-talpinimas/php.xml>. 
 
-## Kokiame plane galima keisti vykdymo aplinką?
-Vykdymo aplinkos keitimas galimas visuose OVH svetainių talpinimo planuose.
+Because some features cannot be maintained in newer versions, **please ensure that the new PHP version you want to use is compatible with your website before you start making any changes.**
 
+There are several ways you can modify your Web Hosting plan’s PHP version:
 
-## Ar keičiant aplinką išsaugomos PHP sesijos?
-Pakeitus vykdymo aplinką PHP sesijos inicijuojamos iš naujo.
+- **Via the OVH Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan’s configuration via the OVH Control Panel](https://docs.ovh.com/lt/hosting/svetainiu_talpinimo_plano_vykdymo_aplinkos_keitimas/#modify-web-hosting-plans-configuration-via-ovh-control-panel){.external} section of this guide.
+- **By manually modifying file on your storage space.** This solution is more technical, and you will need to be connected to your storage space. 
 
+Generally, if you want more information on changing from one PHP version to another, please follow the instructions in our guide on [Configuring PHP versions on an OVH Web Hosting plan](https://docs.ovh.com/lt/hosting/php_konfiguravimas_ovh_svetainiu_talpinimo_planuose_2014/){.external}.
+
+#### PHP engine
+
+With the PHP engine you use, you can enable or disable the PHP accelerator (PHP-FPM). It has been adapted to suit our infrastructure with the aim of accelerating the execution speed for PHP scripts. In comparison, the PHP accelerator (PHP-FPM) offers up to seven times faster performance than using the phpcgi motor. 
+
+There are two ways of modifying the PHP motor used by your Web Hosting plan:
+
+- **Via the OVH Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan’s configuration via the OVH Control Panel](https://docs.ovh.com/lt/hosting/svetainiu_talpinimo_plano_vykdymo_aplinkos_keitimas/#modify-web-hosting-plans-configuration-via-ovh-control-panel){.external} section of this guide. To activate the PHP accelerator (PHP-FPM), choose ‘php’ as a motor. To deactivate it, choose phpcgi.
+- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space.
+
+#### Mode
+
+By choosing a mode, you can manage how your website’s cached static files behave (eg.. images), as well as how PHP errors are processed (generally useful when your website displays a blank page, for example). There are two modes you can activate:
+
+|Mode|Caching static files|Processing PHP errors|
+|---|---|---|
+|*Production*|Maximises caching for static files on internet browsers.|PHP errors will not appear on your website.|
+|*Development*|No caching is applied.|PHP errors will appear on your website.|
+
+There are two ways of modifying the mode used by your Web Hosting plan:
+
+- **Via the OVH Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan’s configuration via the OVH Control Panel](https://docs.ovh.com/lt/hosting/svetainiu_talpinimo_plano_vykdymo_aplinkos_keitimas/#modify-web-hosting-plans-configuration-via-ovh-control-panel){.external} section of this guide.
+- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

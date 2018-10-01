@@ -2,7 +2,8 @@
 title: 'E-mail Pro -tilin konfigurointi Gmail-verkkokäyttöliittymässä'
 slug: konfigurointi-gmail
 excerpt: 'Opi konfiguroimaan E-mail Pro -tili Gmail-verkkokäyttöliittymässä'
-section: 'Muut sähköpostiohjelmat'
+section: 'Sähköpostiohjelman konfigurointi'
+order: 6
 ---
 
 **Päivitetty 3.7.2018**

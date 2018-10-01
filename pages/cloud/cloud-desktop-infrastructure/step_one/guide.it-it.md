@@ -6,7 +6,7 @@ section: Procedura
 order: 1
 ---
 
-**Ultimo aggiornamento: 12/09/2018**
+**Ultimo aggiornamento: 21/09/2018**
 
 ## Obiettivo
 
@@ -16,7 +16,7 @@ Attraverso cinque guide dettagliate ti spiegheremo come utilizzare [Cloud Deskto
 
 ## Prerequisiti
 
-- Aver ricevuto via email i dati di accesso al [Cloud Desktop Infrastructure](https://www.ovh.com/fr/cloud/cloud-desktop/infrastructure/){.external}
+- Aver ricevuto via email i dati di accesso al [Cloud Desktop Infrastructure](https://www.ovh.it/cloud/cloud-desktop/infrastructure/){.external}
 
 ## Procedura
 
@@ -112,7 +112,7 @@ Dopo aver effettuato il pagamento del tuo buono d’ordine, nell’arco di un’
 > 
 
 
-Vediamo adesso come [creare template di desktop virtuali (_pool_)](https://docs.ovh.it/cloud-desktop-infrastructure/creare-template-pool/){.external}.
+Vediamo adesso come [creare template di desktop virtuali (_pool_)](https://docs.ovh.com/it/cloud-desktop-infrastructure/creare-template-pool/){.external}.
 
 
 ## Per saperne di più

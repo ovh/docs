@@ -6,7 +6,7 @@ section: 'Webhotellin konfigurointi'
 order: 3
 ---
 
-**Päivitetty 14.9.2018**
+**Päivitetty 25.9.2018**
 
 ## Tavoite
 
@@ -34,7 +34,7 @@ Kun muutat webhotellisi konfiguraatiota, muokkaat verkkosivusi käyttämää web
 
 #### 1. vaihe: Mene webhotellin konfiguraation hallintaan
 
-Menettelyn aloittamiseksi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Varmista, että olet välilehdellä `Yleiset tiedot`{.action} ja klikkaa sitten painiketta `Muokkaa konfiguraatiota`{.action}.
+Menettelyn aloittamiseksi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Varmista, että olet välilehdellä `Yleiset tiedot`{.action}. Klikkaa siellä kolmea pistettä esittävää kuvaketta ja sitten painiketta `Muokkaa konfiguraatiota`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 

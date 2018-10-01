@@ -3,6 +3,7 @@ title: E-mail Pro -tilin konfigurointi macOS Mail-sovelluksessa
 slug: email-pro-mail-macos-konfigurointi
 excerpt: Katso, kuinka E-mail Pro -tili konfiguroidaan macOS El Capitan, Sierra ja High Sierra -käyttöjärjestelmissä Mail-sovelluksessa
 section: Sähköpostiohjelman konfigurointi
+order: 4
 ---
 
 **Päivitetty 14.2.2018**

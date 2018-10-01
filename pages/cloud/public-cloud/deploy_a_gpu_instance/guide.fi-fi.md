@@ -5,7 +5,7 @@ excerpt: 'Katso, kuinka GPU-instanssia käytetään Linuxilla tai Windowsilla'
 section: Hallintapaneelissa
 ---
 
-**Päivitetty 12.9.2018**
+**Päivitetty 25.9.2018**
 
 ## Tavoite
 
@@ -13,8 +13,8 @@ GPU-instanssit ovat teknisesti samanlaisia kuin 2017-sarjan instanssit, mutta ni
 
 Mahdolliset grafiikkasuorittimet ovat NVIDIA GeForce GTX 1060, GTX 1070 tai GTX 1080Ti. 
 
+> [!warning]
 > 
->
 > GPU-instansseja on toistaiseksi saatavilla ainoastaan GRA3, GRA5 ja BHS3-konesaleissa. On mahdollisesti tarpeen luoda uusi projekti ja valita 2017-sarja. Lisätietoa [täällä](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/).
 > 
 
@@ -23,7 +23,7 @@ Mahdolliset grafiikkasuorittimet ovat NVIDIA GeForce GTX 1060, GTX 1070 tai GTX 
 
 ## Edellytykset
 
-- Olet luonut Public Cloud -projektin, jolla on pääsy alueille, joilla GPU on saatavilla (GRA3, GRA5 ja BHS3). 
+- Olet luonut [Public Cloud -projektin](https://www.ovh-hosting.fi/public-cloud/instances/){.external}, jolla on pääsy alueille, joilla GPU on saatavilla (GRA3, GRA5 ja BHS3). 
 
 ## Käytännössä
 
@@ -34,7 +34,7 @@ Löydät alla tiedot GPU-instanssin käyttöönottoon Linuxilla tai Windowsin ka
 
 Kaikkia tarjoamiamme imageja voidaan käyttää GPU-instansseilla.
 
-> 
+> [!primary]
 >
 > Jos ydinmoduulin kokoaminen käsin tuntuu epämukavalta, suosittelemme käyttämään jotakin Nvidian virallisesti tukemaa distribuutiota. Nvidia toimittaa niihin erilaisia *avaimet-käteen-ratkaisuja*: <https://developer.nvidia.com/cuda-downloads>.
 > 
@@ -64,7 +64,7 @@ sudo apt-get install cuda
 sudo reboot
 ```
 
-> 
+> [!primary]
 >
 > Linux-komento voi vaihdella distribuutiosta riippuen, epäselvissä tapauksissa tarkista Linux-versiosi virallisesta dokumentaatiosta.
 > 
@@ -105,7 +105,7 @@ Toimitamme erityisiä virtuaaliseen BIOS UEFI -standardiin perustuvia imageja, j
 ![public-cloud](images/EN-WindowsImages.png){.thumbnail}
 
 
-> 
+> [!warning]
 >
 > Emme voi taata ratkaisun toimivuutta kaikkien tulevien NVIDIA-ajurien kanssa.
 >

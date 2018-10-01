@@ -1,10 +1,11 @@
 ---
 title: 'Configurar a Firewall Network'
+excerpt: 'Saiba como configurar a Firewall Network'
 slug: firewall-network
 section: 'Redes & IP'
 ---
 
-**Última atualização: 31/08/2018**
+**Última atualização: 21/09/2018**
 
 ## Sumário
 
@@ -72,7 +73,7 @@ Adicione uma regra através da opção  `Adicionar uma regra`{.action}.
 ![Adicionar uma regra](images/ajoutregle1.png){.thumbnail}
 
 Para cada regra, deve selecionar:
-\- o nível prioridade (de 0 a 19, sendo que é aplicada a primeira regra);
+\- o nível de prioridade (de 0 a 19, sendo que é aplicada a primeira regra);
 \- uma ação (`Autorizar`{.action} ou `Recusar`{.action});
 \- o protocolo;
 \- um IP (opcional);
@@ -97,7 +98,7 @@ Para garantir que só ficarão abertas as portas SSH (22), HTTP (80), HTTPS (443
 
 As regras são ordenadas sequencialmente de 0 (primeira regra lida) a 19 (última regra lida). A sequência de leitura é interrompida a partir do momento em que uma regra é aplicada ao pacote recebido.
 
-Por exemplo, um pacote destinado à porta 80/TCP é identificado pela regra 2 e esta é executada. As regras seguintes não já não serão acionadas. Um pacote destinado à porta 25/TCP só poderá ser identificado pela última regra (19), e será bloqueado. Nas regras precedentes, a OVH não autoriza qualquer comunicação na porta 25.
+Por exemplo, um pacote destinado à porta 80/TCP é identificado pela regra 2 e esta é executada. As regras seguintes já não serão acionadas. Um pacote destinado à porta 25/TCP só poderá ser identificado pela última regra (19), e será bloqueado. Nas regras precedentes, a OVH não autoriza qualquer comunicação na porta 25.
 
 > [!warning]
 >

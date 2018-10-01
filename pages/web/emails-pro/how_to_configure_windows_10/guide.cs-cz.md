@@ -3,6 +3,7 @@ title: 'Konfigurace účtů služby E-mail Pro v aplikaci Pošta pro Windows 10'
 slug: konfigurace-posta-windows-10
 excerpt: 'Zjistěte, jak nakonfigurovat účet E-mail Pro v aplikaci Pošta pro operační systém Windows 10'
 section: 'Konfigurace e-mailového klienta'
+order: 7
 ---
 
 **Poslední aktualizace 18/04/2018**

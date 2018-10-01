@@ -1,86 +1,135 @@
 ---
-title: 'Hosting: Przywrócenie kopii zawartości FTP w aplikacji FileZilla'
-excerpt: Insert Here A Short Desc
+title: 'Przywracanie plików z kopii zapasowej OVH'
 slug: hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla
-section: FTP i SSH - zdalny dostęp
+excerpt: 'Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu'
+section: 'FTP i SSH - zdalny dostęp'
 ---
 
+**Ostatnia aktualizacja dnia 24-09-2018**
 
-## Etap 1: Nazwa hosta
-Zaloguj się do klienta FTP (w tym przypadku jest to aplikacja FileZilla: []({legacy}1380)).
+## Wprowadzenie
 
-W tym polu należy wpisać nazwę hosta.
-Jest to nazwa ftp.nazwatwojejdomeny.pl lub ftp.nazwatwojejofertyhostingu.ovh.net.
+W ramach usługi hostingu OVH otrzymujesz dostęp do przestrzeni dyskowej, na której możesz hostować Twoje strony WWW. Może się zdarzyć, że z jakiegoś powodu, na przykład w wyniku usunięcia lub modyfikacji pliku, Twoja strona WWW stanie się niedostępna i będziesz potrzebował przywrócić pojedynczy plik lub wszystkie dane przechowywane na przestrzeni dyskowej.
 
-Przykład:
-Dla domeny mojastrona.pl
-Nazwa hosta to: ftp.mojastrona.pl lub ftp.cluster0XX.ovh.net (należy zamienić pole XX przez nazwę klastra, podanego w mailu aktywacyjnym dla usługi)
+**Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu.**
 
-[Informacje o danych do logowanie FTP?](https://www.ovh.pl/g1374.hosting_www_umieszczenie_strony_w_internecie)
+## Wymagania początkowe
 
+- Posiadanie oferty [hostingu](https://www.ovh.pl/hosting/){.external} (nie dotyczy hostingu Cloud Web).
+- W zależności od użytej metody, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} lub posiadanie hasła użytkownika FTP umożliwiającego zalogowanie do przestrzeni dyskowej. 
 
-- Należy wpisać hasło do serwera FTP.
-- Należy podać numer portu 21.
+## W praktyce
 
+Zanim przystąpisz do operacji, upewnij się, że wśród dostępnych dat przywrócenia przestrzeni dyskowej hostingu możesz wybrać odpowiadającą Ci datę.
 
+- dzisiaj, o 00:01 rano;
+- wczoraj, o 00:01 rano;
+- przedwczoraj, o 00:01 rano;
+- poprzednia niedziela, o 01:00 rano;
+- niedziela dwa tygodnie temu, o 01:00 rano.
 
-![](images/img_2314.jpg){.thumbnail}
+Jeśli chcesz wykorzystać starszą kopię zapasową, OVH nie będzie w stanie Ci jej dostarczyć. Ewentualnie wykorzystaj kopię zapasową, którą wykonałeś osobiście w przeszłości.
 
+Określ również metodę przywracania, której użyjesz.
 
-## Etap 2: Logowanie FTP
-Należy wybrać login FTP w zależności od kopii serwera, którą chcesz pobrać: 
+|Metoda przywracania|Opis|
+|---|---|
+|Przywracanie w Panelu klienta|Pozwala przywrócić całą zawartość przestrzeni dyskowej. Aktualna zawartość przestrzeni dyskowej zostanie zastąpiona wybraną kopią zapasową.|
+|Przywracanie plików za pomocą programu lub interfejsu|Pozwala zalogować się do kopii zapasowej przestrzeni dyskowej tylko w trybie odczytu. Jest to metoda wymagająca większych umiejętności technicznych, pozwala jednak przywrócić jeden lub kilka plików z wcześniejszą datą bez konieczności usuwania całej zawartości przestrzeni dyskowej.|
 
+Przejdź do sekcji dotyczącej wybranej przez Ciebie metody przywracania przestrzeni dyskowej. 
 
-- moj_identyfikator_ftp-snap0 :
-snapshot D-0 (kopia wykonana tego samego dnia o 3.00)
-- moj_identyfikator_ftp-snap1 :
-snapshot D-1 (kopia wykonana dzień wcześniej o 3.00)
-- moj_identyfikator_ftp-snap2 :
-snapshot D-2 (kopia wykonana 2 dni wcześniej o 3.00)
-- moj_identyfikator_ftp-snap3 :
-snapshot T-1 (kopia wykonana tydzień wcześniej, w niedzielę o 4.00)
-- moj_identyfikator_ftp-snap4 :
-snapshot T-2 (kopia wykonana 2 tygodnie wcześniej, w niedzielę o 4.00)
-- moj_identyfikator_ftp-snap5 :
-snapshot T-3 (kopia wykonana 3 tygodnie wcześniej, w niedzielę o 4.00)
+- [Przywracanie przestrzeni dyskowej w Panelu klienta](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/#przywracanie-przestrzeni-dyskowej-w-panelu-klienta){.external}
 
-Przykład:
+- [Przywracanie pliku za pomocą programu lub interfejsu](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/#przywracanie-pliku-za-pomoca-programu-lub-interfejsu){.external}
 
+### Przywracanie przestrzeni dyskowej w Panelu klienta
 
-Dla identyfikatora FTP: toto
-Login FTP, aby pobrać kopię sprzed 2 dni to: toto-snap2
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz nazwę odpowiedniego hostingu. Przejdź do zakładki `FTP - SSH`{.action} i kliknij przycisk `Przywróć kopię zapasową`{.action}.
 
-![](images/img_2315.jpg){.thumbnail}
+![kopia zapasowa](images/backupftp-step1.png){.thumbnail}
 
+W oknie, które się wyświetla wybierz z rozwijanego menu odpowiednią dla Ciebie datę:
 
-## Etap 3: Hasło FTP
-Należy podać standardowe hasło do serwera FTP, które zostało wcześniej zdefiniowane. 
+|Wyświetlane oznaczenie daty|Data wykonania kopii zapasowej|
+|---|---|
+|D-1|dzisiaj, o 00:01 rano;|
+|D-2|wczoraj, o 00:01 rano;|
+|D-3|przedwczoraj, o 00:01 rano;|
+|1 tydzień temu|poprzednia niedziela, o 01:00 rano;|
+|2 tygodnie temu|niedziela dwa tygodnie temu, o 01:00 rano.|
 
-Jeżeli go nie znasz, to możesz je zmienić po zalogowaniu się do panelu administracyjnego, w zakładce 'Hosting'. 
+Po wybraniu daty, kliknij przycisk `Dalej`{.action}. 
 
-Po podaniu wszystkich danych do logowania, możesz połączyć się z serwerem FTP.
+![kopia zapasowa](images/backupftp-step2.png){.thumbnail}
 
-![](images/img_2316.jpg){.thumbnail}
+Poświęć chwilę, aby upewnić się, że żaden plik nie zostanie usunięty w wyniku przywrócenia przestrzeni dyskowej, np. plik, który zapisałeś na przestrzeni po wybranej dacie przywrócenia. Jak zostało wspomniane wyżej, przywrócenie przestrzeni dyskowej spowoduje usunięcie wszystkich aktualnych danych, które zostaną zastąpione danymi z kopii zapasowej.
 
+Kiedy jesteś gotowy do uruchomienia przywracania kopii zapasowej, kliknij przycisk `Zatwierdź`{.action}.
 
-## Etap 4: Pobranie danych z serwera FTP
-W tym etapie możesz pobrać wybrane przez siebie katalogi i pliki, dostępne we wskazanej kopii bezpieczeństwa. 
+### Przywracanie pliku za pomocą programu lub interfejsu
 
-Aby przesłać te dane pomiędzy kontami, wystarczy je przeciągnąc pomiędzy lokalizacją zdalną i lokalną. W ten sposób wszystkie dane zostaną skopiowane bezpośrednio na Twój komputer. 
+Operacja składa się z kilku etapów. Upewnij się, że posiadasz hasło użytkownika FTP umożliwiające dostęp do przestrzeni dyskowej. 
 
-Więcej informacji na temat aplikacji FileZilla znajdziesz w przewodniku na stronie: []({legacy}1380)
+> [!warning]
+>
+> Rozwiązanie to wymaga znajomości programu lub interfejsu, którego będziesz używał. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. W przypadku trudności zalecamy skorzystanie z pomocy specjalisty lub kontakt z producentem programu lub interfejsu. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
+>
 
-![](images/img_2317.jpg){.thumbnail}
+#### Etap 1: wybranie programu lub interfejsu, którego będziesz używał
 
+Na wstępie określ program lub interfejs, którego będziesz używał do łączenia się z kopią zapasową Twojej przestrzeni dyskowej. Jeśli już wybrałeś program lub interfejs, przejdź od razu do etapu 2. W przeciwnym razie zalecamy użycie jednego z trzech rozwiązań:
 
-## Etap 5: Połączenie z hostingiem WWW
-Aby połączyć się z serwerem FTP dla hostingu, należy podać standardowe dane do logowania, które otrzymałeś w mailu aktywacyjnym dla usługi.
+- **program FileZilla**: pobierz program ze strony producenta. OVH udostępnia przewodnik [Korzystanie z programu FileZilla na Twoim hostingu](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/){.external}, w którym znajdziesz instrukcje obsługi programu. Pamiętaj, że przewodnik OVH nie zastępuje oficjalnej dokumentacji producenta programu Filezilla.
 
-![](images/img_2318.jpg){.thumbnail}
+- **program Cyberduck**: pobierz program ze strony producenta. OVH udostępnia przewodnik [Korzystanie z programu Cyberduck na Twoim hostingu](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_cyberduck_mac/){.external}, w którym znajdziesz instrukcje obsługi programu. Pamiętaj, że przewodnik OVH nie zastępuje oficjalnej dokumentacji producenta programu Filezilla.
 
+- **interfejs FTP Explorer**: zaloguj się do interfejsu w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Po zalogowaniu, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting. Przejdź do zakładki `FTP - SSH`{.action} i kliknij przycisk `FTP Explorer`{.action}.
 
-## Etap 6: Kopiowanie zawartości kopii na hosting
-Aby przenieść dane z Twojego komputera na serwer WWW, wystarczy je przenieść lokalnie z komputera do lokalizacji zdalnej (hostingu WWW). Czynność ta przebiega identycznie, jak w przypadku pobrania wybranej przez Ciebie zawartości kopii bezpieczeństwa.
+Kiedy jesteś gotowy do rozpoczęcia operacji, przejdź do następnego etapu.
 
-![](images/img_2319.jpg){.thumbnail}
+![kopia zapasowa](images/backupftp-step3.png){.thumbnail}
 
+#### Etap 2: logowanie do kopii zapasowej przestrzeni dyskowej
+
+W wybranym interfejsie lub programie zaloguj się do przestrzeni dyskowej, aby uzyskać dostęp do zawartości kopii zapasowej, którą chcesz przywrócić. Potrzebna Ci do tego będzie nazwa użytkownika FTP, hasło oraz nazwa hosta Twojego serwera. 
+
+Możesz odnaleźć te informacje w zakładce `FTP - SSH`{.action} na Twoim hostingu. Jeśli nie posiadasz hasła dla użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}.
+
+![kopia zapasowa](images/backupftp-step4.png){.thumbnail}
+
+Uzupełnij Twoją nazwę głównego użytkownika („login”) FTP sufiksem wskazującym kopię zapasową, do której chcesz się zalogować. W uzyskaniu dostępu do wybranej kopii zapasowej pomogą Ci poniższe wskazówki:
+
+|Data wykonania kopii zapasowej|Sufiks do dodania:|Przykład uzupełnionej nazwy użytkownika|
+|---|---|---|
+|dzisiaj, o 00:01 rano;|-snap0|uzytkownikftp**-snap0**|
+|wczoraj, o 00:01 rano;|-snap1|uzytkownikftp**-snap1**|
+|przedwczoraj, o 00:01 rano;|-snap2|uzytkownikftp**-snap2**|
+|poprzednia niedziela, o 01:00 rano;|-snap3|uzytkownikftp**-snap3**|
+|niedziela dwa tygodnie temu, o 01:00 rano.|-snap4|uzytkownikftp**-snap4**|
+
+Pamiętaj, aby zastąpić informację ogólną „uzytkownikftp” Twoją nazwą głównego użytkownika FTP. Zachowaj natomiast sufiks określający datę kopii zapasowej, do której chcesz uzyskać dostęp.
+
+Metoda logowania do Twojej przestrzeni dyskowej jest różna w zależności od używanego interfejsu lub programu. Poniżej obrazek przedstawiający logowanie do przestrzeni przez interfejs FTP Explorer. 
+
+![kopia zapasowa](images/backupftp-step5.png){.thumbnail}
+
+#### Etap 3: pobieranie wybranego pliku lub plików
+
+Po zalogowaniu się, pobierz wybrany plik lub pliki. W tym celu przejrzyj zawartość Twojej przestrzeni dyskowej i zapisz lokalnie pliki. Operacja przebiega różnie w zależności od używanego programu lub interfejsu.
+
+Zanim przejdziesz do kolejnego etapu, upewnij się, że pobrałeś wszystkie pliki, które zamierzasz przywrócić, następnie wyloguj się z przestrzeni dyskowej.
+
+#### Etap 4: przywracanie wybranego pliku lub plików
+
+Kiedy masz już plik lub pliki, zaloguj się ponownie do przestrzeni dyskowej. Nie dodawaj jednak sufiksu do Twojego użytkownika FTP, aby się zalogować. Jeśli nie wpiszesz sufiksu, zyskasz dostęp do aktualnej zawartości Twojej przestrzeni dyskowej, a nie to wcześniejszej kopii zapasowej.
+
+Po zalogowaniu wgraj wybrany plik lub pliki. W tym celu przejrzyj zawartość Twojego komputera, następnie wybierz pliki i zastąp nimi stare pliki.
+
+## Sprawdź również
+
+[Korzystanie z programu FileZilla na Twoim hostingu](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/){.external}
+
+[Korzystanie z programu Cyberduck na Twoim hostingu](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_cyberduck_mac/){.external}
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
