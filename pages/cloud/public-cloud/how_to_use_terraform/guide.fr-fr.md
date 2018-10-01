@@ -3,7 +3,7 @@ title: Comment utiliser Terraform sur le Public Cloud OVH ?
 slug: utiliser-terraform
 description: Utilisation de Terraform
 keywords: infrastructure, instance, cloud, creation
-excerpt: Documentation pas a pas sur l'utilisation de l'outil Terraform pour abstraire le deploiement de votre infrastructure
+excerpt: Documentation pas à pas sur l'utilisation de l'outil Terraform pour abstraire le déploiement de votre infrastructure
 section: Tutoriels
 ---
 
@@ -42,6 +42,8 @@ Maintenant vous allez créer un environnement Terraform. Grâce à celui-ci, Ter
 ```sh
 1. $ terraform env new test_terraform
 ```
+
+/!\ Notes : Dans les dernières versions de Terraform, la commande `terraform env` est dépréciée, `terraform workspace` est maintenant le terme utilisé pour créer ce que les anciennes versions de Terraform appelaient, un "environnement".
 
 
 ## Creer des ressources

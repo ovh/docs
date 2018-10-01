@@ -59,18 +59,17 @@ admin@vps187763:~$ glance help
 
 - [Become root](https://docs.ovh.com/gb/en/public-cloud/become_root_and_select_a_password/)
 
-- Update repositories:
-
-```
-root@vps187763:~# yum update
-```
-
 - Install rpm rdo-release:
 
 ```
 [root@vps187769 ~]# yum install -y https://rdoproject.org/repos/rdo-release.rpm
 ```
 
+- Update repositories:
+
+```
+root@vps187763:~# yum update
+```
 
 - Install nova
 

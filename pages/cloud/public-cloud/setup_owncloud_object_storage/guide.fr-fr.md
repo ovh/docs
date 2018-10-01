@@ -112,9 +112,8 @@ La " **clé API**" et le " **Délai d'attente maximum**" sont facultatifs.
 
 > [!alert]
 >
-> Le conteneur que vous avez crée devra être dédié à OwnCloud car celui ci
-> configurera des metadata particulières sur votre conteneur.
-> 
+> L'utilisation d'un conteneur en tant que stockage primaire dans owncloud necessite qu'il soit dédié à Owncloud (qui y configurera des metadata particulières).
+> L'utilisation d'un conteneur en tant que stockage externe dans owncloud [n'a pas cette contrainte](https://docs.nextcloud.com/server/11/admin_manual/configuration_files/primary_storage.html)
 
 Lorsque toute les informations auront été renseignées et si celles ci sont correctes, le carré rouge devant votre nom de dossier passera au vert. Celui ci sera alors disponible depuis votre page principale dans la section " **Stockage Externe**" :
 
