@@ -3,7 +3,8 @@ title: Android 5.1 - Configuration de l’adresse e-mail
 legacy_guide_number: 1912
 slug: mail-mutualise-guide-configuration-dun-telephone-mobile-sous-android-version-51
 excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur Android 5.1
-section: Android
+section: Configuration sur smartphone
+hidden: true
 ---
 
 Cliquez [ici](http://www.ovh.com/fr/hebergement-web/faq){.external} pour retrouver nos différents guides de configuration e-mail.

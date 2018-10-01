@@ -2,8 +2,8 @@
 title: Créer une adresse e-mail avec son offre MX Plan
 slug: creation-dune-adresse-e-mail
 excerpt: Apprenez à créer une adresse e-mail avec votre offre MX Plan
-section: Gérer votre adresse e-mail
-order: 1
+section: Premiers pas
+order: 2
 ---
 
 **Dernière mise à jour le 23/03/2018**

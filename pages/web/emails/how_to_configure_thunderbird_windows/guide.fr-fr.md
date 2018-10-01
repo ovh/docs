@@ -1,9 +1,10 @@
 ---
-title: Thunderbird - Configuration de l’adresse e-mail
+title: Configurer son adresse e-mail sur l'application Thunderbird pour Windows
 slug: configuration-email-configuration-pour-thunderbird
 legacy_guide_number: 1297
 excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur Thunderbird.
-section: Windows
+section: Configuration sur ordinateur
+order: 5
 ---
 
 Cliquez [ici](http://www.ovh.com/fr/hebergement-web/guides){.external} pour retrouver nos différents guides de configuration e-mail.

@@ -2,8 +2,8 @@
 title: Modifier le mot de passe d'une adresse e-mail MX Plan
 slug: modifier-mot-de-passe-adresse-email
 excerpt: Apprenez à changer le mot de passe d'une adresse e-mail créée dans le cadre de l'offre MX Plan
-section: Gérer votre adresse e-mail
-order: 2
+section: Premiers pas
+order: 3
 ---
 
 **Dernière mise à jour le 23/03/2018**

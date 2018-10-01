@@ -3,7 +3,8 @@ title: Windows Mail - Configuration de l’adresse e-mail
 slug: mail-mutualise-guide-configuration-windows-mail
 legacy_guide_number: 1300
 excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur Windows Mail
-section: Windows
+section: Configuration sur ordinateur
+hidden: true
 ---
 
 Cliquez [ici](http://www.ovh.com/fr/hebergement-web/faq){.external} pour retrouver nos différents guides de configuration e-mail.

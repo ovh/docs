@@ -3,7 +3,8 @@ title: Outlook 2010 - Configuration de l’adresse e-mail
 slug: mail-mutualise-guide-configuration-outlook-2010
 legacy_guide_number: 1299
 excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur Outlook 2010
-section: Outlook
+section: Configuration sur ordinateur
+hidden: true
 ---
 
 Cliquez [ici](http://www.ovh.com/fr/hebergement-web/faq){.external} pour retrouver nos différents guides de configuration e-mail.
