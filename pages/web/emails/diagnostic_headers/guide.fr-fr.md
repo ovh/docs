@@ -1,8 +1,8 @@
 ---
-title: Récupérer l'entête d'un e-mail
+title: 'Récupérer l''en-tête d''un e-mail'
 slug: recuperation-des-entetes-e-mails
 legacy_guide_number: 1365
-excerpt: Retrouver ici comment récupérer un entête e-mail.
+excerpt: 'Retrouver ici comment récupérer un entête e-mail.'
 section: Diagnostic
 ---
 

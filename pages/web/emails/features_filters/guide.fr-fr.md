@@ -1,9 +1,9 @@
 ---
-title: Créer des filtres pour vos adresses e-mail
+title: 'Créer des filtres pour vos adresses e-mail'
 slug: mail-mutualise-guide-configuration-des-filtres-e-mail-sur-lespace-client
 legacy_guide_number: 1973
-excerpt: Retrouvez ici les informations sur les filtres d’e-mails, ainsi que des exemples d’utilisation
-section: Fonctionnalités e-mail
+excerpt: 'Retrouvez ici les informations sur les filtres d’e-mails, ainsi que des exemples d’utilisation'
+section: 'Fonctionnalités des adresses e-mail'
 order: 5
 ---
 
