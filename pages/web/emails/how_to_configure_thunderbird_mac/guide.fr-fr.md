@@ -1,9 +1,9 @@
 ---
-title: Configurer son adresse e-mail sur l'application Thunderbird pour Mac
+title: 'Configurer son adresse e-mail sur Thunderbird pour Mac'
 legacy_guide_number: 1911
 slug: guide-de-configuration-email-pour-thunderbird-mac
-excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur Thunderbird Mac.
-Section: Configuration sur ordinateur
+excerpt: 'Retrouvez ici les informations pour configurer votre adresse e-mail sur Thunderbird Mac.'
+Section: 'Configuration sur ordinateur'
 order: 6
 ---
 

@@ -1,12 +1,11 @@
 ---
-title: Utiliser de manière avancée vos e-mails
+title: 'Utiliser de manière avancée vos e-mails'
 slug: utilisation-avancee-des-e-mails
 legacy_guide_number: 2117
-excerpt: Vous trouverez dans ce guide differentes informations concernant les services e-mails chez OVH.
-section: Fonctionnalités e-mail
+excerpt: 'Vous trouverez dans ce guide differentes informations concernant les services e-mails chez OVH.'
+section: 'Fonctionnalités des adresses e-mail'
 order: 9
 ---
-
 
 ## Questions frequentes
 

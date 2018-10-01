@@ -1,12 +1,11 @@
 ---
-title: Créer un répondeur pour son adresse e-mail
+title: 'Créer un répondeur pour son adresse e-mail'
 legacy_guide_number: 2052
 slug: mise-en-place-repondeur-mail
-excerpt: Ce guide vous explique comment mettre en place un répondeur
-section: Fonctionnalités e-mail
+excerpt: 'Ce guide vous explique comment mettre en place un répondeur'
+section: 'Fonctionnalités des adresses e-mail'
 order: 3
 ---
-
 
 ## Généralités
 
