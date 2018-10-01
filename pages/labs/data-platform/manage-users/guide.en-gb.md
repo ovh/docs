@@ -1,13 +1,11 @@
 ---
-title: Manage users and groups
-excerpt:
-section: Users and Security
+title: 'Manage users and groups'
+excerpt: 'learn how to manage users and groups'
+section: 'Users and Security'
 order: 2
 ---
 
-
-Using your Data Platform Identity Management tool (idM), you can manager groups and users. A first *admin* user is
-automatically created to administrate the platform.
+Using your Data Platform Identity Management tool (idM), you can manager groups and users. A first *admin* user is automatically created to administrate the platform.
 
 ## Managing users
 

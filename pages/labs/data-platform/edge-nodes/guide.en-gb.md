@@ -1,8 +1,7 @@
 ---
-title: About edge nodes
-weight: 5
-description: Learn more about edge nodes.
-section: Getting started
+title: 'About edge nodes'
+excerpt: 'Learn more about edge nodes.'
+section: 'Getting started'
 ---
 
 ### What is an edge node

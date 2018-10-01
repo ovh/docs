@@ -1,7 +1,7 @@
 ---
-title: Retrieve your credentials
-excerpt: Learn how to retrieve your Data Platform credentials after installation
-section: How-tos
+title: 'Retrieve your credentials'
+excerpt: 'Learn how to retrieve your Data Platform credentials after installation'
+section: How-to
 order: 1
 ---
 
@@ -16,7 +16,7 @@ To retrieve your credentials:
 
 ![View credentials](images/credentials.png)
 
-# Description of credentials
+## Description of credentials
 
 Credentials       | Description
 ------------------|----------------------------------------------------------
