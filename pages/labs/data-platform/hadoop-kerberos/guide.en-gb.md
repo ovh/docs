@@ -1,6 +1,7 @@
 ---
-title: Hadoop and Kerberos
-section: Users and Security
+title: 'Hadoop and Kerberos'
+excerpt: 'Learn how to use Hadoop and Kerberos'
+section: 'Users and Security'
 order: 4
 ---
 

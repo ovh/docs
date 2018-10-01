@@ -9,22 +9,20 @@ section: 'Premiers pas'
 
 ## Objectif
 
-La plateforme Prescience est un outil d'apprentissage automatique, pilotable via API. Ce guide vous présentera les détails des API afin de vous permettre de piloter la plateforme OVH Prescience.
+Prescience est un outil d'apprentissage automatique, pilotable via plusieurs API, celles-ci étant accessibles à l'utilisateur pour automatiser de multiples actions. 
+Ce guide vous présente ces API en détail afin de vous permettre de piloter votre propre plateforme OVH Prescience.
 
-## Introduction
-
-La plateforme Prescience d'OVH dispose de plusieurs API accessibles  à l'utilisateur pour automatiser une multitude d'action.
 
 |API|URL|Description
 |---|---|---|
-Prescience API|https://prescience-api.ai.ovh.net| API Permettant de manipuler les `Source` / `Dataset` / `Model` de Prescience.
-Prescience Serving|https://prescience-serving.ai.ovh.net| API Permettant d'évaluer un model généré par Prescience.
+Prescience API|https://prescience-api.ai.ovh.net| API Permettant de manipuler les `Source`/`Dataset`/`Model` de Prescience.
+Prescience Serving|https://prescience-serving.ai.ovh.net| API Permettant d'évaluer un modèle généré par Prescience.
 
 ### Authentification
 
-L'utilisation de Prescience nécessite un token d'authentification.
+L'utilisation de Prescience nécessite un jeton d'authentification.
 
-Voici un exemple d'appel sur l'API
+Voici un exemple d'appel sur l'API :
 
 ```sh
 curl -X GET "https://prescience-api.ai.ovh.net/project" -H "Authorization: Bearer ${TOKEN}"
@@ -34,26 +32,26 @@ curl -X GET "https://prescience-api.ai.ovh.net/project" -H "Authorization: Beare
 
 ### Sources
 
-L'objet `Source` est le résultat d'une tâche de `parsing`.
-Lors de l'appel à l'api, l'objet retourné inclut les éléments suivants:
+L'objet `Source` est le résultat d'une tâche de « parsing » (analyse).
+Lors de l'appel API, l'objet retourné inclut les éléments suivants :
 
 |Champ|Description|Type|Ordonnable|Filtrable
 |---|---|---|---|---|
 `source_id`| Identifiant de la source | `String` | Oui | Non
-`input_url`| URL Interne du fichier pre-parsing | `String` | Non | Non
-`source_url`| URL Interne de fichier post-parsing | `String` | Non | Non
+`input_url`| URL interne du fichier pré-parsing | `String` | Non | Non
+`source_url`| URL interne de fichier post-parsing | `String` | Non | Non
 `input_type`| Type du fichier source  | `String` | Oui | Non
-`headers`| Fichier pre-parsing contient les headers  | `Boolean` | Oui | Non
-`separator`| Séparateur du fichier pre-parsing si CSV  | `String` | Non | Non
+`headers`| Le fichier pré-parsing contient les headers  | `Boolean` | Oui | Non
+`separator`| Séparateur du fichier pré-parsing si CSV  | `String` | Non | Non
 `schema`| Chaîne de caractères représentant le schéma en JSON | `String` | Non | Non
 `status`| Statut de la source | `Status` | Oui | Non
-`last_update`| Date de dernière mise à jour| `Timestamp` | Oui | Non
+`last_update`| Date de la dernière mise à jour| `Timestamp` | Oui | Non
 `created_at`| Date de création | `Timestamp` | Oui | Non
-`total_step`| Nombre total d'étapes du processus de `parse` | `Integer` | Non | Non
-`current_step`| Etape courante du processus de `parse` | `Integer` | Non | Non
+`total_step`| Nombre total d'étapes du processus de « parsing » | `Integer` | Non | Non
+`current_step`| Étape courante du processus de « parsing » | `Integer` | Non | Non
 `current_step_description`| Description de l'étape courante du processus de `parse` | `String` | Non | Non
 
-- Liste des sources
+- Liste des sources :
 
 `GET https://prescience-api.ai.ovh.net/source`
 
@@ -64,7 +62,7 @@ Lors de l'appel à l'api, l'objet retourné inclut les éléments suivants:
 |sort_column|`String`|query|Non|`created_at`| Champ selon lequel les résultats sont ordonnés| `source_id`|
 |sort_direction|`String`|query|Non|`created_at`| Champ selon lequel les résultats sont ordonnés| `source_id`|
 
-- Récupération d'une source
+- Récupération d'une source :
 
 `GET https://prescience-api.ai.ovh.net/source/{id_source}`
 
@@ -72,7 +70,7 @@ Lors de l'appel à l'api, l'objet retourné inclut les éléments suivants:
 |---|---|---|---|---|---|---|
 |`id_source`|`String`|path|Oui|| Identifiant de la source| `ma_source`
 
-- Suppression d'une source
+- Suppression d'une source :
 
 `DELETE https://prescience-api.ai.ovh.net/source/{id_source}`
 
@@ -84,28 +82,28 @@ Lors de l'appel à l'api, l'objet retourné inclut les éléments suivants:
 
 ### Datasets
 
-L'objet `Dataset` est le résultat d'une tâche de `preprocessing`.
-Lors de l'appel à l'api, l'objet retourné aura les éléments suivants:
+L'objet « Dataset » est le résultat d'une tâche de « preprocessing ».
+Lors de l'appel API, l'objet retourné contiendra les éléments suivants :
 
 |Champ|Description|Type|Ordonnable|Filtrable
 |---|---|---|---|---|
 `dataset_id`| Identifiant du dataset | `String` | Oui | Oui
 `source`| Objet `Source` ayant généré le dataset | `Source` | Non | Oui
-`dataset_url`| URL Interne de fichier résultant du preprocess | `String` | Non | Non
-`transformation_url`| URL Interne de fichier PMML de transformation | `String` | Non | Non
+`dataset_url`| URL interne de fichier résultant du preprocess | `String` | Non | Non
+`transformation_url`| URL interne de fichier PMML de transformation | `String` | Non | Non
 `label_id`| Identifiant de la colonne label | `String` | Oui | Non
-`problem_type`| Type du problème de machine learning (`Classification` / `Regression`) | `String` | Oui | Non
+`problem_type`| Type du problème de machine learning (`Classification`/`Regression`) | `String` | Oui | Non
 `nb_fold`| Nombre de découpages réalisés par le preprocess | `Boolean` | Oui | Non
 `selected_columns`| Liste des colonnes choisies dans la source  | `String[]` | Non | Non
 `schema`| Chaîne de caractère représentant le schéma en JSON | `String` | Non | Non
 `status`| Statut du dataset | `Status` | Oui | Non
-`last_update`| Date de dernière mise à jour| `Timestamp` | Oui | Non
+`last_update`| Date de la dernière mise à jour| `Timestamp` | Oui | Non
 `created_at`| Date de création | `Timestamp` | Oui | Non
 `total_step`| Nombre total d'étapes du processus de `preprocess` | `Integer` | Non | Non
-`current_step`| Etape courante du processus de `preprocess` | `Integer` | Non | Non
+`current_step`| Étape courante du processus de `preprocess` | `Integer` | Non | Non
 `current_step_description`| Description de l'étape courante du processus de `preprocess` | `String` | Non | Non
 
-- Liste des datasets
+- Liste des datasets :
 
 `GET https://prescience-api.ai.ovh.net/dataset/`
 
@@ -118,7 +116,7 @@ Lors de l'appel à l'api, l'objet retourné aura les éléments suivants:
 |dataset_id|`String`|query|Non|| Champ de filtrage sur le nom du dataset (Recherche en mode LIKE)| `dataset`|
 |source_id|`String`|query|Non|| Champ de filtrage sur le nom de la source du dataset (Recherche en mode LIKE)| `source`|
 
-- Récupération d'un dataset
+- Récupération d'un dataset :
 
 `GET https://prescience-api.ai.ovh.net/dataset/{id_dataset}`
 
@@ -126,7 +124,7 @@ Lors de l'appel à l'api, l'objet retourné aura les éléments suivants:
 |---|---|---|---|---|---|---|
 |`id_dataset`|`String`|path|Oui|| Identifiant du dataset| `mon_dataset`
 
-- Suppression d'un dataset
+- Suppression d'un dataset:
 
 `DELETE https://prescience-api.ai.ovh.net/dataset/{id_dataset}`
 
@@ -136,33 +134,33 @@ Lors de l'appel à l'api, l'objet retourné aura les éléments suivants:
 
 
 
-### Models
+### Modèles
 
-L'objet `Model` est le résultat d'une tâche de `train`.
-Lors de l'appel à l'api, l'objet retourné aura les éléments suivants:
+L'objet « Modèle » est le résultat d'une tâche de `train`.
+Lors de l'appel API, l'objet retourné comportera les éléments suivants :
 
 |Champ|Description|Type|Ordonnable|Filtrable
 |---|---|---|---|---|
-`model_id`| Identifiant du model | `String` | Oui | Non
-`dataset`| Objet `Dataset` ayant généré le model | `Dataset` | Non | Oui
+`model_id`| Identifiant du modèle | `String` | Oui | Non
+`dataset`| Objet `Dataset` ayant généré le modèle | `Dataset` | Non | Oui
 `label_id`| Identifiant de la colonne label | `String` | Oui | Non
-`config`| Objet `Config` ayant généré le model | `Config` | Non | Non
+`config`| Objet `Config` ayant généré le modèle | `Config` | Non | Non
 `status`| Statut du dataset | `Status` | Oui | Non
-`last_update`| Date de dernière mise à jour| `Timestamp` | Oui | Non
+`last_update`| Date de la dernière mise à jour| `Timestamp` | Oui | Non
 `created_at`| Date de création | `Timestamp` | Oui | Non
 `total_step`| Nombre total d'étapes du processus de `train` | `Integer` | Non | Non
-`current_step`| Etape courante du processus de `train` | `Integer` | Non | Non
+`current_step`| Étape courante du processus de `train` | `Integer` | Non | Non
 `current_step_description`| Description de l'étape courante du processus de `train` | `String` | Non | Non
 
-L'objet `Config` décrit la configuration utilisé pour générer le modèle de machine learning
+L'objet « Config » décrit la configuration utilisée pour générer le modèle de machine learning
 
 |Champ|Description|Type
 |---|---|---|
 `name`| Nom de l'algorithme utilisé | `String`
 `class_identifier`| Identifiant interne | `String`
-`kwargs`| Hyperparametres du model | `Dictonnaire`
+`kwargs`| Hyperparamètres du modèle | `Dictonnaire`
 
-- Liste des models
+- Liste des modèles :
 
 `GET https://prescience-api.ai.ovh.net/model`
 
@@ -174,15 +172,15 @@ L'objet `Config` décrit la configuration utilisé pour générer le modèle de 
 |sort_direction|`String`|query|Non|`created_at`| Champ selon lequel les résultats sont ordonnés| `model_id`|
 |dataset_id|`String`|query|Non|| Champ de filtrage sur le nom du dataset (Recherche en mode LIKE)| `dataset`|
 
-- Récupération d'un model
+- Récupération d'un modèle :
 
 `GET https://prescience-api.ai.ovh.net/model/{id_model}`
 
 |Paramètres|Type|In|Requis|Défaut|Signification|Exemple
 |---|---|---|---|---|---|---|
-|`id_model`|`String`|path|Oui|| Identifiant du model| `mon_model`
+|`id_model`|`String`|path|Oui|| Identifiant du modèle| `mon_model`
 
-- Suppression d'un model
+- Suppression d'un modèle :
 
 `DELETE https://prescience-api.ai.ovh.net/model/{id_model}`
 
@@ -194,20 +192,20 @@ L'objet `Config` décrit la configuration utilisé pour générer le modèle de 
 
 ### Parsing
 
-Pour créer une `Source`, il faut lancer une tâche de parsing.
+Pour créer une « Source », il faut lancer une tâche de parsing.
 
 `POST https://prescience-api.ai.ovh.net/ml/upload/source`
 
 |Paramètres|Type|In|Requis|Défaut|Signification|Exemple
 |---|---|---|---|---|---|---|
-|`parse.source_id`|`String`|multipart `parse` json|Oui|| Nom de la source| `ma-source`
-|`parse.input_type`|`String`|multipart `parse` json|Oui|| Type de fichier. `csv` ou `parquet` uniquement| `csv`
-|`parse.separator`|`String`|multipart `parse` json|Non|`,`| Séparateur dans le cas d'un fichier csv| `;`
-|`files`|`Files`|multipart `input-file-file-index` name |Non|| Fichier à uploader(peut en contenir plusieurs) | `input-file-0`
+|`parse.source_id`|`String`|multipart `parse` JSON|Oui|| Nom de la source| `ma-source`
+|`parse.input_type`|`String`|multipart `parse` JSON|Oui|| Type de fichier. `CSV` ou `parquet` uniquement| `csv`
+|`parse.separator`|`String`|multipart `parse` JSON|Non|`,`| Séparateur dans le cas d'un fichier csv| `;`
+|`files`|`Files`|multipart `input-file-file-index` name |Non|| Fichier à uploader (peut en contenir plusieurs) | `input-file-0`
 
-Exemple:
+Exemple :
 
-En partant du principe que les fichiers csv `data-1.csv` & `data-2.csv` sont dans un même repertoire:
+En partant du principe que les fichiers CSV « data-1.csv » et « data-2.csv » sont dans un même repertoire :
 
 - fichier `parse.json`
 ```json
@@ -228,26 +226,26 @@ curl -H "Authorization: Bearer ${TOKEN}" -v \
 
 > [!warning]
 >
-> La source renvoyé dans la réponse est incomplète.
+> La source renvoyée dans la réponse est incomplète.
 > En effet, la tâche étant asynchrone, elle sera complétée au fur et à mesure de son avancement.
 >
 
 ### Preprocess
 
-Pour créer un `Dataset`, il faut au préalable avoir généré une `Source` et ensuite créer une tâche de preprocess.
+Pour créer un « dataset », il faut au préalable avoir généré une « Source » et avoir ensuite créé une tâche de preprocess.
 
 `POST https://prescience-api.ai.ovh.net/ml/preprocess/{source_id}`
 
 |Paramètres|Type|In|Requis|Défaut|Signification|Exemple
 |---|---|---|---|---|---|---|
 |`source_id`|`String`|query|Oui|| Nom de la source à parser| `ma-source`
-|`dataset_id`|`String`|body json|Oui|| Nom du futur Dataset| `mon-gros-dataset`
-|`label_id`|`String`|body json|Oui|| identifiant de la colonne à labelliser du Dataset`| `mon-label`
-|`nb_fold`|`String`|body json|Non|10| Nombre de fold a créer pendant le parsing| `6`
-|`problem_type`|`String`|body json|Oui|| Type du problème de machine learning (`classification` / `regression`)| `regression`
+|`dataset_id`|`String`|body json|Oui|| Nom du futur dataset| `mon-gros-dataset`
+|`label_id`|`String`|body json|Oui|| identifiant de la colonne à labelliser du dataset`| `mon-label`
+|`nb_fold`|`String`|body json|Non|10| Nombre de folds a créer pendant le parsing| `6`
+|`problem_type`|`String`|body json|Oui|| Type du problème de machine learning (`classification`/`regression`)| `regression`
 |`selected_columns`|`String[]`|body json|Non|`[]`| Choix des colonnes pour le dataset. Par défaut, l'ensemble des colonnes sont selectionnées| `["colonne_1", "colonne_2"]`
 
-Exemple:
+Exemple :
 
 - fichier `preprocess.json`
 ```json
@@ -273,18 +271,18 @@ curl -H "Authorization: Bearer ${TOKEN}" \
 
 
 
-### Optimization
+### Optimisation
 
-Une fois le `Dataset` créé, on peut commencer à l'optimiser.
+Une fois le « dataset » créé, on peut commencer à l'optimiser.
 `POST https://prescience-api.ai.ovh.net/ml/optimize/{dataset_id}`
 
 |Paramètres|Type|In|Requis|Défaut|Signification|Exemple
 |---|---|---|---|---|---|---|
-|`dataset_id`|`String`|query|Oui|| Nom du dataset à optimizer| `mon-gros-dataset`
-|`scoring_metric`|`String`|body json|Oui|| Métrique d'optimization (Regression: `mae` / `mse` / `  `, Classification: `accuracy`, `f1`, `roc_auc`)| `ma-source`
+|`dataset_id`|`String`|query|Oui|| Nom du dataset à optimiser| `mon-gros-dataset`
+|`scoring_metric`|`String`|body json|Oui|| Métrique d'optimisation (Régression : `mae`/`mse` / ` R2 `, Classification: `accuracy`, `f1`, `roc_auc`)| `ma-source`
 |`budget`|`Integer`|body json|Non|6| Budget alloué à l'optimization| 10
 
-Exemple:
+Exemple :
 - fichier `optimize.json`
 ```json
 {
@@ -302,16 +300,16 @@ curl -H "Authorization: Bearer ${TOKEN}" \
 
 > [!warning]
 >
-> La tâche d'optimization renvoie un objet `Optimization`.
-> Une fois l'optimization terminée, il sera possible de requêter les objets `Evaluation-Result` pour obtenir la meilleure configuration
+> La tâche d'optimisation renvoie un objet intitulé « Optimization ».
+> Une fois l'optimisation terminée, il sera possible de lancer une requête sur les objets « Evaluation-Result » pour obtenir la meilleure configuration possible.
 >
 
 
 
 ## Evaluation Result
 
-L'objet `Evaluation-Result` est le résultat d'une tâche d' `optimization`.
-Lors de l'appel à l'api, l'objet retourné aura les éléments suivants:
+L'objet « Evaluation-Result » est le résultat d'une tâche d'optimisation.
+Lors de l'appel API, l'objet retourné contiendra les éléments suivants :
 
 |Champ|Description|Type
 |---|---|---|
@@ -320,13 +318,13 @@ Lors de l'appel à l'api, l'objet retourné aura les éléments suivants:
 `costs`| Dictonnaire contenant les métriques associées à la configuration | `Dict{}`
 `config`| Configuration testée | `Config`
 `status`| Statut du dataset | `Status`
-`last_update`| Date de dernière mise à jour| `Timestamp`
+`last_update`| Date de la dernière mise à jour| `Timestamp`
 `created_at`| Date de création | `Timestamp`
-`total_step`| Nombre total d'étapes du processus d' `optimization` | `Integer`
-`current_step`| Etape courante du processus d' `optimization` | `Integer`
-`current_step_description`| Description de l'étape courante du processus d' `optimization` | `String`
+`total_step`| Nombre total d'étapes du processus d'optimisation | `Integer`
+`current_step`| Etape courante du processus d'optimisation | `Integer`
+`current_step_description`| Description de l'étape courante du processus d'optimisation | `String`
 
-- Liste des évaluations
+- Liste des évaluations :
 
 `GET https://prescience-api.ai.ovh.net/evaluation-result`
 
@@ -339,19 +337,19 @@ Lors de l'appel à l'api, l'objet retourné aura les éléments suivants:
 |sort_direction|`String`|query|Non|`created_at`| Champ selon lequel les résultats sont ordonnés| `source_id`|
 |status|`String`|query|Non|| Filtre les données selon le statut| `BUILT`|
 
-## Entrainement
+## Entraînement
 
-Après avoir choisi la meilleure configuration dans la liste des `Evaluation-Result` nous pouvons entraîner un `Model`
+Après avoir choisi la meilleure configuration dans la liste des « Evaluation-Result » nous pouvons entraîner un modèle :
 
 `POST https://jedison.ai.ovh.net/ml/train`
 
 |Paramètres|Type|In|Requis|Défaut|Signification|Exemple
 |---|---|---|---|---|---|---|
-|`model_id`|`String`|query|Oui|| Nom du futur `Model`| `mon-model`
-|`evaluation_uuid`|`String`|query|Oui|| Identifiant de l'`Evaluation-Result` | `bcaef619-4bf3-4c15-b49f-bc325f98d891`
-|`dataset_id`|`String`|query|Non|dataset_id lié à l'`Evaluation-Result`| A renseigner pour entraîner sur un dataset différent de celui de l'`Evaluation-Result`| `mon-dataset-alternatif`
+|`model_id`|`String`|query|Oui|| Nom du futur modèle| `mon-model`
+|`evaluation_uuid`|`String`|query|Oui|| Identifiant de l'« Evaluation-Result » | `bcaef619-4bf3-4c15-b49f-bc325f98d891`
+|`dataset_id`|`String`|query|Non|dataset_id lié à l'« Evaluation-Result »| À renseigner pour entraîner sur un dataset différent de celui de l'« Evaluation-Result »| `mon-dataset-alternatif`
 
-Exemple:
+Exemple :
 ```sh
 curl -H "Authorization: Bearer ${TOKEN}" \
      -H "Content-Type:application/json" \
@@ -360,28 +358,28 @@ curl -H "Authorization: Bearer ${TOKEN}" \
 
 > [!warning]
 >
-> La tâche d'entraînement renvoie un objet `Model` incomplet.
+> La tâche d'entraînement renvoie un objet modèle incomplet.
 > En effet, la tâche étant asynchrone, elle sera complétée au fur et à mesure de son avancement.
 >
 
 ## OVH Prescience Serving API
 
-### Description d'un Model
+### Description d'un modèle
 
-Une fois qu'un `Model` est entraîné, il est possible de l'utiliser pour réaliser des inférences.
+Une fois qu'un modèle est entraîné, il est possible de l'utiliser pour réaliser des inférences.
 
 > [!warning]
 >
-> Les deux API ont un objet `Model` n'ayant pas la même structure. Seul l'identifiant `model_id` est commun.
+> Les deux API ont un objet « modèle » ne possédant pas la même structure. Seul l'identifiant `model_id` est commun.
 >
 
-- Description d'un `Model`
+- Description d'un modèle :
 
 `POST https://prescience-serving.ai.ovh.net/model/{model_id}`
 
-L'objet retourné décrit l'objet `Model` selon Prescience Serving.
+L'objet retourné décrit l'objet « modèle » selon Prescience Serving.
 
-Exemple de résultat:
+Exemple de résultat :
 ```json
 {
 	"id": "model",
@@ -470,21 +468,21 @@ Exemple de résultat:
 }
 ```
 
-### Evaluation d'un Model
+### Evaluation d'un modèle
 
 > [!warning]
 >
 > Lors de l'étape de preprocessing, une transformation des données est effectuée.
-> Le model se bqse sur la sortie de cette transformation, il est impératif de transformer la donnée avant d'utiliser le model.
+> Le modèle se basant sur la sortie de cette transformation, il est impératif de transformer la donnée avant d'utiliser le modèle.
 > Prescience Serving fournit des méthodes permettant d'effectuer à la fois cette transformation et l'inférence.
 
-La plateforme de serving permet d'effectuer:
- - Transformation + Evaluation
- - Evaluation uniquement
- - Transformation uniquement
+La plateforme de serving permet d'effectuer :
+ - la transformation et l'évaluation ;
+ - l'évaluation uniquement ;
+ - la transformation uniquement.
 
 
-|Method|URL|Description
+|Méthode|URL|Description
 |---|---|---|
 POST | https://prescience-serving.ai.ovh.net/eval/{model_id}/model | Inférence unitaire
 POST | https://prescience-serving.ai.ovh.net/eval/{model_id}/model/batch/csv | Inférence par lot depuis un fichier CSV
@@ -494,16 +492,16 @@ POST | https://prescience-serving.ai.ovh.net/eval/{transform_id}/transform/batch
 POST | https://prescience-serving.ai.ovh.net/eval/{transform_id}/transform/batch/json | Transformation par lot depuis un tableau JSON
 POST | https://prescience-serving.ai.ovh.net/eval/{transform_model_id}/transform-model | Transformation associée au modèle et inférence unitaire.
 POST | https://prescience-serving.ai.ovh.net/eval/{transform_model_id}/transform-model/batch/csv | Transformation associée au modèle et inférence par lot depuis un fichier CSV
-POST | https://prescience-serving.ai.ovh.net/eval/{transform_model_id}/transform-model/batch/json | Transformation associée au modèle et inférence par lot depuis un tqblequ Json
+POST | https://prescience-serving.ai.ovh.net/eval/{transform_model_id}/transform-model/batch/json | Transformation associée au modèle et inférence par lot depuis un tqblequ JSON
 
 
 |Paramètres|Type|In|Requis|Défaut|Signification
 |---|---|---|---|---|---|
-|`id`|`String`|json|Non|| Id de la requête
+|`id`|`String`|json|Non|| ID de la requête
 |`arguments`|`Dict`|json|Oui|| Arguments de la requête
 
 
-- Exemple d'une inférence unitaire
+- Exemple d'une inférence unitaire :
 
 Fichier `exemple.json`:
 ```json
@@ -526,9 +524,9 @@ curl -H "Authorization: Bearer ${TOKEN}" \
      --data-binary "@exemple.json"
 ```
 
-- Exemple d'une évaluation batch json
+- Exemple d'une évaluation batch JSON :
 
-Fichier `exemple.json`:
+Fichier `exemple.json` :
 ```json
 [
     {

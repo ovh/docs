@@ -1,11 +1,11 @@
 ---
 title: Overview
-excerpt:
-section: Getting started
+excerpt: 'overview of OVH Analytics Data Platform'
+section: 'Getting started'
 order: 1
 ---
 
-# Overview of OVH Analytics Data Platform
+## Overview of OVH Analytics Data Platform
 
 OVH Analytics Data Platform provides a one-click pre-configured Hadoop stack designed
 to store and process high volumes of data across OVH Public Cloud

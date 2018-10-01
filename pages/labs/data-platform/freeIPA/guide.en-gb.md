@@ -1,6 +1,7 @@
 ---
-title: About FreeIPA
-section: Advanced topics
+title: 'About FreeIPA'
+excerpt: 'Learn how to use FreeIPA'
+section: 'Advanced topics'
 order: 3
 ---
 
@@ -20,9 +21,8 @@ Learn more on [FreeIPA Wikipedia's page](https://en.wikipedia.org/wiki/FreeIPA)
 
 ### FreeIPA in Analytics Data Platform
 
-In order to handle users authentication and provide a unique identity management point,
-we decided to setup an Identity manager. FreeIPA do provide all the features neded
-to handle it in one point.
+In order to handle users authentication and provide a unique identity management point, we decided to setup an Identity manager. FreeIPA do provide all the features neded to handle it in one point.
+
 It makes users/groups accesses and rights management easier all accross the cluster.
 
 In your cloud project, the FreeIPA host is named `ovh-ipa.your-cluster-id.datalake.ovh`.
