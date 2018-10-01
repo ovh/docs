@@ -3,7 +3,8 @@ title: Android 4.4 - Configuration de l’adresse e-mail
 legacy_guide_number: 1347
 slug: mail-mutualise-guide-configuration-dun-telephone-mobile-sous-android-version-44
 excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur Android 4.4
-section: Android
+section: Configuration sur smartphone
+hidden: true
 ---
 
 Cliquez [ici](http://www.ovh.com/fr/hebergement-web/faq){.external} pour retrouver nos différents guides de configuration e-mail.

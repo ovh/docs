@@ -1,9 +1,10 @@
 ---
-title: BlackBerry - Configuration de l’adresse e-mail
+title: Configurer son adresse e-mail sur un BlackBerry
 legacy_guide_number: 1381
 slug: mail-mutualise-guide-configuration-blackberry
 excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur BlackBerry
-section: Autres clients de messagerie
+section: Configuration sur smartphone
+order: 3
 ---
 
 > [!warning]

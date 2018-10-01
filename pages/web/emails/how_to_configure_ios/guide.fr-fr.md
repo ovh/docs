@@ -2,7 +2,8 @@
 title: Configurer son adresse e-mail sur un iPhone ou un iPad
 slug: mail-mutualise-guide-configuration-iphone-ios-91
 excerpt: Apprenez à configurer une adresse e-mail MX Plan sur un iPhone ou un iPad, via l'application Mail
-section: Apple
+section: Configuration sur smartphone
+order: 1
 ---
 
 **Dernière mise à jour le 05/02/2018**

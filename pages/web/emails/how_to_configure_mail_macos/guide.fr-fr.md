@@ -2,7 +2,8 @@
 title: Configurer son adresse e-mail sur Mail de macOS
 slug: guide-configuration-mail-de-mac-el-capitan
 excerpt: Apprenez à configurer une adresse e-mail MX Plan sur Mail de macOS El Capitan, Sierra et High Sierra
-section: Apple
+section: Configuration sur ordinateur
+order: 3
 ---
 
 **Dernière mise à jour le 01/02/2018**

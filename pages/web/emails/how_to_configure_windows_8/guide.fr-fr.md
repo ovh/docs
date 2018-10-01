@@ -3,7 +3,8 @@ title: Courrier sur Windows 8 - Configuration de l’adresse e-mail
 slug: mail-mutualise-guide-configuration-sous-windows-8
 legacy_guide_number: 1281
 excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur Courrier de Windows 8
-section: Windows
+section: Configuration sur ordinateur
+hidden: true
 ---
 
 Cliquez [ici](http://www.ovh.com/fr/hebergement-web/faq){.external} pour retrouver nos différents guides de configuration e-mail.

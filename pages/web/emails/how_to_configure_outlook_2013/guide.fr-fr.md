@@ -3,7 +3,8 @@ title: Outlook 2013 - Configuration de l’adresse e-mail
 slug: mail-mutualise-guide-configuration-outlook-2013
 legacy_guide_number: 1286
 excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur Outlook 2013
-section: Outlook
+section: Configuration sur ordinateur
+hidden: true
 ---
 
 [Cliquez ici]({legacy}1474){.ref} pour retrouver nos différents guides de configuration e-mail.

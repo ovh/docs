@@ -3,7 +3,8 @@ title: Windows Phone - Configuration de l’adresse e-mail
 legacy_guide_number: 1346
 slug: configuration-windows-phone-mail-mutu
 excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur Windows Phone.
-section: Windows
+section: Configuration sur smartphone
+hidden: true
 ---
 
 > [!warning]

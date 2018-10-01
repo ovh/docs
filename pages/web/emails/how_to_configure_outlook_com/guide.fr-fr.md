@@ -2,7 +2,8 @@
 title: Outlook.com - Configuration de l’adresse e-mail
 slug: configuration-outlook-com
 excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur outlook.com
-section: Outlook
+section: Configuration sur une interface en ligne
+order: 2
 ---
 
 [Cliquez ici]({legacy}1474){.ref} pour retrouver nos différents guides de configuration e-mail.

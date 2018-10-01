@@ -2,7 +2,8 @@
 title: Configurer son adresse e-mail sur l'application Courrier pour Windows 10
 slug: configuration-courrier-sur-windows-10
 excerpt: Apprenez à configurer votre adresse e-mail MX Plan sur l'application Courrier pour Windows
-section: Windows
+section: Configuration sur ordinateur
+order: 4
 ---
 
 **Dernière mise à jour le 21/03/2018**

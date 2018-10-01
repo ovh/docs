@@ -3,7 +3,8 @@ title: Mail de Mac Mavericks et Yosemite - Configuration de l’adresse e-mail
 slug: guide-configuration-mail-de-mac-mavericks-et-yosemite
 legacy_guide_number: 1599
 excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur Mail de Mac Mavericks et Yosemite
-section: Apple
+section: Configuration sur ordinateur
+hidden: true
 ---
 
 Configurer sa boîte e-mail sur son Mac est très simple, cependant, voici un tutoriel pour vous aider à le faire de plusieurs manières. [Cliquez ici]({legacy}1474){.ref} pour retrouver nos différents guides de configuration e-mail.

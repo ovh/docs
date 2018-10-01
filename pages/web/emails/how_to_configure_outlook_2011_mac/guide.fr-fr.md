@@ -3,7 +3,8 @@ title: Outlook 2011 sur Mac - Configuration de l’adresse e-mail
 legacy_guide_number: 1345
 slug: mail-mutualise-guide-configuration-outlook-2011-sur-mac
 excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur Outlook 2011 Mac
-section: Outlook
+section: Configuration sur ordinateur
+hidden: true
 ---
 
 
