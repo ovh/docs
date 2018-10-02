@@ -2,7 +2,7 @@
 title: Configurer son compte E-mail Pro sur Outlook 2016 pour Windows
 slug: configuration-outlook-2016
 excerpt: Apprenez à configurer un compte E-mail Pro sur Outlook 2016 pour Windows
-section: Configuration client de messagerie
+section: Configuration sur ordinateur
 order: 1
 ---
 

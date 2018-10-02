@@ -1,9 +1,9 @@
 ---
-title: BlackBerry - Configuration de l’adresse E-mail Pro
+title: Configurer son compte E-mail Pro sur un BlackBerry
 slug: configuration-blackberry
 excerpt: Retrouvez ici comment configurer votre adresse E-mail Pro sur BlackBerry
-section: Configuration client de messagerie
-order: 91
+section: Configuration sur smartphone
+order: 3
 ---
 
 ## Généralités

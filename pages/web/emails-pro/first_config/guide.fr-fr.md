@@ -1,8 +1,9 @@
 ---
-title: 'Configurer sa solution E-mail Pro'
+title: 'Premiers pas avec la solution E-mail Pro'
 slug: premiere-configuration
 excerpt: 'Découvrez comment réaliser la configuration de votre solution E-mail Pro'
-section: Général
+section: Premiers pas
+order: 1
 ---
 
 **Dernière mise à jour le 22/08/2018**
