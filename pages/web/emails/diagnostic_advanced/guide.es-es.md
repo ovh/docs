@@ -1,21 +1,42 @@
 ---
-title: Códigos de respuesta de un servidor SMTP
-excerpt: Códigos de respuesta de un servidor SMTP
-slug: codigos_de_respuesta_de_un_servidor_smtp
-legacy_guide_number: g2272
-section: Diagnóstico
+title: Uso avanzado del correo de OVH
+excerpt: Uso avanzado del correo de OVH
+slug: uso_avanzado_del_correo_de_ovh
+legacy_guide_number: g2117
+section: Uso avanzado
 ---
 
+## ¿Qué debo comprobar si tengo algún problema con el correo?
 
-## Comandos SMTP
+Si los mensajes no se envían o reciben correctamente, compruebe los siguientes elementos: 
+
+¿Su servicio de correo está activo?
+Para que sus mensajes funcionen correctamente, debe tener un servicio de correo activo. Si utiliza las cuentas incluidas con un plan de hosting, compruebe que este no haya expirado. Puede consultar esta información directamente en el área de cliente. Igualmente, su dominio también debe estar activo.
+
+¿El correo funciona desde el webmail?
+Para asegurarse de que el problema no se deba a un error de configuración, realice una prueba de envío y recepción directamente desde el webmail de OVH. Si todo funciona correctamente, compruebe la configuración de su cliente de correo sirviéndose de las guías que ponemos a su disposición.
+
+¿No puede conectarse al webmail?
+Asegúrese de estar utilizando la contraseña correcta. Si lo necesita, puede cambiarla. Para ello, consulte el apartado correspondiente de esta guía.
+
+¿Se está realizando una intervención en el servicio?
+Puede consultar las intervenciones abiertas en la página [Status OVH](http://status.ovh.es/).
+
+¿El dominio apunta correctamente al servidor de correo?
+Compruebe que su dominio utilice los servidores de correo (registro MX) de su servicio de correo en OVH. Si desea más información, consulte nuestra [guía](https://docs.ovh.com/es/domains/anadir-registro-mx-configuracion-dominio/).
+
+## Códigos de respuesta de un servidor SMTP
+
+### Comandos SMTP
+
 En la transferencia de correo electrónico se utilizan comandos SMTP.
 
 Para consultar un servidor SMTP, es necesario dialogar con él enviándole  comandos.
 
 Cuando el servidor recibe un comando, devuelve una respuesta SMTP.
 
+### Respuestas SMTP
 
-## Respuestas SMTP
 Las respuestas a los comandos SMTP sirven para garantizar la sincronización de las consultas y de las acciones en el proceso de transferencia de correo con el fin de garantizar que el cliente SMTP conozca siempre el estado del servidor SMTP.
 
 Cada comando debe generar una respuesta.
@@ -25,18 +46,14 @@ Una respuesta SMTP está formada por un número de tres cifras seguido de un tex
 - El número es utilizado por los servidores para determinar cuál va a ser la siguiente etapa.
 - El texto solo es útil para un usuario humano.
 
-
 Cada una de las tres cifras de la respuesta tiene un significado:
 
 - La primera cifra indica si la respuesta es correcta, incorrecta o incompleta. El cliente SMTP determinará su siguiente acción en función de esta primera cifra.
 - La segunda y tercera cifras proporcionan información adicional.
 
+### Análisis rápido de las respuestas SMTP
 
-
-
-## Análisis rápido de las respuestas SMTP
 Hay cuatro valores posibles para la primera cifra del código de respuesta:
-
 
 - 2xx: Respuesta positiva: La acción solicitada se ha realizado correctamente. Puede realizarse una nueva petición.
 
@@ -46,10 +63,8 @@ Hay cuatro valores posibles para la primera cifra del código de respuesta:
 
 - 5xx: Respuesta negativa: El comando no se ha aceptado y la acción solicitada no ha podido realizarse. El cliente SMTP no debería repetir la misma solicitud.
 
+### Significado de los códigos
 
-
-
-## Significado de los códigos
 A continuación se describen la mayoría de los códigos de respuesta SMTP utilizados por los servidores:
 
 |Código de respuesta|Descripción|Acción|
@@ -81,6 +96,3 @@ A continuación se describen la mayoría de los códigos de respuesta SMTP utili
 |553|Acción solicitada no realizada: dirección de correo electrónico no autorizada|Por lo general se debe a que la dirección de correo de destino es incorrecta. Compruebe que la dirección de correo que ha introducido es correcta.|
 |554|No se ha podido realizar la transacción o, en caso de tratarse de la respuesta a una apertura de conexión, no hay ningún servicio SMTP|Por lo general se trata de un problema de blacklistado. Compruebe que la dirección IP del servidor de correo no esté blacklistada ([SpamHaus](https://www.spamhaus.org/lookup/)).|
 |555|Parámetros MAIL FROM o RCPT TO no reconocidos o no implementados|El servidor SMTP saliente no registra correctamente la dirección de correo electrónico utilizada en los parámetros «De» o «Para». Compruebe que las direcciones de correo electrónico indicadas son correctas y que no ha superado los límites establecidos por OVH: 200 mensajes por hora y cuenta y 300 mensajes por hora e IP.|
-
-
-

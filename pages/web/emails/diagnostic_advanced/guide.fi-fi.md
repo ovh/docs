@@ -1,19 +1,36 @@
 ---
-title: SMTP-palvelimen vastauskoodit
-excerpt: SMTP-palvelimen vastauskoodit
-slug: smtp-palvelimen_vastauskoodit
-legacy_guide_number: g2272
+title: 'OVH:n sähköpostiohjelmien edistynyt käyttö'
+excerpt: 'OVH:n sähköpostiohjelmien edistynyt käyttö'
+slug: ovhn_sahkopostiohjelmien_edistynyt_kaytto
+legacy_guide_number: g2117
 ---
 
+## Mitä kannattaa tarkistaa sähköpostin ongelmatapauksessa?
 
-## SMTP-komennot
+Mikäli sähköpostin lähettämisessä tai vastaanottamisessa on ongelmia, kannattaa seuraavat kohdat tarkistaa:
+
+
+- Onko sähköpostituotteeni aktiivinen? Jotta sähköpostit toimivat, on sinulla oltava aktiivinen sähköpostituote. Mikäli sinulla on webhotelliin liitetty sähköposti, tarkista ettei webhotelli ole vanhentunut. Voit nähdä tiedot helposti hallintapaneelissa. Myös verkkotunnuksesi on oltava voimassa.
+
+- Toimivatko sähköpostit webmailin kautta? Jotta varmistut, ettei kyse ole konfiguraatiovirheestä, testaa viestin lähetys ja vastaanotto OVH:n webmaililla. Jos kaikki toimii moitteettomasti, tarkista ohjelmiston konfiguraatio saamiesi ohjeiden avulla.
+
+
+- Ongelmia webmailiin kirjautumisessa?Tarkista, että salasanasi on oikein, tarvittaessa sitä voi myös muokata. Katso tämän ohjeen aiemmat kysymykset aiheeseen liittyen.
+
+- Suoritetaanko palvelussani huoltotoimenpidettä?Voit tarkistaa käynnissä olevat huoltotoimenpiteet [tältä sivulta](http://status.ovh-hosting.fi/).
+
+- Osoittaako verkkotunnukseni oikealle palvelimelle? Tarkista, että verkkotunnuksesi käytää OVH:n sähköpostituoteen sähköpostipalvelimia (MX-tyypin rekisteröinti) oikein. Voit lukea lisää [tästä ohjeesta](https://www.ovh-hosting.fi/g2003.MxPlan-tuote-sahkopostiratkaisu).
+
+## SMTP-palvelimen vastauskoodit
+
+### SMTP-komennot
+
 SMTP-komentoja käytetään sähköpostin siirtämiseen. Kommunikointi SMTP-palvelimen kanssa edellyttää keskustelua, joka tapahtuu lähettämällä sille "Komentoja".
 Kun palvelin on saanut komennon, se lähettää SMTP-vastauksen takaisin.
 
+### SMTP-vastaukset
 
-## SMTP-vastaukset
 SMTP-komentojen vastaukset varmistavat pyyntöjen synkronoinin ja toiminnan viestin välitysprosessissa. Tämä takaa, että SMTP-asiakasohjelma tietää aina SMTP-palvelimen tilan. Jokaisesta komennosta täytyy tulla vastaus. 
-
 
 SMTP-vastaus koostuu kolminumeroisesta[/lue] luvusta ja sitä seuraavasta tekstistä. Numero on tarkoitettu palvelimille seuraavan vaiheen määrittelyyn. Teksti on hyödyllinen ainoastaan ihmiskäyttäjälle.
 
@@ -21,40 +38,32 @@ Vastauksen kolmella numerolla on kullakin oma erityismerkityksensä:
 
  - ensimmäinen numero ilmoittaa, onko vastaus hyvä, huono vai epätäydellinen. SMTP-asiakasohjelma pystyy määrittämään ensimmäisen toiminnon tarkastelemalla juuri ensimmäistä lukua.
 
-
 - toinen ja kolmas luku sisältävät lisätietoja.
 
+### SMTP-vastausten pika-analyysi
 
-
-
-## SMTP-vastausten pika-analyysi
 Vastauskoodin ensimmäiselle numerolle on olemassa neljä mahdollista arvoa:
-
 
 - 2xx  Postiviinen vastaus:
 
 Pyydetty toiminto onnistui. Uusi pyyntö voidaan antaa.
-
 
 - 3xx  Väliaikainen positiivinen vastaus: 
 
 Komento hyväksyttiin, mutta pyydetty toiminto odottaa täydentäviä tietoja. 
 SMTP-asiakasohjelman täytyy lähettää uusi komento, jossa tiedot kerrotaan.
 
-
 - 4xx  Negatiivinen vastaus tilapäisestä epäonnistumisesta:
-
 
 Komentoa ei hyväksytty, eikä pyydettyä toimintoa voitu suorittaa. Virheen syy on kuitenkin tilapäinen, ja toimintoa voidaan pyytää uudestaan.
 
-
 - 5xx  Negatiivinen vastaus:
-
 
 Komentoa ei hyväksytty, eikä pyydettyä toimintoa voitu suorittaa. SMTP-asiakasohjelman ei pitäisi toistaa samaa komentoa.
 
 
-## Selitys
+### Selitys
+
 Alla on lista yleisimmistä palvelinten käyttämistä SMTP-vastauskoodeista:
 
 |Vastauskoodi|Yksityiskohdat|Toiminnot|
@@ -86,5 +95,4 @@ Loppukäyttäjää ei voida tarkistaa tällä hetkellä, mutta viesti lähetetä
 |552|Pyydetty toiminto keskeytyi: tallennustila täynnä|Käyttäjällä, jota yritit tavoittaa, ei ole enää yhtään tilaa sähköpostiviestin vastaanottamiseen. Valitettavasti ainoa ratkaisu on ottaa yhteyttää vastaanottajaan jollakin toisella tavalla|
 |553|Pyydettyä toimintoa ei suoritettu: sähköpostiosoitetta ei hyväksytty|Tämä johtuu yleensä virheellisestä sähköpostiosoitteesta. Tarkista, että sähköpostiosoite on oikein|
 |554|Viestin toimitus epäonnistui, "Ei yhtään SMTP-palvelua")|Tässä on kyse usein kielletystä listasta. Tarkista, että postipalvelimesi IP-osoite ei ole joutunut kielletylle listalle ([SpamHaus](https://www.spamhaus.org/lookup/))|
-|555|MAIL FROM / RCPT TO, asetuksia ei tunnistettu tai ei otettu käyttöön| Lähtevä SMTP-palvelin ei rekisteröi oikein käytettyä sähköpostiosoitetta tai asetuksia "Keneltä" ja "Kenelle". Tarkista, että ilmoitetut sähköpostiosoitteet ovat oikein ja varmista lisäksi, ettet ole ylittänyt OVH:n pysyvää rajaa: 200viestiä/tunti/tili ja 300viestiä/tunti/ip
-
+|555|MAIL FROM / RCPT TO, asetuksia ei tunnistettu tai ei otettu käyttöön| Lähtevä SMTP-palvelin ei rekisteröi oikein käytettyä sähköpostiosoitetta tai asetuksia "Keneltä" ja "Kenelle". Tarkista, että ilmoitetut sähköpostiosoitteet ovat oikein ja varmista lisäksi, ettet ole ylittänyt OVH:n pysyvää rajaa: 200viestiä/tunti/tili ja 300viestiä/tunti/ip|

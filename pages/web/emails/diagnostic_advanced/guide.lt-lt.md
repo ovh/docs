@@ -1,18 +1,34 @@
 ---
-title: SMTP serverio atsako kodai
-excerpt: SMTP serverio atsako kodai
-slug: smtp_serverio_atsako_kodai
-legacy_guide_number: g2272
+title: OVH el. paštas pažangiam naudojimui
+excerpt: Informacija apie OVH svetainių talpinimo planų el. paštą pažangiam naudojimui.
+slug: ovh_el_pastas_pazangiam_naudojimui
+legacy_guide_number: g2117
 ---
 
+## Ką tikrinti, jei el. laiškas neišsiunčiamas ar negaunamas?
 
-## SMTP komandos
+Jei jūsų el. laiškai negali būti išsiųsti arba gauti, jūs turėtumėte atsakyti į šiuos klausimus:
+
+Ar mano el. pašto sprendimas yra veikiantis? Jūsų el. laiškai bus veikiantys, jeigu jūsų naudojamas el. pašto sprendimas yra aktyvus. Jeigu jūsų el. laiškai susieti su svetainių talpinimo planu, įsitikinkite, kad jūsų planas tebegalioja. Šią informaciją galite peržiūrėti kliento valdymo sąsajoje. Jūsų domenas taip pat turi būti galiojantis.
+
+- Ar el. laiškai veikia per žiniatinklio paštą? Norėdami įsitikinti, kad problema nėra susijusi su konfigūravimo klaida, atlikite siuntimo ir gavimo testą tiesiai OVH žiniatinklio sąsajoje. Jeigu viskas veikia be klaidų, patikrinkite savo programos konfigūraciją vadovaudamiesi prieinamais gidais.
+
+- Negalite prisijungti prie žiniatinklio pašto? Įsitikinkite, kad jungiatės su teisingu slaptažodžiu, jei būtina, jūs galite jį pakeisti. Slaptažodžio keitimo procedūra aprašyta šiame gide aukščiau.
+
+- Ar paslaugoje vykdomi numatyti priežiūros darbai? Jūs galite patikrinti suplanuotus ir šiuo metu vykdomus priežiūros darbus [šiame puslapyje](http://travaux.ovh.net/).
+
+- Ar mano domeno nukreipimas yra teisingas? Patikrinkite, kad jūsų domenas teisingai naudoja OVH el. pašto pasiūlymo el. pašto serverius (MX įrašus). Vadovaukitės [šiuo gidu](https://docs.ovh.com/lt/domains/svetainiu_talpinimas_mx_konfiguravimas_naudojant_ovh_dns_zona/).
+
+## SMTP serverio atsako kodai
+
+### SMTP komandos
+
 SMTP užklausos naudojamas el. pašto perkėlimui.
 Kreipiantis į SMTP serverį, su juo būtina komunikuoti siunčiant užklausas (komandas).
 Serveriui gavus komandą, generuojamas SMTP atsakas.
 
+### SMTP atsakas
 
-## SMTP atsakas
 Atsakas į SMTP komandas užtikrina užklausų ir veiksmų sinchronizavimą el. pašto perkėlimo eigoje, siekiant, kad SMTP klientas visada žinotų SMTP serverio būseną. 
 Kiekviena užklausa turi generuoti atsaką.
 
@@ -22,42 +38,35 @@ Tekstas naudingas tik naudotojui.
 
 Kiekvienas atsako skaitmuo turi savo reikšmę:
 
-
 - Pirmas skaitmuo nurodo, ar atsakas yra tinkamas, netinkamas ar neužbaigtas. Pagal šį pirmąjį skaitmenį SMTP klientas galės nustatyti, koks bus kitas veiksmas.
 
 - Antras ir trečias skaitmuo pateiks papildomą informaciją.
 
+### Greita SMTP atsako analizė
 
-
-
-## Greita SMTP atsako analizė
 Pirmam atsako kodo skaitmeniui galimos keturios vertės:
-
 
 - 2xx  Teigiamas atsakas:
 
 Užklaustas veiksmas atliktas sėkmingai. Galima inicijuoti naują užklausą.
-
 
 - 3xx  Laikinas teigiamas atsakas:
 
 Užklausa priimta, tačiau užklaustas veiksmas laukia išsamesnės informacijos.
 SMTP klientas turėtų išsiųsti kitą užklausą, patikslinančią šią informaciją. 
 
-
 - 4xx  Laikinas neigiamas atsakas:
 
 Užklausa buvo atmesta ir užklaustas veiksmas nebuvo atliktas. 
 Tačiau klaidos sąlyga yra laikina, todėl užklausą galima pateikti iš naujo.
-
 
 - 5xx  Neigiamas atsakas:
 
 Užklausa buvo atmesta ir užklaustas veiksmas nebuvo atliktas. 
 SMTP klientas neturėtų kartoti tos pačios užklausos.
 
+### Paaiškinimas
 
-## Paaiškinimas
 Žemiau pateikti SMTP atsako kodai, kuriuos dažniausiai naudoja SMTP serveriai: 
 
 |Atsako kodas|Išsami informacija|Veiksmai|

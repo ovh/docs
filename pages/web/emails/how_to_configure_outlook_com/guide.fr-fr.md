@@ -1,5 +1,5 @@
 ---
-title: Outlook.com - Configuration de l’adresse e-mail
+title: Configurer son adresse e-mail sur l’interface en ligne d'Outlook.com
 slug: configuration-outlook-com
 excerpt: Retrouvez ici les informations pour configurer votre adresse e-mail sur outlook.com
 section: Configuration sur une interface en ligne
