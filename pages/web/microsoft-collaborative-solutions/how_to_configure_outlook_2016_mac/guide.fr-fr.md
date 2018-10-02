@@ -2,7 +2,8 @@
 title: Configurer son compte Exchange sur Outlook 2016 pour Mac
 slug: configuration-outlook-2016-mac
 excerpt: Apprenez à configurer un compte Exchange sur Outlook 2016 pour Mac
-section: Configuration client de messagerie Exchange
+section: Configuration sur ordinateur
+order: 2
 ---
 
 **Dernière mise à jour le 17/05/2018**

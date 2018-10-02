@@ -1,9 +1,10 @@
 ---
-title: Configuration d’un compte Exchange avec Thunderbird
+title: Configurer son compte E-mail Pro sur Thunderbird pour Windows
 slug: exchange-configuration-de-thunderbird
 legacy_guide_number: 1278
 excerpt: Retrouvez ici la procedure d’ajout d’un compte Exchange pour Thunderbird
-section: Configuration client de messagerie en IMAP/POP compatible Exchange
+section: Configuration sur ordinateur
+order: 6
 ---
 
 Thunderbird n'est pas compatible avec le protocle Exchange, la configuration peut se faire en POP ou en IMAP. Dans notre exemple, un compte Hosted Exchange est configuré en IMAP.

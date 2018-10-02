@@ -2,7 +2,8 @@
 title: Configurer son compte Exchange sur Android via l'application Gmail
 slug: exchange-configuration-sous-android
 excerpt: Apprenez à configurer un compte Exchange sur Android, via l'application Gmail
-section: Configuration smartphone/tablette compatible Exchange
+section: Configuration sur smartphone
+order: 2
 ---
 
 **Dernière mise à jour le 17/05/2018**
@@ -30,6 +31,8 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 > [!primary]
 >
 > Cette documentation a été réalisée depuis un appareil Nexus 6 utilisant la version 7.1.1 d'Android. Pour une question d'uniformisation, nous utilisons l'application Gmail pouvant être installée depuis le Play Store. Si vous souhaitez utiliser une autre application, la marche à suivre sera alors différente.
+>
+> Vous utilisez une version antérieure d'Android ? Consultez notre documentation : [Configurer son compte Exchange sur Android 5 Lollipop](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-sous-android-5-lollipop/){.external}.
 >
 
 ## En pratique

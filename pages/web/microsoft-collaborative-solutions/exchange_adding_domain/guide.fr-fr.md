@@ -2,7 +2,8 @@
 title: Ajouter un nom de domaine sur son service Exchange
 slug: ajouter-domaine-exchange
 excerpt: Découvrez comment ajouter un nom de domaine à votre service Exchange
-section: Configuration de l’offre Exchange
+section: Premiers pas
+order: 4
 ---
 
 **Dernière mise à jour le 09/01/2018**

@@ -2,7 +2,8 @@
 title: Configurer son compte Exchange sur Mail de macOS
 slug: exchange-configuration-automatique-sous-mail-mac
 excerpt: Apprenez à configurer votre compte Exchange sur Mail de macOS El Capitan, Sierra et High Sierra
-section: Configuration client de messagerie Exchange
+section: Configuration sur ordinateur
+order: 3
 ---
 
 **Dernière mise à jour le 17/05/2018**

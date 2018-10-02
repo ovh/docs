@@ -1,9 +1,10 @@
 ---
-title: Premiers pas avec un serveur Private Exchange
+title: Premiers pas avec le service Private Exchange
 legacy_guide_number: 2074
 slug: exchange-premiers-pas-avec-un-serveur-private
 excerpt: Retrouvez ici les details sur la mise en place de votre serveur private Exchange depuis le reglement de votre commande a la livraison. Une fois le serveur livre, vous pourrez configurer votre systeme de messagerie.
-section: Configuration de l’offre Exchange
+section: Premiers pas
+order: 2
 ---
 
 

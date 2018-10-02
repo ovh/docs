@@ -1,9 +1,10 @@
 ---
-title: Commander et gerer un groupe de licences Office 365 OVH
+title: Gérer un groupe de licences Office 365 OVH
 slug: commander-et-gerer-un-groupe-de-licences-office-365-ovh
 legacy_guide_number: 1960
 excerpt: Retrouver ici la procedure de commande et de gestion de licence Office 365 OVH
-section: Office 365
+section: Office
+order: 2
 ---
 
 Il y a plusieurs avantages à souscrire à l'Office 365 Business ou Pro Plus. La facturation est mensuelle. Vous pouvez installer une licence sur 5 PC/Mac et 5 tablettes et 5 smartphones. Vous disposez constamment de mises à jour, y compris les mises à jour majeures.

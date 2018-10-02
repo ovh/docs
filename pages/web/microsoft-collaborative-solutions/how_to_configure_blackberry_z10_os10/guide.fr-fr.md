@@ -1,9 +1,10 @@
 ---
-title: Configuration d’un compte Exchange sous BlackBerry Z10 (OS10)
+title: Configurer son compte Exchange sur un BlackBerry Z10
 legacy_guide_number: 1391
 slug: exchange-configuration-sous-blackberry-z10-os10
 excerpt: Retrouvez ici les informations pour configurer votre compte Exchange sur BlackBerry
-section: Configuration smartphone/tablette compatible Exchange
+section: Configuration sur smartphone
+order: 3
 ---
 
 Avant de réaliser ces manipulations, assurez-vous que le champ SRV de votre nom de domaine est correctement configuré. [Un guide est disponible ici](https://www.ovh.com/fr/exchange/guides/g1311.exchange_20132016_premiere_configuration_du_service){.external} pour la mise en place du champ SRV sur votre nom de domaine.

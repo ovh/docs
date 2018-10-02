@@ -1,9 +1,10 @@
 ---
-title: Configuration d’un compte Exchange sous Windows 8
+title: Configurer son compte Exchange sur Courrier pour Windows 8
 legacy_guide_number: 1273
 slug: exchange-configuration-sous-windows-8
 excerpt: Retrouvez ici la procedure de configuration d’un compte Exchange sous Windows 8
-section: Configuration client de messagerie en IMAP/POP compatible Exchange
+section: Configuration sur ordinateur
+hidden: true
 ---
 
 Avant de réaliser ces manipulations, assurez-vous que le champ SRV de votre nom de domaine est correctement configuré. Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} pour retrouver nos différents guides
