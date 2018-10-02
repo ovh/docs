@@ -1,18 +1,34 @@
 ---
-title: Os códigos de resposta de um servidor SMTP
-excerpt: Os códigos de resposta de um servidor SMTP
-slug: os_codigos_de_resposta_de_um_servidor_smtp
-legacy_guide_number: g2272
+title: Utilização avançada dos e-mails OVH
+excerpt: Utilização avançada dos e-mails OVH
+slug: utilizacao_avancada_dos_e-mails_ovh
+legacy_guide_number: g2117
 ---
 
+## O que devo verificar em caso de problemas com os meus e-mails?
 
-## Comandos SMTP
+Em caso de problemas nos envios ou na receção dos seus e-mails, vejamos alguns pontos a verificar:
+
+- A minha oferta de e-mail está ativa? Para que os seus e-mails estejam funcionais, deverá dispor de uma oferta de e-mail ativa. Se possui e-mails associados a uma oferta de alojamento, queira certificar-se de que ela não expirou. É possível verificar essa informação diretamente no seu Espaço Cliente. Deve ainda verificar que o seu nome de domínio está igualmente ativo.
+
+- Os e-mails funcionam a partir do webmail? De forma a verificar que o problema não está associado a um erro de configuração, efetue um teste de envio e receção a partir do webmail OVH. Se tudo funcionar corretamente, queira verificar a configuração do seu software através dos guias que temos à sua disposição.
+
+- Não se consegue ligar ao webmail? Confirme que a password é a correta, e se necessário altere-a no seu Espaço Cliente. Para tal, consulte as questões anteriores neste guia.
+
+- Existe um incidente em curso para o meu serviço? É possível verificar os diferentes trabalhos que estão atualmente em curso [nesta página](http://estado.ovh.pt/).
+
+- O apontamento do meu domínio está correto?Verifique se o seu nome de domínio utiliza corretamente os servidores de e-mail (registos do tipo MX) da oferta de e-mail da OVH.
+
+## Os códigos de resposta de um servidor SMTP
+
+### Comandos SMTP
+
 Os comandos SMTP são utilizados para a transferência de correio eletrónico.
 Para interrogar um servidor SMTP é necessário dialogar com ele ao enviar-lhe "Comandos".
 Após o servidor ter recebido um comando, ele retornará uma resposta SMTP.
 
+### Respostas SMTP
 
-## Respostas SMTP
 As respostas aos comandos SMTP servem para assegurar a sincronização dos pedidos e as ações nos processos de transferência de correio, de forma a garantir que o cliente SMTP conhece o estado do servidor SMTP.
 Cada comando deverá gerar uma resposta.
 
@@ -21,42 +37,34 @@ O texto é útil apenas e só para um humano.
 
 Os três números da resposta tem, cada um deles, um significado particular: :
 
-
 - o primeiro número indica se a resposta é boa, má ou incompleta. Um servidor SMTP será então capaz de determinar a sua próxima ação ao examinar este primemiro número.
 
 - O segundo e o terceiro número fornecem informações complementares.
 
-
-
-
 ## Rápida análise das respostas SMTP
 Existem quatro valores possíveis para o primeiro número do código de resposta:
-
 
 - 2xx  Resposta positiva:
 
 A ação pedida foi efetuada com sucesso. Poderá ser iniciado um novo pedido.
-
 
 - 3xx  Resposta positiva temporária:
 
 O comando foi aceite, mas a ação pedida esta aguardar a receção de mais informações.
 O cliente SMTP deverá enviar um outro comando especificando essa informação.
 
-
 - 4xx  Resposta negativa de conclusão transitória:
 
 O comando não foi aceite e a ação pedida não pode ser efetuada.
 Porém, a condição de erro é temporária e a ação pode ser solicitada novamente.
-
 
 - 5xx  Resposta negativa :
 
 O comando não foi aceite e a ação pedida não pode ser efetuada.
 O cliente SMTP não deverá repetir o mesmo pedido.
 
+### Interpretação
 
-## Interpretação
 Encontrará aqui a maioria dos códigos de resposta SMTP utilizados pelos servidores:
 
 |Códigos de resposta|Detalhes|Ações|

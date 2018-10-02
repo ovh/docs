@@ -1,17 +1,34 @@
 ---
-title: Kody odpowiedzi serwera SMTP
-excerpt: Kody odpowiedzi serwera SMTP
-slug: kody_odpowiedzi_serwera_smtp
-legacy_guide_number: g2272
+title: Zaawansowane korzystanie z e-maili OVH
+excerpt: Zaawansowane korzystanie z e-maili OVH
+slug: zaawansowane_korzystanie_z_e-maili_ovh
+legacy_guide_number: g2117
 ---
 
+## Co należy sprawdzić w przypadku problemu z e-mailami?
 
-## Polecenia SMTP
+W przypadku problemów z wysyłką lub odbieraniem e-maili można sprawdzić poniższe punkty:
+
+- Czy moja usługa e-mail została włączona?Aby konta e-mail działały, musisz dysponować aktywną usługą e-mail. Jeśli posiadasz konta e-mail przypisane do oferty hostingu, sprawdź czy oferta ta nie wygasła. Informacja ta jest widoczna w panelu klienta. Domena również musi być aktywna.
+
+- Czy e-maile działają z poziomu interfejsu webmail?Jeśli chcesz się upewnić, że problem nie jest związany z konfiguracją, wykonaj test wysyłki i pobrania bezpośrednio z interfejsu webmail OVH. Jeśli wszystko działa prawidłowo, sprawdź konfigurację programu pocztowego korzystając z udostępnionych przewodników.
+
+- Nie możesz się zalogować do interfejsu webmail? 
+Sprawdź, czy posiadasz prawidłowe hasło. Możesz również je zmienić.
+
+- Czy na mojej usłudze wykonywane są prace?Możesz sprawdzać prace w trakcie na [tej stronie](http://prace.ovh.pl/).
+
+- Czy moja domena jest prawidłowo przekierowana?Sprawdź, czy domena korzysta z prawidłowych serwerów e-mail (wpisy MX). Zapoznaj się z [tym przewodnikiem](https://docs.ovh.com/pl/domains/hosting_www_konfiguracja_serwerow_mx_w_strefie_dns_ovh/).
+
+## Kody odpowiedzi serwera SMTP
+
+### Polecenia SMTP
+
 Polecenia SMTP są używane do przekazywania poczty elektronicznej. Aby odpytać serwer SMTP, należy komunikować się z nim wysyłając "polecenia".
 Gdy serwer otrzyma polecenie, prześle odpowiedź SMTP.
 
+### Odpowiedzi SMTP
 
-## Odpowiedzi SMTP
 Odpowiedzi na polecenia SMTP służą do zapewnienia synchronizacji zapytań i operacji w procesie trasferu poczty elektronicznej, w celu zagwarantowania klientowi SMTP znajomości stanu serwera SMTP. Każde polecenie powinno generować odpowiedź. 
 
 Odpowiedź SMTP składa się z trzy cyfrowej liczby i tekstu.
@@ -20,40 +37,32 @@ Tekst jest użyteczny jedynie dla użytkownika.
 
 Trzy cyfry w odpowiedzi mają określone znaczenie:
 
-
 - Pierwsza cyfra wskazuje, czy odpowiedź jest dobra, zła czy niekompletna. Klient SMTP będzie mógł określić kolejna operację po sprawdzeniu tej pierwszej cyfry. 
-
 
 - Druga i trzecia cyfra dostarczają informacji uzupełniających.
 
+### Szybka analiza odpowiedzi SMTP
 
-
-
-## Szybka analiza odpowiedzi SMTP
 W przypadku pierwszej cyfry w kodzie odpowiedzi możliwe są cztery wartości:
-
 
 - 2xx  Odpowiedź pozytywna:
 
 Zlecona operacja została wykonana. Można zlecić kolejną operację. 
 
-
 - 3xx  Tymczasowa odpowiedź pozytywna:
 
 Polecenie zostało zaakceptowane, ale zlecona operacja oczekuje na dokładniejsze informacje. Klient SMTP powinien przesłać inne polecenie z tą informacją. 
-
 
 - 4xx  Negatywna odpowiedź przejściowego zakończenia:
 
 Polecenie nie zostało zaakceptowane i zlecona operacja nie została wykonana. Warunek błędu jest tymczasowy, operacja może zostać ponownie zlecona. 
 
-
 - 5xx  Odpowiedź negatywna:
 
 Polecenie nie zostało zaakceptowane i zlecona operacja nie została wykonana. Klient SMTP nie powtórzy tego samego zlecenia.
 
+### Interpretacja
 
-## Interpretacja
 Poniżej znajduje się większość kodów odpowiedzi SMTP używanych przez serwery:
 
 |Kody odpowiedzi|Szczegóły|Operacje|

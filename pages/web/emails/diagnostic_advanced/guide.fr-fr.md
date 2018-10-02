@@ -1,59 +1,59 @@
 ---
-title: Les codes de reponse d’un serveur SMTP
-legacy_guide_number: 2272
-slug: codes-de-reponse-serveur-smtp
-excerpt: Ce guide a pour objectif de vous enoncer les codes de reponse d’un serveur SMTP et pour certains d’entre eux, de vous proposer des solutions afin ne plus les avoir.
-section: Diagnostic
+title: 'Réagir en cas d'indisponibilité de vos e-mails'
+slug: utilisation-avancee-des-e-mails
+legacy_guide_number: 2117
+excerpt: 'Vous trouverez dans ce guide differentes informations concernant les services e-mails chez OVH.'
+section: 'Diagnostic'
+order: 9
 ---
 
+## Les vérifications à réaliser
 
-## Généralités
+En cas d'indisponibilité sur les envois ou la réception de vos e-mails, voici quelques points possibles à vérifier :
 
-> [!warning]
->
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
-> 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
-> 
+- **Mon offre e-mail est-elle active ?**
 
-### Commandes SMTP
+Pour que vos e-mails soient fonctionnels, vous devez posséder une offre e-mail active. Si vous possédez des e-mails associés à une offre d'hébergement, vérifiez qu'elle ne soit pas expirée. Il vous est possible de voir cette information directement dans l'espace client. Au même titre votre nom de domaine doit lui aussi être actif.
+
+- **Les e-mails sont-ils fonctionnels depuis le webmail ?** 
+
+Afin de vous assurer que le souci n'est pas lié à une erreur de configuration, réalisez un test d'envoi et de réception directement via le webmail d'OVH. Si tout fonctionne correctement, vérifiez la configuration de votre logiciel via les guides mis à votre disposition.
+
+- **Vous ne pouvez pas vous connecter au webmail ?** 
+
+Assurez-vous d'avoir le bon mot de passe, si nécessaire il vous est possible de le modifier. Pour cela, référez-vous à [ce guide](https://docs.ovh.com/fr/emails/modifier-mot-de-passe-adresse-email/){.external}.
+
+- **Une tâche travaux est-elle en cours sur mon service ?**
+
+Il vous est possible de vérifier les différentes tâches travaux actuellement en cours sur [cette page](http://travaux.ovh.net/){.external} .
+
+
+- **Le pointage de mon nom de domaine est-il correct ?**
+
+Vérifiez que votre nom de domaine utilise correctement les serveurs e-mail (Enregistrement de type MX) de l'offre e-mail d'OVH. Référez-vous à [ce guide](https://docs.ovh.com/fr/domains/mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/){.external}.
+
+## Les codes de reponse d’un serveur SMTP
+
 Les commandes SMTP sont utilisées pour le transfert de courrier électronique. Afin d'interroger un serveur SMTP, il est nécessaire de dialoguer avec lui en lui envoyant des "Commandes". Une fois que le serveur a reçu une commande, une réponse SMTP sera retournée.
 
-
-### Reponses SMTP
 Les réponses aux commandes SMTP servent à assurer la synchronisation des requêtes et des actions dans le processus de transfert de courrier, afin de garantir que le client SMTP connaisse toujours l'état du serveur SMTP. Chaque commande doit générer une réponse.
 
 Une réponse SMTP est constituée d'un nombre à trois chiffres suivis d'un texte. Le nombre est destiné à être utilisé par les serveurs pour déterminer la prochaine étape. Le texte est utile uniquement pour l'utilisateur humain.
 
 Les trois chiffres de la réponse ont chacun une signification particulière :
 
-- le premier chiffre indique si la réponse est bonne, mauvaise ou incomplète. Un client SMTP sera capable de déterminer sa prochaine action par l'examen de ce premier chiffre.
+- le premier chiffre indique si la réponse est bonne, mauvaise ou incomplète. Un client SMTP sera capable de déterminer sa prochaine action par l'examen de ce premier chiffre ;
 - Le second et le troisième chiffre fournissent des informations complémentaires.
 
-
-### Analyse rapide des reponses SMTP
 Il y a quatre valeurs possibles pour le premier chiffre du code de réponse :
 
-- 2 xx Réponse positive :
+|Code|Description|  
+|---|---|  
+|2 xx|Réponse positive : l'action demandée a été effectuée avec succès. Une nouvelle demande peut être initiée.| 
+|3 xx|Réponse positive temporaire : la commande a été acceptée, mais l'action demandée est en attente de réception de plus amples informations. le client SMTP devrait envoyer une autre commande spécifiant cette information.| 
+|4 xx|Réponse négative d'achèvement transitoire : la commande n'a pas été acceptée et l'action demandée n'a pas pu se produire. Toutefois, la condition de l'erreur est temporaire, et l'action peut être demandée à nouveau.| 
+|5 xx|Réponse négative : la commande n'a pas été acceptée et l'action demandée n'a pas pu se produire. Le client SMTP ne devrait pas répéter la même demande.| 
 
-L'action demandée a été effectuée avec succès. Une nouvelle demande peut être initiée.
-
-- 3 xx Réponse positive temporaire :
-
-La commande a été acceptée, mais l'action demandée est en attente de réception de plus amples informations. le client SMTP devrait envoyer une autre commande spécifiant cette information.
-
-- 4 xx Réponse négative d'achèvement transitoire :
-
-La commande n'a pas été acceptée et l'action demandée n'a pas pu se produire. Toutefois, la condition de l'erreur est temporaire, et l'action peut être demandée à nouveau.
-
-- 5 xx Réponse négative :
-
-La commande n'a pas été acceptée et l'action demandée n'a pas pu se produire. Le client SMTP ne devrait pas répéter la même demande.
-
-
-## Liste des codes de reponse SMTP
-
-### Interpretation
 Vous trouverez ci-dessous la majorité des codes de réponse SMTP utilisés par les serveurs :
 
 |Codes réponse|Détails|Actions|
@@ -85,8 +85,3 @@ Vous trouverez ci-dessous la majorité des codes de réponse SMTP utilisés par 
 |553|Action demandée non effectuée : adresse e-mail non autorisé|Cela est en général causé par une adresse e-mail de destination incorrecte. Veuillez vérifier que l'adresse e-mail en question est bien correcte|
 |554|Transaction échouée, "Aucun service SMTP ici")|Il s'agit en général d'un problème de blacklist. Vérifiez si votre adresse IP du serveur de messagerie n'est pas blacklistée ([SpamHaus](https://www.spamhaus.org/lookup/){.external})|
 |555|MAIL FROM / RCPT TO, paramètres non reconnus ou non mis en oeuvre|Le serveur SMTP sortant n'enregistre pas correctement l'adresse e-mail utilisée soit dans vos paramètres "De" ou "A". Veuillez vérifier que les adresses e-mail indiquées sont correctes, et vérifiez également que vous n'avez pas dépassé la limite définie par OVH : 200 mails /heure /compte et 300 mails /heure /ip|
-
-
-## Aller plus loin
-
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
