@@ -10,7 +10,7 @@ order: 4
 La configuration d'un compte Exchange depuis le panneau de configuration peut s'effectuer de deux manières :
 
 - [Configuration automatique d’un compte Exchange depuis le panneau de configuration](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook/#configuration-automatique-dun-compte-exchange-depuis-le-panneau-de-configuration){.external}
-- [Configuration manuelle d’un compte Exchange depuis le panneau de configuration](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook/#configuration-manuelle-dun-compte-exchange-depuis-le-panneau-de-configuration){.external}
+- [Configuration manuelle d’un compte Exchange depuis le panneau de configuration](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook/#configuration-manuelle-dun-compte-exchange-depuis-le-panneau-de-configuration_1){.external}
 
 Vous utilisez Outlook 2016 pour Windows ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook 2016 pour Windows](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook-2016/){.external}
 
