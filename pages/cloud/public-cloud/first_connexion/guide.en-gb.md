@@ -1,25 +1,23 @@
 ---
-title: Logging in to an OVH Public Cloud instance
+title: 'Logging in to an OVH Public Cloud instance'
 slug: first-login
 legacy_guide_number: 1787
-excerpt: Find out how to log in to your OVH Public Cloud instances
-section: Getting started
+excerpt: 'This guide will explain how to log in to your OVH Public Cloud instances using Windows and Linux'
+section: 'Getting started'
 ---
 
-**Last updated 09th March 2018**
+**Last updated 2nd October 2018**
 
 ## Objective
 
-Logging in to your OVH Public Cloud instances is similar to a standard login for a VPS or dedicated server, but each instance has a specific user account.
+Logging in to your OVH Public Cloud instances is similar to a standard login for a VPS or Dedicated Server, but each instance has a specific user account.
 
 **This guide will explain how to log in to your OVH Public Cloud instances using Windows and Linux.**
 
-
 ## Requirements
 
-- You must be logged in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- You need to have created an [OVH Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external}.
-
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* an [OVH Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external} created in your account
 
 ## Instructions
 
@@ -28,7 +26,7 @@ Logging in to your OVH Public Cloud instances is similar to a standard login for
 Run the following SSH command to log in to your OVH Public Cloud instance, replacing ‘user’ as required, and ‘instance_IP’ with your instance’s IP address:
 
 ```sh
-ssh *user*@instance_IP
+ssh user@instance_IP
 ```
 
 The Public Cloud user will be different, depending on which operating system you are using. The table below features a (non-exhaustive) list of users, by operating system:
@@ -52,7 +50,7 @@ The Public Cloud user will be different, depending on which operating system you
 
 > [!primary]
 >
-> By logging in directly, you will have the standard user rights. If you would like to have *superuser* privileges, you will need to use the `sudo` command.
+> By logging in directly, you will have the standard user rights. If you would like to become the root user, you can use the sudo -i or sudo su command.
 >
 
 
@@ -69,14 +67,14 @@ Are you sure you want to continue connecting (yes/no)?`
 
 ### Logging in to a Linux instance using a Windows operating system
 
-To log in to a Linux instance using Windows, you can use a software program like [PuTTY](https://www.putty.org/){.external}, or for the latest Windows 10 releases, you can use [native features](https://docs.microsoft.com/en-us/windows/wsl/about){.external}. You can then follow the same instructions provided above.
+To log in to a Linux instance using Windows, you can use a software program like [PuTTY](https://www.putty.org/){.external}, or for the latest Windows 10 releases, you can use [native features](https://docs.microsoft.com/en-us/windows/wsl/about){.external}. You can then follow the same instructions as above.
 
 
 ### Logging in to a Windows instance
 
 #### Finalise the installation
 
-Once you have created your instance, you will need to finalise something called *sysprep*. To do this, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and launch the VNC console:
+Once you have created your instance, you will need to finalise something called *sysprep*. To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and launch the VNC console:
 
 ![VNC console](images/vnc_console.png)
 
