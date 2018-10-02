@@ -1,8 +1,9 @@
 ---
-title: 'Configurer son compte Exchange sur l''application Courrier pour Windows 10'
+title: 'Configurer son compte Exchange sur Courrier pour Windows 10'
 slug: configuration-courrier-windows-10
 excerpt: 'Apprenez à configurer un compte Exchange sur l''application Courrier pour Windows 10'
-section: 'Configuration client de messagerie Exchange'
+section: 'Configuration sur ordinateur'
+order: 5
 ---
 
 **Dernière mise à jour le 17/05/2018**
@@ -29,7 +30,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 > [!primary]
 >
-> Vous utilisez une version antérieure de Windows ? Consultez notre documentation : [Configurer son adresse e-mail sur l'application Courrier pour Windows 8](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-sous-windows-8/){.external}.
+> Vous utilisez une version antérieure de Windows ? Consultez notre documentation : [Configurer son compte Exchange sur Courrier pour Windows 8](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-sous-windows-8/){.external}.
 >
 
 ## En pratique

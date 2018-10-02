@@ -1,9 +1,10 @@
 ---
-title: Configuration d’un compte Exchange sous Android 5 (lollipop)
+title: Configurer son compte Exchange sur Android 5 Lollipop
 legacy_guide_number: 2022
 slug: exchange-configuration-sous-android-5-lollipop
 excerpt: Retrouvez ici la procedure de configuration d’un compte Exchange sous Android 5 (lollipop)
-section: Configuration smartphone/tablette compatible Exchange
+section: Configuration sur smartphone
+hidden: true
 ---
 
 Avant de réaliser ces manipulations, assurez-vous que le champ SRV de votre nom de domaine est correctement configuré. Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} pour retrouver nos différents guides

@@ -3,7 +3,8 @@ title: Obtenir une licence Outlook pour Exchange
 slug: exchange-licence-outlook-exchange-2013
 legacy_guide_number: 1718
 excerpt: Retrouver ici la procedure pour commander une licence outlook depuis votre plateforme Exchange OVH
-section: Configuration client de messagerie Exchange
+section: Office
+order: 1
 ---
 
 Retrouvez des informations sur la commande et l'installation d'une licence Outlook Exchange 2013 chez OVH.
