@@ -1,8 +1,8 @@
 ---
-title: Mise en place de Veeam Entreprise
-excerpt:
+title: 'Mise en place de Veeam Entreprise'
+excerpt: 'Mise en place de Veeam Entreprise'
 slug: veeam-enterprise
-section: Veeam Backup & Replication
+section: 'Veeam Backup & Replication'
 ---
 
 **Dernière mise à jour le 24/09/2018**
@@ -101,23 +101,23 @@ Lancer la console Veeam.
 
 Sur la console, vous pouvez vérifier que vous êtes en mode **Free Edition** dans le coin en bas à droite.
 
-![](images/veeamBandR_conf_13.png){.thumbnail}
+![](images/veeamBandR_conf_13.PNG){.thumbnail}
 
 Allez dans le menu, puis cliquer sur `Users and Roles`{.action}.
 
-![](images/veeamBandR_conf_14.png){.thumbnail}
+![](images/veeamBandR_conf_14.PNG){.thumbnail}
 
 Dans la nouvelle fenêtre `Security`{.action}, faire `Add...`{.action}.
 
-![](images/veeamBandR_conf_15.png){.thumbnail}
+![](images/veeamBandR_conf_15.PNG){.thumbnail}
 
 Dans la nouvelle fenêtre `Add User`{.action}, saisir le compte de service précédemment créé et sélectionner le rôle **Veeam Backup Administrator** et enfin valider avec `OK`{.action}
 
-![](images/veeamBandR_conf_15.png){.thumbnail}
+![](images/veeamBandR_conf_15.PNG){.thumbnail}
 
 De retour dans la fenêtre **Security**, vous pouvez vérifier que le compte est bien définit.
 
-![](images/veeamBandR_conf_16.png){.thumbnail}
+![](images/veeamBandR_conf_16.PNG){.thumbnail}
 
 #### Enregistrer le serveur Veeam Backup
 
