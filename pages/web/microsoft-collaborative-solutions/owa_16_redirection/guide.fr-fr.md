@@ -3,7 +3,7 @@ title: Mise en place d’une redirection e-mail depuis OWA avec Exchange 2016
 slug: exchange-2016-mise-en-place-dune-redirection-e-mail-depuis-owa
 legacy_guide_number: 1920
 excerpt: Retrouvez ici la procedure de mise en place d’une redirection e-mail depuis OWA
-section: Outlook Web Application (webmail Exchange)
+section: Utilisation d'Outlook Web Application (OWA)
 ---
 
 Voici un guide pour vous aider à mettre en place une redirection e-mail depuis l'interface du Webmail Exchange.

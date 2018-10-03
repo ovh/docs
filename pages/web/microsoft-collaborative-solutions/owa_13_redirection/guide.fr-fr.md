@@ -2,7 +2,7 @@
 title: Mise en place d’une redirection e-mail depuis OWA pour Exchange 2013
 slug: exchange-2013-mise-en-place-dune-redirection-e-mail-depuis-owa
 legacy_guide_number: 1331
-section: Outlook Web Application (webmail Exchange)
+section: Utilisation d'Outlook Web Application (OWA)
 ---
 
 Voici un guide pour vous aider à mettre en place une redirection e-mail depuis l'interface du Webmail Exchange.

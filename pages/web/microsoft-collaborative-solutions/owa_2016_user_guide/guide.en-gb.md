@@ -284,7 +284,7 @@ This button will give you access to the following options:
 
 ![](images/img_2931.jpg){.thumbnail}
 
-## Profile picture
+#### Profile picture
 Click the  "Choose"  button then select the photo on your computer to view your profile.
 
 

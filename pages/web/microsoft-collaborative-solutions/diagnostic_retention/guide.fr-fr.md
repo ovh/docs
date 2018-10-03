@@ -1,12 +1,13 @@
 ---
-title: Comment retrouver des elements supprimes depuis votre compte Exchange
+title: Retrouver des éléments supprimés de votre compte Exchange
 slug: exchange-comment-retrouver-des-elements-supprimes
 legacy_guide_number: 2051
 excerpt: Retrouvez ici la procedure permettant de recuperer des elements supprimes depuis votre compte Exchange
-section: Exchange Divers
+section: Diagnostic
+order: 2
 ---
 
-vous avez supprimé par erreur un ou plusieurs éléments (mail, contact, rendez-vous du calendrier) et vous avez vidé votre corbeille. Il est toujours Possible de les retrouver durant une certaine pèriode avec l'option : Récupérer les éléments supprimés.
+Vous avez supprimé par erreur un ou plusieurs éléments (mail, contact, rendez-vous du calendrier) et vous avez vidé votre corbeille. Il est toujours Possible de les retrouver durant une certaine pèriode avec l'option : Récupérer les éléments supprimés.
 
 
 ## La retention des elements supprimes

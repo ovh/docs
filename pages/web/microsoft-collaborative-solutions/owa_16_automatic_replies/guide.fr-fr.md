@@ -3,7 +3,7 @@ title: 'Exchange 2016 : guide mise en place d’un répondeur sous owa'
 excerpt: guide mise en place d'un répondeur sous owa
 slug: exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa
 legacy_guide_number: g1922
-section: 'Outlook Web Application (webmail Exchange)'
+section: 'Utilisation d'Outlook Web Application (OWA)'
 ---
 
 

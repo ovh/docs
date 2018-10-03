@@ -3,7 +3,7 @@ title: Partager un dossier depuis le webmail OWA via Exchange 2016
 slug: exchange-2016-partager-un-dossier-via-le-webmail-owa
 legacy_guide_number: 1929
 excerpt: Retrouvez ici la procedure de partage d’un dossier depuis votre compte Exchange 2016
-section: Outlook Web Application (webmail Exchange)
+section: Utilisation d'Outlook Web Application (OWA)
 ---
 
 Deux choses sont à réaliser par le premier collaborateur pour partager un dossier. D'abord donner les autorisations de partage sur son compte e-mail. Puis donner les autorisations de partage sur le dossier en question. Le second collaborateur devra, quand à lui, récupérer le dossier en question. Les manipulations se réalisent dans le webmail Exchange
