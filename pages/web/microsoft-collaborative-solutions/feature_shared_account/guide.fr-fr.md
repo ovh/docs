@@ -1,8 +1,9 @@
 ---
-title: Utilisation des comptes partages
+title: Créer et utiliser un compte partagé
 slug: exchange-utilisation-des-comptes-partages
 excerpt: Ajouter et utiliser les comptes partages avec votre offre Exchange.
-section: Fonctionnalités et partage Exchange
+section: Fonctionnalités des comptes Exchange
+order: 5
 ---
 
 Accessible depuis Outlook et OWA (webmail Exchange) grâce à une délégation. Ce type de compte vous permet par exemple de créer une boîte générale à laquelle chaque compte Exchange peut avoir accès. Un compte partagé ne possède pas de mot de passe, il est donc nécessaire de déléguer son accès à un compte standard.
