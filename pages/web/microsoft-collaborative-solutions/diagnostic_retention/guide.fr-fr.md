@@ -1,9 +1,9 @@
 ---
-title: Retrouver des éléments supprimés de votre compte Exchange
+title: Restaurer des éléments supprimés de votre compte Exchange
 slug: exchange-comment-retrouver-des-elements-supprimes
 legacy_guide_number: 2051
 excerpt: Retrouvez ici la procedure permettant de recuperer des elements supprimes depuis votre compte Exchange
-section: Diagnostic
+section: Diagnostic Exchange
 order: 2
 ---
 

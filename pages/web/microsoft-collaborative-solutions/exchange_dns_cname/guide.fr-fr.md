@@ -2,7 +2,7 @@
 title: Créer un champ CNAME à l'ajout d'un domaine associé
 slug: exchange-ajouter-un-champ-de-type-cname
 excerpt: Apprenez pourquoi l'ajout d'un champ CNAME peut être requis et comment en ajouter un chez OVH
-section: Premiers pas
+section: Premiers pas avec Exchange
 order: 5
 ---
 

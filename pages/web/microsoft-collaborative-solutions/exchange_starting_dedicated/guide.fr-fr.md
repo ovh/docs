@@ -3,7 +3,7 @@ title: Premiers pas avec le service Dedicated Exchange
 slug: dedicated-exchange-premiere-configuration-du-service
 legacy_guide_number: 2214
 excerpt: Nous allons voir ensemble les differentes Étapes afin que vos services soient actifs et fonctionnels.
-section: Premiers pas
+section: Premiers pas avec Exchange
 order: 3
 ---
 

@@ -3,7 +3,7 @@ title: Configurer son compte Exchange sur un Windows Phone
 legacy_guide_number: 1280
 slug: exchange-configuration-sous-windows-phone
 excerpt: Retrouvez ici la procedure de configuration d’un compte Exchange sousWindows Phone
-section: Configuration sur smartphone
+section: Configuration Exchange sur smartphone
 order: 4
 ---
 

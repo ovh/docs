@@ -3,7 +3,7 @@ title: Configurer son compte Exchange sur un BlackBerry Z10
 legacy_guide_number: 1391
 slug: exchange-configuration-sous-blackberry-z10-os10
 excerpt: Retrouvez ici les informations pour configurer votre compte Exchange sur BlackBerry
-section: Configuration sur smartphone
+section: Configuration Exchange sur smartphone
 order: 3
 ---
 

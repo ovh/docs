@@ -3,7 +3,7 @@ title: Configurer son compte Exchange sur Android 5 Lollipop
 legacy_guide_number: 2022
 slug: exchange-configuration-sous-android-5-lollipop
 excerpt: Retrouvez ici la procedure de configuration d’un compte Exchange sous Android 5 (lollipop)
-section: Configuration sur smartphone
+section: Configuration Exchange sur smartphone
 hidden: true
 ---
 
