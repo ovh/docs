@@ -1,9 +1,10 @@
 ---
-title: Utilisation des groupes (mailing-list) avec un compte Exchange
+title: Créer un groupe de contacts
 slug: exchange-utilisation-des-groupes-mailing-list
 legacy_guide_number: 1258
 excerpt: Retrouvez ici la mise en place et l’utilisation de groupe via votre compte Exchange
-section: Fonctionnalités et partage Exchange
+section: Fonctionnalités des comptes Exchange
+order: 2
 ---
 
 Le groupe permet à plusieurs utilisateurs Exchange de recevoir les e-mails envoyés à  une adresse unique : l'adresse du groupe. Cette adresse doit être unique et les messages qui y seront envoyés seront transférés à tous les membres du groupe.

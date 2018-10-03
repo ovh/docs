@@ -1,5 +1,5 @@
 ---
-title: Configurer son compte E-mail Pro sur Thunderbird pour Windows
+title: Configurer son compte Exchange sur Thunderbird pour Windows
 slug: exchange-configuration-de-thunderbird
 legacy_guide_number: 1278
 excerpt: Retrouvez ici la procedure d’ajout d’un compte Exchange pour Thunderbird

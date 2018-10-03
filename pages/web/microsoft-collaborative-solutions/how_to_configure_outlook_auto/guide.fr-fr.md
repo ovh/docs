@@ -1,5 +1,5 @@
 ---
-title: Configurer un compte Exchange depuis le panneau de configuration Windows
+title: Configurer son compte Exchange depuis le panneau de configuration Windows
 legacy_guide_number: 1245
 slug: exchange-configuration-automatique-sous-outlook
 excerpt: Retrouvez ici la procedure d’ajout d’un compte Exchange de maniere automatique depuis outlook
@@ -7,12 +7,7 @@ section: Configuration sur ordinateur
 order: 4
 ---
 
-La configuration d'un compte Exchange depuis le panneau de configuration peut s'effectuer de deux manières :
-
-- [Configuration automatique d’un compte Exchange depuis le panneau de configuration](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook/#configuration-automatique-dun-compte-exchange-depuis-le-panneau-de-configuration){.external}
-- [Configuration manuelle d’un compte Exchange depuis le panneau de configuration](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook/#configuration-manuelle-dun-compte-exchange-depuis-le-panneau-de-configuration){.external}
-
-Vous utilisez Outlook 2016 pour Windows ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook 2016 pour Windows](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook-2016/){.external}
+La configuration d'un compte Exchange depuis le panneau de configuration peut s'effectuer de deux manières : automatiquement ou manuellement.
 
 > [!warning]
 >
@@ -21,7 +16,14 @@ Vous utilisez Outlook 2016 pour Windows ? Consultez notre documentation : [Confi
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
 
-## Configuration automatique d’un compte Exchange depuis le panneau de configuration
+Poursuivez la lecture de cette documentation selon la configuration que vous souhaitez réaliser :
+
+- [Configuration automatique d’un compte Exchange depuis le panneau de configuration](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook/#configuration-automatique){.external}
+- [Configuration manuelle d’un compte Exchange depuis le panneau de configuration](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook/#configuration-manuelle){.external}
+
+Vous utilisez Outlook 2016 pour Windows ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook 2016 pour Windows](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook-2016/){.external}
+
+## Configuration automatique
 
 Avant de réaliser ces manipulations, assurez-vous que le champ SRV de votre nom de domaine est correctement configuré. Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} pour retrouver nos différents guides Outlook 2007 n'est pas compatible avec Exchange 2016.
 
@@ -77,7 +79,7 @@ Une première synchronisation sera initiée avec les informations présentes sur
 
 ![emails](images/999.png){.thumbnail}
 
-## Configuration manuelle d’un compte Exchange depuis le panneau de configuration
+## Configuration manuelle
 
 Il est parfois nécessaire de configurer Outlook manuellement soit lorsque le champ SRV n'est pas résolu par votre fournisseur d'accès à Internet, soit si le bureau d'enregistrement de votre domaine ne permet pas l'ajout d'un champ SRV.
 

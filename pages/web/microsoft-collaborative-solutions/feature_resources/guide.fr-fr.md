@@ -1,9 +1,10 @@
 ---
-title: Utilisation des comptes de ressource
+title: Créer et utiliser des comptes de ressource
 slug: exchange-utilisation-des-comptes-de-ressource
 legacy_guide_number: 1325
 excerpt: Ajouter et utiliser les comptes de ressource avec l’offre Exchange.
-section: Fonctionnalités et partage Exchange
+section: Fonctionnalités des comptes Exchange
+order: 4
 ---
 
 Accessible depuis Outlook, la fonction comptes de ressource vous permet de planifier les besoins de vos collaborateurs. Deux types de ressources sont disponibles : "Salle" ou "Équipement".

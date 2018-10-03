@@ -1,9 +1,10 @@
 ---
-title: Ajouter un alias sur un e-mail Exchange depuis le manager
+title: Ajouter un alias sur un compte Exchange
 slug: exchange-ajouter-un-alias-sur-un-e-mail-depuis-le-manager
 legacy_guide_number: 1252
 excerpt: Retrouvez ici la procedure pour ajouter un alias sur un e-mail Exchange depuis le manager
-section: Fonctionnalités et partage Exchange
+section: Fonctionnalités des comptes Exchange
+order: 1
 ---
 
 Voici comment ajouter un alias sur un e-mail avec l'offre Exchange depuis le [Manager](https://www.ovh.com/manager/web/login.html){.external}. Vous devez vous munir de vos identifiants OVH afin de réaliser la manipulation.
