@@ -3,7 +3,7 @@ title: Configuration automatique d’un compte Exchange sous Microsoft Outlook 2
 legacy_guide_number: 1338
 slug: exchange-configuration-automatique-sous-microsoft-outlook-2011-mac
 excerpt: Retrouvez ici la procedure d’installation d’un compte Exchange sous outlook 2011 (Mac)
-section: Configuration sur ordinateur
+section: Configuration Exchange sur ordinateur
 hidden: true
 ---
 

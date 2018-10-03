@@ -3,7 +3,7 @@ title: Configurer son compte Exchange depuis le panneau de configuration Windows
 legacy_guide_number: 1245
 slug: exchange-configuration-automatique-sous-outlook
 excerpt: Retrouvez ici la procedure d’ajout d’un compte Exchange de maniere automatique depuis outlook
-section: Configuration sur ordinateur
+section: Configuration Exchange sur ordinateur
 order: 4
 ---
 

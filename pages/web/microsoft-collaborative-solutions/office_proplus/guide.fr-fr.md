@@ -1,5 +1,5 @@
 ---
-title: Office365 ProPlus &#58; Bureau a distance
+title: Utiliser le bureau à distance avec Office 365 ProPlus
 legacy_guide_number: 2339
 slug: office365-proplus-bureau-a-distance
 excerpt: Comment deployer  Office 365 ProPlus  sur un ordinateur partage en utilisant les services Bureau a distance (RDS) et l'activation d'ordinateurs partages ?

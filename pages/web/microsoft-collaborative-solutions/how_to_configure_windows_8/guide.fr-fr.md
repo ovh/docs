@@ -3,7 +3,7 @@ title: Configurer son compte Exchange sur Courrier pour Windows 8
 legacy_guide_number: 1273
 slug: exchange-configuration-sous-windows-8
 excerpt: Retrouvez ici la procedure de configuration d’un compte Exchange sous Windows 8
-section: Configuration sur ordinateur
+section: Configuration Exchange sur ordinateur
 hidden: true
 ---
 

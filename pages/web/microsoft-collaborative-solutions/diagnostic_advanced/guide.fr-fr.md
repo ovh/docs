@@ -3,7 +3,7 @@ title: 'Réagir en cas d’indisponibilité de vos e-mails'
 slug: exchange-que-verifier-lors-dun-probleme-denvoi-ou-de-reception
 legacy_guide_number: 2277
 excerpt: 'Retrouvez ici les differentes actions possibles suite a un diagnostic Exchange.'
-section: 'Diagnostic'
+section: 'Diagnostic Exchange'
 order: 1
 ---
 

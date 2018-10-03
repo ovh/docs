@@ -2,7 +2,7 @@
 title: Migrer des comptes e-mail via OVH Mail Migrator
 slug: exchange-migration-de-comptes-e-mail-ovh-mail-migrator
 excerpt: Apprenez à migrer vos comptes e-mail vers OVH grâce à notre outil OVH Mail Migrator
-section: Migration
+section: Migration d'un compte Exchange
 order: 2
 ---
 

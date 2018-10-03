@@ -3,7 +3,7 @@ title: Configurer son compte Exchange sur Thunderbird pour Windows
 slug: exchange-configuration-de-thunderbird
 legacy_guide_number: 1278
 excerpt: Retrouvez ici la procedure d’ajout d’un compte Exchange pour Thunderbird
-section: Configuration sur ordinateur
+section: Configuration Exchange sur ordinateur
 order: 6
 ---
 

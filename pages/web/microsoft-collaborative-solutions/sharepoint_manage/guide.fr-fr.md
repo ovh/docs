@@ -1,5 +1,5 @@
 ---
-title: Activation et gestion de votre Sharepoint OVH
+title: Activer et gérer votre Sharepoint OVH
 legacy_guide_number: 2249
 slug: activation-et-gestion-de-votre-sharepoint-ovh
 excerpt: Retrouvez dans ce guide de l’aide pour realiser l’activation d’une plateforme Sharepoint.
