@@ -3,7 +3,7 @@ title: Mise en place d’un repondeur sous OWA
 slug: exchange-mise-en-place-dun-repondeur-sous-owa
 legacy_guide_number: 1569
 excerpt: Realiser la mise en place d’un repondeur depuis l’OWA
-section: Outlook Web Application (webmail Exchange)
+section: Utilisation d'Outlook Web Application (OWA)
 ---
 
 Vous trouverez dans ce guide des informations concernant la mise en place d'un répondeur sous Exchange.

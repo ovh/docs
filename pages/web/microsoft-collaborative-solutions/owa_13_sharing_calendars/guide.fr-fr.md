@@ -3,7 +3,7 @@ title: Partager un calendrier depuis le webmail OWA via Exchange 2013
 slug: exchange-partager-un-calendrier-via-le-webmail-owa
 legacy_guide_number: 1248
 excerpt: Retrouvez ici la procedure pour realiser un partage de calendrier via l’OWA
-section: Outlook Web Application (webmail Exchange)
+section: Utilisation d'Outlook Web Application (OWA)
 ---
 
 Un collaborateur peut partager son calendrier directement depuis [OWA](https://ex.mail.ovh.net/owa){.external}. Il doit définir l'utilisateur qui aura accès au calendrier. Il va devoir ensuite choisir les droits à donner pour cet utilisateur sur son calendrier.

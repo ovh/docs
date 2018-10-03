@@ -3,7 +3,7 @@ title: Consulter son compte Exchange depuis l'interface OWA
 slug: exchange-2016-guide-utilisation-outlook-web-app
 legacy_guide_number: 1918
 excerpt: Retrouvez ici le detail concernant Outlook Web App pour Exchange 2016
-section: Outlook Web Application (webmail Exchange)
+section: Utilisation d'Outlook Web Application (OWA)
 ---
 
 **Qu'est-ce qu'Outlook Web App (OWA) ?**
