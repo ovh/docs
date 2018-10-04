@@ -64,7 +64,7 @@ Modyfikacja wersji PHP za pomocą pliku .htaccess nie jest już możliwa w najno
 
 ## Sprawdź również
 
-[https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/){.external}
+[Zmiana konfiguracji hostingu](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/){.external}
 
 [Konfiguracja pliku .ovhconfig na hostingu WWW](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/){.external}
 
