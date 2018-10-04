@@ -1,8 +1,7 @@
 ---
 title: 'Añadir recursos por horas'
-slug: añadir-recursos-por-horas
+slug: anadir-recursos-por-horas
 excerpt: 'Cómo añadir recursos con facturación por horas'
-legacy_guide_number: '7766721'
 section: 'Funcionalidades de OVH'
 ---
 
