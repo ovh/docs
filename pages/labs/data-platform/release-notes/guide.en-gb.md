@@ -5,8 +5,66 @@ section: 'Release notes'
 ---
 
 This page documents updates to Analytics Data Platform.
+#### ADP v1.0.1 October 5, 2018
+<table class="table-features">
+  <tbody>
+    <tr>
+      <td>
+        <span class="label release success">Feature</span>
+      </td>
+      <td>
+        Ambari is now syncronized with FreeIPA every 2 minute
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="label release success">Feature</span>
+      </td>
+      <td>
+        A progress bar now shows cluster deployment status in Openstack CLI
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="label release success">Feature</span>
+      </td>
+      <td>
+        When cancelling a deployment or on error, all resources are deleted for a complete rollback  
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="label release success">Feature</span>
+      </td>
+      <td>
+        Cluster now have edge nodes for better users work isolation  
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-#### September 15, 2018
+<table class="table-bugfixes">
+  <tbody>
+    <tr>
+      <td>
+        <span class="label bugfix warning">Bugfix</span>
+      </td>
+      <td>
+        Knox Hive API link does not point on LLAP
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="label bugfix warning">Bugfix</span>
+      </td>
+      <td>
+        Knox LogSearch link 404 
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### ADP v0.4.0 September 15, 2018
 <table class="table-features">
   <tbody>
     <tr>
@@ -30,7 +88,7 @@ This page documents updates to Analytics Data Platform.
 </table>
 
 
-#### September 1, 2018
+#### ADP v0.3.0 September 1, 2018
 
 <table class="table-features">
   <tbody>
@@ -88,6 +146,6 @@ This page documents updates to Analytics Data Platform.
 
 ___
 
-#### July 1, 2018
+#### ADP v0.0.1 July 1, 2018
 
 First release of OVH Analytics Data Platform
