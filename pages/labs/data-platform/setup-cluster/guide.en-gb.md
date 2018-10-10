@@ -20,24 +20,21 @@ please see [ section about vRack](../vrack/guide.en-gb.md).
 In this section you deploy a new Data Platform running on OVH Public
 Cloud instances:
 
-1.  Login to you OVH Manager
-
-<a href="https://www.ovh.com/manager/cloud/index.html" class="button">Go to OVH Manager</a>
-
+1.  Login to your [OVH Manager](https://www.ovh.com/manager/cloud/index.html)
 2.  In the manager select *Order* > *Cloud Project*
 3.  Choose a project name in which your cluster will run and create the project
 4.  Select your project in the *sidebar* > *Infrastructure*
 5.  Open the *OpenStack Client* window in the bottom right
-![Openstack client](images/manager_01.png)
-6.  Launch the Analytics CLI by typing `bigdata-platform-cli`
 ![Analytics CLI](images/manager_02.png)
+6.  Launch the Analytics CLI by typing `bigdata-platform-cli`
+![Openstack client](images/manager_01.png)
 7.  Launch a cluster deployment by typing ``deploy``
 ![Big Data Platform Deployment](images/manager_03.png)
 8.  Follow the on-screen instructions
 9.  Save your master password to a secure place, you will need it to connect to your cluster
 10. Congratulations, your cluster is now deploying! It should take less than 1 hour to complete.
 
-### Connect to your cluster
+## Connect to your cluster
 
 Each OVH Analytics Data Platform instance is installed with Apache
 Ambari, an easy-to-use web UI to monitor and configure your cluster.
