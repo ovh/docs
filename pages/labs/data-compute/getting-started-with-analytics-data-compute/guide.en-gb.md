@@ -3,7 +3,7 @@ title: Getting started with OVH Analytics Data Compute
 excerpt: Spark
 section: Getting started
 ---
-# OVH Analytics Data Compute
+## OVH Analytics Data Compute
 
 Welcome to the getting started guide of OVH Analytics Data Compute. This guide will help you to 
 understand the core concepts behind the Analytics Data Compute and how to run your first Spark 
@@ -36,15 +36,15 @@ finishing the job, so the security and privacy of the user's data would be highl
 In the command line options, users can choose which version of Spark to use and also they can have 
 different formats and sources of data for input and output.
 
-# Getting started
+## Getting started
 
-## Create OVH Account
+### Create OVH Account
 
 Before starting to use the Analytics Data Compute you need to make sure that you have an OVH.com account.
 
 Go to [ovh.com](https://www.ovh.com/manager/web/login/) and select "Create Account".
 
-## Generate Openstack Token
+### Generate Openstack Token
 
 For using Analytics Data Compute you need to generate an Openstack token. Analytics Data Compute 
 will use this token to generate the cluster inside the project of user. You can generate the token 
@@ -52,7 +52,7 @@ and store it in an environment variable like TOKEN.
 
 The Openstack command for generating token: 
 
-### Prerequisite
+#### Prerequisite
 ```
 $ pip install python-openstackclient
 ```
@@ -69,12 +69,12 @@ $ export TOKEN=<paste the token here>
 You can see the openstack commandline installation documentation in 
 [openstack](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html) web page. 
 
-## Install the application
+### Install the application
 
 Before installing the application, you need to add the OVH Dataconvergence repository to your 
 system and then install ovh-spark-submit package. 
 
-### For Debian/Ubuntu linux: 
+#### For Debian/Ubuntu linux: 
 
 1. Run this command to add dataconvergence repository to your system: 
 ```
@@ -90,7 +90,7 @@ $ sudo apt update
 $ sudo apt install ovh-spark-submit
 ```
 
-### For CentOS linux: 
+#### For CentOS linux: 
 
 1. Create dataconvergence.repo in /etc/yum.repos.d/ and add this text to the file:
 ```
@@ -106,7 +106,7 @@ name = data convergence repo
 $ sudo yum install ovh-spark-submit
 ```
 
-## Example 
+### Example 
 
 In this example we use the sample jar file from official Spark package called: spark-examples_2.11-2.3.1.jar 
 that you can download from official [Apache Spark](http://spark.apache.org/) version 2.3.1
