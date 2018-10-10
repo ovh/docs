@@ -1,6 +1,6 @@
 ---
 title: 'OVH:n verkkotunnuksen nimipalvelinten personointi'
-slug: glue-registry
+slug: glue_registry
 excerpt: 'Opi personoimaan OVH:n verkkotunnuksesi nimipalvelimia'
 section: 'DNS ja DNS-alue'
 order: 7
