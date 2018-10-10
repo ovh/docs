@@ -29,12 +29,14 @@ W związku z faktem, że niektóre funkcjonalności mogą zniknąć w kolejnych 
 
 OVH zapewnia instalację najnowszych wersji PHP na swoich serwerach, jednak to klient, jako webmaster, zobowiązany jest do sprawdzenia, czy jego strona WWW jest aktualna i kompatybilna z najnowszymi wersjami PHP. W zależności od rodzaju Twojej strony WWW, istnieją dwie metody weryfikacji jej kompatybilności:
 
-1. **Używasz strony zbudowanej w oparciu o Content Management System (CMS)**, np. WordPress lub Joomla! : 
+**Używasz strony zbudowanej w oparciu o Content Management System (CMS)**, np. WordPress lub Joomla! : 
+
 - skorzystaj z oficjalnej dokumentacji stworzonej przez producenta używanego przez Ciebie CMS; 
 - uzyskaj informacje dotyczące wymagań technicznych niezbędnych do prawidłowego działania Twojego CMS oraz instrukcję przeprowadzenia jego aktualizacji;
 - jeśli jest to konieczne, zaktualizuj CMS i upewnij się, czy nowa wersja jest kompatybilna z hostingiem OVH.
 
-2. **Używasz strony zbudowanej w oparciu o spersonalizowane rozwiązanie**: 
+**Używasz strony zbudowanej w oparciu o spersonalizowane rozwiązanie**: 
+
 - skontaktuj się z webmasterem, który zbudował stronę;
 - znajdź więcej informacji o migracji do nowych wersji w oficjalnej dokumentacji PHP dostępnej pod tym linkiem: <http://php.net/manual/en/appendices.php>;
 - jeśli jest to konieczne, zaktualizuj kod Twojej strony WWW i upewnij się, czy jest kompatybilny z hostingiem OVH.

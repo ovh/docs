@@ -29,12 +29,14 @@ Debido a que las nuevas versiones podrían no incluir ciertas funcionalidades, *
 
 OVH se encarga de instalar las últimas versiones de PHP en sus servidores. Sin embargo, usted deberá asegurarse de que su sitio web está actualizado y es compatible con las últimas versiones de PHP. Existen dos formas de hacerlo, en función del sitio web:
 
-**Si se trata de un sitio web basado en un sistema de gestión de contenidos (CMS, de <i>content management system</i>), como WordPress o Joomla!:** 
+**Si se trata de un sitio web basado en un sistema de gestión de contenidos (CMS, de *content management system*), como WordPress o Joomla!:** 
+
 - Consulte la documentación oficial del CMS. 
 - Compruebe los requisitos técnicos imprescindibles para que funcione el CMS, así como las operaciones necesarias para actualizarlo.
 - Si necesita actualizar su CMS, asegúrese de que la nueva versión es compatible con su alojamiento web de OVH.
 
 **Si el sitio web está basado en una solución personalizada:** 
+
 - Contacte con el desarrollador que haya creado el sitio web.
 - Si desea más información sobre las actualizaciones de versión, consulte la documentación oficial de PHP en el siguiente enlace: <http://php.net/manual/en/appendices.php>.
 - Si necesita actualizar el código del sitio web, asegúrese de que la nueva versión es compatible con su alojamiento web de OVH.

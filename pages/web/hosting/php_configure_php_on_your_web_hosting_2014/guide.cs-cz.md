@@ -29,12 +29,13 @@ V současné době existuje několik verzí programovacího jazyka PHP.  Nabídk
 
 Podobně, jako se společnost OVH stará o instalaci nejnovějších verzí programovacího jazyka PHP na svých serverech, je úkolem webmastera zajistit kompatibilitu hostovaných stránek s těmito verzemi. V závislosti na typu hostovaných stránek existují dva způsoby, jak toho dosáhnout:
 
-1. **Webové stránky vytvořené pomocí redakčního systému** (WordPress, Joomla!, PrestaShop a další): 
+**Webové stránky vytvořené pomocí redakčního systému** (WordPress, Joomla!, PrestaShop a další):
+
 - Obraťte se na oficiální dokumentaci vydavatele softwaru, v níž naleznete veškeré informace o fungování Vašeho redakčního systému a postupu pro jeho aktualizaci. 
 - V případě nutnosti aktualizujte svůj redakční systém na nejnovější verzi.
 
+**Webové stránky založené na individuálním řešení**: 
 
-2. **Webové stránky založené na individuálním řešení**: 
 - Spojte se s webmasterem spravujícím Vaše stránky.
 - Detailní informace týkající se procesu pro změnu verze PHP naleznete v oficiální dokumentaci na následujícím odkazu: <http://php.net/manual/en/appendices.php>.
 - V případě nutnosti aktualizujte zdrojový kód svých stránek tak, aby byl kompatibilní s příslušným webhostingovým řešením OVH.
