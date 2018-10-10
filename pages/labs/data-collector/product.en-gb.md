@@ -1,5 +1,6 @@
 ---
-title: Data Collector
+title: Data-Collector
+published: true
 slug: data-collector
-hidden: true
 ---
+
