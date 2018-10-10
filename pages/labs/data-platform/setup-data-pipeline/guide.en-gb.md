@@ -223,27 +223,20 @@ the next part of the code shows you how you can parallelize some
 treatments on huge files and put the result in HDFS.
 
 ```scala
-    %spark
-    import org.apache.commons.io.IOUtils
-    import java.net.URL
-    import javanio.charset.Charset
+    %livy2.spark
+    val bankText = sc.textFile("hdfs:/tmp/banking.csv")
 
-    // Zeppelin creates and injects sc (SparkContext) and sqlContext (HiveContext or SqlContext)
-    // So you don't need create them manually
+    case class Bank(age: String, job: String, marital: String, education: String, balance: String)
 
-    val bankText = sc.textFile("hdfs:/tmp/bank.csv")
-
-    case class Bank(age: String, job; String, marital: String, education: String, balance: String)
-
-    val bank = bankText.map(s => s.split(";")).filter(s => s(0) != "\"age\"").map(
+    val bank = bankText.map(s => s.split(",")).filter(s => s(0) != "age").map(
         s => Bank(s(0),
                 s(1).replaceAll("\"", ""),
                 s(2).replaceAll("\"", ""),
                 s(3).replaceAll("\"", ""),
                 s(5).replaceAll("\"", "")
-            )
-    ).toDF()
-    bank.map(x => x.mkString("|")).saveAsTextFile("/tmp/file.csv")
+            )).toDF()
+
+    bank.map(x => x.mkString("|")).rdd.saveAsTextFile("/tmp/file.csv")
 ```
 
 We can now run this job by clicking on the **Play** button. We are able
