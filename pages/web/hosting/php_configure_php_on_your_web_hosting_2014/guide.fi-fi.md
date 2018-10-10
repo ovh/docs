@@ -29,12 +29,14 @@ Koska tiettyjä ominaisuuksia ei voida enää ylläpitää uusien versioiden my�
 
 Vaikka OVH hallinnoi viimeisimpien PHP-versioiden asennuksia palvelimillaan, on sinun tehtäväsi webmasterin ominaisuudessa varmistaa, että sivusi on aina päivitetty ja siis yhteensopiva uusimpien PHP-versioiden kanssa. Varmistamiseen on olemassa kaksi mahdollisuutta käyttämäsi verkkosivun mukaan.
 
-1. **Käytän avaimet-käteen-sivua, kuten järjestelmänhallintaohjelmaa (Content Management System tai CMS) kuten WordPress tai Joomla!**: 
+**Käytän avaimet-käteen-sivua, kuten järjestelmänhallintaohjelmaa (Content Management System tai CMS) kuten WordPress tai Joomla!**: 
+
 - katso käyttämäsi CMS:n tekijän virallinen dokumentaatio 
 - hae tiedot koskien CMS:äsi toiminnan kannalta välttämättömiä teknisiä edellytyksiä sekä menettelytapa ohjelman päivittämiseksi
 - päivitä tarvittaessa CMS:äsi varmistuen sen yhteensopivuudesta OVH:n webhotellin kanssa.
 
-2. **Käytän personoituun ratkaisuun perustuvaa sivua**: 
+**Käytän personoituun ratkaisuun perustuvaa sivua**: 
+
 - ota yhteyttä verkkosivusi tehneeseen webmasteriin
 - katso apua virallisesta PHP-dokumentaatiosta, jossa on lisätietoa versioiden migraatioista: <http://php.net/manual/en/appendices.php>
 - päivitä tarvittaessa verkkosivusi koodi varmistuen sen yhteensopivuudesta OVH:n webhotellin kanssa.

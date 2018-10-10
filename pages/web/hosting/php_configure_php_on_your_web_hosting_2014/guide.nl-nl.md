@@ -29,13 +29,15 @@ Aangezien bepaalde functies niet langer kunnen worden onderhouden met nieuwe ver
 
 Hoewel OVH verantwoordelijk is voor het installeren van de nieuwste PHP-versies op zijn servers, is het uw verantwoordelijkheid als webmaster om ervoor te zorgen dat uw website altijd up-to-date is en compatibel is met de nieuwste PHP-versies. Er zijn twee opties om dit na te gaan, afhankelijk van de website die u gebruikt.
 
-1. **Ik gebruik een gebruiksklare website, bijvoorbeeld een Content Management Systeem (CMS) zoals WordPress of Joomla!:** 
+**Ik gebruik een gebruiksklare website, bijvoorbeeld een Content Management Systeem (CMS) zoals WordPress of Joomla!:** 
+
 - Volg de officiële documentatie van uw CMS-uitgever. 
 - Daar zult u informatie vinden over de benodigde technische vereisten voor een goede werking van uw CMS, evenals de procedure voor het updaten ervan.
 - Werk zo nodig uw CMS bij en zorg ervoor dat de nieuwe versie compatibel is met uw OVH webhosting.
 
 
-2. **Ik gebruik een website op basis van een aangepaste oplossing:** 
+**Ik gebruik een website op basis van een aangepaste oplossing:** 
+
 - Neem contact op met de webmaster die de website heeft gemaakt.
 - Volg de officiële PHP-documentatie. Daar vindt u meer informatie over de migraties naar andere PHP-versies: <http://php.net/manual/en/appendices.php>.
 - Werk zo nodig de code van uw website bij en zorg ervoor dat deze compatibel is met uw OVH webhosting.
