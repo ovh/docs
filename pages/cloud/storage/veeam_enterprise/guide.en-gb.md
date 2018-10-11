@@ -1,7 +1,7 @@
 ---
-title: 'Veeam Enterprise setup'
-excerpt: 'Veeam Enterprise setup'
-slug: veeam-enterprise
+title: 'Setting up Veeam Backup & Replication'
+slug: veeam-backup-replication
+excerpt: 'Discover how to install a Veeam Backup & Replication server with Veeam Enterprise'
 section: 'Veeam Backup & Replication'
 ---
 
