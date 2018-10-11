@@ -15,8 +15,8 @@ Implement a **Veeam Backup & Replication** server using the **Veeam Enterprise**
 
 ## Requirements
 
- * Have a Veeam Enterprise offer
- * Have a Windows Server 2012 or 2016 machine
+* Have a Veeam Enterprise offer
+* Have a Windows Server 2012 or 2016 machine
 
 ## Instructions
 
@@ -89,8 +89,8 @@ New-LocalUser "OVHVeeamEnterprise" -Password (ConvertTo-SecureString -AsPlainTex
 ```
 Note that the account name and password is an example and should be replaced:
 
- * Account Name : OVHVeeamEnterprise
- * Password: P@ssword01
+* Account Name : OVHVeeamEnterprise
+* Password: P@ssword01
 
 #### Define service account authorisations
 
@@ -100,7 +100,24 @@ Launch the Veeam console.
 
 On the console, you can check that you are in **Free Edition** mode in the lower right corner.
 
-![](images/veeamBandR_conf_13.PNG){.thumbnail}
+
+![](images/veeamBandR_conf_1.png){.thumbnail}
+
+Go to the menu, then click on `Users and Roles`{.action}.
+
+![](images/veeamBandR_conf_2.png){.thumbnail}
+
+In the new window `Security`{.action}, do `Add...`{.action}.
+
+![](images/veeamBandR_conf_3.png){.thumbnail}
+
+In the new window `Add User`{.action}, enter the service account previously created and select the role **Veeam Backup Administrator** and finally validate with `OK`{.action}
+
+![](images/veeamBandR_conf_4.png){.thumbnail}
+
+Back in the **Security** window, you can check that the account is well defined.
+
+![](images/veeamBandR_conf_5.png){.thumbnail}
 
 Go to the menu, then click on `Users and Roles`{.action}.
 
@@ -118,9 +135,33 @@ Back in the **Security** window, you can check that the account is well defined.
 
 ![](images/veeamBandR_conf_16.PNG){.thumbnail}
 
-#### Register the Veeam Backup server
 
-This step is currently only done through the OVH API.
+### Register the Veeam Backup server
+
+## With OVH Manager
+
+In the manager, open the Cloud universe then the section `Plateforms and services`{.action}, select your service **backupserverenterprise**.
+
+![](images/backupEnterpriseServer_manager_01.png){.thumbnail}
+
+From the main page of the service, choose `Enable the license`{.action}.
+
+![](images/backupEnterpriseServer_manager_02.png){.thumbnail}
+
+In the new window, enter the following information:
+
+* The public IP address by which your **Veeam Backup & Replication** server can be contacted.
+* The port of your veeam backup (usually **9392/TCP**)
+* The login of the service account previously created
+* The password of the service account
+
+Then validate with `OK`{.action}.
+
+When the activation is done, you will find the main information on the service page.
+
+![](images/backupEnterpriseServer_manager_03.png){.thumbnail}
+
+## With OVH API
 
 Get your serviceName :
 
@@ -138,10 +179,10 @@ Then do the registration :
 
 You must provide the following information:
 
- * The public IP address by which your **Veeam Backup & Replication** server can be contacted.
- * The port of your veeam backup (usually **9392/TCP**)
- * The login of the service account previously created
- * The password of the service account
+* The public IP address by which your **Veeam Backup & Replication** server can be contacted.
+* The port of your veeam backup (usually **9392/TCP**)
+* The login of the service account previously created
+* The password of the service account
 
 You can obtain the public IP address used by Veeam Enterprise to contact your server **Veeam Backup & Replication** via :
 
@@ -150,7 +191,7 @@ You can obtain the public IP address used by Veeam Enterprise to contact your se
 > @api {GET} /veeam/veeamEnterprise/{serviceName}
 >
 
-#### Check the registration
+### Check the registration
 
 Launch the Veeam console.
 
@@ -158,11 +199,11 @@ Launch the Veeam console.
 
 Go to the menu, then click on `Licence`{.action}
 
-![](images/VeeamBR_lic_1.png){.thumbnail}
+![](images/veeamBandR_lic_1.png){.thumbnail}
 
 In the licence information, you can check that this is the OVH licence.
 
-![](images/VeeamBR_lic_2.png){.thumbnail}
+![](images/veeamBandR_lic_2.png){.thumbnail}
 
 ## Go further
 
