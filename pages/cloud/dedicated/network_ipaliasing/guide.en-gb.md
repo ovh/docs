@@ -5,7 +5,7 @@ excerpt: 'This guide explains how to add failover IPs to your configuration'
 section: 'Network Management'
 ---
 
-**Last updated 7th September 2018**
+**Last updated 12th October 2018**
 
 ## Objective
 
@@ -100,7 +100,7 @@ You now need to restart your interface:
 
 ### Debian 9+, Ubuntu 17+, Fedora 26+ and Arch Linux
 
-On these distributions, the naming of interfaces as eth0, eth1 (and so on) is abolished, and we will now use `systemd-network` more generally.
+On these distributions, the naming of interfaces as eth0, eth1 (and so on) is abolished. We will therefore use `systemd-network` more generally.
 
 #### Step 1: Create the source file
 
@@ -197,7 +197,7 @@ All you need to do is add a line break after the netmask **255.255.255.0** and a
 editor /etc/conf.d/net
 ```
 
-Therefore, you need to add the following:
+You therefore need to add the following:
 
 ```bash
 config_eth0=( "SERVER_IP netmask 255.255.255.0" "IP_FAILOVER netmask 255.255.255.255 brd IP_FAILOVER" )
@@ -239,7 +239,7 @@ cp /etc/sysconfig/network/ifcfg-ens32 /etc/sysconfig/network/ifcfg-ens32.bak
 
 #### Step 2: Edit the source file
 
-You then need to edit the `/etc/sysconfig/network/ifcfg-ens32` file as follows:
+You then need to edit the `/etc/sysconfig/network/ifcfg-ens32` file, as follows:
 
 ```bash
 IPADDR_1=IP_FAILOVER
@@ -320,11 +320,19 @@ network:
 
 Save and close the file. You can test the configuration with the following command:
 
+```sh
+# netplan try
+```
+
 Next, run the following commands to apply the configuration:
+
+```sh
+# netplan apply
+```
 
 Repeat this procedure for each failover IP address.
 
-### Windows Server
+### Windows Servers
 
 Windows servers are often DHCP-enabled in the network configuration. If you have already set up a failover IP or switched your configuration to a fixed IP, go directly to the next step.
 
@@ -354,7 +362,7 @@ In the commands below, you need to replace:
 |Command|Value|
 |---|---|
 |NETWORK_ADAPTER| Name of the network adapter (in our example: Local Area Connection)|
-|IP_ADDRESS| server IP address (in our example: 94.23.229.151)|
+|IP_ADDRESS| Server IP address (in our example: 94.23.229.151)|
 |SUBNET_MASK| Subnet mask (in our example: 255.255.255.0)|
 |GATEWAY| Default gateway (in our example: 94.23.229.254)|
 |IP_ADDRESS_FAILOVER| Address of failover IP you want to add|
@@ -464,7 +472,7 @@ editor /etc/rc.conf
 
 Then add this line at the end of the file: `ifconfig_INTERFACE_alias0="inet IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER"`.
 
-Replace **INTERFACE** and **IP_FAILOVER** respectively with the name of your interface (identified in the first step) and your failover IP. Here is an example:
+Replace **INTERFACE** and **IP_FAILOVER** with the name of your interface (identified in the first step) and your failover IP, respectively. Here is an example:
 
 
 ```bash
