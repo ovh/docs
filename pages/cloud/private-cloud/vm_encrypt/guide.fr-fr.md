@@ -5,7 +5,7 @@ slug: vm-encrypt
 section: 'Fonctionnalités VMware vSphere'
 ---
 
-**Dernière mise à jour le 11/10/2018**
+**Dernière mise à jour le 11 octobre 2018**
 
 ## Objectif
 
