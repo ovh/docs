@@ -1,10 +1,11 @@
 ---
 title: 'Enabling Virtual Machine Encryption (VM Encrypt)'
+excerpt: 'Learn how to enable VM encryption'
 slug: vm-encrypt
 section: 'VMware vSphere features'
 ---
 
-**Last updated 10/11/2018**
+**Last updated Oct. 11th 2018**
 
 ## Objective
 
