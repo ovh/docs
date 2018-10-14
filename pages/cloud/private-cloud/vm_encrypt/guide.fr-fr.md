@@ -9,7 +9,7 @@ section: 'Fonctionnalités VMware vSphere'
 
 ## Objectif
 
-Ce guide à pour objectif expliquer les détails de la mise en oeuvre de VMencrypt sur le Private Cloud OVH, en utilisant une stratégie de stockage utilisant un KMS (Key Management Server) externe.
+Ce guide à pour objectif d'expliquer les détails de la mise en oeuvre de VMencrypt sur le Private Cloud OVH, en utilisant une stratégie de stockage utilisant un KMS (Key Management Server) externe.
 
 ## Prérequis
 
@@ -22,7 +22,7 @@ Ce guide à pour objectif expliquer les détails de la mise en oeuvre de VMencry
 
 ### Récupérer l'empreinte du certificat du serveur de clé (KMS)
 
-Suivant votre KMS pour pouvez vous connectez au serveur à l'aide du navigateur et naviguez jusqu'à → `View Certificate`{.action} → `Thumbprint`{.action}
+Suivant votre KMS pour pouvez vous connecter au serveur à l'aide du navigateur et naviguer jusqu'à → `View Certificate`{.action} → `Thumbprint`{.action}
 
 ![](images/certificate_thumbprints_01.png){.thumbnail}
 
@@ -31,19 +31,23 @@ Suivant votre KMS pour pouvez vous connectez au serveur à l'aide du navigateur 
 Extraire la valeur de ligne `SHA1 Fingerprint`{.action}
 
 Autre méthode avec OpenSSL :
+
 ```shell
 openssl s_client -connect 192.0.2.1:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 ```
 
-Ici il s'agit de la valeur à droite du signe égale :
+Ici il s'agit de la valeur à droite du signe "égal" :
 
+
+```shell
 > SHA1 Fingerprint=7B:D9:46:BE:0C:1E:B0:27:CE:33:B5:2E:22:0F:00:84:F9:18:C6:61
+```
 
 ### Enregistrer votre serveur de clé (KMS)
 
-#### Avec le Manager OVH
+#### Au sein de l'espace client OVH
 
-Dans le manager, ouvrir l'univers Dedicated puis dans la section `Private Cloud`{.action}, sélectionner votre service **PCC**.
+Dans l'espace client, ouvrir l'univers Dedicated puis dans la section `Private Cloud`{.action}, sélectionner votre service **PCC**.
 
 Depuis la page principale du service, choisir `Security`{.action}.
 
@@ -65,7 +69,7 @@ Puis valider avec `Next`{.action}
 
 ![](images/vm-encrypt_manager_04.png){.thumbnail}
 
-Une dernière fenêtre, affiche la progression de la tâche.
+Une dernière fenêtre affiche la progression de la tâche.
 
 #### Avec l'API OVH
 
@@ -78,16 +82,16 @@ Récupérer votre serviceName :
 > @api {GET} /dedicatedCloud
 >
 
-Vérifier que le chiffrement n'est pas encore activer :
+Vérifier que le chiffrement n'est pas encore activé :
 
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/vmEncryption
 >
 
-> {
+```shell
 >     "state": "disabled"
-> }
+```
 
 
 Puis effectuer l'enregistrement du KMS :
@@ -99,27 +103,27 @@ Puis effectuer l'enregistrement du KMS :
 
 Vous devez vous munir des informations suivantes :
 
-* le serviceName précédament récupérer
+* le serviceName précédemment récupéré
 * l'addresse IP du KMS
-* le SSLThumbprint du KMS Server précédament récupérer
+* le SSLThumbprint du KMS Server précédemment récupéré
 
 ### Ajouter votre serveur de clé (KMS) sur le vCenter
 
 #### A propos de cette partie
 
-**vCenter Server crée un cluster KMS lorsque vous ajoutez la première instance KMS.**
+**vCenter Server va créer un cluster KMS lorsque vous ajoutez la première instance KMS.**
 
-* Lorsque vous ajoutez le KMS, vous êtes invité à définir ce cluster par défaut. Vous pouvez modifier ultérieurement le cluster par défaut.
+* Lorsque vous ajoutez le KMS, vous êtes invité à définir ce cluster par défaut. Vous pouvez le modifier ultérieurement.
 * Une fois que le vCenter a créé le premier cluster, vous pouvez ajouter des instances KMS du même fournisseur au cluster.
 * Vous pouvez configurer le cluster avec une seule instance KMS.
 * Si votre environnement prend en charge les solutions KMS de différents fournisseurs, vous pouvez ajouter plusieurs clusters KMS.
-* Si votre environnement comprend plusieurs clusters KMS et que vous supprimez le cluster par défaut, vous devez en définir un autre. Voir définir le cluster KMS par défaut.
+* Si votre environnement comprend plusieurs clusters KMS et que vous supprimez le cluster par défaut, vous devez en définir un autre. Voir "définir le cluster KMS par défaut".
 
 #### Procédure
 
 - Connectez-vous au Private Cloud avec le client Web vSphere. 
 - Parcourez la liste d'inventaire et sélectionnez le vCenter.
-- Cliquer sur 'Gérer" puis "Key Management Servers".
+- Cliquez sur 'Gérer" puis "Key Management Servers".
 - Cliquez sur Ajouter KMS, spécifiez les informations KMS dans l'assistant, puis cliquez sur OK.
 - Faites confiance au certificat et cliquez sur Trust.
 
@@ -148,7 +152,7 @@ Depuis le vCenter où nous avons ajouté le serveur KMS
 
 > [!warning]
 >
-> Assurez-vous que le certificat n'est pas chiffré avec un mot de passe lorsque nous téléchargeons le certificat à partir du KMS. Exemple : Si vous créez un utilisateur, créez un utilisateur sans mot de passe et téléchargez le certificat pour l'utilisateur KMS et téléchargez le certificat.
+> Assurez-vous que le certificat n'est pas chiffré avec un mot de passe lorsque vous téléchargez le certificat à partir du KMS. Exemple : Si vous créez un utilisateur, créez un utilisateur sans mot de passe et téléchargez le certificat pour l'utilisateur KMS et téléchargez le certificat.
 > 
 
 ![](images/vm-encrypt_02.png){.thumbnail}
