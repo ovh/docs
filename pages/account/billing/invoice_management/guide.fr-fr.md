@@ -2,7 +2,7 @@
 title: 'Gérer ses factures OVH'
 slug: gerer-factures-ovh
 excerpt: 'Découvrez comment gérer vos factures et les paiements liés à celles-ci'
-section: Factures
+section: 'Gérer ses commandes, factures et services'
 ---
 
 **Dernière mise à jour le 17/07/2018**
