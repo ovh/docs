@@ -1,110 +1,164 @@
 ---
-title: Demander la portabilité de mon numéro
+title: 'Demander et suivre une portabilité de numéro'
 slug: demander-la-portabilite-de-mon-numero
-section: Numéros ou alias
+excerpt: 'Apprenez à porter un ou plusieurs numéros chez OVH et à suivre l''avancement du processus'
+section: 'Numéros ou alias'
 ---
 
-### Préambule {#préambule}
+**Dernière mise à jour le 15/10/2018**
 
-La portabilité du numéro est un service proposé dans nos offres de téléphonie. Il vous permet de conserver le numéro de téléphone que vous aviez chez votre ancien opérateur. Cette opération est gratuite pour les numéros géographiques (01 à 05) ainsi que les numéros non géographiques (09).
+## Objectif
 
-Le délai de réalisation est de 7 jours ouvrés pour un particulier et de 10 jours ouvrés pour un professionnel à compter de la date de validation de votre mandat.
+La portabilité permet à un abonné de conserver son numéro de téléphone lorsqu'il souhaite changer d'opérateur. Toute demande doit alors suivre un processus comportant plusieurs étapes.
 
+**Apprenez à porter un ou plusieurs numéros chez OVH et à suivre l'avancement du processus.**
 
-Niveau : Débutant
+## Prérequis
 
-------------------------------------------------------------------------
+- Disposer d'au moins un numéro de téléphone chez un autre opérateur, dont le pays est compatible avec [la portabilité chez OVH](https://www.ovhtelecom.fr/telephonie/services_inclus/portabilite_numero.xml){.external}.
+- Pour les numéros géographiques, justifier d'une adresse postale correspondant à la zone du ou des numéros concernés.
+- Disposer d'une offre [VoIP OVH](https://www.ovhtelecom.fr/telephonie/){.external}.
+- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
 
-### Effectuer la demande de portabilité via l'Espace Client {#effectuer-la-demande-de-portabilité-via-lespace-client}
+## En pratique
 
-Lorsque vous lancez une demande de portabilité, il faut que votre numéro soit **toujours actif** chez votre ancien opérateur. **Vous ne devez pas demander la résiliation** de votre ligne avant la réalisation de la portabilité chez OVH.
+### Étape 1 : préparer sa demande de portabilité
 
-Pour demander la portabilité de votre numéro :
+Selon le type du ou des numéros que vous souhaitez porter chez OVH, le processus à suivre sera différent. Cela affectera aussi le délai nécessaire à sa complétion. Afin que votre demande de portabilité arrive au plus vite à son terme, nous vous invitons à prendre en considération les recommandations suivantes :
 
--   Connectez-vous à votre Espace Client OVH : <https://www.ovhtelecom.fr/espaceclient/>
--   Cliquez sur le lien "**Administrez vos services de téléphonie via l'ancienne interface.**"
--   Cliquez sur l'onglet "**Numéro**".
--   Cliquez sur le bouton "**Ajouter**".
+- assurez-vous de connaître les informations du titulaire actuel de la ou des lignes concernées (comme son nom et prénom, son adresse, etc.) ;
 
-![](images/2015-03-02-155153_599x385_scrot.png){.thumbnail}
+- même si une portabilité est possible jusqu'à 40 jours après la résiliation d'un numéro, entamez de préférence cette démarche lorsque le ou les numéros concernés sont toujours actifs et n'en demandez pas la résiliation durant le processus ;
 
--   Cliquez sur le lien "**Demander la portabilité de numéro(s) chez OVH**" pour accéder au formulaire de dépôt.
+- assurez-vous de connaître le type du ou des numéros que vous souhaitez porter : celui-ci déterminera le processus à effectuer (si vous avez un doute, votre opérateur actuel peut vous confirmer le type de numéro que vous possédez).
 
-![](images/2015-03-02-155517_693x642_scrot.png){.thumbnail}
+|Type de numéro|Description|
+|---|---|
+|Numéro isolé|Il s'agit d'un numéro ne faisant pas partie d'une tranche de numéros (comme celui d'une ligne ADSL ou d'une ligne téléphonique seule). Un RIO (pour relevé d’identité opérateur) est alors nécessaire pour le porter. Vous pouvez l'obtenir en appelant le 3179 depuis la ligne concernée ou en contactant votre opérateur actuel.|
+|Tranche de numéros (SDA)|Comme son nom l'indique, il s'agit d'une tranche de plusieurs numéros. Il est possible de porter tout ou partie des numéros de cette tranche. Un mandat de portabilité est alors nécessaire pour effectuer la demande. Celui-ci vous sera transmis par OVH durant les étapes du processus de portabilité.|
 
--   Vous devez remplir les champs indiqués dans le formulaire :
-    -   **Forme légale** : concerne le type d'organisation qui est facturée pour le / les numéro(s) à porter. Vous avez le choix entre **Particulier** (Ligne personnelle, facturée en votre nom propre),**Professionnel** (professions libérales, auto-entrepreneur, etc.) et **Entreprise**.
+### Étape 2 : demander la portabilité
 
-    -   **Groupe de facturation** : vous permet de choisir dans quel groupe de facturation vous souhaitez intégrer vos numéros portés.
-    -   **Type de numéro** : vous permet de choisir si vous portez un **numéro fixe** ou **numéro spécial**.
+Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez le groupe de facturation concerné dans lequel le ou les numéros portés seront intégrés. 
 
-        Si vous devez porter un numéro spécial, un champ supplémentaire est à remplir :
+Assurez-vous d'être positionné sur l'onglet `Tableau de bord`{.action} et cliquez sur `Demander une portabilité`{.action}.
 
-        - **Catégorie** : il s'agit de classifier les services proposés derrière le numéro.
+![numberport](images/porting-number-step1.png){.thumbnail}
 
-    -   **Numéro à porter** : Dans ce champ vous devez entrer votre numéro à porter.
+Dans la page qui apparaît, deux types de demande sont proposés. Poursuivez la lecture de cette documentation selon celui choisi.
 
-        Le drapeau à côté du champ **Numéro à porter** vous permet de choisir le **pays concerné**par le numéro à porter.
+- 2.1 [Porter un numéro isolé](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#21-porter-un-numero-isole){.external}.
 
-        Vous ne pouvez pas porter seulement un SDA, il faut porter la tranche complète : **la tête de ligne** et **les SDA**.
+- 2.2 [Porter une tranche de numéros](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#22-porter-une-tranche-de-numeros){.external}.
 
-        Le fait de choisir **Professionnel** ou **Entreprise** vous permet d'accéder au formulaire pour ajouter les SDA.
+#### 2.1 Porter un numéro isolé
 
-        ![](images/2015-03-02-160702_667x241_scrot.png){.thumbnail}
+Cochez la case `Un numéro isolé`{.action} et renseignez le numéro isolé que vous souhaitez porter au format international (par exemple, « 0033100000000 » pour un numéro français). Ensuite, indiquez le *RIO* du numéro concerné, sélectionnez la date souhaitée de la portabilité, puis cliquez sur `Suivant`{.action}.
 
-        **Cas spécifique avec Free**
+![numberport](images/porting-number-step2.png){.thumbnail}
 
-        Dans les cas d'une portabilité d'un numéro attributaire Free, un code RIO vous sera demandé. Vous trouverez ce code RIO dans l'espace client de Free.
+Dans la page suivante, renseignez avec précision les informations personnelles du titulaire de la ligne ainsi que l'adresse complète d'installation de cette dernière. Précisez également si vous souhaitez voir apparaître votre numéro dans l'annuaire. Une fois ces données complétées, cliquez sur le bouton `Suivant`{.action}.
 
-    -   **Date de portabilité** : vous avez le choix entre deux types de date :
-        -   -   **Choisir la date** : vous choisissez une date précise dans le calendrier afin de planifier votre portabilité.
-            -   **Au plus tôt**: la date la plus proche sera choisie automatiquement.
+![numberport](images/porting-number-step3.png){.thumbnail}
 
-                Veuillez noter qu'un délai incompressible de 7 jours ouvrés pour un particulier et de 10 jours ouvrés pour un professionnel est nécessaire après réception du mandat de portabilité.
+Assurez-vous maintenant que le groupe de facturation qui apparaît est bien celui dans lequel le numéro porté doit être intégré. Si ce n'est pas le cas, modifiez-le en choisissant le bon groupe dans le menu déroulant.
 
-    -   **Publier dans les annuaires** : vous pouvez demander à faire paraître le numéro dans les annuaires une fois celui-ci porté.
-    -   **Informations personnelles**et **Adresse d’installation de la ligne**: il faut définir les informations indiquées sur la facture de votre ligne.
+Vous pouvez également configurer une redirection, effective une fois le numéro porté, des appels réceptionnés sur ce numéro vers une de vos lignes. Utilisez le bouton `Choisir une ligne`{.action} pour la définir.
 
-Une fois les champs complétés, vous pouvez cliquer sur le bouton **Commander**. Une confirmation de prise en compte s'affiche alors à l'écran.
+Si vous souhaitez utiliser un autre type de configuration pour ce numéro (comme une file d'appels par exemple), sachez que vous pourrez l'appliquer depuis votre espace client OVH 48 heures avant la date effective de sa portabilité.
 
-![](images/2015-03-03-122216_717x220_scrot.png){.thumbnail}
+Vos choix faits, cliquez sur `Suivant`{.action}.
 
-Vous recevrez dans quelques jours [un mandat de portabilité](#Demanderlaportabilitédemonnuméro-mandat).
+![numberport](images/porting-number-step4.png){.thumbnail}
 
-### Le mandat de portabilité {#le-mandat-de-portabilité}
+La dernière étape vérifie l'exactitude des informations que vous avez renseignées. Si celles-ci sont valides, il ne vous reste qu'à finaliser votre demande de portabilité en cliquant sur `Commander`{.action}. 
 
-Ce dernier permet à OVH d’obtenir votre autorisation pour porter vos numéros. Il vous est envoyé par e-mail, à l’adresse renseignée dans votre profil OVH.
+Dès lors, pour suivre l'avancement de votre demande, reportez-vous aux informations de l'étape 3 « [Suivre une demande de portabilité](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#etape-3-suivre-une-demande-de-portabilite){.external} » de cette documentation. 
 
-Ce mandat est à nous renvoyer, daté, signé et dans le cadre d’une entreprise avec le cachet apposé sur le mandat, via l’un de ces canaux :
- 
-- **depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}** (au format PDF) ;
-- **par e-mail (au format PDF)** : validation.portabilite@ovh.net ;
-- **par fax** : 09 72 10 01 44 ;
-- **par courrier** : OVH - 2 Rue Kellermann - 59100 Roubaix.
- 
-Pour un traitement plus rapide, nous vous invitons à privilégier l’envoi du mandat via votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Par e-mail, courrier ou fax, le traitement est réalisé sous 24 à 48 heures ouvrées après réception.
+#### 2.2 Porter une tranche de numéros
 
-### Suivi du déroulement de votre portabilité {#suivi-du-déroulement-de-votre-portabilité}
+Pour porter tout ou partie des numéros d'une tranche, cochez la case `Un ou plusieurs numéros appartenant à une tranche de numéros (SDA)`{.action}. 
 
-Pour suivre votre demande de portabilité :
+Renseignez alors le numéro de tête de ligne de la tranche concernée au format international (par exemple, « 0033100000000 » pour un numéro français). En cas de doute, votre opérateur actuel peut vous communiquer ce numéro. Ensuite, indiquez si vous souhaitez :
 
--   Connectez-vous à votre Espace Client OVH : <https://www.ovhtelecom.fr/espaceclient/>
--   Cliquez sur le lien "**Administrez vos services de téléphonie via l'ancienne interface**".
--   Cliquez sur l'onglet **Portabilité**.
--   Cliquez sur **Portabilité en cours**.
+- **porter l'ensemble de la tranche de numéros** : pour cela, cochez `Porter votre numéro principal et l’ensemble des numéros`{.action} ;
 
-Vous pouvez ainsi suivre le statut d'envoi du mandat et le statut de la portabilité.
+- **porter certains numéros de la tranche, dont celui de tête de ligne** : pour cela, cochez `Porter votre numéro principal et une partie des numéros`{.action} puis renseignez les numéros additionnels de la tranche que vous souhaitez porter. Utilisez alors la zone de texte en dessous de `Numéro SDA à ajouter` ainsi que le bouton `Ajouter`{.action}.
 
-### **Que faire en cas d'erreur ?** {#que-faire-en-cas-derreur}
+Sélectionnez la date souhaitée de la portabilité, puis cliquez sur `Suivant`{.action}.
 
-En cas d'erreur sur votre portabilité, un mail vous est automatiquement envoyé afin que vous puissiez entrer en contact avec notre support. Vous pourrez ainsi régler directement l'erreur rencontrée et relancer la demande de portabilité.
+![numberport](images/porting-number-step5.png){.thumbnail}
 
-### Annuler une demande de portabilité {#annuler-une-demande-de-portabilité}
+Dans la page suivante, renseignez avec précision les informations personnelles du titulaire de la ligne ainsi que l'adresse complète d'installation de cette dernière. Précisez également si vous souhaitez voir apparaître vos numéros dans l'annuaire. Une fois ces données complétées, cliquez sur le bouton `Suivant`{.action}.
 
-Il est possible de demander une annulation de la portabilité en cours. Pour cela, cliquez sur la croix rouge en haut à droite de la portabilité que vous souhaitez annuler sur l'interface de suivi.
+![numberport](images/porting-number-step6.png){.thumbnail}
 
-L'annulation de la portabilité s'effectuera sous réserve de l'acceptation par l'opérateur attributaire.
+Assurez-vous maintenant que le groupe de facturation qui apparaît est bien celui dans lequel les numéros portés doivent être intégrés. Si ce n'est pas le cas, modifiez-le en choisissant le bon groupe dans le menu déroulant.
 
-### Préparer la configuration des numéros portés {#préparer-la-configuration-des-numéros-portés}
+Vous pouvez également configurer une redirection, effective une fois le numéro de tête de ligne porté, des appels réceptionnés sur ce numéro uniquement vers une de vos lignes. Utilisez le bouton `Choisir une ligne`{.action} pour la définir.
 
-Vos numéros portés sont disponibles 48 heures avant dans votre Espace Client et sont activés sur le réseau OVH. Vous pouvez alors **configurer vos numéros** en avance afin de limiter la coupure de service.
+Si vous souhaitez utiliser un autre type de configuration pour ce numéro (comme une file d'appels par exemple), sachez que vous pourrez l'appliquer depuis votre espace client OVH 48 heures avant la date effective de sa portabilité.
+
+Vos choix faits, cliquez sur `Suivant`{.action}.
+
+![numberport](images/porting-number-step7.png){.thumbnail}
+
+La dernière étape vérifie l'exactitude des informations que vous avez renseignées. Si celles-ci sont valides, il ne vous reste qu'à finaliser votre demande de portabilité en cliquant sur `Commander`{.action}. 
+
+Dès lors, vous recevez un mandat de portabilité autorisant OVH à porter les numéros souhaités. Complétez puis retournez-nous ce mandat, soit :
+
+- **depuis votre espace client**, au format PDF (privilégiez ce mode d'envoi pour un traitement plus rapide) ;
+- **par e-mail**, au format PDF et à l'adresse : `validation.portabilite@ovh.net` ;
+- **par fax**, au 09 72 10 01 44 ;
+- **par courrier postal**, à l'adresse : `OVH, 2 rue Kellermann, 59100 Roubaix`.
+
+À présent, pour suivre l'avancement de votre demande de portabilité, reportez-vous aux informations décrites dans l'étape 3 « [Suivre une demande de portabilité](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#etape-3-suivre-une-demande-de-portabilite){.external} » de cette documentation.
+
+### Étape 3 : suivre une demande de portabilité
+
+Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez le groupe de facturation sur lequel a été demandée la portabilité.
+
+Assurez-vous d'être positionné sur l'onglet `Tableau de bord`{.action} et cliquez sur `Consulter mes portabilités en cours`{.action}.
+
+![numberport](images/porting-number-step8.png){.thumbnail}
+
+Dans la page qui apparaît, vous trouverez l'état de vos demandes de portabilité. L'image ci-dessous montre par exemple l'avancement pour un numéro isolé.
+
+![numberport](images/porting-number-step9.png){.thumbnail}
+
+Si, durant le processus, vous souhaitez annuler votre demande de portabilité, vous pouvez le faire grâce au bouton `Annuler la portabilité ?`{.action}.
+
+Nous vous recommandons également de consulter régulièrement votre adresse e-mail. Des notifications peuvent en effet vous y être envoyées si une action de votre part est requise. 
+
+Vous trouverez ci-dessous un récapitulatif des différentes étapes du **processus de portabilité d'un numéro isolé** chez OVH :
+
+|Avancement dans le processus|Description|Délai estimé|
+|---|---|---|
+|Demande envoyée à l'opérateur|La demande est envoyée à l'opérateur cédant|2 heures|
+|Accusé de l'opérateur reçu|L'opérateur cédant valide la réception de la demande|2 jours|
+|Rapport intermédiaire de l'opérateur reçu|Après vérification des informations, l'opérateur confirme le lancement de la procédure de portabilité vers OVH|1 jour ouvré|
+|Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Pour vous aider, reportez-vous aux informations décrites dans l'étape 4 « [Préparer la configuration des numéros portés](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#etape-4-preparer-la-configuration-des-numeros-portes){.external} »|11 jours|
+|Rapport final de l'opérateur cédant|L'opérateur cédant confirme la portabilité. OVH configure le numéro sur son réseau (déclaration *APNF* et routage). La portabilité est terminée et le numéro opérationnel|3 jours ouvrés|
+
+Vous trouverez ci-dessous un récapitulatif des différentes étapes du **processus de portabilité d'une tranche de numéros** chez OVH :
+
+|Avancement dans le processus|Description|Délai estimé|
+|---|---|---|
+|Mandat de portabilité envoyé|Vous envoyez le mandat de portabilité à OVH|Selon votre action|
+|Réception du mandat|Il s'agit du temps entre l'envoi du formulaire de votre part et sa réception chez OVH|Quelques minutes à quelques jours selon le mode d'envoi|
+|Validation du mandat|OVH vérifie la cohérence et la légitimité des informations du mandat de portabilité|1 jour ouvré|
+|Demande envoyée à l'opérateur|Suite à la validation du mandat, la demande est envoyée à l'opérateur cédant|2 heures|
+|Accusé de l'opérateur reçu|L'opérateur cédant valide la réception de la demande|2 jours|
+|Rapport intermédiaire de l'opérateur reçu|L'opérateur cédant vérifie l'ensemble de la tranche de numéros SDA|5 jours ouvrés|
+|Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Afin de vous aider, reportez-vous aux informations décrites dans l'étape 4 « [Préparer la configuration des numéros portés](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#etape-4-preparer-la-configuration-des-numeros-portes){.external} »| - |
+|Rapport final de l'opérateur cédant|L'opérateur cédant confirme la portabilité. OVH configure les numéros sur son réseau (déclaration *APNF* et routage). La portabilité est terminée et les numéros opérationnels|3 jours ouvrés|
+
+### Étape 4 : préparer la configuration des numéros portés
+
+Vous avez la possibilité de préparer la configuration du ou des numéros portés 48 heures avant que celle-ci soit effective. Ceci peut vous permettre de limiter, voire d'éviter, une coupure de service lors de votre changement d'opérateur pour OVH.
+
+Pour cela, et selon la configuration que vous souhaitez mettre en place sur vos numéros, reportez-vous aux instructions décrites dans notre documentation « [Choisir et appliquer une configuration pour un numéro alias](https://docs.ovh.com/fr/voip/quelle-configuration-est-adaptee-a-mes-besoins/){.external} ».
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
