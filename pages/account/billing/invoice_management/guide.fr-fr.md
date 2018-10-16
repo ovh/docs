@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer vos factures et les paiements liés à celle
 section: 'Gérer ses commandes, factures et services'
 ---
 
-**Dernière mise à jour le 17/07/2018**
+**Dernière mise à jour le 16/10/2018**
 
 ## Objectif
 
@@ -13,6 +13,10 @@ OVH met à votre disposition un espace vous permettant de consulter, gérer et r
 
 **Ce guide vous explique comment effectuer les différentes actions de ce menu.**
 
+> [!primary]
+>
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVH disponibles dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, rubrique `Mes services`{.action} puis `Mes contrats`{.action}.
+>
 
 ## Prérequis
 
