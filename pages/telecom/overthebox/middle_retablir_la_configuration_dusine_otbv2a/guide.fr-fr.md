@@ -36,7 +36,7 @@ section: Rétablir la configuration d'usine
 
 
 ### Pour faire une restauration complète du système
-- Téléchargez le fichier suivant sur votre ordinateur : [http://downloads.overthebox.net/testing/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/testing/targets/x86/64/latest.img.gz){.external}
+- Téléchargez le fichier suivant sur votre ordinateur : [http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz){.external}
 - Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
 - Cliquez sur **"System"**
 - Cliquez sur **"Backup/Flash Firmware"**
@@ -100,7 +100,7 @@ otb-action-sysupgrade
 ## Action via une clef USB
 
 ### Création de la clef bootable sous Windows (logiciel Win32 Disk Imager)
-- Téléchargez l'image **"Rescue"** [http://downloads.overthebox.net/testing/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/testing/targets/x86/64/latest.img.gz){.external}
+- Téléchargez l'image **"Rescue"** [http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz){.external}
 
 Cette image permettra à votre clef USB de devenir le "support de boot" de l' **OverTheBox**
 
@@ -130,7 +130,7 @@ Toute l'opération sera fera en ligne de commande, veuillez donc ouvrir le **Ter
 
 
 ```bash
-curl -C - -O http://downloads.overthebox.net/testing/targets/x86/64/latest.img.gz
+curl -C - -O http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz
 ```
 
 Ce fichier permettra à votre clef USB de devenir le "support de boot" de l'**OverTheBox**
@@ -177,7 +177,7 @@ Toute l'opération sera fera en ligne de commande, veuillez donc ouvrir le **Ter
 
 
 ```bash
-wget http://downloads.overthebox.net/testing/targets/x86/64/latest.img.gz
+wget http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz
 ```
 
 Ce fichier permettra à votre clef USB de devenir le "support de boot" de l'**OverTheBox**
