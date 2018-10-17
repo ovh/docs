@@ -5,11 +5,11 @@ excerpt: 'This guide will show you how to create an SSH key, so that you can log
 section: Security
 ---
 
-**Last updated 17/10/2018**
+**Last updated 17th October 2018**
 
 ## Objective
 
-When you create a [Public Cloud Instance](https://www.ovh.com.au/public-cloud/instances/){.external}, you won't receive an email with login credentials, because authentication is based on secure SSH keys instead of usernames and passwords.
+When you create a [Public Cloud Instance](https://www.ovh.lt/public-cloud/instances/){.external}, you won't receive an email with login credentials, because authentication is based on secure SSH keys instead of usernames and passwords.
 
 **This guide will show you how to create an SSH key, so that you can log into your instance.**
 
@@ -20,8 +20,8 @@ Please note that SSH keys are not used for authentication on instances running t
 
 ## Requirements
 
-* a [Public Cloud](https://www.ovh.com.au/public-cloud/instances/){.external} project in your OVH account
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud](https://www.ovh.lt/public-cloud/instances/){.external} project in your OVH account
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
