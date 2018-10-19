@@ -1,5 +1,6 @@
 ---
-title: OVH Analytics Data Compute
-excerpt: OVH Analytics Data Compute provides a Spark cluster for bigdata computation. 
-hidden: true
+title: 'OVH Analytics Data Compute'
+published: true
+slug: ovh-analytics-data-compute
 ---
+

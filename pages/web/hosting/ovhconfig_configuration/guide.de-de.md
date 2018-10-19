@@ -74,7 +74,7 @@ Passen Sie die Werte der Variablen entsprechend der Konfiguration an, die Sie f�
 |app.engine.version|Hier können Sie die vom Webhosting verwendete PHP-Version aus den [von OVH angebotenen Versionen](https://www.ovh.de/hosting/php.xml){.external} auswählen. Geben Sie Ihre bevorzugte Version ein.|
 |http.firewall|Hier können Sie die [mit den OVH Webhostings angebotene Firewall](https://www.ovh.com/de/hosting/mod_security.xml){.external} aktivieren oder deaktivieren. Geben Sie „security“ ein, um diese zu aktivieren, oder „none“, um sie zu deaktivieren.|
 |environment|Hier können Sie festlegen, wie die statischen Dateien Ihrer Website gecacht werden sowie die PHP-Fehlerbehandlung einstellen. Geben Sie „production“ ein, um das Caching zu maximieren und PHP-Fehler zu verbergen, oder „development“, um das Caching abzustellen und PHP-Fehler anzuzeigen.|
-|container.image|Hier können Sie die von Ihrem Webhosting verwendete Ausführungsumgebung ändern. Geben Sie die gewünschte Engine ein. Die möglichen Konfigurationen finden Sie in unserer Dokumentation: [„Verfügbare Konfigurationen“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#verfugbare-konfigurationen){.external}|
+|container.image|Hier können Sie die von Ihrem Webhosting verwendete Ausführungsumgebung ändern. Geben Sie die gewünschte Engine ein. Die möglichen Konfigurationen finden Sie in unserer Dokumentation: [„Verfügbare Konfigurationen“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#verfugbare-konfigurationen_1){.external}|
 
 Nachstehend finden Sie die vollständigen Anwendungsdetails der .ovhconfig-Datei.
 
@@ -148,7 +148,7 @@ Nachdem Sie die .ovhconfig-Datei bearbeitet haben, muss diese nur noch auf Ihren
 
 Sollten Sie über Ihr Webhosting mehrere Websites betreiben, haben Sie mit Sicherheit mehrere Multisites angelegt. Es kann aus verschiedenen Gründen nützlich sein, für einzelne Multisites eine andere PHP-Version zu verwenden.
 
-Erstellen Sie hierzu für die jeweilige Multisite (oder Multisites) eine .ovhconfig-Datei mit der gewünschten PHP-Version. Befolgen Sie die entsprechenden Schritte im Abschnitt [„Die .ovhconfig-Datei bearbeiten“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#die-ovhconfig-datei-bearbeiten){.external} in der vorliegenden Anleitung. Wenn Sie die .ovhconfig-Datei auf Ihren Speicherplatz hochladen, stellen Sie sicher, dass Sie diese im Wurzelverzeichnis der entsprechenden Multisite hochladen. Sie finden das Wurzelverzeichnis Ihrer Multisites über Ihr Kundencenter in dem Tab `Multisite`{.action} des jeweiligen Webhostings.
+Erstellen Sie hierzu für die jeweilige Multisite (oder Multisites) eine .ovhconfig-Datei mit der gewünschten PHP-Version. Befolgen Sie die entsprechenden Schritte im Abschnitt [„Die .ovhconfig-Datei bearbeiten“](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/#die-ovhconfig-datei-bearbeiten){.external} in der vorliegenden Anleitung. Wenn Sie die .ovhconfig-Datei auf Ihren Speicherplatz hochladen, stellen Sie sicher, dass Sie diese im Wurzelverzeichnis der entsprechenden Multisite hochladen. Sie finden das Wurzelverzeichnis Ihrer Multisites über Ihr Kundencenter in dem Tab `Multisite`{.action} des jeweiligen Webhostings.
 
 > [!warning]
 >

@@ -1,116 +1,78 @@
 ---
-title: Persijungimas į root nadotoją ir slaptažodžio kūrimas
-excerpt: Persijungimas į root nadotoją ir slaptažodžio kūrimas
-slug: persijungimas_i_root_nadotoja_ir_slaptazodzio_kurimas
+title: 'Become the root user and select a password'
+slug: become_the_root_user_and_select_a_password
+excerpt: 'This guide will show you how to become the root user and create a password for the root account'
 legacy_guide_number: g1786
+section: 'Getting started'
 ---
 
+**Last updated 15th October 2018**
 
-## 
-Norint atlikti tam tikrus veiksmus, jums kartais gali prireikti root prieigos ar atlikti operacijas kaip root naudotojas, ypač jei tai:
+## Objective
 
-- Paketų diegimas;
-- Slaptažodžio suteikimas naudotojui ar root naudotojui (privaloma KVM prieigai gauti);
-- Tam tikrų administratoriaus užduočių atlikimas.
+To perform certain administrative functions on your server (e.g. installing packages), you'll need to have a high level of user access. On Linux servers, this access is called "root".
 
+**This guide will show you how to become the root user and create a password for the root account.**
 
+## Requirements
 
+* a Public Cloud project activated
+* access to the OVH [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-## Reikalavimai
+## Instructions
 
-- []({legacy}1775)
-- Prisijungimas per SSH su naudotoju pagal nutylėjimą (admin arba distribucijos pavadinimas naujausiems vaizdams)
+> [!primary]
+>
+This guide assumes that the default user is called 'admin'.
+>
 
+### Changing the root password
 
+First, establish an SSH connection to your server.
 
-## Informacija
-Šiame gide daroma prielaida, kad naudotojas pagal nutylėjimą yra pavadintas admin.
+At the command line, enter a password for the admin user (for security reasons, the password will not be shown as you type it):
 
-
-## Slaptažodžio kūrimas
-
-- Suteikite slaptažodį admin naudotojui (slaptažodžio paskelbimas nematomas dėl saugumo priežasčių):
-
-```
+```sh
 ~$ sudo passwd
 Enter new UNIX password:
 Retype new UNIX password:
-passwd: password updated successfully
+passwd: password updated 
+successfully
 ```
 
+### Update repositories (Debian/Ubuntu)
 
-- Suteikite slaptažodį root naudotojui (slaptažodžio paskelbimas nematomas dėl saugumo priežasčių):
-
-```
-~$ sudo passwd root
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-```
-
-
-
-
-
-## Kiti pavyzdžiai
-
-- Paketų atmintinės atnaujinimas (Debian / Ubuntu)
+To update the installed software packages on your server, type the following command at the command line:
 
 ```
 ~$ sudo apt-get update
 ```
 
+### Update the system (CentOS/Fedora)
 
-- Sistemų atnaujinimas (CentOS / Fedora)
+To update your server's operating system, type the following command at the command line:
 
 ```
 ~$ sudo yum update
 ```
 
-
-- Konfigūracinio failo redagavimas:
+### Edit a configuration file
 
 ```
 ~$ sudo vi /etc/hosts.allow
 ```
 
+### Become root
 
-
-
-
-## 
-
-- Persijungimas į root
+To become the root user, type the following command at the command line:
 
 ```
 ~$ sudo su -
 ~#
 ```
 
+Next, enter the root password.
 
-- Root slaptažodžio kūrimas (po persijungimo į root naudotoją):
+## Go further
 
-```
-~# passwd
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-```
-
-
-- Slaptažodžio kūrimas admin naudotojui
-
-```
-~# passwd admin
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-```
-
-
-
-
-
-## 
-[Grįžti į Cloud gidus]({legacy}1785)
-
+Join our community of users on <https://community.ovh.com/en/>.

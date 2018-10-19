@@ -29,12 +29,14 @@ Uma vez que as novas versões podem não incluir determinadas funcionalidades, *
 
 Embora a OVH trate da instalação das versões mais recentes de PHP nos seus servidores, cabe-lhe a si, enquanto webmaster, garantir que o seu website está sempre atualizado e compatível com as versões mais recentes de PHP. Dependendo do site que utiliza, existem duas formas de verificar:
 
-1. **Utilizo um site “chave na mão”, como um sistema de gestão de conteúdos (Content Management System ou CMS)**, como por exemplo o WordPress ou o Joomla!: 
+**Utilizo um site “chave na mão”, como um sistema de gestão de conteúdos (Content Management System ou CMS)**, como por exemplo o WordPress ou o Joomla!: 
+
 - Consulte a documentação oficial criada pelo editor do CMS que utiliza; 
 - Tome nota das informações relativamente aos requisitos técnicos indispensáveis para o funcionamento do seu CMS, assim como à manipulação necessária para o atualizar;
 - Caso seja necessário, atualize o seu CMS garantindo que a nova versão é compatível com o alojamento da OVH.
 
-2. **Utilizo um site baseado numa solução personalizada**: 
+**Utilizo um site baseado numa solução personalizada**: 
+
 - Entre em contacto com o webmaster que criou o website;
 - Para saber mais sobre as migrações de versões acessíveis, consulte a documentação oficial PHP: <http://php.net/manual/pt_BR/appendices.php>;
 - Caso seja necessário, atualize o código do seu site garantindo que este é compatível com o alojamento da OVH.

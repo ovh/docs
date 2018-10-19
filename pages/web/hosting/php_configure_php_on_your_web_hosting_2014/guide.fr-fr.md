@@ -29,12 +29,14 @@ Du fait que certaines fonctionnalités peuvent ne pas être maintenues au fil de
 
 Même si OVH gère l'installation des dernières versions de PHP sur ses serveurs, il vous revient, en tant que webmaster, de vous assurer que votre site internet est toujours à jour et donc compatible avec les dernières versions de PHP. Afin de vous en assurer, deux possibilités existent selon le site internet que vous utilisez.
 
-1. **J'utilise un site clés en main, comme un système de gestion de contenu (Content Management System ou CMS)**, tel que WordPress ou Joomla! : 
+**J'utilise un site clés en main, comme un système de gestion de contenu (Content Management System ou CMS)**, tel que WordPress ou Joomla! : 
+
 - rapprochez-vous de la documentation officielle créée par l'éditeur du CMS que vous utilisez ; 
 - récupérez les informations concernant les prérequis techniques indispensables au fonctionnement de votre CMS, ainsi que la manipulation permettant de le mettre à jour ;
 - si cela est nécessaire, mettez à jour votre CMS en vous assurant que la nouvelle version est compatible avec l'hébergement OVH.
 
-2. **J'utilise un site basé sur une solution personnalisée** : 
+**J'utilise un site basé sur une solution personnalisée** : 
+
 - rapprochez-vous du webmaster ayant créé le site internet ;
 - aidez-vous de la documentation officielle PHP donnant plus d'informations sur les migrations de version accessibles depuis le lien : <http://php.net/manual/en/appendices.php> ;
 - si cela est nécessaire, mettez à jour le code de votre site en vous assurant que celui-ci reste compatible avec l'hébergement OVH.
