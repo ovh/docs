@@ -5,7 +5,7 @@ excerpt: 'Learn how to log in to your Private Cloud via SFTP'
 section: 'Getting started'
 ---
 
-**Last updated 18th October 2018**
+**Last updated 19th October 2018**
 
 ## Objective
 
@@ -17,7 +17,7 @@ This system will only allow you to access the upload-vpn folder in your datastor
 
 ## Requirements
 
-* You must have an active user account created from the Control Panel.
+* You must have an active user account created from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Instructions
