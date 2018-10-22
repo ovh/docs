@@ -1,7 +1,7 @@
 ---
 title: 'PHP-Version Ihres Webhostings ändern'
-excerpt: 'So ändern Sie die PHP-Version Ihres OVH Webhostings'
 slug: konfiguration_von_php_fur_ein_ovh_webhosting_2014
+excerpt: 'So ändern Sie die PHP-Version Ihres OVH Webhostings'
 section: PHP
 order: 1
 ---
@@ -29,12 +29,14 @@ Da manche Features von neueren Versionen nicht mehr unterstützt werden, **stell
 
 Auch wenn OVH für die Installation der neuesten PHP-Versionen auf seinen Servern verantwortlich ist, liegt es in Ihrer Verantwortung als Webmaster, sicherzustellen, dass Ihre Website immer auf dem neuesten Stand und mit den neuesten PHP-Versionen kompatibel ist. Um dies zu überprüfen, gibt es entsprechend der von Ihnen verwendeten Website zwei Möglichkeiten.
 
-1. **Ich verwende eine gebrauchsfertige Website, beispielsweise ein Content Management System (CMS)** wie WordPress oder Joomla!: 
+**Ich verwende eine gebrauchsfertige Website, beispielsweise ein Content Management System (CMS)** wie WordPress oder Joomla!: 
+
 - Halten Sie sich an die offizielle Dokumentation des Herausgebers Ihres CMS. 
 - Suchen Sie dort die Informationen zu den technischen Voraussetzungen, die für das korrekte Funktionieren Ihres CMS notwendig sind, sowie zur Vorgehensweise, um das CMS zu aktualisieren.
 - Falls nötig aktualisieren Sie Ihr CMS und achten Sie darauf, dass die neue Version mit dem OVH Webhosting kompatibel ist.
 
-2. **Ich verwende eine Website, die auf einer angepassten Lösung basiert**: 
+**Ich verwende eine Website, die auf einer angepassten Lösung basiert**: 
+
 - Kontaktieren Sie den Webmaster, der die Website erstellt hat.
 - Halten Sie sich an die offizielle PHP-Dokumentation. Dort finden Sie weitere Informationen zu den Migrationen auf andere PHP-Versionen: <http://php.net/manual/en/appendices.php>.
 - Falls nötig aktualisieren Sie den Code Ihrer Website und achten Sie darauf, dass dieser mit dem OVH Webhosting kompatibel ist.

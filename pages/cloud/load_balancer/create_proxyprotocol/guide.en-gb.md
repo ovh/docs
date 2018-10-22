@@ -1,17 +1,16 @@
 ---
-title: ProxyProtocol get Source IP
+title: 'ProxyProtocol get Source IP'
 slug: proxyprotocol
-excerpt: Get real visitor IP using OVH Load Balancer with ProxyProtocol
-section: Setting up
+excerpt: 'Get real visitor IP using OVH Load Balancer with ProxyProtocol'
+section: 'Setting up'
 ---
-
 
 ## Introduction
 In this case, we want to get sourceIP, scheme trouth OVH API LoadBalancing, without install our SSL Certitificate on it. This is helpfull if you have many domains with many SSL certificates.
 
 
 ## Requirements
-We assume you have already an OVH Load Balancer HTTP configured, if not follow ..refs:fr/fr/cloud/iplb/configure-iplb
+We assume you have already an OVH Load Balancer HTTP configured, if not follow [https://docs.ovh.com/gb/en/load-balancer/using-iplb/](https://docs.ovh.com/gb/en/load-balancer/using-iplb/)
 
 You have :
 

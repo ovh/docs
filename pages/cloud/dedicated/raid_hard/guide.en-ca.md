@@ -1,365 +1,378 @@
 ---
-title: Hardware RAID
+title: 'Managing Hardware RAID'
 slug: raid-hard
-excerpt: This guide is meant to help you verify the state of your RAID as well as your hard drives' health using a Hardware RAID controller (LSI, LSI MegaRaid and 3ware [Deprecated]).
-section: Server Management
+excerpt: 'This guide will show you how to verify the state of your RAID and the health of your hard drives'
+section: 'Server Management'
 ---
 
+**Last updated 2018/10/16**
+
+## Objective
+
+On a server with a hardware RAID configuration, the RAID array is managed by a physical component called a RAID controller.
+
+**This guide will show you how to verify the state of your RAID and the health of your hard drives.**
 
 ## Requirements
-- Having a root access in SSH.
-- Having a server with a RAID Hard.
 
-
-
-> [!warning]
->
-> It is dangerous to play with MegaCli and lsiutil if
-> you don't know what you are doing. You risk losing your data, backup
-> before doing anything.
-> 
-
-
-## MegaRaid RAID controller
-
-### Step 1 &#58; Informations
-Prior to verify your RAID state, let's start by making sure you got a MegaRaid controller:
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">lspci | grep -i lsi | grep -i megaraid</span>
-<span class="output">03:00.0 RAID bus controller: LSI Logic / Symbios Logic MegaRAID SAS 2108 [Liberator] (rev 05)</span> </pre></div>
-This confirms the server has indeed a MegaRaid RAID controller installed.
-
-To gather and list available RAID arrays, you can use MegaCli command:
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -LDInfo -Lall -aALL (Or : storcli /c0 /vall show)</span>
-<span class="output">Adapter 0 - Virtual Drive Information:</span>
-<span class="output">Virtual Drive: 0 (Target Id: 0)</span>
-<span class="output">Name :</span>
-<span class="output">RAID Level : Primary-1, Secondary-0, RAID Level Qualifier-0</span>
-<span class="output">Size : 36.321 GB</span>
-<span class="output">Sector Size : 512</span>
-<span class="output">Mirror Data : 36.321 GB</span>
-<span class="output">State : Optimal</span>
-<span class="output">Strip Size : 64 KB</span>
-<span class="output">Number Of Drives : 2</span>
-<span class="output">Span Depth : 1</span>
-<span class="output">Default Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU</span>
-<span class="output">Current Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU</span>
-<span class="output">Default Access Policy: Read/Write</span>
-<span class="output">Current Access Policy: Read/Write</span>
-<span class="output">Disk Cache Policy : Disk's Default</span>
-<span class="output">Encryption Type : None</span>
-<span class="output">Bad Blocks Exist: No</span>
-<span class="output">Is VD Cached: No</span>
-<span class="blank">&nbsp;</span>
-<span class="blank">&nbsp;</span>
-<span class="output">Virtual Drive: 1 (Target Id: 1)</span>
-<span class="output">Name :</span>
-<span class="output">RAID Level : Primary-1, Secondary-0, RAID Level Qualifier-0</span>
-<span class="output">Size : 2.727 TB</span>
-<span class="output">Sector Size : 512</span>
-<span class="output">Mirror Data : 2.727 TB</span>
-<span class="output">State : Optimal</span>
-<span class="output">Strip Size : 64 KB</span>
-<span class="output">Number Of Drives : 2</span>
-<span class="output">Span Depth : 1</span>
-<span class="output">Default Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU</span>
-<span class="output">Current Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU</span>
-<span class="output">Default Access Policy: Read/Write</span>
-<span class="output">Current Access Policy: Read/Write</span>
-<span class="output">Disk Cache Policy : Disk's Default</span>
-<span class="output">Encryption Type : None</span>
-<span class="output">Bad Blocks Exist: No</span>
-<span class="output">Is VD Cached: Yes</span>
-<span class="output">Cache Cade Type : Read Only</span>
-<span class="blank">&nbsp;</span>
-<span class="output">Exit Code: 0x00</span> </pre></div>
-We can see 2 virtual drives which are composed of 2 physical hard drives each, so a total of 4 physical disks.
-
-In that case, the RAID status shows Optimal which means the RAID is up and running fine.
-
-If it happens the RAID status shows Degraded, we recommend you to verify the hard drives' state as well.
-
-
-### Step 2 &#58; Disk's state
-First, you must list the Device Id for each drives in order to fully test them with smartmontools:
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g' (Or : storcli /c0 /eall /sall show)</span>
-<span class="blank">&nbsp;</span>
-<span class="output">Slot Number: 0</span>
-<span class="output">Device Id: 4</span>
-<span class="output">Raw Size: 279.460 GB [0x22eec130 Sectors]</span>
-<span class="output">Firmware state: Online, Spun Up</span>
-<span class="output">Inquiry Data: BTWL3450062J300PGN  INTEL SSDSC2BB300G4                     D2010355</span>
-<span class="blank">&nbsp;</span>
-<span class="output">Slot Number: 1</span>
-<span class="output">Device Id: 5</span>
-<span class="output">Raw Size: 279.460 GB [0x22eec130 Sectors]</span>
-<span class="output">Firmware state: Online, Spun Up</span>
-<span class="output">Inquiry Data: BTWL345003X6300PGN  INTEL SSDSC2BB300G4                     D2010355</span>
-<span class="blank">&nbsp;</span>
-<span class="output">Slot Number: 2</span>
-<span class="output">Device Id: 7</span>
-<span class="output">Raw Size: 2.728 TB [0x15d50a3b0 Sectors]</span>
-<span class="output">Firmware state: Online, Spun Up</span>
-<span class="output">Inquiry Data:       PN2234P8K2PKDYHGST HUS724030ALA640                    MF8OAA70</span>
-<span class="blank">&nbsp;</span>
-<span class="output">Slot Number: 3</span>
-<span class="output">Device Id: 6</span>
-<span class="output">Raw Size: 2.728 TB [0x15d50a3b0 Sectors]</span>
-<span class="output">Firmware state: Online, Spun Up</span>
-<span class="output">Inquiry Data:       PN2234P8JYP59YHGST HUS724030ALA640                    MF8OAA70</span> </pre></div>
-With smartmontools's command smartctl, we will test each hard drives like this :
-
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">smartctl -d megaraid,N -a /dev/sdX</span> </pre></div>
-is the drive's Device ID
-
-is the RAID's Device: /dev/sda = 1st RAID, /dev/sdb = 2nd RAID, etc.
-
-
-
-> [!primary]
->
-> In some situation, you may receive this output:
-> <div> <style type="text/css" scoped>span.prompt:before{content:"$ ";}</style> <pre class="highlight command-prompt"> <span class="output">/dev/sda [megaraid_disk_00] [SAT]: Device open changed type from 'megaraid' to 'sat'</span> </pre></div>
-> You must then replace megaraid by sat+megaraid:
-> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">smartctl -d sat+megaraid,N -a /dev/sdX</span> </pre></div>
-
-
+- a [dedicated server](https://www.ovh.com/ca/en/dedicated-servers/){.external} with a hardware RAID configuration
+- administrative (root) access to the server via SSH
 
 > [!warning]
 >
-> If one of your hard drives is showing SMART errors, perform a
-> full backup of your data as soon as possible and contact our
-> support.
-> It will then inform the Slot Number and Device ID so we can identify the defected disk.
+> It is not advisable to reconfigure your RAID controller using MegaCli and lsiutil if you're unfamiliar with these tools, as you could risk losing your data. Please make a backup before making any changes.
 > 
 
+## Instructions
 
-### Step 3 &#58; Resynchronisation
-If you had one or more hard drives replaced, the RAID will re-synchronize automatically.
+### Using the MegaRaid RAID controller
 
-You can use this command to see which hard drives are currently rebuilding :
+#### Step 1: Retrieve RAID information
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g' (Or : storcli /c0 /eall /sall show)</span>
-<span class="blank">&nbsp;</span>
-<span class="output">Slot Number: 0</span>
-<span class="output">Device Id: 4</span>
-<span class="output">Raw Size: 279.460 GB [0x22eec130 Sectors]</span>
-<span class="output">Firmware state: Online, Spun Up</span>
-<span class="output">Inquiry Data: BTWL3450062J300PGN  INTEL SSDSC2BB300G4                     D2010355</span>
-<span class="blank">&nbsp;</span>
-<span class="output">Slot Number: 1</span>
-<span class="output">Device Id: 5</span>
-<span class="output">Raw Size: 279.460 GB [0x22eec130 Sectors]</span>
-<span class="output">Firmware state: Online, Spun Up</span>
-<span class="output">Inquiry Data: BTWL345003X6300PGN  INTEL SSDSC2BB300G4                     D2010355</span>
-<span class="blank">&nbsp;</span>
-<span class="output">Slot Number: 2</span>
-<span class="output">Device Id: 7</span>
-<span class="output">Raw Size: 2.728 TB [0x15d50a3b0 Sectors]</span>
-<span class="output">Firmware state: Online, Spun Up</span>
-<span class="output">Inquiry Data:       PN2234P8K2PKDYHGST HUS724030ALA640                    MF8OAA70</span>
-<span class="blank">&nbsp;</span>
-<span class="output">Slot Number: 3</span>
-<span class="output">Device Id: 6</span>
-<span class="output">Raw Size: 2.728 TB [0x15d50a3b0 Sectors]</span>
-<span class="output">Firmware state: Rebuild</span>
-<span class="output">Inquiry Data:       PN2234P8JYP59YHGST HUS724030ALA640                    MF8OAA70</span> </pre></div>
-To monitor the progress rebuild of a disk, you can use this command:
+Prior to verifying your RAID state, verify that you have a MegaRaid controller:
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -PDRbld -ShowProg -PhysDrv [EncID:SlotID] -aALL (Or : storcli /c0/eEncID/sSlotID show rebuild)</span> </pre></div>
-Enclosure ID
+```sh
+lspci | grep -i lsi | grep -i megaraid
+03:00.0 RAID bus controller: LSI Logic / Symbios Logic MegaRAID SAS 2108 [Liberator] (rev 05)
+```
 
-Slot ID
+This confirms the server has a MegaRaid controller installed.
 
-These values are obtained while listing the hard drives as shown above
+To gather and list available RAID arrays, you can use the MegaCli command:
 
+```sh
+MegaCli -LDInfo -Lall -aALL (Or : storcli /c0 /vall show)
+Adapter 0 - Virtual Drive Information:
+Virtual Drive: 0 (Target Id: 0)
+Name :
+RAID Level : Primary-1, Secondary-0, RAID Level Qualifier-0
+Size : 36.321 GB
+Sector Size : 512
+Mirror Data : 36.321 GB
+State : Optimal
+Strip Size : 64 KB
+Number Of Drives : 2
+Span Depth : 1
+Default Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU
+Current Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU
+Default Access Policy: Read/Write
+Current Access Policy: Read/Write
+Disk Cache Policy : Disk's Default
+Encryption Type : None
+Bad Blocks Exist: No
+Is VD Cached: No
 
-### Step 4 &#58; CacheCade
+Virtual Drive: 1 (Target Id: 1)
+Name :
+RAID Level : Primary-1, Secondary-0, RAID Level Qualifier-0
+Size : 2.727 TB
+Sector Size : 512
+Mirror Data : 2.727 TB
+State : Optimal
+Strip Size : 64 KB
+Number Of Drives : 2
+Span Depth : 1
+Default Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU
+Current Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU
+Default Access Policy: Read/Write
+Current Access Policy: Read/Write
+Disk Cache Policy : Disk's Default
+Encryption Type : None
+Bad Blocks Exist: No
+Is VD Cached: Yes
+Cache Cade Type : Read Only
 
+Exit Code: 0x00
+```
+
+We can see two virtual drives which are composed of two physical hard drives each, so a total of four physical disks. In this case, the RAID status is "Optimal", which means the RAID is functioning correctly.
+
+If the RAID status is "Degraded", we recommend that you verify the hard drive's state as well.
+
+#### Step 2: Determine the disk's state
+
+First, you must list the device Id for each drive in order to fully test them with smartmontools:
+
+```sh
+MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g' (Or : storcli /c0 /eall /sall show)
+ 
+Slot Number: 0
+Device Id: 4
+Raw Size: 279.460 GB [0x22eec130 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data: BTWL3450062J300PGN  INTEL SSDSC2BB300G4                     D2010355
+ 
+Slot Number: 1
+Device Id: 5
+Raw Size: 279.460 GB [0x22eec130 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data: BTWL345003X6300PGN  INTEL SSDSC2BB300G4                     D2010355
+ 
+Slot Number: 2
+Device Id: 7
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data:       PN2234P8K2PKDYHGST HUS724030ALA640                    MF8OAA70
+ 
+Slot Number: 3
+Device Id: 6
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data:       PN2234P8JYP59YHGST HUS724030ALA640                    MF8OAA70
+```
+
+With smartmontools' smartctl command, we will test each hard drive like this:
+
+```sh
+smartctl -d megaraid,N -a /dev/sdX
+```
+
+In this example, **/dev/sda** is the first RAID, and **/dev/sdb** is the second.
 
 > [!primary]
 >
-> CacheCade is a module from LSI used to improve random read performance
-> of hard drives using an SSD as front caching device.
+> In some situations, you may receive this output:
+> 
+> ```
+> /dev/sda [megaraid_disk_00] [SAT]: Device open changed type from 'megaraid' to 'sat'
+> ```
+> You must then replace megaraid with sat+megaraid:
+> 
+> ```
+> smartctl -d sat+megaraid,N -a /dev/sdX
+> ```
+
+> [!warning]
+>
+> If one of your hard drives is showing SMART errors, you should perform a full backup of your data as soon as possible and contact our support team. Our support team will need the slot number and device ID in order to identify the faulty disk.
 > 
 
-To verify the the CacheCade's configuration:
+#### Step 3: Resynchronising the RAID
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -CfgCacheCadeDsply -a0 (Or : storcli /c0 /dall show cachecade)</span> </pre></div>
+If you had one or more hard drives replaced, the RAID will re-synchronise automatically. You can use this command to see which hard drives are currently rebuilding:
+
+```sh
+MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g' (Or : storcli /c0 /eall /sall show)
+ 
+Slot Number: 0
+Device Id: 4
+Raw Size: 279.460 GB [0x22eec130 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data: BTWL3450062J300PGN  INTEL SSDSC2BB300G4                     D2010355
+ 
+Slot Number: 1
+Device Id: 5
+Raw Size: 279.460 GB [0x22eec130 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data: BTWL345003X6300PGN  INTEL SSDSC2BB300G4                     D2010355
+ 
+Slot Number: 2
+Device Id: 7
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data:       PN2234P8K2PKDYHGST HUS724030ALA640                    MF8OAA70
+ 
+Slot Number: 3
+Device Id: 6
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Firmware state: Rebuild
+Inquiry Data:       PN2234P8JYP59YHGST HUS724030ALA640                    MF8OAA70 
+```
+
+To monitor the progress of the rebuild operation, you can use this command:
+
+```sh
+MegaCli -PDRbld -ShowProg -PhysDrv [EncID:SlotID] -aALL (Or : storcli /c0/eEncID/sSlotID show rebuild)
+```
+
+The command will retrieve the enclosure ID and slot ID, as shown above.
+
+#### Step 4: Using CacheCade
+
+> [!primary]
+>
+> CacheCade is a module from LSI used to improve random read performance of hard drives using an SSD as front caching device.
+> 
+
+To verify the the CacheCade's configuration, use the following command:
+
+```sh
+MegaCli -CfgCacheCadeDsply -a0 (Or : storcli /c0 /dall show cachecade)
+```
+
 To see which RAID array is associated with the CacheCade:
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -CfgCacheCadeDsply -a0 | grep "Associated LDs"</span> </pre></div>
+```sh
+MegaCli -CfgCacheCadeDsply -a0 | grep "Associated LDs"
+```
 
-## LSI RAID controller
+### Using the LSI RAID controller
 
-### Step 1 &#58; Informations
-Prior to verify your RAID state, let's start by making sure you got a LSI RAID controller card:
+#### Step 1: Retrieve RAID information
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">lspci | grep -i lsi | grep -v megaraid</span>
-<span class="output">01:00.0 Serial Attached SCSI controller: LSI Logic / Symbios Logic SAS2004 PCI-Express Fusion-MPT SAS-2 [Spitfire] (rev 03)</span> </pre></div>
-This confirms the server has indeed a LSI RAID controller installed.
+Prior to verifying the RAID state, ensure that an LSI RAID controller card is installed with the following command:
 
+```sh
+lspci | grep -i lsi | grep -v megaraid
+01:00.0 Serial Attached SCSI controller: LSI Logic / Symbios Logic SAS2004 PCI-Express Fusion-MPT SAS-2 [Spitfire] (rev 03)
+```
 
+This confirms the presence of an LSI RAID controller.
 
 > [!primary]
 >
-> The grep -v megaraid command serves to remove MegaRaid RAID Controller card
-> from the lspci output as MegaRaid card are made by LSI Corporation as well
+> The grep -v megaraid command removes the MegaRaid RAID controller card from the lspci output, as MegaRaid cards are made by LSI Corporation as well.
 > 
 
-To gather and list available RAID array, you can use the lsiutil command:
-
-
+To gather and list available RAID arrays, you can use the lsiutil command:
 
 > [!warning]
 >
 > Caution, the values (1,0 21) may differ depending on the version. Be very careful when handling this type of control.
 > 
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">lsiutil -p1 -a 1,0 21</span>
-<span class="blank">&nbsp;</span>
-<span class="output">LSI Logic MPT Configuration Utility, Version 1.63-OVH (27a4f9f54c)</span>
-<span class="blank">&nbsp;</span>
-<span class="output">1 MPT Port found</span>
-<span class="blank">&nbsp;</span>
-<span class="output">     Port Name         Chip Vendor/Type/Rev    MPT Rev  Firmware Rev  IOC</span>
-<span class="output"> 1.  ioc0              LSI Logic SAS2004 03      200      13000000     0</span>
-<span class="blank">&nbsp;</span>
-<span class="output">RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 1</span>
-<span class="blank">&nbsp;</span>
-<span class="blank">&nbsp;</span>
-<span class="output">Volume 0 is DevHandle 011e, Bus 1 Target 0, Type RAID1 (Mirroring)</span>
-<span class="output">  Volume Name:</span>
-<span class="output">  Volume WWID:  0aaf504551c8efe5</span>
-<span class="output">  Volume State:  optimal, enabled, background init complete</span>
-<span class="output">  Volume Settings:  write caching disabled, auto configure hot swap enabled</span>
-<span class="output">  Volume draws from Hot Spare Pools:  0</span>
-<span class="output">  Volume Size 1906394 MB, 2 Members</span>
-<span class="output">  Primary is PhysDisk 1 (DevHandle 0009, Bus 0 Target 0)</span>
-<span class="output">  Secondary is PhysDisk 0 (DevHandle 000a, Bus 0 Target 1)</span>
-<span class="blank">&nbsp;</span>
-<span class="output">RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0</span> </pre></div>
-We can see 1 virtual drive which is composed of 2 physical hard drives.
+```sh
+lsiutil -p1 -a 1,0 21
+ 
+LSI Logic MPT Configuration Utility, Version 1.63-OVH (27a4f9f54c)
+ 
+1 MPT Port found
+ 
+     Port Name         Chip Vendor/Type/Rev    MPT Rev  Firmware Rev  IOC
+ 1.  ioc0              LSI Logic SAS2004 03      200      13000000     0
+ 
+RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 1
+ 
+Volume 0 is DevHandle 011e, Bus 1 Target 0, Type RAID1 (Mirroring)
+  Volume Name:
+  Volume WWID:  0aaf504551c8efe5
+  Volume State:  optimal, enabled, background init complete
+  Volume Settings:  write caching disabled, auto configure hot swap enabled
+  Volume draws from Hot Spare Pools:  0
+  Volume Size 1906394 MB, 2 Members
+  Primary is PhysDisk 1 (DevHandle 0009, Bus 0 Target 0)
+  Secondary is PhysDisk 0 (DevHandle 000a, Bus 0 Target 1)
+ 
+RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
+```
 
-In this case, the RAID status shows Optimal which means the RAID is up and running fine.
+In the example above, we can see one virtual drive, which is composed of two physical hard drives. In this case, the RAID status is "Optimal", which means the RAID is functioning correctly.
 
-If it happens the RAID status shows Degraded, we recommend you to verify the hard drives' state as well.
-
-
+If the RAID status is "Degraded", we recommend that you verify the hard drive's state as well.
 
 > [!primary]
 >
-> It may happens when you just received the server that you will see [In Progress:  data scrub].
-> This indication isn't a problem, it is an automated process generated by the controller
-> firmware in order to lower uncorrectable errors as much as possible.
+> In the case of a newly provisioned server, you may see this message: **[In Progress:  data scrub]**. This message is not an error. Rather, it's an automated process generated by the controller's firmware in order to lower uncorrectable errors as much as possible.
 > 
 
+#### Step 2: Determine the disk's state
 
-### Step 2 &#58; Disk's state
-To take a look at the hard drives state from the RAID controller, you can use this command:
+To take a look at the hard drive's state from the RAID controller, you can use this command:
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">lsiutil -p1 -a 2,0 21</span>
-<span class="blank">&nbsp;</span>
-<span class="output">LSI Logic MPT Configuration Utility, Version 1.63-OVH (27a4f9f54c)</span>
-<span class="blank">&nbsp;</span>
-<span class="output">1 MPT Port found</span>
-<span class="blank">&nbsp;</span>
-<span class="output">     Port Name         Chip Vendor/Type/Rev    MPT Rev  Firmware Rev  IOC</span>
-<span class="output"> 1.  ioc0              LSI Logic SAS2004 03      200      13000000     0</span>
-<span class="blank">&nbsp;</span>
-<span class="output">RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 2</span>
-<span class="blank">&nbsp;</span>
-<span class="blank">&nbsp;</span>
-<span class="output">PhysDisk 0 is DevHandle 000a, Bus 0 Target 1</span>
-<span class="output">  PhysDisk State:  optimal</span>
-<span class="output">  PhysDisk Size 1906394 MB, Inquiry Data:  ATA      HGST HUS724020AL AA70</span>
-<span class="output">  Path 0 is DevHandle 000a, Bus 0 Target 1, online, primary</span>
-<span class="output">  Path 1 is DevHandle 000a, invalid</span>
-<span class="blank">&nbsp;</span>
-<span class="output">PhysDisk 1 is DevHandle 0009, Bus 0 Target 0</span>
-<span class="output">  PhysDisk State:  optimal</span>
-<span class="output">  PhysDisk Size 1906394 MB, Inquiry Data:  ATA      HGST HUS724020AL AA70</span>
-<span class="output">  Path 0 is DevHandle 0009, Bus 0 Target 0, online, primary</span>
-<span class="output">  Path 1 is DevHandle 0009, invalid</span>
-<span class="blank">&nbsp;</span>
-<span class="output">RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0</span> </pre></div>
-In this case both drives show as Optimal.
+```sh
+lsiutil -p1 -a 2,0 21
+ 
+LSI Logic MPT Configuration Utility, Version 1.63-OVH (27a4f9f54c)
+ 
+1 MPT Port found
+ 
+     Port Name         Chip Vendor/Type/Rev    MPT Rev  Firmware Rev  IOC
+ 1.  ioc0              LSI Logic SAS2004 03      200      13000000     0
+ 
+RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 2
 
-Since the LSI card uses sg-map, we must test the /dev/sgX (X being the device number like /dev/sg1 for example) corresponding to the hard drives in order to test them with smartmontools.
+PhysDisk 0 is DevHandle 000a, Bus 0 Target 1
+  PhysDisk State:  optimal
+  PhysDisk Size 1906394 MB, Inquiry Data:  ATA      HGST HUS724020AL AA70
+  Path 0 is DevHandle 000a, Bus 0 Target 1, online, primary
+  Path 1 is DevHandle 000a, invalid
+
+PhysDisk 1 is DevHandle 0009, Bus 0 Target 0
+  PhysDisk State:  optimal
+  PhysDisk Size 1906394 MB, Inquiry Data:  ATA      HGST HUS724020AL AA70
+  Path 0 is DevHandle 0009, Bus 0 Target 0, online, primary
+  Path 1 is DevHandle 0009, invalid
+
+RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
+```
+
+In this case both drives show as "Optimal".
+
+Since the LSI card uses sg-map, we must test the /dev/sgX (X being the device number, like /dev/sg1, for example) corresponding to the hard drives in order to test them with smartmontools.
 
 Here's how to list them:
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">cat /proc/scsi/scsi | grep Vendor</span>
-<span class="output">  Vendor: LSI      Model: Logical Volume   Rev: 3000</span>
-<span class="output">  Vendor: ATA      Model: HGST HUS724020AL Rev: AA70</span>
-<span class="output">  Vendor: ATA      Model: HGST HUS724020AL Rev: AA70</span> </pre></div>
+```sh
+cat /proc/scsi/scsi | grep Vendor
+  Vendor: LSI      Model: Logical Volume   Rev: 3000
+  Vendor: ATA      Model: HGST HUS724020AL Rev: AA70
+  Vendor: ATA      Model: HGST HUS724020AL Rev: AA70
+```
 
 > [!primary]
 >
-> Each line represents a sg device which is mapped according to the order of the device shown
+> Each line represents a sg device, which is mapped according to the order of the device shown
 > here.
 > 
-> > [!faq]
-> >
-> > Ex: Vendor: LSI      Model: Logical Volume   Rev: 3000 => /dev/sg0
-> >> 
+> Example:
+> 
+> ```
+> Vendor: LSI      Model: Logical Volume   Rev: 3000 => /dev/sg0
+> 
 > Vendor: ATA      Model: HGST HUS724020AL Rev: AA70 => /dev/sg1
 > Vendor: ATA      Model: HGST HUS724020AL Rev: AA70 => /dev/sg2
-> etc...
-> >
+> ```
 > 
 
-In order to get the right device within one command, you may use the following command:
+In order to list the right devices within one command, use the following:
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">cat /proc/scsi/scsi | grep Vendor | nl -v 0 | sed 's/^/\/dev\/sg/' | grep -v LSI | cut -d ' ' -f1,6 | sed 's/sg\ /sg/' | sed 's/\/dev\/sg.\ /\/dev\/sg/'</span>
-<span class="output">/dev/sg1</span>
-<span class="output">/dev/sg2</span> </pre></div>
-With smartmontools's command smartctl, we will test each hard drives like the following:
+```sh
+cat /proc/scsi/scsi | grep Vendor | nl -v 0 | sed 's/^/\/dev\/sg/' | grep -v LSI | cut -d ' ' -f1,6 | sed 's/sg\ /sg/' | sed 's/\/dev\/sg.\ /\/dev\/sg/'
+/dev/sg1
+/dev/sg2
+```
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">smartctl -a /dev/sgX</span> </pre></div>
-The sg device number shown in the above command
+With smartmontools' smartctl command, we will test each hard drive, as shown below:
 
+```sh
+smartctl -a /dev/sgX 
+```
 
+The sg device number is shown in the above command.
 
 > [!warning]
 >
-> If one of your hard drives is showing SMART errors, perform a
-> full backup of your data as soon as possible and contact our
-> support.
+> If one of your hard drives is showing SMART errors, you should perform a full backup of your data as soon as possible and contact our support team.
 > 
 
+#### Step 3: Resynchronise the RAID
 
-### Step 3 &#58; Resynchronisation
-If you had one or more hard drives replaced, the RAID will re-synchronize automatically.
-
-To see if the RAID is in re-sync and monitor the resync progression, you can use this command:
-
-
+If you had one or more hard drives replaced, the RAID will re-synchronise automatically. To see if the RAID is in re-sync and monitor the resync progression, use this command:
 
 > [!warning]
 >
 > Caution, the values (3,0 21) may differ depending on the version. Be very careful when handling this type of control.
 > 
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">lsiutil -p1 -a 3,0 21</span>
-<span class="blank">&nbsp;</span>
-<span class="output">LSI Logic MPT Configuration Utility, Version 1.63-OVH (27a4f9f54c)</span>
-<span class="blank">&nbsp;</span>
-<span class="output">1 MPT Port found</span>
-<span class="blank">&nbsp;</span>
-<span class="output">     Port Name         Chip Vendor/Type/Rev    MPT Rev  Firmware Rev  IOC</span>
-<span class="output"> 1.  ioc0              LSI Logic SAS2004 03      200      13000000     0</span>
-<span class="blank">&nbsp;</span>
-<span class="output">RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 3</span>
-<span class="blank">&nbsp;</span>
-<span class="output">Volume 0 is DevHandle 011e, Bus 1 Target 0, Type RAID1 (Mirroring)</span>
-<span class="blank">&nbsp;</span>
-<span class="output">Volume 0 State:  degraded, enabled, resync in progress</span>
-<span class="output">Resync Progress:  total blocks 624943104, blocks remaining 484024888, 77%</span>
-<span class="blank">&nbsp;</span>
-<span class="output">RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0</span> </pre></div>
+```sh
+lsiutil -p1 -a 3,0 21
+ 
+LSI Logic MPT Configuration Utility, Version 1.63-OVH (27a4f9f54c)
+ 
+1 MPT Port found
+ 
+     Port Name         Chip Vendor/Type/Rev    MPT Rev  Firmware Rev  IOC
+ 1.  ioc0              LSI Logic SAS2004 03      200      13000000     0
+ 
+RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 3
+ 
+Volume 0 is DevHandle 011e, Bus 1 Target 0, Type RAID1 (Mirroring)
+ 
+Volume 0 State:  degraded, enabled, resync in progress
+Resync Progress:  total blocks 624943104, blocks remaining 484024888, 77%
+ 
+RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
+```
 
 > [!warning]
 >
@@ -367,14 +380,14 @@ To see if the RAID is in re-sync and monitor the resync progression, you can use
 > percentage. It is the remaining percentage.
 > 
 
-
-## 3Ware RAID controller
-
+### 3Ware RAID controller
 
 > [!alert]
 >
-> This RAID controller card is deprecated, we highly recommend you to contact
-> OVH Support to schedule an intervention to replace the RAID
-> controller by an LSI as 3ware RAID controller are proven
-> to be rather unstable. This type of intervention requires a reinstallation of your server. Then be sure to backup your data first.
+> This RAID controller card is deprecated. We highly recommend that you contact OVH Support to schedule an intervention to replace the RAID controller with an LSI, as 3ware RAID controllers are proven to be rather unstable. This type of intervention requires a reinstallation of your server. Be sure to backup your data first.
 > 
+
+## Go further
+
+[Configuring software RAID](https://docs.ovh.com/ca/en/dedicated/raid-soft/){.external}
+Join our community of users on <https://community.ovh.com/en/>.

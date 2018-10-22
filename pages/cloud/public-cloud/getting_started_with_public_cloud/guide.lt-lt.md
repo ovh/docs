@@ -1,98 +1,94 @@
 ---
-title: 'Pradžia su Public Cloud: identifikavimasis ir projekto kūrimas'
-excerpt: 'Šiame gide paaiškinama, kaip sukurti pirmąjį projektą Public Cloud paslaugoje'
-slug: pradzia_su_public_cloud_identifikavimasis_ir_projekto_kurimas
+title: 'Getting started with Public Cloud: logging in and creating a project'
+slug: getting_started_with_public_cloud_logging_in_and_creating_a_project
+excerpt: 'This guide will show you how to create your first Public Cloud project'
 legacy_guide_number: g2329
+section: 'Getting started'
 ---
 
+**Last updated 15th October 2018**
 
-## 
-Mokėjimas už Public Cloud vykdomas pagal naudojimą[/b (anglų k. Pay as you Go).
-Tai suteikia lankstumo. Jūs galite pridėti ar pašalinti resursus (virtualias mašinas, saugyklą, parinktis...) paslaugos naudojimo eigoje ir gauti sąskaitas kas mėnesį.
-Jūs galite stebėti resursų naudojimą ir peržiūrėti sąmatą savo valdymo sąsajoje. Jokių netikėtumų mėnesio pabaigoje.
- 
+## Objective
 
+[Public Cloud instances](https://www.ovh.lt/public-cloud/instances/){.external} offer a flexible, pay-as-you-go solution for managing virtual resources. This means that you can add and remove resources (instances, storage, etc) as and when you need to.
 
-## 
-Jei dar neturite identifikatoriaus, sukurkite jį [šiame puslapyje](https://www.ovh.lt/pagalba/new_nic.xml). Jums reikės užpildyti kontaktinių duomenų formą. Pateikite duomenis ir įsitikinkite, kad nurodytas el. pašto adresas yra galiojantis.
+**This guide will show you how to create your first Public Cloud project.**
 
-## Patarimas:
-El. pašto adresas neturėtų būti susietas su jūsų domenu. Taip pat nurodykite atsarginį el. pašto adresą.
-Užpildę kontaktinių duomenų formą el. paštu gausite pranešimą, patvirtinantį OVH kliento paskyros sukūrimą. Išsaugokite savo identifikatorių (prisijungimo ID, arba NIC-handle) ir įsiminkite slaptažodį.
-Jau turite identifikatorių, tačiau pamiršote slaptažodį? Vadovaukitės šiuo gidu: [gidas]({legacy}2123).
- 
+## Requirements
 
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-## 
-Pateikite savo identifikatorių ir prisijunkite prie [kliento valdymo sąsajos](https://www.ovh.com/manager).
-OVH siūlo rinktis iš daugybės produktų, kuriuos galėsite administruoti savo kliento valdymo sąsajoje. Public Cloud paslaugai naudokite CLOUD skiltį viršuje kairėje.
+## Instructions
 
-![](images/img_4657.jpg){.thumbnail}
-CLOUD aplinkoje sukursime Public Cloud projektą.
- 
+### Create a project
 
+Log into to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Once you're logged in, click on the `Cloud`{.action} menu.
 
-## 
-Projektas būtinas norint įsigyti Public Cloud produktus. Pirkimas galimas tik po projekto sukūrimo.
-Jei dar nepatvirtinote sutikimo su specialiosiomis Public Cloud teikimo sutarties sąlygomis, jos bus rodomos kaip paaiškinta žemiau:
+![cloud menu](images/menu.png){.thumbnail}
 
-![](images/img_4658.jpg){.thumbnail}
-Jūs turėtumėte perskaityti ir patvirtinti sutikimą su sutarties sąlygomis pažymint langelį.
-Taip pat įveskite savo projekto pavadinimą. Prireikus galėsite jį pakeisti.
+Next, click on the `Order`{.action} button.
 
+![order button](images/order-button.png){.thumbnail}
 
-## Mokėjimo priemonė
-Kaip paaiškinta, mokėjimas už Public Cloud vykdomas už naudojimą. Virtualių mašinų, saugyklos ir kitų resursų pirkimas bus įmanomas tik po projekto sukūrimo.
-Pradžioje, tik jūsų pirmajam projektui, OVH siūlo rinktis vieną iš šių 3 metodų:
+Under the 'Order' menu, click `Cloud project`{.action}.
 
+![order cloud project](images/order-cloud-project.png){.thumbnail}
 
-- 1 metodas: įvesti mokėjimo priemonę
+You will now need to give the project a name and chose a payment method.
 
+![project details](images/project-details.png){.thumbnail}
 
-Tai paprasčiausias metodas. Jums tereikia įregistruoti mokėjimo priemonę ir mokėjimas bus nuskaitytas automatiškai mėnesio pradžioje. Jokios rizikos, kad pamiršite pratęsti nuomą!
+### Select a payment method
 
-Galimos pridėti mokėjimo priemonės bus nurodytos jūsų valdymo sąsajoje: banko kortelė, PayPal.
-Pastaba: jei tai jūsų pirmas pirkimas OVH, bus siūloma tik 3-D Secure standartus atitinkanti banko kortelė.
+As mentioned earlier, the Public Cloud is a pay-as-you-go service. Once your project is created, you can buy instances, storage etc. However, when you create your first project, you'll need to choose one of the following three payment methods:
 
-![](images/img_4659.jpg){.thumbnail}
-3 metodas: Cloud kreditų užsakymas
-Jei neturite mokėjimo priemonės, jūs galite pridėti Cloud kreditą. Pradinė įmoka yra 30 eurų.
-Šis Cloud kreditas bus susietas su jūsų projektu ir leis įsigyti virtualių mašinų, saugyklų, parinkčių.
+#### Register a bank card
 
-Cloud kreditas neperkeliamas, negrąžinamas, nekeičiamas į pinigus ir galioja tik 13 mėnesių. Per 13 mėnesių nepanaudotas kreditas prarandamas.
+This is the easiest method. When you register a bank card, you will automatically be debited at the start of the month. This method will allow you to register (depending on your country):
 
-![](images/img_4660.jpg){.thumbnail}
-3 metodas: kvito įjungimas
-Jei turite nuolaidos kodą (kvitą), jūs galite jį pridėti šiame žingsnyje. Jūsų kvito naudojimo trukmė ir suma gali būti skirtinga.
+* a credit/debit card
+* a PayPal account
+* a bank account
 
-![](images/img_4661.jpg){.thumbnail}
- 
+> [!primary]
+>
+If this is your first payment with OVH, we will only accept credit cards with 3-D Secure.
+>
 
+Select your desired method from the list and click the `Add`{.action} button.
 
-## 
-Sukurtas projektas bus prieinamas meniu kairėje.
+![register bank card](images/register-bank-card-01.png){.thumbnail}
 
+Once you've clicked the `Add`{.action} button, you'll be prompted to complete the setup of your payment method, as shown below.
 
-## Virtualios mašinos ar saugyklos pridėjimas
-Paspaudę mygtuką +Pridėti, jūs galėsite paleisti Cloud virtualią mašiną per keletą sekundžių.  
-Jūs taip pat galite vadovautis ([šiuo gidu]({legacy}1775)).
+![register bank card](images/register-bank-card-02.png){.thumbnail}
 
-![](images/img_4665.jpg){.thumbnail}
+#### Buy cloud credit
 
+You can also pay for your [Public Cloud](https://www.ovh.lt/public-cloud/instances/){.external} usage using cloud credit. Your first cloud credit purchase will cost £30. Any resources you use after this will consume your credit. When your credit is depleted, you can purchase more using any accepted payment method.
 
-## Naudojimo valdymas
-Mygtukas Projekto valdymas ir naudojimas leidžia valdyti mokėjimo priemones, kvitus, naudotojų teises ir analizuoti apmokėjimą. 
-Jūs taip pat galite vadovautis [šiuo gidu]({legacy}2031).
+Cloud credit is non-transferable or refundable. It has no monetary value, and if it is not used within 13 months it will be lost.
 
-![](images/img_4662.jpg){.thumbnail}
-Sąmatos pavyzdys:
+![cloud credit](images/img_4658.jpg){.thumbnail}
 
-![](images/img_4663.jpg){.thumbnail}
-Kvito pavyzdys:
+#### Use a voucher
 
-![](images/img_4664.jpg){.thumbnail}
+If you have a promotional code, you can add it during this stage to pay for your resources. The duration of the voucher may vary.
 
+![voucher](images/img_4661.jpg){.thumbnail}
+ 
+Once you have created your project, it will be available in the left-hand menu.
 
-## 
-Gidų sąrašas [Grįžti į Cloud gidų sąrašą]({legacy}1785)
+### Add an instance or storage
 
+To add resources to your new project, click the `Actions`{.action} button on the `Infrastructure`{.action} tab.
+
+![add a resource](images/add-a-resource-01.png){.thumbnail}
+
+Next, from the dropdown menu, select either `Add a server`{.action} or `Add a disk`{.action}.
+
+![add a resource](images/add-a-resource-02.png){.thumbnail}
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

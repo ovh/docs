@@ -1,131 +1,101 @@
 ---
-title: Virtualios mašinos kūrimas OVH kliento valdymo sąsajoje
-excerpt: Virtualios mašinos kūrimas OVH kliento valdymo sąsajoje
-slug: virtualios_masinos_kurimas_ovh_kliento_valdymo_sasajoje
+title: 'Create an instance in your OVH customer account'
+slug: create_an_instance_in_your_ovh_customer_account
+excerpt: 'This guide will show you how to create an instance in your Public Cloud account.'
 legacy_guide_number: g1775
+section: 'Getting started'
 ---
 
+**Last updated 17th October 2018**
 
-## 
-Public Cloud jums leidžia bet kuriuo metu greitai ir paprastai kurti virtualias mašinas (instances), vos keliais spragtelėjimais.
+## Objective
 
-Šios virtualios mašinos panašios į naujausios kartos [OVH VPS](https://www.ovh.lt/vps/), tačiau gali atsakyti į kitus poreikius.
+The [Public Cloud](https://www.ovh.lt/public-cloud/instances/){.external} lets you create instances (i.e. virtual servers) quickly and easily, in just a few clicks.
 
-Pagrindiniai VPS ir Public Cloud skirtumai:
+**This guide will show you how to create an instance in your Public Cloud account.**
 
-VPS:
+## Requirements
 
-- Paprasta valdymo sąsaja
-- Daugiau dėmesio vienam virtualiam serveriui
-- Platus distribucijų pasirinkimas.
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud](https://www.ovh.lt/public-cloud/instances/){.external} project created in your OVH account
+* an SSH key created in your OVH customer account
 
+## Intructions
 
-Public Cloud virtuali mašina:
+> [!primary]
+>
+The rest of this guide assumes that you have set the view of your cloud project to `Infrastructure`{.action}. You can change the view with the toggle switch on the right-hand side of the page, as shown below:
+>
 
-- Apmokėjimo pasirinkimas: mėnesinis, valandinis
-- OpenStack API valdymo sąsaja
-- Virtualios mašinos veikia kartu
+![view](images/pci-instance-view-01.png){.thumbnail}
 
+### Add an instance
 
-Šiame gide paaiškinama, kaip sukurti virtualią mašiną OVH kliento sąsajoje.
+First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Cloud`{.action} menu.
 
+![cloud menu](images/pci-instance-cloud-01.png){.thumbnail}
 
-## Reikalavimai
+Next, select your cloud project under the `Servers`{.action} list on the left-hand side of the page.
 
-- Prisijungti prie [OVH kliento sąsajos](https://www.ovh.com/manager/cloud/)
-- Sukonfigūruoti SSH raktą OVH valdymo sąsajoje pagal šį gidą: []({legacy}1769)
+![servers list](images/pci-instance-servers-01.png){.thumbnail}
 
+After selecting your project, click the `Infrastructure`{.action} option.
 
+![infrastructure](images/pci-instance-infrastructure-01.png){.thumbnail}
 
+Now, click the `Actions`{.action} button.
 
-## Serverio pridėjimas
+![actions](images/pci-instance-actions-01.png){.thumbnail}
 
-- Viršutiniame kairiajame kampe paspauskite mygtuką Add.
+Next, click the `Add a server`{.action} button.
 
+![add an instance](images/pci-instance-actions-02.png){.thumbnail}
 
+### Configure the instance
 
-![](images/img_2707.jpg){.thumbnail}
+After clicking the `Add a server`{.action} button, the configuration settings will appear as shown below.
 
-- Pasirinkite Add a server
+![configure an instance](images/pci-instance-configuration-01.png){.thumbnail}
 
+These settings allow you to configure:
 
+* the datacentre and region where the instance will be hosted
+* the server's operating system
+* the server model
+* an SSH key for security (not needed for Windows servers)
+* several advanced options
 
-![](images/img_2708.jpg){.thumbnail}
+> [!primary]
+>
+Please note that for Windows servers, authentication is password based, so SSH keys are not used at all.
+>
 
 
-## Pasirinkite serverio technines ypatybes
+When you have configured the options you want, decide whether you want the instance to be billed hourly or monthly and toggle the billing switch accordingly.
 
-- Paspaudus modelio dešinėje parodomas naujas meniu:
+![configure an instance](images/pci-instance-configuration-02.png){.thumbnail}
 
+Finally, click the `Launch now`{.action} button to create the instance.
 
+![configure an instance](images/pci-instance-configuration-03.png){.thumbnail}
 
-![](images/img_2709.jpg){.thumbnail}
-Tuomet galite pasirinkti virtualios mašinos tipą:
+Your instance will now be created. It may take a few minutes to finalise.
 
-- VPS-SSD gama
+Once the instance has been created, your login information will be displayed, which you can copy to your computer's clipboard by clicking the copy icon.
 
-|nuo 1 iki 2 vCores|nuo 2 GB iki 8 GB RAM|nuo 10 GB iki 40 GB disko vietos|
+![login](images/pci-instance-login-01.png){.thumbnail}
 
+The newly-created instance will now be visible in your account.
 
+![account](images/pci-instance-created-01.png){.thumbnail}
 
-- CPU gama
+> [!warning]
+>
+When you create an instance and choose to pay monthly, you must keep this instance for at least until the end of the current month.
+>
 
-|nuo 2 iki 32 vCores|nuo 7 GB iki 120 GB RAM|nuo 200 GB iki 1600 GB disko vietos|
+## Go further
 
+[Getting started with Public Cloud](https://docs.ovh.com/lt/public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project/){.external}
 
-
-- RAM gama
-
-|nuo 2 iki 16 vCores|nuo 30 GB iki 240 GB RAM|nuo 200 GB iki 1600 GB disko vietos|
-
-
-
-
-## Pasirinkite operacinę sistemą
-
-- Pavyzdžiui Ubuntu 14.04
-
-
-
-![](images/img_2710.jpg){.thumbnail}
-
-
-## Duomenų centro regiono pasirinkimas
-
-- Pavyzdžiui, Strasbūras
-
-
-
-![](images/img_2711.jpg){.thumbnail}
-
-
-## Pasirinkite SSH raktą, kurį naudosite
-
-- Pavyzdžiui:
-
-
-
-![](images/img_2712.jpg){.thumbnail}
-
-## Informacija
-Kuriant Windows virtualią mašiną, nebūtina konfigūruoti SSH rakto.
-
-
-## Pavadinkite serverį ir paleiskite jį
-
-- Įveskite virtualios mašinos pavadinimą
-- Pasirinkite valandinį ar mėnesinį apmokėjimą
-
-
-
-## Dėmesio:
-Pasirinkdami mėnesinį apmokėjimą už virtualią mašiną, jūs įsipareigojate ją naudoti bent iki einamojo mėnesio pabaigos.
-
-- Spragtelėkite Start now
-
-
-
-
-## 
-[Grįžti į Cloud gidų sąrašą]({legacy}1785)
-
+Join our community of users on <https://community.ovh.com/en/>.

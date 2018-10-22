@@ -1,9 +1,9 @@
 ---
-title: Consulter son compte Exchange depuis l'interface OWA
+title: 'Consulter son compte Exchange depuis l''interface OWA'
 slug: exchange-2016-guide-utilisation-outlook-web-app
 legacy_guide_number: 1918
-excerpt: Retrouvez ici le detail concernant Outlook Web App pour Exchange 2016
-section: Utilisation d'Outlook Web Application (OWA)
+excerpt: 'Retrouvez ici le detail concernant Outlook Web App pour Exchange 2016'
+section: 'Utilisation d''Outlook Web Application (OWA)'
 order: 1
 ---
 
@@ -356,7 +356,7 @@ Ouvrez votre navigateur internet puis saisissez l'adresse de votre image (ex: ww
 - Cliquez sur votre image et réalisez un clique droit puis "copiez l'image".
 - Depuis le menu signature électronique, réaliser un clique droit "coller".
 
-Voici une image copier/coller dans la section signature. Il est possible de la "redimensionner" en cliquant directement sur l'image.
+Voici une image copier/coller dans la section signature.
 
 
 ![emails](images/4263.png){.thumbnail}

@@ -1,49 +1,71 @@
 ---
-title: Glue Record
-excerpt: ¿Para qué sirve un Glue Record?
+title: 'Personalizar los servidores DNS de un dominio'
 slug: glue_record
-legacy_guide_number: g1568
-section: DNS (servidor y zona)
+excerpt: 'Cómo personalizar los servidores DNS de un dominio en OVH'
+section: 'DNS (servidor y zona)'
+order: 7
 ---
 
+**Última actualización: 17/10/2018**
 
-## 
-El Glue Record permite personalizar sus servidores DNS con su nombre de dominio. De ese modo, será su nombre el que aparezca en las bases de datos Whois, en lugar del de su proveedor de hosting. Puede crear sus propios servidores DNS en IPv4.
+## Objetivo
 
-Es posible personalizar servidores DNS para todos los dominios gTLD: .com, .net, .org...
-Para utilizar este servicio, acceda al [área de cliente](https://www.ovh.com/manager/web/login.html).
+Los servidores DNS alojan la configuración DNS de los dominios. Esta configuración DNS, también llamada zona DNS, contiene una serie de datos técnicos: los registros. Convencionalmente, estos registros sirven de enlace entre el dominio y el servidor o servidores en los que están alojados el sitio web y las cuentas de correo electrónico.
 
-En el apartado «Dominios» de la columna izquierda, seleccione el dominio correspondiente.
+Según sus necesidades, es posible personalizar el nombre de los servidores DNS de su dominio en OVH.
 
-![](images/img_2903.jpg){.thumbnail}
-Abra la pestaña «Glue» y haga clic en el botón «Añadir».
+**Esta guía explica cómo personalizar los servidores DNS de un dominio en OVH.**
 
-![](images/img_2900.jpg){.thumbnail}
-Se abrirá un cuadro de diálogo donde podrá configurar el Glue Record.
+## Requisitos
 
-![](images/img_2901.jpg){.thumbnail}
-Indique un subdominio y la dirección IP de un servidor DNS válido.
+- Tener un [dominio](https://www.ovh.es/dominios/){.external} registrado en OVH.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
 
-![](images/img_2902.jpg){.thumbnail}
+## Procedimiento
 
+**Personalizar los servidores DNS de un dominio es una operación delicada**. Una modificación errónea podría deshabilitar el acceso al sitio web y la recepción de nuevos mensajes en las direcciones de correo electrónico. Siga los pasos que se describen a continuación y pida ayuda si no está seguro de la acción que va a realizar.
 
-## 
-Si utiliza servidores DNS externos a OVH, es necesario crear el subdominio en la zona DNS correspondiente, y no en la zona de OVH.
-Una vez creado el registro Glue, es necesario declarar un registro de tipo A en la zona DNS.
+### 1. Añadir los registros Glue
 
-Para ello, abra la pestaña «Zona DNS».
+Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio cuyos servidores DNS quiera personalizar. A continuación, abra la pestaña `Glue`{.action}, en la que podrá consultar una tabla con los registros Glue configurados actualmente en OVH para su dominio. 
 
-![](images/img_2953.jpg){.thumbnail}
-Haga clic en «Añadir un registro».
+Para añadir un nuevo registro Glue, haga clic en el botón `Añadir`{.action}.
 
-![](images/img_2952.jpg){.thumbnail}
-Seleccione «A».
+![Registro Glue](images/customize-dns-servers-step1.png){.thumbnail}
 
-![](images/img_2956.jpg){.thumbnail}
-A continuación podrá ver el registro de tipo «A» que se va a generar, en función de los datos que haya introducido. 
+Introduzca la información solicitada:
 
-Haga clic en «Siguiente» y acepte la adición del registro.
+|Campo|Descripción|  
+|---|---|
+|Nombre del host|Indique el nombre de host que quiera utilizar como servidor DNS personalizado.|
+|IP de destino|Introduzca las direcciones IP a las que debe estar asociado el nombre del host, es decir, la dirección IP del servidor DNS que utiliza actualmente su dominio. Si este utiliza los servidores DNS de OVH y no conoce la dirección IP correspondiente, utilice nuestra herramienta [Dig](https://www.ovh.es/soporte/herramientas/dig_domain.pl){.external} para consultarla. Podrá verla en el apartado **ANSWER SECTION** junto a «A».|
 
-![](images/img_2954.jpg){.thumbnail}
-Será necesario esperar entre 24 y 48 horas a que se propaguen los cambios.
+Una vez que haya introducido los datos, haga clic en el botón `Añadir`{.action}, compruebe que la información es correcta y haga clic en `Aceptar`{.action}. Repita esta acción tantas veces como sea necesario, según el número de servidores DNS que utilice el dominio.
 
+![Registro Glue](images/customize-dns-servers-step2.png){.thumbnail}
+
+### 2. Crear los registros A correspondientes
+
+A continuación, es necesario crear los registros A para los nombres de host que haya indicado en el paso anterior. Cada registro A debe apuntar a la dirección IP de destino correspondiente al nombre de host creado anteriormente.
+
+Para ello, utilice el panel que le ofrezca el proveedor que gestione la configuración DNS de su dominio. Pueden darse dos situaciones:
+
+- **Si el dominio no utiliza la configuración DNS de OVH**, deberá ponerse en contacto con el proveedor que gestione dicha configuración. Una vez realizada esta operación, vaya al siguiente paso.
+
+- **Si el dominio utiliza la configuración DNS de OVH**, abra la pestaña `Zona DNS`{.action} y añada un nuevo registro A haciendo clic en `Añadir un registro`{.action}. Seleccione el tipo de registro `A`{.action} y siga los pasos que se indican. Si necesita ayuda, consulte la guía [Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}.
+
+![Registro Glue](images/customize-dns-servers-step3.png){.thumbnail}
+
+### 3. Cambiar los servidores DNS de un dominio
+
+Por último, solo queda cambiar los servidores DNS del dominio. Para ello, abra la pestaña `Servidores DNS`{.action} y haga clic en `Cambiar los servidores DNS`{.action}. Sustituya los servidores DNS actuales por los que quiera utilizar. 
+
+Siga los pasos que se indican y, si necesita ayuda, consulte la guía [Cambiar los servidores DNS de un dominio en OVH](https://docs.ovh.com/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}.
+
+Una vez que haya editado los servidores DNS, espere a que se apliquen los cambios. Tenga en cuenta que es necesario un tiempo máximo de propagación de 48 horas.
+
+![Registro Glue](images/customize-dns-servers-step4.png){.thumbnail}
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
