@@ -44,7 +44,7 @@ A pricing estimator is now available on dataconvergence.ovh.com
 </tr>
 <tr>
 <td>
-<span class="label release success">Changed</span>
+<span class="label release warning">Changed</span>
 </td>
 <td>
 FreeIPA and cluster scaling are now documented in platform section of docs.ovh.com/gb/en
@@ -52,7 +52,7 @@ FreeIPA and cluster scaling are now documented in platform section of docs.ovh.c
 </tr>
 <tr>
 <td>
-<span class="label release success">Changed</span>
+<span class="label release warning">Changed</span>
 </td>
 <td>
 Deployment CLI provides a progression bar in openstack CLI during a cluster deployment
@@ -60,7 +60,7 @@ Deployment CLI provides a progression bar in openstack CLI during a cluster depl
 </tr>
 <tr>
 <td>
-<span class="label release success">Changed</span>
+<span class="label release warning">Changed</span>
 </td>
 <td>
 Links to HiveServer2 Interactive WebUI and LogSearch are now pointing to the right target 
