@@ -5,7 +5,7 @@ excerpt: 'Apprenez à contrôler la saturation de votre connexion internet'
 section: 'Diagnostic et dépannage'
 ---
 
-**Dernière mise à jour le 22/10/2018**
+**Dernière mise à jour le 23/10/2018**
 
 ## Objectif
 
@@ -26,9 +26,9 @@ Depuis votre espace client OVH, vous avez la possibilité de consulter l'activit
 
 Poursuivez la lecture de cette documentation selon la vérification que vous souhaitez effectuer. Bien évidemment, les deux peuvent être réalisées conjointement.
 
-- [Vérifier l'activité de votre connexion depuis l'espace client](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/#verifier-lactivite-de-votre-connexion-depuis-lespace-client){.external}.
+- [Vérifier l'activité de ma connexion depuis l'espace client](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/#verifier-lactivite-de-ma-connexion-depuis-lespace-client){.external}.
 
-- [Effectuer un test ponctuel de débit](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/#effectuer-un-test-ponctuel-de-debit){.external}.
+- [Effectuer un test ponctuel de débit](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/#effectuer-un-test-ponctuel-de-debit_1){.external}.
 
 ### Vérifier l'activité de ma connexion depuis l'espace client
 
@@ -74,7 +74,7 @@ Par exemple, vérifiez si vous n'avez pas un logiciel ou un système d'exploitat
 
 - **Le débit utilisé sur votre connexion n'atteint pas le débit maximal alloué à cette dernière** : 
 
-Vous ne constatez alors pas de saturation de votre connexion. Si tel est le cas, veuillez poursuivre vers l'étape « [Effectuer un test ponctuel de débit](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/#effectuer-un-test-ponctuel-de-debit){.external} » de cette documentation.
+Vous ne constatez alors pas de saturation de votre connexion. Si tel est le cas, veuillez poursuivre vers l'étape « [Effectuer un test ponctuel de débit](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/#effectuer-un-test-ponctuel-de-debit_1){.external} » de cette documentation.
 
 ### Effectuer un test ponctuel de débit
 
@@ -89,7 +89,7 @@ Une fois prêt, cliquez sur `Lancer le test`{.action} puis patientez. Dès que l
 
 ![xdslsaturation](images/xdsl-capacity-step5.png){.thumbnail}
 
-Si vous constatez un débit bien inférieur à celui que votre ligne peut livrer, et si ce n'est pas déjà fait, nous vous invitons à [vérifier l'activité de votre connexion depuis l'espace client](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/#verifier-lactivite-de-votre-connexion-depuis-lespace-client){.external} afin de vous assurer qu'aucun élément n'accapare l'intégralité ou une grande partie des ressources disponibles. Si votre connexion n'est pas saturée, reportez-vous aux instructions de la documentation « [Résoudre une interruption ou des lenteurs de navigation](https://docs.ovh.com/fr/xdsl/blablabla/){.external} » car un élément pourrait perturber la qualité de la connexion sur l'équipement que vous utilisez. 
+Si vous constatez un débit bien inférieur à celui que votre ligne peut livrer, et si ce n'est pas déjà fait, nous vous invitons à [vérifier l'activité de votre connexion depuis l'espace client](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/#verifier-lactivite-de-ma-connexion-depuis-lespace-client){.external} afin de vous assurer qu'aucun élément n'accapare l'intégralité ou une grande partie des ressources disponibles. Si votre connexion n'est pas saturée, reportez-vous aux instructions de la documentation « [Résoudre une interruption ou des lenteurs de navigation](https://docs.ovh.com/fr/xdsl/resoudre-interruption-lenteurs-navigation/){.external} » car un élément pourrait perturber la qualité de la connexion sur l'équipement que vous utilisez. 
 
 Si vous constatez un bon débit lors de vos différents tests, ceci indique que votre connexion fonctionne correctement. Cependant, si vous obtenez de manière récurrente ou aléatoire un débit faible, reportez-vous aux instructions de la documentation « [Rétablir la synchronisation d’une connexion suite à une coupure](https://docs.ovh.com/fr/xdsl/retablir-synchronisation-suite-coupure/){.external} » car un élément pourrait perturber la qualité de votre connexion.
 
