@@ -1,88 +1,78 @@
 ---
-title: Publication annuaire
+title: 'Renseigner les coordonnées d''une ligne ou d''un numéro et les faire paraître en ligne'
 slug: publication-annuaire
-legacy_guide_number: '7536706'
-space_key: CRTEL
-space_name: Téléphonie
-section: Lignes téléphoniques
+excerpt: 'Découvrez comment rattacher des informations à votre ligne ou numéro OVH et les publier dans les annuaires'
+section: Administratif
 ---
 
-### Préambule {#préambule}
+**Dernière mise à jour le 22/10/2018**
 
-Lors de l'activation d'un numéro alias ou d'une ligne VoIP, vous avez la possibilité de choisir ou non la parution dans les annuaires.
+## Objectif
 
-Niveau : Débutant
+Lorsque vous disposez d'une ligne ou d'un numéro chez un opérateur, il est obligatoire d'y rattacher des coordonnées. Chez OVH, vous avez la possibilité de réaliser cette démarche lors de votre commande ou, ensuite, depuis votre espace client. Vous pouvez même choisir de publier ces informations dans les annuaires en ligne.
 
-------------------------------------------------------------------------
+**Découvrez comment rattacher des informations à votre ligne ou numéro OVH et les faire paraître dans les annuaires.**
 
-### Prérequis {#prérequis}
+## Prérequis
 
--   Disposer d'un numéro alias ou d'une ligne VoIP
+- Disposer d’un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external} ou d'une [ligne VoIP OVH](https://www.ovhtelecom.fr/telephonie/){.external}.
+- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
 
-------------------------------------------------------------------------
+## En pratique
 
-### Parution des annuaires via le manager V3 {#parution-des-annuaires-via-le-manager-v3}
+### Étape 1 : comprendre l'obligation de renseigner ses coordonnées
 
--   **Particulier :**
+Renseigner vos coordonnées est obligatoire pour l'ensemble de vos lignes et numéros OVH. Si vous n'avez pas fourni ces informations lors de votre commande, vous serez invité à le faire par la suite depuis votre espace client.
 
-Afin de pouvoir accéder à vos coordonnées ainsi qu'à la parution des annuaires, cliquez sur la rubrique coordonnées puis sur **gérer** :
+Cette démarche est nécessaire pour deux raisons :
 
-![](images/coordonn%C3%A9es.png){.thumbnail}
+- **permettre à OVH d'assurer la liaison vers les bons services d'urgence** : lorsque vous composez un numéro d'urgence sur votre téléphone, votre opérateur assure l'acheminement de cet appel vers le service d'urgence le plus proche de l'adresse d'installation de votre ligne ou de votre numéro ;
 
-Dans le formulaire, vous devez remplir obligatoirement les champs : nom, prénom, code postal, ville, nom de la voie.
+- **permettre à OVH d'assurer la liaison vers votre nouvel opérateur lors d'une portabilité** : si vous décidez de porter votre numéro chez un autre opérateur, vous devrez alors lui fournir les informations de ce numéro. Celles-ci doivent correspondre aux données renseignées chez OVH.
 
-Ensuite, dans la rubrique "**parution dans les annuaires**", vous devez spécifier si vous acceptez ou non le **démarchage téléphonique**, si vous souhaitez la publication dans l'**annuaire inversé,** et comment vous souhaitez faire paraître votre **identité** ainsi que la **localité**.
+Assurez-vous ainsi d'indiquer et de maintenir à jour les coordonnées de l'ensemble de vos lignes et numéros OVH.
 
-Pour finir, pour valider la parution, cliquer sur **valider**.
+### Étape 2 : modifier ses coordonnées et demander leur parution
 
-![](images/particulier%20annuaire.png){.thumbnail}
+Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne ou le numéro OVH concerné.
 
--   **Entreprise/Professionnel**
+Positionnez-vous ensuite sur l'onglet `Coordonnées`{.action}. L'image ci-dessous montre l'accès pour modifier les coordonnées d'un numéro OVH. Vous pourriez avoir davantage d'onglets si vous réalisez la manipulation pour une ligne OVH.
 
-![](images/entreprise%20annuaire2.png){.thumbnail}
+![telephonedirectory](images/manage-telephone-directory-step1.png){.thumbnail}
 
-Dans ce formulaire, vous retrouverez les mêmes champs que celui du "particulier" sauf que vous pourrez spécifier la **dénomination de votre entreprise**.
+Descendez en bas de la page qui apparaît, puis cliquez sur le bouton `Modifier les coordonnées`{.action}. 
 
-Si vous souhaitez faire paraître votre numéro dans les **pages jaunes/118712**, vous devez spécifier votre numéro **SIRET**. La catégorie dans les pages jaunes est prédéfinie par rapport à la déclaration de votre entreprise.
+Dès lors, complétez ou modifiez avec précision les champs se trouvant dans les sections `Informations` et `Adresse`. Dans la dernière section `Parution dans les annuaires`, deux possibilités s'offrent à vous :
 
--   Pour désactiver la parution, il suffit de passer le champ "**publication dans l'annuaire**" à **non** et de **valider.**
+- **vous souhaitez publier vos informations dans les annuaires en ligne** : choisissez `Oui`{.action} dans le menu déroulant en dessous de « Publication dans l’annuaire », puis complétez les champs supplémentaires ;
 
-------------------------------------------------------------------------
+- **vous ne souhaitez pas publier vos informations dans les annuaires en ligne** : choisissez `Non`{.action} dans le menu déroulant en dessous de « Publication dans l’annuaire ».
 
-### Parution des annuaires via l'espace client Telecom {#parution-des-annuaires-via-lespace-client-telecom}
+Une fois toutes les informations complétées, cliquez sur le bouton `Appliquer les modifications`{.action}. Si vous avez choisi de publier vos informations, la parution dans les annuaires en ligne sera effective sous 1 à 30 jours. Ce délai est inhérent aux annuaires eux-mêmes, qui mettent à jour leur base de données une fois par mois.  
 
--   **Activer l'affichage dans l'annuaire** :
+![telephonedirectory](images/manage-telephone-directory-step2.png){.thumbnail}
 
-![](images/telecom.png){.thumbnail}
+### Étape 3 : suivre la parution de vos coordonnées
 
-Pour pouvoir activer votre parution, rendez vous dans la rubrique configuration -&gt; Téléphonie -&gt; Gestion des coordonnées, et sélectionnez "Activer l'affichage dans l'annuaire"
+> [!primary]
+>
+> Cette étape s'applique uniquement si vous avez choisi de publier vos informations dans les annuaires en ligne. 
+>
 
-Ensuite, sélectionnez le numéro ou la ligne sur lequel vous souhaitez activer la parution dans l'annuaire.
+Vous avez la possibilité de suivre la parution de vos informations dans les annuaires en ligne depuis votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`. Pour cela, une fois connecté, positionnez-vous sur l'onglet `Coordonnées`{.action} de la ligne ou du numéro OVH concerné.
 
--   **Particulier :**
+Descendez en bas de la page jusqu'à la section `Parution dans les annuaires`. Vérifiez alors le statut qui s'affiche : 
 
-Une fois la ligne sélectionnée, un formulaire à compléter vous est proposé :
+- **le statut est vierge** : ceci indique que vous n'avez pas demandé la parution de vos informations dans les annuaires en ligne ;
 
-![](images/particulierv6.png){.thumbnail}
+- **le statut indique « Synchronisation programmée »** : la mise à jour de vos informations est toujours en cours dans les annuaires en ligne. Pour rappel, celle-ci peut nécessiter un délai de 1 à 30 jours avant d'être effective ;
 
-Champs obligatoires : le prénom, le nom ainsi que l'adresse postale. Toutefois, vous pouvez choisir de faire apparaître uniquement la ville ou votre adresse complète, et pour l'affichage du prénom, vous pouvez spécifier l'initiale ou le prénom entier.
+- **le statut indique « Synchronisé »** : les informations renseignées dans votre espace client sont celles qui s'affichent dans les annuaires en ligne. La dernière modification est donc arrivée à son terme.
 
-Sur le formulaire suivant, il vous sera demandé si vous acceptez le démarchage et/ou d'apparaître dans l'annuaire inversé. Pour finir, une dernière confirmation vous sera demandée afin de valider les informations saisies précédemment.
+Pour vérifier la parution de vos coordonnées, vous pouvez également vous rendre directement sur le site de l'annuaire concerné. Vous devrez alors rechercher votre ligne ou numéro OVH.
 
--   **Professionnel/Entreprise** :
+![telephonedirectory](images/manage-telephone-directory-step3.png){.thumbnail}
 
-![](images/entreprisev6.png){.thumbnail}
+## Aller plus loin
 
-Par rapport au formulaire "particulier", vous allez pouvoir renseigner le nom de votre entreprise. Si vous souhaitez apparaître dans une catégorie des pages jaunes, vous devez spécifier votre numéro SIRET. Une fois le SIRET renseigné, les champs "APE/NAF", "Entreprise" se renseignent automatiquement et une liste vous est proposée dans la désignation des pages jaunes (elles ne sont pas modifiables).
-
-La différence entre le formulaire professionnel et entreprise tient au fait que vous avez le champ "profession" à remplir, si nécessaire.
-
-Une fois les coordonnées saisies, une demande de paramétrage de la publication est demandé (annuaire inversé, démarchage) ainsi qu'une validation de la parution.
-
--   **Paramétrer l'affichage dans l'annuaire** :![](images/validation_parution.png){.thumbnail}
-
-    Dans cette rubrique vous pouvez modifier uniquement la partie annuaire inversé et le démarchage téléphonique.
-
--   **Désactiver l'affichage dans l'annuaire** : permet d'annuler la parution dans les annuaires
-
-**Il faut compter un délai moyen de 10 jours ouvrés pour la parution dans les annuaires.**
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
