@@ -127,10 +127,10 @@ Depuis la page principale du service, choisir `Enable the license`{.action}.
 
 Dans la nouvelle fenêtre, saisir les informations suivantes :
 
-* L'adresse IP publique par laquelle votre serveur **Veeam Backup & Replication** peut-etre contacté.
-* Le port de votre veeam backup (usuellement **9392/TCP**)
-* le login du compte de service précédemment crée
-* le mot de passe du compte de service
+* L'adresse IP publique par laquelle votre serveur **Veeam Backup & Replication** peut être contacté.
+* Le port de votre serveur **Veeam Backup & Replication** (usuellement **9392/TCP**).
+* le login du compte de service précédemment créé.
+* le mot de passe du compte de service.
 
 Puis valider avec `OK`{.action}.
 
