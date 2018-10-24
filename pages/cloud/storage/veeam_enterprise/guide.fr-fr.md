@@ -1,122 +1,115 @@
 ---
-title: Mise en place de Veeam Entreprise
-excerpt: Mise en place de Veeam Entreprise
-slug: veeam-enterprise
-section: Veeam Backup & Replication
+title: 'Mettre en place Veeam Backup & Replication'
+slug: veeam-backup-replication
+excerpt: 'Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise'
+section: 'Veeam Backup & Replication'
 ---
 
 **Dernière mise à jour le 24/09/2018**
 
 ## Objectif
 
-Mettre en oeuvre un serveur **Veeam Backup & Replication** en utilisant le service **Veeam Enterprise** proposer par OVH pour la fourniture des licences.
+Veeam Backup & Replication est un logiciel de protection des données. Il offre diverses possibilités de sauvegarde, de réplication et de restauration.
 
-**Ce guide vous explique comment installer Veeam Backup & Replication et enregistrer celui-ci auprès du serveur de licence OVH.**
+**Apprenez à installer un serveur Veeam Backup & Replication, puis à l'enregistrer auprès du serveur de licences Veeam Enterprise d'OVH.**
 
 
 ## Prérequis
 
-* Posséder une offre Veeam Enterprise
-* Avoir à disposition une machine Windows Server 2012 ou 2016
+* Posséder une offre Veeam Enterprise.
+* Avoir à disposition une machine Windows Server 2012 ou 2016.
 
 ## En pratique
 
-### Installation de Veeam Backup & Replication
+### Installer Veeam Backup & Replication
 
-Il vous faut tout d'abord télécharger depuis le site de Veeam la solution **Veeam Backup & Replication**. Si vous n'avez pas de compte, il sera nécessaire de créer un compte (celui est gratuits).
+Téléchargez la solution **Veeam Backup & Replication** depuis le site de Veeam. Si vous n'avez pas de compte, il sera nécessaire d'en créer un (celui est gratuit).
 
-Celle-ci se présente sous la forme d'un ISO (image cd-rom).
+Le fichier se présente sous la forme d'une image disque au format ISO. Après l'avoir transférée sur votre serveur, sélectionnez le lecteur CD de la machine puis choisissez l'image.
 
-Après avoir transféré, l'image dans un datastore du Private Cloud, sélectionner le lecteur CD de la machine puis sélectionner l'image.
-
-Dans la machine vous pouvez désormais lancer l'installeur.
-
-Sélectionner `Veeam Backup & Replication Install`{.action}
+Dans la machine, vous pouvez désormais lancer l'installeur. Sélectionnez alors `Veeam Backup & Replication Install`{.action}.
 
 ![](images/veeamBandR_inst_01.png){.thumbnail}
 
-Accepter le contrat de licence après l'avoir lu avec `Next`{.action}.
+Après l'avoir lu, acceptez le contrat de licence en choisissant `Next`{.action}.
 
 ![](images/veeamBandR_inst_02.png){.thumbnail}
 
-Passer l'étape de renseignement du fichier de licence avec `Next`{.action}.
+Passez l'étape de renseignement du fichier de licence avec `Next`{.action}.
 
 ![](images/veeamBandR_inst_03.png){.thumbnail}
 
-Dans l'étape de sélection des composants à installer, ne rien modifier. Selon vos besoins, vous pouvez changer le chemin de destination de l'installation. Valider avec `Next`{.action}.
+Dans l'étape de sélection des composants à installer, ne modifiez rien. Selon vos besoins, vous pouvez cependant changer le chemin de destination de l'installation. Validez ensuite avec `Next`{.action}.
 
 ![](images/veeamBandR_inst_04.png){.thumbnail}
 
-L'installateur va ensuite effectuer un contrôle des prérequis. Si vous partez d'une installation brute de Windows, certains composants seront manquants. Pas de panique, l'installeur se chargera du téléchargement et de l'installation de ceux-ci au besoin.
-Valider avec `Next`{.action}.
+L'installateur va maintenant effectuer un contrôle des prérequis. Si vous partez d'une installation brute de Windows, certains composants seront absents. Mais pas de panique : l'installeur téléchargera et installera ceux-ci automatiquement. Validez ensuite avec `Next`{.action}.
 
 ![](images/veeamBandR_inst_05.png){.thumbnail}
 
-Laisser l'installation des prérequis se faire.
+Patientez pendant l'installation des prérequis.
 
 ![](images/veeamBandR_inst_06.png){.thumbnail}
 
-Une fois cette étape correctement effectuée, vous pouvez valider l'installation à proprement parler de **Veeam Backup & Replication**.
-Valider avec `Next`{.action}.
+Après cette étape, validez l'installation de **Veeam Backup & Replication** avec `Next`{.action}.
 
 ![](images/veeamBandR_inst_07.png){.thumbnail}
 
-Dans l'étape de personnalisation de l'installation de **Veeam Backup & Replication**, valider avec `Install`{.action}.
+Lors de l'étape de personnalisation de l'installation, validez l'opération en choisissant `Install`{.action}.
 
 ![](images/veeamBandR_inst_08.png){.thumbnail}
 
-Laisser l'installation se faire.
+Patientez pendant l'installation.
 
 ![](images/veeamBandR_inst_09.png){.thumbnail}
 
-Une fois celle-ci terminer, quitter l'installateur avec `Finish`{.action}.
+Une fois celle-ci terminée, quittez l'installateur en cliquant sur `Finish`{.action}.
 
 ![](images/veeamBandR_inst_10.png){.thumbnail}
 
-Au moment de quitter, l'installeur indique qu'il est nécessaire de redémarrer Windows pour finaliser le démarrage de **Veeam Backup & Replication**. Pour lancer le redémarrage immédiatement choisir `Yes`{.action}.
+L'installateur vous demande de redémarrer Windows afin de finaliser l'opération. Choisissez alors `Yes`{.action}.
 
 ![](images/veeamBandR_inst_11.png){.thumbnail}
 
-### Création du compte de service Veeam Enterprise
+### Créer un compte de service Veeam Enterprise
 
-#### Création du compte de service
+#### Lancer un compte de service
 
-Pour réaliser cette étape, il est nécessaire de générer un mot de passe **complexe** qu’il faudra ensuite renseigner lors de l'enregistrement du VeeamBackup .
+Au préalable, il est nécessaire de générer un mot de passe **complexe**.
 
-Afin de créer un compte de domaine, procédez de cette façon :
+Créez ensuite un compte de service, en entrant ces lignes de commande depuis un accès administrateur :
 
-En ligne de commande, avec un compte administrateur :
 ```powershell
 New-LocalUser "OVHVeeamEnterprise" -Password (ConvertTo-SecureString -AsPlainText "P@ssword01" -Force) -Description "OVH Service Account for Veeam Enterprise" -PasswordNeverExpires:$true -UserMayNotChangePassword:$true -AccountNeverExpires:$true
 ```
-On notera que le nom du compte et le mot de passe correspondent à un exemple et sont à remplacer :
 
-* Nom du Compte : OVHVeeamEnterprise
-* Mot de passe : P@ssword01
+Notez que le nom du compte et le mot de passe correspondent à un exemple et doivent être remplacés :
+ * Nom du compte : OVHVeeamEnterprise
+ * Mot de passe : P@ssword01
 
-#### Définir les autorisations du compte de services
+#### Définir les autorisations du compte de service
 
-Lancer la console Veeam.
+Lancez la console Veeam.
 
 ![](images/veeamBandR_use_12.png){.thumbnail}
 
-Sur la console, vous pouvez vérifier que vous êtes en mode **Free Edition** dans le coin en bas à droite.
+Vérifiez que vous êtes en mode **Free Edition**, dans le coin en bas à droite.
 
 ![](images/veeamBandR_conf_1.png){.thumbnail}
 
-Allez dans le menu, puis cliquer sur `Users and Roles`{.action}.
+Allez dans le menu, puis cliquez sur `Users and Roles`{.action}.
 
 ![](images/veeamBandR_conf_2.png){.thumbnail}
 
-Dans la nouvelle fenêtre `Security`{.action}, faire `Add...`{.action}.
+Dans la fenêtre `Security`{.action}, choisissez `Add...`{.action}.
 
 ![](images/veeamBandR_conf_3.png){.thumbnail}
 
-Dans la nouvelle fenêtre `Add User`{.action}, saisir le compte de service précédemment créé et sélectionner le rôle **Veeam Backup Administrator** et enfin valider avec `OK`{.action}
+Puis dans la fenêtre `Add User`{.action}, saisissez le compte de service précédemment créé. Sélectionnez le rôle **Veeam Backup Administrator** et validez enfin avec `OK`{.action}.
 
 ![](images/veeamBandR_conf_4.png){.thumbnail}
 
-De retour dans la fenêtre **Security**, vous pouvez vérifier que le compte est bien définit.
+De retour dans la fenêtre **Security**, vous pouvez vérifier que le compte est bien défini.
 
 ![](images/veeamBandR_conf_5.png){.thumbnail}
 
@@ -147,14 +140,14 @@ Lorsque l'activation est faite, vous retrouvez les informations principales sur 
 
 ## Avec l'API OVH
 
-Récupérer votre serviceName :
+D'abord, récupérez votre serviceName :
 
 > [!api]
 >
 > @api {GET} /veeam/veeamEnterprise
 >
 
-Puis effectuer l'enregistrement :
+Puis effectuez l'enregistrement :
 
 > [!api]
 >
@@ -177,15 +170,15 @@ Vous pouvez obtenir l'adresse IP publique utilisée par Veeam Enterprise pour co
 
 ### Vérifier l'enregistrement
 
-Lancer la console Veeam.
+Lancez la console Veeam.
 
 ![](images/veeamBandR_use_12.png){.thumbnail}
 
-Allez dans le menu, puis cliquer sur `Licence`{.action}
+Allez dans le menu, puis cliquez sur `Licence`{.action}.
 
 ![](images/veeamBandR_lic_1.png){.thumbnail}
 
-Dans les informations de licence, vous pouvez vérifier qu'il s'agit bien de la licence d'OVH.
+Dans les informations, vérifiez qu'il s'agit bien de votre licence OVH.
 
 ![](images/veeamBandR_lic_2.png){.thumbnail}
 

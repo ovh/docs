@@ -1,38 +1,38 @@
 ---
-title: Become root and select a password
-excerpt: Become root and select a password
-slug: become_root_and_select_a_password
+title: 'Become the root user and select a password'
+slug: become_the_root_user_and_select_a_password
+excerpt: 'This guide will show you how to become the root user and create a password for the root account'
 legacy_guide_number: g1786
-section: Getting started
+section: 'Getting started'
 ---
 
+**Last updated 11th October 2018**
 
-## 
-To carry out certain actions, you may need to become root. These include:
+## Objective
 
-- Installing packages
-- Selecting a password for a user or root user (This is necessary for KVM access)
-- Carrying out certain administrative tasks
+To perform certain administrative functions on your server (e.g. installing packages), you'll need to have a high level of user access. On Linux servers, this access is called "root".
 
+**This guide will show you how to become the root user and create a password for the root account.**
 
+## Requirements
 
+* a Public Cloud project activated
+* access to the OVH [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
-## Prerequisites
+## Instructions
 
-- []({legacy}1775)
-- You must be logged in as the default user (admin or the distribution name for the most recent images)
+> [!primary]
+>
+This guide assumes that the default user is called 'admin'.
+>
 
+### Changing the root password
 
+First, establish an SSH connection to your server.
 
-## Information
-We are assuming in this guide that the default user is called admin.
+At the command line, enter a password for the admin user (for security reasons, the password will not be shown as you type it):
 
-
-## Enter a password
-
-- Enter a password for the admin user (For security reasons, the password will not be shown as you type it):
-
-```
+```sh
 ~$ sudo passwd
 Enter new UNIX password:
 Retype new UNIX password:
@@ -40,69 +40,39 @@ passwd: password updated
 successfully
 ```
 
+### Update repositories (Debian/Ubuntu)
 
-
-
-
-## Further examples
-
-- Update repositories (Debian/Ubuntu)
+To update the installed software packages on your server, type the following command at the command line:
 
 ```
 ~$ sudo apt-get update
 ```
 
+### Update the system (CentOS/Fedora)
 
-- Update the system (CentOS/Fedora)
+To update your server's operating system, type the following command at the command line:
 
 ```
 ~$ sudo yum update
 ```
 
-
-- Edit a configuration file: 
+### Edit a configuration file
 
 ```
 ~$ sudo vi /etc/hosts.allow
 ```
 
+### Become root
 
-
-
-
-## 
-Become root
+To become the root user, type the following command at the command line:
 
 ```
 ~$ sudo su -
 ~#
 ```
 
+Next, enter the root password.
 
+## Go further
 
-- Enter a root password (after becoming root):
-
-```
-~# passwd
-Enter new UNIX password: 
-Retype new UNIX password: 
-passwd: password updated successfully
-```
-
-
-- Enter a password for the admin user 
-
-```
-~# passwd admin
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-```
-
-
-
-
-
-## 
- 
-
+Join our community of users on <https://community.ovh.com/en/>.

@@ -1,104 +1,95 @@
 ---
 title: 'Getting started with Public Cloud: logging in and creating a project'
-excerpt: This guide explains how to create your first Public Cloud project
 slug: getting_started_with_public_cloud_logging_in_and_creating_a_project
+excerpt: 'This guide will show you how to create your first Public Cloud project'
 legacy_guide_number: g2329
+section: 'Getting started'
 ---
 
+**Last updated 15th October 2018**
 
-## 
-Public Cloud works on a Pay as you Go basis. 
-This means it is a flexible solution. 
-You can add and remove resources over time (instances, storage, options...) and billing is monthly. 
-You can see your estimated invoice in the blink of an eye in your customer account. No surprises at the end of the month!
-.
+## Objective
 
+[Public Cloud instances](https://www.ovh.ie/public-cloud/instances/){.external} offer a flexible, pay-as-you-go solution for managing virtual resources. This means that you can add and remove resources (instances, storage, etc) as and when you need to.
 
-## 
-If you do not have an account, go to [this page](https://www.ovh.co.uk/support/new_nic.xml).
-You will arrive at an online form. Enter your details and make sure to provide a valid email address.
+**This guide will show you how to create your first Public Cloud project.**
 
-## Advise:
-We suggest that you provide a different email address to your domain name address, as well as a rescue email.
-Once you have finished filling out the form, you will receive an email confirming creation. Please keep your customer ID (NIC-handle) and password safe.
-Lost your password? Follow [guide]({legacy}2123).
-.
+## Requirements
 
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-## 
-Log on to your [customer account](https://www.ovh.com/manager) with your ID.
-OVH has a wide range of products available, all of which can be managed via your customer account. Go to the CLOUD universe in the top left.
+## Instructions
 
-![](images/img_4657.jpg){.thumbnail}
-In this universe, you can create a Public Cloud project.
-.
+### Create a project
 
+Log into to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Once you're logged in, click on the `Cloud`{.action} menu.
 
-## 
-You need a project in order to buy Public Cloud products.
-If you have not already accepted the Public Cloud terms and conditions, these will be displayed as below:
+![cloud menu](images/menu.png){.thumbnail}
 
-![](images/img_4658.jpg){.thumbnail}
-Tick the box to accept them.
-Enter a project name. You can change it later if you need to.
+Next, click on the `Order`{.action} button.
 
+![order button](images/order-button.png){.thumbnail}
 
-## Payment method
-As explained Public Cloud is a pay as you go service. You can buy instances, storage etc. once the  project is created.
-However when you are starting off OVH will ask you to choose one of the three methods. You will only be asked to choose a method for your first project:
+Under the 'Order' menu, click `Cloud project`{.action}.
 
+![order cloud project](images/order-cloud-project.png){.thumbnail}
 
-- enter payment method
+You will now need to give the project a name and chose a payment method.
 
+![project details](images/project-details.png){.thumbnail}
 
-This is the easiest method. You register a payment method and you will automatically be debited at the start of the month. You can't forget to renew!
-These methods are available depending on your country:
-3D secure, bank account, PayPal.
-Please note: if this is your first payment with OVH, we will only offer 3-D Secure.
+### Select a payment method
 
-![](images/img_4659.jpg){.thumbnail}
+As mentioned earlier, the Public Cloud is a pay-as-you-go service. Once your project is created, you can buy instances, storage etc. However, when you create your first project, you'll need to choose one of the following three payment methods:
 
-- buy cloud credit
+#### Register a bank card
 
+This is the easiest method. When you register a bank card, you will automatically be debited at the start of the month. This method will allow you to register (depending on your country):
 
-If you do not have a payment method, you can add cloud credit instead. The first payment is for £30.
-This cloud credit will be assigned to your project so that you can add instances, storage etc...
-Cloud credit is non transferable or refundable. It has no monetary value and if it is not used within 13 months it will be lost.
+* a credit/debit card
+* a PayPal account
+* a bank account
 
-![](images/img_4660.jpg){.thumbnail}
+> [!primary]
+>
+If this is your first payment with OVH, we will only accept credit cards with 3-D Secure.
+>
 
-- use a Voucher
+Select your desired method from the list and click the `Add`{.action} button.
 
+![register bank card](images/register-bank-card-01.png){.thumbnail}
 
-If you have a promo code, you can add it during this stage. The duration of the voucher may vary.
+Once you've clicked the `Add`{.action} button, you'll be prompted to complete the setup of your payment method, as shown below.
 
-![](images/img_4661.jpg){.thumbnail}
-.
+![register bank card](images/register-bank-card-02.png){.thumbnail}
 
+#### Buy cloud credit
 
-## 
-Once you have created your project, it will be available in the left hand menu.
+You can also pay for your [Public Cloud](https://www.ovh.ie/public-cloud/instances/){.external} usage using cloud credit. Your first cloud credit purchase will cost £30. Any resources you use after this will consume your credit. When your credit is depleted, you can purchase more using any accepted payment method.
 
+Cloud credit is non-transferable or refundable. It has no monetary value, and if it is not used within 13 months it will be lost.
 
-## Add instance or storage
-The +Add button lets you launch a Cloud instance in a few seconds among other things.
-Follow ([guide]({legacy}1775)) if you need to.
+![cloud credit](images/img_4658.jpg){.thumbnail}
 
-![](images/img_4665.jpg){.thumbnail}
+#### Use a voucher
 
+If you have a promotional code, you can add it during this stage to pay for your resources. The duration of the voucher may vary.
 
-## Manage usage
-Via the Project management and resource usage button, you can manage payment methods, vouchers, user rights and analyse your billing.
+![voucher](images/img_4661.jpg){.thumbnail}
+ 
+Once you have created your project, it will be available in the left-hand menu.
 
-![](images/img_4662.jpg){.thumbnail}
-Estimated invoice example:
+### Add an instance or storage
 
-![](images/img_4663.jpg){.thumbnail}
-Voucher example:
+To add resources to your new project, click the `Actions`{.action} button on the `Infrastructure`{.action} tab.
 
-![](images/img_4664.jpg){.thumbnail}
+![add a resource](images/add-a-resource-01.png){.thumbnail}
+
+Next, from the dropdown menu, select either `Add a server`{.action} or `Add a disk`{.action}.
+
+![add a resource](images/add-a-resource-02.png){.thumbnail}
 
 
-## 
-.
+## Go further
 
+Join our community of users on <https://community.ovh.com/en/>.

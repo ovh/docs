@@ -23,6 +23,7 @@ Wtyczka OVH w usłudze Private Cloud umożliwia dodanie w ciągu kilku minut ded
 ## W praktyce
 
 W trybie rozliczenia godzinowego oferowane są dwa rodzaje zasobów dedykowanych:
+
 - hosty - serwery,
 - datastores - przestrzenie dyskowe.
 
