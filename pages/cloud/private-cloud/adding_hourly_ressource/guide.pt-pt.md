@@ -25,7 +25,7 @@ A solução [Private Cloud](https://www.ovh.pt/private-cloud/){.external} permit
 
 ### Selecionar o recurso.
 
-De modo a aceder à interface que permite adicionar recursos horários, deve selecionar o cluster e, a seguir, clicar no separador `Manage`{.action}.
+De modo a aceder à interface que permite adicionar recursos horários, deve selecionar o datacenter e, a seguir, clicar no separador `Manage`{.action}.
 
 ![Adicionar host](images/addhost_01.png){.thumbnail}
 

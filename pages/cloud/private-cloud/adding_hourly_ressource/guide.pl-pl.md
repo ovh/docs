@@ -25,7 +25,7 @@ Oferta [Private Cloud](https://www.ovh.pl/private-cloud/){.external} umożliwia 
 
 ### Wybierz zasób
 
-Aby uzyskać dostęp do interfejsu umożliwiającego dodawanie zasobów płatnych w systemie godzinowym, wybierz klaster, a następnie kliknij zakładkę `Manage`{.action}.
+Aby uzyskać dostęp do interfejsu umożliwiającego dodawanie zasobów płatnych w systemie godzinowym, wybierz datacenter, a następnie kliknij zakładkę `Manage`{.action}.
 
 ![Dodanie hosta](images/addhost_01.png){.thumbnail}
 

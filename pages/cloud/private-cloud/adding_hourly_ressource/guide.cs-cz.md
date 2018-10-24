@@ -25,7 +25,7 @@ V rámci nabídky [Private Cloud](https://www.ovh.cz/private-cloud/){.external} 
 
 ### Volba zdrojů
 
-Vyberte příslušný cluster a přejděte do záložky `Manage`{.action}.
+Vyberte příslušný datacenter a přejděte do záložky `Manage`{.action}.
 
 ![Spuštění instance](images/addhost_01.png){.thumbnail}
 
