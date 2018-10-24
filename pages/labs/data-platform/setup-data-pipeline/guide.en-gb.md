@@ -209,7 +209,7 @@ We can use Ambari's Files View to check the content of said file:
 ![Zeppelin bank file](images/zeppelin_03.png)
 
 We will now create a new notebook by clicking on **Notebook** then
-**Create new note**. Fill in the note name and the interpreter (Spark in
+**Create new note**. Fill in the note name and the interpreter (livy2 in
 our case).
 
 ![Zeppelin create notebook](images/zeppelin_02.png)

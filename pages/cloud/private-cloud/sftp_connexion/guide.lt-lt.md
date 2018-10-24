@@ -1,11 +1,11 @@
 ---
-title: Logging in via SFTP
-slug: sftp_jungtis
-excerpt: Learn how to log in to your Private Cloud via SFTP
-section: Getting started
+title: 'Logging in via SFTP'
+slug: sftp_connection
+excerpt: 'Learn how to log in to your Private Cloud via SFTP'
+section: 'Getting started'
 ---
 
-**Last updated 15th January 2018**
+**Last updated 19th October 2018**
 
 ## Objective
 
@@ -17,7 +17,7 @@ This system will only allow you to access the upload-vpn folder in your datastor
 
 ## Requirements
 
-- You must have an active user account created from the Control Panel.
+* You must have an active user account created from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Instructions
@@ -68,7 +68,7 @@ sftp> pcc-000714
 Use the `put` command to export files from your datastore to your local mail.
 
 ```sh
-sftp> put /home/ubuntu-16.04.3-server-amd64.iso to
+sftp> put /home/ubuntu-16.04.3-server-amd64.iso put
 /datastore/pcc-000714/ubuntu-16.04.3-server-amd64.iso  
 ```
 

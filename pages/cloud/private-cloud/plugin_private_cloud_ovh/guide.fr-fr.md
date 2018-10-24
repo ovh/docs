@@ -23,6 +23,7 @@ Le plugin Private Cloud d'OVH vous permet d'ajouter, en quelques minutes, des re
 ## En pratique
 
 Deux ressources dédiées sont proposées en facturation horaire :
+
 - les serveurs hôtes ;
 - les datastores.
 

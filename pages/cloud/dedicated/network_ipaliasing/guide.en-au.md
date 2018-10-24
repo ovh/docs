@@ -1,28 +1,27 @@
 ---
 title: 'Configuring IP aliasing'
 slug: network-ipaliasing
-excerpt: 'Adding failover IPs to your configuration'
+excerpt: 'This guide explains how to add failover IPs to your configuration'
 section: 'Network Management'
 ---
 
-**Last updated 07/09/2018**
+**Last updated 16/10/2018**
 
 ## Objective
 
-IP aliasing is a special network configuration of your dedicated server, which allows you to associate multiple IP addresses with a single network interface.
+IP aliasing is a special network configuration for your OVH Dedicated Server, which allows you to associate multiple IP addresses with a single network interface.
 
 **This guide explains how to make this addition.**
 
 ## Requirements
 
-- You must have a dedicated server ([Dedicated server](https://www.ovh.com.au/dedicated-servers/){.external},[VPS](https://www.ovh.com.au/vps/){.external} or [instance Cloud Public](https://www.ovh.com.au/public-cloud/instances/){.external}).
-- You must have one or more [failover IPs](https://www.ovh.com.au/dedicated-servers/ip_failover.xml){.external}.
-- You must be connected via SSH to the server (root access).
-
+* a [Dedicated Server](https://www.ovh.com.au/dedicated-servers/){.external}
+* a [failover IP address](https://www.ovh.com.au/dedicated-servers/ip_failover.xml){.external} or a failover IP block (RIPE)
+* administrative (root) access to the server via SSH
 
 ## Instructions
 
-Here are the configurations for the main distributions/operating systems.
+Here are the configurations for the main distributions/operating systems:
 
 
 ### Debian 6/7/8 and derivatives
@@ -101,7 +100,7 @@ You now need to restart your interface:
 
 ### Debian 9+, Ubuntu 17+, Fedora 26+ and Arch Linux
 
-On these distributions, the naming of interfaces as eth0, eth1 (and so on) is abolished, and we will now use the `systemd-network` more generally.
+On these distributions, the naming of interfaces as eth0, eth1 (and so on) is abolished. We will therefore use `systemd-network` more generally.
 
 #### Step 1: Create the source file
 
@@ -185,27 +184,26 @@ cp /etc/conf.d/net /etc/conf.d/net.bak
 
 #### Step 2: Edit the source file
 
-Now you have to edit the file to add the failover IP. In Gentoo, an alias is added directly in the eth0 interface. We do not create an eth0:0 interface like in Red Hat or CentOS.
+Now you have to edit the file to add the failover IP. In Gentoo, an alias is added directly in the eth0 interface. You do not need to create an eth0:0 interface like in Red Hat or CentOS.
 
 > [!warning]
 >
 > The server’s default IP and config_eth0= should stay on the same line. This is to ensure that certain OVH-specific operations work properly.
 > 
 
-All you need to do is add a line break after the netmask **255.255.255.0 **and add your failover IP (SERVER_IP must be replaced by your server’s primary IP).
+All you need to do is add a line break after the netmask **255.255.255.0** and add your failover IP (SERVER_IP must be replaced by your server’s primary IP).
 
 ```sh
 editor /etc/conf.d/net
 ```
 
-Therefore, you need to add the following:
-
+You therefore need to add the following:
 
 ```bash
 config_eth0=( "SERVER_IP netmask 255.255.255.0" "IP_FAILOVER netmask 255.255.255.255 brd IP_FAILOVER" )
 ```
 
-The /etc/conf.d/net file must contain the following:
+The `/etc/conf.d/net` file must contain the following:
 
 
 ```bash
@@ -219,7 +217,6 @@ routes_eth0=( "default gw SERVER_IP.254" )
 ```
 
 In order to ping your failover IP, simply restart the network interface.
-
 
 #### Step 3: Restart the interface
 
@@ -242,7 +239,7 @@ cp /etc/sysconfig/network/ifcfg-ens32 /etc/sysconfig/network/ifcfg-ens32.bak
 
 #### Step 2: Edit the source file
 
-You then need to edit the /etc/sysconfig/network/ifcfg-ens32 file as follows:
+You then need to edit the `/etc/sysconfig/network/ifcfg-ens32` file, as follows:
 
 ```bash
 IPADDR_1=IP_FAILOVER
@@ -250,6 +247,7 @@ NETMASK_1=255.255.255.255
 LABEL_1=ens32:0
 ```
 
+Finally, reboot your server to apply the changes.
 
 ### cPanel
 
@@ -273,14 +271,13 @@ Then add the failover IP to the file:
 ```bash
 IP_FAILOVER:255.255.255.255:IP_FAILOVER
 ```
-Next, add the IP in `/etc/ipaddrpool`:
+Next, add the IP in `/etc/ipaddrpool``:
 
 ```bash
 IP_FAILOVER
 ```
 
-#### Step 3: Restart the service
-
+#### Step 3: Restart the interface
 
 You now need to restart your interface:
 
@@ -288,7 +285,54 @@ You now need to restart your interface:
 /etc/init.d/ipaliases restart
 ```
 
-### Windows Server
+### Ubuntu 18.04
+
+Each failover IP address will need its own line in the configuration file. The configuration file is called 50-cloud-init.yaml and is located in /etc/netplan.
+
+#### Step 1: Create the configuration file
+
+Connect to your server via SSH and run the following command:
+
+```sh
+# nano /etc/netplan/50-cloud-init.yaml
+```
+
+Next, edit the file with the content below:
+
+```sh
+# This file is generated from information provided by
+# the datasource.  Changes to it will not persist across an instance.
+# To disable cloud-init's network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+
+network:
+    version: 2
+    ethernets:
+        your_network_interface:
+            dhcp4: true
+            match:
+                macaddress: fa:xx:xx:xx:xx:63
+            set-name: your_network_interface
+            addresses:
+            - your_failover_ip/32
+```
+
+Save and close the file. You can test the configuration with the following command:
+
+```sh
+# netplan try
+```
+
+Next, run the following commands to apply the configuration:
+
+```sh
+# netplan apply
+```
+
+Repeat this procedure for each failover IP address.
+
+### Windows Servers
 
 Windows servers are often DHCP-enabled in the network configuration. If you have already set up a failover IP or switched your configuration to a fixed IP, go directly to the next step.
 
@@ -301,16 +345,15 @@ Open the command prompt `cmd`{.action} or `powershell`{.action}, then type the f
 ipconfig /all
 ```
 
-This will return the following, for example:
+This will return a result similar to the following example:
 
 ![Result of "ipconfig /all" command](images/guides-network-ipaliasing-windows-2008-1.png){.thumbnail}
 
 Identify and write down your IPv4, subnet mask, default gateway and the name of the network interface controller (network adapter).
 
-In our example, the server IP is: **94.23.229.151**
+In our example, the server IP is **94.23.229.151**.
 
-
-You can perform the next steps via either a command-line interface or the graphical user interface:
+You can perform the next steps via either a command-line interface or the graphical user interface.
 
 #### Via a command-line interface (recommended)
 
@@ -319,10 +362,9 @@ In the commands below, you need to replace:
 |Command|Value|
 |---|---|
 |NETWORK_ADAPTER| Name of the network adapter (in our example: Local Area Connection)|
-|IP_ADDRESS| server IP address (in our example: 94.23.229.151)|
+|IP_ADDRESS| Server IP address (in our example: 94.23.229.151)|
 |SUBNET_MASK| Subnet mask (in our example: 255.255.255.0)|
-|GATEWAY| Default gateway (in our example:
- 94.23.229.254)|
+|GATEWAY| Default gateway (in our example: 94.23.229.254)|
 |IP_ADDRESS_FAILOVER| Address of failover IP you want to add|
 
 > [!warning]
@@ -354,7 +396,7 @@ Your failover IP is now functional.
 2. Right-click on `Local Area Connection`{.action}.
 3. Click on `Properties`{.action}.
 4. Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, then click on `Properties`{.action}.
-5. Click on `"Use the following IP address"`{.action} and type in your server’s primary IP, subnet mask and default gateway information obtained by using the `ipconfig`{.action} command above. (In the "Preferred DNS Server" box, type 213.186.33.99.)
+5. Click on `Use the following IP address`{.action} and type in your server’s primary IP, subnet mask and default gateway information obtained by using the `ipconfig`{.action} command above. In the "Preferred DNS Server" box, type 213.186.33.99.
 
 ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/guides-network-ipaliasing-windows-2008-2.png){.thumbnail}
 
@@ -364,7 +406,7 @@ Your failover IP is now functional.
 > Be careful – the server will no longer be accessible if you enter incorrect information. You will then have to make the corrections in Winrescue mode or via the KVM.
 > 
 
-Then click on `Advanced`{.action} (still in the ` TCP/IP Settings`{.action}.
+Then click on `Advanced`{.action} (still in the `TCP/IP Settings`{.action}).
 
 ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/guides-network-ipaliasing-windows-2008-2.png){.thumbnail}
 
@@ -414,7 +456,7 @@ In our example, the name of the interface is therefore **nfe0**.
 
 #### Step 2: Create the source file
 
-First, make a copy of the source file, so that you can revert at any time:
+Next, make a copy of the source file, so that you can revert at any time:
 
 ```sh
 cp /etc/rc.conf /etc/rc.conf.bak
@@ -428,9 +470,9 @@ Edit the /etc/rc.conf file:
 editor /etc/rc.conf
 ```
 
-Then add this line at the end of the file: ifconfig \_INTERFACE_alias0=`inet IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER`.
+Then add this line at the end of the file: `ifconfig_INTERFACE_alias0="inet IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER"`.
 
-Replace **INTERFACE** and **IP_FAILOVER** respectively with the name of your interface (identified in the first step) and your failover IP. Here is an example:
+Replace **INTERFACE** and **IP_FAILOVER** with the name of your interface (identified in the first step) and your failover IP, respectively. Here is an example:
 
 
 ```bash
@@ -462,12 +504,12 @@ ifconfig -a
 >>> lo0: flags=2001000849 mtu 8232 index 1 inet 127.0.0.1 netmask ff000000 e1000g0: flags=1000843 mtu 1500 index 2 inet 94.23.41.167 netmask ffffff00 broadcast 94.23.41.255 ether 0:1c:c0:f2:be:42
 ```
 
-In our example, the name of the interface is therefore  **e1000g0**.
+In our example, the name of the interface is therefore **e1000g0**.
 
 
 #### Step 2: Create the source file
 
-First, make a copy of the source file, so that you can revert at any time:
+Next, make a copy of the source file, so that you can revert at any time:
 
 ```sh
 editor /etc/hostname.e1000g0:1

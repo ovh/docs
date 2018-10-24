@@ -1,63 +1,58 @@
 ---
-title: Create SSH keys
+title: 'Create SSH keys'
 slug: create-ssh-keys
-excerpt: Tutorial on creating SSH keys on Linux or Windows
+excerpt: 'This guide will show you how to create an SSH key, so that you can log into your instance.'
 section: Security
 ---
 
+**Last updated 17/10/2018**
 
-## Preamble
-When you create an instance, you won't receive an email with your credentials. To securely connect, you will need to configure an SSH key before creating an instance. This makes it possible to connect:
+## Objective
 
-- Without having to remember a password
-- In more secure manner than using a passwords
+When you create a [Public Cloud Instance](https://www.ovh.com.au/public-cloud/instances/){.external}, you won't receive an email with login credentials, because authentication is based on secure SSH keys instead of usernames and passwords.
 
-This guide details the steps to be taken to configure your key.
+**This guide will show you how to create an SSH key, so that you can log into your instance.**
 
+> [!primary]
+>
+Please note that SSH keys are not used for authentication on instances running the Windows operating system. For Windows instances, you will still need to use a username and password.
+>
 
-## Linux &amp; Mac
+## Requirements
 
-### Creating the key
-<a name="CLESSHLINUX"></a>
-- Open  terminal
-- Enter the following command to enable the generation of a 4096 bit SSH key:
+* a [Public Cloud](https://www.ovh.com.au/public-cloud/instances/){.external} project in your OVH account
+* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
-```bash
-ssh-keygen -b 4096
+## Instructions
+
+### Creating an SSH key on Linux and Mac
+
+First, open the terminal (command line) app, then run the following command to generate a 4096 bit SSH key:
+
+```sh
+# ssh-keygen -b 4096
 ```
 
-- The following result is obtained, the command prompts you to change the location of the private key:
+The command will output the following result and prompt you to save the newly created key:
 
-```bash
+```sh
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-
-
-> [!success]
+> [!warning]
 >
-> The private part of the key should be kept safe, and its access
-> should be limited to only people authorized to use it.
+> The private part of the key should be kept safe, and access should be limited to people authorised to use it.
 > 
 
-- The following step consists in configuring a passphrase for your key SSH key:
+Once you have saved the key, the command line will output the following:
 
-
-> [!alert]
->
-> Setting a passphrase to protect the key is recommended,
-> do not hesitate to enter a secure password (upper/ lower case /
-> numbers/special character and a minimal length of 8 characters).
-> 
-
-
-```bash
+```ssh
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
 0a:3a:a4:ac:d1:40:6d:63:6d:fd:d9:fa:d6:b2:e0:36 user@host
-The keys randomart image is:
+The key's randomart image is:
 +---[RSA 4096]----+
 |      .          |
 |                 |
@@ -71,15 +66,15 @@ The keys randomart image is:
 +-----------------+
 ```
 
-- Read and display the public key using the following command:
+You can read and display the key with the following command:
 
-```bash
-cat .ssh/id_rsa.pub
+```ssh
+# cat .ssh/id_rsa.pub
 ```
 
-- In our example:
+Running this command will output the following:
 
-```bash
+```ssh
 cat /home/user/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
@@ -89,51 +84,48 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
  user@host
 ```
 
+### Creating an SSH key on Windows
 
+#### Using PuTTY
 
-## On Windows
+[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/){.external} is a popular SSH client for Windows. You can use it to remotely connect to a Linux server. Its companion software, [PuTTYgen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe){.external}, can be used to create SSH keys.
 
-### Using Putty
-[Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/){.external} is the most popular SSH client for Windows
+First, download the [PuTTYgen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe){.external} software, which we will use to generate the key.
 
-- Download the software [puttygen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe){.external} allowing to generate the key
-- Run the software to generate the key
-- At the level of 'Number of bits in a generated key', specify the value 4096
+Next, run the software and select RSA as the key type, enter 4096 as the number of bits to generate, and then click the `Generate`{.action} button.
 
-![public-cloud](images/3777.png){.thumbnail}
+![generate key](images/puttygen-01.png){.thumbnail}
 
-- Click on `Generate`{.action} (move the mouse in the grey frame during the action)
-- Specify a passphrase to password protect the key
-- Save the private key by clicking on `Save private key`{.action}, name this file (key.rsa for example)
-- Copy the public key displayed in the frame
+Next, randomly move your mouse around in the area underneath the progress bar, as shown below.
 
-![public-cloud](images/3778.png){.thumbnail}
+![generate key](images/puttygen-02.png){.thumbnail}
 
-- Start Putty
-- In the list on the left, click on `Connection`{.action}, then on `SSH`{.action}, and `Auth`{.action}
-- At the level of the 'Private key file for authentication' line, click on `Browse`{.action}, select the private key, validate.
+As you move your mouse, the progress bar will start to fill up. When it's completely full, the key will be ready.
 
-![public-cloud](images/3779.png){.thumbnail}
+![generate key](images/puttygen-03.png){.thumbnail}
 
-- Click on `Open`{.action} in Putty.
+### Import your SSH key into the OVH Control Panel
 
+First, highlight and copy the text of your public key, then log into the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-### Using CygWin
-Cygwin suggests an alternative approach, and enables the installation, on Windows, of many GNU libraries.
+Now click on the `Cloud`{.action} menu.
 
-- Download the [32-bit](https://www.cygwin.com/setup-x86.exe){.external} or [64-
-bit software](https://www.cygwin.com/setup-x86_64.exe){.external}
-- Start the installation
+![cloud menu](images/cloud-menu.png){.thumbnail}
 
+Now select your Public Cloud project from the left-hand menu and click on `Infrastructure`{.action}.
 
-> [!success]
->
-> Choosing the nearest mirror to you is recommended
-> (.fr domain or European ISP)
-> 
+![select project](images/select-project.png){.thumbnail}
 
-- At the Select Packages step, in the Search field, specify SSH
-- In the Net tree, click on the line `openssh`{.action} The OpenSSH server and client programs
-- Click on `Next`{.action}
-- Start the CygWin software
-- The rest of the procedure is identical to that necessary on [Linux/Mac OS](#CLESSHLINUX){.external}.
+Now select the `SSH keys`{.action} tab.
+
+![save ssh key](images/save-ssh-key-01.png){.thumbnail}
+
+Next, paste the 4096 byte key into the space provided, give the key a name, and click the `Add this key`{.action} button.
+
+![save ssh key](images/save-ssh-key-02.png){.thumbnail}
+
+Your key will now be saved in the OVH Control Panel for authentication.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

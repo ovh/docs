@@ -1,216 +1,72 @@
 ---
-title: How to configure PHP on your OVH web hosting package (2014)
-excerpt: This guide will help you to configure PHP on your OVH web hosting package.
+title: 'Changing a Web Hosting plan’s PHP version'
 slug: how_to_configure_php_on_your_ovh_web_hosting_package_2014
+excerpt: 'Find out how to change the PHP version on an OVH Web Hosting plan'
 legacy_guide_number: g1207
 ---
 
+**Last updated 23rd October 2018**
 
-## How to choose your version of PHP
+## Objective
 
-## In your control panel
-This guide will explain how to enable PHP-FPM and specify a version of PHP using the .ovhconfig file. Otherwise you can do this from your customer account, following this guide: []({legacy}1999)
-To configure PHP manually with the .ovhconfig file, you just have to save the ".ovhconfig" file to the root of your disk space, via FTP.
+There are many different types of website published online. With an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}, you can host whatever kind of website you want, provided it is compatible with [our infrastructures’ configuration](http://pro.ovh.net/infos/){.external}. As a result, you may find that you want to modify the PHP version used by your Web Hosting plan.
 
-For example, to use PHP 5.6, this ".ovhconfig file" must contain the following code:
+**Find out how to change the PHP version on an OVH Web Hosting plan.**
 
+## Requirements
 
-```
-app.engine=php
-app.engine.version=5.6
-http.firewall=none
-environment=production
-```
+- a compatible [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} (excluding Cloud Web)
+- the ability to manage the Web Hosting plan from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager), or access to the information you need to connect to the storage space 
 
+## Instructions
 
+There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVH offers the very latest PHP versions, a list of which can be found here: <https://www.ovh.co.uk/web-hosting/php.xml>. 
 
+Because some features cannot be maintained in newer versions, **please ensure that the new PHP version you want to use is compatible with your website before you start making any changes.**
 
-## Which versions of PHP are available for your website?
-You can use the following versions of PHP:
+### Step 1: Ensure that your website is compatible.
 
-- PHP 7.0
-- PHP 5.6 (default version)
-- PHP 5.5 (soon to be obsolete, not recommended)
-- PHP 5.4 (obsolete)
-- PHP 5.3 (obsolete) 
+Although OVH manages setup for the latest PHP versions on its servers, as a webmaster, you are responsible for ensuring that your website is up-to-date and compatible with the latest PHP versions. There are two ways of doing this, depending on the type of website you are using.
 
+**If you are using a turn-key website, based on a CMS (e.g. WordPress or Joomla!):** 
 
-PLEASE NOTE: the software publisher has discontinued earlier versions and we will gradually stop providing them. We will continue to carry out updates on new PHP versions when released, yet will cease to do this on older versions once they are no longer supported. We therefore advise that you ensure your pages are regularly updated. You can follow the progress of these tasks on the OVH status website.
+- Check the official documentation released by your CMS' publisher. 
+- Note down the information concerning essential technical requirements for your CMS to work, as well as the changes you need to make in order to update your CMS.
+- If necessary, update your CMS and check that the new version is compatible with your OVH Web Hosting plan.
 
-Please note that once the ".ovhconfig" is in place, the version of PHP to be used is defined by the app.engine.version. Variables in your .htaccess, such as SetEnv PHP_VER, will therefore be ignored.
+**If you are using a website based on a custom solution:** 
 
+- Get in touch with the webmaster who built the website.
+- Check the official PHP documentation, which provides more information on the version migrations. The official documentation is available here: <http://php.net/manual/en/appendices.php>.
+- If necessary, update your website’s code and check that it remains compatible with your OVH Web Hosting plan.
 
-## You created your .ovhconfig and you get a "Not Implemented" error.
-This means that the engine or the version specified in your ".ovhconfig" file doesn't exist. Do not hesitate to look at your website's "error.log" for more information on the error.
+If you need to see which PHP version is currently used by your OVH Web Hosting plan, there are two ways of doing so: 
 
+|Method|Description|
+|---|---|
+|Via the OVH Control Panel|Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. In the `General information`{.action} tab, note down the version listed below **Global PHP version**. If a blue circle appears instead, please wait a few moments for the version to load.|
+|Via a script|Create a **.php** script, containing only the code `<?php phpinfo(); ?>`. You need to put the script online on your storage space, then run it by accessing its full URL. |
 
-## What does the environment variable mean?
-This allows you to specify the cache for static files as well as the behaviour of PHP errors.
+![phpversion](images/change-php-version-step1.png){.thumbnail}
 
-In development mode:
+If you are unable to ensure that your website is compatible with the new PHP version, you can try to change the current version and undo your changes if necessary. **Please note, however, we strongly advise against adopting this method.** By doing this, you run the risk of your website experiencing some technical issues. It is also important to keep in mind that even if the website displays properly once you have changed the PHP version, specific features may be affected, and may no longer work properly. 
 
-- No cache is stored
-- PHP logs are displayed on your site (display_errors=On)
+Once you are ready to change the PHP version, please move to the next step.
 
+### Step 2: Change the PHP version on your Web Hosting plan.
 
-In production mode: (default option)
+There are several ways you can modify your Web Hosting plan’s PHP version:
 
-- Static files such as images, videos, audio files have a longer lifespan which maximises file caching on web browsers
-- PHP logs aren't displayed on your website (display_errors=Off)
+- **Through a configuration wizard in the OVH Control Panel.** This solution is less technical, and you will need to be logged in to the OVH Control Panel, where you can choose the new PHP version along with other settings. Please refer to the instructions set out in this guide if you would like to use this method: [Modifying the configuration of a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment/){.external}.
 
+- **By manually modifying a file in your storage space.** This solution is more technical, and you will need to be logged in to your storage space, so that you can modify the .ovhconfig file. Please refer to the instructions set out in this guide if you would like to use this method: [Configuring the .ovhconfig file of your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/configuring-file-ovhconfig/){.external}.
 
+If you are more technically experienced, please note that you can no longer modify the PHP version via an .htaccess file on the latest [OVH Web Hosting plans](https://www.ovh.co.uk/web-hosting/){.external}. The command that changes the PHP version in .htaccess files cannot be used to switch to the latest PHP versions on our infrastructures. Instead, you will need to edit the .ovhconfig file, which you can do by following this guide: [Configuring the .ovhconfig file of your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/configuring-file-ovhconfig/){.external}.
 
+## Go further
 
-## What does the http.firewall variable mean?
-This variable allows you to enable a type mod_security firewall application. To do this, add security.
-http.firewall is set to none by default.
+[Modifying the configuration of a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment/){.external}
 
+[Configuring the .ovhconfig file of your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/configuring-file-ovhconfig/){.external}
 
-## Change the runtime environment with the container.image directive.
-OVH web hosting packages let you change your website's runtime environment.
-This means that you can either get a stable environment for the long term, or get the latest updates on the software provided by OVH. 
-
-To do this add the following line:
-
-
-```
-; __container.image__
-;
-; values:
-; stable: current recommended and up-to-date environment
-; legacy: former stable environment, only receiving security updates, being feature-freezed
-; testing: "experimental" environment dedicated to functionalities beta testing before being merged into stable
-;
-container.image=stable
-```
-
-
-This directive applies to all of your web hosting package and it can only be in the .ovhconfig file at the root of your hosting package. 
-
-If you have several .ovhconfig files in different directories on the same hosting package the "container.image" directive can only be defined at the root of your hosting package*.
-
-There is a description of different runtime environments in this guide:
-[]({legacy}2149)
-
-* In this case you can only specify the "container.image" directive in the .ovhconfig at the root, the other directives are defined in each of your subfolders.
-
-
-## Details on the .ovhconfig file
-Here are the config file application details: 
-
-
-```
-; ovhconfig
-;
-; this file must be placed in $HOME/.ovhconfig or in $DOCUMENT_ROOT/.ovhconfig
-
-; __app.engine__
-;
-; values: php (php engine + opcache accelerator)
-; notice: if php, a phpcgi engine will be activated as fallback (if previous engine crash)
-;
-; php:
-; IMPORTANT: register_globals and magic_quotes_gpc are off for security
-; php options .htaccess (like php version) are ignored
-; phpcgi:
-; IMPORTANT this is a fallback or previous system
-; in this case __app.engine.version__ will be considerated as AUTO and php version will be old system
-; (meaning depending .htaccess or .phpX extension)
-;
-app.engine=php
-
-; __app.engine.version__ specify version of your engine
-;
-; for php:
-; default: 5.6
-; for phpcgi:
-; this options is ignored (= fallback in AUTO)
-;
-app.engine.version=5.6
-
-; __http.firewall__ used to add application firewall (filter http requests)
-;
-; values: none | security
-; default: none
-;
-http.firewall=none
-
-; __environment__
-;
-; values: production | development
-;
-; production:
-; apache will maximise local cache
-; mod_expires will grow up TTL of js, css, pdf, images, video, audio
-; you can override it changing expiration explicitly or in your .htaccess
-; feel free to look on our guide.
-; development:
-; no expiration is added, files are not locally in cache,
-; will speed up tests but decrease performances
-;
-; choosen environment will also be available in your variable ENVIRONMENT unix env
-;
-; default: production
-;
-environment=development
-```
-
-
-
-
-## Which versions of PHP are available for your website?
-If your site uses a CMS, such as WordPress, Joomla! or PrestaShop, you will find useful information on the official websites or in the admin space of the module. If the CMS you use continues to be provided by the publisher and your version is up-to-date, it should be able to support the latest PHP updates. Most CMS have a simple update tool allowing you to perform updates easily. Some update automatically, like WordPress version 3.7 and onwards (2013 and onwards).
-
-If your site is based on your own development or another customised solution, you will need to find out which version(s) of PHP would be supported.
-
-For information, here is the list of updates that are incompatible with different versions of PHP:
-> from PHP 4 to PHP 5: http://php.net/manual/en/migration5.incompatible.php
-> from PHP 5.1 to PHP 5.2: http://php.net/manual/en/migration52.incompatible.php
-> from PHP 5.2 to PHP 5.3: http://php.net/manual/en/migration53.incompatible.php
-> from PHP 5.3 to PHP 5.4: http://php.net/manual/en/migration54.incompatible.php
-> from PHP 5.4 to PHP 5.5: http://php.net/manual/en/migration55.incompatible.php
-> from PHP 5.5 to PHP 5.6: http://php.net/manual/en/migration56.incompatible.php
-> from PHP 5.6 to PHP 7.0 : http://php.net/manual/fr/migration70.deprecated.php
-
-
-## How to choose your version of PHP
-Once you have chosen which version of PHP you should use, you can use the following guide to change it: []({legacy}1999)
-
-
-## Where do I save my .ovhconfig file?
-
-## You have a web hosting package with only one website
-In most cases, you only have one website on your web hosting package.
-
-Remember that you can edit and generate the .ovhconfig file directly in your customer account using this guide:
-[]({legacy}1999)
-
-However if you want to use a manual method anyway, the .ovhconfig file should be saved at the root of your hosting, i.e. in the first ("/") folder as shown in the image opposite. 
-
-
-- This means that the subfolders will use this file's settings.
-
-
-
-![](images/img_3764.jpg){.thumbnail}
-
-## You have specified many "associated domains" which do not need to be configured differently
-In this case, refer to the paragraph above. 
-
-
-- All associated domains will take over from the .ovhconfig file saved at root of your hosting.
-
-
-
-## You have specified many "associated domains" which need to be configured differently
-You can specify a different version of PHP in each of the associated domains, to do so you have to save an .ovhconfig file in each of the target directories specified on your associated domains. 
-
-If there is no .ovhconfig file in the target directory, the .ovhconfig at the root of your hosting will be used. 
-
-
-However it is strongly recommended that you do not use different environments on the same web hosting package in different .ovhconfig files. This may make versions of PHP incompatible with environments because of cache. We suggest that you split your different websites across different packages so that you avoid this issue for this type of usage.
-
-
-## Can you change your web hosting package's PHP configuration?
-There are different configurations available for your web hosting package, you can find a description of all the different runtime environments in this guide: []({legacy}2149)
-
+Join our community of users on <https://community.ovh.com/en/>.

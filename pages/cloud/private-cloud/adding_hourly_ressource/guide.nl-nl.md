@@ -25,7 +25,7 @@ Met [Private Cloud](https://www.ovh.nl/private-cloud/){.external} kunnen resourc
 
 ### Selecteer de resource
 
-Voor toegang tot de gebruikersinterface waar resources kunnen worden toegevoegd, selecteert u het cluster en klikt u vervolgens op het tabblad `Manage`{.action}.
+Voor toegang tot de gebruikersinterface waar resources kunnen worden toegevoegd, selecteert u het datacenter en klikt u vervolgens op het tabblad `Manage`{.action}.
 
 ![Toevoegen van een host](images/addhost_01.png){.thumbnail}
 

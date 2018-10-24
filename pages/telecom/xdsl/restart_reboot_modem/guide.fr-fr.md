@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment redémarrer ou réinitialiser un modem ADSL OVH'
 section: 'Diagnostic et dépannage'
 ---
 
-**Dernière mise à jour le 19/06/18**
+**Dernière mise à jour le 16/10/2018**
 
 ## Objectif
 
@@ -96,9 +96,10 @@ Débranchez tous les câbles de type RJ45 (ports jaunes sur la photo ci-dessous)
 > Durant l'appui sur le bouton `Reset`, les voyants s'éteindront et seul le voyant `Power` sera allumé, il passera en vert avec un petit claquement, puis en orange.
 >
 
-![Bouton de réinitialisation](images/tg799_reset.png){.thumbnail}
+![Bouton de réinitialisation](images/tg789_reset.png){.thumbnail}
 
-![Réinitialisation en cours](images/tg799_front_resetdoing.png){.thumbnail}
+![Réinitialisation en cours](images/tg789_front_resetdoing.png){.thumbnail}
+
 
 
 Le modem va redémarrer plusieurs fois avant d'être pleinement opérationnel. Ce processus devrait durer au total une quinzaine de minutes.
@@ -116,9 +117,9 @@ Rien ne se passera, c'est normal. Il faudra attendre environ 30 secondes après 
 > Le voyant `Status` passera au rouge ensuite tous les voyants s'allumeront et enfin il sera orange.
 >
 
-![Bouton de réinitialisation](images/tg789_reset.png){.thumbnail}
+![Bouton de réinitialisation](images/tg799_reset.png){.thumbnail}
 
-![Réinitialisation en cours](images/tg789_front_resetdoing.png){.thumbnail}
+![Réinitialisation en cours](images/tg799_front_resetdoing.png){.thumbnail}
 
 Le modem va redémarrer plusieurs fois avant d'être pleinement opérationnel. Ce processus devrait durer au total une quinzaine de minutes.
 
