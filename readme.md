@@ -25,7 +25,7 @@ Please :
 * Verify and test every actions you describe: do not write about things you cannot test by yourself.
 * Prefer to use the English version of the Control Panel to take screenshots.
 * If you need, precise the nature of your contribution in the comment.
-* Do you PR on "develop" branch
+* Do your PR on "develop" branch
 
 ## Licensing
 
