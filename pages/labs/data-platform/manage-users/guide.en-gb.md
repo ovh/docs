@@ -1,6 +1,6 @@
 ---
 title: 'Manage users and groups'
-excerpt: 'learn how to manage users and groups'
+excerpt: 'Learn how to manage users and groups with the idM'
 section: 'Users and Security'
 order: 2
 ---
@@ -22,11 +22,11 @@ You can add new users using the idM web interface of your platform:
 1. Navigate to `https://ipa.{cluster_id}.datalake.ovh`
 2. Log in with the *admin* user. [Learn how to generate your first credentials](../retrieve-credentials/guide.en-gb.md)
 3. Navigate to  *Identity* > *Users* and click on the *+ Add* button
-{{< figure src="idm-add-user.png" title="Add user in idM" >}}
+![Add user in idM](images/idm-add-user.png)
 4. Complete the new user form with *User login*, *First name*, *Last name* and *Password* and click on *Add and Edit*
 5. In the user view, select *User Groups* tab
 6. Click on *+ Add* button
-{{< figure src="idm-user-group-tab.png" title="Show user groups" >}}
+![Show user groups](images/idm-user-group-tab.png)
 7. Select the *hadoop-users* group and optionally the *hadoop-admins* group. [Learn more on groups](#default-user-groups)
 8. Your new user should be able to login with SSH and will be asked to change its password on first login
 
@@ -71,7 +71,7 @@ Each user is able to manage its own SSH public keys to connect on the platform:
 2. Login with your credentials
 3. Navigate to  *Identity* > *Users* and click on your username
 4. In the SSH public keys click on *Add*
-{{< figure src="idm-add-ssh-key.png" title="Add SSH key" >}}
+![Add SSH key](images/idm-add-ssh-key.png)
 5. Paste your public ssh key and click *Set*
 6. Save your modifications using the dedicated button
 ![Apply user modifications](images/idm-user-save.png)
@@ -83,7 +83,7 @@ Groups allow administrators to easily give access to resources to a given user. 
 1. Navigate to `https://ipa.{cluster_id}.datalake.ovh`
 2. Log in with the *admin* user. [Learn how to generate your first credentials](../retrieve-credentials/guide.en-gb.md)
 3. Navigate to  *Identity* > *Groups* and click on the *+ Add* button
-{{< figure src="idm-add-group.png" title="Add group in idM" >}}
+![Add group in idM](images/idm-add-group.png)
 4. Complete the new group form with *Group name*, and an optional description
 5. Click on *Add and Edit*
 6. Your group is created, you can add users if desired

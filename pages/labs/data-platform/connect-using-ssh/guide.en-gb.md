@@ -10,15 +10,20 @@ order: 3
 All the nodes of your Data Platform are isolated inside private network (vRack).
 To connect to any instance, you must use a "jump host" also known as bastion.
 
+> [!primary]
+>
+> First, you need to [add your SSH key on IPA](../manage-users/guide.en-gb.md)
+>
+
 To connect to your bastion as an admin user:
 ```bash
-$ ssh admin@{cluster_id}.datalake.ovh
+$ ssh admin@{bastion_IP}
 ```
 
 When connected as the bastion you can then access any other host using its
 hostname. For example, connecting to a edge node would be
 ```bash
-$ ssh ovh-enode0
+$ ssh admin@ovh-enode0
 ```
 
 

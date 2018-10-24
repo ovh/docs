@@ -26,7 +26,7 @@ and the effective access rights.
 
 ### HDFS
 With HDFS policies you can restrict access to specific filesystem paths.
-{{< figure src="access_manager_policies.png" title="HDFS policies list" >}}
+![HDFS policies list](images/access_manager_policies.png)
 Create a new policy and input the desired HDFS path in the *Resource Path* field. Activate the *Recursive* switch
 if you want to policy to also be applied for subfolders. Use the Audit logging switch to control whether you want
 all accesses to that path to be logged by Ranger.
