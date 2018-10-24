@@ -25,7 +25,7 @@ L'offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external} vous p
 
 ### Sélectionner la ressource
 
-Afin d'accéder à l'interface permettant d'ajouter des ressources horaires, vous devez sélectionner le cluster puis cliquer sur l'onglet `Manage`{.action}.
+Afin d'accéder à l'interface permettant d'ajouter des ressources horaires, vous devez sélectionner le datacenter puis cliquer sur l'onglet `Manage`{.action}.
 
 ![Ajout d'un host](images/addhost_01.png){.thumbnail}
 

@@ -25,7 +25,7 @@ section: 'OVH:n ominaisuudet'
 
 ### Valitse resurssi
 
-Jotta pääset käyttöliittymään, jossa resursseja voidaan lisätä, valitse klusteri ja klikkaa sitten välilehteä `Manage`{.action}.
+Jotta pääset käyttöliittymään, jossa resursseja voidaan lisätä, valitse datacenter ja klikkaa sitten välilehteä `Manage`{.action}.
 
 ![Isäntäpalvelimen lisäys](images/addhost_01.png){.thumbnail}
 
