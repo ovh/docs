@@ -24,7 +24,7 @@ FileZilla est un logiciel disponible sur plusieurs systèmes d'exploitations (Wi
 
 Ce dernier vous donne notamment la possibilité de mettre en ligne votre site internet en vous permettant de vous connecter à votre espace d'hébergement (FTP).
 
-Pour en bénéficier, veuillez vous reporter au site : [filezilla.fr](http://filezilla.fr/){.external}
+Pour en bénéficier, veuillez vous reporter au site : [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
 
 ![hosting](images/2400.png){.thumbnail}
