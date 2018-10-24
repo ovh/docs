@@ -119,23 +119,6 @@ Back in the **Security** window, you can check that the account is well defined.
 
 ![](images/veeamBandR_conf_5.png){.thumbnail}
 
-Go to the menu, then click on `Users and Roles`{.action}.
-
-![](images/veeamBandR_conf_14.PNG){.thumbnail}
-
-In the new window `Security`{.action}, do `Add...`{.action}.
-
-![](images/veeamBandR_conf_15.PNG){.thumbnail}
-
-In the new window `Add User`{.action}, enter the service account previously created and select the role **Veeam Backup Administrator** and finally validate with `OK`{.action}
-
-![](images/veeamBandR_conf_15.PNG){.thumbnail}
-
-Back in the **Security** window, you can check that the account is well defined.
-
-![](images/veeamBandR_conf_16.PNG){.thumbnail}
-
-
 ### Register the Veeam Backup server
 
 ## With OVH Manager
