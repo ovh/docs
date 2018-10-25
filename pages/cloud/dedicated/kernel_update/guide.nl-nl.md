@@ -49,7 +49,7 @@ uname -r
 4.09.76-xxxx-std-ipv6-64
 ```
 
-In dit geval is de kernelversie **4.9.118-xxxx-std-ipv6-64**.
+In dit geval is de kernelversie **4.09.76-xxxx-std-ipv6-64**.
 
 ### Update de kernel met behulp van OVH pakketten
 
@@ -95,7 +95,7 @@ Zonder de kernel opnieuw te compileren, hoeft u alleen maar de juiste bzImage-ve
 
 De kernels zijn monolithisch, wat wil zeggen dat ze geen rekening houden met modules als: CEPH, NBD, ZFS…
 
-Neem ons voorbeeld, met de kernel-versie: **4.9.118-xxxx-std-ipv6-64**.
+Neem ons voorbeeld, met de kernel-versie: **4.09.76-xxxx-std-ipv6-64**.
 
 We moeten hier de volgende afbeelding downloaden met het commando:
 
@@ -167,7 +167,7 @@ chroot /mnt
 Ga naar de `/boot`-map en verwijder de laatste geïnstalleerde bestanden (`rm`-commando). In ons voorbeeld moeten we het volgende invoeren: 
 
 ```sh
-rm bzImage-4.14.13-xxxx-std-ipv6-64
+rm bzImage-4.09.76-xxxx-std-ipv6-64
 ```
 
 Vervolgens moet u het boot-systeem opnieuw updaten:

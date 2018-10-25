@@ -49,7 +49,7 @@ uname -r
 4.09.76-xxxx-std-ipv6-64
 ```
 
-Kernelin versio on tässä tapauksessa **4.9.118-xxxx-std-ipv6-64**.
+Kernelin versio on tässä tapauksessa **4.09.76-xxxx-std-ipv6-64**.
 
 ### Kernelin päivitys OVH:n paketteja käyttäen
 
@@ -95,7 +95,7 @@ Ilman kernelin uudelleenkokoamista riittää halutun bzImage-version (mieluiten 
 
 Kernelit ovat monoliittisia eli ne eivät huomioi kernel-moduuleja: CEPH, NBD, ZFS...
 
-Palataan esimerkkiimme, jonka kernelin versio oli: **4.9.118-xxxx-std-ipv6-64**.
+Palataan esimerkkiimme, jonka kernelin versio oli: **4.09.76-xxxx-std-ipv6-64**.
 
 Siinä on siis ladattava seuraava image alla olevalla komennolla:
 
@@ -167,7 +167,7 @@ chroot /mnt
 Mene seuraavaksi `/boot`-hakemistoon ja poista viimeiset asennetut tiedostot (komento `rm`). Esimerkissämme on tarpeen tehdä näin:
 
 ```sh
-rm bzImage-4.14.13-xxxx-std-ipv6-64
+rm bzImage-4.09.76-xxxx-std-ipv6-64
 ```
 
 Tämän jälkeen esilatausohjelma on päivitettävä uudelleen:

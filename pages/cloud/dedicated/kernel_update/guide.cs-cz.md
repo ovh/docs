@@ -49,7 +49,7 @@ uname -r
 4.09.76-xxxx-std-ipv6-64
 ```
 
-Verze kernelu je v tomto případě následující: **4.9.118-xxxx-std-ipv6-64**.
+Verze kernelu je v tomto případě následující: **4.09.76-xxxx-std-ipv6-64**.
 
 ### Aktualizace kernelu pomocí balíčků OVH
 
@@ -95,7 +95,7 @@ Aniž by bylo zapotřebí rekompilovat kernel, stáhněte příslušnou verzi bz
 
 Kernely jsou monolitické, což znamená, že celý kód běží v jednom paměťovém prostoru (nejsou zde brány v úvahu moduly jako CEPH, NBD ZFS a další). 
 
-Vraťme se nyní k našemu příkladu. Aktuální verze našeho kernelu je: **4.9.118-xxxx-std-ipv6-64**.
+Vraťme se nyní k našemu příkladu. Aktuální verze našeho kernelu je: **4.09.76-xxxx-std-ipv6-64**.
 
 Nyní je zapotřebí stáhnout příslušný image zadáním následujícího příkazu:
 
@@ -167,7 +167,7 @@ chroot /mnt
 Následně přejděte do adresáře `/boot` a odstraňte naposledy nainstalované soubory (příkaz `rm`). V našem případě je zapotřebí zadat příkaz v následujícím formátu:
 
 ```sh
-rm bzImage-4.14.13-xxxx-std-ipv6-64
+rm bzImage-4.09.76-xxxx-std-ipv6-64
 ```
 
 Následně je opět zapotřebí aktualizovat bootovací systém:
