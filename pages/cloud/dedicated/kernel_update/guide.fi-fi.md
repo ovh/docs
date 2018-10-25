@@ -167,7 +167,7 @@ chroot /mnt
 Mene seuraavaksi `/boot`-hakemistoon ja poista viimeiset asennetut tiedostot (komento `rm`). Esimerkissämme on tarpeen tehdä näin:
 
 ```sh
-rm bzImage-4.09.76-xxxx-std-ipv6-64
+rm bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 Tämän jälkeen esilatausohjelma on päivitettävä uudelleen:

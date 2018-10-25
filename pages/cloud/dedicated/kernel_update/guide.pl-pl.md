@@ -165,7 +165,7 @@ chroot /mnt
 Następnie przejdź do katalogu `/boot` i usuń ostatnio zainstalowane pliki (komenda`rm`). W podanym przypadku musisz wpisać polecenie w następującym formacie:
 
 ```sh
-rm bzImage-4.09.76-xxxx-std-ipv6-64
+rm bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 Konieczna jest ponowna aktualizacja programu rozruchowego:
