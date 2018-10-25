@@ -96,6 +96,4 @@ When you create an instance and choose to pay monthly, you must keep this instan
 
 ## Go further
 
-[Getting started with Public Cloud](https://docs.ovh.com/sg/en/public-cloud/getting-started-with-public-cloud/){.external}
-
 Join our community of users on <https://community.ovh.com/en/>.
