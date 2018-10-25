@@ -1,8 +1,8 @@
 ---
-title: Mettre à jour le kernel sur un serveur dédié
-excerpt: Découvrez comment mettre à jour le kernel d’une distribution utilisant un noyau OVH
+title: 'Mettre à jour le kernel sur un serveur dédié'
+excerpt: 'Découvrez comment mettre à jour le kernel d’une distribution utilisant un noyau OVH'
 slug: mettre-a-jour-kernel-serveur-dedie
-section: Utilisation avancée
+section: 'Utilisation avancée'
 ---
 
 **Dernière mise à jour le 08/07/2018**
@@ -48,7 +48,7 @@ uname -r
 4.09.76-xxxx-std-ipv6-64
 ```
 
-La version du kernel est dans ce cas **4.9.118-xxxx-std-ipv6-64**.
+La version du kernel est dans ce cas **4.09.76-xxxx-std-ipv6-64**.
 
 ### Mettre à jour le kernel en utilisant les paquets OVH
 
@@ -94,7 +94,7 @@ Sans recompilation du kernel, il suffit de télécharger la version bzImage souh
 
 Les kernels sont monolithiques, c’est-à-dire qu'ils ne prennent pas en compte les modules kernel : CEPH, NBD, ZFS…
 
-Reprenons notre exemple, dont la version du kernel était : **4.9.118-xxxx-std-ipv6-64**.
+Reprenons notre exemple, dont la version du kernel était : **4.09.76-xxxx-std-ipv6-64**.
 
 Ici, il faudrait donc télécharger l'image suivante avec la commande ci-dessous :
 
@@ -166,7 +166,7 @@ chroot /mnt
 Placez-vous ensuite dans le répertoire `/boot` et supprimez les derniers fichiers installés (commande `rm`). Dans notre exemple, il convient de faire :
 
 ```sh
-rm bzImage-4.14.13-xxxx-std-ipv6-64
+rm bzImage-4.09.76-xxxx-std-ipv6-64
 ```
 
 Puis il faut de nouveau mettre à jour le système d'amorçage :

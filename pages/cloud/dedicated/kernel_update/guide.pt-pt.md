@@ -49,7 +49,7 @@ uname -r
 4.09.76-xxxx-std-ipv6-64
 ```
 
-Neste caso, a versão do kernel é **4.9.118-xxxx-std-ipv6-64**.
+Neste caso, a versão do kernel é **4.09.76-xxxx-std-ipv6-64**.
 
 ### Atualizar o kernel utilizando os pacotes OVH
 
@@ -95,7 +95,7 @@ Sem recompilar o kernel, transfira a versão bzImage pretendida, de preferência
 
 Os kernel são monolíticos, ou seja, não têm em conta os módulos  CEPH, NBD, ZFS, etc.
 
-Retomemos o exemplo, cuja versão do kernel era: **4.9.118-xxxx-std-ipv6-64**.
+Retomemos o exemplo, cuja versão do kernel era: **4.09.76-xxxx-std-ipv6-64**.
 
 Aqui, seria necessário transferir a imagem abaixo através do comando:
 
@@ -167,7 +167,7 @@ chroot /mnt
 Em seguida, aceda ao diretório `/boot` e elimine os últimos ficheiros instalados com o comando `rm`. Exemplo:
 
 ```sh
-rm bzImage-4.14.13-xxxx-std-ipv6-64
+rm bzImage-4.09.76-xxxx-std-ipv6-64
 ```
 
 De seguida, atualize novamente o sistema de arranque:

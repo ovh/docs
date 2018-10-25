@@ -1,8 +1,8 @@
 ---
-title: Updating the kernel on a dedicated server
+title: 'Updating the kernel on a dedicated server'
 slug: updating-kernel-dedicated-server
-excerpt: Find out how to update the kernel for distributions that use an OVH core
-section: Advanced use
+excerpt: 'Find out how to update the kernel for distributions that use an OVH core'
+section: 'Advanced use'
 ---
 
 **Last updated 07/08/2018**
@@ -49,7 +49,7 @@ uname -r
 4.09.76-xxxx-std-ipv6-64
 ```
 
-In this case, the kernel version is  **4.9.118-xxxx-std-ipv6-64**.
+In this case, the kernel version is  **4.09.76-xxxx-std-ipv6-64**.
 
 
 ### Update the kernel using OVH packages
@@ -95,7 +95,7 @@ Without recompiling the kernel, download the appropriate bzImage version, ideall
 
 Kernels are monolithic, so they don’t take into account kernel modules, such as CEPH, NBD, ZFS...
 
-Let’s return to our example. We have this kernel version: **4.9.118-xxxx-std-ipv6-64**.
+Let’s return to our example. We have this kernel version: **4.09.76-xxxx-std-ipv6-64**.
 
 We therefore need to download the image using this command:
 
@@ -167,7 +167,7 @@ chroot /mnt
 Navigate to the `/boot` directory and delete the last files installed (`rm`command). In our example, the following command is used:
 
 ```sh
-rm bzImage-4.14.13-xxxx-std-ipv6-64
+rm bzImage-4.09.76-xxxx-std-ipv6-64
 ```
 
 The boot loader (GRUB) must be updated again:
