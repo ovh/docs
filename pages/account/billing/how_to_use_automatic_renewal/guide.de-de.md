@@ -9,7 +9,7 @@ legacy_guide_number: g1271
 Die Wahl der Zahlungsart treffen Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/manager/web/) im Menü "Abrechnung". Klicken Sie dort auf "Meine Zahlungsarten" und dann auf "Eine Zahlungsart hinzufügen", um eine Zahlungsart hinzuzufügen.
 
 
-- Wichtig: Wenn keine Zahlungsart aktiviert ist und Sie eine Ihrer Dienstleistungen für die automatische Verlängerung eintragen, wird Ihr OVH Account belastet. Dieser muss dann zeitnah ausgeglichen werden, um eine Unterbrechung der Dienstleistung zu vermeiden.
+- Wichtig: Wenn keine Zahlungsart aktiviert ist und Sie eine Ihrer Dienstleistungen für die automatische Verlängerung eintragen, wird Ihr OVH Account belastet. Dieser muss dann zeitnah ausgeglichen werden, um eine Unterbrechung der Dienstleistung durch OVH zu vermeiden.
 
 
 Die Aktivierung der automatischen Verlängerung erfolgt in der Rubrik "Meine Dienstleistungen".
