@@ -166,7 +166,7 @@ chroot /mnt
 Placez-vous ensuite dans le répertoire `/boot` et supprimez les derniers fichiers installés (commande `rm`). Dans notre exemple, il convient de faire :
 
 ```sh
-rm bzImage-4.09.76-xxxx-std-ipv6-64
+rm bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 Puis il faut de nouveau mettre à jour le système d'amorçage :

@@ -167,7 +167,7 @@ chroot /mnt
 Navigate to the `/boot` directory and delete the last files installed (`rm`command). In our example, the following command is used:
 
 ```sh
-rm bzImage-4.09.76-xxxx-std-ipv6-64
+rm bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 The boot loader (GRUB) must be updated again:

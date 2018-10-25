@@ -167,7 +167,7 @@ chroot /mnt
 Ga naar de `/boot`-map en verwijder de laatste geïnstalleerde bestanden (`rm`-commando). In ons voorbeeld moeten we het volgende invoeren: 
 
 ```sh
-rm bzImage-4.09.76-xxxx-std-ipv6-64
+rm bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 Vervolgens moet u het boot-systeem opnieuw updaten:

@@ -167,7 +167,7 @@ chroot /mnt
 Následně přejděte do adresáře `/boot` a odstraňte naposledy nainstalované soubory (příkaz `rm`). V našem případě je zapotřebí zadat příkaz v následujícím formátu:
 
 ```sh
-rm bzImage-4.09.76-xxxx-std-ipv6-64
+rm bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 Následně je opět zapotřebí aktualizovat bootovací systém:
