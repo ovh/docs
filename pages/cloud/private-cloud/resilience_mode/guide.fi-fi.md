@@ -24,9 +24,10 @@ Häiriönsietotila on OVH:n kehittämä työkalu, joka simuloi jonkin isäntäpa
 ## Käytännössä
 
 Ennen kuin teet mitään, varmista seuraavat kohdat:
-\- isäntäpalvelimen on oltava klusterissa
+
+- isäntäpalvelimen on oltava klusterissa
 - *High Availability* (HA) -vaihtoehdon on oltava aktivoituna
-\- toisen isäntäpalvelimen on oltava saatavilla ja toimintatilassa klusterissa.
+- toisen isäntäpalvelimen on oltava saatavilla ja toimintatilassa klusterissa.
 
 > [!warning]
 >

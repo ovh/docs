@@ -3,7 +3,7 @@ title: 'Utilizar o plugin OVH Network'
 slug: plugin-ovh-network
 excerpt: 'Saiba como utilizar o plugin OVH Network no serviço Private Cloud'
 legacy_guide_number: '7766560'
-section: 'Funcionalidades OVH'
+section: 'Funcionalidades da OVH'
 ---
 
 **Última atualização: 07/09/2018**

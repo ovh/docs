@@ -24,6 +24,7 @@ Le mode résilience est un outil développé par OVH, qui simule une panne sur l
 ## En pratique
 
 Avant tout, assurez-vous des points suivants :
+
 - le serveur hôte doit être dans un cluster ;
 - l'option *High Availability* (HA) doit être activée ;
 - un autre serveur hôte dans le cluster doit être disponible et en état de fonctionnement.
