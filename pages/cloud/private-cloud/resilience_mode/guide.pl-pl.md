@@ -24,6 +24,7 @@ Tryb Resilience jest opracowanym przez OVH narzędziem, które symuluje awarię 
 ## W praktyce
 
 Na wstępie sprawdź, czy spełnione są następujące warunki: 
+
 - serwer-host musi być skonfigurowany w klastrze;
 - opcja *High Availability* (HA) musi być aktywowana;
 - inny serwer host w klastrze musi być dostępny i działać prawidłowo.

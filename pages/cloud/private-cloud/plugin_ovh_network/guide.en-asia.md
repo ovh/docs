@@ -2,22 +2,21 @@
 title: 'Using the OVH Network plugin'
 slug: plugin-ovh-network
 excerpt: 'This guide will show you how to use the OVH Network plugin with your Private Cloud solution'
-legacy_guide_number: '7766560'
 section: 'OVH features'
 ---
 
-**Last updated on 02/10/2018**
+**Last updated 26th October 2018**
 
 ## Objective
 
-The OVH Network plugin was developed to allow for more focused management of the IP addresses linked to your [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution.
+The OVH Network plugin was developed to allow for more focused management of the IP addresses linked to your [Private Cloud](https://www.ovh.com/asia/private-cloud/){.external} solution.
 
 **This guide will show you how to use the OVH Network plugin with your Private Cloud solution.**
 
 ## Requirements
 
-* a [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
-* an IP block linked to your [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
+* a [Private Cloud](https://www.ovh.com/asia/private-cloud/){.external} solution
+* an IP block linked to your [Private Cloud](https://www.ovh.com/asia/private-cloud/){.external} solution
 * access to the vSphere interface
 
 ## Instructions
@@ -41,7 +40,7 @@ The 'IP Blocks'{.action} section gives a list of all the IPs in your block. Make
 
 In order to show the OVH plugin that your public IPs are already being used, you must send an ARP request (_arping_) from the virtual machine(s) that use these addresses. Warning: some configurations with a virtual firewall don’t allow for tracing back MAC addresses if the ARP protocol isn’t authorised.
 
-You can then configure your Reverse IPs for an email server, for example. This configuration process is also accessible via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and the [OVH APIs](https://api.ovh.com/){.external}. Click on the three vertical dots to the left of the IP, then on `Edit Reverse`{.action} 
+You can then configure your Reverse IPs for an email server, for example. This configuration process is also accessible via the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and the [OVH APIs](https://ca.api.ovh.com/console/){.external}. Click on the three vertical dots to the left of the IP, then on `Edit Reverse`{.action} 
 
 ![“Edit Reverse” button](images/network_04.png){.thumbnail}
 

@@ -31,6 +31,7 @@ Przejdź do sekcji `Summary`, w której znajdziesz wykaz Twoich bloków IP i pod
 ![Informacje dotyczące adresów IP i bloków](images/network_02.png){.thumbnail}
 
 W części **IP Blocks** wyszczególnione są wszystkie adresy IP Twojego bloku. Nie używaj **pięciu adresów bloku IP** zarezerwowanych do konfiguracji i zapewnienia wysokiej dostępności bloku, mianowicie:
+
 - pierwszego adresu IP, który jest adresem Twojej sieci;
 - ostatniego adresu IP, który jest adresem **broadcast**;
 - przedostatniego adresu IP, który jest adresem **gateway**;
