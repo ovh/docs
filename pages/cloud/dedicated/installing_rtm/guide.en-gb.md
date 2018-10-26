@@ -27,7 +27,7 @@ Once you have installed the RTM via your Control Panel, you can monitor your ser
 
 > [!primary]
 >
-> Some firewall restrictions could prevent your infrastructure from being monitored, even though you have added the RTM. Don’t forget to give OVH monitoring IP addresses access to your server. You can find more details [here](https://docs.ovh.com/ie/en/dedicated/monitoring-ip-ovh/){.external}.
+> Some firewall restrictions could prevent your infrastructure from being monitored, even though you have added the RTM. Don’t forget to give OVH monitoring IP addresses access to your server. You can find more details [here](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/){.external}.
 > 
 
 ### RTM in Linux
