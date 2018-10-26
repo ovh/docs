@@ -1,11 +1,11 @@
 ---
-title: Actualizar el kernel en un servidor dedicado
-excerpt: Cómo actualizar el kernel con una distribución que utilice un núcleo de OVH
+title: 'Actualizar el kernel en un servidor dedicado'
+excerpt: 'Cómo actualizar el kernel con una distribución que utilice un núcleo de OVH'
 slug: actualizar-kernel-servidor-dedicado
-section: Uso avanzado
+section: 'Uso avanzado'
 ---
 
-**Última actualización: 17/03/2018**
+**Última actualización: 26/10/2018**
 
 ## Objetivo
 
@@ -27,7 +27,7 @@ Por defecto, las imágenes de sistema que ofrece OVH en sus servidores dedicados
 
 ## Requisitos
 
-- Tener acceso *root* al servidor (por SSH).
+- Tener acceso root al servidor (por SSH).
 - Haber realizado previamente una copia de seguridad de los datos (consulte la documentación oficial de su distribución).
 
 ## Procedimiento
@@ -48,7 +48,7 @@ uname -r
 4.09.76-xxxx-std-ipv6-64
 ```
 
-En este caso, la versión del kernel es **4.9.118-xxxx-std-ipv6-64**.
+En este caso, la versión del kernel es **4.09.76-xxxx-std-ipv6-64**.
 
 ### Actualizar el kernel 
 
@@ -62,11 +62,11 @@ cd /boot
 
 #### 2. Descargar la imagen
 
-Si no vamos a recompilar el kernel, solo hay que descargar la versión **bzImage** deseada, preferentemente la última versión. Las imágenes se encuentran en la siguiente dirección: <https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/>. 
+Si no vamos a recompilar el kernel, solo hay que descargar la versión de **bzImage** deseada, preferentemente la última versión. Las imágenes se encuentran en la siguiente dirección: <https://last-public-ovh-kernel.snap.mirrors.ovh.net/builds/>. 
 
 Los kernels son monolíticos, es decir, que no tienen en cuenta los módulos de kernel Ceph, NBD, ZFS, etc.
 
-Volviendo al ejemplo, teníamos la siguiente versión de kernel: **4.9.118-xxxx-std-ipv6-64**.
+Volviendo al ejemplo, teníamos la siguiente versión de kernel: **4.09.76-xxxx-std-ipv6-64**.
 
 Por lo tanto, deberemos descargar una imagen superior con el siguiente comando:
 
@@ -138,7 +138,7 @@ chroot /mnt
 Sitúese en el directorio **/boot** y, con el comando `rm`, elimine los últimos archivos instalados. En nuestro ejemplo, habría que ejecutar el siguiente comando:
 
 ```sh
-rm bzImage-4.14.13-xxxx-std-ipv6-64
+rm bzImage-4.9.118-xxxx-std-ipv6-64
 ```
 
 Actualice de nuevo el sistema de arranque:
