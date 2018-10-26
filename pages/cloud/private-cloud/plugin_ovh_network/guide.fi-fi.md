@@ -31,10 +31,11 @@ Tulet nyt `Summary`-osioon, johon on koottuna omistamasi IP-lohkot sekä jokaise
 ![IP-osoitteiden ja lohkojen tiedot](images/network_02.png){.thumbnail}
 
 **IP Blocks**-osassa on listattuna kaikki lohkosi IP-osoitteet. Varo käyttämästä konfigurointiin ja korkeakäyttöisyyteen **varattuja viittä IP-lohkoa**:
-\- ensimmäinen IP-osoite ilmoittaa lohkosi reitittimellä
-\- viimeinen IP-osoite on **broadcast**-IP
-\- toiseksi viimeinen on **gateway**-väyläsi
-\- kahta ennen gatewayta olevaa IP-osoitetta käytetään **HSRP**-protokollana (Hot Standby Router Protocol) reitittimillä.
+
+- ensimmäinen IP-osoite ilmoittaa lohkosi reitittimellä
+- viimeinen IP-osoite on **broadcast**-IP
+- toiseksi viimeinen on **gateway**-väyläsi
+- kahta ennen gatewayta olevaa IP-osoitetta käytetään **HSRP**-protokollana (Hot Standby Router Protocol) reitittimillä.
 
 ![IP-lohkot](images/network_03.png){.thumbnail}
 

@@ -31,6 +31,7 @@ Vous arrivez dès lors dans la section `Summary`, qui récapitule les blocs d'IP
 ![Informations sur les IP et les blocs](images/network_02.png){.thumbnail}
 
 La partie **IP Blocks** liste l'ensemble des IP de votre bloc. Veillez à ne pas utiliser les **5 IP du bloc réservées** pour la configuration et la haute disponibilité de celui-ci, à savoir :
+
 - la première IP, qui annonce votre bloc sur le routeur ;
 - la dernière IP, qui est celle de **broadcast** ;
 - l'avant-dernière, qui est votre **gateway** ;
