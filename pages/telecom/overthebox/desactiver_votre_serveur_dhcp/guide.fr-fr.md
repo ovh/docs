@@ -38,8 +38,8 @@ Ce guide montre comment effectuer cette opération sur les différentes Box gran
 > précise de l'installation d' OverTheBox . Il est donc préférable de
 > suivre la procédure d'installation avant d'effectuer cette manipulation.
 > Cette procédure d'installation simplifiée est disponible sur un des liens suivants :
-> [Mes 10 premières minutes avec OverTheBox intel](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}
-> [Mes 10 premières minutes avec OverTheBox IT](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}   
+-[Mes 10 premières minutes avec OverTheBox intel](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}
+-[Mes 10 premières minutes avec OverTheBox IT](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}   
 >
 
 
