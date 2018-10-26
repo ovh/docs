@@ -11,8 +11,10 @@ section: Fonctionnalités principales
 
 > [!alert]
 >
-> Cette procédure ne s'applique pas à l'Overthebox "PLUS". Seules les OverTheBox "intel" et "IT" sont concernées. Si vous désactivez le DHCP de vos modems associés à une OverTheBox "PLUS", celle-ci ne fonctionnera plus correctement.
+> Cette procédure ne s'applique pas à l'Overthebox "PLUS". Seules les OverTheBox "intel" et "IT" sont concernées.
+> Si vous désactivez le DHCP de vos modems associés à une OverTheBox "PLUS", celle-ci ne fonctionnera pas correctement.
 >
+
 
 Toutes les Box et routeurs distribués par les fournisseurs d'accès Internet possèdent par défaut un  **serveur DHCP actif** . Ce serveur permet de distribuer intelligemment une adresse IP à chaque appareil réseau leur permettant ainsi de communiquer sur Internet.
 
@@ -28,7 +30,6 @@ Ce guide montre comment effectuer cette opération sur les différentes Box gran
 > quelconque difficulté, veuillez vous rapprocher de votre administrateur
 > ou de votre fournisseur d'accès afin d'effectuer cette manipulation.
 >
-
 
 
 > [!alert]
