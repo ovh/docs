@@ -1,189 +1,71 @@
 ---
-title: PHP konfigūravimas OVH svetainių talpinimo planuose (2014)
-excerpt: Šiame gide pateikiama informacija, kaip OVH svetainių talpinimo planuose konfigūruoti PHP nustatymus
-slug: php_konfiguravimas_ovh_svetainiu_talpinimo_planuose_2014
-legacy_guide_number: g1207
+title: 'Changing a Web Hosting plan’s PHP version'
+slug: how_to_configure_php_on_your_ovh_web_hosting_package_2014
+excerpt: 'Find out how to change the PHP version on an OVH Web Hosting plan'
 ---
 
+**Last updated 23rd October 2018**
 
-## Kaip pasirinkti PHP versiją?
+## Objective
 
-## Jūsų valdymo sąsajoje
-Šiame gide paaiškinsime, kaip įjungti PHP FPM ir nustatyti PHP versiją naudojant .ovhconfig failą. Jei norite, visa tai galite atlikti paprasčiau savo valdymo sąsajoje pagal šias instrukcijas: []({legacy}1999)
-Jei konfigūruojate PHP naudojant .ovhconfig failą rankiniu dūdu, jums tereikia įkelti .ovhconfig failą į savo disko vietos šakninį katalogą, per FTP.
+There are many different types of website published online. With an [OVH Web Hosting plan](https://www.ovh.lt/svetainiu-talpinimas/){.external}, you can host whatever kind of website you want, provided it is compatible with [our infrastructures’ configuration](http://pro.ovh.net/infos/){.external}. As a result, you may find that you want to modify the PHP version used by your Web Hosting plan.
 
-Jei naudosite PHP 5.6, šiame .ovhconfig faile turi būti kodas:
+**Find out how to change the PHP version on an OVH Web Hosting plan.**
 
+## Requirements
 
-```
-app.engine=php
-app.engine.version=5.6
-http.firewall=none
-environment=production
-```
+- a compatible [OVH Web Hosting plan](https://www.ovh.lt/svetainiu-talpinimas/){.external} (excluding Cloud Web)
+- the ability to manage the Web Hosting plan from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager), or access to the information you need to connect to the storage space 
 
+## Instructions
 
+There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVH offers the very latest PHP versions, a list of which can be found here: <https://www.ovh.lt/svetainiu-talpinimas/php.xml>. 
 
+Because some features cannot be maintained in newer versions, **please ensure that the new PHP version you want to use is compatible with your website before you start making any changes.**
 
-## Kokios PHP versijos prieinamos?
-Jūs galite naudoti šias PHP versijas:
+### Step 1: Ensure that your website is compatible.
 
-- PHP 7.0
-- PHP 5.6 (versija pagal nutylėjimą)
-- PHP 5.5  (greitai bus nenaudojama, nerekomenduojama)
-- PHP 5.4  (nepalaikoma)
-- PHP 5.3 (nepalaikoma) 
+Although OVH manages setup for the latest PHP versions on its servers, as a webmaster, you are responsible for ensuring that your website is up-to-date and compatible with the latest PHP versions. There are two ways of doing this, depending on the type of website you are using.
 
+**If you are using a turn-key website, based on a CMS (e.g. WordPress or Joomla!):** 
 
-NB: Ankstesnės versijos, kurių kūrėjas nepalaiko, pamažu šalinamos iš talpinimo planų. Mes atnaujiname PHP versijas, kai nutraukiamas senosios palaikymas. Todėl rekomenduojame reguliariai atnaujinti savo svetaines.
-Versijų atnaujinimo darbų planavimą ir vykdymą galite stebėti mūsų darbų svetainėje.
+- Check the official documentation released by your CMS' publisher. 
+- Note down the information concerning essential technical requirements for your CMS to work, as well as the changes you need to make in order to update your CMS.
+- If necessary, update your CMS and check that the new version is compatible with your OVH Web Hosting plan.
 
-Dėmesio: kai tik įkelsite failą .ovhconfig, pradės veikti prie app.engine.version nurodyta PHP versija. Failo .htaccess konfigūracija, pvz., SetEnv PHP_VER... nebeveiks.
+**If you are using a website based on a custom solution:** 
 
+- Get in touch with the webmaster who built the website.
+- Check the official PHP documentation, which provides more information on the version migrations. The official documentation is available here: <http://php.net/manual/en/appendices.php>.
+- If necessary, update your website’s code and check that it remains compatible with your OVH Web Hosting plan.
 
-## Įkėlus .ovhconfig failą matoma klaida "Not Implemented"
-Ši klaida reiškia, kad .ovhconfig faile nurodyta versija ar variklis neegzistuoja. 
+If you need to see which PHP version is currently used by your OVH Web Hosting plan, there are two ways of doing so: 
 
-Siūlome taip pat patikrinti savo svetainės error.log, kad gautumėte daugiau informacijos apie šią klaidą.
+|Method|Description|
+|---|---|
+|Via the OVH Control Panel|Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. In the `General information`{.action} tab, note down the version listed below **Global PHP version**. If a blue circle appears instead, please wait a few moments for the version to load.|
+|Via a script|Create a **.php** script, containing only the code `<?php phpinfo(); ?>`. You need to put the script online on your storage space, then run it by accessing its full URL. |
 
+![phpversion](images/change-php-version-step1.png){.thumbnail}
 
-## Ką reiškia environment direktyva?
-Ši direktyva leidžia kešuoti statinius failus ir PHP klaidas.
+If you are unable to ensure that your website is compatible with the new PHP version, you can try to change the current version and undo your changes if necessary. **Please note, however, we strongly advise against adopting this method.** By doing this, you run the risk of your website experiencing some technical issues. It is also important to keep in mind that even if the website displays properly once you have changed the PHP version, specific features may be affected, and may no longer work properly. 
 
-development režime:
+Once you are ready to change the PHP version, please move to the next step.
 
-- Netaikomas failų įkėlimas į spartinančiąją atmintinę;
-- PHP klaidos matomos svetainėje (display_errors=On).
+### Step 2: Change the PHP version on your Web Hosting plan.
 
-production režime: (parinktis pagal nutylėjimą)
-- Statiniai failai, pvz., paveikslėliai, vaizdo įrašai ar garso įrašai turi ilgesnį galiojimo laiką, todėl šie failai ilgiau saugomi spartinančioje naršyklių atmintinėje;
-- PHP klaidos nematomos svetainėje (display_errors=Off).
+There are several ways you can modify your Web Hosting plan’s PHP version:
 
+- **Through a configuration wizard in the OVH Control Panel.** This solution is less technical, and you will need to be logged in to the OVH Control Panel, where you can choose the new PHP version along with other settings. Please refer to the instructions set out in this guide if you would like to use this method: [Modifying the configuration of a Web Hosting plan](https://docs.ovh.com/lt/hosting/svetainiu_talpinimo_plano_vykdymo_aplinkos_keitimas/){.external}.
 
+- **By manually modifying a file in your storage space.** This solution is more technical, and you will need to be logged in to your storage space, so that you can modify the .ovhconfig file. Please refer to the instructions set out in this guide if you would like to use this method: [Configuring the .ovhconfig file of your Web Hosting plan](https://docs.ovh.com/lt/hosting/configuring-file-ovhconfig/){.external}.
 
+If you are more technically experienced, please note that you can no longer modify the PHP version via an .htaccess file on the latest [OVH Web Hosting plans](https://www.ovh.lt/svetainiu-talpinimas/){.external}. The command that changes the PHP version in .htaccess files cannot be used to switch to the latest PHP versions on our infrastructures. Instead, you will need to edit the .ovhconfig file, which you can do by following this guide: [Configuring the .ovhconfig file of your Web Hosting plan](https://docs.ovh.com/lt/hosting/configuring-file-ovhconfig/){.external}.
 
-## Ką reiškia http.firewall direktyva?
-Ši direktyva leidžia taikyti mod_security tipo ugniasienę. Norėdami tai įjungti, nustatykite: security.
-Pagal nutylėjimą http.firewall nustatymas yra none.
+## Go further
 
+[Modifying the configuration of a Web Hosting plan](https://docs.ovh.com/lt/hosting/svetainiu_talpinimo_plano_vykdymo_aplinkos_keitimas/){.external}
 
-## .ovhconfig failas
-config failo aplikacijos detali informacija:
+[Configuring the .ovhconfig file of your Web Hosting plan](https://docs.ovh.com/lt/hosting/configuring-file-ovhconfig/){.external}
 
-
-```
-; ovhconfig
-;
-; this file must be placed in $HOME/.ovhconfig or in $DOCUMENT_ROOT/.ovhconfig
-
-; __app.engine__
-;
-; values: php (php engine + opcache accelerator)
-; notice: if php, a phpcgi engine will be activated as fallback (if previous engine crash)
-;
-; php:
-; IMPORTANT: register_globals and magic_quotes_gpc are off for security
-; php options .htaccess (like php version) are ignored
-; phpcgi:
-; IMPORTANT this is a fallback or previous system
-; in this case __app.engine.version__ will be considerated as AUTO and php version will be old system
-; (meaning depending .htaccess or .phpX extension)
-;
-app.engine=php
-
-; __app.engine.version__ specify version of your engine
-;
-; for php:
-; default: 5.6
-; for phpcgi:
-; this options is ignored (= fallback in AUTO)
-;
-app.engine.version=5.6
-
-; __http.firewall__ used to add application firewall (filter http requests)
-;
-; values: none | security
-; default: none
-;
-http.firewall=none
-
-; __environment__
-;
-; values: production | development
-;
-; production:
-; apache will maximise local cache
-; mod_expires will grow up TTL of js, css, pdf, images, video, audio
-; you can override it changing expiration explicitly or in your .htaccess
-; feel free to look on our guide.
-; development:
-; no expiration is added, files are not locally in cache,
-; will speed up tests but decrease performances
-;
-; choosen environment will also be available in your variable ENVIRONMENT unix env
-;
-; default: production
-;
-environment=development
-```
-
-
-
-
-## Kokios PHP versijos prieinamos?
-Jeigu naudojate svetainę su TVS (WordPress, Joomla, PrestaShop ir pan.), visą naudingą informaciją rasite oficialioje kūrėjo svetainėje. 
-
-Jeigu TVS yra palaikoma kūrėjo ir atnaujinimai nuolatos diegiami, PHP versijų kaita neturi turėti įtakos svetainės veikimui. Dauguma TVS yra su integruotais atnaujinimo įrankiais, kurie leidžia paprastai ir greitai atnaujinti svetainę. Kai kurie įrankiai sukurti TVS kūrėjų, pvz., WordPress toks įrankis naudojamas nuo 3.7 versijos, t.y. nuo 2013 metų pabaigos.
-
-Jeigu patys kuriate savo svetainę ar kitą asmeninį sprendimą, nustatykite, kokia PHP versija reikalinga.
-
-Šis nesuderinamumų tarp PHP versijų sąrašas taip pat gali būti naudingas:
-
- > iš PHP 4 į PHP 5: http://www.php.net/manual/en/migration5.incompatible.php
- > iš PHP 5.1 į PHP 5.2: http://www.php.net/manual/en/migration52.incompatible.php
- > iš PHP 5.2 į PHP 5.3: http://www.php.net/manual/en/migration53.incompatible.php
- > iš PHP 5.3 į PHP 5.4: http://www.php.net/manual/en/migration54.incompatible.php
- > iš PHP 5.4 į PHP 5.5: http://www.php.net/manual/en/migration55.incompatible.php
- > iš PHP 5.5 į PHP 5.6: http://www.php.net/manual/en/migration56.incompatible.php
- > iš PHP 5.6 į PHP 7.0: http://php.net/manual/fr/migration70.deprecated.php
-
-
-## Kaip pasirinkti PHP versiją?
-Kai nustatysite, kokia PHP versija reikalinga, nurodykite ją savo svetainių talpinimo plano .ovhconfig faile, kaip nurodyta aukščiau šiame gide. 
-
-Jeigu norite išbandyti nustatymus, perjunkite talpinimą į developpement režimą, kad matytumėte ir galėtumėte ištaisyti klaidas.
-
-Perjungimas atliekamas .ovhconfig faile pakeičiant environment parametrą iš production į development.
-
-
-## Kur išsaugoti .ovhconfig failą?
-
-## Jūs talpinate vieną svetainę.
-Dažniausiai klientai svetainių prieglobos paslaugoje talpina po vieną svetainę.
-
-Kaip sukurti ir keisti .ovhconfig bylą yra aprašyta šiame gide: []({legacy}1999)
-
-Tačiau, jeigu jūs vis dėl to norite rankiniu būdu įdiegti bylą .ovhconfig, jūs turite įrašyti ją į jūsų talpinimo paslaugos šakninį katalogą ("/"), kaip parodyta iliustracijoje.
-
-
-- visi pokatalogiai naudos šios bylos parametrus.
-
-
-
-![](images/img_3764.jpg){.thumbnail}
-
-## Jūs įdiegėte kelias svetaines, kurioms tinka vienodi nustatymai.
-Tuomet jums tinka ankstesnė pastraipa.
-
-
-- Šakniniame kataloge esančios .ovhconfig bylos nustatymai galioja visoms svetainėms.
-
-
-
-## Jūs turite kelias svetaines, kurioms yra būtini skirtingi nustatymai.
-Galima pasirinkti skirtingas PHP versijas kiekvienai svetainei atskirai. Tam reikia į kiekvienos svetainės pagrindinį katalogą įrašyti atskirą bylą .ovhconfig.
-
-Jeigu jokia byla nėra įrašoma į pagrindinį svetainės katalogą, tuomet galioja nustatymai aprašyti .ovhconfig byloje, esančioje šakniniame prieglobos kataloge.
-
- Tačiau yra nerekomenduojama naudoti skirtingas aplinkas toje pačioje priegloboje skirtingose .ovhconfig bylose. Tai gali sukelti cache nesuderinamumo klaidas. Geriausia skirtingas svetaines talpinti atskirose paslaugose.
-
+Join our community of users on <https://community.ovh.com/en/>.
