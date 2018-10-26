@@ -8,6 +8,12 @@ section: Fonctionnalités principales
 
 
 ## Préambule
+
+> [!alert]
+>
+> Cette procédure ne s'applique pas à l'Overthebox "PLUS". Seules les OverTheBox "intel" et "IT" sont concernées. Si vous désactivez le DHCP de vos modems associés à une OverTheBox "PLUS", celle-ci ne fonctionnera plus correctement.
+>
+
 Toutes les Box et routeurs distribués par les fournisseurs d'accès Internet possèdent par défaut un  **serveur DHCP actif** . Ce serveur permet de distribuer intelligemment une adresse IP à chaque appareil réseau leur permettant ainsi de communiquer sur Internet.
 
 Dans un réseau géré par  **OverTheBox** , plusieurs Box ou routeurs sont directement interconnectés, or il ne faut qu' **un seul serveur DHCP**  sur un réseau afin d'éviter les conflits. Il est donc nécessaire de désactiver le serveur DHCP de chaque Box et routeurs gérés par  **OverTheBox** .
@@ -21,7 +27,7 @@ Ce guide montre comment effectuer cette opération sur les différentes Box gran
 > Si votre Box n'est pas présente ci dessous ou si vous rencontrez une
 > quelconque difficulté, veuillez vous rapprocher de votre administrateur
 > ou de votre fournisseur d'accès afin d'effectuer cette manipulation.
-> 
+>
 
 
 
@@ -30,9 +36,10 @@ Ce guide montre comment effectuer cette opération sur les différentes Box gran
 > La désactivation des serveurs DHCP des Box doit être effectuée à une étape
 > précise de l'installation d' OverTheBox . Il est donc préférable de
 > suivre la procédure d'installation avant d'effectuer cette manipulation.
-> Cette procédure d'installation simplifiée est disponible sur le lien suivant :
-> Mes 10 premières minutes avec OverTheBox <docs/telecom/overthebox/mes_10_premieres_minutes_avec_overthebox/>
-> 
+> Cette procédure d'installation simplifiée est disponible sur un des liens suivants :
+> [Mes 10 premières minutes avec OverTheBox intel](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}
+> [Mes 10 premières minutes avec OverTheBox IT](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}   
+>
 
 
 ## Désactiver le DHCP d'un modem OVH
@@ -72,14 +79,14 @@ Si un mot de passe vous est demandé, cela peut être pour deux raisons : Soit v
 >
 > Si, comme sur l'image précédente, vous obtenez le message  "La configuration à distance n'est pas activée pour ce modem!"  Veuillez suivre la procédure expliquée dans cet encadré.
 > Dans le cas contraire, vous pouvez passer directement à l'étape suivante.
-> - 
+> -
 > Cochez la case "Activer la configuration à distance"
-> - 
+> -
 > Confirmez en cliquant sur "OK"
-> 
+>
 > Veuillez ensuite patienter quelques minutes le temps que l'information se propage sur le modem
 > Vous pourrez passer à l'étape suivante lorsque le message ne s'affichera plus après rechargement de la page.
-> 
+>
 
 
 ![overthebox](images/4323.png){.thumbnail}
