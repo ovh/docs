@@ -5,7 +5,7 @@ excerpt: 'Saiba como criar várias VLAN no vRack'
 section: vRack
 ---
 
-**Última atualização: 25/10/2018**
+**Última atualização: 26/10/2018**
 
 ## Sumário
 
@@ -105,7 +105,7 @@ Clique duas vezes em `Internet Protocol Version 4 (TCP/IP/IPv4)`{.action}:
 
 ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
 
-No passo seguinte, clique em `Use the following IP address`{.action}. Em “**Endereço de IP**”: introduza um endereço de IP do seu intervalo interno. Em “**Subnet mask**”: introduza “255.255.0.0”.
+No passo seguinte, clique em `Use the following IP address`{.action}. Em “**IP address**”: introduza um endereço de IP do seu intervalo interno. Em “**Subnet mask**”: introduza “255.255.0.0”.
 
 ![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
 
