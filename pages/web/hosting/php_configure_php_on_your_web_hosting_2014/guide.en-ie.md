@@ -19,7 +19,7 @@ There are many different types of website published online. With an [OVH Web Hos
 
 ## Instructions
 
-There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVH offers the very latest PHP versions, a list of which can be found here: <https://www.ovh./web-hosting/php.xml>. 
+There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVH offers the very latest PHP versions, a list of which can be found here: <https://www.ovh.ie/web-hosting/php.xml>. 
 
 Because some features cannot be maintained in newer versions, **please ensure that the new PHP version you want to use is compatible with your website before you start making any changes.**
 
