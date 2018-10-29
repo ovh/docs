@@ -7,7 +7,7 @@ section: Guides d'installation
 
 
 ## Prérequis
-- **Deux Modems basiques** ou plus, parfaitement fonctionnels et indépendants. **Exemple** : Box fournie par un opérateur Internet national.
+- **Deux Modems basiques** ou plus, parfaitement fonctionnels et indépendants. Chaque Modems doit être configurés sur un sous-réseau différent, et **doit avoir son DHCP actif**.  **Exemple** : Box fournie par un opérateur Internet national, où le modem A aura l'IP 192.168.0.254 et le modem B l'ip 192.168.1.254.
 - Une **OverTheBox Plus** fournie par OVH.
 
 
@@ -26,7 +26,7 @@ Il est impératif de brancher votre 2 premiers modems sur les ports **WAN**, veu
 > Votre  OverTheBox  peut maintenant contacter nos serveurs et va se mettre à
 > jour automatiquement. Veuillez patienter  5 Minutes  avant de passer à
 > l'étape suivante.
-> 
+>
 
 
 ## 2. Installation
@@ -36,7 +36,7 @@ Il est impératif de brancher votre 2 premiers modems sur les ports **WAN**, veu
 >
 > Les opérations qui suivent doivent être effectuées depuis l'ordinateur
 > connecté directement sur l'OverTheBox. (câble noir sur l’image ci-dessus)
-> 
+>
 
 - Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
 
