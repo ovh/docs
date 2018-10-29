@@ -70,6 +70,6 @@ If you already have a Let's Encrypt certificate, then you can use the `Replace w
 
 ## Go further
 
-[Configuring a domain name for the first time](https://docs.ovh.com/fr/cdn-infrastructure/first-domain-configuration-on-cdn/){.external}
+[Configuring a domain name for the first time](https://docs.ovh.com/gb/en/cdn-infrastructure/first-domain-configuration-on-cdn/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.
