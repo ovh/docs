@@ -1,13 +1,12 @@
 ---
-title: Première configuration d'un nom de domaine
+title: 'Première configuration d''un nom de domaine'
 slug: premiere-configuration-domaine-sur-cdn
-excerpt: Découvrez les bonnes pratiques de paramétrage d'un domaine sur votre CDN OVH
-section: Premiers pas
+excerpt: 'Découvrez les bonnes pratiques de paramétrage d''un domaine sur votre CDN OVH'
+section: 'Premiers pas'
 order: 2
 ---
 
 **Dernière mise à jour le 21/02/2018**
-
 
 ## Objectif
 
