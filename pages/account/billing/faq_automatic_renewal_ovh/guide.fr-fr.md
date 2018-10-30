@@ -73,7 +73,9 @@ Le 15 mars vous recevrez une facture correspondante à la période allant du 15/
 
 - Quand demander la résiliation d’un service ?
 
-Vous pouvez demander la résiliation d’un service, au sein de votre espace client (Facturation > Mes services), jusqu’au 19e jour du mois au terme duquel votre cycle de facturation expire. Au-delà de cette date, la résiliation est enregistrée, mais elle ne prendra effet qu’à la fin de la période pour laquelle vos services auront été tacitement reconduits.
+Vous pouvez demander la résiliation d’un service, au sein de votre espace client (Facturation > Mes services).
+Pour connaître les conditions de résiliation, vous pouvez consulter vos conditions particulières de services depuis la rubrique [mes contrats](https://www.ovh.com/manager/dedicated/index.html#/useraccount/contacts/services){.external} dans votre espace client. 
+Au-delà de cette date, la résiliation est enregistrée, mais elle ne prendra effet qu’à la fin de la période pour laquelle vos services auront été tacitement reconduits.
 
 - À quelle date la résiliation de mon service prend-elle effet ?
 
