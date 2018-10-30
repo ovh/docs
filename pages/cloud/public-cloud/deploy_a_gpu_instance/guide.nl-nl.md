@@ -39,7 +39,7 @@ Alle aangeboden afbeeldingen kunnen worden gebruikt met GPU instances.
 > Als u niet vertrouwd bent met de handmatige compilatie van de kernelmodule, raden we u aan om een distributie te gebruiken die officieel wordt ondersteund door Nvidia, waarvoor zij verschillende kant-en-klare oplossingen leveren: <https://developer.nvidia.com/cuda-downloads>
 > 
 
-Wanneer u bent ingelogd op uw [OVH Control Panel](https://www.docs.ovh.com/auth){.external} in uw Public Cloud project, klikt u op `Een server toevoegen`{.action} en selecteert u de GPU instance:
+Wanneer u bent ingelogd op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in uw Public Cloud project, klikt u op `Een server toevoegen`{.action} en selecteert u de GPU instance:
 
 ![public-cloud](images/EN-Flavors.png){.thumbnail}
 

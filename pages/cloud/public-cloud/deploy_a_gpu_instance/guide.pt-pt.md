@@ -39,7 +39,7 @@ Todas as imagens que disponibilizamos podem ser utilizadas numa instância GPU.
 > Se não se sentir à vontade com a compilação manual de módulos de núcleo, recomendamos que utilize um sistema operativo oficialmente suportado por Nvidia, para o qual são fornecidos drivers de tipo *chave-na-mão*: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Depois de iniciar sessão na [Área de Cliente OVH](https://www.docs.ovh.com/auth){.external}, vá ao seu projeto Public Cloud, clique em `Adicionar servidor`{.action} e selecione uma instância GPU:
+Depois de iniciar sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, vá ao seu projeto Public Cloud, clique em `Adicionar servidor`{.action} e selecione uma instância GPU:
 
 ![public-cloud](images/EN-Flavors.png){.thumbnail}
 

@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment déployer une instance GPU sous Linux ou Windows'
 section: 'Depuis espace client OVH'
 ---
 
-**Dernière mise à jour le 07/08/2018**
+**Dernière mise à jour le 2018/10/30**
 
 ## Objectif
 
