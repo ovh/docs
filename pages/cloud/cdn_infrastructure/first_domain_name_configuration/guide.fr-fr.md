@@ -60,7 +60,7 @@ Si vous configurez la zone DNS de votre domaine depuis votre espace client, vous
 
  
 
-### Vérifier qu'un domaine est bien mis en cache
+### Vérifier qu'un fichier est bien mis en cache
 Vous pouvez vérifier qu'un fichier se trouve bien en cache en effectuant une requête à son propos :
 
 ```sh
