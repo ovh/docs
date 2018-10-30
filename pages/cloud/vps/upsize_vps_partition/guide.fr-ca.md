@@ -4,7 +4,7 @@ slug: repartitionner-vps-suite-mise-a-niveau
 section: Premiers pas
 ---
 
-**Dernière mise à jour le 15/01/2018**
+**Dernière mise à jour le 2018/01/15**
 
 ## Objectif
 

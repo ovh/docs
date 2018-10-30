@@ -5,7 +5,7 @@ slug: utilisation-kvm-sur-vps
 section: Premiers pas
 ---
 
-**Dernière mise à jour le 18/04/2018**
+**Dernière mise à jour le 2018/04/18**
 
 ## Objectif
 

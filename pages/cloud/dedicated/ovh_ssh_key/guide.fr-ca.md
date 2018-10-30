@@ -5,7 +5,7 @@ excerpt: Ce guide vous décrit l'installation d'une clé SSH OVH pour permettre 
 section: SSH et clé SSH
 ---
 
-**Dernière mise à jour le 23/01/2018**
+**Dernière mise à jour le 2018/01/23**
 
 ## Objectif
 

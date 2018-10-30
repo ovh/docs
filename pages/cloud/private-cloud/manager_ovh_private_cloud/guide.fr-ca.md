@@ -5,7 +5,7 @@ excerpt: Découvrez les possibilités de votre espace client Private Cloud
 section: Premiers pas
 ---
 
-**Dernière mise à jour le 23/01/2018**
+**Dernière mise à jour le 2018/01/23**
 
 ## Objectif
 

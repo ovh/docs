@@ -5,7 +5,7 @@ excerpt: 'Ajouter des IP fail-over à votre configuration'
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 07/09/2018**
+**Dernière mise à jour le 2018/09/07**
 
 ## Objectif
 

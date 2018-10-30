@@ -5,7 +5,7 @@ excerpt: Découvrez les différentes façons de se connecter à vSphere
 section: Premiers pas
 ---
 
-**Dernière mise à jour le 25/01/2018**
+**Dernière mise à jour le 2018/01/25**
 
 ## Objectif
 

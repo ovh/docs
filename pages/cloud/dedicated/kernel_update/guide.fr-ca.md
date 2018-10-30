@@ -5,7 +5,7 @@ slug: mettre-a-jour-kernel-serveur-dedie
 section: 'Utilisation avancée'
 ---
 
-**Dernière mise à jour le 08/07/2018**
+**Dernière mise à jour le 2018/07/08**
 
 ## Objectif
 

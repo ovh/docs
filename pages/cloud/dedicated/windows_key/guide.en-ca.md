@@ -5,7 +5,7 @@ slug: windows-key
 section: Server Management
 ---
 
-**Last updated 2018/02/22/2018**
+**Last updated 2018/02/22**
 
 ## Objective
 

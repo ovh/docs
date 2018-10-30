@@ -5,7 +5,7 @@ excerpt: Découvrez comment changer le mot de passe administrateur sur un serveu
 section: Diagnostic et mode Rescue
 ---
 
-**Dernière mise à jour le 24/08/2018**
+**Dernière mise à jour le 2018/08/24**
 
 ## Objectif
 

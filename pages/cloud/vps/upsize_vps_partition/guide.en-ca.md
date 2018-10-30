@@ -4,7 +4,7 @@ slug: repartitioning-vps-after-upgrade
 section: Getting started
 ---
 
-**Last updated 15th January, 2018**
+**Last updated 2018/01/15**
 
 ## Objective
 

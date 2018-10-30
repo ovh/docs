@@ -4,7 +4,7 @@ slug: install-cuda-serveur-gpu
 section: Server Management
 ---
 
-**Last updated 16th January 2018**
+**Last updated 2018/01/16**
 
 ## Objective
 
