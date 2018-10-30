@@ -2,6 +2,7 @@
 title: Veeam Cloud Connect
 slug: veeam-cloud-connect
 excerpt: Présentation de l’offre Veeam Cloud Connect
+section: Veeam
 ---
 
 ## Présentation
