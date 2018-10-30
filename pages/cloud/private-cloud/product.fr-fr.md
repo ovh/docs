@@ -7,7 +7,7 @@ sections: Premiers pas, Gestion des machines virtuelles, Fonctionnalités OVH, N
 
 > [!product-section]
 >
-> ### Services et options OVH supplémentaire
+> ### Services et options OVH supplémentaires
 >
 > - [Mettre en place Veeam Backup & Replication](https://docs.ovh.com/fr/storage/veeam-backup-replication/)
 > - [Veeam Cloud Connect](https://docs.ovh.com/fr/storage/veeam-cloud-connect/)
