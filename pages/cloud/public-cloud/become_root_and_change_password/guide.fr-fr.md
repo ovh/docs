@@ -1,5 +1,5 @@
 ---
-Titre: 'Passer root et définir un mot de passe'
+title: 'Passer root et définir un mot de passe'
 slug: become_the_root_user_and_select_a_password
 excerpt: 'Ce guide vous montrera comment devenir l''utilisateur root et créer un mot de passe pour le compte root'
 legacy_guide_number: g1786
