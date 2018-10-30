@@ -1,7 +1,7 @@
 ---
-title: Setting up your website with 1-click modules
+title: 'Setting up your website with 1-click modules'
 slug: svetainiu_talpinimas_moduliu_diegimas_i_talpinimo_plana
-excerpt: Find out how to set up your website using our 1-click modules
+excerpt: 'Find out how to set up your website using our 1-click modules'
 section: CMS
 order: 1
 ---
@@ -18,9 +18,9 @@ order: 1
 
 ## Requirements
 
-- You must have an [OVH web hosting plan](https://www.ovh.lt/svetainiu-talpinimas/).
-- You must be logged in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager).
-- You must ensure that there are no files stored in the directory that your module will be installed in.
+- an [OVH Web Hosting plan](https://www.ovh.lt/svetainiu-talpinimas/)
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- no files stored in the directory that your module will be installed in
 - The website’s domain (with a subdomain, if applicable) must be declared as a multisite.
 
 ## Instructions
