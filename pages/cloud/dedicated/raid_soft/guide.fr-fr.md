@@ -263,6 +263,7 @@ Le RAID a maintenant été reconstruit, mais nous avons encore besoin de monter 
 mount /dev/md2 /home
 ```
 
+
 ## Aller plus loin
 
 * [Hot Swap – RAID Matériel](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external}
