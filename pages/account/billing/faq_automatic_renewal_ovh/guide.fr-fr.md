@@ -9,6 +9,7 @@ La version anglaise de ce guide est disponible [ici](https://docs.ovh.com/gb/en/
 
 
 ## Quels sont les grands changements?
+
 - Quels sont les produits concernés ?
 
 A partir de Mai 2017 les produits concernés sont : [Hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/){.external}, [Nom de domaine](https://www.ovh.com/fr/domaines/){.external}, [SQL Privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml/){.external}, [DNSAnycast](https://www.ovh.com/fr/domaines/dns-anycast/){.external}, [CDN](https://www.ovh.com/fr/cdn/){.external}, [Serveur Dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/fr/vps/){.external}, [Exchange Hosted](https://www.ovh.com/fr/emails/hosted-exchange/){.external} et Exchange Provider.
@@ -23,6 +24,7 @@ Il vous sera proposé dans votre interface client de basculer sur le nouveau sys
 
 
 ## Moyens de paiement
+
 - Quels moyens de paiement sont acceptés ?
 
 Sont acceptés comme moyen de paiement : la carte bancaire (Carte Bleue, Visa ou Mastercard) ; le paiement via PayPal et le prélèvement automatique (si le compte est domicilié dans la zone SEPA, soit 33 pays d’Europe).
@@ -53,6 +55,7 @@ Contactez notre support, qui vous guidera et vous accompagnera dans vos démarch
 
 
 ## Details sur le fonctionnement
+
 - À quelles dates les prélèvements sur mon moyen de paiement actif sont-ils effectués ?
 
 Une première facture est éditée le jour où votre service est livré et un prorata est réalisé afin d'aligner le produit sur le 1er du mois ( sauf les noms de domaine).
@@ -87,6 +90,7 @@ Connectez-vous à votre espace client (Facturation > Mes services) et suivez la 
 
 
 ## Defaut de paiement
+
 - J’ai reçu un e-mail en raison d’un incident de paiement, que dois-je faire ?
 
 Suivez la procédure de régularisation indiquée dans l’e-mail, ou connectez-vous à votre espace client. Il vous faudra régulariser par carte bancaire ou PayPal dans les 7 jours à compter de la réception de cet e-mail. À défaut, vos services seront suspendus. Contactez notre support pour plus de détails.
