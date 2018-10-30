@@ -6,7 +6,7 @@ legacy_guide_number: '7766742'
 section: 'OVH Features'
 ---
 
-**Last updated 30th October 2018**
+**Last updated 2018/10/30**
 
 ## Objective
 
@@ -16,7 +16,7 @@ Resilience mode is a tool developed by OVH, which simulates an outage on one of 
 
 ## Requirements
 
-* an [OVH Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
+* an [OVH Private Cloud](https://www.ovh.com/ca/en/private-cloud/){.external} solution
 * access to the vSphere interface
 
 
