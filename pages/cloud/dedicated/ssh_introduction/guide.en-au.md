@@ -6,7 +6,7 @@ section: SSH and SSH key
 order: 1
 ---
 
-**Last updated 2018/01/18**
+**Last updated 18/01/2018**
 
 ## Objective
 

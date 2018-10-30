@@ -5,7 +5,7 @@ excerpt: Learn how to manage contacts for your OVH services
 section: Account details
 ---
 
-**Last updated 30th December 2017** 
+**Last updated 30/12/2017** 
 
 ## Objective
 

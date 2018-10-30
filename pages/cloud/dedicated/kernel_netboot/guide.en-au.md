@@ -5,7 +5,7 @@ excerpt: This guide explains how to network boot your server on to an OVH kernel
 section: Server Management
 ---
 
-**Last updated 18th April 2018**
+**Last updated 18/04/2018**
 
 ## Requirements
 The Netboot feature is a service offered for free by OVH, it allows you to start your OVH dedicated server on a precompiled kernel provided by OVH. Once configured this way, your server automatically loads the kernel from the network, so you do not have to configure anything else. This method also allows you to update your kernel very simply because OVH compiles the latest version of the kernel as soon as it is available and makes it available on Netboot.
