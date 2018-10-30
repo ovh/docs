@@ -32,7 +32,7 @@ La gestion du renouvellement de vos services peut s'effectuer par le biais de pl
 
 - [Gérer le renouvellement de vos services](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#gerer-le-renouvellement-de-vos-services){.external} : permet d'activer ou de désactiver le renouvellement automatique, de modifier la fréquence de paiement d'un service et d'anticiper sa reconduction avant la date de renouvellement.
 
-- [Gérer vos moyens de paiement](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#gerer-vos-moyens-de-paiement){.external} : permet de vous assurer qu'un moyen de paiement est bien actif pour vos futurs renouvellements, mais aussi d'en ajouter ou d'en supprimer si nécessaire.
+- [Gérer vos moyens de paiement](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#gerer-vos-moyens-de-paiement_1){.external} : permet de vous assurer qu'un moyen de paiement est bien actif pour vos futurs renouvellements, mais aussi d'en ajouter ou d'en supprimer si nécessaire.
 
 ### Visualiser l'état du renouvellement de vos services
 
