@@ -39,7 +39,7 @@ Kaikkia tarjoamiamme imageja voidaan käyttää GPU-instansseilla.
 > Jos ydinmoduulin kokoaminen käsin tuntuu epämukavalta, suosittelemme käyttämään jotakin Nvidian virallisesti tukemaa distribuutiota. Nvidia toimittaa niihin erilaisia *avaimet-käteen-ratkaisuja*: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Kun olet kirjautunut [hallintapaneeliisi](https://www.docs.ovh.com/auth){.external} ja Public Cloud -projektiisi, klikkaa kohtaa `Lisää palvelin`{.action} ja valitse GPU-instanssi: 
+Kun olet kirjautunut [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external} ja Public Cloud -projektiisi, klikkaa kohtaa `Lisää palvelin`{.action} ja valitse GPU-instanssi: 
 
 ![public-cloud](images/EN-Flavors.png){.thumbnail}
 
