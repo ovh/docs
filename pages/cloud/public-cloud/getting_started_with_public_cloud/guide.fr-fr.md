@@ -1,123 +1,95 @@
 ---
-title: Débuter avec Public Cloud, première connexion et prise en main
-slug: debuter-avec-public-cloud-premiere-connexion
-legacy_guide_number: 2329
-section: Premiers pas
+Titre: 'Premiers pas avec Public Cloud: se connecter et créer un projet'
+slug: getting_started_with_public_cloud_logging_in_and_creating_a_project
+excerpt: 'Ce guide vous montrera comment créer votre premier projet Public Cloud'
+legacy_guide_number: g2329
+section: 'Premiers pas'
 ---
 
+**Dernière mise à jour le 11 octobre 2018**
 
-## Preambule
-L'offre Public Cloud fournit un service de ressources informatiques hébergées (serveurs, stockage, réseaux, options, ...), elles sont accessibles à la demande de manière quasi-instantanée ce qui en fait un service offrant une grande adaptabilité et une grande facilité d'utilisation.
+## Objectif
 
-Le principe de facturation diffère du schéma classique de la location avec un engagement annuel. Il se rapproche plutôt de ce que font certains opérateurs téléphoniques qui facturent en fin de mois les minutes de communication consommées. C'est le principe du  **paiement à l'usage**  (Pay as you Go en Anglais). Ici, en fin de mois, vous serez facturé des heures de fonctionnement des serveurs ou de la quantité d'espace de stockage utilisée.
+[Les instances Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} offrent une solution souple qui est payée à l’usage (Pay-as-you-go) pour gérer les ressources virtuelles. Cela veut dire que vous pouvez ajouter ou supprimer des ressources (instances, stockage, etc) au moment et de la manière dont vous en avez besoin.
 
-Ce fonctionnement permet de gagner en souplesse et d'apporter une réponse au plus proche des besoins utilisateur. Vous pouvez ajouter ou supprimer des ressources quand vous le souhaitez sans avoir à anticiper des montées en charge ou à payer des ressources dormantes.
+**Ce guide vous montrera comment créer votre premier projet Public Cloud.**
 
-Vous pourrez naturellement suivre votre facture en un coup d'œil depuis votre Espace Client. Une estimation de votre consommation en fin de moi est également disponible.
+## Prérequis
 
-Ce document va vous accompagner dans les premières étapes de prise en main du service en créant un projet cloud.
+* Avoir accès à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
+## Instructions
 
-### Prérequis
-- Un moyen de payement et/ou un code de bon de paiement
+### Créer un projet
 
+Connectez-vous à votre [Espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Une fois connecté, cliquez sur le menu `Cloud`{.action}.
 
-## Étape 1 &#58; Ouvrir un compte OVH
-Si vous n'avez pas encore d'identifiant OVH, il suffit de vous rendre sur la page de [création](https://www.ovh.com/fr/support/new_nic.xml){.external}. Vous arriverez sur un formulaire qu'il faudra remplir avec une adresse e-mail valide.
+![menu cloud](images/menu.png){.thumbnail}
 
+Ensuite, cliquez sur le bouton `Commander`{.action}.
 
+![bouton commander](images/order-button.png){.thumbnail}
 
-> [!success]
+Sous le menu 'Commander', cliquez sur Projet cloud.
+
+![commander projet cloud](images/order-cloud-project.png){.thumbnail}
+
+Vous devez maintenant donner un nom au projet et choisir un moyen de paiement.
+
+![détails du projet](images/project-details.png){.thumbnail}
+
+### Choisir un moyen de paiement
+
+Comme nous venons de l’expliquer plus haut, Public Cloud est un service facturé à l’usage. Une fois votre projet créé, vous pouvez acheter des instances, du stockage, etc. Cependant, une fois votre premier projet créé, vous devrez choisir l’un de ces trois moyens de paiement :
+
+#### Enregistrer une carte bancaire
+
+C’est la méthode la plus simple. Quand vous enregistrez une carte bancaire, vous serez automatiquement débité en début de mois. Cette méthode va vous permettre d’enregistrer (en fonction de votre pays) :
+
+* une carte de débit/crédit
+* un compte de Paypal
+* un compte bancaire
+
+> \[!primary]
 >
-> Nous vous invitons à renseigner une adresse e-mail de secours.
-> 
-
-Dès que vous aurez fini de remplir le formulaire, vous recevrez un e-mail qui confirmera la création du compte.
-
-
-## Étape 2 &#58; Se connecter a l'Espace Client
-A l'aide de votre identifiant, connectez-vous à votre [Espace Client](https://www.ovh.com/manager){.external}.
-
-OVH propose un vaste catalogue de produits, tous administrables via un unique Espace Client. Rendez-vous dans l'univers CLOUD en haut à gauche.
-
-
-![public-cloud](images/menu.png){.thumbnail}
-
-Dans cet univers, nous allons créer un projet Public Cloud.
-
-
-## Étape 3 &#58; Créer son premier projet Public Cloud
-Pour créer un projet Public Cloud, cliquez sur `Commander`{.action} en haut à gauche, puis sélectionner `Projet cloud`{.action}.
-
-Si vous n'avez jamais accepté les conditions particulières de Public Cloud, celles-ci seront affichées comme ci-dessous :
-
-
-![public-cloud](images/4658.png){.thumbnail}
-
-Vous devez les lire et les accepter en cochant la case.
-
-Renseignez également un nom de projet. Vous pourrez le modifier ensuite si besoin.
-
-
-### Moyen de paiement
-Comme expliqué plus haut, le service est facturé à l'usage. L'achat d'instances, de stockage, ... sera réalisé  **une fois le projet créé**.
-
-Cependant afin de débuter, et ce uniquement pour votre premier projet, OVH requiert de choisir l'une de ces 3 méthodes :
-
-- Méthode 1 : renseigner un moyen de paiement
-C'est la méthode la plus simple. Vous enregistrez un moyen de paiement, et serez automatiquement débité en début de mois. Aucun risque d'oublier un renouvellement !
-Les moyens de paiement disponibles peuvent varier en fonction de votre pays : carte bancaire compatible 3D Secure, compte bancaire, PayPal.
-Un premier paiement équivalent à 10 euros vous sera demandé pour valider le bon fonctionnement de votre carte.
-
-
-> [!alert]
+S’il s’agit de votre premier paiement avec OVH, nous n’accepterons que des cartes de crédit 3-D Secure.
 >
-> Note : s'il s'agit de votre premier achat chez OVH, seule la carte
-> bancaire 3-D Secure sera proposée.
-> 
 
+Sélectionnez votre moyen de paiement désiré parmi ceux de la liste et cliquez sur le bouton `Ajouter`{.action}.
 
-![public-cloud](images/4659.png){.thumbnail}
+![Enregistrer une carte bancaire](images/register-bank-card-01.png){.thumbnail}
 
-- Méthode 2 : acheter du crédit cloud
-Si vous ne disposez pas de moyen de paiement, vous pouvez ajouter du crédit cloud. Le paiement initial est de 30 euros.
-Ce crédit cloud sera rattaché à votre projet, et permettra de consommer des instances, stockage, options...
-Le crédit cloud n'est pas transférable, ni remboursable. Il n'a aucune valeur monétaire et tout crédit non utilisé dans les 13 mois sera perdu.
+Une fois que vous avez cliqué sur le bouton `Ajouter`{.action}, vous serez invité à terminer la configuration de votre moyen de paiement, comme indiqué ci-dessous.
 
-![public-cloud](images/4660.png){.thumbnail}
+![Enregistrer une carte bancaire](images/register-bank-card-02.png){.thumbnail}
 
-- Méthode 3 : activer un bon de paiement
-Si vous disposez d'un code de bon de paiement (voucher), vous pouvez l'ajouter durant cette étape. La durée d'utilisation de votre Voucher et son montant peuvent varier.
+#### Acheter du crédit cloud
 
-![public-cloud](images/4661.png){.thumbnail}
+Vous pouvez aussi payer pour votre [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} avec du crédit cloud. Le paiement initial de crédit cloud sera de de 30€. Toutes les ressources que vous utiliserez après cela consommeront votre crédit. Lorsque votre crédit est épuisé, vous pouvez en acheter davantage en utilisant n’importe quel moyen de paiement accepté.
 
+Le crédit cloud est non transférable ou remboursable. Il n'a aucune valeur monétaire et, s'il n'est pas utilisé dans les 13 mois, il sera perdu.
 
+![crédit cloud](images/img_4658.jpg){.thumbnail}
 
-## Étape 4 &#58; Projet cree ? let's play !
-Une fois votre projet créé, il sera disponible dans votre menu de gauche.
+#### Utiliser un bon de paiement
 
+Si vous avez un code promotionnel, vous pouvez l'ajouter au cours de cette étape pour payer vos ressources. La durée du bon peut varier.
+
+![bon](images/img_4661.jpg){.thumbnail}
+ 
+Une fois votre projet créé, il sera disponible dans le menu de gauche.
 
 ### Ajouter une instance ou du stockage
-Via le bouton  `+Ajouter`{.action} , vous pouvez par exemple démarrer une instance cloud en quelques secondes.
 
-Nous avons réalisé un  guide ([Créer une instance dans l'espace client OVH](../guide.fr-fr.md){.ref}) si nécessaire.
+Pour ajouter des ressources à votre nouveau projet, cliquez sur le bouton `Actions`{.action} sous l'onglet `Infrastructure`{.action}.
 
+![ajouter une ressource](images/add-a-resource-01.png){.thumbnail}
 
-![public-cloud](images/4665.png){.thumbnail}
+Ensuite, dans le menu déroulant, sélectionnez `Ajouter un serveur`{.action} ou `Ajouter un disque`{.action}.
 
-
-### Gerer sa consommation
-En cliquant sur le menu `Gestion du projet`{.action} , vous pourrez gérer vos moyens de paiement, vouchers, droits utilisateurs, et [analyser votre facturation](../guide.fr-fr.md){.ref}.
+![ajouter une ressource](images/add-a-resource-02.png){.thumbnail}
 
 
-![public-cloud](images/project-management.png){.thumbnail}
+## Aller plus loin
 
-Exemple d'estimation de facturation :
-
-
-![public-cloud](images/estimation.png){.thumbnail}
-
-Exemple de voucher :
-
-
-![public-cloud](images/voucher.png){.thumbnail}
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
