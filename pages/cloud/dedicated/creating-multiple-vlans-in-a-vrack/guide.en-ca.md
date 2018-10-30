@@ -5,7 +5,7 @@ excerpt: This guide will show you how to create multiple vLANs within the vRack
 section: Network Management
 ---
 
-**Last updated 21st June 2018**
+**Last updated 2018/06/21**
 
 ## Objective
 

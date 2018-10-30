@@ -6,7 +6,7 @@ section: Setting up
 order: 5
 ---
 
-**Last updated 16th February 2018**
+**Last updated 2018/02/16**
 
 ## Objective
 

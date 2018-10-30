@@ -5,7 +5,7 @@ excerpt: 'Find out how to update the kernel for distributions that use an OVH co
 section: 'Advanced use'
 ---
 
-**Last updated 08/07/2018**
+**Last updated 2018/07/08**
 
 ## Objective
 

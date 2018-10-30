@@ -5,7 +5,7 @@ excerpt: Have a question about the NAS? Here are the most frequently asked quest
 section: NAS
 ---
 
-**Last updated 12/27/2017**
+**Last updated 2017/12/27**
 
 ## The solution
 

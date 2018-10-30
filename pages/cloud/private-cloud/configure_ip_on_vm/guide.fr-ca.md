@@ -5,7 +5,7 @@ excerpt: Apprenez à configurer une IP sur une machine virtuelle
 section: Premiers pas
 ---
 
-**Dernière mise à jour le 23/01/2087**
+**Dernière mise à jour le 2018/02/01**
 
 ## Objectif
 
