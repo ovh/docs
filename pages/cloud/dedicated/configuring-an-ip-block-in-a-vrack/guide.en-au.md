@@ -5,7 +5,7 @@ excerpt: This guide will show you how to configure a block of public IP addresse
 section: Network Management
 ---
 
-**Last updated 2018/08/24**
+**Last updated 24/08/2018**
 
 ## Objective
 
