@@ -6,7 +6,7 @@ section: Premiers pas
 order: 1
 ---
 
-**Dernière mise à jour le 18/04/2018**
+**Dernière mise à jour le 2018/04/18**
  
 ## Objectif
 

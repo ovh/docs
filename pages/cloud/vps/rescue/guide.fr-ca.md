@@ -5,7 +5,7 @@ excerpt: Découvrez dans ce guide comment redémarrer votre VPS en mode Rescue.
 section: Diagnostic et mode Rescue
 ---
 
-**Dernière mise à jour le 23/01/2018**
+**Dernière mise à jour le 2018/01/23**
 
 ## Objectif
 

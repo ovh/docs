@@ -5,7 +5,7 @@ excerpt: 'L''IPMI permet de vous connecter à votre serveur sans utiliser un log
 section: 'Pour bien démarrer'
 ---
 
-**Dernière mise à jour le 16/08/2018**
+**Dernière mise à jour le 2018/08/16**
 
 ## Objectif
 

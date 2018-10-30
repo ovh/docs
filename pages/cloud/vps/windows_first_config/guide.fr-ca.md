@@ -5,7 +5,7 @@ excerpt: Découvrez comment activer la connexion au bureau à distance via KVM s
 section: Premiers pas
 ---
 
-**Dernière mise à jour le 31/01/2018**
+**Dernière mise à jour le 2018/01/31**
 
 ## Objectif
 

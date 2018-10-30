@@ -5,7 +5,7 @@ excerpt: Une question sur le NAS? Voici les questions les plus fréquemment pos�
 section: NAS
 ---
 
-**Dernière mise à jour le 27/12/2017**
+**Dernière mise à jour le 2017/12/27**
 
 ## L'offre
 

@@ -5,7 +5,7 @@ excerpt: Résumé des principales fonctionnalités et prise en main du service d
 section: Premiers pas
 ---
 
-**Dernière mise à jour 01/12/2017**
+**Dernière mise à jour 2017/12/01**
 
 ## Objectif
 

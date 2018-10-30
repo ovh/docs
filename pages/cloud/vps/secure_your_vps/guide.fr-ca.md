@@ -4,7 +4,7 @@ slug: conseils-securisation-vps
 section: Premiers pas
 ---
 
-**Mise à jour le 25/01/2018**
+**Mise à jour le 2018/01/25**
 
 ## Objectif
 

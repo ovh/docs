@@ -6,7 +6,7 @@ legacy_guide_number: '7766742'
 section: 'Fonctionnalités OVH'
 ---
 
-**Dernière mise à jour le 13/08/2018**
+**Dernière mise à jour le 2018/10/30**
 
 ## Objectif
 
@@ -16,7 +16,7 @@ Le mode résilience est un outil développé par OVH, qui simule une panne sur l
 
 ## Prérequis
 
-* Posséder une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
+* Posséder une offre [Private Cloud](https://www.ovh.com/ca/fr/cloud-prive/){.external}.
 * Accéder à l’interface de gestion vSphere.
 
 

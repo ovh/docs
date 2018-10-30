@@ -6,7 +6,7 @@ section: Mise en place
 order: 5
 ---
 
-**Dernière mise à jour le 14/02/2018**
+**Dernière mise à jour le 2018/02/14**
 
 ## Objectif
 

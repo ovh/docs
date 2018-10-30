@@ -4,7 +4,7 @@ slug: affichage-bootlog-dans-kvm
 section: Diagnostic et mode Rescue
 ---
 
-**Dernière mise à jour le 26/01/2018**
+**Dernière mise à jour le 2018/01/26**
 
 ## Préambule
 

@@ -5,7 +5,7 @@ excerpt: Apprenez à configurer plusieurs serveurs dédiés grâce au vRack
 section: vRack
 ---
 
-**Dernière mise à jour le 06/02/2018**
+**Dernière mise à jour le 2018/02/06**
 
 ## Objectif
 
