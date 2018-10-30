@@ -1,69 +1,86 @@
 ---
-title: Changer sa clé SSH en cas de perte
+title: 'Changer sa clé SSH en cas de perte'
 slug: changer-sa-cle-ssh-en-cas-de-perte
 legacy_guide_number: 2069
 section: Tutoriels
 ---
 
+**Dernière mise à jour le 27 septembre 2018**
 
-## Préambule
-En cas de perte de clé SSH, que cela soit suite à une réinstallation de poste ou autre, il est possible que vous ne soyez plus en mesure de vous connecter sur votre instance si vous n'avez configuré aucun moyen alternatif de vous connecter sur votre instance.
+## Objectif
 
-Pour récupérer l'accès, nous avons mis à votre disposition un mode rescue qui vous permet de vous connecter à l'aide d'un mot de passe puis de modifier vos fichiers.
+Si vous avez perdu votre clé SSH, il est possible que vous ne puissiez pas vous connecter à votre instance si vous n'avez pas configuré d'autre moyen de le faire.
 
-Ce guide vous explique comment configurer le fichier  **authorized_keys**  de l'utilisateur  **admin**  afin de pouvoir ajouter une nouvelle clé SSH pour récupérer l'accès à votre instance.
+Pour récupérer l'accès, nous vous avons fourni un [mode rescue](https://docs.ovh.com/gb/en/public-cloud/put_an_instance_in_rescue_mode/){.external}, qui vous permet de vous connecter avec un mot de passe, puis de modifier vos fichiers.
 
+**Ce guide explique comment configurer le fichier authorized_keys pour l'utilisateur administrateur afin que vous puissiez ajouter une nouvelle clé SSH pour récupérer l'accès à votre instance.**
 
-### Prérequis
-- [Créer une clé SSH](../guide.fr-fr.md){.ref}
-- [Passer une instance en mode rescue]({legacy}2029){.ref}
+## Prérequis
 
+* Avoir accès root à votre serveur via SSH
 
-## Changement de la cle SSH publique
+## Instructions
 
-Après avoir monté le disque de votre instance en mode rescue, vous serez en mesure d'accéder à l'ensemble de vos fichiers.
+Après avoir monté le disque de votre instance en [mode rescue](https://docs.ovh.com/gb/en/public-cloud/put_an_instance_in_rescue_mode/){.external}, vous pourrez accéder à l’ensemble de vos fichiers. Le fichier contenant vos clés SSH est présenté ci-dessous:
 
-Le fichier contenant vos clés SSH est le fichier :
-
-```sh
-/home/NOM_UTILISATEUR/.ssh/authorized_keys
+```
+/home/USER_NAME/.ssh/authorized_keys
 ```
 
-Si vous souhaitez ajouter votre nouvelle clé SSH, il suffit donc d'éditer ce fichier et d'y ajouter votre nouvelle clé :
+Si vous souhaitez ajouter votre nouvelle clé SSH, il vous suffit de modifier ce fichier de la manière suivante:
 
+```
+admin@instance:~$ sudo vim /mnt/home/USER_NAME/.ssh/authorized_keys
 
-```sh
-sudo vim /mnt/home/NOM_UTILISATEUR/.ssh/authorized_keys
-ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666777777777778888888888999999900000000000000000000000000== old@sshkey
-ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEEEEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
+ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
+777777777778888888888999999900000000000000000000000000== old@sshkey
+ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEE
+EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 ```
 
-Pour modifier la clé SSH de votre utilisateur par défaut, il faudra simplement vous rendre dans le dossier personnel de celui ci. Par exemple, pour l'utilisateur  admin , le fichier à trouver se trouvera dans le dossier suivant :
- 
-```sh
+### Changer la clé SSH pour l'utilisateur par défaut
+Pour changer la clé SSH de votre utilisateur par défaut, il vous suffit de vous rendre dans le fichier personnel de l'utilisateur.
+
+Par exemple, pour l'utilisateur administrateur, le fichier dont vous avez besoin se trouve dans le dossier suivant:
+
+```
 /home/admin/.ssh/authorized_keys
 ```
- 
-Pour une instance sous Ubuntu 15.10, l'utilisateur par défaut sera  ubuntu , le fichier sera donc dans le dossier suivant :
 
-```sh
+Pour une instance Ubuntu, l'utilisateur par défaut sera ubuntu et le fichier sera donc dans le dossier suivant:
+
+```
 /home/ubuntu/.ssh/authorized_keys
 ```
 
+### Changer le mot de passe pour l'utilisateur par défaut
 
-Vous pouvez aussi modifier le mot de passe de votre utilisateur par défaut en utilisant le mode rescue et les commandes suivantes (dans le cas où l'utilisateur est  admin ) :
+Vous pouvez également modifier le mot de passe de votre utilisateur par défaut en utilisant le mode rescue et les commandes suivantes (si l'utilisateur est admin).
 
-- On change le répertoire racine pour se placer directement sur le > disque de l'instance :
+En premier, vous devrez modifier le répertoire root afin qu’il soit placé directement sur le disque de l’instance:
 
-```sh
-/home/admin# mount /dev/vdb1 /mnt/
-/home/admin# chroot /mnt/
+> \[!primary]
+>
+Dans l'exemple ci-dessous, nous avons utilisé **vdb1** comme nom du disque du serveur et **mnt** comme point de montage.
+>
+
+
 ```
- 
-- On change le mot de passe admin :
-
-```sh
-passwd admin
+root@instance:/home/admin# mount /dev/vdb1 /mnt/
+root@instance:/home/admin# chroot /mnt/
 ```
 
-Une fois cette modification effectuée et sauvegardée, il vous suffit de redémarrer votre instance sur son disque afin d'être en mesure de vous connecter sur votre instance avec votre nouvelle clé SSH.
+Changez ensuite le mot de passe administrateur.
+
+```
+root@instance:/# passwd 
+admin
+```
+
+Une fois cette modification été effectuée et sauvegardée, vous devez redémarrer votre instance sur son disque pour pouvoir vous connecter avec votre nouvelle clé SSH.
+
+## Aller plus loin
+
+[Passer root et définir un mot de passe](https://docs.ovh.com/gb/en/public-cloud/become_root_and_select_a_password/){.external}
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
