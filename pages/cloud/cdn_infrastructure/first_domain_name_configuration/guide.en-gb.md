@@ -62,7 +62,7 @@ If you configure your domain’s DNS zone from the OVH Control Panel, you can ad
 
  
 
-### Check that the domain has been stored in the cache.
+### Check that a file has been stored in the cache.
 
 You can check that a file has been stored in the cache by performing a request:
 
