@@ -1,13 +1,18 @@
 ---
-title: Mettre en oeuvre l'hyper-convergence VMWare avec vSAN
-excerpt:
+title: 'Mettre en oeuvre l''hyper-convergence VMWare avec vSAN'
 slug: vmware-vsan
-section: Fonctionnalités VMware vSphere
+excerpt: 'Découvrez comment mettre en oeuvre la puissance de l''hyper-convergence pour vos machines virtuelles avec vSan.'
+section: 'Fonctionnalités VMware vSphere'
 ---
 
 **Dernière mise à jour le 25/10/2018**
 
 ## Objectif
+
+
+VSAN est une solution de stockage qui agrège un ensemble de disques situés sur des hôtes Vmware d'un cluster et les présentent comme un datastore unique utilisable pour les machines virtuelles. Ce type d'architecture qui utilisé les capacités de traitement et de stockage, distribuées sur un ensemble d'hôtes physiques est également appelée "architecture hyperconvergée". 
+
+Comme ce datastore est une construction virtuelle gérée par le logiciel VSAN, on emploie également le terme de Software Defined Storage ou SDS. Un des avantages de VSAN est d'être completement intégré à vSphere et géré directement depuis vCenter.
 
 Ce guide a pour objectif d’expliquer les concepts et les détails de la mise en oeuvre de vSan sur l’offre Private Cloud d’OVH.
 
@@ -23,9 +28,6 @@ Ce guide a pour objectif d’expliquer les concepts et les détails de la mise e
 
 ### vSan les Concepts clés
 
-#### Qu'est ce que VSAN ?
-
-VSAN est une solution de stockage qui agrège un ensemble de disques situés sur des hôtes Vmware d'un cluster et les présentent comme un datastore unique utilisable pour les machines virtuelles. Ce type d'architecture qui utilisé les capacités de traitement et de stockage,  distribuées sur un ensemble d'hôtes physiques est également appelée "architecture hyperconvergée". Comme ce datastore est une construction virtuelle gérée par le logiciel VSAN, on emploie également le terme de Software Defined Storage ou SDS. Un des avantages de VSAN est d'être completement intégré à vSphere et géré directement depuis vCenter.
 
 #### Protection des données
 
@@ -92,9 +94,9 @@ L’activation de VSAN peut prendre quelques minutes. Une fois l’activation te
 
 ![](images/vsan_08.png){.thumbnail}
 
-> [!alert]
+> [!warning]
 >
-> IMPORTANT : Il faut penser a ce moment là à reactiver les fonctions HA du cluster !
+> Il est important de réactiver les fonctions HA du cluster !
 >
 
 ### Désactiver vSAN
@@ -170,9 +172,9 @@ Une fois l’opération terminée, un message de confirmation s’affiche :
 
 ![](images/vsan_20.png){.thumbnail}
 
-> [!alert]
+> [!warning]
 >
-> Ne pas oublier de réactiver HA si nécessaire après cette manipulation si le cluster continue d’héberger des machines virtuelles stockées sur des datastore externes.
+> Si nécessaire, il faut réactiver  les fonctions HA après cette manipulation si le cluster continue d’héberger des machines virtuelles stockées sur des datastore externes.
 >
 
 ## Aller plus loin
