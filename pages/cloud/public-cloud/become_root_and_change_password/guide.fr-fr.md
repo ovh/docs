@@ -21,7 +21,7 @@ Pour exécuter certaines fonctions administratives sur votre serveur (l’instal
 
 ## Instructions
 
-> \[!primary]
+> [!primary]
 >
 Ce guide suppose que l'utilisateur par défaut s'appelle 'admin'.
 >
