@@ -28,7 +28,7 @@ OVH met à votre disposition un espace vous permettant de consulter, gérer et r
 
 ### Comprendre votre facture
 
-La facture vous est envoyée suite au règlement d'une commande ou à un renouvellement automatique. Elle récapitule les produits payés ou à payer avec les périodes de renouvellement correspondantes et le montant des services. La référence d'une facture commence toujours par les lettres « FR ».
+La facture vous est envoyée suite au règlement d'une commande ou à un renouvellement automatique. Elle récapitule les produits payés ou à payer avec les périodes de renouvellement correspondantes et le montant des services. La référence d'une facture commence toujours par deux lettres.
 
 ![Détail d'une facture](images/invoice_ovh.png){.thumbnail}
 
@@ -62,7 +62,7 @@ Pour consulter vos factures, rendez-vous dans votre [espace client OVH](https://
 
 Sur chaque ligne du tableau vous retrouverez les informations suivantes :
 
-- la référence de la facture (exemple : FR12345678) ;
+- la référence de la facture ;
 - la date d'émission de la facture ;
 - le montant de la facture ;
 - le solde à régler ;
@@ -103,7 +103,7 @@ Un [bon de commande](https://docs.ovh.com/ca/fr/billing/gerer-ses-commandes-ovh/
 
 ### Suivre les paiements
 
-Vous pouvez suivre tous les paiements effectués depuis la partie `Facturation` dans `Suivi des paiements`{.action}. Ceci permet de faire le lien entre les factures et les paiements associés. La référence d'un justificatif de paiement commence toujours par les lettres « PA_FR ».
+Vous pouvez suivre tous les paiements effectués depuis la partie `Facturation` dans `Suivi des paiements`{.action}. Ceci permet de faire le lien entre les factures et les paiements associés. La référence d'un justificatif de paiement commence toujours par les lettres « PA_ ».
 
 ![Suivi des paiements](images/payment_tracking.png){.thumbnail}
 

@@ -28,7 +28,7 @@ OVH provides you with a space where you can view, manage and pay your various bi
 
 ### Understanding your bill.
 
-You are sent a bill when you pay for your order, and when your service is automatically renewed. It provides a summary of the products you have paid for (or that are awaiting payment), their renewal periods, and the total charged for the services. A bill reference always starts with the letters ‘FR’.
+You are sent a bill when you pay for your order, and when your service is automatically renewed. It provides a summary of the products you have paid for (or that are awaiting payment), their renewal periods, and the total charged for the services. A bill reference always starts with two letters.
 
 ![Bill detail](images/invoice_ovh.png){.thumbnail}
 
@@ -103,7 +103,7 @@ A [purchase order](https://docs.ovh.com/au/en/billing/managing-ovh-orders/#purch
 
 ### Track payments.
 
-You can track all of the payments you have made in the `Billing` section, in `Payment Tracking`{.action}. This way, you can see which payments and bills are linked to one another. The reference ID for a payment receipt always begins with the letters ‘PA_FR’.
+You can track all of the payments you have made in the `Billing` section, in `Payment Tracking`{.action}. This way, you can see which payments and bills are linked to one another. The reference ID for a payment receipt always begins with the letters ‘PA_’.
 
 ![Payment tracking](images/payment_tracking.png){.thumbnail}
 
