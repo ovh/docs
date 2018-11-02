@@ -1,16 +1,16 @@
 ---
-Titre: 'Premiers pas avec Public Cloud: se connecter et créer un projet'
+title: 'Premiers pas avec Public Cloud: se connecter et créer un projet'
 slug: getting_started_with_public_cloud_logging_in_and_creating_a_project
 excerpt: 'Ce guide vous montrera comment créer votre premier projet Public Cloud'
 legacy_guide_number: g2329
 section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 11 octobre 2018**
+**Dernière mise à jour le 2 novembre 2018**
 
 ## Objectif
 
-[Les instances Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} offrent une solution souple qui est payée à l’usage (Pay-as-you-go) pour gérer les ressources virtuelles. Cela veut dire que vous pouvez ajouter ou supprimer des ressources (instances, stockage, etc) au moment et de la manière dont vous en avez besoin.
+[Les instances Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} offrent une solution souple qui est payée à l’usage (Pay-as-you-go) pour gérer les ressources virtuelles. Cela veut dire que vous pouvez ajouter ou supprimer des ressources (instances, stockage, etc) au moment et de la manière dont vous en avez besoin.
 
 **Ce guide vous montrera comment créer votre premier projet Public Cloud.**
 
@@ -50,7 +50,7 @@ C’est la méthode la plus simple. Quand vous enregistrez une carte bancaire, v
 * un compte de Paypal
 * un compte bancaire
 
-> \[!primary]
+> [!primary]
 >
 S’il s’agit de votre premier paiement avec OVH, nous n’accepterons que des cartes de crédit 3-D Secure.
 >
@@ -65,7 +65,7 @@ Une fois que vous avez cliqué sur le bouton `Ajouter`{.action}, vous serez invi
 
 #### Acheter du crédit cloud
 
-Vous pouvez aussi payer pour votre [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} avec du crédit cloud. Le paiement initial de crédit cloud sera de de 30€. Toutes les ressources que vous utiliserez après cela consommeront votre crédit. Lorsque votre crédit est épuisé, vous pouvez en acheter davantage en utilisant n’importe quel moyen de paiement accepté.
+Vous pouvez aussi payer pour votre [Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} avec du crédit cloud. Le paiement initial de crédit cloud sera de de 30€. Toutes les ressources que vous utiliserez après cela consommeront votre crédit. Lorsque votre crédit est épuisé, vous pouvez en acheter davantage en utilisant n’importe quel moyen de paiement accepté.
 
 Le crédit cloud est non transférable ou remboursable. Il n'a aucune valeur monétaire et, s'il n'est pas utilisé dans les 13 mois, il sera perdu.
 
@@ -92,4 +92,4 @@ Ensuite, dans le menu déroulant, sélectionnez `Ajouter un serveur`{.action} ou
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
