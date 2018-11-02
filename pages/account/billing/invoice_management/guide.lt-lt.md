@@ -21,7 +21,7 @@ OVH provides you with a space where you can view, manage and pay your various bi
 ## Requirements
 
 - access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-- access as a billing contact for your service (you can read more about the different contact types in our guide to [Managing contacts for your services](https://docs.ovh.com/gb/en/customer/managing-contacts/){.external})
+- access as a billing contact for your service (you can read more about the different contact types in our guide to [Managing contacts for your services](https://docs.ovh.com/lt/customer/kontaktu_valdymas/){.external})
 
 
 ## Instructions
@@ -98,7 +98,7 @@ To pay bills that are pending payment, click `Pay balance immediately`{.action}.
 
 ![Pay a due amount](images/pay_debt.png){.thumbnail}
 
-A [purchase order](https://docs.ovh.com/gb/en/billing/managing-ovh-orders/#purchase-order){.external} for the settlement will then be created. Once the payment has been made, your account will no longer be in debit.
+A [purchase order](https://docs.ovh.com/lt/billing/managing-ovh-orders/#purchase-order){.external} for the settlement will then be created. Once the payment has been made, your account will no longer be in debit.
 
 
 ### Track payments.

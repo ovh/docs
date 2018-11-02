@@ -5,7 +5,7 @@ excerpt: 'Find out how to manage your bills and the payments associated with the
 section: 'Managing orders, bills and services'
 ---
 
-**Last updated 2nd November 2018**
+**Last updated 2018/11/02**
 
 ## Objective
 
@@ -15,13 +15,13 @@ OVH provides you with a space where you can view, manage and pay your various bi
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to your OVH contracts, which you can access from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to `My services`{.action} then `My contracts`{.action}.
+> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to your OVH contracts, which you can access from the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} by going to `My services`{.action} then `My contracts`{.action}.
 >
 
 ## Requirements
 
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-- access as a billing contact for your service (you can read more about the different contact types in our guide to [Managing contacts for your services](https://docs.ovh.com/gb/en/customer/managing-contacts/){.external})
+- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- access as a billing contact for your service (you can read more about the different contact types in our guide to [Managing contacts for your services](https://docs.ovh.com/ca/en/customer/managing-contacts/){.external})
 
 
 ## Instructions
@@ -48,7 +48,7 @@ VAT is added at the bottom of the bill in the overall total, marked as “Total 
 
 > [!primary]
 >
-> If “Account statement” appears as the payment method used, this means that the service has been renewed automatically. The payment method used will be the default payment method saved in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+> If “Account statement” appears as the payment method used, this means that the service has been renewed automatically. The payment method used will be the default payment method saved in the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 >
 
 
@@ -56,7 +56,7 @@ VAT is added at the bottom of the bill in the overall total, marked as “Total 
 
 #### View and manage bills.
 
-To view your bills, go to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the `Billing`{.action} section by clicking on your first name in the top right-hand corner. You will then land on a page summarising your bills: 
+To view your bills, go to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Billing`{.action} section by clicking on your first name in the top right-hand corner. You will then land on a page summarising your bills: 
 
 ![Bill summary](images/billing_section.png){.thumbnail}
 
@@ -98,7 +98,7 @@ To pay bills that are pending payment, click `Pay balance immediately`{.action}.
 
 ![Pay a due amount](images/pay_debt.png){.thumbnail}
 
-A [purchase order](https://docs.ovh.com/gb/en/billing/managing-ovh-orders/#purchase-order){.external} for the settlement will then be created. Once the payment has been made, your account will no longer be in debit.
+A [purchase order](https://docs.ovh.com/ca/en/billing/managing-ovh-orders/#purchase-order){.external} for the settlement will then be created. Once the payment has been made, your account will no longer be in debit.
 
 
 ### Track payments.
