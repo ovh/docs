@@ -1,133 +1,122 @@
 ---
-title: 'Les certificats SSL sur les hebergements web'
+title: 'Gérer un certificat SSL sur son hébergement web'
 slug: les-certificats-ssl-sur-les-hebergements-web
-excerpt: 'Vous trouverez dans ce guide des informations sur les differents certificats SSL sur nos hebergements Web.'
+excerpt: 'Apprenez à gérer un certificat SSL sur votre hébergement web OVH'
 section: SSL
+order: 1
 ---
 
-## Les differents certificats SSL
+**Dernière mise à jour le 02/11/2018**
 
-### Certificats SSL Gratuit (Let's Encrypt)
-Votre offre d'hébergement web ajoute sur l'ensemble des sites un certificat SSL. Cela permet de chiffrer les communications entre les visiteurs et votre site. Il vous suffit d'utiliser **https://** à la place de **http://** et le flux entre votre ordinateur et votre site sera chiffré.
+## Objectif
 
-Nous vous conseillons, si la version HTTPS de votre site fonctionne correctement, de créer une redirection afin que tous vos clients soient automatiquement redirigés sur la version chiffrée. Pour cela, vous trouverez ci-dessous un exemple de script à insérer au sein d'un fichier .htaccess afin de vous aider dans votre démarche mais il ne se substitue pas à l’aide d’un webmaster.
+Votre hébergement web vous permet de gérer un certificat SSL. Celui-ci peut être obtenu par le biais d'OVH ou par vos propres moyens en décidant de l'importer sur votre hébergement. Une fois installé sur celui-ci, il permettra à un ou plusieurs de vos sites de bénéficier d'une connexion sécurisée SSL et donc de fonctionner en HTTPS. 
 
-```bash
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.votredomaine.fr/$1 [R=301,L]
-```
+**Apprenez à gérer un certificat SSL sur votre hébergement web OVH.**
 
-Si vous utilisez un CMS (comme un WordPerss par exemple), il se peut que celui-ci gére de manière native cette redirection. Consultez la documentation de votre CMS afin d'en savoir plus.
+## Prérequis
 
-Cependant, le fonctionnement de votre site peut être altéré si vous utilisez votre certificat SSL. Avant de communiquer dessus, vérifier que votre site ne tombe pas dans les erreurs courantes liées au déploiement du SSL, rendez-vous pour cela sur ce guide : [Éviter les pièges du SSL avec mon site web](https://docs.ovh.com/fr/hosting/eviter-les-pieges-du-ssl-avec-mon-site-web/){.external}.
+- Posséder une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Disposer au moins d'un [nom de domaine](https://www.ovh.com/fr/domaines/){.external}.
+- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
 
-> [!warning]
->
-> La modification des fichiers d'un site internet requiert des compétences en programmation. Nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
->
+## En pratique
 
-### Certificats SSL payants
-Nous proposerons prochainement des certificats SSL payants (de type DV, OV et EV) vous permettant de disposer d'un meilleur chiffrement ou une vérification des données par les registres de certificats par exemple.
+La gestion du certificat SSL sur votre hébergement web OVH s'effectue par le biais de plusieurs manipulations. Poursuivez la lecture de cette documentation selon celle que vous souhaitez réaliser.
 
-### Certificats SSL externes
-Vous avez la possibilité d'importer un certificat SSL externe sur votre hébergement web chez OVH. Il n'y a pas de restriction sur le type de certificat que vous pouvez importer.
+- [Activer un certificat SSL sur son hébergement](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/#activer-un-certificat-ssl-sur-son-hebergement){.external} : vous permet d'activer un certificat SSL sur votre hébergement via une offre gratuite ou payante d'OVH par l'importation de votre propre certificat SSL.
 
-Retrouver comment réaliser cette manipulation [ici](#IMPORT_SSL){.external}.
+- [Activer le SSL sur un multisite](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/#activer-le-ssl-sur-un-multisite){.external} : si votre offre ou votre certificat SSL le permettent, vous pouvez faire bénéficier plusieurs de vos multisites d'une connexion sécurisée SSL.
 
-## La gestion du certificat SSL gratuit
+- [Regénérer le certificat SSL de l'hébergement](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/#regenerer-le-certificat-ssl-de-lhebergement){.external} : permet de regénérer le certificat SSL de votre hébergement web lorsque vous venez d'activer le SSL sur un ou plusieurs multisites. 
 
-### Activer le certificat SSL gratuit
-Si le certificat n'est pas actif sur votre hébergement, rendez-vous sur votre espace client. Sélectionnez votre hébergement dans la partie de gauche, puis cliquez `Actions`{.action} puis sur `Commander un certificat SSL`{.action}.
+- [Supprimer le certificat SSL de l'hébergement](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/#supprimer-le-certificat-ssl-de-lhebergement){.external} : permet de supprimer le certificat SSL de votre hébergement OVH. Cette manipulation n'est cependant pas sans risque si vous possédez des sites utilisant actuellement ce certificat. 
 
-> [!alert]
->
-> Vous pouvez activer SSL Let's Encrypt sur un maximum de 100 domaines et/ou sous domaines,  par hébergement .
-> 
+### Activer un certificat SSL sur son hébergement
 
-![hosting](images/4584-2.png){.thumbnail}
+Votre hébergement web OVH vous permet d'activer un [certificat SSL selon plusieurs solutions](https://www.ovh.com/fr/ssl/){.external} :
 
-Choisissez ensuite  **Certificat gratuit (Let's encrypt)** . Puis  **Suivant** .
+- le certificat SSL gratuit Let's Encrypt [compris avec une offre d'hébergement web compatible](https://www.ovh.com/fr/ssl/){.external} ;
+- un certificat SSL payant [en option avec un hébergement web compatible](https://www.ovh.com/fr/ssl/){.external} ;
+- l'import d'un certificat SSL obtenu par vos soins sur votre hébergement web.
 
-![hosting](images/4607-2.png){.thumbnail}
+Pour débuter l'activation du certificat, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. En dessous de « Certificat SSL », la mention « Non » devrait apparaître, vous indiquant qu'aucun certificat SSL n'est installé sur votre hébergement web. Cliquez alors sur le bouton représentant trois points à côté de « Certificat SSL », puis sur `Commander un certificat SSL`{.action}.
 
-Une fois le certificat généré, le protocole HTTPS est disponible sous quelques heures, le temps de le déployer sur l'ensemble de l'infrastructure.
+A contrario, si la mention « Oui » apparaît, ceci indique qu'un certificat SSL est déjà installé sur l'hébergement. Vous ne pourrez donc pas en commander un tant que l'existant est installé.
+
+![managessl](images/manage-ssl-step1.png){.thumbnail}
+
+Sur la fenêtre qui apparaît, sélectionnez le certificat SSL que vous souhaitez obtenir. Selon votre [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} ou sa configuration, il est possible que toutes les solutions spécifiées ci-dessus ne soient pas disponibles. Une fois votre choix fait, cliquez sur le bouton `Suivant`{.action}.
+
+![managessl](images/manage-ssl-step2.png){.thumbnail}
+
+Selon la solution sélectionnée, des étapes supplémentaires peuvent apparaître :
+
+- **si vous avez sélectionné un certificat SSL gratuit** : aucune action supplémentaire ne devrait être nécessaire, sauf si un élément technique empêche l'activation du certificat SSL (un message s'affiche alors dans l'espace client, vous indiquant les éléments que vous devez vérifier) ou la validation de votre nom de domaine pour la délivrance du certificat SSL. Vous serez alors averti et devrez suivre les indications communiquées ;
+
+- **si vous avez sélectionné un certificat SSL payant** : vous devrez compléter les étapes de la commande qui s'affichent afin d'obtenir votre certificat. Une validation particulière peut être requise pour certains types de certificats SSL. Il est donc possible que vous receviez un ou plusieurs e-mails concernant cette validation. Suivez alors les informations mentionnées dans ces derniers jusqu'à finaliser l'installation ;
+
+- **si vous avez sélectionné l'import d'un certificat SSL** : vous devrez renseigner ses informations dans les différentes cases qui apparaissent. Reportez-vous aux informations communiquées par le prestataire vous ayant fourni le certificat. 
+
+Un temps de quelques minutes à plusieurs jours selon le type de certificat sélectionné est nécessaire pour sa mise en place. Pour vérifier si le certificat SSL est installé sur votre hébergement web, repositionnez-vous sur l'onglet `Informations générales`{.action} de votre espace client. La mention « Oui » devrait alors apparaître en dessous de « Certificat SSL ». 
+
+![managessl](images/manage-ssl-step4.png){.thumbnail}
+
+Une fois installé, poursuivez vers la manipulation « [Activer le SSL sur un multisite](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/#activer-le-ssl-sur-un-multisite){.external} » afin de vous assurer que le ou les sites concernés bénéficient bien d'une connexion sécurisée SSL active.
+
+### Activer le SSL sur un multisite
+
+Selon le [certificat SSL](https://www.ovh.com/fr/ssl/){.external} dont vous disposez, vous avez la possibilité d'activer une connexion sécurisée SSL sur un ou plusieurs de vos multisites. Pour cela, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Positionnez-vous ensuite sur l'onglet `Multisite`{.action}.
+
+Le tableau qui s’affiche contient tous les noms de domaine qui ont été ajoutés à votre hébergement. La colonne « SSL » vous permet de voir l'état d'activation de la connexion sécurisée SSL pour vos différents multisites. 
+
+![managessl](images/manage-ssl-step5.png){.thumbnail}
+
+Trois états peuvent alors apparaître :
+
+|États|Description|
+|---|---|
+|Activé|Indique que le SSL est déjà activé pour ce multisite. Si votre site internet n'est cependant pas en HTTPS, reportez-vous aux instructions décrites dans notre documentation « [Passer son site internet en HTTPS grâce au SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/){.external} ».|
+|À générer|Indique que le SSL a été activé pour ce multisite, mais qu'il n'est techniquement pas encore actif. Pour cela, vous devez regénérer le certificat SSL de votre hébergement pour y inclure le ou les nouveaux noms de domaine.|
+|Désactivé|Indique que le SSL n'est pas activé pour ce multisite. Pour l'activer, réalisez les instructions décrites ci-dessous.|
+
+Pour activer le SSL sur un multisite, cliquez sur l'icône en forme de roue dentée à droite de celui concerné, puis sur `Modifier`{.action}. Sur la fenêtre qui apparaît, cochez la case `SSL`{.action}, puis poursuivez les étapes jusqu'à valider la modification.
+
+Une fois l'activation demandée, l'état de la connexion sécurisée SSL pour le multisite concerné s'actualise en quelques secondes pour afficher « À générer ». Répétez la manipulation si vous souhaitez activer le SSL sur d'autres multisites. Vous pouvez ensuite poursuivre vers la manipulation « [Regénérer le certificat SSL de l'hébergement](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/#regenerer-le-certificat-ssl-de-lhebergement){.external} ».
+
+![managessl](images/manage-ssl-step6.png){.thumbnail}
+
+### Regénérer le certificat SSL de l'hébergement
 
 > [!primary]
 >
-> Il n'est pas nécessaire de regénérer le certificat tous les 3 mois, cela est automatiquement réalisé par OVH.
-> 
-
-### Desactiver le certificat SSL gratuit
-Si le certificat est déjà activé et que vous souhaitez le supprimer, rendez- vous sur votre espace client.
-
-Sélectionnez votre hébergement dans la partie de gauche puis, cliquez sur `Actions`{.action} puis sur `Supprimer le SSL`{.action}. Dans la fenêtre qui apparait, validez la suppression du certificat. **Une fois le certificat supprimé, le protocole HTTPS devient indisponible sous quelques heures, le temps de le supprimer sur l'ensemble de l'infrastructure.**
-
-![hosting](images/4593-2.png){.thumbnail}
-
-### Gerer le certificat SSL sur vos multisites
-Toujours sur votre espace client, sélectionnez votre hébergement.
-
-Rendez-vous ensuite dans l'onglet  **Multisite**. Dans la colonne  **SSL** du tableau, voyez s'il est  **activé**  ou  **non**  pour votre Multisite. Pour modifier cela, cliquez sur l'icône en forme de roue dentée puis sur **Modifier** .
-
-![hosting](images/4595-2.png){.thumbnail}
-
-Cochez simplement  **SSL**  si vous souhaitez l'activer, puis  **Suivant** . Vérifiez le résumé, puis cliquez sur  **Valider** .
-
-![hosting](images/4599-2.png){.thumbnail}
-
-Vous verrez ensuite le certificat dans l'état  **À générer** . Cela signifie que lors de la prochaine  **génération de certificat** , ce multisite sera pris en compte.
-
-C'est un état temporaire. De cette façon vous pouvez configurer tout vos multisites/SSL à la suite, puis regénérer votre certificat SSL afin de réduire les délais de ces changements.
-
-Afin que le protocole HTTPS soit actif sur ce multisite, il reste à regénérer le certificat SSL. Repositionnez-vous sur l'onglet **Informations générales**, puis cliquez sur le bouton **Actions** puis sur **Regénérer le certificat SSL**. Dans la fenêtre qui apparait, validez la manipulation. Le protocole HTTPS pour ce multisite est disponible sous quelques heures, le temps de le déployer sur l'ensemble de l'infrastructure.
-
-![hosting](images/4593-2.png){.thumbnail}
-
-> [!alert]
+> Cette manipulation ne concerne que les certificats permettant d'activer une connexion sécurisée SSL sur plusieurs multisites.
 >
-> En cas de modification sur plusieurs multisites
-> Il ne faut pas regénérer votre certificat entre chaque modification. Réalisez d'abord les modifications sur chacun de vos multisites, puis une fois terminé, regénérez une seule fois le certificat. Vous gagnerez en temps.
-> 
 
-## Les erreurs recurrentes
+Après avoir activé la connexion sécurisée SSL sur un ou plusieurs de vos multisites, l'état indique alors : « À générer ». Cette génération est indispensable pour ajouter au certificat SSL de votre hébergement le ou les noms de domaine concernées. 
 
-### Pourquoi je ne peux pas generer de certificat sur mon hebergement ?
-Il se peut que vous rencontriez une erreur lors de l'activation du SSL. Retrouvez ici la liste des erreurs possibles :
+Pour cela, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. Cliquez ensuite sur le bouton représentant trois points à côté de « Certificat SSL », puis sur `Regénérer le certificat SSL`{.action}.
 
-- An hosted-ssl already exists for this domain
+![managessl](images/manage-ssl-step7.png){.thumbnail}
 
-Il existe déjà un certificat SSL lié à ce compte. Il n'est pas possible d'en regénérer un.
+Sur la fenêtre qui apparaît, prenez connaissance des informations affichées, puis cliquez sur le bouton `Valider`{.action}. Patientez alors le temps que la regénération de votre certificat SSL s'effectue. Ceci peut nécessiter plusieurs heures.
 
-- No attached domain with ssl enabled or no attached domain that redirect on hosting IPs, please use hosting IPs in your domain zone
+Prenez cependant en considération que Let's Encrypt, l'autorité qui délivre le cerificat SSL gratuit pour votre hébergement web impose une [limite de cinq regénérations par semaine](https://letsencrypt.org/docs/rate-limits/){.external}. Nous vous invitons donc à être vigilant sur les différentes regénérations que vous pourriez entreprendre à court terme afin de ne pas être temporairement bloqué.
 
-Si aucun de vos multisites sur cet hébergement n'a de certificat SSL généré. Corrigez cela en générant le certificat SSL depuis l'onglet "Multisite", et suivez [la partie Multisite](#MULTI_SITE){.external}.
+![managessl](images/manage-ssl-step8.png){.thumbnail}
 
-> [!alert]
->
-> Vous pouvez activer SSL Let's Encrypt sur un maximum de 100 domaines et/ou sous domaines,  par hébergement .
-> 
+### Supprimer le certificat SSL de l'hébergement
 
-### Je rencontre des problemes de mixed content, duplicate content
-Le fonctionnement de votre site peut être altéré si vous utilisez votre certificat SSL. Avant de communiquer dessus, vérifier que votre site ne tombe pas dans les erreurs courantes liées au déploiement du SSL de type mixed content ou duplicate content.
+Vous avez la possibilité de supprimer le certificat SSL actuellement installé sur votre hébergement web. Cependant, avant d'entamer cette manipulation, **nous vous conseillons vivement de vous assurer que la suppression du certificat ne perturbera pas l'accessibilité à vos sites internet**. Prenez en considération que vos visiteurs rencontreront une erreur de sécurité s'ils accèdent à un site internet fonctionnant en HTTPS, mais ne bénéficiant pas d'une connexion sécurisée SSL. 
 
-Retrouvez plus d'information à ce sujet sur [Éviter les pièges du SSL avec mon site web](https://docs.ovh.com/fr/hosting/eviter-les-pieges-du-ssl-avec-mon-site-web/){.external}.
+Cette vérification étant inhérente aux paramètres de votre ou vos sites internet, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos. 
 
-<a name="IMPORT_SSL"></a>
+Dès que vous êtes prêt à supprimer le certificat SSL, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. Cliquez ensuite sur le bouton représentant trois points à côté de « Certificat SSL », puis sur `Supprimer le SSL`{.action}.
 
-## Importer un certificat SSL externe
+Sur la page qui apparaît, validez alors la suppression. Celle-ci sera effective sous quelques heures maximum. 
 
-### Comment faire ?
-Pour importer votre propre certificat SSL sur votre hébergement, rendez-vous sur votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, puis dans l'onglet "Informations générales" de votre hébergement, cliquez ensuite sur "Commander un certificat SSL".
+![managessl](images/manage-ssl-step9.png){.thumbnail}
 
-![hosting](images/4584-2.png){.thumbnail}
+## Aller plus loin
 
-Choisissez "Import de votre certificat SSL" puis cliquez sur "Suivant".
-
-![hosting](images/4607-2.png){.thumbnail}
-
-Renseignez le contenu de votre certificat et votre clé privée puis cliquez sur "Suivant".
-
-![hosting](images/sslexterne-2.png){.thumbnail}
-
-L'import de votre certification sera disponible après quelques heures maximum, le temps qu'il soit déployé sur l'ensemble de l'infrastructure.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
