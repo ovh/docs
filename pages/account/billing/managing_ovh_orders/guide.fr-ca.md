@@ -90,4 +90,4 @@ Il vous reste à confirmer l'annulation de la commande en cochant la case `Oui j
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
