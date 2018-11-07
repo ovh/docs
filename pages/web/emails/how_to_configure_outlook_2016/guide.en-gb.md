@@ -2,7 +2,8 @@
 title: Configuring your email address in Outlook 2016 for Windows
 slug: configuration-outlook-2016
 excerpt: Find out how to configure your MX Plan email address in Outlook 2016 for Windows
-section: Outlook
+section: Configure on computer
+order: 1
 ---
 
 **Last updated 22nd March 2018**

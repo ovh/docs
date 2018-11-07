@@ -2,7 +2,8 @@
 title: 'Configuring an email address on the Gmail online interface'
 slug: gmail-configuration
 excerpt: 'Find out how to configure an MX Plan email address on the Gmail online interface'
-section: 'Other email clients'
+section: 'Configure an email service'
+order: 1
 ---
 
 **Last updated 3rd September 2018**
