@@ -1,8 +1,8 @@
 ---
 title: 'Shared Mail: Guide to view email headers'
-excerpt: Insert Here A Short Desc
 slug: shared_mail_guide_to_view_email_headers
-section: Advanced Functions & Upgrades
+section: 'Diagnostic'
+order: 2
 ---
 
 

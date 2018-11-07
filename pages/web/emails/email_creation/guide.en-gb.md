@@ -2,7 +2,7 @@
 title: 'Creating an email address with your MX Plan package'
 slug: hosted_email_how_to_set_up_an_email_address
 excerpt: 'Find out how to create an email address with your MX Plan package'
-section: 'Managing your email address'
+section: 'Getting started'
 order: 1
 ---
 
