@@ -5,7 +5,7 @@ excerpt: 'Find out how to set up a Veeam Backup & Replication server with Veeam 
 section: 'Veeam'
 ---
 
-**Last updated 8th November 2018**
+**Last updated 8/11/2018**
 
 ## Objective
 
