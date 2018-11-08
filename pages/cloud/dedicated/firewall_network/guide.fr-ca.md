@@ -1,7 +1,7 @@
 ---
-title: Configurer le Coupe-feu Réseau
+title: 'Configurer le Coupe-feu Réseau'
 slug: firewall-network
-section: Réseau & IP
+section: 'Réseau & IP'
 ---
 
 **Dernière mise à jour le 2018/08/16**
@@ -73,6 +73,7 @@ Ajoutez une règle en cliquant sur `Ajouter une règle`{.action}.
 ![Ajouter une règle](images/ajoutregle1.png){.thumbnail}
 
 Pour chaque règle, vous devez choisir :
+
 - une priorité (de 0 à 19, 0 étant la première règle appliquée) ;
 - une action (`Autorise`{.action} ou `Refuse`{.action}) ;
 - le protocole ;

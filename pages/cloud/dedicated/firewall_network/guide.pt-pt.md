@@ -73,13 +73,14 @@ Adicione uma regra através da opção  `Adicionar uma regra`{.action}.
 ![Adicionar uma regra](images/ajoutregle1.png){.thumbnail}
 
 Para cada regra, deve selecionar:
-\- o nível de prioridade (de 0 a 19, sendo que é aplicada a primeira regra);
-\- uma ação (`Autorizar`{.action} ou `Recusar`{.action});
-\- o protocolo;
-\- um IP (opcional);
-\- a porta de origem (apenas TCP);
-\- a porta de destino (apenas TCP);
-\- as opções TCP (apenas TCP).
+
+- o nível de prioridade (de 0 a 19, sendo que é aplicada a primeira regra);
+- uma ação (`Autorizar`{.action} ou `Recusar`{.action});
+- o protocolo;
+- um IP (opcional);
+- a porta de origem (apenas TCP);
+- a porta de destino (apenas TCP);
+- as opções TCP (apenas TCP).
 
 ![Como adicionar uma regra](images/ajoutregle4.png){.thumbnail}
 

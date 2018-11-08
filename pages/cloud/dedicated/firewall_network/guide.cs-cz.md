@@ -73,6 +73,7 @@ Nové pravidlo vytvoříte kliknutím na tlačítko `Přidat pravidlo`{.action}.
 ![Přidání pravidla](images/ajoutregle1.png){.thumbnail}
 
 Pro každé pravidlo lze nastavit následující hodnoty:
+
 - priorita (0 až 19, přičemž pravidlo s prioritou 0 má přednost před ostatními pravidly v řadě)
 - akce (`Povolit`{.action} nebo `Odmítnout`{.action})
 - protokol
