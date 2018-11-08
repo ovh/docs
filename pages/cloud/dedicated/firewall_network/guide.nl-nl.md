@@ -73,6 +73,7 @@ Voeg een regel toe door te klikken op `Regel toevoegen`{.action}.
 ![Regel toevoegen](images/ajoutregle1.png){.thumbnail}
 
 Voor elke regel moet u het volgende specificeren:
+
 * Prioriteit (op een schaal van 0 tot 19, waarbij 0 de eerste regel is om te gebruiken, etc.)
 * Actie (`Toestaan`{.action} of `Weigeren`{.action})
 * Protocol

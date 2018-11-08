@@ -1,10 +1,11 @@
 ---
-title: Konfiguration des Firewall Network
+title: 'Konfiguration des Firewall Network'
 slug: firewall-network
-section: IP & Netzwerk
+excerpt: 'Hier erfahren Sie, wie Sie Firewall Network konfigurieren.'
+section: 'IP & Netzwerk'
 ---
 
-**Stand 23.01.2018**
+**Stand 08.11.2018**
 
 ## Einleitung
 
@@ -15,7 +16,7 @@ Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet O
 
 > [!primary]
 >
-> VAC*: Weitere Informationen zur VAC Technologie, unserem internen Anti-DDoS-System, finden Sie hier: <https://www.ovh.de/anti-ddos/>.
+> Weitere Informationen zu unserer Anti-DDoS-Lösung finden Sie hier: <https://www.ovh.de/anti-ddos/>.
 > 
 
 ![VAC im Detail](images/vac-inside.png){.thumbnail}
@@ -37,15 +38,15 @@ Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet O
 > Firewall Network schützt die IP-Adressen, die mit einer Maschine verbunden sind. Daher ist es notwendig, jede IP-Adresse einzeln zu konfigurieren, eine globale Serverkonfiguration ist nicht möglich.
 > 
 
-Aktivierung und Konfiguration erfolgen manuell über das Kundencenter im Bereich `IP`{.action}, indem Sie auf das Zahnrad-Symbol rechts neben der entsprechenden IPv4-Adresse klicken.
+Wenn Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt sind, gehen Sie in den Bereich `IP`{.action} und klicken Sie auf `...`{.action}, um die Firewall für die gewünschte IPv4-Adresse zu aktivieren.
 
 ![Aktivierung der Firewall Network](images/firewall_creation.png){.thumbnail}
 
-- Die Aktivierung muss anschließend bestätigt werden:
+- Anschließend werden Sie nach einer Bestätigung gefragt.
 
 ![Bestätigung](images/creationvalid.png){.thumbnail}
 
-- Klicken Sie erneut auf das Zahnrad-Symbol rechts neben der entsprechenden IPv4-Adresse und klicken Sie danach auf `Firewall aktivieren`{.action} und auf `Firewall konfigurieren`{.action}:
+- Klicken Sie danach auf `Firewall aktivieren`{.action} (1) und dann auf `Firewall konfigurieren`{.action} (2), um mit der Konfiguration zu beginnen.
 
 ![Aktivierung der Konfiguration](images/activationconfig.png){.thumbnail}
 
@@ -77,13 +78,13 @@ Um eine Regel hinzuzufügen, klicken Sie rechts auf die Schaltfläche `Eine Rege
 
 Legen Sie dann für jede Regel folgende Einstellungen fest:
 
-- Die Priorität (von 0 bis 19, wobei die Regel mit dem Wert 0 als erste Regel angewandt wird, danach in aufsteigender Reihenfolge)
-- Die auszuführende Aktion: (`Erlauben`{.action} oder `Verbieten`{.action})
-- Das Protokoll
-- Eine IP-Adresse (optional)
-- Den Quell-Port (nur bei TCP)
-- Den Ziel-Port (nur bei TCP)
-- Die TCP-Optionen (nur bei TCP)
+- die Priorität (von 0 bis 19, wobei die Regel mit dem Wert 0 als erste Regel angewandt wird, danach in aufsteigender Reihenfolge)
+- die auszuführende Aktion: (`Erlauben`{.action} oder `Verbieten`{.action})
+- das Protokoll
+- eine IP-Adresse (optional)
+- den Quell-Port (nur bei TCP)
+- den Ziel-Port (nur bei TCP)
+- die TCP-Optionen (nur bei TCP)
 
 
 ![Details zum Hinzufügen einer Regel](images/ajoutregle4.png){.thumbnail}
@@ -91,14 +92,14 @@ Legen Sie dann für jede Regel folgende Einstellungen fest:
 
 > [!primary]
 >
-> - Priorität 0: Es wird empfohlen, das TCP-Protokoll auf allen IPs mit der `ESTABLISHED`{.action} Option zuzulassen. Mithilfe der `ESTABLISHED`{.action} Option kann überprüft werden, ob das Paket Teil einer zuvor geöffneten (bereits initiierten) Sitzung ist. Wenn Sie diese Option nicht zulassen, wird der Server keine TCP-Rückmeldungen für SYN/ACK-Anfragen erhalten.
+> - Priorität 0: Es wird empfohlen, das TCP-Protokoll auf allen IPs mit der `ESTABLISHED`{.action} Option zuzulassen. Mit dieser Option kann überprüft werden, ob das Paket Teil einer zuvor geöffneten (bereits initiierten) Sitzung ist. Wenn Sie diese Option nicht zulassen, wird der Server keine TCP-Rückmeldungen für SYN/ACK-Anfragen erhalten.
 > - Priorität 19: Die empfohlene Einstellung ist, mit der Regel 19 das Verwerfen aller IPv4-Pakete einzustellen, damit alle Pakete, die durch keine der vorangegangenen Regeln akzeptiert wurden, blockiert werden.
 > 
 
 
 ### Konfigurationsbeispiel:
 
-Um nur die Ports für SSH (22), HTTP (80), HTTPS (443) und UDP (auf Port 10000) zu öffnen, wenn ICMP erlaubt ist, müssen Sie die folgenden Regeln definieren:
+Um nur die Ports für SSH (22), HTTP (80), HTTPS (443) und UDP (auf Port 10000) zu öffnen, wenn ICMP erlaubt ist, beachten Sie die folgenden Regeln:
 
 ![Konfigurationsbeispiel:](images/exemple.png){.thumbnail}
 
@@ -108,7 +109,7 @@ Im Beispiel wird ein Paket für den TCP-Port 80 von der Regel 2 angenommen, die 
 
 > [!warning]
 >
-> Wenn Sie die DDoS-Schutz-Funktion aktivieren, werden automatisch auch Ihre Firewall Network Regeln aktiviert, auch wenn Sie die Firewall deaktiviert haben. Um Firewall Network zu deaktivieren, denken Sie also bitte daran, Ihre Regeln zu löschen.
+> Wenn Sie die DDoS-Schutz-Funktion aktivieren, werden automatisch auch Ihre Firewall Network Regeln aktiviert, auch wenn Sie die Firewall deaktiviert haben. Um Firewall Network vollständig zu deaktivieren, denken Sie also bitte daran, Ihre Regeln zu löschen.
 > 
 
 ## Weiterführende Informationen

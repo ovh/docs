@@ -73,13 +73,14 @@ Lisää sääntö klikkaamalla kohtaa `Lisää sääntö`{.action}.
 ![Säännön lisääminen](images/ajoutregle1.png){.thumbnail}
 
 Voit valita jokaiselle säännölle:
-\- prioriteetin (asteikolla 0 - 19, jossa 0 on ensimmäisenä käytettävä sääntö jne.)
-\- toiminnon (`Hyväksytty`{.action} tai `Hylätty`{.action})
-\- protokollan
-\- IP-osoitteen (valinnainen)
-\- lähdeportin (vain TCP)
-\- kohdeportin (vain TCP)
-\- TCP-lisäoptiot (vain TCP)
+
+- prioriteetin (asteikolla 0 - 19, jossa 0 on ensimmäisenä käytettävä sääntö jne.)
+- toiminnon (`Hyväksytty`{.action} tai `Hylätty`{.action})
+- protokollan
+- IP-osoitteen (valinnainen)
+- lähdeportin (vain TCP)
+- kohdeportin (vain TCP)
+- TCP-lisäoptiot (vain TCP)
 
 ![Tiedot säännön lisäämisestä](images/ajoutregle4.png){.thumbnail}
 
