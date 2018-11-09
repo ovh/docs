@@ -1,8 +1,9 @@
 ---
-title: Smart Grids &#58; Building, Cities, Infrastructure
+title: 'Smart Grids: Building, Cities, Infrastructure'
 slug: usecase-grids
-excerpt: How Metrics solves the complexity of Smart Grids
-section: Use cases
+excerpt: 'How Metrics solves the complexity of Smart Grids'
+section: 'Use cases'
+order: 6
 ---
 
 **Last updated 15th May, 2018**

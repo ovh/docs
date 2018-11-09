@@ -3,6 +3,8 @@ title: Configure Dropwizard Metrics
 slug: source-dropwizard
 excerpt: Configure Dropwizard for Metrics Data Platform
 section: Source
+order: 3
+hidden: true
 ---
 **Last updated 15th May, 2018**
 

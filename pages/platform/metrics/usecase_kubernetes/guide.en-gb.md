@@ -3,6 +3,7 @@ title: Monitor your Kubernetes cluster using Metrics
 slug: usecase-kubernetes
 excerpt: Use Metrics Data Platform to monitor your Kubernetes cluster
 section: Use cases
+order: 3
 ---
 **Last updated 15th May, 2018**
 

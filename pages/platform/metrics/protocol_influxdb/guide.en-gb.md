@@ -3,7 +3,7 @@ title: Use InfluxDB
 slug: protocol-influxdb
 excerpt: Get an overview on how to use InfluxDB for Metrics
 section: Protocol
-order: 2
+order: 4
 ---
 
 **Last updated 15th May, 2018**

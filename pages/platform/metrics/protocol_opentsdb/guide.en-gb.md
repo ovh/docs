@@ -3,7 +3,7 @@ title: Use OpenTSDB
 slug: protocol-opentsdb
 excerpt: Get an overview on how to use OpenTSDB for Metrics
 section: Protocol
-order: 2
+order: 3
 ---
 **Last updated 15th May, 2018**
 ## Objective

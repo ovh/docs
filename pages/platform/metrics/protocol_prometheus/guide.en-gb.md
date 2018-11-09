@@ -3,7 +3,7 @@ title: Use Prometheus
 slug: protocol-prometheus
 excerpt: Get an overview on how to use Prometheus for Metrics
 section: Protocol
-order: 2
+order: 5
 ---
 
 **Last updated 15th May, 2018**

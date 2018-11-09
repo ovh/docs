@@ -1,8 +1,9 @@
 ---
-title: Server &amp; Infrastructure monitoring
+title: Server and Infrastructure monitoring
 slug: usecase-monitoring
-excerpt: Monitoring guide for your infrastructure &#58; from 1 to thousands of hosts
+excerpt: Monitoring guide for your infrastructure from 1 to thousands of hosts
 section: Use cases
+order: 4
 ---
 
 **Last updated 15th May, 2018**
