@@ -3,6 +3,7 @@ title: Configure Telegraf
 slug: source-telegraf
 excerpt: Configure Telegraf for Metrics Data Platform
 section: Source
+order: 6
 ---
 **Last updated 15th May, 2018**
 

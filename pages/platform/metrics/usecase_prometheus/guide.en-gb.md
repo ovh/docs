@@ -3,6 +3,7 @@ title: Push Prometheus data to Metrics
 slug: usecase-prometheus
 excerpt: Use Metrics Data Platform to replace a Prometheus instance
 section: Use cases
+order: 5
 ---
 **Last updated 15th May, 2018**
 

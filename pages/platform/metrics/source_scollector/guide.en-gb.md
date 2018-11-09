@@ -3,6 +3,7 @@ title: Configure Scollector
 slug: source-scollector
 excerpt: Configure Scollector for Metrics Data Platform
 section: Source
+order: 5
 ---
 **Last updated 15th May, 2018**
 

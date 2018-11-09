@@ -3,7 +3,7 @@ title: Use Warp10
 slug: protocol-warp10
 excerpt: Get an overview on how to use Warp10 for Metrics
 section: Protocol
-order: 2
+order: 6
 ---
 **Last updated 15th May, 2018**
 

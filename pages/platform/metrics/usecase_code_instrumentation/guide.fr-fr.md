@@ -3,6 +3,7 @@ title: Code Instrumentation &#58; Monitor an App
 slug: usecase-apm
 excerpt: Monitor your apps through code instrumentation
 section: Use cases
+order: 2
 ---
 
 **Last updated 15th May, 2018**

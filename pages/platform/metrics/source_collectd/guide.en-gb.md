@@ -3,6 +3,7 @@ title: Configure CollectD
 slug: source-collectd
 excerpt: Configure CollectD for Metrics Data Platform
 section: Source
+order: 2
 ---
 **Last updated 15th May, 2018**
 

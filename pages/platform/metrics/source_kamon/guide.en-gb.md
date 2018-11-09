@@ -3,6 +3,7 @@ title: Configure Kamon
 slug: source-kamon
 excerpt: Configure Kamon for Metrics Data Platform
 section: Source
+order: 4
 ---
 **Last updated 15th May, 2018**
 

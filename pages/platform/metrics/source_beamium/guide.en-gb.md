@@ -3,6 +3,7 @@ title: Configure Beamium
 slug: source-beamium
 excerpt: Configure Beamium for Metrics Data Platform
 section: Source
+order: 1
 ---
 **Last updated 15th May, 2018**
 
