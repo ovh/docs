@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment choisir une grappe de disques spécifique pour inst
 section: 'RAID & disques'
 ---
 
-**Dernière mise à jour le 18/07/2018**
+**Dernière mise à jour le 09/11/2018**
 
 ## Objectif
 
@@ -57,19 +57,11 @@ Voici l'appel API à réaliser pour cela :
 > @api {GET} /dedicated/server/{serviceName}/specifications/hardware
 > 
 
-Entrez le nom de votre serveur récupéré précédemment dans le champ **serviceName**, puis cliquez sur le bouton `Execute`{.action}. Vous verrez alors les informations sur le matériel de votre serveur, comme indiqué ci-dessous :
+Entrez le nom de votre serveur récupéré précédemment dans le champ « **serviceName** », puis cliquez sur le bouton `Execute`{.action}. Les informations sur le matériel de votre serveur s'affichent alors. Repérez le `diskGroupId` concerné dans la partie `diskGroups`.
 
-![Hybrid](images/hybrid.png){.thumbnail}
+Par défaut, le système d’exploitation est installé sur le `diskGroupId` 1.
 
-Ce qui nous intéresse ici, c'est `diskGroupId`, que vous trouverez dans `diskGroups`.
-
-Sur un serveur hybride, les disques SSD sont généralement placés en deuxième position. `DiskGroupId` sera donc 2.
-
-> [!primary]
->
-> Par défaut, le système d’exploitation est installé sur le `diskGroupId` 1.
-> 
-
+![Hybrid](images/hybrid-01.png){.thumbnail}
 
 ### Lancer l'installation du système d'exploitation
 
