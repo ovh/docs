@@ -2,7 +2,7 @@
 title: Overview of Metrics
 slug: overview
 excerpt: Discover the Metrics Data Platform and why you need it
-section: Metrics Services
+section: Metrics services
 order: 2
 ---
 
