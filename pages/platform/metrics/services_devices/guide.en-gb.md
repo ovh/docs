@@ -2,7 +2,7 @@
 title: Connect an IoT Device
 slug: iot-devices
 excerpt: How to use Metrics with a connected IoT device
-section: Metrics Services
+section: Metrics services
 order: 1
 ---
 
