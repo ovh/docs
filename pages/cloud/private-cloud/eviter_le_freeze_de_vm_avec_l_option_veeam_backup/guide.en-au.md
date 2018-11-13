@@ -5,7 +5,7 @@ section: 'Virtual machine management'
 excerpt: 'This guide will show you how to to implement a bypass solution, using the VMware DRS mechanism'
 ---
 
-**Last updated 13th November 2018**
+**Last updated 13/11/2018**
 
 ## Objective
 
@@ -19,8 +19,8 @@ This problem will not occur if the virtual machine and the backup proxy are loca
 
 ## Requirements
 
-- a [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
-- the [Veeam Managed Backup](https://www.ovh.co.uk/private-cloud/options/veeam.xml){.external} option enabled
+- a [Private Cloud](https://www.ovh.com.au/private-cloud/){.external} solution
+- the [Veeam Managed Backup](https://www.ovh.com.au/private-cloud/options/veeam.xml){.external} option enabled
 - access to the vSphere management interface
 
 ## Instructions

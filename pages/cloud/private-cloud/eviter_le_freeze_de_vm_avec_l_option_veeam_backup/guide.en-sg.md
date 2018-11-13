@@ -19,8 +19,8 @@ This problem will not occur if the virtual machine and the backup proxy are loca
 
 ## Requirements
 
-- a [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
-- the [Veeam Managed Backup](https://www.ovh.co.uk/private-cloud/options/veeam.xml){.external} option enabled
+- a [Private Cloud](https://www.ovh.com/sg/private-cloud/){.external} solution
+- the [Veeam Managed Backup](https://www.ovh.com/sg/private-cloud/options/veeam.xml){.external} option enabled
 - access to the vSphere management interface
 
 ## Instructions
