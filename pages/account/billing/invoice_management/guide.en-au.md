@@ -3,6 +3,7 @@ title: 'Managing OVH bills'
 slug: manage-ovh-bills
 excerpt: 'Find out how to manage your bills and the payments associated with them'
 section: 'Managing orders, bills and services'
+hidden: true
 ---
 
 **Last updated 2/11/2018**
