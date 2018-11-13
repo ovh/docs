@@ -70,13 +70,13 @@ Pass 5: Checking group summary information
 /dev/sdb1: 37870/1310720 files (0.2% non-contiguous), 313949/5242462 blocks
 ```
 
-Si vous constatez une erreur, prenez-en connaissance puis réagissez de la manière la plus adéquate. Vous trouverez ci-dessous quelques erreurs courantes qui peuvent apparaître :
+Si vous constatez une erreur, prenez-en connaissance et agissez de la manière la plus adéquate selon votre cas. Vous trouverez ci-dessous quelques unes erreurs les plus courantes :
 
-- `bad magic number in superblock` : ne continuez pas. Une procédure pour régler cette difficulté est expliquée dans la partie « [Comment réparer les erreurs *bad magic number in superblock* ?](https://docs.ovh.com/fr/vps/repartitionner-vps-suite-upgrade/#comment-reparer-les-erreurs-bad-magic-number-in-superblock) » de cette documentation ;
+- `bad magic number in superblock` : ne continuez pas. Une procédure pour régler cette difficulté est expliquée dans la partie « [Comment réparer les erreurs *bad magic number in superblock*](https://docs.ovh.com/fr/vps/repartitionner-vps-suite-upgrade/#comment-reparer-les-erreurs-bad-magic-number-in-superblock) » de cette documentation ;
 
-- `/dev/vdb1 has unsupported feature(s): metadata_csum` suivi de `e2fsck: Get a newer version of e2fsck!` : mettez à jour e2fsck. Si la dernière version n'est pas disponible via `apt` (ou autre package manager), vous devrez la compiler *from source*.
+- `/dev/vdb1 has unsupported feature(s): metadata_csum` suivi de `e2fsck: Get a newer version of e2fsck!` : mettez à jour e2fsck. Si la dernière version n'est pas disponible via `apt` (ou autre package manager), vous devrez la compiler depuis les sources.
 
-La liste ci-dessus n'est pas exhaustive. Réagissez en fonction des erreurs qui peuvent apparaître.
+La liste ci-dessus n'est pas exhaustive.
 
 ### Ouvrir l’application fdisk
 
