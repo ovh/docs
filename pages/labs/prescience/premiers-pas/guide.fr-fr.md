@@ -9,7 +9,7 @@ section: 'Premiers pas'
 
 ## Objectif
 
-La plateforme Prescience est un outil d'apprentissage automatique. Ce guide vous aidera à comprendre les concepts de base derrière cet outil. 
+La plateforme Prescience est un outil d'apprentissage automatique. Ce guide vous aidera à comprendre les concepts de base derrière cet outil.
 
 **Découvrez comment créer un entraînement de modèle automatisé afin d'effectuer une classification.**
 
@@ -77,7 +77,10 @@ Pour le moment, aucune source de données n'a encore été déposée sur votre p
 
 ## Upload d'un jeu de données
 
-Dans le cadre de notre guide, nous utiliserons un jeu de données disponible librement en téléchargement sur le site « [Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Adult) » disponible [ici](https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data). Ce jeu de données tabulaire est enregistré sous un format .csv. Il regroupe des données concernant les tranches salariales d'environ 30 000 individus américains en fonction de critères tels que leur âge, leur catégorie sociale, leur sexe etc. Le but est de pouvoir ensuite prédire le salaire d'un individu inconnu grâce à ces mêmes critères.
+Dans le cadre de notre guide, nous utiliserons un jeu de données disponible librement en téléchargement sur le site « [Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Adult) » disponible [ici](https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data).
+Ce jeu de données tabulaire est enregistré sous un format .csv. Il regroupe des données concernant les tranches salariales d'environ 30 000 individus américains en fonction de critères tels que leur âge, leur catégorie sociale, leur sexe etc. Le but est de pouvoir ensuite prédire le salaire d'un individu inconnu grâce à ces mêmes critères.
+
+Vous trouverez une version contenant les headers sur cette url [Link](https://storage.waw1.cloud.ovh.net/v1/AUTH_437c7857c8a64793a42462ba49ef463f/_public/getting-started-source.csv)
 
 Pour déposer une nouvelle source, il vous suffit de cliquer sur le bouton `Upload Source`{.action}, puis de renseigner les champs demandés.
 
@@ -85,7 +88,7 @@ Pour déposer une nouvelle source, il vous suffit de cliquer sur le bouton `Uplo
 * Le bouton « Upload folder » vous permettra de sélectionner un dossier complet à déposer.
 * Le champ « Source » vous permettra de nommer votre source grâce à un identifiant unique.
 * Le champ « Type » vous permettra de sélectionner le format des fichiers que vous téléchargez (.csv ou parquet)
-* Si vous choisissez le type .csv, un autre champ vous demandera d'indiquer ou non la présence d'en-têtes sur le fichier. Dans notre cas le fichier « adult.data » téléchargé ne possède pas d'en-tête.
+* Si vous choisissez le type .csv, un autre champ vous demandera d'indiquer ou non la présence d'en-têtes sur le fichier.
 
 Renseignez le formulaire comme suit, puis cliquez sur `Upload`{.action} afin de démarrer le dépôt du fichier.
 
@@ -119,9 +122,11 @@ Pour lancer la construction d'un *dataset*, il suffit de dérouler le menu « A
 
 Un formulaire vous demandera de renseigner les éléments suivants :
 
-* « Dataset » : l'identifiant unique que vous souhaitez donner au *dataset* ;
+* « Dataset name » : l'identifiant unique que vous souhaitez donner au *dataset* ;
 * « Label » : la colonne de votre jeu de données à sélectionner en tant que label pour l'apprentissage. Dans notre cas, le label à prédire concerne la tranche de revenus de l'individu qui se trouve dans la dernière colonne (14) de notre tableau de données ;
+* « Specify Columns » : Si oui, permet de filter sur quelles colonnes le preprocessing sera effectuées
 * « Problem Type » : le type d'apprentissage à réaliser (classification ou régression).
+* « K Fold » : Nombre selon lequel sera divisé le dataset pour la cross validation
 
 Renseignez le formulaire comme suit, puis continuez en cliquant sur `Start`{.action}.
 
@@ -141,7 +146,7 @@ La phase d'optimisation consiste à trouver l'algorithme, ainsi que les hyperpar
 
 Pour ce faire, le système démarre plusieurs entraînements avec différents algorithmes et hyperparamètres sur plusieurs sous-ensembles de notre jeu de données (aussi appelés « k-fold »). Les résultats de ces entraînements sont ensuite agrégés par le système afin de sélectionner les hyperparamètres les plus pertinents à tester pour les prochaines itérations.
 
-Cette phase d'optimisation possède un budget initial renseigné par l'utilisateur. Elle ne s'arrête pas tant que le budget n'est pas épuisé.
+Cette phase d'optimisation possède un nombre d'itération initial renseigné par l'utilisateur. Elle ne s'arrête pas tant que ne le nombre d'itération n'est pas atteint.
 
 
 **1 entraînement = 1 unité de budget**
@@ -152,12 +157,10 @@ Afin de lancer une optimisation sur notre *dataset*, il suffit dans un premier t
 
 Le lancement d'une optimisation se fait ensuite via le bouton `Optimize`{.action}. Cette action vous demandera de renseigner les éléments suivants :
 
-* « Budget » : le budget à utiliser pour la tâche ;
+* « Iteration » : Nombre d'itération pour cette tâche.
 * « Scoring Metric » : la valeur d'optimisation qui sera utilisée par l'algorithme afin d'évaluer la performance de ses résultats. Les valeurs possibles sont des indicateurs connus tels que l'Accuracy, le F1 Score ou le ROC AUC ;
-* « Le K fold » : nombre de sous-ensembles du *dataset* initial à utiliser ;
-* « Optimisation Method » : la méthode d'optimisation à utiliser.
 
-Choisissez le budget que vous voulez et laissez tous les autres paramètres par défaut. Démarrez ensuite l'optimisation.
+Choisissez le nombre d'itération que vous voulez et laissez tous les autres paramètres par défaut. Démarrez ensuite l'optimisation.
 
 ![optimisation_form](images/optimisation_form.png)
 
@@ -177,13 +180,15 @@ L'affichage est également disponible sous la forme de tableau, via le bouton `T
 
 ## Entraînement et déploiement d'un modèle
 
-L'encart vert affiché au-dessus de la courbe des résultats vous indique en permanence quel est le meilleur résultat obtenu. 
+L'encart vert affiché au-dessus de la courbe des résultats vous indique en permanence quel est le meilleur résultat obtenu.
 
 En cliquant sur un point de la courbe, un encart bleu s'affiche et vous permet d'obtenir plus d'informations sur les résultats de l'entraînement associé.
 
 ![run_comparison](images/run_comparison.png)
 
-Sur chacun des encarts, un bouton « Train » apparaît. Celui-ci permet de lancer un entraînement sur la configuration associée, puis de déployer le modèle entraîné en production. Contrairement à l'optimisation, cet entraînement sera cette fois-ci réalisé sur le jeu complet de données du *dataset* et non sur l'un de ses sous-ensembles.
+Sur chacun des encarts, un bouton « Actions » apparaît. Celui-ci permet de:
+    - lancer un entraînement sur la configuration associée, puis de déployer le modèle entraîné en production. Contrairement à l'optimisation, cet entraînement sera cette fois-ci réalisé sur le jeu complet de données du *dataset* et non sur l'un de ses sous-ensembles.
+    - Voir les details de l'entraînement associé
 
 La seule information à fournir à Prescience lors d'une demande de « Train » est l'identifiant, qui permettra de nommer le modèle généré.
 
