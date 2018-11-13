@@ -1,10 +1,10 @@
 ---
-title: Repartitionner un VPS suite à un upgrade
+title: 'Repartitionner un VPS suite à un upgrade'
 slug: repartitionner-vps-suite-upgrade
-section: Premiers pas
+section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 14/11/2017**
+**Dernière mise à jour le 13/11/2018**
 
 ## Objectif
 
@@ -69,9 +69,14 @@ Pass 4: Checking reference counts
 Pass 5: Checking group summary information
 /dev/sdb1: 37870/1310720 files (0.2% non-contiguous), 313949/5242462 blocks
 ```
-> [!warning]
->
-> Si vous constatez une erreur de type `bad magic number in superblock`, ne continuez pas. Une procédure pour régler cette difficulté vous est expliquée à la fin de ce guide.
+
+Si vous constatez une erreur, prenez-en connaissance et agissez de la manière la plus adéquate selon votre cas. Vous trouverez ci-dessous quelques unes erreurs les plus courantes :
+
+- `bad magic number in superblock` : ne continuez pas. Une procédure pour régler cette difficulté est expliquée dans la partie « [Comment réparer les erreurs *bad magic number in superblock*](https://docs.ovh.com/fr/vps/repartitionner-vps-suite-upgrade/#comment-reparer-les-erreurs-bad-magic-number-in-superblock) » de cette documentation ;
+
+- `/dev/vdb1 has unsupported feature(s): metadata_csum` suivi de `e2fsck: Get a newer version of e2fsck!` : mettez à jour e2fsck. Si la dernière version n'est pas disponible via `apt` (ou autre package manager), vous devrez la compiler depuis les sources.
+
+La liste ci-dessus n'est pas exhaustive.
 
 ### Ouvrir l’application fdisk
 
@@ -191,7 +196,7 @@ none 100M 0 100M 0% /run/user
 
 Vous trouverez la nouvelle taille de la partition en dessous de `size`.
 
-### Comment réparer les erreurs *bad magic number in superblock*?
+### Comment réparer les erreurs *bad magic number in superblock* ?
 
 Si la commande `e2fsck`{.action} vous retourne le message d’erreur `bad magic number in superblock`, vous devrez vérifier et réparer le filesystem en prenant un superblock de sauvegarde. Afin de voir les superblocks de sauvegarde disponibles, veuillez entrer la commande suivante :
 
