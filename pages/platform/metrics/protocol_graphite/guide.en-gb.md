@@ -1,15 +1,16 @@
 ---
-title: Use Graphite
+title: 'Use Graphite'
 slug: protocol-graphite
-excerpt: Get an overview on how to use Graphite for Metrics
+excerpt: 'Get an overview on how to use Graphite for Metrics'
 section: Protocol
 order: 2
 ---
+
 **Last updated 15th May, 2018**
 
 ## Objective
 
-[Graphite](https://graphiteapp.org/){.external} is the first Time Series platform with basic analytics capabilities. In this guide, you will learn how to use Graphite protocol with Metrics.
+[Graphite](https://graphiteapp.org/){.external} is the first Time Series platform with analytics capabilities. In this guide, you will learn how to use Graphite protocol with Metrics.
 
 ## Requirements
 
@@ -26,9 +27,9 @@ We are currently supporting this calls:
 |Method|Supported call|limitation|
 |---|---|---|
 |GET|/render|This path does not support pictures generation|
-|GET|/metrics||
-|GET|/metrics/find||
-|GET|/metrics/index.json||
+|GET|/metrics| |
+|GET|/metrics/find| |
+|GET|/metrics/index.json| |
 
 ### Data Model
 Graphite's data model uses a dot-separated format that describes a metric name, e.g. :
@@ -65,8 +66,8 @@ curl 'https://metrics:TOKEN_READ@graphite.gra1.metrics.ovh.net/render?target=max
 
 To authenticate requests basic auth is used. You must fill the basic auth password with the read token available in your OVH Metrics Data Platform manager.
 
-## Going further
+## Go further
 
 You can learn how to configure a Grafana Graphite source by following [this guide](../start-grafana).
 
-You can also exchange with our community of users on [https://community.ovh.com](https://community.ovh.com){.external}.
+Join our community of users on <https://community.ovh.com/en/>.
