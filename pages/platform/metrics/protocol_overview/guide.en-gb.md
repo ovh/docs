@@ -1,7 +1,7 @@
 ---
-title: Overview of supported protocols
+title: 'Overview of supported protocols'
 slug: protocol-overview
-excerpt: Get an overview on supported protocols for Metrics
+excerpt: 'Get an overview on supported protocols for Metrics'
 section: Protocol
 order: 1
 ---
@@ -13,21 +13,23 @@ order: 1
 > [!primary]
 > 
 > Metrics is protocol agnostic, it means that you can push your data with OpenTSDB, and query it with Warp10 or vice versa.
+>
 > Metrics doesn't enforce you to a proprietary protocol. Instead, we believe the plurality of existing protocols from Open Source solutions can be used to achieve Pushing and Querying the platform.
 >
 
 ### Supported protocols
+
 Each protocol provides different capabilities. Some will be easier than others but may have less features. We've tried to summary them with this simple table :
 
 |Protocol|Push|Query|Protocol documentation|Features|Corresponding Open Source project|
 |---|---|---|---|---|---|
-|Graphite|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics Graphite](#graphite_desc)|<i class="fas fa-star"></i>|[http://graphiteapp.org/](http://graphiteapp.org/){.external}|
-|InfluxDB|<i class="fas fa-check"></i>|<i class="fas fa-times"></i>|[Metrics Influx](#influx_desc)|<i class="fas fa-star"></i>|[https://github.com/influxdata/influxdb](https://github.com/influxdata/influxdb){.external}|
-|Metrics2.0|<i class="fas fa-check"></i>|<i class="fas fa-times"></i>|[Metrics 2.0 spec](#opentsdb_desc)|<i class="fas fa-star"><i class="fas fa-star">|[http://metrics20.org/](http://metrics20.org/){.external}|
-|OpentSDB|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics OpenTSDB](#opentsdb_desc)|<i class="fas fa-star"><i class="fas fa-star">|[http://opentsdb.net/](http://opentsdb.net/){.external}|
-|Prometheus|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics Prometheus](#prom_desc)|<i class="fas fa-star"></i><i class="fas fa-star"></i>|[https://prometheus.io/](https://prometheus.io/){.external}|
-|SQL|<i class="fas fa-times"></i>|<i class="fas fa-times"></i>|[Metrics SQL](#sql_desc)|||
-|Warp10|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics Warp10](#warp_desc)|<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>|[http://www.warp10.io/](http://www.warp10.io/){.external}|
+|InfluxDB|<i class="fas fa-check"></i>|<i class="fas fa-times"></i>|[Metrics Influx](../protocol-influxdb)|<i class="fas fa-star"></i>|[https://github.com/influxdata/influxdb](https://github.com/influxdata/influxdb){.external}|
+|OpentSDB|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics OpenTSDB](../protocol-opentsdb)|<i class="fas fa-star"><i class="fas fa-star">|[http://opentsdb.net/](http://opentsdb.net/){.external}|
+|Graphite|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics Graphite](../protocol-graphite)|<i class="fas fa-star"><i class="fas fa-star"></i>|[http://graphiteapp.org/](http://graphiteapp.org/){.external}|
+|Metrics2.0|<i class="fas fa-check"></i>|<i class="fas fa-times"></i>|[Metrics 2.0 spec](../protocol-opentsdb)|<i class="fas fa-star"><i class="fas fa-star">|[http://metrics20.org/](http://metrics20.org/){.external}|
+|Prometheus|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics Prometheus](../protocol-prometheus)|<i class="fas fa-star"></i><i class="fas fa-star"></i>|[https://prometheus.io/](https://prometheus.io/){.external}|
+|SQL|<i class="fas fa-times"></i>|<i class="fas fa-times"></i>|Metrics SQL - Not implemented yet| | |
+|Warp10|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics Warp10](../protocol-warp10)|<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>|[http://www.warp10.io/](http://www.warp10.io/){.external}|
 
 Most of the protocols don't include **authentification**, so **you need to add the tokens in the Basic Auth field.**
 

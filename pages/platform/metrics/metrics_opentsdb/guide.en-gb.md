@@ -1,10 +1,11 @@
 ---
-title: Push and vizualize your first datapoints with OpenTSDB
+title: 'Push and vizualize your first datapoints with OpenTSDB'
 slug: start-opentsdb
-excerpt: Push and query your first datapoints
-section: Getting started
+excerpt: 'Push and query your first datapoints'
+section: 'Getting started'
 order: 3
 ---
+
 **Last updated 15th May, 2018**
 
 ## Objective
@@ -22,7 +23,7 @@ OpenTSDB is a Scalable Time Series Database design to store and serve massive am
 
 ### Create a JSON to push data
 
-> > The full documentation is available at http://opentsdb.net/docs/build/html/api_http/put.html. As an example you can push single point.
+> The full documentation is available at <http://opentsdb.net/docs/build/html/api_http/put.html>. As an example you can push single point.
 
 OpenTSDB is accepting a JSON containing the datapoints. Here's an example:
 
@@ -261,6 +262,8 @@ curl -H 'X-Warp10-Token: WRITE_TOKEN' \
 
 Once you delete data in metrics, you will not be able to retrieve them. Be careful with this command. It will also not reduced your current count of daily points pushed.
 
-## Going further
+## Go further
 
-You can exchange with our community of users on [https://community.ovh.com](https://community.ovh.com).
+To learn more about pushing and querying with OpenTSDB, you can follow our protocol guide [use OpenTSDB](../protocol-opentsdb).
+
+Join our community of users on <https://community.ovh.com/en/>.

@@ -1,10 +1,11 @@
 ---
-title: A tour of Metrics manager
+title: 'A tour of Metrics manager'
 slug: manager
-excerpt: Manage your Metrics Project
-section: Getting started
+excerpt: 'Manage your Metrics Project'
+section: 'Getting started'
 order: 2
 ---
+
 **Last updated 15th May, 2018**
 
 To access your manager, your first need to order a Metrics product.
@@ -55,3 +56,9 @@ Metrics is protocol agnostic. It means you can push with one protocols, and quer
 [Click here, to learn how to used the supported protocols with metrics and their corresponding endpoints](../protocol-overview).
 
 ![tokens](images/platforms.png){.thumbnail}
+
+## Go further
+
+To push your first points and query them with OpentSDQB and Grafana, we invite you to follow our guide to [Push and vizualize your first datapoints with OpenTSDB](../start-opentsdb).
+
+Join our community of users on <https://community.ovh.com/en/>.

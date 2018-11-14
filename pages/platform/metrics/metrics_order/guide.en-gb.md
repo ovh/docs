@@ -1,8 +1,8 @@
 ---
-title: Order your Metrics project
+title: 'Order your Metrics project'
 slug: order
-excerpt: Order a Metrics account
-section: Getting started
+excerpt: 'Order a Metrics account'
+section: 'Getting started'
 order: 1
 ---
 
@@ -84,6 +84,10 @@ If you don't want to push your data by yourself, you can use a software that wil
 - [Snap](http://snap-telemetry.io/){.external}
 - [Collectd](https://collectd.org/){.external}
 
-## Going further
+## Go further
 
-To push your first points and query them with Grafana, we invite you to follow our guide to [Push and vizualize your first datapoints with OpenTSDB](../start-opentsdb) or exchange with our community of users on [https://community.ovh.com](https://community.ovh.com){.external}.
+To have an overview of our Manager, you can now read our [A tour of Metrics manager guide](../manager).
+
+Otherwise to skip it and push your first points and query them with OpentSDQB and Grafana, we invite you to follow our guide to [Push and vizualize your first datapoints with OpenTSDB](../start-opentsdb). 
+
+Join our community of users on <https://community.ovh.com/en/>.

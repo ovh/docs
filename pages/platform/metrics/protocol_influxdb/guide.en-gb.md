@@ -1,7 +1,7 @@
 ---
-title: Use InfluxDB
+title: 'Use InfluxDB'
 slug: protocol-influxdb
-excerpt: Get an overview on how to use InfluxDB for Metrics
+excerpt: 'Get an overview on how to use InfluxDB for Metrics'
 section: Protocol
 order: 4
 ---
@@ -10,7 +10,7 @@ order: 4
 
 ## Objective
 
-InfluxDB is a proprietary time series database that integrates with [Telegraf](https://github.com/influxdata/telegraf){.external}. In this guide, you will learn how to push Graphite protocol with Metrics.
+InfluxDB is a proprietary time series database that integrates with [Telegraf](https://github.com/influxdata/telegraf){.external}. In this guide, you will learn how to push using the Influx protocol with Metrics.
 
 ## Requirements
 
@@ -66,8 +66,8 @@ InfluxDB has its own Query DSL, that mimics SQL without being plain ANSI SQL.
 
 Metrics currently doesn't support Influx Query Language.
 
-## Going further
+## Go further
 
 You can learn how to configure a Grafana  datasource by following [this guide](../start-grafana).
 
-You can also exchange with our community of users on [https://community.ovh.com](https://community.ovh.com){.external}.
+Join our community of users on <https://community.ovh.com/en/>.

@@ -1,9 +1,9 @@
 ---
-title: Overview of Metrics
+title: 'Overview of Metrics'
 slug: overview
-excerpt: Discover the Metrics Data Platform and why you need it
-section: Metrics services
-order: 2
+excerpt: 'Discover the Metrics Data Platform and why you need it'
+section: 'Metrics services'
+order: 1
 ---
 
 **Last updated 15th May, 2018**
@@ -75,6 +75,13 @@ But given your experience or use case, they are corner cases where you could nee
 
 
 ## Can I combine both Cloud and Live?
+
 Sure! Metrics Live is **extensively used inside OVH**, however every team needs Metrics Cloud for long term storage, capacity planning purpose, user facing metrics, root cause analysis, late observations, machine learning analysis and deep learning model training.
 
 We provide tools to **automatically connect Metrics Live to Metrics Cloud** so that you only have to push data to your Metrics Live endpoint.
+
+## Go further
+
+In this section, you can also discover our guide to [connect an IoT Device to metrics](../iot-devices).
+
+Join our community of users on <https://community.ovh.com/en/>.

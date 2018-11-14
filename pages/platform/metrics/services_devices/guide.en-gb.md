@@ -1,9 +1,9 @@
 ---
-title: Connect an IoT Device
+title: 'Connect an IoT Device'
 slug: iot-devices
-excerpt: How to use Metrics with a connected IoT device
-section: Metrics services
-order: 1
+excerpt: 'How to use Metrics with a connected IoT device'
+section: 'Metrics services'
+order: 2
 ---
 
 **Last updated 15th May, 2018**
@@ -90,3 +90,7 @@ Save your backend, and you're good to go!
 ![Step4 - Save the integration backend and associate it with devices](images/OVH-PilotThings-Step4.png){.thumbnail}
 
 Continue to next section : [](../start_analytics/guide.en-gb.md){.ref}.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
