@@ -1,11 +1,11 @@
 ---
-title: Połączenie za pomocą protokołu STFP
+title: 'Połączenie za pomocą protokołu STFP'
 slug: polaczenie_przez_sftp
-excerpt: Dowiedz się, jak połączyć się z usługą Private Cloud za pomocą protokołu SFTP
-section: Pierwsze kroki
+excerpt: 'Dowiedz się, jak połączyć się z usługą Private Cloud za pomocą protokołu SFTP'
+section: 'Pierwsze kroki'
 ---
 
-**Ostatnia aktualizacja dnia 2018-01-02**
+**Ostatnia aktualizacja dnia 2018-11-14**
 
 ## Wprowadzenie
 
@@ -68,7 +68,7 @@ W celu przesłania plików z urządzenia lokalnego do zasobu dyskowego (datastor
 
 
 ```sh
-sftp> put /home/ubuntu-11.10-desktop-i386-fr.iso to
+sftp> put /home/ubuntu-11.10-desktop-i386-fr.iso
 /datastore/pcc-000714/ubuntu-11.10-desktop-i386-fr.iso
 ```
 
