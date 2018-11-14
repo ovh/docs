@@ -126,7 +126,7 @@ Un formulaire vous demandera de renseigner les éléments suivants :
 * « Label » : la colonne de votre jeu de données à sélectionner en tant que label pour l'apprentissage. Dans notre cas, le label à prédire concerne la tranche de revenus de l'individu qui se trouve dans la dernière colonne (14) de notre tableau de données ;
 * « Specify Columns » : Si oui, permet de filter sur quelles colonnes le preprocessing sera effectuées
 * « Problem Type » : le type d'apprentissage à réaliser (classification ou régression).
-* « K Fold » : Nombre selon lequel sera divisé le dataset pour la cross validation
+* « K Fold » : Nombre de calculs de validation
 
 Renseignez le formulaire comme suit, puis continuez en cliquant sur `Start`{.action}.
 
@@ -146,7 +146,7 @@ La phase d'optimisation consiste à trouver l'algorithme, ainsi que les hyperpar
 
 Pour ce faire, le système démarre plusieurs entraînements avec différents algorithmes et hyperparamètres sur plusieurs sous-ensembles de notre jeu de données (aussi appelés « k-fold »). Les résultats de ces entraînements sont ensuite agrégés par le système afin de sélectionner les hyperparamètres les plus pertinents à tester pour les prochaines itérations.
 
-Cette phase d'optimisation possède un nombre d'itération initial renseigné par l'utilisateur. Elle ne s'arrête pas tant que ne le nombre d'itération n'est pas atteint.
+Cette phase d'optimisation possède un nombre d'itération initial renseigné par l'utilisateur. Elle ne s'arrête pas tant que le nombre d'itération n'est pas atteint.
 
 
 **1 entraînement = 1 unité de budget**
@@ -157,7 +157,7 @@ Afin de lancer une optimisation sur notre *dataset*, il suffit dans un premier t
 
 Le lancement d'une optimisation se fait ensuite via le bouton `Optimize`{.action}. Cette action vous demandera de renseigner les éléments suivants :
 
-* « Iteration » : Nombre d'itération pour cette tâche.
+* « Iteration » : Nombre d'entrainements pour cette tâche.
 * « Scoring Metric » : la valeur d'optimisation qui sera utilisée par l'algorithme afin d'évaluer la performance de ses résultats. Les valeurs possibles sont des indicateurs connus tels que l'Accuracy, le F1 Score ou le ROC AUC ;
 
 Choisissez le nombre d'itération que vous voulez et laissez tous les autres paramètres par défaut. Démarrez ensuite l'optimisation.
