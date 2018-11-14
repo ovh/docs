@@ -5,7 +5,7 @@ excerpt: 'Learn how to log in to your Private Cloud via SFTP'
 section: 'Getting started'
 ---
 
-**Last updated 19/10/2018**
+**Last updated 14/11/2018**
 
 ## Objective
 
@@ -68,7 +68,7 @@ sftp> pcc-000714
 Use the `put` command to export files from your datastore to your local mail.
 
 ```sh
-sftp> put /home/ubuntu-16.04.3-server-amd64.iso put
+sftp> put /home/ubuntu-16.04.3-server-amd64.iso
 /datastore/pcc-000714/ubuntu-16.04.3-server-amd64.iso  
 ```
 
