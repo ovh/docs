@@ -2,7 +2,7 @@
 title: 'Przywracanie plików z kopii zapasowej OVH'
 slug: hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla
 excerpt: 'Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu'
-section: 'FTP i SSH - zdalny dostęp'
+section: 'FTP i SSH'
 ---
 
 **Ostatnia aktualizacja dnia 24-09-2018**

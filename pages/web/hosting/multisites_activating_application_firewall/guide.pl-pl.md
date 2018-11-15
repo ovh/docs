@@ -1,11 +1,10 @@
 ---
-title: 'Hosting www: Aktywacja zapory systemowej'
+title: 'Aktywacja zapory systemowej'
 excerpt: 'Hosting www: Aktywacja zapory systemowej'
 id: '1937'
 slug: hosting_www_aktywacja_zapory_systemowej
-section: Optymalizacja strony WWW
+section: 'Optymalizacja strony WWW'
 ---
-
 
 ## 
 Ten dodatkowy moduł Apache'a filtruje wszystkie zapytania wchodzące na serwery www. Ze względów bezpieczeństwa moduł ten sprawdza zapytania zanim zostaną one przetworzone przez skrypty. 

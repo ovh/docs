@@ -1,11 +1,10 @@
 ---
-title: 'Hosting www: Postępowanie w przypadku błędu 500 Internal Server Error'
-excerpt: Postępowanie w przypadku błędu 500 Internal Server Error
+title: 'Postępowanie w przypadku błędu 500 Internal Server Error'
+excerpt: 'Dowiedz się, jak przeprowadzić diagnopstykę w przypadku błędu 500 Internal Server Error'
 id: '1987'
 slug: hosting_www_postepowanie_w_przypadku_bledu_500_internal_server_error
-section: Diagnostyka i bezpieczeństwo
+section: Diagnostyka
 ---
-
 
 ## .htaccess
 Jeśli składnia pliku .htaccess jest nieprawidłowa, serwer www wyświetli błąd 500. Należy zmienić nazwę pliku .htaccess na przykład na .htaccess_bak. Jeśli strona zacznie działać, przyczyną błędu jest plik .htaccess.

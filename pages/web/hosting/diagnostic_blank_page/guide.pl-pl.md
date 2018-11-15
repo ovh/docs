@@ -1,10 +1,9 @@
 ---
-title: 'Hosting www: jak sprawdzić przyczynę wyświetlania się białej strony?'
-excerpt: W przewodniku tym znajdziesz pomoc dotyczącą diagnozowania przyczyn wyświetlania się białej strony.
+title: 'Przyczyny wyświetlania się "białej strony"'
+excerpt: 'W przewodniku tym znajdziesz pomoc dotyczącą diagnozowania przyczyn wyświetlania się białej strony.'
 slug: hosting_www_jak_sprawdzic_przyczyne_wyswietlania_sie_bialej_strony
-section: Diagnostyka i bezpieczeństwo
+section: Diagnostyka
 ---
-
 
 ## Informacje ogólne
 Dlaczego na mojej stronie pojawia się biała strona?

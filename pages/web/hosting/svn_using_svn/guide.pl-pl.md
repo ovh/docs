@@ -1,9 +1,8 @@
 ---
-title: 'Hosting www: Korzystanie z SVN'
+title: 'Korzystanie z SVN na hostingu'
 slug: hosting_www_korzystanie_z_svn
-section: FTP i SSH - zdalny dostęp
+section: 'FTP i SSH'
 ---
-
 
 ## 
 

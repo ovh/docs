@@ -1,11 +1,9 @@
 ---
-title: 'Hosting www: Automatyczne zadania / Cron'
-excerpt: 'Hosting www: Automatyczne zadania / Cron'
-id: '1990'
+title: 'Automatyczne zadania / Cron'
+excerpt: 'Automatyczne zadania / Cron'
 slug: hosting_www_automatyczne_zadania_cron
-section: CRON -  automatyzacja zadań
+section: 'CRON -  automatyzacja zadań'
 ---
-
 
 ## Dodawanie automatycznych zadań
 Wybierz swój hosting w kolumnie z lewej strony (1), kliknij na zakładkę "Plus +", wybierz "Planowanie zadań - Cron" (2) i kliknij na "Dodaj zadanie" (3).

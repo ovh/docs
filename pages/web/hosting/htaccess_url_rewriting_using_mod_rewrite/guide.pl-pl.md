@@ -1,11 +1,10 @@
 ---
-title: 'Hosting www: .htaccess - Generowanie adresów za pomocą mod_rewrite'
-excerpt: Mod_rewrite jest dostępny na wszystkich hostingach www OVH (z wyjątkiem 20gp).
+title: 'Generowanie adresów za pomocą mod_rewrite w pliku .htaccess'
+excerpt: 'Mod_rewrite jest dostępny na wszystkich hostingach www OVH (z wyjątkiem 20gp).'
 id: '1971'
 slug: hosting_www_htaccess_-_generowanie_adresow_za_pomoca_mod_rewrite
-section: Przekierowania i uprawnienia dostępu
+section: 'Przekierowania i uprawnienia dostępu'
 ---
-
 
 ## Przekierowanie proste
 

@@ -1,13 +1,10 @@
 ---
 title: 'Włamanie na stronę z modułem WordPress: porady i przykłady zastosowania'
 excerpt: ''
-id: '1874'
 slug: wlamanie_na_strone_z_modulem_wordpress_porady_i_przyklady_zastosowania
-section: Diagnostyka i bezpieczeństwo
+section: Diagnostyka
 ---
 
-
-## 
 Dysponujesz stroną opartą o moduł Wordpress w OVH i zauważyłeś, że Twoja strona się nie wyświetla, że przekierowuje na inną stronę lub że jest wypełniona reklamami. 
 
 OVH nie zapewnia pomocy w zakresie korzystania z produktu Wordpress. Możemy jednak wskazać kroki do podjęcia w przypadku włamania.
@@ -39,7 +36,6 @@ Najpierw należy się dowiedzieć, kiedy doszło do włamania, aby sprawdzić, c
 W dalszej części przewodnika będziemy lokalizować włamanie i sprawdzać 2 możliwe przypadki.
 
 
-## 
 Przed przywróceniem danych trzeba sprawdzić datę ostatnich zmian na plikach www (FTP). Pozwoli to na odszukanie i naprawienie luk w bezpieczeństwie.
 Nie ma szczegółowej procedury pozwalającej na zlokalizowanie przyczyny włamania. Przedstawiamy natomiast ogólną procedurę opierającą się na fakcie, że przyczyną włamania jest luka w skrypcie i że włamywacz dokonał włamania przy użyciu zapytania HTTP. 
 

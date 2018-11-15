@@ -1,11 +1,9 @@
 ---
-title: Instalacja oprogramowania "Composer" na hostingu www
-excerpt: Instalacja oprogramowania "Composer" na hostingu www
-id: '1894'
+title: 'Instalacja oprogramowania "Composer" na hostingu'
+excerpt: 'Instalacja oprogramowania "Composer" na hostingu www'
 slug: instalacja_oprogramowania_composer_na_hostingu_www
 section: Composer
 ---
-
 
 ## Wstępne wymagania
 "Composer" może byc instalowany na hostingu www od oferty Pro. Należy dysponować dostępem przez SSH, ponieważ jest to narzędzie działające z linii poleceń.
