@@ -1,11 +1,10 @@
 ---
-title: 'Usługi www: Zarządzanie hasłami i dostęp do nich'
-excerpt: 'Usługi www: Zarządzanie hasłami i dostęp do nich'
+title: 'Dostęp do usług i zarządzanie hasłami'
+excerpt: 'Dostęp do usług i zarządzanie hasłami'
 id: '1909'
 slug: uslugi_www_zarzadzanie_haslami_i_dostep_do_nich
-section: Pierwsze kroki
+section: 'Pierwsze kroki'
 ---
-
 
 ## Dostęp do panelu manager OVH
 Chodzi o hasło przypisane do identyfikatora klienta* OVH. Identyfikator ma formę blue]"ab12345-ovh". Jest on generowany automatycznie podczas rejestracji na stronie 

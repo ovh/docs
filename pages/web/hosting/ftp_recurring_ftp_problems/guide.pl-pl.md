@@ -1,9 +1,9 @@
 ---
-title: 'Hosting www: Częste problemy FTP'
+title: 'Częste problemy z FTP'
 slug: hosting_www_czeste_problemy_ftp
 excerpt: 'Hosting www: Częste problemy FTP'
 id: '1996'
-section: 'FTP i SSH - zdalny dostęp'
+section: 'FTP i SSH'
 ---
 
 ## Przeniosłem pliki za pomocą programu FTP, ale strona się nie wyświetla.

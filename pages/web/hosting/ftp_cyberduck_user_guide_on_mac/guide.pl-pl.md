@@ -1,11 +1,10 @@
 ---
-title: 'Hosting www: przewodnik dotyczący korzystania z programu Cyberduck (MAC)'
-excerpt: Przewodnik dotyczący korzystania z programu Cyberduck (MAC)
+title: 'Przewodnik dotyczący korzystania z programu Cyberduck (MAC)'
+excerpt: 'Przewodnik dotyczący korzystania z programu Cyberduck (MAC)'
 id: '1598'
 slug: hosting_www_przewodnik_dotyczacy_korzystania_z_programu_cyberduck_mac
-section: FTP i SSH - zdalny dostęp
+section: 'FTP i SSH'
 ---
-
 
 ## Wprowadzenie
 Cyberduck to aplikacja dostępna dla systemu MAC. 

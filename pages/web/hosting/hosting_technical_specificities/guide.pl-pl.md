@@ -1,11 +1,10 @@
 ---
-title: 'Hosting www: Informacje techniczne związane z hostingiem www'
-excerpt: Przewodnik dotyczący informacji technicznych związanych z hostingiem www.
+title: 'Informacje techniczne związane z hostingiem WWW'
+excerpt: 'Przewodnik dotyczący informacji technicznych związanych z hostingiem www.'
 id: '1463'
 slug: hosting_www_informacje_techniczne_zwiazane_z_hostingiem_www
-section: Pierwsze kroki
+section: 'Pierwsze kroki'
 ---
-
 
 ## Program FTP - Pasywny
 Możesz zaktualizować swój program FTP w ten sposób:

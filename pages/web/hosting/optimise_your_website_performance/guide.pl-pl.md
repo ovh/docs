@@ -1,10 +1,9 @@
 ---
-title: 'Hosting www: przewodnik dotyczący optymalizacji wydajności strony'
-excerpt: Przewodnik o optymalizowaniu wydajności strony
+title: 'Optymalizacja wydajności strony'
+excerpt: 'Przewodnik o optymalizowaniu wydajności strony'
 slug: hosting_www_przewodnik_dotyczacy_optymalizacji_wydajnosci_strony
-section: Przekierowania i uprawnienia dostępu
+section: 'Przekierowania i uprawnienia dostępu'
 ---
-
 
 ## Informacje ogólne
 

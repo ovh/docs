@@ -1,11 +1,10 @@
 ---
-title: 'Hosting www: przewodnik dotyczący korzystania z programu FileZilla'
+title: 'Przewodnik dotyczący korzystania z programu FileZilla'
 excerpt: 'Przewodnik ten wyjaśnia, w jaki sposób korzystać z programu FileZilla.'
 id: '1380'
 slug: hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla
-section: FTP i SSH - zdalny dostęp
+section: 'FTP i SSH'
 ---
-
 
 ## Prezentacja
 FileZilla to program dostępny dla kilku systemów operacyjnych (Windows, MacOS, itp).

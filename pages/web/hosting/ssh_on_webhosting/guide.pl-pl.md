@@ -1,11 +1,10 @@
 ---
-title: 'Hosting www: SSH na hostingu'
+title: 'Dostęp przez SSH na hostingu'
 excerpt: 'Hosting www: SSH na hostingu'
 id: '1962'
 slug: hosting_www_ssh_na_hostingu
-section: FTP i SSH - zdalny dostęp
+section: 'FTP i SSH'
 ---
-
 
 ## Czy jest SSH i jak korzystać z tej funkcjonalności?
 Z SSH na hostingu www można korzystać od oferty Pro (w przypadku starych ofert od hostingu z gamy plan).

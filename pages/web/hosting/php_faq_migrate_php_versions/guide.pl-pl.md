@@ -1,11 +1,10 @@
 ---
-title: 'Hosting www: FAQ - Migracja na najnowsze wersje PHP'
+title: 'FAQ - Migracja na najnowsze wersje PHP'
 excerpt: 'Hosting www: FAQ - Migracja na najnowsze wersje PHP'
 id: '1758'
 slug: hosting_www_faq_-_migracja_na_najnowsze_wersje_php
 section: PHP
 ---
-
 
 ## Informacje związane z PHP
 Czym jest PHP?

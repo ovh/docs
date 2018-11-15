@@ -1,11 +1,10 @@
 ---
-title: 'Hosting www: Konfiguracja wersji PHP w panelu klienta'
-excerpt: Konfiguracja wersji PHP w panelu klienta
+title: 'Konfiguracja wersji PHP w Panelu klienta'
+excerpt: 'Konfiguracja wersji PHP w panelu klienta'
 id: '1999'
 slug: hosting_www_konfiguracja_wersji_php_w_panelu_klienta
 section: PHP
 ---
-
 
 ## Informacje związane z PHP
 

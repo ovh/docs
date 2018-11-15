@@ -1,11 +1,10 @@
 ---
-title: 'Hosting www: Plik .htaccess'
-excerpt: Na stronie tej przedstawiamy przewodniki dotyczące pliku .htaccess.
+title: 'Plik .htaccess na hostingu'
+excerpt: 'Na stronie tej przedstawiamy przewodniki dotyczące pliku .htaccess.'
 id: '1967'
 slug: hosting_www_plik_htaccess
-section: Przekierowania i uprawnienia dostępu
+section: 'Przekierowania i uprawnienia dostępu'
 ---
-
 
 ## Jak zabezpieczyć dostęp do katalogu za pomocą hasła?
 
