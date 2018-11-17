@@ -24,7 +24,7 @@ Each protocol provides different capabilities. Some will be easier than others b
 |Protocol|Push|Query|Protocol documentation|Features|Corresponding Open Source project|
 |---|---|---|---|---|---|
 |InfluxDB|<i class="fas fa-check"></i>|<i class="fas fa-times"></i>|[Metrics Influx](../protocol-influxdb)|<i class="fas fa-star"></i>|[https://github.com/influxdata/influxdb](https://github.com/influxdata/influxdb){.external}|
-|OpentSDB|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics OpenTSDB](../protocol-opentsdb)|<i class="fas fa-star"><i class="fas fa-star">|[http://opentsdb.net/](http://opentsdb.net/){.external}|
+|OpenTSDB|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics OpenTSDB](../protocol-opentsdb)|<i class="fas fa-star"><i class="fas fa-star">|[http://opentsdb.net/](http://opentsdb.net/){.external}|
 |Graphite|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics Graphite](../protocol-graphite)|<i class="fas fa-star"><i class="fas fa-star"></i>|[http://graphiteapp.org/](http://graphiteapp.org/){.external}|
 |Metrics2.0|<i class="fas fa-check"></i>|<i class="fas fa-times"></i>|[Metrics 2.0 spec](../protocol-opentsdb)|<i class="fas fa-star"><i class="fas fa-star">|[http://metrics20.org/](http://metrics20.org/){.external}|
 |Prometheus|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics Prometheus](../protocol-prometheus)|<i class="fas fa-star"></i><i class="fas fa-star"></i>|[https://prometheus.io/](https://prometheus.io/){.external}|
