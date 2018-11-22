@@ -5,7 +5,7 @@ excerpt: 'Learn here how to choose a disk group to install your operating system
 section: 'Advanced use'
 ---
 
-**Last updated 13th June 2018**
+**Last updated 22nd November 2018**
 
 ## Objective
 
@@ -54,19 +54,12 @@ Go to the following API call:
 > @api {GET} /dedicated/server/{serviceName}/specifications/hardware
 > 
 
-Enter the name of your server in the **serviceName** field, and click the `Execute`{.action} button. You will then see your server's hardware information as shown below:
+Enter the name of your server in the **serviceName** field, and click the `Execute`{.action} button. You will then see your server's hardware information.
+Note down the diskGroupId, which you will find in diskGroups.
 
-![Hybrid](images/hybrid.png){.thumbnail}
+By default, the operating system is installed on the diskGroupId 1.
 
-What we are interested in here is the diskGroupId, which you will find in diskGroups.
-
-On a Hybrid Server, SSD disks are mostly placed in second. So, the diskGroupId will be 2.
-
-> [!primary]
->
-> By default, the operating system is installed on the diskGroupId 1.
-> 
-
+![Hybrid](images/hybrid-01.png){.thumbnail}
 
 ### Step 4: Start the installation.
 
