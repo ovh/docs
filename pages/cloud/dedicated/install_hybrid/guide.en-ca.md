@@ -5,17 +5,17 @@ excerpt: 'Learn here how to choose a disk group to install your operating system
 section: 'Advanced use'
 ---
 
-**Last updated 23/11/2018**
+**Last updated 2018/11/23**
 
 ## Objective
 
-OVH offers some [Dedicated Servers](https://www.ovh.com.au/dedicated-servers/){.external} that have one SATA disk group, and one SSD disk group. We call these "Hybrid Servers".
+OVH offers some [Dedicated Servers](https://www.ovh.com/ca/en/dedicated-servers/){.external} that have one SATA disk group, and one SSD disk group. We call these "Hybrid Servers".
 
 **This guide will show you how to specify the disk group on which to install the server's operating system.**
 
 ## Requirements
 
-* an [OVH Hybrid Server](https://www.ovh.com.au/dedicated-servers/){.external}
+* an [OVH Hybrid Server](https://www.ovh.com/ca/en/dedicated-servers/){.external}
 * access to the [OVH API](https://ca.api.ovh.com/console/){.external}
 * access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
