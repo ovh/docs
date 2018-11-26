@@ -120,3 +120,4 @@ In order to simplify the development of your applications, OVH provides you with
 - *PHP*: <https://github.com/ovh/php-ovh>
 - *Node.js*: <https://github.com/ovh/node-ovh>
 - *Swift*: <https://github.com/ovh/swift-ovh>
+- *C#*: <https://github.com/ovh/csharp-ovh>
