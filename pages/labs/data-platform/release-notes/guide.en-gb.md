@@ -1,9 +1,7 @@
-
-
 ---
-title: 'Release notes'
-excerpt: 'Release notes'
-section: 'Release notes'
+title: Release notes
+excerpt: Release notes
+section: Release notes
 ---
 
 This page documents updates to Analytics Data Platform.
