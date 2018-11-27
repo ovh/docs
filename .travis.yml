@@ -1,0 +1,17 @@
+language: python
+python:
+  - "3.6"
+install:
+# using wget + unzip as it is faster than git
+  - wget https://github.com/ovh/docs-developer-env/archive/master.zip -O master.zip
+  - unzip master.zip
+  - mv docs-developer-env-master docs-developer-env
+  - wget https://github.com/ovh/docs-rendering/archive/master.zip -O master.zip
+  - unzip master.zip
+  - mv docs-rendering-master docs-rendering
+  - pip install -r docs-rendering/requirements.txt
+  - mkdir output
+
+# command to run tests
+script:
+  - cd docs-rendering && ${PELICAN:-pelican} --debug --settings pelicanconf.py --fatal errors ../pages
