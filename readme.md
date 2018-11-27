@@ -30,5 +30,3 @@ Please :
 ## Licensing
 
 When contributing you agree with terms of License used. You can find here in file [LICENSE](LICENSE).
-
-
