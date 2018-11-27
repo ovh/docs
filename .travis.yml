@@ -10,7 +10,6 @@ install:
   - unzip master.zip
   - mv docs-rendering-master docs-rendering
   - pip install -r docs-rendering/requirements.txt
-  - mkdir output
 
 # command to run tests
 script:
