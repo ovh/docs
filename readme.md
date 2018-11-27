@@ -1,6 +1,6 @@
 # OVH Documentation
 
-[![Build Status](https://travis-ci.org/ticapix/docs.svg?branch=develop)](https://travis-ci.org/ticapix/docs)
+[![Build Status](https://travis-ci.org/ovh/docs.svg?branch=develop)](https://travis-ci.org/ovh/docs)
 
 Here is all public documentation available about OVH products, in all languages. A good way to find answer to some "how to" questions about OVH products. 
 
