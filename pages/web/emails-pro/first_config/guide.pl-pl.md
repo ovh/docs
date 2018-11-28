@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro'
 section: 'Informacje ogólne'
 ---
 
-**Ostatnia aktualizacja z dnia 28-08-2018**
+**Ostatnia aktualizacja z dnia 28-11-2018**
 
 ## Wprowadzenie
 
@@ -83,16 +83,6 @@ W kolumnie `Diagnostyka`{.action} możesz sprawdzić konfigurację pól MX nazwy
 - **Jeśli wprowadziłeś nazwę domeny nieobsługiwanej przez OVH**: kliknij czerwony przycisk, aby wyświetlić listę modyfikacji do wprowadzania. Jeśli właśnie wprowadziłeś zmiany, mogą się one wyświetlić się w Panelu klienta po kilku godzinach.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
-
-Możesz również dodać opcjonalnie pole SRV do konfiguracji Twojej domeny. Powinno ono umożliwić programowi pocztowemu lub urządzeniu, takiemu jak _smartphone_ czy tablet automatyczne pobranie elementów koniecznych do skonfigurowania Twojego konta E-mail Pro (serwery, porty i protokoły bezpieczeństwa).
-
-Jeśli nie chcesz korzystać z tej możliwości, przejdź od razu do etapu nr 4. W przeciwnym razie dodaj pole SRV w interfejsie dostawcy zarządzającego konfiguracją DNS Twojej domeny. Jeśli jest nim OVH, postępuj zgodnie z instrukcjami podanymi w naszej dokumentacji [Edycja strefy DNS OVH](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}. Użyj poniższych elementów:
-
-|Domena|Typ rekordu|Priorytet|Waga|Port|Adres docelowy|
-|---|---|---|---|---|---|
-|_autodiscover._tcp.*mypersonaldomain.ovh*_|SRV|0|0|443|autodiscover.mail.ovh.net.|
-
-Pamiętaj, żeby zastąpić ogólną informację „mypersonaldomain.ovh” nazwą Twojej domeny.
 
 ### Etap 4: konfiguracja i korzystanie z kont E-mail Pro
 

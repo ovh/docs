@@ -5,7 +5,7 @@ excerpt: 'Zjistěte, jak nakonfigurovat svou službu E-mail Pro'
 section: Obecné
 ---
 
-**Poslední aktualizace 24/08/2018**
+**Poslední aktualizace 28/11/2018**
 
 ## Cíl
 
@@ -83,16 +83,6 @@ Ve sloupci Diagnostika můžete po kliknutí na MX pole provádět konfiguraci M
 - **Pokud jste přidali externí doménu**: pro zobrazení úprav, které je zapotřebí provést, klikněte na červené políčko. Pokud jste požadované úpravy právě provedli, jejich zobrazení v Zákaznickém prostoru OVH může trvat několik hodin.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
-
-Do konfigurace své domény můžete rovněž přidat i SRV záznam. SRV záznam se používá pro definování adresy serveru, spravujícího nějakou službu. Příklad: tento záznam může definovat adresu SIP serveru, nebo adresu serveru umožňujícího automatickou konfiguraci e-mailového klienta (na základě principu autodiscover).
-
-Pokud si SRV záznam do konfigurace své domény nepřejete přidat, přejděte k další fázi příručky. V opačném případě SRV záznam vytvořte pomocí správcovského rozhraní své domény. Pokud je Vaše doména spravována společností OVH, postupujte podle instrukcí uvedených v následující dokumentaci: [Modifikace DNS zóny](https://docs.ovh.com/cz/cs/domains/modifikace-dns-zony/){.external}.
-
-|Doména|Typ záznamu|Priorita|Váha|Port|Cíl|
-|---|---|---|---|---|
-|_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
-
-Nezapomeňte za generický název domény „mypersonaldomain.ovh“ dosadit příslušnou doménou.
 
 ### Fáze 4: nastavení účtů služby E-mail Pro
 

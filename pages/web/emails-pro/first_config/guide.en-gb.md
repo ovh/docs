@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure your Email Pro solution'
 section: General
 ---
 
-**Last updated 7th September 2018**
+**Last updated 28th November 2018**
 
 ## Objective
 
@@ -83,16 +83,6 @@ You can use the `Diagnosis`{.action} column to check the domain name’s MX reco
 - **If you entered a non-OVH domain name:** click on the red box to view the changes you need to make. If you have just made the changes, they may take a few hours to show up on the OVH Control Panel.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
-
-You can also add an SRV record to your domain name’s configuration, but this is optional and not a requirement. You can use it to ensure that an email application or other device (e.g. a smartphone or tablet) can automatically retrieve the elements required to configure your Email Pro account (servers, ports and security protocols).
-
-If you do not want to add an SRV record, please skip this step and move on to step 4. Otherwise, you can add an SRV record using the interface given by the service provider managing your domain name’s DNS configuration. If your domain name’s DNS configuration is managed by OVH, please refer to our guide on [Editing an OVH DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external} using the information below:
-
-|Domain|Record type|Priority|Weight|Port|Target|
-|---|---|---|---|---|---|
-|_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
-
-Please remember to replace the generic example (mypersonaldomain.ovh) with your own domain name.
 
 ### Step 4: Configure the Email Pro accounts.
 

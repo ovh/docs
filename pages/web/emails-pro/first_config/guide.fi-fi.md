@@ -5,7 +5,7 @@ excerpt: 'Katso, kuinka E-mail Pro -ratkaisu konfiguroidaan. '
 section: Yleistä
 ---
 
-**Päivitetty 27.8.2018**
+**Päivitetty 28.11.2018**
 
 ## Tavoite
 
@@ -22,12 +22,11 @@ Olet hankkinut E-mail Pro -ratkaisun. Sen avulla saat käyttöösi yrityskäytt�
 
 ## Käytännössä
 
-### 1\. vaihe: Mene palvelusi hallintaan
+### 1. vaihe: Mene palvelusi hallintaan
 
 Kun E-mail Pro -palvelusi on luotu ja käytettävissä, voit hallita sitä [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 Kirjautuaksesi palveluun klikkaa kohtaa `E-mail Pro`{.action} vasemmassa reunassa olevassa valikossa, ja valitse sitten kyseinen palvelu.
-
  
 > [!primary]
 > 
@@ -35,7 +34,7 @@ Kirjautuaksesi palveluun klikkaa kohtaa `E-mail Pro`{.action} vasemmassa reunass
 >
 
 
-### 2\. vaihe: Verkkotunnuksen lisäys
+### 2. vaihe: Verkkotunnuksen lisäys
 
 Jos olet juuri tilannut E-mail Pro -palvelusi, avautuu eteesi automaattisesti ikkuna, jossa kehotetaan `Lisäämään verkkotunnus`{.action}.  Mikäli ikkuna ei avaudu, mene kuvakkeeseen `Liitetyt verkkotunnukset`{.action} ja klikkaa sitten painiketta `Lisää verkkotunnus`{.action}.
 
@@ -75,7 +74,7 @@ Klikkaa painiketta `Seuraava`{.action} jatkaaksesi verkkotunnuksen lisäykseen.
 
 Konfiguroinnin lopussa kehotamme tarkistamaan näkyvät tiedot ja klikkaamaan sitten painiketta `Vahvista`{.action} verkkotunnuksen lisäyksen käynnistämiseksi.
 
-### 3\. vaihe: Verkkotunnuksen konfigurointi
+### 3. vaihe: Verkkotunnuksen konfigurointi
 
 Kun verkkotunnus on lisätty liitettynä verkkotunnuksena, tarkista sen asetukset näkyviin tulevassa taulukossa.
 
@@ -86,17 +85,7 @@ Kun verkkotunnus on lisätty liitettynä verkkotunnuksena, tarkista sen asetukse
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
 
-Vaikka tämä on valinnaista, sinulla on lisäksi mahdollisuus lisätä SRV-kenttä verkkotunnuksesi konfiguraatioon. Tämän avulla sähköpostiohjelmisto tai muu laite, kuten _älypuhelin_ tai tabletti voi hakea automaattisesti E-mail Pro -tilisi konfiguraatioon tarvittavat elementit (palvelimet, portit ja tietoturvaprotokollat).
-
-Jos et halua hyödyntää tätä ominaisuutta, siirry suoraan seuraavaan vaiheeseen. Muussa tapauksessa lisää SRV-kenttä verkkotunnuksesi DNS-konfiguraatiota hallinnoivan palveluntarjoajan käyttöliittymässä. Jos kyseessä on OVH, katso dokumentaatiossa [“DNS-alueen muokkaus”](https://docs.ovh.com/fi/domains/miten_dns-aluetta_muokataan/){.external} kuvattuja ohjeita ja käytä alla olevia elementtejä:
-
-|Verkkotunnus|Tietueen tyyppi|Prioriteetti|Painoarvo|Portti|Kohde|
-|---|---|---|---|---|
-|\_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
-
-Muista korvata yleinen tieto “mypersonaldomain.ovh” omalla verkkotunnuksellasi.
-
-### 4\. vaihe: Konfiguroi E-mail Pro -tilit
+### 4. vaihe: Konfiguroi E-mail Pro -tilit
 
 Siirry sähköpostiosoitteiden konfiguroimiseksi kuvakkeeseen `Sähköpostitilit`{.action}. Taulu näyttää tilit, jotka olet tilannut muodossa “*@configureme.me*”.
 
@@ -121,10 +110,9 @@ Kun tiedot on täytetty, klikkaa painiketta `Seuraava`{.action}, tarkista näkyv
 > Tee tämä vaihe niin monta kertaa kuin on tarvetta, omistamiesi tilien lukumäärän mukaan. Voit tilata lisää tilejä painikkeesta `Tilaa tilejä`{.action}.
 >
 
-
 ![emailpro](images/first_config_email_pro_configure_email_accounts_step2.png){.thumbnail}
 
-### 5\. vaihe: Sähköpostiosoitteiden käyttö
+### 5. vaihe: Sähköpostiosoitteiden käyttö
 
 Kun tilisi on konfiguroitu, voit aloittaa niiden käytön! Tätä varten OVH tarjoaa käytettäväksi selainpostin. Se on käytettävissä osoitteessa <https://pro1.mail.ovh.net>, jossa sinun on syötettävä OVH:lla luotuun sähköpostiosoitteeseen liittyvät tunnukset.
 

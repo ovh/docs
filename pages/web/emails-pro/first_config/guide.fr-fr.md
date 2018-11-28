@@ -6,7 +6,7 @@ section: Premiers pas
 order: 1
 ---
 
-**Dernière mise à jour le 22/08/2018**
+**Dernière mise à jour le 28/11/2018**
 
 ## Objectif
 
@@ -84,16 +84,6 @@ La colonne `Diagnostic`{.action} vous permet de contrôler la configuration des 
 - **Si vous avez renseigné un nom de domaine non géré par OVH** : cliquez sur la pastille rouge afin de découvrir les modifications à réaliser. Si vous venez juste de les effectuer, l’affichage dans l’espace client OVH peut prendre quelques heures.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
-
-Même si cela est facultatif, vous avez également la possibilité d'ajouter un champ SRV à la configuration de votre nom de domaine. Il devrait permettre à un logiciel de messagerie ou à un autre appareil, comme un _smartphone_ ou une tablette, de récupérer automatiquement les éléments nécessaires pour configurer votre compte E-mail Pro (serveurs, ports et protocoles de sécurité).
-
-Si vous ne souhaitez pas en bénéficier, allez directement à l'étape 4. Dans le cas contraire, ajoutez le champ SRV depuis l’interface du prestataire gérant la configuration de votre nom de domaine. S'il s'agit d'OVH, reportez-vous aux instructions décrites dans notre documentation « [Éditer une zone DNS OVH](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external} » en utilisant les éléments ci-dessous :
-
-|Domaine|Type d'enregistrement|Priorité|Poids|Port|Cible|
-|---|---|---|---|---|---|
-|_autodiscover._tcp.*mypersonaldomain.ovh*_|SRV|0|0|443|autodiscover.mail.ovh.net.|
-
-N'oubliez pas de remplacer l’information générique « mypersonaldomain.ovh » par votre nom de domaine.
 
 ### Étape 4 : configurer les comptes E-mail Pro
 
