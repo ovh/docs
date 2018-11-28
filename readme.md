@@ -1,5 +1,7 @@
 # OVH Documentation
 
+[![Build Status](https://travis-ci.org/ovh/docs.svg?branch=develop)](https://travis-ci.org/ovh/docs)
+
 Here is all public documentation available about OVH products, in all languages. A good way to find answer to some "how to" questions about OVH products. 
 
  A web version also exist [here](https://docs.ovh.com) ; the website and this repo are sync.
