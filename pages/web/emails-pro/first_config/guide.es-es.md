@@ -5,7 +5,7 @@ excerpt: 'Cómo configurar por primera vez la solución Email Pro'
 section: General
 ---
 
-**Última actualización: 12/09/2018**
+**Última actualización: 28/11/2018**
 
 ## Objetivo
 
@@ -83,16 +83,6 @@ En la columna «**Diagnóstico**» podrá ver si la configuración de los regist
 - **Si ha introducido un dominio no gestionado por OVH**, haga clic en la etiqueta roja para consultar los cambios que debe realizar. Si acaba de hacerlos, pueden tardar varias horas en mostrarse en el área de cliente de OVH.
 
 ![Email Pro](images/first_config_email_pro_configure_domain.png){.thumbnail}
-
-Aunque es opcional, también puede añadir un registro SRV a la configuración del dominio. Este registro permite que un programa de correo u otro dispositivo (smartphone o tablet) obtengan automáticamente la información necesarias para configurar su cuenta Email Pro (servidores, puertos y protocolos de seguridad).
-
-Si no quiere añadir un registro SRV, omita este paso. En caso contrario, puede añadir el registro SRV desde el panel que le ofrezca el proveedor que gestione la configuración de su dominio. Si su proveedor es OVH, consulte la guía [Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external} y utilice los siguientes datos:
-
-|Dominio|Registro|Prioridad|Peso|Puerto|Destino|
-|---|---|---|---|---|---|
-|_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
-
-No olvide sustituir el valor genérico «mypersonaldomain.ovh» por su dominio.
 
 ### 4. Configurar las cuentas Email Pro
 

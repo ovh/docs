@@ -5,7 +5,7 @@ excerpt: 'Ontdek hoe u uw E-mail Pro kunt configureren'
 section: Algemeen
 ---
 
-**Laatste update 14-09-2018**
+**Laatste update 28-11-2018**
 
 ## Introductie
 
@@ -83,16 +83,6 @@ In de kolom `Diagnostic`{.action} kunt u de configuratie van de MX-velden van de
 - **Als u een niet-OVH-domeinnaam hebt ingevoerd**: klik op het rode omlijnde vak om de wijzigingen die u moet aanbrengen te bekijken. Als u dit zojuist hebt gedaan, kan het enkele uren duren voordat het op het OVH Control Panel verschijnt.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
-
-U kunt ook een SRV-record toevoegen aan de configuratie van uw domeinnaam, maar dit is optioneel en geen vereiste. U kunt het gebruiken om ervoor te zorgen dat een e-mailtoepassing of een ander apparaat (bijvoorbeeld een _smartphone_ of tablet) automatisch de elementen kan ophalen die nodig zijn om uw Email Pro account (servers, poorten en beveiligingsprotocollen) te configureren.
-
-Als u geen SRV-record wilt toevoegen, slaat u deze stap over en gaat u verder met stap 4. Als u dit wel wilt, kunt u het toevoegen met behulp van de interface die wordt gegeven door de serviceprovider die de DNS-configuratie van uw domeinnaam beheert. Als de DNS-configuratie van uw domeinnaam wordt beheerd door OVH, raadpleeg dan onze handleiding: [Wijziging van een OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external} met behulp van de onderstaande informatie:
-
-|Domein|Soort Record|Prioriteit|Poids|Poort|Target|
-|---|---|---|---|---|---|
-|_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
-
-Vergeet niet om het generieke voorbeeld (mypersonaldomain.ovh) te vervangen met uw eigen domeinnaam.
 
 ### Stap 4: Configureer de E-mail Pro accounts
 

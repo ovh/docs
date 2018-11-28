@@ -5,7 +5,7 @@ excerpt: 'Saiba como configurar o serviço E-mail Pro'
 section: Geral
 ---
 
-**Última atualização: 22/08/2018**
+**Última atualização: 28/11/2018**
 
 ## Sumário
 
@@ -83,16 +83,6 @@ A coluna `Diagnóstico`{.action} permite-lhe controlar a configuração dos camp
 - **Se indicou um domínio não gerido pela OVH**, clique na etiqueta vermelha para ver as alterações a realizar. As alterações podem demorar algumas horas até estarem concretizadas. Pode ver o estado do processo na Área de Cliente.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
-
-Apesar de ser opcional, também tem a possibilidade de adicionar um campo SRV à configuração do seu domínio. Deverá permitir que um software de e-mails ou outro dispositivo (por exemplo, um _smartphone_ ou um tablet) recupere automaticamente os elementos necessários para configurar a sua conta E-mail Pro (servidores, portas e protocolos de segurança).
-
-Se isto não for do seu interesse, passe diretamente para a etapa 4. Caso contrário, adicione o campo SRV a partir do sistema do agente responsável pela gestão do seu domínio. Se o agente for a OVH, consulte as instruções descritas na nossa documentação sobre como [Editar uma zona DNS da OVH](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external} (versão inglesa) através dos elementos abaixo:
-
-|Domínio|Tipo de registo|Prioridade|Peso|Porta|Alvo|
-|---|---|---|---|---|
-|\_autodiscover._tcp.*mypersonaldomain.ovh*|SRV|0|0|443|autodiscover.mail.ovh.net.|
-
-Não se esqueça de substituir a informação geral “mypersonaldomain.ovh” pelo nome do seu domínio.
 
 ### 4 - Configurar as contas E-mail Pro
 
