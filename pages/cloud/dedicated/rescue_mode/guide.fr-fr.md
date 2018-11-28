@@ -56,7 +56,7 @@ Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos inform
 
 > [!primary]
 > 
-> En cas d'utilisation d'une clé SSH (active également dans votre espace client OVH), aucun mot de passe ne vous sera envoyé. Une fois le serveur en mode Rescue vous pourrez vous connectez directement avec votre clé SSH).
+> En cas d'utilisation d'une clé SSH (active également dans votre espace client OVH), aucun mot de passe ne vous sera envoyé. Une fois le serveur en mode Rescue vous pourrez vous connecter directement avec votre clé SSH.
 >
 
 Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos informations d'accès en mode rescue. Vous devrez alors accéder à votre serveur via les lignes de commande habituelles, mais en utilisant le mot de passe root du mode rescue au lieu du vôtre.
