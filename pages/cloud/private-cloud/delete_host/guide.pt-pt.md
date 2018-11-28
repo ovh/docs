@@ -60,6 +60,7 @@ Poderá seguir o progresso da operação na secção `Recent Tasks`.
 
 O servidor host será eliminado em poucos minutos e deixará de aparecer no inventário. 
 
+
 > [!primary]
 >
 > Se adicionar algum ficheiro ou diretório que não estava inicialmente presente no armazenamento local do servidor host, ocorrerá um erro que irá impedir a eliminação do servidor. Apenas os diretórios de base e os ficheiros de vSwap não bloqueiam a operação de eliminação.
