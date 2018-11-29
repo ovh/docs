@@ -119,3 +119,7 @@ Python](https://www.python.org/downloads/release/python-2710/){.external}
 ![public-cloud](images/3061.png){.thumbnail}
 
 - Il est possible de consulter l'aide du CLI grâce a la commande :
+
+```
+C:\Windows\system32>swift --help
+```
