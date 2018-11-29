@@ -1,68 +1,62 @@
 ---
-title: Eviter le freeze de VM avec l’option Veeam Backup
+title: 'Éviter le gel de la machine virtuelle avec l''option Veeam Managed Backup'
 slug: eviter-le-freeze-de-vm-avec-l-option-veeam-backup
-legacy_guide_number: '7766815'
-space_key: VS
-space_name: vSphere as a Service
-section: Gestion des machines virtuelles
+excerpt: 'Apprenez à mettre en œuvre une solution de contournement avec le mécanisme VMware DRS'
+section: 'Gestion des machines virtuelles'
 ---
 
+**Dernière mise à jour le 29/11/2018**
+
+## Objectif
+
+Durant le processus de sauvegarde lors de la suppression d’un snapshot de votre machine virtuelle dans votre datastore NFS, il est possible que vous rencontriez un blocage d’une trentaine de secondes ou un verrouillage du disque.
+Cela est dû au fait que le snapshot de votre machine virtuelle est installé sur le backup proxy, qui fonctionne sur un hôte différent. Si le proxy et la machine virtuelle sont situés sur le même hôte, le dysfonctionnement ne se produira pas.
+
+**Ce guide vous montre comment mettre en œuvre une solution de contournement à l'aide du mécanisme VMware DRS.**
+
+## Prérequis
+
+- Posséder une solution [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
+- Bénéficier de l'option [Veeam Backup Managed](https://www.ovh.com/fr/private-cloud/options/veeam.xml){.external} activée.
+- Avoir accès à l'interface de gestion vSphere.
+
+## En pratique
+
+### Procédure
+
+> [!primary]
+>
+> Veuillez noter les points suivants avant d'entamer ce processus :
+>
+> - dans les environnements de grande taille, la création de plusieurs règles DRS peut prendre beaucoup de temps ;
+> - l’utilisateur doit ajouter manuellement les nouvelles machines virtuelles aux règles DRS ;
+> - toute machine virtuelle devant être sauvegardée, mais ne faisant pas partie des règles DRS, peut toujours subir un blocage.
+>
 
 
+Pour mettre en œuvre cette solution, faites un clic droit sur le cluster approprié, puis modifiez-en les paramètres.
 
+Créez une règle DRS pour **conserver les machines virtuelles ensemble** et ajoutez-les avec un backup proxy. Si vous possédez un grand nombre de machines virtuelles à sauvegarder, vous pouvez créer plusieurs règles DRS et les lier à plusieurs backups proxy. L'algorithme OVH vous garantit que le processus de sauvegarde de la machine virtuelle est effectué par le backup proxy présent sur le même hôte ESXi que la machine virtuelle.
 
-Problème rencontré
-------------------
+> [!warning]
+>
+> L'ajout d'un nouveau backup proxy entraînera des coûts supplémentaires.
+>
 
-**Service** : [VEEAM backup managé sur Private Cloud](https://pccdocs.ovh.net/display/VS/Veeam+Backup+as+a+Service).
-
-**
-
-Dans le processus de sauvegarde, vous pouvez rencontrer un freeze (~30 secondes) ou un verrouillage du disque lors de la suppression du snapshot de la VM dans le datastore NFS.
-
-Ce verrouillage du disque arrive car le snapshot du VMDK est monté sur le Backup Proxy qui fonctionne sur un hôte différent.
-
-Ce problème n'arrive pas si la machine virtuelle et le Backup Proxy sont situés sur le même hôte.
-
-Solution de contournement
--------------------------
-
-Créer une règle DRS "Conserver les VMs ensemble" et ajouter les VMs qui doivent être sauvegardées, avec le Backup Proxy.
-
-Vous pouvez également, créer plusieurs règles DRS, si vous avez un grand nombre de VMs à sauvegarder, et les relier avec plusieurs Backup Proxies.
-
-Créer une autre règle DRS "Séparer les machines virtuelles" afin d'avoir les différents Backup Proxies sur différents ESXi.
-
-L'algorithme d'OVH fera en sorte que le processus de sauvegarde de la machine virtuelle se fasse par le Backup Proxy, présent sur le même hôte ESXi que la VM.
-
-*NB : L'ajout d'un nouveau Backup Proxy entraînera un coût supplémentaire.*
-
-Limitation de cette solution
-----------------------------
-
-- Dans des environnements volumineux, la création de plusieurs règles DRS peut être fastidieux.
-- L'utilisateur doit ajouter manuellement les nouvelle VM aux règles DRS.
-- Les différentes VMs à sauvegarder mais ne faisant pas partie des règles DRS peuvent avoir la problématique des freezes.
-
-Procédure
----------
-
-Créer une règle DRS "Conserver les machines virtuelles ensemble" et ajouter les VMs avec un Backup Proxy.
-
-*Pour la créer, faites un clic droit sur le cluster, puis aller dans modifier les paramêtres.*
-
-*Dans la partie DRS, vous pourrez ajouter une règle en suivant les détails suivants.*
+Dans la section DRS, vous pouvez ajouter une règle comme suit :
 
 ![](images/image0_7.png){.thumbnail}
 
-Créer une autre règle DRS "Séparer les machines virtuelles", afin de garder les Backup Proxies sur différents hôtes.
+Créez une autre règle DRS pour **séparer les machines virtuelles**, afin de conserver les backups proxy sur différents hôtes :
 
 ![](images/image0_28.png){.thumbnail}
 
-Créer un groupe de VM, entrer le nom du groupe, et ajouter l'hôte dans cette règle.
+Créez un groupe de machines virtuelles, entrez le nom du groupe et ajoutez l'hôte à cette règle :
 
-*![](images/image1_9.png){.thumbnail}*
+![](images/image1_9.png){.thumbnail}
 
-En résumé, vous devez avoir une règle d'anti-affinité pour que les Backup Proxies ne soient jamais sur le même hôte.
+Veuillez noter que vous devez avoir mis en place une règle anti-affinité pour que les backups proxy ne se trouvent jamais sur le même hôte et autant de règles d'affinité que de backup proxy.
 
-Et autant de règles d'affinité que de Backup Proxies.
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
