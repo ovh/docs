@@ -17,7 +17,7 @@ Vous pouvez trouver des guides sur [https://docs.ovh.com/fr/overthebox/](https:/
 Vous pouvez agréger n'importe quel type de connexions (xDSL, Fibre, Câble, 3G/4G) de n'importe quel opérateur. Il est d'ailleurs intéressant d'avoir plusieurs technologies et plusieurs opérateurs afin de garantir la redondance.
 
 
-### Pourquoi, sur les OverTheBox Intel et V1, n'y a-t-il qu'un port RJ45 ?
+### Pourquoi, sur les OverTheBox Intel et IT, n'y a-t-il qu'un port RJ45 ?
 L'OverTheBox est un équipement réseau qui se branche sur votre réseau local comme un ordinateur. Vous pouvez constituer votre réseau local en branchant les modems entre eux, en cascade ou sur un switch.
 
 
