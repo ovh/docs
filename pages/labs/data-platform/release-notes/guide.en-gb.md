@@ -1,5 +1,3 @@
-
-
 ---
 title: 'Release notes'
 excerpt: 'Release notes'
