@@ -1,95 +1,73 @@
 ---
-title: 'Servizio Email: guida alla creazione di un indirizzo email'
-excerpt: In questa guida ti aiutiamo a creare il tuo servizio email
+title: 'Creare un account email con MX Plan'
 slug: servizio_email_guida_alla_creazione_di_un_indirizzo_email
+excerpt: 'Scopri come creare un account email con la soluzione MX Plan'
+section: 'Gestire un account email'
 legacy_guide_number: g1343
 ---
 
+**Ultimo aggiornamento: 28/11/2018**
 
-## Connessione allo Spazio Cliente OVH
-Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/).
+## Obiettivo
 
+Gli account email della soluzione MX Plan ti consentono di inviare e ricevere messaggi dal dispositivo che preferisci.
 
-- Seleziona il tuo dominio nel menu Email
+**Questa guida ti mostra come creare un indirizzo email utilizzando la soluzione MX Plan.**
 
-- Seleziona il tab Email
+## Prerequisiti
 
-- Clicca su Aggiungere un account
+- Disporre di un account email MX Plan (incluso in una soluzione di [Web hosting OVH](https://www.ovh.it/hosting-web/){.external} o disponibile separatamente)
+- Avere ancora la possibilità di creare nuovi indirizzi email con MX Plan
+- Disporre di un accesso per la gestione della soluzione MX Plan dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
+## Procedura
 
+### Step 1: accedi alla gestione del servizio email
 
-![](images/img_3636.jpg){.thumbnail}
-per poter aggiungere degli account email, è necessario avere un'offerta email attiva: 
+Per avviare l’operazione, connettiti allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Clicca su `Email`{.action} nel menu a sinistra e seleziona il dominio per il quale hai sottoscritto l’offerta MX Plan. Poi apri la scheda `Email`{.action}.
 
+Compare una tabella contenente tutti gli indirizzi email creati con MX Plan.
 
-- Offerta gratuita Start10M (1 account email)
-- [url="http://www.ovh.it/hosting-web/guide/"]
-Hosting condiviso OVH[/url] (da 10 a 1000 account email)
-- [MxPlan](https://www.ovh.it/prodotti/mxplan.xml) (da 5 a 1000 account email)
+![email](images/email-creation-step1.png){.thumbnail}
 
+### Step 2: crea l’account email
 
+Per creare un nuovo indirizzo email, clicca su `Crea un indirizzo email`{.action}. Nella tabella che appare inserisci le informazioni richieste:
 
+|Informazione|Descrizione|  
+|---|---|  
+|Nome dell’account|Inserisci il nome che vuoi assegnare al tuo account email (ad esempio nome.cognome). Il dominio richiesto è già inserito di default.|  
+|Descrizione dell’account|Inserisci una breve descrizione che ti permetterà di riconoscere questo account tra quelli presenti nel tuo Spazio Cliente OVH.|  
+|Dimensione dell’account|Seleziona la dimensione del tuo account, ovvero lo spazio disponibile per conservare i messaggi.|  
+|Password|Scegli una password per questo indirizzo e confermala.|
 
-## Informazioni sul nuovo account email
-Inserisci le informazioni richieste per il tuo indirizzo email:
+Per proseguire, clicca su `Seguente`{.action} e verifica le informazioni inserite; se sono corrette clicca di nuovo su `Seguente`{.action}.
 
-Nome dell'account: definisci il nome dell'indirizzo email
+Infine clicca su `Conferma`{.action} per avviare la creazione dell’indirizzo email. Ripeti questa operazione per ogni nuovo account email che vorrai creare.
 
-Descrizione dell'account: ti permette di inserire una descrizione per l'account email
+> [!primary]
+>
+> Per motivi di sicurezza, durante la scelta della nuova password è fondamentale rispettare le indicazioni fornite. Inoltre ti consigliamo di:
+>
+> - non utilizzare due volte la stessa password;
+>
+> - scegliere una password che non contenga informazioni personali: ad esempio, evita di inserire il tuo cognome, nome o data di nascita;
+>
+> - modificare regolarmente la password;
+>
+> - non scrivere la tua password su un pezzo di carta e non inviarla al tuo indirizzo email;
+>
+> - non salvare la password sul tuo browser, anche se ti viene proposto.
+>
 
-Dimensione dell'account: definisci la capacità del tuo indirizzo email
+![email](images/email-creation-step2.png){.thumbnail}
 
-Password: scegli la password del tuo account email
+### Step 3: utilizza il tuo account email
 
-Conferma: ripeti la password del tuo account email
+A questo punto non ti resta che utilizzare i tuoi account di posta. OVH mette a disposizione l'applicazione online RoundCube disponibile all'indirizzo <https://www.ovh.it/mail/>. Per effettuare l'accesso, è sufficiente inserire le credenziali associate all’account di posta creato in OVH. 
 
+Per maggiori informazioni su questo servizio, consulta la nostra [guida all’utilizzo di RoundCube](https://docs.ovh.com/it/emails/webmail_guida_allutilizzo_di_roundcube/){.external}. Per configurare l’account email su un client di posta o un dispositivo (ad esempio, smartphone o tablet), fai riferimento alla documentazione disponibile a questa pagina: <https://docs.ovh.com/it/emails/>.
 
-Attenzione: la password deve rispettare determinate condizioni: 
+## Per saperne di più
 
-
-- Minimo 9 caratteri
-- Massimo 30 caratteri
-- Nessun carattere accentato
-
-
-
-Clicca su "Conferma" per continuare.
-
-Un messaggio di notifica ti confermerà la creazione dell'account email.
-
-Per configurare i tuoi indirizzi email, ti consigliamo queste guide:
-
-
-- [Guide per la configurazione dell'email](https://www.ovh.it/hosting-web/guide/).
-
-
-
-![](images/img_2385.jpg){.thumbnail}
-
-
-## Come fai a definire la password dei tuoi account email?
-
-- Seleziona il tuo dominio nel menu "Email", clicca sulla rotella dell'ingranaggio accanto all'email che vuoi modificare e scegli l'opzione "Modificare la password" .
-
-
-
-![](images/img_3637.jpg){.thumbnail}
-
-- Inserisci la nuova password e confermala.
-
-Non è necessaria la vecchia password.
-
-
-Attenzione: la password deve rispettare determinate condizioni: 
-
-
-- Minimo 9 caratteri
-- Massimo 30 caratteri
-- Nessun carattere accentato
-
-
-Clicca su "Conferma" per completare la modifica della tua password.
-
-La modifica della tua password può richiedere alcuni minuti prima di essere effettiva.
-
-![](images/img_2387.jpg){.thumbnail}
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
