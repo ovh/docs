@@ -81,7 +81,7 @@ The IP block can be retreived via a call on `/1.0/ip`. In case you have several 
 
 For this guide, will assume you get the IP block `123.45.67.32/28`.
 
-Using the following code, you can easily extract the needed info from the OVH API or the IP block directly
+Using the following code, you can easily extract the needed info from the OVH API or the IP block directly.
 
 ```python
 #!/usr/bin/env python3
