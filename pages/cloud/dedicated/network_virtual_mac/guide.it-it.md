@@ -35,7 +35,7 @@ Successivamente, individua il tuo indirizzo IP Failover (o il tuo blocco) nella 
 
 Nella finestra di dialogo, seleziona il tipo di indirizzo dal menu a tendina, inserisci il nome della macchina virtuale e infine clicca su `Conferma`{.action}.
 
-> \[!primary]
+> [!primary]
 >
 > **Tipo**\: si tratta del tipo di indirizzo MAC virtuale (“VMware” per il sistema VMware ESXi e “OVH” per tutti gli altri sistemi di virtualizzazione).
 >
