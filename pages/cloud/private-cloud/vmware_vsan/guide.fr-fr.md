@@ -1,16 +1,16 @@
 ---
-title: 'Mettre en oeuvre l''hyperconvergence VMware avec vSAN'
+title: Mettre en oeuvre l'hyperconvergence VMware avec vSAN
 slug: vmware-vsan
-excerpt: 'Découvrez comment mettre en oeuvre la puissance de l''hyperconvergence pour vos machines virtuelles avec vSAN'
-section: 'Fonctionnalités VMware vSphere'
+excerpt: Découvrez comment mettre en oeuvre la puissance de l'hyperconvergence pour vos machines virtuelles avec vSAN
+section: Fonctionnalités VMware vSphere
 ---
 
-**Dernière mise à jour le 25/10/2018**
+**Dernière mise à jour le 28/11/2018**
 
 ## Objectif
 
 
-vSAN est une solution de stockage qui agrège un ensemble de disques situé sur les hôtes VMware d'un cluster et les présente comme un datastore unique utilisable pour les machines virtuelles. Cette architecture, qui utilise des capacités de traitement et de stockage distribués sur un ensemble d'hôtes physiques, est également appelée « architecture hyperconvergée ». 
+vSAN est une solution de stockage qui agrège un ensemble de disques situé sur les hôtes VMware d'un cluster et les présente comme un datastore unique utilisable pour les machines virtuelles. Cette architecture, qui utilise des capacités de traitement et de stockage distribués sur un ensemble d'hôtes physiques, est également appelée « architecture hyperconvergée ».
 
 Comme ce datastore est une construction virtuelle gérée par le logiciel vSAN, on emploie également le terme de *Software Defined Storage* (SDS). L'un des avantages de vSAN est d'être complètement intégré à vSphere et géré directement depuis vCenter.
 
@@ -28,6 +28,9 @@ Ce guide a pour objectif d’expliquer les concepts et les détails de la mise e
 
 ### vSAN : les concepts clés
 
+#### Qu'est ce que VSAN ?
+
+VSAN est une solution de stockage qui agrège un ensemble de disques situés sur des hôtes Vmware d'un cluster et les présente comme un datastore unique utilisable pour les machines virtuelles. Ce type d'architecture qui utilisé les capacités de traitement et de stockage distribuées sur un ensemble d'hôtes physiques est également appelée **architecture hyperconvergée**. Comme ce datastore est une construction virtuelle gérée par le logiciel VSAN, on emploie également le terme de Software Defined Storage ou SDS. Un des avantages de VSAN est d'être complétement intégré à vSphere et géré directement depuis vCenter.
 
 #### Protection des données
 
@@ -43,15 +46,146 @@ Le premier niveau de redondance concerne le nombre de défaillances d'hôtes que
 
 ##### Redondance des disques
 
-En complément de la redondance des hôtes, vSAN assure celle des disques, grâce à un mécanisme appelé Erasure Coding. Ce mécanisme fonctionne de manière analogue aux grappes RAID utilisées par les contrôleurs de disques durs, mais il protège directement les blocs de données.
+En complément de la redondance des hôtes, vSAN assure celle des disques, grâce à un mécanisme appelé Erasure Coding. Ce mécanisme fonctionne de manière analogue aux grappes RAID utilisées par les contrôleurs de disques durs, mais il appliquée directement aux blocs de données.
 
 VSAN propose trois niveaux de redondance :
 
 * RAID 1 : il s'agit du niveau par défaut. Chaque bloc de données est écrit en double sur deux hôtes différents (miroir) ;
 * RAID 5 : chaque bloc est découpé en trois blocs de données et un quatrième bloc de parité est calculé. Il permet de retrouver les données manquantes en cas de perte d'un des blocs. Pour écrire quatre blocs, il faut donc bien quatre hôtes. À partir de cinq hôtes, il est possible d'absorber la perte de deux hôtes, puisqu’on est sûr qu’il nous reste au moins trois blocs de données, ou deux blocs de données et un bloc de parité ;
-* RAID 6 : chaque bloc est découpé en quatre blocs de données et deux blocs de parité. Ils permettent de recalculer deux morceaux manquants. Là encore, pour écrire six blocs et assurer la redondance, il faut donc bien autant d'hôtes.
+* RAID 6 : chaque bloc est découpé en quatre blocs de données et deux blocs de parité. Ils permettent de recalculer deux morceaux manquants. Là encore, pour écrire six blocs à des endroits différents et assurer la redondance, il faut donc bien autant d'hôtes.
+
+> [!primary]
+>
+> les niveau de protection RAID 5 et 6, imposent un FTT=1 ou 2, les autres valeurs (0 ou 3) ne sont pas supportées
+>
+
+#### Consommation d'espace disque
+
+L'utilisation de mécanismes de redondances induit logiquement une consommation d'espace accrue, il est donc nécessaire trouver le bon compromis. Le point fort de VSAN est de pouvoir choisir les politiques de redondance par VM et non pas globalement au niveau du datastore. Cela permet d'avoir des politiques différenciées en fonction des types d'environnement.
+
+|         | Surconsommation liée à la redondance |||
+|------------------------|----------------------------------|------------------------|------------------------|
+| Niveau de protection   | RAID 1 | RAID 5 | RAID 6 |
+| 3 hosts FTT=1          | x 2    | - | - |
+| 4 hosts FTT=1          | x 2    | x 1.33 | - |
+| 5 hosts FTT=1          | x 2    | x 1.33 | - |
+| 6 hosts FTT=2          | x 2    | x 1.33 | x 1.5 |
+
+> [!warning]
+>
+> Pour des raisons de performances, VMware recommande de ne pas dépasser 70% de remplissage sur un datastore VSAN
+>
+
+#### Espace net utilisable pour les données utilisateur
+
+Pour illustrer très concrètement le point précédent, voici une estimation conservatrice de l'espace disponible pour les données  dans différentes configuration PCC VSAN 256 ou 512 , en prenant en compte la contrainte de remplissage à 70% que VMware recommande fortement de ne pas dépasser.
+
+| NB Hosts VSAN 256  | FTT  | Host capacity (TB)  | Total Space  | 	Usable Space RAID 1 Policy (TB)  | Usable Space RAID 5 Policy (TB)  | Usable Space RAID 6 Policy (TB)  |
+|---|---|---|---|---|---|---|
+| 3  | 1  | 4  | 12  | 4,2  | n/a  | n/a  |
+| 4  | 1  | 4  | 16  | 5,6  | 8,4  | n/a  |
+| 5  | 1  | 4  | 20  | 7,0  | 10,5  | n/a  |
+| 6  | 1  | 4  | 24  | 8,4  | 12,6  | n/a  |
+| 6  | 2  | 4  | 24  | n/a  | n/a  | 11,1  |
+
+| NB Hosts VSAN 512  | FTT  | Host capacity (TB)  | Total Space  | 	Usable Space RAID 1 Policy (TB)  | Usable Space RAID 5 Policy (TB)  | Usable Space RAID 6 Policy (TB)  |
+|---|---|---|---|---|---|---|
+| 3  | 1  | 8  | 24  | 8,4  | n/a  | n/a  |
+| 4  | 1  | 8  | 32  | 11,2  | 16,8  | n/a  |
+| 5  | 1  | 8  | 40  | 14,0  | 21,0  | n/a  |
+| 6  | 1  | 8  | 48  | 16,8  | 25,2  | n/a  |
+| 6  | 2  | 8  | 48  | n/a  | n/a  | 22,2  |
+
+> [!primary]
+>
+> Ces chiffres reposent sur l'hypothèse que **100% des VMs** utilisent la même politique de stockage.
+> Ils tiennent pas compte des gains liés à la déduplication/compression (qui fluctuent énormément en fonction de la nature des données stockées.
+> Il s'agit donc d'une estimation trés conservatrice de la volumétrie.
+>
+
+#### Les groupes de disque ou disk groups
+
+Les disques physiques présents sur les hôtes sont regroupés au sein d'un groupe de disque. Il constitue l'unité de base de gestion par VSAN, et se compose d'un disque de cache SSD (obligatoire) et de jusqu'à 7 disques de stockage (les configurations OVH utilisent uniquement des SSD afin d’offrir un niveau maximum de performance). Chaque hôte qui participe à VSAN doit disposer à minima d'un groupe de disque et jusqu'à 5 maximum.
+
+l'ajout de  disk group apporte des disques de cache au pool de stockage, et donc permet d'augmenter l'espace de cache et les performances globales.
+
+En contrepartie, comme toutes les écritures ont lieu dans le volume de cache, la défaillance du disque de cache sur un hôte invalide automatiquement les disque de stockage du disk group concerné. Si l'hôte dispose d'un unique DG, il n'est plus disponible pour VSAN jusqu'à remplacement du disque défaillant.
+
+L'opération d'attribution des disques de cache et de stockage  à un disk group s'appelle **Réclamation** ou **Claiming** et à lieu lors de l'initialisation du VSAN.
+
+#### Les objets VSAN
+
+L'autre aspect particulier de VSAN qui le différencie des datastores traditionnels, est qu'il s'agit d'un système de fichier orienté objet: chacun des éléments qui composent une machine virtuelle est représenté par un objet VSAN appelé aussi composant (component) :
+
+* Les fichiers base de la VM (VMX,nvram, logs, snapshots mémoire...), appelés aussi VM Home ("Accueil VM" en francais)
+* les disques virtuels (VMDK)
+* Les snapshots disques
+
+Chacun de ces objets hérite de la politique de stockage de la VM et notamment du niveau de protection souhaité (aucun, RAID1, RAID5, RAID6)
+
+##### Le fichier witness
+
+Il existe objet particulier appelé objet témoin ou witness. Sa fonction est de permettre de résoudre un probleme de partition dans le cluster. Une partition se produit lors certains membres du cluster ne peuvent plus se parler ou lorsque un hôte est isolé  et synchroniser les différentes parties d'une VM.
+
+Dans le cas d'une policy RAID 1 où les deux copies d'un objet se trouvent dans une partition différente et sont modifiées simultanément il n'est plus possible de savoir où sont les données de reférences. C'est la qu'intervient le witness : c'est un fichier de petite taille (2MB) qui contient uniquement des metadatas et qui permet de décider quelle copie sert de référence. Dans le cas d'un cluster de 3 hôtes et d'une policy RAID 1, deux hosts recevront une copie des données et le troisième le witness qui contient des informations sur les objets de données. En cas de partition ou d'isolation, l'hôte qui a toujours accés au witness va continuer son activité en mode dégradé. Lorsque le problème est résolu l'hôte isolé est resynchronisé avec les données les plus récentes.
+
+Le witness n'est utilisé que pour la policy RAID1, puisque en RAID 5 ou 6, les données et leur
+parité sont distribués sur tous les hosts il n'y a pas d'ambiguité sur deux copies identiques des données.
+
+##### Visualisation des objets
+
+L'état des objets peut être visualisé en allant sur les propriétés du cluster, Onglet "Surveiller" (ou Monitor dans l'interface en anglais), rubrique VSAN.
+
+On peut alors cliquer sur "Objets virtuels" (ou Objects)
+
+![](images/vsan_21.png){.thumbnail}
+
+On voit 3 types d'objet VSAN :
+
+* VM home
+* Disque dur
+* Fichier de swap RAM (fichier vswp)
+
+Si on clique sur un objet, on peut voir comment il est stocké dans le cluster :
+
+![](images/vsan_22.png){.thumbnail}
+
+Pour illustrer les autres types d'objets, créons un snapshot de cette VM:
+
+![](images/vsan_23.png){.thumbnail}
+
+On voit qu'un nouvel objet snapshot s'est ajouté à chacun des objets hard disk.
+
+#### vSAN maximums
+
+##### VSAN 6.6
+
+* 5 diskgroups par hôtes
+* 9000 objets par hôtes VSAN
+* 35 disques de stockage par hôte
+* 64 hôtes par cluster VSAN
+* 1 seul VSAN Datastore par cluster
+* 6000 machines virtuelles par cluster
+* 12 stripes par objet
+* Tolerance de perte d'hôte : 3
+* Taille de disque virtuel maximum: 62To
+
+#### vSAN limitations
+
+##### VSAN 6.6
+
+* les fonctions suivante de vSPhere ne sont pas supportées
+  * RDM,VMFS, partition de diagnostic
+  * Raw Device Mapping (RDM)
+  * Storage I/O control
+* Reservation de volume SCSI
 
 ### Activer vSAN
+
+> [!warning]
+>
+> Dans vSphere 6.5, les opérations concernant VSAN ne sont disponible que dans le vSphere Web Client en Flash, et pas dans l'interface HMTL 5 (Flex)
+>
 
 #### Désactivation du mode de haute disponibilité (vSphere HA)
 
@@ -100,6 +234,11 @@ L’activation de vSAN peut prendre quelques minutes. Une fois celle-ci terminé
 >
 
 ### Désactiver vSAN
+
+> [!warning]
+>
+> Dans vSphere 6.5, les opérations concernant VSAN ne sont disponible que dans le vSphere Web Client en Flash, et pas dans l'interface HMTL 5 (Flex)
+>
 
 #### Évacuer le datastore
 
