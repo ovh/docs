@@ -1,7 +1,7 @@
 ---
-title: Create a custom OpenStack image with Packer
+title: 'Create a custom OpenStack image with Packer'
 slug: packer-openstack-builder
-excerpt: Create and customize an OpenStack image from an existing one with Packer
+excerpt: 'Create and customize an OpenStack image from an existing one with Packer'
 section: Packer
 order: 10
 ---
@@ -18,7 +18,7 @@ You'll need an [OVH Public Cloud](https://www.ovh.com/public-cloud/instances/) O
 
 ### Install Packer
 
-Packer can be downloaded from [here](https://www.packer.io/downloads.html) and you'll need to `unzip` it.
+Packer can be downloaded from the official website (curently [here](https://www.packer.io/downloads.html) ) and you'll need to `unzip` it.
 
 For Linux 64bits
 
@@ -150,10 +150,8 @@ openstack image list | grep 'My Custom Image'
 > **Tip**: To enable debug information: `export PACKER_LOG=1`
 > 
 
-## Conclusion
-
-We've learn how to create a custom image with Packer and OpenStack builder.
 
 ## Go further
 
-You might be interrested by running a script when [deploying an image](https://docs.ovh.com/fr/public-cloud/lancer-un-script-lors-de-la-creation-dun-instance/)
+Join our community of users on <https://community.ovh.com/en/>.
+
