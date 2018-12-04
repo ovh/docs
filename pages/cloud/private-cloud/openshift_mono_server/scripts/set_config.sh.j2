@@ -1,0 +1,48 @@
+#!/bin/sh
+
+echo "Set hostname"
+echo {{ hostname }}.localdomain > /etc/hostname
+sed -i 's/^\(127\.0\.0\.1.*\)$/\1 {{ hostname }} {{ hostname }}.localdomain/g' /etc/hosts
+sed -i 's/^\(::1.*\)$/\1 {{ hostname }} {{ hostname }}.localdomain/g' /etc/hosts
+
+echo "Uploading SSH key"
+mkdir $HOME/.ssh
+cat >> $HOME/.ssh/authorized_keys <<EOF
+{% include "ssh_key.pub" %}
+
+EOF
+chmod 600 $HOME/.ssh/authorized_keys
+
+echo "Set sshd config"
+sed -i 's/#\?\s*\(PasswordAuthentication\).*/\1 no/g' /etc/ssh/sshd_config
+
+service sshd restart
+
+echo "Set resolv.conf config"
+echo nameserver 8.8.8.8 > /etc/resolv.conf 
+
+echo "Set selinux config"
+cat > /etc/selinux/config <<EOF
+SELINUX=enforcing
+SELINUXTYPE=targeted
+EOF
+
+echo "Set network config"
+for iface in /sys/class/net/*; do
+    flags=`cat $iface/flags`
+    if [ $((flags & 0x1000)) != 0 ]; then # V.35 serial interface flag
+        break
+    fi
+done
+iface=${iface##*/}
+
+cat /etc/sysconfig/network-scripts/ifcfg-$iface | grep -v 'ONBOOT\|BOOTPROTO\|IPADDR\|NETMASK\|GATEWAY' > /tmp/iface.cfg
+mv /tmp/iface.cfg /etc/sysconfig/network-scripts/ifcfg-$iface
+echo ONBOOT=yes >> /etc/sysconfig/network-scripts/ifcfg-$iface
+echo BOOTPROTO=static >> /etc/sysconfig/network-scripts/ifcfg-$iface
+echo IPADDR={{ ip }} >> /etc/sysconfig/network-scripts/ifcfg-$iface
+echo NETMASK={{ netmask }} >> /etc/sysconfig/network-scripts/ifcfg-$iface
+echo GATEWAY={{ gw }} >> /etc/sysconfig/network-scripts/ifcfg-$iface
+
+service network restart
+
