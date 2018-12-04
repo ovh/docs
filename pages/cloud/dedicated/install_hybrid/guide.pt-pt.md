@@ -13,6 +13,7 @@ A OVH oferece a possibilidade de contratar [servidores dedicados](https://www.ov
 
 **Este manual explica como especificar o conjunto de discos em que se deseja instalar o sistema operativo.**
 
+
 > [!warning]
 > 
 > A utilização e a gestão dos serviços OVH são da responsabilidade do cliente. Uma vez que não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
