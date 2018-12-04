@@ -22,7 +22,7 @@ This first guide will go throught:
 
 > [!primary]
 > 
-> The resources used to automate this guide are available [here](https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/openshift_unattended_centos_install/scripts/) folder.
+> The resources used to automate this guide are available here: https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/vsphere_unattended_centos_install/scripts/.
 > 
 
 From your terminal, install `ansible` and `govc`.
@@ -72,7 +72,7 @@ There are three ISO flavors. We'll pick the DVD edition, the smallest one with t
 
 The second one will a simple iso volume named `OEMDRV` containing the `/KS.CFG` file. The full documentation is on [RedHat documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/sect-kickstart-howto#sect-kickstart-installation-starting) page.
 
-The above steps can be done automated via
+The above steps can be automated via
 
 ```shell
 sudo ansible-playbook -vvv --extra-vars @vars.yml create_isos.yml
@@ -109,4 +109,4 @@ We have learn how to create a custion unattended installation CentOS ISO file an
 
 ## Go further
 
-The next step is to deploy our first [OpenShift Origin mono-server instance]({filename}../openshift_mono_server/guide.en-gb.md).
+The next step is to deploy our first [OpenShift Origin mono-server instance](https://docs.ovh.com/gb/en/private-cloud/openshift-private-cloud-mono-server/).
