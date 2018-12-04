@@ -1,0 +1,57 @@
+---
+- name: Configure inventory
+  hosts: localhost
+
+  tasks:
+  - name: add host to inventory
+    add_host:
+      name: "master"
+      ansible_connection: ssh
+      ansible_host: "{{ ip }}"
+      ansible_user: root
+      ansible_ssh_private_key_file: "{{ ssh_key_priv }}"
+
+- name: Setup Openshift
+  hosts: master
+
+  tasks:
+  - name: Install packages
+    package:
+      name:
+        - httpd-tools # required for htpasswd
+        - unzip # required for unarchive task
+        - epel-release # required for ansible-2.6
+      state: present
+
+  - name: Install packages
+    package:
+      name:
+        - ansible
+        - jq
+      state: latest
+
+  - name: Set htaccess_path
+    set_fact:
+      htaccess_path: /etc/origin/master/htpasswd
+
+  - name: Download Openshift 3.10
+    get_url:
+      url: https://github.com/openshift/openshift-ansible/archive/release-3.10.zip
+      dest: "{{ ansible_env.HOME }}/openshift-ansible.zip"
+      mode: 0644
+
+  - name: Extract zip "{{ ansible_env.HOME }}/openshift-ansible.zip"
+    unarchive:
+      src: "{{ ansible_env.HOME }}/openshift-ansible.zip"
+      dest: "{{ ansible_env.HOME }}"
+      remote_src: yes
+
+
+  - name: Edit inventory config
+    blockinfile:
+      path: "{{ ansible_env.HOME }}/openshift-ansible-release-3.10/inventory/hosts.localhost"
+      insertbefore: "\\[masters\\]"
+      content: |
+        openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider', 'file': '/etc/origin/master/htpasswd'}]
+        # openshift_master_external_ip_network_cidrs=['137.74.98.33']
+      
