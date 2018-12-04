@@ -24,6 +24,7 @@ Es kann aus verschiedenen Gründen erforderlich sein, dass Sie eine DNS-Zone fü
 - Die technische Konfiguration der Domain ist korrekt (Status, SOA usw.).
 - Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
 
+
 ## Beschreibung
 
 ### Schritt 1: DNS-Zone über das Kundencenter erstellen
