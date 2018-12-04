@@ -5,7 +5,7 @@ excerpt: 'Scopri come configurare due o più server dedicati nella vRack'
 section: vRack
 ---
 
-**Ultimo aggiornamento: 28/09/2018**
+**Ultimo aggiornamento: 30/11/2018**
 
 ## Obiettivo
 
@@ -20,7 +20,7 @@ La tecnologia vRack (rack virtuale) permette di raggruppare diversi server, indi
 - Disporre di almeno due o più [server compatibili con la vRack](https://www.ovh.it/server_dedicati/){.external}
 - Essere connesso in SSH (o attraverso l’interfaccia grafica) al server Linux (accesso <i>root</i>)
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Aver selezionato una gamma di indirizzi IP privati
+- Aver selezionato un intervallo di indirizzi IP privati
 
 
 ## Procedura
@@ -36,7 +36,7 @@ La tecnologia vRack (rack virtuale) permette di raggruppare diversi server, indi
 
 ### Configura le interfacce di rete
 
-In questo esempio, utilizziamo una gamma di indirizzi IP interni di *192.168.0.0/16*.
+In questo esempio, utilizziamo un intervallo di indirizzi IP interni di *192.168.0.0/16*.
 
 Utilizziamo anche i nomi **eth1** e **eno4** per l’interfaccia di rete secondaria. I server potrebbero utilizzare una terminologia diversa. Puoi verificarlo utilizzando i comandi che indichiamo di seguito.
 
@@ -83,14 +83,14 @@ ONBOOT=yes
 TYPE=Ethernet
 ```
 
-Nell’esempio di seguito, puoi utilizzare qualsiasi gamma privata di IP e qualsiasi indirizzo situato all’interno della stessa.
+Nell’esempio di seguito, puoi utilizzare qualsiasi intervallo di IP privati e qualsiasi indirizzo situato all’interno della stesso.
 
 1. Premi il tasto `Esc`
 2. Premi il tasto `Shift + :` per aprire l’editor
 3. Digita `wq`
 4. Premi il tasto `Invio`
 5. Riavvia il server
-6. Ripeti tutti gli step per gli altri server e attribuisci ad ognuno un indirizzo IP unico appartenente alla tua gamma interna. Subito dopo, i tuoi server potranno comunicare tra di loro all’interno della rete privata.
+6. Ripeti tutti gli step per gli altri server e attribuisci ad ognuno un indirizzo IP unico appartenente al tuo intervallo. Subito dopo, i tuoi server potranno comunicare tra di loro all’interno della rete privata.
 
 
 #### Debian 7 e 8
@@ -136,12 +136,12 @@ address 192.168.0.1
 netmask 255.255.0.0
 ```
 
-Nell’esempio di seguito, puoi utilizzare qualsiasi gamma privata di IP e qualsiasi indirizzo situato all’interno della stessa.
+Nell’esempio di seguito, puoi utilizzare qualsiasi intervallo di IP privati e qualsiasi indirizzo situato all’interno della stesso.
 
 1. Premi `CTRL + X` per abbandonare il file di configurazione di rete
 2. Premi il tasto `Y` per salvare le modifiche e infine premi `Invio`
 3. Riavvia il server
-4. Ripeti tutti gli step per gli altri server e attribuisci ad ognuno un indirizzo IP unico appartenente alla tua gamma interna. Subito dopo, i tuoi server potranno comunicare tra di loro all’interno della rete privata.
+4. Ripeti tutti gli step per gli altri server e attribuisci ad ognuno un indirizzo IP unico appartenente alla tuo intervallo. Subito dopo, i tuoi server potranno comunicare tra di loro all’interno della rete privata.
 
 
 #### Ubuntu Server 16
@@ -163,14 +163,14 @@ address 192.168.0.1
 netmask 255.255.0.0
 ```
 
-Nell’esempio di seguito, puoi utilizzare qualsiasi gamma privata di IP e qualsiasi indirizzo situato all’interno della stessa.
+Nell’esempio di seguito, puoi utilizzare qualsiasi intervallo di IP privati e qualsiasi indirizzo situato all’interno della stessa.
 
 1. Premi il tasto `Esc`
 2. Premi il tasto `Shift + :` per aprire l’editor
 3. Digita `wq`
 4. Premi il tasto `Invio`
 5. Riavvia il server
-6. Ripeti tutti gli step per gli altri server e attribuisci ad ognuno un indirizzo IP unico appartenente alla tua gamma interna. Subito dopo, i tuoi server potranno comunicare tra di loro all’interno della rete privata.
+6. Ripeti tutti gli step per gli altri server e attribuisci ad ognuno un indirizzo IP unico appartenente alla tuo intervallo. Subito dopo, i tuoi server potranno comunicare tra di loro all’interno della rete privata.
 
 
 #### Ubuntu Server 17
@@ -190,17 +190,17 @@ address 192.168.0.1
 netmask 255.255.0.0
 ```
 
-Nell’esempio di seguito, puoi utilizzare qualsiasi gamma privata di IP e qualsiasi indirizzo situato all’interno della stessa.
+Nell’esempio di seguito, puoi utilizzare qualsiasi intervallo di IP privati e qualsiasi indirizzo situato all’interno della stesso.
 
 1. Premi `CTRL + X` per abbandonare il file di configurazione di rete
 2. Premi il tasto `Y` per salvare le modifiche e infine premi `Invio`
 3. Riavvia il server
-4. Ripeti tutti gli step da 1 a 5 per gli altri server e attribuisci a ciascuno di essi un indirizzo IP unico appartenente alla tua gamma interna. Subito dopo, i tuoi server potranno comunicare tra di loro all’interno della rete privata.
+4. Ripeti tutti gli step da 1 a 5 per gli altri server e attribuisci a ciascuno di essi un indirizzo IP unico appartenente alla tuo intervallo. Subito dopo, i tuoi server potranno comunicare tra di loro all’interno della rete privata.
 
 
 #### Windows
 
-In questo esempio, utilizziamo una gamma di indirizzi IP interni di *192.168.0.0/16*.
+In questo esempio, utilizziamo un intervallo di indirizzi IP di *192.168.0.0/16*.
 
 
 - Connettiti al tuo server Windows tramite il desktop remoto
@@ -233,14 +233,14 @@ In questo esempio, utilizziamo una gamma di indirizzi IP interni di *192.168.0.0
 
 - Clicca su `Utilizza il seguente indirizzo IP`{.action}.
 
-    - In `Indirizzo IP`{.action} inserisci un indirizzo IP della tua gamma interna
+    - In `Indirizzo IP`{.action} inserisci un indirizzo IP del tuo intervallo
     - In `Subnet mask`{.action} inserisci 255.255.0.0
 
 ![Use the following IP address](images/windows_use_following_ip_address.png){.thumbnail}
 
 - Clicca sul tasto `OK`{.action} per salvare le modifiche
 - Riavvia il server
-- Ripeti tutti gli step per gli altri server e attribuisci ad ognuno un indirizzo IP unico appartenente alla tua gamma interna. Subito dopo, i tuoi server potranno comunicare tra di loro all’interno della rete privata.
+- Ripeti tutti gli step per gli altri server e attribuisci ad ognuno un indirizzo IP unico appartenente al tuo intervallo. Subito dopo, i tuoi server potranno comunicare tra di loro all’interno della rete privata.
 
 ## Per saperne di più
 
