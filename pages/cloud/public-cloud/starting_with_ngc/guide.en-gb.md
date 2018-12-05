@@ -41,7 +41,7 @@ For now, we'll focus on the command line client `openstack`.
 ### Configure your environment
 
 You need first to create a user access like describe here https://docs.ovh.com/gb/en/public-cloud/configure_user_access_to_horizon/ and 
-then click on the three-dot icon at the end of the line (`...`{.action}). Next, click the `Download Open OpenStack configuration file`{.action} link.
+then click on the three-dot icon at the end of the line (`...`{.action}). Next, click the `Download OpenStack configuration file`{.action} link.
 
 Save the file as `openrc.sh` somewhere you can access it.
 
@@ -51,7 +51,7 @@ If you are under Windows, please follow this link to setup the OpenStack client 
 
 #### Under Linux
 
-Use your favorite package manager `apt`, `yum`, `emerge`, ... to install the `python-openstackclient` package and source the configuration file previously saved `. ./openrc.sh`.
+If you are under an Unix-like OS, use your favorite package manager `apt`, `yum`, `emerge`, ... to install the `python-openstackclient` package and source the configuration file previously saved `. ./openrc.sh`.
 
 ### Create a NGC VM from command line
 
@@ -63,14 +63,14 @@ openstack keypair create mykey > mykey.pem
 
 Then, we need to gather information such as:
 
-- the image ID `openstack image list --name 'Nvidia GPU Cloud (NGC)'`
-- the flavor `'t1-45'`
-- the network ID `openstack network list --name 'Ext-Net'`
+- the SOURCE ID `openstack image list --name 'Nvidia GPU Cloud (NGC)'`
+- the FLAVOR `'t1-45'`
+- the NETWORK ID `openstack network list --name 'Ext-Net'`
 
 Finally, create the VM with
 
 ```shell
-openstack server create --key-name mykey --image $SOURCE_ID --flavor $FLAVOR_ID --network $NETWORK_ID my_vm
+openstack server create --key-name mykey --image $SOURCE_ID --flavor $FLAVOR --network $NETWORK_ID my_vm
 ```
 
 > [!warning]
