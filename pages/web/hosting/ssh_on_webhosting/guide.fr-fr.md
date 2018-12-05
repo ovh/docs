@@ -141,127 +141,142 @@ php.ORIG.5_3 monScript.php
 ### Empreintes de nos clés publiques (sera à valider lors de votre première connexion en SSH)
 Une validation de la clé publique vous sera demandé lors de votre première connexion sur le serveur.
 
-
 > [!faq]
 >
-> Cluster002
->> 
->> 2048 MD5:59:7f:56:82:24:10:87:16:81:e4:d9:81:fb:cf:ad:a5 ssh.cluster002.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:XeKMErcIcIyNTGEqBNU4KgoWitKM7jzbHZdniFUGEME ssh.cluster002.ovh.net (RSA)
->> 
->> 
-> Cluster003
->> 
->> 2048 MD5:59:7f:56:82:24:10:87:16:81:e4:d9:81:fb:cf:ad:a5 ssh.cluster003.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:XeKMErcIcIyNTGEqBNU4KgoWitKM7jzbHZdniFUGEME ssh.cluster003.ovh.net (RSA)
->> 
->> 
-> Cluster005
->> 
->> 2048 MD5:1a:5e:55:da:b0:b9:53:1e:09:33:eb:30:43:31:64:59 ssh.cluster005.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:h9pa+J2x4nqFUNiIDi/gyPY61OwhaC1PoAXQH/Fupqs ssh.cluster005.ovh.net (RSA)
->> 
->> 
-> Cluster006
->> 
->> 2048 MD5:2f:f3:57:46:ce:54:5d:06:be:5c:82:a4:0b:ed:81:d1 ssh.cluster006.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:PUQMDCkIagO1ltct0dSxuG6f3UxF3r6KVDpWZbYFwjM ssh.cluster006.ovh.net (RSA)
->> 
->> 
-> Cluster007
->> 
->> 2048 MD5:0e:7a:cb:ad:e3:3a:67:92:f4:3d:24:db:53:75:3a:df ssh.cluster007.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:ACImqZ9DPplf6qlDB2tnK8nZCco2udxsRfxdUakziTs ssh.cluster007.ovh.net (RSA)
->> 
->> 
-> Cluster010
->> 
->> 2048 MD5:52:f8:78:4e:5f:6e:05:63:dd:4b:9e:d9:72:2f:04:87 ssh.cluster010.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:oNTxGop/dkoiQtdIEiaBRsMb4/tBsHCweS6Tp14A+Bg ssh.cluster010.ovh.net (RSA)
->> 
->> 
-> Cluster011
->> 
->> 2048 MD5:3f:c7:97:25:8d:24:1f:a1:03:b1:a5:20:0b:b3:1e:ad ssh.cluster011.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:7Gg64Fv66gYLt91BWIj2l9YfcsPXtcZaef5CqueTFg8 ssh.cluster011.ovh.net (RSA)
->> 
->> 
-> Cluster012
->> 
->> 2048 MD5:cd:72:7c:81:db:00:63:5d:d9:0d:96:7b:4b:c6:cd:97 ssh.cluster012.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:m65ntn6YQheOp7k6kVBd8YBY4XUC4mScxlwWqKIHEmQ ssh.cluster012.ovh.net (RSA)
->> 
->> 
-> Cluster013
->> 
->> 2048 MD5:a6:d3:8a:a5:5d:85:6f:29:e8:74:df:41:19:22:c0:72 ssh.cluster013.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:hcBosB/lzVaR1XgmyiGiw/1agKAdCjN63mv+vWNAHEs ssh.cluster013.ovh.net (RSA)
->> 
->> 
-> Cluster014
->> 
->> 2048 MD5:78:b6:83:cd:5f:08:e9:fe:de:08:f3:eb:dd:09:4a:ce ssh.cluster014.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:4IB8ujyHoNaoOMnHOtWByrHTQStqkiHczD7Nf5inpmE ssh.cluster014.ovh.net (RSA)
->> 
->> 
-> Cluster015
->> 
->> 2048 MD5:0a:dd:5f:f7:4d:f4:57:79:a6:2f:96:83:c6:d2:6e:37 ssh.cluster015.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:4/DMom7RrUB0Hv9PrCMjsfsJvTmVKrXyPZUt7lB7iEE ssh.cluster015.ovh.net (RSA)
->> 
->> 
-> Cluster017
->> 
->> 2048 MD5:a6:d3:8a:a5:5d:85:6f:29:e8:74:df:41:19:22:c0:72 ssh.cluster017.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:hcBosB/lzVaR1XgmyiGiw/1agKAdCjN63mv+vWNAHEs ssh.cluster017.ovh.net (RSA)
->> 
->> 
-> Cluster020
->> 
->> 2048 MD5:39:5c:f9:ba:37:c2:b2:dd:0c:06:3f:ea:f2:50:fe:75 ssh.cluster020.hosting.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:ld+oa9+HjvyRunGbyRGHX6BsYTnQy2Mmzup16ViPC68 ssh.cluster020.hosting.ovh.net (RSA)
->> 
->> 
-> Cluster021
->> 
->> 2048 MD5:40:87:f4:87:a3:10:96:16:06:74:cc:0e:b3:a1:a5:1c ssh.cluster021.hosting.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:UvPbVboOiaocVPEqENI9QIFRhaf5jGahc72xmDQ5wGM ssh.cluster021.hosting.ovh.net (RSA)
->> 
->> 
-> Cluster023
->> 
->> 2048 MD5:5b:93:ed:80:50:dc:f0:5e:bb:a0:a7:f7:ca:76:1e:c4 ssh.cluster023.hosting.ovh.net (RSA)
->> 
->> 
->> 2048 SHA256:4GKTsSefE7aUjrf976U9lu8o75npkTd6qXQjqxETUnQ ssh.cluster023.hosting.ovh.net (RSA)
->> 
->> 
+> **Cluster002**
+>
+> 2048 MD5:59:7f:56:82:24:10:87:16:81:e4:d9:81:fb:cf:ad:a5 ssh.cluster002.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:XeKMErcIcIyNTGEqBNU4KgoWitKM7jzbHZdniFUGEME ssh.cluster002.ovh.net (RSA)
+> 
+> 
+> **Cluster003**
+> 
+> 2048 MD5:59:7f:56:82:24:10:87:16:81:e4:d9:81:fb:cf:ad:a5 ssh.cluster003.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:XeKMErcIcIyNTGEqBNU4KgoWitKM7jzbHZdniFUGEME ssh.cluster003.ovh.net (RSA)
+> 
+> 
+> **Cluster005**
+> 
+> 2048 MD5:1a:5e:55:da:b0:b9:53:1e:09:33:eb:30:43:31:64:59 ssh.cluster005.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:h9pa+J2x4nqFUNiIDi/gyPY61OwhaC1PoAXQH/Fupqs ssh.cluster005.ovh.net (RSA)
+> 
+> 
+> **Cluster006**
+> 
+> 2048 MD5:2f:f3:57:46:ce:54:5d:06:be:5c:82:a4:0b:ed:81:d1 ssh.cluster006.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:PUQMDCkIagO1ltct0dSxuG6f3UxF3r6KVDpWZbYFwjM ssh.cluster006.ovh.net (RSA)
+> 
+> 
+> **Cluster007**
+> 
+> 2048 MD5:0e:7a:cb:ad:e3:3a:67:92:f4:3d:24:db:53:75:3a:df ssh.cluster007.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:ACImqZ9DPplf6qlDB2tnK8nZCco2udxsRfxdUakziTs ssh.cluster007.ovh.net (RSA)
+> 
+> 
+> **Cluster010**
+> 
+> 2048 MD5:52:f8:78:4e:5f:6e:05:63:dd:4b:9e:d9:72:2f:04:87 ssh.cluster010.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:oNTxGop/dkoiQtdIEiaBRsMb4/tBsHCweS6Tp14A+Bg ssh.cluster010.ovh.net (RSA)
+> 
+> 
+> **Cluster011**
+> 
+> 2048 MD5:3f:c7:97:25:8d:24:1f:a1:03:b1:a5:20:0b:b3:1e:ad ssh.cluster011.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:7Gg64Fv66gYLt91BWIj2l9YfcsPXtcZaef5CqueTFg8 ssh.cluster011.ovh.net (RSA)
+> 
+> 
+> **Cluster012**
+> 
+> 2048 MD5:cd:72:7c:81:db:00:63:5d:d9:0d:96:7b:4b:c6:cd:97 ssh.cluster012.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:m65ntn6YQheOp7k6kVBd8YBY4XUC4mScxlwWqKIHEmQ ssh.cluster012.ovh.net (RSA)
+> 
+> 
+> **Cluster013**
+> 
+> 2048 MD5:a6:d3:8a:a5:5d:85:6f:29:e8:74:df:41:19:22:c0:72 ssh.cluster013.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:hcBosB/lzVaR1XgmyiGiw/1agKAdCjN63mv+vWNAHEs ssh.cluster013.ovh.net (RSA)
+> 
+> 
+> **Cluster014**
+> 
+> 2048 MD5:78:b6:83:cd:5f:08:e9:fe:de:08:f3:eb:dd:09:4a:ce ssh.cluster014.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:4IB8ujyHoNaoOMnHOtWByrHTQStqkiHczD7Nf5inpmE ssh.cluster014.ovh.net (RSA)
+> 
+> 
+> **Cluster015**
+> 
+> 2048 MD5:0a:dd:5f:f7:4d:f4:57:79:a6:2f:96:83:c6:d2:6e:37 ssh.cluster015.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:4/DMom7RrUB0Hv9PrCMjsfsJvTmVKrXyPZUt7lB7iEE ssh.cluster015.ovh.net (RSA)
+> 
+> 
+> **Cluster017**
+> 
+> 2048 MD5:a6:d3:8a:a5:5d:85:6f:29:e8:74:df:41:19:22:c0:72 ssh.cluster017.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:hcBosB/lzVaR1XgmyiGiw/1agKAdCjN63mv+vWNAHEs ssh.cluster017.ovh.net (RSA)
+> 
+> 
+> **Cluster020**
+> 
+> 2048 MD5:39:5c:f9:ba:37:c2:b2:dd:0c:06:3f:ea:f2:50:fe:75 ssh.cluster020.hosting.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:ld+oa9+HjvyRunGbyRGHX6BsYTnQy2Mmzup16ViPC68 ssh.cluster020.hosting.ovh.net (RSA)
+> 
+> 
+> **Cluster021**
+> 
+> 2048 MD5:40:87:f4:87:a3:10:96:16:06:74:cc:0e:b3:a1:a5:1c ssh.cluster021.hosting.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:UvPbVboOiaocVPEqENI9QIFRhaf5jGahc72xmDQ5wGM ssh.cluster021.hosting.ovh.net (RSA)
+> 
+>
+> **Cluster023**
+> 
+> 2048 MD5:5b:93:ed:80:50:dc:f0:5e:bb:a0:a7:f7:ca:76:1e:c4 ssh.cluster023.hosting.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:4GKTsSefE7aUjrf976U9lu8o75npkTd6qXQjqxETUnQ ssh.cluster023.hosting.ovh.net (RSA)
+> 
+> 
+> **Cluster 26**
+> 
+> 2048 MD5:c3:48:c7:83:ab:8b:24:aa:ce:8e:87:f8:26:2a:8c:69 ssh.cluster026.hosting.ovh.net (RSA)
+> 
+> 
+> 2048 SHA256:U5p+82exe445BSUWwv4DDZ4gR3kmRJFhL9wyX86J84w ssh.cluster026.hosting.ovh.net (RSA)
+> 
+> 
+> **Cluster 27**
+> 
+> 4096 MD5:a2:ea:22:8a:41:b2:b0:3d:00:fb:18:ff:5e:f8:14:9c ssh.cluster027.hosting.ovh.net (RSA)
+> 
+> 
+> 4096 SHA256:yPY3hcMdWQXh5JwK4r3krxM0YG4bqaWPCEAxgiVgL80  ssh.cluster027.hosting.ovh.net (RSA)
+> 
+>
 >
