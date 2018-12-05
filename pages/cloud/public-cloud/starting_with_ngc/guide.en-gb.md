@@ -1,6 +1,7 @@
+
 ---
 title: Getting started with NGC on OpenStack
-excerpt: Use Nvidia GPU Cloud to speed up your GPU accelerated development
+excerpt: Use NVIDIA GPU Cloud to speed up your GPU accelerated development
 slug: getting_started_with_ngc
 ---
 
@@ -8,7 +9,7 @@ slug: getting_started_with_ngc
 
 ## Objective
 
-The goal is to gather in one place the information to guide you to your first Nvidia GPU Cloud container instance.
+The goal is to gather in one place the information to guide you to your first NVIDIA GPU Cloud container instance.
 
 NGC is available via Virtual Machine on OVH Public Cloud which is based on OpenStack.
 
@@ -27,8 +28,8 @@ The second step will be to create an instance into the newly created project htt
 
 In the case of NGC, be sure to pick:
 
-- `Nvidia GPU Cloud (NGC)` as your image
-- a GPU enabled flavor like `t1-45` or `t1-90` for 1 or 2 Nvidia V100.
+- `NVIDIA GPU Cloud (NGC)` as your image
+- a GPU enabled flavor like `t1-45` or `t1-90` for 1 or 2 NVIDIA® Tesla® V100.
 
 ## Create an NGC instance via CLI
 
@@ -55,7 +56,7 @@ If you are under an Unix-like OS, use your favorite package manager `apt`, `yum`
 
 ### Create a NGC VM from command line
 
-The first step is to have an SSH Key pair. You can create one with 
+The first step is to have a SSH Key pair. You can create one with:
 
 ```shell
 openstack keypair create mykey > mykey.pem
@@ -63,7 +64,7 @@ openstack keypair create mykey > mykey.pem
 
 Then, we need to gather information such as:
 
-- the SOURCE ID `openstack image list --name 'Nvidia GPU Cloud (NGC)'`
+- the SOURCE ID `openstack image list --name 'NVIDIA GPU Cloud (NGC)'`
 - the FLAVOR `'t1-45'`
 - the NETWORK ID `openstack network list --name 'Ext-Net'`
 
@@ -94,7 +95,7 @@ Once you are log in the VM, you can start pulling and running docker container.
 
 The list of available image is available here https://ngc.nvidia.com/catalog/containers
 
-If you woud like to try something visual, try Nvidia DIGITS here https://github.com/NVIDIA/DIGITS/tree/master/examples/semantic-segmentation and pull your first container
+If you would like to try something visual, try NVIDIA DIGITS here https://github.com/NVIDIA/DIGITS/tree/master/examples/semantic-segmentation and pull your first container
 
 ```shell
 docker pull nvcr.io/nvidia/digits:18.11-tensorflow
@@ -110,7 +111,7 @@ If you would like to automated the above steps, look at the `-f json` option of 
 Ex:
 
 ```shell
-SOURCE_ID=`openstack image list --name 'Nvidia GPU Cloud (NGC)' -f json | jq -r '.[0].ID'`
+SOURCE_ID=`openstack image list --name 'NVIDIA GPU Cloud (NGC)' -f json | jq -r '.[0].ID'`
 ```
 
 Join our community of users on <https://community.ovh.com/en/>.
