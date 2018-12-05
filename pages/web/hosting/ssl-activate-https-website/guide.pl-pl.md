@@ -91,7 +91,7 @@ Pamiętaj, że nawet jeśli na Twoim hostingu zainstalowany jest certyfikat SSL,
 
 Zwróć na przykład szczególną uwagę na adresy URL używane w kodzie Twojej strony WWW. Jeśli to możliwe:
 
-- stosuj adresy względne, np.: `./img/header.png`;
+- stosuj adresy względne, np.: `../img/header.png`;
 - unikaj stosowania adresów bezwzględnych zawierających protokół HTTP, np.: `http://mypersonaldomain.ovh/img/header.png`.
 
 Jeśli to konieczne, dostosuj odpowiednio kod Twojej strony WWW. Jeśli używasz strony zbudowanej w oparciu o gotowy system CMS (np. WordPress), struktura szablonu jest zazwyczaj przygotowana do aktywacji HTTPS. W tym przypadku nie musisz wprowadzać modyfikacji w kodzie Twojej strony WWW.

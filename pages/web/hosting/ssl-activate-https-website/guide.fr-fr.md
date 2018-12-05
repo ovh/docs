@@ -91,7 +91,7 @@ Sachez que même si votre hébergement dispose d'un certificat SSL, le contenu h
 
 Par exemple, apportez une attention particulière aux adresses que vous utilisez dans le code de votre site. Si possible :
 
-- préférez l'utilisation d'adresses relatives comme : `./img/header.png` ;
+- préférez l'utilisation d'adresses relatives comme : `../img/header.png` ;
 - évitez les adresses absolues comportant le protocole HTTP, comme : `http://mypersonaldomain.ovh/img/header.png`.
 
 Si cela est nécessaire, vous devrez alors adapter le code de votre site en conséquence. Si cependant vous utilisez un site clés en main (comme WordPress), la structure de ces derniers est généralement déjà prête à l'emploi pour passer en HTTPS. Vous ne devriez donc pas avoir à faire de modifications dans le code-même de votre site.
