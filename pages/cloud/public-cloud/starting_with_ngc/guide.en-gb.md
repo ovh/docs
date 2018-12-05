@@ -94,6 +94,15 @@ Once you are log in the VM, you can start pulling and running docker container.
 
 The list of available image is available here https://ngc.nvidia.com/catalog/containers
 
+If you woud like to try something visual, try Nvidia DIGITS here https://github.com/NVIDIA/DIGITS/tree/master/examples/semantic-segmentation and pull your first container
+
+```shell
+docker pull nvcr.io/nvidia/digits:18.11-tensorflow
+docker run -p 8888:5000 nvcr.io/nvidia/digits:18.11-tensorflow
+```
+
+Then navigate to `http://your_vm_ip:8888`. More options and explanations here https://ngc.nvidia.com/catalog/containers/nvidia%2Fdigits.
+
 ## Go further
 
 If you would like to automated the above steps, look at the `-f json` option of the openstack client and the [`jq`](https://stedolan.github.io/jq/manual/) JSON command line tool parser.
