@@ -10,7 +10,7 @@ section: FAQ
 ## FAQ OverTheBox
 
 ### Ou puis-trouver des documentations techniques à propos d'OverTheBox ?
-Vous pouvez trouver des guides sur [https://docs.ovh.com/fr/overthebox/](https://docs.ovh.com/fr/overthebox/){.external} .
+Vous pouvez trouver des guides sur [https://docs.ovh.com/fr/overthebox/](https://docs.ovh.com/fr/overthebox/){.external}  
 
 
 ### Quels sont les opérateurs compatibles avec OverTheBox ?
@@ -23,7 +23,7 @@ L'OverTheBox est un équipement réseau qui se branche sur votre réseau local c
 
 ### Dois-je avoir un réseau spécifique pour utiliser OverTheBox ?
 Tous les réseaux informatiques (même les plus basiques) sont compatibles avec le système OverTheBox. Il est donc possible d'utiliser vos propres wifi (suivant votre type d'OverTheBox) ou encore vos boitiers CPL en fonction de la qualité du réseau électrique. Il sera cependant nécessaire de modifier certains paramètres de vos Box comme l'adresse IP ou le DHCP. Ces manipulations sont expliquées dans les guides d'installation suivant :  
-[Mes 10 premières minutes avec OverTheBox intel](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}
+[Mes 10 premières minutes avec OverTheBox intel](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}  
 [Mes 10 premières minutes avec OverTheBox IT](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}  
 [Mes 10 premières minutes avec OverTheBox PLUS](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-plus/){.external}   
 
@@ -74,14 +74,14 @@ Si vous avez commandé le matériel OVH certifié compatible, ce dernier sera ex
 
 
 ### Comment fonctionne la facturation d'OverTheBox ?
-Suivant le service auquel vous avez souscrit, l'abonnement au sera au prix mensuel de 9,99€, 19,99€ ou 39,99€ HT. Ce montant est prélevé automatiquement via le moyen de paiement enregistré. Actuellement seul la carte bancaire ne peut être enregistrée comme moyen de paiement. Ce service est sans engagement de durée Le matériel OVH certifié compatible est vendu (hors frais de port) à 149,99€ HT (OverTheBox IT) ou 249,99€ HT (OverTheBox Plus).
+Suivant le service auquel vous avez souscrit, l'abonnement au sera au prix mensuel de 9,99€, 19,99€ ou 39,99€ HT. Ce montant est prélevé automatiquement via le moyen de paiement enregistré. Ce service est sans engagement de durée Le matériel OVH certifié compatible est vendu (hors frais de port) à 149,99€ HT (OverTheBox IT) ou 249,99€ HT (OverTheBox Plus).
 
 ### Est-il possible de virtualiser OverTheBox ?
-Oui il est possible de virtualiser OverTheBox, nous ne proposons pas de support pour cet usage. Cependant nous vous proposons un guide d'installation d'OverTheBox sur le logiciel de virtualisation VirtualBox : [Tester OverTheBox sur VirtualBox](../advanced/advanced_tester_overthebox_sur_virtualbox/guide.fr-fr.md){.ref} .
+Oui il est possible de virtualiser OverTheBox, nous ne proposons pas de support pour cet usage. Il vous faudra pour ceci, suivre la même procédure que l'installation sur un materiel personnel, depuis une une machine virtuel compatible linux : [Installer l’image OverTheBox sur votre matériel](https://docs.ovh.com/fr/overthebox/installer-limage-overthebox-sur-votre-materiel//){.external}   
 
 
 ### Est-il possible de réinitialiser son OverTheBox ?
 Oui c'est possible via différentes méthodes expliquées dans ces guides :  
-[Rétablir la configuration d’usine OverTheBox Intel](https://docs.ovh.com/fr/overthebox/retablir-la-configuration-dusine-otb-intel/){.external} .
-[Rétablir la configuration d’usine OverTheBox IT](https://docs.ovh.com/fr/overthebox/retablir-la-configuration-dusine/){.external} .
-[Rétablir la configuration d’usine OverTheBox Plus](https://docs.ovh.com/fr/overthebox/retablir-la-configuration-dusine/plus/){.external} .
+[Rétablir la configuration d’usine OverTheBox Intel](https://docs.ovh.com/fr/overthebox/retablir-la-configuration-dusine-otb-intel/){.external}  
+[Rétablir la configuration d’usine OverTheBox IT](https://docs.ovh.com/fr/overthebox/retablir-la-configuration-dusine/){.external}  
+[Rétablir la configuration d’usine OverTheBox Plus](https://docs.ovh.com/fr/overthebox/retablir-la-configuration-dusine/plus/){.external}  
