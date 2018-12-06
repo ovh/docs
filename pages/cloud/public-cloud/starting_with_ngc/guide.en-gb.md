@@ -1,6 +1,6 @@
 ---
 title: Getting started with NGC on OpenStack
-excerpt: Use NVIDIA GPU Cloud to speed up your GPU accelerated development
+excerpt: Use NVIDIA GPU Cloud to speed up your GPU-accelerated development
 slug: getting_started_with_ngc
 ---
 
@@ -8,12 +8,11 @@ slug: getting_started_with_ngc
 
 ## Objective
 
-The goal is to gather in one place the information to guide you to your first NVIDIA GPU Cloud container instance.
+The goal is to guide you to your first NVIDIA GPU Cloud container instance.
 
-NGC is available via Virtual Machine on OVH Public Cloud which is based on OpenStack.
+The first part of the guide will be OVH specific for basic usage.
 
-The first part of the guide will be OVH specific while the second part will be generic to OpenStack in order to automate NGC instance management.
-
+The second part will be more advanced, using OpenStack client to automate NGC instance management.
 
 ## Prerequisites
 
@@ -30,30 +29,27 @@ In the case of NGC, be sure to pick:
 - `NVIDIA GPU Cloud (NGC)` as your image
 - a GPU enabled flavor like `t1-45` or `t1-90` for 1 or 2 NVIDIA® Tesla® V100.
 
-## Create an NGC instance via CLI
+## Create an NGC instance via the Command Line Interface
 
-One of the benefit of using OVH is to have access to industry standard API and protocols.
-
-You can manage your OVH Public Cloud instances using standard OpenStack API and tools: `terraform`, `ansible`, ...
+You can manage your OVH Public Cloud instances using the standard OpenStack API and tools: `terraform`, `ansible`, ...
 
 For now, we'll focus on the command line client `openstack`.
 
-### Configure your environment
+### Configure your local environment
 
-You need first to create a user access like describe here https://docs.ovh.com/gb/en/public-cloud/configure_user_access_to_horizon/ and 
-then click on the three-dot icon at the end of the line (`...`{.action}). Next, click the `Download OpenStack configuration file`{.action} link.
+You first need to create a user access like describe here https://docs.ovh.com/gb/en/public-cloud/configure_user_access_to_horizon/ and then click on the three-dot icon at the end of the line (`...`{.action}). Next, click the `Download OpenStack configuration file`{.action} link.
 
-Save the file as `openrc.sh` somewhere you can access it.
+Save the file as `openrc.sh`.
 
-#### Under Windows
+#### From Windows
 
 If you are under Windows, please follow this link to setup the OpenStack client https://github.com/naturalis/openstack-docs/wiki/Howto:-Installing-and-configuring-the-OpenStack-commandline-tools-on-Windows
 
-#### Under Linux
+#### From Linux
 
 If you are under an Unix-like OS, use your favorite package manager `apt`, `yum`, `emerge`, ... to install the `python-openstackclient` package and source the configuration file previously saved `. ./openrc.sh`.
 
-### Create a NGC VM from command line
+### Create a NGC VM
 
 The first step is to have a SSH Key pair. You can create one with:
 
@@ -63,9 +59,9 @@ openstack keypair create mykey > mykey.pem
 
 Then, we need to gather information such as:
 
-- the SOURCE ID `openstack image list --name 'NVIDIA GPU Cloud (NGC)'`
-- the FLAVOR `'t1-45'`
-- the NETWORK ID `openstack network list --name 'Ext-Net'`
+- the SOURCE ID: `openstack image list --name 'NVIDIA GPU Cloud (NGC)'`
+- the FLAVOR: `'t1-45'`
+- the NETWORK ID: `openstack network list --name 'Ext-Net'`
 
 Finally, create the VM with
 
