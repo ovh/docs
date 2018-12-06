@@ -6,7 +6,7 @@ section: 'Configuration de l''hébergement'
 order: 3
 ---
 
-**Dernière mise à jour le 25/09/2018**
+**Dernière mise à jour le 06/12/2018**
 
 ## Objectif
 
@@ -131,6 +131,11 @@ Le choix du mode permet de gérer le comportement du cache des fichiers statique
 |---|---|---|
 |*Production*|Maximise la mise en cache des fichiers statiques sur les navigateurs internet.|Les erreurs PHP n'apparaissent pas sur votre site.|
 |*Development*|Aucun cache n'est appliqué.|Les erreurs PHP apparaissent sur votre site.|
+
+> [!primary]
+>
+> Pour les versions 7.1 et supérieures de PHP, les erreurs apparaitront sur le site, quel que soit le mode utilisé. 
+> 
 
 Pour modifier le mode utilisé par votre hébergement web, il existe deux possibilités :
 
