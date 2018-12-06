@@ -61,7 +61,7 @@ Le premier niveau de redondance concerne le nombre de défaillances que le clust
 
 En complément du nombre de défaillance supporté, vSAN propose de choisir entre deux méthodes de protection des données, le mirroring et l'erasure coding. Ces mécanismes fonctionnent de manière analogue aux grappes RAID utilisées par les contrôleurs de disques durs, mais ils sont appliqués directement aux objets et donc aux composants.
 
-* Mirroring (RAID 1) : il s'agit du niveau par défaut. Chaque objet est écrit en double sur deux hôtes différents (miroir) ;
+* Mirroring (RAID 1) : il s'agit du niveau par défaut. Chaque objet est écrit simultanément sur deux hôtes différents (miroir) ;
 * Erasure Coding + FTT=1 (RAID 5) : chaque objet est découpé en trois composants et un quatrième composant de parité est calculé. Il permet de retrouver les données manquantes en cas de perte d'un des composants. Pour écrire quatre composants, il faut donc bien quatre hôtes.
 * Erasure Coding + FTT=1 (RAID 6) : chaque objet est découpé en quatre composants de données et deux composants de parité. Ils permettent de recalculer deux morceaux manquants. Là encore, pour écrire six composants à des endroits différents et assurer la redondance, il faut donc bien autant d'hôtes.
 
