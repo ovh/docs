@@ -84,13 +84,13 @@ Get the VM IP with `openstack server show my_vm` and SSH into it with
 ssh -i ./mykey.pem ubuntu@<VM IP>
 ```
 
-### Your first NGC docker
+### Your first NGC container
 
-Once you are log in the VM, you can start pulling and running docker container.
+Once you are logged in the VM, you can start pulling and running the container.
 
-The list of available image is available here https://ngc.nvidia.com/catalog/containers
+The list of available containers is available here https://ngc.nvidia.com/catalog/containers (TensorFlow, Caffe2, DIGITS, Matab, MXNet, PyTorch, TensorFlow, RAPIDS, ...)
 
-If you would like to try something visual, try NVIDIA DIGITS here https://github.com/NVIDIA/DIGITS/tree/master/examples/semantic-segmentation and pull your first container
+Exemple of semantic segmentation with [NVIDIA DIGITS](https://github.com/NVIDIA/DIGITS/tree/master/examples/semantic-segmentation).
 
 ```shell
 docker pull nvcr.io/nvidia/digits:18.11-tensorflow
