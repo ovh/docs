@@ -74,14 +74,21 @@ Finished processing dependencies for djehouty==<version>
 
 The following examples assume that you already have a working stream. Moreover, you will have to change the address and the ports of the endpoint for the one you have been assigned to. To retrieve the address and the ports of your endpoint, head to the **About** page in the Manager. To send log messages, just use the handler of the desired format with the following parameters ('*' means required):
 
-|Parameter|Gelf|LTSV|
-|---|---|---|
-|host *|your assigned endpoint. Ex : `<your_cluster>.logs.ovh.com`||
-|port *|Refer to the PaaS Logs ports list||
-|level|logging.DEBUG or highter||
-|use_tls|True or False (depends on the chosen port)||
-|static_fields *|`{"X-OVH-TOKEN": "xxxx"}`||
-|null_character|True|Not Supported|
+|Parameter|Gelf / LTSV|
+|---|---|
+|host|your endpoint `<your_cluster>.logs.ovh.com` (Same url than your Graylog dashboard)|
+|port|Refer to the PaaS Logs ports list below|
+|level|logging.DEBUG or highter|
+|use_tls|`True` or `False` (depends on the chosen port)|
+|static_fields *|`{"X-OVH-TOKEN": "xxxx"}`|
+|null_character|`True` (LTSV: Not Supported)|
+
+||Syslog RFC5424|Gelf|LTSV line|LTSV nul|Cap’n’Proto|
+|---|---|---|---|---|---|
+|TCP/TLS|6514|12202|12201|12200|12204|
+|TCP|514|2202|2201|2200|2204|
+|UDP|514|2202|Not Supported|Not Supported|Not Supported|
+
 
 The complete list of parameters supported by Djehouty can be found on [github](https://github.com/ovh/djehouty){.external}.
 
