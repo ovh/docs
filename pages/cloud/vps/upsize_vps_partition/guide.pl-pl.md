@@ -1,30 +1,30 @@
 ---
-title: Zmiana rozmiaru partycji na serwerze VPS po zmianie oferty
+title: 'Zmiana rozmiaru partycji na serwerze VPS po zmianie oferty'
 slug: zmiana-rozmiaru-partycji-vps-upgrade
-section: Pierwsze kroki
+section: 'Pierwsze kroki'
 ---
 
-**Ostatnia aktualizacja z dn. 2017-11-14 r.**
+**Ostatnia aktualizacja z dnia 06-12-2018**
 
 ## Wprowadzenie
 
-Podczas zmiany oferty serwera VPS może okazać się konieczna zmiana rozmiaru partycji w Twojej przestrzeni dyskowej. Poniżej przedstawiamy jakie kroki należy w tym celu wykonać.
+Podczas zmiany oferty serwera VPS może okazać się konieczna zmiana rozmiaru partycji w Twojej przestrzeni dyskowej. Poniżej przedstawiamy, jakie kroki należy w tym celu wykonać.
 
 > [!warning]
 >
-> Zmiana rozmiaru partycji skutkuje nieodwracalną utratą danych. OVH nie ponosi odpowiedzialności za ich zniszczenie lub utratę. Przed przystąpieniem do jakichkolwiek czynności należy wykonać odpowiedną kopię zapasową swoich danych.
+> Zmiana rozmiaru partycji skutkuje nieodwracalną utratą danych. OVH nie ponosi odpowiedzialności za ich zniszczenie lub utratę. Przed przystąpieniem do jakichkolwiek czynności należy wykonać odpowiednią kopię zapasową swoich danych.
 >
 
 ## Wymagania początkowe
 
-- Dostęp poprzez SSH do serwera VPS (dostęp root).
-- Ponowne uruchomienie serwera w [Trybie Rescue]( https://docs.ovh.com/pl/vps/rescue/).
+- Dostęp poprzez SSH do serwera VPS (dostęp root)
+- Ponowne uruchomienie serwera w [Trybie Rescue](https://docs.ovh.com/pl/vps/rescue/)
 
 ## W praktyce
 
-Po zmianie oferty serwera RAM i procesor (CPU) dostosowywane są automatycznie. Nie dotyczy to jednak przestrzeni dyskowej.
+Po zmianie oferty serwera na wyższą ilość pamięci RAM i procesor (CPU) dostosowywane są automatycznie. Nie dotyczy to jednak przestrzeni dyskowej.
 
-**W niniejszej instrukcji przedstawione są poszczególne kroki potrzebne do zwiększenia przestrzeni dyskowej**
+**W niniejszej instrukcji przedstawione są poszczególne kroki, które należy wykonać, aby zwiększyć przestrzeń dyskową.**
 
 ### Tworzenie kopii zapasowej danych
 
@@ -32,13 +32,13 @@ Ponieważ w wyniku próby rozszerzenia partycji może dojść do utraty danych, 
 
 ### Odmontowanie partycji
 
-Po zalogowaniu się do serwera VPS w [trybie Rescue]( https://docs.ovh.com/pl/vps/rescue/) Twoja partycja zostaje zamontowana automatycznie. W celu dokonania zmiany jej rozmiaru, należy ją najpierw odmontować. Jeśli znasz nazwę swojej partycji, możesz pominąć ten krok. Jeśli jej nie znasz, użyj następującego polecenia:
+Po zalogowaniu się do serwera VPS w [trybie Rescue](https://docs.ovh.com/pl/vps/rescue/) Twoja partycja zostaje zamontowana automatycznie. W celu dokonania zmiany jej rozmiaru, należy ją najpierw odmontować. Jeśli znasz nazwę swojej partycji, możesz pominąć ten krok. Jeśli jej nie znasz, użyj następującego polecenia:
 
 ```sh
 lsblk
 ```
 
-Partycja odpowiadająca trybowi rescue to ta zamontowana w katalogu / będącym faktycznie katalogiem głównym systemu. Natomiast partycja Twojego serwera VPS będzie znajdować się najprawdopodobniej w katalogu podrzędnym do /mnt, może również nie być w ogóle zamontowana.
+Partycja odpowiadająca trybowi Rescue to ta zamontowana w katalogu / będącym faktycznie katalogiem głównym systemu. Natomiast partycja Twojego serwera VPS będzie znajdować się najprawdopodobniej w katalogu podrzędnym do /mnt, może również nie być w ogóle zamontowana.
 
 ```sh
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -56,7 +56,7 @@ umount /dev/sdb1
 
 ### Sprawdzanie systemu plików
 
-Po odmontowaniu partycji należy sprawdzić w systemie plików (`filesystem check`) czy na partycji nie występują błędy. Tu stosuje się poniższe polecenie:
+Po odmontowaniu partycji należy sprawdzić system plików za pomocą `filesystem check`, czy na partycji nie występują błędy. Tu stosuje się poniższe polecenie:
 
 ```sh
 e2fsck -yf /dev/sdb1
@@ -69,9 +69,14 @@ Pass 4: Checking reference counts
 Pass 5: Checking group summary information
 /dev/sdb1: 37870/1310720 files (0.2% non-contiguous), 313949/5242462 blocks
 ```
-> [!warning]
->
-> W razie stwierdzenia obecności błędu typu `bad magic number in superblock` nie należy kontynuować. Na końcu niniejszej instrukcji znajduje się procedura wyjaśniająca, w jaki sposób poradzić sobie z tym problemem.
+
+Jeśli stwierdzisz błąd, podejmij działania stosownie do Twojego przypadku. Poniżej podajemy przykłady najczęściej spotykanych błędów:
+
+- `bad magic number in superblock`: nie kontynuuj. Procedura rozwiązania tego problemu została wyjaśniona w części tego przewodnika: [Jak usunąć błędy bad magic number in superblock](https://docs.ovh.com/pl/vps/zmiana-rozmiaru-partycji-vps-upgrade/#jak-naprawiac-bledy-bad-magic-number-in-superblock);
+
+- `/dev/vdb1 has unsupported feature(s): metadata_csum` a następnie `e2fsck: Get a newer version of e2fsck!`: aktualizuj e2fsck. Jeśli ostatnia wersja nie jest dostępna za pośrednictwem `apt` (lub innego managera pakietów), skompiluj ją ze źródeł.
+
+Powyższa lista nie jest wyczerpująca.
 
 ### Otwieranie aplikacji fdisk
 
@@ -106,7 +111,7 @@ Device Boot Start End Blocks Id System
 
 > [!warning]
 >
-> Kolejny krok jest punktem krytycznym. Jeżeli nie wykonałeś kopii danych, po wykonaniu kolejnej komendy nie będziesz mógł już odzyskać danych.
+> Kolejny krok jest punktem krytycznym, po jego wykonaniu nie ma możliwości przywrócenia danych, jeżeli nie została wykonana ich kopia.
 >
 
 Następnie skasuj partycję za pomocą polecenia `d`{.action}.
@@ -191,9 +196,9 @@ none 100M 0 100M 0% /run/user
 
 Nowy rozmiar partycji znajduje się pod napisem `size`.
 
-### Jak naprawiać błędy `bad magic number in superblock`?
+### Jak naprawiać błędy bad magic number in superblock
 
-Jeśli polecenie `e2fsck`{.action} zwraca komunikat błędu `bad magic number in superblock`, musisz sprawdzić i naprawić filesystem posługując się superblokiem backupowym. W celu przejrzenia dostępnych superbloków backupowych wpisz poniższe polecenie:
+Jeśli polecenie `e2fsck`{.action} zwraca komunikat błędu `bad magic number in superblock`, musisz sprawdzić i naprawić filesystem, posługując się superblokiem backupowym. W celu przejrzenia dostępnych superbloków backupowych wpisz poniższe polecenie:
 
 ```sh
 dumpe2fs /dev/sdb1 | grep superblock
@@ -223,4 +228,4 @@ fsck -b 32768 /dev/sdb1
 
 ## Sprawdź również
 
-Wymieniaj się informacjami z naszą społecznością użytkowników na <https://community.ovh.com>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
