@@ -1,8 +1,8 @@
 ---
-title: Rediriger un nom de domaine géré par OVH
+title: 'Rediriger un nom de domaine géré par OVH'
 slug: redirection-nom-de-domaine
-excerpt: Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVH
-section: Tâches courantes
+excerpt: 'Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVH'
+section: 'Tâches courantes'
 order: 1
 ---
 
@@ -41,7 +41,7 @@ Une fois connecté à votre [espace client OVH](https://www.ovh.com/auth/?action
 
 Le tableau affiche les redirections actives pour votre nom de domaine.
 
-Pour ajouter une redirection, cliquez sur le bouton `Ajouter une redirection`{.action} (*3* sur l'image précédente).
+Pour ajouter une redirection, cliquez sur le bouton `Ajouter une redirection`{.action} (*3* sur l'image ci-dessous).
 
 ![Page principale des redirections](images/create_redirection_global.png){.thumbnail}
 
