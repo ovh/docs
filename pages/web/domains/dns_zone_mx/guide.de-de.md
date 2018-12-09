@@ -1,73 +1,83 @@
 ---
-title: 'Webhosting E-Mail: MX-Konfiguration mit DNS Zone von OVH'
-excerpt: 'Webhosting E-Mail: MX-Konfiguration mit DNS Zone von OVH'
+title: 'MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen'
+excerpt: 'Hier erfahren Sie, wie Sie bei OVH einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen.'
 slug: webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh
 legacy_guide_number: g2012
+section: 'DNS und DNS-Zone'
+order: 4
 ---
 
+**Stand 05.12.2018**
 
-## Sie nutzen ein Mailing-Angebot von OVH
-Wenn Sie ein Webhosting E-Mail-Angebot von OVH nutzen, verwenden sie bitte folgende MX-Server in Ihrer DNS Zone:
+## Einleitung
 
-- Mail-Server [Anti-Virus + Anti-Spam]:
+Der MX-Eintrag (Mail Exchange) legt den für die E-Mail-Adressen der Domain zuständigen E-Mail-Server fest. Dadurch wird Servern, die E-Mails an Ihre Adressen versenden, mitgeteilt, wohin sie diese versenden sollen. Möglicherweise verfügt Ihr Anbieter über mehrere E-Mail-Server. Erstellen Sie in diesem Fall auch mehrere MX-Einträge.
 
+**In dieser Anleitung erfahren Sie, wie Sie bei OVH einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen.**
 
-|Typ|Priorität|Ziel|
-|---|---|---|
-|MX|1|mx1.mail.ovh.net|
-|MX|5|mx2.mail.ovh.net|
-|MX|10|mx3.mail.ovh.net|
+## Voraussetzungen
 
+- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} Zugriff auf die Verwaltung der betreffenden Domain.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Die betreffende Domain verwendet die OVH Konfiguration (das heißt die OVH DNS-Server).
 
+> [!warning]
+>
+> - Wenn Ihre Domain nicht die DNS-Server von OVH verwendet, muss die Änderung über das Interface des Anbieters vorgenommen werden, bei dem die Konfiguration Ihrer Domain verwaltet wird.
+>
+> - Wenn Ihre Domain bei OVH registriert ist, können Sie überprüfen, ob diese die OVH Konfiguration verwendet. Gehen Sie hierzu in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} zur entsprechenden Domain und anschließend auf den Tab `DNS-Server`{.action}.
+>
 
-## Information:
-Derzeit sind die alten MX Server für alle vor dem 23.05.2016 erstellten Mailing-Dienste noch funktional. Wir empfehlen Ihnen dennoch die Verwendung der neuen oben genannten MX Server.
+## Beschreibung
 
+### Schritt 1: Den MX-Eintrag verstehen
 
-## Sie nutzen kein Mailing-Angebot von OVH
-Wenn Sie kein Mailing-Angebot von OVH nutzen, können Sie auch keine E-Mails empfangen, weil Sie nicht über einen Mail-Account verfügen.
-Sie können aber Aliasse (redirections/Weiterleitungen) verwenden.
+Der MX-Eintrag verbindet Ihre Domain mit den Servern Ihres E-Mail-Anbieters (zum Beispiel OVH). Wenn jemand eine E-Mail an Sie versendet, weiß der Server der ausgehenden E-Mail dank des MX-Eintrags, an welchen Server er diese zu übermitteln hat.
 
-Um ein Alias der Form "alias@meinedomain.com" zu erstellen, das eingehende Nachrichten auf eine tatsächliche E-Mail-Adresse weiterleitet (z. B. "meineadresse@meine-andere-domain.com"), verwenden Sie bitte folgende Konfiguration:
-Mail-Server [Alias]:
+Da für eine Domain mehrere MX-Einträge erstellten werden können, muss für jeden Eintrag die Priorität festgelegt werden. Dadurch wissen die Ausgangsserver, an welchen Server sie die E-Mails zuerst senden sollen. Beachten Sie jedoch, dass die Erstellung mehrerer MX-Einträge nur für Server desselben Anbieters möglich ist.
 
-|Typ|Priorität|Ziel|
-|---|---|---|
-|MX|1|redirect.ovh.net|
+**Seien Sie vorsichtig bei der Änderung von MX-Einträgen**. Wenn Sie eine falsche Änderung vornehmen, kann es sein, dass Ihre E-Mail-Adressen keine Nachrichten mehr empfangen können. 
 
+### Schritt 2: OVH MX-Konfiguration kennenlernen
 
-Bitte beachten Sie, dass Sie Aliasse (redirections/Weiterleitungen) auch dann nutzen können, wenn Sie ein Mailing-Angebot von OVH nutzen. Alles hierzu erfahren Sie in folgender Anleitung: [Webhosting E-Mail: Anleitung zum Einrichten einer Mail-Weiterleitung](https://docs.ovh.com/de/emails/webhosting_e-mail_anleitung_zum_einrichten_einer_mail-weiterleitung/).
+In der folgenden Tabelle wird Ihnen die OVH MX-Konfiguration für MX Plan (separat oder in einem [OVH Webhosting](https://www.ovh.de/hosting/){.external} enthalten), [E-Mail Pro](https://www.ovh.de/emails/email-pro/){.external} und [Exchange](https://www.ovh.de/emails/){.external} angezeigt. Unsere E-Mail-Server verfügen über Antispam und Antivirus.
 
+|Domain|TTL|Eintrag|Priorität|Ziel|
+|---|---|---|---|---|
+|*leer lassen*|3600|MX|1|mx0.mail.ovh.net.|
+|*leer lassen*|3600|MX|5|mx1.mail.ovh.net.|
+|*leer lassen*|3600|MX|50|mx2.mail.ovh.net.|
+|*leer lassen*|3600|MX|100|mx3.mail.ovh.net.|
 
-## Sie nutzen ein Mailing-Angebot eines Drittanbieters
+Verwenden Sie diese MX-Einträge für die DNS-Konfiguration Ihrer Domain. Im nächsten Schritt erfahren Sie, wie Sie die OVH DNS-Konfiguration Ihrer Domain entsprechend ändern.
 
-- Sie verfügen über einen eigenen Hostnamen für Ihre(n) MX-Server:
+### Schritt 3: MX-Eintrag bearbeiten
 
+Um MX-Einträge in der Konfiguration Ihrer OVH Domain zu ändern, loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein. Gehen Sie links im Menü in den Bereich `Domains`{.action}, klicken Sie auf die betreffende Domain und anschließend auf den Tab `DNS Zone`{.action}.
 
-Wenn Ihre Domain eine DNS Zone von OVH verwendet, Sie aber gleichzeitig ein externes Mailing-Angebot nutzen (also nicht bei OVH und auch nicht auf einem Dedicated Server), können Sie Ihre OVH DNS Zone auf dieselbe Art und Weise konfigurieren. Sie müssen lediglich die Server entsprechend ersetzen:
-Mail-Server:
+In der Tabelle wird die OVH Konfiguration Ihrer Domain angezeigt. Jede Zeile entspricht einem DNS-Eintrag. Überprüfen Sie über die Filterfunktion zunächst, ob in der DNS-Konfiguration Ihrer Domain bereits MX-Einträge vorhanden sind.
 
-|Typ|Priorität|Ziel|
-|---|---|---|
-|MX|1|Ihr Mail-Server|
-|MX|5|Ihr anderer Mail-Server|
+![dnsmxrecord](images/mx-records-dns-zone.png){.thumbnail}
 
+Wenn bereits MX-Einträge vorhanden sind und Sie diese ersetzen möchten, klicken Sie rechts am Ende jeder betreffenden Zeile auf das Zahnrad-Symbol und wählen Sie dann `Eintrag löschen`{.action} aus. Achten Sie jedoch darauf, dass für Ihre Domain immer ein MX-Eintrag bestehen bleibt, während Sie neue MX-Einträge hinzufügen.
 
+Um Einträge hinzuzufügen, klicken Sie auf `Eintrag hinzufügen`{.action} und wählen Sie dann `MX`{.action} aus. Tragen Sie die angeforderten Informationen für die ausgewählte E-Mail-Lösung ein:
 
-- Sie verfügen nicht über einen Hostnamen, aber über eine oder mehrere IP(s) für Ihre(n) MX-Server:
+- **OVH E-Mail-Lösung**: Lesen Sie in dieser Anleitung „[Schritt 2: OVH MX-Konfiguration kennenlernen](https://docs.ovh.com/de/domains/webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh/#schritt-2-ovh-mx-konfiguration-kennenlernen){.external}“.
 
+- **E-Mail-Lösung eines anderen Anbieters**: Informieren Sie sich über die MX-Konfiguration beim Anbieter Ihres E-Mail-Dienstes.
 
-Wenn Ihre Domain eine DNS Zone von OVH verwendet, Sie aber gleichzeitig ein externes Mailing-Angebot nutzen (beispielsweise auf einem lokalen Server), können Sie Ihre OVH DNS Zone so konfigurieren, dass die IP mit einem Hostnamen verbunden wird. Dieser Schritt ist notwendig, weil ein MX-Eintrag nicht direkt auf eine IP zeigen kann.
-Mail-Server:
+Wenn Sie alle Informationen eingegeben haben, folgen Sie den nächsten Schritten und klicken Sie anschließend auf `Bestätigen`{.action}.
 
-|Subdomain|Typ|Priorität|Ziel|
-|---|---|---|---|
-|mail2|A|vakuum|IP des Mail-Servers|
-|vakuum|MX|1|mail2.ihre_domain|
+> [!primary]
+>
+> Die Änderung erfordert eine Propagationszeit zwischen 4 und 24 Stunden, bis sie voll wirksam ist.
+>
 
+## Weiterführende Informationen
 
+[Webhosting − Allgemeine Informationen zu den DNS Servern](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/){.external}
 
+[Bearbeiten der OVH DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}
 
-## Fristen
-Bitte beachten Sie: Bei Bearbeitung Ihrer DNS Zone kann es bis zur 24 Stunden dauern, bis die Änderungen wirksam werden.
-
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
