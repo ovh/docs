@@ -1,69 +1,96 @@
 ---
-title: 'Webhosting: Fehler - Webseite ist nicht installiert'
-excerpt: Informationen zur Behebung der Fehlermeldung "Webseite nicht installiert"
+title: 'Fehler „Seite nicht installiert“ beheben'
+excerpt: 'Hier erfahren Sie, wie Sie den Fehler „Seite nicht installiert“ beheben.'
 id: '1585'
 slug: webhosting_fehler_-_webseite_ist_nicht_installiert
 legacy_guide_number: g1585
+section: Webhosting-Konfiguration
+order: 2
 ---
 
+**Stand 07.12.2018**
 
-## Allgemein
-Diese Seite wird angezeigt, wenn das Ziel der Domain ungültig ist oder die Domain noch nicht vollständig auf dem Server publiziert wurde.
+## Einleitung
 
-Diese Warnmeldung kann aus verschiedenen Gründen auftreten:
+Die Seite mit der Fehlermeldung „Seite nicht installiert“ bedeutet entweder, dass die DNS-Zone Ihrer Domain nicht korrekt konfiguriert ist oder der Domainname Ihrer Website nicht richtig auf Ihrem OVH Webhosting eingerichtet wurde.
 
+**In dieser Anleitung erfahren Sie, wie Sie den Fehler „Seite nicht installiert" beheben.**
 
-- Ihr Webweiterleitung ist nicht richtig eingestellt
+## Voraussetzungen
 
-- Ihre Domain oder Sub-Domain ist nicht mit dem Hostserver verbunden
+- Sie besitzen ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
+- Sie können Ihr [OVH Webhosting](https://www.ovh.de/hosting/){.external}, auf dem die betreffende Website gehostet ist, verwalten.
+- Sie können die betreffende Domainkonfiguration verwalten (d. h. die DNS-Zone der Domain).
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
 
-- Ihre Domaine zeigt nicht auf die richtige Stelle
+## Beschreibung
 
+Die Seite mit der Fehlermeldung „Seite nicht installiert“ wird nur in den beiden folgenden Fällen angezeigt:
 
+- Die Domain Ihrer Website wurde der Konfiguration Ihres OVH Webhostings nicht korrekt als **Multisite** hinzugefügt.
+- Die Domain Ihrer Website ist nicht korrekt mit Ihrem OVH Webhosting verbunden, da in der DNS-Konfiguration nicht die richtige IP-Adresse angegeben wurde.
 
-![](images/img_2321.jpg){.thumbnail}
-Wichtiger Hinweis:
+Im Folgenden erklären wir Ihnen, wie Sie beide Einstellungen überprüfen, um den Fehler „Seite nicht installiert“ zu beheben.
 
+![sitenotinstalled](images/site-not-installed-webpage.png){.thumbnail}
 
-- Nach Änderung einer IP Adresse ist eine unvermeidliche Propagationzeit von 4 bis 24 Stunden notwendig. Die Fehlermeldung kann während dieser Zeit erscheinen.
+### Schritt 1: Webhosting-Konfiguration überprüfen (Multisite)
 
+Um zu überprüfen, ob die Domain Ihrem Webhosting korrekt als Multisite hinzugefügt wurde, loggen Sie sich im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie links im Menü auf `Hosting-Pakete`{.action}. Wählen Sie in der Liste Ihrer Hosting-Pakete das Webhosting aus, auf dem die Website gehostet ist, für die Sie die Fehlermeldung „Seite nicht installiert“ erhalten. Gehen Sie dann auf den Tab `Multisite`{.action}.
 
+Die angezeigte Tabelle listet alle Domains auf, die Ihrem Hosting als Multisite zugewiesen sind. Sie können auch die Suchfunktion verwenden, um die betreffende Domain zu suchen.
 
+Folgende Szenarien sind möglich: 
 
-## Fehler beim Einrichten der Webweiterleitung
-Diese Seite kann angezeigt werden, wenn Sie Ihre Webweiterleitung nur teilweise eingerichtet haben.
+|Mögliches Szenario|Erforderliche Maßnahme|
+|---|---|
+|Domain wird in der Tabelle angezeigt|Das bedeutet, dass die Domain Ihrem Webhosting korrekt als Multisite hinzugefügt wurde. Wenn Sie die Seite innerhalb der letzten 15 Minuten hinzugefügt haben, warten Sie einen Moment, bis die Fehlermeldung „Seite nicht installiert“ verschwindet. Wird der Fehler weiterhin angezeigt, lesen Sie unter [Schritt 2: DNS-Konfiguration der Domain überprüfen](https://docs.ovh.com/de/hosting/webhosting_fehler_-_webseite_ist_nicht_installiert/#schritt-2-dns-konfiguration-der-domain-uberprufen){.external} weiter.|
+|Domain wird nicht mehr in der Tabelle angezeigt|Wenn Sie die Domain hinzugefügt haben, diese aber nicht mehr in der Tabelle angezeigt wird, haben Sie möglicherweise nicht alle notwendigen Schritte durchgeführt, um sie zu Ihrem Webhosting hinzuzufügen oder die Domain aus Versehen gelöscht. Um Ihre Domain erneut hinzuzufügen, folgen Sie der Anleitung „[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}“.|
+|Domain wird nicht in der Tabelle angezeigt|Sie haben die Domain Ihrem OVH Webhosting noch nicht als Multisite hinzugefügt. Um Ihre Domain hinzuzufügen, folgen Sie der Anleitung „[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}“.|
 
-Beispiel: Sie lassen Ihren Domainnamen oder die Subdomain auf die IP des Servers (Bsp. 213.186.33.5) verweisen, aber haben noch nicht die Webweiterleitung im [Kundencenter](https://www.ovh.com/manager/web/auth.html/) eingerichtet.
+Wird die Seite mit der Fehlermeldung „Seite nicht installiert“ trotz der oben genannten Maßnahmen immer noch angezeigt, gehen Sie zum nächsten Schritt „DNS-Konfiguration der Domain überprüfen“ über.
 
-In diesem Fall prüfen Sie bitte, ob die Webweiterleitung der Hauptdomain und der "www" Subdomain eingerichtet ist und dass  Ihre Domain auf die richtige IP verweist (Bsp. 213.186.33.5).
+### Schritt 2: DNS-Konfiguration der Domain überprüfen
 
-Eine Anleitung zur Einrichtung einer Webweiterleitung finden Sie hier:[]({legacy}1339)
+Sehen Sie zuerst nach, welche DNS-Konfiguration für OVH verwendet werden muss. Gehen Sie dazu im Bereich des betreffenden Webhostings auf den Tab `Allgemeine Informationen`{.action} und notieren Sie sich die Adressen, die unter **IPv4** und **IPv6** stehen.
 
-![](images/img_2268.jpg){.thumbnail}
+![sitenotinstalled](images/site-not-installed-know-a-records.png){.thumbnail}
 
+Sie können nun die DNS-Konfiguration Ihrer Domain überprüfen. Verwenden Sie dazu das Interface des Anbieters, der die Konfiguration verwaltet.
 
-## Fehlerhafte Verknüpfung Ihrer Domain oder Sub-Domain mit dem Hostserver
-Diese Seite kann erscheinen falls Ihre Domain oder Sub-Domains nicht richtig eingerichtet wurden.
+> [!primary]
+>
+> Wenn Ihre Domain bei OVH registriert ist, können Sie überprüfen, ob sie unsere Konfiguration verwendet. Klicken Sie dazu im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} links im Menü auf `Domains`{.action} und anschließend auf die entsprechende Domain. Gehen Sie dann auf den Tab `DNS Server`{.action}.
+>
 
-Beispiel: Ihre Domain oder Sub-Domain verweist auf die IP des Webservers (Cluster), ist aber nicht im [Kundencenter](https://www.ovh.com/manager/web) hinterlegt.
+Je nach Konfiguration der Domain können Sie diese auf zwei Arten überprüfen:
 
-![](images/img_2269.jpg){.thumbnail}
-In diesem Fall überprüfen Sie bitte, dass Ihre Domain oder Sub-Domain im Kundencenter über den Button "Domain hinzufügen" korrekt eingerichtet wurde.
+- **Ihre Domain verwendet nicht die OVH Konfiguration** (d. h. sie verwendet nicht die DNS-Server von OVH): Überprüfen Sie die Konfiguration Ihrer Domain über das Interface des Anbieters, bei dem diese verwaltet wird.
 
-Bitte achten Sie darauf, dass die Domain oder Sub-Domain auf die richtige IP verweist (Sie finden die Hostserver IP im [Kundencenter](https://www.ovh.com/manager/web)).
+- **Ihre Domain verwendet die OVH Konfiguration**: Überprüfen Sie die Konfiguration im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}. Nachdem Sie die betreffende Domain ausgewählt haben, klicken Sie auf den Tab `DNS Zone`{.action}. Die DNS-Konfiguration wird Ihnen in einer Tabelle angezeigt. Jede Zeile entspricht einem DNS-Eintrag. Sie können die Einträge nach dem Eintragstyp oder der Domain filtern.
 
-Eine Anleitung zur Einrichtung von Multi-Domains finden Sie hier:[]({legacy}1332)
+![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
 
-![](images/img_3965.jpg){.thumbnail}
+Überprüfen Sie im Verwaltungsinterface der Domain, für die die Fehlermeldung „Seite nicht installiert“ angezeigt wird, dass die folgenden DNS-Einträge korrekt konfiguriert sind.
 
+|Eintrag|Ziel|
+|---|---|
+|A|Das Ziel muss der **IPv4**-Adresse entsprechen, die Sie sich notiert haben.|
+|AAAA|Das Ziel muss der **IPv6**-Adresse entsprechen, die Sie sich notiert haben.|
 
-## Fehlerhafter Verweis auf Domainname
-Diese Seite kann ebenfalls erscheinen falls Ihr Domainname nicht auf die richtige IP verweist oder sie auf eine IP eines Hostservers verweist, auf dem Ihre Webseite nicht eingetragen wurde.
+Folgende zwei Szenarien sind denkbar:
 
+|Mögliches Szenario|Erforderliche Maßnahme|
+|---|---|
+|Die Ziele sind korrekt.|In diesem Fall ist die Konfiguration Ihrer Domain korrekt. Wenn Sie die DNS-Konfiguration innerhalb der letzten 24 Stunden geändert haben, warten Sie ab, bis die Änderungen voll wirksam sind.|
+|Die Ziele sind nicht korrekt.|Die DNS-Konfiguration Ihrer Domain muss geändert werden. Wenn die Domain die OVH Konfiguration verwendet, folgen Sie bitte den Schritten in der Anleitung [Bearbeiten der OVH DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}. Verwendet sie nicht die OVH Konfiguration, folgen Sie bitte den Anweisungen im Interface des jeweiligen Anbieters. Die Änderung erfordert eine Propagationszeit von maximal 24 Stunden, bevor sie voll wirksam ist.|
 
-Beispiel: Der Hostserver Ihres Domainnamens ist in Cluster12, aber Ihre Domain verweist auf Cluster14.
+Wenn Sie die in Schritt 1 und 2 beschriebenen Maßnahmen ausgeführt und die angegebenen Propagationszeiten abgewartet haben, sollte die Seite mit der Fehlermeldung „Seite nicht installiert“ nicht mehr erscheinen.
 
-[So finden Sie die IP Ihres Hostservers](https://www.ovh.de/g1290.geocache-cdn).
+## Weiterführende Informationen 
 
-![](images/img_2274.jpg){.thumbnail}
+[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}
 
+[Bearbeiten der OVH DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
