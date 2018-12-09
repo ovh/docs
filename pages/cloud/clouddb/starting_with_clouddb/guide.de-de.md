@@ -1,204 +1,183 @@
 ---
-title: Erste Schritte mit CloudDB
+title: 'Erste Schritte mit CloudDB'
 slug: erste-schritte-mit-clouddb
-links: 
-   - docs/cloud/clouddb/utilisation-mysql-mariadb/
-   - docs/cloud/clouddb/utilisation-pgsql/
+links:
+    - docs/cloud/clouddb/utilisation-mysql-mariadb/
+    - docs/cloud/clouddb/utilisation-pgsql/
 legacy_guide_number: 2216
-excerpt: Holen sie sich Ihre Datenbanken mit nur wenigen Klicks. OVH ubernimmt den Rest.
+excerpt: 'In dieser Anleitung erfahren Sie, wie Sie die CloudDB Lösung verwenden.'
+section: 'Erste Schritte'
 ---
 
-Sie brauchen eine Datenbank für Ihre Website oder eine Anwendung, haben aber keine Lust, diese zu verwalten? Dann ist das CloudDB Angebot genau das Richtige für Sie! OVH übernimmt die komplette Verwaltung Ihrer Datenbank.
+**Stand 07.12.2018**
 
+## Einleitung
 
-## Allgemeine Informationen
+Mit der CloudDB Lösung erhalten Sie Zugriff auf eine Datenbankinstanz mit dedizierten und garantierten Ressourcen. Dieser Dienst bietet mehr Leistung und Flexibilität und ist vor allem für Kunden mit spezifischen Anforderungen entwickelt.
 
-### Warum sich fur eine gemanagte Datenbank entscheiden?
-Dieses Angebot geht von einem ganz **einfachen Prinzip** aus: Nur, weil Sie **wissen, wie** man eine Datenbank verwaltet, heißt das noch lange nicht, dass das für Sie auch **Priorität** hat. Backups, Updates, Monitoring, Rechte verwalten, Performance anpassen, ... all das wird sehr schnell lästig.
+**Hier erfahren Sie, wie Sie Cloud Databases verwenden.**
 
-**Warum also nicht diese unliebsame Aufgabe einfach OVH überlassen, damit Sie sich ganz auf Ihr Kerngeschäft konzentrieren können?**
+## Voraussetzungen
 
-Unser Ziel ist es, mit dieser Lösung den gesamten Markt anzusprechen - egal, ob Sie eine Privatperson sind oder die Datenbank professionell nutzen, CloudDB eignet sich genauso für den kleinen Bedarf wie auch für große Cluster.
+- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/){.external}.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
 
+## Beschreibung
 
-### Die Vorteile von CloudDB
-**Einfach und schnell**
+### Allgemeine Informationen der Instanz einsehen
 
-- Erstellung von SQL Datenbanken über das Kundencenter
-- Unbegrenzte Anzahl an Datenbanken (innerhalb des verfügbaren Storage)
-- Bis zu 200 Simultanverbindungen
-- Verwaltung der Benutzer und der entsprechenden Rechte über das Kundencenter
-- Zugang zu den Metriken über das Kundencenter
-- Zugang zu den Logs
+Gehen Sie In Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende Instanz. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden.
 
-**Hohe Performance**
+> [!primary]
+>
+> Der Name des CloudDB Dienstes in Ihrem OVH Kundencenter enthält einen Teil Ihrer Kundenkennung und endet mit drei Ziffern (001 für den ersten eingerichteten CloudDB Dienst, 002 für den zweiten usw.).
+>
 
-- Garantierte RAM Ressourcen
-- Bewährte Infrastruktur
+Hier können Sie wichtige Informationen zu Ihrer Instanz einsehen. Wir bitten Sie, sich einen Moment Zeit zu nehmen und zu überprüfen, dass die angezeigten Daten korrekt sind bzw. mit den nachfolgenden Angaben übereinstimmen.
 
-**Sicherheit**
+|Information|Details|
+|---|---|
+|Status der Dienstleistung|Zeigt an, ob die Instanz gestartet wurde, gerade neu gestartet wird oder gesperrt wurde. Ihre Instanz muss gestartet worden sein, damit Sie Aktionen durchführen können.|
+|Typ|Zeigt das vom Server verwendete Datenbanksystem an.|
+|Version|Zeigt die Version des vom Server verwendeten Datenbanksystems an. Achten Sie auf die Kompatibilität Ihrer Website mit der gewählten Version.|
+|RAM|Zeigt den für Ihre Instanz verfügbaren Arbeitsspeicher sowie eventuelle Überschreitungen der RAM-Kapazität. Der Arbeitsspeicher Ihrer CloudDB Instanz ist eine dedizierte und garantierte Ressource. Falls nötig können Sie diesen skalieren und eine Warnmeldung erhalten, wenn Sie sämtliche RAM-Ressourcen Ihrer Instanz verwenden.|
+|Infrastruktur|Zeigt die von Ihrer Instanz verwendete Infrastruktur an. Hierbei handelt es sich um inhärente Informationen zur OVH Infrastruktur.|
+|Datacenter|Zeigt das Rechenzentrum an, in dem Ihre Instanz angelegt wurde. Vergewissern Sie sich, dass das Rechenzentrum Ihrer Instanz mit dem Rechenzentrum des OVH Webhostings übereinstimmt, auf dem Ihre Website aktuell (oder in Zukunft) gehostet wird.|
+|Host|Zeigt den OVH Server an, auf dem Ihre Instanz angelegt wurde. Hierbei handelt es sich um eine inhärente Information zur OVH Infrastruktur, die im Rahmen unserer Kommunikation zu [OVH Störungen](http://status.ovh.net/){.external} verwendet werden kann.|
 
-- Monitoring rund um die Uhr durch unsere Teams
-- Täglich automatische Backups
-- Obligatorische IP-Autorisierung
+![clouddb](images/clouddb-general-information.png){.thumbnail}
 
-**Flexibilität**
+### Datenbank erstellen
 
-- Kompatibel mit sämtlichen OVH Produkten (ausgenommen Shared Hosting) sowie mit allen Produkten, die mit dem öffentlichen Netz verbunden sind
-- Freie Wahl der SQL Version und Upgrade auf eine höhere Version jederzeit möglich
+> [!primary]
+>
+> Dieser Schritt gilt nicht für das Datenbanksystem Redis.
+>
 
+Um die erste Datenbank auf Ihrer CloudDB Instanz anzulegen, klicken Sie auf den Tab `Datenbanken`{.action} und anschließend auf den Button `Datenbank hinzufügen`{.action}.
 
-### Unterstutzte Datenbanken
-Wenn Sie sich für CloudDB entschieden haben, können Sie unter verschiedenen Datenbanksystemen wählen:
 
-**SQL**
+![clouddb](images/clouddb-add-database.png){.thumbnail}
 
-- MySQL
-- PostgreSQL
-- MariaDB
+Im angezeigten Fenster können Sie direkt bei Erstellung der Datenbank
 
-Jede Instanz verfügt über eigene, dedizierte Ressourcen. Die enthaltene(n) Datenbank(en) **teilen** sich die verschiedenen Ressourcen.
+-  **einen Benutzer erstellen**: Dieser kann Anfragen auf der Datenbank ausführen (zum Beispiel Lesen, Einfügen oder Löschen von Daten).
 
+- **eine autorisierte IP-Adresse hinzufügen**: Anfragen, die von dieser IP-Adresse versandt werden, haben Zugriff auf Ihre Datenbanken.
 
-## Ihr CloudDB Angebot bestellen
+Entsprechend Ihrer Auswahl geben Sie nun die angefragten Informationen ein und klicken Sie anschließend auf `Bestätigen`{.action}.
 
-### Verbindung mit dem Kundencenter
-Begeben Sie sich in Ihr [Web Kundencenter](https://www.ovh.com/manager/web/){.external}, um Ihre Instanz und anschließend Ihre Datenbanken einzurichten.
+|Information|Beschreibung|
+|---|---|
+|Name der Datenbank|Dies ist der Name Ihrer zukünftigen Datenbank.|
+|Benutzername|Geben Sie hier den Namen des Benutzers ein, der sich mit Ihrer Datenbank verbinden und Anfragen ausführen kann (optional, wenn in dem Feld „*Benutzer erstellen*“ kein Haken gesetzt wurde).|
+|Rechte|Hier handelt es sich um die Rechte, die dem Benutzer der Datenbank gewährt werden. Für eine standardmäßige Verwendung wählen Sie `Administrator`{.action} aus (optional, wenn in dem Feld „*Benutzer erstellen*“ kein Haken gesetzt wurde).|
+|Passwort|Geben Sie das gewünschte Passwort ein und bestätigen Sie dieses (optional, wenn in dem Feld „*Benutzer erstellen*“ kein Haken gesetzt wurde).|
+|IP / Maske|Hierbei handelt es sich um die IP-Adresse oder IP-Maske des Servers bzw. der Server, die Zugriff auf Ihre Datenbanken haben (optional, wenn in dem Feld „*Eine autorisierte IP-Adresse hinzufügen*“ kein Haken gesetzt wurde.|
 
+> [!warning]
+>
+> Aus Sicherheitsgründen halten Sie sich bitte an die bei der Eingabe der Informationen angezeigten Bedingungen.
+>
 
-### Bestellung
-Im [Web Kundencenter](https://www.ovh.com/manager/web/){.external} klicken Sie auf **„Datenbanken“**, danach auf `„Datenbanken bestellen“`{.action}.
+![clouddb](images/clouddb-add-database-step2.png){.thumbnail}
 
+### Benutzer anlegen (optional)
 
-![commande manager](images/bouton-commande_EN.PNG){.thumbnail}
+> [!primary]
+>
+> Dieser Schritt gilt nicht für das Datenbanksystem Redis.
+>
 
-Um zu bestellen, wählen Sie zunächst die folgenden Elemente:
+Dieser Schritt ist optional, wenn Sie den Benutzer bereits zusammen mit der Datenbank angelegt haben. Für komplexere Projekte können jedoch mehrere Benutzer mit Zugriff auf Ihre Datenbank erforderlich sein. So hat zum Beispiel ein Benutzer auf der ihm zugewiesenen Datenbank Lese- und Schreibrechte, während ein anderer Benutzer nur über Leserechte verfügt.
 
-- **„CloudDB“**
-- **„Ihr Datenbanksystem“**
-- Größe des **„RAM“**
-- **„Rechenzentrum“**
-- Gewünschte **„Dauer“**
+Wenn für Ihr Projekt kein zusätzlicher Benutzer notwendig ist, können Sie zum nächsten Schritt übergehen. Wenn Sie einen weiteren Benutzer auf Ihrer CloudDB Instanz anlegen möchten, klicken Sie auf den Tab `Benutzer und Rechte`{.action} und dann auf den Button `Benutzer hinzufügen`{.action}.
 
+![clouddb](images/clouddb-add-user.png){.thumbnail}
 
-![commande choix](images/choix-commande_EN.PNG){.thumbnail}
+Geben Sie im angezeigten Fenster die angefragten Informationen ein und klicken Sie anschließend auf `Bestätigen`{.action}.
 
-Dann akzeptieren Sie die AGB und Produktverträge und klicken auf `Bestellschein erstellen`{.action}.
+|Information|Beschreibung|
+|---|---|
+|Benutzername|Geben Sie hier den Namen des Benutzers ein, der sich mit Ihrer Instanz verbinden darf. Im nächsten Schritt können Sie dem Benutzer Rechte auf Ihrer Datenbank zuweisen.|
+|Passwort|Geben Sie ein Passwort ein und bestätigen Sie dieses.|
 
+> [!warning]
+>
+> Aus Sicherheitsgründen halten Sie sich bitte an die bei der Eingabe der Informationen angezeigten Bedingungen.
+>
 
-![commande generation](images/generer-commande_EN.PNG){.thumbnail}
+![clouddb](images/clouddb-add-user-step2.png){.thumbnail}
 
+Nachdem Sie einen Benutzer angelegt haben, weisen Sie ihm die entsprechenden Rechte für die Aufgaben zu, die er an Ihrer Datenbank vornehmen soll (zum Beispiel Lesen, Einfügen oder Löschen von Daten). Klicken Sie hierzu auf das Zahnrad-Symbol und anschließend auf `Rechte verwalten`{.action}. Auf der neuen Seite klicken Sie auf das Recht, das Sie dem Benutzer zuweisen möchten. Für eine standardmäßige Verwendung wählen Sie `Administrator`{.action} aus.
 
-## Allgemeine Informationen
-Im Kundencenter finden Sie eine Übersicht mit den allgemeinen Informationen zu Ihrer Instanz.
+![clouddb](images/clouddb-add-rights.png){.thumbnail}
 
+### Datenbank importieren
 
-![commande generation](images/infos-generales_EN.png){.thumbnail}
+> [!primary]
+>
+> Dieser Schritt ist nur erforderlich, wenn Sie ein bereits existierendes Datenbank-Backup importieren möchten. Ist das nicht der Fall, gehen Sie zum nächsten Schritt über.
+>
 
+Es gibt mehrere Möglichkeiten zum Import einer Datenbank. In Ihrem OVH Kundencenter steht Ihnen hierzu ein Tool zur Verfügung. Sie können natürlich auch eine andere Methode verwenden, wenn Sie über die entsprechenden Kenntnisse verfügen.
 
-## Erstellung von Datenbanken und Benutzern
+In den nachstehenden Schritten beschreiben wir, wie Sie eine Datenbank mithilfe des Tools in Ihrem OVH Kundencenter importieren.
 
-### Eine Datenbank erstellen
-Ihre Instanz wurde jetzt zwar erstellt, ist momentan jedoch noch leer.
+- **Schritt 1: Auf das Import-Interface zugreifen**
 
-Klicken Sie auf den Tab **„Datenbanken“** und danach auf den Button `+ Eine Datenbank hinzufügen`{.action}.
+Gehen Sie in den Tab `Datenbanken`{.action}, klicken Sie auf das Zahnrad-Symbol und dann auf `Datei importieren`{.action}. Im angezeigten Fenster setzen Sie einen Haken in dem Feld `Eine neue Datei importieren`{.action} und klicken anschließend auf `Weiter`{.action}.
 
+![clouddb](images/clouddb-add-import-step1.png){.thumbnail}
 
-![creation bdd](images/creation-bdd_EN.png){.thumbnail}
+- **Schritt 2: Backup-Datei auswählen und senden**
 
-Geben Sie einen Namen für Ihre Datenbank ein und klicken Sie dann auf `Bestätigen`{.action}.
+Geben Sie einen Dateinamen ein, mit dem Sie das Backup zu einem späteren Zeitpunkt finden und wiederherstellen können. Wählen Sie dann neben **Datei** die Backup-Datei der Datenbank auf Ihrem Rechner aus und klicken Sie anschließend auf `Absenden`{.action}. Warten Sie, bis die Meldung erscheint, dass die Datei erfolgreich übermittelt wurde, und klicken Sie dann auf `Weiter`{.action}.
 
+![clouddb](images/clouddb-add-import-step2.png){.thumbnail}
 
-![creation bdd](images/validation-bdd_EN.png){.thumbnail}
+- **Schritt 3: Import der Datenbank starten**
 
+Wenn Sie möchten, können Sie nun die nachstehenden Zusatzoptionen auswählen. Klicken Sie anschließend auf `Bestätigen`{.action}.
 
-### Einen Benutzer erstellen
-Um das CloudDB Angebot nutzen zu können, müssen zuerst Benutzer erstellt und mit spezifischen Zugriffsrechten für die jeweilige Datenbank versehen werden.
+|Zusatzoption|Beschreibung|
+|---|---|
+|Aktuelle Datenbank leeren|Der gesamte aktuelle Inhalt Ihrer Datenbank wird gelöscht und durch den Inhalt des Backups ersetzt.|
+|E-Mail-Benachrichtigung, wenn der Import abgeschlossen ist|Sie werden per E-Mail über den Abschluss des Datenbankimports benachrichtigt.|
 
-Klicken Sie hierzu auf den Tab **„Benutzer und Rechte“** und dann auf den Button `+ Einen Benutzer hinzufügen`{.action}.
+![clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
 
+### IP-Adresse autorisieren
 
-![hosting](images/creation-user_EN.png){.thumbnail}
+Damit auf Ihre CloudDB Instanz zugegriffen werden kann, müssen zunächst die IP-Adressen oder IP-Bereiche festgelegt werden, die sich mit dieser verbinden dürfen. Klicken Sie hierzu im Tab `Autorisierte IPs`{.action} auf den Button `IP-Adresse / Maske hinzufügen`{.action}.
 
-Geben Sie einen **Benutzernamen** und ein **Passwort** und klicken Sie danach auf `Bestätigen`{.action}.
+![clouddb](images/clouddb-add-ip.png){.thumbnail}
 
+Geben Sie im angezeigten Fenster im Feld `IP / Maske`{.action} die IP-Adresse oder Maske ein, der Sie den Zugriff erlauben möchten. Legen Sie anschließend fest, ob Sie nur Zugriff auf die Datenbanken oder auch auf den SFTP-Port erlauben möchten. Klicken Sie dann auf `Bestätigen`{.action}.
 
-![hosting](images/validation-user_EN.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
+### Ihre Website mit der Datenbank verbinden
 
-### Benutzerrechte verwalten
-Klicken Sie auf den Tab **„Datenbanken“**, dann auf das **„Zahnrad“** der gewünschten Datenbank und anschließend auf den Button `+ Die Benutzer verwalten`{.action}.
+Nun, da Ihre Datenbank angelegt wurde, einer oder mehrere Benutzer über Zugriffsrechte verfügen und mindestens eine autorisierte IP-Adresse für Ihre CloudDB Instanz angegeben wurde, muss Ihre Website nur noch mit Ihrer Datenbank verknüpft werden. Für diesen Schritt stehen Ihnen verschiedene Optionen zur Verfügung − je nach Art Ihrer Website, dem verwendeten CMS (WordPress, Joomla! usw.) oder je nachdem, bei welchem Schritt der Website-Erstellung Sie sich befinden.
 
+Damit Sie Ihre Website in jedem Fall erfolgreich mit Ihrer Datenbank verbinden können, benötigen Sie die folgenden fünf Informationen:
 
-![hosting](images/gestion-user_EN.png){.thumbnail}
+|Information|Beschreibung|
+|---|---|
+|Name der Datenbank|Der Name, den Sie bei der Erstellung der Datenbank vergeben haben. Sie finden alle auf Ihrer CloudDB Instanz angelegten Datenbanken im Tab `Datenbanken`{.action}.|
+|Benutzername|Name des Benutzers, den Sie bei der Erstellung der Datenbank oder zu einem späteren Zeitpunkt beim Anlegen weiterer Benutzer festgelegt haben. Sie finden alle auf Ihrer CloudDB Instanz erstellten Benutzer im Tab `Benutzer und Rechte`{.action}.|
+|Benutzerpasswort|Das Passwort, das dem Benutzer zugewiesen ist und Sie im Rahmen der vorherigen Schritte festgelegt haben.|
+|Name des Host-Servers|Name des Servers, der angegeben wird, damit Ihre Website sich mit Ihrer Datenbank verbinden kann. Diese Information finden Sie in Ihrem Kundencenter im Tab `Allgemeine Informationen`{.action} unter **Verbindungsinformationen**.|
+|Server-Port|Verbindungsport zu Ihrer CloudDB Instanz, damit Ihre Website sich mit Ihrer Datenbank verbinden kann. Diese Information finden Sie in Ihrem Kundencenter im Tab `Allgemeine Informationen`{.action} unter **Verbindungsinformationen**.|
 
-Dann können Sie dem jeweiligen Benutzer die gewünschten Rechte zuweisen.
+> [!warning]
+>
+> In seltenen Fällen ist das Feld `Port`{.action} in der Konfiguration Ihrer Website nicht verfügbar. Ist das der Fall, fügen Sie dieses Feld hinter dem Hostnamen Ihres Servers hinzu und trennen Sie beide Informationen durch ein *:* (zum Beispiel hostname:port).
+>
 
+![clouddb](images/clouddb-login-information.png){.thumbnail}
 
-![hosting](images/validation-droit_EN.png){.thumbnail}
+## Weiterführende Informationen
 
-Die 3 Arten von Rechten sind:
-
-- **Administrator:** Freigabe von Anfragen des Typs **Select / Insert / Update / Delete / Create / Alter / Drop**
-- **Lesen/Schreiben:** Freigabe von Anfragen des Typs **Select / Insert / Update / Delete**
-- **Lesen:** Freigabe von Anfragen des Typs **Select**
-- **Keine:** Keine Rechte auf der Datenbank
-
-
-## Zugangsrechte fur IP-Adressen
-
-### Ihren Server hinzufugen
-Damit Ihre CloudDB Instanz erreichbar ist, muss angegeben werden, welche IP-Adressen sich mit der Datenbank verbinden dürfen. Klicken Sie auf den Tab **„Autorisierte IPs“**, dann auf `+ IP-Adresse / Maske hinzufügen`{.action}.
-
-
-![hosting](images/ip-autorisee_EN.png){.thumbnail}
-
-Geben Sie die IP-Adresse Ihres Servers oder eines Netzwerks an, fügen Sie, wenn sie möchten, eine Beschreibung hinzu und klicken Sie anschließend auf `Bestätigen`{.action}.
-
-
-![hosting](images/validation-ip_EN.png){.thumbnail}
-
-
-## Ihre Datenbank verwenden
-Sie sind fertig mit der Konfiguration? Perfekt!
-
-Je nach Use Case und dem von Ihnen gewählten Datenbanksystem gibt es nun zahlreiche Möglichkeiten, Ihre Datenbank zu nutzen.
-
-Als Beispiel finden Sie im Folgenden einen typischen Use Case.
-
-
-### WordPress installieren mit dem DBaaS Lab und MySQL
-- Erstellen Sie eine CloudDB MySQL Instanz.
-- Erstellen Sie eine Datenbank und einen zugehörigen Benutzer. Weisen Sie diesem ADMIN-Rechte zu.
-- Autorisieren Sie Ihre Server-IP, damit sie sich mit Ihrer CloudDB Instanz verbinden kann.
-
-Sie benötigen folgende Informationen aus Ihrem Kundencenter:
-
-- Host-Name
-- SQL Port
-
-![Instance MySQL](images/infos-sql_EN.png){.thumbnail}
-
-- Datenbanken
-
-![Instance MySQL](images/view-bdd_EN.PNG){.thumbnail}
-
-- Benutzer
-
-![Instance MySQL](images/view-uer_EN.PNG){.thumbnail}
-
-
-Notieren Sie sich die URL sowie den zugehörigen Port. Die Informationen werden bei der Installation von WordPress benötigt.
-
-
-![wordpress install](images/wordpress-config.png){.thumbnail}
-
-Wir füllen die Felder wie folgt aus:
-
-- **Database Name**: *base-test*
-- **User Name**: *user-1*
-- **Password**: Das Passwort, das sie für den Benutzer *user-1* festgelegt haben
-- **Database Host**: *xxx.dbaas.ovh.net:35102* (**host:port** notieren)
-- **Table prefix**: In unserem Beispiel ist hier nichts zu ändern
-
-Für andere Use Cases brauchen Sie nur die Standards der jeweiligen Systeme zu befolgen, um sich mit Ihren Datenbanken zu verbinden. Diese finden Sie in den zugehörigen offiziellen Dokumentationen.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
