@@ -8,6 +8,7 @@ section: 'OVH features'
 
 **Last updated 10th August 2018**
 
+
 ## Objective
 
 In certain cases — like replacing a datastore or scaling it up to a higher capacity, for example — it may be useful to remove a datastore from your cluster.
