@@ -58,7 +58,7 @@ Kun olet saanut käsiisi .ovhconfig-tiedoston voit muokata, sitä. Käytä sitä
 
 ```php
 app.engine=php
-app.engine.version=7.0
+app.engine.version=7.3
 
 http.firewall=none
 environment=production
