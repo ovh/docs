@@ -58,7 +58,7 @@ Kiedy masz już plik .ovhconfig, możesz go edytować. W tym celu użyj programu
 
 ```php
 app.engine=php
-app.engine.version=7.0
+app.engine.version=7.3
 
 http.firewall=none
 environment=production

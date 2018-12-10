@@ -58,7 +58,7 @@ Once you have the .ovhconfig file, you can edit it. To do so, you should use a t
 
 ```php
 app.engine=php
-app.engine.version=7.0
+app.engine.version=7.3
 
 http.firewall=none
 environment=production
