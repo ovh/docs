@@ -121,12 +121,6 @@ Syncing disks.
 ```
 
 
-- The partition table has been altered.
-
-Calling ioctl() to re-read partition table.
-Syncing disks.[/code]
-
-
 - Format the partition
 
 ```
