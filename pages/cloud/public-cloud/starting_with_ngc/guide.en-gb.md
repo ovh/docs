@@ -4,7 +4,7 @@ excerpt: 'Use NVIDIA GPU Cloud to speed up your GPU-accelerated development'
 slug: getting_started_with_ngc
 ---
 
-**Last updated 7th December 2018**
+**Last updated 11th December 2018**
 
 ## Objective
 
@@ -20,9 +20,9 @@ The first part of the guide will be OVH specific for basic usage. The second par
 
 ### Create an NGC instance via OVH Manager
 
-The first step will be to create a Public Cloud project https://docs.ovh.com/gb/en/public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project/
+The first step will be to [create a Public Cloud project](https://docs.ovh.com/gb/en/public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project/){.external}
 
-The second step will be to create an instance into the newly created project https://docs.ovh.com/gb/en/public-cloud/create_an_instance_in_your_ovh_customer_account/.
+The second step will be to [create an instance](https://docs.ovh.com/gb/en/public-cloud/create_an_instance_in_your_ovh_customer_account/){.external} into the newly created project.
 
 In the case of NGC, be sure to pick:
 
@@ -94,20 +94,28 @@ ssh -i ./mykey.pem ubuntu@<VM IP>
 
 Once you are logged into the VM, you can start pulling and running the container.
 
-The list of available containers is available here https://ngc.nvidia.com/catalog/containers (TensorFlow, Caffe2, DIGITS, Matab, MXNet, PyTorch, TensorFlow, RAPIDS, ...)
+The list of available containers (TensorFlow, Caffe2, DIGITS, Matab, MXNet, PyTorch, TensorFlow, RAPIDS, ...) is available here:
 
-Exemple of semantic segmentation with [NVIDIA DIGITS](https://github.com/NVIDIA/DIGITS/tree/master/examples/semantic-segmentation).
+<https://ngc.nvidia.com/catalog/containers>
+
+Please click the link below to see an example of semantic segmentation with NVIDIA DIGITS:
+
+<https://github.com/NVIDIA/DIGITS/tree/master/examples/semantic-segmentation>
 
 ```shell
 docker pull nvcr.io/nvidia/digits:18.11-tensorflow
 docker run -p 8888:5000 nvcr.io/nvidia/digits:18.11-tensorflow
 ```
 
-Then navigate to `http://your_vm_ip:8888`. More options and explanations here <https://ngc.nvidia.com/catalog/containers/nvidia%2Fdigits>.
+Then navigate to `http://your_vm_ip:8888`. 
 
-If you would like to automated the above steps, look at the `-f json` option of the openstack client and the [`jq`](https://stedolan.github.io/jq/manual/) JSON command line tool parser.
+Please click the link below for more options and explanations:
 
-Ex:
+<https://ngc.nvidia.com/catalog/containers/nvidia%2Fdigits>.
+
+If you would like to automated the above steps, look at the `-f json` option of the openstack client and the `jq` [JSON command line tool parser](https://stedolan.github.io/jq/manual/){.external}.
+
+Example:
 
 ```shell
 SOURCE_ID=`openstack image list --name 'NVIDIA GPU Cloud (NGC)' -f json | jq -r '.[0].ID'`
