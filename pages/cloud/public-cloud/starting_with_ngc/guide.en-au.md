@@ -4,7 +4,7 @@ excerpt: 'Use NVIDIA GPU Cloud to speed up your GPU-accelerated development'
 slug: getting_started_with_ngc
 ---
 
-**Last updated 11/12/018**
+**Last updated 11/12/2018**
 
 ## Objective
 
