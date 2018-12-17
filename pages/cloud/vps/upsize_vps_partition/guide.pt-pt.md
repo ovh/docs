@@ -1,10 +1,10 @@
 ---
-title: Como criar uma partição após o upgrade do VPS
+title: 'Reparticionar um VPS após um upgrade'
 slug: criar-particao-apos-upgrade-vps
-section: Primeiros passos
+section: Introdução
 ---
 
-**Última atualização 14/03/2018**
+**Última atualização: 11/12/2018**
 
 ## Sumário
 
@@ -12,33 +12,33 @@ Por vezes, depois de efetuar o upgrade do seu VPS, é necessário redimensionar 
 
 > [!warning]
 >
-> O redimensionamento dos discos e a criação de partições pode danificar os ficheiros e levar à perda definitiva dos dados. A utilização do VPS da OVH é da responsabilidade do cliente. A OVH não tem permissões de acesso aos VPS e não pode ser responsabilizada por eventuais danos ou perdas de dados. Como tal, antes de avançar, faça uma cópia de segurança dos dados.
+> O reparticionamento do VPS pode danificar os dados que contém de forma definitiva. A OVH não poderá ser responsabilizada pela sua deterioração ou perda. Como tal, antes de avançar, faça uma cópia de segurança dos dados.
 >
 
 ## Requisitos
 
-- Estar ligado ao VPS com protocolo SSH (acesso root)
-- Iniciar o servidor em [Modo Rescue](https://docs.ovh.com/pt/vps/rescue/){.external}.
+- Ter acesso ao VPS por SSH (acesso root)
+- Ter reiniciado o servidor em [Modo Rescue](https://docs.ovh.com/pt/vps/rescue/).
 
 ## Instruções
 
-Com o upgrade do VPS, a capacidade da RAM e a frequência processador (CPU) são aumentadas automaticamente. Já o aumento do espaço de armazenamento requer um ajustamento manual.
+Após um upgrade, a RAM e o processador (CPU) são automaticamente ajustados. No entanto, o espaço de armazenamento não é atualizado sistematicamente.
 
-**Este guia explica como redimensionar o espaço de armazenamento de um VPS**.
+**Este manual explica os passos necessários para aumentar o espaço de armazenamento do seu VPS**.
 
-### Fazer backup dos dados
+### Realizar uma cópia de segurança dos dados
 
-Como o aumento de uma partição pode implicar a perda de dados, **recomendamos vivamente** a realização de uma cópia de segurança dos dados armazenados no VPS.
+Ampliar uma partição pode implicar a perda de dados, pelo que **recomendamos vivamente** que efetue uma cópia de segurança dos dados do seu VPS.
 
 ### Desmontar a partição
 
-Aceda ao VPS em [Mode Rescue](https://docs.ovh.com/pt/vps/rescue/){.external}. A partição será montada automaticamente. Antes de ser redimensionada, a partição precisa de ser desmontada. Se souber o nome da sua partição, passe à etapa seguinte. Se não, execute o seguinte comando:
+Depois de aceder ao VPS em [Modo Rescue](https://docs.ovh.com/pt/vps/rescue/), a partição será montada automaticamente. Antes de ser redimensionada, a partição precisa de ser desmontada. Se conhece o nome da sua partição, pode ignorar este passo. Se não conhece, execute o seguinte comando:
 
 ```sh
 lsblk
 ```
 
-A partição correspondente ao Modo Rescue será montada na pasta root do sistema. Já a partição do seu VPS pode não estar montada, e deverá estar localizada numa pasta associada a /mnt.
+A partição correspondente ao Modo Rescue será montada no diretório “/”, que é, na realidade, a raiz do sistema. Já a partição do seu VPS estará provavelmente localizada num diretório associado a “/mnt”, ou não estará montada.
 
 ```sh
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -54,9 +54,9 @@ Para desmontar a partição, execute o seguinte comando:
 umount /dev/sdb1
 ```
 
-### Verificar o sistema de ficheiros
+### Verificar o sistema de ficheiros (filesystem)
 
-Depois de desmontar a partição, convém analisar o sistema de ficheiros (`filesystem check`) para verificar se existem erros. O comando é o seguinte:
+Depois de desmontar a partição, é necessário analisar o sistema de ficheiros (`filesystem check`) para verificar se existem erros. O comando é o seguinte:
 
 ```sh
 e2fsck -yf /dev/sdb1
@@ -69,13 +69,18 @@ Pass 4: Checking reference counts
 Pass 5: Checking group summary information
 /dev/sdb1: 37870/1310720 files (0.2% non-contiguous), 313949/5242462 blocks
 ```
-> [!warning]
->
-> Se surgir um erro do tipo`bad magic number in superblock`, não avance com o processo. Aceda à parte final deste manual, e siga as instruções para corrigir este erro.
+
+Se verificar algum erro, deverá adotar as medidas adequadas para cada situação. Estes são alguns dos exemplos mais frequentes:
+
+- `bad magic number in superblock`: não continuar. Para resolver este problema, consulte a secção “[Como corrigir os erros *bad magic number in superblock*](https://docs.ovh.com/pt/vps/criar-particao-apos-upgrade-vps/#como-corrigir-os-erros-bad-magic-number-in-superblock)” deste manual.
+
+- `/dev/vdb1 has unsupported feature(s): metadata_csum` seguido de `e2fsck: Get a newer version of e2fsck!`: atualizar “e2fsck”. Se a última versão não estiver disponível através de `apt` (ou outro gestor de pacotes), deverá compilá-la a partir do código fonte.
+
+A seguinte lista não é exaustiva.
 
 ### Abrir a aplicação fdisk
 
-Quando terminar análise do disco, e se não existir qualquer erro, execute a aplicação`fdisk`. Quando introduzir o comando, adicione o nome do disco (e não o da partição) a seguir a fdisk. Se a partição for `sdb1` em vez de `vdb1`, por exemplo, o nome do disco será /dev/sdb.
+Depois de verificar que não existem erros no sistema de ficheiros, abra a a aplicação`fdisk`. Aí, deverá introduzir o nome do disco (e não o da partição) como parâmetro. Se a partição for `sdb1` em vez de `vdb1`, por exemplo, o nome do disco será /dev/sdb.
 
 ```sh
 fdisk -u /dev/sdb
@@ -83,12 +88,12 @@ fdisk -u /dev/sdb
 
 > [!primary]
 >
-> O fdisk tem vários subcomandos. Estes podem ser listados através do comando`m`.
+> Esta aplicação dispõe de vários subcomandos, que poderão ser listados através do comando `m`.
 >
 
-### Eliminar a partição antiga
+### Eliminar a antiga partição
 
-Antes de eliminar partição pré-upgrade, identifique e anote o nome do primeiro setor da partição. Para obter esta informação, execute o comando `p`{.action}. A designação do setor está indicada abaixo do campo `Start`. Anote esta informação para ser usada mais tarde.
+Antes de eliminar a antiga partição, recomendamos que anote o número correspondente ao primeiro setor da partição. Para obter esta informação, execute o comando `p`{.action}. O número é o que aparece no campo `Start`. Conserve esta informação para ser usada mais tarde.
 
 ```sh
 Command (m for help): p
@@ -106,21 +111,21 @@ Device Boot Start End Blocks Id System
 
 > [!warning]
 >
-> Esta ação é irreversível. Por favor, crie uma cópia de segurança dos dados.
+> Esta ação é irreversível. Certifique-se de que tem uma cópia de segurança dos dados.
 >
 
-Agora, elimine a partição executando o comando `d`{.action}.
+Em seguida, elimine a partição através do comando `d`{.action}.
 
 ```sh
 Command (m for help): d
 Selected partition 1
 ```
 
-A única partição existente será eliminada de forma automática.
+A única partição será eliminada de forma automática.
 
 ### Criar uma nova partição
 
-Agora é necessário criar uma nova partição executando o comando `n`{.action}. Neste âmbito, recomendamos a utilização dos valores predefinidos.
+Agora é necessário criar uma nova partição executando o comando `n`{.action}. Recomendamos a utilização dos valores predefinidos.
 
 ```sh
 Command (m for help): n
@@ -133,11 +138,11 @@ First sector (2048-41943039, default 2048): 2048
 Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 41943039
 ```
 
-Certifique-se que o valor predefinido apresentado na linha `First sector`, é igual ao anotado anteriormente. Se for diferente, use o valor que anotou antes.
+Na linha `First sector`, certifique-se que o valor predefinido é igual ao que foi anotado anteriormente. Se for diferente, use o valor que anotou antes.
 
 ### Configurar uma partição de arranque (bootable)
 
-Agora, tem que definir a partição como partição de arranque. Para tal, execute o comando `a`{.action}.
+A seguir, certifique-se de que a partição seja de arranque (bootable). Para tal, utilize o comando `a`{.action}.
 
 ```sh
 Command (m for help): a
@@ -156,9 +161,9 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-### Redimensionar o sistema de ficheiros na partição
+### Ampliar o sistema de ficheiros na partição
 
-A partição foi aumentada, mas o sistema de ficheiros (filesystem) ainda ocupa o espaço definido anteriormente. Para expandir o sistema de ficheiros, execute o seguinte comando:
+A partição foi aumentada, mas o sistema de ficheiros (filesystem) ainda ocupa o espaço definido anteriormente. Para o ampliar, introduza o seguinte comando:
 
 ```sh
 resize2fs /dev/sdb1
@@ -168,9 +173,9 @@ Resizing the filesystem on /dev/sdb1 to 5242624 (4k) blocks.
 The filesystem on /dev/sdb1 is now 5242624 blocks long.
 ```
 
-### Verificar o resultado da alteração
+### Verificar os resultados
 
-Para confirmar o sucesso das alterações, monte a nova partição e verifique a dimensão da mesma.
+Para confirmar que a operação foi realizada corretamente, pode montar a partição que acabou de criar e verificar o seu tamanho.
 
 ```sh
 mount /dev/sdb1 /mnt
@@ -189,11 +194,11 @@ none 100M 0 100M 0% /run/user
 /dev/sdb1 50G 842M 48G 2% /mnt
 ```
 
-A dimensão da partição está indicada por baixo de `size`.
+A novo tamanho da partição está indicado na coluna `Size`.
 
 ### Como corrigir os erros *bad magic number in superblock*?
 
-Se o comando `e2fsck`{.action} devolver a mensagem de erro`bad magic number in superblock`, deverá verificar e corrigir o sistema de ficheiros, usando o backup de um superblock. Para ver os backups de superblocks disponíveis, execute este comando:
+Se o comando `e2fsck`{.action} devolver a mensagem de erro`bad magic number in superblock`, deverá verificar e corrigir o sistema de ficheiros utilizando um superbloco de backup. Para ver os superblocos de backups disponíveis, execute este comando:
 
 ```sh
 dumpe2fs /dev/sdb1 | grep superblock
@@ -215,7 +220,7 @@ Backup superblock at 20480000, Group descriptors at 20480001-20480006
 Backup superblock at 23887872, Group descriptors at 23887873-23887878
 ```
 
-Agora, utilize o primeiro backup superblock para verificar e corrigir sistema de ficheiros:
+De seguida, utilize o primeiro superbloco de backup para verificar e corrigir sistema de ficheiros:
 
 ```sh
 fsck -b 32768 /dev/sdb1
@@ -223,4 +228,4 @@ fsck -b 32768 /dev/sdb1
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
