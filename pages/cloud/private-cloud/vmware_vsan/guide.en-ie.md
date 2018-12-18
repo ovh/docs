@@ -62,7 +62,7 @@ In addition to the level of redundancy supported, vSAN offers two data protectio
 
 * Mirroring (RAID 1): The default level. Each object is written simultaneously onto two hosts (mirror).
 * Erasure coding + FTT=1 (RAID 5): Each object is split into three components, and a fourth parity component is calculated. It helps find any missing data if one of the components is lost. To write four components, four hosts are needed.
-* Erasure coding + FTT=1 (RAID 6): Each object is split into four data components, and two parity components. This way, two missing components can be recalculated. Then, to write six components in different locations and ensure redundancy, six hosts are required.
+* Erasure coding + FTT=2 (RAID 6): Each object is split into four data components, and two parity components. This way, two missing components can be recalculated. Then, to write six components in different locations and ensure redundancy, six hosts are required.
 
 These different settings will define the number of components that make up an object, and as a result, they can define the minimum number of hosts and outages (hosts, disks, etc.) that can be tolerated without loss of access to the data.
 
@@ -72,8 +72,8 @@ These different settings will define the number of components that make up an ob
 | Mirroring | 1 | RAID 1 | 3 | 1 |
 | Mirroring | 2 | RAID 1 | 5 | 2 |
 | Mirroring | 3 | RAID 1 | 7 | 3 |
-| Mirroring | 1 | RAID 5 | 4 | 1 |
-| Mirroring | 2 | RAID 6 | 6 | 2 |
+| Erasure Coding | 1 | RAID 5 | 4 | 1 |
+| Erasure Coding | 2 | RAID 6 | 6 | 2 |
 
 > [!primary]
 >
