@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment mettre en oeuvre la puissance de l''hyperconvergenc
 section: 'Fonctionnalités VMware vSphere'
 ---
 
-**Dernière mise à jour le 06/12/2018**
+**Dernière mise à jour le 18/12/2018**
 
 ## Objectif
 
@@ -62,7 +62,7 @@ En complément du nombre de défaillance supporté, vSAN propose de choisir entr
 
 * Mirroring (RAID 1) : il s'agit du niveau par défaut. Chaque objet est écrit simultanément sur deux hôtes différents (miroir) ;
 * Erasure Coding + FTT=1 (RAID 5) : chaque objet est découpé en trois composants et un quatrième composant de parité est calculé. Il permet de retrouver les données manquantes en cas de perte d'un des composants. Pour écrire quatre composants, il faut donc bien quatre hôtes.
-* Erasure Coding + FTT=1 (RAID 6) : chaque objet est découpé en quatre composants de données et deux composants de parité. Ils permettent de recalculer deux morceaux manquants. Là encore, pour écrire six composants à des endroits différents et assurer la redondance, il faut donc six hôtes.
+* Erasure Coding + FTT=2 (RAID 6) : chaque objet est découpé en quatre composants de données et deux composants de parité. Ils permettent de recalculer deux morceaux manquants. Là encore, pour écrire six composants à des endroits différents et assurer la redondance, il faut donc six hôtes.
 
 Ces différents paramètres vont définir le nombre de composants (components) qui constitues un objet et de ce fait vont définir le nombre d’hôte minimum et le nombre de pannes (hôtes, disques, etc…) supportable sans perte d’accès aux données.
 
@@ -72,8 +72,8 @@ Ces différents paramètres vont définir le nombre de composants (components) q
 | Mirroring | 1 | RAID 1 | 3 | 1 |
 | Mirroring | 2 | RAID 1 | 5 | 2 |
 | Mirroring | 3 | RAID 1 | 7 | 3 |
-| Mirroring | 1 | RAID 5 | 4 | 1 |
-| Mirroring | 2 | RAID 6 | 6 | 2 |
+| Erasure Coding | 1 | RAID 5 | 4 | 1 |
+| Erasure Coding | 2 | RAID 6 | 6 | 2 |
 
 > [!primary]
 >
