@@ -1,11 +1,11 @@
 ---
-title: Utilizzare l’IPMI sui server dedicati
+title: 'Utilizzare l’IPMI sui server dedicati'
 slug: utilizzo-ipmi-server-dedicati
-excerpt: Come connettersi al proprio server tramite IPMI senza utilizzare software esterni
-section: Per iniziare
+excerpt: 'Come connettersi al proprio server tramite IPMI senza utilizzare software esterni'
+section: 'Per iniziare'
 ---
 
-**Ultimo aggiornamento: 30/01/2018**
+**Ultimo aggiornamento: 13/12/2018**
 
 ## Obiettivo
 
@@ -15,7 +15,8 @@ Attenzione: incontrerai spesso anche il termine KVM (Keyboard Video and Mouse), 
 
 ## Prerequisiti
 
-- Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Dedicato`{.action} > `Server Dedicati`{.action}
+- Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager), sezione `Dedicato`{.action} > `Server Dedicati`{.action}
+
 
 ## Procedura
 
@@ -41,7 +42,7 @@ A questo punto è possibile gestire il server.
 
 ### Da browser in modalità Serial Over LAN (SOL)
 
-Anche se è consigliato utilizzare l’applet Java, l’IPMI è disponibile anche in modalità Serial Over LAN. Nello Spazio Cliente OVH, seleziona la scheda `IPMI`{.action} e clicca su `Dal tuo browser (SOL)`:
+Anche se è consigliato utilizzare l’applet Java, l’IPMI è disponibile anche in modalità Serial Over LAN. Nello Spazio Cliente OVH, seleziona la scheda `IPMI`{.action} e clicca su `Dal tuo browser (SOL)`{.action}:
 
 ![IPMI SoL activation](images/sol_ipmi_activation.png){.thumbnail}
 
@@ -54,11 +55,11 @@ Anche se è consigliato utilizzare l’applet Java, l’IPMI è disponibile anch
 
 È possibile che l’IPMI smetta di rispondere. Se non riesci a effettuare l’accesso, per prima cosa esegui un test cliccando su `Testa IPMI`{.action}:
 
-![test IPMI](images/ipmi_test.png){.thumbnail}
+![IPMI test](images/ipmi_test.png){.thumbnail}
 
 Se, come nel nostro esempio, tutto è normale, probabilmente è in corso un problema locale (connessione Internet, dispositivo utilizzato). Se, invece, il risultato del test restituisce degli errori, riavvia l'IPMI cliccando sul pulsante `Riavvia IPMI`{.action}.
 
-![test IPMI](images/ipmi_reboot.png){.thumbnail}
+![IPMI test](images/ipmi_reboot.png){.thumbnail}
 
 L’operazione di riavvio potrebbe richiedere alcuni minuti.
 
