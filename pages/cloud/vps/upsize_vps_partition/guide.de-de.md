@@ -1,10 +1,10 @@
 ---
-title: VPS-Partitionierung nach einem Upgrade
+title: 'VPS-Partitionierung nach einem Upgrade'
 slug: vps-partitionierung-nach-einem-upgrade
-section: Erste Schritte
+section: 'Erste Schritte'
 ---
 
-**Stand 21.12.2017**
+**Stand 13.12.2018**
 
 ## Einleitung
 
@@ -18,21 +18,21 @@ Nach einem Upgrade Ihres Virtual Private Server (VPS) kann eine erneute Partitio
 ## Voraussetzungen
 
 - SSH-Zugang zum VPS (Root-Zugriff)
-- Serverstart im [Rescue-Modus](https://docs.ovh.com/de/vps/rescue/){.external}
+- Serverstart im [Rescue-Modus](https://docs.ovh.com/de/vps/rescue/)
 
 ## Beschreibung
 
 Nach einem Upgrade werden RAM und Prozessor (CPU) automatisch angepasst. Für den Speicherplatz erfolgt dagegen keine systematische Anpassung.
 
-**In dieser Anleitung wird Ihnen Schritt für Schritt erklärt, wie Sie Ihren Speicherplatz vergrößern können**.
+**In dieser Anleitung wird Ihnen Schritt für Schritt erklärt, wie Sie Ihren Speicherplatz vergrößern**.
 
-### Sichern Ihrer Daten 
+### Sichern Ihrer Daten
 
 Da eine Partitionierung zum Verlust von Daten führen kann, wird **dringend empfohlen**, vorab die Daten, die sich auf Ihrem VPS befinden, zu sichern.
 
 ### Aushängen der Partition
 
-Wenn Sie mit Ihrem VPS im [Rescue-Modus](https://docs.ovh.com/de/vps/rescue/){.external} verbunden sind, wird Ihre Partition automatisch erstellt. Um die Größe neu einzustellen, müssen Sie die Partition aushängen. Wenn Sie den Namen Ihrer Partition kennen, können Sie den folgenden Schritt überspringen. Wenn Sie den Namen nicht kennen, verwenden Sie den folgenden Befehl:
+Wenn Sie mit Ihrem VPS im [Rescue-Modus](https://docs.ovh.com/de/vps/rescue/) verbunden sind, wird Ihre Partition automatisch erstellt. Um die Größe neu einzustellen, müssen Sie die Partition aushängen. Wenn Sie den Namen Ihrer Partition kennen, können Sie den folgenden Schritt überspringen. Wenn Sie den Namen nicht kennen, verwenden Sie den folgenden Befehl:
 
 ```sh
 lsblk
@@ -56,7 +56,7 @@ umount /dev/sdb1
 
 ### Überprüfung des Dateisystems
 
-Nachdem die Partition ausgehängt ist, sollte das Dateisystem (`filesystem check`) auf in der Partition möglicherweise vorhandene Fehler überprüft werden. Der Befehl lautet wie folgt:
+Nachdem die Partition ausgehängt ist, sollte das Dateisystem (`filesystem check`) auf mögliche Fehler in der Partition überprüft werden. Der Befehl lautet wie folgt:
 
 ```sh
 e2fsck -yf /dev/sdb1
@@ -69,13 +69,18 @@ Pass 4: Checking reference counts
 Pass 5: Checking group summary information
 /dev/sdb1: 37870/1310720 files (0.2% non-contiguous), 313949/5242462 blocks
 ```
-> [!warning]
->
-> Wenn Sie einen Fehler vom Typ `bad magic number in superblock` feststellen, gehen Sie nicht weiter. Am Ende dieser Anleitung wird Ihnen erklärt, wie vorzugehen ist, wenn dieses Problem auftaucht.
+
+Wenn Sie Fehler feststellen, sollten Sie in jedem Fall entsprechende Maßnahmen ergreifen. Im Folgenden finden Sie einige der häufigsten Fehler:
+
+- `bad magic number in superblock`: Fahren Sie nicht fort. Um dieses Problem zu beheben, befolgen Sie in der vorliegenden Anleitung die Anweisungen im Abschnitt „[Wie wird der Fehler *bad magic number in superblock* behoben?](https://docs.ovh.com/de/vps/vps-partitionierung-nach-einem-upgrade/#wie-wird-der-fehler-bad-magic-number-in-superblock-behoben)“.
+
+- `/dev/vdb1 has unsupported feature(s): metadata_csum` gefolgt von `e2fsck: Get a newer version of e2fsck!`: Aktualisieren Sie e2fsck. Wenn die neueste Version nicht über `apt` (oder einen anderen Paketmanager) verfügbar ist, muss diese aus dem Quellcode kompiliert werden.
+
+Die obenstehende Liste ist nicht vollständig.
 
 ### Öffnen der Anwendung fdisk
 
-Wenn die Überprüfung des Dateisystems fehlerfrei beendet wird, öffnen Sie die Anwendung `fdisk`. Hier müssen Sie den Namen des Laufwerks und nicht den der Partition als Parameter angeben.  Ist Ihre Partition zum Beipiel`sdb1` statt `vdb1`, dann lautet der Name des Laufwerks /dev/sdb.
+Wenn die Überprüfung des Dateisystems fehlerfrei beendet wird, öffnen Sie die Anwendung `fdisk`. Hier müssen Sie den Namen des Laufwerks und nicht den der Partition als Parameter angeben. Ist Ihre Partition zum Beispiel`sdb1` statt `vdb1`, dann lautet der Name des Laufwerks /dev/sdb.
 
 ```sh
 fdisk -u /dev/sdb
