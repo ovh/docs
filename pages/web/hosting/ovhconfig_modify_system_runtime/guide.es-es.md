@@ -6,7 +6,7 @@ section: 'Configuración del alojamiento'
 order: 3
 ---
 
-**Última actualización: 25/09/2018**
+**Última actualización: 20/12/2018**
 
 ## Objetivo
 
@@ -34,7 +34,7 @@ Al modificar la configuración de un alojamiento, también se modifica la config
 
 #### 1. Acceder a la gestión de la configuración del alojamiento
 
-Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la pestaña `Información general`{.action}, en el recuadro **Configuración**, haga clic en el botón `···`{.action} correspondiente a la línea **Versión PHP global** y seleccione `Cambiar la configuración`{.action}.
+Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la pestaña `Información general`{.action}, en el recuadro **Configuración**, haga clic en el botón `···`{.action} correspondiente al epígrafe **Versión PHP global** y seleccione `Cambiar la configuración`{.action}.
 
 ![Configuración del alojamiento](images/change-hosting-configuration-step1.png){.thumbnail}
 
@@ -53,7 +53,7 @@ La ventana ofrece dos opciones posibles. Seleccione la operación que desee real
 
 > [!primary]
 >
-> Al cambiar el motor de ejecución del alojamiento web, se borran automáticamente las sesiones PHP.
+> Al cambiar el entorno de ejecución del alojamiento web, las sesiones PHP se borran automáticamente.
 > 
 
 Haga clic en `Aceptar`{.action} para guardar los cambios y espere a que finalice la operación.
@@ -131,6 +131,11 @@ El modo permite gestionar el comportamiento del cacheado de los archivos estáti
 |---|---|---|
 |**producción**|Maximiza el almacenamiento en caché de los archivos estáticos en los navegadores web.|Los errores de PHP no se muestran en el sitio web.|
 |**desarrollo**|No se almacena ningún archivo en caché.|Los errores de PHP se muestran en el sitio web.|
+
+> [!primary]
+>
+> En las versiones 7.1 y posteriores de PHP, los errores se mostrarán en el sitio web, independientemente del modo que utilice.
+> 
 
 Puede cambiar el modo de su alojamiento web de dos formas distintas:
 
