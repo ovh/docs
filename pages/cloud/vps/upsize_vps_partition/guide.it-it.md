@@ -1,10 +1,10 @@
 ---
-title: Partizionare un VPS in seguito a un upgrade
+title: 'Partizionare un VPS in seguito a un upgrade'
 slug: partizionare-vps-in-seguito-a-un-upgrade
-section: Per iniziare
+section: 'Per iniziare'
 ---
 
-**Ultimo aggiornamento: 14/11/2017**
+**Ultimo aggiornamento: 12/12/2018**
 
 ## Obiettivo
 
@@ -18,7 +18,7 @@ section: Per iniziare
 ## Prerequisiti
 
 - Avere accesso in SSH al VPS (root)
-- Aver riavviato il server in [Rescue mode](https://docs.ovh.com/it/vps/mode-rescue-vps/).
+- Aver riavviato il server in [Rescue mode](https://docs.ovh.com/it/vps/rescue/)
 
 ## Procedura
 
@@ -32,7 +32,7 @@ Estendere una partizione può comportare la perdita dei dati presenti sul tuo VP
 
 ### Smonta la partizione
 
-L’accesso al tuo VPS in [modalità Rescue](https://docs.ovh.com/it/vps/mode-rescue-vps/) implica il mount automatico della tua partizione. Per ridimensionarla, è necessario smontarla. Se conosci il nome della tua partizione, salta questo step. In caso contrario, esegui il comando:
+L’accesso al tuo VPS in [modalità Rescue](https://docs.ovh.com/it/vps/rescue/) implica il mount automatico della tua partizione. Per ridimensionarla, è necessario smontarla. Se conosci il nome della tua partizione, salta questo step. In caso contrario, esegui il comando:
 
 ```sh
 lsblk
@@ -69,9 +69,14 @@ Pass 4: Checking reference counts
 Pass 5: Checking group summary information
 /dev/sdb1: 37870/1310720 files (0.2% non-contiguous), 313949/5242462 blocks
 ```
-> [!warning]
->
-> Se rilevi un errore di tipo `bad magic number in superblock`, non continuare. Segui la procedura descritta alla fine di questa guida per risolvere il problema.
+
+In caso di errore, è necessario agire nel modo più adeguato a seconda dei casi. Di seguito alcuni tra gli errori più ricorrenti:
+
+- `bad magic number in superblock`: non continuare. Segui la procedura descritta alla fine di questa guida per risolvere il problema.
+
+- `/dev/vdb1 has unsupported feature(s): metadata_csum` seguito da `e2fsck: Get a newer version of e2fsck!`: aggiorna e2fsck. Se l’ultima versione non è disponibile via `apt` (o altri gestori di pacchetti), sarà necessario compilarla partendo dal codice sorgente.
+
+Questa lista non è esaustiva.
 
 ### Apri l’applicazione fdisk
 
@@ -175,7 +180,6 @@ Per verificare che l’operazione sia andata a buon fine, esegui il mount della 
 ```sh
 mount /dev/sdb1 /mnt
 ```
-
 ```sh
 df -h
  
@@ -224,4 +228,4 @@ fsck -b 32768 /dev/sdb1
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://ovh.it/community>.
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
