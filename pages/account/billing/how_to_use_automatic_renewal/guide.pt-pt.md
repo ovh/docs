@@ -1,171 +1,122 @@
 ---
-title: Guia de utilização da renovação automática da OVH
+title: 'Gerir a renovação dos serviços'
+excerpt: 'Saiba como gerir a renovação dos seus serviços OVH na sua Área de Cliente'
 slug: guia_de_utilizacao_da_renovacao_automatica_da_ovh
+section: Introdução
 legacy_guide_number: g1271
 ---
 
+**Última atualização: 18/12/2018**
 
-## Generalidades
-A escolha do método de pagamento efetua-se a partir do [Manager](https://www.ovh.com/manager/web/), na Rubrica "Faturação" e de seguida em "Os meus métodos de pagamento... Clique de seguida em "Adicionar um método de pagamento".
+## Sumário
 
+Quando possui serviços na OVH, pode gerir a respetiva renovação a partir da Área de Cliente. 
 
-- Atenção, se nenhum método de pagamento está ativo e pede a renovação automática para um dos seus serviços, a sua conta OVH será debitada e deverá depois regularizá-la para evitar qualquer corte no serviço.
+**Saiba como gerir a renovação dos seus serviços OVH na sua Área de Cliente.**
 
+> [!primary]
+>
+> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Caso tenha alguma dúvida, consulte os contratos da OVH disponíveis na sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. Para isso, clique no seu ID de cliente no canto superior direito e selecione `Serviços`{.action} > `Contratos`{.action}.
+>
 
-A ativação do débito automático efetua-se na rubrica "Os meus serviços".
+## Requisitos
 
-![](images/3734.png){.thumbnail}
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Possuir serviços da OVH ativos.
 
+## Instruções
 
-## Registo de um cartão de crédito
-Deve escolher "Cartão de crédito" e depois deve clicar em "Adicionar".
+A OVH oferece-lhe várias formas de gerir a renovação dos seus serviços, embora em alguns casos seja necessária a intervenção da OVH. Consulte este documento em função da operação que pretende realizar. 
 
+- [Visualizar o estado da renovação dos serviços](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#visualizar-o-estado-da-renovacao-dos-servicos){.external}: permite verificar se os seus serviços dispõem de uma renovação automática, assim como a respetiva data de renovação ou de expiração.
 
-- Atenção, é necessário ativar as pop-ups para que a nota de encomenda lhe seja apresentada.
+- [Gerir a renovação dos serviços](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#gerir-a-renovacao-dos-servicos){.external}: permite ativar ou desativar a renovação automática, alterar a frequência de pagamento de um serviço e antecipar a sua renovação antes da data prevista para o efeito.
 
+- [Gerir os métodos de pagamento](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#gerir-os-metodos-de-pagamento){.external}: permite consultar se o método de pagamento das suas próximas renovações está ativo, assim como adicionar novos métodos de pagamento ou eliminar os existentes.
 
+### Visualizar o estado da renovação dos serviços
 
-![](images/3735.png){.thumbnail}
-Para que possa validar o seu cartão de crédito, vai-lhe ser debitado inicialmente um valor de 1€ s/IVA.
-Este momento será imediatamente creditado na sua conta OVH e poderá deduzi-lo na próxima fatura gerada.
-O cartão será visível imediatamente.
+Aceda à sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no seu ID de cliente no canto superior direito e, em seguida, clique em `Serviços`{.action}.
 
-![](images/3736.png){.thumbnail}
+![manageautomaticrenewal](images/manage-automatic-renewal-step1.png){.thumbnail}
 
+A nova página apresenta a tabela de gestão das suas soluções da OVH. A partir desta interface, poderá consultar a data de renovação ou de expiração de cada serviço, assim como a frequência de pagamento,
 
-## Registo de um Cartão de Crédito
-Num primeiro tempo complete as informações pedidas. Clique em "Adicionar" para continuar a operação.
+respetivamente nas colunas “Data de renovação” e “Frequência do pagamento” da tabela. Poderá utilizar os filtros para efetuar uma pesquisa mais precisa.
 
-![](images/3738.png){.thumbnail}
-Ao clicar no botão "Adicionar", um documento será descarregado.
+![manageautomaticrenewal](images/manage-automatic-renewal-step2.png){.thumbnail}
 
+### Gerir a renovação dos serviços
 
-- Atenção, é necessário ativar as pop-ups para que a nota de encomenda lhe seja apresentada.
+Aceda à sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no seu ID de cliente no canto superior direito e, em seguida, clique em `Serviços`{.action}.
 
+![manageautomaticrenewal](images/manage-automatic-renewal-step1.png){.thumbnail}
 
-Queira seguir o procedimento descrito no documento para validar o método de pagamento. A sua conta bancária será validada nas próximas 24 a 48h a contar a partir da receção da sua autorização de débito bancário.
+A nova página apresenta a tabela de gestão das suas soluções da OVH. Sempre que o serviço o permita, poderá também realizar as seguintes ações:
 
+|Ações possíveis|Descrição|
+|---|---|
+|Alterar a frequência do pagamento|Permite alterar a frequência de pagamento de um serviço. Note que alguns serviços não permitem alterar a frequência de pagamento ou não mostram determinadas opções.|
+|Pagar o serviço|Permite antecipar a renovação de um serviço antes da data de renovação automática prevista.|
+|Ativar/desativar o pagamento automático|Permite ativar ou desativar a renovação automática de um serviço.|
 
-- Método atualmente indisponível para Portugal.
+Consulte este documento em função da operação que pretende realizar.
 
+![manageautomaticrenewal](images/manage-automatic-renewal-step3.png){.thumbnail}
 
+#### Alterar a frequência do pagamento
 
-![](images/1077.png){.thumbnail}
+Esta operação altera a frequência de pagamento da renovação automática de um serviço. Existem quatro tipos de frequência: mensal, trimestral, semestral e anual. Note que alguns serviços da OVH não permitem alterar a frequência de pagamento ou não mostram determinadas opções.
 
+Para alterar a frequência de pagamento, clique nos três pontos situados no final da linha correspondente ao serviço e selecione `Alterar frequência de pagamento`{.action}.
 
-## Registo de uma conta Paypal
-Pode adicionar uma conta Paypal. Clique em "Adicionar", e irá ser aberto uma nova janela.
+![manageautomaticrenewal](images/manage-automatic-renewal-step4.png){.thumbnail} 
 
+Na nova página, selecione a nova frequência de pagamento no menu pendente abaixo de “Tipo”. De seguida, clique em `Seguinte`{.action} e em `Validar`{.action}. A nova frequência de pagamento será aplicada na próxima renovação automática do seu serviço.
 
-- Atenção, é necessário ativar as pop-ups para que a nota de encomenda lhe seja apresentada.
+![manageautomaticrenewal](images/manage-automatic-renewal-step5.png){.thumbnail} 
 
+#### Antecipar o pagamento de um serviço
 
+Esta operação permite antecipar o pagamento de um serviço antes da data de renovação automática prevista. Para alguns serviços da OVH, é possível que esta operação não seja possível.
 
-![](images/3738.png){.thumbnail}
-Nessa nova página introduza as suas informações de pagamento.
+Depois de clicar nos três pontos situados no final da linha correspondente ao serviço, selecione a opção `Pagar o serviço`{.action}. Se quiser realizar esta operação para vários serviços, selecione-os na coluna esquerda da tabela e, em seguida, clique no botão `Pagar o serviço`{.action}.
 
-![](images/3739.png){.thumbnail}
+![manageautomaticrenewal](images/manage-automatic-renewal-step6.png){.thumbnail} 
 
+Será redirecionado para a interface de pagamento antecipado. Caso seja necessário, poderá aceder a esta interface através da seguinte ligação: <https://www.ovh.com/pt/cgi-bin/order/renew.cgi>. Siga os passos indicados para realizar o pagamento antecipado do serviço. 
 
-## Estado da renovação dos seus serviços
-Deve num primeiro tempo aceder a "Os meus serviços" de forma a selecionar os serviços a colocar em renovação automática.
+#### Ativar ou desativar a renovação automática
 
-![](images/3740.png){.thumbnail}
-Encontrará nesta tabela os seguintes elementos:
+A OVH permite ativar ou desativar a renovação automática de um serviço. Para isso, clique nos três pontos situados no final da linha correspondente ao serviço e selecione a opção `Desativar pagamento automático`{.action} ou em `Ativar pagamento automático`{.action}. 
 
+Leia as informações que aparecem e clique em `Confirmar`{.action} para validar a operação.
 
-- Dia de renovação automática: Deve escolher o dia no qual deseja que a OVH efetue o débito no seu método de pagamento.
+Note que a desativação da renovação automática de um serviço não equivale à rescisão do mesmo. Este ficará ativo até à sua data de expiração, permitindo-lhe escolher o momento da sua renovação. No entanto, se pretender rescindir um serviço de forma definitiva na sua data de expiração, consulte a secção “Gerir os serviços a partir da interface “Gerir serviços” do manual “[Gerir os serviços da OVH](https://docs.ovh.com/fr/billing/gerer-ses-services-ovh/#resilier-un-service-a-sa-date-dexpiration){.external}”.
 
-- Identificador: Esta coluna corresponde ao nome do serviço a que corresponde.
+![manageautomaticrenewal](images/manage-automatic-renewal-step7.png){.thumbnail} 
 
-- Renovação: Esta coluna permite-lhe conhecer o tipo de renovação em curso para o seu serviço.
+### Gerir os métodos de pagamento
 
-- 1. Todos os serviços: Pode solicitar a filtragem a tabela por tipo de serviço.
+Aceda à sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no seu ID de cliente no canto superior direito e, em seguida, clique em `Métodos de pagamento`{.action}.
 
-- 2. Data: Pode solicitar a filtragem da lista para apresentar apenas os serviços que "expiram dentro de uma semana", "expiram dentro de um mês" ou que "já expiraram".
+![manageautomaticrenewal](images/manage-automatic-renewal-step8.png){.thumbnail}
 
-- 3. Renovação: Pode solicitar aqui a filtragem para apresentar apenas os serviços que estão com "renovação automática anual", "renovações automática mensal", "renovação mensal".
+Será redirecionada para uma página onde poderá consultar todos os métodos de pagamento, gerir os métodos de pagamento adicionados ou adicionar novos.
 
+Poderá consultar a seguinte informação para cada método de pagamento:
 
+- Tipo de pagamento: indica o tipo de pagamento.
+- Descrição: permite identificar facilmente o método de pagamento.
+- Método de pagamento padrão: indica se o método de pagamento é ou não a opção indicada por predefinição.
+- Estado: pode variar em função do método de pagamento e do seu estado de ativação.
 
-![](images/3741.png){.thumbnail}
-Ao clicar em "Eliminar", esta opção desativa a renovação automáticas e o seu serviço será eliminado na sua data de expiração.
+![manageautomaticrenewal](images/manage-automatic-renewal-step9.png){.thumbnail}
 
+Para adicionar um novo método de pagamento, clique no botão `Adicionar um método de pagamento`{.action} e selecione o tipo que deseja. Siga os passos indicados para validar a operação.
 
-## Escolha da renovação automático
-Ao clicar no "lápis" à direita do seu serviço na coluna "Renovação", poderá modificar o tipo de renovação.
+![manageautomaticrenewal](images/manage-automatic-renewal-step10.png){.thumbnail}
 
+## Quer saber mais?
 
-- Renovação: Deve escolher aqui "Automática" para que o seu serviço seja renovado automaticamente.
-
-- Frequência: Pode escolher, em função do tipo de serviço, a frequência da renovação.
-
-Se escolher "3 meses" como frequência, a renovação de 3 meses será debitada e a renovação do seu serviço far-se-á a cada 3 meses.
-
-
-![](images/3742.png){.thumbnail}
-
-
-## Ativação da renovação automática em vários serviços
-Pode modificar o tipo de renovação para vários serviços ao escolher os serviços em questão na coluna da esquerda.
-
-Basta de seguida clicar em "Modificar as renovações"
-
-![](images/3743.png){.thumbnail}
-
-
-## Funcionamento
-Estamos a 2 de Fevereiro de 2014 e configurado a renovação automática para o dia12, por um período de 1 ano para cada serviço.
-
-![](images/1564.png){.thumbnail}
-Atenção: A encomenda de alinhamento não será realizada a 2 de Fevereiro de 2014 mas na data escolhida, ou seja, dia 12!
-
-A primeira encomenda de alinhamento aquando da ativação de serviços em renovação automática é forçosamente de 1 mês. Pode ter de modificar posteriormente  a duração das suas renovações, e é por esse motivo que a renovação é mensal.
-Os alinhamentos serão unicamente efetuados para os serviços próprios à OVH (como alojamentos, SQL Privado, opções..etc).
-
-/!\ Os nomes de domínio não podem ser renovados senão por períodos mínimos de 1 ano e como tal não pode ser criada uma nota de encomenda de alinhamento. É do seu interesse escolher uma data de renovação "global" conveniente.
-
-O que é importante saber :
-Independentemente do período de renovação escolhido, o nosso robô fará todos os meses uma verificação dos serviços que expiram entre essa data (inclusive) e a mesma data no mês seguinte a fim de renovar os serviços encontrados para esse período e para os quais ativou a renovação automática.
-
-No nosso caso, no dia 12 de Fevereiro, a nota de encomenda conteria:
-Os alinhamentos de : 
-. Serviço 3: por 1 mês + 1 dia (de 11 de Fevereiro a 12 de Março de 2014);
-. Serviço 5: por 27 dias (de 13 de Fevereiro a 12 de Março de 2014);
-colocando as suas datas de expiração como 12 de Março de 2014.
-
-No dia 12 de Março de 2014, os Serviços 3 & 5 serão renovados por 1 ano (período escolhido).
-
-Atenção, o Serviço 3 expira no dia 11 de Fevereiro de 2014 e, consequentemente, será cortado e ficará indisponível em 12 de Fevereiro de 2014 !
-
-O Serviço 2 expira a 12 de Fevereiro de 2014, e será renovado por 1 ano (período escolhido).
-
-Quanto aoServiço 4 que expira no dia 15 de Fevereiro de 2014, o robô detetará que o mesmo expira entre 12 de Fevereiro de 2014 e 12 de Março de 2014, portanto o mesmo será renovado por 1 ano e esse 1 ano adicional será creditado na data de expiração do Serviço.
-
-Ou seja, no dia 12 de Fevereiro de 2014 o meu Serviço 4 será renovado por 1 ano suplementar e a sua nova data de expiração será 15 de Fevereiro de 2015.
-
-O Serviço 1 ficará indisponível de 10 a 12 de Fevereiro de 2014 mas será renovado pelo robô por 1 ano (duração escolhida) no dia 12 de Fevereiro de 2014.
-
-Para resumir, a nota de encomenda de 12 de Fevereiro conterá:
-Os alinhamentos de :
-. Serviço 3: por 1 mês + 1 dia (de 11 de Fevereiro de a 12 de Março de 2014)
-. Serviço 5: por 27 dias (de 13 de Fevereiro a 12 de Março  de 2014)
-A renovação de:
-. Serviço 1: por 1 ano (de 10 de Fevereiro de  2014 a 10 de Fevereiro de 2015)
-. Serviço 2: por 1 ano (du 12 de Fevereiro de 2014 a 12 de Fevereiro de 2015)
-. Serviço 4: por 1 ano (du 15 de Fevereiro de 2014 a 15 de Fevereiro de 2015)
-
-A nota de encomenda de 14 de Março conterá :
-
-A renovação de:
-. Serviço 3: por 1 ano (de 12 de Março de 2014 a 12 de Março de 2015)
-. Serviço 5: por 1 ano (de 12 de Março de 2014 a 12 de Março de 2015)
-
-A ter em conta: Una renovação automática solicitada a 29, 30 ou 31 será efetuada automaticamente no 1º dia do mês seguinte, em função do número de dias do mês em curso (Fevereiro, por exemplo).
-
-
-## Duração de vida de um nome de domínio
-Consulte o gráfico explicativo.
-
-![](images/2554.png){.thumbnail}
-
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
