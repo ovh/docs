@@ -1,89 +1,60 @@
 ---
-title: Import a failover IP
-excerpt: Import a failover IP
+title: 'Import a failover IP'
 slug: import_a_failover_ip
+excerpt: 'This guide explains how to import a failover IP into your OVH Public Cloud project.'
 legacy_guide_number: g1883
+section: Networking
 ---
 
+**Last updated 19th December 2018**
 
-## 
+## Objective
+
 If you need to configure a failover IP address on your instances because:
 
-- You have many websites on your instance, 
-- You host international projects,
-- You want to migrate from a dedicated server to a Public cloud instance, 
+- you have multiple websites on your instance 
+- you host international projects
+- you want to migrate from a Dedicated Server to a Public Cloud instance
 
-You can import a failover IP address which is linked to a different OVH service.
+... you can import a failover IP address that is linked to a different OVH service.
 
-This guide explains how to import this failover IP into your OVH Public Cloud project.
+**This guide explains how to import this failover IP into your OVH Public Cloud project.**
 
+## Requirements
 
-## Prerequisites
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a [failover IP address](https://www.ovh.ie/dedicated_servers/ip_failover.xml){.external} assigned to an [OVH Dedicated Server](https://www.ovh.ie/dedicated_servers/){.external}.
 
-- You must have a failover IP linked to a dedicated server.
+## Instructions
 
-Example: An IP in the Dedicated section of the Control Panel:
+Firstly, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
 
-![](images/img_2817.jpg){.thumbnail}
+When you've found your project in the list, click it and then select the `Infrastructure`{.action} tab.
 
+![IP Section](images/import-failover-ip-01.png){.thumbnail}
 
-## To Public Cloud
+Next, Click the `Actions`{.action} button and then click `Import OVH Failover IPs`{.action}.
 
-- Go to the Cloud section in the Control Panel.
-- Click Add and then Importing Failover IPs:
+![Import Failover IP](images/import-failover-ip-02.png){.thumbnail}
 
+Next, select the failover IP you want to import and then click the `Confirm`{.action} button.
 
+![Select Failover IP](images/import-failover-ip-03.png){.thumbnail}
 
-![](images/img_2818.jpg){.thumbnail}
+You will now see a confirmation message.
 
-- The following window appears:
+![Failover Imported](images/import-failover-ip-04.png){.thumbnail}
 
+When the failover IP has been successfully imported, click the dropdown arrow next to the the failover IP and then click `Modify the associated server`{.action}.
 
+![Attach Failover IP](images/import-failover-ip-05.png){.thumbnail}
 
-![](images/img_2819.jpg){.thumbnail}
+Now click the grey circle on the right side of your instance. This indicates that you want to attach your failover IP to the instance. When you have done this, click the yellow `Attach`{.action} button at the bottom of your screen.
 
-- Tick the failover IP of your choice and then click confirm.
-- The IP will be imported in a few seconds:
+![Attach Failover IP](images/import-failover-ip-06.png){.thumbnail}
 
+Your failover IP will now be attached to your instance.
 
+## Go further
 
-![](images/img_3810.jpg){.thumbnail}
-
-- The IP has now been imported:
-
-
-
-![](images/img_3811.jpg){.thumbnail}
-
-- Click on the arrow to choose which virtual server to attach the IP to.
-
-
-
-![](images/img_3812.jpg){.thumbnail}
-
-- Check the server that you want:
-
-
-
-![](images/img_3813.jpg){.thumbnail}
-
-- Click attach to confirm
-- The IP will now be attached
-
-
-
-![](images/img_3814.jpg){.thumbnail}
-
-
-## To a dedicated server
-It is possible to migrate your failover IP back to your dedicated server. 
-
-To do this, go back to the "IP" menu in the "Dedicated" section in the Control Panel, and click on the cogwheel to the right of your failover IP address:
-
-![](images/img_3300.jpg){.thumbnail}
-You just have to move your IP to your dedicated server
-
-
-## 
-[Go back to the index of Cloud guides]({legacy}1785)
-
+Join our community of users on <https://community.ovh.com/en/>.
