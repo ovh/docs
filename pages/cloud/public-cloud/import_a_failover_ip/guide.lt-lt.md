@@ -1,89 +1,60 @@
 ---
-title: IP Failover importavimas
-excerpt: IP Failover importavimas
+title: 'Import a failover IP'
 slug: ip_failover_importavimas
+excerpt: 'This guide explains how to import a failover IP into your OVH Public Cloud project.'
 legacy_guide_number: g1883
+section: Networking
 ---
 
+**Last updated 19th December 2018**
 
-## 
-Jeigu jums reikia konfigūruoti IP Failover adresą virtualiose mašinose dėl bent vienos iš šių priežasčių:
+## Objective
 
-- jūs turite keletą interneto svetainių toje pačioje virtualioje mašinoje; 
-- jūs talpinate tarptautinius projektus;
-- jūs norite perkelti savo veiklą iš dedikuoto serverio į Public Cloud virtualią mašiną;
+If you need to configure a failover IP address on your instances because:
 
-OVH siūlo galimybę importuoti IP Failover adresą, susietą su kita OVH paslauga.
+- you have multiple websites on your instance 
+- you host international projects
+- you want to migrate from a Dedicated Server to a Public Cloud instance
 
-Šiame gide paaiškinama, kaip migruoti IP Failover adresą į jūsų OVH Public Cloud projektą.
+... you can import a failover IP address that is linked to a different OVH service.
 
+**This guide explains how to import this failover IP into your OVH Public Cloud project.**
 
-## Reikalavimai
+## Requirements
 
-- Turėti IP Failover adresą, susietą su dedikuotu serveriu. Pavyzdžiui, paslaugų valdymo sąsajos Dedicated skiltyje yra prieinamas IP adresas:
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a [failover IP address](https://www.ovh.lt/dedikuoti_serveriai/ip_failover.xml){.external} assigned to an [OVH Dedicated Server](https://www.ovh.lt/dedikuoti_serveriai/){.external}.
 
+## Instructions
 
+Firstly, log in to the [OVH Control Ppanel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
 
-![](images/img_2817.jpg){.thumbnail}
+When you've found your project in the list, click it and then select the `Infrastructure`{.action} tab.
 
+![IP Section](images/import-failover-ip-01.png){.thumbnail}
 
-## į Public Cloud
+Next, Click the `Actions`{.action} button and then click `Import OVH Failover IPs`{.action}.
 
-- Prisijunkite prie OVH valdymo sąsajos Cloud skilties;
-- Spragtelėkite Importuoti IP Failover:
+![Import Failover IP](images/import-failover-ip-02.png){.thumbnail}
 
+Next, select the failover IP you want to import and then click the `Confirm`{.action} button.
 
+![Select Failover IP](images/import-failover-ip-03.png){.thumbnail}
 
-![](images/img_2818.jpg){.thumbnail}
+You will now see a confirmation message.
 
-- Matysite langą:
+![Failover Imported](images/import-failover-ip-04.png){.thumbnail}
 
+When the failover IP has been successfully imported, click the dropdown arrow next to the the failover IP and then click `Modify the associated server`{.action}.
 
+![Attach Failover IP](images/import-failover-ip-05.png){.thumbnail}
 
-![](images/img_2819.jpg){.thumbnail}
+Now click the grey circle on the right side of your instance. This indicates that you want to attach your failover IP to the instance. When you have done this, click the yellow `Attach`{.action} button at the bottom of your screen.
 
-- Pažymėkite pasirinktą IP Failover ir spauskite Patvirtinti;
-- Importavimas užtruks keletą sekundžių.
+![Attach Failover IP](images/import-failover-ip-06.png){.thumbnail}
 
+Your failover IP will now be attached to your instance.
 
+## Go further
 
-![](images/img_3810.jpg){.thumbnail}
-
-- IP adresas yra importuotas.
-
-
-
-![](images/img_3811.jpg){.thumbnail}
-
-- Spragtelėkite simbolį ir pasirinkite virtualų serverį, kuriam bus priskirtas IP adresas:
-
-
-
-![](images/img_3812.jpg){.thumbnail}
-
-- Pažymėkite norimą serverį:
-
-
-
-![](images/img_3813.jpg){.thumbnail}
-
-- Patvirtinkite paspaudę Priskirti (Attach);
-- IP adreaas yra priskirtas.
-
-
-
-![](images/img_3814.jpg){.thumbnail}
-
-
-## į dedikuotą serverį
-Jūs galite pakartotinai migruoti savo IP Failover adresą į dedikuotą serverį.
-
-Šiam tikslui iš naujo prisijunkite prie OVH valdymo sąsajos Dedicated skilties IP dalies ir spragtelėkite sraigtelį, esantį IP Failover adreso dešinėje:
-
-![](images/img_3300.jpg){.thumbnail}
-Po to tereikia perkelti IP adresą į dedikuotą serverį.
-
-
-## 
-[Grįžti į Cloud gidų turinį]({legacy}1785)
-
+Join our community of users on <https://community.ovh.com/en/>.
