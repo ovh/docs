@@ -132,6 +132,11 @@ Indem Sie den Modus wählen, können Sie festlegen, wie die statischen Dateien (
 |*Produktivbetrieb*|Maximiert Caching statischer Dateien in den Webbrowsern.|PHP-Fehler werden auf Ihrer Website nicht angezeigt.|
 |*Entwicklung*|Es wird kein Caching durchgeführt.|PHP-Fehler werden auf Ihrer Website angezeigt.|
 
+> [!primary]
+>
+> Bei den PHP-Versionen 7.1 und höher werden die Fehler auf der Website angezeigt, egal, welcher Modus verwendet wird. 
+>
+
 Um den von Ihrem Webhosting verwendeten Modus zu ändern, haben Sie zwei Optionen:
 
 - **über Ihr Kundencenter**: Folgen Sie den Anweisungen im Abschnitt [„Webhosting-Konfiguration über das Kundencenter bearbeiten“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#webhosting-konfiguration-uber-das-kundencenter-bearbeiten){.external} in dieser Anleitung.
