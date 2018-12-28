@@ -1,7 +1,7 @@
 ---
 title: 'Gerir a renovação dos serviços'
-excerpt: 'Saiba como gerir a renovação dos seus serviços OVH na sua Área de Cliente'
 slug: guia_de_utilizacao_da_renovacao_automatica_da_ovh
+excerpt: 'Saiba como gerir a renovação dos seus serviços OVH na sua Área de Cliente'
 section: Introdução
 legacy_guide_number: g1271
 ---
@@ -32,7 +32,7 @@ A OVH oferece-lhe várias formas de gerir a renovação dos seus serviços, embo
 
 - [Gerir a renovação dos serviços](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#gerir-a-renovacao-dos-servicos){.external}: permite ativar ou desativar a renovação automática, alterar a frequência de pagamento de um serviço e antecipar a sua renovação antes da data prevista para o efeito.
 
-- [Gerir os métodos de pagamento](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#gerir-os-metodos-de-pagamento){.external}: permite consultar se o método de pagamento das suas próximas renovações está ativo, assim como adicionar novos métodos de pagamento ou eliminar os existentes.
+- [Gerir os métodos de pagamento](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#gerir-os-metodos-de-pagamento_1){.external}: permite consultar se o método de pagamento das suas próximas renovações está ativo, assim como adicionar novos métodos de pagamento ou eliminar os existentes.
 
 ### Visualizar o estado da renovação dos serviços
 
@@ -92,7 +92,7 @@ A OVH permite ativar ou desativar a renovação automática de um serviço. Para
 
 Leia as informações que aparecem e clique em `Confirmar`{.action} para validar a operação.
 
-Note que a desativação da renovação automática de um serviço não equivale à rescisão do mesmo. Este ficará ativo até à sua data de expiração, permitindo-lhe escolher o momento da sua renovação. No entanto, se pretender rescindir um serviço de forma definitiva na sua data de expiração, consulte a secção “Gerir os serviços a partir da interface “Gerir serviços” do manual “[Gerir os serviços da OVH](https://docs.ovh.com/fr/billing/gerer-ses-services-ovh/#resilier-un-service-a-sa-date-dexpiration){.external}”.
+Note que a desativação da renovação automática de um serviço não equivale à rescisão do mesmo. Este ficará ativo até à sua data de expiração, permitindo-lhe escolher o momento da sua renovação. No entanto, se pretender rescindir um serviço de forma definitiva na sua data de expiração, consulte a secção “Gerir os serviços a partir da interface “Gerir serviços” do manual “[Gerir os serviços da OVH](https://docs.ovh.com/pt/billing/gerir-os-servicos-ovh/#rescindir-um-servico-na-sua-data-de-expiracao){.external}”.
 
 ![manageautomaticrenewal](images/manage-automatic-renewal-step7.png){.thumbnail} 
 
