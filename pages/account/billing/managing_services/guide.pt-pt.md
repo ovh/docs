@@ -71,7 +71,7 @@ A nova página apresenta a tabela de gestão das suas soluções da OVH. A parti
 
 - rescindir um serviço na sua data de expiração;
 - eliminar imediatamente um serviço;
-- efetuar outras ações relacionadas com o pagamento do serviço. Para mais informações, consulte o manual “[Guia de utilização da renovação automática da OVH](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/){.external}”.
+- efetuar outras ações relacionadas com o pagamento do serviço. Para mais informações, consulte o manual “[Gerir a renovação dos serviços](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/){.external}”.
 
 Tenha em atenção que não é possível administrar algumas soluções a partir desta interface.
 
