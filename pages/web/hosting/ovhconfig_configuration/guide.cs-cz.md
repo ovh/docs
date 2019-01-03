@@ -6,7 +6,7 @@ section: Konfigurace
 order: 4
 ---
 
-**Poslední aktualizace 24/09/2018**
+**Poslední aktualizace 03/01/2019**
 
 ## Cíl
 
@@ -101,11 +101,11 @@ app.engine=php
 ; __app.engine.version__ specify version of your engine
 ;
 ; for php:
-;   default: 7.0
+;   default: 7.3
 ; for phpcgi:
 ;   this options is ignored (= fallback in AUTO)
 ;
-app.engine.version=7.0
+app.engine.version=7.3
 
 ; __http.firewall__ used to add application firewall  (filter http requests)
 ;

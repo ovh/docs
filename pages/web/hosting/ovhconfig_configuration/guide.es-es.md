@@ -6,7 +6,7 @@ section: 'Configuración del alojamiento'
 order: 4
 ---
 
-**Última actualización: 27/09/2018**
+**Última actualización: 03/01/2019**
 
 ## Objetivo
 
@@ -101,11 +101,11 @@ app.engine=php
 ; __app.engine.version__ specify version of your engine
 ;
 ; for php:
-;   default: 7.0
+;   default: 7.3
 ; for phpcgi:
 ;   this option is ignored (= fallback in AUTO)
 ;
-app.engine.version=7.0
+app.engine.version=7.3
 
 ; __http.firewall__ used to add application firewall (filter http requests)
 ;
