@@ -6,7 +6,7 @@ section: 'Configuratie van het webhostingplan'
 order: 4
 ---
 
-**Laatste update 28-09-2018**
+**Laatste update 03-01-2019**
 
 ## Introductie
 
@@ -101,11 +101,11 @@ app.engine=php
 ; __app.engine.version__ specify version of your engine
 ;
 ; for php:
-;   default: 7.0
+;   default: 7.3
 ; for phpcgi:
 ;   this option is ignored (= fallback in AUTO)
 ;
-app.engine.version=7.0
+app.engine.version=7.3
 
 ; __http.firewall__ used to add application firewall  (filter http requests)
 ;
