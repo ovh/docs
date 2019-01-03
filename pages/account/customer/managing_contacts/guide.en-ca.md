@@ -5,7 +5,7 @@ excerpt: Learn how to manage contacts for your OVH services
 section: Getting started
 ---
 
-**Last updated 2018/01/25** 
+**Last updated 2019/01/03** 
 
 ## Objective
 
@@ -26,7 +26,9 @@ OVH services are generally linked to several contacts. These contacts manage you
 
 ### Accessing contact management
 
-In the menu bar at the top of the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click on your NIC handle (with your first name and surname at the front), then `My account`{.action}. In the left-hand menu, click `My contacts`{.action}.
+Log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `My contacts`{.action}.
+
+![Contact management](images/contactmanagement0.png){.thumbnail}
 
 The table that appears will show all of the services your NIC handle is registered with as a contact.
 

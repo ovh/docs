@@ -5,7 +5,7 @@ excerpt: Zjistěte, jak na správu kontaktů svých OVH služeb
 section: První kroky
 ---
 
-**Poslední aktualizace 18/01/2018** 
+**Poslední aktualizace 03/01/2019** 
 
 ## Cíl
 
@@ -26,7 +26,9 @@ Ke každé službě OVH je obvykle přiřazeno několik kontaktů. Tyto kontakty
 
 ### Přístup ke správě kontaktů
 
-V panelu nabídky, umístěném v pravé horní části [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, rozklikněte svůj zákaznický identifikátor a poté klikněte na tlačítko `Můj účet`{.action}. V levém postranním panelu následně vyberte možnost `Moje kontakty`{.action}.
+V panelu nabídky, umístěném v pravé horní části [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, rozklikněte svůj zákaznický identifikátor a poté klikněte na tlačítko `Moje kontakty`{.action}. 
+
+![Contact management](images/contactmanagement0.png){.thumbnail}
 
 Zobrazená tabulka nabízí přehled služeb, v jejichž rámci je Váš zákaznický identifikátor veden jako kontakt.
 

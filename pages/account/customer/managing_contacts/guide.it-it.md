@@ -5,7 +5,7 @@ excerpt: Come gestire i contatti dei tuoi servizi dallo Spazio Cliente OVH
 section: Per iniziare
 ---
 
-**Ultimo aggiornamento: 19/01/2018**
+**Ultimo aggiornamento: 03/01/2019**
 
 ## Obiettivo
 
@@ -26,7 +26,9 @@ Un servizio OVH è generalmente associato a diversi contatti, che possono effett
 
 ### Accedi alla pagina di gestione dei contatti
 
-Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella barra del menu nella parte superiore, clicca prima sul tuo identificativo cliente (preceduto dal tuo nome e cognome) e poi su `Il tuo account`{.action}. Nel menu a sinistra, clicca su `I tuoi contatti`{.action}.
+Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella barra del menu nella parte superiore, clicca prima sul tuo identificativo cliente (preceduto dal tuo nome e cognome) e poi su `I tuoi contatti`{.action}.
+
+![Gestione dei contatti](images/contactmanagement0.png){.thumbnail}
 
 Visualizzi una tabella con i diversi servizi per cui il tuo identificativo cliente è stato indicato come contatto.
 

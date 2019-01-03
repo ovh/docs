@@ -5,14 +5,13 @@ excerpt: Ontdek hoe u contacten voor uw OVH-diensten kunt beheren
 section: Aan de slag
 ---
 
-**Laatste update 07/11/2017** 
+**Laatste update 03/01/2019** 
 
 ## Introductie
 
 OVH-diensten zijn over het algemeen gekoppeld aan verschillende contacten. Deze contactpersonen beheren uw dienst, afhankelijk van de verschillende autorisaties die ze hebben.
 
 **Leer hoe u contacten voor uw OVH-services kunt beheren.**
-
 
 ## Vereisten
 
@@ -23,12 +22,13 @@ OVH-diensten zijn over het algemeen gekoppeld aan verschillende contacten. Deze 
 - Het nieuwe contactpersoon moet toegang hebben tot het e-mailadres dat aan het profiel is gekoppeld.
 - De oude en nieuwe facturatiecontacten moeten up-to-date zijn met hun betalingen.
 
-
 ## Instructies
 
 ### Toegang krijgen tot contactbeheer
 
-In de menubalk bovenaan uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} klikt u op uw NIC handle/klant-ID (met uw voor- en achternaam ervoor) en vervolgens op `Mijn account`{.action}. In het linkermenu klikt u op  `Mijn contacten`{.action}.
+In de menubalk bovenaan uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} klikt u op uw NIC handle/klant-ID (met uw voor- en achternaam ervoor) en vervolgens op `Mijn contacten`{.action}.
+
+![Contactbeheer](images/contactmanagement0.png){.thumbnail}
 
 De tabel die verschijnt toont alle diensten waarmee uw NIC handle als contact is geregistreerd.
 

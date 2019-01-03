@@ -5,14 +5,13 @@ excerpt: Apprenez comment gérer les contacts de vos services OVH
 section: Premiers pas
 ---
 
-**Dernière mise à jour le 17/01/2018** 
+**Dernière mise à jour le 03/01/2019** 
 
 ## Objectif
 
 Un service créé chez OVH est généralement lié à plusieurs contacts. Ces derniers permettent la gestion de ce service en fonction de différentes autorisations.
 
 **Apprenez comment gérer les contacts de vos services OVH.**
-
 
 ## Prérequis
 
@@ -23,12 +22,13 @@ Un service créé chez OVH est généralement lié à plusieurs contacts. Ces de
 - Le nouveau contact doit quant à lui disposer d'un accès à l'adresse e-mail renseignée dans son profil.
 - L'ancien et le nouveau contact facturation doivent être à jour de leurs règlements.
 
-
 ## En pratique
 
 ### Accéder à la gestion des contacts
 
-Dans la barre de menu située en haut de l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur votre identifiant client (précédé de votre prénom et nom) puis sur `Mon compte`{.action}. Dans le menu de gauche, cliquez ensuite sur `Mes contacts`{.action}.
+Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le nom rattaché à votre identifiant client dans la barre de menu en haut à droite, puis cliquez sur `Mes contacts`{.action}.
+
+![Contact management](images/contactmanagement0.png){.thumbnail}
 
 Le tableau qui apparaît permet ainsi de visionner les différents services pour lesquels votre identifiant client est renseigné en tant que contact.
 
