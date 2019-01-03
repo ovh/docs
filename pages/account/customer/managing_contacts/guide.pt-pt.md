@@ -5,7 +5,7 @@ excerpt: Saiba como definir ou alterar os contactos (gestores) dos serviços OVH
 section: Introdução
 ---
 
-**Última atualização no dia 22/01/2018**
+**Última atualização no dia 03/01/2019**
 
 ## Sumário
 
@@ -25,7 +25,9 @@ Normalmente, os serviços OVH têm associados vários contactos, ou seja, vário
 
 ### Aceder à área de gestão dos contactos
 
-No canto superior direito da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no Identificador de Cliente (à direita do seu nome) e depois em `A minha conta`{.action}. De seguida, no menu à esquerda, clique em `Os meus contactos`{.action}.
+Aceda à sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no seu ID de cliente no canto superior direito e, em seguida, clique em `Os meus contactos`{.action}.
+
+![Gestão de contactos](images/contactmanagement0.png){.thumbnail}
 
 Irá visualizar uma tabela. A tabela inclui a lista de serviços associados ao seu identificador de cliente, e a lista dos contactos responsáveis pela gestão dos vários aspetos do serviço.
 

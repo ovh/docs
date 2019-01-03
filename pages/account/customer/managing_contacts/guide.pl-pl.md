@@ -5,7 +5,7 @@ excerpt: Dowiedz się, jak zarządzać kontaktami swoich usług OVH
 section: Pierwsze kroki
 ---
 
-**Ostatnia aktualizacja dnia 2018-01-19** 
+**Ostatnia aktualizacja dnia 2019-01-03** 
 
 ## Wprowadzenie
 
@@ -26,7 +26,9 @@ Usługa utworzona w OVH jest zwykle powiązana z kilkoma kontaktami. Umożliwiaj
 
 ### Dostęp do zarządzania kontaktami
 
-Na pasku menu znajdującego się u góry [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij swój identyfikator klienta (poprzedzony Twoim imieniem i nazwiskiem), a następnie `Moje konto`{.action}. W menu po lewej stronie kliknij `Moje kontakty`{.action}.
+Zaloguj się do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij nazwisko powiązane z Twoim identyfikatorem klienta na pasku menu w górnym prawym rogu, następnie kliknij `Moje kontakty`{.action}.
+
+![Zarządzanie kontaktami](images/contactmanagement0.png){.thumbnail}
 
 Tabela wyświetli usługi, do których zarządzania masz uprawnienia jako jeden z kontaktów.
 

@@ -5,7 +5,7 @@ excerpt: In dieser Anleitung erfahren Sie, wie Sie die Kontakte Ihrer OVH Dienst
 section: Erste Schritte
 ---
 
-**Stand 02.02.2018**
+**Stand 03.01.2019**
 
 ## Einleitung
 
@@ -26,7 +26,9 @@ Eine bei OVH erstellte Dienstleistung ist meist mit mehreren Kontakten verbunden
 
 ### Zugang zur Kontaktverwaltung
 
-Klicken Sie rechts in der Menüleiste am oberen Rand des [OVH Kundencenters](https://www.ovh.com/auth/?action=gotomanager){.external} auf Ihre Kundenkennung (hinter Ihrem Vor- und Nachnamen), und dann auf `Mein Account`{.action}. Klicken Sie anschließend im linken Menü auf `Meine Kontakte`{.action}.
+Klicken Sie rechts in der Menüleiste am oberen Rand des [OVH Kundencenters](https://www.ovh.com/auth/?action=gotomanager){.external} auf Ihre Kundenkennung (hinter Ihrem Vor- und Nachnamen), und dann auf `Meine Kontakte`{.action}.
+
+![Kontaktverwaltung](images/contactmanagement0.png){.thumbnail}
 
 In der angezeigten Tabelle können Sie die verschiedenen Dienstleistungen einsehen, für die Ihre Kundenkennung als Kontakt eingetragen ist.
 

@@ -5,14 +5,13 @@ excerpt: Opi hallinnoimaan palveluidesi kontakteja
 section: Aluksi
 ---
 
-**Päivitetty 07.11.2017** 
+**Päivitetty 03.01.2019** 
 
 ## Tavoite
 
 OVH:lla luotuun palveluun on yhdistetty yleensä useita kontakteja, jotka hallitsevat palveluasi eri käyttöoikeuksien mukaisesti.
 
 **Opi hallinnoimaan OVH:n palveluidesi kontakteja.**
-
 
 ## Edellytykset
 
@@ -23,12 +22,13 @@ OVH:lla luotuun palveluun on yhdistetty yleensä useita kontakteja, jotka hallit
 - Uudella kontaktilla on oltava puolestaan käyttöoikeus oman asiakastunnuksensa tiedoissa annettuun sähköpostiosoitteeseen.
 - Kummallakaan laskutuskontaktilla (uudella tai vanhalla) ei saa olla maksamattomia laskuja.
 
-
 ## Käytännössä
 
 ### Mene kontaktien hallintaan
 
-Klikkaa [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} yläpalkissa olevasta valikosta löytyvää asiakastunnustasi (jonka edessä näkyy etu- ja sukunimesi) ja sitten `Oma tili`{.action}. Klikkaa vasemmassa reunassa olevassa valikossa kohtaa `Omat kontaktit`{.action}
+Klikkaa [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} yläpalkissa olevasta valikosta löytyvää asiakastunnustasi (jonka edessä näkyy etu- ja sukunimesi) ja sitten `Omat kontaktit`{.action}.
+
+![Contact management](images/contactmanagement0.png){.thumbnail}
 
 Näkyviin tulevassa taulukossa voit nähdä erilaiset asiakastunnukseesi liitetyt palvelut sekä niiden kontaktit.
 

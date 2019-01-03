@@ -5,14 +5,13 @@ excerpt: Cómo gestionar los distintos contactos de los servicios de OVH
 section: Primeros pasos
 ---
 
-**Última actualización: 19/01/2018** 
+**Última actualización: 03/01/2019** 
 
 ## Objetivo
 
 Cada servicio de OVH suele tener asociados distintos contactos. Estos contactos permiten gestionar el servicio en función de los permisos de los que dispongan.
 
 **Esta guía explica cómo gestionar los contactos de los servicios de OVH.**
-
 
 ## Requisitos
 
@@ -23,12 +22,13 @@ Cada servicio de OVH suele tener asociados distintos contactos. Estos contactos 
 - El nuevo contacto debe tener acceso a la dirección de correo electrónico que se indica en el perfil de su cuenta.
 - El antiguo y el nuevo contacto de facturación deben estar al corriente de pago.
 
-
 ## Procedimiento
 
 ### Acceder a la gestión de los contactos 
 
-En la esquina superior derecha del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en su ID de cliente (precedido por su nombre y apellidos) y seleccione `Mi cuenta`{.action}. A continuación, haga clic en `Mis contactos`{.action} en el menú de la izquierda.
+En el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Mis contactos`{.action} en el menú de la izquierda.
+
+![Gestión de contactos](images/contactmanagement0.png){.thumbnail}
 
 Se mostrará una tabla con todos los servicios en los que su ID de cliente aparece como contacto.
 
