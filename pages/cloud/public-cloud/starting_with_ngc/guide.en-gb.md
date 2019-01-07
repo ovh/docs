@@ -16,6 +16,7 @@ Quick links:
 
 - <a href='#via_manager'>Create an NGC instance via OVH Manager</a>
 - <a href='#via_cli'>Create an NGC instance via the Command Line Interface</a>
+- <a href='#connect_vm'>Connect to your NGC instance</a>
 
 ## Prerequisites
 
@@ -108,9 +109,19 @@ openstack server show my_vm # describes the VM status
 openstack server delete my_vm # deletes the VM and stop the billing
 ```
 
-#### 3) SSH to the VM
+Get the VM IP address
 
-Get the VM IP with `openstack server show my_vm` and SSH into it with
+```shell
+openstack server show my_vm
+```
+
+<a id='connect_vm'>
+### Connect to your NGC instance
+</a>
+
+You can use [Putty](https://www.putty.org/) under Windows, `ssh` or another SSH client.
+
+The default user is `ubuntu`
 
 ```shell
 ssh -i ./mykey.pem ubuntu@<VM IP>
@@ -123,6 +134,13 @@ Once you are logged into the VM, you can start pulling and running the container
 The list of available containers (TensorFlow, Caffe2, DIGITS, Matab, MXNet, PyTorch, TensorFlow, RAPIDS, ...) is available here:
 
 <https://ngc.nvidia.com/catalog/containers>
+
+Example:
+
+```shell
+docker pull nvcr.io/nvidia/tensorflow:xx.yy-pyN
+nvidia-docker run -it --rm -v local_dir:container_dir nvcr.io/nvidia/tensorflow:xx.yy-pyN
+```
 
 <!--
 Please click the link below to see an example of semantic segmentation with NVIDIA DIGITS:
