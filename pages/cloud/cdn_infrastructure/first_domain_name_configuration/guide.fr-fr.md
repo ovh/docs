@@ -99,6 +99,7 @@ Il est impossible d'effectuer un enregistrement CNAME sur un domaine principal. 
 L'attribution d'un nom de domaine spécifique aux fichiers que vous souhaitez avoir en cache vous permet d'avoir une meilleure gestion :
 
 - de vos fichiers : seuls les fichiers appelés sur ce sous-domaine seront mis en cache. Vous pouvez ainsi conserver l'appel de vos fichiers dynamiques ou de ceux que vous ne souhaitez pas mettre en cache sur votre nom de domaine principal. Cela vous permet également de déterminer plus rapidement l'origine d'un défaut d'affichage sur votre site ;
+
 - de votre facturation : l'ensemble du trafic (mis en cache ou non) passant par le CDN étant facturé, cela vous permet de limiter le nombre de requêtes non utiles effectuées vers le CDN pour optimiser l'utilisation de votre quota.
 
 
