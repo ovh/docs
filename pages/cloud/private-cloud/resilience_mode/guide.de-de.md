@@ -6,7 +6,7 @@ legacy_guide_number: '7766742'
 section: 'OVH Funktionen'
 ---
 
-**Stand 18.12.2018**
+**Stand 09.01.2019**
 
 ## Einleitung
 
@@ -24,6 +24,7 @@ Der Resilienz-Modus ist ein von OVH entwickeltes Tool, das eine Störung auf Ihr
 ## Beschreibung
 
 Stellen Sie zunächst sicher, dass die folgenden Voraussetzungen erfüllt sind:
+
 - Der Host-Server ist Teil eines Clusters.
 - Die *High-Availability-*Option ist aktiviert.
 - Ein weiterer Host-Server ist im Cluster verfügbar und funktionsfähig.
