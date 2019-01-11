@@ -1,15 +1,17 @@
 ---
 title: Utilisation 2FA
 slug: utilisation-2FA
-excerpt: Protéger votre infrastructure avec la double authentification
+excerpt: Apprenez à mette en place la double authentification pour protéger votre infrastructure
 section: Fonctionnalités OVH
+hidden: true
 ---
 
 
 ## Objectif
 
-Mettre en place une double authentification pour protéger votre infrastructure.
-Ce guide vous explique comment faire.
+La double authentification vous permet de protéger votre infrastructure.
+
+**Apprenez à mette en place la double authentification pour protéger votre infrastructure.**
 
 ## Prérequis
 
@@ -19,20 +21,16 @@ Ce guide vous explique comment faire.
 
 > [!warning]
 >
-> La double authentification sera active lors de la modification de mot de passe d'un des utilisateurs.
-C'est à dire que si un seul des utilisateurs modifie son mot de passe, tous les utilisateurs auront la double authentification activée. 
+> La double authentification sera active lors de la modification de mot de passe d'un des utilisateurs. C'est à dire que si un seul des utilisateurs modifie son mot de passe, tous les utilisateurs auront la double authentification activée. 
 >
 > Ils devront de ce fait modifier leur mot de passe, et devront mettre en place la double authentification sur leurs utilisateurs, sinon, ces utilisateurs ne pourront plus se connecter.
 >
-
-
-> [!warning]
->
->Pour les clients disposant d'une infrastructure en version 6.0, l'accès au client vSphere (disponible uniquement sur Windows) ne sera plus possible.
-L'accès se fera exclusivement par le client vSphere web.
+> Pour les clients disposant d'une infrastructure en version 6.0, l'accès au client vSphere (disponible uniquement sur Windows) ne sera plus possible. L'accès se fera exclusivement par le client vSphere web.
 >
 
-## Mise en place
+## En pratique
+
+### Mise en place
 
 Pour cela, vous devrez vous rendre sur l'interface certifiée de votre PCC, disponible soit via la gateway de votre PCC (https://pcc-xxx-xxx-xxx-xxx.ovh.com) : 
 
@@ -53,24 +51,21 @@ Rendez-vous dans la partie "Operation validation", chargez l'opération reçue p
  
 Dans le cadre d'un mot de passe oublié, la procédure de "Password lost" sera à réaliser, et la 2FA pourra être mise en place également via cette interface.
 
-## Connexion
+### Connexion
 
 Vous pourrez ensuite vous rendre sur l'URL de votre client WEB, et arriverez sur cette page.
 
 ![Connexion 2FA](images/2FAtoken.jpg){.thumbnail}
 
-
 Il est nécessaire de renseigner le token de votre application, puis vous pourrez vous connecter avec votre mot de passe.
 
-
-
-## Création d'un nouvel utilisateur
+### Création d'un nouvel utilisateur
 
 Lors de la création d'un nouvel utilisateur, vous avez le choix de le rendre "token validator" ou non.
 Dans les deux cas, il sera nécessaire de modifier le mot de passe à travers l'interface certifiée, afin de mettre en place la 2FA.
 La seule différence sera l'autonomie pour la validation du token.
 
-## Autorisation d'application
+### Autorisation d'application
 
 Il est possible d'utiliser plusieurs applications tierces nécessitant la connexion au vCenter.
 Ces applications doivent être préalablement autorisées au travers de la politique d'accès au vCenter qui est paramètrable dans votre [espace client](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#securite)
@@ -87,7 +82,6 @@ Pour ajouter les IPs publiques de vos applicatifs à cette seconde whitelist, le
 >
 > @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
-
 
 - Ajouter une IP au bypass de la double authentification.
 
@@ -116,7 +110,6 @@ Pour ajouter les IPs publiques de vos applicatifs à cette seconde whitelist, le
 >
 > @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
 >
-
 
 ## Aller plus loin
 
