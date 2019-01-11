@@ -1,63 +1,58 @@
 ---
-title: Création des clés SSH
+title: 'Créer des clés SSH'
 slug: creation-des-cles-ssh
-excerpt: Tutoriel de creation de cle SSH sous Linux ou Windows
-section: Tutoriels
+excerpt: 'Générez une clé SSH afin de vous connecter à votre instance'
+section: Sécurité
 ---
 
+**Dernière mise à jour le 17 octobre 2018**
 
-## Préambule
-Lorsque vous créez une instance, aucun mail contenant vos identifiants ne vous sera envoyé. Pour se connecter de manière sécurisée, il faudra donc configurer une clé SSH. Cela permet notamment de se connecter :
+## Objectif
 
-- sans avoir à retenir de mot de passe
-- avec une sécurité supérieure que celle proposée par les mots de passe
+Lorsque vous créez une [instance Public Cloud](https://ovh.com/fr/public-cloud/instances/){.external}, aucun e-mail contenant des identifiants ne vous sera envoyé. En effet, l'authentification repose ici sur des clés SSH sécurisées.
 
-Ce guide vous explique les étapes à suivre afin de configurer votre clé.
+**Découvrez comment générer une clé SSH, afin de vous connecter à votre instance.**
 
+> [!primary]
+>
+Veuillez noter que les clés SSH ne sont pas utilisées pour l'authentification sur les instances exécutant le système d'exploitation Windows. Pour ces dernières, vous devez toujours utiliser un nom d'utilisateur et un mot de passe.
+>
 
-## Sous Linux &amp; Mac
+## Prérequis
 
-### Creation de la cle
-<a name="CLESSHLINUX"></a>
-- Démarrer un terminal
-- Saisir la commande suivante qui permettra de générer une clé SSH d'une longueur de 4096 bytes :
+* Créer un projet [Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} dans votre compte OVH.
+* Avoir accès à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-```bash
-ssh-keygen -b 4096
+## Instructions
+
+### Créer une clé SSH sous Linux et Mac
+
+Ouvrez l'application Terminal (ligne de commande), puis exécutez la commande suivante pour générer une clé SSH de 4096 bits :
+
+```sh
+# ssh-keygen -b 4096
 ```
 
-- On obtient le résultat suivant, la commande vous propose de modifier l'emplacement de la clé privée:
+La commande affiche le résultat suivant et vous invite à enregistrer la clé nouvellement créée :
 
-```bash
+```sh
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-
-
-> [!success]
+> [!attention]
 >
-> La partie privée de la clé doit être conservée précieusement, et son accès
-> doit être limité aux personnes habilitées à l'utiliser
+> La partie privée de la clé doit être gardée en sécurité et son accès doit être limité aux seules personnes autorisées.
 > 
 
-- L'étape suivante consiste à configurer une passphrase pour votre clé SSH :
+Une fois que vous avez enregistré la clé, la ligne de commande affiche les éléments suivants :
 
-
-> [!alert]
->
-> Il est recommandé de définir une passphrase afin de protéger la clé,
-> n'hésitez pas à mettre un mot de passe fort (Majuscules / minuscules /
-> chiffre / caractère spécial sur une longueur minimum de 8 digits).
-> 
-
-
-```bash
+```ssh
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
 0a:3a:a4:ac:d1:40:6d:63:6d:fd:d9:fa:d6:b2:e0:36 user@host
-The keys randomart image is:
+The key's randomart image is:
 +---[RSA 4096]----+
 |      .          |
 |                 |
@@ -71,15 +66,15 @@ The keys randomart image is:
 +-----------------+
 ```
 
-- Lire et afficher la clé publique grâce a la commande suivante :
+Vous pouvez lire et afficher la clé avec la commande suivante :
 
-```bash
-cat .ssh/id_rsa.pub
+```ssh
+# cat .ssh/id_rsa.pub
 ```
 
-- Dans notre exemple:
+L'exécution de cette commande affiche les éléments suivants :
 
-```bash
+```ssh
 cat /home/user/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
@@ -89,52 +84,48 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
  user@host
 ```
 
+### Créer une clé SSH sous Windows
 
+#### Avec PuTTY
 
-## Sous Windows
+[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/){.external} est un client SSH répandu pour Windows. Vous pouvez l'utiliser pour vous connecter à distance à un serveur Linux. Son logiciel compagnon, [PuTTYgen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe){.external}, peut être utilisé pour créer des clés SSH.
 
-### Avec Putty
+Commencez par télécharger le logiciel [PuTTYgen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe){.external}, que nous utiliserons pour générer la clé.
 
-[Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/){.external} est le client SSH le plus répandu pour Windows
+Lancez le logiciel et sélectionnez RSA comme type de clé. Entrez alors 4096 pour le nombre de bits à générer, puis cliquez sur le bouton `Générer`{.action}.
 
-- Télécharger le logiciel [puttygen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe){.external} permettant de générer la clé
-- Exécuter le logiciel de génération de clé
-- Au niveau de Number of bits in a generated key , indiquer la valeur 4096
+![Générer la clé](images/puttygen-01.png){.thumbnail}
 
-![public-cloud](images/3777.png){.thumbnail}
+Ensuite, bougez votre souris de manière aléatoire dans la zone située sous la barre de progression, comme indiqué ci-dessous.
 
-- Cliquer sur `Generate`{.action} (déplacer la souris dans le cadre gris pendant l'opération)
-- Indiquer une passphrase pour protéger la clé par un mot de passe
-- Enregistrer la clé privée en cliquant sur `Save private key`{.action}, donner un nom à ce fichier (key.rsa par exemple)
-- Copier la clé publique affichée dans le cadre
+![Générer la clé](images/puttygen-02.png){.thumbnail}
 
-![public-cloud](images/3778.png){.thumbnail}
+Lorsque vous déplacez votre souris, la barre de progression commence à se remplir. Quand elle sera complètement pleine, la clé sera prête.
 
-- Démarrer Putty
-- Dans la liste sur la gauche, cliquer sur `Connection`{.action} puis `SSH`{.action}, puis `Auth`{.action}
-- A la ligne Private key file for authentification , cliquer sur `Browse`{.action}, sélectionner la clé privée, valider.
+![Générer la clé](images/puttygen-03.png){.thumbnail}
 
-![public-cloud](images/3779.png){.thumbnail}
+### Importer votre clé SSH dans l’espace client OVH
 
-- Cliquer sur `Open`{.action} dans Putty.
+Sélectionnez et copiez le texte de votre clé publique, puis connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+Maintenant, cliquez sur le menu `Cloud`{.action}.
 
-### Avec CygWin
-Cygwin propose une autre approche, et permet d'installer, sous Windows, de nombreuses librairies GNU
+![menu cloud](images/cloud-menu.png){.thumbnail}
 
-- Télécharger le logiciel en [32bits](https://www.cygwin.com/setup-x86.exe){.external} ou en [64
-bits](https://www.cygwin.com/setup-x86_64.exe){.external}
-- Procéder à l'installation
+Sélectionnez votre projet Public Cloud dans le menu de gauche, puis cliquez sur `Infrastructure`{.action}.
 
+![sélectionner le projet](images/select-project.png){.thumbnail}
 
-> [!success]
->
-> Il est recommandé de choisir un miroir le plus proche de chez vous
-> (domaine .fr ou FAI européen)
-> 
+Choisissez l'onglet `Clés SSH`{.action}.
 
-- A l'étape Select Packages , dans le champs Search , indiquer SSH
-- Dans l'arborescence Net , cliquer sur la ligne: openssh: The OpenSSH server and client programs
-- Cliquer sur `Next`{.action}
-- Démarrer le logiciel CygWin
-- La suite de la procédure est identique à celle nécessaire sous [Linux/Mac OS](#CLESSHLINUX){.external}.
+![enregistrer la clé SSH](images/save-ssh-key-01.png){.thumbnail}
+
+Collez alors la clé de 4096 octets dans l’espace prévu à cet effet. Attribuez-lui un nom, puis cliquez sur le bouton `Ajouter cette clé`{.action}.
+
+![enregistrer la clé SSH](images/save-ssh-key-02.png){.thumbnail}
+
+Votre clé va maintenant être enregistrée dans l’espace client OVH pour l'authentification.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
