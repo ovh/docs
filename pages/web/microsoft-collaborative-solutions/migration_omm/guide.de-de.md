@@ -5,7 +5,7 @@ slug: exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator
 section: Account-Migration
 ---
 
-**Stand 07.12.2018**
+**Stand 11.01.2019**
 
 ## Einleitung
 
@@ -96,7 +96,9 @@ Es gibt zwei Wege, um eine Migration per PST-, ICS- oder VCF-Datei zu verfolgen:
 
 - über die empfangene E-Mail, die Sie über den Start der Migration benachrichtigt
 
-- über die Seite <https://omm.ovh.net/> des Mail Migrators. Gehen Sie hierzu oben in der Menüleiste auf den Tab `PST-Migration`{.action} und klicken Sie dann auf `Verfolgen / Fortsetzen`{.action} bzw. auf `ICS/VCF Migration nachverfolgen`{.action}. Geben Sie nun die `Migrations-ID`{.action} und den betreffenden `Ziel-Account`{.action} ein.
+- über die Seite <https://omm.ovh.net/> des Mail Migrators. Gehen Sie hierzu oben in der Menüleiste auf den Tab `Migration`{.action} und klicken Sie dann auf `Verfolgen / Synchronisieren`{.action}. Geben Sie nun die `Migrations-ID`{.action} und den betreffenden `Ziel-Account`{.action} ein.
+
+![omm](images/omm-migration-track.png){.thumbnail}
 
 Auf der angezeigten Seite können Sie den Migrationsverlauf verfolgen. Sie werden benachrichtigt, wenn der Vorgang startet, in Bearbeitung ist oder beendet wurde. Abhängig vom Status des Vorgangs können Sie mehrere Aktionen vornehmen.
 
