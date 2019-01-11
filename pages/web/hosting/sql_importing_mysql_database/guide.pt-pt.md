@@ -1,233 +1,173 @@
 ---
-title: 'Partilhado: Guia de importação de uma base de dados MySQL'
-excerpt: 'Partilhado: Guia de importação de uma base de dados MySQL'
+title: 'Importar um backup para a base de dados de um alojamento web'
+excerpt: 'Saiba como importar um backup para a base de dados de um alojamento web da OVH'
 id: '1393'
 slug: partilhado_guia_de_importacao_de_uma_base_de_dados_mysql
 legacy_guide_number: g1393
 ---
 
+**Última atualização: 11/01/2019**
 
-## Pré-requisitos
-Deverá ter em sua posse:
+## Sumário
 
+As bases de dados, utilizadas pela maioria dos sistemas de gestão de conteúdos (Content Management System ou CMS) como WordPress ou Joomla, permitem armazenar elementos dinâmicos, como comentários ou artigos. São vários os motivos pelos quais poderia ser obrigado a importar dados numa das suas bases de dados para modificar ou substituir os conteúdos.
 
-- O ficheiro de backup da sua base de daados, o chamado dump*, obtido aquando do backup da sua base de dados (Está disponível um guia que diz respeito ao backup das bases de dados SQL []({legacy}1394)).
+**Saiba como importar um backup para a base de dados de um alojamento web da OVH.**
 
-O backup da base de dados é geralmente do tipo .sql.
-Se a sua base de dados foi criada num outro prestador que não a OVH, convidamo-lo a entrar em contacto com eles para obter informações sobre como poderá recupera a sua base de dados do seu serviço. 
+## Requisitos
 
+- Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Possuir uma base de dados criada no âmbito de uma oferta de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Ter acesso ao backup que pretende importar na base de dados.
+- Consoante o método de importação utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} ou às informações que lhe permitem aceder à base de dados.
 
-- É igualmente necessário ter em sua posse o seu identificador a password, bem como o servidor sql da base de dados que permitirá que se ligue à base de dados.
-Está disponível um guia que diz respeito à recuperação dos identificadores SQL :[]({legacy}1374)
+## Instruções
 
+Antes de começar, deve escolher o método que quer utilizar para importar o backup na base de dados. Existem várias opções com diferentes níveis de dificuldade técnica.
 
-![](images/img_1802.jpg){.thumbnail}
+- **Restaurar a base de dados numa data anterior**: esta solução permite restaurar o conteúdo da base de dados utilizando as cópias de segurança armazenadas na ferramenta de backup da OVH. Esta operação não requer conhecimentos técnicos especiais e realiza-se a partir da [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+- **Importar o seu próprio ficheiro de backup**: esta solução permite importar os dados do seu próprio ficheiro de backup numa das suas bases de dados. Esta operação pode ser realizada a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-## A partir do seu Espaço Cliente OVH
-A solução mais simples e mais rápida para importar a sua base de dados é através do [espaço cliente OVH](https://www.ovh.com/manager/).
-A vantagem deste método é que não existe limite de tamanho na importação do seu ficheiro de backup.
+- **Realizar a importação a partir da interface web phpMyAdmin**: para isso, deverá aceder à interface phpMyAdmin. Tenha em atenção que esta operação requer conhecimentos técnicos e que existe um limite para o tamanho do ficheiro de configuração.
 
-Após estar ligado ao [espaço cliente](https://www.ovh.com/manager/) com o seu NIC-Handle/Password, selecione o seu alojamento à esquerda e depois aceda ao separador Bases de dados.
+- **Realizar a importação utilizando um script**: para isso, deverá criar um script alojado no seu alojamento web da OVH. São necessários conhecimentos específicos para criar este script.
 
-![](images/img_4125.jpg){.thumbnail}
-À direita da base de dados onde pretende importar o seu backup deve clicar na roda dentada e escolher "Importar um ficheiro".
+- **Realizar a importação utilizando um comando SSH**: deverá ligar-se ao seu espaço de armazenamento através do protocolo SSH e utilizar comandos para interagir com o espaço. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançado e ter adquirido um plano de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} concreto.
 
-Depois basta seguir as etapas propostas no Espaço Cliente para que possa importar o seu backup SQL.
+Tenha em conta que algumas destas operações se realizam fora da interface da OVH e, por isso, deverá executá-las você mesmo. A seguir, disponibilizamos informações sobre os diferentes métodos de importação. No entanto, se precisar de ajuda, pode entrar em contacto com um webmaster.
 
-![](images/img_4126.jpg){.thumbnail}
+Consulte a documentação correspondente ao método de importação pretendido.
 
+> [!warning]
+>
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVH disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+>
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, recomendamos que recorra a um fornecedor especializado e/ou que contacte o editor do serviço se encontrar dificuldades. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste guia intitulada: “Quer saber mais?”
+>
 
-## Através do PhpMyAdmin para MySQL
-Deverá ligar-se à base de dados através do PhpMyAdmin.
+### Restaurar um backup a partir da Área de Cliente
 
-Queira seguir este link para se ligar: [PhpMyAdmin OVH](https://phpmyadmin.ovh.net)
+Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
 
-Está disponível um guia que diz respeito à utilização do PhpMyAdmin:[]({legacy}1374)
+Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados que pretende restaurar numa data anterior e selecione `Restaurar um backup`{.action}. Tenha em atenção que esta ação substituirá o conteúdo atual da base de dados pelo backup.
 
+![databaseimport](images/database-import-step5.png){.thumbnail}
 
-- Após estabelecer ligação ao PhpMyAdmin, selecione a sua base de dados ao clicar no seu nome (cf quadro azul do lado esquerdo do ecrã).
+Todos os backups ficarão disponíveis na base de dados selecionada.  Poderá consultar a data exata das cópias de segurança, assim como a data em que estas cópias de segurança serão eliminadas da ferramenta da OVH.
 
-- Clique de seguida em "Importar".
+Clique nos três pontos à direita da linha correspondente à base de dados que pretende restaurar e selecione `Restaurar um backup`{.action}. Na janela que aparece, certifique-se de que as informações estão corretas e clique em `Confirmar`{.action}. Aguarde uns instantes para que a restauração seja realizada. 
 
-- Selecione o seu ficheiro de backup ao clicar em "Encontrar" (atenção, o ficheiro não pode ser maior do que 16MB).
+![databaseimport](images/database-import-step6.png){.thumbnail}
 
-- Clique em "Executar" para dar inicio à importação.
+### Importar o seu próprio backup a partir da Área de Cliente
 
-Se obtém o backup da base de dados através do espaço cliente, verifique que descompactou o ficheiro antes de o importar.
+Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
 
+Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados na qual pretende importar dados e selecione `Importar ficheiro`{.action}.
 
-![](images/img_1962.jpg){.thumbnail}
+![databaseimport](images/database-import-step1.png){.thumbnail}
 
-## Lembramos:
+Na nova janela, selecione `Importar um novo ficheiro`{.action} e clique em `Seguinte`{.action}.
 
-- O ficheiro não pode ser maior do que 16 MB.
+> [!primary]
+>
+> A opção `Utilizar um ficheiro existente`{.action} permite importar novamente os dados de um ficheiro que já foi enviado na ferramenta de importação.
+>
 
+![databaseimport](images/database-import-step2.png){.thumbnail}
 
+Introduza o nome do ficheiro (que lhe permitirá identificar este backup mais tarde, caso pretenda voltar a restaurá-lo) e selecione o ficheiro de backup no seu computador. Clique em `Enviar`{.action}.
 
+Aguarde a confirmação de envio e, de seguida, clique em `Seguinte`{.action}.
 
-## Através de um script presente no seu alojamento
-É possível que crie esses scripts através de um ficheiro txt. Deverá dar-lhe a extensão correspondente à linguagem utilizada.
+![databaseimport](images/database-import-step3.png){.thumbnail}
 
-Nos scripts em baixo, substitua:
+Por último, selecione as opções adicionais que pretende aplicar:
 
+- **eliminar conteúdos da base de dados**: o conteúdo da BD será completamente eliminado e substituído pelo conteúdo do backup. Recomendamos que selecione esta opção apenas e exclusivamente se pretende substituir o conteúdo atual da base de dados pelo conteúdo do ficheiro de backup.
 
-- nome_da_base.sql pelo nome do seu ficheiro.
+- **enviar um e-mail no final da importação**: no final do processo, é enviado um e-mail para informar que a importação foi concluída.
 
-- servidor_sql pelo nome do servidor onde a sua base de dados foi crada.
+Uma vez selecionada a opção, clique em `Confirmar`{.action} e aguarde até que a importação seja concluída.
 
-- nome_da_base pelo nome da sua base de dados.
+![databaseimport](images/database-import-step4.png){.thumbnail}
 
-- password pela password associada à sua base de dados.
+### Realizar a importação a partir da interface phpMyAdmin
 
-O seu ficheiro de backup deverá ser colocado no seu alojamento via FTP.
+Em primeiro lugar, deverá aceder a phpMyAdmin. Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e selecione o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
 
+Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados e selecione `Aceder ao phpMyAdmin`{.action}.
 
-## Através PHP (importbase.php) :
-O código a introduzir e a completar: 
+![databaseimport](images/database-import-step7.png){.thumbnail}
 
+Uma vez na página de phpMyAdmin, introduza as informações da base de dados, selecione a opção de aceder aos dados atuais da base de dados no menu pendente e, em seguida, conecte-se.  Depois de se conectar, na barra superior direita, selecione a opção `Importar`{.action} e introduza a informação que lhe é solicitada. Recordamos que existe um limite para o tamanho do ficheiro de configuração.
 
-```
+> [!warning]
+>
+> A interface phpMyAdmin não pertence à OVH, pelo que deverá encarregar-se da realização das operações necessárias. Recomendamos que, caso de precise de ajuda, recorra a um prestador de serviços especializado e/ou que contacte o editor da interface. Não poderemos proporcionar-lhe assistência técnica.
+>
+
+### Importar um backup utilizando um script
+
+Esta operação realiza-se em vários passos. Certifique-se de que possui o ficheiro de backup que pretende importar, assim como a informação necessária para se conectar à base de dados na qual se realizará a importação: o nome de utilizador e a respetiva palavra-passe, o nome da base de dados e o endereço do servidor.
+
+> [!warning]
+>
+> Esta operação requer conhecimentos técnicos de programação. Apresentamos a seguir algumas informações sobre como a realizar. Contudo, se precisar de ajuda, recomendamos que recorra a um prestador de serviços especializado. Não poderemos proporcionar-lhe assistência técnica.
+>
+
+#### 1 - Criar um script de importação
+
+O primeiro passo consiste em criar o script que permitirá realizar a importação na base de dados. Encontrará abaixo um exemplo que o ajudará a realizar esta operação. No entanto, se precisar de ajuda, pode contactar um webmaster.
+
+```php
 <?php
-echo "A sua base de dados está em curso de restauro.......
-<br>";
-system("cat nome_da_base.sql | mysql --host=servidor_sql --user=nome_da_base --password=password nome_da_base");
-echo "Está terminado. A sua base está a ser utilizada neste alojamento.";
+system("cat nome_ficheiro_backup.sql | mysql --host=endereço_do_servidor --user=nome_utilizador --password=palavra_passe_utilizador nome_base_de_dados");
 ?>
 ```
 
+Substitua a informação genérica do script pela informação da base de dados correspondente. Depois de concluir o script, recomendamos que atribua um nome (“ import.php”, por exemplo).
 
+|Informações|Substituir por|
+|---|---|
+|nome_ficheiro_backup|O nome do ficheiro de backup que deseja importar.|
+|endereço_do_servidor|O endereço do servidor da base de dados na qual pretende importar os dados.|
+|nome_utilizador|O nome de utilizador com acesso à base de dados.|
+|palavra_passe_utilizador|A palavra-passe do nome de utilizador indicado anteriormente.|
+|nome_base_de_dados|O nome da base de dados.|
 
-## Através de perl (importbase.cgi) :
-O código a introduzir e a completar: 
+#### 2 - Carregar o script e o backup no espaço de armazenamento
 
+Depois de criar o script de importação, deverá carregá-lo juntamente com o ficheiro de backup que quer importar no espaço de armazenamento do seu alojamento web. Para isso, ligue-se ao seu espaço de armazenamento. Se precisar de ajuda, consulte o passo 2 do nosso manual “[Publicar um website no alojamento web](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external}”.
 
-```
-#!/usr/bin/perl
+Para poder realizar as seguintes ações, carregue o script de importação e o ficheiro de backup na pasta “www”. **Preste especial atenção ao nome do ficheiro do script de importação.** Certifique-se de que não apaga um ficheiro já existente com o mesmo nome no espaço de armazenamento quando carregar o script. Se aparecer uma mensagem de aviso, altere o nome do script que acabou de criar por outro diferente e tente carregá-lo novamente.
 
-print "A sua base de dados está em curso de restauro.......
-<br>";
-system("cat nome_da_base.sql | mysql --host=servidor_sql --user=nome_da_base --password=password nome_da_base");
-print "Está terminado. A sua base está a ser utilizada neste alojamento.";
-```
+#### 3 - Chamar um script
 
+Depois de carregar o script de importação e o ficheiro de backup no espaço de armazenamento, só terá de iniciar a operação. Para isso, é necessário chamar o script.
 
+Introduza no browser o URL completo do script (por exemplo, “mypersonaldomain.ovh/import.php”, se o nome do script for “import.php”). Se as informações introduzidas no script estiverem corretas, iniciará a importação. Só precisará de esperar alguns segundos. Caso contrário, verifique as informações introduzidas no script e tente novamente.
 
-- Efetue o upload via FTP do script que criou, bem como o dump* da sua base na pasta www do seu alojamento e chame o script com o browser com o seguinte url: http://votre_domaine.com/importbase.php
+Uma vez concluída a importação, recomendamos vivamente que elimine o ficheiro de backup assim como o script do diretório “www”.
 
+### Importar um backup por SSH
 
-Substitua oseudominio.com pelo nome de domínio e importbase.php pelo nome do seu ficheiro.
+Para interagir com o seu espaço de armazenamento, deverá executar comandos a partir de um terminal.
 
-O seu ficheiro de backup está comprimido?
+> [!warning]
+>
+> Este tipo de acesso requer conhecimento técnicos mais avançados. Apresentamos a seguir algumas informações sobre como fazer. Contudo, se precisar de ajuda, recomendamos que recorra a um prestador de serviços especializado. Não poderemos proporcionar-lhe assistência técnica.
+>
 
-Se o seu dump* não está comprimido, ou seja, na forma .sql.gz, basta substituir o mesmo no comando no inicio do script :
+Depois de aceder ao espaço de armazenamento por SSH, utilize um comando que lhe permita realizar a importação da base de dados. Apresentamos a seguir um exemplo que o ajudará a realizar esta operação. Tenha em atenção que, em primeiro lugar, deverá carregar o backup que pretende importar no espaço de armazenamento e enviar o comando no seu terminal posicionando-se no diretório onde se encontra este último.
 
-
-```
-system("gunzip nome_da_base.sql.gz");
-```
-
-
-Exemplo:
-
-## Através de PHP: dump comprimido + restauro bdd
-O código completo como exemplo: 
-
-
-```
-<?php
-echo "Descomprimir o ficheiro.....
-<br>";
-system("gunzip testbackup.sql.gz");
-echo "A sua base está em curso de restauro......
-<br>";
-system("cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport");
-echo "Está terminado. A sua base está a ser utilizada neste alojamento.";
-?>
+```sh
+cat nome_ficheiro_backup.sql | mysql --host=endereço_do_servidor --user=nome_utilizador --password=palavra_passe_utilizador nome_base_de_dados
 ```
 
+Substitua a informação genérica do script pela informação da base de dados correspondente. Uma vez concluída a importação, recomendamos vivamente que elimine o ficheiro de backup do diretório onde o carregou.
 
+## Quer saber mais?
 
-## Através de perl:dump comprimido + restauro bdd
-O código completo como exemplo: 
-
-
-```
-#!/usr/bin/perl
-
-print "Descomprimir o ficheiro.....
-<br>";
-system("gunzip testbackup.sql.gz");
-print "A sua base está em curso de restauro.......
-<br>";
-system("cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport");
-print "Está terminado. A sua base está a ser utilizada neste alojamento.";
-```
-
-
-
-
-## Através de um comando via SSH
-
-## Os pré-requisitos
-
-- Obtenha o seu identificador e password que lhe permita ligar-se ao seu alojamento web.
-Está disponível um guia que diz respeito à recuperação dos dados de acesso FTP: []({legacy}1374)
-
-- Dispor de uma oferta que permita o acesso ssh ([ver as características das nossas ofertas](http://www.ovh.pt/alojamento_partilhado))
-
-
-Queira encontrar em baixo um guia para a ligação via SSH:
-
-
-- [Ligação ssh partilhado](http://guias.ovh.pt/SshPartilhado)
-
-
-
-## Realizar a importação da base de dados via ssh
-Ligue-se por ssh ao seu alojamento partilhado.
-
-Aceda à pasta onde deseja colocar o ficheiro a importar, e de seguida coloque o seguinte comando:
-
-O código a introduzir e a completar: 
-
-
-```
-cat nome_da_base.sql | mysql --host=servidor_sql --user=nome_da_base --password=password nome_da_base
-```
-
-
-O código completo em exemplo: 
-
-
-```
-cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport
-```
-
-
-
-
-## Através do SQL Privado
-Está disponível um guia que diz respeito à importação de uma base de dados está disponível:
-
-
-- [Importação de uma base de dados SQL Privado](https://www.ovh.pt/g2023.partilhado_tudo_sobre_sql_privado#backup_importacao_restauro)
-
-
-
-
-## Erros devido ao nome da base de dados
-Pode ser igualmente necessário adicionar a seguinte linha no inicio do seu ficheiro de backup:
-
-
-```
-utilize nom_de_votre_base;
-```
-
-
-O nom_de_vote_base corresponde ao nome da base para o qual está a importar os dados.
-
-
-## Léxico
-dump*: o ficheiro de backup da base de dados do seu site. 
-
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
