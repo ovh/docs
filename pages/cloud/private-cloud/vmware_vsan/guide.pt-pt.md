@@ -295,7 +295,7 @@ Tal como para a ativação, tem de desativar a alta disponibilidade ao nível do
 
 Quando a alta disponibilidade estiver desativada, já pode parar o vSAN.
 
-Ainda nas propriedades do cluster, clique no botão “Modify”.
+Ainda nas propriedades do cluster, clique no botão “Edit”.
 
 ![](images/vsan_16.png){.thumbnail}
 
