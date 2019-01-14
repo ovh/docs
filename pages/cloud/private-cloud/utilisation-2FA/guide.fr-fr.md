@@ -2,7 +2,7 @@
 title: 'Utiliser la double authentification (2FA)'
 slug: utilisation-2FA
 excerpt: 'Apprenez à mette en place la double authentification pour protéger votre infrastructure'
-section: 'Services et options OVH supplémentaires'
+section: 'Services et options OVH'
 ---
 
 **Dernière mise à jour le 11 janvier 2019**
