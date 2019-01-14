@@ -31,7 +31,7 @@ Via la gateway de votre Private Cloud (https://pcc-xxx-xxx-xxx-xxx.ovh.com) :
 
 ![Gateway Private Cloud](images/gatewayPCC.jpg){.thumbnail}
 
-Ou directement via l'URL https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ ( attention à ne pas oublier le "/" final de l'adrese).
+Ou directement via l'URL https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ ( attention à ne pas oublier le "/" final de l'adresse).
 
 
 Une fois connecté à l'interface de gestion, cliquez sur `Change Password`{.action}
