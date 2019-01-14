@@ -40,7 +40,7 @@ Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-> [!attention]
+> [!warning]
 >
 > La partie privée de la clé doit être gardée en sécurité et son accès doit être limité aux seules personnes autorisées.
 > 
