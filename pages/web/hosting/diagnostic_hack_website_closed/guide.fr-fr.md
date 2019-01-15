@@ -1,371 +1,247 @@
 ---
-title: 'Que faire si mon site est ferme pour hack ?'
+title: 'Réagir en cas de désactivation pour sécurité d''un hébergement'
 slug: site-ferme-pour-hack
-legacy_guide_number: 1392
-excerpt: 'Dans ce guide vous trouverez differentes informations et de l''aide concernant la fermeture de votre hebergement mutualise suite a un hack de votre site.'
+excerpt: 'Appréhendez certaines pratiques liées à la sécurité et découvrez comment réagir en cas de désactivation de votre hébergement'
 section: Diagnostic
+order: 1
 ---
 
-## Systeme anti-hack OVH
+**Dernière mise à jour le 15/01/2019**
 
-### Généralités
-Il faut que vous sachiez que si votre site a été fermé, ce n'est nullement dans le but de vous punir, mais plutôt dans celui de vous protéger, car vous êtes également une victime.
+## Objectif
 
-*Si une faille non-critique est repérée, un délai vous est accordé pour corriger la faille de sécurité avant que votre site soit fermé. Certaines fonctionnalités de votre site pourront être désactivées. Par exemple l'envoi d'emails, ou les connexions sortantes de votre site web.*
+Votre hébergement web vous permet de mettre en ligne un ou plusieurs sites internet. Vous avez pu recevoir un message provenant d'OVH, vous informant qu'une action liée à la sécurité venait d'être entreprise sur votre service. Ceci a pu rendre inaccessible vos sites internet ou limiter certaines de leurs fonctionnalités. Cependant, cette action est réalisée uniquement dans le cas où une activité suspecte, et généralement malveillante, a eu lieu sur votre hébergement web. 
 
-On peut penser qu'il nous suffirait de couper le programme ou le script infecté pour que le problème soit réglé... L'expérience montre que lorsqu'une faille est trouvée sur un site web, les hacks se font plus fréquents et généralement plus agressifs. Notre système surveille régulièrement l'état du serveur, cependant il peut suffire de quelques secondes à un pirate(Hacker) ou un robot(Bot) pour causer des dommages importants sur votre site ou sur les serveurs.
+**Appréhendez certaines pratiques liées à la sécurité et découvrez comment réagir en cas de désactivation de votre hébergement.**
 
-Par conséquent, il vous est demandé de trouver la faille et de la corriger avant toute réouverture].
+## Prérequis
 
-*Notre système coupe tous les programmes apparentés à des hacks ainsi que si le hacker a laissé une **backdoor** *lui permettant de se reconnecter très facilement. Nous empêchons ainsi le hacker/bot de poursuivre ses opérations.*
+- Disposer d'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Être en possession des identifiants permettant de se connecter à l'espace de stockage de votre hébergement.
+- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
 
+## En pratique
 
-![hosting](images/1790.png){.thumbnail}
+Il existe aujourd'hui une multitude de sites internet. Qu'ils soient basés sur une solution clefs en main (comme un CMS tel que WordPress) ou sur une structure que vous avez personnalisée (codée par vous-même ou par quelqu'un d'autre), les technologies utilisées dans ces derniers évoluent avec le temps. 
 
-Dans ce genre d'attaque, le pirate n'a pas récupéré votre mot de passe et ne s'est pas introduit sur nos serveurs.
+Ainsi, **un site internet doit se mettre à jour**, manipulation qui a pour effet de modifier le code de celui-ci. Ces évolutions peuvent contenir des nouvelles fonctionnalités, des améliorations de stabilité, mais aussi des correctifs de sécurité afin de combler des failles potentielles.
 
-Il a simplement profité d'une faille au niveau du code de votre site pour exécuter du code en passant par celui-ci. Aucune mesure de sécurité à notre niveau ne permet de bloquer directement ce genre d'attaque.
+Un site internet peut donc comporter une faille de sécurité, voire plusieurs. Les possibilités sont malheureusement nombreuses. Ces brèches ne permettent pas de s'introduire sur nos serveurs, mais elles peuvent compromettre les données que vous hébergez et, par effet boule de neige, compromettre la stabilité de notre infrastructure en cas d'exploitation massive.
 
-*Nous pourrions, il est vrai, limiter les possibilités offertes aux scripts hébergés sur nos serveurs afin de rendre ce genre de choses impossibles, mais ce genre de mesures auraient un effet secondaire : cela vous empêcherait d'utiliser certaines possibilités très intéressantes offertes par des langages tels : PHP, perl et python et compliquerait de façon générale la création de vos sites.*
+Lorsque cela arrive, une personne malintentionnée peut ainsi utiliser votre hébergement à des fins malveillantes, comme pour envoyer un grand nombre d'e-mails de spam ou pour y héberger un site frauduleux. Même si ces actions ne sont pas souhaitées de votre part, elles peuvent avoir lieu si votre site internet comporte une faille de sécurité. 
 
-Par conséquent, nous avons choisi de vous offrir le plus de liberté possible et de contrôler en aval les problèmes éventuels afin de garantir la sécurité de votre site et de couper court aux tentatives de piratage.
+En ce sens, pour votre sécurité et celle de tous nos clients, votre hébergement ou certaines de ses fonctionnalités peuvent alors être temporairement désactivées. Lorsque cela arrive, plusieurs manipulations doivent être entreprises afin de résoudre cette situation. Même s'il n'existe pas de marche à suivre universelle, nous mettons à disposition cette documentation afin de vous aiguiller dans cette démarche. 
 
-
-![hosting](images/1791.png){.thumbnail}
-
-- Blocage de mon site par Okiller.
-
-Un robot de surveillance nommé Okiller vérifie les commandes apparentées à du hack.
-
-*Vous êtes notifié par email lorsqu'une commande réalisée sur votre serveur mutualisé est apparentée à du hack.*
-
-Un horodatage est disponible afin de vérifier vos logs. Okiller bloque habituellement votre site en chmod 700.
-
-- Blocage ou désactivation de mon site par la team Abuse.
-
-Une équipe au sein d'OVH s'occupe exclusivement de garantir la sécurité de notre infrastructure.
-
-*Elle peut être amenée à bloquer ou désactiver votre site en cas de hack, si du phishing ou du spam ont été réalisés avec votre hébergement à votre insu par exemple.*
-
-
-## Corrections
-
-### Reperer et corriger la faille de securite
-- Si vous utilisez un système populaire comme WordPress, Joomla!, PrestaShop.
-
-Sur ce type de systèmes très populaires, les concepteurs font régulièrement des mises à jour comblant des failles de sécurité repérées par les utilisateurs.
-
-Mettez donc votre système à jour sur la dernière version et veillez à vous tenir informé des futures mises à jour en vous abonnant à la mailing-list du site officiel par exemple.
-
-Si vous utilisez déjà la dernière version, n'hésitez pas à aller sur les forums officiels pour faire part de cette intrusion et la signaler ainsi aux concepteurs qui ne manqueront pas de proposer rapidement un correctif que vous pourrez appliquer.
-
-Les plugins, thèmes ou modules ajoutés au CMS peuvent aussi présenter des failles de sécurité. Il est important de réaliser les mises à jour de ces différents outils afin de vous assurer d'une sécurité optimale pour votre site.
-
-
-![hosting](images/1792.png){.thumbnail}
-
-- Recherche de la faille de sécurité dans vos logs
-
-Il n'est pas possible de faire une procédure détaillée permettant de localiser à coup sûr l'origine de toute intrusion, mais voici comment procéder de façon générale, en s'appuyant sur le fait que l'attaque a pour origine la faille d'un script et donc que le pirate est passé par une requête HTTP.
-
-Toutes les requêtes HTTP sont disponibles dans vos logs.
-
-Pour y accéder, rendez-vous sur votre espace client, cliquez sur votre  **hébergement**  à gauche dans la partie  **Hébergement** . Dans les infos générales de votre hébergement, cliquez sur l'onglet " **Plus +** ", puis sur cliquez sur " **Statistiques et logs** ".
-
-
-![hosting](images/4200.png){.thumbnail}
-
-Cliquez ensuite sur le  **deuxième lien** .
-
-
-![hosting](images/4202.png){.thumbnail}
-
-- 1 Relevez la date et l'heure du mail d'alerte que vous avez reçu ;
-- 2 Consultez vos logs en partant de cet horaire et en élargissant progressivement le champ de recherche sur des horaires antérieurs jusqu'à repérer une entrée incorrecte (étrange, différente des autres, etc.). Cela peut demander un peu de pratique ou de connaissance du format des requêtes suivant les cas. Prêtez plutôt attention aux requêtes de type POST, qui sont la principale source de hack ;
-- 3 Relevez le script attaqué par cette requête ;
-- 4 Étudiez le script pour y localiser la faille ;
-- 5 Corrigez la faille.
-
-
-![hosting](images/2834.png){.thumbnail}
-
-**Important** :
-
-> [!alert]
+> [!warning]
 >
-> Pour cela il faut vous rapprocher d'un professionnel WebMaster.
-> Nous vous invitons à consulter la liste de nos partenaires : https://partners.ovh.com/.
+> Cette documentation ne se substitue pas à l'aide d'un professionnel tel qu'un webmaster. Nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance.
+>
+
+### Étape 1 : estimer la situation
+
+Avant de commencer à modifier quoi que ce soit sur votre site internet, débutez par comprendre ce qu'il s'est passé. Pour cela, vous trouverez ci-dessous plusieurs pistes pour vous aider dans votre analyse. 
+
+#### 1.1 Prenez connaissance du message d'OVH
+
+Vous devriez avoir reçu un message de la part d'OVH vous informant qu'une action liée à la sécurité de votre hébergement a été entreprise. Prenez alors connaissance des informations mentionnées dans celui-ci. Son contenu étant différent selon les cas rencontrés, il n'est pas possible de tous les référencer dans la présente documentation. Cependant, ces éléments vous permettront de :
+
+- connaître le moment précis où la désactivation a eu lieu ;
+- la raison pour laquelle la désactivation a été entreprise.
+
+Ces informations pourront vous aider lors de vos recherches et manipulations futures.
+
+#### 1.2 Estimer la sécurité de votre site
+
+Que vous utilisiez un site internet basé sur une solution clefs en main ou sur une structure que vous avez personnalisée, **celui-ci doit être régulièrement mis à jour**. 
+
+C'est d'autant plus vrai pour les CMS (comme WordPress), puisque ceux-ci sont grandement personnalisables grâce à des thèmes et des modules complémentaires (ou plugins). Ces derniers, même s'ils ont un côté pratique, peuvent modifier ou ajouter du code à votre site ; code dont vous ne connaissez ni la provenance, ni son niveau de sécurité.
+
+Ainsi, posez-vous les questions suivantes : 
+
+- **Avez-vous réalisé récemment une mise à jour de votre site internet ?** 
+
+Ceci peut concerner la mise à jour du site lui-même (par vous-même ou votre webmaster), d'un thème ou d'un module complémentaire. Si ce n'est pas le cas, il se peut que votre site comporte une faille de sécurité, qui pourrait déjà être comblée dans une mise à jour que vous n'avez pas encore installée. 
+
+En ce sens, il sera intéressant de vérifier lors de la prochaine étape si votre site et les éléments complémentaires installés sur celui-ci sont à jour ; et, si ce n'est pas le cas, de les mettre à niveau.
+
+- **Avez-vous récemment ajouté un nouveau thème ou module complémentaire à votre site internet ?**
+
+Si tel est le cas, il est possible que celui-ci comporte une faille de sécurité connue, malheureusement déjà exploitée par des personnes malveillantes. Attention, il s'agit simplement d'une éventualité, la cause ne provient pas forcément de cet élément nouvellement installé.
+
+Il sera intéressant de vous assurer, lors de la prochaine étape, que les différents éléments complémentaires présents sur votre site sont sécurisés ou disposent d'une bonne réputation globale en ligne.
+
+#### 1.3 Consulter l'activité et les logs de l'hébergement
+
+Ceci vous permet d'avoir une visibilité sur l'activité de votre service et de votre site. Le but étant d'analyser ce qu'il s'est passé au moment où la désactivation de votre hébergement a eu lieu.
+
+Pour consulter l'activité et les logs de l'hébergement, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} partie `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement concerné. Dès lors, il existe deux possibilités selon les informations que vous souhaitez recueillir.
+
+- **Consulter l'activité de votre hébergement**
+
+Vous pouvez y constater l'évolution de l'activité de votre service au fil des jours, semaines ou mois. Ceci peut vous permettre de voir si une activité inhabituelle a débuté avant qu'OVH ne la détecte et désactive votre hébergement. 
+
+Pour y accéder, assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action} puis descendez en bas de la page jusqu'à la section `Activités de l’hébergement`.
+
+![hostingdeactivation](images/hosting-deactivation-step1.png){.thumbnail}
+
+- **Consulter les logs de votre hébergement**
+
+Vous avez la possibilité d'accéder aux logs détaillés de votre service, et notamment à toutes les requêtes web initiées sur ce dernier. Cette action peut vous permettre de retrouver le ou les fichiers ayant permis à une personne malintentionnée d'utiliser votre hébergement à des fins malveillantes. L'analyse se révèle souvent très ardue, puisque très technique. Faites-vous assister d'un webmaster en cas de nécessité.
+
+Pour accéder aux logs, cliquez sur l'onglet `Plus +`{.action} puis sur `Statistiques et logs`{.action}. Utilisez les informations qui s'affichent pour vous connecter au site des logs de votre hébergement. 
+
+![hostingdeactivation](images/hosting-deactivation-step2.png){.thumbnail}
+
+Consultez alors les logs « web » à la date que vous jugez la plus pertinente (soit celle où la désactivation a eu lieu, soit celle où l'activité inhabituelle a débuté).
+
+Partez de l'heure choisie, puis élargissez ensuite progressivement le champ de recherche sur des horaires antérieurs. Le but étant de trouver des activités étranges ou différentes des autres, qui proviennent généralement de requêtes « POST ». Une nouvelle fois, cette analyse peut se révéler très ardue de par sa complexité. Faites-vous assister d'un webmaster en cas de nécessité.
+
+### Étape 2 : intervenir sur votre site internet
+
+Une fois que vous disposez de plus d'éléments sur ce qu'il s'est passé, vous devriez être en mesure d'intervenir sur votre site internet ou, au minimum, d'avoir une idée plus précise des opérations à entreprendre. 
+
+Cette étape regroupe deux grandes manipulations qui sont complémentaires.
+
+- **La correction de la ou des failles de sécurité**. Ainsi, vous empêcherez quiconque de pouvoir les exploiter de nouveau.
+
+- **La suppression de tout code malveillant**. Une personne malintentionnée a pu, par le biais d'une faille de sécurité, déposer du code sur votre site internet à votre insu, comme une porte dérobée. Cela lui confère un accès masqué à votre site ainsi qu'à votre hébergement. Vous devez donc vérifier si du code malveillant a été ajouté, puis le supprimer le cas échéant.
+
+> [!warning]
+>
+> Les deux manipulations sont complémentaires.
 > 
-
-
-## Reouverture de l'hebergement
-
-### Généralité
-Il existe plusieurs cas pour un site hack :
-
-- Passage en état Désactivé associé au CHMOD 700.
-- Passage en état Bloqué lié au CHMOD 000.
-
-Dans les deux cas il est demandé de corriger la faille de sécurité et pas simplement de supprimer le code malveillant qui aurait été ajouté par le hacker.
-
-
-![hosting](images/1793.png){.thumbnail}
-
-**Important** :
-
-> [!alert]
+> Si vous corrigez la faille de sécurité sans pour autant supprimer le code malveillant déposé sur votre hébergement, la personne malintentionnée disposera toujours d'un accès masqué à celui-ci. Elle pourrait donc toujours l'exploiter à de mauvaises fins.
 >
-> Pour cela il faut vous rapprocher d'un professionnel WebMaster.
-> Nous vous invitons à consulter la liste de nos partenaires : https://partners.ovh.com/.
-> 
-
-
-### Reouverture suite passage en etat Desactive
-Les étapes liées au passage en état hack :
-
-- 1 Notre robot Okiller repère une commande non autorisée sur l'hébergement, ou une personne de la team abuse traite un abus lié à l'hébergement ;
-- 2 Un email est envoyé afin de vous prévenir qu'un blocage va être réalisé ;
-- 3 Modification de l'état de l'hébergement réalisée après quelques heures en fonction de la raison du blocage ;
-- 4 Vous devez supprimer les fichiers malveillants et corriger la faille de sécurité ;
-- 5 Il vous est possible de rouvrir directement l'hébergement (suivez les indications renseignés en fin de ce guide.
-
-
-![hosting](images/4208.png){.thumbnail}
-
-
-> [!success]
->
-> - Si aucune correction n'est réalisée et que l'hébergement est rouvert
-> manuellement, il sera de nouveau clôturé sous quelques heures et
-> pourra être basculé en état désactivé.
-> - Il est conseillé de répondre à l'email reçu dans la section
-> assistance de votre espace client afin de préciser les modifications
-> réalisées pour corriger le problème.
+> Si vous supprimez le code malveillant sans pour autant corriger la faille de sécurité, la personne malintentionnée pourrait de nouveau l'exploiter afin de redéposer du code malveillant sur votre hébergement. Elle aurait même la possibilité d'y créer une nouvelle porte dérobée.
 >
 
-### Reouverture suite passage en etat Bloque
-Les étapes liées au passage en état hack :
+Pour réaliser ces manipulations, il n'existe pas de marche à suivre universelle tant les cas sont différents. Vous trouverez ainsi ci-dessous plusieurs pistes pouvant vous aider dans ces démarches : adaptez-les ou utilisez-les selon votre situation personnelle. Pour rappel, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. 
 
-- 1 Une personne de la team abuse traite un abus lié à l'hébergement ;
-- 2 Un email est envoyé afin de vous prévenir qu'un blocage va être réalisé ;
-- 3 Modification de l'état de l'hébergement réalisé après quelques heures en fonction de la raison du blocage ;
-- 4 Vous devez obligatoirement contacter notre support en répondant sur l'email ouvert afin de demander à débloquer l'hébergement et expliquer les modifications qui vont être réalisées ;
-- 5 Suite à votre retour sur l'email, notre support peut modifier l'état de votre hébergement en état hack s'il estime que les modifications que vous allez apporter sont suffisantes ;
-- 6 Vous devez supprimer les fichiers malveillants et corriger la faille de sécurité ;
-- 7 Il vous est possible de rouvrir ensuite l'hébergement (suivez les indications renseignées[en fin de ce guide]) il reste préférable de répondre sur l'email afin que les administrateurs s'assurent que la modification réalisées soit suffisantes.
+#### 2.1 Restaurer votre site internet à une date antérieure
 
-![hosting](images/4210.png){.thumbnail}
+La restauration permet de remettre en l'état votre site tel qu'il était au moment d'une sauvegarde, avant son altération. Vous devez donc être en possession d'une sauvegarde ne comportant pas déjà de code malveillant ; auquel cas la manipulation serait obsolète. 
 
-> [!success]
+> [!warning]
 >
-> - Il est obligatoire de répondre à l'email ouvert et de préciser les
-> modifications qui seront réalisées afin que l'état de votre
-> hébergement soit modifié et que vous puissiez effectuer la correction
-> de votre site web.
+> La restauration permet uniquement de supprimer tout code malveillant déposé sur votre hébergement à votre insu. **Cependant, ceci ne corrige pas la ou les failles de sécurité.**
 >
 
-### Attention
-**Une fois les droits passés en 705, il vous faudra patienter maximum 3 heures.**  En effet, nos robots passent toutes les 3 heures pour vérifier les changements d'état. En fonction du moment où la manipulation sera faite, le rétablissement de l'affichage de votre site pourra donc être plus ou moins rapide.
+Plusieurs possibilités existent pour réaliser une restauration de votre site.
 
-Si le délai des 3 heures est passé et que votre site n'est toujours pas en ligne, veuillez contacter notre support.
+- **Vous disposez d'une copie personnelle de votre site internet** : 
 
-![hosting](images/2137.png){.thumbnail}
+Il ne vous reste plus qu'à la restaurer sur votre hébergement, en remplaçant le contenu de l'espace de stockage et de la base de données par celui de la sauvegarde. Notre documentation « [Importer une sauvegarde dans la base de données d’un hébergement web](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/){.external} » peut vous accompagner dans cette démarche.
 
-## Informations utiles
+- **OVH dispose d'une copie de votre site internet (espace de stockage et base de données)** :
 
-### Precautions a prendre
-Voici quelques précautions à prendre afin d'éviter au maximum les attaques : 
+Selon la date à laquelle vous souhaitez restaurer votre site, il se peut qu'OVH puisse vous fournir une sauvegarde. Reportez-vous alors aux instructions de nos documentations « [Restaurer l’espace de stockage de son hébergement web](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/){.external} », « [Récupérer la sauvegarde de la base de données d’un hébergement web](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/){.external} » et « [Importer une sauvegarde dans la base de données d’un hébergement web](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/){.external} » pour vous aider dans l'accomplissement de cette démarche. Assurez-vous aussi, dans la mesure du possible, de faire coïncider les dates des sauvegardes sélectionnées.
 
-1-  Quand vous installez votre blog, boutique en ligne, le login par défaut est "admin". Dans la mesure du possible, changez "admin" par autre login. Mais attention, il faut être sûr que cela n'impacte pas votre site. Posez la question sur le forum de l'éditeur de votre cms.
+- **Ni vous, ni OVH, ne dispose d'une copie de votre site internet** : 
 
-2- Ne jamais utiliser le même mot de passe pour le FTP, base SQL, email, interface d'administration du site web. Utiliser un mot de passe contenant : chiffre, lettre et des majuscules/minuscules.
+Vous devrez dans ce cas [intervenir manuellement dans le code de votre site](https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#23-corriger-manuellement-le-code-de-votre-site){.external} pour y apporter les corrections nécessaires. 
 
-3- Penser à réaliser régulièrement vos propres sauvegardes FTP et SQL.
+#### 2.2 Mettre à jour votre site internet
 
-4- Effectuer les mises à jour de l'éditeur de votre cms (Wordpress, Joomla!, Prestashop).
+Cette manipulation peut paraître simple, mais quelques éléments techniques sont à considérer. Avant de réaliser une quelconque mise à jour, assurez-vous de disposer d'un accès à votre site internet. 
 
-### Bloquer une IP
-Suggestion pour améliorer la sécurité :
+> [!primary]
+>
+> Si l'action réalisée par OVH a rendu inaccessible votre site, vous ne pourrez pas de suite le mettre à jour. Si tel est le cas, réalisez d'abord l'étape 3 « [réactiver votre hébergement web](https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#etape-3-reactiver-votre-hebergement-web){.external} » afin de retrouver un accès à votre site. Une fois fait, vous pourrez réaliser la mise à jour.
+>
 
-Une première solution peut être de bloquer l'IP de l'attaque, mais il s'agit d'une solution temporaire, étant donné qu'un autre attaquant pourrait profiter de la même faille.
+Connectez-vous à l'interface d'administration de votre site internet (il ne s'agit pas de l'interface d'OVH). Recherchez alors dans celle-ci si :
 
-Pour savoir comment bloquer une IP sur votre site : <https://docs.ovh.com/fr/hosting/mutualise-tout-sur-le-fichier-htaccess/>
+- votre site est correctement à jour ;
+- tous les thèmes et modules complémentaires (ou plugins) installés sont à jour.
 
-Exemple:
+Si ce n'est pas le cas, vous devrez les mettre à jour. Pour cela, suivez les instructions s'affichant dans l'interface d'administration de votre site. 
 
+> [!warning]
+>
+> **Avant d'entamer cette démarche, nous vous suggérons fortement de prendre connaissance de toute éventuelle recommandation concernant la mise à jour que vous vous apprêtez à faire.** Ces recommandations proviennent directement de l'éditeur et/ou créateur du site internet, des thèmes et des modules complémentaires que vous utilisez.
+>
 
-```bash
-SetEnvIf GEOIP_COUNTRY_CODE DE BlockCountry
-SetEnvIf GEOIP_COUNTRY_CODE RU BlockCountry
-# ... place more countries here
-Deny from env=BlockCountry
+Ces dernières peuvent porter à votre attention des éléments qui pourraient bloquer la mise à jour que vous vous apprêtez à réaliser. Par exemple :
+
+- assurez-vous que la nouvelle version de votre CMS (comme WordPress) est bien compatible avec la version de PHP paramétrée sur votre hébergement. Si vous deviez changer cette dernière, reportez-vous à notre documentation « [Changer la version de PHP de son hébergement web](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/){.external} » ;
+- assurez-vous que vos thèmes et modules complémentaires sont bien compatibles avec la nouvelle version de votre CMS. Si ce n'est pas le cas, vous ne serez plus en mesure de les utiliser et vous devrez trouver une solution alternative.
+
+#### 2.3 Corriger manuellement le code de votre site
+
+Si vous n'utilisez pas un site basé sur une solution clefs en main (comme un CMS tel que WordPress) ou si vous ne disposez pas d'une copie permettant de le restaurer, vous devrez réaliser les corrections nécessaires manuellement. **Cette manipulation étant extrêmement technique, nous vous recommandons de vous faire assister d'une personne disposant des connaissances requises.** 
+
+Il n'existe pas de marche à suivre universelle tant les cas sont différents. Vous pouvez cependant vous aider des logs de votre hébergement afin de localiser plus facilement le ou les fichiers infectés sur lesquels vous devrez intervenir.
+
+### Étape 3 : réactiver votre hébergement web
+
+La réactivation de votre hébergement web s'effectue par le biais d'une manipulation à réaliser sur votre espace de stockage. Pour cela, vous devez modifier les permissions (ou droits) pour « 705 » de la racine (considéré comme étant le « / ») de votre espace de stockage.
+
+> [!primary]
+>
+> Si le message que vous avez reçu de la part d'OVH précise explicitement que vous n'avez pas la possibilité de réactiver vous-même votre hébergement, suivez alors les indications précisées dans celui-ci.
+>
+
+Si vous avez la possibilité de réactiver vous-même votre hébergement web, munissez-vous des informations vous permettant de vous connecter à votre espace de stockage (c'est-à-dire le serveur FTP, l'utilisateur FTP et son mot de passe).
+
+Pour les récupérer, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez le nom de l’hébergement concerné et positionnez-vous enfin sur l’onglet `FTP - SSH`{.action}. Vous pourrez depuis cette même page [modifier le mot de passe de l'utilisateur FTP](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/){.external} si cela est nécessaire.
+
+![hostingdeactivation](images/hosting-deactivation-step3.png){.thumbnail}
+
+Dès que vous êtes en possession des informations requises, plusieurs possibilités s'offrent à vous selon le logiciel ou l'interface web que vous souhaitez utiliser.
+
+#### 3.1 Rouvrir son hébergement avec FileZilla
+
+Ouvrez votre logiciel FileZilla puis connectez-vous à votre espace de stockage. Cliquez ensuite sur `Serveur`{.action} dans la barre de menu, puis sur `Entrer une commande FTP`{.action} (l'intitulé peut être légèrement différent suivant la version de FileZilla que vous utilisez). Dans la fenêtre qui s'affiche, renseignez la commande ci-dessous puis validez-la.
+
 ```
-
-Cet exemple vous permet de bloquer les visiteurs en provenance d'Allemagne et de Russie.
-
-
-### Reouverture via FileZilla
-Votre site a été fermé pour une opération répréhensible, hack ou phishing.
-
-Vous avez toujours accès à votre FTP pour que vous puissiez corriger les problèmes.
-
-Vous pouvez par exemple rendre inactives les pages mises en causes (mettez-les en droits/permissions "700" via FTP pour ce faire) le temps d'intervenir.
-
-Une fois la source du problème corrigée, remettez les bons droits/chmod en 705 sur la racine du FTP pour rétablir l'accès.
-
-- Récupérez votre identifiant et le mot de passe FTP qui vous permettent de vous connecter sur l'hébergement web.
-- Avoir un logiciel ftp ou client ftp, par exemple FileZilla
-
-Ouvrez FileZilla, cliquez sur "Serveur" puis sélectionnez "Entrez une commande FTP".
-
-*Dans FileZilla à la place de "Entrez une commande FTP" il est possible d'avoir "Saisir une commande personnalisée".*
-
-
-![hosting](images/1796.png){.thumbnail}
-
-Dans la nouvelle fenêtre qui apparait, renseignez la commande :
-
-
-```bash
 SITE CHMOD 705 /
 ```
 
-Si vous obtenez l'erreur suivante :
+Une réponse « ok » devrait vous confirmer que la manipulation s'est bien effectuée. Pour le vérifier, essayez d'accéder à votre site internet. Si vous deviez réaliser la mise à jour de celui-ci, retournez à présent à la partie « [2.2 Mettre à jour votre site internet](https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#22-mettre-a-jour-votre-site-internet){.external} » de cette documentation.
 
-**550 would not chance perms on /. not such file or directory**
+![hostingdeactivation](images/hosting-deactivation-step4.png){.thumbnail}
 
-Il vous faut dans ce cas utiliser la commande :
+#### 3.2 Rouvrir son hébergement avec le FTP Explorer « net2ftp »
 
+Toujours depuis l'onglet `FTP - SSH`{.action} de votre espace client OVH, cliquez sur le bouton `FTP Explorer`{.action} et connectez-vous à votre espace de stockage. Cliquez ensuite sur le bouton `Avancé`{.action}, puis sur le bouton `Go`{.action} à côté de « Envoyer des commandes FTP arbitraires au serveur FTP ».
 
-```bash
-SITE CHMOD 705 .
+![hostingdeactivation](images/hosting-deactivation-step5.png){.thumbnail}
+
+Dans la partie supérieure de la page, renseignez la commande ci-dessous puis cliquez sur le bouton représentant un « v » vert. 
+
 ```
-
-*Pour vérifier que la réouverture est bien effective, testez tout simplement votre site depuis un navigateur internet.*
-
-
-![hosting](images/1797.png){.thumbnail}
-
-
-
-> [!alert]
->
-> Pour rappel, veillez à tester l'affichage après 3 heures maximum. En effet,
-> nos robots passent toutes les 3 heures pour vérifier les changements d'état.
-> En fonction du moment où la manipulation ci-dessus sera réalisée, le
-> rétablissement de l'affichage de votre site pourra donc être plus ou moins
-> rapide.
-> Si le délai des 3 heures est passé et que votre site n'est toujours pas en
-> ligne, veuillez contacter notre support.
-> 
-
-
-### Reouverture via Net2Ftp
-Il vous est aussi possible d'utiliser l'explorateur FTP intégré dans l'espace client " **Net2Ftp** ".
-
-Vous avez un accès à votre FTP pour que vous puissiez corriger les problèmes de votre site web.
-
-Une fois la source du problème corrigée, remettez les bons droits/chmod en 705 sur la racine du FTP pour rétablir l'accès.
-
-- Récupérez votre identifiant et le mot de passe FTP qui vous permettent de vous connecter sur l'hébergement web.
-
-Connectez-vous dans l'espace client, sélectionnez votre plateforme, puis rendez-vous dans "FTP" puis cliquez sur "FTP Explorer". Vous arrivez ensuite sur l'interface de connexion de " **Net2ftp** ".
-
-Dans le champ "Nom d'utilisateur" renseignez votre login FTP.
-
-Dans le champ "Mot de passe" le mot de passe défini dans votre espace client.
-
-Cliquez ensuite sur "Soumettre" pour vous connecter en FTP à l'hébergement web.
-
-
-![hosting](images/2099.png){.thumbnail}
-
-Rendez-vous ensuite dans "Avancé".
-
-
-![hosting](images/2100.png){.thumbnail}
-
-Sélectionnez "Go" pour entrer une commande FTP personnalisée.
-
-
-![hosting](images/2101.png){.thumbnail}
-
-Vous devez renseigner le code suivant dans *liste des commandes* :
-
-
-```bash
 SITE CHMOD 705 /
 ```
 
-Validez en cliquant sur l'icône pour exécuter votre commande FTP.
+Une réponse devrait vous confirmer que la manipulation s'est bien effectuée. Pour le vérifier, essayez d'accéder à votre site internet. Si vous deviez réaliser la mise à jour de celui-ci, retournez à présent à la partie « [2.2 Mettre à jour votre site internet](https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#22-mettre-a-jour-votre-site-internet){.external} » de cette documentation.
 
-*Pour vérifier que la réouverture est bien effective, testez tout simplement votre site depuis un navigateur internet.*
+![hostingdeactivation](images/hosting-deactivation-step6.png){.thumbnail}
 
+#### 3.3 Rouvrir son hébergement en SSH
 
-![hosting](images/2102.png){.thumbnail}
+Connectez-vous à votre espace de stockage par le biais d'une connexion SSH. Utilisez ensuite la commande ci-dessous, puis validez-la.
 
-
-
-> [!alert]
->
-> Pour rappel, veillez à tester l'affichage après 3 heures maximum. En effet,
-> nos robots passent toutes les 3 heures pour vérifier les changements d'état.
-> En fonction du moment où la manipulation ci-dessus sera réalisée, le
-> rétablissement de l'affichage de votre site pourra donc être plus ou moins
-> rapide.
-> Si le délai des 3 heures est passé et que votre site n'est toujours pas en
-> ligne, veuillez contacter notre support.
-> 
-
-
-### Reouverture via SSH
-- Récupérez votre identifiant et le mot de passe FTP qui vous permettent de vous connecter sur l'hébergement web.
-- Avoir une offre permettant l'accès via SSH ( [voir les caractéristiques de nos offres](https://www.ovh.com/fr/hebergement-web/){.external} )
-- [Connexion ssh mutualisé](http://guide.ovh.net/SshMutualise){.external}
-
-Dans un premier temps vérifiez que votre site est bien fermé avec la commande :
-
-
-```bash
-ls -la
 ```
-
-
-![hosting](images/1798.png){.thumbnail}
-
-Pour procéder à la réouverture, tapez la commande :
-
-
-```bash
 chmod 705 .
 ```
 
+Vous pouvez vérifier que les droits sont à présent corrects grâce à la commande :
 
-![hosting](images/1801.png){.thumbnail}
-
-Pour vérifier que les droits sont corrects tapez la commande :
-
-
-```bash
+```
 ls -la
 ```
 
+Vous avez également la possibilité d'essayer d'accéder à votre site internet. Si vous deviez réaliser la mise à jour de celui-ci, retournez à présent à la partie « [2.2 Mettre à jour votre site internet](https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#22-mettre-a-jour-votre-site-internet){.external} » de cette documentation.
 
-![hosting](images/1800.png){.thumbnail}
+### Étape 4 : veiller à la sécurité de votre site
 
+À présent que votre site internet ne comporte plus de faille de sécurité ni de code malveillant, il reste important de continuer à veiller à sa sécurité. Pour cela, nous vous conseillons :
 
+- de mettre à jour votre site régulièrement (en incluant les thèmes et modules complémentaires) ;
+- d'installer du contenu de confiance : plus vous personnalisez un site en installant des thèmes et des modules complémentaires, plus vous modifiez ou ajoutez du code à ce dernier. Soyez attentif à un éventuel système de notation ou de réputation, qui pourrait vous aiguiller grâce à des retours d'utilisateurs.
 
-> [!alert]
->
-> Pour rappel, veillez à tester l'affichage après 3 heures maximum. En effet,
-> nos robots passent toutes les 3 heures pour vérifier les changements d'état.
-> En fonction du moment où la manipulation ci-dessus sera réalisée, le
-> rétablissement de l'affichage de votre site pourra donc être plus ou moins
-> rapide.
-> Si le délai des 3 heures est passé et que votre site n'est toujours pas en
-> ligne, veuillez contacter notre support.
-> 
+En définitive, le but n'est pas de voir le mal partout, mais d'être plus vigilant quant à ce que vous installez sur votre site et de penser régulièrement à le mettre à jour.
 
+## Aller plus loin
 
-### Lexique
-Backdoor* : *une porte dérobée (backdoor en anglais) est une fonctionnalité ajoutée à l'insu du développeur du site web, qui donne un accès masqué au site, ainsi qu'à l'hébergement. Il est généralement ajouté par un hacker après avoir repéré une faille de sécurité sur votre site.*
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
