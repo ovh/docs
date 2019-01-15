@@ -6,7 +6,7 @@ section: 'Réseau et IP'
 order: 1
 ---
 
-**Dernière mise à jour le 08/01/2019**
+**Dernière mise à jour le 15/01/2019**
 
 ## Objectif
 
@@ -82,6 +82,7 @@ Il existe plusieurs méthodes pour appliquer la configuration IPv6. En fonction 
 - [Application non persistante](https://docs.ovh.com/fr/vps/configurer-ipv6/#application-non-persistante).
 - [Application persistante sur Debian et dérivés (Ubuntu, Crunchbang, SteamOS…)](https://docs.ovh.com/fr/vps/configurer-ipv6/#application-persistante-sur-debian-et-derives-ubuntu-crunchbang-steamos).
 - [Application persistante sur Redhat et dérivés (CentOS, ClearOS…)](https://docs.ovh.com/fr/vps/configurer-ipv6/#application-persistante-sur-redhat-et-derives-centos-clearos_1).
+- [Application persistante sur Windows Server](https://docs.ovh.com/fr/vps/configurer-ipv6/#application-persistante-sur-windows-server).
 
 #### Application non persistante
 
@@ -259,9 +260,29 @@ Une fois fait, relancez votre service réseau afin de permettre au système de r
 service network restart
 ```
 
+#### Application persistante sur Windows Server
+
+Par défaut, l'IPv6 n'est pas configurée sur Windows Server. Pour l'activer, ouvrez le `Panneau de configuration`, cliquez sur `Afficher l'état et la gestion du réseau`{.action}, puis sur `Modifier les paramètres de la carte`{.action}.
+
+![configureipv6](images/configure-ipv6-step2.png){.thumbnail}
+
+Ouvrez l'état de la connexion `Ethernet` et cliquez sur `Propriétés`{.action}. Dans la nouvelle fenêtre, sélectionnez sur le nom `Protocole Internet version 6 (TCP/IPv6)` pour qu’il s’affiche en surbrillance, puis cliquez sur le bouton `Propriétés`{.action}.
+
+![configureipv6](images/configure-ipv6-step3.png){.thumbnail}
+
+Au sein de cette nouvelle fenêtre, cochez la case « Utiliser l'adresse IPv6 suivante ». Complétez les champs au-dessous avec les informations récupérées lors de la première étape. 
+
+En dessous de « Utiliser l’adresse de serveur DNS suivante », vous avez la possibilité de renseigner les _résolveurs_ DNS IPv6 de votre choix dans les champs proposés. Cet ajout peut être optionnel si les _résolveurs_ mentionnées dans la configuration IPv4 réalisent déjà ce travail.
+
+Une fois les éléments complétés, cochez la case `Valider les paramètres en quittant` puis cliquez sur les boutons `OK`{.action} pour valider vos modifications. Un message d'erreur peut apparaître dans le cas où la gateway renseignée n'est pas sur le même sous-réseau IPv6 (/128 et /64 par exemple). Si tel est le cas, vous devriez pouvoir poursuivre vers l'étape suivante sans tenir compte du message.
+
+![configureipv6](images/configure-ipv6-step4.png){.thumbnail}
+
 ### Étape 3 : vérifier la configuration et tester la connexion
 
-Pour vérifier que la configuration est fonctionnelle, il existe plusieurs commandes. En voici deux exemples, pour l'interface **eth0** :
+Pour vérifier que la configuration est fonctionnelle, il existe plusieurs commandes selon le système d'exploitation. 
+
+- **Pour un système basé sur Linux**, voici deux exemples pour l'interface **eth0** (à adapter si besoin) :
 
 ```bash
 ip -6 addr show eth0
@@ -288,18 +309,47 @@ Pour tester la connexion, utilisez la commande suivante :
 ping6 proof.ovh.net
 ```
 
-Vous pouvez également tester la connexion vers un autre serveur distant, cependant il est nécessaire que l'IPv6 soit également active sur ce dernier afin que l'opération aboutisse. 
+- **Pour un système basé sur Windows**, utilisez les commandes suivantes :
+
+```
+ipconfig
+ 
+Windows IP Configuration
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : openstacklocal
+   IPv6 Address. . . . . . . . . . . : 2001:xxxx:xxxx:xxxx::zzzz
+   Link-local IPv6 Address . . . . . : fe80::d928:7a00:5ba6:951b%3
+   IPv4 Address. . . . . . . . . . . : 51.xxx.xxx.xxx
+   Subnet Mask . . . . . . . . . . . : 255.255.255.255
+   Default Gateway . . . . . . . . . : 2001:xxxx:xxxx:xxxx::y
+                                       51.xxx.xxx.y
+```
+
+Pour tester la connexion, utilisez la commande suivante : 
+
+```
+ping -6 proof.ovh.net
+```
+
+Vous pouvez également tester la connexion vers un autre serveur distant, cependant il est nécessaire que l'IPv6 soit active sur ce dernier afin que l'opération aboutisse. 
 
 > [!primary]
 >
-> Si malgré les différentes manipulations, l'IPv6 ne fonctionne pas sur votre serveur, il se peut dans de rares cas que vous soyez amené à réaliser des manipulations supplémentaires. Aidez-vous alors des éléments ci-dessous si nécessaire.
+> Si malgré les différentes manipulations, l'IPv6 ne fonctionne pas sur votre serveur, il se peut dans de rares cas que vous deviez réaliser des manipulations supplémentaires. Aidez-vous alors des éléments ci-dessous si nécessaire.
 >
 > - Selon les systèmes d'exploitation, tentez de modifier le préfixe (ou *netmask*) de votre IP de /128 en /64. Ceci permettra d'inclure la gateway IPv6 dans votre sous-réseau.
 >
-> - En plus de relancer le service réseau, il se peut qu'un redémarrage de votre serveur doive être réalisé pour finaliser la prise en compte de votre configuration IPv6.
+> - En plus de relancer le service réseau, il se peut qu'un redémarrage de votre serveur soit nécessaire pour finaliser la prise en compte de votre configuration IPv6.
 >
 
 ### Étape 4 : désactiver la gestion du réseau par Cloud-init
+
+> [!primary]
+>
+> Cette étape ne s'applique pas pour les systèmes basés sur Windows.
+>
 
 Cloud-init est un package installé par défaut sur les instances VPS. Il s’agit d’un framework permettant d’exécuter un script fourni lors de la création de votre serveur ou de son redémarrage. La mécanique en place permet simplement à l’infrastructure OpenStack d’injecter des scripts à l’environnement Cloud-Init et, donc, à la configuration du serveur.
 
