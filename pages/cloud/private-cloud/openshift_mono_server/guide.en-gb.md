@@ -12,7 +12,7 @@ order: 20
 
 This first guide will go throught:
 
-1. create and configure a VM from the template we created [earlier]({filename}../openshift_unattended_centos_install/guide.en-gb.md).
+1. create and configure a VM from the template we created [earlier](https://docs.ovh.com/gb/en/private-cloud/vsphere-unattended-centos-install/).
 2. basic configuration and hello world deployment on OpenShift
 
 ## Requirements
@@ -22,7 +22,7 @@ This first guide will go throught:
 
 > [!primary]
 > 
-> The resources used to automate this guide are available [here](https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/openshift_mono_server/scripts/) folder.
+> The resources used to automate this guide are available at [https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/openshift_mono_server/scripts/](https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/openshift_mono_server/scripts/).
 > 
 
 From your terminal, install `ansible` and `govc`.
