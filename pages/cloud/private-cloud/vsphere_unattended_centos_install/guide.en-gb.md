@@ -32,6 +32,7 @@ If you use `python-2`, make sure to use `ansible-2.7` or above due to issue [#42
 ```shell
 pip install ansible
 pip install requests # dependency for the ansible vmware_guest module
+pip install PyVmomi # dependency for the ansible vmware_guest module
 ```
 
 All variables are set in a `vars.yml` file that needs to be edited before running the playbooks
