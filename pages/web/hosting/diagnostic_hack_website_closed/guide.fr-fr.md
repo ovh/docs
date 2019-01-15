@@ -146,7 +146,7 @@ Cette manipulation peut paraître simple, mais quelques éléments techniques so
 
 > [!primary]
 >
-> Si l'action réalisée par OVH a rendu inaccessible votre site, vous ne pourrez pas de suite le mettre à jour. Si tel est le cas, réalisez d'abord l'étape 3 « [réactiver votre hébergement web](https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#etape-3-reactiver-votre-hebergement-web){.external} » afin de retrouver un accès à votre site. Une fois fait, vous pourrez réaliser la mise à jour.
+> Si l'action réalisée par OVH a rendu inaccessible votre site, vous ne pourrez pas de suite le mettre à jour. Si tel est le cas, réalisez d'abord l'étape 3 « [réactiver votre hébergement web](https://docs.ovh.com/fr/hosting/site-ferme-pour-hack/#etape-3-reactiver-votre-hebergement-web_1){.external} » afin de retrouver un accès à votre site. Une fois fait, vous pourrez réaliser la mise à jour.
 >
 
 Connectez-vous à l'interface d'administration de votre site internet (il ne s'agit pas de l'interface d'OVH). Recherchez alors dans celle-ci si :
