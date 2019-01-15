@@ -22,7 +22,7 @@ This first guide will go throught:
 
 > [!primary]
 > 
-> The resources used to automate this guide are available here: https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/vsphere_unattended_centos_install/scripts/.
+> The resources used to automate this guide are available here: [https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/vsphere_unattended_centos_install/scripts/](https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/vsphere_unattended_centos_install/scripts/).
 > 
 
 From your terminal, install `ansible` and `govc`.
