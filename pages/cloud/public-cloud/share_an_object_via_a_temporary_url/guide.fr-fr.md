@@ -5,7 +5,6 @@ legacy_guide_number: 2007
 section: Object Storage
 ---
 
-
 ## Préambule
 OpenStack Swift permet de stocker un grand nombre de fichiers. Afin de gérer vos fichiers, vous devez être authentifié à l'aide d'un token pour chacune de vos requêtes vers l'API. Cela permet de confirmer vos autorisations sur Swift (Lecture/Ecriture). Ce jeton provient du système d'authentification à l'aide de votre identifiant et mot de passe.
 
