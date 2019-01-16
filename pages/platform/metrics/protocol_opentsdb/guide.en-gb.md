@@ -6,7 +6,7 @@ section: Protocol
 order: 3
 ---
 
-**Last updated 15th May, 2018**
+**Last updated 16th January, 2019**
 
 ## Objective
 
@@ -113,16 +113,15 @@ Here's an example how you can use Python to push datapoints in OpenTSDB format u
 ```Python
 >>> import requests
 
->>> url = 'https://opentsdb.REGION.metrics.ovh.net/api/put'
->>> headers = {'X-Warp10-Token': 'WRITE_TOKEN', 'content-type':'text/plain'}
+>>> url = 'https://metrics:TOKEN@opentsdb.REGION.metrics.ovh.net/api/put'
 >>> payload = {}
 >>> payload["metric"] = "sys.cpu.nice"
->>> payload["timestamp"] = "1346846400"
+>>> payload["timestamp"] = 1346846400
 >>> payload["value"] = 18
 >>> tags = { "host": "web01", "dc": "lga"}
 >>> payload["tags"] = tags
 
->>> r = requests.post(url, headers=headers, data=payload)
+>>> r = requests.post(url, json=payload)
 >>> r.status_code
 ```
 
