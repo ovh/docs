@@ -98,7 +98,7 @@ Lancez le logiciel et sélectionnez RSA comme type de clé. Entrez alors 4096 po
 
 Ensuite, bougez votre souris de manière aléatoire dans la zone située sous la barre de progression, comme indiqué ci-dessous.
 
-![Générer la clé](images/puttygen-02.png){.thumbnail}
+![Générer la clé](images/puttygen-02.gif){.thumbnail}
 
 Lorsque vous déplacez votre souris, la barre de progression commence à se remplir. Quand elle sera complètement pleine, la clé sera prête.
 
