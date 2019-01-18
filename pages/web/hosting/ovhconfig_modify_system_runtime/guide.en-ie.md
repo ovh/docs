@@ -5,11 +5,11 @@ excerpt: 'Find out how to modify the configuration of an OVH Web Hosting plan'
 legacy_guide_number: g2149
 ---
 
-**Last updated 25th September 2018**
+**Last updated 18th January 2019**
 
 ## Objective
 
-There are a range of different configurations you can use for OVH Web Hosting plans. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, you can host whatever website you want on your [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}, provided that it is compatible with [our infrastructures’ configurations](http://pro.ovh.net/infos/){.external}.
+You can use a range of different configurations on an OVH Web Hosting plan. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, you can host whatever website you want on your [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}, provided that it is compatible with [our infrastructures’ configurations](http://pro.ovh.net/infos/){.external}.
 
 **Find out how to modify the configuration of an OVH Web Hosting plan from the OVH Control Panel.**
 
@@ -20,20 +20,20 @@ There are a range of different configurations you can use for OVH Web Hosting pl
 
 ## Instructions
 
-**Changing the configuration of your Web Hosting plan is a delicate procedure.** Any mistakes configuring it could make your website inaccessible as a result. By learning more about the impact of making configuration changes, you can get a better understanding of the changes you will make.
+**Changing the configuration of your Web Hosting plan is a delicate procedure.** Any mistakes configuring it could render your website inaccessible as a result. By learning more about the impact of making configuration changes, you can get a better understanding of the changes you will make.
 
-When you modify your Web Hosting plan’s configuration, you will change the configuration used by your website, too. Although our infrastructures offer a range of configuration types, you will need to ensure that the configuration type you have selected is compatible with your website.
+When you modify your Web Hosting plan’s configuration, you will also change the configuration used by your website. Although our infrastructures offer a range of configuration types, you will need to ensure that the configuration type you have selected is compatible with your website.
 
 > [!warning]
 >
-> Before you start making any changes, please ensure that the changes you are about to make will not make your website inaccessible. If you have any doubts about what you need to do, or encounter any difficulties, we recommend contacting a specialist provider. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide. 
+> Before you start making any changes, please ensure that the changes you are about to make will not render your website inaccessible. If you have any doubts about what you need to do, or encounter any difficulties, we recommend contacting a specialist provider. We will not be able to assist you ourselves. You can find more information in the "Go further" section of this guide. 
 > 
 
-### Modify your Web Hosting plan’s configuration via the OVH Control Panel
+### Modify your Web Hosting plan’s configuration via the Control Panel
 
 #### Step 1: Access the Web Hosting plan’s configuration management.
 
-First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the Web Hosting plan concerned. Click on the `...`{.action} button, then select `Modify configuration`{.action}.
+First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the Web Hosting plan concerned. Click on the `General information`{.action} tab. Next, click on the three dots, then, `Modify configuration`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
@@ -48,7 +48,7 @@ In the window that pops up, you can pick from two options. Select the one corres
 |Choice|Details|
 |---|---|
 |“Return to a previous configuration”|After you have selected this option, choose the configuration to restore on the `Logs choice` side. This option will not be available if you have not made any configuration changes in the past.|
-|“Modify the current configuration”|Once you have selected this option, choose the modifications you would like to make to the configuration from the fields that appear. If required, you can read more about them by going to the [View the configurations available](https://docs.ovh.com/ie/en/hosting/modify_your_web_hosting_systems_runtime_environment/#view-the-configurations-available){.external} section in this documentation.|
+|“Modify the current configuration”|Once you have selected this option, choose the modifications you would like to make to the configuration from the fields that appear. If required, you can read more about them by going to the [View the configurations available](../modify_your_web_hosting_systems_runtime_environment/#view-the-configurations-available_1){.external} section of this documentation.|
 
 > [!primary]
 >
@@ -61,12 +61,12 @@ Once you are ready to do this, click `Confirm`{.action} to apply the modificatio
 
 ### View the configurations available.
 
-When you modify your Web Hosting plan’s configuration, you can choose from a range of configuration types. From this point onwards, you can follow the guide section relevant to the configuration type you would like to use.
+When you modify your Web Hosting plan’s configuration, you can choose from a range of configuration types. From this point onwards, you can follow the guide section that is relevant to the configuration type you would like to learn more about and select.
 
-- [Runtime environment](https://docs.ovh.com/ie/en/hosting/modify_your_web_hosting_systems_runtime_environment/#runtime-environment){.external}
-- [PHP version](https://docs.ovh.com/ie/en/hosting/modify_your_web_hosting_systems_runtime_environment/#php-version){.external}
-- [PHP engine](https://docs.ovh.com/ie/en/hosting/modify_your_web_hosting_systems_runtime_environment/#php-engine){.external}
-- [Mode](https://docs.ovh.com/ie/en/hosting/modify_your_web_hosting_systems_runtime_environment/#mode){.external}
+- [Runtime environment](../modify_your_web_hosting_systems_runtime_environment/#runtime-environment){.external}
+- [PHP version](../modify_your_web_hosting_systems_runtime_environment/#php-version){.external}
+- [PHP engine](../modify_your_web_hosting_systems_runtime_environment/#php-engine){.external}
+- [Mode](../modify_your_web_hosting_systems_runtime_environment/#mode){.external}
 
 #### Runtime environment
 
@@ -97,8 +97,8 @@ By changing the runtime environment, you can edit certain technical values for y
 
 Once you have chosen your runtime environment, you can change it in two different ways:
 
-- **Via the OVH Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan’s configuration via the OVH Control Panel](https://docs.ovh.com/ie/en/hosting/modify_your_web_hosting_systems_runtime_environment/#modify-web-hosting-plans-configuration-via-ovh-control-panel){.external} section of this guide.
-- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space.
+- **Via the OVH Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan configuration via the OVH Control Panel](../modify_your_web_hosting_systems_runtime_environment/#modify-your-web-hosting-plans-configuration-via-the-control-panel){.external} section of this guide.
+- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space. If you would like to modify the **.ovhconfig** file, please refer to our guide to [Configuring the .ovhconfig file on an OVH Web Hosting plan](../configuring-file-ovhconfig/){.external}.
 
 #### PHP version
 
@@ -108,10 +108,10 @@ Because some features cannot be maintained in newer versions, **please ensure th
 
 There are several ways you can modify your Web Hosting plan’s PHP version:
 
-- **Via the OVH Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan’s configuration via the OVH Control Panel](https://docs.ovh.com/ie/en/hosting/modify_your_web_hosting_systems_runtime_environment/#modify-web-hosting-plans-configuration-via-ovh-control-panel){.external} section of this guide.
+- **Via the OVH Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan configuration via the OVH Control Panel](../modify_your_web_hosting_systems_runtime_environment/#modify-your-web-hosting-plans-configuration-via-the-control-panel){.external} section of this guide.
 - **By manually modifying file on your storage space.** This solution is more technical, and you will need to be connected to your storage space. 
 
-Generally, if you want more information on changing from one PHP version to another, please follow the instructions in our guide on [Configuring PHP versions on an OVH Web Hosting plan](https://docs.ovh.com/ie/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/){.external}.
+Generally, if you want more information on changing from one PHP version to another, please follow the instructions in our guide to [Configuring PHP versions on an OVH Web Hosting plan](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/){.external}.
 
 #### PHP engine
 
@@ -119,22 +119,27 @@ With the PHP engine you use, you can enable or disable the PHP accelerator (PHP-
 
 There are two ways of modifying the PHP motor used by your Web Hosting plan:
 
-- **Via the OVH Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan’s configuration via the OVH Control Panel](https://docs.ovh.com/ie/en/hosting/modify_your_web_hosting_systems_runtime_environment/#modify-web-hosting-plans-configuration-via-ovh-control-panel){.external} section of this guide. To activate the PHP accelerator (PHP-FPM), choose ‘php’ as a motor. To deactivate it, choose phpcgi.
-- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space.
+- **Via the OVH Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan configuration via the OVH Control Panel](../modify_your_web_hosting_systems_runtime_environment/#modify-your-web-hosting-plans-configuration-via-the-control-panel){.external} section of this guide. To activate the PHP accelerator (PHP-FPM), choose ‘php’ as a motor. To deactivate it, choose phpcgi.
+- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space. If you would like to modify the **.ovhconfig** file, please refer to our guide to [Configuring the .ovhconfig file on an OVH Web Hosting plan](../configuring-file-ovhconfig/){.external}.
 
 #### Mode
 
-By choosing a mode, you can manage how your website’s cached static files behave (eg.. images), as well as how PHP errors are processed (generally useful when your website displays a blank page, for example). There are two modes you can activate:
+By choosing a mode, you can manage how your website’s cached static files (e.g. images) behave, as well as how PHP errors are processed (generally useful when your website displays a blank page, for example). There are two modes you can activate:
 
 |Mode|Caching static files|Processing PHP errors|
 |---|---|---|
 |*Production*|Maximises caching for static files on internet browsers.|PHP errors will not appear on your website.|
 |*Development*|No caching is applied.|PHP errors will appear on your website.|
 
+> [!primary]
+>
+> For PHP versions 7.1 or later, the errors will appear on the website, no matter what mode is used. 
+> 
+
 There are two ways of modifying the mode used by your Web Hosting plan:
 
-- **Via the OVH Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan’s configuration via the OVH Control Panel](https://docs.ovh.com/ie/en/hosting/modify_your_web_hosting_systems_runtime_environment/#modify-web-hosting-plans-configuration-via-ovh-control-panel){.external} section of this guide.
-- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space.
+- **Via the OVH Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan configuration via the OVH Control Panel](../modify_your_web_hosting_systems_runtime_environment/#modify-your-web-hosting-plans-configuration-via-the-control-panel){.external} section of this guide.
+- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space. If you would like to modify the **.ovhconfig** file, please refer to our guide to [Configuring the .ovhconfig file on an OVH Web Hosting plan](../configuring-file-ovhconfig/){.external}.
 
 ## Go further
 
