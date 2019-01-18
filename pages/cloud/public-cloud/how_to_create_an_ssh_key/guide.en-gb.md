@@ -98,7 +98,7 @@ Next, run the software and select RSA as the key type, enter 4096 as the number 
 
 Next, randomly move your mouse around in the area underneath the progress bar, as shown below.
 
-![generate key](images/puttygen-02.png){.thumbnail}
+![generate key](images/puttygen-02.gif){.thumbnail}
 
 As you move your mouse, the progress bar will start to fill up. When it's completely full, the key will be ready.
 
