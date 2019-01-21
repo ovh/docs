@@ -77,7 +77,7 @@ The first step is to create a [SSH key]({filename}../../public-cloud/how_to_crea
 Then, we need to select a valid public IP for our master node.
 Your private cloud cluster IP block is available via the OVH API.
 
-The IP block can be retreived via a call on `/1.0/ip`. In case you have several clusters or IP blocks, additional filters can be used, like `/1.0/ip?routedTo.serviceName=pcc-123-456-789-123&type=pcc`. More info here https://api.ovh.com/console/#/ip#GET
+The IP block can be retreived via a call on `/1.0/ip`. In case you have several clusters or IP blocks, additional filters can be used, like `/1.0/ip?routedTo.serviceName=pcc-123-456-789-123&type=pcc`. More info here [https://api.ovh.com/console/#/ip#GET](https://api.ovh.com/console/#/ip#GET)
 
 For this guide, will assume you get the IP block `123.45.67.32/28`.
 
