@@ -29,6 +29,12 @@ From your terminal, install `ansible` and `govc`.
 
 If you use `python-2`, make sure to use `ansible-2.7` or above due to issue [#42237](https://github.com/ansible/ansible/pull/42237) otherwise, switch to `python-3` and `ansible-2.6.4`
 
+```shell
+pip install ansible
+pip install requests # dependency for the ansible vmware_guest module
+pip install PyVmomi # dependency for the ansible vmware_guest module
+```
+
 All variables are set in a `vars.yml` file that needs to be edited before running the playbooks
 
 ### GOVC installation
