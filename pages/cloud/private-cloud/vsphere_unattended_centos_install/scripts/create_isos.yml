@@ -6,11 +6,8 @@
     centos_iso: "{{ centos_iso_url | basename }}"
 
   tasks:
-  - name: Install packages
-    package:
-      name:
-        - genisoimage
-      state: present
+  - name: Check if genisoimage is installed
+    command: which genisoimage
 
   - name: Check if iso already fetched
     stat:
