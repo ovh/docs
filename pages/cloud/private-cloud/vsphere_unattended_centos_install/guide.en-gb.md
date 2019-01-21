@@ -22,12 +22,18 @@ This first guide will go throught:
 
 > [!primary]
 > 
-> The resources used to automate this guide are available here: https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/vsphere_unattended_centos_install/scripts/.
+> The resources used to automate this guide are available here: [https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/vsphere_unattended_centos_install/scripts/](https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/vsphere_unattended_centos_install/scripts/).
 > 
 
 From your terminal, install `ansible` and `govc`.
 
 If you use `python-2`, make sure to use `ansible-2.7` or above due to issue [#42237](https://github.com/ansible/ansible/pull/42237) otherwise, switch to `python-3` and `ansible-2.6.4`
+
+```shell
+pip install ansible
+pip install requests # dependency for the ansible vmware_guest module
+pip install PyVmomi # dependency for the ansible vmware_guest module
+```
 
 All variables are set in a `vars.yml` file that needs to be edited before running the playbooks
 
@@ -75,7 +81,8 @@ The second one will a simple iso volume named `OEMDRV` containing the `/KS.CFG` 
 The above steps can be automated via
 
 ```shell
-sudo ansible-playbook -vvv --extra-vars @vars.yml create_isos.yml
+sudo apt-get install --no-install-recommends genisoimage
+ansible-playbook -vvv --extra-vars @vars.yml create_isos.yml
 ```
 
 You are now ready to move the the second section.

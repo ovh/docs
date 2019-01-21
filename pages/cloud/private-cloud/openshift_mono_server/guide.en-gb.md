@@ -12,7 +12,7 @@ order: 20
 
 This first guide will go throught:
 
-1. create and configure a VM from the template we created [earlier]({filename}../openshift_unattended_centos_install/guide.en-gb.md).
+1. create and configure a VM from the template we created [earlier](https://docs.ovh.com/gb/en/private-cloud/vsphere-unattended-centos-install/).
 2. basic configuration and hello world deployment on OpenShift
 
 ## Requirements
@@ -22,7 +22,7 @@ This first guide will go throught:
 
 > [!primary]
 > 
-> The resources used to automate this guide are available [here](https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/openshift_mono_server/scripts/) folder.
+> The resources used to automate this guide are available at [https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/openshift_mono_server/scripts/](https://github.com/ovh/docs/tree/master/pages/cloud/private-cloud/openshift_mono_server/scripts/).
 > 
 
 From your terminal, install `ansible` and `govc`.
@@ -77,7 +77,7 @@ The first step is to create a [SSH key]({filename}../../public-cloud/how_to_crea
 Then, we need to select a valid public IP for our master node.
 Your private cloud cluster IP block is available via the OVH API.
 
-The IP block can be retreived via a call on `/1.0/ip`. In case you have several clusters or IP blocks, additional filters can be used, like `/1.0/ip?routedTo.serviceName=pcc-123-456-789-123&type=pcc`. More info here https://api.ovh.com/console/#/ip#GET
+The IP block can be retreived via a call on `/1.0/ip`. In case you have several clusters or IP blocks, additional filters can be used, like `/1.0/ip?routedTo.serviceName=pcc-123-456-789-123&type=pcc`. More info here [https://api.ovh.com/console/#/ip#GET](https://api.ovh.com/console/#/ip#GET)
 
 For this guide, will assume you get the IP block `123.45.67.32/28`.
 
