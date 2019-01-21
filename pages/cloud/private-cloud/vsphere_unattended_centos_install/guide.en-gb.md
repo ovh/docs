@@ -81,7 +81,8 @@ The second one will a simple iso volume named `OEMDRV` containing the `/KS.CFG` 
 The above steps can be automated via
 
 ```shell
-sudo ansible-playbook -vvv --extra-vars @vars.yml create_isos.yml
+sudo apt-get install --no-install-recommends genisoimage
+ansible-playbook -vvv --extra-vars @vars.yml create_isos.yml
 ```
 
 You are now ready to move the the second section.
