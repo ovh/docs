@@ -1,177 +1,114 @@
 ---
-title: 'Exchange 2013/2016: A primeira configuração do serviço'
-excerpt: Um guia para utilizar e configurar a sua oferta Exchange.
+title: 'Primeiros passos com o serviço Hosted Exchange'
 slug: exchange_20132016_a_primeira_configuracao_do_servico
+excerpt: 'Como configurar pela primeira vez um serviço Hosted Exchange'
 legacy_guide_number: g1311
 ---
 
+**Última atualização: 21/01/2019**
 
-## Etapa 1: Acesso ao serviço.
-Deve aceder ao seu Espaço de Cliente através deste link: [Espaço de Cliente OVH](https://www.ovh.com/manager/web/login.html)
+## Sumário
 
-Após ter efetuado o login, deverá aceder a esta interface:
+O serviço Hosted Exchange permite beneficiar de endereços de e-mail profissionais que facilitam o trabalho colaborativo, graças a funcionalidades tais como a sincronização do calendário e dos contactos.
 
-* No nosso caso, trata-se de uma oferta Hosted
+**Saiba como começar a utilizar o serviço Hosted Exchange.**
 
-Na coluna à esquerda, na plataforma, selecione a oferta Hosted (no nosso caso, hosted-ab12345-1).
+## Requisitos
 
-Veja as diferentes funcionalidades disponíveis:
+- Ter uma oferta [Hosted Exchange](https://www.ovh.pt/emails/hosted-exchange/){.external}.
+- Ter recebido o e-mail com a confirmação da instalação da solução Hosted Exchange.
+- Dispor de um domínio.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+## Instruções
 
-- Informações Gerais
-- Domínios associados
-- Contas de e-mail
-- Grupos: []({legacy}1258)
-- Contactos externos
-- Contas partilhadas
+### 1 - Aceder à interface de gestão do serviço
 
+Depois de ativado, o serviço Hosted Exchange pode ser gerido a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-No segparador "Plus+":
+Para isso, aceda à Área de Cliente OVH, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action} na coluna à esquerda. Finalmente, clique no nome do serviço Hosted Exchange em questão.
 
+> [!primary]
+>
+> Na Área de Cliente OVH, o nome de um serviço Hosted Exchange é composto por: **hosted-**, uma parte do seu identificador de cliente e um algarismo (1 para o primeiro serviço Hosted Exchange instalado, 2 para o segundo, etc.).
+>
 
-- Recursos: []({legacy}1325)
-- Assinatura automática: []({legacy}1330)
-- Trabalhos recentes
-- Gestão da política de segurança
+### 2 - Realizar a primeira configuração do serviço
 
+Uma vez que o seu serviço nunca foi utilizado, deverá realizar a sua primeira configuração que lhe permitirá utilizar novos endereços de e-mail Exchange.
 
+Para isso, aceda pela primeira vez à interface de gestão do seu serviço Hosted Exchange onde um assistente de configuração irá aparecer. Para começar, clique no botão `Começar`{.action}.
 
-![](images/img_3840.jpg){.thumbnail}
+Este assistente de configuração permite realizar várias operações. Consulte a tabela abaixo para obter ajuda com determinadas operações, dependendo da sua situação.
 
-- Se deseja utilizar a sua oferta de e-mail paartilhado e a solução Exchange, tem à sua disposição o seguinte guia:
+|Operação|Descrição|
+|---|---|
+|Escolha do domínio|Defina o nome de domínio que será utilizado para os seus endereços de e-mail Exchange. Este fará parte do seu endereço de e-mail (exemplo: contact@mypersonaldomain.ovh).|
+|Configuração do domínio|Se o domínio for gerido pela OVH com o mesmo ID de cliente que o serviço Exchange, este será configurado automaticamente. No caso contrário, deverá realizar a configuração de forma manual.|
+|Configuração das contas Exchange|Defina o nome dos endereços de e-mail Exchange e adicione informações adicionais.|
+|Migração de dados (caso aplicável)|Se pretender migrar os seus endereços de e-mail a partir de uma solução da OVH (MX Plan ou E-mail Pro), pode efetuar a migração a partir deste assistente. Se estiver a utilizar um software de mensagens, também deverá configurar novamente as suas contas.|
 
-[]({legacy}1221)
+### 3 - Adicionar domínios adicionais (opcional)
 
-- Caso esteja a migrar uma ou várias contas de e-mail partilhado para o Exchange, consulte o seguinte guia:
+Após concluir a primeira configuração do seu domínio, também pode configurar domínios adicionais caso ainda não o tenha feito através do assistente.
 
-[]({legacy}2089)
+> [!warning]
+>
+> Todos os endereços criados no serviço Exchange poderão ver no diretório os restantes endereços associados ao serviço, incluindo aqueles que possuem um domínio diferente. Se não pretender que todos os endereços sejam apresentados no mesmo diretório, deve encomendar um novo serviço Hosted Exchange para o(s) domínio(s) em questão.
+>
 
+Para adicionar um novo domínio, selecione o serviço Hosted Exchange correspondente na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clique no separador `Domínios associados`{.action}. A tabela apresenta os domínios que estão configurados ou prestes a serem configurados no seu serviço. Para adicionar novos domínios, clique no botão `Adicionar domínio`{.action} e siga os passos.
 
+Para obter mais informações, pode consultar o nosso manual [Adicionar um domínio a um serviço Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/adding-domain-exchange/){.external} (versão em inglês).
 
-## Etapa 2: Adição do domínio
-Aquando da seleção da sua plataforma Exchange, será aberta um pop-up de maneira automática de forma a associar o seu domínio ao seu serviço Exchange.
+> [!primary]
+>
+> Se for necessário realizar uma ação específica para configurar o domínio, uma etiqueta vermelha aparecerá na coluna `Diagnóstico`{.action}. Ao clicar, aparecerão as alterações necessárias. Se o domínio não utilizar a configuração da OVH (ou seja, se não utilizar os seus servidores DNS), deverá realizar as modificações a partir da interface que lhe permite gerir a configuração do seu domínio. 
+>
 
-Se o domínio estiver registado na OVH selecione-o na lista.
+![Adicionar um domínio](images/first-steps-hosted-exchange-add-domain.png){.external}
 
-Se o domínio está registado noutro prestador, ou caso se trate de um subdomínio, queira colocá-lo manualmente.
 
-ATENÇÃO
-Se não possui nenhum nome de domínio, aparecerá no pop-up uma opção para que encomende um.
+### 4 - Configurar contas Exchange adicionais (opcional)
 
-Para a configuração de um domínio externo (não alojado pela OVH), ser-lhe-á solicitado, no Espaço Cliente, a adição de um campo do tipo CNAME num subdomínio do seu domínio.
+É possível configurar domínios adicionais caso ainda não o tenha feito através do assistente.
 
-[]({legacy}1519)
+Para o fazer, clique no serviço Hosted Exchange corresponde na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e aceda ao separador `Contas de e-mail`{.action}. A tabela apresenta as contas que estão configuradas ou prestes a serem configuradas no seu serviço.
 
-Selecione "Seguinte" para aceder à etapa seguinte.
+As contas que ainda não foram configuradas aparecem na tabela como “*@configureme.me*”. Para as configurar, clique no ícone em forma de lápis e siga os passos.
 
-![](images/img_3842.jpg){.thumbnail}
+> [!primary]
+>
+> Repita este passo sempre que necessário, de acordo com o número de contas disponíveis. Para adicionar mais contas, clique no botão `Encomendar contas`{.action}.
+>
 
+![Adicionar uma conta](images/first-steps-hosted-exchange-add-account.png){.external}
 
-## Etapa 3: Configuração do domínio.
-Aquando desta etapa ser-lhe-ão propostas 2 acções:
+### 5 - Utilizar os endereços de e-mail
 
+As contas foram configuradas e estão prontas a usar. Para isso, a OVH disponibiliza o webmail **Outlook Web Application** (OWA). Pode aceder através do endereço [https://www.ovh.pt/mail/](https://www.ovh.com/pt/mail/){.external}, inserindo as credenciais do seu endereço de e-mail. Para mais informações, consulte os manuais da OVH sobre [OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/){.external}.
 
-- Com os DNS OVH:
+Se quiser, também pode configurar o seu endereço de e-mail num software (cliente) de correio eletrónico ou dispositivo externo (smartphone ou tablet), consulte os manuais da OVH sobre as [soluções colaborativas da Microsoft](https://docs.ovh.com/pt/microsoft-collaborative-solutions/){.external}. Para uma utilização otimizada do seu endereço Exchange num software, certifique-se de que seja compatível com o serviço.
 
+A OVH propõe licenças Outlook que poderá contratar na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, assim como as licenças Office 365, que poderá contratar através da página [Office 365 da OVH](https://www.ovh.pt/office-365/){.external}. Caso pretenda usufruir do software de correio eletrónico Outlook ou de outros programas da suite Office, recomendamos uma destas soluções.
 
-Selecione "Configurar automaticamente o SRV" se o domínio é gerido pelo mesmo identificador de cliente OVH que a sua plataforma Exchange.
+> [!primary]
+>
+> O Exchange permite uma sincronização completa das suas configurações (filtros, assinaturas, pastas, etc.), quer numa aplicação web quer num software de correio eletrónico compatível.
+> Assim, se utilizar o Exchange em três dispositivos e através de três modos de ligação diferentes (webmail, software de correio eletrónico ou de cliente compatíveis), todas as suas informações ficarão disponíveis ao mesmo tempo.
+>
 
-o campo champ SRV serve para a configuração automática do seu software de email. Obrigatório para o Outlook 2016
+### 6 - Configurar as funções de colaboração (opcional)
 
-Selecione a opção "Configurar automaticamente os MX". Esta ação é necessária para que receba e-mails através do seu serviço Exchange. Esta alteração implica a alteração automática dos servidores de e-mail.
+Uma vez que o serviço Hosted Exchange estiver configurado e operacional, pode ativar as funções de colaboração na sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Estas funções permitem-lhe criar recursos (salas de reunião, equipas, etc.) e grupos, entre outros.
 
+Para ativar as diferentes funções, selecione o seu serviço Hosted Exchange na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e escolha a ação que quer realizar.
 
-- Se não desejar modificar os seus servidores de receção: deixe esta opção desmarcada, poderá depois, no separador "Domínios associados", clicar no diagnóstico MX a vermelho e valide a modificação.
+Para mais informações, consulte os manuais da OVH sobre as [soluções colaborativas da Microsoft](https://docs.ovh.com/pt/microsoft-collaborative-solutions/){.external}.
 
+![Funções colaborativas](images/first-steps-hosted-exchange-intro-to-functions.png){.external}
 
 
-![](images/img_3843.jpg){.thumbnail}
+## Quer saber mais?
 
-- Sem os DNS OVH :
-
-
-Deverá configurar manualmente o campo SRV no seu domínio:
-
-O SRV é composto por um subdomínio: _autodiscover._tcp.seu-dominio.com.
-
-
-- Deve indicar as seguintes informações:
-
-
-|A prioridade|0|
-|O peso|0|
-|A porta|443|
-|O alvo oferta Hosted| ex.mail.ovh.net ou ex2.mail.ovh.net|
-|O alvo oferta Private| Seu-nome-do-host|
-
-
-Para todas as encomendas efetuadas a partir de dia 26/04/2016, o servidor MX para a coabitação Exchange e E-mails pop/imap não alojadas pela OVH, é necessário utilizar ex2.mail.ovh.net.
-Se dispõe de um serviço Exchange e um serviço e-mail pop/imap alojado na OVH (MXPlan) poderá utilizar os servidores MX anti-spam Exchange em modo não autoritativo de forma a que possa beneficiar da opção Anti-Spam na totalidade das suas contas de e-mail.
-Relativamente aos servidores de receção(MX), é necessário modificá-los manualmente a partir da zona DNS do seu domínio: 
-
-|Oferta Hosted sem anti-spam (modo não autoritário)|ex.mail.ovh.net ou ex2.mail.ovh.net|
-
-
-|Oferta Hosted com anti-spam (modo autoritário)|mx0.mail.ovh.net|mx1.mail.ovh.net|mx2.mail.ovh.net|mx3.mail.ovh.net|
-
-Se escolheu a opção da configuração automática dos MX (necessário para a receção dos e-mails) e deve passar em modo não autoritário (compatibilidade com um serviço de e-mail pop/imap):
-
-
-- clique no diagnóstico MX a vermelho (na secção "Domínios associados") e depois escolha o servidor de receção: ex.mail.ovh.net ou ex2.mail.ovh.net.
-
-Serão necessárias 4-24 horas para que as modificações sejam aplicadas.
-
-
-Selecione "Seguinte" e depois "Validar" para finalizar a operação.
-Caso o serviço pop/imap esteja alojado na OVH poderá utilizar os mx antispam com o modo não autoritativo.
-São necessárias 4 a 24 horas de forma a que as modificações sejam aplicadas>.
-
-Selecione "Seguinte" e depois clique em "Validar" para terminar a operação.
-
-
-## Etapa 3: Configuração das contas.
-Selecione de seguida o separador "Conta de e-mail". As contas de e-mail são apresentadas sob a seguinte forma: gufbqeiixg@configureme.me.
-
-Para a(s) configurar basta clicar no lápis à direita da conta.
-
-« Se eliminar uma das suas contas de e-mail, ela reaparecerá sob a forma de uma conta virgem. Esta conta virgem será ainda sujeita à faturação.
-Para eliminar definitivamente esta conta :
-
-
-- Aceda ao separador "Modo de faturação"
-- Selecione "Nenhuma" e "Validar"
-
-
-
-![](images/img_3845.jpg){.thumbnail}
-
-## Modificação da conta:
-Veja a interface disponível no botão "Configuração":
-
-Password
-
-As passwords devem respeitar as seguintes exigências mínimas:
-
-
-- Não conter toda ou parte do nome da conta de utilizador
-- Dispor de no mínimo 8 caracteres
-- Conter caracteres de três ou quatro categorias seguintes:
-
-
-Caracteres maiúsculos do alfabeto (A a Z)
-Caracteres minúsculos do alfabeto (a a z)
-Números da base 10 (0 a 9)
-Caracteres não alfanuméricos (por exemplo: !, $, #, %)
-
-![](images/img_4131.jpg){.thumbnail}
-
-
-## Conclusão
-O seu serviço Hosted Exchange está agora configurado!
-
- É possível que consulte os seus e-mails através do OWA:
-
-[]({legacy}1522) ; []({legacy}1918)
-
-Para ir mais longe consulte os diferentes [Guias Exchange 2013](https://www.ovh.pt/emails/hosted-exchange/guias/) e encontre a nossa [FAQ online](https://www.ovh.pt/emails/hosted-exchange/faq/).
-
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
