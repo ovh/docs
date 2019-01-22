@@ -52,7 +52,7 @@ Sur la page qui s'affiche, sélectionnez les droits que vous souhaitez délégue
 
 Prenez quelques instants pour vérifier attentivement le récapitulatif des changements. Si tout est correct, cliquez sur `Valider`{.action}. Sous quelques minutes, la délégation sera créée sur nos serveurs.
 
-Une fois la délégation configurée, *test@mypersonnaldomain.ovh* pourra effectuer les actions sélectionnées sur le compte *test2@mypersonnaldomain.ovh*.
+Une fois la délégation configurée, *test@mypersonaldomain.ovh* pourra effectuer les actions sélectionnées sur le compte *test2@mypersonaldomain.ovh*.
 
 ### Étape 2 : utiliser les droits délégués
 

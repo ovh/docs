@@ -52,7 +52,7 @@ Wählen Sie im angezeigten Fenster die Berechtigungen aus, die Sie übertragen m
 
 Überprüfen Sie die Änderungen in der Übersicht und klicken Sie anschließend auf `Bestätigen`{.action}. Innerhalb weniger Minuten wird die Delegation auf unseren Servern eingerichtet.
 
-Sobald die Delegation konfiguriert ist, kann *test@mypersonnaldomain.ovh* die ausgewählten Berechtigungen für* test2@mypersonnaldomain.ovh* nutzen und die entsprechenden Aktionen ausführen (siehe Grafik).
+Sobald die Delegation konfiguriert ist, kann *test@mypersonaldomain.ovh* die ausgewählten Berechtigungen für* test2@mypersonaldomain.ovh* nutzen und die entsprechenden Aktionen ausführen (siehe Grafik).
 
 ### Schritt 2: Berechtigungen nutzen
 
