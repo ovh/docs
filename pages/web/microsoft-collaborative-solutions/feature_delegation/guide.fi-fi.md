@@ -51,7 +51,7 @@ Valitse näkyviin tulevalla sivulla oikeudet, jotka haluat jakaa. Niiden on vast
 
 Käytä muutama minuutti muutosten yhteenvedon huolelliseen tarkistamiseen. Jos kaikki on kunnossa, klikkaa `Vahvista`{.action}. Muutaman minuutin kuluttua jako luodaan palvelimillamme.
 
-Kun jako on konfiguroitu, *test@mypersonnaldomain.ovh* voi suorittaa tilille *test2@mypersonnaldomain.ovh* valitut toiminnot.
+Kun jako on konfiguroitu, *test@mypersonaldomain.ovh* voi suorittaa tilille *test2@mypersonaldomain.ovh* valitut toiminnot.
 
 ### 2\. vaihe: Jaettujen oikeuksien käyttäminen
 

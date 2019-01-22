@@ -52,7 +52,7 @@ Na stronie, która się wyświetla zaznacz prawa, które chcesz przydzielić. Po
 
 Sprawdź dokładnie podsumowanie zmian. Jeśli są poprawne, kliknij `Zatwierdź`{.action}. W ciągu kilku minut uprawnienia zostaną utworzone na serwerach OVH.
 
-Po skonfigurowaniu uprawnienia konto*test@mypersonnaldomain.ovh* będzie mogło wykonać zaznaczone operacje na koncie *test2@mypersonnaldomain.ovh*.
+Po skonfigurowaniu uprawnienia konto*test@mypersonaldomain.ovh* będzie mogło wykonać zaznaczone operacje na koncie *test2@mypersonaldomain.ovh*.
 
 ### Etap 2: używanie udostępnionej skrzynki
 
