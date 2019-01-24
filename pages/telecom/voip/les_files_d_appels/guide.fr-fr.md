@@ -59,9 +59,9 @@ Vous avez la possibilité de paramétrer votre file d'appels selon quatre théma
 Poursuivez la lecture de cette documentation selon le ou les paramètres que vous souhaitez réaliser.
 
 - [2.1 Gérer la file d'appels et ses lignes](../les-files-d-appels/#21-gerer-la-file-dappels-et-ses-lignes).
-- [2.2 Gérer les sons et l'attente](../les-files-d-appels/#22-gerer-les-sons-et-lattente).
-- [2.3 Gérer les plages horaires et les fermetures](../les-files-d-appels/#23-gerer-les-plages-horaires-et-les-fermetures).
-- [2.4 Gérer le filtrage des appels](../les-files-d-appels/#24-gerer-le-filtrage-des-appels).
+- [2.2 Gérer les sons et l'attente](../les-files-d-appels/#22-gerer-les-sons-et-lattente_1).
+- [2.3 Gérer les plages horaires et les fermetures](../les-files-d-appels/#23-gerer-les-plages-horaires-et-les-fermetures_1).
+- [2.4 Gérer le filtrage des appels](../les-files-d-appels/#24-gerer-le-filtrage-des-appels_1).
 
 #### 2.1 Gérer la file d'appels et ses lignes
 
