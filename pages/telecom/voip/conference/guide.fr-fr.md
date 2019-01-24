@@ -1,87 +1,95 @@
 ---
 title: 'Créer et gérer des conférences téléphoniques'
 slug: conference
-excerpt: 'Découvrez comment créer et gérer une conférence téléphonique'
-legacy_guide_number: '7536737'
+excerpt: 'Apprenez à gérer des conférences téléphoniques avec votre numéro OVH'
 section: 'Numéros ou alias'
 ---
 
-**Dernière mise à jour le 11/06/2018**
+**Dernière mise à jour le 24/01/2019**
 
 ## Objectif
 
-La conférence permet à toutes les personnes composant un numéro donné d’être en communication simultanément. Différentes fonctionnalités sont disponibles : protéger la conférence par un code, définir une annonce personnalisée, enregistrer les participants et recevoir un rapport par e-mail à la fin de celle-ci. Une interface spécifique vous propose également de suivre en temps réel les discussions des participants, mais aussi de gérer leur audio et leur micro.
+La conférence permet à toutes les personnes composant un numéro donné d’être en communication simultanément. Différentes fonctionnalités sont alors disponibles : protéger la conférence par un code, définir une annonce personnalisée, enregistrer les participants et recevoir un rapport par e-mail à la fin de celle-ci. Une interface spécifique vous propose également de suivre en temps réel les discussions des participants, mais aussi de gérer leur audio et leur micro.
 
-**Ce guide vous explique comment créer et gérer des conférences téléphoniques.**
+**Apprenez à gérer des conférences téléphoniques avec votre numéro OVH.**
 
 
 ## Prérequis
 
+- Avoir créé un [numéro](https://www.ovhtelecom.fr/telephonie/numeros/){.external} (porté ou un alias).
 - Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external} dans la partie `Téléphonie`{.action}.
-- Avoir créé un [numéro](https://www.ovhtelecom.fr/telephonie/numeros/){.external} (un numéro porté ou un alias).
-
 
 ## En pratique
 
-### Configurer la conférence
+### Étape 1 : configurer le numéro en tant que conférence
 
-Une fois connecté dans l'[espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external} partie `Téléphonie`{.action}, choisissez le numéro à configurer, puis `Configuration du numéro`{.action}. Choisissez ensuite `Modifier le type de numéro`{.action} et dans la liste déroulante, sélectionnez `Conférence`{.action}, puis validez.
+Pour débuter la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external} et assurez-vous de vous situer dans la partie « Télécom ». Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez parmi les numéros OVH qui s’affichent celui sur lequel vous souhaitez configurer la conférence.
 
-![Menu de paramétrage de la conférence](images/menu_conference.png){.thumbnail}
+Dès lors, deux possibilités existent selon la configuration du numéro concerné :
 
+- **le numéro ne possède pas de configuration** : positionnez-vous alors sur l'onglet `Configuration`{.action}, puis suivez les instructions ci-dessous ;
+- **le numéro possède déjà une configuration** : cliquez sur l'onglet `Configuration`{.action}, puis sur `Changer de configuration`{.action}. Suivez ensuite les instructions ci-dessous.
 
-### Gérer la conférence
+![conference](images/conference-step1.png){.thumbnail}
 
-Toujours dans la section `Configuration du numéro`{.action}, vous verrez apparaître une conférence avec une roue crantée pour le paramétrage.
+Dans la nouvelle fenêtre qui apparaît, assurez-vous d’avoir coché la case `Conférence`{.action} et cliquez sur le bouton `Paramétrer`{.action} situé en bas de la page. Si vous changez de configuration pour une autre, vous devrez accepter de perdre celle actuellement en place.
 
-![Gestion de la conférence](images/conference_setup.png){.thumbnail}
+![conference](images/conference-step2.png){.thumbnail}
 
+### Étape 2 : gérer les paramètres de la conférence
 
-- Fenêtre générale
+Maintenant que votre numéro est défini en tant que conférence, vous pouvez le paramétrer. Pour cela, assurez-vous d'être toujours bien positionné dans la partie « Configuration ».
 
-![Gestion de la conférence](images/conference_parametres.png){.thumbnail}
+Si ce n'est plus le cas, ou si vous souhaitez y accéder de nouveau, cliquez sur l'onglet `Configuration`{.action} puis sur `Conférence`{.action}.
 
-|Paramètre|Description|
+![conference](images/conference-step3.png){.thumbnail}
+
+Vous avez la possibilité de configurer la conférence selon deux thématiques. Poursuivez cette documentation selon le ou les paramètres que vous souhaitez ajuster.
+
+- [2.1 Configurer la conférence](./#21-configurer-la-conference){.external}.
+- [2.2 Administrer la conférence](./#22-administrer-la-conference){.external}.
+
+#### 2.1 Configurer la conférence
+
+Dans la partie « Configuration », définissez vos paramètres.
+
+|Paramètres|Description|
 |---|---|
-|Langue de votre conférence|Permet de définir la langue des voix et des annonces dans la conférence (français, anglais, allemand, espagnol ou russe).|
-|Code PIN|Permet de définir un code à entrer pour accéder à la conférence. Aucun code ne sera demandé si vous laissez ce champ vide.|
-|Annonce personnalisée|Permet de jouer un son avant l’arrivée d'un contact dans la conférence ou la saisie du code PIN.|
-|Enregistrement|Permet d’enregistrer la conférence (minimum deux participants). Vous recevrez le fichier d’enregistrement par e-mail avec le rapport de la conférence.|
-|Rentrer muet|Permet d’arriver dans la chambre avec le micro désactivé.|
-|Rejet des appels anonymes|Les appels anonymes vers cette conférence seront rejetés.|
+|Code PIN d’accès|Le code PIN défini devra être renseigné lorsqu'un participant rejoindra la conférence. Celui-ci doit être compris entre 1 et 8 numéros. Indiquez « 0 » ou laissez la case vide pour ne pas utiliser de code PIN.|
+|Annonce personnalisée|Permet de personnaliser l'annonce d'entrée d'un nouveau participant dans la conférence. Pour cela, cliquez sur `Ajouter un son`{.action} puis suivez les étapes qui apparaissent.|
+|Enregistrement de la conférence|Permet d'activer ou non l'enregistrement des conférences réalisées sur le numéro.|
+|Microphone des participants à l’entrée|Permet d'activer ou de rendre muet le microphone des participants lorsqu'ils rejoignent la conférence.|
+|Appels anonymes|Permet d'autoriser ou d'interdire l'accès à la conférence aux numéros anonymes.|
+|Langue de votre conférence|Permet de définir la langue de la conférence parmi plusieurs options.|
 
+Cliquez enfin sur le bouton `Valider`{.action} en bas de la page afin de confirmer les changements.
 
-- `Adresse publique`{.action}
+![conference](images/conference-step4.png){.thumbnail}
 
-![Adresse publique](images/adresse_publique.png){.thumbnail}
+#### 2.2 Administrer la conférence
 
-|Paramètre|Description|
+Dans la partie « Administration », définissez également vos paramètres.
+
+|Paramètres|Description|
 |---|---|
-|Adresse publique de suivi|Cette adresse permet d’accéder aux informations de la conférence (son code PIN, les numéros appelants, les lignes qui parlent et le temps de connexion).|
-|Adresse publique de contrôle|Cette adresse permet de gérer la conférence : bloquer l’accès à celle-ci ou mettre en sourdine (couper le son d’un membre de la conférence, le rendre muet ou l'expulser).|
-|Régénérer/Supprimer|Vous permet de générer à nouveau ou de supprimer les adresses de suivi.|
+|Rapport de la conférence|Permet de définir si vous souhaitez recevoir un rapport concernant l'activité de la conférence ; et si oui, l'adresse sur laquelle le recevoir.|
+|Suivi et contrôle de la conférence|Permet d'activer des liens pour suivre et contrôler la conférence. Pour les activer, cliquez sur `Générer les URL`{.action}.<br><br> Si des URL sont déjà générés, vous avez la possibilité de :<br><br> - **Regénérer les URL** : permet de changer les URL existantes par d'autres ;<br> - **Supprimer les URL** : permet de désactiver le suivi et le contrôle de la conférence.|
 
+Cliquez enfin sur le bouton `Valider`{.action} pour confirmer les changements.
 
-- `Annonce personnalisée`{.action}
+![conference](images/conference-step5.png){.thumbnail}
 
-Pensez à valider l’option `Activer l’annonce personnalisée`{.action}, expliquée précédemment dans « Fenêtre générale », pour prendre en compte le nouveau fichier.
+### Étape 3 : utiliser la conférence
 
-![Annonce personnalisée](images/annonce_personnalisee.png){.thumbnail}
+Une fois votre conférence active et paramétrée, celle-ci est prête à être utilisée. Les participants peuvent donc appeler le numéro défini en tant que conférence, puis interagir selon la configuration que vous avez mise en place.
 
-|Paramètre|Description|
+Les participants ont aussi la possibilité de se servir des raccourcis ci-dessous pendant une conférence :
+
+|Raccourcis|Description|
 |---|---|
-|Fichier actuel|Vous donne le nom du fichier son actuellement en place.|
-|Uploader un fichier audio|Vous permet de définir le fichier son de votre choix qui précédera l’entrée d'un membre dans la salle de conférence.|
-
-- `Gestion des rapports`{.action}
-
-![Gestion des rapports](images/gestion_rapports.png){.thumbnail}
-
-|Paramètre|Description|
-|---|---|
-|E-mail de rapport|Vous avez le choix entre ne recevoir aucun rapport, envoyer le rapport sur une adresse e-mail de votre choix ou bien sûr sur celle de votre identifiant client (contact administrateur).|
-|Adresse mail personnalisée|Ce champ s’affiche lorsque vous choisissez de recevoir le rapport sur l’adresse de votre choix afin de préciser quelle adresse va recevoir le rapport.|
-
+|##|Quitter la conférence|
+|00|Désactiver ou activer le mode muet|
+|**|Désactiver ou activer le mode muet et sourd|
 
 ## Aller plus loin
 
