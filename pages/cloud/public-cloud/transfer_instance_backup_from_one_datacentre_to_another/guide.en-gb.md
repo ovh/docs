@@ -1,36 +1,38 @@
 ---
-title: Transfer instance backup from one datacentre to another
-excerpt: Transfer instance backup from one datacentre to another
+title: 'Transfer an instance backup from one datacentre to another'
 slug: transfer_instance_backup_from_one_datacentre_to_another
+excerpt: 'This guide will show you how to transfer an instance backup from one datacentre to another while preserving the configuration and state of the instance'
 legacy_guide_number: g1853
-section: Resource management
+section: 'Resource management'
 ---
 
+**Last updated 25th January 2019**
 
-## 
-You might want to move your instances from one datacentre to another, either because you would prefer to move to a newly available datacentre or because you want to migrate from RunAbove to Public Cloud. 
+## Objective
 
-This guide explains how to transfer instance backup from one datacentre to another so that you don't have to reinstall everything.
+A situation may arise where you need to move your [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external} from one datacentre to another, either because you would prefer to move to a newly available datacentre or because you want to migrate from OVH Labs to Public Cloud. 
 
+**This guide will show you how to transfer an instance backup from one datacentre to another while preserving the configuration and state of the instance.**
 
 ## Requirements
 
-- [Prepare the environment to use the OpenStack API]({legacy}1851)
-- [Load OpenStack environment variables]({legacy}1852)
+Before following this guide, it's recommended that you first complete this guide:
 
+* [Prepare the environment to use the OpenStack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.external}
 
+You will also need the following:
 
+* a [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external} in your OVH account
+* administrative (root) access to your datacentre via SSH
 
-## 
-This guide can also be used to transfer backup from a RunAbove account to Public Cloud
+## Instructions
 
+### Create a backup
 
-## Creating a backup
-List existing instances: 
-
+First, establish an SSH connection to your datacentre and then run the following command to list your existing instances.
 
 ```
-root@serveur:~$ nova list
+#root@serveur:~$ nova list
 
 +--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
 | ID | Name | Status | Task State | Power State | Networks |
@@ -39,26 +41,18 @@ root@serveur:~$ nova list
 +--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
 ```
 
-
-
-- Create an instance backup
-
+Next, run the following command to create a backup of your instance.
 
 ```
-root@serveur:~$ nova image-create aa7115b3-83df-4375-b2ee-19339041dcfa snap_serveur1
+#root@serveur:~$ nova image-create aa7115b3-83df-4375-b2ee-19339041dcfa snap_serveur1
 ```
 
+### Download the backup
 
-
-
-
-## Download the backup
-
-- List available instances:
-
+Next, run this command to list available instances.
 
 ```
-root@serveur:~$ glance image-list
+#root@serveur:~$ glance image-list
 +--------------------------------------+------------------------+-------------+------------------+-------------+--------+
 | ID | Name | Disk Format | Container Format | Size | Status |
 +--------------------------------------+------------------------+-------------+------------------+-------------+--------+
@@ -74,51 +68,41 @@ root@serveur:~$ glance image-list
 +--------------------------------------+------------------------+-------------+------------------+-------------+--------+
 ```
 
-
-- Identify the backup:
-
+Now identify the instance backup from the list.
 
 ```
 | 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_serveur1 | qcow2 | bare | 1598029824 | active |
 ```
 
-
-- Download the image:
-
+Finally, run this command to download the backup.
 
 ```
-root@serveur:~$ glance image-download --file snap_serveur1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
+#root@serveur:~$ glance image-download --file snap_serveur1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
 ```
 
+### Transfer the backup to another datacentre
 
+To start the transfer process, you first need to load new environment variables.
 
-
-
-## Send the backup
-Load new environment variables:
-
-If you are transfering a datacentre within the same project, just change the variable  OS_REGION_NAME [/ b] 
-
-
-```
-root@serveur:~$ export OS_REGION_NAME=SBG1
-```
-
-
-If you are transfering to another project or account, you have to reload the environment variables linked to this account: 
-
+> [!warning]
+>
+If you are transfering your backup to a datacentre within the same project, you will need to change the OS_REGION_NAME variable.
+>
 
 ```
-root@serveur:~$ source openrc.sh
+#root@serveur:~$ export OS_REGION_NAME=SBG1
 ```
 
-
-
-- Send backup to a new datacentre:
-
+If you are transfering your backup to another project or account, you will have to reload the environment variables linked to that account using the following command.
 
 ```
-root@serveur:~$ glance image-create --name snap_serveur1 --disk-format qcow2 --container-format bare --file snap_serveur1.qcow
+#root@serveur:~$ source openrc.sh
+```
+
+To transfer the backup to the new datacentre, use this command.
+
+```
+#root@serveur:~$ glance image-create --name snap_serveur1 --disk-format qcow2 --container-format bare --file snap_serveur1.qcow
 
 +------------------+--------------------------------------+
 | Property | Value |
@@ -143,17 +127,12 @@ root@serveur:~$ glance image-create --name snap_serveur1 --disk-format qcow2 --c
 +------------------+--------------------------------------+
 ```
 
+### Create an instance from your backup
 
-
-
-
-## Create an instance
-
-- Create an instance, using the backup ID as the image: 
-
+To create an instance from your backup, use the backup ID as the image with this command.
 
 ```
-root@serveur:~$ nova boot --key_name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Serveur1_from_snap
+#root@serveur:~$ nova boot --key_name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Serveur1_from_snap
 +--------------------------------------+------------------------------------------------------+
 | Property | Value |
 +--------------------------------------+------------------------------------------------------+
@@ -186,10 +165,6 @@ root@serveur:~$ nova boot --key_name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4
 +--------------------------------------+------------------------------------------------------+
 ```
 
+## Go further
 
-
-
-
-## 
-[Go back to the index of Cloud guides]({legacy}1785)
-
+Join our community of users on <https://community.ovh.com/en/>.
