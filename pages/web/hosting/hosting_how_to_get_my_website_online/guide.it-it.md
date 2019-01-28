@@ -1,6 +1,6 @@
 ---
 title: 'Mettere online un sito Internet su un hosting Web'
-slug: mettere-sito-online
+slug: hosting_condiviso_come_mettere_online_il_tuo_sito
 excerpt: 'Come pubblicare un sito su un hosting Web OVH'
 section: 'Per iniziare'
 order: 2
