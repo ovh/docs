@@ -1,323 +1,146 @@
 ---
-title: 'Hosting condiviso: come mettere online il tuo sito'
-description: 'Hosting condiviso: come mettere online il tuo sito'
-slug: hosting_condiviso_come_mettere_online_il_tuo_sito
+title: 'Mettere online un sito Internet su un hosting Web'
+slug: mettere-sito-online
+excerpt: 'Come pubblicare un sito su un hosting Web OVH'
+section: 'Per iniziare'
+order: 2
 legacy_guide_number: g1374
 ---
 
+**Ultimo aggiornamento: 28/01/2019**
 
-## Informazioni generali
-Un sito Internet funziona e viene visualizzato correttamente solo se è collocato nella giusta directory.
-Lo standard prevede che i file del tuo sito Internet vengano inseriti nella directory "www" del tuo hosting condiviso. Per farlo, trasferisci i file sul tuo hosting condiviso con un software che utilizza il File Transfert Protocol, come il client gratuito [FileZilla](http://filezilla-project.org/).
+## Obiettivo
 
+I siti Internet presenti nella rete sono di tanti tipi diversi: blog, e-commerce, spazi dove condividere una passione o promuovere un’attività professionale... gli [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} permettono di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](http://pro.ovh.net/infos/){.external}. 
 
-## Ripristina un backup del tuo spazio FTP
+**Questa guida ti mostra le operazioni da eseguire per mettere online un sito su un hosting Web OVH.** 
 
-### Nell'email di installazione del tuo hosting
-Al momento dell'ordine del tuo hosting condiviso OVH, ricevi un'email con le informazioni utili per l'installazione dei tuoi servizi.
-In questa email trovi anche le credenziali FTP necessarie.
-In base all'offerta che hai attivato e al tuo dominio associato all'hosting, l'oggetto dell'email è di questo tipo:
+## Prerequisiti
 
+- Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external} attivo
+- Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web 
+- Disporre di un [dominio](https://www.ovh.it/domini/){.external} attivo, che corrisponderà all’indirizzo del sito
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-```
-/*per un'offerta Personale attivata per il dominio "tuo-dominio.tld" */
+## Procedura
 
-[OVH-perso] tuo-dominio.tld installato
-```
+### Step 1: definisci il tuo progetto
 
+Per realizzare al meglio il tuo progetto, è importante avere una visione chiara dell’obiettivo da raggiungere. Cosa vuoi fare con il tuo sito Web? Come pubblicarlo? Gli hosting OVH offrono numerose opzioni: 
 
-Contenuto:
+- **creare un sito chiavi in mano con i moduli in 1 click**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...). Con i moduli in 1 click sono infatti disponibili 4 CMS già compatibili con le infrastrutture OVH. Per maggiori informazioni, consulta [questa pagina](https://www.ovh.it/hosting-web/website/){.external}.
 
+- **creare un sito chiavi in mano da installare manualmente**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...) da installare sul proprio hosting Web OVH.
 
-```
-[...]
-I TUOI CODICI FTP
--------------
+- **creare un sito Web in autonomia**: questa soluzione è più tecnica e richiede competenze di programmazione, ma offre la possibilità di realizzare un progetto totalmente personalizzato.
 
-Questi codici ti permettono di mettere online il tuo sito.
-(Attenzione: i tuoi dati devono essere salvati nella directory www)
+- **migrare in OVH un sito Web esistente**: questa soluzione può risultare un’operazione delicata, soprattutto se eseguita su servizi in produzione per cui non è possibile un’interruzione di servizio. Per conoscere il processo completo, consulta la guida [Migrare un sito e un servizio di posta in OVH](https://docs.ovh.com/it/hosting/migrare-un-sito-in-ovh/){.external}.
 
-Server FTP: ftp.tuo-dominio.tld o ftp.cluster0XX.ovh.net
-Login o user: loginftp
-Password: mDpFtP
+In base all’opzione scelta, hai quindi due possibilità: 
 
-[...]
-```
+- **utilizzare i nostri moduli in 1 click**: per maggiori informazioni, consulta la guida [Installare i moduli in 1 click OVH](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
 
+- **non utilizzare i nostri moduli in 1 click**: in questo caso, l’installazione del sito deve essere eseguita manualmente sull’hosting. Questa guida contiene informazioni utili per effettuare questa operazione ma, in caso di necessità, ti consigliamo di rivolgerti a un webmaster
+ 
+> [!warning]
+>
+> OVH mette a disposizione i servizi ma non si occupa della loro configurazione e gestione; garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente. 
+> 
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla pubblicazione dei tuoi contenuti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato.  Per maggiori informazioni consulta la sezione “Per saperne di più”.
+>
 
-Se dopo l'installazione hai modificato la password FTP dal tuo Spazio Cliente OVH, sarà inutile recuperarla in questo file. Il login, invece, non è modificabile: conservalo attentamente!
+### Step 2: carica i file del sito nello spazio di storage
 
+Per pubblicare manualmente un sito su un hosting è necessario effettuare diverse operazioni, alcune delle quali possono essere realizzate in diversi modi e, a seconda del sito da installare, essere facoltative. Per la maggior parte dei progetti, i principali step per la pubblicazione di un sito sono due. Il primo consiste nel caricare i file del sito sullo spazio di storage e si realizza in diversi passaggi:
 
-### Nel tuo Spazio Cliente OVH
-Accedi al tuo Spazio Cliente OVH, seleziona il tuo hosting nella sezione Hosting, clicca sul tab FTP-SSH e poi sulla ruota dentata a destra del tuo login. Seleziona Modifica la password.
-La nuova password dovrà contenere min. 8 e max. 12 caratteri alfanumerici. Una volta inserita, clicca su Conferma.
+#### 1. Recuperare i file del sito
 
-La modifica diventerà effettiva dopo alcuni minuti.
+Prima di iniziare, assicurati di avere a disposizione i file del sito da installare. In caso di migrazione di un sito già esistente, contatta il tuo precedente provider per recuperali.
 
+#### 2. Connettersi allo spazio di storage 
 
-### Come funziona FileZilla?
+Per accedere allo spazio di storage sono necessari le credenziali FTP e l’indirizzo del server che hai ricevuto nell’email di conferma dell’installazione del tuo hosting. Se hai smarrito la password, segui la procedura descritta nella guida [Modificare la password di un utente FTP](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/){.external}.
 
-[]({legacy}1380)
+Per recuperare l’indirizzo del server o l’identificativo dello spazio di storage, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo hosting nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `FTP - SSH`{.action}. 
 
-Ti serviranno:
+![Installazione sito](images/get-website-online-step1.png){.thumbnail}
 
-- i file del tuo sito Internet
-- il file di backup del tuo database (se necessario)
+Una volta recuperati i dati potrai connetterti allo spazio di storage in tre modi diversi, utilizzando: 
 
-Le tue credenziali FTP:
+- **FTP Explorer di OVH**: ti consente di effettuare l’accesso direttamente dal browser. Per utilizzarlo, clicca sul pulsante `FTP Explorer`{.action} nella scheda `FTP - SSH`{.action}.
 
-- Host: ftp.tuo-dominio.tld o ftp.cluster0XX.ovh.net
-- Login: il tuo identificativo FTP
-- Password: la password FTP associata (vedi sopra)
-- Porta: 21 (per connessione SSH: 22, a partire dall'offerta Pro)
+- **software compatibile con il protocollo FTP**: sarà necessario installare sul tuo computer un software compatibile con il protocollo FTP (ad esempio, FileZilla). Per informazioni sul suo utilizzo, contatta l’editor del software scelto.
 
+- **accesso SSH**: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage. Questo tipo di accesso richiede conoscenze avanzate e una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} attiva.
 
+#### 3. Caricare i file
 
-![](images/img_1858.jpg){.thumbnail}
+Una volta connesso allo spazio di storage, non resta che mettere online i file del tuo sito. **Ti ricordiamo che un sito Internet funziona e viene visualizzato correttamente solo se è inserito nella giusta directory** che in genere è la cartella “www”. Se utilizzi l’hosting per ospitare più siti internet, hai sicuramente attivato l’opzione multisito. 
 
+Per conoscere la cartella in cui pubblicare il sito, accedi alla scheda `Multisito`{.action} del tuo Spazio Cliente OVH e verifica nella tabella la `Cartella di root`{.action} relativa al dominio interessato. 
 
-## Ripristina un backup del tuo spazio FTP
+È possibile che nel tuo spazio di storage sia presente il file **index.html**, probabilmente creato da OVH durante l’installazione dell’hosting per visualizzare una pagina predefinita sul tuo sito Web. In questo caso, ricordati di eliminarlo prima della pubblicazione dei tuoi file in rete.
 
-### Dal tuo Spazio Cliente OVH
-Per ripristinare il tuo spazio FTP a uno stato precedente, accedi al tuo Spazio Cliente OVH, seleziona il tuo hosting nella sezione Hosting, clicca sul tab FTP-SSH e poi su Ripristina un backup.
+![Installazione sito](images/get-website-online-step2.png){.thumbnail}
 
-![](images/img_2690.jpg){.thumbnail}
-A questo punto, puoi scegliere la data del backup che vuoi ripristinare.
+### Step 3: associa il sito Web a un database
 
-Attenzione: i dati ripristinati sostituiranno quelli attuali.
+> [!primary]
+>
+> Se il tuo sito Internet non ha un database associato, salta questo passaggio.
+>
 
-Clicca su Seguente per confermare l'operazione. Sono necessarie alcune ore prima che i file vengano ripristinati.
+Oggi quasi tutti i CMS utilizzano un database per archiviare gli elementi detti “dinamici”, ad esempio commenti o articoli. Per il corretto funzionamento del sito è necessaria una connessione tra il server Web e il database. Questa connessione viene stabilita grazie a un file di configurazione contenente le informazioni del database. 
 
+In base alla tipologia di sito installato, la configurazione deve essere realizzata manualmente o tramite un’interfaccia generata dal sito stesso. Questa operazione prevede vari passaggi, alcuni dei quali opzionali. 
 
-- Con questo sistema l'FTP viene ripristinato completamente, diversamente dal recupero di un backup con FileZilla.
+#### 1. Recuperare il database esistente (opzionale) 
 
+Se stai migrando un sito, contatta il tuo precedente provider per recuperare il database esistente. Se invece si tratta di un nuovo sito Web, passa allo step successivo.
 
+#### 2. Creare il database in OVH (opzionale)
 
-### Vuoi recuperare un backup completo o un file specifico in FTP con FileZilla?
-Consulta la guida[]({legacy}1380)
+Se disponi già di un database (incluso, ad esempio, in una soluzione di [hosting OVH](https://www.ovh.it/hosting-web/){.external}, [SQL Privato](https://www.ovh.it/hosting-web/opzioni-sql.xml){.external} o [Cloud DB](https://www.ovh.it/cloud/cloud-databases/){.external}) recupera nome utente, password, nome del database e indirizzo del server e poi passa allo step successivo.
 
-## Database 
+Per creare un nuovo database accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo hosting nella sezione `Hosting`{.action} della colonna a sinistra, clicca sulla scheda `Database`{.action} e poi sul pulsante `Crea un database`{.action}. Se non compare, clicca su `Azioni`{.action} > `Crea un database`{.action}.
+Inserisci le informazioni richieste.
 
-### Informazioni generali
-Un database ti permette di archiviare le informazioni del tuo sito o delle tue applicazioni, come il contenuto, gli URL delle pagine e i dati dei visitatori.
+![Installazione sito](images/get-website-online-step3.png){.thumbnail}
 
-Con l'offerta Web Hosting OVH hai accesso a diversi motori di database: MySQL, PostgreSQL e SQL Server (disponibile per l'offerta Hosting condiviso Windows).
+#### 3. Importare il database esistente (opzionale)
 
+Se stai migrando un sito, importa il database esistente in quello appena creato. Se invece si tratta di un nuovo sito Web, passa allo step successivo.
 
-### Crea il tuo database
-Il database incluso nella tua offerta di hosting non viene creato automaticamente al momento dell'installazione.
-In questa fase, quindi, non ti verrà inviata automaticamente nessuna email con le informazioni relative al tuo database.
-Per prima cosa, crea il tuo database.
-Accedi al tuo Spazio Cliente OVH, seleziona il tuo hosting nella sezione Hosting, clicca sul tab Database -> Crea un database
+L’importazione può essere effettuata in diversi modi. In OVH, questa operazione è disponibile direttamente nello Spazio Cliente OVH. Accedi alla lista dei database attivi per il tuo servizio, clicca sui tre puntini a destra in corrispondenza del database appena creato e seleziona l’opzione `Importa un file`{.action}. Inserisci le informazioni richieste.
 
-![](images/img_2743.jpg){.thumbnail}
-Seleziona il motore del database da aggiungere: Mysql o PostgreSQL.
+![Installazione sito](images/get-website-online-step4.png){.thumbnail}
 
-Seleziona il tipo di database e clicca su Seguente.
+#### 4. Associare il sito al database
 
-A questo punto, inserisci le tue credenziali.
+Una volta che il database è disponibile e i file caricati nello spazio di storage, è necessario associarli. Assicurati di avere a disposizione tutti i dati necessari: nome utente, password, nome del database e indirizzo del server.
 
-Dopo qualche minuto riceverai un'email con le informazioni del tuo database.
+La creazione della connessione non è legata ai servizi OVH ma dipende esclusivamente dalla configurazione del sito internet da pubblicare: se hai bisogno di aiuto per effettuare l’operazione ti consigliamo quindi di rivolgerti a uno specialista del settore. 
 
-![](images/img_2694.jpg){.thumbnail}
+### Step 4: accedi al tuo sito Web
 
+Dopo aver caricato i file sullo spazio di storage e associato l’eventuale database, il tuo sito dovrebbe essere correttamente raggiungibile tramite browser. 
 
-### Recupera le tue credenziali SQL
+Se riscontri problemi di visualizzazione, ti consigliamo di:
 
-- Attenzione: al momento dell'installazione della tua offerta Hosting, il database non viene creato automaticamente.
+- **verificare la configurazione del dominio**: è possibile che la configurazione DNS del dominio non consenta a quest’ultimo di mostrare il sito caricato sul tuo hosting Web OVH. Accertati che il record A impostato nella zona DNS del dominio corrisponda all’indirizzo IP dell’hosting. 
 
+- **verifica che non manchino file**: è possibile che durante l’upload dei file nel tuo hosting, ne abbia dimenticato alcuni o si sia verificato un errore. È comunque importante prestare la massima attenzione durante queste operazioni in modo da evitare problemi di interazione tra il sito e l’eventuale database utilizzato; 
 
-Una volta creato, ricevi un'email con le credenziali necessarie per accedere al tuo database.
-Puoi recuperare questa email in qualsiasi momento nel tuo Spazio Cliente OVH. Clicca sul tuo nome in alto a destra, seleziona "Il tuo account" -> "Email ricevute".
+- **verifica che il codice del sito non contenga errori**: questa operazione è più tecnica, ma è possibile che i file caricati contengano errori e non consentano al server di visualizzare correttamente il sito. 
 
-![](images/img_2747.jpg){.thumbnail}
-L'oggetto dell'email è di questo tipo:
+In caso di difficoltà durante la pubblicazione del tuo sito Internet, ti consigliamo di rivolgerti a uno specialista del settore o contattare il fornitore del servizio (ad esempio, del CMS installato). 
 
+## Per saperne di più
 
-```
-[MySQL] Database MySQL Nome_BDD
-```
+[Migrare un sito e un servizio di posta in OVH](https://docs.ovh.com/it/hosting/migrare-un-sito-in-ovh/){.external}
 
+[Installare i moduli in 1 click OVH](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
 
-Contenuto:
+[Modificare la password di un utente FTP ](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/){.external}
 
-
-```
-[...]
-
-Il tuo database MySQL è stato installato sul nostro server.
-
-Specifiche:
------------------------------
-
-MySQL:
-Server       : mysql51-66.pro
-Username     : Nom_de_la_BDD
-Nome database: Nom_de_la_BDD
-Password     : ************
-
-[...]
-```
-
-
-Puoi modificare la password del tuo database direttamente dal tuo Spazio Cliente OVH.
-
--Attenzione: la modifica della password del database può causare problemi come l'irraggiungibilità del tuo sito e l'interruzione dei servizi che utilizzano il tuo database.
-
-Accedi al tuo Spazio Cliente OVH, seleziona il tuo hosting, clicca sul tab FTP-SSH e poi sulla ruota dentata a destra del tuo login. Seleziona Modifica la password.
-
-Se al momento della modifica della password era presente un sito sul tuo hosting, verifica l'aggiornamento del file di configurazione del tuo sito affinché si colleghi al database con la nuova password.
-
-
-### Connessione PhpMyAdmin
-Innanzitutto accedi all'interfaccia [PhpMyAdmin](https://phpmyadmin.ovh.net/).
-
-Inserisci le informazioni richieste:
-
-
-- Server: utente.mysql.db (l'utente è indicato nell'email di creazione del database).
-
-- Nome utente: è indicato nell'email di creazione del database.
-
-- Password: password del tuo database.
-
-- Versione: seleziona se connetterti al database attuale o a un backup di 1 o 7 giorni prima.
-
-
-Clicca su Esegui per connetterti.
-
-![](images/img_1960.jpg){.thumbnail}
-
-- Per i database MySQL4, clicca sul link in fondo all'interfaccia di connessione.
-
-
-
-
-### Esporta il tuo database
-Vuoi esportare o effettuare il backup il tuo database SQL?
-
-Consulta la guida[]({legacy}1394)
-
-![](images/img_1932.jpg){.thumbnail}
-
-
-### Importa il tuo database
-Vuoi importare il backup del tuo database SQL?
-
-Consulta la guida[]({legacy}1393)
-
-![](images/img_1933.jpg){.thumbnail}
-
-
-### Correggi, ottimizza e analizza le tabelle del tuo database
-Puoi correggere, ottimizzare e analizzare le tabelle del tuo database accedendo all'interfaccia [PhpMyAdmin](https://phpmyadmin.ovh.net/).
-
-Seleziona una delle tabelle su cui vuoi eseguire una di queste operazioni e clicca su Operazioni in alto a destra.
-
-Clicca sul tab di manutenzione della tabella per effettuare le operazioni desiderate.
-
-![](images/img_1961.jpg){.thumbnail}
-
-
-### Utilizza SQL Privato
-Vuoi sapere come si usa SQL Privato o come importare ed esportare i tuoi dati?
-
-Consulta la guida[]({legacy}2023)
-
-![](images/img_1866.jpg){.thumbnail}
-
-
-## Guida di installazione
-Vuoi creare velocemente il tuo sito ma non hai conoscenze tecniche? 
-
-Consulta la guida sull'installazione dei moduli in 1 click OVH:[]({legacy}1402)
-
-![](images/img_1930.jpg){.thumbnail}
-
-
-### Nuova installazione WordPress
-
-WordPress è un CMS che ti permette di creare e gestire facilmente il tuo sito o il tuo blog. È libero e gratuito e può essere personalizzato grazie a molti temi ed estensioni.
-
-
-- Blog e Sito
-
-Per installare manualmente WordPress, consulta la guida[]({legacy}1375)
-
-
-![](images/img_1873.jpg){.thumbnail}
-
-
-### Nuova installazione Joomla!
-
-Joomla è un CMS libero e gratuito che può essere personalizzato grazie a molti temi ed estensioni.
-È un software Web che ti permette di gestire online un sito Internet o una Intranet dinamica in tutta semplicità.
-
-
-- Sito Internet
-
-Per installare manualmente Joomla!, consulta la guida[]({legacy}1375)
-
-
-![](images/img_1874.jpg){.thumbnail}
-
-
-### Nuova installazione PrestaShop
-
-PrestaShop è un'applicazione Web open source che ti permette di creare un negozio online e avviare il tuo e-commerce.
-
-
-- Negozio online
-
-Per installare manualmente PrestaShop, consulta la guida[]({legacy}1375)
-
-
-![](images/img_1862.jpg){.thumbnail}
-
-
-## File .ovhconfig
-Vuoi modificare la versione PHP del tuo hosting condiviso o attivare PHP-FPM? 
-
-Consulta le nostre guide sull'utilizzo e sulla configurazione del file .ovhconfig:
-
-
-- []({legacy}1175)
-
-- []({legacy}1207)
-
-
-
-![](images/img_1867.jpg){.thumbnail}
-
-
-## Libreria disponibile sul tuo hosting condiviso
-Informazioni sulle librerie disponibili:
-
-|Libreria|Disponibilità|
-|---|---|
-|ffmepg|non attiva|
-|GD|attiva|
-|imagemagik|attiva|
-|zend (opcache)|attiva|
-|PDO|attiva|
-|Zip - Gzip|attiva|
-
-
-
-![](images/img_1867.jpg){.thumbnail}
-Attenzione: se utilizzi PHP-FPM, queste opzioni sono disattivate per ragioni di sicurezza:
-
-
-- register_globals
-- magic_quotes_gpc
-
-
-
-
-## Ottimizza le performance del tuo sito
-Noti rallentamenti sul tuo sito o vuoi semplicemente migliorarne le performance?
-
-Consulta la guida[]({legacy}1396)
-
-![](images/img_1865.jpg){.thumbnail}
-
+Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}
