@@ -160,7 +160,7 @@ Redirect seeother /esempio.doc http://sito.tld/esempio.pdf
 Il reindirizzamento temporaneo di tipo HTTP 302 può essere utilizzato in caso di trasferimento momentaneo dei file su un altro sito:
 
 ```
-Redirect temp /http://altro_sito_web.tld/sito/
+Redirect temp / http://altro_sito_web.tld/sito/
 ```
 
 ## Per saperne di più
