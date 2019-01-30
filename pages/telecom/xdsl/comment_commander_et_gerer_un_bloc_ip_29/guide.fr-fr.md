@@ -50,7 +50,7 @@ Collectez à présent les adresses IP qui serviront lors des étapes suivantes. 
 - **récupérez les huit adresses IP (dont cinq associables à vos équipements)** : aidez-vous du tableau ci-dessous pour les retrouver.
 
 |Types d'adresses|Description|Exemple|
-|---|---|
+|---|---|---|
 |Adresse de réseau (_network_)|Il s'agit de la première adresse de votre bloc IP /29. Elle apparaît dans votre espace client à côté de ce bloc et n'est pas associable à l'un de vos équipements.|1.1.1.0|
 |Adresses associables|Ce sont les cinq adresses IP que vous pouvez associer à vos équipements. Elles suivent l'adresse de réseau.|1.1.1.1<br>1.1.1.2<br>1.1.1.3<br>1.1.1.4<br>1.1.1.5|
 |Adresse de passerelle (_gateway_)|Il s'agit de l'avant-dernière adresse de votre bloc IP /29. Elle n'est pas associable à l'un de vos équipements.|1.1.1.6|
@@ -76,7 +76,7 @@ Sur la page, dans la partie « Configuration générale », assurez-vous de déc
 Maintenant que vous êtes en possession de votre bloc IP, vous pouvez le configurer dans votre box OVH. Poursuivez selon le modèle que vous possédez :
 
 - [3.1 Configuration sur une box Technicolor ou Thomson](./#31-configuration-sur-une-box-technicolor-ou-thomson){.external} (**excepté pour le modèle Technicolor TG799vac**).
-- [3.2 Configuration sur une box Zyxel](./#32-configuration-sur-une-box-zyxel){.external}.
+- [3.2 Configuration sur une box Zyxel](./#32-configuration-sur-une-box-zyxel_1){.external}.
 
 > [!primary]
 >
@@ -109,7 +109,7 @@ Permet de récupérer l'état d'activation du bloc IP /29.
 
 Permet d'activer ou de désactiver la configuration du bloc IP /29 sur votre box OVH Technicolor ou Thomson compatible.
 
-Une fois configurée, poursuivez vers l'étape 4 « [Configurer les adresses IP sur vos équipements](./#etape-4-configurer-les-adresses-ip-sur-vos-equipements){.external} ».
+Une fois configurée, poursuivez vers l'étape 4 « [Configurer les adresses IP sur vos équipements](./#etape-4-configurer-les-adresses-ip-sur-vos-equipements_1){.external} ».
 
 ##### 3.1.2 Via un client Telnet
 
@@ -178,7 +178,7 @@ Sauvegardez les changements réalisés. Cette configuration restera active même
 saveall
 ```
 
-Le paramétrage maintenant effectué, poursuivez vers l'étape 4 « [Configurer les adresses IP sur vos équipements](./#etape-4-configurer-les-adresses-ip-sur-vos-equipements){.external} ».
+Le paramétrage maintenant effectué, poursuivez vers l'étape 4 « [Configurer les adresses IP sur vos équipements](./#etape-4-configurer-les-adresses-ip-sur-vos-equipements_1){.external} ».
 
 #### 3.2 Configuration sur une box Zyxel
 
