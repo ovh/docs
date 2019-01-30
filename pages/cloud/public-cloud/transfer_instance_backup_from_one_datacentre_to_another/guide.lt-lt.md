@@ -1,36 +1,38 @@
 ---
-title: Instance atsarginės kopijos perkėlimas iš vieno duomenų centro į kitą
-excerpt: Instance atsarginės kopijos perkėlimas iš vieno duomenų centro į kitą
+title: 'Transfer an instance backup from one datacentre to another'
+excerpt: 'This guide will show you how to transfer an instance backup from one datacentre to another while preserving the configuration and state of the instance'
 slug: instance_atsargines_kopijos_perkelimas_is_vieno_duomenu_centro_i_kita
 legacy_guide_number: g1853
+section: 'Resource management'
 ---
 
+**Last updated 25th January 2019**
 
-## 
-Gali nutikti taip, kad jums teks perkelti savo virtualias mašinas (Instances) į kitą duomenų centrą dėl geresnio pasiekiamumo arba todėl, kad tame duomenų centre turite kitas paslaugas, arba dėl RunAbove migravimo į Public Cloud.
+## Objective
 
-Šiame gide paaiškinsime, kaip į kitą duomenų centrą perkelti virtualios mašinos atsarginę kopiją, kad išvengtumėte pakartotinio diegimo.
+A situation may arise where you need to move your [Public Cloud Instance](https://www.ovh.lt/public-cloud/instances/){.external} from one datacentre to another, either because you would prefer to move to a newly available datacentre or because you want to migrate from OVH Labs to Public Cloud. 
 
+**This guide will show you how to transfer an instance backup from one datacentre to another while preserving the configuration and state of the instance.**
 
-## Reikalavimai
+## Requirements
 
-- [Aplinkos paruošimas OpenStack API naudojimui]({legacy}1851)
-- [Kintamųjų įkėlimas į OpenStack aplinką]({legacy}1852)
+Before following this guide, it's recommended that you first complete this guide:
 
+* [Prepare the environment to use the OpenStack API](https://docs.ovh.com/lt/public-cloud/openstack_naudojimo_aplinkos_paruosimas/){.external}
 
+You will also need the following:
 
+* a [Public Cloud Instance](https://www.ovh.lt/public-cloud/instances/){.external} in your OVH account
+* administrative (root) access to your datacentre via SSH
 
-## 
-Šis gidas taip pat pasitarnaus perkeliant RunAbove paskyrą į Public Cloud.
+## Instructions
 
+### Create a backup
 
-## Atsarginės kopijos kūrimas
-
-- Egzistuojančių virtualių mašinų peržiūra:
-
+First, establish an SSH connection to your datacentre and then run the following command to list your existing instances.
 
 ```
-root@serveur:~$ nova list
+#root@serveur:~$ nova list
 
 +--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
 | ID | Name | Status | Task State | Power State | Networks |
@@ -39,25 +41,18 @@ root@serveur:~$ nova list
 +--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
 ```
 
-
-- Atsarginės kopijos kūrimas:
-
+Next, run the following command to create a backup of your instance.
 
 ```
-root@serveur:~$ nova image-create aa7115b3-83df-4375-b2ee-19339041dcfa snap_server1
+#root@serveur:~$ nova image-create aa7115b3-83df-4375-b2ee-19339041dcfa snap_serveur1
 ```
 
+### Download the backup
 
-
-
-
-## Atsarginės kopijos parsiuntimas
-
-- Atsarginių kopijų peržiūra:
-
+Next, run this command to list available instances.
 
 ```
-root@serveur:~$ glance image-list
+#root@serveur:~$ glance image-list
 +--------------------------------------+------------------------+-------------+------------------+-------------+--------+
 | ID | Name | Disk Format | Container Format | Size | Status |
 +--------------------------------------+------------------------+-------------+------------------+-------------+--------+
@@ -73,53 +68,41 @@ root@serveur:~$ glance image-list
 +--------------------------------------+------------------------+-------------+------------------+-------------+--------+
 ```
 
-
-- Kopijos identifikavimas:
-
+Now identify the instance backup from the list.
 
 ```
 | 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_serveur1 | qcow2 | bare | 1598029824 | active |
 ```
 
-
-- Kopijos parsiuntimas:
-
+Finally, run this command to download the backup.
 
 ```
-root@serveur:~$ glance image-download --file snap_serveur1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
+#root@serveur:~$ glance image-download --file snap_serveur1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
 ```
 
+### Transfer the backup to another datacentre
 
+To start the transfer process, you first need to load new environment variables.
 
-
-
-## Atsarginės kopijos įkėlimas
-
-- Naujų aplinkos kintamųjų įkėlimas:
-
-
-Perkeliant tą patį projektą į kitą duomenų centrą, pakanka pakeisti kintamąjį OS_REGION_NAME:
-
+> [!warning]
+>
+If you are transfering your backup to a datacentre within the same project, you will need to change the OS_REGION_NAME variable.
+>
 
 ```
-root@serveur:~$ export OS_REGION_NAME=SBG1
+#root@serveur:~$ export OS_REGION_NAME=SBG1
 ```
 
-
-Perkėlimui į kitą projektą ar paskyrą būtina pakeisti su paskyra susijusius aplinkos kintamuosius:
-
+If you are transfering your backup to another project or account, you will have to reload the environment variables linked to that account using the following command.
 
 ```
-root@serveur:~$ source openrc.sh
+#root@serveur:~$ source openrc.sh
 ```
 
-
-
-- Atsarginės kopijos perkėlimas į kitą duomenų centrą:
-
+To transfer the backup to the new datacentre, use this command.
 
 ```
-root@serveur:~$ glance image-create --name snap_serveur1 --disk-format qcow2 --container-format bare --file snap_serveur1.qcow
+#root@serveur:~$ glance image-create --name snap_serveur1 --disk-format qcow2 --container-format bare --file snap_serveur1.qcow
 
 +------------------+--------------------------------------+
 | Property | Value |
@@ -144,17 +127,12 @@ root@serveur:~$ glance image-create --name snap_serveur1 --disk-format qcow2 --c
 +------------------+--------------------------------------+
 ```
 
+### Create an instance from your backup
 
-
-
-
-## Virtualios mašinos sukūrimas
-
-- Virtualios mašinos su atsarginės kopijos ID sukūrimas:
-
+To create an instance from your backup, use the backup ID as the image with this command.
 
 ```
-root@serveur:~$ nova boot --key_name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Serveur1_from_snap
+#root@serveur:~$ nova boot --key_name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Serveur1_from_snap
 +--------------------------------------+------------------------------------------------------+
 | Property | Value |
 +--------------------------------------+------------------------------------------------------+
@@ -187,10 +165,6 @@ root@serveur:~$ nova boot --key_name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4
 +--------------------------------------+------------------------------------------------------+
 ```
 
+## Go further
 
-
-
-
-## 
-[Grįžti į Cloud gidų sąrašą]({legacy}1785)
-
+Join our community of users on <https://community.ovh.com/en/>.
