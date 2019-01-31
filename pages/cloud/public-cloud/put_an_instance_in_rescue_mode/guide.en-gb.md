@@ -1,61 +1,60 @@
 ---
-title: Put an instance in rescue mode
-excerpt: Put an instance in rescue mode
+title: 'Put an instance in rescue mode'
+excerpt: 'This guide will show you how to put your instance in rescue mode'
 slug: put_an_instance_in_rescue_mode
 legacy_guide_number: g2029
 section: Troubleshooting
 ---
 
+**Last updated 31st January 2019**
 
-## 
-If something has been poorly configured or you have lost your SSH key, you may not be able to access your instance anymore. 
-We suggest that you use rescue mode to access your data and correct your different configuration files. 
+## Objective
 
-The way this works is quite simple:
-You instance is launched on a new image, or an instance with a basic configuration.
-You instance's disk is attached to your instance as an additional disk, you therefore just have to mount it in order to access the data. 
+If your instance has been poorly configured, or if you have lost your SSH key, your instance may be inaccessible.
 
-This guide explains how to use rescue mode.
+In such circumstances, you can use rescue mode to reconfigure your instance or recover to recover your data. 
 
+**This guide will show you how to put your instance in rescue mode**
 
-## Prerequisites
+## Requirements
 
-- Create an instance in the OVH customer account
+* a [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external} set up in your OVH account
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* administrative (root) access to the instance via SSH
 
+## Instructions
 
+### Activate rescue mode
 
+First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu.
 
-## Go to rescue mode
-To put your server in rescue mode, you just have to click on the arrow at the top right of your instanceand select "Reboot in rescue mode":
+![control panel](images/rescue-mode-01.png){.thumbnail}
 
-![](images/img_3494.jpg){.thumbnail}
-You then have to choose the image onto which you want to restart your server in rescue mode:
+Next, select your PCI project from the side-menu on the left of the screen.
 
-![](images/img_3495.jpg){.thumbnail}
-You will see the default image suggestions, as well as an additional image "rescue-pro", which lets you connect to your instance in recue mode using a temporary password. 
+![control panel](images/rescue-mode-02.png){.thumbnail}
 
-Once the server has gone into rescue mode, a new window will appear at the bottom right, containing your temporary password:
+Next, click the dropdown arrow on your instance and select `Reboot in rescue mode`{.action}
 
-![](images/img_3497.jpg){.thumbnail}
+![control panel](images/rescue-mode-03.png){.thumbnail}
 
+You will now see the 'Reboot in rescue mode' dialog box. Click the dropdown list to select the Linux distribution you want to use in rescue mode and then click the `Start`{.action} button.
 
-## Access your data
-As explained above, your instance's data will be attached as an additional disk in rescue mode. You therefore just have to mount it by following the following procedure so that you can access it:
+![control panel](images/rescue-mode-04.png){.thumbnail}
 
+Once your instance has been rebooted in rescue mode, a message will appear at the top of the screen, containing your temporary password.
 
-- Connect in root:
+![control panel](images/rescue-mode-05.png){.thumbnail}
 
+### Access your data
 
-```
-admin@instance:~$ sudo su
-```
+Once rescue mode has been activated, your instance's data will be attached as an additional disk. You will now need to mount it, by taking the following steps.
 
-
-- Verify the available disks:
-
+First, establish an SSH connection to your instance. Once you're connected, verify the available disks with this command:
 
 ```
 root@instance:/home/admin# lsblk
+
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 253:0 0 1G 0 disk
 └─vda1 253:1 0 1023M 0 part /
@@ -63,64 +62,34 @@ vdb 253:16 0 10G 0 disk
 └─vdb1 253:17 0 10G 0 part
 ```
 
-
-- Mount the partition;
-
+Next, mount the partition:
 
 ```
 root@instance:/home/admin# mount /dev/vdb1 /mnt
 ```
 
+Your data will now be accessible from the /mnt folder.
 
+### Deactivate rescue mode
 
-You data is now accessible from the /mnt file. 
+Once you have completed your tasks, you can deactivate rescue mode by rebooting your instance normally. To do this, click on the dropdown arrow on your instance, and select `Exit rescue mode`{.action}.
 
-You can now, for example, edit the file containing the list of SSH keys which that admin user can use:
+![control panel](images/rescue-mode-06.png){.thumbnail}
 
+### Activate rescue mode using the OpenStack API
 
-```
-root@instance:/home/admin# vim /mnt/home/admin/.ssh/authorized_keys
-```
-
-
-
-
-## Reboot your instance normally
-Once you have completed your tasks, you can reboot your instance normally, you just have to click on the arrow at the top right of your instace and select
-"Exit rescue mode" :
-
-![](images/img_3496.jpg){.thumbnail}
-
-
-## With the OpenStack APIs
-You can reboot your instance in rescue mode via the OpenStack APIs using the following command:
-
+You can also activate rescue mode via the OpenStack API using the following command:
 
 ```
-root@server:~# nova rescue INSTANCE_ID
+# root@server:~# nova rescue INSTANCE_ID
 ```
-
 
 To exit rescue mode, use the following command:
 
-
 ```
-root@server:~# nova unrescue INSTANCE_ID
+# root@server:~# nova unrescue INSTANCE_ID
 ```
 
+## Go further
 
-
-
-## 
-
-- [Create SSH keys]({legacy}1769)
-
-
-
-
-## 
-
-- [Configuring additional SSH keys]({legacy}1924)
-
-
-
+Join our community of users on <https://community.ovh.com/en/>.
