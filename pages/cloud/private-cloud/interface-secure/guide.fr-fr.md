@@ -26,7 +26,7 @@ Depuis l'interface sécurisée, vous pouvez effectuer trois manipulations. Pours
 
 - [Valider une opération grâce à un token](./#valider-une-operation-grace-a-un-token).
 - [Changer le mot de passe d'un utilisateur](./#changer-le-mot-de-passe-dun-utilisateur).
-- [Réinitialiser son mot de passe](./#reinitialiser-votre-mot-de-passe).
+- [Réinitialiser un mot de passe](./#reinitialiser-un-mot-de-passe).
 
 ### Valider une opération grâce à un token
 
@@ -77,7 +77,7 @@ Le changement de mot de passe est possible pour un utilisateur disposant ou non 
 
 > [!primary]
 >
-> Si l'utilisateur ne dispose plus de son mot de passe, il doit demander à un autre utilisateur possédant le droit « **token validator** » d'effectuer le changement pour lui via la procédure de [réinitialisation de mot de passe](./#reinitialiser-votre-mot-de-passe).
+> Si l'utilisateur ne dispose plus de son mot de passe, il doit demander à un autre utilisateur possédant le droit « **token validator** » d'effectuer le changement pour lui via la procédure de [réinitialisation de mot de passe](./#reinitialiser-un-mot-de-passe).
 > 
 
 Pour modifier le mot de passe d'un utilisateur, connectez-vous à l'interface sécurisée (par exemple : `https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/`) et cliquez sur le bouton `Change Password`{.action}.
