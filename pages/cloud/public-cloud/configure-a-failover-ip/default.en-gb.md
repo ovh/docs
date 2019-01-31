@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to configure a failover IP on various Lin
 section: Networking
 ---
 
-**Last updated 28th January 2019**
+**Last updated 31st January 2019**
 
 ## Objective
 
