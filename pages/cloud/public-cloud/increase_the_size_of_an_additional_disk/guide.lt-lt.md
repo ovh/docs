@@ -1,72 +1,56 @@
 ---
-title: Papildomo disko vietos didinimas
-excerpt: Papildomo disko vietos didinimas
+title: 'Increase the size of an additional disk'
+excerpt: 'This guide will show you how to increase the size of an additional disk, as well as enlarging its main partition.'
 slug: papildomo_disko_vietos_didinimas
 legacy_guide_number: g1865
+section: Storage
 ---
 
+**Last updated 31st January 2019**
 
-## 
-Jeigu pasiekėte papildomo disko vietos limitą, jūs visada galėsite padidinti disko vietą.
+## Objective
 
-Šiame gide paaiškinama, kaip padidinti papildomo disko vietą ir praplėsti skirsnį.
+If you have reached the maximum storage capacity on your additional disk, you can still increase its size. 
 
+**This guide will show you how to increase the size of an additional disk, as well as enlarging its main partition.**
 
-## Reikalavimai
+## Requirements
 
-- Virtuali mašina
-- Papildomas diskas
+* a [Public Cloud Instance](https://www.ovh.lt/public-cloud/instances/){.external} in your your OVH account
+* an [additional disk](https://www.ovh.lt/public-cloud/storage/additional-disks/){.external} attached to your instance
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* administrative (root) access to your instance via SSH (for Linux only)
+* administrative access to your instance via RDP (for Windows only)
 
+## Intructions
 
+### Using the OVH Control Panel
 
+Firstly, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
 
-## 
+When you’ve found your project in the list, click it and then select the `Infrastructure`{.action} tab.
 
-- Prisijunkite prie [OVH kliento valdymo sąsajos](https://www.ovh.com/manager/cloud/)
-- Spauskite rodyklę, esančią jūsų disko apačioje dešinėje:
+![control panel](images/increase-disk-01.png){.thumbnail}
 
+Locate your instance in your project and then click the the additional disk attached to it.
 
+![control panel](images/increase-disk-02.png){.thumbnail}
 
-![](images/img_2744.jpg){.thumbnail}
+Next, click the `disk size`{.action} option, and then use the slider to adjust the disk capacity. Alternatively, you can manually enter the desired capacity.
 
-- Rinkitės „Redaguoti“ ir pereikite prie naujo meniu:
+When you've finished, click the `Apply`{.action} button.
 
+![control panel](images/increase-disk-03.png){.thumbnail}
 
+### Using Linux
 
-![](images/img_2745.jpg){.thumbnail}
-Šiame naujame meniu jūs galėsite:
-
-- Pakeisti savo disko pavadinimą
-- Pakeisti savo disko dydį
-
-
-
-- Spauskite „Taikyti“
-
-
-
-## Dėmesio:
-Linux sistemoje, siekiant, kad operacijos metu pavadinimas išliktų nepakitęs (pavyzdžiui, vdb > vdc), patariama atjungti diską iki šios operacijos atlikimo:
+First, unmount the disk using this command:
 
 ```
-admin@server-1:~$ sudo umount /point/de/montage
+admin@server-1:~$ sudo unmount /mnt/disk
 ```
 
-
-
-
-## Linux sistemoje
-
-- Disko atjungimas:
-
-```
-admin@server-1:~$ sudo umount /mnt/disk
-```
-
-
-
-
-- Skirsnio perkūrimas:
+Next, recreate the partition.
 
 ```
 admin@server-1:~$ sudo fdisk /dev/vdb
@@ -75,16 +59,12 @@ Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command
 ```
 
-
-
 ```
 Command (m for help): d
 
 Selected partition 1
 Partition 1 has been deleted.
 ```
-
-
 
 ```
 Command (m for help): n
@@ -101,8 +81,6 @@ Last sector, +sectors or +size{K,M,G,T,P} (2048-146800639, default 146800639):
 Created a new partition 1 of type 'Linux' and of size 70 GiB.
 ```
 
-
-
 ```
 Command (m for help): w
 
@@ -111,11 +89,10 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-
-- Skirsnio tikrinimas ir parametrų keitimas:
+Next, verify and recheck the partition.
 
 ```
-admin@server-1:~$ sudo e2fsck -f /dev/vdb1
+#admin@server-1:~$ sudo e2fsck -f /dev/vdb1
 
 e2fsck 1.42.12 (29-Aug-2014)
 Pass 1: Checking inodes, blocks, and sizes
@@ -126,27 +103,22 @@ Pass 5: Checking group summary information
 /dev/vdb: 12/3276800 files (0.0% non-contiguous), 251700/13107200 blocks
 ```
 
-
-
 ```
-admin@server-1:~$ sudo resize2fs /dev/vdb1
+#admin@server-1:~$ sudo resize2fs /dev/vdb1
 
 resize2fs 1.42.12 (29-Aug-2014)
 Resizing the filesystem on /dev/vdb to 18350080 (4k) blocks.
 The filesystem on /dev/vdb is now 18350080 (4k) blocks long.
 ```
 
-
-- Disko pridėjimas ir tikrinimas:
-
-```
-admin@server-1:~$ sudo mount /dev/vdb1 /mnt/disk/
-```
-
-
+Finally, mount and check the disk.
 
 ```
-admin@server-1:~$ df -h
+#admin@server-1:~$ sudo mount /dev/vdb1 /mnt/disk/
+```
+
+```
+#admin@server-1:~$ df -h
 Filesystem Size Used Avail Use% Mounted on
 /dev/vda1 9.8G 840M 8.6G 9% /
 udev 10M 0 10M 0% /dev
@@ -157,23 +129,42 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
+### Using Windows
 
+Establish an RDP connection to your instance. When you've logged in, right-click on the `Start Menu`{.action} button and then click `Disk Management`{.action}.
 
+![windows](images/increase-disk-04.png){.thumbnail}
 
+When the disk management tool opens, you’ll see your new disk as an unkown volume with unallocated space, as shown below:
 
-## Windows sistemoje
+![windows](images/increase-disk-05.png){.thumbnail}
 
-- Paleiskite disko valdiklį ir dešiniuoju pelės mygtuku spragtelėkite savo diską:
+If the disk is offline, this is likely due to a policy in place on the instance. To fix this, right-click on the disk and select `Online`{.action}.
 
+![windows](images/increase-disk-06.png){.thumbnail}
 
+> [!primary]
+>
+Depending on your version of Windows, you may need to initialise your additional disk before you can use it. To initialise your disk, right-click it again, and select `Initialise Disk`{.action}.
+>
 
-![](images/img_2748.jpg){.thumbnail}
+If the main volume of your disk is smaller than the entire disk capacity, right-click on the volume, and then click `Extend Volume`{.action}.
 
-- Spragtelėkite „Extend Volume“
+![windows](images/increase-disk-07.png){.thumbnail}
 
+The Extend Volume Wizard will now be displayed. Click `Next`{.action} to start the wizard.
 
+![windows](images/increase-disk-08.png){.thumbnail}
 
+Now increase the volume to the desired size, and click `Next`{.action} when you're finished.
 
-## 
-[Grįžti į Cloud gidų sąrašą]({legacy}1785)
+![windows](images/increase-disk-09.png){.thumbnail}
 
+Finally, click `Finish`{.action} to complete the process.
+
+![windows](images/increase-disk-10.png){.thumbnail}
+
+## Go further
+
+* [Create and configure an additional disk on an instance](https://docs.ovh.com/lt/public-cloud/papildomo_disko_kurimas_ir_konfiguravimas_virtualioje_masinoje/){.external}
+* Join our community of users on <https://community.ovh.com/en/>.
