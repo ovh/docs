@@ -20,6 +20,7 @@ Graças ao alojamento web da OVH, pode beneficiar de um certificado SSL. Este ú
 - Dispor de, pelo menos, um website instalado e acessível no alojamento web da OVH.
 - Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web`{.action}.
 
+
 ## Instruções
 
 A segurança assume um lugar cada vez mais importante na Internet. Muitos dedicam uma atenção especial à confidencialidade dos seus dados e à forma como estes transitam na web. De forma geral, os internautas confiam mais em sites que permitam uma partilha protegida, especialmente quando os dados comunicados são sensíveis. 
