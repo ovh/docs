@@ -6,7 +6,7 @@ legacy_guide_number: '7766721'
 section: 'OVH Features'
 ---
 
-**Last updated 16th August 2018**
+**Last updated 4th February 2019**
 
 ## Objective
 
@@ -17,7 +17,7 @@ With our [Private Cloud solutions](https://www.ovh.co.uk/private-cloud/){.extern
 ## Requirements
 
 - a [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
-- [the "Add resources"](https://docs.ovh.com/gb/en/private-cloud/changing-user-rights/){.external} right for the datacentre concerned (this right is granted via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external})
+- [the "Add resources"](https://docs.ovh.com/fr/private-cloud/changer-les-droits-d-un-utilisateur/){.external} (French guide, English pending) right for the datacentre concerned (this right is granted via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external})
 - access to the vSphere client
 
 
