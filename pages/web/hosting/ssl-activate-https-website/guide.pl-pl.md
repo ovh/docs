@@ -145,4 +145,4 @@ Jeśli Twoja strona wyświetla się poprawnie i nie pojawia się żadne ostrzeż
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
+Przyłącz się do społeczności naszych użytkowników na  stronie <https://community.ovh.com/en/>
