@@ -43,6 +43,7 @@ First please check the table below to know which field are reserved and what is 
 |line|Number|We consider this value to be a standard in the logs messages so we force it being a Number.|
 |X-OVH-TOKEN|String|Mandatory on direct access, don't try to forge strange ones, you will be banished.|
 |X-OVH-CONTENT-SIZE|Number|Size in bytes of the current log.|
+|X-OVH-TO-FREEZE|String|If given, will build another archive containing only its value (separated by a line break).|
 
 
 ### Can I go deeper?
