@@ -20,6 +20,7 @@ To do this, go to the URL provided in the email sent after your Cloud Desktop in
 
 
 ## Access via the VMware Horizon View client.
+
 **To get access to a wider range of features, you can install a software client.**
 
 This software client is available to download here:
