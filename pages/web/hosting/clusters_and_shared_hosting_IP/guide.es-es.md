@@ -1,8 +1,8 @@
 ---
-title: Direcciones IP de los clusters y alojamientos web
+title: 'Direcciones IP de los clusters y alojamientos web'
 slug: lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web
 legacy_guide_number: 2328
-section: Configuración del alojamiento
+section: 'Configuración del alojamiento'
 ---
 
 Esta guía recoge todas las direcciones IP de los alojamientos web de OVH. Dichas direcciones le serán útiles para, por ejemplo, saber qué dirección IP debe introducir en sus zonas DNS en función de:
@@ -24,8 +24,8 @@ Esta guía recoge todas las direcciones IP de los alojamientos web de OVH. Dicha
 ### Cluster 002
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|213.186.33.2|2001:41d0:1:1b00:213:186:33:2|
 |Irlanda|IE|188.165.7.2|2001:41d0:1:1b00:188:165:7:2|
 |Portugal|PT|94.23.79.2|2001:41d0:1:1b00:94:23:79:2|
@@ -64,8 +64,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 003
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|213.186.33.4|001:41d0:1:1b00:213:186:33:4|
 |Irlanda|IE|188.165.7.4|2001:41d0:1:1b00:188:165:7:4|
 |Portugal|PT|94.23.79.4|2001:41d0:1:1b00:94:23:79:4|
@@ -104,8 +104,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 005
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|213.186.33.16|2001:41d0:1:1b00:213:186:33:16|
 |Irlanda|IE|188.165.7.16|2001:41d0:1:1b00:188:165:7:16|
 |Portugal|PT|94.23.79.16|2001:41d0:1:1b00:94:23:79:16|
@@ -144,8 +144,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 006
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|213.186.33.17|2001:41d0:1:1b00:213:186:33:17|
 |Irlanda|IE|188.165.7.17|2001:41d0:1:1b00:188:165:7:17|
 |Portugal|PT|94.23.79.17|2001:41d0:1:1b00:94:23:79:17|
@@ -184,8 +184,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 007
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|213.186.33.18|2001:41d0:1:1b00:213:186:33:18|
 |Irlanda|IE|188.165.7.18|2001:41d0:1:1b00:188:165:7:18|
 |Portugal|PT|94.23.79.18|2001:41d0:1:1b00:94:23:79:18|
@@ -224,8 +224,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 010
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|213.186.33.19|2001:41d0:1:1b00:213:186:33:19|
 |Irlanda|IE|188.165.7.19|2001:41d0:1:1b00:188:165:7:19|
 |Portugal|PT|94.23.79.19|2001:41d0:1:1b00:94:23:79:19|
@@ -264,8 +264,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 011
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|213.186.33.40|2001:41d0:1:1b00:213:186:33:40|
 |Irlanda|IE|188.165.7.40|2001:41d0:1:1b00:188:165:7:40|
 |Portugal|PT|94.23.79.40|2001:41d0:1:1b00:94:23:79:40|
@@ -304,8 +304,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 012
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|213.186.33.48|2001:41d0:1:1b00:213:186:33:48|
 |Irlanda|IE|188.165.7.48|2001:41d0:1:1b00:188:165:7:48|
 |Portugal|PT|94.23.79.48|2001:41d0:1:1b00:94:23:79:48|
@@ -344,8 +344,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 013
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|213.186.33.24|2001:41d0:1:1b00:213:186:33:24|
 |Irlanda|IE|188.165.7.24|2001:41d0:1:1b00:188:165:7:24|
 |Portugal|PT|94.23.79.24|2001:41d0:1:1b00:94:23:79:24|
@@ -384,8 +384,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 014
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|213.186.33.87|2001:41d0:1:1b00:213:186:33:87|
 |Irlanda|IE|188.165.7.87|2001:41d0:1:1b00:188:165:7:87|
 |Portugal|PT|94.23.79.87|2001:41d0:1:1b00:94:23:79:87|
@@ -424,8 +424,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 015
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|213.186.33.3|2001:41d0:1:1b00:213:186:33:3|
 |Irlanda|IE|188.165.7.3|2001:41d0:1:1b00:188:165:7:3|
 |Portugal|PT|94.23.79.3|2001:41d0:1:1b00:94:23:79:3|
@@ -464,8 +464,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 017
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|213.186.33.50|2001:41d0:1:1b00:213:186:33:50|
 |Irlanda|IE|188.165.7.50|2001:41d0:1:1b00:188:165:7:50|
 |Portugal|PT|94.23.79.50|2001:41d0:1:1b00:94:23:79:50|
@@ -504,8 +504,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 020
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|46.105.57.169|2001:41d0:301::20|
 |Irlanda|IE|51.254.78.227|2001:41d0:301:3::20|
 |Portugal|PT|5.135.59.60|2001:41d0:301:2::20|
@@ -537,8 +537,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 021
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|188.165.53.185|2001:41d0:301::21|
 |Irlanda|IE|188.165.6.20|2001:41d0:301:6::21|
 |Portugal|PT|94.23.75.235|2001:41d0:301:2::21|
@@ -570,8 +570,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 023
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código de país|IPv4|IPv6|
+|----|----|----|----|
 |Francia|FR|164.132.235.17|2001:41d0:301::23|
 |Irlanda|IE|79.137.112.24|2001:41d0:301:3::23|
 |Portugal|PT|5.135.68.66|2001:41d0:301:2::23|
@@ -598,3 +598,132 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ```bash
 91.134.248.235
 ```
+
+### Cluster 024
+
+A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
+
+|País|Código de país|IPv4|IPv6|
+|---|---|----|---|
+|Francia|FR|188.165.61.82|2001:41d0:301::24|
+|Irlanda|IE|188.165.6.81|2001:41d0:301:3::24|
+|Portugal|PT|5.135.68.67|2001:41d0:301:2::24|
+|Reino Unido|UK|178.32.59.194|2001:41d0:301:12::24|
+|Italia|IT|178.32.140.172|2001:41d0:301:11::24|
+|España|ES|51.255.132.41|2001:41d0:301:4::24|
+|Polonia|PL|94.23.88.105|2001:41d0:301:5::24|
+|República Checa|CZ|94.23.169.75|2001:41d0:301:6::24|
+|Países Bajos|NL|94.23.149.14|2001:41d0:301:7::24|
+|Finlandia|FI|188.165.138.2|2001:41d0:301:8::24|
+|Lituania|LT|164.132.150.73|2001:41d0:301:9::24|
+|Alemania|DE|178.33.38.88|2001:41d0:301:1::24|
+
+Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+213.186.33.187
+```
+
+Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
+
+
+```bash
+91.134.248.230
+```
+
+### Cluster 025
+
+A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
+
+|País|Código de país|IPv4|IPv6|
+|---|---|----|---|
+|Francia|FR|188.165.59.25|2001:41d0:301::25|
+|Irlanda|IE|188.165.6.82|2001:41d0:301:3::25|
+|Portugal|PT|213.251.139.148|2001:41d0:301:2::25|
+|Reino Unido|UK|178.32.52.5|2001:41d0:301:12::2|
+|Italia|IT|178.32.138.102|2001:41d0:301:11::25|
+|España|ES|188.165.130.4|2001:41d0:301:4::25|
+|Polonia|PL|188.165.16.78|2001:41d0:301:5::25|
+|República Checa|CZ|51.254.146.179|2001:41d0:301:6::25|
+|Países Bajos|NL|51.254.154.69|2001:41d0:301:7::25|
+|Finlandia|FI|178.32.129.72|2001:41d0:301:8::25|
+|Lituania|LT|188.165.26.160|2001:41d0:301:9::25|
+|Alemania|DE|178.33.34.108|2001:41d0:301:1::25|
+
+Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+145.239.37.172
+```
+
+Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
+
+
+```bash
+91.134.248.215
+```
+
+### Cluster 026
+
+A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
+
+|País|Código de país|IPv4|IPv6|
+|---|---|----|---|
+|Francia|FR|87.98.154.146|2001:41d0:301::26|
+|Irlanda|IE|188.165.4.35|2001:41d0:301:3::26|
+|Portugal|PT|51.254.64.107|2001:41d0:301:2::26|
+|Reino Unido|UK|91.134.201.112|2001:41d0:301:12::26|
+|Italia|IT|94.23.66.212|2001:41d0:301:11::26|
+|España|ES|188.165.129.145|2001:41d0:301:4::26|
+|Polonia|PL|178.32.205.96|2001:41d0:301:5::26|
+|República Checa|CZ|137.74.234.211|2001:41d0:301:6::26|
+|Países Bajos|NL|137.74.180.117|2001:41d0:301:7::26|
+|Finlanda|FI|137.74.48.119|2001:41d0:301:8::26|
+|Lituania|LT|188.165.29.126|2001:41d0:301:9::26|
+|Alemania|DE|94.23.160.29|2001:41d0:301:1::26|
+
+Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+188.165.51.93
+```
+
+Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
+
+
+```bash
+91.134.248.211
+```
+
+### Cluster 027
+
+A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
+
+|País|Código de país|IPv4|IPv6|
+|---|---|----|---|
+|Francia|FR|54.36.91.62|2001:41d0:301::27|
+|Irlanda|IE|54.36.31.145|2001:41d0:301:3::27|
+|Portugal|PT|193.70.24.82|2001:41d0:301:2::27|
+|Reino Unido|UK|54.36.203.165|2001:41d0:301:12::27|
+|Italia|IT|178.32.138.212|2001:41d0:301:11::27|
+|España|ES|213.32.37.233|2001:41d0:301:4::27|
+|Polonia|PL|178.32.203.125|2001:41d0:301:5::27|
+|República Checa|CZ|54.37.182.230|2001:41d0:301:6::27|
+|Países Bajos|NL|54.36.41.83|2001:41d0:301:7::27|
+|Finlandia|FI|188.165.140.194|2001:41d0:301:8::27|
+|Lituania|LT|51.255.97.18|2001:41d0:301:9::27|
+|Alemania|DE|91.134.179.251|2001:41d0:301:1::27|
+
+Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+145.239.51.129
+```
+
+Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
+
+
+```bash
+54.37.121.239
+```
+

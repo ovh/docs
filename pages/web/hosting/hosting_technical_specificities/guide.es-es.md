@@ -1,11 +1,10 @@
 ---
-title: Web hosting Particularidades técnicas de los alojamientos compartidos
-excerpt: Esta guía ofrece toda la información relativa a las particularidades técnicas de los alojamientos compartidos
+title: 'Particularidades técnicas de los alojamientos compartidos'
 slug: web_hosting_particularidades_tecnicas_de_los_alojamientos_compartidos
+excerpt: 'Esta guía ofrece toda la información relativa a las particularidades técnicas de los alojamientos compartidos'
 legacy_guide_number: g1463
-section: Configuración del alojamiento
+section: 'Configuración del alojamiento'
 ---
-
 
 ## Cliente FTP: modo pasivo
 Puede configurar su cliente de FTP como se indica a continuación:
@@ -60,14 +59,13 @@ Con el objetivo de acelerar las respuestas PHP, hemos adaptado PHP-FPM a nuestra
 
 En nuestros laboratorios de prueba obtenemos un rendimiento hasta 7 veces más rápido que el antiguo mecanismo.
 
-Para más información sobre el funcionamiento de PHP-FPM, consulte esta guía:
-
-- []({legacy}1175)
+Para más información sobre el funcionamiento de PHP-FPM, consulte la guía [Activar la optimización de PHP en un alojamiento compartido OVH](https://docs.ovh.com/es/hosting/activar_la_optimizacion_de_php_en_un_alojamiento_compartido_ovh/){.external}.
 
 
 Al utilizar PHP-FPM, se modifican algunas variables de servidor: 
 
 |Variable|Sin PHP-FPM|Con PHP-FPM|
+|----|----|----|
 |max_execution_time|120s|300s|
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
@@ -83,14 +81,11 @@ Tras una actualización de seguridad en el servidor realizada el 4 de junio de 2
 
 Utilizando un script como el siguiente: 
 
-
 ```
 <?php
 echo $_SERVER['SCRIPT_FILENAME'];
 ?>
 ```
-
-
 
 - La ruta que devolvía anteriormente era de tipo: /homez.XXX/usuario/nombre-de-la-carpeta/test.php
 
@@ -130,7 +125,6 @@ Tras una actualización de seguridad realizada el 4 de junio de 2014 en los serv
 
 Es posible que aparezca el siguiente error de PHP: 
 
-
 ```
 Warning: ftp_put() [function.ftp-put]: bind() failed: Permission denied (13)
 ```
@@ -139,7 +133,6 @@ Warning: ftp_put() [function.ftp-put]: bind() failed: Permission denied (13)
 La función bind() ya no es posible. 
 
 Para evitarlo, solo hay que activar el modo pasivo con el siguiente código de PHP:
-
 
 ```
 $conn_id = ftp_connect($ftp_server);
@@ -156,6 +149,7 @@ El FTP activo ya no es posible, por lo que deberá utilizar el modo pasivo.
 Información sobre las librerías disponibles:
 
 |Librería|Disponibilidad|
+|----|----|
 |Django Python|no activado|
 |FFmpeg|no activado|
 |memcached|no activado|
@@ -175,8 +169,6 @@ Por motivos de seguridad, al utilizar PHP-FPM se desactivan las siguientes opcio
 
 - register_globals
 - magic_quotes_gpc
-
-
 
 
 ## Ejecutar un script de PHP por SSH
