@@ -1,348 +1,150 @@
 ---
-title: Colocar o meu website online
+title: 'Publicar um site num alojamento web'
+excerpt: 'Saiba como publicar um site no seu alojamento web da OVH'
+section: Introdução
 slug: partilhado_colocar_o_meu_website_online
 legacy_guide_number: g1374
 ---
 
+**Última atualização: 07/02/2019**
 
-## Generalidades
-Um website é funcional e é apresentado corretamente se for colocado na pasta correta.
-Considerado como norma standard, deve colocar os ficheiros do seu website na pasta "www" do seu alojamento partilhado, para que o mesmo seja apresentado.
-Para tal, é necessário que passe por uma etapa de transferência de ficheiros para o seu alojamento. É necessário utilizar então um software que utilize o protocolo de ficheiros (File Transfert Protocol).
-Utilizaremos o [FileZilla](http://filezilla-project.org/), uma vez que é um software gratuito.
+## Sumário
 
+Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja online, quer seja para partilhar uma paixão ou promover a sua atividade profissional, o seu [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} permite-lhe alojar o site que quiser, na medida em que seja compatível com a [configuração das nossas infraestruturas](http://pro.ovh.net/infos/){.external}.
 
-## Recuperar os meus identificadores FTP
+**Saiba como publicar um site no alojamento web da OVH.**
 
-### No e-mail de instalação do alojamento
-Aquando da subscrição da sua oferta de alojamento partilhado OVH recebe um e-mail após a instalação dos seus serviços.
-Esse e-mail conterá, entre outros, os identificadores FTP necessários.
-Em função da sua oferta e do domínio associado ao seu alojamento, o assunto do e-mail será algo do género:
+## Requisitos
 
+- Ter um serviço de [alojamento web OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Ter recebido o e-mail com a confirmação da instalação do alojamento web.
+- Ter um [domínio](https://www.ovh.pt/dominios/){.external} (endereço que permite identificar e aceder ao seu site).
+- Estar ligado à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-```
-/* caso de uma oferta Perso encomendada para o domínio "oseudominio.pt" */
+## Instruções
 
-[OVH-perso] oseudominio.pt instalado
-```
+### 1 - Definir o projeto
 
+É primordial que tenha uma visão clara do seu objetivo para conduzir o projeto a bom porto. O que é que pretende fazer com o seu site? Como quer publicá-lo? Tem ao seu dispor várias possibilidades para concretizar o seu projeto num alojamento web da OVH.
 
-Contenu :
+- **Usar um site chave-na-mão graças aos módulos 1 clique da OVH**: esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar que poderá personalizar (tema, textos, etc.). A OVH disponibiliza quatro com os módulos 1 clique, a descobrir na página [“Criar um site com os módulos 1 clique”](https://www.ovh.pt/alojamento-partilhado/website/){.external}.
 
+- **Usar um site chave-na-mão de instalação manual**: esta solução permite beneficiar de uma estrutura de site pronta a ser usada e personalizável (tema, textos, etc.), que deverá instalar no seu alojamento web da OVH.
 
-```
-[...]
-OS SEUS CÓDIGOS FTP
--------------
+- **Criar o seu próprio site**: esta solução é mais técnica e requer competências de programação, mas oferece a possibilidade de criar um projeto à medida.
 
-Estes códigos permitem-lhe colocar o seu website online
-(Atenção: Os seus dados deverão ser colocados na pasta www)
+- **Migrar um site já existente para a OVH**: esta solução pode revelar-se sensível se não desejar que se interrompa o acesso ao site. Se precisar de ajuda para o seu site, pode consultar o manual [“Como migrar um site e e-mails para a OVH?”](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external}.
 
-Servidor ftp: ftp.votre-domaine.tld ou ftp.cluster0XX.ovh.net
-Login ou utilizador: loginftp
-Password: mDpFtP
 
-[...]
-```
+Depois de ter avaliado as diferentes possibilidades descritas acima, pode escolher entre duas opções:
 
+- **Pretende utilizar os módulos 1 clique**: siga as instruções do manual [”Como instalar um CMS para criar um site”](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}.
 
-É este login e password que necessita para se ligar.
+- **Não pretende utilizar os módulos 1 clique**: terá de efetuar manualmente a instalação do site no alojamento. As informações presentes neste manual poderão ser úteis. No entanto, se precisar de ajuda, pode contactar um webmaster.
+ 
+> [!warning]
+>
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVH disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+> 
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção “Quer saber mais?” deste manual.
+>
 
-Se depois da instalação a password FTP for modificada, recuperar a password neste e-mail não lhe servirá de nada.
-Falamos então de quando a modifica no seu Espaço Cliente. O login, esse é imutável, conserve-o.
+### 2 - Colocar os ficheiros do site no espaço de armazenamento
 
+Publicar um site manualmente num alojamento exige várias operações. Algumas delas podem ser facultativas, consoante o site que instalar, e podem existir várias formas de as realizar. No entanto, na maioria dos projetos atuais, podemos distinguir duas grandes etapas ao publicar um site. A primeira delas consiste em descarregar os ficheiros do site para o espaço de armazenamento.
 
-### No Espaço Cliente
-No espaço cliente
-Após efetuar o login no seu Espaço Cliente, selecione o domínio associado ao alojamento na secção "Alojamento".
-Clique no separador "FTP".
-Clique na roda dentada à direita do seu login e depois clique em "alterar a password".
-O login associado é apresentado no ecrã após "Login FTP:".
-Introduza a nova password que deseja, confirme-a e clique em "Validar". Essa password deve ser composta entre 8 e 12 caracteres alfanuméricos.
+Para isso, deve realizar as seguintes ações:
 
-Deverá aguardar alguns minutos para que a password seja tomada em conta pelo sistema.
+#### 2.1. Obter os ficheiros do site
 
+Certifique-se de que possui os ficheiros do site que deseja publicar. Se estiver a migrar um site já existente, obtenha os ficheiros junto do seu prestador anterior.
 
-### Utilizar FileZilla
+#### 2.2. Aceder ao espaço de armazenamento
 
-Está à sua disposição um guia relativo à utilização do FileZilla:[]({legacy}1380)
+Poderá aceder ao espaço de armazenamento através de um utilizador FTP, da palavra-passe e do endereço do servidor. Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojamento. Caso tenha perdido a palavra-passe, consulte o manual [“Alterar a palavra-passe de um utilizador FTP”](http://docs.uxci.ovh/pt-pt/web/hosting/alterar-palavra-passe-utilizador-ftp/){.external}.
 
-Os elementos que deverá possuir são:
+Para obter o endereço do servidor ou o utilizador para aceder ao espaço de armazenamento, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clique em `Alojamentos`{.action} na barra à esquerda. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}.
 
-- os ficheiros do seu website
-- os ficheiros de backup da sua base de dados (se necessário)
+![siteinstallation](images/get-website-online-step1.png){.thumbnail}
 
-Os seus identificadores FTP:
+Quando tiver obtido todos os elementos, o acesso ao espaço de armazenamento pode ser realizado de três formas:
 
-- host: ftp.seu-dominio.tld ou ftp.cluster0XX.ovh.net
-- login: o seu login FTP
-- password: a password associada (cf parágrafos anteriores)
-- porta: 21 (para ligação SSH: 22 - a partir da oferta Pro)
+- **Utilizar o Explorador FTP da OVH**: permite-lhe aceder ao espaço de armazenamento a partir do navegador. Para o utilizar, ainda no separador `FTP - SSH`{.action}, clique no botão `Explorador FTP`{.action}.
 
+- **Utilizar um programa compatível com o protocolo FTP**: terá de instalar no seu computador um programa compatível (como o FileZilla, por exemplo). Sugerimos que contacte o editor do programa instalado caso deseje obter ajuda na sua utilização.
 
+- **Utilizar um acesso SSH**: terá de executar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimentos técnicos avançados. Por outro lado, nem todos os planos de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} são compatíveis.
 
-![](images/img_1858.jpg){.thumbnail}
+#### 2.3. Carregar os ficheiros para o espaço de armazenamento
 
+Depois de aceder ao espaço de armazenamento, apenas precisará de publicar os ficheiros no site. **Preste especial atenção ao repertório no qual vai colocar os ficheiros.** Num caso de utilização clássica, o site deve ser carregado para a pasta “www”. No entanto, se utiliza o seu alojamento web para alojar vários sites, deverá utilizar a opção **Multi-site**.
 
-## Recuperar os meus identificadores FTP
+Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site`{.action} a partir da Área de Cliente OVH. Aparecerá uma tabela onde poderá consultar a `Pasta raiz`{.action} do domínio correspondente. Esse é o diretório no qual deve colocar os ficheiros do site.
 
-### Através da Área de Cliente
-A partir da sua área de cliente, tem a possibilidade de restaurar automaticamente o seu espaço FTP para um "estado anterior".
+É possível que encontre no espaço de armazenamento um ficheiro intitulado “index.html”. Este pode ter sido criado pela OVH durante a instalação do alojamento web para exibir uma página de forma padrão no seu site. Se for esse o caso, não se esqueça de o eliminar quando publicar os seus ficheiros.
 
-Para o fazer, selecione o nome de domínio que tem um pacote de alojamento partilhado associado na secção Alojamento
+![siteinstallation](images/get-website-online-step2.png){.thumbnail}
 
-Aceda a "FTP"  e depois "Restaurar o meu espaço Web".
+### 3 - Associar o site a uma base de dados
 
-![](images/img_2690.jpg){.thumbnail}
-De seguida, terá a possibilidade de escolher a data para a restauração desejada.
+> [!primary]
+>
+> Se o seu site não precisar de estar associado a uma base de dados, esta parte é opcional.
+>
 
-Atenção, os dados restaurados irão substituir os dados atuais no seu espaço de alojamento.
+Hoje em dia, praticamente todos os sistemas de gestão de conteúdos (CMS), como o WordPress e o Joomla!, usam uma base de dados para armazenar elementos ditos dinâmicos, como os comentários ou os artigos. Portanto, é indispensável uma ligação entre os ficheiros do site e a base de dados, de forma a que o site possa funcionar corretamente. Nesse sentido, existe um ficheiro de configuração que dispõe das informações da base e que permite essa ligação.
 
-Clique em "Seguinte" para confirmar a operação; algumas horas serão necessárias para a restauração dos ficheiros.
+Em função do site utilizado, esta associação deve ser realizada manualmente ou através de uma interface de gestão própria do site. São precisas diferentes sub-etapas, algumas das quais são facultativas.
 
+#### 3.1. Obter a base de dados existente (facultativo)
 
-- A totalidade do espaço FTP será restaurada com este sistema contrariamente ao que ocorre com um backup através de Filezilla, por exemplo, com o qual pode ser mais seletivo em relação aos ficheiros
+Se estiver a migrar um site já existente, obtenha a base de dados junto do antigo fornecedor de alojamento. Se se trata de um novo site, prossiga para a etapa seguinte.
 
+#### 3.2. Criar a base de dados na OVH (facultativo)
 
+Se já dispõe de uma base de dados que pretende utilizar (associada a um plano de [alojamento web OVH](https://www.ovh.pt/alojamento-partilhado/){.external} ou a uma solução [SQL Privado](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml){.external} ou [Cloud DB](https://www.ovh.com/pt/cloud/cloud-databases/){.external}), obtenha o nome de utilizador, a respetiva palavra-passe, o nome da base de dados e o endereço do servidor. Passe para a etapa seguinte.
 
-### Através de FileZilla
-Está disponível um guia que diz respeito à recuperação de um backup inteiro ou de um ficheiro especifico via FTP através do software FileZilla: []({legacy}1593)
+Se pretende criar uma nova base de dados na OVH, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clique em `Alojamentos`{.action} na barra à esquerda. De seguida, selecione o nome do alojamento correspondente e clique no separador `Base de dados`{.action}.
 
-## base de dados
+Clique em `Criar uma base de dados`{.action} ou, se este botão não aparecer, em `Ações`{.action} e `Criar uma base de dados`{.action}. Siga as indicações que surgirem.
 
-### Generalidades
-Uma base de dados permite armazenar as informações relacionadas com o seu website ou as suas aplicações.
+![siteinstallation](images/get-website-online-step3.png){.thumbnail}
 
-Ela permite o armazenamento de diferentes tipos de dados, o conteúdo do seu site, os urls das suas páginas, as informações dos seus visitantes.
 
-Diferentes motores de bases de dados estão acessíveis nas ofertas partilhadas da OVH: MySQL, PostgreSQL.
+#### 3.3. Importar a base de dados existente (facultativo)
 
+Se estiver a migrar um site, importe a base de dados existente para a que acabou de criar. Se se trata de um novo site, prossiga para a etapa seguinte.
 
-### Criar
-Aquando da instalação da sua oferta de alojamento a(s) base(s) de dados incluída(s) não são automaticamente instaladas.
-Não recebe então nenhuma informação por e-mail.
-Deve, num primeiro tempo, criar a(s) sua(s) base(s) de dados.
-Ligue-se ao seu Espaço Cliente, selecione o alojamento relativo na secção "Alojamento".
+A importação pode ser feita de várias formas. A OVH sugere-lhe fazê-lo a partir da Área de Cliente. Quando tiver acedido à lista das bases de dados criadas no serviço, clique nos três pontos à direita da base de dados recém-criada e, a seguir, em `Importar ficheiro`{.action}. Siga as indicações que surgirem.
 
-Depois, no menu "SQL" clique em "Criar uma base de dados"
+![siteinstallation](images/get-website-online-step4.png){.thumbnail}
 
-![](images/img_2743.jpg){.thumbnail}
-Selecione o motor da base de dados: "Mysql ou PostgreSQL."
-Selecione o tipo de base de dados e depois clique em "Seguinte"
+#### 3.4. Associar o site à base de dados
 
-Ser-lhe-á solicitado que introduza um nome de utilizador e uma password.
+Quando a base de dados estiver disponível e os ficheiros tiverem sido carregados para o espaço de armazenamento, já só precisa de os associar. Certifique-se de que possui a informação necessária para se ligar à base de dados: o nome de utilizador, a respetiva palavra-passe, o nome da base de dados e o endereço do servidor.
 
-Receberá depois um e-mail, minutos mais tarde, que conterá os identificadores da base de dados-
+Criar esta associação depende do site a ser publicado. A associação é inerente à configuração do site, e não à OVH. Portanto, recomendamos que contacte o editor do seu site ou um profissional, como um fornecedor especializado, caso necessite de ajuda para realizar estas operações.
 
-![](images/img_2694.jpg){.thumbnail}
+### 4 - Aceder ao site
 
+Uma vez os ficheiros descarregados para o espaço de armazenamento e a base de dados associada a este último (se o site utilizar alguma), já pode aceder ao seu site. Este último deverá apresentar-se corretamente no seu navegador.
 
-### Recuperar os meus identificadores SQL
+Se constatar algum problema, sugerimos que:
 
-- Atenção, a(s) sua(s) base(s) de dados incluída(s) não são automaticamente criadas aquando da instalação do seu alojamento.
+- **Verifique a configuração do domínio**: é possível que a configuração DNS do domínio não esteja a permitir que este último apresente o site que acabou de descarregar para o alojamento web da OVH. Certifique-se de que o registo A atualmente configurado na zona DNS do domínio corresponde ao endereço IP do seu alojamento web da OVH.
 
+- **Confirme se não há nenhum ficheiro em falta**: é possível que, durante o carregamento dos ficheiros para o alojamento web OVH, se tenha esquecido de algum ou que tenha ocorrido um erro. Tenha cuidado durante as operações que realizar para não desfazer a associação entre os ficheiros do site e a base de dados (se utilizar alguma).
 
-Receberá, minutos mais tarde de ter efetuado o processo de criação da base de dados, um e-mail que conterá os identificadores da base de dados-
-Poderá consultar este e-mail a partir do seu Espaço Cliente. Após estar ligado, clique no menu A minha conta (canto superior direito) e depois Emails recebidos.
+- **Verifique se o código do site não contém erros**: esta verificação é seguramente a mais técnica, mas é possível que os ficheiros que carregou tenham erros e não permitam que o servidor apresente corretamente uma parte ou a integralidade do seu site.
 
-![](images/img_2747.jpg){.thumbnail}
-O assunto do e-mail será algo do género:
+Relembramos que, se encontrar dificuldades durante a publicação do site, será melhor recorrer a um fornecedor especializado e/ou contactar o editor do serviço (do CMS instalado, por exemplo).
 
+## Quer saber mais?
 
-```
-[MySQL] A base MySQL Nome_da_BDD
-```
+[Como migrar um site e e-mails para a OVH?](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external}
 
+[Como instalar um CMS para criar um site](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}
 
-Contenu :
+[Alterar a palavra-passe de um utilizador FTP](http://docs.uxci.ovh/pt-pt/web/hosting/alterar-palavra-passe-utilizador-ftp/){.external}
 
-
-```
-[...]
-
-A sua base MySQL foi instalada no nosso servidor.
-
-Veja os detalhes técnicos:
------------------------------
-
-MySQL:
-Servidor: mysql51-66.pro
-Utilizador: Nome_da_BDD
-Nome da base: Nom_da_BDD
-Password: ************
-
-[...]
-```
-
-
-É possível que modifique a password da sua base de dados diretamente a partir do seu espaço cliente.
-
-
-- Atenção: modificar a password da base de dados não é trivial. Poderá levar a uma paragem do site ou dos serviços que utilizam essa base de dados.
-
-
-Se desejar modificar a password da base de dados deverá aceder ao espaço cliente, seleciona o seu nome de domínio e acede a: "Partilhado" -> "Alojamento" -> "Gestão SQL" -> "Password".
-
-Terá a possibilidade de atualizar a password da sua base de dados.
-
-Deverá atualizar o ficheiro de configuração do seu site para que se conecte à base de dados com a nova password, caso exista um site no seu alojamento que utilize essa base de dados aquando da modificação.
-
-
-### Ligação ao PhpMyAdmin
-Deverá num primeiro tempo aceder à [interface do PhpMyAdmin](https://phpmyadmin.ovh.net/).
-
-Introduza os campos pedidos:
-
-
-- Servidor: utilizador.mysql.db (o utilizador encontra-o no e-mail de criação da base de dados).
-
-- Utilizador: encontra-o no e-mail de criação da base de dados.
-
-- Password: a password da sua base de dados.
-
-- Versão: poderá escolher a versão de ligação à base de dados, se a base de dados atual ou os backups de 1 ou 7 dias.
-
-
-Introduza os parâmetros pedidos e clique em "Executar" para se ligar.
-
-![](images/img_1960.jpg){.thumbnail}
-
-- Para as bases de dados do tipo MYSQL 4 antigas deve utilizar o link que consulta na interface de ligação.
-
-
-
-
-### Exportar
-Como exportar a minha base de dados? Quais são os diferentes métodos disponível para realizar o backup da minha base de dados?
-
-Está disponível um guia que diz respeito à exportação de uma base de dados:[]({legacy}1394)
-
-![](images/img_1932.jpg){.thumbnail}
-
-
-### Importar
-Como importar o backup da minha base de dados MySQL? Quais são os diferentes métodos para o efetuar?
-
-Está disponível um guia que diz respeito à importação de uma base de dados:[]({legacy}1393)
-
-![](images/img_1933.jpg){.thumbnail}
-
-
-### Reparar - Otimizar - Analisar
-É-lhe possível reparar, otimizar ou analisar as tabelas da sua base de dados.
-
-Para tal deverá ligar-se à base de dados a partir da [interface do PhpMyAdmin](https://phpmyadmin.ovh.net/).
-
-Seleciona de seguida a tabela para a qual deseja realizar uma dessas operações.
-
-Clique de seguida em "Operações" no topo superior direito.
-
-Poderá, no separador de manutenção da tabela, realizar as diferentes operações.
-
-![](images/img_1961.jpg){.thumbnail}
-
-
-### Utilização do SQL Privado
-Deseja saber como utilizar o servidor SQL Privado? Deseja saber como pode importar ou exportar os seus dados?
-
-Está disponível um guia que diz respeito à utilização do servidor SQL Privado :[Guia de utilização do SQL Privado](http://guides.ovh.com/GuideSqlPrive)
-
-![](images/img_1866.jpg){.thumbnail}
-
-
-## Guia de instalação
-Têm necessidade de criar o seu site rapidamente sem que tenha de ter conhecimentos técnicos sobre criação de sites?
-
-Está disponível um guia que diz respeito à instalação de módulos em 1 clique na OVH:[]({legacy}1402)
-
-![](images/img_1930.jpg){.thumbnail}
-
-
-### Nova instalação de WordPress
-
-O WordPress é um sistema de gestão de conteúdos (CMS) que permite criar e gerir facilmente um website ou um blog.
-Gratuito e livre, o WordPress pode ser personalizado graças a numerosos temas e extensões.
-
-
-- Blog & Site
-
-Está disponível um guia que diz respeito à instalação manual do CMS WordPress:[]({legacy}1375)
-
-
-![](images/img_1873.jpg){.thumbnail}
-
-
-### Nova instalação do Joomla
-
-O Joomla é um sistema de gestão de conteúdos (CMS).
-Gratuito e livre, o Joomla pode ser personalizado graças a numerosos temas e extensões.
-O CMS é um software web que permite gerir um website online ou uma Intranet dinâmica com toda a simplicidade.
-
-
-- Site Web
-
-Está disponível um guia que diz respeito à instalação manual do CMS Joomla:[]({legacy}1375)
-
-
-![](images/img_1874.jpg){.thumbnail}
-
-
-### Nova instalação do PrestaShop
-
-O PrestaShop é uma aplicação Web open source que permite criar uma loja online com o objetivo de realizar comércio eletrónico.
-
-
-- Loja online
-
-Está disponível um guia que diz respeito à instalação manual do CMS PrestaShop:[]({legacy}1375)
-
-
-![](images/img_1862.jpg){.thumbnail}
-
-
-## Ficheiro .ovhconfig
-Pretende modificar a versão do PHP do seu alojamento partilhado? Ou ativar o phpfm?
-
-Está disponível um guia que diz respeito à utilização e configuração do ficheiro .ovhconfig :
-
-
-- []({legacy}1175)
-
-- []({legacy}1207)
-
-
-
-![](images/img_1867.jpg){.thumbnail}
-
-
-## "Libraries" disponíveis nos alojamentos partilhados
-Informações sobre as "librairies" disponíveis:
-
-|"Librairie"|Disponibilidade|
-|---|---|
-|ffmepg|não ativado|
-|GD|ativado|
-|imagemagik|ativado|
-|zend (opcache)|ativado|
-|PDO|ativado|
-|Zip - Gzip|ativado|
-
-
-
-![](images/img_1867.jpg){.thumbnail}
-Atenção: através da utilização do PHP-FPM, e por razões de segurança, as seguintes opções estão desativadas (depreciadas pelo PHP):
-
-
-- register_globals
-- magic_quotes_gpc
-
-
-
-
-## Otimizar as performances do meu website
-Deseja diagnosticar a lentidão do seu website? Ou deseja simplemente melhorar as performances do seu website?
-
-Está disponível um guia que diz respeito ao diagnóstico das lentidões do seu site e a otimização dessas performances:[]({legacy}1396)
-
-![](images/img_1865.jpg){.thumbnail}
-
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
