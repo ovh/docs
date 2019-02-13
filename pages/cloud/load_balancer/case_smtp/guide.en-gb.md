@@ -29,7 +29,6 @@ In this guide, we will configure a basic TCP load balancing service, for one or 
 > This guide will take you through the steps required. Depending on the way you have designed your architecture, some configurations may vary.
 > 
 
-If you have not done so already, we recommend reading [this general introduction](use_presentation/guide.gb-en.md){.ref} to the OVH Load Balancer service before you get started.
 
 As a reminder, each protocol (HTTP, TCP and UDP) in the OVH Load Balancer service has its own associated front-ends, farms and servers.
 
@@ -42,8 +41,6 @@ In the Sunrise Control Panel, you will see the features detailed below:
 
 ![OVH Load Balancer service](images/iplb_service.png){.thumbnail}
 
-
-For more information on the Sunrise Control Panel’s features, you can refer to [this guide](use_sunrise/guide.gb-en.md){.ref}.
 
 Via the OVH API, in the section:
 

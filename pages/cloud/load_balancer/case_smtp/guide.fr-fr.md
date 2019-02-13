@@ -1,10 +1,9 @@
 ---
-title: Configurer SMTP sur un service Load Balancer
+title: 'Configurer SMTP sur un service Load Balancer'
 slug: case-smtp
-excerpt: Cas pratique SMTP
-section: Cas d'usage
+excerpt: 'Cas pratique SMTP'
+section: 'Cas d''usage'
 ---
-
 
 ## Introduction
 Ce guide a pour but de vous aider à configurer un service OVH Load Balancer OVH pour répartir la charge sur plusieurs serveurs répondant convenablement en SMTP.
@@ -32,7 +31,6 @@ Ce guide a pour but de vous aider à configurer un service OVH Load Balancer OVH
 > Dépendant de vos choix d'architecture, certaines configurations peuvent différer.
 > 
 
-Avant de vous lancer, si vous ne l'avez pas encore lu, nous vous conseillons de consulter le guide de présentation générale du service OVH Load Balancer : [](use_presentation/guide.fr-fr.md){.ref}.
 
 Dans ce guide, nous allons configurer un service simple de Load Balancing TCP, pour un (ou plusieurs) serveur(s) SMTP. Un Frontend TCP écoutera le trafic TCP sur le port 25. Il sera configuré pour diriger le trafic sur une Ferme TCP, avec un ou plusieurs Serveurs TCP, selon votre configuration.
 
@@ -51,7 +49,7 @@ Dans le Manager nous allons retrouver les fonctionnalités détaillées ci-desso
 
 ![Service OVH Load Balancer](images/iplb_service.png){.thumbnail}
 
-Pour plus d'informations sur les fonctionnalités du Manager, consulter la page [](use_sunrise/guide.fr-fr.md){.ref}.
+
 
 Via l'API OVH, dans la section
 
