@@ -14,6 +14,7 @@ Ces technologies forment une pile (*stack*, en anglais) vous permettant d'héber
 Dans ce tutoriel, nous allons apprendre à installer et configurer ces quatre briques, installer phpMyAdmin pour l'administration graphique de la base de données MySQL et tester le serveur LAMP avec le système de gestion de contenu (Content Management System ou CMS) WordPress. 
 
 
+
 ## Prérequis
 
 ### Ce que vous devez savoir
