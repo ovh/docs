@@ -62,7 +62,7 @@ Se já existirem e pretender substituí-los, clique no ícone dos três pontos �
 
 Para isso, clique no botão `Adicionar uma entrada`{.action} e selecione a opção `MX`{.action}. Introduza as informações necessárias em função da solução de e-mail selecionada:
 
-- **se possuir uma solução de e-mail da OVH**: consulte as informações no [passo “2 - Conhecer a configuração MX da OVH”](https://docs.ovh.com/pt/dominios/e-mail-partilhado-manual-de-configuracao-mx-com-zona-dns-ovh/#2-conhecer-a-configuracao-mx-da-ovh){.external};
+- **se possuir uma solução de e-mail da OVH**: consulte as informações no passo [“2 - Conhecer a configuração MX da OVH”](https://docs.ovh.com/pt/domains/e-mail-partilhado-manual-de-configuracao-mx-com-zona-dns-ovh/#2-conhecer-a-configuracao-mx-da-ovh){.external};
 
 - **se possuir outra solução de e-mail**: consulte as informações comunicadas pelo seu fornecedor de serviço de e-mail.
 
