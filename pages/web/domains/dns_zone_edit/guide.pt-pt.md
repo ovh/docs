@@ -1,7 +1,7 @@
 ---
 title: 'Editar uma zona DNS da OVH'
-excerpt: 'Saiba como editar uma zona DNS da OVH através da Área de Cliente'
 slug: alojamento_partilhado_como_editar_a_minha_zona_dns
+excerpt: 'Saiba como editar uma zona DNS da OVH através da Área de Cliente'
 legacy_guide_number: g1604
 ---
 
@@ -54,7 +54,7 @@ Na tabela, pode ver a configuração do seu domínio na OVH. Esta tabela inclui 
 
 Pode editar a zona DNS da OVH do seu domínio adicionando, alterando ou eliminando um registo DNS. Para isso, tem duas possibilidades:
 
-- **Alterar manualmente a zona em modo de texto**\: para utilizadores experientes apenas. No separador `Zona DNS`{.action}, clique em `Editar em modo de texto`{.action} e siga as instruções que aparecem.
+- **Alterar manualmente a zona em modo de texto**: para utilizadores experientes apenas. No separador `Zona DNS`{.action}, clique em `Editar em modo de texto`{.action} e siga as instruções que aparecem.
 
 - **Utilizar os assistentes de configuração da OVH**.
 
