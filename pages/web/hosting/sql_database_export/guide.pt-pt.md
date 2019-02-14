@@ -1,310 +1,173 @@
 ---
-title: 'Partilhado: Guia de exportação de uma base de dados MySQL'
-excerpt: 'Partilhado: Guia de exportação de uma base de dados MySQL'
+title: 'Recuperar a cópia de segurança da base de dados de um alojamento web'
+excerpt: 'Saiba como recuperar a cópia de segurança de uma base de dados de um alojamento web da OVH'
 id: '1394'
 slug: partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql
 legacy_guide_number: g1394
 ---
 
+**Última atualização: 14/02/2019**
 
-## Pré-requisitos
-Deverá ter em sua posse:
+## Sumário
 
+As bases de dados, utilizadas pela maioria dos sistemas de gestão de conteúdos (Content Management System ou CMS), como o WordPress ou o Joomla!, permitem armazenar elementos dinâmicos, como comentários ou artigos. Por diversas razões, pode precisar de realizar a cópia de segurança de uma base de dados para mais tarde recuperar o seu conteúdo.
 
-- Um acesso ao seu espaço cliente
+**Saiba como recuperar a cópia de segurança de uma base de dados de um alojamento web da OVH.**
 
-- O seu identificador a password, bem como o servidor sql da base de dados que permitirá que se ligue à base de dados.
-Está disponível um guia que diz respeito à recuperação dos identificadores SQL :[]({legacy}1374)
+## Requisitos
 
+- Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Possuir uma base de dados criada no âmbito de uma oferta de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Consoante o método de backup utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} ou às informações que lhe permitem aceder à base de dados.
 
-Encontrará neste guia diferentes métodos para que possa realizar a exportação da base de dados.
+## Instruções
 
-![](images/img_1833.jpg){.thumbnail}
+Antes de começar, deve escolher o método que quer utilizar para recuperar a cópia de segurança da base de dados. Para isso, existem várias opções, adequadas a diferentes competências técnicas.
 
+- **Utilizar a ferramenta de backup da OVH**: esta solução permite recuperar backups das suas bases de dados a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Trata-se da solução mais acessível, pois não requer competências técnicas especiais.
 
-## A partir do Espaço cliente
-É possível recuperar a cópia da sua base de dados no Espaço cliente.
+- **Realizar a cópia de segurança a partir da interface web phpMyAdmin**: deverá aceder à interface phpMyAdmin. A utilização desta última exige conhecimentos específicos.
 
-Este método é o mais simples e mais rápido para que possa realizar a exportação da sua base de dados.
+- **Utilizar um script que realize o backup**: esta solução requer a criação de um script registado no alojamento web da OVH, de modo a viabilizar a cópia de segurança. São necessários conhecimentos específicos para criar este script.
 
-Deve, num primeiro tempo, ligar-se ao [Espaço Cliente](https://www.ovh.com/manager/web).
+- **Realizar a cópia de segurança através de um comando SSH**: deverá ligar-se ao seu espaço de armazenamento através do protocolo SSH e utilizar comandos para interagir com o espaço. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançados, bem como um plano de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} específico.
 
-Uma vez ligado ao espaço cliente selecione o seu nome de domínio na secção Alojamentos.
+Tenha em conta que algumas destas operações se realizam fora da interface da OVH e, por isso, deverá executá-las de forma autónoma. A seguir disponibilizamos algumas informações, mas, se precisar de ajuda, entre em contacto com um webmaster. 
 
-## Etapa 1
-Na parte "Alojamento" selecione o alojamento em questão e aceda de seguida a "Gestão SQL".
+Consulte este manual de acordo com o método de backup pretendido.
 
-Em função do tamanho da sua base de dados, a criação do backup da sua base de dados pode levar mais ou menos tempo.
+> [!warning]
+>
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVH disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+>
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se tiver alguma dúvida, recomendamos que recorra a um fornecedor de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção “Quer saber mais?” deste manual.
+>
 
-![](images/img_2698.jpg){.thumbnail}
+### Recuperar uma cópia de segurança através da ferramenta da OVH
 
-## Etapa 2
-Selecione de seguida na "roda dentada" à direita da base de dados em questão e clique depois em criar um dump.
+Para iniciar a operação, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento em causa. Por fim, clique no separador `Base de dados`{.action}.
 
-A lista das bases de dados aparecerá na tabela (cf. ecrã ao lado).
+Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento web. Poderá optar por realizar um novo backup ou importar um já existente através de duas operações.
 
-![](images/img_2699.jpg){.thumbnail}
+#### 1 - Efetuar um novo backup da base de dados
 
-## Etapa 3
-Pode de seguida selecionar a data do último backup: Atual, Ontem, a semana passada
+Ainda no separador `Bases de dados`{.action}, clique nos três pontos à direita da base de dados que pretende salvaguardar e, a seguir, em `Criar uma cópia de segurança`{.action}.
 
-Três datas de backup são recuperáveis:
+![databasedump](images/database-dump-step2.png){.thumbnail}
 
+Na janela que surgir, selecione a data desejada para a cópia de segurança e clique em `Seguinte`{.action}. Certifique-se de que as informações no resumo estão corretas e clique em `Validar`{.action} para dar início à operação.
 
-- Atual: cópia da base de dados no instante T.
+Aguarde enquanto a cópia de segurança é realizada. Quando estiver disponível, poderá importá-la.
 
-- Ontem: cópia da base de dados da noite (D-0), o backup recuperado foi realizado às 3h da manhã.
+![databasedump](images/database-dump-step3.png){.thumbnail}
 
-- A semana passada: cópia da base de dados de D-7, o backup recuperado foi realizado às 3h da manhã.
+#### 2 - Recuperar uma cópia de segurança da base de dados
 
+Ainda no separador `Bases de dados`{.action}, clique nos três pontos à direita da base de dados cujo backup pretende recuperar e, a seguir, em `Restaurar um backup`{.action}.
 
-Clique em "Seguinte" depois "Validar"para lançar o repatriamento do seu backup SQL.
+![databasedump](images/database-dump-step4.png){.thumbnail}
 
-Após ter sido validado, é necessário aguardar até que o dump* seja repatriado, sendo que de seguida receberá um e-mail com o link que permite a obtenção do ficheiro de backup (dump).
+A tabela que aparecerá apresenta todos os backups disponíveis da base de dados selecionada. Poderá consultar a data exata das cópias de segurança, assim como a data em que estes backups serão eliminados da ferramenta da OVH.
 
-Deixamos um exemplo do assunto do e-mail recebido:
+Para transferir um backup, clique nos três pontos à direita daquele que deseja obter e, a seguir, em `Transferir backup`{.action}. Surgirá uma janela que lhe solicitará para guardar o ficheiro na sua máquina. Aceite e espere enquanto o backup é descarregado.
 
+![databasedump](images/database-dump-step5.png){.thumbnail}
 
-```
-[OVH-SQL] testovh.ovh - Dump da sua base: testovhmod1
-```
+### Recuperar um backup a partir da interface web phpMyAdmin
 
+Em primeiro lugar, deverá aceder ao phpMyAdmin. Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e selecione o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
 
-Um link para o ficheiro de backup será disponível no e-mail. O backup da sua base de dados será disponível num servidor distante durante uma duração de 30 dias.
+Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento web. Clique nos três pontos à direita da linha correspondente à base de dados e selecione `Aceder ao phpMyAdmin`{.action}.
 
-O ficheiro recebido será comprimido, aconselhamos que o descomprima antes de importar o seu ficheiro de backup SQL.
+![databasedump](images/database-dump-step6.png){.thumbnail}
 
-![](images/img_2700.jpg){.thumbnail}
+Uma vez na página do phpMyAdmin, introduza as informações da base de dados, selecione a opção para aceder aos dados atuais da base de dados no menu pendente e, em seguida, conecte-se. Clique no separador `Exportar`{.action}, onde poderá escolher entre dois métodos de exportação:
 
+- **Método rápido**: pode definir o formato de exportação do backup. O mais comum é o formato SQL, mas, consoante as suas necessidades, terá outros ao seu dispor.
 
-## Através do PhpMyAdmin
-Deve num primeiro tempo ligar-se à [interface do PhpMyAdmin](https://phpmyadmin.ovh.net/).
+- **Método personalizado**: pode definir pormenorizadamente os parâmetros de exportação do backup.
 
-## Exportação rápida
-Após ligar-se, seleciona a sua base de dados (cf quadro azul ao lado).
+> [!warning]
+>
+> A interface phpMyAdmin não pertence à OVH, pelo que deverá encarregar-se da realização das operações necessárias. Recomendamos que, caso de precise de ajuda, recorra a um prestador de serviços especializado e/ou que contacte o editor da interface. Não poderemos proporcionar-lhe assistência técnica.
+>
 
-Aceda de seguida a "Exportar".
+### Recuperar um backup através de um script
 
-A exportação rápida não permite que escolha o formato de exportação da sua base de dados.
+Esta operação realiza-se em vários passos. Certifique-se de que possui a informação necessária para se ligar à base de dados na qual pretende realizar o backup: o nome de utilizador e a respetiva palavra-passe, o nome da base de dados e o endereço do servidor.
 
-Veja a segunda parte, onde poderá utilizar uma exportação personalizada.
+> [!warning]
+>
+> Esta operação requer conhecimentos técnicos de programação. Apresentamos a seguir algumas informações sobre como a realizar. Contudo, se precisar de ajuda, recomendamos que recorra a um prestador de serviços especializado. Não poderemos proporcionar-lhe assistência técnica.
+>
 
-![](images/img_1963.jpg){.thumbnail}
+#### 1 - Criar um script de backup
 
-## Exportação personalizada
-Uma vez ligado, selecione a sua base de dados.
+O primeiro passo consiste em criar o script que permitirá realizar o backup da base de dados. Encontrará abaixo um exemplo que o ajudará a realizar esta operação. No entanto, se precisar de ajuda, contacte um webmaster.
 
-Aceda de seguida a "Exportar".
-
-Selecione "Personalizado - mostrar todas as opções possíveis".
-
-Vão aparecer diferentes opções.
-
-Tabela(s): 
-
-É possível que selecione a totalidade ou uma parte das tabelas a exportar.
-
-Pode ser interessante utilizar esta opção caso a sua base de dados seja grande, podendo exportar e depois importar a sua base de dados várias vezes.
-
-Saída: 
-
-É possível definir aqui se deseja gerar o seu backup para um ficheiro externo ou apresentar diretamente o resultado do pedido que deverá copiar.
-
-Formato: 
-
-Defina o formato da exportação da sua base de dados. É aconselhado que deixe SQL.
-
-Opções específicas ao formato:
-
-É possível definir o que deseja exportar a tabela.
-Seja unicamente as estruturas ou os dados, ou exportar os dois.
-É aconselhado que introduza "estrutura e dados"
-Il vous est possible de définir ce que vous sou.
-
-Opções de exportação:
-
-Selecione a opção de exportação "Nenhum dos modos em baixo" a fim de evitar o erro associado ao "Max_Allowed_Packet".
-
-Apenas serão vistas neste guia as opções mais importantes.
-
-A fim de lançar a exportação, clique em "Executar".
-
-![](images/img_1964.jpg){.thumbnail}
-
-## Backup do ficheiro .sql
-Poderá efetuar o backup do dump* através de um link.
-
-Guarde o ficheiro que o PhpMyAdmin lhe propõe.
-
-![](images/img_1848.jpg){.thumbnail}
-
-## Backup anterior
-
-- É possível, através do PhpMyAdmin e na página inicial, recuperar um backup da noite anterior e da semana passada.
-
-
-
-
-## Através de um script
-É possível que crie esses scripts através de um ficheiro txt. Deverá dar-lhe a extensão correspondente à linguagem utilizada.
-
-Esta solução é interessante, uma vez que permite exportar os dumps* importantes e está acessível a todos os alojamentos partilhados.
-
-Nos scripts em baixo, substitua:
-
-
-- nome_da_base.sql pelo nome do seu ficheiro.
-
-- servidor_sql pelo nome do servidor onde a sua base de dados foi crada.
-
-- nome_da_base pelo nome da sua base de dados.
-
-- password pela password associada à sua base de dados.
-
-O seu ficheiro de backup deverá ser colocado no seu alojamento via FTP.
-
-Através de php (backupbase.php):
-O código a introduzir e a completar: 
-
-
-```
+```php
 <?
-echo "A sua base de dados está em curso de backup.......";
-system("mysqldump --host=servidor_sql --user=nome_da_base --password=password nome_da_base > nome_da_base.sql");
-echo "Está terminado. Poderá recuperar a base através de FTP";
+system("mysqldump --host=endereço_do_servidor --user=nome_utilizador --password=palavra_passe_utilizador nome_base_de_dados > nome_ficheiro_backup.sql");
 ?>
 ```
 
+Substitua a informação genérica do script pela informação da base de dados correspondente, recorrendo aos elementos abaixo. Depois de concluir o script, recomendamos que lhe atribua um nome (“backup.php”, por exemplo).
 
-Através de perl (backupbase.cgi):
-O código a introduzir e a completar: 
+|Informações|Substituir por|
+|---|---|
+|endereço_do_servidor|O endereço do servidor da base de dados em causa.|
+|nome_de_utilizador|O nome de utilizador com acesso à base de dados.|
+|palavra_passe_utilizador|A palavra-passe do nome de utilizador indicado anteriormente.|
+|nome_base_de_dados|O nome da base de dados.|
+|nome_ficheiro_backup|O nome do ficheiro de backup quando este for executado.|
 
+> [!primary]
+>
+> Pode realizar um backup a partir de uma data anterior se adicionar uma porta ao script. Para um backup com a data de ontem, utilize a porta “3307”. Para um backup com a data de há uma semana, utilize a porta “3317”. 
+> 
+> Note que, se utilizar a porta “3306”, poderá realizar um backup dos dados atualmente presentes na base de dados.
+>
 
-```
-#!/usr/bin/perl
-print "A sua base de dados está em curso de backup.......";
-system("mysqldump --host=servidor_sql --user=nome_da_base --password=password nome_da_base > nome_da_base.sql");
-print "Está terminado. Poderá recuperar a base através de FTP";
-```
+#### 2 - Carregar o script no espaço de armazenamento
 
+Depois de criar o script de backup, deverá carregá-lo para o espaço de armazenamento do alojamento web. Para isso, ligue-se ao seu espaço de armazenamento. Se precisar de ajuda, consulte o passo 2.2 do manual “[Aceder ao espaço de armazenamento](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/#22-aceder-ao-espaco-de-armazenamento){.external}”.
 
-- Efetue o upload via FTP do script que criou, bem como o dump* da sua base na pasta www do seu alojamento e chame o script com o browser com o seguinte url: http://votre_domaine.com/importbase.php
+Para poder realizar as seguintes ações, descarregue o script para a pasta “www”. **Preste especial atenção ao nome do ficheiro do script de backup.** Certifique-se de que não apaga um ficheiro já existente com o mesmo nome no espaço de armazenamento quando carregar o script. Se aparecer uma mensagem de aviso deste tipo, altere o nome do script que acabou de criar e tente carregá-lo novamente.
 
+#### 3 - Chamar um script
 
-Substitua seudominio.com pelo nome de domínio e importbase.php pelo nome do seu ficheiro.
+Depois de carregar o script no espaço de armazenamento, só falta executar o código. Para isso, é necessário chamar o script.
 
-Este comando irá gerar um ficheiro nome_da_base.sql na pasta onde o script foi colocado.
+Introduza no browser o URL completo do script (por exemplo, “mypersonaldomain.ovh/backup.php”, se o nome do script for “backup.php”). Se as informações introduzidas no script estiverem corretas, o backup será iniciado. Só precisará de esperar alguns segundos. Caso contrário, verifique as informações introduzidas no script e tente novamente.
 
-Nesse ficheiro encontrará todas as instruções SQL para recriar a base como estava aquando do backup, com o conjunto dos seus dados.
+#### 4 - Recuperar o backup a partir do espaço de armazenamento
 
-- Nota 1 : Se a sua base de dados é demasiado volumosa, deve efetuar um dump* tabela por tabela ao adicionar a opção "--tables nome_da_table", e no final para ter o seguinte comando:
+Uma vez feito o backup, pode recuperá-lo na pasta onde colocou o script de backup. O backup da base de dados deve ter o nome definido anteriormente no script. Agora já só tem de descarregar o backup para a sua máquina.
 
-mysqldump --host=serveur_sql --user=nom_de_la_base --password=mot_de_passe nom_de_la_base --tables nom_de_la_table > nom_de_la_base.sql
+Antes de terminar, recomendamos vivamente que elimine o ficheiro de backup e o script do diretório “www”.
 
+> [!primary]
+>
+> A utilização de um script de backup e das tarefas planificadas (chamadas “CRON”) permitir-lhe-á automatizar as cópias de segurança segundo a frequência que desejar. Saiba mais sobre as tarefas planificadas no manual: "[Alojamento Partilhado: Tarefas Agendadas / CRON](https://docs.ovh.com/pt/hosting/alojamento_partilhado_tarefas_agendadas_cron/){.external}".
+>
 
-- Nota 2 : Pode igualmente comprimir o ficheiro para conseguir efetuar o seu download para o seu computasdor (por FTP ou via web). Para comprimir o ficheiro, execute o comando gzip, o que criará um ficheiro na extensão .sql.gz :
+### Recuperar um backup através de um comando SSH
 
-system("gzip nome_da_base.sql");
+Para interagir com o seu espaço de armazenamento, deverá executar comandos a partir de um terminal.
 
+> [!warning]
+>
+> Este tipo de acesso requer conhecimento técnicos mais avançados. Apresentamos a seguir algumas informações sobre a operação. Contudo, se precisar de ajuda, recomendamos que recorra a um prestador de serviços especializado. Não poderemos proporcionar-lhe assistência técnica.
+>
 
-## Através de um comando via SSH
+Depois de aceder ao espaço de armazenamento por SSH, tem de utilizar um comando que lhe permita realizar o backup da base de dados. Apresentamos a seguir um exemplo que o ajudará a realizar esta operação. Tenha em conta que o backup será realizado no diretório que estiver ativo no momento em que introduzir o comando no terminal.
 
-## Os pré-requisitos
-
-- Obtenha o seu identificador e password que lhe permita ligar-se ao seu alojamento web.
-Está disponível um guia que diz respeito à recuperação dos dados de acesso FTP: []({legacy}1374)
-
-- Dispor de uma oferta que permita o acesso ssh ([ver as características das nossas ofertas](http://www.ovh.pt/alojamento_partilhado))
-
-
-Queira encontrar em baixo um guia para a ligação via SSH:
-
-
-- [Ligação ssh partilhado](http://guias.ovh.pt/SshPartilhado)
-
-
-
-## Realizar a importação da base de dados via ssh
-Ligue-se por ssh ao seu alojamento partilhado.
-
-Aceda à pasta onde deseja colocar o ficheiro a importar, e de seguida coloque o seguinte comando:
-
-O código a introduzir e a completar: 
-
-
-```
-mysqldump --host=serveur_sql --user=nom_de_la_base --password=mot_de_passe nom_de_la_base > nom_de_la_base.sql
+```sh
+mysqldump --host=endereço_do_servidor --user=nome_utilizador --password=palavra_passe_utilizador nome_base_de_dados > nome_ficheiro_backup.sql
 ```
 
+Substitua a informação genérica deste comando pela informação da base de dados em causa. Agora já só tem de descarregar o backup para o seu computador.
 
-O código completo em exemplo: 
+## Quer saber mais?
 
-
-```
-mysqldump --host=sql3 --user=testbackup --password=RtPgDsmL testbackup > testbackup.sql
-```
-
-
-
-
-## Através do SQL Privado
-Está disponível um guia que diz respeito à importação de uma base de dados está disponível:
-
-
-- []({legacy}2023)
-
-
-
-
-## Salvaguarda - Backup
-Se deseja recuperar o backup de uma das suas bases de dados numa data anterior através de um script, deverá precisar um número de porta específico:
-
-Cópia atual = 3306
-Ontem = 3307
-Semana passada = 3317
-
-Deixamos um exemplo de um código que poderá utilizar:
-
-PHP :
-
-```
-system("mysqldump --host=servidor_sql --user=nome_da_base --password=password --port=3317 nom_de_la_base > nome_da_base.sql ");
-```
-
-
-
-- Este sistema de backup está disponível para as bases de dados com a versão mínimna de Mysql5
-
-
-
-
-## Erros "Max_Allowed_Packet" aquando da importação do dump*
-Aquando de um dump*, deve personalizar a exportação da sua base de dados SQL através de PhpMyAdmin.
-
-O objetivo é o de evitar que todo o conteúdo de uma tabela seja adicionado através de um só "INSERT INTO" para evitar os erros associados à variável servidor "Max_Allowed_Packet" aquando de uma importação do dump* se o conteúdo da tabela é importante.
-
-Exemplo, se a tabela A contém 500 linhas, ao invés de ter um único "INSERT INTO" para as 500 linhas, deverá efetuar 500 "INSERT INTO". 
-
-Através do PhpMyAdmin:
-
-Para tal, aquando da exportação via PhpMyAdmin, selecione a opção de criação de dados "Nenhum dos modos abaixo" para evitar os erros associados ao "Max_Allowed_Packet".
-
-Através de ssh:
-
-Deverá utilizar a opção --skip-extended-insert.
-
-A opção --extended-insert, incluída com a opção -opt (Ativada por defeito), gera um único INSERT INTO para toda uma tabela, devendo desativar essa opção graças ao comando:
-
-
-```
---skip-extended-insert
-```
-
-
-
-![](images/img_1965.jpg){.thumbnail}
-
-
-## Léxico
-dump*: o ficheiro de backup da base de dados do seu site. 
-
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
