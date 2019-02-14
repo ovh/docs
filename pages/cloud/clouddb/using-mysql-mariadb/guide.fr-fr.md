@@ -34,7 +34,6 @@ Ce moteur est 100% compatible, et se veut plus "libre" que sa grande sœur MySQL
 
 ## Connexion a la base de donnees
 
-
 > [!primary]
 >
 > Il est à noter que cette offre ne donne pas accès au Host mais aux bases de données hébergées sur celui-ci. Les commandes SQL génériques fonctionnent sans aucun problème, et les logiciels type HeidiSQL ou SQuirreL SQL sont pleinement compatibles.
