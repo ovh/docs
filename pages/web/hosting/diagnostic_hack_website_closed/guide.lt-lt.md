@@ -16,7 +16,7 @@ Your Web Hosting plan allows you to upload one or more websites. You may have re
 
 ## Requirements
 
-- an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
+- an [OVH Web Hosting plan](https://www.ovh.lt/svetainiu-talpinimas/){.external}
 - the permissions necessary to connect to your hosting plan’s storage space
 - access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
@@ -130,11 +130,11 @@ There are several ways to restore your site:
 
 - **If you have a personal copy of your website**: 
 
-All you have to do is restore it on your hosting, replacing the contents of the storage space and the database with that of the backup. Our guide to [Importing a backup into a Web Hosting Plan database](../web_hosting_guide_to_importing_a_mysql_database/){.external} explains more about this process.
+All you have to do is restore it on your hosting, replacing the contents of the storage space and the database with that of the backup. Our guide to [Importing a backup into a Web Hosting Plan database](../svetainiu_talpinimas_mysql_duomenu_bazes_importavimas/){.external} explains more about this process.
 
 - **If OVH has a copy of your website (storage space and database)**:
 
-Depending on the date you want to revert your site to, OVH may be able to provide you with a backup. Refer to our guides to [Restoring your Web Hosting plan’s storage space](../restoring-ftp-filezilla-control-panel/){.external}, [Retrieving the backup of a Web Hosting plan database](https://docs.ovh.com/gb/en/hosting/web_hosting_database_export_guide/){.external}, and [Importing a backup into a Web Hosting plan database](../web_hosting_guide_to_importing_a_mysql_database/){.external} if you require assistance with this process. Also, make sure that (wherever possible) you match the dates of the selected backups.
+Depending on the date you want to revert your site to, OVH may be able to provide you with a backup. Refer to our guides to [Restoring your Web Hosting plan’s storage space](../restoring-ftp-filezilla-control-panel/){.external}, [Retrieving the backup of a Web Hosting plan database](https://docs.ovh.com/gb/en/hosting/svetainiu_talpinimas_duomenu_baziu_eksportavimo_gidas/){.external}, and [Importing a backup into a Web Hosting plan database](../svetainiu_talpinimas_mysql_duomenu_bazes_importavimas/){.external} if you require assistance with this process. Also, make sure that (wherever possible) you match the dates of the selected backups.
 
 - **If neither you or OVH has a copy of your website**: 
 
@@ -163,7 +163,7 @@ If this is not the case, you will need to update them. To do this, follow the in
 
 These can highlight elements that may block the update that you are about to make. For example:
 
-- Make sure that the current version of your CMS (WordPress, for example) is compatible with the PHP version set up on your hosting. If you need to change it, refer to our guide to [Changing a Web Hosting Plan’s PHP version](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/){.external}
+- Make sure that the current version of your CMS (WordPress, for example) is compatible with the PHP version set up on your hosting. If you need to change it, refer to our guide to [Changing a Web Hosting Plan’s PHP version](../php_konfiguravimas_ovh_svetainiu_talpinimo_planuose_2014/){.external}
 - Make sure your themes and add-ons are compatible with the current version of your CMS. If this is not the case, you will no longer be able to use them and will have to find suitable alternatives.
 
 #### 2.3 Manually fix your site’s code
