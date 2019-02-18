@@ -1,10 +1,10 @@
 ---
-title: Zabezpieczanie serwera VPS
+title: 'Zabezpieczanie serwera VPS'
 slug: porady-zabezpieczenie-vps
-section: Pierwsze kroki
+section: 'Pierwsze kroki'
 ---
 
-**Zaktualizowano w dn. 2017-12-21**
+**Ostatnia aktualizacja z dnia 21-12-2017**
 
 ## Wprowadzenie
 
@@ -211,4 +211,4 @@ Wszystkie informacje na temat naszej oferty magazynowania danych dla serwerów V
 
 [Instrukcja dotycząca Firewalla](https://docs.ovh.com/gb/en/dedicated/firewall-network/)
 
-Wymieniaj się informacjami z naszą społecznością użytkowników na <https://community.ovh.com>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

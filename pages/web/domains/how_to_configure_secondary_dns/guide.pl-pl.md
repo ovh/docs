@@ -1,12 +1,12 @@
 ---
-title: Konfiguracja DNS secondary
-excerpt: Jak skonfigurować domenę na serwerze DNS secondary?
+title: 'Konfiguracja DNS secondary'
+excerpt: 'Jak skonfigurować domenę na serwerze DNS secondary?'
 slug: konfiguracja_dns_secondary
 legacy_guide_number: g1477
+section: Bezpieczeństwo
 ---
 
-
-## 
+## Wprowadzenie
 OVH dostarcza usługę serwera DNS secondary w sytuacji, gdy chcesz używać swojego serwera jako głównego serwera DNS dla swojej domeny.
 
 Opcja DNS Secondary znajduje się w panelu klienta. 
@@ -17,13 +17,13 @@ Strona w panelu klienta wygląda następująco:
 Na tej stronie można:
 
 
-- Sprawdzić listę domen skonfigurowanych na naszym serwerze DNS secondary.
+- Sprawdzić listę domen skonfigurowanych na naszym serwerze DNS secondary;
 - Dodać lub usunąć domenę z serwera DNS secondary.
 
 
+## W praktyce
 
-
-## 1. Dodawanie domeny
+### Dodawanie domeny
 Aby dodać domenę, kliknij na Dodaj domenę i wypełnij formularz:
 
 ![](images/img_2009.jpg){.thumbnail}
@@ -56,18 +56,11 @@ W takim przypadku należy dodać pole TXT dla subdomeny ownercheck.votredomaine.
 ownercheck TXT "339ea8d0"
 ```
 
-
-
-
-## 2. Usuwanie domeny
+### Usuwanie domeny
 Aby usunąć deklarację dns secondary dla danej domeny, wystarczy kliknąć na ikonkę Kosza znajdującą się z prawej strony skonfigurowanej domeny.
 
-
-## 
-W przewodniku tym wyjaśniliśmy, jak:
-
-- Dodać domenę do naszego serwera DNS secondary.
-- Usunąć domenę z naszego serwera DNS secondary.
-
+### Sprawdź również
+Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+ 
 
 

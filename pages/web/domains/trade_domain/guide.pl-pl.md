@@ -1,10 +1,10 @@
 ---
-title: Zmiana właściciela domeny globalnej (.com .net .org .info .biz)
-excerpt: Przewodnik dotyczący zmiany właściciela domeny globalnej (.com .net .org .info .biz)
+title: 'Zmiana właściciela domeny globalnej (.com .net .org .info .biz)'
+excerpt: 'Przewodnik dotyczący zmiany właściciela domeny globalnej (.com .net .org .info .biz)'
 slug: zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz
 legacy_guide_number: g1350
+section: 'Zmiana właściciela'
 ---
-
 
 ## Logowanie do panelu klienta
 

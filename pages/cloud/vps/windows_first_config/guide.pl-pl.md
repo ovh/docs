@@ -1,9 +1,9 @@
 ---
-title: Pierwsza konfiguracja systemu Windows Server (firewall)
+title: 'Pierwsza konfiguracja systemu Windows Server (Firewall)'
 slug: windows-first-config
-excerpt: Sprawdz, jak uzyskac poaczenie ze zdalnym pulpitem przez KVM, jesli poaczenie jest wyaczone.
+excerpt: 'Sprawdź, jak uzyskać połączenie ze zdalnym pulpitem przez KVM, jeśli połączenie jest nieaktywne'
+section: 'Pierwsze kroki'
 ---
-
 
 ## Wymagania
 Podczas instalacji systemu Windows Server 2012, 2012 R2 lub 2016 na serwerze VPS może się okazać, że połączenie ze zdalnym pulpitem, jak również protokół ICMP są wyłączone. Przewodnik ten wyjaśnia, co zrobić w takiej sytuacji.
@@ -14,10 +14,10 @@ Musisz posiadać:
 - Dostęp do panelu klienta OVH.
 
 
-## Procedura
+## W praktyce
 
-### Etap 1&#58; Dostep do narzedzia KVM
-Aby uzyskać dostęp do narzędzia KVM, należy zalogować się do `panelu klienta OVH`{.action}, przejść do zakładki `Dedykowane`{.action} i wybrać swój serwer VPS.
+### Dostęp do narzędzia KVM
+Aby uzyskać dostęp do narzędzia KVM, należy zalogować się do `Panelu klienta OVH`{.action}, przejść do zakładki `Dedykowane`{.action} i wybrać swój serwer VPS.
 
 Następnie należy kliknąć na przycisk `KVM`{.action} w górnym prawym rogu.
 
@@ -27,7 +27,7 @@ Następnie należy kliknąć na przycisk `KVM`{.action} w górnym prawym rogu.
 Otrzymasz dostęp do wirtualnej klawiatury i myszy dla swojego serwera VPS.
 
 
-### Etap 2&#58; Pierwsze ustawienia w systemie Windows
+### Pierwsze ustawienia w systemie Windows
 Na ekranie KVM zauważysz uruchamianie się systemu Windows. Na tym etapie będziesz musiał skonfigurować język klawiatury Windows oraz hasło **Administratora**.
 
 
@@ -37,7 +37,7 @@ Na ekranie KVM zauważysz uruchamianie się systemu Windows. Na tym etapie będz
 ![Mdp](images/windows3.png){.thumbnail}
 
 
-### Etap 3&#58; Modyfikacja w ramach firewalla w systemie Windows
+### Modyfikacja ustawień firewalla w systemie Windows
 Po zakończeniu instalacji należy przejść do `Narzędzi administracyjnych`{.action} i wybrać `Firewall Windows z zaawansowanym bezpieczeństwem`{.action}.
 
 
@@ -47,3 +47,7 @@ Następnie należy włączyć ICMP oraz połączenie ze zdalnym pulpitem *(klikn
 
 
 ![Active](images/windows5.png){.thumbnail}
+
+## Sprawdź również
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

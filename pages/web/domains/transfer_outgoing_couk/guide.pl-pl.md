@@ -1,10 +1,10 @@
 ---
-title: Transfer wychodzący domeny .co.uk
-excerpt: Transfer wychodzący domeny .co.uk
+title: 'Transfer wychodzący domeny .co.uk'
+excerpt: 'Transfer wychodzący domeny .co.uk'
 slug: transfer_wychodzacy_domeny_couk
 legacy_guide_number: g2225
+section: Transfer
 ---
-
 
 ## Wymagania
 Aby móc wykonać transfer domeny .co.uk do innego operatora, domena musi spełniać poniższe wymogi:

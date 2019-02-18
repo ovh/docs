@@ -1,10 +1,10 @@
 ---
-title: 'Usługi www: Transfer domeny .co.uk'
-excerpt: 'Usługi www: Transfer domeny .co.uk'
+title: 'Transfer przychodzący domeny .co.uk'
+excerpt: 'Dowiedz się, jak wykonać transfer domeny .co.uk do OVH'
 slug: uslugi_www_transfer_domeny_couk
 legacy_guide_number: g2026
+section: Transfer
 ---
-
 
 ## Wymagania
 Jeśli chcesz przenieść domenę .co.uk do OVH, upewnij się, że spełniasz poniższe wymagania:
