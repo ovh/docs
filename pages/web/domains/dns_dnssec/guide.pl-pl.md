@@ -1,10 +1,10 @@
 ---
-title: Jak skonfigurować strefę DNSSEC dla domeny
+title: 'Konfiguracja DNSSEC dla domeny'
 excerpt: ''
 slug: jak_skonfigurowac_strefe_dnssec_dla_domeny
 legacy_guide_number: g609
+section: Bezpieczeństwo
 ---
-
 
 ## Wymagania
 

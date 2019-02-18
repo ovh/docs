@@ -1,10 +1,10 @@
 ---
-title: ZoneCheck domeny
+title: 'ZoneCheck domeny'
 excerpt: 'W przewodniku tym wyjaśniamy, jak wykonać Zone Check domeny.'
 slug: zonecheck_domeny
 legacy_guide_number: g1980
+section: 'DNS i strefa DNS'
 ---
-
 
 ## Wypełnienie wymaganych pól
 Narzędzie [Zone Check](https://zonemaster.fr/) udostępniane przez AFNIC służy do weryfikowania konfiguracji serwerów DNS, które chcesz zadeklarować. 
@@ -14,7 +14,7 @@ Przejdź na stronę ZoneMaster [klikając tutaj](https://zonemaster.fr/). Nastę
 
 - Domain name: Podaj nazwę domeny, dla której chcesz wykonać test.
 - Nameservers: Kliknij na + w zależności od liczby serwerów DNS do przetestowania. Wpisz serwery DNS oraz ich adresy IP. 
-- Kliknij na przycisk "Run test", aby otrzymać wynik
+- Kliknij na przycisk "Run test", aby otrzymać wynik.
 
 
 
