@@ -18,7 +18,6 @@ A Área de Cliente oferece-lhe uma gestão administrativa completa de todos os s
 > Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Caso tenha alguma dúvida, consulte os contratos da OVH disponíveis na sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. Para isso, clique no seu ID de cliente no canto superior direito e selecione `Serviços`{.action} > `Contratos`{.action}.
 >
 
-
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
@@ -85,7 +84,7 @@ Pode cancelar esta operação até 24 horas antes da data de expiração. Para i
 
 ![manageservices](images/manage-ovh-services-step4.png){.thumbnail}
 
-### Eliminar imediatamente um serviço
+#### Eliminar imediatamente um serviço
 
 Esta ação, apenas válida para os [alojamentos web](https://www.ovh.pt/alojamento-partilhado/){.external}, elimina imediatamente o serviço selecionado antes da sua data de expiração, sem esperar pelo termo do contrato.
 
