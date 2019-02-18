@@ -1,17 +1,17 @@
 ---
-title: 'Choisir et appliquer une configuration pour un numéro alias'
+title: 'Choisir et appliquer une configuration pour un numéro'
 slug: quelle-configuration-est-adaptee-a-mes-besoins
-excerpt: 'Apprenez comment choisir et appliquer une configuration sur votre numéro alias OVH'
+excerpt: 'Apprenez comment choisir et appliquer une configuration sur votre numéro'
 section: 'Numéros ou alias'
 ---
 
-**Dernière mise à jour le 27/07/2018**
+**Dernière mise à jour le 18/02/2019**
 
 ## Objectif
 
 Lorsque vous disposez d'un numéro alias chez OVH, qu'il soit nouvellement commandé ou porté, vous pouvez le configurer. Plusieurs types de configuration existent, ces dernières vous permettant de répondre au mieux à vos besoins.
 
-**Ce guide vous montre comment choisir et appliquer une configuration sur votre numéro alias OVH.**
+**Ce guide vous montre comment choisir et appliquer une configuration sur votre numéro.**
 
 ## Prérequis
 
@@ -22,89 +22,82 @@ Lorsque vous disposez d'un numéro alias chez OVH, qu'il soit nouvellement comma
 
 ### Étape 1 : accéder à la gestion de votre numéro
 
-Pour débuter la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et assurez-vous de vous situer dans la section `Télécom`. 
+Pour débuter la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external} et assurez-vous de vous situer dans la partie « Télécom ». Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez parmi les numéros OVH qui s’affichent celui sur lequel vous souhaitez configurer la conférence.
 
-Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis choisissez dans les groupes de facturation qui s'affichent le numéro alias à configurer. Positionnez-vous enfin sur l'onglet `Configuration du numéro`{.action} et cliquez sur `Modifier le type du numéro`{.action}.
+Dès lors, deux possibilités existent selon la configuration du numéro concerné :
+
+- **le numéro ne possède pas de configuration** : positionnez-vous alors sur l'onglet `Configuration`{.action}, puis suivez les instructions ci-dessous ;
+- **le numéro possède déjà une configuration** : cliquez sur l'onglet `Configuration`{.action}, puis sur `Changer de configuration`{.action}. Suivez ensuite les instructions ci-dessous.
  
-![configurationnumeroalias](images/configurer-numero-alias-step1.png){.thumbnail}
+![configurationnumeroalias](images/alias-configuration-step1.png){.thumbnail}
 
 ### Étape 2 : définir la configuration la plus adaptée à votre besoin
 
-Sur la page qui apparaît, vous avez la possibilité de sélectionner un type de configuration pour votre numéro alias. Selon le choix que vous ferez, les fonctionnalités inhérentes à votre numéro alias seront différentes.
+Dans la nouvelle fenêtre qui apparaît, plusieurs configurations sont possibles. Ces dernières sont réparties entre deux modes :
 
-Les possibilités sont multiples : votre numéro alias peut par exemple rediriger les appels vers votre ligne téléphonique, ou être utilisé comme le point d'entrée d'un standard téléphonique faisant sonner plusieurs lignes. 
+- **le mode simple** : les configurations de ce mode s'affichent par défaut. OVH sera en mesure de vous apporter de l'assistance à leur propos ;
+- **le mode expert** : les configurations de ce mode sont accessibles en cliquant sur le bouton `Passer en mode expert`{.action}. OVH ne sera pas en mesure de vous apporter de l'assistance concernant ces dernières. Cliquez sur le bouton `Passer en mode simple`{.action} pour retourner aux configurations du mode simple.
 
-Avant d'appliquer une configuration à votre numéro alias, nous vous conseillons de prendre connaissance des différents types de configuration existantes en prenant connaissance des explications ci-dessous.
+![configurationnumeroalias](images/alias-configuration-step2.png){.thumbnail}
 
-#### 2.1 La redirection avec supervision
+Vous trouverez ci-dessous un récapitulatif des différentes configurations. Poursuivez vers celle(s) que vous souhaitez consulter.
 
-Cette redirection vous permet de rediriger les appels vers la ligne de votre choix, en toute transparence. Elle permet également de gérer la supervision de la ligne destinataire dans le cas d’un appel depuis ce numéro.
+|Configuration en « mode simple »|Configuration en « mode expert »| 
+|---|---| 
+|[Redirection d'appels](./#21-redirections-dappels)|[SVI VXML](./#25-svi-vxml)|
+|[File d'appels](./#22-file-dappels)|[Contact Center Solution](./#26-contact-center-solution)|
+|[Conférence](./#23-conference)| |
+|[Serveur vocal interactif](./#24-serveur-vocal-interactif)| |
 
-Cette option est idéale si vous préférez une redirection simple. Par exemple, dans le cadre d’une entreprise, vous pourrez rediriger un numéro vers une ligne unique.
+#### 2.1 Redirection d'appels
 
-#### 2.2 La redirection avec présentation de ce numéro sur ma ligne SIP ou mon Trunk
+La redirection permet de rediriger les appels reçus sur un numéro OVH vers une ligne OVH. Pour diverses raisons, vous pouvez être amené à vouloir configurer cette option afin de rediriger tous les appels reçus sur votre numéro vers la ligne OVH de votre choix.
 
-Cette redirection permet de présenter à la volée sur votre client SIP/IPBX vos numéros alias.
+Cette configuration est accessible en mode simple uniquement. Reportez-vous aux instructions décrites dans notre documentation « [Configurer une redirection d’appels](../creer-redirection-avec-presentation/){.external} » si vous désirez en apprendre plus.
 
-#### 2.3 La file d'appels
+#### 2.2 File d'appels
 
-La file d'appels vous permet de gérer le flux de vos appels entrants. Celle-ci vous permet de créer une file d'attente avant de mettre en relation  avec vos collaborateurs les interlocuteurs qui vous contactent.
+La file d'appels vous permet de gérer le flux de vos appels entrants. Elle vous permet de créer une file d'attente avant de mettre en relation avec vos collaborateurs les interlocuteurs qui vous contactent. Cette solution s’adapte à vos besoins et à votre propre organisation en fonction de ce que vous souhaitez paramétrer.
 
-Vous avez la possibilité de jouer un son d’accueil, personnaliser la musique d’attente ou encore définir une stratégie d'ordre d'appels. Les lignes des collaborateurs assignées à la file d'appels pourront, par exemple, sonner toutes en même temps ou selon un ordre défini par vos soins. Des paramètres supplémentaires vous permettent également de définir des scénarios en fonction de plages horaires, ou un nombre maximum d'appelants simultanés dans la file, ainsi qu'un temps d'attente maximal.
+Cette configuration n'est accessible qu'en mode simple. Reportez-vous aux instructions décrites dans notre documentation « [Configurer une file d’appels](../les-files-d-appels/){.external} » si vous désirez en apprendre plus.
 
-Si vous ne pouvez pas répondre, votre interlocuteur sera redirigé vers le répondeur d’une ligne OVH.
+#### 2.3 Conférence
 
-Reportez-vous aux instructions décrites dans notre documentation [« Configurer une file d’appels sur un numéro alias »](https://docs.ovh.com/fr/voip/les-files-d-appels/){.external} si vous désirez en apprendre plus.
+La conférence permet à toutes les personnes composant un numéro donné d’être en communication simultanément. Différentes fonctionnalités sont alors disponibles : protéger la conférence par un code, définir une annonce personnalisée, enregistrer les participants et recevoir un rapport par e-mail à la fin de celle-ci. Une interface spécifique vous propose également de suivre en temps réel les discussions des participants, mais aussi de gérer leur audio et leur micro.
 
-#### 2.4 La file d'appels (mode expert)
+Cette configuration n'est accessible qu'en mode simple uniquement. Reportez-vous aux instructions décrites dans notre documentation « [Créer et gérer des conférences téléphoniques](../conference/){.external} » si vous désirez en apprendre plus.
 
-Avec le mode expert de la file d’appels, vous pouvez gérer le flux de vos appels de bout en bout.
+#### 2.4 Serveur vocal interactif
 
-Par le biais d'une interface, vous avez la possibilité de programmer, étape par étape, le déroulement de vos appels entrants. En fonction du numéro des appels entrants ou des plages horaires, jouez des sons d’accueil, personnalisez votre musique d’attente et définissez l'ordre dans lequel vos collaborateurs ou différents services sonneront.
+Le serveur vocal interactif (SVI) vous propose une interface simple pour créer un menu interactif. L’appelant est invité, via des messages pré-enregistrés, à interagir avec le serveur grâce aux touches de son téléphone. Selon la configuration, il est alors possible de transférer votre interlocuteur vers un autre numéro, de le renvoyer vers une messagerie OVH, de raccrocher ou de lire des sons.
 
-#### 2.5 Le serveur vocal interactif
+Cette configuration n'est accessible qu'en mode simple.
 
-Le serveur vocal interactif (SVI) voux propose une interface simple pour créer un menu interactif.
+#### 2.5 SVI VXML
 
-L’appelant est invité, via des messages pré-enregistrés, à interagir avec le serveur grâce aux touches de son téléphone. Selon la configuration, il est alors possible de transférer votre interlocuteur vers un autre numéro, de le renvoyer vers une messagerie OVH, de raccrocher ou de lire des sons.
+Le serveur vocal interactif en VXML permet, via une configuration VXML 2.1, d’utiliser un menu interactif avancé. L’appelant est invité, par des messages pré-enregistrés ou de la synthèse vocale, à interagir avec le serveur grâce aux touches de son téléphone. Selon la configuration choisie, il sera alors possible de lire des sons ou de transférer l'appelant vers d’autres numéros. Veuillez noter que seuls les transferts vers les numéros OVH sont possibles.
 
-#### 2.6 Le serveur vocal interactif (mode expert) en VXML
+Cette configuration n'est accessible qu'en mode expert uniquement.
 
-Le serveur vocal interactif en VXML permet, via une configuration VXML 2.1, d’utiliser un menu interactif avancé. 
+#### 2.6 Le Contact Center Solution
 
-L’appelant est invité par des messages pré-enregistrés ou de la synthèse vocale à interagir avec le serveur grâce aux touches de son téléphone. Selon la configuration, il sera alors possible de lire des sons ou de transférer l'appelant vers d’autres numéros. Veuillez noter que seuls les transferts vers les numéros OVH sont possibles.
+En cours de développement chez OVH, le Contact Center Solution (ou CCS) est une évolution de la file d'appels. Il permet de gérer les flux d'appels entrants et sortants et d'en obtenir des statistiques détaillées. Étape par étape, vous pouvez définir votre stratégie afin de décrocher les appels comme bon vous semble.
 
-#### 2.7 Le Contact Center Solution
+Via une interface unique, vous avez la possibilité de gérer une file d'appels, de définir des services (par exemple : service commercial, technique, production, etc.), de personnaliser vos sons (musique d'attente, musique de prédécroché), mais aussi de mettre en place une supervision de l’ensemble de vos postes téléphoniques.
 
-En cours de développement chez OVH, le Contact Center Solution (ou CCS) est une évolution de la file d'appels. 
-
-Il permet de gérer les flux d'appels entrants et sortants et d'en obtenir des statistiques détaillées. Étape par étape, vous pouvez définir votre stratégie afin de décrocher les appels comme bon vous semble.
-
-Par le biais d'une interface unique, vous avez la possibilité de gérer une file d'appels, de définir des services (par exemple : service commercial, technique, production, etc.), de personnaliser vos sons (musique d'attente, musique de prédécroché), mais aussi de mettre en place une supervision de l’ensemble de vos postes téléphoniques.
-
-#### 2.8 Le Contact Center Solution (mode expert)
-
-Le mode expert du Contact Center Solution reprend les éléments du mode classique, mais il permet en plus de coupler les différentes files d'appels mises en place avec un plan de numérotation adapté à vos besoins.
-
-Ce mode apporte également au Contact Center Solution quelques options supplémentaires disponibles uniquement via l'API OVH : 
+Ce mode apporte également au Contact Center Solution des options supplémentaires disponibles uniquement via l'API OVH : 
 
 - l'enregistrement des appels entrants et sortants ; 
 - la mise en place d’une bannière de supervision ;
 - la mise en place d'une supervision intergroupe.
 
-#### 2.9 Le mode conférence
-
-La conférence vous permet d’être en relation par téléphone avec plusieurs interlocuteurs simultanément. Vous avez la possibilité de protéger la conférence par un code, de définir une annonce personnalisée, d'enregistrer les conversations ainsi que de recevoir un rapport par e-mail lorsque celle-ci se termine. 
-
-Par le biais d'une interface, vous avez la possibilité de suivre en temps réel les discussions des participants, ainsi que d'activer ou de désactiver l'audio et/ou le micro des participants.
+Cette configuration n'est accessible qu'en mode expert.
 
 ### Étape 3 : appliquer la configuration souhaitée
 
-Une fois votre choix effectué, sélectionnez dans le menu déroulant la configuration que vous souhaitez appliquer à votre numéro alias, puis cliquez sur le bouton `Valider`{.action}.
+Une fois votre choix effectué, sélectionnez dans le menu déroulant la configuration que vous souhaitez appliquer à votre numéro, puis cliquez sur le bouton `Paramétrer`{.action}.
 
 Patientez quelques instants afin que le changement soit pris en compte.
-
-![configurationnumeroalias](images/configurer-numero-alias-step2.png){.thumbnail}
 
 ## Aller plus loin
 
