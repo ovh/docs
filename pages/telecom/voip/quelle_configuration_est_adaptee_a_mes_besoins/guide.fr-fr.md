@@ -44,8 +44,8 @@ Vous trouverez ci-dessous un récapitulatif des différentes configurations. Pou
 
 |Configuration en « mode simple »|Configuration en « mode expert »| 
 |---|---| 
-|[Redirection d'appels](./#21-redirections-dappels)|[SVI VXML](./#25-svi-vxml)|
-|[File d'appels](./#22-file-dappels)|[Contact Center Solution](./#26-contact-center-solution)|
+|[Redirection d'appels](./#21-redirection-dappels)|[SVI VXML](./#25-svi-vxml)|
+|[File d'appels](./#22-file-dappels)|[Contact Center Solution](./#26-le-contact-center-solution)|
 |[Conférence](./#23-conference)| |
 |[Serveur vocal interactif](./#24-serveur-vocal-interactif)| |
 
