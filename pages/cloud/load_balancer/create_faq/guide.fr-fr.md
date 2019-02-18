@@ -1,10 +1,9 @@
 ---
-title: Load Balancer FAQ
+title: 'Load Balancer FAQ'
 slug: iplb-faq
-excerpt: FAQ Load Balancer
+excerpt: 'FAQ Load Balancer'
 section: FAQ
 ---
-
 
 ## Comment configurer mon Firewall pour accepter le trafic provenant du service Load Balancer OVH ?
 Lors de l'utilisation du Load-Balancer, vos clients ne se connectent pas directement à vos serveurs. Une bonne pratique est de mettre en place un Firewall (Pare-Feu) pour autoriser uniquement le trafic provenant du service Load Balancer OVH.
@@ -59,7 +58,7 @@ L'IP fail-over est une IP supplémentaire sur laquelle peut être joint votre se
 ## Comment commander un certificat SSL gratuit ?
 Il est possible de commander un certificat SSL gratuit pour le Load Balancer OVH.
 
-- Pour commander un certificat gratuit, vous pouvez utiliser la fonction API suivantei, en renseignant le champs `fqdn` :
+- Pour commander un certificat gratuit, vous pouvez utiliser la fonction API suivante, en renseignant le champs `fqdn` :
 
 > [!api]
 >

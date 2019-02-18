@@ -1,8 +1,8 @@
 ---
-title: Fonctionnement du certificat SSL sur le CDN
+title: 'Fonctionnement du certificat SSL sur le CDN'
 slug: certificat-ssl-cdn
-excerpt: Découvrez comment ajouter un certificat SSL sur le CDN
-section: Premiers pas
+excerpt: 'Découvrez comment ajouter un certificat SSL sur le CDN'
+section: 'Premiers pas'
 order: 4
 ---
 
@@ -25,7 +25,7 @@ Il est possible d'ajouter un [certificat SSL](https://www.ovh.com/fr/ssl/){.exte
 ### Obtenir le certificat Let's Encrypt fourni par OVH pour mes sous-domaines utilisant le CDN
 
 - Si vous n'avez configuré aucun certificat et que vous ajoutez votre premier sous-domaine au CDN, un certificat Let's Encrypt sera automatiquement créé pour ce nom de domaine.
-- Si ajoutez un autre sous-domaine au CDN, le certificat sera automatiquement régénéré afin d'y inclure le nouveau sous-domaine que vous venez de configurer.
+- Si vous ajoutez un autre sous-domaine au CDN, le certificat sera automatiquement régénéré afin d'y inclure le nouveau sous-domaine que vous venez de configurer.
 
 
 Pour que la création du certificat se déroule correctement, il est nécessaire que le sous-domaine que vous venez d'ajouter pointe correctement vers le CDN. Pour cela référez-vous au guide vous indiquant comment effectuer une [première configuration d'un nom de domaine](https://docs.ovh.com/fr/cdn-infrastructure/premiere-configuration-domaine-sur-cdn/){.external}.
