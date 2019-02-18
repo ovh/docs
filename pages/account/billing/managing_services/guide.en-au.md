@@ -87,7 +87,7 @@ You can undo this action up to 24 hours before the expiry date by clicking again
 
 ![manageservices](images/manage-ovh-services-step4.png){.thumbnail}
 
-### Delete a service immediately.
+#### Delete a service immediately.
 
 This action is only available for Web Hosting plans, and deletes the service immediately. This means that the service is deleted before its expiry date, without waiting for the contract duration to end.
 

@@ -86,7 +86,7 @@ Sachez que vous pouvez revenir sur cette décision jusqu'à 24 heures avant l'é
 
 ![manageservices](images/manage-ovh-services-step4.png){.thumbnail}
 
-### Supprimer immédiatement un service
+#### Supprimer immédiatement un service
 
 Cette action, uniquement valable pour les [hébergements web](https://www.ovh.com/fr/hebergement-web/){.external}, supprime immédiatement le service sélectionné. C'est-à-dire avant sa date d'expiration, sans attendre le terme du contrat.
 

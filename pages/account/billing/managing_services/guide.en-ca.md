@@ -7,7 +7,6 @@ section: 'Managing orders, bills and services'
 
 **Last updated 5th December 2018**
 
-
 ## Objective
 
 In the OVH Control Panel, you can manage all of your OVH services. 
@@ -18,7 +17,6 @@ In the OVH Control Panel, you can manage all of your OVH services.
 >
 > Depending on your place of residence and its local legislations, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to your OVH contracts, which you can access via the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} by going to `My services`{.action} then `My contracts`{.action}.
 >
-
 
 ## Requirements
 
@@ -87,7 +85,7 @@ You can undo this action up to 24 hours before the expiry date by clicking again
 
 ![manageservices](images/manage-ovh-services-step4.png){.thumbnail}
 
-### Delete a service immediately.
+#### Delete a service immediately.
 
 This action is only available for Web Hosting plans, and deletes the service immediately. This means that the service is deleted before its expiry date, without waiting for the contract duration to end.
 
