@@ -1,30 +1,34 @@
 ---
-title: Remplacement à chaud - Raid Logiciel
+title: 'Remplacer à chaud un disque sur un serveur en RAID logiciel'
 slug: hotswap-raid-soft
-excerpt: Retrouvez ici les principales étapes à suivre pour permettre le remplacement d’un disque à chaud sur un serveur en Raid Logiciel.
-section: RAID & disques
+excerpt: 'Découvrez les principales étapes pour remplacer à chaud un disque sur un serveur en RAID logiciel'
+section: 'RAID & disques'
 ---
 
+**Dernière mise à jour le 21/11/2016**
+
+## Objectif
+
+Si l'un des disques de votre serveur est hors d'usage, vous avez la possibilité de le remplacer à chaud si vous disposez d'un modèle Haut de gamme compatible.
+
+**Découvrez les principales étapes pour remplacer à chaud un disque sur un serveur en RAID logiciel.**
 
 ## Prérequis
-Le remplacement à chaud n'est possible que sur les gammes de serveur mHG, HG, et bHG.
 
-Pour réaliser les différentes étapes de ce guide, il faut :
-
-- Disposer d'un serveur mHG, HG, ou bHG.
-- Avoir un serveur en RAID Logiciel (avec une carte LSI).
+- Bénéficier d'un serveur mHG, HG ou BHG.
+- Posséder un RAID logiciel (avec une carte LSI).
 - Disposer d'un accès SSH (Linux) ou RDP (Windows).
-- L'utilitaire sas2ircu doit être installé au préalable. (disponible via le moteur de recherche [broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external})
+- Avoir installé l'utilitaire « sas2ircu » (utilisez le moteur de recherche [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external} pour le trouver).
 
+## En pratique
 
-## Sous Linux
-Dans ce guide, nous allons partir du principe que vous avez reçu une alerte pour le disque /dev/sdb, Serial Number **K4GW439B**, qui est défectueux et que vous voulez remplacer à chaud.
+### Sous Linux
 
-Pour cela, nous allons avoir besoin de l'**Enclosure ID**, le **Slot ID**, et le **Serial Number** du disque à remplacer.
+#### Étape 1 : identifier le disque concerné
 
+Afin d'illustrer le propos de ce guide, nous partons du principe que nous avons reçu une alerte pour le disque `/dev/sdb`. Celui-ci est défectueux et nous souhaitons le remplacer à chaud. **Adaptez donc les éléments de cette documentation à votre situation.**
 
-### Étape 1 &#58; Identifier le disque
-Nous avons été averti que notre disque SDB est HS, nous allons alors le tester et vérifier son **Serial Number**.
+Débutez par tester et vérifier le « **Serial Number** » du disque concerné.
 
 ```sh
 root@ns3054662:/home# smartctl -a /dev/sdb
@@ -87,32 +91,30 @@ root@ns3054662:/home# smartctl -a /dev/sdb
 >>> Long (extended) Self Test duration: 34237 seconds [570.6 minutes]
 ```
 
+Vous constatez ainsi que : 
 
-Ou plus simplement :
+- le disque « **SDB** » est effectivement hors d'usage du fait d'erreurs non corrigées (« uncorrected errors ») ;
+- son « **Serial Number** » correspond bien à l'alerte reçue (via le datacenter ou tout autre outil de monitoring).
+
+Pour obtenir uniquement le « **Serial Number** » :
 
 ```sh
 root@ns3054662:/home# smartctl -a /dev/sdb | grep Serial
 >>> Serial number:        K4GW439B
 ```
 
-On constate donc que notre disque SDB est effectivement HS (uncorrected errors dans notre cas), et que son Serial Number correspond bien à l'alerte reçue (via le Datacentre ou tout autre outil de monitoring).
+#### Étape 2 : récupérer la position du disque
 
-Nous pouvons donc passer à l'étape suivante qui consiste à récupérer les informations **Enclosure ID** et **Slot ID** du disque à remplacer.
+Vous devez maintenant retrouver le « **Slot ID** » et l'« **Enclosure ID** » du disque concerné. Pour cela, utilisez l'outil « sas2ircu » préalablement installé sur le serveur.
 
-
-### Étape 2 : Récupérer la position du disque
-Nous allons récupérer le **Slot ID** et l'**Enclosure ID** de notre disque SDB HS, pour cela nous allons avoir besoin de l'outil sas2ircu d'installé sur le serveur.
-
-Avant tout, on vérifie que les disques sont bien connectés via une LSI.
+Débutez alors par vérifier que les disques sont bien connectés via une carte LSI.
 
 ```sh
 root@ns3054662:/home# lspci | grep -i LSI
 >>> 81:00.0 Serial Attached SCSI controller: LSI Logic / Symbios Logic SAS2004 PCI-Express Fusion-MPT SAS-2 [Spitfire] (rev 03)
 ```
 
-On constate que nous possédons bien une carte LSI.
-
-Nous devons maintenant déterminer l'ID de cette carte LSI.
+Si tel est le cas, déterminez l'ID de cette carte LSI.
 
 ```sh
 root@ns3054662:/home# ./sas2ircu list
@@ -128,9 +130,9 @@ root@ns3054662:/home# ./sas2ircu list
 >>> SAS2IRCU: Utility Completed Successfully.
 ```
 
-L'index correspond à l'ID, notre carte a donc l'index/ID 0.
+L'index correspond à l'ID. Ici, la carte a donc l'index/ID 0.
 
-Avec cette information, on peut désormais récupérer le **Slot ID** et l'**Enclosure ID** de notre disque SDB, **Serial Number** K4GW439B.
+Avec cette information, récupérez à présent pour le disque concerné (via son « **Serial Number** ») : le « **Slot ID** » et l'« **Enclosure ID** ».
 
 ```sh
 root@ns3054662:/home# ./sas2ircu 0 display | grep -B 7 -A 2 K4GW439B
@@ -146,15 +148,13 @@ root@ns3054662:/home# ./sas2ircu 0 display | grep -B 7 -A 2 K4GW439B
 >>>   Drive Type                              : SAS_HDD
 ```
 
-Avec cette commande on récupère directement les informations de notre disque SDB.
+Cette commande permet d'obtenir les informations du disque, dont le « **Serial Number** » qui est ici le K4GW439B.
 
-Bien sur, on remplacera **K4GW439B** par le Serial Number du disque à remplacer, et **0** par l'ID de la carte RAID concernée.
+Dans notre exemple, nous avons donc récupéré l'« **Enclosure ID** » (correspondant à 1) et le « **Slot ID** » (correspondant à 3).
 
-Pour notre exemple, le disque a donc l'**Enclosure ID** 1, et le **Slot ID** 3.
+#### Étape 3 : allumer le disque
 
-
-### Étape 3 : Allumer un disque
-Avec les informations récupérées aux étapes précédentes, nous pouvons allumer la LED du disque HS en vue du remplacement avec la commande : ./sas2ircu 0 locate EncID:SlotID on
+Muni des informations récupérées durant les étapes précédentes, allumez la LED du disque hors d'usage en vue de son remplacement avec la commande `./sas2ircu 0 locate EncID:SlotID on`. Personnalisez celle-ci selon votre situation, comme dans l'exemple ci-dessous :
 
 ```sh
 root@ns3054662:/home# ./sas2ircu 0 locate 1:3 on
@@ -167,17 +167,11 @@ root@ns3054662:/home# ./sas2ircu 0 locate 1:3 on
 >>> SAS2IRCU: Utility Completed Successfully.
 ```
 
-Dans cet exemple, nous avons donc repris les informations vus précédemment où 1 est l'Enclosure ID, 3 le Slot ID, et 0 l'Index de la carte RAID.
+Vous pouvez désactiver le clignotement du disque, en remplaçant « on » par « off » dans la commande.
 
-Vous pouvez éteindre le clignotement du disque en remplacant "on" par "off" dans la commande.
+#### Étape 4 : sortir le disque défectueux du RAID
 
-Il reste maintenant à passer à la dernière étape qui consiste à sortir le disque défectueux du Raid Soft avant l'intervention.
-
-
-### Étape 4 : Sortir le disque du RAID
-Avant de sortir le disque défectueux du RAID, nous devons le passer en Faulty si ce n'est pas déjà le cas (toujours le disque SDB à remplacer dans notre exemple).
-
-On va regarder dans un premier temps l'état des RAID.
+Si ce n'est pas déjà le cas, passez le disque défectueux en « **»Faulty** ». Puis regardez l'état du RAID.
 
 ```sh
 root@ns3054662:/home# cat /proc/mdstat
@@ -192,9 +186,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-On voit que notre disque SDB HS fait parti de md1 et md2 (sdb1 et sdb2).
-
-Nous allons désormais passer le disque en Faulty (respectivement sdb1 dans md1, et sdb2 dans md2).
+Dans cet exemple, le disque défectueux fait partie de md1 et md2 (sdb1 et sdb2). Nous allons donc passer celui-ci en « **»Faulty** », respectivement sdb1 dans md1 et sdb2 dans md2.
 
 ```sh
 root@ns3054662:/home# mdadm --manage /dev/md1 --set-faulty /dev/sdb1
@@ -205,7 +197,8 @@ root@ns3054662:/home# mdadm --manage /dev/md1 --set-faulty /dev/sdb1
 root@ns3054662:/home# mdadm --manage /dev/md2 --set-faulty /dev/sdb2
 >>> mdadm: set /dev/sdb2 faulty in /dev/md2
 ```
-On vérifie à nouveau l'état des RAID.
+
+À l'issue de ces manipulations, vérifiez de nouveau l'état du RAID.
 
 ```sh
 root@ns3054662:/home# cat /proc/mdstat
@@ -220,9 +213,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-Les sdb1 et sdb2 sont bien passés en faulty (F).
-
-On peut donc maintenant sortir le disque des RAID.
+Les sdb1 et sdb2 sont bien passés en faulty **(F)**. Vous pouvez à présent sortir le disque du RAID.
 
 ```sh
 root@ns3054662:/home# mdadm --manage /dev/md1 --remove /dev/sdb1
@@ -234,7 +225,7 @@ root@ns3054662:/home# mdadm --manage /dev/md2 --remove /dev/sdb2
 >>> mdadm: hot removed /dev/sdb2 from /dev/md2
 ```
 
-Puis on vérifie une dernière fois que le disque n'est plus présent.
+Vérifiez enfin que le disque n'est plus présent.
 
 ```sh
 root@ns3054662:/home# cat /proc/mdstat
@@ -249,91 +240,60 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-Nous sommes désormais prêt à faire remplacer le disque défectueux par un technicien en Datacentre.
+Le disque défectueux est désormais prêt à être remplacé par un technicien en datacenter. Une fois l'opération effectuée, vous n'aurez plus qu'à resynchroniser le RAID. Pour cela, aidez-vous de la documentation suivante : [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/){.external}.
 
-Comme nous avons bien préparé l'intervention, le nouveau disque prendra comme Nom SDB, et il restera plus qu'à [resynchroniser le RAID](../guide.fr-fr.md){.ref}.
+### Sous Windows
 
+#### Étape 1 : identifier le disque
 
-## Sous Windows
-Le guide sous Windows sera semblable, dans l'ensemble, au guide de remplacement pour Linux. En effet, nous allons utiliser le même utilitaire : sas2ircu, et les commandes sont les mêmes que sous Linux.
-
-
+Afin d'illustrer le propos de ce guide, nous partons du principe que nous avons reçu une alerte pour le disque `/dev/sdb`. Celui-ci est défectueux et nous souhaitons le remplacer à chaud. **Adaptez donc les éléments de cette documentation à votre situation.**
 
 > [!primary]
 >
-> Il sera important de lancer le terminal de commande en tant qu'administrateur pour ne pas avoir d'erreur.
+> Il est important de lancer le terminal de commande en tant qu'administrateur, afin de ne pas obtenir d'erreur.
 > 
 
-Dans ce guide, nous allons partir du principe que vous avez reçu une alerte pour le disque /dev/sdb, Serial Number **K4G187WB**, qui est défectueux et que vous voulez remplacer à chaud.
-
-Pour cela, nous allons avoir besoin de l'**Enclosure ID**, le **Slot ID**, et le **Serial Number** du disque à remplacer.
-
-
-### Étape 1 : Identifier le disque
-Nous avons été averti que notre disque SDB est HS. Nous allons donc tester le disque et vérifier son **Serial Number**.
-
+Débutez par tester et vérifier le « **Serial Number** » du disque concerné. **Dans la capture ci-dessous, le stockage n'est pas réellement hors d'usage mais nous ferons comme si c'était le cas.**
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
+Vous constatez ainsi que : 
 
-> [!warning]
->
-> Le disque utilisé pour notre guide n'est pas réellement HS, mais nous ferons comme ci c'était le cas :)
-> 
+- le disque « **SDB** » est effectivement hors d'usage du fait d'erreurs non corrigées (« uncorrected errors ») ;
+- son « **Serial Number** » correspond bien à l'alerte reçue (via le datacenter ou tout autre outil de monitoring).
 
-On constate donc que le Serial Number du disque correspond bien à l'alerte reçue (via le Datacentre ou tout autre outil de monitoring).
+#### Étape 2 : récupérer la position du disque
 
-Nous pouvons donc passer à l'étape suivant qui consiste à récuéprer les informations **Enclosure ID**, et **Slot ID** du disque à remplacer.
+Vous devez maintenant retrouver le « **Slot ID** » et l'« **Enclosure ID** » du disque concerné. Pour cela, utilisez l'outil « sas2ircu » préalablement installé sur le serveur.
 
-
-### Étape 2 : Récupérer la position du disque
-Nous allons maintenant récupérer le **Slot ID** et l'**Enclosure ID** de notre disque SDB HS. Pour cela, nous allons avoir besoin de l'outils sas2ircu d'installé sur le serveur.
-
-On va dans un premier temps déterminer l'ID de la carte RAID LSI présente dans le serveur.
-
+Débutez par déterminer l'ID de cette carte LSI.
 
 ![id_lsi_windows](images/id_lsi_windows.png){.thumbnail}
 
-On a donc notre carte LSI qui a pour index/ID "0".
+Notre carte LSI a donc l'index/ID « 0 ».
 
-Avec cette information, on peut désormais récupérer le **Slot ID** et l'**Enclosure ID** de notre SDB, **Serial Number** K4G187WB.
-
-
-
-> [!primary]
->
-> Le Serial Number K4G187WB sera bien entendu à remplacer par le vôtre.
-> 
-
+Avec cette information, récupérez à présent pour le disque concerné (via son « **Serial Number** ») : le « **Slot ID** » et l'« **Enclosure ID** ».
 
 ![select-string](images/select-string.png){.thumbnail}
 
-Vous pouvez aussi chercher les informations en listant les disques d'une façon plus générale.
+Cette commande permet d'obtenir les informations du disque, dont le « **Serial Number** » qui est ici le K4G187WB.
 
+Dans notre exemple, nous avons donc récupéré l'« **Enclosure ID** » (correspondant à 1) et le « **Slot ID** » (correspondant à 1).
 
-![0display1](images/0display1.png){.thumbnail}
+#### Étape 3 : allumer le disque
 
-
-![0display2](images/0display2.png){.thumbnail}
-
-On constate donc que notre disque **Serial Number** K4G187WB a pour **Enclosure ID** 1, et pour **Slot ID** 1 (2ème disque de la liste dans le cas présent).
-
-
-### Étape 3 : Allumer le disque
-Avec les informations récupérées aux étapes précédentes, nous pouvons allumer la LED du disque HS en vue du remplacement avec la commande suivante : .\sas2ircu.exe ID locate EncID:SlotID on
-
+Muni des informations récupérées durant les étapes précédentes, allumez la LED du disque hors d'usage en vue de son remplacement avec la commande `./sas2ircu 0 locate EncID:SlotID on`. Personnalisez celle-ci selon votre situation, comme dans l'exemple ci-dessous :
 
 ![locate](images/locate.png){.thumbnail}
 
+Vous pouvez désactiver le clignotement du disque, en remplaçant « on » par « off » dans la commande.
 
+### Étape 4 : sortir le disque défectueux du RAID
 
-> [!primary]
->
-> Vous pouvez éteindre le clignotement du disque une fois celui ci remplacé en utilisant "off" à la place de "on" dans la commande précédente.
-> 
+Réalisez cette manipulation depuis l'interface « **Gestion des disques** » de votre serveur Windows.
 
-Il reste maintenant à passer à la dernière étape, sortir le disque du RAID Soft avant intervention.
+Le disque défectueux est désormais prêt à être remplacé par un technicien en datacenter. Une fois l'opération effectuée, vous n'aurez plus qu'à resynchroniser le RAID. Pour cela, aidez-vous de la documentation suivante : [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/){.external}.
 
+## Aller plus loin
 
-### Étape 4 : Sortir le disque du RAID
-A venir...
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
