@@ -21,7 +21,6 @@ Lors de la première configuration du Content Delivery Network (CDN), il est né
 - Avoir accès à la gestion de la zone DNS de votre nom de domaine.
 - Avoir accès à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-
 ## En pratique
 
 ### Ajouter le nom de domaine sur le CDN
@@ -42,7 +41,6 @@ En *backend*, vous pouvez sélectionner un *backend* déjà existant s'il ne s'a
 
 ![Ajouter un backend](images/add_cdn_domain_step_2.png){.thumbnail}
 
-
 Après quelques instants, votre nom de domaine sera disponible dans l'espace client et vous pourrez effectuer sa configuration.
 
 Pour que vos requêtes passent bien par notre infrastructure CDN, vous devez modifier votre zone DNS pour ce sous-domaine et faire pointer un enregistrement CNAME vers le **cdn.*votredomaine.ovh*.web.cdn.anycast.me**.
@@ -53,8 +51,7 @@ Pour que vos requêtes passent bien par notre infrastructure CDN, vous devez mod
 > L'utilisation de l'enregistrement CNAME est importante. Elle permet à la fonction `Bypass` de fonctionner correctement. Si vous utilisez un enregistrement de type A, le CDN sera fonctionnel, mais vous perdrez l'usage du *bypass*.
 >
 
-
-Si vous configurez la zone DNS de votre domaine depuis votre espace client, vous pouvez ajouter l'entrée suivante (en adaptant le sous-domaine à la configuration de votre souhait) :
+Si vous configurez la zone DNS de votre domaine depuis votre espace client, vous pouvez ajouter l'entrée suivante (en adaptant le sous-domaine à la configuration de votre choix) :
 
 ![Nom de photo](images/cname_field.png){.thumbnail}
 
