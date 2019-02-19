@@ -5,7 +5,7 @@ excerpt: 'This guide explains how to configure IPv6 addresses on our infrastruct
 section: 'Network Management'
 ---
 
-**Last updated 20th July 2018**
+**Last updated 19th February 2019**
 
 ## Objective
 
@@ -121,12 +121,12 @@ Your server's network configuration file is located in /etc/sysconfig/network-sc
 Amend the file so that it looks like the example below. In this example, the network interface is called eth0. The interface on your server may differ. Also, we have omitted the IPv4 Failover configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
 
 ```sh
-IPv6INIT=yes
-IPv6_AUTOCONF=no
-IPv6_DEFROUTE=yes
-IPv6_FAILURE_FATAL=no
-IPv6ADDR=YOUR_IPv6/IPv6_PREFIX ---> (basically your IPv6 in CIDR notation)
-IPv6_DEFAULTGW=IPv6_GATEWAY
+IPV6INIT=yes
+IPV6_AUTOCONF=no
+IPV6_DEFROUTE=yes
+IPV6_FAILURE_FATAL=no
+IPV6ADDR=YOUR_IPv6/IPv6_PREFIX ---> (basically your IPv6 in CIDR notation)
+IPV6_DEFAULTGW=IPv6_GATEWAY
 ```
 
 #### Step 4: Save the file and reboot the server
