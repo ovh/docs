@@ -8,8 +8,8 @@ sections: Per iniziare
 >
 > ### Siti Web e progetti
 >
-> - [Pubblicare un sito Web (in inglese)](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/)
-> - [Migrare un sito e un servizio di posta in OVH (in inglese)](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/)
+> - [Mettere online un sito Internet su un hosting Web](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/)
+> - [Migrare un sito e un servizio di posta in OVH](https://docs.ovh.com/it/hosting/migrare-un-sito-in-ovh/)
 > - [Ospitare più siti su uno stesso hosting (in inglese)](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/)
 > - [Installare i moduli in 1 click OVH](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/)
 >
@@ -22,7 +22,7 @@ sections: Per iniziare
 >
 > ### Password
 >
-> - [Modificare la password di un account FTP (in inglese)](https://docs.ovh.com/gb/en/hosting/modify-ftp-user-password/)
+> - [Modificare la password di un utente FTP](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/)
 > - [Modificare la password del database di un piano di hosting (in inglese)](https://docs.ovh.com/gb/en/hosting/change-password-database/)
 >
 > ### Database

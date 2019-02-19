@@ -23,11 +23,11 @@ sections: Primeros pasos
 > ### Contraseña
 >
 > - [Cambiar la contraseña de un usuario FTP](https://docs.ovh.com/es/hosting/cambiar-contrasena-usuario-ftp/)
-> - [Cambiar la contraseña de una base de datos de un plan de hosting (EN)](https://docs.ovh.com/gb/en/hosting/change-password-database/)
+> - [Cambiar la contraseña de la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/cambiar-contrasena-base-de-datos/)
 >
 > ### Bases de datos
 >
-> - [Crear una base de datos en un plan de hosting (EN)](https://docs.ovh.com/gb/en/hosting/creating-database/)
-> - [Descargar el backup de una base de datos de un plan de hosting (EN)](https://docs.ovh.com/es/hosting/web_hosting_exportacion_de_una_base_de_datos/)
-> - [Importar un backup en una base de datos de un plan de hosting (EN)](https://docs.ovh.com/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/)
+> - [Crear una base de datos en un alojamiento web](https://docs.ovh.com/es/hosting/crear-base-de-datos/)
+> - [Exportar una copia de seguridad de la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_exportacion_de_una_base_de_datos/)
+> - [Importar una copia de seguridad en la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/)
 >
