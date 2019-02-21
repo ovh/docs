@@ -10,6 +10,7 @@ order: 6
 ## Informations et pre-requis
 
 ### Informations
+
 Deux choix s'offrent à vous :
 
 - Déléguer tout le service email d'un domaine à un identifiant
@@ -20,47 +21,35 @@ Utile dans le cas ou vous souhaitez déléguer  **tous**  les comptes emails li�
 
 Utile dans le cas ou vous souhaitez déléguer  **seulement un ou certains comptes emails et leur filtres**  d'un nom de domaine, à un identifiant OVH. Cela  **ne permet pas**  à l'identifiant final de gérer  **les répondeurs emails, les redirections, ni les Mailing Lists** . Cela ne permet pas non plus à l'identifiant final de supprimer le compte, ou d'importer les emails d'un autre compte, ni de lui-même redéléguer le compte.
 
-
 ### Pre-requis
-Dans un premier temps, connectez-vous à votre [espace client](https://www.ovh.com/manager/web){.external} à l'aide de votre couple identifiant (nic- handle) - mot de passe.
 
-
-![hosting](images/2995.png){.thumbnail}
-
-Puis rendez-vous dans la section "Emails" sur la gauche.
-
+Dans un premier temps, connectez-vous à votre [espace client](https://www.ovh.com/manager/web){.external} à l'aide de votre couple identifiant (nic- handle) - mot de passe. Puis rendez-vous dans la section "Emails" sur la gauche.
 
 ![hosting](images/4135.png){.thumbnail}
-
 
 ## Deleguer vos emails
 
 ### Deleguer tout le service email d'un domaine a un identifiant
-- Sélectionnez le domaine concerné sur la gauche dans la liste des services à gauche
-- Puis, cliquez sur " Gérer vos partages pour toutes les adresses email "
 
+- Sélectionnez le service e-mail concerné dans le menu de gauche puis positionnez-vous sur l'onglet "Emails"
+- Cliquez alors sur "Gérer vos partages pour toutes les adresses email"
 
 ![hosting](images/4141.png){.thumbnail}
 
 - Enfin, entrez l'identifiant OVH avec qui partager l'administration de vos adresses emails et validez l'opération .
 
-
 ![hosting](images/4143.png){.thumbnail}
 
-Il est possible d'ajouter plusieurs identifiants OVH pour gérer chaque adresse email. Dans notre exemple, la gestion de toutes les adresses email a bien été partagée avec l'identifiant ab123456-ovh. Depuis son espace client, ab123456-ovh peut maintenant gérer les adresses email de mon domaine, ainsi que les répondeurs, les redirections/alias, et les Mailing Lists.
-
+Il est possible d'ajouter plusieurs identifiants OVH pour gérer chaque adresse email. La délégation permet de gérer les adresses email de mon domaine, ainsi que les répondeurs, les redirections/alias, et les Mailing Lists.
 
 ### Deleguer un ou plusieurs comptes emails a un identifiant
-- Sélectionnez le domaine concerné sur la gauche
-- A droite du compte email que vous souhaitez déléguer, cliquez sur le rouage
-- Cliquez sur " Délégation de la gestion "
 
+- Sélectionnez le domaine concerné sur la gauche
+- A droite du compte email que vous souhaitez déléguer, cliquez sur le bouton "..."
+- Cliquez sur " Délégation de la gestion "
 
 ![hosting](images/4138.png){.thumbnail}
 
 Vous pourrez saisir l'identifiant OVH avec qui partager l'administration de cette adresse email et valider l'opération. Il est possible d'ajouter plusieurs identifiants OVH pour gérer chaque adresse email.
 
-
 ![hosting](images/4140.png){.thumbnail}
-
-Dans notre exemple, la gestion de l'adresse email a bien été partagée avec l'identifiant ab123456-ovh. Depuis son espace client, ab123456-ovh peut maintenant gérer l'adresse email, ainsi que ses filtres.
