@@ -97,7 +97,7 @@ ping6 -c 4 2001:4860:4860::8888
 ```
 
 
-If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
+If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external}.
 
 ### Fedora 26 and above
 
@@ -197,7 +197,7 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
+If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external}.
 
 ### Ubuntu 18.04
 
