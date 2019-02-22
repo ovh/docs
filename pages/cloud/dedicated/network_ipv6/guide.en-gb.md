@@ -5,7 +5,7 @@ excerpt: 'This guide explains how to configure IPv6 addresses on our infrastruct
 section: 'Network Management'
 ---
 
-**Last updated 19th February 2019**
+**Last updated 22nd February 2019**
 
 ## Objective
 
@@ -151,7 +151,7 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
+If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external}.
 
 ### FreeBSD
 
