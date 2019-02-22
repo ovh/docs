@@ -26,10 +26,10 @@ client](https://www.ovh.com/manager/web){.external} à l'aide de votre identifia
 
 
 ### Changer le proprietaire
-- Après avoir sélectionné votre domaine, cliquez sur le bouton "Plus +", puis sur `Changer le propriétaire`{.action}.
+- Après avoir sélectionné votre domaine, dans la partie "Plan", cliquez sur le bouton "..." à côté des contacts, puis sur `Changer le propriétaire`{.action}.
 
 
-![hosting](images/3652.png){.thumbnail}
+![hosting](images/3652-2.png){.thumbnail}
 
 
 ### Cas 1 - Procedure par bon de commande
