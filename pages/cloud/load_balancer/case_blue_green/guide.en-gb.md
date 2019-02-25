@@ -22,7 +22,6 @@ To deploy a `blue-green`{.action} infrastructure, you need the following compone
 - a first server that hosts your production infrastructure
 - a second server with a similar infrastructure, dedicated to development
 
-
 ## Instructions
 
 ### Scenario
@@ -98,7 +97,7 @@ With the additional calls listed below, you can list, modify and delete your ser
 > @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm
 > 
 
-Associate a server with your farm, if it is a physical server hosting your production infrastructure. The service exposed to the front-end is supplied by the server’s port 8080. Please note that you can associate one or more servers with each farm (to balance the load and/or offer higher fault tolerance, for example).
+Associate a server with your farm, if it is a physical server hosting your production infrastructure. The service exposed to the front-end is supplied by the server’s port 8080. Please note that you can associate one or more servers with each farm (to balance the load and/or offer higher fault tolerance, for ex.).
 
 #### Via the OVH Control Panel:
 
