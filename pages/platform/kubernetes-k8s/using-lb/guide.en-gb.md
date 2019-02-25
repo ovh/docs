@@ -36,7 +36,7 @@ In this tutorial we are explaining how to deploy services on OVH Managed Kuberne
 This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../quickstart/).
 
 
-## Some concepts: `ClusterIP`, `NodePort`, `Ingress` and `LoadBalancer`
+## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
 
 When you begin to use Kubernetes for real applications, one of the first questions if how to get external traffic into your cluster. The [official doc](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types) gives you a good but rather dry explanation on the topic, but here we are trying to explain the concepts in a minimal, need-to-know way.
 
@@ -48,7 +48,7 @@ There are several ways to route the external traffic into your cluster:
 
 - Exposing services as `LoadBalancer`: Declaring a `Service` of type `LoadBalancer` exposes it externally using a cloud provider’s load balancer. The cloud provider will provision a load balancer for the `Service`, and map it to its automatically assigned `NodePort`. It is the most widely used method in production environments.
 
-### Using Kubernetes proxy and `ClusterIP`
+### Using Kubernetes proxy and ClusterIP
 
 The default Kubernetes `ServiceType` is `ClusterIp`, that exposes the `Service` on a cluster-internal IP. To reach the `ClusterIp` from an external computer, you can open a Kubernetes proxy between the external computer and the cluster. 
 
@@ -60,7 +60,7 @@ You can use `kubectl` to create such a proxy. When the proxy is up, you're direc
 
 This method isn't suited for a production environment, but it's interesting for development, debugging or other quick-and-dirty operations.
 
-### Exposing services as `NodePort`
+### Exposing services as NodePort
 
 Declaring a service of type `NodePort` exposes the `Service` on each Node’s IP at a static port, the `NodePort` (a fixed port for that `Service`, in the default range of 30000-32767). You can then access the `Service` from the outside of the cluster by requesting `<NodeIp>:<NodePort>`. Every service you deploy as `NodePort` will ve exposed in its own port, on every Node.
 
@@ -71,7 +71,7 @@ Declaring a service of type `NodePort` exposes the `Service` on each Node’s IP
 It's rather cumbersome to use `NodePort` `Services` in production. As you are using non-standard ports, you often need to set-up an external load balancer that listen in standard ports and redirects the traffic to  the `<NodeIp>:<NodePort>`.
 
 
- ### Exposing services as `LoadBalancer`
+ ### Exposing services as LoadBalancer
 
 Declaring a service of type `LoadBalancer` exposes it externally using a cloud provider’s load balancer. The cloud provider will provision a load balancer for the `Service`, and map it to its automatically assigned `NodePort`.How the traffic from that external load balancer is routed to the `Service` pods depends on the cluster provider.
 
@@ -89,7 +89,7 @@ The `LoadBalancer` is the best option for a production environnement, with two c
 > We are currently offering OVH Managed Kubernetes LoadBalancer service as a free preview, until the end of summer 2019. During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
 
 
-### What about `Ingress`
+### What about Ingress
 
 According to the [official documentation](https://kubernetes.io/docs/concepts/services-networking/ingress/), an `Ingress` is an API object that manages external access to the services in a cluster, typically HTTP. Whats the difference with the `LoadBalancer` or `NodePort`?
 
@@ -100,11 +100,11 @@ And Ingress is exposed to the outside of the cluster either via `ClusterIP` and 
 The main advance of using an `Ingress` behind a `LoadBalancer` is the cost: you can have lots of services behind a single `LoadBalancer`.
 
 
-## Deploying `LoadBalancer` `Services` on OVH Managed Kubernetes clusters
+## Deploying LoadBalancer Services on OVH Managed Kubernetes clusters
 
 In our OVH Managed Kubernetes we propose a load balancing service enabling you to use `LoadBalancer` `ServiceType`. We are currently offering OVH Managed Kubernetes LoadBalancer service as a free preview, until the end of summer 2019. During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
 
-## Deploying a Hello World `LoadBalancer` service 
+## Deploying a Hello World LoadBalancer service 
 
 Create a `hello.yaml` file for our `ovhplatform/hello` Docker image, defining the service type as `LoadBalancer`:
 

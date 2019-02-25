@@ -143,7 +143,7 @@ WordPress Admin URL: http://XXXXXXX.lb.c1.gra.k8s.ovh.net/admin
 
 And putting the URL in your browser will take you to the new blog:
 
-![Installing Wordpress](images/installing-wordpress-01.jpg){.thumbnail}
+![Installing Wordpress](images/installing-wordpress-01.png){.thumbnail}
 
 You also use the instructions given by the helm install to get the default username and password for your blog.
 
@@ -155,7 +155,7 @@ $ echo Password: $(kubectl get secret --namespace default mollified-lynx-wordpre
 Password: 0pdfhdfhfe5
 </code></pre>
 
-![Installing Wordpress](images/installing-wordpress-02.jpg){.thumbnail}
+![Installing Wordpress](images/installing-wordpress-02.png){.thumbnail}
 
 
 You have a working Wordpress on your OVH Managed Kubernetes Service, congratulations!
