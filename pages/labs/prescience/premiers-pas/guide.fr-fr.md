@@ -160,7 +160,7 @@ Le lancement d'une optimisation se fait ensuite via le bouton `Optimize`{.action
 * « Iteration » : Nombre d'entrainements pour cette tâche.
 * « Scoring Metric » : la valeur d'optimisation qui sera utilisée par l'algorithme afin d'évaluer la performance de ses résultats. Les valeurs possibles sont des indicateurs connus tels que l'Accuracy, le F1 Score ou le ROC AUC ;
 
-Choisissez le nombre d'itération que vous voulez et laissez tous les autres paramètres par défaut. Démarrez ensuite l'optimisation.
+Choisissez le nombre d'itérations que vous voulez et laissez tous les autres paramètres par défaut. Démarrez ensuite l'optimisation.
 
 ![optimisation_form](images/optimisation_form.png)
 
@@ -213,6 +213,7 @@ Cette tâche « Model-Metrics » correspond à l'étape de calcul des indicateur
 Une fois calculés, ces indicateurs sont visibles dans la vue de votre modèle sur l'onglet « Overview ».
 
 ![model_kpi](images/model_kpi.png)
+
 
 ## Aller plus loin
 
