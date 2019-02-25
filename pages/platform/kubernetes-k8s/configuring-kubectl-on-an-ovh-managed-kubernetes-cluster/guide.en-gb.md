@@ -1,6 +1,6 @@
 ---
 title: 'Configuring kubectl on an OVH Managed Kubernetes cluster'
-slug: configuring-kubectl-ovh-kubernetes
+slug: configuring-kubectl
 excerpt: 'Find out how to recover the *kubetcl* configuration file to interact with an OVH Managed Kubernetes cluster.'
 section: 'User guides'
 ---
