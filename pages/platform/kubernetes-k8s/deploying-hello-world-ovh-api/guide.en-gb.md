@@ -1,15 +1,17 @@
 ---
 title: 'Deploying a Hello World with the OVH API'
-slug: deploy-hello-world-ovh-api
+slug: deploying-hello-world-ovh-api
 excerpt: 'Find out how to deploy a Hello World application with the OVH API'
-section: 'Technical ressources'
+section: 'Tutorials'
 ---
 
 **Last updated 29th January, 2019.**
 
 Follow this quickstart guide to deploy a containerised *Hello World* application on your OVH Managed Kubernetes Service cluster, using the OVH API.
 
-In this guide, we are assuming you're using the [OVH API](https://api.ovh.com/) to manage your Kubernetes cluster. If you are using a different method, like the [OVH Control Panel](https://www.ovh.com/manager/cloud/), please refer to the relevant documentation.
+In this guide, we are assuming you're using the [OVH API](https://api.ovh.com/) to manage your Kubernetes cluster. If you are using a different method, like the [OVH Control Panel](https://www.ovh.com/manager/cloud/), please refer to the relevant documentation:
+
+- [OVH Managed Kubernetes Quickstart with OVH Cloud Manager](../deploying-hello-world/)
 
 ## Before you begin
 
@@ -70,4 +72,4 @@ You can use the `GET /kube/{serviceName}/publiccloud/node` entrypoint to list al
 
 You're now ready to deploy your first application.
 
-For more details about this process, you can refer to the `Deploying an application`{.action} documentation. 
+For more details about this process, you can refer to the [Deploying an application](../deployin-an-application/) documentation. 
