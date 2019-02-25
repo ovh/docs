@@ -1,8 +1,8 @@
 ---
-title: 'Installing Helm on OVH Managed Kubernetes'
+title: Installing Helm on OVH Managed Kubernetes
 slug: installing-helm
 excerpt: 'Find out how to install Helm on OVH Managed Kubernetes'
-section: 'Tutorials'
+section: Tutorials
 ---
 
 <style>

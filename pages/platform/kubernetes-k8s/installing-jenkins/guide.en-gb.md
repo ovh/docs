@@ -1,8 +1,8 @@
 ---
-title: 'Install Jenkins on OVH Kubernetes'
+title: Install Jenkins on OVH Kubernetes
 slug: installing-jenkins
 excerpt: 'Find out how to install Jenkins on OVH Managed Kubernetes'
-section: 'Tutorials'
+section: Tutorials
 ---
 
 **Last updated 25th February, 2019.**
