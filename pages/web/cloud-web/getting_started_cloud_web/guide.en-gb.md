@@ -1,8 +1,8 @@
 ---
-title: Getting started with a Cloud Web hosting plan
+title: 'Getting started with a Cloud Web hosting plan'
 slug: getting-started-with-cloud-web
-excerpt: Find out how to get started with a Cloud Web hosting plan
-section: Getting started
+excerpt: 'Find out how to get started with a Cloud Web hosting plan'
+section: 'Getting started'
 ---
 
 **Last updated 11th July 2018**
@@ -138,7 +138,7 @@ Now that you have set up your project on your Cloud Web hosting plan, you can st
 
 To create one or more email addresses, in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} click on `Emails`{.action} in the services bar on the left-hand side, then choose the domain name attached to your hosting plan.
 
-To create a new email address, click on `Create email address`{.action}, then follow the steps that appear. If you need any further assistance, please read our guide: [Creating an email address with your MX Plan package](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}.
+To create a new email address, click on `Create email address`{.action}, then follow the steps that appear. If you need any further assistance, please read this guide: [Creating an email address with your MX Plan package](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}.
 
 ![cloudweb](images/cloud-web-first-steps-step5.png){.thumbnail}
 
