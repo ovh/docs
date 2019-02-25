@@ -51,7 +51,7 @@ For [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} purposes, the fir
 46.105.135.111  Reserved: Network broadcast
 ```
 
-To configure the first usable IP address, we need to edit the network configuration file, as shown below. In this example, we need to use a subnet mask of **255.255.255.240**.
+To configure the first usable IP address, we need to edit the network configuration file, as shown below. In this example, we need to use a subnet mask of *255.255.255.240*.
 
 > [!primary]
 >
