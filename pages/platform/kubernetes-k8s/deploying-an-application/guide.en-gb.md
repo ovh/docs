@@ -1,37 +1,54 @@
 ---
 title: 'Deploying an application'
-slug: deploy-application-ovh-kubernetes
+slug: deploying-an-application
 excerpt: 'Find out how to deploy a "Hello World" application'
 section: 'Getting started'
 ---
 
-**Last updated 29th January, 2019.**
+<style>
+ pre {
+     font-size: 14px;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+ div.container {
+   max-width: 800px;
+ }
+ .console {
+   background-color: #300A24 !important; 
+ }
+ .console code {
+   color: #cccccc !important;
+ }
+ }
+</style>
 
+
+**Last updated 25 February, 2019.**
 
 ## Objective
 
-The OVH Managed Kubernetes service provides you with access to Kubernetes clusters, without the hassle of installing or operating them. 
-
-**Find out how to deploy a simple *Hello World* application on an OVH Managed Kubernetes cluster.**
+OVH Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will explain how to deploy a simple *Hello World* application on a OVH Managed Kubernetes cluster.
 
 
 ## Requirements
 
 - an OVH Managed Kubernetes cluster
-- at least one active node on the cluster.
-- a well-configured  *kubectl* file (see our guide to [Configuring default settings for `kubectl`](../configuring_default_settings_for_kubectl/configuring_default_settings_for_kubectl) for details) 
+- at least one node on the cluster (see the [ordering a node](../ordering_a_node/ordering_a_node) guide for details) 
+- a well configured  `kubectl` (see the [configuring default settings for `kubectl`](../configuring_default_settings_for_kubectl/configuring_default_settings_for_kubectl) guide for details) 
 
 
 ## Instructions
 
 
-### Step 1 - Deploy the application
+### Step 1 - Deploy your first application
 
-The following instructions will deploy a simple application (nginx image) using a *Kubernetes Deployment* and a *Kubernetes Service* .
+The following command will deploy a simple application (nginx image) using a [Kubernetes Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) and a [Kubernetes Service](https://kubernetes.io/docs/concepts/services-networking/service/).
 
-First, create a `hello.yaml` file for our `ovhplatform/hello` Docker image:
+Create a `hello.yaml` file for our `ovhplatform/hello` Docker image:
 
-```yaml
+```
 apiVersion: v1
 kind: Service
 metadata:
@@ -39,7 +56,7 @@ metadata:
   labels:
     app: hello-world
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - port: 80
     targetPort: 80
@@ -71,60 +88,57 @@ spec:
         - containerPort: 80
 ```
 
-Next, apply the file, using the following command:
+And apply the file:
 
-```bash
+```
 kubectl apply -f hello.yml
 ```
 
 After applying the YAML file, a new `hello-world` service and the corresponding `hello-world-deployment` deployment are created:
 
-```bash
-$ kubectl apply -f  hello.yml
+<pre class="console"><code>$ kubectl apply -f  hello.yml
 service/hello-world created
 deployment.apps/hello-world-deployment created
-```
-> [!primary]
+</code></pre>
+
 > The application you have just deployed is a simple nginx server with a single static *Hello World* page. 
-> In simple terms, it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/){.external}.
+> Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/)
 
 
 ### Step 2 - List the pods
 
-A `hello-world` service has just been deployed in a pod in your worker node. Let's verify that everything is correct by listing the pods:
+You have just deployed a `hello-world` service in a pod in your worker node. Let's verify that everything is correct by listing the pods.
 
-```bash
+```
 kubectl -n=default get pods
 ```
 
-You should see your newly-created pod:
+You should see your newly created pod:
 
-```bash
-$ kubectl -n=default get pods
+<pre class="console"><code>$ kubectl -n=default get pods
 NAME                                           READY     STATUS    RESTARTS   AGE
 hello-world-deployment-d98c6464b-7jqvg         1/1       Running   0          47s
-```
+</code></pre>
 
 
 ### Step 3 - List the deployments
 
-Check if the deployment is active:
+You can also verify the deployment is active:
 
 ```
 kubectl -n=default get deploy
 ```
 
-You should see the `hello-world-deployment`:
+And you will see the `hello-service-deployment`:
 
-```
-$ kubectl -n=default get deploy
+<pre class="console"><code>$ kubectl -n=default get deploy
 NAME                          DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 hello-world-deployment        1         1         1            1           1m
-```
+</code></pre>
 
 ### Step 4 - List the services
 
-Now, use `kubectl` to view your services:
+And now you're going to use `kubectl` to see your service:
 
 ```
 kubectl -n=default get services
@@ -132,27 +146,25 @@ kubectl -n=default get services
 
 You should see your newly created service:
 
-```
-$ kubectl -n=default get services
-NAME                          TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)                                   AGE
-hello-world                   NodePort    10.3.15.215    &lt;none>        80:31987/TCP                              2m
-```
+<pre class="console"><code>$ kubectl get service hello-world 
+NAME          TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)        AGE
+hello-world   LoadBalancer   10.3.81.234   6d6regsa9pc.lb.c1.gra.k8s.ovh.net   80:31699/TCP   4m
+</code></pre>
 
-Your service URL will be composed of your node url as the hostname, and the listed port (`80:<PORT>/TCP`) as the port. 
+> If under `EXTERNAL-IP` you get `&lt;pending>`, don't worry, the provisioning of the LoadBalancer 
+can take a minute or two, please try again in a few moments.
 
-In this example, the URL would therefore be: `http://******.nodes.c1.gra.k8s.ovh.net:31987`
-
+For each service you deploy with LoadBalancer type, you will get a new sub-domain `XXXXXX.lb.c1.gra.k8s.ovh.net` to access the service. In my example that URL to access the service would be `http://6d6regsa9pc.lb.c1.gra.k8s.ovh.net`
 
 ### Step 5 - Test your service
 
-If you enter the service URL in your web browser, the `hello-world` service will answer you:
+If you point your web browser to the service URL, the `hello-world` service will answer you:
 
 ![Testing your service](images/deploying_an_application-01.png)
 
-
 ### Step 6 - Clean up
 
-At the end you can clean up by deleting the service and the deployment.
+AAt the end you can proceed to clean up by deleting the service and the deployment.
 
 Let's begin by deleting the service:
 
@@ -160,29 +172,27 @@ Let's begin by deleting the service:
 kubectl delete service hello-world
 ```
 
-If you list the services again, you will see that `hello-world` doesn't exist anymore:
+If you list the services you will see that `hello-world` doesn't exist anymore:
 
-```
-$ kubectl delete service hello-world
+<pre class="console"><code>$ kubectl delete service hello-world
 service "hello-world" deleted
 $ kubectl get services
 No resources found.
-```
+</code></pre>
 
-You can then delete the deployment:
+Then, you can delete the deployment:
 
 ```
 kubectl delete deploy hello-world-deployment
 ```
 
-If you list you deployments again, you will find no resources:
+And now if you list you deployment you will find no resources:
 
-```
-$ kubectl delete deploy hello-world-deployment
+<pre class="console"><code>$ kubectl delete deploy hello-world-deployment
 deployment.extensions "hello-world-deployment" deleted
 $ kubectl get deployments
 No resources found.
-```
+</code></pre>
 
 
 If now you list the pods:
@@ -191,17 +201,18 @@ If now you list the pods:
 kubectl get pods
 ```
 
-You will see that the pod created for `hello-world` has also been deleted:
+you will see that the pod created for `hello-world` has been deleted too:
 
-```
-$ kubectl -n=default get pods
+<pre class="console"><code>$ kubectl -n=default get pods
 No resources found
-```
+</code></pre>
 
 
 
 ## Go further
 
-To learn more about using your Kubernetes clusters the practical way, we invite you to explore our related tutorials.
+To have an overview of OVH Managed Kubernetes service, you can go to the [OVH Managed Kubernetes site](https://labs.ovh.com/kubernetes-k8s).
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our  [tutorials]() .
+
+Join our community of users on https://community.ovh.com/en/.

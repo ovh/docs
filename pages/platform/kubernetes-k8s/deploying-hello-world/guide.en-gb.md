@@ -1,15 +1,17 @@
 ---
 title: 'Deploying a Hello World application with the OVH Control Panel'
-slug: deploy-hello-world-ovh-control-panel
+slug: deploying-hello-world
 excerpt: 'Find out how to deploy a Hello World application with the OVH Control Panel'
-section: 'Technical ressources'
+section: 'Tutorials'
 ---
 
-**Last updated 29th January, 2019.**
+**Last updated 25 February, 2019.**
 
 Follow this quickstart guide to deploy a containerised *Hello World* application on your OVH Managed Kubernetes Service cluster, using the OVH Control Panel.
 
-In this guide, we are assuming that you're using the [OVH Control Panel](https://www.ovh.com/manager/cloud/) to manage your Kubernetes cluster. If you are using a different method, like the [OVH API](https://api.ovh.com/), please refer to the appropiate documentation.
+In this guide, we are assuming that you're using the [OVH Control Panel](https://www.ovh.com/manager/cloud/) to manage your Kubernetes cluster. If you are using a different method, like the [OVH API](https://api.ovh.com/), please refer to the appropriate documentation:
+
+- [Deploying a Hello World with the OVH API](../deploying-hello-world-ovh-api/)
 
 
 ## Before you begin
@@ -56,4 +58,4 @@ In the *Computer Nodes* tab, you can inspect the state of your nodes. The node y
 
 You're now ready to deploy your first application.
 
-For more details about this process, you can refer to our `Deploying an application`{.action} documentation. 
+For more details about this process, you can refer to our [Deploying an application](../deployin-an-application/) documentation. 

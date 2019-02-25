@@ -1,9 +1,29 @@
 ---
-title: 'Installing the Kubernetes Dashboard'
-slug: install-kubernetes-dashboard
+title: 'Installing the Kubernetes Dashboard on OVH Managed Kubernetes'
+slug: installing-kubernetes-dashboard
 excerpt: 'Find out how to install the Kubernetes Dashboard '
-section: 'Technical ressources'
+section: 'Tutorials'
 ---
+
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
 
 **Last updated 29th January, 2019.**
 
@@ -15,7 +35,7 @@ The [Kubernetes Dashboard](https://github.com/kubernetes/dashboard){.external} i
 
 ## Before you begin
 
-This tutorial assumes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more about this, please take a look at the relevant OVH documentation.
+This tutorial assumes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 > [!primary]
 > This tutorial describes the most basic way of using the Dashboard with your OVH Managed Kubernetes cluster. Please refer to the [official docs](https://github.com/kubernetes/dashboard) for a deeper understanding, specially on subjects like [access control](https://github.com/kubernetes/dashboard/wiki/Access-control){.external}, for more in-depth information.
@@ -25,21 +45,20 @@ This tutorial assumes that you already have a working OVH Managed Kubernetes clu
 
 To deploy the Dashboard, execute following command:
 
-```
+```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml
 ```
 
 It should display something like this:
 
-```
-$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml
+<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml
 secret/kubernetes-dashboard-certs created
 serviceaccount/kubernetes-dashboard created
 role.rbac.authorization.k8s.io/kubernetes-dashboard-minimal created
 rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard-minimal created
 deployment.apps/kubernetes-dashboard created
 service/kubernetes-dashboard created
-```
+</code></pre>
 
 ## Create An Authentication Token (RBAC)
 
@@ -51,7 +70,7 @@ First, we will create a service account with the name `admin-user` in the `kube-
 
 To do this, please copy the following YAML into a `dashboard-service-account.yml` file:
 
-```
+```yaml
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -61,16 +80,15 @@ metadata:
 
 You should then apply the file to add the service account to your cluster:
 
-```
+```bash
 kubectl apply -f dashboard-service-account.yml
 ```
 
 It should display something like this:
 
-```
-$ kubectl apply -f dashboard-service-account.yml
+<pre class="console"><code>$ kubectl apply -f dashboard-service-account.yml
 serviceaccount/admin-user created
-```
+</code></pre>
 
 ### Create a RoleBinding
 
@@ -78,7 +96,7 @@ Using the `cluster-admin` role for your cluster, we will create a `RoleBinding`,
 
 To do this, please copy the following YAML into a `dashboard-cluster-role-binding.yml` file:
 
-```
+```yaml
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRoleBinding
 metadata:
@@ -95,29 +113,28 @@ subjects:
 
 You should then apply the file to add the `RoleBinding` to your cluster:
 
-```
+```bash
 kubectl apply -f dashboard-cluster-role-binding.yml
 ```
 
 It should display something like this:
 
-```
-$ kubectl apply -f dashboard-cluster-role-binding.yml
+<pre class="console"><code>$ kubectl apply -f dashboard-cluster-role-binding.yml
 clusterrolebinding.rbac.authorization.k8s.io/admin-user created
-```
+</code></pre>
+
 
 ### Bearer Token
 
 Next step is recovering the bearer token you will use to log in your Dashboard. Execute following command:
 
-```
+```bash
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user-token | awk '{print $1}')
 ```
 
 It should display something like:
 
-```
-Name:         admin-user-token-6gl6l
+<pre class="console"><code>Name:         admin-user-token-6gl6l
 Namespace:    kube-system
 Labels:       <none>
 Annotations:  kubernetes.io/service-account.name=admin-user
@@ -130,7 +147,7 @@ Data
 ca.crt:     1025 bytes
 namespace:  11 bytes
 token:      eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2V
-```
+</code></pre>
 
 Copy the token and store it securely, as it's your key to the Dashboard.
 
@@ -138,16 +155,15 @@ Copy the token and store it securely, as it's your key to the Dashboard.
 
 To access the Dashboard from your local workstation, you must create a secure channel to your OVH Managed Kubernetes cluster. You can do this by using `kubectl` as a proxy from your workstation to the cluster:
 
-```
+```bash
 kubectl proxy
 ```
 
 Your kubectl is opening a connection and acting as a proxy from your workstation to the cluster. Any HTTP request to your local port (8001) will be proxified and sent to the cluster API.
 
-```
-$ kubectl proxy
+<pre class="console"><code>$ kubectl proxy
 Starting to serve on 127.0.0.1:8001
-```
+</code></pre>
 
 Next, access the Dashboard at:
 
