@@ -1,5 +1,5 @@
 ---
-title: 'Kubernetes (k8s)'
+title: Kubernetes (k8s)
 slug: kubernetes
 ---
 

@@ -24,7 +24,7 @@ OVH Managed Kubernetes service provides you Kubernetes clusters without the hass
 Access our administration UI for your OVH Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the [OVH Cloud Manager](https://www.ovh.com/manager/cloud/)
 
 
-![Access to the administration UI](images/ordering_a_node-01.png)
+![Access to the administration UI](images/ordering_a_node-01.png){.thumbnail}
 
 
 In this administration UI you have three tabs:
@@ -38,8 +38,9 @@ In this administration UI you have three tabs:
 In the *Nodes* tab of the administration UI, click on *Add Node*. For this tutorial choose a general purpose node, like the B2-7 flavor:
 
 
-![Add a worker node](images/ordering_a_node-02.png)
+![Add a worker node](images/ordering_a_node-02.png){.thumbnail}
 
+> [!primary]
 > If you want to know more about the flavors on the current OVH range, [here you have a complete guide](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/).
 
 
@@ -49,7 +50,7 @@ In the *Nodes* tab of the administration UI, click on *Add Node*. For this tutor
 In the *Nodes* tab  you can inspect the state of your nodes. The node you have just created should be in a *Installing* state now. The node installation can take a minute, so feel free to take a small pause and try again until it's ready.
 
 
-![Verify your node is ready](images/ordering_a_node-03.png)
+![Verify your node is ready](images/ordering_a_node-03.png){.thumbnail}
 
 
 ## Go further

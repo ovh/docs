@@ -77,6 +77,7 @@ In this tutorial you're going to install Istio with the default [mutual TLS auth
 
 It's a nice by default setting, because you are getting a good overview of Istio functionalities, including the TLS tunneling of inter-services communication, where Istio tunnels service-to-service communication through the client side and server side [Envoy proxies](https://envoyproxy.github.io/envoy/). 
 
+> [!warning]
 > The drawback of choosing the default mutual TLS authentication install is that it only works in new, freshly created clusters. 
 >
 > For clusters with existing applications, or if you're deploying applications where services with an Istio sidecar need to be able to communicate with other non-Istio Kubernetes services, you could use the  `istio-demo` manifest instead.
@@ -184,7 +185,7 @@ serviceaccount/istio-sidecar-injector-service-account created
 To verify that Istio is truly working in the cluster, you are going to deploy a test application. We have choosen the [Bookinfo](https://istio.io/docs/examples/bookinfo/) application, as it's a multi-technology multi-instance microservices-based application that let's you verify if Istio works as intended.
 
 
-![Bookinfo](images/installing-istio-bookinfo.png)
+![Bookinfo](images/installing-istio-bookinfo.png){.thumbnail}
 
 
 
@@ -327,7 +328,7 @@ You can also point your browser to `http://<YOUR_GATEWAY_URL>/productpage` (in m
 
 
 
-![Bookinfo](images/installing-istio-02.jpg)
+![Bookinfo](images/installing-istio-02.jpg){.thumbnail}
 
 
 ## What's next?

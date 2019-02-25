@@ -101,6 +101,7 @@ service/hello-world created
 deployment.apps/hello-world-deployment created
 </code></pre>
 
+> [!primary]
 > The application you have just deployed is a simple nginx server with a single static *Hello World* page. 
 > Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/)
 
@@ -151,6 +152,7 @@ NAME          TYPE           CLUSTER-IP    EXTERNAL-IP                        PO
 hello-world   LoadBalancer   10.3.81.234   6d6regsa9pc.lb.c1.gra.k8s.ovh.net   80:31699/TCP   4m
 </code></pre>
 
+> [!primary]
 > If under `EXTERNAL-IP` you get `&lt;pending>`, don't worry, the provisioning of the LoadBalancer 
 can take a minute or two, please try again in a few moments.
 
@@ -160,7 +162,7 @@ For each service you deploy with LoadBalancer type, you will get a new sub-domai
 
 If you point your web browser to the service URL, the `hello-world` service will answer you:
 
-![Testing your service](images/deploying_an_application-01.png)
+![Testing your service](images/deploying_an_application-01.png){.thumbnail}
 
 ### Step 6 - Clean up
 
