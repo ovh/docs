@@ -1,8 +1,8 @@
 ---
-title: 'Installing the Kubernetes Dashboard on OVH Managed Kubernetes'
+title: Installing the Kubernetes Dashboard on OVH Managed Kubernetes
 slug: installing-kubernetes-dashboard
 excerpt: 'Find out how to install the Kubernetes Dashboard '
-section: 'Tutorials'
+section: Tutorials
 ---
 
 <style>

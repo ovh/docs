@@ -1,8 +1,8 @@
 ---
-title: 'Configuring kubectl on an OVH Managed Kubernetes cluster'
+title: Configuring kubectl on an OVH Managed Kubernetes cluster
 slug: configuring-kubectl
 excerpt: 'Find out how to recover the *kubetcl* configuration file to interact with an OVH Managed Kubernetes cluster.'
-section: 'User guides'
+section: User guides
 ---
 
 **Last updated 29th January, 2019.**

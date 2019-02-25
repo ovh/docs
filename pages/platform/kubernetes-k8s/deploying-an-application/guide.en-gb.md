@@ -1,8 +1,8 @@
 ---
-title: 'Deploying an application'
+title: Deploying an application
 slug: deploying-an-application
 excerpt: 'Find out how to deploy a "Hello World" application'
-section: 'Getting started'
+section: Getting started
 ---
 
 <style>

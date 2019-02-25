@@ -1,8 +1,8 @@
 ---
-title: 'Installing Istio on OVH Managed Kubernetes'
+title: Installing Istio on OVH Managed Kubernetes
 slug: installing-istio
 excerpt: 'Find out how to install Istio on OVH Managed Kubernetes'
-section: 'Tutorials'
+section: Tutorials
 ---
 
 **Last updated on 25 February, 2019**

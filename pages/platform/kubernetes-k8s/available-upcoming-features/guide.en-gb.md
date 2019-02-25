@@ -2,7 +2,7 @@
 title: 'Available and planned features'
 excerpt: ''
 slug: available-upcoming-features
-section: 'Technical ressources'
+section: Technical resources
 ---
 
 **Last updated 25th February, 2019.**

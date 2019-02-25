@@ -1,8 +1,8 @@
 ---
-title: 'Installing WordPress on OVH Managed Kubernetes'
+title: Installing WordPress on OVH Managed Kubernetes
 slug: installing-wordpress
 excerpt: 'Find out how to install WordPress on OVH Managed Kubernetes'
-section: 'Tutorials'
+section: Tutorials
 ---
 
 **Last updated 25th February, 2019.**

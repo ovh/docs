@@ -2,7 +2,7 @@
 title: Recommended external resources
 excerpt: ''
 slug: recommended-external-resources
-section: 'Technical resources'
+section: Technical resources
 ---
 
 # Recommended external resources
