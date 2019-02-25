@@ -29,7 +29,7 @@ In order to use a Persistent Volume on a Kubernetes cluster, you must create a P
 
 When you need a Persistent Volume, you create a Persistent Volume Claim, and choose a Storage Class from those made available by the cluster administrators. Depending on the Storage Class, an actual infrastructure volume storage device is provisioned into your account and a Persistent Volume is created on this physical device. The Persistent Volume is a sort of virtual storage instance over the infrastructure virtual storage.
 
-![persistent-volumes](images/working-with-persistent-volumes-01.png){.thumbnail}
+![persistent-volumes](./images/working-with-persistent-volumes-01.png){.thumbnail}
 
 ## Persistent Volumes on OVH Managed Kubernetes
 

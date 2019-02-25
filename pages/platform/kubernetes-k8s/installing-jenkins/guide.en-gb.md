@@ -46,6 +46,7 @@ The chart is fully configurable, but here we are using the default configuration
 
 We are configuring the Helm chart to use `NodePort` as service type (because default `LoadBalancer` type isn't supported in the beta phase of OVH Managed Kubernetes Service). 
 
+> [!primary]
 > ### Customizing your install
 > 
 > Maybe you would like your admin username to be different, or be able to set your admin password, or modify the resources allocated... 
@@ -119,11 +120,11 @@ sdfSDGvb
 
 And putting the URL in your browser will take you to the new Jenkins:
 
-![Jenkins login](images/installing-jenkins-01.png)
+![Jenkins login](images/installing-jenkins-01.png){.thumbnail}
 
 Login with user `admin` and the password you got before. And ere you have your Jenkins:
 
-![Leeeeeeeroy Jenkins!](images/installing-jenkins-02.png)
+![Leeeeeeeroy Jenkins!](images/installing-jenkins-02.png){.thumbnail}
 
 
 You have a working Jenkins on your OVH Managed Kubernetes Service, congratulations!

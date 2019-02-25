@@ -58,7 +58,7 @@ In Windows 10, you may need to scroll down to the *Related settings* section and
 2. In the window that opens (pictured below), add a new variable, `KUBECONFIG`, with the path to the `kube-config` file as its value.
 
 
- ![Add environment variables](images/configuring_default_settings_for_kubectl-02.png){.external}
+ ![Add environment variables](images/configuring_default_settings_for_kubectl-02.png){.thumbnail}
 
 
 You can also add the variable for the current shell process with this command :
