@@ -42,6 +42,7 @@ For this tutorial we are using the [Wordpress Helm chart](https://github.com/hel
 The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVH Managed Kubernetes Service.
 
 
+> [!primary]
 > ### Customizing your install
 > 
 > Maybe you would like your username to be different, or be able to set your password, or choose an external database instead of deploying the MariaDB container... 
@@ -142,7 +143,7 @@ WordPress Admin URL: http://XXXXXXX.lb.c1.gra.k8s.ovh.net/admin
 
 And putting the URL in your browser will take you to the new blog:
 
-![Installing Wordpress](images/installing-wordpress-01.jpg)
+![Installing Wordpress](images/installing-wordpress-01.jpg){.thumbnail}
 
 You also use the instructions given by the helm install to get the default username and password for your blog.
 
@@ -154,7 +155,7 @@ $ echo Password: $(kubectl get secret --namespace default mollified-lynx-wordpre
 Password: 0pdfhdfhfe5
 </code></pre>
 
-![Installing Wordpress](images/installing-wordpress-02.jpg)
+![Installing Wordpress](images/installing-wordpress-02.jpg){.thumbnail}
 
 
 You have a working Wordpress on your OVH Managed Kubernetes Service, congratulations!

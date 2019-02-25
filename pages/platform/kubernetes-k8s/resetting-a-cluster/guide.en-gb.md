@@ -44,13 +44,13 @@ OVH Managed Kubernetes service provides you Kubernetes clusters without the hass
 
 Access our administration UI for your OVH Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the [OVH Cloud Manager](https://www.ovh.com/manager/cloud/)
 
-![Access to the administration UI](images/resetting_a_cluster-01.jpg)
+![Access to the administration UI](images/resetting_a_cluster-01.jpg){.thumbnail}
 
 
 In the *Services* tab of the administration UI, click on the button on the *Status* section, and choose to reset the configuration of the cluster. 
 
 
-![Reset the configuration of the cluster](images/resetting_a_cluster-02.jpg)
+![Reset the configuration of the cluster](images/resetting_a_cluster-02.jpg){.thumbnail}
 
 
 ### Step 2 - Choose the type of reset you want
@@ -62,7 +62,7 @@ You have two options on the reset menu, *Delete* and *Reinstall*.
 - Choosing *Reinstall* means that the cluster is reinitialized without destroying the nodes.
 
 
-![Choose the type of reset you want](images/resetting_a_cluster-03.jpg)
+![Choose the type of reset you want](images/resetting_a_cluster-03.jpg){.thumbnail}
 
 
 
@@ -71,7 +71,7 @@ You have two options on the reset menu, *Delete* and *Reinstall*.
 Depending on the chosen kind of reset, the process can take several minutes. During that time, a message on the manager warns you that the cluster is under resetting:
 
 
-![Choose the type of reset you want](images/resetting_a_cluster-03.jpg)
+![Choose the type of reset you want](images/resetting_a_cluster-03.jpg){.thumbnail}
 
 
 ## Go further

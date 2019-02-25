@@ -31,7 +31,7 @@ The [Kubernetes Dashboard](https://github.com/kubernetes/dashboard){.external} i
 
 **Find out how to install the Kubernetes Dashboard on your OVH Managed Kubernetes Service.**
 
-![kubernetes-dashboard](images/kubernetes-dashboard-02.png){.thumbnail}
+![kubernetes-dashboard](./images/kubernetes-dashboard-02.png){.thumbnail}
 
 ## Before you begin
 
@@ -136,7 +136,7 @@ It should display something like:
 
 <pre class="console"><code>Name:         admin-user-token-6gl6l
 Namespace:    kube-system
-Labels:       <none>
+Labels:       &lt;none>
 Annotations:  kubernetes.io/service-account.name=admin-user
               kubernetes.io/service-account.uid=b16afba9-dfec-11e7-bbb9-901b0e532516
 

@@ -179,6 +179,7 @@ spec:
             path: /
 ```
 
+> [!primary]
 > Don't forget to replace `[YOUR_LOAD_BALANCER_URL]`, `[YOUR_WORDPRESS_SERVICE_NAME]` 
 
 Apply the file:
@@ -195,4 +196,4 @@ ingress.extensions/ingress created
 
 So now if you point your browser to `http://[YOUR_LOAD_BALANCER_URL]`  you will see your Wordpress:
 
-![Wordpress using Ingress](images/installing-ingress-01.png)
+![Wordpress using Ingress](images/installing-ingress-01.png){.thumbnail}
