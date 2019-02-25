@@ -5,7 +5,7 @@ slug: adding-nodes
 section: User guides
 ---
 
-**Last updated 29th January, 2019.**
+**Last updated 25th February, 2019.**
 
 ## Objective
 

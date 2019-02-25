@@ -5,7 +5,9 @@ slug: known-limits
 section: Technical resources
 ---
 
-# Known limits
+
+**Last updated 25th February, 2019.**
+
 
 <style>
  pre {
@@ -33,7 +35,7 @@ We have tested our OVH Managed Kubernetes service with up to 100 nodes and 100 p
 
 In general. it's better to have several mid-size Kubernetes clusters than one monster-size one.
 
-## `LoadBalancer`
+## LoadBalancer
 
 We are currently offering OVH Managed Kubernetes LoadBalancer service as a free preview, until the end of summer 2019. 
 
