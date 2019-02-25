@@ -1,8 +1,8 @@
 ---
-title: 'Persistent Volumes on OVH Managed Kubernetes'
+title: Persistent Volumes on OVH Managed Kubernetes
 slug: ovh-kubernetes-persistent-volumes
 excerpt: 'Find out how to setup and manage Persistent Volumes on OVH Managed Kubernetes'
-section: 'Getting started'
+section: Getting started
 ---
 
 **Last updated 29th January, 2019.**

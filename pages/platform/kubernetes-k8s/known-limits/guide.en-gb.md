@@ -2,7 +2,7 @@
 title: Known limits
 excerpt: ''
 slug: known-limits
-section: 'Technical resources'
+section: Technical resources
 ---
 
 # Known limits
