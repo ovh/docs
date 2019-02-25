@@ -5,6 +5,9 @@ excerpt: 'Find out how to install the Kubernetes Dashboard '
 section: Tutorials
 ---
 
+
+**Last updated 25th February, 2019.**
+
 <style>
  pre {
      font-size: 14px;
@@ -25,7 +28,6 @@ section: Tutorials
  }
 </style>
 
-**Last updated 29th January, 2019.**
 
 The [Kubernetes Dashboard](https://github.com/kubernetes/dashboard){.external} is a general purpose, web-based UI for Kubernetes clusters. It allows users to manage and troubleshoot applications running in their cluster, as well as manage the cluster itself.
 
