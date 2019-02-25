@@ -1,14 +1,11 @@
 ---
-title: Available and planned features
+title: 'Available and planned features'
 excerpt: ''
 slug: available-upcoming-features
-section: Technical resources 
+section: 'Technical ressources'
 ---
 
-
 **Last updated 25th February, 2019.**
-
-
 
 We list here the most frequently requested OVH Managed Kubernetes features that are currently available or planned in the upcoming year.
 
@@ -26,4 +23,8 @@ We list here the most frequently requested OVH Managed Kubernetes features that 
 - **Localisation choice** : During 2019, we will offer you the possibily to choose one of multiple OVH Public Cloud datacenters at Cluster creation.
 - **GPU worker nodes** : We will integrate GPU public cloud flavors in the worker nodes choice.
 - **New major versions ** : We will support upcoming major versions, during the quarter following their official release.
+<<<<<<< HEAD
+=======
+- 
+>>>>>>> upstream/develop
 and many more : feel free to open a feature request ticket though our support team.
