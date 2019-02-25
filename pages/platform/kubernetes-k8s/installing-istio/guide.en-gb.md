@@ -1,5 +1,5 @@
 ---
-title: Installing Istio on OVH Managed Kubernetes
+title: 'Installing Istio on OVH Managed Kubernetes'
 slug: installing-istio
 excerpt: 'Find out how to install Istio on OVH Managed Kubernetes'
 section: Tutorials
@@ -39,7 +39,7 @@ In this tutorial we are going to install Istio on a freshly created OVH Managed 
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
 
 ## Downloading Istio
@@ -274,7 +274,7 @@ Now that the Bookinfo services are up and running, you need to make the applicat
     export SECURE_INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="https")].nodePort}')
     ```
 
-    For the `INGRESS_HOST` use the nodes URL found in the OVH Cloud Manager (see the  [OVH Managed Kubernetes Quickstart](https://labs.ovh.com/kubernetes-k8s/documentation/tutorial/quickstart)).
+    For the `INGRESS_HOST` use the nodes URL found in the OVH Cloud Manager (see [deploying a Hello World application](https://docs.ovh.com/gb/en/kubernetes/deploying-hello-world/)).
 
     ```
     export INGRESS_HOST=<NODES_URL>
