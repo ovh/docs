@@ -1,5 +1,5 @@
 ---
-title: Deploying a Hello World application with the OVH Control Panel
+title: 'Deploying a Hello World application with the OVH Control Panel'
 slug: deploying-hello-world
 excerpt: 'Find out how to deploy a Hello World application with the OVH Control Panel'
 section: Tutorials
@@ -58,4 +58,4 @@ In the *Computer Nodes* tab, you can inspect the state of your nodes. The node y
 
 You're now ready to deploy your first application.
 
-For more details about this process, you can refer to our [Deploying an application](../deployin-an-application/) documentation. 
+For more details about this process, you can refer to our [deploying an application](https://docs.ovh.com/gb/en/kubernetes/deploying-an-application/) documentation. 
