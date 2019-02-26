@@ -51,7 +51,7 @@ The `GET  /kube/{serviceName}` API endpoint provides important information about
 
 ## Configuring the default settings for kubectl
 
-Please refer to the `Configuring kubectl on an OVH Managed Kubernetes cluster`{.action} documentation for this part of the process.
+Please refer to the [Configuring kubectl on an OVH Managed Kubernetes cluster](../configuring-kubectl/) documentation for this part of the process.
 
 ## Add a worker node
 
