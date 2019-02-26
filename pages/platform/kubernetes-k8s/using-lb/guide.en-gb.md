@@ -33,7 +33,7 @@ In this tutorial we are explaining how to deploy services on OVH Managed Kuberne
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../quickstart/).
+This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 
 ## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
