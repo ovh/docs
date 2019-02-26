@@ -124,6 +124,7 @@ A questo punto scrivi il tuo messaggio e invialo.
 
 ![Delega](images/delegation-step6.png){.thumbnail}
 
+
 - **Dal client Outlook per Windows**
 
 Se utilizzi Outlook 2016, inizia a scrivere un nuovo messaggio assicurandoti che il pulsante `Da`{.action} venga mostrato nella casella di testo. In caso contrario seleziona la scheda `Opzioni`{.action} e, nella sezione “Mostra campi”, clicca su `Da`{.action}.
