@@ -1,11 +1,11 @@
 ---
-title: Using the OVH Managed Kubernetes LoadBalancer 
+title: 'Using the OVH Managed Kubernetes LoadBalancer'
 excerpt: ''
 slug: using-lb
-section: Getting started
+section: 'Getting started'
 ---
 
-# Using the OVH Managed Kubernetes `LoadBalancer`
+# Using the OVH Managed Kubernetes LoadBalancer
 
 <style>
  pre {
