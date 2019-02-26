@@ -1,5 +1,5 @@
 ---
-title: Installing Nginx Ingress on OVH Kubernetes
+title: Installing Nginx Ingress on OVH Managed Kubernetes
 slug: installing-nginx-ingress
 excerpt: 'Find out how to install Nginx Ingress on OVH Managed Kubernetes '
 section: Tutorials

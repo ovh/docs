@@ -1,298 +1,174 @@
 ---
-title: 'Web hosting: come esportare un database'
-excerpt: Scopri in questa guida come esportare i tuoi database dai nostri server.
+title: 'Recuperare il backup del database di un hosting Web'
+excerpt: 'Come ripristinare il backup di un database di un hosting Web OVH'
 id: '1394'
-slug: web_hosting_come_esportare_un_database
+slug: esportazione-database
 legacy_guide_number: g1394
 ---
 
+**Ultimo aggiornamento: 25/02/2019**
 
-## Requisiti
-Devi avere:
+## Obiettivo
 
+Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Management System o CMS) come WordPress e Joomla!, i database permettono di salvare gli elementi detti dinamici (ad esempio, commenti o articoli). Per diversi motivi, potresti aver bisogno di effettuare un backup del tuo database per recuperarne il contenuto.
 
-- accesso al tuo Spazio Cliente OVH.
+**Questa guida ti mostra come recuperare il backup di un database del tuo hosting Web OVH.**
 
-- Username e password del database SQL con cui ti connetti, insieme all'b]host SQL.
+## Prerequisiti
 
-È disponibile una guida su come recuperare le credenziali SQL:[]({legacy}1374)
+- Disporre di una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
+- Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
+- In base al metodo di backup scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} o disporre dei dati di connessione al database
 
+## Procedura
 
-![](images/img_1833.jpg){.thumbnail}
+Prima di iniziare, è necessario indicare il metodo con cui intendi recuperare il backup del database. A seconda delle tue competenze tecniche a riguardo, puoi utilizzare diversi metodi:
 
+- **strumento di backup di OVH**: grazie a questo tool è possibile recuperare i backup direttamente dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. È la soluzione più semplice, perché non richiede particolari competenze tecniche.
 
-## Dal tuo Spazio Cliente OVH
-Puoi recuperare la copia del tuo database direttamente dal tuo Spazio Cliente OVH. 
+- **interfaccia Web phpMyAdmin**: questa soluzione richiede la conoscenza dell’applicazione Web phpMyAdmin e della sua interfaccia di gestione.
 
-Per farlo, accedi allo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/) e seleziona il tuo dominio nella sezione Hosting.
+- **script**: per utilizzare questa soluzione è necessario creare uno script e salvarlo sull’hosting Web OVH e richiede quindi competenze specifiche.
 
-## Step 1
-In "Web hosting" clicca su "Hosting" e seleziona poi "Gestione SQL".
+- **comando SSH**: questa soluzione richiede l’accesso allo spazio di storage tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso.  Sono quindi necessarie competenze tecniche avanzate e una soluzione di[ hosting Web OVH](https://www.ovh.it/hosting-web/){.external} compatibile.
 
-In base alla grandezza del tuo database, la creazione del backup può richiedere più o meno tempo.
+Alcune delle opzioni elencate non vengono eseguite in un’interfaccia OVH, e non possiamo quindi fornire assistenza sul loro utilizzo. Le informazioni contenute in questa guida potrebbero esserti di aiuto per effettuare l’operazione ma non si sostituiscono all’aiuto di un webmaster. 
 
-![](images/img_2698.jpg){.thumbnail}
+Continua la lettura in base al metodo di backup scelto.
 
-## Step 2
-Seleziona "Salvataggio".
+> [!warning]
+>
+> OVH mette a disposizione i servizi ma non si occupa della loro configurazione e gestione; garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente. 
+>
+> Questa guida ti aiuta a eseguire le operazioni necessarie per recuperare il backup di un database. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare uno specialista del settore o il fornitore del servizio.  Per maggiori informazioni consulta la sezione “Per saperne di più”. 
+>
 
-Nella tabella compare l'elenco dei tuoi database (come nella figura accanto).
+### Strumento di backup di OVH
 
-![](images/img_2699.jpg){.thumbnail}
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
 
-## Step 3
-Seleziona il database che vuoi salvare e la data di backup.
+Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Da questa pagina è possibile scegliere se creare un nuovo backup o ripristinarne uno esistente.
 
-Sono disponibili 3 opzioni di data:
+#### 1\. Effettuare un nuovo backup del database
 
+Nella scheda `Database`{.action}, clicca sui tre puntini in corrispondenza del database di cui vuoi effettuare il backup e seleziona `Crea un backup`{.action}.
 
-- Copia attuale: copia del database in quel momento.
+![database dump](images/database-dump-step2.png){.thumbnail}
 
-- Ieri: copia del database della notte precedente. Il backup viene effettuato intorno alle 3 del mattino.
+Nella nuova finestra, scegli la data in cui effettuare il backup e clicca su `Seguente`{.action}. Verifica la correttezza delle informazioni e `Conferma`{.action} per avviare l’operazione.
 
-- Ultima settimana: copia del database degli ultimi sette giorni. Il backup viene effettuato intorno alle 3 del mattino.
+Attendi il completamento del processo: appena il backup diventerà disponibile, sarà possibile recuperarlo.
 
+![database dump](images/database-dump-step3.png){.thumbnail}
 
-Clicca su "Validare" per avviare il backup.
+#### 2\. Ripristinare un backup del database
 
-Devi aspettare che venga creato il dump*, riceverai una mail con un link da cui scaricare il file di backup.
+Sempre nella scheda `Database`{.action}, clicca sui tre puntini in corrispondenza del database di cui vuoi recuperare il backup e seleziona `Ripristina un backup`{.action}.
 
-Ecco un esempio dell'oggetto dell'email che riceverai:
 
 
-```
-[OVH-SQL] testovh.ovh - Dump del tuo database: testovhmod1
-```
 
+![database dump](images/database-dump-step4.png){.thumbnail}
 
-In questa email troverai il link per accedere al backup, disponibile su un server remoto per 30 giorni.
+Visualizzi una tabella con tutti i backup disponibili per il database selezionato, di cui viene mostrata la data di creazione e di cancellazione dal sistema OVH.
 
-Il file che scaricherai sarà compresso, ti consigliamo di decomprimerlo prima di importarlo.
+Per effettuare il download, clicca sui tre puntini in corrispondenza del backup che vuoi ripristinare e seleziona `Scarica il backup`{.action}. Si apre una finestra da cui puoi salvare il file sul tuo computer: conferma e attendi il completamento dell’operazione.
 
-![](images/img_2700.jpg){.thumbnail}
+![database dump](images/database-dump-step5.png){.thumbnail}
 
+### Interfaccia Web phpMyAdmin
 
-## Da PhpMyAdmin
-Puoi effettuare l'esportazione del database da PhpMyAdmin.
+Per recuperare il link di accesso a phpMyAdmin accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
 
-Innanzitutto connettiti all'interfaccia di [PhpMyAdmin](https://phpmyadmin.ovh.net/).
+Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database di cui vuoi effettuare il backup e seleziona `Accedi a phpMyAdmin`{.action}.
 
-## Esportazione rapida
-Una volta connesso, seleziona il tuo database.
+![database dump](images/database-dump-step6.png){.thumbnail}
 
-In "Esporta", scegli il metodo di esportazione rapido e il formato di esportazione del tuo database.
+Nella pagina di phpMyAdmin, inserisci le informazioni relative al database, scegli dal menu a tendina se visualizzare i dati attuali del database o quelli di un backup precedente ed effettua l’accesso. Seleziona la scheda `Esporta`{.action}, in cui sono proposti due metodi di esportazione:
 
-Per un'esportazione più completa, seleziona il metodo di esportazione personalizzato.
+- rapido: questa opzione permette scegliere il formato di esportazione del backup. Il più diffuso è SQL ma, in base alle esigenze, è possibile selezionarne anche un altro tra quelli disponibili nella lista.
 
-![](images/img_1963.jpg){.thumbnail}
+- personalizzato: questa opzione permette di definire nel dettaglio i parametri di esportazione del backup.
 
-## Esportazione personalizzata
-Una volta connesso, seleziona il tuo database.
+> [!warning]
+>
+> phpMyAdmin non è un’applicazione OVH, pertanto non forniamo assistenza relativamente al suo utilizzo. In caso di difficoltà o dubbi, ti consigliamo di contattare uno specialista del settore o accedere al sito del fornitore del servizio.  
+>
 
-In "Esporta", seleziona "Personalizzato - mostra tutte le possibili opzioni".
+### Script
 
-Vedrai diverse opzioni.
+Questa operazione prevede diversi step. Per prima cosa, assicurati di avere a disposizione tutti i dati necessari per effettuare l’accesso al database di cui vuoi effettuare il backup: nome utente, password, nome del database e indirizzo del server.
 
-Tabella(e): 
+> [!warning]
+>
+> Questa soluzione è più tecnica e richiede competenze di programmazione. In questa guida puoi trovare informazioni utili per effettuare l’operazione ma, in caso di necessità, ti consigliamo di rivolgerti a uno specialista del settore. 
+>
 
-Dalla tabella puoi selezionare tutte le voci o solo quelle che vuoi esportare.
+#### 1\. Creare lo script del backup
 
-Questo sistema è utile se hai un database molto grande che in questo modo puoi esportare (e poi importare) in più tranche.
+Il primo step consiste nel creare lo script che permetterà di effettuare il backup del database. Ecco un esempio:
 
-Output: 
-
-Puoi definire qui se vuoi creae un backup SQL in un file esterno oppure visualizzare direttamente il risultato della ricerca che dovrai poi copiare.
-
-Formato: 
-
-Definisci il formato di esportazione del tuo database. Ti consigliamo di lasciare SQL.
-
-Opzioni specifiche al formato:
-
-Puoi definire quello che vuoi esportare della tabella: le strutture, i dati o entrambi. Ti consigliamo di lasciare "struttura e dati".
-
-Opzioni di esportazione:
-
-Selezione l'opzione di esportazione nessuno dei precedenti per evitare l'errore associato a "Max_Allowed_Packet".
-
-In questa guida trovi solo le opzioni principali.
-
-Per avviare l'esportazione, clicca su "Esegui".
-
-![](images/img_1964.jpg){.thumbnail}
-
-## Scarica il file .sql
-Effetturare il download del dump* dal link e salva il file.
-
-![](images/img_1848.jpg){.thumbnail}
-
-## Backup precedente
-
-- Da PhpMyAdmin puoi recuperare il backup della notte e della settimana precedente. Seleziona l'opzione desiderata dal menu nella home page.
-
-
-
-
-## Utilizzando uno script
-Puoi creare questi script in un file txt dando loro l'estensione corrispondente alla lingua utilizzata.
-
-È una soluzione interessante perché ti permette di esportare i dump* importanti ed è disponibile per tutti gli hosting condivisi.
-
-Negli script, sostituisci:
-
-
-- nome_del_database.sql con il nome del tuo file.
-
-- server_sql con il nome del server su cui è creato il database.
-
-- nome_del_database con il nome del tuo database.
-
-- password con la password associata al tuo database.
-
-Il tuo file di backup dovrà essere inserito sull'hosting in FTP.
-
-In php (backupbase.php):
-Codice da inserire e completare: 
-
-
-```
+```php
 <?
-echo "Backup del tuo database in corso.......";
-system("mysqldump --host=server_sql --user=nome_del_database --password=password nome_del_database > nome_del_database.sql");
-echo "Backup concluso. Puoi recuperare il tuo database con FTP";
+system(“mysqldump -- host=inidrizzo_del_server--user=nome_utente--password=password_utente nome_database > nome_file_backup.sql
 ?>
 ```
 
+Sostituisci le informazioni generiche dello script con i dati del database in questione, seguendo le indicazioni riportate qui sotto. Una volta creato lo script, ti consigliamo di assegnargli un nome (ad esempio, “backup.php”).
 
+|Informazione|Sostituire con...|
+|---|---|
+|indirizzo_del_server|L’indirizzo del server del database|
+|nome_utente|Lo username che ha accesso al database|
+|password_utente|La password associata al nome utente indicato precedentemente|
+|nome_database|Il nome del database |
+|nome_file_backup|Il nome che, una volta realizzato, verrà assegnato al file di backup|
 
-In PERL (backupbd.cgi):
-Codice da inserire e completare: 
+> [!primary]
+>
+> Aggiungendo una porta allo script è possibile effettuare un backup a partire da una data precedente: ad esempio, la porta <b>3307 </b>permette di eseguire una copia della data di ieri, la porta <b>3317 </b>degli ultimi sette giorni e la <b>3306 </b>dello stato attuale dei dati presenti sul database.
+>
 
+#### 2\. Caricare lo script sullo spazio di storage 
 
-```
-#!/usr/bin/perl
-print "Backup del tuo database in corso... ";
-system("mysqldump --host=server_sql --user=nome_del_database --password=password nome_del_database > nome_del_database.sql");
-print "Backup concluso. Puoi recuperare il tuo database con FTP";
-```
+Una volta creato lo script è necessario caricarlo sullo spazio di storage dell’hosting Web. Per effettuare questa operazione, è necessario collegarsi all’hosting (se hai bisogno di aiuto, consulta lo step 2 di [questa guida](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/#step-2-carica-i-file-del-sito-nello-spazio-di-storage){.external}).
 
+Per realizzare correttamente gli step successivi, carica lo script nella cartella “www”. **Ti consigliamo di prestare la massima attenzione al nome assegnato al file dello script di backup**: quando effettui l’upload nello spazio di storage assicurati di non sovrascriverlo a un file già esistente con lo stesso nome. Nel caso, modifica il nome dello script appena creato e prova a caricarlo di nuovo.
 
-- Carica con FTP lo script che hai creato nella directory www del tuo hosting e richiama lo script con il browser con questo URL: http://tuo_dominio.com/backupbase.php
+#### 3\. Eseguire lo script
 
+Una volta che lo script è stato caricato nello spazio di storage non ti resta che eseguire il codice in esso contenuto richiamando lo script. 
 
-Sostituisci tuo_dominio.com con il tuo dominio e backupdatabase.php con il nome del tuo file.
+Per effettuare questa operazione, accedi dal browser all’indirizzo URL completo dello script (ad esempio, se il nome del tuo script è “backup.php”: mypersonaldomain.ovh/backup.php). Se le informazioni nello script sono corrette, il backup si avvia e non resta che attenderne il completamento. In caso contrario verifica i dati inseriti e ripeti l’operazione.
 
-In questo modo crei un file nome_del_database.sql nella directory in cui si trova lo script.
+#### 4\. Recuperare il backup dallo spazio di storage
 
-In questo file, trovi tutte le istruzioni SQL per ricreare il database com'era al momento del backup, con tutti i tuoi dati.
+Una volta effettuato il backup, è possibile ripristinarlo nella cartella in cui è stato caricato lo script di backup. Il nome del backup del database deve corrispondere a quello indicato precedentemente nello script. A questo punto, non ti resta che ripristinare il backup sulla macchina.
 
-- Nota 1: Se il tuo database è troppo voluminoso, puoi fare il dump* tabella per tabella aggiungendo alla fine l'opzione ""--tables nome_della_tabella" e ottenere questo comando:
+Una volta terminata questa procedura ti consigliamo di eliminare il file di backup e lo script dalla directory “www”.
 
-mysqldump --host=serveur_sql --user=nome_del_database --password=password nome_del_database --tables nome_della_tabella > nome_del_database.sql
+> [!primary]
+>
+> Utilizzare uno script di backup e task pianificati (detti CRON) ti permette di automatizzare i backup con la frequenza che preferisci. Per maggiori informazioni sui task pianificati, consulta [questa guida](https://docs.ovh.com/it/hosting/hosting_web_task_automatizzaticron/){.external}.
+>
 
+### Comando SSH
 
-- Nota 2: Puoi anche comprimere questo file per scaricarlo più facilmente sul tuo computer (da FTP o web).
+Per effettuare questa operazione è necessario interagire con lo spazio di storage eseguendo alcuni comandi da un terminale.
 
-Per comprimere il file, esegui il comando gzip che creerà il file con l'estensione .sql.gz:
-system("gzip nome_del_database.sql");
+> [!warning]
+>
+> Questa soluzione richiede competenze tecniche avanzate. In questa guida puoi trovare informazioni utili per effettuare l’operazione ma, in caso di necessità, ti consigliamo di rivolgerti a uno specialista del settore. 
+>
 
+Una volta effettuato l’accesso in SSH allo spazio di storage, per effettuare il backup del database è necessario eseguire un comando. Qui sotto ne proponiamo uno di esempio. Ti ricordiamo che, nel momento in cui il comando viene eseguito nel terminale, il backup verrà realizzato nella directory corrente.
 
-## Con SSH
-
-## Requisiti
-
-- Credenziali FTP di accesso al tuo hosting Web.
-È disponibile una guida per recuperare le credenziali FTP:[]({legacy}1374)
-
-- Avere un'offerta che permetta l'accesso con SSH ([vedi le caratteristiche delle nostre offerte](https://www.ovh.it/hosting-web/))
-
-
-Trovi qui sotto una guida per la connessione in SSH:
-
-
-- [Connessione SSH su Hosting Condiviso](http://guida.ovh.it/SshSuHostingCondiviso)
-
-
-
-## Esporta il database in SSH.
-Conettiti in SSH al tuo hosting condiviso.
-
-Entra alla directory in cui hai il backup ed esegui questo comando:
-
-Codice da inserire e completare: 
-
-
-```
-mysqldump --host=server_sql --user=nome_del_database --password=password nome_del_database > nome_del_database.sql
+```sh
+mysqldump --host=indirizzo_del_server --user=nome_utente --password=password_utente nome_database > nome_file_backup.sql
 ```
 
+Sostituisci le informazioni generiche del comando con i dati del database in questione. A questo punto, non ti resta che ripristinare il backup sulla macchina.
 
-Codice completato per esempio: 
+## Per saperne di più
 
-
-```
-mysqldump --host=sql3 --user=testbackup --password=RtPgDsmL testbackup > testbackup.sql
-```
-
-
-
-
-## Dal servizio SQL Privato
-È disponibile una guida sull'importazione di un database:
-
-
-- []({legacy}2023)
-
-
-
-
-## Backup
-Se vuoi recuperare il backup a una data precedente di uno dei tuoi database utilizzando uno script, devi specificare il numero di porta:
-
-Copia attuale = 3306
-Ieri = 3307
-Settimana scorsa = 3317
-
-Esempio di codice che puoi utilizzare:
-
-PHP:
-
-```
-system("mysqldump --host=server_sql --user=nome_del_database --password=password --port=3317 nome_del_database > nome_del_database.sql ");
-```
-
-
-
-- Questo sistema di backup è disponibile per i database con Mysql5 min.
-
-
-
-
-## Errore "Max_Allowed_Packet" durante l'importazione del dump*
-Durante un dump* può essere interessante esportare il tuo database SQL con PhpMyAdmin in modo che il contenuto di una tabella di grandi dimensioni non venga aggiunto con un solo "INSERT INTO" evitando così errori relativi alla variabile server "Max_Allowed_Packet".
-
-Ad esempio, se la tabella A ha 500 righe, anziché avere un solo "INSERT INTO" per tutte le 500 righe, puoi effettuare 500 "INSERT INTO". 
-
-Con PhpMyAdmin:
-
-Durante l'esportazione in PhpMyAdmin, seleziona l'opzione di creazione dei dati  "nessuno dei precedenti" per evitare l'errore associato a "Max_Allowed_Packet".
-
-In SSH:
-
-Devi utilizzare l'opzione --skip-extended-insert.
-
-L'opzione --extended-insert, inclusa nell'opzione --opt (attiva di default), genera un unico INSERT INTO per l'intera tabella e deve essere disattivata con:
-
-
-```
---skip-extended-insert
-```
-
-
-
-![](images/img_1965.jpg){.thumbnail}
-
-
-## Glossario
-*dump: file di backup del database del tuo sito. 
-
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
