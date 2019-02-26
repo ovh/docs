@@ -41,7 +41,7 @@ OVH Managed Kubernetes service provides you Kubernetes clusters without the hass
 
 - an OVH Managed Kubernetes cluster
 - at least one node on the cluster (see the [ordering a node](../adding-nodes/) guide for details) 
-- a well configured  `kubectl` (see the [configuring kubectl](configuring-kubectl) guide for details) 
+- a well configured  `kubectl` (see the [configuring kubectl](../configuring-kubectl/) guide for details) 
 
 
 ## Instructions
