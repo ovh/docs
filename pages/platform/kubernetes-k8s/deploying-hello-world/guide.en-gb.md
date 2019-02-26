@@ -34,10 +34,9 @@ In this administration UI, you have three tabs:
 
 - **Containers and Services:** coming soon...
 
-
 ## Configuring the default settings for kubectl
 
-Please refer to the `Configuring kubectl on an OVH Managed Kubernetes cluster`{.action} documentation for this stage of the process.
+Please refer to the [Configuring kubectl on an OVH Managed Kubernetes cluster](../configuring-kubectl/) documentation for this part of the process.
 
 ## Add a worker node
 
