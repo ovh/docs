@@ -15,11 +15,16 @@ section: Getting started
  div.container {
    max-width: 800px;
  }
- .console {
-   background-color: #300A24 !important; 
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
  }
- .console code {
-   color: #cccccc !important;
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
  }
  }
 </style>
@@ -35,8 +40,8 @@ OVH Managed Kubernetes service provides you Kubernetes clusters without the hass
 ## Requirements
 
 - an OVH Managed Kubernetes cluster
-- at least one node on the cluster (see the [ordering a node](../ordering_a_node/ordering_a_node) guide for details) 
-- a well configured  `kubectl` (see the [configuring default settings for `kubectl`](../configuring_default_settings_for_kubectl/configuring_default_settings_for_kubectl) guide for details) 
+- at least one node on the cluster (see the [ordering a node](../adding-nodes/) guide for details) 
+- a well configured  `kubectl` (see the [configuring kubectl](configuring-kubectl) guide for details) 
 
 
 ## Instructions
