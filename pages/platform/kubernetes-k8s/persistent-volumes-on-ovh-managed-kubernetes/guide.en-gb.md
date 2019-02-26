@@ -7,13 +7,13 @@ section: Getting started
 
 **Last updated 29th January, 2019.**
 
+## Persistent Volumes
+
 Before going further, let's review how Kubernetes deals with data storage. There are currently two kinds of storage available with Kubernetes: Volumes and Persistent Volumes. 
 
 Kubernetes Volumes exist only while the container pod exists, and are deleted when it is deleted. As a result, Kubernetes Volumes are only useful for storing temporary data.
 
 Kubernetes Persistent Volumes allow us to work with non-volatile data in Kubernetes. Persistent Volumes are not tied to the pod lifecycle, or to a a single pod. Pods can claim Persistent Volumes, thus making the data available to them. 
-
-**Find out how to setup and manage Persistent Volumes on OVH Managed Kubernetes**
 
 > [!warning]
 > You must be wondering how Persistent Volumes are compatible with the rule that *containers should be stateless* – one of the most important principles of best practice for containers. It's important to note that as the Kubernetes ecosystem has matured, and persistent storage solutions have emerged, this rule is no longer universally applicable. 
