@@ -1,119 +1,109 @@
 ---
-title: Débuter avec une instance Public Cloud
+title: 'Premiers pas avec une instance Public Cloud'
 slug: debuter-avec-une-instance-public-cloud
-legacy_guide_number: 2018
-section: Depuis les clients en ligne de commande
+excerpt: 'Découvrez comment bien débuter avec une instance Public Cloud'
+section: 'Premiers pas'
 ---
 
+**Dernière mise à jour le 26/03/2018**
 
-## Preambule
-La partie " **Cloud**" de l'espace client OVH a été conçue afin de vous permettre de gérer vos instances de manière simple et rapide.
+## Objectif
 
-Vous y trouverez l'ensemble de vos projets séparés en 2 parties :
+Vous avez la possibilité de gérer simplement vos instances Public Cloud OVH depuis votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Vous y retrouverez l'ensemble de vos projets d'infrastructure (instances, sauvegardes, disques, clés SSH, etc.) et de stockage (comprenant la liste de vos conteneurs).
 
-- Infrastructure, comprenant l'ensemble de vos instances, sauvegardes, disques, clés SSH, etc...
-- Stockage, comprenant la liste de vos conteneurs
-
-Ce guide se spécialisera dans la gestion de vos instances, et vous expliquera notamment comment éditer, redémarrer ou encore supprimer celles ci.
-
+**Découvrez comment bien débuter avec une instance Public Cloud.**
 
 ### Prérequis
-- [Créer une clé SSH](../guide.fr-fr.md){.ref}
-- [Créer une instance dans l'espace client OVH](../guide.fr-fr.md){.ref}
 
+- [Avoir créé une instance Public Cloud d’OVH depuis votre compte](../creer-instance-espace-client/).
+- [Avoir créé une clé SSH](../creation-des-cles-ssh/).
 
-## Premier pas
-Voici le visuel du menu que vous pouvez obtenir pour votre instance :
+### En pratique
 
+### Accéder à la gestion de l'instance
 
-![public-cloud](images/3415.png){.thumbnail}
+Débutez par vous connecter à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie « Cloud », puis cliquez sur `Serveurs`{.action} dans la barre de services à gauche. Sélectionnez alors le service Public Cloud concerné. Dans l'onglet `Compute`{.action}, assurez-vous aussi d'être bien positionné sur le choix « Instances ».
 
-Vous trouverez donc les informations suivantes :
+En dessous des onglets s'affiche le visuel de votre instance. Vous y retrouvez plusieurs informations :
 
-- Le modèle et le cout de votre instance
-- Son nom et sa région
-- Les ressources disponibles
-- Les éventuels disques additionnels attachés
-- L'adresse IP de votre instance à droite
+- le modèle et le coût de votre instance ;
+- son nom et sa région ;
+- les ressources disponibles ;
+- les éventuels disques additionnels attachés ;
+- l'adresse IP de votre instance.
 
+![public-cloud](images/3415-2.png){.thumbnail}
 
-### Edition de l'instance
-En cliquant sur le choix " **Éditer**" du menu précédent, une nouvelle fenêtre apparaitra :
+### Éditer la configuration d'une instance
 
+Depuis la page de gestion de l'instance, après avoir cliqué sur l'icône représentant une flèche vers le bas, sélectionnez `Éditer`{.action}.
 
-![public-cloud](images/3481.png){.thumbnail}
+![public-cloud](images/3481-2.png){.thumbnail}
 
-Vous pourrez depuis ce menu :
+Dans la fenêtre qui apparaît, vous avez la possibilité de :
 
-- Renommer votre instance
-- Changer le modèle de votre instance
-- Réinstaller votre instance sur un autre système d'exploitation
+- renommer l'instance ;
+- changer le modèle de l'instance ;
+- réinstaller l'instance sur un autre système d'exploitation (**attention, les données actuelles seront supprimées durant cette opération**) ;
+- passer d'une facturation à l'heure à un forfait mensuel (une facture sera alors générée au prorata temporis selon le jour du mois en cours).
 
+![public-cloud](images/3481-3.png){.thumbnail}
 
+### Créer une sauvegarde d'une instance
 
-> [!alert]
->
-> Vos données seront supprimées lors de la réinstallation.
-> 
+Vous pouvez créer une sauvegarde d'une instance depuis la page de gestion de cette dernière. Pour cela, après avoir cliqué sur l'icône représentant une flèche vers le bas, sélectionnez `Créer une sauvegarde`{.action}. Suivez alors les étapes qui apparaissent.
 
-- Passer de la facturation à l'heure, vers le forfait mensuel
+Reportez-vous à notre guide « [Sauvegarder une instance](../sauvegarder-une-instance/) » pour vous accompagner dans cette démarche. 
 
+![public-cloud](images/3481-4.png){.thumbnail}
 
+### Récupérer les informations de connexion
 
-> [!alert]
->
-> Une nouvelle facture sera donc générée au prorata temporis selon le jour du
-> mois en cours.
-> 
+Depuis la page de gestion de l'instance, après avoir cliqué sur l'icône représentant une flèche vers le bas, choisissez `Informations de connexion`{.action}. Ceci vous permet de récupérer la commande SSH à utiliser pour vous connecter à votre instance.
 
+![public-cloud](images/3484-2.png){.thumbnail}
 
-### Création de sauvegarde
-Il est possible de créer une sauvegarde de votre instance depuis le même menu. Pour plus de renseignement, vous pouvez utiliser le guide suivant :
+### Accéder à la console VNC
 
-- [Sauvegarder une instance]({legacy}1881){.ref}
+La console VNC vous permet d'avoir un accès direct à votre instance. Vous devez cependant avoir configuré un mot de passe pour l'utilisateur « root ».
 
+Pour accéder à cette console, après avoir cliqué sur l'icône représentant une flèche vers le bas dans la page de gestion de l'instance, sélectionnez `Console VNC`{.action}.
 
-### Informations de connexion
-Ce choix vous permet de faire apparaitre une fenêtre avec la commande ssh à utiliser pour vous connecter sur votre instance.
+![public-cloud](images/3484-3.png){.thumbnail}
 
+La console apparaît alors dans une fenêtre. 
 
-![public-cloud](images/3484.png){.thumbnail}
+![public-cloud](images/3484-4.png){.thumbnail}
 
+### Redémarrer une instance
 
-### Console VNC
-Il est en effet possible d'accéder à la console VNC de votre instance.
+Vous avez la possibilité de redémarrer une instance de deux manières différentes :
 
-Cela vous permettra d'avoir un accès direct à votre instance. Il faudra cependant avoir configuré un mot de passe sur l'utilisateur " **root**" de votre instance dans un premier temps.
+- redémarrage à chaud (logiciel) ;
+- redémarrage à froid (matériel).
 
-Il est possible de vous aider du guide suivant pour effectuer cela :
+Depuis la page de gestion de l'instance, après avoir cliqué sur l'icône représentant une flèche vers le bas, choisissez ainsi `Redémarrer à chaud (soft)`{.action} ou `Redémarrer à froid (hard)`{.action}.
 
-- [Accéder à la console d'une instance dans Horizon]({legacy}1782){.ref}
+Confirmez ensuite le redémarrage dans la fenêtre qui apparaît.
 
+![public-cloud](images/3484-5.png){.thumbnail}
 
-### Redemarrage de l'instance
-Votre instance peut aussi être redémarrer depuis ce même menu, et de 2 manières différentes :
+### Réinstaller une instance
 
-- Redémarrage à chaud (Logiciel)
-- Redémarrage à froid (Matériel)
+Vous pouvez réinstaller une instance en conservant le même système d'exploitation. **Cette manipulation aura pour effet de supprimer toutes les données actuelles.**
 
+Depuis la page de gestion de l'instance, après avoir cliqué sur l'icône représentant une flèche vers le bas, sélectionnez `Réinstaller`{.action}. Validez ensuite la manipulation. 
 
-### Reinstallation de l'instance
-Il est possible de réinstaller votre instance avec le même système d'exploitation.
+![public-cloud](images/3484-6.png){.thumbnail}
 
+### Supprimer une instance
 
+Vous avez la possibilité de supprimer une instance. **Ceci entraînera l'effacement définitif de l'instance ainsi que de ses données.**
 
-> [!alert]
->
-> Vos données seront supprimées lors de la réinstallation.
-> 
+Depuis la page de gestion de l'instance, après avoir cliqué sur l'icône représentant une flèche vers le bas, choisissez `Supprimer`{.action}. Validez alors la manipulation. 
 
+![public-cloud](images/3484-7.png){.thumbnail}
 
-### Suppression de l'instance
-Le dernier choix proposé sera la suppression de votre instance. Cela permet de ne plus être facturé de votre instance en cas de facturation à l'heure.
+## Aller plus loin
 
-
-
-> [!alert]
->
-> Votre instance et les données présentes ne seront alors plus récupérable.
-> 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
