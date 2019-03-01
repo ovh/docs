@@ -39,7 +39,7 @@ New plugins are designed to be easy to contribute, we'll eagerly accept pull req
 
 To ensure using the last release, please refer to the [Github project](https://github.com/influxdata/telegraf/releases){.external}. 
 
-The Metrics platform allow the user to push directly in InfluxDB with Telegraf, or with Warp 10 using a Warp 10 output plugin. To set up correctly Telegraf to use it you have to refer to the [plugin Github repository](https://github.com/CleverCloud/telegraf-output-warp10).
+The Metrics platform allow the user to push directly in InfluxDB with Telegraf, or with Warp 10™ using a Warp 10™ output plugin. To set up correctly Telegraf to use it you have to refer to the [plugin Github repository](https://github.com/CleverCloud/telegraf-output-warp10).
 
 ### Telegrag configuration file
 
@@ -95,9 +95,9 @@ To start pushing Telegraf data to the Metrics platform, you just need to add an 
 
 Replace `WRITE_TOKEN` and `REGION` by your own information based on Metrics manager. Telegraf can now push to Metrics platform!
 
-#### Using Warp 10 output
+#### Using Warp 10™ output
 
-As the Metrics platform backend use [Warp 10](http://www.warp10.io/), the [Warp 10 telegraf plugin](https://github.com/CleverCloud/telegraf-output-warp10) can also be used to write Telegraf data on our platform. A working configuration for this plugin would be:
+As the Metrics platform backend use [Warp 10™](https://warp10.io/), the [Warp 10™ telegraf plugin](https://github.com/CleverCloud/telegraf-output-warp10) can also be used to write Telegraf data on our platform. A working configuration for this plugin would be:
 
 ```toml
 # OUTPUTS

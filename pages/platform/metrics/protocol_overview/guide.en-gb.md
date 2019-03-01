@@ -12,7 +12,7 @@ order: 1
 
 > [!primary]
 > 
-> Metrics is protocol agnostic, it means that you can push your data with OpenTSDB, and query it with Warp10 or vice versa.
+> Metrics is protocol agnostic, it means that you can push your data with OpenTSDB, and query it with Warp 10™ or vice versa.
 >
 > Metrics doesn't enforce you to a proprietary protocol. Instead, we believe the plurality of existing protocols from Open Source solutions can be used to achieve Pushing and Querying the platform.
 >
@@ -29,7 +29,7 @@ Each protocol provides different capabilities. Some will be easier than others b
 |Metrics2.0|<i class="fas fa-check"></i>|<i class="fas fa-times"></i>|[Metrics 2.0 spec](../protocol-opentsdb)|<i class="fas fa-star"><i class="fas fa-star">|[http://metrics20.org/](http://metrics20.org/){.external}|
 |Prometheus|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics Prometheus](../protocol-prometheus)|<i class="fas fa-star"></i><i class="fas fa-star"></i>|[https://prometheus.io/](https://prometheus.io/){.external}|
 |SQL|<i class="fas fa-times"></i>|<i class="fas fa-times"></i>|Metrics SQL - Not implemented yet| | |
-|Warp10|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics Warp10](../protocol-warp10)|<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>|[http://www.warp10.io/](http://www.warp10.io/){.external}|
+|Warp 10™|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics Warp 10™](../protocol-warp10)|<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>|[https://warp10.io/](https://warp10.io/){.external}|
 
 Most of the protocols don't include **authentification**, so **you need to add the tokens in the Basic Auth field.**
 
@@ -39,7 +39,7 @@ Most of the protocols don't include **authentification**, so **you need to add t
 >
 > - You want to push json? -> `OpenTSDB`
 > - You want to instrument your code? -> `Prometheus SDK` & `Beamium`
-> - You want powerful analytics? -> `Warp10` & `WarpScript`
+> - You want powerful analytics? -> `Warp 10™` & `WarpScript™`
 > - You want BI tools integration like Tableau, Power BI, Qlik? -> `SQL`
 >
 
@@ -49,7 +49,7 @@ Metrics has builtin security to secure your data. In the Start section you've le
 - a **READ** token to Query
 - a **WRITE** token to Push Data
 
-Except for Warp10 (where it's provided as a specific Header for push and in the DSL payload for queries), this token will be used as the password in the [Basic Auth](https://en.wikipedia.org/wiki/Basic_access_authentication){.external}.
+Except for Warp 10™ (where it's provided as a specific Header for push and in the DSL payload for queries), this token will be used as the password in the [Basic Auth](https://en.wikipedia.org/wiki/Basic_access_authentication){.external}.
 
 Most of the protocols are available through HTTPS endpoints. Here's the logic for pushing:
 

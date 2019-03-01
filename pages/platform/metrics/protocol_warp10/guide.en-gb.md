@@ -1,7 +1,7 @@
 ---
-title: Use Warp10
+title: Use Warp 10™
 slug: protocol-warp10
-excerpt: Get an overview on how to use Warp10 for Metrics
+excerpt: Get an overview on how to use Warp 10™ for Metrics
 section: Protocol
 order: 6
 ---
@@ -9,7 +9,7 @@ order: 6
 
 ## Objective
 
-[The Warp 10 Platform](http://www.warp10.io/){.external} is designed to collect, store and manipulate sensor data. In this guide, you will learn how to use Warp10 protocol with Metrics.
+[The Warp 10™ Platform](https://warp10.io/){.external} is designed to collect, store and manipulate sensor data. In this guide, you will learn how to use the Warp 10™ protocol with Metrics.
 
 ## Requirements
 
@@ -19,24 +19,24 @@ order: 6
 
 ### Compatibility
 
-Being based on Warp10, we are first class citizens for it. **All functions and calls are supported**:
+Being based on Warp 10™, we are first class citizens for it. **All functions and calls are supported**:
 
 | API    | Method | Supported |
 |--------|--------|-----------|
-| [/api/v0/update](http://www.warp10.io/apis/ingress/){.external} | POST   |  <i class="fas fa-check"></i> |
-| [/api/v0/fetch](http://www.warp10.io/apis/fetch/){.external} | GET   |  <i class="fas fa-check"></i> |
-| [/api/v0/exec](http://www.warp10.io/apis/warpscript/){.external}  | POST   |  <i class="fas fa-check"></i> |
-| [/api/v0/delete](http://www.warp10.io/apis/delete/){.external}  | GET   |  <i class="fas fa-check"></i> |
+| [/api/v0/update](https://www.warp10.io/content/03_Documentation/03_Interacting_with_Warp_10/03_Ingesting_data/01_Ingress){.external} | POST   |  <i class="fas fa-check"></i> |
+| [/api/v0/fetch](https://www.warp10.io/content/03_Documentation/03_Interacting_with_Warp_10/04_Fetching_data/01_Fetching_data){.external} | GET   |  <i class="fas fa-check"></i> |
+| [/api/v0/exec](https://www.warp10.io/content/03_Documentation/03_Interacting_with_Warp_10/09_Analysing_data){.external}  | POST   |  <i class="fas fa-check"></i> |
+| [/api/v0/delete](https://www.warp10.io/content/03_Documentation/03_Interacting_with_Warp_10/07_Deleting_data){.external}  | GET   |  <i class="fas fa-check"></i> |
 
 
 ### How to Push data
 
 #### Authentification
-To push data to the platform, you will need a **WRITE TOKEN**. Warp10 supports authentification through `X-Warp10-Token`.
+To push data to the platform, you will need a **WRITE TOKEN**. Warp 10™ supports authentification through the `X-Warp10-Token`.
 
 #### Push data using curl
 
-> > The full documentation is available at http://www.warp10.io/apis/ingress/
+> > The full documentation is available at https://www.warp10.io/content/03_Documentation/03_Interacting_with_Warp_10/03_Ingesting_data/01_Ingress
 
 Write a file called 'warp.data' with this included:
 
@@ -48,7 +48,7 @@ You can now push it to the platform using curl:
 
 ```sh
 curl -H 'X-Warp10-Token: WRITE_TOKEN' -H 'Transfer-Encoding: chunked' \
-    --data-binary @warp.data 'https://warp10.gra1.metrics.ovh.net/api/v0/update'
+    -T warp.data 'https://warp10.gra1.metrics.ovh.net/api/v0/update'
 # or
 curl -H 'X-Warp10-Token: WRITE_TOKEN' --data-binary "1380475081000000// foo{label0=val0,label1=val1} 42" \
     'https://warp10.gra1.metrics.ovh.net/api/v0/update'
@@ -74,17 +74,17 @@ You can also use Python to push some data.
 Don't forget to replace `WRITE_TOKEN` by your own write token.
 
 ### How to query
-#### An overview of WarpScript
+#### An overview of WarpScript™
 
-Warp10 is providing a **Query Language** called **WarpScript**, designed to manipulate time series. It features:
+Warp 10™ provides an **Analytics Language** called **WarpScript™**, designed to manipulate time series. It features:
 
 - Server Side Analysis
 - Dataflow language
-- Rich programming QL (+800 functions)
+- Rich programming QL (900+ functions)
 - Geo-Fencing capabilities
 - Unified Language (query, batch, streaming)
 
-Here's a WarpScript example:
+Here's a WarpScript™ example:
 
 ```sh
 'TOKEN_READ' 'token' STORE                          // Stocking token
@@ -100,7 +100,7 @@ To help you get started, we've created a "Tour" available at http://tour.warp10.
 
 #### How to query data with curl
 
-> The full documentation is available at http://www.warp10.io/apis/warpscript/.
+> The full documentation is available at https://www.warp10.io/doc/reference
 
 Write a file called `script.mc2` with this content:
 
@@ -129,6 +129,6 @@ curl -H 'X-Warp10-Token: WRITE_TOKEN' \
 
 ## Going further
 
-You can learn how to configure a Grafana Warp10 source by following [this guide](../start-grafana).
+You can learn how to configure a Grafana Warp 10™ source by following [this guide](../start-grafana).
 
 You can also exchange with our community of users on [https://community.ovh.com](https://community.ovh.com){.external}.

@@ -132,7 +132,7 @@ steps:
 
 A drone is a script run with custom parameters, which returns incidents from a metrics subset. You don't necssarily have to write drones, as basics ones are available on the [Registry](https://studio.metrics.ovh.net/omni/registry). **Life** drones, for example, will checks that a metric is recently pushed, and **range** drones will check that your metric's value is within a defined range.
 
-If you wish to write your own, the script must be a WarpScript, which takes and returns a specific structure.
+If you wish to write your own, the script must be a WarpScript™, which takes and returns a specific structure.
 
 Drone definition in a Yaml file:
 
@@ -143,7 +143,7 @@ Drone definition in a Yaml file:
 | version       | version                                 |                               | Version used in drone registry                                            |
 | description   | string                                  |                               | A small description of the drone and its behaviour (can be a file path)   |
 | public        | boolean                                 |                               | Set to 'true' to publish your drone in the registry                       |
-| lang          | string                                  | <i class="fas fa-check"></i>  | Script language used (ws for WarpScript)                                  |
+| lang          | string                                  | <i class="fas fa-check"></i>  | Script language used (ws for WarpScript™)                                  |
 | params        | map(parameter_name) -> parameter_config |                               | A map of drone parameters with their configurations                        |
 | script        | string                                  | <i class="fas fa-check"></i>  | Can be a path to a file (./mydrone.ws) or the litteral script             |
 
@@ -184,7 +184,7 @@ params:
 
 #### Writing your own drone script
 
-If the registry doesn't have a drone to suit your specific requirements, you can write your own drone scripts using WarpScript. For more on this, refer to the [official documentation](http://www.warp10.io/reference/) or the [Warp10 tour](https://tour.warp10.io/#1-1).
+If the registry doesn't have a drone to suit your specific requirements, you can write your own drone scripts using WarpScript™. For more on this, refer to the [official documentation](http://www.warp10.io/reference/) or the [Warp 10™ tour](https://tour.warp10.io/#1-1).
 
 Your script will require the following variables:
 
@@ -193,12 +193,12 @@ Your script will require the following variables:
 * **$labels** Labels (part of the metric selector)
 * **$now** Current timestamp
 
-Alert parameters are added on top of your WarpScript. Just prefix each parameter name with **$** to use them.
+Alert parameters are added on top of your WarpScript™. Just prefix each parameter name with **$** to use them.
 Optional parameters are not defined, so you will have to check if they exist.
 
 OMNI expects your script to have only one entry in the stack at the end. This entry must be an array of incidents, each of which must have a unique **name** (like 'series selector'), and can have a **reason** and **details**.
 
-WarpScript returns:
+WarpScript™ returns:
 ```ws
 [
   { 'name' 'os.mem{host=A}' 'reason' 'MAX reached' 'details' '85% of memory used is to high' }

@@ -1,7 +1,7 @@
 ---
 title: Analytics over Time Series
 slug: usecase-analytics
-excerpt: Leverage WarpScripts for Analytics
+excerpt: Leverage WarpScript™ for Analytics
 section: Use cases
 order: 1
 ---
@@ -14,12 +14,12 @@ order: 1
 
 ## Working with counters
 
-In IT monitoring, we're heavily working with counters. Linux's data, number of HTTP calls, and so on. With WarpScript, you can easily avoid counter resets and calculate rate.
+In IT monitoring, we're heavily working with counters. Linux's data, number of HTTP calls, and so on. With WarpScript™, you can easily avoid counter resets and calculate rate.
 
 
 ### How to detect counter resets and remove them
 
-The [RESETS functions](http://www.warp10.io/reference/functions/function_RESETS){.external} compensates for possible counter resets by adding the last value before the rest to all values after the reset.
+The [RESETS functions](https://warp10.io/doc/RESETS){.external} compensates for possible counter resets by adding the last value before the rest to all values after the reset.
 
 You just need to use the **RESETS** like this:
 
@@ -41,7 +41,7 @@ You can play with these example using Quantum: [resets](https://quantum.metrics.
 
 ### How to transform a counter into a rate
 
-The [mapper.rate](http://www.warp10.io/reference/frameworks/mapper_rate/){.external} function **computes the rate of change** between the first and last values (rate = (last - first) / (lastick - firsttick)) of each sliding window. The location and elevation returned are those associated with the most recent value in the sliding window.
+The [mapper.rate](https://warp10.io/doc/mapper.rate){.external} function **computes the rate of change** between the first and last values (rate = (last - first) / (lastick - firsttick)) of each sliding window. The location and elevation returned are those associated with the most recent value in the sliding window.
 
 Here's an example:
 
@@ -97,7 +97,7 @@ You can play with these example using Quantum: [pattern](https://quantum.metrics
 
 ## Working with annotations
 
-Annotations are a powerful Warp10 features. You can **enrich your graph** with custom-crafted annotations such as:
+Annotations are a powerful Warp 10™ features. You can **enrich your graph** with custom-crafted annotations such as:
 
 - new releases
 - crash
@@ -105,9 +105,9 @@ Annotations are a powerful Warp10 features. You can **enrich your graph** with c
 - bugfix
 - anomalies
 
-To use annotations, you just have to push the value as string into Metrics. Only Warp10 protocol allows to do it.  You can also convert a serie into annotations by converting its values into string or boolean.
+To use annotations, you just have to push the value as string into Metrics. Only Warp 10™ protocol allows to do it.  You can also convert a serie into annotations by converting its values into string or boolean.
 
-Here's an example using an outliers functions called [ESDTEST](http://www.warp10.io/reference/functions/function_ESDTEST/){.external}:
+Here's an example using an outliers functions called [ESDTEST](https://warp10.io/doc/ESDTEST/){.external}:
 
 
 ![pattern](images/outliers_1.png){.thumbnail}

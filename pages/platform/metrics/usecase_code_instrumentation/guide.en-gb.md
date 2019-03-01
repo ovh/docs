@@ -19,7 +19,7 @@ order: 2
 
 Sometimes, server monitoring is not enough. You may need deep insights about your application. Questions like **"How is my latency doing since the last upgrade?"** are keys to provide a fast and reliable service, especially when you're using **micro-services**, as you're multiplying points of failures. **Every library, subsystem and service should have at least a few metrics** to give you a rough idea of how it is performing.
 
-There's many libraries to help you create metrics from the runtime of your application. In most of the languages, you'll be able to find a client library to exposes them. Prometheus has a ["client libraries"](https://prometheus.io/docs/instrumenting/clientlibs/){.external} list compatible with Metrics, as we support Prometheus thanks to ["Beamium"](https://github.com/ovh/beamium){.external}, our opensource Warp10 & Prometheus metrics scraper.
+There's many libraries to help you create metrics from the runtime of your application. In most of the languages, you'll be able to find a client library to exposes them. Prometheus has a ["client libraries"](https://prometheus.io/docs/instrumenting/clientlibs/){.external} list compatible with Metrics, as we support Prometheus thanks to ["Beamium"](https://github.com/ovh/beamium){.external}, our opensource Warp 10™ & Prometheus metrics scraper.
 
 
 ## Monitor your third-party applications
