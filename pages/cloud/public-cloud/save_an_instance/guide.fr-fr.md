@@ -1,56 +1,51 @@
 ---
-title: Sauvegarder une instance
+title: 'Sauvegarder une instance'
 slug: sauvegarder-une-instance
-legacy_guide_number: 1881
-section: Depuis espace client OVH
+excerpt: 'Découvrez comment sauvegarder une instance Public Cloud en quelques clics'
+section: 'Depuis espace client OVH'
 ---
 
+**Dernière mise à jour le 26/03/2018**
 
-## Preambule
-Le Public Cloud vous permet à tout moment de créer une sauvegarde de votre instance. Cette sauvegarde pourra vous servir pour :
+## Objectif
 
-- Restaurer votre instance sur une ancienne configuration
-- Recréer / dupliquer une instance
+Vous avez la possibilité de créer à tout moment une sauvegarde d'une instance depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Cette dernière peut vous permettre de restaurer votre instance sur une ancienne configuration ; ou de pouvoir recréer cette dernière.
 
-Ce guide vous explique comment, en quelques clics, créer cette sauvegarde (snapshot).
+**Réalisez en quelques clics une sauvegarde d'une instance Public Cloud.**
 
+## Prérequis
 
-### Prérequis
-- Être connecté à l'espace client OVH Public Cloud
-- Avoir une machine virtuelle déjà crée
+- [Avoir créé une instance Public Cloud depuis votre compte](../creer-instance-espace-client/).
+- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Cloud`{.action}.
 
+## En pratique
 
-## Création de la sauvegarde
-- Développer le menu suivant sur le serveur virtuel à sauvegarder :
+### Étape 1 : accéder à la gestion de l'instance
 
+Connectez-vous à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Dans la partie « Cloud », cliquez sur `Serveurs`{.action} dans la barre de services à gauche. Choisissez alors la solution Public Cloud concernée. Enfin, dans l'onglet `Compute`{.action}, assurez-vous d'être bien positionné sur le choix « Instances ».
 
-![public-cloud](images/2803.png){.thumbnail}
+![public-cloud](images/2803-2.png){.thumbnail}
 
-- Cliquer sur Créer une sauvegarde
-- La fenêtre suivante apparaît, et vous propose de personnaliser le nom de la sauvegarde :
+### Étape 2 : créer une sauvegarde d'une instance
 
+Depuis la page de gestion de l'instance, après avoir cliqué sur l'icône représentant une flèche vers le bas, sélectionnez `Créer une sauvegarde`{.action}.
 
-![public-cloud](images/2804.png){.thumbnail}
+![public-cloud](images/2803-3.png){.thumbnail}
 
-- Cliquer sur Lancer la sauvegarde :
+Dans la fenêtre qui apparaît, définissez un nom pour cette sauvegarde. **Prenez aussi connaissance des informations concernant tout coût éventuel lié à sa création.**
 
+Dès que vous êtes prêt, cliquez sur `Lancer la sauvegarde`{.action}
 
-![public-cloud](images/2805.png){.thumbnail}
+![public-cloud](images/2805-2.png){.thumbnail}
 
+### Étape 3 : accéder aux sauvegardes d'une instance
 
+Pour accéder aux sauvegardes d'une instance Public Cloud, cliquez sur l'onglet `Compute`{.action} puis sur `Snapshots`{.action}.
 
-> [!success]
->
-> On remarque que l'interface client évalue le coût mensuel que représente
-> cette sauvegarde.
-> 
+Vous retrouvez alors dans un tableau les différentes sauvegardes disponibles. Utilisez les boutons situés à droite pour interagir avec ces dernières.
 
-- On retrouve ensuite les sauvegardes dans la section correspondantes :
+![public-cloud](images/2807-2.png){.thumbnail}
 
+## Aller plus loin
 
-![public-cloud](images/2806.png){.thumbnail}
-
-- Les détails de la sauvegarde sont disponibles :
-
-
-![public-cloud](images/2807.png){.thumbnail}
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
