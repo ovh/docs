@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to use network bridging to configure inte
 section: 'Network Management'
 ---
 
-**Last updated 5th February 2019**
+**Last updated 4th March 2019**
 
 ## Objective
 
@@ -57,7 +57,7 @@ Your gateway address would therefore be:
 
 > [!primary]
 >
-For all operating systems and distributions, you **MUST** configure you virtual machine with the virtual MAC address you created in your control panel.
+For all operating systems and distributions, you **MUST** configure you virtual machine with the virtual MAC address you created in the Control Panel.
 >
 
 #### Debian and Debian-based operating systems (Ubuntu, CrunchBang, SteamOS, etc.)
