@@ -64,6 +64,7 @@ iface eth0 inet static
     post-up route add default gw GATEWAY_VM
     pre-down route del GATEWAY_VM dev eth0
     pre-down route del default gw GATEWAY_VM
+    gateway GATEWAY_VM  #Necesario a partir de debian 9.7
 ```
 
 **Archivo: /etc/resolv.conf**
