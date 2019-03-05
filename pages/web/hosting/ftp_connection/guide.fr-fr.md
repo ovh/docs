@@ -66,7 +66,7 @@ La connexion à l’espace de stockage peut s’effectuer de plusieurs manières
 
 [2. Connexion via un logiciel FTP](./#2-connexion-via-un-logiciel-ftp) : vous permet d'accéder à votre espace de stockage via un logiciel (comme FileZilla ou Cyberduck). Vous devrez au préalable installer le logiciel choisi sur votre ordinateur.
 
-[3. Connexion via un accès SSH](./#3-connexion-via-un-acces-ssh) : vous permet d'accéder à votre espace de stockage via un accès SSH. Des connaissances plus avancées, ainsi qu'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
+[3. Connexion via un accès SSH](./#3-connexion-en-ssh) : vous permet d'accéder à votre espace de stockage via un accès SSH. Des connaissances plus avancées, ainsi qu'une offre d'[hébergement web OVH]({ovh_www}/hebergement-web/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
 
 #### 1. Connexion via le FTP Explorer
 
