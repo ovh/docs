@@ -1,93 +1,71 @@
 ---
-title: Add storage space
-excerpt: Add storage space
+title: 'Add storage space'
 slug: add_storage_space
+excerpt: 'This guide will show you how to add external storage space to your Public Cloud Instance'
 legacy_guide_number: g1790
 section: Storage
 ---
 
+**Last updated 6th March 2019**
 
-## 
-Public Cloud is an unlimited storage solution with simple billing adapted to your needs. 
-There are lots of types of object containers:
+## Objective
 
-- For static hosting (static website)
-- For private storage (for example, for storing personal data)
-- For public storage (for storing anything that is publicly accessible)
+[OVH Public Cloud Storage](https://www.ovh.co.uk/public-cloud/storage/){.external} offers an unlimited storage solution with simple billing that can be adapted to suit your needs.
 
+Our object containers include:
 
+- static hosting (for static websites)
+- private storage (for example, for storing personal data)
+- public storage (for storing anything that is publicly accessible)
 
+**This guide will show you how to add external storage space to your [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external}.**
 
-## 
+## Requirements
 
-- Log in to the [cloud customer account](https://www.ovh.com/manager/cloud)
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a Public Cloud project in your OVH account
 
-- Click storage
-- Click create a container
-- Select the datacentre
+## Instructions
 
+First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on `Cloud`{.action}.
 
-You can then choose the container type you need.
+![cloud menu](images/cloud-menu.png){.thumbnail}
 
+Next, select your project from the list of servers.
 
-## For static hosting
-Do you want to host a static site? 
+![select project](images/select-project.png){.thumbnail}
 
+Now select the `Storage`{.action} tab.
 
-- Choose static hosting
-- Name your container
-- Click Create the container
-- The static storage will now appear in the list of storage
+![storage tab](images/storage-tab.png){.thumbnail}
 
+Click the `Create a container`{.action} button.
 
+![create a container](images/create-a-container.png){.thumbnail}
 
-## Info
-OVH has set up standard pages, you can delete them before putting your html elements in
+You will now be presented with several configuration options for your container. First, select a datacentre from the list, as shown in the screenshot below:
 
+![select datacentre](images/select-datacentre.png){.thumbnail}
 
-## Private storage
-Do you want to host confidential data?
+Next, select the container type.
 
+![select container type](images/select-container-type.png){.thumbnail}
 
-- Choose Private
-- Name the container 
-- Click Create the container
-- The private storage will now appear in the list of storage
+Next, select whether or not you would like to archive and secure your data.
 
+> [!primary]
+>
+This step is optional. You can find out more about this feature on our [Cloud Archive](https://www.ovh.co.uk/public-cloud/storage/cloud-archive/){.external} page.
+>
 
+![public cloud archive](images/public-cloud-archive.png){.thumbnail}
 
+Finally, name your container and click the `Create the container`{.action} button.
 
-## For public storage
-Do you want to host publicly accessible data 
+![name container](images/name-container.png){.thumbnail}
 
+## Go further
 
-- Choose Public
-- Name the container 
-- Click Create the container
-- The public storage will now appear in the list of storage
-
-
-
-
-## Add files
-
-- Click on the container name 
-- To add files click Add objects
-
-
-
-## Info
-In the Prefixfield enter the file location
-
-- The / folder corresponds to the root  
-- If you want to upload files to the mysite folder at the root, you have to use the /mysite prefix.
-
-
--Click Import files
--Select the files to import, then confirm
--The files will be uploaded
-
-
-## 
- 
-
+* [Create and configure an additional disk on an instance](https://docs.ovh.com/gb/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/){.external}
+* [Create an additional volume and attach it to an instance](https://docs.ovh.com/gb/en/public-cloud/create-an-additional-volume-and-attach-it-to-an-instance/){.external}
+* Join our community of users on <https://community.ovh.com/en/>.

@@ -19,8 +19,8 @@ We list here the most frequently requested OVH Managed Kubernetes features that 
 ### Planned features
 
 - **vRack** : Currently, all traffic between you nodes is encrypted but transit through OVH public network. We will offer private clusters in OVH private network (vRack) later in the year.
-- **Nodes autoscaling** : Additionnaly to pod autoscaling, we will provide you the concept of node pools and nodes autscaling, allowing your cluster to grow automatically beetween you user-defined limits.
-- **Localisation choice** : During 2019, we will offer you the possibily to choose one of multiple OVH Public Cloud datacenters at Cluster creation.
+- **Nodes autoscaling** : Additionnaly to pod autoscaling, we will provide you the concept of node pools and nodes autoscaling, allowing your cluster to grow automatically between your user-defined limits.
+- **Localisation choice** : During 2019, we will offer you the possibility to choose one of multiple OVH Public Cloud datacenters at Cluster creation.
 - **GPU worker nodes** : We will integrate GPU public cloud flavors in the worker nodes choice.
 - **New major versions ** : We will support upcoming major versions, during the quarter following their official release.
 
