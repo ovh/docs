@@ -67,5 +67,4 @@ Finally, name your container and click the `Create the container`{.action} butto
 ## Go further
 
 * [Create and configure an additional disk on an instance](https://docs.ovh.com/ie/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/){.external}
-* [Create an additional volume and attach it to an instance](https://docs.ovh.com/gb/en/public-cloud/create-an-additional-volume-and-attach-it-to-an-instance/){.external}
 * Join our community of users on <https://community.ovh.com/en/>.
