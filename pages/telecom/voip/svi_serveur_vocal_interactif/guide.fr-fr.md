@@ -1,452 +1,207 @@
 ---
-title: SVI (Serveur Vocal Intéractif)
+title: 'Configurer un serveur vocal interactif (SVI)'
 slug: svi-serveur-vocal-interactif
-legacy_guide_number: '7536738'
-space_key: CRTEL
-space_name: Téléphonie
-section: Numéros ou alias
+excerpt: 'Apprenez à configurer un serveur vocal interactif depuis l''espace client OVH'
+section: 'Numéros ou alias'
 ---
 
-Préambule {#préambule}
----------
+**Dernière mise à jour le 07/03/2019**
 
-La configuration d'un numéro en **SVI** vous permet, lors d'un appel entrant, de proposer à l'appelant **un menu avec lequel il pourra interagir grâce aux touches de son téléphone**.Exemple de proposition: "*appuyez sur la **touche 1** pour joindre M. Toto ou appuyez sur la **touche 2** pour joindre Mme Tata*".
+## Objectif
 
-Différentes actions sont possibles via ce type de configuration (faire jouer un son, transférer l'appel, raccrocher, jouer avec des plages horaires, ...).
+Configurer un numéro en tant que « serveur vocal interactif » permet de proposer à vos correspondants un menu avec lequel ils pourront interagir, grâce aux touches de leur téléphone. L'exemple le plus courant consiste à orienter un appelant entre plusieurs services d'une société : « Appuyez sur la touche 1 pour une demande commerciale ou sur la touche 2 pour une demande technique. »
 
-Ce type de configuration est idéale si vous souhaitez que tous vos collaborateurs soient joignables en direct via **un seul numéro commun**.
+Ce type de configuration offre plusieurs possibilités, comme définir des périodes de disponibilité (plages horaires), jouer un son en particulier durant une attente, définir un transfert d'appel, etc. C'est également une solution idéale si vous souhaitez que tous vos collaborateurs soient joignables via un seul numéro.
 
-Pour cela, l'appelant doit composer le numéro de l'alias configuré en SVI comme sur l'exemple suivant :
+**Apprenez à configurer un serveur vocal interactif depuis l'espace client OVH.**
 
-![](images/SVI.png){.thumbnail}
+## Prérequis
 
-**Sommaire :**
+- Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external}.
+- [Avoir configué le numéro](../quelle-configuration-est-adaptee-a-mes-besoins/) en tant que « serveur vocal interactif ».
+- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
 
-Niveau : Intermédiaire
+## En pratique
 
-------------------------------------------------------------------------
+### Étape 1 : accéder à la configuration du serveur vocal interactif
 
-### Prérequis {#prérequis}
+Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external}, partie « Télécom ». Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez le numéro concerné. Assurez-vous que celui-ci est bien configuré en tant que « Serveur Vocal Interactif », en vérifiant son `Type de configuration` dans le cadre « Configuration ». Dès lors, deux possibilités :
 
--   Disposer d'un **numéro alias**.****
--   Disposer d'une ou plusieurs **lignes téléphoniques**.****
+- **le numéro est configuré en tant que « Serveur Vocal Interactif »** : cliquez alors sur `Paramétrer la configuration`{.action} et poursuivez la lecture de cette documentation ;
 
-------------------------------------------------------------------------
+- **le numéro n'est pas configuré en tant que « Serveur Vocal Interactif »** : vous devez au préalable le configurer correctement avant de poursuivre cette documentation. Reportez-vous à notre guide « [Choisir et appliquer une configuration pour un numéro](../quelle-configuration-est-adaptee-a-mes-besoins/) » si nécessaire.
 
-### Configurer mon alias en file SVI {#configurer-mon-alias-en-file-svi}
+![sviconfiguration](images/svi-configuration-step1.png){.thumbnail}
 
-Voici les manœuvres à exécuter pour configurer un alias en mode SVI :
+La configuration d'un serveur vocal interactif se réalise par le biais de plusieurs manipulations. **Il n’existe pas de marche à suivre universelle tant les cas sont différents.** Les éléments ci-dessous vous permettront de mieux appréhender ce qu'il est possible de faire. **Adaptez ces derniers à votre situation personnelle.**
 
--   Rendez vous sur le **manager Téléphonie.**
--   Cliquez sur **"Numéro".**
--   Choisissez le numéro alias concerné.
--   Cliquez sur **"Modifier le type du numéro"**.
--   Cochez la case **"Serveur vocal interactif"**.
--   Cliquez sur **"Valider"**.
+Voici l'affichage que vous devez obtenir pour un serveur vocal interactif non configuré. Il pourrait être différent si des paramètres ont déjà été ajoutés.
 
-![](images/2015-05-25-163602_980x793_scrot.png){.thumbnail}
+![sviconfiguration](images/svi-configuration-step2.png){.thumbnail}
 
-------------------------------------------------------------------------
+### Étape 2 : configurer un menu interactif
 
-### Créer le plan de numérotation selon un exemple simple {#creer-le-plan-de-numérotation-selon-un-exemple-simple}
+Débutez par créer un nouveau menu interactif. Vous devrez ensuite y configurer des entrées : ceci vous permettra de définir des actions qui s'activeront quand un appelant appuiera sur une touche.
 
-Une fois que votre alias est paramétré en SVI, vous devez configurer ce dernier afin de définir son comportement lors d'un appel entrant :
+#### 2.1 Créer un menu interactif
 
--   Rendez vous sur le **manager Téléphonie**.
--   Cliquez sur **"Numéro"**.
--   Choisissez le numéro alias concerné.
--   Cliquez sur **"Gérer le plan de numérotation"**.
+Cliquez sur le bouton `...`{.action} le plus proche des appels entrants, puis sélectionnez `Gérer les menus interactifs`{.action}. Dans la nouvelle page, cliquez alors sur `+ Ajouter un menu interactif`{.action}.
 
-Une vue graphique est alors proposée pour montrer le comportement actuel du SVI **(le plan de numérotation)**. Par défaut, celui-ci est vide.
+![sviconfiguration](images/svi-configuration-step3.png){.thumbnail}
 
-Exemple {#exemple}
--------
+Une fenêtre de création s'affiche. Complétez les informations demandées :
 
-Votre société possède une ligne pour **l'accueil**, une ligne pour **le service commercial** et une autre pour **le service après-vente**.
+|Information|Description|
+|---|---|
+|Nom du menu interactif|Définissez un nom au menu interactif. Celui-ci ne peut contenir que des lettres (sans accents), des chiffres, des tirets bas, ainsi que des espaces.|
+|Son d'accueil|Sélectionnez le son qui sera joué dès le début de l'appel. Celui-ci précise à l'appelant les différents choix offerts par les touches.|
+|Son en cas d'action invalide|Choisissez le son qui sera joué si l'appelant appuie sur une touche non reconnue par le serveur vocal interactif.|
 
-Vous souhaitez que votre numéro soit un SVI qui présente à l'appelant les trois choix possibles via les touches 1, 2 et 3 de son téléphone.Un message d'erreur doit être entendu si une mauvaise touche est composée.
+Une fois les informations renseignées, cliquez sur `Créer`{.action}.
 
-Voici le plan de numérotation qui rempli ce besoin :
+![sviconfiguration](images/svi-configuration-step4.png){.thumbnail}
 
-![](images/2015-06-15-161407_558x266_scrot.png){.thumbnail}
+#### 2.2 Ajouter des entrées (actions) au menu interactif
 
-Pour remplir ce besoin, nous allons devoir configurer **l'étape 1**, pour qu'elle fasse appel à un **menu interactif** qui transfère les appels selon le choix de touche :
+Une fois votre menu interactif créé, vous pouvez y ajouter des entrées. Pour cela, cliquez sur le bouton `+`{.action} situé en bas de celui-ci.
 
-#### Créer le menu interactif {#creer-le-menu-interactif}
+![sviconfiguration](images/svi-configuration-step5.png){.thumbnail}
 
--   Cliquez sur **"Gérer les menus interactifs".**
--   **Action à effectuer :** "Ajouter un menu interactif".
--   **Nom :** vous choisissez le nom du menu. Pour notre exemple ce sera **MenuTest**.
--   **Fichier son d'accueil :** C'est le son qui sera joué dès le début d'appel.
+Dans la fenêtre qui s'affiche, complétez les informations demandées :
 
-    C'est ce son qui doit exposer à l'appelant les différents choix de touches possible.
+|Information|Description|
+|---|---|
+|Touche|Définissez la touche d'entrée du menu que vous souhaitez configurer.|
+|Action à exécuter|Sélectionnez l'action qui se réalisera lorsque l'appelant appuiera sur la touche correspondante. Aidez-vous des informations qui s'affichent pour choisir l'option la plus adaptée à votre besoin.|
+|Paramètre d'action supplémentaire|Selon l'action que vous avez définie, une case supplémentaire peut apparaître et vous inviter à renseigner un élément complémentaire. Suivez alors les indications qui s'affichent.|
 
--   **Fichier son en cas d'action invalide :**C'est le son que l'appelant entendra s'il se trompe de touche.
--   **Touche :** Choisissez "Touche" **1** et "Action" **Transférer l'appel** vers la ligne **0033972101010**, par exemple.
--   Répétez la dernière action pour les touches **2** et **3**.
--   Cliquez sur**"Ajouter"**.
+Une fois les informations complétées, cliquez sur `Créer`{.action}. Selon vos besoins, répétez ces manipulations si vous voulez créer plusieurs menus interactifs. Vous pourrez alors les imbriquer dans votre serveur vocal interactif en tant que sous-menus, si vous souhaitez par exemple réaliser plusieurs embranchements.
 
-![](images/2015-05-26-194037_677x376_scrot.png){.thumbnail}
+![sviconfiguration](images/svi-configuration-step6.png){.thumbnail}
 
-Si le numéro cible d'une touche est un numéro externe, les appels qui seront décrochés par ce numéro seront automatiquement facturés en hors-forfait. Les offres que vous pouvez avoir sur vos lignes ne rentrent pas en compte pour un alias.
+### Étape 3 : configurer une étape
 
-Le menu interactif est maintenant créé, il ne reste plus qu'à l'inclure au plan de numérotation en créant la première étape de ce plan :
+Une fois le menu interactif créé, vous pouvez y configurer des étapes. Vous devez au préalable [créer une nouvelle étape](./#31-creer-une-etape), puis y [configurer des actions](./#32-ajouter-une-action-a-une-etape) et y [définir des conditions](./#33-ajouter-une-condition-a-une-etape) de déclenchement. Ceci vous permettra d'affiner le fonctionnement de votre serveur vocal interactif.
 
-#### Configurer une étape du SVI {#configurer-une-étape-du-svi}
+Vous pourrez par exemple définir des périodes de disponibilité (plages horaires) ou des embranchements qui se déclencheront selon certaines conditions (dans le cadre d'une fermeture de service, il est possible de rediriger les appels entrants vers un répondeur).
 
--   Cliquez sur **"Ajouter une étape"**.
--   Vérifiez que la case **"Étape activée"** est cochée.
--   Indiquez **"l'Action à exécuter"**:****
-    -   Action : **"Lancer un menu interactif"**;****
-    -   Menu interactif : **MenuTest**.****
--   Cliquez sur **"Créer"**.
+#### 3.1 Créer une étape
 
-![](images/2015-05-27-132412_627x297_scrot.png){.thumbnail}
+Débutez par retourner sur la configuration du serveur vocal interactif, en cliquant en haut de la page « Gérer les menus interactifs » sur `Retour à la configuration du numéro`{.action}. Si vous n'êtes plus positionné sur celle-ci, sélectionnez l'onglet `Configuration`{.action}, puis `Serveur Vocal Interactif`{.action}. Voici l'affichage que vous devez obtenir :
 
-------------------------------------------------------------------------
+![sviconfiguration](images/svi-configuration-step2.png){.thumbnail}
 
-### Divers actions possibles {#divers-actions-possibles}
+Dès lors, ajoutez une étape en cliquant sur le bouton `+`{.action} le plus éloigné des appels entrants. Si vous avez déjà créé des étapes et que vous souhaitez en ajouter d'autres, assurez-vous d'utiliser le bon bouton `+`{.action} et de ne pas le confondre avec celui d'ajout d'actions.
 
-Pour répondre à notre premier besoin, il ne fallait qu'une seule étape et qu'un seul menu interactif qui transfère les appels entrant vers les lignes.
+Une fois l'étape créée, vous avez la possibilité d'y [configurer des actions](./#32-ajouter-une-action-a-une-etape) et d'y [définir des conditions](./#33-ajouter-une-condition-a-une-etape).
 
-Il est cependant possible d'effectuer d'autres stratégies.
+![sviconfiguration](images/svi-configuration-step7.png){.thumbnail}
 
-#### Sur les menus interactifs {#sur-les-menus-interactifs}
+#### 3.2 Ajouter une action à une étape
 
-Le menu interactif peut vous permettre de faire autre chose qu'un renvoi d'appel. Voici les différentes options et ce qu'elles représentent :
+Les actions ajoutées à une étape s'activent lorsqu'un appelant est en communication avec votre serveur vocal interactif. Pour ajouter une action à une étape, cliquez sur le bouton `+`{.action} en dessous de l'étape concernée. Une fenêtre s'affiche alors. Complétez les informations demandées :
 
--   **Jouer un son :** si l'appelant appuie sur cette touche, il entendra un son de votre choix.
+|Information|Description|
+|---|---|
+|Action à exécuter|Définissez l'action qui s'effectuera lorsque l'appelant appuiera sur la touche correspondante. Aidez-vous des informations qui s'affichent pour choisir celle la plus adaptée à votre besoin.<br><br> Afin de pouvoir utiliser un menu interactif ([créé lors de l'étape 2](./#etape-2-configurer-un-menu-interactif)), vous devez sélectionner l'action « Lancer un menu interactif ».|
+|Paramètre d'action supplémentaire|Selon l'action que vous avez définie, une case supplémentaire peut apparaître et vous inviter à renseigner un élément complémentaire. Suivez alors les indications qui s'affichent.|
 
-    Un fichier son est demandé : Taille max. : 10 Mo, formats principaux autorisés : wav, mp3, mp4, ogg et wma.
+Une fois les informations complétées, cliquez sur `Créer`{.action}. Selon vos besoins, répétez ces manipulations si vous souhaitez créer plusieurs actions dans une étape. Prenez soin d'utiliser le bouton `+`{.action} situé en dessous de l'étape concerné.
 
-    Ce type de configuration peut être intéressante si vous souhaitez juste exposer vos offres commerciales par exemple.
+![sviconfiguration](images/svi-configuration-step8.png){.thumbnail}
 
-<!-- -->
+#### 3.3 Ajouter une condition à une étape
 
--   **Lancer un sous-menu :** Cette action vous permet de lancer un autre menu interactif lorsque la touche concernée est appuyée. Vous pouvez ainsi avoir plusieurs menus en cascade.
+Lorsqu'une ou plusieurs conditions sont ajoutées à une étape, celles-ci doivent être atteintes pour que l'étape se déclenche. Si les conditions ne sont pas remplies, le cheminement prévu dans votre serveur vocal interactif passera à l'étape suivante.
 
-    Exemple de plan de numérotation:
+Pour ajouter une condition à une étape, cliquez sur le bouton `...`{.action} à côté de l'étape concernée, puis choisissez `Configuration avancée`{.action}. Une fenêtre s'affiche alors ; vous pouvez y définir jusqu'à trois types de conditions. Poursuivez selon la condition que vous désirez paramétrer :
 
-    ![](images/2015-05-27-153651_653x203_scrot.png){.thumbnail}
+- [Condition de « Jours exceptionnels »](./#condition-de-jours-exceptionnels)
+- [Condition de « Plages horaires génériques »](./#condition-de-plages-horaires-generiques)
+- [Condition de « Filtrages d'appels »](./#condition-de-filtrages-dappels)
 
-    En effet l'appelant est redirigé vers un menu **MenuTest** qui lui propose **quatre touches**. La quatrième le redirige vers un autre menu **test** qui lui-même propose les touches **1** et **2.**
+![sviconfiguration](images/svi-configuration-step9.png){.thumbnail}
 
--   **Mettre fin au menu interactif:** Si l'appelant appuie sur cette touche, l'appel sera coupé ou transféré à l'étape suivante si vous en avez configuré une.
+##### Condition de « Jours exceptionnels »
 
-    Exemple de plan de numérotation:
+Après avoir cliqué sur `Jours exceptionnels`{.action} depuis la fenêtre de configuration avancée, choisissez le créneau que vous souhaitez appliquer. Vous revenez ensuite automatiquement dans la fenêtre de configuration avancée. Cliquez alors sur `Modifier`{.action}.
 
-    ![](images/2015-05-27-154854_651x299_scrot.png){.thumbnail}
+![sviconfiguration](images/svi-configuration-step10.png){.thumbnail}
 
-    Dans cet exemple, si l'appelant appuie sur la **touche 3**, l'appel passera à **l'étape 2** et sera transféré directement vers la ligne **0033972101015**.
+Vous devez à présent configurer le créneau que vous venez de sélectionner (ou vous assurer que celui-ci l'est correctement). Pour cela, cliquez sur le bouton `...`{.action} le plus proche des appels entrants, puis choisissez `Gérer les créneaux exceptionnels`{.action}.
 
-    S'l n'y avait pas d'étape 2, l'appel serait coupé directement.
+![sviconfiguration](images/svi-configuration-step11.png){.thumbnail}
 
--   **Retour au menu principal/précédent :** Ces actions ne sont utiles que lorsque que vous avez plusieurs menus en cascade.
+La page de gestion des fermetures exceptionnelles apparaît alors. Dans la partie `Planification des jours de fermeture`, positionnez vos fermetures exceptionnelles sur le calendrier en cliquant sur les jours concernés. Complétez les informations demandées :
 
-    Exemple de plan de numérotation :
+|Information|Description|
+|---|---|
+|Plage horaire/journée entière|Choisissez si la fermeture exceptionnelle concerne uniquement une plage horaire ou une journée entière.|
+|Objet|Définissez un titre vous permettant d'identifier cette fermeture exceptionnelle dans le calendrier.|
+|Catégorie|Choisissez le créneau dans lequel vous souhaitez ajouter la fermeture exceptionnelle.|
+|Du/au|Définissez la date et l'heure (le cas échéant) de la fermeture exceptionnelle.|
+|Description|Vous pouvez ajouter une description plus détaillée à la fermeture exceptionnelle.|
 
-    ![](images/2015-05-27-161109_650x233_scrot.png){.thumbnail}
+Une fois les informations renseignées, cliquez sur `Créer l'événement`{.action}. Répétez cette manipulation afin d'ajouter toutes les fermetures exceptionnelles nécessaires. Cliquez enfin sur le bouton `Valider`{.action} pour sauvegarder ces changements.
 
-    Si l'appelant appuie sur la **touche 2**, il arrive dans le **Menu2**. S'l appuie de nouveau sur la **touche 2**, il arrive dans le **Menu3**. Or dans le menu 3, il y a :
+![sviconfiguration](images/svi-configuration-step12.png){.thumbnail}
 
-    **Touche 2: Retour au menu principal**, cela le fera revenir à **l'accueil du Menu1** (premier menu).
+##### Condition de « Plages horaires génériques »
 
-    **Touche 3: Retour au menu précédent**, cela le fera revenir à**l'accueil du Menu2** (menu précédent).
+Après avoir cliqué sur `Plages horaires génériques`{.action} depuis la fenêtre de configuration avancée, deux possibilités existent :
 
--   **Transférer l'appel :** L'appel sera transféré vers la ligne cible si cette touche est appuyée. Nous avons déjà vu cette action lors de notre premier exemple.
+- **vous n'avez aucune plage horaire définie** : vous devez dans ce cas cliquer sur le bouton `Ajouter des plages horaires`{.action} ;
+- **vous avez déjà au moins une plage horaire définie** : vous devez alors soit cliquer sur la plage concernée si vous souhaitez la modifier, soit cliquer sur le bouton `Ajouter des plages horaires`{.action} pour en ajouter une nouvelle.
 
-Nous venons de voir que les menus interactifs peuvent être modulés afin d'appliquer une stratégie de votre choix.
+![sviconfiguration](images/svi-configuration-step13.png){.thumbnail}
 
-#### **Sur les étapes** {#sur-les-étapes}
+Configurez maintenant les plages horaires qui correspondent à vos besoins. Pour cela, renseignez l'heure de début et l'heure de fin dans les zones prévues à cet effet. Utilisez ensuite le bouton `+`{.action} pour les ajouter. Une fois le paramétrage terminé, utilisez le bouton `<`{.action} situé dans la partie supérieure de la fenêtre des plages horaires génériques, puis cliquez sur le bouton `Modifier`{.action}.
 
-Notre premier exemple n'a nécessité qu'une seule étape qui renvoie vers un menu interactif, il existe cependant d'autres actions possibles pouvant être effectuées par les étapes. Vous pouvez aussi inclure plusieurs étapes dans votre plan de numérotation.
+![sviconfiguration](images/svi-configuration-step14.png){.thumbnail}
 
-Pour ajouter une étape :
+##### Condition de « Filtrages d'appels »
 
--   cliquez sur **"Ajouter une étape"** ;****
--   vérifiez que la case **"Étape activée"** est cochée ;
--   choisissez la **Position de l'étape** par rapport aux autres ;
--   indiquez **"l'Action à exécuter"** ;****
--   cliquez sur **"Créer**".
+Après avoir cliqué sur `Filtrages d'appels`{.action} depuis la fenêtre de configuration avancée, choisissez si vous souhaitez filtrer vos communications selon une « liste noire » ou une « liste blanche ». 
 
-Nous voyons donc qu'il y a plusieurs actions possibles pouvant être exécutées lors d'une étape :
+|Liste|Description|
+|---|---|
+|Liste noire|Les numéros ou les tranches de numéros inscrits dans la liste ne peuvent plus vous contacter.|
+|Liste blanche|Seuls les numéros ou les tranches de numéros inscrits dans la liste sont autorisés à vous contacter.|
 
--   **Définir un nom d'appelant :** Cette action permet de changer, au cours du plan de numérotation, le nom de l'appelant qui sera présenté sur le téléphone de la ligne qui décroche l'appel.
+Une fois que vous avez sélectionné la liste que vous souhaitez utiliser, complétez-la en ajoutant les numéros ou les tranches de numéros adéquats. Pour cela, utilisez la zone `Ajouter un numéro à la liste`, puis cliquez sur le bouton `Ajouter`{.action}. Vous pouvez supprimer une entrée dans la liste grâce à l'icône représentant une corbeille. 
 
-    Exemple de plan de numérotation :
+Pour terminer la manipulation, utilisez le bouton `<`{.action} situé dans la partie supérieure de la fenêtre de filtrage d'appels, puis cliquez sur le bouton `Modifier`{.action}.
 
-    ![](images/2015-05-27-175351_651x508_scrot.png){.thumbnail}
+![sviconfiguration](images/svi-configuration-step15.png){.thumbnail}
 
-    L'action **définir un nom d'appelant** a été placée en **étape 2**.
+### Annexe : cas concret d'utilisation
 
-    Si l'appelant appuie sur la **touche 1**, l'appel sera directement transféré vers la ligne 0033972101010 et celle-ci verra le nom d'origine de l'appelant sur son écran.Cependant, si l'appelant appuie sur la **touche 4** (passage à l'étape 2 pour le **changement du nom** puis l'étape 3) et qu'il appuie ensuite sur la **touche 1**, le nom présenté sur la ligne 0033972101010 sera **"Toto"**.
+Pour compléter les éléments de cette documentation, vous trouverez ci-dessous un exemple concret d'utilisation du serveur vocal interactif ainsi que les différentes étapes nécessaires à sa création.
 
-    Cette présentation sera identique pour la ligne 0033972101013 si l'appel va jusqu'à **l'étape 4**.
+**Le but recherché** : 
 
-    Ce nom personnalisé ne s'affichera que si la ligne qui décroche est une ligne OVH. Dans le cas contraire, ce sera le numéro de l'appelant qui sera présenté.
+- disposer d'un serveur vocal interactif permettant de choisir entre deux services (par le biais des touches `1` et `2`) ;
+- les deux services disposent de leur propre numéro ;
+- ces deux services sont joignables du lundi au vendredi, de 8 heures à 18 heures ;
+- en dehors des horaires de service, les appels doivent être redirigés vers un répondeur.
 
-    Cette fonctionnalité ne sera prise en compte que si le plan de numérotation est configuré pour présenter le numéro de l’appelant (voir le paragraphe [Plan de Numérotation](#SVI(ServeurVocalIntéractif)-PlanDeNumerotation)).
+**Les étapes de création de ce serveur vocal interactif** :
 
-<!-- -->
+|Étapes|Description|Comment le faire ?|
+|---|---|---|
+|1|Configurer le numéro en « serveur vocal interactif »|Voir « [Choisir et appliquer une configuration pour un numéro](../quelle-configuration-est-adaptee-a-mes-besoins/) »|
+|2|Créer un menu interactif|Voir « [2.1 Créer un menu interactif](./#21-creer-un-menu-interactif) »|
+|3|Configurer le menu interactif (touches `1` et `2`)|Voir « [2.2 Ajouter des entrées (actions) au menu interactif](./#22-ajouter-des-entrees-actions-au-menu-interactif) »|
+|4|Créer une première étape|Voir « [3.1 Créer une étape](./#31-creer-une-etape) »|
+|5|Associer le menu interactif en tant qu'action de la première étape|Voir « [3.2 Ajouter une action à une étape](./#32-ajouter-une-action-a-une-etape) »|
+|6|Paramétrer vos plages horaires de service|Voir « [3.3 Ajouter une condition à une étape](./#33-ajouter-une-condition-a-une-etape) »|
+|7|Créer une deuxième étape|Voir « [3.1 Créer une étape](./#31-creer-une-etape) »|
+|8|Associer le renvoi sur le répondeur à la seconde étape|Voir « [3.2 Ajouter une action à une étape](./#32-ajouter-une-action-a-une-etape) »|
 
--   **Jouer un son/Jouer un son en boucle:**
+Vous devez ainsi obtenir le résultat suivant :
 
-    Exemple :
+![sviconfiguration](images/svi-configuration-step16.png){.thumbnail}
 
-    ![](images/2015-05-27-171002_651x233_scrot.png){.thumbnail}
+## Aller plus loin
 
-    Ce plan de numérotation va jouer **une fois** le son **annonce1.mp3** et ensuite jouer **en boucle** le son **offreCommerciale.mp3** jusqu'à ce que l'appelant raccroche.
-
--   **Lancer un menu interactif :** Permet de proposer à l'appelant un menu avec lequel il pourra interagir grâce aux touches de son téléphone. Nous avons déjà vu cette action lors de notre premier exemple.
--   **Raccrocher :** Cette étape permet de mettre fin à l'appel.
--   **Répondeur :** Cette action vous permet de renvoyer l'appel vers le répondeur de l'une de vos lignes OVH (sans la faire sonner).
-
-    Exemple de plan de numérotation :
-
-    ![](images/2015-05-27-173208_652x243_scrot.png){.thumbnail}
-
-    Si l'appelant appuie sur la touche 4 lors de la première étape, l'appel passera à **l'étape 2** et sera redirigé directement vers **le répondeur de la ligne 0033972101010**.
-
--   **Temporiser :** Cette action permet simplement de choisir une durée (en ms) pendant laquelle il ne se passera rien.Au delà de cette durée, l'appel passera à l'étape suivante ou sera coupé si il n'y a pas d'autre étape.
--   **Transférer l'appel :**Cette action permet simplement de transférer l'appel vers une ligne (sans menu interactif donc sans laisser le choix pour l'appelant).
-
-Il est également possible, selon vos besoins, d’exécuter **plusieurs actions dans une même étape** :
-
-![](images/2015-05-28-170407_651x98_scrot.png){.thumbnail}
-
-**L'étape 1** fera entendre le son **erreurTouche.mp3** à l'appelant puis fera sonner la ligne **0033972101010**.
-
-Pour ce faire, lors de la configuration de l'étape :
-
--   Cliquez sur ![](images/2015-05-28-170713_24x19_scrot.png){.thumbnail} pour ajouter une **nouvelle action**.
--   Cliquez sur **"Créer"**.
-
-![](images/2015-05-28-170849_627x349_scrot.png){.thumbnail}
-
-Nous avons vu qu'en combinant les différentes possibilités **des étapes** et **des menus interactifs**, nous pouvons obtenir un plan de numérotation complètement personnalisé et qui réponde à la majorité des besoins d'une société en matière de SVI.
-
-------------------------------------------------------------------------
-
-### Spécificités {#spécificités}
-
-#### **"Gérer les sons"** et **"Appliquer la configuration à d'autres numéros"** {#gérer-les-sons-et-appliquer-la-configuration-à-dautres-numéros}
-
-Lors des manipulations sur le plan de numérotation, vous avez pu remarquer qu'il y a deux boutons que nous n'avons pas encore évoqués : **"Gérer les sons"** et **"Appliquer la configuration à d'autres numéros"**.
-
-![](images/2015-05-28-143644_699x222_scrot.png){.thumbnail}
-
-L'option **"Gérer les sons"** permet d'ajouter ou de supprimer un son dans la "base de donnée" de votre SVI. Ce son sera alors disponible directement (sans upload) lors de la configuration d'un menu interactif ou d'une étape.
-
-Un fichier son est demandé : Taille max. : 10 Mo, formats principaux autorisés : wav, mp3, mp4, ogg et wma.
-
-L'option **"Appliquer la configuration à d'autres numéros"** vous permet d'appliquer la configuration actuelle de votre SVI à un ou plusieurs autre(s) numéro(s). Cette configuration sera copiée dans sa totalité.
-
-Pour ce faire :
-
--   Cliquez sur **"Appliquer la configuration à d'autres numéros"**.
--   Sélectionnez le**groupe**contenant le(s) numéro(s) à configurer.
-
-    Cette action n'est pas obligatoire. Il n'est pas nécessaire de filtrer la recherche par groupes si vous n'avez pas beaucoup de numéros sur votre compte.
-
--   Sélectionnez**le(s) numéro(s)** à configurer.
-
-    Les numéros cibles de ce menu doivent déjà être en mode SVI ([Voir le premier paragraphe](#SVI(ServeurVocalIntéractif)-aliasToSvi)).
-
--   Cliquez sur **"Valider".**
-
-![](images/2015-05-28-150232_596x438_scrot.png){.thumbnail}
-
-Dans cet exemple, l'alias **0972101010** prendra exactement la même configuration que notre SVI de base.
-
-#### Plan de numérotation {#plan-de-numérotation}
-
-Lorsque vous êtes dans le menu de configuration du SVI, vous pouvez cliquez sur le plan de numéro afin de personnaliser celui-ci :
-
-![](images/2015-06-15-134904_560x266_scrot.png){.thumbnail}
-
-Vous pourrez ainsi modifier les choses suivantes :
-
-![](images/2015-06-15-135231_422x217_scrot.png){.thumbnail}
-
--   **Nom :**Ce nom sera présent sur le téléphone appelé (cible du SVI) lors d'un appel entrant si le **Numéro à présenter** est configuré sur **"SVI"** ou **"les 2 numéros"**.****
--   **Timeout de transfert d'appel :**Lorsque le plan de numérotation comporte un transfert vers une ligne externe, si cette ligne ne décroche pas avant la durée configurée, l'appel passera à l'étape suivante.
-
-    Exemple {#exemple-1}
-    -------
-
-    ![](images/2015-06-15-153010_562x363_scrot.png){.thumbnail}
-
-    Dans cette configuration, **un appel vers le SVI fera sonner la ligne 0033612345678 pendant la durée configurée** (valeur choisie : **10s**). Si le téléphone 0033612345678 ne décroche pas ou ne renvoie pas vers une messagerie sous 10 secondes, **l'appel passera au menu interactif Menu1**.
-
--   **Numéro à présenter :** Cela permet de définir la présentation lors d'un appel entrant sur le téléphone qui reçoit cet appel.
-
-    -   **Le numéro de l'appelant :** le téléphone cible (qui reçoit l'appel) verra sur son écran le numéro de la ligne qui compose le numéro du SVI (ligne qui appelle).
-    -   **Le numéro du SVI :** le téléphone cible (qui reçoit l'appel) verra sur son écran le numéro de l'alias (numéro qui est composé par l’appelant).
-    -   **Les deux numéros :** le téléphone cible (qui reçoit l'appel) verra sur son écran la ligne qui compose l'appel ainsi que le numéro alias qui est composé.
-
-        Parmi les téléphones fournis par OVH, seuls les téléphones Cisco SPA5XXG sont compatibles avec la présentation des deux numéros lors d'un appel entrant.
-
-    Pour les configurations de type**"Le numéro du SVI**" et "**Les deux numéros"**, si le téléphone cible (qui reçoit l'appel) est un téléphone OVH, le numéro du SVI présenté sera remplacé par **le nom configuré dans ce même menu.**
-
-    Pour notre exemple ce sera : "**plan de test"**.
-
--   **Rejet d'appel masqué :** Si cette case est cochée, tous les appelants anonymes seront rejetés.
-
-------------------------------------------------------------------------
-
-### Configuration avancée {#configuration-avancée}
-
-Sur le type de configuration SVI, il est possible d'établir **des conditions** selon lesquels la stratégie jouée sera différentes.
-
-Exemple {#exemple-2}
--------
-
-![](images/2015-05-28-164034_652x171_scrot.png){.thumbnail}
-
-On voit sur ce plan de numérotation que l'étape peut proposer **deux stratégies possibles** selon une **condition horaire**.
-
-En effet, des **plages horaires** sont configurées sur l'étape**(heures de disponibilité et heures d'indisponibilité)**.****Si l'appel entrant se présente dans les **heures de disponibilité**, l'étape jouera **l'action si condition vérifiée**, elle fera donc sonner la ligne 0033972101010.À l'inverse, si l'appel arrive **en dehors de ces heures de disponibilité**, l'étape fera sonner la ligne 0033972101011.
-
-Pour configurer l'action si **"condition non vérifiée"** :
-
--   configurez votre **étape** sans cliquer sur "Créer" ;
--   cliquez ![](images/2015-05-28-170713_24x19_scrot.png){.thumbnail} à la ligne **"Action si conditions non vérifiées"**;****
--   choisissez votre Action ;
-
-    Comme pour les **"conditions vérifiées"**, vous pouvez configurer plusieurs actions en cliquant sur ![](images/2015-05-28-170713_24x19_scrot.png){.thumbnail} autant de fois que nécessaire.
-
--   cliquez sur **"Créer"** pour finalisez la configuration de votre étape
-
-Autre exemple {#autre-exemple}
--------------
-
-![](images/2015-05-28-172020_648x280_scrot.png){.thumbnail}
-
-Il n'y a plus de **"conditions non vérifiées"** sur l'étape 1 mais il y a une **étape 2**.
-
-Si l'appel entrant se présente **hors des horaires de disponibilité** de l'étape 1, l'appel passera directement à**l'étape 2** et fera sonner la ligne 033972101011.
-
-Ces deux exemples montrent comment sont gérées les **"conditions"** dans les étapes.
-
-Ces conditions peuvent prendre différentes formes : **les plages horaires**,**les créneaux exceptionnels**,**les filtrages d'appel** :
-
-#### Plages Horaires {#plages-horaires}
-
-Nous avons vu dans le dernier exemple qu'il est possible d'établir des stratégies différentes selon la condition **"plages horaires"**. Voyons comment le configurer dans le manager :
-
-Lors de la configuration de votre étape :
-
--   Cliquez sur **"Options avancées"**.
--   Cliquez sur le**jour** où vous souhaitez appliquer vos disponibilités.
--   Choisissez la **plage horaire**.
--   Répétez l'action sur tous les jours de **disponibilité**.
--   Cliquez sur **"Créer"** pour finalisez la configuration de votre étape.
-
-![](images/2015-05-29-152509_562x569_scrot.png){.thumbnail}
-
-Dans ce cas, si l'appel arrive sur notre étape le lundi à 10h, l'action si **"condition vérifiée"** sera jouée.
-
-Si maintenant l'appel arrive sur notre étape le lundi à 20h, ce sera l'action si **"condition non vérifiée"** qui sera jouée. À défaut d'action, l'appel passera à l'étape suivante ou sera coupée s'il n'y a pas d'autre étape.
-
-#### Créneaux exceptionnels {#créneaux-exceptionnels}
-
-Il est possible de gérer une **base de donnée** sur votre SVI contenant les **jours exceptionnels** (exemples : jours fériés, congés, ...).
-
-Cette base de donnée pourra alors être consultée par votre **étape** pour devenir une **condition** à l’exécution d'une action.
-
-Gestion de cette base de jours exceptionnels :
-
--   cliquez sur **"Gérer les créneaux exceptionnels"**;****
--   cliquez sur le **jour concerné**;****
--   choisissez le **type de créneau** (il aura une importance dans la configuration de l'étape) ;
--   cliquez sur **"Créer"**.
-
-Utilisation de la condition **créneaux exceptionnels** lors de la création de votre étape :
-
--   cliquez sur **"Options avancées"**;****
--   choisissez le**Créneau**à la ligne**"Jours exceptionnels"**;****
--   cliquez sur**"Créer"**.
-
-Exemple d'utilisation {#exemple-dutilisation}
----------------------
-
-Configuration des jours exceptionnels pour le mois d'**avril 2015** :
-
-**bleu = jours chômés**
-
-**vert = créneau 1**
-
-![](images/2015-05-29-162759_678x670_scrot.png){.thumbnail}
-
-Notre plan de numérotation :
-
-![](images/2015-05-29-163410_582x314_scrot.png){.thumbnail}
-
-Dans cette situation :
-
-Si un appel est reçu le **22 avril**, la condition de l'étape 1 est vérifiée. L**e son annonce1.mp3 est joué** puis l'appel passe à l'étape 2 et **la ligne 0033972101011 sonne**.
-
-Si un appel est reçu le **7 avril**, la condition de l'étape 1 est vérifiée. **Le son annonce1.mp3 est joué** puis l'appel passe à l'étape 2. La condition de l'étape 2 n'est pas vérifiée, **l'appel prend fin sans faire sonner la ligne 0033972101011.**
-
-Si un appel est reçu le **24 avril**, la condition de l'étape 1 n'est pas vérifiée. **L'appel reste à l'étape 1 et fait sonner la ligne 0033972101010.**
-
-#### Filtrage d'appel {#filtrage-dappel}
-
-La troisième forme de **condition** possible est le **filtrage d'appel** en fonction du numéro de l'appelant.
-
-Lors de la configuration de votre étape :
-
--   Cliquez sur **"Options avancées"**.
--   Cliquez sur **"Gérer**" à la ligne**"Filtrages d'appels**".
--   Choisissez le **Type de liste**.
-
-    **Liste blanche** = Autoriser uniquement les numéros de la liste à appeler.
-
-    **Liste noire** = Interdire les numéros de la liste à appeler.
-
--   Choisissez **le numéro** ou **la plage de numéros** à ajouter dans cette liste.
-
-    Vous pouvez configurer plusieurs numéros en cliquant sur ![](images/2015-05-28-170713_24x19_scrot.png){.thumbnail}.
-
--   Cliquez sur **"Modifier"**.
--   Cliquez sur **"Créer"**.
-
-Exemple {#exemple-3}
--------
-
-Voici la configuration de notre filtrage :
-
-![](images/2015-05-29-171906_605x331_scrot.png){.thumbnail}
-
-Uniquement les appels provenant de **0033972101010** et de la plage **0033648XXXXXX** passerons en **"conditions vérifiée"** sur cette étape.
-
-Notre plan de numérotation :
-
-![](images/2015-05-29-172757_583x155_scrot.png){.thumbnail}
-
-Dans cette situation :
-
-Si le numéro **0033972101010** (ou un numéro de la plage **0033648XXXXXX**) appelle ce SVI, la condition de l'étape 1 est vérifiée. **L'annonce1.mp3 sera jouée**.
-
-Si un autre numéro appelle ce SVI, la condition de l'étape 1 ne sera pas vérifiée.**La ligne 0033972101011 sonnera.**
-
-Ces trois types de conditions **(plage horaire, créneaux exceptionnels, filtrage d'appel)** peuvent se cumuler sur une même étape.
-
-Si seulement l'une des trois est **"non vérifiée"**, ce sera l'action si **"condition non vérifiée"** qui sera jouée. À défaut d'action, l'appel passera à l'étape suivante ou sera coupé s'il n'y a pas d'autre étape.
-
-------------------------------------------------------------------------
-
-### SVI mode Expert (programmation VXML)
-
-Nous avons vu que le SVI permet de réceptionner les appels de façon intelligente et interactive.
-
-Il existe un autre type de SVI qui permet, **via la programmation VXML**, de personnaliser d'avantage le comportement et de le scripter.
-
-Voyez en détail ce type de configuration dans le guide suivant: Gérer et configurer mon numéro en SVI (VXML)].
-
-
-------------------------------------------------------------------------
-
-
-
-
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
