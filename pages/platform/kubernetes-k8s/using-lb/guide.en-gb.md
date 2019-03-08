@@ -102,7 +102,7 @@ The main advance of using an `Ingress` behind a `LoadBalancer` is the cost: you 
 
 ## Deploying LoadBalancer Services on OVH Managed Kubernetes clusters
 
-In our OVH Managed Kubernetes we propose a load balancing service enabling you to use `LoadBalancer` `ServiceType`. We are currently offering OVH Managed Kubernetes LoadBalancer service as a fc until the end of summer 2019. During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
+In our OVH Managed Kubernetes we propose a load balancing service enabling you to use `LoadBalancer` `ServiceType`. We are currently offering OVH Managed Kubernetes LoadBalancer service as a free preview until the end of summer 2019. During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
 
 ## Deploying a Hello World LoadBalancer service 
 
