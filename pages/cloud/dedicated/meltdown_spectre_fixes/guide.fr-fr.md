@@ -1175,7 +1175,7 @@ fullwidth: true
             <tr role="row">
                <td colspan="1" class="confluenceTd">Cloud PaaS</td>
                <td colspan="1" class="confluenceTd">DataPlateform Metric</td>
-               <td colspan="1" class="confluenceTd">Warp10, OpenTSDB, Prometheus, InfluxDB Graphite</td>
+               <td colspan="1" class="confluenceTd">Warp 10™, OpenTSDB, Prometheus, InfluxDB Graphite</td>
                <td colspan="1" class="confluenceTd">Service update (<em><span style="color: rgb(0,0,255);">OVH side</span></em>)</td>
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">
@@ -1196,7 +1196,7 @@ fullwidth: true
             <tr role="row">
                <td colspan="1" class="confluenceTd">Cloud PaaS</td>
                <td colspan="1" class="confluenceTd">DataPlateform Metric</td>
-               <td colspan="1" class="confluenceTd">Warp10, OpenTSDB, Prometheus, InfluxDB Graphite</td>
+               <td colspan="1" class="confluenceTd">Warp 10™, OpenTSDB, Prometheus, InfluxDB Graphite</td>
                <td colspan="1" class="confluenceTd">CUSTOMER</td>
                <td colspan="1" class="confluenceTd">Nothing to do</td>
                <td colspan="1" class="confluenceTd">Nothing to do</td>

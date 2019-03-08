@@ -228,6 +228,6 @@ Labels are separated by semi colons, when timestamp and value by spaces
 * The next keys values list is linked to **labels**
 * At the end of the metric, we have the value and the timestamp
 
-#### Warp10
+#### Warp 10™
 
-Warp10 is the native protocol of OVH Metrics platform, so, there is no data structure mapping.
+Warp 10™ is the native protocol of OVH Metrics platform, so, there is no data structure mapping.

@@ -20,7 +20,7 @@ Multiple tools are available to graph your data, compose dashboards or show coun
 
 ### Quantum
 
-- **Quantum**: Quantum is the official IDE to start developping WarpScript. You can access it with [https://quantum.metrics.ovh.net](https://quantum.metrics.ovh.net){.external}.
+- **Quantum**: Quantum is the official IDE to start developping WarpScript™. You can access it with [https://quantum.metrics.ovh.net](https://quantum.metrics.ovh.net){.external}.
 
 ![header](images/metrics_quantum.png){.thumbnail}
 
@@ -28,7 +28,7 @@ Multiple tools are available to graph your data, compose dashboards or show coun
 
 ### WebComponents
 
-- **Warp10 WebComponents**: Warp10 is providing [WebComponents](https://www.webcomponents.org/){.external} to integrate graphs into your own web pages. You can find examples on their [Github account](https://github.com/cityzendata/warp10-quantumviz){.external}.
+- **Warp 10™ WebComponents**: Warp 10™ is providing [WebComponents](https://www.webcomponents.org/){.external} to integrate graphs into your own web pages. You can find examples on their [Github account](https://github.com/senx/warp10-quantumviz){.external}.
 
 ## Go further
 
