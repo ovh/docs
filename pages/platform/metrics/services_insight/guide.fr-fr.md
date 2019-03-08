@@ -95,7 +95,7 @@ To only display data from the previous hour, you can update your script like [th
 
 To load data from between two specific dates, you can use this [script](https://quantum.metrics.ovh.net/#/warpscript/J1lPVVJfSU5TSUdIVF9UT0tFTicgJ1JUT0tFTicgU1RPUkUKClsgJFJUT0tFTiAnfm1ldHJpY3MuKicge30gJzIwMTgtMDgtMDFUMTI6MTc6NTIuMTE1NDQ4WicgJzIwMTgtMDgtMDFUMTM6MTc6NTIuMTE1NDQ4WicgXSBGRVRDSA%3D%3D/eyJ1cmwiOiJodHRwczovL3dhcnAxMC5pbnNpZ2h0LmV1Lm1ldHJpY3Mub3ZoLm5ldC9hcGkvdjAiLCJmZXRjaEVuZHBvaW50IjoiL2ZldGNoIiwiaGVhZGVyTmFtZSI6IlgtV2FycDEwIn0%3D).
 
-For more information on the WarpScript language, you can complete this [tour](https://tour.warp10.io/#1-1).
+For more information on the WarpScript™ language, you can complete this [tour](https://tour.warp10.io/#1-1).
 
 In Quantum, once you have executed your request, you should get a response that looks similar to the example below. Note that the **"v"** key now contains all the values found from the specified period. The values are an array that contains both the tick value and point value. 
 
@@ -103,9 +103,9 @@ In Quantum, once you have executed your request, you should get a response that 
 
 #### HTTP requests with Curl 
 
-You can use one of our [protocols](../protocol-overview) to query your OVH Cloud Insights data. Here are two examples, using Warp and PromQL.
+You can use one of our [protocols](../protocol-overview) to query your OVH Cloud Insights data. Here are two examples, using WarpScript™ and PromQL.
 
-We can send a WarpScript query, as shown below, to load the data. As before, you can update the FETCH time parameter to suit your requirements.
+We can send a WarpScript™ query, as shown below, to load the data. As before, you can update the FETCH time parameter to suit your requirements.
 
 <pre> curl --data-binary '[ "READ_TOKEN" "~metrics.*" {} "2018-08-01T12:17:52.115448Z" "2018-08-01T13:17:52.115448Z" ] FETCH' 'https://warp10.insight.eu.metrics.ovh.net/api/v0/exec' </pre>
 

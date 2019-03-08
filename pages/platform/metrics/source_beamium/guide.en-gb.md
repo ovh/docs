@@ -9,7 +9,7 @@ order: 1
 
 ## Objective
 
-Beamium collect metrics from HTTP endpoints like `http://127.0.0.1/metrics`{.action} and supports Prometheus and Warp10/Sensision format.
+Beamium collect metrics from HTTP endpoints like `http://127.0.0.1/metrics`{.action} and supports Prometheus and Warp 10™/Sensision format.
 
 In this guide, you will learn how to configure it for Metrics Data Platform.
 
@@ -22,7 +22,7 @@ In this guide, you will learn how to configure it for Metrics Data Platform.
 
 ### What is Beamium
 
-Beamium collect metrics from HTTP endpoints like `http://127.0.0.1/metrics`{.action} and supports Prometheus and Warp10/Sensision format. Once scraped, Beamium can filter and forward data to a Warp10 Time Series platform. While acquiring metrics, Beamium uses DFO (Disk Fail Over) to prevent metrics loss due to eventual network issues or unavailable service.
+Beamium collect metrics from HTTP endpoints like `http://127.0.0.1/metrics`{.action} and supports Prometheus and Warp 10™/Sensision format. Once scraped, Beamium can filter and forward data to a Warp 10™ Time Series platform. While acquiring metrics, Beamium uses DFO (Disk Fail Over) to prevent metrics loss due to eventual network issues or unavailable service.
 
 Beamium is written in Rust to ensure efficiency, a very low footprint and deterministic performances.
 
@@ -32,7 +32,7 @@ Beamium key points:
  - **Integration**: Beamium fetch Prometheus metrics and so benefits from a large community.
  - **Reliable**: Beamium handle network failure. Never loose data. We guarantee void proof graph ;)
  - **Versatile**: Beamium can also scrape metrics from a directory.
- - **Powerful**: Beamium is able to filter metrics and send them to multiple Warp10 platforms.
+ - **Powerful**: Beamium is able to filter metrics and send them to multiple Warp 10™ platforms.
 
 ### Install
 
@@ -65,7 +65,7 @@ parameters:
   sink-dir: /opt/beamium/sinks
 ```
 
-Sinks are locations where Beamium can push your data points. They have to be valid Warp10 /update endpoints. You can configure multiple sinks. In this configuration, you are defining a sink which is Metrics GRA1 cluster. Don't forget to add your own `WRITE TOKEN`{.action}.
+Sinks are locations where Beamium can push your data points. They have to be valid Warp 10™ /update endpoints. You can configure multiple sinks. In this configuration, you are defining a sink which is Metrics GRA1 cluster. Don't forget to add your own `WRITE TOKEN`{.action}.
 
 ## Going further
 
