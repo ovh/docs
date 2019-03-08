@@ -6,19 +6,19 @@ section: 'Premiers pas'
 order: 2
 ---
 
-**Dernière mise à jour le 09/05/2018**
+**Dernière mise à jour le 05/03/2019**
 
 ## Objectif
 
-Sur le web, il existe une multitude de sites internet. Qu'il s'agisse de créer un blog ou une boutique en ligne, de partager une passion ou de promouvoir une activité professionnelle, votre [hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} vous permet d'y héberger le site internet que vous souhaitez, tant que celui-ci est compatible avec la [configuration de nos infrastructures](http://pro.ovh.net/infos/){.external}.
+Sur le web, il existe une multitude de sites internet. Qu'il s'agisse de créer un blog ou une boutique en ligne, de partager une passion ou de promouvoir une activité professionnelle, votre [hébergement web OVH]({ovh_www}/hebergement-web/){.external} vous permet d'y héberger le site internet que vous souhaitez, tant que celui-ci est compatible avec la [configuration de nos infrastructures](http://pro.ovh.net/infos/){.external}.
 
 **Apprenez à mettre en ligne un site internet sur votre hébergement web OVH.**
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Disposer d'une offre d'[hébergement web OVH]({ovh_www}/hebergement-web/){.external}.
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
-- Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/){.external} qui sera l'adresse sur laquelle votre site sera accessible.
+- Disposer d'un [nom de domaine]({ovh_www}/domaines/){.external} qui sera l'adresse sur laquelle votre site sera accessible.
 - Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
@@ -27,18 +27,18 @@ Sur le web, il existe une multitude de sites internet. Qu'il s'agisse de créer 
 
 Posséder une vision claire de votre objectif est primordial pour mener à bien votre projet. Que souhaitez-vous faire avec votre site internet ? Comment le mettre en ligne ? Plusieurs possibilités s'offrent à vous pour concrétiser votre projet sur un hébergement web OVH.
 
-- **Utiliser un site clés en main grâce aux modules en 1 clic OVH** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.). OVH en propose quatre déjà compatibles avec nos infrastructures avec ses modules en 1 clic à découvrir sur la page [« Créer un site Internet avec les modules en 1 clic »](https://www.ovh.com/fr/hebergement-web/site/){.external}.
+- **Utiliser un site clés en main grâce aux modules en 1 clic OVH** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.). OVH en propose quatre déjà compatibles avec nos infrastructures avec ses modules en 1 clic à découvrir sur la page [« Créer un site Internet avec les modules en 1 clic »]({ovh_www}/hebergement-web/site/){.external}.
 
 - **Utiliser un site clés en main à installer manuellement** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.) que vous devrez installer vous-même sur votre hébergement web OVH.
 
 - **Créer vous même votre site internet** : cette solution est plus technique et requiert des compétences en programmation, mais offre la possibilité de créer un projet sur mesure.
 
-- **Migrer un site internet déjà existant chez OVH** : cette solution peut s’avérer sensible si une interruption n’est pas envisageable pour le site concerné. Pour vous aider dans cette démarche, nous vous invitons également à consulter cette documentation : [« Migrer son site et ses e-mails vers OVH »](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}.
+- **Migrer un site internet déjà existant chez OVH** : cette solution peut s’avérer sensible si une interruption n’est pas envisageable pour le site concerné. Pour vous aider dans cette démarche, nous vous invitons également à consulter cette documentation : [« Migrer son site et ses e-mails vers OVH »](../migrer-mon-site-chez-ovh/){.external}.
 
 
 Après avoir évalué les différentes possibilités ci-dessus, deux choix s'offrent à vous :
 
-- **vous souhaitez utiliser nos modules en 1 clic** : reportez-vous aux instructions décrites dans notre documentation [« Installer son site avec les modules en 1 clic »](https://docs.ovh.com/fr/hosting/modules-en-1-clic/){.external} ;
+- **vous souhaitez utiliser nos modules en 1 clic** : reportez-vous aux instructions décrites dans notre documentation [« Installer son site avec les modules en 1 clic »](../modules-en-1-clic/){.external} ;
 
 - **vous ne souhaitez pas utiliser nos modules en 1 clic** : vous devrez réaliser l'installation de votre site manuellement sur votre hébergement. Pour cela, les informations présentes dans cette documentation pourront vous aider dans vos démarches, mais elles ne se substituent pas à l'aide d'un webmaster.
  
@@ -61,9 +61,9 @@ Assurez-vous d'être en possession des fichiers du site que vous souhaitez mettr
 
 #### 2. Se connecter à l'espace de stockage.
 
-Grâce à un identifiant FTP, un mot de passe et une adresse de serveur, vous serez en mesure de vous connecter à votre espace de stockage. Ces éléments vous ont été communiqués dans l'e-mail vous notifiant l'installation de votre hébergement. Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/){.external}.
+Grâce à un identifiant FTP, un mot de passe et une adresse de serveur, vous serez en mesure de vous connecter à votre espace de stockage. Ces éléments vous ont été communiqués dans l'e-mail vous notifiant l'installation de votre hébergement. Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](../modifier-mot-de-passe-utilisateur-ftp/){.external}.
 
-Pour récupérer l'adresse du serveur ou l'identifiant vous permettant d'accéder à votre espace de stockage, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `FTP - SSH`{.action}.
+Pour récupérer l'adresse du serveur ou l'identifiant vous permettant d'accéder à votre espace de stockage, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `FTP - SSH`{.action}. Pour vous aider dans cette démarche, nous vous invitons également à consulter cette documentation : [« Se connecter à l’espace de stockage de son hébergement web »](../connexion-espace-stockage-ftp-hebergement-web/){.external}.
 
 ![siteinstallation](images/get-website-online-step1.png){.thumbnail}
 
@@ -73,7 +73,7 @@ Une fois tous les éléments en votre possession, la connexion à l'espace de st
 
 - **utiliser un logiciel compatible avec le protocole FTP** : vous devrez installer un logiciel compatible sur votre ordinateur (comme FileZilla par exemple). Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVH n'ayant pas créé celui-ci ;
 
-- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées, ainsi qu'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} spécifique sont nécessaires pour utiliser ce type d'accès.
+- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées, ainsi qu'une offre d'[hébergement web OVH]({ovh_www}/hebergement-web/){.external} spécifique sont nécessaires pour utiliser ce type d'accès.
 
 #### 3. Télécharger les fichiers sur l'espace de stockage.
 
@@ -102,7 +102,7 @@ Si vous êtes en train de migrer un site internet, récupérez la base de donné
 
 #### 2. Créer la base de données chez OVH (facultatif).
 
-Si vous disposez déjà d'une base de données que vous souhaitez utiliser (issue d'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} ou d'une solution [SQL Privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external} ou [Cloud DB](https://www.ovh.com/fr/cloud/cloud-databases/){.external}), munissez-vous du nom d'utilisateur et de son mot de passe, du nom de la base de données ainsi que de l'adresse du serveur. Poursuivez alors vers l'étape suivante.
+Si vous disposez déjà d'une base de données que vous souhaitez utiliser (issue d'une offre d'[hébergement web OVH]({ovh_www}/hebergement-web/){.external} ou d'une solution [SQL Privé]({ovh_www}/hebergement-web/options-sql.xml){.external} ou [Cloud DB]({ovh_www}/cloud/cloud-databases/){.external}), munissez-vous du nom d'utilisateur et de son mot de passe, du nom de la base de données ainsi que de l'adresse du serveur. Poursuivez alors vers l'étape suivante.
 
 Si vous souhaitez créer une nouvelle base de données chez OVH, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `Base de données`{.action}.
 
@@ -141,10 +141,12 @@ Pour rappel, si vous rencontrez des difficultés lors de la mise en ligne de vot
 
 ## Aller plus loin
 
-[Migrer son site et ses e-mails vers OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}.
+[Migrer son site et ses e-mails vers OVH](../migrer-mon-site-chez-ovh/){.external}.
 
-[Installer son site avec les modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/){.external}.
+[Installer son site avec les modules en 1 clic](../modules-en-1-clic/){.external}.
 
-[Modifier le mot de passe d’un utilisateur FTP](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/){.external}.
+[Se connecter à l’espace de stockage de son hébergement web](../connexion-espace-stockage-ftp-hebergement-web/){.external}.
+
+[Modifier le mot de passe d’un utilisateur FTP](../modifier-mot-de-passe-utilisateur-ftp/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

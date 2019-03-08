@@ -26,7 +26,7 @@ Afin d'adapter votre Private Cloud à l'une de ces certifications (HDS ou PCI DS
 
 Dans la fenêtre qui s'affiche, assurez-vous de vous trouver sur l'onglet `Informations générales`{.action}. Vérifiez alors l'état d'activation des options de sécurité dans la partie « Options de sécurité ». **À noter qu'il n'est actuellement pas possible de cumuler plusieurs options de sécurité pour un même Private Cloud.**
 
-![hdspcidsscompliance](images/HomeSDDCManager.png){.thumbnail}
+![hdspcidsscompliance](images/HomeSDDCManager-2.png){.thumbnail}
 
 Si l'option de sécurité souhaitée n'est pas activée, activez-la en cliquant sur le bouton `...`{.action}, puis sur `Activer`{.action}. Plusieurs prérequis sont alors indispensables.
 

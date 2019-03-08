@@ -182,6 +182,6 @@ Le numéro du périphérique sg sera affiché comme suit : `/dev/sg0`, `/dev/sg1
 
 [Configurer un RAID matériel](https://docs.ovh.com/fr/dedicated/raid-hard/){.external}
 
-[Congiruer un RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/){.external}
+[Configurer un RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

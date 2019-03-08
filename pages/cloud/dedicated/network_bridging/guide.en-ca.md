@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to use network bridging to configure inte
 section: 'Network Management'
 ---
 
-**Last updated 2018/09/24**
+**Last updated 2019/04/03**
 
 ## Objective
 
@@ -54,6 +54,11 @@ Your gateway address would therefore be:
 * 123.456.789.254
 
 ### Apply the configuration
+
+> [!primary]
+>
+For all operating systems and distributions, you **MUST** configure you virtual machine with the virtual MAC address you created in the Control Panel.
+>
 
 #### Debian and Debian-based operating systems (Ubuntu, CrunchBang, SteamOS, etc.)
 
@@ -107,9 +112,9 @@ Save and close the file, then reboot your virtual machine.
 #### CentOS 7
 
 > [!primary]
-> 
+> 
 > For CentOS 7, the name of the network adapter will vary, depending on the installation options. You will need to verify the adapter name and use it to configure your virtual machine. Use the command `ipaddr`{.action} to find your interface name.
-> 
+> 
 
 Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/sysconfig/network-scripts/ifcfg-(interface name)`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
@@ -301,9 +306,9 @@ Select the adapter with the server’s IP, then check `Allow management operatin
 ![networkbridging](images/network-bridging-windows-2012-1.jpg){.thumbnail}
 
 > [!primary]
-> 
+> 
 >This step is only required once for a hyper-v server. For all VMs, a virtual switch is required to connect the VM’s virtual network adapters to the server’s physical adapter.
-> 
+> 
 
 Next, select the VM that you wish to add the failover IP to. Use the Hyper-V Manager to change the settings of the VM and shut it down.
 
