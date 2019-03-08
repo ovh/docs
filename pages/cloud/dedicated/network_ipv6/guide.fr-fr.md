@@ -14,9 +14,9 @@ section: Réseau & IP
 
 Internet Protocol version 6 (IPv6) est la dernière version du Internet Protocol (IP).
 
-Il est conçu pour résoudre l’épuisement longuement anticipé des adresses IPv4 en utilisant des adresses composé de 128-octets au lieu du traditionnel 32-octets de l’IPv4.
+Il est conçu pour résoudre l’épuisement longuement anticipé des adresses IPv4 en utilisant des adresses composé de 128 bits au lieu du traditionnel 32 bits de l’IPv4.
 
-Tout les serveurs dédiés comprennent un block /64 IPv6 à votre disposition. Ce block représente 18,446,744,073,709,551,616 adresses IPs dont vous pouvez disposer à votre guise.
+Tous les serveurs dédiés comprennent un block /64 IPv6 à votre disposition. Ce block représente 18,446,744,073,709,551,616 adresses IPs dont vous pouvez disposer à votre guise.
 
 Block IPv6 assigné à votre serveur.
 
@@ -35,9 +35,9 @@ La passerelle de votre Block IPv6.
 > Le serveur DNS OVH est en mesure de faire la résolution de noms de domaine IPv6. Réferez-vous à [ce guide](../network_bridging/guide.fr-fr.md).
 > 
 
-Tout les serveurs dédiés comprennent un block /64 IPv6 mis à votre disposition.
+Tous les serveurs dédiés comprennent un block /64 IPv6 mis à votre disposition.
 
-Si vous utilisez un systèmes d'exploitation fourni par OVH. Vous constaterez que l’adresse IPv6 principale de votre block est déjà configurée.
+Si vous utilisez un système d'exploitation fourni par OVH. Vous constaterez que l’adresse IPv6 principale de votre block est déjà configurée.
 
 Si vous désirez utiliser plus d’une adresse IPv6 sur votre serveur (ou si vous désirez l’utiliser sur une Machine Virtuelle) vous devez avoir une adresse IP failover configurée avec une vMAC. Autrement, l’adresse IPv6 ne sera pas routée par nos routeurs et switchs.
 
@@ -54,7 +54,7 @@ Si vous désirez utiliser plus d’une adresse IPv6 sur votre serveur (ou si vou
 ### Debian &amp; derives
 **Fichier: /etc/network/interfaces**
 
-Considérant que votre interface est eth0, la configuration devrait ressembler à ceci:
+Considérant que votre interface est eth0, la configuration devrait ressembler à ceci :
 
 
 ```bash
