@@ -1,11 +1,10 @@
 ---
-title: Instalar WordPress en una instancia
-excerpt: Instalar WordPress en una instancia
+title: 'Instalar WordPress en una instancia'
+excerpt: 'Instalar WordPress en una instancia'
 slug: instalar_wordpress_en_una_instancia
 legacy_guide_number: g2060
-section: Operaciones básicas
+section: Tutoriales
 ---
-
 
 ## 
 WordPress es un sistema de gestión de contenidos (CMS, por sus siglas en inglés) que permite crear un sitio web de forma rápida y sencilla. No es necesario contar con grandes conocimientos en programación para administrarlo. 
