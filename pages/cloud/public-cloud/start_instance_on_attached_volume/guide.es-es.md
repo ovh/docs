@@ -1,11 +1,10 @@
 ---
-title: Iniciar una instancia en un volumen asociado
-excerpt: Iniciar una instancia en un volumen asociado
+title: 'Iniciar una instancia en un volumen asociado'
+excerpt: 'Iniciar una instancia en un volumen asociado'
 slug: iniciar_una_instancia_en_un_volumen_asociado
 legacy_guide_number: g2064
-section: Miscelánea
+section: 'Primeros pasos'
 ---
-
 
 ## 
 Los servidores cloud se entregan con un disco original copiado a partir de una imagen de sistema (Debian 8, Windows 10...), aunque también se pueden utilizar volúmenes adicionales, que son discos persistentes que permiten almacenar datos.

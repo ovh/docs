@@ -2,7 +2,7 @@
 title: 'Preparar el entorno para utilizar la API de OpenStack'
 slug: preparar_el_entorno_para_utilizar_la_api_de_openstack
 excerpt: 'Cómo instalar el entorno OpenStack para controlar las instancias a través de la API'
-section: 'Desde los clientes en línea de comandos'
+section: OpenStack
 ---
 
 **Última actualización: 25/02/2019**
