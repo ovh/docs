@@ -1,12 +1,12 @@
 ---
 title: 'Put an instance in rescue mode'
-excerpt: 'This guide will show you how to put your instance in rescue mode'
 slug: put_an_instance_in_rescue_mode
+excerpt: 'This guide will show you how to put your instance in rescue mode'
 legacy_guide_number: g2029
 section: Troubleshooting
 ---
 
-**Last updated 31st January 2019**
+**Last updated 13th March 2019**
 
 ## Objective
 
