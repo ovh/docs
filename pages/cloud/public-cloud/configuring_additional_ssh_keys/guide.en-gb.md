@@ -6,7 +6,7 @@ legacy_guide_number: g1924
 section: Security
 ---
 
-**Last updated 18th December 2018**
+**Last updated 13th March 2019**
 
 ## Objective
  
@@ -84,7 +84,9 @@ admin@server-1:~$ sudo vim /home/admin/.ssh/authorized_keys
 
 ## Go further
 
-[Use of an SSH key in the Public Cloud interface](https://docs.ovh.com/gb/en/public-cloud/){.external}
+[Create SSH keys](https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys/){.external}
+
+[Replacing your lost SSH key pair](https://docs.ovh.com/gb/en/public-cloud/replacing_your_lost_ssh_key_pair/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.
 
