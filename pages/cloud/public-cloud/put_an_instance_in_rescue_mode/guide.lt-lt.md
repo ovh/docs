@@ -1,61 +1,60 @@
 ---
-title: Virtualios mašinos perjungimas į rescue režimą
-excerpt: Virtualios mašinos perjungimas į rescue režimą
+title: 'Put an instance in rescue mode'
+excerpt: 'This guide will show you how to put your instance in rescue mode'
 slug: virtualios_masinos_perjungimas_i_rescue_rezima
 legacy_guide_number: g2029
+section: Troubleshooting
 ---
 
+**Last updated 13th March 2019**
 
-## 
-Dėl nesėkmingai atlikto konfigūravimo ar SSH rakto praradimo jūs galite prarasti prieigą prie savo virtualios mašinos.
-OVH siūlo naudoti rescue režimą, suteikiantį prieigą prie duomenų, ir galimybę koreguoti įvairius jūsų konfigūravimo failus.
+## Objective
 
-Rescue režimo veikimas paprastas:
-Jūsų virtuali mašina paleidžiama naujame atvaizde, arba naudojama bazinės konfigūracijos virtuali mašina.
-Jūsų virtualios mašinos diskas susietas su jūsų virtualia mašina kaip papildomas diskas, todėl pakanka tik jį pridėti norint gauti prieigą prie duomenų.
+If your instance has been poorly configured, or if you have lost your SSH key, your instance may be inaccessible.
 
-Šiame gide paaiškinamas Rescue mode naudojimas.
+In such circumstances, you can use rescue mode to reconfigure your instance or recover to recover your data. 
 
+**This guide will show you how to put your instance in rescue mode**
 
-## Reikalavimai
+## Requirements
 
-- [Sukurti virtualią mašiną OVH kliento valdymo sąsajoje]({legacy}1775)
+* a [Public Cloud Instance](https://www.ovh.lt/public-cloud/instances/){.external} set up in your OVH account
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* administrative (root) access to the instance via SSH
 
+## Instructions
 
+### Activate rescue mode
 
+First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu.
 
-## Persijungimas į Rescue režimą
-Norėdami perjungti serverį į Rescue režimą spragtelėkite rodyklę virtualios mašinos dešiniajame viršutiniame kampe ir rinkitės Paleidimas Rescue režimu:
+![control panel](images/rescue-mode-01.png){.thumbnail}
 
-![](images/img_3494.jpg){.thumbnail}
-Po to pasirinkite atvaizdą, kuriame norite perkrauti savo serverį Rescue režimu:
+Next, select your PCI project from the side-menu on the left of the screen.
 
-![](images/img_3495.jpg){.thumbnail}
-Jums pateikiami pagal nutylėjimą siūlomi atvaizdai ir papildomas atvaizdas Distribution Rescue Made-in-OVH, leidžiantis prisijungti prie virtualios mašinos Rescue režimu naudojant laikiną slaptažodį.
+![control panel](images/rescue-mode-02.png){.thumbnail}
 
-Po serverio perjungimo į Rescue režimą naujai atsidariusiame lange žemiau dešinėje matysite laikiną slaptažodį:
+Next, click the dropdown arrow on your instance and select `Reboot in rescue mode`{.action}
 
-![](images/img_3497.jpg){.thumbnail}
+![control panel](images/rescue-mode-03.png){.thumbnail}
 
+You will now see the 'Reboot in rescue mode' dialog box. Click the dropdown list to select the Linux distribution you want to use in rescue mode and then click the `Start`{.action} button.
 
-## Prieiga prie duomenų
-Kaip paaiškinta aukščiau, jūsų virtualios mašinos duomenys bus susieti Rescue režimu kaip papildomas diskas.  
-Norėdami gauti prieigą, tiesiog pridėkite diską vadovaudamiesi instrukcijomis:
+![control panel](images/rescue-mode-04.png){.thumbnail}
 
+Once your instance has been rebooted in rescue mode, a message will appear at the top of the screen, containing your temporary password.
 
-- Prisijungimas root teisėmis:
+![control panel](images/rescue-mode-05.png){.thumbnail}
 
+### Access your data
 
-```
-admin@instance:~$ sudo su
-```
+Once rescue mode has been activated, your instance's data will be attached as an additional disk. You will now need to mount it, by taking the following steps.
 
-
-- Prieinamų diskų patikrinimas:
-
+First, establish an SSH connection to your instance. Once you're connected, verify the available disks with this command:
 
 ```
 root@instance:/home/admin# lsblk
+
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 253:0 0 1G 0 disk
 └─vda1 253:1 0 1023M 0 part /
@@ -63,61 +62,34 @@ vdb 253:16 0 10G 0 disk
 └─vdb1 253:17 0 10G 0 part
 ```
 
-
-- Skirsnio pridėjimas;
-
+Next, mount the partition:
 
 ```
 root@instance:/home/admin# mount /dev/vdb1 /mnt
 ```
 
+Your data will now be accessible from the /mnt folder.
 
+### Deactivate rescue mode
 
-Jūsų duomenys dabar prieinami /mnt kataloge.
+Once you have completed your tasks, you can deactivate rescue mode by rebooting your instance normally. To do this, click on the dropdown arrow on your instance, and select `Exit rescue mode`{.action}.
 
-Jūs galite, pavyzdžiui, redaguoti failą, kuriame pateiktas admin naudotojui skirtų SSH raktų sąrašas:
+![control panel](images/rescue-mode-06.png){.thumbnail}
 
+### Activate rescue mode using the OpenStack API
 
-```
-root@instance:/home/admin# vim /mnt/home/admin/.ssh/authorized_keys
-```
-
-
-
-
-## Įprastas virtualios mašinos paleidimas iš naujo
-Atlikę šiuos veiksmus galėsite iš naujo paleisti virtualią mašiną įprastomis priemonėmis. Tiesiog spragtelėkite rodyklę virtualios mašinos dešiniajame viršutiniame kampe ir rinkitės Išėjimas iš Rescue režimo:
-
-![](images/img_3496.jpg){.thumbnail}
-
-
-## OpenStack API
-Jūs galite iš naujo paleisti savo virtualią mašiną rescue režimu ir per OpenStack API naudodami šią eilutę:
-
+You can also activate rescue mode via the OpenStack API using the following command:
 
 ```
-root@server:~# nova rescue INSTANCE_ID
+# root@server:~# nova rescue INSTANCE_ID
 ```
 
-
-Norėdami išeiti iš Rescue režimo naudokite šią eilutę:
-
+To exit rescue mode, use the following command:
 
 ```
-root@server:~# nova unrescue INSTANCE_ID
+# root@server:~# nova unrescue INSTANCE_ID
 ```
 
+## Go further
 
-
-
-## 
-
-- [SSH raktų kūrimas]({legacy}1769)
-- [Papildomų SSH raktų konfigūravimas]({legacy}1924)
-
-
-
-
-## 
-[Grįžti į Cloud gidų sąrašą]({legacy}1785)
-
+Join our community of users on <https://community.ovh.com/en/>.
