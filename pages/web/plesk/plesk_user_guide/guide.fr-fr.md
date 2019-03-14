@@ -564,7 +564,7 @@ Seules les adresses IP Failover peuvent être routées vers un hébergement web 
 
 
 ## FAQ
-<a name="contact_us"></a>
+
 
 ### Nous contacter
 Vous trouverez ci-dessous les réponses aux questions fréquemment posées concernant l'offre d'hébergement web Plesk.
