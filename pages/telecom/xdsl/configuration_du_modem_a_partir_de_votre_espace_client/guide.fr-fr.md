@@ -49,7 +49,7 @@ Depuis l'onglet `Mon modem`{.action}, vous retrouvez alors plusieurs sections. C
 |[Réseau](./#21-reseau)|- Rafraîchir la liste des équipements connectés à votre box|
 |[Configuration générale](./#22-configuration-generale)|- Redémarrer votre box<br>- Activer ou désactiver la configuration à distance de votre box<br>- Paramétrer votre réseau Wi-Fi|
 |[Configuration réseau](./#23-configuration-reseau)|- Configurer l'IP LAN de la box<br>- Configurer le DHCP et les baux DHCP de la box<br>- Configurer des redirections de ports|
-|[Configurations avancées](./#24-configuration-avancees)|- Réinitialiser votre box <br>- Activer le mode bridge<br>- Configurer le MTU<br>- Configurer une DMZ<br>- Choisir le fichier de configuration (_firmware_) de votre box|
+|[Configurations avancées](./#24-configurations-avancees)|- Réinitialiser votre box <br>- Activer le mode bridge<br>- Configurer le MTU<br>- Configurer une DMZ<br>- Choisir le fichier de configuration (_firmware_) de votre box|
 |[Services](./#25-services)|- Activer un service additionnel parmi ceux disponibles|
 
 
