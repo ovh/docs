@@ -86,6 +86,7 @@ It's a nice by default setting, because you are getting a good overview of Istio
 Use `kubectl` to apply the manifest to your cluster:
 
 ```
+kubectl apply -f install/kubernetes/helm/istio/templates/crds.yaml
 kubectl apply -f install/kubernetes/istio-demo-auth.yaml
 ```
 
