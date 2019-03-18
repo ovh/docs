@@ -47,15 +47,15 @@ For this tutorial we are using the [CDS Helm chart](https://github.com/ovh/cds/t
 
 As the CDS chart isn't already in the official helm repository on GitHub you have to clone the CDS repository with the CDS helm inside.
 
-```
+<pre class="console"><code>
 git clone https://github.com/ovh/cds.git
 cd cds/contrib/helm/cds
 # To let CDS spawn workers on your kubernetes cluster you need to copy your kubeconfig.yaml in the current directory
-  cp yourPathToKubeconfig.yaml kubeconfig.yaml
-```
+cp yourPathToKubeconfig.yaml kubeconfig.yaml
+</code></pre>
 
 
->  [!primary]
+> [!primary]
 > ### Customizing your install
 > 
 > Maybe you would like your admin username to be different, or be able to set your admin password, or modify the resources allocated... 
@@ -63,11 +63,11 @@ cd cds/contrib/helm/cds
 > In order to customize your install, without having to leave the simplicity of using helm and the Wordpress helm chart, you can simply set some of the [configurable parameters of the CDS chart](https://github.com/ovh/cds/blob/master/contrib/helm/cds/values.yaml). Then you can add it to your `helm install` with the `--set` option (`--set param1=value1,param2=value2`).
 >
 
-```
+<pre class="console"><code>
 # Inside of cds/contrib/helm/cds
 helm dependency update
 helm install .
-```
+</code></pre>
 
 This will install all the CDS services:
 
@@ -176,10 +176,10 @@ After create the first account and as there is no SMTP configured, you have to c
 
 With the previous example log, the command to run is:
 
-```
+<pre class="console"><code>
 export CDS_API_POD_NAME=$(kubectl get pods --namespace default -l "app=my-cds-cds-api" -o jsonpath="{.items[0].metadata.name}")
 kubectl logs -f --namespace default $CDS_API_POD_NAME | grep 'account/verify'
-```
+</code></pre>
 
 After registration on UI, keep the password displayed, we will use it in next step. 
 
@@ -189,12 +189,12 @@ In order to have all that you need to run your first job you need to add a first
 
 ### Download cdsctl
 
-```
+<pre class="console"><code>
 # on a Linux workstation:
 $ curl http://$SERVICE_IP/cdsapi/download/cdsctl/linux/amd64 -o cdsctl
 # on a osX workstation, it's curl http://$SERVICE_IP/cdsapi/download/cdsctl/darwin/amd64 -o cdsctl
 $ chmod +x cdsctl
-```
+</code></pre>
 
 > [!primary]
 > please note that the version linux/amd64, darwin/amd64 and windows/amd64 use libsecret / keychain to store the CDS Password.
@@ -202,21 +202,21 @@ If you don't want to use the keychain, you can select the version i386*
 
 ### Login with cdsctl
 
-```
+<pre class="console"><code>
 $ ./cdsctl login --api-url http://$SERVICE_IP/cdsapi -u yourusername
 CDS API URL: http://$SERVICE_IP/cdsapi
 Username: yourusername
 Password:
           You didn't specify config file location; /Users/yourhome/.cdsrc will be used.
 Login successful
-```
+</code></pre>
 
 
 ### Create a worker model
 
-```
+<pre class="console"><code>
 ./cdsctl worker model import https://raw.githubusercontent.com/ovh/cds/master/contrib/worker-models/go-official-1.11.4-stretch.yml
-```
+</code></pre>
 
 In this case, it's a worker model based on the official golang docker image coming from docker hub. 
 The hatchery will register the worker model before it can be used. You can check the 
@@ -224,15 +224,15 @@ registration information on the ui: Settings -> Worker models -> go-official-1.1
 
 ### Import a workflow template
 
-```
+<pre class="console"><code>
 $ ./cdsctl template push https://raw.githubusercontent.com/ovh/cds/master/contrib/workflow-templates/demo-workflow-hello-world/demo-workflow-hello-world.yml
 Workflow template shared.infra/demo-workflow-hello-world has been created
 Template successfully pushed !
-```
+</code></pre>
 
 ### Create a project with reference key DEMO and name FirstProject, then create your first workflow with a template:
 
-```
+<pre class="console"><code>
 $ ./cdsctl project create DEMO FirstProject
 $ ./cdsctl workflow applyTemplate
 ? Found one CDS project DEMO - FirstProject. Is it correct? Yes
@@ -258,13 +258,13 @@ Workflow successfully pushed !
 .cds/MyFirstWorkflow-dev.env.yml
 .cds/MyFirstWorkflow-preprod.env.yml
 .cds/MyFirstWorkflow-prod.env.yml
-```
+</code></pre>
 
 ### Execute a workflow
 
 On CDS all actions could be done with UI, CLI or API. So you can go on your CDS UI to check your new workflow and run it.
 
-![CDS workflow](./assets/installing-cds-01.png){.thumbnail}
+![CDS workflow](./images/installing-cds-01.png){.thumbnail}
 
 For any further informations about CDS please check [official documentation](https://ovh.github.io/cds/).
 
