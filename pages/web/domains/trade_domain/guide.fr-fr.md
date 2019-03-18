@@ -1,11 +1,16 @@
 ---
-title: Changer le proprietaire d’un nom de domaine
+title: 'Changer le proprietaire d’un nom de domaine'
 legacy_guide_number: 1350
 slug: changement-proprietaire-domaine
-excerpt: Vous trouverez dans ce guide differentes informations concernant le changement de proprietaire d’un nom de domaine.
-section: Changement de propriétaire
+excerpt: 'Vous trouverez dans ce guide differentes informations concernant le changement de proprietaire d’un nom de domaine.'
+section: 'Changement de propriétaire'
 ---
 
+## Prérequis
+
+- Disposer d'un nom de domaine enregistré chez OVH.
+- Être l'administrateur du nom de domaine concerné.
+- Disposer de l'accord du propriétaire du nom de domaine concernant le changement de propriétaire.
 
 ## Procedure de changement de proprietaire
 
@@ -26,14 +31,13 @@ client](https://www.ovh.com/manager/web){.external} à l'aide de votre identifia
 
 
 ### Changer le proprietaire
-- Après avoir sélectionné votre domaine, dans la partie "Plan", cliquez sur le bouton "..." à côté des contacts, puis sur `Changer le propriétaire`{.action}.
+- Après avoir sélectionné votre domaine, dans la partie "Abonnement", cliquez sur le bouton "..." à côté des contacts, puis sur `Changer le propriétaire`{.action}.
 
 
 ![hosting](images/3652-2.png){.thumbnail}
 
 
-### Cas 1 - Procedure par bon de commande
-Actuellement 6 extensions de domaines génériques sont compatibles avec le changement de propriétaire par bon de commande (.ovh, .com, .net, .info, .biz, .org). La pluspart des domaines sont compatibles avec le changement de propriétaire par bon de commande.
+La plupart des domaines sont compatibles avec le changement de propriétaire par bon de commande.
 
 Si vous tentez de modifier le propriétaire d'une de ces extensions, vous serez automatiquement redirigé sur une page de commande.
 
@@ -76,47 +80,3 @@ Une fois les deux e-mails validés, votre changement de propriétaire sera termi
 > verrouillé dans le cadre d'un transfert sortant pour une période de 60 jours.
 > 
 
-
-### Cas 2 - Procedure par courrier
-Si il s'agit d'une extensions autre que celles élligibles à un bon de commande (.ovh, .com, .net, .info, .biz, .org), vous serez redirigé automatiquement vers une procédure papier. S'il s'agit d'une extension non compatible, vous serez redirigé automatiquement vers une procédure papier.
-
-Si vous souhaitez changer le propriétaire d'un domaine élligible à un bon de commande (.ovh, .com, .net, .info, .biz, .org) car l'adresse e-mail actuellement renseignée n'est pas ou plus valide, vous pouvez également utiliser cette procédure afin de mettre à jour celle-ci.
-
-
-
-> [!primary]
->
-> Cette procédure est également disponible directement à cette adresse
-> 
-
-Une fois sur la page de procédure, il vous suffira de remplir celle-ci :
-
-- Indiquez le domaine concerné.
-- Cochez la case "Je veux changer le propriétaire d'un domaine".
-- Cochez la case "Changer aussi l'hébergement" si vous désirez appliquer également cette procédure à l'hébergement lié au domaine.
-
-
-![hosting](images/3653.png){.thumbnail}
-
-- Votre Email : Indiquez votre adresse e-mail pour être tenu informé sur l'avancée de la procédure.
-- Votre Nic handle (ancien propriétaire) : Indiquez l'identifiant OVH de l'administrateur du domaine.
-- Nic handle (nouveau propriétaire) : Indiquez l'identifiant OVH du futur propriétaire.
-- Cliquez sur `Valider`{.action}.
-
-
-![hosting](images/3655.png){.thumbnail}
-
-Suite à cela il vous faudra nous retourner par e-mail la procédure qui vous sera proposée en téléchargement ainsi que les justificatifs demandés en contactant le [support](https://www.ovh.com/fr/support/nous-contacter/){.external}.
-
-- Le délai de traitement moyen des procédures et de 2 jours ouvrables après réception.
-
-
-![hosting](images/3656.png){.thumbnail}
-
-
-
-> [!warning]
->
-> En cas de modification du propriétaire, le nom de domaine sera
-> verrouillé dans le cadre d'un transfert sortant pour une période de 60 jours.
-> 
