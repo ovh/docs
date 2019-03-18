@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.6"
+  - "3.5"
 install:
 # using wget + unzip as it is faster than git
   - wget https://github.com/ovh/docs-developer-env/archive/master.zip -O master.zip
