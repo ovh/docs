@@ -24,10 +24,10 @@ En cas de difficultés avec votre accès à Internet, il est parfois nécessaire
 
 La manipulation est différente selon le modèle de votre box. Rapprochez-vous de celle-ci afin de pouvoir l'identifier, en vous aidant du tableau ci-dessous. Puis poursuivez vers le modèle concerné.
 
-|[TG788vn/TG788vn V2](./#redemarrer-tg788vn-et-tg788vn-v2)|[TG789vn](./#redemarrer-tg789vn)|[TG799vac](./#redemarrer-tg799vac)|
+|[TG788vn/TG788vn V2](./#redemarrer-un-modele-tg788vn-ou-tg788vn-v2)|[TG789vn](./#redemarrer-un-modele-tg789vn)|[TG799vac](./#redemarrer-un-modele-tg799vac)|
 |---|---|---|
 |![TG788vn / TG788vn V2](images/tg788.png){.thumbnail}|![TG789vn](images/tg789vn.png){.thumbnail}|![TG799vac](images/t799vac.png){.thumbnail}|
-|[Zyxel B10D](./#redemarrer-zyxel-b10d)|[Zyxel B50B](./#redemarrer-zyxel-b50b)| |
+|[Zyxel B10D](./#redemarrer-un-modele-zyxel-b10d)|[Zyxel B50B](./#redemarrer-un-modele-zyxel-b50b)| |
 |![Zyxel B10D](images/zyxelb10d.png){.thumbnail}|![Zyxel B50B](images/zyxelb50b.png){.thumbnail}| |
 
 #### Redémarrer un modèle TG788vn ou TG788vn V2
@@ -88,10 +88,10 @@ Il existe deux possibilités pour réinitialiser votre box OVH :
 
 - **par le biais d'une manipulation manuelle sur votre box** : la marche à suivre est différente selon le modèle de votre box. Rapprochez-vous de celle-ci afin de pouvoir l'identifier, en vous aidant du tableau ci-dessous. Puis poursuivez vers le modèle concerné.
 
-|[TG788vn/TG788vn V2](./#reinitialiser-tg788vn-et-tg788vn-v2)|[TG789vn](./#reinitialiser-tg789vn)|[TG799vac](./#reinitialiser-tg799vac)|
+|[TG788vn/TG788vn V2](./#reinitialiser-un-modele-tg788vn-ou-tg788vn-v2)|[TG789vn](./#reinitialiser-un-modele-tg789vn)|[TG799vac](./#reinitialiser-un-modele-tg799vac)|
 |---|---|---|
 |![TG788vn / TG788vn V2](images/tg788.png){.thumbnail}|![TG789vn](images/tg789vn.png){.thumbnail}|![TG799vac](images/t799vac.png){.thumbnail}|
-|[Zyxel B10D](./#reinitialiser-zyxel-b10d)|[Zyxel B50B](./#reinitialiser-zyxel-b50b)| |
+|[Zyxel B10D](./#reinitialiser-un-modele-zyxel-b10d)|[Zyxel B50B](./#reinitialiser-un-modele-zyxel-b50b)| |
 |![Zyxel B10D](images/zyxelb10d.png){.thumbnail}|![Zyxel B50B](images/zyxelb50b.png){.thumbnail}| |
 
 #### Réinitialiser un modèle TG788vn ou TG788vn V2
