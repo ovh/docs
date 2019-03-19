@@ -11,13 +11,13 @@ legacy_guide_number: g2149
 ## Nel tuo Spazio Cliente OVH
 Accedi al tuo Spazio Cliente OVH, seleziona il tuo hosting nel menu a sinistra e clicca su Modifica la configurazione.
 
-![](images/img_4127.jpg){.thumbnail}
+![](images/change-hosting-configuration-step1.png){.thumbnail}
+
 A questo punto puoi cambiare la configurazione corrente.
 
-![](images/img_4128.jpg){.thumbnail}
 Scegli un ambiente di esecuzione nel menu a tendina.
 
-![](images/img_4129.jpg){.thumbnail}
+![](images/change-hosting-configuration-step3.png){.thumbnail}
 
 ## Nel file .ovhconfig
 L'aggiornamento viene effettuato nel file .ovhconfig che si trova nella root del tuo hosting.
