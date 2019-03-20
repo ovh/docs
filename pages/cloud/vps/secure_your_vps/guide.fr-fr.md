@@ -142,6 +142,12 @@ StrictModes yes
 
 Remplacez le **yes** par **no** pour la ligne `PermitRootLogin`.
 
+Ajoutez en dessous la ligne suivante pour permettre la connection depuis le nouvel utilisateur
+```sh
+AllowUsers NomUtilisateur
+```
+
+
 Pour que cette modification soit prise en compte il faut redémarrer le service SSH :
 
 ```sh
