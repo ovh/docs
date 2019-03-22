@@ -37,7 +37,7 @@ There are two ways you can modify an FTP user's password, depending on which [OV
 
 - **For Web Hosting plans that can have several FTP users** (Professional and Performance): click on the cogwheel icon to the right of the user you have selected, then click `Change password`{.action}. Enter your new password in the window that opens, and click `Confirm`{.action}.
 
-The password change will require a few minutes to take effect.
+The password change will require a couple of hours (from 2 to 3) to take effect.
 
 > [!primary]
 >
@@ -58,7 +58,7 @@ The password change will require a few minutes to take effect.
 
 Once you have modified the FTP user password, you can then access your storage space.
 
-There are several ways of doing this, depending on which [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} you are using:
+There are several ways of doing this, depending on which [OVH Web Hosting plan](https://www.google.com){.external} you are using:
 
 - **Using FTP Explorer:** Enables you to access your storage space via your browser. To use it, stay in the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
 
