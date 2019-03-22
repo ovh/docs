@@ -27,7 +27,7 @@ Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 The table will provide you with a list of FTP user accounts created on your Web Hosting plan. You can use these user accounts to access your storage space and put your website’s files online. A user account will be created automatically when you set up your Web Hosting plan.
 
-![ftppassword](images/change-ftp-password-step1.png){.thumbnail}
+![ftppassword](images/Bootcamp-Fork.png){.thumbnail}
 
 ### Step 2: Modify the FTP user password
 
