@@ -288,7 +288,7 @@ Muni des informations récupérées durant les étapes précédentes, allumez la
 
 Vous pouvez désactiver le clignotement du disque, en remplaçant « on » par « off » dans la commande.
 
-### Étape 4 : sortir le disque défectueux du RAID
+#### Étape 4 : sortir le disque défectueux du RAID
 
 Réalisez cette manipulation depuis l'interface « **Gestion des disques** » de votre serveur Windows.
 
