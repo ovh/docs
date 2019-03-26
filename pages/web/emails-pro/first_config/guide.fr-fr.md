@@ -2,11 +2,11 @@
 title: 'Premiers pas avec la solution E-mail Pro'
 slug: premiere-configuration
 excerpt: 'Découvrez comment réaliser la configuration de votre solution E-mail Pro'
-section: Premiers pas
+section: 'Premiers pas'
 order: 1
 ---
 
-**Dernière mise à jour le 28/11/2018**
+**Dernière mise à jour le 26/03/2019**
 
 ## Objectif
 
@@ -16,7 +16,7 @@ Vous venez d’acquérir une solution E-mail Pro. Celle-ci vous permet de béné
 
 ## Prérequis
 
-- Disposer d'une offre [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external}.
+- Disposer d'une offre [E-mail Pro]({ovh_www}/emails/email-pro/){.external}.
 - Avoir reçu l’e-mail vous confirmant l’installation de votre solution E-mail Pro.
 - Disposer d'un nom de domaine.
 - Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
@@ -82,7 +82,7 @@ La colonne `Diagnostic`{.action} vous permet de contrôler la configuration DNS 
 
 - **Si vous avez choisi une configuration automatique lors de l'ajout du domaine** : l’affichage dans l’espace client OVH peut prendre quelques heures.
 
-- **Si vous avez renseigné un nom de domaine non géré par OVH** : cliquez sur la pastille rouge afin de découvrir les modifications à réaliser. Pour un champ CNAME, aidez-vous de notre guide « [Créer un champ CNAME à l’ajout d’un domaine associé](../microsoft-collaborative-solutions/exchange-ajouter-un-champ-de-type-cname/) ». Pour un champ MX, aidez-vous de notre guide « [Ajouter un champ MX à la configuration de son nom de domaine](../domains/mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/) ». Si vous venez juste d'effectuer la modification, l’affichage dans l’espace client OVH peut prendre quelques heures.
+- **Si vous avez renseigné un nom de domaine non géré par OVH** : cliquez sur la pastille rouge afin de découvrir les modifications à réaliser. Pour un champ CNAME, aidez-vous de notre guide « [Créer un champ CNAME à l’ajout d’un domaine associé](../../microsoft-collaborative-solutions/exchange-ajouter-un-champ-de-type-cname/) ». Pour un champ MX, aidez-vous de notre guide « [Ajouter un champ MX à la configuration de son nom de domaine](../../domains/mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/) ». Si vous venez juste d'effectuer la modification, l’affichage dans l’espace client OVH peut prendre quelques heures.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
 
@@ -115,9 +115,9 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 
 ### Étape 5 : utiliser vos adresses e-mail
 
-Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVH met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse <https://pro1.mail.ovh.net> et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
+Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVH met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse [depuis une adresse web spécifique]({ovh_www}/mail/){.external} et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
 
-Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil, comme un _smartphone_ ou une tablette, consultez nos documentations depuis ce portail : <https://docs.ovh.com/fr/emails-pro/>. Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre compte E-mail Pro, retrouvez ci-dessous les paramètres à utiliser :
+Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil, comme un _smartphone_ ou une tablette, [aidez-vous de nos guides de configuration](../). Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre compte E-mail Pro, retrouvez ci-dessous les paramètres à utiliser :
 
 |Type de serveur|Nom du serveur|Type de sécurité|Port|
 |---|---|---|---|
@@ -126,4 +126,4 @@ Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
