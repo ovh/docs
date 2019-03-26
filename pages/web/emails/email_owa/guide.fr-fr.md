@@ -28,7 +28,7 @@ Cette documentation vous permet de mieux appréhender quelques manipulations cou
 3. [Consulter ses e-mails](./#3-consulter-ses-e-mails).
 4. [Envoyer ou répondre à un e-mail](./#4-envoyer-ou-repondre-a-un-e-mail).
 5. [Organiser sa boîte de réception](./#5-organiser-sa-boite-de-reception).
-6. [Gérer un carnet de contacts](./#6-gerer-un-carnet-de-contact).
+6. [Gérer un carnet de contacts](./#6-gerer-un-carnet-de-contacts_1).
 7. [Modifier son mot de passe](./#7-modifier-son-mot-de-passe).
 8. [Ajouter une réponse automatique](./#8-ajouter-une-reponse-automatique) (répondeur).
 9. [Ajouter une signature](./#9-ajouter-une-signature).
@@ -97,7 +97,7 @@ En choisissant de répondre, une zone de rédaction apparaît au-dessus du messa
 Afin d'organiser votre boîte de réception à votre convenance, vous avez la possibilité de réaliser plusieurs actions : 
 
 - [créer des dossiers et sous-dossiers](./#creer-un-dossier) ;
-- [déplacer des messages](./#deplacer-des-messages) ;
+- [déplacer des messages](./#deplacer-un-message) ;
 - [mettre en place des règles](./#creer-une-regle) afin que des actions automatiques soient réalisées à la réception d'un nouveau message. 
 
 #### Créer un dossier
