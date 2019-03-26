@@ -78,10 +78,11 @@ En fin de configuration, nous vous invitons à vérifier les informations qui s'
 
 Une fois le nom de domaine ajouté en tant que domaine associé, vérifiez son paramétrage grâce au tableau qui s'affiche.
 
-La colonne `Diagnostic`{.action} vous permet de contrôler la configuration des champs MX du nom de domaine. Une pastille rouge apparaîtra si ces paramètres doivent être modifiés.
+La colonne `Diagnostic`{.action} vous permet de contrôler la configuration DNS du nom de domaine. Une pastille rouge apparaîtra si ces paramètres doivent être modifiés.
 
 - **Si vous avez choisi une configuration automatique lors de l'ajout du domaine** : l’affichage dans l’espace client OVH peut prendre quelques heures.
-- **Si vous avez renseigné un nom de domaine non géré par OVH** : cliquez sur la pastille rouge afin de découvrir les modifications à réaliser. Si vous venez juste de les effectuer, l’affichage dans l’espace client OVH peut prendre quelques heures.
+
+- **Si vous avez renseigné un nom de domaine non géré par OVH** : cliquez sur la pastille rouge afin de découvrir les modifications à réaliser. Pour un champ CNAME, aidez-vous de notre guide « [Créer un champ CNAME à l’ajout d’un domaine associé](../microsoft-collaborative-solutions/exchange-ajouter-un-champ-de-type-cname/) ». Pour un champ MX, aidez-vous de notre guide « [Ajouter un champ MX à la configuration de son nom de domaine](../domains/mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/) ». Si vous venez juste d'effectuer la modification, l’affichage dans l’espace client OVH peut prendre quelques heures.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
 
