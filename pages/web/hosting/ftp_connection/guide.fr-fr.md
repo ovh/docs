@@ -6,7 +6,7 @@ section: 'FTP et SSH'
 order: 1
 ---
 
-**Dernière mise à jour le 05/03/2019**
+**Dernière mise à jour le 26/03/2019**
 
 ## Objectif
 
@@ -108,10 +108,10 @@ Une fois la connexion SSH établie et selon la méthode choisie, il existe deux 
 - depuis un logiciel : les zones de texte doivent être complétées par les informations de connexion ;
 - depuis une ligne de commande : une syntaxe spécifique devra être respectée.
 
-Pour une utilisation en ligne de commande, voici celle que vous devrez utiliser. Remplacez les éléments « loginssh » et « serveurssh » par ceux adaptés à votre situation personnelle. Une fois la commande envoyée, vous serez invité à renseigner le mot de passe de l'utilisateur SSH.
+Pour une utilisation en ligne de commande, voici celle que vous devrez utiliser. Remplacez les éléments « sshlogin », « sshserver » et « connectionport » par ceux adaptés à votre situation personnelle. Une fois la commande envoyée, vous serez invité à renseigner le mot de passe de l'utilisateur SSH.
 
 ```ssh
-ssh loginssh@serveurssh
+ssh sshlogin@sshserver -p connectionport
 ```
 
 Si les informations sont correctes, vous pourrez alors interagir avec votre espace de stockage. Aidez-vous de notre documentation « [Utiliser une connexion SSH sur un hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/) » si nécessaire.
