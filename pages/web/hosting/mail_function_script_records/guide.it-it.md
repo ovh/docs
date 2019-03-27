@@ -1,96 +1,81 @@
 ---
-title: 'Hosting Web: gestisci l’invio delle tue email automatiche'
-excerpt: Gestisci le email automatiche inviate dal tuo hosting condiviso
+title: 'Gestire l’invio delle email automatiche'
+excerpt: 'Come monitorare e gestire le email automatiche inviate da un hosting Web OVH'
 slug: hosting_web_gestisci_linvio_delle_tue_email_automatiche
 legacy_guide_number: g1974
+section: Diagnostica
 ---
 
+**Ultimo aggiornamento: 27/03/2019**
 
-## Accedi alla sezione "Email automatiche" del tuo Spazio Cliente OVH
+## Obiettivo
 
-## Per farlo:
+Le email automatiche sono messaggi di posta inviati tramite script  e sono utilizzate, ad esempio, per consentire agli utenti di un sito Web di inviare messaggi tramite un form di contatto.
 
-- accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/)
-Se non riesci più ad accedere al tuo Spazio Cliente OVH, consulta [questa guida](https://www.ovh.it/g1909.metti-online-tuo-sito#le_password_associate_ai_tuoi_servizi_di_web_hosting_ovh_accesso_al_tuo_spazio_cliente_ovh).
-- seleziona il nome del tuo hosting nella sezione Hosting del menu a sinistra
-- clicca su Altre opzioni e seleziona Script email.
+**Questa guida ti mostra come gestire le email automatiche inviate dal tuo hosting Web OVH.**
 
+## Prerequisiti
 
+- Disporre di una soluzione di [hosting Web](https://www.ovh.it/hosting-web/){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-![](images/img_3110.jpg){.thumbnail}
+> [!primary]
+>
+> Questa guida si applica esclusivamente ai messaggi di posta inviati tramite script da un hosting Web OVH.
+>
+> Per gestire gli indirizzi email inclusi in una soluzione MX Plan o in un [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}, accedi alla sezione `Email`{.action} del tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+>
 
+## Procedura
 
-## Blocca l'invio di email dal tuo hosting
-Quando bloccare l'invio di email dal tuo hosting?
+Le operazioni di monitoring e gestione delle email automatiche di un hosting Web OVH sono disponibili nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}: clicca su `Hosting`{.action} nel menu a sinistra, seleziona il tuo servizio dalla lista e clicca su `Altre opzioni`{.action} > `Script email`{.action}.
 
-## Effettuare questa operazione è necessario, ad esempio, quando:
+Dalla nuova pagina è possibile seguire e gestire le email automatiche inviate dall’hosting.
 
-- esegui test di invio email tramite script 
-- il tuo sito viene utilizzato da un hacker per l'invio di messaggi di Spam
+![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
+### Controlla l’invio delle email automatiche
 
+Sempre nella sezione `Script email`{.action}, vengono mostrate diverse informazioni relative agli invii dei messaggi automatici generati dai tuoi script.
 
-## Attenzione:
-Le email non vengono eliminate, ma sospese per 72 ore. Durante questo periodo, potrai sbloccare l'invio oppure annullarlo.
-1. Clicca sul tasto Blocca l'invio
+|Campo|Descrizione|
+|---|---|
+|Stato del servizio|Mostra lo stato corrente del servizio che esegue l’invio delle email automatiche dell’hosting. Se il riquadro è di colore verde significa che gli invii sono attivi e funzionano correttamente; il colore rosso indica invece che i messaggi non vengono più inviati.  In base a questo stato, le operazioni possibili sono diverse. Per maggiori informazioni, vai alla sezione [Gestisci l’invio delle email automatiche ](https://docs.ovh.it/hosting/gestire-email-automatiche/#gestisci-l-invio-delle-email-automatiche){.external}.|
+|Notifica di errore a|Invia giornalmente le notifiche di errore all’indirizzo email inserito. È possibile definirlo tramite il pulsante `Modifica il destinatario`{.action}. Questi report contengono le email inviate dall’hosting Web la cui consegna non è andata a buon fine e che quindi risultano in stato di errore.  Questi messaggi sono disponibili anche nello Spazio Cliente OVH cliccando sul pulsante `Email in errore`{.action}.|
+|Totale email inviate|Mostra il numero totale dei messaggi automatici inviati dal momento in cui è stato creato l’hosting.|
+|Email inviate oggi|Mostra il numero totale dei messaggi automatici inviati nella giornata odierna.|
+|Totale email in errore|Mostra il numero totale dei messaggi automatici inviati dal momento in cui è stato creato l’hosting e la cui consegna non è andata a buon fine.|
+|Storico delle email inviate|Mostra un grafico con la cronologia dei messaggi inviati dall’hosting Web nei giorni precedenti. |
 
-![](images/img_3111.jpg){.thumbnail}
-2. Clicca su Conferma
+> [!primary]
+>
+> Per evitare un utilizzo improprio delle email automatiche dal tuo hosting ti consigliamo di configurare un sistema di sicurezza, ad esempio un captcha da inserire nei form di contatto disponibili nel tuo sito Internet.
+>
 
-![](images/img_3112.jpg){.thumbnail}
-3. Visualizzi questo messaggio di conferma:
+![hosting](images/monitoring-automatic-emails-step2.png){.thumbnail}
 
-![](images/img_3113.jpg){.thumbnail}
+Se ti accorgi che le email generate dai tuoi script non vengono inviate anche se lo stato del servizio risulta attivo, ti consigliamo di:
 
-## Nota:
-Lo stato del servizio passa a Disattivato.
+- **verificare gli script che eseguono gli invii**: è possibile che i messaggi non vengano correttamente spediti a causa di un errore di sintassi nello script. Verificane il contenuto, apporta le eventuali modifiche necessarie ed effettua un altro tentativo; 
 
-![](images/img_3114.jpg){.thumbnail}
+- **prova a inviare un’email tramite uno script di test**: crea uno script di test per inviare un messaggio al tuo indirizzo personale.  Se lo ricevi correttamente, significa che gli script utilizzati dall’hosting contengono uno o più errori. Alcuni esempi di script di test sono disponibili anche in rete.
 
+- **eseguire gli invii senza utilizzare server SMTP**: è sufficiente non specificare il server SMTP tra i parametri dei tuoi script.  Se gestisci l’invio delle email tramite interfaccia Web, questa informazione dovrebbe poter essere modificata nella configurazione del tuo sito.
 
-## Elimina la coda di invio delle tue email
-Eliminare la coda di invio del tuo server di posta è necessario, ad esempio, per evitare un nuovo blocco. Per riuscire a eliminare le tue email, devi prima bloccarne l'invio.
+### Gestisci l’invio delle email automatiche
 
-## Nota:
-L'operazione può richiedere dai 5 ai 10 minuti. In seguito, il tuo account viene sbloccato automaticamente.
-1. Clicca sul tasto Elimina le email
+Sempre nella sezione `Script email`{.action}, in base allo stato del servizio, sono disponibili alcuni pulsanti per la gestione dell’invio dei tuoi messaggi automatici. 
 
-![](images/img_3115.jpg){.thumbnail}
-2. Clicca su Conferma
+|Azione|Descrizione|
+|---|---|
+|Blocca l’invio |Permette di sospendere l’invio delle email automatiche dall’hosting Web.  I messaggi generati dagli script in seguito al blocco non verranno inviati, ma messi in coda per un massimo di 72 ore.|
+|Sblocca l’invio |Permette di riattivare l’invio delle email automatiche dall’hosting Web e rimettere in consegna le email in coda. |
+|Elimina le email|Permette di cancellare le email in coda e sbloccare l’invio per i nuovi messaggi. |
 
-![](images/img_3116.jpg){.thumbnail}
-3. Visualizzi questo messaggio di conferma:
+Per effettuare una di queste azioni, clicca sul pulsante corrispondente e `Conferma`{.action}.  In alcuni casi potrebbero essere necessari alcuni minuti prima che l’azione selezionata diventi effettiva. 
 
-![](images/img_3117.jpg){.thumbnail}
+![hosting](images/monitoring-automatic-emails-step3.png){.thumbnail}
 
-## Nota:
-Lo stato del servizio passa a Purge.
+## Per saperne di più
 
-![](images/img_3118.jpg){.thumbnail}
-
-
-## Sblocca l'invio
-Effettuando questa operazione, l'invio riprende a partire dalla prossima email e i messaggi bloccati vengono rimessi in distribuzione.
-1. Clicca sul tasto Sblocca l'invio
-
-![](images/img_3122.jpg){.thumbnail}
-2. Clicca su Conferma
-
-![](images/img_3123.jpg){.thumbnail}
-3. Visualizzi questo messaggio di conferma:
-
-![](images/img_3124.jpg){.thumbnail}
-
-
-## Modifica il destinatario delle notifiche di errore
-Se si verificano errori durante l'invio di email dal tuo hosting WEB, il contatto indicato come destinatario delle notifiche di errore riceve un avviso il giorno dopo.
-1. Clicca su Modifica il destinatario.
-
-![](images/img_3119.jpg){.thumbnail}
-2. Inserisci il nuovo indirizzo email e clicca su Conferma.
-
-![](images/img_3120.jpg){.thumbnail}
-3. Il nuovo indirizzo email viene visualizzato come destinatario delle notifiche di errore.
-
-![](images/img_3121.jpg){.thumbnail}
-
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
