@@ -1,12 +1,12 @@
 ---
 title: 'Importare un backup nel database di un hosting Web'
+slug: web_hosting_come_importare_un_database_mysql
 excerpt: 'Come importare un backup in un database di un hosting Web OVH'
 id: '1393'
-slug: web_hosting_come_importare_un_database_mysql
 legacy_guide_number: g1393
 ---
 
-**Ultimo aggiornamento: 27/03/2019**
+**Ultimo aggiornamento: 28/03/2019**
 
 ## Obiettivo
 
