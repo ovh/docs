@@ -6,17 +6,17 @@ legacy_guide_number: g1853
 section: 'Resource management'
 ---
 
-**Last updated 25/01/2019**
+**Last updated 1/04/2019**
 
 ## Objective
 
 A situation may arise where you need to move your [Public Cloud Instance](https://www.ovh.com.au/public-cloud/instances/){.external} from one datacentre to another, either because you would prefer to move to a newly available datacentre or because you want to migrate from OVH Labs to Public Cloud. 
 
-**This guide will show you how to transfer an instance backup from one datacentre to another while preserving the configuration and state of the instance.**
+**This guide will show you how to transfer an Instance backup from one datacentre to another while preserving the configuration and state of the Instance.**
 
 ## Requirements
 
-Before following this guide, it's recommended that you first complete this guide:
+Before following these steps, it's recommended that you first complete this guide:
 
 * [Prepare the environment to use the OpenStack API](https://docs.ovh.com/au/en/public-cloud/prepare-environment-for-using-openstack-api/){.external}
 
@@ -25,59 +25,63 @@ You will also need the following:
 * a [Public Cloud Instance](https://www.ovh.com.au/public-cloud/instances/){.external} in your OVH account
 * administrative (root) access to your datacentre via SSH
 
+> [!primary]
+>
+The commands in this guide are based on the OpenStack CLI, as opposed to the `NOVA` and `GLANCE` APIs.
+>
+
 ## Instructions
 
 ### Create a backup
 
-First, establish an SSH connection to your datacentre and then run the following command to list your existing instances.
+First, establish an SSH connection to your datacentre and then run the following command to list your existing Instances:
 
 ```
-#root@serveur:~$ nova list
-
-+--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
-| ID | Name | Status | Task State | Power State | Networks |
-+--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
-| aa7115b3-83df-4375-b2ee-19339041dcfa | Serveur1 | ACTIVE | - | Running | Ext-Net=149.xxx.xxx.254 |
-+--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
+#root@server:~$ openstack server list
+ 
++--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+| ID                                   | Name      | Status | Networks                                         | Image Name   |
++--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+| aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
++--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 ```
 
-Next, run the following command to create a backup of your instance.
+Next, run the following command to create a backup of your Instance:
 
 ```
-#root@serveur:~$ nova image-create aa7115b3-83df-4375-b2ee-19339041dcfa snap_serveur1
+#root@server:~$ openstack image create --id aa7115b3-83df-4375-b2ee-19339041dcfa snap_server1
 ```
 
 ### Download the backup
 
-Next, run this command to list available instances.
+Next, run this command to list available Instances:
 
 ```
-#root@serveur:~$ glance image-list
-+--------------------------------------+------------------------+-------------+------------------+-------------+--------+
-| ID | Name | Disk Format | Container Format | Size | Status |
-+--------------------------------------+------------------------+-------------+------------------+-------------+--------+
-| c17f13b5-587f-4304-b550-eb939737289a | Centos 7 | raw | bare | 2149580800 | active |
-| 73958794-ecf6-4e68-ab7f-1506eadac05b | Debian 7 | raw | bare | 2149580800 | active |
-| bdcb5042-3548-40d0-b06f-79551d3b4377 | Debian 8 | raw | bare | 2149580800 | active |
-| 7250cc02-ccc1-4a46-8361-a3d6d9113177 | Fedora 19 | raw | bare | 2149580800 | active |
-| 57b9722a-e6e8-4a55-8146-3e36a477eb78 | Fedora 20 | raw | bare | 2149580800 | active |
-| 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_serveur1 | qcow2 | bare | 1598029824 | active |
-| 3bda2a66-5c24-4b1d-b850-83333b580674 | Ubuntu 12.04 | raw | bare | 2149580800 | active |
-| 9bfac38c-688f-4b63-bf3b-69155463c0e7 | Ubuntu 14.04 | raw | bare | 10737418240 | active |
-| 6a123897-a5bb-46cd-8f5d-ecf9ab9877f2 | Windows-Server-2012-r2 | raw | bare | 21474836480 | active |
-+--------------------------------------+------------------------+-------------+------------------+-------------+--------+
+#root@server:~$ openstack image list
++--------------------------------------+-----------------------------------------------+--------+
+| ID                                   | Name                                          | Status |
++--------------------------------------+-----------------------------------------------+--------+
+| 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_server1                                 | active |
+| 3ff877dc-1a62-43e7-9655-daff37a0c355 | NVIDIA GPU Cloud (NGC)                        | active |
+| a14a7c1e-3ac5-4a61-9d36-1abc4ab4d5e8 | Centos 7                                      | active |
+| f720a16e-543b-42e5-af45-cc188ad2dd34 | Debian 8 - GitLab                             | active |
+| d282e7aa-332c-4dc7-90a9-d49641fa7a95 | CoreOS Stable                                 | active |
+| 2519f0fb-18cc-4915-9227-7754292b9713 | Ubuntu 16.04                                  | active |
+| b15789f8-2e2f-4f6c-935d-817567319627 | Windows Server 2012 R2 Standard - UEFI        | active |
+| ed2f327f-dbae-4f9e-9754-c677a1b76fa3 | Ubuntu 14.04                                  | active |
+| 9c9b3772-5320-414a-90bf-60307ff60436 | Debian 8 - Docker                             | active |
 ```
 
-Now identify the instance backup from the list.
+Now identify the Instance backup from the list:
 
 ```
-| 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_serveur1 | qcow2 | bare | 1598029824 | active |
+| 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_server1 | qcow2 | bare | 1598029824 | active |
 ```
 
-Finally, run this command to download the backup.
+Finally, run this command to download the backup:
 
 ```
-#root@serveur:~$ glance image-download --file snap_serveur1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
+#root@server:~$ openstack image save --file snap_server1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
 ```
 
 ### Transfer the backup to another datacentre
@@ -90,81 +94,54 @@ If you are transfering your backup to a datacentre within the same project, you 
 >
 
 ```
-#root@serveur:~$ export OS_REGION_NAME=SBG1
+#root@server:~$ export OS_REGION_NAME=SBG1
 ```
 
-If you are transfering your backup to another project or account, you will have to reload the environment variables linked to that account using the following command.
+If you are transfering your backup to another project or account, you will have to reload the environment variables linked to that account using the following command:
 
 ```
-#root@serveur:~$ source openrc.sh
+#root@server:~$ source openrc.sh
 ```
 
-To transfer the backup to the new datacentre, use this command.
+To transfer the backup to the new datacentre, use this command:
 
 ```
-#root@serveur:~$ glance image-create --name snap_serveur1 --disk-format qcow2 --container-format bare --file snap_serveur1.qcow
-
-+------------------+--------------------------------------+
-| Property | Value |
-+------------------+--------------------------------------+
-| checksum | 6cebb4104eadde099bb2721ec8c574fb |
-| container_format | bare |
-| created_at | 2015-10-21T13:26:42 |
-| deleted | False |
-| deleted_at | None |
-| disk_format | qcow2 |
-| id | 0a3f5901-2314-438a-a7af-ae984dcbce5c |
-| is_public | False |
-| min_disk | 0 |
-| min_ram | 0 |
-| name | snap_serveur1 |
-| owner | b3e269xxxxxxxxxxxxxxxxxxxxxxba29 |
-| protected | False |
-| size | 319356928 |
-| status | active |
-| updated_at | 2015-10-21T13:26:51 |
-| virtual_size | None |
-+------------------+--------------------------------------+
+#root@server:~$ openstack image create --disk-format qcow2 --container-format bare --file snap_server1.qcow snap_server1
+ 
++------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Field            | Value                                                                                                                                                                                     |
++------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| checksum         | 82cb7d57ec7278818bba0afcf802f0fb                                                                                                                                                          |
+| container_format | bare                                                                                                                                                                                      |
+| created_at       | 2019-03-22T14:26:22Z                                                                                                                                                                      |
+| disk_format      | qcow2                                                                                                                                                                                     |
+| file             | /v2/images/1bf21cf3-8d39-40ae-b088-5549c31b7905/file                                                                                                                                      |
+| id               | 0a3f5901-2314-438a-a7af-ae984dcbce5c                                                                                                                                                    |
+| min_disk         | 0                                                                                                                                                                                         |
+| min_ram          | 0                                                                                                                                                                                         |
+| name             | snap_server1                                                                                                                                                                             |
+| owner            | 4e03fd164d504aa3aa03938f0bf4ed90                                                                                                                                                          |
+| properties       | direct_url='swift+config://ref1/glance/1bf21cf3-8d39-40ae-b088-5549c31b7905', locations='[{u'url': u'swift+config://ref1/glance/1bf21cf3-8d39-40ae-b088-5549c31b7905', u'metadata': {}}]' |
+| protected        | False                                                                                                                                                                                     |
+| schema           | /v2/schemas/image                                                                                                                                                                         |
+| size             | 3004956672                                                                                                                                                                                |
+| status           | active                                                                                                                                                                                    |
+| tags             |                                                                                                                                                                                           |
+| updated_at       | 2019-03-22T14:41:05Z                                                                                                                                                                      |
+| virtual_size     | None                                                                                                                                                                                      |
+| visibility       | private                                                                                                                                                                                   |
++------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-### Create an instance from your backup
+### Create an Instance from your backup
 
-To create an instance from your backup, use the backup ID as the image with this command.
+To create an Instance from your backup, use the backup ID as the image with this command:
 
 ```
-#root@serveur:~$ nova boot --key_name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Serveur1_from_snap
-+--------------------------------------+------------------------------------------------------+
-| Property | Value |
-+--------------------------------------+------------------------------------------------------+
-| OS-DCF:diskConfig | MANUAL |
-| OS-EXT-AZ:availability_zone | nova |
-| OS-EXT-STS:power_state | 0 |
-| OS-EXT-STS:task_state | scheduling |
-| OS-EXT-STS:vm_state | building |
-| OS-SRV-USG:launched_at | - |
-| OS-SRV-USG:terminated_at | - |
-| accessIPv4 | |
-| accessIPv6 | |
-| adminPass | 2Rxxvb4wx2iS |
-| config_drive | |
-| created | 2015-10-21T13:31:41Z |
-| flavor | vps-ssd-1 (98c1e679-5f2c-4069-b4da-4a4f7179b758) |
-| hostId | |
-| id | 68d38ef7-1b25-40bb-a629-4f91f4b24b59 |
-| image | snap_serveur1 (0a3f5901-2314-438a-a7af-ae984dcbce5c) |
-| key_name | SSHKEY |
-| metadata | {} |
-| name | Serveur1_from_snap |
-| os-extended-volumes:volumes_attached | [] |
-| progress | 0 |
-| security_groups | default |
-| status | BUILD |
-| tenant_id | b3e269f057d14af594542d6312b0ba29 |
-| updated | 2015-10-21T13:31:41Z |
-| user_id | 01e3c1c9c3584311931233798e411ba4 |
-+--------------------------------------+------------------------------------------------------+
+#root@server:~$ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
 ```
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+* Join our community of users on <https://community.ovh.com/en/>.
+* [Transfer a volume backup from one datacentre to another](https://docs.ovh.com/au/en/public-cloud/transfer_volume_backup_from_one_datacentre_to_another/){.external}
