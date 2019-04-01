@@ -31,7 +31,7 @@ Un serveur privé virtuel (VPS, pour Virtual Private Server) est un serveur déd
 
 Une fois connecté sur votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, il vous suffira, pour consulter les informations liées à votre VPS, de vous rendre dans la partie `Cloud`{.action}, puis dans la colonne de gauche `Serveurs`{.action}. Vous verrez ici tout ce qui concerne votre VPS : les informations générales au milieu, les actions que vous pouvez effectuer sous la forme de boutons à droite de l'écran et les options tout en bas.
 
-### Se connecter en VPS
+### Se connecter au VPS
 
 Lors de l'installation (ou de la réinstallation) de votre VPS, un e-mail vous sera envoyé avec un mot de passe pour l'accès root, la connexion utilisant le protocole SSH. Le SSH est un protocole de communication sécurisé. L'accès se fait via un terminal de commande (Linux ou MAC) ou par l'intermédiaire d'un logiciel tiers sur Windows (Putty, par exemple).
 
