@@ -68,13 +68,13 @@ Logs Data Platform supports several logs formats, each one of them has its own a
 5424](https://tools.ietf.org/html/rfc5424){.external}.
 - **Cap'n'Proto**: The most efficient log format. this is a binary format that will allows you to maintain a low footprint and high speed performance. If you want to know more about it, check the official website: [Cap'n'Proto](https://capnproto.org/){.external}.
 
-Here are the ports you can use on your cluster to send your logs. You can either use the secured ones with SSL Enabled (TLS 1.2) or use the plain unsecured ones if you can't use a SSL transport.
+Here are the ports you can use on your cluster to send your logs. You can either use the secured ones with SSL Enabled (TLS >= 1.1) or use the plain unsecured ones if you can't use a SSL transport.
 
 ||Syslog RFC5424|Gelf|LTSV line|LTSV nul|Cap’n’Proto|
 |---|---|---|---|---|---|
 |TCP/TLS|6514|12202|12201|12200|12204|
 |TCP|514|2202|2201|2200|2204|
-|UDP|514|2202|Not Supported|Not Supported|Not Supported|
+|UDP|514|2202|2201|2200|2204|
 
 You can retrieve the ports and the address of your cluster at the **Home** page
 
@@ -183,4 +183,4 @@ We have only scratched the surface of what Logs Data Platform can do for you. yo
 - Getting Started: [Quick Start](./guide.en-gb.md){.ref}
 - Documentation: [Guides](../product.en-gb.md){.ref}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-- Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/){.external}
+- Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}

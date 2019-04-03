@@ -6,19 +6,19 @@ excerpt: This super-powered tail will follow and format your logs with flying co
 section: Features
 ---
 
-**Last updated 5th March 2018**
+**Last updated 2nd April 2019**
 
 ## Objective
 
 This guide will show you how to use the Logs Data Platform to stream your logs in real time.
 
-The Logs Data Platform allows you to connect different applications or servers to one unique endpoint and make all of them appear in one stream if needed. ldp-tail is able to follow one your stream in real-time with sub-second latency by using one of the exclusive feature of the platform: the WebSocket endpoint.
+The Logs Data Platform allows you to connect different applications or servers to one unique endpoint and make all of them appear in one stream if needed. **ldp-tail** is able to follow one your stream in real-time with sub-second latency by using one of the exclusive feature of the platform: the WebSocket endpoint.
 
 ## Requirements
 
 - **ldp-tail** can be run on Linux, Mac or Windows, locally or remotely
 - You will need an internet connection
-- A LDP Pro account with [an active stream](https://docs.ovh.com/gb/en/logs-data-platform/quick-start/){external} and WebSocket option enabled
+- A LDP Pro account with [an active stream](../quick_start/guide.en-gb.md){ref} and WebSocket option enabled
 
 ## Instructions
 
@@ -41,7 +41,7 @@ To test **ldp-tail** with one of your stream, you have first to retrieve your We
 
 ### Retrieve your WebSocket address
 
-Let's retrieve the WebSocket address that will allow you to follow your logs. For this you will need first to connect to the manager and go to the streams page. From there, open the menu of the stream you want the address of and click on `Follow in real-time`{.action}
+Let's retrieve the WebSocket address that will allow you to follow your logs. For this you will need first to connect to the manager and go to the streams page. From there, open the menu of the stream you want the address of and click on `Monitor in real-time`{.action}
 
 ![Follow](images/follow.png){.thumbnail}
 
@@ -49,7 +49,7 @@ You will land on a new page where you will see all your logs in real-time as soo
 
 ![Websocket](images/websocket.png){.thumbnail}
 
-You will also find on this page a link to the ldp-tail release page.
+You will also find on this page a link to the ldp-tail release page and three ways to test your stream with commands.
 
 ### Formatting and Filtering
 
@@ -145,13 +145,26 @@ Value="/dbaas/logs"
 Not=false
 ```
 
-If you have any difficulty understanding this pattern or if you want help creating your own, don't hesitate to reach us on the mailing list or on the [Community Hub](https://community.ovh.com/c/platform/data-platforms-lab){.external}.
+If you have any difficulty understanding this pattern or if you want help creating your own, don't hesitate to reach us on the mailing list or on the [Community Hub](https://community.ovh.com/en/c/Platform){.external}.
+
+### Replay tail
+
+It's also possible to replay a given time window in the past.
+
+To proceed, give the begin & end as uri query parameter.
+
+Sample:
+
+```shell-session
+$ ldp@ubuntu:~$ ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo&begin=1553601030&end=1553611040" --pattern "{{date .timestamp}}: {{ ._category }}"
+```
+
+To make the magic happens, replace begin and end values with timestamps that have been in the last few weeks.
+
 
 ## Go further
 
-- Join our community of users on <https://community.ovh.com/en/>
-- Getting Started: [Quick Start](https://docs.ovh.com/gb/en/logs-data-platform/quick-start/){external}
-- Documentation: [Guides](https://docs.ovh.com/gb/en/logs-data-platform/){external}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms-lab){.external}
-- Mailing List: [paas.logs-subscribe@ml.ovh.net](mailto:paas.logs-subscribe@ml.ovh.net){.external}
+- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
+- Documentation: [Guides](../product.en-gb.md){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
