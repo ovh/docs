@@ -9,7 +9,7 @@ section: Sécurité
 
 ## Objectif
 
-Vous pouvez retrouver les informations générales concernant L1 Terminal Fault (L1TF).
+Suite à la diffusion publique de la vulnérabilité L1TF (" L1 Terminal Fault ", ou "Foreshadow"), différentes procédures et patch visant à minimiser l'exposition à ce risque ont été publiées.
 
 **Ce guide vous explique comment bloquer cette vulnérabilité**
 
@@ -48,30 +48,30 @@ Vous retrouverez les informations de cette faille sur notre [article de blog](ht
 >
 > Il est important de comprendre que la faille n'est pas corrigée avec les actions suivantes.
 >
-> Les actions décrivent uniquement comment désactiver l'hyperthreading sur vos hôtes ESXi. De ce fait, il ne sera plus actif sur vos machines virtuelles, le risque sera ecarté.
+> Les actions décrivent uniquement comment désactiver l'hyperthreading sur vos hôtes ESXi. Cependant, la faille L1TF nécesitant l'hyperthreading pour fonctionner, sa désactivation protège votre infrastructure de l'exploitation de cette vulnérabilité.
 >
 
 Le processus de mitigation est décrit dans cette base de connaissance VMware : [https://kb.vmware.com/s/article/55806](https://kb.vmware.com/s/article/55806){.external-link}.
 
-Ce processus se sépare en 3 phases.
+Cette procédure se divise en 3 phases distinctes.
 
-### Phase de mise à jour
+### Étape 1: Phase de mise à jour
 
-La mise à jour du vCenter est réalisée par OVH, cependant, le patch des hôtes ESXi est à effectué par vos soins et est disponible dans [l'update manager](https://docs.ovh.com/fr/private-cloud/vmware-update-manager/){.external-link}.
+La mise à jour du vCenter est réalisée par OVH, cependant, le patch des hôtes ESXi est à effectuer par vos soins et est disponible dans [l'update manager](https://docs.ovh.com/fr/private-cloud/vmware-update-manager/){.external-link}.
 
 Vous retrouverez la liste des patchs pour les hôtes ESXi dans [ce document](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 
-Suite à la phase de mise à jour des hôtes, le message d'alerte suivant sera présent dans le résumé de votre hôte
+Suite à la phase de mise à jour des hôtes, le message d'alerte suivant sera présent dans le résumé de votre hôte :
 
 ![](images/warningMsg.png){.thumbnail}
 
-### Phase d'évaluation de l'environnement
+### Étape 2 : Phase d'évaluation de l'environnement
 
 Une fois les hôtes ESXi à jour, le correctif n'est pas encore appliqué.
 
-Il est important d'être conscient des potentiels problèmes listés dans la [base de connaissances](https://kb.vmware.com/s/article/55806){.external-link} mentionné précedemment, ainsi que les baisses de performances constatées dans cette autre base de connaissance : [https://kb.vmware.com/s/article/55767](https://kb.vmware.com/s/article/55767){.external-link}.
+Il est important d'être conscient des potentiels problèmes listés dans la [base de connaissances](https://kb.vmware.com/s/article/55806){.external-link} mentionnée précedemment, ainsi que les baisses de performances constatées dans cette autre base de connaissance : [https://kb.vmware.com/s/article/55767](https://kb.vmware.com/s/article/55767){.external-link}.
 
-### Phase d'activation
+### Étape 3 : Phase d'activation
 
 Après avoir pris connaissance de ces différents éléments, vous pourrez activer le paramètre permettant de désactiver l'hyperthreading, en vous rendant dans les paramètres système avancés.
 
