@@ -1,85 +1,138 @@
 ---
-title: Web hosting recupera un backup completo o un file in FTP con Filezilla
-excerpt: In questa guida ti mostriamo come recuperare un back completo o un file in particolare in FTP utilizzando Filezilla
+title: 'Ripristinare i dati dello spazio di storage di un hosting Web'
+excerpt: 'Come recuperare un file o l’intero contenuto dello spazio di storage di un hosting Web OVH'
 slug: web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla
 legacy_guide_number: g1593
+section: 'FTP e SSH'
 ---
 
+**Ultimo aggiornamento: 03/04/2019**
 
-## Step 1: hostname
-Accedi al tuo client FTP (nel nostro esempio utilizziamo Filezilla: []({legacy}1380)).
+## Obiettivo
 
-Inserisci l'hostname nel campo corrispondente. Generalmente è ftp.tuo_dominio.com o ftp.tuaofferta.ovh.net.
+Le soluzioni di hosting Web OVH includono uno spazio di storage in cui è possibile ospitare i tuoi siti Internet. Per diversi motivi potrebbe essere necessario ripristinare tutti i dati in esso contenuti o un file specifico, ad esempio nel caso in cui il tuo sito risulti irraggiungibile in seguito alla rimozione o alla modifica errata di un file.
 
-Esempio:
-Con il dominio tuosito.com
-Il tuo nome host: ftp.tuosito.com o ftp.cluster0XX.ovh.net (sostituisci le xx con il tuo cluster)
+**Questa guida ti mostra come ripristinare un file o l’intero contenuto dello storage del tuo hosting Web OVH.**
 
-[url="https://www.ovh.it/g1374.metti online il tuo sito"][blue]Hai bisogno dei tuoi identificativi FTP?[/blue][/url]
+## Prerequisiti
 
+- Disporre di un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} (escluso il servizio Cloud Web)
+- In base al metodo utilizzato, disporre dell’accesso alla gestione della soluzione di hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} o della password FTP per accedere allo spazio di storage 
 
-- Utilizza la tua password FTP abituale
-- Inserisci la porta 21
+## Procedura
 
+Prima di iniziare, assicurati che le date di ripristino disponibili ti consentano di recuperare i dati del tuo hosting allo stato desiderato:
 
+- giorno corrente, alle 00:01
+- giorno precedente, alle 00:01
+- due giorni prima, alle 00:01
+- domenica precedente, alle 01:00 del mattino
+- domenica di due settimane prima, alle 01:00 del mattino
 
-![](images/img_2314.jpg){.thumbnail}
+OVH non sarà in grado di fornirti backup antecedenti: in caso di necessità, dovrai utilizzare un backup eseguito personalmente. 
 
+Inoltre, dovrai indicare il metodo di ripristino che intendi adottare:
 
-## Step 2: login FTP
-Inserisci le credenziali FTP in base al backup che vuoi recuperare. Tieni presente queste informazioni: 
+|Metodo di ripristino|Descrizione|
+|---|---|
+|Ripristino dallo Spazio Cliente OVH|Ripristina tutti i dati dello spazio di storage. L’intero contenuto corrente sarà sostituito con quello del backup selezionato.|
+|Ripristino da un software o un’interfaccia Web|Permette di accedere in sola lettura a un backup dello spazio di storage. Questo metodo, più tecnico, consente di recuperare uno o più file di una data anteriore senza sovrascrivere completamente il contenuto dello spazio di storage.|
 
+Una volta scelto il metodo di ripristino più adatto alle tue esigenze, prosegui nella lettura di questa guida nel paragrafo corrispondente:
 
-- tuo_identificativo_ftp-snap0:
-snapshot g-0 (backup del giorno, realizzato alle 3 a.m.)
-- tuo_identificativo_ftp-snap1:
-snapshot g-1 (backup del giorno precedente, realizzato alle 3 a.m.)
-- tuo_identificativo_ftp-snap2:
-snapshot g-2 (backup di due giorni prima, realizzato alle 3 a.m.)
-- tuo_identificativo_ftp-snap3:
-snapshot s-1 (backup della settimana precedente, realizzato alle 4 a.m.)
-- tuo_identificativo_ftp-snap4:
-snapshot s-2 (backup di due settimane prima, realizzato alle 4 a.m.)
-- tuo_identificativo_ftp-snap5:
-snapshot s-3 (backup di 3 settimane prima, realizzato alle 4 a.m.)
+- [Ripristina i dati dello storage dallo Spazio Cliente OVH](https://docs.ovh.com/it/hosting/web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/#ripristina-i-dati-dello-storage-dallo-spazio-cliente-ovh){.external}
 
-Esempio:
+- [Ripristina un file da un software o un’interfaccia Web](https://docs.ovh.com/it/hosting/web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/#ripristina-un-file-da-un-software-o-un-interfaccia-web){.external}
 
+### Ripristina i dati dello storage dallo Spazio Cliente OVH
 
-Con il tuo identificativo FTP: toto
-Il tuo login FTP per ripristinare un backup di due giorni prima: toto-snap2
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} nel menu a sinistra e, nella scheda `FTP - SSH`{.action}, clicca sul pulsante `Ripristina un backup`{.action}.
 
-![](images/img_2315.jpg){.thumbnail}
+![backupftp](images/backupftp-step1.png){.thumbnail}
 
+Nella nuova finestra è possibile selezionare la data di ripristino dal menu a tendina:
 
-## Step 3: password FTP
-Inserisci la tua password FTP abituale. 
+|Data|Momento del backup|
+|---|---|
+|g-1|Il giorno stesso alle 00:01|
+|g-2|Il giorno precedente alle 00:01|
+|g-3|Due giorni prima alle 00:01|
+|1 settimana|La domenica precedente alle 00:01|
+|2 settimane|La domenica di due settimane prima alle 00:01|
 
-È la stessa password del tuo accesso FTP classico, che puoi modificare dal tuo Spazio Cliente, sezione Hosting.
+Una volta selezionata la data, clicca su `Seguente`{.action}. 
 
-Conferma le informazioni per consentire la connessione.
+![backupftp](images/backupftp-step2.png){.thumbnail}
 
-![](images/img_2316.jpg){.thumbnail}
+Assicurati che questa azione non comporti la perdita di dati, ad esempio di un file archiviato sullo spazio di storage dopo la data di ripristino selezionata. Come già precisato, il backup sovrascriverà i dati presenti nello storage.
 
+Clicca su `Conferma`{.action} per avviare l’operazione.
 
-## Step 4: ripristino di un backup di file
-Ripristina i file e le cartelle che vuoi, trascinandoli da "Sito remoto" a "Sito locale" per recuperarli direttamente sul tuo computer. 
+### Ripristina un file da un software o un’interfaccia Web
 
-Consulta la guida su Filezilla, in caso di necessità: []({legacy}1380)
+Questa operazione prevede diversi step. Assicurati di avere a disposizione la password dell’utente FTP per poter accedere allo spazio di storage. 
 
-![](images/img_2317.jpg){.thumbnail}
+> [!warning]
+>
+> Questa soluzione richiede conoscenze del software o dell’interfaccia utilizzati. In questa guida puoi trovare informazioni utili per effettuare l’operazione ma, in caso di necessità, ti consigliamo di rivolgerti a uno specialista del settore. 
+>
 
+#### 1. Scegliere il software o l’interfaccia Web da utilizzare
 
-## Step 5: connessione al Web Hosting
-Accedi con i tuoi identificativi FTP classici per connetterti al tuo Web Hosting e allo spazio di backup.
+Per prima cosa, definisci quale software o interfaccia utilizzerai per accedere al backup del tuo spazio di storage. Se hai già preso la tua decisione, passa direttamente allo step 2. In caso contrario, ecco alcune soluzioni consigliate:
 
-![](images/img_2318.jpg){.thumbnail}
+- **FileZilla**: il download di questo client è disponibile dal sito ufficiale. Per maggiori informazioni consulta la nostra[ guida all’utilizzo di FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/){.external}, tenendo però presente che non si sostituisce alla documentazione ufficiale del software.
 
+- **Cyberduck**: il download di questo client è disponibile dal sito ufficiale. Per maggiori informazioni consulta la nostra [guida all’utilizzo di Cyberduck (MAC)](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_cyberduck_mac/){.external}, tenendo però presente che non si sostituisce alla documentazione ufficiale del software.
 
-## Step 6: installazione di file di backup
-Trasferisci i file recuperati in precedenza sul tuo computer al sito remoto.
+- **FTP Explorer**: questa interfaccia è disponibile nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}: seleziona il tuo servizio nella sezione `Hosting`{.action} del menu a sinistra, clicca sulla scheda `FTP - SSH`{.action} e poi sul pulsante `FTP Explorer`{.action}.
 
-Allo stesso modo, trascinando i file a destra, potrai copiarli in pochi minuti!
+A questo punto, prosegui con lo step successivo.
 
-![](images/img_2319.jpg){.thumbnail}
+![backupftp](images/backupftp-step3.png){.thumbnail}
 
+#### 2. Accedere al backup
+
+Dall’interfaccia o dal software selezionato, dovrai connetterti al tuo spazio di storage per accedere ai dati del backup da recuperare. Per effettuare questa operazione è necessario disporre di nome utente FTP, password e hostname del server FTP.
+
+Queste informazioni sono disponibili nella scheda `FTP - SSH`{.action} del tuo hosting. Se non possiedi più la password, segui le indicazioni descritte nella guida [Modificare la password di un utente FTP](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/){.external}.
+
+![backupftp](images/backupftp-step4.png){.thumbnail}
+
+Una volta effettuato il login, dovrai aggiungere al tuo nome utente FTP il suffisso corrispondente al backup che utilizzerai, come indicato qui sotto:
+
+|Data del backup|Suffisso da aggiungere|Esempio di nome utente completo|
+|---|---|
+|Il giorno stesso alle 00:01|-snap0|utenteftp**-snap0**|
+|Il giorno precedente alle 00:01|-snap1|utenteftp**-snap1**|
+|Due giorni prima alle 00:01|-snap2|utenteftp**-snap2**|
+|La domenica precedente alle 00:01|-snap3|utenteftp**-snap3**|
+|La domenica di due settimane prima alle 00:01|-snap4|utenteftp**-snap4**|
+
+Sostituisci l’informazione generica “utenteftp” con il tuo nome utente FTP principale, conservando il suffisso che indica la data del backup che intendi ripristinare.
+
+Il metodo di accesso allo spazio di storage differisce in base all’interfaccia o al software utilizzato. L’immagine qui sotto, ad esempio, ti mostra l’interfaccia di connessione di FTP Explorer.
+
+![backupftp](images/backupftp-step5.png){.thumbnail}
+
+#### 3. Recuperare i file
+
+A questo punto recupera i file da ripristinare esplorando il contenuto del tuo spazio di storage. L’operazione differisce a seconda del software o dell’interfaccia utilizzati.
+
+Prima di passare allo step successivo, assicurati di aver recuperato tutti i file necessari e poi esci dallo spazio di storage.
+
+#### 4. Ripristinare i file
+
+Dopo aver recuperato i file, accedi di nuovo allo storage senza aggiungere suffissi al nome utente FTP: ti connetterai al contenuto corrente del tuo storage e non a un backup precedente.
+
+A questo punto non ti resta che ripristinare i file: recuperali esplorando il contenuto del tuo spazio di storage e scaricali sostituendoli ai file precedenti.
+
+## Per saperne di più
+
+[Hosting condiviso: guida all’utilizzo di FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/){.external}
+
+[Hosting condiviso: guida all’utilizzo di Cyberduck (MAC)](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_cyberduck_mac/){.external}
+
+[Modificare la password di un utente FTP](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/){.external}
+
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
