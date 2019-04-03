@@ -6,7 +6,7 @@ excerpt: This long-term storage feature keeps your logs safely and cost efficien
 section: Features
 ---
 
-**Last updated 23rd February, 2018**
+**Last updated 2nd April, 2019**
 
 ## Objective
 
@@ -14,7 +14,7 @@ The Logs Data Platform gives you a valuable log retention system, even with [the
 
 ## Requirements
 
-As implied in the title, you will need a stream. If you don't know what a stream is or if you don't have any, you can follow this [quick start tutorial](https://docs.ovh.com/gb/en/logs-data-platform/quick-start/){.external}. You must edit the stream configuration to activate the cold storage. Click on the Edit button in the menu to go to the stream configuration page.
+As implied in the title, you will need a stream. If you don't know what a stream is or if you don't have any, you can follow this [quick start tutorial](../quick_start/guide.en-gb.md){.ref}. You must edit the stream configuration to activate the cold storage. Click on the Edit button in the menu to go to the stream configuration page.
 
 ![Streams menu](images/streams-menu-1.png){.thumbnail}
  
@@ -24,13 +24,13 @@ As implied in the title, you will need a stream. If you don't know what a stream
 
 On this page you will find the long-term storage toggle. Once enabled, you will be able to choose different options:
 
-- The compression algorithm. We currently support [GZIP](http://www.gzip.org/){.external}, [DEFLATE (AKA zip)](http://www.zlib.net/feldspar.html){.external}, or [LZMA (used by 7-Zip)](http://www.7-zip.org/7z.html){.external}.
+- The compression algorithm. We currently support [GZIP](http://www.gzip.org/){.external}, [DEFLATE (AKA zip)](http://www.zlib.net/feldspar.html){.external}, [Zstandard](https://facebook.github.io/zstd/){.external} or [LZMA (used by 7-Zip)](http://www.7-zip.org/7z.html){.external}.
 - The retention duration of your archives (from one year to ten years).
 - The activation of the notification for each new archive available.
 
 ![Edit menu](images/edit-1.png){.thumbnail}
 
-As soon as you click on `Update this stream`{.action}, the cold storage is activated. Here are some more things you need to know about this feature:
+As soon as you click on `Save`{.action}, the cold storage is activated. Here are some more things you need to know about this feature:
 
 > [!warning]
 > 
@@ -47,15 +47,12 @@ As soon as you click on `Update this stream`{.action}, the cold storage is activ
 
 #### Using the OVH Manager
 
-On a cold storage enabled stream (you can quickly see if they are with the archive checkbox), you have a new `Archive Access`{.action} item on the bottom of the stream menu. Click on it to navigate to the archives pages. On this page, you have a list of the archives produced. Each archive is named after its date, so you can quickly retrieve an archive of a particular day. Once you click on the download button at the right of a link, a temporary link will appear as shown in the capture below.
+On a cold storage enabled stream (you can quickly see if they are with the archive checkbox), you have a new `Archives`{.action} item on the bottom of the stream menu. Click on it to navigate to the archives pages. On this page, you have a list of the archives produced. Each archive is named after its date, so you can quickly retrieve an archive of a particular day. 
 
 ![Archive page](images/archive-1.png){.thumbnail}
 
-It will also launch the "unfreezing" of your archive and make it available for download. This delay varies between 10 minutes to 4 hours depending on multiple factors like the size of the archive. When the file is not yet available, the link will redirect you to a waiting page:
-
-![Download waiting page](images/download-1.png){.thumbnail}
-
-If you lose the link in the process, don't worry, just regenerate a new one. The ongoing unfreezing won't be canceled and if your file is already available, it will download it right away.
+From this page you can launch the "unfreezing" process of your archive and make it available for download. This delay varies between 10 minutes to 4 hours depending on multiple factors like the size of the archive. 
+Once available, its status changes and a new `Download`{.action} action appears.
 
 #### Using the API
 
@@ -63,7 +60,7 @@ If you want to download your logs using the API (to use them in a Big Data analy
 
 You will need your OVH service name associated with your account. Your service name is the login logs-xxxxx that is displayed in the left of the OVH Manager.
 
-1. Retrieve your stream using the streams API call:
+**Retrieve your stream using the streams API call**
 
 > [!faq]
 >
@@ -83,7 +80,7 @@ You will need your OVH service name associated with your account. Your service n
 >> serviceName *
 >>> The internal ID of your Logs Data Platform service (string)
 
-2. Retrieve the list of your archives and its details with the corresponding endpoints:
+**Retrieve the list of your archives and its details with the corresponding endpoints**
 
 > [!faq]
 >
@@ -107,7 +104,7 @@ You will need your OVH service name associated with your account. Your service n
 >> archiveId *
 >>> The archive you want details from.
 
-3. You can generate a temporary URL download by using this following endpoint:
+**You can generate a temporary URL download by using this following endpoint**
 
 > [!faq]
 >
@@ -175,9 +172,14 @@ $ curl --verbose -XGET "https://storage.gra1.cloud.ovh.net/v1/AUTH_5c3b113f595c4
 
 Here the **Retry-After** Header has a value of 300 seconds. After 300 seconds, you can issue the same call at the same URL to download the file.
 
+#### Using ldp-archive-mirror
+
+To allow you to get a local copy of all your cold stored archives on Logs Data Platform, we have developed an open source tool that will do this passively: **ldp-archive-mirror**
+The installation and configuration procedure is described on the related [github page](https://github.com/ovh/ldp-archive-mirror){.external}
+
 #### Content of the archive
 
-The data you retrieve in the archive is in [GELF format](http://docs.graylog.org/en/2.2/pages/gelf.html){.external}. It is ordered by the field timestamp and retain all additional fields that you would have add (with your [Logstash collector](https://docs.ovh.com/gb/en/logs-data-platform/logstash-input/){.external} for example). Since this format is fully compatible with JSON, you can use it right away in any other system.
+The data you retrieve in the archive is by default in [GELF format](http://docs.graylog.org/en/latest/pages/gelf.html){.external}. It is ordered by the field timestamp and retain all additional fields that you would have add (with your [Logstash collector](../logstash_input/guide.en-gb.md){.ref} for example). Since this format is fully compatible with JSON, you can use it right away in any other system.
 
 ```
  {"_facility":"gelf-rb","_id":11,"_monitoring":"cb1068c485e738655cfe10df5df3a9a185aa8e301b5c8d0747b3502e8fdcc157","_type":"direct","full_message":"monitoring message (11) at 2017-05-17 09:58:08 +0000","host":"shinken","level":1,"short_message":"monitoring msg (11)","timestamp":1.4950150886486998E9}
@@ -191,12 +193,12 @@ The data you retrieve in the archive is in [GELF format](http://docs.graylog.org
  {"_facility":"gelf-rb","_id":7,"_monitoring":"ff558f06ab12e03cd9c5ff23ba0f8bebbdf939d00e5b8c2faaf3f7a03be8a6e0","_type":"direct","full_message":"monitoring message (7) at 2017-05-17 10:18:09 +0000","host":"shinken","level":1,"short_message":"monitoring msg (7)","timestamp":1.495016289332681E9}
 ```
 
----
+You can also use a special field [X-OVH-TO-FREEZE](../field_naming_conventions/guide.en-gb.md){.ref} on your logs to craft an additional archive with only the content of this specific field at each line (along with the usual gelf archive). This file can be used for example to restore a common human readable log file.
+
 
 ## Go further
 
-- Getting Started: [Quick Start](https://docs.ovh.com/gb/en/logs-data-platform/quick-start/){.external}
-- Documentation: [Guides](https://docs.ovh.com/gb/en/logs-data-platform/){.external}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms-lab){.external}
-- Mailing List: [paas.logs-subscribe@ml.ovh.net](mailto:paas.logs-subscribe@ml.ovh.net){.external}
+- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
+- Documentation: [Guides](../product.en-gb.md){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
