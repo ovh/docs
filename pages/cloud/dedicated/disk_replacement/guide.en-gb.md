@@ -161,9 +161,9 @@ As a reminder, it’s important to include the serial numbers of all the disks. 
 > This replacement type is only possible for [FS-48T](https://www.ovh.co.uk/dedicated_servers/storage/1901fs03.xml){.external}, [STOR-72T](https://www.ovh.co.uk/dedicated_servers/storage/1801fs09.xml){.external}, [FS-MAX](https://www.ovh.co.uk/dedicated_servers/storage/1801fs05.xml){.external}, [mHG](https://www.ovh.co.uk/dedicated_servers/hg/1801mhg03.xml){.external}(2019 range only), [HG](https://www.ovh.co.uk/dedicated_servers/hg/1801hg03.xml){.external} and [BHG](https://www.ovh.co.uk/dedicated_servers/hg/1801bhg03.xml){.external} 
 > 
 
-If you are hot-swapping a disk on a server with a HardRaid card you can refer to our [Hotswap - Hardware RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external} guide. 
+If you are hot-swapping a disk on a server with a HardRaid card you can refer to our [Hot Swap - Hardware RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external} guide. 
 
-While if you are hot-swapping a disk using software RAID (with a LSI card) please refer to our [Hot Swap - Raid Soft](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/){.external} guide 
+While if you are hot-swapping a disk using software RAID (with a LSI card) please refer to our [Hot Swap - Software RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/){.external} guide 
 
 
 > [!primary]
