@@ -5,7 +5,7 @@ excerpt: 'This guide explains how to add failover IPs to your configuration'
 section: 'Network Management'
 ---
 
-**Last updated 3nd April 2019**
+**Last updated 4th April 2019**
 
 ## Objective
 
@@ -47,14 +47,14 @@ You then need to add a secondary interface:
 ```bash
 auto eth0:0
 iface eth0:0 inet static
-address IP_FAILOVER
+address FAILOVER_IP
 netmask 255.255.255.255
 ```
 
 To ensure that the secondary interface is enabled or disabled whenever the `eth0` interface is enabled or disabled, you need to add the following line to the eth0 configuration:
 
 ```bash
-post-up /sbin/ifconfig eth0:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER
+post-up /sbin/ifconfig eth0:0 FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
@@ -70,12 +70,12 @@ gateway xxx.xxx.xxx.254
 
 auto eth0:0
 iface eth0:0 inet static
-address IP_FAILOVER1
+address FAILOVER_IP1
 netmask 255.255.255.255
 
 auto eth0:1
 iface eth0:1 inet static
-address IP_FAILOVER2
+address FAILOVER_IP2
 netmask 255.255.255.255
 ```
 Or like this:
@@ -88,11 +88,11 @@ broadcast xxx.xxx.xxx.255
 gateway xxx.xxx.xxx.254
 
 # IPFO 1
-post-up /sbin/ifconfig eth0:0 IP_FAILOVER1 netmask 255.255.255.255 broadcast IP_FAILOVER1
+post-up /sbin/ifconfig eth0:0 FAILOVER_IP1 netmask 255.255.255.255 broadcast FAILOVER_IP1
 pre-down /sbin/ifconfig eth0:0 down
 
 # IPFO 2
-post-up /sbin/ifconfig eth0:1 IP_FAILOVER2 netmask 255.255.255.255 broadcast IP_FAILOVER2
+post-up /sbin/ifconfig eth0:1 FAILOVER_IP2 netmask 255.255.255.255 broadcast FAILOVER_IP2
 pre-down /sbin/ifconfig eth0:1 down
 ```
 
@@ -105,7 +105,7 @@ You now need to restart your interface:
 ```
 
 
-### Debian 9+, Ubuntu 17+, Fedora 26+ and Arch Linux
+### Debian 9+, Ubuntu 17.04, Fedora 26+ and Arch Linux
 
 On these distributions, the naming of interfaces as eth0, eth1 (and so on) is abolished. We will therefore use `systemd-network` more generally.
 
@@ -126,7 +126,7 @@ editor /etc/systemd/network/50-default.network
 ```
 ```sh
 [Address]
-Address=IP_FAILOVER/32
+Address=FAILOVER_IP/32
 Label=failover1 # optional
 ```
 
@@ -138,6 +138,55 @@ You now need to restart your interface:
 
 ```sh
 systemctl restart systemd-networkd
+```
+### Ubuntu 17.10 and following
+
+Each failover IP address will need its own line in the configuration file. The configuration file is called 50-cloud-init.yaml and is located in /etc/netplan.
+
+
+#### Step 1: Determine the interface
+
+```sh
+ifconfig
+```
+Note the interface name and its MAC address
+
+
+#### Step 2: Create the configuration file
+
+Connect to your server via SSH and run the following command:
+
+```sh
+editor /etc/netplan/50-cloud-init.yaml
+```
+
+Next, edit the file with the content below, replacing `INTERFACE_NAME` `MAC_ADDRESS` and `FAILOVER_IP`:
+
+```sh
+network:
+    version: 2
+    ethernets:
+        INTERFACE_NAME:
+            dhcp4: true
+            match:
+                macaddress: MAC_ADDRESS
+            set-name: INTERFACE_NAME
+            addresses:
+            - FAILOVER_IP/32
+```
+
+Save and close the file. You can test the configuration with the following command:
+
+```sh
+netplan try
+```
+
+#### Step 3: Apply the change
+
+Next, run the following commands to apply the configuration:
+
+```sh
+netplan apply
 ```
 
 
@@ -165,9 +214,9 @@ First, replace the name of the `device`, then replace the existing IP with the f
 DEVICE="eth0:0"
 ONBOOT="yes"
 BOOTPROTO="none" # For CentOS use "static"
-IPADDR="IP_FAILOVER"
+IPADDR="FAILOVER_IP"
 NETMASK="255.255.255.255"
-BROADCAST="IP_FAILOVER"
+BROADCAST="FAILOVER_IP"
 ```
 
 #### Step 3: Start the alias interface
@@ -207,7 +256,7 @@ editor /etc/conf.d/net
 You therefore need to add the following:
 
 ```bash
-config_eth0=( "SERVER_IP netmask 255.255.255.0" "IP_FAILOVER netmask 255.255.255.255 brd IP_FAILOVER" )
+config_eth0=( "SERVER_IP netmask 255.255.255.0" "FAILOVER_IP netmask 255.255.255.255 brd FAILOVER_IP" )
 ```
 
 The `/etc/conf.d/net` file must contain the following:
@@ -219,7 +268,7 @@ The `/etc/conf.d/net` file must contain the following:
 # please review /etc/conf.d/net.example and save your configuration
 # in /etc/conf.d/net (this file :]!).
 config_eth0=( "SERVER_IP netmask 255.255.255.0"
-"IP_FAILOVER netmask 255.255.255.255 brd IP_FAILOVER" )
+"FAILOVER_IP netmask 255.255.255.255 brd FAILOVER_IP" )
 routes_eth0=( "default gw SERVER_IP.254" )
 ```
 
@@ -255,7 +304,7 @@ editor /etc/sysconfig/network/ifcfg-ens32
 Then add the following:
 
 ```bash
-IPADDR_1=IP_FAILOVER
+IPADDR_1=FAILOVER_IP
 NETMASK_1=255.255.255.255
 LABEL_1=ens32:0
 ```
@@ -283,12 +332,12 @@ editor /etc/ips
 Then add the failover IP to the file:
 
 ```bash
-IP_FAILOVER:255.255.255.255:IP_FAILOVER
+FAILOVER_IP:255.255.255.255:FAILOVER_IP
 ```
 Next, add the IP in `/etc/ipaddrpool``:
 
 ```bash
-IP_FAILOVER
+FAILOVER_IP
 ```
 
 #### Step 3: Restart the interface
@@ -436,9 +485,9 @@ Edit the /etc/rc.conf file:
 editor /etc/rc.conf
 ```
 
-Then add this line at the end of the file: `ifconfig_INTERFACE_alias0="inet IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER"`.
+Then add this line at the end of the file: `ifconfig_INTERFACE_alias0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"`.
 
-Replace **INTERFACE** and **IP_FAILOVER** with the name of your interface (identified in the first step) and your failover IP, respectively. Here is an example:
+Replace **INTERFACE** and **FAILOVER_IP** with the name of your interface (identified in the first step) and your failover IP, respectively. Here is an example:
 
 
 ```bash
@@ -479,24 +528,16 @@ In our example, the name of the interface is therefore **e1000g0**.
 
 #### Step 2: Create the config file
 
-Next, make a copy of the source file, so that you can use it as a template:
-
-```sh
-cp /etc/hostname.e1000g0 /etc/hostname.e1000g0:1
-```
-
-#### Step 3: Edit the config file
-
 ```sh
 editor /etc/hostname.e1000g0:1
 ```
-In this file, enter the following: **IP_FAILOVER/32 up**, where **IP_FAILOVER** is your failover IP. For example:
+In this file, enter the following: **FAILOVER_IP/32 up**, where **FAILOVER_IP** is your failover IP. For example:
 
 ```bash
 188.165.171.40/32 up
 ```
 
-#### Step 4: Restart the interface
+#### Step 3: Restart the interface
 
 You now need to restart your interface:
 
