@@ -9,7 +9,7 @@ section: Stockage
 
 ## Objectif
 
-Dans le cadre des offres de [serveurs dédiés](https://www.ovh.com/fr/serveurs_dedies/){.external}, un espace de sauvegarde de 500 Go par serveur est mis à disposition et vous permet de [sécuriser vos données](https://docs.ovh.com/fr/dedicated/securiser-un-serveur-dedie/){.external}.
+Dans le cadre des offres de [serveurs dédiés](https://www.ovh.com/fr/serveurs_dedies/){.external}, un espace de sauvegarde de 500 Go par serveur est mis à disposition et vous permet de [sécuriser vos données](https://docs.ovh.com/fr/dedicated/securiser-un-serveur-dedie/){.external}.
 
 **Ce guide vous explique comment activer et utiliser cet espace de sauvegarde**.
 
@@ -172,7 +172,7 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 
 > [!primary]
 >
-> Pour utiliser le protocole FTPS, vous devez changer le nom de votre Backup Storage. Par exemple, si son nom est « ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net », vous devrez le changer sous la forme « ftpback-rbxX-YYY.mybackup.ovh.net ». Il vous faudra également ajouter l’argument `-ssl` à la commande ci-dessous.
+> Pour utiliser le protocole FTPS, vous devez changer le nom de votre Backup Storage. Par exemple, si son nom est « ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net », vous devrez le changer sous la forme « ftpback-rbxX-YYY.mybackup.ovh.net ». Il vous faudra également ajouter l’argument `-ssl` à la commande ci-dessous.
 >
 
 Pour sauvegarder un seul fichier, vous pouvez utiliser la commande suivante :
@@ -224,7 +224,7 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 
 > [!primary]
 >
-> lftp utilise FTP+SSL/TLS par défaut. Vous devez donc changer le nom de votre Backup Storage. Par exemple, si celui-ci est « ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net », vous devrez le changer sous la forme « ftpback-rbxX-YYY.mybackup.ovh.net ».
+> lftp utilise FTP+SSL/TLS par défaut. Vous devez donc changer le nom de votre Backup Storage. Par exemple, si celui-ci est « ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net », vous devrez le changer sous la forme « ftpback-rbxX-YYY.mybackup.ovh.net ».
 >
 
 Pour sauvegarder un seul fichier, vous pouvez utiliser la commande suivante :
@@ -256,7 +256,7 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 * **FolderLocation** : le chemin d'accès au répertoire local cible dans lequel vous souhaitez enregistrer le fichier.
 * **ArchiveName** : le nom du répertoire que vous voulez sauvegarder.
 
-Pour télécharger un fichier d'archive à partir de votre espace de stockage de sauvegarde, vous pouvez utiliser la commande suivante :
+Pour télécharger un fichier d'archive à partir de votre espace de stockage de sauvegarde, vous pouvez utiliser la commande suivante :
 
 ```sh
 cd /LocalFolder
