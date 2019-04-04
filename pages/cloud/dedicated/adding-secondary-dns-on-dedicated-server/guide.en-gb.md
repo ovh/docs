@@ -1,5 +1,5 @@
 ---
-title: 'Creating a secondary DNS on a Dedicated Server'
+title: 'Adding a domain to secondary DNS on a Dedicated Server'
 slug: secondary-dns
 excerpt: 'This guide will show you how to create a secondary DNS and add it to your Dedicated Server'
 section: 'Network Management'
@@ -15,7 +15,7 @@ If you want to use your [Dedicated Server](https://www.ovh.co.uk/dedicated_serve
 
 ## Requirements
 
-* a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external} with Windows installed
+* a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external} with any OS installed
 * a [domain](https://www.ovh.co.uk/domains/){.external} in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 * access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
