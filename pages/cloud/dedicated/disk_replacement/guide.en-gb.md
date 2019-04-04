@@ -122,7 +122,7 @@ You will need to specify the RAID number (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAI
 
 #### Servers with NVMe disks
 
-If you have an NVMe disk, you will need to put the server into [rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}, on which the **nvme-cli** tool is installed by default.
+If you have an NVMe disk, you will need to put the server into [rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external}, on which the **nvme-cli** tool is installed by default.
 
 You will then need to use the `nvme list` command, and retrieve your disks’ serial numbers:
 
@@ -133,6 +133,10 @@ root@rescue:~# nvme list
 >>> /dev/nvme0n1   CVPF636600YC450RGN  INTEL SSDPE2MX450G7   1         450.10  GB / 450.10  GB   512  B +  0 B MDV10253
 >>> /dev/nvme1n1   CVPF6333002Y450RGN  INTEL SSDPE2MX450G7   1         450.10  GB / 450.10  GB   512  B +  0 B MDV10253
 ```
+
+#### Check S.M.A.R.T logs in rescue mode
+You can check S.M.A.R.T logs in web panel of rescue mode.To check how you can use rescue mode please follow [this guide](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external}
+
 
 
 ### Requesting a disk replacement
@@ -154,41 +158,12 @@ As a reminder, it’s important to include the serial numbers of all the disks. 
 
 > [!primary]
 >
-> This replacement type is only possible for [FS-MAX](https://www.ovh.co.uk/dedicated_servers/fs/1801fs05.xml){.external} and [Big-HG](https://www.ovh.co.uk/dedicated_servers/hg/1801bhg01.xml){.external} servers that have a RAID card.
+> This replacement type is only possible for [FS-48T](https://www.ovh.co.uk/dedicated_servers/storage/1901fs03.xml){.external}, [STOR-72T](https://www.ovh.co.uk/dedicated_servers/storage/1801fs09.xml){.external}, [FS-MAX](https://www.ovh.co.uk/dedicated_servers/storage/1801fs05.xml){.external}, [mHG](https://www.ovh.co.uk/dedicated_servers/hg/1801mhg03.xml){.external}(2019 range only), [HG](https://www.ovh.co.uk/dedicated_servers/hg/1801hg03.xml){.external} and [BHG](https://www.ovh.co.uk/dedicated_servers/hg/1801bhg03.xml){.external} 
 > 
 
-If you are hot-swapping a disk on a server with a megaRAID card, please make the LED light flash for the disk that needs to be replaced, once the intervention has been scheduled. This will make the process easier for the teams who are working on the replacement operation.
+If you are hot-swapping a disk on a server with a HardRaid card you can refer to our [Hotswap - Hardware RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external} guide. 
 
-If your server uses a megaRAID card, please use the following commands:
-
-- To make the LED light flash:
-
-```sh
-MegaCli -PdLocate -start -physdrv[E0:S0] -a0
-```
-
-- To stop the LED light from flashing:
-
-```sh
-MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
-```
-
-> [!primary]
->
-> Equivalent via the `storcli` command:
->
-> - To make the LED light flash:
->
-> ```sh
-> storcli /c0/e0/s0 start locate
-> ```
->
-> - To stop the LED light from flashing:
->
-> ```sh
-> storcli /c0/e0/s0 stop locate
-> ```
->
+While if you are hot-swapping a disk using software RAID (with a LSI card) please refer to our [Hot Swap - Raid Soft](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/){.external} guide 
 
 
 > [!primary]
