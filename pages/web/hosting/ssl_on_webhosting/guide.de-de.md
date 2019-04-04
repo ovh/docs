@@ -24,9 +24,9 @@ Sie haben bei Ihrem Webhosting die Möglichkeit, ein SSL-Zertifikat einzurichten
 
 Was die Verwaltung des SSL-Zertifikats auf Ihrem OVH Webhosting betrifft, gibt es verschiedene mögliche Operationen. Bitte wählen Sie aus den in dieser Anleitung behandelten Themen das für Sie passende aus:
 
-- [SSL-Zertifikat auf dem Hosting aktivieren](http://docs.ovh/de-de/web/hosting/ssl-zertifikate-auf-webhostings-verwalten/#ssl-zertifikat-auf-dem-hosting-aktivieren){.external}: Aktivieren Sie direkt über OVH ein kostenloses oder zahlungspflichtiges SSL-Zertifikat auf Ihrem Webhosting oder importieren Sie Ihr eigenes SSL-Zertifikat eines anderen Anbieters.
+- [SSL-Zertifikat auf dem Hosting aktivieren](http://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/#ssl-zertifikat-auf-dem-hosting-aktivieren){.external}: Aktivieren Sie direkt über OVH ein kostenloses oder zahlungspflichtiges SSL-Zertifikat auf Ihrem Webhosting oder importieren Sie Ihr eigenes SSL-Zertifikat eines anderen Anbieters.
 
-- [SSL für eine Multisite aktivieren](http://docs.ovh/de-de/web/hosting/ssl-zertifikate-auf-webhostings-verwalten/#ssl-fur-eine-multisite-aktivieren){.external}: Wenn Ihr Angebot bzw. Ihr SSL-Zertifikat diese Option beinhaltet, können Sie mehrere Multisites mit einer sicheren SSL-Verbindung ausstatten.
+- [SSL für eine Multisite aktivieren](http://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/#ssl-fur-eine-multisite-aktivieren){.external}: Wenn Ihr Angebot bzw. Ihr SSL-Zertifikat diese Option beinhaltet, können Sie mehrere Multisites mit einer sicheren SSL-Verbindung ausstatten.
 
 - [SSL-Zertifikat für das Hosting erneuern](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/#ssl-zertifikat-fur-das-hosting-erneuern){.external}: Erneuern Sie das SSL-Zertifikat für Ihr Webhosting, wenn Sie SSL für eine oder mehrere Multisites aktiviert haben. 
 
