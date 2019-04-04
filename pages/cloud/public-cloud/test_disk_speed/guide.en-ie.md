@@ -1,63 +1,60 @@
 ---
-title: Test disk speed
-excerpt: Test disk speed
+title: 'Test disk speed'
 slug: test_disk_speed
-legacy_guide_number: g1956
+excerpt: 'This guide will show you how to test the number of input/output operations per second (IOPS) that your disks are able to achieve, whether for instances or additional disks.'
+section: Storage
 ---
 
+**Last updated 4th April 2019**
 
-## 
+## Objective
+
 You'll probably be called upon to check the speed of your disks when you carry out your tests. Whether you want to compare the performance of different disks or just check if they are satisfactory.
 
-This guide walks you through the process of testing the number of input/output operations per second (IOPS) that your disks are able to achieve, whether for instances, or additional disks.
+**This guide will show you how to test the number of input/output operations per second (IOPS) that your disks are able to achieve, whether for instances or additional disks.**
 
+## Requirements
 
-## Prerequisites
+- a [Public Cloud Instance](https://www.ovh.ie/public-cloud/instances/){.external} in your OVH account
+- administrative (root) access to your instance via SSH
 
-- An instance
-- An additional disk
+## Instructions
 
+### Install the test command
 
+The command that you need to test your disk speed is called `fio`, and is not installed on your server by default.
 
-
-## Installation
-The command that you need is not available by default, you will need to install it first:
-
+To install `fio`, establish an SSH connection to your Instance and then run the following command:
 
 ```
 root@server:~$ apt-get install fio
 ```
 
+### Test your disk speed
 
-
-
-## Test
-Command for testing your disks:
-
+To test your disk speed, run the following command:
 
 ```
 root@serveur:~$ fio 
 --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
 ```
 
+> [!primary]
+>
+Please note that you will need to modify the `--numjobs` argument to reflect the number of CPUs that your instance has.
+>
+You can retrieve a list of arguments and their functions directly from the [fio guide](https://github.com/axboe/fio/blob/master/HOWTO).
+>
 
-Please note
-You have to adapt the argument 
---numjobs depending on the number of processing units (CPU) that your instance has.
-In addition, it is possible to retrieve a list of arguments and their functions directly from the [fio guide](https://github.com/axboe/fio/blob/master/HOWTO).
-To test the performance of an additional disk, you have to run the following command to mount the disk. 
-
+To test the speed of an additional disk, you will need to mount the disk with the following command: 
 
 ```
 root@serveur:~$ cd /mnt/disk
 ```
 
+### Analyse the data
 
-
-
-## Analysis
-Once you have run this command you will get a result similar to this: 
-
+Once the test is finished, you will get a result similar to the following:
 
 ```
 fio-2.1.11
@@ -105,18 +102,19 @@ vda: ios=0/300294, merge=0/1455, ticks=0/7431952, in_queue=7433124,
 util=99.05%
 ```
 
-
-We are interested in line six of the results which contains the IOPS:
-
+The line we're interested in is line six, which contains the IOPS:
 
 ```
 write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 ```
 
+We can see that disk performance is approximately 891 IOPS.
 
-We can see that disk performance is approximately 891 iops.
 
+## Go further
 
-## 
-[Go back to the index of Cloud guides]({legacy}1785)
+[Create and configure an additional disk on an Instance](https://docs.ovh.com/ie/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/){.external}
 
+[Add storage space](https://docs.ovh.com/ie/en/public-cloud/add_storage_space/){.external}
+
+Join our community of users on https://community.ovh.com/en/.
