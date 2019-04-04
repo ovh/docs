@@ -1,64 +1,83 @@
 ---
-title: 'Servizio Email: configura il tuo server MX con zona DNS OVH'
-excerpt: 'Servizio Email: configura il tuo server MX con zona DNS OVH'
-slug: servizio_email_configura_il_tuo_server_mx_con_zona_dns_ovh
+title: 'Aggiungere un record MX alla configurazione di un dominio'
+excerpt: 'Come creare un nuovo record MX per il tuo dominio OVH'
+slug: aggiungere-record-mx-configurazione-dominio
 legacy_guide_number: g2012
+section: 'DNS e zona DNS'
+order: 4
 ---
 
+**Ultimo aggiornamento: 02/04/2019**
 
-## Utilizzi un servizio email OVH
-Se hai attivato un servizio email OVH, imposta questi server MX nella tua zona DNS:
-Server di posta [Antivirus + Antispam]:
+## Obiettivo
 
-|Tipo di record|Priorità|Destinazione|
-|MX|1|mx1.mail.ovh.net.|
-|MX|5|mx2.mail.ovh.net.|
-|MX|10|mx3.mail.ovh.net.|
+Il record MX è un elemento che permette di associare un dominio e un server di posta, consentendo ai server che inviano email al tuo account di sapere esattamente dove consegnare i messaggi. Se il provider utilizzato dispone di più server di posta, è necessario creare più record MX. 
 
+**Questa guida ti mostra come aggiungere un record MX alla configurazione di un dominio OVH.**
 
+## Prerequisiti
 
-## Attenzione:
-Al momento per i servizi email attivati prima del 23/05/2016, i vecchi server MX sono ancora funzionanti, ma ti consigliamo di aggiornarli e utilizzare i server indicati nella tabella qui sopra.
+- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Il dominio deve utilizzare i server DNS OVH
 
+> [!warning]
+>
+> - Se il dominio non utilizza i server DNS OVH, la modifica dei record MX deve essere eseguita dall’interfaccia del provider che ne gestisce la configurazione.
+>
+> - Per i domini registrati in OVH è invece possibile verificare la configurazione direttamente dallo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, cliccando sulla scheda `Server DNS`{.action}.
+>
 
-## Non utilizzi un servizio email OVH
-Se non hai attivato un'offerta email OVH, non puoi ricevere messaggi perché non possiedi una casella di posta.
-In questo caso, però, è possibile utilizzare un Alias.
+## Procedura
 
-Per creare un alias alias@tuodominio.com che reindirizza verso l'account esistente tuoindirizzo@tuoAltrodominio.com, utilizza questa configurazione:
-Server di posta [Alias]:
-|Tipo di record|Priorità|Destinazione|
-|MX|1|redirect.ovh.net|
+### Step 1: conoscere alcune nozioni di base del record MX
 
+Un record MX associa il dominio al server di posta del tuo provider, ad esempio OVH. Quando ti viene inviata un’email, il server che esegue l’invio sa verso quale server inoltrare il messaggio proprio grazie al record MX. 
 
-Ti ricordiamo che puoi utilizzare gli Alias (reindirizzamenti) anche se hai attivato un'offerta email. Per farlo, consulta questa guida: []({legacy}2001).
+Per uno stesso dominio è possibile configurare più record MX. In questo caso, per ciascuno è necessario definire una priorità  in modo che i server che inviano le email sappiano a quale macchina recapitare la posta per prima.  Tuttavia, è possibile aggiungere soltanto record MX che appartengono allo stesso provider. 
 
+**Modificare i record MX di un dominio è un’operazione delicata**: un’azione errata potrebbe rendere impossibile la ricezione di nuovi messaggi sull’account di posta.  Ti consigliamo quindi di prestare la massima attenzione quando effettui questa operazione.
 
-## Utilizzi un servizio email esterno a OVH
+### Step 2: conoscere la configurazione MX di OVH
 
-- Hai un hostname per i tuoi server MX:
+Qui sotto è disponibile la configurazione MX di OVH da utilizzare con i nostri servizi di posta MX Plan (da solo o incluso in un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external}, [Email Pro](https://www.ovh.it/emails/email-pro/){.external} e [Exchange](https://www.ovh.it/emails/){.external}. I nostri server di posta dispongono anche di un Antispam e un Antivirus. 
 
+|Dominio|TTL|Record|Priorità|Destinazione|
+|---|---|---|---|---|
+|Lasciare il campo vuoto|3600|MX|1|mx0.mail.ovh.net|
+|Lasciare il campo vuoto|3600|MX|5|mx1.mail.ovh.net|
+|Lasciare il campo vuoto|3600|MX|50|mx2.mail.ovh.net|
+|Lasciare il campo vuoto|3600|MX|100|mx3.mail.ovh.net|
 
-Se il tuo dominio utilizza una zona DNS OVH, ma la tua soluzione di posta non è in OVH o su un server dedicato, puoi configurare la tua zona DNS OVH utilizzando i server di posta esterni invece di quelli OVH:
-Server di posta:
-|Tipo di record|Priorità|Destinazione|
-|MX|1|il tuo server di posta|
-|MX|5|l'altro tuo server di posta|
+A questo punto è necessario utilizzare i diversi record MX nella configurazione DNS del tuo dominio. Per sapere come effettuare questa operazione, prosegui con lo step successivo.
 
+### Step 3: modifica la configurazione di un record MX OVH
 
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Nel menu a sinistra, seleziona il tuo dominio nella sezione `Domini`{.action} e clicca sulla scheda `Zona DNS`{.action}.
 
-- Non hai un hostname ma uno o più IP per i tuoi server MX:
+Compare una tabella che mostra la configurazione OVH del tuo dominio: ogni riga corrisponde a un diverso record DNS. Per prima cosa, utilizza i filtri per verificare se esistono record MX nella configurazione DNS OVH del tuo dominio.
 
+![dnsmxrecord](images/mx-records-dns-zone.png){.thumbnail}
 
-Se il tuo dominio utilizza una zona DNS OVH ma il tuo servizio di posta è esterno (ad esempio su un server locale), puoi configurare la tua zona DNS OVH per associare questo IP a un hostname, perché un record MX non può puntare verso un IP:
-Server di posta:
-|Sottodominio|Tipo di record|Priorità|Destinazione|
-|mail2|A||IP del server di posta|
-||MX|1|mail2.tuo_dominio|
+Nel caso in cui il record MX sia presente e voglia modificarlo, clicca sui tre puntini a destra e clicca su `Elimina record`{.action}. Assicurati di non aver eliminato tutti i record MX prima di aggiungerne di nuovi.
 
+Per eseguire questa operazione, clicca sul pulsante `Aggiungi un record`{.action} e seleziona `MX`{.action}. In base al servizio email scelto, inserisci le informazioni richieste: 
 
+- **se utilizzi una soluzione di posta OVH**, consulta il paragrafo precedente di questa guida: [Step 2: conoscere la configurazione MX di OVH](https://docs.ovh.it/domains/aggiungere-record-mx-configurazione-dominio/#step-2-conoscere-la-configurazione-mx-di-ovh){.external}
 
+- **se utilizzi un’altra soluzione di posta**, segui le indicazioni fornite dal provider del tuo servizio di posta.
 
-## Tempo di propagazione
-Attenzione: la propagazione delle modifiche della tua zona DNS può richiedere fino a 24 ore.
+Una volta inserite le informazioni, prosegui con gli step successivi e clicca su `Conferma`{.action}.
 
+> [!primary]
+>
+> La propagazione delle modifiche potrebbe richiedere da 4 a 24 ore.
+>
+
+## Per saperne di più
+
+[Modificare i server DNS di un dominio OVH](https://docs.ovh.com/it/domains/web_hosting_gestisci_il_tuo_server_dns/){.external}
+
+[Modificare una zona DNS OVH](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}
+
+Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
