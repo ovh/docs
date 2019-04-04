@@ -35,7 +35,7 @@ You will now receive an activation email, and your backup storage will be config
 
 ### Set up access control
 
-Access to your Backup storage is restricted by IP address using an access control list (ACL). By default, all IPs in your account have FTP/FTPS access to the backup storage. The other protocols (NFS and CIFS) are not authorised by default. To authorise them, you will need to create an ACL.
+Access to your Backup storage is restricted by IP address using an access control list (ACL). By default, all IPs in your account have FTP/FTPS access to the backup storage, you just need to whitelist them. They The other protocols (NFS and CIFS) are not authorised by default. To authorise them, you will need to create an ACL.
 
 #### Add backup access
 
