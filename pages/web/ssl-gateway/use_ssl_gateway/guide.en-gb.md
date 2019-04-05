@@ -16,29 +16,27 @@ section;: Getting Started
 We will now explain how to use your SSL Gateway service
 
 ### Configuring the service
-- Log in to [your control panel](https://www.ovh.com/manager){.external}.
-- Then click on the `Sunrise`{.action} section.
+Log in to [your control panel](https://www.ovh.com/manager){.external}.
+Then click on the `Sunrise`{.action} section.
 
 ![sunrise button](images/4.PNG){.thumbnail}
 
-- Then click on `SSL Gateway`{.action} to view the service.
+Then click on `SSL Gateway`{.action} to view the service.
 
 ![ssl gateway button](images/5.PNG){.thumbnail}
 
-- Select the solution that you wish to configure.
+Select the solution that you wish to configure.
 
 ![commercial page](images/6.PNG){.thumbnail}
 
-- You will then land on the page for managing your solution.
+You will then land on the page for managing your solution.
 
 ![overall config](images/7.PNG){.thumbnail}
 
-- Information description.
 
-![info section](images/8.PNG){.thumbnail}
-
-|IPv4|IPv4 address of the OVH gateway you would like to point to|
+|Option|Description|
 |---|---|
+|IPv4|IPv4 address of the OVH gateway you would like to point to|
 |IPv6|IPv6 address of the OVH gateway you would like to point to|
 |Zone|Geographic zone of your SSL Gateway IP address|
 |Outgoing IPv4|OVH IPv4 addresses that will connect to your server|
@@ -48,13 +46,7 @@ We will now explain how to use your SSL Gateway service
 |Expiry date|Expiry date for your SSL Gateway service|
 |Cancel|Cancellation request button for your SSL Gateway service|
 |Upgrade to Advanced solution|Allows you to upgrade from the Free solution to the Advanced solution|
-
-- Configuration description.
-
-![conf section](images/9.PNG){.thumbnail}
-
 |Configuration|Button that allows you to edit the configuration of your SSL Gateway service|
-|---|---|
 |HSTS [[1]](#id5){.note-ref #id1}|Requires the browser to make all future connections to your website in HTTPS|
 |Reverse|Allows you to put a host name on your SSL Gateway IP address|
 |HTTPS Redirection [[2]](#id6){.note-ref #id2}|Redirects the visitor to the HTTPS version of your site when they access it in HTTP|
@@ -93,9 +85,7 @@ The **"Domains"** tab allows you to add and delete your domains and subdomains c
 
 Click `+ Domain`{.action} to add a domain or subdomain.
 
-- If you are using a **"Free"** solution
-
-You will only be able to have one **domain**, as well as its **“www” subdomain** and a second **subdomain of your choice**:
+If you are using a **"Free"** solution you will only be able to have one **domain**, as well as its **“www” subdomain** and a second **subdomain of your choice**:
 
 |Name|URL|
 |---|---|
@@ -112,9 +102,7 @@ Select your choice, then click `Add`{.action} to validate.
 
 ![add free domain](images/11.PNG){.thumbnail}
 
-- If you are using an **"Advanced"** solution
-
-You will be able to add any active domain or subdomain.
+If you are using an **"Advanced"** solution you will be able to add any active domain or subdomain.
 
 > [!primary]
 > 
@@ -133,7 +121,7 @@ Select your choice, then click `Add`{.action} to validate.
 
 The **"Servers"** tab allows you to manage the IP address(es) of the server(s) hosting your website.
 
-- Click `+ Server`{.action} to add an IP address and a port corresponding to your server hosting your website.
+Click `+ Server`{.action} to add an IP address and a port corresponding to your server hosting your website.
 
 ![servers tab](images/13.PNG){.thumbnail}
 
@@ -143,10 +131,10 @@ The **"Servers"** tab allows you to manage the IP address(es) of the server(s) h
 
 > [!primary]
 >
-> If you list several IP/PORT addresses, your SSL Gateway will distribute the traffic load with the Round Robin system. For more information on the Round Robin DNS.
+> If you list several IP/PORT addresses, your SSL Gateway will distribute the traffic load with the Round Robin DNS system.
 >
 
-- Select your choice, then click `Add`{.action} to validate.
+Select your choice, then click `Add`{.action} to validate.
 
 ![add advanced IP/PORT (internal)](images/15.PNG){.thumbnail}
 
@@ -213,9 +201,9 @@ On the date of this guide being written, these addresses are **213.32.4.0/24** a
 If your server manages it, it can be configured to recognise this information automatically instead of the SSL Gateway IP.
 
 #### Apache
-- Create the file below:
+Create the file below:
 /etc/apache2/conf-available/remoteip.conf
-- Insert the following lines:
+Insert the following lines:
 
 ```bash
 # Trust X-Forwarded-For headers from the SSL Gateway
@@ -226,7 +214,7 @@ RemoteIPInternalProxy 213.32.4.0/24
 
 You can now replace the variables %h with %a in the LogFormat directives of the Apache configuration.
 
-- Once the configuration is ready, you will just need to enable it with the following commands:
+Once the configuration is ready, you will just need to enable it with the following commands:
 
 ```bash
 # Enable the module then the configuration
@@ -240,9 +228,9 @@ service apache2 restart
 You can find more information regarding this Apache feature in the [official documentation](https://httpd.apache.org/docs/current/en/mod/mod_remoteip.html){.external}.
 
 #### Nginx
-- Open the configuration file that corresponds to the website to be secured. It is usually located in:
+Open the configuration file that corresponds to the website to be secured. It is usually located in:
 /etc/nginx/sites-enabled
-- Insert the following lines into the server section:
+Insert the following lines into the server section:
 
 ```bash
 # Trust X-Forwarded-For headers from the SSL Gateway
