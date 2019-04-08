@@ -72,7 +72,7 @@ To revoke authorisation for an IP block, click the trash can icon that appears a
 
 And then click to confirm.
 
-![Modifying access](images/services-backup-storage-access-confirm.png){.thumbnail}
+![Modifying access](images/Confirm_IP_Removal.png){.thumbnail}
 
 Access to the backup storage will now be revoked for that IP block.
 
