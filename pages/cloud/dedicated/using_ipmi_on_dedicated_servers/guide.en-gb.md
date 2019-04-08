@@ -67,7 +67,7 @@ If everything appears to be normal, as per our example, you may be experiencing 
 
 It will take several minutes for the IPMI to reboot.
 
-> [!warning]
+> [!Primary]
 >
 > The IPMI reboot process will not impact to the server functioning.
 >
