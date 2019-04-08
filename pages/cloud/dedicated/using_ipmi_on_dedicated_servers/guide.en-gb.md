@@ -69,7 +69,7 @@ It will take several minutes for the IPMI to reboot.
 
 > [!Primary]
 >
-> The IPMI reboot process will not impact to the server functioning.
+> It will not impact to the server functioning.
 >
 
 ## Go further
