@@ -68,7 +68,7 @@ To change the protocols for an authorised IP block, click the pencil icon for th
 
 To revoke authorisation for an IP block, click the trash can icon that appears at the end of the line.
 
-![Modifying access](images/modify_access.png){.thumbnail}
+![Modifying access](images/delete_access.png){.thumbnail}
 
 And then click to confirm.
 
