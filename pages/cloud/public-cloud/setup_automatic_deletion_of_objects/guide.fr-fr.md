@@ -1,18 +1,17 @@
 ---
-title: Configurer la suppression automatique d’objets
+title: 'Configurer la suppression automatique d’objets'
 slug: configurer-la-suppression-automatique-dobjets
 legacy_guide_number: 1950
-section: Object Storage
+section: 'Object Storage'
 ---
-
 
 ## Préambule
 Pour faciliter la gestion de votre Object Storage, il est possible que vous ayez besoin de décider de la durée de vie de certains de vos fichiers. Cela peut par exemple vous permettre de garder certaines sauvegardes pendant un laps de temps défini. Ce guide vous explique donc comment supprimer des fichiers de manière automatique après un certain délai, ou a une date en particulier.
 
 
 ### Prérequis
-- [Préparer l'environnement pour utiliser l'API OpenStack]({legacy}1851){.ref}
-- [Charger les variables d'environnement OpenStack]({legacy}1852){.ref}
+- Préparer l'environnement pour utiliser l'API OpenStack
+- Charger les variables d'environnement OpenStack
 
 
 ## Configuration de la suppression des objets

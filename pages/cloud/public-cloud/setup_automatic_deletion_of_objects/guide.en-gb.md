@@ -10,8 +10,8 @@ To help manage your Object Storage, it is possible to specify the life of some f
 
 
 ### Requirements
-- [Prepare the environment to use the OpenStack API ]({legacy}1851){.ref}
-- [Load OpenStack environment variables]({legacy}1852){.ref}
+- Prepare the environment to use the OpenStack API 
+- Load OpenStack environment variables
 
 
 ## Configuring Object Deletion
