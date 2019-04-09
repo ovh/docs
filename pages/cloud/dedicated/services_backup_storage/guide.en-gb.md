@@ -62,13 +62,13 @@ You will now be able to access your server's backup storage from the IP block yo
 
 To change the protocols for an authorised IP block, click the pencil icon for the IP block you want to modify, and then select/deselect the desired protocols. When you have finished, click the tick button to save your changes.
 
-![Modifying access](images/backup-storage-13-edited.png){.thumbnail}
+![Modifying access](images/modify_access.png){.thumbnail}
 
 #### Deleting Access
 
 To revoke authorisation for an IP block, click the trash can icon that appears at the end of the line.
 
-![Modifying access](images/backup-storage-14-edited.png){.thumbnail}
+![Modifying access](images/modify_access.png){.thumbnail}
 
 And then click to confirm.
 
