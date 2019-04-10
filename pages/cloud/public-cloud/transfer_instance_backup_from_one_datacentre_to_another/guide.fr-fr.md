@@ -127,4 +127,6 @@ Utilisez l'ID de sauvegarde comme image avec la commande suivante :
 
 ## Aller plus loin
 
+« [Transférer la sauvegarde d’un volume d’un datacentre a l’autre](https://docs.ovh.com/fr/public-cloud/transferer-la-sauvegarde-dun-volume-dun-datacentre-a-lautre/){.external}. »
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
