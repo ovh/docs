@@ -7,11 +7,11 @@ legacy_guide_number: g1962
 ---
 
 ## What is SSH and how do you use it?
-SSH is available on professional and performance hosting plans. (On old product offers SHH is available starting from the plan range).
+SSH is available on professional and performance hosting plans.
 
 PLEASE NOTE: On old offers, access is only possible with the primary FTP account. This means that additional FTP users will not have SSH access. 
 
-SSH lets you log on to your server and work with your files (as in FTP).
+SSH allows you log on to your server and work with your files (as in FTP).
 For more information on the SSH protocol, [click here](https://en.wikipedia.org/wiki/Secure_Shell).
 
 ## Prerequisites
@@ -93,7 +93,7 @@ For example if your "myScript.php" file is in the "WWW" folder, and you want to 
 
 ```
 php.ORIG.5_3 www/myScript.php
-ou
+or
 php.ORIG.5_3 /www/myScript.php
 ```
 
