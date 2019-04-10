@@ -23,13 +23,13 @@ For more information on the SSH protocol, [click here](https://en.wikipedia.org/
 ## Enable/Disable SSH for a user
 You can manage your SSH logins in your control panel. You just have to click on the name of your website in the left-hand column, then go to the "FTP - SSH" tab.
 
-![](images/img_3945.jpg){.thumbnail}
+![](images/sshguide_screen1.png){.thumbnail}
 
-You can disable the SSH connection for a user by clicking on the cogwheel to the right of your login and then "Modify".
+You can disable the SSH connection for a user by clicking on the button to the right of your login and then "Edit".
 
 This modification will take a few minutes.
 
-![](images/img_3946.jpg){.thumbnail}
+![](images/sshguide_screen2.png){.thumbnail}
 
 ## Command prompt
 Linux: KDE: Open the main menu (by default this will be at the bottom left of your screen), then in the search bar which appears, tap "konsole", then click on the first search result.
