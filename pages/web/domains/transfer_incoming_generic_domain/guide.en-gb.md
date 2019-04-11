@@ -99,7 +99,7 @@ Now that you have launched the transfer procedure, it will need to go through tw
 
 The two parties provide their validation through an OVH interface. A link to the interface is provided in the emails sent. 
 
-![domain](images/domaintransfer_gTLD_validation.png){.thumbnail}
+![domain](images/domaintransfer_gTLD_validationv2.png){.thumbnail}
 
 There are several possible outcomes to this stage, depending on the actions taken by the domain name holder and the administrator.
 
