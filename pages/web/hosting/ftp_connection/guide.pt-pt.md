@@ -17,7 +17,6 @@ Os planos de alojamento web da OVH dão-lhe acesso a um espaço de armazenamento
 ## Requisitos
 
 - Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
-
 - Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web`{.action}.
 
 ## Instruções
@@ -49,11 +48,11 @@ Graças a estas informações, terá a possibilidade de encontrar os elementos n
 |Informação|Descrição|
 |---|---|
 |Servidor FTP|Trata-se do endereço do servidor que permite aceder ao seu espaço de armazenamento. Utilize-o para aceder ao servidor através de um software FTP.<br><br> A porta clássica de acesso é a 21. Utilize a porta 22 para se ligar através do protocolo SFTP (caso este esteja ativo).|
-|Acesso SSH ao cluster|Poderá consultar os seguintes dados: <br>**\- o endereço do servidor**: começa depois de “ssh://” e acaba antes de “:”;<br> **\- a porta de ligação**: o número é referido depois de “:”. <br><br>Por exemplo: em ssh://`ssh.cluster023.hosting.ovh.net`:`22`/, “ssh.cluster023.hosting.ovh.net” será o endereço do servidor e “22” a porta de ligação.|
+|Acesso SSH ao cluster|Poderá consultar os seguintes dados: <br>**- o endereço do servidor**: começa depois de “ssh://” e acaba antes de “:”;<br> **- a porta de ligação**: o número é referido depois de “:”. <br><br>Por exemplo: em ssh://`ssh.cluster023.hosting.ovh.net`:`22`/, “ssh.cluster023.hosting.ovh.net” será o endereço do servidor e “22” a porta de ligação.|
 |Login FTP principal|Trata-se do nome de utilizador FTP principal criado no seu alojamento. Pode consultar todos os utilizadores FTP do seu alojamento na coluna “Login FTP” da tabela.|
 |Login SSH principal|Trata-se do nome de utilizador SSH principal criado no seu alojamento. Pode consultar todos os utilizadores SSH do seu alojamento na coluna “Login SSH” da tabela.|
 
-Se não souber qual é a palavra-passe de um utilizador FTP ou SSH, pode, em função do seu alojamento, utilizar o ícone em forma de lápis ou o ícone `...`{.action} e selecionar a opção `Alterar palavra-passe`{.action}. Se precisar de ajuda no processo, consulte o nosso manual "[Alterar a palavra-passe de um utilizador FTP](../modifier-mot-de-passe-utilisateur-ftp/)".
+Se não souber qual é a palavra-passe de um utilizador FTP ou SSH, pode, em função do seu alojamento, utilizar o ícone em forma de lápis ou o ícone `...`{.action} e selecionar a opção `Alterar palavra-passe`{.action}. Se precisar de ajuda no processo, consulte o nosso manual "[Alterar a palavra-passe de um utilizador FTP](../alterar-palavra-passe-utilizador-ftp/)".
 
 ![ftpconnect](images/connect-ftp-step2.png){.thumbnail}
 
@@ -65,9 +64,9 @@ A ligação ao espaço de armazenamento pode ser realizada de várias formas. Co
 
 [1. Ligação através de FTP Explorer](./#1-ligacao-atraves-de-ftp-explorer): permite-lhe aceder ao espaço de armazenamento a partir do navegador.
 
-[2. Ligação através de um software FTP ](./#2-ligacao-atraves-de-um-software-ftp): permite-lhe aceder ao espaço de armazenamento através de um software (tal como FileZilla ou Cyberduck). Deverá instalar com antecedência o software no seu computador.
+[2. Ligação através de um software FTP](./#2-ligacao-atraves-de-um-software-ftp): permite-lhe aceder ao espaço de armazenamento através de um software (tal como FileZilla ou Cyberduck). Deverá instalar com antecedência o software no seu computador.
 
-[3. Ligação através de um acesso SSH ](./#3-ligacao-em-ssh): permite-lhe aceder ao espaço de armazenamento através de um acesso SSH. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançados, bem como um plano de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} específico.
+[3. Ligação através de um acesso SSH](./#3-ligacao-atraves-de-um-acesso-ssh): permite-lhe aceder ao espaço de armazenamento através de um acesso SSH. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançados, bem como um plano de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} específico.
 
 #### 1. Ligação através de FTP Explorer
 
@@ -115,7 +114,7 @@ Se se ligar através de uma linha de comandos, deverá: substituir os elementos 
 ssh sshlogin@sshserver -p connectionport
 ```
 
-Se as informações estiverem corretas, poderá então interagir com o seu espaço de armazenamento. Para obter mais informações, consulte o nosso manual “[O SSH nos alojamentos partilhados](https://docs.ovh.com/pt/hosting/partilhado_o_ssh_nos_alojamentos_partilhados/)”.
+Se as informações estiverem corretas, poderá então interagir com o seu espaço de armazenamento. Para obter mais informações, consulte o nosso manual “[O SSH nos alojamentos partilhados](../partilhado_o_ssh_nos_alojamentos_partilhados/)”.
 
 ![ftpconnect](images/connect-ftp-step5.png){.thumbnail}
 
@@ -125,4 +124,4 @@ Se as informações estiverem corretas, poderá então interagir com o seu espa�
 
 [O SSH nos alojamentos partilhados](https://docs.ovh.com/pt/hosting/partilhado_o_ssh_nos_alojamentos_partilhados/){.external}
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>
