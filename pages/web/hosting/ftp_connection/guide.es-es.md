@@ -62,11 +62,11 @@ Ahora ya debería disponer de los datos necesarios para conectarse al espacio de
 
 Existen varias formas de conectarse al espacio de almacenamiento. Continúe leyendo esta guía en el apartado correspondiente a la acción que quiera realizar.
 
-[2.1. Conexión mediante un explorador FTP](./#1-conexion-mediante-un-explorador-ftp): Le permite acceder al espacio de almacenamiento desde cualquier navegador de internet.
+[2.1. Conexión mediante un explorador FTP](./#21-conexion-mediante-un-explorador-ftp): Le permite acceder al espacio de almacenamiento desde cualquier navegador de internet.
 
-[2.2. Conexión mediante un cliente FTP](./#2-conexion-mediante-un-cliente-ftp): Le permite acceder al espacio de almacenamiento mediante un programa como FileZilla o Cyberduck. Debe tener el programa previamente instalado en su ordenador.
+[2.2. Conexión mediante un cliente FTP](./#22-conexion-mediante-un-cliente-ftp): Le permite acceder al espacio de almacenamiento mediante un programa como FileZilla o Cyberduck. Debe tener el programa previamente instalado en su ordenador.
 
-[2.3. Conexión mediante un acceso SSH](./#3-conexion-por-ssh): Le permite acceder al espacio de almacenamiento mediante un acceso SSH. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVH]({ovh_www}/hosting/){.external} son compatibles.
+[2.3. Conexión mediante un acceso SSH](./#23-conexion-por-ssh): Le permite acceder al espacio de almacenamiento mediante un acceso SSH. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVH]({ovh_www}/hosting/){.external} son compatibles.
 
 #### 2.1. Conexión mediante un explorador FTP
 
