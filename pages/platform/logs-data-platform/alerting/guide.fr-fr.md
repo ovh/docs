@@ -18,9 +18,9 @@ This guide will help you to configure and use alerts on a particular field. We w
 
 In order to understand this guide you should read the following tutorials:
  
-- [Quick start of Logs Data Platform](../quick_start/guide.fr-fr.md){.external}.
-- [Logstash collector on Logs Data Platform](../logstash_input/guide.fr-fr.md){.external}.
-- [The Filebeat tutorial](../filebeat_logs/guide.fr-fr.md){.external}.
+- [Quick start of Logs Data Platform](../quick_start/guide.fr-fr.md){.ref}.
+- [Logstash collector on Logs Data Platform](../logstash_input/guide.fr-fr.md){.ref}.
+- [The Filebeat tutorial](../filebeat_logs/guide.fr-fr.md){.ref}.
  
 ## Instructions
 
@@ -49,7 +49,7 @@ For this tutorial, we will configure the 3 alerts that we can use for a website.
 
 We will use the [LTSV](http://ltsv.org){.external} format to send logs, this format is simple enough to be efficiently parsed by the collector. Here is a configuration file sample:
 
-```Apache
+```ApacheConf
 <VirtualHost *:80>
 
     ServerAdmin webmaster@localhost
@@ -94,7 +94,7 @@ This simple Logstash filter uses the [key value filter plugin](https://www.elast
 
 The Filebeat configuration will be similar to the one used in the Filebeat tutorial:
 
-```ruby
+```yaml hl_lines="32 38"
 #=========================== Filebeat inputs =============================
 
 filebeat.inputs:
@@ -132,10 +132,10 @@ output.logstash:
 
   # Optional SSL. By default is off.
   # List of root certificates for HTTPS server verifications
-  ssl.certificate_authorities: ["/etc/ssl/certs/ldp-ca.crt"]
+  ssl.certificate_authorities: ["/etc/ssl/certs/ldp.pem"]
 ```
 
-Fill the value of **/etc/ssl/certs/ldp-ca.crt** with the "Data-gathering tools" certificate you will find in the **Home** page of your service.
+Fill the value of **/etc/ssl/certs/ldp.pem** with the "Data-gathering tools" certificate you will find in the **Home** page of your service.
 
 ![SSL input](images/ssl_input.png){.thumbnail}
 
@@ -147,7 +147,7 @@ $ ldp@ubuntu:~$ sudo filebeat modules enable apache2
 
 It will generate a new module file: **/etc/filebeat/modules.d/apache2.yml**, please change it to include all your apache2 access/error path files:
 
-```ruby
+```yaml hl_lines="8 16"
 - module: apache2
   # Access logs
   access:

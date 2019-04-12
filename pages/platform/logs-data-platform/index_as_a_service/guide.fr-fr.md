@@ -43,7 +43,7 @@ Logs Data Platform Elasticsearch indices are compatible with the [Elasticsearch 
 
 
 ```shell-session
-$ curl -u <your-token-value>:token -XPUT 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1' -d '{ "user" : "Oles", "company" : "OVH", "message" : "Hello World !", "post_date" : "1999-11-02T23:01:00" }'
+$ curl -u <your-token-value>:token -XPUT -h 'Content-Type: application/json' 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1' -d '{ "user" : "Oles", "company" : "OVH", "message" : "Hello World !", "post_date" : "1999-11-02T23:01:00" }'
 ```
 
 Here is a quick explanation of this command:
@@ -56,7 +56,7 @@ Here is a quick explanation of this command:
 
 This command will return with a simple payload indicating if the document has been indexed by all the shards involved.
 
-```json
+```json hl_lines="3"
 {
    "_id": "1", 
    "_index": "logs-<username>-i-<suffix>", 
@@ -154,7 +154,7 @@ A bulk request is a succession of JSON objects with this structure:
 You can in one request ask Elasticsearch to index, update, delete several documents. Save the content of the previous commands in a file named **bulk** and use the following call to index these 3 users:
 
 ```shell-session
-$ curl -u <your-token-value>:token -XPUT 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
+$ curl -u <your-token-value>:token -XPUT -h 'Content-Type: application/json' 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
 ```
 
 This call will take the content of the bulk file and execute each index operation. Note that you have to use the option **--data-binary** and no **-d** to preserve the newline after each JSON. You can check that your data are properly indexed with the following call:
@@ -165,7 +165,7 @@ $ curl -u <your-token-value>:token -XGET 'https://graX.logs.ovh.com:9200/logs-<u
 
 This will give you back the documents of your index:
 
-```json
+```json hl_lines="13 41 69"
 {
   "took" : 1,
   "timed_out" : false,
@@ -287,7 +287,7 @@ tcp {
 
 The most important part in this configuration is the filter part:
 
-```ruby
+```ruby  hl_lines="2 3 4"
 elasticsearch {
     hosts => ["https://gra2.logs.ovh.com:9200"]
     index => "logs-<username>-i-<suffix>"
@@ -316,11 +316,11 @@ The filter part is composed by two plugins, the **elasticsearch** plugin and the
 
 - **hosts**: This is the address of the Elasticsearch API of your LDP cluster. Note that we use https here.
 - **index**: This is the name of the index containing your static data.
-- **username**: This is the username to authenticate yourself against the API. Again, we recommend that you use [tokens](../tokens_logs_data_platform/guide.en-gb.md){.ref} for that.
+- **username**: This is the username to authenticate yourself against the API. Again, we recommend that you use [tokens](../tokens_logs_data_platform/guide.fr-fr.md){.ref} for that.
 - **password**: The password of the user.
 - **enable_sort**: this setting tells that there is no need to sort the data for the request.
 - **query**: This is the query issued. Here the query is a simple string query searching for the document having the field **userId** set at the value userId found in the log event. **%{[userID]}** will be replaced by the value contained in the field userId of the log event.
-- **fields**: This is where the magic happens. The field of the document found will be added to the event. The field of the document is on the left and the new (or updated) field of the event is on the right. Be sure to follow the [field naming conventions](../field_naming_conventions/guide.en-gb.md){.ref}.
+- **fields**: This is where the magic happens. The field of the document found will be added to the event. The field of the document is on the left and the new (or updated) field of the event is on the right. Be sure to follow the [field naming conventions](../field_naming_conventions/guide.fr-fr.md){.ref}.
 
 The mutate plugin is here to show you how you can combine different subfield information in one top level field. Here we combine a latitude and a longitude field to create a geolocation field then we remove the original address top-field.
 
@@ -353,7 +353,6 @@ Index as a service has some specificities on our platforms. This additional and 
 - You are not allowed to change the settings of your index.
 - You can create an **alias** on Logs Data Platform and attach it to one or several indices.
 - If there is a feature missing, feel free to contact us on the [community hub](https://community.ovh.com/c/platform/data-platforms-lab){.external} or on the mailing list.
-
 
 ## Go further
 

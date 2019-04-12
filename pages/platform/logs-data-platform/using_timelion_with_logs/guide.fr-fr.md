@@ -5,7 +5,7 @@ order: 3
 section: Visualize your logs
 ---
 
-**Last updated 28th February, 2018**
+**Last updated 12th April, 2019**
 
 ## Objective
 
@@ -20,14 +20,12 @@ The functionality of Timelion includes (but is not limited to):
 - Doing arithmetic operation between your metric (division, sum, cumulative sum, multiply, percentage...)
 - Grabbing series from other sources to mix your data with it ([Quandl](https://www.quandl.com){.external}, [World Bank Indicators](http://data.worldbank.org/){.external}, [Graphite](http://graphite.readthedocs.io/en/latest/){.external}).
 
-An introduction to this plugin can be found here:
-
-[https://www.elastic.co/blog/timelion-timeline](https://www.elastic.co/blog/timelion-timeline){.external}.
+An introduction to this plugin can be found here: [https://www.elastic.co/blog/timelion-timeline](https://www.elastic.co/blog/timelion-timeline){.external}.
 
 
 ## Requirements
 
-In order to use Timelion, your Kibana access has to be already configured. If you don't have it already, you can visit [this Kibana tutorial](https://docs.ovh.com/fr/logs-data-platform/using-kibana-with-logs/){.external}. If you're ready, let's get started!
+In order to use Timelion, your Kibana access has to be already configured. If you don't have it already, you can visit [this Kibana tutorial](../using_kibana_with_logs/guide.en-gb.md){.ref}. If you're ready, let's get started!
 
 
 ## Instructions
@@ -105,9 +103,7 @@ We have only scratched the surface of what you can do with Timelion. Head to the
 
 ## Go further
 
-- Join our community of users on <https://community.ovh.com/>
-- Getting Started: [Quick Start](https://docs.ovh.com/fr/logs-data-platform/quick-start/){.external}
-- Documentation: [Guides](https://docs.ovh.com/fr/logs-data-platform/){.external}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms-lab){.external}
-- Mailing List: [paas.logs-subscribe@ml.ovh.net](mailto:paas.logs-subscribe@ml.ovh.net){.external}
+- Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
+- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}

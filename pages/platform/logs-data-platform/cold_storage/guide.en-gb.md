@@ -181,7 +181,7 @@ The installation and configuration procedure is described on the related [github
 
 The data you retrieve in the archive is by default in [GELF format](http://docs.graylog.org/en/latest/pages/gelf.html){.external}. It is ordered by the field timestamp and retain all additional fields that you would have add (with your [Logstash collector](../logstash_input/guide.en-gb.md){.ref} for example). Since this format is fully compatible with JSON, you can use it right away in any other system.
 
-```
+```json
  {"_facility":"gelf-rb","_id":11,"_monitoring":"cb1068c485e738655cfe10df5df3a9a185aa8e301b5c8d0747b3502e8fdcc157","_type":"direct","full_message":"monitoring message (11) at 2017-05-17 09:58:08 +0000","host":"shinken","level":1,"short_message":"monitoring msg (11)","timestamp":1.4950150886486998E9}
  {"_facility":"gelf-rb","_id":23,"_monitoring":"490de2b690eaab7aaf647cfaddb95e0fe51617985efad3afcce45ae931c41c97","_type":"direct","full_message":"monitoring message (23) at 2017-05-17 09:58:08 +0000","host":"shinken","level":1,"short_message":"monitoring msg (23)","timestamp":1.4950150888951592E9}
  {"_facility":"gelf-rb","_id":10,"_monitoring":"b6e4749eb577d8534e237f930b4fc9612a74012aab50fc01b2ef317db1125df1","_type":"direct","full_message":"monitoring message (10) at 2017-05-17 10:03:09 +0000","host":"shinken","level":1,"short_message":"monitoring msg (10)","timestamp":1.4950153892895508E9}
@@ -193,7 +193,7 @@ The data you retrieve in the archive is by default in [GELF format](http://docs.
  {"_facility":"gelf-rb","_id":7,"_monitoring":"ff558f06ab12e03cd9c5ff23ba0f8bebbdf939d00e5b8c2faaf3f7a03be8a6e0","_type":"direct","full_message":"monitoring message (7) at 2017-05-17 10:18:09 +0000","host":"shinken","level":1,"short_message":"monitoring msg (7)","timestamp":1.495016289332681E9}
 ```
 
-You can also use a special field [X-OVH-TO-FREEZE](../field_naming_conventions/guide.en-gb.md){.ref} on your logs to craft an additional archive with only the content of this specific field at each line (along with the usual gelf archive). This file can be used for example to restore a common human readable log file.
+You can also use a special field [X-OVH-TO-FREEZE](../field_naming_conventions/guide.en-gb.md){.ref} on your logs to craft an additional archive with only the value of this specific field at each line (along with the usual gelf archive). This file can be used for example to restore a common human readable log file.
 
 
 ## Go further
