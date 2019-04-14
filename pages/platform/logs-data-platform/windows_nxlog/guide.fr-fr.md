@@ -1,60 +1,39 @@
 ---
 title: Sending Windows Logs with NXLog to Logs Data Platform in 15 minutes or less
 slug: windows-nxlog
-order: 6
+order: 06
 section: Use cases
 ---
 
-> [!note] 
-> 
-> At OVH, we love Microsoft products too. So it is important for us to provide you a way to send your Windows Logs to Logs Data Platform. All you need is 15 minutes and one software : [NXLog](http://nxlog.co){.external}. NXLog is one of the leader of the log management tools. Its configuration is fairly simple and can get you started in a few minutes.
-> 
+**Last updated 10th April, 2019**
+
+## Objective
+
+At OVH, we love Microsoft products too. So it is important for us to provide you a way to send your Windows Logs to Logs Data Platform. All you need is 15 minutes and one software : [NXLog](http://nxlog.co){.external}. NXLog is one of the leader of the log management tools. Its configuration is fairly simple and can get you started in a few minutes.
+
+## Requirements
 
 For this tutorial you will need to have completed the following steps :
 
-- [Activate the Logs Data Platform and create an account.](../quick_start/guide.en-gb.md){.ref}
-- [To create at least one Stream and get its token.](../quick_start/guide.en-gb.md){.ref}
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- [To create at least one Stream and get its token.](../quick_start/guide.fr-fr.md){.ref}
 
 ## NXLog
 
-You can find NXLog, at its official website [nxlog.co](http://nxlog.co){.external}. Please go to the official website and download the latest version for Windows (2.9.1504 at the time of writing). Be sure to have Administrator rights before proceding. Once you have it, install it on your system. By default the program will install itself in **C:\\Program Files(x86)\\nxlog\\**. Navigate to this folder to edit the configuration file **nxlog.conf** present in the folder **conf**.
+You can find NXLog, at its official website [nxlog.co](http://nxlog.co){.external}. Please go to the official website and download the latest version for Windows (2.10.2150 at the time of writing). Be sure to have Administrator rights before proceding. Once you have it, install it on your system. By default the program will install itself in **C:\\Program Files(x86)\\nxlog\\**. Navigate to this folder to edit the configuration file **nxlog.conf** present in the folder **conf**.
 
 
 ## Configuration
 
-To configure NXLog, you will need to download the Comodo root certificate of our main inputs. You can find it here [support.comodo.com](https://support.comodo.com/index.php?/Knowledgebase/Article/View/945/0/root-addtrust-external-ca-root){.external} (use the link at the bottom of the page). Please put this file under the **C:\\Program Files(x86)\\nxlog\\cert** folder. For reference this is the root certificate issued :
+To configure NXLog, you will need to copy and store the LDP cluster certificate. You can find it in the **Home** page.
 
-```
- -----BEGIN CERTIFICATE-----
- MIIENjCCAx6gAwIBAgIBATANBgkqhkiG9w0BAQUFADBvMQswCQYDVQQGEwJTRTEU
- MBIGA1UEChMLQWRkVHJ1c3QgQUIxJjAkBgNVBAsTHUFkZFRydXN0IEV4dGVybmFs
- IFRUUCBOZXR3b3JrMSIwIAYDVQQDExlBZGRUcnVzdCBFeHRlcm5hbCBDQSBSb290
- MB4XDTAwMDUzMDEwNDgzOFoXDTIwMDUzMDEwNDgzOFowbzELMAkGA1UEBhMCU0Ux
- FDASBgNVBAoTC0FkZFRydXN0IEFCMSYwJAYDVQQLEx1BZGRUcnVzdCBFeHRlcm5h
- bCBUVFAgTmV0d29yazEiMCAGA1UEAxMZQWRkVHJ1c3QgRXh0ZXJuYWwgQ0EgUm9v
- dDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALf3GjPm8gAELTngTlvt
- H7xsD821+iO2zt6bETOXpClMfZOfvUq8k+0DGuOPz+VtUFrWlymUWoCwSXrbLpX9
- uMq/NzgtHj6RQa1wVsfwTz/oMp50ysiQVOnGXw94nZpAPA6sYapeFI+eh6FqUNzX
- mk6vBbOmcZSccbNQYArHE504B4YCqOmoaSYYkKtMsE8jqzpPhNjfzp/haW+710LX
- a0Tkx63ubUFfclpxCDezeWWkWaCUN/cALw3CknLa0Dhy2xSoRcRdKn23tNbE7qzN
- E0S3ySvdQwAl+mG5aWpYIxG3pzOPVnVZ9c0p10a3CitlttNCbxWyuHv77+ldU9U0
- WicCAwEAAaOB3DCB2TAdBgNVHQ4EFgQUrb2YejS0Jvf6xCZU7wO94CTLVBowCwYD
- VR0PBAQDAgEGMA8GA1UdEwEB/wQFMAMBAf8wgZkGA1UdIwSBkTCBjoAUrb2YejS0
- Jvf6xCZU7wO94CTLVBqhc6RxMG8xCzAJBgNVBAYTAlNFMRQwEgYDVQQKEwtBZGRU
- cnVzdCBBQjEmMCQGA1UECxMdQWRkVHJ1c3QgRXh0ZXJuYWwgVFRQIE5ldHdvcmsx
- IjAgBgNVBAMTGUFkZFRydXN0IEV4dGVybmFsIENBIFJvb3SCAQEwDQYJKoZIhvcN
- AQEFBQADggEBALCb4IUlwtYj4g+WBpKdQZic2YR5gdkeWxQHIzZlj7DYd7usQWxH
- YINRsPkyPef89iYTx4AWpb9a/IfPeHmJIZriTAcKhjW88t5RxNKWt9x+Tu5w/Rw5
- 6wwCURQtjr0W4MHfRnXnJK3s9EK0hZNwEGe6nQY1ShjTK3rMUUKhemPR5ruhxSvC
- Nr4TDea9Y355e6cJDUCrat2PisP29owaQgVR1EX1n6diIWgVIEM8med8vSTYqZEX
- c4g/VhsxOBi0cQ+azcgOno4uG+GMmIPLHzHxREzGBHNJdmAPx/i9F4BrLunMTA5a
- mnkPIAou1Z5jJh5VkpTYghdae9C8x49OhgQ=
- -----END CERTIFICATE-----
-```
+![LDP certificate](images/ssl.png){.thumbnail}
+
+Please put this file under the **C:\\Program Files(x86)\\nxlog\\cert** folder. 
 
 The configuration is pretty much straightforward. Here is the configuration file that allows you to configure your NXLog.
 
-```
+```ApacheConf hl_lines="26 36 39"
  ## This is a sample configuration file. See the nxlog reference manual about the
  ## configuration options. It should be installed locally and is also available
  ## online at http://nxlog.org/nxlog-docs/en/nxlog-reference-manual.html
@@ -123,7 +102,7 @@ Excuse my French screenshot detailing where to find it:
 
 If something bad happens, you will find the logs and a pretty good explanation in the file : **C:\Program Files(x86)\nxlog\data\nxlog.log**. If everything is correct you should find these kind of lines in the same file :
 
-```
+```text
  2016-04-08 19:53:26 INFO connecting to <your_cluster>.logs.ovh.com:12202
  2016-04-08 19:53:26 INFO successfully connected to <your_cluster>.logs.ovh.com:12202
 ```
@@ -136,12 +115,9 @@ I think that's pretty much it. I know, it didn't even take 10 minutes :-).
 
 If you want to go further, don't hesitate to fly to the [NXlog documentation](https://nxlog.co/docs/){.external}
 
----
-
 ## Getting Help
 
 - Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
 - Documentation: [Guides](../product.fr-fr.md){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms-lab){.external}
-- Mailing List: [paas.logs-subscribe@ml.ovh.net](mailto:paas.logs-subscribe@ml.ovh.net){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
