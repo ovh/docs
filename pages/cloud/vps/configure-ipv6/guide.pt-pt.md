@@ -80,7 +80,7 @@ Depois de obter as informações necessárias para a configuração IPv6, aceda 
 Existem vários métodos para aplicar a configuração IPv6. Escolha a que pretende utilizar consoante a sua situação e as suas necessidades.
 
 - [Aplicação não persistente](https://docs.ovh.com/pt/vps/configurar-ipv6/#aplicacao-nao-persistente).
-- [Aplicação persistente em Debian e derivados (Ubuntu, Crunchbang, SteamOS, etc.)](https://docs.ovh.com/pt/vps/configurar-ipv6/#aplicacao-persistente-em-debian-e-derivados-ubuntu-crunchbang-steamos).
+- [Aplicação persistente em Debian e derivados (Ubuntu, Crunchbang, SteamOS…)](https://docs.ovh.com/pt/vps/configurar-ipv6/#aplicacao-persistente-em-debian-e-derivados-ubuntu-crunchbang-steamos).
 - [Aplicação persistente em Redhat e derivados (CentOS, ClearOS, etc.)](https://docs.ovh.com/pt/vps/configurar-ipv6/#aplicacao-persistente-em-redhat-e-derivados-centos-clearos_1).
 - [Aplicação persistente no Windows Server](https://docs.ovh.com/pt/vps/configurar-ipv6/#aplicacao-persistente-no-windows-server).
 
@@ -102,7 +102,7 @@ ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
 ```
 
-#### Aplicação persistente em Debian e derivados (Ubuntu, Crunchbang, SteamOS, etc.)
+#### Aplicação persistente em Debian e derivados (Ubuntu, Crunchbang, SteamOS…)
 
 Existem dois métodos para configurar a sua rede consoante o sistema operativo instalado no seu servidor:
 
