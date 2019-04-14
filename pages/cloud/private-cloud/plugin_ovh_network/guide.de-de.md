@@ -31,6 +31,7 @@ So gelangen Sie in den Bereich `Summary`, der Ihre IP-Blöcke sowie Basisinforma
 ![Informationen zu IPs und IP-Blöcken](images/network_02.png){.thumbnail}
 
 Der Bereich **IP Blocks** enthält alle IPs des jeweiligen Blocks. Achten Sie darauf, dass Sie nicht die **5 für die Konfiguration reservierten IPs des Blocks** verwenden. Zu diesen gehören:
+
 - die erste IP, die dem Router Ihren Block ankündigt
 - die letzte IP, die für **broadcast** verwendet wird
 - die vorletzte IP, die für Ihr **gateway** verwendet wird
