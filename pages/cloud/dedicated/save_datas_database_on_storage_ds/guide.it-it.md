@@ -32,7 +32,6 @@ OVH offre una [gamma di server dedicati](https://www.ovh.it/server_dedicati/stor
 - Una rete privata [vRack](https://www.ovh.it/soluzioni/vrack/){.external} tra i tuoi server (consigliato)
 
 
-
 ## Procedura
 
 ### Step 1: scegli il livello di RAID più appropriato
