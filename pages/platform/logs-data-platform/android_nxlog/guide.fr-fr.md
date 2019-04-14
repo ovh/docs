@@ -1,11 +1,11 @@
 ---
 title: Sending Android 4.4 Logs with NXLog to Logs Data Platform
 slug: android-nxlog
-order: 4
+order: 08
 section: Use cases
 ---
 
-**Last updated 20th February, 2018**
+**Last updated 11th April, 2019**
 
 ## Objective
 
@@ -16,22 +16,20 @@ If you have a device running Android 4.4 KitKat or less, like a smart TV, a set-
 
 In order to follow this guide you will have to have created and activated your account on Logs Data Platform and be able to send your logs to a stream.
 
-- [Activate the Logs Data Platform lab and created an account.](https://docs.ovh.com/fr/logs-data-platform/quick-start/){.external}
-- [Create one Stream and get its token.](https://docs.ovh.com/fr/logs-data-platform/tokens-logs-data-platform/){.external}
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- [To create at least one Stream and get its token.](../quick_start/guide.fr-fr.md){.ref}
 
 ## Instructions
 
 ### Collector on the Logs Data Platform
 
-In order to exploit the NXlogs on the Logs Data Platform you will need to setup a dedicated collector. The current Android Version of NXLog does not allow you to use your token inside your message like we did in the [Windows tutorial](https://docs.ovh.com/fr/logs-data-platform/windows-nxlog/){.external}. But don't worry your personal collector on the  Logs Data Platform will gently take care of all of this stuff :-).
+In order to exploit the NXlogs on the Logs Data Platform you will need to setup a dedicated collector. The current Android Version of NXLog does not allow you to use your token inside your message like we did in the [Windows tutorial](../windows_nxlog/guide.fr-fr.md){.ref}. But don't worry your personal collector on the  Logs Data Platform will gently take care of all of this stuff :-).
 
-For simplicity, we will use a [Logstash Collector](https://docs.ovh.com/fr/logs-data-platform/logstash-input/){.external} since it provides a syslog input right from the start.
+For simplicity, we will use a [Logstash Collector](../logstash_input/guide.fr-fr.md){.ref} since it provides a syslog input right from the start.
 
 #### Collector Configuration
 
-In your Logs Data Platform Manager, add a collector by using the **add a new collector** button. Name it, describe it, Put 4000 as the Exposed port (the port that we will send our logs to) and link it to one of your streams. Then you can click on the blue button to save it.
-
-Click on Configuration to open the Configuration panel of the Input.
+In your Logs Data Platform Manager, add a collector by using the **add a new data-gathering tool** button. Name it, describe it, Put 4000 as the Exposed port (the port that we will send our logs to) and link it to one of your streams. Then you can click on the `Next`{.action} button to reach the configuration panel.
 
 - On the Input section, use this very simple configuration :
 
@@ -41,10 +39,10 @@ Click on Configuration to open the Configuration panel of the Input.
  }
 ```
 
-Click on the **Update configuration** button to save it.
+Click on the `Test the configuration`{.action} button to validate it.
 
-- By clicking on **Networking** in the Input panel, use the Networking panel, to enter the matching port (Here 4000) and then click on Add button. Configure any firewall rule if you want to restrict your Input to specific IPs and click on **Update configuration**.
-- Start the collector by clicking on Start on the **...** Menu in the Collector Page. At the end of the deployment, you will obtain the address of your collector in the following form `<your_cluster>-570fb9f6d2ee5e00095ce6ab.<your_cluster>.logs.ovh.com`. This is the host to send your logs to.
+- On **Networking** panel, configure any firewall rule if you want to restrict your Input to specific IPs and click on **Update configuration**.
+- Start the collector by clicking on Start on the **...** Menu in the Data-gathering tool Page. At the end of the deployment, you will obtain the address of your collector in the following form `<your_cluster>-<some_id>.<your_cluster>.logs.ovh.com`. This is the host to send your logs to.
 
 ## NXLog on Android
 
@@ -54,11 +52,11 @@ Android has a complex ecosystem with a lot of different devices and OS versions 
 
 The default NXLog configuration is fairly simple, you just open the default configuration and you set the host and the port of the Output Module to the host and port you have obtained just before :
 
-```
+```ApacheConf hl_lines="4"
  <Output out>
      Module  om_tcp
      # Change the IP address and port below
-     Host    <your_cluster>-570fb9f6d2ee5e00095ce6ab.<your_cluster>.logs.ovh.com
+     Host    <your_cluster>-<some_id>.<your_cluster>.logs.ovh.com
      Port    4000
      Exec    to_syslog_bsd();
  </Output>
@@ -76,10 +74,7 @@ Head to your Graylog stream (by using the link in your manager) to see your logs
 
 ## Go further
 
-- Getting Started: [Quick Start](https://docs.ovh.com/fr/logs-data-platform/quick-start/){.external}
-- Documentation: [Guides](https://docs.ovh.com/fr/logs-data-platform/){.external}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms-lab){.external}
-- Mailing List: [paas.logs-subscribe@ml.ovh.net](mailto:paas.logs-subscribe@ml.ovh.net){.external}
+- Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
+- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-
-Join our community of users on <https://community.ovh.com/>.

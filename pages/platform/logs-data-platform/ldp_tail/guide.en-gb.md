@@ -29,7 +29,7 @@ The Logs Data Platform allows you to connect different applications or servers t
 You can test it right away on our demo stream by using this command in a terminal.
 
 ```shell-session
-$ ldp@ubuntu:~$ ./ldp-tail --address wss://gra1.logs.ovh.com/tail/?tk=demo --pattern "{{ .short_message }}"
+$ ldp@ubuntu:~$ ./ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo" --pattern "{{ .short_message }}"
 ```
 
 There are only two options here: the address and the pattern.
@@ -61,7 +61,7 @@ You will also find on this page a link to the ldp-tail release page and three wa
 This option is here to allow you to format the output and to select which fields you want to display. For example, with the demo stream:
 
 ```shell-session
-$ ldp@ubuntu:~$ ./ldp-tail --address wss://gra1.logs.ovh.com/tail/?tk=demo --pattern "My Title: {{ ._title }} , The Joke: {{ .short_message }}"
+$ ldp@ubuntu:~$ ./ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo" --pattern "My Title: {{ ._title }} , The Joke: {{ .short_message }}"
 2017/06/23 17:23:13 Connecting to gra1.logs.ovh.com...
 2017/06/23 17:23:14 Connected!
 My Title: Why did the Ancient Egyptians build Great Pyramids? , The Joke: Because their Great Igloos melted.
@@ -74,7 +74,7 @@ Please note that in this example we use the [GELF](http://docs.graylog.org/en/2.
 The pattern option allows you also to customize colors, background and text colors are customizable.
 
 ```shell-session
-$ ldp@ubuntu:~$ ./ldp-tail --address wss://gra1.logs.ovh.com/tail/?tk=demo --pattern "My Title: {{color \"red\"}} {{ ._title }} , {{ noColor }} The Joke: {{ color \"blue\" }} {{ .short_message }} {{ noColor }}"
+$ ldp@ubuntu:~$ ./ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo" --pattern "My Title: {{color \"red\"}} {{ ._title }} , {{ noColor }} The Joke: {{ color \"blue\" }} {{ .short_message }} {{ noColor }}"
 ```
 
 In this example, the title field will be colored in red, and the body will be colored in blue. You can use the **bColor** attribute to color the background instead. The pattern option supports many different operations like date formatting, concatenation, human readable duration displaying, etc. **ldp-tail**  also supports conditional formatting. This can be useful to sort important information in your stream. For example this kind of rule can be implemented: if a value is greater than a threshold, display the message in red, otherwise display it in green.
@@ -82,7 +82,7 @@ In this example, the title field will be colored in red, and the body will be co
 With our demo stream, we can use this kind of filter and the **rating_num** numeric attribute to display in yellow every joke rated above 100.
 
 ```shell-session
-$ ldp@ubuntu:~$ ./ldp-tail --address wss://gra1.logs.ovh.com/tail/?tk=demo --pattern "My Title: {{color \"red\"}} {{ ._title }} , {{noColor }} The Joke: {{if (lt (._rating_num) 100)}}{{ color \"blue\" }}{{else}}{{color \"yellow\"}} {{ .short_message }} {{ noColor }}"
+$ ldp@ubuntu:~$ ./ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo" --pattern "My Title: {{color \"red\"}} {{ ._title }} , {{noColor }} The Joke: {{if (lt (._rating_num) 100)}}{{ color \"blue\" }}{{else}}{{color \"yellow\"}} {{ .short_message }} {{ noColor }}"
 ```
 
 #### The match option
@@ -92,7 +92,7 @@ As the name implies, the match option is able to choose which messages you want 
 Here is how you can display only logs that have a title beginning with the word "another"
 
 ```shell-session
-$ ldp@ubuntu:~$ ./ldp-tail --address wss://gra1.logs.ovh.com/tail/?tk=demo --match "_title.begin=another" --pattern "{{ ._title}} The Joke: {{ .short_message }}"
+$ ldp@ubuntu:~$ ./ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo" --match "_title.begin=another" --pattern "{{ ._title}} The Joke: {{ .short_message }}"
 ```
 
 You can of course combine multiple matches by issuing **ldp-tail --match <COND_1> --match <COND_2> --pattern ...**. A pattern and match combination can be really difficult to read, thats why ldp-tail supports a TOML configuration file.
@@ -101,7 +101,7 @@ You can of course combine multiple matches by issuing **ldp-tail --match <COND_1
 
 Here is an example of a [TOML](https://github.com/toml-lang/toml){.external} configuration file for ldp-tail
 
-```toml
+```text
 Address = "wss://gra1.logs.ovh.com/tail/?tk=demo"
 Pattern = "{{ ._title}} The Joke: {{ .short_message }}"
 
@@ -123,7 +123,7 @@ If you are not familiar with TOML, here are some explanations. **Address** and *
 Once your file is ready, you can launch ldp-tail with it:
 
 ```shell-session
-$ ldp@ubuntu:~$ ./ldp-tail --address wss://gra1.logs.ovh.com/tail/?tk=demo --config myfile.toml
+$ ldp@ubuntu:~$ ./ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo" --config "myfile.toml"
 ```
 
 ### Combining matches and filters
@@ -134,7 +134,7 @@ If you combine matches and filters you can, for example, print the call to an AP
 
 This example has been generated using the following configuration:
 
-```toml
+```text
 Address = "wss://XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 Pattern = "{{if (lt (int ._duration_ms_num) 200)}}{{color \"green\"}}{{else if (lt (int ._duration_ms_num) 500)}}{{color \"yellow\"}}{{else}}{{color \"red\"}}{{end}}{{date .timestamp}} | {{ printf \"%-80s\" (join \" \" ._method ._path )}} | {{ ._httpStatus_int }} | {{ duration ._duration_ms_num 1000000 }}{{noColor}}"
 
