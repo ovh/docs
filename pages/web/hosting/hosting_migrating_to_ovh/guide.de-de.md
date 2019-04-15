@@ -50,7 +50,7 @@ Aus diesem Grund stellen wir Ihnen zwei verschiedene Migrationsprozesse zur Verf
 
 #### Schritt 1: OVH Webhosting bestellen
 
-Bestellen Sie Ihr Webhosting auf der Website von [OVH](https://ovh.de){.external}. Achten Sie darauf, den Transfer Ihrer Domain noch nicht zu veranlassen. Dieser wird in einem anderen Schritt durchgeführt. Sobald Ihre Zahlung eingegangen ist, wird Ihr Webhosting installiert. Im Anschluss erhalten Sie eine Bestätigungs-E-Mail zur abgeschlossenen Installation.
+Bestellen Sie Ihr Webhosting auf der Website von [OVH](https://www.ovh.de/hosting/){.external}. Achten Sie darauf, den Transfer Ihrer Domain noch nicht zu veranlassen. Dieser wird in einem anderen Schritt durchgeführt. Sobald Ihre Zahlung eingegangen ist, wird Ihr Webhosting installiert. Im Anschluss erhalten Sie eine Bestätigungs-E-Mail zur abgeschlossenen Installation.
 
 #### Schritt 2: Ihre Website transferieren
 
@@ -68,7 +68,7 @@ Die Konfiguration Ihrer Domain bleibt unverändert und Ihre Website wird weiterh
 
 #### Schritt 3: Ihre E-Mail-Adressen bei OVH neu erstellen
 
-Nachdem Ihre Website fertig transferiert ist, [erstellen Sie die gleichen E-Mail-Adressen bei OVH](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}, die Sie bei Ihrem bisherigen Anbieter verwenden (sie müssen denselben Namen haben). Gehen Sie links in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} in den Bereich `E-Mails`{.action} und klicken Sie anschließend auf das Webhosting Angebot, das Sie soeben bestellt haben (mit demselben Namen wie Ihre Domain). Klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Schritten des Assistenten.
+Nachdem Ihre Website fertig transferiert ist, [erstellen Sie die gleichen E-Mail-Adressen bei OVH](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}, die Sie bei Ihrem bisherigen Anbieter verwenden (sie müssen denselben Namen haben). Gehen Sie links in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} in den Bereich `E-Mails`{.action} und klicken Sie anschließend auf das Webhosting Angebot, das Sie soeben bestellt haben (mit demselben Namen wie Ihre Domain). Klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Schritten des Assistenten.
 
 Da die Konfiguration Ihrer Domain nicht verändert wurde, werden neue Nachrichten weiterhin über die E-Mail-Adressen bei Ihrem bisherigen Anbieter empfangen. Verwenden Sie diese auch weiterhin für den Versand Ihrer E-Mails.
 
@@ -101,7 +101,7 @@ Jetzt muss nur noch Ihre Domain zu OVH transferiert werden. Hierzu sind mehrere 
 |---|---|---|
 |1|Ihre Domain freigeben|Wenn eine Domain gesperrt ist, kann diese nicht zu einem anderen Registrar wie OVH transferiert werden. Lassen Sie Ihre Domain daher schon vorher bei Ihrem aktuellen Registrar freigeben.|
 |2|Transfer-Code anfordern|Sie erhalten den Transfer-Code von Ihrem aktuellen Registrar, sobald Sie Ihre Domain freigegeben haben.|
-|3|Transfer-Bestellung bei OVH durchführen|Führen Sie Ihre Transfer-Bestellung auf der [OVH Website](https://ovh.de){.external} durch. Geben Sie den zuvor erhaltenen Transfer-Code ein.|
+|3|Transfer-Bestellung bei OVH durchführen|Führen Sie Ihre Transfer-Bestellung auf der [OVH Website](https://www.ovh.de/order/domain/#/legacy/domain/search?domain=){.external} durch. Geben Sie den zuvor erhaltenen Transfer-Code ein.|
 |4|Bestellung zahlen|Sobald Ihre Zahlung eingegangen ist, startet der Transfer Ihrer Domain.|
 |5|Transfer bestätigen oder auf Bestätigung warten| Dieser Schritt variiert je nach Endung Ihrer Domain. Wenn eine Bestätigung benötigt wird, erhalten Sie in der Regel eine Bestätigungs-E-Mail mit den Angaben zur weiteren Vorgehensweise. Folgen Sie den Anweisungen, um den Transfer zu bestätigen.| 
 
@@ -174,7 +174,7 @@ Ihre Website, E-Mail-Adressen und Domains wurden erfolgreich zu OVH migriert!
 
 [Webhosting − Allgemeine Informationen zu den DNS Servern](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/){.external}.
 
-[Wie lege ich eine E-Mail-Adresse an](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}
+[Wie lege ich eine E-Mail-Adresse an](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}
 
 [Webhosting: Import einer MySQL-Datenbank](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/){.external}.
 
