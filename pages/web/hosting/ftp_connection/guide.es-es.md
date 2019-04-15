@@ -93,9 +93,9 @@ A continuación le ofrecemos, a modo de recordatorio, la información que deber�
 |Servidor FTP|Es la dirección del servidor que permite acceder al espacio de almacenamiento.<br>Según el cliente FTP utilizado, puede denominarse «servidor», «dirección del servidor», «host», «nombre del host»...|
 |Usuario FTP|Es el usuario que permite acceder al espacio de almacenamiento.<br>Según el cliente FTP utilizado, puede denominarse «usuario», «nombre de usuario», «identificador», «login», «username»...|
 |Contraseña del usuario FTP|Es la contraseña asociada al usuario FTP.<br>Según el cliente FTP utilizado, puede denominarse «contraseña» o «password».|
-|Puerto de conexión|Este campo suele autocompletarse. Si tuviera que rellenarlo:<br>- utilice el puerto 21 para una conectarse mediante el protocolo FTP;<br>- utilice el puerto 22 para conectarse mediante el protocolo SFTP (en caso de que esté activado).|
+|Puerto de conexión|Este campo suele autocompletarse. Si tuviera que rellenarlo:<br>- utilice el puerto 21 para conectarse mediante el protocolo FTP;<br>- utilice el puerto 22 para conectarse mediante el protocolo SFTP (en caso de que esté activado).|
 
-Si los datos introducidos son correctos, el cliente FTP debería mostrar el contenido de su espacio de almacenamiento. Es posible que aparezca un mensaje confirmando que el cliente ha mostrado correctamente el contenido.
+Si los datos introducidos son correctos, el cliente FTP debería mostrar el contenido de su espacio de almacenamiento. Es posible que aparezca un mensaje confirmando que el contenido se ha mostrado correctamente.
 
 #### 2.3. Conexión por SSH
 
@@ -122,6 +122,6 @@ Si los datos son correctos, podrá interactuar con su espacio de almacenamiento.
 
 [Cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/){.external}
 
-[Web hosting: SSH en alojamiento compartido](../web_hosting_ssh_en_alojamiento_compartido/){.external}.
+[Web hosting: SSH en alojamiento compartido](../web_hosting_ssh_en_alojamiento_compartido/){.external}
 
 Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
