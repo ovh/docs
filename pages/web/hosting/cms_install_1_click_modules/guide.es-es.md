@@ -5,7 +5,7 @@ excerpt: Cómo instalar un sitio web con los módulos en un clic de OVH
 section: CMS
 ---
 
-**Última actualización: 09/01/2018**
+**Última actualización: 15/04/2019**
 
 ## Objetivo
 
