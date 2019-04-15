@@ -6,7 +6,7 @@ legacy_guide_number: g1593
 section: 'FTP e SSH'
 ---
 
-**Ultimo aggiornamento: 03/04/2019**
+**Ultimo aggiornamento: 15/04/2019**
 
 ## Obiettivo
 
@@ -16,7 +16,7 @@ Le soluzioni di hosting Web OVH includono uno spazio di storage in cui è possib
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} (escluso il servizio Cloud Web)
+- Disporre di un piano di [hosting Web OVH]({ovh_www}/hosting-web/){.external} (escluso il servizio Cloud Web)
 - In base al metodo utilizzato, disporre dell’accesso alla gestione della soluzione di hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} o della password FTP per accedere allo spazio di storage 
 
 ## Procedura
@@ -40,9 +40,9 @@ Inoltre, dovrai indicare il metodo di ripristino che intendi adottare:
 
 Una volta scelto il metodo di ripristino più adatto alle tue esigenze, prosegui nella lettura di questa guida nel paragrafo corrispondente:
 
-- [Ripristina i dati dello storage dallo Spazio Cliente OVH](https://docs.ovh.com/it/hosting/web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/#ripristina-i-dati-dello-storage-dallo-spazio-cliente-ovh){.external}
+- [Ripristina i dati dello storage dallo Spazio Cliente OVH](./#ripristina-i-dati-dello-storage-dallo-spazio-cliente-ovh){.external}
 
-- [Ripristina un file da un software o un’interfaccia Web](https://docs.ovh.com/it/hosting/web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/#ripristina-un-file-da-un-software-o-un-interfaccia-web){.external}
+- [Ripristina un file da un software o un’interfaccia Web](.#ripristina-un-file-da-un-software-o-uninterfaccia-web){.external}
 
 ### Ripristina i dati dello storage dallo Spazio Cliente OVH
 
@@ -57,8 +57,8 @@ Nella nuova finestra è possibile selezionare la data di ripristino dal menu a t
 |g-1|Il giorno stesso alle 00:01|
 |g-2|Il giorno precedente alle 00:01|
 |g-3|Due giorni prima alle 00:01|
-|1 settimana|La domenica precedente alle 00:01|
-|2 settimane|La domenica di due settimane prima alle 00:01|
+|1 settimana|La domenica precedente alle 01:00|
+|2 settimane|La domenica di due settimane prima alle 01:00|
 
 Una volta selezionata la data, clicca su `Seguente`{.action}. 
 
@@ -102,12 +102,12 @@ Queste informazioni sono disponibili nella scheda `FTP - SSH`{.action} del tuo h
 Una volta effettuato il login, dovrai aggiungere al tuo nome utente FTP il suffisso corrispondente al backup che utilizzerai, come indicato qui sotto:
 
 |Data del backup|Suffisso da aggiungere|Esempio di nome utente completo|
-|---|---|
+|---|---|---|
 |Il giorno stesso alle 00:01|-snap0|utenteftp**-snap0**|
 |Il giorno precedente alle 00:01|-snap1|utenteftp**-snap1**|
 |Due giorni prima alle 00:01|-snap2|utenteftp**-snap2**|
-|La domenica precedente alle 00:01|-snap3|utenteftp**-snap3**|
-|La domenica di due settimane prima alle 00:01|-snap4|utenteftp**-snap4**|
+|La domenica precedente alle 01:00|-snap3|utenteftp**-snap3**|
+|La domenica di due settimane prima alle 01:00|-snap4|utenteftp**-snap4**|
 
 Sostituisci l’informazione generica “utenteftp” con il tuo nome utente FTP principale, conservando il suffisso che indica la data del backup che intendi ripristinare.
 
