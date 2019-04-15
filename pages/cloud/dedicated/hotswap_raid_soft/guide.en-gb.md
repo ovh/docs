@@ -240,7 +240,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external}
+The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](../raid-soft/){.external}
 
 ### On Windows
 
@@ -248,7 +248,7 @@ The defective disk is now ready to be replaced by a datacentre technician. Once 
 
 To illustrate the purpose of this guide, we assume that we have received an alert for the`/dev/sdb` disk. The disk is defective, and we want to hot-swap it. **Please adapt the details of this guide according to your specific situation.**
 
-> \[!primary]
+> [!primary]
 >
 > It is important to launch the command terminal as an administrator, so that you do not receive any errors.
 > 
@@ -282,7 +282,7 @@ In our example, we have retrieved the **Enclosure ID** (corresponding to 1) and 
 
 #### Stage 3: Switch on the disk.
 
-Using the information retrieved during the previous steps, turn on the LED of the faulty disk, and replace it with the command `./sas2ircu 0 locate EncID:SlotID on`. Customise it to suit your situation, as per the example below:
+Using the information retrieved during the previous steps, turn on the LED of the faulty disk, and replace it with the command `.\sas2ircu 0 locate EncID:SlotID on`. Customise it to suit your situation, as per the example below:
 
 ![locate](images/locate.png){.thumbnail}
 
@@ -292,7 +292,7 @@ You can disable the disk flashing, by replacing "on" with "off" in the command.
 
 You can do this from the **Disk Management** interface of your Windows server.
 
-The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external}
+The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](../raid-soft/){.external}
 
 ## Go further
 
