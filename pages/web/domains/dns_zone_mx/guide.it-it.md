@@ -7,7 +7,7 @@ section: 'DNS e zona DNS'
 order: 4
 ---
 
-**Ultimo aggiornamento: 02/04/2019**
+**Ultimo aggiornamento: 15/04/2019**
 
 ## Obiettivo
 
@@ -40,7 +40,7 @@ Per uno stesso dominio è possibile configurare più record MX. In questo caso, 
 
 ### Step 2: conoscere la configurazione MX di OVH
 
-Qui sotto è disponibile la configurazione MX di OVH da utilizzare con i nostri servizi di posta MX Plan (da solo o incluso in un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external}, [Email Pro](https://www.ovh.it/emails/email-pro/){.external} e [Exchange](https://www.ovh.it/emails/){.external}. I nostri server di posta dispongono anche di un Antispam e un Antivirus. 
+Qui sotto è disponibile la configurazione MX di OVH da utilizzare con i nostri servizi di posta MX Plan (da solo o incluso in un piano di [hosting Web]({ovh_www}/hosting-web/){.external}, [Email Pro]({ovh_www}/emails/email-pro/){.external} e [Exchange]({ovh_www}/emails/){.external}. I nostri server di posta dispongono anche di un Antispam e un Antivirus. 
 
 |Dominio|TTL|Record|Priorità|Destinazione|
 |---|---|---|---|---|
@@ -63,7 +63,7 @@ Nel caso in cui il record MX sia presente e voglia modificarlo, clicca sui tre p
 
 Per eseguire questa operazione, clicca sul pulsante `Aggiungi un record`{.action} e seleziona `MX`{.action}. In base al servizio email scelto, inserisci le informazioni richieste: 
 
-- **se utilizzi una soluzione di posta OVH**, consulta il paragrafo precedente di questa guida: [Step 2: conoscere la configurazione MX di OVH](https://docs.ovh.it/domains/aggiungere-record-mx-configurazione-dominio/#step-2-conoscere-la-configurazione-mx-di-ovh){.external}
+- **se utilizzi una soluzione di posta OVH**, consulta il paragrafo precedente di questa guida: [Step 2: conoscere la configurazione MX di OVH](./#step-2-conoscere-la-configurazione-mx-di-ovh){.external}
 
 - **se utilizzi un’altra soluzione di posta**, segui le indicazioni fornite dal provider del tuo servizio di posta.
 
