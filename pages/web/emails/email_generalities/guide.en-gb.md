@@ -28,7 +28,7 @@ To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=g
 |MX Plan solution legacy version|MX Plan solution new version|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the "Subscription" box|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server reference` in the "Summary" box|
-|Continue to [Legacy version of the MX Plan solution](./#legacy-version-of-the-mx-plan-solution_2)|Continue to [New version of the MX Plan solution](./#new-version-of-the-mx-plan-solution)|
+|Continue to [Legacy version of the MX Plan solution](./#mx-plan-solution-legacy-version_2)|Continue to [New version of the MX Plan solution](./#new-version-of-the-mx-plan-solution)|
 
 ### New version of the MX Plan solution.
 
@@ -76,8 +76,8 @@ You will need to set up your email address on the device you want to check your 
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/){.external}|[Outlook 2016](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016/){.external}|[MacOS Mail (latest version)](https://docs.ovh.com/gb/en/emails/guide-configuring-mail-on-macos/){.external}|[Android (latest version)](https://docs.ovh.com/gb/en/emails/configuration-android/){.external}
-|[Configuring an email address on the Gmail online interface](https://docs.ovh.com/gb/en/emails/gmail-configuration/){.external}|[Configuring an email address on iPhone and iPad](https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/){.external}|
+|[Windows 10 Mail](../mail-configuration-windows-10/){.external}|[Outlook 2016](../configuration-outlook-2016/){.external}|[macOS Mail](../guide-configuring-mail-on-macos/){.external}|[Android](../configuration-android/){.external}|[Gmail online interface](../gmail-configuration/){.external}|
+| | |[iPhone and iPad](../email_hosting_iphone_ios_91_configuration/){.external}| | |
 
 If you simply need the information required to configure your email account, the settings to use are listed below:
 
@@ -133,9 +133,7 @@ Once you have configured your email addresses, you can start using them straight
 
 ##### 1. Use the Roundcube webmail interface.
 
-Go to the [Webmail login]({ovh_www}/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button.
-
-Your inbox will appear. -
+Go to the [Webmail login]({ovh_www}/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button. Your inbox will appear.
 
 ![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
@@ -145,7 +143,8 @@ You will need to set up your email address on the device you want to check your 
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/){.external}|[Outlook 2016](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016/){.external}|[MacOS Mail (latest version)](https://docs.ovh.com/gb/en/emails/guide-configuring-mail-on-macos/){.external}|[Android (latest version)](https://docs.ovh.com/gb/en/emails/configuration-android/){.external}|[Gmail](https://docs.ovh.com/gb/en/emails/gmail-configuration/){.external}|[Mail for iPhone and iPad (iOS 7 or later)](https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/){.external}|
+|[Windows 10 Mail](../mail-configuration-windows-10/){.external}|[Outlook 2016](../configuration-outlook-2016/){.external}|[macOS Mail](../guide-configuring-mail-on-macos/){.external}|[Android](../configuration-android/){.external}|[Gmail online interface](../gmail-configuration/){.external}|
+| | |[iPhone and iPad](../email_hosting_iphone_ios_91_configuration/){.external}| | |
 
 If you simply need the information required to configure your email account, the settings to use are listed below:
 
