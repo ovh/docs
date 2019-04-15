@@ -24,7 +24,7 @@ O IPv6 é a versão mais recente do _Internet Protocol_ (IP). Cada servidor VPS 
 - Dispor de um [servidor VPS da OVH](https://www.ovh.com/pt/vps/){.external}.
 - Ter acesso ao VPS através do protocolo SSH (acesso root).
 - Ter conhecimentos básicos de rede.
-- Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Serviços Dedicados`{.action}.
+- Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Cloud`{.action}.
 
 ## Instruções
 
