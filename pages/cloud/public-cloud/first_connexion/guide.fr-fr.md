@@ -48,7 +48,7 @@ L'utilisateur de Public Cloud sera différent selon le système d'exploitation q
 |Ubuntu 16.10|ubuntu|
 |Ubuntu 17.04|ubuntu|
 
-> \[!primary]
+> [!primary]
 >
 > En vous connectant directement, vous aurez les droits d'utilisateur standard. Si vous souhaitez devenir l'utilisateur root, vous pouvez utiliser la commande sudo -i ou sudo su.
 >
@@ -107,7 +107,7 @@ Un message apparaîtra vous demandant de confirmer vos informations de connexion
 
 Vous serez ensuite connecté à votre instance.
 
-> \[!primary]
+> [!primary]
 >
 > Si vous rencontrez des problèmes de connexion à votre instance Windows, assurez-vous que votre pare-feu Windows autorise les connexions RDP. Veuillez consulter notre guide sur la [configuration du serveur Windows](https://docs.ovh.com/gb/en/vps/windows-first-config/){.external} si vous avez besoin de plus d'informations.
 > 

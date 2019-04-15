@@ -240,7 +240,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-Le disque défectueux est désormais prêt à être remplacé par un technicien en datacenter. Une fois l'opération effectuée, vous n'aurez plus qu'à resynchroniser le RAID. Pour cela, aidez-vous de la documentation suivante : [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/){.external}.
+Le disque défectueux est désormais prêt à être remplacé par un technicien en datacenter. Une fois l'opération effectuée, vous n'aurez plus qu'à resynchroniser le RAID. Pour cela, aidez-vous de la documentation suivante : [RAID logiciel](../raid-soft/){.external}.
 
 ### Sous Windows
 
@@ -282,7 +282,7 @@ Dans notre exemple, nous avons donc récupéré l'« **Enclosure ID** » (corres
 
 #### Étape 3 : allumer le disque
 
-Muni des informations récupérées durant les étapes précédentes, allumez la LED du disque hors d'usage en vue de son remplacement avec la commande `./sas2ircu 0 locate EncID:SlotID on`. Personnalisez celle-ci selon votre situation, comme dans l'exemple ci-dessous :
+Muni des informations récupérées durant les étapes précédentes, allumez la LED du disque hors d'usage en vue de son remplacement avec la commande `.\sas2ircu 0 locate EncID:SlotID on`. Personnalisez celle-ci selon votre situation, comme dans l'exemple ci-dessous :
 
 ![locate](images/locate.png){.thumbnail}
 
@@ -292,7 +292,7 @@ Vous pouvez désactiver le clignotement du disque, en remplaçant « on » par
 
 Réalisez cette manipulation depuis l'interface « **Gestion des disques** » de votre serveur Windows.
 
-Le disque défectueux est désormais prêt à être remplacé par un technicien en datacenter. Une fois l'opération effectuée, vous n'aurez plus qu'à resynchroniser le RAID. Pour cela, aidez-vous de la documentation suivante : [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/){.external}.
+Le disque défectueux est désormais prêt à être remplacé par un technicien en datacenter. Une fois l'opération effectuée, vous n'aurez plus qu'à resynchroniser le RAID. Pour cela, aidez-vous de la documentation suivante : [RAID logiciel](../raid-soft/){.external}.
 
 ## Aller plus loin
 

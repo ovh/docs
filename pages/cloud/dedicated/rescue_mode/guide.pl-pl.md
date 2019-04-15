@@ -54,7 +54,7 @@ Po zrestartowaniu serwera, otrzymasz e-mail z danymi umożliwiającymi dostęp d
 #### Korzystanie z SSH (wiersz poleceń) w trybie Rescue
 
 
-> \[!primary]
+> [!primary]
 > 
 > W przypadku gdy korzystasz z klucza SSH (aktywnego również w Panelu klienta) nie zostanie wysłane do Ciebie hasło. Po aktywacji trybu Rescue będziesz mógł zalogować się bezpośrednio za pomocą swojego klucza SSH.
 >
@@ -98,7 +98,7 @@ Po odnalezieniu partycji, którą chcesz zamontować, zastosuj poniższe polecen
 rescue:~# mount /dev/hda1 /mnt/
 ```
 
-> \[!primary]
+> [!primary]
 >
 > Twoja partycja zostanie wówczas zamontowana. Będziesz mógł od tej pory wykonywać operacje w systemie plików.
 > 
