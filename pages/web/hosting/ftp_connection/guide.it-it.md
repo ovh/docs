@@ -6,17 +6,17 @@ section: 'FTP e SSH'
 order: 1
 ---
 
-**Ultimo aggiornamento: 08/04/2019**
+**Ultimo aggiornamento: 15/04/2019**
 
 ## Obiettivo
 
-Le soluzioni di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} mettono a disposizione uno spazio di storage in cui è possibile pubblicare i file del tuo sito Internet o delle tue applicazioni. L’accesso a questo spazio è possibile tramite un utente FTP o SSH e la relativa password associata.
+Le soluzioni di [hosting Web OVH]({ovh_www}/hosting-web/){.external} mettono a disposizione uno spazio di storage in cui è possibile pubblicare i file del tuo sito Internet o delle tue applicazioni. L’accesso a questo spazio è possibile tramite un utente FTP o SSH e la relativa password associata.
 
 **Questa guida ti mostra come effettuare l’accesso allo spazio di storage disponibile con il tuo hosting Web OVH.**
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
+- Disporre di un piano di [hosting Web OVH]({ovh_www}/hosting-web/){.external}
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}
 
 ## Procedura
@@ -62,11 +62,11 @@ A questo punto dovresti disporre di tutti gli elementi richiesti per accedere al
 
 Per effettuare l’accesso, sono disponibili diverse opzioni. Prosegui nella lettura di questa guida in base alla modalità scelta:
 
-[1. FTP Explorer](./#1-accesso-via-ftp-explorer): consente di effettuare l’accesso direttamente dal browser Internet.
+[1. FTP Explorer](./#1-ftp-explorer): consente di effettuare l’accesso direttamente dal browser Internet.
 
-[2. Client FTP](./#2-accesso-via-client-ftp): consente di effettuare l’accesso tramite software (ad esempio, FileZilla o Cyberduck). Se opti per questa soluzione, installa il software scelto sul tuo computer.
+[2. Client FTP](./#2-client-ftp): consente di effettuare l’accesso tramite software (ad esempio, FileZilla o Cyberduck). Se opti per questa soluzione, installa il software scelto sul tuo computer.
 
-[3. Accesso SSH](./#3-accesso-via-ssh): consente di effettuare l’accesso tramite il protocollo Secure Shell. Per utilizzare questa soluzione sono necessarie competenze tecniche avanzate e un [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} compatibile.
+[3. Accesso SSH](./#3-accesso-ssh): consente di effettuare l’accesso tramite il protocollo Secure Shell. Per utilizzare questa soluzione sono necessarie competenze tecniche avanzate e un [hosting Web OVH]({ovh_www}/hosting-web/){.external} compatibile.
 
 #### 1. FTP Explorer
 
