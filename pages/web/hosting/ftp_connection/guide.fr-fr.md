@@ -37,7 +37,7 @@ Pour vous connecter à votre espace de stockage, vous devez être en possession 
 > **Si vous êtes déjà en possession de ces derniers**, poursuivez directement vers l'étape 2 « [Accéder à votre espace de stockage](./#etape-2-acceder-a-votre-espace-de-stockage) ».
 > 
 
-Si vous n’êtes pas en possession de ces éléments, connectez-vous à [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
+Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
 
 Les informations liées à votre espace de stockage apparaissent alors, ainsi qu'un tableau listant les utilisateurs FTP et SSH créés sur votre hébergement.
 
