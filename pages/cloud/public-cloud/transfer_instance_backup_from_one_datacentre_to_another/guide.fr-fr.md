@@ -53,7 +53,19 @@ Exécutez alors la commande ci-dessous afin de créer une sauvegarde de votre in
 Lancez cette commande pour lister les instances disponibles :
 
 ```
-#root@server:~$ openstack image list +--------------------------------------+-----------------------------------------------+--------+ | ID | Name | Status | +--------------------------------------+-----------------------------------------------+--------+ | 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_server1 | active | | 3ff877dc-1a62-43e7-9655-daff37a0c355 | NVIDIA GPU Cloud (NGC) | active | | a14a7c1e-3ac5-4a61-9d36-1abc4ab4d5e8 | Centos 7 | active | | f720a16e-543b-42e5-af45-cc188ad2dd34 | Debian 8 - GitLab | active | | d282e7aa-332c-4dc7-90a9-d49641fa7a95 | CoreOS Stable | active | | 2519f0fb-18cc-4915-9227-7754292b9713 | Ubuntu 16.04 | active | | b15789f8-2e2f-4f6c-935d-817567319627 | Windows Server 2012 R2 Standard - UEFI | active | | ed2f327f-dbae-4f9e-9754-c677a1b76fa3 | Ubuntu 14.04 | active | | 9c9b3772-5320-414a-90bf-60307ff60436 | Debian 8 - Docker | active |
+#root@server:~$ openstack image list 
++--------------------------------------+-----------------------------------------------+--------+ 
+| ID | Name | Status | 
++--------------------------------------+-----------------------------------------------+--------+ 
+| 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_server1 | active | 
+| 3ff877dc-1a62-43e7-9655-daff37a0c355 | NVIDIA GPU Cloud (NGC) | active | 
+| a14a7c1e-3ac5-4a61-9d36-1abc4ab4d5e8 | Centos 7 | active | 
+| f720a16e-543b-42e5-af45-cc188ad2dd34 | Debian 8 - GitLab | active | 
+| d282e7aa-332c-4dc7-90a9-d49641fa7a95 | CoreOS Stable | active | 
+| 2519f0fb-18cc-4915-9227-7754292b9713 | Ubuntu 16.04 | active | 
+| b15789f8-2e2f-4f6c-935d-817567319627 | Windows Server 2012 R2 Standard - UEFI | active | 
+| ed2f327f-dbae-4f9e-9754-c677a1b76fa3 | Ubuntu 14.04 | active | 
+| 9c9b3772-5320-414a-90bf-60307ff60436 | Debian 8 - Docker | active |
 ```
 
 Identifiez maintenant la sauvegarde dans la liste :
@@ -74,7 +86,7 @@ Pour démarrer le processus de transfert, vous devez d'abord charger de nouvelle
 
 > [!warning]
 >
-Si vous transférez votre sauvegarde vers un datacenter dans le même projet, il vous suffit de modifier la variable OS\_REGION\_NAME.
+> Si vous transférez votre sauvegarde vers un datacenter dans le même projet, il vous suffit de modifier la variable OS\_REGION\_NAME.
 >
 
 ``` 
@@ -127,6 +139,6 @@ Utilisez l'ID de sauvegarde comme image avec la commande suivante :
 
 ## Aller plus loin
 
-« [Transférer la sauvegarde d’un volume d’un datacentre a l’autre](https://docs.ovh.com/fr/public-cloud/transferer-la-sauvegarde-dun-volume-dun-datacentre-a-lautre/){.external}. »
+[Transférer la sauvegarde d’un volume d’un datacentre a l’autre](../transferer-la-sauvegarde-dun-volume-dun-datacentre-a-lautre/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
