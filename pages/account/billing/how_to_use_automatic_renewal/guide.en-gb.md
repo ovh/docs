@@ -114,6 +114,13 @@ To add a new payment method, click `Add a payment method`{.action}, then select 
 
 ![manageautomaticrenewal](images/manage-automatic-renewal-step10.png){.thumbnail}
 
+To delete a payment method via the customer panel, you have to have at least one other valid mean of payment.
+
+If you want to delete all your payment methods, please use the API and follow these steps :
+- First GET the ID of the payment list: https://api.ovh.com/console/#/me/payment/method#GET
+- Then DELETE the payment method using the ID you got from the previous step:
+  https://api.ovh.com/console/#/me/payment/method/%7BpaymentMethodId%7D#DELETE
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.

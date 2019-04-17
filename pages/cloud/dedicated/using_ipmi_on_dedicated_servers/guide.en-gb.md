@@ -22,6 +22,10 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 
 You can access the IPMI using two different methods: the Java applet (recommended) or the browser (Serial over LAN).
 
+__Java applet__: Allows you to use a KVM (keyboard, video, mouse) tool through a Java console to perform the actions you want, with both options: keyboard and mouse.
+
+__SoL (Serial over LAN)__: Allows you to have remote access to the sever console through a web browser.
+
 ### Access via the Java applet.
 
 You will need to ensure that Java is installed on your desktop for the Java applet to work. If you do not have Java installed, go to the [official page](https://www.java.com/en/download/){.external} to do so.
@@ -62,6 +66,11 @@ If everything appears to be normal, as per our example, you may be experiencing 
 ![IPMI test](images/ipmi_reboot.png){.thumbnail}
 
 It will take several minutes for the IPMI to reboot.
+
+> [!Primary]
+>
+> It will not impact to the server functioning.
+>
 
 ## Go further
 

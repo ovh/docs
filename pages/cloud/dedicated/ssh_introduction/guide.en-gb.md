@@ -36,7 +36,7 @@ For the latest Windows 10 and Windows Server versions, developer mode gives you 
 
 #### Connecting from a Mac
 
-The `Terminal`{.action} tool comes with with Mac OS X can be used to establish an SSH connection to your server.
+The `Terminal`{.action} tool comes with Mac OS X can be used to establish an SSH connection to your server.
 
 #### Connecting from a Linux computer
 
@@ -50,7 +50,7 @@ Besides these applications, you can also use [OpenSSH](http://www.openssh.com){.
 
 #### Step 1: Connecting for the first time
 
-To connect to your machine via SSH, you will need the server’s IPv4 address or name, and the server’s root password, which you received by email when the server was first set up.
+To connect to your machine via SSH, you will need the server’s IPv4 address or name, and the server’s root password, which you received by email when the server was first installed.
 
 after opening the command line console, enter the following command:
 
