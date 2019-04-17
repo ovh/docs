@@ -1,11 +1,10 @@
 ---
 title: 'Web hosting: FileZilla user guide'
-excerpt: How to use FileZilla
-id: '1380'
 slug: web_hosting_filezilla_user_guide
+excerpt: 'How to use FileZilla'
+id: '1380'
 legacy_guide_number: g1380
 ---
-
 
 ## Presentation
 FileZilla is a program available on several operating systems (Windows, MacOS, etc.).
@@ -58,15 +57,14 @@ The main bar contains useful icons for the basic operation of the software. We d
 ## FTP connection
 In the green box at the top, in order to establish the connection to the remote server, you will be asked for:
 
-- Host: ftp.your-domain.tld or 
+|Information to enter|Details|
+|---|---|
+|FTP server|This is the server address that gives you access to your storage space.<br><br> Depending on the software you are using, the name may look like this: "Server", "Server address", "Host", or "Host name".|
+|FTP login|This is the username for accessing your storage space.<br><br> Depending on which software you are using, the field may be labelled as: "User", "Username", "ID", or "Login".|
+|FTP user password|This is the password associated with the FTP login.<br><br> Depending on which software you are using, the field should be labelled as "Password".|
+|Connection port|This is usually entered automatically by the program. If you need to enter it manually:<br><br>\- use port "21" for a connection using FTP protocol<br>\- use port "22" for a connection using SFTP (if it is enabled)|
 
-ftp.cluster0XX.ovh.net or 
-newftp.cluster0XX.ovh.net
-
-- Username: your FTP login 
-- Password: the FTP password associated with the login
-- Port: can be empty (otherwise put 21)
-
+If you don’t have this information, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Web`{.action} section, then click on `Hosting`{.action} in the services bar on the left-hand side. Select the name of the Web Hosting plan concerned, and click on the `FTP - SSH`{.action} tab. The information about your storage space will appear, along with a table listing the FTP and SSH users created on your Web Hosting plan.
 
 Once everything is entered correctly, clickQuickconnect to connect to the server.
 

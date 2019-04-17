@@ -1,11 +1,10 @@
 ---
 title: 'Partilhado: Guia de utilização do FileZilla'
-excerpt: Guia de utilização do FileZilla
-id: '1380'
 slug: partilhado_guia_de_utilizacao_do_filezilla
+excerpt: 'Guia de utilização do FileZilla'
+id: '1380'
 legacy_guide_number: g1380
 ---
-
 
 ## Apresentação
 FileZilla é um software disponível para vários sistemas operativos (Windows, MAcOSm, etc).
@@ -58,11 +57,14 @@ O separador principal contém os ícones úteis ao funcionamento básico do soft
 ## Ligação FTP
 No quadro verde em cima, para que possa estabelecer a ligação ao servidor distante, ser-nos-á pedido pelo software:
 
-- Servidor : ftp.seu-dominio.tld ou ftp.cluster0XX.ovh.net ou newftp.cluster0XX.ovh.net
-- Identificador: o seu login FTP
-- Password: a password FTP associada ao login
-- Porta : deixe vazio (caso contrário, coloque 21)
+|Informação solicitada|Detalhes|
+|---|---|
+|Servidor FTP|Trata-se do endereço do servidor que lhe permite aceder ao seu espaço de armazenamento.<br><br> Em função do tipo de software, pode denominar-se “servidor”, “endereço de servidor”, “host”, “nome do host”, etc.|
+|Login FTP|Trata-se do endereço do servidor que lhe permite aceder ao seu espaço de armazenamento.<br><br> Em função do tipo de software, pode denominar-se “utilizador”, “nome de utilizador”, “identificador”, “login” ou “username”.|
+|Palavra-passe do utilizador FTP|Trata-se da palavra-passe associada ao login FTP.<br><br> Em função do tipo de software, pode denominar-se “palavra-passe” ou “password”.|
+|Porta de ligação|Este campo é preenchido de forma automática pelo software. Se tiver de preencher alguma informação:<br><br>\- utilize a porta 21 para uma ligação através do protocolo FTP;<br>\- utilize a porta 22 para uma ligação através do protocolo SFTP (caso este esteja ativo).|
 
+Se não possuir estas informações, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção “Web”, e clique em `Alojamentos`{.action} na barra à esquerda. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. Poderá ver as informações relativas ao seu espaço de armazenamento, assim como uma tabela com os utilizadores FTP e SSH criados no seu alojamento.
 
 Após tudo preenchido de forma correta, clique em Ligação rápida para estabelecer a ligação ao servidor.
 
