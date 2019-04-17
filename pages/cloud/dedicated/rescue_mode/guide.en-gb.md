@@ -5,7 +5,7 @@ excerpt: 'How to activate and use rescue mode on a Dedicated Server'
 section: 'Diagnostic and rescue mode'
 ---
 
-**Last updated 12th September 2018**
+**Last updated 04 April 2019**
 
 ## Objective
 
@@ -26,7 +26,7 @@ You can activate rescue mode by logging into the [OVH Control Panel](https://www
 
 ![Modify boot mode](images/rescue-mode-01.png){.thumbnail}
 
-On the next screen, select `Boot in rescue mode`{.action}. If your server has a Linux-based OS, select `rescue64-pro`{.action} from the dropdown list. If you have a Windows server, select `WinRescue`{.action}. Lastly, enter your email address in the text field, then click `Next`{.action}.
+On the next screen, select `Boot in rescue mode`{.action}. If your server has a Linux-based OS, select `rescue64-pro`{.action} from the dropdown list. If your server runs on Windows or FreeBSD, select `WinRescue`{.action} or `bsd-rescue-pro`{.action} respectively. Lastly, enter your email address in the text field, then click `Next`{.action}.
 
 ![Mode rescue-pro](images/rescue-mode-03.png){.thumbnail}
 
@@ -43,11 +43,12 @@ Your server will now reboot in rescue mode, and you will receive the credentials
 Once your server has rebooted, you will receive an email with your rescue mode access credentials. The email will also contain a link to the rescue mode web interface, which you can use to perform the following tests:
 
 - <b>Hard disks.</b> Checks their integrity with SMART tests.
-- <b>Processors.</b> Checks that they are functioning normally.
+- <b>Processors.</b> Checks that they are functioning normally. (This test takes a while.)
 - <b>Partitions (states).</b> Checks the states of readers.
-- <b>Partitions (file systems).</b> Checks the server’s file system.
+- <b>Partitions (file systems).</b> Checks the server’s file system. 
 - <b>Partitions (explore).</b> Launches a browser for exploring files. You cannot edit them with this tool, but you can back them up.
-- <b>Memory.</b> Checks the RAM installed on the server.
+- <b>Memory.</b> Checks the RAM installed on the server. (This test takes a while.)
+- <b>Network.</b> Checks the connection to an OVH-internal reference system as well as the connection to your browser.
 
 ![Web interface for rescue mode](images/rescue-mode-04.png){.thumbnail}
 
@@ -67,6 +68,12 @@ For example:
 ssh root@your_server_IP
 root@your_server_password:
 ```
+> [!warning]
+> 
+> Your SSH-Client will likely block the connection due to a mismatch of the ECDSA fingerprint. This is normal because the rescue mode uses its own temporary ssh server.
+>
+> One way around this, is commenting the fingerprint of your regular system by adding a `#` in front of its line in the known_hosts file. And reverting that change when returning to normal boot.
+>
 
 For most changes you make to your server via SSH while in rescue mode, you will need to mount a partition. This mode has its own temporary file system, so any file system changes you make in rescue mode will be lost once you reboot the server back in normal mode.
 
@@ -118,18 +125,19 @@ Once your server has rebooted, you will receive an email with your rescue mode a
 
 |Tools|Description|
 |---|---|
+|Firefox|A web browser.|
 |Freecommander|A file manager with all the standard features you would need.|
-|NTPWdi|An easy-to-use password manager. You can use it to reactivate or change the passwords of user accounts on your server. This tool is useful if you ever lose your credentials, or need to reactivate a security account.|
-|FileZilla|An open-source FTP client. It supports SSH and SSL protocols, and has a clear and intuitive drag-and-drop interface. You can use it to transfer your data to an FTP server, like the FTP backup service included with most OVH server models.|
-|7-Zip|A utility for compressing and archiving files, which reads the following formats: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR and Z. You can also use it to create your own archives in the following formats: BZIP2, GZIP, TAR, WIM, XZ, Z and ZIP.|
+|NTPWEdit|An easy-to-use password manager. You can use it to reactivate or change the passwords of user accounts on your server. This tool is useful if you ever lose your credentials, or need to reactivate a security account.|
 |Avast Virus Cleaner|An anti-virus application that scans and cleans files.|
 |ActivNIC|A tool you can use to enable a disabled network interface card.|
-|SRVFirewall|A script that enables and disables the firewall on your server.|
-|SysInternal|A software suite from Microsoft that includes several tools you can use to carry out network maintenance, and manage processes.|
+|BootSect|A tool that allows to repair the bootsector.|
 |Virtual Clone Drive|A tool you can use to mount BIN, CCD and ISO files in a virtual CD reader.|
-|Firefox|A web browser.|
+|smartCTL|Self-Monitoring Analysis and Reporting Technology controll - A tool to to access self monitoring logs of the harddrives.|
+|Diskpart|A tool to manipulate the partitions of the Server.|
+|SysInternal|A software suite from Microsoft that includes several tools you can use to carry out network maintenance, and manage processes.|
 |TestDisk|A powerful data recovery application. You can use it to recover and modify corrupted partitions, find lost partitions, repair a boot sector and even rebuild a defective MBR.|
-
+|FileZilla|An open-source FTP client. It supports SSH and SSL protocols, and has a clear and intuitive drag-and-drop interface. You can use it to transfer your data to an FTP server, like the FTP backup service included with most OVH server models.|
+|7-Zip|A utility for compressing and archiving files, which reads the following formats: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR and Z. You can also use it to create your own archives in the following formats: BZIP2, GZIP, TAR, WIM, XZ, Z and ZIP.|
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.

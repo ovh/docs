@@ -1,11 +1,10 @@
 ---
 title: 'Webhosting: Hilfe zur Verwendung von FileZilla'
-excerpt: In dieser Hilfe wird die Verwendung des FileZilla FTP-Programms beschrieben.
-id: '1380'
 slug: webhosting_hilfe_zur_verwendung_von_filezilla
+excerpt: 'In dieser Hilfe wird die Verwendung des FileZilla FTP-Programms beschrieben.'
+id: '1380'
 legacy_guide_number: g1380
 ---
-
 
 ## Vorstellung
 FileZilla ist ein für verschiedene Betriebssysteme (Linux, Windows, MacOS...) verfügbares freies FTP Programm.
@@ -59,12 +58,14 @@ Die Menüleiste enthält nützliche Icons für den Zugriff auf die Basisfunktion
 ## FTP Verbindung
 Um die Verbindung mit dem Server herzustellen, müssen Sie in dem grünen Rahmen oben folgende Angaben eintragen:
 
+|Anzugebende Information:|Beschreibung|
+|---|---|
+|FTP-Server:|Hierbei handelt es sich um die Serveradresse, die Sie benötigen, um auf Ihren Speicherplatz zuzugreifen.<br><br> Je nach verwendetem Client sind verschiedene Bezeichnungen möglich: „Server“, „Serveradresse“, „Host“. „Hostname“ etc.|
+|FTP-Login|Hierbei handelt es sich um die Kennung bzw. den Login, den Sie benötigen, um auf Ihren Speicherplatz zuzugreifen.<br><br> Je nach verwendetem Client sind verschiedene Bezeichnungen möglich: „Benutzer“, „Benutzername“, „Kennung“, „Login“, „Username“ etc.|
+|FTP-Benutzerpasswort|Hierbei handelt es sich um das Passwort des FTP-Benutzers.<br><br> Je nach verwendetem Client sind verschiedene Bezeichnungen wie „Passwort“ oder „Password“ möglich.|
+|Verbindungsport|Der Verbindungsport wird meistens automatisch angegeben. Falls Sie diesen jedoch selbst eingeben müssen:<br><br>\- verwenden Sie den Port „21“ für eine Verbindung via FTP.<br>\- verwenden Sie den Port „22“ für eine Verbindung via SFTP (falls das Protokoll aktiviert ist).|
 
-- Server: ftp.ihre-domain.tld oder ftp.cluster0XX.ovh.net oder newftp.cluster0XX.ovh.net
-- Benutzername: Ihr FTP-Login
-- Passwort: Das zu dem FTP-Login gehörende Passwort
-- Port: Kann leer gelassen werden (alternativ 21 eintragen)
-
+Wenn Sie nicht mehr im Besitz dieser Daten sind, loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und klicken Sie im Bereich „Web“ links in der Menüleiste auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Hier werden alle zum Speicherplatz gehörigen Informationen sowie eine Tabelle angezeigt, in der die für Ihr Webhosting angelegten FTP- und SSH-Benutzer aufgelistet werden.
 
 Sobald alle Angaben eingetragen wurden klicken Sie auf Verbinden, um die Verbindung mit dem Server aufzubauen.
 

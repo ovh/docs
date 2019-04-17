@@ -59,7 +59,7 @@ Jakmile vyberete požadovaný režim redistribuce datové zátěže, klikněte n
 
 Pokud znáte ID farmy, můžete získat její detailní informace. V následujícím příkladu budeme pracovat s HTTP farmou:
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
@@ -83,7 +83,7 @@ Pokud znáte ID farmy, můžete získat její detailní informace. V následují
 
 Pokud znáte ID farmy, můžete upravit její konfiguraci. V následujícím příkladu budeme pracovat s HTTP farmou. Pro změnu režimu redistribuce datové zátěže je zapotřebí aktualizovat následující pole:  `BackendHttp.balance`
 
-> \[!api]
+> [!api]
 >
 > @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{id}
 > 
@@ -96,7 +96,7 @@ Pokud znáte ID farmy, můžete upravit její konfiguraci. V následujícím př
 
 - Aplikace provedených úprav
 
-> \[!api]
+> [!api]
 >
 > @api {POST} /ipLoadbalancing/{serviceName}/refresh
 > 

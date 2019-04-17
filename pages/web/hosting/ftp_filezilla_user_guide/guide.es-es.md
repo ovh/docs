@@ -1,12 +1,11 @@
 ---
 title: 'Web hosting: guía de uso de FileZilla'
-excerpt: Consulte en esta guía todo lo que necesite saber sobre el uso de FileZilla.
-id: '1380'
 slug: web_hosting_guia_de_uso_de_filezilla
+excerpt: 'Consulte en esta guía todo lo que necesite saber sobre el uso de FileZilla.'
+id: '1380'
 legacy_guide_number: g1380
-section: FTP y SSH
+section: 'FTP y SSH'
 ---
-
 
 ## Presentación
 FileZilla es un programa disponible para varios sistemas operativos (Windows, Mac, etc.) que ofrece la posibilidad de publicar un sitio web, al permitirle conectarse a su espacio de alojamiento por FTP.
@@ -59,12 +58,14 @@ A continuación se ofrece una breve descripción de estos iconos:
 ## Conexión FTP
 Para establecer la conexión con el servidor remoto, introduzca los siguientes datos en la barra de conexión rápida (recuadro verde en la imagen):
 
+|Información solicitada|Detalles|
+|---|---|
+|Servidor FTP|Es la dirección del servidor que permite acceder al espacio de almacenamiento.<br>Según el cliente FTP utilizado, puede denominarse «servidor», «dirección del servidor», «host», «nombre del host»...|
+|Usuario FTP|Es el usuario que permite acceder al espacio de almacenamiento.<br>Según el cliente FTP utilizado, puede denominarse «usuario», «nombre de usuario», «identificador», «login», «username»...|
+|Contraseña del usuario FTP|Es la contraseña asociada al usuario FTP.<br>Según el cliente FTP utilizado, puede denominarse «contraseña» o «password».|
+|Puerto de conexión|Este campo suele autocompletarse. Si tuviera que rellenarlo:<br>- utilice el puerto 21 para conectarse mediante el protocolo FTP;<br>- utilice el puerto 22 para conectarse mediante el protocolo SFTP (en caso de que esté activado).|
 
-- Servidor: ftp.mi-dominio.tld o ftp.cluster0XX.ovh.net o newftp.cluster0XX.ovh.net
-- Nombre de usuario: Su usuario FTP
-- Contraseña: Contraseña FTP asociada al usuario
-- Puerto: Dejar vacío o introducir 21
-
+Si no dispone de esta información, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} en la sección **Web** y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento, así como una tabla con los usuarios FTP y SSH creados en el alojamiento.
 
 Cuando haya completado todos los datos, haga clic en «Conexión rápida» para establecer la conexión con el servidor.
 

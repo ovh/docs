@@ -6,7 +6,7 @@ section: 'Rede e IP'
 order: 1
 ---
 
-**Última atualização: 02/04/2019**
+**Última atualização: 15/04/2019**
 
 ## Sumário
 
@@ -21,10 +21,10 @@ O IPv6 é a versão mais recente do _Internet Protocol_ (IP). Cada servidor VPS 
 
 ## Requisitos
 
-- Dispor de um [servidor VPS da OVH](https://www.ovh.com/pt/vps/){.external}.
+- Dispor de um [servidor VPS da OVH]({ovh_www}/vps/){.external}.
 - Ter acesso ao VPS através do protocolo SSH (acesso root).
 - Ter conhecimentos básicos de rede.
-- Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Serviços Dedicados`{.action}.
+- Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Cloud`{.action}.
 
 ## Instruções
 
@@ -42,14 +42,14 @@ Antes de começar, e com o objetivo de utilizar a mesma terminologia durante as 
 
 A primeira etapa consiste em recuperar o endereço IPv6 e a gateway IPv6 associados ao servidor. Existem dois métodos possíveis. Opte pelo método que pretende utilizar.
 
-- [Obter as informações de rede através da Área de Cliente](https://docs.ovh.com/pt/vps/configurar-ipv6/#atraves-da-area-de-cliente).
-- [Obter as informações de rede através das API](https://docs.ovh.com/pt/vps/configurar-ipv6/#atraves-das-api-da-ovh).
+- [Obter as informações de rede através da Área de Cliente](./#atraves-da-area-de-cliente).
+- [Obter as informações de rede através das API](./#atraves-das-api-da-ovh).
 
 #### Através da Área de Cliente
 
 Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Cloud`{.action}. Clique em `Servidores`{.action} na barra à esquerda e selecione o nome do servidor VPS correspondente. Certifique-se de que está no separador `Página Inicial`{.action}.
 
-O endereço IPv6 e a gateway IPv6 associados ao servidor aparecem na secção `IP`. Consulte-os e siga para a etapa “[2 - Aplicar a configuração IPv6](https://docs.ovh.com/pt/vps/configurar-ipv6/#2-aplicar-a-configuracao-ipv6_1){.external}”.
+O endereço IPv6 e a gateway IPv6 associados ao servidor aparecem na secção `IP`. Consulte-os e siga para a etapa “[2 - Aplicar a configuração IPv6](./#2-aplicar-a-configuracao-ipv6_1){.external}”.
 
 ![configureipv6](images/configure-ipv6-step1.png){.thumbnail}
 
@@ -71,7 +71,7 @@ A segunda serve para obter a gateway IPv6 associada ao seu servidor.
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >
 
-Consulte-os e siga para a etapa “[2 - Aplicar a configuração IPv6](https://docs.ovh.com/pt/vps/configurar-ipv6/#2-aplicar-a-configuracao-ipv6_1){.external}”.
+Consulte-os e siga para a etapa “[2 - Aplicar a configuração IPv6](./#2-aplicar-a-configuracao-ipv6_1){.external}”.
 
 ### 2 - Aplicar a configuração IPv6
 
@@ -79,10 +79,10 @@ Depois de obter as informações necessárias para a configuração IPv6, aceda 
 
 Existem vários métodos para aplicar a configuração IPv6. Escolha a que pretende utilizar consoante a sua situação e as suas necessidades.
 
-- [Aplicação não persistente](https://docs.ovh.com/pt/vps/configurar-ipv6/#aplicacao-nao-persistente).
-- [Aplicação persistente em Debian e derivados (Ubuntu, Crunchbang, SteamOS, etc.)](https://docs.ovh.com/pt/vps/configurar-ipv6/#aplicacao-persistente-em-debian-e-derivados-ubuntu-crunchbang-steamos).
-- [Aplicação persistente em Redhat e derivados (CentOS, ClearOS, etc.)](https://docs.ovh.com/pt/vps/configurar-ipv6/#aplicacao-persistente-em-redhat-e-derivados-centos-clearos_1).
-- [Aplicação persistente no Windows Server](https://docs.ovh.com/pt/vps/configurar-ipv6/#aplicacao-persistente-no-windows-server).
+- [Aplicação não persistente](./#aplicacao-nao-persistente).
+- [Aplicação persistente em Debian e derivados (Ubuntu, Crunchbang, SteamOS…)](./#aplicacao-persistente-em-debian-e-derivados-ubuntu-crunchbang-steamos).
+- [Aplicação persistente em Redhat e derivados (CentOS, ClearOS, etc.)](./#aplicacao-persistente-em-redhat-e-derivados-centos-clearos-etc_1).
+- [Aplicação persistente no Windows Server](./#aplicacao-persistente-no-windows-server).
 
 #### Aplicação não persistente
 
@@ -102,7 +102,7 @@ ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
 ```
 
-#### Aplicação persistente em Debian e derivados (Ubuntu, Crunchbang, SteamOS, etc.)
+#### Aplicação persistente em Debian e derivados (Ubuntu, Crunchbang, SteamOS…)
 
 Existem dois métodos para configurar a sua rede consoante o sistema operativo instalado no seu servidor:
 
@@ -119,8 +119,8 @@ Em certos casos (Debian 9, mais especificamente), é possível que o método que
 
 Selecione o método que corresponde ao seu caso.
 
-- [Configuração do ficheiro “interfaces”](https://docs.ovh.com/pt/vps/configurar-ipv6/#configuracao-do-ficheiro-interfaces)
-- [Configuração através da função Netplan](https://docs.ovh.com/pt/vps/configurar-ipv6/#configuracao-atraves-da-funcao-netplan)
+- [Configuração do ficheiro “interfaces”](./#configuracao-do-ficheiro-interfaces)
+- [Configuração através da função Netplan](./#configuracao-atraves-da-funcao-netplan)
 
 #####  Configuração do ficheiro “interfaces”
 

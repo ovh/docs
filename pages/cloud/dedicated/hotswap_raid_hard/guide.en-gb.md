@@ -107,11 +107,11 @@ The command to flash the disk is as follows: MegaCli -PdLocate -start -physdrv [
 
 To turn the disc off after the operation, simply replace the "start" with "stop" in the above commands.
 
-At this point, the procedure is ready to be performed. You can then provide the previously collected information to the media and indicate that the disc is turned on.
+At this point, the procedure is ready to be performed. You can then provide the previously collected information to the support team and indicate that the disc is turned on.
 
 
 ### Step 3&#58; Check the rebuilding
-Once you have completed the Datacenter, you can re-test the RAID and disks, and see that the replaced disk is in **Rebuild**.
+Once the intervention scheduled in the Datacenter is completed, you can re-test the RAID and disks, and see that the replaced disk is in **Rebuild**.
 
 <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -PdList -aALL | egrep "Slot|Device ID|state"</span>
 <span class="output">Enclosure Device ID: 252</span>

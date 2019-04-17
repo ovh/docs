@@ -5,19 +5,19 @@ excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro'
 section: 'Informacje ogólne'
 ---
 
-**Ostatnia aktualizacja z dnia 28-11-2018**
+**Ostatnia aktualizacja z dnia 09-04-2019**
 
 ## Wprowadzenie
 
-Właśnie zakupiłeś usługę E-mail Pro. Umożliwia ona korzystanie z profesjonalnych kont e-mail w najlepszej cenie pozwalającej na prowadzenie bieżącej działalności lub rozpoczęcie nowej.
+Właśnie zakupiłeś usługę E-mail Pro.  Umożliwia ona korzystanie z profesjonalnych kont e-mail w najlepszej cenie pozwalającej na prowadzenie bieżącej działalności lub rozpoczęcie nowej.
 
 **Dowiedz się, jak przeprowadzić konfigurację usługi E-mail Pro.**
 
 ## Wymagania początkowe
 
-- Wykupienie skrzynek [E-mail Pro](https://www.ovh.pl/emaile/email-pro/){.external}
+- Wykupienie usługi [E-mail Pro]({ovh_www}/emaile/email-pro/){.external}
 - Otrzymanie wiadomości e-mail z potwierdzeniem, że usługa E-mail Pro została zainstalowana
-- Zarejestrowana domena
+- Zarejestrowana domena.
 - Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## W praktyce
@@ -77,10 +77,11 @@ Przed zakończeniem konfiguracji sprawdź wyświetlające się informacje, nast�
 
 Po dodaniu nazwy domeny jako domeny powiązanej sprawdź jej ustawienia, korzystając z wyświetlającej się tabeli.
 
-W kolumnie `Diagnostyka`{.action} możesz sprawdzić konfigurację pól MX nazwy domeny. Jeśli parametry powinny zostać zmodyfikowane, wyświetli się czerwony przycisk.
+W kolumnie `Diagnostyka`{.action} możesz sprawdzić konfigurację DNS domeny. Jeśli parametry powinny zostać zmodyfikowane, wyświetli się czerwony przycisk.
 
 - **Jeśli podczas dodawania domeny wybrałeś automatyczną konfigurację**: wprowadzone ustawienia mogą wyświetlić się w Panelu klienta po kilku godzinach;
-- **Jeśli wprowadziłeś nazwę domeny nieobsługiwanej przez OVH**: kliknij czerwony przycisk, aby wyświetlić listę modyfikacji do wprowadzania. Jeśli właśnie wprowadziłeś zmiany, mogą się one wyświetlić się w Panelu klienta po kilku godzinach.
+
+- **Jeśli wprowadziłeś nazwę domeny nieobsługiwanej przez OVH**: kliknij czerwony przycisk, aby wyświetlić listę modyfikacji do wprowadzania. Jeśli chcesz utworzyć pole CNAME, skorzystaj z naszego przewodnika [Tworzenie pola CNAME po dodaniu przypisanej domeny](../../microsoft-collaborative-solutions/exchange_20132016_dodanie_pola_cname/). Jeśli chcesz dodać pole MX, skorzystaj z naszego przewodnika [Dodanie rekordu MX w konfiguracji domeny](../../domains/hosting_www_konfiguracja_serwerow_mx_w_strefie_dns_ovh/). Jeśli właśnie wprowadziłeś zmiany, mogą się one wyświetlić się w Panelu klienta po kilku godzinach.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
 
@@ -113,9 +114,9 @@ Po wprowadzeniu informacji, kliknij przycisk `Dalej`{.action}, sprawdź dane, kt
 
 ### Etap 5: korzystanie z kont e-mail
 
-Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz użyć udostępnionej przez OVH aplikacji online (*webapp*). Aplikacja dostępna jest pod adresem <https://pro1.mail.ovh.net>. Zaloguj się, wprowadzając dane identyfikacyjne przypisane do Twojego konta e-mail utworzonego w OVH.
+Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz użyć udostępnionej przez OVH aplikacji online (*webapp*). Aplikacja dostępna jest pod adresem [https://www.ovh.pl/mail/]({ovh_www}/mail/){.external}. Zaloguj się, wprowadzając dane identyfikacyjne przypisane do Twojego konta e-mail utworzonego w OVH.
 
-Jeśli chcesz skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu typu smartfon lub tablet, skorzystaj z naszej dokumentacji dostępnej tutaj: <https://docs.ovh.com/pl/emails-pro/>. Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta E-mail Pro:
+Jeśli chcesz skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu typu _smartfon_ lub tablet, [skorzystaj z przewodników dotyczących konfiguracji](../). Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta E-mail Pro:
 
 |Typ serwera|Nazwa serwera|Typ zabezpieczenia|Port|
 |---|---|---|---|

@@ -1,12 +1,12 @@
 ---
 title: Twitter Analysis with Logs Data Platform
 slug: twitter
-order: 10
+order: 07
 excerpt: Logs Data Platform can be used in multiple ways. Twitter feed and keyword analysis is one of them.
 section: Use cases
 ---
 
-**Last updated 27th February, 2018**
+**Last updated 10th April, 2019**
 
 ## Objective
 
@@ -16,9 +16,9 @@ Twitter can be an amazing source to have a direct feedback on your products or e
 
 Prior to completing this guide, you should read the following:
 
-- [Quick Start of Logs Data Platform](https://docs.ovh.com/fr/logs-data-platform/quick-start/){.external}
-- [Field naming conventions](https://docs.ovh.com/fr/logs-data-platform/field-naming-conventions/){.external}
-- [Logstash collector](https://docs.ovh.com/fr/logs-data-platform/logstash-input/){.external}
+- [Quick Start of Logs Data Platform](../quick_start/guide.fr-fr.md){.ref}
+- [Field naming conventions](../field_naming_conventions/guide.fr-fr.md){.ref}
+- [Logstash collector](../logstash_input/guide.fr-fr.md){.ref}
 
 If you have completely understood these three guides, let's dive into this one.
 
@@ -57,7 +57,7 @@ In the Logs Data Platform manager, create a Logstash collector. On the creation 
 Once your collector has been created, head to the configuration page, this is where the real fun begins! To configure your input plugin, you need the Twitter Keys created before. Here is a configuration snippet of the Twitter plugin input:
 
 
-```ruby
+```ruby hl_lines="2 3 4 5"
 twitter {
     consumer_key => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     consumer_secret => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx"
@@ -71,7 +71,7 @@ twitter {
 
 Fill the consumer Keys and Secret with the keys you obtained at the Twitter app configuration step. The oauth_token and the oauth_token_secret are the Access Token and Access Token Secret you created just before.
 
-The keywords array is the special array where you can specify which keywords you want to follow. Here i want to follow the three different competitors of the famous #ConsoleWars. If you want to follow tweets that contains multiple terms simultaneously you just separate them by a space in the same string. For Exemple: "call of duty" will follow only tweets that contain 'call', 'of' and 'Duty'. You can also just follow a specific Twitter account by using the option **follows**. For more information about the Twitter input, go to the complete [Twitter input documentationon](https://www.elastic.co/guide/en/logstash/2.4/plugins-inputs-twitter.html){.external}.
+The keywords array is the special array where you can specify which keywords you want to follow. Here i want to follow the three different competitors of the famous #ConsoleWars. If you want to follow tweets that contains multiple terms simultaneously you just separate them by a space in the same string. For Exemple: "call of duty" will follow only tweets that contain 'call', 'of' and 'Duty'. You can also just follow a specific Twitter account by using the option **follows**. For more information about the Twitter input, go to the complete [Twitter input documentation](https://www.elastic.co/guide/en/logstash/6.7/plugins-inputs-twitter.html){.external}.
 
 You must use two additional parameters:
 
@@ -84,89 +84,105 @@ Actually, if you want a minimal Twitter configuration, this could be enough. But
 
 
 ```ruby
-1. if [type] == "tweet" {
-    mutate {
-        add_field => {
-            "message" => "%{text}"
-            "full_message" => "%{text}"
-            "hashtags" => "%{[entities][hashtags]}"
-            "mentions" =>  "%{[entities][user_mentions]}"
-            "host" => "twitter"
-            "user_screen_name" => "%{[user][screen_name]}"
-            "user_id" => "%{[user][id_str]}"
-            "user_followers_count_int" => "%{[user][followers_count]}"
-            "user_friends_count_int" => "%{[user][friends_count]}"
-            "user_listed_count_int" => "%{[user][listed_count]}"
-            "user_favourites_count_int" => "%{[user][favourites_count]}"
-            "user_statuses_count_int" => "%{[user][statuses_count]}"
-            "user_profile_image_url" => "%{[user][profile_image_url_https]}"
-            "user_verified_bool" => "%{[user][verified]}"
-        }
-        remove_field => ["id_str","timestamp_ms"]
-    }
+if [type] == "tweet" {
 
-    if [user][profile_banner_url] {
-        mutate {
-            add_field => {
-                "user_profile_banner_url" => "%{[user][profile_banner_url]}"
-            }
-        }
-    }
+	mutate {
+		add_field => {
+			"message" => "%{text}"
+			"full_message" => "%{text}"
+			"hashtags" => "%{[entities][hashtags]}"
+			"mentions" =>  "%{[entities][user_mentions]}"
+			"host" => "twitter"
+			"tweet_url" => "https://twitter.com/%{[user][screen_name]}/status/%{id_str}"
+			"user_screen_name" => "%{[user][screen_name]}"
+			"user_id" => "%{[user][id_str]}"
+			"user_followers_count_int" => "%{[user][followers_count]}"
+			"user_friends_count_int" => "%{[user][friends_count]}"
+			"user_listed_count_int" => "%{[user][listed_count]}"
+			"user_favourites_count_int" => "%{[user][favourites_count]}"
+			"user_statuses_count_int" => "%{[user][statuses_count]}"
+			"user_profile_image_url" => "%{[user][profile_image_url_https]}"
+			"user_verified_bool" => "%{[user][verified]}"
+		}
+		remove_field => ["timestamp_ms"]
+	}
 
-    if [entities][user_mentions]  {
-        clone {
-            clones => ["mention"]
-        }
-    }
+	if [user][profile_banner_url] {
+		mutate {
+			add_field => {
+				"user_profile_banner_url" => "%{[user][profile_banner_url]}"
+			}
+		}
+	}
 
-    if [entities][hashtags]   {
-        clone {
-            clones => ["hashtag"]
-        }
+	if [retweeted_status] {
+		mutate {
+			add_field => {
+				"retweeted_status_user_screen_name" => "%{[retweeted_status][user][screen_name]}"
+				"retweeted_status_tweet_url" => "https://twitter.com/%{[retweeted_status][user][screen_name]}/status/%{[retweeted_status][id_str]}"
+			}
+		}
+	}       
 
-    }
+	if [entities][user_mentions] and [type] == "tweet" {
+		clone {
+			clones => ["mention"]
+		}
+	}
+
+	if [entities][hashtags]  and [type] == "tweet" {
+		clone {
+			clones => ["hashtag"]
+		}
+	}
+
 }
-if [type] == "hashtag" {
-    split {
-        field => "[entities][hashtags]"
-    }
 
-    mutate {
-        add_field => {
-        "hashtag" =>  "%{[entities][hashtags][text]}"
-        "indice_begin_int" =>  "%{[entities][hashtags][indices][0]}"
-        "indice_end_int" =>  "%{[entities][hashtags][indices][1]}"
-        }
-        remove_field => [ "retweet_count", "retweeted_status", "user", "text", "filter_level", "favorite_count", "extended_tweet", "entities"]
-        update => {
-            "message" => "#%{[entities][hashtags][text]}"
-        }
-    }
+if [type] == "hashtag" {
+
+	split {
+		field => "[entities][hashtags]"
+	}
+
+	mutate {
+		add_field => {
+			"hashtag" =>  "%{[entities][hashtags][text]}"
+			"indice_begin_int" =>  "%{[entities][hashtags][indices][0]}"
+			"indice_end_int" =>  "%{[entities][hashtags][indices][1]}"
+		}
+		remove_field => [ "retweet_count", "retweeted_status", "user", "text", "filter_level", "favorite_count", "extended_tweet", "entities"]
+		update => {
+			"message" => "#%{[entities][hashtags][text]}"
+		}
+	}
+
 }
 
 if [type] == "mention" {
-    split {
-        field => "[entities][user_mentions]"
-    }
 
-    mutate {
-        add_field => {
-        "mention" =>  "%{[entities][user_mentions][screen_name]}"
-        "mention_user_id_" =>  "%{[entities][user_mentions][id]}"
-        "indice_begin_int" =>  "%{[entities][user_mentions][indices][0]}"
-        "indice_end_int" =>  "%{[entities][user_mentions][indices][1]}"
-        }
-        remove_field => [ "retweet_count", "retweeted_status", "user", "text", "filter_level", "favorite_count", "extended_tweet", "entities"]
-        update => {
-            "message" => "@%{[entities][user_mentions][screen_name]}"
-        }
-   }
+	split {
+		field => "[entities][user_mentions]"
+	}
+
+	mutate {
+		add_field => {
+			"mention" =>  "%{[entities][user_mentions][screen_name]}"
+			"mention_user_id_" =>  "%{[entities][user_mentions][id]}"
+			"indice_begin_int" =>  "%{[entities][user_mentions][indices][0]}"
+			"indice_end_int" =>  "%{[entities][user_mentions][indices][1]}"
+		}
+		remove_field => [ "retweet_count", "retweeted_status", "user", "text", "filter_level", "favorite_count", "extended_tweet", "entities"]
+		update => {
+			"message" => "@%{[entities][user_mentions][screen_name]}"
+		}
+	}
+
 }
 ```
 
 The configuration looks quite long and complex, it is in fact splittable into three parts: the *tweet type section*, the *hashtag type section* and the *mention type section*
 
-- The tweet type section: In this section, we select all the objects that have the *tweet*  type. We use the *mutate filter*  to extract and move some information at the top level of the event. We also remove unneeded information as id_str or timestamp_ms. Then we use [conditional expressions](https://www.elastic.co/guide/en/logstash/2.4/event-dependent-configuration.html){.external} to extract information and to create hashtags and mentions objects. The *clone filters*  will create a new event that will contain a copy of the full tweet and will tag it as a hashtag or mention type. They will execute only if mentions or hashtags are present.
+- The tweet type section: In this section, we select all the objects that have the *tweet*  type. We use the *mutate filter*  to extract and move some information at the top level of the event. We also remove unneeded information as id_str or timestamp_ms. Then we use [conditional expressions](https://www.elastic.co/guide/en/logstash/6.7/event-dependent-configuration.html){.external} to extract information and to create hashtags and mentions objects. The *clone filters*  will create a new event that will contain a copy of the full tweet and will tag it as a hashtag or mention type. They will execute only if mentions or hashtags are present.
 - The hashtag type section: In this section, the hashtags of a tweet will be splitted in distinct events so a tweet that has 4 hashtags will generate 4 events of type hashtag. That's the purpose of the *split filter*. After the split filter, there is a mutate filter that will promote some information at the top level of the event and remove unecessary information for this type of object. It will also change the message to the hashtag text itself with the preceding 'hash' character.
 - The mention type section: It is pretty much the same than the hashtag one. One *split filter*  to create mentions events and one *mutate filter*  to extract, delete and modify useful information.
 
@@ -244,15 +260,11 @@ There are many more possibilities. Of course you can create beautiful dashboards
 
 ![Dashboards](images/dashboard.png){.thumbnail}
 
-That's all for now. If you have any proposition or trouble with this tutorial, don't hesitate to reach us with the mailing list or share your experience with the [Community](https://community.ovh.com/c/mobile-hosting/data-plateforms-lab){.external}.
-
----
+That's all for now. If you have any proposition or trouble with this tutorial, don't hesitate to reach us with the mailing list or share your experience with the [Community](https://community.ovh.com/en/c/Platform){.external}.
 
 ## Go further
 
-- Join our community of users on <https://community.ovh.com/>
-- Getting Started: [Quick Start](https://docs.ovh.com/fr/logs-data-platform/quick-start/){.external}
-- Documentation: [Guides](https://docs.ovh.com/fr/logs-data-platform/){.external}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms-lab){.external}
-- Mailing List: [paas.logs-subscribe@ml.ovh.net](mailto:paas.logs-subscribe@ml.ovh.net){.external}
+- Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
+- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}

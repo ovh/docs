@@ -117,14 +117,14 @@ Questa operazione prevede diversi step. Per prima cosa, assicurati di disporre d
 > Questa soluzione è più tecnica e richiede competenze di programmazione. In questa guida puoi trovare informazioni utili per effettuare l’operazione ma, in caso di necessità, ti consigliamo di rivolgerti a uno specialista del settore. 
 >
 
-#### 1\. Creare lo script di importazione
+#### 1. Creare lo script di importazione
 
 Il primo step consiste nel creare lo script che permetterà di effettuare l’importazione verso il database. Ecco un esempio:
 
 ```php
-&lt;?php
-system(“cat nome_file_backup.sql mysql --host=inidrizzo_del_server--user=nome_utente--password=password_utente nom_database
-?&gt;
+<?php
+system("cat nome_file_backup.sql | mysql --host=inidrizzo_del_server --user=nome_utente --password=password_utente nom_database");
+?>
 ```
 
 Sostituisci le informazioni generiche dello script con i dati del database in questione, seguendo le indicazioni riportate qui sotto. Una volta creato lo script, ti consigliamo di assegnargli un nome (ad esempio, “import.php”).
@@ -137,13 +137,13 @@ Sostituisci le informazioni generiche dello script con i dati del database in qu
 |password_utente|La password associata al nome utente indicato precedentemente|
 |nome_database|Il nome del database|
 
-#### 2\. Caricare lo script e il backup sullo spazio di storage
+#### 2. Caricare lo script e il backup sullo spazio di storage
 
 Una volta creato lo script è necessario caricarlo insieme al file di backup da importare sullo spazio di storage dell’hosting Web. Per effettuare questa operazione, è necessario collegarsi all’hosting (se hai bisogno di aiuto, consulta lo step 2 di [questa guida](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/#step-2-carica-i-file-del-sito-nello-spazio-di-storage){.external}).
 
 Per realizzare correttamente gli step successivi, carica lo script e il file di backup nella cartella “www”. **Ti consigliamo di prestare la massima attenzione al nome assegnato al file dello script di importazione**: quando effettui l’upload nello spazio di storage assicurati di non sovrascriverlo a un file già esistente con lo stesso nome. Nel caso, modifica il nome dello script appena creato e prova a caricarlo di nuovo.
 
-#### 3\. Eseguire lo script
+#### 3. Eseguire lo script
 
 Una volta che lo script di importazione e il file di backup sono stati caricati nello spazio di storage non ti resta che eseguire il codice in esso contenuto richiamando lo script.
 
@@ -163,7 +163,7 @@ Per effettuare questa operazione è necessario interagire con lo spazio di stora
 Una volta effettuato l’accesso in SSH allo spazio di storage, per effettuare l’importazione del database è necessario eseguire un comando. Qui sotto ne proponiamo uno di esempio. Ti ricordiamo che è necessario caricare preventivamente il backup da importare sullo spazio di storage ed eseguire il comando dal terminale posizionandoti sulla directory in cui si trova il backup.  
 
 ```sh
-system(“cat nome_file_backup.sql mysql --host=inidrizzo_del_server--user=nome_utente--password=password_utente nome_database
+cat nome_file_backup.sql | mysql --host=inidrizzo_del_server --user=nome_utente --password=password_utente nome_database
 ```
 
 Sostituisci le informazioni generiche del comando con i dati del database in questione. A operazione completata, ti consigliamo di eliminare il file di backup dalla directory in cui è stato caricato. 

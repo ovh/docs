@@ -77,7 +77,7 @@ Aby rozpocząć test, kliknij przycisk, jak pokazano na poniższym obrazku.
 
 Test partycji składa się z testu dostępu do dysku oraz weryfikacji systemu plików. Test dostępu do dysku pozwala sprawdzić, czy system może komunikować się z dyskami twardymi w Twoim serwerze. Do weryfikacji systemu plików służy komenda `fsck -fy`.
 
-> \[!warning]
+> [!warning]
 >
 > Przeprowadzenie weryfikacji systemu plików na uszkodzonym dysku twardym może spowodować utratę danych.
 >

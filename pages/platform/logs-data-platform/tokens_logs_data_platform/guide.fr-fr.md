@@ -16,7 +16,7 @@ With Logs Data Platform, there are 3 ways to query your logs.
 - The [Graylog API](https://gra1.logs.ovh.com/api/api-browser#!/Search/Relative){.external}
 - The [Elasticsearch API](https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html){.external} located at the port 9200 of your cluster (find its address in the **Home** Page) against your [alias](../using_kibana_with_logs/guide.fr-fr.md){.ref}.
  
-So you can pop up a [Kibana](../using_kibana_with_logs/guide.fr-fr.md){.external} or a [Grafana](../using_grafana_with_logs/guide.fr-fr.md){.ref} or even [a terminal Dashboard for Graylog](https://github.com/Graylog2/cli-dashboard){.external}.
+So you can pop up a [Kibana](../using_kibana_with_logs/guide.fr-fr.md){.ref} or a [Grafana](../using_grafana_with_logs/guide.fr-fr.md){.ref} or even [a terminal Dashboard for Graylog](https://github.com/Graylog2/cli-dashboard){.external}.
 
 All these accesses are secured by your username and password. But what if you don't want to put your Logs Data Platform credentials everywhere? You can just use tokens to access all these endpoints and revoke them anytime you want. This tutorial is here to tell you how.
 
@@ -189,7 +189,7 @@ For example to issue a search against the Graylog API with the token obtained ab
 
 
 ```shell-session
-$ curl -u kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q:token -XGET https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=2592000&filter=streams:a123aebc12345623aafd
+$ curl -u kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q:token -XGET "https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=2592000&filter=streams:a123aebc12345623aafd"
 ```
 
 Note that you have to replace the stream value in the filter parameter by the Id of your stream.
@@ -197,10 +197,10 @@ Note that you have to replace the stream value in the filter parameter by the Id
 To issue a search against the Elasticsearch API, you also use the same credentials.
 
 ```shell-session
-$ curl -u kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q:token https://<your_cluster>.logs.ovh.com:9200/my_alias/_search
+$ curl -u kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q:token "https://<your_cluster>.logs.ovh.com:9200/<your_alias>/_search"
 ```
 
-This call will launch a quick search (to retrieve the count and a sample of your documents) against the alias **my_alias**. Replace the alias by the alias you have setup in you Logs Data Platform console. Note that these credentials are usable in place of your account credentials in Kibana and Grafana (or any tool that support Basic Authentication with Elasticsearch).
+This call will launch a quick search (to retrieve the count and a sample of your documents) against the alias **your_alias**. Replace the alias by the one you have setup in you Logs Data Platform console. Note that these credentials are usable in place of your account credentials in Kibana and Grafana (or any tool that support Basic Authentication with Elasticsearch).
 
 The only place you cannot use your token is the Graylog Web Interface.
 

@@ -54,10 +54,14 @@ La partie tout en haut de l'interface (sous l'encadré vert) reprend le nom d'h�
 ### Connexion FTP
 Dans l'encadré vert tout en haut, afin d'établir la connexion au serveur distant, on vous demandera :
 
-- Hôte : ftp.cluster0XX.hosting.ovh.net
-- Identifiant : votre login FTP
-- Mot de passe : le mot de passe FTP associé au login
-- Port : peut rester vide (sinon mettre 21)
+|Information à renseigner|Détails|
+|---|---|
+|Serveur FTP|Il s'agit de l'adresse de serveur vous permettant d'accéder à votre espace de stockage.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à : « Serveur », « Adresse de serveur », « Hôte », « Nom d'hôte », ou encore « Host ».|
+|Login FTP|Il s'agit de l'identifiant vous permettant d'accéder à votre espace de stockage.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à : « Utilisateur », « Nom d'utilisateur », « Identifiant », « Login », ou encore « Username ».|
+|Mot de passe de l'utilisateur FTP|Il s'agit du mot de passe associé au login FTP.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à « Mot de passe » ou « Password ».|
+|Port de connexion|Celui-ci est généralement complété automatiquement par le logiciel. Si vous devez le renseigner :<br><br>- utilisez le port « 21 » pour une connexion utilisant le protocole FTP ;<br>- utilisez le port « 22 » pour une connexion utilisant le protocole SFTP (dans le cas où celui-ci est activé).|
+
+Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors.
 
 Une fois que tout est correctement saisi, cliquez sur *Connexion rapide* afin d'établir la connexion au serveur.
 

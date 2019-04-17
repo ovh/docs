@@ -1,11 +1,11 @@
 ---
 title: Push logs with Python using Djehouty
 slug: djehouty
-order: 3
+order: 10
 section: Use cases
 ---
 
-**Last updated 07th May, 2018**
+**Last updated 10th April, 2019**
 
 ## Objective
 
@@ -28,8 +28,8 @@ This package includes:
 To complete this guide you will need:
 
 - Python, we recommend to install [pip](https://pip.pypa.io/en/stable/installing/){.external}.
-- [Activate the Logs Data Platform account and create an account.](https://docs.ovh.com/gb/en/logs-data-platform/quick-start/){.external}
-- [To create at least one Stream and get its token.](https://docs.ovh.com/gb/en/logs-data-platform/tokens-logs-data-platform/){.external}
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- [To create at least one Stream and get its token.](../quick_start/guide.en-gb.md){.ref}
 
 ## Instructions
 
@@ -146,12 +146,9 @@ ltsv_logger.info("Hello '%s'", 'Cedric', extra={"lang": 'en'})
 ltsv_logger.info("Bonjour '%s'", 'Cedric', extra={"lang": 'fr'})
 ```
 
----
-
 ## Go further
 
-- Getting Started: [Quick Start](https://docs.ovh.com/gb/en/logs-data-platform/quick-start/){.external}
-- Documentation: [Guides](https://docs.ovh.com/gb/en/logs-data-platform/){.external}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms-lab){.external}
-- Mailing List: [paas.logs-subscribe@ml.ovh.net](mailto:paas.logs-subscribe@ml.ovh.net){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-discovery~productId~%27logs%29){.external}xcxcxcxcxcxcxcxcxcxcxcxcxcxcxcxcxcxcxcxc
+- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
+- Documentation: [Guides](../product.en-gb.md){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}

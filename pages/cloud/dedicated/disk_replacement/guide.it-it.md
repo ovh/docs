@@ -172,7 +172,7 @@ MegaCli -PdLocate -start -physdrv[E0:S0] -a0
 MegaCli -PdLocate -start -physdrv[E0:S0] -a0
 ```
 
-> \[!primary]
+> [!primary]
 >
 > Equivalente tramite il comando `storcli`:
 >
