@@ -50,7 +50,7 @@ Im angezeigten Fenster wählen Sie zunächst das gewünschte CMS und anschließe
 
 Wenn Sie die gewünschte Domain nicht in der Liste finden, klicken Sie auf den Tab `Multisite`{.action}, um sie hinzuzufügen, und versuchen Sie anschließend erneut, ein Modul hinzuzufügen.
 
-Für weitere Informationen, lesen Sie die Anleitung [Mehrere Websites auf einem Webhosting hosten (Englisch)](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}.
+Für weitere Informationen, lesen Sie die Anleitung [Mehrere Websites auf einem Webhosting hosten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren//){.external}.
 
 Nachdem Sie die gewünschte Domain ausgewählt haben, haben Sie die Wahl zwischen einer einfachen oder der erweiterten Installation „im Experten-Modus“:
 
@@ -103,7 +103,7 @@ Geben Sie nun die folgenden Informationen zur Konfiguration des Moduls ein:
 - *Name oder E-Mail-Adresse des Administrators:* die Kennung, mit der Sie sich zur Verwaltung Ihres CMS einloggen.
 - *Passwort:* das Passwort, mit dem Sie sich im Verwaltungsinterface Ihres CMS einloggen.
 - *Domain:* die Domain, auf der Sie Ihre Website installieren.
-Für weitere Informationen, lesen Sie die Anleitung [Mehrere Websites auf einem Webhosting hosten (Englisch)](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}.
+Für weitere Informationen, lesen Sie die Anleitung [Mehrere Websites auf einem Webhosting hosten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}.
 - *Sprache:* die Sprache, in der das CMS installiert wird.
 - *Installationspfad:* wird bei der Domain-Auswahl automatisch angegeben. Sie haben die Möglichkeit, den Pfad durch die Angabe von Unterverzeichnissen zu ergänzen.
 
@@ -139,7 +139,7 @@ Wenn Sie Hilfe zu den Funktionen Ihrer Website benötigen, gehen Sie auf die off
 
 [Finden Sie das richtige CMS für Ihre Website](https://www.ovh.de/hosting/website/cms-vergleich/){.external}
 
-[Mehrere Websites auf einem Webhosting hosten (Englisch)](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}
+[Mehrere Websites auf einem Webhosting hosten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}
 
 [Verwaltung einer Datenbank in Ihrem Webhosting](https://docs.ovh.com/de/hosting/verwaltung-einer-datenbank-in-ihrem-webhosting/){.external}
 

@@ -19,7 +19,7 @@ In other words, these records stored on DNS servers are what make your domain na
 ## Requirements
 
 - You must have a domain name registered with OVH.
-- You must have the appropriate permissions to manage the domain name from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must have the [appropriate permissions to manage](https://docs.ovh.com/gb/en/customer/managing-contacts/){.external}. the domain name from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 > [!warning]
@@ -38,6 +38,8 @@ However, it is important to note that:
 - The content of the old DNS configuration is not automatically replicated in the new configuration. Please ensure that your new configuration includes all of the information required for the services associated with your domain name to work properly (e.g. your website and email addresses).
 
 - If you only want to edit a single element of your current DNS configuration (e.g. one DNS record), we recommend following our guide to editing the DNS zone instead: [Editing an OVH DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
+
+- Some of the organisations that manage the domain name extensions (registries) have special requirements regarding DNS Servers (amount of nameservers, value of records, ...). In case of doubt, check with the registry responsible for the domain ending.
 
 > [!warning]
 >
@@ -71,7 +73,7 @@ Once you have entered this information, click `Apply configuration`{.action}. Th
 
 Once you have made the required changes, you will need to wait for them to become fully effective. Two successive time periods need to be taken into account:
 
-- The change made on the OVH side needs to be taken into account by the organisation that manages your domain name extension. You can track the progress for this in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to the `Domains`{.action} section in the services bar on the left-hand side, then `Ongoing operations`{.action}.
+- The change made on the OVH side needs to be taken into account by the organisation that manages your domain name extension (registry). You can track the progress for this in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to the `Domains`{.action} section in the services bar on the left-hand side, then `Ongoing operations`{.action}.
 
 - Once the change has been taken into account by the organisation managing your domain name extension, you will need to wait for a maximum of 48 hours for the changes you have made to fully propagate.
 
