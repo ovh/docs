@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 15th May 2018**
+**Last updated 15th April 2019**
 
 ## Objective
 
@@ -23,29 +23,7 @@ A dedicated server is a physical server located in one of our datacentres. Unlik
 
 ## Instructions
 
-### Logging on to your server
-
-#### Linux
-
-When your dedicated server is first set up, you will get an email containing your password for root access. Root access lets you connect to your server via SSH, which is a secure communication protocol. You can access your server through a command terminal (Linux or MAC), or through third-party software on Windows (e.g.: PuTTy).
-
-Once you have opened the terminal, type the following command to log on to your server, replacing the text after the @ symbol with the information required (IP address or server reference name). Your server's reference name will always start with *ns*.
-
-**Example using an IP address**
-
-```sh
-ssh root@IPv4_of_your_server
-```
-
-**Example using a server reference**
-
-```sh
-ssh root@your_server_reference_name
-```
-
-#### Windows
-
-When your dedicated server is first set up, you will get an email containing your password for administrative (root) access. You will need to use these credentials to connect to the server via RDP. Once you've connected, Windows will guide you through an intial setup.
+When your dedicated server is first set up, you can select which operating system will be installed.
 
 ### Installing or reinstalling your dedicated server
 
@@ -68,6 +46,30 @@ Follow the rest of the instructions on the screen, then click `Confirm`{.action}
 >
 > Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVH](https://www.ovh.co.uk/dedicated_servers/distributions/){.external}, or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [control panel](https://www.ovh.com/auth/?action=gotomanager){.external}. You can manage your licences via the [control panel](https://www.ovh.com/auth/?action=gotomanager){.external}, under `Dedicated`{.action}, then `Licences`{.action}. In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Add an SPLA licence`{.action} button on the right).
 > 
+
+### Logging on to your server
+
+#### Linux
+
+Once the installation is completed, you will get an email containing your password for root access. Root access lets you connect to your server via SSH, which is a secure communication protocol. You can access your server through a command terminal (Linux or MAC), or through third-party software on Windows (e.g.: PuTTy).
+
+Once you have opened the terminal, type the following command to log on to your server, replacing the text after the @ symbol with the information required (IP address or server reference name). Your server's reference name will always start with *ns*.
+
+**Example using an IP address**
+
+```sh
+ssh root@IPv4_of_your_server
+```
+
+**Example using a server reference**
+
+```sh
+ssh root@your_server_reference_name
+```
+
+#### Windows
+
+Once the installation is completed, you will get an email containing your password for administrative (root) access. You will need to use these credentials to connect to the server via RDP (**R**emote **D**esktop **P**rotocol). Once you've connected, Windows will guide you through an intial setup.
 
 
 ### Securing your dedicated server
@@ -113,19 +115,17 @@ If there's ever an issue with your server, the first troubleshooting step you sh
 
 ![Change boot selection](images/rescue-mode-01.png){.thumbnail}
 
-On the next screen, select `Boot on rescue mode`{.action} and select `rescue64-pro`{.action} from the dropdown list. Type your email address in the text field, then click `Next`{.action}.
+On the next screen, select `Boot on rescue mode`{.action} and select `rescue64-pro`{.action} from the dropdown list. Type your email address in the text field, then click `Next`{.action}. If you leave the email field empty, the email address from your NIC handle is used by default.
 
 ![Rescue Pro 64](images/rescue-mode-03.png){.thumbnail}
-
 
 Confirm your options on the next screen and then reboot your server to apply the changes.
 
 ![Confirmation and reboot](images/rescue-mode-02.png){.thumbnail}
 
-
 Your server will now reboot into rescue mode, and you will receive the credentials for logging in via the email address you provided. To exit rescue mode, simply change the boot mode back to boot on the hard disk, then reboot your server.
 
-To learn more about how you can use rescue mode to resolve issues with your server, please refer to our guide: [Rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
+To learn more about how you can use rescue mode to resolve issues with your server, please refer to our guide: [Rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external}.
 
 
 #### Hardware diagnosis
