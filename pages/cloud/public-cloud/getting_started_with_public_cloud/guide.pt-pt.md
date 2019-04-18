@@ -3,6 +3,7 @@ title: 'Começar com o Public Cloud: identificar-se e criar um projeto'
 excerpt: Este guia explica-lhe como criar o seu primeiro projeto Public Cloud
 slug: comecar_com_o_public_cloud_identificar-se_e_criar_um_projeto
 legacy_guide_number: g2329
+hidden: true
 ---
 
 

@@ -3,6 +3,7 @@ title: Aggiungi storage al tuo Cloud
 excerpt: Aggiungi storage al tuo Cloud
 slug: aggiungi_storage_al_tuo_cloud
 legacy_guide_number: g1790
+hidden: true
 ---
 
 

@@ -1,109 +1,79 @@
 ---
-title: Conectarse como usuario root y establecer una contraseña
-excerpt: Conectarse como usuario root y establecer una contraseña
+title: 'Ejecutar comandos como root'
 slug: conectarse_como_usuario_root_y_establecer_una_contrasena
-legacy_guide_number: g1786
-section: Gestión de los accesos
+excerpt: 'Cómo establecer la contraseña del usuario root y ejecutar comandos como root'
+section: Tutoriales
 ---
 
+**Última actualización: 11/04/2019**
 
-## 
-Para efectuar determinadas tareas, será necesario conectarse o realizar operaciones como root, especialmente para:   
+## Objetivo
 
-- instalar paquetes; 
-- crear una contraseña para un usuario o un root (indispensable para acceder por KVM);  
-- realizar determinadas tareas de administración.
+Para realizar determinadas tareas en un servidor (como la instalación de paquetes), es necesario disponer de un nivel de acceso elevado. En los servidores Linux, este nivel se denomina «root».
 
-
-
+**Esta guía explica cómo establecer la contraseña del usuario root y ejecutar comandos como root.**
 
 ## Requisitos
 
-- []({legacy}1775)
-- Estar conectado con la llave SSH y el usuario por defecto (admin o el nombre de la distribución para las imágenes más recientes).
+* Tener un proyecto de [Public Cloud](https://www.ovh.es/public-cloud/instancias/){.external} activo.
+* Poder conectarse al servidor por SSH.
 
+> [!primary]
+>
+> En esta guía nos basamos en el supuesto de que el usuario por defecto es «admin».
+>
 
+## Procedimiento
 
-## Información:
-En esta guía se da por hecho que el usuario por defecto se llama «admin».
+### Cambiar la contraseña root
 
+En primer lugar, conéctese al servidor por SSH.
 
-## Establecer una contraseña
+Para ello, utilice el comando que se indica a continuación y establezca una contraseña para el usuario «admin» (por motivos de seguridad, la contraseña no se mostrará mientras la escriba).
 
-- Establecer una contraseña para el usuario admin (la contraseña no se muestra al introducir los datos por medidas de seguridad): 
-
-```
+```sh
 ~$ sudo passwd
-Enter new UNIX password: 
-Retype new UNIX password: 
-passwd: password updated successfully
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully 
+successfully
 ```
 
+### Actualizar los repositorios (Debian y Ubuntu)
 
-- Establecer una contraseña para el usuario root (la contraseña no se muestra al introducir los datos por medidas de seguridad): 
-
-```
-~$ sudo passwd root
-Enter new UNIX password: 
-Retype new UNIX password: 
-passwd: password updated successfully
-```
-
-
-
-
-
-## Otros ejemplos:
-
-- Actualizar la caché de paquetes (Debian/Ubuntu): 
+Para actualizar los paquetes de software instalados en el servidor, introduzca el siguiente comando:
 
 ```
 ~$ sudo apt-get update
 ```
 
+### Actualizar el sistema (CentOS y Fedora)
 
-- Actualizar el sistema (CentOS/Fedora):
+Para actualizar el sistema operativo del servidor, introduzca el siguiente comando:
 
 ```
 ~$ sudo yum update
 ```
 
+### Editar el archivo de configuración
 
-- Editar un archivo de configuración:
+Para editar el archivo de configuración del servidor, introduzca el siguiente comando:
 
 ```
 ~$ sudo vi /etc/hosts.allow
 ```
 
+### Conectarse como root
 
-
-
-
-## 
-
-- Conectarse como root: 
+Para conectarse como usuario root, introduzca el siguiente comando:
 
 ```
 ~$ sudo su -
 ~#
 ```
 
+A continuación escriba la contraseña root.
 
-- Establecer una contraseña para root (después de conectarse como root): 
+## Más información
 
-```
-~# passwd
-Enter new UNIX password: 
-Retype new UNIX password: 
-passwd: password updated successfully
-```
-
-
-- Establecer una contraseña para el usuario administrador:
-
-```
-~# passwd admin
-Enter new UNIX password: 
-Retype new UNIX password: 
-passwd: password updated successfully
-```
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.

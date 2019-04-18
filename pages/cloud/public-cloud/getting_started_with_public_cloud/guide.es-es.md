@@ -4,6 +4,7 @@ excerpt: Esta guía describe cómo crear un primer proyecto en Public Cloud.
 slug: empezar_con_public_cloud_identificarse_y_crear_un_proyecto
 legacy_guide_number: g2329
 section: Primeros pasos
+hidden: true
 ---
 
 

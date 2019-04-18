@@ -6,7 +6,7 @@ excerpt: With the alerting feature you don't even need to watch your logs, our p
 section: Features
 ---
 
-**Last updated 20th February, 2018**
+**Last updated 2nd April, 2019**
 
 ## Objective
 
@@ -18,9 +18,9 @@ This guide will help you to configure and use alerts on a particular field. We w
 
 In order to understand this guide you should read the following tutorials:
  
-- [Quick start of Logs Data Platform](https://docs.ovh.com/fr/logs-data-platform/quick-start/){.external}.
-- [Logstash collector on Logs Data Platform](https://docs.ovh.com/fr/logs-data-platform/logstash-input/){.external}.
-- [The Filebeat tutorial](https://docs.ovh.com/fr/logs-data-platform/filebeat-logs/){.external}.
+- [Quick start of Logs Data Platform](../quick_start/guide.fr-fr.md){.ref}.
+- [Logstash collector on Logs Data Platform](../logstash_input/guide.fr-fr.md){.ref}.
+- [The Filebeat tutorial](../filebeat_logs/guide.fr-fr.md){.ref}.
  
 ## Instructions
 
@@ -43,13 +43,13 @@ For the 3 types of alert, you can configure a **grace period**. The **grace peri
 
 ### Use case&#58; Alerts for a website powered by an Apache Server
 
-For this tutorial, we will configure the 3 alerts that we can use for a website. These 3 alerts can help you to react immediately in the case of a failure, detect unexpected problems or verify that all your websites are working correctly. But before going into the alerting feature itself, we need to configure our Apache Logging format to include all the information we need. We will also use [Filebeat](https://docs.ovh.com/fr/logs-data-platform/filebeat-logs/){.external} to send our logs to our dedicated Logstash collector on the Logs Data Platform.
+For this tutorial, we will configure the 3 alerts that we can use for a website. These 3 alerts can help you to react immediately in the case of a failure, detect unexpected problems or verify that all your websites are working correctly. But before going into the alerting feature itself, we need to configure our Apache Logging format to include all the information we need. We will also use [Filebeat](../filebeat_logs/guide.fr-fr.md){.ref} to send our logs to our dedicated Logstash collector on the Logs Data Platform.
 
 #### Apache Server Configuration
 
 We will use the [LTSV](http://ltsv.org){.external} format to send logs, this format is simple enough to be efficiently parsed by the collector. Here is a configuration file sample:
 
-```Apache
+```ApacheConf
 <VirtualHost *:80>
 
     ServerAdmin webmaster@localhost
@@ -61,7 +61,7 @@ We will use the [LTSV](http://ltsv.org){.external} format to send logs, this for
 </VirtualHost>
 ```
 
-The configuration is inspired by the one you can find in [this tutorial](https://docs.ovh.com/fr/logs-data-platform/apache-logs/){.external}.
+The configuration is inspired by the one you can find in [this tutorial](../apache_logs/guide.fr-fr.md){.ref}.
 
 #### Logstash and Filebeat configuration
 
@@ -76,7 +76,7 @@ beats {
 }
 ```
 
-As in the [Filebeat tutorial](https://docs.ovh.com/fr/logs-data-platform/filebeat-logs/){.external}, we will use a simple beats input with SSL.
+As in the [Filebeat tutorial](../filebeat_logs/guide.fr-fr.md){.ref}, we will use a simple beats input with SSL.
 
 For the **filter** part we use this configuration:
 
@@ -94,110 +94,121 @@ This simple Logstash filter uses the [key value filter plugin](https://www.elast
 
 The Filebeat configuration will be similar to the one used in the Filebeat tutorial:
 
-```ruby
- ############################# Filebeat ######################################
- filebeat:
-   # List of prospectors to fetch data.
-   prospectors:
-   # Each - is a prospector. Below are the prospector specific configurations
-   # Paths that should be crawled and fetched. Glob based paths.
-   # To fetch all ".log" files from a specific level of subdirectories
-   # /var/log/*/*.log can be used.
-   # For each file found under this path, a harvester is started.
-   # Make sure no file is defined twice as this can lead to unexpected behaviour.
-     -
-         paths:
-         - /var/log/apache2/access.log
-          input_type: log
-          document_type: apache
-          fields:
-              apache_version: 2.2.9
-          fields_under_root: true
- 
-     -
-         paths:
-         - /var/log/apache2/error.log
-          input_type: log
-          document_type: apache-error
-          fields:
-              apache_version: 2.2.9
-          fields_under_root: true
- 
-   # Name of the registry file. Per default it is put in the current working
-   # directory. In case the working directory is changed after running
-   # filebeat again, indexing starts from the beginning.
-   registry_file: /var/lib/filebeat/registry
- ############################# Output ##########################################
- # Configure what outputs to use when sending the data collected by the beat.
- # Multiple outputs may be used.
- output:
-   ### Logstash as output
-   logstash:
-     # The Logstash hosts
-     hosts: ["<your_cluster>-XXXXXXXXXXXXXXXXXX.<your_cluster>.logs.ovh.com:5044"]
-     worker: 1
-     tls:
-       # List of root certificates for HTTPS server verifications
-       certificate_authorities:
-       - /usr/local/etc/filebeat/ldp-ca.crt
- ############################# Logging #########################################
- # There are three options for the log output: syslog, file, stderr.
- # Under Windows systems, the log files are sent to the file output by default,
- # under all other systems they are sent to syslog by default.
- logging:
-   # Send all logging output to syslog. On Windows default is false, otherwise
-   # default is true.
-   to_syslog: false
-   # Write all logging output to files. Beats automatically rotate files if rotateeverybytes
-   # limit is reached.
-   to_files: true
-   # To enable logging to files, to_files option has to be set to true
-   files:
-   # The directory where the log files are written to.
-     path: /var/log/
-     # The name of the files where the log files are written to.
-     name: filebeat.log
-     # Configure log file size limit. If the limit is reached, the log file will be
-     # automatically rotated
-     rotateeverybytes: 10485760 # = 10MB
-     # Number of rotated log files to keep. Oldest files will be deleted first.
-     keepfiles: 7
-   # Sets the log level. The default log level is error.
-   # Available log levels are: critical, error, warning, info, debug
- level: info
+```yaml hl_lines="32 38"
+#=========================== Filebeat inputs =============================
+
+filebeat.inputs:
+
+# Each - is an input. Most options can be set at the input level, so
+# you can use different inputs for various configurations.
+# Below are the input specific configurations.
+
+- type: log
+
+  # Change to true to enable this input configuration.
+  enabled: false
+
+  # Paths that should be crawled and fetched. Glob based paths.
+  paths:
+    - /var/log/*.log
+
+
+#============================= Filebeat modules ===============================
+
+filebeat.config.modules:
+  # Glob pattern for configuration loading
+  path: ${path.config}/modules.d/*.yml
+
+  # Set to true to enable config reloading
+  reload.enabled: false
+
+
+#----------------------------- Logstash output --------------------------------
+output.logstash:
+  # The Logstash hosts
+  hosts: ["<your_cluster>-XXXXXXXXXXXXXXXXXX.<your_cluster>.logs.ovh.com:5044"]
+
+  ssl.enabled: true
+
+  # Optional SSL. By default is off.
+  # List of root certificates for HTTPS server verifications
+  ssl.certificate_authorities: ["/etc/ssl/certs/ldp.pem"]
 ```
 
-### Configuring a Counter alert
+Fill the value of **/etc/ssl/certs/ldp.pem** with the "Data-gathering tools" certificate you will find in the **Home** page of your service.
+
+![SSL input](images/ssl_input.png){.thumbnail}
+
+Ensure to enable Apache support on Filebeat by running:
+
+```shell-session
+$ ldp@ubuntu:~$ sudo filebeat modules enable apache2
+```
+
+It will generate a new module file: **/etc/filebeat/modules.d/apache2.yml**, please change it to include all your apache2 access/error path files:
+
+```yaml hl_lines="8 16"
+- module: apache2
+  # Access logs
+  access:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    var.paths: ["/var/log/apache2/access.log*","/var/log/apache2/ssl_access.log*"]
+
+  # Error logs
+  error:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    var.paths: ["/var/apache2/httpd/error_log*","/var/log/apache2/ssl_error_log*"]
+```
+
+Launch Filebeat
+
+```shell-session
+$ ldp@ubuntu:~$ sudo systemctl restart filebeat.service
+```
+
+or
+
+```shell-session
+$ ldp@ubuntu:~$ sudo /etc/init.d/filebeat restart
+```
+
+### Configuring a Message Count alert condition
 
 For this alert we will tackle the following question: How to get alerted when my website is not working anymore?
 
 One of the signs of a non-working website on a dedicated server is the number of access logs from the website. Except in special cases like maintenance, a website should have a steady number of visits during a day. If you want to configure an alert when no traffic is detected, you can for example configure a counter alert on the number of logs.
 
-For this, go to the stream page and use the menu at the right to navigate to the **Alerting** menu.
+For this, go to the stream page and use the menu at the right to navigate to the **Manage alerts** menu.
 
 ![Navigate to alert](images/nav-alert.png){.thumbnail}
 
-On this interface, stay on the Counter Tab. Configuring alerts is as easy as filling in the terms describing the behavior of your alerts. For example you can do the following:
+On this interface, select **Message count** in the "Create an alert" drop box. Configuring alerts is as easy as filling in the terms describing the behavior of your alerts. For example you can do the following:
 
 Trigger an alert named **No Traffic** when there are less than **3** messages in the last **5** minutes and then wait at  least **5** minutes before triggering a new alert (grace period).
 
 ![Alert Creation](images/no-traffic-creation.png){.thumbnail}
 
-The sentence above contains the terms that you have to use to create your alerts. Click on `Add this condition`{.action} and your alert will be up and running immediately.
+The sentence above contains the terms that you have to use to create your alerts. Click on `Save`{.action} and your alert will be up and running immediately.
 
 ![Alert Created](images/alert-created.png){.thumbnail}
 
-You can remove the alert by clicking on the `Remove`{.action} button.
+You can remove the alert by clicking on the `Delete`{.action} button.
 
 As soon as the alert is fired you will receive a mail, detailing the alert condition that triggered the alert.
 
 ![No traffic mail](images/mail-no-traffic.png){.thumbnail}
 
-### Configuring a Numeric Value alert
+### Configuring an Field Aggregation alert condtion
 
 A slow website is a poor experience for your users and can make you lose customers. There are many possible causes for a slowdown : too many connections, a misbehaving web application or an network problem. Fortunately, your Apache logs give you the response time of your server that you can use to trigger an alert when your website is too slow.
 
-To configure an alert based on your website's response time, Go to the **Numeric value alert** tab on the Alerting page. As with the Counter Alert, you have to fill the different fields to create your alert:
+To configure an alert based on your website's response time, Select the **Field aggregation** condition under the "Create an alert" drop box on the Alerting page. As with the Counter Alert, you have to fill the different fields to create your alert:
 
 ![Slow website alert](images/slow-alert.png){.thumbnail}
 
@@ -205,9 +216,9 @@ Here, we have configured an alert to be sent when the minimum value of **respons
 
 ![Slow website alert](images/slow-mail.png){.thumbnail}
 
-### Configuring a Text Content alert
+### Configuring a Field Content alert condition
 
-For this alert, we want to be alerted when there is any error 500 on our website. The **Text Content alert** is the one that you must use when you want some value to be detected in your field. This alert type is located under the Text Content tab in the alerting panel.
+For this alert, we want to be alerted when there is any error 500 on our website. The **Field content** is the one that you must use when you want some value to be detected in your field. This alert type is located under the Text Content tab in the alerting panel.
 
 Like the previous alert, you have to describe your alert to configure it. Here, the sentence states that the alert must be triggered when the field **status_int** is set to **500**.
 
@@ -217,14 +228,9 @@ You will then receive an email with the messages included. You can then directly
 
 ![Slow website alert](images/apache-500.png){.thumbnail}
 
----
-
 ## Go further
 
-- Getting Started: [Quick Start](https://docs.ovh.com/fr/logs-data-platform/quick-start/){.external}
-- Documentation: [Guides](https://docs.ovh.com/fr/logs-data-platform/){.external}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms-lab){.external}
-- Mailing List: [paas.logs-subscribe@ml.ovh.net](mailto:paas.logs-subscribe@ml.ovh.net){.external}
+- Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
+- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-
-Join our community of users on <https://community.ovh.com/>

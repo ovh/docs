@@ -1,11 +1,10 @@
 ---
 title: 'Hosting Condiviso: guida all’utilizzo di FileZilla'
-excerpt: In questa guida ti illustriamo come utilizzare il client FTP FileZilla
-id: '1380'
 slug: hosting_condiviso_guida_allutilizzo_di_filezilla
+excerpt: 'In questa guida ti illustriamo come utilizzare il client FTP FileZilla'
+id: '1380'
 legacy_guide_number: g1380
 ---
-
 
 ## A cosa serve FileZilla?
 FileZilla è un software disponibile per diversi sistemi operativi (Windows, MacOS, ecc.).
@@ -59,11 +58,14 @@ La barra principale contiene le icone utili al funzionamento di base del program
 ## Connessione FTP
 Nel riquadro verde in alto, per accedere al server remoto, ti chiediamo:
 
-- Host: ftp.tuo-dominio o ftp.cluster0XX.ovh.net o newftp.cluster0XX.ovh.net
-- Identificativo: il tuo login FTP
-- Password: la password FTP associata al login
-- Porta: può rimanere vuoto (altrimenti inserisci 21)
+|Informazione|Descrizione|
+|---|---|
+|Server FTP|Indirizzo del server che consente l’accesso allo spazio di storage.<br><br> In base al client utilizzato, potrebbe chiamarsi “Server”, “Indirizzo del server”, “Indirizzo”, “Host”, “Hostname”.|
+|Login FTP|Indirizzo del server che consente l’accesso allo spazio di storage.<br><br> In base al client utilizzato, potrebbe chiamarsi “Utente”, “Nome utente”, “Identificativo”, “Login”, “Username”.|
+|Password dell’utente FTP|Password associata all’utente FTP.<br><br> |
+|Porta di connessione|Questo campo, in genere, viene completato automaticamente dal client. In caso contrario:<br><br>\- utilizza la porta 21 per stabilire una connessione via protocollo FTP<br>\- utilizza la porta 22 per stabilire una connessione via protocollo SFTP (se attivo)|
 
+Per recuperare le informazioni necessarie, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} nel menu a sinistra e clicca sulla scheda `FTP - SSH`{.action}. Nella nuova pagina, visualizzi tutte le informazioni relative allo storage e una tabella con gli utenti FTP e SSH creati sul tuo hosting.
 
 Dopo aver inserito tutte le informazioni, clicca su Connessione rapida per accedere al server.
 

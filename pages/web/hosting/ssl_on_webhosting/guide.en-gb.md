@@ -32,7 +32,7 @@ There are several ways of managing an SSL certificate on your OVH Web Hosting pl
 
 - [Delete an SSL certificate on a Web Hosting plan.](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#delete-an-ssl-certificate-on-a-web-hosting-plan){.external} Helps you delete an SSL certificate on an OVH Web Hosting plan. Please note that this may pose some risks, if any of your websites are currently using the certificate you intend to delete. 
 
-### Activate an SSL certificate on a Web Hosting plan.
+### Activate an SSL certificate on your Web Hosting plan.
 
 With an OVH Web Hosting plan, you can choose from a range of [SSL certificate solutions](https://www.ovh.co.uk/ssl/){.external}:
 
@@ -86,7 +86,7 @@ Once you have submitted the activation request, the SSL secure connection status
 
 ![managessl](images/manage-ssl-step6.png){.thumbnail}
 
-### Activate the SSL certificate on a Web Hosting plan.
+### Activate an SSL certificate on a Web Hosting plan.
 
 > [!primary]
 >
@@ -105,7 +105,7 @@ Please note that Let's Encrypt, the authority that delivers the SSL certificate 
 
 ![managessl](images/manage-ssl-step8.png){.thumbnail}
 
-### Delete the SSL certificate on a Web Hosting plan.
+### Delete an SSL certificate on a Web Hosting plan.
 
 You can also delete an SSL certificate that has been set up on your Web Hosting plan. Before you start making any changes, **we strongly advise ensuring that the certificate deletion will not render your websites inaccessible**. Please keep in mind that your web users will see a security error when they try to access a website that works in HTTPS, but does not have a secure SSL connection. 
 

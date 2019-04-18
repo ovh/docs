@@ -1,174 +1,123 @@
 ---
-title: Anleitung zur Nutzung der automatischen Verlängerung bei OVH
+title: 'Verlängerung meiner Dienste verwalten'
 slug: anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh
+excerpt: 'Hier erfahren Sie, wie Sie im Kundencenter die Verlängerung Ihrer OVH Dienste verwalten.'
+section: 'Erste Schritte'
+order: 1
 legacy_guide_number: g1271
 ---
 
+**Stand 08.04.2019**
 
-## Allgemein
-Die Wahl der Zahlungsart treffen Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/manager/web/) im Menü "Abrechnung". Klicken Sie dort auf "Meine Zahlungsarten" und dann auf "Eine Zahlungsart hinzufügen", um eine Zahlungsart hinzuzufügen.
+## Einleitung
 
+Wenn Sie OVH Dienste nutzen, können Sie deren Verlängerung ganz einfach über das Kundencenter verwalten. 
 
-- Wichtig: Wenn keine Zahlungsart aktiviert ist und Sie eine Ihrer Dienstleistungen für die automatische Verlängerung eintragen, wird Ihr OVH Account belastet. Dieser muss dann zeitnah ausgeglichen werden, um eine Unterbrechung der Dienstleistung durch OVH zu vermeiden.
+**In dieser Anleitung erfahren Sie, wie Sie im Kundencenter die Verlängerung Ihrer OVH Dienste verwalten.**
 
+> [!primary]
+>
+> In Abhängigkeit von ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVH Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `Meine Dienstleistungen`{.action}, unter `Meine Verträge`{.action} einsehen können.
+>
 
-Die Aktivierung der automatischen Verlängerung erfolgt in der Rubrik "Meine Dienstleistungen".
+## Voraussetzungen
 
-![](images/3734.png){.thumbnail}
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie haben aktive OVH Dienste.
 
+## Beschreibung
 
-## Eintragen einer Kreditkarte
-Wählen Sie in dem Dropdown-Menü "Kreditkarte" aus und klicken Sie auf "Hinzufügen".
+Sie können verschiedene Einstellungen für die Verlängerung Ihrer Dienste vornehmen. Folgen Sie dieser Anleitung nun entsprechend der von Ihnen gewünschten Aktion: 
 
+- [Verlängerungsstatus Ihrer Dienste anzeigen](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#verlangerungsstatus-anzeigen){.external}: Sie können überprüfen, ob Ihre Dienstleistungen automatisch verlängert werden, und das Verlängerungs- sowie Ablaufdatum der Dienste einsehen.
 
-- Achtung: Die Anzeige von Popups im Browser muss aktiviert sein, damit der Bestellschein angezeigt wird.
+- [Verlängerung Ihrer Dienste verwalten](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#verlangerung-verwalten){.external}: Sie können die automatische Verlängerung aktivieren oder deaktivieren sowie das Zahlungsintervall für einen Dienst ändern.
 
+- [Zahlungsarten verwalten](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#zahlungsarten-verwalten_1){.external}: Sie können überprüfen, dass für zukünftige Verlängerungen ein Zahlungsmittel hinterlegt ist, und falls nötig Zahlungsmittel hinzufügen oder löschen.
 
+### Verlängerungsstatus anzeigen
 
-![](images/3735.png){.thumbnail}
-Es wird nun automatisch ein Bestellschein mit einem Rechnungsbetrag über 1 Euro ohne MwSt erstellt. 
-Indem Sie diesen Betrag mit Ihrer Kreditkarte begleichen, werden Ihre Kreditkartendaten validiert und als Standard-Zahlungsmittel hinterlegt. Der Betrag dieses Bestellscheins wird Ihrem Kundenkonto gutgeschrieben und mit der nächsten Bestellung verrechnet.
-Ihre Kreditkarte wird dann umgehend aktiviert.
+Loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie oben rechts auf den zu Ihrer Kundenkennung gehörigen Namen und wählen Sie dann `Meine Dienstleistungen`{.action} aus.
 
-![](images/3736.png){.thumbnail}
+![automatische Verlängerung verwalten](images/manage-automatic-renewal-step1.png){.thumbnail}
 
+Es werden Ihnen nun alle Ihre OVH Lösungen in einer Tabelle angezeigt. Diese enthält für jeden Dienst die Angaben zu Verlängerungs- und Ablaufdatum sowie das Zahlungsintervall.
 
-## Eintragen eines Bankkontos
-Tragen Sie die geforderten Angaben ein und klicken Sie auf "Hinzufügen".
+Sie finden diese in den entsprechenden Spalten „Verlängerungsdatum“ und „Zahlungsintervall“. Um bestimmte Dienste auszuwählen oder die Anzeige der Dienste zu ordnen, verwenden Sie die Filterfunktionen.
 
-![](images/3738.png){.thumbnail}
-Nach dem Klick auf "Hinzufügen" wird ein Dokument heruntergeladen.
+![automatische Verlängerung verwalten](images/manage-automatic-renewal-step2.png){.thumbnail}
 
+### Verlängerung verwalten
 
-- Achtung: Die Anzeige von Popups im Browser muss aktiviert sein, damit der Bestellschein angezeigt wird.
+Loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie oben rechts auf den zu Ihrer Kundenkennung gehörigen Namen und wählen Sie dann `Meine Dienstleistungen`{.action} aus.
 
+![automatische Verlängerung verwalten](images/manage-automatic-renewal-step1.png){.thumbnail}
 
-Folgen Sie den Anweisungen auf dem Dokument, um die Zahlungsart zu validieren. Ihr Bankkonto wird nach dem Eingang Ihrer Einzugsermächtigung innerhalb von 24 bis 48 Stunden validiert.
+Es werden Ihnen nun alle Ihre OVH Lösungen in einer Tabelle angezeigt. Je nach Dienst können Sie folgende Aktionen durchführen:
 
-![](images/1077.png){.thumbnail}
+|Aktion|Beschreibung|
+|---|---|
+|Zahlungsintervall ändern|Hier können Sie das Zahlungsintervall eines Dienstes ändern. Für manche Dienste ist diese Einstellung nicht möglich oder es stehen nicht alle Zeiträume zur Auswahl.|
+|Dienstleistung bezahlen|Sie können einen Dienst bereits vor der automatischen Verlängerung bezahlen.|
+|Automatische Zahlung aktivieren/deaktivieren|Sie können die automatische Verlängerung eines Dienstes aktivieren oder deaktivieren.|
 
+Folgen Sie dieser Anleitung nun entsprechend der von Ihnen gewünschten Aktion.
 
-## Eintragen eines Paypal Accounts
-Zum Hinzufügen eines Paypal Accounts klicken Sie auf "Hinzufügen". Es öffnet sich dann ein neues Fenster.
+![automatische Verlängerung verwalten](images/manage-automatic-renewal-step3.png){.thumbnail}
 
+#### Zahlungsintervall ändern
 
-- Achtung: Die Anzeige von Popups im Browser muss aktiviert sein, damit der Bestellschein angezeigt wird.
+Hier können Sie das Zahlungsintervall für Dienste mit automatischer Verlängerung ändern. Sie haben Die Wahl zwischen folgenden Abrechnungszeiträumen: monatlich, vierteljährlich, halbjährlich und jährlich. Für manche Dienste ist diese Einstellung nicht möglich oder es stehen nicht alle Zeiträume zur Verfügung.
 
+Klicken Sie rechts in der Zeile des betreffenden Dienstes auf die drei Punkte und wählen Sie `Zahlungsintervall ändern`{.action} aus.
 
+![automatische Verlängerung verwalten](images/manage-automatic-renewal-step4.png){.thumbnail} 
 
-![](images/3738.png){.thumbnail}
-Tragen Sie Ihre Paypal Account-Daten ein.
+Wählen Sie im angezeigten Fenster im Drop-down-Menü unter „Typ“ den gewünschten Zeitraum aus. Gehen Sie auf `Weiter`{.action} und bestätigen Sie die Auswahl mit `Bestätigen`{.action}. Das neue Zahlungsintervall gilt ab der nächsten automatischen Verlängerung Ihres Dienstes.
 
-![](images/3739.png){.thumbnail}
+![automatische Verlängerung verwalten](images/manage-automatic-renewal-step5.png){.thumbnail} 
 
+#### Dienstleistung bezahlen
 
-## Verlängerungsstatus Ihrer Dienstleistungen
-Begeben Sie sich zuerst in die Rubrik "Meine Dienstleistungen", um die Dienstleistungen auszuwählen, die automatisch verlängert werden sollen.
+Sie können einen Dienst bereits vor der automatischen Verlängerung bezahlen. Für einige OVH Dienste ist diese Aktion nicht möglich.
 
-![](images/3740.png){.thumbnail}
-In der dort angezeigten Tabelle werden folgende Informationen aufgeführt:
+Klicken Sie rechts in der Zeile des betreffenden Dienstes auf die drei Punkte und wählen Sie `Dienstleistung bezahlen`{.action} aus. Wenn Sie diese Aktion für mehrere Dienste durchführen möchten, wählen Sie mehrere Dienste aus, indem Sie am Anfang der Zeile ein Häkchen setzen, und klicken Sie dann oberhalb der Tabelle auf den Button `Dienstleistung bezahlen`{.action}.
 
+![automatische Verlängerung verwalten](images/manage-automatic-renewal-step6.png){.thumbnail} 
 
-- Tag der automatischen Verlängerung: Hier können Sie den Tag des Monats auswählen, an dem OVH die Zahlung mit Ihrer eingetragenen Zahlungsart durchführt.
+Sie werden nun zum Verlängerungsinterface weitergeleitet. Auf diese Seite gelangen Sie auch über folgenden Link: <https://www.ovh.de/cgi-bin/order/renew.cgi>. Folgen Sie nun den vorgegebenen Schritten, bis die Verlängerungseinstellungen Ihrer Dienste abgeschlossen sind. 
 
-- Kennung: In dieser Spalte wird der Name der Dienstleistungen aufgeführt.
+#### Automatische Verlängerung aktivieren oder deaktivieren
 
-- Verlängerung: In dieser Spalte sehen Sie den derzeit für die jeweilige Dienstleistung aktiven Verlängerngsmodus.
+Sie können die automatische Verlängerung eines Dienstes aktivieren oder deaktivieren. Klicken Sie rechts in der Zeile des betreffenden Dienstes auf die drei Punkte und wählen Sie `Automatische Zahlung aktivieren`{.action} bzw. `Automatische Zahlung deaktivieren`{.action} aus. 
 
-- 1. Alle Dienstleistungen: Hier können Sie die Tabelle nach Dienstleistungstyp filtern.
+Lesen Sie die angezeigten Informationen und bestätigen Sie die Änderung mit `Bestätigen`{.action}.
 
-- 2. Datum: Hier können Sie die Tabelle filtern, um nur Dienstleistungen anzuzeigen, die "In einer Woche ablaufen", "In einem Monat ablaufen" oder bereits "Abgelaufen" sind.
+Bitte beachten Sie, dass die Deaktivierung der Verlängerung eines Dienstes nicht mit einer Kündigung gleichzusetzen ist. Der Dienst bleibt bis zu seinem Ablaufdatum aktiv, d. h. Sie können auswählen, wann Sie ihn vor diesem Datum verlängern möchten. Wenn Sie einen Dienst am Ablaufdatum endgültig kündigen möchten, lesen Sie die Anleitung „[Dienste verwalten](https://docs.ovh.com/de/billing/ovh-dienste-verwalten/#dienst-am-ablaufdatum-kundigen){.external}“.
 
-- 3. Verlängerung: Hier können Sie die Tabelle filtern, um nur Dienstleistungen anzuzeigen, die sich in der "Automatischen jährlichen Verlängerung", der "Automatischen monatlichen Verlängerung" oder der "Manuellen Verlängerung" befinden.
+![automatische Verlängerung verwalten](images/manage-automatic-renewal-step7.png){.thumbnail} 
 
+### Zahlungsarten verwalten
 
+Loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie oben rechts auf den mit Ihrer Kundenkennung verknüpften Namen und wählen Sie dann `Meine Zahlungsarten`{.action} aus.
 
-![](images/3741.png){.thumbnail}
-Mit einem Klick auf "Kündigen" wird die automatische Verlängerung deaktiviert, und die gewählte Dienstleistung läuft dann zu deren Ablaufdatum ab.
+![automatische Verlängerung verwalten](images/manage-automatic-renewal-step8.png){.thumbnail}
 
+Es werden Ihnen nun alle Ihre Zahlungsarten in einer Tabelle angezeigt. Sie können die vorhandenen Zahlungsarten verwalten sowie weitere hinzufügen.
 
-## Wahl der automatischen Verlängerung
-Mit einem Klick auf das Bleisiftsymbol in der Spalte "Verlängerung" der gewünschten Dienstleistung können Sie die Art der Verlängerung ändern.
+Die folgenden Informationen zu jeder Zahlungsart werden Ihnen in der Tabelle angezeigt:
 
+- Zahlungsart: Gibt den Typ der Zahlungsart an.
+- Beschreibung: Die Beschreibung hilft Ihnen, die Zahlungsart von anderen zu unterscheiden.
+- Standardzahlungsmittel: Gibt an, ob die aktuelle Zahlungsart als Standardzahlungsmittel eingestellt ist oder nicht.
+- Status: Variiert je nach Typ oder Aktivierungsstatus der Zahlungsart.
 
-- Verlängerung: Wählen Sie "Automatisch", um die automatische Verlängerung der Dienstleistung zu aktivieren.
+![automatische Verlängerung verwalten](images/manage-automatic-renewal-step9.png){.thumbnail}
 
-- Frequenz: Hier können Sie abhängig von der Dienstleistung die Frequenz der Verlängerungen auswählen.
+Klicken Sie auf den Button `Zahlungsart hinzufügen`{.action}, um eine neue Zahlungsart hinzuzufügen, und wählen Sie dann den gewünschten Typ aus. Folgen Sie nun den vorgegebenen Schritten bis zur Bestätigung der Zahlungsart.
 
-Beispiel: Wenn Sie bei der Frequenz "3 Monate" auswählen, wird alle 3 Monate ein Dreimonatsbetrag für die Dienstleistung eingezogen.
+![automatische Verlängerung verwalten](images/manage-automatic-renewal-step10.png){.thumbnail}
 
+## Weiterführende Informationen
 
-![](images/3742.png){.thumbnail}
-
-
-## Aktivierung der automatischen Verlängerung für mehrere Dienstleistungen
-Sie können die Art der Verlängerung für mehrere Dienstleistungen auf einmal ändern, indem Sie in der Spalte auf der linken Seite ein Häkchen bei den gewünschten Dienstleistungen setzen.
-
-Klicken Sie anschließend auf "Die Verlängerungen bearbeiten".
-
-![](images/3743.png){.thumbnail}
-
-
-## Praktisches Beispiel
-Es ist der 2. Februar 2014. Wir richten eine automatische Verlängerung für den 12. des Monats ein, bei der alle Dienstleistungen für einen Zeitraum von 1 Jahr verlängert werden.
-
-![](images/1564.png){.thumbnail}
-Wichtig: Der Bestellschein zur Angleichung der Laufzeit der Dienstleistungen wird nicht am 2. Februar 2014 ausgeführt, sondern zum von Ihnen gewählen Datum, in diesem Beispiel also am 12. Februar 2014!
-
-Der erste Bestellschein zur Angleichung der Laufzeit der Dienstleistungen erfolgt für einen Zeitraum von einem Monat. Später können Sie dann auch den Zeitraum für die Verlängerungen ändern. 
-Die Angleichung der Laufzeit von Dienstleistungen erfolgt ausschließlich für OVH-eigene Dienstleistungen (Webhosting-Pakete, SQL Private, Optionen...).
-
-/!\ Da Domainnamen bei den Domain-Registries nur jahresweise verlängert werden können, kann deren Laufzeit nicht aneinander angeglichen werden!
-
-Hinweis:
-Unabhängig vom gewählten Verlängerungszeitraum überprüft unser automatisiertes System jeden Monat am Tag, an dem die Verlängerung durchgeführt wird, welche Dienstleistungen im Laufe des nächsten Monats ablaufen, um die gefundenen Dienstleistungen für den von Ihnen festgelegten Zeitraum zu verlängern.
-
-In unserem Beispiel enthält der am 12. Februar 2014 erstellt Bestellschein folgende Elemente:
-Die Angleichung der Laufzeit folgender Dienstleistungen: 
-
-- Dienstleistung 3: für 1 Monat + 1 Tag (vom 11. Februar bis zum 12. März 2014)
-- Dienstleistung 5: für 27 Tage (vom 13. Februar bis zum 12. März 2014)
-
-Das neue Ablaufdatum dieser Dienstleistungen ist somit der 12. März 2014.
-
-Am 12. März 2014 werden die Dienstleistung 3 & 5 also für 1 Jahr (den gewählten Zeitraum) verlängert.
-
-Achtung, die am 11. Februar 2014 ablaufende Dienstleistung 3 wird am 12. Februar 2014 abgeschaltet!
-
-Die am 12. Februar 2014 ablaufende Dienstleistung 2 wird automatisch für 1 Jahr (den gewählten Zeitraum) verlängert.
-
-Bei der am 15. Februar 2014 ablaufenden Dienstleistung 4 erkennt unser System, dass diese im Zeitraum zwischen dem 12. Februar 2014 und dem 12. März 2014 ablaufen wird. Sie wird somit für 1 Jahr verlängert, und dieses Jahr wird an das Ablaufdatum der Dienstleistung angehängt.
-
-Die Dienstleistung 4 wird am 12. Februar 2014 um 1 weiteres Jahr verlängert, das neue Ablaufdatum ist dann der 15. Februar 2015.
-
-Die Dienstleistung 1 wird zwischen dem 10. und 12. Februar 2014 nicht verfügbar sein, Sie wird dann aber am 12. Februar 2014 von unserem System um 1 weiteres Jahr (den gewählten Zeitraum) verlängert.
-
-Zusammengefasst enthält der Bestellschein vom 12. Februar 2014 also:
-Die Angleichung der Laufzeit der Dienstleistungen:
-
-- Dienstleistung 3: für 1 Monat + 1 Tag (vom 11. Februar bis zum 12. März 2014)
-- Dienstleistung 5: für 27 Tage (vom 13. Februar bis zum 12. März 2014)
-
-Die Verlängerung der Dienstleistungen:
-
-- Dienstleistung 1: für 1 Jahr (vom 10. Februar 2014 bis zum 10. Februar 2015)
-- Dienstleistung 2: für 1 Jahr (vom 12. Februar 2014 bis zum 12. Februar 2015)
-- Dienstleistung 4: für 1 Jahr (vom 15. Februar 2014 bis zum 15. Februar 2015)
-
-Der nächste Bestellschein vom 12. März 2014 enthält dann:
-
-
-Die Verlängerung der Dienstleistungen:
-
-- Dienstleistung 3: für 1 Jahr (vom 12. März 2014 bis zum 12. März 2015)
-- Dienstleistung 5: für 1 Jahr (vom 12. März 2014 bis zum 12. März 2015)
-
-Hinweis: Eine für den 29., 30., oder 31. eines Monats angeforderte automatische Verlängerung wird jeweils am 1. des Folgemonats durchgeführt.
-
-
-
-## Lebenszyklus von Domainnamen
-Erläuternde Grafik:
-
-![](images/2554.png){.thumbnail}
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

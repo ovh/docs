@@ -3,6 +3,7 @@ title: Utilizza la vRack e le reti private con le istanze Public Cloud
 excerpt: Utilizza la vRack e le reti private con le istanze Public Cloud
 slug: utilizza_la_vrack_e_le_reti_private_con_le_istanze_public_cloud
 legacy_guide_number: g2162
+hidden: true
 ---
 
 

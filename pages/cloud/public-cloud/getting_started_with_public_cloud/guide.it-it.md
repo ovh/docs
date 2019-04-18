@@ -3,6 +3,7 @@ title: Crea il tuo primo progetto Public Cloud
 excerpt: Questa guida ti mostra come creare il tuo primo progetto Public Cloud.
 slug: crea_il_tuo_primo_progetto_public_cloud
 legacy_guide_number: g2329
+hidden: true
 ---
 
 

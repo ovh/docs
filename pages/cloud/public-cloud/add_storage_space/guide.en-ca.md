@@ -4,6 +4,7 @@ slug: add_storage_space
 excerpt: 'This guide will show you how to add external storage space to your Public Cloud Instance'
 legacy_guide_number: g1790
 section: Storage
+hidden: true
 ---
 
 **Last updated 2019/03/06**

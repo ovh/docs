@@ -4,6 +4,7 @@ excerpt: Analizar y gestionar la facturación
 slug: analizar_y_gestionar_la_facturacion
 legacy_guide_number: g2031
 section: Gestión del proyecto
+hidden: true
 ---
 
 

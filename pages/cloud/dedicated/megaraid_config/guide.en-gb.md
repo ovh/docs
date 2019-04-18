@@ -118,6 +118,6 @@ MegaCli -LDInfo -Lall -a0 |grep -i size
 
 [Hot Swap – Software RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/){.external}
 
-[Software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external}
+[Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} 
 
 Join our community of users on <https://community.ovh.com/en/>

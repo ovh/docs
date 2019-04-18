@@ -3,6 +3,7 @@ title: Adicionar um espaço de armazenamento
 excerpt: Adicionar um espaço de armazenamento
 slug: adicionar_um_espaco_de_armazenamento
 legacy_guide_number: g1790
+hidden: true
 ---
 
 

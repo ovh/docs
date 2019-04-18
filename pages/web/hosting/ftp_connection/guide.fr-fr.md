@@ -6,7 +6,7 @@ section: 'FTP et SSH'
 order: 1
 ---
 
-**Dernière mise à jour le 05/03/2019**
+**Dernière mise à jour le 26/03/2019**
 
 ## Objectif
 
@@ -37,7 +37,7 @@ Pour vous connecter à votre espace de stockage, vous devez être en possession 
 > **Si vous êtes déjà en possession de ces derniers**, poursuivez directement vers l'étape 2 « [Accéder à votre espace de stockage](./#etape-2-acceder-a-votre-espace-de-stockage) ».
 > 
 
-Si vous n’êtes pas en possession de ces éléments, connectez-vous à [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
+Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
 
 Les informations liées à votre espace de stockage apparaissent alors, ainsi qu'un tableau listant les utilisateurs FTP et SSH créés sur votre hébergement.
 
@@ -108,10 +108,10 @@ Une fois la connexion SSH établie et selon la méthode choisie, il existe deux 
 - depuis un logiciel : les zones de texte doivent être complétées par les informations de connexion ;
 - depuis une ligne de commande : une syntaxe spécifique devra être respectée.
 
-Pour une utilisation en ligne de commande, voici celle que vous devrez utiliser. Remplacez les éléments « loginssh » et « serveurssh » par ceux adaptés à votre situation personnelle. Une fois la commande envoyée, vous serez invité à renseigner le mot de passe de l'utilisateur SSH.
+Pour une utilisation en ligne de commande, voici celle que vous devrez utiliser. Remplacez les éléments « sshlogin », « sshserver » et « connectionport » par ceux adaptés à votre situation personnelle. Une fois la commande envoyée, vous serez invité à renseigner le mot de passe de l'utilisateur SSH.
 
 ```ssh
-ssh loginssh@serveurssh
+ssh sshlogin@sshserver -p connectionport
 ```
 
 Si les informations sont correctes, vous pourrez alors interagir avec votre espace de stockage. Aidez-vous de notre documentation « [Utiliser une connexion SSH sur un hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/) » si nécessaire.

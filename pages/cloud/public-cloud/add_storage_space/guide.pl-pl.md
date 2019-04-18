@@ -4,6 +4,7 @@ excerpt: Dodanie przestrzeni dyskowej
 slug: dodanie_przestrzeni_dyskowej
 legacy_guide_number: g1790
 section: Object Storage
+hidden: true
 ---
 
 
