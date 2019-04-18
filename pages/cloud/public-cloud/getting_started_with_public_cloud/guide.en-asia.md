@@ -4,6 +4,7 @@ excerpt: This guide explains how to create your first Public Cloud project
 slug: getting-started-with-public-cloud
 legacy_guide_number: g2329
 section: Getting started
+hidden: true
 ---
 
 

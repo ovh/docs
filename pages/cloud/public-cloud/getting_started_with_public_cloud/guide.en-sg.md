@@ -4,6 +4,7 @@ slug: getting_started_with_public_cloud_logging_in_and_creating_a_project
 excerpt: 'This guide will show you how to create your first Public Cloud project'
 legacy_guide_number: g2329
 section: 'Getting started'
+hidden: true
 ---
 
 **Last updated 15th October 2018**

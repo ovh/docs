@@ -2,6 +2,7 @@
 title: Information concernant le mode de facturation cloud
 slug: information-concernant-le-mode-de-facturation-cloud
 section: Informations générales et vocabulaire
+hidden: true
 ---
 
 

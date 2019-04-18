@@ -4,6 +4,7 @@ slug: analizowanie_platnosci_i_zarzadzanie_nimi
 excerpt: Zasady i modele naliczania opłat
 section: Pierwsze kroki
 order: 5
+hidden: true
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-19**

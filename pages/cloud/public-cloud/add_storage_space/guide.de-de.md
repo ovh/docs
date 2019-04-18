@@ -3,6 +3,7 @@ title: Hinzufügen von Storage-Bereichen
 excerpt: Hinzufügen von Storage-Bereichen
 slug: hinzufugen_von_storage-bereichen
 legacy_guide_number: g1790
+hidden: true
 ---
 
 

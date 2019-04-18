@@ -3,6 +3,7 @@ title: Ajouter des espaces de stockage
 slug: ajouter-des-espaces-de-stockage
 legacy_guide_number: 1790
 section: Object Storage
+hidden: true
 ---
 
 

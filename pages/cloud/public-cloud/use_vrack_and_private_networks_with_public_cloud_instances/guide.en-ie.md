@@ -3,6 +3,7 @@ title: Use vRack and private networks with Public Cloud instances
 excerpt: Use vRack and private networks with Public Cloud instances
 slug: use_vrack_and_private_networks_with_public_cloud_instances
 legacy_guide_number: g2162
+hidden: true
 ---
 
 
