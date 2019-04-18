@@ -1,98 +1,120 @@
 ---
-title: Tester la vitesse des disques
+title: 'Tester la vitesse des disques'
 slug: tester-la-vitesse-des-disques
-legacy_guide_number: 1956
+excerpt: 'Apprenez à tester le nombre d''opérations par seconde (IOPS) que vos disques sont en mesure d''effectuer'
 section: Tutoriels
 ---
 
+**Dernière mise à jour le 15 avril 2019**
 
-## Préambule
-Vous serez probablement amener à vérifier la vitesse de vos disques dans le cadre de vos tests que cela soit pour comparer les performances des différents disques, ou bien simplement pour vérifier si celles ci sont correctes.
+## Objectif
 
-Ce guide vous indique la procédure à suivre afin de tester le nombre d'entrée / sortie par seconde (IOPS) que vos disques sont en mesure de réaliser, que cela soit pour les disques des instances, ou les disques additionnels.
+Vous serez probablement invité à vérifier la vitesse de vos disques lors de vos tests. Si vous souhaitez comparer les performances de différents disques ou simplement vérifier s'ils sont satisfaisants.
 
+**Apprenez à tester le nombre d'opérations d'entrée/sortie par seconde (IOPS) que vos disques sont en mesure d'effectuer, que ce soit pour des instances ou des disques supplémentaires.**
 
-### Prérequis
-- Une instance
-- Un disque additionnel
+## Prérequis
 
+- Disposer d'une [Instance Public Cloud]({ovh_www}/public-cloud/instances/){.external}.
+- Disposer d’un accès administratif (root) à votre instance via SSH (pour Linux uniquement).
 
-## Tester les performances du disque
+## Instructions
 
-### Installation
-La commande à utiliser n'est pas disponible par défaut, il faudra donc l'installer dans un premier temps :
+### Installer la commande test
 
+La commande dont vous avez besoin pour tester la vitesse de votre disque s'appelle `fio` et n'est pas installée par défaut sur votre serveur.
 
-```bash
-root@serveur:~$ apt-get install fio
+Pour installer `fio`, établissez une connexion SSH à votre instance, puis exécutez la commande suivante:
+
+```
+root@server:~$ apt-get fio install
 ```
 
+### Testez la vitesse de votre disque
 
-### Test
-Voici la commande à effectuer afin de tester vos disques :
+Pour tester la vitesse de votre disque, exécutez la commande suivante:
 
-
-```bash
-root@serveur:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
+```
+root@serveur:~$ fio 
+--name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
 ```
 
-Attention Il faudra adapter l'argument  **--numjobs**  en fonction du nombre de CPU dont votre instance dispose. De plus, il est possible de retrouver la liste des arguments et leurs fonctions directement dans le [manuel de fio](https://github.com/axboe/fio/blob/master/HOWTO){.external}.
-
-
-
-> [!success]
+> [!primary]
 >
-> Pour tester les performances d'un disque additionnel, il faudra se placer sur
-> l'un des dossiers du point de montage.
-> 
-> ```bash
-> root@serveur:~$ cd /mnt/disk
-> ```
+> Notez que vous devrez modifier l'argument `—numjobs` pour refléter le nombre de CPU de votre instance.
+>
+> Vous pouvez récupérer une liste d'arguments et leurs fonctions directement à partir du [guide](https://github.com/axboe/fio/blob/master/HOWTO) de fio.
 >
 
-### Analyse
-Suite à l'exécution de cette commande vous obtiendrez un résultat similaire à cela :
+Pour tester la vitesse d'un disque supplémentaire, vous devez monter le disque à l'aide de la commande suivante : 
 
+```
+root@serveur:~$ cd /mnt/disk
+```
 
-```bash
+### Analyser les données
+
+Une fois le test terminé, vous obtenez un résultat semblable à ce qui suit :
+
+```
 fio-2.1.11
-Starting 1 process
-test: Laying out IO file(s) (1 file(s) / 1024MB)
-Jobs: 1 (f=1): [w(1)] [40.9% done] [0KB/3580KB/0KB /s] [0/895/0 iops] [eta 02m:55s]
-test: (groupid=0, jobs=1): err= 0: pid=12376: Thu Oct 29 14:46:37 2015
-  write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
-    slat (usec): min=4, max=4640, avg=22.57, stdev=62.14
-    clat (usec): min=299, max=181699, avg=34778.45, stdev=7857.92
-     lat (usec): min=324, max=181769, avg=34801.55, stdev=7843.84
-    clat percentiles (usec):
-     |  1.00th=[  708],  5.00th=[30848], 10.00th=[33536], 20.00th=[34560],
-     | 30.00th=[35072], 40.00th=[35072], 50.00th=[35072], 60.00th=[35584],
-     | 70.00th=[36096], 80.00th=[36608], 90.00th=[37632], 95.00th=[39680],
-     | 99.00th=[47360], 99.50th=[51968], 99.90th=[125440], 99.95th=[146432],
-     | 99.99th=[181248]
-    bw (KB  /s): min= 2646, max= 4232, per=100.00%, avg=3567.77, stdev=136.56
-    lat (usec) : 500=0.23%, 750=1.26%, 1000=1.22%
-    lat (msec) : 2=0.37%, 4=0.03%, 10=0.01%, 20=0.11%, 50=96.05%
-    lat (msec) : 100=0.58%, 250=0.14%
-  cpu          : usr=0.34%, sys=1.80%, ctx=9281, majf=0, minf=8
-  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=100.0%, >=64=0.0%
-     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
-     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.1%, 64=0.0%, >=64=0.0%
-     issued    : total=r=0/w=107008/d=0, short=r=0/w=0/d=0
-     latency   : target=0, window=0, percentile=100.00%, depth=32
+Démarrage d'un processus
+test: Mise en page des fichiers d'E/S (1 fichier(s) / 1 024 Mo)
+Emplois 1 (f=1): [w(1)] [40.9% done] [0KB/3580KB/0KB /s] [0/895/0 iops] [eta 02m:55s]
+test: (groupid=0, jobs=1): err= 0: 
+pid=12376: Thu Oct 29 14:46:37 2015
+write: io=428032KB, bw=3566.2KB/s, 
+iops=891, runt=120031msec
+slat (usec): min=4, max=4640, avg=22.57, stdev=62.14
+clat (usec): min=299, max=181699, avg=34778.45, stdev=7857.92
+lat (usec): min=324, max=181769, 
+avg=34801.55, stdev=7843.84
+clat percentiles (usec):
+| 1.00th=[ 708], 5.00th=[30848], 10.00th=[33536], 20.00th=[34560],
+| 30.00th=[35072], 40.00th=[35072], 50.00th=[35072], 60.00th=[35584],
+| 70.00th=[36096], 80.00th=[36608], 90.00th=[37632], 95.00th=[39680],﻿
+| 99.00th=[47360], 99.50th=[51968], 99.90th=[125440], 99.95th=[146432],
+| 99.99th=[181248]
+bw (KB /s): min= 2646, max= 4232, 
+per=100.00%, avg=3567.77, stdev=136.56
+lat (usec) : 500=0.23%, 750=1.26%, 
+1000=1.22%
+lat (msec) : 2=0.37%, 4=0.03%, 10=0.01%, 20=0.11%, 50=96.05%
+lat (msec) : 100=0.58%, 250=0.14%
+cpu : usr=0.34%, sys=1.80%, ctx=9281, 
+majf=0, minf=8
+IO depths : 1=0.1%, 2=0.1%, 4=0.1%, 
+8=0.1%, 16=0.1%, 32=100.0%, >=64=0.0%
+submit : 0=0.0%, 4=100.0%, 8=0.0%, 
+16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+21% complete 0=0.0%, 4=100.0%, 8=0.0%, 
+16=0.0%, 32=0.1%, 64=0.0%, >=64=0.0%
+issued : total=r=0/w=107008/d=0, 
+short=r=0/w=0/d=0
+latency : target=0, window=0, percentile=100.00%, depth=32
 
 Run status group 0 (all jobs):
-  WRITE: io=428032KB, aggrb=3566KB/s, minb=3566KB/s, maxb=3566KB/s, mint=120031msec, maxt=120031msec
+WRITE: io=428032KB, aggrb=3566KB/s, minb=3566KB/s, maxb=3566KB/s, 
+mint=120031msec, maxt=120031msec
 
 Disk stats (read/write):
-  vda: ios=0/300294, merge=0/1455, ticks=0/7431952, in_queue=7433124, util=99.05%
+vda: ios=0/300294, merge=0/1455, ticks=0/7431952, in_queue=7433124, 
+util=99.05%
 ```
 
-L'information qui nous intéresse correspond aux IOPS que l'on peut trouver à la ligne 6 du résultat :
+La ligne qui nous intéresse est la ligne 6, qui contient l'IOPS :
 
-
-```bash
+```
 write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 ```
 
-Il est possible de voir dans le cas présent que les performances du disque correspondent approximativement à  **891 iops** .
+Les performances des disques sont d'environ 891 E/S par seconde.
+
+
+## Aller plus loin
+
+[Créer et configurer un disque supplementaire sur une instance](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/)
+
+[Ajouter des espaces de stockage](../ajouter-des-espaces-de-stockage/){.external}
+
+Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com>.
