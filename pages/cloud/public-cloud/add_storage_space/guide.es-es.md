@@ -4,6 +4,7 @@ excerpt: Añadir espacios de almacenamiento
 slug: anadir_espacios_de_almacenamiento
 legacy_guide_number: g1790
 section: Almacenamiento
+hidden: true
 ---
 
 

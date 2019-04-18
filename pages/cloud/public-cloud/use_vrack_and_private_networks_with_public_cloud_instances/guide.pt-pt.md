@@ -3,6 +3,7 @@ title: Utilizar o vRack e as redes privadas com as instâncias Public Cloud
 excerpt: Utilizar o vRack e as redes privadas com as instâncias Public Cloud
 slug: utilizar_o_vrack_e_as_redes_privadas_com_as_instancias_public_cloud
 legacy_guide_number: g2162
+hidden: true
 ---
 
 
