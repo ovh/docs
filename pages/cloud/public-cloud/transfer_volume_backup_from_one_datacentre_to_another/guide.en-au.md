@@ -54,7 +54,7 @@ root@serveur:~$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b0
 Next, create a backup in the form of an image, using the following command:
 
 ```
-root@serveur:~$ openstack image create --disk-format qcow2 --container-format bare --id 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume
+root@serveur:~$ openstack image create --disk-format qcow2 --container-format bare --volume 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume
 +---------------------+------------------------------------------------------+
 |       Property      |                         Value                        |
 +---------------------+------------------------------------------------------+
