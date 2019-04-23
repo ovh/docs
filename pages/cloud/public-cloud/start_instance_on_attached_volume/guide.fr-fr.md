@@ -2,7 +2,7 @@
 title: Démarrer une instance sur un volume attaché
 slug: demarrer-une-instance-sur-un-volume-attache
 legacy_guide_number: 2064
-Section: Premiers pas
+section: Base de connaissances
 ---
 
 
