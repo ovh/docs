@@ -1,116 +1,79 @@
 ---
-title: Tornar-se root e definir uma palavra-passe
-excerpt: Tornar-se root e definir uma palavra-passe
+title: 'Tornar-se o utilizador root e selecionar uma palavra-passe'
 slug: tornar-se_root_e_definir_uma_palavra-passe
+excerpt: 'Saiba como tornar-se o utilizador root e criar uma palavra-passe para a conta root'
 legacy_guide_number: g1786
 ---
 
+**Última atualização: 23/04/2019**
 
-## 
-Para efetuar certas ações deverá tornar-se root, nomeadamente para:
+## Sumário
 
-- A instalação de pacotes
-- Definir passwords para um utilizador ou root (indispensável para aceder ao KVM)
-- Para efetuar certos trabalhos de administração
+Para realizar determinadas tarefas num servidor (como a instalação de pacotes, por exemplo), é necessário dispor de um nível de acesso elevado. Nos servidores Linux, este nível denomina-se “root”.
 
+**Saiba como tornar-se o utilizador root e criar uma palavra-passe para a conta root.**
 
+## Requisitos
 
+* Dispor de um projeto Public Cloud ativo.
+* Poder ligar-se ao servidor através de SSH.
 
-## Pré-requisitos
+> [!primary]
+>
+> Este manual supõe que o utilizador predefinido tem como nome “admin”.
+>
 
-- []({legacy}1775)
-- Estar ligado por SSH com o utilizador padrão (admin ou o nome da distribuição para as imagens mais recentes)
+## Instruções
 
+### Alterar a palavra-passe root
 
+Em primeiro lugar, ligue-se ao servidor por SSH.
 
-## Informações
-Este guia foi desenvolvido com o principio que o utilização padrão é admin.
+Para isso, utilize o comando indicado abaixo e defina uma palavra-passe para o utilizador “admin” (por motivos de segurança, a palavra-passe não é mostrada):
 
-
-## Definir uma palavra-passe
-
-- Definir uma password para o utilizador admin (A password não será apresentada em "plein text" por razões de segurança):
-
-```
+```sh
 ~$ sudo passwd
 Enter new UNIX password:
 Retype new UNIX password:
-passwd: password updated successfully
+passwd: password updated successfully 
+successfully
 ```
 
+### Atualizar os repositórios (Debian e Ubuntu)
 
-- Definir uma password para o utilizador root (A password não será apresentada em "plein text" por razões de segurança):
-
-```
-~$ sudo passwd root
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-```
-
-
-
-
-
-## Outros exemplos
-
-- Atualizar a cache de pacotes (Debian / Ubuntu)
+Para atualizar os _pacotes_ de software instalados no seu servidor, insira o seguinte comando:
 
 ```
-~$ sudo apt-get update
+sudo apt-get update
 ```
 
+### Atualizar o sistema (CentOS e Fedora)
 
-- Atualizar o sistema (CentOS / Fedora)
+Para atualizar o sistema operativo do servidor, insira o seguindo comando:
 
 ```
 ~$ sudo yum update
 ```
 
+### Alterar o ficheiro de configuração
 
-- Editar um ficheiro de configuração:
+Para atualizar o ficheiro de configuração do servidor, insira o seguindo comando:
 
 ```
 ~$ sudo vi /etc/hosts.allow
 ```
 
+### Ligar-se como root
 
-
-
-
-## 
-
-- Tornar-se root
+Para se tornar o utilizador root, insira o seguinte comando:
 
 ```
 ~$ sudo su -
 ~#
 ```
 
+A seguir, indique a palavra-passe root.
 
-- Definir uma palavra-passe para o utilizador root (depois de se tornar root):
+## Quer saber mais?
 
-```
-~# passwd
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-```
-
-
-- Definir uma palavra-passe para o utilizador admin
-
-```
-~# passwd admin
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-```
-
-
-
-
-
-## 
-[Voltar ao índice dos guias Cloud]({legacy}1785)
-
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/)

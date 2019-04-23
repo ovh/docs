@@ -1,73 +1,59 @@
 ---
-title: Criar uma instância na interface Horizon
-excerpt: Como criar uma instância na interface Horizon
+title: 'Criar uma instância a partir da interface Horizon'
 slug: criar_uma_instancia_na_interface_horizon
+excerpt: 'Saiba como criar uma instância a partir da interface Horizon'
 legacy_guide_number: g1772
 ---
 
+**Última atualização: 23/04/2019**
 
-## 
-Conforme as suas necessidades, poderá ser necessário criar instâncias a partir do manager Horizon, nomeadamente nos casos em que deseja criar várias instâncias ao mesmo tempo, ou até para configurar um grupo de segurança particular nas suas instâncias.
-Este guia indica-lhe como poderá efetuar essas operações.
+## Sumário
 
+Tem a possibilidade de criar instâncias diretamente a partir da interface Horizon. Isto permite-lhe, por exemplo, criar múltiplas instâncias ou ainda configurar um grupo de segurança e aplicá-lo às suas instâncias.
 
-## 
-Para criar uma instância e necessário:
+**Saiba como criar uma instância a partir da interface Horizon.**
 
+## Requisitos
 
-- Ligar-se à interface Horizon
-- clicar em Instances no menu das esquerda.
-- clicar no botão Start an instance
-- preencher o formulário:
+- Dispor de um projeto [Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external} na sua conta OVH.
+- [Ter acesso à interface Horizon](../criar_um_acesso_a_interface_horizon/){.external}. 
 
+## Instruções
 
+Para começar a criar uma instância, aceda à interface Horizon. Se precisar de ajuda para realizar esta operação, consulte o nosso manual “[Criar um acesso à interface Horizon](../criar_um_acesso_a_interface_horizon/){.external}”.
 
-## Separador Detalhes
-Eis as informações a fornecer:
+A seguir, clique em `Compute`{.action} no menu à esquerda e, de seguida, em `Instances`{.action}.
 
-|Availability Zone|Deixar nova (escolha "por defeito")|
-|Name Nome da instância|Indicar o nome desejado para a instância a criar|
-|Template|Selecionar o tipo de instância a criar|
-|Número de instâncias|Indicar o número de instâncias a criar|
-|Source da instância|Selecionar a fonte de origem da instância: (Iniciar a partir de uma imagem ou a partir de uma snapshot)|
-|Image Name|Selecionar o nome da imagem (apenas no caso de não estar a ser escolhida uma imagem snapshot)|
-|Instance Snapshot Name|Selecionar o nome da snapshot (no caso de pretender arrancar a partir de uma snapshot)|
+![createinstance](images/create-instance-step1.png){.thumbnail}
 
+A nova página que aparece permite visualizar as instâncias atualmente lançadas. Para iniciar uma nova instância, clique no botão `Lançar uma instância`{.action}.
 
+![createinstance](images/create-instance-step2.png){.thumbnail}
 
-## Separador acesso e segurança
-Esta secção permite indicar uma chave SSH e o grupo de segurança para a instância
+Deverá preencher as diferentes informações. Caso seja necessário, consulte a tabela abaixo para obter ajuda ao preencher os campos. Lembre-se de que esta tabela não é exaustiva. 
 
-|Key Pair|Selecionar uma chave SSH para se ligar à instância (a criação de uma chave pode ser efetuada ao clicar no símbolo "+"|
-|Grupos de segurança|Selecionar o grupo de segurança para a instância (autorização de abertura de portas)|
+|Informação|Detalhes|
+|---|---|
+|Zona de disponibilidade|Deixe “nova” (escolha predefinida)|
+|Nome da instância|Indique o nome que pretende dar à instância que vai criar|
+|Tipo|Indique o tipo de instância que quer criar|
+|Número de instâncias|Indique o número de instâncias que pretende criar|
+|Origem de arranque da instância|Selecione a origem para a criação da instância a partir de uma imagem ou a partir de uma snapshot|
+|Nome da imagem|Selecione a imagem da instância (apenas em caso de arranque a partir de uma imagem)|
+|Snapshot da instância|Selecione uma snapshot de uma instância (apenas em caso de arranque a partir de uma snapshot)|
+|Par de chaves|Selecione uma chave SSH para se ligar à instância (a criação de uma chave pode ser realizada clicando no símbolo “+”)|
+|Grupos de segurança|Indique o grupo de segurança para a instância (autorização de abertura de portas)|
+|Redes selecionadas|Selecione a(s) rede(s) para a instância que pretende criar na lista das redes disponíveis|
+|Fonte de script personalizado|Indique a fonte entre uma “entrada direta” ou um “ficheiro”|
+|Dados de script|Indique o código do script no campo (máximo de 16 KB)|
+|Ficheiro do script|Clique em Navegar para selecionar o script de pós-instalação|
+|Particionamento do disco|Escolha entre “automático” ou “manual”|
+|Disco de configuração|Configure o OpenStack para escrever os metadados num disco de configuração específico que ficará associado à instância no momento do lançamento|
 
+Assim que estiver pronto para lançar a(s) instância(s) pretendida(s), clique no botão `Iniciar`{.action}.
 
+![createinstance](images/create-instance-step3.png){.thumbnail}
 
-## Separador Rede
-Esta secção permite indicar quais as redes às quais a instância será interligada
+## Quer saber mais?
 
-|Redes selecionadas|Selecionar a rede ou redes às quais a instância estará ligada a partir da lista de redes disponíveis|
-
-
-
-## Separador Pós-Criação
-Esta secção permite personalizar uma instância após a sua criação.
-
-|Fonte de Script personalizado|Introdução direta ou Ficheiro|
-|Dados de Script|Indicar o código do script no campo de introdução. Máximo 16KB) .|
-|Ficheiro de Script|Clicar para indicar o local do script de pós-instalação.|
-
-
-
-## Opções avançadas
-Esta secção permite a gestão do particionamento da instância.
-
-|Particionamento do disco|Automático ou Manual|
-|Disco de configuração|Configurar OpenStack para escrever os metadados num disco de configuração específico que será associado à instância no momento da sua inicialização.|
-
-
-
-
-## 
-[Voltar ao índice dos guias Cloud]({legacy}1785)
-
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
