@@ -2,7 +2,7 @@
 title: Changer les contacts d’un projet
 slug: changer-les-contacts-dun-projet
 legacy_guide_number: 2106
-section: Gestion du projet
+section: Base de connaissances
 ---
 
 

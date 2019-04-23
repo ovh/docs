@@ -1,7 +1,7 @@
 ---
 title: 'Creating and deleting an OpenStack user'
 slug: creation-and-deletion-of-openstack-user
-section: 'Via the OVH Control Panel'
+section: Knowledge Base
 ---
 
 ## Introduction

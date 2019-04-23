@@ -2,7 +2,7 @@
 title: Supprimer un projet
 slug: supprimer-un-projet
 legacy_guide_number: 2129
-section: Gestion du projet
+section: Base de connaissances
 ---
 
 

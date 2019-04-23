@@ -2,7 +2,7 @@
 title: 'Prepare the environment for using the OpenStack API'
 excerpt: 'Prepare the environment for using the OpenStack API'
 slug: prepare_the_environment_for_using_the_openstack_api
-section: 'Getting started'
+section: API reference/CLI
 ---
 
 ## 

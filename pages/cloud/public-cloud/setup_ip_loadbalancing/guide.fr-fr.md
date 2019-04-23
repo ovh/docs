@@ -2,7 +2,7 @@
 title: Configurer une IP LoadBalancing
 slug: configurer-une-ip-loadbalancing
 legacy_guide_number: 1927
-section: Depuis espace client OVH
+section: Base de connaissances
 ---
 
 

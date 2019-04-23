@@ -2,7 +2,7 @@
 title: 'Configurer la suppression automatique d’objets'
 slug: configurer-la-suppression-automatique-dobjets
 legacy_guide_number: 1950
-section: 'Object Storage'
+section: Base de connaissances
 ---
 
 ## Préambule

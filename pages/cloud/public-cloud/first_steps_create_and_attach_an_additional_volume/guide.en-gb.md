@@ -2,7 +2,7 @@
 title: Create an additional volume and attach it to an instance
 slug: create-an-additional-volume-and-attach-it-to-an-instance
 excerpt: Walk-through document on creating and attaching an additional hard disk to a cloud server.
-section: Storage
+section: Quick start
 ---
 
 

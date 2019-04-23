@@ -3,7 +3,7 @@ title: Access and Security in Horizon
 excerpt: The Access and Security guide explains how to access and secure instances.
 slug: access_and_security_in_horizon
 legacy_guide_number: g1774
-section: Security
+section: Knowledge Base
 ---
 
 

@@ -2,7 +2,7 @@
 title: Ajouter du crédit cloud
 slug: ajouter-du-credit-cloud
 legacy_guide_number: 1907
-section: Gestion du projet
+section: Base de connaissances
 ---
 
 

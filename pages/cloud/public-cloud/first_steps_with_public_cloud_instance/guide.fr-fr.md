@@ -2,7 +2,7 @@
 title: 'Premiers pas avec une instance Public Cloud'
 slug: debuter-avec-une-instance-public-cloud
 excerpt: 'Découvrez comment bien débuter avec une instance Public Cloud'
-section: 'Premiers pas'
+section: Premiers pas
 ---
 
 **Dernière mise à jour le 26/03/2018**

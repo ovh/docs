@@ -2,7 +2,7 @@
 title: Synchroniser un NAS Synology avec l’Object Storage à l’aide de DiskStation Manager 6.0
 slug: synchroniser-un-nas-synology-avec-lobject-storage-a-laide-de-diskstation-manager-60
 legacy_guide_number: 2090
-section: Object Storage
+section: Tutoriels
 ---
 
 

@@ -2,7 +2,7 @@
 title: Presentation d’Horizon
 slug: presentation-dhorizon
 legacy_guide_number: 1776
-section: Depuis l'interface Horizon
+section: Base de connaissances
 ---
 
 

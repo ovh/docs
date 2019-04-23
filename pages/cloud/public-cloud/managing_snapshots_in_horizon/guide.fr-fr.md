@@ -2,7 +2,7 @@
 title: Gestion des snapshots d’une instance dans horizon
 slug: gestion-des-snapshots-dune-instance-dans-horizon
 legacy_guide_number: 1770
-section: Depuis l'interface Horizon
+section: Base de connaissances
 ---
 
 

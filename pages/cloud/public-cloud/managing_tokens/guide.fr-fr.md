@@ -2,7 +2,7 @@
 title: Gestion des tokens
 slug: gestion-des-tokens
 legacy_guide_number: 1872
-section: Depuis les clients en ligne de commande
+section: Actions via API et lignes de commande
 ---
 
 

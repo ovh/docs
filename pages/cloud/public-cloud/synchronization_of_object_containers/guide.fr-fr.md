@@ -2,7 +2,7 @@
 title: Synchroniser des conteneurs d’objets
 slug: synchroniser-des-conteneurs-dobjets
 legacy_guide_number: 1919
-section: Object Storage
+section: Base de connaissances
 ---
 
 

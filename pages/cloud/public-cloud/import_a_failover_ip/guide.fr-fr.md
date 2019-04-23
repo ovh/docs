@@ -2,7 +2,7 @@
 title: Importer une IP Fail Over
 slug: importer-une-ip-fail-over
 legacy_guide_number: 1883
-section: Depuis espace client OVH
+section: Base de connaissances
 ---
 
 

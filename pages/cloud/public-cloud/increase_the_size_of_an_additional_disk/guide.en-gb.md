@@ -3,7 +3,7 @@ title: 'Increase the size of an additional disk'
 excerpt: 'This guide will show you how to increase the size of an additional disk as well as enlarging its main partition.'
 slug: increase_the_size_of_an_additional_disk
 legacy_guide_number: g1865
-section: Storage
+section: Knowledge Base
 ---
 
 **Last updated 28th January 2019**

@@ -2,7 +2,7 @@
 title: Acces et Securite dans Horizon
 slug: acces-et-securite-dans-horizon
 legacy_guide_number: 1774
-section: Depuis l'interface Horizon
+section: Base de connaissances
 ---
 
 

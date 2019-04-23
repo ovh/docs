@@ -4,7 +4,7 @@ slug: how-to-use-terraform
 description: Procedure of use of Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Step-by-step documentation on how to use the Terraform utils to abstract your infrastructure
-section: Getting started
+section: Tutorials
 ---
 
 

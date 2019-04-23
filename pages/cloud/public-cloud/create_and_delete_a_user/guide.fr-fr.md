@@ -1,7 +1,7 @@
 ---
 title: Création et suppression d’un utilisateur OpenStack
 slug: creation-et-suppression-dun-utilisateur-openstack
-section: Depuis espace client OVH
+section: Base de connaissances
 ---
 
 

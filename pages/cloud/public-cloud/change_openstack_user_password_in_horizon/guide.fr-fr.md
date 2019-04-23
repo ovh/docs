@@ -2,7 +2,7 @@
 title: Changer le mot de passe d’un utilisateur OpenStack dans Horizon
 excerpt: Découvrez comment modifier un mot de passe utilisateur dans l'interface Horizon.
 slug: modification-du-mot-de-passe-dun-utilisateur-openstack
-section: Depuis l'interface Horizon
+section: Base de connaissances
 ---
 
 **Dernière mise à jour le 22/02/2018**

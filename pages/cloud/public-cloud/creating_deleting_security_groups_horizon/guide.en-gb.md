@@ -2,7 +2,7 @@
 title: Creating and deleting security groups in Horizon
 excerpt: Find out how to create and delete security groups via the Horizon interface
 slug: create-delete-security-group-horizon
-section: In the Horizon interface
+section: Knowledge Base
 ---
 
 **Last updated 07th March 2018**

@@ -2,7 +2,7 @@
 title: 'Configuring automatic object deletion'
 slug: configure-auto-delete-objects
 legacy_guide_number: 1950
-section: 'Object Storage'
+section: Knowledge Base
 ---
 
 ## Introduction

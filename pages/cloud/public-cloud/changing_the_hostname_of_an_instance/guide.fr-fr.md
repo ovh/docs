@@ -3,7 +3,7 @@ title: 'Modifier le hostname d’une instance Public Cloud'
 slug: modifier-le-hostname-dune-instance
 excerpt: 'Découvrez comment modifier le hostname d''une instance Public Cloud'
 legacy_guide_number: 1928
-section: Tutoriels
+section: Base de connaissances
 ---
 
 **Dernière mise à jour le 07/06/2018**

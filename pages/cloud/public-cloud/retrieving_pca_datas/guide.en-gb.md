@@ -2,7 +2,7 @@
 title: 'Retrieving data from a BCP'
 slug: retrieve-data-bcp
 legacy_guide_number: 2067
-section: 'Object Storage'
+section: Knowledge Base
 ---
 
 ## Retrieving your data

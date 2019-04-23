@@ -3,7 +3,7 @@ title: Managing tokens
 excerpt: Managing tokens
 slug: managing_tokens
 legacy_guide_number: g1872
-section: Security
+section: API reference/CLI
 ---
 
 

@@ -2,7 +2,7 @@
 title: 'Placing an Object Storage container behind a domain name'
 slug: place-an-object-storage-container-behind-domain-name
 legacy_guide_number: 2006
-section: 'Object Storage'
+section: Tutorials
 ---
 
 ## Overview

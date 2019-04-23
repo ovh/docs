@@ -2,7 +2,7 @@
 title: 'Débuter avec une instance Windows'
 slug: debuter-avec-une-instance-windows
 legacy_guide_number: 1995
-section: Tutoriels
+section: Base de connaissances
 ---
 
 ## Préambule

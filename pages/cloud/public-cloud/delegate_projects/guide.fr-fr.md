@@ -2,7 +2,7 @@
 title: Déléguer ses projets
 slug: deleguer-ses-projets
 legacy_guide_number: 1914
-section: Gestion du projet
+section: Base de connaissances
 ---
 
 

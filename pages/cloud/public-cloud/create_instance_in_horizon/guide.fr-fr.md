@@ -2,7 +2,7 @@
 title: 'Créer une instance depuis l''interface Horizon'
 slug: creer-une-instance-dans-horizon
 excerpt: 'Apprenez à créer une instance depuis l''interface Horizon'
-section: 'Depuis l''interface Horizon'
+section: Base de connaissances
 ---
 
 **Dernière mise à jour le 27/03/2018**
