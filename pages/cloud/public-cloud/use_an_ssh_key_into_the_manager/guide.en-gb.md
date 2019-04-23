@@ -2,7 +2,7 @@
 title: Use of an SSH key in the Public Cloud interface
 slug: use-of-an-ssh-key-in-the-public-cloud-interface
 excerpt: Step-by-step documentation on how to use an SSH key to simplify access to cloud servers
-section: Security
+section: Knowledge Base
 ---
 
 

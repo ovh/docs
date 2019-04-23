@@ -2,7 +2,7 @@
 title: Augmenter la taille d’un disque supplementaire
 slug: augmenter-la-taille-dun-disque-supplementaire
 legacy_guide_number: 1865
-section: Depuis espace client OVH
+section: Base de connaissances
 ---
 
 

@@ -2,7 +2,7 @@
 title: 'Getting started with a Public Cloud Instance'
 slug: get-started-with-a-public-cloud-instance
 excerpt: 'Find out how to get started with a Public Cloud Instance'
-section: 'Getting started'
+section: Quick start
 ---
 
 **Last updated 27th March 2018**

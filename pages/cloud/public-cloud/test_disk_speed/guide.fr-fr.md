@@ -2,7 +2,7 @@
 title: 'Tester la vitesse des disques'
 slug: tester-la-vitesse-des-disques
 excerpt: 'Apprenez à tester le nombre d''opérations par seconde (IOPS) que vos disques sont en mesure d''effectuer'
-section: Tutoriels
+section: Base de connaissances
 ---
 
 **Dernière mise à jour le 15 avril 2019**

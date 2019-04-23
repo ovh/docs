@@ -2,7 +2,7 @@
 title: Créer un conteneur d’objets
 slug: creer-un-conteneur-dobjets
 legacy_guide_number: 1921
-section: Object Storage
+section: Base de connaissances
 ---
 
 

@@ -2,7 +2,7 @@
 title: Lancer un script lors de la creation d’un instance
 slug: lancer-un-script-lors-de-la-creation-dun-instance
 legacy_guide_number: 1932
-section: Depuis les clients en ligne de commande
+section: Base de connaissances
 ---
 
 

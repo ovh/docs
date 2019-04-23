@@ -2,7 +2,7 @@
 title: Placer un conteneur de l’Object Storage derriere un nom de domaine
 slug: placer-un-conteneur-de-lobject-storage-derriere-un-nom-de-domaine
 legacy_guide_number: 2006
-section: Object Storage
+section: Tutoriels
 ---
 
 

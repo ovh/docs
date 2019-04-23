@@ -2,7 +2,7 @@
 title: Créer / restaurer un serveur virtuel a partir d’une sauvegarde
 slug: creer-restaurer-un-serveur-virtuel-a-partir-dune-sauvegarde
 legacy_guide_number: 1882
-section: Depuis espace client OVH
+section: Base de connaissances
 ---
 
 

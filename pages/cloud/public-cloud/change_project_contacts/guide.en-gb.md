@@ -3,7 +3,7 @@ title: Change project contacts
 excerpt: Change project contacts
 slug: change_project_contacts
 legacy_guide_number: g2106
-section: Project management
+section: Knowledge Base
 ---
 
 

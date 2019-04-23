@@ -2,7 +2,7 @@
 title: 'Create and configure an additional disk on an instance'
 slug: create_and_configure_an_additional_disk_on_an_instance
 excerpt: 'This guide explains how to create an additional disk and then configure it on one of your instances.'
-section: Storage
+section: Knowledge Base
 ---
 
 **Last updated 11th January 2019**

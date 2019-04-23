@@ -2,7 +2,7 @@
 title: Débuter avec l’API Cinder
 slug: debuter-avec-lapi-cinder
 legacy_guide_number: 2071
-section: Depuis les clients en ligne de commande
+section: Actions via API et lignes de commande
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Transférer la sauvegarde d’une instance d’un datacenter à un autre'
 slug: transferer-la-sauvegarde-dune-instance-dun-datacentre-a-lautre
-section: 'Depuis les clients en ligne de commande'
+section: Actions via API et lignes de commande
 excerpt: 'Découvrez comment effectuer ce déplacement tout en préservant la configuration et l’état de l’instance.'
 ---
 

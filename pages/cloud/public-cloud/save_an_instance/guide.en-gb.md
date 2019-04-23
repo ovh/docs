@@ -2,7 +2,7 @@
 title: 'Backing up an Instance'
 slug: back-up-instance
 excerpt: 'Find out how to back up a Public Cloud Instance in a few clicks'
-section: 'From the OVH Control Panel'
+section: Knowledge Base
 ---
 
 **Last updated 27th March 2018**

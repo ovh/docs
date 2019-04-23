@@ -1,7 +1,7 @@
 ---
 title: 'An introduction to instances and other cloud-based terms'
 slug: introduction-to-instances-and-other-cloud-based-terms
-section: 'General information and vocabulary'
+section: Information and Concepts
 ---
 
 ## Introduction

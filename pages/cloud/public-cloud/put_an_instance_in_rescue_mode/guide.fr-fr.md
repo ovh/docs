@@ -2,7 +2,7 @@
 title: Passer une instance en mode rescue
 slug: passer-une-instance-en-mode-rescue
 legacy_guide_number: 2029
-section: Depuis espace client OVH
+section: Base de connaissances
 ---
 
 

@@ -2,7 +2,7 @@
 title: Install Wordpress on an instance
 excerpt: Install Wordpress on an instance
 slug: install_wordpress_on_an_instance
-section: Knowledge base
+section: Tutorials
 ---
 
 

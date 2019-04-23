@@ -2,7 +2,7 @@
 title: Charger les variables d’environnement OpenStack
 slug: charger-les-variables-denvironnement-openstack
 legacy_guide_number: 1852
-section: Depuis les clients en ligne de commande
+section: Actions via API et lignes de commande
 ---
 
 

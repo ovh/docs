@@ -2,7 +2,7 @@
 title: Redimensionner une instance
 slug: redimensionner-une-instance
 legacy_guide_number: 1778
-section: Depuis l'interface Horizon
+section: Base de connaissances
 ---
 
 

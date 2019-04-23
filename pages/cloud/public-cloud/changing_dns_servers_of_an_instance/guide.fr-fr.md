@@ -2,7 +2,7 @@
 title: Modifier les serveurs DNS d’une instance
 slug: modifier-les-serveurs-dns-dune-instance
 legacy_guide_number: 1985
-section: Tutoriels
+section: Base de connaissances
 ---
 
 

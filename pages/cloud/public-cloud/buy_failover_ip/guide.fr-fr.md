@@ -2,7 +2,7 @@
 title: Acheter une IP Failover
 slug: acheter-une-ip-failover
 legacy_guide_number: 2030
-section: Depuis espace client OVH
+section: Base de connaissances
 ---
 
 

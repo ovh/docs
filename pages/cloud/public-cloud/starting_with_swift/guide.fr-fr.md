@@ -2,7 +2,7 @@
 title: Débuter avec l’API Swift
 slug: debuter-avec-lapi-swift
 legacy_guide_number: 1916
-section: Depuis les clients en ligne de commande
+section: Actions via API et lignes de commande
 ---
 
 

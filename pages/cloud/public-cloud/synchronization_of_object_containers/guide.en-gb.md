@@ -2,7 +2,7 @@
 title: 'Syncing object containers'
 slug: sync-object-containers
 legacy_guide_number: 1919
-section: 'Object Storage'
+section: Knowledge Base
 ---
 
 ## Introduction

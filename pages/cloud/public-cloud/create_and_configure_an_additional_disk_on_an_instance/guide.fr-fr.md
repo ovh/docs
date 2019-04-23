@@ -2,7 +2,7 @@
 title: Créer et configurer un disque supplementaire sur une instance
 slug: creer-et-configurer-un-disque-supplementaire-sur-une-instance
 legacy_guide_number: 1863
-section: Depuis espace client OVH
+section: Base de connaissances
 ---
 
 

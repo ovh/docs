@@ -3,7 +3,7 @@ title: Migrating a failover IP
 excerpt: Migrating a failover IP
 slug: migrating_a_failover_ip
 legacy_guide_number: g1890
-section: Networking
+section: Knowledge Base
 ---
 
 

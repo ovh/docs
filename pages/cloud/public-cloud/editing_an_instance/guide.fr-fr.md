@@ -2,7 +2,7 @@
 title: Editer une instance
 slug: diter-une-instance
 legacy_guide_number: 1777
-section: Depuis l'interface Horizon
+section: Base de connaissances
 ---
 
 

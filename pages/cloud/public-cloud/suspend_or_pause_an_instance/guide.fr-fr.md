@@ -2,7 +2,7 @@
 title: Suspendre ou mettre en pause une instance
 slug: suspendre-ou-mettre-en-pause-une-instance
 legacy_guide_number: 1781
-section: Depuis l'interface Horizon
+section: Base de connaissances
 ---
 
 

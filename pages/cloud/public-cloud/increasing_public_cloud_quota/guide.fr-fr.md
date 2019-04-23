@@ -2,7 +2,7 @@
 title: Augmenter le quota Public Cloud
 slug: augmenter-le-quota-public-cloud
 legacy_guide_number: 1904
-section: Gestion du projet
+section: Base de connaissances
 ---
 
 

@@ -2,7 +2,7 @@
 title: Débuter avec l’API Glance
 slug: debuter-avec-lapi-glance
 legacy_guide_number: 2072
-section: Depuis les clients en ligne de commande
+section: Actions via API et lignes de commande
 ---
 
 

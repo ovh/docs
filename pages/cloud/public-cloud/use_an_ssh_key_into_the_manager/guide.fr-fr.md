@@ -4,7 +4,7 @@ slug: utilisation-d-une-cle-ssh-dans-l-interface-public-cloud
 description: Procédure d’utilisation de clé SSH dans l’interface Public Cloud
 keywords: ssh, clef, clé, manager, interface, accès, instance, cloud
 excerpt: Documentation pas a pas traitant de l’utilisation d’une clé SSH afin de simplifier l’accès  aux serveurs cloud
-section: Depuis espace client OVH
+section: Base de connaissances
 ---
 
 

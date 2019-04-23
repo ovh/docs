@@ -2,7 +2,7 @@
 title: Reconstruire une instance
 slug: reconstruire-une-instance
 legacy_guide_number: 1779
-section: Depuis l'interface Horizon
+section: Base de connaissances
 ---
 
 

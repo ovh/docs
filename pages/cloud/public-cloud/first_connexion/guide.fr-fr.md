@@ -3,7 +3,7 @@ title: 'Se connecter à une instance Public Cloud'
 slug: premiere-connexion
 legacy_guide_number: 1787
 excerpt: 'Découvrez comment vous connecter à vos instances Public Cloud'
-section: 'Premiers pas'
+section: Premiers pas
 ---
 
 **Dernière mise à jour le 2 octobre 2018**

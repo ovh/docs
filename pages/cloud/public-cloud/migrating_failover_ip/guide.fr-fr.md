@@ -2,7 +2,7 @@
 title: Basculer une IP Fail Over
 slug: basculer-une-ip-fail-over
 legacy_guide_number: 1890
-section: Depuis espace client OVH
+section: Base de connaissances
 ---
 
 

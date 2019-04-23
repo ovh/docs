@@ -3,7 +3,7 @@ title: 'Import a failover IP'
 slug: import_a_failover_ip
 excerpt: 'This guide explains how to import a failover IP into your OVH Public Cloud project.'
 legacy_guide_number: g1883
-section: Networking
+section: Knowledge Base
 ---
 
 **Last updated 19th December 2018**

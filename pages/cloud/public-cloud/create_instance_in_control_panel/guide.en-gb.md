@@ -3,7 +3,7 @@ title: 'Create an instance in your OVH customer account'
 slug: create_an_instance_in_your_ovh_customer_account
 excerpt: 'This guide will show you how to create an instance in your Public Cloud account.'
 legacy_guide_number: g1775
-section: 'Getting started'
+section: Quick start
 ---
 
 **Last updated 21st September 2018**

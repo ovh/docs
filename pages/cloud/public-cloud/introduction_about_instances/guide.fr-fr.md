@@ -1,7 +1,7 @@
 ---
 title: Introduction aux instances et autres notions cloud
 slug: introduction-aux-instances-et-autres-notions-cloud
-section: Informations générales et vocabulaire
+section: Informations générales
 ---
 
 

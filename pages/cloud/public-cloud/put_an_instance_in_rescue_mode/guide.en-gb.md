@@ -3,7 +3,7 @@ title: 'Put an instance in rescue mode'
 slug: put_an_instance_in_rescue_mode
 excerpt: 'This guide will show you how to put your instance in rescue mode'
 legacy_guide_number: g2029
-section: Troubleshooting
+section: Knowledge Base
 ---
 
 **Last updated 13th March 2019**

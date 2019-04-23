@@ -3,7 +3,7 @@ title: Share an object via a temporary URL
 excerpt: Share an object via a temporary URL
 slug: share_an_object_via_a_temporary_url
 legacy_guide_number: g2007
-section: Security
+section: Knowledge Base
 ---
 
 

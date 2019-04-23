@@ -2,7 +2,7 @@
 title: 'Launching a script when an instance is created'
 slug: launch-a-script-when-instance-is-created
 legacy_guide_number: 1932
-section: 'Launch scripts via command-line clients'
+section: Knowledge Base
 ---
 
 ## Overview

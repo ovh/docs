@@ -3,7 +3,7 @@ title: Getting started with the Swift API
 excerpt: Getting started with the Swift API
 slug: getting_started_with_the_swift_api
 legacy_guide_number: g1916
-section: Getting started
+section: API reference/CLI
 ---
 
 

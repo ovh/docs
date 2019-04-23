@@ -2,7 +2,7 @@
 title: Configurer des clés SSH supplémentaires
 slug: configurer-des-cles-ssh-supplementaires
 legacy_guide_number: 1924
-section: Tutoriels
+section: Base de connaissances
 ---
 
 
