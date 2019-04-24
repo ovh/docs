@@ -12,7 +12,7 @@ This screen will appear if you haven't configured any email accounts. If not, go
 
 To create a new email account, click on the "Email" icon to continue.
 
-![](images/1.png){.thumbnail}
+![](images/1fix.png){.thumbnail}
 
 
 ## Part 2: Startup
