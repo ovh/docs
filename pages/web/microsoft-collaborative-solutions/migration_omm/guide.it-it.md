@@ -83,7 +83,7 @@ Per poter effettuare questo tipo di migrazione, è necessario che tu sia in poss
 
 ![omm](images/omm-migration-files.png){.thumbnail}
 
-Inserisci le informazioni dell’**account di destinazione** poi clicca su `Inizia la migrazione`{.action}. Ti ricordiamo che il contenuto del file PST,ICS o VCF sarà migrato verso l’**account di destinazione**.
+Inserisci le informazioni dell’**account di destinazione** poi clicca su `Inizia la migrazione`{.action}. Ti ricordiamo che il contenuto del file PST, ICS o VCF sarà migrato verso l’**account di destinazione**.
 
 Se le informazioni inserite sono corrette, puoi selezionare il file sul tuo computer. Di seguito, clicca su `Upload`{.action} e rimani in attesa durante il download, che potrebbe richiedere un po’ di tempo a seconda della dimensione del file. Puoi consultare lo stato di avanzamento del download dalla stessa pagina.
 
