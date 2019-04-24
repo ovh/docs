@@ -26,7 +26,7 @@ Pode gerir o certificado SSL no alojamento web da OVH por meio de várias opera�
 
 - [Ativar um certificado SSL no alojamento web](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/#ativar-um-certificado-ssl-num-alojamento){.external}: permite-lhe ativar um certificado SSL no alojamento através de um serviço da OVH, gratuito ou pago, pela importação do seu próprio certificado SSL.
 
-- [Ativar o certificado SSL num multi-site](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/#ativar-um-certificado-ssl-num-multi-site){.external}: se o seu plano ou certificado SSL o permitem, pode fazer com que vários dos seus multi-sites beneficiem de uma ligação SSL protegida.
+- [Ativar o certificado SSL num multi-site](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/#ativar-o-ssl-num-multi-site){.external}: se o seu plano ou certificado SSL o permitem, pode fazer com que vários dos seus multi-sites beneficiem de uma ligação SSL protegida.
 
 - [Regenerar o certificado SSL do alojamento](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/#regenerar-o-certificado-ssl-do-alojamento){.external}: permite regenerar o certificado SSL do alojamento web quando acaba de o ativar num ou vários multi-sites. 
 
