@@ -148,7 +148,7 @@ Voici l'exemple d'une ligne de commande que vous pouvez utiliser. Remplacez les 
 ssh sshlogin@sshserver -p connectionport
 ```
 
-Vous pouvez alors par exemple vérifier que les variables d'environnements créées [lors de l'étape 4](./#etape-4-creer-les-variables-denvironnements) sont bien présentes. Pour notre tutoriel, nous retrouvons alors :
+Vous pouvez alors par exemple vérifier que les variables d'environnements créées [lors de l'étape 4](./#etape-4-creer-les-variables-denvironnement) sont bien présentes. Pour notre tutoriel, nous retrouvons alors :
 
 ```sh
 demonon@cloudweb-ssh:~ $ env | grep "database_"
