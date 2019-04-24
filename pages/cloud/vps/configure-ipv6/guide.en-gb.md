@@ -49,7 +49,7 @@ The first step is to access the IPv6 address and the IPv6 gateway assigned to yo
 
 Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the`Cloud`{.action} section. Click `Servers`{.action} in the services bar on the left-hand side, then choose the VPS server concerned. Make sure you are on the `Home`{.action} tab.
 
-The IPv6 address and the IPv6 gateway assigned to your server will appear in the `IP` section. Retrieve these and continue to step 2, "[Apply IPv6 Configuration](./#step-2-apply-the-ipv6-configuration){.external}".
+The IPv6 address and the IPv6 gateway assigned to your server will appear in the `IP` section. Retrieve these and continue to step 2, "[Apply IPv6 Configuration](./#step-2-apply-the-ipv6-configuration_1){.external}".
 
 ![configureipv6](images/configure-ipv6-step1.png){.thumbnail}
 
@@ -71,7 +71,7 @@ The second allows you to recover the IPv6 gateway assigned to your server:
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >
 
-Retrieve these and continue to step 2, "[Apply IPv6 Configuration](./#step-2-apply-the-ipv6-configuration)".
+Retrieve these and continue to step 2, "[Apply IPv6 Configuration](./#step-2-apply-the-ipv6-configuration_1)".
 
 ### Step 2: Apply the IPv6 configuration
 
@@ -369,4 +369,4 @@ To return to automatic management of your network by Cloud-init, delete the newl
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.
