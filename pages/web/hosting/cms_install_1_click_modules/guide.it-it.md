@@ -48,7 +48,7 @@ Si apre una finestra da cui è possibile selezionare l’applicazione e sceglier
 
 Se il dominio non è presente nella lista, seleziona la scheda `Multisito`{.action} per aggiungerlo e ripeti l’operazione.
 
-Per maggiori informazioni, consulta la guida [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}.
+Per maggiori informazioni, consulta la guida [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/){.external}.
 
 Una volta selezionato il dominio, scegli se effettuare un'installazione base o avanzata:
 
@@ -98,7 +98,7 @@ Inserisci le informazioni richieste:
 
 - *Nome dell'amministratore*: l'identificativo per accedere all'interfaccia di gestione del tuo CMS
 - *Password*: la password per accedere all'interfaccia di gestione del tuo CMS
-- *Dominio*: il dominio su cui verrà installato il sito. Per maggiori informazioni, consulta la guida [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
+- *Dominio*: il dominio su cui verrà installato il sito. Per maggiori informazioni, consulta la guida [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/).
 - *Lingua*: la lingua di installazione del CMS
 - *Percorso di installazione*: questo campo viene compilato automaticamente quando si seleziona il dominio, ma è possibile completarlo aggiungendovi sottocartelle
 
@@ -134,7 +134,7 @@ Per maggiori informazioni sulle funzionalità disponibili ti consigliamo di cons
 
 [Scegli il CMS per il tuo sito Web]( https://www.ovh.it/hosting-web/website/confronto-cms/){.external}
 
-[Ospitare più siti su uno stesso hosting](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
+[Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/){.external}
 
 [Gestire un database da un hosting condiviso]( https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external}
 

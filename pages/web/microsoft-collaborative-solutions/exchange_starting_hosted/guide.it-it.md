@@ -62,7 +62,7 @@ Una volta terminata la prima configurazione del tuo dominio, puoi anche impostar
 
 Per aggiungere un nuovo dominio, seleziona il tuo Hosted Exchange dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clicca sulla scheda `Domini associati`{.action}. La tabella mostra la lista dei domini configurati o in fase di configurazione nel tuo servizio. Per aggiungerne altri, clicca sul pulsante `Aggiungi un dominio`{.action} e segui le indicazioni.
 
-Per saperne di più, consulta la guida [Aggiungere un dominio sul servizio Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/adding-domain-exchange/){.external} (in inglese).
+Per saperne di più, consulta la guida [Aggiungere un dominio sul servizio Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/aggiungere-dominio-su-exchange/){.external}.
 
 > [!primary]
 >
@@ -89,9 +89,9 @@ Gli account in attesa di configurazione includono “*@configureme.me*” accant
 
 ### Step 5: utilizza i tuoi indirizzi email
 
-Una volta configurati gli account, non rimane che utilizzarli! OVH ti fornisce la webmail **Outlook Web Application** (OWA), alla quale puoi accedere tramite l’indirizzo [https://www.ovh.com/it/mail/](https://www.ovh.com/it/mail/){.external},  inserendo le credenziali associate al tuo indirizzo di posta elettronica. Per maggiori informazioni sull’utilizzo di OWA, consulta la nostra documentazione disponibile a questo link: [https://docs.ovh.com/it/microsoft-collaborative-solutions/](https://docs.ovh.com/it/microsoft-collaborative-solutions/){.external}.
+Una volta configurati gli account, non rimane che utilizzarli! OVH ti fornisce la webmail **Outlook Web Application** (OWA), alla quale puoi accedere tramite l’indirizzo [https://www.ovh.com/it/mail/](https://www.ovh.com/it/mail/){.external},  inserendo le credenziali associate al tuo indirizzo di posta elettronica. Per maggiori informazioni sull’utilizzo di OWA, consulta la nostra documentazione disponibile a questo link: [https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/){.external}.
 
-Per configurare l’account email su un client di posta o un dispositivo (ad esempio smartphone o tablet), consulta la documentazione disponibile in questa pagina: [https://docs.ovh.com/it/emails-pro/](https://docs.ovh.com/it/emails-pro/){.external}. Per un utilizzo ottimale del tuo account Exchange, assicurati che il tuo client sia compatibile con il servizio.
+Per configurare l’account email su un client di posta o un dispositivo (ad esempio smartphone o tablet), consulta la documentazione disponibile in questa pagina: [https://docs.ovh.com/it/microsoft-collaborative-solutions/](https://docs.ovh.com/it/microsoft-collaborative-solutions/){.external}. Per un utilizzo ottimale del tuo account Exchange, assicurati che il tuo client sia compatibile con il servizio.
 
 OVH propone licenze Outlook nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, così come licenze Office 365 alla pagina [https://www.ovh.it/office-365/](https://www.ovh.it/office-365/){.external}. Se vuoi utilizzare un client di posta Outlook o più programmi della suite Office, ti consigliamo una di queste soluzioni.
 
