@@ -43,17 +43,28 @@ If you click on "Manual configuration", you will see the adjacent screen:
 Please check that the following elements are entered correctly:
 
 "Incoming server: IMAP"
+
 For Hosted Exchange accounts:
-Server hostname: ex.mail.ovh.net
-Port: 143
-SSL: STARTTLS
+
+Server hostname: ex#.mail.ovh.net (# depends on your assigned Exchange server, you can check it in your OVH Control Panel)
+
+Port: 993
+
+SSL: SSL
+
 Authentication: Normal password.
 
+
 "Outgoing server: SMTP"
+
 For Hosted Exchange accounts:
-Server hostname: ex.mail.ovh.net
+
+Server hostname: ex#.mail.ovh.net (# depends on your assigned Exchange server, you can check it in your OVH Control Panel)
+
 Port: 587
+
 SSL: STARTTLS
+
 Authentication: Normal password.
 
 "Username": your full email address.
