@@ -1,77 +1,77 @@
 ---
-title: SpoofGuard
+title: Eviter l'usurpation d'IP avec le service SpoofGuard
 slug: spoofguard
+excerpt: Paramètrez des politiques pour éviter l'usurpation d'IP
 legacy_guide_number: '4816988'
 space_key: ND
 space_name: NSX
 section: NSX
+order: 10
 ---
 
+**Dernière mise à jour le 28/02/2019**
 
+## Objectif
 
+Le service SpoofGuard permet d'éviter une forme d'attaque malveillante appelée « falsification Web » ou « hameçonnage ».
 
+**Ce guide explique comment établir cette solution**
 
+## Prérequis
 
+- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
 
+## En pratique
 
-**This article will show you, how to configure NSX Spoofguard.**
-
-You need to go to the *SpoofGuard* tab on **NSX Manager**, to configure your policy. You **do not need** any [Edge Gateway]({legacy}4161658) to configure NSX Spoofguard
+Pour accèder au service SpoofGuard, rendez vous dans l'interface de gestion NSX et séléctionnez le service disponible sur le bandeau latéral gauche.
 
 ![](images/spoofguard.png){.thumbnail}
 
-Create a SpoofGuard policy
---------------------------
+### Créer une politique SpoofGuard
 
-Click the "*Add Policy*" ( ![](images/add.png){.thumbnail} ) icon to add a new policy.
+Cliquez sur le bouton `+ Ajouter`{.action} pour créer une nouvelle politique.
 
-Enter a name for the policy.
+Entrez le nom de votre politique, puis activez la.
 
-Select *Enabled*.
+Séléctionnez le mode de votre choix :
 
-Select the Operation mode:
+- Approuver automatiquement les attributions d'adresse IP lors de leur première utilisation : pour faire confiance à toutes les sessions de propriété intellectuelle lors de l'enregistrement initial.
 
-- Automatically Trust IP Assignments on Their First Use : to trust all IP assignments during initial registration.
-- Manually Inspect and Approve All IP Assignments Before Us : to require manual approval of all IP addresses.
-    - **WARNING : This will cause all your network traffic to be down until you validate all couples IP/MAC**
+- Inspecter et approuver manuellement toutes les attributions d'adresses IP avant leurs utilisation : pour exiger l'approbation manuelle de toutes les adresses IP.
+> [!warning]
+>
+> Ceci entraînera une interruption de tout votre trafic réseau jusqu'à ce que vous validiez tous les couples IP/MAC**.
+>
 
-You can check the "[]()*Allow local address as valid address in this namespace*" option to allow any local IP addresses in your setup (169.254.0.0/16, fe80::/64).
-
-Click *Next*.
+Vous pouvez également cocher la case permettant d'autoriser les adresses locales (169.254.0.0/16, fe80::/64) comme adresses valides dans l'espace de noms.
 
 ![](images/spoofguard_NewPolicy1.png){.thumbnail}
 
-Click the "*Add*" ( ![](images/add.png){.thumbnail} ) icon to select the vlan you want spoofguard to be enabled
+Séléctionnez ensuite les portGroup sur lesquels vous souhaitez appliquer votre politique.
 
 ![](images/spoofguard_NewPolicy2.png){.thumbnail}
 
-Select the networks, distributed port groups, or logical switches where the policy should apply to.
+Puis cliquer sur `Terminer`
 
-Click *OK*.
+Votre politique est à présent ajoutée, des premières actions pourront être en attente. 
 
 ![](images/spoofguard_NewPolicy3.png){.thumbnail}
 
-Then click *Finish*.
+Après avoir cliquer sur le nombre disponible dans la colonne `Nombre total de vNic` vous arriverez sur cette interface.
 
-And Click Publish Changes to push configuration to your NSX Manager.
+> [!primary]
+>
+> Si vous cliquez sur les nombres disponibles dans les colonnes `En attente d'approbation` ou `Adresses IP en conflit` vous arriverez sur la même page.
+>
 
-![](images/spoofguard_policy_publish.png){.thumbnail}
-
-Approve IP Addresses
---------------------
-
-In this screenshot, you can see **one IP** address **approved** and **two IP** adresses **not appproved**.
-
-![](images/spoofguard_list_approval.png){.thumbnail}
-
-To approve an IP click *Approve* on the *Action* tab.
-
-You can also approve multiple IP adresses: select Virtual NICs and then click *Approve Detected IP(s)*.
-
-![](images/spoofguard_multiple_approve.png){.thumbnail}
-
-Click *Publish Changes*.
-
-Then you are done.
+![](images/spoofguard_NewPolicy4.png){.thumbnail}
 
 
+> [!warning]
+>
+> Attention à ne pas effacer les IP affectées à vos machines virtuelles sous peine d'entrainer une coupure de communication.
+>
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

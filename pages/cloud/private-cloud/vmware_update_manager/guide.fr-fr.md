@@ -1,87 +1,147 @@
 ---
 title: VMware Update Manager
 slug: vmware-update-manager
+excerpt: Utiliser l'outil de VMware pour tenir à jour vos hôtes.
 legacy_guide_number: '2163146'
 space_key: VS
 space_name: vSphere as a Service
 section: Fonctionnalités VMware vSphere
+order: 09
 ---
 
+**Dernière mise à jour le 22/02/2019**
 
-Avec l'outil de VMware en l'occurrence **Update Manager** vous pouvez mettre à jour (patch de sécurité et critique) vos hôtes sans intervention de nos équipes. (Une mise à jour du vCenter ou majeure de votre hôte requiert une opération de notre part)
+## Objectif
 
-En premier lieu je vous invite à mettre votre hôte en mode **maintenance**, les machines virtuelles enregistrés seront automatiquement transférés sur un autre hôte de votre **Cluster**.
+Avec l'outil **VMware Update Manager** vous pouvez mettre à jour (patch de sécurité et critique) vos hôtes sans intervention de nos équipes. (Une mise à jour du vCenter ou majeure de votre hôte requiert une opération de notre part)
 
-![](images/Update13.png){.thumbnail}
+**Ce guide explique le fonctionnement de cet outil**
 
-Le plugin **Update Manager** est actuellement disponible pour le client Lourd en l'occurrence sélectionnez votre hôte et dirigez-vous dans l'onglet "Update Manager" et cliquez sur **Scan**..
+## En pratique
+
+### Mise en maintenance
+
+Avant toute chose, il est recommandé de mettre votre hôte en mode **maintenance** en faisant un clic droit sur celui-ci, puis `mode maintenance` et `passer en mode maintenance`{.action} .
+
+En effet, la quasi totalité des mises à jour nécessitent un redémarrage de l'hôte.
+
+Durant la mise en maintenance, les machines virtuelles enregistrées seront automatiquement transférées sur un autre hôte de votre cluster si la fonction [DRS](https://docs.ovh.com/fr/private-cloud/vmware-drs-distributed-ressource-scheduler-new/){.external-link} est en mode entièrement automatisé. Si ce n'est pas le cas, vous pouvez modifier ce paramètre, ou déplacer vos machines virtuelles manuellement en effectuant des *[vMotion](https://docs.ovh.com/fr/private-cloud/vmware-vmotion-new/){.external-link}*.
+
+### Update Manager
+
+Vous pouvez retrouver l'onglet `Update Manager` en selectionnant votre cluster.
 
 ![](images/Update.png){.thumbnail}
 
-Cochez les options suivantes et lancez le **Scan**
+#### Attacher une ligne de base
+
+Dans un premier temps, vous devez attacher les lignes de bases.
+
+Pour cela cliquez sur le bouton `Attacher une ligne de base...`{.action}
+
+![](images/Upgrade2.png){.thumbnail}
+
+#### Rechercher des mises à jour
+
+Les lignes de base étant attachées, vous pouvez à présent cliquer sur le bouton `Rechercher des mises à jour...`{.action}
+
+![](images/Update1.png){.thumbnail}
+
+Cochez les options suivantes et lancez le **Scan** en cliquant sur `Ok`{.action}
 
 - Patches and Extensions
 - Upgrades
 
-Lorsque l'opération est terminée je vous invite à cliquer sur l'option "**Attach**" en haute à droite de la page principale de l'**Update Manager**.
+Une tâche se lancera par la suite :
 
-![](images/Update1.png){.thumbnail}
+![](images/Update3.png){.thumbnail}
 
-Sélectionnez les mises à jours critiques et non critique pour votre hôte et enfin cliquez de nouveau sur **Attach**.
+### Transférer des correctifs
 
-![](images/Upgrade2.png){.thumbnail}
+Le **scan** étant terminé il est à présent possible de télécharger les différents correctifs sur l'hôte de votre choix.
 
-Nous apercevons dans le menu du bas le nombre de patch à appliquer, Cliquez maintenant sur **Stage** pour télécharger les mises à jour sur votre hôte.
+> [!primary]
+>
+> Cette opération sera à effectuer pour chaque hôte.
+>
 
-![](images/Upgrade3.png){.thumbnail}
+Pour télécharger les mises à jour, cliquez sur le bouton `Transférer des correctifs...`{.action}.
 
-Maintenant Il suffit de suivre les opérations en cliquant sur **Next**
+Une nouvelle fenêtre s'ouvrira avec plusieurs étapes.
 
-![](images/Upgrade4.png){.thumbnail}
+Renseignez les lignes de base attachées précedemment
 
-Attention au listing des Updates, surtout **ne pas cocher** la mise à jour du **CiscoNexus1000v** car c'est OVH qui gère ce module vDS et en cas d'update automatique vous risquez une isolation réseau de votre hôte.
+![](images/Update4.png){.thumbnail}
+
+Séléctionnez l'hôte sur lequel vous souhaitez appliquer les mises à jour.
 
 ![](images/Update5.png){.thumbnail}
 
-Voici le récapitulatif des **patches**.
+Séléctionnez ensuite les mises à jour que vous souhaitez appliquer. Par défaut tout est séléctionné.
 
-![](images/Upgrade6.png){.thumbnail}
+![](images/Update6.png){.thumbnail}
 
-Le téléchargement des **mises à jours**sont en cours sur votre hôte.
+Enfin un résumé est disponible. Si tout est conforme, vous pouvez cliquez sur `Terminer`{.action}.
 
-![](images/Upgrade7.png){.thumbnail}
+![](images/Update7.png){.thumbnail}
 
-Lorsque ce téléchargement est terminé, appuyez sur "**Remediate**" en bas à droite de la page principale de l'**update manager**.
-
-Sélectionnez de nouveau les mises à jours en vérifiant que le patche **Cisco Nexus1000v** n'est pas dans cette liste.
+Une tâche se lancera sur le cluster, puis sur l'hôte.
 
 ![](images/Update8.png){.thumbnail}
 
-Cette page vous permet de nommer le nom de la tâche pour les logs vSphere ou encore de planifier la date de la mise à jour.
+### Corriger
+
+Les correctifs sont à présent téléchargés sur l'hôte, vous pouvez maintenant les appliquer.
+
+> [!primary]
+>
+> Seul cette étape nécessite le passage en mode maintenance de votre hôte.
+> 
+
+Pour appliquer ces correctifs, cliquez sur le bouton `Corriger...`{.action}.
+
+Une nouvelle fenêtre s'ouvrira pour configurer l'application des mises à jour.
+
+A nouveau, renseignez les lignes de base :
 
 ![](images/Update9.png){.thumbnail}
 
-Je vous conseil de cocher les options suivantes.
+Puis l'hôte en mode maintenance sur lequel les mises à jour seront appliquées.
 
-- Disable High Availability admission control if it is enabled for any of the selected clusters.
-- Migration powered off and suspended virtual machines to other hosts in the cluster, if a host must enter maintenance mode.
+![](images/Update10.png){.thumbnail}
 
-Sachant que pour la deuxième option, en suivant ce guide vous avez normalement déjà mis votre hôte en **mode maintenance**.
+Vous retrouvez ensuite la liste des mises à jour téléchargées à l'étape précédente.
 
 ![](images/Update11.png){.thumbnail}
 
-Cliquez sur **Finish**pour lancer la mise à jour.
+Dans les options avancées, vous pouvez planifier votre application. Si vous laissez décoché, elle s'appliquera immédiatement.
 
 ![](images/Update12.png){.thumbnail}
 
-La mise à jour est en cours sur votre **hôte**, cela prends moins de 5 minutes.
+Si vous n'avez pas placé votre hôte en mode maintenance ou si vous planifiez l'application des correctifs à une heure ou date ultérieur, vous pouvez planifier la mise en maintenance à cette étape.
+
+![](images/Update13.png){.thumbnail}
+
+Cette ultime étape permet de désactiver certaines options du cluster et de certaines machines virtuelles pour permettre la bonne exécution des mises à jour.
+
+La désactivation du contrôle d'admission peut être interessante si vous ne disposez pas d'assez de ressources en cas de perte d'un hôte (en plus de celui sur lequel vous appliquez les mises à jour).
+
+Il est simplement necessaire de réactiver ce paramètre en editant [la fonction HA du cluster](https://docs.ovh.com/fr/private-cloud/vmware-ha-high-availability/){.external-link}, une fois les mises à jour appliquées sur les différents hôtes.
 
 ![](images/Update14.png){.thumbnail}
 
-Votre hôte **redémarre** (si pre-requis au niveau de l'update) lorsqu'il répond de nouveau dans votre **Cluster** vous pouvez le sortir du **mode maintenance**, vérifiez aussi dans les **options** de votre **Cluster** que **HA** (High Availability) est bien activée.
+Enfin, un résumé sera disponible et si tout est en ordre, vous pourrez cliquez sur `Terminer`{.action} pour lancer l'application des mises à jour et le redémarrage de l'hôte.
 
-![](images/Upgrade16.png){.thumbnail}
+![](images/Update15.png){.thumbnail}
 
-Suite à cette **mise à jour**, je vous invite à réaliser des tests en migrant une machine virtuelle sur celui-ci et vérifiez la **connectivité réseau** depuis le réseau **Wan** et **Local**.
+Une première tâche se lancera sur le cluster, et en fonction des paramètres choisis, d'autres pourront se lancer également sur le cluster.
 
-Attention La mise à jour de votre**vCenter** doit être réalisé par **OVH** par le biais d'une de la création d'un **ticket** depuis votre [manager](https://www.ovh.com/manager/dedicated/login/){.external-link}.
+Enfin, les tâches d'installation et de redémarrage se lanceront sur l'hôte.
+
+![](images/Update16.png){.thumbnail}
+
+Après quelques minutes, votre hôte sera à jour, vous pourrez le sortir du mode maintenance, et si besoin effectuer ces actions sur un autre hôte.
+
+## Aller plus loin
+
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
