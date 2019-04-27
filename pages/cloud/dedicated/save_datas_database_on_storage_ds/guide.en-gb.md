@@ -171,7 +171,9 @@ Add the following line to automate sending for your SQL dump files, every day of
 0 2 * * * scp your_dump_file user@IP_Storage:/home/backups/server1/dump >/dev/null 2>&1
 ```
 
-The syntax for a *crontab* is specific. We will not detail it here, but there are several websites you can use to generate it easily, such as [Crontab Generator](https://crontab-generator.org/){.external}.
+The syntax for a *crontab* is specific. We will not detail it here, but there are several websites you can use to generate it easily, such as 
+[Crontab Generator](https://crontab-generator.org/){.external}.
+[Crontab Generator Online](https://crontabgenerator.org/){.external}.
 
 
 
