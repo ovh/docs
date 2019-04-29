@@ -6,7 +6,7 @@ section: Protocol
 order: 4
 ---
 
-**Last updated 15th May, 2018**
+**Last updated 26 April, 2019**
 
 ## Objective
 
@@ -20,9 +20,9 @@ InfluxDB is a proprietary time series database that integrates with [Telegraf](h
 
 ### Compatibility
 
-| API    | Method | Supported |
-|--------|--------|-----------|
-| /write | POST   |  <i class="fas fa-check"></i> |
+| API    | Method | Supported                    |
+| ------ | ------ | ---------------------------- |
+| /write | POST   | <i class="fas fa-check"></i> |
 
 InfluxDB has the notion of databases. This concept doesn't exist within Metrics. If you need segmentation, you can use different Metrics project or isolate with an additional label.
 
@@ -32,10 +32,9 @@ Metrics currently doesn't support Influx Query Language.
 
 InfluxDB uses it own data model :
 
-```
+```txt
  <measurement>[,<tag_key>=<tag_value>[,<tag_key>=<tag_value>]] <field_key>=<field_value>[,<field_key>=<field_value>] [<timestamp>]
 ```
-
 
 ### How to push data
 
@@ -66,8 +65,8 @@ InfluxDB has its own Query DSL, that mimics SQL without being plain ANSI SQL.
 
 Metrics currently doesn't support Influx Query Language.
 
-## Go further
+## Going further
 
-You can learn how to configure a Grafana  datasource by following [this guide](../start-grafana).
+You can learn how to configure a Grafana datasource by following [this guide](../start-grafana).
 
-Join our community of users on <https://community.ovh.com/en/>.
+You can also exchange with our community of users on [https://community.ovh.com](https://community.ovh.com){.external}.
