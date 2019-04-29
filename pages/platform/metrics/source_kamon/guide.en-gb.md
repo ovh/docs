@@ -1,11 +1,12 @@
 ---
-title: Configure Kamon
+title: 'Configure Kamon'
 slug: source-kamon
-excerpt: Configure Kamon for Metrics Data Platform
+excerpt: 'Configure Kamon for Metrics Data Platform'
 section: Source
 order: 4
 ---
-**Last updated 15th May, 2018**
+
+**Last updated 26 April, 2019**
 
 Kamon is a monitoring toolkit for applications running on the JVM. In this guide, you will learn how to configure it for Metrics Data Platform.
 
@@ -32,21 +33,20 @@ Kamon provides you a simple way to create :
 - Timers : A latency specialized histograms
 - Range Samplers : Used to track variables that increase and decrease very quickly, the most notable use case being tracking the number of concurrent requests or the number of elements in a queue.
 
-
 ### Installation and Startup
 
 Add the kamon dependencies to your build:
 
-Example for SBT  :
+Example for SBT :
 
 ```s
   libraryDependencies += "io.kamon" %% "kamon-core" % "1.1.0"
-  
+
   // Optional Dependencies
   libraryDependencies += "io.kamon" %% "kamon-prometheus" % "1.0.0"
 ```
 
-for Gradle : 
+for Gradle :
 
 ```s
 dependencies {
@@ -55,7 +55,7 @@ dependencies {
 }
 ```
 
-or for Maven : 
+or for Maven :
 
 ```xml
 <dependencies>
@@ -74,7 +74,6 @@ or for Maven :
 </dependencies>
 ```
 
-
 ### Record Metrics in your App
 
 ```java
@@ -90,12 +89,11 @@ myTaggedCounter.increment()
 
 ### Report your Data
 
-Just add a reporter like this : 
+Just add a reporter like this :
 
 ```java
 Kamon.addReporter(new PrometheusReporter())
-``` 
-
+```
 
 ### Continue with Kamon
 
