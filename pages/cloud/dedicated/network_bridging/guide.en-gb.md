@@ -1,11 +1,11 @@
 ---
 title: 'Configuring a network bridge'
 slug: network-bridging
-excerpt: 'This guide will show you how to use network bridging to configure internet access for your virtual machines'
+excerpt: 'This guide will show you how configure your virtual machines for access to the public internet'
 section: 'Network Management'
 ---
 
-**Last updated 4th March 2019**
+**Last updated 25th April 2019**
 
 ## Objective
 
@@ -39,7 +39,7 @@ Click on the three dots to open the `Context`{.action} menu, and click `Add a vi
 
 ![Add a virtual MAC (1)](images/virtual_mac_02.png){.thumbnail}
 
-Select `OVH`{.action} from the `Type`{.action} dropdown box, type a name in the `Name of virtual machine`{.action} field, and then confirm your options.
+Select `OVH`{.action} from the `Type`{.action} dropdown box - unless you're using VMware ESXi, then `vmware` - type a name in the `Name of virtual machine`{.action} field, and then confirm your options.
 
 ![Add a virtual MAC (2)](images/virtual_mac_03.png){.thumbnail}
 
@@ -51,20 +51,46 @@ To configure your virtual machines for internet access, you will need to know th
 
 Your gateway address would therefore be:
 
-* 123.456.789.254
+* 123.456.789.**254**
 
-### Apply the configuration
+### Prepare the Host
 
 > [!primary]
 >
 For all operating systems and distributions, you **MUST** configure you virtual machine with the virtual MAC address you created in the Control Panel.
 >
+#### Proxmox
+After you've created the virtual machine and while it's powered off:
+ 1. select the VM
+ 2. open the `Hardware` section
+ 3. select `Network Device`
+ 4. click the `Edit` button
 
-#### Debian and Debian-based operating systems (Ubuntu, CrunchBang, SteamOS, etc.)
+![navigate to Network Device](images/proxmox_01.png){.thumbnail}
 
-Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/network/interfaces`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
+add the vMAC address, you've created earlier
+![open Network Device](images/proxmox_02.png){.thumbnail}
 
-```bash
+
+Now you can start the VM and proceed with the steps, depending on the Operation System on it.
+
+#### VMware ESXi
+After you've created the virtual machine and while it's powered off, right click the VM and click `Edit settings`
+![VM context menu](images/vmware_01.png){.thumbnail}
+
+Fold out `Netwok Adapter 1` and change the value in the `MAC Address` dropdown menu to `Manual` and enter the vmware MAC address, created earlier.
+![Edit settings](images/vmware_02.png){.thumbnail}
+
+Now you can start the VM and proceed with the steps, depending on the Operation System on it.
+
+### Configure the virtual machines
+
+#### Debian
+
+Connect to the shell of your virtual machine. Open the virtual machine's network configuration file, which is located in `/etc/network/interfaces`. 
+Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
+
+```
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -76,14 +102,17 @@ iface eth0 inet static
     pre-down route del GATEWAY_IP dev eth0
     pre-down route del default gw GATEWAY_IP
 ```
-
-Save and close the file, then reboot the virtual machine.
+Also replace `eth0` if your system uses Predictible Network Interface Names. You can find the Network interface names with the following command:
+```sh
+ls /sys/class/net
+```
+Save and close the file, then restart your network or reboot the virtual machine.
 
 #### Redhat and Redhat-based operating systems (CentOS 6, Scientific Linux, ClearOS, etc.)
 
-Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/network/interfaces`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
+Open a terminal on your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/network/interfaces`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
-```bash
+```sh
 DEVICE=eth0
 BOOTPROTO=none
 ONBOOT=yes
@@ -113,13 +142,13 @@ Save and close the file, then reboot your virtual machine.
 
 > [!primary]
 > 
-> For CentOS 7, the name of the network adapter will vary, depending on the installation options. You will need to verify the adapter name and use it to configure your virtual machine. Use the command `ipaddr`{.action} to find your interface name.
+> For CentOS 7, the name of the network adapter will vary, depending on the installation options. You will need to verify the adapter name and use it to configure your virtual machine. You can find the Network interface names with the command `ls /sys/class/net`
 > 
 
-Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/sysconfig/network-scripts/ifcfg-(interface name)`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
+Open a terminal on your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/sysconfig/network-scripts/ifcfg-(interface-name)`. Edit theso that it reflects the configuration below (please remember to replace our variables with your own values):
 
-```bash
-DEVICE=(insert interface Name)
+```sh
+DEVICE=(interface-name)
 BOOTPROTO=none
 ONBOOT=yes
 USERCTL=no
@@ -138,17 +167,29 @@ Save and close the file.
 Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/route-(interface-name)`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
-GATEWAY_IP - 255.255.255.255 (insert interface Name)
-NETWORK_GW_VM - 255.255.255.0 (insert interface Name)
+GATEWAY_IP - 255.255.255.255 (interface-name)
+NETWORK_GW_VM - 255.255.255.0 (interface-name)
 default GATEWAY_IP
 ```
+Save and close the file.
+
+Next, open the virtual machine's DNS configuration file, which is located in `/etc/resolv.conf` and add this line:
+```bash
+nameserver 213.186.33.99
+```
+
+After saving and closing the file, restart your network or reboot the VM.
 
 #### OpenSUSE
+> [!primary]
+> 
+> For OpenSUSE, the name of the network adapter will vary, depending on the installation options. You will need to verify the adapter name and use it to configure your virtual machine. You can find the Network interface names with the command `ls /sys/class/net`
+> 
 
-Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/sysconfig/network/ifcfg-ens32`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
+Open a terminal on your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/sysconfig/network/ifcfg-(interface-name)`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
-DEVICE=ens32
+DEVICE=(interface-name)
 BOOTPROTO=static
 ONBOOT=yes
 ARP=yes
@@ -164,11 +205,11 @@ HWADDR=MY:VI:RT:UA:LM:AC
 
 Save and close the file.
 
-Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/ifroute-ens32`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
+Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/ifroute-(interface-name)`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
-GATEWAY_IP - 255.255.255.255 ens32
-NETWORK_GW_VM - 255.255.255.0 ens32
+GATEWAY_IP - 255.255.255.255 (interface-name)
+NETWORK_GW_VM - 255.255.255.0 (interface-name)
 default GATEWAY_IP
 ```
 
@@ -180,80 +221,28 @@ nameserver 213.186.33.99 # OVH DNS Server
 
 Save and close the file, then reboot your virtual machine.
 
-#### Arch Linux
 
-First, establish an SSH connection to your virtual machine and install **Netctl**, which is a command line utility used for configuring network interfaces:
+#### FreeBSD 12.0
 
-```ssh
-# apt-get netctl
-```
-
-Once Netctl has been installed, run the following command to determine the name of your virtual machine's network interface:
-
-```
-# ip link
-
-1: eno3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
-    link/ether ac:1f:6b:67:ce:a4 brd ff:ff:ff:ff:ff:ff
-```
-
-From the output above, we can see that the name of our network interface is **eno3**. This is for demonstration purposes. Your interface will likely have a different name.
-
-Next, copy the contents of the Netctl static configuration file, and create a new file with the name of your network interface:
-
-```ssh
-# cp /etc/netctl/examples/ethernet-static /etc/netctl/eno3
-```
-
-Next, edit the file you just created, substituting the values for your failover IP address, subnet mask, gateway address and DNS address. **For the subnet mask, please use the address that was emailed to you when you purchased the failover IP address.**
-
-```sh
-Description='A basic static ethernet connection'
-Interface=eno3
-Connection=ethernet
-IP=FAILOVER_IP
-Address=('255.255.255.255')
-Gateway=('GATEWAY_IP')
-DNS=('213.186.33.99')
-```
-
-Next, enable the network card to start automatically on every reboot with the following command:
-
-```sh
-# netctl enable eno3
-```
-
-Now start the network profile, as shown below:
-
-```ssh
-# netctl start eno3
-```
-
-Next, stop and disable the dhcp service:
-
-```ssh
-# systemctl stop dhcpcd
-# systemctl disable dhcpcd
-```
-
-Finally, restart your system for the changes to take effect.
-
-#### FreeBSD 8.0
-
-Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/rc.conf`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
+Open a terminal on your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/rc.conf`. Edit the file so that it includs the configuration below (please remember to replace our variables with your own values. In this example, the inteface name is `em0`; Adjust if necessary.):
 
 ```bash
 ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
 static_routes="net1 net2"
-route_net1="-net GATEWAY_IP/32 FAILOVER_IP"
+route_net1="-net GATEWAY_IP/32 -interface em0"
 route_net2="default GATEWAY_IP"
+```
+
+Save and close the file. Next edit the File `/etc/resolv.conf`,create when necessary
+```sh
+nameserver 213.186.33.99
 ```
 
 Save and close the file, then reboot your virtual machine.
 
 #### Ubuntu 18.04
 
-First, establish an SSH connection to your virtual machine and open the network configuration file located in `/etc/netplan/` with the following command. For demonstration purposes, our file is called `50-cloud-init.yaml`.
+First, open a terminal on your virtual machine and open the network configuration file located in `/etc/netplan/` with the following command. For demonstration purposes, our file is called `50-cloud-init.yaml`.
 
 ```sh
 # nano /etc/netplan/50-cloud-init.yaml
@@ -264,9 +253,9 @@ Once the file is open for editing, amend it with the following code:
 ```sh
 network:
     ethernets:
-        your-network-interface:
+        (interface-name):
             addresses:
-            - your-failover-ip/32
+            - FAILOVER_IP/32
             nameservers:
                 addresses:
                 - 213.186.33.99
@@ -274,7 +263,7 @@ network:
             optional: true
             routes:
                 - to: 0.0.0.0/0
-                  via: your-gateway-ip
+                  via: GATEWAY_IP
                   on-link: true
     version: 2
 ```
