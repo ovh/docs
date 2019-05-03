@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to verify the state of your RAID and the 
 section: 'Server Management'
 ---
 
-**Last updated 21st August 2018**
+**Last updated 3rd May 2019**
 
 ## Objective
 
@@ -187,7 +187,8 @@ MegaCli -PDRbld -ShowProg -PhysDrv [EncID:SlotID] -aALL (Or : storcli /c0/eEncID
 
 The command will retrieve the enclosure ID and slot ID, as shown above.
 
-#### Step 4: Using CacheCade
+
+#### Step 4a: Using CacheCade
 
 > [!primary]
 >
@@ -205,6 +206,14 @@ To see which RAID array is associated with the CacheCade:
 ```sh
 MegaCli -CfgCacheCadeDsply -a0 | grep "Associated LDs"
 ```
+
+#### Step 4b: Checking the status of the backup battery unit
+
+to receive a full list of status parameters for the BBU, use this command:
+```sh
+MegaCli -AdpBbuCmd -aALL
+```
+the most important value to check is if `Battery State` is **Optimal**. If there are indicators of a failing battery, create a backup of your data and provide the outpout of this command to the support, when creating the Ticket.
 
 ### Using the LSI RAID controller
 
