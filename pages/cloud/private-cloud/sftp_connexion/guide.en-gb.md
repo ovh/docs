@@ -11,7 +11,10 @@ section: 'Getting started'
 
 Logging in to your datastores via SFTP enables you to add local files to your infrastructure. You can log in from a graphical interface with programs such as FileZilla, available on Windows and Mac, or you can log in via command line from your Linux operating system.
 
-This system will only allow you to access the upload-vpn folder in your datastores. You cannot access files outside of this folder using this method.
+>[!warning]
+>
+>This system will only allow you to access the upload-vpn folder in your datastores. You cannot access files outside of >this folder using this method.
+>
 
 **This guide explains how to log in via SFTP from a graphical interface or command line.**
 
@@ -32,7 +35,7 @@ Host: [sftp://pcc-xxx-xxx-xxx-xxx.ovh.com] / Username: user / Password: password
 
 ![SFTP login](images/connection_sftp_filezilla_log.png){.thumbnail}
 
-Once you are logged in, you will find your local mail on the left, and your datastores on the right:
+Once you are logged in, you will find your local machine on the left, and your datastores on the right:
 
 ![Login via SFTP with FileZilla](images/connection_sftp_filezilla.png){.thumbnail}
 
@@ -65,14 +68,14 @@ Browse the list of datastores found with the previous command:
 sftp> pcc-000714
 ```
 
-Use the `put` command to export files from your datastore to your local mail.
+Use the `put` command to export files from your datastore to your local machine.
 
 ```sh
 sftp> put /home/ubuntu-16.04.3-server-amd64.iso
 /datastore/pcc-000714/ubuntu-16.04.3-server-amd64.iso  
 ```
 
-Use the `get` command to import files from your local mail to your datastore.
+Use the `get` command to import files from your local machine to your datastore.
 
 ```sh
 sftp> get /datastore/pcc-00714/ubuntu-16.04.3-server-amd64.iso /home/
