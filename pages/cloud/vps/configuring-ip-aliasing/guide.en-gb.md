@@ -91,8 +91,14 @@ network:
             addresses:
             - your_failover_ip/32
 ```
-
 Finally, save and close the file.
+
+Then apply config:
+
+```sh
+# netplan apply
+# netplan try
+```
 
 Repeat this procedure for each failover IP address.
 
