@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to verify the state of your RAID and the 
 section: 'Server Management'
 ---
 
-**Last updated 3rd May 2019**
+**Last updated 10th May 2019**
 
 ## Objective
 
@@ -160,8 +160,9 @@ Error Counters
 Memory Correctable Errors   : 0
 Memory Uncorrectable Errors : 0
 ```
+If the counted errors are more than zero, you should create a backup of your data and contact the support with the full output. Then, the support will schedule an intervention for the replacement of the RAID controller.
 
-For a succinct output of only the errors, the command can be expanded by a grep:
+For a succinct output of only the error counters, the command can be expanded by a grep:
 ```sh
 MegaCli -AdpAllInfo -aALL | grep "Errors"
 Memory Correctable Errors   : 0
