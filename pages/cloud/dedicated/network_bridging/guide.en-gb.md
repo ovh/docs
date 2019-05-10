@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how configure your virtual machines for acces
 section: 'Network Management'
 ---
 
-**Last updated 25th April 2019**
+**Last updated 10th May 2019**
 
 ## Objective
 
@@ -320,6 +320,23 @@ Click `OK`{.action}, and ignore the warning message about the gateway IP and ass
 Finally, reboot the server. The VM should then be connected to the internet using the failover IP.
 
 ![networkbridging](images/network-bridging-windows-2012-4.jpg){.thumbnail}
+
+#### Troubleshooting
+
+If you are unable to establish a connection from your VM to the public network and suspect a networking problem, please reboot the server in Rescue Mode and setup the bridging network interface directly on the host.
+
+In order to do that, once you’ve rebooted your server in Rescue Mode, enter the following commands:
+
+```bash
+ip link add name test-bridge link eth0 type macvlan
+ip link set dev test-bridge address MAC_ADDRESS
+ip link set test-bridge up
+ip addr add FAILOVER_IP/32 dev test-bridge
+```
+
+Where you will replace MAC_ADDRESS by the vMAC address that you generated in the Control Panel and FAILOVER_IP by the actual IPFO.
+
+Next, simply ping your IPFO from the outside. If it works, it probably means that there is a configuration error either on the VM or the host that prevents the IPFO from working in normal mode. If, on the contrary, the IP is still not working, please open a ticket to the support team via your Control Panel for further investigations.
 
 ## Go further
 
