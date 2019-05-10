@@ -102,6 +102,50 @@ Then apply config:
 
 Repeat this procedure for each failover IP address.
 
+### Windows Server 2016
+
+#### Step 1: Check the main IP configuration
+
+First of all we need to recover the information of the main IP:
+
+![check main IP configuration](images/image1.png){.thumbnail}
+
+#### Step 2: Change the IPv4 Properties
+
+Now we must change the IP properties from 'automatically configuration' to a 'static' configuration manually
+
+![change the ip configuration](images/image2.png){.thumbnail}
+
+Now we can define the IP information obtained previously
+
+![change the ip configuration](images/image3.png){.thumbnail}
+
+#### Step 3: Add the IP Fail Over in the 'Advanced configuration' section
+
+![advance configuration section](images/image4.png){.thumbnail}
+
+Here we must to define the IP FailOver information and the correspond netmask (normally the netmask is -> 255.255.255.255)
+
+![IP fail over configuration](images/image5.png){.thumbnail}
+
+#### Step 4: Rebooting the network interface
+
+First we do the disabling process
+
+![disabling network](images/image6.png){.thumbnail}
+
+Then we do the enabling process
+
+![enabling network](images/image7.png){.thumbnail}
+
+#### Step 5: Checking the new network configuration
+
+Using the console and the ___ipconfig___ command we can check the new network configuration
+
+![check current network configuration](images/image8.png){.thumbnail}
+
+
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
