@@ -102,6 +102,66 @@ Then apply config:
 
 Repeat this procedure for each failover IP address.
 
+### CentOS 6/7
+
+#### Step 1: Create a copy of the main network configuration file:
+
+```sh
+# cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0:0
+```
+#### Step 2: Modify the new file
+
+Using a text editor we access to the new file:
+
+```sh
+sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0:0
+```
+Then we must to define the additional IP information
+
+```sh
+# Created by cloud-init on instance boot automatically, do not edit.
+#
+BOOTPROTO=none
+DEVICE=eth0:0
+HWADDR=fa:16:3e:86:c0:22
+ONBOOT=yes
+TYPE=Ethernet
+USERCTL=no
+IPADDR=217.182.182.210
+NETMASK=255.255.255.255
+```
+Now we must do a network restart:
+
+```sh
+systemctl restart network
+```
+Finally check the current network configuration:
+
+```sh
+ifconfig
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 51.83.110.190  netmask 255.255.255.255  broadcast 51.83.110.190
+        inet6 fe80::f816:3eff:fe86:c022  prefixlen 64  scopeid 0x20<link>
+        ether fa:16:3e:86:c0:22  txqueuelen 1000  (Ethernet)
+        RX packets 2223  bytes 180217 (175.9 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1580  bytes 168953 (164.9 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth0:0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 217.182.182.210  netmask 255.255.255.255  broadcast 217.182.182.210
+        ether fa:16:3e:86:c0:22  txqueuelen 1000  (Ethernet)
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 32  bytes 2592 (2.5 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 32  bytes 2592 (2.5 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+
 ### Windows Server 2016
 
 #### Step 1: Check the main IP configuration
@@ -144,8 +204,28 @@ Using the console and the ___ipconfig___ command we can check the new network co
 
 ![check current network configuration](images/image8.png){.thumbnail}
 
+### Plesk Onyx 17
 
+#### Step 1: Access to the 'IP Adredsses' management inside the control panel:
 
+Access to the ```Tools & Settings```>```IP Addresses``` section:
+
+![acces to the ip addresses management](images/pleskip1.png){.thumbnail}
+
+#### Step 2: Add the additional IP information:
+
+Click on the ``Add IP Address`` button:
+
+![add ip information](images/pleskip2.png){.thumbnail}
+
+Then put the additional IP information in the form and press ```OK```
+
+![add ip information](images/pleskip3.png){.thumbnail}
+
+#### Step 3: Check the current IP configuration inside Plesk panel:
+
+![current IP configuration](images/pleskip4.png){.thumbnail}
+ 
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
