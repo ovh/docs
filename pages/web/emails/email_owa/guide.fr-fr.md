@@ -176,6 +176,7 @@ En étant connecté à l'OWA, vous avez la possibilité de créer une réponse a
 ![useowa](images/use-owa-step20.png){.thumbnail}
 
 Sur la fenêtre qui apparaît, commencez par cocher la case à côté de « Envoyer des réponses automatiques ». Vous avez alors la possibilité de paramétrer cet envoi selon plusieurs critères :
+
 - envoyer des messages de réponse automatique pendant un intervalle de temps défini ou continuellement jusqu'à désactivation ;
 - définir à qui les messages de réponse automatique seront envoyés (expéditeurs internes uniquement, ou inclure des expéditeurs externes).
 
