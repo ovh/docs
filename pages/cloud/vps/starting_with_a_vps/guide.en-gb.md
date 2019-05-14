@@ -17,7 +17,8 @@ A virtual private server (VPS) is a virtualised dedicated server. Unlike web hos
 
 > [!warning]
 >
-> OVH is providing you with machines that you will be responsible for. We have no access to these machines, and therefore cannot manage them. You are responsible for your own software and security management. This guide is designed to assist you in common tasks as much as possible. However, we recommend that you call upon a specialised service provider if you experience any issues or doubts when it comes to managing, using or securing your server. You can find more information in the “Go further” section of this guide.
+> While OVH provides you with the devices, the responsibility rests solely in your hands. Keep in mind that OVH is an IAAS (Infrastructure As A Service), then you are the only one who can access your server(s), as you are administrators. For this reason, you are the only responsible for your service’s software and security.
+This guide is designed to help you with the most common tasks. However, we recommend contacting a specialized service provider if you experience any difficulties or have any doubts about managing, using and securing a server. You can find more information in the “Go further” section of this guide. 
 > 
 
 
