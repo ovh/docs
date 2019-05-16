@@ -7,7 +7,7 @@ order: 1
 ---
 
 **Last updated 18th April 2018**
- 
+
 ## Objective
 
 A virtual private server (VPS) is a virtualised dedicated server. Unlike web hosting plans (described as “shared”), which are technically managed by OVH, you are fully responsible for administrating your VPS.
@@ -17,8 +17,9 @@ A virtual private server (VPS) is a virtualised dedicated server. Unlike web hos
 
 > [!warning]
 >
-> We would like to inform you that OVH is an IaaS provider. Having a server with an IaaS provider also means being your own administrator. As our products are aimed at customers who are their own SysAdmin, OVH does not have a software support staff, instead focusing on hardware support. If the issue does not originate due to hardware or our network infrastructure we are unable to help. Any issues related to software or operating system, we are unable to provide support.
-> 
+> While OVH provides you with the devices, the responsibility rests solely in your hands. Keep in mind that OVH is an IAAS (Infrastructure As A Service), then you are the only one who can access your server(s), as you are administrators. For this reason, you are the only responsible for your service’s software and security.
+This guide is designed to help you with the most common tasks. However, we recommend contacting a specialized service provider if you experience any difficulties or have any doubts about managing, using and securing a server. You can find more information in the “Go further” section of this guide. 
+>
 
 
 ## Requirements
@@ -69,7 +70,7 @@ A window will open, and you will be asked to choose:
 >
 > Some operating systems or platforms such as Plesk or Windows require a licence to be purchased prior to installation. You can buy this licence from OVH, or from a reseller. You will then need to integrate it manually, or through your Control Panel. You can manage your licences under `Dedicated`{.action}, then `Licences`{.action}.
 In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Actions`{.action} button on the right).
-> 
+>
 
 A progress bar will appear in your Control Panel, for the reinstallation - please note that installation can take up to 30 minutes.
 
