@@ -58,6 +58,7 @@ To configure the first usable IP address, we need to edit the network configurat
 The subnet mask we've used in our example is appropriate for our IP block. Your subnet mask may differ depending on the size of your block. When you purchase your IP block, you'll receive an email that will tell you which subnet mask to use.
 >
 
+###Debian/Ubuntu
 
 ```sh
 /etc/network/interfaces
@@ -122,6 +123,71 @@ post-up ip rule add to 46.105.135.96/28 table vrack
 ```
 
 Now reboot your server to apply the changes.
+
+### CentOS 7
+
+#### Step 1: Create and configure the file for the second network interface
+
+First we can copy the main IP configuration for the new network interface file
+
+```sh
+sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth1
+```
+Then we access to the new file
+```sh
+sudo nano /etc/sysconfig/network-scripts/ifcfg-eth1
+```
+And we define the IP settings
+```sh
+# Created by cloud-init on instance boot automatically, do not edit.
+#
+BOOTPROTO=static
+DEVICE=eth1
+HWADDR=fa:16:3e:6c:98:57
+ONBOOT=yes
+TYPE=Ethernet
+USERCTL=no
+DEFROUTE=no
+IPADDR=178.33.75.138
+PREFIX=28
+```
+> [!primary]
+>
+We must to change the ```HWADDR``` field with the current Mac address of the second network phisycal interface of our server.
+>
+
+#### Step 2: Add the IP gateway route and the IP rule
+
+With the follwoing command we are going to add the gateway IP on the routing table of the server:
+```sh
+sudo ip route add default via 178.33.75.142 dev eth1 table 1000
+```
+```sh
+ip route
+default via 51.83.104.1 dev eth0 proto dhcp metric 100 
+51.83.104.1 dev eth0 proto dhcp scope link metric 100 
+51.83.110.190 dev eth0 proto kernel scope link src 51.83.110.190 metric 100 
+178.33.75.128/28 dev eth1 proto kernel scope link src 178.33.75.138 metric 101 
+217.182.182.210 dev eth0 proto kernel scope link src 217.182.182.210 metric 100 
+```
+And this other one add the IP info to the network rules of the server:
+```sh
+sudo ip rule add from 178.33.75.138 lookup 1000
+```
+```sh
+ip rule
+0:	from all lookup local 
+32765:	from 178.33.75.138 lookup 1000 
+32766:	from all lookup main 
+32767:	from all lookup default 
+```
+
+#### Step 3: Restar the network
+
+```sh
+sudo systemctl restart network
+```
+
 
 ## Go further
 
