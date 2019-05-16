@@ -153,7 +153,7 @@ PREFIX=28
 ```
 > [!primary]
 >
-We must to change the ```HWADDR``` field with the current Mac address of the second network phisycal interface of our server.
+We must to change the ```HWADDR``` field with the current Mac address of the second network physical interface of our server.
 >
 
 #### Step 2: Add the IP gateway route and the IP rule
@@ -187,6 +187,46 @@ ip rule
 ```sh
 sudo systemctl restart network
 ```
+
+### Windows Server 2016EN
+
+#### Step 1: Check and configure the second network interface
+
+First we must to access to the new network interface information
+
+![check the second network interface](images/win-ip-vrack-1.png){.thumbnail}
+
+Then we must to check the properties
+
+![properties of the second network interface](images/win-ip-vrack-2.png){.thumbnail}
+
+![properties of the second network interface](images/win-ip-vrack-3.png){.thumbnail}
+
+#### Step 2: IP Configuration
+
+We must to activate the ```Use the following IP address```:
+
+![ip configuration](images/win-ip-vrack-4.png){.thumbnail}
+
+And we define the IP information:
+
+![ip configuration](images/win-ip-vrack-5.png){.thumbnail}
+
+#### Step 3: Rebooting the network interface
+
+First we do the disabling process
+
+![disabling network](images/win-ip-vrack-6.png){.thumbnail}
+
+Then we do the enabling process
+
+![enabling network](images/win-ip-vrack-7.png){.thumbnail}
+
+#### Step 4: Checking the new network configuration
+
+Using the console and the ___ipconfig___ command we can check the new network configuration
+
+![check current network configuration](images/win-ip-vrack-8.png){.thumbnail}
 
 
 ## Go further
