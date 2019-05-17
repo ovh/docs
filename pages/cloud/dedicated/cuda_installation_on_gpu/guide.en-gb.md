@@ -19,7 +19,9 @@ You can install Compute Unified Device Architecture (CUDA) on a GPU server, but 
 
 Once you have reinstalled the distribution/operating system, follow the instructions below.
 
-### Update the kernel
+### Ubuntu
+
+#### Update the kernel
 
 ```sh
 wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.10.17/linux-headers-4.10.17-041017_4.10.17-041017.201705201051_all.deb
@@ -172,6 +174,119 @@ Wed Nov 1 09:14:38 2017
 | No running processes found |
 +----------------------------------------------------------------+
 ```
+
+### CentOS 7
+
+#### Update the kernel
+
+The first thing we must do before upgrading the kernel is to upgrade all packages to the latest version. Update the repository and all packages to latest versions with the yum command below.
+
+```sh
+sudo yum -y update
+```
+
+Before installing new kernel version, we need to add new repository (Example: ELRepo repository).
+
+Add ELRepo gpg key to the system.
+```sh
+sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+```
+
+Now add new ELRepo repository with rpm command.
+```sh
+sudo rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
+```
+
+Next, check all repositories enabled on the system, and make sure ELRepo is on the list.
+```sh
+yum repolist
+
+Loading mirror speeds from cached hostfile
+ * elrepo: mirrors.coreix.net
+ * epel: mirrors.coreix.net
+id del repositorio                                                                               nombre del repositorio                                                                                                                estado
+base/7/x86_64                                                                                    CentOS-7 - Base                                                                                                                       10.019
+cuda                                                                                             cuda                                                                                                                                     851
+elrepo                                                                                           ELRepo.org Community Enterprise Linux Repository - el7                                                                                   118
+epel/x86_64                                                                                      Extra Packages for Enterprise Linux 7 - x86_64                                                                                        13.190
+extras/7/x86_64                                                                                  CentOS-7 - Extras                                                                                                                        413
+updates/7/x86_64                                                                                 CentOS-7 - Updates                                                                                                                     1.928
+repolist: 26.519
+```
+
+In this step, we will install latest kernel version from the ELRepo repository.
+```sh
+sudo yum --enablerepo=elrepo-kernel install kernel-ml
+```
+
+Check all available kernel versions with the awk command below.
+```sh
+sudo awk -F\' '$1=="menuentry " {print i++ " : " $2}' /etc/grub2.cfg
+
+0 : CentOS Linux (5.1.2-1.el7.elrepo.x86_64) 7 (Core)
+1 : CentOS Linux (3.10.0-957.12.2.el7.x86_64) 7 (Core)
+2 : CentOS Linux (3.10.0-957.5.1.el7.x86_64) 7 (Core)
+3 : CentOS Linux (3.10.0-957.el7.x86_64) 7 (Core)
+4 : CentOS Linux (0-rescue-48eae5db334f4be180c62013c3806594) 7 (Core)
+```
+
+We want to use last kernel downloaded as our default, so you can use the following command to make this happen.
+```sh
+sudo grub2-set-default 0
+```
+Now we must to regenerate the grub
+```sh
+sudo grub2-mkconfig -o /boot/efi/EFI/centos/grub.cfg
+```
+
+Then we must to reboot the server to apply the changes
+```sh
+sudo reboot
+```
+
+#### Install CUDA 
+
+Now [Nvidia](https://www.ovh.com/auth/?action=gotomanager)
+```sh
+wget http://developer.download.nvidia.com/compute/cuda/repos/rhel7/x86_64/cuda-repo-rhel7-10.1.168-1.x86_64.rpm
+```
+
+
+```sh
+sudo rpm -i cuda-repo-*.rpm
+```
+
+
+```sh
+sudo yum install cuda
+```
+
+
+```sh
+sudo nano /etc/bashrc
+```
+
+
+```
+export PATH=/usr/local/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+```
+
+
+```sh
+source ~/.bashrc
+```
+
+
+```sh
+nvcc --version
+
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2019 NVIDIA Corporation
+Built on Wed_Apr_24_19:10:27_PDT_2019
+Cuda compilation tools, release 10.1, V10.1.168
+```
+
 
 ## Go further
 
