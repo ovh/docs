@@ -209,19 +209,19 @@ GRUB_TERMINAL_OUTPUT="console"
 GRUB_CMDLINE_LINUX="crashkernel=auto rhgb quiet rd.driver.blacklist=nouveau nouveau.modeset=0"
 GRUB_DISABLE_RECOVERY="true"
 ```
-
+Then we update the __Grub__ information
 ```sh
 # sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
+Now we include the __blacklist noveau__ concept in the following path
 ```sh
 # sudo /etc/modprobe.d/blacklist.conf
 ```
-
 ```
 blacklist nouveau
 ```
-
+Finally we need to reboot the server
 ```sh
 # sudo reboot
 ```
@@ -238,15 +238,18 @@ Then we can execute the package installation
 ```sh
 # sudo sh cuda_*.run
 ```
+Acepts the process
+![cuda step 1](images/centos-cuda-install-1.png){.thumbnail}
+
+And then sxelect all the components to install 
+![cuda step 2](images/centos-cuda-install-2.png){.thumbnail}
 
 
-
-
-When the installation will be finished we can export system path to Nvidia CUDA binary executables. Open the __~/.bashrc__ using your preferred text editor : 
+When the installation will be finished we can export system path to Nvidia CUDA binary executables. Open the __~/.bashrc__ using your preferred text editor: 
 ```sh
 # sudo nano ~/.bashrc
 ```
-And add the following two lines
+And add the following two lines:
 ```
 export PATH=/usr/local/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
@@ -259,15 +262,14 @@ source ~/.bashrc
 
 And finally we can check the driver version and d the service statuas with the following commands
 ```sh
-nvcc --version
-
+# nvcc --version
 nvcc: NVIDIA (R) Cuda compiler driver
 Copyright (c) 2005-2019 NVIDIA Corporation
 Built on Wed_Apr_24_19:10:27_PDT_2019
 Cuda compilation tools, release 10.1, V10.1.168
 ```
 ```sh
-nvidia-smi
+# nvidia-smi
 Fri May 17 15:37:53 2019       
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
