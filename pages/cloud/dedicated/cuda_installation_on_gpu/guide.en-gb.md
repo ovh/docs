@@ -177,107 +177,87 @@ Wed Nov 1 09:14:38 2017
 
 ### CentOS 7
 
-#### Update the kernel
+#### Update the OS
 
-The first thing we must do before upgrading the kernel is to upgrade all packages to the latest version. Update the repository and all packages to latest versions with the yum command below.
-
+After the CUDA installation we must to perform an OS upgrade
 ```sh
-sudo yum -y update
+# sudo yum -y update
 ```
 
-Before installing new kernel version, we need to add new repository (Example: ELRepo repository).
-
-Add ELRepo gpg key to the system.
+Then we need to prepare the OS installing the following components:
 ```sh
-sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+# sudo yum groupinstall "Development Tools"
+```
+```sh
+# sudo yum install kernel-devel epel-release
+```
+```sh
+# sudo yum install dkms
+```
+Now we need to disable __nouveau__ driver by changing the configuration __/etc/default/grub__ file. Add the __nouveau.modeset=0__ and __rd.driver.blacklist=nouveau__ into line starting with GRUB_CMDLINE_LINUX.
+
+Below you can find example of grub configuration file reflecting the previously suggested change: 
+```sh
+sudo nano /etc/default/grub
+```
+```
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+GRUB_DEFAULT=saved
+GRUB_DISABLE_SUBMENU=true
+GRUB_TERMINAL_OUTPUT="console"
+GRUB_CMDLINE_LINUX="crashkernel=auto rhgb quiet rd.driver.blacklist=nouveau nouveau.modeset=0"
+GRUB_DISABLE_RECOVERY="true"
 ```
 
-Now add new ELRepo repository with rpm command.
 ```sh
-sudo rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
+# sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-Next, check all repositories enabled on the system, and make sure ELRepo is on the list.
 ```sh
-yum repolist
-
-Loading mirror speeds from cached hostfile
- * elrepo: mirrors.coreix.net
- * epel: mirrors.coreix.net
-id del repositorio                                                                               nombre del repositorio                                                                                                                estado
-base/7/x86_64                                                                                    CentOS-7 - Base                                                                                                                       10.019
-cuda                                                                                             cuda                                                                                                                                     851
-elrepo                                                                                           ELRepo.org Community Enterprise Linux Repository - el7                                                                                   118
-epel/x86_64                                                                                      Extra Packages for Enterprise Linux 7 - x86_64                                                                                        13.190
-extras/7/x86_64                                                                                  CentOS-7 - Extras                                                                                                                        413
-updates/7/x86_64                                                                                 CentOS-7 - Updates                                                                                                                     1.928
-repolist: 26.519
+# sudo /etc/modprobe.d/blacklist.conf
 ```
 
-In this step, we will install latest kernel version from the ELRepo repository.
-```sh
-sudo yum --enablerepo=elrepo-kernel install kernel-ml
+```
+blacklist nouveau
 ```
 
-Check all available kernel versions with the awk command below.
 ```sh
-sudo awk -F\' '$1=="menuentry " {print i++ " : " $2}' /etc/grub2.cfg
-
-0 : CentOS Linux (5.1.2-1.el7.elrepo.x86_64) 7 (Core)
-1 : CentOS Linux (3.10.0-957.12.2.el7.x86_64) 7 (Core)
-2 : CentOS Linux (3.10.0-957.5.1.el7.x86_64) 7 (Core)
-3 : CentOS Linux (3.10.0-957.el7.x86_64) 7 (Core)
-4 : CentOS Linux (0-rescue-48eae5db334f4be180c62013c3806594) 7 (Core)
-```
-
-We want to use last kernel downloaded as our default, so you can use the following command to make this happen.
-```sh
-sudo grub2-set-default 0
-```
-Now we must to regenerate the grub
-```sh
-sudo grub2-mkconfig -o /boot/efi/EFI/centos/grub.cfg
-```
-
-Then we must to reboot the server to apply the changes
-```sh
-sudo reboot
+# sudo reboot
 ```
 
 #### Install CUDA 
 
-Now [Nvidia](https://www.ovh.com/auth/?action=gotomanager)
+Now we must to find the CUDA Toolkit RUN file for our specific OS version in the __Nvidia__ official page -> [Nvidia](https://developer.nvidia.com/cuda-downloads)
+
 ```sh
-wget http://developer.download.nvidia.com/compute/cuda/repos/rhel7/x86_64/cuda-repo-rhel7-10.1.168-1.x86_64.rpm
+# wget https://developer.nvidia.com/compute/cuda/10.1/Prod/local_installers/cuda_10.1.168_418.67_linux.run
+```
+
+Then we can execute the package installation
+```sh
+# sudo sh cuda_*.run
 ```
 
 
+
+
+When the installation will be finished we can export system path to Nvidia CUDA binary executables. Open the __~/.bashrc__ using your preferred text editor : 
 ```sh
-sudo rpm -i cuda-repo-*.rpm
+# sudo nano ~/.bashrc
 ```
-
-
-```sh
-sudo yum install cuda
-```
-
-
-```sh
-sudo nano /etc/bashrc
-```
-
-
+And add the following two lines
 ```
 export PATH=/usr/local/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 ```
 
-
+Then we do the Re-login the updated __~/.bashrc__ file
 ```sh
 source ~/.bashrc
 ```
 
-
+And finally we can check the driver version and d the service statuas with the following commands
 ```sh
 nvcc --version
 
@@ -285,6 +265,26 @@ nvcc: NVIDIA (R) Cuda compiler driver
 Copyright (c) 2005-2019 NVIDIA Corporation
 Built on Wed_Apr_24_19:10:27_PDT_2019
 Cuda compilation tools, release 10.1, V10.1.168
+```
+```sh
+nvidia-smi
+Fri May 17 15:37:53 2019       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce GTX 1070    Off  | 00000000:00:06.0 Off |                  N/A |
+| 26%   28C    P0    32W / 151W |      0MiB /  8119MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
 ```
 
 
