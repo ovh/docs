@@ -238,10 +238,12 @@ Then we can execute the package installation
 ```sh
 # sudo sh cuda_*.run
 ```
-Acepts the process
+Accepts the process
+
 ![cuda step 1](images/centos-cuda-install-1.png){.thumbnail}
 
-And then sxelect all the components to install 
+And then select all the components to install
+
 ![cuda step 2](images/centos-cuda-install-2.png){.thumbnail}
 
 
