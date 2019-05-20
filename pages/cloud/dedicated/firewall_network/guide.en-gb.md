@@ -119,6 +119,7 @@ On the following screen, click the **Add a Rule** button to add a rule to Armor.
 >
 Enable the ports as needed on the following screen and click the **Confirm** button when you are finished adding your rules. You have now successfully configured Armor.
 >
+>
 ### Conclusion
 >
 Having read this tutorial, you should now be able to configure the Network Firewall as well as Armor to enhance the security of your OVHcloud services.
