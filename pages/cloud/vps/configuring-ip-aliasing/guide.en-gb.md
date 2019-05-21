@@ -102,67 +102,44 @@ Then apply config:
 
 Repeat this procedure for each failover IP address.
 
-### CentOS 6/7
+### CentOS and Fedora (25 and earlier)
 
-#### Step 1: Create a copy of the main network configuration file:
+#### Step 1: Create the source file
 
-```sh
-# cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0:0
-```
-#### Step 2: Modify the new file
-
-Using a text editor we access to the new file:
+First, make a copy of the source file so that you can use it as a template:
 
 ```sh
-sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0:0
+cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0:0
 ```
-Then we must to define the additional IP information
+
+#### Step 2: Edit the source file
+
+You can now modify the eth0:0 file in order to replace the IP:
 
 ```sh
-# Created by cloud-init on instance boot automatically, do not edit.
-#
-BOOTPROTO=none
-DEVICE=eth0:0
-HWADDR=fa:16:3e:86:c0:22
-ONBOOT=yes
-TYPE=Ethernet
-USERCTL=no
-IPADDR=217.182.182.210
-NETMASK=255.255.255.255
+editor /etc/sysconfig/network-scripts/ifcfg-eth0:0
 ```
-Now we must do a network restart:
+
+First, replace the name of the `device`, then replace the existing IP with the failover IP you have received:
+
+```bash
+DEVICE="eth0:0"
+ONBOOT="yes"
+BOOTPROTO="none" # For CentOS use "static"
+IPADDR="IP_FAILOVER"
+NETMASK="255.255.255.255"
+BROADCAST="IP_FAILOVER"
+```
+
+#### Step 3: Restart the interface
+
+You now need to restart your interface:
 
 ```sh
-systemctl restart network
-```
-Finally check the current network configuration:
-
-```sh
-ifconfig
-eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-        inet 51.83.110.190  netmask 255.255.255.255  broadcast 51.83.110.190
-        inet6 fe80::f816:3eff:fe86:c022  prefixlen 64  scopeid 0x20<link>
-        ether fa:16:3e:86:c0:22  txqueuelen 1000  (Ethernet)
-        RX packets 2223  bytes 180217 (175.9 KiB)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 1580  bytes 168953 (164.9 KiB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
-eth0:0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-        inet 217.182.182.210  netmask 255.255.255.255  broadcast 217.182.182.210
-        ether fa:16:3e:86:c0:22  txqueuelen 1000  (Ethernet)
-
-lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
-        inet 127.0.0.1  netmask 255.0.0.0
-        inet6 ::1  prefixlen 128  scopeid 0x10<host>
-        loop  txqueuelen 1000  (Local Loopback)
-        RX packets 32  bytes 2592 (2.5 KiB)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 32  bytes 2592 (2.5 KiB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+ifup eth0:0
 ```
 
-### Windows Server 2016
+### Windows Server 2012/2016
 
 #### Step 1: Check the main IP configuration
 
@@ -204,7 +181,7 @@ Using the console and the ___ipconfig___ command we can check the new network co
 
 ![check current network configuration](images/image8.png){.thumbnail}
 
-### Plesk Onyx 17
+### Plesk Onyx 17.x
 
 #### Step 1: Access to the 'IP Adredsses' management inside the control panel:
 
