@@ -51,9 +51,7 @@ This secondary DNS server works as a backup of your main DNS server.
 ### Verify your domain
 > [!warning]
 >
-> Note: This process is only for domains hosted in OVH DNS servers.
->
-If you use external DNS servers the process is the same. However, you will have to adapt it since the Control Panel will be diffrent.
+> Note: This process is only for domains hosted in OVH DNS servers. If you use external DNS servers the process is the same. However, you will have to adapt it since the Control Panel will be diffrent.
 >
 Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Web`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
 
