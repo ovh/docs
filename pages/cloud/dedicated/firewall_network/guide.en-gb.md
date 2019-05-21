@@ -108,7 +108,7 @@ For example, a packet for TCP port 80 will be captured by rule 2, and the rules 
 >
 By default, Armor is pre-configured with certain rules that OVH has determined work with the most common games. However, for customers with a Game Dedicated Server, we allow you to go a step further and configure rules for ports as well.
 
-In order to configure rules for your ports in Armor, you will first need to log in to the OVHcloud Manager. Next, click the **IP** option on the left-hand sidebar. Click the ellipses (...) button next to the IP address of your Game Server and select the **Configure the GAME firewall** option.
+In order to configure rules for your ports in Armor, you will first need to log into the OVH Manager. Next, click the **IP** option on the left-hand sidebar. Click the ellipses (...) button next to the IP address of your Game Server and select the **Configure the GAME firewall** option.
 >
 > ![Game_wall](images/GAMEWall.jpg){.thumbnail}
 >
@@ -122,7 +122,7 @@ Enable the ports as needed on the following screen and click the **Confirm** but
 >
 ### Conclusion
 >
-Having read this tutorial, you should now be able to configure the Network Firewall as well as Armor to enhance the security of your OVHcloud services.
+Having read this tutorial, you should now be able to configure the Network Firewall as well as Armor to enhance the security of your OVH services.
 >
 ## Go further
 
