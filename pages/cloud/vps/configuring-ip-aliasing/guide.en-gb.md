@@ -145,7 +145,7 @@ ifup eth0:0
 
 First of all we need to recover the information of the main IP:
 
-![check main IP configuration](images/image1.png){.thumbnail}
+![check main IP configuration](images/image1-1.png){.thumbnail}
 
 #### Step 2: Change the IPv4 Properties
 
@@ -155,15 +155,15 @@ Now we must change the IP properties from 'automatically configuration' to a 'st
 
 Now we can define the IP information obtained previously
 
-![change the ip configuration](images/image3.png){.thumbnail}
+![change the ip configuration](images/image3-3.png){.thumbnail}
 
 #### Step 3: Add the IP Fail Over in the 'Advanced configuration' section
 
-![advance configuration section](images/image4.png){.thumbnail}
+![advance configuration section](images/image4-4.png){.thumbnail}
 
 Here we must to define the IP FailOver information and the correspond netmask (normally the netmask is -> 255.255.255.255)
 
-![IP fail over configuration](images/image5.png){.thumbnail}
+![IP fail over configuration](images/image5-5.png){.thumbnail}
 
 #### Step 4: Rebooting the network interface
 
@@ -193,15 +193,15 @@ Access to the ```Tools & Settings```>```IP Addresses``` section:
 
 Click on the ``Add IP Address`` button:
 
-![add ip information](images/pleskip2.png){.thumbnail}
+![add ip information](images/pleskip2-2.png){.thumbnail}
 
 Then put the additional IP information in the form and press ```OK```
 
-![add ip information](images/pleskip3.png){.thumbnail}
+![add ip information](images/pleskip3-3.png){.thumbnail}
 
 #### Step 3: Check the current IP configuration inside Plesk panel:
 
-![current IP configuration](images/pleskip4.png){.thumbnail}
+![current IP configuration](images/pleskip4-4.png){.thumbnail}
  
 ## Go further
 
