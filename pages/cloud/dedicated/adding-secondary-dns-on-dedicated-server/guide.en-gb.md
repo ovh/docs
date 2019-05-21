@@ -24,7 +24,7 @@ If you want to use your [Dedicated Server](https://www.ovh.co.uk/dedicated_serve
 
 ### Configuring the DNS Records on Your Server
 >
-First, you need to install BIND (or any DNS server). You can use this link for [BIND_Installation](https://www.isc.org/downloads/bind/doc/){.external} Installation. BIND stands for Berkeley Internet Name Domain. It is a program you can download and install on your Unix or Linux server to give it the ability to become a DNS server for private (LAN) or public (Internet) networks.
+First, you need to install BIND (or any DNS server). You can use this link for [BIND_Installation](https://www.isc.org/downloads/bind/doc/){.external}. BIND stands for Berkeley Internet Name Domain. It is a program you can download and install on your Unix or Linux server to give it the ability to become a DNS server for private (LAN) or public (Internet) networks.
 >
 To test if you have BIND, use the following command:
 >
