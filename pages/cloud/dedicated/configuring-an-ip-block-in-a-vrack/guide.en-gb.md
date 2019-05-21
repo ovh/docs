@@ -124,7 +124,7 @@ post-up ip rule add to 46.105.135.96/28 table vrack
 
 Now reboot your server to apply the changes.
 
-### CentOS 7
+### CentOS 6/7
 
 #### Step 1: Create and configure the file for the second network interface
 
@@ -148,7 +148,7 @@ ONBOOT=yes
 TYPE=Ethernet
 USERCTL=no
 DEFROUTE=no
-IPADDR=178.33.75.138
+IPADDR=46.105.135.97
 PREFIX=28
 ```
 > [!primary]
@@ -158,34 +158,35 @@ We must to change the ```HWADDR``` field with the current Mac address of the sec
 
 #### Step 2: Add the IP gateway route and the IP rule
 
-With the follwoing command we are going to add the gateway IP on the routing table of the server:
+With follwoing command we are going to add the gateway IP on the routing table of the server:
 ```sh
-sudo ip route add default via 178.33.75.142 dev eth1 table 1000
+sudo ip route add default via 46.105.135.111 dev eth1 table 1000
 ```
 ```sh
 ip route
 default via 51.83.104.1 dev eth0 proto dhcp metric 100 
 51.83.104.1 dev eth0 proto dhcp scope link metric 100 
 51.83.110.190 dev eth0 proto kernel scope link src 51.83.110.190 metric 100 
-178.33.75.128/28 dev eth1 proto kernel scope link src 178.33.75.138 metric 101 
-217.182.182.210 dev eth0 proto kernel scope link src 217.182.182.210 metric 100 
+46.105.135.96/28 dev eth1 proto kernel scope link src 46.105.135.97 metric 101
 ```
-And this other one add the IP info to the network rules of the server:
+Next, we need to create a new IP route for the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external}. We'll be adding a new traffic rule by amending the file, as shown below:
 ```sh
-sudo ip rule add from 178.33.75.138 lookup 1000
+sudo ip rule add from 46.105.135.97 lookup 1000
 ```
 ```sh
 ip rule
 0:	from all lookup local 
-32765:	from 178.33.75.138 lookup 1000 
+32765:	from 46.105.135.97 lookup 1000 
 32766:	from all lookup main 
 32767:	from all lookup default 
 ```
 
-#### Step 3: Restar the network
+#### Step 3: Restar the interface
+
+Now we need to restart your interface:
 
 ```sh
-sudo systemctl restart network
+ifup eth0:0
 ```
 
 ### Windows Server 2016EN
@@ -210,7 +211,7 @@ We must to activate the ```Use the following IP address```:
 
 And we define the IP information:
 
-![ip configuration](images/win-ip-vrack-5.png){.thumbnail}
+![ip configuration](images/win-ip-vrack-5-5.png){.thumbnail}
 
 #### Step 3: Rebooting the network interface
 
@@ -221,12 +222,6 @@ First we do the disabling process
 Then we do the enabling process
 
 ![enabling network](images/win-ip-vrack-7.png){.thumbnail}
-
-#### Step 4: Checking the new network configuration
-
-Using the console and the ___ipconfig___ command we can check the new network configuration
-
-![check current network configuration](images/win-ip-vrack-8.png){.thumbnail}
 
 
 ## Go further
