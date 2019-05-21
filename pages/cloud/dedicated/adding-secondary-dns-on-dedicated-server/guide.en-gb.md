@@ -22,20 +22,7 @@ If you want to use your [Dedicated Server](https://www.ovh.co.uk/dedicated_serve
 
 ## Instructions
 
-### Configuring the DNS Records on Your Server
->
-First, you need to install BIND (or any DNS server). You can use this link for [BIND_Installation](https://www.isc.org/downloads/bind/doc/){.external}. BIND stands for Berkeley Internet Name Domain. It is a program you can download and install on your Unix or Linux server to give it the ability to become a DNS server for private (LAN) or public (Internet) networks.
->
-To test if you have BIND, use the following command:
->
-**$ named -v**
->
-The command will tell you what version of BIND you are running. If nothing shows, BIND is not currently installed. Please consult your distro documentation about how to install BIND. The distro documentation may give you a command to run in your terminal which is an easier way to install BIND. 
->
-BIND, or a different DNS server, is required to authorize OVH Secondary DNS Server as a trusted server. With BIND, your DNS server is ready to be used. You can now utilize OVHcloud Secondary DNS.
->
-
-### Obtain a domain verification code
+### Add Your Domain to OVH Secondary DNS
 
 Click the `Dedicated`{.action} menu, then click `Dedicated Servers`{.action} to expand the list of servers in your account:
 
@@ -48,13 +35,26 @@ Next, select the `Secondary DNS`{.action} tab, and click `Add a domain`{.action}
 Enter your domain in the `Domain` field, then click `Next`{.action}:
 
 ![Secondary DNS](images/dns2-03.png){.thumbnail}
-
-You will now see a message instructing you to create a TXT record for your domain. Make a note of the sub-domain and target in the instructions, then click `Cancel`{.action}:
-
+>
+You will be provided a secret value that you must add as the contents of a new TXT record in your DNS zone file with your registrar. In the "Name" field, write "ownercheck" (depending on your registrar this may need to be ownercheck.yourdomain.com). In the "Value" field, write the secret value you were provided. 
+>
+Prior to clicking the Next button, make sure your newly added record is publicly accessible. You can check this by using * access to the [MX Toolbox](https://mxtoolbox.com/SuperTool.aspx?action#){.external}, a third-party site the performs DNS lookups. Change the option to "TXT Lookup" and put ownercheck.yourdomain.com in the field. Once you are done adding the information at your registrar, click the **Next** button.
 ![Secondary DNS](images/dns2-04a.png){.thumbnail}
-
+>
+You will be prompted to click the **Add** button to validate the ownership. The OVHcloud Manager will validate that you are the owner of the domain and complete the configuration. If you were successful, you will get a popup message such as the one below:
+![Secondary DNS](images/secondarydns.png){.thumbnail}
+>
+Using this configuration, you can take advantage of a free secondary DNS server provided by OVHcloud which will host a slave zone of your domain.
+>
+This secondary DNS server works as a backup of your main DNS server.
+>
 ### Verify your domain
-
+> [!warning]
+>
+> Note: This process is only for domains hosted in OVH DNS servers.
+>
+If you use external DNS servers the process is the same. However, you will have to adapt it since the Control Panel will be diffrent.
+>
 Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Web`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
 
 ![Domain verification](images/domain-verification-01.png){.thumbnail}
@@ -74,6 +74,20 @@ Now fill in the `Sub-domain` and `Value` fields using the information you noted 
 Finally, confirm your entry by clicking the `Confirm`{.action} button:
 
 ![Domain verification](images/domain-verification-05.png){.thumbnail}
+
+
+### Configuring the DNS Records on Your Server
+>
+First, you need to install BIND (or any DNS server). You can use this link for [BIND_Installation](https://www.isc.org/downloads/bind/doc/){.external}. BIND stands for Berkeley Internet Name Domain. It is a program you can download and install on your Unix or Linux server to give it the ability to become a DNS server for private (LAN) or public (Internet) networks.
+>
+To test if you have BIND, use the following command:
+>
+**$ named -v**
+>
+The command will tell you what version of BIND you are running. If nothing shows, BIND is not currently installed. Please consult your distro documentation about how to install BIND. The distro documentation may give you a command to run in your terminal which is an easier way to install BIND. 
+>
+BIND, or a different DNS server, is required to authorize OVH Secondary DNS Server as a trusted server. With BIND, your DNS server is ready to be used. You can now utilize OVHcloud Secondary DNS.
+>
 
 ### Authorizing Zone Transfers
 >
