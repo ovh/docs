@@ -149,11 +149,11 @@ First of all we need to recover the information of the main IP:
 
 #### Step 2: Change the IPv4 Properties
 
-Now we must change the IP properties from 'automatically configuration' to a 'static' configuration manually
+Now we must change the IP properties from 'automatically configuration' to a 'static' configuration manually:
 
 ![change the ip configuration](images/image2.png){.thumbnail}
 
-Now we can define the IP information obtained previously
+Now we can define the IP information obtained previously:
 
 ![change the ip configuration](images/image3-3.png){.thumbnail}
 
@@ -183,7 +183,7 @@ Using the console and the ___ipconfig___ command we can check the new network co
 
 ### Plesk Onyx 17.x
 
-#### Step 1: Access to the 'IP Adredsses' management inside the control panel:
+#### Step 1: Access to the 'IP Addresses' management inside the control panel:
 
 Access to the ```Tools & Settings```>```IP Addresses``` section:
 
@@ -202,6 +202,20 @@ Then put the additional IP information in the form and press ```OK```
 #### Step 3: Check the current IP configuration inside Plesk panel:
 
 ![current IP configuration](images/pleskip4-4.png){.thumbnail}
+
+### Troubleshooting
+
+If you are unable to establish a connection from the public network to your alias IP and suspect a network problem, please reboot the server in Rescue Mode and setup the alias directly on the server.
+
+In order to do that, once you’ve rebooted your server in Rescue Mode, please enter the following command:
+
+```sh
+ifconfig ens3:0 FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP up
+```
+
+Where you will replace FAILOVER_IP by the actual IPFO.
+
+Next, simply ping your IPFO from the outside. If it works, it probably means that there is a configuration error that requires to be fixed. If, on the contrary, the IP is still not working, please open a ticket to the support team via your Control Panel for further investigations.
  
 ## Go further
 
