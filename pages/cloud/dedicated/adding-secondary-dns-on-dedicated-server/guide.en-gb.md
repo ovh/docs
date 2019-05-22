@@ -22,7 +22,7 @@ If you want to use your [Dedicated Server](https://www.ovh.co.uk/dedicated_serve
 
 ## Instructions
 
-### Add Your Domain to OVH Secondary DNS
+### Retrieve the secret value (TXT record)
 
 Click the `Dedicated`{.action} menu, then click `Dedicated Servers`{.action} to expand the list of servers in your account:
 
@@ -36,19 +36,19 @@ Enter your domain in the `Domain` field, then click `Next`{.action}:
 
 ![Secondary DNS](images/dns2-03.png){.thumbnail}
 >
-You will be provided a secret value that you must add as the contents of a new TXT record in your DNS zone file with your registrar. In the "Name" field, write "ownercheck" (depending on your registrar this may need to be ownercheck.yourdomain.com). In the "Value" field, write the secret value you were provided. 
+
+You will now see a message instructing you to create a TXT record for your domain in order to verify the domain's ownership and add it to the list. Make a note of the sub-domain and the secret value in the instructions, then click `Cancel`{.action}:
 >
-Prior to clicking the Next button, make sure your newly added record is publicly accessible. You can check this by using * access to the [MX Toolbox](https://mxtoolbox.com/SuperTool.aspx?action#){.external}, a third-party site the performs DNS lookups. Change the option to "TXT Lookup" and put ownercheck.yourdomain.com in the field. Once you are done adding the information at your registrar, click the **Next** button.
 ![Secondary DNS](images/dns2-04a.png){.thumbnail}
 >
-You will be prompted to click the **Add** button to validate the ownership. The OVHcloud Manager will validate that you are the owner of the domain and complete the configuration. If you were successful, you will get a popup message such as the one below:
-![Secondary DNS](images/secondarydns.png){.thumbnail}
+
+### Verify your domain's ownership (External DNS Servers)
+
+Create a new TXT record in your DNS zone file with your registrar. In the "Name" field, write "ownercheck" (depending on your registrar this may need to be ownercheck.yourdomain.com). In the "Value" field, write the secret value you were provided. 
 >
-Using this configuration, you can take advantage of a free secondary DNS server provided by OVHcloud which will host a slave zone of your domain.
->
-This secondary DNS server works as a backup of your main DNS server.
->
-### Verify your domain
+Prior to clicking the Next button, make sure your newly added record is publicly accessible. You can check this by using * access to the [MX Toolbox](https://mxtoolbox.com/SuperTool.aspx?action#){.external}, a third-party site the performs DNS lookups. Change the option to "TXT Lookup" and put ownercheck.yourdomain.com in the field.
+
+### Verify your domain's ownership (OVH DNS Servers)
 > [!warning]
 >
 > Note: This process is only for domains hosted in OVH DNS servers. If you use external DNS servers the process is the same. However, you will have to adapt it since the Control Panel will be diffrent.
@@ -80,7 +80,9 @@ First, you need to install BIND (or any DNS server). You can use this link for [
 >
 To test if you have BIND, use the following command:
 >
-**$ named -v**
+```sh
+$ named -v
+```
 >
 The command will tell you what version of BIND you are running. If nothing shows, BIND is not currently installed. Please consult your distro documentation about how to install BIND. The distro documentation may give you a command to run in your terminal which is an easier way to install BIND. 
 >
@@ -103,20 +105,24 @@ The default locations of DNS zone files vary by distro. The following are the fi
 >
 `Zone File`
 
-**acl trusted-servers  {
+```sh
+acl trusted-servers  {
     213.251.188.141;   // sdns2.ovh.net
 };
 zone example.com  {
     type master;
     file "example.com";
     allow-transfer { trusted-servers };
-};**
+};
+```
 >
 Once configured, don’t forget to restart `named`:
 >
-**$ sudo systemctl restart named**
+```sh
+$ sudo systemctl restart named
+```
 >
-### Add the secondary DNS to your server
+### Add Your Domain to OVH Secondary DNS
 
 Click the `Dedicated`{.action} menu, and then click `Dedicated Servers`{.action} to expand the list of servers in your account:
 
@@ -134,9 +140,17 @@ Since the TXT record for your domain has already been created, just click `Next`
 
 ![Secondary DNS](images/dns2-04b.png){.thumbnail}
 
-Finally, click `Add`{.action} to confirm your entry:
+You will be prompted to click the `Add`{.action} button to validate the ownership:
 
 ![Secondary DNS](images/dns2-05.png){.thumbnail}
+
+The OVH Manager will validate that you are the owner of the domain and complete the configuration. If you were successful, you will get a popup message such as the one below:
+![Secondary DNS](images/secondarydns.png){.thumbnail}
+>
+Using this configuration, you can take advantage of a free secondary DNS server provided by OVHcloud which will host a slave zone of your domain.
+>
+This secondary DNS server works as a backup of your main DNS server.
+>
 
 ## Go further
 
