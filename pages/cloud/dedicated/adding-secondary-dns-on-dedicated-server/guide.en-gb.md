@@ -86,9 +86,42 @@ $ named -v
 >
 The command will tell you what version of BIND you are running. If nothing shows, BIND is not currently installed. Please consult your distro documentation about how to install BIND. The distro documentation may give you a command to run in your terminal which is an easier way to install BIND. 
 >
-BIND, or a different DNS server, is required to authorize OVH Secondary DNS Server as a trusted server. With BIND, your DNS server is ready to be used. You can now utilize OVHcloud Secondary DNS.
+**If you wish to personalized DNS servers** you have to configure **GLUE records** in your DNS zone. The **GLUE record** is essentially a couple of DNS records (NS and A records) binding the domain mydomain.com to the primary zone of your DNS server ns1.mydomain.com and to the secondary DNS zone in sdns2.ovh.net (OVH’s secondary DNS server).
 >
+You should change this tutorial according to your server information. Example:
+>
+```
+DOMAIN: mydomain.com
+SERVER_HOST: ns0000000.ip-1-2-3.net
+SERVER_IP: 1.1.1.1
+DNS_SERVER: ns1.mydomain.com
+```
+>
+We will then create glue record's (a pair of NS and A records) at your registrar (the specific instructions and procedures vary with each registrar). Here is an example so you can configure it manually in your dedicated server:
 
+```
+; BIND db file for mydomain.com
+
+$TTL 86400
+
+@       IN      SOA     ns1.mydomain.com.      hostmaster.mydomain.com. (
+                        2019052201	; serial number YYMMDDNN
+                        28800           ; Refresh
+                        7200            ; Retry
+                        864000          ; Expire
+                        86400           ; Min TTL
+			)
+
+mydomain.com        NS      ns1.mydomain.com
+mydomain.com        NS      ns1.mydomain.com
+mydomain.com        MX      10 mail.mydomain.com.
+ns1.mydomain.com    A       1.1.1.1.1
+ns2.mydomain.com    A       213.251.188.141
+mail.mydomain.com   A       1.1.1.1.1
+```
+>
+Bear in mind that those 2 DNS servers must be previously configured in a working DNS zone. Therefore, you should have already a working DNS zone in order to configure the ns1.mydomain.com and ns2.mydomain.com to point to each IP (main IP of server + secondary DNS IP). If you don't do this operation, ns1.mydomain.com and ns2.mydomain.com won't be known in the Internet and they won't work.
+>
 ### Authorizing Zone Transfers
 >
 You need to authorize zone transfers in your server towards OVH Secondary DNS Server. Remember to only authorize trusted DNS servers.
@@ -121,7 +154,7 @@ Once configured, don’t forget to restart `named`:
 ```sh
 $ sudo systemctl restart named
 ```
->
+> You can now utilize OVH Secondary DNS.
 ### Add Your Domain to OVH Secondary DNS
 
 Click the `Dedicated`{.action} menu, and then click `Dedicated Servers`{.action} to expand the list of servers in your account:
@@ -147,10 +180,23 @@ You will be prompted to click the `Add`{.action} button to validate the ownershi
 The OVH Manager will validate that you are the owner of the domain and complete the configuration. If you were successful, you will get a popup message such as the one below:
 ![Secondary DNS](images/secondarydns.png){.thumbnail}
 >
-Using this configuration, you can take advantage of a free secondary DNS server provided by OVHcloud which will host a slave zone of your domain.
+Using this configuration, you can take advantage of a free secondary DNS server provided by OVH which will host a slave zone of your domain.
 >
 This secondary DNS server works as a backup of your main DNS server.
 >
+
+### Final remarks
+>
+In this guide we have seen how you should integrate your domains in the secondary DNS of your dedicated server.
+With this procedure you will be able to use the following name servers:
+
+* **Primary DNS server**: ns0000000.ip-1-2-3.net (your dedicated server name or the additional IP you have used)
+* **Secondary DNS server**: sdns2.ovh.net (or the one that appears in your Control Panel).
+>
+If you have created GLUE records as explained before, you will need to use the following name servers:
+
+* **Primary DNS server**: ns1.mydomain.com
+* **Secondary DNS server**: ns2.mydomain.com
 
 ## Go further
 
