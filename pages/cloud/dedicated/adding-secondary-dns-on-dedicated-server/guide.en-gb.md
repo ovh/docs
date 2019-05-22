@@ -75,6 +75,9 @@ Finally, confirm your entry by clicking the `Confirm`{.action} button:
 
 
 ### Configuring the DNS Records on Your Server
+> [!warning]
+>
+> This operation is necessary if you want to change your domains name servers towards a personalized ones. Otherwise, dns checks will fail and you won't be able to use personalized name servers. You can use [Men and Mice Dig](https://www.menandmice.com/support/dig/){.external} to perform an online dig before changing your name servers. This tool will help you understand if an error exists or if some additional configuration is necessary.
 >
 First, you need to install BIND (or any DNS server). You can use this link for [BIND_Installation](https://www.isc.org/downloads/bind/doc/){.external}. BIND stands for Berkeley Internet Name Domain. It is a program you can download and install on your Unix or Linux server to give it the ability to become a DNS server for private (LAN) or public (Internet) networks.
 >
@@ -112,12 +115,12 @@ $TTL 86400
                         86400           ; Min TTL
 			)
 
-mydomain.com        NS      ns1.mydomain.com
-mydomain.com        NS      ns1.mydomain.com
-mydomain.com        MX      10 mail.mydomain.com.
-ns1.mydomain.com    A       1.1.1.1.1
-ns2.mydomain.com    A       213.251.188.141
-mail.mydomain.com   A       1.1.1.1.1
+	            IN		NS      ns1.mydomain.com
+	            IN		NS      ns1.mydomain.com
+	            IN		MX      1 mail.mydomain.com.
+ns1		    IN		A       1.1.1.1.1
+ns2		    IN		A       213.251.188.141
+mail		    IN		A       1.1.1.1.1
 ```
 >
 Bear in mind that those 2 DNS servers must be previously configured in a working DNS zone. Therefore, you should have already a working DNS zone in order to configure the ns1.mydomain.com and ns2.mydomain.com to point to each IP (main IP of server + secondary DNS IP). If you don't do this operation, ns1.mydomain.com and ns2.mydomain.com won't be known in the Internet and they won't work.
