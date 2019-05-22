@@ -146,14 +146,16 @@ And we define the IP settings:
 ```sh
 # Created by cloud-init on instance boot automatically, do not edit.
 #
-BOOTPROTO=static
 DEVICE=eth1
+BOOTPROTO=static
 ONBOOT=yes
-TYPE=Ethernet
 USERCTL=no
-DEFROUTE=no
+IPV6INIT=no
+PEERDNS=yes
+TYPE=Ethernet
+NETMASK=255.255.255.240
 IPADDR=46.105.135.97
-PREFIX=28
+ARP=yes
 ```
 
 ### Create a new IP routing table
@@ -161,23 +163,49 @@ PREFIX=28
 Next, we need to create a new IP route for the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external}. We'll be adding a new traffic rule by amending the file, as shown below:
 
 ```sh
-sudo ip rule add from 46.105.135.97 lookup 1000
+/etc/iproute2/rt_tables
+
+#
+# reserved values
+#
+255	local
+254	main
+253	default
+0	unspec
+#
+# local
+#
+#1	inr.ruhep
+1 vrack
 ```
+
+Next, create the  file needed to apply the new rules:
 ```sh
-ip rule
-0:	from all lookup local 
-32765:	from 46.105.135.97 lookup 1000 
-32766:	from all lookup main 
-32767:	from all lookup default 
+nano /etc/sysconfig/network-scripts/rule-eth1
+```
+
+And paste the following content (please remember to replace our variables with your own values):
+
+```sh
+ip rule add from 46.105.135.96/28 table vrack
+ip rule add to 46.105.135.96/28 table vrack
 ```
 
 ### Amend the network configuration file
 
 Finally, we need to amend the network configuration file to account for the new traffic rule and route the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} traffic through the network gateway address of **46.105.135.110**.
 
+We can achieve it by editing the following file in order to add persistent and static routes:
+
 ```sh
-ip route add 46.105.135.96/28 dev eth1 table vrack
-ip route add default via 46.105.135.110 dev eth1 table vrack
+nano /etc/sysconfig/network-scripts/route-eth1
+```
+
+Paste the following content (please remember to replace our variables with your own values):
+
+```sh
+46.105.135.96/28 dev eth1 table vrack
+default via 46.105.135.110 dev eth1 table vrack
 ```
 
 Now reboot your server to apply the changes or alternatively enable simply the new network interface:
