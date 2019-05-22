@@ -2,7 +2,7 @@
 title: 'Installer Etherpad sur son hébergement Cloud Web'
 slug: installer-etherpad-cloud-web
 excerpt: 'Installez l''éditeur de texte Etherpad sur votre hébergement Cloud Web et rendez-le accessible avec votre nom de domaine'
-section: Tutoriel
+section: Tutoriels
 order: 2
 ---
 
