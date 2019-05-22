@@ -181,6 +181,43 @@ Using the console and the ___ipconfig___ command we can check the new network co
 
 ![check current network configuration](images/image8-8.png){.thumbnail}
 
+
+### cPanel
+
+#### Step 1: Create the source file
+
+First, make a copy of the source file, so that you can revert at any time:
+
+```sh
+cp /etc/ips /etc/ips.bak
+```
+
+#### Step 2: Edit the source file
+
+You then need to edit the /etc/ips file:
+
+```sh
+editor /etc/ips
+```
+Then add the failover IP to the file:
+
+```bash
+IP_FAILOVER:255.255.255.255:IP_FAILOVER
+```
+Next, add the IP in `/etc/ipaddrpool``:
+
+```bash
+IP_FAILOVER
+```
+
+#### Step 3: Restart the interface
+
+You now need to restart your interface:
+
+```sh
+/etc/init.d/ipaliases restart
+```
+
 ### Plesk Onyx 17.x
 
 #### Step 1: Access to the 'IP Addresses' management inside the control panel:
