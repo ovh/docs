@@ -122,28 +122,32 @@ post-up ip rule add from 46.105.135.96/28 table vrack
 post-up ip rule add to 46.105.135.96/28 table vrack
 ```
 
-Now reboot your server to apply the changes.
+Now reboot your server to apply the changes or alternatively enable simply the new network interface:
+
+```sh
+ip link set eth1 up
+```
 
 ### CentOS 6/7
 
-#### Step 1: Create and configure the file for the second network interface
+#### Create the file for the secondary network interface
 
-First we can copy the main IP configuration for the new network interface file
+First we can copy and use the configuration being used for the primary network interface and adjust it as per our needs:
 
 ```sh
 sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth1
 ```
-Then we access to the new file
+Then we access to the new file:
+
 ```sh
 sudo nano /etc/sysconfig/network-scripts/ifcfg-eth1
 ```
-And we define the IP settings
+And we define the IP settings:
 ```sh
 # Created by cloud-init on instance boot automatically, do not edit.
 #
 BOOTPROTO=static
 DEVICE=eth1
-HWADDR=fa:16:3e:6c:98:57
 ONBOOT=yes
 TYPE=Ethernet
 USERCTL=no
@@ -151,25 +155,11 @@ DEFROUTE=no
 IPADDR=46.105.135.97
 PREFIX=28
 ```
-> [!primary]
->
-We must to change the ```HWADDR``` field with the current Mac address of the second network physical interface of our server.
->
 
-#### Step 2: Add the IP gateway route and the IP rule
+### Create a new IP routing table
 
-With follwoing command we are going to add the gateway IP on the routing table of the server:
-```sh
-sudo ip route add default via 46.105.135.111 dev eth1 table 1000
-```
-```sh
-ip route
-default via 51.83.104.1 dev eth0 proto dhcp metric 100 
-51.83.104.1 dev eth0 proto dhcp scope link metric 100 
-51.83.110.190 dev eth0 proto kernel scope link src 51.83.110.190 metric 100 
-46.105.135.96/28 dev eth1 proto kernel scope link src 46.105.135.97 metric 101
-```
 Next, we need to create a new IP route for the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external}. We'll be adding a new traffic rule by amending the file, as shown below:
+
 ```sh
 sudo ip rule add from 46.105.135.97 lookup 1000
 ```
@@ -181,23 +171,30 @@ ip rule
 32767:	from all lookup default 
 ```
 
-#### Step 3: Restar the interface
+### Amend the network configuration file
 
-Now we need to restart your interface:
+Finally, we need to amend the network configuration file to account for the new traffic rule and route the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} traffic through the network gateway address of **46.105.135.110**.
 
 ```sh
-ifup eth0:0
+ip route add 46.105.135.96/28 dev eth1 table vrack
+ip route add default via 46.105.135.110 dev eth1 table vrack
 ```
 
-### Windows Server 2016EN
+Now reboot your server to apply the changes or alternatively enable simply the new network interface:
 
-#### Step 1: Check and configure the second network interface
+```sh
+ip link set eth1 up
+```
 
-First we must to access to the new network interface information
+### Windows Server 2012/2016
+
+#### Step 1: Check and configure the secondary network interface
+
+First we must access to the new network interface information:
 
 ![check the second network interface](images/win-ip-vrack-1.png){.thumbnail}
 
-Then we must to check the properties
+Then we must check the properties:
 
 ![properties of the second network interface](images/win-ip-vrack-2.png){.thumbnail}
 
@@ -205,11 +202,11 @@ Then we must to check the properties
 
 #### Step 2: IP Configuration
 
-We must to activate the ```Use the following IP address```:
+We must select the ```Use the following IP address``` option:
 
 ![ip configuration](images/win-ip-vrack-4.png){.thumbnail}
 
-And we define the IP information:
+And we can finally define the IP information:
 
 ![ip configuration](images/win-ip-vrack-5-5.png){.thumbnail}
 
@@ -222,6 +219,19 @@ First we do the disabling process
 Then we do the enabling process
 
 ![enabling network](images/win-ip-vrack-7.png){.thumbnail}
+
+
+### Troubleshooting
+
+If you are unable to establish a connection from your VM or server to the private network, please send us a ticket from your control panel with the following :
+
+* IP source and IP destination
+* Ifconfig -a or ipconfig /all from both servers or VMs (setup network configuration interface)
+* ping in both ways
+* arp -a
+* Routing table
+
+Please, include the results from above into your ticket.
 
 
 ## Go further
