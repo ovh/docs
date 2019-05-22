@@ -179,7 +179,7 @@ Then we do the enabling process
 
 Using the console and the ___ipconfig___ command we can check the new network configuration
 
-![check current network configuration](images/image8.png){.thumbnail}
+![check current network configuration](images/image8-8.png){.thumbnail}
 
 ### Plesk Onyx 17.x
 
