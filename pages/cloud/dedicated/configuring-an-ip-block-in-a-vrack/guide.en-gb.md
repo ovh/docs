@@ -204,8 +204,8 @@ nano /etc/sysconfig/network-scripts/route-eth1
 Paste the following content (please remember to replace our variables with your own values):
 
 ```sh
-46.105.135.96/28 dev eth1 table vrack
-default via 46.105.135.110 dev eth1 table vrack
+ip rule add from 46.105.135.96/28 table vrack
+ip rule add to 46.105.135.96/28 table vrack
 ```
 
 Now reboot your server to apply the changes or alternatively enable simply the new network interface:
