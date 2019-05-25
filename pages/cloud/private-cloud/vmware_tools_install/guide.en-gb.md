@@ -1,52 +1,62 @@
 ---
-title: Install VMware tools
+title: 'Install VMware tools'
 excerpt: ''
 slug: install_vmware_tools
-section: Resource management
+section: 'Resource management'
 ---
 
+The procedure for installing VMware Tools varies depending on the operating system of the virtual machine. For information about the OS-specific procedure, see the VMware [documentation for VMware Tools](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1014294){.external-link}.
 
-## 
-You must use the vSphere client, either by accessing it through your own local client, or by using the pre-configured RDP connection we provided when activating your PCC.
+Linux (Recent Versions)
+-------------------------
+
+Versions
+--------
+
+This installation method is valid for the following versions of GNU/Linux:
+
+- Fedora 19 and above
+- Debian 7.x and higher
+- openSUSE 11.x and higher
+- Ubuntu 12.04 LTS and higher
+- Red Hat Enterprise Linux 7.0 and higher
+- CentOS 7.0 and higher
+- Oracle Linux 7.0 and higher
+- SUSE Linux Enterprise 11 SP4 and higher
+
+Most recent Linux distributions offer the installation of VMware Tools via their package management systems (under the name *Open VM Tools*). This allows VMware Tools to be maintained in the same way as other components of the VM operating system. If the distribution you are using offers this, you will be able to find the *Open VM Tools* under the package name: *open-vm-tools*.
 
 
-##
 
-LINUX
+Linux (Old Versions)
+--------------------------
 
-Mount the VMware tools disk from your VM console by choosing the "Install/Upgrade VWware tools" option:
+Mount the VMware tools disk from the Vsphere client web, right-click the VM, then select "Guest OS" by validating the "Install VMware Tools" option:
 
-![](images/img_142.jpg){.thumbnail}
+![](images/tools.png){.thumbnail}
 
-Then you will have to mount the activated volume with the following command:
+Then mount the volume enabled by the following command:
 
-
+```sh
+>     # mount /dev/cdrom /mnt
 ```
-# mount /dev/cdrom /mnt
+
+Then unpack the VMwareTools archive (located in /tmp):
+
+```sh
+>     $ cd /tmp$ tar xvf /mnt/VMwareTools*.tar.gz $ cd /tmp/vmware-tools-distrib $
+>         ./vmware-install.pl default
 ```
 
+A small tip if you want to default and not prompt: add "default" to the installation line.
 
-Uncompress the Tools archive. We do it here in /home:
+Once the installation is complete, the tools disk will automatically be unregistered from the system.
 
+Windows
+-------
 
-```
-#cd /home (for example)
-#tar xvf /mnt/VmareTools-8.3.2-257589.tar.gz
-#cd /home/VMWare-tools-distrib
-#./VMWare-install.pl default
-```
+Once the volume is mounted using the "Install/Upgrade VMware Tools" option, find the disk in the "workstation" of your VM. Double-click it to start the installation of the Tools:
 
+![](images/windows.jpg){.thumbnail}
 
-Once the installation is completed, the tool disk will be automatically unmounted from the system. #SECTION Install VMware Tools in Linux.
-
-
-## 
-
-WINDOWS
-
-Once you have mounted the volume by validating "Install/Upgrade VMware tools" option, you will find the disk in the desktop of your VM. Double click on it in order to run the tool installation:
-
-![](images/img_143.jpg){.thumbnail}
-The installation wizard will then ask you to accept the licences and to choose the type of installation (we recommend you the full installation). 
-Once the installation is completed, you will have to restart the VM to update your modifications.
-
+The installation wizard will then ask you to accept the licenses and select the type of installation (we recommend the "Full Installation"). Once the installation is complete, it will suggest that you restart the machine to propogate the changes. The CD drive will be automatically dismounted at the end of the installation.
