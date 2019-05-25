@@ -2,121 +2,126 @@
 title: 'Gérer le renouvellement de mes services'
 slug: renouvellement-automatique-ovh
 excerpt: 'Apprenez à gérer le renouvellement de vos services OVH dans votre espace client'
-section: 'Premiers pas'
+section: Facturation
 order: 1
 ---
 
-**Dernière mise à jour le 2019/01/16**
+**Dernière mise à jour le 15/05/2019**
 
 ## Objectif
 
-Lorsque vous disposez de services chez OVH, vous pouvez gérer leur renouvellement depuis votre espace client. 
+Si vous disposez de services OVH actifs, vous pouvez administrer leur renouvellement via votre espace client.
 
-**Apprenez à gérer le renouvellement de vos services OVH dans votre espace client.**
+**Découvrez comment gérer le renouvellement automatique de vos services via l'espace client OVH.**
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVH disponibles dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, rubrique `Mes services`{.action}, puis `Mes contrats`{.action}.
+> Selon votre lieu de résidence, la législation locale, ainsi que les solutions concernées, certains détails de ce guide peuvent varier ou ne pas s'appliquer à votre situation. Si vous avez des doutes, veuillez consulter vos contrats OVH. Ceux-ci sont disponibles depuis votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, en accédant à `Mes services`{.action} puis à `Mes contrats`{.action}.
 >
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Avoir accès à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - Posséder des services OVH actifs.
 
 ## En pratique
 
-La gestion du renouvellement de vos services peut s'effectuer par le biais de plusieurs manipulations, dont certaines peuvent être réalisées conjointement. Poursuivez la lecture de cette documentation selon la ou les manipulations que vous souhaitez réaliser. 
+Il existe différentes façons de gérer le renouvellement de vos services et, dans certains cas, vous pouvez choisir parmi plusieurs méthodes. Nous vous recommandons de lire les guides suivants, ainsi que de vous concentrer sur les opérations que vous souhaitez effectuer. 
 
-- [Visualiser l'état du renouvellement de vos services](https://docs.ovh.com/ca/fr/billing/renouvellement-automatique-ovh/#visualiser-letat-du-renouvellement-de-vos-services){.external} : permet de vérifier si vos services bénéficient du renouvellement automatique ainsi que la date à laquelle ces derniers seront renouvelés ou expireront.
+- [« Visualiser l’état du renouvellement de vos services. »](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#visualiser-letat-du-renouvellement-de-vos-services){.external} Ce guide vous aide à vérifier si vos services sont renouvelés automatiquement. Il vous permet également d'obtenir leur date de renouvellement ou d'expiration.
 
-- [Gérer le renouvellement de vos services](https://docs.ovh.com/ca/fr/billing/renouvellement-automatique-ovh/#gerer-le-renouvellement-de-vos-services){.external} : permet d'activer ou de désactiver le renouvellement automatique, de modifier la fréquence de paiement d'un service et d'anticiper sa reconduction avant la date de renouvellement.
+- [« Gérer le renouvellement de vos services. »](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#gerer-le-renouvellement-de-vos-services){.external} Ce guide vous aide à activer ou désactiver le renouvellement automatique, à modifier la fréquence de paiement d'un service, ainsi qu'à payer les renouvellements avant leur échéance.
 
-- [Gérer vos moyens de paiement](https://docs.ovh.com/ca/fr/billing/renouvellement-automatique-ovh/#gerer-vos-moyens-de-paiement_1){.external} : permet de vous assurer qu'un moyen de paiement est bien actif pour vos futurs renouvellements, mais aussi d'en ajouter ou d'en supprimer si nécessaire.
+- [« Gérer vos moyens de paiement. »](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#gerer-vos-moyens-de-paiement_1){.external} Ce guide vous permet de vous assurer que vous disposez d'un moyen de paiement enregistré pour les futurs renouvellements. Vous pouvez également ajouter et supprimer des moyens de paiement, si nécessaire.
 
-### Visualiser l'état du renouvellement de vos services
+### Afficher les statuts de renouvellement de vos services
 
-Connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le nom rattaché à votre identifiant client dans la barre de menu en haut à droite, puis cliquez sur `Mes services`{.action}.
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur le nom associé à votre identifiant client dans la barre de menus située dans le coin supérieur droit, puis choisissez `Mes services`{.action}.
 
 ![manageautomaticrenewal](images/manage-automatic-renewal-step1.png){.thumbnail}
 
-La page qui apparaît affiche le tableau de gestion de vos solutions OVH. Depuis ce dernier, vous pouvez retrouver pour chaque service, sa date de renouvellement ou d'expiration, ainsi que sa fréquence de renouvellement.
+La page qui s'affiche contient un tableau de gestion de vos solutions OVH. Vous pouvez y voir la date d’expiration de chaque service et sa fréquence de renouvellement. Pour ce faire, accédez aux colonnes « Date de renouvellement » et « Fréquence de paiement ».
 
-Pour cela, reportez-vous aux colonnes « Date de renouvellement » et « Fréquence de paiement » du tableau. Utilisez les options de filtres pour affiner ou trier l'affichage de vos services.
+Vous pouvez aussi utiliser les options de filtrage pour trier l'affichage de vos services.
 
 ![manageautomaticrenewal](images/manage-automatic-renewal-step2.png){.thumbnail}
 
 ### Gérer le renouvellement de vos services
 
-Connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le nom rattaché à votre identifiant client dans la barre de menu en haut à droite, puis cliquez sur `Mes services`{.action}.
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur le nom associé à votre identifiant client dans la barre de menus située dans le coin supérieur droit, puis choisissez `Mes services`{.action}.
 
 ![manageautomaticrenewal](images/manage-automatic-renewal-step1.png){.thumbnail}
 
-La page qui apparaît affiche le tableau de gestion de vos solutions OVH. Dès lors, selon le service concerné, vous avez la possibilité de :
+La page qui s'affiche contient un tableau de gestion de vos solutions OVH. Le cas échéant, vous pouvez :
 
 |Actions possibles|Description|
 |---|---|
-|Modifier la fréquence de paiement|Permet de modifier la fréquence de paiement d'un service. Pour certains d'entre eux, il est possible que cette modification ne soit pas réalisable ou que certaines fréquences ne soient pas proposées.|
-|Payer le service|Permet d'anticiper la reconduction d'un service avant la date de renouvellement automatique prévue.|
-|Activer/Désactiver le paiement automatique|Permet d'activer ou de désactiver le renouvellement automatique d'un service.|
-
-Poursuivez la lecture de cette documentation selon l'action que vous souhaitez réaliser.
+|Modifier la fréquence de paiement|Modifiez la fréquence de paiement d'un service. Pour certaines solutions, cette action ou certaines fréquences peuvent ne pas être disponibles.|
+|Payer le service|Réglez une solution avant sa date de renouvellement automatique.|
+|Activer/désactiver le renouvellement automatique|Activez ou désactivez le paiement automatique d'un service.|
 
 ![manageautomaticrenewal](images/manage-automatic-renewal-step3.png){.thumbnail}
 
 #### Modifier la fréquence de paiement
 
-Cette action modifie la fréquence de paiement du renouvellement automatique d'un service. Il existe quatre fréquences : mensuelle, trimestrielle, semestrielle et annuelle. Pour certains services OVH, il est possible que cette modification ne soit pas réalisable ou que toutes les fréquences ne vous soient pas proposées.
+Cette action change la fréquence de paiement d'un service avec renouvellement automatique. Il en existe quatre : tous les mois, tous les trois mois, tous les six mois et tous les ans. Pour certaines solutions, cette action ou certaines fréquences peuvent ne pas être disponibles.
 
-Après avoir cliqué sur le bouton représentant trois points à droite du service concerné, cliquez sur `Modifier la fréquence de paiement`{.action}.
+Cliquez sur les trois points à droite du service concerné, puis sur `Modifier la fréquence de paiement`{.action}.
 
 ![manageautomaticrenewal](images/manage-automatic-renewal-step4.png){.thumbnail} 
 
-Sur la fenêtre qui apparaît, sélectionnez dans le menu déroulant en dessous de « Type » la nouvelle fréquence de paiement, cliquez sur `Suivant`{.action}, puis sur `Valider`{.action}. La nouvelle fréquence de paiement sera alors appliquée lors du prochain renouvellement automatique de votre service.
+Dans la fenêtre qui s'ouvre, sélectionnez une nouvelle fréquence de paiement dans le menu déroulant. Puis cliquez sur `Suivant`{.action} et `Confirmer`{.action}. La nouvelle fréquence de paiement sera alors appliquée à la prochaine date de renouvellement automatique de votre service.
 
 ![manageautomaticrenewal](images/manage-automatic-renewal-step5.png){.thumbnail} 
 
-#### Anticiper la reconduction d'un service
+#### Payer le service
 
-Cette action permet d'anticiper la reconduction d'un service avant sa date prévue de renouvellement automatique. Pour certains services OVH, il est possible que cette manipulation ne soit pas réalisable.
+Vous avez la possibilité de payer un service avant sa date de renouvellement automatique. Pour certaines solutions, cette action peut ne pas être disponible.
 
-Après avoir cliqué sur le bouton représentant trois points à droite du service concerné, cliquez sur `Payer le service`{.action}. Si vous souhaitez réaliser cette action sur plusieurs services, sélectionnez-les en les cochant à gauche du tableau, puis cliquez sur le bouton `Payer le service`{.action} situé au-dessus du tableau.
+Cliquez sur les trois points à droite du service concerné, puis sur `Payer pour le service`{.action}. Si vous souhaitez effectuer cette opération pour plusieurs solutions, sélectionnez-les en cochant leurs cases respectives dans la partie gauche du tableau, puis cliquez sur `Payer pour le service`{.action} sous le tableau.
 
 ![manageautomaticrenewal](images/manage-automatic-renewal-step6.png){.thumbnail} 
 
-Vous serez alors redirigé vers l'interface de reconduction anticipée. Suivez alors les étapes qui s'affichent jusqu'à finaliser la reconduction anticipée de votre ou vos services. 
+Vous serez ensuite redirigé vers l'interface de renouvellement. Si vous n'êtes pas redirigé automatiquement, vous pouvez également utiliser ce lien : <https://www.ovh.com/fr/cgi-bin/order/renew.cgi>.
 
-#### Désactiver ou activer le renouvellement automatique
+Suivez alors les étapes indiquées jusqu'à la fin du processus de renouvellement.
 
-Vous avez la possibilité de désactiver ou d'activer le renouvellement automatique d'un service. Pour cela, après avoir cliqué sur le bouton représentant trois points à droite du service concerné, cliquez sur `Désactiver le paiement automatique`{.action} ou sur `Activer le paiement automatique`{.action}. 
+#### Activer ou désactiver le renouvellement automatique
 
-Lisez alors les informations qui s'affichent, puis cliquez sur `Confirmer`{.action} pour valider la modification.
+Vous pouvez activer ou désactiver le renouvellement automatique de vos services. Pour ce faire, cliquez sur les trois points situés à droite de la solution concernée, puis sur `Activer le paiement automatique`{.action} ou ` Désactiver le paiement automatique`{.action}. 
 
-Prenez en considération que la désactivation du renouvellement automatique n'équivaut pas à une résiliation de service. Ce dernier restera actif jusqu'à sa date d'expiration, vous laissant ainsi le choix du moment où le renouveler avant sa date d'échéance. Si vous souhaitez cependant indiquer qu'un service devra être résilié définitivement à sa date d'expiration, reportez-vous à notre documentation « [Gérer vos services depuis l’interface « Gérer mes services »](https://docs.ovh.com/fr/billing/gerer-ses-services-ovh/#resilier-un-service-a-sa-date-dexpiration){.external} » pour en apprendre plus.
+Lisez ensuite les informations qui s'affichent et cliquez sur `Confirmer`{.action} pour valider votre action.
+
+Notez que la désactivation du renouvellement automatique ne signifie pas l'annulation de votre service : celui-ci restera actif jusqu'à sa date d'expiration. Si vous souhaitez supprimer définitivement une solution à sa date d'expiration, consultez notre guide [« Gérer vos services depuis l’interface “Gérer mes services” »](https://docs.ovh.com/fr/billing/gerer-ses-services-ovh/#gerer-vos-services-depuis-linterface-gerer-mes-services){.external} pour en savoir plus.
 
 ![manageautomaticrenewal](images/manage-automatic-renewal-step7.png){.thumbnail} 
 
 ### Gérer vos moyens de paiement
 
-Connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le nom rattaché à votre identifiant client dans la barre de menu en haut à droite, puis cliquez sur `Mes moyens de paiement`{.action}.
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur le nom associé à votre identifiant client dans la barre de menus située dans le coin supérieur droit, puis choisissez `Moyens de paiement`{.action}.
 
 ![manageautomaticrenewal](images/manage-automatic-renewal-step8.png){.thumbnail}
 
-La page qui apparaît affiche le tableau de vos moyens de paiement OVH. Depuis ce dernier, vous pouvez gérer les moyens de paiement que vous avez déjà ajoutés et en ajouter de nouveaux.
+La page qui s'affiche contient un tableau répertoriant les moyens de paiement de vos solutions. Vous pouvez les gérer et en ajouter de nouveaux.
 
-Vous retrouvez ainsi dans le tableau pour chaque moyen de paiement :
-
-- son type (suivant ce que vous avez décidé d'ajouter) ;
-- une description vous permettant de mieux l'identifier parmi d'autres moyens de paiement ;
-- s'il est actuellement défini ou non comme étant le moyen de paiement par défaut ;
-- son état (celui-ci peut varier selon le type de moyen de paiement et son état d'activation).
+Pour chaque moyen de paiement, vous verrez également :
+- son type (selon celui que vous avez décidé d'ajouter) ;
+- une description pour vous aider à le distinguer des autres ;
+- s'il est actuellement enregistré comme moyen de paiement par défaut ;
+- son statut (variable selon le type de moyen de paiement et son activation).
 
 ![manageautomaticrenewal](images/manage-automatic-renewal-step9.png){.thumbnail}
 
-Pour ajouter un nouveau moyen de paiement, cliquez sur le bouton `Ajouter un moyen de paiement`{.action}, puis sélectionnez le type souhaité. Suivez alors les étapes qui s'affichent jusqu'à la validation de votre moyen de paiement.
+Pour ajouter un nouveau moyen de paiement, cliquez sur `Ajouter un moyen de paiement`{.action} puis sélectionnez-le. Suivez ensuite les étapes indiquées et confirmez votre choix.
 
 ![manageautomaticrenewal](images/manage-automatic-renewal-step10.png){.thumbnail}
 
+Pour supprimer un moyen de paiement via l'espace client, vous devez disposer d'au moins un autre moyen de paiement valide.
+
+Pour supprimer tous vos moyens de paiement, utilisez l'API et procédez comme suit :
+- commencez par obtenir l'ID de la liste de paiement : <https://api.ovh.com/console/#/me/payment/method#GET> ;
+- supprimez ensuite le moyen de paiement en utilisant l'ID que vous avez obtenue à l'étape précédente : <https://api.ovh.com/console/#/me/payment/method/%7BpaymentMethodId%7D#DELETE>.
+
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
