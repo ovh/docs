@@ -3,7 +3,7 @@ title: Accéder à l’interface de gestion NSX
 slug: acceder-a-l-interface-de-gestion-nsx
 excerpt: Découvrez l'interface de NSX
 section: NSX
-order: 1
+order: 01
 ---
 
 **Dernière mise à jour le 28/11/2017**
@@ -37,16 +37,12 @@ VMWare NSX n'est disponible que depuis le client web vSphere, vous ne pourrez pa
 > Pour des raisons de sécurité /api/1.0/ ne sont pas prises en charge.
 > 
 
-
 Depuis la page d’accueil du client web, cliquez sur la catégorie `Networking & Security`{.action} dans le menu de gauche ou au niveau de l'icône centrale :
 
-![Networking and Security](images/content-docs-cloud-private-cloud-nsx_connect_interface-images-interface_nsx_2.JPG){.thumbnail}
+![Networking and Security](images/content-docs-cloud-private-cloud-nsx_connect_interface-images-interface_nsx_2.png){.thumbnail}
 
 Vous avez alors accès à l'accueil NSX avec tous les menus associés.
-
 
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
-
-
