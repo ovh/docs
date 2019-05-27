@@ -1,9 +1,10 @@
 ---
-title: 'Activer et utiliser Veeam Backup Managed'
+title: Activer et utiliser Veeam Backup Managed
 slug: veeam-backup-as-a-service
-excerpt: 'Découvrez comment activer et utiliser l''option Veeam Backup Managed'
+excerpt: Découvrez comment activer et utiliser l'option Veeam Backup Managed
 legacy_guide_number: '2883711'
-section: 'Services et options OVH'
+section: Services et options OVH
+order: 06
 ---
 
 **Dernière mise à jour le 22/08/2018**
@@ -119,7 +120,16 @@ Confirmez ensuite la désactivation en cliquant sur `OK`{.action}.
 
 ![Confirmation de désactivation](images/disablebackup_03.png){.thumbnail}
 
-Pour effectuer ces actions, vous pouvez sélectionner le datacenter dans votre inventaire, cliquer sur l'onglet `Configure`{.action}, puis choisir `OVH Backup Management`{.action}. Dans cette page, vous avez accès à la liste de vos travaux de sauvegarde, avec le nombre de backups et le dernier statut du travail.
+Pour effectuer ces actions, vous pouvez également sélectionner le datacenter dans votre inventaire, cliquer sur l'onglet `Configure`{.action}, puis choisir `OVH Backup Management`{.action}. Dans cette page, vous avez accès à la liste de vos travaux de sauvegarde, avec le nombre de backups et le dernier statut du travail.
+
+![Onglet backup management](images/backupManagementTab.png){.thumbnail}
+
+> [!primary]
+>
+> Dans cette même interface, vous pourrez désactiver le job de sauvegarde d'une VM supprimée.
+>
+> Il est également possible de désactiver le job de sauvegarde temporairement et de le réactiver par la suite.
+>
 
 ## Aller plus loin
 
