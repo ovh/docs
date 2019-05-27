@@ -55,6 +55,18 @@ Après cela, il faut déclarer la plage d'adresses IP dans le vRack et l'étique
 ip addr add 192.168.0.0/16 dev eth1.10
 ```
 
+Il est possible que l'interface soit coupée:
+```sh
+# ip  addr show dev eth1
+7: eno2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+[...]
+```
+
+Pour l'allumer:
+```sh
+ip link set dev eth1 up
+```
+
 Pour finir, il reste à modifier la configuration de l'interface réseau afin qu'elle prenne en compte le tag du VLAN. Pour cette étape, ouvrez le fichier de configuration de l'interface réseau pour l'éditer et le modifier comme indiqué ci-dessous :
 
 ```sh
