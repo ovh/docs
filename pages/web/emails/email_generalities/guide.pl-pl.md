@@ -174,6 +174,7 @@ Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 > Jeśli masz trudności z konfiguracją konta e-mail na Twoim urządzeniu, [skorzystaj z naszych przewodników dotyczących konfiguracji](../) lub skontaktuj się z producentem aplikacji, której używasz, aby uzyskać informację o sposobie postępowania.
 >
 
+
 ## Sprawdź również
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
