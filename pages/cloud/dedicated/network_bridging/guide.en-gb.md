@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how configure your virtual machines for acces
 section: 'Network Management'
 ---
 
-**Last updated 10th May 2019**
+**Last updated 27th May 2019**
 
 ## Objective
 
@@ -23,7 +23,12 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 
 ## Instructions
 
-For this example, we will use the following values in our code samples, which should be replaced with your own values:
+The basic steps are always the same - independent of the Systems used:
+* creating a virtual MAC address for a fail-over IP
+* setting the MAC of the VM to that new virtual MAC address
+* configuring the **IP address**, **netmask**, **gateway** and **route to the gateway** inside the VM
+
+For these examples, we will use the following values in our code samples, which should be replaced with your own values:
 
 * SERVER_IP = The main IP address of your server
 * FAILOVER_IP = The address of your failover IP
