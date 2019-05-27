@@ -2,10 +2,11 @@
 title: Bonnes pratiques de sécurité sur le client vSphere Web
 slug: securiser-acces-vsphere-web
 excerpt: Découvrez comment sécuriser l'accès à votre client vSphere Web
-section: Premiers pas
+section: Informations Meltdown et Spectre
+order: 01
 ---
 
-**Dernière mise à jour le 16/02/2018**
+**Dernière mise à jour le 25/01/2019**
 
 ## Objectif
 
@@ -51,7 +52,7 @@ Lors de la création d'un utilisateur, un mot de passe est demandé.
 > - être différent des mots de passe précédents.
 >
 
-Vous pourrez ensuite gérer les droits de chaque utilisateur en cliquant sur la roue crantée à droite de chaque identifiant :
+Vous pourrez ensuite gérer les droits de chaque utilisateur en cliquant sur le bouton `...`{.action} à droite de chaque identifiant :
 
 ![Édition des paramètres des utilisateurs](images/users_edit.png){.thumbnail}
 
@@ -59,7 +60,11 @@ Vous pourrez ensuite gérer les droits de chaque utilisateur en cliquant sur la 
 
 En fin d'utilisation, il est conseillé de fermer la session de votre utilisateur. Pour limiter le temps de connexion, il est possible d'ajouter une durée d'expiration de session.
 
-Celle-ci est paramétrable dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Une fois sur votre espace Private Cloud, choisissez `Sécurité`{.action}. Cliquez ensuite sur le bouton `Changer le délai d'expiration`{.action} situé sur la droite. La fenêtre suivante vous permettra de choisir le temps (en minutes) avant qu'une session n'expire.
+Celle-ci est paramétrable dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Une fois sur votre espace Private Cloud, choisissez `Sécurité`{.action}. Cliquez ensuite sur le bouton `Changer le délai d'expiration`{.action} situé sur la droite.
+
+![Expiration de la session](images/security-expiration.png){.thumbnail}
+
+Renseignez ensuite le nombre de minutes avant qu'une session expire.
 
 ![Expiration de la session](images/expiration.png){.thumbnail}
 
