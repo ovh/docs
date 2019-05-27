@@ -278,6 +278,15 @@ Enter your IPv6 configuration (`IPv6 address` and `Default Gateway`) and click `
 
 ![Properties](images/ipv6_configuration.png){.thumbnail}
 
+### Troubleshooting
+
+If after testing your connection you are still experiencing problems, please open a support request and provide:
+- the operating system name and version you are using on your server
+- the name and directory of the network configuration file 
+- the content of that file 
+
+Our support team will happily review your configurations.
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
