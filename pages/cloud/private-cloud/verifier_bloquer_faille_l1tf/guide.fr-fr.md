@@ -1,6 +1,6 @@
 ---
 title: Vérifier et bloquer la faille L1TF
-slug: verifier-bloquer-faille-l1tf
+slug: verifier-bloquer-faille-l1tf-
 excerpt: Découvrez comment bloquer la vulnérabilité L1TF
 section: Informations Meltdown et Spectre
 order: 03
