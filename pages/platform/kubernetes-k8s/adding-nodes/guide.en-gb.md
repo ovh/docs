@@ -1,8 +1,8 @@
 ---
-title: Adding nodes to a OVH Managed Kubernetes cluster
-excerpt: ''
+title: 'Adding nodes to a OVH Managed Kubernetes cluster'
 slug: adding-nodes
-section: User guides
+excerpt: ''
+section: 'User guides'
 ---
 
 **Last updated 25th February, 2019.**
@@ -10,6 +10,7 @@ section: User guides
 ## Objective
 
 OVH Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will cover the first step after ordering a cluster: adding nodes.
+
 
 
 ## Requirements
