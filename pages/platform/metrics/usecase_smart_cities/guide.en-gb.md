@@ -30,5 +30,5 @@ Metrics platform has key features to help you store and analyze the data from th
 
 - Computation is done server-side, your devices can get only the needed result of a query.
 - Storing data from thousands of sensors is only a few euros.
-- In the Warp10 protocol, both space (location) and time are considered first class citizens. Complex searches like “find all the sensors active during last Monday in the perimeter delimited by this geo-fencing polygon” can be easily done
+- In the Warp 10™ protocol, both space (location) and time are considered first class citizens. Complex searches like “find all the sensors active during last Monday in the perimeter delimited by this geo-fencing polygon” can be easily done
 - Security is handled by tokens, so you can hardcode the token into every devices.

@@ -1,15 +1,15 @@
 ---
-title: Push logs with Python using Djehouty
+title: Python 2.x - Push logs with Djehouty
 slug: djehouty
-order: 3
-section: Use cases
+order: 10
+section: Logging libraries
 ---
 
-**Last updated 5th March, 2018**
+**Last updated 10th April, 2019**
 
 ## Objective
 
-This guide will show you how to push your logs to Logs Data Platform using Python.
+This guide will show you how to push your logs to Logs Data Platform using Python 2.x.
 
 [Djehouty](https://github.com/ovh/djehouty){.external} is intended to be a set of logging formatters and handlers to easily send log entries into Logs Data Platform.
 
@@ -27,9 +27,9 @@ This package includes:
 
 To complete this guide you will need:
 
-- Python, we recommend to install [pip](https://pip.pypa.io/en/stable/installing/){.external}.
-- [Activate the Logs Data Platform account and create an account.](https://docs.ovh.com/fr/logs-data-platform/quick-start/){.external}
-- [To create at least one Stream and get its token.](https://docs.ovh.com/fr/logs-data-platform/tokens-logs-data-platform/){.external}
+- Python 2, we recommend to install [pip](https://pip.pypa.io/en/stable/installing/){.external}.
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- [To create at least one Stream and get its token.](../quick_start/guide.fr-fr.md){.ref}
 
 ## Instructions
 
@@ -41,10 +41,10 @@ You can use [pip](https://pip.pypa.io/en/stable/){.external} to install Djehouty
 
 
 ```shell-session
-$ sh-4.2# pip install --upgrade pip
+$ pip install --upgrade pip
 [...]
 Successfully installed pip-<version> 
-$ sh-4.2# pip install --upgrade djehouty
+$ pip install --upgrade djehouty
 [...]
 Successfully installed djehouty-<version> setuptools-18.3.1
 ```
@@ -54,7 +54,7 @@ Successfully installed djehouty-<version> setuptools-18.3.1
 Djehouty is available on the [OVH github repository](https://github.com/ovh/djehouty){.external} and can be installed manually:
 
 ```shell-session
-$ sh-4.2$ git clone git@github.com:ovh/djehouty.git
+$ git clone git@github.com:ovh/djehouty.git
 Cloning into 'djehouty'...
 remote: Counting objects: 58, done.
 remote: Compressing objects: 100% (53/53), done.
@@ -63,8 +63,8 @@ Receiving objects: 100% (58/58), 9.62 KiB | 0 bytes/s, done.
 Resolving deltas: 100% (26/26), done.
 Checking connectivity... done.
  
-$ sh-4.2$ cd djehouty
-$ sh-4.2$ python setup.py install
+$ cd djehouty
+$ python setup.py install
 [...]
 Using /usr/lib/python2.7/site-packages
 Finished processing dependencies for djehouty==<version>
@@ -74,37 +74,30 @@ Finished processing dependencies for djehouty==<version>
 
 The following examples assume that you already have a working stream. Moreover, you will have to change the address and the ports of the endpoint for the one you have been assigned to. To retrieve the address and the ports of your endpoint, head to the **About** page in the Manager. To send log messages, just use the handler of the desired format with the following parameters ('*' means required):
 
-|Parameter|Gelf / LTSV|
-|---|---|
-|host|your endpoint `<your_cluster>.logs.ovh.com` (Same url than your Graylog dashboard)|
-|port|Refer to the PaaS Logs ports list below|
-|level|logging.DEBUG or highter|
-|use_tls|`True` or `False` (depends on the chosen port)|
-|static_fields *|`{"X-OVH-TOKEN": "xxxx"}`|
-|null_character|`True` (LTSV: Not Supported)|
-
-||Syslog RFC5424|Gelf|LTSV line|LTSV nul|Cap’n’Proto|
-|---|---|---|---|---|---|
-|TCP/TLS|6514|12202|12201|12200|12204|
-|TCP|514|2202|2201|2200|2204|
-|UDP|514|2202|Not Supported|Not Supported|Not Supported|
-
+|Parameter|Gelf|LTSV|
+|---|---|---|
+|host *|your assigned endpoint. Ex : `gra1.logs.ovh.com`||
+|port *|Refer to the PaaS Logs ports list||
+|level|logging.DEBUG or higher||
+|use_tls|True or False (depends on the chosen port)||
+|static_fields *|`{"X-OVH-TOKEN": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"}`||
+|null_character|True|Not Supported|
 
 The complete list of parameters supported by Djehouty can be found on [github](https://github.com/ovh/djehouty){.external}.
 
 
 #### Example&#58; Use case with GELF over TCP/TLS
 
-```python
+```python hl_lines="7 9"
 import logging
 from djehouty.libgelf.handlers import GELFTCPSocketHandler
  
 gelf_logger = logging.getLogger('djehouty-gelf')
 gelf_logger.setLevel(logging.DEBUG)
 gelf_logger.addHandler(GELFTCPSocketHandler(
-    host            = "<your_cluster>.logs.ovh.com",
+    host            = "gra1.logs.ovh.com",
     port            = 12202,
-    static_fields   = {"X-OVH-TOKEN": "XXXXX-XXXXXX"},
+    static_fields   = {"X-OVH-TOKEN": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"},
     use_tls         = True,
     level           = logging.DEBUG,
     null_character  = True,
@@ -113,18 +106,18 @@ gelf_logger.addHandler(GELFTCPSocketHandler(
 gelf_logger.info('test')
 ```
 
-#### Example: use case with LTSV over TCP/TLS
+#### Example&#58; Use case with LTSV over TCP/TLS
 
-```python
+```python hl_lines="7 9"
 import logging
 from djehouty.libltsv.handlers import LTSVTCPSocketHandler
 
 ltsv_logger = logging.getLogger('djehouty-ltsv')
 ltsv_logger.setLevel(logging.DEBUG)
 ltsv_logger.addHandler(LTSVTCPSocketHandler(
-    host            = "<your_cluster>.logs.ovh.com",
+    host            = "gra1.logs.ovh.com",
     port            = 12201,
-    static_fields   = {"X-OVH-TOKEN": "XXXXX-XXXXXX"},
+    static_fields   = {"X-OVH-TOKEN": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"},
     use_tls         = True,
     level           = logging.DEBUG
 ))
@@ -149,16 +142,13 @@ mylogger.info('test')
 You can add specific log meta for each entry using the extra parameter, the following example uses the LTSV logger defined above:
 
 ```python
-ltsv_logger.info("Hello '%s'", 'Cedric', extra={"lang": 'en'})
-ltsv_logger.info("Bonjour '%s'", 'Cedric', extra={"lang": 'fr'})
+ltsv_logger.info("Hello '%s'", 'John', extra={"lang": 'en'})
+ltsv_logger.info("Bonjour '%s'", 'John', extra={"lang": 'fr'})
 ```
-
----
 
 ## Go further
 
-- Getting Started: [Quick Start](https://docs.ovh.com/fr/logs-data-platform/quick-start/){.external}
-- Documentation: [Guides](https://docs.ovh.com/fr/logs-data-platform/){.external}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms-lab){.external}
-- Mailing List: [paas.logs-subscribe@ml.ovh.net](mailto:paas.logs-subscribe@ml.ovh.net){.external}
+- Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
+- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}

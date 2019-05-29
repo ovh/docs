@@ -37,9 +37,9 @@ RTM va recueillir les informations sur le disque, le RAID et le matériel de vot
 
 ##### 1. Beamium
 
-Beamium collecte les métriques des terminaux HTTP, telles que _http://127.0.0.1/metrics_, et prend en charge les formats Prometheus et Warp10/Sensision. 
+Beamium collecte les métriques des terminaux HTTP, telles que _http://127.0.0.1/metrics_, et prend en charge les formats Prometheus et Warp 10™/Sensision. 
 
-Une fois implémenté, Beamium peut filtrer et transférer les données vers une plateforme Warp10 Time Series. Lors de l’acquisition de métriques, il utilise DFO (Disk Fail Over) pour éviter d'éventuelles pertes liées à des problèmes réseau ou à un service indisponible.
+Une fois implémenté, Beamium peut filtrer et transférer les données vers une plateforme Warp 10™ Time Series. Lors de l’acquisition de métriques, il utilise DFO (Disk Fail Over) pour éviter d'éventuelles pertes liées à des problèmes réseau ou à un service indisponible.
 
 Beamium est écrit en Rust pour garantir efficacité, faible encombrement et performance.
 
@@ -53,7 +53,7 @@ scrapers:
     format: sensision
     period: 60000
 
-# Warp10 platform to send data
+# Warp 10™ platform to send data
 sinks:
   metrics:
     url: https://rtm.ovh.net/

@@ -41,7 +41,7 @@ Metrics Cloud is a a **fully-managed**, **scalable** cloud service for time seri
 
 - **Open Source ecosystem** for reversibility and ease of integration
 
-- **Smart alerting** with scheduled WarpScripts
+- **Smart alerting** with scheduled WarpScript™ code
 
 - **First class security** with [Macaroons](https://static.googleusercontent.com/media/research.google.com/fr//pubs/archive/41892.pdf){.external} like tokens
 

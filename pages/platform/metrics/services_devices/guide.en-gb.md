@@ -82,7 +82,7 @@ Then complete it with your specific account informations :
 - a WRITE Token you will have generated through the [Metrics Manager](https://www.ovh.com/manager/cloud/index.html#/dbaas/metrics/){.external} (Cloud > Metrics > your project) or OVH API (/metrics)
 
 
-![Step3 - Complete with your Warp10 endpoint and WRITE token](images/OVH-PilotThings-Step3.png){.thumbnail}
+![Step3 - Complete with your Warp 10™ endpoint and WRITE token](images/OVH-PilotThings-Step3.png){.thumbnail}
 
 Save your backend, and you're good to go!
 

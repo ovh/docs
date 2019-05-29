@@ -11,6 +11,10 @@ section: 'Advanced use'
 
 [OVH Dedicated Servers](https://www.ovh.co.uk/dedicated_servers/){.external} are easily able to boot into a Linux operating system using an updated kernel with the netboot startup system. However, it's best practice to update the kernel on the local machine.
 
+## What is a Kernel?
+
+A Kernel is a low-level system that's responsible for interfacing the Operating System and Applications with the physical hardware of the server. The kernel also allows used for sharing processes. 
+
 **This guide will show you how to update the kernel for distributions that use an OVH core.**
 
 > [!warning]
@@ -32,6 +36,11 @@ section: 'Advanced use'
 - a backup of your data (see the official documentation for your distribution)
 
 ## Instructions
+
+> [!warning]
+>
+> Please note that Ubuntu installation templates do not come with OVH kernels any more due to copyright issues. You must add the OVH repositories to the /etc/apt/sources.list file.
+>
 
 ### Identify the kernel
 

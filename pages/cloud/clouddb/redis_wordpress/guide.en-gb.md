@@ -1,20 +1,18 @@
 ---
-title: Speed up WordPress with Redis
+title: 'Speed up WordPress with Redis'
 slug: speed-up-wordpress-with-redis
-keywords: wordpress, redis, dbaas, cms
-excerpt: Advanced use of a NoSQL cache
-section: Knowledge base
+keywords: 'wordpress, redis, dbaas, cms'
+excerpt: 'Advanced use of a NoSQL cache'
+section: 'Knowledge base'
 ---
 
 Do you have a website or blog powered by WordPress? Discover how to speed up page loading time using Redis! In this tutorial, we will set up a NoSQL Redis database and use it to cache WordPress objects. Not only will visitors have a better user experience, but WordPress administrators will also benefit from reduced page loading time.
-
 
 
 > [!alert]
 >
 > This guide can only be used with the Beta SaaS Database Lab Runabove
 > 
-
 
 
 > [!warning]
@@ -26,14 +24,13 @@ Do you have a website or blog powered by WordPress? Discover how to speed up pag
 
 
 
-> [!primary]
->
-> This tutorial requires:
-> - a compatible Web hosting with the PHP-redis module installed or the possibility of installing it (currently this is not compatible with OVH shared webhosting plans): VPS, dedicated server, Public Cloud... with OVH or another provider.
-> - a WordPress administrator account to install a plugin.
-> - a WordPress version 4.x or above
-> - and of course, a Redis database, that you can activate on our lab!
->
+
+This tutorial requires:
+- a compatible Web hosting with the PHP-redis module installed or the possibility of installing it (currently this is not compatible with OVH shared webhosting plans): VPS, dedicated server, Public Cloud... with OVH or another provider.
+- a WordPress administrator account to install a plugin.
+- a WordPress version 4.x or above
+- and of course, a Redis database, that you can activate on our lab!
+
 
 ## Wordpress + Redis = ??
 Redis is an open source tool that makes it possible to maintain NoSQL databases in RAM and to cache objects. The aim is to increase speed. It is increasingly being used and has been adopted by Twitter, Github, Flickr, Pinterest, as well as many others. We are not going to go into more detail about what Redis is, more information can be found in the [official and comprehensive documentation](https://redis.io/documentation){.external} .

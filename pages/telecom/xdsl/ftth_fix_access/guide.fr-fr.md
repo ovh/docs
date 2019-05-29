@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment dépanner et remettre en service votre accès inter
 section: 'Diagnostic et dépannage'
 ---
 
-**Dernière mise à jour le 27/11/2018**
+**Dernière mise à jour le 18/03/2019**
 
 ## Objectif
 
@@ -158,7 +158,7 @@ Si le voyant « INTERNET » de votre box OVH est éteint et le voyant « WAN �
 
 2. **Configurer manuellement les identifiants PPP** : réalisez la configuration ci-dessous dans l'éventualité où celle automatique de votre box OVH serait défaillante. 
 
-Pour cela, connectez-vous depuis votre navigateur internet à l'interface web de votre box OVH en accédant à l'adresse `192.168.1.1`. Vous devrez renseigner un mot de passe pour y accéder. Celui-ci devrait se trouver à l'arrière de votre box OVH. Si vous ne retrouvez pas ce dernier, utilisez selon le modèle de votre box : « 1234 » (modèle B50D) ou « acceskey » (modèle B10D).
+Pour cela, connectez-vous depuis votre navigateur internet à l'interface web de votre box OVH en accédant à l'adresse `192.168.1.1`. Vous devrez renseigner un mot de passe pour y accéder. Celui-ci devrait se trouver à l'arrière de votre box OVH. Pour le modèle B50D, celui-ci se trouve à côté de « Admin Password » et le mot de passe par défaut est « 1234 ». Pour le modèle B10D, celui-ci se trouve à côté de « Login Password ».
 
 Positionnez-vous ensuite sur le menu `Network Setting`{.action}, puis cliquez sur `Broadband`{.action}.
 

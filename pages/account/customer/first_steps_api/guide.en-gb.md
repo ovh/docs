@@ -107,7 +107,7 @@ $ curl -H 'X-Ovh-Application:7kbG7Bk7S9Nt7ZSV'                   \
 -H 'X-Ovh-Timestamp:1366560945'                                  \
 -H 'X-Ovh-Signature:$1$d3705e8afb27a0d2970a322b96550abfc67bb798' \
 -H 'X-Ovh-Consumer:MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1'             \
-https://eu.api.ovh.com/1.0/domains/
+https://eu.api.ovh.com/1.0/domain
 ["ovh.com","ovh.net"]
 ```
 

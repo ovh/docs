@@ -38,9 +38,9 @@ On dedicated server, RTM collect disk, RAID information and hardware information
 
 1. ##### Beamium
 
-Beamium collect metrics from HTTP endpoints like _http://127.0.0.1/metrics_ and supports Prometheus and Warp10/Sensision format. 
+Beamium collect metrics from HTTP endpoints like _http://127.0.0.1/metrics_ and supports Prometheus and Warp 10™/Sensision format. 
 
-Once scraped, Beamium can filter and forward data to a Warp10 Time Series platform. While acquiring metrics, Beamium uses DFO (Disk Fail Over) to prevent metrics loss due to eventual network issues or unavailable service.
+Once scraped, Beamium can filter and forward data to a Warp 10™ Time Series platform. While acquiring metrics, Beamium uses DFO (Disk Fail Over) to prevent metrics loss due to eventual network issues or unavailable service.
 
 Beamium is written in Rust to ensure efficiency, a very low footprint and deterministic performances.
 
@@ -54,7 +54,7 @@ scrapers:
     format: sensision
     period: 60000
 
-# Warp10 platform to send data
+# Warp 10™ platform to send data
 sinks:
   metrics:
     url: https://rtm.ovh.net/

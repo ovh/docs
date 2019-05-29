@@ -252,7 +252,7 @@ Then we add a query on the graph to query both metrics. You just have to put `sy
 
 ### Delete data
 
-To delete all your example data you can use the simple Warp 10 delete command  used below
+To delete all your example data you can use the simple Warp 10™ delete command  used below
 
 ```sh
 curl -H 'X-Warp10-Token: WRITE_TOKEN' \

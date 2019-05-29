@@ -55,7 +55,7 @@ Of course. As we said before, you can send some additional fields as long as you
 |*_num, *_double, *_float|double|floating value in double in java representation : double-precision 64-bit IEEE 754 floating point|
 |*_int, *_long|long|64 bit signed long type,which has a minimum value of -263 and a maximum value of 263-1|
 |*_date|date|a ISO 8601 date with optional Time or Milliseconds since UNIX epoch in Integer.|
-|*_bool|boolean|Expected values: "true" or  "false".WARNING : GELF does not support boolean types you will have to send "true" or "false" in String|
+|*_bool|boolean|Expected values: "true" or  "false". WARNING : GELF does not support boolean types you will have to send "true" or "false" in String|
 |*_geolocation|String|A pair of two float number separeted by a comma ','. This pair must represent Latitude and Longitude|
 |Everything else|String|Anything else will be considered a string|
 
@@ -91,9 +91,7 @@ Happy Logging
 
 ## Go further
 
-- Join our community of users on <https://community.ovh.com/en/>
-- Getting Started: [Quick Start](https://docs.ovh.com/gb/en/logs-data-platform/quick-start/){.external}
-- Documentation: [Guides](https://docs.ovh.com/gb/en/logs-data-platform/){.external}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms-lab){.external}
-- Mailing List: [paas.logs-subscribe@ml.ovh.net](mailto:paas.logs-subscribe@ml.ovh.net){.external}
+- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
+- Documentation: [Guides](../product.en-gb.md){.ref}
+- Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/){.external}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}

@@ -1,5 +1,5 @@
 ---
-title: Installing Istio on OVH Managed Kubernetes
+title: 'Installing Istio on OVH Managed Kubernetes'
 slug: installing-istio
 excerpt: 'Find out how to install Istio on OVH Managed Kubernetes'
 section: Tutorials
@@ -39,7 +39,7 @@ In this tutorial we are going to install Istio on a freshly created OVH Managed 
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
 
 ## Downloading Istio
@@ -86,6 +86,7 @@ It's a nice by default setting, because you are getting a good overview of Istio
 Use `kubectl` to apply the manifest to your cluster:
 
 ```
+kubectl apply -f install/kubernetes/helm/istio/templates/crds.yaml
 kubectl apply -f install/kubernetes/istio-demo-auth.yaml
 ```
 
@@ -255,36 +256,36 @@ Now that the Bookinfo services are up and running, you need to make the applicat
 
 1. Define the ingress gateway for the application:
 
-    ```
-    kubectl -n istio-apps apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
-    ```
+
+        kubectl -n istio-apps apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
+
 
 1. Confirm the gateway has been created:
 
-    ```
-    kubectl -n istio-apps get gateway
-    ```
+    
+        kubectl -n istio-apps get gateway
+    
 
 1. Set the `INGRESS_HOST` and `INGRESS_PORT` variables for accessing the gateway. As the OVH Managed Kubernetes beta doesn't support yet an external load balancer, you need to access the gateway using the service’s node port.
 
     Set the ingress ports:
 
-    ```
-    export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].nodePort}')
-    export SECURE_INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="https")].nodePort}')
-    ```
+    
+        export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].nodePort}')
+        export SECURE_INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="https")].nodePort}')
+    
 
-    For the `INGRESS_HOST` use the nodes URL found in the OVH Cloud Manager (see the  [OVH Managed Kubernetes Quickstart](https://labs.ovh.com/kubernetes-k8s/documentation/tutorial/quickstart)).
+    For the `INGRESS_HOST` use the nodes URL found in the OVH Cloud Manager (see [deploying a Hello World application](https://docs.ovh.com/gb/en/kubernetes/deploying-hello-world/)).
 
-    ```
-    export INGRESS_HOST=<NODES_URL>
-    ```
+    
+        export INGRESS_HOST=<NODES_URL>
+    
 
 1. Set `GATEWAY_URL`:
 
-    ```
-    export GATEWAY_URL=$INGRESS_HOST:$INGRESS_PORT
-    ```
+    
+        export GATEWAY_URL=$INGRESS_HOST:$INGRESS_PORT
+    
 
 
 In the case of my example cluster:
@@ -325,7 +326,6 @@ You sholuld get an [HTTP status code 200](https://en.wikipedia.org/wiki/List_of_
 </code></pre>
 
 You can also point your browser to `http://<YOUR_GATEWAY_URL>/productpage` (in my example to http://clusterId.nodes.c1.gra.k8s.ovh.net:31380/productpage) to view the Bookinfo web page. If you refresh the page several times, you should see different versions of reviews shown in productpage, presented in a round robin style (red stars, black stars, no stars), since we haven’t yet used Istio to control the version routing.
-
 
 
 ![Bookinfo](images/installing-istio-02.jpg){.thumbnail}

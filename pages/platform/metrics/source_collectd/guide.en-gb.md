@@ -27,7 +27,7 @@ Those statistics can be used to monitor systems, find performance bottlenecks (i
 
 To ensure using the last release, please refer to the official installation guide located on [CollectD website](https://collectd.org/download.shtml){.external} CollectD.
 
-### Install Warp10 plugin
+### Install Warp 10™ plugin
 
 In order to use CollectD with Metrics, you need to add an additional plugin. You can start by creating a __scripts__ directory
 
@@ -35,7 +35,7 @@ In order to use CollectD with Metrics, you need to add an additional plugin. You
 mkdir -p /etc/collectd/scripts
 ```
 
-Then, add the Warp10 plugin into the availables scripts
+Then, add the Warp 10™ plugin into the availables scripts
 
 ```sh
 curl -s 'https://raw.githubusercontent.com/ovh/collectd-write-warp10/master/write_warp10.py' > '/etc/collectd/scripts/write_warp10.py'
@@ -43,7 +43,7 @@ curl -s 'https://raw.githubusercontent.com/ovh/collectd-write-warp10/master/writ
 
 ### Configure CollectD
 
-Collectd works with plugins, we need to load the Python one to load our Warp10 plugin.
+Collectd works with plugins, we need to load the Python one to load our Warp 10™ plugin.
 
 This plugin is developped and maintained by OVH teams on their own infrastructures. It's goal is to push by an efficient way all CollectD metrics into the Metrics platform
 

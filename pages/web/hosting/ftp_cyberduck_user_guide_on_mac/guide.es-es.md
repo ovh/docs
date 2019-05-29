@@ -13,7 +13,8 @@ Cyberduck es una aplicación disponible para Mac que permite publicar un sitio w
 
 Para descargarla, visite la web oficial de la aplicación: [cyberduck.io](https://cyberduck.io/)
 
-![](images/img_2344.jpg){.thumbnail}
+![hosting](images/2344.png){.thumbnail}
+
 Cyberduck es una aplicación para usuarios de Mac. Si utiliza Windows en su máquina, recomendamos usar FileZilla: 
 
 - []({legacy}1380)
@@ -32,7 +33,8 @@ La primera vez que ejecute la aplicación, podrá ver la pantalla de la imagen.
 
 
 
-![](images/img_2343.jpg){.thumbnail}
+![hosting](images/2343.png){.thumbnail}
+
 Personalizar la apariencia de Cyberduck
 
 Es posible personalizar la apariencia de Cyberduck para hacerlo más eficaz y adaptarlo a nuestras necesidades.
@@ -41,7 +43,7 @@ Para ello, haga clic en «Visualización» y seleccione «Personalizar barra de 
 
 En la nueva pantalla, arrastre los elementos que desee a la barra de herramientas. Para aceptar los cambios, haga clic en «Aceptar»
 
-![](images/img_2345.jpg){.thumbnail}
+![hosting](images/2345.png){.thumbnail}
 
 
 ## Conexión FTP
@@ -61,7 +63,8 @@ Para conectarse a su espacio de alojamiento por FTP, siga las indicaciones que s
 4. Haga clic en «Conectar».
 
 
-![](images/img_2361.jpg){.thumbnail}
+![hosting](images/2361.png){.thumbnail}
+
 Si no marca la casilla «Guardar contraseña», deberá introducir la contraseña cada vez que se conecte a su espacio de alojamiento.
 
 Si no recuerda sus claves FTP, consulte esta guía para [recuperar sus claves FTP](http://www.ovh.es/g1374.publicar-sitio-web-en-internet#subir_los_archivos_por_ftp_claves_ftp).
@@ -70,7 +73,8 @@ Nuestro servidor no es compatible con FTP-SSL, por lo que debe marcar la casilla
 
 Si desea conectarse de forma segura, conéctese por  [SFTP](#utilizar_cyberduck_conexion_sftp). Tenga en cuenta que solo puede utilizar esta conexión si dispone de acceso SSH en su plan de hosting.
 
-![](images/img_2349.jpg){.thumbnail}
+![hosting](images/2349.png){.thumbnail}
+
 Si no sabe si su alojamiento incluye acceso SSH, consulte nuestros [planes de web hosting](http://www.ovh.es/hosting/). 
 
 Si sigue sin estar seguro, elija «Continuar». El servidor rechazará la conexión si su alojamiento no tiene acceso SSH.
@@ -100,14 +104,16 @@ Para poder conectarse a su espacio de alojamiento, siga indicaciones que se ofre
 4. Haga clic en «Conectar».
 
 
-![](images/img_2362.jpg){.thumbnail}
+![hosting](images/2362.png){.thumbnail}
+
 Si no marca la casilla «Guardar contraseña», deberá introducir la contraseña cada vez que se conecte a su espacio de alojamiento.
 
 Si no recuerda sus claves FTP, consulte esta guía para [recuperar sus claves FTP](http://www.ovh.es/g1374.publicar-sitio-web-en-internet#subir_los_archivos_por_ftp_claves_ftp).
 La primera vez que se conecte a su espacio de alojamiento, aparecerá un mensaje informando de que el servidor no es reconocido por el sistema.
 Marque la casilla «Siempre» y haga clic en «Permitir». De esa forma, no tendrá que volver a confirmar el servidor de conexión (OVH).
 
-![](images/img_2363.jpg){.thumbnail}
+![hosting](images/2363.png){.thumbnail}
+
 Le recomendamos que guarde los datos de conexión en los [favoritos](#utilizar_cyberduck_favoritos).
 
 
@@ -121,7 +127,8 @@ Compruebe que los datos de conexión que ha introducido son correctos.
 
 Si ha creado un favorito, también deberá modificarlo. Para ello, selecciónelo y haga clic en el icono con forma de lápiz.
 
-![](images/img_2352.jpg){.thumbnail}
+![hosting](images/2352.png){.thumbnail}
+
 Si no recuerda sus claves FTP, consulte esta guía para [recuperar sus claves FTP](http://www.ovh.es/g1374.publicar-sitio-web-en-internet#subir_los_archivos_por_ftp_claves_ftp).
 Falló la conexión
 
@@ -135,7 +142,8 @@ Si ha creado un favorito, también deberá modificarlo. Para ello, selecciónelo
 
 También puede deberse a que un cortafuegos o red local bloquean el puerto 21 o 22, que son los utilizados para conectarse al espacio FTP. En ese caso, compruebe su configuración personal.
 
-![](images/img_2353.jpg){.thumbnail}
+![hosting](images/2353.png){.thumbnail}
+
 Le recordamos que el servidor de conexión a su espacio de alojamiento es ftp.su-dominio.tld (sustituyendo su-dominio.tld por su nombre de dominio y extensión) o ftp.clusterXXX.ovh.net (sustituyendo XXX por su número de cluster).
 
 
@@ -155,7 +163,8 @@ Para ello:
 
 
 
-![](images/img_2346.jpg){.thumbnail}
+![hosting](images/2346.png){.thumbnail}
+
 Se abrirá una nueva ventana con los datos de conexión. La próxima vez que inicie Cyberduck, podrá hacer doble clic en el favorito para conectarse más rápidamente.
 
 
@@ -169,14 +178,16 @@ Para realizar transferir los archivos por FTP, puede simplemente seleccionarlos 
 
 Los archivos se pondrán automáticamente en cola para subir al servidor y se abrirá una ventana mostrando el progreso de la transferencia.
 
-![](images/img_2354.jpg){.thumbnail}
+![hosting](images/2354.png){.thumbnail}
+
 Mediante el menú «Subir»
 
 Haga clic en «Archivo» > «Subir». Se abrirá una ventana desde la que podrá seleccionar los archivos de su equipo que desee subir.
 
 Haga clic en «Escoger». A continuación, sus archivos se pondrán automáticamente en cola para subir al servidor y se abrirá una ventana mostrando el progreso de la transferencia.
 
-![](images/img_2355.jpg){.thumbnail}
+![hosting](images/2355.png){.thumbnail}
+
 Ver las transferencias
 
 En la ventana «Transferencias», puede ver el historial de las transferencias a su espacio de alojamiento:
@@ -195,7 +206,7 @@ Esta ventana se abre de dos formas distintas:
 
 
 
-![](images/img_2356.jpg){.thumbnail}
+![hosting](images/2356.png){.thumbnail}
 
 
 ## Posibles acciones sobre un archivo o carpeta
@@ -212,7 +223,7 @@ Seleccionando un archivo o carpeta contenido en su espacio de alojamiento (en la
 
 La lista anterior no es exhaustiva; existen otras acciones posibles. Para más información, visite la web oficial de Cyberduck.
 
-![](images/img_2357.jpg){.thumbnail}
+![hosting](images/2357.png){.thumbnail}
 
 
 ## Permisos de los archivos y carpetas
@@ -236,7 +247,7 @@ En la nueva ventana, haga clic en «Permisos» y realice los cambios deseados:
 
 
 
-![](images/img_2358.jpg){.thumbnail}
+![hosting](images/2358.png){.thumbnail}
 
 
 ## Reapertura del sitio web
@@ -246,14 +257,15 @@ Por lo general, esta operación se realiza después de que OVH cierre por seguri
 
 Para utilizar un comando, haga clic en el menú «Ir» y seleccione «Enviar orden...».
 
-![](images/img_2359.jpg){.thumbnail}
+![hosting](images/2359.png){.thumbnail}
+
 En la nueva ventana, introduzca el comando CHMOD 705 / y haga clic en «Enviar».
 
 En el recuadro de abajo debería aparecer como confirmación el mensaje «200 Permissions changed on /».
 
 Para comprobar que el sitio web se haya abierto, simplemente pruebe a acceder a él desde un navegador de internet.
 
-![](images/img_2360.jpg){.thumbnail}
+![hosting](images/2360.png){.thumbnail}
 
 - El comando anterior no funciona en SFTP. Para realizarlo, utilice una conexión [conexión FTP](#utilizar_cyberduck_conexion_ftp).
 
@@ -280,5 +292,5 @@ A continuación:
 
 
 
-![](images/img_2364.jpg){.thumbnail}
+![hosting](images/2364.png){.thumbnail}
 

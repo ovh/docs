@@ -7,11 +7,11 @@ legacy_guide_number: g1962
 ---
 
 ## What is SSH and how do you use it?
-SSH is available on professional and performance hosting plans. (On old product offers SHH is available starting from the plan range).
+SSH is available on professional and performance hosting plans.
 
 PLEASE NOTE: On old offers, access is only possible with the primary FTP account. This means that additional FTP users will not have SSH access. 
 
-SSH lets you log on to your server and work with your files (as in FTP).
+SSH allows you log on to your server and work with your files (as in FTP).
 For more information on the SSH protocol, [click here](https://en.wikipedia.org/wiki/Secure_Shell).
 
 ## Prerequisites
@@ -23,15 +23,13 @@ For more information on the SSH protocol, [click here](https://en.wikipedia.org/
 ## Enable/Disable SSH for a user
 You can manage your SSH logins in your control panel. You just have to click on the name of your website in the left-hand column, then go to the "FTP - SSH" tab.
 
-When you create new FTP users, the SSH connection will be enabled for the same user.
+![](images/sshguide_screen1.png){.thumbnail}
 
-![](images/img_3945.jpg){.thumbnail}
-
-You can disable the SSH connection for a user by clicking on the cogwheel to the right of your login and then "Modify".
+You can disable the SSH connection for a user by clicking on the button to the right of your login and then "Edit".
 
 This modification will take a few minutes.
 
-![](images/img_3946.jpg){.thumbnail}
+![](images/sshguide_screen2.png){.thumbnail}
 
 ## Command prompt
 Linux: KDE: Open the main menu (by default this will be at the bottom left of your screen), then in the search bar which appears, tap "konsole", then click on the first search result.
@@ -93,7 +91,7 @@ For example if your "myScript.php" file is in the "WWW" folder, and you want to 
 
 ```
 php.ORIG.5_3 www/myScript.php
-ou
+or
 php.ORIG.5_3 /www/myScript.php
 ```
 

@@ -177,7 +177,7 @@ Przykładowo, jeśli używasz wersji ASA 8.4 (2), najpierw uaktualnij  system do
 
 Więcej informacji znajdziesz w [dokumentacji Cisco](https://www.cisco.com/c/en/us/td/docs/security/asa/migration/upgrade/upgrade.html){.external}.
 
-> \[!primary]
+> [!primary]
 >
 > W przypadku zapór sieciowych Cisco ASA z pamięcią 256 MB zalecamy aktualizację jedynie wersji 8.4(x). Wersje 9.1(x) i 9.2(x) będą wykorzystywać całe 256 MB pamięci, bez uwzględnienia działań produkcyjnych.
 >
@@ -379,7 +379,7 @@ Restart mający na celu ponowne załadowanie konfiguracji zajmie kilka minut.
 
  
 
-> \[!warning]
+> [!warning]
 >
 > Jeśli na tym etapie nie udaje Ci się dodać pliku binarnego ASA, zrestartuj system, aby zaktualizować ASDM. Następnie usuń nieużywany plik binarny ASDM, aby zwolnić miejsce.
 > 

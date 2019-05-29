@@ -1,8 +1,8 @@
 ---
 title: 'Przewodnik dotyczący korzystania z programu FileZilla'
+slug: hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla
 excerpt: 'Przewodnik ten wyjaśnia, w jaki sposób korzystać z programu FileZilla.'
 id: '1380'
-slug: hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla
 section: 'FTP i SSH'
 ---
 
@@ -57,11 +57,14 @@ Główne menu zawiera podstawowe ikonki. Nie używamy wszystkich przycisków, ab
 ## Połączenie FTP
 Do połączenia z serwerem niezbędne są poniższe informacje:
 
-- Serwer: ftp.twoja-domena.tld lub ftp.cluster0XX.ovh.net lub newftp.cluster0XX.ovh.net
-- Użytkownik: login FTP
-- Hasło: hasło FTP przypisane do loginu
-- Port: może zostać pusty (lub 21)
+|Dane do uzupełnienia|Szczegóły|
+|---|---|
+|Serwer FTP|Adres serwera umożliwiający dostęp do Twojej przestrzeni dyskowej.<br><br> W zależności od użytego programu adres ten może być określony jako: „Serwer”, „Adres serwera”, „Host” lub „Nazwa hosta”.|
+|Login FTP|Jest to identyfikator, który umożliwia dostęp do przestrzeni dyskowej.<br><br> W zależności od użytego programu identyfikator ten może być określony jako: „Użytkownik”, „Nazwa użytkownika”, „Identyfikator”, „Login” lub „Username”.|
+|Hasło użytkownika FTP|Hasło powiązane z loginem FTP.<br><br> W zależności od użytego programu możesz zostać poproszony o „Hasło” lub z angielskiego „Password”.|
+|Port połączenia|Jest on zazwyczaj uzupełniany automatycznie przez program. Jeśli jednak zostaniesz poproszony o jego wprowadzenie:<br><br>\- użyj portu „21”, aby połączyć się przez protokół FTP;<br>\- użyj portu „22”, aby połączyć się przez protokół SFTP (w przypadku gdy jest on aktywny);|
 
+[Jeśli nie posiadasz wskazanych wyżej informacji](https://www.ovh.com/auth/?action=gotomanager){.external}, zaloguj się do `Panelu klienta`{.action} i kliknij `Hosting`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej oraz tabela zawierająca nazwy użytkowników FTP i SSH utworzonych na Twoim hostingu.
 
 Po wpisaniu danych kliknij na Szybkie łączenie, aby uzyskać połączenie z serwerem.
 

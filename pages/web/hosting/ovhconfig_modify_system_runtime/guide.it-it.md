@@ -1,124 +1,143 @@
 ---
-title: Modifica l’ambiente di esecuzione del tuo hosting Web
-excerpt: Modifica l'ambiente di esecuzione del tuo hosting Web
+title: 'Modificare la configurazione di un hosting Web'
+excerpt: 'Come cambiare l’ambiente di esecuzione del tuo hosting Web dallo Spazio Cliente OVH'
 slug: modifica_lambiente_di_esecuzione_del_tuo_hosting_web
 legacy_guide_number: g2149
+section: 'Configurazione dell’hosting'
+order: 3
 ---
 
+**Ultimo aggiornamento: 11/04/2019**
 
-## Come fai a modificare il tuo ambiente di esecuzione?
+## Obiettivo
 
-## Nel tuo Spazio Cliente OVH
-Accedi al tuo Spazio Cliente OVH, seleziona il tuo hosting nel menu a sinistra e clicca su Modifica la configurazione.
+I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, spazi dove condividere una passione o promuovere un’attività professionale… gli [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} permettono di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](http://pro.ovh.net/infos/){.external}.
 
-![](images/img_4127.jpg){.thumbnail}
-A questo punto puoi cambiare la configurazione corrente.
+**Questa guida ti mostra come modificare la configurazione del tuo servizio di hosting dallo Spazio Cliente OVH.**
 
-![](images/img_4128.jpg){.thumbnail}
-Scegli un ambiente di esecuzione nel menu a tendina.
+## Prerequisiti
 
-![](images/img_4129.jpg){.thumbnail}
+- Disporre di un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} (escluso il servizio Cloud Web)
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager)
 
-## Nel file .ovhconfig
-L'aggiornamento viene effettuato nel file .ovhconfig che si trova nella root del tuo hosting.
-La modifica del tuo ambiente di esecuzione è quindi possibile sia nel tuo Spazio Cliente OVH che direttamente nel file .ovhconfig.
+## Procedura
 
-Per maggiori informazioni sul file .ovhconfig, consulta la guida []({legacy}1207)
+**Modificare la configurazione di un hosting Web è un’operazione delicata**: un’azione errata potrebbe rendere irraggiungibile il tuo sito. Comprendere i possibili effetti di una modifica è importante per effettuare l’operazione con la massima consapevolezza.
 
+Quando modifichi la configurazione del tuo hosting, cambi anche i parametri di base del tuo sito Internet. Anche se le nostre infrastrutture mettono a disposizione diverse configurazioni, ti consigliamo di accertarti che quella scelta sia tecnicamente compatibile con il tuo sito Web.
 
-## Gli ambienti di esecuzione
+> [!warning]
+>
+> Prima di apportare qualsiasi modifica, assicurati che l’operazione non abbia impatto sulla raggiungibilità del tuo sito. In caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida. 
+> 
 
-## Ambiente "Legacy"
-È l'ambiente storico degli hosting Web e in passato era l'unica configurazione disponibile.
+### Modifica la configurazione dell’hosting Web dallo Spazio Cliente OVH
 
+#### Step 1: accedi alla gestione della configurazione dell’hosting
 
-- Questo ambiente è ancora utilizzato ma è comunque consigliato passare a un sistema di tipo "Stable" per poter usufruire automaticamente degli ultimi aggiornamenti stabili disponibili. L'ambiente "Legacy" può essere utile per i siti sviluppati con le vecchie versioni di PHP o per i software che non sono più utilizzati (ad esempio, un vecchio connettore per i database mysql).
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio dalla sezione `Hosting`{.action} nel menu a sinistra, assicurati di essere posizionato nella scheda `Informazioni generali`{.action} e, nel riquadro “Configurazione”, clicca sui tre puntini in corrispondenza della versione PHP e seleziona `Modifica la configurazione`{.action}.
 
+![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
-Per impostare "Legacy" come ambiente di esecuzione, aggiungi questa riga al file .ovhconfig*:
+Se il pulsante non è attivo, è probabile che sia in corso una verifica della versione PHP. In questo caso, comparirà un cerchio azzurro che indicherà la verifica in corso. Attendi qualche minuto fino a quando il pulsante `Modifica la configurazione`{.action} risulti nuovamente abilitato.
 
+![hostingconfiguration](images/change-hosting-configuration-step2.png){.thumbnail}
 
-```
-container.image=legacy
-```
+#### Step 2: modifica la configurazione dell’hosting Web
 
+Nella nuova finestra, sono disponibili due opzioni. Scegli l’operazione che vuoi eseguire e clicca su `Seguente`{.action}.
 
+|Operazione|Dettagli|
+|---|---|
+|Ritorna a una configurazione precedente|Seleziona la configurazione da ripristinare in corrispondenza del campo `Seleziona storico`. Se in passato non hai apportato modifiche, questa opzione non sarà disponibile.|
+|Modifica la configurazione attuale|Seleziona le modifiche da apportare alla configurazione. Per maggiori informazioni, consulta il paragrafo [Opzioni di configurazione disponibili](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web/#opzioni-di-configurazione-disponibili){.external} di questa guida.|
 
-## Ambiente "Stable"
-Questo ambiente ti permette di usufruire automaticamente degli ultimi aggiornamenti stabili.
+> [!primary]
+>
+> La modifica del motore di esecuzione dell’hosting Web comporta la reinizializzazione automatica delle sessioni PHP.
+> 
 
-Per impostare "Stable" come ambiente di esecuzione, aggiungi questa riga al file .ovhconfig*:
+Clicca su `Conferma`{.action} per applicare le modifiche e attendi il tempo necessario alla loro propagazione.
 
+![hostingconfiguration](images/change-hosting-configuration-step3.png){.thumbnail}
 
-```
-container.image=stable
-```
+### Opzioni di configurazione disponibili
 
+Quando modifichi la configurazione di un hosting Web, hai la possibilità di scegliere fra diverse opzioni. Per maggiori informazioni su una delle opzioni di configurazione disponibili, prosegui nella lettura di questa guida nella sezione corrispondente.
 
+- [Ambiente di esecuzione](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web/#ambiente-di-esecuzione){.external}
+- [Versione di PHP](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web/#versione-di-php){.external}
+- [Motore PHP](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web/#motore-php){.external}
+- [Modalità](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web/#modalita){.external}
 
-## Ambiente "Jessie.i386"
-Questo ambiente ti permette di utilizzare Debian Jessie.
+#### Ambiente di esecuzione
 
+Scegliere un ambiente di esecuzione differente consente di cambiare alcune specifiche tecniche dell’hosting Web. **Prima di apportare qualsiasi modifica, assicurati che il nuovo ambiente scelto sia compatibile con il tuo sito Internet.** 
 
-- Al momento è la versione proposta quando selezioni l'ambiente di esecuzione "Stable".
-
-
-Per impostare "Jessie.i386" come ambiente di esecuzione, aggiungi questa riga al file .ovhconfig*:
-
-
-```
-container.image=jessie.i386
-```
-
-
-Scegliere "Jessie.i386" al posto di "Stable" non è consigliato, ma garantisce che un eventuale aggiornamento dell'immagine relativa all'ambiente "Stable" non renderà il tuo sito irraggiungibile. Questo caso potrebbe verificarsi solo se il tuo sito utilizza script PHP esterni.
-
-## Ambiente "Testing"
-Questo ambiente ti permette di usufruire di "anteprime" come patch, nuove immagini e nuove tecnologie, ma non garantisce la stabilità.
-
-Per impostare "Testing" come ambiente di esecuzione, aggiungi questa riga al file .ovhconfig*:
-
-
-```
-container.image=testing
-```
-
-
-*Il file .ovhconfig presente nella root del tuo hosting Web "/".
-
-
-## Differenza tra le immagini
-|Ambiente|Legacy|Stable|Testing|Jessie.i386|
-|---|---|---|---|
-|Ambiente|Legacy|Stable|Testing|Jessie.i386|
-|Immagine associata|Legacy|Jessie.i386|Jessie.i386|Jessie.i386|
+|Ambienti|Legacy|stable|testing|jessie.i386|
+|---|---|---|---|---|
+|Immagine associata|Legacy|jessie.i386|jessie.i386|jessie.i386|
 |Versione PHP minima|4.4|5.3|5.3|5.3|
-|Openssl|0.9.8o|1.0.1k (compatibile con TLS1.2)|1.0.1k (compatibile con TLS1.2)|1.0.1k (compatibile con TLS1.2)|
-|Estensione php imagick||x|x|x|
-|Estensione php memcache|x|x|x|x|
-|Estensione php memcached||x|x|x|
-|Estensione php mongo (PHP 5.4, 5.5, 5.6)||x|x|x|
-|Estensione mysqlnd (solo in utf-8)||x|x|x|
-|Estensione redis||x|x|x|
-|Opcache**|x|x|x|x|
+|Openssl|0.9.8o|1.0.1 (compatibile con TLS1.2)|1.0.1 (compatibile con TLS1.2)|1.0.1 (compatibile con TLS1.2)|
+|Estensione PHP Imagick| - | Sì | Sì | Sì |
+|Estensione PHP Memcache (PHP 5.6)| Sì | Sì | Sì | Sì |
+|Estensione PHP Memcached (PHP 5.6)| - | Sì | Sì | Sì |
+|Estensione PHP Mongo (PHP 5.4, 5.5, 5.6)| - | Sì | Sì | Sì |
+|Estensione Mysqlnd (solo in utf-8)| - | Sì | Sì | Sì |
+|Estensione Redis| - | Sì | Sì | Sì |
+|OPcache| Sì | Sì | Sì | Sì |
 |Python|2.6|2.7 e 3.4|2.7 e 3.4|2.7 e 3.4|
 |Ruby|1.8.7|2.1.5|2.1.5|2.1.5|
 |Rails|2.3.5|4.1.8|4.1.8|4.1.8|
 |Perl|5.10|5.20|5.20|5.20|
 |git|1.7.2.5|2.1.4|2.1.4|2.1.4|
 
+> [!primary]
+>
+> Anche se l’ambiente “legacy” potrebbe rivelarsi utile per siti sviluppati con vecchie versioni di PHP, consigliamo di utilizzare un ambiente “stable” per poter usufruire degli ultimi aggiornamenti. **Prima di apportare qualsiasi modifica, verifica la compatibilità del tuo sito.**
+> 
 
-i]**È necessario attivare PHP-FPM: []({legacy}1175)
+Una volta scelto il nuovo ambiente, è possibile eseguire le modifiche in due modi:
 
+- **dallo Spazio Cliente OVH**: segui le istruzioni presenti nella sezione [Modificare la configurazione dell’hosting Web dallo Spazio Cliente](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web//#modifica-la-configurazione-dellhosting-web-dallo-spazio-cliente-ovh){.external} di questa guida.
+- **agire manualmente sul file .ovhconfig**: questa soluzione, più tecnica, richiede la connessione allo spazio di storage. Per modificare il file **.ovhconfig**, consulta la nostra guida [Configurare il file .ovhconfig di un hosting Web](https://docs.ovh.com/it/hosting/configurare-file-ovhconfig/){.external}.
 
-## La modifica dell'ambiente di esecuzione interesserà tutto il tuo hosting?
-Sì, quindi non è possibile utilizzare contemporaneamente più ambienti di esecuzione.
+#### Versione di PHP
 
+PHP è un linguaggio di programmazione in continua evoluzione disponibile attualmente in numerose versioni. Le più recenti contengono le patch per i bug esistenti e aggiungono o rimuovono determinate funzionalità. OVH propone le nuove versioni rilasciate, disponibili alla pagina: <https://www.ovh.it/hosting-web/php.xml> 
 
-## Su quale offerta puoi modificare il tuo ambiente di esecuzione?
-La modifica del tuo ambiente di esecuzione è possibile con tutte le offerte di hosting Web.
+Dal momento che le ultime versioni potrebbero non includere alcune funzionalità, **prima di apportare qualsiasi modifica assicurati che la nuova versione di PHP sia compatibile con il tuo sito Internet**. 
 
+È possibile modificare la versione PHP di un hosting Web in diversi modi:
 
-## Durante la modifica dell'ambiente le sessioni PHP vengono mantenute attive?
-No, la modifica dell’ambiente di esecuzione comporta la reinizzializzazione automatica delle sessioni PHP.
+- **dallo Spazio Cliente OVH**: segui le istruzioni presenti nella sezione [Modificare la configurazione dell’hosting Web dallo Spazio Cliente](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web//#modifica-la-configurazione-dellhosting-web-dallo-spazio-cliente-ovh){.external} di questa guida.
+- **agire manualmente su un file presente nello spazio di storage**: questa soluzione, più tecnica, richiede la connessione allo spazio di storage. 
 
+In generale, per maggiori informazioni sulle modifiche di una versione di PHP, consulta la nostra guida [Modificare la versione PHP di un hosting Web](https://docs.ovh.com/it/hosting/configura_php_sul_tuo_hosting_web_condiviso_2014_ovh/){.external}.
+
+#### Motore PHP
+
+Il motore PHP consente di attivare o disattivare l’acceleratore PHP (PHP-FPM), ottimizzato per la nostra infrastruttura in modo da aumentare la velocità di esecuzione degli script PHP. L’acceleratore PHP offre performance fino a sette volte superiori rispetto al motore “phpcgi”. 
+
+È possibile modificare il motore PHP di un hosting Web in diversi modi:
+
+- **dallo Spazio Cliente OVH**: segui le istruzioni presenti nella sezione [Modificare la configurazione dell’hosting Web dallo Spazio Cliente](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web//#modifica-la-configurazione-dellhosting-web-dallo-spazio-cliente-ovh){.external} di questa guida. Per attivare l’acceleratore PHP (PHP-FPM) seleziona “php” come motore; per disattivarlo, scegli “phpcgi”.
+- **agire manualmente sul file .ovhconfig**: questa soluzione, più tecnica, richiede la connessione allo spazio di storage. Per modificare il file **.ovhconfig**, consulta la nostra guida [Configurare il file .ovhconfig di un hosting Web](https://docs.ovh.it/hosting/configurare-file-ovhconfig/){.external}.
+
+#### Modalità 
+
+La modalità permette di gestire sia il comportamento della cache dei file statici del tuo sito (ad esempio, le immagini) che gli errori PHP (utili se, ad esempio, il tuo sito mostra una pagina bianca). Le modalità disponibili sono due:
+
+|Modalità |Memorizzazione in cache dei file statici|Gestione degli errori PHP|
+|---|---|---|
+|Produzione|Massimizza la presenza in cache dei file statici sul browser Web.|Gli errori PHP non vengono visualizzati sul sito.|
+|Sviluppo|Nessun file viene salvato in cache.|Gli errori PHP vengono visualizzati sul sito.|
+
+È possibile modificare la modalità utilizzata da un hosting Web in diversi modi:
+
+- **dallo Spazio Cliente OVH**: segui le istruzioni presenti nella sezione [Modificare la configurazione dell’hosting Web dallo Spazio Cliente](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web//#modifica-la-configurazione-dellhosting-web-dallo-spazio-cliente-ovh){.external} di questa guida.
+- **agire manualmente sul file .ovhconfig**: questa soluzione, più tecnica, richiede la connessione allo spazio di storage. Per modificare il file **.ovhconfig**, consulta la nostra guida [Configurare il file .ovhconfig di un hosting Web](https://docs.ovh.it/hosting/configurare-file-ovhconfig/){.external}.
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.

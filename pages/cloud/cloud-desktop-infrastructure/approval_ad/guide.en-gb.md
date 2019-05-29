@@ -1,7 +1,7 @@
 ---
-title: Creating a trust relationship
+title: 'Creating a trust relationship'
 slug: approval-ad
-excerpt: This guide will explain how you can allow users from your Active Directory to access your virtual desktops.
+excerpt: 'This guide will explain how you can allow users from your Active Directory to access your virtual desktops.'
 section: Tutorials
 ---
 
@@ -163,8 +163,7 @@ To create a domain account, proceed as follows:
 ```
 New-ADServiceAccount -Name horizonUI -AccountPassword (ConvertTo-SecureString - AsPlainText "p@ssw0rd" -Force) -Enabled $true -Path "CN=Managed Service Accounts,DC=CUSTOMER,DC=LOCAL" -RestrictToSingleComputer
 ```
-
-Note that **DC** designates the domain of your Active Directory.
+Note that "**DC**" designates the domain of your Active Directory.
 
 ### Step 6: Configure the Trust on your Active Directory
 

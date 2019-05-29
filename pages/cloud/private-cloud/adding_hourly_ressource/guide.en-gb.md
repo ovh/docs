@@ -49,6 +49,7 @@ Once you have confirmed your order, you can track progress as the resource is be
 A task will also appear in the 'recent tasks' list on your vSphere interface. You can also use this task to track the resource addition.
 
 
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.

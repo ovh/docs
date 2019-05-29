@@ -1,11 +1,11 @@
 ---
-title: Using the OVH Managed Kubernetes LoadBalancer 
+title: 'Using the OVH Managed Kubernetes LoadBalancer'
 excerpt: ''
 slug: using-lb
-section: Getting started
+section: 'Getting started'
 ---
 
-# Using the OVH Managed Kubernetes `LoadBalancer`
+# Using the OVH Managed Kubernetes LoadBalancer
 
 <style>
  pre {
@@ -33,7 +33,7 @@ In this tutorial we are explaining how to deploy services on OVH Managed Kuberne
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../quickstart/).
+This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 
 ## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
@@ -102,7 +102,7 @@ The main advance of using an `Ingress` behind a `LoadBalancer` is the cost: you 
 
 ## Deploying LoadBalancer Services on OVH Managed Kubernetes clusters
 
-In our OVH Managed Kubernetes we propose a load balancing service enabling you to use `LoadBalancer` `ServiceType`. We are currently offering OVH Managed Kubernetes LoadBalancer service as a free preview, until the end of summer 2019. During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
+In our OVH Managed Kubernetes we propose a load balancing service enabling you to use `LoadBalancer` `ServiceType`. We are currently offering OVH Managed Kubernetes LoadBalancer service as a free preview until the end of summer 2019. During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
 
 ## Deploying a Hello World LoadBalancer service 
 
@@ -192,6 +192,11 @@ hello-world   LoadBalancer   10.3.81.234   6d6regsa9pc.lb.c1.gra.k8s.ovh.net   8
 </code></pre>
 
 For each service you deploy with LoadBalancer type, you will get a new sub-domain `XXXXXX.lb.c1.gra.k8s.ovh.net` to access the service. In my example that URL to access the service would be `http://6d6regsa9pc.lb.c1.gra.k8s.ovh.net`
+
+> [!primary]
+> The `LoadBalancer` is giving you a domain name and not an IP, because we anticipate a possible IP change at the end of the `LoadBalancer` free preview phase. The domain name will remain stable, so we prefer you to use it.
+> This can be a problem if you're directing a domain name to your OVH Managed Kubernetes cluster, as to route your domain name to the `LoadBalancer` domain name you can only use `CNAME` records and not `A` ones.
+> If you want to route a root domain, for which `CNAME` records aren't allowed, you could use an `A` record to the IP behind the `LoadBalancer` domain name, but if you do it, please be aware that the IP can change. 
 
 
 ### Testing your service

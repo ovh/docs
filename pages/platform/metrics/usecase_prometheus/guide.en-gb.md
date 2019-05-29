@@ -22,7 +22,7 @@ order: 5
 
 ### Install or compile Beamium
 
-We created an open-source application called [Beamium](https://github.com/ovh/beamium){.external} which allows you to scrape Prometheus format and push it to Warp10. Once scraped, Beamium can filter and forward data to a Warp10 Time Series platform. While acquiring metrics, Beamium uses DFO (Disk Fail Over) to prevent metrics loss due to eventual network issues or unavailable service.
+We created an open-source application called [Beamium](https://github.com/ovh/beamium){.external} which allows you to scrape Prometheus format and push it to Warp 10™. Once scraped, Beamium can filter and forward data to a Warp 10™ Time Series platform. While acquiring metrics, Beamium uses DFO (Disk Fail Over) to prevent metrics loss due to eventual network issues or unavailable service.
 
 Let's use it! You can either install it on Debian or compile it from source.
 
@@ -64,7 +64,7 @@ labels:
 Save it somewhere on your disk, and replace the following informations:
 
 * `127.0.0.1:9100` with a valid Prometheus endpoint
-* `WARP10_ENDPOINT` with a valid Warp10 endpoint, such as "https://warp10.gra1.metrics.ovh.net/api/v0/update"
+* `WARP10_ENDPOINT` with a valid Warp 10™ endpoint, such as "https://warp10.gra1.metrics.ovh.net/api/v0/update"
 * `WARP10_TOKEN` with a valid token
 
 > From one configuration file, you can scrape multiples sources. Just add them!

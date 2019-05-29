@@ -92,7 +92,7 @@ Dieser Schritt ist optional, wenn Sie die in Ihrem [Webhosting](https://www.ovh.
 
 Geben Sie die erforderlichen Informationen ein, um Ihre E-Mail-Adresse zu erstellen. Wiederholen Sie diesen Schritt, um mehrere E-Mail-Adressen anzulegen. Wenn Sie Ihre E-Mail-Adressen zu OVH migrieren möchten, empfehlen wir Ihnen unser Tool [OVH Mail Migrator](https://omm.ovh.net/){.external} zu verwenden, das Sie bei der Migration unterstützt. 
 
-Weitere Informationen zum Anlegen einer E-Mail-Adresse oder über die Migration Ihrer Dienstleistungen zu OVH finden Sie in den folgenden Dokumentationen: [Eine E-Mail-Adresse erstellen (Englisch)](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external} und [Migration Ihrer Website und E-Mails zu OVH](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}.
+Weitere Informationen zum Anlegen einer E-Mail-Adresse oder über die Migration Ihrer Dienstleistungen zu OVH finden Sie in den folgenden Dokumentationen: [Eine E-Mail-Adresse erstellen](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external} und [Migration Ihrer Website und E-Mails zu OVH](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}.
 
 ### Schritt 4: Die Konfiguration Ihrer Domain überprüfen oder anpassen
 
@@ -161,7 +161,7 @@ Wenn Sie mehr Informationen über die Verwendung von RoundCube benötigen, werfe
 
 [Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/){.external}
 
-[Eine E-Mail-Adresse erstellen (Englisch)](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}
+[Eine E-Mail-Adresse erstellen](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}
 
 [Verwendung von RoundCube](https://docs.ovh.com/de/emails/webmail_verwendung_von_roundcube/){.external}
 

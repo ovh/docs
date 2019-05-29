@@ -1,5 +1,5 @@
 ---
-title: Deploying a Hello World application with the OVH Control Panel
+title: 'Deploying a Hello World application with the OVH Control Panel'
 slug: deploying-hello-world
 excerpt: 'Find out how to deploy a Hello World application with the OVH Control Panel'
 section: Tutorials
@@ -34,10 +34,9 @@ In this administration UI, you have three tabs:
 
 - **Containers and Services:** coming soon...
 
-
 ## Configuring the default settings for kubectl
 
-Please refer to the `Configuring kubectl on an OVH Managed Kubernetes cluster`{.action} documentation for this stage of the process.
+Please refer to the [Configuring kubectl on an OVH Managed Kubernetes cluster](../configuring-kubectl/) documentation for this part of the process.
 
 ## Add a worker node
 
@@ -58,4 +57,4 @@ In the *Computer Nodes* tab, you can inspect the state of your nodes. The node y
 
 You're now ready to deploy your first application.
 
-For more details about this process, you can refer to our [Deploying an application](../deployin-an-application/) documentation. 
+For more details about this process, you can refer to our [deploying an application](https://docs.ovh.com/gb/en/kubernetes/deploying-an-application/) documentation. 

@@ -1,230 +1,173 @@
 ---
-title: 'Web Hosting: come importare un database MySQL'
-excerpt: 'Web Hosting: come importare un database MySQL'
-id: '1393'
+title: 'Importare un backup nel database di un hosting Web'
 slug: web_hosting_come_importare_un_database_mysql
+excerpt: 'Come importare un backup in un database di un hosting Web OVH'
+id: '1393'
 legacy_guide_number: g1393
 ---
 
+**Ultimo aggiornamento: 28/03/2019**
 
-## Requisiti
-Devi avere:
+## Obiettivo
 
+Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Management System o CMS) come WordPress e Joomla!, i database permettono di salvare gli elementi detti dinamici (ad esempio, commenti o articoli). Per diversi motivi, potresti aver bisogno di effettuare un backup del tuo database per recuperarne il contenuto.
 
-- il file di backup del tuo database, chiamato anche dump* (per effettuare il backup dei tuoi database SQL, consulta questa guida: []({legacy}1394)). 
+**Questa guida ti mostra come importare un backup nel database del tuo hosting Web OVH.**
 
-Il backup del database è generalmente di tipo .sql.
-Se non hai creato il tuo database con OVH, contatta il tuo provider per avere maggiori informazioni sul recupero del database tramite i suoi servizi.
+## Prerequisiti
 
+- Disporre di una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
+- Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
+- Avere accesso al backup da importare nel database o essere in grado di recuperarlo
+- In base al metodo di importazione scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} o disporre dei dati di connessione al database
 
-- l'username, la password e l'host sql che ti permettono accedere al tuo database
-Per recuperare le credenziali SQL, consulta questa guida: []({legacy}1374)
+## Procedura
 
+Prima di iniziare, è necessario indicare il metodo con cui intendi importare il backup del database. A seconda delle tue competenze tecniche a riguardo, puoi utilizzare diversi metodi:
 
-![](images/img_1802.jpg){.thumbnail}
+- **ripristinare lo stato di una data precedente**: questa soluzione permette di ripristinare il contenuto dei tuoi database grazie ai backup presenti nel tool di backup OVH. Non richiede particolari competenze tecniche ed è disponibile direttamente nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+- **file di backup**: questa soluzione permette di importare i dati del tuo file di backup in uno dei tuoi database ed è disponibile direttamente nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-## Dal tuo Spazio Cliente OVH
-Per importare il tuo database nel modo più semplice e veloce, effettua l'operazione dal tuo [Spazio Cliente OVH](https://www.ovh.com/manager/).
-In questo modo, puoi importare il tuo file di backup senza limiti di dimensione.
+- **interfaccia Web phpMyAdmin**: questa soluzione richiede la conoscenza dell’applicazione Web phpMyAdmin e della sua interfaccia di gestione. Inoltre, la dimensione del file di backup ha dei limiti.
 
-Una volta effettuato l'accesso al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/), seleziona il tuo hosting nel menu a sinistra e clicca sul tab Database.
+- **script**: per utilizzare questa soluzione è necessario creare uno script e salvarlo sull’hosting Web OVH e richiede quindi competenze specifiche.
 
-![](images/img_4125.jpg){.thumbnail}
-Clicca sull'icona a forma di ruota dentata in corrispondenza del database di cui vuoi importare il backup e seleziona Importa un file.
+- **comando SSH**: questa soluzione richiede l’accesso allo spazio di storage tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso.  Sono quindi necessarie competenze tecniche avanzate e una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} compatibile.
 
-Segui le indicazioni per completare l'operazione.
+Alcune delle opzioni elencate non vengono eseguite in un’interfaccia OVH e non possiamo quindi fornire assistenza sul loro utilizzo. Le informazioni contenute in questa guida potrebbero esserti di aiuto per effettuare l’operazione ma non si sostituiscono all’aiuto di un webmaster.
 
-![](images/img_4126.jpg){.thumbnail}
+Continua la lettura in base al metodo di importazione scelto. 
 
+> [!warning]
+>
+> OVH mette a disposizione i servizi ma non si occupa della loro configurazione e gestione; garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+>
+> Questa guida ti aiuta a eseguire le operazioni necessarie per importare il backup di un database. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare uno specialista del settore o il fornitore del servizio.  Per maggiori informazioni consulta la sezione “Per saperne di più”. 
+>
 
-## Da PhpMyAdmin per MySQL
-Per accedere al database tramite PhpMyAdmin
+### Ripristino dallo Spazio Cliente OVH
 
-Utilizza questo link: [PhpMyAdmin OVH](https://phpmyadmin.ovh.net/)
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
 
-Se necessario, consulta la guida all'utilizzo di PhpMyAdmin: []({legacy}1374)
+Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database da ripristinare e seleziona `Ripristina un backup`{.action}. Ti ricordiamo che scegliendo questa opzione il contenuto del database verrà sostituito con quello del backup.
 
+![Importazione database](images/database-import-step5.png){.thumbnail}
 
-- Una volta connesso, seleziona il tuo database cliccando sul nome (vedi il quadrato blu nell'immagine)
+Nella tabella sono elencati tutti i backup disponibili per il database selezionato, di cui viene mostrata la data di creazione e di cancellazione dal sistema OVH.
 
-- Clicca su Importa
+Clicca sui tre puntini in corrispondenza del database da ripristinare e seleziona `Ripristina un backup`{.action}. Verifica la correttezza delle informazioni e `Conferma`{.action} per avviare l’operazione. Attendi il completamento del processo.
 
-- Seleziona il tuo file di backup cliccando su Scegli file (Attenzione: la dimensione massima del file è 16 MB)
+![Importazione database](images/database-import-step6.png){.thumbnail}
 
-- Clicca su Esegui per avviare l'importazione
+### Importazione dallo Spazio Cliente OVH
 
-Se recuperi il backup del tuo database dal tuo Spazio Cliente OVH, decomprimilo prima di importarlo.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
 
+Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database da importare e seleziona `Importa un file`{.action}.
 
-![](images/img_1962.jpg){.thumbnail}
+![Importazione database](images/database-import-step1.png){.thumbnail}
 
-## Richiamo:
-Ricordati che il file non può superare i 16 MB di dimensione.
+Nella nuova finestra, seleziona `Importa un nuovo file`{.action} e poi clicca su `Seguente`{.action}.
 
+> [!primary]
+>
+> L’opzione `Utilizza un file esistente`{.action} permette di importare nuovamente i dati di un file già inviato nel tool di importazione. 
+>
 
-## Da uno script presente sul tuo hosting
-Per creare questi script in un file txt, attribuisci loro l'estensione corrispondente al linguaggio utilizzato.
+![Importazione database](images/database-import-step2.png){.thumbnail}
 
-In questi script, sostituisci:
+Assegna un nome al tuo file di backup (per trovarlo più facilmente in un secondo momento) e clicca su `Browse...` per selezionare il file nel tuo computer. Clicca su `Seguente`{.action}.
 
+Attendi il completamento dell’operazione e poi clicca su `Seguente`{.action}.
 
-- nome_del_database.sql con il nome del tuo file 
+![Importazione database](images/database-import-step3.png){.thumbnail}
 
-- server_sql con il nome del server su cui è stato creato il tuo database
+Scegli se utilizzare o meno le opzioni aggiuntive proposte:
 
-- nome_del_database con il nome del tuo database
+- **Elimina tutti i file dal tuo database attuale**: tutti i contenuti presenti nel database verranno cancellati e sostituiti con quelli del backup. Ti consigliamo di selezionare questa opzione esclusivamente se intendi sostituire l’intero contenuto presente nel database con quello del file di backup. 
 
-- password con la password associata al tuo database
+- **Invia un'email alla fine dell'importazione**: al termine dell'operazione riceverai una notifica via email.
 
-Prima di effettuare questa operazione, salva il tuo file di backup sul tuo hosting in FTP.
+Una volta effettuata la tua scelta, clicca su `Conferma`{.action} e attendi la fine del processo. 
 
+![Importazione database](images/database-import-step4.png){.thumbnail}
 
-## In PHP (importbase.php):
-Codice da inserire e da completare:
+### Interfaccia Web phpMyAdmin
 
+Per recuperare il link di accesso a phpMyAdmin accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
 
-```
+Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database di cui vuoi importare il backup e seleziona `Accedi a phpMyAdmin`{.action}.
+
+![Importazione database](images/database-import-step7.png){.thumbnail}
+
+Nella pagina di phpMyAdmin, inserisci le informazioni relative al database, scegli dal menu a tendina se visualizzare i dati attuali del database ed effettua l’accesso.  Seleziona la scheda `Importa`{.action} e inserisci i dati richiesti. Ti ricordiamo che il file caricato non può superare la dimensione massima consentita.
+
+> [!warning]
+>
+> phpMyAdmin non è un’applicazione OVH, pertanto non forniamo assistenza relativamente al suo utilizzo. In caso di difficoltà o dubbi, ti consigliamo di contattare uno specialista del settore o accedere al sito del fornitore del servizio.  
+>
+
+### Script
+
+Questa operazione prevede diversi step. Per prima cosa, assicurati di disporre del file di backup da importare e di tutti i dati necessari per effettuare l’accesso al database di destinazione: nome utente, password, nome del database e indirizzo del server.
+
+> [!warning]
+>
+> Questa soluzione è più tecnica e richiede competenze di programmazione. In questa guida puoi trovare informazioni utili per effettuare l’operazione ma, in caso di necessità, ti consigliamo di rivolgerti a uno specialista del settore. 
+>
+
+#### 1. Creare lo script di importazione
+
+Il primo step consiste nel creare lo script che permetterà di effettuare l’importazione verso il database. Ecco un esempio:
+
+```php
 <?php
-echo "Ripristino del tuo database in corso.......
-<br>";
-system("cat nome_del_database.sql | mysql --host=server_sql --user=nome_del_database --password=password nome_del_database");
-echo "Ripristino completo. Il tuo database è sull'hosting.";
+system("cat nome_file_backup.sql | mysql --host=inidrizzo_del_server --user=nome_utente --password=password_utente nom_database");
 ?>
 ```
 
+Sostituisci le informazioni generiche dello script con i dati del database in questione, seguendo le indicazioni riportate qui sotto. Una volta creato lo script, ti consigliamo di assegnargli un nome (ad esempio, “import.php”).
 
+|Informazione|Sostituire con...|
+|---|---|
+|nome_file_backup|Il nome del file di backup che intendi importare |
+|indirizzo_del_server|L’indirizzo del server del database verso cui saranno importati i dati|
+|nome_utente|Lo username che ha accesso al database|
+|password_utente|La password associata al nome utente indicato precedentemente|
+|nome_database|Il nome del database|
 
-## In Perl (importbase.cgi):
-Codice da inserire e da completare:
+#### 2. Caricare lo script e il backup sullo spazio di storage
 
+Una volta creato lo script è necessario caricarlo insieme al file di backup da importare sullo spazio di storage dell’hosting Web. Per effettuare questa operazione, è necessario collegarsi all’hosting (se hai bisogno di aiuto, consulta lo step 2 di [questa guida](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/#step-2-carica-i-file-del-sito-nello-spazio-di-storage){.external}).
 
-```
-#!/usr/bin/perl
+Per realizzare correttamente gli step successivi, carica lo script e il file di backup nella cartella “www”. **Ti consigliamo di prestare la massima attenzione al nome assegnato al file dello script di importazione**: quando effettui l’upload nello spazio di storage assicurati di non sovrascriverlo a un file già esistente con lo stesso nome. Nel caso, modifica il nome dello script appena creato e prova a caricarlo di nuovo.
 
-print "Ripristino del tuo database in corso.......
-<br>";
-system("cat nome_del_database.sql | mysql --host=server_sql --user=nome_del_database --password=password nome_del_database");
-print "Ripristino completo. Il tuo database è sull'hosting.";
-```
+#### 3. Eseguire lo script
 
+Una volta che lo script di importazione e il file di backup sono stati caricati nello spazio di storage non ti resta che eseguire il codice in esso contenuto richiamando lo script.
 
+Per effettuare questa operazione, accedi dal browser all’indirizzo URL completo dello script (ad esempio, se il nome del tuo script è “import.php”: mypersonaldomain.ovh/import.php). Se le informazioni nello script sono corrette, l’importazione si avvia e non resta che attenderne il completamento. In caso contrario verifica i dati inseriti e ripeti l’operazione.
 
-- Carica con FTP lo script che hai creato con il dump* del tuo database nella cartella www del tuo hosting e chiama il tuo script dal browser con questo URL: http://tuo_dominio.com/importbase.php
+Una volta terminata questa procedura ti consigliamo di eliminare il file di backup e lo script dalla directory “www”.
 
+### Comando SSH
 
-Sostituisci tuo_dominio.com con il nome del tuo dominio e importbase.php con il nome del tuo file.
+Per effettuare questa operazione è necessario interagire con lo spazio di storage eseguendo alcuni comandi da un terminale.
 
-Il tuo file di backup è compresso?
+> [!warning]
+>
+> Questa soluzione richiede competenze tecniche avanzate. In questa guida puoi trovare informazioni utili per effettuare l’operazione ma, in caso di necessità, ti consigliamo di rivolgerti a uno specialista del settore. 
+>
 
-Se il tuo dump* è compresso, quindi in .sql.gz, ti basta inserire questo comando all'inizio dello script:
+Una volta effettuato l’accesso in SSH allo spazio di storage, per effettuare l’importazione del database è necessario eseguire un comando. Qui sotto ne proponiamo uno di esempio. Ti ricordiamo che è necessario caricare preventivamente il backup da importare sullo spazio di storage ed eseguire il comando dal terminale posizionandoti sulla directory in cui si trova il backup.  
 
-
-```
-system("gunzip nome_del_database.sql.gz");
-```
-
-
-Esempio:
-
-## In PHP: dump compresso + ripristino database
-Codice completo come nell'esempio: 
-
-
-```
-<?php
-echo "Decompressione del file.....
-<br>";
-system("gunzip testbackup.sql.gz");
-echo "Ripristino del tuo database in corso......
-<br>";
-system("cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport");
-echo "Ripristino completo. Il tuo database è sull'hosting.";
-?>
+```sh
+cat nome_file_backup.sql | mysql --host=inidrizzo_del_server --user=nome_utente --password=password_utente nome_database
 ```
 
+Sostituisci le informazioni generiche del comando con i dati del database in questione. A operazione completata, ti consigliamo di eliminare il file di backup dalla directory in cui è stato caricato. 
 
+## Per saperne di più
 
-## In Perl: dump compresso + ripristino database
-Codice completo come nell'esempio: 
-
-
-```
-#!/usr/bin/perl
-
-print "Decompressione del file.....
-<br>";
-system("gunzip testbackup.sql.gz");
-print "Ripristino del tuo database in corso.......
-<br>";
-system("cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport");
-print "Ripristino completo. Il tuo database è sull'hosting.";
-```
-
-
-
-
-## Con SSH
-
-## Requisiti:
-
-- disporre delle credenziali FTP necessarie per accedere al tuo hosting Web. 
-Se hai bisogno di aiuto per recuperare le tue credenziali FTP, consulta questa guida: []({legacy}1374)
-
-- aver attivato un'offerta che consente l'accesso tramite SSH
-
-([Visualizza tutte le nostre offerte](https://www.ovh.it/hosting-web/))
-
-Segui questa guida per la connessione in SSH:
-
-
-- [Connessione SSH verso gli hosting condivisi](http://guida.ovh.it/SshSuHostingCondiviso)
-
-
-
-## Importa il database in SSH
-Accedi in SSH al tuo hosting condiviso.
-
-Entra nella cartella in cui hai inserito i file da importare e esegui questo comando:
-
-
-```
-cat nome_del_database.sql | mysql --host=server_sql --user=nome_del_database --password=password neme_del_database
-```
-
-
-
-Esempio del codice completo: 
-
-
-```
-cat testbackup.sql | mysql --host=mysql5-21.pro --user=testimport --password=RtPgDsmLE testimport
-```
-
-
-
-
-## Dal servizio SQL Privato
-Se hai bisogno di aiuto per eseguire l'importazione del tuo database, consulta questa guida:
-
-
-- [Importa i tuoi database SQL Privato](https://www.ovh.it/g2023.tutto_sullsql_privato#backup_importazione_ripristino)
-
-
-
-
-## Errore a causa del nome del database
-Può essere necessario aggiungere una riga nel tuo file di backup:
-
-
-```
-use nome_del_tuo_database;
-```
-
-
-Dove nome_del_tuo_database corrisponde al nome del database in cui hai importato questi dati.
-
-
-## Glossario
-*dump: file di backup del database del tuo sito. 
-
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.

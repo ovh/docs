@@ -11,8 +11,7 @@ order: 4
 remote desktop gateway**, supporting standard protocols like SSH, VNC
 and RDP.
 
-Clientless because you don't need plugins or client software to use it,
-just access in a web browser.
+Clientless because you don't need plugins or client software to use it, just access in a web browser.
 
 ## Access to your Guacamole
 

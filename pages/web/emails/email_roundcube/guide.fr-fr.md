@@ -1,9 +1,9 @@
 ---
-title: 'Consulter son adresse e-mail depuis le webmail RoundCube'
+title: 'Utiliser son adresse e-mail depuis le webmail RoundCube'
 slug: utilisation-roundcube
 excerpt: 'Ce guide va vous permettre de vous familiariser avec le Webmail RoundCube'
 section: 'Premiers pas'
-order: 4
+order: 5
 ---
 
 ## Ou et comment se connecter au Webmail RoundCube ?

@@ -5,7 +5,7 @@ order: 1
 section: Get Started 
 ---
 
-**Last updated 20th February 2018**
+**Last updated 20th March 2019**
 
 ## Objective
 
@@ -17,47 +17,48 @@ Welcome to the quick start tutorial of the Logs Data Platform. This Quick start 
 
 First, you will have to order [one of the Logs Data Platform plans](https://www.ovh.com/fr/data-platforms/logs){.external}. We have a free plan so you can test this tutorial! Once the order is complete you will be able to play with Logs Data Platform (LDP).
 
-- Log into the [ovh.com Manager](https://www.ovh.com/manager){.external}, and navigate to the Sunrise section located at the top right in the header.
+- Log into the [ovh.com Manager](https://www.ovh.com/manager){.external}, and navigate to the Cloud section located at the top left in the header.
 - Once you have created your credentials, the main interface will appear :
 
 ![Main interface](images/manager_start.png){.thumbnail}
 
-Your Logs Data Platform username is located on the top right of the page. Next to this username there is a **...** button giving you the ability to :
+Your Logs Data Platform username is located on the bottom left of the page, in the **Configuration** panel. In this section, you can also :
 
 1. Review your plan and options
-2. Change your main contact
+2. Change your service name
 3. Reset your password of your LDP current account.
 
 On this interface you can see the configuration menu of the two main items :
 
-1. The **Streams** are the recipients of your logs. When you send a log with the right stream token, it arrives automatically to your stream in an awesome software named Graylog. When you access your stream in Graylog you will be able to search your logs and immediately analyze them.
+1. The **Data streams** are the recipients of your logs. When you send a log with the right stream token, it arrives automatically to your stream in an awesome software named Graylog. When you access your stream in Graylog you will be able to search your logs and immediately analyze them.
 2. The **Dashboard** is the global view of your logs, A Dashboard is an efficient way to exploit your logs and to view global information like metrics and trends about your data without being overwhelmed by the logs details.
 
 Below them, you have access to different sections :
 
-3. The **Collectors** will allow you to ask OVH to host your own dedicated collector like Logstash or Flowgger.
+3. The **Data-gathering tools** will allow you to ask OVH to host your own dedicated collector like Logstash or Flowgger.
 4. The **Users Roles** will give you the control over who can read and access your streams or dashboard.
-5. The **Indexes** will allow you to create your dedicated Kibana Index to use with your Kibana.
+5. The **Index** will allow you to create your dedicated Elasticsearch Index or retrieve the ones used to store your Kibana settings.
 6. The **Aliases** will allow you to access your data directly from your Kibana or using an Elasticsearch query.
-7. The **About** page link. The "**i**" icon located at the top, next to *Logs Data Platform*, will give you access to the About page. This page will remind you about important information like the address of your endpoints to query or push logs and your current login and plan.
-
 
 ### Let's send some logs!
 
-- The first step to use the Logs Data Platform is to create a stream and to get your token. Creating a stream is really simple: click on the link  **Add a new stream**  in the stream panel. It will then redirect to a page where you can add a name and a description to your stream:
+- The first step to use the Logs Data Platform is to create a stream and to get your token. Creating a stream is really simple: click on the link  **Add data stream**  in the data stream panel. It will then redirect to a page where you can add a name and a description to your stream:
 
 ![new Stream](images/newStream.png){.thumbnail}
 
-- Once you have done this, click on the blue button  **Create this stream**  and that's it! You have created your first stream. The button will redirect you to the stream page where you will see your stream X-OVH-TOKEN token. This value is the only token you will need to route logs to your stream. Under this token, you will have a list of your created streams.
+- Once you have done this, click on the blue button  **Save**  and that's it! You have created your first stream. The button will redirect you to the stream page where you will be able to copy the X-OVH-TOKEN token. This value is the only token you will need to route logs to your stream. Under this token, you will have a list of your created streams.
+
+![new Stream](images/streamMenu.png){.thumbnail}
 
 The menu **"..."** at the right gives you several features:
 
-- **Graylog access** gives you a direct access to your stream and its logs.
-- **Copy the token** allows you to retrieve your token and to use it in your different logs collector.
 - **Edit** allows you to edit the name and the description of your Stream.
-- **Testing** allows you to automatically copy a curl command line in your clipboard that send a log directly from your computer to your stream. Note that different formats are available.
-- **Follow in real-time** allows you to see the logs incoming into your stream in real-time. Note that Graylog also provides this functionality.
-- **Remove** Deletes your stream from the system.
+- **Graylog access** gives you a direct access to your stream and its logs.
+- **Copy the write token** allows you to retrieve your token and to use it in your different logs collector.
+- **Monitor in real-time** allows you to see the logs incoming into your stream in real-time. Note that Graylog also provides this functionality. On this page you can also **Test** different log formats from your computer to your stream. [More about](../ldp_tail/guide.en-gb.md){.ref}
+- **Manage alerts** allows you to define your alert conditions on the logs routed to the stream. [More about](../alerting/guide.en-gb.md){.ref}
+- **Archives** allows you to download the cold stored archives. [More about](../cold_storage/guide.en-gb.md){.ref}
+- **Remove** Deletes your stream from the system and all related content.
 
 Logs Data Platform supports several logs formats, each one of them has its own advantages and disadvantages. Here are the different formats available
 
@@ -67,15 +68,15 @@ Logs Data Platform supports several logs formats, each one of them has its own a
 5424](https://tools.ietf.org/html/rfc5424){.external}.
 - **Cap'n'Proto**: The most efficient log format. this is a binary format that will allows you to maintain a low footprint and high speed performance. If you want to know more about it, check the official website: [Cap'n'Proto](https://capnproto.org/){.external}.
 
-Here are the ports you can use on your cluster to send your logs. You can either use the secured ones with SSL Enabled (TLS 1.2) or use the plain unsecured ones if you can't use a SSL transport.
+Here are the ports you can use on your cluster to send your logs. You can either use the secured ones with SSL Enabled (TLS >= 1.1) or use the plain unsecured ones if you can't use a SSL transport.
 
 ||Syslog RFC5424|Gelf|LTSV line|LTSV nul|Cap’n’Proto|
 |---|---|---|---|---|---|
 |TCP/TLS|6514|12202|12201|12200|12204|
 |TCP|514|2202|2201|2200|2204|
-|UDP|514|2202|Not Supported|Not Supported|Not Supported|
+|UDP|514|2202|2201|2200|2204|
 
-You can retrieve the ports and the address of your cluster at the **About** page
+You can retrieve the ports and the address of your cluster at the **Home** page
 
 ![About page](images/about.png){.thumbnail}
 
@@ -110,7 +111,7 @@ openssl s_client -quiet -no_ign_eof -connect <your_cluster>.logs.ovh.com:6514
 
 For this format the time is in the RFC 3339 format.
 
-- To see your logs in Graylog, click on the Menu button "**...**" located at the right of your stream in the stream list. Click on the **Graylog access** button to jump straight to Graylog. You have to use the Logs Data Platform credentials that were sent by email when you ordered your account **logs-XXXXX/your_password**. If you have not written it, you can click **reset password** in the account menu at the top right of the main page or at the corresponding link in the **About** page.
+- To see your logs in Graylog, click on the Menu button "**...**" located at the right of your stream in the stream list. Click on the **Graylog access** button to jump straight to Graylog. You have to use the Logs Data Platform credentials that were sent by email when you ordered your account **logs-XXXXX/your_password**. If you have not written it, you can click **reset password** in the account menu at the top right of the main page or at the corresponding link in the **Home** page.
 
 ![Graylog access](images/graylog-access.png){.thumbnail}
 
@@ -118,7 +119,7 @@ The Graylog login page looks like this:
 
 ![login Graylog](images/login.png){.thumbnail}
 
-Once logged, you will be redirected to this page:
+Once logged, you will be redirected to this page :
 
 ![Graylog Stream](images/graylog-stream.png){.thumbnail}
 
@@ -146,7 +147,7 @@ Send several logs with different values for user_id, for example. At the left of
 
 ### Let's create a Dashboard
 
-Let's go back to the Logs Data Platform manager, we will now create a Dashboard that will allow you to explore your data in a graphical manner. It is even simpler to create a Dashboard, just click on the `Add a new dashboard`{.action} button and on the next page, add a description and a title for your Dashboard. Once created, you can use the **...** menu to access it immediately.
+Let's go back to the Logs Data Platform manager, we will now create a Dashboard that will allow you to explore your data in a graphical manner. It is even simpler to create a Dashboard, just click on the `Add a dashboard`{.action} button and on the next page, add a description and a title for your Dashboard. Once created, you can use the **...** menu to access it immediately.
 
 ![Dashboard access](images/dashboard-access.png){.thumbnail}
 
@@ -172,17 +173,14 @@ Mixing various widgets on the same dashboard give to this feature all its sense.
 
 
 ## Go further
-
 We have only scratched the surface of what Logs Data Platform can do for you. you will find soon enough how to:
 
-- [Send correctly formatted logs to use custom types as number, boolean and other stuffs](https://docs.ovh.com/gb/en/logs-data-platform/field-naming-conventions/){.external}
-- [Configure your syslog-ng to send your Linux logs to Logs Data Platform.](https://docs.ovh.com/gb/en/logs-data-platform/how-to-log-your-linux/){.external}
-- [Using Kibana and aliases to unleash the power of elasticsearch](https://docs.ovh.com/gb/en/logs-data-platform/using-kibana-with-logs/){.external}
+- [Send correctly formatted logs to use custom types as number, boolean and other stuffs](../field_naming_conventions/guide.en-gb.md){.ref}
+- [Configure your syslog-ng to send your Linux logs to Logs Data Platform.](../how_to_log_your_linux/guide.en-gb.md){.ref}
+- Using roles to allow other users of the platform to let them see yours beautiful Dashboards or let them dig in your Streams instead of doing it for them.
+- [Using Kibana and aliases to unleash the power of elasticsearch](../using_kibana_with_logs/guide.en-gb.md){.ref}
 - If you want to master Graylog, this is the place to go: [Graylog documentation](http://docs.graylog.org/en/2.0/pages/queries.html){.external}
-- Getting Started: [Quick Start](https://docs.ovh.com/gb/en/logs-data-platform/quick-start/){.external}
-- Documentation: [Guides](https://docs.ovh.com/gb/en/logs-data-platform/){.external}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms-lab){.external}
-- Mailing List: [paas.logs-subscribe@ml.ovh.net](mailto:paas.logs-subscribe@ml.ovh.net){.external}
+- Getting Started: [Quick Start](./guide.en-gb.md){.ref}
+- Documentation: [Guides](../product.en-gb.md){.ref}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-
-Join our community of users on <https://community.ovh.com/en/>.
+- Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
