@@ -1,21 +1,37 @@
 ---
-title: vScope
+title: Comprendre l'interface vScope
 slug: vscope
+excerpt: L'interface vScope vous permet de surveiller votre infrastructure
 legacy_guide_number: '2163183'
 section: Services et options OVH
+order: 01
 ---
 
+**Dernière mise à jour le 26/02/2019**
 
-
-
+## Objectif
 
 OVH vous met à disposition un outil de **supervision** et **monitoring** de vos machines virtuelles et de votre infrastructure qui se nomme **vScope**.
 
 Il s’agit d’une page web où sont rassemblées toutes les informations **utiles** sur vos ressources.
 
-Pour y accéder munissez-vous du **nom** de votre **Dedicated Cloud** ainsi que votre **utilisateur** et **mot de passe** reçu par email lors de la livraison de votre infrastructure. Vous ouvrez un nouvel onglet dans votre navigateur et renseignez les informations en utilisant l'exemple de l'image ci-dessous. Sinon un lien d'accès au **vScope** est aussi disponible dans le manager.
+**Ce guide décrit la lecture de cette interface**
+
+## En pratique
+
+Pour accèder à l'interface vScope, rendez vous sur la passerelle de votre cloud privé et cliquez sur l'icone vScope.
+
+![](images/gatewayPCC.png){.thumbnail}
+
+Sinon un lien d'accès au **vScope** est aussi disponible dans le manager.
+
+![](images/managerLink.png){.thumbnail}
+
+Dans les deux cas vous ouvrirez un nouvel onglet dans votre navigateur avec cette URL.
 
 ![](images/vScope12.png){.thumbnail}
+
+Munissez-vous de votre **utilisateur** et **mot de passe** servant à la connexion de votre client vSphere afin de vous connecter à cette interface.
 
 ![](images/vScope11.png){.thumbnail}
 
@@ -25,7 +41,7 @@ Vous êtes maintenant connecté sur la page de votre **vScope** qui regroupe l'e
 
 Nous allons détailler chaque élément de cette page.
 
-En cas de différents **data-centres** dans un même **Dedicated Cloud,** vous pouvez le choisir dans le menu déroulant. Concernant le **Last refresh** il correspond au dernier rafraîchissement de la **page Web** et non du **vScope** qui lui est mise à jour toutes les **2 à 5 minutes**.
+En cas de différents **data-centres** dans un même **Private Cloud**, vous pouvez le choisir dans le menu déroulant. Concernant le **Last refresh** il correspond au dernier rafraîchissement de la **page Web** et non du **vScope** qui lui est mise à jour toutes les **2 à 5 minutes**.
 
 ![](images/vScope1.png){.thumbnail}
 
@@ -37,7 +53,7 @@ En cliquant sur l'icone **Graphs**, vous pouvez obtenir des données **précises
 
 ![](images/vScope7.png){.thumbnail}
 
-Le menu pour les hosts affiche en détail les caractéristiques de chaque host dans votre data-centre (**Cores, vCPUs, VM**) ainsi que leurs **%** d'utilisations et enfin la connectivité réseau et le nombre de carte réseau physique (**VMNic**).
+Le menu pour les hosts affiche en détail les caractéristiques de chaque host dans votre data-centre (**Cores, vCPUs, VM**) ainsi que leurs pourcentages d'utilisation et enfin la connectivité réseau et le nombre de carte réseau physique (**VMNic**).
 
 ![](images/vScope4.png){.thumbnail}
 
@@ -56,3 +72,7 @@ Voici la dernière catégorie qui détaille l'utilisation de chaque **machine vi
 - Disk Latency
 
 ![](images/vScope6.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
