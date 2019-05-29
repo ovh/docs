@@ -48,7 +48,7 @@ One of the key advantages of using Kubernetes is the formidable ecosystem around
 
 One of the latests additions to this ecosystem is the [Agones](https://agones.dev)  project, an open-source, multiplayer, dedicated game-server hosting built on Kubernetes, developed by Google in collaboration with [Ubisoft](https://www.ubisoft.com/en-us/). The project was [announced in March](https://cloud.google.com/blog/products/gcp/introducing-agones-open-source-multiplayer-dedicated-game-server-hosting-built-on-kubernetes), and has already made quite a bit of noise...
 
-![Agones on OVH Managed Kubernetes](./images/agones-001-small.jpg)
+![Agones on OVH Managed Kubernetes](images/agones-001-small.jpg)
 
 
 ## Why Agones?
@@ -70,11 +70,11 @@ Latency is a key concern, as the competitive real-time aspects of the games ask 
 
 Every game publisher used to have their own proprietary solutions, but most on them follow a similar flow, with a matchmaking service that groups players into a match, deals with a cluster manager to provision a dedicated instance of game server and send to the players its IP address and port, to allow them to directly connect to the server and play the game.
 
-![Online gaming matchmaking and game server assignation](./images/agones-002-small.jpg)
+![Online gaming matchmaking and game server assignation](images/agones-002-small.jpg)
 
 Agones and it's Custom Controller and Custom Resource Definition replaces the complex cluster management infrastructure with a standardised, Kubernetes-based tooling and APIs. The matchmaker services interact with these APIs to spawn new game server pods and get their IP address and ports to the concerned players.
 
-![Online gaming matchmaking and game server assignation with Agones](./images/agones-003-small.jpg)
+![Online gaming matchmaking and game server assignation with Agones](images/agones-003-small.jpg)
 
 
 > [!primary]

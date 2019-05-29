@@ -59,7 +59,7 @@ You also need to have [Helm](https://docs.helm.sh/) installed on your workstatio
 
 ## OpenFaaS, a Kubernetes-native FaaS platform
 
-![OpenFaas logo](./images/openfaas-logo.png)
+![OpenFaas logo](images/openfaas-logo.png)
 
 [OpenFaaS](https://github.com/openfaas/faas) is an open source framework for building Serverless functions with Docker and Kubernetes. The project is mature, very popular and active with more than 14k stars on GitHub, a hundred of contributors, and lots of users, both corporate and private.
 
@@ -77,7 +77,7 @@ Technically, OpenFaaS is composed of several functional blocks:
 
 Functions can be written on  many languages (I have mainly tested on JavaScript, Go and Python), using handy templates or simple a Dockerfile. 
 
-![OpenFaas architecture](./images/openfaas-architecture.png)
+![OpenFaas architecture](images/openfaas-architecture.png)
 
 
 ## Deploying OpenFaaS on OVH Managed Kubernetes
@@ -374,13 +374,13 @@ Congratulations, you have written and deployed your first OpenFaaS function.
 
 You can test the UI portal by pointing your browser to your OpenFaaS gateway URL (the one you have set on the `$OPENFAAS_URL` variable), and when asked, using the user `admin` and the password you have set on the `$PASSWORD` variable.
 
-![UI Portal](./images/ui-portal-01.jpg)
+![UI Portal](images/ui-portal-01.jpg)
 
 In the UI Portal you will find the list of the deployed functions, and for each function you can find it description, invoke it and see the result.
 
-![UI Portal](./images/ui-portal-02.jpg)
+![UI Portal](images/ui-portal-02.jpg)
 
-![UI Portal](./images/ui-portal-03.jpg)
+![UI Portal](images/ui-portal-03.jpg)
 
 
 ## Where do we go from here?
