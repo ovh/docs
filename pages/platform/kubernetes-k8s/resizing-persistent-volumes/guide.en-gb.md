@@ -30,27 +30,27 @@ section: Tutorials
 **Last updated on May 29st, 2019**
 
 
-In this tutorial we are going to guide you with the resize of [Presistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) (PVs) on your OVH Managed Kubernetes Service. 
+In this tutorial we are going to guide you with the resize of [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) (PVs) on your OVH Managed Kubernetes Service.
 
 The Kubernetes `PersistentVolume` subsystem provides an API for users and administrators that abstracts details of how storage is provided from how it is consumed. To do this Kubernetes provides two API resources: `PersistentVolume` (PVs) and `PersistentVolumeClaim` (PVCs).
 
 Since Kubernetes 1.11, support for expanding PersistentVolumeClaims (PVCs) is enabled by default, and in this tutorial you will learn how to do it. 
 
 > [!warning]
-> Kubernetes PVCs resizing only allows to expand volumes, nor to decrease them.
+> Kubernetes PVCs resizing only allows to expand volumes, not to decrease them.
 
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
-You also need to know how PVs are handled on OVH Managed Kubernetes service, pleaserefer to the [Persistent Volumes on OVH Managed Kubernetes](../ovh-kubernetes-persistent-volumes/) guide.
+You also need to know how PVs are handled on OVH Managed Kubernetes service, please refer to the [Persistent Volumes on OVH Managed Kubernetes](../ovh-kubernetes-persistent-volumes/) guide.
 
 
 ## Let's make a Persistent Volume Claim
 
 To test the PVs resizing, we will need a PV associated to the cluster, i.e. we need to deploy a service making a PVC. To keep thing simple, we choose to deploy a single instance of [MySQL](https://www.mysql.com/).
 
-Let's begin by creating a `mysql-pvc.yaml` to define an initial PVC with 2 GB of alloted space:
+Let's begin by creating a `mysql-pvc.yaml` to define an initial PVC with 2 GB of allotted space:
 
 ```yaml
 apiVersion: v1
@@ -272,7 +272,7 @@ kubectl patch pvc mysql-pv-claim -p '{ "spec": { "resources": { "requests": { "s
 
 
 > [!warning]
-> Kubernetes PVCs resizing only allows to expand volumes, nor to decrease them.
+> Kubernetes PVCs resizing only allows to expand volumes, not to decrease them.
 > If you try to decrease the storage size, you will get a message like
 >
 > `The PersistentVolumeClaim "mysql-pv-claim" is invalid: spec.resources.requests.storage: Forbidden: field can not be less than previous value`
