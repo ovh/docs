@@ -11,6 +11,7 @@ section: 'Premiers pas'
 
 La plateforme Prescience est un outil d'apprentissage automatique. Ce guide vous aidera à comprendre les concepts de base derrière cet outil.
 
+
 **Découvrez comment créer un entraînement de modèle automatisé afin d'effectuer une classification.**
 
 ## À qui s'adresse ce guide ?
