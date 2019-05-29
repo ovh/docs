@@ -86,7 +86,7 @@ Agones and it's Custom Controller and Custom Resource Definition replaces the co
 
 ## Deploying Agones on OVH Managed Kubernetes
 
-There are several ways to install Agones in a Kubernetes cluster. For our test we chose the easiest one: installing with <a href="https://helm.sh/">Helm</a>.
+There are several ways to install Agones in a Kubernetes cluster. For our test we chose the easiest one: installing with [Helm](https://helm.sh/).
 
 ### Enabling creation of RBAC resources
 
@@ -175,43 +175,56 @@ Where all the `Conditions` should have status `True`.
 
 ## Deploying a game server
 
-The Agones <em>Hello world</em> is rather boring, a simple <a href="https://github.com/GoogleCloudPlatform/agones/tree/release-0.9.0/examples/simple-udp">UDP echo server</a>, so we decided to skip it and go directly to something more interesting: a <a href="https://github.com/GoogleCloudPlatform/agones/blob/release-0.9.0/examples/xonotic">Xonotic game server</a>.
+The Agones <em>Hello world</em> is rather boring, a simple [Xonotic game server](https://github.com/GoogleCloudPlatform/agones/blob/release-0.9.0/examples/xonotic).
 
-<a href="https://www.xonotic.org/">Xonotic</a> is an open-source multi-player FPS, and a rather good one, with lots of interesting game modes, maps, weapons and customization options.
+[Xonotic](https://www.xonotic.org/) is an open-source multi-player FPS, and a rather good one, with lots of interesting game modes, maps, weapons and customization options.
 
 Deploying a Xonotic game server over Agones is rather easy:
+
 <pre><code class="language-bash">kubectl create -f https://raw.githubusercontent.com/GoogleCloudPlatform/agones/release-0.9.0/examples/xonotic/gameserver.yaml</code></pre>
-The game server deployment can take some moments, so we need to wait until its status is <code>Ready</code> before using it. We can fetch the status with:
+The game server deployment can take some moments, so we need to wait until its status is `Ready` before using it. We can fetch the status with:
 <pre><code class="language-bash">kubectl get gameserver</code></pre>
-We wait until the fetch gives a <code>Ready</code> status on our game server:
+We wait until the fetch gives a `Ready` status on our game server:
 <pre class="console"><code>$ kubectl get gameserver
 NAME      STATE   ADDRESS         PORT   NODE       AGE
 xonotic   Ready   51.83.xxx.yyy   7094   node-zzz   5d
 </code></pre>
-When the game server is ready, we also get the address and the port we should use to connect to our deathmatch game (in my example, <code>51.83.xxx.yyy:7094</code>).
-<h1>It's frag time</h1>
-So now that we have a server, let's test it!
 
-We downloaded the Xonotic client for our computers (it runs on Windows, Linux and MacOS, so there is no excuse), and lauched it:
+When the game server is ready, we also get the address and the port we should use to connect to our deathmatch game (in my example, `51.83.xxx.yyy:7094`).
 
-<img src="https://blog.ovh.com/fr/blog/wp-content/uploads/2019/04/Screenshot-from-2019-04-10-02-28-13-1280x720.png" alt="Xonotic" />
+## It's frag time
 
-Then we go to the <em>Multiplayer</em> menu and enter the address and port of our game server:
+So now that you have a server, let's test it!
 
-<img src="https://blog.ovh.com/fr/blog/wp-content/uploads/2019/04/Screenshot-from-2019-04-10-02-28-41-1280x720.png" alt="Multiplayer menu" />
+Download the Xonotic client (it runs on Windows, Linux and MacOS, so there is no excuse), and launch it:
 
-And we are ready to play!
+![Xonotic](https://blog.ovh.com/fr/blog/wp-content/uploads/2019/04/Screenshot-from-2019-04-10-02-28-13-1280x720.png)
 
-<img src="https://blog.ovh.com/fr/blog/wp-content/uploads/2019/04/Screenshot-from-2019-04-10-02-35-36-1280x720.png" alt="Let's frag" />
-<h2>And on the server side?</h2>
-On the server side, we can spy how things are going for our game server, using <code>kubectl logs</code>. Let's begin by finding the pod running the game:
-<pre><code>kubectl get pods</code></pre>
-We see that our game server is running in a pod called <code>xonotic</code>:
+Then go to the <em>Multiplayer</em> menu and enter the address and port of our game server:
+
+![Multiplayer menu](https://blog.ovh.com/fr/blog/wp-content/uploads/2019/04/Screenshot-from-2019-04-10-02-28-41-1280x720.png)
+
+And you are ready to play!
+
+![Let's frag](https://blog.ovh.com/fr/blog/wp-content/uploads/2019/04/Screenshot-from-2019-04-10-02-35-36-1280x720.png)
+
+### And on the server side?
+
+On the server side, you can spy how things are going for your game server, using `kubectl logs`. Let's begin by finding the pod running the game:
+
+```
+kubectl get pods
+```
+
+You will see that your game server is running in a pod called `xonotic`:
+
 <pre class="console"><code>$ kubectl get pods 
 NAME      READY   STATUS    RESTARTS   AGE
 xonotic   2/2     Running   0          5d15h
 </code></pre>
-We can then use <code>kubectl logs</code> on it. In the pod there are two containers, the main <code>xonotic</code> one and a Agones <em>sidecar</em>, so we must specify that we want the logs of the <code>xonotic</code> container:
+
+You can then use `kubectl logs` on it. In the pod there are two containers, the main `xonotic` one and a Agones <em>sidecar</em>, so we must specify that we want the logs of the `xonotic` container:
+
 <pre class="console"><code>$ kubectl logs xonotic
 Error from server (BadRequest): a container name must be specified for pod xonotic, choose one of: [xonotic agones-gameserver-sidecar]
 $ kubectl logs xonotic xonotic
@@ -256,9 +269,11 @@ unconnected changed name to [BOT]Scorcher
 [BOT]Eureka turned into hot slag
 [...]
 </code></pre>
-<h2>Add some friends...</h2>
-The next step is mostly enjoyable: asking the collegues to connect to the server and doing a true deathmatch like in Quake 2 times.
-<h1>And now?</h1>
-We have a working game server, but we have barely uncovered the possibilities of Agones: deploying a <a href="https://agones.dev/site/docs/reference/fleet/">fleet</a> (a set of warm GameServers that are available to be allocated from), testing the <a href="https://agones.dev/site/docs/reference/fleetautoscaler/">FleetAutoscaler</a> (to automatically scale up and down a Fleet in response to demand), making some dummy <a href="https://agones.dev/site/docs/tutorials/allocator-service-go/">allocator service</a>. In future blog posts we will dive deeper into it, and explore those possibilities.
 
-And in a wider context, we are going to continue our exploratory journey on Agones. The project is still very young, an early alpha, but it shows some impressive perspectives.
+### Add some friends...
+
+The next step is mostly enjoyable: ask some friends to connect to the server and do a true deathmatch like in *Quake 2* times.
+
+## And now?
+
+You have a working game server, but this tutorial has barely uncovered the possibilities of Agones: deploying a [allocator service](https://agones.dev/site/docs/tutorials/allocator-service-go/). In future blog posts and tutorials we will dive deeper into it, and explore those possibilities.
