@@ -5,7 +5,7 @@ excerpt: 'Find out how to setup and manage Persistent Volumes on OVH Managed Kub
 section: Getting started
 ---
 
-**Last updated 29th January, 2019.**
+**Last updated May 29st, 2019.**
 
 ## Persistent Volumes
 
@@ -37,4 +37,4 @@ We currently support two Storage Classes on OVH Managed Kubernetes: *cinder-high
 
 When you create a Persistent Volume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [flexible cloud storage prices](https://www.ovh.com/world/public-cloud/storage/additional-disks/).
 
-At the present time, Cinder volumes aren't resizable. We are developing this feature, and will announce it once it is ready.
+Since Kubernetes 1.11, support for expanding PersistentVolumeClaims (PVCs) is enabled by default, and it works on Cinder volumes. In order to learn how to resize them, please refer to the [../resizing-persistent-volumes/](Resizing Persistent Volumes) tutorial. Kubernetes PVCs resizing only allows to expand volumes, nor to decrease them.
