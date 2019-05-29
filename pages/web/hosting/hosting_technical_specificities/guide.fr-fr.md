@@ -1,11 +1,10 @@
 ---
-title: Spécificités techniques liées aux hébergements mutualisés
+title: 'Spécificités techniques liées aux hébergements mutualisés'
 slug: specificites-techniques-hebergements-mutualises
-excerpt: Vous trouverez dans ce guide differentes informations techniques  liees aux specificites techniques liees aux hebergements mutualises.
-section: Configuration de l'hébergement
+excerpt: 'Vous trouverez dans ce guide differentes informations techniques  liees aux specificites techniques liees aux hebergements mutualises.'
+section: 'Configuration de l''hébergement'
 order: 6
 ---
-
 
 ## FTP
 

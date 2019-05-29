@@ -1,38 +1,38 @@
 ---
 title: 'Tester la vitesse des disques'
 slug: tester-la-vitesse-des-disques
-excerpt: 'Apprenez à tester le nombre d''opérations par seconde (IOPS) que vos disques sont en mesure d''effectuer'
-section: Base de connaissances
+excerpt: 'Vérifiez le nombre d''opérations d''entrée-sortie par seconde (IOPS) que vos disques sont en mesure d''effectuer'
+section: 'Base de connaissances'
 ---
 
-**Dernière mise à jour le 15 avril 2019**
+**Dernière mise à jour le 15/04/2019**
 
 ## Objectif
 
-Vous serez probablement invité à vérifier la vitesse de vos disques lors de vos tests. Si vous souhaitez comparer les performances de différents disques ou simplement vérifier s'ils sont satisfaisants.
+Lors de vos tests, vous serez probablement amené à vérifier la vitesse de vos disques. Que ce soit pour comparer leurs performances ou, simplement, pour vérifier qu'ils répondent à vos attentes.
 
-**Apprenez à tester le nombre d'opérations d'entrée/sortie par seconde (IOPS) que vos disques sont en mesure d'effectuer, que ce soit pour des instances ou des disques supplémentaires.**
+**Apprenez à tester le nombre d'opérations d'entrée-sortie par seconde (IOPS) que vos disques sont en mesure d'effectuer, pour vos instances ou disques supplémentaires.**
 
 ## Prérequis
 
-- Disposer d'une [Instance Public Cloud]({ovh_www}/public-cloud/instances/){.external}.
-- Disposer d’un accès administratif (root) à votre instance via SSH (pour Linux uniquement).
+- Posséder une [instance Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external}.
+- Disposer d’un accès administratif (root) à cette instance via SSH (pour Linux uniquement).
 
-## Instructions
+## En pratique
 
-### Installer la commande test
+### Installer la commande de test
 
-La commande dont vous avez besoin pour tester la vitesse de votre disque s'appelle `fio` et n'est pas installée par défaut sur votre serveur.
+La commande dont vous avez besoin pour vérifier la vitesse de votre disque s'appelle `fio`. Elle n'est pas présente par défaut sur votre serveur.
 
-Pour installer `fio`, établissez une connexion SSH à votre instance, puis exécutez la commande suivante:
+Pour installer `fio`, établissez une connexion SSH à votre instance puis exécutez la commande suivante :
 
 ```
 root@server:~$ apt-get fio install
 ```
 
-### Testez la vitesse de votre disque
+### Tester la vitesse de votre disque
 
-Pour tester la vitesse de votre disque, exécutez la commande suivante:
+Pour tester la vitesse de votre disque, exécutez la commande suivante :
 
 ```
 root@serveur:~$ fio 
@@ -46,7 +46,7 @@ root@serveur:~$ fio
 > Vous pouvez récupérer une liste d'arguments et leurs fonctions directement à partir du [guide](https://github.com/axboe/fio/blob/master/HOWTO) de fio.
 >
 
-Pour tester la vitesse d'un disque supplémentaire, vous devez monter le disque à l'aide de la commande suivante : 
+Pour tester la vitesse d'un disque supplémentaire, vous devez monter celui-ci à l'aide de la commande suivante : 
 
 ```
 root@serveur:~$ cd /mnt/disk
@@ -54,7 +54,7 @@ root@serveur:~$ cd /mnt/disk
 
 ### Analyser les données
 
-Une fois le test terminé, vous obtenez un résultat semblable à ce qui suit :
+Une fois le test terminé, vous obtenez un résultat semblable à ce qui suit :
 
 ```
 fio-2.1.11
@@ -102,19 +102,19 @@ vda: ios=0/300294, merge=0/1455, ticks=0/7431952, in_queue=7433124,
 util=99.05%
 ```
 
-La ligne qui nous intéresse est la ligne 6, qui contient l'IOPS :
+La ligne qui nous intéresse est la sixième, qui contient le nombre d'opérations d'entrée-sortie par seconde (IOPS) :
 
 ```
 write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 ```
 
-Les performances des disques sont d'environ 891 E/S par seconde.
+Les performances des disques sont ici d'environ 891 IOPS.
 
 
 ## Aller plus loin
 
-[Créer et configurer un disque supplementaire sur une instance](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/)
+[Créer et configurer un disque supplementaire sur une instance](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/){.external}.
 
-[Ajouter des espaces de stockage](../ajouter-des-espaces-de-stockage/){.external}
+[Ajouter des espaces de stockage](../ajouter-des-espaces-de-stockage/){.external}.
 
-Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
