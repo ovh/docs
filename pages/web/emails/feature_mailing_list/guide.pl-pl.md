@@ -1,10 +1,10 @@
 ---
-title: 'Hosting www: Listy mailingowe'
-excerpt: Przewodnik na temat korzystania z list mailingowych
+title: 'Tworzenie listy mailingowych'
+excerpt: 'Przewodnik na temat korzystania z list mailingowych'
 slug: hosting_www_listy_mailingowe
 legacy_guide_number: g1596
+section: 'Funkcjonalności kont e-mail'
 ---
-
 
 ## Informacje ogólne
 Lista mailingowa pozwala na kontaktowanie jednocześnie wielu abonentów, czyli na przesyłanie informacji do kilku odbiorców jednocześnie. Opcja ta może być interesująca w przypadku chęci wysłania mailingu informacyjnego na temat pojawienia się nowego produktu (sklepy internetowe) lub w przypadku chęci poinformowania o zbliżającym się spotkaniu (strona społecznościowa). 

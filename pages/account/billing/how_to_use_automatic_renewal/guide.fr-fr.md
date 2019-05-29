@@ -19,6 +19,7 @@ Si vous disposez de services OVH actifs, vous pouvez administrer leur renouvelle
 > Selon votre lieu de résidence, la législation locale, ainsi que les solutions concernées, certains détails de ce guide peuvent varier ou ne pas s'appliquer à votre situation. Si vous avez des doutes, veuillez consulter vos contrats OVH. Ceux-ci sont disponibles depuis votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, en accédant à `Mes services`{.action} puis à `Mes contrats`{.action}.
 >
 
+
 ## Prérequis
 
 - Avoir accès à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.

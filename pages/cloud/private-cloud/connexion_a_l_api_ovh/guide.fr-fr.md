@@ -1,19 +1,23 @@
 ---
 title: Connexion à l’API OVH
 slug: connexion-a-l-api-ovh
+excerpt: 
 legacy_guide_number: '7766879'
 section: Premiers pas
+order: 5
 ---
 
+**Dernière mise à jour le 14/02/2019**
 
-
+## Objectif
 
 L’API OVH permet de réaliser certaines actions parfois non disponibles dans l’espace client OVH.
 
-Elle permet également d’automatiser certaines actions, dans ce guide nous verrons plusieurs exemples.
+Elle permet également d’automatiser certaines actions.
 
-Connexion à L’API
------------------
+**Ce guide montre plusieurs exemples.**
+
+## Connexion à L’API
 
 Rendez-vous sur l’API [ovh.com](http://ovh.com){.external-link} : [http://api.ovh.com](http://api.ovh.com/){.external-link}
 
@@ -29,8 +33,7 @@ Entrez votre nic-handle et votre mot de passe. Les logins sont les mêmes que po
 
 ![](images/connection_api_log.jpg){.thumbnail}
 
-Utilisation de l’API
---------------------
+## Utilisation de l’API
 
 Rendez vous dans la partie dedicatedCloud.
 
@@ -82,9 +85,10 @@ Exemple : Je souhaite supprimer un datacentre virtuel, ce dernier étant vide, l
 
 ![](images/delete_datacenter.PNG){.thumbnail}
 
-Utilisation annexe
-------------------
+## Utilisation annexe
 
 L'API OVH peut être utilisé en complément du [SDK vSphere](https://pccdocs.ovh.net/display/VS/Installation+VMware+API+Perl) afin d'automatiser toute votre infrastructure.
 
+## Aller plus loin
 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

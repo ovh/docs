@@ -3,15 +3,18 @@ title: Déploiement d’une machine virtuelle depuis un ISO
 slug: deploiement-d-une-machine-virtuelle-depuis-un-iso
 legacy_guide_number: '7766994'
 section: Gestion des machines virtuelles
+order: 01
 ---
 
+**Dernière mise à jour le 14/02/2019**
+
+## Objectif
 
 Depuis votre client vSphere vous avez la possibilité de déployer des machines virtuelles de plusieurs manières.
 
-Il est possible de créer une machine virtuelle à partir d'un fichier ISO, depuis un modèle OVH, depuis une machine virtuelle déjà existante.
+**Ce guide explique comment déployer une machine virtuelle depuis un fichier .ISO**.
 
-Déploiement de la machine virtuelle
------------------------------------
+## Déploiement de la machine virtuelle
 
 Le déploiement de la nouvelle machine virtuelle s'effectue depuis le client vSphere, dans la vue "hôtes et clusters".
 
@@ -56,8 +59,7 @@ Ensuite vous pouvez choisir le “Système d'exploitation client”, cedernier n
 
 ![](images/deploy_vm_guest_os.png){.thumbnail}
 
-Configuration de la machine virtuelle
--------------------------------------
+## Configuration de la machine virtuelle
 
 Dans cette partie, vous pourrez configurer les ressources de votre machine virtuelle.
 
@@ -94,4 +96,6 @@ La console s'ouvrira dans un nouvel onglet, et après avoir suivi l'installation
 
 Une fois votre machine virtuelle installée, il est recommandé de déconnecter l'ISO dans les paramètres et de mettre votre lecteur CD/DVD en "périphérique client". Dans le cas contraire, vous ne pourrez pas déplacer la machine virtuelle.
 
+## Aller plus loin
 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

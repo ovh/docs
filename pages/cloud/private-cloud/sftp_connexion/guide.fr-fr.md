@@ -1,8 +1,9 @@
 ---
-title: 'Se connecter en SFTP'
+title: Se connecter en SFTP
 slug: connexion-en-sftp
-excerpt: 'Apprenez à vous connecter à votre Private Cloud en SFTP'
-section: 'Premiers pas'
+excerpt: Apprenez à vous connecter à votre Private Cloud en SFTP
+section: Premiers pas
+order: 3
 ---
 
 **Dernière mise à jour le 14/11/2018**

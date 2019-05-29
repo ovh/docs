@@ -1,24 +1,56 @@
 ---
 title: Quel format de disque choisir
 slug: quel-format-de-disque-choisir
+excerpt: Découvrez les différents types de formats de disque 
 legacy_guide_number: '1441955'
 section: Gestion des machines virtuelles
+order: 04
 ---
 
-Il existe 3 formats de disques possibles :
+**Dernière mise à jour le 28/01/2019**
 
-- thin provisioning
-    - La place occupée par disk de la VM (vmdk) est de la taille de l'espace occupé par l'OS. On peut alors allouer un disque de 1To qui sera reconnu comme 1To par l'OS, mais n'occupera sur le datastore que l'espace occupé par le guest OS (par exemple 20Go). Ce qui veut dire qu'on pourrait allouer sur un datastore de 1.2To une capacité de 50 To (50 VM de 1To alloué) mais n'occuper que 1To (20Go occupé / VM dans notre exemple).
-    - On ne peut pas réclamé l'espace qui a été occupé. Exemple : si on occupe 40 Go sur un disk thin de 100Go et que l'on supprime 20Go de données dans la VM, l'espace occupé sur le datastore sera toujours de 40Go et l'espace alloué de 100Go.
-- thick provisioning
-    - Le VMDK de la VM occupe sur le datastore tout l'espace alloué. Une VM de 100Go en thick alloué occupera 100Go d'espace sur le datastore.
-        - Eager zero
-            - Le VMDK est rempli de zéro à la création du disk sur le volume VMFS
-        - Lazy zero
-            - L'espace alloué est réservé au VMDK, mais les zéro sont écris au moment où la VM a besoin de l'espace disk.
+## Objectifs
+
+VMware propose 3 formats de disque pour les machines virtuelles.
+
+** Ce guide explique les différences entre ces formats **
+
+## Thin provisioning
+
+- Le *Thin provisioning* est un type de format de disque, faisant consommer uniquement l'espace dont il a besoin sur le datastore et grandi au fur et à mesure.
+
+On peut alors allouer un disque de 1To qui sera reconnu comme 1To par le système d'exploitation de la VM, mais n'occupera sur le datastore que l'espace occupé par le *guest OS* (par exemple 20Go). 
+
+Ce qui veut dire qu'on pourrait allouer sur un datastore de 1.2To une capacité de 50 To (50 VM de 1To alloué) mais n'occuper que 1To (20Go occupé / VM dans notre exemple).
+
+> [!warning]
+>
+> Il est important dans cette situation de maitriser la consommation d'écriture de ces VMs, afin de ne pas augmenter de manière conséquente les différents disques des VMs et ainsi remplir le datastore. 
+> Le datastore rempli empechera toute nouvelle écriture et pourra potentiellement provoquer l'arrêt des VMs.
+>
+
+- On ne peut pas réclamé l'espace qui a été occupé. Exemple : si on occupe 40 Go sur un disk thin de 100Go et que l'on supprime 20Go de données dans la VM, l'espace occupé sur le datastore sera toujours de 40Go et l'espace alloué de 100Go.
 
 
-Exemple pour des VMs de 100Go avec un Guest OS de 40Go :
+## Thick provisioning Eager zero
+
+- Le *Thick provisioning Eager zero* est un type de format de disque occupant sur le datastore tout l'espace alloué. 
+
+Une VM de 100Go en *thick* alloué occupera 100Go d'espace sur le datastore.
+
+- Le disque de la VM est rempli de zéro à la création du disk sur le volume VMFS
+
+## Thick provisioning Lazy zero
+
+- Le *Thick provisioning Lazy zero* est un type de format de disque occupant sur le datastore tout l'espace alloué.
+
+Une VM de 100Go en *thick* alloué occupera 100Go d'espace sur le datastore.
+
+- L'espace alloué est réservé au disque de la VM, mais les zéro sont écris au moment où la VM a besoin de l'espace disque.
+
+## Exemple
+
+Exemple pour des VMs de 100Go avec un *Guest OS* de 40Go :
 
 
 |Type de disk|Espace alloué|Block zeroed|Espace occupé|
@@ -26,3 +58,13 @@ Exemple pour des VMs de 100Go avec un Guest OS de 40Go :
 |Eager Zero|A la création de VM|A la création de VM|100Go|
 |Lazy Zero|A la création de VM|Quand le block est écrit la première fois|100Go|
 |Thin|Quand le block est écrit la première fois|Quand le block est écrit la première fois|40Go|
+
+## Format de disque chez OVH
+
+Sur le stockage de type datastore d'une infrastructure Private Cloud, seul le *Thin provisioning* est disponible.
+
+Sur le stockage vSan, les 3 types de formats sont possibles.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

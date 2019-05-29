@@ -1,8 +1,7 @@
----
-title: Configurer une IP sur une machine virtuelle
-slug: configuration-ip-machine-virtuelle
+lug: configuration-ip-machine-virtuelle
 excerpt: Apprenez à configurer une IP sur une machine virtuelle
-section: Premiers pas
+section: Gestion des machines virtuelles
+order: 05
 ---
 
 **Dernière mise à jour le 28/11/2017**

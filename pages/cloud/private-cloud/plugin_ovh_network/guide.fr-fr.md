@@ -1,9 +1,10 @@
 ---
-title: 'Utiliser le plugin OVH Network'
+title: Utiliser le plugin OVH Network
 slug: plugin-ovh-network
-excerpt: 'Découvrez comment utiliser le plugin OVH Network sur votre offre Private Cloud'
+excerpt: Découvrez comment utiliser le plugin OVH Network sur votre offre Private Cloud
 legacy_guide_number: '7766560'
-section: 'Fonctionnalités OVH'
+section: Fonctionnalités OVH
+order: 03
 ---
 
 **Dernière mise à jour le 06/08/2018**

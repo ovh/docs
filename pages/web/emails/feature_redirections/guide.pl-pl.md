@@ -1,10 +1,10 @@
 ---
-title: 'Hosting www: Przekierowania e-mail'
+title: 'Tworzenie przekierowania e-mail'
 excerpt: 'Hosting www: Przekierowania e-mail'
 slug: hosting_www_przekierowania_e-mail
 legacy_guide_number: g2001
+section: 'Funkcjonalności kont e-mail'
 ---
-
 
 ## Czym jest przekierowanie e-mail?
 Przekierowanie pozwala na przekierowanie wiadomości e-mail otrzymanej na pierwszy adres na jedna lub kilka innych skrzynek e-mail. 

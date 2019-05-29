@@ -1,12 +1,25 @@
 ---
 title: Comment déployer une NSX Edge Gateway
 slug: comment-deployer-une-nsx-edge-gateway
+excerpt: Découvrez comment déployer une edge gateway NSX
 legacy_guide_number: '7766362'
 section: NSX
+order: 02
 ---
 
-Afin de réaliser ce guide, il vous faut [accéder à l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
+**Dernière mise à jour le 27/02/2019**
 
+## Objectif
+
+Une *edge gataway NSX* est une appliance VMware permettant d'accèder à tous les services NSX Edge tels que le pare-feu, NAT, DHCP, VPN, l'équilibrage de charge.
+
+**Ce guide explique comment procéder au déploiement de cette appliance**
+
+## Prérequis
+
+- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
+
+## En pratique
 
 Pour commencer, rendez-vous dans la partie `NSX Edges` afin de trouver la liste des Edges déjà déployées. Dans l'exemple ci-dessous, nous avons déjà une Edge déployée nommée `TestFW`.
 
@@ -139,3 +152,7 @@ Quelques instants plus tard, la Edge est déployée et prête à être utilisée
 Il vous suffit de retourner dans la liste des Edges et d'effectuer un double clic sur votre Edge pour accéder à sa configuration.
 
 ![Gateway ajoutée et finalisée](images/gateway_added.png)
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

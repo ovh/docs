@@ -1,8 +1,9 @@
 ---
-title: 'Utiliser la double authentification (2FA)'
+title: Utilisation de la double authentification (2FA)
 slug: utilisation-2FA
-excerpt: 'Apprenez à mette en place la double authentification pour protéger votre infrastructure'
-section: 'Services et options OVH'
+excerpt: Apprenez à mette en place la double authentification pour protéger votre infrastructure
+section: Fonctionnalités OVH
+order: 05
 ---
 
 **Dernière mise à jour le 11 janvier 2019**
@@ -21,7 +22,7 @@ La mise en place d'une double authentification permet de protéger l'accès à v
 
 ## En pratique
 
-### Activer la double authentification
+### Activation de la double authentification
 
 Afin de mettre en place la double authentification, il est nécessaire de se connecter sur l'interface certifiée de votre Private Cloud.
 
@@ -31,8 +32,7 @@ Via la gateway de votre Private Cloud (https://pcc-xxx-xxx-xxx-xxx.ovh.com) :
 
 ![Gateway Private Cloud](images/gatewayPCC.jpg){.thumbnail}
 
-Ou directement via l'URL https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ ( attention à ne pas oublier le "/" final de l'adresse).
-
+Ou directement via l'URL https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ ( attention à ne pas oublier le "/" final de l'adrese).
 
 Une fois connecté à l'interface de gestion, cliquez sur `Change Password`{.action}
 
@@ -56,7 +56,7 @@ Rendez-vous dans la partie `Operation validation`{.action} , chargez l'opératio
 > Dans le cadre d'un mot de passe oublié, il sera nécessaire de lancer d'abord la procédure de "Password lost" , durant laquelle la mise en place d'une double authentification vous sera proposée.
 >
 
-### Se connecter
+### Connexion
 
 Vous pouvez maintenant vous connecter à votre client *web* via son url habituelle, et arriverez alors sur cette page.
 
@@ -74,7 +74,7 @@ Il est désormais nécessaire de renseigner le token généré par l'application
 > Pour les clients disposant d'une infrastructure en version 6.0, l'accès au client vSphere (disponible uniquement sur Windows) ne sera plus possible. L'accès se fera alors exclusivement par le client vSphere web.
 >
 
-### Créer un nouvel utilisateur
+### Création d'un nouvel utilisateur
 
 Lors de la création d'un nouvel utilisateur, vous avez maintenant le choix d'attribuer ou non un rôle de *token validator*.
 
@@ -82,7 +82,7 @@ Dans les deux cas de figure, il sera nécessaire de modifier le mot de passe à 
 
 La seule différence sera l'autonomie ou non de l'utilisateur pour la validation du token.
 
-### Autoriser une application
+### Autorisation d'application
 
 Il est possible d'utiliser plusieurs applications tierces nécessitant la connexion au vCenter.
 Ces applications doivent être préalablement autorisées au travers de la politique d'accès au vCenter qui est paramètrable dans votre [espace client](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#securite)
