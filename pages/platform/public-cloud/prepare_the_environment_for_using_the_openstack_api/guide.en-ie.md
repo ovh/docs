@@ -1,145 +1,149 @@
 ---
-title: Prepare the environment for using the OpenStack API
-excerpt: Prepare the environment for using the OpenStack API
+title: 'Preparing an environment for using the OpenStack API'
 slug: prepare_the_environment_for_using_the_openstack_api
-legacy_guide_number: g1851
+excerpt: 'Install the OpenStack environment to manage your Instances via the API'
+section: 'Via command line clients'
 ---
 
+**Last updated 21st January 2019**
 
-## 
-In order to manage your Public Cloud services from a terminal, you can install OpenStack clients with Python.
-This will allow you to manage Object Storage and automate the different actions which you can run with these clients.
+## Objective
 
-This guide explains how to install the OpenStack clients.
+You can manage Public Cloud services using commands sent from the system console, once you have downloaded and installed OpenStack tools.
 
+With the OpenStack API, you can automate your management by generating scripts. The OpenStack Nova client can be used to manage Instances and disk space. With the OpenStack Glance client, you can manage images and backups, while the Swift client can be used to manage object storage space.
 
-## With Debian
+**Find out how to install these OpenStack tools.**
 
-- Open a terminal, or an SSH connection for the environment that you want to configure
+## Requirements
 
-- [Become root](https://www.ovh.co.uk/g1786.become_root_and_select_a_password)
+- **root** access to the environment you want to configure
 
-- Update repositories:
+## Instructions
 
-```
-root@vps187763:~# apt-get update
-```
+### On Debian
 
+Open the terminal, and connect to the environment you want to prepare via SSH.
 
-- Install clients for Nova (compute) and glance (image service)
+Update the packet cache using the `apt-get update` command:
 
-```
-root@vps187763:~# apt-get install python-glanceclient python-novaclient -y
-```
-
-
-
-Once this stage is complete, we recommend that you create a specific user, so that you are not working as the root user.
-
-- For help with the nova and glance command lines, enter the following command:
-
-```
-admin@vps187763:~$ nova help
+```sh
+apt-get update
 ```
 
+Use the command below to install the Nova client (compute application), Glance (image service) and Swift:
 
-
-```
-admin@vps187763:~$ glance help
-```
-
-
-- Complete documentation for the OpenStack API can be found [here](http://docs.openstack.org/cli-reference/content/)
-
-
-
-
-## Under CentOS
-
-- Open a terminal, or an SSH connection for the environment you want to configure
-
-- [Become root](https://www.ovh.co.uk/g1786.become_root_and_select_a_password)
-
-- Update repositories:
-
-```
-root@vps187763:~# apt-get update
+```sh
+apt-get install python-openstackclient python-novaclient -y
 ```
 
+After you have completed this step, we recommend creating a special user without root access.
 
-- Install rpm rdo-release:
+To access the help tools, run the following command:
 
-```
-[root@vps187769 ~]# yum install -y https://rdoproject.org/repos/rdo-release.rpm
-```
-
-
-- Install nova
-
-```
-[root@vps187769 ~]# yum install -y python-novaclient
+```sh
+openstack --help
+nova help
 ```
 
+> [!primary]
+> 
+> The documentation for the OpenStack API is available [here](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> 
 
-- Install glance
+### On CentOS
 
+Open the terminal, and connect to the environment you want to prepare via SSH.
+
+Update the packet cache using the following command:
+
+```sh
+yum update -y
 ```
-[root@vps187769 ~]# yum install -y python-novaclient
-```
+Install the rdo-release RPM with the following command:
 
-
-
-Source: [https://www.rdoproject.org/Quickstart](https://www.rdoproject.org/Quickstart)
-Once this stage is complete, we recommend that you create a specific user, so that you are not working as the root user.
-
-- For help with the nova and glance command lines, enter the following command:
-
-```
-[root@vps187769 ~]# nova help
-```
-
-
-
-```
-[root@vps187769 ~]# glance help
+```sh
+yum install -y https://rdoproject.org/repos/rdo-release.rpm
 ```
 
+Then the OpenStack Swift client:
 
-- Complete documentation for the OpenStack API can be found [here](http://docs.openstack.org/cli-reference/content/)
-
-
-
-
-## 
-
-- Download and install version 
-[2.7.10 of Python](https://www.python.org/downloads/release/python-2710/)
-
-- Launch a command promt
-
-- Install PIP with easy_install :
-
-
-
-![](images/img_3060.jpg){.thumbnail}
-
-- Install Swift
-
-
-
-![](images/img_3061.jpg){.thumbnail}
-
-- For help with the command lind, use this command:
-
-
-```
-C:\Windows\system32>swift --help
+```sh
+yum install -y python-openstackclient
 ```
 
+And finally, the Nova client:
 
+```sh
+yum install -y python-novaclient
+```
 
+After you have completed this step, we recommend creating a special user without root access.
 
+To access the help tools, run the following command:
 
-## 
- 
+```sh
+openstack --help
+nova help
+```
 
+> [!primary]
+> 
+> The documentation for the OpenStack API is available [here](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> 
+
+### On Windows
+
+Download and install Python version 2.7.10. You can choose to add the Python programming language automatically to Path, by ticking this option in the installation configuration:
+
+![Automatic installation](images/1_preparation_openstack_environment_windows.png){.thumbnail}
+
+You can also install it yourself. To do this, follow the actions described below:
+
+#### Step 1: Edit the system’s environment variables.
+
+Search for the system’s environment variable settings, and go to “Edit system environment variables”:
+
+![Environment variable settings](images/2_preparation_openstack_environment_windows.png){.thumbnail}
+
+#### Step 2: Edit the system settings.
+
+Go to the `Advanced`{.action} tab, and click `Environment variables`{.action} to edit the settings.
+
+![Performance settings](images/3_preparation_openstack_environment_windows.png){.thumbnail}
+
+#### Step 3: Configure the environment variables. 
+
+In the ‘System variables’ section, select ‘New’, attribute the name “PYTHON_HOME”, and add the access path to Python. By default, it will be: ‘C:\\Python27’.
+
+![Add the access path](images/4_edit_system_variables.png){.thumbnail}
+
+#### Step 4: Add the path for the variables.
+
+Once you have added Python, edit the ‘Path’ field in the system variables, and add the following to the end of the path:
+
+`...;%PYTHON_HOME%\;%PYTHON_HOME%\Script`
+
+#### Step 5: Restart Windows.
+
+The changes you have made will become effective after the system has been rebooted.
+
+#### Step 6: Install the OpenStack client.
+
+As an administrator, open the program in the command line (CMD), and install the OpenStack client using the following command:
+
+```sh
+# pip install python-openstackclient
+```
+
+If the operation is completed properly, you will see a summary:
+
+![Automatic installation](images/5_preparation_openstack_environment_windows.png){.thumbnail}
+
+You can check the installation version in the CMD (command line) window that has just opened, by entering ‘python-V’ from any system location.
+
+![Checking](images/6_preparation_openstack_environment_windows.png){.thumbnail}
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
