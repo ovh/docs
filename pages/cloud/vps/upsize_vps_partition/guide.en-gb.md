@@ -21,8 +21,14 @@ When you upgrade your VPS, you might need to repartition your storage space. Her
 
 ## Requirements
 
+### Linux
+
 - SSH (root) access to the VPS
 - server rebooted in [rescue mode](https://docs.ovh.com/gb/en/vps/rescue/)
+
+### Windows
+
+- RDP (Administrator) access to the VPS 
 
 ## Instructions
 
@@ -31,6 +37,8 @@ Following an upgrade, the RAM and processor (CPU) will be automatically adjusted
 ### Back up your data.
 
 Attempting to extend a partition can lead to data loss. As a result, we **strongly recommend** backing up the data on your VPS.
+
+## Linux
 
 ### Unmount the partition.
 
@@ -226,6 +234,25 @@ Then use the first superblock backup to check and repair the filesystem:
 ```sh
 fsck -b 32768 /dev/sdb1
 ```
+
+## Windows
+
+### Go to File and Storage Services.
+
+You can find this in the Server Manager:
+
+![File and Storage Services](images/file-and-storage.png){.thumbnail}
+
+### Resizing the Volume
+
+Right click on the C: volume and select "Extend Volume..."
+
+You will then be prompted to choose your new volume size:
+
+![Set New Volume Size](images/extend.png){.thumbnail}
+
+Enter your desired size and hit "OK". Your volume will now be extended.
+
 
 ## Go further
 
