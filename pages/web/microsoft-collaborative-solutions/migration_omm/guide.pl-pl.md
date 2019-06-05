@@ -15,7 +15,7 @@ section: 'Przeniesienie konta'
 
 ## Wymagania początkowe
 
-- Korzystanie z usługi poczty elektronicznej w OVH, takiej jak [Exchange](https://www.ovh.pl/emaile/){.external}, [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external} lub MX Plan (w postaci pakietu kont MX Plan lub kont e-mail dostępnych w ramach [hostingu OVH](https://www.ovh.pl/hosting/){.external})
+- Korzystanie z usługi poczty elektronicznej w OVH, takiej jak [Exchange](https://www.ovh.pl/emaile/){.external}, [E-mail Pro](https://www.ovh.pl/emaile/email-pro/){.external} lub MX Plan (w postaci pakietu kont MX Plan lub kont e-mail dostępnych w ramach [hostingu OVH](https://www.ovh.pl/hosting/){.external})
 - Dane dostępowe do kont e-mail, które chcesz przenieść (konta źródłowe)
 - Dane dostępowe do kont e-mail OVH, na które przeniesione zostaną dane (konta docelowe)
 

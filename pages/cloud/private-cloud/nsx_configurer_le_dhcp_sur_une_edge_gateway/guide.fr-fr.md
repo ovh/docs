@@ -1,17 +1,26 @@
 ---
 title: Configurer le DHCP sur une Edge NSX
 slug: configurer-le-dhcp-sur-une-edge-nsx
+excerpt: Découvrez comment attribuer des IPs à vo machines virtuelles à l'aide du service DHCP
 section: NSX
+order: 03
 ---
 
+**Dernière mise à jour le 27/02/2019**
 
+## Objectif
 
 Le DHCP permet une attribution automatique d'IP privée aux VMs situées derrière la Edge, dans une plage d'IP privées souhaitées.
 
-Accès à l'interface
--------------------
+**Ce guide explique comment paramètrer cette option**
 
-Afin de réaliser ce guide, il vous faut [accéder à l'interface de gestion NSX]({legacy}7766338) et avoir [déployé une NSX Edge Gateway]({legacy}7766362).
+## Prérequis
+
+- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
+
+## En pratique
+
+### Accès à l'interface
 
 Pour commencer, rendez-vous dans la partie "NSX Edge" afin de trouver la liste des Edge déjà déployées. Effectuez ensuite un double-clic sur votre Edge pour accéder à sa configuration.
 
@@ -22,8 +31,7 @@ Cliquer sur l'onglet "Manage" puis "DHCP" pour découvrir des sous-menus que nou
 
 ![](images/DHCP1.PNG){.thumbnail}
 
-Menu "Pools"
-------------
+### Menu "Pools"
 
 Le menu "Pools" vous permet dans un premier temps d'activer ou de désactiver le service DHCP de la Edge via le bouton "DHCP Service Status". Par défaut, le DHCP est désactivé.
 
@@ -55,8 +63,7 @@ Voici un exemple de configuration :
 
 ![](images/DHCP4.PNG){.thumbnail}
 
-Menu "Bindings"
----------------
+### Menu "Bindings"
 
 Ce menu a la même fonction que le menu "Pools" mais pour une attribution manuelle de certaines IP. Pour cela, il vous suffit de cliquer sur le bouton "+" (petit plus vert).
 
@@ -98,4 +105,6 @@ Si nous prenons un exemple de chaque règles nous obtenons :
 
 ![](images/DHCP8.PNG){.thumbnail}
 
+## Aller plus loin
 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -5,7 +5,7 @@ slug: exposed-apis-software-versions-reserved-resources
 section: Technical resources
 ---
 
-**Last updated 25th February, 2019.**
+**Last updated May 29th, 2019.**
 
 We list here some details on the APIs we expose, the software versions we use and the resources we reserve on each node.
 
@@ -20,12 +20,19 @@ We have added a [Kubernetes section](https://api.ovh.com/console/#/kube) to the 
 
 ## Kubernetes versions
 
-Currently we support both Kubernetes 1.11 and 1.12.
+Currently we support both Kubernetes 1.11, 1.12, 1.13 and 1.14
 
-By default, new clusters are generated on Kubernetes 1.12, but you can switch to Kubernetes 1.11 using the [OVH Cloud Manager](https://www.ovh.com/manager/cloud/).
+By default, new clusters are generated on Kubernetes 1.13, but you can switch to another of the supported versions using the [OVH Cloud Manager](https://www.ovh.com/manager/cloud/).
 
 We will closely follow the Kubernetes releases, and new versions will be regularly available.
 
+
+## OS and Docker versions
+
+The OS and Docker demon version on your nodes will be regularly updated. Current versions are:
+
+- OS: CoreOS 1967.6.0
+- Docker: 18.06.1-ce
 
 ## Reserved resources
 

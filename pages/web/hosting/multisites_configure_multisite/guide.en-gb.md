@@ -53,7 +53,7 @@ If the domain name does not appear in the list, it is considered external (to yo
 
 > [!primary]
 >
-> This step only applies if you have selected “Add an OVH-registered domain”. For non-OVH registered domain names, go to [Step 3.2: Add a non-OVH registered domain name](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/#step-32-add-a-non-ovh-registered-domain-name){.external}.
+> This step only applies if you have selected “Add an OVH-registered domain”. For non-OVH registered domain names, go to [Step 3.2: Add a non-OVH registered domain name](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/#step-32-add-an-non-ovh-registered-domain){.external}.
 >
 
 You will now need to customise the way you add your domain. Depending on the [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} you have purchased, some options may not be available.
@@ -63,8 +63,8 @@ You will now need to customise the way you add your domain. Depending on the [OV
 |Domain|The domain that you have selected will be automatically entered by default. You can also add subdomains (e.g. blog.mypersonaldomain.ovh), and create the corresponding www subdomain at the same time (e.g. www.mypersonaldomain.ovh). This domain will be the website that you want to put online.|
 |Root directory|Defines the directory where the domain will be hosted on your storage space. This space is where the website files will be put online. For example, for blog.mypersonaldomain.ovh, the root directory will be ‘blog’. If the directory does not exist, it will be created automatically.|
 |Enable IPv6|Enables IPv6 protocol on the selected domain. Find out more about this on [our IP page](https://www.ovh.co.uk/web-hosting/ip.xml){.external}.|
-|SSL|Provides you with a secure connection (HTTPS://) on the selected domain. Find out more about this on [our SSL page](https://www.ovh.co.uk/ssl/){.external}. By enabling SSL and the CDN (Content Delivery Network), you can also benefit from **HTTP2** protocol.|
-|Enable CDN|Enables the CDN (which replicates and caches your website’s static elements, e.g. images) on the selected domain. To find out more about this, go to [our CDN page](https://www.ovh.co.uk/web-hosting/cdn.xml){.external}. By enabling SSL and the CDN, you can also benefit from **HTTP2** protocol.|
+|SSL|Provides you with a secure connection (HTTPS://) on the selected domain. Find out more about this on [our SSL page](https://www.ovh.co.uk/ssl/){.external}. By enabling SSL and the CDN (Content Delivery Network), you can also benefit from **HTTP2** protocol (HTTP2 enabled by default on Gravelines).|
+|Enable CDN|Enables the CDN (which replicates and caches your website’s static elements, e.g. images) on the selected domain. To find out more about this, go to [our CDN page](https://www.ovh.co.uk/web-hosting/cdn.xml){.external}. By enabling SSL and the CDN, you can also benefit from **HTTP2** protocol (HTTP2 enabled by default on Gravelines).|
 |Geolocated IP|Provides you with a geolocated IP address (from a country list) for the selected domain. To find out more about this, go to [our IP page](https://www.ovh.co.uk/web-hosting/ip.xml){.external}.|
 |Enable firewall|Enables a firewall (request analysis) for the selected domain. To find out more about this, go to [our ModSecurity page](https://www.ovh.co.uk/web-hosting/mod_security.xml){.external}.|
 |Separate logs|Activates a new space for logs on the selected domain. You will need to choose a domain name from the list. The selected domain will be used as an access name for this new space.  To find out more about this, go to [our Web Statistics page](https://www.ovh.co.uk/web-hosting/website_statistics.xml){.external}.|
@@ -116,7 +116,7 @@ If you would like to find the elements that need to be changed in your domain na
 
 |Record|Where to find this information|Description|
 |---|---|---|
-|TXT|Go to the `Multisite`{.action} tab, then click **ovhcontrol token configuration**|Allows OVH to ensure that you have the appropriate rights to add any non-OVH registered domain names. Ensure that you create the TXT record with the subdomain **ovhcontrol** (e.g. ovhcontrol.mypersonaldomain.ovh).|
+|TXT|Go to the `Multisite`{.action} tab, then click **ovhcontrol token configuration**|Allows OVH to ensure that you have the appropriate rights to add any non-OVH registered domain names. Ensure that you create the TXT record with the subdomain **ovhcontrol** (e.g. ovhcontrol.mypersonaldomain.ovh). You have to validate only the main domain, not every subdomains.|
 |A and AAAA|In the `General information`{.action} tab, next to **IPv4** and **IPv6**|Makes your domain display the website you will put online using your Web Hosting plan.|
 
 ### Step 4: Put your website online.

@@ -35,7 +35,7 @@ You will now receive an activation email, and your backup storage will be config
 
 ### Set up access control
 
-Access to your Backup storage is restricted by IP address using an access control list (ACL). By default, all IPs in your account have FTP/FTPS access to the backup storage. The other protocols (NFS and CIFS) are not authorised by default. To authorise them, you will need to create an ACL.
+Access to your Backup storage is restricted by IP address using an access control list (ACL). Only IPs in your OVH Account will be able to access the Storage, once they are whitelisted in the ACL. They The other protocols (NFS and CIFS) are not authorised by default. To authorise them, you will need to create an ACL.
 
 #### Add backup access
 
@@ -62,17 +62,17 @@ You will now be able to access your server's backup storage from the IP block yo
 
 To change the protocols for an authorised IP block, click the pencil icon for the IP block you want to modify, and then select/deselect the desired protocols. When you have finished, click the tick button to save your changes.
 
-![Modifying access](images/backup-storage-13-edited.png){.thumbnail}
+![Modifying access](images/modify_access.png){.thumbnail}
 
 #### Deleting Access
 
 To revoke authorisation for an IP block, click the trash can icon that appears at the end of the line.
 
-![Modifying access](images/backup-storage-14-edited.png){.thumbnail}
+![Modifying access](images/delete_access.png){.thumbnail}
 
 And then click to confirm.
 
-![Modifying access](images/backup-storage-14-edited.png){.thumbnail}
+![Modifying access](images/Confirm_IP_Removal.png){.thumbnail}
 
 Access to the backup storage will now be revoked for that IP block.
 

@@ -5,13 +5,21 @@ excerpt: This guide will show you how to reboot your VPS in rescue mode
 section: Diagnostic and rescue mode
 ---
 
-**Last updated 17th April 2018**
+**Last updated 17th April 2019**
 
 ## Objective
 
-In rescue mode, you can reboot your server on an independent OVH configuration. Your disk can then be mounted like an independent partition.
+Rescue mode is a tool on your VPS. You can use it to boot your VPS into a temporary Operating System, in order to diagnose and resolve issues on your primary OS. 
 
-The advantage of this is that you can carry out tests and make configuration changes when it is most convenient for you, and when it will have the least impact on the operations performed by your server. This also allows you to correct any configuration errors made, which prevented you from accessing the server from the drive.
+These issues could include:
+
+  - Resetting your root password
+  - Diagnosing network problems
+  - Repairing broken Operating System
+  - Fixing a software firewall misconfiguration
+  - Testing disk performance
+
+  Performing checks in Rescue Mode helps you determine if an issue is software or hardware related.
 
 > [!warning]
 >

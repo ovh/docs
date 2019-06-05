@@ -48,9 +48,9 @@ Here is an example:
 ![Quota usage](images/quota_used.png){.thumbnail}
 
 
-- **21.74 MB** represents files that have already been cached. The CDN has been able to respond directly to requests for these files.
+- **189595 Bytes** represents files that have already been cached. The CDN has been able to respond directly to requests for these files.
 
-- **72.96 MB** represents files called directly from the CDN’s back-end. The caching rules applied to your domain will determine which files are called from the back-end, and which files are cached.
+- **705431 Bytes** represents files called directly from the CDN’s back-end. The caching rules applied to your domain will determine which files are called from the back-end, and which files are cached.
 
 
 Whether the files are stored in the cache or called from the back-end through the CDN, **the traffic generated will be subtracted from your quota allowance in both instances.** For this reason, we recommend creating a specific subdomain that will be called for files to be cached, and keeping the domains pointed to your CDN’s back-end for all other files.

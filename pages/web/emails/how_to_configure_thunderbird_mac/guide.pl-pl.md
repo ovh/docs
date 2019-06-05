@@ -1,10 +1,10 @@
 ---
-title: 'Hosting www: Konfiguracja konta e-mail w programie Thunderbird Mac'
+title: 'Konfiguracja konta e-mail w programie Thunderbird na Mac OS'
 excerpt: ''
 slug: hosting_www_konfiguracja_konta_e-mail_w_programie_thunderbird_mac
 legacy_guide_number: g1911
+section: 'Konfiguracja na komputerze'
 ---
-
 
 ## Część 1: Uruchomienie programu
 Przejdź do aplikacji "Thunderbird" zainstalowanej na komputerze z systemem Mac.

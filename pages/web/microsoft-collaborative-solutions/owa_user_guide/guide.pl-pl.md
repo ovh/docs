@@ -1,7 +1,7 @@
 ---
-title: 'rzewodnik dotyczący korzystania z Outlook Web App (OWA)'
-excerpt: 'Exchange 2016: przewodnik dotyczący korzystania z Outlook Web App'
+title: 'Przewodnik dotyczący korzystania z Outlook Web App (OWA)'
 slug: exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app
+excerpt: 'Exchange 2016: przewodnik dotyczący korzystania z Outlook Web App'
 section: 'Outlook Web Application (Aplikacja WWW)'
 legacy_guide_number: g1918
 ---

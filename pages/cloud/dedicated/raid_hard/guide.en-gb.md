@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to verify the state of your RAID and the 
 section: 'Server Management'
 ---
 
-**Last updated 21st August 2018**
+**Last updated 10th May 2019**
 
 ## Objective
 
@@ -147,7 +147,29 @@ In this example, **/dev/sda** is the first RAID, and **/dev/sdb** is the second.
 > If one of your hard drives is showing SMART errors, you should perform a full backup of your data as soon as possible and contact our support team. Our support team will need the slot number and device ID in order to identify the faulty disk.
 > 
 
-#### Step 3: Resynchronising the RAID
+#### Step 3: Verify the health of the RAID controller
+To make sure, your RAID controller is working correctly, you can list all information with 
+```sh
+MegaCli -AdpAllInfo -aALL
+```
+
+The most important section of the output is the error counter:
+```
+Error Counters
+                ================
+Memory Correctable Errors   : 0
+Memory Uncorrectable Errors : 0
+```
+If the counted errors are more than zero, you should create a backup of your data and contact the support with the full output. Then, the support will schedule an intervention for the replacement of the RAID controller.
+
+For a succinct output of only the error counters, the command can be expanded by a grep:
+```sh
+MegaCli -AdpAllInfo -aALL | grep "Errors"
+Memory Correctable Errors   : 0
+Memory Uncorrectable Errors : 0
+```
+
+#### Step 4: Resynchronising the RAID
 
 If you had one or more hard drives replaced, the RAID will re-synchronise automatically. You can use this command to see which hard drives are currently rebuilding:
 
@@ -187,7 +209,8 @@ MegaCli -PDRbld -ShowProg -PhysDrv [EncID:SlotID] -aALL (Or : storcli /c0/eEncID
 
 The command will retrieve the enclosure ID and slot ID, as shown above.
 
-#### Step 4: Using CacheCade
+
+#### Step 5a: Using CacheCade
 
 > [!primary]
 >
@@ -205,6 +228,14 @@ To see which RAID array is associated with the CacheCade:
 ```sh
 MegaCli -CfgCacheCadeDsply -a0 | grep "Associated LDs"
 ```
+
+#### Step 5b: Checking the status of the backup battery unit
+
+to receive a full list of status parameters for the BBU, use this command:
+```sh
+MegaCli -AdpBbuCmd -aALL
+```
+the most important value to check is if `Battery State` is **Optimal**. If there are indicators of a failing battery, create a backup of your data and provide the outpout of this command to the support, when creating the Ticket.
 
 ### Using the LSI RAID controller
 

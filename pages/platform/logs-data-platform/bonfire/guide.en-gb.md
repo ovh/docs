@@ -63,25 +63,25 @@ Typing your password can be avoided by using the `-k` switch that will store you
 To avoid repeating argument on the command line, you can create a config file (./bonfire.cfg or ~/.bonfire.cfg) to store where you want to connect:
 
 ```conf hl_lines="2 4 7"
- [node:default]
- host=<your_cluster>.logs.ovh.com
- endpoint=/api
- username=<your_ldp_username>
- tls=True
- port=443
- default_stream=<your_graylog_stream_id>
+[node:default]
+host=<your_cluster>.logs.ovh.com
+endpoint=/api
+username=<your_ldp_username>
+tls=True
+port=443
+default_stream=<your_graylog_stream_id>
 ```
 
 You can define other named nodes and call them with the --node switch.
 
 ```conf hl_lines="2 4 7"
- [node:sadev]
- host=<your_cluster>.logs.ovh.com
- enpoint=/api
- username=<your_ldp_username>
- tls=True
- port=443
- default_stream=<your_graylog_stream_id>
+[node:sadev]
+host=<your_cluster>.logs.ovh.com
+enpoint=/api
+username=<your_ldp_username>
+tls=True
+port=443
+default_stream=<your_graylog_stream_id>
 ```
 
 You can now call named node:

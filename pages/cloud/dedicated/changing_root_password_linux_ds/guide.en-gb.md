@@ -72,7 +72,11 @@ In the example above, the system partition is /dev/hda1.
 
 > [!primary]
 >
-If your server has a software RAID configuration, you will need to mount your raid volume (usually /dev/mdX). 
+If your server has a RAID configuration, you will need to mount your raid volume.
+
+- If you are using Softraid, your root partition will be /dev/mdX
+- If you are using Hardraid, your root partition will be /dev/sdX
+
 >
 
 #### Step 2: Mount the system partition

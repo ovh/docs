@@ -5,17 +5,17 @@ excerpt: 'Find out how to configure your Email Pro solution'
 section: General
 ---
 
-**Last updated 28th November 2018**
+**Last updated 26th March 2019**
 
 ## Objective
 
-You have just purchased an Email Pro solution, which gives you affordable professional email addresses to support or start up your business.
+You have just purchased a Email Pro solution, which gives you affordable professional email addresses to support or start up your business.
 
 **Find out how to configure your Email Pro solution.**
 
 ## Requirements
 
-- an [Email Pro](https://www.ovh.ie/emails/email-pro/){.external} solution
+- an [Email Pro]({ovh_www}/emails/email-pro/){.external} solution
 - an email confirming that your Email Pro solution has been set up
 - a domain name
 - access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
@@ -77,10 +77,11 @@ At the end of the configuration process, we will ask you to check the informatio
 
 Once you have added the domain name as an associated domain, check its configuration using the table that pops up.
 
-You can use the `Diagnosis`{.action} column to check the domain name’s MX record configuration. A red box will appear if these configurations need to be changed.
+You can use the `Diagnosis`{.action} column to check the domain name’s DNS configuration. A red box will appear if these configurations need to be changed.
 
 - **If you chose automatic configuration when you added the domain:** it can take a few hours before it appears on the OVH Control Panel.
-- **If you entered a non-OVH domain name:** click on the red box to view the changes you need to make. If you have just made the changes, they may take a few hours to show up on the OVH Control Panel.
+
+- **If you entered a non-OVH domain name:** click on the red box to view the changes you need to make. For a CNAME record, you can refer to our guide on [ Creating a CNAME record to add an associated domain](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/). For an MX record, you can refer to our guide on[Add an MX record to your domain name’s configuration](https://docs.ovh.com/gb/en/domains/web_hosting_configuring_mx_with_the_ovh_dns_zone/). If you have just made the changes, they may take a few hours to show up on the OVH Control Panel.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
 
@@ -113,9 +114,9 @@ Once the information is complete, click on the `Next`{.action} button, check the
 
 ### Step 5: Use your email addresses.
 
-Once you have configured your accounts, you can start using them straight away. To do this, OVH offers an online application (a *web app*). RoundCube is available at the following address: <https://pro1.mail.ovh.net>.You will need to enter your email credentials.
+Once you have configured your accounts, you can start using them straight away. To do this, OVH offers an online application (a *web app*). Roundcube is available [here](https://www.ovh.co.uk/mail/){.external}, and you will need to enter your email credentials.
 
-If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our documentation via this portal: <https://docs.ovh.com/ie/en/emails-pro/>.  If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
+If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our [configuration guides](../). If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
 
 |Server type|Server name|Security type|Port|
 |---|---|---|---|

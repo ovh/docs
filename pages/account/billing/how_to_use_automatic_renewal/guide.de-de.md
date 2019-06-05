@@ -93,7 +93,7 @@ Sie können die automatische Verlängerung eines Dienstes aktivieren oder deakti
 
 Lesen Sie die angezeigten Informationen und bestätigen Sie die Änderung mit `Bestätigen`{.action}.
 
-Bitte beachten Sie, dass die Deaktivierung der Verlängerung eines Dienstes nicht mit einer Kündigung gleichzusetzen ist. Der Dienst bleibt bis zu seinem Ablaufdatum aktiv, d. h. Sie können auswählen, wann Sie ihn vor diesem Datum verlängern möchten. Wenn Sie einen Dienst am Ablaufdatum endgültig kündigen möchten, lesen Sie die Anleitung „[Dienste verwalten](/https://docs.ovh.com/de/billing/ovh-dienste-verwalten/#dienst-am-ablaufdatum-kundigen){.external}“.
+Bitte beachten Sie, dass die Deaktivierung der Verlängerung eines Dienstes nicht mit einer Kündigung gleichzusetzen ist. Der Dienst bleibt bis zu seinem Ablaufdatum aktiv, d. h. Sie können auswählen, wann Sie ihn vor diesem Datum verlängern möchten. Wenn Sie einen Dienst am Ablaufdatum endgültig kündigen möchten, lesen Sie die Anleitung „[Dienste verwalten](https://docs.ovh.com/de/billing/ovh-dienste-verwalten/#dienst-am-ablaufdatum-kundigen){.external}“.
 
 ![automatische Verlängerung verwalten](images/manage-automatic-renewal-step7.png){.thumbnail} 
 

@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 2
 ---
 
-**Dernière mise à jour le 05/03/2019**
+**Dernière mise à jour le 16/04/2019**
 
 ## Objectif
 
@@ -61,17 +61,24 @@ Assurez-vous d'être en possession des fichiers du site que vous souhaitez mettr
 
 #### 2. Se connecter à l'espace de stockage.
 
-Grâce à un identifiant FTP, un mot de passe et une adresse de serveur, vous serez en mesure de vous connecter à votre espace de stockage. Ces éléments vous ont été communiqués dans l'e-mail vous notifiant l'installation de votre hébergement. Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](../modifier-mot-de-passe-utilisateur-ftp/){.external}.
+Pour vous connecter à votre espace de stockage, vous devez être en possession des éléments suivants :
 
-Pour récupérer l'adresse du serveur ou l'identifiant vous permettant d'accéder à votre espace de stockage, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `FTP - SSH`{.action}. Pour vous aider dans cette démarche, nous vous invitons également à consulter cette documentation : [« Se connecter à l’espace de stockage de son hébergement web »](../connexion-espace-stockage-ftp-hebergement-web/){.external}.
+- un utilisateur FTP ou SSH actif ;
+- le mot de passe associé à cet utilisateur FTP ou SSH ;
+- l’adresse de ce serveur ;
+- le port de connexion au serveur.
+
+Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’installation de votre hébergement web. Si vous n’êtes pas en possession de ces derniers, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
 
 ![siteinstallation](images/get-website-online-step1.png){.thumbnail}
+
+Les informations liées à votre espace de stockage apparaissent alors. Vous devriez pouvoir retrouver les éléments requis pour vous connecter à celui-ci. Si nécessaire, nous vous invitons à consulter notre guide : [« Se connecter à l’espace de stockage de son hébergement web »](../connexion-espace-stockage-ftp-hebergement-web/){.external}. Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](../modifier-mot-de-passe-utilisateur-ftp/){.external}.
 
 Une fois tous les éléments en votre possession, la connexion à l'espace de stockage peut s'effectuer de trois manières différentes :
 
 - **utiliser le FTP Explorer d'OVH** : vous permet d'accéder à votre espace de stockage depuis votre navigateur internet. Pour l'utiliser, toujours depuis l'onglet `FTP - SSH`{.action}, cliquez sur le bouton `FTP Explorer`{.action} ;
 
-- **utiliser un logiciel compatible avec le protocole FTP** : vous devrez installer un logiciel compatible sur votre ordinateur (comme FileZilla par exemple). Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVH n'ayant pas créé celui-ci ;
+- **utiliser un logiciel compatible avec le protocole FTP ou SFTP** : vous devrez installer un logiciel compatible sur votre ordinateur, comme FileZilla. Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVH n'ayant pas créé celui-ci ;
 
 - **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées, ainsi qu'une offre d'[hébergement web OVH]({ovh_www}/hebergement-web/){.external} spécifique sont nécessaires pour utiliser ce type d'accès.
 

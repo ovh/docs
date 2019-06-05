@@ -4,7 +4,7 @@ slug: firewall-network
 section: 'Network Management'
 ---
 
-**Last updated 12th September 2018**
+**Last updated 2nd April 2019**
 
 ## Objective
 
@@ -86,7 +86,7 @@ For each rule you must choose:
 > [!primary]
 >
 > - Priority 0: we advise authorising TCP protocol on all the IPs with an `established`{.action} option. With the established option, you can verify that the packet is part of a session that has previously been opened (already started). If you do not authorise it, the server will not receive the TCP protocol feedback from the SYN/ACK requests.
-> - Priority 19: refuses all IPv4 protocol if any rules before the 19th (last rule) are not filled in.
+> - Priority 19: we advise to refuse all IPv4 protocol traffic that has not been accepted by any earlier rule.
 > 
 
 ### Configuration example
@@ -95,9 +95,9 @@ To make sure that only the SSH (22), HTTP (80), HTTPS (443) and UDP (10,000) por
 
 ![Configuration example](images/exemple.png){.thumbnail}
 
-The rules are sorted chronologically from 0 (the first rule read) to 19 (the last). The chain stops being scanned as soon as a rule is applied to the packet.
+The rules are sorted from 0 (the first rule read) to 19 (the last). The chain stops being scanned as soon as a rule is applied to the packet.
 
-For example, a packet for TCP port 80 will be captured by rule 2, and the rules that come after will not be applied. A packet for TCP port 25 will only be captured at the last rule (19) which will block it, because OVH does not authorise communication on port 25 in the previous rules.
+For example, a packet for TCP port 80 will be captured by rule 2, and the rules that come after will not be applied. A packet for TCP port 25 will only be captured at the last rule (19) which will block it, because the Firewall does not authorise communication on port 25 in the previous rules.
 
 > [!warning]
 >
