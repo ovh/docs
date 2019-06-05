@@ -70,16 +70,16 @@ Now that you have your three 3 keys (**AK**, **AS**, **CK**), you can sign reque
 "$1$" + SHA1_HEX(AS+"+"+CK+"+"+METHOD+"+"+QUERY+"+"+BODY+"+"+TSTAMP)
 ```
 
-For example, if you carry out a GET command on the address https://eu.api.ovh.com/1.0/domains/, the pre-hash signature is:
+For example, if you carry out a GET command on the address https://eu.api.ovh.com/1.0/domain/, the pre-hash signature is:
 
 ```sh
-EXEgWIz07P0HYwtQDs7cNIqCiQaWSuHF+MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1+GET+https://eu.api.ovh.com/1.0/domains/++1366560945
+EXEgWIz07P0HYwtQDs7cNIqCiQaWSuHF+MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1+GET+https://eu.api.ovh.com/1.0/domain/++1366560945
 ```
 
 And post-hash:
 
 ```sh
-$1$d3705e8afb27a0d2970a322b96550abfc67bb798
+$1$6a77f43f2871db97a029f1d1d81c4dcd3c6f7265
 ```
 
 ### Managing timestamps
@@ -105,9 +105,9 @@ cURL example:
 ```sh
 $ curl -H 'X-Ovh-Application:7kbG7Bk7S9Nt7ZSV'                   \
 -H 'X-Ovh-Timestamp:1366560945'                                  \
--H 'X-Ovh-Signature:$1$d3705e8afb27a0d2970a322b96550abfc67bb798' \
+-H 'X-Ovh-Signature:$1$6a77f43f2871db97a029f1d1d81c4dcd3c6f7265' \
 -H 'X-Ovh-Consumer:MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1'             \
-https://eu.api.ovh.com/1.0/domain
+https://eu.api.ovh.com/1.0/domain/
 ["ovh.com","ovh.net"]
 ```
 
