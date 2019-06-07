@@ -11,7 +11,7 @@ section: Logging libraries
 
 This guide will show you how to push your logs to Logs Data Platform using Python 3.x.
 
-[logging-ldp](https://github.com/ovh/logging-ldp){.external} is intended to be a high performance logging formatter and handler to send log entries into Logs Data Platform.
+[logging-ldp](https://github.com/ovh/python-logging-ldp){.external} is intended to be a high performance logging formatter and handler to send log entries into Logs Data Platform.
 
 This package includes:
 
@@ -48,7 +48,7 @@ Successfully installed logging-ldp-<version> setuptools-18.3.1
 
 #### Using sources
 
-logging-ldp is available on the [OVH github repository](https://github.com/ovh/logging-ldp){.external} and can be installed manually:
+logging-ldp is available on the [OVH github repository](https://github.com/ovh/python-logging-ldp){.external} and can be installed manually:
 
 ```shell-session
 $ git clone git@github.com:ovh/logging-ldp.git
