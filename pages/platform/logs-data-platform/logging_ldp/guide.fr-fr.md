@@ -11,7 +11,7 @@ section: Logging libraries
 
 This guide will show you how to push your logs to Logs Data Platform using Python 3.x.
 
-[logging-ldp](https://github.com/ovh/logging-ldp){.external} is intended to be a high performance logging formatter and handler to send log entries into Logs Data Platform.
+[logging-ldp](https://github.com/ovh/python-logging-ldp){.external} is intended to be a high performance logging formatter and handler to send log entries into Logs Data Platform.
 
 This package includes:
 
@@ -40,7 +40,7 @@ You can use [pip](https://pip.pypa.io/en/stable/){.external} to install logging-
 ```shell-session
 $ pip3 install --upgrade pip
 [...]
-Successfully installed pip-<version> 
+Successfully installed pip-<version>
 $ pip3 install --upgrade logging-ldp
 [...]
 Successfully installed logging-ldp-<version> setuptools-18.3.1
@@ -48,19 +48,19 @@ Successfully installed logging-ldp-<version> setuptools-18.3.1
 
 #### Using sources
 
-logging-ldp is available on the [OVH github repository](https://github.com/ovh/logging-ldp){.external} and can be installed manually:
+logging-ldp is available on the [OVH github repository](https://github.com/ovh/python-logging-ldp){.external} and can be installed manually:
 
 ```shell-session
-$ git clone git@github.com:ovh/logging-ldp.git
-Cloning into 'logging-ldp'...
+$ git clone git@github.com:ovh/python-logging-ldp.git
+Cloning into 'python-logging-ldp'...
 remote: Counting objects: 58, done.
 remote: Compressing objects: 100% (53/53), done.
 remote: Total 58 (delta 26), reused 0 (delta 0)
 Receiving objects: 100% (58/58), 9.62 KiB | 0 bytes/s, done.
 Resolving deltas: 100% (26/26), done.
 Checking connectivity... done.
- 
-$ cd logging-ldp
+
+$ cd python-logging-ldp
 $ python3 setup.py install
 [...]
 Using /usr/lib/python3.x/site-packages
@@ -81,7 +81,7 @@ def setup_logging():
     handler.setFormatter(LDPGELFFormatter(token="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"))
     logging.getLogger().addHandler(handler)
     logging.getLogger().setLevel(logging.INFO)
-    
+
 if __name__ == '__main__':
     setup_logging()
 
@@ -90,7 +90,7 @@ if __name__ == '__main__':
 
 ### Send additional static meta data
 
-To automatically append meta data on all your logs, you can implement an 
+To automatically append meta data on all your logs, you can implement an
 alternate Schema:
 
 ```python hl_lines="16 17"
@@ -103,13 +103,13 @@ from logging_ldp.schemas import LDPSchema
 def setup_logging():
     # Load you config there
     config = dict(name="myapp", version="0.0.1")
-    
+
     # Define a custom Schema
     class MyApp(LDPSchema):
         app_name = fields.Constant(config['name'])
         app_version = fields.Constant(config['version'])
-       
-    handler = LDPGELFTCPSocketHandler(hostname="gra1.logs.ovh.com") 
+
+    handler = LDPGELFTCPSocketHandler(hostname="gra1.logs.ovh.com")
     handler.setFormatter(LDPGELFFormatter(token="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", schema=MyApp))
     logging.getLogger().addHandler(handler)
     logging.getLogger().setLevel(logging.INFO)
@@ -142,7 +142,7 @@ The log entry sent to Graylog will be something like:
 
 ### Send additional intermittent meta data
 
-To define occasional meta data, you can define a Schema with Nested sub-items: 
+To define occasional meta data, you can define a Schema with Nested sub-items:
 
 ```python hl_lines="18 20"
 import logging

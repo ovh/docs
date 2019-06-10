@@ -5,13 +5,13 @@ excerpt: 'Découvrez comment installer le Real Time Monitoring sur Linux ou Wind
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 06 mai 2019**
+**Dernière mise à jour le 06 juin 2019**
 
 ## Objectif
 
-Le Real Time Monitoring (RTM) permet de surveiller partiellement votre serveur et son activité. Dans votre Espace client, vous trouverez des informations sur la CPU (unité centrale de traitement), la mémoire vive (RAM), les ports ouverts, etc. Pour afficher ces informations, vous devez installer le package RTM.
+Le Real Time Monitoring (RTM) permet de surveiller partiellement votre serveur et son activité. Dans votre Espace client, vous trouverez des informations sur la CPU (unité centrale de traitement), la mémoire vive (RAM), les partitions disques, les ports ouverts, etc. Pour afficher ces informations, vous devez installer le package RTM.
 
-**Ce guide va vous expliquer comment installer le RTM sur Linux ou Windows.**
+**Ce guide va vous expliquer comment installer le RTM sur Linux.**
 
 ## Prérequis
 
@@ -21,7 +21,7 @@ Le Real Time Monitoring (RTM) permet de surveiller partiellement votre serveur e
 
 ## Instructions
 
-Une fois installé le RTM via votre Espace client, vous pouvez surveiller votre serveur dans la section `Dédié`{.action}. Sur la page principale de votre serveur, vous pouvez trouver les informations de surveillance sous `Real Time Monitoring` :
+Une fois RTM installé via votre Espace client, vous pouvez surveiller votre serveur dans la section `Dédié`{.action}. Sur la page principale de votre serveur, vous pouvez trouver les informations de surveillance sous `Real Time Monitoring` :
 
 ![Real Time Monitoring](images/rtm.png){.thumbnail}
 
@@ -31,18 +31,20 @@ Une fois installé le RTM via votre Espace client, vous pouvez surveiller votre 
 > 
 
 ### RTM sur Linux
-Sur les serveurs dédiés, RTM recueille les informations sur le disque, le RAID et le matériel.
+Sur les serveurs dédiés, RTM recueille les informations en continu sur le CPU, la RAM, les disques, le RAID et le matériel.
 
 
 #### Composant
 
 ##### Beamium
 
-Beamium collecte les métriques des terminaux HTTP, telles que _http://127.0.0.1/metrics_, et prend en charge les formats Prometheus et Warp10 / Sensision. 
+https://github.com/ovh/beamium
 
-Une fois gratté, Beamium peut filtrer et transférer les données vers une plate-forme Warp10 Time Series. Lors de l’acquisition de métriques, Beamium utilise DFO (Disk Fail Over) pour éviter la perte de métriques due à des problèmes de réseau ou à un service indisponible.
+Beamium collecte les métriques des terminaux HTTP, telles que _http://127.0.0.1:9100/metrics_, et prend en charge les formats Prometheus Sensision. 
 
-Beamium est écrit en Rust pour garantir efficacité, faible encombrement et performance déterministe.
+Une fois implémenté, Beamium peut filtrer et transférer les données vers une plateforme Warp 10™ Time Series. Lors de l’acquisition de métriques, il utilise DFO (Disk Fail Over) pour éviter d'éventuelles pertes liées à des problèmes réseau ou à un service indisponible.
+
+Beamium est écrit en Rust pour garantir efficacité, faible encombrement et performance.
 
 Exemple de configuration :
 
@@ -58,7 +60,7 @@ scrapers:
 sinks:
   metrics:
     url: https://rtm.ovh.net/
-    token: 57e05f1526873a6b912637ee4c44b525413f6764db700494ff6c4014
+    token: 526873a6b912637ee4c44b525413
     Size : 1000000
     selector: (os|rtm).*
     ttl: 60
@@ -74,11 +76,13 @@ parameters:
   scan-period: 60000
   log-file: /var/log/beamium/beamium.log
 ```
-
+Le fichier de configuration sera automatiquement remplis une fois l'installation terminée.
 
 ##### Noderig
 
-Noderig recueille les métriques du système d'exploitation et les expose via un point de terminaison HTTP Sensision. Chaque collecteur est facilement configurable grâce à un simple curseur de niveau
+https://github.com/ovh/noderig
+
+Noderig recueille les métriques du système d'exploitation et les expose via une url HTTP (http://127.0.0.1:9100/metrics). Chaque collecteur est facilement configurable grâce à un simple curseur de niveau
 
 Métriques Noderig:
 
@@ -113,11 +117,11 @@ collectors: /opt/noderig
 
 **rtmHourly** :
 
-\- Recueillir des processus de mémoire supérieure, des ports d'écoute, du nombre de processus en cours et des actifs.
+\- Recueillir des informations sur les 'top' processus, les ports ouverts, le nombre de processus en cours.
 
 **rtmRaidCheck** :
 
-\- Vérifier la santé du raid.
+\- Vérifier la santé du raid. (si disponible)
 
 ### Installer RTM sur Linux
 
@@ -127,10 +131,11 @@ Une fois que vous vous êtes connecté via SSH sur votre serveur, exécutez simp
 wget -qO - https://last-public-ovh-infra-yak.snap.mirrors.ovh.net/yak/archives/apply.sh | OVH_PUPPET_MANIFEST=distribyak/catalog/master/puppet/manifests/common/rtmv2.pp bash
 ```
 
-### Installation manuelle de Debian / Ubuntu
+#### Installation manuelle de Debian / Ubuntu
 
 Ajouter rtm et le référentiel de métriques pour Debian :
-
+ou `<distribution codename>` est le nom de votre distribution (exemple: 'jessie')
+  
 ```sh
 vi /etc/apt/sources.list.d/rtm.list
 #metrics repo
@@ -140,7 +145,8 @@ deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/debian <distribution codenam
 ```
 
 Ajouter RTM et le référentiel de métriques pour ubuntu
-
+ou `<distribution codename>` est le nom de votre distribution (exemple: 'xenial')
+  
 ```sh
 vi /etc/apt/sources.list.d/rtm.list
 # metrics repo
@@ -185,24 +191,54 @@ repo_gpgcheck=1
 gpgkey=http://last.public.ovh.metrics.snap.mirrors.ovh.net/pub.key
 ```
 
-##### Installer le client RTM :
-
+Installer les paquets RTM :
 
 ```sh
 yum update
 yum install ovh-rtm-metrics-toolkit
 ```
 
+### FreeBSD
+
+Ajouter RTM et le référentiel de métriques pour FreeBSD :
+
+```sh
+mkdir -p /usr/local/etc/pkg/repos 
+
+vi /usr/local/etc/pkg/repos/OVH.conf
+
+# OVH mirror
+RTM: {
+  url: "http://last.public.ovh.rtm.snap.mirrors.ovh.net/FreeBSD-pkg/${ABI}/latest",
+  mirror_type: "none",
+  enabled: yes
+}
+Metrics: {
+  url: "http://last-public-ovh-metrics.snap.mirrors.ovh.net/FreeBSD-pkg/${ABI}/latest",
+  mirror_type: "none",
+  enabled: yes
+}
+```
+Installer les paquets RTM :
+
+```sh
+pkg install -y noderig beamium ovh-rtm-binaries
+pkg install -y ovh-rtm-metrics-toolkit
+```
+Démarrer les services :
+```sh
+service noderig start
+service beamium start
+```
+
 ### Installer RTM sur Windows
 
-Une fois que vous êtes connecté au bureau à distance, suivez les étapes suivantes :
-
-- Installez ActivePerl si vous n'avez jamais installé RTM auparavant. Vous pouvez le télécharger ici :<http://www.activestate.com/activeperl/>
-- Téléchargez et installez la dernière version de RTM ici : <ftp://ftp.ovh.net/made-in-ovh/rtm/windows/>.
-- Faites un clic droit sur le fichier, puis cliquez sur `Exécuter en tant qu'administrateur`{.action}.
+Le paquet RTM n'est pas encore compatible pour Windows. (en cours)
 
 ## Aller plus loin
 
 [Adresses IP pour la surveillance OVH](https://docs.ovh.com/fr/dedicated/monitoring-ip-ovh/){.external}.
+
+[Visualiser vos donnees](https://docs.ovh.com/gb/en/metrics/usecase-visualize/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
