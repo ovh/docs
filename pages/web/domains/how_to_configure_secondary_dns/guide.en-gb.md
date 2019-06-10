@@ -52,7 +52,7 @@ You may be asked to verify that you are the owner of this domain. You will in th
 An error occurred when requesting to add the domain to the secondary DNS. (First we need to verify you are the owner of this domain. To do so, please add a TXT field on your DNS zone for the domain dedie-domaine.com, with the subdomain 'ownercheck' and the following value: '339ea8d0'. Once done and your zone reloaded, try again (you don't need to wait for DNS propagation).)
 In this case you will need to add a TXT field for the ownercheck.yourdomain.com sub-domain in the domain's current working DNS zone:
 
-code]ownercheck TXT "339ea8d0"[/code]
+[code]ownercheck TXT "339ea8d0"[/code]
 
 
 ## 2. Delete a domain
