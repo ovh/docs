@@ -137,6 +137,21 @@ helm upgrade openfaas --install openfaas/openfaas \
     --set serviceType=LoadBalancer
 ```
 
+
+> [!warning]
+> ### Troubleshooting
+>
+>If you get an `Error: Unauthorized` when installing the `openfaas/openfaas` chart, please try the following steps:
+>
+> 
+>     kubectl create serviceaccount --namespace kube-system tiller
+>     kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
+>     kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
+>     helm init --skip-refresh --upgrade --service-account-tiller
+>
+> 
+
+
 As suggested in the install message, you can verify that OpenFaaS has started by running:
 
 ```
@@ -171,6 +186,18 @@ You can now use the CLI to log into the gateway. The CLI need the public URL of 
 kubectl get svc -n openfaas gateway-external -o wide
 ```
 
+> [!warning]
+> At this moment you can get an `EXTERNAL-IP &lt;none>`, or `EXTERNAL-IP &lt;PENDING>`.
+>
+> <pre class="console"><code>$ kubectl get svc -n openfaas gateway-external -o wide
+> NAME               TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)          AGE    
+> gateway-external   LoadBalancer   10.3.xxx.yyy  PENDINF                            8080:30012/TCP   10s   
+> </code></pre>
+>
+>The problem come from the the `LoadBalancer` creation, that is asynchronous, and the provisioning of the load balancer can take several minutes.
+> Please try again in a few minutes, and you will normally see the newly assigned URL.
+
+
 Export the URL to a `OPENFAAS_URL` variable
 
 ```
@@ -190,49 +217,49 @@ Now you're connected to the gateway, and you can send commands to the OpenFaaS p
 
 By default, there is no function installed on your OpenFaaS platform, as you can verify with the `faas-cli list` command.
 
-> [!primary]
-> In my own deployment (URLs and IP changed), the precedent operations gave:
->
->
-> <pre class="console"><code>$ kubectl get svc -n openfaas gateway-external -o wide
->  NAME               TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)          AGE     SELECTOR
->  gateway-external   LoadBalancer   10.3.xxx.yyy   xxxrt657xx.lb.c1.gra.k8s.ovh.net   8080:30012/TCP   9m10s   app=gateway
->
->  $ export OPENFAAS_URL=xxxrt657xx.lb.c1.gra.k8s.ovh.net:8080
->
->  $ echo -n $PASSWORD | ./faas-cli login -g $OPENFAAS_URL -u admin --password-stdin
->  Calling the OpenFaaS server to validate the credentials...
->  WARNING! Communication is not secure, please consider using HTTPS. Letsencrypt.org offers free SSL/TLS certificates.
->  credentials saved for admin http://xxxrt657xx.lb.c1.gra.k8s.ovh.net:8080
->  
-> $ ./faas-cli version
->   ___                   _____           ____
->  / _ \ _ __   ___ _ __ |  ___|_ _  __ _/ ___|
-> | | | | '_ \ / _ \ '_ \| |_ / _` |/ _` \___ \
-> | |_| | |_) |  __/ | | |  _| (_| | (_| |___) |
->  \___/| .__/ \___|_| |_|_|  \__,_|\__,_|____/
->       |_|
-> 
-> CLI:
->  commit:  b42d0703b6136cac7b0d06fa2b212c468b0cff92
->  version: 0.8.11
-> 
-> Gateway
->  uri:     http://xxxrt657xx.lb.c1.gra.k8s.ovh.net:8080
->  version: 0.13.0
->  sha:     fa93655d90d1518b04e7cfca7d7548d7d133a34e
->  commit:  Update test for metrics server
-> 
-> 
-> Provider
->  name:          faas-netes
->  orchestration: kubernetes
->  version:       0.7.5 
->  sha:           4d3671bae8993cf3fde2da9845818a668a009617
->
-> $ ./faas-cli list
->Function                      	Invocations    	Replicas
-> </code></pre>
+
+In my own deployment (URLs and IP changed), the precedent operations gave:
+
+
+<pre class="console"><code>$ kubectl get svc -n openfaas gateway-external -o wide
+NAME               TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)          AGE     SELECTOR
+gateway-external   LoadBalancer   10.3.xxx.yyy   xxxrt657xx.lb.c1.gra.k8s.ovh.net   8080:30012/TCP   9m10s   app=gateway
+
+$ export OPENFAAS_URL=xxxrt657xx.lb.c1.gra.k8s.ovh.net:8080
+
+$ echo -n $PASSWORD | ./faas-cli login -g $OPENFAAS_URL -u admin --password-stdin
+Calling the OpenFaaS server to validate the credentials...
+WARNING! Communication is not secure, please consider using HTTPS. Letsencrypt.org offers free SSL/TLS certificates.
+credentials saved for admin http://xxxrt657xx.lb.c1.gra.k8s.ovh.net:8080
+ 
+$ ./faas-cli version
+  ___                   _____           ____
+ / _ \ _ __   ___ _ __ |  ___|_ _  __ _/ ___|
+| | | | '_ \ / _ \ '_ \| |_ / _` |/ _` \___ \
+| |_| | |_) |  __/ | | |  _| (_| | (_| |___) |
+ \___/| .__/ \___|_| |_|_|  \__,_|\__,_|____/
+      |_|
+
+CLI:
+ commit:  b42d0703b6136cac7b0d06fa2b212c468b0cff92
+ version: 0.8.11
+
+Gateway
+ uri:     http://xxxrt657xx.lb.c1.gra.k8s.ovh.net:8080
+ version: 0.13.0
+ sha:     fa93655d90d1518b04e7cfca7d7548d7d133a34e
+ commit:  Update test for metrics server
+
+
+Provider
+ name:          faas-netes
+ orchestration: kubernetes
+ version:       0.7.5 
+ sha:           4d3671bae8993cf3fde2da9845818a668a009617
+
+$ ./faas-cli list
+Function                      	Invocations    	Replicas
+</code></pre>
 
 
 ## Deploying and invoking functions

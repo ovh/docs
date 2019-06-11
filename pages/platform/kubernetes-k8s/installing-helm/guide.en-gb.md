@@ -56,6 +56,15 @@ Once you have `helm` ready, you can use it to install `tiller` on your cluster. 
 kubectl cluster-info
 ```
 
+Before installing Tiller (the Helm server-side component) on your cluster, you need to create a service account for it, and assigning this account admin roles in your cluster:
+
+```bash
+kubectl create serviceaccount --namespace kube-system tiller
+kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
+kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
+```
+
+
 You can then install `tiller` on your Kubernetes cluster in one step:
 
 ```bash
@@ -123,6 +132,7 @@ helm install --set master.persistence.enabled=false stable/redis
 >     kubectl create serviceaccount --namespace kube-system tiller
 >     kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
 >     kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
+>     helm init --skip-refresh --upgrade --service-account-tiller
 > 
 
 This will install the required elements and initialise the services. And at the end, it will give you the connection parameters for your new Redis database:
