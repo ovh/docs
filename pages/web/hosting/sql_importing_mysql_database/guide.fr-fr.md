@@ -1,173 +1,173 @@
 ---
-title: 'Importare un backup nel database di un hosting Web'
-excerpt: 'Come importare un backup in un database di un hosting Web OVH'
-id: '1393'
-slug: web_hosting_come_importare_un_database_mysql
-legacy_guide_number: g1393
+title: 'Importer une sauvegarde dans la base de données d''un hébergement web'
+slug: mutualise-guide-importation-dune-base-de-donnees-mysql
+excerpt: 'Découvrez comment importer une sauvegarde dans la base de données de votre hébergement web OVH'
+section: 'Bases de données'
+order: 4
 ---
 
-**Ultimo aggiornamento: 06/03/2019**
+**Dernière mise à jour le 29/05/2018**
 
-## Obiettivo
+## Objectif
 
-Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Management System o CMS) come WordPress e Joomla!, i database permettono di salvare gli elementi detti dinamici (ad esempio, commenti o articoli). Per diversi motivi, potresti aver bisogno di effettuare un backup del tuo database per recuperarne il contenuto.
+Aujourd'hui utilisées par la quasi-totalité des systèmes de gestion de contenu (Content Management System ou CMS) comme WordPress, Joomla!, les bases de données permettent de stocker des éléments dits dynamiques comme des commentaires ou des articles par exemple. Pour diverses raisons, vous pouvez être amené à importer des données dans l'une de vos bases afin d'en modifier ou remplacer le contenu.
 
-**Questa guida ti mostra come importare un backup nel database del tuo hosting Web OVH.**
+**Découvrez comment importer une sauvegarde dans la base de données de votre hébergement web OVH.**
 
-## Prerequisiti
+## Prérequis
 
-- Disporre di una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
-- Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
-- Avere accesso al backup da importare nel database o essere in grado di recuperarlo
-- In base al metodo di importazione scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} o disporre dei dati di connessione al database
+- Disposer d'une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Être en possession de la sauvegarde que vous souhaitez importer dans votre base de données ou être en mesure de pouvoir la récupérer.
+- Selon la méthode d'importation utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} ou des informations permettant de vous connecter à la base de données.
 
-## Procedura
+## En pratique
 
-Prima di iniziare, è necessario indicare il metodo con cui intendi importare il backup del database. A seconda delle tue competenze tecniche a riguardo, puoi utilizzare diversi metodi:
+Avant de débuter, vous devez définir la méthode que vous allez utiliser pour importer la sauvegarde dans la base de données concernée. Plusieurs possibilités s’offrent à vous suivant les compétences techniques dont vous disposez sur le sujet.
 
-- **ripristinare lo stato di una data precedente**: questa soluzione permette di ripristinare il contenuto dei tuoi database grazie ai backup presenti nel tool di backup OVH. Non richiede particolari competenze tecniche ed è disponibile direttamente nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- **Restaurer en quelques clics votre base de données à une date antérieure** : cette solution permet de restaurer le contenu de vos bases de données grâce aux sauvegardes présentes dans l'outil de sauvegarde d'OVH. Cette solution ne demande pas de compétences techniques particulières et est exécutable depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-- **file di backup**: questa soluzione permette di importare i dati del tuo file di backup in uno dei tuoi database ed è disponibile direttamente nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- **Importer en quelques clics votre propre fichier de sauvegarde** : cette solution permet d'importer les données de votre propre fichier de sauvegarde, préalablement en votre possession, dans l'une de vos bases de données. Cette solution se réalise depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-- **interfaccia Web phpMyAdmin**: questa soluzione richiede la conoscenza dell’applicazione Web phpMyAdmin e della sua interfaccia di gestione. Inoltre, la dimensione del file di backup ha dei limiti.
+- **Effectuer l'import depuis l'interface web phpMyAdmin** : cette solution nécessite de vous connecter à l'interface phpMyAdmin pour y réaliser la manipulation. Des connaissances sur cette dernière sont donc nécessaires afin de pouvoir l'utiliser et une limite de taille sur le fichier de sauvegarde est imposée.
 
-- **script**: per utilizzare questa soluzione è necessario creare uno script e salvarlo sull’hosting Web OVH e richiede quindi competenze specifiche.
+- **Réaliser l'import en utilisant un script** : cette solution nécessite de créer un script, hébergé sur votre hébergement web OVH, afin de réaliser l'import. Des connaissances spécifiques pour créer ce script sont nécessaires.
 
-- **comando SSH**: questa soluzione richiede l’accesso allo spazio di storage tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso.  Sono quindi necessarie competenze tecniche avanzate e una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} compatibile.
+- **Réaliser l'import depuis une commande SSH** : cette solution nécessite de se connecter à votre espace de stockage via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
 
-Alcune delle opzioni elencate non vengono eseguite in un’interfaccia OVH e non possiamo quindi fornire assistenza sul loro utilizzo. Le informazioni contenute in questa guida potrebbero esserti di aiuto per effettuare l’operazione ma non si sostituiscono all’aiuto di un webmaster.
+Certaines des méthodes ci-dessus ne sont pas inhérentes à une interface OVH. Vous devrez donc, pour ces dernières, accomplir la manipulation selon vos propres connaissances. Quelques informations sont cependant présentes ci-dessous, mais elles ne se substituent pas à l’aide d’un webmaster.
 
-Continua la lettura in base al metodo di importazione scelto. 
+Poursuivez la lecture de cette documentation selon la méthode d'importation souhaitée.
 
 > [!warning]
 >
-> OVH mette a disposizione i servizi ma non si occupa della loro configurazione e gestione; garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d’en assurer le bon fonctionnement.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie per importare il backup di un database. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare uno specialista del settore o il fornitore del servizio.  Per maggiori informazioni consulta la sezione “Per saperne di più”. 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
-### Ripristino dallo Spazio Cliente OVH
+### Restaurer une sauvegarde depuis l'espace client
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
+Pour effectuer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
-Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database da ripristinare e seleziona `Ripristina un backup`{.action}. Ti ricordiamo che scegliendo questa opzione il contenuto del database verrà sostituito con quello del backup.
+Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, cliquez sur les trois points à droite de la base de données que vous souhaitez restaurer à une date antérieure, puis sur `Restaurer une sauvegarde`{.action}. Sachez que cette action remplacera le contenu actuel de la base de données par celui de la sauvegarde.
 
-![Importazione database](images/database-import-step5.png){.thumbnail}
+![databaseimport](images/database-import-step5.png){.thumbnail}
 
-Nella tabella sono elencati tutti i backup disponibili per il database selezionato, di cui viene mostrata la data di creazione e di cancellazione dal sistema OVH.
+Toutes les sauvegardes disponibles de la base de données sélectionnée s'affichent alors. Vous pourrez y visionner la date précise des sauvegardes ainsi que la date à laquelle ces dernières seront supprimées de l'outil d'OVH.
 
-Clicca sui tre puntini in corrispondenza del database da ripristinare e seleziona `Ripristina un backup`{.action}. Verifica la correttezza delle informazioni e `Conferma`{.action} per avviare l’operazione. Attendi il completamento del processo.
+Cliquez sur les trois points à droite de la sauvegarde que vous souhaitez restaurer, puis sur `Restaurer la sauvegarde`{.action}. Sur la fenêtre qui apparaît, assurez-vous que les informations sont correctes puis cliquez sur `Valider`{.action}. Patientez maintenant le temps que la restauration se réalise.
 
-![Importazione database](images/database-import-step6.png){.thumbnail}
+![databaseimport](images/database-import-step6.png){.thumbnail}
 
-### Importazione dallo Spazio Cliente OVH
+### Importer votre propre sauvegarde depuis l'espace client
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
+Pour effectuer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
-Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database da importare e seleziona `Importa un file`{.action}.
+Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, cliquez sur les trois points à droite de la base de données dans laquelle vous souhaitez importer des données, puis sur `Importer un fichier`{.action}.
 
-![Importazione database](images/database-import-step1.png){.thumbnail}
+![databaseimport](images/database-import-step1.png){.thumbnail}
 
-Nella nuova finestra, seleziona `Importa un nuovo file`{.action} e poi clicca su `Seguente`{.action}.
+Dans la fenêtre qui apparaît, sélectionnez `Importer un nouveau fichier`{.action} puis cliquez sur `Suivant`{.action}.
 
 > [!primary]
 >
-> L’opzione `Utilizza un file esistente`{.action} permette di importare nuovamente i dati di un file già inviato nel tool di importazione. 
+> Le bouton `Utiliser un fichier existant`{.action} permet d'importer de nouveau les données d'un fichier déjà envoyé dans l'outil d'import.
 >
 
-![Importazione database](images/database-import-step2.png){.thumbnail}
+![databaseimport](images/database-import-step2.png){.thumbnail}
 
-Assegna un nome al tuo file di backup (per trovarlo più facilmente in un secondo momento) e clicca su `Browse...` per selezionare il file nel tuo computer. Clicca su `Seguente`{.action}.
+Renseignez un nom de fichier (qui vous permettra d’identifier cette sauvegarde plus tard si vous souhaitez de nouveau la restaurer), puis à côté de `Fichier`, sélectionnez le fichier de sauvegarde de la base de données sur votre ordinateur. Cliquez sur `Envoyer`{.action}.
 
-Attendi il completamento dell’operazione e poi clicca su `Seguente`{.action}.
+Patientez le temps que l’interface vous indique que le fichier a été envoyé avec succès, puis cliquez sur le bouton `Suivant`{.action}.
 
-![Importazione database](images/database-import-step3.png){.thumbnail}
+![databaseimport](images/database-import-step3.png){.thumbnail}
 
-Scegli se utilizzare o meno le opzioni aggiuntive proposte:
+Enfin, choisissez d’appliquer ou non les options additionnelles affichées :
 
-- **Elimina tutti i file dal tuo database attuale**: tutti i contenuti presenti nel database verranno cancellati e sostituiti con quelli del backup. Ti consigliamo di selezionare questa opzione esclusivamente se intendi sostituire l’intero contenuto presente nel database con quello del file di backup. 
+- **vider la base de données actuelle** : en cochant cette case, le contenu actuellement présent dans la base de données sera intégralement supprimé puis remplacé par celui de votre sauvegarde. Si, et seulement si, vous souhaitez remplacer le contenu actuel de la base de données par celui du fichier de sauvegarde, nous vous conseillons de cocher cette case ;
 
-- **Invia un'email alla fine dell'importazione**: al termine dell'operazione riceverai una notifica via email.
+- **envoyer un e-mail à la fin de l’importation** : en cochant la case, une notification par e-mail vous sera envoyée lorsque l’importation de la base de données sera effectuée.
 
-Una volta effettuata la tua scelta, clicca su `Conferma`{.action} e attendi la fine del processo. 
+Une fois votre choix fait, cliquez sur le bouton `Valider`{.action} puis patientez le temps que l'importation arrive à son terme.
 
-![Importazione database](images/database-import-step4.png){.thumbnail}
+![databaseimport](images/database-import-step4.png){.thumbnail}
 
-### Interfaccia Web phpMyAdmin
+### Réaliser l'import depuis l'interface web phpMyAdmin
 
-Per recuperare il link di accesso a phpMyAdmin accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
+Pour réaliser la manipulation, vous devez vous connecter à phpMyAdmin. Pour connaître le lien d'accès à ce dernier, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
-Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database di cui vuoi importare il backup e seleziona `Accedi a phpMyAdmin`{.action}.
+Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Cliquez dans ce dernier sur les trois points à droite de la base de données concernée, puis sur `Accéder à phpMyAdmin`{.action}.
 
-![Importazione database](images/database-import-step7.png){.thumbnail}
+![databaseimport](images/database-import-step7.png){.thumbnail}
 
-Nella pagina di phpMyAdmin, inserisci le informazioni relative al database, scegli dal menu a tendina se visualizzare i dati attuali del database ed effettua l’accesso.  Seleziona la scheda `Importa`{.action} e inserisci i dati richiesti. Ti ricordiamo che il file caricato non può superare la dimensione massima consentita.
+Une fois sur la page de phpMyAdmin, renseignez les informations de la base de données, choisissez dans le menu déroulant d'accéder aux données actuelles de la base de données, puis connectez-vous. Une fois connecté, rendez-vous à présent sur l'onglet `Importer`{.action} et complétez les informations demandées. Pour rappel, une limite de taille sur le fichier de sauvegarde vous est imposée.
 
 > [!warning]
 >
-> phpMyAdmin non è un’applicazione OVH, pertanto non forniamo assistenza relativamente al suo utilizzo. In caso di difficoltà o dubbi, ti consigliamo di contattare uno specialista del settore o accedere al sito del fornitore del servizio.  
+> L'interface phpMyAdmin n'ayant pas été créée par OVH, vous devrez réaliser la manipulation selon vos propres connaissances. Nous vous recommandons de faire appel à un prestataire spécialisé et/ou de vous rapprocher du site l’éditeur de l'interface si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
 >
 
-### Script
+### Importer une sauvegarde en utilisant un script
 
-Questa operazione prevede diversi step. Per prima cosa, assicurati di disporre del file di backup da importare e di tutti i dati necessari per effettuare l’accesso al database di destinazione: nome utente, password, nome del database e indirizzo del server.
+La manipulation s'effectue en plusieurs étapes. Assurez-vous d'être en possession du fichier de sauvegarde que vous souhaitez importer ainsi que des informations permettant de se connecter à la base de données qui recevra l'import : un nom d’utilisateur, son mot de passe, le nom de la base de données ainsi que l’adresse du serveur.
 
 > [!warning]
 >
-> Questa soluzione è più tecnica e richiede competenze di programmazione. In questa guida puoi trovare informazioni utili per effettuare l’operazione ma, in caso di necessità, ti consigliamo di rivolgerti a uno specialista del settore. 
+> Cette solution est technique et requiert des compétences en programmation. Quelques informations sur la manière de procéder sont présentes ci-dessous. Cependant, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance.
 >
 
-#### 1\. Creare lo script di importazione
+#### Étape 1 : créer le script d'import
 
-Il primo step consiste nel creare lo script che permetterà di effettuare l’importazione verso il database. Ecco un esempio:
+La première étape consiste à créer le script qui permettra de réaliser l'import vers la base de données. Vous trouverez ci-dessous un exemple de script pouvant vous aider dans votre démarche, mais il ne se substitue pas à l’aide d’un webmaster.
 
 ```php
 <?php
-system(“cat nome_file_backup.sql mysql --host=inidrizzo_del_server--user=nome_utente--password=password_utente nom_database
+system("cat nom_fichier_sauvegarde.sql | mysql --host=adresse_du_serveur --user=nom_utilisateur --password=mot_de_passe_utilisateur nom_base_de_données");
 ?>
 ```
 
-Sostituisci le informazioni generiche dello script con i dati del database in questione, seguendo le indicazioni riportate qui sotto. Una volta creato lo script, ti consigliamo di assegnargli un nome (ad esempio, “import.php”).
+Prenez soin de remplacer les informations génériques présentes dans ce script par les informations de la base de données concernée en vous aidant des éléments ci-dessous. Une fois le script terminé, nous vous conseillons de le nommer « import.php » par exemple.
 
-|Informazione|Sostituire con...|
+|Informations|À remplacer par|
 |---|---|
-|nome_file_backup|Il nome del file di backup che intendi importare |
-|indirizzo_del_server|L’indirizzo del server del database verso cui saranno importati i dati|
-|nome_utente|Lo username che ha accesso al database|
-|password_utente|La password associata al nome utente indicato precedentemente|
-|nome_database|Il nome del database|
+|nom_fichier_sauvegarde|Le nom que porte le fichier de sauvegarde que vous souhaitez importer.|
+|adresse_du_serveur|L'adresse du serveur de la base de données vers laquelle vous allez importer les données.|
+|nom_utilisateur|Le nom d'utilisateur disposant d'un accès à la base de données concernée.|
+|mot_de_passe_utilisateur|Le mot de passe du nom d'utilisateur indiqué précédemment.|
+|nom_base_de_données|Le nom de la base de données concernée.|
 
-#### 2\. Caricare lo script e il backup sullo spazio di storage
+#### Étape 2 : télécharger le script et la sauvegarde sur l'espace de stockage
 
-Una volta creato lo script è necessario caricarlo insieme al file di backup da importare sullo spazio di storage dell’hosting Web. Per effettuare questa operazione, è necessario collegarsi all’hosting (se hai bisogno di aiuto, consulta lo step 2 di [questa guida](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/#step-2-carica-i-file-del-sito-nello-spazio-di-storage){.external}).
+Une fois le script d'import correctement créé, vous devez le télécharger ainsi que le fichier de sauvegarde que vous souhaitez importer sur l'espace de stockage de votre hébergement web. Pour cela, vous devrez vous connecter à ce dernier. Si vous ne savez pas comment faire, reportez-vous aux informations décrites dans l'étape 2 de la documentation intitulée « [Se connecter à l’espace de stockage](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#2-se-connecter-a-lespace-de-stockage){.external} ».
 
-Per realizzare correttamente gli step successivi, carica lo script e il file di backup nella cartella “www”. **Ti consigliamo di prestare la massima attenzione al nome assegnato al file dello script di importazione**: quando effettui l’upload nello spazio di storage assicurati di non sovrascriverlo a un file già esistente con lo stesso nome. Nel caso, modifica il nome dello script appena creato e prova a caricarlo di nuovo.
+Afin de pouvoir mener à bien les étapes suivantes, téléchargez le script d'import et le fichier de sauvegarde dans le dossier « www ». **Nous vous invitons à être particulièrement attentif quant au nom du fichier du script d'import.** Assurez-vous de ne pas écraser un fichier déjà existant portant le même nom sur l'espace de stockage lorsque vous allez télécharger le script. Si un message d'avertissement de ce type apparaît, modifiez le nom du script nouvellement créé pour un autre, puis tentez de nouveau de le télécharger.
 
-#### 3\. Eseguire lo script
+#### Étape 3 : appeler le script
 
-Una volta che lo script di importazione e il file di backup sono stati caricati nello spazio di storage non ti resta che eseguire il codice in esso contenuto richiamando lo script.
+Maintenant que le script d'import et le fichier de sauvegarde sont téléchargés sur l'espace de stockage, il ne reste plus qu'à initier la manipulation. Pour cela, il est nécessaire d'appeler le script.
 
-Per effettuare questa operazione, accedi dal browser all’indirizzo URL completo dello script (ad esempio, se il nome del tuo script è “import.php”: mypersonaldomain.ovh/import.php). Se le informazioni nello script sono corrette, l’importazione si avvia e non resta che attenderne il completamento. In caso contrario verifica i dati inseriti e ripeti l’operazione.
+Pour effectuer cette manipulation, vous devez accéder depuis votre navigateur internet à l'adresse URL complète du script (par exemple : mypersonaldomain.ovh/import.php si vous avez nommé votre script « import.php »). Si les informations renseignées dans le script sont correctes, l'importation s'initie. Il ne vous reste plus qu'à patienter quelques instants le temps qu'elle s'exécute. Si ce n'est pas le cas, vérifiez les informations renseignées dans le script puis tentez de nouveau la manipulation.
 
-Una volta terminata questa procedura ti consigliamo di eliminare il file di backup e lo script dalla directory “www”.
+Une fois l'importation réalisée, nous vous conseillons vivement de supprimer le fichier de sauvegarde ainsi que le script du répertoire « www ».
 
-### Comando SSH
+### Importer une sauvegarde via une commande SSH
 
-Per effettuare questa operazione è necessario interagire con lo spazio di storage eseguendo alcuni comandi da un terminale.
+Pour réaliser la manipulation, vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage.
 
 > [!warning]
 >
-> Questa soluzione richiede competenze tecniche avanzate. In questa guida puoi trovare informazioni utili per effettuare l’operazione ma, in caso di necessità, ti consigliamo di rivolgerti a uno specialista del settore. 
+> Des connaissances plus avancées sont nécessaires pour utiliser ce type d’accès. Quelques informations sur comment procéder sont présentes ci-dessous, cependant, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
 >
 
-Una volta effettuato l’accesso in SSH allo spazio di storage, per effettuare l’importazione del database è necessario eseguire un comando. Qui sotto ne proponiamo uno di esempio. Ti ricordiamo che è necessario caricare preventivamente il backup da importare sullo spazio di storage ed eseguire il comando dal terminale posizionandoti sulla directory in cui si trova il backup.  
+Une fois connecté à votre espace de stockage via une connexion en SSH, vous devez utiliser une commande permettant de réaliser l'importation de la base de données. Vous en trouverez une ci-dessous pouvant vous aider dans votre démarche. Prenez en compte que vous devrez au préalable télécharger la sauvegarde que vous souhaitez importer sur l'espace de stockage et que vous devrez envoyer la commande dans votre terminal en vous positionnant sur le répertoire où se situe cette dernière.
 
 ```sh
-system(“cat nome_file_backup.sql mysql --host=inidrizzo_del_server--user=nome_utente--password=password_utente nome_database
+cat nom_fichier_sauvegarde.sql | mysql --host=adresse_du_serveur --user=nom_utilisateur --password=mot_de_passe_utilisateur nom_base_de_données
 ```
 
-Sostituisci le informazioni generiche del comando con i dati del database in questione. A operazione completata, ti consigliamo di eliminare il file di backup dalla directory in cui è stato caricato. 
+Prenez soin de remplacer les informations génériques de cette commande par les informations de la base de données concernée. Une fois l'importation réalisée, nous vous conseillons de supprimer le fichier de sauvegarde du répertoire dans lequel vous l'avez téléchargé.
 
-## Per saperne di più
+## Aller plus loin
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
