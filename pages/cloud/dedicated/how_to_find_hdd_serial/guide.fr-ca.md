@@ -173,6 +173,7 @@ Une fois que vous avez trouvé ce périphérique lié au disque dur que vous vou
 Le numéro du périphérique sg sera affiché comme suit : `/dev/sg0`, `/dev/sg1`, etc.
 
 
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
