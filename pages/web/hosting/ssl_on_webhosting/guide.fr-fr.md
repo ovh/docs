@@ -117,6 +117,7 @@ Sur la page qui apparaît, confirmez la suppression. Celle-ci sera effective sou
 
 ![managessl](images/manage-ssl-step9.png){.thumbnail}
 
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

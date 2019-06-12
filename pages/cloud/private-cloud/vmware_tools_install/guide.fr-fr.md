@@ -1,10 +1,10 @@
 ---
-title: Installation des VMware Tools
+title: 'Installation des VMware Tools'
 slug: installation-des-vmware-tools
-excerpt: Découvrez comment installer les VMware tools sur Linux ou Windows
+excerpt: 'Découvrez comment installer les VMware tools sur Linux ou Windows'
 legacy_guide_number: '7766427'
-section: Gestion des machines virtuelles
-order: 06
+section: 'Gestion des machines virtuelles'
+order: 6
 ---
 
 **Dernière mise à jour le 28/01/2019**
@@ -13,7 +13,7 @@ order: 06
 
 Les VMware Tools améliore les performances d'une machine virtuelle et permet d'utiliser un grand nombre de ses fonctions d'utilisation simples dans les produits VMware.
 
-**Ce guide montre leur installation**
+**Ce guide expose les différentes étapes à suivre afin de procéder à leur installation**
 
 ## En pratique
 
