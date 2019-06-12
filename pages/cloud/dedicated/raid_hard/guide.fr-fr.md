@@ -1,402 +1,416 @@
 ---
-title: RAID Matériel
+title: 'Gestion du RAID matériel'
 slug: raid-hard
-excerpt: Decouvrez ici comment verifier l’etat de votre Raid Materiel et de vos disques avec un controleur RAID (LSI, LSI MegaRaid, et 3ware [Deprecie]).
-section: RAID & disques
+excerpt: 'Apprenez à vérifier l''état de votre RAID et de vos disques durs'
+section: 'RAID & disques'
 ---
 
+**Dernière mise à jour le 12/06/2019**
+
+## Objectif
+
+Sur un serveur disposant d'une configuration RAID matériel, la matrice RAID est gérée par un composant physique appelé contrôleur RAID.
+
+**Ce guide vous montre comment vérifier l'état de votre RAID et de vos disques durs.**
 
 ## Prérequis
-- Avoir un accès root en SSH.
-- Avoir un serveur avec un RAID Matériel.
 
-
+- Posséder un [serveur dédié](https://www.ovh.co.uk/dedicated_servers/){.external} avec une configuration RAID matériel.
+- Avoir accès à votre serveur via SSH en tant qu'administrateur (root).
 
 > [!warning]
 >
-> Il est dangereux de manipuler les commandes MegaCli et lsiutil
-> si vous ne savez pas ce que vous faites. Vous risquez de perdre vos
-> données et il est important de les sauvegarder avant de faire quoi que
-> ce soit.
+> Il est risqué de manipuler les commandes `MegaCli` et `lsiutil` si vous ne possédez pas les compétences adéquates. Vous risquez en effet de perdre vos données. Nous vous conseillons d'effectuer une sauvegarde avant de réaliser la moindre action.
 > 
 
+## En pratique
 
-## Controleur RAID MegaRaid
+### Utiliser le contrôleur RAID MegaRAID
 
-### Étape 1 &#58; Informations
-Avant de vérifier l'état du RAID, vérifions que vous possédez bien un contôleur RAID de type MégaRaid
+#### Étape 1 : récupérer les informations du RAID
 
-```sh
-lspci | grep -i lsi | grep -i megaraid 03:00.0 RAID bus controller: LSI Logic / Symbios Logic MegaRAID SAS 2108 [Liberator] (rev 05) 
-```
-
-Ceci confirme que le serveur possède bel et bien un contôleur RAID MegaRaid.
-
-Utilisez la commande MegaCli pour lister les ensembles de RAID disponibles:
-
-```sh 
-MegaCli -LDInfo -Lall -aALL (Ou bien : storcli /c0 /vall show)
->>> Adapter 0 - Virtual Drive Information:
->>> Virtual Drive: 0 (Target Id: 0)
->>> Name :
->>> RAID Level : Primary-1, Secondary-0, RAID Level Qualifier-0
->>> Size : 36.321 GB
->>> Sector Size : 512
->>> Mirror Data : 36.321 GB
->>> State : Optimal
->>> Strip Size : 64 KB
->>> Number Of Drives : 2
->>> Span Depth : 1
->>> Default Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU
->>> Current Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU
->>> Default Access Policy: Read/Write
->>> Current Access Policy: Read/Write
->>> Disk Cache Policy : Disks Default
->>> Encryption Type : None
->>> Bad Blocks Exist: No
->>> Is VD Cached: No
-```
+Avant tout, vérifiez que vous disposez d'un contrôleur MegaRAID :
 
 ```sh
->>> Virtual Drive: 1 (Target Id: 1)
->>> Name :
->>> RAID Level : Primary-1, Secondary-0, RAID Level Qualifier-0
->>> Size : 2.727 TB
->>> Sector Size : 512
->>> Mirror Data : 2.727 TB
->>> State : Optimal
->>> Strip Size : 64 KB
->>> Number Of Drives : 2
->>> Span Depth : 1
->>> Default Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU
->>> Current Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU
->>> Default Access Policy: Read/Write
->>> Current Access Policy: Read/Write
->>> Disk Cache Policy : Disks Default
->>> Encryption Type : None
->>> Bad Blocks Exist: No
->>> Is VD Cached: Yes
->>> Cache Cade Type : Read Only
-
->>> Exit Code: 0x00
+lspci | grep -i lsi | grep -i megaraid
+03:00.0 RAID bus controller: LSI Logic / Symbios Logic MegaRAID SAS 2108 [Liberator] (rev 05)
 ```
 
+Le résultat obtenu ci-dessus vous confirme que le serveur dispose d'un contrôleur MegaRAID installé.
 
-Nous voyons 2 *disques virtuels* qui sont composés de 2 disques physiques chacuns, pour un total de 4 disques.
-
-Dans le cas présent, le status du RAID montre qu'il est Optimal, ce qui veut dire que le RAID est bien fonctionnel.
-
-Si le statut du RAID montre Degraded, nous vous recommandons de vérifier l'état de vos disques dur.
-
-
-### Étape 2 : État des disques
-Premièrement, vous devez lister les Device Id pour chaque disques dur afin de bien pouvoir les tester avec l'outil smartmontools:
+Pour rassembler et lister les ensembles RAID disponibles, vous pouvez utiliser la commande `MegaCli` :
 
 ```sh
-MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g' (Ou bien : storcli /c0 /eall /sall show)
+MegaCli -LDInfo -Lall -aALL (Or : storcli /c0 /vall show)
+Adapter 0 - Virtual Drive Information:
+Virtual Drive: 0 (Target Id: 0)
+Name :
+RAID Level : Primary-1, Secondary-0, RAID Level Qualifier-0
+Size : 36.321 GB
+Sector Size : 512
+Mirror Data : 36.321 GB
+State : Optimal
+Strip Size : 64 KB
+Number Of Drives : 2
+Span Depth : 1
+Default Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU
+Current Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU
+Default Access Policy: Read/Write
+Current Access Policy: Read/Write
+Disk Cache Policy : Disk's Default
+Encryption Type : None
+Bad Blocks Exist: Non
+Is VD Cached: Non
 
->>> Slot Number: 0
->>> Device Id: 4
->>> Raw Size: 279.460 GB [0x22eec130 Sectors]
->>> Firmware state: Online, Spun Up
->>> Inquiry Data: BTWL3450062J300PGN  INTEL SSDSC2BB300G4                     D2010355
+Virtual Drive: 1 (Target Id: 1)
+Name :
+RAID Level : Primary-1, Secondary-0, RAID Level Qualifier-0
+Size : 2.727 TB
+Sector Size : 512
+Mirror Data : 2.727 TB
+State : Optimal
+Strip Size : 64 KB
+Number Of Drives : 2
+Span Depth : 1
+Default Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU
+Current Cache Policy: WriteBack, ReadAdaptive, Cached, Write Cache OK if Bad BBU
+Default Access Policy: Read/Write
+Current Access Policy: Read/Write
+Disk Cache Policy : Disk's Default
+Encryption Type : None
+Bad Blocks Exist: Non
+Is VD Cached: Oui
+Cache Cade Type : Read Only
 
->>> Slot Number: 1
->>> Device Id: 5
->>> Raw Size: 279.460 GB [0x22eec130 Sectors]
->>> Firmware state: Online, Spun Up
->>> Inquiry Data: BTWL345003X6300PGN  INTEL SSDSC2BB300G4                     D2010355
-
->>> Slot Number: 2
->>> Device Id: 7
->>> Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
->>> Firmware state: Online, Spun Up
->>> Inquiry Data:       PN2234P8K2PKDYHGST HUS724030ALA640                    MF8OAA70
-
->>> Slot Number: 3
->>> Device Id: 6
->>> Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
->>> Firmware state: Online, Spun Up
->>> Inquiry Data:       PN2234P8JYP59YHGST HUS724030ALA640                    MF8OAA70
+Exit Code: 0x00
 ```
 
-Avec la commande smartctl de l'outil smartmontools, nous allons tester chaque disque dur individuellement comme indiqué ci-dessous:
+Vous pouvez voir ci-dessus deux disques virtuels composés de deux disques durs physiques, soit un total de quatre disques physiques. Dans ce cas, le statut du RAID montre qu’il est « optimal », ce qui signifie que le RAID fonctionne correctement.
+
+Si l'état du RAID est « dégradé », nous vous recommandons de vérifier également l'état du disque dur.
+
+#### Étape 2 : déterminer l'état du disque
+
+En premier lieu, listez les `device Id` pour chaque disque dur afin de bien les tester avec l’outil Smarmontools :
+
+```sh
+MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g' (Or : storcli /c0 /eall /sall show)
+ 
+Slot Number: 0
+Device Id: 4
+Raw Size: 279.460 GB [0x22eec130 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data: BTWL3450062J300PGN  INTEL SSDSC2BB300G4                     D2010355
+ 
+Slot Number: 1
+Device Id: 5
+Raw Size: 279.460 GB [0x22eec130 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data: BTWL345003X6300PGN  INTEL SSDSC2BB300G4                     D2010355
+ 
+Slot Number: 2
+Device Id: 7
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data:       PN2234P8K2PKDYHGST HUS724030ALA640                    MF8OAA70
+ 
+Slot Number: 3
+Device Id: 6
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data:       PN2234P8JYP59YHGST HUS724030ALA640                    MF8OAA70
+```
+
+Avec la commande `smartctl` de l’outil Smartmontools, vous pouvez tester chaque disque dur comme indiqué ci-dessous :
 
 ```sh
 smartctl -d megaraid,N -a /dev/sdX
 ```
 
-`N`est le "Device ID" du disque dur.
-`X`est le périphérique associé au RAID: /dev/sda = 1er RAID, /dev/sdb = 2eme RAID, etc.
+Dans cet exemple, `/dev/sda` est le premier RAID et `/dev/sdb` est le second.
 
+Dans certaines situations, vous pouvez recevoir ce résultat :
 
-
-> [!primary]
->
-> Dans certains cas vous pouvez obtenir le message suivant:
-> /dev/sda [megaraid_disk_00] [SAT]: Device open changed type from 'megaraid' to 'sat'
-> Vous devrez alors remplacer megaraid par sat+megaraid:
-> smartctl -d sat+megaraid,N -a /dev/sdX
->
-
+```
+ /dev/sda [megaraid_disk_00] [SAT]: Device open changed type from 'megaraid' to 'sat'
+ ```
+ Vous devez alors remplacer `megaraid` par `sat+megaraid` comme suit :
+ 
+ ```
+ smartctl -d sat+megaraid,N -a /dev/sdX
+ ```
 
 > [!warning]
 >
-> Si un disque contient des erreurs, il vous faut alors effectuer une sauvegarde de vos données et contacter notre support.
-> Il faudra fournir l' Enclosure ID, le Slot Number, le Device ID, ainsi que le Numéro de série du disque pour que nous puissions identifier le disque défectueux.
-> Sachez également que si vous possédez toutes ces informations, vous pourrez programmer le remplacement directement depuis votre espace client, en sélectionnant le nom de votre serveur, puis `Remplacement de disques`.
+> Si l'un de vos disques durs affiche des erreurs SMART, vous devez effectuer une sauvegarde complète de vos données dès que possible et contacter notre équipe Support. Votre interlocuteur aura besoin du slot number et du device ID afin d'identifier le disque défectueux.
 > 
 
+#### Étape 3 : vérifier l'état du contrôleur RAID
 
-### Étape 3 : Vérifier l'état de la batterie
-
-Il est important de vérifier que la batterie de la carte RAID est pleinement opérationnelle. Pour cela voici la commande :
-
+Pour vous assurer que votre contrôleur RAID fonctionne correctement, vous pouvez lister toutes les informations avec la commande suivante :
 ```sh
-MegaCli -AdpBbuCmd -aAll
+MegaCli -AdpAllInfo -aALL
 ```
 
-Si le résultat vous indique `Battery Replacement required : Yes` il faudra contacter le support pour procéder au changement de la batterie de la carte RAID.
+La partie la plus importante de la sortie est le compteur d'erreurs :
 
+```
+Compteur d'erreurs
+                ================
+Erreurs corrigeables de mémoire : 0
+Erreurs de mémoire non corrigeables : 0
+```
+Si le nombre d'erreurs est supérieur à zéro, créez une sauvegarde de vos données et contactez le support avec la sortie complète. Notre équipe programmera ensuite une intervention pour le remplacement du contrôleur RAID.
 
-### Étape 4 : Resynchronisation
-Si un ou plusieurs disques durs ont été remplacés, le RAID se resynchronisera automatiquement.
-
-Vous pouvez utiliser la commande ci-dessous pour voir quel disque dur est actuellement en train de se reconstruire:
+Pour une sortie succincte des compteurs d'erreurs seulement, la commande peut être étendue par un `grep` :
 
 ```sh
-MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g' (Ou bien : storcli /c0 /eall /sall show)
-
->>> Slot Number: 0
->>> Device Id: 4
->>> Raw Size: 279.460 GB [0x22eec130 Sectors]
->>> Firmware state: Online, Spun Up
->>> Inquiry Data: BTWL3450062J300PGN  INTEL SSDSC2BB300G4                     D2010355
-
->>> Slot Number: 1
->>> Device Id: 5
->>> Raw Size: 279.460 GB [0x22eec130 Sectors]
->>> Firmware state: Online, Spun Up
->>> Inquiry Data: BTWL345003X6300PGN  INTEL SSDSC2BB300G4                     D2010355
-
->>> Slot Number: 2
->>> Device Id: 7
->>> Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
->>> Firmware state: Online, Spun Up
->>> Inquiry Data:       PN2234P8K2PKDYHGST HUS724030ALA640                    MF8OAA70
-
->>> Slot Number: 3
->>> Device Id: 6
->>> Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
->>> Firmware state: Rebuild
->>> Inquiry Data:       PN2234P8JYP59YHGST HUS724030ALA640                    MF8OAA70
+MegaCli -AdpAllInfo -aALL | grep "Errors"
+Erreurs corrigeables de mémoire : 0
+Erreurs de mémoire non corrigeables : 0
 ```
 
-Pour voir la progression de la reconstruction d'un disque, vous pouvez utiliser la commande suivante:
+#### Étape 4 : resynchronisation du RAID
+
+Si un ou plusieurs disques durs ont été remplacés, le RAID se synchronisera automatiquement. Vous pouvez utiliser la commande ci-dessous pour voir quel disque dur est en cours de reconstruction :
 
 ```sh
-MegaCli -PDRbld -ShowProg -PhysDrv [EncID:SlotID] -aALL (Ou bien : storcli /c0/eEncID/sSlotID show rebuild)
+MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g' (Or : storcli /c0 /eall /sall show)
+ 
+Slot Number: 0
+Device Id: 4
+Raw Size: 279.460 GB [0x22eec130 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data: BTWL3450062J300PGN  INTEL SSDSC2BB300G4                     D2010355
+ 
+Slot Number: 1
+Device Id: 5
+Raw Size: 279.460 GB [0x22eec130 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data: BTWL345003X6300PGN  INTEL SSDSC2BB300G4                     D2010355
+ 
+Slot Number: 2
+Device Id: 7
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data:       PN2234P8K2PKDYHGST HUS724030ALA640                    MF8OAA70
+ 
+Slot Number: 3
+Device Id: 6
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Firmware state: Rebuild
+Inquiry Data:       PN2234P8JYP59YHGST HUS724030ALA640                    MF8OAA70 
 ```
 
-`EncID` est l'enclosure ID
-`SlotID`est le slot ID
+Pour voir la progression de la reconstruction d’un disque, vous pouvez utiliser la commande suivante :
 
-Ces valeurs sont obtenues lorsque vous listez les informations des disques dur comme indiqué précédemment.
+```sh
+MegaCli -PDRbld -ShowProg -PhysDrv [EncID:SlotID] -aALL (Or : storcli /c0/eEncID/sSlotID show rebuild)
+```
+
+La commande récupérera l’enclosure ID et le slot ID, comme indiqué ci-dessus.
 
 
-### Étape 5: CacheCade
-
+#### Étape 5a : utilisation de CacheCade
 
 > [!primary]
 >
-> Le CacheCade est un module conçut par LSI pour améliorer les performances en lecture aléatoire des disques dur en utilisant un disque SSD comme périphérique frontal de cache.
+> Le CacheCade est un module conçu par LSI pour améliorer les performances en lecture aléatoire des disques durs en utilisant un disque SSD comme périphérique frontal de cache.
 > 
 
-Afin de vérifier la configuration du CacheCade:
+Pour vérifier la configuration de CacheCade, utilisez les commandes suivantes :
 
 ```sh
-MegaCli -CfgCacheCadeDsply -a0 (Ou bien : storcli /c0 /dall show cachecade)
+MegaCli -CfgCacheCadeDsply -a0 (Or : storcli /c0 /dall show cachecade)
 ```
 
-Afin de vérifier quel RAID est associé au CacheCade:
+Pour voir quel RAID est associé au CacheCade :
 
 ```sh
 MegaCli -CfgCacheCadeDsply -a0 | grep "Associated LDs"
 ```
 
+#### Étape 5b : vérification de l'état de l'unité de batterie de secours
 
-## Controleur RAID LSI
+Pour recevoir la liste complète des paramètres d'état du BBU, utilisez cette commande :
+```sh
+MegaCli -AdpBbuCmd -aALL
+```
+La valeur la plus importante à vérifier est l'état de la batterie, s'assurer que celui-ci est optimal. S'il existe des indicateurs d'une batterie défaillante, créez une sauvegarde de vos données et fournissez la sortie de cette commande lors de la création de votre ticket support.
 
-### Étape 1: Informations
-Avant de vérifier l'état de votre RAID, vérifions que vous possédez bien un contôleur RAID de type LSI:
+### Utiliser le contrôleur RAID LSI
+
+#### Étape 1 : récupérer les informations RAID
+
+Avant tout, vérifiez que vous êtes en possession d'un contrôleur RAID de type LSI en tapant la commande suivante :
 
 ```sh
 lspci | grep -i lsi | grep -v megaraid
->>> 01:00.0 Serial Attached SCSI controller: LSI Logic / Symbios Logic SAS2004 PCI-Express Fusion-MPT SAS-2 [Spitfire] (rev 03)
+01:00.0 Serial Attached SCSI controller: LSI Logic / Symbios Logic SAS2004 PCI-Express Fusion-MPT SAS-2 [Spitfire] (rev 03)
 ```
+
+Cela confirme la présence d'un contrôleur RAID LSI.
 
 > [!primary]
 >
-> La commande grep -v megaraid sert à retirer le paramètre "MegaRaid" du résultat de la commande lspci car les cartes MegaRaid sont aussi fabriquées par LSI Corporation.
+> La commande `grep -v megaraid` sert à retirer le paramètre `MegaRAID` du résultat de la commande `lspci` car les cartes MegaRAID sont aussi fabriquées par LSI Corporation.
 > 
 
-Pour obtenir l'information sur les RAID disponibles, vous pouvez utiliser la commande lsiutil:
+Pour rassembler et lister les ensembles RAID disponibles, vous pouvez utiliser la commande `lsiutil` :
 
-> [!warning]
+> [!primary]
 >
-> Attention, les valeurs (1,0 21) peuvent être différentes suivant les versions. Veillez à faire très attention lorsque vous manipulez ce type de commande.
+> Attention, les valeurs (1,0 21) peuvent être différentes selon les versions. Soyez vigilant lorsque vous manipulez ce type de commande.
 > 
 
 ```sh
 lsiutil -p1 -a 1,0 21
-
->>> LSI Logic MPT Configuration Utility, Version 1.63-OVH (27a4f9f54c)
-
->>> 1 MPT Port found
-
->>>      Port Name         Chip Vendor/Type/Rev    MPT Rev  Firmware Rev  IOC
->>>  1.  ioc0              LSI Logic SAS2004 03      200      13000000     0
-
->>> RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 1
-
->>> Volume 0 is DevHandle 011e, Bus 1 Target 0, Type RAID1 (Mirroring)
->>>   Volume Name:
->>>   Volume WWID:  0aaf504551c8efe5
->>>   Volume State:  optimal, enabled, background init complete
->>>   Volume Settings:  write caching disabled, auto configure hot swap enabled
->>>   Volume draws from Hot Spare Pools:  0
->>>   Volume Size 1906394 MB, 2 Members
->>>   Primary is PhysDisk 1 (DevHandle 0009, Bus 0 Target 0)
->>>   Secondary is PhysDisk 0 (DevHandle 000a, Bus 0 Target 1)
-
->>> RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
+ 
+LSI Logic MPT Configuration Utility, Version 1.63-OVH (27a4f9f54c)
+ 
+1 MPT Port found
+ 
+     Port Name         Chip Vendor/Type/Rev    MPT Rev  Firmware Rev  IOC
+ 1.  ioc0              LSI Logic SAS2004 03      200      13000000     0
+ 
+RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 1
+ 
+Volume 0 is DevHandle 011e, Bus 1 Target 0, Type RAID1 (Mirroring)
+  Volume Name:
+  Volume WWID:  0aaf504551c8efe5
+  Volume State:  optimal, enabled, background init complete
+  Volume Settings:  write caching disabled, auto configure hot swap enabled
+  Volume draws from Hot Spare Pools:  0
+  Volume Size 1906394 MB, 2 Members
+  Primary is PhysDisk 1 (DevHandle 0009, Bus 0 Target 0)
+  Secondary is PhysDisk 0 (DevHandle 000a, Bus 0 Target 1)
+ 
+RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 ```
 
-Nous voyons un *disque virtuel* qui est composés de 2 disques physiques.
+Dans l'exemple ci-dessus, nous pouvons voir un disque virtuel, composé de deux disques durs physiques. Dans ce cas, le statut du RAID montre qu’il est « optimal », ce qui signifie que le RAID fonctionne correctement.
 
-Dans le cas présent, le status du RAID montre qu'il est Optimal, ce qui veut dire que le RAID est bien fonctionnel.
-
-Si le statut du RAID montre Degraded, nous vous recommandons de vérifier l'état de vos disques dur.
-
-
-### Étape 2: Etat des disques
-Pour vérifier l'état des disques à partir du contrôleur RAID, vous pouvez utiliser la commande suivante:
-
-```sh
-lsiutil -p1 -a 2,0 21
-
->>> LSI Logic MPT Configuration Utility, Version 1.63-OVH (27a4f9f54c)
-
->>> 1 MPT Port found
-
->>>      Port Name         Chip Vendor/Type/Rev    MPT Rev  Firmware Rev  IOC
->>>  1.  ioc0              LSI Logic SAS2004 03      200      13000000     0
-
->>> RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 2
-
->>> PhysDisk 0 is DevHandle 000a, Bus 0 Target 1
->>>   PhysDisk State:  optimal
->>>   PhysDisk Size 1906394 MB, Inquiry Data:  ATA      HGST HUS724020AL AA70
->>>   Path 0 is DevHandle 000a, Bus 0 Target 1, online, primary
->>>   Path 1 is DevHandle 000a, invalid
-
->>> PhysDisk 1 is DevHandle 0009, Bus 0 Target 0
->>>   PhysDisk State:  optimal
->>>   PhysDisk Size 1906394 MB, Inquiry Data:  ATA      HGST HUS724020AL AA70
->>>   Path 0 is DevHandle 0009, Bus 0 Target 0, online, primary
->>>   Path 1 is DevHandle 0009, invalid
-
->>> RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
-```
-
-Dans le cas présent, les dex disques sont dans un état Optimal.
-
-Comme le contrôleur LSI utilise sg-map, nous devons tester le /dev/sgX (X étant le numéro du périphérique comme /dev/sg1 par exemple) correspondant aux disques dur afin de pouvoir les tester correctement avec smartmontools.
-
-Voici comment les lister:
-
-```sh
-cat /proc/scsi/scsi | grep Vendor
->>>   Vendor: LSI      Model: Logical Volume   Rev: 3000
->>>   Vendor: ATA      Model: HGST HUS724020AL Rev: AA70
->>>   Vendor: ATA      Model: HGST HUS724020AL Rev: AA70
-```
+Si l'état du RAID est « dégradé », nous vous recommandons de vérifier également l'état du disque dur.
 
 > [!primary]
 >
-> Chaque ligne représente un périphérique sg qui sont montés dans l'ordre d'affichage.
-> 
-> > [!faq]
-> >
-> > Ex: Vendor: LSI      Model: Logical Volume   Rev: 3000 => /dev/sg0
-> >> 
-> Vendor: ATA      Model: HGST HUS724020AL Rev: AA70 => /dev/sg1
-> Vendor: ATA      Model: HGST HUS724020AL Rev: AA70 => /dev/sg2
-> etc...
-> >
+> Dans le cas d'un serveur nouvellement provisionné, le message suivant peut s'afficher: « [In Progress:  data scrub] ». Ce message n'est pas une erreur. Il s'agit plutôt d'un processus automatisé généré par le micrologiciel du contrôleur afin de réduire autant que possible les erreurs non corrigibles.
 > 
 
-Afin d'obtenir le bon périphérique à l'aide d'une seule commande, vous pouvez utiliser celle-ci:
+#### Étape 2 : déterminer l'état du disque
+
+Pour vérifier l’état des disques à partir du contrôleur RAID, vous pouvez utiliser la commande suivante :
+
+```sh
+lsiutil -p1 -a 2,0 21
+ 
+LSI Logic MPT Configuration Utility, Version 1.63-OVH (27a4f9f54c)
+ 
+1 MPT Port found
+ 
+     Port Name         Chip Vendor/Type/Rev    MPT Rev  Firmware Rev  IOC
+ 1.  ioc0              LSI Logic SAS2004 03      200      13000000     0
+ 
+RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 2
+
+PhysDisk 0 is DevHandle 000a, Bus 0 Target 1
+  PhysDisk State:  optimal
+  PhysDisk Size 1906394 MB, Inquiry Data:  ATA      HGST HUS724020AL AA70
+  Path 0 is DevHandle 000a, Bus 0 Target 1, online, primary
+  Path 1 is DevHandle 000a, invalid
+
+PhysDisk 1 is DevHandle 0009, Bus 0 Target 0
+  PhysDisk State:  optimal
+  PhysDisk Size 1906394 MB, Inquiry Data:  ATA      HGST HUS724020AL AA70
+  Path 0 is DevHandle 0009, Bus 0 Target 0, online, primary
+  Path 1 is DevHandle 0009, invalid
+
+RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
+```
+
+Dans ce cas, les deux disques s'affichent comme « optimal ».
+
+Comme le contrôleur LSI utilise `sg-map`, nous devons tester le fichier `/dev/sgX` - « X » représentant le numéro du périphérique, comme `/dev/sg1` - correspondant aux disques durs afin de les tester avec Smartmontools.
+
+Voici la commande permettant de les lister :
+
+```sh
+cat /proc/scsi/scsi | grep Vendor
+  Vendor: LSI      Model: Logical Volume   Rev: 3000
+  Vendor: ATA      Model: HGST HUS724020AL Rev: AA70
+  Vendor: ATA      Model: HGST HUS724020AL Rev: AA70
+```
+
+Chaque ligne représente un périphérique sg, qui est mappé en fonction de l'ordre du périphérique affiché ci-dessous :
+ 
+```
+Vendor: LSI      Model: Logical Volume   Rev: 3000 => /dev/sg0
+> 
+> Vendor: ATA      Model: HGST HUS724020AL Rev: AA70 => /dev/sg1
+> Vendor: ATA      Model: HGST HUS724020AL Rev: AA70 => /dev/sg2
+> ```
+> 
+
+Afin d’obtenir le bon périphérique à l’aide d’une seule commande, vous pouvez utiliser celle-ci :
 
 ```sh
 cat /proc/scsi/scsi | grep Vendor | nl -v 0 | sed 's/^/\/dev\/sg/' | grep -v LSI | cut -d ' ' -f1,6 | sed 's/sg\ /sg/' | sed 's/\/dev\/sg.\ /\/dev\/sg/'
->>> /dev/sg1
->>> /dev/sg2
+/dev/sg1
+/dev/sg2
 ```
 
-Avec la commande smartctl de l'outil smartmontools, nous allons tester chaque disque dur individuellement comme indiqué ci-dessous:
+Avec la comande `smartctl` de l’outil Smartmontools, nous allons tester chaque disque dur individuellement comme indiqué ci-dessous :
 
 ```sh
-smartctl -a /dev/sgX
+smartctl -a /dev/sgX 
 ```
-`X`est le numéro du périphérique sg affiché dans la commande ci-dessus.
+
+Le numéro de périphérique sg est indiqué dans la commande ci-dessus.
 
 > [!warning]
 >
-> Si un disque contient des erreurs, il vous faut alors effectuer une sauvegarde de vos données et contacter notre support. Sachez également que si vous possédez toutes ces informations, vous pourrez programmer le remplacement directement depuis votre espace client, en sélectionnant le nom de votre serveur, puis `Remplacement de disque`.
+> Si l'un de vos disques durs affiche des erreurs SMART, vous devez effectuer une sauvegarde complète de vos données dès que possible et contacter notre équipe Support.
 > 
 
+#### Étape 3 : resynchronisation du RAID
 
-### Étape 3: Resynchronisation
-Si vous avez un ou plusieurs disques dur de remplacés, le RAID se resynchronisera automatiquement.
+Si un ou plusieurs disques durs ont été remplacés, le RAID se resynchronisera automatiquement. Afin de vérifier si le RAID est en cours de resynchronisation et surveiller la progression de celle-ci, vous pouvez utiliser la commande ci-dessous :
 
-Afin de vérifier si le RAID est actuellement en cours de resynchronisation et surveiller la progréssion de celui-ci, vous pouvez utiliser la commande ci-dessous:
-
-> [!warning]
+> [!primary]
 >
-> Attention, les valeurs (3,0 21) peuvent être différentes suivant les versions. Veillez à faire très attention lorsque vous manipulez ce type de commande.
+> Attention, les valeurs (3,0 21) peuvent être différentes selon les versions. Soyez vigilant lorsque vous manipulez ce type de commande.
 > 
 
 ```sh
 lsiutil -p1 -a 3,0 21
-
->>> LSI Logic MPT Configuration Utility, Version 1.63-OVH (27a4f9f54c)
-
->>> 1 MPT Port found
-
->>>      Port Name         Chip Vendor/Type/Rev    MPT Rev  Firmware Rev  IOC
->>>  1.  ioc0              LSI Logic SAS2004 03      200      13000000     0
-
->>> RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 3
-
->>> Volume 0 is DevHandle 011e, Bus 1 Target 0, Type RAID1 (Mirroring)
-
->>> Volume 0 State:  degraded, enabled, resync in progress
->>> Resync Progress:  total blocks 624943104, blocks remaining 484024888, 77%
-
->>> RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
+ 
+LSI Logic MPT Configuration Utility, Version 1.63-OVH (27a4f9f54c)
+ 
+1 MPT Port found
+ 
+     Port Name         Chip Vendor/Type/Rev    MPT Rev  Firmware Rev  IOC
+ 1.  ioc0              LSI Logic SAS2004 03      200      13000000     0
+ 
+RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 3
+ 
+Volume 0 is DevHandle 011e, Bus 1 Target 0, Type RAID1 (Mirroring)
+ 
+Volume 0 State:  degraded, enabled, resync in progress
+Resync Progress:  total blocks 624943104, blocks remaining 484024888, 77%
+ 
+RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 ```
 
-> [!warning]
+> [!primary]
 >
-> La valeur en pourcentage indiquée dans le résultat de la commande n'est pas le pourcentage de progréssion, mais le pourcentage restant.
+> La valeur en pourcentage indiquée dans le résultat de la commande n’est pas le pourcentage de progression, mais le pourcentage restant.
 > 
 
+### Contrôleur Raid 3Ware
 
-## Controleur RAID 3Ware
+Ce contrôleur RAID est déprécié et devient instable. Nous vous suggérons fortement de contacter le support OVH pour planifier une intervention visant à remplacer ce contrôleur RAID par un contrôleur LSI, puisque les contrôleurs RAID 3ware s’avèrent plutôt instables. Ce type d’intervention nécessite une réinstallation de votre serveur. Veillez alors à bien sauvegarder vos données au préalable.
+ 
 
+## Aller plus loin
 
-> [!alert]
->
-> Ce contrôleur RAID est déprécié et devient instable. Nous vous suggérons fortement de contacter le Support OVH pour planifier une intervention visant à remplacer ce contrôleur RAID par un contrôleur LSI. Ce type d'intervention nécessitera une réinstallation de votre serveur. Veillez alors à bien sauvegarder vos données au préalable.
-> 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
