@@ -8,6 +8,7 @@ order: 1
 
 **Dernière mise à jour le 04/06/2019**
 
+
 ## Objectif
 
 En transférant votre nom de domaine, vous changerez de registre pour celui-ci. Vous pouvez aussi le transférer vers OVH. Ce processus prend généralement entre un et dix jours.

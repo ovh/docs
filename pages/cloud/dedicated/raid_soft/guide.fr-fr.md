@@ -260,6 +260,7 @@ Le RAID a maintenant été reconstruit. Montez la partition (`/dev/md2` dans cet
 mount /dev/md2 /home
 ```
 
+
 ## Aller plus loin
 
 * [Hot Swap – RAID Matériel](https://docs.ovh.com/fr/dedicated/hotswap-raid-hard/){.external}
