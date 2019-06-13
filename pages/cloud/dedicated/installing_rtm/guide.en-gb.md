@@ -21,7 +21,7 @@ With Real Time Monitoring (RTM), you can partially monitor your server and its a
 
 ## Instructions
 
-Once you have installed the RTM via the Control Panel, you can monitor your server in the `Dedicated`{.action} section. On the main page for your server, you can find the monitoring information under `Real Time Monitoring`:
+Once you have installed the RTM via the OVH Control Panel, you can monitor your server in the `Dedicated`{.action} section. On the main page for your server, you can find the monitoring information under `Real Time Monitoring`:
 
 ![Real Time Monitoring](images/rtm.png){.thumbnail}
 
@@ -31,14 +31,14 @@ Once you have installed the RTM via the Control Panel, you can monitor your serv
 > 
 
 ### RTM in Linux
-On dedicated servers, RTM collects disk, RAID information and hardware information.
+On dedicated servers, RTM collects disk, RAID and hardware information.
 
 
 #### Component
 
 ##### Beamium
 
-Beamium collects metrics from HTTP endpoints like _http://127.0.0.1/metrics_, and supports Prometheus and Warp10/Sensision format. 
+Beamium collects metrics from HTTP endpoints like _http://127.0.0.1/metrics_, and supports Prometheus and Warp10/Sensision formats. 
 
 Once scraped, Beamium can filter and forward data to a Warp10 Time Series platform. While acquiring metrics, Beamium uses DFO (Disk Fail Over) to prevent metrics loss due to network issues or unavailable services.
 
@@ -107,15 +107,15 @@ collectors: /opt/noderig
 
 ##### Rtm-binaries
 
-**rtmHardware** :
+**rtmHardware**:
 
 -Collects hardware information like motherboard, pci devices, disk health etc., and also software information, like kernel version and bios version.
 
-**rtmHourly** :
+**rtmHourly**:
 
 -Collects top memory process, listen ports, number of processes up, and actives.
 
-**rtmRaidCheck** :
+**rtmRaidCheck**:
 
 -Checks RAID health.
 
