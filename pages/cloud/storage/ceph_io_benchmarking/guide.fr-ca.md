@@ -112,4 +112,5 @@ fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
 
 
 ## Mesurer les performances des baies de disques virtuels
+
 Pour mesurer les performances d'une baie de disques virtuels, nous effectuons des tests sur 32 images, chacune d'une taille de 32 Go, ce pendant quelques heures. L'utilisation de jeux de données volumineux pendant les tests nous garantit que les performances resteront à un niveau spécifié.

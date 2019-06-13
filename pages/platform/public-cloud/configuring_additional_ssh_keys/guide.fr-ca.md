@@ -82,10 +82,12 @@ Vous pouvez configurer d’autres clés SSH pour l’utilisateur administrateur 
 admin@server-1:~$ sudo vim /home/admin/.ssh/authorized_keys
 ```
 
+
 ## Aller plus loin
 
 [Créer des clés SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/){.external}
 
 [Remplacement de votre paire de clés SSH perdue](https://docs.ovh.com/fr/public-cloud/changer-sa-cle-ssh-en-cas-de-perte/){.external}
+
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
