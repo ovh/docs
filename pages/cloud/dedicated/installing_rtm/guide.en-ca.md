@@ -1,50 +1,50 @@
 ---
 title: 'Installing Real Time Monitoring (RTM)'
 slug: install-rtm
-excerpt: 'Learn how to install Real Time Monitoring on Linux or Windows'
+excerpt: 'This guide explains how to install RTM on Linux or Windows'
 section: 'Diagnostic and rescue mode'
 ---
 
-**Last updated 2018/10/22**
+**Last updated 15th April 2019**
 
 ## Objective
 
-With Real Time Monitoring (RTM), you can partially monitor your server and its activity. In your Control Panel, you will find information on the CPU (Central Processing Unit), RAM (Random Access Memory), open ports, etc. To view this information, you need to install the RTM package.
+With Real Time Monitoring (RTM), you can partially monitor your server and its activity. In the OVH Control Panel, you will find information on the CPU (Central Processing Unit), RAM (Random Access Memory), open ports, etc. To view this information, you need to install the RTM package.
 
-**This guide will explain how to install RTM on Linux or Windows**
+**This guide will explain how to install RTM on Linux or Windows.**
 
 ## Requirements
 
-- You need to be logged in via SSH (or on your graphical user interface) on your Linux server (*root* access).
+- You need to be logged in via SSH (or your graphical user interface) on your Linux server (*root* access).
 - You need to be logged in to the remote desktop on your Windows server (*administrator* access).
-- You need to be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You need to be logged in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
 
-Once you have installed the RTM via your Control Panel, you can monitor your server in the `Dedicated`{.action} section. On the main page for your server, you can find the monitoring information under `Real Time Monitoring`:
+Once you have installed the RTM via the OVH Control Panel, you can monitor your server in the `Dedicated`{.action} section. On the main page for your server, you can find the monitoring information under `Real Time Monitoring`:
 
 ![Real Time Monitoring](images/rtm.png){.thumbnail}
 
 > [!primary]
 >
-> Some firewall restrictions could prevent your infrastructure from being monitored, even though you have added the RTM. Don’t forget to give OVH monitoring IP addresses access to your server. You can find more details [here](https://docs.ovh.com/ca/en/dedicated/monitoring-ip-ovh/){.external}.
+> Some firewall restrictions could prevent your infrastructure from being monitored, even though you have added the RTM. Don’t forget to give OVH monitoring IP addresses access to your server. You can find more details [here](https://docs.ovh.com/ie/en/dedicated/monitoring-ip-ovh/){.external}.
 > 
 
 ### RTM in Linux
-On dedicated server, RTM collect disk, RAID information and hardware information.
+On dedicated servers, RTM collects disk, RAID and hardware information.
 
 
 #### Component
 
-1. ##### Beamium
+##### Beamium
 
-Beamium collect metrics from HTTP endpoints like _http://127.0.0.1/metrics_ and supports Prometheus and Warp 10™/Sensision format. 
+Beamium collects metrics from HTTP endpoints like _http://127.0.0.1/metrics_, and supports Prometheus and Warp10/Sensision formats. 
 
-Once scraped, Beamium can filter and forward data to a Warp 10™ Time Series platform. While acquiring metrics, Beamium uses DFO (Disk Fail Over) to prevent metrics loss due to eventual network issues or unavailable service.
+Once scraped, Beamium can filter and forward data to a Warp10 Time Series platform. While acquiring metrics, Beamium uses DFO (Disk Fail Over) to prevent metrics loss due to network issues or unavailable services.
 
-Beamium is written in Rust to ensure efficiency, a very low footprint and deterministic performances.
+Beamium is written in Rust to ensure efficiency, a very low footprint, and deterministic performance.
 
-Configuration example :
+Configuration example:
 
 ```sh
 # noderig endpoint to fetch
@@ -54,7 +54,7 @@ scrapers:
     format: sensision
     period: 60000
 
-# Warp 10™ platform to send data
+# Warp10 platform to send data
 sinks:
   metrics:
     url: https://rtm.ovh.net/
@@ -76,9 +76,9 @@ parameters:
 ```
 
 
-2. ##### Noderig
+##### Noderig
 
-Noderig collect OS metrics and expose them through a Sensision HTTP endpoint. Each collector is easily configurable, thanks to a simple level cursor
+Noderig collects OS metrics and exposes them through a Sensision HTTP endpoint. Each collector is easily configurable, thanks to a simple level cursor.
 
 Noderig metrics:
 
@@ -89,7 +89,7 @@ Noderig metrics:
 * Net
 * External collectors
 
-Configuration example :
+Configuration example:
 
 ```sh
 cpu: 1
@@ -105,31 +105,31 @@ period: 60000
 collectors: /opt/noderig
 ```
 
-3. ##### Rtm-binaries
+##### Rtm-binaries
 
-**rtmHardware** :
+**rtmHardware**:
 
--Collect hardware information like motherboard, pci devices, disk health... and solftware information like kernel version, bios version.
+-Collects hardware information like motherboard, pci devices, disk health etc., and also software information, like kernel version and bios version.
 
-**rtmHourly** :
+**rtmHourly**:
 
--Collect top memory process, listen ports, number of process up and actives.
+-Collects top memory process, listen ports, number of processes up, and actives.
 
-**rtmRaidCheck** :
+**rtmRaidCheck**:
 
--Check raid health.
+-Checks RAID health.
 
-### Installing RTM in Linux
+### Installing RTM on Linux
 
-Once you have logged in via SSH on your server, simply run the following command:
+Once you have logged in to your server via SSH, simply run the following command:
 
 ```sh
 wget -qO - https://last-public-ovh-infra-yak.snap.mirrors.ovh.net/yak/archives/apply.sh | OVH_PUPPET_MANIFEST=distribyak/catalog/master/puppet/manifests/common/rtmv2.pp bash
 ```
 
-### Debian/Ubuntu Manual installation
+### Debian/Ubuntu manual installation
 
-Add rtm and metrics repository for debian
+Add RTM and metrics repository for Debian:
 
 ```sh
 vi /etc/apt/sources.list.d/rtm.list
@@ -139,7 +139,7 @@ deb http://last.public.ovh.metrics.snap.mirrors.ovh.net/debian <distribution cod
 deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/debian <distribution codename> main
 ```
 
-Add rtm and metrics repository for ubuntu
+Add RTM and metrics repository for Ubuntu:
 
 ```sh
 vi /etc/apt/sources.list.d/rtm.list
@@ -149,14 +149,14 @@ deb http://last.public.ovh.metrics.snap.mirrors.ovh.net/ubuntu <distribution cod
 deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/ubuntu <distribution codename> main
 
 ```
-Install repository key
+Install repository key:
 
 ```sh
 curl  https://last-public-ovh-rtm.snap.mirrors.ovh.net/ovh_rtm.pub | apt-key add -
 curl  http://last.public.ovh.metrics.snap.mirrors.ovh.net/pub.key | apt-key add -
 ```
 
-Install Rtm packages
+Install RTM packages:
 
 ```sh
 apt-get update
@@ -165,7 +165,7 @@ apt-get install ovh-rtm-metrics-toolkit
 
 #### CentOS
 
-Add rtm and metrics repository for CentOS
+Add RTM and metrics repository for CentOS:
 
 ```sh
 vi /etc/yum.repos.d/ovh-rtm.repo
@@ -174,18 +174,18 @@ vi /etc/yum.repos.d/ovh-rtm.repo
 name=OVH RTM RHEL/ CentOS $releasever - $basearch
 baseurl=http://last.public.ovh.rtm.snap.mirrors.ovh.net/centos/$releasever/$basearch/Packages/
 enabled=1
-gpgcheck=1
+repo_gpgcheck=1
 gpgkey=http://last.public.ovh.rtm.snap.mirrors.ovh.net/ovh_rtm.pub
 
 [metrics]
 name=OVH METRICS RHEL/ CentOS $releasever - $basearch
 baseurl=http://last.public.ovh.metrics.snap.mirrors.ovh.net/centos/$releasever/$basearch/Packages/
 enabled=1
-gpgcheck=1
+repo_gpgcheck=1
 gpgkey=http://last.public.ovh.metrics.snap.mirrors.ovh.net/pub.key
 ```
 
-##### Install RTM Client
+##### Install RTM client:
 
 
 ```sh
@@ -193,16 +193,16 @@ yum update
 yum install ovh-rtm-metrics-toolkit
 ```
 
-### Installing RTM in Windows
+### Installing RTM on Windows
 
 Once you are logged in to the remote desktop, take the following steps:
 
-- Install ActivePerl if you have never installed RTM before. You can download it here: <http://www.activestate.com/activeperl/>
-- Download and install the latest version of RTM here: <ftp://ftp.ovh.net/made-in-ovh/rtm/windows/>
-- Right-click on the file and then click `Run as administrator`{.action}
+- Install ActivePerl if you have never installed RTM before. You can download it here: <http://www.activestate.com/activeperl/>.
+- Download and install the latest version of RTM here: <ftp://ftp.ovh.net/made-in-ovh/rtm/windows/>.
+- Right-click on the file and then click `Run as administrator`{.action}.
 
 ## Go further
 
-[IP addresses for OVH monitoring](https://docs.ovh.com/ca/en/dedicated/monitoring-ip-ovh/){.external}
+[IP addresses for OVH monitoring](https://docs.ovh.com/ie/en/dedicated/monitoring-ip-ovh/){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.
