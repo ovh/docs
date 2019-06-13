@@ -109,6 +109,7 @@ Po zmianie hasła możesz zalogować się do konta e-mail. Możesz to zrobić na
 
 - **Użyj kompatybilnego programu pocztowego**: konieczne jest wprowadzenie nowego hasła we wszystkich urządzeniach, w których konto e-mail zostało skonfigurowane. W przypadku niektórych programów pocztowych okno, do którego należy wpisać nowe hasło do konta e-mail wyświetli się automatycznie. Jeśli tak się nie stanie, [skorzystaj z naszych przewodników dotyczących konfiguracji](../) lub skontaktuj się z producentem używanego przez Ciebie oprogramowania.
 
+
 ## Sprawdź również
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
