@@ -223,7 +223,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 
 
 ```bash
-213.251.182.107
+51.68.11.207
 ```
 
 
@@ -265,7 +265,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 
 
 ```bash
-213.251.182.110
+51.68.11.211
 ```
 
 
@@ -307,7 +307,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 
 
 ```bash
-213.251.182.111
+51.68.11.215
 ```
 
 
@@ -432,7 +432,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 
 
 ```bash
-213.251.182.114
+51.68.11.227
 ```
 
 
