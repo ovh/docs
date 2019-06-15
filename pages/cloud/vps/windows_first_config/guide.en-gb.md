@@ -22,27 +22,24 @@ When you install Windows Server 2012, 2012 R2 or 2016 on a [VPS](https://www.ovh
 
 ### Step 1: Log in to the KVM
 
-Log in to the OVH [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Cloud`{.action} tab, then expand the list of servers.
+Once you have logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, you simply go to the `Server`{.action} section, then to `VPS`{.action} in the left-hand column to select your VPS. In this section, you will you will see a button labelled `KVM`{.action}:
 
-![KVM](images/vps-server-list-01.png){.thumbnail}
+![Click on the KVM button](images/activating_kvm_manager.png){.thumbnail}
 
-Select your server from the list and click on the `Home`{.action} tab.
+The KVM screen will now open, which is a small window with a connection to your server. Since the window is so small it will be quite difficult to navigate around your server's interface using the scrollbars, so it's recommended that you open the KVM in a new, full-screen window using the "Open in a new window" button in the bottom right corner of the popup. Then all you have to do is connect:
 
-![KVM](images/kvm-01.png){.thumbnail}
+> [!primary]
+>
+> If you have issues with double typing, the issue may originate due to auto screen adjustment. We recommend opening the KVM in a new window using the "Open in a new window" button.
+> Should you still have issues with the screen, we recommend removing from the URL the "auto" part. If the URL is (the link for you may be different, this is only illustrating which part of the URL needs to be removed) https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx then it should become https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx
+>
 
-Click on the `KVM`{.action} shortcut in the **Shortcuts** section of the `Home`{.action} tab.
+![Connecting to the KVM](images/kvm_screen.png){.thumbnail}
 
-![KVM](images/kvm-02.png){.thumbnail}
-
-The KVM screen will now open, which is a small window with a connection to your server (similar to remote desktop).
-
-Since the window is so small it will be quite difficult to navigate around your server's interface using the scrollbars, so it's recommended that you open the KVM in a new, full-screen window.
-
-![KVM](images/setup-01.png){.thumbnail}
-
-Once you open the KVM in full-screen mode, you can begin the initial Windows setup.
-
-![KVM](images/setup-02.png){.thumbnail}
+> [!primary]
+>
+> The keyboard may have a different layout to your own. Be sure to check it, since the keyboard could be AZERTY instead of QWERTY, for example.
+>
 
 ### Step 2: Configure Windows settings
 
