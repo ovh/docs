@@ -5,7 +5,7 @@ slug: use-kvm-for-vps
 section: Getting started
 ---
 
-**Last updated 18th April 2018**
+**Last updated 15 May 2019**
 
 ## Objective
 

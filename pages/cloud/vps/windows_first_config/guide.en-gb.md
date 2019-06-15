@@ -5,7 +5,7 @@ excerpt: 'This guide will show you which settings need to be changed to re-enabl
 section: 'Getting started'
 ---
 
-**Last updated 5th July 2018**
+**Last updated 15th July 2018**
 
 ## Objective
 
