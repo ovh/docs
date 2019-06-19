@@ -65,7 +65,7 @@ Please fill your e-mail account settings :
 - Your Name : Name of e-mail account.
 - Email Address : E-mail address that you want to configure.
 - Account Type : Choose IMAP.
-- Incomming mail server : It has form "ex*.mail.ovh.net" depends on which server your service is hosted. Before you filling this value, please check it in OVH Control Panel in general information -> window "Connection" -> "Server:", please check screen below.
+- Incomming mail server : It has form "ex*.mail.ovh.net" depends on which server your service is hosted. Please check server name in OVH Control Panel, microsoft tab -> service name -> general information -> window "Connection" -> "Server:", please check screen below.
 
 ![](images/SS_10.png)
 
