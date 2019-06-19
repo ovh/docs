@@ -2,6 +2,7 @@
 title: 'Sécuriser un VPS'
 slug: conseils-securisation-vps
 section: 'Premiers pas'
+excerpt: 'Découvrez les éléments de base vous permettant de sécuriser votre VPS'
 ---
 
 **Dernière mise à jour le 13/06/2019**
