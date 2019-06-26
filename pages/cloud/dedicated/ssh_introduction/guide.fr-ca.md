@@ -1,111 +1,101 @@
 ---
-title: Introduction au SSH
+title: 'Introduction au SSH'
 slug: ssh-introduction
-excerpt: Découvrez ici comment utiliser le service SSH pour accéder à votre serveur
-section: SSH et clé SSH
+excerpt: 'Découvrez ici comment utiliser le service SSH pour accéder à votre serveur'
+section: 'SSH et clé SSH'
 order: 1
 ---
 
-**Dernière mise à jour le 2017/12/28**
+**Dernière mise à jour le 17/06/2019**
 
 ## Objectif
 
-Le protocole de communication SSH (Secure Shell) est installé nativement sur tous les serveurs OVH (VPS, serveurs dédiés, instances Cloud Public).
+Le protocole de communication SSH (Secure Shell) est installé nativement sur tous les serveurs OVH (VPS, serveurs dédiés, instances Public Cloud).
 
-**Découvrez ici comment utiliser le service SSH pour accéder à votre serveur.**
+**Découvrez comment utiliser le service SSH pour accéder à votre serveur.**
 
 ## Prérequis
 
-- Le SSH est installé sur toutes les machines. Il permet de s'y connecter de manière sécurisée et d'avoir un contrôle total sur celle-ci.
-
+- Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
+- Avoir accès à votre serveur via SSH en tant qu'administrateur (root).
 
 ## En pratique
 
 ### Logiciels compatibles
 
-Il existe de très nombreux logiciels permettant la connexion en SSH. En voici quelques exemples pour vous aider.
+De nombreux logiciels vous permettent de vous connecter à votre serveur en SSH. En voici quelques exemples pour vous aider :
 
 #### Sur Windows
 
-- [Putty](http://www.putty.org/){.external} (Gratuit)
-- [MobaXterm](https://mobaxterm.mobatek.net/) (une version gratuite et une version payante)
-- [SecureCRT](http://www.vandyke.com/products/securecrt/){.external} (Payant)
+Pour vous connecter à votre serveur à partir de Windows, vous pouvez utiliser l'une des applications suivantes :
 
-Depuis les dernières versions de Windows 10 et Windows Server, le mode développeur permet d'avoir accès à une console bash. Voici un lien vers la documentation Microsoft : <https://msdn.microsoft.com/fr-fr/commandline/wsl/install-win10>.
+- [ PuTT](http://www.putty.org/){.external} (gratuit)
+- [ MobaXterm](https://mobaxterm.mobatek.net/) (version gratuite et version payante)
+- [ SecureCRT](http://www.vandyke.com/products/securecrt/){.external} (payant)
+
+Depuis les versions Windows 10 et Windows Server les plus récentes, le mode développeur vous donne accès à une console bash. Voici un lien vers la documentation Microsoft : <https://docs.microsoft.com/fr-fr/windows/wsl/install-win10>.
 
 #### Sur Mac
 
-- L'outil `Terminal`{.action} est livré avec Mac OS X et est systématiquement installé sur la machine.
-
+L'outil `Terminal`{.action} est fourni avec Mac OS X et permet d'établir une connexion SSH à votre serveur.
 
 #### Sur Linux
 
-- L'outil `Console`{.action} ou `Terminal`{.action} est installé nativement et peut être utilisé pour se connecter.
-- Pour de la gestion multi-onglets, le paquet `Terminator`peut être installé. Vous pouvez en trouver une présentation sur la documentation d'Ubuntu : <https://doc.ubuntu-fr.org/terminator>.
-- [OpenSSH](http://www.openssh.com){.external} (Gratuit).
+À partir d'un ordinateur Linux, vous pouvez utiliser les outils `Console`{.action} ou `Terminal`{.action} installés nativement pour vous connecter à votre serveur.
 
+Pour de la gestion multi-onglets, le paquet `Terminator`, un émulateur de terminal pouvant être utilisé pour gérer plusieurs connexions SSH peut être installé. Vous pouvez lire un manuel Ubuntu pour cet outil ici : <http://manpages.ubuntu.com/manpages/zesty/man1/terminator.1.html>.
 
-### Étapes de connexion en SSH
+Outre ces applications, vous pouvez également utiliser [OpenSSH](http://www.openssh.com){.external} gratuitement.
 
-#### Étape 1 : première connexion
+### Étapes de connexion via SSH
 
-Pour se connecter sur la machine en SSH, il faut avoir deux informations :
+#### Étape 1 : première connexion
 
-- l'IPv4 ou le nom de la machine ;
-- le mot de passe racine de la machine (reçu par courriel à l'installation).
+Pour vous connecter à votre machine en SSH, vous aurez besoin de l'adresse IPv4 ou du nom de la machine, ainsi que du mot de passe root du serveur, que vous avez reçu par e-mail à l’installation.
 
-
-La connexion se fait avec la commande suivante :
+Entrez la commande suivante :
 
 ```sh
-ssh root@IP_du_serveur
+ssh root@server_IP
 ```
 
-Ou alors :
+Vous pouvez également utiliser la commande suivante :
 
 ```sh
-ssh root@nom_du_serveur
+ssh root@server_name
 ```
 
-Vous obtiendrez alors le message qui suit :
+Le message suivant s'affiche :
 
 ```sh
-The authenticity of host servername (IP_du_serveur) can’t be established.
+The authenticity of host servername (server_IP) can’t be established.
 RSA key fingerprint is a9:bb:55:35:86:xx:xx:00:xx:00:2b:2c:79:10:96:3c.
-Are you sure you want to continue connecting (yes/no)? YES
-:warning: Permanently added servername,IP_du_serveur (RSA) to the list of known hosts.
+Are you sure you want to continue connecting (yes/no)?` YES
+Warning: Permanently added servername, server_IP (RSA) to the list of known hosts.
 Password:
 root@vps12345:~#
 ```
 
-Lors de la première connexion, votre client SSH reçoit une empreinte de clé RSA qui est une empreinte du serveur sur lequel vous vous connectez. Celle-ci est vérifiée à chaque nouvelle connexion. Si elle change, vous en serez informé et cela signifie que quelque chose a changé :
+Lors de la première connexion, votre client SSH reçoit une empreinte de clé RSA, qui est une empreinte du serveur auquel vous vous connectez. Celle-ci est vérifiée pour chaque nouvelle connexion. Si elle est modifiée, vous en serez informé, ce qui signifie que l'une des situations suivantes s'est produite :
 
-- la machine a été réinstallée ;
-- le serveur SSH a été réinstallé ;
-- vous vous connectez sur une autre machine.
+- l'ordinateur a été réinstallé ;
+- le serveur SSH a été réinstallé ;
+- vous vous connectez à une autre machine.
 
-Lors de la première connexion vous devez accepter l’empreinte qui sera enregistrée par votre client SSH sur votre poste de travail.
+Lors de la première connexion, vous devez accepter l'empreinte qui sera enregistrée par votre client SSH sur votre poste de travail.
 
+#### Étape 2 : accès au manuel SSH
 
-#### Étape 2 : le manuel
-
-Dans les distributions Linux, vous aurez accès à un manuel reprenant toutes les commandes disponibles ainsi que leurs arguments.
+Sur les distributions Linux, vous aurez accès à un manuel reprenant toutes les commandes disponibles et leurs arguments.
 
 ```sh
 man bash
 ```
 
-#### Étape 3 : mise à jour
+#### Étape 3 : mise à jour
 
-Votre client SSH doit toujours être à jour au même titre que votre distribution. Vous pouvez le vérifier avec la commande suivante :
-
-```sh
-ssh -V
-```
-
-En cas de doute n'hésitez pas à vous référer à la documentation du client SSH que vous utilisez.
-
+Votre client SSH doit être tenu à jour au même titre que votre distribution pour fonctionner correctement. Consultez la documentation du client SSH que vous utilisez pour savoir comment le mettre à jour.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs au <https://community.ovh.com/ca/fr> .
+Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
