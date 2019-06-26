@@ -1,44 +1,46 @@
 ---
-title: Repartitionner un VPS suite à une mise à niveau
-slug: repartitionner-vps-suite-mise-a-niveau
-section: Premiers pas
+title: 'Repartitionner un VPS suite à un upgrade'
+slug: repartitionner-vps-suite-upgrade
+excerpt: 'Découvrez comment augmenter votre espace de stockage après un upgrade de votre VPS'
+section: 'Premiers pas'
+order: 3
 ---
 
-**Dernière mise à jour le 2018/01/15**
+**Dernière mise à jour le 05/12/2018**
 
 ## Objectif
 
-Lors de la mise à jour de votre VPS, il est possible qu'un repartitionnement de votre espace de stockage soit nécessaire. Voici les étapes à suivre pour cela.
+Lors de l’upgrade de votre VPS, il est possible qu’un repartitionnement de votre espace de stockage soit nécessaire.
 
 > [!warning]
 >
-> Le repartitionnement peut endommager définitivement vos données. OVH ne pourra être tenu responsable de leur détérioration ou de leur perte. Avant de faire quoi que ce soit, pensez à bien sauvegarder vos données.
+> Le repartitionnement peut endommager définitivement vos données. OVH ne pourra être tenu responsable de leur détérioration ou de leur perte. Avant de faire quoi que ce soit, pensez donc à bien sauvegarder vos informations. 
 >
+
+**Découvrez comment augmenter votre espace de stockage après un upgrade de votre VPS.**
 
 ## Prérequis
 
-- Avoir accès en SSH au VPS (accès racine ou « root »).
-- Avoir redémarré le serveur en [Mode Rescue](https://docs.ovh.com/fr/vps/mode-rescue-vps/){.external}.
+- Avoir accès en SSH au VPS (accès root).
+- Avoir redémarré le serveur en [mode rescue](https://docs.ovh.com/fr/vps/mode-rescue-vps/).
 
 ## En pratique
 
-Suite à une mise à niveau, la mémoire vive et le processeur (CPU) seront automatiquement ajustés. L'espace de stockage quant à lui ne le sera pas systématiquement.
-
-**Ce guide vous donne les étapes à suivre pour augmenter votre espace de stockage**.
+Suite à un upgrade, la mémoire vive (RAM) et le processeur (CPU) seront automatiquement ajustés. Cela ne sera pas nécessairement le cas pour l’espace de stockage.
 
 ### Sauvegarder vos données
 
-Comme la tentative d’étendre une partition peut entraîner une perte de données, il est **fortement recommandé** de faire une sauvegarde de celles se trouvant sur votre VPS.
+La tentative d’étendre une partition peut entraîner une perte de données. Par conséquent, **nous vous recommandons vivement** de sauvegarder les informations de votre VPS.
 
 ### Démonter la partition
 
-Une fois connecté à votre VPS en [mode Rescue](https://docs.ovh.com/fr/vps/mode-rescue-vps/){.external}, votre partition sera automatiquement montée. Afin de redimensionner celle-ci, vous devrez la démonter. Si vous connaissez le nom de votre partition, vous pouvez sauter cette étape. Si vous ne le connaissez pas, utilisez la commande suivante :
+Une fois connecté à votre VPS en [mode rescue](https://docs.ovh.com/fr/vps/mode-rescue-vps/), votre partition sera automatiquement montée. Pour la redimensionner, vous devez la démonter. Si vous connaissez le nom de votre partition, vous pouvez ignorer l'étape suivante. Dans le cas contraire, utilisez cette commande :
 
 ```sh
 lsblk
 ```
 
-La partition correspondant au mode rescue sera celle montée sur le répertoire / qui est en réalité la racine du système. La partition de votre VPS quant à elle sera probablement placée dans un répertoire associé à /mnt, voire pas montée du tout.
+La partition correspondant au mode rescue sera celle montée dans le répertoire « / », qui est en réalité la racine du système. Quant à la partition de votre VPS, elle sera probablement placée dans un répertoire associé à « /mnt », voire pas montée du tout.
 
 ```sh
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -48,15 +50,15 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Pour démonter votre partition, utilisez la commande suivante :
+Pour démonter votre partition, utilisez la commande suivante :
 
 ```sh
 umount /dev/sdb1
 ```
 
-### Vérifier le système de fichiers (filesystem)
+### Vérifier le système de fichiers
 
-Une fois la partition démontée, il convient de vérifier le système de fichiers (`filesystem check`) pour voir si des erreurs sont présentes dans la partition. La commande est la suivante :
+Une fois la partition démontée, il convient de vérifier le système de fichiers (`filesystem check`) pour s’assurer de l’absence d’erreurs. La commande est la suivante :
 
 ```sh
 e2fsck -yf /dev/sdb1
@@ -70,13 +72,16 @@ Pass 5: Checking group summary information
 /dev/sdb1: 37870/1310720 files (0.2% non-contiguous), 313949/5242462 blocks
 ```
 
-> [!warning]
->
-> Si vous constatez une erreur de type `bad magic number in superblock`, ne continuez pas. Une procédure pour régler cette difficulté vous est expliquée à la fin de ce guide.
+Si vous constatez une erreur, prenez-en connaissance et agissez de la manière la plus adéquate selon votre cas. Vous trouverez ci-dessous quelques-unes des erreurs les plus courantes :
+
+- `bad magic number in superblock` : ne continuez pas. Une procédure pour régler cette difficulté est expliquée dans la partie [« Comment réparer les erreurs **bad magic number in superblock** »](https://docs.ovh.com/fr/vps/repartitionner-vps-suite-upgrade/#comment-reparer-les-erreurs-bad-magic-number-in-superblock) de cette documentation.
+
+- `/dev/vdb1 has unsupported feature(s): metadata_csum` suivi de `e2fsck: Get a newer version of e2fsck!` : mettez à jour e2fsck. Si la dernière version n’est pas disponible via `apt` (ou autre gestionnaire de paquets), vous devrez la compiler depuis les sources.
+
 
 ### Ouvrir l’application fdisk
 
-Si la vérification du système de fichiers se finalise correctement, ouvrez l’application `fdisk`. Ici, vous devrez donner le nom du disque et non celui de la partition comme paramètre. Si votre partition est `sdb1` au lieu de `vdb1` par exemple, alors le nom du disque sera /dev/sdb.
+Si la vérification du système de fichiers se finalise correctement, ouvrez l’application `fdisk`. Dans les paramètres, vous devez entrer le nom du disque et non celui de la partition. Par exemple, si votre partition est `sdb1` au lieu de `vdb1`, le nom du disque sera « /dev/sdb ».
 
 ```sh
 fdisk -u /dev/sdb
@@ -87,9 +92,9 @@ fdisk -u /dev/sdb
 > Cette application est munie de plusieurs sous-commandes que vous pouvez lister avec la commande `m`.
 >
 
-### Supprimer l'ancienne partition
+### Supprimer l’ancienne partition
 
-Avant de supprimer l'ancienne partition, il est recommandé de conserver le nombre correspondant au premier secteur de la partition. Vous pouvez obtenir cette information avec la commande `p`{.action}. Elle est indiquée dans le champ `Start`. Conservez cette donnée pour plus tard.
+Avant de supprimer l'ancienne partition, il est recommandé de noter le numéro correspondant au premier secteur de la partition. Vous pouvez obtenir cette information avec la commande `p`{.action}. Elle est indiquée sous le champ `Start`. Conservez cette donnée pour plus tard.
 
 ```sh
 Command (m for help): p
@@ -107,10 +112,10 @@ Device Boot Start End Blocks Id System
 
 > [!warning]
 >
-> Il s’agit du point de non-retour si vous n’avez pas fait de sauvegarde de vos données.
+> Il s’agit du point de non-retour si vous n’avez pas réalisé de sauvegarde de vos données.
 >
 
-Ensuite, supprimez la partition avec la commande `d`{.action}.
+Supprimez alors la partition avec la commande `d`{.action}.
 
 ```sh
 Command (m for help): d
@@ -121,7 +126,7 @@ L’unique partition sera automatiquement effacée.
 
 ### Créer une nouvelle partition
 
-Il faut maintenant créer la nouvelle partition avec la commande `n`{.action}. Il est recommandé d’utiliser les valeurs par défaut.
+Vous devez maintenant créer une nouvelle partition avec la commande `n`{.action}. Nous vous recommandons d'utiliser les valeurs par défaut.
 
 ```sh
 Command (m for help): n
@@ -130,15 +135,15 @@ p primary (0 primary, 0 extended, 4 free)
 e extended
 Select (default p): p
 Partition number (1-4, default 1): 1
-First sector (2048-41943039, default 2048): 2048.
-Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 41943039.
+First sector (2048-41943039, default 2048): 2048
+Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 41943039
 ```
 
-Sur la ligne `First sector`, assurez-vous que la valeur par défaut est la même que celle que vous avez noté précédemment. Si elle diffère, utilisez la valeur que vous avez noté.
+Dans la ligne `First sector`, assurez-vous que la valeur par défaut est la même que celle que vous avez notée précédemment. Si elle diffère, utilisez la valeur que vous avez notée.
 
-### Rendre la partition démarrable (bootable)
+### Rendre la partition amorçable (<i>bootable</i>)
 
-Il faut maintenant s'assurer que la partition est démarrable (bootable). Vous pouvez le faire à l’aide de la commande `a`{.action}.
+Vous devez maintenant vous assurer que la partition est amorçable (<i>bootable</i>). Pour ce faire, utilisez la commande `a`{.action} :
 
 ```sh
 Command (m for help): a
@@ -146,7 +151,7 @@ Command (m for help): a
 Partition number (1-4): 1
 ```
 
-Enregistrez vos changements et quittez l’application avec la commande `w`{.action} :
+Enregistrez vos changements et quittez l’application avec la commande `w`{.action} :
 
 ```sh
 Command (m for help): w
@@ -157,9 +162,9 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-### Étendre le filesystem sur la partition
+### Étendre le système de fichiers sur la partition
 
-La partition a été étendue, mais son système de fichiers (filesystem) occupe toujours le même espace qu’auparavant. Afin de l’étendre, veuillez entrer la commande suivante :
+La partition a été étendue, mais son système de fichiers (<i>filesystem</i>) occupe toujours le même espace qu’auparavant. Afin de l’étendre, veuillez entrer la commande suivante :
 
 ```sh
 resize2fs /dev/sdb1
@@ -171,7 +176,7 @@ The filesystem on /dev/sdb1 is now 5242624 blocks long.
 
 ### Vérifier les résultats
 
-Afin de vérifier si cela a fonctionné, vous pouvez monter la partition nouvellement créée et regarder sa taille.
+Afin de vérifier si l’opération a fonctionné, vous pouvez monter la partition nouvellement créée et regarder sa taille.
 
 ```sh
 mount /dev/sdb1 /mnt
@@ -190,11 +195,11 @@ none 100M 0 100M 0% /run/user
 /dev/sdb1 50G 842M 48G 2% /mnt
 ```
 
-Vous trouverez la nouvelle taille de la partition en dessous de `size`.
+La nouvelle taille de la partition est indiquée en dessous de `size`.
 
-### Comment réparer les erreurs *bad magic number in superblock*?
+### Comment réparer les erreurs <i>bad magic number in superblock </i>?
 
-Si la commande `e2fsck`{.action} vous retourne le message d’erreur `bad magic number in superblock`, vous devrez vérifier et réparer le système de fichiers en prenant un superblock de sauvegarde. Afin de voir les superblocks de sauvegarde disponibles, veuillez entrer la commande suivante :
+Si la commande `e2fsck`{.action} renvoie le message d'erreur `bad magic number in superblock`, vous devez vérifier et réparer le système de fichiers en prenant un superblock de sauvegarde. Afin de voir les superblocks de sauvegarde disponibles, entrez la commande suivante :
 
 ```sh
 dumpe2fs /dev/sdb1 | grep superblock
@@ -216,7 +221,7 @@ Backup superblock at 20480000, Group descriptors at 20480001-20480006
 Backup superblock at 23887872, Group descriptors at 23887873-23887878
 ```
 
-Ensuite, utilisez le premier superblock de sauvegarde afin de vérifier et réparer le système de fichiers :
+Utilisez enfin le premier superblock de sauvegarde, afin de vérifier et réparer le système de fichiers :
 
 ```sh
 fsck -b 32768 /dev/sdb1
