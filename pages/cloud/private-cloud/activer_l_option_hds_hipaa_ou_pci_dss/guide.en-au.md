@@ -15,6 +15,12 @@ You can adapt your Private Cloud for PCI DSS certifications, which could be esse
 
 ## Requirements
 
+
+> [!primary]
+>
+> These options can be activated as part of the hosting of health data, or even bank data. Currently, a private cloud cannot be both PCIDSS and HDS at the same time.
+>
+
 - a Private Cloud infrastructure in version 6.0 or higher
 - access to the `Dedicated`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
@@ -26,7 +32,9 @@ In order to adapt your Private Cloud for this certification, one of the correspo
 
 In the window that appears, make sure you are on the `General Information`{.action} tab. Then check the activation status of the security options in the "Security Options" section. **It should be noted that it is currently not possible to accumulate several security options for the same Private Cloud.**
 
-![hdspcidsscompliance](images/HomeSDDCManager.png){.thumbnail}
+
+![hdspcidsscompliance](images/HomeSDDCManager.PNG){.thumbnail}
+
 
 If the desired security option is not enabled, activate it by clicking on the `...`{.action} button, then on `Activate`{.action}. Several requirements are essential.
 
@@ -66,7 +74,7 @@ As specified, as a security measure following the security option activation:
 
 As a reminder, access to the interface will only be possible once the security option has been activated.
 
-Then log in to the secure interface via the link provided in the email you received. This should look like “https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/password-lost”. Once logged in, you will be able to change the password of the “admin” user and then the password of additional users. Our documentation “Use the secure interface” can assist you in this process.
+Then log in to the secure interface via the link provided in the email you received. This should look like `https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/password-lost`. Once logged in, you will be able to change the password of the “admin” user and then the password of additional users. 
 
 ## Go further
 
