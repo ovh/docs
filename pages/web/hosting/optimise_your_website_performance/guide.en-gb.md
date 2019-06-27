@@ -27,7 +27,7 @@ This guide will help you get a basic understanding on what points can affect per
 ### Step 1: Define the scope
 
 #### Questions to ask yourself:
-If your website is slow, it can be helfpul to ask yourself the questions below to help narrow down the scope of investigation.
+If your website is slow, it can be helpful to ask yourself the questions below to help narrow down the scope of investigation.
 
 1. **When did your website start being slow?**
 This way you can identify if the latency is caused by a recent website modification, such as an incorrectly optimised new plugin or a new theme, which would send a lot of outgoing queries and slow down your website.
@@ -36,7 +36,7 @@ It may be useful to check when in the day website is slow, then identify if it's
 3. **Is it affecting your entire website or just part of it?**
 If only one web page is affected and not the entire website, it's useful to analyse this page in particular, and to check which request or script could be causing the latency.
 4. **Do you get an error page? If yes, which type?**
-Check if errors are generated in order to identify the source of the latency. To get a better overview of occuring errors on your hosting, please consult the logs.
+Check if errors are generated in order to identify the source of the latency. To get a better overview of occurring errors on your hosting, please consult the logs.
 
 Answering those questions can help to focus on specific points and diagnose areas for improvement.
 
@@ -54,7 +54,7 @@ To check if your website is compatible with the latest PHP version, you can cons
 - **PHP-FPM**
 
 We have adapted PHP-FPM to our web infrastructure, in order to speed up PHP responses and radically reduce CPU load.
-Tests have shown that performance is up to 7 times faster compared with the older mechanism.
+Tests have shown that performance is up to **7 times faster** compared with the older mechanism.
 
 Some server variables are changed via PHP-FPM usage:
 
@@ -66,7 +66,7 @@ Some server variables are changed via PHP-FPM usage:
 
 You can find out how to update PHP, in the [following guide](https://docs.ovh.com/gb/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/){.external}
 
-To switch to use PHP-FPM in the "stable" version or to get details on more advanced options of your webhosting, please consult [this guide](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment/){.external}
+To switch to use PHP-FPM in the "_stable_" version or to get details on more advanced options of your webhosting, please consult [this guide](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment/){.external}
 
 The _.ovhconfig_ file works at the root of the hosting package or in a level 1 sub-directory (ex: _/www/_) but not in level two or higher directories (ex : _/www/test/_ , _/www/test/test2/_)
 
@@ -97,11 +97,11 @@ How to access the graphs ?
 
 What are the different categories displayed for the graphs ?
 - **HTTP requests**: Indicate the average number of website hits. Hits are classed by HTTP status 2xx/3xx/4xx/5xx
-- **Average response time**: Refers to the average page response time. Dynamic and Static pages are diffenteriated.
+- **Average response time**: Refers to the average page response time. Dynamic and Static pages are differentiated.
 - **Exceeding the resource threshold**: This graphic shows the PHP Workers usage, in order to steer you towards a different web hosting package if needed. Using PHP-FPM could help you to reduce the use of PHP workers.
 - **CPU usage**: Shows your website's CPU usage. This might help you to spot a possible CPU overload.
 - **Outgoing connections**: This lets you see outgoing TCP request made by the server, for example if your website is hacked, the server could be used to attack other external websites. You can also check external calls made by modules such as Facebook, Twitter etc. Reducing the number of outgoing TCP requests is a good way to reduce load time because if the server which you are requesting content from is taking time to answer, the delay to load your website will increase.
-- **FTP commands**: Displays the different FTP commands that have been used on the hosting. For example succesfull and unsuccesful login attempts, download, upload and deletion of files, ... .
+- **FTP commands**: Displays the different FTP commands that have been used on the hosting. For example successful and unsuccessful login attempts, download, upload and deletion of files, ... .
 
 The two following categories are only displayed if you currently use a Database on your hosting offer.
 Don't forget to select the name of your Database and the desired period.
@@ -112,18 +112,18 @@ Don't forget to select the name of your Database and the desired period.
 One useful tool for analysis is the [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external} which is directly integrated in the Mozilla Firefox browser and allows to analyze a web page's loading time in detail.
 
 With it you can check which elements of your site have the slowest loading/heavyest load.
-It can help to narrow down which images and which content is increasing the website loading time and to prioritize where optimazations should be made .
+It can help to narrow down which images and which content is increasing the website loading time and to prioritize where optimizations should be made .
 
 You can access the tool by pressing the F12 key on your keyboard (via firefox or chrome),
 
 Reducing the number of outgoing TCP requests is also a good way to reduce load time because if the server which you are requesting content from is taking time to answer, the delay to load your website will increase as well.
 
 - **CDN**
-In order to improve website access website downloads and get naturally optimised ranking you could use an OVH CDN (Content Delivery Network) to store your files, applications and websites closer to your end users.
+In order to improve website access website downloads and get naturally optimised ranking you could use the OVH CDN (Content Delivery Network) to store your files, applications and websites closer to your end users.
 
 As a result you will improve response times for visitors all over the world because the static parts of your website will be downloaded directly by your visitor in the point of presence which is closest to them.
 
-Discover our [CDN solutions here](https://www.ovh.co.uk/cdn/){.external}.
+Discover our [CDN solution here](https://www.ovh.co.uk/cdn/){.external}.
 
 
 ### Step 6: Checking the Content Management System (CMS) and plugins used
@@ -145,7 +145,7 @@ It might be a good idea to deactivate or even delete unused plugins to improve w
 ### Step 7: Optimize your Database
 
 _This step is optional if you are not using a Database._
-You can access your database using PHPMyAdmin, explanation how to use PHPMyAdmin would go beyond the scope of this guide, and won't be furtherly detailled.
+You can access your database using PHPMyAdmin, explanation how to use PHPMyAdmin would go beyond the scope of this guide, and won't be furtherly detailed.
 However lots of external guides exist on this matter.
 
 - **How to access the database via phpMyAdmin ?**
@@ -225,5 +225,6 @@ Avoid using the "HAVING" clause which can slow down queries. You should also avo
 
 
 #### Private SQL
-If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our Private SQL offer to have more ressources available.
+If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our Private SQL offer to have more resources available.
 A comparison of our offers can be found [on the following page](https://www.ovh.co.uk/web-hosting/sql-options.xml){.external}
+
