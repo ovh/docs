@@ -90,12 +90,17 @@ You can access your logs, statistics and graphs directly from the [OVH Control P
 How to Access the logs ?
 - Click on the domain in the `Hosting`{.action} section,
 - Click on the `More +`{.action} tab then select `Statistics and logs`{.action}.
+- Then click on the links displayed to access either the _Website visit statistics_ or the _Logs_.
+![logs](images/logs_highlighted.png){.thumbnail}
+
 
 How to access the graphs ?
 - Click on the domain in the `Hosting`{.action} section,
-- You can then consult the graphs of your hosting usage at the very bottom of the page.
+- Once in the `General information`{.action} section Scroll down to the very bottom of the page, there you can consult the graphs of your hosting usage.
+- There you will be able to select the type of information as well as the time period for the data to be visualized.
+![graphs](images/graphs_highlighted.png){.thumbnail}
 
-What are the different categories displayed for the graphs ?
+What are the different types of information that can be displayed ?
 - **HTTP requests**: Indicate the average number of website hits. Hits are classed by HTTP status 2xx/3xx/4xx/5xx
 - **Average response time**: Refers to the average page response time. Dynamic and Static pages are differentiated.
 - **Exceeding the resource threshold**: This graphic shows the PHP Workers usage, in order to steer you towards a different web hosting package if needed. Using PHP-FPM could help you to reduce the use of PHP workers.
