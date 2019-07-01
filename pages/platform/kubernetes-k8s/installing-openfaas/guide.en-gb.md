@@ -5,6 +5,8 @@ excerpt: 'Find out how to install a FaaS platform on OVH Managed Kubernetes usin
 section: Tutorials
 ---
 
+**Last updated 1<sup>st</sup> July, 2019.**
+
 <style>
  pre {
      font-size: 14px;
@@ -19,15 +21,13 @@ section: Tutorials
  pre.console code {
    border: solid 0px transparent;
    font-family: monospace !important;
-   color: #ccc;
    font-size: 0.75em;
+   color: #ccc;
  }
  .small {
      font-size: 0.75em;
  }
 </style>
-
-**Last updated on May 26th, 2019**
 
 
 
@@ -39,12 +39,12 @@ That's the beauty of the rich Kubernetes ecosystem, you can find projects to add
 
 We have tested several FaaS platform on OVH Managed Kubernetes. Our objective was a solution:
 
-- Easy to deploy, ideally a simple [Helm chart](https://github.com/helm/helm)
+- Easy to deploy, ideally a simple [Helm chart](https://github.com/helm/helm){.external}
 - Manageable with both an UI and a CLI, because different customers have different needs
 - Auto-scalable, both is ascending and descending senses
 - With a comprehensive documentation
 
-We tested lots of platforms, like [Kubeless](https://kubeless.io/), [OpenWhisk](https://github.com/apache/incubator-openwhisk), [OpenFaaS](https://github.com/openfaas/faas) and [Fission](https://github.com/fission/fission), and I must said that all of them performed quite well. 
+We tested lots of platforms, like [Kubeless](https://kubeless.io/){.external}, [OpenWhisk](https://github.com/apache/incubator-openwhisk){.external}, [OpenFaaS](https://github.com/openfaas/faas){.external} and [Fission](https://github.com/fission/fission){.external}, and I must said that all of them performed quite well. 
 
 At the end, the one that scored the best on our objectives was OpenFaaS, so we decided to use it as reference for this tutorial.
 
@@ -53,15 +53,15 @@ At the end, the one that scored the best on our objectives was OpenFaaS, so we d
 
 This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
-You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster, please refer to the [How to install Helm on OVH Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVH Managed Kubernetes Service](../installing-helm/) tutorial.
 
 
 
 ## OpenFaaS, a Kubernetes-native FaaS platform
 
-![OpenFaas logo](images/openfaas-logo.png)
+![OpenFaas logo](images/openfaas-logo.png){.thumbnail}
 
-[OpenFaaS](https://github.com/openfaas/faas) is an open source framework for building Serverless functions with Docker and Kubernetes. The project is mature, very popular and active with more than 14k stars on GitHub, a hundred of contributors, and lots of users, both corporate and private.
+[OpenFaaS](https://github.com/openfaas/faas){.external} is an open source framework for building Serverless functions with Docker and Kubernetes. The project is mature, very popular and active with more than 14k stars on GitHub, a hundred of contributors, and lots of users, both corporate and private.
 
 OpenFaaS is very simple to deploy (with an Helm chart,including an Operator allowing use of CRDs i.e. `kubectl get functions`), it has both a CLI and an UI, it manages well the auto-scaling and its doc is really complete (with in bonus a nice Slack channel to discuss about it!). 
 
@@ -77,14 +77,14 @@ Technically, OpenFaaS is composed of several functional blocks:
 
 Functions can be written on  many languages (I have mainly tested on JavaScript, Go and Python), using handy templates or simple a Dockerfile. 
 
-![OpenFaas architecture](images/openfaas-architecture.png)
+![OpenFaas architecture](images/openfaas-architecture.png){.thumbnail}
 
 
 ## Deploying OpenFaaS on OVH Managed Kubernetes
 
-There are several ways to install Agones in a Kubernetes cluster. In this post we choose the easiest one: installing with [Helm](https://helm.sh/).
+There are several ways to install Agones in a Kubernetes cluster. In this post we choose the easiest one: installing with [Helm](https://helm.sh/){.external}.
 
-The official Helm chart for OpenFaas is [available on faas-netes repository](https://github.com/openfaas/faas-netes/blob/master/chart/openfaas).
+The official Helm chart for OpenFaas is [available on faas-netes repository](https://github.com/openfaas/faas-netes/blob/master/chart/openfaas){.external}.
 
 
 ### Adding the OpenFaaS helm chart
@@ -284,7 +284,7 @@ nodeinfo                      	0              	1
 wordcount                     	0              	1    
 </code></pre>
 
-Let's invoke one of those functions, for example `wordcount` (a function that takes the syntax of the unix [`wc`](https://en.wikipedia.org/wiki/Wc_(Unix)) command, giving us the number of lines, words and characters on the input data):
+Let's invoke one of those functions, for example `wordcount` (a function that takes the syntax of the unix [`wc`](https://en.wikipedia.org/wiki/Wc_(Unix){.external}) command, giving us the number of lines, words and characters on the input data):
 
 ```
 echo 'I love when a plan comes together' | ./faas-cli invoke wordcount
@@ -323,14 +323,14 @@ $ curl -X POST --data-binary "I love when a plan comes together" "http://xxxxx65
 The main interest of a FaaS platform is to be able to deploy your own functions.
 In OpenFaaS you can write your these function on many languages, not only the usual suspects (JavaScript, Python, Go...). That's is done because on OpenFaaS you can deploy basically any container as a function. As a side effect of it, you need to package your functions as containers in order to deploy them.
 
-That also means that in order to create your own functions, you need to have [Docker](https://www.docker.com/) installed in your workstation, and you will need to push the images in a Docker registry, either the official one or a private one.
+That also means that in order to create your own functions, you need to have [Docker](https://www.docker.com/){.external} installed in your workstation, and you will need to push the images in a Docker registry, either the official one or a private one.
 
-If you need a private registry, you can [install one](https://docs.docker.com/registry/) on your OVH Managed Kubernetes cluster. For this tutorial we are choosing to deploy our image on the official Docker registry.
+If you need a private registry, you can [install one](https://docs.docker.com/registry/){.external} on your OVH Managed Kubernetes cluster. For this tutorial we are choosing to deploy our image on the official Docker registry.
 
 
 ## Writing our first function
 
-For our first example, we are going to create a deploy a *hello word* function in JavaScript using [NodeJS](https://nodejs.org/). Let's begin by creating and scaffolding the function folder:
+For our first example, we are going to create a deploy a *hello word* function in JavaScript using [NodeJS](https://nodejs.org/){.external}. Let's begin by creating and scaffolding the function folder:
 
 ```
 mkdir hello-js-project
@@ -401,20 +401,20 @@ Congratulations, you have written and deployed your first OpenFaaS function.
 
 You can test the UI portal by pointing your browser to your OpenFaaS gateway URL (the one you have set on the `$OPENFAAS_URL` variable), and when asked, using the user `admin` and the password you have set on the `$PASSWORD` variable.
 
-![UI Portal](images/ui-portal-01.jpg)
+![UI Portal](images/ui-portal-01.jpg){.thumbnail}
 
 In the UI Portal you will find the list of the deployed functions, and for each function you can find it description, invoke it and see the result.
 
-![UI Portal](images/ui-portal-02.jpg)
+![UI Portal](images/ui-portal-02.jpg){.thumbnail}
 
-![UI Portal](images/ui-portal-03.jpg)
+![UI Portal](images/ui-portal-03.jpg){.thumbnail}
 
 
 ## Where do we go from here?
 
 So now you have a working OpenFaaS platform on your OVH Managed Kubernetes cluster.
 
-To learn more about OpenFaaS, and how you can get a maximum profit from it, please refer to the [official OpenFaaS documentation](https://docs.openfaas.com/). You can also follow the [OpenFaaS workshops](https://github.com/openfaas/workshop) to learn in a more practical way.  
+To learn more about OpenFaaS, and how you can get a maximum profit from it, please refer to the [official OpenFaaS documentation](https://docs.openfaas.com/){.external}. You can also follow the [OpenFaaS workshops](https://github.com/openfaas/workshop){.external} to learn in a more practical way.  
 
 
 

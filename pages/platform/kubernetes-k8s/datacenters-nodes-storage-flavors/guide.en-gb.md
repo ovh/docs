@@ -5,11 +5,11 @@ slug: datacenters-nodes-storage-flavors
 section: Technical resources
 ---
 
-**Last updated 25th February, 2019.**
+**Last updated 1<sup>st</sup> July, 2019.**
 
 ## Available datacenters, worker nodes and persistent storage flavors
 
-### Available regions/Datacenters available
+### Available regions / Datacenters available
 
 A Managed Kubernetes Service deploys a Kubernetes Master within a given OVH datacenter. All its worker nodes and persistent volumes are then deployed by the cloud controller in the same region.
 Currently only GRA (Western Europe) is available. All your compute and storage resources will then be spawned in the "GRA5" region of the associated public cloud project.
@@ -29,7 +29,6 @@ GPU (`T1-*`) instances are note yet supported, because they require specific sof
 
 ### Available persistent Storage Classes
 
-When adding a persistent volume though Kubernetes API (or kubeCTL), it will actually be deployed using Public Cloud additional disks (Cinder Volumes). We support two Storage Classes, `cinder-high-speed` and `cinder-classic`, both based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device, `cinder-high-speed` uses SSD, while `cinder-classic` uses traditional spinning disks.
-This is detailed in the [Persistent Volumes ](../ovh-kubernetes-persistent-volumes/) guide.
+When adding a persistent volume though Kubernetes API (or kubeCTL), it will actually be deployed using Public Cloud additional disks (Cinder Volumes). We support two Storage Classes, `cinder-high-speed` and `cinder-classic`, both based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device, `cinder-high-speed` uses SSD, while `cinder-classic` uses traditional spinning disks. This is detailed in the [Persistent Volumes ](../ovh-kubernetes-persistent-volumes/) guide.
 
 We will support future classes as soon they are made available in OVH Public Cloud.
