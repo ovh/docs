@@ -6,8 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated 25th February, 2019.**
-
+**Last updated 1<sup>st</sup> July, 2019.**
 
 <style>
  pre {
@@ -23,6 +22,8 @@ section: Technical resources
  pre.console code {
    border: solid 0px transparent;
    font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
  }
  .small {
      font-size: 0.75em;

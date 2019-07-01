@@ -27,8 +27,7 @@ section: Tutorials
  }
 </style>
 
-**Last updated on May 29st, 2019**
-
+**Last updated 1<sup>st</sup> July, 2019.**
 
 In this tutorial we are going to guide you with the resize of [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) (PVs) on your OVH Managed Kubernetes Service.
 
@@ -145,7 +144,7 @@ Namespace:     default
 StorageClass:  cinder-high-speed
 Status:        Bound
 Volume:        pvc-0e5b7256-81f6-11e9-92ef-32a9d43e9f33
-Labels:        <none>
+Labels:        &lt;none>
 Annotations:   kubectl.kubernetes.io/last-applied-configuration:
                  {"apiVersion":"v1","kind":"PersistentVolumeClaim","metadata":{"annotations":{},"name":"mysql-pv-claim","namespace":"default"},"spec":{"acc...
                pv.kubernetes.io/bind-completed: yes
@@ -312,7 +311,7 @@ Namespace:     default
 StorageClass:  cinder-high-speed
 Status:        Bound
 Volume:        pvc-0e5b7256-81f6-11e9-92ef-32a9d43e9f33
-Labels:        <none>
+Labels:        &lt;none>
 Annotations:   kubectl.kubernetes.io/last-applied-configuration:
                  {"apiVersion":"v1","kind":"PersistentVolumeClaim","metadata":{"annotations":{},"name":"mysql-pv-claim","namespace":"default"},"spec":{"acc...
                pv.kubernetes.io/bind-completed: yes
@@ -346,7 +345,7 @@ Namespace:     default
 StorageClass:  cinder-high-speed
 Status:        Bound
 Volume:        pvc-0e5b7256-81f6-11e9-92ef-32a9d43e9f33
-Labels:        <none>
+Labels:        &lt;none>
 Annotations:   kubectl.kubernetes.io/last-applied-configuration:
                  {"apiVersion":"v1","kind":"PersistentVolumeClaim","metadata":{"annotations":{},"name":"mysql-pv-claim","namespace":"default"},"spec":{"acc...
                pv.kubernetes.io/bind-completed: yes
@@ -356,7 +355,7 @@ Finalizers:    [kubernetes.io/pvc-protection]
 Capacity:      6Gi
 Access Modes:  RWO
 VolumeMode:    Filesystem
-Events:        <none>
+Events:        &lt;none>
 Mounted By:    mysql-799956477c-bj5m5
 </code></pre>
 
@@ -408,8 +407,8 @@ mysql> SHOW TABLES;
 
 Now you can expand the Persistent Volumes on your OVH Managed Kubernetes cluster, and adapt them to the live of your data.
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our  [OVH Managed Kubernetes doc site](../) .
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVH Managed Kubernetes doc site](../).
 
-Join our community of users on https://community.ovh.com/en/.
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
 
 

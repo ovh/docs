@@ -5,7 +5,7 @@ slug: exposed-apis-software-versions-reserved-resources
 section: Technical resources
 ---
 
-**Last updated May 29th, 2019.**
+**Last updated 1<sup>st</sup> July, 2019.**
 
 We list here some details on the APIs we expose, the software versions we use and the resources we reserve on each node.
 
@@ -36,7 +36,7 @@ The OS and Docker demon version on your nodes will be regularly updated. Current
 
 ## CNI
 
-The CNI plugin installed is [canal](https://github.com/projectcalico/canal) which embedded [calico](https://github.com/projectcalico/calico) for policy and [flannel](https://github.com/coreos/flannel/) for networking.
+The CNI plugin installed is [canal](https://github.com/projectcalico/canal){.external} which embedded [calico](https://github.com/projectcalico/calico){.external} for policy and [flannel](https://github.com/coreos/flannel/){.external} for networking.
 
 The versions installed depends on the Kubernetes version:
 
@@ -45,9 +45,9 @@ The versions installed depends on the Kubernetes version:
 
 ## Enabled policies
 
-- [Network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
-- [Resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/)
-- [Limit range](https://kubernetes.io/docs/concepts/policy/limit-range/)
+- [Network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/){.external}
+- [Resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/){.external}
+- [Limit range](https://kubernetes.io/docs/concepts/policy/limit-range/){.external}
 
 
 ## Configuration
@@ -61,8 +61,8 @@ Admission plugins (defaults are not listed here):
 
 Authorization modes:
 
-- [Node](https://kubernetes.io/docs/reference/access-authn-authz/node/): Authorize API requests made by kubelets.
-- [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/): Role-based access control is a method of regulating access to computer or network resources based on the roles of individual users within an organization.
+- [Node](https://kubernetes.io/docs/reference/access-authn-authz/node/){.external}: Authorize API requests made by kubelets.
+- [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external}: Role-based access control is a method of regulating access to computer or network resources based on the roles of individual users within an organization.
 
 ### Kubelet
 
