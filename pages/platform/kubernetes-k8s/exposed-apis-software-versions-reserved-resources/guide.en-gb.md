@@ -34,6 +34,41 @@ The OS and Docker demon version on your nodes will be regularly updated. Current
 - OS: CoreOS 1967.6.0
 - Docker: 18.06.1-ce
 
+## CNI
+
+The CNI plugin installed is [canal](https://github.com/projectcalico/canal) which embedded [calico](https://github.com/projectcalico/calico) for policy and [flannel](https://github.com/coreos/flannel/) for networking.
+
+The versions installed depends on the Kubernetes version:
+
+- 1.11/1.12/1.13: calico 3.6.0, flannel 0.9.1
+- 1.14: calico 3.7.2, flannel 0.11.0
+
+## Enabled policies
+
+- [Network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+- [Resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/)
+- [Limit range](https://kubernetes.io/docs/concepts/policy/limit-range/)
+
+
+## Configuration
+
+### API
+
+Admission plugins (defaults are not listed here):
+
+- `AlwaysPullImages`: Force every new pod to pull the required images every time. In a multi-tenant cluster users can be assured that their private images can only be used by those who have the credentials to pull them. 
+- `NodeRestriction`: Ensure that the kubelet is restricted to the Node and Pod objects that it could modify as defined. Such kubelets will only be allowed to modify their own NodeAPI object and PodAPI objects that are bound to their node.
+
+Authorization modes:
+
+- [Node](https://kubernetes.io/docs/reference/access-authn-authz/node/): Authorize API requests made by kubelets.
+- [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/): Role-based access control is a method of regulating access to computer or network resources based on the roles of individual users within an organization.
+
+### Kubelet
+
+- `protect-kernel-defaults`: Protect tuned kernel parameters from overriding kubelet default kernel parameter values.
+
+
 ## Reserved resources
 
 Each worker node has 1 GB of RAM and 100 mCPU reserved for Kubernetes components. 
