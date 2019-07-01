@@ -1,26 +1,27 @@
 ---
 title: Configuring kubectl on an OVH Managed Kubernetes cluster
 slug: configuring-kubectl
-excerpt: 'Find out how to recover the *kubetcl* configuration file to interact with an OVH Managed Kubernetes cluster.'
+excerpt: 'Find out how to recover the `kubectl` configuration file to interact with an OVH Managed Kubernetes cluster.'
 section: User guides
 ---
 
-**Last updated 29th January, 2019.**
+**Last updated 1<sup>st</sup> July, 2019.**
 
 
 ## Objective
 
 The OVH Managed Kubernetes service provides you with access to Kubernetes clusters, without the hassle of installing or operating them. 
 
-**Find out how to recover the *kubetcl* configuration file to interact with an OVH Managed Kubernetes cluster.**
+This guide will cover how to recover the `kubetcl` configuration file to interact with an OVH Managed Kubernetes cluster.
 
 
 ## Requirements
 
 - You must have an OVH Managed Kubernetes cluster.
-- You must have the [*kubectl*](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed.
+- You must have the [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed.
 
-You can find the detailed installation instructions for *kubetcl* in Kubernetes' [official documentation](https://kubernetes.io/docs/home/){.external}.
+You can find the detailed installation instructions for `kubetcl` in Kubernetes' [official documentation](https://kubernetes.io/docs/home/){.external}.
+
 
 ## Instructions
 
@@ -31,11 +32,11 @@ First, log in to the OVH Control Panel, open the 'Cloud' tab, and click on the '
 
 ![Configuring default settings for kubectl](images/kubernetes-quickstart-01.png){.thumbnail}
 
-Then, download the *kubetcl* configuration file:
+Then, download the `kubectl` configuration file:
 
 ![Configuring default settings for kubectl](images/kubernetes-quickstart-02.png){.thumbnail}
 
-If you want to use this configuration file by default in *kubetcl*, you can save it with the filename `kube-config` in the `$HOME/.kube` directory. Alternatively, you can place it in your working directory, with either the `KUBECONFIG` environment variable or the `--kubeconfig` flag. 
+If you want to use this configuration file by default in `kubectl`, you can save it with the filename `kube-config` in the `$HOME/.kube` directory. Alternatively, you can place it in your working directory, with either the `KUBECONFIG` environment variable or the `--kubeconfig` flag. 
 
 In this example, we are using the environment variable method.
 
@@ -71,7 +72,7 @@ set KUBECONFIG=kube-config
 ### Step 2 - Verify that *kubectl* can connect to the cluster
 
 
-You can verify that *kubetcl* is able to interact with the cluster by using it to send a `cluster-info` command:
+You can verify that `kubectl` is able to interact with the cluster by using it to send a `cluster-info` command:
 
 ```
 kubectl cluster-info
@@ -93,6 +94,6 @@ kubectl cluster-info dump
 
 ## Go further
 
-To deploy your first application on your Kubernetes cluster, we suggest you refer to our guide to [Deploying an application](../deploying_an_application).
+To deploy your first application on your Kubernetes cluster, we suggest you refer to our guide to [Deploying an application](../deploying_an_application/).
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

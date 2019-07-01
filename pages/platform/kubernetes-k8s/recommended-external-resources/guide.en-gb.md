@@ -5,7 +5,8 @@ slug: recommended-external-resources
 section: Technical resources
 ---
 
-# Recommended external resources
+
+**Last updated 1<sup>st</sup> July, 2019.**
 
 <style>
  pre {
@@ -21,27 +22,32 @@ section: Technical resources
  pre.console code {
    border: solid 0px transparent;
    font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
  }
  .small {
      font-size: 0.75em;
  }
 </style>
 
+
+# Recommended external resources
+
 We list here some external resources that can help you to go further with Kubernetes.
 
 
 ## Official Kubernetes sites
 
-- [Kubernetes.io](https://kubernetes.io/)
-- [@kubernetesio Twitter account](https://twitter.com/kubernetesio)
-- [GitHub project](https://github.com/kubernetes/kubernetes)
+- [Kubernetes.io](https://kubernetes.io/){.external}
+- [@kubernetesio Twitter account](https://twitter.com/kubernetesio){.external}
+- [GitHub project](https://github.com/kubernetes/kubernetes){.external}
 
 ## Community sites
 
-- [Our own OVH Kubernetes Gitter community](https://gitter.im/ovh/kubernetes)
-- [StackOverflow Kubernetes section](https://stackoverflow.com/questions/tagged/kubernetes)
-- [Reddit Kubernetes section](https://www.reddit.com/r/kubernetes/)
-- [#kubernetes-users Slack channel](http://slack.k8s.io/)
-- [awesome-kubernetes](https://ramitsurana.github.io/awesome-kubernetes/)
+- [Our own OVH Kubernetes Gitter community](https://gitter.im/ovh/kubernetes){.external}
+- [StackOverflow Kubernetes section](https://stackoverflow.com/questions/tagged/kubernetes){.external}
+- [Reddit Kubernetes section](https://www.reddit.com/r/kubernetes/){.external}
+- [#kubernetes-users Slack channel](http://slack.k8s.io/){.external}
+- [awesome-kubernetes](https://ramitsurana.github.io/awesome-kubernetes/){.external}
 
 
