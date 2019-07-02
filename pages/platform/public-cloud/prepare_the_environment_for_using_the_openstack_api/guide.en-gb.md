@@ -1,17 +1,17 @@
 ---
 title: 'Preparing an environment for using the OpenStack API'
 slug: prepare_the_environment_for_using_the_openstack_api
-excerpt: 'Install the OpenStack environment to manage your Instances via the API'
+excerpt: 'Install the OpenStack environment to manage your instances via the API'
 section: 'Via command line clients'
 ---
 
-**Last updated 21st January 2019**
+**Last updated 1st July 2019**
 
 ## Objective
 
 You can manage Public Cloud services using commands sent from the system console, once you have downloaded and installed OpenStack tools.
 
-With the OpenStack API, you can automate your management by generating scripts. The OpenStack Nova client can be used to manage Instances and disk space. With the OpenStack Glance client, you can manage images and backups, while the Swift client can be used to manage object storage space.
+With the OpenStack API, you can automate your management by generating scripts. The OpenStack Nova client can be used to manage instances and disk space. With the OpenStack Glance client, you can manage images and backups, while the Swift client can be used to manage object storage space.
 
 **Find out how to install these OpenStack tools.**
 
@@ -66,7 +66,7 @@ Install the rdo-release RPM with the following command:
 yum install -y https://rdoproject.org/repos/rdo-release.rpm
 ```
 
-Then the OpenStack Swift client:
+Then the OpenStack client:
 
 ```sh
 yum install -y python-openstackclient
@@ -102,13 +102,13 @@ You can also install it yourself. To do this, follow the actions described below
 
 #### Step 1: Edit the system’s environment variables.
 
-Search for the system’s environment variable settings, and go to “Edit system environment variables”:
+Search for the system’s environment variable settings, and go to “Edit the system environment variables”:
 
 ![Environment variable settings](images/2_preparation_openstack_environment_windows.png){.thumbnail}
 
 #### Step 2: Edit the system settings.
 
-Go to the `Advanced`{.action} tab, and click `Environment variables`{.action} to edit the settings.
+Go to the `Advanced`{.action} tab, and click `Environment Variables`{.action} to edit the settings.
 
 ![Performance settings](images/3_preparation_openstack_environment_windows.png){.thumbnail}
 
