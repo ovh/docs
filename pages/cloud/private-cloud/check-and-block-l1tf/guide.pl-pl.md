@@ -75,7 +75,7 @@ Ważne, abyś był świadomy, że mogą wystąpić potencjalne problemy wymienio
 
 Po zapoznaniu się z poszczególnymi elementami możesz aktywować parametr umożliwiający wyłączenie Hyper-Threadingu (w zaawansowanych ustawieniach systemu).
 
-![](images/enableMitigation.png){.thumbnail}
+![mitigation](images/enableMitigation.png){.thumbnail}
 
 Na górze po prawej stronie okna dostępny jest filtr.
 
