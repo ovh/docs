@@ -75,7 +75,7 @@ Bevor Sie diesen jedoch ausführen, sollten Sie die möglichen Probleme, die in 
 
 Nachdem Sie die obenstehenden Schritte durchgeführt haben, können Sie in den erweiterten Systemeinstellungen die Einstellung aktivieren, mit der Hyperthreading deaktiviert werden kann.
 
-![](images/enableMitigation.png){.thumbnail}
+![mitigation](images/enableMitigation.png){.thumbnail}
 
 In dem Fenster ist rechts oben ein Filter verfügbar.
 
