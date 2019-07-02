@@ -1,117 +1,80 @@
 ---
-title: Dostęp root i zdefiniowanie hasła
-excerpt: Dostęp root i zdefiniowanie hasła
+title: 'Logowanie jako użytkownik root i ustawienie hasła'
+excerpt: 'Dowiedz się, jak się zalogować jako użytkownik root i ustawić dla niego hasło'
 slug: dostep_root_i_zdefiniowanie_hasla
 legacy_guide_number: g1786
 section: Tutoriale
 ---
 
+**Ostatnia aktualizacja z dnia 17-06-2019**
 
-## 
-Do wykonania niektórych operacji potrzebny jest dostęp root, na przykład:
+## Wprowadzenie
 
-- instalacja pakietów
-- zdefiniowanie hasła dla użytkownika lub dla roota (niezbędne, żeby uzyskać dostęp do KVM)
-- wykonanie niektórych zadań administracyjnych
+Aby wykonywać niektóre działania administracyjne na Twoim serwerze (np. instalacja pakietów), powinieneś posiadać dostęp z uprawnieniami administracyjnymi. W przypadku serwerów Linux poziom ten nazywany jest „root”. 
 
+**Dowiedz się, jak się zalogować jako użytkownik root i ustawić dla niego hasło.**
 
+## Wymagania początkowe
 
+* Posiadanie aktywnego projektu Public Cloud
+* Możliwość łączenia się z serwerem za pomocą SSH
 
-## Wstępne wymagania
+> [!primary]
+>
+> W przewodniku tym przyjmujemy, że użytkownik ma przypisaną domyślnie nazwę „admin”. 
+>
 
-- []({legacy}1775)
-- Zalogowanie przez SSH za pomocą domyślnego użytkownika (admin lub nazwa dystrybucji dla najnowszych obrazów)
+## W praktyce
 
+### Zmiana hasła "root"
 
+Połącz się z Twoim serwerem za pomocą SSH.
 
-## Informacje
-W przewodniku tym domyślnym użytkownikiem jest admin.
+Użyj w tym celu poniższej komendy, a następnie wprowadź hasło użytkownika „admin” (ze względów bezpieczeństwa hasło to nie będzie się wyświetlało podczas jego wprowadzania):
 
-
-## Zdefiniowanie hasła
-
-- Zdefiniuj hasło dla użytkownika admin (hasło nie jest wyświetlane ze względów bezpieczeństwa):
-
-```
+```sh
 ~$ sudo passwd
 Enter new UNIX password:
 Retype new UNIX password:
-passwd: password updated successfully
+passwd: password updated successfully 
+successfully
 ```
 
+### Aktualizacja repozytoriów (Debian i Ubuntu)
 
-- Zdefiniuj hasło dla użytkownika root (hasło nie jest wyświetlane ze względów bezpieczeństwa):
-
-```
-~$ sudo passwd root
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-```
-
-
-
-
-
-## Inne przykłady
-
-- Aktualizacja pamięci cache pakietów (Debian / Ubuntu)
+Aby zaktualizować _pakiety_ oprogramowania zainstalowane na Twoim serwerze, wprowadź następującą komendę: 
 
 ```
-~$ sudo apt-get update
+sudo apt-get update
 ```
 
+### Aktualizacja systemu (CentOS i Fedora)
 
-- Aktualizacja systemu (CentOS / Fedora)
+Aby zaktualizować system operacyjny Twojego serwera, wprowadź następującą komendę:
 
 ```
 ~$ sudo yum update
 ```
 
+### Modyfikacja pliku konfiguracyjnego 
 
-- Edycja pliku konfiguracyjnego:
+Aby zaktualizować plik konfiguracyjny Twojego serwera, wprowadź następującą komendę:
 
 ```
 ~$ sudo vi /etc/hosts.allow
 ```
 
+### Logowanie jako użytkownik root
 
-
-
-
-## 
-
-- Przejście w tryb użytkownika root
+Aby zalogować się jako użytkownik root, wprowadź następującą komendę:
 
 ```
 ~$ sudo su -
 ~#
 ```
 
+Następnie wprowadź hasło root.
 
-- Zdefiniowanie hasła dla użytkownika root (po przejściu w tryb użytkownika root):
+## Sprawdź również
 
-```
-~# passwd
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-```
-
-
-- Zdefiniowane hasła dla użytkownika admin
-
-```
-~# passwd admin
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-```
-
-
-
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

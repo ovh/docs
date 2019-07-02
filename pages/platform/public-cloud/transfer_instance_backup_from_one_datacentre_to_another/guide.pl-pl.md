@@ -1,196 +1,146 @@
 ---
-title: Przenoszenie kopii zapasowych pomiędzy centrami danych
-excerpt: Przenoszenie kopii zapasowych pomiędzy centrami danych
+title: 'Przeniesienie kopii zapasowej instancji do innego centrum danych'
+excerpt: 'Dowiedz się, jak przenieść instancję zachowując jej stan i konfigurację'
 slug: przenoszenie_kopii_zapasowych_pomiedzy_centrami_danych
-legacy_guide_number: g1853
-section: Zarządzanie w OpenStack CLI
+section: 'Z poziomu wiersza poleceń '
 ---
 
+**Ostatnia aktualizacja z dnia 01-07-2019**
 
-## 
-Przewodnik ten wyjaśnia, jak przenieść kopię zapasową danej instancji z jednego centrum danych do drugiego, aby uniknąć reinstalacji. Sytuacja taka może wystąpić, gdy pojawi się nowe centrum danych lub w przypadku migracji z RunAbove na Public Cloud.
+## Wprowadzenie
 
+Możesz przenieść instancję Public Cloud między centrami danych, gdy preferujesz inne centrum lub chcesz zamienić wersję usługi OVH Labs na Public Cloud.
 
-## Wstępne wymagania
-
-- [Przygotowanie środowiska do korzystania z API OpenStack]({legacy}1851)
-- [Pobieranie zmiennych środowiskowych OpenStack]({legacy}1852)
+**Dowiedz się, jak przenieść instancję, zachowując jej stan i konfigurację.**
 
 
+## Wymagania początkowe
 
+* Utworzenie [instancji Public Cloud](https://www.ovh.pl/public-cloud/compute/){.external} na Twoim koncie OVH
+* Dostęp administratora (root) do centrum danych przez SSH
+* Przeczytanie przewodnika [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/){.external} (zalecane)
 
-## 
-Wskazówki dostępne w tym przewodniku mogą być przydatne w przypadku przenoszenia kopii zapasowej z konta RunAbove na Public Cloud.
+> [!primary]
+>
+Komendy zawarte w tym przewodniku opierają się na CLI OpenStack w odróżnieniu od API `Nova` i `Glance`.
+>
 
+## W praktyce
 
-## Tworzenie kopii zapasowej
+### Tworzenie kopii zapasowej
 
-- Pobierz listę istniejących instancji:
-
-
-```
-root@serveur:~$ nova list
-
-+--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
-| ID | Name | Status | Task State | Power State | Networks |
-+--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
-| aa7115b3-83df-4375-b2ee-19339041dcfa | Serveur1 | ACTIVE | - | Running | Ext-Net=149.xxx.xxx.254 |
-+--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
-```
-
-
-- Utwórz kopię zapasową instancji:
-
+W pierwszym kroku połącz się przez SSH z Twoim centrum danych. Następnie wprowadź następującą komendę, aby wyświetlić istniejące instancje:
 
 ```
-root@serveur:~$ nova image-create aa7115b3-83df-4375-b2ee-19339041dcfa snap_serveur1
+3#root@server:~$ openstack server list
+
++--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+| ID                                   | Name      | Status | Networks                                         | Image Name   |
++--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+| aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
++--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 ```
 
 
-
-
-
-## Pobieranie kopii zapasowej
-
-- Pobierz listę dostępnych obrazów:
-
+Wprowadź następującą komendę, aby utworzyć kopię zapasową Twojej instancji:
 
 ```
-root@serveur:~$ glance image-list
-+--------------------------------------+------------------------+-------------+------------------+-------------+--------+
-| ID | Name | Disk Format | Container Format | Size | Status |
-+--------------------------------------+------------------------+-------------+------------------+-------------+--------+
-| c17f13b5-587f-4304-b550-eb939737289a | Centos 7 | raw | bare | 2149580800 | active |
-| 73958794-ecf6-4e68-ab7f-1506eadac05b | Debian 7 | raw | bare | 2149580800 | active |
-| bdcb5042-3548-40d0-b06f-79551d3b4377 | Debian 8 | raw | bare | 2149580800 | active |
-| 7250cc02-ccc1-4a46-8361-a3d6d9113177 | Fedora 19 | raw | bare | 2149580800 | active |
-| 57b9722a-e6e8-4a55-8146-3e36a477eb78 | Fedora 20 | raw | bare | 2149580800 | active |
-| 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_serveur1 | qcow2 | bare | 1598029824 | active |
-| 3bda2a66-5c24-4b1d-b850-83333b580674 | Ubuntu 12.04 | raw | bare | 2149580800 | active |
-| 9bfac38c-688f-4b63-bf3b-69155463c0e7 | Ubuntu 14.04 | raw | bare | 10737418240 | active |
-| 6a123897-a5bb-46cd-8f5d-ecf9ab9877f2 | Windows-Server-2012-r2 | raw | bare | 21474836480 | active |
-+--------------------------------------+------------------------+-------------+------------------+-------------+--------+
+#root@server:~$ openstack image create --id aa7115b3-83df-4375-b2ee-19339041dcfa snap_server1
 ```
 
+### Pobieranie kopii zapasowej
 
-- Zidentyfikuj kopię zapasową:
-
-
-```
-| 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_serveur1 | qcow2 | bare | 1598029824 | active |
-```
-
-
-- Pobierz obraz:
-
+Wprowadź następującą komendę, aby wyświetlić dostępne instancje:
 
 ```
-root@serveur:~$ glance image-download --file snap_serveur1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
+#root@server:~$ openstack image list
++--------------------------------------+-----------------------------------------------+--------+
+| ID | Name | Status |
++--------------------------------------+-----------------------------------------------+--------+
+| 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_server1 | active |
+| 3ff877dc-1a62-43e7-9655-daff37a0c355 | NVIDIA GPU Cloud (NGC) | active |
+| a14a7c1e-3ac5-4a61-9d36-1abc4ab4d5e8 | Centos 7 | active |
+| f720a16e-543b-42e5-af45-cc188ad2dd34 | Debian 8 - GitLab | active |
+| d282e7aa-332c-4dc7-90a9-d49641fa7a95 | CoreOS Stable | active |
+| 2519f0fb-18cc-4915-9227-7754292b9713 | Ubuntu 16.04 | active |
+| b15789f8-2e2f-4f6c-935d-817567319627 | Windows Server 2012 R2 Standard - UEFI | active |
+| ed2f327f-dbae-4f9e-9754-c677a1b76fa3 | Ubuntu 14.04 | active |
+| 9c9b3772-5320-414a-90bf-60307ff60436 | Debian 8 - Docker | active |
 ```
 
-
-
-
-
-## Wysyłka kopii zapasowej
-
-- Pobierz nowe zmienne środowiskowe:
-
-
-W ramach transferu z centrum danych dla tego samego projektu, wystarczy zmienić zmienną 
-OS_REGION_NAME :
-
+Wyszukaj teraz kopię zapasową na liście:
 
 ```
-root@serveur:~$ export OS_REGION_NAME=SBG1
+| 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_server1 | qcow2 | bare | 1598029824 | active |
 ```
 
-
-W przypadku transferu na inny projektu lub inne konto, należy pobrać zmienne środowiskowe związane z tym kontem:
-
+Na koniec, wprowadź następującą komendę, aby pobrać kopię zapasową:
 
 ```
-root@serveur:~$ source openrc.sh
+#root@server:~$ openstack image save --file snap_server1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
 ```
 
+### Przeniesienie kopii zapasowej do innego centrum danych
 
+Aby uruchomić proces przeniesienia kopii zapasowej, najpierw pobierz nowe zmienne środowiskowe.
 
-- Wyślij kopię zapasową do nowego centrum danych:
-
-
-```
-root@serveur:~$ glance image-create --name snap_serveur1 --disk-format qcow2 --container-format bare --file snap_serveur1.qcow
-
-+------------------+--------------------------------------+
-| Property | Value |
-+------------------+--------------------------------------+
-| checksum | 6cebb4104eadde099bb2721ec8c574fb |
-| container_format | bare |
-| created_at | 2015-10-21T13:26:42 |
-| deleted | False |
-| deleted_at | None |
-| disk_format | qcow2 |
-| id | 0a3f5901-2314-438a-a7af-ae984dcbce5c |
-| is_public | False |
-| min_disk | 0 |
-| min_ram | 0 |
-| name | snap_serveur1 |
-| owner | b3e269xxxxxxxxxxxxxxxxxxxxxxba29 |
-| protected | False |
-| size | 319356928 |
-| status | active |
-| updated_at | 2015-10-21T13:26:51 |
-| virtual_size | None |
-+------------------+--------------------------------------+
-```
-
-
-
-
-
-## Tworzenie instancji
-
-- Utwórz instancję podając ID kopii zapasowej :
-
+> [!warning]
+>
+> Jeśli przenosisz Twoją kopię zapasową do centrum danych w tym samym projekcie, zmień zmienną OS_REGION_NAME.
+>
 
 ```
-root@serveur:~$ nova boot --key_name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Serveur1_from_snap
-+--------------------------------------+------------------------------------------------------+
-| Property | Value |
-+--------------------------------------+------------------------------------------------------+
-| OS-DCF:diskConfig | MANUAL |
-| OS-EXT-AZ:availability_zone | nova |
-| OS-EXT-STS:power_state | 0 |
-| OS-EXT-STS:task_state | scheduling |
-| OS-EXT-STS:vm_state | building |
-| OS-SRV-USG:launched_at | - |
-| OS-SRV-USG:terminated_at | - |
-| accessIPv4 | |
-| accessIPv6 | |
-| adminPass | 2Rxxvb4wx2iS |
-| config_drive | |
-| created | 2015-10-21T13:31:41Z |
-| flavor | vps-ssd-1 (98c1e679-5f2c-4069-b4da-4a4f7179b758) |
-| hostId | |
-| id | 68d38ef7-1b25-40bb-a629-4f91f4b24b59 |
-| image | snap_serveur1 (0a3f5901-2314-438a-a7af-ae984dcbce5c) |
-| key_name | SSHKEY |
-| metadata | {} |
-| name | Serveur1_from_snap |
-| os-extended-volumes:volumes_attached | [] |
-| progress | 0 |
-| security_groups | default |
-| status | BUILD |
-| tenant_id | b3e269f057d14af594542d6312b0ba29 |
-| updated | 2015-10-21T13:31:41Z |
-| user_id | 01e3c1c9c3584311931233798e411ba4 |
-+--------------------------------------+------------------------------------------------------+
+#root@server:~$ export OS_REGION_NAME=SBG1
 ```
 
+Jeśli przenosisz kopię zapasową instancji do innego projektu lub na inne konto, pobierz ponownie zmiennie środowiskowe powiązane z tym kontem, używając następującej komendy:
 
+```
+#root@serveur:~$ source openrc.sh
+```
 
+Aby przenieść kopię zapasową do innego centrum danych, wprowadź poniższą komendę:
 
+```
+#root@server:~$ openstack image create --disk-format qcow2 --container-format bare --file snap_server1.qcow snap_server1
 
-## 
-[Przewodniki Cloud]({legacy}1785)
++------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Field            | Value                                                                                                                                                                                     |
++------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| checksum         | 82cb7d57ec7278818bba0afcf802f0fb                                                                                                                                                          |
+| container_format | bare                                                                                                                                                                                      |
+| created_at       | 2019-03-22T14:26:22Z                                                                                                                                                                      |
+| disk_format      | qcow2                                                                                                                                                                                     |
+| file             | /v2/images/1bf21cf3-8d39-40ae-b088-5549c31b7905/file                                                                                                                                      |
+| id               | 0a3f5901-2314-438a-a7af-ae984dcbce5c                                                                                                                                                    |
+| min_disk         | 0                                                                                                                                                                                         |
+| min_ram          | 0                                                                                                                                                                                         |
+| name             | snap_server1                                                                                                                                                                             |
+| owner            | 4e03fd164d504aa3aa03938f0bf4ed90                                                                                                                                                          |
+| properties       | direct_url='swift+config://ref1/glance/1bf21cf3-8d39-40ae-b088-5549c31b7905', locations='[{u'url': u'swift+config://ref1/glance/1bf21cf3-8d39-40ae-b088-5549c31b7905', u'metadata': {}}]' |
+| protected        | False                                                                                                                                                                                     |
+| schema           | /v2/schemas/image                                                                                                                                                                         |
+| size             | 3004956672                                                                                                                                                                                |
+| status           | active                                                                                                                                                                                    |
+| tags             |                                                                                                                                                                                           |
+| updated_at       | 2019-03-22T14:41:05Z                                                                                                                                                                      |
+| virtual_size     | None                                                                                                                                                                                      |
+| visibility       | private                                                                                                                                                                                   |
++------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+```
+
+### Tworzenie instancji z kopii zapasowej
+
+Użyj ID kopii zapasowej jako obrazu, wprowadzając poniższą komendę:
+
+```
+#root@server:~$ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
+```
+
+## Sprawdź również
+
+[Przeniesienie kopii zapasowej wolumenu do innego centrum danych](../transfer_volume_backup_from_one_datacentre_to_another/){.external}
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+
 
