@@ -39,11 +39,11 @@ Si vous rencontrez des difficultés lors de ces manipulations, nous vous inviton
 
 Selon votre système d'exploitation et vos connaissances personnelles, vous pouvez privilégier certaines méthodes de connexion. 
 
-- Si vous souhaitez utiliser une solution pour Windows ou macOS à paramétrer par vos soins, vous pouvez consulter la partie de ce tutoriel intitulée « [Se connecter à un cluster hubiC via Cyberduck](/#se-connecter-à-un-cluster-hubic-via-cyberduck) » pour vous connecter à un cluster hubiC via le client Swift.  
+- Si vous souhaitez utiliser une solution pour Windows ou macOS à paramétrer par vos soins, vous pouvez consulter la partie de ce tutoriel intitulée « [Se connecter à un cluster hubiC via Cyberduck](/#connectez-vous-a-un-cluster-hubic-via-cyberduck) » pour vous connecter à un cluster hubiC via le client Swift.  
 
-- Si vous souhaitez utiliser une solution « tout en un » pour Windows ou macOS avec très peu de paramétrages à effectuer et via un disque réseau, consultez la partie de ce tutoriel intitulée « [Se connecter à un cluster hubiC via Mountain Duck](/#se-connecter-a-un-cluster-hubic-via-mountainDduck) » pour vous connecter à un cluster hubiC via un logiciel payant.
+- Si vous souhaitez utiliser une solution « tout en un » pour Windows ou macOS avec très peu de paramétrages à effectuer et via un disque réseau, consultez la partie de ce tutoriel intitulée « [Se connecter à un cluster hubiC via Mountain Duck](/#connectez-vous-a-un-cluster-hubic-via-mountain-duck)  » pour vous connecter à un cluster hubiC via un logiciel payant.
 
-- Si vous utilisez une distribution GNU/Linux, consultez la partie de ce tutoriel intitulée « [Se connecter à un cluster hubiC via svfs](/#se-connecter-a-un-cluster-hubiC-via-svfs) » pour vous connecter à un cluster hubiC via un montage svsf.
+- Si vous utilisez une distribution GNU/Linux, consultez la partie de ce tutoriel intitulée « [Se connecter à un cluster hubiC via svfs](/#connectez-vous-a-un-cluster-hubiC-via-svfs) » pour vous connecter à un cluster hubiC via un montage svsf.
 
 
 ## Connectez-vous à un cluster hubiC via Cyberduck
