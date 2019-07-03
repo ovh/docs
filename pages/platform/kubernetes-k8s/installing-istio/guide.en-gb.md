@@ -50,10 +50,10 @@ Istio is installed in its own `istio-system` namespace and can manage services f
 
 1. Go to the [Istio release page](https://github.com/istio/istio/releases){.external} to download the installation file corresponding to your OS, and extract it in a local repertory. 
 
-1. Move to the Istio package directory. For example, if the package is istio-1.0.5:  
+1. Move to the Istio package directory. For example, if the package is istio-1.2.2:  
 
     ```
-    cd istio-1.0.5
+    cd istio-1.2.2
     ```
 
     The installation directory contains:
@@ -84,14 +84,50 @@ It's a nice by default setting, because you are getting a good overview of Istio
 >
 > For clusters with existing applications, or if you're deploying applications where services with an Istio sidecar need to be able to communicate with other non-Istio Kubernetes services, you could use the  `istio-demo` manifest instead.
 
+Install all the Istio Custom Resource Definitions (CRDs) using `kubectl apply`, and wait a few seconds for the CRDs to be committed in the Kubernetes API-server:
 
-Use `kubectl` to apply the manifest to your cluster:
+```bash
+for i in install/kubernetes/helm/istio-init/files/crd*yaml; do kubectl apply -f $i; done
+```
+
+It installs the CRDs needed for Istio:
+
+<pre class="console"><code>$ for i in install/kubernetes/helm/istio-init/files/crd*yaml; do kubectl apply -f $i; done
+customresourcedefinition.apiextensions.k8s.io/virtualservices.networking.istio.io created
+customresourcedefinition.apiextensions.k8s.io/destinationrules.networking.istio.io created
+customresourcedefinition.apiextensions.k8s.io/serviceentries.networking.istio.io created
+customresourcedefinition.apiextensions.k8s.io/gateways.networking.istio.io created
+customresourcedefinition.apiextensions.k8s.io/envoyfilters.networking.istio.io created
+customresourcedefinition.apiextensions.k8s.io/clusterrbacconfigs.rbac.istio.io created
+customresourcedefinition.apiextensions.k8s.io/policies.authentication.istio.io created
+customresourcedefinition.apiextensions.k8s.io/meshpolicies.authentication.istio.io created
+customresourcedefinition.apiextensions.k8s.io/httpapispecbindings.config.istio.io created
+customresourcedefinition.apiextensions.k8s.io/httpapispecs.config.istio.io created
+customresourcedefinition.apiextensions.k8s.io/quotaspecbindings.config.istio.io created
+customresourcedefinition.apiextensions.k8s.io/quotaspecs.config.istio.io created
+customresourcedefinition.apiextensions.k8s.io/rules.config.istio.io created
+customresourcedefinition.apiextensions.k8s.io/attributemanifests.config.istio.io created
+customresourcedefinition.apiextensions.k8s.io/rbacconfigs.rbac.istio.io created
+customresourcedefinition.apiextensions.k8s.io/serviceroles.rbac.istio.io created
+customresourcedefinition.apiextensions.k8s.io/servicerolebindings.rbac.istio.io created
+customresourcedefinition.apiextensions.k8s.io/adapters.config.istio.io created
+customresourcedefinition.apiextensions.k8s.io/instances.config.istio.io created
+customresourcedefinition.apiextensions.k8s.io/templates.config.istio.io created
+customresourcedefinition.apiextensions.k8s.io/handlers.config.istio.io created
+customresourcedefinition.apiextensions.k8s.io/sidecars.networking.istio.io created
+customresourcedefinition.apiextensions.k8s.io/authorizationpolicies.rbac.istio.io created
+customresourcedefinition.apiextensions.k8s.io/clusterissuers.certmanager.k8s.io created
+customresourcedefinition.apiextensions.k8s.io/issuers.certmanager.k8s.io created
+customresourcedefinition.apiextensions.k8s.io/certificates.certmanager.k8s.io created
+customresourcedefinition.apiextensions.k8s.io/orders.certmanager.k8s.io created
+customresourcedefinition.apiextensions.k8s.io/challenges.certmanager.k8s.io created
+</code></pre>
+
+Now use `kubectl` to apply the manifest to your cluster:
 
 ```
-kubectl apply -f install/kubernetes/helm/istio/templates/crds.yaml
 kubectl apply -f install/kubernetes/istio-demo-auth.yaml
 ```
-
 
 It begins by creating a new namespace, `istio-system`, where all the Isitio components are created, and then it install all the config maps, service accounts, jobs, *et al.*:
 
@@ -157,7 +193,9 @@ serviceaccount/istio-sidecar-injector-service-account created
     zipkin                   ClusterIP      10.3.229.37    &lt;none>        9411/TCP                                        15m
     </code></pre>
 
-    As the OVH Managed Kubernetes beta doesn't support yet an external load balancer, the `istio-ingressgateway` `EXTERNAL-IP` will say `<pending>`. You will need to access it using the service NodePort, or use port-forwarding instead.
+    As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `&lt;pending>` for `istio-ingressgateway` `EXTERNAL-IP`. Please try again in a few minutes to get the external URL to call your Istio. 
+
+
 
 1. List the pods in `istio-system` namespace using `kubectl get pods -n istio-system` and ensure that the following pods are deployed and all containers are up and running: `istio-pilot-*`, `istio-ingressgateway-*`, `istio-egressgateway-*`, `istio-policy-*`, `istio-telemetry-*`, `istio-citadel-*`, `prometheus-*`, `istio-galley-*`, and, optionally, `istio-sidecar-injector-*`.
 
@@ -198,18 +236,17 @@ The [Istio-Sidecar-injector](https://istio.io/docs/setup/kubernetes/sidecar-inje
 
 ```
 kubectl create namespace istio-apps
-kubectl label namespace istio-apps istio-injection=enabled
 ```
 
 And now, deploy the `bookinfo` manifest into the namespace:
 
 ```
-kubectl create -n istio-apps -f ./samples/bookinfo/platform/kube/bookinfo.yaml
+kubectl create -n istio-apps -f <(./bin/istioctl kube-inject -f samples/bookinfo/platform/kube/bookinfo.yaml) 
 ```
 
 The above command installs and launches all four microservices as illustrated in the above diagram: `details`, `productpage`, `ratings` and  the three versions of `reviews`:
 
-<pre class="console"><code>$ kubectl create -n istio-apps -f ./samples/bookinfo/platform/kube/bookinfo.yaml
+<pre class="console"><code>$ kubectl create -n istio-apps -f <(./bin/istioctl kube-inject -f samples/bookinfo/platform/kube/bookinfo.yaml) 
 service/details created
 deployment.extensions/details-v1 created
 service/ratings created
@@ -226,8 +263,6 @@ deployment.extensions/productpage-v1 created
 Now you can verify that all services and pods are correctly defined and running:
 
 1. Use `kubectl -n istio-apps get services ` to verify that the `details`, `productpage`, `ratings` and `reviews` services are up un running:
-
-
 
     <pre class="console"><code>$ kubectl -n istio-apps get services
     NAME          TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
@@ -268,25 +303,13 @@ Now that the Bookinfo services are up and running, you need to make the applicat
         kubectl -n istio-apps get gateway
     
 
-1. Set the `INGRESS_HOST` and `INGRESS_PORT` variables for accessing the gateway. As the OVH Managed Kubernetes beta doesn't support yet an external load balancer, you need to access the gateway using the service’s node port.
 
-    Set the ingress ports:
+1. Set `GATEWAY_URL`, the URL of the `istio-gateway` service.
 
-    
-        export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].nodePort}')
-        export SECURE_INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="https")].nodePort}')
-    
+    You can get it with `kubectl -n istio-system get service istio-ingressgateway`, under the `EXTERNAL_IP` fiel or directly using a `jsonpath` in the request:
 
-    For the `INGRESS_HOST` use the nodes URL found in the OVH Cloud Manager (see [deploying a Hello World application](https://docs.ovh.com/gb/en/kubernetes/deploying-hello-world/){.external}).
-
-    
-        export INGRESS_HOST=<NODES_URL>
-    
-
-1. Set `GATEWAY_URL`:
-
-    
-        export GATEWAY_URL=$INGRESS_HOST:$INGRESS_PORT
+        export GATEWAY_URL=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
+ 
     
 
 
@@ -298,18 +321,14 @@ virtualservice.networking.istio.io/bookinfo created
 $ kubectl -n istio-apps get gateway
 NAME               AGE
 bookinfo-gateway   28s
-$ export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].nodePort}')
-$ export SECURE_INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="https")].nodePort}')
-$ kubectl cluster-info
-Kubernetes master is running at https://clusterId.c1.gra.k8s.ovh.net
-KubeDNS is running at https://clusterId.c1.gra.k8s.ovh.net/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+$ kubectl -n istio-system get service istio-ingressgateway
+NAME                   TYPE           CLUSTER-IP     EXTERNAL-IP                        PORT(S)  
+istio-ingressgateway   LoadBalancer   10.3.209.149   xxxrs44urc.lb.c1.gra.k8s.ovh.net   15020:31621/TCP,80:31380/TCP,443:31390/TCP,31400:31400/TCP...
 
-To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
-$ export INGRESS_HOST=clusterId.c1.gra.k8s.ovh.net
-$ export INGRESS_HOST=clusterId.nodes.c1.gra.k8s.ovh.net
-$ export GATEWAY_URL=$INGRESS_HOST:$INGRESS_PORT
+$ export GATEWAY_URL=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
+
 $ echo $GATEWAY_URL
-clusterId.nodes.c1.gra.k8s.ovh.net:31380
+xxxrs44urc.lb.c1.gra.k8s.ovh.net
 </code></pre>
 
 
