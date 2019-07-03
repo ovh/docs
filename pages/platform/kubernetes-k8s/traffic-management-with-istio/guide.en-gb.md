@@ -274,7 +274,7 @@ Now, on the `/productpage` of the Bookinfo app, 9 times out of 10 you will get t
 
 Both [Rolling Deployments](https://searchitoperations.techtarget.com/definition/rolling-deployment) and [Blue/Green Deployments](rolling deployment) are deployment strategies to ensure that new releases can be shipped without any downtime.
 
-![Rolling Deployment]()
+![Rolling Deployment](images/rolling-deployment-001.png){.thumbnail}
 
 Doing a Rolling Deployment on Istio is rather simple, you can take as base te examples of Canary Testing and A/B Testing.
 
