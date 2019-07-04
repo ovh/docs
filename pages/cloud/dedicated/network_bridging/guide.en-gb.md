@@ -26,7 +26,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 The basic steps are always the same - independent of the Systems used:
 * creating a virtual MAC address for a fail-over IP
 * setting the MAC of the VM to that new virtual MAC address
-* configuring the **IP address**, **netmask**, **gateway** and **route to the gateway** inside the VM
+* configuring the [IP address](https://hosting.review/web-hosting-glossary/#11), **netmask**, **gateway** and **route to the gateway** inside the VM
 
 For these examples, we will use the following values in our code samples, which should be replaced with your own values:
 
