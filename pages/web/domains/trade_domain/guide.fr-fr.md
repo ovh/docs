@@ -20,14 +20,14 @@ client](https://www.ovh.com/manager/web){.external} à l'aide de votre identifia
 - Cliquez sur `Connexion`{.action} pour valider l'opération.
 
 
-![hosting](images/3638.png){.thumbnail}
+![hosting](images/SS_1.PNG){.thumbnail}
 
 
 ### Selection du domaine
 - Une fois connecté, sélectionnez dans la rubrique "domaines" le nom de domaine générique (gTLD) pour lequel vous souhaitez modifier le propriétaire. pour lequel vous souhaitez modifier le propriétaire.
 
 
-![hosting](images/3639.png){.thumbnail}
+![hosting](images/SS_2.PNG){.thumbnail}
 
 
 ### Changer le proprietaire
