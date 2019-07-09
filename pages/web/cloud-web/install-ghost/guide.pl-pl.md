@@ -118,6 +118,7 @@ W oknie, które się wyświetla, wprowadź wymagane informacje, po czym kliknij 
 
 |Nazwa|Typ zmiennej|Wartość| 
 |---|---|---|
+|database__connection__host|string|Adres serwera MySQL|
 |database__connection__user|string|Nazwa użytkownika MySQL wybrana w momencie jego tworzenia|
 |database__connection__database|string|Nazwa bazy danych MySQL|
 |database__connection__password|hasło|Hasło MySQL wybrane w momencie jego tworzenia|
