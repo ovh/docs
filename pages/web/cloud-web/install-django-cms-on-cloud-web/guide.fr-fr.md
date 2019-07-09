@@ -49,7 +49,7 @@ Dans la fenêtre qui s’affiche, complétez les informations demandées avec le
 |  Moteur d'exécution |  python-3 |
 |  Chemin d'accès au répertoire public |  public |
 |  Environnement de l'application |  production |
-|  Script de lancement de l'application |  app.py |
+|  Script de lancement de l'application |  server.py |
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Si vous souhaitez obtenir plus d’informations sur la gestion des moteurs d’exécution, reportez-vous à notre guide [« Gérer les moteurs d’exécution de Cloud Web »](https://docs.ovh.com/fr/cloud-web/gerer-moteurs-execution-runtime-cloud-web/).
 
@@ -226,7 +226,7 @@ drwxr-xr-x 5 democld democld      9 May  7 10:54 mysite
 -rw-r--r-- 1 democld democld 741376 May  7 10:55 project.db
 drwxr-xr-x 2 democld democld      2 Apr 30 15:09 public
 -rw-r--r-- 1 democld democld    451 May  7 10:55 requirements.txt
-lrwxrwxrwx 1 democld democld     21 Apr 30 16:20 app.py -> /usr/share/ovh/app.py
+lrwxrwxrwx 1 democld democld     21 Apr 30 16:20 server.py -> /usr/share/ovh/app.py
 drwxr-xr-x 2 democld democld      2 May  7 10:54 static
 drwxr-xr-x 4 democld democld      4 May  6 11:33 venv
 ```
@@ -258,10 +258,10 @@ from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
 ```
 
-Lors de la configuration du moteur d’exécution Python (voir l'étape 1), nous avons défini le script de lancement de notre application comme étant « app.py ». Hors Django CMS utilise un fichier nommé « manage.py ». Pour faire le lien entre Django CMS et votre moteur d'exécution, créez donc un lien symbolique entre « app.py » et « manage.py » :
+Lors de la configuration du moteur d’exécution Python (voir l'étape 1), nous avons défini le script de lancement de notre application comme étant « server.py ». Hors Django CMS utilise un fichier nommé « manage.py ». Pour faire le lien entre Django CMS et votre moteur d'exécution, créez donc un lien symbolique entre « server.py » et « manage.py » :
     
 ```sh
-(venv) democld@cloudweb-ssh:~/django $ ln -fs manage.py app.py
+(venv) democld@cloudweb-ssh:~/django $ ln -fs manage.py server.py
 (venv) democld@cloudweb-ssh:~/django $ ls -l
 total 778
 drwxr-xr-x 2 democld democld      3 Apr 30 16:21 __pycache__
@@ -271,7 +271,7 @@ drwxr-xr-x 5 democld democld      9 May  7 10:54 mysite
 -rw-r--r-- 1 democld democld 741376 May  7 10:55 project.db
 drwxr-xr-x 2 democld democld      2 Apr 30 15:09 public
 -rw-r--r-- 1 democld democld    451 May  7 10:55 requirements.txt
-lrwxrwxrwx 1 democld democld      9 May  7 11:32 app.py -> manage.py
+lrwxrwxrwx 1 democld democld      9 May  7 11:32 server.py -> manage.py
 drwxr-xr-x 2 democld democld      2 May  7 10:54 static
 drwxr-xr-x 4 democld democld      4 May  6 11:33 venv
 ```
