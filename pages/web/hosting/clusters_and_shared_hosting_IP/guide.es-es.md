@@ -719,6 +719,7 @@ A continuación indicamos las direcciones IP del **cluster** para cada país (pa
 |Finlandia|FI|188.165.140.194|2001:41d0:301:8::27|
 |Lituania|LT|51.255.97.18|2001:41d0:301:9::27|
 |Alemania|DE|91.134.179.251|2001:41d0:301:1::27|
+|Bélgica|BE|193.70.58.226|2001:41d0:301:10::27|
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
