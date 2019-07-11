@@ -118,6 +118,7 @@ Dans la fenêtre qui s'affiche, complétez les informations demandées selon vot
 
 |Nom|Type de variable|Valeur| 
 |---|---|---|
+|database\__connection__host|string|L'adresse du serveur MySQL|
 |database\__connection__user|string|Le nom d'utilisateur MySQL choisi à sa création|
 |database\__connection__database|string|Le nom de la base MySQL|
 |database\__connection__password|password|Le mot de passe MySQL choisi à sa création|
