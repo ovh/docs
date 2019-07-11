@@ -118,6 +118,7 @@ Enter the information requested in the pop-up window, adapting the information s
 
 |Name|Variable type|Value| 
 |---|---|---|
+|database__connection__host|string|The MySQL server address|
 |database__connection__user|string|The MySQL username entered during creation|
 |database__connection__database|string|The name of the MySQL database|
 |database__connection__password|password|The MySQL password entered during creation|
