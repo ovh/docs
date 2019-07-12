@@ -1,35 +1,39 @@
 ---
-title: 'Retrieve your credentials'
-excerpt: 'Learn how to retrieve your Data Platform credentials after installation'
+title: Retrieve your credentials
+excerpt: Learn how to retrieve your Data Platform credentials after installation
 section: How-to
 order: 1
 ---
 
-When your data platform is installed, it is initialized with a master password. This password must always be kept safe
+When your data platform is installed, it is initialized with a master password you gave. This password must always be kept safe
 as it allows to retrieve all the credentials of your platform services.  
 
 To retrieve your credentials:
 
-1. Connect to [https://dataconvergence.ovh.com/credentials](https://dataconvergence.ovh.com/credentials).
-2. Enter your project id and your master password
-3. Click on **Generate** button.
-
-![View credentials](images/credentials.png)
+1.  Login to your [OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
+2.  Select your project in the *sidebar* 
+3.  In the *Data & Analytics* section of the *sidebar*, select *Analytics Data Platform*
+4.  Click on the name of your Data Platform in the list
+5.  Go in the *IDs* view
+6.  Enter your master password
+7.  Click on **Generate login credentials** button
+![IDs view](images/manager_01.png)
 
 ## Description of credentials
 
-Credentials       | Description
-------------------|----------------------------------------------------------
- Ambari           | Ambari administrator password: manage your cluster services
- LDAP             | LDAP directory administrator: add or remove users on your cluster
- LDAP gateway     | Use this password to access the LDAP management interface through your browser
- Ranger           | Ranger administrator: add or remove authorizations on Hadoop services
- Knox             | Access Hadoop services via Knox gateway as administrator
- Guacamole        | WebSSH administrator
- Ranger KMS       | Ranger KMS administrator
- Guacamole        | Guacamole MySQL DB administrator database
- Hive database    | Hive metastore MySQL DB administrator
- Oozie database   | Oozie MySQL DB administrator
- Ambari database  | Ambari MySQL DB administrator
- Ranger database  | Ranger MySQL DB administrator
- Ranger KMS       | Ranger KMS MySQL DB administrator database
+You will need the *All services* credentials to connect to the Ambari, Ranger and FreeIPA UIs.
+
+The other crendentials listed are :
+
+Credentials         | Description
+--------------------|----------------------------------------------------------
+ Ambari             | Ambari administrator password: manage your cluster services (same as *All services*)
+ Ambari BDD         | Ambari MySQL DB administrator
+ FreeIPA            | Use this password to access the FreeIPA management interface through your browser (same as *All services*)
+ Guacamole          | WebSSH administrator
+ Guacamole BDD      | Guacamole MySQL DB administrator database
+ Hive BDD           | Hive metastore MySQL DB administrator
+ Kerberos KDC       | Kerberos Key Distribution Center administrator
+ MariaDB SQL server | MariaDB SQL server administrator
+ Oozie BDD          | Oozie MySQL DB administrator
+ Ranger KMS         | Ranger KMS administrator
