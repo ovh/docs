@@ -24,15 +24,14 @@ host.
 
 Select the type of server to connect:
 
-{{% expand "Dedicated server" %}}
+####Dedicated server
 1.  [Login to your OVH Manager](https://www.ovh.com/manager/cloud/index.html)
 2. Navigate to *Cloud*>*vRack*
 3. Choose the vRack containing your Analytics Data Platform
 4. Locate the server you want enroll in the left pane
 5. Add it to the vRack on the right pane
-{{% /expand %}}
 
-{{% expand "Public Cloud Instance" %}}
+####Public Cloud Instance
 1.  [Login to your OVH Manager](https://www.ovh.com/manager/cloud/index.html)
 2. Navigate to *Cloud*>*Servers*
 3. Select the project containing your Data Platform
@@ -40,13 +39,12 @@ Select the type of server to connect:
 4. Select your desired flavor, OS, SSH key...
 5. In *Advanced options*>*Link to the private network*, select your vRack
 6. Create the instance
-{{% /expand %}}
 
 ### Configure the VLAN
 
 In this section you learn how to add your second network interface (vRack dedicated)
 to your Data Platform subnet.
-{{% expand "Ubuntu 16+" %}}
+####Ubuntu 16+
 1. Install `vlan` package and activate 802.1q module
 ```bash
 $ sudo apt-get install vlan
@@ -67,9 +65,8 @@ iface eth1.3200 inet manual
   vlan-raw-device eth1
 $ sudo systemctl restart networking
 ````
-{{% /expand %}}
 
-{{% expand "Centos 7" %}}
+####Centos 7
 1. Activate 8021q module if not already activated
 ```bash
 $ modprobe --first-time 8021q
@@ -91,15 +88,12 @@ VLAN=yes
 ````bash
 $ systemctl restart network
 ````
-{{% /expand %}}
 
 ### Retrieve idM address
 
 You first need to retrieve your idM IP address:
 
-1.  Login to your OVH Manager
-
-    {{% button href="https://www.ovh.com/manager/cloud/index.html" %}}Go to OVH Manager{{% /button %}}
+1. [Login to your OVH Manager](https://www.ovh.com/manager/cloud/index.html)
 2. Navigate to *Cloud*>*Servers*
 3. Choose the project your Analytics Data Platform
 4. Open the OpenStack client console and type
@@ -113,7 +107,7 @@ ovh-network=10.1.2.XX
 
 ### Enroll your server
 
-> [!info]
+> [!primary]
 >
 > For this tutorial we assume that your server will be called `myserver.{cluster_id}.datalake.ovh`.
 You can choose any valid hostname value ending by `.{cluster_id}.datalake.ovh`.

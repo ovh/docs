@@ -1,7 +1,7 @@
 ---
-title: 'Privileges with Ranger'
-excerpt: 'Learn how to use Apache Ranger'
-section: 'Users and Security'
+title: Privileges with Ranger
+excerpt: Learn how to use Apache Ranger
+section: Users and Security
 order: 3
 ---
 

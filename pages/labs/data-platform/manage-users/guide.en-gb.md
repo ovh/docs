@@ -1,7 +1,7 @@
 ---
-title: 'Manage users and groups'
-excerpt: 'Learn how to manage users and groups with the idM'
-section: 'Users and Security'
+title: Manage users and groups
+excerpt: Learn how to manage users and groups with the idM
+section: Users and Security
 order: 2
 ---
 
@@ -30,7 +30,7 @@ You can add new users using the idM web interface of your platform:
 7. Select the *hadoop-users* group and optionally the *hadoop-admins* group. [Learn more on groups](#default-user-groups)
 8. Your new user should be able to login with SSH and will be asked to change its password on first login
 
-> [!info]
+> [!primary]
 >
 > idM is in charge of synchronizing users and credentials to the cluster. This synchronization can take some time as
 credentials are cached on the nodes for performances reasons.
@@ -59,7 +59,7 @@ It can also happen that the administrator wants to reset a user password because
 ![Reset password form](images/idm-user-password-reset-form.png)
 6. Give the temporary to the concerned user
 
-> [!info]
+> [!primary]
 >
 > After a admin password reset, the user will have to change the temporary password at the first connection.
 >

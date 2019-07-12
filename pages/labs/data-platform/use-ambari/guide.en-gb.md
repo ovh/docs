@@ -28,7 +28,7 @@ each of your services are running smoothly.
 Each widget can be customized to a certain extent (at minima, the
 alerting thresholds) to better suit your needs.
 
-On the dashboard's left side, you can sea all the services and clients
+On the dashboard's left side, you can see all the services and clients
 deployed on your cluster (the green tick indicates that it's a service,
 like HDFS, while the computer icon represents a client, like Kerberos)
 

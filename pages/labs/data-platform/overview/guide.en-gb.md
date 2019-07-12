@@ -1,7 +1,7 @@
 ---
 title: Overview
-excerpt: 'overview of OVH Analytics Data Platform'
-section: 'Getting started'
+excerpt: Overview of OVH Analytics Data Platform
+section: Getting started
 order: 1
 ---
 

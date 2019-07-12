@@ -1,7 +1,7 @@
 ---
-title: 'About edge nodes'
-excerpt: 'Learn more about edge nodes.'
-section: 'Getting started'
+title: About edge nodes
+excerpt: Learn more about edge nodes.
+section: Getting started
 ---
 
 ### What is an edge node
@@ -17,7 +17,7 @@ It enables you to provide each user a personal node to use the cluster. It also 
 
 To connect to the edge nodes, you can follow the instructions of the [Using SSH](../connect-using-ssh/guide.en-gb.md) section.
 
-As the edge node is synchronized with the FreeIPA users, you must connect by SSH as one these. You also need to authenticate yourself with the SSH key associated to your user or giving your password when prompted.
+As the edge node is synchronized with the FreeIPA users, you must connect by SSH as one of these. You also need to authenticate yourself with the SSH key associated to your user and with your password when prompted.
 
 Another way to connect to your edge nodes is to use Guacamole. To do it, please refer to the [Using Guacamole](../connect-using-guacamole/guide.en-gb.md) section.
 
@@ -26,13 +26,11 @@ Another way to connect to your edge nodes is to use Guacamole. To do it, please 
 From the edge node, you can use any service on to any instance thanks to the clients of these applications that are installed, configured on it and synchronized by Ambari.
 
 
-> [!info]
+> [!primary]
 >
 > Once connected to edge node, you can see every services you can use in the `/usr/hdp/current`.
 > There are all the binary files and symbolic links to configurations.
 >
-
-{{%/notice%}}
 
 You can have further information about your edge node through the Apache Ambari interface, to see it :
 

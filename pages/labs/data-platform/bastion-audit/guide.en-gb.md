@@ -1,8 +1,7 @@
 ---
-title: 'Auditing on the bastion'
-slug: bastion-auditing
-excerpt: 'Auditing on the bastion'
-section: 'Users and Security'
+title: Auditing on the bastion
+excerpt: Auditing on the bastion
+section: Users and Security
 order: 6
 ---
 
@@ -19,8 +18,7 @@ responsability, ensure that you warn any user before accessing its audit trails.
 
 ### Visualising logs
 All audit logs are stored in `/var/log/bastion`. Each file corresponds to an SSH session for a
-given user. A unique *audit key* allow you to retrieve the session of your choice. You may download the
-logs are use a pager to skim through them.
+given user. A unique *audit key* allow you to retrieve the session of your choice. 
 
 ### Replaying sessions
 It is possible to replay a full SSH session with the same timing as the user typed and

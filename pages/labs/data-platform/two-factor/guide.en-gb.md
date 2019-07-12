@@ -1,7 +1,7 @@
 ---
-title: '2FA authentication'
-excerpt: 'Learn how to implement a two-factor authentication'
-section: 'Users and Security'
+title: 2FA authentication
+excerpt: Learn how to implement a two-factor authentication
+section: Users and Security
 order: 5
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: 'About FreeIPA'
-excerpt: 'Learn how to use FreeIPA'
-section: 'Advanced topics'
+title: About FreeIPA
+excerpt: Learn how to use FreeIPA
+section: Advanced topics
 order: 3
 ---
 

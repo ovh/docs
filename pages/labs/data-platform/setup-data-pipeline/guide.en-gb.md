@@ -53,7 +53,7 @@ within OVH Analytics to work on your data sets.
 ### Make data available in Hive
 
 [Apache Hive](<https://hive.apache.org/>) is a data warehouse software
-project built on top of Apache Hadoop for providing data summarization,
+project built on top of Apache Hadoop to provide data summarization,
 query and analysis. Hive gives an SQL-like interface to query data
 stored in various databases and file systems that integrate with Hadoop.
 Hive provides the necessary SQL abstraction to integrate SQL-like
@@ -142,13 +142,14 @@ containing the files you want to map to the table and, finally, specify
 that you want to skip the first two lines (which are the headers line and
 a blank line).
 
-{{% notice note %}}
-The query is mapped to a folder and not a specific file.
-This is to allow users to add many files with a similar
-structure in the same folder. Here, you only have the CSV for taxi trips
-from January 2017, but you could add others months as well and the
-created table will automatically take them into account.
-{{% /notice %}}
+>[!primary]
+>
+>The query is mapped to a folder and not a specific file.
+>This is to allow users to add many files with a similar
+>structure in the same folder. Here, you only have the CSV for taxi trips
+>from January 2017, but you could add others months as well and the
+>created table will automatically take them into account.
+
 
 Let's now check with a simple SELECT that data is readable through
 Hive by running the following query:

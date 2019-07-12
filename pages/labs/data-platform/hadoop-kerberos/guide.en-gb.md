@@ -1,7 +1,7 @@
 ---
-title: 'Hadoop and Kerberos'
-excerpt: 'Learn how to use Hadoop and Kerberos'
-section: 'Users and Security'
+title: Hadoop and Kerberos
+excerpt: Learn how to use Hadoop and Kerberos
+section: Users and Security
 order: 4
 ---
 
@@ -56,7 +56,7 @@ ipa-getkeytab -p myserviceuser -k ~/myserviceuser.keytab
 You can now use the generated keytab to authenticate your service. Ensure that your service has the adequate permissions
 in Ranger.
 
-> [!info]
+> [!primary]
 >
 > Kerberos keytabs are versioned. Each time you run `ipa-getkeytab`, all previously generated keytabs are invalidated.
 >
