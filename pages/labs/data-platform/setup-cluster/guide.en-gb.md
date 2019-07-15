@@ -21,7 +21,7 @@ In this section you deploy a new Data Platform running on OVH Public
 Cloud instances:
 
 1.  Login to your [OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
-2.  In the manager, click on the *create a new project* button
+2.  In the sidebar, click on the *create a new project* button
 ![Create button](images/manager_01.png)
 3.  Choose a project name in which your cluster will run and create the project
 4.  Select your project in the *sidebar* 

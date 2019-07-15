@@ -5,7 +5,7 @@ section: Users and Security
 order: 2
 ---
 
-Using your Data Platform Identity Management tool (idM), you can manager groups and users. A first *admin* user is automatically created to administrate the platform.
+Using your Data Platform Identity Management tool (idM), you can manage groups and users. A first *admin* user is automatically created to administrate the platform.
 
 ## Managing users
 

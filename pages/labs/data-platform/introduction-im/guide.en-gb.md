@@ -18,7 +18,7 @@ The idM federates many modules to manage hosts and users:
 ![idM](images/idm.png)
 
 ### Why idM?
-idM is a single end-point to manager users and host-based rules that are automatically propagated to all the hosts.
+idM is a single end-point to manage users and host-based rules that are automatically propagated to all the hosts.
 You can control SSH rules, sudo rules, and each user can manage its passwords, SSH keys and two-factor authentication.
 
 ### Existing Active Directory
