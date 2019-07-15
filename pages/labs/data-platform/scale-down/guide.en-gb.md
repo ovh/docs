@@ -31,6 +31,8 @@ $ sudo ambari-agent stop
 9.  On the the node summary page in Ambari UI, select *Host Actions*>*Delete Host*
 [Delete Host](images/delete-host.png)
 10. Restart HDFS and YARN by clicking on *Host Actions*>*Restart all services* into both services summary page
+[Restart HDFS](images/restart-hdfs.png)
+[Restart YARN](images/restart-yarn.png)
 
 
 ### Delete VM and volumes
@@ -60,13 +62,11 @@ To remove an edgenode from the cluster, you need to go on the Ambari UI and do t
 2.  Click on the name of the node you want to destroy to reach the node summary page
 3.  Stop the *Ambari Metrics* service
 4.  In the *Host Actions* menu, chose *Stop All Components*
-[Stop all components](images/stop-components.png)
 5.  Log in to the node to stop the Ambari agent running on it (see [Connect to your Data Platform using SSH](../connect-using-ssh/guide.en-gb.md))
 ```bash
 $ sudo ambari-agent stop
 ```
 6.  On the the node summary page in Ambari UI, select *Host Actions*>*Delete Host*
-[Delete Host](images/delete-host.png)
 
 
 ### Delete VM and volumes
