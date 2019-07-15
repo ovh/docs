@@ -33,7 +33,7 @@ Seleziona il server, clicca sulla scheda `DNS secondario`{.action} e poi su `Agg
 
 ![DNS secondario](images/dns2-02.png){.thumbnail}
 
-Inserisci il tuo dominio nel campo `Dominio`{.action} e clicca su `Seguente`:
+Inserisci il tuo dominio nel campo `Dominio` e clicca su `Seguente`{.action}:
 
 ![DNS secondario](images/dns2-03.png){.thumbnail}
 
@@ -75,7 +75,7 @@ Ripeti le azioni effettuate nello step 1: ritorna alla sezione `Dedicato`{.actio
 
 ![DNS secondario](images/dns2-02.png){.thumbnail}
 
-Inserisci il tuo dominio nel campo `Dominio`{.action} e clicca su `Seguente`:
+Inserisci il tuo dominio nel campo `Dominio` e clicca su `Seguente`{.action} :
 
 ![DNS secondario](images/dns2-03.png){.thumbnail}
 
