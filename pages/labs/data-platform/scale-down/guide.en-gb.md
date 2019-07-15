@@ -14,7 +14,7 @@ If you want to remove a node from your Data Platform, you will need to decommiss
 To remove a datanode from the cluster, you need to go on the Ambari UI and do the following steps:
 
 1.  Go to the *Host* page
-2.  Select the node(s) you want the destroy in the list
+2.  Select the node(s) you want to destroy in the list
 3.  Decommission the **NodeManagers**
 [Decommission NodeManagers](images/deco-nodemanager.png)
 4.  Decommission the **DataNodes**
@@ -44,6 +44,7 @@ To delete a worker node instance :
 4.  Detach the volumes linked to the to-be-deleted instance
 [Detach volumes](images/detach-volumes.png)
 5.  Delete these volumes
+[Delete volumes](images/delete-volumes.png)
 6.  Go in the *Intances* section of the *sidebar*
 7.  Delete the instance(s) you have previously decommission
 [Delete instance](images/delete-instance.png)
@@ -53,4 +54,27 @@ To delete a worker node instance :
 
 ### Remove node from Ambari
 
+To remove an edgenode from the cluster, you need to go on the Ambari UI and do the following steps:
+
+1.  Go to the *Host* page
+2.  Click on the name of the node you want to destroy to reach the node summary page
+3.  Stop the *Ambari Metrics* service
+4.  In the *Host Actions* menu, chose *Stop All Components*
+[Stop all components](images/stop-components.png)
+5.  Log in to the node to stop the Ambari agent running on it (see [Connect to your Data Platform using SSH](../connect-using-ssh/guide.en-gb.md))
+```bash
+$ sudo ambari-agent stop
+```
+6.  On the the node summary page in Ambari UI, select *Host Actions*>*Delete Host*
+[Delete Host](images/delete-host.png)
+
+
 ### Delete VM and volumes
+
+To delete an edge node instance, the process is the same except you don't have to delete volumes:
+
+1.  Login to your [OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
+2.  Select your project in the *sidebar* 
+3.  Go in the *Intances* section of the *sidebar*
+7.  Delete the instance(s) you want to remove from your project
+[Delete instance](images/delete-instance.png)
