@@ -25,17 +25,17 @@ host.
 Select the type of server to connect:
 
 #### Dedicated server
-1.  [Login to your OVH Manager](https://www.ovh.com/manager/cloud/index.html)
-2. Navigate to *Cloud* -> *vRack*
+1.  [Login to your OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
+2. Navigate to *Server* -> *vRack*
 3. Choose the vRack containing your Analytics Data Platform
 4. Locate the server you want enroll in the left pane
 5. Add it to the vRack on the right pane
 
 #### Public Cloud Instance
-1.  [Login to your OVH Manager](https://www.ovh.com/manager/cloud/index.html)
+1.  [Login to your OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
 2. Navigate to *Cloud* -> *Servers*
 3. Select the project containing your Data Platform
-3. Click on *Actions* -> *Add a server*
+3. Click on *Create an instance*
 4. Select your desired flavor, OS, SSH key...
 5. In *Advanced options* -> *Link to the private network*, select your vRack
 6. Create the instance
@@ -93,17 +93,14 @@ $ systemctl restart network
 
 You first need to retrieve your idM IP address:
 
-1.  Login to your [OVH Manager](https://www.ovh.com/manager/cloud/index.html)
-2. Navigate to *Cloud* -> *Servers*
-3. Choose the project your Analytics Data Platform
-4. Open the OpenStack client console and type
-```bash
-$ openstack server show -f value -c addresses "ovh-ipa.{cluster_id}.datalake.ovh"
-ovh-network=10.1.2.XX
-```
+1. Login to your [OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
+2. Navigate to *Data & Analytic* -> *Analytics Data Plateform*
+3. Choose the Analytics Data Platform you want in the list by clicking on its name
+4. Go to the *Cluster size* section
+5. Write down the IP addresse [10.1.2.XX] of the node with a name like `ovh-ipa.{cluster_id}.datalake.ovh`
 
-5. Write down the given IP address [10.1.2.XX]
-![Manager Openstack client](images/idm-manager-cli.png)
+![IPA node IP](images/info-nodes.png)
+
 
 ### Enroll your server
 
