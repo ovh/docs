@@ -25,8 +25,8 @@ In order to handle users authentication and provide a unique identity management
 
 It makes users/groups accesses and rights management easier all accross the cluster.
 
-In your cloud project, the FreeIPA host is named `ovh-ipa.your-cluster-id.datalake.ovh`.
-The IPA services are hosted on it. You can access it at `https://ipa.your-cluster-id.datalake.ovh`
+In your cloud project, the FreeIPA host is named `ovh-ipa.{your-cluster-id}.datalake.ovh`.
+The IPA services are hosted on it. You can access it at `https://ipa.{your-cluster-id}.datalake.ovh`
 Right after the cluster deployment, you cann connect using admin password.
 
 > [!primary]
@@ -38,7 +38,7 @@ Right after the cluster deployment, you cann connect using admin password.
 
 Login with a user with administration rights on freeIPA web UI
 
-`https://ipa.your-cluster-id.datalake.ovh`
+`https://ipa.{your-cluster-id}.datalake.ovh`
 
 
 Click on the "Add" button in *Identity -> Users*

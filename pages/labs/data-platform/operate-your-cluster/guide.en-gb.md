@@ -21,7 +21,7 @@ of the entire service (eg : change memory allocation amount for a YARN container
 
 To access to your Ambari web UI you may connect to :
 
-https://knox.your-cluster-id.datalake.ovh/gateway/default/ambari
+`https://knox.{your-cluster-id}.datalake.ovh/gateway/default/ambari`
 
 To connect to Ambari web interface, you need a valid user and password.
 As credentials are centralized through freeIPA,  the same that you need to authenticate to the other services.
