@@ -36,7 +36,7 @@ Select the type of server to connect:
 2. Navigate to *Cloud* -> *Servers*
 3. Select the project containing your Data Platform
 3. Click on *Create an instance*
-4. Select your desired flavor, OS, SSH key...
+4. Select your desired flavor, OS, SSH key, remember that the instance name should end by `.{cluster_id}.datalake.ovh`
 5. In the *Configure your instance* part, in the *Private network* field, chose the private network of your cluster.
 ![Select the private network](images/private-network.png)
 6. Create the instance
