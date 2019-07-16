@@ -24,15 +24,15 @@ host.
 
 Select the type of server to connect:
 
-####Dedicated server
-1.  [Login to your OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
+#### Dedicated server
+1.  [Login to your OVH Manager](https://www.ovh.com/manager/cloud/index.html)
 2. Navigate to *Cloud* -> *vRack*
 3. Choose the vRack containing your Analytics Data Platform
 4. Locate the server you want enroll in the left pane
 5. Add it to the vRack on the right pane
 
-####Public Cloud Instance
-1.  [Login to your OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
+#### Public Cloud Instance
+1.  [Login to your OVH Manager](https://www.ovh.com/manager/cloud/index.html)
 2. Navigate to *Cloud* -> *Servers*
 3. Select the project containing your Data Platform
 3. Click on *Actions* -> *Add a server*
@@ -44,7 +44,7 @@ Select the type of server to connect:
 
 In this section you learn how to add your second network interface (vRack dedicated)
 to your Data Platform subnet.
-####Ubuntu 16+
+#### Ubuntu 16+
 1. Install `vlan` package and activate 802.1q module
 ```bash
 $ sudo apt-get install vlan
@@ -66,7 +66,7 @@ iface eth1.3200 inet manual
 $ sudo systemctl restart networking
 ````
 
-####Centos 7
+#### Centos 7
 1. Activate 8021q module if not already activated
 ```bash
 $ modprobe --first-time 8021q
@@ -93,16 +93,7 @@ $ systemctl restart network
 
 You first need to retrieve your idM IP address:
 
-1.  Login to your [OVH Manager](https://www.ovh.com/manager/public-cloud/index.html) in the public-cloud section
-2.  Select your project in the *sidebar* 
-3.  In the *Data & Analytics* section of the *sidebar*, select *Analytics Data Platform*
-![Analytics Data Plateform view](images/manager_01.png)
-
-If at least one cluster has been deployed, its status can be seen on this view. Further information about each Data Platform are available by selecting a cluster in the list.
-
-![Cluster information view](images/manager_02.png)
-
-1. [Login to your OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
+1.  Login to your [OVH Manager](https://www.ovh.com/manager/cloud/index.html)
 2. Navigate to *Cloud* -> *Servers*
 3. Choose the project your Analytics Data Platform
 4. Open the OpenStack client console and type
