@@ -21,7 +21,7 @@ You can add new users using the idM web interface of your platform:
 
 1. Navigate to `https://ipa.{cluster_id}.datalake.ovh`
 2. Log in with the *admin* user. [Learn how to generate your first credentials](../retrieve-credentials/guide.en-gb.md)
-3. Navigate to  *Identity* > *Users* and click on the *+ Add* button
+3. Navigate to  *Identity* -> *Users* and click on the *+ Add* button
 ![Add user in idM](images/idm-add-user.png)
 4. Complete the new user form with *User login*, *First name*, *Last name* and *Password* and click on *Add and Edit*
 5. In the user view, select *User Groups* tab
@@ -52,7 +52,7 @@ It can also happen that the administrator wants to reset a user password because
 
 1. Navigate to `https://ipa.{cluster_id}.datalake.ovh`
 2. Login with your administrator credentials
-3. Navigate to  *Identity* > *Users* and click on the username
+3. Navigate to  *Identity* -> *Users* and click on the username
 4. On the *action* menu dropdown, select *reset password*
 ![User informations](images/idm-user-password-reset.png)
 5. Then fill in the temporary password definition
@@ -69,7 +69,7 @@ Each user is able to manage its own SSH public keys to connect on the platform:
 
 1. Navigate to `https://ipa.{cluster_id}.datalake.ovh`
 2. Login with your credentials
-3. Navigate to  *Identity* > *Users* and click on your username
+3. Navigate to  *Identity* -> *Users* and click on your username
 4. In the SSH public keys click on *Add*
 ![Add SSH key](images/idm-add-ssh-key.png)
 5. Paste your public ssh key and click *Set*
@@ -82,7 +82,7 @@ Groups allow administrators to easily give access to resources to a given user. 
 
 1. Navigate to `https://ipa.{cluster_id}.datalake.ovh`
 2. Log in with the *admin* user. [Learn how to generate your first credentials](../retrieve-credentials/guide.en-gb.md)
-3. Navigate to  *Identity* > *Groups* and click on the *+ Add* button
+3. Navigate to  *Identity* -> *Groups* and click on the *+ Add* button
 ![Add group in idM](images/idm-add-group.png)
 4. Complete the new group form with *Group name*, and an optional description
 5. Click on *Add and Edit*

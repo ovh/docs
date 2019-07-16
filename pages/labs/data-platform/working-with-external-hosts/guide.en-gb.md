@@ -26,18 +26,18 @@ Select the type of server to connect:
 
 ####Dedicated server
 1.  [Login to your OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
-2. Navigate to *Cloud*>*vRack*
+2. Navigate to *Cloud* -> *vRack*
 3. Choose the vRack containing your Analytics Data Platform
 4. Locate the server you want enroll in the left pane
 5. Add it to the vRack on the right pane
 
 ####Public Cloud Instance
 1.  [Login to your OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
-2. Navigate to *Cloud*>*Servers*
+2. Navigate to *Cloud* -> *Servers*
 3. Select the project containing your Data Platform
-3. Click on *Actions*>*Add a server*
+3. Click on *Actions* -> *Add a server*
 4. Select your desired flavor, OS, SSH key...
-5. In *Advanced options*>*Link to the private network*, select your vRack
+5. In *Advanced options* -> *Link to the private network*, select your vRack
 6. Create the instance
 
 ### Configure the VLAN
@@ -103,7 +103,7 @@ If at least one cluster has been deployed, its status can be seen on this view. 
 ![Cluster information view](images/manager_02.png)
 
 1. [Login to your OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
-2. Navigate to *Cloud*>*Servers*
+2. Navigate to *Cloud* -> *Servers*
 3. Choose the project your Analytics Data Platform
 4. Open the OpenStack client console and type
 ```bash
@@ -177,7 +177,7 @@ The last line of output will be `Client configuration complete` and indicates a 
 
 1. Navigate to your idM web interface on `https://ipa.{cluster_id}.datalake.ovh`
 2. Log in with *admin* credentials
-3. Navigate to *Identity*>*Hosts* tab
+3. Navigate to *Identity* -> *Hosts* tab
 4. If your server appears in the list the enrollment is successful
 ![Successful enrollment](images/idm-myserver.png)
 
@@ -188,7 +188,7 @@ your must update Host Based Access Control (HBAC) in your idM.
 
 1. Navigate to your idM web interface on `https://ipa.{cluster_id}.datalake.ovh`
 2. Log in with *admin* credentials
-3. Navigate to *Policy*>*Host Based Access Control* tab
+3. Navigate to *Policy* -> *Host Based Access Control* tab
 ![Add an HBAC](images/idm-add-hbac.png)
 4. Click on *+ Add* button, enter a new name for your rule, click on *Add and Edit*
 ![Set up an HBAC](images/idm-setup-hbac.png)

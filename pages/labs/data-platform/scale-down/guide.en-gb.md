@@ -43,11 +43,11 @@ To remove a datanode from the cluster, you need to go on the Ambari UI and do th
 $ sudo ambari-agent stop
 ```
 
-9.  On the the node summary page in Ambari UI, select *Host Actions*>*Delete Host*
+9.  On the the node summary page in Ambari UI, select *Host Actions* -> *Delete Host*
 
 ![Delete Host](images/delete-host.png)
 
-10. Restart HDFS and YARN by clicking on *Host Actions*>*Restart all services* into both services summary page
+10. Restart HDFS and YARN by clicking on *Host Actions* -> *Restart all services* into both services summary page
 
 
 
@@ -91,7 +91,7 @@ To remove an edgenode from the cluster, you need to go on the Ambari UI and do t
 ```bash
 $ sudo ambari-agent stop
 ```
-6.  On the the node summary page in Ambari UI, select *Host Actions*>*Delete Host*
+6.  On the the node summary page in Ambari UI, select *Host Actions* -> *Delete Host*
 
 
 ### Delete VM and volumes
