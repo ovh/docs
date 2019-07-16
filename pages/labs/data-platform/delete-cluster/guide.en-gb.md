@@ -5,6 +5,9 @@ section: How-to
 order: 7
 ---
 
+>[!warning]
+>
+> Destroying an Analytics Data Platform will result in the permanent loss of all data on it.
 ## Before you begin
 
 In order to destroy your cluster you first need to get an OpenStack token of your Public Cloud project.

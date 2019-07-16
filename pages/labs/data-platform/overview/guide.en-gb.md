@@ -64,7 +64,7 @@ open-source data platform. It is meant to stay accessible and operable with stan
 You can delete your cluster after use whenever you want, even just after
 a few hours.
 
-[Learn more about Open Cloud Foundation](https://open-cloud-foundation.org/>)
+[Learn more about Open Cloud Foundation](https://open-cloud-foundation.org/)
 
 ## Technical considerations
 
