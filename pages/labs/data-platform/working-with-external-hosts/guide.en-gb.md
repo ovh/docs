@@ -37,7 +37,8 @@ Select the type of server to connect:
 3. Select the project containing your Data Platform
 3. Click on *Create an instance*
 4. Select your desired flavor, OS, SSH key...
-5. In *Advanced options* -> *Link to the private network*, select your vRack
+5. In the *Configure your instance* part, in the *Private network* field, chose the private network of your cluster.
+![Select the private network](images/private-network.png)
 6. Create the instance
 
 ### Configure the VLAN
