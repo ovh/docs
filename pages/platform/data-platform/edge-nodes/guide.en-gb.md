@@ -19,7 +19,6 @@ To connect to the edge nodes, you can follow the instructions of the [Using SSH]
 
 As the edge node is synchronized with the FreeIPA users, you must connect by SSH as one of these. You also need to authenticate yourself with the SSH key associated to your user and with your password when prompted.
 
-Another way to connect to your edge nodes is to use Guacamole. To do it, please refer to the [Using Guacamole](../connect-using-guacamole/guide.en-gb.md) section.
 
 ### Use services
 

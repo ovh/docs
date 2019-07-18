@@ -30,8 +30,6 @@ Credentials         | Description
  Ambari             | Ambari administrator password: manage your cluster services (same as *All services*)
  Ambari BDD         | Ambari MySQL DB administrator
  FreeIPA            | Use this password to access the FreeIPA management interface through your browser (same as *All services*)
- Guacamole          | WebSSH administrator
- Guacamole BDD      | Guacamole MySQL DB administrator database
  Hive BDD           | Hive metastore MySQL DB administrator
  Kerberos KDC       | Kerberos Key Distribution Center administrator
  MariaDB SQL server | MariaDB SQL server administrator

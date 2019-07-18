@@ -72,8 +72,7 @@ a few hours.
 Hadoop services are installed on **Workers and Masters nodes**. We
 provide a **network gateway** and a **bastion** in order to make
 services accessible from the outside world. There are 3 services nodes
-for: Identity Management services (Kerberos and LDAP), [Apache Guacamole
-WebSSH](https://guacamole.apache.org/) and a database backend
+for: Identity Management services (Kerberos and LDAP), WebSSH and a database backend
 (Apache Ambari and Hive metastore).
 
 ## Available services

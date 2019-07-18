@@ -31,7 +31,4 @@ As credentials are centralized through freeIPA,  the same that you need to authe
 
 
 You may need to access directly to a node. That means that you would
-connect on the server. You can achieve it :
-
-- Using [Guacamole](../connect-using-guacamole/guide.en-gb.md) to connect via your web browser
-- Using [SSH](../connect-using-ssh/guide.en-gb.md) to connect through your terminal
+connect on the server. You can achieve it using [SSH](../connect-using-ssh/guide.en-gb.md) to connect through your terminal.
