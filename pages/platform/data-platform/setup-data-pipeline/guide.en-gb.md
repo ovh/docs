@@ -14,15 +14,12 @@ Analytics cluster comes with a few ways to ingest data :
 - WebHDFS
 - Ambari's Files View
 - HBase
+- Kafka
 - Phoenix SQL (if you have enabled it through HBase configuration in Ambari)
 
 
 In this part you will use Ambari Files view to ingest a CSV dataset.
-The data we will ingest is going to be a very
-popular sample from New York City cab service, specifically the trips
-they made in January 2017. It's available here:
-
-http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
+The source data is the very popular sample from New York City cab service, specifically the trips they made in January 2017, available on: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
 
 To access Ambari's Files View, click on Ambari's top bar's 9-squares
 icon and choose Files View which will redirect you to this screen:
@@ -45,9 +42,7 @@ finish.
 
 ![Ambari Files View - Ingested data](images/ingest_04.png)
 
-And here you are. You have now successfully ingested data into your data
-lake. You will now be able to use the different analytic tools packaged
-within OVH Analytics to work on your data sets.
+You have now successfully ingested data into your Analytics Data Platform. You will now be able to use the different analytic tools packaged within ADP to work on your data sets.
 
 
 ### Make data available in Hive
@@ -62,10 +57,7 @@ queries in the low-level Java API.
 
 ### Creating a database
 
-Hive behaves in a very similar way to a standard SQL system. Which means
-that it supports databases (or schemas) to keep data separated. Before
-we can use it, we will first have to create a new database. Let's go
-into the Hive View 2.0 by clicking on the Ambari's 9-squares icon:
+Hive provides a SQL-compliant query language on top of data files living in HDFS. Before we can use it, we will first have to create a new database. Let’s go into the Hive View 2.0 by clicking on the Ambari’s 9-squares icon:
 
 ![Ambari Views](images/ambari_views_01.png)
 

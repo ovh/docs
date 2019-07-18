@@ -15,7 +15,7 @@ best practice.
 
 Most part of your services can be managed through Ambari web UI. Ambari
 is a cluster management service.
-Is helps you to start/stop/restart a service like HDFS for instance.
+It helps you to start/stop/restart a service like HDFS for instance.
 You can also change the configuration of a node or
 of the entire service (eg : change memory allocation amount for a YARN container)
 
