@@ -94,11 +94,11 @@ $ systemctl restart network
 
 You first need to retrieve your idM IP address:
 
-1. Login to your [OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
-2. Navigate to *Data & Analytic* -> *Analytics Data Platform*
-3. Choose the Analytics Data Platform you want in the list by clicking on its name
-4. Go to the *Cluster size* section
-5. Write down the IP addresse [10.1.2.XX] of the node with a name like `ovh-ipa.{cluster_id}.datalake.ovh`
+1- Login to your [OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
+2- Navigate to *Data & Analytic* -> *Analytics Data Platform*
+3- Choose the Analytics Data Platform you want in the list by clicking on its name
+4- Go to the *Cluster size* section
+5- Write down the IP addresse [10.1.2.XX] of the node with a name like `ovh-ipa.{cluster_id}.datalake.ovh`
 
 ![IPA node IP](images/info-nodes.png)
 
@@ -168,6 +168,7 @@ The last line of output will be `Client configuration complete` and indicates a 
 2. Log in with *admin* credentials
 3. Navigate to *Identity* -> *Hosts* tab
 4. If your server appears in the list the enrollment is successful
+
 ![Successful enrollment](images/idm-myserver.png)
 
 ### Update access rules
@@ -175,13 +176,17 @@ The last line of output will be `Client configuration complete` and indicates a 
 Your platform idM controls login and SSH access to the nodes. To allow your IPA users to login to your new external server,
 your must update Host Based Access Control (HBAC) in your idM.
 
-1. Navigate to your idM web interface on `https://ipa.{cluster_id}.datalake.ovh`
-2. Log in with *admin* credentials
-3. Navigate to *Policy* -> *Host Based Access Control* tab
+1- Navigate to your idM web interface on `https://ipa.{cluster_id}.datalake.ovh`
+2- Log in with *admin* credentials
+3- Navigate to *Policy* -> *Host Based Access Control* tab
+
 ![Add an HBAC](images/idm-add-hbac.png)
-4. Click on *+ Add* button, enter a new name for your rule, click on *Add and Edit*
+
+4- Click on *+ Add* button, enter a new name for your rule, click on *Add and Edit*
+
 ![Set up an HBAC](images/idm-setup-hbac.png)
-5. In the *Who* section add user(s) and group(s) you want to allow to connect to your server
-6. In the *Accessing* section add your host
-7. In the *Via Service* section add *sshd* and *login* services
-8. Save the rule
+
+5- In the *Who* section add user(s) and group(s) you want to allow to connect to your server
+6- In the *Accessing* section add your host
+7- In the *Via Service* section add *sshd* and *login* services
+8- Save the rule

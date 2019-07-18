@@ -41,14 +41,14 @@ Your jobs use their service principal and keytab to authenticate through Kerbero
 
 To create a new service user:
 
-- [Create a new user for your service](../manage-users/guide.en-gb.md)
-- Connect with SSH to the host running your service
-- Log in as your service user
+1- [Create a new user for your service](../manage-users/guide.en-gb.md)
+2- Connect with SSH to the host running your service
+3- Log in as your service user
 ```bash
 su myserviceuser
 ```
 
-- Retrieve a keytab
+4- Retrieve a keytab
 ```
 ipa-getkeytab -p myserviceuser -k ~/myserviceuser.keytab
 ```
