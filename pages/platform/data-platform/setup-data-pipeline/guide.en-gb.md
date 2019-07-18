@@ -1,6 +1,6 @@
 ---
-title: Ingest and use data
-excerpt: Learn how to ingest data in your Data Platform, and make your first Hive queries and Spark scripts.
+title: Ingest and process data
+excerpt: Learn how to ingest data in your Data Platform, make your first Hive queries and Spark scripts.
 section: Getting started
 order: 4
 ---

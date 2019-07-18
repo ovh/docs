@@ -7,14 +7,9 @@ order: 3
 
 ## Cluster overview using Ambari
 
-You have now managed to deploy your Hadoop cluster connect to Ambari UI.
-In this section you lean to use Ambari, create your first dataset and
+You have now managed to deploy your Analytics Data Platform.
+In this section you learn to manage your cluster with Apache Ambari, create your first dataset and
 run your first Apache Hive and Spark jobs.
-
-> [!primary]
->
-> If you check the users in Ambari, you may find a local admin user ’sync’. You should not delete this user as it has been created in order to accelerate the synchronization of the users between freeIPA and Ambari.
->
 
 ### Dashboard
 
@@ -57,3 +52,9 @@ If the service has specific UI, a Quicklinks dropdown menu is displayed on top o
 service panel. It helps you to go on the UI directly from ambari.
 
 ![Yarn Quicklinks](images/ambari-service-panel-quicklinks.png)
+
+
+> [!primary]
+>
+> Never delete Ambari local 'admin' user, it is used to automatically synchronize users newly created users to Ambari.
+>

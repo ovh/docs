@@ -95,7 +95,7 @@ $ systemctl restart network
 You first need to retrieve your idM IP address:
 
 1. Login to your [OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
-2. Navigate to *Data & Analytic* -> *Analytics Data Plateform*
+2. Navigate to *Data & Analytic* -> *Analytics Data Platform*
 3. Choose the Analytics Data Platform you want in the list by clicking on its name
 4. Go to the *Cluster size* section
 5. Write down the IP addresse [10.1.2.XX] of the node with a name like `ovh-ipa.{cluster_id}.datalake.ovh`

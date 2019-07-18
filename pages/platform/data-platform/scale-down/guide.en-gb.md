@@ -9,7 +9,7 @@ If you want to remove a node from your Data Platform, you will need to decommiss
 
 >[!primary]
 >
-> In you Analytics Data Plateform, worker nodes names are `ovh-cnodeX.{your_cluster_id}.datalake.ovh` and edge nodes names are `ovh-enodeX.{your_cluster_id}.datalake.ovh`
+> In you Analytics Data Platform, worker nodes names are `ovh-cnodeX.{your_cluster_id}.datalake.ovh` and edge nodes names are `ovh-enodeX.{your_cluster_id}.datalake.ovh`
 
 ## Remove a worker node
 
