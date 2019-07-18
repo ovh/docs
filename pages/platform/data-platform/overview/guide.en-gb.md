@@ -8,15 +8,11 @@ order: 1
 ## Overview of OVH Analytics Data Platform
 
 OVH Analytics Data Platform provides a one-click pre-configured Hadoop stack designed
-to store and process high volumes of data across OVH Public Cloud
-infrastructure.
+to store and process high volumes of data across OVH Public Cloud.
 
-Deploy a big data stack is usually tricky and takes a lot of time. OVH Analytics Data Platform
-reduces the setup cost of such platform. Indeed, in only 1 hour, get your fully working big data stack
-ready to use, and start to use it.
+Deploying a big data stack can be cumbersome and time consuming. With OVH Analytics Data Platform get your fully working big data stack ready to use in an hour.
 
-As we consider open source software like a durable way of development, we chose to base all our service
-on open source software. Analytics data platform is based on [a standard open source Hadoop distribution](https://hortonworks.com/products/data-platforms/hdp/),
+Analytics data platform is based on [a standard open source Hadoop distribution](https://hortonworks.com/products/data-platforms/hdp/),
 it namely includes:
 
 - [HDFS](https://hortonworks.com/apache/hdfs/) the distributed filesystem of Hadoop ecosystem
@@ -40,13 +36,13 @@ set up to start working straight away.
 You have full control over your cluster and are given root access to
 services and instances. You can monitor, install new services and
 operate your cluster from your web browser using **Apache Ambari** or
-directly using an integrated **Web SSH terminal**.
+directly using **SSH**.
 
 ### Isolated
 
 Kerberos authentication is enabled out of the box on all OVH Analytics
 clusters. You can easily manage all the cluster users via a
-**pre-installed LDAP directory** and web interface. Access control and
+**pre-installed identity manager** and web interface. Access control and
 fine-grained auditing is made possible by the integrated **Apache
 Ranger** service.
 
@@ -60,8 +56,7 @@ network. External access is only possible through an authenticated
 Forget about vendor-lock, OVH Analytics is based on a fully
 open-source data platform. It is meant to stay accessible and operable with standard big data tools.
 
-You can delete your cluster after use whenever you want, even just after
-a few hours.
+You can delete your cluster anytime, should it be hours or months.
 
 [Learn more about Open Cloud Foundation](https://open-cloud-foundation.org/)
 
@@ -69,11 +64,12 @@ a few hours.
 
 ![Generic schema of your cluster](images/analytics_schema.png)
 
-Hadoop services are installed on **Workers and Masters nodes**. We
+Hadoop services are installed on **workers and masters nodes**. We
 provide a **network gateway** and a **bastion** in order to make
-services accessible from the outside world. There are 3 services nodes
-for: Identity Management services (Kerberos and LDAP), WebSSH and a database backend
+services accessible from the outside world. There are 2 services nodes
+for: Identity Management services (Kerberos and LDAP) and a database backend
 (Apache Ambari and Hive metastore).
+5 utility nodes
 
 ## Available services
 
