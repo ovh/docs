@@ -17,7 +17,7 @@ Two-factor authentication must be activated by the administrator:
 
 1. Navigate to `https://ipa.{cluster_id}.datalake.ovh`
 2. Log in with the *admin* user. [Learn how to generate your first credentials](../retrieve-credentials/guide.en-gb.md)
-3. Navigate to  *Identity* > *Users* and select the user to edit
+3. Navigate to  *Identity* -> *Users* and select the user to edit
 4. In *User authentication types*, tick *Two factor authentication*
 ![Activate 2FA](images/idm-2fa.png)
 5. Save your modifications

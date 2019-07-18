@@ -15,7 +15,7 @@ If you want to remove a node from your Data Platform, you will need to decommiss
 
 ### Remove node from Ambari
 
-To remove a datanode from the cluster, you need to go on the Ambari UI and do the following steps:
+To remove a worker node from the cluster, you need to go on the Ambari UI and do the following steps:
 
 - Go to the *Host* page
 - Select the node(s) you want to destroy in the list
@@ -28,7 +28,7 @@ To remove a datanode from the cluster, you need to go on the Ambari UI and do th
 ![Stop Ambari Metrics](images/stop-ambari-metrics.png)
 - In the *Host Actions* menu, chose *Stop All Components*
 ![Stop all components](images/stop-components.png)
-- Log in to the node to stop the Ambari agent running on it (see [Connect to your Data Platform using SSH](../connect-using-ssh/guide.en-gb.md))
+- Connect as admin to the node to stop the Ambari agent running on it (see [Connect to your Data Platform using SSH](../connect-using-ssh/guide.en-gb.md))
 ```bash
 $ sudo ambari-agent stop
 ```
@@ -45,7 +45,7 @@ To delete a worker node instance :
 
 -  Login to your [OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
 -  Select your project in the *sidebar* 
--  Go in the *Block storage* section of the *sidebar*
+-  Go to the *Block storage* section of the *sidebar*
 -  Detach the volumes linked to the to-be-deleted instance
 ![Detach volumes](images/detach-volumes.png)
 -  Delete these volumes     
@@ -53,9 +53,9 @@ To delete a worker node instance :
 
 >[!warning]
 >
-> Make sure you do the 2 previous steps for all volumes attached to the instance, otherwise you won't be able to delete it.
+> Ensure that you have done the 2 previous steps for all volumes attached to the instance, otherwise you won't be able to delete it.
 
--  Go in the *Intances* section of the *sidebar*
+-  Navigate to the *Intances* section of the *sidebar*
 -  Delete the instance(s) you have previously decommission
 
 ![Delete instance](images/delete-worker-instance.png)
@@ -64,13 +64,13 @@ To delete a worker node instance :
 
 ### Remove node from Ambari
 
-To remove an edgenode from the cluster, you need to go on the Ambari UI and do the following steps:
+To remove an edge node from the cluster, you need to go on the Ambari UI and do the following steps:
 
 -  Go to the *Host* page
 -  Click on the name of the node you want to destroy to reach the node summary page
 -  Stop the *Ambari Metrics* service
 -  In the *Host Actions* menu, chose *Stop All Components*
--  Log in to the node to stop the Ambari agent running on it (see [Connect to your Data Platform using SSH](../connect-using-ssh/guide.en-gb.md))
+-  Connect as admin to the node to stop the Ambari agent running on it (see [Connect to your Data Platform using SSH](../connect-using-ssh/guide.en-gb.md))
 ```bash
 $ sudo ambari-agent stop
 ```
@@ -83,7 +83,7 @@ To delete an edge node instance, the process is the same except you don't have t
 
 -  Login to your [OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
 -  Select your project in the *sidebar* 
--  Go in the *Intances* section of the *sidebar*
+-  Navigate to the *Intances* section of the *sidebar*
 -  Delete the instance(s) you want to remove from your project 
 
 
