@@ -27,7 +27,7 @@ It makes users/groups accesses and rights management easier all accross the clus
 
 In your cloud project, the FreeIPA host is named `ovh-ipa.{your-cluster-id}.datalake.ovh`.
 The IPA services are hosted on it. You can access it at `https://ipa.{your-cluster-id}.datalake.ovh`
-Right after the cluster deployment, you cann connect using admin password.
+Right after the cluster deployment, you can connect using admin password.
 
 > [!primary]
 >

@@ -28,5 +28,5 @@ To get the status of the nodes inside a cluster :
 3.  Go into the *Cluster Size* section
 ![Nodes list view](images/manager_03.png)
 
-On this page, all the nodes of the Data Platform are listed and you can see somme information as the IP address and the status of each one.
+On this page, all the nodes of the Data Platform are listed and you can see some information like the IP address and the status of each one.
 

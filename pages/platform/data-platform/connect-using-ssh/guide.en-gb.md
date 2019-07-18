@@ -24,7 +24,7 @@ $ ssh admin@{bastion_IP}
 >
 > The bastion public IP can be found in the *Cluster size* section of the cluster information page (see [this section](../get-status/guide.en-gb.md)).
 
-When connected as the bastion you can then access any other host using its
+When connected to the bastion you can then access any other host using its
 hostname. For example, connecting to a edge node would be:
 ```bash
 $ ssh admin@ovh-enode0

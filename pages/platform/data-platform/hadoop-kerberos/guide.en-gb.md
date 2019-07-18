@@ -43,7 +43,7 @@ To create a new service user:
 
 1. [Create a new user for your service](../manage-users/guide.en-gb.md)
 2. Connect with SSH to the host running your service
-3. Log in a your service user
+3. Log in as your service user
 ```bash
 su myserviceuser
 ```

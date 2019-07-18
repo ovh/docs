@@ -57,7 +57,7 @@ It can also happen that the administrator wants to reset a user password because
 ![User informations](images/idm-user-password-reset.png)
 5. Then fill in the temporary password definition
 ![Reset password form](images/idm-user-password-reset-form.png)
-6. Give the temporary to the concerned user
+6. Give the temporary password to the concerned user
 
 > [!primary]
 >

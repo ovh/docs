@@ -6,12 +6,12 @@ section: Getting started
 
 ### What is an edge node
 
-Edge nodes are instances of the cluster between the user and cluster's other machines. Users can run their jobs on the edge node instead of doing it directly on the master nodes, which are critical for the overall functioning.
+Edge nodes are instances of the cluster between the user and cluster's machines. Users can run their jobs on the edge node instead of doing it directly on the master nodes, which are critical for the overall functioning.
 This way you can prevent capacity losses on these nodes.
 
 Since every application of the cluster has its client installed on every single edge node, you can use these services without connecting to any other instance. So the edge nodes are the only machines whose potential can be affected by users' behaviours.
 
-It enables you to provide each user a personal node to use the cluster. It also allows to re-spawn a new edge node if the last one is too altered whereas an altered master can damage the whole cluster.
+It enables you to provide a personal node to use the cluster for every user. It also allows to re-spawn a new edge node if the last one is too altered whereas an altered master can damage the whole cluster.
 
 ### Connect to edge nodes
 

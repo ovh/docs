@@ -31,7 +31,7 @@ Create a new policy and input the desired HDFS path in the *Resource Path* field
 if you want to policy to also be applied for subfolders. Use the Audit logging switch to control whether you want
 all accesses to that path to be logged by Ranger.
 
-In *Allow conditions* select user(s) and group(s) that should be granted access. In the *Permissions* field,
+In *Allow conditions*, select user(s) and group(s) that should be granted access. In the *Permissions* field,
 select the effective permissions you want to grant. You can use the *Delegate Admin* if you want the users to be able to
 modify the policy and create additional policies for subfolders.
 
@@ -52,13 +52,12 @@ should be granted access. In the *Permissions* field, select the effective permi
 ### Kafka
 With Kafka policies you can restrict the access to specific topics.
 Create a new policy and input the desired Kafka topic using the *Topic* field.  
-In *Allow conditions*  select user(s) and group(s) that should be granted access.
+In *Allow conditions*,  select user(s) and group(s) that should be granted access.
 In the *Permissions* field, select the effective permissions you want to grant.
 
 
 ## Users and groups
-Ranger users and groups are synchronized hourly from the Data Platform identity manager. To create or update users, use the
-[idM interface].
+Ranger users and groups are synchronized hourly from the Data Platform identity manager. To create or update users, use the [idM interface](../introduction-im/guide.en-gb.md)].
 
 ## Audits
 

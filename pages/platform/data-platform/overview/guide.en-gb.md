@@ -24,7 +24,6 @@ it namely includes:
 - [HBase](https://hortonworks.com/apache/hbase/) a distributed columnar storage
 - [Kafka](https://hortonworks.com/apache/kafka/) the famous messaging queue system
 - [Spark](https://hortonworks.com/apache/spark/) a complete data processor handling ETL as much as machine learning
-- [Presto](https://prestodb.io/) (soon).
 
 With OVH Analytics, you can handle a wide range of use cases including
 **business intelligence**, **IoT**, **marketing analysis**, **AI**, **data cleaning**, and
@@ -91,4 +90,4 @@ creation.
 |                     |                     |                  |                      |                      |                     | Slider
 |                     |                     |                  |                      |                      |                     | Hive   
 |                     |                     |                  |                      |                      |                     | Spark  
-|                     |                     |                  |                      |                      |                     | Presto
+           
