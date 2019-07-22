@@ -7,11 +7,11 @@ section: 'DNS e zona DNS'
 order: 1
 ---
 
-**Ultimo aggiornamento: 02/04/2019**
+**Ultimo aggiornamento: 16/07/2019**
 
 ## Obiettivo
 
-La zona Domain Name System (DNS) di un dominio è composta da una o più configurazioni in cui sono salvate le relative informazioni tecniche, chiamate record.  Convenzionalmente questi record consentono di collegare il tuo dominio al server o ai server che ospitano il tuo sito Internet e le tue caselle email.
+I server DNS ospitano le configurazioni DNS dei domini che, chiamate anche zone DNS, contengono informazioni tecniche denominate _record_. Convenzionalmente i record consentono di collegare il dominio a uno o più server che ospitano un sito Internet o caselle email.
 
 Si può quindi affermare che i record salvati su server DNS permettono ai domini di essere raggiungibili su Internet.
 
@@ -20,7 +20,7 @@ Si può quindi affermare che i record salvati su server DNS permettono ai domini
 ## Prerequisiti
 
 - Disporre di un [dominio](https://www.ovh.it/domini/){.external} registrato in OVH
-- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Disporre delle [autorizzazioni per la gestione](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/){.external} del dominio dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 > [!warning]
@@ -36,9 +36,9 @@ Quando si modificano i server DNS di un dominio, cambia anche la configurazione 
 
 Attenzione:
 
-- il contenuto della configurazione DNS precedente non viene replicato automaticamente sulla nuova, ed è quindi necessario verificare che siano presenti tutti gli elementi essenziali al corretto funzionamento dei servizi associati al dominio (ad esempio, un sito Internet o una casella email).
+- il contenuto della configurazione DNS precedente non viene replicato automaticamente sulla nuova, ed è quindi necessario verificare che siano presenti tutti gli elementi essenziali al corretto funzionamento dei servizi associati al dominio (ad esempio, un sito Internet o una casella email)
 
-- per modificare un solo elemento della configurazione DNS corrente (ad esempio un record), ti consigliamo di agire direttamente sulla zona DNS seguendo le istruzioni riportate nella guida [Modificare una zona DNS di OVH](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}.
+- per modificare un solo elemento della configurazione DNS corrente (ad esempio un record), ti consigliamo di agire direttamente sulla zona DNS seguendo le istruzioni riportate nella guida [Modificare una zona DNS OVH](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}
 
 > [!warning]
 >
@@ -55,13 +55,13 @@ Visualizzi una tabella con tutti i server DNS OVH configurati per il tuo dominio
 
 ### Step 2: modifica i server DNS del dominio
 
-Per effettuare questa operazione, clicca sul pulsante `Modifica i server DNS`{.action} e, nelle caselle di testo, sostituisci i server DNS correnti con i nuovi. Per aggiungere altri server alla lista, clicca sul simbolo `+`{.action} a destra dell’ultima riga.
+Per effettuare questa operazione clicca sul pulsante `Modifica i server DNS`{.action} e, nelle caselle di testo, sostituisci i server DNS correnti con i nuovi. Per aggiungere altri server alla lista, clicca sul simbolo `+`{.action} a destra dell’ultima riga. Nella tabella compare una nuova riga con alcuni campi di testo da completare.
 
 Una volta inserite tutte le informazioni, clicca su `Applica la configurazione`{.action}. Lo stato dei server DNS verrà aggiornato nella tabella con le modifiche appena eseguite.
 
 > [!primary]
 >
-> Il pulsante `Reinizializza i server DNS`{.action} permette di sostituire i server DNS correnti del dominio con i server OVH originari:  utilizza questa opzione per ripristinare i server DNS OVH.  
+> Il pulsante `Reinizializza i server DNS`{.action} permette di sostituire i server DNS correnti del dominio con i server OVH originari: utilizza questa opzione per ripristinare i server DNS OVH.  
 >
 
 ![dns server](images/edit-dns-server-ovh-step2.png){.thumbnail}
@@ -75,6 +75,8 @@ Una volta completata l’operazione attendi il tempo necessario alla sua elabora
 - una volta applicata dall’organismo responsabile, la propagazione delle modifiche potrebbe richiedere fino a 48 ore.
 
 ## Per saperne di più
+
+[Gestire i contatti dei servizi OVH](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/){.external}
 
 [Modificare una zona DNS OVH](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}
 
