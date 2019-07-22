@@ -1,73 +1,60 @@
 ---
-title: Tworzenie instancji w interfejsie Horizon
-excerpt: Jak utworzyć instancję w interfejsie Horizon.
+title: 'Tworzenie instancji w interfejsie Horizon'
+excerpt: 'Dowiedz się, jak utworzyć instancję w interfejsie Horizon'
 slug: tworzenie_instancji_w_interfejsie_horizon
 legacy_guide_number: g1772
-section: Zarządzanie w interfejsie Horizon
+section: 'Zarządzanie w interfejsie Horizon'
 ---
 
+**Ostatnia aktualizacja z dnia 10-06-2019**
 
-## 
-Przewodnik ten wyjaśnia, jak tworzyć instancje z poziomu interfejsu Horizon.
+## Wprowadzenie
 
+Istnieje możliwość tworzenia instancji bezpośrednio w interfejsie Horizon. Możesz utworzyć wiele instancji lub skonfigurować grupę zabezpieczeń i użyć jej w instancjach.
 
-## 
-Aby utworzyć instancję, należy:
+**Dowiedz się, jak utworzyć instancję w interfejsie Horizon.**
 
+## Wymagania początkowe
 
-- Zalogować się do interfejsu Horizon.
-- Kliknąć na Instancje w menu z lewej strony.
-- Kliknąć na przycisk Uruchom instancję
-- Wypełnić formularz:
+- Utworzenie projektu [Public Cloud]({ovh_www}/public-cloud/instances/){.external} na Twoim koncie OVH
+- [Dostęp do interfejsu Horizon](../tworzenie_dostepu_do_interfejsu_horizon/){.external}
 
+## W praktyce
 
+Aby rozpocząć tworzenie instancji, zaloguj się do interfejsu Horizon. Jeśli potrzebujesz więcej informacji, aby przeprowadzić tę operację, zapoznaj się z naszym przewodnikiem [Dostęp do interfejsu Horizon](../tworzenie_dostepu_do_interfejsu_horizon/){.external}.
 
-## Zakładka Szczegóły
-Należy dostarczyć poniższe informacje:
+Kliknij `Compute`{.action} w menu po lewej stronie, a następnie kliknij `Instancje`{.action}.
 
-|Strefa dostępności|pozostaw nova (wybór domyślny)|
-|Nazwa instancji|wskaż nazwę instancji|
-|Odmiana|Wybierz typ instancji|
-|Ilość instancji|Wskaż liczbę instancji|
-|Źródło uruchamiania instancji|Wybierz źródło utworzenia instancji: (Uruchom z obrazu lub  Uruchom z migawki)|
-|Nazwa obrazu|Wybierz obraz (tylko w przypadku uruchamiania z obrazu)|
-|Migawka instancji|Wybierz migawkę (tylko w przypadku uruchamiania z migawki)|
+![createinstance](images/create-instance-step1.png){.thumbnail}
 
+Wyświetli się strona, na której zobaczysz uruchamiane aktualnie instancje. Aby uruchomić nową, kliknij przycisk `Launch instance`{.action}.
 
+![createinstance](images/create-instance-step2.png){.thumbnail}
 
-## Zakładka Dostęp i bezpieczeństwo
-W tej sekcji można określić klucz ssh i grupę zabezpieczeń dla instancji.
+Wprowadź następnie odpowiednie dane. W razie potrzeby skorzystaj z poniższej tabeli, aby uzupełnić pola. Lista danych w tabeli nie jest wyczerpująca. 
 
-|Para kluczy|Wybierz klucz ssh do logowania do instancji (klucz można utworzyć klikając na znak "+"|
-|Grupy zabezpieczeń|Wybierz grupę zabezpieczeń dla instancji (zezwolenie na otwieranie portów)|
+|Informacja|Szczegóły|
+|---|---|
+|Strefa dostępności|Pozostaw „nova” (wybór domyślny).|
+|Nazwa instancji|Wpisz wybraną nazwę tworzonej instancji.|
+|Szablon|Wybierz typ instancji.|
+|Liczba instancji|Wpisz liczbę instancji, które chcesz utworzyć.|
+|Źródło uruchomienia instancji|Wybierz źródło uruchomienia instancji (np. „Uruchomienie z obrazu” lub „Uruchomienie ze snapshota”).|
+|Nazwa obrazu|Wybierz obraz instancji (wyłącznie w przypadku uruchamiania instancji z obrazu).|
+|Snaphot instancji|Wybierz snapshot instancji (wyłącznie w przypadku uruchamiania instancji ze snapshota).|
+|Para kluczy|Wybierz klucz SSH, aby zalogować się do instancji (możesz utworzyć klucz, klikając symbol „+” ).|
+|Grupy zabezpieczeń|Wybierz grupę zabezpieczeń dla instancji (autoryzacja otwarcia portów).|
+|Wybrane sieci|Wybierz z listy sieć lub sieci dla instancji, które tworzysz.|
+|Spersonalizowane źródło skryptu|Wybierz źródło: „bezpośredni wpis” lub „plik”.|
+|Dane skryptu:|Wprowadź kod skryptu w odpowiednie pole (maksymalnie 16 kb).|
+|Plik skryptu|Kliknij „Przeglądaj”, aby wybrać skrypt poinstalacyjny.|
+|Partycjonowanie dysku|Wybierz: „automatyczne” lub „ręczne”.|
+|Dysk konfiguracyjny|Skonfiguruj OpenStack, aby zapisać metadane na dysku konfiguracyjnym, który zostanie przypisany do instancji w momencie jej uruchomienia.|
 
+Kiedy jesteś gotowy, aby uruchomić instancję lub instancje, kliknij przycisk `Launch instance`{.action}.
 
+![createinstance](images/create-instance-step3.png){.thumbnail}
 
-## Zakładka Sieć
-W tej sekcji można określić, do jakich sieci będzie podłączona instancja. 
+## Sprawdź również
 
-|Wybrane sieci|Wybierz dla instancji sieć lub sieci z listy dostępnych sieci|
-
-
-
-## Zakładka Po uruchomieniu
-W tej sekcji można spersonalizować instancję po jej utworzeniu.
-
-|Źródło skryptu dostosowującego|Bezpośrednio lub Plik|
-|Dane skryptu|Wpisz kod skryptu w dostępnym polu - maksymalnie 16KB)|
-|Plik skryptu|Kliknij i wybierz skrypt|
-
-
-
-## Ustawienia zaawansowane
-W tej sekcji można zarządzać partycjonowaniem instancji.
-
-|Partycjonowanie dysku|Automatyczne lub Ręczne|
-|Dysk konfiguracyjny|Skonfiguruj OpenStack do zapisywania metadanych na dysku konfiguracyjnym, który zostanie przypisany do instancji w momencie uruchamiania.|
-
-
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
