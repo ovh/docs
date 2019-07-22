@@ -260,7 +260,6 @@ Macierz RAID została odtworzona. Zamontuj partycję (w tym przykładzie `/dev/m
 mount /dev/md2 /home
 ```
 
-
 ## Sprawdź również
 
 * [Wymiana dysku bez wyłączania serwera – Sprzętowa macierz RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external}

@@ -5,7 +5,7 @@ excerpt: 'Hier erfahren Sie, wie Sie das RAID-Array Ihres Servers im Fall von St
 section: 'RAID & Festplatten'
 ---
 
-**Stand 09.07.2019**
+**Stand 11.07.2019**
 
 ## Einleitung
 
@@ -168,7 +168,7 @@ cat /proc/mdstat
 
 Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty] 
 
-md2 : md2 : active raid1 sdb2[1] sdc2[2]
+md2 : active raid1 sdb2[1] sdc2[2]
       96211904 blocks [3/2] [_UU]
       
 md1 : active raid1 sdc1[2] sdb1[1] sda1[0]
