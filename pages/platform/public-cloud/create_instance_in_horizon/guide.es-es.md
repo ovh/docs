@@ -1,74 +1,59 @@
 ---
-title: Crear una instancia en Horizon
-excerpt: Cómo crear una instancia en Horizon.
+title: 'Crear una instancia en Horizon'
 slug: crear_una_instancia_en_horizon
-legacy_guide_number: g1772
+excerpt: 'Cómo crear una instancia desde el panel Horizon'
 section: Horizon
 ---
 
+**Última actualización: 27/03/2018**
 
-## 
-En algunos casos, será necesario crear instancias en Horizon, especialmente si desea crear varias instancias al mismo tiempo o configurar un grupo de seguridad particular para sus instancias. 
-Esta guía explica cómo crear una instancia en Horizon.
+## Objetivo
 
+Es posible crear instancias directamente en Horizon. Desde esta interfaz podrá, entre otras cosas, crear varias instancias simultáneamente y configurar un grupo de seguridad para sus instancias.
 
-## 
-Para crear una instancia:
+**Esta guía explica cómo crear una instancia en Horizon.**
 
+## Requisitos
 
-- Conéctese a Horizon.
-- En el menú izquierdo, haga clic en «Instancias».
-- Haga clic en el botón «Lanzar instancia».
-- Cumplimente el formulario como se indica a continuación.
+- Tener un proyecto de [Public Cloud]({ovh_www}/public-cloud/){.external} en su cuenta de OVH.
+- [Estar conectado a Horizon](../crear_un_acceso_a_horizon/){.external}. 
 
+## Procedimiento
 
+En primer lugar, conéctese a Horizon. Si necesita ayuda, consulte nuestra guía [Conectarse a Horizon](../crear_un_acceso_a_horizon/){.external}.
 
-## Detalles
-Introduzca los siguientes datos:
+A continuación, haga clic en `Compute`{.action} en la columna izquierda y seleccione `Instances`{.action}.
 
-|Zona de disponibilidad|Deje «nova» (opción por defecto).|
-|Nombre de la instancia|Indique el nombre que quiere asignar a la nueva instancia.|
-|Sabor|Seleccione el tipo de instancia que quiere crear.|
-|Recuento de instancias|Indique el número de instancias que quiere crear.|
-|Origen de arranque de la instancia|Seleccione el origen para la creación de la instancia: desde una imagen, desde una instantánea...|
-|Nombre de la imagen|Seleccione la imagen de la instancia (solo en caso de arranque desde una imagen).|
-|Instantánea de instancia|Seleccione una instantánea (snapshot) de una instancia (solo en caso de arranque desde una instantánea).|
+![Crear una instancia](images/create-instance-step1.png){.thumbnail}
 
+En la nueva página podrá consultar las instancias lanzadas actualmente. Para iniciar una nueva instancia, haga clic en el botón `Launch Instance`{.action}.
 
+![Crear una instancia](images/create-instance-step2.png){.thumbnail}
 
-## Acceso y seguridad
-Esta sección permite indicar una llave SSH y el grupo de seguridad para la instancia.
+Introduzca la información solicitada. Si necesita ayuda para completar los distintos campos, consulte la siguiente tabla (la lista no es exhaustiva): 
 
-|Par de claves|Seleccione una llave SSH para conectarse luego a la instancia (es posible crear una llave haciendo clic en el botón «+».|
-|Grupos de seguridad|Seleccione el grupo de seguridad para la instancia (autorización de apertura de puertos).|
+|Campo|Detalles|
+|---|---|
+|Availability Zone|Deje «nova» (opción por defecto) como zona de disponibilidad.|
+|Instance Name|Introduzca el nombre que quiera asignar a la nueva instancia.|
+|Flavor|Seleccione el tipo de instancia que quiera crear.|
+|Count|Indique el número de instancias que quiera crear.|
+|Select Boot Source|Seleccione el origen desde el que se creará la instancia: una imagen, un snapshot de imagen...|
+|Device Name|Asigne un nombre al dispositivo (solo en caso de haber seleccionado la opción de crear un nuevo volumen).|
+|Instance Snapshot|Asigne un nombre al dispositivo (solo en caso de haber seleccionado la opción de crear un nuevo volumen).|
+|Key Pair|Seleccione una llave SSH para conectarse a la instancia. Para crear una llave, haga clic en el botón «+ Create Key Pair».|
+|Security Groups|Seleccione el grupo de seguridad en el que quiera crear la instancia (autorización de apertura de puertos).|
+|Networks|Seleccione la red o redes de la lista que quiera asignar a la instancia.|
+|Configuration|Cargue un archivo o introduzca un script para personalizar la instancia una vez instalada.|
+|Customization Script|Introduzca el código del script en el área de texto (máx. 16 KB).|
+|Load Customization Script from a file|Seleccione en su equipo el script de post-instalación.|
+|Disk Partition|Elija entre automático o manual.|
+|Configuration Drive|Configure OpenStack para escribir los metadatos en un disco de configuración específico que se asociará a la instancia al crearla.|
 
+Una vez que haya terminado de configurar la instancia o instancias, haga clic en el botón `Launch Instance`{.action} para lanzarlas.
 
+![Crear una instancia](images/create-instance-step3.png){.thumbnail}
 
-## Redes
-Este apartado permite especificar a qué redes se conectará la instancia.
+## Más información
 
-|Redes seleccionadas|Seleccione en la lista la red o redes para la instancia que quiere crear.|
-
-
-
-## Pos-creación
-Esta sección permite personalizar una instancia después de crearla.
-
-|Contenidos del guión de personalización|Elija «Entrada directa» o «Archivo».|
-|Datos del guión|Introduzca en el campo de texto el código del script: máx. 16 KB (solo en caso de haber seleccionado «Entrada directa»).|
-|Archivo de guión|Haga clic en «Seleccionar archivo» para seleccionar el script de post-instalación (solo en caso de haber seleccionado «Entrada directa»).|
-
-
-
-## Opciones avanzadas
-Esta sección permite gestionar el particionamiento de la instancia.
-
-|Partición de disco|«Automático» o «Manual»|
-|Disco de configuración|Configura OpenStack para escribir los metadatos en un disco de configuración específico que se asociará a la instancia al crearla.|
-
-
-
-
-## 
- 
-
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
