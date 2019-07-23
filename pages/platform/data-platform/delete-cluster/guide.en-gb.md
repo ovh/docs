@@ -10,9 +10,9 @@ order: 7
 >
 > Destroying an Analytics Data Platform will result in the permanent loss of all data on it.
 
-## Before you begin
+## Requirements
 
-In order to destroy your cluster you first need to get an OpenStack token of your Public Cloud project.
+To destroy your cluster you will need to get an OpenStack token of your Public Cloud project.
 To do so:
 
 1.  Login to your [OVH Manager](https://www.ovh.com/manager/public-cloud/index.html)
