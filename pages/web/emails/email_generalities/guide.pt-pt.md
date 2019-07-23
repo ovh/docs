@@ -1,7 +1,7 @@
 ---
 title: 'Introdução à oferta MX Plan'
-excerpt: 'Saiba como começar a usar a oferta MX Plan'
 slug: partilhado_generalidades_e-mail_partilhado_ovh
+excerpt: 'Saiba como começar a usar a oferta MX Plan'
 section: Introdução
 legacy_guide_number: g1474
 ---
@@ -21,7 +21,7 @@ Adquiriu um serviço MX Plan, que lhe permite usufruir de endereços de e-mail, 
 
 ## Instruções
 
-Depois de a oferta MX Plan estar criada e disponível, pode geri-la a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou de se [o serviço foi migrado recentemente]({ovh_www}/mx-plan-migracao/){.external}. Antes de continuar, deve verificar a versão de que dispõe. 
+Depois de a oferta MX Plan estar criada e disponível, pode geri-la a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou de se [o serviço foi migrado recentemente]({ovh_www}/mxplan-migration/){.external}. Antes de continuar, deve verificar a versão de que dispõe. 
 
 Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web`{.action}. Clique em E-mails na barra à esquerda e selecione o serviço correspondente. Continue a ler em função da sua versão:
 
@@ -66,7 +66,7 @@ Depois de configurar os endereços de e-mail, já os pode utilizar. Para isso, e
 
 Aceda à página “[Ligação ao webmail]({ovh_www}/mail/){.external}” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
-Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual [Utilizar um endereço de e-mail a partir do Outlook Web Access (OWA)](../utilisation-owa/){.external} (versão em francês).
+Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual [Utilizar um endereço de e-mail a partir do Outlook Web Access (OWA)](https://docs.ovh.com/gb/en/emails/using-owa/){.external} (versão em inglês).
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 
