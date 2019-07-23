@@ -1,5 +1,6 @@
 ---
 title: vRack private network
+slug: vrack
 excerpt: Learn more about OVH vRack which creates a private network dedicated to your Analytics Data Platform
 section: Advanced topics
 order: 2

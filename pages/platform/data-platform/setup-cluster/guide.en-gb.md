@@ -1,5 +1,6 @@
 ---
 title: Create your Data Platform
+slug: setup-platform
 excerpt: Learn how to deploy your first Data Platform, ingest data, make your first Hive queries and Spark scripts.
 section: Getting started
 order: 2
