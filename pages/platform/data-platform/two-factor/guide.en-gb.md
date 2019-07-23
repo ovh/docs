@@ -1,5 +1,6 @@
 ---
 title: 2FA authentication
+slug: two-factor
 excerpt: Learn how to implement a two-factor authentication
 section: Users and Security
 order: 5

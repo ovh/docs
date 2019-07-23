@@ -1,5 +1,6 @@
 ---
 title: Data Platform Identity Manager
+slug: identity-manager
 excerpt: Learn how to use the Data Platform Identity Manager to manage users groups and permissions
 section: Users and Security
 order: 1

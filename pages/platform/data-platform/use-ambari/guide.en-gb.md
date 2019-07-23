@@ -1,5 +1,6 @@
 ---
 title: Use Apache Ambari
+slug: ambari
 excerpt: First steps with Apache Ambari
 section: Getting started
 order: 3

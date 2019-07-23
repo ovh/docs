@@ -1,5 +1,6 @@
 ---
 title: Operate your platform
+slug: operate-your-platform
 excerpt: Learn how to operate to your Data Platform
 section: How-to
 order: 2

@@ -1,5 +1,6 @@
 ---
 title: Delete your Data Platform
+slug: delete-platform
 excerpt: Learn how to delete your Data Platform.
 section: How-to
 order: 7

@@ -1,5 +1,6 @@
 ---
 title: Get your Data Platform status
+slug: get-status
 excerpt: Learn how to retrieve the status of your Data Platform and its nodes.
 section: How-to
 order: 5

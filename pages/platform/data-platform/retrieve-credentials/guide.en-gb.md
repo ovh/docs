@@ -1,5 +1,6 @@
 ---
 title: Retrieve your credentials
+slug: retrieve-credentials
 excerpt: Learn how to retrieve your Data Platform credentials after installation
 section: How-to
 order: 1

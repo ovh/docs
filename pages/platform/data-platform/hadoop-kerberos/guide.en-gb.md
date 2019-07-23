@@ -1,5 +1,6 @@
 ---
 title: Hadoop and Kerberos
+slug: hadoop-kerberos
 excerpt: Learn how to use Hadoop and Kerberos
 section: Users and Security
 order: 4

@@ -1,5 +1,6 @@
 ---
 title: Ingest and process data
+slug: setup-data-pipeline
 excerpt: Learn how to ingest data in your Data Platform, make your first Hive queries and Spark scripts.
 section: Getting started
 order: 4

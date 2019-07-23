@@ -1,5 +1,6 @@
 ---
 title: Connect to your Data Platform using SSH
+slug: ssh-connection
 excerpt: Connect to your platform through your terminal, either to run complex data jobs or to administrate the platform.
 section: How-to
 order: 3

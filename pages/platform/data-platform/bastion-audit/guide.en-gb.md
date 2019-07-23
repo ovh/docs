@@ -1,5 +1,6 @@
 ---
 title: Auditing on the bastion
+slug: bastion-auditing
 excerpt: Auditing on the bastion
 section: Users and Security
 order: 6

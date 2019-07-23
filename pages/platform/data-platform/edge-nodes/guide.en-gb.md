@@ -1,7 +1,9 @@
 ---
 title: About edge nodes
+slug: edge-nodes
 excerpt: Learn more about edge nodes.
 section: Getting started
+order: 5
 ---
 
 ### What is an edge node

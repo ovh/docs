@@ -1,5 +1,6 @@
 ---
 title: Remove a node from your Data Platform
+slug: remove-node
 excerpt: Learn how to scale down your cluster by removing a node from it.
 section: How-to
 order: 6

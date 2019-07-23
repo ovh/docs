@@ -1,5 +1,6 @@
 ---
 title: Working with external hosts
+slug: external-hosts
 excerpt: Enroll external hosts with your Data Platform idM. You will be able to authenticate external hosts against Hadoop services to ingest or push data
 section: Advanced topics
 order: 1

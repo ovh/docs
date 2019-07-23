@@ -1,5 +1,6 @@
 ---
 title: Manage users and groups
+slug: mange-users
 excerpt: Learn how to manage users and groups with the idM
 section: Users and Security
 order: 2

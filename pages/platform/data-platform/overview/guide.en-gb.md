@@ -1,5 +1,6 @@
 ---
 title: Overview
+slug: overview
 excerpt: Overview of OVH Analytics Data Platform
 section: Getting started
 order: 1

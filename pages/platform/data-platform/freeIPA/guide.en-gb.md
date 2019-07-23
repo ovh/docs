@@ -1,5 +1,6 @@
 ---
 title: About FreeIPA
+slug: free-ipa
 excerpt: Learn how to use FreeIPA
 section: Advanced topics
 order: 3
