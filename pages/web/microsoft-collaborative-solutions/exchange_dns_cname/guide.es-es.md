@@ -1,40 +1,41 @@
 ---
 title: 'Crear un registro CNAME para asociar un dominio'
 slug: exchange_20132016_anadir_un_registro_cname
-excerpt: 'Cómo añadir un registro CNAME a un dominio asociado al servicio Exchange'
-section: 'Configuración de Exchange'
+excerpt: 'Cómo y por qué añadir un registro CNAME a un dominio'
+section: 'Primeros pasos con Exchange'
+order: 5
 ---
 
-**Última actualización: 04/04/2018**
+**Última actualización: 26/03/2019**
 
 ## Objetivo
 
-Al asociar un dominio a su servicio Exchange, es posible que deba configurar también un registro CNAME en la zona DNS de dicho dominio. Este registro permite garantizar que el dominio añadido es legítimo.
+Al asociar un dominio a su servicio de correo, es posible que deba configurar un registro CNAME en la zona DNS de dicho dominio. Este registro permite garantizar que el dominio añadido es legítimo.
 
 **Esta guía explica por qué puede ser necesario crear un registro CNAME al asociar un dominio y cómo hacerlo.**
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}.
-- Estar en condiciones de administrar el servicio Exchange desde el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}.
-- Haber añadido al servicio Exchange un dominio que requiera la creación de un registro CNAME.
+- Tener una solución de correo electrónico en OVH.
+- Haber añadido al servicio de correo un dominio que requiera la creación de un registro CNAME.
 - Poder modificar la configuración (la zona DNS) del dominio.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
 
 ## Procedimiento
 
 ### 1. El diagnóstico CNAME de OVH
 
-En determinados casos, al declarar un dominio en su servicio Exchange aparece la etiqueta de diagnóstico **CNAME** (de Canonical Name).
+En determinados casos, al declarar un dominio en su servicio de correo aparece la etiqueta de diagnóstico **CNAME** (de Canonical Name).
 
 Esta etiqueta le permite demostrar que usted es el administrador del dominio que desea declarar.
 
 Puede aparecer por los siguientes motivos:
 
 - El dominio no está registrado en OVH.
-- El dominio no está administrado por el mismo ID de cliente que el servicio Exchange.
+- El dominio no está administrado por el mismo ID de cliente que el servicio de correo.
 - El dominio no utiliza la configuración de OVH (es decir, sus servidores DNS).
 
-![Diagnóstico del dominio asociado](images/cname_exchange_diagnostic.png){.thumbnail}
+![CNAME](images/cname_exchange_diagnostic.png){.thumbnail}
 
 ### 2. Obtener la configuración CNAME de OVH
 
@@ -42,7 +43,7 @@ Abra la pestaña `Dominios asociados`{.action} de su servicio Exchange y haga cl
 
 El contenido que deberá tener el registro CNAME se muestra de la siguiente forma:
 
-![Configuración CNAME de OVH](images/cname_exchange_informations.png){.thumbnail}
+![CNAME](images/cname_exchange_informations.png){.thumbnail}
 
 Existen dos posibilidades:
 
@@ -63,11 +64,11 @@ Se mostrará una tabla con la configuración del dominio en OVH. Cada línea de 
 
 Para añadir un registro CNAME, haga clic en el botón `Añadir un registro`{.action}.
 
-![Añadir un registro a la zona DNS](images/cname_exchange_add_entry_step1.png){.thumbnail}
+![CNAME](images/cname_exchange_add_entry_step1.png){.thumbnail}
 
-Se abrirá una ventana en la que podrá elegir diversos registros DNS. Haga clic en `CNAME`{.action} e introduzca la información obtenida durante el diagnóstico de Exchange.
+Se abrirá una ventana en la que podrá elegir diversos registros DNS. Haga clic en `CNAME`{.action} e introduzca la información obtenida durante el diagnóstico.
 
-![Introducir los parámetros CNAME](images/cname_add_entry_dns_zone.png){.thumbnail}
+![CNAME](images/cname_add_entry_dns_zone.png){.thumbnail}
 
 Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}. Asegúrese de que la información es correcta y haga clic en `Confirmar`{.action}.
 
@@ -76,9 +77,9 @@ Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}. Ase
 > La modificación tarda entre 4 y 24 horas en propagarse y ser efectiva.
 >
 
-Puede comprobar si la configuración del registro CNAME es correcta en la pestaña `Dominios asociados`{.action} de su servicio Exchange. La etiqueta verde indica que el dominio se ha añadido correctamente. Si sigue estando roja, es posible que la propagación todavía no haya finalizado.
+Puede comprobar si la configuración del registro CNAME es correcta en la pestaña `Dominios asociados`{.action} de su servicio de correo. La etiqueta verde indica que el dominio se ha añadido correctamente. Si sigue estando roja, es posible que la propagación todavía no haya finalizado.
 
-![Diagnóstico del dominio asociado](images/cname_exchange_diagnostic_green.png){.thumbnail}
+![CNAME](images/cname_exchange_diagnostic_green.png){.thumbnail}
 
 ## Más información
 
