@@ -31,7 +31,7 @@ Se mostrará una tabla que contiene todos los dominios añadidos al alojamiento.
 
 > [!primary]
 >
-> Si quiere migrar su sitio web evitando una interrupción del servicio, puede ir directamente al paso [3. Publicación del sitio web](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/#3-publicacion-del-sitio-web){.external}.
+> Si quiere migrar su sitio web evitando una interrupción del servicio, puede ir directamente al paso [3. Publicación del sitio web](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/#3-publicacion-del-sitio-web_1){.external}.
 >
 
 ![Multisitio](images/access-multisite-ovh.png){.thumbnail}
@@ -81,7 +81,7 @@ Al añadir un dominio registrado en OVH, podrá elegir entre realizar la configu
 
 Haga clic en `Aceptar`{.action} para añadir el dominio. Esta operación puede tardar un máximo de una hora. No obstante, la modificación de la configuración DNS del dominio tarda entre 4 y 24 horas en propagarse y ser efectiva.
 
-Una vez añadido el dominio, vaya directamente al paso [3. Publicación del sitio web](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/#3-publicacion-del-sitio-web){.external}.
+Una vez añadido el dominio, vaya directamente al paso [3. Publicación del sitio web](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/#3-publicacion-del-sitio-web_1){.external}.
 
 #### 2.2. Añadir un dominio externo
 
