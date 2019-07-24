@@ -1,35 +1,35 @@
 ---
-title: 'Backup einer Instanz von einem Rechenzentrum in ein anderes übertragen'
-slug: instanz-backup-in-anderes-rechenzentrum-uebertragen
-section: 'Über APIs und Befehlszeile'
-excerpt: 'Hier erfahren Sie, wie Sie das Backup einer Instanz transferieren und dabei Zustand und Status der Instanz beibehalten.'
+title: 'Transferir el backup de una instancia entre datacenters'
+slug: transferir-backup-de-instancia-entre-datacenters
+section: 'En línea de comandos'
+excerpt: 'Cómo transferir un backup de un datacenter a otro conservando la configuración y el estado de la instancia'
 ---
 
-**Stand 01.07.2019**
+**Última actualización: 29/03/2019**
 
-## Einleitung
+## Objetivo
 
-Es kann vorkommen, dass Sie Ihre Public Cloud Instanz von einem Rechenzentrum in ein anderes übertragen möchten − sei es, weil Sie ein neues Rechenzentrum bevorzugen oder von den OVH Labs zur OVH Public Cloud wechseln wollen.
+Es posible que necesite transferir una instancia de Public Cloud de un datacenter a otro, bien porque quiera alojar el servicio en un nuevo centro de datos, o bien porque quiera migrar de OVH Labs a la solución Public Cloud.
 
-**In dieser Anleitung erfahren Sie, wie Sie das Backup einer Instanz transferieren und dabei Zustand und Status der Instanz beibehalten.**
+**Esta guía explica cómo transferir el backup de una instancia de un datacenter a otro conservando la configuración y el estado de la instancia.**
 
 
-## Voraussetzungen
+## Requisitos
 
-* Sie haben eine [Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/){.external} in Ihrem Account erstellt.
-* Sie haben Administrator-Zugriff (Root) zu Ihrem Rechenzentrum via SSH.
-* Sie haben die Anleitung „[Vorbereitung der Umgebung für die Verwendung der OpenStack API](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/){.external}“ gelesen (empfohlen).
+* Haber creado una [instancia de Public Cloud](https://www.ovh.es/public-cloud/compute/){.external} desde su cuenta de cliente.
+* Tener acceso de administrador (root) a su datacenter a través de SSH.
+* Haber leído la guía [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/){.external} (recomendado).
 
 > [!primary]
 >
-Die Befehle in dieser Anleitung basieren auf dem OpenStack-CLI, im Gegensatz zu `Nova`\- und `Glance`-APIs.
+Los comandos de esta guía están basados en la CLI de OpenStack, no en las API de Nova o Glance.
 >
 
-## Beschreibung
+## Procedimiento
 
-### Backup erstellen
+### Crear un backup
 
-Stellen Sie zunächst eine SSH-Verbindung zu Ihrem Rechenzentrum her. Führen Sie anschließend den folgenden Befehl aus, um Ihre vorhandenen Instanzen aufzulisten:
+En primer lugar, conéctese a su datacenter por SSH. A continuación, ejecute el siguiente comando para mostrar la lista de las instancias existentes:
 
 ```
 #root@server:~$ openstack server list
@@ -37,72 +37,73 @@ Stellen Sie zunächst eine SSH-Verbindung zu Ihrem Rechenzentrum her. Führen Si
 +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 | ID                                   | Name      | Status | Networks                                         | Image Name   |
 +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
+| aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1  | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
 +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 ```
 
 
-Führen Sie anschließend den nachstehenden Befehl aus um ein Backup Ihrer Instanz zu erstellen:
+Ejecute el siguiente comando para crear un backup de la instancia:
 
 ```
-#root@server:~$ openstack image create --id aa7115b3-83df-4375-b2ee-19339041dcfa snap_server1
+#root@server:~$ openstack image create --id aa7115b3-83df-4375-b2ee-19339041dcfa bkp_server1
 ```
 
-### Backup herunterladen
+### Descargar el backup
 
-Um die verfügbaren Instanzen aufzulisten, führen Sie folgenden Befehl aus:
+Ejecute el siguiente comando para consultar las instancias disponibles:
 
 ```
 #root@server:~$ openstack image list
 +--------------------------------------+-----------------------------------------------+--------+
-| ID | Name | Status |
+| ID                                   | Name                                          | Status |
 +--------------------------------------+-----------------------------------------------+--------+
-| 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_server1 | active |
-| 3ff877dc-1a62-43e7-9655-daff37a0c355 | NVIDIA GPU Cloud (NGC) | active |
-| a14a7c1e-3ac5-4a61-9d36-1abc4ab4d5e8 | Centos 7 | active |
-| f720a16e-543b-42e5-af45-cc188ad2dd34 | Debian 8 - GitLab | active |
-| d282e7aa-332c-4dc7-90a9-d49641fa7a95 | CoreOS Stable | active |
-| 2519f0fb-18cc-4915-9227-7754292b9713 | Ubuntu 16.04 | active |
-| b15789f8-2e2f-4f6c-935d-817567319627 | Windows Server 2012 R2 Standard - UEFI | active |
-| ed2f327f-dbae-4f9e-9754-c677a1b76fa3 | Ubuntu 14.04 | active |
-| 9c9b3772-5320-414a-90bf-60307ff60436 | Debian 8 - Docker | active |
+| 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | bkp_server1                                   | active |
+| 3ff877dc-1a62-43e7-9655-daff37a0c355 | NVIDIA GPU Cloud (NGC)                        | active |
+| a14a7c1e-3ac5-4a61-9d36-1abc4ab4d5e8 | Centos 7                                      | active |
+| f720a16e-543b-42e5-af45-cc188ad2dd34 | Debian 8 - GitLab                             | active |
+| d282e7aa-332c-4dc7-90a9-d49641fa7a95 | CoreOS Stable                                 | active |
+| 2519f0fb-18cc-4915-9227-7754292b9713 | Ubuntu 16.04                                  | active |
+| b15789f8-2e2f-4f6c-935d-817567319627 | Windows Server 2012 R2 Standard - UEFI        | active |
+| ed2f327f-dbae-4f9e-9754-c677a1b76fa3 | Ubuntu 14.04                                  | active |
+| 9c9b3772-5320-414a-90bf-60307ff60436 | Debian 8 - Docker                             | active |
++--------------------------------------+-----------------------------------------------+--------+
 ```
 
-Ermitteln Sie nun mithilfe der Liste das erstellte Backup:
+Identifique el backup en la lista:
 
 ```
-| 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_server1 | qcow2 | bare | 1598029824 | active |
+| 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | bkp_server1 | qcow2 | bare | 1598029824 | active |
 ```
 
-Führen Sie anschließend folgenden Befehl aus, um das Backup herunterzuladen:
+Por último, ejecute el siguiente comando para descargar el backup:
 
 ```
-#root@server:~$ openstack image save --file snap_server1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
+#root@server:~$ openstack image save --file bkp_server1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
 ```
 
-### Backup in ein anderes Rechenzentrum übertragen
+### Transferir el backup a otro datacenter
 
-Um den Transferprozess zu starten, müssen zuerst neue Umgebungsvariablen geladen werden.
+Para iniciar la transferencia, deberá cargar en primer lugar nuevas variables de entorno.
 
 > [!warning]
 >
-> Wenn Sie Ihr Backup in ein Rechenzentrum innerhalb desselben Projekts übertragen, muss nur die Variable OS_REGION_NAME angepasst werden.
+> Si desea transferir el backup a un datacenter perteneciente al mismo proyecto, solo tiene que modificar la variable OS_REGION_NAME.
 >
 
 ```
 #root@server:~$ export OS_REGION_NAME=SBG1
 ```
 
-Wenn Sie Ihr Backup in ein anderes Projekt oder in einen anderen Account übertragen, müssen die zu diesem Account gehörigen Umgebungsvariablen über folgenden Befehl neu geladen werden:
+Para transferir el backup a otro proyecto o cuenta, deberá volver a cargar las variables de entorno asociadas a esta última cuenta utilizando el siguiente comando:
 
 ```
 #root@server:~$ source openrc.sh
 ```
 
-Um das Backup in das neue Rechenzentrum zu transferieren, verwenden Sie folgenden Befehl:
+Ejecute el siguiente comando para transferir el backup al nuevo datacenter:
 
 ```
-#root@server:~$ openstack image create --disk-format qcow2 --container-format bare --file snap_server1.qcow snap_server1
+#root@server:~$ openstack image create --disk-format qcow2 --container-format bare --file bkp_server1.qcow bkp_server1
 
 +------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field            | Value                                                                                                                                                                                     |
@@ -115,7 +116,7 @@ Um das Backup in das neue Rechenzentrum zu transferieren, verwenden Sie folgende
 | id               | 0a3f5901-2314-438a-a7af-ae984dcbce5c                                                                                                                                                    |
 | min_disk         | 0                                                                                                                                                                                         |
 | min_ram          | 0                                                                                                                                                                                         |
-| name             | snap_server1                                                                                                                                                                             |
+| name             | bkp_server1                                                                                                                                                                             |
 | owner            | 4e03fd164d504aa3aa03938f0bf4ed90                                                                                                                                                          |
 | properties       | direct_url='swift+config://ref1/glance/1bf21cf3-8d39-40ae-b088-5549c31b7905', locations='[{u'url': u'swift+config://ref1/glance/1bf21cf3-8d39-40ae-b088-5549c31b7905', u'metadata': {}}]' |
 | protected        | False                                                                                                                                                                                     |
@@ -129,16 +130,16 @@ Um das Backup in das neue Rechenzentrum zu transferieren, verwenden Sie folgende
 +------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-### Instanz mithilfe Ihres Backups erstellen
+### Crear una instancia a partir del backup
 
-Verwenden Sie die Backup-ID als Image mit folgendem Befehl:
+Para crear la instancia a partir del backup, ejecute el siguiente comando utilizando el ID del backup como imagen:
 
 ```
-#root@server:~$ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
+#root@server:~$ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_bkp
 ```
 
-## Weiterführende Informationen
+## Más información
 
-[Transfer a volume backup from one datacentre to another](https://docs.ovh.com/gb/en/public-cloud/transfer_volume_backup_from_one_datacentre_to_another/){.external} (Englisch)
+[Transferir el backup de un volumen entre datacenters](https://docs.ovh.com/gb/en/public-cloud/transfer_volume_backup_from_one_datacentre_to_another/){.external} (en inglés)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
