@@ -5,7 +5,7 @@ slug: exposed-apis-software-versions-reserved-resources
 section: Technical resources
 ---
 
-**Last updated 3<sup>rd</sup> July, 2019.**
+**Last updated 29<sup>th</sup> July, 2019.**
 
 We list here some details on the APIs we expose, the software versions we use and the resources we reserve on each node.
 
