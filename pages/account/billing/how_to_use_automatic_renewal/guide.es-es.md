@@ -125,17 +125,17 @@ Para eliminar todas las formas de pago, utilice la API como se indica a continua
 
 - Obtenga el ID de la forma de pago:
 
-  > [!api]
-  >
-  > @api {GET} /me/payment/method
-  >
+> [!api]
+>
+> @api {GET} /me/payment/method
+>
 
 - A continuación, elimine la forma de pago utilizando el ID obtenido en el paso anterior:
 
-  > [!api]
-  >
-  > @api {DELETE} /me/payment/method/{paymentMethodId}
-  >
+> [!api]
+>
+> @api {DELETE} /me/payment/method/{paymentMethodId}
+>
 
 ## Más información
 

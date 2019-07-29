@@ -30,7 +30,7 @@ Wenn Sie über aktive OVH Dienste verfügen, können Sie deren Verlängerung üb
 
 Es gibt verschiedene Möglichkeiten, um die Verlängerung Ihrer Dienste zu verwalten, und in bestimmten Fällen können Sie aus verschiedenen Methoden wählen. Folgen Sie dieser Anleitung nun entsprechend der von Ihnen gewünschten Aktionen: 
 
-- [Verlängerungsstatus Ihrer Dienste anzeigen](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#verlangerungsstatus-anzeigen){.external}: Sie können überprüfen, ob Ihre Dienstleistungen automatisch verlängert werden, und das Verlängerungs- sowie Ablaufdatum der Dienste einsehen.
+- [Verlängerungsstatus Ihrer Dienste anzeigen](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#verlangerungsstatus-ihrer-dienste-anzeigen){.external}: Sie können überprüfen, ob Ihre Dienstleistungen automatisch verlängert werden, und das Verlängerungs- sowie Ablaufdatum der Dienste einsehen.
 
 - [Verlängerung Ihrer Dienste verwalten](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#verlangerung-verwalten){.external}: Sie können die automatische Verlängerung aktivieren oder deaktivieren sowie das Zahlungsintervall für einen Dienst ändern oder die Verlängerungen vor dem Ablaufdatum bezahlen.
 
@@ -107,6 +107,7 @@ Loggen Sie sich in Ihr [Kundencenter](https://www.ovh.com/auth/?action=gotomanag
 Es werden Ihnen nun alle Zahlungsarten für Ihre Lösungen in einer Tabelle angezeigt. Sie können die vorhandenen Zahlungsarten verwalten sowie weitere hinzufügen.
 
 Für jede Zahlungsart werden folgende Informationen angezeigt:
+
 - Zahlungsart: Gibt den Typ der Zahlungsart an.
 - Beschreibung: Die Beschreibung hilft Ihnen, die Zahlungsart von anderen zu unterscheiden.
 - Standardzahlungsmittel: Gibt an, ob die aktuelle Zahlungsart als Standardzahlungsmittel eingestellt ist.
