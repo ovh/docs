@@ -17,7 +17,7 @@ Las direcciones de correo de la solución MX Plan permiten enviar y recibir mens
 ## Requisitos
 
 - Tener una solución MX Plan (incluida en un [plan de hosting de OVH]({ovh_www}/hosting/){.external}, en un [alojamiento gratuito Start 10M]({ovh_www}/dominios/oferta_hosting_start10m.xml){.external} o contratada por separado).
-- En función del método que utilice, estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} en la sección `Web`{.action}, o estar conectado a la dirección de correo desde el [webmail](https://www.ovh.es/mail/){.external} Outlook Web App (OWA).
+- En función del método que utilice, estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} en la sección `Web`{.action}, o estar conectado a la dirección de correo desde el [webmail](https://www.ovh.es/mail/){.external} Outlook en la Web.
 
 > [!primary]
 >
@@ -41,12 +41,12 @@ Si dispone de la nueva versión de la solución MX Plan, la pestaña `Informaci�
 
 ![Correo electrónico](images/mxplan-password-new-step1.png){.thumbnail}
 
-Existen dos formas de cambiar la contraseña de una dirección de correo: desde el webmail OWA o desde el área de cliente. Continúe leyendo esta guía en el apartado correspondiente al método que desee utilizar.
+Existen dos formas de cambiar la contraseña de una dirección de correo: desde el webmail Outlook en la Web o desde el área de cliente. Continúe leyendo esta guía en el apartado correspondiente al método que desee utilizar.
 
-- [Cambiar la contraseña desde el webmail OWA](./#cambiar-la-contrasena-desde-el-webmail-owa): Para seguir este procedimiento necesitará la contraseña actual. 
+- [Cambiar la contraseña desde el webmail Outlook en la Web](./#cambiar-la-contrasena-desde-el-webmail-outlook-en-la-web): Para seguir este procedimiento necesitará la contraseña actual. 
 - [Cambiar la contraseña desde el área de cliente de OVH](./#cambiar-la-contrasena-desde-el-area-de-cliente-de-ovh): En este caso, no necesitará la contraseña actual.
 
-#### Cambiar la contraseña desde el webmail OWA
+#### Cambiar la contraseña desde el webmail Outlook en la Web
 
 Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/){.external} e introduzca su dirección de correo electrónico completa y la contraseña actual. Haga clic en el botón `Conexión`{.action}. 
 
