@@ -36,7 +36,7 @@ We have tested our OVH Managed Kubernetes service with up to 100 nodes and 100 p
 
 In general. it's better to have several mid-size Kubernetes clusters than one monster-size one.
 
-Delivering a fully managed service, including OS and other component updates, you will neither need nor be ble to SSH as root into your nodes.
+Delivering a fully managed service, including OS and other component updates, you will neither need nor be able to SSH as root into your nodes.
 
 ## LoadBalancer
 
