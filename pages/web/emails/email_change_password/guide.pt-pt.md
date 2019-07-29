@@ -33,11 +33,11 @@ Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.e
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
 |![email](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Consulte o tipo de oferta na secção “Subscrição”.|![email](images/mxplan-password-new-step1.png){.thumbnail}<br>Consulte a Referência do servidor na secção “Resumo”.|
-|Continuar a ler na secção “[Versão antiga da oferta MX Plan](./#versao-antiga-da-oferta-mx-plan_2)”.|Continuar a ler na secção “[Nova versão da oferta MX Plan](./#nova-versao-da-oferta-mx-plan)”.|
+|Continuar a ler na secção “[Versão antiga da oferta MX Plan](./#versao-antiga-da-oferta-mx-plan)”.|Continuar a ler na secção “[Nova versão da oferta MX Plan](./#nova-versao-da-oferta-mx-plan)”.|
 
 ### Nova versão da oferta MX Plan
 
-Se possuir a nova versão da oferta MX Plan, a secção “Informações gerais” deverá apresentar as mesmas informações que a imagem abaixo. Caso contrário, [volte para a secção anterior](./#en-pratique) e certifique-se de que está a consultar a versão correta.  
+Se possuir a nova versão da oferta MX Plan, a secção “Informações gerais” deverá apresentar as mesmas informações que a imagem abaixo. Caso contrário, [volte para a secção anterior](./#instrucoes) e certifique-se de que está a consultar a versão correta.  
 
 ![email](images/mxplan-password-new-step1.png){.thumbnail}
 

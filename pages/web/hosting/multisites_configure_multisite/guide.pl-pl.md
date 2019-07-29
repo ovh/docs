@@ -134,6 +134,7 @@ Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a nast
 > Zalecamy nie instalować na jednym hostingu zbyt wielu stron. Im większa liczba zainstalowanych stron, tym większe zużycie przypisanych do danego hostingu zasobów. Na [stronie z ofertą](https://www.ovh.pl/hosting/){.external} usług hostingowych znajdziesz informację o liczbie stron WWW, które możesz zainstalować.
 >
 
+
 ## Sprawdź również
 
 [Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}

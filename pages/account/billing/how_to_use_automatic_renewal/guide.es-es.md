@@ -6,7 +6,7 @@ section: 'Primeros pasos'
 order: 1
 ---
 
-**Última actualización: 11/01/2019**
+**Última actualización: 15/05/2019**
 
 ## Objetivo
 
@@ -115,11 +115,27 @@ Para cada forma de pago, podrá consultar la siguiente información:
 
 ![Mis formas de pago](images/manage-automatic-renewal-step9.png){.thumbnail}
 
-El botón con forma de papelera situado en la columna **Borrar la forma de pago** permite borrar una forma de pago, siempre que haya otra configurada.
-
 Para añadir una nueva forma de pago, haga clic en el botón `Añadir una nueva forma de pago`{.action} y seleccione la opción deseada. Siga los pasos que se indican hasta finalizar la operación.
 
 ![Añadir una nueva forma de pago](images/manage-automatic-renewal-step10.png){.thumbnail}
+
+El botón con forma de papelera situado en la columna **Borrar la forma de pago** permite borrar una forma de pago, siempre que haya otra configurada.
+
+Para eliminar todas las formas de pago, utilice la API como se indica a continuación:
+
+- Obtenga el ID de la forma de pago:
+
+> [!api]
+>
+> @api {GET} /me/payment/method
+>
+
+- A continuación, elimine la forma de pago utilizando el ID obtenido en el paso anterior:
+
+> [!api]
+>
+> @api {DELETE} /me/payment/method/{paymentMethodId}
+>
 
 ## Más información
 

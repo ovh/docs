@@ -1,168 +1,125 @@
 ---
-title: Imposta il rinnovo automatico dei tuoi servizi OVH
+title: 'Gestire il rinnovo dei servizi OVH'
 slug: imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh
+excerpt: 'Come visualizzare e amministrare il rinnovo delle tue soluzioni dallo Spazio Cliente OVH'
+section: Fatturazione
+order: 1
 legacy_guide_number: g1271
 ---
 
+**Ultimo aggiornamento: 16/07/2019**
 
-## Come si effettua la scelta?
-Per impostare una modalità di pagamento accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/), clicca su Fatturazione, I tuoi metodi di pagamento, Aggiungi un metodo di pagamento.
+## Obiettivo
 
+La gestione dei servizi OVH, incluse le opzioni di rinnovo, è disponibile direttamente nell’area utente dedicata. 
 
-- Attenzione: se non ci sono metodi di pagamento attivi e selezioni uno dei tuoi servizi in rinnovo automatico, addebitiamo la cifra sul tuo conto OVH che deve essere regolarizzato per evitare interruzioni di servizio.
+**Questa guida ti mostra come modificare i parametri relativi al rinnovo automatico dei tuoi servizi dallo Spazio Cliente OVH.**
 
+> [!primary]
+>
+> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. In caso di difficoltà o dubbi, consulta i contratti disponibili nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `I tuoi servizi`{.action} > `I tuoi contratti`{.action}.
+>
 
-Per attivare l'addebito automatico, accedi al menu I tuoi servizi.
+## Prerequisiti
 
-![](images/3734.png){.thumbnail}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Disporre di servizi OVH attivi
 
+## Procedura
 
-## Registrazione di una carta bancaria
-Seleziona l'opzione Carta bancaria e clicca su Aggiungi.
+Per gestire le modalità di rinnovo attive sui servizi OVH è possibile scegliere tra diverse azioni e, in alcuni casi, diversi metodi. Prosegui nella lettura di questa guida in base all’operazione che vuoi effettuare: 
 
+- [visualizzare lo stato del rinnovo dei servizi](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#visualizzare-lo-stato-del-rinnovo-dei-servizi){.external}, per verificare se la funzione di rinnovo automatico è attiva e conoscere la data relativa al prossimo rinnovo o alla scadenza dei servizi.
 
-- Attenzione: per visualizzare il buono d'ordine è necessario attivare i popup.
+- [gestire il rinnovo dei servizi](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#gestire-il-rinnovo-dei-servizi){.external}, per attivare o disattivare la funzione di rinnovo automatico, modificare la frequenza di pagamento di un servizio o effettuare il rinnovo prima della data di scadenza.
 
+- [gestire i metodi di pagamento](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#gestire-i-metodi-di-pagamento_1){.external}, per assicurarsi che una modalità di pagamento risulti attivata correttamente per i futuri rinnovi e, se necessario, aggiungere o rimuovere altre modalità.
 
+### Visualizzare lo stato del rinnovo dei servizi
 
-![](images/3735.png){.thumbnail}
-Per verificare la validità della tua carta effettuiamo un prelievo di 1€ +IVA, che riaccreditiamo immediatamente sul tuo conto OVH e scaliamo dalla tua prossima fattura.
-La tua carta viene attivata immediatamente.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome utente in alto a destra e seleziona `I tuoi servizi`{.action}.
 
-![](images/3736.png){.thumbnail}
+![Gestione rinnovo automatico](images/manage-automatic-renewal-step1.png){.thumbnail}
 
+Visualizzi una tabella con tutte le soluzioni OVH attive e le relative informazioni: data di rinnovo o scadenza e frequenza impostata. Questi dati sono disponibili nelle colonne “Data di rinnovo” e “Frequenza di pagamento”.
 
-## Registrazione di un conto bancario (opzione non disponibile in Italia)
-Inserisci le informazioni richieste e clicca su Aggiungi per continuare.
+Utilizza i filtri per ordinare i tuoi servizi in base a diversi criteri.
 
-![](images/3738.png){.thumbnail}
-Si apre un documento in cui è descritta la procedura per confermare la modalità di pagamento registrata.
-Il tuo conto verrà validato entro 48 ore dalla ricezione della tua autorizzazione all'addebito sul tuo conto bancario.
+![Gestione rinnovo automatico](images/manage-automatic-renewal-step2.png){.thumbnail}
 
+### Gestire il rinnovo dei servizi
 
-- Attenzione: per visualizzare il buono d'ordine è necessario attivare i popup.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome utente in alto a destra e seleziona `I tuoi servizi`{.action}.
 
+![Gestione rinnovo automatico](images/manage-automatic-renewal-step1.png){.thumbnail}
 
+Visualizzi una tabella con tutti le soluzioni OVH attive per cui, se l’operazione è consentita, puoi scegliere di:
 
-![](images/1077.png){.thumbnail}
+|Azione|Descrizione|
+|---|---|
+|Modificare la frequenza di pagamento|Consente di impostare un’altra periodicità per l’addebito di pagamento del servizio. Su alcune soluzioni potrebbe non essere possibile apportare questo tipo di modifica o alcune frequenze potrebbero non essere disponibili.|
+|Pagare il servizio|Consente di saldare l’importo relativo a un servizio prima della data in cui è previsto il rinnovo automatico.|
+|Attivare/disattivare il rinnovo automatico|Consente di attivare o disattivare il rinnovo automatico di un servizio.|
 
+![Gestione rinnovo automatico](images/manage-automatic-renewal-step3.png){.thumbnail}
 
-## Registrazione di un conto Paypal
-Seleziona l'opzione Paypal e clicca su Aggiungi
+#### Modificare la frequenza di pagamento
 
+Questa azione consiste nell’impostare una nuova periodicità di pagamento per il rinnovo automatico di un servizio. Le frequenze disponibili sono quattro: mensile, trimestrale, semestrale e annuale. Su alcune soluzioni potrebbe non essere possibile apportare questo tipo di modifica o alcune frequenze potrebbero non essere disponibili.
 
-- Attenzione: per visualizzare il buono d'ordine è necessario attivare i popup.
+Per effettuare l’operazione clicca sui tre puntini in corrispondenza del servizio interessato e seleziona `Modifica la frequenza di pagamento`{.action}.
 
+![Gestione rinnovo automatico](images/manage-automatic-renewal-step4.png){.thumbnail} 
 
+Nella nuova finestra, seleziona il parametro da impostare nel menu a tendina, clicca su `Seguente`{.action} e poi su `Conferma`{.action}. La nuova frequenza verrà applicata al prossimo rinnovo automatico del servizio.
 
-![](images/3738.png){.thumbnail}
-Inserisci i tuoi dati nella finestra che si apre.
+![Gestione rinnovo automatico](images/manage-automatic-renewal-step5.png){.thumbnail} 
 
-![](images/3739.png){.thumbnail}
+#### Pagare il servizio
 
+Questa azione permette di pagare un servizio prima della data in cui è previsto il suo rinnovo automatico e potrebbe non essere disponibile per alcuni servizi OVH.
 
-## Stato del rinnovo dei tuoi servizi
-Per selezionare i servizi su cui impostare il rinnovo automatico, accedi alla sezione I tuoi servizi.
+Per effettuare l’operazione clicca sui tre puntini in corrispondenza del servizio interessato e seleziona `Paga il servizio`{.action}. Per eseguire l’azione su più servizi, selezionali spuntando la casella corrispondente a sinistra e clicca sul pulsante `Paga il servizio`{.action} nella parte inferiore della tabella.
 
-![](images/3740.png){.thumbnail}
-Visualizzi una tabella con queste informazioni:
+![Gestione rinnovo automatico](images/manage-automatic-renewal-step6.png){.thumbnail} 
 
+A questo punto sarai reindirizzato all’interfaccia per il rinnovo, disponibile anche al link <https://www.ovh.com/it/cgi-bin/order/renew.cgi>. Segui gli step fino al completamento dell’operazione. 
 
-- Giorno del rinnovo automatico: scegli il giorno del mese in cui OVH effettuerà l'addebito sul metodo di pagamento impostato.
+#### Attivare o disattivare il rinnovo automatico
 
-- Identificativo: in questa colonna visualizzi il nome del tuo servizio.
+Questa azione permette di attivare o disattivare il rinnovo automatico di un servizio.
 
-- Rinnovo: in questa colonna visualizzi il tipo di rinnovo attivo sul tuo servizio.
+Per effettuare l'operazione clicca sui tre puntini in corrispondenza del servizio interessato e, in base all’azione scelta, seleziona `Attiva il pagamento automatico`{.action} oppure `Disattiva il pagamento automatico`{.action}, leggi le informazioni mostrate e infine conferma.
 
-- Tutti i servizi (1): questa opzione ti permette di filtrare la tabella per tipo di servizio.
+Ti ricordiamo che la disattivazione della funzionalità di rinnovo automatico non implica anche la disdetta del servizio, che resterà attivo fino alla data di scadenza. Per disattivare definitivamente un servizio alla data di scadenza, consulta il paragrafo “Gestisci i tuoi servizi dallo Spazio Cliente OVH” di [questa guida](https://docs.ovh.com/it/billing/gestire-servizi-ovh/#disdire-un-servizio-alla-data-di-scadenza){.external}.
 
-- Data (2): questa opzione ti permette di impostare i filtri per visualizzare solo i servizi "in scadenza tra una settimana", "in scadenza tra un mese" o "scaduti".
+![Gestione rinnovo automatico](images/manage-automatic-renewal-step7.png){.thumbnail} 
 
-- Rinnovo (3): questa opzione ti permette di impostare i filtri per visualizzare solo i servizi con "rinnovo automatico" (annuale e mensile) e "rinnovo manuale".
+### Gestire i metodi di pagamento
 
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome utente in alto a destra e seleziona `I tuoi metodi di pagamento`{.action}.
 
+![Gestione rinnovo automatico](images/manage-automatic-renewal-step8.png){.thumbnail}
 
-![](images/3741.png){.thumbnail}
-Clicca su "Recedere" per disattivare il rinnovo automatico. In questo modo, il tuo servizio viene eliminato alla data di scadenza.
+Visualizzi una tabella con tutti i metodi di pagamento OVH: da questa pagina è possibile gestire le modalità già inserite o aggiungerne di nuove.
 
+Per ogni metodo di pagamento sono indicati:
 
-## Scelta del rinnovo automatico
-Per modificare il tipo di rinnovo dei tuoi servizi, clicca sull'icona a forma di matita nella colonna "Rinnovo".
+- la tipologia (in base alla modalità aggiunta)
+- una descrizione, per permetterti un’identificazione più immediata tra gli altri metodi di pagamento accettati
+- l’indicazione se è definito o meno come modalità predefinita
+- lo stato (che può variare in base al tipo di modalità scelto e al suo stato di attivazione)
 
+![Gestione rinnovo automatico](images/manage-automatic-renewal-step9.png){.thumbnail}
 
-- Rinnovo: scegli l'opzione "Automatico" per impostare il rinnovo automatico del tuo servizio.
+Per aggiungere un nuovo metodo di pagamento, clicca su `Aggiungi un metodo di pagamento`{.action} e seleziona la tipologia che intendi utilizzare. Segui gli step fino al completamento dell’operazione e conferma.
 
-- Frequenza: scegli la frequenza del prelievo in base al tipo di servizio.
+![Gestione rinnovo automatico](images/manage-automatic-renewal-step10.png){.thumbnail}
 
-Se scegli "2 mesi" come frequenza, ogni due mesi effettueremo un prelievo corrispondente al prezzo bimestrale del tuo servizio.
+Per eliminare un metodo di pagamento tramite lo Spazio Cliente OVH, è necessario disporre almeno di un altro metodo di pagamento valido.
 
+## Per saperne di più
 
-![](images/3742.png){.thumbnail}
+[Gestire i servizi OVH](https://docs.ovh.com/it/billing/gestire-servizi-ovh/){.external}
 
-
-## Attivazione del rinnovo automatico su più servizi
-Per modificare il tipo di rinnovo su più servizi, selezionali nella colonna di sinistra e clicca su Modifica i rinnovi.
-
-![](images/3743.png){.thumbnail}
-
-
-## Come funziona?
-È il 2 febbraio 2014 e vuoi impostare il rinnovo automatico il 12, per un anno, per ogni servizio.
-
-![](images/1564.png){.thumbnail}
-Attenzione: l'ordine di allineamento non viene realizzato il 2 febbraio 2014 ma il 12, la data che hai scelto!
-
-Quando attivi il rinnovo automatico dei tuoi servizi, il primo ordine di allineamento è obbligatoriamente di un mese, ma puoi modificare la durata dei tuoi rinnovi in un secondo momento.
-Gli allineamenti verranno effettuati solo per i servizi di OVH (ad esempio hosting, SQL Privato, opzioni, ecc...).
-
-/!\ I domini devono essere rinnovati per almeno 1 anno, quindi 'ordine di allineamento non può essere applicato. Ti consigliamo di scegliere con cura la data del rinnovo generale.
-
-Importante:
-Ricordati che, a prescindere dal periodo di rinnovo che hai scelto, il nostro sistema verificherà i prodotti in scadenza nel mese in corso e nel successivo, per effettuarne il rinnovo.
-
-Nel nostro caso, il 12 febbraio 2014 verrà emesso un ordine che contiene gli
-allineamenti del: 
-. Servizio 3: per 1 mese + 1 giorno (dall'11 febbraio al 12 marzo 2014) 
-. Servizio 5: per 27 giorni (dal 13 febbraio al 12 marzo 2014)
-inserendo come rispettive date di scadenza, il 12 marzo 2014.
-
-Il 12 marzo 2014, i Servizi 3 e 5 saranno rinnovati per 1 anno (periodo scelto).
-
-Attenzione: ilServizio 3 che scade l'11 febbraio 2014, verrà sospeso fino al 12 febbraio 2014!
-
-Il Servizio 2, in scadenza il 12 febbraio 2014, verrà rinnovato automaticamente per 1 anno (durata scelta).
-
-Relativamente al Servizio 4, che scade il 15 febbraio 2014, il sistema individua la scadenza fra il 12 febbraio 2014 e il 12 marzo 2014. Verrà quindi rinnovato per 1 anno e i giorni residui saranno accreditati al termine del Servizio.
-
-Il 12 febbraio 2014 il tuo Servizio 4 sarà rinnovato per 1 anno in più e la sua nuova data di scadenza sarà il 15 febbraio 2015.
-
-Il Servizio 1 non sarà disponibile dal 10 al 12 febbraio 2014 ma, il 12 febbraio 2014 sarà rinnovato dal sistema per 1 anno (durata scelta).
-
-In sintesi, l'ordine del 12 febbraio 2014 conterrà:
-
-- gli allineamenti di
-
-
-. Servizio 3: per 1 mese + 1 giorno (dall'11 febbraio al 12 marzo 2014)
-. Servizio 5: per 27 giorni (dal 13 febbraio al 12 marzo 2014)
-
-
-- il rinnovo di
-
-. Servizio 1: per 1 anno (dal 10 febbraio 2014 al 10 febbraio 2015)
-. Servizio 2: per 1 anno (dal 12 febbraio 2014 al 12 febbraio 2015)
-. Servizio 4: per 1 anno (dal 15 febbraio 2014 al 15 febbraio 2015)
-
-L'ordine del 12 marzo 2014 conterrà il rinnovo del:
-
-. Servizio 3: per 1 anno (dal 12 marzo 2014 al 12 marzo 2015)
-. Servizio 5: per 1 anno (dal 12 marzo 2014 al 12 marzo 2015)
-
-Attenzione: un rinnovo automatico richiesto il 29, 30 o 31 viene eseguito automaticamente il primo giorno del mese successivo, in base al numero di giorni del mese in corso (per esempio, febbraio).
-
-
-## Ciclo di vita di un dominio
-Vedi l'immagine:
-
-![](images/2554.png){.thumbnail}
-
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.

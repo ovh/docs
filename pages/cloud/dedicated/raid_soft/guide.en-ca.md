@@ -5,7 +5,7 @@ excerpt: 'This guide will help you configure your server’s RAID array in the e
 section: 'Server Management'
 ---
 
-**Last updated 2018/10/16**
+**Last updated 18th June 2018**
 
 ## Objective
 
@@ -17,7 +17,7 @@ The default RAID level for OVH server installations is RAID 1, which doubles the
 
 ## Requirements
 
-* a [dedicated server](https://www.ovh.com/ca/en/dedicated-servers/){.external} with a software RAID configuration
+* a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} with a software RAID configuration
 * administrative (root) access to the server via SSH
 
 ## Instructions
@@ -37,7 +37,7 @@ md1 : active raid1 sdc1[2] sdb1[1] sda1[0]
 unused devices: <none>
 ```
 
-This command shows us that we have two RAID arrays currently set up, with md2 being the largest partition. The partition consists of all three disks, which are known as sda2, sdb2 and sdc2. The [UUU] means that all the disks are working normally. An F would indicate a failed disk.
+This command shows us that we have two RAID arrays currently set up, with md2 being the largest partition. The partition consists of all three disks, which are known as sda2, sdb2 and sdc2. The [UUU] means that all the disks are working normally. A _ would indicate a failed disk.
 
 Although this command returns our RAID volumes, it doesn't tell us the size of the partitions themselves. We can find this information with the following command:
 
@@ -170,7 +170,7 @@ cat /proc/mdstat
 Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty] 
 
 md2 : active raid1 sda2[0] sdb2[1] sdc2[2]
-      96211904 blocks [3/3] [UUU]
+      96211904 blocks [3/2] [_UU]
       
 md1 : active raid1 sdc1[2] sdb1[1] sda1[0]
       20478912 blocks [3/3] [UUU]
@@ -267,5 +267,5 @@ mount /dev/md2 /home
 
 * [Hot Swap – Hardware RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external}
 * [Hot Swap – Software RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/){.external}
-* [Hardware RAID](https://docs.ovh.com/ca/en/dedicated/raid-hard/){.external}
+* [Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
 * Join our community of users on <https://community.ovh.com/en/>.

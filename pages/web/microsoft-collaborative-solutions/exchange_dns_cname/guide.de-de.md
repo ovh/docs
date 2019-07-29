@@ -1,30 +1,31 @@
 ---
-title: CNAME-Eintrag zu einer assoziierten Domain hinzufügen
-excerpt: Hier erfahren Sie, wozu ein CNAME-Eintrag notwendig ist und wie Sie diesen bei OVH hinzufügen
+title: 'CNAME-Eintrag zu einer assoziierten Domain hinzufügen'
+excerpt: 'Hier erfahren Sie, wozu ein CNAME-Eintrag notwendig ist und wie Sie diesen bei OVH hinzufügen'
 slug: exchange_20132016_einen_cname_eintrag_hinzufugen
-section: Konfiguration des Exchange Angebots
+section: 'Erste Schritte mit Exchange'
+order: 5
 ---
 
-**Stand 22.03.2018**
+**Stand 16.07.2019**
 
 ## Einleitung
 
-Wenn Sie eine Domain zu Ihrem Exchange Dienst hinzufügen, werden Sie gegebenenfalls dazu aufgefordert, den CNAME-Eintrag in Ihrer DNS-Zone zu konfigurieren. Mit dieser Konfiguration wird sichergestellt, dass Sie auch tatsächlich die Rechte haben, diese Domain hinzuzufügen.
+Wenn Sie eine Domain zu Ihrem E-Mail-Dienst hinzufügen, werden Sie gegebenenfalls dazu aufgefordert, den CNAME-Eintrag in Ihrer DNS-Zone zu konfigurieren. Mit dieser Konfiguration wird sichergestellt, dass Sie auch tatsächlich die Rechte haben, diese Domain hinzuzufügen.
 
 **In dieser Anleitung erfahren Sie, wozu ein CNAME-Eintrag notwendig ist und wie Sie ihn bei OVH hinzufügen.**
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} eingeloggt.
-- Sie haben die Administrator-Rechte für den Exchange Dienst in Ihrem [Kundencenter](https://ovh.com/auth/?action=gotomanager){.external}.
-- Sie haben eine Domain zu Ihrem Exchange Dienst hinzugefügt und wurden dazu aufgefordert, einen CNAME-Eintrag hinzuzufügen.
+- Sie verfügen über eine OVH E-Mail-Lösung.
+- Sie haben eine Domain zu Ihrem E-Mail-Dienst hinzugefügt und wurden dazu aufgefordert, einen CNAME-Eintrag hinzuzufügen.
 - Sie können die Konfiguration Ihrer Domain (ihre DNS-Zone) bearbeiten.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web`{.action}.
 
 ## Beschreibung
 
 ### Schritt 1: Die OVH CNAME-Diagnose verstehen
 
-Das **CNAME** (Canonical Name) Diagnose-Kästchen erscheint in manchen Fällen, wenn Sie eine Domain mit Ihrem Exchange Dienst verbinden.
+Das **CNAME** (Canonical Name) Diagnose-Kästchen erscheint in manchen Fällen, wenn Sie eine Domain mit Ihrem E-Mail-Dienst verbinden.
 
 Der CNAME-Eintrag dient als Beleg, dass Sie auch tatsächlich der Administrator der betreffenden Domain sind.
 
@@ -34,7 +35,7 @@ Diese Diagnose kann in den folgenden Fällen angezeigt werden:
 - Die angegebene Domain wird nicht über Ihre Kundenkennung verwaltet.
 - Die angegebene Domain verwendet nicht die OVH Konfiguration (die OVH DNS-Server).
 
-![Exchange](images/cname_exchange_diagnostic.png){.thumbnail}
+![cname domain e-mail](images/cname_exchange_diagnostic.png){.thumbnail}
 
 ### Schritt 2: Die OVH CNAME Konfiguration aufrufen
 
@@ -42,7 +43,7 @@ Gehen Sie in den Tab `Assoziierte Domains`{.action} und klicken Sie auf das rote
 
 Der entsprechende CNAME-Eintrag wird über der Grafik angezeigt.
 
-![Exchange](images/cname_exchange_informations.png){.thumbnail}
+![cname domain e-mail](images/cname_exchange_informations.png){.thumbnail}
 
 An dieser Stelle sind zwei weitere Vorgehensweisen möglich:
 
@@ -63,11 +64,11 @@ Es sollte eine Tabelle angezeigt werden. In dieser ist die Konfiguration Ihrer D
 
 Um einen CNAME-Eintrag hinzuzufügen, klicken Sie auf den Button `Einen Eintrag hinzufügen`{.action}.
 
-![Exchange](images/cname_exchange_add_entry_step1.png){.thumbnail}
+![cname domain e-mail](images/cname_exchange_add_entry_step1.png){.thumbnail}
 
-Im angezeigten Fenster werden Ihnen mehrere DNS-Einträge angeboten. Klicken Sie auf `CNAME`{.action} und geben Sie die Informationen aus der Exchange Diagnose in den entsprechenden Feldern ein.
+Im angezeigten Fenster werden Ihnen mehrere DNS-Einträge angeboten. Klicken Sie auf `CNAME`{.action} und geben Sie die Informationen aus der Diagnose in den entsprechenden Feldern ein.
 
-![Exchange](images/cname_add_entry_dns_zone.png){.thumbnail}
+![cname domain e-mail](images/cname_add_entry_dns_zone.png){.thumbnail}
 
 Wenn Sie die Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}. Vergewissern Sie sich, dass die angezeigten Informationen korrekt sind, und klicken Sie dann auf `Bestätigen`{.action}.
 
@@ -76,10 +77,10 @@ Wenn Sie die Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}. 
 > Die Änderung erfordert eine Propagationszeit zwischen 4 und maximal 24 Stunden, bis sie voll wirksam ist.
 >
 
-Um zu überprüfen, dass die Konfiguration des CNAME-Eintrags korrekt ist, gehen Sie zurück in die Tabelle `Assoziierte Domains`{.action} Ihres Exchange Dienstes. Wird ein grünes Kästchen angezeigt, ist die Domain korrekt konfiguriert. Ist das nicht der Fall, kann es sein, dass die Propagationszeit noch nicht abgelaufen ist.
+Um zu überprüfen, dass die Konfiguration des CNAME-Eintrags korrekt ist, gehen Sie zurück in die Tabelle `Assoziierte Domains`{.action} Ihres E-Mail-Dienstes. Wird ein grünes Kästchen angezeigt, ist die Domain korrekt konfiguriert. Ist das nicht der Fall, kann es sein, dass die Propagationszeit noch nicht abgelaufen ist.
 
-![Exchange](images/cname_exchange_diagnostic_green.png){.thumbnail}
+![cname domain e-mail](images/cname_exchange_diagnostic_green.png){.thumbnail}
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

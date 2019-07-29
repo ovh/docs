@@ -1,45 +1,45 @@
 ---
-title: 'Configuring software RAID'
+title: 'RAID por software'
 slug: raid-soft
-excerpt: 'This guide will help you configure your server’s RAID array in the event that it needs to be rebuilt due to corruption or disk failure.'
-section: 'Server Management'
+excerpt: 'Saiba como configurar o RAID de um servidor em caso de avaria ou de falha de disco'
+section: 'RAID e discos'
 ---
 
-**Last updated 18th June 2018**
+**Última atualização: 22/07/2019**
 
-## Objective
+## Sumário
 
-Redundant Array of Independent Disks (RAID) is a utility that mitigates data loss on a server by replicating data across two or more disks.
+O RAID (Redundant Array of Independent Disks) é um conjunto de técnicas concebidas para atenuar a perda de dados num servidor através da replicação dos dados em vários discos.
 
-The default RAID level for OVH server installations is RAID 1, which doubles the space taken up by your data, effectively halving the useable disk space.
+O nível de RAID predefinido nos servidores da OVH é RAID 1, ou seja, o dobro do espaço ocupado pelos dados, reduzindo assim para metade o espaço de disco utilizável.
 
-**This guide will help you configure your server’s RAID array in the event that it needs to be rebuilt due to corruption or disk failure.**
+**Este manual explica-lhe como configurar a matriz RAID de um servidor em caso de ter de ser reconstruída por motivos de corrupção ou de avaria de disco.**
 
-## Requirements
+## Requisitos
 
-* a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} with a software RAID configuration
-* administrative (root) access to the server via SSH
+* Dispor de um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external} com uma configuração RAID por software.
+* Ter acesso ao servidor através de SSH enquanto administrador (root).
 
-## Instructions
+## Instruções
 
-In a command line session, type the following code to determine the current RAID status:
+A verificação do estado atual do RAID pode ser efetuado através do seguinte comando:
 
 ```sh
 cat /proc/mdstat
 
 Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty] 
-md2 : active raid1 sdb2[1] sda2[0] sdc2[2]
-      96211904 blocks [3/3] [UUU]
+md2 : active raid1 sdb2[1] sdc2[2]
+       96211904 blocks [3/2] [_UU]
       
-md1 : active raid1 sdc1[2] sdb1[1] sda1[0]
-      20478912 blocks [3/3] [UUU]
+ md1 : active raid1 sdc1[2] sdb1[1] sda1[0]
+       20478912 blocks [3/3] [UUU]
       
 unused devices: <none>
 ```
 
-This command shows us that we have two RAID arrays currently set up, with md2 being the largest partition. The partition consists of all three disks, which are known as sda2, sdb2 and sdc2. The [UUU] means that all the disks are working normally. A _ would indicate a failed disk.
+Este comando mostra as duas matrizes RAID que estão configuradas, sendo que “md2” é a maior partição. Uma partição é composta por três discos, chamados “sda2”, “sdb2” e ”sdc2”. “\[UUU]” significa que todos os discos funcionam normalmente. Um “_” indicará um disco defeituoso.
 
-Although this command returns our RAID volumes, it doesn't tell us the size of the partitions themselves. We can find this information with the following command:
+Embora este comando mostre os volumes RAID, este não indica o tamanho das próprias partições. Para obter esta informação, utilize o seguinte comando:
 
 ```sh
 fdisk -l
@@ -99,7 +99,7 @@ Disk identifier: 0x00000000
 Disk /dev/md2 doesn't contain a valid partition table
 ```
 
-We can see that `/dev/md1` consists of 21GB and `/dev/md2` contains 98.5GB. If we were to run the mount command we can also find out the layout of the disk.
+Este comando mostra que `/dev/md1` é composto por 21 GB e `/dev/md2` contém 98,5 GB. Para mostrar a disposição do disco, execute o comando “mount”.
 
 ```sh
 /dev/root on / type ext4 (rw,relatime,discard,errors=remount-ro,data=ordered)
@@ -121,14 +121,13 @@ gvfsd-fuse on /run/user/109/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,
 gvfsd-fuse on /run/user/0/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=0,group_id=0)
 /dev/md2 on /home type ext4 (rw,relatime,data=ordered)
 ```
-
-As the disks are currently mounted by default, to remove a disk from the RAID, we first need to unmount the disk, then simulate a failure, and finally remove it. We will remove `/dev/sda2` from the RAID with the following command:
+Os discos estão montados por predefinição. Para retirar um disco, em primeiro lugar deve desmontar o disco e, a seguir, simular uma falha para o poder eliminar.
+De seguida, elimine `/dev/sda2` do RAID com o seguinte comando:
 
 ```sh
 umount /dev/md2
 ```
-
-This will provide us with the following output:
+O resultado deverá ser este:
 
 ```sh
 /dev/root on / type ext4 (rw,relatime,discard,errors=remount-ro,data=ordered)
@@ -150,35 +149,35 @@ gvfsd-fuse on /run/user/109/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,
 gvfsd-fuse on /run/user/0/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=0,group_id=0)
 ```
 
-As we can see the, entry of `/dev/md2` is no longer mounted. However, the RAID is still active, so we need to simulate a failure to remove the disk. We can do this with the following command:
+A entrada de `/dev/md2` já não está montada. No entanto, o RAID ainda está ativo. Assim, é necessário simular uma falha para retirar o disco, o que pode ser efetuado graças ao seguinte comando:
 
 ```sh
 mdadm --fail /dev/md2 /dev/sda2
 ```
 
-We have now simulated a failure of the RAID. The next step is to remove the partition from the RAID array with the following command:
+Uma vez simulada a falha no RAID, pode eliminar a partição com o seguinte comando:
 
 ```sh
 mdadm --remove /dev/md2 /dev/sda2
 ```
 
-You can verify that the partition has been removed with the following command:
+Poderá verificar que a partição foi eliminada com o seguinte comando:
 
 ```sh
 cat /proc/mdstat 
 
 Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty] 
 
-md2 : active raid1 sda2[0] sdb2[1] sdc2[2]
-      96211904 blocks [3/2] [_UU]
+md2 : active raid1 sdb2[1] sdc2[2]
+       96211904 blocks [3/2] [_UU]
       
-md1 : active raid1 sdc1[2] sdb1[1] sda1[0]
-      20478912 blocks [3/3] [UUU]
+ md1 : active raid1 sdc1[2] sdb1[1] sda1[0]
+       20478912 blocks [3/3] [UUU]
       
 unused devices: <none>
 ```
 
-The following command will verify that the partition has been removed:
+O comando abaixo verifica que a partição foi eliminada:
 
 ```sh
 mdadm --detail /dev/md2
@@ -210,20 +209,18 @@ Working Devices : 2
        2       8       34        2      active sync   /dev/sdc2
 ```
 
-Once the disk has been replaced, we need to copy the partition table from a healthy disk (in this example, sdb) to the new one (sda) with the following command: 
+Uma vez substituído o disco, copie a tabela de partição a partir de um disco são (“sbd”) para a nova (“sda”), com o seguinte comando: 
 
 ```sh
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
 ```
-
-We can now rebuild the RAID array. The following code snippet shows how we can rebulid the `/dev/md2` partition layout with the recently-copied sda partition table: 
+Já pode reconstruir a matriz RAID. O seguinte extrato do código mostra como reconstruir a disposição da partição `/dev/md2` com a tabela de partição “sda” que acaba de copiar: 
 
 ```sh
 mdadm --add /dev/md2 /dev/sda2
 cat /proc/mdstat
 ```
-
-We can verify the RAID details with the following command:
+Verifique os detalhes do RAID com o seguinte comando:
 
 ```sh
 mdadm --detail /dev/md2
@@ -257,15 +254,16 @@ Working Devices : 3
        2       8       34        2      active sync   /dev/sdc2
 ```
 
-The RAID has now been rebuilt, but we still need to mount the partition (`/dev/md2` in this example) with the following command: 
+O RAID foi reconstruído. Para montar a partição (`/dev/md2`, no exemplo), utilize o seguinte comando: 
 
 ```sh
 mount /dev/md2 /home
 ```
 
-## Go Further
 
-* [Hot Swap – Hardware RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external}
-* [Hot Swap – Software RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/){.external}
-* [Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
-* Join our community of users on <https://community.ovh.com/en/>.
+## Quer saber mais?
+
+* [Hot Swap – RAID por hardware](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external}
+* [Hot Swap – RAID por software](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/){.external}
+* [RAID por hardware](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
+* Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
