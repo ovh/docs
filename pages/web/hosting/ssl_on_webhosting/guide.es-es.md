@@ -105,9 +105,9 @@ Tenga en cuenta que Let's Encrypt, la autoridad que emite el certificado SSL inc
 
 ![Contratar un certificado SSL](images/manage-ssl-step8.png){.thumbnail}
 
-### Eliminar el certificado SSL de un alojamiento web
+### Eliminar el certificado SSL de un alojamiento
 
-También es posible eliminar el certificado SSL instalado en un alojamiento web. Antes de realizar esta operación, **le recomendamos encarecidamente que se asegure previamente de que la eliminación del certificado no afectará al acceso a sus sitios web**. Por otro lado, tenga en cuenta que los internautas verán una advertencia de seguridad cuando accedan a un sitio web que funcione en HTTPS pero carezca una conexión SSL segura. 
+También es posible eliminar el certificado SSL instalado en un alojamiento web. Antes de realizar esta operación, **le recomendamos encarecidamente que se asegure previamente de que la eliminación del certificado no afectará al acceso a sus sitios web**. Por otro lado, tenga en cuenta que los internautas verán una advertencia de seguridad cuando accedan a un sitio web que funcione en HTTPS pero carezca de una conexión SSL segura. 
 
 Esta comprobación se realiza directamente en la configuración del propio sitio web. Si necesita ayuda, le recomendamos que contacte con un proveedor especializado. Nosotros no podremos asistirle.
 
