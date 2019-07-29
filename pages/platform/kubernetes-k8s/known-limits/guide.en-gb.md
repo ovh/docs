@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated 1<sup>st</sup> July, 2019.**
+**Last updated 29<sup>th</sup> July, 2019.**
 
 <style>
  pre {
@@ -36,13 +36,15 @@ We have tested our OVH Managed Kubernetes service with up to 100 nodes and 100 p
 
 In general. it's better to have several mid-size Kubernetes clusters than one monster-size one.
 
-Delivering a fully managed service, including OS and other component updates, you will neither need nor be ble to SSH as root into your nodes.
+Delivering a fully managed service, including OS and other component updates, you will neither need nor be able to SSH as root into your nodes.
 
 ## LoadBalancer
 
 We are currently offering OVH Managed Kubernetes LoadBalancer service as a free preview, until the end of summer 2019. 
 
 During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team.
+
+There is also a limit of 20 open ports on every `LoadBalancer`, and these ports must be in a range between 1 and 49151.
 
 ## OpenStack
 
