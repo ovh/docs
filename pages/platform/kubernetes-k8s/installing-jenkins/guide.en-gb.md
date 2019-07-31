@@ -64,7 +64,7 @@ helm install --set Master.ServiceType=NodePort stable/jenkins
 
 This will install your Jenkins mater:
 
-<pre class="console"><code>$ helm install --set Master.ServiceType=NodePort stable/jenkins
+<pre class="console"><code>$ helm install --set master.servicetype=NodePort stable/jenkins
 NAME:   kissed-stingray
 LAST DEPLOYED: Mon Oct 15 15:26:34 2018
 NAMESPACE: default
