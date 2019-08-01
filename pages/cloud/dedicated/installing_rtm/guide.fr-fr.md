@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment installer le Real Time Monitoring sur Linux ou Wind
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 06 juin 2019**
+**Dernière mise à jour le 1er août 2019**
 
 ## Objectif
 
@@ -123,13 +123,18 @@ collectors: /opt/noderig
 
 \- Vérifier la santé du raid. (si disponible)
 
-### Installer RTM sur Linux
+### Installer RTM sur Linux (automatiquement)
 
 Une fois que vous vous êtes connecté via SSH sur votre serveur, exécutez simplement la commande suivante :
 
 ```sh
 wget -qO - https://last-public-ovh-infra-yak.snap.mirrors.ovh.net/yak/archives/apply.sh | OVH_PUPPET_MANIFEST=distribyak/catalog/master/puppet/manifests/common/rtmv2.pp bash
 ```
+> [!primary]
+> 
+> Cette installation automatique peut ne pas fonctionner sur votre distribution (en fonction de certaines dépendances) dans ce cas, veuillez procéder à une installation manuelle décrite plus bas.
+>
+
 
 #### Installation manuelle de Debian / Ubuntu
 
