@@ -64,6 +64,10 @@ Authorization modes:
 - [Node](https://kubernetes.io/docs/reference/access-authn-authz/node/){.external}: Authorize API requests made by kubelets.
 - [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external}: Role-based access control is a method of regulating access to computer or network resources based on the roles of individual users within an organization.
 
+Feature gates:
+
+- `TTLAfterFinished`: Allow a TTL controller to clean up resources after they finish execution.
+
 ### Kubelet
 
 - `protect-kernel-defaults`: Protect tuned kernel parameters from overriding kubelet default kernel parameter values.
