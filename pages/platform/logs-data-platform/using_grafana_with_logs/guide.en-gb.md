@@ -5,7 +5,7 @@ order: 1
 section: Visualize your logs
 ---
 
-**Last updated 12th April, 2019**
+**Last updated 29th July, 2019**
 
 ## Objective
 
@@ -46,7 +46,7 @@ So here you go, now Logs Data Platform knows what is the stream you want to brow
 
 ### Setup your own grafana
 
-Get the latest Grafana release here: [http://grafana.org/download/](http://grafana.org/download/){.external} (v6.13 2019-04-09 at the time of writing).
+Get the latest Grafana release here: [http://grafana.org/download/](http://grafana.org/download/){.external} (v6.2.5 2019-06-25 at the time of writing).
 Then follow the Grafana installation guide according your platform: [http://docs.grafana.org/installation/](http://docs.grafana.org/installation/){.external}
 
 ### Launch it!
@@ -63,7 +63,7 @@ If everything is setup properly, launch your favorite browser, and point it to [
 > - Set your Logs Data Platforms credentials for Basic auth values
 > - Set your Logs Data Platforms alias name as Grafana Index name value
 > - Change default Time field name to timestamp
-> - Set **5.x** as Elasticsearch version
+> - Set **6.x** as Elasticsearch version
 > - Register your data source and test it.
 > 
 

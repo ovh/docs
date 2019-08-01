@@ -44,7 +44,7 @@ We are currently offering OVH Managed Kubernetes LoadBalancer service as a free 
 
 During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team.
 
-There is also a limit of 20 open ports on every `LoadBalancer`, and these ports must be in a range between 1 and 49151.
+There is also a limit of 10 open ports on every `LoadBalancer`, and these ports must be in a range between 1 and 49151.
 
 ## OpenStack
 

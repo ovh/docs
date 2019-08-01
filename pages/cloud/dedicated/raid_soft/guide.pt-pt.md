@@ -209,7 +209,7 @@ Working Devices : 2
        2       8       34        2      active sync   /dev/sdc2
 ```
 
-Uma vez substituído o disco, copie a tabela de partição a partir de um disco são (“sbd”) para a nova (“sda”), com o seguinte comando: 
+Uma vez substituído o disco, copie a tabela de partição a partir de um disco são (“sdb”) para a nova (“sda”), com o seguinte comando: 
 
 ```sh
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
