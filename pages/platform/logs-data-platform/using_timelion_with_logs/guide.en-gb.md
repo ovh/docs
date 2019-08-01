@@ -5,7 +5,7 @@ order: 3
 section: Visualize your logs
 ---
 
-**Last updated 12th April, 2019**
+**Last updated 29th July, 2019**
 
 ## Objective
 
