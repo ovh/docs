@@ -5,7 +5,7 @@ order: 2
 section: Get Started
 ---
 
-**Last updated 5th March 2018**
+**Last updated 29th July 2019**
 
 ## Objective
 
@@ -50,13 +50,14 @@ First please check the table below to know which field are reserved and what is 
 
 Of course. As we said before, you can send some additional fields as long as you prepend them with the '_' (underscore) character. You can use any JSON valid character for your field, except the '.' (dot) character. But don't worry, if you do so, we will rewrite your '.' in a very cute underscore. So how can you send special type as number, date and boolean ? Here is the answer :
 
-|Suffix|ES Type|About|
+|Case sensitive suffix|ES Type|About|
 |---|---|---|
 |*_num, *_double, *_float|double|floating value in double in java representation : double-precision 64-bit IEEE 754 floating point|
 |*_int, *_long|long|64 bit signed long type,which has a minimum value of -263 and a maximum value of 263-1|
 |*_date|date|a ISO 8601 date with optional Time or Milliseconds since UNIX epoch in Integer.|
 |*_bool|boolean|Expected values: "true" or  "false". WARNING : GELF does not support boolean types you will have to send "true" or "false" in String|
-|*_geolocation|String|A pair of two float number separeted by a comma ','. This pair must represent Latitude and Longitude|
+|*_geolocation|String|A pair of two float number separeted by a comma ','. This pair must represent Latitude and Longitude. For Kibana & Grafana compatibility, the value is also copied to a GeoHash: `*_geoloacation.geo`|
+|*_ip|String|A valid IPV4 or IPV6. This will allows you to search by range (`dst_ip:[10.0.0.0 TO 10.255.255.255]`) or netmask (`dst_ip:10.0.0.0\/8`)|
 |Everything else|String|Anything else will be considered a string|
 
 As you can see, it is fairly straightforward. Suffix your field with the right value and you will be able to send anything you want. For reference, here is a full example of a valid gelf message with every type we have:
@@ -75,7 +76,8 @@ As you can see, it is fairly straightforward. Suffix your field with the right v
    "level":1,
    "_power_level_int":"9001",
    "_some_info":"info",
-   "_ovh_is_wonderful_bool":"true"
+   "_ovh_is_wonderful_bool":"true",
+   "_dst_ip":"51.38.195.65"
 }
 ```
 
