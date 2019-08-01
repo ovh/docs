@@ -16,7 +16,6 @@ Le Real Time Monitoring (RTM) permet de surveiller partiellement votre serveur e
 ## Prérequis
 
 - Vous devez être connecté via SSH (ou sur votre interface utilisateur graphique) sur votre serveur Linux (accès *root*)
-- Vous devez être connecté au bureau à distance sur votre serveur Windows (accès *administrateur*).
 - Vous devez être connecté à votre [Espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
@@ -139,7 +138,7 @@ wget -qO - https://last-public-ovh-infra-yak.snap.mirrors.ovh.net/yak/archives/a
 ### Installation manuelle de RTM sous Debian / Ubuntu
 
 Ajouter rtm et le référentiel de métriques pour Debian :
-ou `<distribution codename>` est le nom de votre distribution (exemple: 'jessie')
+où `<distribution codename>` est le nom de votre distribution (exemple: 'jessie')
   
 ```sh
 vi /etc/apt/sources.list.d/rtm.list
@@ -150,7 +149,7 @@ deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/debian <distribution codenam
 ```
 
 Ajouter RTM et le référentiel de métriques pour ubuntu
-ou `<distribution codename>` est le nom de votre distribution (exemple: 'xenial')
+où `<distribution codename>` est le nom de votre distribution (exemple: 'xenial')
   
 ```sh
 vi /etc/apt/sources.list.d/rtm.list
@@ -174,7 +173,7 @@ apt-get update
 apt-get install ovh-rtm-metrics-toolkit
 ```
 
-#### CentOS
+### CentOS
 
 Ajouter RTM et le référentiel de métriques pour CentOs :
 
@@ -186,6 +185,7 @@ name=OVH RTM RHEL/ CentOS $releasever - $basearch
 baseurl=http://last.public.ovh.rtm.snap.mirrors.ovh.net/centos/$releasever/$basearch/Packages/
 enabled=1
 repo_gpgcheck=1
+gpgcheck=0
 gpgkey=http://last.public.ovh.rtm.snap.mirrors.ovh.net/ovh_rtm.pub
 
 [metrics]
@@ -193,6 +193,7 @@ name=OVH METRICS RHEL/ CentOS $releasever - $basearch
 baseurl=http://last.public.ovh.metrics.snap.mirrors.ovh.net/centos/$releasever/$basearch/Packages/
 enabled=1
 repo_gpgcheck=1
+gpgcheck=0
 gpgkey=http://last.public.ovh.metrics.snap.mirrors.ovh.net/pub.key
 ```
 
@@ -239,6 +240,24 @@ service beamium start
 ### Installer RTM sur Windows
 
 Le paquet RTM n'est pas encore compatible pour Windows. (en cours)
+
+### Désinstaller RTMv1
+
+L'ancienne version de notre outil de monitoring (RTMv1) est automatiquement désinstallée lorsque vous installez cette version. 
+
+#### Désinstallation manuelle de l'ancien outil de monitoring
+
+Voici les étapes qui permettent de désinstaller l'ancienne version de notre outil de monitoring:
+
+- Suppression du répertoire "/usr/local/rtm":
+```sh
+rm -Rf /usr/local/rtm
+```
+
+- Suppression du crontab :
+Editer le fichier /etc/crontab et supprimer la ligne contenant "RTM"
+* la ligne ressemble à */1 * * * * root /usr/local/rtm/bin/rtm XX > /dev/null 2> /dev/null
+
 
 ## Aller plus loin
 
