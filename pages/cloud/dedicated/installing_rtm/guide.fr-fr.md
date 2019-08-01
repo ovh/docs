@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment installer le Real Time Monitoring sur Linux ou Wind
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 06 juin 2019**
+**Dernière mise à jour le 1er août 2019**
 
 ## Objectif
 
