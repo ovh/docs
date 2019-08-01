@@ -20,9 +20,9 @@ We have added a [Kubernetes section](https://api.ovh.com/console/#/cloud/project
 
 ## Kubernetes versions
 
-Currently we support both Kubernetes 1.11, 1.12, 1.13 and 1.14
+Currently we support both Kubernetes 1.12, 1.13, 1.14 and 1.15
 
-By default, new clusters are generated on Kubernetes 1.14, but you can switch to another of the supported versions using the [OVH Cloud Manager](https://www.ovh.com/manager/cloud/).
+By default, new clusters are generated on Kubernetes 1.15, but you can switch to another of the supported versions using the [OVH Cloud Manager](https://www.ovh.com/manager/cloud/).
 
 We will closely follow the Kubernetes releases, and new versions will be regularly available.
 
