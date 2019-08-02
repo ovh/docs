@@ -1,6 +1,6 @@
 ---
 title: 'Mehrere VLANs im vRack erstellen'
-slug: "vrack-vlan-erstellen"
+slug: vrack-vlan-erstellen
 excerpt: 'So erstellen Sie mehrere VLANs im vRack'
 section: vRack
 ---
@@ -28,7 +28,7 @@ Bei der [Standardkonfiguration des vRack](https://docs.ovh.com/de/dedicated/mehr
 
 ### Linux
 
-> \[!primary]
+> [!primary]
 >
 > In unserem Beispiel verwenden wir `eth1` als Netzwerkinterface, **10** als VLAN-Tag und **192.168.0.0/16** als IP-Adressbereich. 
 >
