@@ -123,7 +123,9 @@ collectors: /opt/noderig
 
 \- Vérifier la santé du raid. (si disponible)
 
-### Installation automatique de RTM
+
+### Installer RTM sur Linux (automatiquement)
+
 
 Une fois que vous vous êtes connecté via SSH sur votre serveur, exécutez simplement la commande suivante :
 
@@ -134,6 +136,7 @@ wget -qO - https://last-public-ovh-infra-yak.snap.mirrors.ovh.net/yak/archives/a
 > 
 > Cette installation automatique peut ne pas fonctionner sur votre distribution (en fonction de certaines dépendances) dans ce cas, veuillez procéder à une installation manuelle décrite plus bas.
 >
+
 
 
 ### Installation manuelle de RTM sous Debian / Ubuntu
