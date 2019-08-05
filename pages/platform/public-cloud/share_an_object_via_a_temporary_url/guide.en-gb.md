@@ -105,7 +105,6 @@ To make your URL function properly, you have to add the access point address bef
 ```
 https://storage.sbg1.cloud.ovh.net/v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
-
 In the example above, this temporary address can be used to download the **file** to the **default** container for 60 seconds, without authentication. After that, the URL will no longer work.
 
 > [!primary]
