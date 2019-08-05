@@ -1,135 +1,117 @@
 ---
-title: Ein Objekt mit temporärer Adresse teilen
-excerpt: Ein Objekt mit temporärer Adresse teilen
+title: 'Objekt mit einer temporären Adresse teilen'
 slug: ein_objekt_mit_temporarer_adresse_teilen
+excerpt: 'So teilen Sie ein Objekt, ohne persönliche Informationen weiterzugeben'
+section: 'Object Storage'
 legacy_guide_number: g2007
 ---
 
+**Stand 16.07.2019**
 
-## 
-OpenStack Swift ermöglicht das Speichern großer Mengen von Dateien.
+## Einleitung 
 
-Um Ihre Dateien zu verwalten, müssen Sie für jede Anfrage an die API mittels eines Tokens authentifiziert werden. So können Ihre Rechte aus Swift jedes Mal verifiziert (Lesen, Schreiben, ...).
+Mit OpenStack Swift können Sie eine große Anzahl an Dateien speichern. Um diese zu verwalten, authentifizieren Sie sich für jede API-Anfrage mithilfe eines *Tokens*. Dieser *Token* wird mithilfe Ihres Benutzernamens und Passworts über das Authentifizierungssystem erstellt und dient dazu, Ihre Lese- und Schreibrechte in Swift zu bestätigen. 
 
-Das Token erhalten Sie über das Authentifizierungssystem unter Angabe von Login und Passwort.
+Wenn Sie eine Datei für einen anderen Benutzer freigeben, möchten Sie dabei natürlich nicht Ihre persönlichen Authentifizierungsdaten weitergeben. In diesem Fall können Sie temporäre Adressen (*tempURL*) verwenden.
 
-Gehen wir nun also davon aus, Sie möchten eine Datei mit einem Freund oder Kollegen teilen. Dabei möchten Sie aber natürlich nicht Ihre persönlichen Daten für die Authentifizierung weitergeben. In diesem Fall sind also temporäre URL (tempURL) die richtige Lösung für Sie.
-
-Es handelt sich dabei um eine Funktion, mit der Sie genau festlegen können, welche Dateien Sie teilen möchten und wie lang.
-
-
-## Wie funktioniert das?
-Die Funktion tempURL erstellt eine temporäre Adresse unter Verwendung der folgenden Elemente:
-
-
-- die Adresse des Zugriffspunkts, zum Beispiel: "https://storage.sbg1.cloud.ovh.net/";
-- den Pfad zu Ihrem Projekt aus Projektname, Container und Objektname: "v1/AUTH_tenant/default/file";
-- einen ersten zusätzlichen Parameter tempurlsign, der einer gemäß Ihrem geheimen Key entsprechenden Signatur, der HTTP-Methode und dem Ablaufdatum entspricht;
-- einen zweiten Parameter url_expires, der dem Ablaufdatum Ihres Links entspricht.
-
-
-
+**In dieser Anleitung erfahren Sie, wie Sie ein Objekt mithilfe einer temporären Adresse teilen.**
 
 ## Voraussetzungen
 
-- [Vorbereitung der Umgebung für die Verwendung der OpenStack API]({legacy}1851);
-- [Laden der OpenStack Umgebungsvariablen]({legacy}1852);
-- Python auf Ihrem Arbeitsplatz
-- Python Skript: [swift-temp-url](https://raw.githubusercontent.com/openstack/swift/master/bin/swift-temp-url)
+- [Sie haben die Umgebung für die Verwendung der OpenStack-API vorbereitet](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/){.ref}.
+- Sie haben die OpenStack-Umgebungsvariablen eingerichtet.
+- Python ist auf Ihrem System installiert.
 
+## Beschreibung
 
+### Prinzip verstehen
 
+Die temporäre Adresse (oder *tempURL*) ist eine Funktion, mit der Sie freigegebene Dateien verwalten können. Hierzu verwendet diese folgende Elemente:
 
-## Erstellung des Key
-Zunächst einmal müssen Sie einen Key erstellen. Dieser kann für alle Dateien Ihres Projekts verwendet werden und ist somit auch für alle künftigen tempURLs ausreichend. Wir empfehlen daher einen langen und sicheren Key. Allerdings können Sie auch zu jedem späteren Zeitpunkt einen neuen Key generieren, wenn gewünscht.
+- **Adresse des Zugriffspunkts**, zum Beispiel https://storage.sbg1.cloud.ovh.net
+- **Objektpfad mit Ihrem Projekt, Container und dem Objektnamen**, zum Beispiel `v1/AUTH_tenant/default/file`
+- **tempurlsign-Parameter**, entspricht einer gemäß Ihrem geheimen Schlüssel erstellten Signatur, der HTTP-Methode, dem Dateipfad und dem Ablaufdatum
+- **url_expires-Parameter**, entspricht dem Ablaufdatum Ihrer temporären Adresse
 
-Für die Erstellung Ihres Key empfehlen wir die Verwendung von wenigstens 20 Zeichen.
-Sie können dafür auch Tools verwenden:
+### Temporäre Adresse (*tempURL*) generieren
 
-- [http://www.random.org/strings/](http://www.random.org/strings/)
-- unter Linux: "/dev/urandom"
-- oder einfach den Befehl: "date +%s | md5sum"
+#### 1. Schlüssel generieren
 
+Erstellen Sie zuerst einen Schlüssel. Dieser ist für alle Dateien Ihres Projekts gültig. Daher reicht es aus, nur einen Schlüssel für alle Ihre temporären Adressen zu generieren. 
 
-Wenn Ihr Key erstellt ist, können Sie diesen mithilfe des Swift Client auf Ihrem Projekt konfigurieren (ersetzen Sie die Zahlenreihe "12345" durch Ihren Key):
+> [!primary]
+>
+> Wir empfehlen Ihnen dringend, einen langen und sicheren Schlüssel mit mindestens 20 Zeichen zu wählen. Beachten Sie außerdem, dass jederzeit ein neuer Schlüssel generiert werden kann.
+> 
 
+Um Ihren Schlüssel zu generieren, haben Sie mehrere Möglichkeiten. Sie können zum Beispiel die Befehle sha512sum und sha256sum verwenden. Wir empfehlen Ihnen, die Methode zu verwenden, die am besten zu Ihrer Situation passt und dem gewünschten Verschlüsselungsniveau entspricht. Zum Beispiel (von der effizientesten zur am wenigsten effizienten Verschlüsselungsmethode):
 
-```
+- date +%s | sha512sum
+- date +%s | sha256sum
+- date +%s | md5sum 
+
+Sobald Sie Ihren Schlüssel haben, können Sie diesen über den Swift-Client auf Ihrem Projekt einrichten. Denken Sie daran, die Zahlenreihe „12345” durch Ihren Schlüssel zu ersetzen:
+
+```bash
 swift post -m "Temp-URL-Key: 12345"
 ```
 
-
 Oder Sie verwenden curl:
 
-
-```
+```bash
 curl -i -X POST \ -H "X-Account-Meta-Temp-URL-Key: 12345" \ -H "X-Auth-Token: abcdef12345" \ https://storage.sbg1.cloud.ovh.net/v1/AUTH_ProjectID
 ```
 
+> [!primary]
+>
+> Der vollständige Header lautet `X-Account-Meta-Temp-Url-Key`, der Swift-Client verwendet jedoch `Temp-Url-Key`, da er `X-Account-Meta` automatisch hinzufügt.
+> 
 
+Jetzt, da der Schlüssel auf Ihrem Account eingerichtet ist, überprüfen Sie mit dem Swift-Client und folgendem Befehl, dass der **Header** korrekt angewendet wurde:
 
-## Information:
-Der vollständige Header lautet X-Account-Meta-Temp-Url-Key, aber der Swift Client verwendet Temp-Url-Key, da er X-Account-Meta automatisch hinzufügt.
-Sobald der Key auf Ihrem Account konfiguriert ist, können Sie überprüfen, ob der Header korrekt angewendet wurde. Verwenden Sie dafür folgenden Befehl in Ihrem Swift Client:
-
-
-```
+```bash
 swift stat
 ```
 
+Oder verwenden Sie curl:
 
-Oder mit curl:
-
-
-```
-curl -i -X HEAD \ -H "X-Auth-Token: abcdef12345" \ ttps://storage.sbg1.cloud.ovh.net/v1/AUTH_ProjectID
+```bash
+curl -i -X HEAD \ -H "X-Auth-Token: abcdef12345" \ https://storage.sbg1.cloud.ovh.net/v1/AUTH_ProjectID
 ```
 
+#### 2. URL generieren
 
+Die folgenden Tasks können auch offline durchgeführt werden. Wir generieren die URL-Adresse mithilfe eines Befehls. Dieser muss mit Ihren eigenen Informationen angepasst werden.
 
+Zum Beispiel gilt für folgende Elemente:
 
-## Erstellung der URL
-Folgende Tasks können auch im Offline-Modus erledigt werden.
-
-Wir erstellen eine temporäre URL mithilfe des Skripts swift-temp-url:
-
+- **GET**: HTTP-Methode
+- **60**: für 60 Sekunden verfügbarer Link (Sie können diesen Wert anpassen)
+- **/v1/AUTH_tenant/default/file**: Pfad zu Ihrer Datei. An dieser Stelle ist es nicht notwendig, den Zugriffspunkt hinzuzufügen.
+- **12345**: durch Ihren Schlüssel zu ersetzen
 
 ```
-python swift-temp-url GET 60 /v1/AUTH_tenant/default/file 12345
+swift tempurl GET 60 /v1/AUTH_tenant/default/file 12345
 ```
 
-
-
-- GET: HTTP-Methode
-- 60: Link verfügbar für 60 Sekunden. Diesen Wert können Sie ganz nach Wunsch festlegen.
-- 12345: Ihr Key
-- /v1/AUTH_tenant/default/file: der Dateipfad. Hier brauchen Sie den Zugriffspunkt nicht anzugeben. 
-
-
-So erhalten Sie eine tempURL wie:
-
+Sie erhalten die **tempURL**, mit der Sie den **Dateipfad**, die **Signatur** und das **Ablaufdatum** wie bereits erwähnt anzeigen können.
 
 ```
 v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
-
-Sie sehen also den Dateipfad, die Signatur und das Ablaufdatum, wie zuvor beschrieben.
-
-Damit Ihre URL korrekt funktioniert, müssen Sie nun lediglich die Adresse des Zugriffspunkts vor die tempURL setzen:
-
+Damit Ihre URL funktioniert, muss die Adresse des Zugriffspunkts vor der **tempURL** hinzugefügt werden:
 
 ```
 https://storage.sbg1.cloud.ovh.net/v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
+Im oben stehenden Beispiel kann über diese temporäre Adresse für 60 Sekunden die Datei **file** im Container **default** ohne Authentifizierung heruntergeladen werden. Nach Ablauf der 60 Sekunden funktioniert die URL nicht mehr.
 
-In unserem Beispiel kann die Datei "File" im Container "Default" nun 60 Sekunden lang frei heruntergeladen werden, ohne Authentifizierung.
+> [!primary]
+>
+> Fortgeschrittene Benutzer können temporäre Adressen auch ohne das Skript **swift-temp-url** generieren. Weitere Informationen hierzu finden Sie direkt in der offiziellen OpenStack-Dokumentation.
 
-Nach Ablauf von 60 Sekunden ist die URL nicht mehr gültig.
-Für fortgeschrittene Nutzer gibt es auch die Möglichkeit, temporäre URLs ohne das Skript [swift-temp-url](https://raw.githubusercontent.com/openstack/swift/master/bin/swift-temp-url) zu erstellen. Mehr Informationen finden Sie direkt in der [OpenStack Dokumentation](http://docs.openstack.org/liberty/config-reference/content/object-storage-tempurl.html).
+## Weiterführende Informationen
 
-
-## 
-... lesen Sie auch unsere anderen Hilfen zum Thema Cloud!
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

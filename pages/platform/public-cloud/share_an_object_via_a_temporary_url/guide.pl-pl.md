@@ -1,133 +1,117 @@
 ---
-title: Udostępnianie obiektu za pomocą tymczasowego adresu
-excerpt: Udostępnianie obiektu za pomocą tymczasowego adresu
+title: 'Udostępnianie obiektu za pomocą tymczasowego adresu'
+excerpt: 'Dowiedz się, jak udostępnić obiekt bez ujawniania danych osobowych'
 slug: udostepnianie_obiektu_za_pomoca_tymczasowego_adresu
 legacy_guide_number: g2007
-section: Object Storage
+section: 'Object Storage'
 ---
 
+**Ostatnia aktualizacja z dnia 10-06-2019**
 
-## 
-OpenStack Swift pozwala na przechowywanie dużej liczby plików. 
-Aby móc zarządzać plikami, należy zalogować się za pomocą tokena, w przypadku każdego zapytania wysyłanego do API. Dzięki temu można potwierdzić uprawnienia (odczyt, zapis,...) w oprogramowaniu Swift. 
-Token jest generowany w systemie uwierzytelniania, do którego logujesz się za pomocą identyfikatora i hasła. 
+## Wprowadzenie 
 
-Jeśli udostępnić plik znajomym, ale nie chcesz podawać im swoich danych do logowania, skorzystaj z tymczasowych adresów URL (tempurl).
+OpenStack Swift umożliwia przechowywanie dużej liczby plików. Aby zarządzać plikami, zaloguj się za pomocą *tokena* oddzielnie dla każdego zapytania wysyłanego do API. W ten sposób potwierdzisz Twoje uwierzytelnienia w OpenStack Swift w trybie odczytu i zapisu. *Token* pochodzi z systemu uwierzytelniania i używa Twojego loginu i hasła. 
 
+Jeśli chcesz współdzielić plik z innym użytkownikiem, ze zrozumiałych względów nie chcesz dzielić się danymi do logowania. Skorzystaj zatem z tymczasowych plików (*tempurl*).
 
-Temp url to funkcjonalność pozwalająca na kontrolowanie plików, które chcesz udostępniać oraz czasu dostępności adresu.
+**Dowiedz się, jak udostępnić obiekt za pomocą tymczasowego adresu.**
 
+## Wymagania początkowe
 
-## Zasady działania
-Funkcja Temp url generuje tymczasowy adres korzystając z poniższych elementów:
+- [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/){.ref}
+- [Pobranie zmiennych środowiskowych OpenStack](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/){.ref}
+- Python zainstalowany na stacji roboczej
 
+## W praktyce
 
-- Adres punktu dostępowego, na przykład: "https://storage.sbg1.cloud.ovh.net/"
-- Ścieżka do obiektu zawierająca projekt, kontener i nazwę obiektu: "v1/AUTH_tenant/default/file"
-- Pierwszy dodatkowy parametr tempurlsign odnoszący się do podpisu, który został wygenerowany zgodnie z kluczem, metodą HTTP, ścieżką do pliku i datą wygaśnięcia. 
-- Drugi parametr url_expires odnoszący się do daty wygaśnięcia linka.
+### Zasada działania
 
+Adres tymczasowy (*tempurl*) jest funkcją, która umożliwia kontrolowanie plików, które chcesz współdzielić. Wykorzystywane są do tego następujące elementy:
 
+- **adres punktu dostępu**, np. https://storage.sbg1.cloud.ovh.net;
+- **ścieżka do obiektu zawierającego Twój projekt, kontener i nazwę obiektu**, np. `v1/AUTH_tenant/default/file`;
+- **parametr tempurlsign**, który został wygenerowany zgodnie z kluczem, metodą HTTP, ścieżką do pliku i datą wygaśnięcia;
+- **parametr url_expires**, który odpowiada dacie wygaśnięcia Twojego tymczasowego adresu.
 
+### Generowanie tymczasowego adresu (*tempurl*)
 
-## Wymagania
+#### 1. Generowanie klucza
 
-- [Przygotowanie środowiska dla API OpenStack]({legacy}1851)
-- [Pobranie zmiennych środowiskowych OpenStack]({legacy}1852)
-- Python zainstalowany na komputerze
-- Skrypt Python: [swift-temp-url](https://raw.githubusercontent.com/openstack/swift/master/bin/swift-temp-url)
+W pierwszym kroku wygeneruj klucz. Będzie on ważny dla wszystkich plików Twojego projektu. Wystarczy zatem tylko raz wygenerować klucz dla wszystkich Twoich tymczasowych adresów. 
 
+> [!primary]
+>
+> Zalecamy wybór długiego, bezpiecznego klucza, zawierającego co najmniej 20 znaków.  Pamiętaj, że w dowolnym momencie możesz wygenerować nowy klucz.
+> 
 
+W celu wygenerowania klucza możesz użyć jednej z dostępnych metod, takich jak wiersze poleceń sha512sum lub sha256sum. Zalecamy użycie metody najlepiej dostosowanej do Twojej sytuacji i zgodnie z poziomem szyfrowania, który chcesz zastosować. Na przykład, od najmniej do najbardziej skutecznego szyfrowania:
 
+- date +%s | sha512sum
+- date +%s | sha256sum
+- date +%s | md5sum 
 
-## Generowanie klucza
-W pierwszej kolejności należy wygenerować klucz. Będzie on używany dla wszystkich plików projektu. Wygenerowanie tego klucza wystarczy dla wszystkich przyszłych TempURL. Zaleca się więc wybranie długiego bezpiecznego klucza. W każdej chwili można wygenerować nowy klucz. 
+Po wygenerowania klucza możesz go skonfigurować w Twoim projekcie za pomocą klienta Swift. Pamiętaj, aby zastąpić ciąg „12345” Twoim kluczem:
 
-Zalecamy wykorzystanie minimum 20 znaków. Możesz skorzystać z narzędzi takich jak:
-
-- [http://www.random.org/strings/](http://www.random.org/strings/)
-- Polecenie w systemie Linux: "/dev/urandom"
-- Lub polecenie: "date +%s | md5sum"
-
-
-Po uzyskaniu klucza możemy go skonfigurować na danym projekcie za pomoca klienta swift (zastąp ciąg "12345" swoim kluczem):
-
-
-```
+```bash
 swift post -m "Temp-URL-Key: 12345"
 ```
 
+Lub przy użyciu curl:
 
-Lub za pomocą curla:
-
-
-```
+```bash
 curl -i -X POST \ -H "X-Account-Meta-Temp-URL-Key: 12345" \ -H "X-Auth-Token: abcdef12345" \ https://storage.sbg1.cloud.ovh.net/v1/AUTH_ProjectID
 ```
 
+> [!primary]
+>
+> Pełna nazwa nagłówka to `X-Account-Meta-Temp-Url-Key`, ale klient Swift używa `Temp-Url-Key`, ponieważ automatycznie dodaje `X-Account-Meta`.
+> 
 
+Kiedy klucz jest już skonfigurowany na koncie, sprawdź, czy **nagłówek** został poprawnie zastosowany przy użyciu klienta Swift za pomocą następującego wiersza poleceń:
 
-## Informacje
-Pełna nazwa nagłówka to X-Account-Meta-Temp-Url-Key, ale klient Swift używa Temp-Url-Key, ponieważ automatycznie dodaje X-Account-Meta.
-Po skonfigurowaniu klucza na koncie, można sprawdzić, czy nagłówek został prawidłowo wprowadzony. Skorzystaj z tego polecenia w kliencie Swift:
-
-
-```
+```bash
 swift stat
 ```
 
+Lub za pomocą curl:
 
-Lub za pomocą curla:
-
-
-```
-curl -i -X HEAD \ -H "X-Auth-Token: abcdef12345" \ ttps://storage.sbg1.cloud.ovh.net/v1/AUTH_ProjectID
+```bash
+curl -i -X HEAD \ -H "X-Auth-Token: abcdef12345" \ https://storage.sbg1.cloud.ovh.net/v1/AUTH_ProjectID
 ```
 
+#### 2. Generowanie URL
 
+Następujące zadania mogą być wykonywane offline. Poniżej pokazujemy, jak wygenerować tymczasowy adres URL za pomocą wiersza poleceń. Spersonalizuj go, używając Twoich danych.
 
+Na przykład dla poniższych elementów:
 
-## Generowanie adresu URL
-Te zadania mogą zostać wykonane offline.
-
-Wygenerujemy tymczasowy adres URL za pomocą skryptu swift-temp-url:
-
+- **GET**: metoda HTTP.
+- **60**: link dostępny przez 60 sekund (możesz dopasować tę wartość do Twoich potrzeb).
+- **/v1/AUTH_tenant/default/file**: ścieżka do Twojego pliku. Na tym etapie procedury nie jest konieczne dodawanie punktu dostępowego.
+- **12345**: zastąp Twoim kluczem.
 
 ```
-python swift-temp-url GET 60 /v1/AUTH_tenant/default/file 12345
+swift tempurl GET 60 /v1/AUTH_tenant/default/file 12345
 ```
 
-
-
-- GET: Metoda HTTP
-- 60: Link dostępny przez 60 sekund. Możesz dostosować tę wartość. 
-- 12345: Zamień na swój klucz.
-- /v1/AUTH_tenant/default/file: Ścieżka do pliku. Nie trzeba dodawać punktu dostępowego na tym etapie procedury.
-
-
-Otrzymasz tempURL tego typu:
-
+Otrzymasz **tempURL**, który umożliwia wyświetlenie **ścieżki do pliku**, **podpisu** i **daty ważności**, jak wyjaśniono powyżej.
 
 ```
 v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
-
-Widać tutaj ścieżkę do pliku, podpis i datę wygaśnięcia. 
-
-Aby adres działał prawidłowo, należy dodać adres punktu dostępowego przed tempURL:
-
+Aby URL działał poprawnie, dodaj adres punktu dostępowego przed**tempURL**:
 
 ```
 https://storage.sbg1.cloud.ovh.net/v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
+Powyższy przykład pokazuje, że adres tymczasowy pozwala pobrać plik **file** do domyślnego kontenera w ciągu 60 sekund, bez uwierzytelniania. Po upływie 60 sekund URL już nie zadziała.
 
-W naszym przykładzie URL pozwala wszystkim na pobranie pliku "file" z kontenera "default", przez 60 sekund bez uwierzytelniania. 
-Po 60 sekundach URL przestanie działać.
-Dla bardziej zaawansowanych użytkowników, którzy chcą generować tempURL bez użycia skryptu [swift-temp-url](https://raw.githubusercontent.com/openstack/swift/master/bin/swift-temp-url), polecamy [dokumentację OpenStack](http://docs.openstack.org/liberty/config-reference/content/object-storage-tempurl.html).
+> [!primary]
+>
+> Zaawansowani użytkownicy, którzy chcą generować tymczasowe adresy bez skryptu **swift-temp-url**, mogą uzyskać więcej informacji bezpośrednio w oficjalnej dokumentacji OpenStack.
 
+## Sprawdź również
 
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
