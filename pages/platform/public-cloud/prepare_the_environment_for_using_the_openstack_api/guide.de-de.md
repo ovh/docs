@@ -3,7 +3,7 @@ title: 'Umgebung für die Verwendung der OpenStack-API vorbereiten'
 slug: vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api
 excerpt: 'Installieren Sie die OpenStack-Umgebung, um Ihre Instanzen über die API zu verwalten.'
 legacy_guide_number: 1851
-section: 'Über APIs und Befehlszeile'
+section: Über APIs und Befehlszeile
 ---
 
 **Stand 16.07.2019**
@@ -49,7 +49,7 @@ nova help
 
 > [!primary]
 > 
-> La documentation relative à l’API OpenStack est disponible [sur cette page](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> Die Dokumentation für die OpenStack-API ist [auf dieser Seite](https://docs.openstack.org/python-openstackclient/latest/){.external} verfügbar.
 > 
 
 ### Unter CentOS
@@ -90,7 +90,7 @@ nova help
 
 > [!primary]
 > 
-> La documentation relative à l’API OpenStack est disponible [sur cette page](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> Die Dokumentation für die OpenStack-API ist [auf dieser Seite](https://docs.openstack.org/python-openstackclient/latest/){.external} verfügbar.
 > 
 
 ### Unter Windows
@@ -141,10 +141,9 @@ Wurde die Operation erfolgreich ausgeführt, wird eine Zusammenfassung geöffnet
 
 ![Automatische Installation](images/5_preparation_openstack_environment_windows.png){.thumbnail}
 
-Sie können die installierte Version im neu geöffneten CMD-Fenster (Kommandozeile) überprüfen, indem Sie „python-V“ eingeben (egal, wo Sie sich im System befinden). 
+Sie können die installierte Version im neu geöffneten CMD-Fenster (Kommandozeile) überprüfen, indem Sie „python-V“ eingeben (egal, wo Sie sich im System befinden).
 
 ![Überprüfung](images/6_preparation_openstack_environment_windows.png){.thumbnail}
-
 
 ## Weiterführende Informationen
 
