@@ -141,7 +141,7 @@ Wurde die Operation erfolgreich ausgeführt, wird eine Zusammenfassung geöffnet
 
 ![Automatische Installation](images/5_preparation_openstack_environment_windows.png){.thumbnail}
 
-Sie können die installierte Version im neu geöffneten CMD-Fenster (Kommandozeile) überprüfen, indem Sie „python-V“ eingeben (egal, wo Sie sich im System befinden).
+Sie können die installierte Version im neu geöffneten CMD-Fenster (Kommandozeile) überprüfen, indem Sie „python-V“ eingeben (egal, wo Sie sich im System befinden). 
 
 ![Überprüfung](images/6_preparation_openstack_environment_windows.png){.thumbnail}
 
