@@ -3,7 +3,7 @@ title: 'Umgebung für die Verwendung der OpenStack-API vorbereiten'
 slug: vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api
 excerpt: 'Installieren Sie die OpenStack-Umgebung, um Ihre Instanzen über die API zu verwalten.'
 legacy_guide_number: 1851
-section: Über APIs und Befehlszeile
+section: 'Über APIs und Befehlszeile'
 ---
 
 **Stand 16.07.2019**
@@ -144,6 +144,7 @@ Wurde die Operation erfolgreich ausgeführt, wird eine Zusammenfassung geöffnet
 Sie können die installierte Version im neu geöffneten CMD-Fenster (Kommandozeile) überprüfen, indem Sie „python-V“ eingeben (egal, wo Sie sich im System befinden). 
 
 ![Überprüfung](images/6_preparation_openstack_environment_windows.png){.thumbnail}
+
 
 ## Weiterführende Informationen
 
