@@ -1,9 +1,9 @@
 ---
-title: Activer l’option HDS ou PCI-DSS
+title: 'Activer l’option HDS ou PCI-DSS'
 slug: activer-l-option-hds-ou-pci-dss
-excerpt: Activation de l'option HDS ou PCI-DSS
-section: Services et options OVH
-order: 03
+excerpt: 'Activation de l''option HDS ou PCI-DSS'
+section: 'Services et options OVH'
+order: 3
 ---
 
 **Dernière mise à jour le 25 janvier 2019**
@@ -82,6 +82,7 @@ Suite au changement de mot de passe de tous les utilisateurs, votre option est a
 Vous retrouverez les détails de l'interface securisée sur [ce guide](https://docs.ovh.com/fr/private-cloud/interface-secure/)
 
 Par la suite, vous recevrez des documents par mail concernant cette activation d'option et permettant de finaliser la partie contractuelle.
+
 
 ## Aller plus loin
 
