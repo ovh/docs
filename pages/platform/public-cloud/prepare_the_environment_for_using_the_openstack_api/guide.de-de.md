@@ -2,8 +2,8 @@
 title: 'Umgebung für die Verwendung der OpenStack-API vorbereiten'
 slug: vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api
 excerpt: 'Installieren Sie die OpenStack-Umgebung, um Ihre Instanzen über die API zu verwalten.'
-section: 'Über Clients in der Befehlszeile'
-legacy_guide_number: g1851
+legacy_guide_number: 1851
+section: Über APIs und Befehlszeile
 ---
 
 **Stand 16.07.2019**
@@ -49,7 +49,7 @@ nova help
 
 > [!primary]
 > 
-> Die Dokumentation für die OpenStack-API ist [auf dieser Seite](https://docs.openstack.org/python-openstackclient/latest/){.external} verfügbar.
+> La documentation relative à l’API OpenStack est disponible [sur cette page](https://docs.openstack.org/python-openstackclient/latest/){.external}.
 > 
 
 ### Unter CentOS
@@ -90,7 +90,7 @@ nova help
 
 > [!primary]
 > 
-> Die Dokumentation für die OpenStack-API ist [auf dieser Seite](https://docs.openstack.org/python-openstackclient/latest/){.external} verfügbar.
+> La documentation relative à l’API OpenStack est disponible [sur cette page](https://docs.openstack.org/python-openstackclient/latest/){.external}.
 > 
 
 ### Unter Windows
