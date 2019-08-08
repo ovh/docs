@@ -5,7 +5,7 @@ excerpt: 'PrivateSQL EOS and EOL announcements'
 section: 'Technical resources'
 ---
 
-The products covered by those End Of Sale (EOS) and End Of Life (EOL) announcements are the Cloud Databases Web Hosting services (also known as PrivateSQL services), dedicated DBMS instances reachable on the Web Hosting network. See also the [OVH Managed databases EOL policy](../life-cycle/guide.en-gb.md) for more information.
+The products covered by those End Of Sale (EOS) and End Of Life (EOL) announcements are the Cloud Databases Web Hosting services (also known as PrivateSQL services), dedicated DBMS instances reachable on the Web Hosting network. See also the [OVH Managed databases EOL policy](../eol-policy/guide.en-gb.md) for more information.
 
 |Version|EOL announcement|End-of-Sale|End-of-Support|
 |---|---|---|---|
