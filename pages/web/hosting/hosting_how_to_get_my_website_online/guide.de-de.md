@@ -1,14 +1,13 @@
 ---
 title: 'Eine Website auf Ihrem Webhosting online stellen'
 slug: webhosting_meine_seite_online_stellen
-description: 'Webhosting: Meine Seite online stellen'
 legacy_guide_number: g1374
 excerpt: 'So stellen Sie eine Website auf Ihrem OVH Webhosting online'
 section: 'Erste Schritte'
 order: 2
 ---
 
-**Stand 20.09.2018**
+**Stand 23.07.2019**
 
 ## Einleitung
 
@@ -63,17 +62,24 @@ Vergewissern Sie sich, dass Sie alle Dateien der Website haben, die Sie online s
 
 #### 2. In den Speicherplatz einloggen
 
-Sie können sich mit einem FTP-Login, dem zugehörigen Passwort und einer Serveradresse in Ihren Speicherplatz einloggen. Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Hostings mitgeteilt. Wenn Sie kein Passwort besitzen, lesen Sie bitte die Anleitung [„Passwort eines FTP-Benutzers ändern“](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/){.external}.
+Um sich mit Ihrem Speicherplatz zu verbinden, benötigen Sie die folgenden Elemente:
 
-Loggen Sie sich für die Serveradresse oder Ihre Login-Daten, die Sie für den Zugriff auf Ihren Speicherplatz benötigen, im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und klicken Sie links im Menü auf `Hosting-Pakete`{.action}. Wählen Sie das gewünschte Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}.
+- einen aktiven FTP- oder SSH-Benutzer
+- das Passwort für den FTP- bzw. SSH-Benutzer
+- die Serveradresse
+- den Verbindungsport des Servers
+
+Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostings mitgeteilt. Wenn Sie nicht mehr im Besitz dieser Daten sind, loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und klicken Sie im Bereich „Web“ links in der Menüleiste auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. 
 
 ![website installation](images/get-website-online-step1.png){.thumbnail}
+
+Es werden nun die Informationen für Ihren Speicherplatz angezeigt. Sie sollten hier alle Elemente finden, die Sie für die Verbindung mit Ihrem Speicherplatz brauchen. Falls nötig, lesen Sie unsere Anleitung: [„Mit dem Speicherplatz eines Webhostings verbinden“](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/){.external}. Wenn Sie kein Passwort besitzen, lesen Sie bitte die Anleitung [„Passwort eines FTP-Benutzers ändern“](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/){.external}.
 
 Wenn Sie alle nötigen Informationen haben, können Sie sich in Ihren Speicherplatz einloggen. Hierfür haben Sie drei Möglichkeiten:
 
 - **OVH FTP-Explorer verwenden**: Dieser ermöglicht es Ihnen, über einen Webbrowser auf Ihren Speicherplatz zuzugreifen. Bleiben Sie für diese Option im Tab `FTP - SSH`{.action} und klicken Sie auf den Button `FTP Explorer`{.action}.
 
-- **FTP-kompatibles Programm verwenden**: Installieren Sie einen FTP-Client auf Ihrem Computer (zum Beispiel FileZilla). Bitte kontaktieren Sie den Herausgeber der installierten Software, wenn Sie für deren Verwendung Hilfe brauchen, da sie nicht von OVH entwickelt wurde.
+- **FTP- oder SFTP-kompatibles Programm verwenden**: Installieren Sie einen FTP-Client auf Ihrem Computer (zum Beispiel FileZilla). Bitte kontaktieren Sie den Herausgeber der installierten Software, wenn Sie für deren Verwendung Hilfe brauchen, da sie nicht von OVH entwickelt wurde.
 
 - **SSH-Zugang verwenden**: Um auf Ihren Speicherplatz zuzugreifen, müssen die entsprechenden Befehle in einem Terminal ausgeführt werden. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot erforderlich.
 
