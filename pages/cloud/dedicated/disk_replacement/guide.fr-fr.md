@@ -208,5 +208,4 @@ Si vous possédez un serveur en RAID logiciel, il convient de lancer manuellemen
 
 [Mode Rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external}
 
-
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
