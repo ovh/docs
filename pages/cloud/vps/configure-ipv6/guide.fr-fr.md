@@ -367,6 +367,7 @@ Une fois fait, redémarrez votre serveur pour que la manipulation soit prise en 
 
 Pour revenir à une gestion automatique de votre réseau par Cloud-init, supprimez le fichier nouvellement créé ou déplacez-le dans un autre répertoire.
 
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
