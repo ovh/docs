@@ -117,7 +117,6 @@ Na página que aparecer, valide a eliminação. Esta última será concluída em
 
 ![managessl](images/manage-ssl-step9.png){.thumbnail}
 
-
 ## Quer saber mais?
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
