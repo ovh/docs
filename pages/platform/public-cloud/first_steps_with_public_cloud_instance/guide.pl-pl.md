@@ -1,128 +1,110 @@
 ---
-title: Rozpoczęcie pracy z instancją Public Cloud
-excerpt: Rozpoczęcie pracy z instancją Public Cloud
+title: 'Pierwsze kroki z instancją Public Cloud'
+excerpt: 'Dowiedz się, jak rozpocząć korzystanie z instancji Public Cloud'
 slug: rozpoczecie_pracy_z_instancja_public_cloud
 legacy_guide_number: g2018
-section: Tutoriale
+section: 'Pierwsze kroki'
 ---
 
+**Ostatnia aktualizacja z dnia 17-06-2019**
 
-## 
-Sekcja "Cloud" w panelu klienta OVH pozwala na proste i szybkie zarządzanie instancjami. 
+## Wprowadzenie
 
-Znajdziesz tu wszystkie swoje projekty podzielone na 2 części:
+Możesz zarządzać Twoimi instancjami Public Cloud w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Znajdziesz w nim wszystkie Twoje projekty związane z infrastrukturą (instancje, kopie zapasowe, dyski, klucze SSH, etc.) oraz przestrzenią dyskową (zawierającą listę Twoich kontenerów).
 
-- Infrastruktura, zwierająca wszystkie instancje, kopie zapasowe, dyski, klucze SSH, itp.
-- Przestrzeń dyskowa, zawierająca listę kontenerów.
+**Dowiedz się, jak rozpocząć korzystanie z instancji Public Cloud.**
 
+### Wymagania początkowe
 
-Przewodnik ten pokazuje, jak zarządzać instancjami i wyjaśnia, jak je edytować, restartować i usuwać.
+- [Utworzenie instancji Public Cloud na Twoim koncie](../tworzenie_instancji_w_panelu_klienta_ovh/)
+- [Posiadanie klucza SSH](../tworzenie-kluczy-ssh/)
 
+### W praktyce
 
-## Wymagania
+### Dostęp do interfejsu zarządzania instancją
 
-- [Utworzenie kluczy SSH]({legacy}1769)
-- [Utworzenie instancji w panelu klienta OVH]({legacy}1775)
+Na początek zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja „Cloud”, następnie kliknij `Serwery`{.action} na pasku usług po lewej stronie. Wybierz odpowiednią usługę Public Cloud. Upewnij się, czy w zakładce `Compute`{.action} wybrałeś „Instancje”.
 
+Pod zakładkami wyświetla się grafika oznaczająca Twoją instancję. Odnajdziesz tam kilka informacji:
 
+- model i cenę instancji;
+- jej nazwę i region;
+- dostępne zasoby;
+- przypisane dodatkowe dyski;
+- adres IP instancji.
 
+![public cloud](images/3415-2.png){.thumbnail}
 
-## 
-Tak wygląda menu dla danej instancji:
+### Edycja konfiguracji instancji
 
-![](images/img_3415.jpg){.thumbnail}
-Znajdują się tu następujące informacje:
+Na stronie z interfejsem zarządzania instancją, po kliknięciu strzałki skierowanej w dół, wybierz `Edytuj`{.action}.
 
-- Model i koszt instancji
-- Jej nazwa i region
-- Dostępne zasoby
-- Ewentualne dodatkowe dyski przypisane do instancji
-- Adres IP instancji
+![public cloud](images/3481-2.png){.thumbnail}
 
+W oknie, które się wyświetla możesz:
 
+- zmienić nazwę instancji;
+- zmienić model instancji;
+- zainstalować inny system operacyjny na instancji (**uwaga, bieżące dane zostaną usunięte w wyniku tej operacji**);
+- zmienić rozliczenie godzinowe na abonament miesięczny (faktura zostanie wówczas wystawiona na proporcjonalną kwotę należności za dni pozostałe do końca miesiąca).
 
+![public cloud](images/3481-3.png){.thumbnail}
 
-## Edycja instancji
-Po kliknięciu na  "Edytuj" w poprzednim menu, pojawi się nowe okno:
+### Tworzenie kopii zapasowej instancji
 
-![](images/img_3481.jpg){.thumbnail}
-W tym menu możesz:
+Możesz utworzyć kopię zapasową instancji na stronie z interfejsem zarządzania instancjami. W tym celu, po kliknięciu strzałki w dół, wybierz `Utwórz kopię zapasową`{.action}. Następnie postępuj zgodnie z instrukcjami pojawiającymi się na kolejnych etapach.
 
+Skorzystaj z naszego przewodnika [Tworzenie kopii zapasowej instancji](../kopia_zapasowa_instancji/). 
 
-- Zmienić nazwę instancji
-- Zmienić model instancji
-- Przeinstalować instancję korzystając z innego systemu operacyjnego
+![public cloud](images/3481-4.png){.thumbnail}
 
+### Pobranie danych do logowania
 
+Na stronie z interfejsem zarządzania instancją, po kliknięciu strzałki skierowanej w dół, wybierz `Informacje o logowaniu`{.action}. Uzyskasz w ten sposób komendę SSH, której należy użyć, aby zalogować się do instancji.
 
-## Uwaga
-Podczas reinstalacji dane są usuwane.
+![public cloud](images/3484-2.png){.thumbnail}
 
-- Przejść z abonamentu godzinowego na abonament miesięczny
+### Dostęp do konsoli VNC
 
+Konsola VNC umożliwia bezpośredni dostęp do instancji. Najpierw skonfiguruj hasło dla użytkownika „root”.
 
+Aby uzyskać dostęp do konsoli, po kliknięciu strzałki skierowanej w dół na stronie z interfejsem zarządzania instancją, wybierz `Konsola VNC`{.action}.
 
-## Uwaga
-Zostanie wygenerowana nowa faktura z proporcjonalną opłatą w zależności od dnia bieżącego miesiąca.
+![public cloud](images/3484-3.png){.thumbnail}
 
+Wówczas w oknie pojawi się konsola. 
 
-## Tworzenie kopii zapasowej
-W tym menu możesz utworzyć kopię zapasową instancji. Więcej informacji znajdziesz w tym przewodniku: 
+![public cloud](images/3484-4.png){.thumbnail}
 
-- [Kopia zapasowa instancji]({legacy}1881)
+### Restart instancji 
 
+Możesz zrestartować instancję, stosując jeden z dwóch sposobów:
 
+- restart programowy;
+- restart sprzętowy.
 
+Na stronie z interfejsem zarządzania instancją, po kliknięciu strzałki skierowanej w dół, wybierz `Wykonaj restart programowy`{.action} lub `Wykonaj restart sprzętowy`{.action}.
 
-## Informacje na temat połączenia
-Po wybraniu tej opcji wyświetli się okno z poleceniem ssh, za pomocą którego można się zalogować na instancję.
+Następnie potwierdź restart w oknie, które się wyświetli.
 
-![](images/img_3484.jpg){.thumbnail}
+![public cloud](images/3484-5.png){.thumbnail}
 
+### Reinstalacja instancji 
 
-## Konsola VNC
-Można uzyskać dostęp do konsoli VNC instancji.
+Możesz przeprowadzić reinstalację instancji, zachowując ten sam system operacyjny. **W wyniku tej operacji zostaną usunięte wszystkie bieżące dane.**
 
-Dzięki temu będziesz mieć bezpośredni dostęp do instancji. Najpierw trzeba będzie skonfigurować hasło dla użytkownika "root". 
+Na stronie z interfejsem zarządzania instancją, po kliknięciu strzałki skierowanej w dół, wybierz `Reinstaluj`{.action}. Zatwierdź następnie tę operację. 
 
-Udostępniamy przewodnik na ten temat:
+![public cloud](images/3484-6.png){.thumbnail}
 
-- [Dostęp do konsoli instancji w interfejsie Horizon]({legacy}1782)
+### Usuwanie instancji
 
+Możesz usunąć instancję. **Spowoduje to ostateczne usunięcie instancji oraz wszystkich przechowywanych na niej danych.**
 
+Na stronie z interfejsem zarządzania instancją, po kliknięciu strzałki skierowanej w dół, wybierz `Usuń`{.action}. Zatwierdź tę operację. 
 
+![public cloud](images/3484-7.png){.thumbnail}
 
-## Restart instancji
-W tym menu możesz wykonać restart instancji. Dostępne są 2 sposoby:
+## Sprawdź również
 
-- Restart programowy
-- Restart sprzętowy
-
-
-
-
-## Reinstalacja instancji
-Można wykonać reinstalację instancji na ten sam system operacyjny.
-
-## Uwaga
-Podczas reinstalacji dane są usuwane.
-
-
-## Usuwanie instancji
-Ostatnia proponowana opcja to usunięcie instancji. Pozwala to na zakończenie fakturowania, jeśli instancja jest fakturowana w trybie godzinowym.
-
-## Uwaga
-Po usunięciu nie będzie można odzyskać instancji i danych.
-
-
-## 
-
-- [Rozpoczęcie pracy z instancją Windows]({legacy}1995)
-- [Dostęp root i zdefiniowanie hasła]({legacy}1786)
-
-
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

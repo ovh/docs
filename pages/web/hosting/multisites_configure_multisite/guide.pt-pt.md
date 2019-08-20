@@ -136,7 +136,6 @@ Se, pelo contrário, pretender instalar manualmente o seu site web, deverá recu
 >
 
 
-
 ## Quer saber mais?
 
 ["Módulos 1 clique: como instalar um CMS para criar um site"](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}
