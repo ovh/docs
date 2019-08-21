@@ -63,16 +63,33 @@ sudo mount /dev/vdb1 /mnt
 mount /dev/vdb1
 ```
 
-
-
 > [!success]
->
-> Pour un montage de disque persistant, il faudra modifier le fichier
-> /etc/fstab :
-> - Récupérer l'ID du bloc
-> - Ajouter votre disque dans le fichier /etc/fstab :
->
 
+**Pour un montage de disque persistant, il faudra modifier le fichier `/etc/fstab` :**
+
+- Récupérer l'ID du bloc
+
+```bash
+$ sudo blkid
+
+/dev/vda1: UUID="51ba13e7-398b-45f3-b5f3-fdfbe556f62c" TYPE="ext4" PARTUUID="000132ff-01"
+/dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
+```
+
+- Ajouter votre disque dans le fichier `/etc/fstab` :
+
+```bash
+$ sudo vim /etc/fstab
+
+/etc/fstab: static file system information.
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point> <type> <options> <dump> <pass>
+UUID=51ba13e7-398b-45f3-b5f3-fdfbe556f62c / ext4 defaults 0 0
+UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt ext4 nofail 0 0
+```
 
 ### Depuis une instance sous Windows
 - Accéder au l'outil de gestion de disque
