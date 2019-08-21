@@ -29,12 +29,12 @@ section: 'Tutorials'
  }
 </style>
 
-In this tutorial we will see how you can connect [Codefresh](htts://codefrsh.io){.external}, a CI/CD platform for Kubernetes, to an OVH Managed Kubernetes cluster.
+In this tutorial we will see how you can connect [Codefresh](https://codefresh.io){.external}, a CI/CD platform for Kubernetes, to an OVH Managed Kubernetes cluster.
 
 
 ## Before you begin
 
-The first thing you need to follow this tutorial is a Codefresh account, you can get it directly at [Codefresh](htts://codefrsh.io){.external} site.
+The first thing you need to follow this tutorial is a Codefresh account, you can get it directly at [Codefresh](https://codefresh.io){.external} site.
 
 ![Codefresh](images/using-codefresh-01.jpg){.thumbnail}
 
