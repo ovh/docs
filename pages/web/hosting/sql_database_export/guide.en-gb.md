@@ -163,7 +163,7 @@ To follow this method, you will need to use commands from a terminal to interact
 Once you have logged in to your storage space via an SSH connection, you will need to run a command that will create a backup of your database. Below, we have provided an example of such a command, which you may find useful. Bear in mind that the backup will be created in the active directory when you send the command in your terminal.
 
 ```sh
-mysqldump --host=server_address -- user=user_name --password=user_password database_name > backup_filename.sql
+mysqldump --host=server_address --user=user_name --password=user_password database_name > backup_filename.sql
 ```
 
 Make sure you replace the generic information in this command (e.g. ‘user_name’, ‘user_password’ etc.) with the actual information for the database concerned. Once the backup is complete, you can save it to your own machine.
