@@ -15,7 +15,7 @@ We list here the most frequently requested OVH Managed Kubernetes features that 
 - **Load Balancer** Use the free preview of our integrated load balancer to expose your services on any port. Details available in the [exposing your services](../using-lb/) guide.
 - **Pod autoscaling** Use the  [standard horizontal pod autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/){.external} to distribute dynamically your containerized workloads on a given set of worker nodes.
 - **RBAC** Use the standard [RBAC authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external} mode to distribute rights within your organization and/or assure compatibility with specific applications.
-- **New versions** : We will support upcoming versions, during the quarter following their official release. We also propose managed version upgrades.
+- **New versions** : We support upcoming versions, during the quarter following their official release. We also propose managed version upgrades.
 - **Localisation choice** : We offer you the possibility to choose one of multiple OVH Public Cloud datacenters at cluster creation. We currently propose the service in France (GRA) and Canada (BHS). During 2019 we will add other OVH Public Cloud datacenters at cluster creation.
 
 ### Planned features

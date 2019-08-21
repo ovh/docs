@@ -55,7 +55,7 @@ In this tutorial we are using the most basic Ingress Controller: [NGINX Ingress 
 
 ### 1. Installing the NGINX Ingress Controller
 
-The official way to install the **NGINX Ingress Controller* is using a mandatory manifest file:
+The official way to install the **NGINX Ingress Controller** is using a mandatory manifest file:
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
