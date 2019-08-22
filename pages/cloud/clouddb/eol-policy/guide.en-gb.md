@@ -10,12 +10,10 @@ OVH managed databases services are based on several major releases of different 
 # Products coverage
 
 The products covered by this EOL policy are:
-- Cloud Databases Public services, dedicated DBMS instances reachable on the public network.
->  [CloudDB EOS and EOL announcements](../clouddb-eos-eol/guide.en-gb.md)
 
-- Cloud Databases Web Hosting services (also known as PrivateSQL services), dedicated DBMS instances reachable on the Web Hosting network.
-> [PrivateSQL EOS and EOL announcements](../privatesql-eos-eol/guide.en-gb.md)
+- Cloud Databases Public services, dedicated DBMS instances reachable on the public network ([see announcements](../clouddb-eos-eol/guide.en-gb.md)).
 
+- Cloud Databases Web Hosting services (also known as PrivateSQL services), dedicated DBMS instances reachable on the Web Hosting network ([see announcements](../privatesql-eos-eol/guide.en-gb.md)).
 
 Please note that the SharedSQL Web Hosting services, MySQL databases reachable on the Web Hosting network, are not yet covered by this policy.
 
@@ -23,19 +21,16 @@ Please note that the SharedSQL Web Hosting services, MySQL databases reachable o
 
 ![timeline](images/ovh.eol.policy.timeline.png)
 
-
 ## End-of-Life (EOL) announcement
 
 This is the publication of the End-of-Sale and the End-of-Support schedule.
 As a general rule, OVH will provide 90 days notice of the affected product's EOL schedule.
 This notice will appear on the docs.ovh.com website
 
-
 ## End-Of-Sale (EOS)
 
 The last date to order the product through OVH point-of-sale mechanisms. The product is no longer for sale.
 As said previously, this date is at least 90 days later than the EOL announcement date.
-
 
 ## End-Of-Support
 
@@ -43,9 +38,7 @@ The last date to receive applicable service and support for the product as entit
 After this date, all support services for the product are unavailable, and the product becomes obsolete.
 As a general rule, this date is at least 6 months later than the EOL announcement date.
 
-
 ## Obsolescence period
-
 
 This is the period right after the End-Of-Support date.
 
@@ -60,10 +53,14 @@ Because of the underlying DBMS products, this kind of upgrade can break existing
 **Service discontinuation**
 
 Instead of upgrading the service to the next available major version, we can decide to discontinue the service, for various reasons, such as:
+
 - The upgrade is discouraged by the software editor of the underlying DBMS,
+
 - The DBMS had been discontinued itself,
+
 - ...
 
 The discontinuation can be performed in two ways, depending on the cases:
 - We disable the service renewal. In this case, the service will be suspended at the end of your engagement.
+
 - We suspend the service and re-credit over-payment.
