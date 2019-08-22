@@ -5,7 +5,7 @@ slug: using-codefresh
 section: 'Tutorials'
 ---
 
-**Last updated March 8th, 2019**.
+**Last updated 1<sup>st</sup> July, 2019.**
 
 <style>
  pre {
@@ -21,18 +21,20 @@ section: 'Tutorials'
  pre.console code {
    border: solid 0px transparent;
    font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
  }
  .small {
      font-size: 0.75em;
  }
 </style>
 
-In this tutorial we will see how you can connect [Codefresh](htts://codefrsh.io), a CI/CD platform for Kubernetes, to an OVH Managed Kubernetes cluster.
+In this tutorial we will see how you can connect [Codefresh](https://codefresh.io){.external}, a CI/CD platform for Kubernetes, to an OVH Managed Kubernetes cluster.
 
 
 ## Before you begin
 
-The first thing you need to follow this tutorial is a Codefresh account, you can get it directly at [Codefresh](htts://codefrsh.io) site.
+The first thing you need to follow this tutorial is a Codefresh account, you can get it directly at [Codefresh](https://codefresh.io){.external} site.
 
 ![Codefresh](images/using-codefresh-01.jpg){.thumbnail}
 
@@ -179,7 +181,7 @@ Then click on *Save* to save your cluster on your Codefresh Dashboard.
 
 ### And now?
 
-Now you can follow [Codefresh official tutorial](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/) to deploy a Docker image to a Kubernetes cluster and also how to to setup an automated pipeline to automatically redeploy it when the source code changes.
+Now you can follow [Codefresh official tutorial](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/){.external} to deploy a Docker image to a Kubernetes cluster and also how to to setup an automated pipeline to automatically redeploy it when the source code changes.
 
 ![Connect an OVH Kubernetes cluster to Codefresh dashboard](images/using-codefresh-08.jpg){.thumbnail}
 

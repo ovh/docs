@@ -76,8 +76,8 @@ Non avendo ancora cambiato la configurazione del dominio, continuerai a ricevere
 
 Adesso che hai trasferito il tuo sito Web e creato i tuoi indirizzi email presso OVH, è necessario modificare la configurazione del tuo dominio. Per effettuare questa operazione, modifica i server DNS del tuo dominio con quelli di OVH (inviati via email e visibili nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}). Quest’azione ha due effetti:
 
-- **vincolare tecnicamente il tuo dominio alle soluzioni OVH**\: il tuo hosting OVH sarà utilizzato per mostrare il tuo sito Web e la ricezione dei nuovi messaggi avverrà sui tuoi indirizzi email creati presso OVH
-- **impedire un’interruzione del servizio**\: se il tuo Registrar decide di interrompere la propria configurazione DNS nel momento in cui trasferirai il tuo dominio, ciò non avrà nessuna conseguenza dato che usufruirai già della configurazione OVH
+- **vincolare tecnicamente il tuo dominio alle soluzioni OVH**: il tuo hosting OVH sarà utilizzato per mostrare il tuo sito Web e la ricezione dei nuovi messaggi avverrà sui tuoi indirizzi email creati presso OVH
+- **impedire un’interruzione del servizio**: se il tuo Registrar decide di interrompere la propria configurazione DNS nel momento in cui trasferirai il tuo dominio, ciò non avrà nessuna conseguenza dato che usufruirai già della configurazione OVH
 
 > [!warning]
 >

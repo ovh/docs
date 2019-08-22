@@ -5,7 +5,7 @@ order: 2
 section: Visualize your logs
 ---
 
-**Last updated 12th April, 2019**
+**Last updated 29th July, 2019**
 
 ## Objective
 
@@ -51,7 +51,7 @@ Once there, use your LDP credentials to sign in and set on the first page, for I
 
 ![Kibana setup](images/kibana_setup.png){.thumbnail}
 
-If you want to know what you can do with Kibana, you can fly to the [very good Elastic documentation](https://www.elastic.co/guide/en/kibana/5.6/index.html){.external}
+If you want to know what you can do with Kibana, you can fly to the [very good Elastic documentation](https://www.elastic.co/guide/en/kibana/6.7/index.html){.external}
 
 ## Go further
 

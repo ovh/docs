@@ -33,7 +33,7 @@ Please put this file under the **C:\\Program Files(x86)\\nxlog\\cert** folder.
 
 The configuration is pretty much straightforward. Here is the configuration file that allows you to configure your NXLog.
 
-```ApacheConf hl_lines="26 36 39"
+```ApacheConf hl_lines="26 36 38"
  ## This is a sample configuration file. See the nxlog reference manual about the
  ## configuration options. It should be installed locally and is also available
  ## online at http://nxlog.org/nxlog-docs/en/nxlog-reference-manual.html
@@ -71,7 +71,7 @@ The configuration is pretty much straightforward. Here is the configuration file
      Module      om_ssl
      Host        <your_cluster>.logs.ovh.com
      Port        12202
-     CAFile      %CERTDIR%\comodorsaaddtrustca.crt
+     CAFile      %CERTDIR%\ldp.crt
      AllowUntrusted FALSE
      OutputType      GELF_TCP
  </Output>

@@ -1,10 +1,10 @@
 ---
-title: 'Hosting www: Konfiguracja na tablecie Android 4.1.2'
-excerpt: Konfiguracja na tablecie Android 4.1.2
+title: 'Konfiguracja konta e-mail na tablecie z Android 4.1.2'
+excerpt: 'Konfiguracja na tablecie Android 4.1.2'
 slug: hosting_www_konfiguracja_na_tablecie_android_412
 legacy_guide_number: g1283
+section: 'Konfiguracja na smartfonie'
 ---
-
 
 ## Część 1: E-mail
 W pierwszej kolejności kliknij na ikonkę "E-mail".

@@ -135,6 +135,12 @@ Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 4194303
 
 On the `First sector` line, check that the default value is the same as the one you have previously written down. If it is different, use the value you have written down.
 
+Answer `N` to the question about the signature:
+
+```sh
+Do you want to remove the signature? [Y]es/[N]o: N
+```
+
 ### Making the partition bootable
 
 You now need to ensure that the partition is bootable. You can do this using the command `a`{.action}.

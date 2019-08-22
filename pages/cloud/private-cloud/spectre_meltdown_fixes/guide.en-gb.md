@@ -1,8 +1,8 @@
 ---
-title: 'Checking and applying patches for Spectre/Meltdown vulnerabilities on your hosts'
+title: Checking and applying patches for Spectre/Meltdown vulnerabilities on your hosts
 slug: check_patch_spectre_meltdown_vulnerabilities_hosts
-excerpt: 'Find out how to apply patches for the Spectre and Meltdown vulnerabilities'
-section: Security
+excerpt: Find out how to apply patches for the Spectre and Meltdown vulnerabilities
+section: Meltdown and Spectre information
 ---
 
 ## Objective

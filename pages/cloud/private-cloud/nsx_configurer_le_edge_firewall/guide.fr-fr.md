@@ -1,18 +1,25 @@
 ---
 title: Configurer le NSX Edge Firewall
 slug: configurer-le-nsx-edge-firewall
+excerpt: Créer des règles 
 legacy_guide_number: '7766384'
 section: NSX
+order: 04
 ---
 
+**Dernière mise à jour le 27/02/2019**
 
+## Objectif
 
-Le pare-feu permet d'appliquer des restrictions de communication par le trafic géré par la Edge , via plusieurs paramètres configurables en terme de source ou de destination par exemple.
+Le pare-feu permet d'appliquer des restrictions de communication par le trafic géré par la Edge, via plusieurs paramètres configurables en terme de source ou de destination par exemple.
 
-Les bases
----------
+**Ce guide explique la configuration de ce pare-feu**
 
-Afin de réaliser ce guide, il vous faut [accéder à l'interface de gestion NSX]({legacy}7766338) et avoir [déployé une NSX Edge Gateway]({legacy}7766362).
+## Prérequis
+
+- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
+
+## En pratique
 
 Pour commencer, rendez-vous dans la partie "NSX Edges" afin de trouver la liste des Edges déjà déployées. Vous pourrez alors effectuer un double-clic sur votre Edge pour accéder à sa configuration.
 
@@ -28,7 +35,7 @@ Vous pouvez très simplement activer ou désactiver la fonctionnalité de pare-f
 
 La désactivation du pare-feu désactive également les règles de NAT.
 
-Cliquez sur "Add Rule" (petit "+" vert) afin d'ajouter une règle de pare-feu. Cela ajoute simplement une ligne supplémentaire avec des valeurs par défaut dans la liste des règle (la règle 2 dans la capture ci-dessous).
+Cliquez sur `Add Rule` (petit `+`{action} vert) afin d'ajouter une règle de pare-feu. Cela ajoute simplement une ligne supplémentaire avec des valeurs par défaut dans la liste des règle (la règle 2 dans la capture ci-dessous).
 
 ![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_4.png){.thumbnail}
 
@@ -40,14 +47,13 @@ Aucune règle n'est appliquée avant que vous ayez cliqué sur "Publish" en haut
 
 ![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_5.png){.thumbnail}
 
-Détails sur les champs d'une règle
-----------------------------------
+## Détails sur les champs d'une règle
 
 Cette partie permet d'aborder les diverses possibilités que vous avez avec chacun des champs d'une règle, afin que vous puissiez ensuite configurer vos règles en fonction de vos besoins.
 
-### "No."
+### No.
 
-Cliquer sur le petit "+" au niveau du numéro d'une règle permet d'avoir les possibilités suivantes :
+Cliquer sur le petit `+`{action} au niveau du numéro d'une règle permet d'avoir les possibilités suivantes :
 
 - "Add Above" : ajouter une règle avant la règle sélectionnée (équivalent de "Add Rule") ;
 - "Add Below" : ajouter une règle après la règle sélectionnée (équivalent de "Add Rule") ;
@@ -58,38 +64,37 @@ Cliquer sur le petit "+" au niveau du numéro d'une règle permet d'avoir les po
 
 ![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_6.png){.thumbnail}
 
-### "Name"
+### Name
 
-Cliquer sur le petit "+" au niveau de la colonne "Name" d'une règle permet simplement de nommer la règle.
+Cliquer sur le petit `+`{.action} au niveau de la colonne "Name" d'une règle permet simplement de nommer la règle.
 
 Il est toujours préférable de donner un nom explicite à vos règles afin de pouvoir les retrouver rapidement en cas de besoin de modification par la suite.
 
 ![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_7.png){.thumbnail}
 
-### "Source" et "Destination"
+### Source et Destination
 
-Cliquer sur le petit "+" au niveau de la colonne "Source" ou "Destination" d'une règle permet de définir plusieurs paramètres de source ou de destination du trafic. Vous pouvez sélectionner plusieurs éléments comme un cluster, une machine virtuelle ou encore un groupe d'IP ou de groupes de ports distribués.
+Cliquer sur le petit `+`{.action} au niveau de la colonne `Source` ou `Destination` d'une règle permet de définir plusieurs paramètres de source ou de destination du trafic. Vous pouvez sélectionner plusieurs éléments comme un cluster, une machine virtuelle ou encore un groupe d'IP ou de groupes de ports distribués.
 
-Vous avez également un bouton "IP" vous permettant de renseigner directement des IP sans passer par la liste de possibilités du bouton "+".
+Vous avez également un bouton `IP`{.action} vous permettant de renseigner directement des IP sans passer par la liste de possibilités du bouton `+`{.action}.
 
 ![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_8.png){.thumbnail}
 
 La source et la destination d'une même règle ne doivent pas forcément se baser sur les mêmes éléments. Vous pouvez par exemple avoir une source en provenance d'un groupe d'IP et une destination correspondant à un cluster.Vous pouvez créer des [groupes d'objets]({legacy}7766837). Cela vous permet d'indiquer par exemple que toutes les machines virtuelles qui incluent "Web" dans leur nom font partie du groupe. Ce groupe peut alors être renseigné en source ou destination pour appliquer une règle à toutes les machines virtuelles qui incluent "Web", sans avoir à modifier la règle à chaque ajout.
 
-### "Service"
+### Service
 
-Cliquer sur le petit "+" au niveau de la colonne "Service" d'une règle permet de définir les services concernés par la règle. Vous avez une liste exhaustive par défaut mais vous pouvez également ajouter un service personnalisé et le port associé via le bouton "New Service...".
+Cliquer sur le petit `+`{.action} au niveau de la colonne "Service" d'une règle permet de définir les services concernés par la règle. Vous avez une liste exhaustive par défaut mais vous pouvez également ajouter un service personnalisé et le port associé via le bouton `New Service...`{.action}.
 
 ![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_9.png){.thumbnail}
 
 ### "Action"
 
-Cliquer sur le petit "+" au niveau de la colonne "Action" vous permet de définir si la règle accepte ou refuse le trafic renseigné dans les champs précédents. Dans la majorité des cas, si vous disposez d'une règle de refus global, vous ajouterez principalement des règles d'autorisation.
+Cliquer sur le petit "+" au niveau de la colonne `Action` vous permet de définir si la règle accepte ou refuse le trafic renseigné dans les champs précédents. Dans la majorité des cas, si vous disposez d'une règle de refus global, vous ajouterez principalement des règles d'autorisation.
 
 ![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_10.png){.thumbnail}
 
-Exemples de règles
-------------------
+## Exemples de règles
 
 Dans l'exemple ci-dessous, l'utilité des règles est la suivante:
 
@@ -101,4 +106,6 @@ Dans l'exemple ci-dessous, l'utilité des règles est la suivante:
 - 4 : règle qui autorise plusieurs flux de protocoles sortant vers n'importe quelle destination ;
 - 5 : règle par défaut qui refuse tout le trafic n'étant pas autorisé dans les règles précédentes.
 
+## Aller plus loin
 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

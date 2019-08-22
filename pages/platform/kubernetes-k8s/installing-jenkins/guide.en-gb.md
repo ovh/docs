@@ -5,7 +5,7 @@ excerpt: 'Find out how to install Jenkins on OVH Managed Kubernetes'
 section: Tutorials
 ---
 
-**Last updated 25th February, 2019.**
+**Last updated 1<sup>st</sup> July, 2019.**
 
 <style>
  pre {
@@ -21,27 +21,30 @@ section: Tutorials
  pre.console code {
    border: solid 0px transparent;
    font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
  }
  .small {
      font-size: 0.75em;
  }
 </style>
 
-In this tutorial we are going to guide you with the install of [Jenkins](https://jenkins.io/) on your OVH Managed Kubernetes Service.
+In this tutorial we are going to guide you with the install of [Jenkins](https://jenkins.io/){.external} on your OVH Managed Kubernetes Service.
 
-We are going to install Jenkins master and slave cluster utilizing the [Jenkins Kubernetes plugin](https://wiki.jenkins.io/display/JENKINS/Kubernetes+Plugin).
+We are going to install Jenkins master and slave cluster utilizing the [Jenkins Kubernetes plugin](https://wiki.jenkins.io/display/JENKINS/Kubernetes+Plugin){.external}.
 
 
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
-You also need to have [Helm](https://docs.helm.sh/) installer on your workstation and your cluster, please refer to the [How to install Helm on OVH Managed Kubernetes Service](../installing-helm) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVH Managed Kubernetes Service](../installing-helm/) tutorial.
 
 
 ## Installing the Jenkins Helm chart
 
-For this tutorial we are using the [Jenkins Helm chart](https://github.com/helm/charts/tree/master/stable/jenkins) found on Helm repositories.
+For this tutorial we are using the [Jenkins Helm chart](https://github.com/helm/charts/tree/master/stable/jenkins){.external} found on Helm repositories.
+
 The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVH Managed Kubernetes Service.
 
 We are configuring the Helm chart to use `NodePort` as service type (because default `LoadBalancer` type isn't supported in the beta phase of OVH Managed Kubernetes Service). 
@@ -61,7 +64,7 @@ helm install --set Master.ServiceType=NodePort stable/jenkins
 
 This will install your Jenkins mater:
 
-<pre class="console"><code>$ helm install --set Master.ServiceType=NodePort stable/jenkins
+<pre class="console"><code>$ helm install --set master.servicetype=NodePort stable/jenkins
 NAME:   kissed-stingray
 LAST DEPLOYED: Mon Oct 15 15:26:34 2018
 NAMESPACE: default
@@ -106,7 +109,7 @@ For more information on running Jenkins on Kubernetes, visit:
 https://cloud.google.com/solutions/jenkins-on-container-engine
 </code></pre>
 
-The instructions aren't well suited to your OVH Managed Kubernetes cluster, as they suppose you're deploying services with the `LoadBalancer` type. Instead of using `NODE_IP`, we should use the nodes URL found in the OVH Cloud Manager (see the  [OVH Managed Kubernetes Quickstart](https://labs.ovh.com/kubernetes-k8s/documentation/tutorial/quickstart)).
+The instructions aren't well suited to your OVH Managed Kubernetes cluster, as they suppose you're deploying services with the `LoadBalancer` type. Instead of using `NODE_IP`, we should use the nodes URL found in the OVH Cloud Manager (see the  [OVH Managed Kubernetes Quickstart](../deploying-hello-world/)).
 
 In my case:
 

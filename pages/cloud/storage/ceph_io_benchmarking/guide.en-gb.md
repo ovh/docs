@@ -1,10 +1,9 @@
 ---
-title: Storage Benchmarking
-slug: ceph/io-benchmarking
-excerpt: Evaluating performance of Cloud Disk Array
-section: Cloud Disk Array
+title: 'Storage Benchmarking'
+slug: ceph-io-benchmarking
+excerpt: 'Evaluating performance of Cloud Disk Array'
+section: 'Cloud Disk Array'
 ---
-
 
 ## Before you start
 Before starting benchmarks get familiar with your environment. Even small missed detail can make your benchmark invalid. For example, there is no point in testing performance of Cloud Disk Array from different DC. While it will be working, latencies between DC are too high for such setup.

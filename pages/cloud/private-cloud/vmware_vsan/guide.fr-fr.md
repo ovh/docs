@@ -1,8 +1,9 @@
 ---
-title: 'Mettre en oeuvre l''hyperconvergence VMware avec vSAN'
+title: Mettre en oeuvre l''hyperconvergence VMware avec vSAN
 slug: vmware-vsan
-excerpt: 'Découvrez comment mettre en oeuvre la puissance de l''hyperconvergence pour vos machines virtuelles avec vSAN'
-section: 'Fonctionnalités VMware vSphere'
+excerpt: Découvrez comment mettre en oeuvre la puissance de l'hyperconvergence pour vos machines virtuelles avec vSAN
+section: Fonctionnalités VMware vSphere
+order: 08
 ---
 
 **Dernière mise à jour le 18/12/2018**

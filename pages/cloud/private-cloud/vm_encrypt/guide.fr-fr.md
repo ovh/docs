@@ -1,11 +1,12 @@
 ---
-title: 'Activation du chiffrement des machines virtuelles (VM Encryption)'
+title: Activation du chiffrement des machines virtuelles (VM Encryption)
 slug: vm-encrypt
-excerpt: 'Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles'
-section: 'Fonctionnalités VMware vSphere'
+excerpt: Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles
+section: Fonctionnalités VMware vSphere
+order: 07
 ---
 
-**Dernière mise à jour le 11 octobre 2018**
+**Dernière mise à jour le 18/02/2018**
 
 ## Objectif
 

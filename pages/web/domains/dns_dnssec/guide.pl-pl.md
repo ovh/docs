@@ -1,142 +1,64 @@
 ---
-title: 'Konfiguracja DNSSEC dla domeny'
-excerpt: ''
+title: 'Zabezpieczenie domeny za pomocą DNSSEC'
+excerpt: 'Dowiedz się, jak chronić domeny przed atakiem DNS (Cache Poisoning) za pomocą DNSSEC'
 slug: jak_skonfigurowac_strefe_dnssec_dla_domeny
 legacy_guide_number: g609
 section: Bezpieczeństwo
+order: 1
 ---
 
-## Wymagania
+**Ostatnia aktualizacja z dnia 24-04-2019**
 
-- Domena musi byc zarejestrowana w OVH. Jest to wymóg techniczny związany z koniecznością aktualizacji wpisów DS po stronie registry.	
-- Domena musi miec jedno z tych rozszerzeń: .fr, .com, .be, .net, .eu, .pl, .re, .pm, .yt, .wf, .tf, .info, .li, .ch, .biz, .de, .sx, .org, .se, .nl, .in, .us, .at, .nu, .la, .ac, .cz, .me, .sh, .io, .uk, .co.uk, .me.uk, .org.uk, lub nowe rozszerzenie, na przykład .paris, .club, .xyz, .wiki, .ink, i wszystkie rozszerzenia firmy Donuts. (wkrótce pojawia się inne rozszerzenia)
+## Wprowadzenie
 
+Konfiguracja DNS domeny zapisana jest na serwerach DNS. W przypadku klasycznego użycia konfiguracja ta umożliwia powiązanie domeny z serwerem lub serwerami hostującymi stronę WWW i konta e-mail. W ostatnich latach atakujący opracowali bardzo skuteczne metody zatruwania serwerów DNS, dzięki czemu mogą przekierowywać ruch z domeny na inne serwery. Możesz ochronić Twoją domenę przed tego typu atakami, korzystając z DNSSEC.
 
+**Dowiedz się, jak aktywować DNSSEC dla Twojej domeny, aby zapewnić jej ochronę przed atakami DNS typu Cache Poisoning.**  
+Dla lepszego zrozumienia, jak ta ochrona działa, zachęcamy do lektury treści na stronie: [Jak działa usługa DNSSEC](https://www.ovh.pl/domeny/usluga_dnssec.xml){.external}.
 
+## Wymagania początkowe
 
-## Przypadek zastosowania
-W przewodniku tym opisujemy przypadek korzystania z serwerów DNS hostingu OVH. OVH zarządza kluczami, aktualizacją wpisów DS i podpisywaniem strefy w sposób transparentny.
-Serwery DNS możesz sprawdzić logując się do [panelu klienta](https://www.ovh.com/manager/web) i przechodząc do sekcji Domeny, Zarządzanie DNS. Jeśli serwery DNS na liście mają formę nsXX.ovh.net i dnsXX.ovh.net lub Xns200.anycast.me, korzystasz z serwerów DNS OVH.
+- Posiadanie domeny zarejestrowanej w OVH
+- Wybrana domena powinna posiadać rozszerzenie kompatybilne z DNSSEC
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web`{.action}
 
+## W praktyce
 
-## Aktywacja
+Aktywacja DNSSEC jest możliwa w dwóch przypadkach:
 
-- W pierwszej kolejności zaloguj się do [panelu klienta](https://www.ovh.com/manager/web).
+- **Twoja domena korzysta z serwerów DNS OVH**: aktywacji dokonujesz w prosty sposób w Panelu klienta;
 
-- Wybierz domenę w sekcji "Domeny".
+- **Twoja domena nie używa serwerów DNS OVH**: zwróć się do administratora zarządzającego jej konfiguracją DNS.  Jeśli sam zarządzasz domeną, zainstaluj DNSSEC ręcznie. W tym przypadku skorzystaj z dokumentacji technicznej dostępnej online.
 
+> [!primary]
+>
+> Aby sprawdzić, czy Twoja domena używa konfiguracji DNS OVH, kliknij zakładkę `Serwery DNS` w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.
+>
 
+### Etap 1: logowanie do interfejsu zarządzania domeną
 
-![](images/img_2896.jpg){.thumbnail}
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web`{.action}. Po zalogowaniu kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting.
 
-- W sekcji "Zarządzanie DNS" możesz sprawdzić, czy korzystasz z serwerów DNS OVH.
+Na stronie, która się wyświetla widoczne są ogólne informacje o hostingu. 
 
+![DNSSEC](images/activate-dnssec-step1.png){.thumbnail}
 
+### Etap 2: zarządzanie DNSSEC domeny
 
-![](images/img_3966.jpg){.thumbnail}
+W zakładce `Informacje ogólne`{.action} możesz sprawdzić stan aktywacji DNSSEC dla Twojej domeny.
 
-- Po dokonaniu weryfikacji kliknij na przycisk aktywacji opcji DNSSEC.
+W sekcji „Bezpieczeństwo” sprawdź status obok wzmianki „Zabezpieczenie DNS - DNSSEC”.
 
+![DNSSEC](images/activate-dnssec-step2.png){.thumbnail}
 
+Używając przycisku aktywacji, będziesz mógł włączyć lub wyłączyć DNSSEC dla Twojej domeny. Wyświetli się wówczas nowe okno, w którym powinieneś zatwierdzić zmianę.
 
-![](images/img_3967.jpg){.thumbnail}
+![DNSSEC](images/activate-dnssec-step3.png){.thumbnail}
 
-- Pojawi się okno pop-up z opcją potwierdzenia operacji. Operacja ta może trwać do 24 godzin.
+### Etap 3: czas aktywacji / dezaktywacji DNSSEC 
 
+Na efekty włączenia / wyłączenia DNSSEC należy poczekać maksymalnie 24 godziny.  
 
+## Sprawdź również
 
-![](images/img_2895.jpg){.thumbnail}
-
-- Po potwierdzeniu operacji przycisk aktywacji zmięni się.
-
-
-
-![](images/img_3968.jpg){.thumbnail}
-
-- Status operacji możesz sprawdzić w sekcji "Operacje w trakcie".
-
-
-
-![](images/img_3969.jpg){.thumbnail}
-
-
-## Wyłączanie
-Jeśli włączyłeś protokół DNSSEC, musisz ponownie wybrać domenę i kliknąć na "przycisk wyłączania". Pojawi się okno pop-up z opcją potwierdzenia operacji. Jeśli aktywacja trwa, należy poczekać do jej zakończenia (przycisk nie będzie dostępny).
-
-![Wyłączanie](images/img_3970.jpg){.thumbnail}
-
-
-## Sposób 1: korzystając z przeglądarki Firefox lub Chrome
-Możesz zainstalować rozszerzenie Firefox, które pozwala na sprawdzenie, czy odwiedzane strony są zabezpieczone przez DNSSEC, i jeśli tak, jaki jest wynik weryfikacji. Rozszerzenie to jest [dostępne tutaj](http://www.dnssec-validator.cz/). Po jego zainstalowaniu zobaczysz klucz z lewej strony w pasku adresu przeglądarki. W przypadku domen, dla których klucz jest zielony, IP jest weryfikowane przez DNSSEC.
-
-![Moduł Firefox weryfikacji DNSSEC: ta strona jest zabezpieczona](images/img_119.jpg){.thumbnail}
-Jeśli klucz jest pomarańczowy, oznacza to, że rekursywny serwer DNS twojego dostawcy internetu nie jest kompatybilny z DNSSEC. Możesz korzystać z alternatywnych serwerów DNS, aby wykonać tą weryfikację. Moduł Firefox proponuje listę serwerów DNS, która jest dostępna po kliknięciu prawym przyciskiem myszy na klucz i po wybraniu "Preferences".
-
-Wersja alpha tego rozszerzenia jest dostępna również dla przeglądarki Chrome na [tej stronie](https://chrome.google.com/webstore/detail/hpmbmjbcmglolhjdcbicfdhmgmcoeknm).
-
-
-## Sposób 2: z poziomu konsoli, w przypadku wcześniejszej deklaracji klucza źródłowego
-Aby sprawdzić, czy DNSSEC jest poprawnie skonfigurowany dla danej domeny, możesz skorzystać z narzędzia dig. Aby móc wykonać potwierdzenie DNSSEC, narzędzie to musi znać publiczny klucz źródłowy (z którym podpisywany jest klucz, który podpisuje strefę root "."). Klucz ten jest dostępny w kilku miejscach w internecie. Podajemy go tutaj, możesz go skopiować do pliku /etc/trusted-key.key (wszystko musi być w jednej linii) :
-
-
-```
-. 172717 IN DNSKEY 257 3 8 AwEAAagAIKlVZrpC6Ia7gEzahOR+9W29euxhJhVVLOyQbSEW0O8gcCjF
-FVQUTf6v58fLjwBd0YI0EzrAcQqBGCzh/RStIoO8g0NfnfL2MTJRkxoX
-bfDaUeVPQuYEhg37NZWAJQ9VnMVDxP/VHL496M/QZxkjf5/Efucp2gaD
-X6RS6CXpoY68LsvPVjR0ZSwzz1apAzvN9dlzEheX7ICJBBtuA6G3LQpz
-W5hOA2hzCTMjJPJ8LbqF6dsV6DoBQzgul0sGIcGOYl7OyQdXfZ57relS
-Qageu+ipAdTTJ25AsRTAoub8ONGcLmqrAmRLKBP1dfwhYB4N7knNnulq
-QxA+Uk1ihz0=
-```
-
-
-Nie możesz go skopiować bez sprawdzenia jego autentyczności, ponieważ w przypadku DNSSEC, jak w każdym systemie kryptograficznym opartym na kanale zaufania, pozycje źródłowe są najważniejsze. Oficjalny punkt dystrybucyjny jest [w IANA](https://data.iana.org/root-anchors/), a plik jest podpisany przez GPG.
-Należy uruchomić następujące polecenie (przykład dotyczy strony www.eurid.eu):
-
-```
-$ dig +sigchase www.eurid.eu
-;; RRset to chase:
-www.eurid.eu. 544 IN CNAME eurid.eu.
-[...]
-;; WE HAVE MATERIAL, WE NOW DO VALIDATION
-;; VERIFYING DS RRset for eu. with DNSKEY:55231: success
-;; OK We found DNSKEY (or more) to validate the RRset
-;; Ok, find a Trusted Key in the DNSKEY RRset: 19036
-;; VERIFYING DNSKEY RRset for . with DNSKEY:19036: success
-
-;; Ok this DNSKEY is a Trusted Key, DNSSEC validation is ok: SUCCESS
-```
-
-
-Ostatnia linia informuje, że weryfikacja powiodła się. 
-
-Jeśli otrzymasz poniższy komunikat, oznacza to, że dig nie odnalazł klucza źródłowego w /etc/trusted-key.key :
-
-```
-$ dig +sigchase www.eurid.eu
-No trusted keys present
-```
-
-
-
-
-## Sposób 3: z poziomu konsoli, bez wcześniejszej deklaracji klucza źródłowego
-Jeśli nie możesz zdefiniować klucza publicznego, możesz wybrać zewnętrzny serwer DNS, aby wykonać weryfikację. Niektóre rekursywne serwery DNS potwierdzające DNSSEC są dostępne publicznie przez różne podmioty. Na przykład serwery [DNS-OARC](https://www.dns-oarc.net/oarc/services/odvr), które wykorzystamy dla poniższego przykładu, w którym sprawdzamy IP strony www.eurid.eu:
-
-
-
-
-```
-$ dig +dnssec www.eurid.eu @149.20.64.21
-
-; <<>> DiG 9.7.3 <<>> +dnssec www.eurid.eu @149.20.64.21
-;; global options: +cmd
-;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 26117
-;; flags: qr rd ra ad; QUERY: 1, ANSWER: 6, AUTHORITY: 7, ADDITIONAL: 16
-[...]
-```
-
-
-Obecność oznacznika "ad" wskazuje, że otrzymana odpowiedź została potwierdzona przez serwer rekursywny.
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -1,10 +1,10 @@
 ---
-title: 'Hosting www: Konfiguracja filtrów e-mail w panelu klienta'
+title: 'Konfiguracja filtrów e-mail w Panelu klienta'
 excerpt: 'Hosting www: Konfiguracja filtrów e-mail w panelu klienta'
 slug: hosting_www_konfiguracja_filtrow_e-mail_w_panelu_klienta
 legacy_guide_number: g1973
+section: 'Funkcjonalności kont e-mail'
 ---
-
 
 ## Czym jest filtr e-mail?
 Filtr pozwala na skonfigurowanie warunków i operacji do wykonania.

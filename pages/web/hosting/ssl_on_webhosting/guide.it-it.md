@@ -1,178 +1,125 @@
 ---
-title: I certificati SSL sugli hosting Web OVH
-excerpt: I diversi tipi di certificati SSL in OVH
-id: '1594'
+title: 'Gestire un certificato SSL su un hosting Web'
 slug: i_certificati_ssl_sugli_hosting_web_ovh
+excerpt: 'Come attivare e utilizzare un certificato SSL sugli hosting Web OVH'
+section: SSL
+order: 1
 legacy_guide_number: g1594
 ---
 
+**Ultimo aggiornamento: 08/07/2019**
 
-## Certificato SSL Gratuito (Let's Encrypt)
-La tua offerta di hosting Web aggiunge su tutti i tuoi siti un certificato SSL che permette di cifrare la comunicazione tra i visitatori e il tuo sito. Per trasmettere informazioni in modo sicuro, è sufficiente utilizzare https:// al posto di http://.
+## Obiettivo
 
-Se la versione HTTPS del tuo sito funziona correttamente, ti consigliamo di aggiungere un reindirizzamento per consentire ai tuoi utenti di raggiungerlo automaticamente in HTTPS. Per impostare il reindirizzamento, aggiungi queste righe nel file .htaccess che si trova nella root del tuo sito (o crealo se non esiste ancora):
+Le operazioni di gestione degli hosting Web OVH, disponibili direttamente nell’area utente dedicata, includono diverse azioni eseguibili sui certificati SSL generati in OVH o ottenuti presso altri provider e poi importati. Installare questi certificati è importante, in quanto consentono ai siti Internet di stabilire una connessione SSL sicura alla rete ed essere accessibili in HTTPS. 
 
+**Questa guida ti mostra come eseguire le principali operazioni per gestire un certificato SSL sul tuo hosting Web OVH**.
 
-```
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.tuodominio.it/$1 [R=301,L]
-```
+## Prerequisiti
 
+- Disporre di un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} attivo
+- Aver registrato almeno un [dominio](https://www.ovh.it/domini/){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}.
 
-Se utilizzi un CMS, è possibile che questo reindirizzamento sia gestito di default. Per maggiori informazioni, consulra la docuemntazione del tuo CMS.
+## Procedura
 
-Utilizzare un certificato SSL potrebbe modificare il funzionamento del tuo sito. Per verificare l'assenza degli errori più comuni associati al suo utilizzo, consulta questa guida: []({legacy}2220)
-I certificati SSL gratuiti (Let's Encrypt) non sono compatibili con i domini che contengono caratteri accentati (IDN)
+Per gestire i certificati SSL attivi sugli hosting Web OVH sono disponibili diverse azioni. Prosegui nella lettura di questa guida in base all’operazione che vuoi effettuare. 
 
+- [Attivare un certificato SSL su un hosting Web](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/#attivare-un-certificato-ssl-su-un-hosting-web){.external}: permette di utilizzare un certificato SSL gratuito o a pagamento ordinato in OVH o importarne uno ottenuto presso un fornitore esterno.
 
-## Certificati SSL a pagamento
-A breve con OVH sarà possibile utilizzare certificati SSL a pagamento (di tipo DV, OV e EV) che garantiranno una cifratura migliore e permetteranno, ad esempio, la verifica dei dati da parte dei Registri di certificati.
+- [Attivare un certificato SSL su un multisito](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/#attivare-un-certificato-ssl-su-un-multisito){.external}: permette di utilizzare, se il servizio e il certificato lo consentono, una connessione protetta da SSL per i multisiti. 
 
+- [Rigenerare un certificato SSL di un hosting Web](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/#rigenerare-un-certificato-ssl-di-un-hosting-web){.external}: permette di rigenerare il certificato dell’hosting in caso di attivazione dell’SSL su uno o più multisiti. 
 
-## Certificati SSL esterni
-Sugli hosting Web OVH è possibile importare un certificato SSL esterno, senza restrizioni relativamente al tipo.
+- [Eliminare un certificato SSL da un hosting Web](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/#eliminare-un-certificato-ssl-di-un-hosting-web){.external}: permette di rimuovere il certificato SSL da un hosting. Questa operazione non è priva di rischi e può avere impatto sugli eventuali siti che lo utilizzano. 
 
-Per sapere come effettuare questa operazione, [clicca qui](#IMPORT_SSL).
+### Attivare un certificato SSL su un hosting Web
 
+Gli hosting Web OVH permettono di attivare diversi tipi di [certificati SSL](https://www.ovh.it/ssl/){.external}:
 
-## Attiva il certificato SSL gratuito
-Se il certificato SSL non risulta attivo sul tuo hosting:
+- un certificato SSL gratuito Let’s Encrypt, [incluso nei piani di hosting Web compatibili](https://www.ovh.it/ssl/){.external}
+- un certificato SSL a pagamento, [in opzione nei piani di hosting Web compatibili](https://www.ovh.it/ssl/){.external}
+- un certificato SSL ottenuto presso un altro provider e importato sull’hosting Web OVH
 
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio nella sezione `Hosting`{.action} del menu a sinistra. Assicurati di trovarti nella scheda `Informazioni generali`{.action}. Nel riquadro **Configurazione**, sotto **Certificato SSL** dovrebbe comparire la voce “No”: significa che sull’hosting Web non risulta installato nessun certificato SSL. Clicca sui tre puntini in corrispondenza di “Ceritificato SSL” e seleziona `Ordina un certificato SSL`{.action}.
 
-- accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login.html)
+Nel caso che invece compaia la voce “Sì”, significa che sull’hosting Web è già installato un certificato e non sarà possibile ordinarne un altro fino a quando quello esistente risulterà attivo.
 
-- seleziona il tuo hosting nella sezione Hosting del menu a sinistra
+![Gestione SSL](images/manage-ssl-step1.png){.thumbnail}
 
-- clicca su Ordina un certificato SSL
+Nella nuova finestra, seleziona il certificato che vuoi generare. Ti ricordiamo che, in base al [piano di hosting Web](https://www.ovh.it/hosting-web/){.external} attivo e alla sua configurazione, alcune delle soluzioni elencate in questa guida potrebbero non essere disponibili. Una volta effettuata la scelta, clicca sul pulsante `Seguente`{.action}.
 
+![Gestione SSL](images/manage-ssl-step2.png){.thumbnail}
 
-È possibile attivare SSL Let's Encrypt su un massimo di 100 domini e sttodomini per ogni hosting.
+A seconda dell’opzione selezionata, potrebbero essere necessari alcuni step aggiuntivi:
 
-![](images/img_4584.jpg){.thumbnail}
-Seleziona l'opzione Certificato gratuito (Let's encrypt) e clicca su Seguente.
+- i **certificati SSL gratuiti** non dovrebbero richiedere ulteriori azioni, tranne nell’eventualità che un elemento tecnico impedisca l’attivazione del certificato (in questo caso compare un messaggio nello Spazio Cliente OVH, che indica gli elementi da verificare) o la convalida del dominio necessaria per il suo ottenimento. Anche in questo caso riceverai una notifica e sarà necessario seguire le indicazioni fornite.
 
-![](images/img_4607.jpg){.thumbnail}
-Attivazione del tuo hosting con SSL in corso...
+- i **certificati SSL a pagamento** richiedono il completamento degli step del processo d’ordine per essere generati. Per alcune tipologie sono necessarie convalide specifiche ed è quindi possibile che vengano inviate una o più email a questo proposito. Segui le indicazioni contenute in questi messaggi per completare l’installazione.
 
-![](images/img_4587.jpg){.thumbnail}
-Una volta generato il certificato, il protocollo HTTPS è disponibile in poche ore, il tempo necessario alla sua applicazione sull'infrastruttura.
+- l’**importazione di un certificato SSL** richiede l’inserimento di alcune informazioni aggiuntive. Segui le indicazioni fornite dal provider che lo ha generato. 
 
+In base alla tipologia di certificato scelta, l’installazione può durare da pochi minuti a diversi giorni. Per verificare che l’operazione sia stata effettuata correttamente, ritorna alla scheda `Informazioni generali`{.action} dello Spazio Cliente OVH e verifica che nel riquadro **Configurazione** sotto **Certificato SSL** compaia la voce “Sì”. 
 
-## Disattiva il certificato SSL gratuito
-Se vuoi eliminare il certificato SSL già attivo sul tuo hosting:
+![Gestione SSL](images/manage-ssl-step4.png){.thumbnail}
 
+Una volta completata l’operazione, passa allo step successivo per assicurarti che su tutti i tuoi siti sia attiva una connessione SSL.
 
-- accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login.html).
+### Attivare un certificato SSL su un multisito
 
-- seleziona il tuo hosting nella sezione Hosting del menu a sinistra
+In base al [certificato SSL](https://www.ovh.it/ssl/){.external} ordinato, hai la possibilità di attivare una connessione protetta tramite SSL su uno o più dei tuoi multisiti. Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} del menu a sinistra e clicca sulla scheda `Multisito`{.action}.
 
-- clicca su Elimina SSL e Conferma
+Visualizzi una tabella con tutti i domini aggiunti sul tuo hosting: nella colonna “SSL” viene indicato lo stato di attivazione delle connessioni SSL sicure sui diversi multisiti. 
 
+![Gestione SSL](images/manage-ssl-step5.png){.thumbnail}
 
-Una volta eliminato il certificato, il protocollo HTTPS viene rimosso in poche ore, il tempo necessario alla sua cancellazione dall'infrastruttura.
+Gli stati visualizzati possono essere tre:
 
-![](images/img_4593.jpg){.thumbnail}
+|Stato|Descrizione|
+|---|---|
+|Attivo|Sul multisito è già attivo un certificato SSL. Se il tuo sito non è disponibile in HTTPS, consulta la nostra guida [Attivare HTTPS su un sito Internet tramite il certificato SSL](https://docs.ovh.com/it/hosting/attivare-https-su-sito-internet-tramite-certificato-ssl/){.external}.|
+|Da generare|Sul multisito è stato attivato un certificato SSL ma tecnicamente non è ancora abilitato. In questo caso, è necessario rigenerarlo in modo che includa i nuovi domini del multisito.|
+|Disattivo|Sul multisito non è attivo nessun certificato SSL. Per attivarlo, segui le indicazioni descritte qui sotto.|
 
+Per attivare un certificato SSL su un multisito, clicca sull’icona a forma di ingranaggio in corrispondenza del servizio interessato e seleziona `Modifica`{.action}. Nella nuova finestra, scegli l’opzione `SSL`{.action} e completa gli step fino alla conferma dell’operazione.
 
-## Gestisci il certificato SSL sui tuoi multisiti
-Seleziona il tuo hosting nel tuo Spazio Cliente OVH e clicca sulla scheda Multisito.
+Una volta inoltrata la richiesta di attivazione, lo stato della connessione SSL per il multisito si aggiornerà in pochi secondi e diventerà “Da generare”. Ripeti questa operazione per tutti i multisiti su cui vuoi attivare L’SSL. A questo punto puoi passare allo step successivo.
 
-Nella colonna SSL, verifica se il certificato è attivo o disattivo per il tuo multisito.
-Per modificarne lo stato, clicca sull'icona a forma di matita.
+![Gestione SSL](images/manage-ssl-step6.png){.thumbnail}
 
-![](images/img_4595.jpg){.thumbnail}
-Per attivare il certificato, seleziona l'opzione SSL e clicca su Seguente.
-Verifica che tutte le informazioni siano corrette e Conferma.
+### Rigenerare un certificato SSL di un hosting Web
 
-![](images/img_4599.jpg){.thumbnail}
-Il certificato passerà in Da generare, uno stato temporaneo che indica che la modifica al tuo multisito verrà gestita con la prossima generazione del certificato.
+> [!primary]
+>
+> Questa operazione è valida esclusivamente per i certificati che consentono l’attivazione di una connessione SSL sicura su più multisiti.
+>
 
-In questo modo, puoi configurare tutti i tuoi multisiti/SSL in un secondo momento e rigenerare il tuo certificato per ridurre il tempo di applicazione delle modifiche.
+Una volta attivata la connessione SSL su uno o più dei tuoi multisiti, lo stato visualizzato è “Da generare”. Questo passaggio è indispensabile per poter aggiungere i domini interessati al certificato SSL dell’hosting. 
 
-Per attivare il protocollo HTTPS su questo multisito, è necessario rigenerare il certificato SSL utilizzando il pulsante a destra della tabella e confermare il messaggio.
-Il protocollo HTTPS è disponibile in poche ore, il tempo necessario alla sua applicazione sull'infrastruttura.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio nella sezione `Hosting`{.action} del menu a sinistra e Assicurati di trovarti nella scheda `Informazioni generali`{.action}. Clicca sui tre puntini in corrispondenza di “Ceritificato SSL” e seleziona `Rigenera il certificato SSL`{.action}.
 
-![](images/img_4604.jpg){.thumbnail}
-.
+![Gestione SSL](images/manage-ssl-step7.png){.thumbnail}
 
-![](images/img_4606.jpg){.thumbnail}
-.
-In caso di modifica su più multisiti
-Non è necessario rigenerare il tuo certificato dopo ogni modifica: puoi effettuare questa operazione una sola volta, dopo aver apportato le modifiche su ciascuno dei tuoi multisiti.
+Leggi le informazioni che compaiono nella nuova finestra, clicca su `Conferma`{.action} e attendi il tempo necessario alla rigenerazione del certificato. Questa operazione potrebbe durare anche diverse ore.
 
+Ti ricordiamo che Let's Encrypt, l’autorità che fornisce i certificati SSL sugli hosting Web OVH, impone un [limite di cinque rigenerazioni a settimana](https://letsencrypt.org/docs/rate-limits/){.external}. Ti consigliamo quindi di verificare attentamente il numero di rigenerazioni settimanali da eseguire, per evitare qualsiasi impatto sulla tua attività.
 
-## Non riesci a generare certificati sul tuo hosting: perché?
-È possibile che durante l'attivazione del tuo SSL si sia verificato uno di questi errori:
+![Gestione SSL](images/manage-ssl-step8.png){.thumbnail}
 
+### Eliminare un certificato SSL da un hosting Web
 
-- An hosted-ssl already exists for this domain
+Il certificato SSL installato su un hosting può essere eliminato in qualsiasi momento. Prima di effettuare questa operazione **ti consigliamo di assicurarti che la rimozione del certificato non abbia impatto sulla raggiungibilità dei tuoi siti Internet**. Ti ricordiamo inoltre che se il tuo sito utilizza il protocollo HTTPS ma non usufruisce di una connessione SSL, i tuoi visitatori visualizzeranno un errore di sicurezza.
 
-Esiste già un certificato SSL associato a questo account e non è possibile generarne un altro.
+Queste operazioni sono relative ai parametri dei tuoi siti, per cui OVH non fornisce assistenza. In caso di difficoltà o dubbi, ti consigliamo di contattare un esperto del settore.  
 
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio nella sezione `Hosting`{.action} del menu a sinistra. Assicurati di trovarti nella scheda `Informazioni generali`{.action}. Clicca sui tre puntini in corrispondenza di “Ceritificato SSL” e seleziona `Elimina SSL`{.action}.
 
-- Your offer is not compatible with SSL
+Nella nuova pagina, conferma l’eliminazione: l’operazione diventerà effettiva entro poche ore. 
 
-Le offerte demo1g e 60 free non supportano l'opzione SSL. Per utilizzare il certificato SSL Let's Encrypt, attiva un'offerta compatibile.
+![Gestione SSL](images/manage-ssl-step9.png){.thumbnail}
 
+## Per saperne di più
 
-- Your cluster is not compatible with SSL
+[Attivare HTTPS su un sito Internet tramite il certificato SSL](https://docs.ovh.com/it/hosting/attivare-https-su-sito-internet-tramite-certificato-ssl/){.external}
 
-Le offerte demo1g, Windows e 60 free non supportano l'opzione SSL. Per utilizzare il certificato SSL Let's Encrypt, attiva un'offerta compatibile.
-
-
-- You already have an SSL certificate on your account. It will be migrate on new SSL offers in the next week
-
-Questo errore indica che hai già un certificato SSL Global Sign e non è quindi necessario attivare immediatamente Let's Encrypt. A breve riceverai una comunicazione per la migrazione del tuo servizio.
-
-
-- No attached domain with ssl enabled or no attached domain that redirect on hosting IPs, please use hosting IPs in your domain zone
-
-Questo errore potrebbe verificarsi se:
-
-- il dominio su cui vuoi generare un certificato SSL punta verso l'indirizzo IP CDN del tuo hosting. Per correggere l'errore, inserisci come destinazione, nella zona DNS associata, l'indirizzo IP senza CDN (disponibile nelle "Informazioni generali").
-- su nessuno dei tuoi multisiti di questo hosting risultano generati certificati SSL.
-
-Per correggere l'errore, genera il certificato SSL dalla scheda "Multisito" e segui [il paragrafo di questa guida relativo alla gestione dei tuoi multisiti](#MULTI_SITE).
-È possibile attivare SSL Let's Encrypt su un massimo di 100 domini e sttodomini per ogni hosting.
-
-
-## Hai riscontrato problemi di mixed content e duplicate content
-Utilizzare un certificato SSL potrebbe modificare il funzionamento del tuo sito. Ti consigliamo quindi di verificare l'assenza degli errori più comuni associati al suo utilizzo, come il mixed content e il duplicate content.
-
-Per maggiori informazioni sui problemi SSL, consulta [questa guida]({legacy}2220).
-
-
-## Utilizza HTTPS di default
-Per impostare un URL predefinito in HTTPS per il tuo sito, aggiungilo al tuo file .htaccess (o crealo nella root del tuo sito):
-
-
-```
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.tuodominio.it/$1 [R,L]
-```
-
-
-
-
-## Imposta un reindirizzamento del tuo dominio in HTTPS dal tuo Spazio Cliente OVH
-Per impostare un reindirizzamento HTTPS dal tuo Spazio Cliente OVH, consulta [questa guida](https://www.ovh.it/g1339.reindirizzamento-dominio).
-
-
-## Come fare?
-1. Per importare il tuo certificato SSL personale sul tuo hosting, accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager)
-2. Clicca sulla scheda Informazioni generali del tuo hosting
-3. Clicca su Ordina un certificato SSL
-
-![](images/img_4572.jpg){.thumbnail}
-4. Seleziona l'opzione Importa il tuo certificato SSL
-5. Clicca su Seguente
-
-![](images/img_4573.jpg){.thumbnail}
-6. Copia il contenuto del tuo certificato e della tua chiave privata.
-7. Clicca su Seguente
-
-![](images/img_4574.jpg){.thumbnail}
-L'operazione di importazione del tuo certificato richiede al massimo qualche ora, il tempo necessario alla sua applicazione sull'infrastruttura.
-
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community>.

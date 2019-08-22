@@ -5,7 +5,7 @@ excerpt: 'This guide explains how to add failover IPs to your configuration'
 section: 'Network Management'
 ---
 
-**Last updated 4th April 2019**
+**Last updated 10th May 2019**
 
 ## Objective
 
@@ -544,6 +544,21 @@ You now need to restart your interface:
 ```sh
 svcadm restart svc:/network/physical:default
 ```
+
+#### Troubleshooting
+
+If you are unable to establish a connection from the public network to your alias IP and suspect a network problem, please reboot the server in Rescue Mode and setup the alias directly on the server.
+
+In order to do that, once you’ve rebooted your server in Rescue Mode, please do the following command:
+
+```bash
+ifconfig eth0:0 FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP up
+```
+
+Where you will replace FAILOVER_IP by the actual IPFO.
+
+Next, simply ping your IPFO from the outside. If it works, it probably means that there is a configuration error that requires to be fixed. If, on the contrary, the IP is still not working, please open a ticket to the support team via your Control Panel for further investigations.
+
 
 ## Go further
 

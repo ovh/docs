@@ -5,7 +5,7 @@ excerpt: 'Find out how to install WordPress on OVH Managed Kubernetes'
 section: Tutorials
 ---
 
-**Last updated 25th February, 2019.**
+**Last updated 1<sup>st</sup> July, 2019.**
 
 <style>
  pre {
@@ -21,13 +21,15 @@ section: Tutorials
  pre.console code {
    border: solid 0px transparent;
    font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
  }
  .small {
      font-size: 0.75em;
  }
 </style>
 
-In this tutorial we are going to guide you with the install of [Wordpress](https://wordpress.org/) on your OVH Managed Kubernetes Service.
+In this tutorial we are going to guide you with the install of [Wordpress](https://wordpress.org/){.external} on your OVH Managed Kubernetes Service.
 
 ## Before you begin
 
@@ -38,7 +40,7 @@ You also need to have [Helm](https://docs.helm.sh/) installer on your workstatio
 
 ## Installing the Wordpress Helm chart
 
-For this tutorial we are using the [Wordpress Helm chart](https://github.com/helm/charts/tree/master/stable/wordpress) found on Helm repositories.
+For this tutorial we are using the [Wordpress Helm chart](https://github.com/helm/charts/tree/master/stable/wordpress){.external} found on Helm repositories.
 The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVH Managed Kubernetes Service.
 
 
@@ -47,7 +49,7 @@ The chart is fully configurable, but here we are using the default configuration
 > 
 > Maybe you would like your username to be different, or be able to set your password, or choose an external database instead of deploying the MariaDB container... 
 >
-> In order to customize your install, without having to leave the simplicity of using helm and the Wordpress helm chart, you can simply set some of the [configurable parameters of the WordPress chart](https://github.com/helm/charts/tree/master/stable/wordpress#configuration). Then you can add it to your `helm install` with the `--set` option (`--set param1=value1,param2=value2`)
+> In order to customize your install, without having to leave the simplicity of using helm and the Wordpress helm chart, you can simply set some of the [configurable parameters of the WordPress chart](https://github.com/helm/charts/tree/master/stable/wordpress#configuration){.external}. Then you can add it to your `helm install` with the `--set` option (`--set param1=value1,param2=value2`)
 >
 
 ```

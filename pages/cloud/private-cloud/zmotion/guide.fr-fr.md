@@ -1,37 +1,39 @@
 ---
 title: ZMotion
 slug: zmotion
+excerpt: Comprendre le mécanisme de Zmotion
 legacy_guide_number: '4161650'
 section: Services et options OVH
+order: 08
 ---
 
+**Dernière mise à jour le 26/02/2019**
 
-ZMotion is a OVH technology which transfer data through client private network between 2 physical storage arrays.
+## Objectif
 
-Summary
--------
+ZMotion est une technologie OVH qui transfère les données à travers un réseau privé client entre 2 baies de stockage physiques.
 
-Our NFS datastores are running NFS on top on ZFS in a home made storage array called "Leclerc". To get better flexibility within our hardware management, we developped way to hot move ZFS datastore from one Hardware Device to another one.
+## En pratique 
 
-This technology is called "ZMotion", for "ZFS Motion".
+### Description
 
-The aim of ZMotion is to free a dataset (zpool) without any actions from vCenter (no vMotion, no cloning actions...) and without any action from our customer.
+Nos banques de données (datastores) exécutent NFS sur ZFS dans une baie de stockage maison appelée "Leclerc". Afin d'obtenir une meilleure flexibilité dans la gestion de notre matériel, nous avons développé un moyen de déplacer à chaud le stock de données ZFS d'un périphérique matériel à un autre.
 
-How does it work?
------------------
+Cette technologie est appelée "ZMotion", pour "ZFS Motion".
 
-Data is automatically processed without any action from our customer.
+Le but de ZMotion est de libérer une banque de données (datastore) sans aucune action de vCenter (pas de vMotion, pas de clonage...) et sans aucune action de notre client.
 
 ![](images/zmotionPrez.png){.thumbnail}
 
-Steps
------
+### Etapes
 
-- A free zpool on another hardware is reserved in our datacenter to push all the data.
-- Our network properties are set on the destination datastore
-- Data transfer starts within customer dedicated private network1
-- When all data are transfered, the NFS service switches from one array to another one
+- Un datastore gratuit, sur un autre *Leclerc*, est réservé dans notre datacenter pour pousser toutes les données.
+- Nos propriétés réseau sont définies sur le datastore de destination
+- Le transfert de données commence dans un réseau privé dédié au client
+- Lorsque toutes les données sont transférées, le service NFS passe d'un tableau à un autre.
 
-There is no downtime from VMware perspective.
+Du point de vue de VMware, il n'y a pas de temps d'arrêt.
 
+## Aller plus loin
 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

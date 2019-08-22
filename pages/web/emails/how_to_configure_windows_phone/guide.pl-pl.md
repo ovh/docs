@@ -1,10 +1,10 @@
 ---
-title: Przewodnik dotyczący konfiguracji programu Windows Phone
-excerpt: Przewodnik ten opisuje konfigurację programu Windows Phone
+title: 'Konfiguracja konta e-mail na Windows Phone'
+excerpt: 'Przewodnik ten opisuje konfigurację programu Windows Phone'
 slug: przewodnik_dotyczacy_konfiguracji_programu_windows_phone
 legacy_guide_number: g1346
+section: 'Konfiguracja na smartfonie'
 ---
-
 
 ## Część 1: Parametry
 Kliknij na ikonkę "Parametry".

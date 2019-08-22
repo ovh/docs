@@ -5,8 +5,7 @@ excerpt: 'Find out how to install Nginx Ingress on OVH Managed Kubernetes '
 section: Tutorials
 ---
 
-**Last updated 25th February, 2019.**
-
+**Last updated 1<sup>st</sup> July, 2019.**
 
 <style>
  pre {
@@ -22,26 +21,29 @@ section: Tutorials
  pre.console code {
    border: solid 0px transparent;
    font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
  }
  .small {
      font-size: 0.75em;
  }
 </style>
 
-In this tutorial we are going to guide you with the setup of [Nginx Ingress](https://github.com/kubernetes/ingress-nginx) on your OVH Managed Kubernetes Service.
+
+In this tutorial we are going to guide you with the setup of [Nginx Ingress](https://github.com/kubernetes/ingress-nginx){.external} on your OVH Managed Kubernetes Service.
 
 
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
-You also need to have [Helm](https://docs.helm.sh/) installer on your workstation and your cluster, please refer to the [How to install Helm on OVH Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVH Managed Kubernetes Service](../installing-helm/) tutorial.
 
 
 
 ## Installing the Nginx Ingress Controller Helm chart
 
-For this tutorial we are using the [Nginx Ingress Controller  Helm chart](https://github.com/helm/charts/tree/master/stable/nginx-ingress) found on Helm repositories.
+For this tutorial we are using the [Nginx Ingress Controller  Helm chart](https://github.com/helm/charts/tree/master/stable/nginx-ingress){.external} found on Helm repositories.
 
 The chart is fully configurable, but here we are using the default configuration.
 
@@ -157,7 +159,7 @@ winning-lizard-nginx-ingress-controller   LoadBalancer   10.3.106.37   6d6xxxx8r
 
 You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_URL]` via HTTP or `https://[YOUR_LOAD_BALANCER_URL]` via HTTPS.
 
-In order to test your `nginx-ingress`, I suggest you to [install a Wordpress](https://labs.ovh.com/kubernetes-k8s/documentation/tutorial/installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
+In order to test your `nginx-ingress`, I suggest you to [install a Wordpress](../installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
 
 
 ```

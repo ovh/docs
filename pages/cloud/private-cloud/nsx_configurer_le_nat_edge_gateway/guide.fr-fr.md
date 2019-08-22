@@ -1,14 +1,25 @@
 ---
 title: Configurer le NAT NSX Edge
 slug: configurer-le-nat-nsx-edge
+excerpt: Redirigez votre trafic à l'aide des règles NAT
 legacy_guide_number: '7766371'
 section: NSX
+order: 06
 ---
 
+**Dernière mise à jour le 27/02/2019**
+
+## Objectif
 
 Le NAT permet de gérer une redirection du trafic arrivant sur la Edge, que ce soit en privé ou en public, vers une autre destination en fonction de multiples paramètres configurables.
 
-Afin de réaliser ce guide, il vous faut [accéder à l'interface de gestion NSX]({legacy}7766338) et avoir [déployé une NSX Edge Gateway]({legacy}7766362).
+**Ce guide expliquement comment créer des règles NAT**
+
+## Prérequis
+
+- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
+
+## En pratique
 
 Pour commencer, rendez-vous dans la partie "NSX Edges" afin de trouver la liste des Edges déjà déployées. Dans l'exemple ci-dessous nous avons déjà une Edge déployée sur laquelle il faut effectuer un double-clic.
 
@@ -27,9 +38,9 @@ Pour créer une règle, cliquez sur "Add" (petit "+" vert) afin d'avoir accès �
 
 Le pare-feu de la Edge doit être actif pour que les règles de NAT soient prises en compte.
 
-### "Add DNAT Rule"
+### Ajouter une règle DNAT
 
-Le choix de "Add DNAT Rule" vous propose la possibilité de l'appliquer sur chaque interface réseau de la Edge.
+Le choix de "Ajouter une règle DNAT" vous propose la possibilité de l'appliquer sur chaque interface réseau de la Edge.
 
 Vous pouvez configurer l'IP source du trafic (ou la plage complète, en indiquant le préfixe) au niveau de la carte réseau publique de la Edge ainsi que le protocole pris en compte.
 
@@ -37,9 +48,9 @@ Vous pouvez ensuite configurer le port appelé initialement et le router sur un 
 
 ![](images/content-docs-cloud-private-cloud-configure_edge_nat-images-configure_nsx_edge_nat_4.PNG){.thumbnail}
 
-### "Add SNAT Rule"
+### Ajouter une règle SNAT
 
-"Add SNAT Rule" vous offre la possibilité de l'appliquer sur chaque interface réseau de la Edge.
+"Ajouter une règle SNAT" vous offre la possibilité de l'appliquer sur chaque interface réseau de la Edge.
 
 Vous pouvez simplement configurer l'IP privée source (ou la plage complète, en indiquant le préfixe) et l'IP publique traduite afin de permettre la sortie du trafic.
 
@@ -58,3 +69,7 @@ Vous trouverez ci-dessous un exemple de configuration NAT.
 ![](images/content-docs-cloud-private-cloud-configure_edge_nat-images-configure_nsx_edge_nat_6.PNG){.thumbnail}
 
 Selon votre version de NSX, des colonnes supplémentaires peuvent ou non être disponibles.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

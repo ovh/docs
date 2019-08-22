@@ -1,7 +1,7 @@
 ---
 title: Cloud Web
 slug: cloud-web
-Sections: Premiers pas
+sections: Premiers pas, Tutoriels, Configuration de l’hébergement
 ---
 
 > [!product-section]

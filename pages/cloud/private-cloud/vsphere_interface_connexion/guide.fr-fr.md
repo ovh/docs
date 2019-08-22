@@ -3,9 +3,10 @@ title: Se connecter à l’interface vSphere
 slug: connexion-interface-vsphere
 excerpt: Découvrez les différentes façons de se connecter à vSphere
 section: Premiers pas
+order: 2
 ---
 
-**Dernière mise à jour le 01/02/2018**
+**Dernière mise à jour le 14/02/2019**
 
 ## Objectif
 
@@ -42,9 +43,14 @@ Lorsque l’installation est terminée, l’assistant vous propose de vous conne
 
 ![Connexion au client lourd](images/connexion_client_l.png){.thumbnail}
 
-### Utilisation du web client
+Vous accéderez ensuite à cette interface :
 
-Le web client est disponible sur l’interface web de votre Private Cloud à l’adresse : <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (remplacez pcc-xxx-xx-xx-xxx.ovh.com par l’adresse de votre Private Cloud).
+![Connexion au client lourd](images/connexion_client_l2.png){.thumbnail}
+
+
+### Utilisation du web client flash
+
+Le web client flash est disponible sur l’interface web de votre Private Cloud à l’adresse : <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (remplacez pcc-xxx-xx-xx-xxx.ovh.com par l’adresse de votre Private Cloud).
 
 Connectez-vous avec les identifiants qui vous ont été transmis :
 
@@ -56,10 +62,29 @@ Vous accéderez ensuite à cette interface :
 
 La page `Home`{.action} permet de retrouver les grands menus de votre vCenter. Vous allez pouvoir effectuer différentes actions, telles que :
 
-- déployer une machine virtuelle en allant dans `Hosts and Clusters`{.action} ;
-- si vous bénéficiez de cette option, utiliser NSX en allant dans `Network & Security`{.action} ;
-- parcourir vos datastores.
+- Déployer une machine virtuelle en allant dans `Hosts and Clusters`{.action} ;
+- Si vous bénéficiez de cette option, utiliser NSX en allant dans `Network & Security`{.action} ;
+- Parcourir vos datastores.
 
+### Utilisation du web client HTML5
+
+Le web client HTML5 est disponible sur l’interface web de votre Private Cloud à l’adresse : <https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui> (remplacez pcc-xxx-xx-xx-xxx.ovh.com par l’adresse de votre Private Cloud).
+
+![Connexion à l'interface vSphere HTML5](images/connection_interface_w_html5.png){.thumbnail}
+
+Vous accéderez ensuite à cette interface :
+
+![Connexion à l'interface vSphere HTML5](images/vsphere-client-html5.png){.thumbnail}
+
+La page `Home`{.action} permet de retrouver les grands menus de votre vCenter. Vous allez pouvoir effectuer différentes actions, telles que :
+
+- Déployer une machine virtuelle en allant dans `Hosts and Clusters`{.action} ;
+- Parcourir vos datastores.
+
+> [!warning]
+>
+> La gestion des appliances *NSX Edge* n'est pas encore possible dans ce client web.
+>
 
 ## Aller plus loin
 

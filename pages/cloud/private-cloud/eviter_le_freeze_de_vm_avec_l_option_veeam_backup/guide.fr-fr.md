@@ -1,8 +1,9 @@
 ---
-title: 'Éviter le gel de la machine virtuelle avec l''option Veeam Managed Backup'
+title: Éviter le gel de la machine virtuelle avec l''option Veeam Backup Managed
 slug: eviter-le-freeze-de-vm-avec-l-option-veeam-backup
-excerpt: 'Apprenez à mettre en œuvre une solution de contournement avec le mécanisme VMware DRS'
-section: 'Gestion des machines virtuelles'
+excerpt: Apprenez à mettre en œuvre une solution de contournement avec le mécanisme VMware DRS
+section: Services et options OVH
+order: 07
 ---
 
 **Dernière mise à jour le 29/11/2018**

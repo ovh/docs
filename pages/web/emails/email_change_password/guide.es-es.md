@@ -1,12 +1,12 @@
 ---
 title: 'Cambiar la contraseña de una dirección de correo MX Plan'
 slug: cambiar-contrasena-direccion-correo
-excerpt: 'Cómo cambiar la contraseña de una dirección de correo de la solución MX Plan'
-section: 'Gestión de la cuenta de correo'
-order: 2
+excerpt: 'Cómo cambiar la contraseña de una dirección de correo electrónico de la solución MX Plan'
+section: 'Primeros pasos'
+order: 3
 ---
 
-**Última actualización: 02/07/2018**
+**Última actualización: 17/05/2019**
 
 ## Objetivo
 
@@ -15,58 +15,99 @@ Las direcciones de correo de la solución MX Plan permiten enviar y recibir mens
 **Esta guía explica cómo cambiar la contraseña de una dirección de correo de la solución MX Plan.**
 
 ## Requisitos
-- Tener una solución MX Plan (incluida en un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external} o disponible por separado).
-- Tener acceso a la gestión del MX Plan desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+
+- Tener una solución MX Plan (incluida en un [plan de hosting de OVH]({ovh_www}/hosting/){.external}, en un [alojamiento gratuito Start 10M]({ovh_www}/dominios/oferta_hosting_start10m.xml){.external} o contratada por separado).
+- En función del método que utilice, estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} en la sección `Web`{.action}, o estar conectado a la dirección de correo desde el [webmail](https://www.ovh.es/mail/){.external} Outlook en la Web.
 
 > [!primary]
 >
-> Si cambia la contraseña de una dirección de correo electrónico en OVH, también deberá realizar el cambio en la configuración de su cliente de correo, en caso de que utilice uno.
+> Si cambia la contraseña de una dirección de correo electrónico, también deberá modificarla en todos los dispositivos en los que esté configurada dicha dirección.
 >
 
 ## Procedimiento
 
-### 1. Acceder a la gestión del servicio de correo
+En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente]({ovh_www}/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
 
-Para acceder a la gestión del servicio, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en `Correo electrónico`{.action} en la columna izquierda y seleccione el dominio para el que haya contratado la solución MX Plan. A continuación, abra la pestaña `Correo electrónico`{.action}.
+Para ello, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
 
-Se mostrará una tabla con toda las direcciones de correo electrónico creadas en el MX Plan.
+|Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
+|---|---|
+|![Correo electrónico](images/mxplan-password-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro **Suscripción**, en el epígrafe **Producto**.|![Correo electrónico](images/mxplan-password-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro **Resumen**, en el epígrafe **Referencia del servidor**.|
+|Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](./#version-historica-de-la-solucion-mx-plan_2).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](./#nueva-version-de-la-solucion-mx-plan).|
 
-![Contraseña MX Plan](images/change-email-password-step1.png){.thumbnail}
+### Nueva versión de la solución MX Plan
 
-### 2. Cambiar la contraseña de una dirección de correo
+Si dispone de la nueva versión de la solución MX Plan, la pestaña `Información general`{.action} del servicio debería tener la distribución que se muestra en la imagen de abajo. De lo contrario, [vuelva al apartado anterior](./#procedimiento) y asegúrese de que esta es su versión de la solución.  
 
-Para cambiar la contraseña, haga clic en el icono con forma de rueda dentada situado al final de la línea correspondiente a la cuenta y seleccione `Cambiar la contraseña`{.action}.
+![Correo electrónico](images/mxplan-password-new-step1.png){.thumbnail}
 
-![Contraseña MX Plan](images/change-email-password-step2.png){.thumbnail}
+Existen dos formas de cambiar la contraseña de una dirección de correo: desde el webmail Outlook en la Web o desde el área de cliente. Continúe leyendo esta guía en el apartado correspondiente al método que desee utilizar.
 
-Se abrirá una nueva ventana en la que deberá introducir la nueva contraseña. Confírmela y, a continuación, haga clic en `Aceptar`{.action}.
+- [Cambiar la contraseña desde el webmail Outlook en la Web](./#cambiar-la-contrasena-desde-el-webmail-outlook-en-la-web): Para seguir este procedimiento necesitará la contraseña actual. 
+- [Cambiar la contraseña desde el área de cliente de OVH](./#cambiar-la-contrasena-desde-el-area-de-cliente-de-ovh): En este caso, no necesitará la contraseña actual.
 
-**El cambio de contraseña tardará unos minutos en aplicarse.**
+#### Cambiar la contraseña desde el webmail Outlook en la Web
+
+Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/){.external} e introduzca su dirección de correo electrónico completa y la contraseña actual. Haga clic en el botón `Conexión`{.action}. 
+
+![Correo electrónico](images/mxplan-password-new-step2.png){.thumbnail}
+
+Se abrirá la bandeja de entrada. Haga clic en el icono con forma de rueda dentada situado en la barra superior y seleccione `Opciones`{.action}.
+
+![Correo electrónico](images/mxplan-password-new-step3.png){.thumbnail}
+
+En la columna izquierda, despliegue el menú `General`{.action} y haga clic en `Mi cuenta`{.action}. Haga clic en el enlace `Cambie su contraseña`{.action} situado sobre la barra de uso del buzón.
+
+![Correo electrónico](images/mxplan-password-new-step4.png){.thumbnail}
+
+En la nueva ventana, introduzca la contraseña actual, escriba una nueva contraseña y repítala en el último campo. Haga clic en el botón  `Guardar`{.action} para aplicar el cambio.
 
 > [!primary]
 >
-> Por motivos de seguridad, se recomienda respetar las indicaciones que se ofrecen al introducir la nueva contraseña. También es aconsejable:
->
-> - No utilizar la misma contraseña dos veces.
->
-> - Elegir una contraseña que no guarde ninguna relación con sus datos personales, evitando cualquier mención a su nombre, apellidos o fecha de nacimiento, por ejemplo.
->
-> - Cambiar regularmente las contraseñas.
->
-> - No anotar las contraseñas en un papel ni enviárselas por correo electrónico.
->
-> - No guardar las contraseñas en el navegador de internet, aunque este se lo sugiera.
+> Recuerde que deberá introducir la nueva contraseña en todos los dispositivos en los que haya configurado la dirección de correo.
 >
 
-![Contraseña MX Plan](images/change-email-password-step3.png){.thumbnail}
+![Correo electrónico](images/mxplan-password-new-step5.png){.thumbnail}
 
-### 3. Acceder a la dirección de correo electrónico
+#### Cambiar la contraseña desde el área de cliente de OVH
 
-Una vez que haya cambiado la contraseña, puede acceder a la dirección de correo electrónico de dos maneras distintas:
+Seleccione el MX Plan en la columna izquierda y abra la pestaña `Cuentas de correo`{.action}. Se mostrará una tabla con todas las direcciones de correo electrónico creadas en el MX Plan. Haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Editar`{.action}.
 
-- **Utilizar el cliente de correo web Roundcube**: Vaya a la dirección <https://www.ovh.es/mail/> e introduzca la dirección de correo y la nueva contraseña. Si acaba de cambiar la contraseña y la autenticación falla, espere unos minutos y vuelva a intentar conectarse.
+![Correo electrónico](images/mxplan-password-new-step6.png){.thumbnail}
 
-- **Utilizar un cliente de correo compatible**: Deberá introducir la nueva contraseña en todos los dispositivos en los que haya configurado la dirección de correo electrónico. Es posible que aparezca una ventana de forma automática solicitándole que introduzca la nueva contraseña de la dirección de correo. En caso contrario, le recomendamos que contacte directamente con el editor del cliente de correo que utilice para saber cómo realizar la operación.
+En la nueva ventana, introduzca la nueva contraseña y confírmela. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
+
+A continuación, haga clic en `Siguiente`{.action}, compruebe que la información que se muestra en el resumen es correcta y, por último, haga clic en `Aceptar`{.action}. El cambio de contraseña tardará unos minutos en aplicarse.
+
+![Correo electrónico](images/mxplan-password-new-step7.png){.thumbnail}
+
+Una vez que haya cambiado la contraseña, puede acceder a la dirección de correo electrónico utilizando el webmail o configurando la cuenta en un dispositivo:
+
+- **Utilizar el webmail**: Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/){.external} e introduzca su dirección de correo y la nueva contraseña. Si acaba de cambiar la contraseña y la autenticación falla, espere unos minutos y vuelva a intentar conectarse.
+
+- **Utilizar un cliente de correo compatible**: Introduzca la nueva contraseña en todos los dispositivos en los que haya configurado la dirección de correo electrónico. Es posible que aparezca una ventana de forma automática en el dispositivo solicitándole que introduzca la nueva contraseña. Si no es el caso, puede consultar nuestras [guías de configuración](../) o contactar con el editor del programa o la aplicación que utilice, ya que el procedimiento es distinto en todos ellos.
+
+### Versión histórica de la solución MX Plan
+
+Si dispone de la versión histórica de la solución MX Plan, la pestaña `Información general`{.action} del servicio debería tener la distribución que se muestra en la imagen de abajo. De lo contrario, [vuelva al apartado anterior](./#procedimiento) y asegúrese de que esta es su versión de la solución. 
+
+![Correo electrónico](images/mxplan-password-legacy-step1.png){.thumbnail}
+
+Para cambiar la contraseña de una dirección de correo, abra la pestaña `Correo electrónico`{.action}. Se mostrará una tabla con todas las direcciones de correo electrónico creadas en el MX Plan. Haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Cambiar la contraseña`{.action}.
+
+![Correo electrónico](images/mxplan-password-legacy-step2.png){.thumbnail}
+
+En la nueva ventana, introduzca la nueva contraseña en los dos campos. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
+
+A continuación, haga clic en `Aceptar`{.action}. El cambio de contraseña tardará unos minutos en aplicarse.
+
+![Correo electrónico](images/mxplan-password-legacy-step3.png){.thumbnail}
+
+Una vez que haya cambiado la contraseña, puede acceder a la dirección de correo electrónico utilizando el webmail o configurando la cuenta en un dispositivo:
+
+- **Utilizar el webmail**: Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/){.external} e introduzca su dirección de correo y la nueva contraseña. Si acaba de cambiar la contraseña y la autenticación falla, espere unos minutos y vuelva a intentar conectarse. Para más información, consulte nuestra guía [Webmail: Guía de uso de Roundcube](../webmail_guia_de_uso_de_roundcube/){.external}.
+
+- **Utilizar un cliente de correo compatible**: Introduzca la nueva contraseña en todos los dispositivos en los que haya configurado la dirección de correo electrónico. Es posible que aparezca una ventana de forma automática en el dispositivo solicitándole que introduzca la nueva contraseña. Si no es el caso, puede consultar nuestras [guías de configuración](../) o contactar con el editor del programa o la aplicación que utilice, ya que el procedimiento es distinto en todos ellos.
 
 ## Más información
 

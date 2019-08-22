@@ -1,10 +1,10 @@
 ---
-title: Przewodnik dotyczący aktywacji autorespondera
-excerpt: Przewodnik dotyczący aktywacji autorespondera
+title: 'Tworzenie autorespondera'
+excerpt: 'Przewodnik dotyczący aktywacji autorespondera'
 slug: przewodnik_dotyczacy_aktywacji_autorespondera
 legacy_guide_number: g2052
+section: 'Funkcjonalności kont e-mail'
 ---
-
 
 ## Wstępne wymagania
 

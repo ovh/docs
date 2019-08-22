@@ -1,27 +1,31 @@
 ---
 title: Configurer le Load Balancer NSX Edge
 slug: configurer-le-load-balancer-nsx-edge
+excerpt: 
 legacy_guide_number: '7766591'
 section: NSX
+order: 05
 ---
 
+**Dernière mise à jour le 27/02/2019**
 
+## Objectif
 
+La fonctionnalité d'équilibrage de charge NSX permet de répartir la charge du trafic depuis une IP publique ou privée unique vers plusieurs VMs en adressage IPs privé.
 
-La fonctionnalité de Load Balancing NSX permet de répartir la charge du trafic depuis une IP publique ou privée unique vers plusieurs VMs en adressage IPs privé.
+## Prérequis
 
-Pour configurer le Load Balancer NSX Edge, vous devez [accéder à l'interface de gestion NSX]({legacy}7766338) et [déployer une NSX Edge Gateway]({legacy}7766362).
+- Disposer d'un utilisateur ayant accès  à [l'interface de gestion NSX](https://docs.ovh.com/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
 
-En cas de besoin de mise en place de certificat SSL, n'hésitez pas à vous référer à la [documentation officielle VMware](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2113945){.external-link}.
+## En pratique
 
-Depuis la Edge souhaitée, rendez-vous dans la partie "Manage" pour ensuite accéder à l'onglet "Load Balancer".
+Depuis la Edge souhaitée, rendez-vous dans la partie "Gérer" pour ensuite accéder à l'onglet "Load Balancer".
 
 ![](images/GlobalConfiguration.PNG){.thumbnail}
 
-Global Configuration
---------------------
+### Configuration globale
 
-Vous pouvez alors visualiser le menu "Global Configuration" disposant d'un bouton "Edit" vous permettant de configurer les options suivantes.
+Vous pouvez alors visualiser le menu "onfiguration globale" disposant d'un bouton `Modifier`{.action} vous permettant de configurer les options suivantes.
 
 - Enable Load Balancer : Active la fonctionnalité de Load Balancer si coché.
 - Enable Accelerator : Utilise le Load Balancer de couche 4 (réseau) le plus rapide plutôt que de couche 7 (applicatif) si coché.
@@ -30,14 +34,13 @@ Vous pouvez alors visualiser le menu "Global Configuration" disposant d'un bouto
 
 ![](images/EditGlobal.PNG){.thumbnail}
 
-Application Profiles
---------------------
+### Profils d'application
 
-Le menu "Application Profiles" permet de gérer des profils sur la partie haute et des certificats sur la partie basse. Ces profils sont utilisés pour configurer le Load Balancer en lui même.
+Le menu "Profils d'application" permet de gérer des profils sur la partie haute et des certificats sur la partie basse. Ces profils sont utilisés pour configurer le Load Balancer en lui même.
 
 ![](images/ApplicationProfiles.PNG){.thumbnail}
 
-Pour ajouter un "Application Profil", vous pouvez cliquer sur "Add" (petit "+" vert).
+Pour ajouter un "Profil d'application", vous pouvez cliquer sur `Add` (petit `+`{.action} vert).
 
 Vous pouvez configurer les paramètres suivants :
 
@@ -49,23 +52,21 @@ Les autres champs permettent d'affiner le suivi de la répartition selon votre b
 
 ![](images/NewProfil.PNG){.thumbnail}
 
-Service Monitoring
-------------------
+### Surveillance des services
 
 Par défaut, 3 monitorings sont en place, en TCP, HTTP et HTTPS.
 
 ![](images/ServiceMonitoring.PNG){.thumbnail}
 
-Vous pouvez utiliser le bouton "Add" (petit "+" vert) pour ajouter des règles de monitoring personnalisées.
+Vous pouvez utiliser le bouton `Add` (petit `+`{.action} vert) pour ajouter des règles de monitoring personnalisées.
 
-Pools
------
+### Pools
 
 Un pool est une liste de serveurs ou d'IPs vers lesquels le Load Balancer va répartir le trafic.
 
 ![](images/Pools.PNG){.thumbnail}
 
-Cliquez sur le bouton "Add" (petit "+" vert) afin de créer un nouveau pool. Cela vous permet de configurer les champs suivants :
+Cliquez sur le bouton `Add` (petit `+`{.action} vert) afin de créer un nouveau pool. Cela vous permet de configurer les champs suivants :
 
 - Name : Le nom du pool, si possible explicite pour ne pas confondre les pools entre eux.
 - Description : Complément d'information vous permettant de savoir à quoi vous sert le pool par rapport aux autres.
@@ -83,7 +84,7 @@ Cliquez sur le bouton "Add" (petit "+" vert) afin de créer un nouveau pool. Cel
 
 ![](images/NewPool.PNG){.thumbnail}
 
-Vous pouvez finalement ajouter des membres au pool via le bouton "Add" (petit "+" vert"). Vous pouvez configurer les champs suivants :
+Vous pouvez finalement ajouter des membres au pool via le bouton `Add` (petit `+`{.action} vert"). Vous pouvez configurer les champs suivants :
 
 - Name : Le nom du membre.
 - IP Address / VC Container : Un des serveurs finaux qui recevra le trafic réparti. Vous pouvez entrer manuellement une IP ou cliquer sur "Select" pour choisir directement un élément de l'infrastructure comme une VM.
@@ -94,25 +95,31 @@ Nous prendrons l'exemple de 2 membres mais vous pouvez en ajouter plus.
 
 ![](images/ExemplePools.PNG){.thumbnail}
 
-Virtual Servers
----------------
+### Serveurs virtuels
 
-Le menu "Virtual Servers" vous permet de configurer les points d'entrée publics de vos Load Balancer. L'IP configurée doit être une IP de la Edge.
+Le menu "Serveurs virtuels" vous permet de configurer les points d'entrée publics de vos Load Balancer. L'IP configurée doit être une IP de la Edge.
 
 ![](images/VirtualServers.PNG){.thumbnail}
 
-Pour ajouter un "Virtual Server", cliquez sur le bouton "Add" (petit "+" vert). Vous pouvez alors configurer les champs suivants :
+Pour ajouter un **Serveur virtuel**, cliquez sur le bouton `Add` (petit `+`{.action} vert). Vous pouvez alors configurer les champs suivants :
 
-- Enable Virtual Server : Active le "Virtual Server" si coché.
-- Application Profile : Permet d'utiliser un "Application Profile" configuré précédemment.
-- Name : Le nom du "Virtual Server".
+- Enable Virtual Server : Active le "Serveur virtuel" si coché.
+- Application Profile : Permet d'utiliser un "Profil d'application" configuré précédemment.
+- Name : Le nom du "Serveur virtuel".
 - IP Address : Indiquez manuellement une IP publique de la Edge ou sélectionnez la depuis le bouton "Select IP Address" vous proposant toutes les IPs publiques de la Edge.
 - Protocol : Le protocole utilisé pour la répartition de charge.
 - Port : Le port utilisé par la répartition de charge.
 - Default Pool : Sélectionnez un "Pool" créé et configuré précédemment.
 
-Votre "Virtual Server" est ensuite prêt et fonctionnel.
+Votre **Serveur virtuel** est ensuite prêt et fonctionnel.
 
 ![](images/ExempleVirtualServer.PNG){.thumbnail}
 
+> [!primary]
+>
+> En cas de besoin de mise en place de certificat SSL, n’hésitez pas à vous référer à la [documentation officielle VMware](https://kb.vmware.com/s/article/2113945).
+>
 
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

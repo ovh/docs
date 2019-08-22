@@ -5,7 +5,7 @@ excerpt: 'Find out how to install CDS on OVH Managed Kubernetes'
 section: Tutorials
 ---
 
-**Last updated on March 8th, 2019**
+**Last updated 1<sup>st</sup> July, 2019.**
 
 <style>
  pre {
@@ -21,13 +21,15 @@ section: Tutorials
  pre.console code {
    border: solid 0px transparent;
    font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
  }
  .small {
      font-size: 0.75em;
  }
 </style>
 
-In this tutorial we are going to guide you with the install of [CDS](https://ovh.github.io/cds) on your OVH Managed Kubernetes Service. CDS is an Enterprise-Grade Continuous Delivery & DevOps Automation Platform.
+In this tutorial we are going to guide you with the install of [CDS](https://ovh.github.io/cds){.external} on your OVH Managed Kubernetes Service. CDS is an Enterprise-Grade Continuous Delivery & DevOps Automation Platform.
 
 We are going to install all CDS components (API, vcs uService, hooks uService, hatchery to spawn workers, elasticsearch to index events).
 
@@ -38,12 +40,12 @@ We are going to install all CDS components (API, vcs uService, hooks uService, h
 
 This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
-You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster, please refer to the [How to install Helm on OVH Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVH Managed Kubernetes Service](../installing-helm/) tutorial.
 
 
 ## Installing the CDS Helm chart
 
-For this tutorial we are using the [CDS Helm chart](https://github.com/ovh/cds/tree/master/contrib/helm/cds) found on CDS repository. The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVH Managed Kubernetes Service.
+For this tutorial we are using the [CDS Helm chart](https://github.com/ovh/cds/tree/master/contrib/helm/cds){.external} found on CDS repository. The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVH Managed Kubernetes Service.
 
 As the CDS chart isn't already in the official helm repository on GitHub you have to clone the CDS repository with the CDS helm inside.
 
@@ -60,7 +62,7 @@ cp yourPathToKubeconfig.yaml kubeconfig.yaml
 > 
 > Maybe you would like your admin username to be different, or be able to set your admin password, or modify the resources allocated... 
 >
-> In order to customize your install, without having to leave the simplicity of using helm and the Wordpress helm chart, you can simply set some of the [configurable parameters of the CDS chart](https://github.com/ovh/cds/blob/master/contrib/helm/cds/values.yaml). Then you can add it to your `helm install` with the `--set` option (`--set param1=value1,param2=value2`).
+> In order to customize your install, without having to leave the simplicity of using helm and the Wordpress helm chart, you can simply set some of the [configurable parameters of the CDS chart](https://github.com/ovh/cds/blob/master/contrib/helm/cds/values.yaml){.external}. Then you can add it to your `helm install` with the `--set` option (`--set param1=value1,param2=value2`).
 >
 
 <pre class="console"><code>
@@ -185,7 +187,7 @@ After registration on UI, keep the password displayed, we will use it in next st
 
 The first user created on CDS is a CDS Administrator.
 
-In order to have all that you need to run your first job you need to add a first [worker model](https://ovh.github.io/cds/workflows/pipelines/requirements/worker-model/). It's the perfect use case to use the [CDS Command Line](https://ovh.github.io/cds/cli/cdsctl/) named `cdsctl`.
+In order to have all that you need to run your first job you need to add a first [worker model](https://ovh.github.io/cds/workflows/pipelines/requirements/worker-model/){.external}. It's the perfect use case to use the [CDS Command Line](https://ovh.github.io/cds/cli/cdsctl/){.external} named `cdsctl`.
 
 ### Download cdsctl
 
@@ -266,7 +268,7 @@ On CDS all actions could be done with UI, CLI or API. So you can go on your CDS 
 
 ![CDS workflow](./images/installing-cds-01.png){.thumbnail}
 
-For any further informations about CDS please check [official documentation](https://ovh.github.io/cds/).
+For any further informations about CDS please check [official documentation](https://ovh.github.io/cds/){.external}.
 
 > [!primary]
 > ### Troubleshooting

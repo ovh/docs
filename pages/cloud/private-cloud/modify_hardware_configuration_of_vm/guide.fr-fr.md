@@ -2,7 +2,8 @@
 title: Modifier les ressources d’une machine virtuelle
 slug: modification-des-ressources-d-une-machine-virtuelle
 excerpt: Découvrez comment faire évoluer votre machine virtuelle
-section: Premiers pas
+section: Gestion des machines virtuelles
+order: 03
 ---
 
 **Dernière mise à jour le 28/11/2017**

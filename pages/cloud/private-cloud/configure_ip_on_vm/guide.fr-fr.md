@@ -1,8 +1,9 @@
 ---
-title: Configurer une IP sur une machine virtuelle
+title: 'Configurer une IP sur une machine virtuelle'
 slug: configuration-ip-machine-virtuelle
-excerpt: Apprenez à configurer une IP sur une machine virtuelle
-section: Premiers pas
+excerpt: 'Apprenez à configurer une IP sur une machine virtuelle'
+section: 'Gestion des machines virtuelles'
+order: 5
 ---
 
 **Dernière mise à jour le 28/11/2017**
@@ -153,6 +154,7 @@ Adresse IP : 192.168.70.2
 Masque de sous-réseau : 255.255.255.0
 Paserelle par défaut : 192.168.70.254
 ```
+
 
 ## Aller plus loin
 

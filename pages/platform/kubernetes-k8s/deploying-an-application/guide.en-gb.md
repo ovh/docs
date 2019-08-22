@@ -9,12 +9,6 @@ section: Getting started
  pre {
      font-size: 14px;
  }
- .small {
-     font-size: 0.75em;
- }
- div.container {
-   max-width: 800px;
- }
  pre.console {
    background-color: #300A24; 
    color: #ccc;
@@ -25,12 +19,16 @@ section: Getting started
  pre.console code {
    border: solid 0px transparent;
    font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
  }
+ .small {
+     font-size: 0.75em;
  }
 </style>
 
 
-**Last updated 25 February, 2019.**
+**Last updated 1<sup>st</sup> July, 2019.**
 
 ## Objective
 
@@ -108,7 +106,7 @@ deployment.apps/hello-world-deployment created
 
 > [!primary]
 > The application you have just deployed is a simple nginx server with a single static *Hello World* page. 
-> Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/)
+> Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/){.external}
 
 
 ### Step 2 - List the pods
@@ -218,8 +216,6 @@ No resources found
 
 ## Go further
 
-To have an overview of OVH Managed Kubernetes service, you can go to the [OVH Managed Kubernetes site](https://labs.ovh.com/kubernetes-k8s).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVH Managed Kubernetes doc site](../).
 
-Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our  [tutorials]() .
-
-Join our community of users on https://community.ovh.com/en/.
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

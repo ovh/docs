@@ -83,7 +83,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 |Ambiente da aplicação|Indique se se trata de um ambiente de “produção”, de “teste” ou de “desenvolvimento”. Tenha em conta que este último tem um comportamento diferente e apresenta erros diretamente na interface web. Utilize-o com precaução.|
 |Script de lançamento da aplicação|Indique o script que chamará a tecnologia Node.js.|
 
-Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelos multi-sites pretendidos. Para isso, passe para a etapa “[3 - Associar o motor de execução a um multi-site](./#-3-associar-o-motor-de-execucao-a-um-multi-site_2){.external}”.
+Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelos multi-sites pretendidos. Para isso, passe para a etapa “[3 - Associar o motor de execução a um multi-site](./#3-associar-o-motor-de-execucao-a-um-multi-site_2){.external}”.
 
 ![Cloud Web](images/cloud-web-runtime-step3-2.png){.thumbnail}
 

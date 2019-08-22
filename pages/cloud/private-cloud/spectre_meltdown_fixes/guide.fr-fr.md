@@ -1,8 +1,9 @@
 ---
-title: 'Vérifier et corriger les failles Spectre/Meltdown sur vos hôtes'
+title: Vérifier et corriger les failles Spectre/Meltdown sur vos hôtes
 slug: verifier_corriger_failles_spectre_meltdown_hotes
-excerpt: 'Découvrez comment corriger les vulnérabilités Spectre et Meltdown'
-section: Sécurité
+excerpt: Découvrez comment corriger les vulnérabilités Spectre et Meltdown
+section: Informations Meltdown et Spectre
+order: 02
 ---
 
 ## Objectif

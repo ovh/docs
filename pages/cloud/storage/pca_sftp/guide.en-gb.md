@@ -32,9 +32,10 @@ The TenantName corresponds to the name of your Horizon Project. To get the Tenan
 
 
 ## Connection
-- Host Name : gateways.storage.<region>.cloud.ovh.net
+- Host Name : gateways.storage.{region}.cloud.ovh.net
 - User Name : pca
-- Password : <TenantName>.<Username_Openstack>.<Password_Openstack>
+- Password  : {TenantName}.{Username_Openstack}.{Password_Openstack}
+- Port      : 22
 
 
 ![connexion](images/image2.png){.thumbnail}

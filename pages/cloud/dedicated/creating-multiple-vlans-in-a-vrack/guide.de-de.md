@@ -5,11 +5,11 @@ excerpt: 'So erstellen Sie mehrere VLANs im vRack'
 section: vRack
 ---
 
-**Stand 05.04.2019**
+**Stand 02.08.2019**
 
 ## Einleitung
 
-Bei der [Standardkonfiguration des vRack](https://docs.ovh.com/de/dedicated/mehrere-dedizierte-server-im-vrack-konfigurieren/){.external} können Sie nur ein VLAN erstellen. Das bedeutet, Sie können jede IP-Adresse nur einmal verwenden. Seit Version 2.0 der vRack Konfiguration ist es jedoch möglich, bis zu 4000 lokale virtuelle Netzwerke in nur einem vRack einzureichten. Das bedeutet, Sie können jede IP-Adresse bis zu 4000 mal verwenden.
+Bei der [Standardkonfiguration des vRack](https://docs.ovh.com/de/dedicated/mehrere-dedizierte-server-im-vrack-konfigurieren/){.external} können Sie nur ein VLAN erstellen. Das bedeutet, Sie können jede IP-Adresse nur einmal verwenden. Seit Version 2.0 der vRack Konfiguration ist es jedoch möglich, bis zu 4000 lokale virtuelle Netzwerke in nur einem vRack einzurichten. Das bedeutet, Sie können jede IP-Adresse bis zu 4000 mal verwenden.
 
 **In dieser Anleitung erfahren Sie, wie Sie mehrere VLANs im vRack erstellen.**
 
@@ -17,7 +17,7 @@ Bei der [Standardkonfiguration des vRack](https://docs.ovh.com/de/dedicated/mehr
 ## Voraussetzungen
 
 - Sie verfügen über einen oder mehrere mit dem vRack kompatible [Dedicated Server](https://www.ovh.de/dedicated_server/){.external}.
-- Sie haben einen [vRack](https://www.ovh.de/loesungen/vrack){.external} Dienst aktiviert.
+- Sie haben einen [vRack](https://docs.ovh.com/de/dedicated/mehrere-dedizierte-server-im-vrack-konfigurieren/){.external} Dienst aktiviert.
 - Sie haben Zugriff auf den von Ihnen gewählten privaten IP-Adressbereich.
 - Sie sind via SSH als Root-Benutzer eingeloggt (Linux).
 - Sie sind mit dem Administratorkonto eingeloggt (Windows).
@@ -55,6 +55,18 @@ Geben Sie danach im vRack den IP-Adressbereich an und taggen Sie ihn mit Ihrer K
 ip addr add 192.168.0.0/16 dev eth1.10
 ```
 
+Es kann vorkommen, dass das Interface getrennt wird:
+```sh
+# ip  addr show dev eth1
+7: eno2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+[...]
+```
+
+Um es wieder zu verbinden:
+```sh
+ip link set dev eth1 up
+```
+
 Um den Vorgang abzuschließen, bearbeiten Sie die Konfiguration des Netzwerkinterfaces, damit diese das VLAN-Tag erkennt. Öffnen Sie hierzu die Konfigurationsdatei des Netzwerkinterfaces und bearbeiten Sie sie wie folgt:
 
 ```sh
@@ -67,7 +79,7 @@ netmask 255.255.0.0
 broadcast 192.168.255.255
 ```
 
-### Windows
+### Unter Windows
 
 Verbinden Sie sich über den Remotedesktop mit Ihrem Server und öffnen Sie die Anwendung „Server Manager“. Wählen Sie dann `Local Server`{.action} aus und klicken Sie neben „**NIC Teaming**“ auf den Link `Disabled`{.action}:
 

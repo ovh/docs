@@ -1,15 +1,16 @@
 ---
-title: 'Déployer un template OVF Windows et SQL Server'
+title: Déployer un template OVF Linux, Windows Server et Windows SQL Server
 slug: deploiement-template-ovh
-excerpt: 'Découvrez comment déployer un template Windows et SQL Server'
-section: 'Services et options OVH'
+excerpt: Découvrez comment déployer un template Linux, Windows Server ou Windows SQL Server
+section: Gestion des machines virtuelles
+order: 02
 ---
 
-**Dernière mise à jour le 30/05/2018**
+**Dernière mise à jour le 29/01/2019**
 
 ## Objectif
 
-OVH propose des templates Windows et SQL server (au format OVF) que vous pouvez déployer directement depuis votre client lourd vSphere (version 5.5 et 6.0) et depuis le client Web (flash et HTML 5 sur version 6.5).
+OVH propose des templates Linux, Windows Server et Windows SQL server (au format OVF) que vous pouvez déployer directement depuis votre client lourd vSphere (version 5.5 et 6.0) et depuis le client Web (flash et HTML 5 sur version 6.5).
 
 **Ce guide vous explique où trouver les sources et comment procéder au déploiement.**
 
@@ -32,9 +33,9 @@ Depuis un navigateur internet, rendez-vous sur la page d'accueil de votre Privat
 
 ![Nom de photo](images/gatewayssl.png){.thumbnail}
 
-Dans l'écran `OVH Templates` qui s'affiche, vous accédez au détail des templates Windows et SQL proposés. 
+Dans l'écran `OVH Templates` qui s'affiche, vous accédez au détail des templates Linux, Windows et SQL proposés. 
 
-Sélectionnez le template souhaité, une fenêtre s'ouvre et vous propose les liens qui vous serviront pour le déploiement en fonction de votre version de vSphere.
+Sélectionnez le template souhaité, une fenêtre s'ouvrira et vous proposera les liens qui vous serviront pour le déploiement en fonction de votre version de vSphere.
 
 ![Nom de photo](images/copylink.png){.thumbnail}
 
@@ -82,6 +83,33 @@ Une fois le déploiement terminé, vous pouvez fermer cette fenêtre.
 Vous retrouvez alors la machine virtuelle déployée dans votre inventaire.
 
 ![Nom de photo](images/inventory.png){.thumbnail}
+
+### Finalisation de l'installation pour SQL Server
+
+Démarrer votre machine virtuelle fraichement déployée et ouvrez la console.
+
+Ouvrez la session Windows et renseignez le nom de votre instance SQL, le mot de passe et le jeux de caractère souhaité dans la fenêtre prévue à cet effet.
+
+![Nom de photo](images/sqlinformations.png){.thumbnail}
+
+
+> [!primary]
+> 
+> Il est recommandé de mettre en place un mot de passe respectant ces critères :
+> 
+> * Comporter au minimum huit caractères.
+> * Comporter au minimum trois types de caractères (Majuscules, minuscules, chiffres, caractères spéciaux).
+> * Ne pas être tiré du dictionnaire.
+> * Ne pas comporter d’informations personnelles (votre prénom, nom ou date de naissance).
+>
+
+Une fois ces informations renseignées, cliquez sur `Ok`{.action}.
+
+Une fenêtre montrant le déploiement s'ouvrira. A la fin de celui ci, une dernière fenêtre vous informant de la réussite du déploiement s'ouvrira.
+
+Cliquez à nouveau sur `OK`{.action} pour que l'installation se termine et que votre machine virtuelle redémarre.
+
+Suite à ce redémarrage vous pourrez commencer à utiliser votre machine virtuelle.
 
 
 ## Aller plus loin

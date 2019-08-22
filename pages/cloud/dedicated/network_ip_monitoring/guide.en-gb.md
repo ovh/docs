@@ -55,3 +55,24 @@ To do this, you must have :
 >
 > If your server is located in Roubaix 3, you have to retrieve the last IP via tcpdump.
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">root@nsXXXX:# tcpdump host server.ip | grep ICMP</span> </pre></div>
+>
+**Enable/Disable Monitoring**
+>
+>First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. On the left-hand tab select the Dedicated Server in question from the **Dedicated servers** drop-down menu.
+>
+![Service_Status](images/ServiceStatus.jpg){.thumbnail}
+>
+In the **Server status** tab, click the **Enable** or **Disable** button next to "Monitoring". Click **Confirm** on the popup window to confirm the changes.
+>
+**Enable Monitoring of Specific Services**
+>
+In addition to the standard Monitoring, you can enable OVH to monitor specific services such as HTTP, SSH, and other protocols in the OVH Manager. To do this, click **Monitor my services** under the "Service status" section on the **Server status** tab. Click **Monitor a service** and you will be taken to the following screen:
+>
+![Monitoring](images/Monitoring.jpg){.thumbnail}
+>
+Enter the IP address, protocol, port number, server response, and the time interval between checks on your service and press the check mark to confirm the changes.
+>
+**Conclusion**
+>
+OVH Monitoring offers our customers a variety of ways in which OVH can provide information about the status of your Dedicated Servers. We highly recommend that you take advantage of these free services.
+>

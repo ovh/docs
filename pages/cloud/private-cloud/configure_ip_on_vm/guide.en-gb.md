@@ -1,17 +1,17 @@
 ---
-title: Configure an IP address on a virtual machine
+title: 'Configure an IP address on a virtual machine'
 slug: configure-ip-on-virtual-machine
-excerpt: Learn how to configure an IP address on a virtual machine
-section: Getting started
+excerpt: 'This guide will show you how to assign a public or private IP address to a virtual machine'
+section: 'Getting started'
 ---
 
-**Last updated 03rd January 2018**
+**Last updated 16th April 2018**
 
 ## Objective
 
-After you have created a virtual machine (VM), you can assign a public or private IP address.
+After you have created a virtual machine (VM), you can assign to it a public or private IP address so that the VM has internet and/or private network connectivity.
 
-**This guide explains how to carry out this configuration.**
+**This guide will show you how to assign a public or private IP address to a virtual machine.**
 
 ## Requirements
 

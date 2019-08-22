@@ -2,11 +2,11 @@
 title: 'Zmiana hasła do konta e-mail'
 slug: zmiana-hasla-do-konta-email
 excerpt: 'Dowiedz się, jak zmienić hasło do konta e-mail utworzonego w ramach pakietu MX Plan'
-section: 'Zarządzanie kontem e-mail'
-order: 2
+section: 'Pierwsze kroki'
+order: 3
 ---
 
-**Ostatnia aktualizacja dnia 2018-04-11**
+**Ostatnia aktualizacja z dnia 06-05-2019**
 
 ## Wprowadzenie
 
@@ -15,58 +15,100 @@ Dzięki kontom e-mail MX Plan możesz wysyłać i odbierać wiadomości, korzyst
 **Dowiedz się, jak zmienić hasło do konta e-mail utworzonego w ramach pakietu MX Plan.**
 
 ## Wymagania początkowe
-- Posiadanie konta e-mail MX Plan (zawartego w pakiecie [hostingowym OVH](https://www.ovh.pl/hosting/){.external} lub wykupionego odrębnie)
-- Dostęp do interfejsu zarządzania usługą MX Plan w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+
+- Wykupienie usługi MX Plan Jest ona dostępna w ramach oferty: [Hosting]({ovh_www}/hosting/){.external}, [Hosting Start 10M]({ovh_www}/domeny/oferta_serwer_start10m.xml){.external} lub oferty MX Plan zamówionej oddzielnie.
+- W zależności od metody, z której korzystasz: zalogowanie do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web`{.action} lub zalogowanie do konta e-mail za pośrednictwem interfejsu [Webmail]({ovh_www}/mail/){.external} Outlook Web Access (OWA).
 
 > [!primary]
 >
-> Zmiana hasła do Twojego konta e-mail w OVH wiąże się z koniecznością przeprowadzenia zmiany w konfiguracji programu pocztowego, o ile takiego programu używasz.
+> Po zmianie hasła do Twojego konta e-mail wprowadź je na wszystkich urządzeniach, na których skonfigurowałeś konto.
 >
 
 ## W praktyce
 
-### Etap 1: dostęp do interfejsu zarządzania usługą e-mail
+W zależności od daty aktywacji usługi lub jeśli usługa została niedawno przeniesiona, możliwe jest, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, ustal jaką wersję posiadasz. 
 
-Aby rozpocząć operację, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij `E-maile`{.action} na pasku usług po lewej stronie, następnie wybierz nazwę domeny, dla której wykupiona została usługa MX Plan. Teraz przejdź do zakładki `E-maile`{.action}.
+W tym celu zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja „Web”. Kliknij E-maile na pasku usług po lewej stronie, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
 
-Tabela, która się wyświetla zawiera listę wszystkich kont e-mail utworzonych w ramach Twojej usługi MX Plan. 
+|Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
+|---|---|
+|![E-mail](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Znajdź nazwę oferty w polu „Abonament”.|![E-mail](images/mxplan-password-new-step1.png){.thumbnail}<br>Znajdź Oznaczenie serwera w polu „Informacje ogólne”|
+|Przejdź do [Poprzedniej wersja usługi MX Plan](./#poprzednia-wersja-uslugi-mx-plan_2)|Przejdź do [Nowej wersji usługi MX Plan](./#nowa-wersja-uslugi-mx-plan).|
 
-![mxplanpassword](images/change-email-password-step1.png){.thumbnail}
+### Nowa wersja usługi MX Plan
 
-### Etap 2: zmiana hasła do konta e-mail
+Posiadasz nową wersję usługi MX Plan. Powinno Ci się wyświetlić takie okno. Jeśli tak nie jest, upewnij się, czy wybrałeś właściwą ścieżkę, [sprawdzając powyższe informacje](./#w-praktyce).  
 
-Aby zmienić hasło, kliknij ikonkę koła zębatego po prawej stronie wybranego konta, a następnie kliknij `Zmień hasło`{.action}.
+![E-mail](images/mxplan-password-new-step1.png){.thumbnail}
 
-![mxplanpassword](images/change-email-password-step2.png){.thumbnail}
+Istnieją dwie metody zmiany hasła do konta e-mail. Przejdź do metody, z której chcesz skorzystać.
 
-W oknie, które się wyświetli, wprowadź nowe hasło i kliknij przycisk Zatwierdź.
+- [Zmiana hasła w interfejsie Webmail OWA](./#zmiana-hasla-w-interfejsie-webmail-owa). Przygotuj aktualne hasło. 
+- [Zmiana hasła w Panelu klienta](./#zmiana-hasla-w-panelu-klienta). Przygotuj aktualne hasło.
 
-**Nowe hasło będzie aktywne po kilku minutach.**
+#### Zmiana hasła w interfejsie Webmail OWA
+
+Zaloguj się na stronie [interfejsu Webmail]({ovh_www}/mail/){.external}. Wprowadź pełny adres e-mail oraz aktualne hasło. Następnie kliknij przycisk `Logowanie`{.action}. 
+
+![E-mail](images/mxplan-password-new-step2.png){.thumbnail}
+
+Wyświetli się wówczas Twoja skrzynka odbiorcza. Kliknij koło zębate w górnej części, a następnie `Opcje`{.action}.
+
+![E-mail](images/mxplan-password-new-step3.png){.thumbnail}
+
+Na nowej stronie, która się wyświetli, po lewej stronie rozwiń kartę „Ogólne” w widoku drzewa, po czym kliknij `Moje konto`{.action}. Następnie kliknij `Zmień hasło`{.action}.
+
+![E-mail](images/mxplan-password-new-step4.png){.thumbnail}
+
+W nowym oknie, które się wyświetli, wprowadź aktualne hasło, po czym je zatwierdź. Kliknij przycisk `Zapisz`{.action}, aby zapisać zmiany.
 
 > [!primary]
 >
-> Przy wyborze nowego hasła zalecamy zastosowanie zwyczajowych zasad bezpieczeństwa. Zalecamy również:
->
-> - nie używać dwa razy tego samego hasła; 
->
-> - wybrać hasło, które nie ma żadnego związku z Twoimi danymi osobistymi (takimi jak nazwisko, imię czy data urodzenia);
->
-> - regularnie zmieniać hasła;
->
-> - nie zapisywać haseł na kartce ani nie przesyłać ich na Twój adres e-mail;
->
-> - nie zapisywać haseł w przeglądarce internetowej, nawet jeśli wyświetli się taka sugestia.
+> Wprowadź nowe hasło na wszystkich urządzeniach, na których skonfigurowałeś konto.
 >
 
-![mxplanpassword](images/change-email-password-step3.png){.thumbnail}
+![E-mail](images/mxplan-password-new-step5.png){.thumbnail}
 
-### Etap 3: logowanie do konta e-mail
+#### Zmiana hasła w Panelu klienta
 
-Po zmianie hasła możesz zalogować się do konta e-mail. Aby to zrobić, możesz skorzystać z jednej z dwóch metod:
+W tym celu przejdź do zakładki `Konta e-mail`{.action}. Tabela, która się wyświetla zawiera listę wszystkich kont e-mail utworzonych w ramach Twojej usługi. Kliknij przycisk `...`{.action} po prawej stronie wybranego konta, a następnie `Zmień`{.action}.
 
-- **użyj aplikacji OVH RoundCube**: kliknij link <https://www.ovh.pl/mail/>, następnie wpisz odpowiedni adres e-mail oraz nowe hasło. Jeśli właśnie zmieniłeś hasło i uwierzytelnienie nie powiodło się, odczekaj kilka chwil, następnie spróbuj zalogować się ponownie;
+![E-mail](images/mxplan-password-new-step6.png){.thumbnail}
 
-- **użyj kompatybilnego programu pocztowego**: konieczne jest wprowadzenie nowego hasła we wszystkich urządzeniach, w których konto e-mail zostało skonfigurowane. W przypadku niektórych programów pocztowych okno, do którego należy wpisać nowe hasło do konta e-mail wyświetli się automatycznie. Jeśli tak się nie stanie, sprawdź w dokumentacji programu pocztowego lub skontaktuj się z producentem, aby móc przeprowadzić tę operację.
+W oknie, które się wyświetla, ustal nowe hasło i potwierdź je. Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło nie mające żadnego związku z Twoimi danymi osobistymi (należy unikać używania imienia, nazwiska, daty urodzenia, etc.) i regularnie je zmieniać.
+
+Po zmianie hasła kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}. Nowe hasło będzie aktywne po kilku minutach.
+
+![E-mail](images/mxplan-password-new-step7.png){.thumbnail}
+
+Po zmianie hasła możesz zalogować się do konta e-mail. Możesz to zrobić na dwa różne sposoby.
+
+- Zaloguj się na stronie **Logowanie do interfejsu Webmail**, po czym wprowadź odpowiedni adres e-mail oraz hasło. Jeśli właśnie zmieniłeś hasło i uwierzytelnienie nie powiodło się, odczekaj kilka chwil, następnie spróbuj zalogować się ponownie. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail OWA, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail Outlook Web Access (OWA)](../korzystanie-owa/){.external}.
+
+- **Użyj kompatybilnego programu pocztowego**: konieczne jest wprowadzenie nowego hasła we wszystkich urządzeniach, w których konto e-mail zostało skonfigurowane. W przypadku niektórych programów pocztowych okno, do którego należy wpisać nowe hasło do konta e-mail wyświetli się automatycznie. Jeśli tak się nie stanie, [skorzystaj z naszych przewodników dotyczących konfiguracji](../) lub skontaktuj się z producentem używanego przez Ciebie oprogramowania.
+
+### Poprzednia wersja usługi MX Plan
+
+Posiadasz starszą wersję usługi MX Plan. Powinno Ci się wyświetlić takie okno. Jeśli tak nie jest, upewnij się, czy wybrałeś właściwą ścieżkę, [sprawdzając powyższe informacje](./#w-praktyce). 
+
+![E-mail](images/mxplan-password-legacy-step1.png){.thumbnail}
+
+Aby zmienić hasło do konta e-mail, przejdź do zakładki `E-maile`{.action}. Tabela, która się wyświetla, zawiera listę wszystkich kont e-mail utworzonych w ramach Twojej usługi MX Plan. Kliknij przycisk `...`{.action} po prawej stronie wybranego konta, a następnie `Zmień hasło`{.action}.
+
+![E-mail](images/mxplan-password-legacy-step2.png){.thumbnail}
+
+W oknie, które się wyświetla, ustal nowe hasło i potwierdź je. Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło nie mające żadnego związku z Twoimi danymi osobistymi (należy unikać używania imienia, nazwiska, daty urodzenia, etc.) i regularnie je zmieniać.
+
+Po zmianie hasła kliknij przycisk `Zatwierdź`{.action}. Nowe hasło będzie aktywne po kilku minutach.
+
+![E-mail](images/mxplan-password-legacy-step3.png){.thumbnail}
+
+Po zmianie hasła możesz zalogować się do konta e-mail. Możesz to zrobić na dwa różne sposoby.
+
+- Zaloguj się na stronie **Logowanie do interfejsu Webmail**, po czym wprowadź odpowiedni adres e-mail oraz hasło. Jeśli właśnie zmieniłeś hasło i uwierzytelnienie nie powiodło się, odczekaj kilka chwil, następnie spróbuj zalogować się ponownie. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail RoundCube, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail RoundCube](../korzystanie-roundcube/){.external}.
+
+- **Użyj kompatybilnego programu pocztowego**: konieczne jest wprowadzenie nowego hasła we wszystkich urządzeniach, w których konto e-mail zostało skonfigurowane. W przypadku niektórych programów pocztowych okno, do którego należy wpisać nowe hasło do konta e-mail wyświetli się automatycznie. Jeśli tak się nie stanie, [skorzystaj z naszych przewodników dotyczących konfiguracji](../) lub skontaktuj się z producentem używanego przez Ciebie oprogramowania.
+
 
 ## Sprawdź również
 

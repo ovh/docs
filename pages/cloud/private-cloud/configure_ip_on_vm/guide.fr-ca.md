@@ -1,11 +1,12 @@
 ---
-title: Configurer une IP sur une machine virtuelle
-slug: configurer-ip-machine-virtuelle
-excerpt: Apprenez à configurer une IP sur une machine virtuelle
-section: Premiers pas
+title: 'Configurer une IP sur une machine virtuelle'
+slug: configuration-ip-machine-virtuelle
+excerpt: 'Apprenez à configurer une IP sur une machine virtuelle'
+section: 'Gestion des machines virtuelles'
+order: 5
 ---
 
-**Dernière mise à jour le 2018/02/01**
+**Dernière mise à jour le 28/11/2017**
 
 ## Objectif
 
@@ -28,17 +29,17 @@ Vous pouvez récupérer les informations de votre bloc d'adresses IP publiques d
 
 Sur chaque bloc livré par OVH, 5 adresses IP sont réservées à la configuration du réseau et ne doivent jamais être utilisées pour vos machines virtuelles. Il s'agit de la première et des quatre dernières IP du bloc.
 
-Un bloc IP Cloud Privé est organisé comme suit :
+Un bloc IP Private Cloud est organisé comme suit :
 
 - la première adresse IP marquée comme réservée (`Reserved`) correspond à l'adresse de réseau ;
 - les IP suivantes sont utilisables pour vos machines virtuelles. Elles sont indiquées comme disponibles (`Available`) si aucune VM ne les exploite ou comme utilisées (`Used`) dans le cas contraire ;
-- les quatre dernières IP du bloc sont réservées, deux sont dédiées aux routeurs OVH pour le fonctionnement du bloc et les deux autres sont employées pour la passerelle et la diffusion (broadcast).
+- les quatre dernières IP du bloc sont réservées, deux sont dédiées aux routeurs OVH pour le fonctionnement du bloc et les deux autres sont employées pour la passerelle et le broadcast.
 
 ![Configuration avancée sur l'OVH Network](images/config_ip_ovh_network_advanced.jpg){.thumbnail}
 
 ### Configurer une IP publique
 
-Afin de configurer une IP publique sur votre machine virtuelle, vous devez au préalable avoir choisi l’interface `VMNetwork`{.action} dans les paramètres de la carte réseau de votre machine virtuelle :
+Afin de configurer une IP publique sur votre machine virtuelle, vous devez au préalable avoir choisi l’interface `VMNetwork`{.action} dans les paramètres de la carte réseau de votre VM :
 
 ![VMNetwork](images/vmnetwork.PNG){.thumbnail}
 
@@ -98,17 +99,17 @@ Dans le choix de votre interface, vous pouvez éditer les paramètres suivants :
 - sur un Private Cloud, une interface VXLAN (vxw-dvs…). Si vous avez besoin de plus de VXLAN, vous pouvez ouvrir un ticket auprès du support.
 
 
-#### Centre de données défini par logiciel (SDDC)
+#### SDDC
 
 Dans les paramètres de votre machine virtuelle, vous devez utiliser un VLAN :
 
 ![VLAN pour SDDC](images/vlan.PNG){.thumbnail}
 
-#### Cloud Privé
+#### Private Cloud
 
 Dans les paramètres de votre machine virtuelle, vous devez utiliser un VXLAN :
 
-![VXLAN sur Cloud Privé](images/vxlan.PNG){.thumbnail}
+![VXLAN sur Private Cloud](images/vxlan.PNG){.thumbnail}
 
 #### Linux
 
@@ -144,7 +145,7 @@ ncpa.cpl
 
 Il faut ensuite effectuer un clic droit sur la carte réseau correspondant au VMNetwork et `Propriétés`{.action). Sélectionnez ensuite `Protocole TCP/IP v4`{.action} et cliquez de nouveau sur 'Properties' puis renseignez les informations de votre IP comme suit :
 
-![Configuration Windows UP publique](images/windows_private.PNG){.thumbnail}
+![Configuration Windows IP publique](images/windows_private.PNG){.thumbnail}
 
 En modifiant cette interface, vous pouvez indiquer une IP privée sur la plage IP de votre choix :
 
@@ -153,6 +154,7 @@ Adresse IP : 192.168.70.2
 Masque de sous-réseau : 255.255.255.0
 Paserelle par défaut : 192.168.70.254
 ```
+
 
 ## Aller plus loin
 

@@ -5,22 +5,19 @@ excerpt: 'Cómo conocer el número de serie de un disco duro para sustituirlo'
 section: 'RAID y discos'
 ---
 
-**Última actualización: 09/10/2018**
+**Última actualización: 22/05/2019**
 
 ## Objetivo
 
-Para minimizar el riesgo de error durante la sustitución de un disco duro, pedimos a nuestros clientes que proporcionen el número de serie del disco que quieran sustituir. Para más información sobre este procedimiento, puede consultar nuestra guía [Sustituir un disco](https://docs.ovh.com/es/dedicated/sustitucion-disco/){.external}.
+Para minimizar el riesgo de error durante la sustitución de un disco duro, pedimos a nuestros clientes que proporcionen el número de serie del disco que quieran sustituir. En la mayoría de los casos, puede obtenerlo probando los discos duros uno a uno con la herramienta **Smartmontools**.
 
-En la mayoría de los casos, es posible obtener el número de serie de los discos duros probándolos uno a uno con la herramienta **smartmontools**.
-
-**Esta guía explica cómo obtener el número de serie de un disco duro para solicitar su sustitución.**  
-
+**Esta guía explica cómo obtener el número de serie de un disco duro.**
 
 ## Requisitos
 
-* Estar conectado por SSH con el usuario root (Linux) o la cuenta de administrador (Windows).
-* En servidores Windows, haber instalado la utilidad **sas2ircu** (disponible en el motor de búsqueda de [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
-
+- Tener un [servidor dedicado](https://www.ovh.es/servidores_dedicados/){.external}.
+- Tener acceso al servidor por SSH como administrador (root).
+- En servidores Windows, haber instalado la utilidad **sas2ircu** (disponible en el motor de búsqueda de [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
 
 ## Procedimiento
 
@@ -29,24 +26,22 @@ En la mayoría de los casos, es posible obtener el número de serie de los disco
 > Si se trata de un disco NVMe, será necesario poner el servidor en [modo de rescate](https://docs.ovh.com/es/dedicated/modo_de_rescate/){.external} y utilizar la herramienta **nvme-cli**, instalada por defecto.
 > 
 
-### Obtener el número de serie de un disco duro con RAID por software
+### Obtener el número de serie de un disco (RAID por software)
 
 Para conocer el número de serie de un disco duro con RAID por software, utilice el comando `smartctl`:
 
 ```sh
-smartctl -a /dev/sdX | grep Serial 
-Serial Number:    XXXXXXX
+# smartctl -a /dev/sdX | grep Serial Serial Number:    XXXXXXX
 ```
 
-En este caso, el periférico es detectado por el sistema operativo y la respuesta indica su número de serie.
-
+En este caso, el periférico (por ejemplo, /dev/sda, /dev/sdb...) es detectado por el sistema operativo.
 
 ### Obtener el número de serie de un disco NVMe
 
 En los discos NVMe, utilice el comando `nvme list`:
 
 ```sh
-nvme list
+root@rescue:~# nvme list
 
 Node          SN                  Model                Namespace  Usage                      Format   FW Rev
 /dev/nvme0n1  CVPF636600YC450RGN  INTEL SSDPE2MX450G7  1          450.10 GB / 450.10 GB 512  B + 0 B  MDV10253
@@ -55,28 +50,27 @@ Node          SN                  Model                Namespace  Usage         
 
 En la respuesta podrá ver el número de serie de los diferentes discos NVMe (en este caso, nvme0 y nvme1).
 
+### Obtener el número de serie de un disco (Windows)
 
-### Obtener el número de serie de un disco en Windows
-
-El proceso en Windows es similar a Linux. Recurriremos a la utilidad **sas2ircu** con los mismos comandos que los utilizados en Linux.
+El proceso en Windows es similar al de Linux. Recurriremos a la utilidad **sas2ircu** con los mismos comandos que los utilizados en Linux.
 
 > [!primary]
 >
-> Debe ejecutar la consola como administrador. De lo contrario, aparecerá un error.
+> Para evitar errores, es necesario ejecturar la consola con permisos de administrador.
 > 
 
-Para conocer el número de serie de una configuración en RAID por software, utilice el siguiente comando:
+Para conocer el número de serie de un disco duro con RAID por software, utilice el siguiente comando:
 
 ```sh
-.\smartctl -a /dev/sdX
+# .\smartctl -a /dev/sdX Serial Number: 1234567890
 ```
 
-Si el periférico es detectado por el sistema operativo, en la sección de información de la respuesta podrá ver el número de serie.
+Si el periférico (/dev/sda, /dev/sdb...) es detectado por el sistema operativo, en la sección de información de la respuesta podrá ver el número de serie.
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
 
-### Obtener el número de serie de un disco con RAID por hardware
+### Obtener el número de serie de un disco (RAID por hardware)
 
 Para más información sobre estos comandos y sobre cómo probar los discos duros, consulte nuestra guía [RAID por hardware](https://docs.ovh.com/es/dedicated/raid-hardware/){.external}.
 
@@ -85,12 +79,12 @@ Para más información sobre estos comandos y sobre cómo probar los discos duro
 
 ##### 1. Identificar los conjuntos de RAID
 
-Antes de utilizar el comando `smartctl` para obtener el número de serie de los discos, debe saber cuántos conjuntos RAID (o discos virtuales) tiene el servidor.
+Antes de utilizar el comando `smartctl` para obtener el número de serie de los discos, es necesario saber cuántos conjuntos RAID (o discos virtuales) tiene el servidor.
 
 Puede obtener esta información con el siguiente comando:
 
 ```sh
-MegaCli -LDInfo -Lall -aALL | egrep 'Adapter|Size' | grep -v Strip
+# MegaCli -LDInfo -Lall -aALL | egrep 'Adapter|Size' | grep -v Strip
 
 Adapter 0
 
@@ -101,7 +95,7 @@ Adapter 1
 Virtual Drive Information: Size: 2.727 TB
 ```
 
-En este ejemplo, hay dos RAID configurados en el servidor (**Adapter 0** y **Adapter 1**), que deberían estar asociados a **/dev/sda** y **/dev/sdb** respectivamente.
+En este ejemplo, hay dos RAID configurados en el servidor (Adapter 0 y Adapter 1) que deberían estar asociados a /dev/sda y /dev/sdb respectivamente.
 
 
 ##### 2. Obtener información sobre los discos
@@ -109,7 +103,7 @@ En este ejemplo, hay dos RAID configurados en el servidor (**Adapter 0** y **Ada
 Utilice el siguiente comando para obtener información sobre los discos físicos:
 
 ```sh
-MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g'
+# MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g'
 
 Slot Number: 0
 Device Id: 4
@@ -138,13 +132,12 @@ Inquiry Data:       PN2234P8JYP59YHGST HUS724030ALA640                    MF8OAA
 
 ##### 3. Obtener el número de serie
 
-Una vez disponga del número del adaptador y del Device Id, deberá utilizarlos para indicar a **smartctl** qué disco buscar y en qué conjunto de RAID.
+Una vez disponga del adaptador y del Device Id, deberá utilizarlos para indicar a smartctl qué disco buscar y en qué conjunto de RAID.
 
-El comando debería tener el siguiente formato:
+El comando debe tener el siguiente formato:
 
 ```sh
-smartctl -d megaraid,N -a /dev/sdX | grep Serial 
-Serial Number:    XXXXXXX
+# smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
 ```
 
 No olvide sustituir en el comando anterior **N** por el Device Id y **sdX** por el volumen en RAID (**/dev/sda** para el primer RAID, **/dev/sdb** para el segundo RAID, y así sucesivamente).
@@ -161,33 +154,26 @@ No olvide sustituir en el comando anterior **N** por el Device Id y **sdX** por 
 > En ese caso, deberá sustituir **megaraid** por **sat+megaraid**:
 >
 > ```
-> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial 
-Serial Number:    XXXXXXX
+> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial Serial Number:    1234567890
 > ```
 >
 
-#### Controladora RAID LSI
+#### Obtener el número de serie de un disco (controladora RAID LSI)
 
-Las tarjetas controladoras RAID LSI utilizan un módulo llamado **sg-map**, que asocia los periféricos a rutas **/dev/sgX** (siendo **X** el número del periférico).
+Las tarjetas controladoras RAID LSI utilizan un módulo llamado **sg-map**, que asocia los periféricos a rutas de tipo /dev/sgX (siendo «X» el número del periférico).
 
 Para determinar qué periférico sg corresponde a cada disco duro, consulte nuestra guía [RAID por hardware](https://docs.ovh.com/es/dedicated/raid-hardware/){.external}.
 
 Una vez que sepa qué periférico sg corresponde al disco duro que quiera analizar, utilice el siguiente comando:
 
 ```sh
-smartctl -a /dev/sgX | grep Serial 
-Serial Number:    XXXXXXX
+# smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
 ```
 
-No olvide sustituir en el comando anterior **/dev/sgX** por **/dev/sg0**, **/dev/sg1**...
+No olvide sustituir en el comando anterior **sgX** por **/dev/sg0**, **/dev/sg1**...
+
 
 
 ## Más información
-
-[Sustituir un disco](https://docs.ovh.com/es/dedicated/sustitucion-disco/){.external}
-
-[RAID por hardware](https://docs.ovh.com/es/dedicated/raid-hardware/){.external}
-
-[RAID por software](https://docs.ovh.com/es/dedicated/raid-software/){.external}
 
 Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.

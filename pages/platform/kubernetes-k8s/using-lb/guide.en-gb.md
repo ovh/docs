@@ -5,7 +5,8 @@ slug: using-lb
 section: 'Getting started'
 ---
 
-# Using the OVH Managed Kubernetes LoadBalancer
+
+**Last updated 1<sup>st</sup> July, 2019.**
 
 <style>
  pre {
@@ -21,12 +22,15 @@ section: 'Getting started'
  pre.console code {
    border: solid 0px transparent;
    font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
  }
  .small {
      font-size: 0.75em;
  }
 </style>
 
+# Using the OVH Managed Kubernetes LoadBalancer
 
 In this tutorial we are explaining how to deploy services on OVH Managed Kubernetes service using our `LoadBalancer` to get external traffic into your cluster. We will begin by listing the main methods to expose Kubernetes services outside the cluster, with its advantages and disadvantage. Then  we will see a complete example of `LoadBalancer` service deployment.
 
@@ -38,7 +42,7 @@ This tutorial presupposes that you already have a working OVH Managed Kubernetes
 
 ## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
 
-When you begin to use Kubernetes for real applications, one of the first questions if how to get external traffic into your cluster. The [official doc](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types) gives you a good but rather dry explanation on the topic, but here we are trying to explain the concepts in a minimal, need-to-know way.
+When you begin to use Kubernetes for real applications, one of the first questions if how to get external traffic into your cluster. The [official doc](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types){.external} gives you a good but rather dry explanation on the topic, but here we are trying to explain the concepts in a minimal, need-to-know way.
 
 There are several ways to route the external traffic into your cluster:
 
@@ -91,9 +95,9 @@ The `LoadBalancer` is the best option for a production environnement, with two c
 
 ### What about Ingress
 
-According to the [official documentation](https://kubernetes.io/docs/concepts/services-networking/ingress/), an `Ingress` is an API object that manages external access to the services in a cluster, typically HTTP. Whats the difference with the `LoadBalancer` or `NodePort`?
+According to the [official documentation](https://kubernetes.io/docs/concepts/services-networking/ingress/){.external}, an `Ingress` is an API object that manages external access to the services in a cluster, typically HTTP. Whats the difference with the `LoadBalancer` or `NodePort`?
 
-`Ingress` isn't a type of `Service`, but un object that acts as a [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy), and single entrypoint to your cluster that routes the request to the different services. The most basic `Ingress` is the [NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx), where the NGINX take the role of reverse proxy, but also functions as SSL.
+`Ingress` isn't a type of `Service`, but un object that acts as a [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy){.external}, and single entrypoint to your cluster that routes the request to the different services. The most basic `Ingress` is the [NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx){.external}, where the NGINX take the role of reverse proxy, but also functions as SSL.
 
 And Ingress is exposed to the outside of the cluster either via `ClusterIP` and Kubernetes proxy, `NodePort` or `LoadBalancer`, and it routes incoming traffic according to configured rules.
 

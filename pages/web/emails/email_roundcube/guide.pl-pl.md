@@ -1,8 +1,8 @@
 ---
-title: Webmail - Przewodnik dotyczący interfejsu RoundCube
-
-excerpt: Zarządzanie e-mailami, kontaktami i folderami
+title: 'Webmail - Przewodnik dotyczący interfejsu RoundCube'
+excerpt: 'Zarządzanie e-mailami, kontaktami i folderami'
 slug: webmail_przewodnik_dotyczacy_interfejsu_roundcube
+section: 'Pierwsze kroki'
 ---
 
 ## Wprowadzenie

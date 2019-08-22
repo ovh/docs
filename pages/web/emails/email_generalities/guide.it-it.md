@@ -1,143 +1,187 @@
 ---
-title: 'Hosting condiviso: come gestire il servizio email OVH'
-excerpt: Le soluzioni email OVH
-slug: hosting_condiviso_come_gestire_il_servizio_email_ovh
+title: 'Iniziare a utilizzare la soluzione MX Plan'
+slug: informazioni-generali-email-condivise
+excerpt: 'Come eseguire le prime operazioni sul servizio MX Plan'
+section: 'Per iniziare'
+order: 1
 legacy_guide_number: g1474
 ---
 
+**Ultimo aggiornamento: 18/07/2019**
 
-## Windows
+## Obiettivo
 
-- [Windows 10](https://www.ovh.it/g2284.servizio_email_guida_alla_configurazione_app_posta_di_windows_10)
+La soluzione MX Plan di OVH permette di usufruire di una o più caselle email per inviare e ricevere messaggi da qualsiasi dispositivo. 
 
-- [Windows 8](https://www.ovh.it/g1281.servizio_email_guida_alla_configurazione_di_windows_8)
+**Questa guida ti mostra le operazioni di base da effettuare sul tuo servizio di posta elettronica MX Plan**.
 
-- [Windows Phone](https://www.ovh.it/g1346.servizio_email_guida_alla_configurazione_di_windows_phone)
+## Prerequisiti
 
-- [Windows Mail](https://www.ovh.it/g1300.servizio_email_guida_alla_configurazione_di_windows_mail)
+- Disporre di una soluzione MX Plan (il servizio è disponibile con un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}, un [hosting gratuito Start 10M](https://www.ovh.it/domini/offerta_hosting_start10m.xml){.external} o una soluzione MX Plan ordinata separatamente)
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}
 
+## Procedura
 
+Una volta che la soluzione MX Plan ordinata risulta attiva, le operazioni per la sua gestione sono disponibili direttamente nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. In base alla data di attivazione o in caso di [recente migrazione del servizio](https://www.ovh.it/mxplan-migration/){.external}, la versione disponibile sarà differente. Per verificare quella attiva accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra.
 
+Prosegui nella lettura di questa guida in base alla versione di cui disponi.
 
-## Apple
+|Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
+|---|---|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Il servizio è indicato nel riquadro `Abbonamento`|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Il servizio è indicato nel riquadro `Riepilogo`, sotto la voce `Referenza server`|
+|Consulta il paragrafo [Vecchia versione della soluzione MX Plan](./#vecchia-versione-della-soluzione-mx-plan_2)|Consulta il paragrafo [Nuova versione della soluzione MX Plan](./#nuova-versione-della-soluzione-mx-plan)|
 
-- [Mail di Mac](https://www.ovh.it/g1287.configurazione-mail-macos)
+### Nuova versione della soluzione MX Plan
 
-- [Mavericks & Yosemite](https://www.ovh.it/g1599.email_condivisa_guida_alla_configurazione_email_per_mac-_mavericks_e_yosemite)
+#### Step 1: accedi alla gestione del servizio
 
-- [El Capitan](https://www.ovh.it/hosting/guides/g1965.servizio_email_guida_alla_configurazione_su_mail_di_mac_-_el_capitan)
+Se disponi della nuova versione del servizio, l’interfaccia visualizzata dovrebbe essere quella dell’immagine qui sotto. In caso contrario [torna al paragrafo precedente](./#procedura) e assicurati di aver verificato correttamente la tua versione attiva.  
 
-- [Thunderbird sur Mac](https://www.ovh.it/g1911.servizio_email_guida_alla_configurazione_di_thunderbird_su_mac)
+![email](images/mxplan-starter-new-step1.png){.thumbnail}
 
-- [iPad iOS 7](https://www.ovh.it/g1348.configurazione-ipad)
+#### Step 2: crea una casella di posta
 
-- [iPhone iOS 3](https://www.ovh.it/g1296.configurazione-iphone)
+Per creare un indirizzo email clicca sulla scheda `Account email`{.action}.
 
-- [iPhone iOS 9.1](https://www.ovh.it/g2004.servizio_email_guida_configurazione_iphone_ios_91)
+Visualizzi una tabella con tutti gli account email già disponibili e quelli che è ancora possibile creare. Clicca sul pulsante `Aggiungi un account`{.action}.
 
+![email](images/mxplan-starter-new-step2.png){.thumbnail}
 
+Nella nuova finestra inserisci le informazioni richieste:
 
+|Campo|Descrizione|  
+|---|---|  
+|Account email|Quest’area di testo conterrà un nome provvisorio: rimuovilo e inserisci quello che intendi assegnare al tuo indirizzo email (ad esempio, nome.cognome). Il dominio associato risulterà preselezionato nella lista.|  
+|Nome|Inserisci un nome.|  
+|Cognome|Inserisci un cognome.|  
+|Nome da visualizzare|Indica il nome che vuoi che venga visualizzato come mittente per i messaggi inviati da questo indirizzo.|
+|Password|Crea una password e confermala. Per motivi di sicurezza ti consigliamo di non utilizzare due volte la stessa password, scegliere una password che non contenga informazioni personali (ad esempio nome, cognome o data di nascita) e di modificarla regolarmente.
+|
 
-## Outlook
+Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la correttezza delle informazioni inserite e poi clicca su `Conferma`{.action}. Ripeti questa operazione per tutti gli account che vuoi creare, in base al numero a tua disposizione. 
 
-- [Outlook 2007](https://www.ovh.it/g1298.servizio_email_guida_alla_configurazione_di_outlook_2007)
+![email](images/mxplan-starter-new-step3.png){.thumbnail}
 
-- [Outlook 2010](https://www.ovh.it/g1299.servizio_email_guida_alla_configurazione_di_outlook_2010)
+#### Step 3: utilizza gli indirizzi email
 
-- [Outlook 2013](https://www.ovh.it/hosting/guides/g1286.servizio_email_guida_alla_configurazione_di_outlook_2013)
+Una volta creati gli account non ti resta che utilizzarli tramite la Webmail _Outlook on the web_ o un dispositivo di tua scelta.
 
-- [Outlook 2011 su Mac](https://www.ovh.it/g1345.servizio_email_guida_alla_configurazione_di_outlook_2011_su_mac)
+##### 1. Webmail _Outlook on the web_
 
+Accedi alla [pagina di connessione](https://www.ovh.it/mail/){.external}, inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
+Se è la prima volta che esegui l’accesso da questo indirizzo email, ti verrà chiesto di selezionare la lingua dell’interfaccia utente e definire il fuso orario della tua area geografica. Quando effettui il login, si apre di default la casella della posta in arrivo. Per maggiori informazioni consulta la guida all’[utilizzo di un account di posta da "Outlook on the web"](../utilizzo-owa){.external}.
 
+![email](images/mxplan-starter-new-step4.png){.thumbnail}
 
-## Altro
+##### 2. Dispositivo di tua scelta
 
-- [Thunderbird su Windows](https://www.ovh.it/g1297.email_condivisa_guida_alla_configurazione_di_thunderbird)
+Configura l’account email sul tuo dispositivo  (ad esempio, smartphone o tablet) consultando, se necessario, le nostre guide disponibili online:
 
-- [Tablet con Android 4.1.2](https://www.ovh.it/g1283.servizio_email_guida_alla_configurazione_su_tablet_android)
+|Windows|Outlook|Apple|Android|Altro|
+|---|---|---|---|---|
+|[Windows 10](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_dellapp_posta_di_windows_10/){.external}|[Outlook 2016](https://docs.ovh.com/it/emails/configurazione-outlook-2016/){.external}|[Mail di macOS (ultima versione)](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_mail_di_mac_-_el_capitan/){.external}|[Android (ultima versione)](https://docs.ovh.com/it/emails/configurazione-android-6/){.external}|[Gmail](https://docs.ovh.com/it/emails/mail-condivisa-guida-configurazione-diuna-email-condivisa-ovh-sull-interfaccia-di-gmail/){.external}|
+|[Windows 8](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_windows_8/){.external}|[Outlook 2011 Mac](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_outlook_2011_su_mac/){.external}|[Mail per iPhone o iPad (iOS 7 e altre versioni)](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_iphone_ios_91/){.external}|[Android 4.1.2](https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_su_tablet_android_412/){.external}| |
+|[Windows Phone](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_windows_phone/){.external}|[Outlook 2010](https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_outlook_2010/){.external}|[Thunderbird su Mac](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_thunderbird_su_mac/){.external}| | |
+|[Windows Mail](https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_windows_mail/){.external}|[Outlook 2007](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_outlook_2007/){.external}| | | |
+|[Thunderbird su Windows](https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_thundebird/){.external}| | | | |
 
-- [Smartphone con Android 4.4](https://www.ovh.it/g1347.servizio_email_guida_alla_configurazione_di_uno_smartphone_con_android_44)
+Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
 
-- [Smartphone con Android 5.1](https://www.ovh.it/g1912.servizio_email_guida_alla_configurazione_di_uno_smartphone_con_51)
+- **Configurazione IMAP (consigliata)**
 
-- [BlackBerry](https://www.ovh.it/g1381.servizio_email_guida_alla_configurazione_del_blackberry)
+|Tipo di server|Nome del server|Porta (con SSL)|Porta (senza SSL)|
+|---|---|---|---|
+|In entrata|SSL0.OVH.NET|993|143|
+|In uscita|SSL0.OVH.NET|465|587|
 
-- [Gmail](https://www.ovh.it/g1408.servizio_email_guida_alla_configurazione_di_unemail_condivisa_ovh_su_gmail)
+- **Configurazione POP**
 
+|Tipo di server|Nome del server|Porta (con SSL)|Porta (senza SSL)|
+|---|---|---|---|
+|In entrata|SSL0.OVH.NET|995|110|
+|In uscita|SSL0.OVH.NET|465|587|
 
+> [!warning]
+>
+> In caso di difficoltà durante la configurazione dell’account email sul dispositivo, [consulta le nostre guide](../) o rivolgiti al fornitore del servizio.
+>
 
+### Vecchia versione della soluzione MX Plan
 
-## Accesso
-Per inviare e ricevere le tue email dalla nostra Webmail, [clicca qui](http://webmail.ovh.net/).
+#### Step 1: accedi alla gestione del servizio
 
-Se hai bisogno di aiuto per utilizzare la tua Webmail, consulta [questa guida](https://www.ovh.it/g1302.webmail-roundcube).
+Se disponi della vecchia versione del servizio, l’interfaccia visualizzata dovrebbe essere quella  dell’immagine qui sotto. In caso contrario [torna al paragrafo precedente](./#procedura) e assicurati di aver verificato correttamente la tua versione attiva. 
 
-![](images/img_2007.jpg){.thumbnail}
+![email](images/mxplan-starter-legacy-step1.png){.thumbnail}
 
+#### Step 2: crea una casella di posta
 
-## Configurazione IMAP (consigliata)
-Ecco le informazioni necessarie alla configurazione di un account email IMAP.
+Per creare un indirizzo email clicca sulla scheda `Email`{.action}.
 
-Configurazione IMAP con protocollo SSL attivato o disattivato:
+Visualizzi una tabella con tutti gli account email creati sul tuo servizio. Clicca sul pulsante `Crea un indirizzo email`{.action}.
 
-Indirizzo email: il tuo indirizzo email completo.
-blue]Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/).
-Nome utente: il tuo indirizzo email completo.
-Server in entrata: il server di posta in arrivo, SSL0.OVH.NET.
-Porta del server in entrata:993 o 143.
-Server in uscita: il server di posta in uscita, SSL0.OVH.NET.
-Porta del server in uscita:465 o 587.
+![email](images/mxplan-starter-legacy-step2.png){.thumbnail}
 
-Se utilizzi le porte 143 e 587, il protocollo SSL è disattivato.
-Se utilizzi le porte 993 e 465, il protocollo SSL è attivato.
+Nella nuova finestra inserisci le informazioni richieste:
 
+|Campo|Descrizione|  
+|---|---|  
+|Nome dell’account|Inserisci il nome che vuoi assegnare al tuo account email (ad esempio nome.cognome). Il dominio interessato è inserito di default.|  
+|Descrizione dell’account|Inserisci una breve descrizione che ti permetterà di riconoscere questo account tra quelli presenti nel tuo Spazio Cliente OVH.|  
+|Dimensione dell’account|Seleziona la dimensione del tuo account, cioè lo spazio a disposizione per conservare i messaggi.|  
+|Password|Crea una password e confermala. Per motivi di sicurezza ti consigliamo di non utilizzare due volte la stessa password, scegliere una password che non contenga informazioni personali (ad esempio nome, cognome o data di nascita) e di modificarla regolarmente.
+|
 
-- Ricordati che è necessario attivare [l'autenticazione](#informazioni_sulla_configurazione_del_server_smtp_parametri_smtp) del server di posta in uscita SMTP.
+Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la correttezza delle informazioni inserite e poi clicca su `Conferma`{.action}. Ripeti questa operazione per tutti gli account che vuoi creare, in base al numero a tua disposizione.
 
+![email](images/mxplan-starter-legacy-step3.png){.thumbnail}
 
-|Porte|SSLattivato|SSLdisattivato|
-|In entrata|993|143|
-|In uscita|465|587|
+#### Step 3: utilizza gli indirizzi email
 
+Una volta creati gli account non ti resta che utilizzarli tramite la Webmail _RoundCube_ o un dispositivo di tua scelta.
 
+##### 1. Webmail _RoundCube_
 
+Accedi alla [pagina di connessione](https://www.ovh.it/mail/){.external}, inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
-## Configurazione POP
-Ecco le informazioni necessarie alla configurazione di un account email POP.
+Si apre di default la casella della posta in arrivo. Per maggiori informazioni consulta la guida all’[utilizzo di un account di posta da RoundCube](../webmail_guida_allutilizzo_di_roundcube/){.external}.
 
-Configurazione POP con protocollo SSL attivato o disattivato:
+![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
-Indirizzo email: il tuo indirizzo email completo.
-Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/).
-Nome utente: il tuo indirizzo email completo.
-Server in entrata: il server di posta in arrivo, SSL0.OVH.NET.
-Porta del server in entrata: 995 o 110
-Server in uscita: il server di posta in uscita, SSL0.OVH.NET.
-Porta del server in uscita:465 o 587.
+##### 2. Dispositivo di tua scelta
 
-Se utilizzi le porte 110 e 587, il protocollo SSL è disattivato.
-Se utilizzi le porte 995 e 465, il protocollo SSL è attivato.
+Configura l’account email sul tuo dispositivo (ad esempio, smartphone o tablet) consultando, se necessario, le nostre guide disponibili online:
 
+|Windows|Outlook|Apple|Android|Altro|
+|---|---|---|---|---|
+|[Windows 10](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_dellapp_posta_di_windows_10/){.external}|[Outlook 2016](https://docs.ovh.com/it/emails/configurazione-outlook-2016/){.external}|[Mail di macOS (ultima versione)](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_mail_di_mac_-_el_capitan/){.external}|[Android (ultima versione)](https://docs.ovh.com/it/emails/configurazione-android-6/){.external}|[Gmail](https://docs.ovh.com/it/emails/mail-condivisa-guida-configurazione-diuna-email-condivisa-ovh-sull-interfaccia-di-gmail/){.external}|
+|[Windows 8](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_windows_8/){.external}|[Outlook 2011 Mac](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_outlook_2011_su_mac/){.external}|[Mail per iPhone o iPad (iOS 7 e altre versioni)](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_iphone_ios_91/){.external}|[Android 4.1.2](https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_su_tablet_android_412/){.external}| |
+|[Windows Phone](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_windows_phone/){.external}|[Outlook 2010](https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_outlook_2010/){.external}|[Thunderbird su Mac](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_thunderbird_su_mac/){.external}| | |
+|[Windows Mail](https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_windows_mail/){.external}|[Outlook 2007](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_outlook_2007/){.external}| | | |
+|[Thunderbird su Windows](https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_thundebird/){.external}| | | | |
 
-- Ricordati che è necessario attivare [l'autenticazione](#informazioni_sulla_configurazione_del_server_smtp_parametri_smtp) del server di posta in uscita SMTP.
+Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
 
+- **Configurazione IMAP (consigliata)**
 
+|Tipo di server|Nome del server|Porta (con SSL)|Porta (senza SSL)|
+|---|---|---|---|
+|In entrata|SSL0.OVH.NET|993|143|
+|In uscita|SSL0.OVH.NET|465|587|
 
+- **Configurazione POP**
 
-## Autenticazione
-Per inviare correttamente le tue email, assicurati che il server in uscita sia autenticato.
+|Tipo di server|Nome del server|Porta (con SSL)|Porta (senza SSL)|
+|---|---|---|---|
+|In entrata|SSL0.OVH.NET|995|110|
+|In uscita|SSL0.OVH.NET|465|587|
 
-In caso contrario, potresti visualizzare questo errore:
+> [!warning]
+>
+> In caso di difficoltà durante la configurazione dell’account email sul dispositivo, [consulta le nostre guide](../) o rivolgiti al fornitore del servizio.
+>
 
+## Per saperne di più
 
-```
-"553 sorry, that domain isn't allowed to be relayed thru this MTA (#5.7.1)"
-```
-
-
-
-- Verifica che nel tuo client di posta sia attivata l'autenticazione SMTP per i messaggi in uscita.
-
-
-
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.

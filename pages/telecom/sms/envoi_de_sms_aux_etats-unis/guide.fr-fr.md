@@ -15,7 +15,7 @@ En accord avec l'autorité de régulation des sms des Etats-Unis (Neustar), nous
 
 
 ## Ajout d'un template via le manager
-Rendez-vous dans le manager OVH puis cliquez sur : 
+Rendez-vous dans le manager OVH puis cliquez sur :
 "Administrez vos services de téléphonie via l'ancienne interface".
 
 Cliquez ensuite sur le lien "SMS" en haut de la page. Cliquez ensuite dans le menu de droite sur "Gérez les modèles USA".
@@ -37,7 +37,7 @@ Your security code is #CODE#, have a good day
 ```
 
 
-Exemple de template d'alerting : 
+Exemple de template d'alerting :
 
 
 ```
@@ -48,12 +48,13 @@ Our monitoring system detected your server #SERVER# doesn't respond to ping requ
 
 
 ## Ajout d'un template via l'Api
-[Via l'API](https://api.ovh.com/console/#/telephony)
+[Via l'API](https://api.ovh.com/console/#/sms)
 
 
-```
-POST /sms/{serviceName}/templatesControl
-```
+> [!api]
+>
+> @api {POST} /sms/{serviceName}/templatesControl
+>
 
 
 
@@ -64,4 +65,3 @@ Dans le cas d'un SMS dont le contenu n'a pas été modéré, ce dernier sera ref
 
 ## Use-case d'un SMS au contenu modéré
 La comparaison du contenu des SMS avec ceux des templates se fait automatiquement. Dans le cas où la comparaison est similaire, le SMS est envoyé de la même manière que dans les autres pays.
-

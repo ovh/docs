@@ -72,6 +72,62 @@ It will take several minutes for the IPMI to reboot.
 > It will not impact to the server functioning.
 >
 
+### Installing an OS Utilizing IPMI v1.
+> [!warning]
+>
+> OVH does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
+>
+To begin, open IPMI in a Java applet as described in the section above. Then, click **Device** from the menu bar and select **Redirect ISO** from the drop-down menu.
+>
+![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
+>
+Next, select the ISO you wish to use from your local computer's file system. Once you have selected your ISO, press the **Ctrl Alt Del** button in the top-right corner of the screen to reboot the server. Press the appropriate `F` key to access the boot options.
+>
+> [!warning]
+>
+> Note: You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the **Keyboard** option from the menu bar at the top of the window. Then, select **Soft Keyboard** from the dropdown menu and click **Show**.
+>
+Select the **UEFI Virtual CDROM 1.00** option from the boot menu to start the server from the ISO attached previously.
+>
+![UEFI_Virt](images/UEFIVirt.jpg){.thumbnail}
+>
+Complete the steps required to install the operating system. Do not forget to remove the ISO from the **Redirect ISO** option.
+>
+### Installing an OS Utilizing IPMI v2
+>
+> [!warning]
+>
+> Warning: OVH does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
+>
+To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager). Then, click **Virtual Media** and select **Virtual Storage**.
+>
+![Virtual_Storage](images/virtual_storage.png){.thumbnail}
+>
+From the new screen, select **ISO File** from the **Logical Drive Type** drop-down. Next, click **Open Image** and navigate to your ISO file. Finally, click **Plug in** and **OK** to finish.
+>
+![ISO_file](images/iso_file.png){.thumbnail}
+>
+In order to be able to boot from our ISO file, we need to access the BIOS and switch our boot options. To do so, select **Power Control** and click **Set Power Reset**.
+>
+![Power_Reserver](images/power_reset.png){.thumbnail}
+> [!warning]
+>
+> Note: You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the **Virtual Media** option from the menu bar at the top of the window. Then, select **Virtual Keyboard** from the drop-down menu.
+>
+During the bootup process, press the `DEL` key when prompted to access the BIOS. You may also press the `F11` key and navigate to the BIOS by selecting the option **Enter Setup**.
+>
+![Boot_Menu](images/boot_menu.png){.thumbnail}
+>
+In the BIOS navigate to the **Boot** tab and change the **UEFI Boot Order #1** to **UEFI USB CD/DVD:UEFI: ATEN Virtual CDROM YSOJ**.
+>
+![Bios](images/bios.png){.thumbnail}
+>
+Lastly, press the `F4` key to save your changes and restart the server.
+>
+**Conclusion**
+>
+IPMI is an important tool for an experienced server administrator. Whether you need to access the BIOS, install a custom OS, or just access your server directly from the OVH Manager, IPMI will allow you to accomplish your most important tasks.
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.

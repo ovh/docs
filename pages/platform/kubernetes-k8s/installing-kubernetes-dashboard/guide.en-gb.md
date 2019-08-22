@@ -6,7 +6,7 @@ section: Tutorials
 ---
 
 
-**Last updated 25th February, 2019.**
+**Last updated 1<sup>st</sup> July, 2019.**
 
 <style>
  pre {
@@ -22,24 +22,26 @@ section: Tutorials
  pre.console code {
    border: solid 0px transparent;
    font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
  }
  .small {
      font-size: 0.75em;
  }
 </style>
 
-
 The [Kubernetes Dashboard](https://github.com/kubernetes/dashboard){.external} is a general purpose, web-based UI for Kubernetes clusters. It allows users to manage and troubleshoot applications running in their cluster, as well as manage the cluster itself.
 
 
 ![kubernetes-dashboard](./images/kubernetes-dashboard-02.png){.thumbnail}
+
 
 ## Before you begin
 
 This tutorial assumes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 > [!primary]
-> This tutorial describes the most basic way of using the Dashboard with your OVH Managed Kubernetes cluster. Please refer to the [official docs](https://github.com/kubernetes/dashboard) for a deeper understanding, specially on subjects like [access control](https://github.com/kubernetes/dashboard/wiki/Access-control){.external}, for more in-depth information.
+> This tutorial describes the most basic way of using the Dashboard with your OVH Managed Kubernetes cluster. Please refer to the [official docs](https://github.com/kubernetes/dashboard){.external} for a deeper understanding, specially on subjects like [access control](https://github.com/kubernetes/dashboard/wiki/Access-control){.external}, for more in-depth information.
 >
 
 ## Deploy the Dashboard in your cluster
@@ -47,7 +49,7 @@ This tutorial assumes that you already have a working OVH Managed Kubernetes clu
 To deploy the Dashboard, execute following command:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml
 ```
 
 It should display something like this:

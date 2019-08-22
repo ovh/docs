@@ -1,23 +1,41 @@
 ---
 title: Hôte de spare
 slug: hote-de-spare
+excerpt: Comprendre le mécanisme de remplacement d'hôte
 legacy_guide_number: '2883590'
 section: Fonctionnalités OVH
+order: 04
 ---
 
+**Dernière mise à jour le 30/01/2019**
 
-Livraison d’un hôte de spare
-----------------------------
+## Objectifs
 
-Si l’un de vos hôtes est victime d’une panne, afin d’assurer la continuité de service, nous vous livrons automatiquement un hôte de remplacement gratuit dans votre infrastructure en moins de 15 minutes. Dès que ce hôte est livré, vous recevez un email vous indiquant toutes les informations concernant cet hôte ainsi que son adresse IP vous permettant de le retrouver facilement dans votre interface vSphere.
+OVH garantit dans ses contrats le remplacement d'un hôte inaccessible en moins de 15 minutes.
 
-Par défaut, HA ([High Availability]({legacy}2163279)) de VMware est activé sur votre cluster. Si vous l’avez laissé activé, vos machines virtuelles vont redémarrer automatiquement. Si DRS ([Distributed Ressources Scheduler](#)) est activé et configuré en mode “Entièrement Automatisé”, la répartition de charge sur les hôtes de votre cluster sera également effectuée automatiquement.
+**Ce guide explique le fonctionnement de ce remplacement**
 
-Que faire après avoir reçu le hôte de spare
--------------------------------------------
+## Livraison d’un hôte de spare
 
-Une fois que le hôte original est de retour (une fois réparé), vous pouvez nous rendre l’un des deux hôtes (le hôte de spare ou le hôte original).
+Si l’un de vos hôtes est victime d’une panne, afin d’assurer la continuité de service, nous vous livrons automatiquement un hôte de remplacement gratuit dans votre infrastructure en moins de 15 minutes. 
 
-Nous vous recommandons de nous rendre le hôte original afin que nous puissions lui faire subir une batterie de tests suite à cet incident (pour éviter d’éventuelles pannes futures). Vous pourrez alors conserver le hôte de spare. Pour cela vous pouvez suivre le guide [suppression d’un hôte]({legacy}1442308)
+Dès que ce hôte est livré, vous recevez un email vous indiquant toutes les informations concernant cet hôte ainsi que son adresse IP vous permettant de le retrouver facilement dans votre interface vSphere.
 
-OVH pourra récupérer automatiquement le hôte original dès que celui-ci sera de retour.
+Par défaut, le service HA ([High Availability]({legacy}2163279)) de VMware est activé sur votre cluster. Si vous l’avez laissé activé, vos machines virtuelles vont redémarrer automatiquement. Si le service DRS ([Distributed Ressources Scheduler](#)) est activé et configuré en mode “Entièrement Automatisé”, la répartition de charge sur les hôtes de votre cluster sera également effectuée automatiquement.
+
+> [!warning]
+> 
+> Si un lecteur CD/DVD est encore monté ou connecté sur une VM, le service HA ne pourra pas la redémarrer sur l'hôte de spare. Il est recommandé de toujours avoir le lecteur CD/DVD en périphérique client.
+>
+
+## Que faire après avoir reçu le hôte de spare
+
+Une fois que l'hôte original est de nouveau fonctionnel (une fois réparé), vous pouvez nous rendre l’un des deux hôtes (l'hôte de spare ou l'hôte original).
+
+Nous vous recommandons de nous rendre l'hôte original afin que nous puissions lui faire subir une batterie de tests suite à cet incident (pour éviter d’éventuelles futures pannes). Vous pourrez alors conserver l'hôte de spare. Pour cela vous pouvez suivre le guide [suppression d’un hôte]({legacy}1442308)
+
+OVH pourra récupérer automatiquement l'hôte original dès que celui-ci sera de retour.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

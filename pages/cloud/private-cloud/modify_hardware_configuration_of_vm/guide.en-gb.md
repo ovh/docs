@@ -35,7 +35,11 @@ In this menu, you can increase your virtual machine’s resources. At the bottom
 
 The number of CPUs will be limited to the slots available on the host.
 
-If your virtual machine migrates to a host with fewer processors than those allocated to your machine, it will become `CPU ready`, which will result in performance loss.
+If your virtual machine migrates to a host with fewer processors than those allocated to your machine, the 'CPU ready' status of the VM will raise, which will result in performance loss.
+
+Following the VMware official information about 'Converting between CPU summation and CPU % ready values':
+
+https://kb.vmware.com/s/article/2001003
 
 ![Add a CPU](images/add_ressources_cpu.png){.thumbnail}
 

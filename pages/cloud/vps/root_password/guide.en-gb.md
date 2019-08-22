@@ -12,13 +12,6 @@ section: Diagnostic and rescue mode
 When you install or reinstall a distribution or operating system, you are provided with a root access password. We strongly recommend that you change it, as detailed in our guide on [securing a VPS](https://docs.ovh.com/gb/en/vps/tips-for-securing-a-vps/). You may also find that you have lost this password, and need to change it. This guide will take you through both scenarios.
 Learn how to change the root password of a VPS.
 
-## Requirements
-
-- You must be connected via SSH to your VPS (root access).
-- [Reboot your VPS in rescue mode](https://docs.ovh.com/gb/en/vps/rescue/).
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 ## Instructions
 
 ### Change the password with root user account access
@@ -43,6 +36,13 @@ passwd: password updated successfully
 > 
 
 ### Changing a password after you have lost it
+
+#### Requirements
+
+- You must be connected via SSH to your VPS (root access).
+- [Reboot your VPS in rescue mode](https://docs.ovh.com/gb/en/vps/rescue/).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 #### Step 1: Identify the mount point
 

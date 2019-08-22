@@ -1,20 +1,21 @@
 ---
-title: Adding nodes to a OVH Managed Kubernetes cluster
-excerpt: ''
+title: 'Adding nodes to a OVH Managed Kubernetes cluster'
 slug: adding-nodes
-section: User guides
+excerpt: ''
+section: 'User guides'
 ---
 
-**Last updated 25th February, 2019.**
+**Last updated 1<sup>st</sup> July, 2019.**
 
 ## Objective
 
 OVH Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will cover the first step after ordering a cluster: adding nodes.
 
 
+
 ## Requirements
 
-- an OVH Managed Kubernetes cluster
+- An OVH Managed Kubernetes cluster
 
 
 ## Instructions
@@ -57,6 +58,6 @@ In the *Nodes* tab  you can inspect the state of your nodes. The node you have j
 
 To have an overview of OVH Managed Kubernetes service, you can go to the [OVH Managed Kubernetes site](https://labs.ovh.com/kubernetes-k8s).
 
-Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring_default_settings_for_kubectl/configuring_default_settings_for_kubectl) and [deploying an application](../deploying_an_application/deploying_an_application) .
+Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring_default_settings_for_kubectl/configuring_default_settings_for_kubectl/) and [deploying an application](../deploying_an_application/deploying_an_application/) .
 
-Join our community of users on https://community.ovh.com/en/.
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

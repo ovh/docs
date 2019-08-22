@@ -7,11 +7,11 @@ order: 2
 legacy_guide_number: g1374
 ---
 
-**Ultimo aggiornamento: 28/01/2019**
+**Ultimo aggiornamento: 06/08/2019**
 
 ## Obiettivo
 
-I siti Internet presenti nella rete sono di tanti tipi diversi: blog, e-commerce, spazi dove condividere una passione o promuovere un’attività professionale... gli [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} permettono di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](http://pro.ovh.net/infos/){.external}. 
+I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, spazi dove condividere una passione o promuovere un’attività professionale... gli [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} permettono di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](http://pro.ovh.net/infos/){.external}.
 
 **Questa guida ti mostra le operazioni da eseguire per mettere online un sito su un hosting Web OVH.** 
 
@@ -26,7 +26,7 @@ I siti Internet presenti nella rete sono di tanti tipi diversi: blog, e-commerce
 
 ### Step 1: definisci il tuo progetto
 
-Per realizzare al meglio il tuo progetto, è importante avere una visione chiara dell’obiettivo da raggiungere. Cosa vuoi fare con il tuo sito Web? Come pubblicarlo? Gli hosting OVH offrono numerose opzioni: 
+Per realizzare al meglio il tuo progetto, è importante avere una visione chiara dell’obiettivo da raggiungere. Cosa fare con il sito Web? Come pubblicarlo? Gli hosting OVH offrono numerose opzioni: 
 
 - **creare un sito chiavi in mano con i moduli in 1 click**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...). Con i moduli in 1 click sono infatti disponibili 4 CMS già compatibili con le infrastrutture OVH. Per maggiori informazioni, consulta [questa pagina](https://www.ovh.it/hosting-web/website/){.external}.
 
@@ -40,7 +40,7 @@ In base all’opzione scelta, hai quindi due possibilità:
 
 - **utilizzare i nostri moduli in 1 click**: per maggiori informazioni, consulta la guida [Installare i moduli in 1 click OVH](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
 
-- **non utilizzare i nostri moduli in 1 click**: in questo caso, l’installazione del sito deve essere eseguita manualmente sull’hosting. Questa guida contiene informazioni utili per effettuare questa operazione ma, in caso di necessità, ti consigliamo di rivolgerti a un webmaster
+- **non utilizzare i nostri moduli in 1 click**: in questo caso, l’installazione del sito deve essere eseguita manualmente sull’hosting. Questa guida contiene informazioni utili per effettuare questa operazione ma, in caso di necessità, ti consigliamo di rivolgerti a un webmaster.
  
 > [!warning]
 >
@@ -59,11 +59,22 @@ Prima di iniziare, assicurati di avere a disposizione i file del sito da install
 
 #### 2. Connettersi allo spazio di storage 
 
-Per accedere allo spazio di storage sono necessari le credenziali FTP e l’indirizzo del server che hai ricevuto nell’email di conferma dell’installazione del tuo hosting. Se hai smarrito la password, segui la procedura descritta nella guida [Modificare la password di un utente FTP](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/){.external}.
+Per accedere allo spazio di storage sono necessari:
 
-Per recuperare l’indirizzo del server o l’identificativo dello spazio di storage, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo hosting nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `FTP - SSH`{.action}. 
+- utente FTP o SSH attivo
+- password associata all’utente FTP o SSH
+- indirizzo del server
+- porta di connessione al server
+
+Questi dati sono indicati nell’email di conferma dell’installazione dell'hosting Web.
+
+Se hai necessità di recuperarli, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `FTP - SSH`{.action}. 
 
 ![Installazione sito](images/get-website-online-step1.png){.thumbnail}
+
+In questa interfaccia sono disponibili le informazioni di accesso allo spazio di storage. In caso di necessità, consulta la guida [Accedere allo spazio di storage di un hosting Web](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/){.external}.
+
+Se hai smarrito la password, segui la procedura descritta nella guida [Modificare la password di un utente FTP](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/){.external}.
 
 Una volta recuperati i dati potrai connetterti allo spazio di storage in tre modi diversi, utilizzando: 
 
@@ -75,7 +86,7 @@ Una volta recuperati i dati potrai connetterti allo spazio di storage in tre mod
 
 #### 3. Caricare i file
 
-Una volta connesso allo spazio di storage, non resta che mettere online i file del tuo sito. **Ti ricordiamo che un sito Internet funziona e viene visualizzato correttamente solo se è inserito nella giusta directory** che in genere è la cartella “www”. Se utilizzi l’hosting per ospitare più siti internet, hai sicuramente attivato l’opzione multisito. 
+Una volta connesso allo spazio di storage, non resta che mettere online i file del tuo sito. **Ti ricordiamo che un sito Internet funziona e viene visualizzato correttamente solo se è inserito nella giusta directory**, che in genere è la cartella “www”. Se utilizzi l’hosting per ospitare più siti internet, hai sicuramente attivato l’opzione multisito. 
 
 Per conoscere la cartella in cui pubblicare il sito, accedi alla scheda `Multisito`{.action} del tuo Spazio Cliente OVH e verifica nella tabella la `Cartella di root`{.action} relativa al dominio interessato. 
 
@@ -102,7 +113,7 @@ Se stai migrando un sito, contatta il tuo precedente provider per recuperare il 
 
 Se disponi già di un database (incluso, ad esempio, in una soluzione di [hosting OVH](https://www.ovh.it/hosting-web/){.external}, [SQL Privato](https://www.ovh.it/hosting-web/opzioni-sql.xml){.external} o [Cloud DB](https://www.ovh.it/cloud/cloud-databases/){.external}) recupera nome utente, password, nome del database e indirizzo del server e poi passa allo step successivo.
 
-Per creare un nuovo database accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo hosting nella sezione `Hosting`{.action} della colonna a sinistra, clicca sulla scheda `Database`{.action} e poi sul pulsante `Crea un database`{.action}. Se non compare, clicca su `Azioni`{.action} > `Crea un database`{.action}.
+Per creare un nuovo database accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra, clicca sulla scheda `Database`{.action} e poi sul pulsante `Crea un database`{.action}. Se non compare, clicca su `Azioni`{.action} > `Crea un database`{.action}.
 Inserisci le informazioni richieste.
 
 ![Installazione sito](images/get-website-online-step3.png){.thumbnail}
@@ -121,7 +132,7 @@ Una volta che il database è disponibile e i file caricati nello spazio di stora
 
 La creazione della connessione non è legata ai servizi OVH ma dipende esclusivamente dalla configurazione del sito internet da pubblicare: se hai bisogno di aiuto per effettuare l’operazione ti consigliamo quindi di rivolgerti a uno specialista del settore. 
 
-### Step 4: accedi al tuo sito Web
+### Step 4: accedi al sito Web
 
 Dopo aver caricato i file sullo spazio di storage e associato l’eventuale database, il tuo sito dovrebbe essere correttamente raggiungibile tramite browser. 
 
@@ -140,6 +151,8 @@ In caso di difficoltà durante la pubblicazione del tuo sito Internet, ti consig
 [Migrare un sito e un servizio di posta in OVH](https://docs.ovh.com/it/hosting/migrare-un-sito-in-ovh/){.external}
 
 [Installare i moduli in 1 click OVH](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
+
+[Accedere allo spazio di storage di un hosting Web](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/){.external}
 
 [Modificare la password di un utente FTP ](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/){.external}
 

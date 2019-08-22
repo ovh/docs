@@ -1,72 +1,88 @@
 ---
-title: 'Adapter votre Private Cloud aux certifications HDS ou PCI DSS'
-slug: activer-l-option-hds-hipaa-ou-pci-dss
-excerpt: 'Découvrez comment adapter votre Private Cloud aux certifications HDS ou PCI DSS'
+title: 'Activer l’option HDS ou PCI-DSS'
+slug: activer-l-option-hds-ou-pci-dss
+excerpt: 'Activation de l''option HDS ou PCI-DSS'
 section: 'Services et options OVH'
+order: 3
 ---
 
-**Dernière mise à jour le 26/02/2019**
+**Dernière mise à jour le 25 janvier 2019**
 
 ## Objectif
 
-Vous avez la possibilité d'adapter votre Private Cloud avec l'une des certifications HDS ou PCI DSS. Bénéficier de l'une d'elles peut être indispensable à votre activité, en particulier si vous devez héberger [des données de santé](https://www.ovh.com/fr/private-cloud/healthcare/agrement.xml){.external} (HDS) ou [des données de cartes bancaires](https://www.ovh.com/fr/private-cloud/payment-infrastructure/pci-dss.xml){.external} (PCI DSS). Cette adaptation s'effectue en quelques étapes.
-
-**Découvrez comment adapter votre Private Cloud aux certifications HDS ou PCI DSS.**
+Pour rendre votre cloud privé conforme aux certifications HDS ou PCIDSS, vous devez réaliser l’activation technique décrite dans ce tutoriel.
 
 ## Prérequis
 
 - Disposer d'une infrastructure Private Cloud en version 6.0 minimum.
-- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager), partie `Dédié`{.action}.
 
-## En pratique
-
-### S'assurer que l'option de sécurité est activée
-
-Afin d'adapter votre Private Cloud à l'une de ces certifications (HDS ou PCI DSS), l'une des options de sécurité correspondantes doit être activée. Pour le vérifier, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager), et assurez-vous de vous situer dans la partie « Dédié ». Cliquez sur `Private Cloud`{.action}, puis sélectionnez le service concerné. 
-
-Dans la fenêtre qui s'affiche, assurez-vous de vous trouver sur l'onglet `Informations générales`{.action}. Vérifiez alors l'état d'activation des options de sécurité dans la partie « Options de sécurité ». **À noter qu'il n'est actuellement pas possible de cumuler plusieurs options de sécurité pour un même Private Cloud.**
-
-![hdspcidsscompliance](images/HomeSDDCManager-2.png){.thumbnail}
-
-Si l'option de sécurité souhaitée n'est pas activée, activez-la en cliquant sur le bouton `...`{.action}, puis sur `Activer`{.action}. Plusieurs prérequis sont alors indispensables.
-
-- **Les options [NSX](https://www.ovh.com/fr/private-cloud/options/nsx.xml){.external} et [vROps](https://www.ovh.com/fr/private-cloud/options/vrops.xml){.external} doivent être installées** : depuis l'onglet `Informations générales`{.action} dans la partie « Options du Private Cloud », vous pouvez vérifier l'état d'activation de ces options. Si elles ne sont pas activées, activez-les en cliquant sur le bouton `...`{.action}, puis sur `Activer`{.action}.
-
-- **La politique d'accès au vCenter doit être restreinte** : depuis l'onglet « Sécurité », vous pouvez vérifier l'état de la politique d'accès. Si elle n'est pas restreinte, effectuez le changement en cliquant sur le bouton `Politique d'accès au vCenter`{.action}, puis en suivant les étapes. Notre documentation « [Présentation de l'espace client Private Cloud OVH](../manager-ovh-private-cloud/#securite) » peut vous accompagner dans cette démarche.
-
-- **Vous devez disposer d'au moins une adresse IP autorisée à se connecter au vCenter** : depuis l'onglet « Sécurité », assurez-vous de posséder au moins une adresse IP autorisée. Si nécessaire, utilisez le bouton `Ajout des IP`{.action}. Notre documentation « [Présentation de l'espace client Private Cloud OVH](../manager-ovh-private-cloud/#securite) » peut vous accompagner dans cette démarche.
-
-Afin d'être toujours en mesure de pouvoir vous connecter, nous vous recommandons d'avoir au moins deux adresses IP autorisées. Pour des raisons évidentes d'accessibilité, ces dernières doivent être fixes et non dynamiques.
-
-- **Les informations de l'utilisateur « admin » sont complètes et celui-ci dispose du droit nécessaire** : depuis l'onglet « Utilisateurs », assurez-vous pour l'utilisateur « admin » que le numéro de téléphone et l'adresse e-mail sont bien renseignés et qu'il dispose du droit « **token validator** ». Si nécessaire, pour modifier l'utilisateur, cliquez sur le bouton `...`{.action}, puis sur `Modifier`{.action}. Notre documentation « [Présentation de l'espace client Private Cloud OVH](../manager-ovh-private-cloud/#utilisateurs) » peut vous aider dans cette démarche.
-
-Afin d'être toujours en mesure de vous connecter au vCenter, nous vous recommandons de posséder au moins deux utilisateurs disposant des informations et des droits nécessaires (avec adresse e-mail et numéro de téléphone différents).
-
-Une fois les étapes d'activation complétées, vous devrez :
-
-- valider le token envoyé par SMS aux utilisateurs disposant du droit « **token validator** ». Ceci permet de confirmer que vous serez en mesure de recevoir ces tokens, indispensables par la suite pour valider des opérations ;
-- compléter les documents que vous recevrez par e-mail permettant de finaliser la partie contractuelle. 
-
-En attendant, nous vous conseillons d'effectuer vos premiers pas avec l'interface sécurisée en poursuivant la lecture de cette documentation. 
+## Activation
 
 > [!primary]
 >
-> Prenez en considération que l'interface vSphere ne sera pas accessible pendant l'activation de l'option de sécurité.
+> Ces options peuvent être activées dans le cadre de l'hébergement de données de santé, ou encore de données bancaires. Actuellement, un cloud privé ne peut être en même temps PCIDSS et HDS.
 >
 
-### Débuter avec l'interface sécurisée
+Afin d'activer une option, rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/){.external-link}.
 
-Suite à l'activation de l'option de sécurité, vous recevrez par e-mail le processus de validation des tokens. Celui-ci détaille entre autres leur fonctionnement et ce que vous devez effectuer pour pouvoir les utiliser. 
+![](images/HomeSDDCManager.PNG){.thumbnail}
 
-Comme précisé, par mesure de sécurité suite à l'activation de l'option de sécurité :
+Cliquez sur le bouton `Activer`{.action} (disponible en cliquant sur les 3 points) associé à l'option souhaitée pour suivre la procédure d'activation.
 
-- tous les utilisateurs en place sur votre Private Cloud sont désactivés ;
-- vous devez changer les mots de passe de vos utilisateurs pour les réactiver ;
-- le changement des mots de passe de vos utilisateurs doit dorénavant s'effectuer exclusivement depuis l'interface sécurisée. Vous ne serez plus en mesure de réaliser cette manipulation depuis l'espace client OVH. 
+La première étape vérifie que les options NSX et vRops sont bien installées.
 
-Pour rappel, l'accès à l'interface ne sera possible qu'une fois l'activation de l'option de sécurité arrivée à son terme.
+![](images/HDSprerequisOptions.PNG){.thumbnail}
 
-Connectez-vous alors à l'interface sécurisée via le lien communiqué dans l'e-mail que vous avez reçu. Celui-ci devrait ressembler à « https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/password-lost ». Une fois connecté, vous pourrez modifier le mot de passe de l'utilisateur « admin », puis celui des utilisateurs additionnels. Notre documentation « [Utiliser l'interface sécurisée](../interface-secure/) » peut vous accompagner dans cette démarche.
+La seconde étape vérifie que la [politique d'accès](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#securite){.external-link} au vCenter est bien restreinte et que vous disposez au moins d'[une IP autorisée à se connecter au vCenter](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#securite){.external-link}.
+
+> [!warning]
+>
+> Attention, si vous ajoutez une IP dynamique en tant que seule IP autorisée et que celle-ci change par la suite, vous ne pourrez plus en ajouter de nouvelles ou modifier la politique d'accès. En effet, ces manipulations devront être effectuées depuis une IP autorisée que vous n'auriez plus dans le cas présenté.
+> 
+
+![](images/HDSPrerequisIP.PNG){.thumbnail}
+
+La troisième étape vérifie que les [informations du contact](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#utilisateurs){.external-link} admin (à minima) sont renseignées.
+
+![](images/HDSPrerequisContact.PNG){.thumbnail}
+
+La dernière étape récapitule le montant actuel de chacun de vos hôtes et le montant après activation de l'option.
+
+![](images/HDSPrerequisHost.PNG){.thumbnail}
+
+> [!primary]
+>
+> Le changement de prix s'effectue sur tous les hôtes des différents datacentres virtuels.
+>
+
+> [!success]
+>
+> Si vous avez déjà souscrit à l'option lors de votre commande, il s'agira ici d'une simple activation technique. Le prix sera donc similaire.
+>
+
+Pour finaliser l'activation de l'option, vous devez valider le token reçu par SMS par les utilisateurs ayant le droit `Token Validator`. Cela permet de confirmer que vous recevez bien ces SMS que vous recevrez ensuite à chaque action qui nécessitera une validation de votre part.
+
+
+## Mise en place
+
+Suite à l'activation de l'option, vous allez recevoir un mail détaillant notre processus de validation de token. Il est entre autre détaillé la façon dont ces tokens fonctionnent et ce qu'il vous faut effectuer avant de les utiliser.
+
+Comme vous le constaterez dans le mail, tous les comptes en place sur le cloud privé sont désactivés et vous devez changer leur mot de passe pour les réactiver.
+
+Veuillez prendre connaissance du fait que suite à l'activation de l'option, vous ne pourrez plus modifier les mots de passe de vos utilisateurs via l'espace client, pour des questions de sécurité. Vous devrez donc passer par notre interface certifiée
+
+Dans le mail reçu, vous trouverez l'accès à l'interface de changement de mot de passe, qui sera similaire à `https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/password-lost`.
+
+Commencez par modifier votre mot de passe admin, puis les mots de passe des autres utilisateurs si nécessaire.
+
+Chaque utilisateur peut changer son propre mot de passe via l'interface, mais seuls les utilisateurs ayant le droit `Token Validator` peuvent modifier l'intégralité des mots de passe.
+
+Suite au changement de mot de passe de tous les utilisateurs, votre option est active et totalement fonctionnelle.
+
+Vous retrouverez les détails de l'interface securisée sur [ce guide](https://docs.ovh.com/fr/private-cloud/interface-secure/)
+
+Par la suite, vous recevrez des documents par mail concernant cette activation d'option et permettant de finaliser la partie contractuelle.
+
 
 ## Aller plus loin
 

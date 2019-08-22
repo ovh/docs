@@ -5,57 +5,54 @@ excerpt: 'Dowiedz się, jak ustalić numer seryjny dysku, aby przystąpić do je
 section: 'RAID & dyski'
 ---
 
-**Ostatnia aktualizacja z dnia 09-10-2018**
+**Ostatnia aktualizacja z dnia 03-07-2019**
 
 ## Wprowadzenie
 
-Aby zminimalizować ryzyko błędu podczas wymiany dysku twardego, prosimy naszych klientów o podanie numeru seryjnego dysku przeznaczonego do wymiany.  Jeśli jeszcze tego nie zrobiłeś, zapoznaj się z naszą dokumentacją dotyczącą [wymiany dysku twardego](https://docs.ovh.com/pl/dedicated/wymiana-dysku/){.external}, aby dobrze zrozumieć całą procedurę.
+Aby zminimalizować ryzyko błędu podczas wymiany dysku twardego, prosimy naszych klientów o podanie numeru seryjnego dysku przeznaczonego do wymiany. W większości przypadków numer seryjny możesz znaleźć, testując po kolei Twoje dyski twarde za pomocą narzędzia Smartmontools.
 
-**Niniejszy przewodnik wyjaśnia, jak ustalić numer lub numery seryjne dysku/dysków. W większości przypadków numer seryjny możesz znaleźć, testując po kolei Twoje dyski twarde za pomocą narzędzia smartmontools.**
-
+**Niniejszy przewodnik wyjaśnia, jak ustalić numer lub numery seryjne dysku/dysków.**
 
 ## Wymagania początkowe
 
-* Połączenie przez SSH z uprawnieniami użytkownika root (Linux) lub kontem administratora (Windows)
-* Instalacja narzędzia sas2ircu na serwerze Windows (znajdziesz je za pomocą wyszukiwarki [broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external})
-
+- Posiadanie [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane/){.external}
+- Połączenie z serwerem przez SSH z uprawnieniami użytkownika root
+- Instalacja narzędzia sas2ircu na serwerze Windows (znajdziesz je za pomocą wyszukiwarki [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external})
 
 ## W praktyce
 
 > [!primary]
 >
-> W przypadku dysku NVMe konieczne jest uruchomienie serwera w trybie [Rescue64](https://docs.ovh.com/pl/dedicated/ovh-rescue/){.external} i użycie zainstalowanego domyślnie na serwerze narzędzia „nvme-cli”.
+> W przypadku dysku NVMe konieczne jest uruchomienie serwera w trybie Rescue64 i użycie zainstalowanego domyślnie na serwerze narzędzia „nvme-cli”.
 > 
 
 ### Ustalenie numeru seryjnego dysku w przypadku programowej macierzy RAID
 
-Aby ustalić numer seryjny Twojego dysku twardego w przypadku konfiguracji programowej macierzy RAID, możesz użyć `smartctl`:
+Aby ustalić numer seryjny Twojego dysku twardego w przypadku konfiguracji programowej macierzy RAID, możesz użyć smartctl:
 
 ```sh
 smartctl -a /dev/sdX | grep Serial Serial Number:    XXXXXXX
 ```
 
-Urządzenie jest wykrywane przez system operacyjny (np.: /dev/sda, /dev/sdb, etc.).
-
+Urządzenie jest wykrywane przez system operacyjny, na przykład `/dev/sda`, `/dev/sdb`, etc. 
 
 ### Ustalenie numeru seryjnego dysku NVMe
 
 W przypadku dysków NVMe konieczne jest zastosowanie polecenia `nvme list`:
 
 ```sh
-nvme list
+root@rescue:~# nvme list
 
 Node          SN                  Model                Namespace  Usage                      Format   FW Rev
 /dev/nvme0n1  CVPF636600YC450RGN  INTEL SSDPE2MX450G7  1          450.10 GB / 450.10 GB 512  B + 0 B  MDV10253
 /dev/nvme1n1  CVPF6333002Y450RGN  INTEL SSDPE2MX450G7  1          450.10 GB / 450.10 GB 512  B + 0 B  MDV10253
 ```
 
-Po wpisaniu polecenia będziesz mógł odczytać numery seryjne Twoich dysków NVMe (nvme0 i nvme1).
+Po wpisaniu polecenia będziesz mógł odczytać numery seryjne Twoich dysków NVMe: `nvme0` i `nvme1`.
 
+### Ustalenie numeru seryjnego dysku (Windows)
 
-### Ustalenie numeru seryjnego dysku w systemie Windows
-
-Instrukcja postępowania dla systemu Windows jest podobna do działań wykonywanych w przypadku dystrybucji Linux. Użyj narzędzia sas2ircu i tych samych poleceń, które zastosowałeś w przypadku systemu Linux.
+Instrukcja postępowania dla systemu Windows jest podobna do tej dla dystrybucji Linux. Użyj narzędzia sas2ircu i tych samych poleceń, które zastosowałeś w przypadku systemu Linux.
 
 > [!primary]
 >
@@ -65,7 +62,7 @@ Instrukcja postępowania dla systemu Windows jest podobna do działań wykonywan
 W celu ustalenia numeru seryjnego w macierzy programowej RAID zastosuj następujące polecenie:
 
 ```sh
-.\smartctl -a /dev/sdX Serial Number: 1234567890
+# .\smartctl -a /dev/sdX Serial Number: 1234567890
 ```
 
 Urządzenie zostanie wykryte przez system operacyjny i będzie się wyświetlało w następujący sposób: `/dev/sda`, `/dev/sdb`, etc.
@@ -75,7 +72,7 @@ Urządzenie zostanie wykryte przez system operacyjny i będzie się wyświetlał
 
 ### Ustalenie numeru seryjnego dysku w przypadku sprzętowej macierzy RAID
 
-Szczegółowy opis poleceń oraz sposobu testowania dysków twardych znajdziesz w tym [przewodniku](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}.
+Szczegółowy opis poleceń oraz sposobu testowania dysków twardych znajdziesz w tym [przewodniku (kontroler RAID LSI)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}.
 
 
 #### Kontroler MegaRaid
@@ -87,7 +84,7 @@ Możesz znaleźć numery seryjne dysków, wpisując polecenie `smartctl`. Przed 
 Informację tę można uzyskać za pomocą polecenia:
 
 ```sh
-MegaCli -LDInfo -Lall -aALL | egrep 'Adapter|Size' | grep -v Strip
+# MegaCli -LDInfo -Lall -aALL | egrep 'Adapter|Size' | grep -v Strip
 
 Adapter 0
 
@@ -98,7 +95,7 @@ Adapter 1
 Virtual Drive Information: Size: 2.727 TB
 ```
 
-W powyższym przykładzie na serwerze znajdują się dwie skonfigurowane macierze RAID (Adapter 0 i Adapter 1). Macierze RAID powinny być zmapowane na `/dev/sda` i `/dev/sdb`.
+W powyższym przykładzie na serwerze znajdują się dwie skonfigurowane macierze RAID: „Adapter 0” i „Adapter 1”. Macierze RAID powinny być zmapowane na `/dev/sda` i `/dev/sdb`.
 
 
 ##### Etap 2: ustalenie informacji dotyczących dysków
@@ -106,7 +103,7 @@ W powyższym przykładzie na serwerze znajdują się dwie skonfigurowane macierz
 Uzyskaj informacje dotyczące fizycznego dysku, używając następującego polecenia:
 
 ```sh
- MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g'
+# MegaCli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g'
 
 Slot Number: 0
 Device Id: 4
@@ -135,12 +132,12 @@ Inquiry Data:       PN2234P8JYP59YHGST HUS724030ALA640                    MF8OAA
 
 ##### Etap 3: ustalenie numeru seryjnego 
 
-Numery ID urządzenia i adaptera używane są do wskazania narzędziu`smartctl`, którego dysku ma poszukiwać w zestawie RAID.
+Numery ID urządzenia i adaptera używane są do wskazania narzędziu smartctl, którego dysku ma poszukiwać w zestawie RAID.
 
 Należy użyć polecenia podobnego do poniższego:
 
 ```sh
-smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
+# smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
 ```
 
 Numer ID urządzenia RAID będzie się wyświetlał w następujący sposób: `/dev/sda` = 1er RAID, `/dev/sdb` = 2e RAID, etc.
@@ -163,25 +160,20 @@ Numer ID urządzenia RAID będzie się wyświetlał w następujący sposób: `/d
 
 #### Ustalenie numeru seryjnego dysku (kontroler RAID LSI)
 
-Kontroler RAID LSI korzysta z modułu o nazwie `sg-map`, który mapuje urządzenia na `/dev/sgX` (gdzie **X** to numer określający urządzenie).
+Kontroler RAID LSI korzysta z modułu o nazwie `sg-map`, który mapuje urządzenia na `/dev/sgX` (gdzie X to numer określający urządzenie).
 
-Możesz skorzystać z [tego przewodnika](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}, aby określić, który dysk twardy odpowiada oznaczonemu urządzeniu sg.
+Możesz skorzystać z [tego przewodnika (kontroler RAID LSI)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}, aby określić, który dysk twardy odpowiada oznaczonemu urządzeniu „sg”.
 
-Po odnalezieniu urządzenia sg powiązanego z dyskiem twardym, który chcesz przeanalizować, zastosuj następujące polecenie:
+Po odnalezieniu urządzenia „sg” powiązanego z dyskiem twardym, który chcesz przeanalizować, zastosuj następujące polecenie:
 
 ```sh
-smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
+# smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
 ```
 
-Numer urządzenia sg będzie się wyświetlał w następujący sposób: `/dev/sg0`, `/dev/sg1`...
+Numer urządzenia „sg” będzie się wyświetlał w następujący sposób: `/dev/sg0`, `/dev/sg1`...
+
 
 
 ## Sprawdź również
-
-[Wymiana uszkodzonego dysku](https://docs.ovh.com/pl/dedicated/wymiana-dysku/){.external}
-
-[Konfiguracja sprzętowej macierzy RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
-
-[Konfiguracja programowej macierzy RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

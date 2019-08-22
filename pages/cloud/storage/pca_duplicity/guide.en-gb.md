@@ -63,78 +63,78 @@ Put the following completed information in a config.json file:
 
 
 ```json
-1. [
-2.     {
-3.         "description": "Cold storage",
-4.         "url": "pca://duplicity_cold",
-5.         "env": [
-6.             {
-7.                 "name": "PCA_AUTHURL",
-8.                 "value": "https://auth.cloud.ovh.net/v3"
-9.             },
-10.             {
-11.                 "name": "PCA_AUTHVERSION",
-12.                 "value": "3"
-13.             },
-14.             {
-15.                 "name": "PCA_PROJECT_DOMAIN_NAME",
-16.                 "value": "Default"
-17.             },
-18.             {
-19.                 "name": "PCA_TENANTID",
-20.                 "value": "<your_tenant_id>"
-21.             },
-22.             {
-23.                 "name": "PCA_USERNAME",
-24.                 "value": "<your_username>"
-25.             },
-26.             {
-27.                 "name": "PCA_PASSWORD",
-28.                 "value": "<your_password>"
-29.             },
-30.             {
-31.                 "name": "PCA_REGIONNAME",
-32.                 "value": "<region_name>"
-33.             }
-34.         ],
-35.         "prefixes": ["cold_"]
-36.     },
-37.     {
-38.         "description": "Hot storage",
-39.         "url": "swift://duplicity_hot",
-40.         "env": [
-41.             {
-42.                 "name": "SWIFT_AUTHURL",
-43.                 "value": "https://auth.cloud.ovh.net/v3"
-44.             },
-45.             {
-46.                 "name": "SWIFT_AUTHVERSION",
-47.                 "value": "3"
-48.             },
-49.             {
-50.                 "name": "SWIFT_PROJECT_DOMAIN_NAME",
-51.                 "value": "Default"
-52.             },
-53.             {
-54.                 "name": "SWIFT_TENANTID",
-55.                 "value": "<your_tenant_id>"
-56.             },
-57.             {
-58.                 "name": "SWIFT_USERNAME",
-59.                 "value": "<your_username>"
-60.             },
-61.             {
-62.                 "name": "SWIFT_PASSWORD",
-63.                 "value": "<your_password>"
-64.             },
-65.             {
-66.                 "name": "SWIFT_REGIONNAME",
-67.                 "value": "<region_name>"
-68.             }
-69.         ],
-70.         "prefixes": ["hot_"]
-71.     }
-72. ]
+[
+    {
+        "description": "Cold storage",
+        "url": "pca://duplicity_cold",
+        "env": [
+            {
+                "name": "PCA_AUTHURL",
+                "value": "https://auth.cloud.ovh.net/v3"
+            },
+            {
+                "name": "PCA_AUTHVERSION",
+                "value": "3"
+            },
+            {
+                "name": "PCA_PROJECT_DOMAIN_NAME",
+                "value": "Default"
+            },
+            {
+                "name": "PCA_TENANTID",
+                "value": "<your_tenant_id>"
+            },
+            {
+                "name": "PCA_USERNAME",
+                "value": "<your_username>"
+            },
+            {
+                "name": "PCA_PASSWORD",
+                "value": "<your_password>"
+            },
+            {
+                "name": "PCA_REGIONNAME",
+                "value": "<region_name>"
+            }
+        ],
+        "prefixes": ["cold_"]
+    },
+    {
+        "description": "Hot storage",
+        "url": "swift://duplicity_hot",
+        "env": [
+            {
+                "name": "SWIFT_AUTHURL",
+                "value": "https://auth.cloud.ovh.net/v3"
+            },
+            {
+                "name": "SWIFT_AUTHVERSION",
+                "value": "3"
+            },
+            {
+                "name": "SWIFT_PROJECT_DOMAIN_NAME",
+                "value": "Default"
+            },
+            {
+                "name": "SWIFT_TENANTID",
+                "value": "<your_tenant_id>"
+            },
+            {
+                "name": "SWIFT_USERNAME",
+                "value": "<your_username>"
+            },
+            {
+                "name": "SWIFT_PASSWORD",
+                "value": "<your_password>"
+            },
+            {
+                "name": "SWIFT_REGIONNAME",
+                "value": "<region_name>"
+            }
+        ],
+        "prefixes": ["hot_"]
+    }
+]
 ```
 
 
