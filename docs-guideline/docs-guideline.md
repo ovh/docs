@@ -44,7 +44,7 @@ _example_: `home.en-gb.md`, `universe.fr-fr.md`, ...
 
 #### content-types
 
-##### home {#home}
+##### home
 Home page for a specific `zone` and `language` pair.
 No content in this file except metadata.
 
@@ -64,7 +64,7 @@ excerpt: How can we help you ?
 ---
 ```
 
-##### universe {#universe}
+##### universe
 
 Page that lists all visible products the universe owns.
 No content in this file except metadata.
@@ -78,7 +78,7 @@ No content in this file except metadata.
 | order   | order of the universe in home    |                        |
 | hidden  | not visible in home if True      | (default: False)       |
 
-##### product {#product}
+##### product
 
 Page that lists all visible guides the product owns.
 No content in this file except metadata.
@@ -93,7 +93,7 @@ No content in this file except metadata.
 | order   | order of the product in universe |                        |
 | hidden  | not visible in universe if True  | (default: False)       |
 
-##### guide {#guide}
+##### guide
 
 Page containing documentation about the subject of your choice.
 
@@ -131,7 +131,7 @@ You can now reference your pics relatively to your guide. See below an example f
 **Note:**
 Each guide must be placed in a folder with a representative name
 
-#### languages {#languages}
+#### languages
 Allowed `ISO 639-1` language code (*[wikipedia](https://en.wikipedia.org/wiki/ISO_639-1)*)
 
 - `cs`: Czech
@@ -146,7 +146,7 @@ Allowed `ISO 639-1` language code (*[wikipedia](https://en.wikipedia.org/wiki/IS
 - `pl`: Polish
 - `pt`: Portuguese
 
-#### zones {#zones}
+#### zones
 Allowed `ISO 3166-1` country code (*[wikipedia](https://en.wikipedia.org/wiki/ISO_3166-1)*)
 
 - `au`: Australia
