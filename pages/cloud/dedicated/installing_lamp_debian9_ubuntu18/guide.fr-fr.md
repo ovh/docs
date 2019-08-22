@@ -117,14 +117,14 @@ Nous passons ensuite à l'installation de la troisième brique, le langage de pr
 Pour installer le paquet PHP, tapez cette commande :
 
 ```sh
-sudo apt-get install php
+sudo apt-get install php5-common libapache2-mod-php5 php5-cli
 ```
 
 Pour tester l'installation, dans le répertoire `/var/www/html`, créez le fichier `info.php` avec le contenu suivant :
 
 ```sh
 cd /var/www/html
-sudo nano index.php
+sudo nano info.php
 ```
 
 Insérez dedans :
@@ -296,7 +296,7 @@ Votre écran de configuration doit ressembler à celui ci-dessous :
 Si vous avez un avertissement au niveau de la création du fichier `wp-config.php`, éditez les droits en exécution, lecture, écriture en fonction de vos besoins (communément appelés `CHMOD`).
 
 
-## Conlusion
+## Conclusion
 
 Voilà, le CMS WordPress est installé et est propulsé par votre stack LAMP installé dans ce tutoriel !
 
