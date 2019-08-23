@@ -81,6 +81,6 @@ Replace /path/to/config.yaml with the proper path, for example /etc/beamium/conf
 
 Congratulation! You managed to scrape Prometheus based format and push it to Metrics Data Platform.
 
-## Going further
+## Go further
 
 For more information about Beamium, you can go to the official [Beamium configuration page](../source-beamium). you can also exchange with our community of users on [https://community.ovh.com](https://community.ovh.com).

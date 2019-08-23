@@ -6,25 +6,23 @@ section: 'Getting started'
 order: 2
 ---
 
-**Last updated 15th May, 2018**
+**Last updated 23th August, 2019**
 
-To access your manager, your first need to order a Metrics product.
+## Objective
 
+This page will cover the main features you will find in the Metrics manager section.
 
-## Metrics Manager
+## Requirements
 
-Let's have a quick tour on the Manager. It's located in the [cloud section](https://www.ovh.com/manager/cloud/index.html){.external} under Metrics section (available when you subscribed a Metrics product).
+To access your manager, your first need to order a [Metrics](../metrics_order/guide.en-gb.md){.ref} product.
+
+## Instructions
+
+Let's have a quick tour on the Manager. It's located in the [Server section](https://www.ovh.com/manager/dedicated/index.html){.external} under Metrics section (available when you subscribed a Metrics product).
 
 ![manager](images/metrics_manager.png){.thumbnail}
 
 When in the Metrics section, select your project and you will enter the Metrics manager :
-
-
-Once the chosen plan has been purchased, go to the `Cloud` section of your control panel. Select the `Metrics` menu from the left side of the control panel.
-
-![menu](images/metrics_manager.png){.thumbnail}
-
-You can now select your new account from the list on the left.
 
 ![menu](images/metrics_manager_welcome.png){.thumbnail}
 
@@ -37,7 +35,6 @@ In the `Configuration` section, click on the dotted button to set up a proper na
 Your account is good to go!
 
 Let's stay on this page for a couple of second to continue the visit.
-
 
 #### Grab your tokens or create new ones
 
@@ -53,12 +50,14 @@ Once done, click to the Platforms tab.
 
 Metrics is protocol agnostic. It means you can push with one protocols, and query the same data with another one. 
 
-[Click here, to learn how to used the supported protocols with metrics and their corresponding endpoints](../protocol-overview).
+[Click here, to learn how to used the supported protocols with metrics and their corresponding endpoints](../protocol_overview/guide.en-gb.md){ref}.
 
-![tokens](images/platforms.png){.thumbnail}
+![tokens](images/metrics_manager_platforms.png){.thumbnail}
 
 ## Go further
 
-To push your first points and query them with OpentSDQB and Grafana, we invite you to follow our guide to [Push and vizualize your first datapoints with OpenTSDB](../start-opentsdb).
-
-Join our community of users on <https://community.ovh.com/en/>.
+- To push your first points and query them with OpentSDQB and Grafana, we invite you to follow our guide to [Push and vizualize your first datapoints with OpenTSDB](../metrics_opentsdb/guide.en-gb.md){.ref}.
+- Documentation: [Guides](../product.en-gb.md){.ref}
+- Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~(~(planCode~'metrics-free-trial~configuration~(~(label~'region~values~(~'gra1)))~option~(~)~quantity~1~productId~'metrics))&paymentMeanRequired=0){.external}

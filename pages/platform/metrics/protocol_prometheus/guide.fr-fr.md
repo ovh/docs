@@ -34,7 +34,7 @@ order: 5
 
 ### How to Push data
 
-Prometheus is using the [pull-based approach](https://prometheus.io/docs/introduction/faq/#why-do-you-pull-rather-than-push?){.external} to gather metrics. We developed an open-source tool called `Beamium` in order to scrape metrics in Prometheus format. Please see the [dedicated guide to use Beamium](../source_beamium/guide.en-gb.md){.ref}.
+Prometheus is using the [pull-based approach](https://prometheus.io/docs/introduction/faq/#why-do-you-pull-rather-than-push?){.external} to gather metrics. We developed an open-source tool called `Beamium` in order to scrape metrics in Prometheus format. Please see the [dedicated guide to use Beamium](../source_beamium/guide.fr-fr.md){.ref}.
 
 In case you need to push, we also support the [PushGateway](https://prometheus.io/docs/instrumenting/pushing/){.external} with the following URL:
 
@@ -204,7 +204,7 @@ To select a Time-series stored in Metrics with unvalid Prometheus character as "
 
 ## Go further
 
-- Documentation: [Guides](../product.en-gb.md){.ref}
+- Documentation: [Guides](../product.fr-fr.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~(~(planCode~'metrics-free-trial~configuration~(~(label~'region~values~(~'gra1)))~option~(~)~quantity~1~productId~'metrics))&paymentMeanRequired=0){.external}

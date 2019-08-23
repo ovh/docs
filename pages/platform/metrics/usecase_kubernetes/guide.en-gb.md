@@ -34,7 +34,7 @@ It is fully compatible with Metrics Data Platform thanks to InfluxDB protocol su
 
 You can replace the deployment of a Prometheus pod by using OVH Metrics instead. You can follow the following [usecase](../usecase-prometheus) to deploy an open-source component called `Beamium`.
 
-## Going further
+## Go further
 
 You can learn how to configure a Grafana Prometheus source by following [this guide](../start-grafana).
 

@@ -6,7 +6,9 @@ section: 'Metrics services'
 order: 4
 ---
 
-**Last updated 12th October, 2018**
+**Last updated 23th August, 2019**
+
+## Objective
 
 OMNI is a part of the OVH Studio solution. It is a specialised alerting system, based on metrics. With it, you will be able to send notifications (SMS, emails, etc) when anomalies occur within your metrics.
 
@@ -16,7 +18,6 @@ OMNI is a part of the OVH Studio solution. It is a specialised alerting system, 
 
 * an OVH Metrics service
 * an OVH Studio account
-
 
 ## Instructions
 
@@ -130,7 +131,7 @@ steps:
 
 ### Drone definition
 
-A drone is a script run with custom parameters, which returns incidents from a metrics subset. You don't necssarily have to write drones, as basics ones are available on the [Registry](https://studio.metrics.ovh.net/omni/registry). **Life** drones, for example, will checks that a metric is recently pushed, and **range** drones will check that your metric's value is within a defined range.
+A drone is a script run with custom parameters, which returns incidents from a metrics subset. You don't necssarily have to write drones, as basics ones are available on the [Registry](https://studio.metrics.ovh.net/omni/registry){.external}. **Life** drones, for example, will checks that a metric is recently pushed, and **range** drones will check that your metric's value is within a defined range.
 
 If you wish to write your own, the script must be a WarpScript™, which takes and returns a specific structure.
 
@@ -184,7 +185,7 @@ params:
 
 #### Writing your own drone script
 
-If the registry doesn't have a drone to suit your specific requirements, you can write your own drone scripts using WarpScript™. For more on this, refer to the [official documentation](http://www.warp10.io/reference/) or the [Warp 10™ tour](https://tour.warp10.io/#1-1).
+If the registry doesn't have a drone to suit your specific requirements, you can write your own drone scripts using WarpScript™. For more on this, refer to the [official documentation](https://www.warp10.io/doc/reference){.external} or the [Warp 10™ tour](https://tour.warp10.io/#1-1){.external}.
 
 Your script will require the following variables:
 
@@ -199,7 +200,8 @@ Optional parameters are not defined, so you will have to check if they exist.
 OMNI expects your script to have only one entry in the stack at the end. This entry must be an array of incidents, each of which must have a unique **name** (like 'series selector'), and can have a **reason** and **details**.
 
 WarpScript™ returns:
-```ws
+
+```text
 [
   { 'name' 'os.mem{host=A}' 'reason' 'MAX reached' 'details' '85% of memory used is to high' }
   { 'name' 'os.mem{host=D}' 'reason' 'MAX reached' 'details' '93% of memory used is to high' }
@@ -207,7 +209,8 @@ WarpScript™ returns:
 ```
 
 #### Range drone explanation
-```ws
+
+```text
   [ $token $selector $labels $now $window ] FETCH                                 // Fetch data with defined parameters
   <% 'average' DEFINED %>                                                         // Check if optional parameter 'average' is defined
     <%
@@ -336,7 +339,7 @@ Each entity must also be named. You can set a __name__ key in the file, otherwis
 
 An alerting project is a git project. You can initialise your project directory this way with the command below:
 
-```sh
+```shell-session
 $ git init
 ```
 
@@ -371,7 +374,7 @@ The first step will ask for the name and description, which are free fields.
 
 The git clone URL must a valid url, where OMNI is allowed to clone your project, that follows this pattern:
 
-```sh
+```text
 ssh://GIT_USER@DOMAIN.TLD/REPOSITORY.git
 ```
 
@@ -393,4 +396,7 @@ On OVH Studio, you can set up email and/or phone notifications. You can also ena
 
 ## Go further
 
-Join our community of users on https://community.ovh.com/en/.
+- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
+- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~(~(planCode~'metrics-free-trial~configuration~(~(label~'region~values~(~'gra1)))~option~(~)~quantity~1~productId~'metrics))&paymentMeanRequired=0){.external}

@@ -136,7 +136,7 @@ Let's look at differents protocol data models mappings.
 
 #### OpenTSDB
 
-When pushing an [OpenTSDB](../protocol_opentsdb/guide.en-gb.md){.ref} data points, the JSON representation is:
+When pushing an [OpenTSDB](../protocol_opentsdb/guide.fr-fr.md){.ref} data points, the JSON representation is:
 
 ```json
 [
@@ -161,7 +161,7 @@ When pushing an [OpenTSDB](../protocol_opentsdb/guide.en-gb.md){.ref} data point
 
 #### Prometheus
 
-[Prometheus](../protocol_prometheus/guide.en-gb.md){.ref} input format is exactly the same as OpenTSDB.
+[Prometheus](../protocol_prometheus/guide.fr-fr.md){.ref} input format is exactly the same as OpenTSDB.
 
 For the query format, you can see an example below:
 
@@ -196,7 +196,7 @@ The interesting part is under the **metric** JSON key, each series is an element
 
 #### InfluxDB
 
-In [InfluxDB](../protocol_influxdb/guide.en-gb.md){.ref}, the series name is split, there is a common prefix at the start of the line, and several specifc suffix just before the timestamp. One line can create several time series depending of the count of suffixes
+In [InfluxDB](../protocol_influxdb/guide.fr-fr.md){.ref}, the series name is split, there is a common prefix at the start of the line, and several specifc suffix just before the timestamp. One line can create several time series depending of the count of suffixes
 After the prefix, there is a list of keys/values separated by comma, this is the equivalent to labels. The last number is the timestamp.
 
 Time series example:
@@ -218,7 +218,7 @@ The result of parsing for this example will be:
 
 #### Graphite
 
-You can see the time series representation in [Graphite](../protocol_graphite/guide.en-gb.md){.ref} below:
+You can see the time series representation in [Graphite](../protocol_graphite/guide.fr-fr.md){.ref} below:
 A graphite time series is build with a name, a list of keys/values separated by semi colons, a value and a timestamp.
 See the example below.
 
@@ -239,8 +239,8 @@ Labels are separated by semi colons, when timestamp and value by spaces
 
 ## Go further
 
-- Getting Started: [Quick Start](../metrics_opentsdb/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
+- Getting Started: [Quick Start](../metrics_opentsdb/guide.fr-fr.md){.ref}
+- Documentation: [Guides](../product.fr-fr.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~(~(planCode~'metrics-free-trial~configuration~(~(label~'region~values~(~'gra1)))~option~(~)~quantity~1~productId~'metrics))&paymentMeanRequired=0){.external}

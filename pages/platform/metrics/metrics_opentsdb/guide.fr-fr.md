@@ -1,15 +1,16 @@
 ---
-title: Push and vizualize your first datapoints with OpenTSDB
+title: 'Push and vizualize your first datapoints with OpenTSDB'
 slug: start-opentsdb
-excerpt: Push and query your first datapoints
-section: Getting started
+excerpt: 'Push and query your first datapoints'
+section: 'Getting started'
 order: 3
 ---
-**Last updated 15th May, 2018**
+
+**Last updated 23th August, 2019**
 
 ## Objective
 
-OpenTSDB is a Scalable Time Series Database design to store and serve massive amounts of time series data without losing granularity. In this guide, you will learn how to use your first datapoints using Metrics.
+[OpenTSDB](http://opentsdb.net/){.external} is a Scalable Time Series Database design to store and serve massive amounts of time series data without losing granularity. In this guide, you will learn how to use your first datapoints using Metrics.
 
 ## Requirements
 
@@ -22,7 +23,8 @@ OpenTSDB is a Scalable Time Series Database design to store and serve massive am
 
 ### Create a JSON to push data
 
-> > The full documentation is available at http://opentsdb.net/docs/build/html/api_http/put.html. As an example you can push single point.
+The full documentation is available at [http://opentsdb.net/docs/build/html/api_http/put.html](http://opentsdb.net/docs/build/html/api_http/put.html){.external}. 
+As an example you can push single point.
 
 OpenTSDB is accepting a JSON containing the datapoints. Here's an example:
 
@@ -121,9 +123,8 @@ You can also push multiple datapoints into a single query. Create a file called 
 
 In the `curl` command below, replace __REGION__ per your own one : __gra1__  or __bhs1__. As the user doesn't matter on the metrics backend, all the information are stored in our cryptographical token, you can replace or let DESC as if.
 
-```sh
-curl -X POST -d @opentsdb.json \
-    'https://DESC:TOKEN_WRITE@opentsdb.REGION.metrics.ovh.net/api/put'
+```shell-session
+$ curl -X POST --data-binary @opentsdb.json 'https://DESC:TOKEN_WRITE@opentsdb.REGION.metrics.ovh.net/api/put'
 ```
 
 If everyting happens correctly, the CURL would exit with a 200 code status. You can check that you correctly upload the data by checking your OVH metrics dashboard. In your home panel, you should now have 2 more active series and 6 new points added.
@@ -133,10 +134,9 @@ If everyting happens correctly, the CURL would exit with a 200 code status. You 
 
 Now let's retrieve the previously pushed data.
 
-> The full documentation is available at [http://opentsdb.net/docs/build/html/api_http/query/index.html](http://opentsdb.net/docs/build/html/api_http/query/index.html){.external}
+The full documentation is available at [http://opentsdb.net/docs/build/html/api_http/query/index.html](http://opentsdb.net/docs/build/html/api_http/query/index.html){.external}
 
-
-Let's write a query.json file which contains the following code:
+Let's write a `query.json` file which contains the following code:
 
 ```json
 {
@@ -156,14 +156,18 @@ Let's write a query.json file which contains the following code:
 
 This will get all the saved points and compute the query before returning the result. The curl command to execute this query is:
 
-```sh
-curl --data-binary @query.json \
-    'https://DESC:TOKEN_READ@opentsdb.REGION.metrics.ovh.net/api/query'
+```shell-session
+$ curl --data-binary @query.json 'https://DESC:TOKEN_READ@opentsdb.REGION.metrics.ovh.net/api/query'
 ```
 
 You should expects a result similar to:
 
-![pricing](images/opentsdb-query-result.png){.thumbnail}
+```json
+[{"metric":"sys.cpu.nice","tags":{"dce":"lga", "host": "web02"},"aggregateTags":["host","de"],
+"dps": {"1346846340" :9, "1346846580" :9, "1346846820" :8, "1346847060" :8.5, "1346847300" :8.5}},{"m
+etric":"sys.cpu.nice","tags":{"dce":"lga","host":"web01"},"aggregateTags":["host","dc"], "dps
+":{"13468463460" :18, "1346846580" :18, "1346846820" :19, "1346847060" :19.5, "1346847300" :19.5}}]
+```
 
 What does compute this query on the series? 
 
@@ -188,31 +192,30 @@ With this request the aggregator parameter wasn't used. To compute an aggregatio
 
 Then the following curl command:
 
-```sh
-curl --data-binary @query.json \
-    'https://DESC:TOKEN_READ@opentsdb.REGION.metrics.ovh.net/api/query'
+```shell-session
+$ curl --data-binary @query.json 'https://DESC:TOKEN_READ@opentsdb.REGION.metrics.ovh.net/api/query'
 ```
 
 provides this result:
 
-![pricing](images/opentsdb-query-result-aggreg.png){.thumbnail}
+```json
+[{"metric":"sys.cpu.nice","tags":{"dc":"lga"},"aggregateTags":["dc"],"dps":{"1346846340":9,
+"1346846580" :9, "1346846820" :8, '"1346847060":8.5, "1346847300" :8.5}}]
+```
 
-This provide only a series as result containing the minimal value for each 4 minutes periods. You will find more details about OpenTSDB downsampling and aggregation [here](http://opentsdb.net/docs/build/html/user_guide/query/aggregators.html).
+This provide only a series as result containing the minimal value for each 4 minutes periods. You will find more details about OpenTSDB downsampling and aggregation [here](http://opentsdb.net/docs/build/html/user_guide/query/aggregators.html){.external}.
 
 ### Datasource setup
 
 OpenTSDB is integrated with Grafana : [Read more on OpenTSDB builtin data source](http://docs.grafana.org/features/datasources/opentsdb/){.external}.
 
-The first thing you need is to create a new OpenTSDB datasource. You can deploy your own grafana or create a new dashboard on the [public OVH grafana](https://grafana.metrics.ovh.net){.external}.
+The first thing you need is to create a new OpenTSDB datasource. You can deploy your own grafana or create a new dashboard on the [Public OVH Grafana instance](https://grafana.metrics.ovh.net){.external}.
 
 Go to :
 
 __Menu__ > __Data sources__ > __Add datasource__
 
 ![menu](images/grafana-menu-datasource.png){.thumbnail}
-
-![menu](images/grafana-datasources.png){.thumbnail}
-
 
 How to fill the blanks:
 
@@ -237,7 +240,7 @@ Then add a new graph panel, and choose your data source by his name.
 
 ![menu](images/grafana-opentsdb-query.png){.thumbnail}
 
-You can put your metriucs into the `Metric name` field.
+You can put your metrics into the `Metric name` field.
 
 If you see too much variations and precision on your graph, decrease the `Down sample` interval.
 if your graaph is too blur, increase the `Down sample` interval.
@@ -252,15 +255,18 @@ Then we add a query on the graph to query both metrics. You just have to put `sy
 
 ### Delete data
 
-To delete all your example data you can use the simple Warp 10™ delete command  used below
+To delete all your example data you can use the simple Warp 10™ delete command used below
 
-```sh
-curl -H 'X-Warp10-Token: WRITE_TOKEN' \
-'https://warp10.gra1.metrics.ovh.net/api/v0/delete?deleteall&selector=sys.cpu.nice\{\}'
+```shell-session
+$ curl -H 'X-Warp10-Token: WRITE_TOKEN' 'https://warp10.gra1.metrics.ovh.net/api/v0/delete?deleteall&selector=sys.cpu.nice\{\}'
 ```
 
 Once you delete data in metrics, you will not be able to retrieve them. Be careful with this command. It will also not reduced your current count of daily points pushed.
 
-## Going further
+## Go further
 
-You can exchange with our community of users on [https://community.ovh.com](https://community.ovh.com).
+- To learn more about pushing and querying with OpenTSDB, you can follow our protocol guide [use OpenTSDB](../protocol_opentsdb/guide.fr-fr.md){.ref}.
+- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
+- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~(~(planCode~'metrics-free-trial~configuration~(~(label~'region~values~(~'gra1)))~option~(~)~quantity~1~productId~'metrics))&paymentMeanRequired=0){.external}
