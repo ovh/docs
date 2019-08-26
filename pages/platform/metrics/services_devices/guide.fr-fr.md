@@ -1,8 +1,8 @@
 ---
-title: 'Connect an IoT Device'
+title: Connect an IoT Device
 slug: iot-devices
-excerpt: 'How to use Metrics with a connected IoT device'
-section: 'Metrics services'
+excerpt: How to use Metrics with a connected IoT device
+section: Metrics services
 order: 2
 ---
 
@@ -24,7 +24,10 @@ With a Metrics account, you can store different kind of values: - Long - Double 
 ## Requirements
 
 - a valid OVH Metrics account.
-- Operator's integration is a crucial criteria while choosing how you can acquire the data. And they are many choices :
+
+Operator's integration is a crucial criteria while choosing how you can acquire the data. 
+
+They are many choices:
 
 - GPRS/SMS
 - 4G
@@ -97,4 +100,4 @@ Save your backend, and you're good to go!
 - Documentation: [Guides](../product.fr-fr.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~(~(planCode~'metrics-free-trial~configuration~(~(label~'region~values~(~'gra1)))~option~(~)~quantity~1~productId~'metrics))&paymentMeanRequired=0){.external}
+- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27metrics-free-trial~configuration~%28~%28label~%27region~values~%28~%27gra1%29%29%29~option~%28~%29~quantity~1~productId~%27metrics%29%29&paymentMeanRequired=0){.external}

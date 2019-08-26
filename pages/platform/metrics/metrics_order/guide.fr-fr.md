@@ -1,8 +1,8 @@
 ---
-title: 'Order your Metrics project'
+title: Order your Metrics project
 slug: order
-excerpt: 'Order a Metrics account'
-section: 'Getting started'
+excerpt: Order a Metrics account
+section: Getting started
 order: 1
 ---
 
@@ -37,7 +37,7 @@ A plan mostly depends on the number of Time Series that you need, for example, w
 
 #### Step 2. Go to Metrics's manager
 
-Once the chosen plan has been purchased, go to the `Cloud` section of your control panel. Select the `Metrics` menu from the left side of the control panel.
+Once the chosen plan has been purchased, go to the `Server`{.action} section of your control panel. Select the `Metrics`{.action} menu from the left side of the control panel.
 
 ![menu](images/metrics_manager.png){.thumbnail}
 
@@ -58,13 +58,13 @@ Let's stay on this page for a couple of second to continue the visit.
 
 #### Step 4. Grab your tokens or create new ones
 
-Now go to the Tokens tab :
+Now go to the `Tokens`{.action} tab :
 
 ![tokens](images/metrics_manager_tokens.png){.thumbnail}
 
 Here you can grab two defaults read and write tokens. You can use them or decide to create new ones.
 
-Once done, click to the Platforms tab.
+Once done, click to the `Platforms`{.action} tab.
 
 #### Step 5. Grab your endpoints
 
@@ -88,4 +88,4 @@ If you don't want to push your data by yourself, you can use a software that wil
 - Documentation: [Guides](../product.fr-fr.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~(~(planCode~'metrics-free-trial~configuration~(~(label~'region~values~(~'gra1)))~option~(~)~quantity~1~productId~'metrics))&paymentMeanRequired=0){.external}
+- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27metrics-free-trial~configuration~%28~%28label~%27region~values~%28~%27gra1%29%29%29~option~%28~%29~quantity~1~productId~%27metrics%29%29&paymentMeanRequired=0){.external}

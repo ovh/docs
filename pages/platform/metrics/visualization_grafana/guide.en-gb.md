@@ -1,8 +1,8 @@
 ---
-title: 'Configure Grafana''s datasource'
+title: Configure Grafana's datasource
 slug: start-grafana
-excerpt: 'How to use configure a datasource on Grafana'
-section: 'Visualization'
+excerpt: How to use configure a datasource on Grafana
+section: Visualization
 order: 2
 ---
 
@@ -49,4 +49,4 @@ You can now use this datasource in any dashboard!
 - Documentation: [Guides](../product.en-gb.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~(~(planCode~'metrics-free-trial~configuration~(~(label~'region~values~(~'gra1)))~option~(~)~quantity~1~productId~'metrics))&paymentMeanRequired=0){.external}
+- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27metrics-free-trial~configuration~%28~%28label~%27region~values~%28~%27gra1%29%29%29~option~%28~%29~quantity~1~productId~%27metrics%29%29&paymentMeanRequired=0){.external}

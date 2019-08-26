@@ -1,7 +1,7 @@
 ---
-title: 'Use TSQL'
-slug: protocol-tsql
-excerpt: 'TSQL overview'
+title: Use TSL
+slug: protocol-TSL
+excerpt: TSL overview
 section: Protocol
 order: 2
 ---
@@ -10,7 +10,7 @@ order: 2
 
 ## Objective
 
-Our mission is to provide you a great experience and we thought current languages was either too limited or too complicated to reach this goal. That's why we wanted to propose a take : Time Series Query (or TSQL). It's build to be easier to read, back-end agnostic and most of all oriented to simplify servers and applications monitoring. We will describe here its syntax and how to query data with it.
+Our mission is to provide you a great experience and we thought current languages was either too limited or too complicated to reach this goal. That's why we wanted to propose a take : Time Series Language (or TSL). It's build to be easier to read, back-end agnostic and most of all oriented to simplify servers and applications monitoring. We will describe here its syntax and how to query data with it.
 
 ## Requirements
 
@@ -18,13 +18,13 @@ Our mission is to provide you a great experience and we thought current language
 
 ## Instructions
 
-First things first, let's decode a TSQL query.
+First things first, let's decode a TSL query.
 
 ```sql
 select("sys.cpu.nice").where("host=web01").from(1346846400000,to=1346847000005)
 ```
 
-This is a first TSQL query, each keywords have its own meaning: 
+This is a first TSL query, each keywords have its own meaning: 
 
 * **select** is used to specify a metric name to retrieve (or pattern name).
 * **where** is used to set labels that the current Time-series must have.
@@ -122,7 +122,7 @@ curl -v -X POST -d @opentsdb.json \
 
 If everyting happens correctly, the cURL would exit with a 200 code status and the data are available using your metrics account.
 
-### Execute your first TSQL request
+### Execute your first TSL request
 
 Now that we pre-load some data points, let's execute the following query:
 
@@ -132,21 +132,21 @@ select("sys.cpu.nice").where("host=web01").from(1346846400000,to=1346847000005)
 
 We can send this request through an HTTP Post with the cURL Command line or any other HTTP tools like [Insomnia](https://insomnia.rest/){.external} or [PostMan](https://www.getpostman.com/){.external}.
 
-Using a cURL command, we can write a new TSQL file containing the previous select
+Using a cURL command, we can write a new TSL file containing the previous select
 
 ```shell-session
-$ curl -v --data-binary @select.tsql 'https://DESC:READ_TOKEN@tsql.gra1-ovh.metrics.ovh.net/v0/query'
+$ curl -v --data-binary @select.TSL 'https://DESC:READ_TOKEN@TSL.gra1-ovh.metrics.ovh.net/v0/query'
 ```
 
 You should get the result as a time-series JSON list.
 
-## TSQL main operators
+## TSL main operators
 
-To retrieve data, TSQL have a **select** method to choose the metrics name to retrieve, a **where** clauses to select specific labels and a **from** or **last** method to select the temporal period to get.
+To retrieve data, TSL have a **select** method to choose the metrics name to retrieve, a **where** clauses to select specific labels and a **from** or **last** method to select the temporal period to get.
 
-Once the data are available, with TSQL you can apply a lot of functions: from **sampling**, to **grouping**, to **metrics operation** or to **operation between metrics**.
+Once the data are available, with TSL you can apply a lot of functions: from **sampling**, to **grouping**, to **metrics operation** or to **operation between metrics**.
 
-As with TSQL the goal is to simplify metrics queries, inside a query a user can store **variables** that will re-used, we will see how to use it. TSQL offers the possibilities to fetch data from different backend and to dynamically execute queries on them from a same script using the **connect** method. Besides we will see how to update metrics meta-data (name and labels) and storing the request result in the specified backend 
+As with TSL the goal is to simplify metrics queries, inside a query a user can store **variables** that will re-used, we will see how to use it. TSL offers the possibilities to fetch data from different backend and to dynamically execute queries on them from a same script using the **connect** method. Besides we will see how to update metrics meta-data (name and labels) and storing the request result in the specified backend 
 
 ### Select
 
@@ -166,7 +166,7 @@ select("sys.cpu.nice")
 select(*)
 ```
 
-TSQL supports native backend. At current time, for **Prometheus** you need to specify the exact classname of the metrics to load. When for **Warp 10**, you can use native regexp. _As example "~sys.*" is a working Warp 10 REGEXP to select all series starting with sys._
+TSL supports native backend. At current time, for **Prometheus** you need to specify the exact classname of the metrics to load. When for **Warp 10**, you can use native regexp. _As example "~sys.*" is a working Warp 10 REGEXP to select all series starting with sys._
 
 ### Where 
 
@@ -176,7 +176,7 @@ Where can contains **one** to **n** parameter(s):
 
 * The labels selector string formed as "key=label". 
 
-With the "key=label" string, we use an equals label matcher. The TSQL valid matcher are **=**, **~**, **!=** and **!~**. The first one encounters in the string will be used.
+With the "key=label" string, we use an equals label matcher. The TSL valid matcher are **=**, **~**, **!=** and **!~**. The first one encounters in the string will be used.
 
 Example: 
 
@@ -188,7 +188,7 @@ select("sys.cpu.nice").where("dc=lga")
 select("sys.cpu.nice").where("dc=lga", "web~.*")
 ```
 
-You can chain as many where clauses as wanted in a TSQL query, example: select(...).where(...).where(...) as long as you are defining the data to retrieve.
+You can chain as many where clauses as wanted in a TSL query, example: select(...).where(...).where(...) as long as you are defining the data to retrieve.
 
 ### From or Last
 
@@ -293,7 +293,7 @@ To resume **last** valid parameters are listed below. A parameter can be optiona
 
 When collecting servers or application metrics, the data stored are often unsynchronised. To start processing our stored metrics, it's often mandatory to sample the data. Sampling the data corresponds to split metrics data points per time window. All values in this time window are send as parameter to a function that will provide one value as result.
 
-This can be done using the tsql **sampleBy** method.
+This can be done using the TSL **sampleBy** method.
 
 The **sampleBy** method expects as first parameter (mandatory):
 
@@ -302,18 +302,18 @@ The **sampleBy** method expects as first parameter (mandatory):
 
 The **sampleBy** method expects as second parameter (mandatory):
 
-* An **aggregator** function to use: can be one of **max, mean, min, first, last, sum, join, median, count, and** or **or**. TSQL expects the aggregator to be set as an ident field.
+* An **aggregator** function to use: can be one of **max, mean, min, first, last, sum, join, median, count, and** or **or**. TSL expects the aggregator to be set as an ident field.
 
 The **sampleBy** method takes also two optionals parameters: 
 
 * A boolean to indicate whether we should keep a relative sampling (true) or use an absolute one (default, and params at false): absolute sampling means that data would be round up (ex: with a 5 minutes span series at time 12:03 it would be 12:05, 12:00, 11:55, when with a relative sampling times would be at 12:03, 11:58, 11:53).
-* A sampling policy can be **auto, none, interpolate, next** or **previous**. TSQL expects the policy to be set as string (example "auto") or a list of strings, containing the policiy to apply in order. This list is restrained to values equals to **interpolate, next or previous**. Using **interpolate** policy will compute the interpolation of the intermediary values, **next** will fill missing values with the next values it found, and **previous** will fill missing values by the previous value of the series found. The **none** one will let empty missing values. When **auto** means that an interpolation is applied first to field intermediary missing values, previous to fill missing values before the first data-point and next to fill missing values after the last data-point. When no policy it's set it used **auto** by default.
+* A sampling policy can be **auto, none, interpolate, next** or **previous**. TSL expects the policy to be set as string (example "auto") or a list of strings, containing the policiy to apply in order. This list is restrained to values equals to **interpolate, next or previous**. Using **interpolate** policy will compute the interpolation of the intermediary values, **next** will fill missing values with the next values it found, and **previous** will fill missing values by the previous value of the series found. The **none** one will let empty missing values. When **auto** means that an interpolation is applied first to field intermediary missing values, previous to fill missing values before the first data-point and next to fill missing values after the last data-point. When no policy it's set it used **auto** by default.
 
 The duration format is a number followed by one of **w** for week(s), **d** for day(s), **h** for hour(s), **m** for minute(s), **s** for second(s), **ms** for milli-second(s), **us** for micro-second(s), **ns** for nano-second(s) and **ps** for pico-second(s)
 
 With a Prometheus back-end, we use the step query parameter to sample the data. It's handled a bit differently as by default Prometheus will sample by the last value recorded (until last 5 minutes). 
 
-When using sampleBy in TSQL on **Prometheus** you can only set a **span** and an **aggregator** equals to **last** as parameters.
+When using sampleBy in TSL on **Prometheus** you can only set a **span** and an **aggregator** equals to **last** as parameters.
 
 Example:
 
@@ -369,7 +369,7 @@ The **group** method will generate a single series using the specified aggregato
 
 The group method takes one parameter:
 
-* The aggregator function to use: can be one of **max, mean, min, sum, join, median, count, and** or **or**. TSQL expects the policy to be set as an ident field.
+* The aggregator function to use: can be one of **max, mean, min, sum, join, median, count, and** or **or**. TSL expects the policy to be set as an ident field.
 
 ```sql
 -- Valid parameters prefix
@@ -384,7 +384,7 @@ The **groupBy** method allow to specify labels to limit the aggegator on series 
 The groupBy method takes two to n parameters:
 
 * A labels key as string to group the data on. To select more than one label string you can use a label string list as parameter
-* The aggregator function to use: can be one of **max, mean, min, sum, join, median, count, and** or **or**. TSQL expects the policy to be set as an ident field.
+* The aggregator function to use: can be one of **max, mean, min, sum, join, median, count, and** or **or**. TSL expects the policy to be set as an ident field.
 
 Example:
 
@@ -412,15 +412,15 @@ To resume **groupBy** valid parameters are listed below. A parameter can be opti
 
 ### Metrics values operators
 
-Sometimes, we just want to update our series values (adding 2, checking the values with a threshold, rounded the value, compute a rate, and so on). In TSQL, we have a large variety of Time series operator available than can be applied directly on a series result. 
+Sometimes, we just want to update our series values (adding 2, checking the values with a threshold, rounded the value, compute a rate, and so on). In TSL, we have a large variety of Time series operator available than can be applied directly on a series result. 
 
-This can be done using the tsql **window** method.
+This can be done using the TSL **window** method.
 
 The **window** method expects
 
-* At least a **window function** to use: can be one of **max, mean, min, first, last, sum, delta, stddev, stdvar, join, median, count, and** or **or**. TSQL expects the window function to be set as an ident field.
+* At least a **window function** to use: can be one of **max, mean, min, first, last, sum, delta, stddev, stdvar, join, median, count, and** or **or**. TSL expects the window function to be set as an ident field.
 * A single duration time window to compute the **over_time** method on for **Prometheus** or **Warp10**.
-* **Warp10** MAP frame supports two parameters as TSQL window function a [pre and/or post](http://www.warp10.io/reference/frameworks/framework-map/){.external} parameter. The **pre** and **post** parameters can be a number of points to compute the window on, or a duration if the series was sampled before.
+* **Warp10** MAP frame supports two parameters as TSL window function a [pre and/or post](http://www.warp10.io/reference/frameworks/framework-map/){.external} parameter. The **pre** and **post** parameters can be a number of points to compute the window on, or a duration if the series was sampled before.
 
 As Warp 10 is more flexible, you can either specify a duration or a number of points to apply on with the [pre and/or post](http://www.warp10.io/reference/frameworks/framework-map/){.external} parameter.
 
@@ -448,7 +448,7 @@ select("sys.cpu.nice")
 
 #### Arithmetic operators
 
-The following TSQL methods can be used to apply arithmetic operators on metrics:
+The following TSL methods can be used to apply arithmetic operators on metrics:
 
 * The **add** operator. Add takes **one number parameter**, example: _.add(2)_
 * The **sub** operator. Sub takes **one number parameter**, example: _.sub(2)_
@@ -470,7 +470,7 @@ The **logN** and **cumulativeSum** operators are not available on **Prometheus**
 
 #### Equality operators
 
-The following TSQL methods can be used to apply equality operators on metrics:
+The following TSL methods can be used to apply equality operators on metrics:
 
 * The **equal** operator. Only values that are stricly equals to **equal parameter** are kept, example: _.equal(2)_
 * The **notEqual** operator. Only values that are not equals to **notEqual parameter** are kept, example: _.notEqual(2)_
@@ -481,14 +481,14 @@ The following TSQL methods can be used to apply equality operators on metrics:
 
 #### Limit operators
 
-The following TSQL methods can be used to apply limit operators on metrics:
+The following TSL methods can be used to apply limit operators on metrics:
 
 * The **maxWith** operator. MaxWith will test all values to keep only the one **above maxWith parameter** and **replace** all other values per maxWith parameter, example: *.maxWith(2)*
 * The **minWith** operator. MinWith will test all values to keep only the one **below minWith parameter** and **replace** all other values per minWith parameter, example: *.minWith(2)*
 
 #### Metrics time operators
 
-The following TSQL methods can be used to apply time related operators on metrics:
+The following TSL methods can be used to apply time related operators on metrics:
 
 * The **shift** operator used to **shift** all points by a **duration parameter**, example: _.shift(2m)._
 * The **day** operator used to replace each points per the **day of the month** of each points (in UTC time), example: _.day()._
@@ -501,14 +501,14 @@ The following TSQL methods can be used to apply time related operators on metric
 
 #### Time window methods
 
-TSQL includ a method to apply an operation on a selected time window. This represents [**time window mapper**](http://www.warp10.io/reference/frameworks/framework-map/){.external} in Warp 10 and [**over_time**](https://prometheus.io/docs/prometheus/latest/querying/functions/#%3Caggregation%3E_over_time()){.external} operators in PromQL.
+TSL includ a method to apply an operation on a selected time window. This represents [**time window mapper**](http://www.warp10.io/reference/frameworks/framework-map/){.external} in Warp 10 and [**over_time**](https://prometheus.io/docs/prometheus/latest/querying/functions/#%3Caggregation%3E_over_time()){.external} operators in PromQL.
 This methods apply a function to all values of a time window of each metrics and replace the current value by the result of this function. 
 
 The method applied can be one of
 
 ### Metrics sort 
 
-TSQL introduces some methods to sort metrics by their samples values.
+TSL introduces some methods to sort metrics by their samples values.
 
 * The **sort** operator used to sort metrics data by their globals **mean** value in **ascending** order. Use example: _.sort()._
 * The **sortDesc** operator used to sort metrics data by their globals **mean** value in **descending** order. Use example: _.sortDesc()._
@@ -523,7 +523,7 @@ The **sortBy**, **sortDescBy**, **topNBy** and **bottomNBy** operators are not a
 
 ### Metrics operators on metrics sets
 
-When we load several set of data, we may want to apply operation on metrics sets. TSQL allow us to apply operators on metrics. 
+When we load several set of data, we may want to apply operation on metrics sets. TSL allow us to apply operators on metrics. 
 
 #### Metrics operators
 
@@ -567,7 +567,7 @@ By default, on **Prometheus** the minimal equivalence class matching a maximum o
 
 To limit operation on specific labels, the method **on** can be-used post a metrics operator one.
 
-For example the following TSQL query will return two series one where all values of the _"web01"_ host series are summed and a second one for the _"web02"_ host series.
+For example the following TSL query will return two series one where all values of the _"web01"_ host series are summed and a second one for the _"web02"_ host series.
 
 ```sql
 -- Add on label "host"
@@ -603,7 +603,7 @@ add(
 
 ### Variables
 
-TSQL allow the user to set it's own variable. Just set a name followed by an "=" sign. 
+TSL allow the user to set it's own variable. Just set a name followed by an "=" sign. 
 
 To reuse a variable, just use it's name. To execute a query store in a variable, just write the variable name in a new line.
 
@@ -665,17 +665,17 @@ addSave.on("host").add(100)
 
 ### Connect
 
-In TSQL, we can directly use the Connect method to update the set the backend on which queries are processed.
+In TSL, we can directly use the Connect method to update the set the backend on which queries are processed.
 
 ```sql
 connect("http://localhost:9090", "TOKEN")
 ```
 
-The back-end have to be declared in TSQL configuration, for OVH the valid backends are: "https://p:READ_TOKEN@prometheus.gra1-ovh.metrics.ovh.net/api/v1/query_range" and "https://warp10.gra1-ovh.metrics.ovh.net". Do not replace the "READ_TOKEN" key to use our emulated Prometheus backend.
+The back-end have to be declared in TSL configuration, for OVH the valid backends are: "https://p:READ_TOKEN@prometheus.gra1-ovh.metrics.ovh.net/api/v1/query_range" and "https://warp10.gra1-ovh.metrics.ovh.net". Do not replace the "READ_TOKEN" key to use our emulated Prometheus backend.
 
 #### Series meta operator
 
-The update metrics meta-data in TSQL you can use one of the following function:
+The update metrics meta-data in TSL you can use one of the following function:
 
 * The **addNamePrefix** to add a **prefix** to each metrics of a set. Use example: _.addNamePrefix("prefix")._
 * The **addNameSuffix** to add a **suffix** to each metrics of a set. Use example: _.addNameSuffix("suffix")._
@@ -690,32 +690,32 @@ None of those methods are currently available for **Prometheus**.
 
 #### Global series operator
 
-TSQL can also be used to store query result back on the backend. 
+TSL can also be used to store query result back on the backend. 
 This can be done using the **store** method. Store expects a token as unique parameter. Use example:  _.store("WRITE\_TOKEN")._
 
 > **store** is only avaible on a Warp 10 backend.
 
-To resets counters values the method **resets** can be applied in TSQL. Use example:  _.resets("host")._
+To resets counters values the method **resets** can be applied in TSL. Use example:  _.resets("host")._
 
-## TSQL outside OVH
+## TSL outside OVH
 
-TSQL goals are to simplify the process to query Time series data and to provide a unified language syntax to apply on different backend.
+TSL goals are to simplify the process to query Time series data and to provide a unified language syntax to apply on different backend.
 
-### TSQL on Warp 10
+### TSL on Warp 10
 
-The Warp 10 language, WarpScript, gives a lot of possibilities to query metrics data. However it's not the easiest language to learn. That's where TSQL can used to abstract the WarpSCript complexity but still use its power.
+The Warp 10 language, WarpScript, gives a lot of possibilities to query metrics data. However it's not the easiest language to learn. That's where TSL can used to abstract the WarpSCript complexity but still use its power.
 
-To execute TSQL on the Metrics platform using a Warp 10 backend you can use the **connect** method on top of your TSQL query.
+To execute TSL on the Metrics platform using a Warp 10 backend you can use the **connect** method on top of your TSL query.
 
 ```sql
 connect("https://warp10.gra1-ovh.metrics.ovh.net")
 ```
 
-### TSQL on Prometheus
+### TSL on Prometheus
 
-The Prometheus back-end is widely use, this is why TSQL queries can also be executed on Prometheus. 
+The Prometheus back-end is widely use, this is why TSL queries can also be executed on Prometheus. 
 
-To execute TSQL on the Metrics platform using an emulated Prometheus backend, you can use the **connect** method on top of your TSQL query.
+To execute TSL on the Metrics platform using an emulated Prometheus backend, you can use the **connect** method on top of your TSL query.
 
 ```sql
 connect("https://p:READ_TOKEN@prometheus.gra1-ovh.metrics.ovh.net/api/v1/query_range")
@@ -726,4 +726,4 @@ connect("https://p:READ_TOKEN@prometheus.gra1-ovh.metrics.ovh.net/api/v1/query_r
 - Documentation: [Guides](../product.en-gb.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~(~(planCode~'metrics-free-trial~configuration~(~(label~'region~values~(~'gra1)))~option~(~)~quantity~1~productId~'metrics))&paymentMeanRequired=0){.external}
+- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27metrics-free-trial~configuration~%28~%28label~%27region~values~%28~%27gra1%29%29%29~option~%28~%29~quantity~1~productId~%27metrics%29%29&paymentMeanRequired=0){.external}

@@ -1,8 +1,8 @@
 ---
-title: 'OVH Cloud Insights'
+title: OVH Cloud Insights
 slug: metrics-insight
-excerpt: 'Monitoring your OVH services with OVH Cloud Insights'
-section: 'Metrics services'
+excerpt: Monitoring your OVH services with OVH Cloud Insights
+section: Metrics services
 order: 3
 ---
 
@@ -145,11 +145,11 @@ First, create or open a dashboard, and add a new graph to it. Then, to edit this
 
 ![menu](images/grafana-edit.png){.thumbnail}
 
-In the `Metrics` panel, you will find the 'Metric' field, where you can choose what data to plot.
+In the `Metrics`{.action} panel, you will find the 'Metric' field, where you can choose what data to plot.
 
 ![menu](images/grafana-completion.png){.thumbnail}
 
-For example, if we select 'metrics.series', we can now refresh the graph and the data will be available straight away. If you want to update your graph's name, you can go it from the `General` tab. 
+For example, if we select 'metrics.series', we can now refresh the graph and the data will be available straight away. If you want to update your graph's name, you can go it from the `General`{.action} tab. 
 
 ![menu](images/grafana-final-result.png){.thumbnail}
 
@@ -159,4 +159,4 @@ For example, if we select 'metrics.series', we can now refresh the graph and the
 - Documentation: [Guides](../product.fr-fr.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~(~(planCode~'metrics-free-trial~configuration~(~(label~'region~values~(~'gra1)))~option~(~)~quantity~1~productId~'metrics))&paymentMeanRequired=0){.external}
+- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27metrics-free-trial~configuration~%28~%28label~%27region~values~%28~%27gra1%29%29%29~option~%28~%29~quantity~1~productId~%27metrics%29%29&paymentMeanRequired=0){.external}
