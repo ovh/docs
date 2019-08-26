@@ -50,7 +50,7 @@ There is also a limit of 10 open ports on every `LoadBalancer`, and these ports 
 
 Our Managed Kubernetes service is based on OpenStack, and your nodes and persistent volumes are built on it, using OVH Public Cloud. As such, you can see them in the *Servers* section of [OVH Cloud Manager](https://www.ovh.com/manager/cloud/). It doesn't mean that you can deal directly with these nodes and persistent volumes as other cloud instances. The *managed* part of OVH Managed Kubernetes means that we have configured those nodes and volumes to be part of our Managed Kubernetes. Please refrain from manipulating them from the *OVH Cloud Manager* (modifying ports left opened, renaming, resizing volumes...), as you could break them.
 
-## Ports
+## Ports and Private Networks
 
 In any case, there are some ports that you shouldn't block on your instances if you want to keep your OVH Managed Kubernetes service running:
 
@@ -58,3 +58,4 @@ In any case, there are some ports that you shouldn't block on your instances if 
 - Port 10250 (*kubelet*)
 - Ports from 30000 to 32767 (*NodePort* services port range)
 
+Privates networks  (vRack) aren't yet supported in OVH Managed Kubernetes. Please refrain from adding private networks to your working nodes instances.
