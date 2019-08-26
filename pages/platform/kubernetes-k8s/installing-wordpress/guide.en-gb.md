@@ -53,7 +53,7 @@ The chart is fully configurable, but here we are using the default configuration
 >
 
 ```
-helm install stable/wordpress --set allowOverrideNone=yes -n my-first-k8s-wordpress
+helm install stable/wordpress --set allowOverrideNone=true -n my-first-k8s-wordpress
 ```
 
 This will install the needed elements (a MariaDB pod for the database, a Wordpress pod for the webserver with the Worpdress PHP code),

@@ -99,7 +99,7 @@ According to the [official documentation](https://kubernetes.io/docs/concepts/se
 
 `Ingress` isn't a type of `Service`, but un object that acts as a [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy){.external}, and single entrypoint to your cluster that routes the request to the different services. The most basic `Ingress` is the [NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx){.external}, where the NGINX take the role of reverse proxy, but also functions as SSL.
 
-And Ingress is exposed to the outside of the cluster either via `ClusterIP` and Kubernetes proxy, `NodePort` or `LoadBalancer`, and it routes incoming traffic according to configured rules.
+An Ingress is exposed to the outside of the cluster either via `ClusterIP` and Kubernetes proxy, `NodePort` or `LoadBalancer`, and it routes incoming traffic according to configured rules.
 
 The main advance of using an `Ingress` behind a `LoadBalancer` is the cost: you can have lots of services behind a single `LoadBalancer`.
 
