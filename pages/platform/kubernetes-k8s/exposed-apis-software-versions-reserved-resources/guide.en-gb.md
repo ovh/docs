@@ -31,7 +31,7 @@ We will closely follow the Kubernetes releases, and new versions will be regular
 
 The OS and Docker demon version on your nodes will be regularly updated. Current versions are:
 
-- OS: CoreOS 2135.4.0
+- OS: CoreOS 2135.6.0
 - Docker: 18.06.3
 
 ## CNI
