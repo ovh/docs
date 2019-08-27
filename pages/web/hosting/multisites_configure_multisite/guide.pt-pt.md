@@ -31,7 +31,7 @@ Aparecerá uma tabela com todos os domínios adicionados ao seu alojamento web. 
 
 > [!primary]
 >
-> Se migrar o seu website e quiser evitar qualquer tipo de interrupção, consulte o passo [“3 - Publicação do site”](./#3-publicacao-do-site){.external}.
+> Se migrar o seu website e quiser evitar qualquer tipo de interrupção, consulte o passo [“3 - Publicação do site”](./#3-publicação-do-site){.external}.
 >
 
 ![multisite](images/access-multisite-ovh.png){.thumbnail}
@@ -42,11 +42,11 @@ Para adicionar um novo domínio ao alojamento web, clique no botão `Adicionar u
 
 - **Adicionar um domínio registado na OVH**:
 
-Apenas são apresentados os domínios que incluem a configuração OVH e que foram indicados como contactos para o seu ID de cliente. Selecione um da lista e clique no botão `Seguinte`{.action}. Em seguida, consulte o  passo [“2.1 - Adicionar um domínio registado na OVH”](./#2.1-Adicionar-um-domínio-registado-na-OVH)
+Apenas são apresentados os domínios que incluem a configuração OVH e que foram indicados como contactos para o seu ID de cliente. Selecione um da lista e clique no botão `Seguinte`{.action}. Em seguida, consulte o  passo [“2.1 - Adicionar um domínio registado na OVH”](./#21-adicionar-um-domínio-registado-na-OVH)
 
 - **Adicionar um domínio externo**:
 
-Se o domínio não aparecer na lista, isto significa que este é considerado externo (relativamente ao seu ID de cliente ou à OVH). Se este for o caso, selecione a opção `Adicionar um nome de domínio externo`{.action} e clique no botão `Seguinte`{.action}. De seguida, consulte o passo [“2.2 - Adicionar um domínio externo”](./#2.2-Adicionar-um-domínio-externo)
+Se o domínio não aparecer na lista, isto significa que este é considerado externo (relativamente ao seu ID de cliente ou à OVH). Se este for o caso, selecione a opção `Adicionar um nome de domínio externo`{.action} e clique no botão `Seguinte`{.action}. De seguida, consulte o passo [“2.2 - Adicionar um domínio externo”](./#22-adicionar-um-domínio-externo)
 
 ![multisite](images/add-multisite-step1.png){.thumbnail}
 
@@ -54,7 +54,7 @@ Se o domínio não aparecer na lista, isto significa que este é considerado ext
 
 > [!primary]
 >
-> Este passo só se aplica se selecionou "Adicionar um domínio registado na OVH". Para os domínios externos, consulte o passo [“2.2 - Adicionar um domínio externo”](./#2.2-Adicionar-um-domínio-externo).
+> Este passo só se aplica se selecionou "Adicionar um domínio registado na OVH". Para os domínios externos, consulte o passo [“2.2 - Adicionar um domínio externo”](./#22-Adicionar-um-domínio-externo).
 >
 
 Aqui, deverá personalizar a adição do domínio. Dependendo do seu serviço de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, alguns elementos propostos não poderão ser selecionados.
@@ -87,7 +87,7 @@ Depois de adicionar o domínio, consulte o passo [“3 - Publicação do site”
 
 > [!primary]
 >
-> Este passo só se aplica se selecionou "Adicionar um domínio externo" (que não esteja registado na OVH ou que não consiga gerir a partir da Área de Cliente OVH). Para um domínio registado na OVH, volte a consultar o passo [“2.1 - Adicionar um domínio registado na OVH”](https://docs.ovh.pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/#21-adicionar-um-dominio-registado-na-ovh){.external}.
+> Este passo só se aplica se selecionou "Adicionar um domínio externo" (que não esteja registado na OVH ou que não consiga gerir a partir da Área de Cliente OVH). Para um domínio registado na OVH, volte a consultar o passo [“2.1 - Adicionar um domínio registado na OVH”](./#21-adicionar-um-domínio-registado-na-OVH){.external}.
 >
 
 Aqui, deverá personalizar a adição do domínio. Tenha em atenção que algumas opções incluídas na sua oferta de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} não podem ser ativadas durante este processo. Deverá finalizar esta operação antes de as poder utilizar, alterando as definições dos parâmetros do multisite quando este for adicionado.
