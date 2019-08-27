@@ -266,7 +266,7 @@ curl  xxxxxxxxxx.lb.c1.gra.k8s.ovh.net
 
 And you should get the HTTP parameters of your request, including the right source IP in the `x-real-ip` header:
 
-
+```json
 {
   "path": "/",
   "headers": {
@@ -302,7 +302,7 @@ And you should get the HTTP parameters of your request, including the right sour
     "hostname": "echo-deployment-6b6fdc96cf-hwqw6"
   }
 }
-
+```
 
 ## What if I want to use another Ingress Controller
 
