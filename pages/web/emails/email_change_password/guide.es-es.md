@@ -83,7 +83,7 @@ A continuación, haga clic en `Siguiente`{.action}, compruebe que la informació
 
 Una vez que haya cambiado la contraseña, puede acceder a la dirección de correo electrónico utilizando el webmail o configurando la cuenta en un dispositivo:
 
-- **Utilizar el webmail**: Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/){.external} e introduzca su dirección de correo y la nueva contraseña. Si acaba de cambiar la contraseña y la autenticación falla, espere unos minutos y vuelva a intentar conectarse.
+- **Utilizar el webmail**: Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/){.external} e introduzca su dirección de correo y la nueva contraseña. Si acaba de cambiar la contraseña y la autenticación falla, espere unos minutos y vuelva a intentar conectarse. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde Outlook en la Web](../uso-outlook-en-la-web/){.external}.
 
 - **Utilizar un cliente de correo compatible**: Introduzca la nueva contraseña en todos los dispositivos en los que haya configurado la dirección de correo electrónico. Es posible que aparezca una ventana de forma automática en el dispositivo solicitándole que introduzca la nueva contraseña. Si no es el caso, puede consultar nuestras [guías de configuración](../) o contactar con el editor del programa o la aplicación que utilice, ya que el procedimiento es distinto en todos ellos.
 
