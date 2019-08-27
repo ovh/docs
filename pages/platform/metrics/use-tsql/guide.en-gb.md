@@ -1,6 +1,6 @@
 ---
 title: Use TSL
-slug: protocol-tsl
+slug: protocol-TSL
 excerpt: TSL overview
 section: Protocol
 order: 2
@@ -723,7 +723,7 @@ connect("https://p:READ_TOKEN@prometheus.gra1-ovh.metrics.ovh.net/api/v1/query_r
 
 ## Go further
 
-- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Documentation: [Guides](../product.en-gb.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27metrics-free-trial~configuration~%28~%28label~%27region~values~%28~%27gra1%29%29%29~option~%28~%29~quantity~1~productId~%27metrics%29%29&paymentMeanRequired=0){.external}

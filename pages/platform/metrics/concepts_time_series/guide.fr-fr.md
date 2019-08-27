@@ -6,16 +6,19 @@ section: Concepts
 order: 1
 ---
 
-**Last updated 15th May, 2018**
+**Last updated 23th August, 2019**
 
+## Objective
 
-## What are Time series?
+Time Series are everywhere, this page explains what can be defined as Time series and how they can be modelised on a quick example.
 
+## Requirements
 
-> [!primary]
->
-> Simply speaking : A Time Series is a sequence of measurements over time.
-> 
+- No specific requirement
+
+## Instructions
+
+**Simply speaking : A Time Series is a sequence of measurements over time.**
 
 We call a Time Series, a **sequence** of evolving values over time. These values, named **data points** or **measurements**, are added as they come, with a stable frequency or not.
 
@@ -30,7 +33,7 @@ To ease readability, let's visualise with colors instead of degrees values. We c
 Like in this small example, a graph with a value as an axis, and a time as the second one is just a Time Series visualisation.
 
 
-## Where can we find Time series?
+### Where can we find Time series?
 
 **Time Series are everywhere**, here are just few examples:
 
@@ -43,7 +46,8 @@ Like in this small example, a graph with a value as an axis, and a time as the s
 - The heart rate of a person measured through a smartwatch
 
 
-## Time Series data model
+### Time Series data model
+
 In the draw above, we have considered a simple series named **temperature**, but we tend to qualify more our data. There are situations where temperature will not be enough to qualify your series. In a home you could measure temperature at different places like :
 
 - outside
@@ -68,14 +72,14 @@ Given the many aspects they can have, the storage, retrieval and analysis of tim
 
 We can find here and there many Time Series Databases that claim to solve the same storage system but most of them fail in their mission to provide you the right tools and protocol to let you enjoy your data.
 
+### Time Series Values
 
-## Time Series Values
 Once you have define the good Time Series model for your own need (in the case of monitoring, most of the time your collecting software will choose it for you), you will push data points or measurements.
 
 These data points can be of **multiple types** (Long, Double, String, Boolean)  given the protocol you use. You can refer to the matrix compatibility to know which one fits you best.
 
+### Time Series Analysis
 
-## Time Series Analysis
 While a common use case for Time Series is to plot them as a graph, using line charts or sparklines, many customers will need to perform custom analysis on their Time Series for domains like :
 
 - Statistics, TopN
@@ -104,5 +108,14 @@ In order to acheive these goals, many **algorithms** can be used. Here is a shor
 |Variance & Standard Deviations|Speak for themselves|
 
 
-## Time Series Predicton or Forecasting
+### Time Series Predicton or Forecasting
+
 You can use Time Series to predict the future. By learning from an exsting signal, you can forecast this signal by predicting future points. Using different techniques, like AutoRegressive Integrated Moving Average (ARIMA) for linear models or others (or a combination) more adapted for multivariate Time Series.
+
+## Go further
+
+- Getting Started: [Quick Start](../metrics_opentsdb/guide.fr-fr.md){.ref}
+- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
+- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27metrics-free-trial~configuration~%28~%28label~%27region~values~%28~%27gra1%29%29%29~option~%28~%29~quantity~1~productId~%27metrics%29%29&paymentMeanRequired=0){.external}
