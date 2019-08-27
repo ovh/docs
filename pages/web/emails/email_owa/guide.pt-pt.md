@@ -24,7 +24,7 @@ Os endereços de e-mail da oferta MX Plan permitem-lhe enviar e receber e-mails 
 Esta documentação permite-lhe melhor compreender determinadas operações comuns que podem ser realizadas a partir do webmail OWA. Poderá encontrar algumas ações a seguir:
 
 1. [Aceder ao webmail OWA](./#1-aceder-ao-webmail-owa).
-2. [Entender a distribuição do webmail](./#2-entender-a-distribuicao-do-webmail).
+2. [Entender a distribuição do webmail](./#2-compreender-a-distribuicao-do-webmail).
 3. [Consultar os e-mails](./#3-consultar-os-e-mails).
 4. [Enviar ou responder a um e-mail](./#4-enviar-ou-responder-a-um-e-mail).
 5. [Organizar a caixa de entrada](./#5-organizar-a-caixa-de-entrada).
@@ -207,4 +207,4 @@ Pode consultar todas as opções disponíveis no menu que aparece na parte later
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
