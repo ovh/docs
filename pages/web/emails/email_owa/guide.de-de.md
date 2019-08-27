@@ -24,7 +24,7 @@ Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät
 In dieser Anleitung erhalten Sie ein besseres Verständnis dafür, wie Sie gängige Aufgaben mit OWA Webmail ausführen. Sie können die Anleitung komplett lesen oder direkt zu den für Sie interessanten Abschnitten springen.
 
 1. [Auf OWA Webmail einloggen](./#1-auf-owa-webmail-einloggen)
-2. [Die Webmail-Anzeige verstehen](./#2-webmail-anzeige-verstehen)
+2. [Die Webmail-Anzeige verstehen](https://docs.ovh.com/de/emails/verwendung-owa/#2-die-webmail-anzeige-verstehen)
 3. [E-Mails einsehen](./#3-e-mails-einsehen)
 4. [E-Mails senden und beantworten](./#4-e-mails-senden-und-beantworten)
 5. [Posteingang organisieren](./#5-posteingang-organisieren)

@@ -23,15 +23,15 @@ Las direcciones de correo de la solución MX Plan permiten enviar y recibir mens
 
 El webmail Outlook en la Web permite realizar diversas operaciones en una dirección de correo electrónico. Puede leer la guía completa o ir directamente a la que desee consultar mediante los siguientes enlaces:
 
-1. [Conectarse a Outlook en la Web](./#1-conectarse-al-webmail-owa)
+1. [Conectarse a Outlook en la Web](./#1-conectarse-a-outlook-en-la-web)
 2. [Encontrar la información en la interfaz del webmail](./#2-encontrar-la-informacion-en-la-interfaz-del-webmail)
 3. [Consultar los mensajes de correo](./#3-consultar-los-mensajes-de-correo)
 4. [Enviar o responder a un mensaje de correo](./#4-enviar-o-responder-a-un-mensaje-de-correo)
 5. [Organizar la bandeja de entrada](./#5-organizar-la-bandeja-de-entrada)
 6. [Gestionar los contactos](./#6-gestionar-los-contactos_1)
-7. [Cambiar la contraseña](./#7-cambiar-la-contraseña)
-8. [Añadir una respuesta automática (contestador)](./#8-añadir-una-respuesta-automatica)
-9. [Añadir una firma](./#9-añadir-una-firma)
+7. [Cambiar la contraseña](./#7-cambiar-la-contrasena)
+8. [Añadir una respuesta automática (contestador)](./#8-anadir-una-respuesta-automatica)
+9. [Añadir una firma](./#9-anadir-una-firma)
 10. [Acceder a las opciones](./#10-acceder-a-las-opciones)
 
 > [!primary]
