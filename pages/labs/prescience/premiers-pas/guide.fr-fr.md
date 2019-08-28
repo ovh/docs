@@ -16,7 +16,7 @@ La plateforme Prescience est un outil d'apprentissage automatique. Ce guide vous
 
 ## À qui s'adresse ce guide ?
 
-Ce guide s'adresse en priorité à des personnes déjà familières avec les concepts de base du machine learning. Si vous ne possédez aucune connaissance dans ce domaine, nous vous recommandons de commencer par lire d'autres guides en rapport avec ces notions.
+Ce guide s'adresse en priorité à des utilisateurs déjà familiers avec les concepts de base du machine learning. Si vous ne possédez aucune connaissance dans ce domaine, nous vous recommandons de commencer par lire d'autres guides en rapport avec ces notions.
 
 ## Introduction
 
