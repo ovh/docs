@@ -54,7 +54,8 @@ Our Managed Kubernetes service is based on OpenStack, and your nodes and persist
 
 In any case, there are some ports that you shouldn't block on your instances if you want to keep your OVH Managed Kubernetes service running:
 
-- Port 22 (*ssh*)
-- Port 10250 (*kubelet*)
-- Ports from 30000 to 32767 (*NodePort* services port range)
+- TCP Port 22 (*ssh*)
+- TCP Port 10250 (*kubelet*)
+- TCP Ports from 30000 to 32767 (*NodePort* services port range)
+- UDP Port 8472 (*flannel*)
 
