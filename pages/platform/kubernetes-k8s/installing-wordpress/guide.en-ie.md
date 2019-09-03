@@ -5,7 +5,7 @@ excerpt: 'Find out how to install WordPress on OVH Managed Kubernetes'
 section: Tutorials
 ---
 
-**Last updated 1<sup>st</sup> July, 2019.**
+**Last updated 3<sup>rd</sup> September, 2019.**
 
 <style>
  pre {
@@ -60,7 +60,7 @@ This will install the needed elements (a MariaDB pod for the database, a Wordpre
 allocate the persistent volumes and initialize the services. And at the end, it will give you the connection parameters for your new Wordpress:
 
 
-<pre class="console"><code>$ helm install stable/wordpress --set allowOverrideNone=yes -n my-first-k8s-wordpress
+<pre class="console"><code>$ helm install stable/wordpress --set allowOverrideNone=true -n my-first-k8s-wordpress
 NAME:   my-first-k8s-wordpress
 LAST DEPLOYED: Wed Feb  6 22:36:51 2019
 NAMESPACE: default
