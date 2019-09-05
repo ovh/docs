@@ -161,7 +161,7 @@ database__connection__database=demononghost
 
 ### 6. Instalar Ghost
 
-En primer lugar, sitúese en la carpeta raíz que haya indicado en el [apartado 2](./#2-asociar-node.js-a-un-multisitio) de este tutorial. En nuestro caso, se trata del directorio «**ghost**».
+En primer lugar, sitúese en la carpeta raíz que haya indicado en el [apartado 2](./##2-asociar-nodejs-a-un-multisitio) de este tutorial. En nuestro caso, se trata del directorio «**ghost**».
 
 ```sh
 demonon@cloudweb-ssh:~ $ ls -l
@@ -237,7 +237,7 @@ Estando situado en el directorio **~/ghost**, cree un archivo **config.productio
 }
 ```
 
-A continuación, haga que el archivo **server.js** (indicado en el [apartado 1 de este tutorial](./#1-activar-nodejs-como-motor-de-ejecucion)) apunte hacia el archivo **index.js** de Ghost:
+A continuación, haga que el archivo **server.js** (indicado en el [apartado 1 de este tutorial](./#1-activar-el-motor-de-ejecucion-nodejs)) apunte hacia el archivo **index.js** de Ghost:
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ unlink  server.js
