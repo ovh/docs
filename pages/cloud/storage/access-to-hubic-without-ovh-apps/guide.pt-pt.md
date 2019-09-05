@@ -160,6 +160,7 @@ Depois de inserir este código no Mountain Duck, o seu espaço hubiC será acess
 
 Se utilizar um computador com uma distribuição GNU/Linux (neste exemplo, Debian), pode aceder ao seu espaço hubiC através de um ponto de montagem SVFS (*Swift Virtual File System*). Para obter mais informações sobre SVFS, consulte o [repositório de projetos GitHub](https://github.com/ovh/svfs).
 
+
 ### 1 - Instalar o SVFS
 
 Estabeleça uma ligação em SSH e obtenha o pacote SVFS compatível com hubiC através do seguinte comando:
