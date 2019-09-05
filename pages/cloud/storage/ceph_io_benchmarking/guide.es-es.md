@@ -1,21 +1,20 @@
 ---
-title: Benchmark del rendimiento de Cloud Disk Array (EN)
-slug: ceph/benchmark-io
-excerpt: Evaluating performance of Cloud Disk Array
-section: Cloud Disk Array
+title: 'Probar el rendimiento de Cloud Disk Array'
+slug: benchmark-io
+excerpt: 'Cómo hacer un benchmark del rendimiento de la solución de almacenamiento Cloud Disk Array'
+section: 'Cloud Disk Array'
 ---
 
+## Requisitos
+Antes de comenzar el benchmark, debe estar familiarizado con su entorno. Preste atención a los pequeños detalles, ya que estos pueden hacer que la prueba no sea válida. (por ejemplo, no tiene mucho sentido probar el rendimiento de Cloud Disk Array desde un datacenter diferente, ya que, aunque puede hacerlo, la latencia entre datacenters es demasiado elevada para realizar un benchmark).
 
-## Before you start
-Before starting benchmarks get familiar with your environment. Even small missed detail can make your benchmark invalid. For example, there is no point in testing performance of Cloud Disk Array from different DC. While it will be working, latencies between DC are too high for such setup.
+También es importante seleccionar las métricas adecuadas. Si tiene previsto usar Cloud Disk Array para alojar bases de datos, es preferible conocer las IOPS que ofrece el almacenamiento utilizando bloques de 8 KB que obtener la tasa de transferencia usando bloques de mayor tamaño. En cambio, si quiere utilizar Hadoop, las necesidades en materia de almacenamiento serán totalmente diferentes.
 
-Selecting proper metrics for your use case is also very important. If you are planning to run a database, total available IOPS of 8KiB block size will probably be more important than total bandwidth with big IOs. If you plan to use Hadoop then storage requirements will be totally different.
-
-In our case we try to find balance between different workloads. We use *fio* -- very popular benchmarking tool. It provides a lot of tunable options to simulate desired workload and gives detailed statistics about storage behaviour under load. It's also available on a wide range of operating systems and is free to use.
+En esta guía, intentaremos buscar un equilibrio entre las diferentes cargas de trabajo. Vamos a utilizar **Fio**, una conocida herramienta de benchmarking que ofrece diversas opciones configurables para simular la carga de trabajo deseada y proporciona estadísticas detalladas sobre el comportamiento del almacenamiento con carga. Esta herramienta está disponible de forma gratuita en numerosos sistemas operativos.
 
 
-## First benchmark
-Make sure that client used for testing has access to your Cloud Disk Array. You can verify that by running:
+## Benchmark preliminar
+Asegúrese de que el cliente utilizado en el test tiene acceso al Cloud Disk Array. Para comprobarlo, ejecute el siguiente comando:
 
 
 ```bash
@@ -30,20 +29,22 @@ cluster 3eb69d65-fec7-4e05-91c0-7fe07b6fed1a
               64 active+clean
 ```
 
-If you can see output similar to above then you can start preparing image for testing:
+Si obtiene un resultado similar al anterior, ya puede preparar la imagen para el test. Para ello, utilice el siguiente comando:
 
 
 ```bash
 rbd -p rbd create --size 1024 --image-format 2 test-image
 ```
 
-You can can test performance in three different situations:
+Es posible probar el rendimiento de tres formas distintas:
 
-- directly use RBD
-- map image to */dev/rbd** device
-- run benchmark inside VM running on RBD image
+- utilizando directamente RBD;
+- mapeando la imagen hacia el periférico **/dev/rbd**;
+- realizando un benchmark en una máquina virtual con una imagen RBD.
 
-Using first method run *fio* as in example below:
+En esta guía vamos a emplear el primer método. 
+
+Ejecute Fio como en el siguiente ejemplo:
 
 
 ```bash
@@ -52,19 +53,19 @@ fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
     --runtime=600 --time_based --group_reporting
 ```
 
-When doing benchmark on */dev/rbd** device or from inside VM there are few factors than can affect performance:
+Al realizar un benchmark en un periférico **/dev/rbd** o en una máquina virtual, hay factores que pueden afectar al rendimiento:
 
-- operating system cache -- it can make your system look like super--fast for a while and then slowing down -- make sure to use direct IO to avoid this
-- support for FLUSH/FUA requests in storage stack used for tests
-- hypervisor/driver (virtio/scsi) used for virtualization
-- "warm up" your storage before starting benchmark or run benchmark multiple times
-
-
-## Real benchmark
-Depending on the size of your cluster you may want to test bigger number of images or using different parameters. Usually you might want to change number of images, their size, queue depth, number of fio workers, workload type (read/write/random/sequential), test duration, etc.
+- la caché del sistema operativo, que puede hacer que el sistema parezca muy rápido durante un tiempo y luego se ralentice (para evitarlo, asegúrese de utilizar I/O directas);
+- el procesamiento de las solicitudes FLUSH/FUA en la pila de almacenamiento utilizada en los tests;
+- el hipervisor o driver (virtio/SCSI) utilizados para la virtualización;
+- la temperatura del almacenamiento (es recomendable «calentarlo» antes de ejecutar el benchmark, o bien ejecutar el benchmark varias veces).
 
 
-### Mixed random read/write with 4k block size
+## Benchmark real
+Según el tamaño del cluster, es posible realizar el benchmark con un mayor número de imágenes o utilizar otros parámetros. En general, puede configurar el número de imágenes, su tamaño, la longitud de la cola de espera, el número de workers Fio, el tipo de carga de trabajo (lectura o escritura, aleatoria o secuencial), la duración del test...
+
+
+### Lectura/escritura aleatoria mixta con un tamaño de bloque de 4K
 
 ```bash
 fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
@@ -73,7 +74,7 @@ fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
 ```
 
 
-### Sequential reads with 1M block size
+### Lecturas secuenciales con un tamaño de bloque de 1M
 
 ```bash
 fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
@@ -82,8 +83,8 @@ fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
 ```
 
 
-### Random writes with 4k block size
-This test will spawn 4 *fio* processess, each writing to a separate image using two threads.
+### Escrituras aleatorias con un tamaño de bloque de 4K
+Este test genera cuatro procesos Fio, cada uno de los cuales escribe en una imagen distinta utilizando dos threads.
 
 
 ```bash
@@ -99,7 +100,7 @@ fio --runtime=600 --time_based --group_reporting \
 ```
 
 
-### Mixed read/write with different block sizes
+### Lectura/escritura mixta con bloques de distinto tamaño
 
 ```bash
 fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
@@ -110,5 +111,5 @@ fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
 ```
 
 
-## How we measure Cloud Disk Array performance
-To measure Cloud Disk Array performance we are running test on a 32 images, each of 32GiB size, running for a few hours. Using big data set during test ensures us that performance will stay on a specified level.
+## Cómo medir el rendimiento de Cloud Disk Array
+En este caso, para medir el rendimiento de Cloud Disk Array, hemos realizado tests en 32 imágenes de 32 GB cada una durante varias horas. Utilizar conjuntos de datos de big data para los tests permite asegurar que el rendimiento se mantendrá a un nivel determinado.
