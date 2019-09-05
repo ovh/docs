@@ -16,7 +16,6 @@ With Real Time Monitoring (RTM), you can partially monitor your server and its a
 ## Requirements
 
 - access via SSH (or via your graphical user interface) on your Linux server (root access)
-- remote desktop access to your Windows server (*administrator* access)
 - access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
@@ -169,7 +168,7 @@ curl  https://last-public-ovh-rtm.snap.mirrors.ovh.net/ovh_rtm.pub | apt-key add
 curl  http://last.public.ovh.metrics.snap.mirrors.ovh.net/pub.key | apt-key add -
 ```
 
-Install the RTM packets:
+Install the RTM packages:
 
 ```sh
 apt-get update
@@ -188,6 +187,7 @@ name=OVH RTM RHEL/ CentOS $releasever - $basearch
 baseurl=http://last.public.ovh.rtm.snap.mirrors.ovh.net/centos/$releasever/$basearch/Packages/
 enabled=1
 repo_gpgcheck=1
+gpgcheck=0
 gpgkey=http://last.public.ovh.rtm.snap.mirrors.ovh.net/ovh_rtm.pub
 
 [metrics]
@@ -195,10 +195,11 @@ name=OVH METRICS RHEL/ CentOS $releasever - $basearch
 baseurl=http://last.public.ovh.metrics.snap.mirrors.ovh.net/centos/$releasever/$basearch/Packages/
 enabled=1
 repo_gpgcheck=1
+gpgcheck=0
 gpgkey=http://last.public.ovh.metrics.snap.mirrors.ovh.net/pub.key
 ```
 
-Install the RTM packets:
+Install the RTM packages:
 
 ```sh
 yum update
@@ -226,7 +227,7 @@ Metrics: {
   enabled: yes
 }
 ```
-Install the RTM packets:
+Install the RTM packages:
 
 ```sh
 pkg install -y noderig beamium ovh-rtm-binaries
@@ -242,6 +243,24 @@ service beamium start
 ### Install RTM on Windows.
 
 The RTM packet is not yet compatible with Windows (although it will be compatible soon).
+
+### Uninstall RTMv1
+
+The legacy monitoring tool is automatically removed from your system if you install this version.
+
+#### Manual uninstall (legacy monitoring tool)
+
+In order to remove the legacy monitoring tool, please proceed theses steps:
+
+- Remove directory "/usr/local/rtm":
+```sh
+rm -Rf /usr/local/rtm
+```
+
+- Remove crontab :
+Edit the file /etc/crontab and remove the line with "rtm"
+* it looks like */1 * * * * root /usr/local/rtm/bin/rtm XX > /dev/null 2> /dev/null
+
 
 ## Go further
 
