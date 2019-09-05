@@ -20,7 +20,7 @@ La zona Domain Name System (DNS) contiene la configurazione di un dominio ed è 
 - Utilizzare i server DNS di OVH per la configurazione del dominio in questione
 - Il DynHost da creare non deve essere già presente nella zona DNS OVH del dominio come record di tipo A
 
-> \[!warning]
+> [!warning]
 >
 > - Se il dominio non utilizza i server DNS di OVH, è necessario rivolgersi al provider che ne gestisce la configurazione per conoscere la procedura da seguire.
 > 
@@ -33,8 +33,6 @@ La zona Domain Name System (DNS) contiene la configurazione di un dominio ed è 
 
 Il primo step consiste nel creare un utente Dynhost: questa operazione permetterà infatti di effettuare l’aggiornamento del record DNS dinamico. Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Domini`{.action} della colonna a sinistra. e clicca sulla scheda `DynHost`{.action}.
 
-![dynhost![
-
 Clicca sul pulsante `Gestisci gli accessi`{.action} e poi su `Crea un identificativo`{.action}. Nella nuova finestra, inserisci le informazioni richieste:
 
 |Campo|Descrizione|
@@ -44,8 +42,6 @@ Clicca sul pulsante `Gestisci gli accessi`{.action} e poi su `Crea un identifica
 |Password|Associa una password all’identificativo DynHost e confermala.|
 
 Dopo aver completato tutti i campi, clicca su `Conferma`{.action}. L’identificativo compare nella tabella della pagina corrente. Ripeti questa operazione per ogni identificativo DynHost da aggiungere.
-
-![dynhost![
 
 ### Step 2: crea il record DNS dinamico (DynHost)
 
@@ -60,13 +56,11 @@ Una volta che tutto è pronto per creare il record, torna alla pagina principale
 
 Dopo aver completato tutti i campi, clicca su `Conferma`{.action}. Il record DynHost dovrebbe comparire nella tabella della pagina corrente.  Ripeti questa operazione per ogni record DynHost che da aggiungere.
 
-![dynhost![
-
 ### Step 3: automatizza la modifica del DynHost
 
 A questo punto non resta che rendere automatico l’aggiornamento del record DNS, in modo che possa essere eseguito dinamicamente. Per effettuare questa operazione è necessario utilizzare un client che verificherà regolarmente se l’indirizzo IP di destinazione è cambiato e ne eseguirà l’aggiornamento.
 
-> \[!warning]
+> [!warning]
 >
 > OVH non si occupa dell’installazione e configurazione del client, che quindi di responsabilità dell’utente. In questa guida puoi trovare informazioni utili per effettuare l’operazione ma, in caso di necessità, ti consigliamo di rivolgerti a uno specialista del settore. OVH non potrà fornirti alcuna assistenza. 
 >
@@ -84,7 +78,6 @@ In base al client utilizzato è possibile che, oltre ai dati relativi all’uten
 
 Per assicurarti che l’indirizzo IP di destinazione sia stato aggiornato correttamente, accedi allo Spazio Cliente OVH: l’informazione è disponibile nella scheda `DynHost`{.action}, nella colonna `Destinazione`{.action}.
 
-![dynhost![
 
 ## Per saperne di più
 
