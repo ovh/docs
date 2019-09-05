@@ -11,12 +11,11 @@ section: 'Diagnostic and rescue mode'
 
 With Real Time Monitoring (RTM), you can partially monitor your server and its activity. In the OVH Control Panel, you will find information on the CPU (Central Processing Unit), RAM (Random Access Memory), open ports, etc. To view this information, you need to install the RTM package.
 
-**This guide will explain how to install RTM on Linux or Windows.**
+**This guide will explain how to install RTM on Linux.**
 
 ## Requirements
 
 - You need to be logged in via SSH (or your graphical user interface) on your Linux server (*root* access).
-- You need to be logged in to the remote desktop on your Windows server (*administrator* access).
 - You need to be logged in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
@@ -127,9 +126,15 @@ Once you have logged in to your server via SSH, simply run the following command
 wget -qO - https://last-public-ovh-infra-yak.snap.mirrors.ovh.net/yak/archives/apply.sh | OVH_PUPPET_MANIFEST=distribyak/catalog/master/puppet/manifests/common/rtmv2.pp bash
 ```
 
+> [!primary]
+> 
+> This installation may not work on your distribution, in this case, please try to proceed to a manual installation described above.
+>
+
 ### Debian/Ubuntu manual installation
 
 Add RTM and metrics repository for Debian:
+where `<distribution codename>` is your distribution name (eg: 'jessie')
 
 ```sh
 vi /etc/apt/sources.list.d/rtm.list
@@ -140,7 +145,7 @@ deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/debian <distribution codenam
 ```
 
 Add RTM and metrics repository for Ubuntu:
-
+where `<distribution codename>` is your distribution name (eg: 'xenial')
 ```sh
 vi /etc/apt/sources.list.d/rtm.list
 # metrics repo
@@ -163,7 +168,7 @@ apt-get update
 apt-get install ovh-rtm-metrics-toolkit
 ```
 
-#### CentOS
+### CentOS
 
 Add RTM and metrics repository for CentOS:
 
@@ -175,6 +180,7 @@ name=OVH RTM RHEL/ CentOS $releasever - $basearch
 baseurl=http://last.public.ovh.rtm.snap.mirrors.ovh.net/centos/$releasever/$basearch/Packages/
 enabled=1
 repo_gpgcheck=1
+gpgcheck=0
 gpgkey=http://last.public.ovh.rtm.snap.mirrors.ovh.net/ovh_rtm.pub
 
 [metrics]
@@ -182,6 +188,7 @@ name=OVH METRICS RHEL/ CentOS $releasever - $basearch
 baseurl=http://last.public.ovh.metrics.snap.mirrors.ovh.net/centos/$releasever/$basearch/Packages/
 enabled=1
 repo_gpgcheck=1
+gpgcheck=0
 gpgkey=http://last.public.ovh.metrics.snap.mirrors.ovh.net/pub.key
 ```
 
@@ -193,16 +200,64 @@ yum update
 yum install ovh-rtm-metrics-toolkit
 ```
 
-### Installing RTM on Windows
+### FreeBSD
 
-Once you are logged in to the remote desktop, take the following steps:
+Add RTM and metrics repository for FreeBSD:
 
-- Install ActivePerl if you have never installed RTM before. You can download it here: <http://www.activestate.com/activeperl/>.
-- Download and install the latest version of RTM here: <ftp://ftp.ovh.net/made-in-ovh/rtm/windows/>.
-- Right-click on the file and then click `Run as administrator`{.action}.
+```sh
+mkdir -p /usr/local/etc/pkg/repos 
+
+vi /usr/local/etc/pkg/repos/OVH.conf
+
+# OVH mirror
+RTM: {
+  url: "http://last.public.ovh.rtm.snap.mirrors.ovh.net/FreeBSD-pkg/${ABI}/latest",
+  mirror_type: "none",
+  enabled: yes
+}
+Metrics: {
+  url: "http://last-public-ovh-metrics.snap.mirrors.ovh.net/FreeBSD-pkg/${ABI}/latest",
+  mirror_type: "none",
+  enabled: yes
+}
+```
+Install RTM client :
+
+```sh
+pkg install -y noderig beamium ovh-rtm-binaries
+pkg install -y ovh-rtm-metrics-toolkit
+```
+Start services :
+```sh
+service noderig start
+service beamium start
+```
+
+### Install RTM on Windows
+
+The RTM client is not yet compatible on windows. (work in progress)
+
+### Uninstall RTMv1
+
+The legacy monitoring tool is automatically removed from your system if you install this version.
+
+#### Manual uninstall (legacy monitoring tool)
+
+In order to remove the legacy monitoring tool, please proceed theses steps:
+
+- Remove directory "/usr/local/rtm":
+```sh
+rm -Rf /usr/local/rtm
+```
+
+- Remove crontab :
+Edit the file /etc/crontab and remove the line with "rtm"
+* it looks like */1 * * * * root /usr/local/rtm/bin/rtm XX > /dev/null 2> /dev/null
 
 ## Go further
 
-[IP addresses for OVH monitoring](https://docs.ovh.com/ie/en/dedicated/monitoring-ip-ovh/){.external}.
+[What are the IP addresses of the OVH monitoring?](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/){.external}
+
+[Visualize your data](https://docs.ovh.com/gb/en/metrics/usecase-visualize/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.
