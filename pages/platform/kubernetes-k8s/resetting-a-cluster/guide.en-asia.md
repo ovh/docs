@@ -5,7 +5,7 @@ slug: resetting-a-cluster
 section: 'User guides'
 ---
 
-**Last updated 25th February, 2019**.
+**Last updated September 5th, 2019.**
 
 <style>
  pre {
@@ -32,7 +32,7 @@ section: 'User guides'
 
 OVH Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. 
 
-**Fid out how to reset an OVH Managed Kubernetes cluster.**
+**Find out how to reset an OVH Managed Kubernetes cluster.**
 
 
 ## Requirements
