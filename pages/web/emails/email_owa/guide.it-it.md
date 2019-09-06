@@ -205,6 +205,7 @@ Le opzioni disponibili per il tuo account sono elencate nella colonna a sinistra
 
 ![Outlook on the web](images/use-owa-step23.png){.thumbnail}
 
+
 ## Per saperne di più
 
 Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
