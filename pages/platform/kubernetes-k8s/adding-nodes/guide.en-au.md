@@ -56,7 +56,7 @@ In the *Nodes* tab  you can inspect the state of your nodes. The node you have j
 
 ## Go further
 
-To have an overview of OVH Managed Kubernetes service, you can go to the [OVH Managed Kubernetes site](https://labs.ovh.com/kubernetes-k8s).
+To have an overview of OVH Managed Kubernetes service, you can go to the [OVH Managed Kubernetes site](https://www.ovh.com/public-cloud/kubernetes/).
 
 Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring_default_settings_for_kubectl/configuring_default_settings_for_kubectl/) and [deploying an application](../deploying_an_application/deploying_an_application/) .
 
