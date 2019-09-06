@@ -78,8 +78,8 @@ Depending on the chosen kind of reset, the process can take several minutes. Dur
 
 ## Go further
 
-To have an overview of OVH Managed Kubernetes service, you can go to the [OVH Managed Kubernetes site](https://labs.ovh.com/kubernetes-k8s).
+To have an overview of OVH Managed Kubernetes service, you can go to the [OVH Managed Kubernetes site](https://www.ovh.com/public-cloud/kubernetes/).
 
-Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our  [tutorials]() .
+Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our  [tutorials](../) .
 
 Join our community of users on https://community.ovh.com/en/.

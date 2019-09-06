@@ -42,13 +42,13 @@ On OVH Managed Kubernetes we have deployed a *Upgrade to the next minor version 
 
 ## Important information on the upgrading process
 
-Before you launching the upgrade, please back up your cluster’s configuration, and check that your worker tools are compatible with this new version.
+Before you launch the upgrade, please back up your cluster’s configuration, and check that your worker tools are compatible with this new version.
 
 The upgrading process will try to do a [rolling upgrade](https://en.wikipedia.org/wiki/Rolling_release). Please ensure that your cluster includes enough worker nodes to allow for a rolling upgrade. 
 
 To minimise downtime for your pods and your overall service, we will drain each of your nodes, only moving on to the next node when the current one is functional (i.e. when the status changes to ‘Ready’). Your admin components and server API will also be updated.
 
- This operation usually takes around 10 minutes, depending on your cluster type and size.
+ This operation usually takes around 5 minutes per node in your cluster, but that can vary depending on your cluster type and size.
 
 Once the update has been performed, you cannot revert to the previous version.
 
@@ -74,17 +74,17 @@ Once the update has been performed, you cannot revert to the previous version.
 
     ![Click on Confirm](images/upgrading-kubernetes-version-003.jpg){.thumbnail}
 
-### Step 2 - Wait for the resetting to end 
+### Step 2 - Wait for the upgrading to end 
 
-The upgrading process can take several minutes. During that time, a message on the manager warns you that the cluster is being upgraded:
+The upgrading process can take several minutes ( around 5 minutes per node in your cluster). During that time, a message on the manager warns you that the cluster is being upgraded:
 
   ![Wait for the end of the upgrade](images/upgrading-kubernetes-version-004.jpg){.thumbnail}
 
 
 ## Go further
 
-To have an overview of OVH Managed Kubernetes service, you can go to the [OVH Managed Kubernetes site](https://labs.ovh.com/kubernetes-k8s).
+To have an overview of OVH Managed Kubernetes service, you can go to the [OVH Managed Kubernetes site](https://www.ovh.com/public-cloud/kubernetes/).
 
-Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our  [tutorials]() .
+Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our  [tutorials](../) .
 
 Join our community of users on https://community.ovh.com/en/.
