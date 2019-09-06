@@ -35,9 +35,9 @@ Les VRA sont ainsi déployés sur chaque hyperviseur et vont consommer des resso
 
 #### Sites
 
-La réplication des données se fait entre deux (2) sites appairer, ainsi aux VRA de chaque côté peuvent établir leur flux de réplication.
+La réplication des données se fait entre deux (2) sites appairés, ainsi aux VRA de chaque côté peuvent établir leur flux de réplication.
 
-Par défaut les flux de réplication Zerto ne sont pas chiffré et la sécurité étant une priorité pour OVH, nous mettons en place entre les deux (2) sites un tunnel chiffré (via IPSec) au moyen d'une applicance réseau appelée L2VPN.
+Par défaut les flux de réplication Zerto ne sont pas chiffrés et la sécurité étant une priorité pour OVH, nous mettons en place entre les deux (2) sites un tunnel chiffré (via IPSec) au moyen d'une applicance réseau appelée L2VPN.
 
 #### Groupe de réplication (VPG)
 
