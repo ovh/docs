@@ -16,73 +16,67 @@ Ce guide a pour objectif d’expliquer les concepts et les détails de la mise e
 ## Prerequisites 
 
 * Having 2 Private Cloud Platforms [Private Cloud](https://www.ovh.ie/sddc/){.external} on 2 different datacenters
-* In each Datacenter, a free public IP
+* In each Datacenter, a free public IP must be available
 
 ###  Zerto Virtual Replication Concepts
 
-Zerto Virtual Replication est une solution technique permettant de mettre en place une réplication des données entre infrastructure de virtualisation ou cloud en étant agnostique des technologies de stockage. Pour cela elle s'appuie sur les hyperviseurs de la plateforme en déployant des machines virtuelles (VM)
-agent appeler Virtual Replication Appliance (VRA) qui se charge de dupliquer les écritures vers les unités de stockage et les transmettent vers le site distant pour être écrite.
+Zerto Virtual Replication is a disaster recovery solution for vSphere. It enables replication virtual machines between Private Cloud platforms by capturing and propagating all disk operations to secondary site.
+It allows  automation and orchestration of actual fail-over or fail-over tests between sites.  
 
 #### Virtual Replication Appliance (VRA)
-
-Les VRA sont ainsi déployés sur chaque hyperviseur et vont consommer des ressources pour effectuer la réplication :
+Zerto works by deploying specific virtual machines on each hypervisor called Virtual Replication Appliance.
+They have a predefined configuration: 
 
 * vCPU : 1
 * RAM : 2 GB
 * Stockage : 36 GB
 
-À noter que pour le stockage, OVH ajoute gratuitement un datastore dédié pour l'ensemble des VRA.
+All VRA are stored on a specific datastore, provided by OVH.
 
 #### Sites
+During deployement, VRA are deployed on source and destination sites, and then are paired together to start replication.
+Since Zerto does not encrypt the dialog between VRA, OVH automatically deploys a VPN tunnel between the VRA through the L2VPN appliance, to protect in-flight data.
 
-La réplication des données se fait entre deux (2) sites appairés, grâce aux VRA déployés de chaque côté qui gèrent les flux de réplication.
+#### Virtual Protection Group (VPG)
+Before starting the replication, VMs must be grouped in a logical container called Virtual Protection Group, on which all replication parameters will be defined.
+It allows to apply consistent parameters accross a group of VM that share the same replication requirements, (typically VMs that belong to the same function or application)
+ 
+VPGs can be prioritized to make the most efficient usage of available bandwidth.
 
-Par défaut ces flux  ne sont pas chiffrés par Zerto. La sécurité étant une priorité pour OVH, nous mettons en place entre les deux (2) sites un tunnel chiffré (via IPSec) au moyen d'une appliance réseau appelée L2VPN.
+## Step by step
 
-#### Groupe de réplication (VPG)
+### Service Activation
 
-L'activation et le pilotage de la réplication des VM se fait au travers de Groupe de réplication (VPG).
-Ils permettent de regrouper logiquement un groupe de VM correspondant à un besoin métier ou opérationnel (ex: une application avec sa base de données) afin de configurer l'objectif de perte de données maximale admissible (**RPO**), l'ordre de démarrage des machines (la base avant l'application), les configurations réseau à utiliser pour les tests de bascule ou lors d'un sinistre. 
+#### From OVH dashboard
 
-À noter qu'il est aussi possible de définir un niveau de priorité entre les VPG afin de prioriser le transfert de données en cas de problème de bande passante réseau.
-
-## En pratique
-
-### Activer le service
-
-#### Depuis Espace client OVH
-
-Dans votre espace client OVH, rendez-vous dans la partie "Server" -> "Private Cloud" -> sélectionner votre plateforme Private-Cloud primaire -> sélectionner 
-le datacenter voulu -> cliquer sur l'onglet "Disaster Recovery Plan (DRP)".
+From your OVH Manager, go to "Server/Private Cloud". Select your primary site, then go to "Disaster Recovery" tab.
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_01.png){.thumbnail}
 
-Sélectionner **Between two OVH Private Cloud solutions** puis cliquer sur `Activate Zerto DRP`{.action},
+Select **Between two OVH Private Cloud solutions** then click `Activate Zerto DRP`{.action},
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_02.png){.thumbnail}
-La sélection du **Private Cloud** Primaire ainsi que le **datacenter** se fait automatiquement en se basant sur l'infrastructure par laquelle vous avez accédé.
-Sélectionner dans le menu déroulant une adresse IP publique **libre** issue du bloc d'IP public attaché au **Private Cloud**. Elle sera utilisée pour la mise en place du lien sécurisé entre les infrastructures.
-Cliquer sur `Next`{.action},
+Selection of the primary **Private Cloud** and **datacenter** is done automatically depending where you are connecting from.
+From the drop-down menu, select a **free**  public IP from the IP range attached to the **Private Cloud**. It will be used to setup the VPN tunnel between the 2 platforms.
+Click `Next`{.action},
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_03.png){.thumbnail}
-La sélection du site secondaire est à faire parmi vos **Private Cloud** présents
-dans le menu déroulant. À noter que seuls ceux éligibles sont présents et pour cela
-doivent répondre aux critères suivants :
+Secondary site selection must be done from available **Private Cloud** in the drop-down menu.
+Please note that list will show only Private Clouds meeting all the following requirements:
 
-* Être physiquement dans une autre Localisation
-* Ne pas déjà avoir de réplication Zerto en place
+* Being located in another geographical area.
+* Not already involved in a Zerto replication.
 
-Sélectionner ensuite le **datacenter** du **Private Cloud** de destination dans 
-le menu déroulant.
+Then select the **datacenter** from the secondary **Private Cloud** in the drop-down menu.
+Select an **unused**  IP address from the public IP range attached to the secondary **Private Cloud**. It will be used for the secondary VPN endpoint.
 
-Sélectionner dans le menu déroulant une adresse IP publique **libre** issue du bloc d'IP Publique attaché au **Private Cloud**. Elle sera utilisée pour la mise en place du lien sécurisé entre les infrastructures.
-Cliquer sur `Next`{.action},
+Click `Next`{.action},
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_04.png){.thumbnail}
-Configuration de la bonne prise en compte de la demande d'activation, comme indiqué celle-ci peut prendre jusqu'à une (1) heure, sous réserve que les informations fournies soient correctes (notamment si l'adresse IP n'est déjà utilisée par l'une de vos machines virtuelles, si c'est le cas l'activation échouera).
+Activation request confirmation, as shown on screen, deployment can take up to one hour, if all provided informations are correct (for example if the IPs given in the wizard are already in use, the activation will fail).
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_05.png){.thumbnail}
-Une fois l'activation effectuée, vous recevrez par courriel un résumé de la configuration de l'installation ainsi que les liens d'accès à l'interface Zerto de chacune des infrastructures.
+Once the activation has successfully completed, you will receive an email summary of the configuration and the links to the Zerto interface of both sites.
 
 > [!primary]
 > Bonjour,
@@ -100,103 +94,97 @@ Une fois l'activation effectuée, vous recevrez par courriel un résumé de la c
 > Vous pourrez vous authentifier avec vos comptes administrateurs de la même > façon que pour vSphere.
 > 
 
-#### Depuis l'API OVH
+#### From OVH API
 
-### Interface Zerto Replication
+###  Zerto Replication Interface
 
-L'interface est accessible depuis les deux (2) infrastructures via l'adresse :
-
-* URL : https://zerto.pcc-x-x-x-x.ovh.com/ (à modifier selon vos plateformes)
+Interface is reachable both from primary and secondary platforms through:
+* URL : https://zerto.pcc-x-x-x-x.ovh.com/ (insert PCC URL)
 
 > [!warning]
 >
-> Comme indiqué dans le corps du courriel, les identifiants pour se connecter sont les même que ceux utiliser pour se connecter à l'interface vSphere.
+> Like indicated in the summary email, you can login with your PCC account.
 >
 
-Une fois identifier, vous arrivez sur un écran affichant le tableau de bord :
+Once logged in, you arrive on Zerto dashboard:
 ![Zerto Dashboard](images/zerto_OvhToOvh_int_01.png){.thumbnail}
 
-Vous retrouverez sur cet écran :
+You will find there :
 
-* Un visuel rapide de l'état de santé des VPG
-* Le statut global de Zerto Réplication avec quatre (4) indicateurs
-* Un tableau des performances de Zerto Réplication
-* Un visuel sur les statuts de l'ensemble des VPG
-* La liste des dernières alertes, actions et évènements Zerto Réplication
+* A status of VPGs health
+* Key indicators for the Zerto platform.
+* Network and IO consumptions figures
+* An alerts and messages log
 
-### Configurer un groupe de réplication (VPG)
+### Configure a Virtual Protection Group (VPG)
 
-Depuis le menu `Actions`{.action}, sélectionner `Create VPG`{.action}
+From  `Actions`{.action}, select `Create VPG`{.action}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_01.png){.thumbnail}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_02.png){.thumbnail}
 
-Sur le premier écran :
+First Step **General** :
 
-* Saisir un nom pour le VPG, idéalement celui-ci doit être parlant dans un contexte opérationnel
-* Sauf besoin particulier, la priorité définit a **Medium** peut-être laissé tel-quelle
+* Enter a name for the new VPG
+* Except specific requirements, you can leave the Priority set to **Medium**
 
-Continuer avec `NEXT`{.action}
+Click `NEXT`{.action}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_03.png){.thumbnail}
 
-L'étape suivante consiste à sélectionner les VM qui vont faire partie du VPG.
+In the next step you need to select the VMs that will be in the VPG
 
 > [!warning]
 >
-> Une VM ne peut pas être dans plusieurs VPG.
+> A VM can only belong to a single VPG.
 > 
 
-* Filtrer les VM par nom via le champ **Search**
-* Cocher les cases à gauche des VM correspondantes
+* You can filter the VMs by name through the  **Search** dialog box
+* tick the box of all VM to be added
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_04.png){.thumbnail}
 
-* Cliquer sur la flèche pointant vers la droite pour passer celle-ci dans le VPG
+* Click on the arrow pointing to the right to place VMs in the VPG
 
-Continuer avec `NEXT`{.action}
+Click `NEXT`{.action}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_05.png){.thumbnail}
 
-On passe ensuite à l'étape de sélection du site distant :
+Next step is the selection of the secondary site :
 
-* **Recovery Site** : sélectionner le site distant (celui qui n'est pas local) au niveau de la liste 
-* **ZORG** : sélectionner **No Organization** dans la liste. Toute autre valeur affichera une erreur au moment de passer à l'étape suivante.
+* **Recovery Site** : select the remote site (the primary site will be tagged as (Local)) 
+* **ZORG** : scroll down and select **No Organization**. The other values are present for backwards compatibility but will trigger an error messsage if selected.
 
-Puis on passe à l'étape de définition des ressources distantes :
+Now you must define the default recovery resources :
 
-* **Hosts** : Sélectionner la ressource de calcul, qui peut être un **hôte seul** (indiqué par son adresse IP et précédé du nom du cluster entre crochets le cas échéant), un **Ressource Pool** (commençant par RP puis suivi du nom du cluster et pour finir par le nom du Ressource Pool) ou un **Cluster** (via son nom). Seul un **Ressource Pool** ou un **Cluster** doit être sélectionné (ici Cluster1).
-* **Datastore** : Sélectionner la ressource de stockage, qui peut être un **Datastore seul** (indiqué par son nom et précédé du nom du **Storage Cluster** entre crochets le cas échéant) ou un **Storage Cluster** (via son nom).
+* **Hosts** : Select a  vSphere Resource Pool, a DRS Cluster or a specific host in it  .(Cluster1 in our example)
+* **Datastore** : Likewise you can select a specific datastore or datastore cluster in the drop-down list.
 
-Laisser les autres valeurs telles quelles sauf besoins avancés.
-
-Continuer avec `NEXT`{.action}
+You can keep the default values for the other settings.
+Click `NEXT`{.action}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_06.png){.thumbnail}
 
-À l'étape suivante, on peut éventuellement affiner la configuration pour le stockage.
-Laisser les autres valeurs telles quelles sauf besoins avancés.
-
-Continuer avec `NEXT`{.action}
+In this step you can override the default recovery resources for specific VMs.
+If it is not necessary, you can click. `NEXT`{.action}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_07.png){.thumbnail}
 
-Ensuite vient une partie importante, première étape de la configuration réseau
-
-* **Failover/Move Network** : choisir le portgroup par défaut pour la bascule
-* **Failover Test Network** : choisir le portgroup pour les tests de bascule
-* **Recovery Folder** : choisir le dossier (ou alors / pour la racine) dans lequel les VM basculées sur le site de secours seront regroupées
+Now you need to define the default network to use during test fail-overs and actual fail-overs
+* **Failover/Move Network** : Choose the default vSphere portgroup for an actual fail-over
+* **Failover Test Network** : Choose the default vSphere portgroup for a test fail-over
+* **Recovery Folder** : If you want to regroup the failed over VMs on the secondary site, you can select a folder or just / to place the VMs at the root of the vSphere inventory.
 
 > [!primary]
-> Les options de **Pre-recovery Script** et **Post-recovery Script** ne sont pas utilisables.
+> **Pre-recovery Script** and  **Post-recovery Script** are locked down, these features are not enabled
 > 
 
-Continuer avec `NEXT`{.action}
+Click `NEXT`{.action}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_08.png){.thumbnail}
 
-Puis la deuxième étape de la configuration réseau :
+In this second step, you have the possibility to override the default recovery networks for each VMs :
 * Pour chaque VM, vous allez pouvoir choisir le portgroup pour les tests ou bascules
 * Il est aussi possible de changer la configuration IP des VM pour chacune des situations
 
