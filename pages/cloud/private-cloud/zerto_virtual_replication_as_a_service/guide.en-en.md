@@ -1,24 +1,24 @@
 ---
-title: Mise en oeuvre de Zerto Virtual Replication pour votre PRA
+title: Setting up Zerto Virtual Replication for your DRP
 slug: zerto-virtual-replication-vmware-vsphere-drp
-excerpt: Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre Private Cloud.
+excerpt: Discover how to set up Zerto Virtual Replication between your Private Cloud platforms
 section: Services et options OVH
 ---
 
-**Dernière mise à jour le 30/08/2019**
+**Last updated 30/08/2019**
 
-## Objectif
-
+## Goal
+This guide will present the concepts and steps required to setup Zerto Virtual Replication on the Private Cloud platform
 Ce guide a pour objectif d’expliquer les concepts et les détails de la mise en oeuvre de Zerto Virtual Replication sur Private Cloud.
 
-**Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité (PRA) entre Private Cloud.**
+**excerpt: Discover how to set up Zerto Virtual Replication between your Private Cloud platforms**
 
-## Prérequis
+## Prerequisites 
 
-* Posséder deux offres [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external} sur deux datacentres différents,
-* Avoir sur chacun d'eux une adresse IP publique libre,
+* Having 2 Private Cloud Platforms [Private Cloud](https://www.ovh.ie/sddc/){.external} on 2 different datacenters
+* In each Datacenter, a free public IP
 
-### Concepts Zerto Virtual Replication
+###  Zerto Virtual Replication Concepts
 
 Zerto Virtual Replication est une solution technique permettant de mettre en place une réplication des données entre infrastructure de virtualisation ou cloud en étant agnostique des technologies de stockage. Pour cela elle s'appuie sur les hyperviseurs de la plateforme en déployant des machines virtuelles (VM)
 agent appeler Virtual Replication Appliance (VRA) qui se charge de dupliquer les écritures vers les unités de stockage et les transmettent vers le site distant pour être écrite.
