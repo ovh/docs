@@ -54,13 +54,14 @@ Because of the underlying DBMS products, this kind of upgrade can break existing
 
 Instead of upgrading the service to the next available major version, we can decide to discontinue the service, for various reasons, such as:
 
-- The upgrade is discouraged by the software editor of the underlying DBMS,
+- The upgrade is discouraged by the software editor of the underlying DBMS.
 
-- The DBMS had been discontinued itself,
+- The DBMS had been discontinued itself.
 
 - ...
 
 The discontinuation can be performed in two ways, depending on the cases:
+
 - We disable the service renewal. In this case, the service will be suspended at the end of your engagement.
 
 - We suspend the service and re-credit over-payment.
