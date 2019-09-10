@@ -1,11 +1,11 @@
 ---
 title: 'Administrator-Passwort auf einem Windows Dedicated Server ändern'
-slug: windows-admin-passwort-aendern
+slug: "windows-admin-passwort-aendern"
 excerpt: 'Hier erfahren Sie, wie Sie das Administrator-Passwort auf einem Windows Dedicated Server ändern.'
 section: 'Diagnose und Rescue-Modus'
 ---
 
-**Stand 28.08.2018**
+**Stand 03.09.2018**
 
 ## Einleitung
 
@@ -22,7 +22,7 @@ Bei der Installation oder Reinstallation eines Windows-Betriebssystems wird Ihne
 
 ## Beschreibung
 
-Um zu beginnen, starten Sie Ihren Server im Rescue-Modus und verwenden Sie hierzu die Boot-Umgebung WinRescue. Falls nötig, lesen Sie die Anleitung zum [Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/){.external}. 
+Um zu beginnen, starten Sie Ihren Server im Rescue-Modus und verwenden Sie hierzu die Boot-Umgebung WinRescue. Falls nötig, lesen Sie die Anleitung zum [Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/{.external}. 
 
 Nachdem der Server neu gestartet ist, gehen Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} auf der Seite Ihres Servers zum Tab `IPMI`{.action}.
 
@@ -52,8 +52,8 @@ Ihr Passwort wurde nun geändert. Schließen Sie das Tool und die IPMI-Sitzung u
 
 ## Weiterführende Informationen
 
-[Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/){.external}
+[Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/{.external}
 
-[Verwendung der IPMI-Konsole für Dedicated Server](https://docs.ovh.com/de/dedicated/verwendung-ipmi-dedicated-server/){.external}
+[ Dedicated Server](https://docs.ovh.com/de/dedicated/verwendung-ipmi-dedicated-server/){.external}
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
