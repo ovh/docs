@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 15th April 2019**
+**Last updated 27th May 2019**
 
 ## Objective
 
@@ -40,6 +40,48 @@ Select the operating system you want to install and click `Next`{.action}.
 ![Operating selection](images/reinstalling-your-server-03.png){.thumbnail}
 
 Follow the rest of the instructions on the screen, then click `Confirm`{.action} to proceed with the installation.
+
+### Optional
+At this moment, if you wish to install a Linux based operating system, you can add your SSH key during the installation process.
+
+In order to do so, check the box before "Customise the partition configuration"
+
+![Customise the partition configuration](images/SSH_01.png){.thumbnail}
+
+Once done, you will see this next step where you can modify the partioning scheme of your operating system :
+
+![Customise the partition configuration](images/SSH_02.png){.thumbnail}
+
+After changing it (if necessary), then click `Next`{.action}.
+
+![Customise the partition configuration](images/SSH_03.png){.thumbnail}
+
+Now, you will see at the bottom SSH keys with a drop down menu. If you already have an existing SSH key registered, the key will appear on the list once you open the drop down menu. Otherwise, you will need to add one to your control panel through "My account" section :
+
+![Customise the partition configuration](images/SSH_05.png){.thumbnail}
+
+To retrieve this section, you can click on your name at the top right corner and then click on "My account".
+
+![Customise the partition configuration](images/SSH_06.png){.thumbnail}
+
+Then, this will be displayed and you will be able to reach "My SSH keys" section :
+
+![Customise the partition configuration](images/SSH_08.png){.thumbnail}
+
+Where you can add your own : 
+
+![Customise the partition configuration](images/SSH_09.png){.thumbnail}
+
+As we are installing a dedicated server (or a VPS), make sure to select "Dedicated" on the drop down menu :
+
+![Customise the partition configuration](images/SSH_10.png){.thumbnail}
+
+What you need to enter is an ID (a name of your choice) and the key itself (type supported  : RSA, ECDSA and Ed25519) :
+
+![Customise the partition configuration](images/SSH_12.png){.thumbnail}
+
+As a side note, if you need to know how to generate a SSH key, we suggest this guide : <https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys/>
+
 
 
 > [!primary]

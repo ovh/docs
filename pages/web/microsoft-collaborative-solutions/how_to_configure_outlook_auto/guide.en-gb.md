@@ -6,95 +6,110 @@ section: Email Clients
 ---
 
 
-## Exchange GUID recovery
-To manually configure Outlook, you must first retrieve the GUID available in your Web Control Panel. To do this, click on "Configuration" to the right of the address you want to configure.
+**Last updated 19th June 2019**
 
-Next to GUID, add: "@your-domain.com".
+## Objective
 
-In our example this would be: 45c94143-1a29-4ef8-a990-06b54f9d6ad7@support-exchange.eu
+This guide explain manual configuration of outlook in case if you can't set up the SRV field which is neccesary for automatic configuration.
 
-![](images/img_1568.jpg){.thumbnail}
+## Requirements
 
+- You need to have a subscription to a [Hosted Exchange](https://www.ovh.co.uk/emails/hosted-exchange/){.external} solution.
+- You need to have created E-mail account on exchange solution.
+- You must have outlook license.
 
-## Windows Control Panel
+## Instructions
+
+### Windows Control Panel
+
 The following steps are carried out on a workstation running on a Windows OS.
 
 To start up, open your computer's Control Panel.
 
-Select "show small icons" to bring up "Mail" or "Mail (32-bit)" icons.
+Select "User accounts" then "Mail (Microsoft Outlook 2016)" Please note that it is also possible to directly access Mail in Outlook.
 
-Click on the "Mail" or "Mail (32-bit)" icons. They can be found here or under user accounts. Please note that it is also possible to directly access Mail in Outlook.
+Then click "Email Accounts"
 
-Then click "Mail Accounts"
-
-![](images/img_992.jpg){.thumbnail}
+![](images/SS_1.png)
 
 
-## Step 2: Add a new email account
-Click "New" to add an Exchange 2013 email account.
+## Add a new email account
 
-![](images/img_1551.jpg){.thumbnail}
+Click "New..." to add an Exchange email account.
 
-
-## Step 3: Email account
-Select "Email Account", then click "Next".
-
-![](images/img_994.jpg){.thumbnail}
+![](images/SS_2.png)
 
 
-## Step 4: Manual account setup
-Tick the box next to "Manual Setup or additional server types".
+## Manual account setup
+
+Check the box : "Manual Setup or additional server types".
 
 Then click "Next".
 
-![](images/img_1552.jpg){.thumbnail}
+![](images/SS_3.png)
 
 
-## Step 5: Choose a service
-Select "Microsoft Exchange Server or a compatible service"
+## Choose a service
+
+Select "POP or IMAP"
 
 Then click "Next".
 
-![](images/img_1553.jpg){.thumbnail}
+![](images/SS_4.png)
 
 
-## Step 6: Server settings
-Server: in this field, enter the previously retrieved Exchange GUID, followed by "@your_domain".
+## Server settings
 
-Username: fill in this field with your full Exchange email address.
+Please fill your e-mail account settings : 
 
-Then click "More Settings ..."
+- Your Name : Name of e-mail account.
+- Email Address : E-mail address that you want to configure.
+- Account Type : Choose IMAP.
+- Incomming mail server : It has form "ex*.mail.ovh.net" depends on which server your service is hosted. Please check server name in OVH Control Panel, microsoft tab -> service name -> general information -> window "Connection" -> "Server:", please check screen below.
 
-![](images/img_1554.jpg){.thumbnail}
+![](images/SS_10.png)
+
+- Outgoing mail serwer (SMTP) : It is the same as Incomming mail server.
+- User Name : E-mail address that you want to configure.
+- Password : Password to e-mail account
+
+When everyhing is correctly filled, please click on "More Settings..."
+
+![](images/SS_5.png)
+
+Go to "Outgoing Server and check box "My outgoing server(SMTP) requires authentication.
+
+Also check box "Use same settings as my incoming mail server".
+
+![](images/SS_6.png)
+
+Now go to "Advanced tab" 
+
+For Incomming server IMAP in "Use the following type of encrypted connection" choose : "SSL/TLS" and put port 993.
+
+For Outgoing server SMTP in "Use the following type of encrypted connection" choose : "STARTTLS" and put port 587.
+
+Click "Ok" and then "Next"
+
+![](images/SS_7.png)
+
+## Test Account Settings
+
+System will automatically test connection with mail server (IMAP) and will send test e-mail via SMTP.
+
+If tasks will be done correctly you can close window.
+
+If not, please check again Step 6 about configuration Server settings.
+
+![](images/SS_8.png)
 
 
-## Step 7: Exchange proxy settings
-In the "Connection" tab, check "Connect to Microsoft Exchange using HTTP".
+## Confirm configuration
 
-Then click "Exchange Proxy Settings".
+E-mail account is now created properly, click on "Finish" button to close window.
 
-![](images/img_1555.jpg){.thumbnail}
-
-
-## Step 8: Connection settings
-Under "Use this URL to connect to my proxy server for Exchange", please enter "ex.mail.ovh.net"
-
-Then select "Connect using SSL only". Under "Only connect to proxy servers that include the certificate principal name" enter: "msstd:ex.mail.ovh.net"
-
-Additionally, tick the boxes next to "On fast networks, connect using HTTP first, then connect using TCP/IP" and "On slow networks, connect using HTTP first, then connect using TCP/IP."
-
-Finally, click OK.
-
-![](images/img_1556.jpg){.thumbnail}
-For Private Exchange, replace the ex.mail.ovh.net server with the name of your server's SSL certificate.
-
-
-## Step 9: Authentication
-A window opens to authenticate the Exchange server. Enter your full email address and password.
-
-Do not forget to tick "Remember this information".
+![](images/SS_9.png)
 
 Your account is now correctly configured and you can start using Outlook.
 
-![](images/img_1557.jpg){.thumbnail}
 

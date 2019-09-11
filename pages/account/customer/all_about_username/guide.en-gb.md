@@ -42,7 +42,7 @@ Your username is provided in the confirmation email when you create your account
 Your username is provided on all of your invoices, in the top right, with all the useful information.
 
 
-![manager](images/3948.png){.thumbnail}
+![manager](images/SS_8.png.jpg){.thumbnail}
 
 
 ### In your control panel
@@ -58,7 +58,7 @@ You can retrieve your password by clicking on  **forgotten password**  on the lo
 A confirmation email will be sent to the contact email address. If you can no longer access this address, you can fill in this [procedure](https://www.ovh.co.uk/cgi-bin/procedure/procedureChangeEmail.cgi){.external}
 
 
-![manager](images/3936.png){.thumbnail}
+![manager](images/SS_2.png){.thumbnail}
 
 
 ## Personal information
@@ -72,35 +72,29 @@ You can modify your account information in your control panel. You just have to:
 
 ![manager](images/3953.png){.thumbnail}
 
-- Click Modify .
+- Here you can modify data of your account by changing the values.
 
 
-![manager](images/3954.png){.thumbnail}
+![manager](images/SS_3.png){.thumbnail}
 
-- Modify your information then click the Confirm button.
+-After modification click the Confirm button.
 
 
-![manager](images/3955.png){.thumbnail}
+![manager](images/SS_4.png){.thumbnail}
 
 
 ### Useful information
 If you want to change you main contact email address, you will have to confirm this using a code which will be sent to your main contact email address. Once you have got this code, just click "I have received my validation code".
 
 
-![manager](images/3956.png){.thumbnail}
+![manager](images/SS_5.PNG){.thumbnail}
 
 Once you have the code, enter it in the "Validation code" section and then confirm.
 
 
-![manager](images/3957.png){.thumbnail}
+![manager](images/SS_6.png){.thumbnail}
 
 
-
-> [!alert]
->
-> If you do not respond to this email within 24 hours, the change will be accepted
-> automatically.
-> 
 
 
 ## Managing contacts
