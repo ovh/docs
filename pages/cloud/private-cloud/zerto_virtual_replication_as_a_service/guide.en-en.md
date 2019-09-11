@@ -184,28 +184,25 @@ Click `NEXT`{.action}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_08.png){.thumbnail}
 
-In this second step, you have the possibility to override the default recovery networks for each VMs :
-* Pour chaque VM, vous allez pouvoir choisir le portgroup pour les tests ou bascules
-* Il est aussi possible de changer la configuration IP des VM pour chacune des situations
+In this second step, you have the possibility to override the default recovery networks for each VMs, and specify the IP adresses to use in case of a test or an actual fail-over. :
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_09.png){.thumbnail}
 
 > [!warning]
 >
-> Le changement d'IP n'est possible que pour les VM avec un OS supporté et pour lesquelles les **VMware Tools** sont en fonctionnement
+> The modification of the IP adress during fail-over is only possible for supported OSes with functioning VMware Tools
 > 
 
-Continuer avec `NEXT`{.action}
+click `NEXT`{.action}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_10.png){.thumbnail}
 
-Passer cette étape avec `NEXT`{.action}
+Long term retention is disabled, click `NEXT`{.action}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_11.png){.thumbnail}
 
-Sur le dernier écran, on retrouve un récapitulatif de l'ensemble des éléments configurés.
-
-Après vérification, valider la création avec `DONE`{.action}
+The last screen summarize the settings for the new VPG 
+If everything is OK, click `DONE`{.action}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_13.png){.thumbnail}
 
