@@ -266,15 +266,13 @@ Cleanup operation are launched right away on remote site
 
 ### Launch a actual fail-over
 
-En cas d'incident majeur sur le site principal ou dans le cadre d'un exercice en condition réelle, le lancement de la bascule s'effectue logiquement depuis le site secondaire (de reprise).
+You can launch a full fail-over from the secondary site, in case the primary site has been rendered unusable by a disaster.
 
 > [!warning]
+> If you trigger an actual fail over when the primary site is still available, you have the possibility to properly shutdown the VM on the primary site.
+> If you don't, be careful with the network configuration to make sur to prevent IP conflicts between primary and secondary instances of VMs
 >
-> Le failover en mode **LIVE** sur Zerto Replication se fait en considérant le site principal comme indisponible, il faut donc avoir fait attention à la configuration réseaux de pour éviter tout conflit d'adressage IP et autre.
->
-> L'ensemble des ressources qui seront démarrées sur le site secondaire vont devenir active au niveau du traitement de données 
->
-> À noter que la réplication entre les deux sites est modifiée ou couper (voir plus loin).
+> Please note that, contrary to what happens during a test fail-over, replication operation are stopped during an actual fail-over
 >
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_02.png){.thumbnail}
@@ -283,7 +281,7 @@ Pour cela se connecter à l'interface Zerto Replication, basculer le sélecteur 
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_03.png){.thumbnail}
 
-Immédiatement, un écran apparait avec les VGP disponibles, le sens de réplication, le site de destination et si le niveau de protection est correct (**Meeting SLA**).
+Immédiatement, un écran apparait avec les VPG disponibles, le sens de réplication, le site de destination et si le niveau de protection est correct (**Meeting SLA**).
 
 Vous allez alors plusieurs choix :
 
