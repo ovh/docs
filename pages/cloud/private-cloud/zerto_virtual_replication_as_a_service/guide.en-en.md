@@ -206,44 +206,40 @@ If everything is OK, click `DONE`{.action}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_13.png){.thumbnail}
 
-Vous retrouverez le VPG nouvellement créer dans la liste, ainsi que le statut de celui-ci (commence par **Initializing**).
+On the dashboard, you will see the new VPG with a status "Initializing"
 
-### Lancer un exercice de reprise d'activité 
+### Start a fail-over 
 
-Après avoir configuré la réplication et laissé celle-ci s'effectuer plusieurs jours, vous allez peut-être vouloir tester si votre PRA fonctionne avec notamment les actions gérées par Zerto Réplication.
-
+After having configured your VPG and once the initial replication has completed, you can now test Zerto fail-over features
 > [!warning]
 >
-> Le test de failover sur Zerto Replication se fait **sans** coupure sur le site principal, il faut donc avoir fait attention à bien avoir configuré les réseaux de test pour éviter tout conflit d'adressage IP et autre pour ne pas impacter votre production avec cet exercice.
->
-> L'ensemble des ressources qui seront démarrées sur le site secondaire par le test ne doivent pas être modifiées ni supprimées manuellement. L'ensemble du test sera démantelé par Zerto Replication à la fin du test.
->
-> À noter que la réplication continue de s'effectuer entre les deux sites lors d'un test.
+> A fail-over test has **NO** impact on the production site, you only need to make sure that the VM that are being failed-over are are starting in an isolated network and/or different IPs to avoid network conflicts
+> All the VMs instantiated during de fail-over test are fully managed by Zerto, you should not remove of modifiy them, they will be removed automatically at the end of the fail-over test.
+> The replication keeps running during the fail-over tests and is not impacted in any way.
 >
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_00.png){.thumbnail}
 
-Pour cela se connecter à l'interface Zerto Replication et cliquer sur `FAILOVER`{.action} (le sélecteur à gauche étant par défaut sur **TEST**).
-Si le texte du bouton est en gris, c'est qu'il n'y a pas de VPG éligible pour le test (l'initialisation n'est peut-être pas terminée ou il y'a un problème).
+From the interface, click on bottom right button `FAILOVER`{.action} (the togle is by default on **TEST**).
+if the button is greyed out, it's because there is no available VPG to perform a test (initialization is not finished or there is an issue with the VPG).
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_01.png){.thumbnail}
 
-Immédiatement, un écran apparait avec les VPG disponibles, le sens de réplication, le site de destination et si le niveau de protection est respecté (**Meeting SLA**).
+The fail-over wizard appears with eligible VPGs, their replication direction (in or out), destination site and service level status (**Meeting SLA**).
 
-Vous allez alors plusieurs choix :
+You can either 
+1. Select the VPGs itself to perform the test, failing over all the VMs within.
+2. Click on the square icon on the left of the VPG name to display all the VMs in the VPG. You can then choose to fail-over only the selected VMs within the VPG.
 
-1. Cocher la case pour sélectionner le VPG et donc l'ensemble des VMs de celui-ci pour le test.
-2. Cliquer sur l'icône à droite du nom du VPG pour faire apparaitre la liste des VM du VPG. Vous avez alors la possibilité de choisir quelles VM du VPG vont faire partie du test.
-
-Valider et passer à l'étape suivante avec `NEXT`{.action}
+Click `NEXT`{.action}
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_02.png){.thumbnail}
 
-Nous sommes partis sur le choix un (1) à savoir test sur un VPG.
+In this case we have chosen to do a full VPG fail-over.
 
-À cette étape on retrouve un résumé des actions lié au VPG :
-* Sens de réplication
-* Site distant
+You can now check the settings for the fail-overs:
+* Replication direction
+* Remote site
 * Si une séquence de démarrage des VM a été définie
 * Si des scripts Pre ou Post bascule sont présent (fonctionnalité non disponible)
 
