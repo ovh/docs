@@ -240,35 +240,31 @@ In this case we have chosen to do a full VPG fail-over.
 You can now check the settings for the fail-overs:
 * Replication direction
 * Remote site
-* Si une séquence de démarrage des VM a été définie
-* Si des scripts Pre ou Post bascule sont présent (fonctionnalité non disponible)
+* Boot order (locked down)
+* Pre/Post scripts (locked down)
 
-Continuer avec `NEXT`{.action}
+Click `NEXT`{.action}
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_03.png){.thumbnail}
 
-Dernier écran de récapitulatif sur une vue des différents sites avec le nombre de VPG pour le test.
+The summary screen is displayed, if everything is OK you can start the test by clicking  `START FAILOVER TEST`{.action}
 
-Confirmer le lancement du test avec `START FAILOVER TEST`{.action}
-
-Le test de bascule se lance immédiatement avec les actions sur le vCenter du site distant.
-
-Il ne vous reste plus qu'à contrôler si tout fonctionne correctement sur le site distant.
+You can log on on the remote site vCenter and see the VMs starting.
+You can then check if everything is working correctly on the remote site.
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_05.png){.thumbnail}
 
-Quand vous avec fini de vérifier le bon fonctionnement des machines basculées.
-Cliquer sur le petit carré rouge à droite du **Testing Failover**
+When all checks have been performed, you can stop the test by clicking on the little red box right accross **Testing Failover** 
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_06.png){.thumbnail}
 
-Dans la nouvelle fenêtre, il est possible d'indiquer si le test s'est déroulé de manière satisfaisante et de rajouter un commentaire.
+At this stage, you can add a result of the test for futur reference.
 
-Confirmer la fin du test avec `STOP`{.action}
+Confirm the end of the test by clicking `STOP`{.action}
 
-Le démantèlement du test se lance immédiatement avec les actions sur le vCenter du site distant.
+Cleanup operation are launched right away on remote site
 
-### Lancer une reprise d'activité
+### Launch a actual fail-over
 
 En cas d'incident majeur sur le site principal ou dans le cadre d'un exercice en condition réelle, le lancement de la bascule s'effectue logiquement depuis le site secondaire (de reprise).
 
