@@ -277,45 +277,44 @@ You can launch a full fail-over from the secondary site, in case the primary sit
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_02.png){.thumbnail}
 
-Pour cela se connecter à l'interface Zerto Replication, basculer le sélecteur en bas à droite de l'interface sur **LIVE** (noter le changement de couleur du bandeau pour pour signaler que vous allez faire des actions qui peuvent avoir un impact sur la production) et cliquer sur `FAILOVER`{.action}.
+To start  a complete fail-over, you need to set the toggle on **LIVE** before pushing the fail-over button (the banner at the bottom of the page becomes red to warn you that going further may have an impact on your VMs) 
+Click `FAILOVER`{.action}.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_03.png){.thumbnail}
 
 Immédiatement, un écran apparait avec les VPG disponibles, le sens de réplication, le site de destination et si le niveau de protection est correct (**Meeting SLA**).
+You can decide on the fail-over parameters, just like during a test fail-over: which VPGs to fail-over, the replication direction, VPGs status (**Meeting SLA**).
 
-Vous allez alors plusieurs choix :
 
-1. Cocher la case pour sélectionner le VPG et donc l'ensemble des VMs de celui-ci pour la bascule.
-2. Cliquer sur l'icône à droite du nom du VPG pour faire apparaitre la liste des VM du VPG. Vous avez alors la possibilité de choisir quelles VM du VPG vont faire partie de la bascule.
+1. You can select one or several VPGs
+2. If you want to partially migrate some VPGs, you can click on the little square icon and select which VMs to fail over
 
-Valider et passer à l'étape suivante avec `NEXT`{.action}
+Click `NEXT`{.action}
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_04.png){.thumbnail}
 
-Nous sommes partis sur le choix un (1) à savoir test sur un VPG.
+We have decided to fail-over a single VPG
 
-À cette étape on retrouve un résumé des actions lié au VPG :
-* Sens de réplication
-* Site distant
-* Le **Checkpoint** : il s'agit de la date à laquelle seront restaurées les données. L'écart entre le point choisi et la date courante déterminera le **RPO**
-* La **Commit Policy** : voir après.
-* **VM Shutdown** : détermine le comportement à adopter sur le site primaire, pas de coupure des VM, extinction, extinction forcée.
-* **Reverse Protection** : indique si la réplication du VPG doit être configurée en sens inverse à l'issue du failover pour pouvoir éventuellement procéder plus tard au failback.
-* Si une séquence de démarrage des VM a été définie
-* Si des scripts Pre ou Post bascule sont présent (fonctionnalité non disponible)
+We have a summary of the fail-over parameters :
+* Replication direction
+* Remote site
+* The  **checkpoint** to use: what version should use Zerto to restart from. Usually the latest version will minimze the data loss and improve **RPO**
+* what **commit policy** to use : see further down the page.
+* **VM Shutdown** : what should Zerto do with the VMs on the primary site if they are still running, leave them running, shutdown, forced shutdown.
+* **Reverse Protection** : After the fail-over, should the replication enabled again to allow a fail-back or be left as-is
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_05.png){.thumbnail}
 
-Au niveau de la **Commit Policy**, vous avez trois (3) options :
-* Auto-Rollback : sans action de votre part, le retour en arrière est déclenché au bout du temps prévu
-* Auto-Commit : sans action de votre part, la validation des données sur la plateforme secondaire est déclenchée au bout du temps prévu (il n'est plus possible de revenir simplement sur la plateforme principale)
-* None : les actions de **Rollback** ou de **Commit** doivent être validées par votre part.
+There are 3 **Commit Policy** settings :
+* Auto-Rollback : If no action is taken, the rollback starts automatically after the timer is elapsed
+* Auto-Commit : If no action is taken, data changed on the secondary site is now commited on VMs, and to be able to fail back, a reverse replication needs to be setup.
+* None : **Rollback** or  **Commit** have to be launched manually
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_06.png){.thumbnail}
 
-Au niveau des options **Auto** la temporisation par défaut est de soixante (60) minutes.
+For all automatic actions, the default timer is 60 minutes.
+Click `NEXT`{.action}
 
-Continuer avec `NEXT`{.action}
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_07.png){.thumbnail}
 
@@ -323,20 +322,19 @@ Dernier écran de récapitulatif sur une vue des différents sites avec le nombr
 
 > [!warning]
 >
-> Il est fortement recommandé de bien lire le résumé ainsi que les avertissements pour 
+> Please read the summary carefully and all associated warnings
 >
 
-Lancer la bascule avec `START FAILOVER`{.action}
+click `START FAILOVER`{.action}
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_08.png){.thumbnail}
 
-Si vous avez choisi une **Commit Policy** de type **Auto**, un message d'avertissement vous rappelle l'impact de celui-ci.
+If you have selected an **Automatic Policy**, you received a warning about its impact.
 
-Confirmer le lancement avec `START FAILOVER`{.action}
+Confirm with `START FAILOVER`{.action}
 
-La bascule se lance immédiatement avec les actions sur le vCenter du site distant.
-
-Il ne vous reste plus qu'à contrôler si tout fonctionne correctement sur le site distant.
+Fail-over starts, you can follow the actions from the secondary vCenter.
+Validate the succesfull start of VMs on secondary platform
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_10.png){.thumbnail}
 
