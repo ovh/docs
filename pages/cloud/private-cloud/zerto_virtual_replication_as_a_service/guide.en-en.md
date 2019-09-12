@@ -338,20 +338,17 @@ Validate the succesfull start of VMs on secondary platform
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_10.png){.thumbnail}
 
-Après avoir lancé la bascule, vous pouvez voir une alerte au niveau de l'interface Zerto Replication.
-Celle-ci est liée à la **Commit Policy** et temps que le commit n'est pas confirmé ou annulé.
-
-Les actions sont à faire le cas échéant via les icônes à droite du VPG
+After the fail-over has completed, you'll see an pending task as long as you haven't committed or failed back the operation (through the small icons neart the VPG name)
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_11.png){.thumbnail}
 
-Au moment de la validation du commit, vous pouvez automatiquement configurer le VPG en sens inverse (appeler **Reverse Protection**).
+When you commit the data on the secondary site, you can automatically setup the protection (**Reverse Protection**).
 
-Valider avec `COMMIT`{.action}
+Validate with `COMMIT`{.action}
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_13.png){.thumbnail}
 
-Au niveau du VPG, vous pouvez noter que la direction (via la flèche) de réplication a été changée.
+If you check the VPG, you will see that the replication direction has changed.
 
 ### Préparer et effectuer un retour en arrière
 
