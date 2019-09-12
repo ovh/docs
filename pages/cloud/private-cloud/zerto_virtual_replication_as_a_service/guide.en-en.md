@@ -318,7 +318,7 @@ Click `NEXT`{.action}
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_07.png){.thumbnail}
 
-Dernier écran de récapitulatif sur une vue des différents sites avec le nombre de VPG pour la bascule.
+Summary screen
 
 > [!warning]
 >
@@ -350,14 +350,13 @@ Validate with `COMMIT`{.action}
 
 If you check the VPG, you will see that the replication direction has changed.
 
-### Préparer et effectuer un retour en arrière
+### Prepare and trigger the fail-back
 
-Suivant comment a éfé fait le **Failover**, l'éventuel retour sur le site principal (cela n'est pas une obligation) peut nécessiter plusieurs actions.
+Depending on fail-over options, the fail-back (if needed) may require differents steps.
+If you have selected **Reverse Protection** during the fail-over, the failback is just a  **Failover Live** (refer to the relevant part of this guide).
 
-Si vous avez basculé avec du **Reverse Protection**, le retour arrière consiste à faire un **Failover Live** (se reporter à la partie idoine pour les actions à faire).
+If you have not enabled **Reverse Protection**, you need to create a new VPG, do a full sync and then do a **Failover Live** (refer to the relevant part of this guide).
 
-Si vous avec basculer **sans** du **Reverse Protection**, le retour arrière consiste à créer un VPG **puis** faire un **Failover Live** (se reporter aux sections précédentes pour les actions à faire).
+## To go further 
 
-## Aller plus loin
-
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Discuss with other Zerto users on <https://community.ovh.com/>.
