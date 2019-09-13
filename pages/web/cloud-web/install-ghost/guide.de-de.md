@@ -10,7 +10,7 @@ order: 1
 
 ## Einleitung
 
-[Ghost](https://ghost.org/){.external} est un moteur de blog open source. Il est conçu pour simplifier le processus de publication en ligne par des blogueurs ou journalistes. Ce logiciel est écrit en JavaScript et utilise [Node.js](https://nodejs.org/){.external}, une plateforme logicielle permettant de créer vos sites et API en JavaScript côté serveur.
+[Ghost](https://ghost.org/){.external}  ist eine Open-Source-Blog-Engine, die entwickelt wurde, um den Prozess der Online-Veröffentlichung für Blogger und Journalisten zu vereinfachen. Das Programm ist in JavaScript geschrieben und verwendet [Node.js](https://nodejs.org/){.external},  eine Software-Plattform, mit der Sie Ihre Websites und APIs serverseitig in JavaScript erstellen können.
 
 Mit [OVH Cloud Web Hosting](https://www.ovh.de/hosting/cloud-web.xml){.external} können Sie Node.js als Runtime Engine für Ihre Websites verwenden und somit auch Ghost oder jede andere für Node.js entwickelte Anwendung installieren.
 
@@ -120,6 +120,7 @@ Geben Sie im angezeigten Fenster die für Ihre Situation notwendigen Information
 
 |Name|Variablentyp|Wert| 
 |---|---|---|
+|database__connection__host|string|Adresse des MySQL-Servers|
 |database__connection__user|string|bei Erstellung der Datenbank gewählter MySQL-Benutzername|
 |database__connection__database|string|Name der MySQL-Datenbank|
 |database__connection__password|password|bei Erstellung gewähltes Passwort|
