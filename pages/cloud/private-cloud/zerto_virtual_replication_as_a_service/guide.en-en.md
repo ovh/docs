@@ -9,7 +9,6 @@ section: Services et options OVH
 
 ## Goal
 This guide will present the concepts and steps required to setup Zerto Virtual Replication on the Private Cloud platform
-Ce guide a pour objectif d’expliquer les concepts et les détails de la mise en oeuvre de Zerto Virtual Replication sur Private Cloud.
 
 **excerpt: Discover how to set up Zerto Virtual Replication between your Private Cloud platforms**
 
@@ -79,20 +78,24 @@ Activation request confirmation, as shown on screen, deployment can take up to o
 Once the activation has successfully completed, you will receive an email summary of the configuration and the links to the Zerto interface of both sites.
 
 > [!primary]
-> Bonjour,
-> 
-> Vous venez d'activer la solution de PRA Zerto entre 2 de vos Private Cloud.
-> 
-> Vous pouvez vous connecter au site principal à l'adresse suivante :
-> 
->   * URL        : https://zerto.pcc-192-0-2-1.ovh.com/
-> 
-> Vous pouvez vous connecter au site secondaire à l'adresse suivante :
-> 
->   * URL        : https://zerto.pcc-192-0-2-2.ovh.com/
-> 
-> Vous pourrez vous authentifier avec vos comptes administrateurs de la même > façon que pour vSphere.
-> 
+>Dear Customer,
+>
+>You have just enabled the Zerto DRP solution between 2 of your Private Cloud solutions.
+>
+>You can log in to the main website via the following address:
+>
+>  * URL: https://zerto.pcc-x-x-x-x.ovh.com/ 
+>
+>You can log in to the secondary website via the following address:
+>
+>  * URL: https://zerto.pcc-x-x-x-x.ovh.com/ 
+>
+>You can authenticate with your administrator accounts the same way as you do for
+>vSphere.
+
+
+
+
 
 #### From OVH API
 
