@@ -15,12 +15,12 @@ Ce guide a pour objectif d’expliquer les concepts et les détails de la mise e
 
 ## Prérequis
 
-* Posséder deux offres [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external} sur deux datacentres différents,
+* Posséder deux offres [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external} sur deux locations différentes,
 * Avoir sur chacun d'eux une adresse IP publique libre,
 
 ### Concepts Zerto Virtual Replication
 
-Zerto Virtual Replication est une solution technique permettant de mettre en place une réplication des données entre infrastructure de virtualisation ou cloud en étant agnostique des technologies de stockage. Pour cela elle s'appuie sur les hyperviseurs de la plateforme en déployant des machines virtuelles (VM)
+Zerto Virtual Replication est une solution technique permettant de mettre en place une réplication des données entre infrastructure de virtualisation ou cloud en étant agnostique aux technologies de stockage. Pour cela elle s'appuie sur les hyperviseurs de la plateforme en déployant des machines virtuelles (VM)
 agent appeler Virtual Replication Appliance (VRA) qui se charge de dupliquer les écritures vers les unités de stockage et les transmettent vers le site distant pour être écrite.
 
 #### Virtual Replication Appliance (VRA)
@@ -35,14 +35,14 @@ Les VRA sont ainsi déployés sur chaque hyperviseur et vont consommer des resso
 
 #### Sites
 
-La réplication des données se fait entre deux (2) sites appairés, grâce aux VRA déployés de chaque côté qui gèrent les flux de réplication.
+La réplication des données se fait entre deux (2) sites appairer, ainsi aux VRA de chaque côté peuvent établir leur flux de réplication.
 
-Par défaut ces flux  ne sont pas chiffrés par Zerto. La sécurité étant une priorité pour OVH, nous mettons en place entre les deux (2) sites un tunnel chiffré (via IPSec) au moyen d'une appliance réseau appelée L2VPN.
+Par défaut les flux de réplication Zerto ne sont pas chiffré et la sécurité étant une priorité pour OVH, nous mettons en place entre les deux (2) sites un tunnel chiffré (via IPSec) au moyen d'une applicance réseau appelée L2VPN.
 
 #### Groupe de réplication (VPG)
 
 L'activation et le pilotage de la réplication des VM se fait au travers de Groupe de réplication (VPG).
-Ils permettent de regrouper logiquement un groupe de VM correspondant à un besoin métier ou opérationnel (ex: une application avec sa base de données) afin de configurer l'objectif de perte de données maximale admissible (**RPO**), l'ordre de démarrage des machines (la base avant l'application), les configurations réseau à utiliser pour les tests de bascule ou lors d'un sinistre. 
+Ils permettent de regrouper logiquement un groupe de VM correspondant à un besoin métier ou opérationnel (ex: une application avec sa base de données) afin de configurer l'objectif de perte de données maximale admissible (**RPO**), l'ordre de démarrage (la base avant l'application), les configurations réseau pour les exercices ou en cas réel. 
 
 À noter qu'il est aussi possible de définir un niveau de priorité entre les VPG afin de prioriser le transfert de données en cas de problème de bande passante réseau.
 
@@ -60,7 +60,7 @@ le datacenter voulu -> cliquer sur l'onglet "Disaster Recovery Plan (DRP)".
 Sélectionner **Between two OVH Private Cloud solutions** puis cliquer sur `Activate Zerto DRP`{.action},
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_02.png){.thumbnail}
-La sélection du **Private Cloud** Primaire ainsi que le **datacenter** se fait automatiquement en se basant sur l'infrastructure par laquelle vous avez accédé.
+La sélection du **Private Cloud** Primaire ainsi que le **datacenter** se fait automatiquement en se basant sur l'infrastructure par laquelle vous avez accéder.
 Sélectionner dans le menu déroulant une adresse IP publique **libre** issue du bloc d'IP public attaché au **Private Cloud**. Elle sera utilisée pour la mise en place du lien sécurisé entre les infrastructures.
 Cliquer sur `Next`{.action},
 
@@ -82,7 +82,7 @@ Cliquer sur `Next`{.action},
 Configuration de la bonne prise en compte de la demande d'activation, comme indiqué celle-ci peut prendre jusqu'à une (1) heure, sous réserve que les informations fournies soient correctes (notamment si l'adresse IP n'est déjà utilisée par l'une de vos machines virtuelles, si c'est le cas l'activation échouera).
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_05.png){.thumbnail}
-Une fois l'activation effectuée, vous recevrez par courriel un résumé de la configuration de l'installation ainsi que les liens d'accès à l'interface Zerto de chacune des infrastructures.
+Une fois l'activation effectuer, vous recevrez par courriel une configuration de l'installation ainsi que les liens d'accès à l'interface Zerto de chacune des infrastructures.
 
 > [!primary]
 > Bonjour,
@@ -97,7 +97,7 @@ Une fois l'activation effectuée, vous recevrez par courriel un résumé de la c
 > 
 >   * URL        : https://zerto.pcc-192-0-2-2.ovh.com/
 > 
-> Vous pourrez vous authentifier avec vos comptes administrateurs de la même > façon que pour vSphere.
+> Vous pourrez vous authentifiez avec vos comptes administrateurs de la même > façon que pour vSphere.
 > 
 
 #### Depuis l'API OVH
@@ -110,7 +110,7 @@ L'interface est accessible depuis les deux (2) infrastructures via l'adresse :
 
 > [!warning]
 >
-> Comme indiqué dans le corps du courriel, les identifiants pour se connecter sont les même que ceux utiliser pour se connecter à l'interface vSphere.
+> Comme indiqué dans le corps du courriel, les identifiants pour se connecter sont mes même que ceux utiliser pour se connecter à l'interface vSphere.
 >
 
 Une fois identifier, vous arrivez sur un écran affichant le tableau de bord :
@@ -153,7 +153,7 @@ L'étape suivante consiste à sélectionner les VM qui vont faire partie du VPG.
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_04.png){.thumbnail}
 
-* Cliquer sur la flèche pointant vers la droite pour passer celle-ci dans le VPG
+* Cliquer sur la flèche pointant vers la droite pour passer celle si dans le VPG
 
 Continuer avec `NEXT`{.action}
 
@@ -164,19 +164,19 @@ On passe ensuite à l'étape de sélection du site distant :
 * **Recovery Site** : sélectionner le site distant (celui qui n'est pas local) au niveau de la liste 
 * **ZORG** : sélectionner **No Organization** dans la liste. Toute autre valeur affichera une erreur au moment de passer à l'étape suivante.
 
-Puis on passe à l'étape de définition des ressources distantes :
+Puis on passe à l'étape des définitions des ressources distantes :
 
-* **Hosts** : Sélectionner la ressource de calcul, qui peut être un **hôte seul** (indiqué par son adresse IP et précédé du nom du cluster entre crochets le cas échéant), un **Ressource Pool** (commençant par RP puis suivi du nom du cluster et pour finir par le nom du Ressource Pool) ou un **Cluster** (via son nom). Seul un **Ressource Pool** ou un **Cluster** doit être sélectionné (ici Cluster1).
-* **Datastore** : Sélectionner la ressource de stockage, qui peut être un **Datastore seul** (indiqué par son nom et précédé du nom du **Storage Cluster** entre crochets le cas échéant) ou un **Storage Cluster** (via son nom).
+* **Hosts** : Sélectionner la ressource de calcule, qui peut-être, un **host seul** (indiqué par son adresse IP et précédé du nom du cluster entre crochets le cas échéant), un **Ressource Pool** (commençant par RP puis suivi du nom du cluster et pour finir par le nom du Ressource Pool) ou un **Cluster** (via son nom). Seul un **Ressource Pool** ou un **Cluster** doit être sélectionné (ici Cluster1).
+* **Datastore** : Sélectionner la ressource de stockage, qui peut-être, un **Datastore seul** (indiqué par son nom et précédé du nom du **Storage Cluster** entre crochets le cas échéant) ou un **Storage Cluster** (via son nom).
 
-Laisser les autres valeurs telles quelles sauf besoins avancés.
+Laisser les autres valeurs telles quelles sauf besoins avancer.
 
 Continuer avec `NEXT`{.action}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_06.png){.thumbnail}
 
-À l'étape suivante, on peut éventuellement affiner la configuration pour le stockage.
-Laisser les autres valeurs telles quelles sauf besoins avancés.
+À l'étape suivante, on peut éventuellement affiniez la configuration pour le stockage.
+Laisser les autres valeurs telles quelles sauf besoins avancer.
 
 Continuer avec `NEXT`{.action}
 
@@ -186,7 +186,7 @@ Ensuite vient une partie importante, première étape de la configuration résea
 
 * **Failover/Move Network** : choisir le portgroup par défaut pour la bascule
 * **Failover Test Network** : choisir le portgroup pour les tests de bascule
-* **Recovery Folder** : choisir le dossier (ou alors / pour la racine) dans lequel les VM basculées sur le site de secours seront regroupées
+* **Recovery Folder** : choisir le dossier (ou alors / pour la racine) quand lequel les VM basculer sur le site seront ajouté
 
 > [!primary]
 > Les options de **Pre-recovery Script** et **Post-recovery Script** ne sont pas utilisables.
@@ -243,7 +243,7 @@ Si le texte du bouton est en gris, c'est qu'il n'y a pas de VPG éligible pour l
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_01.png){.thumbnail}
 
-Immédiatement, un écran apparait avec les VPG disponibles, le sens de réplication, le site de destination et si le niveau de protection est respecté (**Meeting SLA**).
+Immédiatement, un écran apparait avec les VGP disponibles, le sens de réplication, le site de destination et si le niveau de protection est correct (**Meeting SLA**).
 
 Vous allez alors plusieurs choix :
 
@@ -276,12 +276,12 @@ Il ne vous reste plus qu'à contrôler si tout fonctionne correctement sur le si
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_05.png){.thumbnail}
 
-Quand vous avec fini de vérifier le bon fonctionnement des machines basculées.
+Quand vous avec fini de contrôler les machines qui auront été basculer.
 Cliquer sur le petit carré rouge à droite du **Testing Failover**
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_06.png){.thumbnail}
 
-Dans la nouvelle fenêtre, il est possible d'indiquer si le test s'est déroulé de manière satisfaisante et de rajouter un commentaire.
+Dans la nouvelle fenêtre, indiquée si le test est un succès et vous pouvez rajouter un commentaire.
 
 Confirmer la fin du test avec `STOP`{.action}
 
@@ -295,14 +295,14 @@ En cas d'incident majeur sur le site principal ou dans le cadre d'un exercice en
 >
 > Le failover en mode **LIVE** sur Zerto Replication se fait en considérant le site principal comme indisponible, il faut donc avoir fait attention à la configuration réseaux de pour éviter tout conflit d'adressage IP et autre.
 >
-> L'ensemble des ressources qui seront démarrées sur le site secondaire vont devenir active au niveau du traitement de données 
+> L'ensemble des ressources qui seront démarrées sur le site secondaire vont devenir active au niveau du traitement de donnez 
 >
 > À noter que la réplication entre les deux sites est modifiée ou couper (voir plus loin).
 >
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_02.png){.thumbnail}
 
-Pour cela se connecter à l'interface Zerto Replication, basculer le sélecteur en bas à droite de l'interface sur **LIVE** (noter le changement de couleur du bandeau pour pour signaler que vous allez faire des actions qui peuvent avoir un impact sur la production) et cliquer sur `FAILOVER`{.action}.
+Pour cela se connecter à l'interface Zerto Replication, basculer le sélecteur en bas à droite de l'interface sur **LIVE** (noter le changement de couleur du bandeau pour pour signaler que vous allez faire des actions impactâtes) et cliquer sur `FAILOVER`{.action}.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_03.png){.thumbnail}
 
@@ -382,7 +382,7 @@ Au niveau du VPG, vous pouvez noter que la direction (via la flèche) de réplic
 
 ### Préparer et effectuer un retour en arrière
 
-Suivant comment a éfé fait le **Failover**, l'éventuel retour sur le site principal (cela n'est pas une obligation) peut nécessiter plusieurs actions.
+Suivant comment a éfé fait le **Failover**, l'éventuel retour sur le site principal (cela n'est pas une obligation) peut nécessité plusieurs actions.
 
 Si vous avez basculé avec du **Reverse Protection**, le retour arrière consiste à faire un **Failover Live** (se reporter à la partie idoine pour les actions à faire).
 
