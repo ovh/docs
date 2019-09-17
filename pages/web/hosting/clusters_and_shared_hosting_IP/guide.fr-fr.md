@@ -98,7 +98,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 
 
 ```bash
-213.251.182.103
+51.68.11.195
 ```
 
 
