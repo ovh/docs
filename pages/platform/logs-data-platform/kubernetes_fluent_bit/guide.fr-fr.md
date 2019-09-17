@@ -241,7 +241,7 @@ spec:
     spec:
       containers:
       - name: fluent-bit
-        image: fluent/fluent-bit:1.3
+        image: ovhcom/fluent-bit
         imagePullPolicy: Always
         ports:
           - containerPort: 2020
@@ -289,7 +289,7 @@ In this file you must specify the address of your cluster (here **gra2.logs.ovh.
 
 Upload this file with the following command:
 ```shell-session 
-$ kubectl create -f fluent-bit-configmap.yaml
+$ kubectl create -f fluent-bit-ds.yaml
 ```
 
 Verify that the pods are running correctly with the command: 
