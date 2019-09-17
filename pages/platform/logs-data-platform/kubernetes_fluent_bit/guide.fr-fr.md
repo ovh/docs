@@ -289,7 +289,7 @@ In this file you must specify the address of your cluster (here **gra2.logs.ovh.
 
 Upload this file with the following command:
 ```shell-session 
-$ kubectl create -f fluent-bit-configmap.yaml
+$ kubectl create -f fluent-bit-ds.yaml
 ```
 
 Verify that the pods are running correctly with the command: 
