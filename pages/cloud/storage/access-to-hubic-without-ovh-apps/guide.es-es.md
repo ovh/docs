@@ -7,7 +7,7 @@ section: hubiC
 
 ## Introducción 
 
-El servicio hubiC está basado en clusters de almacenamiento OpenStack Swift. Esto hace que sea posible acceder de distintas maneras. OVH recomienda utilizar el sitio web [www.hubic.com](http://www.hubic.com/){.external} para conectarse, aunque también pueden utilizarse otras herramientas.
+El servicio hubiC está basado en clusters de almacenamiento OpenStack Swift. Esto hace que sea posible acceder de distintas maneras. OVH recomienda utilizar el sitio web [www.hubic.com](https://hubic.com/en/){.external} para conectarse, aunque también pueden utilizarse otras herramientas.
 
 **Este tutorial explica cómo conectarse a hubiC de tres formas: Cyberduck (cliente Swift), Mountain Duck (disco en red) o un montaje SVFS.**
 
