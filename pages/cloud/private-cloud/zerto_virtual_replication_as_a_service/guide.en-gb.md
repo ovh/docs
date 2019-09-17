@@ -2,15 +2,14 @@
 title: Setting up Zerto Virtual Replication for your DRP
 slug: zerto-virtual-replication-vmware-vsphere-drp
 excerpt: Discover how to set up Zerto Virtual Replication between your Private Cloud platforms
-section: Services et options OVH
+section: OVH services and options
 ---
 
 **Last updated 30/08/2019**
 
-## Goal
 This guide will present the concepts and steps required to setup Zerto Virtual Replication on the Private Cloud platform
 
-**excerpt: Discover how to set up Zerto Virtual Replication between your Private Cloud platforms**
+**Discover how to set up Zerto Virtual Replication between your Private Cloud platforms**
 
 ## Prerequisites 
 
@@ -360,6 +359,6 @@ If you have selected **Reverse Protection** during the fail-over, the failback i
 
 If you have not enabled **Reverse Protection**, you need to create a new VPG, do a full sync and then do a **Failover Live** (refer to the relevant part of this guide).
 
-## To go further 
+## Go further 
 
 Discuss with other Zerto users on <https://community.ovh.com/>.
