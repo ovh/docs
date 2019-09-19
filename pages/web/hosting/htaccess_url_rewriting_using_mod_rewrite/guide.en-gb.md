@@ -58,7 +58,7 @@ Rewriterule ^(.*) http://www.example.com/$1 [QSA,L,R=301]
 RewriteEngine on
 Rewritecond %{HTTP_HOST} ^example.com
 Rewritecond %{REQUEST_URI} !^/MySite
-Rewriterule ^(.*)$ /MonSite/
+Rewriterule ^(.*)$ /MySite/
 ```
 
 
@@ -102,30 +102,12 @@ The mod_rewrite module enables you to rewrite URLs.
 
 
 ```
-RewriteEngine on
-Rewritecond %{HTTP_HOST} ^domain_name.tld$
-Rewriterule ^(.*) https://ssl5.ovh.net/~login_ftp/$1 [QSA,L,R=301]
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.example.com/$1 [R,L]
 ```
-
-
-
-- To only be redirected from specific websites:
-
-
-```
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^nom_domaine.tld$
-RewriteCond %{REQUEST_URI} ~094/page.php
-RewriteRule ^(.*) https://ssl5.ovh.net/~login_ftp/$1 [QSA,L,R=301]
-```
-
-
-
-
-##  
- 
 
 
 ## 
-To find out all about the .htaccess file: [Click here](https://www.ovh.co.uk/g1967.mutualise_tout_sur_le_fichier_htaccess)
+To find out all about the .htaccess file: [Click here](https://docs.ovh.com/gb/en/hosting/all_about_the_htaccess_file/)
 
