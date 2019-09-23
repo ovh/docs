@@ -110,7 +110,7 @@ A questo punto ti consigliamo di creare un altro utente, in modo da non utilizza
 
 
 
-## 
+## Con Windows
 
 - Scarica e installa la versione [2.7.10 di Python](https://www.python.org/downloads/release/python-2710/)
 
