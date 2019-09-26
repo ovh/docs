@@ -61,7 +61,6 @@ Before installing Tiller (the Helm server-side component) on your cluster, you n
 ```bash
 kubectl create serviceaccount --namespace kube-system tiller
 kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
-kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
 ```
 
 
@@ -90,6 +89,13 @@ Adding stable repo with URL: https://kubernetes-charts.storage.googleapis.com
 Adding local repo with URL: http://127.0.0.1:8879/charts
 $HELM_HOME has been configured at /Users/user/.helm.
 </code></pre>
+
+
+```sh
+kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
+```
+
+
 
 
 ### Securing your Helm installation
