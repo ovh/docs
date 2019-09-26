@@ -1,6 +1,6 @@
 
 ---
-title: Managed Kubernetes objects (pods, deployments, services...)
+title: Managed Kubernetes objects - pods, deployments, services
 excerpt: ''
 slug: managed-kubernetes-objects
 section: Technical resources
