@@ -61,7 +61,6 @@ Before installing Tiller (the Helm server-side component) on your cluster, you n
 ```bash
 kubectl create serviceaccount --namespace kube-system tiller
 kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
-kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
 ```
 
 
@@ -74,8 +73,6 @@ helm init
 Tiller (the Helm server-side component) has been installed into your Kubernetes Cluster.
 
 Please note: by default, Tiller is deployed with an insecure 'allow unauthenticated users' policy. To prevent this, run `helm init` with the --tiller-tls-verify flag. For more information on securing your installation, see the [official helm doc](https://docs.helm.sh/using_helm/#securing-your-helm-installation){.external}.
-
-Happy Helming!
 
 <pre class="console"><code>$ helm init
 Creating /Users/user/.helm
@@ -91,6 +88,11 @@ Adding local repo with URL: http://127.0.0.1:8879/charts
 $HELM_HOME has been configured at /Users/user/.helm.
 </code></pre>
 
+Now you need to patch the install to use the service account we defined before:
+
+```bash
+kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
+```
 
 ### Securing your Helm installation
 
