@@ -97,7 +97,7 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 
 ```bash
-213.251.182.103
+51.68.11.195
 ```
 
 
@@ -177,7 +177,7 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 
 ```bash
-213.251.182.106
+51.68.11.203
 ```
 
 
@@ -217,7 +217,7 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 
 ```bash
-213.251.182.107
+51.68.11.207
 ```
 
 
@@ -257,7 +257,7 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 
 ```bash
-213.251.182.110
+51.68.11.211
 ```
 
 
@@ -297,7 +297,7 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 
 ```bash
-213.251.182.111
+51.68.11.215
 ```
 
 
@@ -417,7 +417,7 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 
 ```bash
-213.251.182.114
+51.68.11.227
 ```
 
 

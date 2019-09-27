@@ -5,6 +5,8 @@ section: Configuration de l'hébergement
 order: 3
 ---
 
+**Dernière mise à jour le 17/09/2019**
+
 Vous trouverez dans ce guide toutes les adresses IP des hébergements web OVH. Cela vous permettra par exemple de trouver quelle adresse IP renseigner dans vos zones DNS, en fonction de :
 
 - votre cluster
