@@ -1,12 +1,12 @@
 ---
-title: Comment migrer votre base de donnees de SQL 4 vers MySQL 5.5
+title: Comment migrer votre base de donnees de SQL 4 vers MySQL 5.6
 slug: mutualise-comment-migrer-votre-base-de-donnees-de-sql-4-vers-mysql-55
 legacy_guide_number: 1957
-excerpt: Ce guide va vous permettre de migrer votre base de donnees de SQL 4 vers MySQL 5.5
+excerpt: Ce guide va vous permettre de migrer votre base de donnees de SQL 4 vers MySQL 5.6
 section: Bases de données
 ---
 
-Vous trouverez dans ce guide différentes informations et aides concernant la migration de la version SQL 4 vers la version MySQL 5.5 de vos bases de données.
+Vous trouverez dans ce guide différentes informations et aides concernant la migration de la version SQL 4 vers la version MySQL 5.6 de vos bases de données.
 
 Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovh.com/fr/hebergement-web/faq/){.external} disponibles.
 
@@ -35,12 +35,12 @@ Dans un premier temps il faut vous connecter à votre [espace client](https://ww
 
 Une fois identifié, sélectionnez votre hébergement concerné à gauche dans la partie Hébergement. Rendez-vous ensuite dans l'onglet Bases de données.
 
-Dans cet onglet vous verrez la liste de vos bases de données actuellement créées. Repérez  **la ligne qui concerne votre base en version 4** . Vous aurez le  **nom d'utilisateur**  et l' **adresse du serveur**  (passez votre souris dessus pour avoir le détail) qui vous serviront à l'étape suivante.
+Dans cet onglet vous verrez la liste de vos bases de données actuellement créées. Repérez  **la ligne qui concerne votre base en version 4** . Vous aurez le  **nom d'utilisateur**  et l' **adresse du serveur** qui vous serviront à l'étape suivante.
 
 Cliquez sur le  **rouage à droite**  : Vous pourrez ainsi  **changer le mot de passe**  de votre base de données, si vous ne le connaissez plus.
 
 
-![hosting](images/3774.png){.thumbnail}
+![hosting](images/changepassword.png){.thumbnail}
 
 
 ### Comment se connecter a votre base de donnees en version SQL 4 ?
@@ -50,16 +50,16 @@ Pour vous connecter à votre base de données en version SQL 4, vous avez deux p
 - Sur votre [espace client](https://www.ovh.com/manager/web/login/){.external} , dans la partie Hébergement & onglet SQL, cliquez sur le rouage à droite de votre base de données en SQL4, et cliquez sur " Accéder à phpMyAdmin " puis sur [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/){.external} (en bas de la page).
 
 
-![hosting](images/3775.png){.thumbnail}
+![hosting](images/go-to-phpmyadmin.png){.thumbnail}
 
 Une fois sur l'interface [phpmyadmin](https://phpmyadmin.ovh.net/old/){.external}, il faut rentrer vos identifiants :
 
+- Server = Adresse du serveur, que vous pouvez retrouver dans votre espace client, onglet SQL.
 - Username = Utilisateur de la base de données (En bleu sur la capture ci-dessus)
 - Password = Mot de passe de la base de données
-- Server Choice = Adresse du serveur, que vous pouvez retrouver dans votre espace client, onglet SQL. Par exemple : sql6.xxl sur la capture ci-dessus.
 
 
-![hosting](images/3223.png){.thumbnail}
+![hosting](images/phpmyadminold.png){.thumbnail}
 
 
 ## Exporter, vider, et supprimer votre base de donnees en version SQL 4
@@ -109,19 +109,19 @@ Il faudra ensuite patienter un délai de 10-15 minutes pour que votre base soit 
 ![hosting](images/3776.png){.thumbnail}
 
 
-## Créer et restaurer votre base de donnees en version MySQL 5.5.
+## Créer et restaurer votre base de donnees en version MySQL 5.6.
 
-### Comment créer votre base de donnees en version MySQL 5.5 ?
-Maintenant que vous avez supprimé votre base de données en version SQL4, il vous faut maintenant en créer une nouvelle en version MySQL 5.5. Pour cela rendez-vous sur votre [espace client](https://www.ovh.com/manager/web/login/){.external}, section Hébergement, onglet SQL.
+### Comment créer votre base de donnees en version MySQL 5.6 ?
+Maintenant que vous avez supprimé votre base de données en version SQL4, il vous faut maintenant en créer une nouvelle en version MySQL 5.6. Pour cela rendez-vous sur votre [espace client](https://www.ovh.com/manager/web/login/){.external}, section Hébergement, onglet SQL.
 
 Ici, cliquez sur le bouton Créer une base de données.
 
-Choisissez votre moteur MySQL et la version uniquement disponible pour le moment : 5.5, puis cliquez sur Suivant.
+Choisissez votre moteur MySQL et la version uniquement disponible pour le moment : 5.6, puis cliquez sur Suivant.
 
 Il faudra patienter 5 à 10 minutes maximum, le temps que la base se créée. Vous pouvez suivre cette étape dans l'onglet "Plus + - Tâches en cours".
 
 
-### Comment restaurer/importer votre sauvegarde, dans votre base de donnees en version MySQL 5.5 ?
+### Comment restaurer/importer votre sauvegarde, dans votre base de donnees en version MySQL 5.6 ?
 Pour restaurer votre sauvegarde de base de données, il vous suffit de suivre [ce guide]({legacy}1393){.ref}.
 
 
