@@ -132,7 +132,7 @@ A time series is composed by:
 
 We just explain the OVH Metrics engine time series data model, as you know the platform support lots of push and query protocols.
 
-Let's look at differents protocol data models mappings.
+Let's look at different protocol data models mappings.
 
 #### OpenTSDB
 
@@ -155,7 +155,7 @@ When pushing an [OpenTSDB](../protocol_opentsdb/guide.fr-fr.md){.ref} data point
 - The **metric** fields is linked to the **class** name
 - The **timestamp** is the same in the two protocols
 - The **value** is the same in the two protocols
-- The **tags** is linked to **labels** keu/value list
+- The **tags** is linked to **labels** key/value list
 
 **Attributes** are not supported in this protocol
 
@@ -196,7 +196,7 @@ The interesting part is under the **metric** JSON key, each series is an element
 
 #### InfluxDB
 
-In [InfluxDB](../protocol_influxdb/guide.fr-fr.md){.ref}, the series name is split, there is a common prefix at the start of the line, and several specifc suffix just before the timestamp. One line can create several time series depending of the count of suffixes
+In [InfluxDB](../protocol_influxdb/guide.fr-fr.md){.ref}, the series name is split, there is a common prefix at the start of the line, and several specific suffix just before the timestamp. One line can create several time series depending of the count of suffixes
 After the prefix, there is a list of keys/values separated by comma, this is the equivalent to labels. The last number is the timestamp.
 
 Time series example:

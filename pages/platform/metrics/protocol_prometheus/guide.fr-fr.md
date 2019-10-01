@@ -82,9 +82,9 @@ A few binary arithmetic operators exists in PromQL and can be used on the Metric
 | or | union | <i class="fas fa-check"></i> |
 | unless | complement | <i class="fas fa-check"></i> |
 
-**Modulo** (%) and **exponentiation** (^) are **not yet supported** accross several metrics. They both can still be applied between metrics and scalar value.
+**Modulo** (%) and **exponentiation** (^) are **not yet supported** across several metrics. They both can still be applied between metrics and scalar value.
 
-For all operators, the same precedance applies than in promQL.
+For all operators, the same precedence applies than in promQL.
 
 #### Vector matching
 
@@ -200,7 +200,7 @@ Our second example here will compute the rate of the os.cpu metric for the host 
 ```shell-session
 $ curl 'https://u:READ_TOKEN@prometheus.REGION.metrics.ovh.net/api/v1/query_range?query=sum(rate(os.cpu\{host="1"\}\[1m\]))&start=1533127072.115&end=1533127472.115&step=2m'
 ```
-To select a Time-series stored in Metrics with unvalid Prometheus character as "-" you can also use the PromQL `{__name__="http-requests-total"}` syntax as Time series matcher expression.  Matchers other than = (!=, =~, !~) may also be used.
+To select a Time-series stored in Metrics with invalid Prometheus character as "-" you can also use the PromQL `{__name__="http-requests-total"}` syntax as Time series matcher expression.  Matchers other than = (!=, =~, !~) may also be used.
 
 ## Go further
 
