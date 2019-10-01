@@ -3,7 +3,6 @@ title: 'Boot an instance with both public and private interfaces'
 excerpt: 'Boot an instance with both public and private interfaces'
 slug: instance-public-private
 section: Networking
-hidden: false
 ---
 
 # Introduction
