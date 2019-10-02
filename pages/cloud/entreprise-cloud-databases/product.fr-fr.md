@@ -1,6 +1,6 @@
 ---
 title: Enterprise Cloud Databases
-slug: enterpriseclouddatabases
-excerpt: L'offre managée de base de données PostgreSQL par OVH.
-sections: Démarrer avec l'offre managée
+slug: enterprise-cloud-databases
+excerpt: Les offres de base de données managées par OVH
+sections: Démarrer avec votre cluster PostgreSQL, Informations techniques
 ---
