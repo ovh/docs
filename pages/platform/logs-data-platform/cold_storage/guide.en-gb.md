@@ -37,7 +37,7 @@ As soon as you click on `Save`{.action}, the cold storage is activated. Here are
 > As soon as the feature is activated, your logs will be stored for the specified duration. The effect is immediate so the billing of this feature will be also immediate.
 > 
 > - Deactivating the cold storage on a stream will prevent the producing of new archives but it won't delete the already produced archives. These archives will be kept for the duration configured.
-> - Changing the retention duration WILL delete any archive exceeding the new retention (Ex: choosing a one year retention will implicitely delete all archives older than one year).
+> - Changing the retention duration WILL delete any archive exceeding the new retention (Ex: choosing a one year retention will implicitly delete all archives older than one year).
 > - We push a daily archive of the 2 days old data you pushed.
 > - When you activate the feature for the first time we can't create an archive for data older than two days before the activation.
 > - Deleting the stream WILL delete any archive associated. The stream must be alive to be able to keep its archive.
