@@ -1,7 +1,7 @@
 ---
-title: Liste des adresses IP des clusters et hebergements web
+title: 'Liste des adresses IP des clusters et hebergements web'
 slug: liste-des-adresses-ip-des-clusters-et-hebergements-web
-section: Configuration de l'hébergement
+section: 'Configuration de l''hébergement'
 order: 3
 ---
 
@@ -787,3 +787,4 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 
 ```bash
 91.134.248.249
+```
