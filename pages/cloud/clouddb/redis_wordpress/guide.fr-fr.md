@@ -37,7 +37,7 @@ Vous disposez d'un site ou d'un blog propulsé par WordPress ? Découvrez commen
 ## WordPress + Redis = ??
 Redis est un outil Open Source, permettant de maintenir des bases de données NoSQL en mémoire vive (RAM) et de mettre des objets en cache. L'objectif est la rapidité. Il est aujourd'hui en constante progression, adopté par Twitter, Github, Flickr, Pinterest et bien d'autres. Nous n'allons pas aborder ici plus amplement ce qu'est Redis, mais n'hésitez pas à lire la [documentation officielle](https://redis.io/documentation){.external} qui est très bien fournie.
 
-WordPress, de son coté, peut être consommateur de ressources. Sessions utilisateurs, requêtes en base de données, ... Leurs développeurs nous permettent de mettre ces "objets" en cache, c'est à dire de les stocker de manière non persistente.
+WordPress, de son coté, peut être consommateur de ressources. Sessions utilisateurs, requêtes en base de données, ... Leurs développeurs nous permettent de mettre ces "objets" en cache, c'est à dire de les stocker de manière non persistante.
 
 Vous l'aurez compris, les gains seront plus ou moins significatifs en fonction de votre usage des "objets". Un site avec du contenu statique, comme un blog, sera beaucoup moins optimisable qu'un site marchand, un portail d'information, etc.
 
@@ -138,15 +138,15 @@ Si la connexion est réussie, vous devriez voir "Server is running: +PONG"
 
 Et dans votre terminal ouvert sur votre base Redis, un "PING"
 
-Bravo ! tout fonctionne coté base. On passe maintenant à la configuration de WordPress.
+Bravo ! Tout fonctionne coté base. On passe maintenant à la configuration de WordPress.
 
 
 ## Configurer WordPress avec Redis
-La base fonctionne, reste à configurer WordPress pour l'utiliser. Si vous avez déja un plugin de cache **pensez à désactiver l'Object Cache** (c'est le cas avec W3TC par exemple).
+La base fonctionne, reste à configurer WordPress pour l'utiliser. Si vous avez déjà un plugin de cache **pensez à désactiver l'Object Cache** (c'est le cas avec W3TC par exemple).
 
 
 ### Modification de WP-CONFIG.PHP
-Via un Editeur de texte, ouvrez le fichier wp-config.php à la racine de votre WordPress. Nous allons rajouer ces 3 lignes juste après les Key Salts.
+Via un Editeur de texte, ouvrez le fichier wp-config.php à la racine de votre WordPress. Nous allons rajouter ces 3 lignes juste après les Key Salts.
 
 
 ```php
@@ -174,7 +174,7 @@ Si vous êtes allergiques aux plugins, n'hésitez pas à faire une installation 
 Ce plugin va rajouter un fichier (ou modifier) le fichier object-cache.php dans le dossier wp-content/ de votre WordPress. Si le plugin n'y arrive pas, rajoutez-le manuellement (confer la page du plugin pour plus de détails).
 
 
-### Parametrage du plugin
+### Paramétrage du plugin
 Si tout est installé, rendez-vous sur votre Admin WordPress pour Redis.
 
 Vous devriez voir quelque chose ressemblant à ceci :
