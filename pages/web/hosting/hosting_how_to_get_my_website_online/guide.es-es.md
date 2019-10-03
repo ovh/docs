@@ -6,7 +6,7 @@ section: 'Primeros pasos'
 order: 2
 ---
 
-**Última actualización: 24/07/2018**
+**Última actualización: 16/04/2019**
 
 ## Objetivo
 
@@ -61,17 +61,24 @@ Asegúrese de tener los archivos del sitio web que quiera publicar. Si va a migr
 
 #### 2.2. Conectarse al espacio de almacenamiento
 
-Para conectarse al espacio de almacenamiento, necesitará un usuario FTP, la contraseña y la dirección del servidor. Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no tiene la contraseña, consulte la guía [Cambiar la contraseña de un usuario FTP](https://docs.ovh.com/es/hosting/cambiar-contrasena-usuario-ftp/){.external}.
+Para conectarse al espacio de almacenamiento, necesitará lo siguiente:
 
-Para consultar la dirección del servidor o el usuario necesarios para acceder al espacio de almacenamiento, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} y haga clic en `Alojamientos`{.action} en la columna izquierda. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}.
+- un usuario FTP o SSH activo;
+- la contraseña de dicho usuario FTP o SSH;
+- la dirección del servidor;
+- el puerto de conexión al servidor.
+
+Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de esta información, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} en la sección **Web** y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}.
 
 ![Instalación de un sitio web](images/get-website-online-step1.png){.thumbnail}
+
+Se mostrará la información relativa a su espacio de almacenamiento. Entre esa información se encuentran los datos necesarios para conectarse a este último. Para más información, consulte nuestra guía [Conectarse al espacio de almacenamiento de un alojamiento web](../conexion-espacio-almacenamiento-ftp-alojamiento-web/){.external}. Si no recuerda la contraseña, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/){.external}.
 
 Una vez que disponga de todos los datos necesarios, podrá conectarse a su espacio de almacenamiento de tres formas diferentes:
 
 - **Explorador FTP de OVH**: Le permite acceder al espacio de almacenamiento desde un navegador web. Para utilizarlo, en la pestaña `FTP - SSH`{.action}, haga clic en el botón `Explorador FTP`{.action}.
 
-- **Cliente FTP**: Deberá instalar en su ordenador un programa compatible con el protocolo FTP (como FileZilla, por ejemplo). Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del programa.
+- **Cliente FTP o SFTP**: Deberá instalar en su ordenador un programa compatible con el protocolo FTP o SFTP (por ejemplo, FileZilla). Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del programa.
 
 - **Acceso SSH**: Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos desde un terminal. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVH](https://www.ovh.es/hosting/){.external} son compatibles.
 
@@ -144,6 +151,8 @@ Le recomendamos que, si necesita ayuda para publicar su sitio web, se ponga en c
 [Migrar un sitio web y el correo a OVH](https://docs.ovh.com/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}
 
 [Instalar un sitio web con los módulos en un clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/){.external}
+
+[Conectarse al espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/){.external}
 
 [Cambiar la contraseña de un usuario FTP](https://docs.ovh.com/es/hosting/cambiar-contrasena-usuario-ftp/){.external}
 
