@@ -1,12 +1,11 @@
 ---
-title: Accès à distance
-keywords: Accès, Distance, Remote
-description: Accès à distance
+title: 'Accès àdistance'
+keywords: 'Accès, Distance, Remote'
+description: 'Accès à distance'
 slug: acces-a-distance
-excerpt: Si vous avez besoin d'accéder ou de modifier la configuration d' OverTheBox à distance, vous pouvez le faire. Il suffit d'activer cette fonctionnalité via le manager.
-section: Fonctionnalités principales
+excerpt: 'Si vous avez besoin d''accéder ou de modifier la configuration d'' OverTheBox àdistance, vous pouvez le faire. Il suffit d''activer cette fonctionnalitévia le manager.'
+section: 'Fonctionnalités principales'
 ---
-
 
 ## Configuration
 - Rendez-vous sur votre espace client partie **OverTheBox** : [https://www.ovhtelecom.fr/manager/#/overTheBox/](https://www.ovhtelecom.fr/manager/#/overTheBox/){.external}
