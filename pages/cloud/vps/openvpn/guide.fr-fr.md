@@ -1,11 +1,10 @@
 ---
-title: Déployer un serveur OpenVPN en un clic
-description: Ce guide détaille comment déployer un serveur OpenVPN en un clic avec les applications pré-installées sur VPS.
+title: 'Déployer un serveur OpenVPN en un clic'
+description: 'Découvrez comment déployer un serveur OpenVPN en un clic avec les applications pré-installées sur VPS.'
 slug: openvpn
-excerpt: Découvrez ici comment instancier un VPS avec l’application OpenVPN pré-installée.
-section: Utilisation avancée
+excerpt: 'Découvrez ici comment instancier un VPS avec l’application OpenVPN pré-installée.'
+section: 'Utilisation avancée'
 ---
-
 
 ## Introduction
 OpenVPN est un logiciel permettant de créer un Réseau Virtuel Privé (ou Virtual Private Network), plus communément appelé VPN.
