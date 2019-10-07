@@ -46,7 +46,7 @@ Chaque nœud dispose de disques durs internes redondés (RAID 10) choisis pour l
 
 Vos données sont répliquées à travers tous les nœuds du cluster.
 
-- **Stockage des sauvegardes**    /!\
+- **Stockage des sauvegardes**
 
 Basés sur une infrastructure redondée de serveurs de stockage OVH, ils conservent de manière déportée les sauvegardes des nœuds.
 
