@@ -48,7 +48,7 @@ Geben Sie Ihre Account-Daten ein:
 
 |Information|Beschreibung|
 |---|---|
-|Name|Geben Sie den Namen ein, der als Absender angezeigt werden soll, wenn E-Mails von dieser Adresse aus versendet werden.|
+|Name|Geben Sie die vollständige E-Mail-Adresse ein.|
 |E-Mail-Adresse|Geben Sie die vollständige E-Mail-Adresse ein.|
 |Passwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
 

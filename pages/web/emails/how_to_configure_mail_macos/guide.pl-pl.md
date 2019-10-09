@@ -1,7 +1,7 @@
 ---
-title: Konfiguracja konta e-mail w aplikacji Mail na urządzeniach macOS
+title: 'Konfiguracja konta e-mail w aplikacji Mail na urządzeniach macOS'
 slug: konfiguracja-mail-macos
-excerpt: Dowiedz się, jak skonfigurować konto MX Plan w aplikacji Mail na urządzeniach z systemem macOS El Capitan, Sierra i High Sierra
+excerpt: 'Dowiedz się, jak skonfigurować konto MX Plan w aplikacji Mail na urządzeniach z systemem macOS El Capitan, Sierra i High Sierra'
 section: Apple
 ---
 
@@ -48,7 +48,7 @@ Wpisz informacje dotyczące Twojego konta:
 
 |Informacja|Opis|
 |---|---|
-|Nazwisko|Wpisz nazwę nadawcy, która ma się wyświetlać podczas wysyłki e-maili przy użyciu tego konta.|
+|Nazwisko|Wpisz kompletny adres e-mail.|
 |Konto e-mail|Wpisz kompletny adres e-mail.|
 |Hasło|Wpisz hasło przypisane do tego konta e-mail.|
 

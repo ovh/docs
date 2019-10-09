@@ -5,7 +5,6 @@ slug: email_partilhado_guia_de_configuracao_de_mail_para_mac_-_el_capitan
 legacy_guide_number: g1965
 ---
 
-
 ## A sua conta de e-mail OVH no seu Mac com 1 clique
 A partir do seu Mac aceda ao seguinte link: [https://ssl0.ovh.net/roundcube/auto/](https://ssl0.ovh.net/roundcube/auto/).
 Introduza o seu endereço de e-mail OVH, clique em "Gerar", e siga as etapas.
@@ -33,7 +32,7 @@ Selecione "Adicionar uma outra conta de e-mail" a fim de adicionar a sua conta d
 Para configurar a sua conta de e-mail é-lhe pedido que introduza as seguintes informações:
 
 
-- Nome completo: O nome de apresentação desejado no e-mail do Mail do Mac.
+- Nome: O seu endereço de e-mail na íntegra.
 
 - Endereço e-mail: O seu endereço de e-mail na íntegra.
 

@@ -48,7 +48,7 @@ Inserisci le informazioni del tuo account:
 
 |Informazione|Descrizione|
 |---|---|
-|Nome|Indica il nome che comparirà come mittente dei messaggi inviati da questo indirizzo|
+|Nome|Inserisci l’indirizzo email completo|
 |Indirizzo email|Inserisci l’indirizzo email completo|
 |Password|Inserisci la password associata all’account|
 
