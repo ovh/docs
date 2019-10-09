@@ -1,7 +1,7 @@
 ---
-title: Konfigurace účtů služby MX Plan na e-mailovém klientu macOS
+title: 'Konfigurace účtů služby MX Plan na e-mailovém klientu macOS'
 slug: konfigurace-mxplan-macos
-excerpt: Seznamte se s postupem pro konfiguraci účtů služby MX Plan na macOS El Capitan, Sierra a High Sierra
+excerpt: 'Seznamte se s postupem pro konfiguraci účtů služby MX Plan na macOS El Capitan, Sierra a High Sierra'
 section: Apple
 ---
 
@@ -48,7 +48,7 @@ Zadejte informace o svém e-mailovém účtu:
 
 |Informace|Popis|
 |---|---|
-|Jméno|Zadejte jméno, které bude při odesílání e-mailů z tohoto účtu uvedeno jako odesílatel. |
+|Jméno|Zadejte celou e-mailovou adresu. |
 |E-mailová adresa|Zadejte celou e-mailovou adresu.|
 |Heslo|Zadejte heslo ke svému e-mailovému účtu.|
 
