@@ -1,13 +1,13 @@
 ---
-title: Changer la langue d’un bureau virtuel
-keywords: Langue, Changer, Preference
+title: 'Changer la langue d’un bureau virtuel'
 slug: change-language
-excerpt: Par defaut, votre bureau virtuel est livre en francais. Voyons la methode permettant de changer la langue de ce dernier.
+keywords: 'Langue, Changer, Preference'
+excerpt: 'Par defaut, votre bureau virtuel est livre en francais. Voyons la methode permettant de changer la langue de ce dernier.'
 section: Utilisation
 ---
 
-
 ## Methode
+
 **La modification de la langue utilisée par Windows se réalise directement sur le bureau virtuel.**
 
 - Après avoir lancé votre bureau virtuel, rendez-vous dans le **Panneau de configuration**
