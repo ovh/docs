@@ -1,8 +1,8 @@
 ---
-title: Configuring an email address on the macOS Mail app
+title: 'Configuring an email address on the macOS Mail app'
 slug: guide-configuring-mail-on-macos
-excerpt: Find out how to configure an MX Plan email address on the Mail app, for the following macOS operating systems - El Capitan, Sierra and High Sierra
-section: Configure on computer
+excerpt: 'Find out how to configure an MX Plan email address on the Mail app, for the following macOS operating systems - El Capitan, Sierra and High Sierra'
+section: 'Configure on computer'
 order: 3
 ---
 
@@ -49,7 +49,7 @@ Enter your account information:
 
 |Information|Description|
 |---|---|
-|Name|Enter the sender name that you wish to be displayed when sending emails from this address.|
+|Name|Enter your full email address.|
 |Email address|Enter your full email address.|
 |Password|Enter your email address' password.|
 
