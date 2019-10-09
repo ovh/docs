@@ -1,6 +1,6 @@
 ---
-title: Sähköpostiosoitteen konfigurointi macOS Mail-sovelluksessa
-excerpt: Opi konfiguroimaan MX Plan -sähköpostiosoite Mail-sovelluksessa El Capitan, Sierra ja High Sierra 
+title: 'Sähköpostiosoitteen konfigurointi macOS Mail-sovelluksessa'
+excerpt: 'Opi konfiguroimaan MX Plan -sähköpostiosoite Mail-sovelluksessa El Capitan, Sierra ja High Sierra'
 slug: jaettu_sahkoposti_sahkopostin_konfigurointiohje_mac_-_el_capitan
 section: Apple
 ---
@@ -48,7 +48,7 @@ Syötä nyt tilisi tiedot:
 
 |Tieto|Kuvaus|
 |---|---|
-|Nimi|Syötä nimi, joka näkyy lähettäjänä, kun viestejä lähetetään tällä osoitteella.|
+|Nimi|Syötä täydellinen sähköpostiosoite.|
 |Sähköpostiosoite|Syötä täydellinen sähköpostiosoite.|
 |Salasana|Syötä sähköpostiosoitteen salasana.|
 
