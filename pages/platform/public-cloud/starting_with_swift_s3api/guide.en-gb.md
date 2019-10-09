@@ -33,6 +33,7 @@ S3 tokens are different, you need 2 parameters (**access** and **secret**) to ge
 These credentials will be safely stored in Keystone. To generate it:
 
 With python-openstack client:
+
 ```bash
 user@host:~$ openstack ec2 credentials create
 +------------+----------------------------------------------------------------------------------------------------------------------------+
@@ -49,6 +50,7 @@ user@host:~$ openstack ec2 credentials create
 ```
 
 With curl:
+
 ```bash
 user@host:~$ curl -s -D headers -H "Content-Type: application/json" -d '
 { "auth": {
@@ -113,11 +115,13 @@ s3api =
 ## Use aws client
 
 List buckets (containers):
+
 ```bash
 user@host:~$ aws --profile default s3 ls
 ```
 
 Create a new bucket:
+
 ```bash
 user@host:~$ aws --profile default s3 mb s3://bucket
 ```
@@ -125,21 +129,25 @@ S3 no longer supports creating bucket names that contain uppercase letters or un
 S3 Buckets can only be created on PCS policy (Object Storage)
 
 Upload a local file to Swift:
+
 ```bash
 user@host:~$ aws --profile default s3 cp file.txt s3://bucket/file.txt
 ```
 
 Download an object from Swift:
+
 ```bash
 user@host:~$ aws --profile default s3 cp s3://bucket/file.txt file.txt
 ```
 
 Delete a Swift object:
+
 ```bash
 user@host:~$ aws --profile default s3 rm s3://bucket/file.txt
 ```
 
 Delete a bucket:
+
 ```bash
 user@host:~$ aws --profile default s3 rb s3://bucket
 ```
