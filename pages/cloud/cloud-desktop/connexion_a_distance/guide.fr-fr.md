@@ -1,12 +1,12 @@
 ---
-title: Connexion à distance
+title: 'Connexion à distance'
 slug: connexion-a-distance
-excerpt: Decouvrez les methodes de connexion a votre bureau virtuel
-section: Les bases
+excerpt: 'Decouvrez les methodes de connexion a votre bureau virtuel'
+section: 'Les bases'
 ---
 
-
 ## Acces via le client Web
+
 **Il est possible d'accéder à votre bureau virtuel depuis le navigateur de votre choix.**
 
 Pour ce faire, rendez-vous à l'adresse indiquée sur le mail reçu après livraison de votre Cloud Desktop. Votre navigateur par défaut s'ouvre et affiche une fenêtre sur laquelle vous pouvez choisir entre installer VMware Horizon Client ou VMware Horizon HTML Access.
