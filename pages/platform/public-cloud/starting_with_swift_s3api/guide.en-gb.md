@@ -1,13 +1,12 @@
 ---
-title: Getting started with the Swift S3 API
-excerpt: Getting started with the Swift S3 API
+title: 'Getting started with the Swift S3 API'
+excerpt: 'Getting started with the Swift S3 API'
 slug: getting_started_with_the_swift_S3_API
-section: API reference/CLI
-hidden: false
+section: 'API reference/CLI'
 ---
 
+## Introduction
 
-##
 The Swift s3api middleware providing S3 API compatibility has been enabled on all Public Cloud regions.
 This guide will help you access objects in Swift using a software designed to interact with S3-compatible endpoints.
 
