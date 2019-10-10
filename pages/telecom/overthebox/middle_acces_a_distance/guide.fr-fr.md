@@ -10,14 +10,14 @@ section: 'Fonctionnalités principales'
 ## Configuration
 - Rendez-vous sur votre espace client partie **OverTheBox** : [https://www.ovhtelecom.fr/manager/#/overTheBox/](https://www.ovhtelecom.fr/manager/#/overTheBox/){.external}
 - Cliquez sur votre service **OverTheBox**
-- Cliquez sur **" Accès à distance "**
+- Cliquez sur **“ Accès à distance ”**
 
-Chose à inscrire dans la partie " **Ajouter un accès à distance**" :
+Informations à inscrire dans la partie “**Ajouter un accès à distance**” :
 
 - **IP autorisée** : C'est la seule adresse IP publique qui sera autorisée à se connecter sur l'OverTheBox à distance. Laissez ce champ vide si l'IP autorisée doit être celle de votre connexion actuelle.
 - **Port exposé (443, 22, ...)** : C'est le port de l' **OverTheBox** qui sera contacté lors de l'accès à distance. Choisir **443** pour un accès à distance via le navigateur ou **22** pour un accès via SSH
-- **Date d'expiration** : Date à laquelle l'accès distance sera fermé.
-- **Clef publique** : Permet une connexion sécurisée, elle est utile pour les connexion de type SSH.
+- **Date d'expiration** : Date à laquelle l'accès à distance sera fermé.
+- **Clef publique** : Permet une connexion sécurisée, elle est obligatoire pour les connexions de type SSH.
 
 
 ## Exemple
