@@ -8,7 +8,7 @@ section: 'Configurations techniques complexes'
 ---
 
 ## Configuration
-- Connectez vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} en tant qu'administrateur,
+- Connectez vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} en tant qu'administrateur
 - Rendez vous dans l'onglet **" Network > Interfaces "**
 - Éditez la configuration de l'interface **IF0**
 - Dans le champ "Protocol", sélectionnez "Unmanaged"

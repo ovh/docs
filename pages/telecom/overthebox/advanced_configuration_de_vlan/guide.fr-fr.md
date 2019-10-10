@@ -11,7 +11,6 @@ section: 'Configurations techniques complexes'
 - Rendez-vous dans  **Network**  >  **Switch**  >  **go to expert mode**
 - Cliquez sur **Add** puis inscrivez l'ID **666** sur la ligne venant d'apparaitre.
 - Cliquez sur " **Save & Apply** "
-- 
 
 ## Autre solution
 Rendez-vous dans  **Network**  >  **Interfaces**  > puis cliquez " **Add new interface** ” en bas à gauche de la page.
