@@ -1,12 +1,11 @@
 ---
-title: Installation manuelle OverTheBox IT
+title: 'Installation manuelle OverTheBox IT'
 slug: installation-manuelle
-excerpt: Si vous ne passez pas par l'assistant afin d'effectuer l'installation, il est impératif de suivre ce guide afin de réaliser l'enregistrement de votre OverTheBox et l'intégration de vos connexions internet sur cette dernière.
-section: Installation manuelle
+excerpt: 'Si vous ne passez pas par l''assistant afin d''effectuer l''installation, il est impératif de suivre ce guide afin de réaliser l''enregistrement de votre OverTheBox et l''intégration de vos connexions Internet sur cette dernière.'
+section: 'Installation manuelle'
 ---
 
-
-## 1. Enregistrement au service
+## 1. Enregistrement du service
 
 
 > [!alert]
@@ -33,7 +32,7 @@ section: Installation manuelle
 
 ![overthebox](images/4287.png){.thumbnail}
 
-- Modifiez l' **Identifiant du périphérique**, il faut alors indiquer le **"Device ID"**.
+- Modifiez l' **identifiant du périphérique**, il faut alors indiquer le **"Device ID"**.
 
 
 ![overthebox](images/4288.png){.thumbnail}
@@ -74,7 +73,7 @@ Cette opération dure 30 secondes, le DHCP sera ensuite géré par votre **OverT
 
 ![overthebox](images/4309.png){.thumbnail}
 
-- Rafraichissez ensuite la configuration réseau de votre ordinateur afin que ce dernier soit désormais pris en charge par l' **OverTheBox**, pour ce faire :
+- Rafraichissez ensuite la configuration réseau de votre ordinateur afin que ce dernier soit désormais pris en charge par l' **OverTheBox**. Pour ce faire :
     - En **Ethernet RJ45** : débranchez et rebranchez le câble RJ45.
     - En **Wifi** : coupez le Wifi et réactivez-le.
 - Assurez vous que l'installation se soit bien déroulée en vérifiant votre **IP publique** sur le site [http://monip.org/](http://monip.org/){.external}. Vous devez obtenir une IP similaire à la suivante :
@@ -104,7 +103,7 @@ ipconfig /renew
 > 
 
 
-## 3. Ajout d'une connexion supplémentaire
+## 3. Ajout d'une connexion supplémentaire
 - Avant de brancher le modem supplémentaire, vérifiez que ce dernier possède **un sous réseau différent** des autres modems.
 
 **Exemple** : Le premier modem possède l'IP 192.168. **0** .1 et le deuxième 192.168. **1** .1
