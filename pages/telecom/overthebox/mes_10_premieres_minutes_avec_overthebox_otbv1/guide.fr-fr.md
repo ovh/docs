@@ -127,7 +127,7 @@ Un assistant d'installation se lance, **nous vous invitons à suivre toutes les 
 
 
 ## Décodeur TV
-Si vous devez utiliser la Télévision via l'un des modems pris en charge par **OverTheBox**, veuillez suivre la procédure décrite sur le guide suivant : [Créer un bail DHCP permanent / Intégration d'un Décodeur TV](../../middle_creer_un_bail_dhcp_permanent/guide.fr-fr.md){.ref}.
+Si vous devez utiliser la télévision via l'un des modems pris en charge par **OverTheBox**, veuillez suivre la procédure décrite sur le guide suivant : [Créer un bail DHCP permanent / Intégration d'un Décodeur TV](../../middle_creer_un_bail_dhcp_permanent/guide.fr-fr.md){.ref}.
 
 
 ## Branchements de l'OverTheBox sur un switch
