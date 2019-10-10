@@ -1,7 +1,7 @@
 ---
 title: 'Mes 10 premières minutes avec OverTheBox Intel'
 slug: mes-10-premieres-minutes-avec-overthebox-intel
-excerpt: 'Ce guide vous assiste à l''installation et à la configuration de votre OverTheBox sur 2 connexions Internet ou plus, étape par étape.  Il est impératif de suivre cette procédure dans l''ordre proposé afin d''éviter toute erreur.'
+excerpt: 'Ce guide vous assiste à l''installation et à la configuration de votre OverTheBox sur 2 connexions Internet ou plus, étape par étape.  Il est impératif de suivre cette procédure dans l''ordre proposé afin d''éviter toute erreur.'
 section: 'Guides d''installation'
 ---
 
@@ -132,3 +132,4 @@ Si vous devez utiliser la Télévision via l'un des modems pris en charge par **
 
 ## Branchements de l'OverTheBox sur un switch
 Cette section est facultative, elle vous explique comment utiliser votre **OverTheBox**  sur un  **switch réseau**. Pour ce faire, la configuration n'est pas à changer (hormis celle de votre switch), il vous suffit de modifier les branchements et tout connecter sur le switch.
+
