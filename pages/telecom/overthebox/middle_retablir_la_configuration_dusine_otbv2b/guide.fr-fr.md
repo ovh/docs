@@ -124,7 +124,7 @@ Cette image permettra à votre clef USB de devenir le "support de boot" de l' **
 
 
 ### Création de la clef bootable sous Mac OS
-Toute l'opération sera fera en lignes de commande, veuillez donc ouvrir le **Terminal**
+Toute l'opération se fera en ligne de commande, veuillez donc ouvrir le **Terminal**
 
 - Téléchargez l'image **"Rescue"** via la commande suivante
 
@@ -171,7 +171,7 @@ Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minut
 
 
 ### Création de la clef bootable sous Linux
-Toute l'opération sera fera en lignes de commande, veuillez donc ouvrir le **Terminal**
+Toute l'opération se fera en ligne de commande, veuillez donc ouvrir le **Terminal**
 
 - Téléchargez l'image **"Rescue"** via la commande suivante
 
