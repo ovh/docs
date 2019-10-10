@@ -1,22 +1,25 @@
 ---
-title: Comment fonctionne OverTheBox?
-keywords: Fonctionnement, Principe
+title: 'Comment fonctionne OverTheBox?'
+keywords: 'Fonctionnement, Principe'
 legacy_guide_number: 2237
-description: Comment fonctionne OverTheBox?
+description: 'Comment fonctionne OverTheBox?'
 slug: comment-fonctionne-overthebox
-excerpt: Le boitier  OverTheBox  ne possede qu’un seul port Ethernet. Pourtant, c’est grace a ce boitier que vos differentes connexions sont agregees pour n’en former qu’une.  Comment cela fonctionne?
+excerpt: 'Le boitier  OverTheBox  ne possède qu’un seul port Ethernet. Pourtant, c’est grâce à ce boitier que vos différentes connexions sont agrégées pour n’en former qu’une.  Comment cela fonctionne-t-il ?'
 section: Fondamentaux
 ---
-
 
 ## Branchements finaux
 
 
 > [!alert]
 >
-> La photo suivante illustre les branchements finaux. Avant d'en arriver là sur
+> La photo suivante illustre les branchements finaux pour une OverTheBox Intel. Avant d'en arriver là sur
 > votre installation, il est impératif de suivre le  processus d'installation
-> disponible sur le guide suivant : legacy:2228
+> disponible sur les guides suivants (selon votre matériel) :
+> 
+[Mes 10 premières minutes avec OverTheBox Intel](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}  
+[Mes 10 premières minutes avec OverTheBox IT](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}  
+[Mes 10 premières minutes avec OverTheBox PLUS](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-plus/){.external}  
 > 
 
 

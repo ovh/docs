@@ -21,7 +21,7 @@ L'OverTheBox est un équipement réseau qui se branche sur votre réseau local c
 
 
 ### Dois-je avoir un réseau spécifique pour utiliser OverTheBox ?
-Tous les réseaux informatiques (même les plus basiques) sont compatibles avec le système OverTheBox. Il est donc possible d'utiliser vos propres wifi (suivant votre type d'OverTheBox) ou encore vos boitiers CPL en fonction de la qualité du réseau électrique. Il sera cependant nécessaire de modifier certains paramètres de vos Box comme l'adresse IP ou le DHCP. Ces manipulations sont expliquées dans les guides d'installation suivant :  
+Tous les réseaux informatiques (même les plus basiques) sont compatibles avec le système OverTheBox. Il est donc possible d'utiliser vos propres wifi (suivant votre type d'OverTheBox) ou encore vos boitiers CPL en fonction de la qualité du réseau électrique. Il sera cependant nécessaire de modifier certains paramètres de vos Box comme l'adresse IP ou le DHCP. Ces manipulations sont expliquées dans les guides d'installation suivants  :  
 [Mes 10 premières minutes avec OverTheBox intel](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}  
 [Mes 10 premières minutes avec OverTheBox IT](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}  
 [Mes 10 premières minutes avec OverTheBox PLUS](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-plus/){.external}   
@@ -76,7 +76,7 @@ Si vous avez commandé le matériel OVH certifié compatible, ce dernier sera ex
 Suivant l'offre souscrite, l'abonnement sera au prix mensuel de 9,99€ jusqu'à 49,99€ HT (offre OverTheBox Serenity). Ce montant est prélevé automatiquement via le moyen de paiement enregistré. Ce service est sans engagement de durée Le matériel OVH certifié compatible est vendu (hors frais de port) à 149,99€ HT (OverTheBox IT) ou 249,99€ HT (OverTheBox Plus).
 
 ### Est-il possible de virtualiser OverTheBox ?
-Oui il est possible de virtualiser OverTheBox, nous ne proposons pas de support pour cet usage. Il vous faudra pour ceci, suivre la même procédure que l'installation sur un materiel personnel, depuis une une machine virtuel compatible linux : [Installer l’image OverTheBox sur votre matériel](https://docs.ovh.com/fr/overthebox/installer-limage-overthebox-sur-votre-materiel//){.external}   
+Oui il est possible de virtualiser OverTheBox, nous ne proposons pas de support pour cet usage. Il vous faudra pour ceci, suivre la même procédure que l'installation sur un materiel personnel, depuis une une machine virtuel compatible linux : [Installer l’image OverTheBox sur votre matériel](https://docs.ovh.com/fr/overthebox/installer-limage-overthebox-sur-votre-materiel//){.external}   
 
 
 ### Est-il possible de réinitialiser son OverTheBox ?
