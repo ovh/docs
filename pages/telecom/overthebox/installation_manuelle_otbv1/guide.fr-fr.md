@@ -42,7 +42,7 @@ section: 'Installation manuelle'
 L'enregistrement est terminé, patientez quelques minutes avant de passer à l'étape suivante.
 
 
-## 2. Activation et Configuration de l'OverTheBox sur la connexion principale
+## 2. Activation et configuration de l'OverTheBox sur la connexion principale
 - Retournez sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} depuis votre ordinateur connecté au modem principal.
 - Cliquez sur le bouton **"Activate"**.
 
