@@ -1,18 +1,17 @@
 ---
-title: Configuration de VLAN
+title: 'Configuration de VLAN'
 keywords: VLAN
-description: Configuration de VLAN
+description: 'Configuration de VLAN'
 slug: configuration-de-vlan
-excerpt: Nous allons vous présenter comment créer un vlan par exemple vlan 666
-section: Configurations techniques complexes
+excerpt: 'Nous allons vous présenter comment créer un vlan, par exemple vlan 666'
+section: 'Configurations techniques complexes'
 ---
 
-
-## Sur OverTheBox Plus (switch Ethernet intégré)
+## Sur OverTheBox Plus (switch Ethernet intégré)
 - Rendez-vous dans  **Network**  >  **Switch**  >  **go to expert mode**
 - Cliquez sur **Add** puis inscrivez l'ID **666** sur la ligne venant d'apparaitre.
 - Cliquez sur " **Save & Apply** "
-
+- 
 
 ## Autre solution
 Rendez-vous dans  **Network**  >  **Interfaces**  > puis cliquez " **Add new interface** ” en bas à gauche de la page.

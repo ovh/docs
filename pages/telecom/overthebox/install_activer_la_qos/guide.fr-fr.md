@@ -1,25 +1,24 @@
 ---
-title: Activer la QoS
-keywords: QoS, VoIP
-description: Activer la QoS
+title: 'Activer la QoS'
+keywords: 'QoS, VoIP'
+description: 'Activer la QoS'
 slug: activer-la-qos
-excerpt: Afin de permettre le bon fonctionnement de la téléphonie sur IP, il est important d'activer une  QoS (Quality of Service) . Cela permet de prioriser le flux téléphonie sur d'autres types de flux pour lesquels la stabilité est moins importante. Sur  OverTheBox  La QoS n'est pas activée par défaut. Ce guide vous montre comment le faire.
-section: Fonctionnalités principales
+excerpt: 'Afin de permettre le bon fonctionnement de la téléphonie sur IP, il est important d''activer une  QoS (Quality of Service) . Cela permet de prioriser le flux téléphonie sur d''autres types de flux pour lesquels la stabilité est moins importante. Sur  OverTheBox  la QoS n''est pas activée par défaut. Ce guide vous montre comment le faire.'
+section: 'Fonctionnalités principales'
 ---
 
-
-## 1. Préparation
-Avant de commencer l'activation et la configuration de la  **QoS** , il est obligatoire de connaitre le débit maximum  **montant et descendant**  de chaque connexions utilisées par votre  **OverTheBox** . Pour cela, vous pouvez utiliser l'outil [http://proof.ovh.net/](http://proof.ovh.net/){.external}
+## 1. Préparation
+Avant de commencer l'activation et la configuration de la  **QoS** , il est obligatoire de connaitre le débit maximum  **montant et descendant**  de chaque connexion utilisée par votre  **OverTheBox** . Pour cela, vous pouvez utiliser l'outil [http://proof.ovh.net/](http://proof.ovh.net/){.external}
 
 
 
 > [!alert]
 >
-> Il est conseillé, pendant la période de test, de brancher l'ordinateur directement sur le modem et de débrancher tout autre équipements de ce modem (même l' OverTheBox ).
-> Avec ce branchement, Il sera certainement nécessaire de reconfigurer manuellement les paramètres réseau de l'ordinateur. En effet le DHCP du modem doit être désactivé.
+> Il est conseillé, pendant la période de test, de brancher l'ordinateur directement sur le modem et de débrancher tout autre équipement de ce modem (même l' OverTheBox ).
+> Avec ce branchement, Il sera certainement nécessaire de reconfigurer manuellement les paramètres réseau de l'ordinateur. En effet, le DHCP du modem doit être désactivé.
 > 
 
-**A titre d'exemple**  pour ce guide, voici les débits obtenus sur chaque connexions :
+**A titre d'exemple**  pour ce guide, voici les débits obtenus sur chaque connexion :
 
 - **OVH-DSL1** (Débit descendant : **10 Mbps** / Débit montant : **1.2 Mbps** )
 - **OVH-DSL2** (Débit descendant : **5 Mbps** / Débit montant : **0.6 Mbps** )
@@ -65,7 +64,7 @@ Refaites cette procédure complète pour chacune de vos connexions (**IF2**, **I
 > 
 
 
-## 3. Vérifier la mise en place
+## 3. Vérifier la mise en place
 Vous pouvez vérifiez la bonne prise en compte de la QoS sur la téléphonie :
 
 - Cliquez sur **"OverTheBox"**

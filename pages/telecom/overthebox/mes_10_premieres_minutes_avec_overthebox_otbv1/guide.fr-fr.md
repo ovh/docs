@@ -40,7 +40,7 @@ Pour le bon déroulement de la procédure d'installation, il est impératif que 
 
 ![overthebox](images/OTBv1_1.jpg){.thumbnail}
 
-- Les modems doivent être sur des réseaux locals différents les uns des autres
+- Les modems doivent être sur des réseaux locaux différents les uns des autres.
 
 **Exemple** : Le premier modem possède l'IP 192.168. **0** .1 et le deuxième 192.168. **1** .1
 

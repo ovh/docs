@@ -1,11 +1,10 @@
 ---
-title: Installer l'image OverTheBox sur votre matériel
-description: Installer l'image OverTheBox sur votre matériel
+title: 'Installer l''image OverTheBox sur votre matériel'
+description: 'Installer l''image OverTheBox sur votre matériel'
 slug: installer-limage-overthebox-sur-votre-materiel
-excerpt: Pour installer l'image  OverTheBox  vous aurez besoin de démarrer une distribution &quot;Live&quot; linux afin de copier l'image sur votre matériel.
-section: Configurations techniques complexes
+excerpt: 'Pour installer l''image  OverTheBox  vous aurez besoin de démarrer une distribution &quot;Live&quot; linux afin de copier l''image sur votre matériel.'
+section: 'Configurations techniques complexes'
 ---
-
 
 ## Booter depuis une distribution linux live
 Vous pouvez par exemple créer une clé usb bootable sous Ubuntu en suivant ce document : [http://doc.ubuntu-fr.org/live_usb](http://doc.ubuntu-fr.org/live_usb){.external} Vous aurez besoin d'un clavier et d'un écran.
@@ -31,7 +30,7 @@ major minor  #blocks  name
 On identifie dans cette exemple que la destination d'installation sera **mmcbk0**
 
 
-## Téléchargez l'image OverTheBox
+## Téléchargez l'image OverTheBox
 Sur cette page vous pouvez retrouver les images d' **OverTheBox**  compilées : [http://downloads.overthebox.net/stable/targets/x86/64/](http://downloads.overthebox.net/stable/targets/x86/64/){.external}
 
 

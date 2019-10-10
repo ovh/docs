@@ -1,13 +1,12 @@
 ---
-title: Mes 10 premières minutes avec OverTheBox IT
+title: 'Mes 10 premières minutes avec OverTheBox IT'
 slug: mes-10-premieres-minutes-avec-overthebox
-excerpt: Ce guide vous assiste à l'installation et à la configuration de votre OverTheBox  sur 2 connexions Internet ou plus, étape par étape.  Il est impératif de suivre cette procédure dans l'ordre proposé afin d'éviter toute erreur.
-section: Guides d'installation
+excerpt: 'Ce guide vous assiste à l''installation et à la configuration de votre OverTheBox sur 2 connexions Internet ou plus, étape par étape.  Il est impératif de suivre cette procédure dans l''ordre proposé afin d''éviter toute erreur.'
+section: 'Guides d''installation'
 ---
 
-
-## Prérequis
-- **Deux Modems basiques** ou plus, parfaitement fonctionnels et indépendants. **Exemple** : Box fournie par un opérateur Internet national.
+## Prérequis
+- **Deux modems basiques** ou plus, parfaitement fonctionnels et indépendants. **Exemple** : Box fournie par un opérateur Internet national.
 
 Vous devez être en capacité de modifier la configuration réseau de ces derniers (IP et DHCP).
 
@@ -23,7 +22,7 @@ Vous devez être en capacité de modifier la configuration réseau de ces dernie
 > 
 
 
-## 1. Préparation de vos modems
+## 1. Préparation de vos modems
 Pour le bon déroulement de la procédure d'installation, il est impératif que vos modems répondent à 2 conditions :
 
 - Le serveur DHCP de chacun de vos modems soit **activé**.
@@ -41,7 +40,7 @@ Pour le bon déroulement de la procédure d'installation, il est impératif que 
 
 ![overthebox](images/OTBv2a_1.jpg){.thumbnail}
 
-- Les modems doivent être sur des réseaux locals différents les uns des autres
+- Les modems doivent être sur des réseaux locaux différents les uns des autres
 
 **Exemple** : Le premier modem possède l'IP 192.168. **0** .1 et le deuxième 192.168. **1** .1
 
@@ -68,7 +67,7 @@ Dans ce cas, vous devez modifier l'adresse IP de l'un des deux modems.
 Les modems et l'**OverTheBox** ne doivent toujours pas être reliés entre eux.
 
 
-## 2. Branchements au modem Principal
+## 2. Branchements au modem principal
 - Parmi vos modems, choisissez celui qui sera le **"modem principal"**, c'est sur ce denier que seront branchés tous vos équipements ainsi que l'**OverTheBox**.
 
 
@@ -95,7 +94,7 @@ Les modems et l'**OverTheBox** ne doivent toujours pas être reliés entre eux.
 > [!alert]
 >
 > Votre  OverTheBox  peut maintenant contacter nos serveurs via le modem principal et va se mettre à
-> jour automatiquement. Veuillez patienter  5 Minutes  avant de passer à
+> jour automatiquement. Veuillez patienter  5 minutes  avant de passer à
 > l'étape suivante.
 > 
 
@@ -127,7 +126,7 @@ Un assistant d'installation se lance, **nous vous invitons à suivre toutes les 
 > 
 
 
-## Décodeur TV
+## Décodeur TV
 Si vous devez utiliser la Télévision via l'un des modems pris en charge par **OverTheBox**, veuillez suivre la procédure décrite sur le guide suivant : [Créer un bail DHCP permanent / Intégration d'un Décodeur TV](../../middle_creer_un_bail_dhcp_permanent/guide.fr-fr.md){.ref}.
 
 

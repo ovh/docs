@@ -1,9 +1,9 @@
 ---
-title: Intégration d'une clef 3G-4G
+title: 'Intégration d''une clef 3G-4G'
 slug: integration-dune-clef-3g-4g
-keywords: Clef, 3G, 4G, OverTheBox
-description: Intégration d'une clef 3G-4G
-section: Fonctionnalités principales
+keywords: 'Clef, 3G, 4G, OverTheBox'
+description: 'Intégration d''une clef 3G-4G'
+section: 'Fonctionnalités principales'
 ---
 
 Pour la préparation de ce guide, les 3 clefs suivantes ont été testées
@@ -21,7 +21,7 @@ Pour ce guide nous utilisons une carte SIM Orange Mobile mais la procédure rest
 Insérer votre clef 3G/4G contenant votre carte sim sur n'importe quel port USB de votre boitier  **OverTheBox**
 
 
-## 2. Vérifier l'association d'une interface Ethernet à votre clef
+## 2. Vérifier l'association d'une interface Ethernet à votre clef
 Juste après avoir branché la clef :
 
 - Rendez vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
@@ -34,7 +34,7 @@ Juste après avoir branché la clef :
 ![overthebox](images/Kernel.png){.thumbnail}
 
 
-## 3. Création de l'interface WAN sur l'OverTheBox
+## 3. Création de l'interface WAN sur l'OverTheBox
 - Restez sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
 - Cliquez sur **"Network"**
 - Cliquez sur **"Interface"**
@@ -85,7 +85,7 @@ En fonction de la clef utilisée, il se peut que l'interface usb0 ne s'affiche p
 ![overthebox](images/4601.png){.thumbnail}
 
 
-## 6. Vérifier l'agrégation avec la clef 3G-4G
+## 6. Vérifier l'agrégation avec la clef 3G-4G
 - Retournez sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
 - Vérifier sur le schéma logique du réseau que votre connexion 3G ou 4G est bien agrégée.
 
@@ -93,7 +93,7 @@ En fonction de la clef utilisée, il se peut que l'interface usb0 ne s'affiche p
 ![overthebox](images/4602.png){.thumbnail}
 
 
-## Politique d'agrégation
+## Politique d'agrégation
 Afin de ne pas dépasser votre **quota de DATA** 3G/4G, vous pouvez utiliser cette connexion en mode **backup** afin qu'elle ne soit solicitée qu'en cas de coupure des autres liens.
 
 Pour ce faire, veuillez suivre ce guide : [Désactivez ou passez une de vos connexions en backup](../middle_desactivez_ou_passez_une_de_vos_connexions_en_backup/guide.fr-fr.md){.ref}
