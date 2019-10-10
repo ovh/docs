@@ -1,7 +1,7 @@
 ---
 title: 'Mes 10 premières minutes avec OverTheBox Plus'
 slug: mes-10-premieres-minutes-avec-overthebox-plus
-excerpt: 'Ce guide vous assiste à l''installation et à la configuration de votre OverTheBox sur 2 connexions Internet ou plus, étape par étape.'
+excerpt: 'Ce guide vous assiste à l''installation et à la configuration de votre OverTheBox sur 2 connexions Internet ou plus, étape par étape.'
 section: 'Guides d''installation'
 ---
 
@@ -35,4 +35,4 @@ Un assistant d'installation se lance, **nous vous invitons à suivre toutes les 
 
 ## Décodeur TV
 
-Si vous utilisez la Télévision par Internet via l'un de vos fournisseurs d'accès, veuillez laisser le décodeur TV branché sur votre modem (si ce dernier n'est pas directement intégré dedans) afin d'éviter tout blocage du flux vidéo par votre opérateur si celui-ci passe par le service OverTheBox.
+Si vous utilisez la télévision par Internet via l'un de vos fournisseurs d'accès, veuillez laisser le décodeur TV branché sur votre modem (si ce dernier n'est pas directement intégré dedans) afin d'éviter tout blocage du flux vidéo par votre opérateur si celui-ci passe par le service OverTheBox.
