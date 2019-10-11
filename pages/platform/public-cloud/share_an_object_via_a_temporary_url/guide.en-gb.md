@@ -53,7 +53,7 @@ There are many ways of generating your key, such as the following commands sha51
 Once you have your key, you can configure this on your project using the Swift client. Please ensure that you replace the “12345” chain with your key:
 
 ```bash
-swift post -m "Temp-URL-Key: 12345
+swift post -m "Temp-URL-Key: 12345"
 ```
 
 Or by using curl:
