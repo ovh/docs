@@ -1,106 +1,100 @@
 ---
-title: Instalacja Pleska na instancji
-excerpt: Instalacja Pleska na instancji
+title: 'Instalacja Pleska na instancji'
 slug: instalacja_pleska_na_instancji
+excerpt: 'Dowiedz się, jak wdrożyć Plesk na instancji Public Cloud'
 legacy_guide_number: g1998
 section: Tutoriale
 ---
 
+**Ostatnia aktualizacja dnia 11-09-2019**
 
-## 
-Plesk to prosty w użytkowaniu interfejs administracyjny dla serwerów dedykowanych. Jest on proponowany dla serwerów dedykowanych i dla serwerów VPS OVH, ale nie ma go wśród obrazów dla usługi Public Cloud.
+## Wprowadzenie
 
-Można zainstalować ten interfejs i korzystać z niego na jednej z instancji Public Cloud. 
+Plesk to prosty w użytkowaniu interfejs administracyjny dla serwerów dedykowanych.  Można go zainstalować i z niego korzystać na jednej z instancji [Public Cloud](https://www.ovh.pl/public-cloud/){.external}.
 
-Źródło: [Plesk](http://download1.parallels.com/Plesk/Doc/en-US/online/plesk-installation-upgrade-migration-guide/)
+**Dowiedz się, jak wdrożyć Plesk na instancji Public Cloud.** 
 
+> [!warning]
+> 
+> OVH oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVH nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
+>
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Przyłącz się do [społeczności naszych użytkowników](https://community.ovh.com/en/){.external}.
+>
 
-## Wymagania
+## Wymagania początkowe
 
-- [Utworzenie instancji w panelu klienta OVH]({legacy}1775)
-- [Dostęp root i zdefiniowanie hasła]({legacy}1786)
+- [Utworzenie instancji w Panelu klienta](../tworzenie_instancji_w_panelu_klienta_ovh/)
+- [Dostęp root i zdefiniowanie hasła](../dostep_root_i_zdefiniowanie_hasla/)
 
+## W praktyce
 
+### Etap 1: instalacja Pleska
 
+Interfejs Plesk można zainstalować za pomocą połączenia SSH. W tym celu pobierz i wykonaj skrypt instalacyjny Pleska, używając najbardziej odpowiedniego dla Twojego przypadku polecenia.
 
-## Instalacja
-Interfejs Plesk można zainstalować z poziomu połączenia przez SSH. Należy pobrać pliki interfejsu i wykonać skrypt instalacyjny Pleska:
+- **Domyślna, niespersonalizowana instalacja Pleska**:
 
-
-```
-user@poste:~$ wget -O - http://autoinstall.plesk.com/one-click-installer | sh
-```
-
-
-Można wykonać spersonalizowaną instalację pobierając i uruchamiając ten skrypt:
-
-
-```
-user@poste:~$ wget http://autoinstall.plesk.com/plesk-installer
-user@poste:~$ sh ./plesk-installer
+```bash
+# sh <(curl https://autoinstall.plesk.com/one-click-installer || wget -O - https://autoinstall.plesk.com/one-click-installer)
 ```
 
+- **Spersonalizowana instalacja Pleska**:
 
+```bash
+# sh <(curl https://autoinstall.plesk.com/plesk-installer || wget -O - https://autoinstall.plesk.com/plesk-installer)
+```
 
+Odczekaj chwilę, aż instalacja się zakończy. 
 
-## Konfiguracja
-Instalacja została zakończona. Można zalogować się do interfejsu Plesk, aby dokończyć jego konfigurację.
-W tym celu uruchom przeglądarkę i zaloguj się na stronie https://IP.instancji:8443 korzystając z danych do konta root.
+### Etap 2: konfiguracja Pleska
 
-![](images/img_3301.jpg){.thumbnail}
-Po zalogowaniu pojawi się asystent konfiguracji, który pozwoli Ci na skonfigurowanie sposobu wyświetlania informacji w interfejsie Plesk. Wybór będzie się opierać na kryteriach związanych z rodzajem działalności, na przykład z odsprzedażą hostingu www:
+Zaloguj się teraz do interfejsu Plesk, aby go skonfigurować. W tym celu uruchom przeglądarkę i zaloguj się na stronie `https://IP.instancji:8443`, korzystając z danych do konta root. 
 
+![public cloud](images/3301.png){.thumbnail}
 
-- Opisz, jak będziesz korzystać z interfejsu Plesk:
+Po zalogowaniu pojawi się asystent konfiguracji, który umożliwi Ci skonfigurowanie sposobu wyświetlania informacji w interfejsie Plesk. Wybierz widok odpowiedni dla rodzaju Twojej działalności.
 
+![public cloud](images/3302.png){.thumbnail}
 
+Wybierz typ wyświetlania dla interfejsu:
 
-![](images/img_3302.jpg){.thumbnail}
+![public cloud](images/3303.png){.thumbnail}
 
-- Wybierz typ wyświetlania dla interfejsu:
-
-
-
-![](images/img_3303.jpg){.thumbnail}
-Po wykonaniu tych czynności będziesz mógł podać informacje dotyczące dostępu do instancji:
-
+Po wykonaniu tych czynności wprowadź informacje dotyczące dostępu do instancji:
 
 - Hostname
 - Adres IP
-- Hasło root
+- Hasło Root
 
 
 
-![](images/img_3304.jpg){.thumbnail}
-Aby dokończyć konfigurację, wystarczy podać informacje dotyczące konta administratora:
+![public cloud](images/3304.png){.thumbnail}
 
-![](images/img_3305.jpg){.thumbnail}
+Aby dokończyć konfigurację, wprowadź informacje dotyczące konta **administratora**.
 
+![public cloud](images/3305.png){.thumbnail}
 
-## Dodawanie licencji
-Kolejny etap dotyczy dodawania licencji.
+### Etap 3: dodanie licencji
 
-## Uwaga
-Nie sprzedajemy licencji Plesk dla usługi Public Cloud. Możesz zamówić licencję bezpośrednio na [stronie Pleska](http://www.plesk.com/fr/#editions).
-Możesz również uzyskać klucz testowy na tej [stronie](http://www.odin.com/fr/products/plesk/download/).
-Podczas pierwszego logowania pojawi się strona z propozycją dodania licencji:
+Aby dodać licencję Plesk, użyj klucza, który otrzymałeś od Twojego dostawcy.
 
-![](images/img_3307.jpg){.thumbnail}
-Możesz więc zainstalować klucz licencyjny.
+> [!primary]
+>
+> Nie sprzedajemy licencji Plesk dla usługi Public Cloud. Możesz zamówić licencję bezpośrednio na stronie [Pleska](https://www.plesk.com/){.external}.
+> 
 
-![](images/img_3306.jpg){.thumbnail}
-uwaga
-Jeśli chcesz zmienić licencję (wymiana klucza testowego, zmiana oferty), możesz to zrobić z poziomu interfejsu Plesk w części Server Management i Tools & Settings:
+Podczas pierwszego logowania do interfejsu pojawi się strona z propozycją dodania licencji:
 
-![](images/img_3322.jpg){.thumbnail}
-Następnie przejdź do sekcji Plesk i wybierz License Management:
+![public cloud](images/3306-2.png){.thumbnail}
 
-![](images/img_3323.jpg){.thumbnail}
-Po dodaniu nowego klucza będziemy mogli sprawdzić, że licencja się zmieniła:
+Jeśli chcesz zmienić licencję (wymiana klucza testowego, zmiana oferty), możesz to zrobić w interfejsie Plesk, przechodząc do części `Server Management` i wybierając `Tools & Settings`{.action}.  Następnie w części **Plesk** wybierz `License Management`{.action}.
 
-![](images/img_3324.jpg){.thumbnail}
+Po dodaniu nowego klucza możesz wyświetlić typ zainstalowanej licencji na pasku menu na górze po lewej stronie.
 
+![public cloud](images/3322-2.png){.thumbnail}
 
-## 
-[Przewodniki Cloud]({legacy}1785)
+## Sprawdź również
 
+[Oficjalna dokumentacja Plesk](https://docs.plesk.com/en-US/onyx/){.external}
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
