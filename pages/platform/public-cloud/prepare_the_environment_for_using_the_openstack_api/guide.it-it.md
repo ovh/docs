@@ -1,10 +1,9 @@
 ---
-title: Prepara il tuo ambiente di sviluppo per utilizzare l’API OpenStack
-excerpt: Prepara il tuo ambiente di sviluppo per utilizzare l'API OpenStack
+title: 'Prepara il tuo ambiente di sviluppo per utilizzare l’API OpenStack'
+excerpt: 'Prepara il tuo ambiente di sviluppo per utilizzare l''API OpenStack'
 slug: prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack
 legacy_guide_number: g1851
 ---
-
 
 ## 
 Per gestire i tuoi servizi Public Cloud attraverso un terminale, puoi installare i client OpenStack in Python.
@@ -17,7 +16,7 @@ Questa guida ti mostra la procedura da seguire per installare i client OpenStack
 
 - Apri un terminale o una connessione SSH verso l'ambiente da configurare
 
-- [Accedi come utente amministratore](https://www.ovh.it/publiccloud/guides/g1786.imposta_una_password_amministratore)
+- [Accedi come utente amministratore](https://docs.ovh.com/it/public-cloud/imposta_una_password_amministratore/)
 
 - Aggiorna la cache dei pacchetti:
 
@@ -58,7 +57,7 @@ admin@vps187763:~$ glance help
 
 - Apri un terminale o una connessione SSH verso l'ambiente da configurare
 
-- [Accedi come utente amministratore](https://www.ovh.it/publiccloud/guides/g1786.imposta_una_password_amministratore)
+- [Accedi come utente amministratore](https://docs.ovh.com/it/public-cloud/imposta_una_password_amministratore/)
 
 - Aggiorna la cache dei pacchetti:
 
@@ -89,7 +88,7 @@ admin@vps187763:~$ glance help
 
 
 
-Fonte: [https://www.rdoproject.org/Quickstart](https://www.rdoproject.org/Quickstart)
+Fonte: [https://www.rdoproject.org/install/packstack/](https://www.rdoproject.org/install/packstack/)
 A questo punto ti consigliamo di creare un altro utente, in modo da non utilizzare l'utente amministratore.
 
 - Per consultare le guide d'utilizzo delle CLI di Nova e Glance, esegui questi comandi:
