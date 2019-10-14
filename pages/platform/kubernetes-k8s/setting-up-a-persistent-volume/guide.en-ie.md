@@ -1,5 +1,5 @@
 ---
-title: Setting-up a Persistent Volume OVH Managed Kubernetes
+title: Setting-up a Persistent Volume OVHcloud Managed Kubernetes
 slug: setting-up-a-persistent-volume
 excerpt: ''
 section: Tutorials
@@ -29,15 +29,15 @@ section: Tutorials
  }
 </style>
 
-In this tutorial we are going to guide you a simple example of setting-up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVH Managed Kubernetes Service.
+In this tutorial we are going to guide you a simple example of setting-up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVHcloud Managed Kubernetes Service.
 
 
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
-It also supposes you have read our [Persistent Volumes on OVH Managed Kubernetes](../ovh-kubernetes-persistent-volumes) guide.
+It also supposes you have read our [Persistent Volumes on OVHcloud Managed Kubernetes](../ovh-kubernetes-persistent-volumes) guide.
 
 
 ## Persistent Volumes (PV) and Persistent Volume Claims (PVC)
@@ -53,7 +53,7 @@ Or, if you prefer an analogy, **PVC are to PV like pods are to nodes**. PVC cons
 
 ## So you want some persistent storage on your cluster...
 
-Let's say you need some persistent storage on your cluster, some kind of network storage (for OVH Managed Kubernetes that currently means a storage based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}. In Kubernetes terms you will need two objects:  a `PersistentVolumeClaim` and its associated `PersistentVolume`. 
+Let's say you need some persistent storage on your cluster, some kind of network storage (for OVHcloud Managed Kubernetes that currently means a storage based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}. In Kubernetes terms you will need two objects:  a `PersistentVolumeClaim` and its associated `PersistentVolume`. 
 
 How do you get them? You simply need to create the PVC object in your cluster. Kubernetes will see your claim and, according to its available resources, allocate a PV corresponding to your claim.
 
@@ -161,7 +161,7 @@ Events:
 
 ## Storage Classes
 
-We currently support two [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) on OVH Managed Kubernetes: `cinder-high-speed` and `cinder-classic`, both based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}, the OpenStack Block Storage service. The difference between them is the associated physical storage device. `cinder-high-speed` uses SSD, while `cinder-classic` uses traditional spinning disks. Both are distributed transparently, on three physical local replicas.
+We currently support two [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) on OVHcloud Managed Kubernetes: `cinder-high-speed` and `cinder-classic`, both based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}, the OpenStack Block Storage service. The difference between them is the associated physical storage device. `cinder-high-speed` uses SSD, while `cinder-classic` uses traditional spinning disks. Both are distributed transparently, on three physical local replicas.
 
 When you create a Persistent Volume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [flexible cloud storage prices](https://www.ovh.com/world/public-cloud/storage/additional-disks/){.external}.
 

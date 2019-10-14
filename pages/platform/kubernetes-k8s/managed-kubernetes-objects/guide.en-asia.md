@@ -29,7 +29,7 @@ section: Technical resources
 
 **Last updated September 21<sup>st</sup>, 2019.**
 
-We list here the  Kubernetes objects you can find running in an OVH Managed Kubernetes.
+We list here the  Kubernetes objects you can find running in an OVHcloud Managed Kubernetes.
 
 These objects are created either at the cluster or at the node creation, and they allow the cluster operation and management.
 Please refrain from deleting or otherwise altering them.

@@ -1,7 +1,7 @@
 ---
-title: Installing WordPress on OVH Managed Kubernetes
+title: Installing WordPress on OVHcloud Managed Kubernetes
 slug: installing-wordpress
-excerpt: 'Find out how to install WordPress on OVH Managed Kubernetes'
+excerpt: 'Find out how to install WordPress on OVHcloud Managed Kubernetes'
 section: Tutorials
 ---
 
@@ -29,19 +29,19 @@ section: Tutorials
  }
 </style>
 
-In this tutorial we are going to guide you with the install of [Wordpress](https://wordpress.org/){.external} on your OVH Managed Kubernetes Service.
+In this tutorial we are going to guide you with the install of [Wordpress](https://wordpress.org/){.external} on your OVHcloud Managed Kubernetes Service.
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
-You also need to have [Helm](https://docs.helm.sh/) installer on your workstation and your cluster, please refer to the [How to install Helm on OVH Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/) installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
 
 ## Installing the Wordpress Helm chart
 
 For this tutorial we are using the [Wordpress Helm chart](https://github.com/helm/charts/tree/master/stable/wordpress){.external} found on Helm repositories.
-The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVH Managed Kubernetes Service.
+The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVHcloud Managed Kubernetes Service.
 
 
 > [!primary]
@@ -160,6 +160,6 @@ Password: 0pdfhdfhfe5
 ![Installing Wordpress](images/installing-wordpress-02.jpg){.thumbnail}
 
 
-You have a working Wordpress on your OVH Managed Kubernetes Service, congratulations!
+You have a working Wordpress on your OVHcloud Managed Kubernetes Service, congratulations!
 
 
