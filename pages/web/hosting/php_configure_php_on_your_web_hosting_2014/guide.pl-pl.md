@@ -10,7 +10,7 @@ section: PHP
 
 ## Wprowadzenie
 
-W sieci istnieje bardzo wiele stron WWW. Twój [hosting](https://www.ovh.pl/hosting/){.external} umożliwia Ci hostowanie wybranej strony WWW, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVH](http://pro.ovh.net/infos/){.external}. Istnieje możliwość, że będziesz chciał zmodyfikować wersję PHP używaną przez Twój hosting.
+W sieci istnieje bardzo wiele stron WWW. Twój [hosting](https://www.ovh.pl/hosting/){.external} umożliwia Ci hostowanie wybranej strony WWW, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVH](https://cluster028.hosting.ovh.net/infos/){.external}. Istnieje możliwość, że będziesz chciał zmodyfikować wersję PHP używaną przez Twój hosting.
 
 **Dowiedz się, jak zmienić wersję PHP na hostingu OVH.**
 
