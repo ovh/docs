@@ -1,7 +1,7 @@
 ---
-title: 'Installing Agones on OVH Managed Kubernetes'
+title: 'Installing Agones on OVHcloud Managed Kubernetes'
 slug: installing-agones
-excerpt: 'Find out how to install Agones on OVH Managed Kubernetes'
+excerpt: 'Find out how to install Agones on OVHcloud Managed Kubernetes'
 section: Tutorials
 ---
 
@@ -30,16 +30,16 @@ section: Tutorials
 **Last updated 1<sup>st</sup> July, 2019.**
 
 
-In this tutorial we are going to guide you with the install of [Agones](https://agones.dev){.external} on your OVH Managed Kubernetes Service. Agones is an open-source, multiplayer, dedicated game-server hosting built on Kubernetes.
+In this tutorial we are going to guide you with the install of [Agones](https://agones.dev){.external} on your OVHcloud Managed Kubernetes Service. Agones is an open-source, multiplayer, dedicated game-server hosting built on Kubernetes.
 
 And to test your install, you will install a [Xonotic](http://www.xonotic.org/){.external} game server and playing some old-school deathmatches...
 
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVH Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
 
 ## What is Agones?
@@ -48,7 +48,7 @@ One of the key advantages of using Kubernetes is the formidable ecosystem around
 
 One of the latests additions to this ecosystem is the [Agones](https://agones.dev){.external}  project, an open-source, multiplayer, dedicated game-server hosting built on Kubernetes, developed by Google in collaboration with [Ubisoft](https://www.ubisoft.com/en-us/){.external}. The project was [announced in March](https://cloud.google.com/blog/products/gcp/introducing-agones-open-source-multiplayer-dedicated-game-server-hosting-built-on-kubernetes){.external}, and has already made quite a bit of noise...
 
-![Agones on OVH Managed Kubernetes](images/agones-001-small.jpg){.thumbnail}
+![Agones on OVHcloud Managed Kubernetes](images/agones-001-small.jpg){.thumbnail}
 
 
 ## Why Agones?
@@ -84,7 +84,7 @@ Agones and it's Custom Controller and Custom Resource Definition replaces the co
 >
 > And of course, the simplicity of operating Kubernetes-based platforms, especially when they dynamic, heterogeneous and distributed, as most online gaming platforms.
 
-## Deploying Agones on OVH Managed Kubernetes
+## Deploying Agones on OVHcloud Managed Kubernetes
 
 There are several ways to install Agones in a Kubernetes cluster. For our test we chose the easiest one: installing with [Helm](https://helm.sh/).
 

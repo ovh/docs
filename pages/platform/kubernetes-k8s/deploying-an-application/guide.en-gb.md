@@ -32,12 +32,12 @@ section: Getting started
 
 ## Objective
 
-OVH Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will explain how to deploy a simple *Hello World* application on a OVH Managed Kubernetes cluster.
+OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will explain how to deploy a simple *Hello World* application on a OVHcloud Managed Kubernetes cluster.
 
 
 ## Requirements
 
-- an OVH Managed Kubernetes cluster
+- an OVHcloud Managed Kubernetes cluster
 - at least one node on the cluster (see the [ordering a node](../adding-nodes/) guide for details) 
 - a well configured  `kubectl` (see the [configuring kubectl](../configuring-kubectl/) guide for details) 
 
@@ -216,6 +216,6 @@ No resources found
 
 ## Go further
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVH Managed Kubernetes doc site](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](../).
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

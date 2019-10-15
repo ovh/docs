@@ -1,7 +1,7 @@
 ---
 title: 'Getting the source IP behind the LoadBalancer'
 slug: getting-source-ip-behind-loadbalancer
-excerpt: 'Find out how to get the source IP behind the LoadBalancer on OVH Managed Kubernetes'
+excerpt: 'Find out how to get the source IP behind the LoadBalancer on OVHcloud Managed Kubernetes'
 section: Tutorials
 ---
 
@@ -32,7 +32,7 @@ section: Tutorials
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and you have deployed there an application using the OVH Managed Kubernetes LoadBalancer. If you want to know more on those topics, please look at the [using the OVH Managed Kubernetes LoadBalancer](../using-lb/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and you have deployed there an application using the OVHcloud Managed Kubernetes LoadBalancer. If you want to know more on those topics, please look at the [using the OVHcloud Managed Kubernetes LoadBalancer](../using-lb/) documentation.
 
 
 ## The problem
@@ -41,7 +41,7 @@ When you deploy your HTTP services in `NodePort` mode, you directly recover the 
 
 When deploying the services in `LoadBalancer` mode, things are a bit different, our Load Balancer acts like a proxy, and the `Remote Address` will give you the IP address of the Load Balancer. How can you get the source IP of the request in this case?
 
-This tutorial describe how to deploy a `LoadBalancer` service on OVH Managed Kubernetes and preserve the source IP.
+This tutorial describe how to deploy a `LoadBalancer` service on OVHcloud Managed Kubernetes and preserve the source IP.
 
 
 ## Getting the request's source IP behind the LoadBalancer
