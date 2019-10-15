@@ -10,7 +10,7 @@ order: 1
 
 ## Cíl
 
-Na Internetu existuje nepřeberné množství stránek. Ať již chcete zveřejnit blog nebo online obchod, sdílet své koníčky či propagovat své podnikání, [webhostingové balíčky OVH](https://www.ovh.cz/webhosting/){.external} zajistí dostupnost Vašich stránek pro miliony uživatelů po celém světě (za předpokladu kompatibility stránek s [konfigurací našich infrastruktur](http://pro.ovh.net/infos/){.external}). Ve všech uvedených případech může nastat situace, kdy budete na svém webhostingu potřebovat nastavit jinou verzi PHP než tu, s níž je hosting dodáván ve výchozím nastavení.
+Na Internetu existuje nepřeberné množství stránek. Ať již chcete zveřejnit blog nebo online obchod, sdílet své koníčky či propagovat své podnikání, [webhostingové balíčky OVH](https://www.ovh.cz/webhosting/){.external} zajistí dostupnost Vašich stránek pro miliony uživatelů po celém světě (za předpokladu kompatibility stránek s [konfigurací našich infrastruktur](https://cluster028.hosting.ovh.net/infos/){.external}). Ve všech uvedených případech může nastat situace, kdy budete na svém webhostingu potřebovat nastavit jinou verzi PHP než tu, s níž je hosting dodáván ve výchozím nastavení.
 
 Zjistěte, jak změnit verzi PHP na svém webhostingovém řešení OVH.
 

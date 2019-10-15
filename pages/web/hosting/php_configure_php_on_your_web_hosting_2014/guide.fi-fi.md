@@ -10,7 +10,7 @@ order: 1
 
 ## Tavoite
 
-Verkossa on olemassa valtava määrä verkkosivuja. [OVH:n webhotellissa](https://www.ovh-hosting.fi/webhotelli/){.external} voit ylläpitää haluamaasi verkkosivua, kunhan se on yhteensopiva [infrastruktuuriemme konfiguraation kanssa](http://pro.ovh.net/infos/){.external}. Tästä johtuen saatat haluta muuttaa webhotellisi käyttämää PHP-versiota.
+Verkossa on olemassa valtava määrä verkkosivuja. [OVH:n webhotellissa](https://www.ovh-hosting.fi/webhotelli/){.external} voit ylläpitää haluamaasi verkkosivua, kunhan se on yhteensopiva [infrastruktuuriemme konfiguraation kanssa](https://cluster028.hosting.ovh.net/infos/){.external}. Tästä johtuen saatat haluta muuttaa webhotellisi käyttämää PHP-versiota.
 
 **Katso, kuinka OVH:n webhotellin PHP-versio vaihdetaan.**
 

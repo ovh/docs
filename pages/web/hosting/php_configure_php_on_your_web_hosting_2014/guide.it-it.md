@@ -12,7 +12,7 @@ legacy_guide_number: g1207
 
 ## Obiettivo
 
-I siti Internet presenti in rete sono di tanti tipi diversi: gli [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} permettono di ospitare qualsiasi tipologia di sito, purché compatibile con la [configurazione delle nostre infrastrutture](http://pro.ovh.net/infos/){.external}. Per questo motivo, potrebbe essere necessario modificare la versione di PHP utilizzata dall’hosting Web.
+I siti Internet presenti in rete sono di tanti tipi diversi: gli [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} permettono di ospitare qualsiasi tipologia di sito, purché compatibile con la [configurazione delle nostre infrastrutture](https://cluster028.hosting.ovh.net/infos/){.external}. Per questo motivo, potrebbe essere necessario modificare la versione di PHP utilizzata dall’hosting Web.
 
 **Questa guida ti mostra come configurare una nuova versione di PHP sul tuo hosting Web OVH.**
 

@@ -10,7 +10,7 @@ order: 1
 
 ## Objetivo
 
-Actualmente, hay una ingente cantidad de sitios web en la red. Los [planes de hosting de OVH](https://www.ovh.es/hosting/){.external} le permiten alojar cualquier sitio web, siempre que sea compatible con la [configuración de nuestras infraestructuras](http://pro.ovh.net/infos/){.external}. En algunos casos podría ser necesario cambiar la versión de PHP del alojamiento web.
+Actualmente, hay una ingente cantidad de sitios web en la red. Los [planes de hosting de OVH](https://www.ovh.es/hosting/){.external} le permiten alojar cualquier sitio web, siempre que sea compatible con la [configuración de nuestras infraestructuras](https://cluster028.hosting.ovh.net/infos/){.external}. En algunos casos podría ser necesario cambiar la versión de PHP del alojamiento web.
 
 **Esta guía explica cómo cambiar la versión de PHP de un alojamiento web de OVH.**
 
