@@ -101,4 +101,4 @@ Po uzupełnieniu tych informacji możesz zatwierdzić zmiany, klikając `Dalej`{
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://comunity.ovh.com/en/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
