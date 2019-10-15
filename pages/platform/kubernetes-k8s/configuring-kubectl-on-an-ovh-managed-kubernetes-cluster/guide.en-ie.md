@@ -1,7 +1,7 @@
 ---
-title: Configuring kubectl on an OVH Managed Kubernetes cluster
+title: Configuring kubectl on an OVHcloud Managed Kubernetes cluster
 slug: configuring-kubectl
-excerpt: 'Find out how to recover the `kubectl` configuration file to interact with an OVH Managed Kubernetes cluster.'
+excerpt: 'Find out how to recover the `kubectl` configuration file to interact with an OVHcloud Managed Kubernetes cluster.'
 section: User guides
 ---
 
@@ -10,14 +10,14 @@ section: User guides
 
 ## Objective
 
-The OVH Managed Kubernetes service provides you with access to Kubernetes clusters, without the hassle of installing or operating them. 
+The OVHcloud Managed Kubernetes service provides you with access to Kubernetes clusters, without the hassle of installing or operating them. 
 
-This guide will cover how to recover the `kubetcl` configuration file to interact with an OVH Managed Kubernetes cluster.
+This guide will cover how to recover the `kubetcl` configuration file to interact with an OVHcloud Managed Kubernetes cluster.
 
 
 ## Requirements
 
-- You must have an OVH Managed Kubernetes cluster.
+- You must have an OVHcloud Managed Kubernetes cluster.
 - You must have the [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed.
 
 You can find the detailed installation instructions for `kubetcl` in Kubernetes' [official documentation](https://kubernetes.io/docs/home/){.external}.

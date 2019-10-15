@@ -1,7 +1,7 @@
 ---
-title: Persistent Volumes on OVH Managed Kubernetes
+title: Persistent Volumes on OVHcloud Managed Kubernetes
 slug: ovh-kubernetes-persistent-volumes
-excerpt: 'Find out how to setup and manage Persistent Volumes on OVH Managed Kubernetes'
+excerpt: 'Find out how to setup and manage Persistent Volumes on OVHcloud Managed Kubernetes'
 section: Getting started
 ---
 
@@ -31,9 +31,9 @@ When you need a Persistent Volume, you create a Persistent Volume Claim, and cho
 
 ![persistent-volumes](images/working-with-persistent-volumes-01.png){.thumbnail}
 
-## Persistent Volumes on OVH Managed Kubernetes
+## Persistent Volumes on OVHcloud Managed Kubernetes
 
-We currently support two Storage Classes on OVH Managed Kubernetes: *cinder-high-speed* and *cinder-classic*, both based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}, the OpenStack Block Storage service. The difference between them is the associated physical storage device. *cinder-high-speed* uses SSD, while *cinder-classic* uses traditional spinning disks. Both are distributed transparently, on three physical local replicas.
+We currently support two Storage Classes on OVHcloud Managed Kubernetes: *cinder-high-speed* and *cinder-classic*, both based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}, the OpenStack Block Storage service. The difference between them is the associated physical storage device. *cinder-high-speed* uses SSD, while *cinder-classic* uses traditional spinning disks. Both are distributed transparently, on three physical local replicas.
 
 When you create a Persistent Volume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [flexible cloud storage prices](https://www.ovh.com/world/public-cloud/storage/additional-disks/){.external}.
 

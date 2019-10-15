@@ -1,7 +1,7 @@
 ---
-title: Installing Helm on OVH Managed Kubernetes
+title: Installing Helm on OVHcloud Managed Kubernetes
 slug: installing-helm
-excerpt: 'Find out how to install Helm on OVH Managed Kubernetes'
+excerpt: 'Find out how to install Helm on OVHcloud Managed Kubernetes'
 section: Tutorials
 ---
 
@@ -36,13 +36,13 @@ With Helm you can:
 
 ## Before you begin
 
-This tutorial assumes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial assumes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 We are assuming that you have the `KUBECONFIG` environment variable pointing to your KubeCtl configuration file, as described in the Quickstarter. If that's not the case, you can use the `--kubeconfig [LOCATION_OF_CONFIG_FILE]` option in both `kubectl` and `helm` calls. 
 
 ## Installing Helm
 
-Helm has two parts: the client part, `helm`, and the server part, `tiller`. To use Helm on your OVH Managed Kubernetes cluster, you need to deploy `tiller` in the cluster and to install `helm` on your workstation.  
+Helm has two parts: the client part, `helm`, and the server part, `tiller`. To use Helm on your OVHcloud Managed Kubernetes cluster, you need to deploy `tiller` in the cluster and to install `helm` on your workstation.  
 
 The simplest way to install Helm is grabbing the binary release for your platform on the [official release page](https://github.com/helm/helm/releases/latest){.external}. You then just need to unpack the client `helm` binary and add it to your PATH.
 

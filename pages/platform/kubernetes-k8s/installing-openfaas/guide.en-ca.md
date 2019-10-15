@@ -1,7 +1,7 @@
 ---
-title: 'Installing a FaaS platform on OVH Managed Kubernetes using OpenFaaS'
+title: 'Installing a FaaS platform on OVHcloud Managed Kubernetes using OpenFaaS'
 slug: installing-openfaas
-excerpt: 'Find out how to install a FaaS platform on OVH Managed Kubernetes using OpenFaaS'
+excerpt: 'Find out how to install a FaaS platform on OVHcloud Managed Kubernetes using OpenFaaS'
 section: Tutorials
 ---
 
@@ -31,13 +31,13 @@ section: Tutorials
 
 
 
-In this tutorial we are going to guide you with the install of a *Functions as a Service* (FaaS) platform on OVH Managed Kubernetes service. 
+In this tutorial we are going to guide you with the install of a *Functions as a Service* (FaaS) platform on OVHcloud Managed Kubernetes service. 
 
-The question of *how to install a FaaS platform on OVH* comes recurrently, and in this tutorial you will get some answers with a quick and painless solution: install the FaaS platform over OVH Managed Kubernetes. 
+The question of *how to install a FaaS platform on OVH* comes recurrently, and in this tutorial you will get some answers with a quick and painless solution: install the FaaS platform over OVHcloud Managed Kubernetes. 
 
 That's the beauty of the rich Kubernetes ecosystem, you can find projects to address many different use case, from the [game server with Agones](https://www.ovh.com/fr/blog/deploying-game-servers-with-agones-on-ovh-managed-kubernetes/) to a FaaS platform...
 
-We have tested several FaaS platform on OVH Managed Kubernetes. Our objective was a solution:
+We have tested several FaaS platform on OVHcloud Managed Kubernetes. Our objective was a solution:
 
 - Easy to deploy, ideally a simple [Helm chart](https://github.com/helm/helm){.external}
 - Manageable with both an UI and a CLI, because different customers have different needs
@@ -51,9 +51,9 @@ At the end, the one that scored the best on our objectives was OpenFaaS, so we d
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVH Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
 
 
@@ -80,7 +80,7 @@ Functions can be written on  many languages (I have mainly tested on JavaScript,
 ![OpenFaas architecture](images/openfaas-architecture.png){.thumbnail}
 
 
-## Deploying OpenFaaS on OVH Managed Kubernetes
+## Deploying OpenFaaS on OVHcloud Managed Kubernetes
 
 There are several ways to install Agones in a Kubernetes cluster. In this post we choose the easiest one: installing with [Helm](https://helm.sh/){.external}.
 
@@ -325,7 +325,7 @@ In OpenFaaS you can write your these function on many languages, not only the us
 
 That also means that in order to create your own functions, you need to have [Docker](https://www.docker.com/){.external} installed in your workstation, and you will need to push the images in a Docker registry, either the official one or a private one.
 
-If you need a private registry, you can [install one](https://docs.docker.com/registry/){.external} on your OVH Managed Kubernetes cluster. For this tutorial we are choosing to deploy our image on the official Docker registry.
+If you need a private registry, you can [install one](https://docs.docker.com/registry/){.external} on your OVHcloud Managed Kubernetes cluster. For this tutorial we are choosing to deploy our image on the official Docker registry.
 
 
 ## Writing our first function
@@ -412,7 +412,7 @@ In the UI Portal you will find the list of the deployed functions, and for each 
 
 ## Where do we go from here?
 
-So now you have a working OpenFaaS platform on your OVH Managed Kubernetes cluster.
+So now you have a working OpenFaaS platform on your OVHcloud Managed Kubernetes cluster.
 
 To learn more about OpenFaaS, and how you can get a maximum profit from it, please refer to the [official OpenFaaS documentation](https://docs.openfaas.com/){.external}. You can also follow the [OpenFaaS workshops](https://github.com/openfaas/workshop){.external} to learn in a more practical way.  
 

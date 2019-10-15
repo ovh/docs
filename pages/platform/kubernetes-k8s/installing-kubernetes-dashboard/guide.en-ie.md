@@ -1,7 +1,7 @@
 ---
-title: Installing the Kubernetes Dashboard on OVH Managed Kubernetes
+title: Installing the Kubernetes Dashboard on OVHcloud Managed Kubernetes
 slug: installing-kubernetes-dashboard
-excerpt: 'Find out how to install the Kubernetes Dashboard on your OVH Managed Kubernetes Service'
+excerpt: 'Find out how to install the Kubernetes Dashboard on your OVHcloud Managed Kubernetes Service'
 section: Tutorials
 ---
 
@@ -38,10 +38,10 @@ The [Kubernetes Dashboard](https://github.com/kubernetes/dashboard){.external} i
 
 ## Before you begin
 
-This tutorial assumes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial assumes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 > [!primary]
-> This tutorial describes the most basic way of using the Dashboard with your OVH Managed Kubernetes cluster. Please refer to the [official docs](https://github.com/kubernetes/dashboard){.external} for a deeper understanding, specially on subjects like [access control](https://github.com/kubernetes/dashboard/wiki/Access-control){.external}, for more in-depth information.
+> This tutorial describes the most basic way of using the Dashboard with your OVHcloud Managed Kubernetes cluster. Please refer to the [official docs](https://github.com/kubernetes/dashboard){.external} for a deeper understanding, specially on subjects like [access control](https://github.com/kubernetes/dashboard/wiki/Access-control){.external}, for more in-depth information.
 >
 
 ## Deploy the Dashboard in your cluster
@@ -156,7 +156,7 @@ Copy the token and store it securely, as it's your key to the Dashboard.
 
 ## Access the Dashboard
 
-To access the Dashboard from your local workstation, you must create a secure channel to your OVH Managed Kubernetes cluster. You can do this by using `kubectl` as a proxy from your workstation to the cluster:
+To access the Dashboard from your local workstation, you must create a secure channel to your OVHcloud Managed Kubernetes cluster. You can do this by using `kubectl` as a proxy from your workstation to the cluster:
 
 ```bash
 kubectl proxy

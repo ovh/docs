@@ -8,7 +8,7 @@ section: Tutorials
 **Last updated 1<sup>st</sup> July, 2019.**
 
 
-Follow this quickstart guide to deploy a containerised *Hello World* application on your OVH Managed Kubernetes Service cluster, using the OVH API.
+Follow this quickstart guide to deploy a containerised *Hello World* application on your OVHcloud Managed Kubernetes Service cluster, using the OVH API.
 
 In this guide, we are assuming you're using the [OVH API](https://api.ovh.com/) to manage your Kubernetes cluster. If you are using a different method, like the [OVH Control Panel](https://www.ovh.com/manager/cloud/), please refer to the relevant documentation:
 
@@ -16,7 +16,7 @@ In this guide, we are assuming you're using the [OVH API](https://api.ovh.com/) 
 
 ## Before you begin
 
-* You should have already created a cluster on the OVH Managed Kubernetes service.
+* You should have already created a cluster on the OVHcloud Managed Kubernetes service.
 * You will also need the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool. You can find the [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/){.external} for this tool on Kubernetes' official site.
 
 > [!warning]
@@ -35,11 +35,11 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
 
 ![Kubernetes section of the API Explorer](images/kubernetes-quickstart-api-ovh-com-002.png){.thumbnail}
 
-## List your OVH Managed Kubernetes services
+## List your OVHcloud Managed Kubernetes services
 
 The `GET /kube` API endpoint lists all the available services (clusters):
 
-![List your OVH Managed Kubernetes Services](images/kubernetes-quickstart-api-ovh-com-003.png){.thumbnail}
+![List your OVHcloud Managed Kubernetes Services](images/kubernetes-quickstart-api-ovh-com-003.png){.thumbnail}
 
 By calling it, you can view a list of your services names. Note down the ID of the service (cluster) you want to use. In this example, we will refer to it as `serviceName`
 
@@ -51,7 +51,7 @@ The `GET  /kube/{serviceName}` API endpoint provides important information about
 
 ## Configuring the default settings for kubectl
 
-Please refer to the [Configuring kubectl on an OVH Managed Kubernetes cluster](../configuring-kubectl/) documentation for this part of the process.
+Please refer to the [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl/) documentation for this part of the process.
 
 ## Add a worker node
 

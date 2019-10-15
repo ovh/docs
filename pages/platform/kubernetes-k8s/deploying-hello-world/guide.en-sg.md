@@ -7,7 +7,7 @@ section: Tutorials
 
 **Last updated 1<sup>st</sup> July, 2019.**
 
-Follow this quickstart guide to deploy a containerised *Hello World* application on your OVH Managed Kubernetes Service cluster, using the OVH Control Panel.
+Follow this quickstart guide to deploy a containerised *Hello World* application on your OVHcloud Managed Kubernetes Service cluster, using the OVH Control Panel.
 
 In this guide, we are assuming that you're using the [OVH Control Panel](https://www.ovh.com/manager/cloud/) to manage your Kubernetes cluster. If you are using a different method, like the [OVH API](https://api.ovh.com/), please refer to the appropriate documentation:
 
@@ -16,13 +16,13 @@ In this guide, we are assuming that you're using the [OVH Control Panel](https:/
 
 ## Before you begin
 
-* You should have already created a cluster on the OVH Managed Kubernetes service.
+* You should have already created a cluster on the OVHcloud Managed Kubernetes service.
 * You will also need the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool. You can find the [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/){.external} for this tool on Kubernetes' official site.
 
 
 ## Getting your cluster information
 
-Access our administration UI for your OVH Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the [Cloud section of the OVH Control Panel](https://www.ovh.com/manager/cloud/).
+Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the [Cloud section of the OVH Control Panel](https://www.ovh.com/manager/cloud/).
 
 ![Access to the administration UI](images/kubernetes-quickstart-01.png){.thumbnail}
 
@@ -36,7 +36,7 @@ In this administration UI, you have three tabs:
 
 ## Configuring the default settings for kubectl
 
-Please refer to the [Configuring kubectl on an OVH Managed Kubernetes cluster](../configuring-kubectl/) documentation for this part of the process.
+Please refer to the [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl/) documentation for this part of the process.
 
 ## Add a worker node
 
