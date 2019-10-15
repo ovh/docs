@@ -10,7 +10,7 @@ order: 1
 
 ## Einleitung
 
-Im Internet gibt es viele verschiedene Websites. Mit Ihrem [OVH Webhosting](https://www.ovh.com/de/hosting/){.external} können Sie Ihre eigene Seite ins Internet stellen, sofern diese mit der [Konfiguration unserer Infrastrukturen](http://pro.ovh.net/infos/){.external} kompatibel ist. Daher kann es sein, dass Sie die von Ihrem Webhosting verwendete PHP-Version ändern möchten.
+Im Internet gibt es viele verschiedene Websites. Mit Ihrem [OVH Webhosting](https://www.ovh.com/de/hosting/){.external} können Sie Ihre eigene Seite ins Internet stellen, sofern diese mit der [Konfiguration unserer Infrastrukturen](https://cluster028.hosting.ovh.net/infos/){.external} kompatibel ist. Daher kann es sein, dass Sie die von Ihrem Webhosting verwendete PHP-Version ändern möchten.
 
 **In dieser Anleitung erfahren Sie, wie Sie die PHP-Version Ihres OVH Webhostings ändern.**
 

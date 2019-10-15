@@ -10,7 +10,7 @@ legacy_guide_number: g1207
 
 ## Sumário
 
-Na Internet, existem inúmeros sites. O seu [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} permite-lhe alojar o site que quiser, desde que seja compatível com a [configuração das nossas infraestruturas](http://pro.ovh.net/infos/){.external}. Neste sentido, poderá querer alterar a versão de PHP utilizada pelo seu alojamento web.
+Na Internet, existem inúmeros sites. O seu [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} permite-lhe alojar o site que quiser, desde que seja compatível com a [configuração das nossas infraestruturas](https://cluster028.hosting.ovh.net/infos/){.external}. Neste sentido, poderá querer alterar a versão de PHP utilizada pelo seu alojamento web.
 
 **Saiba como mudar a versão de PHP do seu alojamento web da OVH.**
 
