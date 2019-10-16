@@ -5,7 +5,7 @@ excerpt: 'This guide will show you which settings need to be changed to re-enabl
 section: 'Getting started'
 ---
 
-**Last updated 5th July 2018**
+**Last updated 15th June 2019**
 
 ## Objective
 
@@ -22,27 +22,7 @@ When you install Windows Server 2012, 2012 R2 or 2016 on a [VPS](https://www.ovh
 
 ### Step 1: Log in to the KVM
 
-Log in to the OVH [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Cloud`{.action} tab, then expand the list of servers.
-
-![KVM](images/vps-server-list-01.png){.thumbnail}
-
-Select your server from the list and click on the `Home`{.action} tab.
-
-![KVM](images/kvm-01.png){.thumbnail}
-
-Click on the `KVM`{.action} shortcut in the **Shortcuts** section of the `Home`{.action} tab.
-
-![KVM](images/kvm-02.png){.thumbnail}
-
-The KVM screen will now open, which is a small window with a connection to your server (similar to remote desktop).
-
-Since the window is so small it will be quite difficult to navigate around your server's interface using the scrollbars, so it's recommended that you open the KVM in a new, full-screen window.
-
-![KVM](images/setup-01.png){.thumbnail}
-
-Once you open the KVM in full-screen mode, you can begin the initial Windows setup.
-
-![KVM](images/setup-02.png){.thumbnail}
+To access the KVM of your VPS, please follow the [VPS KVM guide](https://docs.ovh.com/gb/en/vps/use-kvm-for-vps/){.external}
 
 ### Step 2: Configure Windows settings
 
