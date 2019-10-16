@@ -6,7 +6,7 @@ section: 'Network Management'
 order: 1
 ---
 
-**Last updated 24th April 2019**
+**Last updated 15th June 2019**
 
 ## Objective
 
@@ -17,18 +17,18 @@ IPv6 is the latest version of the *Internet Protocol* (IP). Each OVH VPS server 
 > [!warning]
 >
 > OVH is providing you with machines that you will be responsible for. We have no access to these machines, and therefore cannot manage them. You are responsible for your own software and security management. We have provided you with this guide in order to help you with common tasks. However, we advise contacting a specialist provider if you experience any difficulties or doubts about administration, usage or server security. You can find more information in the "Go further" section of this guide.
-> 
+>
 
 ## Requirements
 
 - You need to have an [OVH VPS server]({ovh_www}/vps/){.external}.
 - You need to be connected via SSH to your VPS (root access).
 - You need to have basic network knowledge.
-- You need to have access to the `Dedicated`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You need to have access to the `Server`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
 
-Configuring IPv6 on your VPS server is done in several steps. At several points in the process, you will be prompted to use commands, or to customise the configuration of your server. 
+Configuring IPv6 on your VPS server is done in several steps. At several points in the process, you will be prompted to use commands, or to customise the configuration of your server.
 
 Before starting, and in order to use consistent terminology throughout these changes, we invite you to take note of the table below. It sets out terms that we will use throughout this guide:
 
@@ -47,7 +47,7 @@ The first step is to access the IPv6 address and the IPv6 gateway assigned to yo
 
 #### Via the OVH Control Panel
 
-Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the`Cloud`{.action} section. Click `Servers`{.action} in the services bar on the left-hand side, then choose the VPS server concerned. Make sure you are on the `Home`{.action} tab.
+Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the `Server`{.action} section. Click `VPS`{.action} in the services bar on the left-hand side, then choose the VPS server concerned. Make sure you are on the `Home`{.action} tab.
 
 The IPv6 address and the IPv6 gateway assigned to your server will appear in the `IP` section. Retrieve these and continue to step 2, "[Apply IPv6 Configuration](./#step-2-apply-the-ipv6-configuration_1){.external}".
 
@@ -88,8 +88,8 @@ There are several ways to apply the IPv6 configuration. Use whichever method bes
 
 > [!warning]
 >
-> This configuration will be lost after a restart of your VPS server (non-persistent configuration). 
-> 
+> This configuration will be lost after a restart of your VPS server (non-persistent configuration).
+>
 
 Connected SSH to your VPS via SSH, using the following commands. Take care to tailor these with:
 
@@ -115,7 +115,7 @@ In some cases (such as Debian 9), the appropriate method may not be the one spec
 > [!warning]
 >
 > Before modifying a configuration file, remember to make a backup! This way, if something goes wrong, you can easily go back.
-> 
+>
 
 Proceed with the method that best suits you:
 
@@ -177,7 +177,7 @@ rm -f /etc/netplan/50-cloud-init.yaml
 cp /etc/netplan/backup/50-cloud-init.yaml /etc/netplan/50-cloud-init.yaml
 ```
 
-As soon as you are ready to perform the configuration, create a copy of the IPv4 file, for reworking at your convenience. 
+As soon as you are ready to perform the configuration, create a copy of the IPv4 file, for reworking at your convenience.
 
 ```bash
 cd /etc/netplan
@@ -247,7 +247,7 @@ You will then need to create a file (with *sudo* privileges), indicating the def
 # touch /etc/sysconfig/network-scripts/route6-eth0
 ```
 
-Edit it by tailoring the elements below (*IPV6_GATEWAY* and **eth0** interface, if necessary). 
+Edit it by tailoring the elements below (*IPV6_GATEWAY* and **eth0** interface, if necessary).
 
 ```
 IPV6_GATEWAY dev eth0
@@ -270,7 +270,7 @@ Open the status of the `Ethernet` connection and click `Properties`{.action}. In
 
 ![configureipv6](images/configure-ipv6-step3.png){.thumbnail}
 
-In this new window, tick the "Use the following IPv6 address" box. Fill in the fields below with the information retrieved during the first step. 
+In this new window, tick the "Use the following IPv6 address" box. Fill in the fields below with the information retrieved during the first step.
 
 Below "Use the following DNS server address", you have the option of entering the IPv6 DNS _resolvers_ of your choice in the fields provided. This extension is optional if the _resolvers_ mentioned in the IPv4 configuration are already working.
 
@@ -280,7 +280,7 @@ Once you have completed these items, tick the `Validate settings when quitting` 
 
 ### Step 3: Verify the configuration and test the connection
 
-To verify that the configuration is functional, there are several possible commands, depending on the operating system. 
+To verify that the configuration is functional, there are several possible commands, depending on the operating system.
 
 - **For a Linux-based system**, here are two examples for the **eth0** interface (to be adapted if necessary):
 
@@ -303,7 +303,7 @@ eth0      Link encap:Ethernet  HWaddr ab:cd:ef:gf:ij:kl
           [...]
 ```
 
-To test the connection, use the following command: 
+To test the connection, use the following command:
 
 ```bash
 ping6 proof.ovh.net
@@ -313,7 +313,7 @@ ping6 proof.ovh.net
 
 ```
 ipconfig
- 
+
 Windows IP Configuration
 
 Ethernet adapter Ethernet:
@@ -327,13 +327,13 @@ Ethernet adapter Ethernet:
                                        51.xxx.xxx.y
 ```
 
-To test the connection, use the following command: 
+To test the connection, use the following command:
 
 ```
 ping -6 proof.ovh.net
 ```
 
-You can also test the connection to another remote server. However, it is necessary for IPv6 to be active on the remote server for this operation to work. 
+You can also test the connection to another remote server. However, it is necessary for IPv6 to be active on the remote server for this operation to work.
 
 > [!primary]
 >
@@ -363,7 +363,7 @@ To avoid this, you need to disable automatic network management in the Cloud.ini
 echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-network-config.cfg
 ```
 
-Once done, reboot your server for handling to take effect. 
+Once done, reboot your server for handling to take effect.
 
 To return to automatic management of your network by Cloud-init, delete the newly created file. or move it to another directory.
 
