@@ -50,13 +50,20 @@ There is also a limit of 10 open ports on every `LoadBalancer`, and these ports 
 
 Our Managed Kubernetes service is based on OpenStack, and your nodes and persistent volumes are built on it, using OVH Public Cloud. As such, you can see them in the *Servers* section of [OVH Cloud Manager](https://www.ovh.com/manager/cloud/). It doesn't mean that you can deal directly with these nodes and persistent volumes as other cloud instances. The *managed* part of OVHcloud Managed Kubernetes means that we have configured those nodes and volumes to be part of our Managed Kubernetes. Please refrain from manipulating them from the *OVH Cloud Manager* (modifying ports left opened, renaming, resizing volumes...), as you could break them.
 
-## Ports and Private Networks
+## Ports
 
 In any case, there are some ports that you shouldn't block on your instances if you want to keep your OVHcloud Managed Kubernetes service running:
 
-- TCP Port 22 (*ssh*)
-- TCP Port 10250 (*kubelet*)
-- TCP Ports from 30000 to 32767 (*NodePort* services port range)
-- UDP Port 8472 (*flannel*)
+### Ports to open from public network
+
+- TCP Port 22 (*ssh*): needed for nodes management by OVH
+- TCP Port 10250 (*kubelet*): needed for [communication from apiserver to worker nodes](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet)
+- TCP Ports from 30000 to 32767 (*NodePort* services port range): needed for [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport) and [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) services
+
+### Ports to open from others worker nodes
+
+- UDP Port 8472 (*flannel*): needed for communication between pods
+
+## Private Networks
 
 Privates networks  (vRack) aren't yet supported in OVHcloud Managed Kubernetes. Please refrain from adding private networks to your working nodes instances.
