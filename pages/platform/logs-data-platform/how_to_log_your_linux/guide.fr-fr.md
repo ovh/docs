@@ -91,7 +91,10 @@ destination ovhPaaSLogs {
         template(ovhTemplate),
         ts_format("iso"),
         transport("tls"),
-        tls(peer-verify("require-trusted") ca_dir("/etc/ssl/certs/")),
+        tls(
+            peer-verify("required-trusted") 
+            ca_dir("/etc/ssl/certs/")
+        ),
         keep-alive(yes),
         so_keepalive(yes),
     );

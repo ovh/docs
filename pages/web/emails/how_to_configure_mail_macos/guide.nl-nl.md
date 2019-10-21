@@ -1,7 +1,7 @@
 ---
-title: Configuratie van uw e-mailadres op Mail van macOS
+title: 'Configuratie van uw e-mailadres op Mail van macOS'
 slug: configuratie-mail-macos
-excerpt: Leer hoe u een MX Plan-adres kunt configureren in Mail van macOS El Capitan, Sierra, en High Sierra
+excerpt: 'Leer hoe u een MX Plan-adres kunt configureren in Mail van macOS El Capitan, Sierra, en High Sierra'
 section: Apple
 ---
 
@@ -48,7 +48,7 @@ Voer uw accountgegevens in:
 
 |Informatie|Omschrijving|
 |---|---|
-|Naam|Voer de afzendernaam in die u wilt laten weergeven wanneer u e-mails vanaf dit adres verzendt.|
+|Naam|Voer het volledige e-mailadres in.|
 |E-mailadres|Voer het volledige e-mailadres in.|
 |Het wachtwoord|Voer het wachtwoord van het e-mailadres in.|
 

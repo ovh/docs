@@ -1,7 +1,7 @@
 ---
-title: Installing Nginx Ingress on OVH Managed Kubernetes
+title: Installing Nginx Ingress on OVHcloud Managed Kubernetes
 slug: installing-nginx-ingress
-excerpt: 'Find out how to install Nginx Ingress on OVH Managed Kubernetes '
+excerpt: 'Find out how to install Nginx Ingress on OVHcloud Managed Kubernetes '
 section: Tutorials
 ---
 
@@ -30,14 +30,14 @@ section: Tutorials
 </style>
 
 
-In this tutorial we are going to guide you with the setup of [Nginx Ingress](https://github.com/kubernetes/ingress-nginx){.external} on your OVH Managed Kubernetes Service.
+In this tutorial we are going to guide you with the setup of [Nginx Ingress](https://github.com/kubernetes/ingress-nginx){.external} on your OVHcloud Managed Kubernetes Service.
 
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVH Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
 
 

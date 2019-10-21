@@ -6,7 +6,7 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 18th April 2018**
+**Last updated 15th June 2019**
 
 ## Objective
 
@@ -18,7 +18,7 @@ A virtual private server (VPS) is a virtualised dedicated server. Unlike web hos
 > [!warning]
 >
 > While OVH provides you with the devices, the responsibility rests solely in your hands. Keep in mind that OVH is an IAAS (Infrastructure As A Service), then you are the only one who can access your server(s), as you are administrators. For this reason, you are the only responsible for your service’s software and security.
-This guide is designed to help you with the most common tasks. However, we recommend contacting a specialized service provider if you experience any difficulties or have any doubts about managing, using and securing a server. You can find more information in the “Go further” section of this guide. 
+This guide is designed to help you with the most common tasks. However, we recommend contacting a specialized service provider if you experience any difficulties or have any doubts about managing, using and securing a server. You can find more information in the “Go further” section of this guide.
 >
 
 
@@ -30,7 +30,7 @@ This guide is designed to help you with the most common tasks. However, we recom
 
 ## Instructions
 
-Once you have logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, you simply need to read the information about your VPS, go to the `Cloud`{.action} section, then to `Servers`{.action} in the left-hand column. In this section, you will see everything about your VPS:
+Once you have logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, you simply need to read the information about your VPS, go to the `Server`{.action} section, then to `VPS`{.action} in the left-hand column. In this section, you will see everything about your VPS:
 
 ### Logging in to a VPS
 

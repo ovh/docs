@@ -1,14 +1,13 @@
 ---
-title: DMZ &#58; couplage OverTheBox avec un autre routeur
-keywords: DMZ, Routeur
-description: DMZ &#58; couplage OverTheBox avec un autre routeur
+title: 'DMZ &#58; couplage OverTheBox avec un autre routeur'
+keywords: 'DMZ, Routeur'
+description: 'DMZ &#58; couplage OverTheBox avec un autre routeur'
 slug: dmz-couplage-overthebox-avec-un-autre-routeur
-excerpt: Si vous souhaitez conserver un routeur comme par exemple un pfSense pour gérer votre  LAN , vos  VPNs , etc, vous pouvez configurer  OverTheBox  en mode transparent en créant une  DMZ
-section: Configurations techniques complexes
+excerpt: 'Si vous souhaitez conserver un routeur comme par exemple un pfSense pour gérer votre  LAN , vos  VPNs , etc, vous pouvez configurer  OverTheBox  en mode transparent en créant une  DMZ'
+section: 'Configurations techniques complexes'
 ---
 
-
-## Prérequis
+## Prérequis
 L'intégralité de votre réseau **LAN** sera géré par votre routeur personel. Cela comprend le **serveur DHCP**. Veuillez donc d'abord désactiver le **serveur DHCP** de votre **OverTheBox** comme indiqué sur le guide suivant :
 
 [Désactiver le serveur DHCP d’OverTheBox](https://docs.ovh.com/fr/overthebox/desactiver-votre-serveur-dhcp/){.ref}

@@ -1,7 +1,7 @@
 ---
 title: 'Resizing Persistent Volumes'
 slug: resizing-persistent-volumes
-excerpt: 'Find out how to resize Persistent Volumes on OVH Managed Kubernetes'
+excerpt: 'Find out how to resize Persistent Volumes on OVHcloud Managed Kubernetes'
 section: Tutorials
 ---
 
@@ -29,7 +29,7 @@ section: Tutorials
 
 **Last updated 1<sup>st</sup> July, 2019.**
 
-In this tutorial we are going to guide you with the resize of [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) (PVs) on your OVH Managed Kubernetes Service.
+In this tutorial we are going to guide you with the resize of [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) (PVs) on your OVHcloud Managed Kubernetes Service.
 
 The Kubernetes `PersistentVolume` subsystem provides an API for users and administrators that abstracts details of how storage is provided from how it is consumed. To do this Kubernetes provides two API resources: `PersistentVolume` (PVs) and `PersistentVolumeClaim` (PVCs).
 
@@ -40,9 +40,9 @@ Since Kubernetes 1.11, support for expanding PersistentVolumeClaims (PVCs) is en
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
-You also need to know how PVs are handled on OVH Managed Kubernetes service, please refer to the [Persistent Volumes on OVH Managed Kubernetes](../ovh-kubernetes-persistent-volumes/) guide.
+You also need to know how PVs are handled on OVHcloud Managed Kubernetes service, please refer to the [Persistent Volumes on OVHcloud Managed Kubernetes](../ovh-kubernetes-persistent-volumes/) guide.
 
 
 ## Let's make a Persistent Volume Claim
@@ -405,9 +405,9 @@ mysql> SHOW TABLES;
 
 ## Where do we go from here?
 
-Now you can expand the Persistent Volumes on your OVH Managed Kubernetes cluster, and adapt them to the live of your data.
+Now you can expand the Persistent Volumes on your OVHcloud Managed Kubernetes cluster, and adapt them to the live of your data.
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVH Managed Kubernetes doc site](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](../).
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
 

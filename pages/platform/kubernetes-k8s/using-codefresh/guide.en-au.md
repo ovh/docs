@@ -1,6 +1,6 @@
 ---
-title: 'Using Codefresh with OVH Managed Kubernetes cluster'
-excerpt: 'Find out how to use Codefresh CI/CD with an OVH Managed Kubernetes cluster'
+title: 'Using Codefresh with OVHcloud Managed Kubernetes cluster'
+excerpt: 'Find out how to use Codefresh CI/CD with an OVHcloud Managed Kubernetes cluster'
 slug: using-codefresh
 section: 'Tutorials'
 ---
@@ -29,7 +29,7 @@ section: 'Tutorials'
  }
 </style>
 
-In this tutorial we will see how you can connect [Codefresh](https://codefresh.io){.external}, a CI/CD platform for Kubernetes, to an OVH Managed Kubernetes cluster.
+In this tutorial we will see how you can connect [Codefresh](https://codefresh.io){.external}, a CI/CD platform for Kubernetes, to an OVHcloud Managed Kubernetes cluster.
 
 
 ## Before you begin
@@ -38,18 +38,18 @@ The first thing you need to follow this tutorial is a Codefresh account, you can
 
 ![Codefresh](images/using-codefresh-01.jpg){.thumbnail}
 
-This tutorial also presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVH Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial also presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 
 ## Connect an OVH Kubernetes cluster to Codefresh dashboard
 
-You can use the Codefresh GUI to connect your OVH Managed Kubernetes cluster to Codefresh. In Codefresh GUI, start by going into your *Account Configuration*, by clicking on *Account Settings* on the left sidebar. On the first section called *Integrations* click the *Configure* button next to Kubernetes.
+You can use the Codefresh GUI to connect your OVHcloud Managed Kubernetes cluster to Codefresh. In Codefresh GUI, start by going into your *Account Configuration*, by clicking on *Account Settings* on the left sidebar. On the first section called *Integrations* click the *Configure* button next to Kubernetes.
 
 ![Connect an OVH Kubernetes cluster to Codefresh dashboard](images/using-codefresh-02.jpg){.thumbnail}
 
 ![Connect an OVH Kubernetes cluster to Codefresh dashboard](images/using-codefresh-03.jpg){.thumbnail}
 
-As the current time, Codefresh doesn't propose a direct integration with OVH Managed Kubernetes Service, so you will have to add your cluster manually. To do it, click on the *Add provider* button and select *Custom providerx*.
+As the current time, Codefresh doesn't propose a direct integration with OVHcloud Managed Kubernetes Service, so you will have to add your cluster manually. To do it, click on the *Add provider* button and select *Custom providerx*.
 
 ![Connect an OVH Kubernetes cluster to Codefresh dashboard](images/using-codefresh-03.jpg){.thumbnail}
 
@@ -119,7 +119,7 @@ clusterrolebinding.rbac.authorization.k8s.io/codefresh-user created
 
 ### Getting the *Host*
 
-Use `kubectl` to get the full URL of the OVH Managed Kubernetes API endpoints:
+Use `kubectl` to get the full URL of the OVHcloud Managed Kubernetes API endpoints:
 
 ```
 kubectl cluster-info
@@ -172,7 +172,7 @@ ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklpSjkuZXlKcGMzTWlPaUpyZFdKbGNtNWxkR1Z6TDNO
 
 ### Test and save the connection
 
-Click on the *Test connection* button to test the configuration. You should get a message telling you that your OVH Managed Kubernetes cluster connects successfully with Codefresh: 
+Click on the *Test connection* button to test the configuration. You should get a message telling you that your OVHcloud Managed Kubernetes cluster connects successfully with Codefresh: 
 
 ![Connect an OVH Kubernetes cluster to Codefresh dashboard](images/using-codefresh-07.jpg){.thumbnail}
 

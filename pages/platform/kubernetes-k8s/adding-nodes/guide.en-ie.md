@@ -1,5 +1,5 @@
 ---
-title: 'Adding nodes to a OVH Managed Kubernetes cluster'
+title: 'Adding nodes to a OVHcloud Managed Kubernetes cluster'
 slug: adding-nodes
 excerpt: ''
 section: 'User guides'
@@ -9,20 +9,20 @@ section: 'User guides'
 
 ## Objective
 
-OVH Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will cover the first step after ordering a cluster: adding nodes.
+OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will cover the first step after ordering a cluster: adding nodes.
 
 
 
 ## Requirements
 
-- An OVH Managed Kubernetes cluster
+- An OVHcloud Managed Kubernetes cluster
 
 
 ## Instructions
 
 ### Step 1 - Add a node using the OVH Cloud Manager 
 
-Access our administration UI for your OVH Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the [OVH Cloud Manager](https://www.ovh.com/manager/cloud/)
+Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the [OVH Cloud Manager](https://www.ovh.com/manager/cloud/)
 
 
 ![Access to the administration UI](images/ordering_a_node-01.png){.thumbnail}
@@ -56,7 +56,7 @@ In the *Nodes* tab  you can inspect the state of your nodes. The node you have j
 
 ## Go further
 
-To have an overview of OVH Managed Kubernetes service, you can go to the [OVH Managed Kubernetes site](https://www.ovh.com/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes site](https://www.ovh.com/public-cloud/kubernetes/).
 
 Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring_default_settings_for_kubectl/configuring_default_settings_for_kubectl/) and [deploying an application](../deploying_an_application/deploying_an_application/) .
 

@@ -5,7 +5,7 @@ slug: use-kvm-for-vps
 section: Getting started
 ---
 
-**Last updated 18th April 2018**
+**Last updated 15 June 2019**
 
 ## Objective
 
@@ -21,12 +21,17 @@ The KVM console allows you to connect directly to your VPS without the need to u
 
 ### Connecting to the KVM via the Control Panel
 
-After logging in to your Control Panel, simply go to the page for managing your VPS. You will see a button labelled `KVM`{.action}:
+Once you have logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, you simply go to the `Server`{.action} section, then to `VPS`{.action} in the left-hand column to select your VPS. In this section, you will you will see a button labelled `KVM`{.action}:
 
 ![Click on the KVM button](images/activating_kvm_manager.png){.thumbnail}
 
- 
-A window will then initiate the connection to your VPS. This could take a few seconds. Then all you have to do is connect:
+The KVM screen will now open, which is a small window with a connection to your server. Since the window is so small it will be quite difficult to navigate around your server's interface using the scrollbars, so it's recommended that you open the KVM in a new, full-screen window using the "Open in a new window" button in the bottom right corner of the popup. Then all you have to do is connect:
+
+> [!primary]
+>
+> If you have issues with double typing, the issue may originate due to auto screen adjustment. We recommend opening the KVM in a new window using the "Open in a new window" button.
+> Should you still have issues with the screen, we recommend removing from the URL the "auto" part. If the URL is (the link for you may be different, this is only illustrating which part of the URL needs to be removed) https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx then it should become https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx
+>
 
 ![Connecting to the KVM](images/kvm_screen.png){.thumbnail}
 
@@ -47,8 +52,20 @@ If you have a 2014 VPS, you may encounter *error 1006* so going through the API 
 >
 > @api {POST} /vps/{serviceName}/openConsoleAccess
 >
+> API call parameters:
+>
+>> serviceName *
+>>> ID of your VPS which looks something like vpsxxxxx.ovh.net
+>> protocol
+>>> VNC
 
 Despite the command going through on the API, the connection might take one or two minutes – the time it takes for the port to be successfully opened.
+
+We recommend using either of the following clients:
+- [UltraVnc](https://www.uvnc.com/downloads/ultravnc.html){.external}
+- [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/){.external}
+
+Use the details provided by the API call to connect to the VPS remotely using either of the above-mentioned software clients.
 
 #### For 2016 VPS
 
@@ -58,9 +75,17 @@ If problems arise with the KVM, here is the recommended API for accessing the KV
 >
 > @api {POST} /vps/{serviceName}/getConsoleUrl
 >
+> API call parameters:
+>
+>> serviceName *
+>>> ID of your VPS which looks something like vpsxxxxx.ovh.net
+>
+
+> [!primary]
+>
+> Should you still have issues with the screen, we recommend removing from the URL the "auto" part. If the URL is (the link for you may be different, this is only illustrating which part of the URL needs to be removed) https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx then it should become https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx
+>
 
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
-
-

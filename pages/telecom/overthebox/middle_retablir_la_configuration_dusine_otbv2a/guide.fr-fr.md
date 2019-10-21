@@ -1,10 +1,9 @@
 ---
-title: Rétablir la configuration d'usine OverTheBox IT
+title: 'Rétablir la configuration d''usine OverTheBox IT'
 slug: retablir-la-configuration-dusine
-excerpt: Afin de repartir sur de bonnes bases ou utiliser OverTheBox dans une nouvelle configuration, vous pouvez réinitialiser  OverTheBox .  Ce guide propose plusieurs méthodes, chacune permet d'arriver au même résultat.
-section: Rétablir la configuration d'usine
+excerpt: 'Afin de repartir sur de bonnes bases ou utiliser OverTheBox dans une nouvelle configuration, vous pouvez réinitialiser OverTheBox. Ce guide propose plusieurs méthodes, chacune permet d''arriver au même résultat.'
+section: 'Rétablir la configuration d''usine'
 ---
-
 
 ## Action manuelle
 - Appuyez **rapidement** 5 fois de suite sur le bouton en façade (en moins de 2 secondes)
@@ -25,7 +24,7 @@ section: Rétablir la configuration d'usine
 
 ## Action dans l'interface OverTheBox
 
-### Pour faire une simple suppression de votre configuration (uniquement à partir de la version 0.6.x)
+### Pour faire une simple suppression de votre configuration (uniquement à partir de la version 0.6.x)
 - Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
 - Cliquez sur **"System"**
 - Cliquez sur **"Backup/Flash Firmware"**
@@ -35,7 +34,7 @@ section: Rétablir la configuration d'usine
 ![overthebox](images/PerformReset.png){.thumbnail}
 
 
-### Pour faire une restauration complète du système
+### Pour faire une restauration complète du système
 - Téléchargez le fichier suivant sur votre ordinateur : [http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz){.external}
 - Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
 - Cliquez sur **"System"**
@@ -65,9 +64,9 @@ Ensuite, dans la section  **Flash new firmware image** :
 > 
 
 
-## Action en commande (via SSH ou un écran branché sur l'OverTheBox)
+## Action en commande (via SSH ou un écran branché sur l'OverTheBox)
 
-### Pour faire une simple suppression de votre configuration (uniquement à partir de la version 0.6.x)
+### Pour faire une simple suppression de votre configuration (uniquement à partir de la version 0.6.x)
 - Connectez vous en SSH à votre **OverTheBox** (ssh [root@overthebox.ovh](mailto:root@overthebox.ovh){.external}) ou branchez un écran directement sur l' **OverTheBox** en VGA puis un clavier en USB
 - Tapez la commande :
 
@@ -77,7 +76,7 @@ firstboot -y
 ```
 
 
-### Pour faire une restauration complète du système
+### Pour faire une restauration complète du système
 - Connectez vous en SSH à votre **OverTheBox** (ssh [root@overthebox.ovh](mailto:root@overthebox.ovh){.external}) ou branchez un écran directement sur l' **OverTheBox** en VGA puis un clavier en USB
 - Tapez la commande :
 
@@ -99,7 +98,7 @@ otb-action-sysupgrade
 
 ## Action via une clef USB
 
-### Création de la clef bootable sous Windows (logiciel Win32 Disk Imager)
+### Création de la clef bootable sous Windows (logiciel Win32 Disk Imager)
 - Téléchargez l'image **"Rescue"** [http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz){.external}
 
 Cette image permettra à votre clef USB de devenir le "support de boot" de l' **OverTheBox**
@@ -123,10 +122,10 @@ Cette image permettra à votre clef USB de devenir le "support de boot" de l' **
 > 
 
 
-### Création de la clef bootable sous Mac OS
+### Création de la clef bootable sous Mac OS
 Toute l'opération sera fera en ligne de commande, veuillez donc ouvrir le **Terminal**
 
-- Télécharger l'image **"Rescue"** via la commande suivante
+- Téléchargez l'image **"Rescue"** via la commande suivante
 
 
 ```bash
@@ -170,8 +169,8 @@ Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minut
 > 
 
 
-### Création de la clef bootable sous Linux
-Toute l'opération sera fera en ligne de commande, veuillez donc ouvrir le **Terminal**
+### Création de la clef bootable sous Linux
+Toute l'opération se fera en lignes de commande, veuillez donc ouvrir le **Terminal**
 
 - Téléchargez l'image **"Rescue"** via la commande suivante
 
@@ -182,7 +181,7 @@ wget http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz
 
 Ce fichier permettra à votre clef USB de devenir le "support de boot" de l'**OverTheBox**
 
-Il est ensuite impératif de connaitre le dossier désignant les partitions de votre clef USB, pour cela :
+Il est ensuite impératif de connaitre le dossier désignant les partitions de votre clef USB. Pour cela :
 
 - Tapez la commande suivante juste après avoir branché la clef USB :
 
@@ -214,9 +213,9 @@ Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minut
 > 
 
 
-### Réinitialisation grâce à la clef bootable
+### Réinitialisation grâce à la clef bootable
 - Débranchez l' **OverTheBox** du courant électrique
-- Branchez la clef USB flashée sur un des ports USB **noir** de l'**OverTheBox** (Ne pas brancher la clef sur le port USB bleu)
+- Branchez la clef USB flashée sur un des ports USB **noirs** de l'**OverTheBox** (Ne pas brancher la clef sur le port USB bleu)
 
 
 ![overthebox](images/OTBv2a_face.jpg){.thumbnail}

@@ -10,7 +10,7 @@ order: 1
 
 ## Objective
 
-Time Series are everywhere, this page explains what can be defined as Time series and how they can be modelised on a quick example.
+Time Series are everywhere, this page explains what can be defined as Time series and how they can be modelized on a quick example.
 
 ## Requirements
 
@@ -25,7 +25,7 @@ We call a Time Series, a **sequence** of evolving values over time. These values
 
 ![introduction](images/intro_1.png)
 
-To ease readability, let's visualise with colors instead of degrees values. We can use the Celcius degree as an Y axis to graph the temperature evolution along the day.
+To ease readability, let's visualise with colors instead of degrees values. We can use the Celsius degree as an Y axis to graph the temperature evolution along the day.
 
 
 ![introduction](images/intro_2.png)
@@ -91,7 +91,7 @@ While a common use case for Time Series is to plot them as a graph, using line c
 - Prediction and Forecasting
 - etc.
 
-In order to acheive these goals, many **algorithms** can be used. Here is a short selection of most common  features that a customer, looking for **analysis capabilities**, should pay attention to :
+In order to achieve these goals, many **algorithms** can be used. Here is a short selection of most common  features that a customer, looking for **analysis capabilities**, should pay attention to :
 
 |Algorithm|Description|
 |---|---|
@@ -108,9 +108,9 @@ In order to acheive these goals, many **algorithms** can be used. Here is a shor
 |Variance & Standard Deviations|Speak for themselves|
 
 
-### Time Series Predicton or Forecasting
+### Time Series Prediction or Forecasting
 
-You can use Time Series to predict the future. By learning from an exsting signal, you can forecast this signal by predicting future points. Using different techniques, like AutoRegressive Integrated Moving Average (ARIMA) for linear models or others (or a combination) more adapted for multivariate Time Series.
+You can use Time Series to predict the future. By learning from an existing signal, you can forecast this signal by predicting future points. Using different techniques, like AutoRegressive Integrated Moving Average (ARIMA) for linear models or others (or a combination) more adapted for multivariate Time Series.
 
 ## Go further
 

@@ -1,7 +1,7 @@
 ---
-title: 'Installing CDS on OVH Managed Kubernetes'
+title: 'Installing CDS on OVHcloud Managed Kubernetes'
 slug: installing-cds
-excerpt: 'Find out how to install CDS on OVH Managed Kubernetes'
+excerpt: 'Find out how to install CDS on OVHcloud Managed Kubernetes'
 section: Tutorials
 ---
 
@@ -29,7 +29,7 @@ section: Tutorials
  }
 </style>
 
-In this tutorial we are going to guide you with the install of [CDS](https://ovh.github.io/cds){.external} on your OVH Managed Kubernetes Service. CDS is an Enterprise-Grade Continuous Delivery & DevOps Automation Platform.
+In this tutorial we are going to guide you with the install of [CDS](https://ovh.github.io/cds){.external} on your OVHcloud Managed Kubernetes Service. CDS is an Enterprise-Grade Continuous Delivery & DevOps Automation Platform.
 
 We are going to install all CDS components (API, vcs uService, hooks uService, hatchery to spawn workers, elasticsearch to index events).
 
@@ -38,14 +38,14 @@ We are going to install all CDS components (API, vcs uService, hooks uService, h
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVH Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVH Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
 
 ## Installing the CDS Helm chart
 
-For this tutorial we are using the [CDS Helm chart](https://github.com/ovh/cds/tree/master/contrib/helm/cds){.external} found on CDS repository. The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVH Managed Kubernetes Service.
+For this tutorial we are using the [CDS Helm chart](https://github.com/ovh/cds/tree/master/contrib/helm/cds){.external} found on CDS repository. The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVHcloud Managed Kubernetes Service.
 
 As the CDS chart isn't already in the official helm repository on GitHub you have to clone the CDS repository with the CDS helm inside.
 

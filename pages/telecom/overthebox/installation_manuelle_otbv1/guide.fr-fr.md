@@ -1,12 +1,11 @@
 ---
-title: Installation manuelle OverTheBox Intel
+title: 'Installation manuelle OverTheBox Intel'
 slug: installation-manuelle-otb-intel
-excerpt: Si vous ne passez pas par l'assistant afin d'effectuer l'installation, il est impératif de suivre ce guide afin de réaliser l'enregistrement de votre OverTheBox et l'intégration de vos connexions internet sur cette dernière.
-section: Installation manuelle
+excerpt: 'Si vous ne passez pas par l''assistant afin d''effectuer l''installation, il est impératif de suivre ce guide afin de réaliser l''enregistrement de votre OverTheBox et l''intégration de vos connexions Internet sur cette dernière.'
+section: 'Installation manuelle'
 ---
 
-
-## 1. Enregistrement au service
+## 1. Enregistrement du service
 
 
 > [!alert]
@@ -43,7 +42,7 @@ section: Installation manuelle
 L'enregistrement est terminé, patientez quelques minutes avant de passer à l'étape suivante.
 
 
-## 2. Activation et Configuration de l'OverTheBox sur la connexion principale
+## 2. Activation et configuration de l'OverTheBox sur la connexion principale
 - Retournez sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} depuis votre ordinateur connecté au modem principal.
 - Cliquez sur le bouton **"Activate"**.
 
@@ -82,7 +81,7 @@ Cette opération dure 30 secondes, le DHCP sera ensuite géré par votre **OverT
 
 ![overthebox](images/4310.png){.thumbnail}
 
-- Si vous ne voyez pas le domaine **overthebox.ovh**, veuillez renouveller manuellement la configuration réseau de votre ordinateur, pour ce faire :
+- Si vous ne voyez pas le domaine **overthebox.ovh**, veuillez renouveller manuellement la configuration réseau de votre ordinateur. Pour ce faire :
     - Sous **Windows**, ouvrez une invite de commande grâce au raccourci clavier **Windows + R** puis en tapant **cmd** dans la zone d'execution.
     - Tapez dans l'invite de commande :
 
@@ -104,7 +103,7 @@ ipconfig /renew
 > 
 
 
-## 3. Ajout d'une connexion supplémentaire
+## 3. Ajout d'une connexion supplémentaire
 - Avant de brancher le modem supplémentaire, vérifiez que ce dernier possède **un sous réseau différent** des autres modems.
 
 **Exemple** : Le premier modem possède l'IP 192.168. **0** .1 et le deuxième 192.168. **1** .1

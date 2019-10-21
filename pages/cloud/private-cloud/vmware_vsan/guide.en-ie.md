@@ -5,7 +5,7 @@ excerpt: 'Find out how to use the power of Hyperconvergence for your virtual mac
 section: 'VMware vSphere features'
 ---
 
-**Last updated 06/12/2018**
+**Last updated 09/17/2019**
 
 ## Objective
 
@@ -32,6 +32,7 @@ vSAN is an object storage solution offered by VMware. It gathers a set of disks 
 One of the most important points to understand is that the vSAN datastore is an object storage system. The VMs hosted on this datastore are made up of different objects, while on a ‘standard’ storage solution, the VMs are made up of files hosted on the LAN. These objects are protected by being replicated across several hosts on the cluster, whereas they would usually be protected by the disk RAID level.
 
 A VM is made up of the following components:
+
 * the VM’s base files (VMX, nvram, logs, memory snapshots, etc.), also called VM Home
 * virtual disks (VMDK)
 * swap
@@ -171,9 +172,9 @@ You can see that a new snapshot object has been added to each of the hard disk o
 
 ##### vSAN 6.6
 
-* 5 disk groups per host
+* 5 disk groups per host **(Only 1 per vSAN SDDC Host)**
 * 9,000 components per vSAN host
-* 35 storage disks per host
+* 35 storage disks per host **(Only 1 per vSAN SDDC Host)**
 * 64 hosts per vSAN cluster
 * only 1 vSAN datastore per cluster
 * 6,000 virtual machines per cluster
@@ -186,6 +187,7 @@ You can see that a new snapshot object has been added to each of the hard disk o
 ##### vSAN 6.6
 
 The following vSphere features are not supported:
+
   * RDM, VMFS, diagnostic partition
   * Raw Device Mapping (RDM)
   * Storage I/O Control

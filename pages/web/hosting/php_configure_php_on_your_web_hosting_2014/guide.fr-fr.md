@@ -10,7 +10,7 @@ order: 1
 
 ## Objectif
 
-Sur le web, il existe une multitude de sites internet. Votre [hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} vous permet d’y héberger le site internet que vous souhaitez, tant que celui-ci est compatible avec la [configuration de nos infrastructures](http://pro.ovh.net/infos/){.external}. En ce sens, vous pouvez être amené à vouloir modifier la version de PHP utilisée par votre hébergement web.
+Sur le web, il existe une multitude de sites internet. Votre [hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} vous permet d’y héberger le site internet que vous souhaitez, tant que celui-ci est compatible avec la [configuration de nos infrastructures](https://cluster028.hosting.ovh.net/infos/){.external}. En ce sens, vous pouvez être amené à vouloir modifier la version de PHP utilisée par votre hébergement web.
 
 **Découvrez comment changer la version de PHP de votre hébergement web OVH.**
 

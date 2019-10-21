@@ -5,12 +5,13 @@ excerpt: Learn how to change the root password of a VPS
 section: Diagnostic and rescue mode
 ---
 
-**Last updated 27th June 2018**
+**Last updated 15th June 2019**
 
 ## Objective
 
-When you install or reinstall a distribution or operating system, you are provided with a root access password. We strongly recommend that you change it, as detailed in our guide on [securing a VPS](https://docs.ovh.com/gb/en/vps/tips-for-securing-a-vps/). You may also find that you have lost this password, and need to change it. This guide will take you through both scenarios.
-Learn how to change the root password of a VPS.
+It may happen that you need to change the root password on your Linux operating system at one point. In this guide we explore how to change the root password on a Linux operating system in the following scenarios:
+- You know your root password, but you want to change it
+- You have lost your root password and unable to login via SSH anymore
 
 ## Instructions
 
@@ -33,7 +34,7 @@ passwd: password updated successfully
 > [!primary]
 >
 > On a Linux distribution, the password you enter **will not appear**.
-> 
+>
 
 ### Changing a password after you have lost it
 
@@ -44,54 +45,59 @@ passwd: password updated successfully
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-#### Step 1: Identify the mount point
+#### Step 1: Ensure VPS is in rescue mode
 
-The mount is created automatically on any VPS in the 2016 range, so you just need to identify where your partition is mounted. To do this, you can use two commands:
+If you have not rebooted the VPS into rescue mode yet, you may use the [rescue mode](https://docs.ovh.com/gb/en/vps/rescue/){.external} guide to help you to reboot it into rescue mode.
+
+#### Step 2: Identify the mount point
+
+The mount is created automatically on any VPS in the 2016 & 2018 range, so you just need to identify where your partition is mounted. To do this, you can use two commands:
 
 ##### df -h
 
 ```sh
-root@rescue-pro:~# df -h
-Size Used Avail Use% Mounted on
-/dev/vda1 4.7G 1.3G 3.2G 29% /
-udev 10M 0 10M 0% /dev
-tmpfs 774M 8.4M 766M 2% /run
-tmpfs 1.9G 0 1.9G 0% /dev/shm
-tmpfs 5.0M 0 5.0M 0% /run/lock
-tmpfs 1.9G 0 1.9G 0% /sys/fs/cgroup
-/dev/vdb1 20G 934M 18G 5% /mnt/vdb1
+df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            5.8G     0  5.8G   0% /dev
+tmpfs           1.2G   17M  1.2G   2% /run
+/dev/sda1       2.4G  1.5G  788M  66% /
+tmpfs           5.8G     0  5.8G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
+/dev/sdb1        49G  1.2G   48G   3% /mnt/sdb1
+/dev/sdb15      105M  3.6M  101M   4% /mnt/sdb15
 ```
 
 ##### lsblk
 
 ```sh
-root@rescue-pro:~# lsblk
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 254:0 0 4.9G 0 disk
-└─vda1 254:1 0 4.9G 0 part /
-vdb 254:16 0 20G 0 disk
-└─vdb1 254:17 0 20G 0 part /mnt/vdb1
+lsblk
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda       8:0    0  2.5G  0 disk
+└─sda1    8:1    0  2.5G  0 part /
+sdb       8:16   0   50G  0 disk
+├─sdb1    8:17   0 49.9G  0 part /mnt/sdb1
+├─sdb14   8:30   0    4M  0 part
+└─sdb15   8:31   0  106M  0 part /mnt/sdb15
 ```
 
-The image above shows that your system partition is mounted on **/mnt/vdb1**.
+The image above shows that your system partition is mounted on **/mnt/sdb1**.
 
+#### Step 3: CHROOT permissions
 
-#### Step 2: CHROOT permissions
-
-You now need to edit the root directory, for the changes to be applied to your system. You can do this by using the `chroot command. Please enter the following command:
+You now need to edit the root directory, for the changes to be applied to your system. You can do this by using the chroot command. Please enter the following command:
 
 ```sh
-root@rescue-pro:~# chroot /mnt/vdb1/
-root@rescue-pro:/#
+chroot /mnt/sdb1/
 ```
 
 You can check by typing the `ls -l` command, which will list the content stored in the root directory of your system:
 
 ```sh
-root@rescue-pro:/# ls -l
+ls -l
 ```
 
-#### Step 3: change the root password
+#### Step 4: change the root password
 
 Now, you just need to change the root password with the `passwd` command:
 
@@ -105,6 +111,13 @@ passwd: password updated successfully
 ```
 
 Finally, reboot your VPS on its drive via your OVH Control Panel.
+
+### Troubleshooting
+
+After you have changed your password and rebooted the VPS from the control panel and you cannot, you should try the following:
+
+- You should check the KVM. It can show some very important information as to why it cannot start. The [KVM guide](https://docs.ovh.com/gb/en/vps/use-kvm-for-vps/){.external} can provide you the help to find the KVM feature on the OVH control panel.
+- If the KVM is showing it is booting or cannot find the disk, ensure you have [boot logs enabled](https://docs.ovh.com/gb/en/vps/use-kvm-for-vps/){.external} and contact OVH support via a ticket from the control panel or by calling.
 
 ## Go further
 

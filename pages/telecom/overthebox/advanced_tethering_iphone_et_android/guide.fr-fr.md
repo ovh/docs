@@ -1,16 +1,15 @@
 ---
-title: Tethering iPhone et Android
-keywords: Tethering, Partage, Connexion, Iphone, Android
-description: Tethering iPhone &amp; Android
+title: 'Tethering iPhone et Android'
+keywords: 'Tethering, Partage, Connexion, Iphone, Android'
+description: 'Tethering iPhone &amp; Android'
 slug: tethering-iphone-et-android
-excerpt: Vous pouvez connecter un téléphone iPhone ou Android en USB afin d'ajouter une nouvelle interface modem
-section: Configurations techniques complexes
+excerpt: 'Vous pouvez connecter un téléphone iPhone ou Android en USB afin d''ajouter une nouvelle interface modem'
+section: 'Configurations techniques complexes'
 ---
 
+## Préparation de l'OverTheBox
 
-## Préparation de L'OverTheBox
-
-### Pour un téléphone Android (Uniquement si première installation)
+### Pour un téléphone Android (uniquement si première installation)
 Les 2 commandes suivantes vont installer les paquets permettant d'utiliser le tethering  **Android**, ces dernières sont inutiles en version **0.6.x** et au delà. En SSH :
 
 
@@ -20,7 +19,7 @@ opkg install kmod-usb-net kmod-usb-net-rndis kmod-usb-net-cdc-ether
 ```
 
 
-### Pour un téléphone IPhone
+### Pour un téléphone IPhone
 Les 2 commandes suivantes vont installer les paquets permettant d'utiliser le tethering  **Iphone**, ces dernières sont inutiles en version **0.6.x** et au delà. En SSH :
 
 
@@ -43,7 +42,7 @@ Votre téléphone vous demandera une confirmation à chaque reconnexion.
 ## Ajout de la nouvelle interface
 Avant de commencer, il est important de connaitre l'interface physique de votre téléphone sur l'OverTheBox
 
-Pour cela branchez le téléphone en USB sur l'OverTheBox,  **activez le partage de connexion**  puis  **tout de suite** :
+Pour cela, branchez le téléphone en USB sur l'OverTheBox,  **activez le partage de connexion**  puis  **tout de suite** :
 
 - Rendez vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
 - Cliquez sur **"Status"**
@@ -64,13 +63,13 @@ Pour cela branchez le téléphone en USB sur l'OverTheBox,  **activez le partage
 
 ![overthebox](images/Android.png){.thumbnail}
 
-En fonction du téléphone utilisé, il se peut que l'interface usb0 ne s'affiche pas automatiquement. Dans ce cas vous pouvez la créer manuellement en cochant la case **"Custom Interface"** et en y inscrivant l'information retrouvée dans les logs (dans notre exemple **usb0**)
+En fonction du téléphone utilisé, il se peut que l'interface usb0 ne s'affiche pas automatiquement. Dans ce cas, vous pouvez la créer manuellement en cochant la case **"Custom Interface"** et en y inscrivant l'information retrouvée dans les logs (dans notre exemple **usb0**)
 
 
 ![overthebox](images/Android2.png){.thumbnail}
 
 
-## Vérification
+## Vérification
 Une nouvelle interface sera visible. Cette dernière sera disponible après quelque minutes.
 
 

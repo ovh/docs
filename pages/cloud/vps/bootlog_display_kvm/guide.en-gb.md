@@ -4,7 +4,7 @@ slug: displaying-boot-log-in-the-kvm
 section: Diagnostic and rescue mode
 ---
 
-**Last updated 14th November, 2017**
+**Last updated 15th June, 2019**
 
 ## Overview
 
@@ -15,7 +15,7 @@ Please note that for some environments, the KVM won’t provide any useful infor
 
 ## Requirements
 
-- You must have access to a VPS or a Public Cloud instance in [rescue mode](https://docs.ovh.com/gb/en/vps/rescue/){.external}
+- You must have access to a VPS in [rescue mode](https://docs.ovh.com/gb/en/vps/rescue/){.external}
 
 
 ## Instructions
@@ -27,8 +27,11 @@ If your VPS is working normally, go directly to step 4.
 > These modifications will change the GRUB configuration. Be sure to perform backups before making any modifications. OVH cannot be held responsible for damage or loss of data following these operations.
 >
 
+### Step 1: ensure VPS is in rescue mode
 
-### Step 1: perform initial verification
+If you have not rebooted the VPS into rescue mode yet, you may use the [rescue mode](https://docs.ovh.com/gb/en/vps/rescue/){.external} guide to help you to reboot it into rescue mode.
+
+### Step 2: perform initial verification
 
 After connecting, you should check the name of the disk with the command `lsblk`:
 
@@ -49,11 +52,11 @@ If the result is the following, your primary disk is `vdb` and your primary part
 
 ```sh
 lsblk
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 8:0 0 3G 0 disk
-└─vda1 8:1 0 3G 0 part /
-vdb 8:16 0 10G 0 disk
-└─vdb1 8:17 0 10G 0 part
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda      8:0    0  2.5G  0 disk
+└─sda1   8:1    0  2.5G  0 part /
+sdb      8:16   0   40G  0 disk
+└─sdb1   8:17   0   40G  0 part /mnt/sdb1
 ```
 
 > [!primary]
@@ -61,7 +64,7 @@ vdb 8:16 0 10G 0 disk
 > For this guide, we will use `sdb`. If your disk is `vdb`, simply replace sdb with vdb for each command.
 >
 
-### Step 1b: for VPS only
+### Step 3: Unmount and remount the partition correctly
 
 On a VPS in rescue mode, the primary disk is already mounted. Therefore, it first needs to be unmounted and then remounted with the correct settings:
 
@@ -69,51 +72,72 @@ On a VPS in rescue mode, the primary disk is already mounted. Therefore, it firs
 umount /dev/sdb1
 ```
 
-### Step 2: mount the disk
+### Step 4: mount the disk
 
-Now that the name of the disk has been identified, you can mount it with the correct settings:
+Now that the name of the disk has been identified, you can mount it with the correct settings. Since in step 1 we found the disk was mounted under "/mnt/sdb1", we will mount it again in the same folder with these commands:
 
 ```sh
-mount /dev/sdb1 /mnt
-mount -t proc none /mnt/proc
-mount -o bind /dev /mnt/dev
-mount -t sysfs none /mnt/sys/
+mount /dev/sdb1 /mnt/sdb1
+mount -t proc none /mnt/sdb1/proc
+mount -o bind /dev /mnt/sdb1/dev
+mount -t sysfs none /mnt/sdb1/sys/
 ```
 
 These commands will then allow you to use the `chroot` command and initiate the commands that require access to the `sys`, `dev` and `proc` directories.
 
-### Step 3: launch the CHROOT command
+### Step 5: launch the CHROOT command
 
 To apply it directly to the system, type the following command:
 
 ```sh
-chroot /mnt
+chroot /mnt/sdb1
 ```
 
 From now on, all commands will be applied to your VPS and not to your rescue mode.
 
-> [!primary]
->
-> When you are in rescue mode, you see the following screen:
->
-> ```sh 
-> root@serveur-3:~#
-> ```
-> 
-> After performing the `chroot`, you will have:
-> 
-> ```sh
-> [root@serveur-3 ~]#
-> ```
-> 
-> Note the square brackets [ ], confirming that you are now in a CHROOT environment.
->
+### Step 4: make the modifications in GRUB
 
-### Step 4: make the modifications
+#### For CentOS 6 (grub):
+
+Edit the file /boot/grub/grub.conf and remove the rhgb and quiet arguments from the kernel lines and and the "console=ttyS0" "loglevel=7" parameter instead if missing:
+
+Before:
+```sh
+title CentOS (2.6.32-754.12.1.el6.x86_64)
+        root (hd0,0)
+        kernel /boot/vmlinuz-2.6.32-754.12.1.el6.x86_64 ro root=UUID=7e192559-d669-4919-840b-4c9a846fafa7 rd_NO_LUKS rd_NO_LVM LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM rhgb quiet
+        initrd /boot/initramfs-2.6.32-754.12.1.el6.x86_64.img
+title CentOS (2.6.32-642.15.1.el6.x86_64)
+        root (hd0,0)
+        kernel /boot/vmlinuz-2.6.32-642.15.1.el6.x86_64 ro root=UUID=7e192559-d669-4919-840b-4c9a846fafa7 rd_NO_LUKS rd_NO_LVM LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM rhgb quiet
+        initrd /boot/initramfs-2.6.32-642.15.1.el6.x86_64.img
+title CentOS 6 (2.6.32-642.el6.x86_64)
+        root (hd0,0)
+        kernel /boot/vmlinuz-2.6.32-642.el6.x86_64 ro root=UUID=7e192559-d669-4919-840b-4c9a846fafa7 rd_NO_LUKS rd_NO_LVM LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM rhgb quiet
+        initrd /boot/initramfs-2.6.32-642.el6.x86_64.img
+```
+
+After:
+```sh
+title CentOS (2.6.32-754.12.1.el6.x86_64)
+        root (hd0,0)
+        kernel /boot/vmlinuz-2.6.32-754.12.1.el6.x86_64 ro root=UUID=7e192559-d669-4919-840b-4c9a846fafa7 rd_NO_LUKS rd_NO_LVM LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM console=ttyS0 loglevel=7
+        initrd /boot/initramfs-2.6.32-754.12.1.el6.x86_64.img
+title CentOS (2.6.32-642.15.1.el6.x86_64)
+        root (hd0,0)
+        kernel /boot/vmlinuz-2.6.32-642.15.1.el6.x86_64 ro root=UUID=7e192559-d669-4919-840b-4c9a846fafa7 rd_NO_LUKS rd_NO_LVM LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM console=ttyS0 loglevel=7
+        initrd /boot/initramfs-2.6.32-642.15.1.el6.x86_64.img
+title CentOS 6 (2.6.32-642.el6.x86_64)
+        root (hd0,0)
+        kernel /boot/vmlinuz-2.6.32-642.el6.x86_64 ro root=UUID=7e192559-d669-4919-840b-4c9a846fafa7 rd_NO_LUKS rd_NO_LVM LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM console=ttyS0 loglevel=7
+        initrd /boot/initramfs-2.6.32-642.el6.x86_64.img
+```
+
+Save the file and exit. The change will reflect on the next reboot.
+
+#### For CentOS 7 (grub2):
 
 In order to access the boot log in the KVM, make sure you have the following values in the /etc/default/grub file:
-
-- For CentOS 6 and 7:
 
 ```sh
 GRUB_TERMINAL_OUTPUT="console"
@@ -129,7 +153,9 @@ Then use the following command to regenerate the GRUB configuration file (the va
 grub2-mkconfig -o "$(readlink /etc/grub2.cfg)"
 ```
 
-- For Debian and Ubuntu:
+#### For Debian (7/8/9) and Ubuntu (16.04/18.04):
+
+In order to access the boot log in the KVM, make sure you have the following values in the /etc/default/grub file:
 
 ```sh
 GRUB_CMDLINE_LINUX_DEFAULT="console=ttyS0 console=tty0"

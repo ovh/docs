@@ -7,7 +7,7 @@ section: Technical resources
 
 **Last updated 1<sup>st</sup> July, 2019.**
 
-We list here the most frequently requested OVH Managed Kubernetes features that are currently available or planned in the upcoming year.
+We list here the most frequently requested OVHcloud Managed Kubernetes features that are currently available or planned in the upcoming year.
 
 ### Available features
 

@@ -1,12 +1,11 @@
 ---
-title: Ajouter un serveur Active Directory dans les options DHCP
-keywords: Active, Directory
-description: Ajouter un serveur Active Directory dans les options DHCP
+title: 'Ajouter un serveur Active Directory dans les options DHCP'
+keywords: 'Active, Directory'
+description: 'Ajouter un serveur Active Directory dans les options DHCP'
 slug: ajouter-un-serveur-active-directory-dans-les-options-dhcp
-excerpt: Certains services rendus par un serveur Active Directory nécessitent d'ajouter l'ip du serveur AD dans les options DHCP
-section: Configurations techniques complexes
+excerpt: 'Certains services rendus par un serveur Active Directory nécessitent d''ajouter l''ip du serveur AD dans les options DHCP'
+section: 'Configurations techniques complexes'
 ---
-
 
 ## Configuration
 - Connectez vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} en tant qu'administrateur,

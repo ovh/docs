@@ -204,7 +204,7 @@ As soon as the alert is fired you will receive a mail, detailing the alert condi
 
 ![No traffic mail](images/mail-no-traffic.png){.thumbnail}
 
-### Configuring an Field Aggregation alert condtion
+### Configuring an Field Aggregation alert condition
 
 A slow website is a poor experience for your users and can make you lose customers. There are many possible causes for a slowdown : too many connections, a misbehaving web application or an network problem. Fortunately, your Apache logs give you the response time of your server that you can use to trigger an alert when your website is too slow.
 

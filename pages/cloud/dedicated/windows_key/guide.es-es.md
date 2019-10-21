@@ -64,6 +64,8 @@ Estas son las claves KMS disponibles para cada sistema operativo:
 |Windows Server 2016 Datacenter|CB7KF-BWN84-R7R2Y-793K2-8XDDG|
 |Windows Server 2016 Standard|WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY|
 |Windows Server 2016 Essentials|JCKRF-N37P4-C2D82-9YXRT-4M63B|
+|Windows Server 2019 Standard|N69G4-B89J2-4G8F4-WWYCC-J464C|
+|Windows Server 2019 Datacenter|WMDGN-G9PQG-XVVXX-R3X43-63DFG|
 
 Fuente: [Microsoft MSDN](https://msdn.microsoft.com/es-es/library/jj612867(v=ws.11).aspx){.external}.
 

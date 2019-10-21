@@ -1,13 +1,11 @@
 ---
-title: Créer un bail DHCP permanent / Intégration d'un Décodeur TV
-keywords: DHCP, static, bail, permanent, TV
-description: Créer un bail DHCP permanent / Intégration d'un Décodeur TV
+title: 'Créer un bail DHCP permanent / Intégration d''un Décodeur TV'
+keywords: 'DHCP, static, bail, permanent, TV'
+description: 'Créer un bail DHCP permanent / Intégration d''un Décodeur TV'
 slug: creer-un-bail-dhcp-permanent
-excerpt: Afin d'attribuer toujours la même IP à un périphérique via le service DHCP, vous pouvez créer un bail DHCP permanent. Cette opération est nécessaire pour les décodeurs TV puisque ces derniers ne peuvent pas fonctionner à travers le tunnel OverTheBox.
-section: Fonctionnalités principales
+excerpt: 'Afin d''attribuer toujours la même IP à un périphérique via le service DHCP, vous pouvez créer un bail DHCP permanent. Cette opération est nécessaire pour les décodeurs TV puisque ces derniers ne peuvent pas fonctionner à travers le tunnel OverTheBox.'
+section: 'Fonctionnalités principales'
 ---
-
-
 
 > [!alert]
 >

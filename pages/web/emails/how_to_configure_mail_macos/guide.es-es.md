@@ -48,7 +48,7 @@ Cumplimente la información de su cuenta:
 
 |Campo|Descripción|
 |---|---|
-|Nombre|Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes de correo desde esa dirección.|
+|Nombre|Introduzca la dirección de correo electrónico completa.|
 |Correo electrónico|Introduzca la dirección de correo electrónico completa.|
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
 

@@ -97,7 +97,7 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 
 ```bash
-213.251.182.103
+51.68.11.195
 ```
 
 
@@ -177,7 +177,7 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 
 ```bash
-213.251.182.106
+51.68.11.203
 ```
 
 
@@ -217,7 +217,7 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 
 ```bash
-213.251.182.107
+51.68.11.207
 ```
 
 
@@ -257,7 +257,7 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 
 ```bash
-213.251.182.110
+51.68.11.211
 ```
 
 
@@ -297,7 +297,7 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 
 ```bash
-213.251.182.111
+51.68.11.215
 ```
 
 
@@ -417,7 +417,7 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 
 ```bash
-213.251.182.114
+51.68.11.227
 ```
 
 
@@ -734,3 +734,35 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 54.37.121.239
 ```
 
+### Cluster 028
+
+A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
+
+|País|Código de país|IPv4|IPv6|
+|---|---|----|---|
+|Francia|FR|51.91.236.193|2001:41d0:301::28|
+|Irlanda|IE|92.222.139.190|2001:41d0:301:3::28|
+|Portugal|PT|217.182.39.251|2001:41d0:301:2::28|
+|Reino Unido|UK|193.70.71.149|2001:41d0:301:12::28|
+|Italia|IT|51.255.117.202|2001:41d0:301:11::28|
+|España|ES|54.36.145.173|2001:41d0:301:4::28|
+|Polonia|PL|213.32.10.111|2001:41d0:301:5::28|
+|República Checa|CZ|54.38.116.114|2001:41d0:301:6::28|
+|Países Bajos|NL|176.31.23.191|2001:41d0:301:7::28|
+|Finlanda|FI|51.255.135.35|2001:41d0:301:8::28|
+|Lituania|LT|51.83.29.135|2001:41d0:301:9::28|
+|Alemania|DE|54.37.173.127|2001:41d0:301:1::28|
+|Bélgica|BE|193.70.70.144|2001:41d0:301:10::28|
+
+Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+51.255.119.116
+```
+
+Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
+
+
+```bash
+91.134.248.249
+```

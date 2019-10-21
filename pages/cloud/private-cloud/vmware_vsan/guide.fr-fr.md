@@ -1,12 +1,12 @@
 ---
-title: Mettre en oeuvre l''hyperconvergence VMware avec vSAN
+title: Mettre en oeuvre l'hyperconvergence VMware avec vSAN
 slug: vmware-vsan
 excerpt: Découvrez comment mettre en oeuvre la puissance de l'hyperconvergence pour vos machines virtuelles avec vSAN
 section: Fonctionnalités VMware vSphere
 order: 08
 ---
 
-**Dernière mise à jour le 18/12/2018**
+**Dernière mise à jour le 17/09/2019**
 
 ## Objectif
 
@@ -33,6 +33,7 @@ vSAN est une solution de stockage de type objet proposée par VMware. Elle agrè
 Un des points les plus importants à comprendre est que le datastore vSAN est un système de stockage objet. Les VM hébergées sur ce datastore sont composées de différents objets alors que sur un stockage "traditionnel" les VM sont constitués de fichiers hébergés sur un LUN. La protection de ces objets se fait simplement en les répliquant sur plusieurs hôtes du cluster là ou habituellement cette protection est assurée par le niveau de RAID des disques.
 
 Une VM est constituée des objets suivants :
+
 * Les fichiers base de la VM (VMX, nvram, logs, snapshots mémoire...), appelés aussi VM Home ("Accueil VM" en francais),
 * les disques virtuels (VMDK),
 * le Swap,
@@ -172,9 +173,9 @@ On voit qu'un nouvel objet snapshot s'est ajouté à chacun des objets hard disk
 
 ##### vSAN 6.6
 
-* 5 diskgroups par hôtes
+* 5 diskgroups par hôtes **(1 seul possible sur Host SDDC vSAN)**
 * 9000 composants par hôte vSAN
-* 35 disques de stockage par hôte
+* 35 disques de stockage par hôte **(1 seul possible sur Host SDDC vSAN)**
 * 64 hôtes par cluster vSAN
 * 1 seul vSAN Datastore par cluster
 * 6000 machines virtuelles par cluster
@@ -187,10 +188,11 @@ On voit qu'un nouvel objet snapshot s'est ajouté à chacun des objets hard disk
 ##### vSAN 6.6
 
 Les fonctions suivantes de vSphere ne sont pas supportées :
-  * RDM,VMFS, partition de diagnostic
-  * Raw Device Mapping (RDM)
-  * Storage I/O control
-  * Reservation de volume SCSI
+
+* RDM,VMFS, partition de diagnostic
+* Raw Device Mapping (RDM)
+* Storage I/O control
+* Reservation de volume SCSI
 
 ### Activer vSAN
 
