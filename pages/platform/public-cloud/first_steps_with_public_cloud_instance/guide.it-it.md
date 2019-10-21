@@ -1,126 +1,111 @@
 ---
-title: Come utilizzare la tua istanza Public Cloud
-excerpt: Come utilizzare la tua istanza Public Cloud
+title: 'Iniziare a utilizzare un’istanza Public Cloud'
 slug: come_utilizzare_la_tua_istanza_public_cloud
+excerpt: 'Come eseguire le prime operazioni su un’istanza Public Cloud OVH'
+section: 'Per iniziare'
 legacy_guide_number: g2018
 ---
 
+**Ultimo aggiornamento: 11/07/2018**
 
-## 
-La sezione Cloud del tuo Spazio Cliente OVH è stata progettata per consentire una gestione semplice e veloce delle tue istanze.
+## Obiettivo
 
-I tuoi progetti sono divisi in 2 parti:
-
-- Infrastruttura: include tutte le tue istanze, backup, dischi, chiavi SSH, ecc...
-- Storage: include la lista dei tuoi container
+La sezione Cloud dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} è stata progettata per consentire una gestione semplice e veloce delle istanze attive. Da questa interfaccia è possibile visualizzare tutti i progetti di infrastruttura (istanze, backup, dischi, chiavi SSH, ecc…) e storage (inclusa la lista dei container).
 
 
-Questa guida ti mostra come gestire, modificare, riavviare o eliminare le tue istanze.
+**Questa guida ti mostra le operazioni di base da effettuare sulla tua istanza Public Cloud OVH.**
 
+### Prerequisiti
 
-## Requisiti necessari
+- [Aver creato un’istanza Public Cloud dallo Spazio Cliente OVH](https://docs.ovh.com/it/public-cloud/crea_unistanza_dallo_spazio_cliente_ovh/)
+- [Aver creato una chiave SSH](https://docs.ovh.com/it/dedicated/chiave-ssh-ovh/)
 
-- [Crea chiavi SSH]({legacy}1769)
-- [Crea un'istanza dallo Spazio Cliente OVH]({legacy}1775)
+### Procedura
 
+### Accedi alla gestione dell’istanza
 
+Accedi all’area “Cloud” dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio nella sezione `Server`{.action} della colonna a sinistra.  Dovrebbe aprirsi di default la scheda `Compute`{.action}: assicurati che la voce selezionata sia “Istanze”.
 
+L’interfaccia mostra la tua infrastruttura e diverse informazioni relative all’istanza:
 
-## 
-Ecco il menu della tua istanza:
+- modello e costo
+- nome e localizzazione
+- risorse disponibili
+- eventuali dischi aggiuntivi associati
+- indirizzo IP
 
-![](images/img_3415.jpg){.thumbnail}
-Sono indicate queste informazioni:
+![public-cloud](images/3415-2.png){.thumbnail}
 
-- il modello e il costo della tua istanza
-- il nome della tua istanza e la sua localizzazione
-- le risorse disponibili
-- gli eventuali dischi aggiuntivi associati
-- l'indirizzo IP della tua istanza (a destra)
+### Modifica la configurazione dell’istanza
 
+Nella pagina di gestione dell’istanza clicca sulla freccia verso il basso e seleziona l’opzione `Modifica`{.action}.
 
+![public-cloud](images/3481-2.png){.thumbnail}
 
+Nella nuova finestra è possibile:
 
-## Modifica la tua istanza
-Cliccando sull'opzione Modifica del menu, si apre una nuova finestra:
+- rinominare l'istanza 
+- modificare il modello dell’istanza
+- reinstallare l’istanza su un altro sistema operativo (**attenzione: questa operazione comporta la cancellazione di tutti i dati**)
+- passare dalla fatturazione oraria al forfait mensile (in questo caso viene generata una nuova fattura, calcolando il prorata temporis in base al giorno di attivazione del mese in corso)
 
-![](images/img_3481.jpg){.thumbnail}
-Da questo menu, puoi:
+![public-cloud](images/3481-3.png){.thumbnail}
 
+### Effettua un backup dell’istanza
 
-- assegnare un nome alla tua istanza
-- modificare il modello della tua istanza
-- reinstallare la tua istanza su un altro sistema operativo
+Per creare un backup dell’istanza torna alla pagina di gestione, clicca nuovamente sulla freccia verso il basso, seleziona l’opzione `Crea uno Snapshot`{.action} e segui le indicazioni.
 
+Per maggiori informazioni, consulta la guida [Effettuare lo Snapshot di un’istanza](https://docs.ovh.com/it/public-cloud/effettuare-snapshot-di-un-istanza/). 
 
+![public-cloud](images/3481-4.png){.thumbnail}
 
-## Attenzione:
-L'operazione di reinstallazione comporta la cancellazione dei tuoi dati.
+### Recupera le informazioni di connessione
 
-- passare dalla fatturazione oraria al forfait mensile
+Sempre nella pagina di gestione dell’istanza, clicca sulla freccia verso il basso e seleziona l’opzione `Informazioni di connessione`{.action}. Nella nuova finestra è disponibile il comando SSH da utilizzare per accedere all’istanza.
 
+![public-cloud](images/3484-2.png){.thumbnail}
 
+### Accedi alla console VNC
 
-## Attenzione:
-In questo caso viene generata una nuova fattura, calcolando il prorata temporis in base al giorno di attivazione del mese in corso.
+La console VNC è un software di controllo remoto con cui è possibile accedere direttamente all’istanza. Per poter stabilire la connessione tramite questo programma è necessario aver impostato una password di root.
 
+Per utilizzare la console accedi alla pagina di gestione dell’istanza, clicca sulla freccia verso il basso e seleziona l’opzione `Console VNC`{.action}.
 
-## Crea il tuo backup
-Per creare un backup della tua istanza, utilizza lo stesso menu.
-Per maggiori informazioni, consulta questa guida:
+![public-cloud](images/3484-3.png){.thumbnail}
 
-- [Effettua il backup della tua istanza]({legacy}1881)
+Il software si aprirà in una nuova finestra. 
 
+![public-cloud](images/3484-4.png){.thumbnail}
 
+### Riavvia l’istanza
 
+Il riavvio dell’istanza può essere effettuato in 2 modi diversi:
 
-## Informazioni di login
-Questa opzione ti permette di visualizzare una finestra con il comando ssh da eseguire per accedere alla tua istanza.
+- a caldo (software)
+- a freddo (hardware)
 
-![](images/img_3484.jpg){.thumbnail}
+Nella pagina di gestione dell’istanza, clicca sulla freccia verso il basso e seleziona l’opzione `Riavvia a caldo (soft)`{.action} o `Riavvia a freddo (hard)`{.action}.
 
+Nella nuova finestra, clicca su `OK`{.action} per confermare l’operazione.
 
-## Console VNC
-La console VNC ti permette di accedere direttamente alla tua istanza. Per utilizzarla, è necessario aver già configurato una password per l'utente root della tua istanza.
+![public-cloud](images/3484-5.png){.thumbnail}
 
-Se hai bisogno di aiuto, consulta questa guida:
+### Reinstalla l’istanza
 
-- [Accedi al pannello di gestione di un'istanza con Horizon]({legacy}1782)
+La reinstallazione dell’istanza può essere eseguita anche mantenendo lo stesso sistema operativo. **Ti ricordiamo che questa operazione comporta la cancellazione di tutti i dati esistenti.**
 
+Nella pagina di gestione dell’istanza, clicca sulla freccia verso il basso e seleziona l’opzione `Reinstalla`{.action}. Nella nuova finestra, clicca su `OK`{.action} per confermare l’operazione. 
 
+![public-cloud](images/3484-6.png){.thumbnail}
 
+### Elimina l’istanza
 
-## Riavvia la tua istanza
-Da questo menu, puoi riavviare la tua istanza in 2 modi diversi:
+Un’istanza può essere eliminata in qualsiasi momento. Ricorda però che **confermare questa operazione comporta la cancellazione definitiva di tutti i dati in essa contenuti, che non potranno più essere recuperati.**
 
-- a caldo (Software)
-- a freddo (Hardware)
+Nella pagina di gestione dell’istanza, clicca sulla freccia verso il basso e seleziona l’opzione `Elimina`{.action}. Nella nuova finestra, clicca su `OK`{.action} per confermare l’operazione. 
 
+![public-cloud](images/3484-7.png){.thumbnail}
 
+## Per saperne di più
 
-
-## Reinstalla la tua istanza
-Puoi reinstallare la tua istanza utilizzando lo stesso sistema operativo.
-
-## Attenzione:
-L'operazione di reinstallazione comporta la cancellazione dei tuoi dati.
-
-
-## Elimina la tua istanza
-Se hai scelto una fatturazione oraria, elimina la tua istanza per sospenderne la fatturazione.
-
-## Attenzione:
-Confermando l'eliminazione, la tua istanza e tutti i dati presenti non saranno più recuperabili.
-
-
-## 
-
-- [Come utilizzare un'istanza Windows]({legacy}1995)
-- [Imposta una password amministratore]({legacy}1786)
-
-
-
-
-## 
-[Ritorna all'indice delle guide Cloud]({legacy}1785)
-
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
