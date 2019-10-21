@@ -15,7 +15,7 @@ Les produits couverts par cette politique de fin de vie sont :
 
 - Les services Cloud Databases Web Hosting (également connues sous le nom de services SQLPrivé), instances SGBD dédiées joignables via le réseau Web Hosting ([voir les annonces](../privatesql-eos-eol/guide.fr-fr.md)).
 
-Notez que les services SharedSQL Web Hosting, bases de données MySQL joignables via le réseau Web Hosting, ne sont pas encore couverts par cette politique de fin de vie.
+- Les services SharedSQL Web Hosting, bases de données MySQL joignables via le réseau Web Hosting ([voir les annonces](../sharedsql-eos-eol/guide.fr-fr.md)).
 
 # Définitions et lignes directrices de la politique de fin de vie
 
