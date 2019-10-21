@@ -1,35 +1,35 @@
 ---
-title: 'Backup einer Instanz von einem Rechenzentrum in ein anderes übertragen'
-slug: instanz-backup-in-anderes-rechenzentrum-uebertragen
-section: 'Über APIs und Befehlszeile'
-excerpt: 'Hier erfahren Sie, wie Sie das Backup einer Instanz transferieren und dabei Zustand und Status der Instanz beibehalten.'
+title: 'Transferir a cópia de segurança de uma instância de um datacenter para outro'
+slug: transferir-a-copia-de-seguranca-de-uma-instancia-de-um-datacenter-para-outro
+section: A partir da API e linhas de comandos
+excerpt: 'Saiba como realizar esta operação mantendo a configuração e o estado da instância'
 ---
 
-**Stand 01.07.2019**
+**Última atualização: 24/04/2019**
 
-## Einleitung
+## Sumário
 
-Es kann vorkommen, dass Sie Ihre Public Cloud Instanz von einem Rechenzentrum in ein anderes übertragen möchten − sei es, weil Sie ein neues Rechenzentrum bevorzugen oder von den OVH Labs zur OVH Public Cloud wechseln wollen.
+Poderá ter de mover a sua instância Public Cloud de um datacenter para outro, quer seja porque prefere utilizar um novo centro de dados ou porque pretende migrar do OVH Labs para o Public Cloud.
 
-**In dieser Anleitung erfahren Sie, wie Sie das Backup einer Instanz transferieren und dabei Zustand und Status der Instanz beibehalten.**
+**Saiba como transferir a cópia de segurança de uma instância de um datacenter para outro, mantendo a sua configuração e estado.**
 
 
-## Voraussetzungen
+## Requisitos
 
-* Sie haben eine [Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/){.external} in Ihrem Account erstellt.
-* Sie haben Administrator-Zugriff (Root) zu Ihrem Rechenzentrum via SSH.
-* Sie haben die Anleitung „[Vorbereitung der Umgebung für die Verwendung der OpenStack API](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/){.external}“ gelesen (empfohlen).
+* Ter criado uma [instância Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external} a partir da sua conta.
+* Dispor de um acesso administrador (root) ao datacenter através de SSH.
+* Ler o manual "[Preparar o ambiente para utilizar a API OpenStack](https://docs.ovh.com/pt/public-cloud/preparar_o_ambiente_para_utilizar_a_api_openstack/){.external}". (Recomendado)
 
 > [!primary]
 >
-Die Befehle in dieser Anleitung basieren auf dem OpenStack-CLI, im Gegensatz zu `Nova`\- und `Glance`-APIs.
+Os comandos deste manual baseiam-se na CLI OpenStack, ao contrário das API `Nova` e `Glance`.
 >
 
-## Beschreibung
+## Instruções
 
-### Backup erstellen
+### Criar uma cópia de segurança
 
-Stellen Sie zunächst eine SSH-Verbindung zu Ihrem Rechenzentrum her. Führen Sie anschließend den folgenden Befehl aus, um Ihre vorhandenen Instanzen aufzulisten:
+Em primeiro lugar, deve estabelecer uma ligação SSH para o datacenter. De seguida, executa o seguinte comando para listar as instâncias existentes:
 
 ```
 #root@server:~$ openstack server list
@@ -42,15 +42,15 @@ Stellen Sie zunächst eine SSH-Verbindung zu Ihrem Rechenzentrum her. Führen Si
 ```
 
 
-Führen Sie anschließend den nachstehenden Befehl aus um ein Backup Ihrer Instanz zu erstellen:
+De seguida, execute o comando abaixo para criar uma cópia de segurança da sua instância:
 
 ```
 #root@server:~$ openstack image create --id aa7115b3-83df-4375-b2ee-19339041dcfa snap_server1
 ```
 
-### Backup herunterladen
+### Transferir a cópia de segurança
 
-Um die verfügbaren Instanzen aufzulisten, führen Sie folgenden Befehl aus:
+Execute este comando para listar as instâncias disponíveis:
 
 ```
 #root@server:~$ openstack image list
@@ -68,38 +68,38 @@ Um die verfügbaren Instanzen aufzulisten, führen Sie folgenden Befehl aus:
 | 9c9b3772-5320-414a-90bf-60307ff60436 | Debian 8 - Docker | active |
 ```
 
-Ermitteln Sie nun mithilfe der Liste das erstellte Backup:
+Identifique a cópia de segurança na lista:
 
 ```
 | 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_server1 | qcow2 | bare | 1598029824 | active |
 ```
 
-Führen Sie anschließend folgenden Befehl aus, um das Backup herunterzuladen:
+Por fim, execute este comando para descarregar a cópia de segurança:
 
 ```
 #root@server:~$ openstack image save --file snap_server1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
 ```
 
-### Backup in ein anderes Rechenzentrum übertragen
+### Transferir a cópia de segurança para outro datacenter
 
-Um den Transferprozess zu starten, müssen zuerst neue Umgebungsvariablen geladen werden.
+Para lançar o processo de transferência, deverá começar por carregar novas variáveis de ambiente.
 
 > [!warning]
 >
-> Wenn Sie Ihr Backup in ein Rechenzentrum innerhalb desselben Projekts übertragen, muss nur die Variable OS_REGION_NAME angepasst werden.
+> Se transferir a sua cópia de segurança para um datacenter no mesmo projeto, deverá alterar a variável OS_REGION_NAME.
 >
 
 ```
 #root@server:~$ export OS_REGION_NAME=SBG1
 ```
 
-Wenn Sie Ihr Backup in ein anderes Projekt oder in einen anderen Account übertragen, müssen die zu diesem Account gehörigen Umgebungsvariablen über folgenden Befehl neu geladen werden:
+Se transferir a sua cópia de segurança para outro projeto ou conta, deverá recarregar as variáveis de ambiente associadas a esta conta utilizando o seguinte comando:
 
 ```
 #root@server:~$ source openrc.sh
 ```
 
-Um das Backup in das neue Rechenzentrum zu transferieren, verwenden Sie folgenden Befehl:
+Para transferir a cópia de segurança para o novo datacenter, execute este comando:
 
 ```
 #root@server:~$ openstack image create --disk-format qcow2 --container-format bare --file snap_server1.qcow snap_server1
@@ -129,16 +129,16 @@ Um das Backup in das neue Rechenzentrum zu transferieren, verwenden Sie folgende
 +------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-### Instanz mithilfe Ihres Backups erstellen
+### Criar uma instância a partir da sua cópia de segurança
 
-Verwenden Sie die Backup-ID als Image mit folgendem Befehl:
+Utilize o ID da cópia de segurança como imagem com o seguinte comando:
 
 ```
 #root@server:~$ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
 ```
 
-## Weiterführende Informationen
+## Quer saber mais?
 
-[Transfer a volume backup from one datacentre to another](https://docs.ovh.com/gb/en/public-cloud/transfer_volume_backup_from_one_datacentre_to_another/){.external} (Englisch)
+[Transferir o backup de um volume de um datacenter para outro](https://docs.ovh.com/pt/public-cloud/transferir_o_backup_de_um_volume_de_um_datacenter_para_outro/){.external}.
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
