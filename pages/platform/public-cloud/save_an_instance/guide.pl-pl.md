@@ -1,65 +1,51 @@
 ---
-title: Kopia zapasowa instancji
-excerpt: Kopia zapasowa instancji
+title: 'Tworzenie kopii zapasowej instancji'
 slug: kopia_zapasowa_instancji
-legacy_guide_number: g1881
-section: Zarządzanie w Panelu klienta OVH
+excerpt: 'Dowiedz się, jak w prosty sposób utworzyć kopię zapasową instancji Public Cloud'
+section: 'Zarządzanie w Panelu klienta OVH'
 ---
 
+**Ostatnia aktualizacja z dnia 17-06-2019**
 
-## 
-Usługa Public Cloud pozwala na tworzenie kopii zapasowej instancji. Kopia ta będzie mogła służyć do:
+## Wprowadzenie
 
-- Przywrócenia starej konfiguracji
-- Odtworzenia / zduplikowania instancji
+Możesz w dowolnym momencie utworzyć w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} kopię zapasową instancji. Dzięki kopii zapasowej możesz przywrócić Twoją instancję z pierwotną konfiguracją lub odtworzyć instancję.
 
+**Utwórz w prosty sposób kopię zapasową instancji Public Cloud.**
 
-Przewodnik ten wyjaśnia, jak za pomocą kilku kliknięć, utworzyć kopie zapasową (snapshot).
+## Wymagania początkowe
 
+- [Utworzona na Twoim koncie instancja Public Cloud](../tworzenie_instancji_w_panelu_klienta_ovh/)
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Public Cloud`{.action} lub `Cloud`{.action} w poprzedniej wersji panelu
 
-## Wstępne wymagania
+## W praktyce
 
-- Zalogowanie do panelu klienta OVH Public Cloud
-- Posiadanie utworzonej wirtualnej maszyny
+### Etap 1: dostęp do interfejsu zarządzania instancją
 
+Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} W sekcji „Cloud” kliknij `Serwery`{.action} na pasku usług po lewej stronie. Wybierz odpowiednie rozwiązanie Public Cloud. Upewnij się, czy w zakładce `Compute`{.action} wybrałeś „Instancje”.
 
+![public cloud](images/2803-2.png){.thumbnail}
 
+### Etap 2: tworzenie kopii zapasowej instancji
 
-## 
+Na stronie z interfejsem zarządzania instancją, po kliknięciu strzałki skierowanej w dół, wybierz `Utwórz kopię zapasową`{.action}.
 
-- Rozwiń następujące menu na serwerze wirtualnym, dla którego chcesz wykonać kopię zapasową:
+![public cloud](images/2803-3.png){.thumbnail}
 
+W oknie, które się pojawi, nadaj nazwę kopii zapasowej. **Zapoznaj się również z informacjami dotyczącymi ewentualnych kosztów wiążących się z utworzeniem kopii.**
 
+Kiedy wszystko jest gotowe, `Uruchom kopię zapasową`{.action}
 
-![](images/img_2803.jpg){.thumbnail}
+![public cloud](images/2805-2.png){.thumbnail}
 
-- Kliknij na Utwórz kopię zapasową.
-- Pojawi się następujące okno, w którym będziesz mógł spersonalizować nazwę kopii zapasowej:
+### Etap 3: dostęp do kopii zapasowych instancji
 
+Aby uzyskać dostęp do kopii zapasowych instancji Public Cloud, kliknij `Compute`{.action}, a następnie `Snapshoty`{.action}.
 
+W tabeli wyświetlą się dostępne kopie zapasowe. Do operacji na kopiach zapasowych użyj przycisków znajdujących się po prawej stronie.
 
-![](images/img_2804.jpg){.thumbnail}
+![public cloud](images/2807-2.png){.thumbnail}
 
-- Kliknij na Rozpocznij kopię zapasową:
+## Sprawdź również
 
-
-
-![](images/img_2805.jpg){.thumbnail}
-Panel klienta oszacuje miesięczny koszt kopii zapasowej.
-
-- Kopie zapasowe będą dostępne w odpowiedniej sekcji:
-
-
-
-![](images/img_2806.jpg){.thumbnail}
-
-- Dostępne są szczegółowe informacje na temat kopii zapasowej:
-
-
-
-![](images/img_2807.jpg){.thumbnail}
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
