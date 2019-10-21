@@ -1,10 +1,9 @@
 ---
-title: Imposta una password amministratore
-excerpt: Imposta una password amministratore
+title: 'Imposta una password amministratore'
+excerpt: 'Imposta una password amministratore'
 slug: imposta_una_password_amministratore
 legacy_guide_number: g1786
 ---
-
 
 ## 
 Per effettuare alcune azioni, potresti avere bisogno di accedere come utente amministratore o eseguire operazioni con i privilegi di root, in particolare per:
@@ -18,7 +17,7 @@ Per effettuare alcune azioni, potresti avere bisogno di accedere come utente amm
 
 ## Requisiti necessari
 
-- []({legacy}1775)
+- Aver creato un’[istanza Public Cloud](https://www.ovh.it/public-cloud/istanze/){.external}
 - essere connesso in SSH con l'utente predefinito (admin o il nome della distribuzione per le immagini più recenti)
 
 
