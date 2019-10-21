@@ -1,10 +1,9 @@
 ---
-title: Root-Rechte erlangen und Passwort festlegen
-excerpt: Root-Rechte erlangen und Passwort festlegen
+title: 'Root-Rechte erlangen und Passwort festlegen'
+excerpt: 'Root-Rechte erlangen und Passwort festlegen'
 slug: root-rechte_erlangen_und_passwort_festlegen
 legacy_guide_number: g1786
 ---
-
 
 ## 
 Zur Durchführung bestimmter Aktionen kann es erforderlich sein, dass Sie sich root-Rechte verschaffen, um Operationen als Benutzer "root" realisieren zu können, zum Beispiel:
@@ -19,7 +18,7 @@ Zur Durchführung bestimmter Aktionen kann es erforderlich sein, dass Sie sich r
 
 ## Voraussetzungen
 
-- [Eine erstellte Instanz]({legacy}1775)
+- [Eine erstellte Instanz](https://www.ovh.de/public-cloud/)
 - Eine SSH-Verbindung zur Instanz mit dem Standardbenutzer (admin oder der Name der Distribution für neuere Images)
 
 
@@ -111,7 +110,6 @@ passwd: password updated successfully
 
 
 
-
 ## 
-[Zurück zum Index der Cloud Hilfen]({legacy}1785)
+[Zurück zum Index der Cloud Hilfen](https://docs.ovh.com/de/public-cloud/)
 
