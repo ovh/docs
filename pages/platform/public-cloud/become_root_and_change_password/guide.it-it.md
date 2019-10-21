@@ -1,115 +1,79 @@
 ---
-title: 'Imposta una password amministratore'
-excerpt: 'Imposta una password amministratore'
+title: 'Accedere come utente root e impostare una password'
 slug: imposta_una_password_amministratore
-legacy_guide_number: g1786
+excerpt: 'Come utilizzare l’utente amministratore e creare la password associata'
+section: Tutorial
 ---
 
-## 
-Per effettuare alcune azioni, potresti avere bisogno di accedere come utente amministratore o eseguire operazioni con i privilegi di root, in particolare per:
+**Ultimo aggiornamento: 08/08/2019**
 
-- installare pacchetti
-- impostare una password utente o amministratore (indispensabile per accedere al KVM)
-- eseguire alcune operazioni amministrative
+## Obiettivo
 
+Alcune operazioni di gestione di un server (ad esempio, l’installazione di pacchetti) potrebbero richiedere un livello di permessi elevato: in questo caso, è necessario utilizzare l’utente amministratore, che sulle macchine Linux viene chiamato “root”.
 
+**Questa guida ti mostra come impostare una password di root ed eseguire alcune operazioni di gestione con questo utente**.
 
+## Prerequisiti
 
-## Requisiti necessari
+* Disporre di un progetto Public Cloud attivo
+* Avere accesso al server via SSH
 
-- Aver creato un’[istanza Public Cloud](https://www.ovh.it/public-cloud/istanze/){.external}
-- essere connesso in SSH con l'utente predefinito (admin o il nome della distribuzione per le immagini più recenti)
+> [!primary]
+>
+> In questa guida l’utente predefinito è chiamato “admin”.
+>
 
+## Procedura
 
+### Modificare la password "root"
 
-## Informazioni
-In questa guida l'utente predefinito è admin.
+Per prima cosa accedi al server utilizzando una connessione SSH.
 
+Esegui il comando qui sotto e definisci una password per l’utente “admin” (per motivi di sicurezza, la password non verrà mostrata): 
 
-## Definisci una password
-
-- Imposta una password per l'utente admin (la password non viene visualizzata per motivi di sicurezza):
-
-```
+```sh
 ~$ sudo passwd
-Enter new UNIX password: 
-Retype new UNIX password: 
-passwd: password updated successfully
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully 
+successfully
 ```
 
+### Aggiorna le applicazioni (Debian/Ubuntu)
 
-- Imposta una password per l'utente root (la password non viene visualizzata per motivi di sicurezza):
-
-```
-~$ sudo passwd root
-Enter new UNIX password: 
-Retype new UNIX password: 
-passwd: password updated successfully
-```
-
-
-
-
-
-## Altri esempi
-
-- Aggiorna la cache dei pacchetti (Debian/Ubuntu)
+Per l’update dei pacchetti software installati sul server, utilizza questo comando:
 
 ```
 ~$ sudo apt-get update
 ```
 
+### Aggiorna il sistema (CentOS e Fedora)
 
-- Aggiorna il sistema (CentOS/Fedora)
+Per l’update del sistema operativo installato sul server, utilizza questo comando:
 
 ```
 ~$ sudo yum update
 ```
 
+### Modifica il file di configurazione
 
-- Modifica un file di configurazione:
+Per modificare un file di configurazione del server, utilizza questo comando:
 
 ```
 ~$ sudo vi /etc/hosts.allow
 ```
 
+### Accedi come utente amministratore
 
-
-
-
-## 
-
-- Accedi come utente amministratore
+Per effettuare l’accesso come utente root, utilizza questo comando:
 
 ```
 ~$ sudo su -
 ~#
 ```
 
+Quando richiesto, inserisci la password associata.
 
-- Imposta una password di root:
+## Per saperne di più
 
-```
-~# passwd
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-```
-
-
-- Imposta una password per l'utente admin
-
-```
-~# passwd admin
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-```
-
-
-
-
-
-## 
-[Ritorna all'indice delle guide Cloud]({legacy}1785)
-
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
