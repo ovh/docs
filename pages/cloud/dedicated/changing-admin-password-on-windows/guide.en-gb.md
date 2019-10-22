@@ -19,7 +19,7 @@ When you install or reinstall a Windows operating system, you are given an admin
 
 ## Instructions
 
-First, boot your server into [rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external} using the WinRescue boot environment. Once the server has rebooted, select the `IPMI`{.action} tab on your server's page in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+First, boot your server into [rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external} using the WinRescue boot environment. Once the server has rebooted, select the `IPMI`{.action} tab on your server's page in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 > [!primary]
 >
@@ -46,7 +46,7 @@ Your password has now been changed. Exit the tool, close the IPMI session, and r
 
 ## Go further
 
-[Rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
+[Rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external}.
 
 [Using the IPMI with dedicated servers](https://docs.ovh.com/gb/en/dedicated/use-ipmi-dedicated-servers/){.external}.
 
