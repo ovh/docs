@@ -1,73 +1,60 @@
 ---
-title: Crea un’istanza con Horizon
-excerpt: Crea un'istanza con Horizon
+title: 'Creare un’istanza dall’interfaccia Horizon'
 slug: crea_unistanza_con_horizon
+excerpt: 'Come creare un’istanza dall’interfaccia Horizon'
+section: 'Dall’interfaccia Horizon'
 legacy_guide_number: g1772
 ---
 
+**Ultimo aggiornamento: 21/08/2019**
 
-## 
-In alcuni casi, potresti avere bisogno di creare istanze dall'interfaccia Horizon, soprattutto per creare più istanze contemporaneamente o configurare un gruppo di sicurezza specifico per le tue istanze.
-Questa guida ti mostra come effettuare queste operazioni.
+## Obiettivo
 
+In alcuni casi potrebbe essere necessario creare istanze direttamente dall’interfaccia Horizon: questa operazione permette, ad esempio, di aggiungere più istanze contemporaneamente o configurare gruppi di sicurezza specifici da applicare alle istanze.
 
-## 
-Se vuoi creare un'istanza:
+**Questa guida ti mostra come creare un’istanza dall’interfaccia Horizon**.
 
+## Prerequisiti
 
-- Accedi a Horizon
-- Clicca su Istanze nel menu a sinistra
-- Clicca su Avvia un'istanza
-- Completa il modulo:
+- Disporre di un progetto [Public Cloud OVH](https://www.ovh.it/public-cloud/){.external}
+- [Essere connesso all’interfaccia Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/){.external} 
 
+## Procedura
 
+Per avviare la creazione di un’istanza, accedi all’interfaccia Horizon. Se hai bisogno di aiuto per effettuare questa operazione, consulta la guida [Creare un utente per accedere a Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/){.external}.
 
-## Tab Dettagli
-Inserisci queste informazioni:
+Clicca su `Compute`{.action} nel menu a sinistra e seleziona `Instances`{.action}.
 
-|Zona di disponibilità|Lascia "nova" (scelta predefinita)|
-|Nome dell'istanza|Indica il nome dell'istanza che vuoi creare|
-|Modello|Seleziona il tipo di istanza che vuoi creare|
-|Numero di istanze|Indica il numero delle istanze che vuoi creare|
-|Sorgente di avvio dell'istanza|Seleziona il metodo di creazione dell'istanza (avvio da un'immagine o da uno snapshot)|
-|Nome dell'immagine|Seleziona l'immagine dell'istanza (solo in caso di avvio da un'immagine)|
-|Snapshot dell'istanza|Seleziona lo snapshot di un'istanza (solo in caso di avvio da uno snapshot)|
+![createinstance](images/create-instance-step1.png){.thumbnail}
 
+Visualizzi una pagina con tutte le istanze in esecuzione. Per avviarne una nuova, clicca sul pulsante `Launch Instance`{.action}.
 
+![createinstance](images/create-instance-step2.png){.thumbnail}
 
-## Tab Accesso e sicurezza
-In questa sezione puoi indicare la chiave SSH e il gruppo di sicurezza per l'istanza.
+A questo punto completa i campi con le informazioni richieste aiutandoti, se necessario, con la tabella qui sotto (la lista non è esaustiva). 
 
-|Coppia di chiavi|Seleziona una chiave SSH per poter accedere all'istanza (per creare una chiave, clicca sul simbolo "+"|
-|Gruppi di sicurezza|Seleziona il gruppo di sicurezza per l'istanza (autorizzazione all'apertura delle porte)|
+|Campo|Descrizione|
+|---|---|
+|Availability Zone|Lascia “nova” (scelta predefinita)|
+|Instance Name|Indica il nome che intendi assegnare all’istanza da creare|
+|Flavor|Seleziona il tipo di istanza da creare|
+|Count|Indica il numero di istanze da creare|
+|Select Boot Source|Seleziona il metodo di creazione dell’istanza (avvio da immagine o Snapshot)|
+|Device Name|Seleziona l’immagine dell’istanza (solo in caso di avvio da un’immagine)|
+|Instance Snapshot|Seleziona lo Snapshot di un’istanza (solo in caso di avvio da uno Snapshot)|
+|Key Pair|Seleziona una chiave SSH per accedere all’istanza (per creare una chiave, clicca sul simbolo “+”)|
+|Security Groups|Seleziona il gruppo di sicurezza per l’istanza (autorizzazione all’apertura delle porte)|
+|Networks|Seleziona dalla lista la rete o le reti tra quelle disponibili|
+|Configuration|Indica la sorgente inserendo direttamente lo script o caricando un file|
+|Customization Script|Inserisci il codice dello script (massimo 16 KB)|
+|Load Customization Script from a fi|Seleziona lo script di post-installazione|
+|Disk Partition|Scegli tra “Automatica” o “Manuale”|
+|Configuration Drive|Configura OpenStack per scrivere i metadati su un disco di configurazione specifico che all’avvio sarà associato all’istanza.|
 
+Quando tutto è pronto, clicca su `Launch Instance`{.action} per avviare le istanze desiderate.
 
+![createinstance](images/create-instance-step3.png){.thumbnail}
 
-## Tab Rete
-In questa sezione puoi indicare su quali reti connettere l'istanza.
+## Per saperne di più
 
-|Reti selezionate|Seleziona la rete o le reti da creare nella lista delle reti disponibili|
-
-
-
-## Tab Post-creazione
-Da questa sezione puoi personalizzare un'istanza già creata.
-
-|Sorgente dello Script personnalizzato|Entrata diretta o File|
-|Argomento di Script|Indica il codice dello script nel campo di inserimento (massimo 16 KB)|
-|File di Script|Clicca su Continua per selezionare lo script post-installazione|
-
-
-
-## Opzioni avanzate
-Da questa sezione puoi gestire le partizioni dell'istanza.
-
-|Partizione del disco|Automatica o Manuale|
-|Disco di configurazione|Configura OpenStack per scrivere i metadati su un disco di configurazione specifico che all'avvio sarà associato all'istanza|
-
-
-
-
-## 
-[Ritorna all'indice delle guide Cloud]({legacy}1785)
-
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
