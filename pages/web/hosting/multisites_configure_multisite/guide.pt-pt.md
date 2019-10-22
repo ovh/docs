@@ -42,7 +42,7 @@ Para adicionar um novo domínio ao alojamento web, clique no botão `Adicionar u
 
 - **Adicionar um domínio registado na OVH**:
 
-Apenas são apresentados os domínios que incluem a configuração OVH e que foram indicados como contactos para o seu ID de cliente. Selecione um da lista e clique no botão `Seguinte`{.action}. Em seguida, consulte o  passo [2.1 - Adicionar um domínio registado na OVH](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/#21-adicionar-um-dominio-registado-na-ovh)
+Apenas são apresentados os domínios que incluem a configuração OVH e que foram indicados como contactos para o seu ID de cliente. Selecione um da lista e clique no botão `Seguinte`{.action}. Em seguida, consulte o  passo [2.1 - Adicionar um domínio registado na OVH](./#21-adicionar-um-dominio-registado-na-ovh)
 
 - **Adicionar um domínio externo**:
 
@@ -81,7 +81,7 @@ Ao selecionar um nome de domínio registado na OVH, tem a possibilidade de modif
 
 Em seguida, clique em `Validar`{.action} para adicionar o domínio. Esta operação pode demorar até uma hora. No entanto, a propagação das alterações da configuração DNS do seu domínio pode demorar entre 4 a 24 horas.
 
-Depois de adicionar o domínio, consulte o passo [3 - Publicação do site](./#3-publicaçao-do-site){.external}.
+Depois de adicionar o domínio, consulte o passo [3 - Publicação do site](./#3-publicacao-do-site){.external}.
 
 #### 2.2 - Adicionar um domínio externo
 
