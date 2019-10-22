@@ -1,79 +1,95 @@
 ---
-title: Passer une instance en mode rescue
+title: 'Passer une instance en mode rescue'
 slug: passer-une-instance-en-mode-rescue
+excerpt: 'Ce guide vous explique comment mettre votre instance en mode rescue'
 legacy_guide_number: 2029
-section: Base de connaissances
+section: 'Résolution des défauts'
 ---
 
+**Dernière mise à jour le 13 mars 2019**
 
-## Préambule
-En cas de mauvaises configurations, ou de pertes de clé SSH, il est possible que vous ne soyez plus en mesure d'accéder à votre instance. Nous vous proposons un mode rescue afin de vous permettre d'accéder à vos données, pour ensuite corriger vos différents fichiers de configuration.
+## Objectif
 
-Celui-ci fonctionne de manière assez simple : Votre instance est lancée sur une nouvelle image, soit une instance avec une configuration basique. Le disque de votre instance est attaché à votre instance comme un disque additionnel, il suffit donc de le monter pour pouvoir accéder aux données.
+En cas de mauvaises configurations, ou de perte de clé SSH, votre instance peut être inaccessible.
 
-Ce guide vous explique comment utiliser le mode rescue.
+Dans de telles circonstances, vous pouvez utiliser le mode rescue pour reconfigurer votre instance ou récupérer vos données. 
 
+**Ce guide vous explique comment mettre votre instance en mode rescue**
 
-### Prérequis
-- [Créer une instance dans l'espace client OVH](../guide.fr-fr.md){.ref}
+## Prérequis
 
+* Une [Instance Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} dans votre compte OVH
+* Avoir accès à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Avoir accès à votre instance via SSH en tant qu'administrateur (root)
 
-## Utilisation du mode rescue
+## Instructions
 
-### Passer en mode rescue
-Pour passer votre serveur en mode rescue, il suffit de cliquer sur la flèche en haut a droite de votre instance et de sélectionner " **Démarrer en mode rescue**" :
+### Activer le mode rescue
 
+Tout d’abord, connectez-vous à [l’Espace client d’OVH](https://www.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le menu `Cloud`{.action}.
 
-![public-cloud](images/3494.png){.thumbnail}
+![tableau de bord](images/rescue-mode-01.png){.thumbnail}
 
-Il faudra ensuite choisir l'image sur laquelle vous voulez redémarrer votre serveur en mode rescue :
+Ensuite, sélectionnez votre projet PCI dans le menu latéral à gauche de l'écran.
 
+![tableau de bord](images/rescue-mode-02.png){.thumbnail}
 
-![public-cloud](images/3495.png){.thumbnail}
+Après, cliquez sur la flèche déroulante de votre instance et sélectionnez `Démarrer en mode rescue`{.action}
 
-Vous trouverez les images que nous proposons par défaut, ainsi qu'une image supplémentaire " **Distribution Rescue Made-in-OVH**" qui vous permet de vous connecter sur votre instance en mode rescue à l'aide d'un mot de passe temporaire.
+![tableau de bord](images/rescue-mode-03.png){.thumbnail}
 
-Une fois le serveur passé en mode rescue, une nouvelle fenêtre apparaitra en bas à droite contenant votre mot de passe temporaire :
+Vous allez maintenant voir la boîte de dialogue 'Démarrer en mode rescue'. Cliquez sur la liste déroulante pour sélectionner la distribution Linux que vous souhaitez utiliser en mode rescue, puis cliquez sur le bouton `Démarrer`{.action}.
 
+![tableau de bord](images/rescue-mode-04.png){.thumbnail}
 
-![public-cloud](images/3497.png){.thumbnail}
+Une fois l’instance redémarrée en mode rescue, un message apparaît en haut de l'écran, contenant votre mot de passe temporaire.
 
+![tableau de bord](images/rescue-mode-05.png){.thumbnail}
 
-### Acceder a vos donnees
-Comme expliqué précédemment, les données de votre instance seront attachées au mode rescue comme un disque additionnel. Il suffit donc de le monter en suivant la procédure suivante pour pouvoir y accéder :
+### Accéder à vos données
 
-- Se connecter en root :
-- Vérifier les disques disponibles :
-- Monter la partition ;
+Une fois le mode rescue activé, les données de votre instance seront attachées en tant que disque supplémentaire. Il suffit donc de le monter, en suivant les étapes suivantes.
 
-Vos données sont désormais accessibles depuis le dossier  **/mnt** .
+En premier, ouvrez une connexion SSH avec votre instance. Une fois connecté, vérifiez les disques disponibles avec cette commande :
 
-Vous pouvez, par exemple, éditer le fichier contenant la liste des clés SSH utilisables pour l'utilisateur admin :
+```
+root@instance:/home/admin# lsblk
 
-
-```bash
-root@instance:/home/admin# vim /mnt/home/admin/.ssh/authorized_keys
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+vda 253:0 0 1G 0 disk
++-vda1 253:1 0 1023M 0 part /
+vdb 253:16 0 10G 0 disk
++-vdb1 253:17 0 10G 0 part
 ```
 
+Ensuite, montez la partition :
 
-### Redemarrer votre instance normalement
-Une fois vos opérations effectuées, il est possible de redémarrer votre instance normalement, pour cela, il suffit de cliquer sur la flèche en haut a droite de votre instance et de sélectionner " **Sortir du mode rescue**" :
-
-
-![public-cloud](images/3496.png){.thumbnail}
-
-
-### Avec les API OpenStack
-Vous pouvez redémarrer votre instance en mode rescue via les API OpenStack en utilisant la commande suivante :
-
-
-```bash
-root@server:~# nova rescue INSTANCE_ID
+```
+root@instance:/home/admin# mount /dev/vdb1 /mnt
 ```
 
-Pour sortir du mode rescue, vous pouvez utiliser la commande suivante :
+Vos données seront maintenant accessibles depuis le dossier /mnt.
 
+### Désactiver le mode rescue
 
-```bash
-root@server:~# nova unrescue INSTANCE_ID
+Une fois vos tâches terminées, vous pouvez désactiver le mode rescue en redémarrant votre instance normalement. Pour cela, cliquez sur la flèche déroulante de votre instance et sélectionnez `Sortir du mode rescue`{.action}
+
+![tableau de bord](images/rescue-mode-06.png){.thumbnail}
+
+### Activer le mode rescue avec les API OpenStack
+
+Vous pouvez activer le mode rescue via les API OpenStack en utilisant la commande suivante :
+
 ```
+# root@server:~# nova rescue INSTANCE_ID
+```
+
+Pour sortir du mode rescue, utilisez la commande suivante :
+
+```
+# root@server:~# nova unrescue INSTANCE_ID
+```
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.

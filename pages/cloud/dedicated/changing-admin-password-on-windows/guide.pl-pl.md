@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak zmienić hasło administratora na serwerze dedykowan
 section: 'Diagnostyka i tryb Rescue'
 ---
 
-**Ostatnia aktualizacja z dnia 23-08-2018**
+**Ostatnia aktualizacja z dnia 16-09-2019**
 
 ## Wprowadzenie
 
