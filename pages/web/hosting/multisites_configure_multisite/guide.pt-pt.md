@@ -81,7 +81,7 @@ Ao selecionar um nome de domínio registado na OVH, tem a possibilidade de modif
 
 Em seguida, clique em `Validar`{.action} para adicionar o domínio. Esta operação pode demorar até uma hora. No entanto, a propagação das alterações da configuração DNS do seu domínio pode demorar entre 4 a 24 horas.
 
-Depois de adicionar o domínio, consulte o passo [3 - Publicação do site](./#3-publicacao-do-site){.external}.
+Depois de adicionar o domínio, consulte o passo [3 - Publicação do site](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/#3-publicacao-do-site_1){.external}
 
 #### 2.2 - Adicionar um domínio externo
 
