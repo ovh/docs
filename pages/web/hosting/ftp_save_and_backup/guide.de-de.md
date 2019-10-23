@@ -101,7 +101,7 @@ Diese Login-Informationen finden Sie über den Tab `FTP - SSH`{.action} Ihres We
 Ergänzen Sie Ihren Haupt-FTP-Benutzernamen (oder „FTP-Login“) mit einem Suffix, das sich auf das betreffende Backup bezieht. Verwenden Sie die folgenden Informationen, um auf das gewünschte Backup zuzugreifen:
 
 |Backup-Datum|Hinzuzufügendes Suffix|Beispiel für einen ergänzten FTP-Benutzernamen|
-|---|---|
+|---|---|---|
 |am selben Tag, um 00:01 Uhr morgens|-snap0|ftpbenutzer**-snap0**|
 |am Tag zuvor, um 00:01 Uhr morgens|-snap1|ftpbenutzer**-snap1**|
 |zwei Tage zuvor, um 00:01 Uhr morgens|-snap2|ftpbenutzer**-snap2**|
