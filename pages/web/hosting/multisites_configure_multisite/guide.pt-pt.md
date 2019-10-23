@@ -31,7 +31,7 @@ Aparecerá uma tabela com todos os domínios adicionados ao seu alojamento web. 
 
 > [!primary]
 >
-> Se migrar o seu website e quiser evitar qualquer tipo de interrupção, consulte o passo [3 - Publicação do site](./#3-publicação-do-site){.external}.
+> Se migrar o seu website e quiser evitar qualquer tipo de interrupção, consulte o passo [3 - Publicação do site](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/#3-publicacao-do-site_1){.external}.
 >
 
 ![multisite](images/access-multisite-ovh.png){.thumbnail}
@@ -54,7 +54,7 @@ Se o domínio não aparecer na lista, isto significa que este é considerado ext
 
 > [!primary]
 >
-> Este passo só se aplica se selecionou "Adicionar um domínio registado na OVH". Para os domínios externos, consulte o passo [2.2 - Adicionar um domínio externo](./#22-Adicionar-um-dominio-externo).
+> Este passo só se aplica se selecionou "Adicionar um domínio registado na OVH". Para os domínios externos, consulte o passo [2.2 - Adicionar um domínio externo](./#22-adicionar-um-dominio-externo).
 >
 
 Aqui, deverá personalizar a adição do domínio. Dependendo do seu serviço de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, alguns elementos propostos não poderão ser selecionados.
