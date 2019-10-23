@@ -1,12 +1,12 @@
 ---
-title: Comment migrer votre base de donnees de SQL 4 vers MySQL 5.6
+title: Comment migrer votre base de donnees de MySQL 4 vers MySQL 5.6
 slug: mutualise-comment-migrer-votre-base-de-donnees-de-sql-4-vers-mysql-55
 legacy_guide_number: 1957
-excerpt: Ce guide va vous permettre de migrer votre base de donnees de SQL 4 vers MySQL 5.6
+excerpt: Ce guide va vous permettre de migrer votre base de donnees de MySQL 4 vers MySQL 5.6
 section: Bases de données
 ---
 
-Vous trouverez dans ce guide différentes informations et aides concernant la migration de la version SQL 4 vers la version MySQL 5.6 de vos bases de données.
+Vous trouverez dans ce guide différentes informations et aides concernant la migration de la version MySQL 4 vers la version MySQL 5.6 de vos bases de données.
 
 Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovh.com/fr/hebergement-web/faq/){.external} disponibles.
 
@@ -43,11 +43,11 @@ Cliquez sur le  **rouage à droite**  : Vous pourrez ainsi  **changer le mot de 
 ![hosting](images/changepassword.png){.thumbnail}
 
 
-### Comment se connecter a votre base de donnees en version SQL 4 ?
-Pour vous connecter à votre base de données en version SQL 4, vous avez deux possibilités :
+### Comment se connecter a votre base de donnees en version MySQL 4 ?
+Pour vous connecter à votre base de données en version MySQL 4, vous avez deux possibilités :
 
 - Utilisez [ce lien](https://phpmyadmin.ovh.net/old/){.external} .
-- Sur votre [espace client](https://www.ovh.com/manager/web/login/){.external} , dans la partie Hébergement & onglet SQL, cliquez sur le rouage à droite de votre base de données en SQL4, et cliquez sur " Accéder à phpMyAdmin " puis sur [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/){.external} (en bas de la page).
+- Sur votre [espace client](https://www.ovh.com/manager/web/login/){.external} , dans la partie Hébergement & onglet SQL, cliquez sur le rouage à droite de votre base de données en MySQL 4, et cliquez sur " Accéder à phpMyAdmin " puis sur [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/){.external} (en bas de la page).
 
 
 ![hosting](images/go-to-phpmyadmin.png){.thumbnail}
@@ -62,9 +62,9 @@ Une fois sur l'interface [phpmyadmin](https://phpmyadmin.ovh.net/old/){.external
 ![hosting](images/phpmyadminold.png){.thumbnail}
 
 
-## Exporter, vider, et supprimer votre base de donnees en version SQL 4
+## Exporter, vider, et supprimer votre base de donnees en version MySQL 4
 
-### Comment enregistrer une sauvegarde de votre base de donnees en version SQL 4 ?
+### Comment enregistrer une sauvegarde de votre base de donnees en version MySQL 4 ?
 Une fois connecté sur PhpMyAdmin, cliquez sur votre  **base de données dans la colonne de gauche** , en dessous des boutons d'accueil. Cliquez ensuite sur l'onglet " **Exporter**  **".** **Choisissez vos options d'exportation.** **Si vous ne savez pas, nous vous conseillons de laisser les options choisies par défaut.**
 
 **Enfin, cliquez tout en bas à droite sur "**  **Exécuter** ".
@@ -79,7 +79,7 @@ Votre base de données est maintenant sauvegardée en local dans votre ordinateu
 ![hosting](images/3224.png){.thumbnail}
 
 
-### Comment vider votre base de donnees en version SQL 4 ?
+### Comment vider votre base de donnees en version MySQL 4 ?
 Une fois votre base sauvegardée, il vous faut maintenant la vider, toujours sur PhpMyAdmin. Pour cela, cliquez à nouveau sur votre base de données dans la colonne de gauche.
 
 Au centre vous aurez un aperçu de toutes vos tables.
@@ -96,7 +96,7 @@ Suite à cette opération, votre base de donnée se retrouvera vide.
 ![hosting](images/3226.png){.thumbnail}
 
 
-### Comment supprimer votre base de donnees en version SQL 4 ?
+### Comment supprimer votre base de donnees en version MySQL 4 ?
 Vous pouvez maintenant quitter PhpMyAdmin. A nouveau sur votre [espace client](https://www.ovh.com/manager/web/login/){.external}, cliquez sur votre hébergement, puis sur l'onglet SQL.
 
 A droite de la ligne de votre base de données en version MYSQL v4.0, cliquez sur le rouage, puis choisissez "Supprimer la base de données".
@@ -112,7 +112,7 @@ Il faudra ensuite patienter un délai de 10-15 minutes pour que votre base soit 
 ## Créer et restaurer votre base de donnees en version MySQL 5.6.
 
 ### Comment créer votre base de donnees en version MySQL 5.6 ?
-Maintenant que vous avez supprimé votre base de données en version SQL4, il vous faut maintenant en créer une nouvelle en version MySQL 5.6. Pour cela rendez-vous sur votre [espace client](https://www.ovh.com/manager/web/login/){.external}, section Hébergement, onglet SQL.
+Maintenant que vous avez supprimé votre base de données en version MySQL 4, il vous faut maintenant en créer une nouvelle en version MySQL 5.6. Pour cela rendez-vous sur votre [espace client](https://www.ovh.com/manager/web/login/){.external}, section Hébergement, onglet SQL.
 
 Ici, cliquez sur le bouton Créer une base de données.
 
@@ -154,7 +154,7 @@ Pour contourner cela, utilisez un autre navigateur, vous ne rencontrerez plus ce
 
 
 ### L'import peut ne pas se derouler correctement.
-Normalement, vous ne devriez pas voir de problème pour importer vos bases créées sous Mysql4 sur un serveur Mysql5. Cependant,  **vous ne pouvez pas utiliser de nom de table ayant une partie, ou la totalité, identique à des mots propres réservés à Mysql**  définis dans la liste suivante :
+Normalement, vous ne devriez pas voir de problème pour importer vos bases créées sous MySQL 4 sur un serveur MySQL 5.6. Cependant,  **vous ne pouvez pas utiliser de nom de table ayant une partie, ou la totalité, identique à des mots propres réservés à MySQL**  définis dans la liste suivante :
 
 |---|
 |ADD ALL ALTER ANALYZE AND AS ASC ASENSITIVE BEFORE BETWEEN BIGINT BINARY BLOB BOTH BY CALL CASCADE CASE CHANGE CHAR CHARACTER CHECK COLLATE COLUMN CONDITION CONNECTION CONSTRAINT CONTINUE CONVERT CREATE CROSS CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP CURRENT_USER CURSOR DATABASE DATABASES DAY_HOUR DAY_MICROSECOND DAY_MINUTE DAY_SECOND DEC DECIMAL DECLARE DEFAULT DELAYED DELETE DESC DESCRIBE DETERMINISTIC DISTINCT DISTINCTROW DIV DOUBLE DROP DUAL EACH ELSE ELSEIF ENCLOSED ESCAPED EXISTS EXIT EXPLAIN FALSE FETCH FLOAT FLOAT4 FLOAT8 FOR FORCE FOREIGN FROM FULLTEXT GRANT GROUP HAVING HIGH_PRIORITY HOUR_MICROSECOND HOUR_MINUTE HOUR_SECOND IF IGNORE IN INDEX INFILE INNER INOUT INSENSITIVE INSERT INT INT1 INT2 INT3 INT4 INT8 INTEGER INTERVAL INTO IS ITERATE JOIN KEY KEYS KILL LEADING LEAVE LEFT LIKE LIMIT LINES LOAD LOCALTIME LOCALTIMESTAMP LOCK LONG LONGBLOB LONGTEXT LOOP LOW_PRIORITY MATCH MEDIUMBLOB MEDIUMMINT MEDIUMTEXT MIDDLEINT MINUTE_MICROSECOND MINUTE_SECOND MOD MODIFIES NATURAL NOT NO_WRITE_TO_BINLOG NULL NUMERIC ON OPTIMIZE OPTION OPTIONALLY OR ORDER OUT OUTER OUTFILE PRECISION PRIMARY PROCEDURE PURGE RAID0 READ READS REAL REFERENCES REGEXP RELEASE RENAME REPEAT REPLACE REQUIRE RESTRICT RETURN REVOKE RIGHT RLIKE SCHEMA SCHEMAS SECOND_MICROSECOND SELECT SENSITIVE SEPARATOR SET SHOW SMALLINT SONAME SPATIAL SPECIFIC SQL SQLEXCEPTION SQLSTATE SQLWARNING SQL_BIG_RESULT SQL_CALC_FOUND_ROWS SQL_SMALL_RESULT SSL STARTING STRAIGHT_JOIN TABLE TERMINATED THEN TINYBLOB TINYINT TINYTEXT TO TRAILING TRIGGER TRUE UNDO UNION UNIQUE UNLOCK UNSIGNED UPDATE USAGE USE USING ETC_DATE ETC_TIME UTC_TIMESTAMP VALUES VARBINARY VARCHAR VARCHARACTER VARYING WHEN WHERE WHILE WITH WRITE X509 XOR YEAR_MONTH ZEROFILL|
