@@ -39,7 +39,7 @@ Legen Sie ebenfalls die Wiederherstellungsmethode fest, die Sie verwenden möcht
 
 Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellungsmethode:
 
-- [Speicherplatz über das Kundencenter wiederherstellen](https://docs.ovh.com/de/hosting/webhosting-speicherplatz-wiederherstellen/#speicherplatz-uber-das-kundecenter-wiederherstellen){.external}
+- [Speicherplatz über das Kundencenter wiederherstellen](https://docs.ovh.com/de/hosting/webhosting-speicherplatz-wiederherstellen/#speicherplatz-uber-das-kundencenter-wiederherstellen){.external}
 
 - [Datei mithilfe einer Software oder über ein Interface wiederherstellen](https://docs.ovh.com/de/hosting/webhosting-speicherplatz-wiederherstellen/#datei-mithilfe-einer-software-oder-uber-ein-interface-wiederherstellen){.external}
 
