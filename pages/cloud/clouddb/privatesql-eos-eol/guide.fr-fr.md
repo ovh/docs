@@ -5,7 +5,7 @@ excerpt: 'Annonces de fin de vente/vie PrivateSQL'
 section: 'Ressources techniques'
 ---
 
-Les produits couverts par ces annonces de fin de vente et de fin de vie sont les services Cloud Databases Web Hosting (également connues sous le nom de services SQLPrivé), instances SGBD joignables via le réseau Web Hosting. Référez-vous à la [politique de fin de vie des bases de données managées](../eol-policy/guide.fr-fr.md) pour plus d'informations.
+Les produits couverts par ces annonces de fin de vente et de fin de vie sont les services Cloud Databases Web Hosting (également connus sous le nom de services SQLPrivé), instances SGBD joignables via le réseau Web Hosting. Référez-vous à la [politique de fin de vie des bases de données managées](../eol-policy/guide.fr-fr.md) pour plus d'informations.
 
 |Version|Annonce de fin de vie|Fin de vente|Fin de support|
 |---|---|---|---|
