@@ -1,8 +1,8 @@
 ---
-title: Gestion des services
-excerpt: Gérer le cycle de vie de vos services OVH post livraison
-slug: ovh-api-service
-section: OVH APIv6
+title: 'Gestion des services'
+excerpt: 'Gérer le cycle de vie de vos services OVH après leur livraison'
+slug: ovh-api-service
+section: 'OVH APIv6'
 ---
 
 **Dernière mise à jour le 15/10/2019**
@@ -22,7 +22,7 @@ La route d'API **/service** regroupe les actions communes à tous types 
 ## Prérequis
 
 * Être connecté aux [API OVH](https://api.ovh.com/console){.external}.
-* Avoir [créé ses identifiants pour l'API OVH](https://api.ovh.com/g934.first_step_with_api){.external}.
+* Avoir [créé ses identifiants pour l'API OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
 * Avoir un compte client avec un tag Reseller (contactez votre commercial pour connaître votre éligibilité le cas échéant).
 
 ## En pratique

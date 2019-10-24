@@ -59,10 +59,7 @@ swift post -m "Temp-URL-Key: 12345"
 o con curl:
 
 ```bash
-curl -i -X POST \
--H "X-Account-Meta-Temp-URL-Key: 12345" \
--H "X-Auth-Token: abcdef12345" \
-https://storage.sbg1.cloud.ovh.net/v1/AUTH_ProjectID
+curl -i -X POST \ -H "X-Account-Meta-Temp-URL-Key: 12345" \ -H "X-Auth-Token: abcdef12345" \ https://storage.sbg1.cloud.ovh.net/v1/AUTH_ProjectID
 ```
 
 > [!primary]
@@ -79,9 +76,7 @@ swift stat
 O con curl:
 
 ```bash
-curl -i -X HEAD \
--H "X-Auth-Token: abcdef12345" \
-https://storage.sbg1.cloud.ovh.net/v1/AUTH_ProjectID
+curl -i -X HEAD \ -H "X-Auth-Token: abcdef12345" \ https://storage.sbg1.cloud.ovh.net/v1/AUTH_ProjectID
 ```
 
 #### 2. Genera l’URL
