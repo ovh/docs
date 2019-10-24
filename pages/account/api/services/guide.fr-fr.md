@@ -41,7 +41,7 @@ La route d'API **/service** regroupe les actions communes à tous types 
 > @api {POST} /service/{serviceId}/suspend
 >
 
-L'appel change l'état du service pour suspension :
+L'appel change l'état du service pour le passer en suspension :
 
 * state : expired
 
@@ -49,7 +49,7 @@ La facture est alors bloquée.
 
 #### Réouverture
 
-Le cas échéant
+Le cas échéant :
 
 > [!api]
 >
@@ -67,7 +67,7 @@ Pour finir :
 > @api {POST} /service/{serviceId}/terminate
 >
 
-L'appel entraine la suppression du service et des données et l'édition de la facture sur la période entre la date de suspension et la date de suppression.
+L'appel entraîne la suppression du service et des données et l'édition de la facture sur la période entre la date de suspension et la date de suppression.
 
 ## Aller plus loin
 
