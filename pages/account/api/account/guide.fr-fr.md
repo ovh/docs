@@ -11,12 +11,12 @@ section: OVH APIv6
 
 Nous allons décrire comment créer un sous-compte OVH afin de créer une identité particulière permettant d'isoler la visibilité sur des services, la facturation.
 
-Ce guide vous permettra d'ajouter un ou des logins a ce sous-compte pour l'accès à l'espace-client OVH.
+Ce guide vous permettra aussi d'ajouter un ou des logins a ce sous-compte pour l'accès à l'espace-client OVH.
 
 ## Prérequis
 
 * Être connecté aux [API OVH](https://api.ovh.com/console){.external}.
-* Avoir [créé ses identifiants pour l'API OVH](https://api.ovh.com/g934.first_step_with_api){.external}.
+* Avoir [créé ses identifiants pour l'API OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
 * Avoir un compte client avec un tag Reseller (Contactez votre commercial pour connaitre votre éligibilité le cas échéant).
 
 ## En pratique
@@ -56,7 +56,7 @@ Avec la ConsumerKey précédemment obtenue
 >
 
 * email : ajoutez une adresse mail pour cet utilisateur
-* login : une chaine de caractères
+* login : renseignez une chaîne de caractères
 * password : celui-ci doit répondre aux exigences de [zxcvbn: Low-Budget Password Strength Estimation](https://github.com/dropbox/zxcvbn){.external} et être valide en le testant sur [Pwned Passwords](https://haveibeenpwned.com/Passwords){.external} .
 
 ## Aller plus loin
