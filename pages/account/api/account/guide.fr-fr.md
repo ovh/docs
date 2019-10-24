@@ -55,7 +55,7 @@ Avec la ConsumerKey précédemment obtenue
 > @api {POST} /me/identity/user
 >
 
-* email : ajoutez l'adresse mail pour cet utilisateur
+* email : ajoutez une adresse mail pour cet utilisateur
 * login : une chaine de caractères
 * password : celui-ci doit répondre aux exigences de [zxcvbn: Low-Budget Password Strength Estimation](https://github.com/dropbox/zxcvbn){.external} et être valide en le testant sur [Pwned Passwords](https://haveibeenpwned.com/Passwords){.external} .
 
