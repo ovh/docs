@@ -17,24 +17,24 @@ La route d'API **/service** regroupe les actions communes à tous types 
 * Factures
 * Gestion du cycle de vie
 * Contacts associés
-* Point d'entre d'API pour la gestion technique éventuelle.
+* Point d'entrée d'API pour la gestion technique éventuelle.
 
 ## Prérequis
 
 * Être connecté aux [API OVH](https://api.ovh.com/console){.external}.
-* Avoir [créer ses identifiants pour l'API OVH](https://api.ovh.com/g934.first_step_with_api){.external}.
-* Avoir un compte client avec un tag Reseller (contacter votre commercial pour connaitre votre éligibilité le cas échéant).
+* Avoir [créé ses identifiants pour l'API OVH](https://api.ovh.com/g934.first_step_with_api){.external}.
+* Avoir un compte client avec un tag Reseller (contactez votre commercial pour connaître votre éligibilité le cas échéant).
 
 ## En pratique
 
 ### Ressources
 
 * service : Entité de base qui est contractualisée auprès d'OVH
-* serviceId : identifiant unique chez OVH du service
+* serviceId : Identifiant unique du service chez OVH 
 
 ### Déroulement des opérations
 
-#### suspension
+#### Suspension
 
 > [!api]
 >
@@ -47,7 +47,7 @@ L'appel change l'état du service pour suspension :
 
 La facture est alors bloquée.
 
-#### reopen
+#### Réouverture
 
 Le cas échéant
 
@@ -56,9 +56,9 @@ Le cas échéant
 > @api {POST} /service/{serviceId}/reopen
 >
 
-L'appel entraine la réouverture du service et l'édition de la facture sur la période entre la date de suspend et la date de reopen.
+L'appel entraîne la réouverture du service et l'édition de la facture sur la période entre la date de suspension et la date de réouverture.
 
-#### terminate
+#### Suppression
 
 Pour finir :
 
@@ -67,7 +67,7 @@ Pour finir :
 > @api {POST} /service/{serviceId}/terminate
 >
 
-L'appel entraine la suppression du service et des données et l'édition de la facture sur la période entre la date de suspend et la date de terminate.
+L'appel entraine la suppression du service et des données et l'édition de la facture sur la période entre la date de suspension et la date de suppression.
 
 ## Aller plus loin
 
