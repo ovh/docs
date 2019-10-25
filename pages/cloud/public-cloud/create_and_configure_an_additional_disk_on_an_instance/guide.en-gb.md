@@ -26,40 +26,34 @@ This can be useful in cases where:
 
 ## Instructions
 
-Firstly, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
+Firstly, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Public Cloud`{.action} menu. Then click on the `Project`{.action} you want to create the instance.
 
-When you've found your project in the list, click it and then select the `Infrastructure`{.action} tab.
+Now click the `Actions`{.action} button and then select `Create a volume`{.action}.
 
 ![select project](images/attach-disk-01.png){.thumbnail}
 
-Now click the `Actions`{.action} button and then select `Add a disk`{.action}.
+Now configure you options for disk type, disk size, and location. When you've finished, click the `Add`{.action} button.
 
 ![create disk](images/attach-disk-02.png){.thumbnail}
 
-Now configure you options for disk type, disk size, and location. When you've finished, click the `Add`{.action} button.
+The new disk will now be displayed in your control panel.
 
 ![configure disk](images/attach-disk-03.png){.thumbnail}
 
-The new disk will now be displayed in your control panel.
+To attach the disk to an instance, click the dropdown arrow under the disk icon and then select `Attach to instance`{.action}
 
 ![attach disk 01](images/attach-disk-04.png){.thumbnail}
 
-To attach the disk to an instance, click the dropdown arrow under the disk icon and then select `Attach it to a server`{.action}
+Now click the circle on the side of your instance and then click the `Confirm`{.action} button to attach the disk to attach it.
 
 ![attach disk 02](images/attach-disk-05.png){.thumbnail}
 
-Now click the circle on the side of your instance and then click the `Confirm`{.action} button to attach the disk to attach it.
+The process of attaching the disk to your instance will now start and it may take several minutes to complete.
 
 ![attach disk 03](images/attach-disk-06.png){.thumbnail}
 
-The process of attaching the disk to your instance will now start and it may take several minutes to complete.
-
 > [!warning]
 >
-You must ensure that you don't navigate away from the `Infrastructure` tab while the disk is being attached. This could disrupt the process.
->
-
-![attach disk 04](images/attach-disk-07.png){.thumbnail}
 
 ### Using Linux
 
