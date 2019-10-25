@@ -6,7 +6,7 @@ legacy_guide_number: g1865
 section: Knowledge Base
 ---
 
-**Last updated 28th January 2019**
+**Last updated 25th October 2019**
 
 ## Objective
 
@@ -26,21 +26,20 @@ If you have reached the maximum storage capacity on your additional disk, you ca
 
 ### Using the Control Panel
 
-Firstly, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the Servers side-menu to expand your list of projects.
+In order to deploy a public cloud instance, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Public Cloud`{.action} in the top-left corner of the page. Then, on the following screen, click the arrow button next to your default project name in the top-left corner of the screen. Now select the project on which you would like to edit the size of the additional disk.
 
-When you’ve found your project in the list, click it and then select the `Infrastructure`{.action} tab.
+![control panel](images/select_project){.thumbnail}
 
-![control panel](images/increase-disk-01.png){.thumbnail}
-
-Locate your instance in your project and then click the the additional disk attached to it.
+Locate your Block Storage disk under "Storage" section on the left-hand sidebar.
 
 ![control panel](images/increase-disk-02.png){.thumbnail}
 
-Next, click the disk size option and then use the slider to adjust the disk capacity. alternatively, you can manually enter the desired capacity.
-
-When you've finished, click the `Apply`{.action} button.
+Next, click on the 3 dots on the right of the disk and click Edit. You will be redirected to this page where you can change the volume capacity.
 
 ![control panel](images/increase-disk-03.png){.thumbnail}
+
+When you've finished, click the `Modify the volume`{.action} button.
+
 
 ### Using Linux
 
