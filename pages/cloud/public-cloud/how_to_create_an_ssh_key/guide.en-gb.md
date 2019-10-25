@@ -108,7 +108,7 @@ As you move your mouse, the progress bar will start to fill up. When it's comple
 
 First, highlight and copy the text of your public key, then log into the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-Now click on the `Cloud`{.action} menu.
+Now click on the `Public Cloud`{.action} menu.
 
 ![cloud menu](images/cloud-menu.png){.thumbnail}
 
