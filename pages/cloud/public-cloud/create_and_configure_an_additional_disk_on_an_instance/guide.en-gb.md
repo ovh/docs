@@ -40,11 +40,11 @@ The new disk will now be displayed in your control panel.
 
 ![configure disk](images/attach-disk-03.png){.thumbnail}
 
-To attach the disk to an instance, click the dropdown arrow under the disk icon and then select `Attach to instance`{.action}
+To attach the disk to an instance, click on the 3 dots on the right and then select `Attach to instance`{.action}
 
 ![attach disk 01](images/attach-disk-04.png){.thumbnail}
 
-Now click the circle on the side of your instance and then click the `Confirm`{.action} button to attach the disk to attach it.
+Now choose the instance and click in `Confirm`{.action} button to attach the disk.
 
 ![attach disk 02](images/attach-disk-05.png){.thumbnail}
 
