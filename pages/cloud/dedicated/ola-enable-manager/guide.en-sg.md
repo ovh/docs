@@ -1,7 +1,7 @@
 ---
-title: 'How to Configure OVHcloud Link Aggregation in the OVH Manager'
+title: How to Configure OVHcloud Link Aggregation in the OVH Manager
 slug: ola-manager
-excerpt: 'Enable OVHcloud Link Aggregation in the manager'
+excerpt: Enable OVHcloud Link Aggregation in the manager
 section: 'Advanced use'
 ---
 
@@ -15,12 +15,12 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 
 Make sure you have ordered OLA through the OVH Manager prior to following the steps in this guide.
 
-## Instructions
-
 > [!warning]
 >
 > In order to make any changes to OLA, you will first need to remove any server you are working on from any vRacks to which they are currently attached and remove any attached failover IP.
 >
+
+## Instructions
 
 To begin configuring OLA, log into the [OVH Manager](https://www.ovh.com/manager/){.external}.  Click the **Server** button at the top of the screen then select the server in question from the drop-down menu on the left-hand sidebar. Then click the **Network interfaces** tab. Once you have confirmed that the server is not attached to any vRacks, click the **I have done this, go to the next step** button. 
 

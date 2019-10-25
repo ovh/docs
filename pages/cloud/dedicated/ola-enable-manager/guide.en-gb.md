@@ -1,7 +1,7 @@
 ---
-title: 'How to Configure OVHcloud Link Aggregation in the OVH Manager'
+title: How to Configure OVHcloud Link Aggregation in the OVH Manager
 slug: ola-manager
-excerpt: 'Enable OVHcloud Link Aggregation in the manager'
+excerpt: Enable OVHcloud Link Aggregation in the manager
 section: 'Advanced use'
 ---
 
