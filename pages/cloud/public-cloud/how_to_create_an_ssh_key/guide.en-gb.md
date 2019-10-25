@@ -116,13 +116,9 @@ Now select your Public Cloud project from the left-hand menu and click on `Infra
 
 ![select project](images/select-project.png){.thumbnail}
 
-Now select the `SSH keys`{.action} tab.
+Now select the `SSH keys`{.action} tab. Next, paste the 4096 byte key into the space provided, give the key a name, and click the `Add this key`{.action} button.
 
-![save ssh key](images/save-ssh-key-01.png){.thumbnail}
-
-Next, paste the 4096 byte key into the space provided, give the key a name, and click the `Add this key`{.action} button.
-
-![save ssh key](images/save-ssh-key-02.png){.thumbnail}
+![save ssh key](images/save-key.png){.thumbnail}
 
 Your key will now be saved in the OVH Control Panel for authentication.
 
