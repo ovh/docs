@@ -94,7 +94,7 @@ nova help
 
 ### En Windows
 
-Descargue e instale la versión 2.7.10 de Python. Puede añadir automáticamente el lenguaje de programación Python a Path seleccionando la opción correspondiente en el configurador de la instalación.
+Descargue e instale la versión 2.7.14 de Python. Puede añadir automáticamente el lenguaje de programación Python a Path seleccionando la opción correspondiente en el configurador de la instalación.
 
 ![Instalación automática](images/1_preparation_openstack_environment_windows.png){.thumbnail}
 
