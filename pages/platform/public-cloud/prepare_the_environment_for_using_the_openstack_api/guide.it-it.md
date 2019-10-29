@@ -1,6 +1,6 @@
 ---
 title: 'Preparare l’ambiente per utilizzare l’API OpenStack'
-slug: prepara-il-tuo-ambiente-di-sviluppo-per-utilizzare-lapi-openstack
+slug: prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack
 excerpt: 'Come installare l’ambiente OpenStack per gestire le istanze via API'
 section: 'Da client da riga di comando'
 legacy_guide_number: g1851
