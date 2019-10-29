@@ -94,7 +94,7 @@ nova help
 
 ### Windows
 
-Pobierz i zainstaluj wersję Python 2.7.10. Możesz wybrać automatyczne dodanie języka programowania Python do ścieżki (path), zaznaczając tę opcję w konfiguratorze instalacji:
+Pobierz i zainstaluj wersję Python 2.7.14. Możesz wybrać automatyczne dodanie języka programowania Python do ścieżki (path), zaznaczając tę opcję w konfiguratorze instalacji:
 
 ![Automatyczna instalacja](images/1_preparation_openstack_environment_windows.png){.thumbnail}
 

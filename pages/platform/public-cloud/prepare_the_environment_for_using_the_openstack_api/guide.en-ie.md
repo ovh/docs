@@ -94,7 +94,7 @@ nova help
 
 ### On Windows
 
-Download and install Python version 2.7.10. You can choose to add the Python programming language automatically to Path, by ticking this option in the installation configuration:
+Download and install Python version 2.7.14. You can choose to add the Python programming language automatically to Path, by ticking this option in the installation configuration:
 
 ![Automatic installation](images/1_preparation_openstack_environment_windows.png){.thumbnail}
 
