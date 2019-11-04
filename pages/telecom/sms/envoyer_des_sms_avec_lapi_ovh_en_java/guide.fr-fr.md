@@ -1,31 +1,49 @@
 ---
-title: Envoyer des SMS avec l’API OVH en Java
-excerpt: Comment envoyer des SMS avec l’api OVH RESTful en Java
+title: 'Envoyer des SMS avec l’API OVH en Java'
+excerpt: 'Comment envoyer des SMS avec l’api OVH RESTful en Java'
 slug: envoyer_des_sms_avec_lapi_ovh_en_java
 legacy_guide_number: g1670
-section: Envoyer des SMS
+section: 'Envoyer des SMS'
 ---
 
-Vous aurez besoin d’un environnement de développement Java, d’un compte OVH avec des crédits SMS.
+**Dernière mise à jour le 04/11/2019**
 
-## Appels vers l'API
-Il n'existe pas encore de Wrapper Java, nous implémenterons donc l'appel au Webservice directement dans le code et sans ajout de librairie complémentaire. Dans un but de lisibilité et de simplicité, la partie de consommation de l'API n'est pas factorisée ni implémentée complètement (deserialisation json, etc.).
+## Objectif
 
-Pour l'implémentation de l'appel au Webservice nous vous conseillons de lire le [Premiers Pas avec l'API OVH](http://www.ovh.com/fr/g934.premiers-pas-avec-l-api).
+Les SMS sont largement utilisés pour diffuser des informations pratiques, suivre l'état d'une commande ou d'un processus transactionnel, être alerté d'un évènement inhabituel ou encore rappeler des rendez-vous. Ce guide détaille la méthode d'envoi d'un premier SMS en API RESTful d'OVH. 
 
-Dans ce guide nous appellerons deux méthodes :
+**Apprenez comment envoyer des SMS avec l'API OVHcloud en Java**
+
+## Prérequis
+
+- Disposer d’un environnement de développement Java
+- Disposer d'un compte SMS OVHcloud avec des crédits SMS
+
+## En pratique
+
+### Appels vers l'API
+
+Il n'existe pas encore de Wrapper Java. L'appel au Webservice sera donc implémenté directement dans le code et sans ajout de librairie complémentaire. Dans un but de lisibilité et de simplicité, la partie de consommation de l'API n'est pas factorisée ni implémentée complètement (deserialisation json, etc.).
+
+Pour l'implémentation de l'appel au Webservice nous vous conseillons de lire le guide suivant : [Premiers Pas avec l'API OVH](http://www.ovh.com/fr/g934.premiers-pas-avec-l-api).
+
+Dans ce guide, deux méthodes seront appelées :
 
 - Liste des services SMS actifs [https://eu.api.ovh.com/1.0/sms/](https://api.ovh.com/console/#/sms#GET)
 - Envoyer des SMS [https://eu.api.ovh.com/1.0/sms/{ServiceName}/jobs/](https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
 
+### Étape 1 : Création des identifiants
 
+Des identifiants sont nécessaires pour consommer l’API SMS. Ces identifiants sont créés une fois pour identifier l’application qui va envoyer des SMS. La durée de vie de ces identifiants est paramétrable.
 
+Créez vos identifiants de Script (all keys at once) sur cette page: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/) 
 
-## Création des identifiants
-Nous sommes dans le cas où nous avons besoin d’identifiants pour consommer l’API SMS, ces identifiants sont créés une fois pour identifier l’application qui va envoyer des SMS. La durée de vie de ces identifiants est paramétrable.
-Créez vos identifiants de Script (all keys at once) sur cette page: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/) (cette url vous permet d'avoir automatiquement les bons droits pour ce guide : https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs/&POST=/sms/*/jobs/ ).
+L'URL ci-dessous vous permet d'avoir automatiquement les bons droits pour les étapes décrites dans ce guide : 
+
+https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms//jobs/&POST=/sms//jobs/ ).
 
 ![création des tokens](images/img_2479.jpg){.thumbnail}
+
 Dans cet exemple simple, nous récupérons les droits pour avoir accès aux informations sur le compte, à la possibilité de voir les envois en attente et à la possibilité d’envoyer des SMS.
 
 - GET /sms/
@@ -33,9 +51,9 @@ Dans cet exemple simple, nous récupérons les droits pour avoir accès aux info
 - POST /sms/*/jobs/
 
 
-L’étoile (*) active les appels à ces méthodes pour tous vos comptes SMS, vous pouvez restreindre les appels à un seul compte si vous gérez plusieurs comptes SMS sur votre compte OVH.
+L’étoile (*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez restreindre les appels à un seul compte si vous gérez plusieurs comptes SMS sur votre compte OVH.
 
-Vous récupérez vos identifiants pour votre script :
+Vous récupérez alors vos identifiants pour votre script :
 
 - Application Key (identifie votre application)
 - Application Secret (authentifie votre application)
@@ -44,11 +62,13 @@ Vous récupérez vos identifiants pour votre script :
 
 
 ![récupération des tokens](images/img_2480.jpg){.thumbnail}
+
 L'environnement est prêt, les identifiants sont créés, vous êtes prêt pour coder votre premier appel à l'API.
 
 
-## Connexion basique à l'API : récupération du compte SMS
-Nous allons maintenant tester la bonne connexion à l’API en affichant simplement le nom du serviceName :
+### Étape 2 : Connexion basique à l'API : récupération du compte SMS
+
+Vous pouvez maintenant tester la bonne connexion à l’API en affichant simplement le nom du serviceName :
 
 ```
 import java.net.*;
@@ -165,12 +185,20 @@ Vous devriez récupérer au lancement de cette application Java la liste de vos 
 
 
 
+### Étape 3 : Envoi du premier SMS
 
-## Envoi du premier SMS
-Pour envoyer des SMS, nous utilisons la méthode POST jobs : [https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST](https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
+Pour envoyer des SMS, utilisez la méthode POST jobs : [https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST](https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
 
-Le paramètre senderForResponse va permettre d’utiliser un numéro court ce qui nous permet d’envoyer directement des SMS sans devoir créer un expéditeur (ex : votre nom).
-Les numéros courts permettent aussi de recevoir des réponses de la part des personnes ayant reçu le SMS, ce qui peut être utile pour une enquête de satisfaction, une application de vote, un jeu...
+> [!primary]
+>
+> **Uniquement pour les comptes OVHcloud en France :**
+> 
+> Le paramètre senderForResponse va permettre d’utiliser un numéro court ce qui nous permet d’envoyer directement des SMS sans devoir créer un expéditeur (ex : votre nom).
+> 
+> Les numéros courts permettent aussi de recevoir des réponses de la part des personnes ayant reçu le SMS, ce qui peut être utile pour une enquête de satisfaction, une application de vote, un jeu...
+>
+>
+
 
 
 ```
@@ -297,10 +325,18 @@ Voici le type de réponse attendue :
 ```
 
 
-On obtient une réponse avec 1 crédit consommé pour un numéro valide. Le message par défaut intègre le message STOP permettant aux destinataires de se désabonner, vous pouvez via le paramètre noStopClause désactiver le STOP. A noter qu'avec le STOP vous ne pouvez envoyer de SMS de 20h à 8h du matin.
+On obtient une réponse avec 1 crédit consommé pour un numéro valide. 
+
+Le message par défaut intègre la mention STOP permettant aux destinataires de se désabonner de votre diffusion de SMS. 
+
+Si votre SMS n'est pas à caractère publicitaure, vous pouvez, via le paramètre noStopClause, désactiver la mention STOP.
+
+À noter qu'en intégrant la mention STOP à votre message, vous ne pouvez envoyer de SMS que de 08h à 20h du lundi au vendredi.
 
 
-## 
-Ce guide vous a permis d'envoyer votre premier SMS en API RESTful d'OVH. Vous pouvez maintenant poursuivre l'intégration du SMS dans votre application. La console d'API vous permettra de découvrir d'autres méthodes ([https://api.ovh.com/console/#/sms](https://api.ovh.com/console/#/sms)) pour faciliter l'intégration de services tels que : SMS réponses, envoi en masse avec fichier CSV, publipostage, suivi des accusés de réception...
-Les SMS sont largement utilisés pour diffuser des informations pratiques, suivre l'état d'une commande ou d'un processus transactionnel, être alerté d'un évènement inhabituel ou encore rappeler des rendez-vous.
+## Aller plus loin
 
+La console d'API ([https://api.ovh.com/console/#/sms](https://api.ovh.com/console/#/sms)) vous permettra de découvrir d'autres méthodes pour faciliter l'intégration de services SMS tels que : SMS permettant la réponse (uniquement pour les comptes OVHcloud en France), envoi en masse avec fichier CSV, publipostage, suivi des accusés de réception...
+
+
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
