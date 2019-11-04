@@ -25,8 +25,6 @@ Les SMS sont largement utilisés pour diffuser des informations pratiques, suivr
 
 Il n'existe pas encore de Wrapper Java. L'appel au Webservice sera donc implémenté directement dans le code et sans ajout de librairie complémentaire. Dans un but de lisibilité et de simplicité, la partie de consommation de l'API n'est pas factorisée ni implémentée complètement (deserialisation json, etc.).
 
-Pour l'implémentation de l'appel au Webservice nous vous conseillons de lire le guide suivant : [Premiers Pas avec l'API OVH](http://www.ovh.com/fr/g934.premiers-pas-avec-l-api).
-
 Dans ce guide, deux méthodes seront appelées :
 
 - Liste des services SMS actifs [https://eu.api.ovh.com/1.0/sms/](https://api.ovh.com/console/#/sms#GET)
