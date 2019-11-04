@@ -15,8 +15,8 @@ Différentes méthodes existent pour envoyer des SMS. L'une d'entre elles consis
 
 ## Prérequis
 
-- Avoir créé un utilisateur SMS via l'espace-client OVHcloud ou directement via les API. À cet effet, vous pouvez consulter le guide suivant : [Tout savoir sur les utilisateurs SMS]({https://docs.ovh.com/fr/sms/tout_savoir_sur_les_utilisateurs_sms/)
-- Disposer de crédits SMS
+- Avoir créé un utilisateur SMS via l'espace-client OVHcloud ou directement via les API. À cet effet, vous pouvez consulter le guide suivant : [Tout savoir sur les utilisateurs SMS](https://docs.ovh.com/fr/sms/tout_savoir_sur_les_utilisateurs_sms/)
+- Disposer d'un compte SMS OVHcloud avec des crédits SMS
 
 
 ## En pratique
@@ -25,7 +25,7 @@ L'envoi d'un SMS se fait via une requête HTTPS avec ses champs obligatoires (et
 
 ![](images/img_4011.jpg){.thumbnail}
 
-### Etape 1 :Inclure les champs obligatoires
+### Étape 1 : Inclure les champs obligatoires
 
 Votre URL devra avoir la forme suivante : 
 
@@ -34,7 +34,7 @@ https://www.ovh.com/cgi-bin/sms/http2sms.cgi?&account=XXXXXXX&login=XXXXXXX&pass
 ```
 
 
-Les paramètres suivants doivent être séparés par des &. Remplacez les X par :
+Les paramètres suivants doivent être séparés par des &. Remplacez les X par les informations ci-dessous:
 
 |Paramètres|À remplacer par|
 |---|---|
@@ -47,7 +47,7 @@ Les paramètres suivants doivent être séparés par des &. Remplacez les X par 
 
 Par défaut le message est envoyé immédiatement.
 
-### Etape 2 : Ajouter des champs facultatifs
+### Étape 2 : Ajouter des champs facultatifs
 
 
 Vous pouvez ajouter des champs supplémentaires dans le sujet, tels que :
@@ -56,7 +56,7 @@ Vous pouvez ajouter des champs supplémentaires dans le sujet, tels que :
 https://www.ovh.com/cgi-bin/sms/http2sms.cgi?&account=XXXXXXX&login=XXXXXXX&password=XXXXXXX&from=XXXXXXX&to=XXXXXXX1,XXXXXXX2&message=XXXXXXX&deferred=XXXXXXX&class=X&smsCoding=X&noStop=X
 ```
 
-Remplacez les X par :
+Remplacez les X par par les informations ci-dessous :
 
 |Paramètres|À remplacer par|
 |---|---|
@@ -91,7 +91,7 @@ Remplacez les X par :
 >Si vous modifiez l’encodage pour l'encodage Unicode, votre SMS fera 70 caractères maximum contre 160 sur l'encodage 7bit.
 > 
 
-### Etape 3 : analyser les envois effectués
+### Étape 3 : Analyser les envois effectués
 
 Une fois l'envoi effectué, un code de retour API vous indiquera si votre SMS a bien été envoyé ou s'il est en échec.
 Un code supérieur à 100 et inférieur à 200 indique que le message a bien été envoyé.
