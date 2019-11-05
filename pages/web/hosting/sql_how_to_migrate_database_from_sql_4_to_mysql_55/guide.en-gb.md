@@ -122,7 +122,7 @@ You will need to wait 5 to 10 minutes maximum for the database to be created. Yo
 
 
 ### How do I restore/import my backup to my database in MySQL version 5.6?
-To restore your database backup, simply follow [this guide](https://docs.ovh.com/gb/en/hosting/how-to-migrate-your-mysql-4-to-mysql-56){.ref}.
+To restore your database backup, simply follow [this guide](https://docs.ovh.com/gb/en/hosting/web_hosting_guide_to_importing_a_mysql_database){.ref}.
 
 
 ## Modify your website’s configuration file.
@@ -134,7 +134,7 @@ This happens because your website is still trying to connect to the old database
 
 
 ### How do I edit my configuration file?
-Depending on the type of website you have, it may be located in different places, but always on your FTP space. To connect to your FTP space, simply follow [this guide](https://docs.ovh.com/gb/en/hosting/how-to-migrate-your-mysql-4-to-mysql-56){.ref}.
+Depending on the type of website you have, it may be located in different places, but always on your FTP space. To connect to your FTP space, simply follow [this guide](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting){.ref}.
 
 For example, if your website is based on WordPress, the configuration file is called wp-config.php, and is located in your website’s main folder, on your FTP space.
 
