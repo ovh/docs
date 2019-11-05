@@ -6,7 +6,7 @@ section: Protocol
 order: 4
 ---
 
-**Last updated 02 October, 2019**
+**Last updated 29 October, 2019**
 
 > [!warning]
 >
@@ -99,7 +99,9 @@ The following existing [arithmetic operators](https://docs.influxdata.com/influx
 | \| | Bitwise OR | <i class="fas fa-check"></i> |
 | ^ | Bitwise Exclusive-OR | <i class="fas fa-check"></i> |
 
-**Modulo** (%), **Bitwise AND** (&), **Bitwise OR** (|) and **Bitwise Exclusive-OR** (^), are **not yet supported** accross several metrics. They can still be applied between metrics and values.
+The **Modulo** (%) operator is **not yet supported** accross several metrics. It can still be applied between metrics and values.
+
+All the **bitwise** operation: **Bitwise AND** (&), **Bitwise OR** (|) and **Bitwise Exclusive-OR** (^) are only working on numbers (float numbers will be automaticallly cast to integers).
 
 #### InfluxQL functions
 
@@ -158,9 +160,6 @@ The valid [influxQL functions](https://docs.influxdata.com/influxdb/v1.7/query_l
 | TRIPLE_EXPONENTIAL_DERIVATIVE | metrics, period, (hold_period)?, (warmup_type)? | <i class="fas fa-times"></i> |
 | RELATIVE_STRENGTH_INDEX | metrics, period, (hold_period)?, (warmup_type)? | <i class="fas fa-times"></i> |
 
-For the **bottom** and the **top** functions only the number parameter is supported **yet**.
-
-
 #### Data types and cast operations
 
 The existing [data types and cast operations](https://docs.influxdata.com/influxdb/v1.7/query_language/data_exploration/#data-types-and-cast-operations){.external} of InfluxQL matches the one supported by the Metrics platform:
@@ -199,7 +198,6 @@ The existing [SHOW statements](https://docs.influxdata.com/influxdb/v1.7/query_l
 | SHOW SERIES             | <i class="fas fa-check"></i> |
 | SHOW TAG VALUES         | <i class="fas fa-check"></i> |
 
-
 ### Database management statements
 
 The existing [database management statements](https://docs.influxdata.com/influxdb/v1.7/query_language/database_management/){.external} of InfluxQL supported by the Metrics platform are:
@@ -217,11 +215,34 @@ The existing [database management statements](https://docs.influxdata.com/influx
 | ALTER RETENTION POLICY | <i class="fas fa-times"></i> |
 | DROP RETENTION POLICY | <i class="fas fa-times"></i> |
 
-
-### Database management statements
+### Database continuous queries
 
 The InfluxQL [continuous queries](https://docs.influxdata.com/influxdb/v1.7/query_language/continuous_queries/){.external} **can not** be performed **yet** on the Metrics platform.
 
+### Query parameters
+
+Natively an InfluxQL requests expects two parameter `q` and `db`. As in metrics application the database notion doesn't exist the `db` parameter is optional.
+You can optionnaly add a `precision` with value **rfc3339** as parameter to change the time representation output (by default a timestamp to a Human readable UTC date).  
+
+### Use InfluxQL to query data from sources that were not pushed on the Influx format
+
+On Metrics, you can push data with several different format: for example the Prometheus. As by default when a user push `native` influxQL data, we add a "." as separator between the  `measurement` and its `field keys` in our internal representation. As for example, with Prometheus you can't have any "." in the data format. We added a new clause in where statements the `_separator` to be able to query data from all kind of sources in InfluxQL.
+
+The `_separator` allow the user to choose a custom selector which will splits its influx `measurement` from its `field keys`. This allow the user to use the promQL "_" as separator to split Prometheus metrics classnames.
+
+Example:
+
+```influxQl
+SELECT mean("field") FROM "prometheus_data" WHERE  time >= now() - 6h AND _separator = "_" GROUP BY time(1h) fill(null)
+```
+
+This allow also the user to query InfluxData or any other kind of data with InfluQL and to get the `raw` data representation.
+
+Example:
+
+```influxQl
+SELECT mean("disk.used_percent") FROM "" WHERE  time >= now() - 6h AND _separator = "" GROUP BY time(1h) fill(null)
+```
 
 ## Go further
 
