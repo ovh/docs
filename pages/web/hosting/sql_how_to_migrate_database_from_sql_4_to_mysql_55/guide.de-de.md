@@ -113,7 +113,7 @@ Nun dauert es etwa 5 bis 10 Minuten, bis Ihre Datenbank erstellt ist. Sie könne
 
 
 ## Wie kann ich meine Sicherung wiederherstellen/ in meine MySQL 5.5 Datenbank importieren?
-Wie Sie die Sicherung Ihrer Datenbank wiederherstellen, erfahren Sie in [dieser Hilfe](https://www.ovh.de/g1393.importation-base-de-donnees-mysql).
+Wie Sie die Sicherung Ihrer Datenbank wiederherstellen, erfahren Sie in [dieser Hilfe](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank).
 
 
 ## Nach Sicherung und Wiederherstellung meiner Datenbank funktioniert meine Seite nicht mehr. Warum?
@@ -125,7 +125,7 @@ Sie müssen also dafür sorgen, dass Ihre Webseite auf die neue Datenbank zugrei
 
 ## Wie kann ich meine Konfigurationsdatei ändern?
 Je nachdem, was für eine Art von Webseite Sie haben, kann sich die Datei an verschiedenen Orten befinden. Sie finden sie aber immer in Ihrem FTP-Bereich.
-Um eine FTP-Verbindung herzustellen, befolgen Sie [diese Anleitung](https://www.ovh.de/g1380.mutualise_guide_utilisation_filezilla).
+Um eine FTP-Verbindung herzustellen, befolgen Sie [diese Anleitung](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla).
 
 Wenn Ihre Seite beispielsweise auf WordPress basiert, heißt die Konfigurationsdatei wp-config.php und befindet sich im FTP-Hauptverzeichnis.
 

@@ -122,7 +122,7 @@ Il faudra patienter 5 à 10 minutes maximum, le temps que la base se créée. Vo
 
 
 ### Comment restaurer/importer votre sauvegarde, dans votre base de donnees en version MySQL 5.6 ?
-Pour restaurer votre sauvegarde de base de données, il vous suffit de suivre [ce guide]({legacy}1393){.ref}.
+Pour restaurer votre sauvegarde de base de données, il vous suffit de suivre [ce guide](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql){.ref}.
 
 
 ## Modifier le fichier de configuration de votre site
@@ -134,7 +134,7 @@ Cela se produit car votre site tente toujours de se connecter à l'ancienne base
 
 
 ### Comment modifier mon fichier de configuration ?
-En fonction du type de site que vous avez, il peut se trouver à différents endroits, mais toujours sur votre espace FTP. Pour vous connecter à votre espace FTP, il vous suffit de suivre [ce guide]({legacy}1380){.ref}.
+En fonction du type de site que vous avez, il peut se trouver à différents endroits, mais toujours sur votre espace FTP. Pour vous connecter à votre espace FTP, il vous suffit de suivre [ce guide](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web){.ref}.
 
 Par exemple si votre site est basé sur WordPress, le fichier de configuration se nomme wp-config.php et se trouve dans le dossier principal de votre site, sur votre espace FTP.
 
