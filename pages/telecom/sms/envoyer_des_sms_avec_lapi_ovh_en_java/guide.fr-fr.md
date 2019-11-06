@@ -10,7 +10,7 @@ section: 'Envoyer des SMS'
 
 ## Objectif
 
-Les SMS sont largement utilisés pour diffuser des informations pratiques, suivre l'état d'une commande ou d'un processus transactionnel, être alerté d'un évènement inhabituel ou encore rappeler des rendez-vous. Ce guide détaille la méthode d'envoi d'un premier SMS en API RESTful d'OVH. 
+Les SMS sont largement utilisés pour diffuser des informations pratiques, suivre l'état d'une commande ou d'un processus transactionnel, être alerté d'un évènement inhabituel ou encore rappeler des rendez-vous. Ce guide détaille la méthode d'envoi d'un premier SMS en API RESTful d'OVHcloud. 
 
 **Apprenez comment envoyer des SMS avec l'API OVHcloud en Java**
 
@@ -187,9 +187,9 @@ Pour envoyer des SMS, utilisez la méthode POST jobs : [https://api.ovh.com/cons
 >
 > **Uniquement pour les comptes OVHcloud en France :**
 > 
-> Le paramètre senderForResponse va permettre d’utiliser un numéro court ce qui nous permet d’envoyer directement des SMS sans devoir créer un expéditeur (ex : votre nom).
+> Le paramètre senderForResponse va permettre d’utiliser un numéro court, ce qui vous permet d’envoyer directement des SMS sans devoir créer un expéditeur alphanumérique (par exemple: votre nom).
 > 
-> Les numéros courts permettent aussi de recevoir des réponses de la part des personnes ayant reçu le SMS, ce qui peut être utile pour une enquête de satisfaction, une application de vote, un jeu...
+> Les numéros courts permettent aussi de recevoir des réponses de la part des destinataires de votre SMS, ce qui peut être utile pour une enquête de satisfaction, une application de vote, un jeu...
 >
 >
 
