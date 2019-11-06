@@ -6,7 +6,7 @@ section: Protocol
 order: 4
 ---
 
-**Last updated 29 October, 2019**
+**Last updated 06 November, 2019**
 
 > [!warning]
 >
@@ -70,7 +70,7 @@ InfluxDB has its own Query DSL, that mimics SQL without being plain ANSI SQL.
 
 ### Data Exploration
 
-The [InfluxQl data exploration statements](https://docs.influxdata.com/influxdb/v1.7/query_language/data_exploration/){.external} requests supported on the metrics platform are:
+The [InfluxQL data exploration statements](https://docs.influxdata.com/influxdb/v1.7/query_language/data_exploration/){.external} requests supported on the metrics platform are:
 
 
 | Statement        | Supported                    |
@@ -82,7 +82,7 @@ The [InfluxQl data exploration statements](https://docs.influxdata.com/influxdb/
 
 We support also all possibility to configure a query result using: `ORDER BY time DESC`, `LIMIT`, `OFFSET` or `TIME` clauses.
 
-You can also use all `InfluxQl tips on the query syntax`of the [InfluxQl data exploration page](https://docs.influxdata.com/influxdb/v1.7/query_language/data_exploration/){.external} on the Metrics Platform.
+You can also use all `InfluxQL tips on the query syntax`of the [InfluxQL data exploration page](https://docs.influxdata.com/influxdb/v1.7/query_language/data_exploration/){.external} on the Metrics Platform.
 
 #### Mathematical operators
 
@@ -206,7 +206,6 @@ The existing [database management statements](https://docs.influxdata.com/influx
 | ---------------- | ---------------------------- |
 | CREATE DATABASE | <i class="fas fa-check"></i> |
 | DROP DATABASE | <i class="fas fa-times"></i> |
-| CREATE DATABASE | <i class="fas fa-times"></i> |
 | DROP SERIES  | <i class="fas fa-times"></i> |
 | DELETE | <i class="fas fa-times"></i> |
 | DROP MEASUREMENT | <i class="fas fa-times"></i> |
@@ -226,21 +225,21 @@ You can optionnaly add a `precision` with value **rfc3339** as parameter to chan
 
 ### Use InfluxQL to query data from sources that were not pushed on the Influx format
 
-On Metrics, you can push data with several different format: for example the Prometheus. As by default when a user push `native` influxQL data, we add a "." as separator between the  `measurement` and its `field keys` in our internal representation. As for example, with Prometheus you can't have any "." in the data format. We added a new clause in where statements the `_separator` to be able to query data from all kind of sources in InfluxQL.
+On Metrics, you can push data with several different format: for example the Prometheus. As by default when a user push `native` influxQL data, we add a "." as separator between the  `measurement` and its `field keys` in our internal representation. As for example, with Prometheus you can't have any "." in the data format. We added a new clause in where statements: the `_separator` to be able to query data from all kind of sources in InfluxQL.
 
 The `_separator` allow the user to choose a custom selector which will splits its influx `measurement` from its `field keys`. This allow the user to use the promQL "_" as separator to split Prometheus metrics classnames.
 
 Example:
 
-```influxQl
+```influxQL
 SELECT mean("field") FROM "prometheus_data" WHERE  time >= now() - 6h AND _separator = "_" GROUP BY time(1h) fill(null)
 ```
 
-This allow also the user to query InfluxData or any other kind of data with InfluQL and to get the `raw` data representation.
+This allow also the user to query InfluxData or any other kind of data with InfluxQL and to get the `raw` data representation.
 
 Example:
 
-```influxQl
+```influxQL
 SELECT mean("disk.used_percent") FROM "" WHERE  time >= now() - 6h AND _separator = "" GROUP BY time(1h) fill(null)
 ```
 
