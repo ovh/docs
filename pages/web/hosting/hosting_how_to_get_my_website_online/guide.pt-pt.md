@@ -10,16 +10,16 @@ legacy_guide_number: g1374
 
 ## Sumário
 
-Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja online, quer seja para partilhar uma paixão ou promover a sua atividade profissional, o seu [alojamento web da OVHcloud]({ovh_www}/hebergement-web/){.external} permite-lhe alojar o site que quiser, na medida em que seja compatível com a [configuração das nossas infraestruturas](http://pro.ovh.net/infos/){.external}.
+Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja online, quer seja para partilhar uma paixão ou promover a sua atividade profissional, o seu [alojamento web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external} permite-lhe alojar o site que quiser, na medida em que seja compatível com a [configuração das nossas infraestruturas](http://pro.ovh.net/infos/){.external}.
 
 **Saiba como publicar um site no alojamento web da OVHcloud.**
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVHcloud]({ovh_www}/hebergement-web/){.external}.
+- Ter um serviço de [alojamento web OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external}.
 
 - Ter recebido o e-mail com a confirmação da instalação do alojamento web.
-- Ter um [domínio]({ovh_www}/domaines/){.external} (endereço que permite identificar e aceder ao seu site).
+- Ter um [domínio](https://www.ovh.pt/dominios/){.external} (endereço que permite identificar e aceder ao seu site).
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instruções
@@ -81,7 +81,7 @@ Quando tiver obtido todos os elementos, o acesso ao espaço de armazenamento pod
 
 - **Utilizar um programa compatível com o protocolo FTP ou SFTP**: terá de instalar no seu computador um programa compatível como o FileZilla. Sugerimos que contacte o editor do programa instalado caso deseje obter ajuda na sua utilização.
 
-- **Utilizar um acesso SSH**: terá de executar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimentos técnicos avançados. Por outro lado, nem todos os planos de [alojamento web da OVHcloud]({ovh_www}/hebergement-web/){.external} são compatíveis.
+- **Utilizar um acesso SSH**: terá de executar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimentos técnicos avançados. Por outro lado, nem todos os planos de [alojamento web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external} são compatíveis.
 
 #### 2.3. Carregar os ficheiros para o espaço de armazenamento
 
