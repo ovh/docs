@@ -323,9 +323,9 @@ On obtient une réponse avec 1 crédit consommé pour un numéro valide.
 
 Le message par défaut intègre la mention STOP permettant aux destinataires de se désabonner de votre diffusion de SMS. 
 
-Si votre SMS n'est pas à caractère publicitaure, vous pouvez, via le paramètre noStopClause, désactiver la mention STOP.
+Si votre SMS n'est pas à caractère publicitaire, vous pouvez, via le paramètre noStopClause, désactiver la mention STOP.
 
-À noter qu'en intégrant la mention STOP à votre message, vous ne pouvez envoyer de SMS que de 08h à 20h du lundi au vendredi.
+Si votre SMS est à caractère publicitaire, vous ne pouvez envoyer de SMS que de 08h00 à 20h00 du lundi au samedi.
 
 
 ## Aller plus loin
