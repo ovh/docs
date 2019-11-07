@@ -6,7 +6,7 @@ section: Protocol
 order: 4
 ---
 
-**Last updated 06 November, 2019**
+**Last updated 07 November, 2019**
 
 > [!warning]
 >
@@ -30,7 +30,6 @@ order: 4
 | /write | POST   | <i class="fas fa-check"></i> |
 | /query | GET   | <i class="fas fa-check"></i> |
 
-
 InfluxDB has the notion of databases. This concept doesn't exist within Metrics. If you need segmentation, you can use different Metrics project or isolate with an additional label.
 
 ### Data Model
@@ -51,7 +50,7 @@ To push data to the platform, you will need a **WRITE TOKEN**. Use Basic Auth di
 
 <pre>https://metrics:[WRITE_TOKEN]@influxdb.[region].metrics.ovh.net</pre>
 
-#### Pushing datapoints using curl
+#### Pushing datapoints using cURL
 
 ```shell-session
  $ curl -i -XPOST \
@@ -67,6 +66,12 @@ InfluxDB has its own Query DSL, that mimics SQL without being plain ANSI SQL.
 ```text
  SELECT <field_key>[,<field_key>,<tag_key>] FROM <measurement_name>[,<measurement_name>]
 ```
+
+### Authentification
+
+To query data to the platform, you will need a READ TOKEN. Use Basic Auth directly inside the URL to pass it properly, like this :
+
+https://metrics:[READ_TOKEN]@influxdb.[region].metrics.ovh.net
 
 ### Data Exploration
 
@@ -198,6 +203,8 @@ The existing [SHOW statements](https://docs.influxdata.com/influxdb/v1.7/query_l
 | SHOW SERIES             | <i class="fas fa-check"></i> |
 | SHOW TAG VALUES         | <i class="fas fa-check"></i> |
 
+As in Metrics, the concept of DataBases doesn't exists, the `SHOW DATABASES` statement will always return only one database: `metrics`. 
+
 ### Database management statements
 
 The existing [database management statements](https://docs.influxdata.com/influxdb/v1.7/query_language/database_management/){.external} of InfluxQL supported by the Metrics platform are:
@@ -213,6 +220,8 @@ The existing [database management statements](https://docs.influxdata.com/influx
 | CREATE RETENTION POLICY | <i class="fas fa-times"></i> |
 | ALTER RETENTION POLICY | <i class="fas fa-times"></i> |
 | DROP RETENTION POLICY | <i class="fas fa-times"></i> |
+
+As the `CREATE DATABASE` statement is used in some client, this statement was implemented in Metrics and always return. However no databases exists in Metrics.
 
 ### Database continuous queries
 
@@ -242,6 +251,33 @@ Example:
 ```influxQL
 SELECT mean("disk.used_percent") FROM "" WHERE  time >= now() - 6h AND _separator = "" GROUP BY time(1h) fill(null)
 ```
+
+### Query using cURL
+
+A quick example to use InfluxQL on Metrics with cURL would be:
+
+```sh
+curl --request GET \
+  --url 'https://m:READ_TOKEN@influxdb.gra1.metrics.ovh.net/query?q=SELECT%20%22used_percent%22%20FROM%20%22disk%22%20WHERE%20%20time%20%3E%3D%20now()%20-%2020m&=%20'
+```
+
+This will execute the following InfluxQL query:
+
+```InfluxQL
+SELECT "used_percent" FROM "disk" WHERE  time >= now() - 20m
+```
+
+For the one used to query Influx, you will notify that the `db` mandatory parameter of Influx isn't set in this query. With Metrics the database field is optionnal, as Metris doesn't rely on Data-bases to store its metrics. If you need segmentation, you can use different Metrics project or isolate with an additional label.
+
+### Set up InfluxDB on Grafana
+
+Then select `basic auth` and fill the **user** with a non empty value, `metrics` for example.
+The basic auth password need to be valid Metrics `READ_TOKEN`.
+Please ensure that you have set the `metrics` key in the database field as describe in the screen below.
+
+![menu](images/grafana-datasource-influx.png){.thumbnail}
+
+Your Influx datasource is now set and ready to be query.
 
 ## Go further
 
