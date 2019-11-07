@@ -1,7 +1,7 @@
 ---
 title: 'Envoyer des SMS avec l’API OVHcloud en PHP'
-excerpt: 'Comment envoyer des SMS avec l’API OVHcloud RESTful en PHP'
 slug: envoyer_des_sms_avec_lapi_ovh_en_php
+excerpt: 'Comment envoyer des SMS avec l’API OVHcloud RESTful en PHP'
 legacy_guide_number: g1639
 section: 'Envoyer des SMS'
 ---
@@ -124,11 +124,12 @@ Pour envoyer des SMS, utilisez la méthode POST jobs : [https://api.ovh.com/cons
 >
 > **Uniquement pour les comptes OVHcloud en France :**
 > 
-> Le paramètre senderForResponse va permettre d’utiliser un numéro court ce qui nous permet d’envoyer directement des SMS sans devoir créer un expéditeur (ex : votre nom).
+> Le paramètre senderForResponse va permettre d’utiliser un numéro court, ce qui vous permet d’envoyer directement des SMS sans devoir créer un expéditeur alphanumérique (par exemple: votre nom).
 > 
-> Les numéros courts permettent aussi de recevoir des réponses de la part des personnes ayant reçu le SMS, ce qui peut être utile pour une enquête de satisfaction, une application de vote, un jeu...
+> Les numéros courts permettent aussi de recevoir des réponses de la part des destinataires de votre SMS, ce qui peut être utile pour une enquête de satisfaction, une application de vote, un jeu...
 >
 >
+
 
 
 ```
