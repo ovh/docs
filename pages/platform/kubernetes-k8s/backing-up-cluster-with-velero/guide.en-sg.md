@@ -1,9 +1,8 @@
 ---
-title: Backing-up a OVHcloud Managed Kubernetes cluster using Velero
-excerpt: Backing-up a OVHcloud Managed Kubernetes cluster using Velero
+title: 'Backing-up a OVHcloud Managed Kubernetes cluster using Velero'
+excerpt: 'Backing-up a OVHcloud Managed Kubernetes cluster using Velero'
 slug: backing-up-cluster-with-velero
 section: Tutorials
-hidden: false
 ---
 
 <style>
@@ -518,5 +517,4 @@ pvc-71528d91-fd03-46c4-99d6-557d3e8fe9da   1Gi        RWO            Delete     
 ## Where do we go from here?
 
 So now you have a working Velero on your cluster. Please refer to [official Velero documentation](https://velero.io/docs/){.external} to learn how to use it, including scheduling backups, using pre- and post-backup hooks and other matters.
-
 
