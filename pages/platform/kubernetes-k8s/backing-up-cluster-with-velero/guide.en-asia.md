@@ -98,7 +98,7 @@ Please write down the **access** and **secret** parameters:
 +------------+----------------------------------------------------------------------------------------------------------------------------+</code></pre>
 
 
-### Configure `awscli` client
+### Configure awscli client
 
 Install the `awscli` client:
 
@@ -109,8 +109,6 @@ pip install awscli awscli-plugin-endpoint
 Complete and write down the configuration for `awscli` into `~/aws/config`:
 
 ```yaml
-[...]
-user@host:~$ cat .aws/config
 [plugins]
 endpoint = awscli_plugin_endpoint
 
@@ -196,89 +194,89 @@ To verify that Velero is working correctly, let's try two exemples.
 
 1. Copy the following code into a `velero-example-without-pv.yml` file:
 
-  ```yaml
-  ---
-  apiVersion: v1
-  kind: Namespace
-  metadata:
-    name: nginx-example
-    labels:
-      app: nginx
-
-  ---
-  apiVersion: apps/v1
-  kind: Deployment
-  metadata:
-    name: nginx-deployment
-    namespace: nginx-example
-  spec:
-    replicas: 2
-    selector:
-      matchLabels:
+    ```yaml
+    ---
+    apiVersion: v1
+    kind: Namespace
+    metadata:
+      name: nginx-example
+      labels:
         app: nginx
-    template:
-      metadata:
-        labels:
-          app: nginx
-      spec:
-        containers:
-        - image: nginx:1.7.9
-          name: nginx
-          ports:
-          - containerPort: 80
 
-  ---
-  apiVersion: v1
-  kind: Service
-  metadata:
-    labels:
-      app: nginx
-    name: my-nginx
-    namespace: nginx-example
-  spec:
-    ports:
-    - port: 80
-      targetPort: 80
-    selector:
-      app: nginx
-    type: LoadBalancer
-  ```
+    ---
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: nginx-deployment
+      namespace: nginx-example
+    spec:
+      replicas: 2
+      selector:
+        matchLabels:
+          app: nginx
+      template:
+        metadata:
+          labels:
+            app: nginx
+        spec:
+          containers:
+          - image: nginx:1.7.9
+            name: nginx
+            ports:
+            - containerPort: 80
+
+    ---
+    apiVersion: v1
+    kind: Service
+    metadata:
+      labels:
+        app: nginx
+      name: my-nginx
+      namespace: nginx-example
+    spec:
+      ports:
+      - port: 80
+        targetPort: 80
+      selector:
+        app: nginx
+      type: LoadBalancer
+    ```
 
   And apply it to your cluster:
 
-  ```bash
-  kubectl apply -f velero-example-without-pv.yml
-  ```
+    ```bash
+    kubectl apply -f velero-example-without-pv.yml
+    ```
 
 1. Create a backup of the namespace
 
-  ```bash
-  velero backup create nginx-backup --include-namespaces nginx-example
-  ```
+    ```bash
+    velero backup create nginx-backup --include-namespaces nginx-example
+    ```
 
 1. Verify that the backup is done
 
-  ```bash
-  velero backup describe nginx-backup
-  ```
+    ```bash
+    velero backup describe nginx-backup
+    ```
 
 1. Simulate a disaster 
 
-  ```bash
-  kubectl delete namespaces nginx-example
-  ```
+    ```bash
+    kubectl delete namespaces nginx-example
+    ```
 
 1. Restore the deleted namespace
 
-  ```bash
-  velero restore create --from-backup nginx-backup
-  ```
+    ```bash
+    velero restore create --from-backup nginx-backup
+    ```
 
 1. Verify that  the restore is correctly done
 
-  ```bash
-  kubectl get all -n nginx-example
-  ```
+    ```bash
+    kubectl get all -n nginx-example
+    ```
 
 
 In my case:
@@ -342,128 +340,128 @@ replicaset.apps/nginx-deployment-54f57cf6bf   2         2         2       4m21s
 
 1. Copy the following code into a `velero-example-with-pv.yml` file:
 
-  ```yaml
-  ---
-  apiVersion: v1
-  kind: Namespace
-  metadata:
-    name: nginx-example
-    labels:
-      app: nginx
-
-  ---
-  kind: PersistentVolumeClaim
-  apiVersion: v1
-  metadata:
-    name: nginx-logs
-    namespace: nginx-example
-    labels:
-      app: nginx
-  spec:
-    storageClassName: cinder-classic
-    accessModes:
-      - ReadWriteOnce
-    resources:
-      requests:
-        storage: 50Mi
-
-  ---
-  apiVersion: apps/v1
-  kind: Deployment
-  metadata:
-    name: nginx-deployment
-    namespace: nginx-example
-  spec:
-    replicas: 1
-    selector:
-      matchLabels:
+    ```yaml
+    ---
+    apiVersion: v1
+    kind: Namespace
+    metadata:
+      name: nginx-example
+      labels:
         app: nginx
-    template:
-      metadata:
-        labels:
-          app: nginx
-        annotations:
-          pre.hook.backup.velero.io/container: fsfreeze
-          pre.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--freeze", "/var/log/nginx"]'
-          post.hook.backup.velero.io/container: fsfreeze
-          post.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--unfreeze", "/var/log/nginx"]'
-      spec:
-        volumes:
-          - name: nginx-logs
-            persistentVolumeClaim:
-              claimName: nginx-logs
-        containers:
-        - image: nginx:1.7.9
-          name: nginx
-          ports:
-          - containerPort: 80
-          volumeMounts:
-            - mountPath: "/var/log/nginx"
-              name: nginx-logs
-              readOnly: false
-        - image: gcr.io/heptio-images/fsfreeze-pause:latest
-          name: fsfreeze
-          securityContext:
-            privileged: true
-          volumeMounts:
-            - mountPath: "/var/log/nginx"
-              name: nginx-logs
-              readOnly: false
 
-  ---
-  apiVersion: v1
-  kind: Service
-  metadata:
-    labels:
-      app: nginx
-    name: my-nginx
-    namespace: nginx-example
-  spec:
-    ports:
-    - port: 80
-      targetPort: 80
-    selector:
-      app: nginx
-    type: LoadBalancer
-  ```
+    ---
+    kind: PersistentVolumeClaim
+    apiVersion: v1
+    metadata:
+      name: nginx-logs
+      namespace: nginx-example
+      labels:
+        app: nginx
+    spec:
+      storageClassName: cinder-classic
+      accessModes:
+        - ReadWriteOnce
+      resources:
+        requests:
+          storage: 50Mi
+
+    ---
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: nginx-deployment
+      namespace: nginx-example
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: nginx
+      template:
+        metadata:
+          labels:
+            app: nginx
+          annotations:
+            pre.hook.backup.velero.io/container: fsfreeze
+            pre.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--freeze", "/var/log/nginx"]'
+            post.hook.backup.velero.io/container: fsfreeze
+            post.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--unfreeze", "/var/log/nginx"]'
+        spec:
+          volumes:
+            - name: nginx-logs
+              persistentVolumeClaim:
+                claimName: nginx-logs
+          containers:
+          - image: nginx:1.7.9
+            name: nginx
+            ports:
+            - containerPort: 80
+            volumeMounts:
+              - mountPath: "/var/log/nginx"
+                name: nginx-logs
+                readOnly: false
+          - image: gcr.io/heptio-images/fsfreeze-pause:latest
+            name: fsfreeze
+            securityContext:
+              privileged: true
+            volumeMounts:
+              - mountPath: "/var/log/nginx"
+                name: nginx-logs
+                readOnly: false
+
+    ---
+    apiVersion: v1
+    kind: Service
+    metadata:
+      labels:
+        app: nginx
+      name: my-nginx
+      namespace: nginx-example
+    spec:
+      ports:
+      - port: 80
+        targetPort: 80
+      selector:
+        app: nginx
+      type: LoadBalancer
+    ```
 
 
 1. Create a backup of the namespace with PV snapshotting
 
-  ```bash
-  velero backup create nginx-backup-with-pv --include-namespaces nginx-example
-  ```
+    ```bash
+    velero backup create nginx-backup-with-pv --include-namespaces nginx-example
+    ```
 
 1. Verify that the backup is done
 
-  ```bash
-  velero backup describe nginx-backup
-  ```
+    ```bash
+    velero backup describe nginx-backup
+    ```
 
 1. Simulate a disaster 
 
-  ```bash
-  kubectl delete namespaces nginx-example
-  ```
+    ```bash
+    kubectl delete namespaces nginx-example
+    ```
 
   Because the default reclaim policy for dynamically-provisioned PVs is "Delete", these commands should trigger your cloud provider to delete the disk that backs the PV. Deletion is asynchronous, so this may take some time. Before continuing to the next step, verify that the PV is deleted
 
-  ```bash
-  kubectl get pv --all-namespaces
-  ```
+    ```bash
+    kubectl get pv --all-namespaces
+    ```
 
 
 1. Restore the deleted namespace
 
-  ```bash
-  velero restore create --from-backup nginx-backup-with-pv
-  ```
+    ```bash
+    velero restore create --from-backup nginx-backup-with-pv
+    ```
 
 1. Verify that  the restore is correctly done
 
-  ```bash
-  kubectl get all -n nginx-example
-  ```
+    ```bash
+    kubectl get all -n nginx-example
+    ```
 
 
 <pre class="console"><code>$ kubectl apply -f exemples/velero/velero-example-without-pv.yml     
