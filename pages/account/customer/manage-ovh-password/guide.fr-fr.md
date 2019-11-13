@@ -20,13 +20,21 @@ Le mot de passe de votre espace client OVHcloud est la clé d'accès à tous vos
 ### Générer un bon mot de passe
 
 La sécurité de vos solutions dépend de l'efficacité du mot de passe d'accès à votre espace client OVHcloud. Pour sécuriser parfaitement vos données, il doit suivre ces quelques recommandations :
+
 - comporter au minimum 12 caractères ;
+
 - comporter au moins 1 lettre majuscule, 1 lettre minuscule et 1 chiffre ;
+
 - comporter des caractères spéciaux (par exemple : %, #, :, $, *) ;
+
 - ne pas être tiré du dictionnaire ;
+
 - ne pas comporter d'informations personnelles (votre prénom, nom ou date de naissance) ;
+
 - être stocké dans un coffre-fort de mots de passe ;
+
 - être changé tous les 3 mois ;
+
 - être différent de ceux utilisés auparavant.
 
 
@@ -34,7 +42,7 @@ Il existe plusieurs méthodes efficaces pour créer des mots de passe. Parmi ell
 
 La Commission nationale de l'informatique et des libertés (CNIL) propose également un outil permettant de générer un mot de passe solide, basé sur la méthode des premières lettres.
 
-Pour en savoir plus, reportez-vous à la section [Aller plus loin](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#aller-plus-loin){.external} en bas de ce guide.
+Pour en savoir plus, reportez-vous à la section [Aller plus loin](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#aller-plus-loin_2){.external} en bas de ce guide.
 
 ### Utiliser un gestionnaire de mots de passe 
 
