@@ -788,3 +788,36 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```bash
 91.134.248.249
 ```
+
+## Cluster 029
+
+Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
+
+|Pays|Code Pays|IPv4|IPv6|
+|---|---|----|---|
+|France|FR|51.91.236.255|2001:41d0:301::29|
+|Irlande|IE|92.222.139.156|2001:41d0:301:3::29|
+|Portugal|PT|46.105.159.220|2001:41d0:301:2::29|
+|Royaume-Uni|UK|178.32.48.109|2001:41d0:301:12::29|
+|Italie|IT|178.32.137.139|2001:41d0:301:11::29|
+|Espagne|ES|188.165.132.144|2001:41d0:301:4::29|
+|Pologne|PL|213.32.10.205|2001:41d0:301:5::29|
+|République tchèque|CZ|5.196.248.55|2001:41d0:301:6::29|
+|Pays-Bas|NL|51.83.124.4|2001:41d0:301:7::29|
+|Finlande|FI|79.137.116.129|2001:41d0:301:8::29|
+|Lituanie|LT|164.132.14.117|2001:41d0:301:9::29|
+|Allemagne|DE|145.239.222.45|2001:41d0:301:1::29|
+|Belgique|BE|178.32.44.140|2001:41d0:301:10::29|
+
+Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+```bash
+ 51.255.215.242 
+ ```
+
+Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
+
+
+```bash
+91.134.248.192
+```
