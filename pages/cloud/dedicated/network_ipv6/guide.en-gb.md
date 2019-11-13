@@ -38,13 +38,12 @@ If you are using an OVH-provided Linux OS template to install your server, you w
 
 > [!warning]
 >
-> Before following the steps below, we strongly suggest that you disable IPv6 autoconf and router advertising to prevent known issues. You can do so by adding the following lines to your `sysctl.conf` file, which is located in /etc/sysctl.conf:
+> Before following the steps below, we strongly suggest that you disable IPv6 autoconf and router advertising to prevent known issues (f.i. broken IPv6 about 30min after reboot). You can do so by adding the following lines to your `sysctl.conf` file, which is located in /etc/sysctl.conf:
 > 
-> `net.IPv6.conf.all.autoconf=0`
+> `net.ipv6.conf.all.autoconf=0`
+> `net.ipv6.conf.all.accept_ra=0`
 > 
-> `net.IPv6.conf.all.accept_ra=0`
-> 
-> Once this has been done, you can apply those rules by executing the following command: `sh sysctl -p`.
+> Once this has been done, you can apply those rules by executing the following command: `sysctl -p` or simply reboot.
 > 
 
 #### Step 1: Use SSH to connect to your server
