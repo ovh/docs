@@ -89,7 +89,7 @@ Remplacez les X par par les informations ci-dessous :
 > 
 >Si vous modifiez l’encodage pour l'encodage Unicode, votre SMS fera 70 caractères maximum contre 160 sur l'encodage 7bit.
 >
->Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](https://docs.ovh.com/fr/sms/envoyer_des_sms_depuis_une_url_-_http2sms/#annexe) en bas de ce guide.
+>Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](https://docs.ovh.com/fr/sms/envoyer_des_sms_depuis_une_url_-_http2sms/#annexe_2) en bas de ce guide.
 >
 
 
