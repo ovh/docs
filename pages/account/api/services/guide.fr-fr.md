@@ -1,7 +1,7 @@
 ---
 title: 'Gestion des services'
-excerpt: 'Gérer le cycle de vie de vos services OVH après leur livraison'
 slug: ovh-api-service
+excerpt: 'Gérer le cycle de vie de vos services OVH après leur livraison'
 section: 'OVH APIv6'
 ---
 
@@ -22,7 +22,7 @@ La route d'API **/service** regroupe les actions communes à tous types de servi
 ## Prérequis
 
 * Être connecté aux [API OVH](https://api.ovh.com/console){.external}.
-* Avoir [créé ses identifiants pour l'API OVH](https://api.ovh.com/g934.first_step_with_api){.external}.
+* Avoir [créé ses identifiants pour l'API OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
 * Avoir un compte client avec un tag Reseller (contactez votre commercial pour connaître votre éligibilité le cas échéant).
 
 ## En pratique
@@ -71,4 +71,4 @@ L'appel entraîne la suppression du service et des données et l'édition de la 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
