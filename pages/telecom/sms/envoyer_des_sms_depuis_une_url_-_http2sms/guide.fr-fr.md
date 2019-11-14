@@ -1,7 +1,7 @@
 ---
 title: 'Envoyer des SMS depuis une URL - http2sms'
-excerpt: 'Envoyer des SMS depuis une adresse http'
 slug: envoyer_des_sms_depuis_une_url_-_http2sms
+excerpt: 'Découvrez comment envoyer des SMS depuis une adresse http'
 section: 'Envoyer des SMS'
 ---
 
@@ -14,8 +14,7 @@ Différentes méthodes existent pour envoyer des SMS. L'une d'entre elles consis
 **Apprenez comment envoyer des SMS grâce à l'outil Wget.**
 
 ## Prérequis
-
-- Avoir créé un utilisateur SMS via l'espace-client OVHcloud ou directement via les API. À cet effet, vous pouvez consulter le guide suivant : [Tout savoir sur les utilisateurs SMS](https://docs.ovh.com/fr/sms/tout_savoir_sur_les_utilisateurs_sms/)
+- Avoir créé un utilisateur SMS via l'espace client OVHcloud ou directement via les API. À cet effet, vous pouvez consulter le guide suivant : [Tout savoir sur les utilisateurs SMS](https://docs.ovh.com/fr/sms/tout_savoir_sur_les_utilisateurs_sms/)
 - Disposer d'un compte SMS OVHcloud avec des crédits SMS
 
 
@@ -89,7 +88,10 @@ Remplacez les X par par les informations ci-dessous :
 > *2* pour l'encodage Unicode
 > 
 >Si vous modifiez l’encodage pour l'encodage Unicode, votre SMS fera 70 caractères maximum contre 160 sur l'encodage 7bit.
-> 
+>
+>Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](https://docs.ovh.com/fr/sms/envoyer_des_sms_depuis_une_url_-_http2sms/#annexe) en bas de ce guide.
+>
+
 
 ### Étape 3 : Analyser les envois effectués
 
@@ -189,6 +191,13 @@ KO
 Missing message. For more informations : http://guides.ovh.com/httpToSms
 ```
 
+## Annexe
+
+La taille maximum d’un SMS est de 160 caractères (norme GSM 03.38).
+
+Les deux tableaux ci-dessous listent les caractères autorisés en encodage 7bit. Les caractères du tableau "Extensions" comptent double. L’utilisation de caractères ne figurant pas dans ces tableaux provoquera le basculement de l’encodage en Unicode et réduit à 70 caractères la taille maximale d’un SMS.
+
+![Liste des caractères SMS](images/smsauthorizedcharacters.png){.thumbnail}
 
 ## Aller plus loin
 
