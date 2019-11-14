@@ -41,7 +41,7 @@ Si votre texte contient 2 sauts de ligne (double /n) ou si vous écrivez le para
 Pour envoyer un SMS contenant ces éléments, il vous faudra le faire depuis l'espace client ou via les API.
 >
 
-Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](https://docs.ovh.com/fr/sms/envoyer-sms-depuis-adresse-email/#annexe_2) en bas de ce guide.
+Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](https://docs.ovh.com/fr/sms/envoyer-sms-depuis-adresse-email/#annexe_1) en bas de ce guide.
 
 ### Étape 1 : inclure les champs obligatoires dans votre e-mail
 
@@ -159,9 +159,11 @@ Si vous avez rencontrez une erreur lors de l'envoi, cette dernière sera notifi�
 
 ## Annexe
 
-La taille maximum d’un SMS est de 160 caractères (norme GSM 03.38).
+Les deux tableaux ci-dessous listent les caractères autorisés en encodage 7bit. Les caractères du tableau "Extensions" comptent double. 
 
-Les deux tableaux ci-dessous listent les caractères autorisés en encodage 7bit. Les caractères du tableau "Extensions" comptent double. L’utilisation de caractères ne figurant pas dans ces tableaux provoquera le basculement de l’encodage en Unicode et réduit à 70 caractères la taille maximale d’un SMS.
+La taille maximum d’un SMS est de 160 caractères en encodage 7bit (norme GSM 03.38).
+
+L’utilisation de caractères ne figurant pas dans ces tableaux provoquera le basculement de l’encodage en Unicode et réduit à 70 caractères la taille maximale d’un SMS.
 
 ![Liste des caractères SMS](images/smsauthorizedcharacters.png){.thumbnail}
 
