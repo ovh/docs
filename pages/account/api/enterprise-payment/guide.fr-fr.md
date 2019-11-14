@@ -31,7 +31,7 @@ Nous allons décrire une partie du cycle de gestion de votre paiement et de votr
 #### Ajouter un moyen de paiement de type virement SEPA 
 
 
-Contactez votre commercial en précisant que vous souhaitez avoir un moyen de paiement de type virement SEPA ainsi que le délai de paiement souhaité (exemple: 30 ou 45 ou 60 jours en France).
+Contactez votre commercial en précisant que vous souhaitez avoir un moyen de paiement de type virement SEPA ainsi que le délai de paiement souhaité (exemple: 30, 45 ou 60 jours en France).
 
 Des attributs supplémentaires seront rajoutés à votre compte pour autoriser le moyen de paiement de type virement SEPA, pour indiquer le délai de paiement et pour activer le renouvellement automatique permanent.
 
@@ -45,7 +45,7 @@ Dans l'APIv6 et dans votre manager, dans vos moyens de paiement apparaitra un no
 #### Comment renseigner un numéro de "Purchase Order" (PO)
 
 
-Afin que OVHcloud puisse éditer les factures avec le numéro de **Purchase Order (PO)** souhaité, contactez votre commercial afin de le donner ce numéro.
+Afin que OVHcloud puisse éditer les factures avec le numéro de **Purchase Order (PO)** souhaité, contactez votre commercial afin de lui donner ce numéro.
 
 En cas de modification de ce numéro de **PO**, contactez votre commercial dans les plus brefs délais.
 
