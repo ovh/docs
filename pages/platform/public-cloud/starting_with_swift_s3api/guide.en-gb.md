@@ -104,7 +104,7 @@ endpoint = awscli_plugin_endpoint
 [profile default]
 aws_access_key_id = <access fetched in previous step>
 aws_secret_access_key = <secret fetched in previous step>
-region = <public cloud region without digit>
+region = <public cloud region without digit and uppercase>
 s3 =
   endpoint_url = https://storage.<public cloud region without digit>.cloud.ovh.net
   signature_version = s3v4
