@@ -193,9 +193,11 @@ Missing message. For more informations : http://guides.ovh.com/httpToSms
 
 ## Annexe
 
-La taille maximum d’un SMS est de 160 caractères (norme GSM 03.38).
+Les deux tableaux ci-dessous listent les caractères autorisés en encodage 7bit. Les caractères du tableau "Extensions" comptent double. 
 
-Les deux tableaux ci-dessous listent les caractères autorisés en encodage 7bit. Les caractères du tableau "Extensions" comptent double. L’utilisation de caractères ne figurant pas dans ces tableaux provoquera le basculement de l’encodage en Unicode et réduit à 70 caractères la taille maximale d’un SMS.
+La taille maximum d’un SMS est de 160 caractères en encodage 7bit (norme GSM 03.38).
+
+L’utilisation de caractères ne figurant pas dans ces tableaux provoquera le basculement de l’encodage en Unicode et réduit à 70 caractères la taille maximale d’un SMS.
 
 ![Liste des caractères SMS](images/smsauthorizedcharacters.png){.thumbnail}
 
