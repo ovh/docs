@@ -1,9 +1,9 @@
 ---
-title: Envoyer des SMS avec l’API OVH en c#
-excerpt: Comment envoyer des SMS avec l’api OVH RESTful en Java
+title: 'Envoyer des SMS avec l’API OVH en c#'
 slug: envoyer_des_sms_avec_lapi_ovh_en_c
+excerpt: 'Découvrez comment envoyer des SMS avec l’api OVHcloud en c#'
 legacy_guide_number: g1654
-section: Envoyer des SMS
+section: 'Envoyer des SMS'
 ---
 
 Vous aurez besoin d’un environnement de développement c#, d’un compte OVH avec des crédits SMS.
@@ -168,7 +168,7 @@ private void sendSms()
             //Paramètres de la méthode appellée
             String ServiceName = "sms-XX00000-1";
             String METHOD = "POST";
-            String QUERY = "https://eu.api.ovh.com/1.0/sms/"+ServiceName+"/jobs/";
+            String QUERY = "https://eu.api.ovh.com/1.0/sms/"+ServiceName+"/jobs";
             String BODY =@"{ ""charset"": ""UTF-8"", ""receivers"": [ ""+33660000000"" ], ""message"": ""Test SMS OVH"", ""priority"": ""high"",  ""senderForResponse"": true}";
 
             Int32 unixTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
