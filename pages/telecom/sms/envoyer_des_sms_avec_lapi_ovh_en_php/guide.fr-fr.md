@@ -40,7 +40,7 @@ Vous allez récupérer dans votre projet le répertoire ./vendor/ovh/ovh/  ainsi
 Des identifiants sont nécessaires pour consommer l’API SMS. Ces identifiants sont créés une fois pour identifier l’application qui va envoyer des SMS. La durée de vie de ces identifiants est paramétrable.
 
 Créez vos identifiants de Script (all keys at once) sur cette page :
-[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/) (cette url vous permet d'avoir automatiquement les bons droits pour pour les étapes décrites dans ce guide).
+[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs&POST=/sms/*/jobs) (cette url vous permet d'avoir automatiquement les bons droits pour pour les étapes décrites dans ce guide).
 
 
 ![création des tokens](images/img_2451.jpg){.thumbnail}
@@ -49,8 +49,8 @@ Dans cet exemple simple, nous récupérons les droits pour avoir accès aux info
 
 
 - GET /sms
-- GET /sms/*/jobs/
-- POST /sms/*/jobs/
+- GET /sms/*/jobs
+- POST /sms/*/jobs
 
 
 L’étoile (*) active les appels à ces méthodes pour tous vos comptes SMS, vous pouvez également restreindre les appels à un seul compte si vous gérez plusieurs comptes SMS sur votre compte OVH en remplaçant '/sms' par '/sms/NOM-DU-COMPTE' et '/sms/*' par '/sms/NOM-DU-COMPTE/*'
@@ -82,12 +82,12 @@ Vous pouvez maintenant tester la bonne connexion à l’API en affichant les dé
 /**
  * Liste et affiche le détail de chaque compte SMS
  * 
- * Rendez-vous sur https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/
+ * Rendez-vous sur https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs&POST=/sms/*/jobs
  * pour générer les clés d'accès API pour:
  *
  * GET /sms
- * GET /sms/*/jobs/
- * POST /sms/*/jobs/
+ * GET /sms/*/jobs
+ * POST /sms/*/jobs
  */
 
 require __DIR__ . '/vendor/autoload.php';
@@ -137,12 +137,12 @@ Pour envoyer des SMS, utilisez la méthode POST jobs : [https://api.ovh.com/cons
 /**
  * Envoie un SMS puis affiche la liste des SMS en attente d’envoi.
  * 
- * Rendez-vous sur https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/
+ * Rendez-vous sur https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs&POST=/sms/*/jobs
  * pour générer les clés d'accès API pour:
  *
  * GET /sms
- * GET /sms/*/jobs/
- * POST /sms/*/jobs/
+ * GET /sms/*/jobs
+ * POST /sms/*/jobs
  */
 
 require __DIR__ . '/vendor/autoload.php';
@@ -175,11 +175,11 @@ $content = (object) array(
 	"senderForResponse"=> true,
 	"validityPeriod"=> 2880
 );
-$resultPostJob = $conn->post('/sms/'. $smsServices[0] . '/jobs/', $content);
+$resultPostJob = $conn->post('/sms/'. $smsServices[0] . '/jobs', $content);
 
 print_r($resultPostJob);
 
-$smsJobs = $conn->get('/sms/'. $smsServices[0] . '/jobs/');
+$smsJobs = $conn->get('/sms/'. $smsServices[0] . '/jobs');
 print_r($smsJobs);
         
 ?>
