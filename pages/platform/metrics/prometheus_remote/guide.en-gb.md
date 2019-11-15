@@ -1,7 +1,7 @@
 ---
 title: Use prometheus remote-read and remote-write
 slug: protocol-prom-remote
-excerpt: Get an overview on how to use InfluxDB for Metrics
+excerpt: Get an overview on how to use prometheus remote-read and remote-write for Metrics
 section: Protocol
 order: 6
 ---
