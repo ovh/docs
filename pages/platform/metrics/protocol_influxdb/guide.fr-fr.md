@@ -203,7 +203,7 @@ The existing [SHOW statements](https://docs.influxdata.com/influxdb/v1.7/query_l
 | SHOW SERIES             | <i class="fas fa-check"></i> |
 | SHOW TAG VALUES         | <i class="fas fa-check"></i> |
 
-As in Metrics, the concept of DataBases doesn't exists, the `SHOW DATABASES` statement will always return only one database: `metrics`. 
+As the concept of databases doesn't exists in Metrics, the `SHOW DATABASES` statement will always return only one database: `metrics`.
 
 ### Database management statements
 
@@ -221,7 +221,7 @@ The existing [database management statements](https://docs.influxdata.com/influx
 | ALTER RETENTION POLICY | <i class="fas fa-times"></i> |
 | DROP RETENTION POLICY | <i class="fas fa-times"></i> |
 
-As the `CREATE DATABASE` statement is used in some client, this statement was implemented in Metrics and always return. However no databases exists in Metrics.
+As the `CREATE DATABASE` statement is used by some client, this statement was implemented in Metrics and always return. However no database exists in Metrics.
 
 ### Database continuous queries
 
@@ -267,17 +267,17 @@ This will execute the following InfluxQL query:
 SELECT "used_percent" FROM "disk" WHERE  time >= now() - 20m
 ```
 
-For the one used to query Influx, you will notify that the `db` mandatory parameter of Influx isn't set in this query. With Metrics the database field is optionnal, as Metris doesn't rely on Data-bases to store its metrics. If you need segmentation, you can use different Metrics project or isolate with an additional label.
+For the one used to query Influx, you will notice that the `db` mandatory parameter of Influx is not set in this query. With Metrics the database field is optional, as Metrics does not rely on databases to store its metrics. If you need segmentation, you can use different Metrics project or isolate with an additional label.
 
 ### Set up InfluxDB on Grafana
 
 Then select `basic auth` and fill the **user** with a non empty value, `metrics` for example.
-The basic auth password need to be valid Metrics `READ_TOKEN`.
-Please ensure that you have set the `metrics` key in the database field as describe in the screen below.
+The password needs to be a valid Metrics `READ_TOKEN`.
+Please ensure that you have set the `metrics` key in the database field as described in the screen below.
 
 ![menu](images/grafana-datasource-influx.png){.thumbnail}
 
-Your Influx datasource is now set and ready to be query.
+Your Influx datasource is now set and ready to be queried.
 
 ## Go further
 
