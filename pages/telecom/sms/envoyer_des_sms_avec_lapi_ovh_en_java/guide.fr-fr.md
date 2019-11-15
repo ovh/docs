@@ -34,15 +34,15 @@ Dans ce guide, deux méthodes seront appelées :
 
 Des identifiants sont nécessaires pour consommer l’API SMS. Ces identifiants sont créés une fois pour identifier l’application qui va envoyer des SMS. La durée de vie de ces identifiants est paramétrable.
 
-Créez vos identifiants de Script (all keys at once) sur cette page: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs/&POST=/sms/*/jobs/) (Cette URL vous permet d'avoir automatiquement les bons droits pour les étapes décrites dans ce guide).
+Créez vos identifiants de Script (all keys at once) sur cette page: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (Cette URL vous permet d'avoir automatiquement les bons droits pour les étapes décrites dans ce guide).
 
 ![création des tokens](images/img_2479.jpg){.thumbnail}
 
 Dans cet exemple simple, nous récupérons les droits pour avoir accès aux informations sur le compte, à la possibilité de voir les envois en attente et à la possibilité d’envoyer des SMS.
 
 - GET /sms/
-- GET/sms/*/jobs/
-- POST /sms/*/jobs/
+- GET/sms/*/jobs
+- POST /sms/*/jobs
 
 
 L’étoile (*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez restreindre les appels à un seul compte si vous gérez plusieurs comptes SMS sur votre compte OVH.
@@ -218,7 +218,7 @@ public class ProgramSendSms {
         String ServiceName = "sms-xx000000-1";
         String METHOD = "POST";
         try {
-            URL    QUERY  = new URL("https://eu.api.ovh.com/1.0/sms/"+ServiceName+"/jobs/");
+            URL    QUERY  = new URL("https://eu.api.ovh.com/1.0/sms/"+ServiceName+"/jobs");
             String BODY   = "{\"receivers\":[\"+33612345678\"],\"message\":\"Test SMS OVH\",\"priority\":\"high\",\"senderForResponse\":true}";
 
             long TSTAMP  = new Date().getTime()/1000;
