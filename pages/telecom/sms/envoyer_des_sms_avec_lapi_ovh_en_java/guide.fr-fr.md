@@ -1,6 +1,6 @@
 ---
-title: 'Envoyer des SMS avec l’API OVH en Java'
-excerpt: 'Comment envoyer des SMS avec l’api OVH RESTful en Java'
+title: 'Envoyer des SMS avec l’API OVHcloud en Java'
+excerpt: 'Comment envoyer des SMS avec l’api OVHcloud RESTful en Java'
 slug: envoyer_des_sms_avec_lapi_ovh_en_java
 legacy_guide_number: g1670
 section: 'Envoyer des SMS'
@@ -41,11 +41,11 @@ Créez vos identifiants de Script (all keys at once) sur cette page: [https://eu
 Dans cet exemple simple, nous récupérons les droits pour avoir accès aux informations sur le compte, à la possibilité de voir les envois en attente et à la possibilité d’envoyer des SMS.
 
 - GET /sms/
-- GET/sms/*/jobs
-- POST /sms/*/jobs
+- GET/sms/\*/jobs
+- POST /sms/\*/jobs
 
 
-L’étoile (*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez restreindre les appels à un seul compte si vous gérez plusieurs comptes SMS sur votre compte OVH.
+L’étoile (\*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez également restreindre les appels à un seul compte, si vous gérez plusieurs comptes SMS sur votre compte OVHcloud, en remplaçant « /sms » par « /sms/NOM-DU-COMPTE » et « /sms/\*/ » par «/sms/NOM-DU-COMPTE/».
 
 Vous récupérez alors vos identifiants pour votre script :
 
