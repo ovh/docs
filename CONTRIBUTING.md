@@ -11,8 +11,8 @@ All docs appear on <https://docs.ovh.com>.
 
 ### Pull requests and commit form
 
-The contributions should be done using GitHub Pull Requests on **develop** branch only. We use a standard form for all commits : <Language - Type of change (Add / Update) - Directory name>. For example : FR Update Change email password. Product shortcut can be added if relevant.
-
+The contributions should be done using GitHub Pull Requests on **develop** branch only. We use a standard form for all commits : `<Language - Type of change (Add / Update) - Directory name>`.  
+For example : FR Update Change email password. Product shortcut can be added if relevant.
 
 ### Pull Request Reviews
 
@@ -21,7 +21,6 @@ All pull requests are reviewed by our Technical Copywriter team to ensure that o
 Once validated by our reviewers, the request will be merged and the updated doc will be online. If online version doesn't suit to what you wanted when you applied, feel free to tell us.
 
 Our team will do his best to answer and deal with your request as fast as possible but don't forget that all requests are reviewed and it takes time.
-
 
 ### License appliance
 
