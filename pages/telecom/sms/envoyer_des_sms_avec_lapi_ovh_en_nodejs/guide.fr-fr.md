@@ -29,7 +29,7 @@ Plus d'informations sur [le projet GitHub](https://github.com/ovh/node-ovh).
 
 ## En pratique
 
-Le moyen le plus rapide pour récupérer le Wrapper NodeJs pour l’Api OVH est d’utiliser npm pour ajouter le module ovh :
+Le moyen le plus rapide pour récupérer le Wrapper NodeJs pour l’Api OVHcloud est d’utiliser npm pour ajouter le module ovh :
 
 ```
 $ npm install ovh
@@ -49,11 +49,11 @@ Créez vos identifiants de Script (all keys at once) sur cette page :
 Dans cet exemple simple, nous récupérons les droits pour avoir accès aux informations sur le compte, à la possibilité de voir les envois en attente et à la possibilité d’envoyer des SMS.
 
 - GET /sms/
-- GET/sms/*/jobs/
-- POST /sms/*/jobs/
+- GET/sms/\*/jobs/
+- POST /sms/\*/jobs/
 
 
-L’étoile (*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez restreindre les appels à un seul compte si vous gérez plusieurs comptes SMS sur votre compte OVH.
+L’étoile (\*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez également restreindre les appels à un seul compte, si vous gérez plusieurs comptes SMS sur votre compte OVHcloud, en remplaçant « /sms » par « /sms/NOM-DU-COMPTE » et « /sms/\*/ » par «/sms/NOM-DU-COMPTE/».
 
 Vous récupérez vos identifiants pour votre script :
 
