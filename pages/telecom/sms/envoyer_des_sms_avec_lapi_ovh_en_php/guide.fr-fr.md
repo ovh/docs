@@ -53,7 +53,7 @@ Dans cet exemple simple, nous récupérons les droits pour avoir accès aux info
 - POST /sms/*/jobs
 
 
-L’étoile (*) active les appels à ces méthodes pour tous vos comptes SMS, vous pouvez également restreindre les appels à un seul compte si vous gérez plusieurs comptes SMS sur votre compte OVH en remplaçant '/sms' par '/sms/NOM-DU-COMPTE' et '/sms/*' par '/sms/NOM-DU-COMPTE/*'
+L’étoile (\*) active les appels à ces méthodes pour tous vos comptes SMS, vous pouvez également restreindre les appels à un seul compte si vous gérez plusieurs comptes SMS sur votre compte OVH en remplaçant '/sms' par '/sms/NOM-DU-COMPTE' et '/sms/\*' par '/sms/NOM-DU-COMPTE/*'
 
 Vous récupérez vos identifiants pour votre script :
 
