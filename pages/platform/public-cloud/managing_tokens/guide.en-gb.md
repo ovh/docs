@@ -38,7 +38,7 @@ Tokens are finite, they expire and must be renewed when necessary.
 
 You can also use the API to revoke a token before it expires. 
 
-For more information, see the [OpenStack API](http:http://developer.openstack.org/api-guide/quick-start/) documentation.
+For more information, see the [OpenStack API](http://developer.openstack.org/api-guide/quick-start/) documentation.
 
 
 ## 

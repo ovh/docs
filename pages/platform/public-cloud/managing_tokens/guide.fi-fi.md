@@ -1,10 +1,9 @@
 ---
-title: Tunnisteiden hallinta
-excerpt: Tunnisteiden hallinta
+title: 'Tunnisteiden hallinta'
+excerpt: 'Tunnisteiden hallinta'
 slug: tunnisteiden_hallinta
 legacy_guide_number: g1872
 ---
-
 
 ## 
 
@@ -36,7 +35,7 @@ Koska tunnisteet ovat voimassa vain rajallisen ajan, ne vanhentuvat ja niitä on
 
 Voit käyttää myös API:a tunnisteen purkamiseen ennen sen vanhentumista.
 
-Lisätietoa löydät [OpenStack API](http:http://developer.openstack.org/api-guide/quick-start/) -dokumentaatiosta.
+Lisätietoa löydät [OpenStack API](http://developer.openstack.org/api-guide/quick-start/) -dokumentaatiosta.
 
 
 ## 

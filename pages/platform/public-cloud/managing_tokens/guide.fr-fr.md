@@ -1,10 +1,9 @@
 ---
-title: Gestion des tokens
+title: 'Gestion des tokens'
 slug: gestion-des-tokens
 legacy_guide_number: 1872
-section: Actions via API et lignes de commande
+section: 'Actions via API et lignes de commande'
 ---
-
 
 ## Préambule
 
@@ -33,7 +32,7 @@ Comme les tokens ont une durée de validité définit, ils expirent et doivent �
 
 De la même manière, si un token doit être révoqué avant sa date d'expiration, il est possible de le faire via l'API.
 
-Pour plus d'infirmation, consulter la documentation d'[OpenStack de l'API](http://docs.openstack.org/api/quick-start/content/){.external} et du [mécanisme d'authentification](http://docs.openstack.org/kilo/install-guide/install/apt/content/keystone-concepts.html){.external}.
+Pour plus d'information, consultez la documentation d'[OpenStack de l'API](http://docs.openstack.org/api/quick-start/content/){.external} et du [mécanisme d'authentification](http://docs.openstack.org/kilo/install-guide/install/apt/content/keystone-concepts.html){.external}.
 
 
 ## Operations manuelles
