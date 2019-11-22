@@ -52,7 +52,7 @@ Our Managed Kubernetes service is based on OpenStack, and your nodes and persist
 
 ### Node naming
 
-Due to known limitations currently present in the `Kubelet` service, be carefull to set a unique name to all your Openstack instances running in your tenant __including__ your "Managed Kubernetes Service" nodes and the instances that your start directly on Openstack through manager or API.  
+Due to known limitations currently present in the `Kubelet` service, be careful to set a unique name to all your Openstack instances running in your tenant __including__ your "Managed Kubernetes Service" nodes and the instances that your start directly on Openstack through manager or API.  
 
 ## Ports
 
