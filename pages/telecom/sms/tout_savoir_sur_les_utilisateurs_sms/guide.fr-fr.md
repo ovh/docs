@@ -33,8 +33,10 @@ Un utilisateur API qui envoie des SMS de manière abusive peut de suite être d�
 Ainsi il est possible pour le propriétaire du compte SMS de diviser ses crédits sur ses différents comptes utilisateurs API.
 
 Afin de gérer au mieux le crédit de votre compte SMS, il est possible de fixer une limite et un quota à vos utilisateurs API. 
-- Le quota est la quantité de crédits SMS disponibles pour l’utilisateur API.
-- La limite est le seuil minimum de crédits SMS restant à un utilisateur API avant réception d'une alerte pour recharger, ou pas, le nombre de ces crédits.
+
+- Le **quota** est la quantité de crédits SMS disponibles pour l’utilisateur API.
+
+- La **limite** est le seuil minimum de crédits SMS restant à un utilisateur API avant réception d'une alerte pour recharger, ou pas, le nombre de ces crédits.
 
 ### Étape 1 : créer un utilisateur API
 
