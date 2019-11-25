@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated 29<sup>th</sup> July, 2019.**
+**Last updated November 19<sup>th</sup>, 2019.**
 
 <style>
  pre {
@@ -50,17 +50,25 @@ There is also a limit of 10 open ports on every `LoadBalancer`, and these ports 
 
 Our Managed Kubernetes service is based on OpenStack, and your nodes and persistent volumes are built on it, using OVH Public Cloud. As such, you can see them in the *Servers* section of [OVH Cloud Manager](https://www.ovh.com/manager/cloud/). It doesn't mean that you can deal directly with these nodes and persistent volumes as other cloud instances. The *managed* part of OVHcloud Managed Kubernetes means that we have configured those nodes and volumes to be part of our Managed Kubernetes. Please refrain from manipulating them from the *OVH Cloud Manager* (modifying ports left opened, renaming, resizing volumes...), as you could break them.
 
+### Node naming
+
+Due to known limitations currently present in the `Kubelet` service, be careful to set a unique name to all your Openstack instances running in your tenant __including__ your "Managed Kubernetes Service" nodes and the instances that your start directly on Openstack through manager or API.  
+
 ## Ports
 
 In any case, there are some ports that you shouldn't block on your instances if you want to keep your OVHcloud Managed Kubernetes service running:
 
-### Ports to open from public network
+### Ports to open from public network (INPUT)
 
 - TCP Port 22 (*ssh*): needed for nodes management by OVH
 - TCP Port 10250 (*kubelet*): needed for [communication from apiserver to worker nodes](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet)
 - TCP Ports from 30000 to 32767 (*NodePort* services port range): needed for [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport) and [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) services
 
-### Ports to open from others worker nodes
+### Ports to open from instances to public network (OUTPUT)
+
+- TCP Port 8090 (*internal service*): needed for nodes management by OVH
+
+### Ports to open from others worker nodes (INPUT/OUPUT)
 
 - UDP Port 8472 (*flannel*): needed for communication between pods
 
