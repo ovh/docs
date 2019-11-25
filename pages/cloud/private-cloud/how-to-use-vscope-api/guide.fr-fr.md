@@ -95,36 +95,36 @@ Pour chaque type de composant, une liste de métriques est disponible et nécess
 
 | Métriques | Description | Labels |
 | ----------- | ----------- | ----------- |
-| vscope.filer.datastore.diskspace.used | Utilisation du filer en kB | datacenter : pcc-37-187-228-180\_datacenter869, </br>datastore : pcc-000443 |
+| vscope.filer.datastore.diskspace.used | Utilisation du filer en kB | datacenter : pcc-37-187-228-180\_datacenter869, <br>datastore : pcc-000443 |
 
 #### Hosts
 
 | Métriques | Description | Labels |
 | ----------- | ----------- | ----------- |
-| vscope.host.cpu.usage.perc | Utilisation processeur du host en pourcent | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- host : 172.17.86.51 |
-| vscope.host.mem.usage.perc | Utilisation mémoire du host en pourcent | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- host : 172.17.86.51 |
-| vscope.host.net.tx | Utilisation réseau du host en émission | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- host : 172.17.86.51</br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
-| vscope.host.net.rx | Utilisation réseau du host en réception | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- host : 172.17.86.51</br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
-| vscope.host.net.packetstx | Nombre de packets réseau transmis du host | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- host : 172.17.86.51</br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
-| vscope.host.net.packetsrx | Nombre de packets réseau reçus du host | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- host : 172.17.86.51</br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.cpu.usage.perc | Utilisation processeur du host en pourcent | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51 |
+| vscope.host.mem.usage.perc | Utilisation mémoire du host en pourcent | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51 |
+| vscope.host.net.tx | Utilisation réseau du host en émission | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51</br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.rx | Utilisation réseau du host en réception | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51</br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.packetstx | Nombre de packets réseau transmis du host | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51</br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.packetsrx | Nombre de packets réseau reçus du host | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51</br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
 
 #### Machine Virtuelles
 
 | Métriques | Description | Labels |
 | ----------- | ----------- | ----------- |
-| vscope.vm.cpu.usage.perc | Utilisation processeur de la vm en pourcent | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- vm : vm-01254 |
-| vscope.vm.mem.usage.perc | Utilisation mémoire de la vm en pourcent | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- vm : vm-01254 |
-| vscope.vm.cpu.ready |CPU Ready de la vm en millisecond | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- vm : vm-01254 |
-| vscope.vm.net.rx | Utilisation réseau de la vm en réception | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- vm : vm-01254 |
-| vscope.vm.net.tx | Utilisation réseau de la vm en transmission | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- vm : vm-01254 |
-| vscope.vm.net.packetsrx | Nombre de packets réseau reçus de la vm | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- vm : vm-01254 |
-| vscope.vm.net.packetstx | Nombre de packets réseau transmis de la vm | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- vm : vm-01254 |
-| vscope.vm.disk.io.read | Nombre d'IO en lecture par seconde de la vm | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- vm : vm-01254 |
-| vscope.vm.disk.io.write | Nombre d'IO en écriture par seconde de la vm | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- vm : vm-01254 |
-| vscope.vm.disk.bandwidth.read |  Bande passante du disk de la vm en lecture | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- vm : vm-01254 |
-| vscope.vm.disk.bandwidth.write | Bande passante du disk de la vm en écriture | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- vm : vm-01254 |
-| vscope.vm.disk.latency.read | Latence du disque de la vm en lecture | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- vm : vm-01254 |
-| vscope.vm.disk.latency.write | Latence du disque de la vm en écriture | - datacenter : pcc-37-187-228-180\_datacenter869, </br>- vm : vm-01254 |
+| vscope.vm.cpu.usage.perc | Utilisation processeur de la vm en pourcent | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- vm : vm-01254 |
+| vscope.vm.mem.usage.perc | Utilisation mémoire de la vm en pourcent | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- vm : vm-01254 |
+| vscope.vm.cpu.ready |CPU Ready de la vm en millisecond | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- vm : vm-01254 |
+| vscope.vm.net.rx | Utilisation réseau de la vm en réception | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- vm : vm-01254 |
+| vscope.vm.net.tx | Utilisation réseau de la vm en transmission | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- vm : vm-01254 |
+| vscope.vm.net.packetsrx | Nombre de packets réseau reçus de la vm | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- vm : vm-01254 |
+| vscope.vm.net.packetstx | Nombre de packets réseau transmis de la vm | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- vm : vm-01254 |
+| vscope.vm.disk.io.read | Nombre d'IO en lecture par seconde de la vm | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- vm : vm-01254 |
+| vscope.vm.disk.io.write | Nombre d'IO en écriture par seconde de la vm | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- vm : vm-01254 |
+| vscope.vm.disk.bandwidth.read |  Bande passante du disk de la vm en lecture | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- vm : vm-01254 |
+| vscope.vm.disk.bandwidth.write | Bande passante du disk de la vm en écriture | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- vm : vm-01254 |
+| vscope.vm.disk.latency.read | Latence du disque de la vm en lecture | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- vm : vm-01254 |
+| vscope.vm.disk.latency.write | Latence du disque de la vm en écriture | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- vm : vm-01254 |
 
 #### Exemple de collecte en utilisant le protocol OpenTSDB
 
