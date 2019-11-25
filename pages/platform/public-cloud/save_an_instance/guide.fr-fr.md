@@ -2,10 +2,10 @@
 title: 'Sauvegarder une instance'
 slug: sauvegarder-une-instance
 excerpt: 'Découvrez comment sauvegarder une instance Public Cloud en quelques clics'
-section: Base de connaissances
+section: 'Base de connaissances'
 ---
 
-**Dernière mise à jour le 26/03/2018**
+**Dernière mise à jour le 22/11/2019**
 
 ## Objectif
 
@@ -20,31 +20,64 @@ Vous avez la possibilité de créer à tout moment une sauvegarde d'une instance
 
 ## En pratique
 
-### Étape 1 : accéder à la gestion de l'instance
+### Créer une sauvegarde d'une instance
 
-Connectez-vous à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Dans la partie « Cloud », cliquez sur `Serveurs`{.action} dans la barre de services à gauche. Choisissez alors la solution Public Cloud concernée. Enfin, dans l'onglet `Compute`{.action}, assurez-vous d'être bien positionné sur le choix « Instances ».
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sélectionnez l'onglet Public Cloud puis la rubrique `Instances`{.action}.
 
-![public-cloud](images/2803-2.png){.thumbnail}
+Cliquez alors sur les `...`{.action} à droite de l'instance choisie et enfin sur `Créer un backup`{.action}.
 
-### Étape 2 : créer une sauvegarde d'une instance
+![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 
-Depuis la page de gestion de l'instance, après avoir cliqué sur l'icône représentant une flèche vers le bas, sélectionnez `Créer une sauvegarde`{.action}.
+Renseignez un nom pour cette sauvegarde sur la page suivante.
 
-![public-cloud](images/2803-3.png){.thumbnail}
+![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Dans la fenêtre qui apparaît, définissez un nom pour cette sauvegarde. **Prenez aussi connaissance des informations concernant tout coût éventuel lié à sa création.**
+Une fois la sauvegarde terminée, celle-ci sera ensuite disponible dans la rubrique `Instance Backup`{.action}.
 
-Dès que vous êtes prêt, cliquez sur `Lancer la sauvegarde`{.action}
+![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
-![public-cloud](images/2805-2.png){.thumbnail}
+### Créer une sauvegarde automatisée d'une instance
 
-### Étape 3 : accéder aux sauvegardes d'une instance
+Dans la rubrique `Instances`{.action}, sélectionnez `Créer une sauvegarde automatisée`{.action} dans les actions disponibles de l'instance à sauvegarder.
 
-Pour accéder aux sauvegardes d'une instance Public Cloud, cliquez sur l'onglet `Compute`{.action} puis sur `Snapshots`{.action}.
+![public-cloud-instance-backup](images/createbackup4.png){.thumbnail}
 
-Vous retrouvez alors dans un tableau les différentes sauvegardes disponibles. Utilisez les boutons situés à droite pour interagir avec ces dernières.
+Vous devrez renseigner plusieurs informations sur la page suivante :
 
-![public-cloud](images/2807-2.png){.thumbnail}
+#### **Le workflow** 
+
+Il existe actuellement un seul workflow, celui-ci fera une sauvegarde de l'instance et du volume principal de celle-ci.
+
+![public-cloud-instance-backup](images/createbackup5.png){.thumbnail}
+
+#### **La ressource**. 
+
+Il suffit de sélectionner l'instance concernée par la sauvegarde.
+
+![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
+
+#### **L'ordonnancement** 
+
+Il s'agit de définir la fréquence des sauvegardes. Deux options par défaut sont proposées :
+
+* Une sauvegarde tous les jours avec un historique de 7 jours maximum.
+* Une sauvegarde tous les jours avec un historique de 14 jours maximum.
+
+![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
+
+    
+#### **Le nommage** 
+
+Il s'agit simplement de donner un nom à la tâche de sauvegarde.
+ 
+![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
+
+Une fois celle-ci créée, elle sera disponible dans la rubrique `Workflow Management`{.action} :
+
+![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
+
+Les sauvegardes seront disponibles dans la rubrique `Instance Backup`{.action} et facturés en tant que tel.
+
 
 ## Aller plus loin
 
