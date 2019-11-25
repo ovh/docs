@@ -10,7 +10,7 @@ section: Tutorials
      font-size: 14px;
  }
  pre.console {
-   background-color: #300A24; 
+   background-color: #300A24;
    color: #ccc;
    font-family: monospace;
    padding: 5px;
@@ -27,25 +27,22 @@ section: Tutorials
  }
 </style>
 
-**Last updated Ocotber 28<sup>st</sup>, 2019.**
-
+**Last updated November 19<sup>st</sup>, 2019.**
 
 In this tutorial, we are using [Velero](https://velero.io/){.external} to backup and restore an OVHcloud Managed Kubernetes cluster.
 
 Velero is an open source tool to safely backup and restore, perform disaster recovery, and migrate Kubernetes cluster resources and persistent volumes.
 
-We are using our Public Cloud's Swift Object Storage with the Swift S3 API as storage backend for Velero. Velero uses the S3 protocol to store the cluster backups on a S3 compatible object storage. 
-
+We are using our Public Cloud's Swift Object Storage with the Swift S3 API as storage backend for Velero. Velero uses the S3 protocol to store the cluster backups on a S3 compatible object storage.
 
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
-
 ## Creating the S3 bucket for Velero
 
-Velero needs a S3 bucket as storage backend to store the data from your cluster. In this section you will create your S3 bucket on Swift.
-
+Velero needs a S3 bucket as storage backend to store the data from your cluster.  
+In this section you will create your S3 bucket on Swift.
 
 ### Prepare your working environment
 
@@ -56,7 +53,6 @@ Before creating your S3 bucket you need to:
 - [Get Openstack RC File v3 from Horizon](../../../public-cloud/access_and_security_in_horizon/)
 
 You should now have access to your OpenStack RC file, with a filename line `<user_name>-openrc.sh`, and the username and password for your OpenStack account.
-
 
 ### Set the OpenStack environment variables
 
@@ -72,7 +68,6 @@ The shell will ask you for your OpenStack password:
 Please enter your OpenStack Password for project &lt;project_name> as user &lt;user_name>:
 </code></pre>
 
-
 ### Create EC2 credentials
 
 S3 tokens are different, you need 2 parameters (**access** and **secret**) to generate a S3 token.
@@ -80,7 +75,7 @@ S3 tokens are different, you need 2 parameters (**access** and **secret**) to ge
 These credentials will be safely stored in Keystone. To generate them with `python-openstack` client:
 
 ```bash
-$ openstack ec2 credentials create
+openstack ec2 credentials create
 ```
 
 Please write down the **access** and **secret** parameters:
@@ -96,7 +91,6 @@ Please write down the **access** and **secret** parameters:
 | trust_id   | None
 | user_id    | d74d05ff121b44bea9216495e7f0df61
 +------------+----------------------------------------------------------------------------------------------------------------------------+</code></pre>
-
 
 ### Configure awscli client
 
@@ -123,7 +117,6 @@ s3api =
   endpoint_url = https://storage.<public cloud region without digit>.cloud.ovh.net
 ```
 
-
 ### Create a S3 bucket for Velero
 
 Create a new bucket:
@@ -131,7 +124,6 @@ Create a new bucket:
 ```bash
 aws --profile default s3 mb s3://velero-s3
 ```
-
 
 ## Installing Velero
 
@@ -151,13 +143,12 @@ Install Velero, including all prerequisites, into the cluster and start the depl
 
 ```bash
 velero install \
-    --provider aws \
-    --bucket <your bucket name> \
-    --secret-file ./credentials-velero \
-    --snapshot-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://storage.<public cloud region without digit>.cloud.ovh.net \
-    --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://storage.<public cloud region without digit>.cloud.ovh.net
-```    
-
+  --provider aws \
+  --bucket <your bucket name> \
+  --secret-file ./credentials-velero \
+  --snapshot-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://storage.<public cloud region without digit>.cloud.ovh.net \
+  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://storage.<public cloud region without digit>.cloud.ovh.net
+```
 
 In my case, with the cluster in the `GRA` region, that meant:
 
@@ -184,104 +175,101 @@ Velero is installed! ⛵ Use 'kubectl logs deployment/velero -n velero' to view 
 
 Now Velero is installed, you can try your first backup...
 
-
 ## Verifying Velero is working
 
 To verify that Velero is working correctly, let's try two exemples.
 
 ### Exemple without PV
 
-
 1. Copy the following code into a `velero-example-without-pv.yml` file:
 
-    ```yaml
-    ---
-    apiVersion: v1
-    kind: Namespace
-    metadata:
-      name: nginx-example
-      labels:
-        app: nginx
+```yaml
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nginx-example
+  labels:
+    app: nginx
 
-    ---
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: nginx-deployment
-      namespace: nginx-example
-    spec:
-      replicas: 2
-      selector:
-        matchLabels:
-          app: nginx
-      template:
-        metadata:
-          labels:
-            app: nginx
-        spec:
-          containers:
-          - image: nginx:1.7.9
-            name: nginx
-            ports:
-            - containerPort: 80
-
-    ---
-    apiVersion: v1
-    kind: Service
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  namespace: nginx-example
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  template:
     metadata:
       labels:
         app: nginx
-      name: my-nginx
-      namespace: nginx-example
     spec:
-      ports:
-      - port: 80
-        targetPort: 80
-      selector:
-        app: nginx
-      type: LoadBalancer
-    ```
+      containers:
+      - image: nginx:1.7.9
+        name: nginx
+        ports:
+        - containerPort: 80
 
-  And apply it to your cluster:
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nginx
+  name: my-nginx
+  namespace: nginx-example
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: nginx
+  type: LoadBalancer
+```
 
-    ```bash
-    kubectl apply -f velero-example-without-pv.yml
-    ```
+And apply it to your cluster:
+
+```bash
+kubectl apply -f velero-example-without-pv.yml
+```
 
 1. Create a backup of the namespace
 
-    ```bash
-    velero backup create nginx-backup --include-namespaces nginx-example
-    ```
+```bash
+velero backup create nginx-backup --include-namespaces nginx-example
+```
 
 1. Verify that the backup is done
 
-    ```bash
-    velero backup describe nginx-backup
-    ```
+```bash
+velero backup describe nginx-backup
+```
 
-1. Simulate a disaster 
+1. Simulate a disaster
 
-    ```bash
-    kubectl delete namespaces nginx-example
-    ```
+```bash
+kubectl delete namespaces nginx-example
+```
 
 1. Restore the deleted namespace
 
-    ```bash
-    velero restore create --from-backup nginx-backup
-    ```
+```bash
+velero restore create --from-backup nginx-backup
+```
 
 1. Verify that  the restore is correctly done
 
-    ```bash
-    kubectl get all -n nginx-example
-    ```
-
+```bash
+kubectl get all -n nginx-example
+```
 
 In my case:
 
-<pre class="console"><code>$ kubectl apply -f exemples/velero/velero-example-without-pv.yml     
+<pre class="console"><code>$ kubectl apply -f exemples/velero/velero-example-without-pv.yml
 namespace/nginx-example created
 deployment.apps/nginx-deployment created
 service/my-nginx created
@@ -321,10 +309,8 @@ NAME                                    READY   STATUS    RESTARTS   AGE
 pod/nginx-deployment-54f57cf6bf-2qhbd   1/1     Running   0          4m19s
 pod/nginx-deployment-54f57cf6bf-twrkm   1/1     Running   0          4m19s
 
-
 NAME               TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)        AGE
 service/my-nginx   LoadBalancer   10.3.19.133   xyzxyz.lb.c1.gra.k8s.ovh.net   80:30942/TCP   4m21s
-
 
 NAME                               READY   UP-TO-DATE   AVAILABLE   AGE
 deployment.apps/nginx-deployment   2/2     2            2           4m21s
@@ -333,138 +319,132 @@ NAME                                          DESIRED   CURRENT   READY   AGE
 replicaset.apps/nginx-deployment-54f57cf6bf   2         2         2       4m21s
 </code></pre>
 
-
 ### Exemple with PV
-
-
 
 1. Copy the following code into a `velero-example-with-pv.yml` file:
 
-    ```yaml
-    ---
-    apiVersion: v1
-    kind: Namespace
-    metadata:
-      name: nginx-example
-      labels:
-        app: nginx
+```yaml
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nginx-example
+  labels:
+    app: nginx
 
-    ---
-    kind: PersistentVolumeClaim
-    apiVersion: v1
-    metadata:
-      name: nginx-logs
-      namespace: nginx-example
-      labels:
-        app: nginx
-    spec:
-      storageClassName: cinder-classic
-      accessModes:
-        - ReadWriteOnce
-      resources:
-        requests:
-          storage: 50Mi
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: nginx-logs
+  namespace: nginx-example
+  labels:
+    app: nginx
+spec:
+  storageClassName: cinder-classic
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 50Mi
 
-    ---
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: nginx-deployment
-      namespace: nginx-example
-    spec:
-      replicas: 1
-      selector:
-        matchLabels:
-          app: nginx
-      template:
-        metadata:
-          labels:
-            app: nginx
-          annotations:
-            pre.hook.backup.velero.io/container: fsfreeze
-            pre.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--freeze", "/var/log/nginx"]'
-            post.hook.backup.velero.io/container: fsfreeze
-            post.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--unfreeze", "/var/log/nginx"]'
-        spec:
-          volumes:
-            - name: nginx-logs
-              persistentVolumeClaim:
-                claimName: nginx-logs
-          containers:
-          - image: nginx:1.7.9
-            name: nginx
-            ports:
-            - containerPort: 80
-            volumeMounts:
-              - mountPath: "/var/log/nginx"
-                name: nginx-logs
-                readOnly: false
-          - image: gcr.io/heptio-images/fsfreeze-pause:latest
-            name: fsfreeze
-            securityContext:
-              privileged: true
-            volumeMounts:
-              - mountPath: "/var/log/nginx"
-                name: nginx-logs
-                readOnly: false
-
-    ---
-    apiVersion: v1
-    kind: Service
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  namespace: nginx-example
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
     metadata:
       labels:
         app: nginx
-      name: my-nginx
-      namespace: nginx-example
+      annotations:
+        pre.hook.backup.velero.io/container: fsfreeze
+        pre.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--freeze", "/var/log/nginx"]'
+        post.hook.backup.velero.io/container: fsfreeze
+        post.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--unfreeze", "/var/log/nginx"]'
     spec:
-      ports:
-      - port: 80
-        targetPort: 80
-      selector:
-        app: nginx
-      type: LoadBalancer
-    ```
+      volumes:
+        - name: nginx-logs
+          persistentVolumeClaim:
+            claimName: nginx-logs
+      containers:
+      - image: nginx:1.7.9
+        name: nginx
+        ports:
+        - containerPort: 80
+        volumeMounts:
+          - mountPath: "/var/log/nginx"
+            name: nginx-logs
+            readOnly: false
+      - image: gcr.io/heptio-images/fsfreeze-pause:latest
+        name: fsfreeze
+        securityContext:
+          privileged: true
+        volumeMounts:
+          - mountPath: "/var/log/nginx"
+            name: nginx-logs
+            readOnly: false
 
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nginx
+  name: my-nginx
+  namespace: nginx-example
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: nginx
+  type: LoadBalancer
+```
 
 1. Create a backup of the namespace with PV snapshotting
 
-    ```bash
-    velero backup create nginx-backup-with-pv --include-namespaces nginx-example
-    ```
+```bash
+velero backup create nginx-backup-with-pv --include-namespaces nginx-example
+```
 
 1. Verify that the backup is done
 
-    ```bash
-    velero backup describe nginx-backup
-    ```
+```bash
+velero backup describe nginx-backup
+```
 
-1. Simulate a disaster 
+1. Simulate a disaster
 
-    ```bash
-    kubectl delete namespaces nginx-example
-    ```
+```bash
+kubectl delete namespaces nginx-example
+```
 
-  Because the default reclaim policy for dynamically-provisioned PVs is "Delete", these commands should trigger your cloud provider to delete the disk that backs the PV. Deletion is asynchronous, so this may take some time. Before continuing to the next step, verify that the PV is deleted
+Because the default reclaim policy for dynamically-provisioned PVs is "Delete", these commands should trigger your cloud provider to delete the disk that backs the PV. Deletion is asynchronous, so this may take some time. Before continuing to the next step, verify that the PV is deleted:
 
-    ```bash
-    kubectl get pv --all-namespaces
-    ```
-
+```bash
+kubectl get pv --all-namespaces
+```
 
 1. Restore the deleted namespace
 
-    ```bash
-    velero restore create --from-backup nginx-backup-with-pv
-    ```
+```bash
+velero restore create --from-backup nginx-backup-with-pv
+```
 
 1. Verify that  the restore is correctly done
 
-    ```bash
-    kubectl get all -n nginx-example
-    ```
+```bash
+kubectl get all -n nginx-example
+```
 
-
-<pre class="console"><code>$ kubectl apply -f exemples/velero/velero-example-without-pv.yml     
+<pre class="console"><code>$ kubectl apply -f exemples/velero/velero-example-without-pv.yml
 namespace/nginx-example created
 persistentvolumeclaim/nginx-logs created
 deployment.apps/nginx-deployment created
@@ -472,7 +452,7 @@ service/my-nginx created
 
 $ velero backup create nginx-backup-with-pv --include-namespaces nginx-example
 Backup request "nginx-backup-with-pv" submitted successfully.
-Run `velero backup describe nginx-backup-with-pv` or `velero backup logs nginx-backup-with-pv` for more details. 
+Run `velero backup describe nginx-backup-with-pv` or `velero backup logs nginx-backup-with-pv` for more details.
 
 $ kubectl delete namespaces nginx-example
 namespace "nginx-example" deleted
@@ -488,10 +468,8 @@ $ kubectl get all -n nginx-example
 NAME                                    READY   STATUS              RESTARTS   AGE
 pod/nginx-deployment-64dd76ffbb-t2bfk   0/2     ContainerCreating   0          22s
 
-
 NAME               TYPE           CLUSTER-IP   EXTERNAL-IP   PORT(S)        AGE
 service/my-nginx   LoadBalancer   10.3.76.8    &lt;pending>     80:30847/TCP   22s
-
 
 NAME                               READY   UP-TO-DATE   AVAILABLE   AGE
 deployment.apps/nginx-deployment   0/1     1            0           22s
@@ -505,14 +483,12 @@ NAME         STATUS   VOLUME                                     CAPACITY   ACCE
 nginx-logs   Bound    pvc-71528d91-fd03-46c4-99d6-557d3e8fe9da   1Gi        RWO            cinder-classic   35s
 
 $ kubectl get pv -n nginx-example
-NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM
+NAME                                      CAPACITY  ACCESS MODES  RECLAIM POLICY STATUS CLAIM
   STORAGECLASS     REASON   AGE
-pvc-71528d91-fd03-46c4-99d6-557d3e8fe9da   1Gi        RWO            Delete           Bound    nginx-example/nginx-logs   cinder-classic            39s
+pvc-71528d91-fd03-46c4-99d6-557d3e8fe9da  1Gi       RWO           Delete         Bound  nginx-example/nginx-logs cinder-classic  39s
 </code></pre>
 
+## Where do we go from here
 
-
-## Where do we go from here?
-
-So now you have a working Velero on your cluster. Please refer to [official Velero documentation](https://velero.io/docs/){.external} to learn how to use it, including scheduling backups, using pre- and post-backup hooks and other matters.
-
+So now you have a working Velero on your cluster.  
+Please refer to [official Velero documentation](https://velero.io/docs/){.external} to learn how to use it, including scheduling backups, using `pre-` and `post-backup` hooks and other matters.
