@@ -46,15 +46,29 @@ This tutorial assumes that you already have a working OVHcloud Managed Kubernete
 
 ## Deploy the Dashboard in your cluster
 
-To deploy the Dashboard, execute following command:
+According to which version of Kubernetes you are running, you have to choose the right Dashboard version to deploy in order to avoid incompbatibilities.
+
+### For Kubernetes 1.14, choose version [v2.0.0-beta1](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-beta1)
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta1/aio/deploy/recommended.yaml
+```
+
+### For Kubernetes 1.15, choose version [v2.0.0-beta4](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-beta4)
+
+```bash
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta4/aio/deploy/recommended.yaml
+```
+
+### For Kubernetes 1.16, choose version [v2.0.0-beta6](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-beta6)
+
+```bash
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta6/aio/deploy/recommended.yaml
 ```
 
 It should display something like this:
 
-<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml
+<pre class="console"><code>
 secret/kubernetes-dashboard-certs created
 serviceaccount/kubernetes-dashboard created
 role.rbac.authorization.k8s.io/kubernetes-dashboard-minimal created
