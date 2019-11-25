@@ -1,80 +1,71 @@
 ---
-title: Créer / restaurer un serveur virtuel a partir d’une sauvegarde
+title: 'Créer / restaurer un serveur virtuel a partir d’une sauvegarde'
 slug: creer-restaurer-un-serveur-virtuel-a-partir-dune-sauvegarde
+excerpt: 'Découvrez comment créer ou restaurer la sauvegarde d’une instance'
 legacy_guide_number: 1882
-section: Base de connaissances
+section: 'Base de connaissances'
 ---
 
+**Dernière mise à jour le 22/11/2019**
 
-## Preambule
-Dans certaines situations, vous serez probablement amené à restaurer votre instance à un moment ultérieur grâce à une sauvegarde que vous avez effectué, car une mauvaise manipulation a été effectué sur la configuration de votre instance par exemple. Ou encore, vous souhaitez simplement créer une nouvelle instance grâce à cette même sauvegarde, car vous avez besoin de dupliquer votre instance pour effectuer de la répartition de charge, ou encore de la haute disponibilité.
+## Objectif
+Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauvegarde, par exemple en cas de mauvaise manipulation effectuée sur la configuration de votre instance. 
 
-Cela est tout à fait possible, et ce guide vous explique comment utiliser vos sauvegardes pour recréer, dupliquer, ou encore restaurer vos instances.
+Cette même sauvegarde pourrait également vous servir à créer une nouvelle instance, pour dupliquer la première et effectuer de la répartition de charge, ou encore bénéficier de la haute disponibilité.
 
+Ce guide vous explique comment utiliser vos sauvegardes pour recréer, dupliquer, ou encore restaurer vos instances.
 
-### Prérequis
-- Disposer d'une sauvegarde d"une instance Public Cloud
-- Disposer d'un serveur virtuel déjà créé
+## Prérequis
+- Disposer d'une sauvegarde d'une instance Public Cloud. À cet effet, consultez [le guide dédié à la création d'une sauvegarde](https://docs.ovh.com/fr/public-cloud/sauvegarder-une-instance/).
+- Être connecté à l'espace client OVHcloud.
 
+## En pratique
 
-## Créer une instance a partir d'une sauvegarde
-- Se connecter à l'espace client Public Cloud OVH
-- Cliquer sur Sauvegardes
+### Créer une instance a partir d'une sauvegarde
 
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} et sélectionnez `Public Cloud`{.action}. Sélectionnez ensuite la rubrique `Instance backup`{.action}.
 
-![public-cloud](images/2808.png){.thumbnail}
+Cliquez alors sur les `...`{.action} à droite de la sauvegarde choisie et enfin sur `Créer une instance`{.action}.
 
-- Cliquer sur l'icône "créer un serveur à partir de cette sauvgegarde" à droite sur la ligne du backup à restaurer
-- On obtient la fenêtre suivante :
+![public-cloud-instance-backup](images/restorebackup1.png){.thumbnail}
 
+La page de céation d'instance s'affichera.
 
-![public-cloud](images/2809.png){.thumbnail}
+![public-cloud-instance-backup](images/restorebackup2.png){.thumbnail}
 
-- Personnaliser le nom du VPS si besoin
-- Choisir son modèle
+Certains éléments sont prédéfinis :
 
-Actuellement, depuis l'espace client, la restauration est possible uniquement dans le datacentre d'où provient la sauvegarde. Pour transférer cette sauvegarde dans un autre datacentre, il faut actuellement utiliser l'api OpenStack
+* La localisation : votre instance sera créée dans le même datacentre que votre sauvegarde.
+* L'image : elle correspondra à votre sauvegarde.
+* Les modèles : seuls ceux pouvant accueillir votre image seront disponibles, en fonction de votre quota.
 
-- Choisir la clé SSH
-- Choisir le mode de facturation
-- Cliquer sur Lancer maintenant
-- Le serveur virtuel est disponible quelques secondes plus tard.
+Pour plus d'informations sur la création d'une instance, consultez [ce guide](https://docs.ovh.com/fr/public-cloud/creer-instance-espace-client/).
 
+Pour créer une instance dans un autre datacentre que celui de la sauvegarde, il faudra transférer celle-ci vers la zone correspondante. Référez-vous alors au [guide sur la sauvegarde d'une instance d'un datacentre à l'autre](https://docs.ovh.com/fr/public-cloud/transferer-la-sauvegarde-dune-instance-dun-datacentre-a-lautre/).
 
-## Restaurer un serveur virtuel a partir d'une sauvegarde
-- Se connecter à l'espace client Public Cloud OVH
-- Développer le menu suivant, cliquer sur Éditer :
+### Restaurer une instance à partir d’une sauvegarde
 
+Pour restaurer une instance à partir d'une sauvegarde, sélectionnez cette fois le menu `Instance`{.action} puis cliquez sur le bouton `...`{.action} à droite de l'instance que vous souhaitez restaurer et enfin sur `Editer`{.action}.
 
-![public-cloud](images/2810.png){.thumbnail}
+![public-cloud-instance-backup](images/restorebackup3.png){.thumbnail}
 
-- on obtient la fenêtre suivante :
+La page d'édition d'instance s'affichera alors. Vous pourrez y modifier :
 
+* Le nom de l'instance.
+* L'image de l'instance.
+* Le modèle de l'instance.
+* La facturation de l'instance (uniquement depuis le modèle « Horaire » vers le modèle « Mensuel »).
 
-![public-cloud](images/2812.png){.thumbnail}
+Choisissez alors, dans la rubrique `Image`{.action}, celle de la sauvegarde à restaurer.
 
-- Personnaliser le nom du serveur si souhaité
-- Choisir le modèle (caractéristiques égales ou supérieures à la machine virtuelle de départ)
-- Cliquer sur distributions
-- Les sauvegardes sont proposées :
-
-
-![public-cloud](images/2815.png){.thumbnail}
-
-- Cliquer sur Mes sauvegardes :
-
-
-![public-cloud](images/2816.png){.thumbnail}
-
-- Sélectionner la sauvegarde à restaurer
-- Choisir le mode de paiement
-- Cliquer sur Appliquer les modifications
-- Le serveur virtuel est disponible quelques secondes plus tard.
-
+![public-cloud-instance-backup](images/restorebackup4.png){.thumbnail}
 
 
 > [!alert]
 >
-> Votre instance ne conservera pas les données qui ont été créées après la
-> création de cette sauvegarde.
-> 
+>Comme indiqué dans l'encadré jaune qui vous est alors précisé, aucune donnée ajoutée après la création de cette sauvegarde ne pourra être récupérée.
+>
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
