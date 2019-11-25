@@ -103,10 +103,10 @@ Pour chaque type de composant, une liste de métriques est disponible et nécess
 | ----------- | ----------- | ----------- |
 | vscope.host.cpu.usage.perc | Utilisation processeur du host en pourcent | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51 |
 | vscope.host.mem.usage.perc | Utilisation mémoire du host en pourcent | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51 |
-| vscope.host.net.tx | Utilisation réseau du host en émission | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51</br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
-| vscope.host.net.rx | Utilisation réseau du host en réception | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51</br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
-| vscope.host.net.packetstx | Nombre de packets réseau transmis du host | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51</br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
-| vscope.host.net.packetsrx | Nombre de packets réseau reçus du host | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51</br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.tx | Utilisation réseau du host en émission | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51<br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.rx | Utilisation réseau du host en réception | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51<br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.packetstx | Nombre de packets réseau transmis du host | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51<br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.packetsrx | Nombre de packets réseau reçus du host | - datacenter : pcc-37-187-228-180\_datacenter869, <br>- host : 172.17.86.51<br>- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
 
 #### Machine Virtuelles
 
