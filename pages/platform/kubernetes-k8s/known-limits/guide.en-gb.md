@@ -58,13 +58,17 @@ Due to known limitations currently present in the `Kubelet` service, be careful 
 
 In any case, there are some ports that you shouldn't block on your instances if you want to keep your OVHcloud Managed Kubernetes service running:
 
-### Ports to open from public network
+### Ports to open from public network (INPUT)
 
 - TCP Port 22 (*ssh*): needed for nodes management by OVH
 - TCP Port 10250 (*kubelet*): needed for [communication from apiserver to worker nodes](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet)
 - TCP Ports from 30000 to 32767 (*NodePort* services port range): needed for [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport) and [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) services
 
-### Ports to open from others worker nodes
+### Ports to open from instances to public network (OUTPUT)
+
+- TCP Port 8090 (*internal service*): needed for nodes management by OVH
+
+### Ports to open from others worker nodes (INPUT/OUPUT)
 
 - UDP Port 8472 (*flannel*): needed for communication between pods
 
