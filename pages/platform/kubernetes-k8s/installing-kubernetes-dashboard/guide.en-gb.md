@@ -46,7 +46,7 @@ This tutorial assumes that you already have a working OVHcloud Managed Kubernete
 
 ## Deploy the Dashboard in your cluster
 
-According to which version of Kubernetes you are running, you have to choose the right Dashboard version to deploy in order to avoid incompbatibilities.
+According to which version of Kubernetes you are running, you have to choose the right Dashboard version to deploy in order to avoid incompatibilities.
 
 ### For Kubernetes 1.14, choose version [v2.0.0-beta1](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-beta1)
 
