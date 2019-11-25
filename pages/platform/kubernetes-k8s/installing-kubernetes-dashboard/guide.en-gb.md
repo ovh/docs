@@ -171,7 +171,7 @@ Starting to serve on 127.0.0.1:8001
 Next, access the Dashboard at:
 
 ```
-http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/`
+http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
 ```
 
 In the log-in page, select authentication by token, and use the bearer token you recovered in the previous step.
