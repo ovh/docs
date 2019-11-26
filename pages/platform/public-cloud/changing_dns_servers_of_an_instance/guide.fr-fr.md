@@ -40,17 +40,16 @@ Ce guide vous explique la procédure à suivre afin de modifier la configuration
 - Éditez le fichier /etc/dhcp/dhclient.conf avec les serveurs DNS désirés.
 Deux choix s'offrent à vous concernant cette configuration :
 
-    - Vous souhaitez ajouter un serveur DNS en plus de celui que nous fournissons par défaut :
+Vous souhaitez ajouter un serveur DNS en plus de celui que nous fournissons par défaut :
   
-    ```
-    supersede domain-name-servers 127.0.0.1;
+```
+supersede domain-name-servers 127.0.0.1;
 ```
 
-
-    - Vous souhaitez ajouter un serveur DNS afin de remplacer celui que nous fournissons par défaut :
+Vous souhaitez ajouter un serveur DNS afin de remplacer celui que nous fournissons par défaut :
     
-    ```
-    prepend domain-name-servers 127.0.0.1;
+```
+prepend domain-name-servers 127.0.0.1;
 ```
  
 - Vérifiez que la configuration est bien appliquée (cela peut prendre plusieurs minutes) :
