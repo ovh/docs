@@ -45,7 +45,7 @@ Deux choix s'offrent à vous concernant cette configuration :
     ```
     supersede domain-name-servers 127.0.0.1;
 ```
-    
+
     - Vous souhaitez ajouter un serveur DNS afin de remplacer celui que nous fournissons par défaut :
     
     ```
