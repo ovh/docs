@@ -1,101 +1,107 @@
 ---
-title: Gérer mes carnets d’adresses SMS
-excerpt: Création d’un carnet d’adresse
+title: 'Gérer mes carnets d’adresses SMS'
 slug: gerer_mes_carnets_dadresses_sms
+excerpt: 'Découvrez comment créer un carnet d’adresses SMS dans votre compte OVHcloud'
 legacy_guide_number: g2118
-section: Gérer mon offre
+section: 'Gérer mon offre'
 ---
 
+**Dernière mise à jour le 21/11/2019**
 
-## 
-Connectez-vous à votre [espace client](https://www.ovhtelecom.fr/espaceclient/login/), rubrique Telecom. Sélectionnez ensuite SMS dans les menus de gauche.
+## Objectif
 
-Cliquez ensuite sur le compte SMS désiré.
-
-![](images/img_3918.jpg){.thumbnail}
-
-
-## 
-Rendez vous sur la partie Carnet d'adresses dans la navigation.
-
-![](images/img_3922.jpg){.thumbnail}
-Cliquez sur Carnet d'adresses puis sur Nouveau.
-Nommez alors votre nouveau carnet.
-
-![](images/img_3923.jpg){.thumbnail}
-Cliquez sur Contact puis sur Nouveau.
-
-![](images/img_3924.jpg){.thumbnail}
-Remplissez les champs requis.
-
-![](images/img_3925.jpg){.thumbnail}
-
+Tous les comptes SMS OVHcloud peuvent utiliser un ou plusieurs carnets d'adresses. Ce guide décrit comment les créer dans votre espace client.
 
 ## Prérequis
-Enregistrez votre fichier tableur au format .csv (séparateur: point-virgule).
 
-Les caractères spéciaux comme les accents ne sont pas acceptés dans l'import du fichier .csv. Les contacts comprenant ce type de caractères ne seront pas importés.
+- Disposer d'un compte SMS OVHcloud.
+- Avoir accès à votre espace client OVHcloud.
+- Disposer d'un outil de type tableur ou éditeur de texte.
 
-Respectez la forme internationale +33xxxxxxxxx pour vos numéros.
+## En pratique
 
-Nous conseillons des carnets d'adresses ne dépassant pas 2000 contacts. 
+### Étape 1 : créer un carnet d'adresses dans votre espace client
 
-Tous vos contacts devront être sur la même feuille de votre tableur.
+Connectez-vous à votre [espace client](https://www.ovhtelecom.fr/espaceclient/login/), rubrique Telecom. Sélectionnez ensuite SMS dans les menus de gauche.
 
+Cliquez ensuite sur le compte SMS souhaité.
 
-## En pratique 
+![](images/smsphonebook1.png){.thumbnail}
 
-### Format du tableur
-Si vous souhaitez intégrer un fichier .csv existant, ce dernier devra avoir la forme ci-contre dans un tableur.
+Choisissez l'onglet `Carnet d'adresses`{.action}.
 
-![](images/img_3920.jpg){.thumbnail}
-Si vous ouvrez ce fichier .csv avec le bloc-notes vous aurez la forme ci-contre.
+Cliquez sur `Ajouter un carnet d'adresses`{.action} et nommez alors votre nouveau carnet.
 
-![](images/img_3931.jpg){.thumbnail}
-Configurez en format texte les colonnes dans lesquelles vous renseignerez des chiffres, afin que le tableur n’y effectue aucun calcul automatique.
+![](images/smsphonebook2.png){.thumbnail}
 
-![](images/img_3921.jpg){.thumbnail}
-Vous avez également la possibilité d'exporter un carnet d'adresses déjà créé depuis l'espace client afin de disposer d'un patron.
+### Étape 2 : ajouter des contacts dans votre carnet
 
-![](images/img_3926.jpg){.thumbnail}
-Lors de l'ouverture dans un tableur du fichier .csv exporté, il vous faudra le convertir afin de faire apparaître correctement les différentes colonnes.
+Le carnet d'adresses est maintenant créé mais ne contient aucun contact. Plusieurs méthodes existent pour ajouter vos contacts.
 
-![](images/img_3927.jpg){.thumbnail}
-La méthode de séparation d'un .csv est communément la virgule ou le point-virgule.
+### Ajout unitaire de contacts depuis l'espace client
 
-![](images/img_3932.jpg){.thumbnail}
-Une fois que vous aurez complété votre tableur, enregistrez-le au format .csv.
+Sélectionnez le bouton `Actions`{.action} et cliquez sur `Ajouter`{.action}.
 
+![](images/smsphonebook3.png){.thumbnail}
 
-### Importation dans l'espace client
-Afin d'effectuer un import de votre fichier .csv, cliquez sur Carnet d'adresses puis sur import/export, Format CSV, Importer.
+Vous accéderez à une fenêtre vous permettant de renseigner les informations du contact.
 
-![](images/img_3929.jpg){.thumbnail}
-Cliquez sur l'icône d'exploration de fichier, puis allez chercher votre fichier .csv sur votre ordinateur.
+![](images/smsphonebook4.png){.thumbnail}
 
-![](images/img_3930.jpg){.thumbnail}
-Importez ensuite votre fichier.
+Remplissez les champs souhaités et validez pour enregistrer vos modifications. Le contact sera alors intégré à votre carnet. Il vous faudra refaire la même manipulation pour ajouter d'autres contacts.
 
+### Ajout de contacts multiples via un import de fichier de contacts depuis l'espace client
 
-Vous avez la possibilité de créer des listes de destinataires sans passer par le carnet d'adresses.
+#### Préparation du fichier dans votre tableur
 
+Si vous souhaitez utiliser ou créer un document au format tableur, il vous faudra le présenter comme ci-dessous et l'exporter au format «.csv ».
 
-### Depuis un fichier .csv
-Rendez vous dans la partie Gérer les destinataires.
+![](images/smsphonebook-spreadsheet1.png){.thumbnail}
 
-Cliquez ensuite sur Ajouter.
+La grande majorité des tableurs ne prendra pas en compte le format international attendu pour les numéros de téléphone / fax (+33xxxxxxxxx). Il vous faudra donc modifier le format des cellules comportant ces numéros (workPhone, workMobile, ...). Pour ce faire, sélectionnez les colonnes concernées et appliquez un format “Texte” sur celles-ci.
 
-Vous aurez préalablement hébergé votre fichier sur un [service adapté](https://plik.root.gg).
+![](images/smsphonebook-spreadsheet2.png){.thumbnail}
 
-![](images/img_4196.jpg){.thumbnail}
-Votre fichier csv devra contenir une colonne number pour être compatible.
+Une fois le document prêt, sauvegardez le au format tableur pour le modifier ultérieurement.
 
+En parallèle, enregistrez-le ou exportez-le au format «.csv » afin d'en préparer l'import.
 
-### Depuis un fichier texte
-Vous pouvez aussi importer au même endroit dans l'espace client un fichier .txt
+> [!primary] Recommandations
+>
+>Enregistrez votre fichier tableur au format «.csv » (séparateur : point-virgule).
+>
+>Les caractères spéciaux comme les accents ne sont pas acceptés dans l’import du fichier «.csv », les contacts comprenant ce type de caractères ne seront pas importés.
+>
+>Respectez la forme internationale +33xxxxxxxxx pour vos numéros.
+>
+>Nous conseillons des carnets d’adresses ne dépassant pas 2000 contacts.
+>
+>Tous vos contacts devront être sur la même feuille de votre tableur.
+>
+>
 
-Nommez simplement ce dernier numbers.txt.
+#### Import du fichier dans votre espace client
 
-Renseignez à la forme internationale (+33612345678) votre liste de numéros avec un numéro par ligne.
+De retour sur votre espace client OVHcloud, sélectionnez le bouton `Actions`{.action} et cliquez sur `Importer`{.action}.
 
-![](images/img_4197.jpg){.thumbnail}
+![](images/smsphonebook5.png){.thumbnail}
+
+Une pop-up s'affichera, cliquez alors sur `Fichier de contact`{.action} pour sélectionner votre fichier «.csv » puis validez.
+
+![](images/smsphonebook6.png){.thumbnail}
+
+Patientez quelques secondes pendant le chargement du fichier dans votre espace client.
+
+### Étape 3 : éditer ou supprimer un carnet d'adresses
+
+Si vous souhaitez modifier le nom d'un carnet d'adresses, sélectionnez votre carnet dans le menu déroulant (1) (si vous avez créé plusieurs carnets) puis cliquez sur le crayon (2) en face du nom du carnet. 
+
+Pour supprimer un carnet, cliquez sur `Supprimer le carnet d'adresses`{.action} après l'avoir préalablement sélectionné dans le menu déroulant (1).
+
+Pour éditer ou supprimer un contact, cliquez, dans la colonne « Actions », sur `...`{.action} (4) en face du contact choisi. Vous aurez ainsi accès au menu vous proposant ces choix (5).
+
+![](images/smsphonebook7.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
