@@ -1,7 +1,7 @@
 ---
 title: 'Envoyer des SMS depuis mon espace client'
-excerpt: 'Découvrez comment envoyer des SMS simplement depuis votre espace client OVHcloud'
 slug: envoyer_des_sms_depuis_mon_espace_client
+excerpt: 'Découvrez comment envoyer des SMS simplement depuis votre espace client OVHcloud'
 legacy_guide_number: g2142
 section: 'Envoyer des SMS'
 ---
@@ -99,7 +99,7 @@ Une fois sur la page d'ajout, vous disposez de plusieurs options pour configurer
 
 > [!primary]
 >
->En cas de requête d'un expéditeur au nom d'une société tierse, un document justificatif vous sera demandé. Nous vous invitons dans ce cas à nous transmettre ce document via l'ouverture d'une demande d'assistance dans votre espace client.  La validation des expéditeurs créés manuellement est gratuite et est effectuée sous un à deux jours ouvrés du lundi au vendredi de 08h00 à 20h00.
+>En cas de requête d'un expéditeur au nom d'une société tierce, un document justificatif vous sera demandé. Nous vous invitons dans ce cas à nous transmettre ce document via l'ouverture d'une demande d'assistance dans votre espace client.  La validation des expéditeurs créés manuellement est gratuite et est effectuée sous un à deux jours ouvrés du lundi au vendredi de 08h00 à 20h00.
 >
 
 - **Ajouter des expéditeurs à partir de données personnelles** : Vous pouvez demander un expéditeur se basant sur les coordonnées de votre compte OVH. Une liste déroulante des expéditeurs disponibles s'affichera alors.
