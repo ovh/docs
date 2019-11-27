@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to create an SSH key, so that you can log
 section: Security
 ---
 
-**Last updated 17th October 2018**
+**Last updated 14th November 2019**
 
 ## Objective
 
@@ -108,21 +108,17 @@ As you move your mouse, the progress bar will start to fill up. When it's comple
 
 First, highlight and copy the text of your public key, then log into the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-Now click on the `Cloud`{.action} menu.
+Now click on the `Public Cloud`{.action} menu.
 
 ![cloud menu](images/cloud-menu.png){.thumbnail}
 
-Now select your Public Cloud project from the left-hand menu and click on `Infrastructure`{.action}.
+Now select your Public Cloud project from the left-hand menu{.action}.
 
 ![select project](images/select-project.png){.thumbnail}
 
-Now select the `SSH keys`{.action} tab.
+Now select the `SSH keys`{.action} tab. Next, paste the 4096 byte key into the space provided, give the key a name, and click the `Add this key`{.action} button.
 
-![save ssh key](images/save-ssh-key-01.png){.thumbnail}
-
-Next, paste the 4096 byte key into the space provided, give the key a name, and click the `Add this key`{.action} button.
-
-![save ssh key](images/save-ssh-key-02.png){.thumbnail}
+![save ssh key](images/save-key.png){.thumbnail}
 
 Your key will now be saved in the OVH Control Panel for authentication.
 
