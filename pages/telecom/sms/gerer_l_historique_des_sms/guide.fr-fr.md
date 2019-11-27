@@ -24,7 +24,7 @@ L'historique comprend la date, l'heure, l'expéditeur, le destinataire ainsi que
 
 > [!primary]
 >
-> L'espace client ne pourra afficher que les 6 derniers mois de votre historique. Pour consulter des SMS plus anciens, consultez [l'Étape 2 : télécharger l'historique de vos SMS en CSV](https://docs.ovh.com/fr/sms/gerer-l-historique-des-sms/#etape-2-telecharger-l-historique-de-vos-sms-en-csv).
+> L'espace client ne pourra afficher que les 6 derniers mois de votre historique. Pour consulter des SMS plus anciens, consultez [l'Étape 2 : télécharger l'historique de vos SMS en CSV](https://docs.ovh.com/fr/sms/gerer-l-historique-des-sms/#etape-2-telecharger-lhistorique-de-vos-sms-en-csv).
 >
 
 
@@ -58,7 +58,7 @@ Cliquez sur le bouton `Actions`{.action} à gauche au dessus de votre historique
  
 ![](images/smshistory6.png){.thumbnail}
  
-Vous pourrez alors consulter l'historique depuis un outil de type tableur. Les informations pourront alors être affichées comme dans l'exemple ci-dessous.
+Vous pourrez alors consulter l'historique depuis un outil de type tableur. Les informations pourront être affichées comme dans l'exemple ci-dessous.
 
 ![](images/smshistory7.png){.thumbnail}
 
