@@ -3,7 +3,7 @@ title: 'Create an instance in your OVH customer account'
 slug: create_an_instance_in_your_ovh_customer_account
 excerpt: 'This guide will show you how to create an instance in your Public Cloud account.'
 legacy_guide_number: g1775
-section: Quick start
+section: 'Quick start'
 ---
 
 **Last updated 14th November 2019**
@@ -43,20 +43,24 @@ The table below gives a brief explanation of the differences between the types o
 | RAM   | ✓     | Databases, analysis, and in-memory calculations    |
 | Shares Resources    | -       | Testing and development environments      |
 
+> [!primary]
 >
-**Note** : You will initially be limited to 20 instances, 20 vCores and 40 GB of RAM across any given project. An increase in the resource limit may be requested by [submitting a ticket](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} to our Customer Support team.
+You will initially be limited to 20 instances, 20 vCores and 40 GB of RAM across any given project. An increase in the resource limit may be requested by [submitting a ticket](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} to our Customer Support team.
 >
+
 
 Follow the menu to select the region in which you would like your public cloud instance to be located. The third option is where you select your OS.
 
+> [!primary]
 >
-**Note**: If a Windows OS is selected, then a license will automatically be provisioned and you will be billed monthly for it.
+If a Windows OS is selected, then a license will automatically be provisioned and you will be billed monthly for it.
 >
 
 ![install](images/os_install.png){.thumbnail}
 
+> [!primary]
 >
-**Note**: Public cloud instances running a Unix-based OS require an SSH key to be added to the server. For more information on generating an SSH key, please check out our [Create SSH Keys](https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys/){.external} article.
+Public cloud instances running a Unix-based OS require an SSH key to be added to the server. For more information on generating an SSH key, please check out our [Create SSH Keys](https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys/){.external} article.
 >
 
 The fourth part of the menu will allow you to choose the number of instances to create, name your instance, and add a private network or post-installation script should you choose to do so.
@@ -65,9 +69,11 @@ The fourth part of the menu will allow you to choose the number of instances to 
 
 Finally, choose whether you would like to be billed monthly or hourly.
 
+> [!warning]
 >
-`Warning`{.action}: If you choose to be billed hourly, you will continue to be billed as long as the instance exists. It does not matter if the instance is currently in use or not.
+>If you choose to be billed hourly, you will continue to be billed as long as the instance exists. It does not matter if the instance is currently in use or not.
 >
+
 
 Once you have confirmed that all of the information you have entered is correct, click the `Create an instance`{.action} button to finish creating your new instance. Your instance may take a few minutes to provision.
 

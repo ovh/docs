@@ -2,7 +2,7 @@
 title: 'Create and configure an additional disk on an instance'
 slug: create_and_configure_an_additional_disk_on_an_instance
 excerpt: 'This guide explains how to create an additional disk and then configure it on one of your instances.'
-section: Knowledge Base
+section: 'Knowledge Base'
 ---
 
 **Last updated 14th November 2019**
@@ -184,11 +184,11 @@ First, right-click on the `Start Menu`{.action} button and then click `Disk Mana
 
 ![](images/start-menu.png){.thumbnail}
 
-When the disk management tool opens you'll see your new disk as an unkown volume with unallocated space as shown below.
+When the disk management tool opens you'll see your new disk as an unknown volume with unallocated space as shown below.
 
 ![disk management](images/disk-management-01.png){.thumbnail}
 
-#### Initialsing the disk using Disk Management
+#### Initialising the disk using Disk Management
 
 If the disk is offline this is likely due to a policy in place on the instance. To fix this, right-click on the disk and select `Online`{.action}.
 
