@@ -76,7 +76,7 @@ Use the following APIv6 call to retrieve the read token for the user you want:
 
 > [!api]
 > 
-> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/getVscopeMetricsToken
+> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 
 
 Your token will be in the result’s **token** field.
