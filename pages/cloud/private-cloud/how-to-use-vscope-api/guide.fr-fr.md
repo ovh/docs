@@ -76,7 +76,7 @@ Pour l'utilisateur souhaité, utilisez l'appel APIv6 suivant pour récupérer le
 
 > [!api]
 > 
-> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/getVscopeMetricsToken
+> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 
 
 Votre token se trouve dans le champ **token** du résultat.
