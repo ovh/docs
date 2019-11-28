@@ -53,6 +53,7 @@ The process of attaching the disk to your instance will now start and it may tak
 ![attach disk 03](images/attach-disk-06.png){.thumbnail}
 
 > [!warning]
+You must ensure that you don’t navigate away from the Infrastructure tab while the disk is being attached. This could disrupt the process.
 >
 
 ### Using Linux
