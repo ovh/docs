@@ -9,7 +9,7 @@ section: 'Gérer ses commandes, factures et services'
 
 ## Objectif
 
-**Ce guide vous explique la notion de Numéro de command ou Purchase Order (PO) appliqué à la facturation OVHCloud.**
+**Ce guide vous explique la notion de Numéro de commande ou Purchase Order (PO) appliqué à la facturation OVHCloud.**
 
 ## Prérequis
 
@@ -17,22 +17,22 @@ section: 'Gérer ses commandes, factures et services'
 
 ### Numéro de commande et Purchase Order (PO) Number
 
-Dans le cadre d'achat de bien ou de service les entreprises sont amenées à valider des bons de commande. Cette validation est la plupart du temps effectué en retournant un document avec l'en-tête de l'entreprise et rappelant les biens ou services achetés tout en  précisant un numéro de commande.
+Dans le cadre d'achat de biens ou de services, les entreprises sont amenées à valider des bons de commande. La plupart du temps, cette validation est effectuée effectué en retournant un document (format papier ou numérique) à en-tête de l'entreprise qui rappelle les biens ou services achetés tout en  précisant un numéro de commande.
 Dans le monde anglo-saxon ce document est appelé **Purchase Order** et est abrégé en **PO**.
 
-Ce document a pour objectif, pour l'entreprise qui émet celui-ci, de contrôler les achats de biens et de services auprès de ses fournisseurs, notamment en imposant que l'ensemble des factures émises indique un numéro de commande (ou PO Number).
+Pour l'entreprise qui émet le PO, ce document a pour objectif de contrôler les achats de biens et de services auprès de ses fournisseurs, notamment en imposant que l'ensemble des factures émises indique un numéro de commande (ou PO Number).
 
 Il existe essentiellement deux (2) types de commandes, décrites ci-dessous.
 
 #### Commande fermée / Purchase Order (PO)
 
-Il s'agit d'un document confirmant la commande de bien ou service pour une quantité fixe et pour une durée fixe.
+Il s'agit d'un document confirmant la commande de biens ou services pour une quantité fixe et pour une durée fixe.
 
-Pour OVHCloud, le document doit donc contenir à minima les informations suivantes dans :
+Pour OVHCloud, le document doit donc contenir a minima les informations suivantes dans :
 
 * Raison sociale du contractant
 * Numéro de commande
-* Type de services commandés
+* Type(s) de services commandés
 * Quantités
 * Prix unitaires
 * Date de début de validité
@@ -40,13 +40,13 @@ Pour OVHCloud, le document doit donc contenir à minima les informations suivant
 
 #### Commande ouverte / Blancket Purchase Order (BPO)
 
-Il s'agit d'un document confirmant la commande de bien ou service pour une quantité variable avec un montant maximum et pour une durée fixe.
+Il s'agit d'un document confirmant la commande de biens ou services pour une quantité variable avec un montant maximum et pour une durée fixe.
 
 Pour OVHCloud, le document doit donc contenir à minima les informations suivantes dans :
 
 * Raison sociale du contractant
 * Numéro de commande
-* Type de services commandés
+* Type(s) de services commandés
 * Prix unitaires
 * Montant total de la commande
 * Date de début de validité
@@ -54,7 +54,7 @@ Pour OVHCloud, le document doit donc contenir à minima les informations suivant
 
 ### Comment renseigner un Numéro de commande et Purchase Order (PO) Number
 
-Afin que OVHcloud puisse éditer les factures avec le numéro de Purchase Order souhaité, contactez votre commercial afin de le donner ce numéro.
+Afin que OVHcloud puisse éditer les factures avec le numéro de Purchase Order souhaité, contactez votre commercial afin de lui donner ce numéro.
 
 En cas de modification de ce numéro de Purchase Order, contactez votre commercial au plus vite.
 
