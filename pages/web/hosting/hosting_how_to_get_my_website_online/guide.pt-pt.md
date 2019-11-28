@@ -1,8 +1,8 @@
 ---
 title: 'Publicar um site num alojamento web'
+slug: partilhado_colocar_o_meu_website_online
 excerpt: 'Saiba como publicar um site no seu alojamento web da OVH'
 section: Introdução
-slug: partilhado_colocar_o_meu_website_online
 legacy_guide_number: g1374
 ---
 
@@ -149,12 +149,12 @@ Relembramos que, se encontrar dificuldades durante a publicação do site, será
 
 ## Quer saber mais?
 
-[Como migrar um site e e-mails para a OVH?](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external}.
+[Como migrar um site e e-mails para a OVH?](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external}
 
-[Como instalar um CMS para criar um site](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}.
+[Como instalar um CMS para criar um site](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}
 
-[Aceder ao espaço de armazenamento do alojamento web](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/){.external}.
+[Aceder ao espaço de armazenamento do alojamento web](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/){.external}
 
-[Alterar a palavra-passe de um utilizador FTP](http://docs.uxci.ovh/pt-pt/web/hosting/alterar-palavra-passe-utilizador-ftp/){.external}.
+[Alterar a palavra-passe de um utilizador FTP](http://docs.uxci.ovh/pt-pt/web/hosting/alterar-palavra-passe-utilizador-ftp/){.external}
 
 Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
