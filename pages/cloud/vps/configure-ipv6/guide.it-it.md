@@ -118,7 +118,7 @@ In alcuni casi (in particolare con Debian 9), è possibile che il metodo descrit
 A questo punto prosegui nella lettura di questa guida in base all’operazione che vuoi effettuare:
 
 - [Configurazione del file “interfaces”](https://docs.ovh.com/it/vps/configurare-ipv6/#configurazione-del-file-interfaces)
-- [Configurazione tramite la funzionalità Netplan](https://docs.ovh.com/it/vps/configurare-ipv6/#configurazione-tramite-la-funzione-netplan)
+- [Configurazione tramite la funzionalità Netplan](https://docs.ovh.com/it/vps/configurare-ipv6/#configurazione-tramite-la-funzionalita-netplan)
 
 #####  Configurazione del file “interfaces”
 
