@@ -1,91 +1,89 @@
 ---
 title: 'Débuter avec une instance Windows'
+excerpt: 'Découvrez comment finaliser l’installation d’une instance Windows et initier la première connexion'
 slug: debuter-avec-une-instance-windows
 legacy_guide_number: 1995
-section: Base de connaissances
+section: 'Base de connaissances'
 ---
 
-## Préambule
-Il est possible d'utiliser le Public Cloud si vous souhaitez héberger des site Web sous IIS ou encore vos applications compatibles uniquement avec Windows. En effet, pour les instances de types EG et SP uniquement, il est possible d'installer Windows Server 2012 r2 (à raison d'un coût supplémentaire pour la licence).
+**Dernière mise à jour le 25/11/2019**
 
-Les premiers pas avec une instance Windows différerent de ceux avec une instance sous Linux. Par exemple, il n'y a pas de configuration de clé SSH par exemple, et le passage par la console VNC est nécessaire afin de configurer votre mot de passe administrateur.
+## Objectif
 
-Ce guide vous explique comment débuter avec une instance Windows.
+Il est possible d’utiliser le Public Cloud si vous souhaitez héberger des sites Web sous IIS ou encore vos applications compatibles uniquement avec Windows. Nos instances peuvent être installées sur des distributions [Windows Desktop](https://www.ovh.com/fr/public-cloud/prices/){.external}.
 
+Une fois votre instance créée, il sera nécessaire de terminer l'installation de celle-ci via la console VNC.
 
-### Prérequis
-- [Créer une instance dans l'espace client OVH](../guide.fr-fr.md){.ref} sous Windows Server 2012
+**Ce guide vous explique la procédure à suivre afin de pouvoir accéder à votre instance Windows après son installation.**
 
+## Prérequis
 
-## Premier Pas
+- Avoir créé un projet Public Cloud.
+- Avoir crée [une instance dans l'espace client](https://docs.ovh.com/fr/public-cloud/creer-instance-espace-client/) sous une distribution Windows Desktop.
 
-### Configuration du mot de passe
-Étant donné qu'aucune clé SSH ne peut être configurée sur votre instance Windows, il faudra dans un premier temps configurer un mot de passe.
+## En pratique
 
-Pour cela, on utilisera la console VNC :
+### Étape 1: configurer votre mot de passe
 
-- Lancer la console VNC de l'instance depuis l'Espace Client OVH
+Contrairement à une instance Linux, une instance Windows n'est pas installée avec une clé SSH pré-configurée. 
 
+Il est donc nécessaire de terminer l'installation via la console VNC :
 
-![public-cloud](images/3288.png){.thumbnail}
+- Cliquez sur les  `...`{.action} à droite de votre instance puis sur `Détail de l'instance`{.action} :
 
-- Saisir le mot de passe pour le compte administrator
+![windowsinstance](images/firststepswindows1.png){.thumbnail}
 
+- Rendez-vous dans l'onglet `Console VNC`{.action}
 
-![public-cloud](images/3289.png){.thumbnail}
+![windowsinstance](images/firststepswindows2.png){.thumbnail}
 
+- Sélectionnez les informations de langage et clavier puis renseignez le mot de passe de votre choix :
 
+![windowsinstance](images/firststepswindows3.png){.thumbnail}
 
-> [!alert]
+> [!primary]
 >
-> Certaines touches du clavier de la console VNC ne correspondent pas forcément
-> au clavier AZERTY, n'hésitez pas à vérifier à plusieurs reprises votre mot
-> de passe avant de le valider.
-> 
+> Certaines touches du clavier de la console VNC ne correspondent pas forcément au clavier AZERTY. N’hésitez pas à vérifier à plusieurs reprises votre mot de passe avant de le valider.
+>
 
+![windowsinstance](images/firststepswindows4.png){.thumbnail}
 
-### Acces Bureau distant
-Une fois le mot de passe configuré, il vous est possible de vous connecter sur votre instance en bureau distant.
+### Étape 2: accéder au bureau à distance
 
-Par exemple depuis un poste sous Linux :
+Une fois le mot de passe défini, vous pouvez accéder à votre instance Windows via une connexion en bureau à distance.
 
+Depuis un poste sous Windows :
 
-```bash
-user@poste :~$ rdesktop 149.202.160.94 -k fr -u administrator
+![windowsinstance](images/firststepswindows5.png){.thumbnail}
 
--------
-Légendes des arguments :
--k : Type de clavier
--u : Utilisateur
+Pour vous connecter depuis un poste sous Linux, tapez la commande suivante :
+
 ```
+rdesktop 12.34.56.789 -u administrator
+```
+ 
+### Étape 3: améliorer la navigation sur Internet
 
-Ou depuis un autre poste Windows
+Par défaut, la sécurité renforcée d'Internet Explorer est activée. Lors de votre navigation, un message d’avertissement apparaitra à de nombreuses reprises afin de vous mettre en garde et bloquer les téléchargements :
 
+![windowsinstance](images/firststepswindows6.png){.thumbnail}
 
-![public-cloud](images/3290.png){.thumbnail}
+Afin d'éviter ce comportement, vous pouvez désactiver la sécurité renforcée depuis votre gestionnaire de serveur.
 
+- Ouvrez le **Gestionnaire de serveur** puis sélectionnez l'onglet `Serveur local`{.action} (1).
 
-### Acces a Internet
-Par défaut, la sécurité renforcée pour Internet Explorer est activée. Lors de votre navigation, un message d'avertissement apparaitra à de nombreuses reprises afin de vous mettre en garde :
+![windowsinstance](images/firststepswindows7.png){.thumbnail}
 
+- Cliquez sur `Actif`{.action} (2) à coté de **Configuration de sécurité renforcée d'Internet Explorer** afin de pouvoir désactiver l'option.
 
-![public-cloud](images/3291.png){.thumbnail}
+![windowsinstance](images/firststepswindows8.png){.thumbnail}
 
-De plus, les téléchargements ne seront pas autorisés.
+## Aller plus loin
 
-Pour cela, il faudra donc désactiver la sécurité renforcée.
+[Accès et sécurité dans Horizon](https://docs.ovh.com/fr/public-cloud/acces-et-securite-dans-horizon/){.external}
 
-- Se rendre sur le tableau de bord Windows dans la partie "Local Server"
+[Accéder à la console d'une instance dans Horizon](https://docs.ovh.com/fr/public-cloud/acceder-a-la-console-dune-instance-dans-horizon/){.external}
 
+[Ajouter du crédit Cloud](https://docs.ovh.com/fr/public-cloud/ajouter-du-credit-cloud/){.external}
 
-![public-cloud](images/3292.png){.thumbnail}
-
-- Cliquer sur "IE Enhanced Security Configuration" et désactiver la sécurité renforcée
-
-
-![public-cloud](images/3293.png){.thumbnail}
-
-Vous serez désormais en mesure de naviguer librement et de télécharger des fichiers.
-
-
-![public-cloud](images/3294.png){.thumbnail}
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
