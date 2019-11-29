@@ -39,7 +39,7 @@ Prosegui nella lettura di questa guida consultando la sezione corrispondente all
 |Azione|Descrizione| 
 |---|---| 
 |[Aumentare la sicurezza della connessione](./#aumentare-la-sicurezza-della-connessione){.external}|Permette di definire se gli account devono essere bloccati dopo un certo numero di tentativi di connessione non andati a buon fine.|
-|[Rendere la password più complessa](./#rendere-la-password-più-complessa){.external}|Permette di stabilire i requisiti di complessità e le regole relative alla modifica della password.|
+|[Rendere la password più complessa](./#rendere-la-password-piu-complessa){.external}|Permette di stabilire i requisiti di complessità e le regole relative alla modifica della password.|
 |[Rafforzare il controllo dei messaggi in entrata](./#rafforzare-il-controllo-dei-messaggi-in-entrata){.external}|Permette di indicare se i server OVH devono verificare che i messaggi ricevuti provengano da una sorgente legittima (verifiche DKIM e SPF).|
 |[Definire la visualizzazione dei messaggi indesiderati](./#definire-la-visualizzazione-dei-messaggi-indesiderati){.external}|Permette di indicare se assegnare ai messaggi indesiderati un tag che consenta di identificarli o spostarli automaticamente nel cestino.|
 
