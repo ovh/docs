@@ -1,50 +1,83 @@
 ---
-title: 'Backing up an Instance'
+title: 'Backing up an instance'
 slug: back-up-instance
-excerpt: 'Find out how to back up a Public Cloud Instance in a few clicks'
-section: Knowledge Base
+excerpt: 'Find out how to back up a Public Cloud instance in a few clicks'
+section: 'Knowledge Base'
 ---
 
-**Last updated 27th March 2018**
+**Last updated 02nd December 2019**
 
 ## Objective
 
-You can create a backup of your Instance at any time via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. You can use a backup to restore your Instance to an old configuration, or recreate it.
+You can create a backup of your instance at any time via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. You can then use this backup to restore your instance to an old configuration, or recreate it.
 
-**Create a backup of a Public Cloud Instance in just a few clicks.**
+**Create a backup of a Public Cloud in just a few clicks.**
 
 ## Requirements
 
-- an [OVH Public Cloud Instance](../create_an_instance_in_your_ovh_customer_account/)
-- access to the `Cloud`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- an [OVHcloud Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/create_an_instance_in_your_ovh_customer_account/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
-### Step 1: Log in to your Instance’s interface.
+### Create a backup of an instance.
 
-Log in to the [Control Panel.](https://www.ovh.com/auth/?action=gotomanager){.external} In the ‘Cloud’ section, click on `Servers`{.action} in the services bar on the left-hand side. Then select the Public Cloud Instance concerned. Finally, in the `Compute`{.action} tab, check that you are in the ‘Instances’ section.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and select the Public Cloud tab from the `Instances`{.action} section.
 
-![public-cloud](images/2803-2.png){.thumbnail}
+Next, click on the `...`{.action} button to the right of the instance, then `Create a backup`{.action}.
 
-### Step 2: Create a backup of an Instance.
+![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 
-In the Instance's management interface, click on the down-arrow icon, and select `Create a snapshot`{.action}.
+Enter a name for the backup on the next page.
 
-![public-cloud](images/2803-3.png){.thumbnail}
+![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-In the window that opens, enter a name for the backup. **Please also check any information regarding potential costs for creating the backup.**
+Once the backup has been created, it will be available in the `Instance Backup`{.action} section.
 
-Once you are ready, click `Take a snapshot`{.action}.
+![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
-![public-cloud](images/2805-2.png){.thumbnail}
+### Create an automated backup of an instance.
 
-### Step 3: Access an Instance’s backups.
+In the `Instances`{.action} section, select `Create an automatic backup`{.action} in the list of available actions you can perform on the instance.
 
-To access backups of a Public Cloud Instance, go to the `Compute`{.action} tab, then `Backups`{.action}.
+![public-cloud-instance-backup](images/createbackup4.png){.thumbnail}
 
-There, you will find a grid listing all of the available backups. Use the buttons on the right-hand side to interact with them.
+You will need to enter the following information on the next page:
 
-![public-cloud](images/2807-2.png){.thumbnail}
+#### **The workflow.** 
+
+Currently, only one workflow exists. It will make a backup for the instance and its primary volume.
+
+![public-cloud-instance-backup](images/createbackup5.png){.thumbnail}
+
+#### **The resource.** 
+
+Simply select the instance you want to back up.
+
+![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
+
+#### **The schedule.** 
+
+Here, you need to define the frequency with which backups are made. There are two default options:
+
+* daily backup with a log of 7 days maximum
+* daily backup with a log of 14 days maximum
+
+![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
+
+    
+#### **The name.** 
+
+This is where you set a name for the backup task. 
+ 
+![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
+
+Once you have created it, go to the `Workflow Management`{.action} section:
+
+![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
+
+Your backups will be available in the `Instance Backup`{.action} section, and are billed in accordance with the solution you are using.
+
 
 ## Go further
 
