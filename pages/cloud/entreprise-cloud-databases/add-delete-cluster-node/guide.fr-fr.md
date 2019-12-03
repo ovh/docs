@@ -1,8 +1,8 @@
 ---
-title: Ajouter et supprimer un noeud à votre cluster
+title: 'Ajouter et supprimer un nœud à votre cluster'
 slug: ajouter-supprimer-noeud
-excerpt: Apprenez comment ajouter ou supprimer un noeud à votre cluster
-section: Démarrer avec votre cluster PostgreSQL
+excerpt: 'Apprenez comment ajouter ou supprimer un nœud à votre cluster'
+section: 'Démarrer avec votre cluster PostgreSQL'
 ---
 
 ## Architecture d'un cluster
@@ -11,7 +11,7 @@ Cette offre se compose par défaut de 3 nœuds, assurant le bon fonctionnement d
 
 ## Croissance horizontale et résilience
 
-Besoin de faire face à la charge de votre applicatif ? L'offre d'OVH vous donne la possibilité d'ajouter (et de réduire dans un second temps) des nœuds en lecture seule à votre cluster.
+Lorsque la charge de votre applicatif augmente, l'offre d'OVHcloud vous permet d'y faire face en vous donnant la possibilité d'ajouter (et de réduire dans un second temps) des nœuds en lecture seule à votre cluster.
 
 Ajoutez de la puissance de calcul à votre cluster en fonction de vos besoins.
 
@@ -20,7 +20,7 @@ Ajoutez de la puissance de calcul à votre cluster en fonction de vos besoins.
 > Nous recommandons de garder un nombre impair de nœuds à l’intérieur de votre cluster afin de respecter le quorum lié à la gestion de la haute disponibilité.
 >
 
-## Ajout d'un noeud
+## Ajout d'un nœud
 
 Vous pouvez ajouter un maximum de 8 nœuds supplémentaires, pour un total de 10 nœuds de lecture seule (réplicas) au sein du cluster.
 
@@ -32,9 +32,9 @@ Vous serez amenés à choisir le nombre de réplicas que vous souhaitez ajouter 
 > Le nouveau nœud s'inscrit dans le quorum de haute disponibilité et peut ainsi devenir primaire (et donc porter les écritures) au cours de la vie du cluster.
 >
 
-## Suppression d'un noeud
+## Suppression d'un nœud
 
-Utilisez l'interface de votre service client pour supprimer un nœud ajouté.
+Utilisez l'interface de votre espace client pour supprimer un nœud ajouté.
 
 Consultez la page `Cluster Nodes`{.action} puis cliquez sur le bouton `...`{.action} puis `remove`{.action} pour supprimer une ressource. 
 
