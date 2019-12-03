@@ -1,11 +1,9 @@
 ---
-title: Créer vos bases et utilisateurs à l'interieur de votre cluster
+title: 'Créer vos bases et utilisateurs à l''intérieur de votre cluster'
 slug: creer-utilisateur-db
-excerpt: Comment créer vos bases et utilisateurs à l'interieur de votre cluster
-section: Démarrer avec votre cluster PostgreSQL
+excerpt: 'Comment créer vos bases et utilisateurs à l''intérieur de votre cluster'
+section: 'Démarrer avec votre cluster PostgreSQL'
 ---
-
-
 
 ## Pour commencer
 
@@ -54,5 +52,5 @@ Depuis le shell PostgreSQL
 Vous possédez le compte administrateur PostgreSQL **postgres** qui à la possibilité de réaliser tous types d'opérations sur la base de données.
 
 > [!primary]
-> Il est impératif de ne pas modifier les configurations techniques mises en place par OVH au risque de dégrader ou d’empêcher le bon fonctionnement de votre cluster.
+> Il est impératif de ne pas modifier les configurations techniques mises en place par OVHcloud au risque de dégrader ou d’empêcher le bon fonctionnement de votre cluster.
 >
