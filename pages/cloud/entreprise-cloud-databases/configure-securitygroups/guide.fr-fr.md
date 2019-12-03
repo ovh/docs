@@ -1,8 +1,8 @@
 ---
-title: Configurer vos groupes de sécurité
+title: 'Configurer vos groupes de sécurité'
 slug: configurer-groupes-securite
-excerpt: Protéger l'accès à votre cluster au travers de filtres d'accès
-section: Démarrer avec votre cluster PostgreSQL
+excerpt: 'Protéger l''accès à votre cluster au travers de filtres d''accès'
+section: 'Démarrer avec votre cluster PostgreSQL'
 ---
 
 ## Fonctionnement des groupes de sécurité
@@ -16,7 +16,7 @@ Les filtres sont appliqués sur les instances restaurées et le répartiteur de 
 ## Règles de sécurité
 Utilisez votre espace client pour interagir avec vos groupes de sécurité.
 
-Les groupes de sécurité sont présentés sous forme de liste depuis la rubrique `Settings`{.action}.
+Les groupes de sécurité sont présentés sous forme de listes depuis la rubrique `Settings`{.action}.
 
 Utilisez ces groupes pour ajouter / supprimer une ou plusieurs adresses IPs.
 
