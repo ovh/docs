@@ -1,8 +1,8 @@
 ---
-title: Limitations appliquées à l'offre PostgreSQL managée
+title: 'Limitations appliquées à l''offre PostgreSQL managée'
 slug: limitations-techniques
-excerpt: Prenez connaissances des limitations techniques de l'offre PostgreSQL managée
-section: Informations techniques
+excerpt: 'Prenez connaissances des limitations techniques de l''offre PostgreSQL managée'
+section: 'Informations techniques'
 order: 4
 ---
 
@@ -15,7 +15,7 @@ order: 4
 
 ## Limitations logicielles
 
-Nous supportons les mises à jour mineures du système d'exploitation ainsi que du SGBD. OVH applique l’entièreté des mises à jour de securité.
+Nous supportons les mises à jour mineures du système d'exploitation ainsi que du SGBD. OVHcloud applique l’entièreté des mises à jour de securité.
 
 ## Limitations d'usage
 
@@ -30,7 +30,7 @@ Nous supportons les mises à jour mineures du système d'exploitation ainsi que 
 
 La liste d'extensions est régulièrement mise à jour.
 
-Vous pouvez à tout moment trouver la liste des extensions disponibles sur votre cluster en éxecutant la requête SQL suivante:
+Vous pouvez à tout moment trouver la liste des extensions disponibles sur votre cluster en exécutant la requête SQL suivante:
 
     SELECT * FROM pg_available_extensions ORDER BY name;
 

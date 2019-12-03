@@ -1,26 +1,26 @@
 ---
-title: Plage de maintenance du cluster
+title: 'Plage de maintenance du cluster'
 slug: plage-de-maintenance
-excerpt: Prenez le contrôle des maintenances appliquées à votre cluster
-section: Démarrer avec votre cluster PostgreSQL
+excerpt: 'Prenez le contrôle des maintenances appliquées à votre cluster'
+section: 'Démarrer avec votre cluster PostgreSQL'
 ---
 
 ## Définition
 
-La plage de maintenance est une période pendant laquelle les équipes d'OVH ont la possibilité de réaliser des actions techniques sur votre cluster de base de données.
+La plage de maintenance est une période pendant laquelle les équipes d'OVHcloud ont la possibilité de réaliser des actions techniques sur votre cluster de base de données.
 
 Voici une liste (non exhaustive) d'actions techniques susceptibles d’être réalisées pendant les plages de maintenances :
 
-- mises à jour mineures du système d'exploitation ou des logiciels connexes
-- mises à jour de sécurité
-- montée de version mineures de PostgreSQL
-- remplacement de matériels défectueux
+- mises à jour mineures du système d'exploitation ou des logiciels connexes.
+- mises à jour de sécurité.
+- montée de versions mineures de PostgreSQL.
+- remplacement de matériels défectueux.
 
 > [!primary]
 > Ne sont pas inclus dans les plages de maintenance les opérations exceptionnelles (non programmables ou non prévisibles) nécessaires à la sécurité ou l’intégrité de votre cluster.
 >
 
-Au sein d'une même plage de maintenance, plusieurs actions techniques peuvent être effectuées de manière automatisée par les équipes d'OVH. Plus cette plage de maintenance est longue, plus nos équipes peuvent plannifier d'opérations.
+Au sein d'une même plage de maintenance, plusieurs actions techniques peuvent être effectuées de manière automatisée par les équipes d'OVHcloud. Plus cette plage de maintenance est longue, plus nos équipes peuvent planifier d'opérations.
 Nous recommandons une plage de 2 heures minimum.
 
 > [!primary]

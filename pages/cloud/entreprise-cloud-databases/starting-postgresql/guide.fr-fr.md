@@ -1,29 +1,29 @@
 ---
-title: Démarrer avec votre cluster PostgreSQL
+title: 'Démarrer avec votre cluster PostgreSQL'
 slug: debuter-avec-postgresql
-excerpt: Découvrez comment comment commander, sécuriser et vous connecter a votre instance PostgreSQL
-section: Démarrer avec votre cluster PostgreSQL
+excerpt: 'Découvrez comment commander, sécuriser et vous connecter a votre instance PostgreSQL'
+section: 'Démarrer avec votre cluster PostgreSQL'
 order: 2
 ---
 
 ## Objectifs
 Cette offre vous propose une instance PostgreSQL sur un cluster dédié.
 
-Le cluster est managé par OVH mais vous avez le rôle **superuser** sur votre cluster.
+Le cluster est managé par OVHcloud mais vous avez le rôle **superuser** sur votre cluster.
 
 Cette documentation va vous présenter toutes les étapes permettant de créer votre cluster PostgreSQL et de tester la connexion.
 
 ## Pré-requis
-- avoir un compte client OVH
-- pouvoir établir une connexion depuis une IP ajoutée dans les groupes de sécurités
-- avoir un client PostgreSQL installé sur le poste depuis lequel vous souhaitez vous connecter à votre base de données
+- avoir un compte client OVHcloud.
+- pouvoir établir une connexion depuis une IP ajoutée dans les groupes de sécurité.
+- avoir un client PostgreSQL installé sur le poste depuis lequel vous souhaitez vous connecter à votre base de données.
 
 ## Présentation
 Composition d'un cluster :
 
-- un nœud principal en lecture/écriture
-- un nœud de réplication en lecture seule
-- un nœud de sauvegarde de données (backup) qui n’accepte pas de connexion cliente
+- un nœud principal en lecture/écriture.
+- un nœud de réplication en lecture seule.
+- un nœud de sauvegarde de données (backup) qui n’accepte pas de connexion cliente.
 
 Consultez la [documentation d'architecture technique](../principes-architectures){.external} pour avoir davantage d'informations sur le fonctionnement technique de votre offre managée.
 
@@ -34,18 +34,18 @@ Depuis votre espace client, allez dans `Server > Enterprise Cloud Databases > Or
 
 Vous serez amenés à choisir différents paramètres pour créer votre cluster :
 
-- la version de PostgreSQL que vous souhaitez installer
-- la région
-- les caractéristiques techniques de votre offre (regroupées en 4 séléctions cluster16, cluster32, cluster64, cluster128)
-- la possibilité d'ajouter des nœuds supplémentaires à votre cluster (de caracteristiques techniques équivalentes à celles du cluster)
-- la période d'engagement
-- la fréquence de paiement
+- la version de PostgreSQL que vous souhaitez installer.
+- la région.
+- les caractéristiques techniques de votre offre (regroupées en 4 séléctions cluster16, cluster32, cluster64, cluster128).
+- la possibilité d'ajouter des nœuds supplémentaires à votre cluster (de caracteristiques techniques équivalentes à celles du cluster).
+- la période d'engagement.
+- la fréquence de paiement.
 
 
 
 - **Étape 2 - Mettre à jour votre utilisateur**
 
-Par défaut, OVH vous crée un utilisateur avec les droits d'administration "**postgres**". Vous devez définir son mot de passe avant la première connexion.
+Par défaut, OVHcloud vous crée un utilisateur avec les droits d'administration "**postgres**". Vous devez définir son mot de passe avant la première connexion.
 
 - **Étape 3 - configurer un groupe de sécurité**
 
