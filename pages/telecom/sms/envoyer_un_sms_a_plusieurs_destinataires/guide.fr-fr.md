@@ -1,8 +1,9 @@
 ---
-title: Envoyer un SMS à plusieurs destinataires
+title: 'Envoyer un SMS à plusieurs destinataires'
 slug: envoyer-un-sms-a-plusieurs-destinataires
 legacy_guide_number: '8650754'
-section: Envoyer des SMS
+section: 'Envoyer des SMS'
+hidden: true
 ---
 
 **Préambule**
@@ -112,5 +113,6 @@ Dans le cas d'un SMS à caractère commercial, il est obligatoire de laisser la 
 ![](images/03.jpg){.thumbnail}
 
 Enfin, cliquez simplement sur "**Envoyer**". Le SMS sera envoyé instantanément.
+
 
 
