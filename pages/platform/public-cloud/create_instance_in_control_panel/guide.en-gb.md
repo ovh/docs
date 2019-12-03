@@ -1,28 +1,28 @@
 ---
-title: 'Create an instance in your OVH customer account'
+title: 'Creating an instance in the OVHcloud Control Panel'
 slug: create_an_instance_in_your_ovh_customer_account
-excerpt: 'This guide will show you how to create an instance in your Public Cloud account.'
+excerpt: 'Find out how to create an instance in the OVHcloud Public Cloud Control Panel'
 legacy_guide_number: g1775
 section: 'Quick start'
 ---
 
-**Last updated 14th November 2019**
+**Last updated 03rd December 2019**
 
 ## Objective
 
-The [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} lets you create instances (i.e. virtual servers) quickly and easily, in just a few clicks.
+You can use the OVHcloud [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} to create instances (i.e. virtual servers) quickly and easily, in just a few clicks.
 
-**This guide will show you how to create an instance in your Public Cloud account.**
+**Find out how to create an instance in the OVHcloud Public Cloud Control Panel.**
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-* a [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} project created in your OVH account
-* an SSH key created in your OVH customer account
+* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} project created in your OVHcloud account
+* an SSH key created in the OVHcloud Control Panel
 
-### Deploy a Public Cloud Instance
+### Deploy a Public Cloud Instance.
 
-In order to deploy a public cloud instance, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Public Cloud`{.action} in the top-left corner of the page. Then, on the following screen, click the arrow button next to your default project name in the top-left corner of the screen. Now select the project on which you would like to create a new instance.
+In order to deploy a public cloud instance, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Public Cloud`{.action} in the top-left corner of the page. Then, on the following screen, click the arrow button next to your default project name in the top-left corner of the screen. Now select the project on which you would like to create a new instance.
 
 ![select_project](images/select_project.png){.thumbnail}
 
@@ -41,11 +41,11 @@ The table below gives a brief explanation of the differences between the types o
 | General Use   | ✓     | Development servers, web or business applications    |
 | CPU     | ✓       | Video encoding or other high-performance computing      |
 | RAM   | ✓     | Databases, analysis, and in-memory calculations    |
-| Shares Resources    | -       | Testing and development environments      |
+| Shared Resources    | -       | Testing and development environments      |
 
 > [!primary]
 >
-You will initially be limited to 20 instances, 20 vCores and 40 GB of RAM across any given project. An increase in the resource limit may be requested by [submitting a ticket](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} to our Customer Support team.
+You will initially be limited to 20 instances, 20 vCores and 40GB of RAM across any given project. An increase in the resource limit may be requested by [submitting a ticket](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} to our Customer Support team.
 >
 
 
@@ -53,7 +53,7 @@ Follow the menu to select the region in which you would like your public cloud i
 
 > [!primary]
 >
-If a Windows OS is selected, then a license will automatically be provisioned and you will be billed monthly for it.
+If a Windows OS is selected, then a licence will automatically be provisioned and you will be billed monthly for it.
 >
 
 ![install](images/os_install.png){.thumbnail}
@@ -63,7 +63,7 @@ If a Windows OS is selected, then a license will automatically be provisioned an
 Public cloud instances running a Unix-based OS require an SSH key to be added to the server. For more information on generating an SSH key, please check out our [Create SSH Keys](https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys/){.external} article.
 >
 
-The fourth part of the menu will allow you to choose the number of instances to create, name your instance, and add a private network or post-installation script should you choose to do so.
+In the fourth part of the menu, you can choose the number of instances to create, name your instance, and add a private network or post-installation script, should you choose to do so.
 
 ![add an instance](images/configure_instance.png){.thumbnail}
 
@@ -79,7 +79,7 @@ Once you have confirmed that all of the information you have entered is correct,
 
 ## Conclusion
 
-Having read this article, you should be able to provision an instance on your public cloud project from the OVHcloud Manager. For further reading about what you can do with your instance, please check out our articles on the [Public Cloud Services](https://docs.ovh.com/gb/en/public-cloud/){.external} support page.
+Having read this article, you should be able to provision an instance on your public cloud project via the OVHcloud Control Panel. For further reading about what you can do with your instance, please check out our articles on the [Public Cloud Services](https://docs.ovh.com/gb/en/public-cloud/){.external} support page.
 
 ## Go further
 
