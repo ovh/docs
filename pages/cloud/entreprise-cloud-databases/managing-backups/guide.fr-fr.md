@@ -1,12 +1,12 @@
 ---
-title: Gérer les sauvegardes
+title: 'Gérer les sauvegardes'
 slug: gerer-sauvegardes
-excerpt: Gérez l'ensemble de vos sauvegardes et gardez le contrôle sur vos données avec l'interface client
-section: Démarrer avec votre cluster PostgreSQL
+excerpt: 'Gérez l''ensemble de vos sauvegardes et gardez le contrôle sur vos données avec l''interface client'
+section: 'Démarrer avec votre cluster PostgreSQL'
 ---
 
 ## Sauvegardes incluses à l'offre
-Votre cluster PostgreSQL est sauvegardé de manière journalière par OVH.
+Votre cluster PostgreSQL est sauvegardé de manière journalière par OVHcloud.
 
 Par défaut, nous conservons ces sauvegardes sur 3 mois glissants.
 
@@ -26,24 +26,24 @@ L'ensemble de vos sauvegardes peut être géré de manière centralisée. Pour c
 
 Vous y trouverez toutes vos sauvegardes :
 
-- celles automatiquement réalisées par OVH
-- celles faites à la demande
+- celles automatiquement réalisées par OVHcloud.
+- celles faites à la demande.
 
 Utilisez le bouton `Actions`{.action} pour :
 
-- lancer une sauvegarde manuelle
-- lancer une restauration à un temps donné
+- lancer une sauvegarde manuelle.
+- lancer une restauration à un temps donné.
 
 
 - **Création d'une sauvegarde manuelle**
 
-Depuis l'interface client, rendez-vous dans l'onglet `Sauvegardes`{.action} puis cliquez sur le bouton `Actions`{.action}
+Depuis l'interface client, rendez-vous dans l'onglet `Sauvegardes`{.action} puis cliquez sur le bouton `Actions`{.action}.
 
 Vous pouvez donner un nom à vos sauvegardes manuelles pour en faciliter la gestion.
 
 > [!primary]
 >
-> Attention, les sauvegardes manuelles representent un coût aditionnel détaillé dans l'espace client.
+> Attention, les sauvegardes manuelles représentent un coût aditionnel détaillé dans l'espace client.
 >
 
 - **Restaurer une sauvegarde**
@@ -65,7 +65,7 @@ Cliquez sur le bouton `Actions`{.action} puis `Launch a point in time recovery`{
 
 > [!primary]
 >
-> Pour ne pas pertuber le fonctionnement de votre cluster, les données restaurées sont mises à disposition sur une instance dédiée **en lecture seule (??? vraiementt ?)**.
+> Pour ne pas pertuber le fonctionnement de votre cluster, les données restaurées sont mises à disposition sur une instance dédiée en lecture seule.
 >
 > Cette instance vous sera facturée par heure et l'espace consommé par les données vous sera facturé par Go par heure.
 >
