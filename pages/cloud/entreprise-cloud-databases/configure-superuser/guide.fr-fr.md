@@ -1,8 +1,8 @@
 ---
-title: Configurer le mot de passe de votre utilisateur administrateur
+title: 'Configurer le mot de passe de votre utilisateur administrateur'
 slug: configurer-mdp-superuser
-excerpt: Comment configurer le mot de passe de votre utilisateur administrateur ?
-section: Démarrer avec votre cluster PostgreSQL
+excerpt: 'Apprenez comment configurer le mot de passe de votre utilisateur administrateur'
+section: 'Démarrer avec votre cluster PostgreSQL'
 order: 3
 ---
 
@@ -10,7 +10,7 @@ order: 3
 
 OVH vous fournit un compte administrateur pour votre instance de base de données. Cet utilisateur **postgres** peut réaliser toutes les opérations techniques de type "administration".
 
-Reportez-vous à la [documentation officielle de PostgreSQL](https://www.postgresql.org/docs/current/role-attributes.html){.external} pour connaître ses privilèges.ttps://www.postgresql.org/docs/11/role-attributes.html
+Reportez-vous à la [documentation officielle de PostgreSQL](https://www.postgresql.org/docs/current/role-attributes.html){.external} pour connaître ces privilèges.
 
 Ce mot de passe est modifiable à tout instant. Pour ce faire, rendez-vous sur votre espace client dans l'onglet `Overview > Informations`{.action} et cliquez sur le bouton `...`{.action} puis `Update Password`{.action}.
 
