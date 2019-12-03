@@ -1,8 +1,9 @@
 ---
-title: Gérer la limite et le quota de mes utilisateurs SMS
+title: 'Gérer la limite et le quota de mes utilisateurs SMS'
 slug: gerer-la-limite-et-le-quota-de-mes-utilisateurs-sms
 legacy_guide_number: '16254468'
-section: Gérer mon offre
+section: 'Gérer mon offre'
+hidden: true
 ---
 
 ### Préambule {#préambule}
@@ -66,4 +67,6 @@ Si vous envoyez une notification SMS, celle-ci sera déduite de votre crédit SM
 -   -   **Mail :** Entrez l'adresse à notifier.
     -   **Numéro :** Entrez le numéro de téléphone à notifier au format international.
 -   Cliquez simplement sur le bouton "**Valider**" pour confirmer ces modifications.
+
+
 
