@@ -22,7 +22,7 @@ You can manage OVH Public Cloud easily via the [OVH Control Panel](https://www.o
 
 ### Access the management interface for the Instance.
 
-First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the ‘Public Cloud’ section and select the Public Cloud service concerned. Then, click in the `Compute`{.action} tab on your left.
+First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the ‘Public Cloud’ section and select the Public Cloud service concerned. Then, click in the `Instances`{.action} tab on your left.
 
 On that page you will see a summary of all your Instances. There will be several pieces of information displayed here:
 
@@ -36,7 +36,7 @@ On that page you will see a summary of all your Instances. There will be several
 
 ### Edit the configuration of an Instance.
 
-In the management interface for the Instance, click on the down-arrow icon, and select `Edit`{.action}.
+In the management interface for the Instance, click on the 3 dots on the right of the Instance, and select `Edit`{.action}.
 
 ![public-cloud](images/edit.png){.thumbnail}
 
@@ -53,15 +53,17 @@ In the window that opens, you can:
 
 ### Create a backup of an Instance.
 
-You can create a backup of an Instance from its admin page.  To do this, click on the 3 dots on the right of it and select `Create a backup`{.action}. Then you will see this page with all the necessary information: ![public-cloud](images/backup1.png){.thumbnail} .
+You can create a backup of an Instance from its admin page.  To do this, click on the 3 dots on the right of the Instance and select `Create a backup`{.action}. Then you will see this page with all the necessary information: ![public-cloud](images/backup.png){.thumbnail} .
 
-Then the following information is being displayed: ![public-cloud](images/backup2.png){.thumbnail}
+Then the following information is being displayed: ![public-cloud](images/backup1.png){.thumbnail} .
 
-Once backup has been done you can see it in the `Instance Backup`{.action} section: ![public-cloud](images/backup3.png){.thumbnail} .
+After you have confirmed the following information will be displayed: ![public-cloud](images/backup2.png){.thumbnail} .
+
+Once backup has been done will be able to see it in `Instance Backup`{.action} section: ![public-cloud](images/backup3.png){.thumbnail} .
 
 You can refer to our guide to [Backing up an Instance](../back-up-instance/) if you need help with this. 
 
-![public-cloud](images/backup.png){.thumbnail}
+![public-cloud](images/backup3.png){.thumbnail}
 
 ### Create an automatic backup of an Instance.
 
@@ -69,9 +71,9 @@ You can schedule an automatic backup of an Instance from its admin page. To do t
 
 Then the following page will be displayed: ![public-cloud](images/backupauto1.png){.thumbnail} .
 
-Once you have validate it you will be redirected to the following page: ![public-cloud](images/backupauto2.png){.thumbnail} .
+Once you have selected the necessary information and you have clicked in Create, you will be redirected to the following page: ![public-cloud](images/backupauto2.png){.thumbnail} .
 
-At any time you can go to that page to delete the current automatic backup process: ![public-cloud](images/backupautodelete.png){.thumbnail}
+At any time you can go to that `Workflow management`{.action} to delete the current automatic backup process: ![public-cloud](images/backupautodelete.png){.thumbnail}
 
 You can refer to our guide to [Backing up an Instance](../back-up-instance/) if you need help with this. 
 
@@ -100,8 +102,8 @@ The console will then be available:
 
 There are two different ways of rebooting an Instance:
 
-- hot reboot (software)
-- cold reboot (hardware)
+- Hot reboot (software)
+- Cold reboot (hardware)
 
 In the management interface for the Instance, click on the 3 dots you find on the right of the Instance, and select either `Hot reboot (software)`{.action} or `Cold reboot (hardware)`{.action}.
 
