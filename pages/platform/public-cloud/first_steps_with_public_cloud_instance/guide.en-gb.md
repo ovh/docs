@@ -63,8 +63,6 @@ Once backup has been done will be able to see it in `Instance Backup`{.action} s
 
 You can refer to our guide to [Backing up an Instance](../back-up-instance/) if you need help with this. 
 
-![public-cloud](images/backup3.png){.thumbnail}
-
 ### Create an automatic backup of an Instance.
 
 You can schedule an automatic backup of an Instance from its admin page. To do this, click on the 3 dots on the right of it and select `Create an automatic backup`{.action}: ![public-cloud](images/backupauto.png){.thumbnail}
@@ -76,8 +74,6 @@ Once you have selected the necessary information and you have clicked in Create,
 At any time you can go to that `Workflow management`{.action} to delete the current automatic backup process: ![public-cloud](images/backupautodelete.png){.thumbnail}
 
 You can refer to our guide to [Backing up an Instance](../back-up-instance/) if you need help with this. 
-
-![public-cloud](images/backup.png){.thumbnail}
 
 ### Retrieve your login information.
 
