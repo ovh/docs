@@ -26,8 +26,7 @@ This guide explains how to migrate a failover IP from one instance to another. T
 
 ## 
 
-- To start, click in the Failover IP section bellow Network in the left menu. Then, we can see that IP our failover IP is routed to server 1 and I want to redirect it towards server 2.
-
+- To start, click in the Failover IP section bellow Network in the left menu. Then, we can see that our failover IP is routed to instance_A and we want to redirect it towards instance_B.
 
 ![](images/failover.png){.thumbnail}
 
