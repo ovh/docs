@@ -22,22 +22,21 @@ There are two ways to add an SSH key from the Public Cloud interface:
 ## Creation of an instance
 From the Public Cloud client interface, to create a cloud instance, click on `Create an instance`{.action} in the Instances menu under the `Compute`{.action} section on the left-hand menu.
 
+![Add a server](images/compute.png){.thumbnail}
+
+Then, during the creation of the instance, and on step 3, you will be asked for your SSH key.
+
 ![Add a server](images/selectkey.png){.thumbnail}
 
 If you already have keys, simply select the key of your choice.
 
-If you want to add a key, click on `Add a key`{.action} then click `Add a key`{.action}
-
-Create a name for your key in the 'Name' box and paste the key into the box labeled 'Key'.
-
+If you want to add a key, click on `Add a key`{.action}. Create a name for your key in the 'SSH Key name' box and paste the key into the box labeled 'SSH key'. Click in `Add a key`{.action} to finish.
 
 ![Add a key](images/addkey.png){.thumbnail}
 
-
 ## From the key management tool
 
-Once the 'SSH keys' has been selected from the menu for your project, an 'SSH keys' tab will be available.
-
+Once the 'SSH keys' has been selected from the left menu of your project, a 'SSH keys' tab will be available.
 
 ![Add a key](images/addkeymenu.png){.thumbnail}
 
