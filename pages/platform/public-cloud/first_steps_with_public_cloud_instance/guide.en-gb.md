@@ -22,9 +22,9 @@ You can manage OVH Public Cloud easily via the [OVH Control Panel](https://www.o
 
 ### Access the management interface for the Instance.
 
-First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and go to the ‘Public Cloud’ section and select the Public Cloud service concerned. Then, click in the `Compute`{.action} tab on your left.
+First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the ‘Public Cloud’ section and select the Public Cloud service concerned. Then, click in the `Compute`{.action} tab on your left.
 
-Below the tabs, you will see a summary for your Instance. There will be several pieces of information displayed here:
+On that page you will see a summary of all your Instances. There will be several pieces of information displayed here:
 
 - the model your Instance
 - its name and region
@@ -79,7 +79,7 @@ You can refer to our guide to [Backing up an Instance](../back-up-instance/) if
 
 ### Retrieve your login information.
 
-In the management interface for the Instance, click on `Instance details`, and check the information bellow `Login information`{.action}. Here, you can retrieve the SSH commands you need to use to connect to your Instance.
+In the management interface for the Instance, click on `Instance details`, and check the information bellow `Login information`{.action}. There, you can retrieve the SSH commands you need to use to connect to your Instance.
 
 ![public-cloud](images/instancedetails1.png){.thumbnail}
 ![public-cloud](images/instancedetails.png){.thumbnail}
@@ -88,13 +88,13 @@ In the management interface for the Instance, click on `Instance details`, and c
 
 Using the VNC console, you can access your Instance directly. Please note, however, that you will need to have configured a password for the root user.
 
-To access this console, click on the down-arrow icon, and select `VNC console`{.action}.
+To access this console, click on `VNC console`{.action} in the Instance dashboard.
 
-![public-cloud](images/3484-3.png){.thumbnail}
+![public-cloud](images/vnc.png){.thumbnail}
 
-The console will then open in a new window. 
+The console will then be available:
 
-![public-cloud](images/3484-4.png){.thumbnail}
+![public-cloud](images/vnc1.png){.thumbnail}
 
 ### Reboot an Instance.
 
@@ -103,19 +103,19 @@ There are two different ways of rebooting an Instance:
 - hot reboot (software)
 - cold reboot (hardware)
 
-In the management interface for the Instance, click on the down-arrow icon, and select either `Hot reboot (software)`{.action} or `Cold reboot (hardware)`{.action}.
+In the management interface for the Instance, click on the 3 dots you find on the right of the Instance, and select either `Hot reboot (software)`{.action} or `Cold reboot (hardware)`{.action}.
 
 Then confirm your request in the window that opens.
 
-![public-cloud](images/3484-5.png){.thumbnail}
+![public-cloud](images/reboot.png){.thumbnail}
 
 ### Reinstall an Instance.
 
 You can reinstall an Instance and keep the same operating system. **Please note that if you choose to reinstall, all of the data currently stored on your Instance will be erased.**
 
-In the management interface for the Instance, click on the down-arrow icon, and select `Reinstall`{.action}. Then click confirm to start the process. 
+In the management interface for the Instance, click on the 3 dots you find on the right of the Instance, and select `Reinstall`{.action}. Then click confirm to start the process.
 
-![public-cloud](images/3484-6.png){.thumbnail}
+![public-cloud](images/reinstall.png){.thumbnail}
 
 ### Delete an Instance.
 
@@ -123,7 +123,7 @@ You can also delete an Instance. **This will permanently delete the Instance, as
 
 In the management interface for the Instance, click on the down-arrow icon, and select `Delete`{.action}. Then click confirm to start the process. 
 
-![public-cloud](images/3484-7.png){.thumbnail}
+![public-cloud](images/delete.png){.thumbnail}
 
 ## Go further
 
