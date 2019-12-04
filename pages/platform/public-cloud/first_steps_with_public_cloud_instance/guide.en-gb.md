@@ -5,7 +5,7 @@ excerpt: 'Find out how to get started with a Public Cloud Instance'
 section: Quick start
 ---
 
-**Last updated 27th March 2018**
+**Last updated 4th December 2019**
 
 ## Objective
 
@@ -22,23 +22,23 @@ You can manage OVH Public Cloud easily via the [OVH Control Panel](https://www.o
 
 ### Access the management interface for the Instance.
 
-First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and go to the ‘Cloud’ section, then click on `Servers`{.action} in the services bar on the left-hand side. Then select the Public Cloud service concerned. In the `Compute`{.action} tab, check that you are in the ‘Instances’ section.
+First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and go to the ‘Public Cloud’ section and select the Public Cloud service concerned. Then, click in the `Compute`{.action} tab on your left.
 
 Below the tabs, you will see a summary for your Instance. There will be several pieces of information displayed here:
 
-- the model and cost of your Instance
+- the model your Instance
 - its name and region
-- available resources
 - any potential hard disks
-- your Instance’s IP address
+- your Instance’s IP addressed
+- its state
 
-![public-cloud](images/3415-2.png){.thumbnail}
+![public-cloud](images/compute.png){.thumbnail}
 
 ### Edit the configuration of an Instance.
 
 In the management interface for the Instance, click on the down-arrow icon, and select `Edit`{.action}.
 
-![public-cloud](images/3481-2.png){.thumbnail}
+![public-cloud](images/edit.png){.thumbnail}
 
 In the window that opens, you can:
 
@@ -47,21 +47,42 @@ In the window that opens, you can:
 - reinstall the Instance on another operating system (**please note that if you choose to do this, the data currently stored on the instance will be deleted**)
 - switch from hourly billing to a fixed monthly rate (bills will then be sent on a pro rata basis, based on the day of the month that you switch)
 
-![public-cloud](images/3481-3.png){.thumbnail}
+![public-cloud](images/edit1.png){.thumbnail}
+![public-cloud](images/edit2.png){.thumbnail}
+![public-cloud](images/edit3.png){.thumbnail}
 
 ### Create a backup of an Instance.
 
-You can create a backup of an Instance from its admin page.  To do this, click on the down-arrow icon and select `Create a snapshot`{.action}. Then follow the steps that appear.
+You can create a backup of an Instance from its admin page.  To do this, click on the 3 dots on the right of it and select `Create a backup`{.action}. Then you will see this page with all the necessary information: ![public-cloud](images/backup1.png){.thumbnail} .
+
+Then the following information is being displayed: ![public-cloud](images/backup2.png){.thumbnail}
+
+Once backup has been done you can see it in the `Instance Backup`{.action} section: ![public-cloud](images/backup3.png){.thumbnail} .
 
 You can refer to our guide to [Backing up an Instance](../back-up-instance/) if you need help with this. 
 
-![public-cloud](images/3481-4.png){.thumbnail}
+![public-cloud](images/backup.png){.thumbnail}
+
+### Create an automatic backup of an Instance.
+
+You can schedule an automatic backup of an Instance from its admin page. To do this, click on the 3 dots on the right of it and select `Create an automatic backup`{.action}: ![public-cloud](images/backupauto.png){.thumbnail}
+
+Then the following page will be displayed: ![public-cloud](images/backupauto1.png){.thumbnail} .
+
+Once you have validate it you will be redirected to the following page: ![public-cloud](images/backupauto2.png){.thumbnail} .
+
+At any time you can go to that page to delete the current automatic backup process: ![public-cloud](images/backupautodelete.png){.thumbnail}
+
+You can refer to our guide to [Backing up an Instance](../back-up-instance/) if you need help with this. 
+
+![public-cloud](images/backup.png){.thumbnail}
 
 ### Retrieve your login information.
 
-In the management interface for the Instance, click on the down-arrow icon, and select `Login information`{.action}. Here, you can retrieve the SSH commands you need to use to connect to your Instance.
+In the management interface for the Instance, click on `Instance details`, and check the information bellow `Login information`{.action}. Here, you can retrieve the SSH commands you need to use to connect to your Instance.
 
-![public-cloud](images/3484-2.png){.thumbnail}
+![public-cloud](images/instancedetails1.png){.thumbnail}
+![public-cloud](images/instancedetails.png){.thumbnail}
 
 ### Access the VNC console.
 
