@@ -28,7 +28,7 @@ In such circumstances, you can use rescue mode to reconfigure your instance or r
 
 First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Public Cloud`{.action} menu.
 
-Next, select your PCI project from the side-menu on the left of the screen.
+Next, select your Public Cloud project from the side-menu on the left of the screen and go to Instances.
 
 ![control panel](images/compute.png){.thumbnail}
 
@@ -73,7 +73,7 @@ Your data will now be accessible from the /mnt folder.
 
 Once you have completed your tasks, you can deactivate rescue mode by rebooting your instance normally. To do this, click on the dropdown arrow on your instance, and select `Exit rescue mode`{.action}.
 
-![control panel](images/rescuexit.png){.thumbnail}
+![control panel](images/rescueexit.png){.thumbnail}
 
 ### Activate rescue mode using the OpenStack API
 
