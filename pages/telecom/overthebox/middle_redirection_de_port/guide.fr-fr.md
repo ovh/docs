@@ -16,7 +16,7 @@ Afin que la redirection de port fonctionne correctement. Il est impératif que l
 > C'est normalement déjà le cas si cette machine est configurée en
 > récupération d'IP automatique et si le DHCP est géré par  OverTheBox
 > (procédure d'installation sur : Mes 10 premières minutes avec OverTheBox <docs/telecom/overthebox/mes_10_premieres_minutes_avec_overthebox/>)
-> 
+>
 
 
 ## Redirection de port
@@ -29,7 +29,7 @@ Pour ce faire :
 - Configurez votre redirection
     - **Name** : nommez votre règle
     - **Protocol** : choisissez le protocole (il est possible de laisser **TCP + UDP** par défaut)
-    - **External zone** : indiquez **WAN**
+    - **External zone** : indiquez **TUN**
     - **External port** : renseignez le port appelé depuis l'extérieur
     - **Internal zone** : indiquez **LAN**
     - **Internal Ip** : choisissez l'Ip cible de la redirection
@@ -57,7 +57,7 @@ Pour ce faire :
 - Configurez votre redirection
     - **Name** : nommez votre règle
     - **Protocol** : choisissez le protocole (il est possible de laisser **TCP + UDP** par défaut)
-    - **External zone** : indiquez **WAN**
+    - **External zone** : indiquez **TUN**
     - **External port** : renseignez la plage de ports appelée depuis l'extérieur sous la forme **"portDébut-portFin"**
     - **Internal zone** : indiquez **LAN**
     - **Internal Ip** : choisissez l'Ip cible de la redirection
@@ -68,7 +68,7 @@ Pour ce faire :
 > [!alert]
 >
 > Les plages "external port" et "internal port" doivent comporter le même nombre de port.
-> 
+>
 
 - Cliquez d'abord sur **"Add"**
 - Cliquez ensuite sur **"Save & Apply"**
