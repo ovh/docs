@@ -138,7 +138,7 @@ De même que X-Forwarded-For, cet En-Tête peut être forgé par un visiteur mal
 
 ```apache
 1. RewriteEngine on
-2. RewriteCond %{HTTP:X_Forwarded_Proto} !https
+2. RewriteCond %{HTTP:X-Forwarded-Proto} !https
 3. RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
 
