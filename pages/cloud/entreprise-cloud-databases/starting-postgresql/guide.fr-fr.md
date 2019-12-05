@@ -1,84 +1,93 @@
 ---
 title: 'Démarrer avec votre cluster PostgreSQL'
 slug: debuter-avec-postgresql
-excerpt: 'Découvrez comment commander, sécuriser et vous connecter a votre instance PostgreSQL'
+excerpt: 'Découvrez comment commander, sécuriser et vous connecter à votre instance PostgreSQL'
 section: 'Démarrer avec votre cluster PostgreSQL'
 order: 2
 ---
 
-## Objectifs
-Cette offre vous propose une instance PostgreSQL sur un cluster dédié.
+**Dernière mise à jour le 05/12/2019**
 
+## Objectif
+
+L'offre Enterprise Cloud Databases vous propose une instance PostgreSQL sur un cluster dédié.
 Le cluster est managé par OVHcloud mais vous avez le rôle **superuser** sur votre cluster.
-
-Cette documentation va vous présenter toutes les étapes permettant de créer votre cluster PostgreSQL et de tester la connexion.
+Ce guide va vous présenter toutes les étapes permettant de créer votre cluster PostgreSQL et de tester la connexion.
 
 ## Pré-requis
-- avoir un compte client OVHcloud.
-- pouvoir établir une connexion depuis une IP ajoutée dans les groupes de sécurité.
-- avoir un client PostgreSQL installé sur le poste depuis lequel vous souhaitez vous connecter à votre base de données.
+- Disposer d'un compte client OVHcloud.
+- Pouvoir établir une connexion depuis une IP ajoutée dans les groupes de sécurité.
+- Avoir un client PostgreSQL installé sur le poste depuis lequel vous souhaitez vous connecter à votre base de données.
 
 ## Présentation
-Composition d'un cluster :
+La composition initiale d'un cluster :
 
 - un nœud principal en lecture/écriture.
 - un nœud de réplication en lecture seule.
 - un nœud de sauvegarde de données (backup) qui n’accepte pas de connexion cliente.
 
-Consultez la [documentation d'architecture technique](../principes-architectures){.external} pour avoir davantage d'informations sur le fonctionnement technique de votre offre managée.
+Consultez la [documentation d'architecture technique](https://www.postgresql.org/docs/){.external} pour avoir davantage d'informations sur le fonctionnement technique de votre offre managée.
 
-## Instructions
-- **Étape 1 - commander votre cluster**
+## En pratique
 
-Depuis votre espace client, allez dans `Server > Enterprise Cloud Databases > Order a Enterprise Cloud Databases`{.action}.
+### Étape 1 : commander votre cluster
+
+Depuis votre espace client, rendez-vous dans successivement sur `Server`{.action} puis `Enterprise Cloud Databases`{.action} et enfin cliquez sur `Commander un cluster`{.action}.
 
 Vous serez amenés à choisir différents paramètres pour créer votre cluster :
 
-- la version de PostgreSQL que vous souhaitez installer.
-- la région.
-- les caractéristiques techniques de votre offre (regroupées en 4 séléctions cluster16, cluster32, cluster64, cluster128).
-- la possibilité d'ajouter des nœuds supplémentaires à votre cluster (de caracteristiques techniques équivalentes à celles du cluster).
-- la période d'engagement.
-- la fréquence de paiement.
+- La version de PostgreSQL que vous souhaitez installer.
+- La région.
+- Les caractéristiques techniques de votre offre (parmi 4 configurations possibles : cluster16, cluster32, cluster64, cluster128).
+- La possibilité d'ajouter des nœuds supplémentaires à votre cluster (de caracteristiques techniques équivalentes à celles du cluster).
+- La période d'engagement.
+- La fréquence de paiement.
 
-
-
-- **Étape 2 - Mettre à jour votre utilisateur**
+### Étape 2 : mettre à jour votre utilisateur
 
 Par défaut, OVHcloud vous crée un utilisateur avec les droits d'administration "**postgres**". Vous devez définir son mot de passe avant la première connexion.
 
-- **Étape 3 - configurer un groupe de sécurité**
+### Étape 3 : configurer un groupe de sécurité
 
-L'accès à votre instance PostgreSQL étant exposé sur le réseau public, il est nécessaire de filtrer les accès par un groupe de sécurité. Celui-ci comprenant des IP seules ou des blocs d'adresses IP.
+L'accès à votre instance PostgreSQL étant exposé sur le réseau public, il est nécessaire de filtrer les accès par un groupe de sécurité. Celui-ci peut comprendre des IP seules ou des blocs d'adresses IP.
 
-Dans la vue de votre service sur l'espace client, allez dans l'onglet `Settings > Security Groups`{.action}
+Dans la vue de votre service sur l'espace client, allez dans l'onglet `Paramètres`{.action} puis dans la section `Groupe(s) de sécurité`{.action}. Cliquez sur `Créer un groupe`{.action}.
 
-Exemples :
+Donnez un nom à votre groupe puis renseignez les adresses IP. 
 
-    181.36.14.xxx/32
-    83.4.121.xxx/32
+```
+Exemple :
+181.36.14.xxx/32
+83.4.121.xxx/32
+```
 
-- **Étape 4 - vous connecter à votre instance**
+### Étape 4 : vous connecter à votre instance
 
-Vous pouvez vous connecter à votre instance de différentes manières.
+Les paramètres de connexion ainsi que les différentes méthodes disponibles pour vous connecter sont disponibles dans votre espace client.
 
-L'espace client vous affichera les informations utiles depuis la section `Overview`{.action} puis `Connection Information`{.action}
+Rendez-vous dans l'onglet `Accueil`{.action} puis dans la section `Informations de connexion`{.action}.
 
-Exemples de chaînes de connexions :
+Voici des exemples de chaînes de connexions :
 
-    read-write
-        postgresql://postgres:*******@5f771a6d99ee4102980c2d.prm.clouddb.ovh.net:38697/postgres?sslmode-require
-        psql -U postgres -h 5f771a6d99ee4102980c2d.prm.clouddb.ovh.net -p 38697 -W --set=sslmode=require
+```
+read-write
+postgresql://postgres:*******@5f771a6d99ee4102980c2d.prm.clouddb.ovh.net:38697/postgres?sslmode-require
+psql -U postgres -h 5f771a6d99ee4102980c2d.prm.clouddb.ovh.net -p 38697 -W --set=sslmode=require
+```
+   
+```
+read-only
+postgresql://postgres:*******@5f771a6d99ee4102980c2d.prm.clouddb.ovh.net:6713/postgres?sslmode=require
+psql -U postgres -h 5f771a6d99ee4102980c2d.prm.clouddb.ovh.net -p 6713 -W --set=sslmode=require
+```
 
-    read-only
-        postgresql://postgres:*******@5f771a6d99ee4102980c2d.prm.clouddb.ovh.net:6713/postgres?sslmode=require
-        psql -U postgres -h 5f771a6d99ee4102980c2d.prm.clouddb.ovh.net -p 6713 -W --set=sslmode=require
+### Étape 5 : créer les bases et les utilisateurs
+
+Consultez à cet effet la [https://www.postgresql.org/docs/](documentation PostgreSQL){.external} documentation PostgreSQL pour la création de bases et d'utilisateurs.
 
 
-- **Étape 5 - Création de bases et d'utilisateurs**
+## Aller plus loin
 
-Consultez la [https://www.postgresql.org/docs/](documentation PostgreSQL){.external} documentation PostgreSQL pour la création de bases et d'utilisateurs.
+Apprenez à gérer votre cluster PostgreSQL en consultant la [documentation technique d'OVHcloud](../enterprise-cloud-databases/){.external} pour davantage d'informations sur le fonctionnement technique de votre offre managée.
 
-
-## Pour aller plus loin
-Apprenez à gérer votre cluster PostgreSQL en consultant la [documentation technique d'OVH](../enterprise-cloud-databases/){.external} pour davantage d'informations sur le fonctionnement technique de votre offre managée.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
