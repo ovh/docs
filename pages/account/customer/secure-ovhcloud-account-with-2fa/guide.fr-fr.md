@@ -3,10 +3,11 @@ title: 'Sécuriser son compte OVHcloud avec la double authentification'
 slug: securiser-son-compte-avec-une-2FA
 excerpt: 'Découvrez comment améliorer la sécurité de votre compte OVHcloud en activant la double authentification'
 section: Sécurité
-hidden: true
+hidden: false
 ---
 
 **Dernière mise à jour le 15/11/2019**
+
 ## Objectif
 
 OVHcloud met à votre disposition des outils pour renforcer la sécurité de votre compte et de vos services. 
@@ -83,8 +84,11 @@ Vous pouvez également utiliser l'un des codes de sécurité mis à votre dispos
 > La suppression d'un périphérique ne désactive pas la double authentification. 
 > 
 > Avant de supprimer un périphérique et afin de ne pas bloquer l'accès à votre compte, vérifiez donc que vous disposez au choix :
+> 
 > - d'un périphérique fonctionnel ;
+> 
 > - d'une autre méthode de double authentification fonctionnelle ; 
+> 
 > - de codes de sécurité valides.
 > 
 
