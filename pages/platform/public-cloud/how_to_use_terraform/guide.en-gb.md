@@ -15,7 +15,7 @@ OpenStack is a cloud operating system open source for creating public and privat
 ### Prerequisites
 - An OpenStack user
 - OpenStack environment variables
-- [Your OVH API identifiers and OVH authorisation key](https://eu.api.ovh.com/g934.first_step_with_api){.external}
+- [Your OVH API identifiers and OVH authorisation key](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}
 - [An SSH key](../guide.en-gb.md){.ref}
 - [Terraform executable](https://www.terraform.io/intro/getting-started/install.html){.external}
 - [OpenStack executables](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux_OpenStack_Platform/4/html/End_User_Guide/install_clients.html){.external}

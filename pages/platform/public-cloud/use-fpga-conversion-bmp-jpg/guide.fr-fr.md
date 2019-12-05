@@ -20,7 +20,7 @@ Au-delà de la conversion d'images, l'intérêt de ce guide est de montrer le fo
 
 - Avoir créé [un utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/){.external}.
 - Avoir mis en place [les variables d'environnement OpenStack](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/){.external}.
-- Avoir généré [vos identifiants API et les clés d'autorisation OVH](https://eu.api.ovh.com/g934.first_step_with_api){.external}.
+- Avoir généré [vos identifiants API et les clés d'autorisation OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api){.external}.
 - [Posséder une clé SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/){.external}.
 - [Avoir installé le client OpenStack](https://github.com/openstack/python-openstackclient){.external}.
 - Être inscrit à la [bêta FPGA sur Public Cloud](https://labs.ovh.com/fpga-accelerators-on-public-cloud){.external}.

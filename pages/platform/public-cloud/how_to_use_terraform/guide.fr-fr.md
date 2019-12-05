@@ -15,7 +15,7 @@ OpenStack est un système d'exploitation de cloud open source pour créer des in
 ### Prérequis
 - [Un utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/){.external}
 - [Les variables d'environnement OpenStack](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/){.external}
-- [Vos identifiants API et clés d'autorisations OVH](https://eu.api.ovh.com/g934.first_step_with_api){.external}
+- [Vos identifiants API et clés d'autorisations OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}
 - [Une clé SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/){.external}
 - [L'exécutable Terraform](https://www.terraform.io/intro/getting-started/install.html){.external}
 - [Les clients OpenStack (nova, glance)](https://github.com/openstack/python-openstackclient){.external}
