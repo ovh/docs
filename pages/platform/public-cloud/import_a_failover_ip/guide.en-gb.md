@@ -27,13 +27,13 @@ If you need to configure a failover IP address on your instances because:
 
 ## Instructions
 
-Firstly, log in to the [OVH Control Ppanel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Public Cloud`{.action} menu. Then click in your `Project`{.action}.
+Firstly, log in to the [OVH Control Ppanel](https://www.ovh.com/auth/?action=gotomanager){.external}, click the `Public Cloud`{.action} menu and then click in your `Project`{.action}.
 
-Then, select `Failover IP`{.action}.
+Then, select `Failover IP`{.action} under Network section.
 
 ![IP Section](images/import.png){.thumbnail}
 
-Next, all the IP addresses that you can import will appear:
+Once you have done, all the IP addresses that can be imported to your Public Cloud project will be displayed:
 
 ![IP Section](images/import1.png){.thumbnail}
 
