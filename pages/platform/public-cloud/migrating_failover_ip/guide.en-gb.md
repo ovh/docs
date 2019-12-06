@@ -6,6 +6,7 @@ legacy_guide_number: g1890
 section: Knowledge Base
 ---
 
+**Last updated 4th December 2019**
 
 ## 
 This guide explains how to migrate a failover IP from one instance to another. This action generally limits or removes the possibility that your server will be unavailable and it lets you:
