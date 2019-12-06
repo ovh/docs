@@ -43,6 +43,10 @@ Once you are logged in to the [OVH Control Panel](https://www.ovh.com/auth/?acti
 
 ![public-cloud](images/gpu.png){.thumbnail}
 
+The, select the Linux OS of your choise:
+
+![public-cloud](images/linuxchoice.png){.thumbnail}
+
 The instance will start a few seconds later. You can then log in and check for the graphics card: 
 
 ```ssh
@@ -99,7 +103,14 @@ The GPU instance is now fully functional and usable.
 
 There are incompatibilities between the NVIDIA driver and the *KVM/pci_passthrough* virtualisation solution. **Windows standard images do not work.**
 
-We offer special images, based on a virtual UEFI BIOS, which allow the driver to function correctly:
+We offer special images, based on a virtual UEFI BIOS, which allow the driver to function correctly
+
+
+Once you are logged in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in your Public Cloud project, click on `Create an instance`{.action}and choose a GPU instance:
+
+![public-cloud](images/gpu.png){.thumbnail}
+
+Then, select the Windows of your choise: 
 
 ![public-cloud](images/oschoice.png){.thumbnail}
 
