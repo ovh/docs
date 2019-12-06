@@ -6,7 +6,7 @@ legacy_guide_number: g2129
 section: Knowledge Base
 ---
 
-**Last updated 15th April 2019**
+**Last updated 6th December 2019**
 
 ## Objective
 
@@ -19,7 +19,6 @@ When you delete your Public Cloud project, a final invoice will be created for t
 Please note that deleting a project is not the same thing as deactivating your Public Cloud instances. When you delete a project, the resources contained in it will be destroyed. This action can not be undone.
 >
 
-
 **This guide will show you how to delete a Public Cloud project.**
 
 ## Requirements
@@ -29,23 +28,19 @@ Please note that deleting a project is not the same thing as deactivating your P
 
 ## Instructions
 
-First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu.
+First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Public Cloud`{.action} menu.
 
-Then expand the `Servers`{.action} list and select the project you want to delete.
+Then, click in `Project settings`{.action} bellow Project Management.
 
-![cloud menu](images/delete-project-01.png){.thumbnail}
+![cloud menu](images/deleteproject.png){.thumbnail}
 
-Next, select the `Compute`{.action} tab.
+Next, click in `Delete project`{.action} tab.
 
-![compute tab](images/delete-project-02.png){.thumbnail}
-
-Now click the `Actions`{.action} button and then select `Delete a project`{.action}.
-
-![actions menu](images/delete-project-03.png){.thumbnail}
+![compute tab](images/deleteproject1.png){.thumbnail}
 
 You will now see a confirmation message, which lists the resources that will be either parked or destroyed when the project is deleted. Please read the message carefully and then click `Delete project`{.action} when you're ready to proceed.
 
-![confirmation message](images/delete-project-04.png){.thumbnail}
+![compute tab](images/deleteproject2.png){.thumbnail}
 
 When you click the delete button, an email will be sent to you asking you to either confirm or cancel the project deletion. After clicking the confirmation link, you'll be taken to a web page where you'll need to enter your account password. After entering and confirming your password, your project will be deleted.
 
