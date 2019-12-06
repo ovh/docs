@@ -5,6 +5,7 @@ excerpt: Step-by-step documentation on how to use an SSH key to simplify access 
 section: Knowledge Base
 ---
 
+**Last updated 4th December 2019**
 
 ## Preamble
 SSH is a protocol making it possible to access and communicate with a server in an authenticated and encrypted manner.
