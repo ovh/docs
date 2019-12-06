@@ -39,7 +39,7 @@ Then, click in the 3 dots on the right of the Public Cloud project and click in 
 
 ![](images/contactchange1.png){.thumbnail}
 
-Once you have configured the new contacts, the two OVH accounts will receive an email containing a code allowing them to confirm this change:
+Once you have confirmed the new contacts, both OVH accounts will receive an email containing a code allowing them to confirm this change:
 
 ![](images/contactchange2.png){.thumbnail}
 
@@ -49,7 +49,7 @@ To do this go to your account properties and select my contacts on the right:
 
 ![](images/controlpanel.png){.thumbnail}
 
-For the original contact, you have to go to the My requests section:
+In both contacts Control Panel, you have to go to the My requests section:
 
 ![](images/controlpanel1.png){.thumbnail}
 
