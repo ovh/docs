@@ -27,6 +27,7 @@ The GPUs offered are the NVIDIA Tesla V100.
 ## Instructions
 
 You will find the information needed to deploy a GPU instance on Linux or Windows below.
+Please bear in mind that you cannot change the Instance OS from Linux to Windows or vice-versa. Therefore, please be sure that you create the instance with the correct OS by default.
 
 
 ### On Linux
@@ -100,26 +101,17 @@ There are incompatibilities between the NVIDIA driver and the *KVM/pci_passthrou
 
 We offer special images, based on a virtual UEFI BIOS, which allow the driver to function correctly:
 
-![public-cloud](images/EN-WindowsImages.png){.thumbnail}
-
-
-> [!warning]
->
-> We cannot guarantee that the solution will work with all future versions of the NVIDIA driver.
->
-> Before performing any update of the NVIDIA driver, we strongly recommend that you take a snapshot that will allow you to do a rollback, if necessary.
->
+![public-cloud](images/oschoice.png){.thumbnail}
 
 Once your GPU instance has started, you will need to install the NVIDIA driver from the [official website](https://www.nvidia.com/Download/index.aspx){.external}.
 
-Start an instance using one of the available GPU types (win-g1-15, win-g1-30...). This should only take a few minutes.
+Start an instance using one of the available GPU types (t1-45, t1-90, t1-180...). This should only take a few minutes.
 
 Afterwards, all that’s left to do is to install the required driver, which will then be displayed here:
 
+![public-cloud](images/driverson.png){.thumbnail}
 
-![public-cloud](images/WindowsDriverVersion.png){.thumbnail}
-
-![public-cloud](images/WindowsDeviceManager.png){.thumbnail}
+![public-cloud](images/devicemanager.png){.thumbnail}
 
 
 ## Going further
