@@ -6,6 +6,7 @@ legacy_guide_number: g2106
 section: Knowledge Base
 ---
 
+**Last updated 6th December 2019**
 
 ## 
 With the OVH Public Cloud you can now change the contacts for billing and project administration. 
