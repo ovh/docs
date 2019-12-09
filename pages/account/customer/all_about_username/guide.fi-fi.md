@@ -1,10 +1,9 @@
 ---
-title: Kaikki mitä asiakastunnuksesta tarvitsee tietää
+title: 'Kaikki mitä asiakastunnuksesta tarvitsee tietää'
 excerpt: Asiakastunnus
 slug: kaikki_mita_asiakastunnuksesta_tarvitsee_tietaa
 legacy_guide_number: g2123
 ---
-
 
 ## 
 Asiakastunnuksilla:
@@ -21,7 +20,7 @@ Sitä kutsutaan myös nimellä NIC-handle.
 
 
 ## 
-Mikäli sinulla ei ole vielä asiakastunnusta, voit mennä sivulle [Luo asiakastili](https://www.ovh-hosting.fi/tuki/asiakaspalvelu/). Tulet verkkolomakkeeseen, johon täytät yhteystietosi. Tarkista, että annat voimassa olevan sähköpostiosoitteen.
+Mikäli sinulla ei ole vielä asiakastunnusta, voit mennä sivulle [Luo asiakastili](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh-hosting.fi/&ovhSubsidiary=fi). Tulet verkkolomakkeeseen, johon täytät yhteystietosi. Tarkista, että annat voimassa olevan sähköpostiosoitteen.
 
 ## Vinkki:
 Suosittelemme antamaan verkkotunnuksesi ulkopuolisen sähköpostiosoitteen sekä varasähköpostiosoitteen.
