@@ -89,7 +89,7 @@ La configuration du tunnel se fait en complétant deux groupes de paramètres ap
 
 #### 3.1 Ajouter la Phase 1
 
-Dans le menu `VPN`{.action}, puis la rubrique `Tunnel setting`{.action}, cliquez sur le `**+**`{.action} à droite de l’écran.
+Dans le menu `VPN`{.action}, puis la rubrique `Tunnel setting`{.action}, cliquez sur le `+`{.action} à droite de l’écran.
 
 ![](images/image-EN-9.png)
 
@@ -106,13 +106,13 @@ Vous pouvez conserver les valeurs par défaut :
 
 Vous devez néanmoins renseigner impérativement l’IP du point de connexion IPSec d’OVHcloud, dans le champ `Remote gateway`{.action}.
 
-##### 3.1.2 Phase 1  : authentification
+##### 3.1.2 Phase 1 : authentification
 
 Là encore, vous pouvez conserver les paramètres par défaut. Vous devrez juste saisir le mot de passe partagé dans le champ `Pre-Shared Key`{.action}.
 
 ![](images/image-EN-11.png)
 
-##### 3.1.2 Phase 1  : choix des algorithmes de chiffrement
+##### 3.1.3 Phase 1  : choix des algorithmes de chiffrement
 
 ![](images/image-EN-12.png)
 
@@ -139,7 +139,7 @@ Aucune phase 2 n’est alors disponible, il faut donc en ajouter une :
 
 ![](images/image-EN-15.png)
 
-Cliquez sur le bouton `**+** `{.action}.
+Cliquez sur le bouton `+ `{.action}.
 
 ![](images/image-EN-16.png)
 
@@ -168,7 +168,7 @@ Le réseau sera forcément en /23 (512 IPs).
 
 ![](images/image-EN-19.png)
 
-##### 3.2.4 Phase 2 : Echanges de clés
+##### 3.2.4 Phase 2 : Échanges de clés
 
 Les paramètres supportés sont
 
