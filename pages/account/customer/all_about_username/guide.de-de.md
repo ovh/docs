@@ -1,9 +1,8 @@
 ---
-title: Alles über Ihre OVH Kundenkennung
+title: 'Alles über Ihre OVH Kundenkennung'
 slug: alles_uber_ihre_ovh_kundenkennung
 legacy_guide_number: g2123
 ---
-
 
 Mit Ihrer Kundenkennung können Sie:
 
@@ -17,7 +16,7 @@ Die Kundenkennung hat stets folgende Form: dm429850-ovh
 
 Sie wird auch als NIC-handle bezeichnet.
 
-Wenn Sie bisher noch keine OVH Kundenkennung haben, können Sie sich [hier eine erstellen](https://www.ovh.de/support/new_nic.xml).
+Wenn Sie bisher noch keine OVH Kundenkennung haben, können Sie sich [hier eine erstellen](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 Füllen Sie das Online-Formular vollständig aus und achten Sie darauf, eine gültige E-Mail-Adresse anzugeben.
 
 ## Tipp:

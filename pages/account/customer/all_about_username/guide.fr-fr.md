@@ -1,10 +1,9 @@
 ---
-title: Tout savoir sur l’identifiant client
+title: 'Tout savoir sur l’identifiant client'
 slug: tout-savoir-sur-identifiant-client
-excerpt: Ce guide vous detaille les fonctionnalites de l’identifiant client ainsi que les methodes pour le recuperer.
-Section: Premiers pas
+excerpt: 'Ce guide vous detaille les fonctionnalites de l’identifiant client ainsi que les methodes pour le recuperer.'
+Section: 'Premiers pas'
 ---
-
 
 ## A quoi sert-il ?
 L'identifiant client vous permet :
@@ -19,7 +18,7 @@ Il est aussi appelé NIC-handle.
 
 
 ## Comment créer un identifiant client?
-Si vous n'avez pas encore d'identifiant, il suffit de vous rendre sur la page de [création](https://www.ovh.com/fr/support/new_nic.xml){.external}. Vous arriverez sur un formulaire en ligne. Entrez vos coordonnées en faisant bien attention à nous communiquer une adresse e-mail valide.
+Si vous n'avez pas encore d'identifiant, il suffit de vous rendre sur la page de [création](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Vous arriverez sur un formulaire en ligne. Entrez vos coordonnées en faisant bien attention à nous communiquer une adresse e-mail valide.
 
 
 

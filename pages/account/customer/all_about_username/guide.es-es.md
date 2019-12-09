@@ -17,7 +17,7 @@ Tiene el siguiente formato: **dm429850-OVH**
 
 
 ## ¿Cómo crear un ID de cliente?
-Si aún no tiene un ID de cliente, acceda a la siguiente [página](https://www.ovh.es/soporte/new_nic.xml){.external}.
+Si aún no tiene un ID de cliente, acceda a la siguiente [página](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 Complete el formulario para crear su cuenta introduciendo una dirección de correo electrónico válida.
 

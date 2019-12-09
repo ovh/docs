@@ -1,10 +1,9 @@
 ---
-title: Viskas apie kliento identifikatorių
-excerpt: Kliento identifikatorius
+title: 'Viskas apie kliento identifikatorių'
+excerpt: 'Kliento identifikatorius'
 slug: viskas_apie_kliento_identifikatoriu
 legacy_guide_number: g2123
 ---
-
 
 ## 
 Kliento identifikatorius jums leidžia:
@@ -21,7 +20,7 @@ Identifikatorius taip pat vadinamas NIC-handle.
 
 
 ## 
-Jei dar neturite identifikatoriaus, jį galite susikurti [OVH paskyros kūrimo puslapyje](https://www.ovh.lt/pagalba/new_nic.xml). Jums tereikia užpildyti on-line formą pateikiant galiojančius kontaktinius duomenis.
+Jei dar neturite identifikatoriaus, jį galite susikurti [OVH paskyros kūrimo puslapyje](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.lt/&ovhSubsidiary=lt). Jums tereikia užpildyti on-line formą pateikiant galiojančius kontaktinius duomenis.
 
 ## Patarimas:
 Rekomenduojame nurodyti el. pašto adresą, nesusietą su jūsų domenu, taip pat atsarginį el. pašto adresą.

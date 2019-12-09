@@ -1,9 +1,8 @@
 ---
-title: All about your username
+title: 'All about your username'
 slug: all_about_your_username
 legacy_guide_number: g2123
 ---
-
 
 ## 
 Your username lets you:
@@ -21,7 +20,7 @@ It is also called a nichandle.
 
 
 ## 
-If you do not already have a username, you just have to go to [this page](https://www.ovh.co.uk/support/new_nic.xml).
+If you do not already have a username, you just have to go to [this page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.cz/&ovhSubsidiary=cz).
 You will find an online form. Enter your details, paying special attention to provide a valid email address.
 
 ## Advice:

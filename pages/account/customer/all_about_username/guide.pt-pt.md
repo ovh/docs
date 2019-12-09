@@ -1,10 +1,9 @@
 ---
-title: Saber tudo sobre o identificador de cliente
-excerpt: O identificador de cliente
+title: 'Saber tudo sobre o identificador de cliente'
+excerpt: 'O identificador de cliente'
 slug: saber_tudo_sobre_o_identificador_de_cliente
 legacy_guide_number: g2123
 ---
-
 
 ## 
 O identificador de cliente permite-lhe:
@@ -21,7 +20,7 @@ Ele está presente sob a forma: dm429850-OVH
 
 
 ## 
-Se ainda não possui um identificador de cliente basta aceder à página de [criação](https://www.ovh.pt/suporte/new_nic.xml).
+Se ainda não possui um identificador de cliente basta aceder à página de [criação](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 Ser-lhe-á apresentado um formulário online, devendo introduzir os seus dados e deverá ter atenção ao endereço de e-mail, o mesmo terá de ser um e-mail válido.
 
 ## Conselho:

@@ -1,10 +1,9 @@
 ---
-title: Identyfikator klienta
-excerpt: Identyfikator klienta
+title: 'Identyfikator klienta'
+excerpt: 'Identyfikator klienta'
 slug: identyfikator_klienta
 legacy_guide_number: g2123
 ---
-
 
 ## 
 Identyfikator klienta pozwala na:
@@ -21,7 +20,7 @@ Identyfikator klienta nosi również nazwę NIC-handle.
 
 
 ## 
-Jeśli nie masz jeszcze identyfikatora klienta, przejdź na tę [stronę](https://www.ovh.pl/pomoc/new_nic.xml). Pojawi się formularz. Wpisz swoje dane. Pamiętaj, żeby podać prawidłowy aktywny adres e-mail.
+Jeśli nie masz jeszcze identyfikatora klienta, przejdź na tę [stronę](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Pojawi się formularz. Wpisz swoje dane. Pamiętaj, żeby podać prawidłowy aktywny adres e-mail.
 
 ## Uwaga:
 Zalecamy podanie zewnętrznego adresu e-mail w przypadku głównego oraz zapasowego adresu e-mail do kontaktu.

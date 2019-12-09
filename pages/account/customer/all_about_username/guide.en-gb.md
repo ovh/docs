@@ -1,10 +1,9 @@
 ---
-title: All about your username
+title: 'All about your username'
 slug: all-about-your-username
-excerpt: This guide explains how your username works and the different ways of retrieving it.
-section: Account details
+excerpt: 'This guide explains how your username works and the different ways of retrieving it.'
+section: 'Account details'
 ---
-
 
 ## What is it used for?
 Your username lets you:
@@ -19,7 +18,7 @@ It is also called a nichandle.
 
 
 ## How do I create a username?
-If you do not already have a username, you just have to go to [this page](https://www.ovh.co.uk/support/new_nic.xml){.external}. You will find an online form. Enter your details, paying special attention to provide a valid email address.
+If you do not already have a username, you just have to go to [this page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. You will find an online form. Enter your details, paying special attention to provide a valid email address.
 
 
 
