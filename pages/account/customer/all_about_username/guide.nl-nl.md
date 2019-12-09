@@ -1,10 +1,9 @@
 ---
-title: Alles over uw gebruikersnaam
+title: 'Alles over uw gebruikersnaam'
 excerpt: Gebruikersnaam
 slug: alles_over_uw_gebruikersnaam
 legacy_guide_number: g2123
 ---
-
 
 ## 
 Met uw gebruikersnaam kunt u: 
@@ -22,7 +21,7 @@ Het wordt ook wel een NIC handle genoemd.
 
 
 ## 
-Als u nog geen gebruikersnaam hebt hoeft u alleen maar naar [deze pagina](https://https://www.ovh.nl/support/new_nic.xml) te gaan. 
+Als u nog geen gebruikersnaam hebt hoeft u alleen maar naar [deze pagina](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl) te gaan. 
 U vindt er een online formulier. Voer aub uw gegevens in en ga dubbel na of u een geldig e-mailadres hebt ingevoerd.
 
 ## Tip:
