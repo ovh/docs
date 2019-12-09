@@ -1,10 +1,9 @@
 ---
-title: Tutto sull’identificativo cliente OVH
-excerpt: L'identificativo cliente OVH
+title: 'Tutto sull’identificativo cliente OVH'
+excerpt: 'L''identificativo cliente OVH'
 slug: tutto_sullidentificativo_cliente_ovh
 legacy_guide_number: g2123
 ---
-
 
 ## 
 L'identificativo cliente OVH ti permette di:
@@ -19,7 +18,7 @@ Viene anche chiamato NIC-handle e ha un formato di questo tipo: dm429850-OVH.
 
 
 ## 
-Accedi alla pagina di [creazione dell'account](https://www.ovh.it/supporto/new_nic.xml) e inserisci i tuoi dati, facendo attenzione a comunicarci un indirizzo email valido.
+Accedi alla pagina di [creazione dell'account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e inserisci i tuoi dati, facendo attenzione a comunicarci un indirizzo email valido.
 
 ## Attenzione:
 Ti consigliamo di inserire un indirizzo email esterno al tuo dominio e un secondo indirizzo email funzionante.
