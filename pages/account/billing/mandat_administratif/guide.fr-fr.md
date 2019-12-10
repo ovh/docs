@@ -2,7 +2,7 @@
 title: 'Payer une commande en tant qu’administration publique'
 slug: reglement-par-mandat-administratif
 legacy_guide_number: g1362
-section: 'Premiers pas'
+section: Facturation
 ---
 
 **Dernière mise à jour le 31/05/2018**
