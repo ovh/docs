@@ -2,7 +2,7 @@
 title: 'Renouveler vos services via l''API OVH'
 slug: renouveler-manuellement-service-via-api
 excerpt: 'Découvrez comment renouveler vos services via API OVH'
-section: 'Premiers pas'
+section: 'Gérer mes services et leur renouvellement'
 ---
 
 **Dernière mise à jour le 25/05/2018**

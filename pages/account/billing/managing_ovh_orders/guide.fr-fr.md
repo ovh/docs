@@ -2,7 +2,7 @@
 title: 'Gérer ses commandes OVH'
 slug: gerer-ses-commandes-ovh
 excerpt: 'Découvrez comment gérer vos commandes chez OVH'
-section: 'Gérer ses commandes, factures et services'
+section: Facturation
 ---
 
 **Dernière mise à jour le 16/10/2018**
