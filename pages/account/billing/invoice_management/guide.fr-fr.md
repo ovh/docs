@@ -1,5 +1,5 @@
 ---
-title: 'Gérer ses factures OVHcloud'
+title: 'Gérer mes factures OVHcloud'
 slug: gerer-factures-ovh
 excerpt: 'Découvrez comment gérer vos factures et les paiements liés à celles-ci'
 section: Facturation
