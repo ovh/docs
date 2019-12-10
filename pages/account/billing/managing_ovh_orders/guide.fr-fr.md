@@ -1,7 +1,7 @@
 ---
-title: 'Gérer ses commandes OVH'
+title: 'Gérer mes commandes OVHcloud'
 slug: gerer-ses-commandes-ovh
-excerpt: 'Découvrez comment gérer vos commandes chez OVH'
+excerpt: 'Découvrez comment gérer vos commandes chez OVHcloud'
 section: Facturation
 ---
 
