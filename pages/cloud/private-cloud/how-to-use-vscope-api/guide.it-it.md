@@ -67,11 +67,11 @@ La procedura descritta in questa guida è relativa all’utilizzo del protocollo
 
 Per accedere al servizio **Metrics Data Platforms** è necessario disporre di un token di lettura: la nuova versione di vScope, infatti, ne prevede uno per ogni utilizzatore dell’infrastruttura. 
 
-Per recuperare il codice di un utente specifico, effettua questa chiamata APIv6: 
+Per recuperare il codice di lettura di un utente specifico, effettua questa chiamata APIv6: 
 
 > [!api]
 > 
-> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/getVscopeMetricsToken
+> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 
 
 L’informazione richiesta viene mostrata nel campo **token** del risultato.
