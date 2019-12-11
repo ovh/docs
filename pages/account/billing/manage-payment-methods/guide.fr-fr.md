@@ -86,7 +86,7 @@ Commencez par obtenir l'ID du moyen de paiement :
 > @api {GET} /me/payment/method 
 >
 
-Supprimez ensuite le moyen de paiement en utilisant l’ID que vous avez obtenu à l’étape précédente.
+Supprimez ensuite le moyen de paiement en utilisant l’ID que vous avez obtenu à l’étape précédente :
 
 > [!api]
 >
