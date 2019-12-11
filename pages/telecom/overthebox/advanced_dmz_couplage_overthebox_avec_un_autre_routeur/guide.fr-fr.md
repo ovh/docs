@@ -22,7 +22,7 @@ L'intégralité de votre réseau **LAN** sera géré par votre routeur personel.
 - Configurez votre redirection
     - **Name** : DMZ
     - **Protocol** : TCP + UDP
-    - **External zone** : indiquez **WAN**
+    - **External zone** : indiquez **TUN**
     - **External port** : laissez vide
     - **Internal zone** : indiquez **LAN**
     - **Internal Ip** : Indiquer l'adresse IP de votre routeur
