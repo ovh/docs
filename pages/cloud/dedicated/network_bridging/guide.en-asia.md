@@ -261,10 +261,10 @@ network:
     ethernets:
         your-network-interface:
             addresses:
-            - your-failover-ip/32
+                - your-failover-ip/32
             nameservers:
                 addresses:
-                - 213.186.33.99
+                    - 213.186.33.99
                 search: []
             optional: true
             routes:
