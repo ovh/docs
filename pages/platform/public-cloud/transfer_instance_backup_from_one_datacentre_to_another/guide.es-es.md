@@ -45,7 +45,7 @@ En primer lugar, conéctese a su datacenter por SSH. A continuación, ejecute el
 Ejecute el siguiente comando para crear un backup de la instancia:
 
 ```
-#root@server:~$ openstack image create --id aa7115b3-83df-4375-b2ee-19339041dcfa bkp_server1
+openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
 ```
 
 ### Descargar el backup
