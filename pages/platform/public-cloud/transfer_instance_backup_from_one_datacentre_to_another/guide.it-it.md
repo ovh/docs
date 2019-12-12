@@ -46,7 +46,7 @@ Per prima cosa accedi al datacenter via SSH e visualizza l’elenco delle istanz
 Esegui questo comando per creare un backup dell’istanza:
 
 ```
-#root@server:~$ openstack image create --id aa7115b3-83df-4375-b2ee-19339041dcfa snap_server1
+openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
 ```
 
 ### Scarica il backup
