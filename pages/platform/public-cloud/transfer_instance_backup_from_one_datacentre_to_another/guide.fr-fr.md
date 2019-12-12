@@ -1,7 +1,7 @@
 ---
 title: 'Transférer la sauvegarde d’une instance d’un datacenter à un autre'
 slug: transferer-la-sauvegarde-dune-instance-dun-datacentre-a-lautre
-section: Actions via API et lignes de commande
+section: 'Actions via API et lignes de commande'
 excerpt: 'Découvrez comment effectuer ce déplacement tout en préservant la configuration et l’état de l’instance.'
 ---
 
@@ -45,7 +45,7 @@ Tout d'abord, établissez une connexion SSH vers votre datacenter. Puis lancez l
 Exécutez alors la commande ci-dessous afin de créer une sauvegarde de votre instance :
 
 ```
-#root@server:~$ openstack image create --id aa7115b3-83df-4375-b2ee-19339041dcfa snap_server1
+openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
 ```
 
 ### Télécharger la sauvegarde
