@@ -116,7 +116,7 @@ Your customer account displays the "global" PHP version. If you have a particula
 If you want to create this file yourself, just create a text file and include:
 
 ```
-<? php phpinfo(); ?>
+<?php phpinfo(); ?>
 ```
 
 Then save this file in .php format and call it
