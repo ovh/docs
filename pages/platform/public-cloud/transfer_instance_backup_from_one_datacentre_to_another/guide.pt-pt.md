@@ -1,7 +1,7 @@
 ---
 title: 'Transferir a cópia de segurança de uma instância de um datacenter para outro'
 slug: transferir-a-copia-de-seguranca-de-uma-instancia-de-um-datacenter-para-outro
-section: A partir da API e linhas de comandos
+section: 'A partir da API e linhas de comandos'
 excerpt: 'Saiba como realizar esta operação mantendo a configuração e o estado da instância'
 ---
 
@@ -45,7 +45,7 @@ Em primeiro lugar, deve estabelecer uma ligação SSH para o datacenter. De segu
 De seguida, execute o comando abaixo para criar uma cópia de segurança da sua instância:
 
 ```
-#root@server:~$ openstack image create --id aa7115b3-83df-4375-b2ee-19339041dcfa snap_server1
+openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
 ```
 
 ### Transferir a cópia de segurança
