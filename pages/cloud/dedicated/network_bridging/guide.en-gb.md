@@ -260,10 +260,10 @@ network:
     ethernets:
         (interface-name):
             addresses:
-            - FAILOVER_IP/32
+                - FAILOVER_IP/32
             nameservers:
                 addresses:
-                - 213.186.33.99
+                    - 213.186.33.99
                 search: []
             optional: true
             routes:
