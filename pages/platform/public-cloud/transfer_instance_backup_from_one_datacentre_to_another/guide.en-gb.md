@@ -3,7 +3,7 @@ title: 'Transfer an Instance backup from one datacentre to another'
 slug: transfer_instance_backup_from_one_datacentre_to_another
 excerpt: 'This guide will show you how to transfer an Instance backup from one datacentre to another while preserving the configuration and state of the Instance'
 legacy_guide_number: g1853
-section: API reference/CLI
+section: 'API reference/CLI'
 ---
 
 **Last updated 29th March 2019**
@@ -49,7 +49,7 @@ First, establish an SSH connection to your datacentre and then run the following
 Next, run the following command to create a backup of your Instance:
 
 ```
-#root@server:~$ openstack image create --id aa7115b3-83df-4375-b2ee-19339041dcfa snap_server1
+openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
 ```
 
 ### Download the backup
