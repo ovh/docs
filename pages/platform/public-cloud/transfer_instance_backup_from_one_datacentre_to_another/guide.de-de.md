@@ -45,7 +45,7 @@ Stellen Sie zunächst eine SSH-Verbindung zu Ihrem Rechenzentrum her. Führen Si
 Führen Sie anschließend den nachstehenden Befehl aus um ein Backup Ihrer Instanz zu erstellen:
 
 ```
-#root@server:~$ openstack image create --id aa7115b3-83df-4375-b2ee-19339041dcfa snap_server1
+openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
 ```
 
 ### Backup herunterladen

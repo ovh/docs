@@ -49,7 +49,7 @@ First, establish an SSH connection to your datacentre and then run the following
 Next, run the following command to create a backup of your Instance:
 
 ```
-#root@server:~$ openstack image create --id aa7115b3-83df-4375-b2ee-19339041dcfa snap_server1
+openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
 ```
 
 ### Download the backup
