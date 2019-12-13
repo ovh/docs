@@ -73,11 +73,13 @@ From the OPNsense interface, go to the `VPN`{.action} menu on the left, `IPSec`{
 
 ![](images/image-EN-8.png)
 
-##### 3.1 Set up IPSec tunnel.
+### Step 3: Set up IPSec tunnel.
 
 You can configure the IPSec tunnel by defining two sets of parameters: **Phase 1** and **Phase 2**.
 
-* In the `VPN`{.action} menu, go to `Tunnel settings`{.action}, and click on the `+`{.action} to add a new **Phase 1**:
+##### 3.1 Set up Phase 1.
+
+In the `VPN`{.action} menu, go to `Tunnel settings`{.action}, and click on the `+`{.action} to add a new **Phase 1**:
 
 ![](images/image-EN-9.png)
 
