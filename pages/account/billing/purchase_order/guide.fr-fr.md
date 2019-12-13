@@ -1,7 +1,7 @@
 ---
 title: 'Notion de Numéro de commande ou Purchase Order (PO)'
 slug: purchase-order
-excerpt: 'Conprendre la notion de numéro de commande ou purchase order et l'appliquer dans le cadre du règlement des factures OVHCloud'
+excerpt: 'Comprendre la notion de numéro de commande ou purchase order et l'appliquer dans le cadre du réglement des factures OVHcloud'
 section: 'Gérer ses commandes, factures et services'
 ---
 
@@ -9,7 +9,7 @@ section: 'Gérer ses commandes, factures et services'
 
 ## Objectif
 
-**Ce guide vous explique la notion de Numéro de commande ou Purchase Order (PO) appliqué à la facturation OVHCloud.**
+Ce guide vous explique la notion de Numéro de commande ou Purchase Order (PO) appliqué à la facturation OVHCloud.
 
 ## Prérequis
 
@@ -17,18 +17,18 @@ section: 'Gérer ses commandes, factures et services'
 
 ### Numéro de commande et Purchase Order (PO) Number
 
-Dans le cadre d'achat de biens ou de services, les entreprises sont amenées à valider des bons de commande. La plupart du temps, cette validation est effectuée effectué en retournant un document (format papier ou numérique) à en-tête de l'entreprise qui rappelle les biens ou services achetés tout en  précisant un numéro de commande.
-Dans le monde anglo-saxon ce document est appelé **Purchase Order** et est abrégé en **PO**.
+Dans le cadre d'achats de biens ou de services, les entreprises sont amenées à valider des bons de commandes. La plupart du temps, cette validation est effectuée en retournant un document (format papier ou numérique) à en-tête de l'entreprise qui rappelle les biens ou services achetés tout en  précisant un numéro de commande.
+Dans le monde anglo-saxon, ce document est appelé **Purchase Order** et est abrégé en **PO**.
 
-Pour l'entreprise qui émet le PO, ce document a pour objectif de contrôler les achats de biens et de services auprès de ses fournisseurs, notamment en imposant que l'ensemble des factures émises indique un numéro de commande (ou PO Number).
+Pour l'entreprise qui émet le PO, ce document a pour objectif de contrôler les achats de biens et de services auprès de ses fournisseurs, notamment en imposant que l'ensemble des factures émises indiquent un numéro de commande (ou PO Number).
 
-Il existe essentiellement deux (2) types de commandes, décrites ci-dessous.
+Il existe essentiellement deux types de commandes, décrites ci-dessous.
 
 #### Commande fermée / Purchase Order (PO)
 
 Il s'agit d'un document confirmant la commande de biens ou services pour une quantité fixe et pour une durée fixe.
 
-Pour OVHCloud, le document doit donc contenir a minima les informations suivantes dans :
+Pour OVHcloud, le document doit donc contenir a minima les informations suivantes :
 
 * Raison sociale du contractant
 * Numéro de commande
@@ -42,7 +42,7 @@ Pour OVHCloud, le document doit donc contenir a minima les informations suivante
 
 Il s'agit d'un document confirmant la commande de biens ou services pour une quantité variable avec un montant maximum et pour une durée fixe.
 
-Pour OVHCloud, le document doit donc contenir à minima les informations suivantes dans :
+Pour OVHcloud, le document doit donc contenir a minima les informations suivantes :
 
 * Raison sociale du contractant
 * Numéro de commande
