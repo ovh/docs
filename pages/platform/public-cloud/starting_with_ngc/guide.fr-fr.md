@@ -2,6 +2,7 @@
 title: 'Débuter avec NGC sur OpenStack'
 slug: debuter_ngc_openstack
 excerpt: 'Utilisez NVIDIA GPU Cloud (NGC) pour profiter du développement accéléré par GPU'
+hidden: true
 ---
 
 **Dernière mise à jour le 11/12/2018**
