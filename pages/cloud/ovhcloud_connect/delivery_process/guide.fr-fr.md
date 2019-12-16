@@ -1,8 +1,8 @@
 ---
-title: 'OVHcloud Connect Dedicated Delivery Process'
+title: 'OVHcloud Connect Dedicated - Processus de Mise en place '
 slug: occdedicated-delivery
-excerpt: 'OVHcloud Connect Dedicated Delivery Process'
-section: Delivery Process
+excerpt: 'OVHcloud Connect Dedicated - Processus de Mise en place'
+section: Dedicated
 ---
 
 **Dernière mise à jour le 12/12/2019**
