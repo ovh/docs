@@ -1,12 +1,13 @@
 ---
-title: Configurer IPv6 sur une instance Public Cloud
+title: 'Configurer IPv6 sur une instance Public Cloud'
 slug: configurer-ipv6
-excerpt: Tutoriel de configuration du protocole IPv6 sur une instance Public Cloud
-section: Base de connaissances
+excerpt: 'Tutoriel de configuration du protocole IPv6 sur une instance Public Cloud'
+section: 'Base de connaissances'
 ---
 
+**Dernière mise à jour le 25/11/2019**
 
-## Préambule
+## Objectif
 Internet Protocol version 6 (IPv6) est la dernière version du Internet Protocol (IP). Il est conçu pour résoudre l’épuisement longuement anticipé des adresses IPv4 en utilisant des adresses composées de 128-bits au lieu du traditionnel 32-bits de l’IPv4.
 
 Chaque instance Public Cloud est livrée avec une adresse IPv4 et une adresse IPv6.
@@ -15,18 +16,17 @@ Par défaut, seule l'adresse IPv4 est configurée.
 
 Dans ce tutoriel, nous allons vous apprendre à configurer une adresse IPv6 sur une instance Public Cloud.
 
+## Prérequis
 
+* Une instance Public Cloud, le modèle importe peu.
+* Connaissance de SSH.
+* Connaissances basiques en réseaux.
 
-> [!primary]
->
-> Prérequis :
-> - Une instance Public Cloud, le modèle importe peu.
-> - Connaissance de SSH.
-> - Connaissances basiques en réseaux.
->
+## En pratique
 
 ### Lexique
-Afin d'utiliser la même terminologie, voici un lexique rapide des termes utilisés dans ce tutoriel :
+
+Voici un lexique rapide des termes utilisés dans ce tutoriel :
 
 |Lexique|Description|
 |---|---|
@@ -36,91 +36,34 @@ Afin d'utiliser la même terminologie, voici un lexique rapide des termes utilis
 |IPv6_GATEWAY|La passerelle de votre bloc IPv6|
 
 
-## Obtenir les informations reseaux necessaires
-La première étape consiste à récupérer 2 informations : l'adresse IPV6  et la Gateway IPv6 assignées à votre instance. Deux méthodes sont détaillées ci-dessous, via votre Espace Client ou via API.
+### Récupérer les informations réseaux
 
+Connectez-vous à votre espace client, sélectionnez le menu `Instances`{.action} puis cliquez sur `Détails de l'instance`{.action}.
 
-### Via votre Espace Client
-Connectez-vous à votre [Espace Client OVH](https://www.ovh.com/manager/cloud){.external}, puis dirigez-vous dans votre projet Public Cloud, rubrique `Infrastructure`{.action}.
+![public-cloud ipv6](images/pcipv61.png){.thumbnail}
 
-Votre IPv6 et Gateway apparaissent sur la page principale, comme représenté sur cette capture d'écran :
+Toutes les informations nécessaires seront visibles dans la partie **Réseaux**.
 
+![public-cloud ipv6](images/pcipv62.png){.thumbnail}
 
-![public-cloud manager](images/manager1.png){.thumbnail}
+### Exemples de configurations persistantes
 
-Chaque instance a donc deux IPs. Comme expliqué précédemment, par défaut seule l'IPv4 est configurée.
-
-Votre Gateway devient visible en cliquant sur le `?`{.action} point d'interrogation, comme  ci-dessous :
-
-
-![public-cloud manager](images/manager2.png){.thumbnail}
-
-Laissez cette page ouverte, nous en aurons besoin dans la prochaine étape.
-
-
-### Via API OVH
-
-
-> [!primary]
->
-> Si vous préférez passer par l'API pour récupérer vos informations réseaux, lisez la suite.
-> Si vous êtes passés par l'Espace Client, vous pouvez passer à la prochaine section.
+> [!primary] **Exemples**
 > 
-
-Vous pouvez écrire un script ou tester notre console sur [https://api.ovh.com/](https://api.ovh.com/){.external}
-
-Une fois connecté avec vos identifiants personnels, voici l'appel API nécessaire :
-
-
-> [!api]
+>Les informations fournies ci-dessous le sont à titre d'exemples.
 >
-> @api {GET} /cloud/project/{serviceName}/instance
-> 
-Celui-ci vous retournera l'ensemble des instances de votre projet, et leurs spécificités. Dans notre cas cela s'apparente à :
+>Étant l'administrateur de vos services, il vous incombe d'adapter ceux-ci à votre distribution.
+>
 
+En premier lieu, connectez-vous à votre instance en SSH.
 
-![public-cloud manager](images/api1.png){.thumbnail}
+#### **Sur Debian / Ubuntu**
 
-gardez cette page ouverte, nous en aurons besoin dans la prochaine étape.
+Considérant que votre interface est eth0 et que vous vous trouvez sur un OS Debian, la configuration à rajouter devrait ressembler à ceci :
 
+Fichier à modifier (avec privilèges su) : /etc/network/interfaces
 
-## Appliquer IPv6 sur differentes distributions
-Nous venons de récupérer toutes les informations nécessaires pour la configuration IPv6.
-
-La premiere étape est de vous connecter en SSH à votre instance. Si besoin, suivez [nos guides](../guide.fr-fr.md){.ref} !
-
-Ensuite, choisissez la méthode d'application en fonction de vos besoins.
-
-
-### Application non persistante
-Cette configuration sera perdue après un redémarrage de votre instance Public Cloud (configuration non persistante). Ces commandes sont à taper en *bash* dans votre console, avec les informations réseaux récupérées précedemment.
-
-Considérant que votre interface est eth0, la configuration devrait ressembler à ceci :
-
-
-```bash
-ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
-ip -6 route add IPV6_GATEWAY dev eth0
-ip -6 route add default via IPV6_GATEWAY dev eth0
 ```
-
-Dans notre exemple cela s'apparente à :
-
-
-```bash
-ip addr add 2001:41d0:xxx:xxxx::999/128 dev eth0
-ip -6 route add 2001:41d0::xxx:xxxx::111 dev eth0
-ip -6 route add default via 2001:41d0::xxx:xxxx::111 dev eth0
-```
-
-
-### Application persistante sur Debian &amp; derives (Ubuntu, Crunchbang, SteamOS...)
-Considérant que votre interface est eth0, la configuration à rajouter devrait ressembler à ceci :
-
-Fichier à modifier (avec privilèges sudo) : */etc/network/interfaces*
-
-
-```bash
 iface eth0 inet6 static
 address YOUR_IPV6
 netmask IPV6_PREFIX
@@ -130,10 +73,9 @@ pre-down /sbin/ip -6 route del default via IPV6_GATEWAY dev eth0
 pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 ```
 
-Dans notre exemple cela s'apparente à :
+Voici un exemple concret :
 
-
-```bash
+```
 iface eth0 inet6 static
 address 2001:41d0:xxx:xxxx::999
 netmask 128
@@ -142,57 +84,69 @@ post-up /sbin/ip -6 route add default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 ```
+#### **Sur RedHat / CentOS**
 
+Considérant que votre interface est eth0, la configuration devrait ressembler à ceci :
 
-### Application persistante sur Redhat &amp; derives (CentOS, ClearOS...)
-Considérant que votre interface est eth0, la configuration devrait ressembler à ceci:
+Fichier à modifier (avec privilèges sudo) : /etc/sysconfig/network-scripts/ifcfg-eth0
 
-Fichier à modifier (avec privilèges sudo) : */etc/sysconfig/network-scripts/ifcfg-eth0*
-
-
-```bash
+```
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
 
-Dans notre exemple cela s'apparente à :
+Voici un exemple concret :
 
-
-```bash
+```
 IPV6INIT=yes
 IPV6ADDR=2001:41d0:xxx:xxxx::999
 IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
 ```
 
-Fichier à créer (avec privilèges sudo) : */etc/sysconfig/network-scripts/route6-eth0*
+#### **Sur Windows**
 
+Rendez-vous dans la rubrique `Connexion Réseaux`{.action} de votre Windows.
 
-```bash
-IPV6_GATEWAY dev eth0
-default via IPV6_GATEWAY
+![public-cloud ipv6](images/pcipv63.png){.thumbnail}
+
+Entrez ensuite dans les `Propriétés`{.action} de votre carte-réseau via un clic droit.
+
+![public-cloud ipv6](images/pcipv64.png){.thumbnail}
+
+Cliquez alors sur `IPv6`{.action} puis sur `Propriétés`{.action}.
+
+![public-cloud ipv6](images/pcipv65.png){.thumbnail}
+
+Enfin renseignez les informations de votre IPv6.
+
+![public-cloud ipv6](images/pcipv66.png){.thumbnail}
+
+## Diagnostic
+
+Vous avez configuré votre IPv6 mais rien ne fonctionne ? 
+
+Une manipulation simple existe pour déterminer si le défaut se situe dans la configuration effectuée ou sur le réseau d'OVHcloud.
+
+Dans un premier temps, [passez votre instance dans le mode de secours rescue-pro](https://docs.ovh.com/fr/public-cloud/passer-une-instance-en-mode-rescue/).
+
+Inspirez-vous ensuite des commandes suivantes pour configurer votre IP de manière non-persistante :
+
+```
+ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
+ip -6 route add IPV6_GATEWAY dev eth0
+ip -6 route add default via IPV6_GATEWAY dev eth0
 ```
 
-Dans notre exemple cela s'apparente à :
+Testez de nouveau votre réseau via un ping6 par exemple :
 
-
-```bash
-2001:41d0:xxx:xxxx::111 dev eth0
-default via 2001:41d0:xxx:xxxx::111
 ```
-
-
-## Tester la connexion
-Pour vérifier la configuration, par exemple sur eth0 :
-
-
-```bash
-ip -6 addr show eth0
-```
-
-Pour tester la connexion, plusieurs méthodes sont possibles. Il faut avant tout comprendre qu'une communication IPv6 requiert IPv6 d'activé des 2 cotés de la connexion. un test possible est donc de réaliser un ping sur une IPv6, depuis votre instance Public Cloud :
-
-
-```bash
 ping6 ipv6.google.com
 ```
+Si votre instance répond, il est probable qu'une des étapes de votre configuration initiale n'ait pas été rigoureusement suivie.
+
+Dans tous les cas, n'hésitez pas à effectuer une demande au support avec les éléments testés ci-dessus afin d'obtenir une analyse de notre part.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
