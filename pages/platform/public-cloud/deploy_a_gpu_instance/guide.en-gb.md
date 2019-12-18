@@ -43,7 +43,7 @@ Once you are logged in to the [OVH Control Panel](https://www.ovh.com/auth/?acti
 
 ![public-cloud](images/gpu.png){.thumbnail}
 
-The, select the Linux OS of your choise:
+The, select the Linux OS of your choice:
 
 ![public-cloud](images/linuxchoice.png){.thumbnail}
 
