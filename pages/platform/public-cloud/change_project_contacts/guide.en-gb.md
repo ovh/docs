@@ -59,13 +59,3 @@ Click in the 3 dots on the right and click in Accept request. A new window will 
 
 You just have to insert the code which you have just received by email into the window which appeared after you confirmed the procedure from both accounts.
 
-
-## 
-
-- [Manage contacts]({legacy}1858)
-
-
-
-## 
-[Go back to the index of Cloud guides]({legacy}1785)
-
