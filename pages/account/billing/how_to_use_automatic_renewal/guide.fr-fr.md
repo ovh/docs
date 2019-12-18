@@ -136,7 +136,7 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 |  Renouveler |  Renouvelez plusieurs services en une seule fois. Vous serez redirigé vers une page permettant de choisir la durée de renouvellement souhaitée, et pourrez réaliser un paiement en ligne. |
 |  Désactiver le paiement automatique |  Désactivez le renouvellement automatique sur plusieurs services en une seule fois. Si l'un ou plusieurs de vos services ne sont pas compatibles avec le renouvellement manuel, cela vous sera indiqué lors de la validation. |
 |  Activer le paiement automatique |  Réactivez le renouvellement automatique sur plusieurs services en une seule fois. Seuls les services éligibles seront mis à jour. |
-|  Exporter en CSV |  Votre service restera actif jusqu'à sa date d'expiration. Il sera ensuite suspendu, puis supprimé. |
+|  Exporter en CSV |  Exportez dans un fichier csv l'ensemble de vos services et leurs dates d'expiration. |
 |  Aligner les dates de renouvellement |  Permet d'aligner la date d'expiration de vos services à un jour calendaire. Seuls les services éligibles pourront être mis à jour. |
 
 

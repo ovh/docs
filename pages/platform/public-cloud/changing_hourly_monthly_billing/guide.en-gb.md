@@ -1,8 +1,8 @@
 ---
-title: Switching from hourly to monthly billing
-excerpt: Find out how to change the billing rate for your Public Cloud instance
+title: 'Switching from hourly to monthly billing'
+excerpt: 'Find out how to change the billing rate for your Public Cloud instance'
 slug: change-public-cloud-billing-rate
-section: Knowledge Base
+section: 'Knowledge Base'
 ---
 
 **Last updated 6th December 2019**
@@ -15,10 +15,12 @@ When you create a Public Cloud instance, you can choose to be billed at either a
 
 > [!warning]
 >
-> You cannot switch from monthly to hourly billing. If you would like to be billed at the hourly rate, you will need to delete your monthly-rate billing instance, create a new one, and select hourly billing.
-In this case we suggest that you do the following procedure:
+> You cannot switch from monthly to hourly billing. If you would like to be billed at the hourly rate, you will need to delete your monthly-rate billing instance, create a new one, and select hourly billing. In this case we suggest that you do the following procedure:
+>
 >- Create a snapshot of your current instance;
+>
 >- Create a new instance based on this snapshot;
+>
 >- Delete monthly instance.
 >
 
