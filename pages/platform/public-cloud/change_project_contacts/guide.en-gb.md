@@ -45,6 +45,8 @@ Once you have confirmed the new contacts, both OVH accounts will receive an emai
 
 You have to confirm this procedure in both accounts.
 
+## Confirmation
+
 To do this go to your account properties and select my contacts on the right:
 
 ![](images/controlpanel.png){.thumbnail}
