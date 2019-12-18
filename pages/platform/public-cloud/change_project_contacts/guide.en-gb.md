@@ -59,3 +59,4 @@ Click in the 3 dots on the right and click in Accept request. A new window will 
 
 You just have to insert the code which you have just received by email into the window which appeared after you confirmed the procedure from both accounts.
 
+After this is done, contacts have been changed as requested.
