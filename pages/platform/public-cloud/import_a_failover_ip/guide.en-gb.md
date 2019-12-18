@@ -59,8 +59,9 @@ Click in `Attach`{.action} and once you have done it page will be reloaded with 
 
 ![Import Failover IP](images/modifycompleted.png){.thumbnail}
 
-
 Your failover IP will now be attached to your instance.
+
+Next step will be the IP configuration in your OS, and you can check our guide here: [Configure a failover IP](https://docs.ovh.com/gb/en/public-cloud/configure_a_failover_ip/){.external}
 
 ## Go further
 
