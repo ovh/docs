@@ -5,7 +5,7 @@ slug: change-public-cloud-billing-rate
 section: Knowledge Base
 ---
 
-**Last updated 07th March 2018**
+**Last updated 6th December 2019**
 
 ## Objective
 
@@ -16,8 +16,11 @@ When you create a Public Cloud instance, you can choose to be billed at either a
 > [!warning]
 >
 > You cannot switch from monthly to hourly billing. If you would like to be billed at the hourly rate, you will need to delete your monthly-rate billing instance, create a new one, and select hourly billing.
+In this case we suggest that you do the following procedure:
+>- Create a snapshot of your current instance;
+>- Create a new instance based on this snapshot;
+>- Delete monthly instance.
 >
-
 
 ## Requirements
 
@@ -27,13 +30,13 @@ When you create a Public Cloud instance, you can choose to be billed at either a
 
 ## Instructions
 
-In the [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, choose the instance you would like to change the billing rate for, and open its options menu. You will then be able to see the `Switch to monthly subscription`{.action} button:
+In the [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, choose the instance you would like to change the billing rate for, and open its options menu by clicking on the 3 dots on the right of the Instance. You will then be able to see the `Switch to monthly subscription`{.action} button:
 
-![Change billing calculation](images/1_swich_to_monthly_sub.png){.thumbnail}
+![Change billing calculation](images/switch.png){.thumbnail}
 
 You will then need to confirm that you want to change the billing rate:
 
-![Confirm billing calculation change](images/2_switch_to_monthly_confirm.png){.thumbnail}
+![Confirm billing calculation change](images/switch1.png){.thumbnail}
 
 Once you have confirmed your choice, your next bill will include the hourly cost of the instance for the remaining days of the month, along with the cost for the next month at the monthly flat rate.
 

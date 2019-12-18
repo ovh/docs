@@ -6,7 +6,7 @@ excerpt: 'This guide will explain how to log in to your OVH Public Cloud instanc
 section: Quick start
 ---
 
-**Last updated 2nd October 2018**
+**Last updated 6th December 2019**
 
 ## Objective
 
@@ -74,7 +74,7 @@ To log in to a Linux instance using Windows, you can use a software program like
 
 #### Finalise the installation
 
-Once you have created your instance, you will need to finalise something called *sysprep*. To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and launch the VNC console:
+Once you have created your instance, you will need to finalise something called *sysprep*. To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and launch the VNC console from Instance Dashboard:
 
 ![VNC console](images/vnc_console.png)
 

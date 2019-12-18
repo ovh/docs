@@ -6,7 +6,7 @@ legacy_guide_number: g1883
 section: Knowledge Base
 ---
 
-**Last updated 19th December 2018**
+**Last updated 6th December 2018**
 
 ## Objective
 
@@ -27,33 +27,41 @@ If you need to configure a failover IP address on your instances because:
 
 ## Instructions
 
-Firstly, log in to the [OVH Control Ppanel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
+Firstly, log in to the [OVH Control Ppanel](https://www.ovh.com/auth/?action=gotomanager){.external}, click the `Public Cloud`{.action} menu and then click in your `Project`{.action}.
 
-When you've found your project in the list, click it and then select the `Infrastructure`{.action} tab.
+Then, select `Failover IP`{.action} under Network section.
 
-![IP Section](images/import-failover-ip-01.png){.thumbnail}
+![IP Section](images/import.png){.thumbnail}
 
-Next, Click the `Actions`{.action} button and then click `Import OVH Failover IPs`{.action}.
+Once you have done, all the IP addresses that can be imported to your Public Cloud project will be displayed:
 
-![Import Failover IP](images/import-failover-ip-02.png){.thumbnail}
+![IP Section](images/import1.png){.thumbnail}
 
-Next, select the failover IP you want to import and then click the `Confirm`{.action} button.
+Click in the 3 dots on the right of the IP you want to import and click `Import this failover IP`{.action}.
 
-![Select Failover IP](images/import-failover-ip-03.png){.thumbnail}
+![Import Failover IP](images/import2.png){.thumbnail}
 
-You will now see a confirmation message.
+Now, click in `Import`{.action}:
 
-![Failover Imported](images/import-failover-ip-04.png){.thumbnail}
+![Import Failover IP](images/importconfirm.png){.thumbnail}
 
-When the failover IP has been successfully imported, click the dropdown arrow next to the the failover IP and then click `Modify the associated server`{.action}.
+Once you have done it the page will reloaded and this information will appear, confirming IP was migrated successfully.
 
-![Attach Failover IP](images/import-failover-ip-05.png){.thumbnail}
+When the failover IP has been successfully imported, click in the 3 dots on the right and click in `Modify the associated instance`{.action}.
 
-Now click the grey circle on the right side of your instance. This indicates that you want to attach your failover IP to the instance. When you have done this, click the yellow `Attach`{.action} button at the bottom of your screen.
+![Import Failover IP](images/modifyinstance.png){.thumbnail}
 
-![Attach Failover IP](images/import-failover-ip-06.png){.thumbnail}
+A pop-up will appear so you can choose the instance where you want to move your IP to:
+
+![Import Failover IP](images/modifyinstance1.png){.thumbnail}
+
+Click in `Attach`{.action} and once you have done it page will be reloaded with the confirmation that IP was associated to the instance:
+
+![Import Failover IP](images/modifycompleted.png){.thumbnail}
 
 Your failover IP will now be attached to your instance.
+
+Next step will be the IP configuration in your OS, and you can check our guide here: [Configure a failover IP](https://docs.ovh.com/gb/en/public-cloud/configure_a_failover_ip/){.external}
 
 ## Go further
 
