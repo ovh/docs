@@ -148,7 +148,7 @@ No entanto, disponibilizamos a seguir um exemplo de comandos que pode utilizar. 
 ssh sshlogin@sshserver -p connectionport
 ```
 
-Uma vez conectado, pode verificar se aparecem as variáveis de ambientes [anteriormente criadas](./#4-criar-as-variaveis-de ambiente). Para o nosso tutorial, temos a seguinte informação:
+Uma vez conectado, pode verificar se aparecem as variáveis de ambientes [anteriormente criadas](./#4-criar-as-variaveis-de-ambiente). Para o nosso tutorial, temos a seguinte informação:
 
 ```sh
 demonon@cloudweb-ssh:~ $ env | grep "database_"

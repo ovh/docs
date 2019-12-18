@@ -1,9 +1,9 @@
 ---
-title: 'Increase the size of an additional disk'
-excerpt: 'This guide will show you how to increase the size of an additional disk as well as enlarging its main partition.'
+title: 'Increasing the size of an additional disk'
+excerpt: 'Find out how to increase the size of an additional disk and enlarge its main partition'
 slug: increase_the_size_of_an_additional_disk
 legacy_guide_number: g1865
-section: Knowledge Base
+section: 'Knowledge Base'
 ---
 
 **Last updated 14th November 2019**
@@ -16,17 +16,17 @@ If you have reached the maximum storage capacity on your additional disk, you ca
 
 ## Requirements
 
-* a [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external} in your your OVH account
-* an [addition disk](https://www.ovh.co.uk/public-cloud/storage/additional-disks/){.external} attached to your instance
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external} in your your OVHcloud account
+* an [additional disk](https://www.ovh.co.uk/public-cloud/storage/additional-disks/){.external} attached to your instance
+* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 * administrative (root) access to your instance via SSH (for Linux only)
 * administrative access to your instance via RDP (for Windows only)
 
 ## Intructions
 
-### Using the Control Panel
+### Using the OVHcloud Control Panel.
 
-In order to deploy a public cloud instance, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Public Cloud`{.action} in the top-left corner of the page. Then, on the following screen, click the arrow button next to your default project name in the top-left corner of the screen. Now select the project on which you would like to edit the size of the additional disk.
+In order to deploy a public cloud instance, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Public Cloud`{.action} in the top-left corner of the page. Then, on the following screen, click the arrow button next to your default project name in the top-left corner of the screen. Now select the project on which you would like to edit the size of the additional disk.
 
 ![control panel](images/select_project.png){.thumbnail}
 
@@ -41,7 +41,7 @@ Next, click on the 3 dots on the right of the disk and click Edit. You will be r
 When you've finished, click the `Modify the volume`{.action} button.
 
 
-### Using Linux
+### Using Linux.
 
 First, unmount the disk using this command.
 
@@ -128,17 +128,17 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
-### Using Windows
+### Using Windows.
 
-Establish an RDP connection to your instance. When you've logged in, right-click on the `Start Menu`{.action} button and then click `Disk Management`{.action}.
+Establish an RDP connection to your instance. When you've logged in, right-click on the `Start Menu`{.action} button, and then click `Disk Management`{.action}.
 
 ![windows](images/increase-disk-04.png){.thumbnail}
 
-When the disk management tool opens you’ll see your new disk as an unkown volume with unallocated space as shown below.
+When the disk management tool opens, you’ll see your new disk as an unknown volume with unallocated space as shown below.
 
 ![windows](images/increase-disk-05.png){.thumbnail}
 
-If the disk is offline this is likely due to a policy in place on the instance. To fix this, right-click on the disk and select Online.
+If the disk is offline, this is likely due to a policy in place on the instance. To fix this, right-click on the disk and select Online.
 
 ![windows](images/increase-disk-06.png){.thumbnail}
 
@@ -147,7 +147,7 @@ If the disk is offline this is likely due to a policy in place on the instance. 
 Depending on your version of Windows, you may need to initialise your additional disk before you can use it. To initialise your disk, right-click it again and this time select `Initialise Disk`{.action}.
 >
 
-If the main volume on you disk is smaller than the entire disk capacity, right-click on the volume and then click `Extend Volume`{.action}
+If the main volume on you disk is smaller than the entire disk capacity, right-click on the volume and then click `Extend Volume`{.action}.
 
 ![windows](images/increase-disk-07.png){.thumbnail}
 
@@ -155,7 +155,7 @@ The Extend Volume Wizard will now be displayed. Click `Next`{.action} to start t
 
 ![windows](images/increase-disk-08.png){.thumbnail}
 
-Now increase the volume to the desired size and click `Next`{.action} when you're finished.
+Now increase the volume to the size you want, and click `Next`{.action} when you're finished.
 
 ![windows](images/increase-disk-09.png){.thumbnail}
 
