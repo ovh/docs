@@ -15,14 +15,14 @@ This means that you can seperate the OVH account which manages your bills from t
 This guide explains how to edit your contacts.
 
 
-## Prerequisites
+## Requirements
 
 - two OVH accounts
 - a Public Cloud project
 - be sure that both admin and billing contacts belongs to the same subsidiary
 
+## Instructions
 
-## 
 In order to modify your project contacts, first go to the Contacts and Rights bellow Project management tab.
 
 ![](images/contact.png){.thumbnail}
@@ -59,13 +59,4 @@ Click in the 3 dots on the right and click in Accept request. A new window will 
 
 You just have to insert the code which you have just received by email into the window which appeared after you confirmed the procedure from both accounts.
 
-
-## 
-
-- [Manage contacts]({legacy}1858)
-
-
-
-## 
-[Go back to the index of Cloud guides]({legacy}1785)
-
+After this is done, contacts have been changed as requested.
