@@ -27,7 +27,7 @@ If you need to configure a failover IP address on your instances because:
 
 ## Instructions
 
-Firstly, log in to the [OVH Control Ppanel](https://www.ovh.com/auth/?action=gotomanager){.external}, click the `Public Cloud`{.action} menu and then click in your `Project`{.action}.
+Firstly, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click the `Public Cloud`{.action} menu and then click in your `Project`{.action}.
 
 Then, select `Failover IP`{.action} under Network section.
 
