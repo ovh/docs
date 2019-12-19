@@ -101,7 +101,7 @@ Para realizar un seguimiento personalizado de los acuses de recibo de los SMS (D
 
 ![Indicar URL de callback](images/smsusers07.png){.thumbnail}
 
-Cuando el estado de envío del SMS se actualiza, el servicio realiza una llamada a la URL indicada, insertando los siguientes parámetros en la *query string*:
+Cuando se actualiza el estado de envío del SMS, el servicio realiza una llamada a la URL indicada, añadiendo los siguientes parámetros:
 
 - **id**: Número de identificación del SMS.
 - **ptt**: Código que indica el estado del SMS. Los distintos códigos ptt se describen más abajo.
@@ -142,7 +142,7 @@ Cuando el estado de envío del SMS se actualiza, el servicio realiza una llamada
 |---|---|
 |0|En creación o pendiente|
 |1|Éxito|
-|2|Fallido|
+|2|Error|
 |4|En espera|
 |8|En búfer|
 |16|En error / no facturado|
