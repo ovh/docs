@@ -11,8 +11,6 @@ section: 'Gérer ses commandes, factures et services'
 
 Ce guide vous explique la notion de Numéro de commande ou Purchase Order (PO) appliqué à la facturation OVHCloud.
 
-## Prérequis
-
 ## En pratique
 
 ### Numéro de commande et Purchase Order (PO) Number
