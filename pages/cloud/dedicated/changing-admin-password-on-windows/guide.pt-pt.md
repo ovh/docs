@@ -1,17 +1,17 @@
 ---
-title: 'Alterar a palavra-passe de um administrador num servidor dedicado Windows'
-slug: alterar-palavra-passe-admin-windows
+title: 'Alterar a palavra-passe administrador num servidor dedicado Windows'
+slug: "alterar-palavra-passe-admin-windows"
 excerpt: 'Saiba como alterar a palavra-passe de um administrador num servidor dedicado Windows'
 section: 'Diagnóstico e Modo Rescue'
 ---
 
-**Última atualização: 22/08/2018**
+**Última atualização: 11/09/2019**
 
 ## Sumário
 
-Quando instalar ou reiniciar um sistema operativo Windows, irá receber uma palavra-passe de acesso administrador. Para maior segurança, sugerimos a alteração da mesma, conforme as indicações apresentadas no manual "[Proteger um servidor dedicado](https://docs.ovh.com/pt/dedicated/proteger-um-servidor-dedicado/){.external}". Além disso, poderá também ter-se esquecido da palavra-passe e, por isso, precisa de a alterar.
+Quando instalar ou reiniciar um sistema operativo Windows, irá receber uma palavra-passe de acesso administrador. Para uma maior segurança, sugerimos a alteração da mesma, conforme as indicações apresentadas no manual “[Proteger um servidor dedicado](https://docs.ovh.com/pt/dedicated/proteger-um-servidor-dedicado/){.external}”. Além disso, poderá também ter-se esquecido da palavra-passe e, por isso, precisa de a alterar.
 
-**Este manual explica-lhe como alterar a palavra-passe de administrador no seu servidor.**
+**Este manual explica-lhe como alterar a palavra-passe administrador no seu servidor.**
 
 
 ## Requisitos
@@ -22,7 +22,7 @@ Quando instalar ou reiniciar um sistema operativo Windows, irá receber uma pala
 
 ## Instruções
 
-Comece por iniciar o seu servidor em modo rescue através do ambiente de inicialização WinRescue. Caso seja necessário, sugerimos que consulte o manual sobre o [modo rescue](https://docs.ovh.com/pt/dedicated/rescue_mode/){.external}. 
+Comece por iniciar o seu servidor em modo Rescue através do ambiente de inicialização WinRescue. Caso seja necessário, sugerimos que consulte o manual sobre o [modo Rescue](https://docs.ovh.com/pt/dedicated/rescue_mode/){.external}. 
 
 Depois de reiniciar o servidor, selecione a janela `IPMI`{.action} na página do seu servidor da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
@@ -35,11 +35,11 @@ De seguida, ative a funcionalidade IPMI através da applet Java ou do seu navega
 
 ![NTPWdi](images/ntpwdi-tool-01.png){.thumbnail}
 
-Depois, clique no botão `(Re)open`{.action} ((Re)abrir) para apresentar a lista de contas de utilizadores disponíveis.
+Depois, clique no botão `(Re)open`{.action} para apresentar a lista de contas de utilizadores disponíveis.
 
 ![NTPWdi](images/ntpwdi-tool-02.png){.thumbnail}
 
-A partir daí, selecione a conta de utilizador root e clique no botão `Change password`{.action} (Alterar palavra-passe).
+A partir daí, selecione a conta de utilizador root e clique no botão `Change password`{.action}.
 
 ![NTPWdi](images/ntpwdi-tool-03.png){.thumbnail}
 
@@ -56,4 +56,4 @@ A sua palavra-passe foi alterada. Feche a ferramenta, termine a sessão IPMI e r
 
 [Como utilizar o IPMI com servidores dedicados](https://docs.ovh.com/pt/dedicated/usar-ipmi-servidores-dedicados/){.external}.
 
-Fale com a nossa comunidade de utilizadores: [Comunidade OVH](https://community.ovh.com/en/){.external}.
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
