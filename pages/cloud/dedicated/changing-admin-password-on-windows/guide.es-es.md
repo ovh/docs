@@ -1,6 +1,6 @@
 ---
 title: 'Cambiar la contraseña de administrador en un servidor dedicado Windows'
-slug: cambiar-contrasena-administrador-en-servidor-windows
+slug: "cambiar-contrasena-administrador-en-servidor-windows"
 excerpt: 'Cómo cambiar la contraseña de administrador en un servidor dedicado Windows'
 section: 'Diagnóstico y modo de rescate'
 ---
@@ -39,7 +39,7 @@ A continuación, haga clic en el botón `(Re)open`{.action} para ver las cuentas
 
 ![NTPWEdit](images/ntpwdi-tool-02.png){.thumbnail}
 
-Seleccione en la lista el usuario **root** y haga clic en el botón `Change password`{.action}.
+Seleccione en la lista el usuario `root`{.action} y haga clic en el botón Change password.
 
 ![NTPWEdit](images/ntpwdi-tool-03.png){.thumbnail}
 
