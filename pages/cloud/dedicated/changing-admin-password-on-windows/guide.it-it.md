@@ -1,58 +1,58 @@
 ---
 title: 'Modificare la password amministratore su un server dedicato Windows'
-slug: modificare-password-admin-su-server-windows
-excerpt: 'Scopri come modificare la password amministratore su un server Windows'
-section: 'Diagnostica e rescue mode'
+slug: "modificare-password-admin-su-server-windows"
+excerpt: 'Come impostare una nuova password amministratore su un server Windows'
+section: 'Diagnostica e modalità Rescue'
 ---
 
-**Ultimo aggiornamento: 26/10/2018**
+**Ultimo aggiornamento: 30/08/2018**
 
 ## Obiettivo
 
-Durante l’installazione o la reinstallazione di un sistema operativo Windows, ti viene fornita una password per accedere come amministratore. Ti suggeriamo di modificarla, come spiegato nella nostra guida [Mettere in sicurezza un server dedicato](https://docs.ovh.com/it/dedicated/mettere-in-sicurezza-un-server-dedicato/){.external}. Può anche accadere che tu perda la password e abbia bisogno di modificarla.
+Durante l’installazione o la reinstallazione di una distribuzione Windows, viene fornita una password per accedere come amministratore. Per motivi di sicurezza ti consigliamo di modificarla seguendo la procedura descritta in [questa guida](https://docs.ovh.com/it/dedicated/mettere-in-sicurezza-un-server-dedicato/){.external}, valida anche in caso di perdita della password.
 
-**Questa guida ti mostra come modificare la password amministratore del tuo server.**
+**Questa guida ti mostra come effettuare l’operazione in queste due situazioni.**
 
 
 ## Prerequisiti
 
-* Possedere un [server dedicato](https://www.ovh.it/server_dedicati/){.external} Windows
+* Disporre di un [server dedicato](https://www.ovh.it/server_dedicati/){.external} Windows
 * Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 
 ## Procedura
 
-Per prima cosa, avvia il tuo server in modalità rescue utilizzando l’ambiente WinRescue. Se necessiti assistenza, consulta la nostra guida relativa sulla [modalità rescue](https://docs.ovh.com/it/dedicated/rescue_mode/){.external}. 
+Per prima cosa, avvia il tuo server in modalità Rescue utilizzando l’ambiente WinRescue. In caso di necessità, consulta [questa guida](https://docs.ovh.com/it/dedicated/rescue_mode/){.external} per effettuare l’operazione. 
 
-Dopo aver riavviato il server, seleziona la scheda `IPMI`{.action} sulla pagina del server nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Dopo aver riavviato il server accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo server e clicca sulla scheda `IPMI`{.action}.
 
 > [!primary]
 >
-> Per informazioni più dettagliate sull’utilizzo della funzione IPMI, consulta la guida [Utilizzare l’IPMI sui server dedicati](https://docs.ovh.com/it/dedicated/utilizzo-ipmi-server-dedicati/){.external}.
+> Per maggiori informazioni sull’utilizzo della funzionalità IPMI, consulta la guida [Utilizzare l’IPMI sui server dedicati](https://docs.ovh.com/it/dedicated/utilizzo-ipmi-server-dedicati/){.external}.
 >
 
-Successivamente, attiva la funzione IPMI tramite l’applet Java o il tuo browser. Una volta avviata la sessione IPMI, fai doppio click sul programma NTPWdit del server sul desktop WinRescue.
+Attiva la funzione IPMI tramite applet Java o browser. Una volta avviata la sessione IPMI, clicca due volte sul tool NTPWEdit del server sul desktop WinRescue.
 
-![NTPWdi](images/ntpwdi-tool-01.png){.thumbnail}
+![NTPWEdit](images/ntpwdi-tool-01.png){.thumbnail}
 
-Poi clicca sul pulsante `(Re)open`{.action} per visualizzare la lista degli account utenti disponibili.
+Clicca sul pulsante `(Re)open`{.action} per visualizzare la lista degli utenti disponibili.
 
-![NTPWdi](images/ntpwdi-tool-02.png){.thumbnail}
+![NTPWEdit](images/ntpwdi-tool-02.png){.thumbnail}
 
-Seleziona l’account utente root nella lista e clicca sul pulsante `Change password`{.action}.
+Seleziona l’account root nella lista e clicca sul pulsante `Change password`{.action}.
 
-![NTPWdi](images/ntpwdi-tool-03.png){.thumbnail}
+![NTPWEdit](images/ntpwdi-tool-03.png){.thumbnail}
 
-Infine, inserisci la nuova password due volte e clicca su `OK`{.action}.
+Infine, inserisci la nuova password, confermala e clicca su `OK`{.action}.
 
-![NTPWdi](images/ntpwdi-tool-04.png){.thumbnail}
+![NTPWEdit](images/ntpwdi-tool-04.png){.thumbnail}
 
-La tua password è stata modificata. Esci dal programma, chiudi la sessione IPMI e riavvia il server in modalità normale.
+Ora che la password è stata modificata esci dal programma, chiudi la sessione IPMI e riavvia il server in modalità normale.
 
 
 ## Per saperne di più
 
-[Rescue Mode](https://docs.ovh.com/it/dedicated/rescue_mode/){.external}
+[Attivare e utilizzare il Rescue mode](https://docs.ovh.com/it/dedicated/rescue_mode/){.external}
 
 [Utilizzare l’IPMI sui server dedicati](https://docs.ovh.com/it/dedicated/utilizzo-ipmi-server-dedicati/){.external}
 

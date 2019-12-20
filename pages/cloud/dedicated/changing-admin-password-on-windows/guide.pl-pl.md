@@ -1,11 +1,11 @@
 ---
-title: 'Zmiana hasła administratora na serwerze Windows'
-slug: zmiana-hasla-admin-windows
+title: 'Zmiana hasła administratora na serwerze dedykowanym z systemem Windows'
+slug: "zmiana-hasla-admin-windows"
 excerpt: 'Dowiedz się, jak zmienić hasło administratora na serwerze dedykowanym z systemem Windows'
 section: 'Diagnostyka i tryb Rescue'
 ---
 
-**Ostatnia aktualizacja z dnia 16-09-2019**
+**Ostatnia aktualizacja z dnia 11-09-2019**
 
 ## Wprowadzenie
 
@@ -22,7 +22,7 @@ Podczas instalacji lub reinstalacji systemu operacyjnego Windows otrzymujesz has
 
 ## W praktyce
 
-Uruchom serwer w trybie awaryjnym, korzystając ze środowiska rozruchowego WinRescue. W przypadku takiej potrzeby polecamy zapoznanie się z przewodnikiem o [trybie Rescue](https://docs.ovh.com/pl/dedicated/ovh-rescue/){.external}. 
+Uruchom serwer w trybie awaryjnym, korzystając ze środowiska rozruchowego WinRescue. W przypadku takiej potrzeby polecamy zapoznanie się z przewodnikiem o[trybie Rescue](https://docs.ovh.com/pl/dedicated/ovh-rescue/){.external}. 
 
 Po ponownym uruchomieniu serwera przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz zakładkę `IPMI`{.action} na stronie Twojego serwera.
 
