@@ -56,7 +56,7 @@ El resultado debería ser como el siguiente:
 
 ### 2. Conexión a la interfaz
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovhtelecom.fr/manager/login/) y haga clic en la sección `Telecom`{.action}. A continuación, haga clic en `SMS`{.action} en la columna izquierda y seleccione la cuenta de SMS.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y haga clic en la sección `Telecom`{.action}. A continuación, haga clic en `SMS`{.action} en la columna izquierda y seleccione la cuenta de SMS.
 
 ![Área de cliente SMS](images/sms-recipientlist-3.png){.thumbnail}
 
