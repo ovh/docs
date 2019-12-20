@@ -35,15 +35,18 @@ En suivant ce [**lien**](https://www.ovh.com/fr/solutions/ovhcloud-connect/){.ex
     - 1 Gbps ;
     - 10 Gbps.
 
+
 * Le nombre de ports sur les routeurs OVHcloud Connect: 
 
     - 1 port ; 
     - 2 ports grâce au protocole LACP pour avoir une redondance locale au PoP.
 
+
 * Le point de présence (PoP) du OVHcloud Connect: 
 
     - La liste de nos points de présence OVHcloud Connect est visible sur ce [**lien**](https://www.ovh.com/fr/solutions/ovhcloud-connect/){.external} et est mise à jour régulièrement.
     - En cas de demande de connexion à un point de présence (PoP) non disponible à ce jour, contactez le support ou votre Account Manager pour avoir plus d'informations.
+
 
 * La couche réseau du modèle OSI de l'interconnexion: 
 
