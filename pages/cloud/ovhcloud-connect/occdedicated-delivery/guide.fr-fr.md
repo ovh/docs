@@ -39,7 +39,7 @@ En suivant ce [**lien**](https://www.ovh.com/fr/solutions/ovhcloud-connect/){.ex
 * Le nombre de ports sur les routeurs OVHcloud Connect: 
 
     - 1 port ; 
-    - 2 ports grâce au protocole LACP pour avoir une redondance locale au PoP.
+    - 2 ports (L2: protocole LACP obligatoire, L3: BGP obligatoire) pour avoir une redondance locale au PoP.
 
 
 * Le point de présence (PoP) du OVHcloud Connect: 
@@ -85,7 +85,7 @@ Les routeurs OVHcloud Connect côté PoP auront la première adresse IP utilisab
 | DC1 | x.x.x.x/28 |  |  | | |pn-xxx |
 | DC2 (option) | différent de celui du dessus |  |  | | | le même qu'au dessus |
 
-Côté datacenter, les routeurs OVHcloud Connect  auront les trois premières adresses IP utilisables du réseau d'arrivée souhaitée dans le tableau du ci-dessus (La première IP pour le routeur 1 du cluster, la deuxième IP pour le routeur 2 du cluster et la troisième IP pour l'adresse de VRF). 
+Côté datacenter, les routeurs OVHcloud Connect  auront les trois premières adresses IP utilisables du réseau d'arrivée souhaitée dans le tableau du ci-dessus (La première IP pour l'adresse virtuelle du cluster VRRP, la deuxième IP pour le routeur 1 du cluster, la troisième IP pour le routeur 2 du cluster). 
 
 
 En cas de questions sur la configuration à mettre en place, contactez le support ou votre Account Manager.
@@ -97,7 +97,7 @@ Lors de la mise en place, les problèmes les plus fréquemment rencontrés sont 
 
 * L'absence de croisement entre les éléments de reception et transmissions RX/Tx entre les routeurs OVHcloud et "vos" routeurs. Demandez l'inversement de la fibre optique au gestionnaire du point de présence;
 
-* L'annonce de plus de 100 réseaux à travers les sessions BGP entraine une extinction automatique du ou des ports. Pour se prémunir de cet arrêts, vous devez consolider vos réseaux ou utiliser des routes reflectors;
+* L'annonce de plus de 100 réseaux à travers chaque session BGP entraine une extinction automatique de la session. Pour se prémunir de cet arrêt, vous devez consolider vos réseaux;
 
 * En cas de doute sur la configuration, contactez le support pour avoir un extrait de celle mise en place par OVHcloud.
 
