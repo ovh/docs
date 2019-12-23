@@ -43,7 +43,7 @@ Si quiere enviar un SMS con estos elementos, deberá hacerlo desde el área de c
 
 Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](https://docs.ovh.com/es/sms/enviar-sms-desde-una-dirección-de-correo-electrónico/#anexo_1) que encontrará al final de esta guía.
 
-### 1. Campos obligatorios
+### 1\. Campos obligatorios
 
 Abra el webmail o el cliente de correo y cree un nuevo mensaje de correo electrónico. 
 
@@ -82,7 +82,7 @@ Si quiere utilizar un número corto que permita la respuesta, indique «senderFo
 Para más información sobre los usuarios de SMS, consulte la siguiente guía: [Usuarios de SMS](https://docs.ovh.com/fr/sms/tout_savoir_sur_les_utilisateurs_sms/)
 
 
-### 2. Campos adicionales
+### 2\. Campos adicionales
 
 Es posible añadir campos adicionales en el asunto, como los que se muestran a continuación:
 
@@ -136,7 +136,7 @@ Existen dos formas de declarar los diferentes elementos del asunto:
 >Si utiliza la codificación Unicode, el tamaño máximo del SMS se reducirá a 70 caracteres, frente a los 160 de la codificación de 7 bits.
 >
 
-### 3. Gestionar los destinatarios del SMS
+### 3\. Gestionar los destinatarios del SMS
 
 Existen distintas formas de gestionar los destinatarios del mensaje:
 
@@ -147,7 +147,7 @@ Existen distintas formas de gestionar los destinatarios del mensaje:
 
 
 
-### 4. Analizar el informe de envío
+### 4\. Analizar el informe de envío
 
 Una vez realizado el envío, recibirá por correo electrónico un informe. El siguiente informe indica que el envío se ha realizado correctamente:
 
