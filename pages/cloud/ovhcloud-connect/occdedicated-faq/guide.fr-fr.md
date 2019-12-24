@@ -5,7 +5,7 @@ excerpt: 'Les FAQ sur l’offre OVHcloud Connect Dedicated'
 section: Dedicated
 ---
 
-**Dernière mise à jour le 11/12/2019**
+**Dernière mise à jour le 24/12/2019**
 
 ## Objectif
 
@@ -40,7 +40,7 @@ Les réseaux locaux virtuels (VLAN) sont les mêmes dans votre datacenter et au 
 
 #### Niveau 3 OSI
 
-Le produit OVHcloud Connect dédié de niveau 3 est une connexion est gérée par des routeurs. 
+Le produit OVHcloud Connect dédié de niveau 3 est une connexion gérée par des routeurs. 
 
 L'intéret d'une interconnexion de niveau 3 est de pouvoir connecter le réseau WAN de votre entreprise avec votre réseau privé OVHcloud vRack afin qu'il soit vu comme un ou des sites du réseau WAN. 
 
@@ -48,13 +48,13 @@ Les connaissances réseau nécéssaires sont la maitrise avancée des réseaux d
 
 Les réseaux de niveau 3 nécessitent l'établissement d'une ou des sessions BGP externes privées entre l'entreprise et OVHcloud. 
 
-La redondance peut-être locale au sein du même point de présense (PoP) en utilisant le protocole LACP 802.3ad et aussi géographique entre deux points de présence (PoP) en utilisant les mécanismes de redondance de BGP.
+La redondance peut-être locale au sein du même point de présense (PoP) et aussi géographique entre deux points de présence (PoP) en utilisant les mécanismes de redondance de BGP.
 
-Les réseaux locaux virtuels (VLAN) ne sont les mêmes dans vos datacenters et au sein des datacenters OVHcloud.
+Les réseaux locaux virtuels (VLAN) ne sont pas les mêmes dans vos datacenters et au sein des datacenters OVHcloud.
 
 ### 4. Est-ce que OVHcloud peut héberger mes routeurs ?
 
-OVHcloud n'héberge pas de matériel réseau pour les clients dans ses datacenters et points de présence (PoP). Le client doit faire héberger ses routeurs par son opérateur ou par un tiers puis demander une connexion avec les équipements OVHcloud dans la MeetMeRoom (MMR) des points de présence grâce aux informations fournies dans la Letter of Authorization (LOA). 
+OVHcloud n'héberge pas de matériel réseau pour les clients dans ses datacenters et points de présence (PoP). Le client doit faire héberger ses équipements par son opérateur ou par un tiers puis demander une connexion avec les équipements OVHcloud dans la MeetMeRoom (MMR) des points de présence grâce aux informations fournies dans la Letter of Authorization (LOA). 
 
 
 ### 5. Pour OVHcloud Connect, quelles connectiques sont supportées?  ?
