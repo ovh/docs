@@ -11,11 +11,11 @@
 > [!alert]
 >
 > this is an alert!
-> 
+>
 ```
 
 ```html
-<!-- generated html --> 
+<!-- generated html -->
 
 <div class="callout alert">
   <p>this is an alert!</p>
@@ -34,7 +34,7 @@
 > [!primary]
 >
 > this is a primary notice!
-> 
+>
 ```
 
 ![alert notice](images/notice-primary.png)
@@ -47,7 +47,7 @@
 > [!warning]
 >
 > this is a warning!
-> 
+>
 ```
 
 ![alert notice](images/notice-warning.png)
@@ -60,7 +60,7 @@
 > [!info]
 >
 > this is a simple notice!
-> 
+>
 ```
 
 ![alert notice](images/notice-simple.png)
@@ -76,7 +76,7 @@
 > - ![caption of image 1](images/01.jpg)
 > - ![caption of image 2](images/02.jpg)
 > - ![caption of image 3](images/03.jpg)
-> 
+>
 ```
 
 ```html

@@ -5,12 +5,49 @@ excerpt: 'Accédez aux logs de votre cluster'
 section: 'Démarrer avec votre cluster PostgreSQL'
 ---
 
-## Journaux d'evenements
 
-OVHcloud stocke l'intégralité de vos journaux d'évènements (logs) pendants 3 mois glissants, sur notre plateforme OVH Logs Data Platform.
+**Dernière mise à jour le 20/12/2019**
 
-Pour accéder à ces journaux, vous devrez activer gratuitement un compte Logs Data Platform.
+## Objectif
 
-## Gérez l'accès de votre compte LDP aux logs de votre cluster
+Chaque cluster Enterprise Cloud Databases collecte et stocke les journaux d'évènements (logs) de manière centralisée et automatisée, durant 3 mois glissants.
+Ce guide va vous présenter les étapes nécessaire pour y accèder.
 
-Une fois votre compte LDP créé, utilisez votre espace client à la rubrique `Logs`{.action} pour lui donner les droits de consultation des logs de votre cluster. 
+
+## Pré-requis
+- Disposer d'un cluster Enterprise Cloud Databases.
+
+
+## En pratique
+
+### Étape 1 : activation d'un compte OVHcloud Logs
+
+Les journaux d'évènements sont collectés et stockés dans le produit tierce OVHcloud LogsData Platform. Leur stockage est inclus dans notre offre.
+Pour accéder à vos logs, vous devez disposez d'un compte gratuite OVHcloud Logs que vous pouvez créer [sur la page officielle](https://www.ovh.com/fr/data-platforms/logs/){.external}.
+
+Une fois créé, votre service OVHcloud Logs apparait dans votre espace client. Récupérez votre nom d'utilisateur se trouvant dans `Acceuil > Configuration`{.action} :
+
+![Main interface](images/manager_start.png){.thumbnail}
+
+
+
+### Étape 2 : accorder l'accès à OVHcloud Logs
+
+Une fois votre compte créé, dirigez vous dans votre espace client Enterprise Cloud Databases dans `Logs`{.action} puis `Accorder l'accès au compte OVH Logs`{.action}.
+Une fenêtre vous demande votre nom d'utilisateur OVHcloud Logs. Renseignez-le et acceptez.
+
+
+### Étape 3 : utilisation de Graylog
+
+Nous vous proposons le logiciel Graylog pour visualisez vos logs de manière simple et interactive. Graylog vous permet de créer des dashboards de toute sorte et de naviguer dans vos journaux d'évènements.
+[La documentation officielle de OVHcloud Logs](../../platform/logs-data-platform/){.external} détaille toutes les étapes de configuration qui vous permettront de créer les dashboards nécessaires à votre usage, et plus encore.
+
+Exemple de dashboard :
+
+![Main interface](images/graylog-stream.png){.thumbnail}
+
+
+
+## Aller plus loin
+
+Apprenez à gérer votre cluster PostgreSQL en consultant la [documentation technique d'OVHcloud](../enterprise-cloud-databases/){.external} pour davantage d'informations sur le fonctionnement technique de votre offre managée.
