@@ -21,7 +21,7 @@ Ce guide vous explique comment ajouter et supprimer des nœuds supplémentaires 
 ## En pratique
 
 ### Étape 1 : comprendre les bénéfices d'une mise à l'échelle
-Lorsque la charge de votre applicatif augmente, votre base de données est souvent davantage sollicitée en lecture et en écriture. Plus d'informations à traiter, toujours aussi rapidement. Enterprise Cloud Databases vous permet de répartir ces requêtes de lecture sur plusieurs nœuds.
+Lorsque la charge de votre applicatif augmente, votre base de données est souvent davantage sollicitée en lecture et en écriture. Plus d'informations à traiter, toujours aussi rapidement. Enterprise Cloud Databases vous permet de répartir ces requêtes sur plusieurs nœuds.
 
 Chaque nœud supplémentaire vous permet d'augmenter votre capacité à accepter des requêtes en lecture, et améliore également la résilience de votre cluster.
 

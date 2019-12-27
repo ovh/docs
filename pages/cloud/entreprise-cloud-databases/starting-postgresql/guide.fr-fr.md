@@ -54,7 +54,7 @@ L'accès à votre instance PostgreSQL étant exposé sur le réseau public, il e
 
 Dans la vue de votre service sur l'espace client, allez dans l'onglet `Paramètres`{.action} puis dans la section `Groupe(s) de sécurité`{.action}. Cliquez sur `Créer un groupe`{.action}.
 
-Donnez un nom à votre groupe puis renseignez une ou plusieurs adresses IP autorisées à se connecter au cluster.
+Donnez un nom à votre groupe puis renseignez un ou plusieurs adresses IP autorisées à se connecter au cluster.
 
 ```
 Exemple :
