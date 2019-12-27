@@ -25,7 +25,7 @@ Ce guide vous explique comment gérer vos groupes et règles de sécurité.
 ### Étape 1 : comprendre les mécansimes de sécurité
 Votre cluster est un service exposé sur le réseau public,  n'autorisant par défaut aucune connexion extérieure.
 Pour des questions de sécurité, OVHcloud vous impose la création de groupes et règles de sécurité pour vous connecter à votre cluster.
-Cette liste blanche vient en compléments d'autre mécanisme, tels que des flux sécurisés via TLS ou du chiffrement de vos données.
+Ces groupes et règles de filtrage viennent en complément d'autres mécanismes, tels que des flux sécurisés via TLS ou du chiffrement de vos données.
 
 
 ### Étape 2 : crée ou supprimer un groupe de sécurité
