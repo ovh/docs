@@ -21,11 +21,11 @@ Ce guide vous explique comment ajouter et supprimer des nœuds supplémentaires 
 ## En pratique
 
 ### Étape 1 : comprendre les bénéfices d'une mise à l'échelle
-Lorsque la charge de votre applicatif augmente, votre base de données est souvent davantage sollicitée en lecture et en écriture. Plus d'informations à traiter, toujours aussi rapidement. Enterprise Cloud Databases vous permet de répartir ces requêtes sur plusieurs nœuds.
+Lorsque la charge de votre applicatif augmente, votre base de données est souvent davantage sollicitée en lecture et en écriture. Plus d'informations à traiter, toujours aussi rapidement. Enterprise Cloud Databases vous permet de répartir ces requêtes de lecture sur plusieurs nœuds.
 
 Chaque nœud supplémentaire vous permet d'augmenter votre capacité à accepter des requêtes en lecture, et améliore également la résilience de votre cluster.
 
-Ajoutez ou suppirmez de la puissance de calcul à votre cluster en fonction de vos besoins.
+Ajoutez ou supprimez de la puissance de calcul à votre cluster en fonction de vos besoins.
 
 > [!primary]
 >
@@ -50,7 +50,7 @@ Utilisez l'interface de votre espace client pour supprimer un nœud ajouté.
 
 Consultez la page `Nœuds du cluster`{.action} puis cliquez sur le bouton `...`{.action} puis `supprimer`{.action} pour supprimer une ressource. 
 
-Vous serez amenés à choisir le nombre de réplicas que vous souhaitez supprimer au travers d'une boîte de dialogue dédiée.
+Vous serez amené à choisir le nombre de réplicas que vous souhaitez supprimer au travers d'une boîte de dialogue dédiée.
 
 > [!primary]
 > Aucun remboursement n'est applicable si vous supprimez un nœud avant la fin de votre période d'engagement.
