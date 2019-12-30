@@ -11,7 +11,7 @@ order: 3
 ## Objectif
 
 Chaque cluster Enterprise Cloud Databases est configuré nativement avec un utilisateur administrateur.
-Ce guide va vous présenter les étapes nécessaire à son utilisation.
+Ce guide va vous présenter les étapes nécessaires à son utilisation.
 
 
 ## Pré-requis
@@ -23,14 +23,14 @@ Ce guide va vous présenter les étapes nécessaire à son utilisation.
 
 ### Étape 1 : comprendre les rôles superuser
 
-OVH vous fournit un compte administrateur pour votre instance de base de données. Cet utilisateur **postgres** peut réaliser toutes les opérations techniques de type "administration". il dispose des droits superuser.
+OVHcloud vous fournit un compte administrateur pour votre instance de base de données. Cet utilisateur **postgres** peut réaliser toutes les opérations techniques de type "administration". Il dispose des droits superuser.
 
 Reportez-vous à la [documentation officielle de PostgreSQL](https://www.postgresql.org/docs/current/role-attributes.html){.external} pour connaître ces privilèges.
 
 
 ### Étape 2 : configuration via espace client
 
-Le mot de passe de l'utilisateur administrateur **postgres** est modifiable à tout instant. Pour ce faire, rendez-vous sur votre espace client dans l'onglet `Accueil > Informations`{.action} et au niveau des identifiants cliquez sur le bouton `...`{.action} puis `Mettre à jour le mot de passe`{.action}.
+Le mot de passe de l'utilisateur administrateur **postgres** est modifiable à tout instant. Pour ce faire, rendez-vous sur votre espace client dans l'onglet `Accueil > Information`{.action} et, au niveau des identifiants, cliquez sur le bouton `...`{.action} puis sur `Mettre à jour le mot de passe`{.action}.
 
 > [!primary]
 > Pour des raisons de sécurité, le mot de passe doit respecter certaines règles de complexité :
