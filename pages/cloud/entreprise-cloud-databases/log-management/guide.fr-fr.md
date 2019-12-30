@@ -22,10 +22,10 @@ Ce guide va vous présenter les étapes nécessaire pour y accèder.
 
 ### Étape 1 : activation d'un compte OVHcloud Logs
 
-Les journaux d'évènements sont collectés et stockés dans le produit tierce OVHcloud LogsData Platform. Leur stockage est inclus dans notre offre.
-Pour accéder à vos logs, vous devez disposez d'un compte gratuite OVHcloud Logs que vous pouvez créer [sur la page officielle](https://www.ovh.com/fr/data-platforms/logs/){.external}.
+Les journaux d'évènements sont collectés et stockés dans le produit tiers OVHcloud LogsData Platform. Leur stockage est inclus dans notre offre.
+Pour accéder à vos logs, vous devez disposez d'un compte gratuit OVHcloud Logs que vous pouvez créer [sur la page officielle](https://www.ovh.com/fr/data-platforms/logs/){.external}.
 
-Une fois créé, votre service OVHcloud Logs apparait dans votre espace client. Récupérez votre nom d'utilisateur se trouvant dans `Acceuil > Configuration`{.action} :
+Une fois créé, votre service OVHcloud Logs apparaît dans votre espace client. Récupérez votre nom d'utilisateur se trouvant dans `Accueil > Configuration`{.action} :
 
 ![Main interface](images/manager_start.png){.thumbnail}
 
@@ -39,7 +39,7 @@ Une fenêtre vous demande votre nom d'utilisateur OVHcloud Logs. Renseignez-le e
 
 ### Étape 3 : utilisation de Graylog
 
-Nous vous proposons le logiciel Graylog pour visualisez vos logs de manière simple et interactive. Graylog vous permet de créer des dashboards de toute sorte et de naviguer dans vos journaux d'évènements.
+Nous vous proposons le logiciel Graylog pour visualiser vos logs de manière simple et interactive. Graylog vous permet de créer des dashboards de toutes sortes et de naviguer dans vos journaux d'évènements.
 [La documentation officielle de OVHcloud Logs](../../platform/logs-data-platform/){.external} détaille toutes les étapes de configuration qui vous permettront de créer les dashboards nécessaires à votre usage, et plus encore.
 
 Exemple de dashboard :
