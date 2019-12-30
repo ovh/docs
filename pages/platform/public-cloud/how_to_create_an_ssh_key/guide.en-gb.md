@@ -112,7 +112,7 @@ Now click on the `Public Cloud`{.action} menu.
 
 ![cloud menu](images/cloud-menu.png){.thumbnail}
 
-Now select your Public Cloud project from the left-hand menu{.action}.
+Now select your Public Cloud project from the left-hand menu.
 
 ![select project](images/select-project.png){.thumbnail}
 
