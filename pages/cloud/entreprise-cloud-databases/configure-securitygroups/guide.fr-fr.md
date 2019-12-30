@@ -8,10 +8,11 @@ section: 'Démarrer avec votre cluster PostgreSQL'
 **Dernière mise à jour le 20/12/2019**
 
 ## Objectif
-Les offres Enterprise Cloud Databases sont compatibles avec n'importe quel service joignable par le réseau public (Internet), tel que l'ensemble des produits cloud OVHcloud, mais également des fournisseurs de cloud tierces, ou encore votre propre architecture.
+Les offres Enterprise Cloud Databases sont compatibles avec n'importe quel service joignable par le réseau public (Internet), tel que l'ensemble des produits cloud OVHcloud, mais également des fournisseurs de cloud tiers, ou encore votre propre architecture.
 
 Afin de sécuriser les accès, il est nécessaire d'autoriser des IPs à ce connecter sur votre cluster.
-Ce guide vous explique comment gérer vos groupes et règles de sécurité.
+
+**Ce guide vous explique comment gérer vos groupes et règles de sécurité.**
 
 
 ## Pré-requis
@@ -33,7 +34,7 @@ Un groupe de sécurité peut contenir de multiples règles de sécurité. Ils vo
 Pour créer un groupe, rendez-vous dans votre espace client, puis cliquez sur `Paramètres`{.action} puis `Groupes de sécurité`{.action} et enfin `Créer un groupe`{.action}.
 Un nom pour votre groupe vous sera demandé.
 
-Une fois créé, vous verrez apparaître votre groupe de sécurité sur cette même page, dans laquel il est possible de modifier le nom de votre gorupe ou le supprimer
+Une fois créé, vous verrez apparaître votre groupe de sécurité sur cette même page, dans laquel il est possible de modifier le nom de votre groupe ou le supprimer.
 
 
 ### Étape 3: créer ou supprimer une règle de sécurité
