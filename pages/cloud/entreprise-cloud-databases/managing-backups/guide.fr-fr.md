@@ -10,8 +10,8 @@ section: 'Démarrer avec votre cluster PostgreSQL'
 ## Objectif
 
 Votre cluster Enterprise Cloud Databases est sauvegardé de manière journalière par OVHcloud.
-Par défaut, nous conservons ces sauvegardes sur 3 mois glissants, et ne présente aucun coût additionnel.
-Ce guide vous détaille comment intéragir avec ces sauvegardes et comment les restaurer.
+Par défaut, nous conservons ces sauvegardes sur 3 mois glissants, sans aucun coût additionnel.
+Ce guide vous détaille comment interagir avec ces sauvegardes et comment les restaurer.
 
 
 ## Pré-requis
@@ -36,19 +36,19 @@ La sauvegarde incrémentale se base sur le Write-Ahead Logging (fichiers de WAL)
 
 Ces fichiers de WAL contiennent l'ensemble des changements apportés aux données. OVHcloud assure l'archivage des fichiers de WAL pour une durée de 3 mois glissants.
 
-Les fichiers de WAL sont utilisés pour r"aliser du Point In Time Recovery (PITR). Ils se réfèrent toujours à une sauvegarde complète.
+Les fichiers de WAL sont utilisés pour réaliser du Point In Time Recovery (PITR). Ils se réfèrent toujours à une sauvegarde complète.
 
 PostgreSQL, grâce à son système d'archivage automatique, permet à OVHcloud de chiffrer et d'envoyer ces fichiers vers un container Public Cloud Storage lié à votre cluster.
 
 
 ## En pratique
 
-### Étape 1 : activater ou désactiver les sauvegardes automatiques
+### Étape 1 : activer ou désactiver les sauvegardes automatiques
 Par défaut, votre cluster est automatiquement sauvegardé, cela chaque jour sur 3 mois glissants (snapshot ZFS).
 Vous pouvez activer ou désactiver cette option depuis votre espace client dans la rubrique `Paramètres > Sauvegardes automatiques journalières`{.action}.
 
 
-### Étape 2 : lister et intéragir avec ses sauvegardes
+### Étape 2 : lister et interagir avec ses sauvegardes
 L'ensemble de vos sauvegardes est géré de manière centralisée. Pour cela, rendez-vous dans l'onglet `Sauvegardes`{.action} dans votre espace client.
 
 Vous y trouverez toutes vos sauvegardes :
@@ -71,7 +71,7 @@ Vous pouvez donner un nom à vos sauvegardes manuelles pour en faciliter la gest
 
 > [!primary]
 >
-> Attention, les sauvegardes manuelles représentent un coût aditionnel détaillé dans l'espace client.
+> Attention, les sauvegardes manuelles représentent un coût additionnel détaillé dans l'espace client.
 >
 
 
@@ -93,13 +93,13 @@ Sélectionnez la sauvegarde qui vous intéresse dans la liste et cliquez sur le 
 
 **Restaurer à un instant précis (PITR, Point In Time Recovery)**
 
-Cette fonctionnalité de PostgreSQL vous permet de revenir dans le temps, à la minute près. Vous trouverez davantages d'informations sur le fonctionnement en consultant [la documentation officielle](https://docs.postgresql.fr/10/continuous-archiving.html){.external} de PostgreSQL.
+Cette fonctionnalité de PostgreSQL vous permet de revenir dans le temps, à la minute près. Vous trouverez davantage d'informations sur le fonctionnement en consultant [la documentation officielle](https://docs.postgresql.fr/10/continuous-archiving.html){.external} de PostgreSQL.
 
 Cliquez sur le bouton `Actions`{.action} puis `Restauration à une date spécifiée`{.action}. Une fenêtre de dialogue vous demandera alors de rentrer la date et l'heure à laquelle vous souhaitez retrouver vos données.
 
 > [!primary]
 >
-> Pour ne pas pertuber le fonctionnement de votre cluster, les données restaurées sont mises à disposition sur une instance dédiée en lecture seule.
+> Pour ne pas perturber le fonctionnement de votre cluster, les données restaurées sont mises à disposition sur une instance dédiée en lecture seule.
 >
 > Cette instance vous sera facturée par heure et l'espace consommé par les données vous sera facturé par Go par heure.
 >
