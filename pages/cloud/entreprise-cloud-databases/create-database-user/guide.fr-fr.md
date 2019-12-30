@@ -21,7 +21,7 @@ Pour une documentation exhaustive, référez-vous à la [documentation technique
 
 ## Rappel
 
-Vous possédez le compte administrateur PostgreSQL **postgres** qui à la possibilité de réaliser tous types d'opérations sur la base de données.
+Vous possédez le compte administrateur PostgreSQL **postgres** qui a la possibilité de réaliser tous types d'opérations sur la base de données.
 
 > [!primary]
 > Il est impératif de ne pas modifier les configurations techniques mises en place par OVHcloud au risque de dégrader ou d’empêcher le bon fonctionnement de votre cluster.
@@ -32,7 +32,7 @@ Vous possédez le compte administrateur PostgreSQL **postgres** qui à la possib
 
 ### Étape 1 : Installation d'un client PostgreSQL
 
-Sur un système d'exploitation Unix/Linux, il convient d'installer le paquet postgresql-client pour se connecter en ligne de commande. Réferrez-vous à la documentation officelle de votre système d'exploitation.
+Sur un système d'exploitation Unix/Linux, il convient d'installer le paquet postgresql-client pour se connecter en ligne de commande. Référez-vous à la documentation officielle de votre système d'exploitation.
 
 Sur Microsoft Windows, il existe une multitude de solutions en lignes de commande ou interfaces visuelles (GUI). Elles sont référencées dans la [documentation wiki de PostgreSQL](https://wiki.postgresql.org/wiki/PostgreSQL_Clients){.external}. Choisissez celui qui vous convient le mieux.
 
