@@ -16,8 +16,8 @@ This guide will also indicate how to add one or more logins to a sub-account to 
 ## Requirements
 
 * Be connected on [API OVH](https://api.ovh.com/console){.external}.
-* Have [créé ses identifiants pour l'API OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
-* Have a customer account wih Reseller Tag (Please contact your sale to know to find out how to be eligible).
+* Have [created your credentials for OVH API](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
+* Have a customer account wih Reseller Tag (lease contact your sale to know how to be eligible).
 
 ## Instructions
 
