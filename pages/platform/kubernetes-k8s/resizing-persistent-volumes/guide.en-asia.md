@@ -49,7 +49,7 @@ You also need to know how PVs are handled on OVHcloud Managed Kubernetes service
 
 To test the PVs resizing, we will need a PV associated to the cluster, i.e. we need to deploy a service making a PVC. To keep thing simple, we choose to deploy a single instance of [MySQL](https://www.mysql.com/).
 
-Let's begin by creating a `mysql-pvc.yaml` to define an initial PVC with 2 GB of allotted space:
+Let's begin by creating a `mysql-pvc.yaml` to define an initial PVC with 2 GB of allocated space:
 
 ```yaml
 apiVersion: v1
@@ -57,7 +57,6 @@ kind: PersistentVolumeClaim
 metadata:
   name: mysql-pv-claim
 spec:
-  storageClassName: cinder-high-speed
   accessModes:
     - ReadWriteOnce
   resources:
@@ -141,24 +140,26 @@ persistentvolumeclaim/mysql-pv-claim created
 $ kubectl describe pvc mysql-pv-claim
 Name:          mysql-pv-claim
 Namespace:     default
-StorageClass:  cinder-high-speed
+StorageClass:  csi-cinder-high-speed
 Status:        Bound
-Volume:        pvc-0e5b7256-81f6-11e9-92ef-32a9d43e9f33
+Volume:        ovh-managed-kubernetes-btw8lc-pvc-ab896768-b995-453b-85ab-4bcb378de01d
 Labels:        &lt;none>
 Annotations:   kubectl.kubernetes.io/last-applied-configuration:
                  {"apiVersion":"v1","kind":"PersistentVolumeClaim","metadata":{"annotations":{},"name":"mysql-pv-claim","namespace":"default"},"spec":{"acc...
                pv.kubernetes.io/bind-completed: yes
                pv.kubernetes.io/bound-by-controller: yes
-               volume.beta.kubernetes.io/storage-provisioner: kubernetes.io/cinder
+               volume.beta.kubernetes.io/storage-provisioner: cinder.csi.openstack.org
 Finalizers:    [kubernetes.io/pvc-protection]
 Capacity:      2Gi
 Access Modes:  RWO
 VolumeMode:    Filesystem
+Mounted By:    mysql-c85f7f79c-wz4w7
 Events:
-  Type       Reason                 Age   From                         Message
-  ----       ------                 ----  ----                         -------
-  Normal     ProvisioningSucceeded  13m   persistentvolume-controller  Successfully provisioned volume pvc-0e5b7256-81f6-11e9-92ef-32a9d43e9f33 using kubernetes.io/cinder
-Mounted By:  mysql-799956477c-kbshn
+  Type    Reason                 Age                From                                                                                         Message
+  ----    ------                 ----               ----                                                                                         -------
+  Normal  ExternalProvisioning   72s (x2 over 72s)  persistentvolume-controller                                                                  waiting for a volume to be created, either by external provisioner "cinder.csi.openstack.org" or manually created by system administrator
+  Normal  Provisioning           72s                cinder.csi.openstack.org_csi-cinder-controllerplugin-0_4da74c15-1973-486d-9dde-2ccf2f19811b  External provisioner is provisioning volume for claim "default/mysql-pv-claim"
+  Normal  ProvisioningSucceeded  70s                cinder.csi.openstack.org_csi-cinder-controllerplugin-0_4da74c15-1973-486d-9dde-2ccf2f19811b  Successfully provisioned volume ovh-managed-kubernetes-btw8lc-pvc-ab896768-b995-453b-85ab-4bcb378de01d
 
 $ kubectl apply -f mysql/mysql-deployment.yaml 
 service/mysql created
@@ -167,7 +168,7 @@ deployment.apps/mysql created
 $ kubectl describe deployment mysql
 Name:               mysql
 Namespace:          default
-CreationTimestamp:  Wed, 29 May 2019 11:49:06 +0200
+CreationTimestamp:  Mon, 06 Jan 2020 11:45:03 +0100
 Labels:             &lt;none>
 Annotations:        deployment.kubernetes.io/revision: 1
                     kubectl.kubernetes.io/last-applied-configuration:
@@ -198,12 +199,11 @@ Conditions:
   Available      True    MinimumReplicasAvailable
   Progressing    True    NewReplicaSetAvailable
 OldReplicaSets:  &lt;none>
-NewReplicaSet:   mysql-799956477c (1/1 replicas created)
+NewReplicaSet:   mysql-c85f7f79c (1/1 replicas created)
 Events:
-  Type    Reason             Age    From                   Message
-  ----    ------             ----   ----                   -------
-  Normal  ScalingReplicaSet  3m45s  deployment-controller  Scaled up replica set mysql-799956477c to 1
-
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  27s   deployment-controller  Scaled up replica set mysql-c85f7f79c to 1
 </code></pre>
 
 
@@ -282,7 +282,7 @@ We verify that the volume has been expanded:
 kubectl describe pvc mysql-pv-claim
 ```
 
-We will get a message that the PVC is waiting for user to start a pod to finish file system resize of the volume.
+In the conditions we can see that the PVC is waiting for user to start a pod to finish file system resize of the volume.
 Let's put `replicas` back to `1` on `mysql-deployment.yaml`, and deploy it again to start a pod:
 
 ```bash
@@ -308,25 +308,32 @@ persistentvolumeclaim/mysql-pv-claim patched
 $ kubectl describe pvc mysql-pv-claim
 Name:          mysql-pv-claim
 Namespace:     default
-StorageClass:  cinder-high-speed
+StorageClass:  csi-cinder-high-speed
 Status:        Bound
-Volume:        pvc-0e5b7256-81f6-11e9-92ef-32a9d43e9f33
+Volume:        ovh-managed-kubernetes-btw8lc-pvc-ab896768-b995-453b-85ab-4bcb378de01d
 Labels:        &lt;none>
 Annotations:   kubectl.kubernetes.io/last-applied-configuration:
                  {"apiVersion":"v1","kind":"PersistentVolumeClaim","metadata":{"annotations":{},"name":"mysql-pv-claim","namespace":"default"},"spec":{"acc...
                pv.kubernetes.io/bind-completed: yes
                pv.kubernetes.io/bound-by-controller: yes
-               volume.beta.kubernetes.io/storage-provisioner: kubernetes.io/cinder
+               volume.beta.kubernetes.io/storage-provisioner: cinder.csi.openstack.org
 Finalizers:    [kubernetes.io/pvc-protection]
-Capacity:      4Gi
+Capacity:      2Gi
 Access Modes:  RWO
 VolumeMode:    Filesystem
+Mounted By:    &lt;none>
 Conditions:
   Type                      Status  LastProbeTime                     LastTransitionTime                Reason  Message
   ----                      ------  -----------------                 ------------------                ------  -------
-  FileSystemResizePending   True    Mon, 01 Jan 0001 00:00:00 +0000   Wed, 29 May 2019 15:50:37 +0200           Waiting for user to (re-)start a pod to finish file system resize of volume on node.
-Events:                     &lt;none>
-Mounted By:                 &lt;none>
+  FileSystemResizePending   True    Mon, 01 Jan 0001 00:00:00 +0000   Mon, 06 Jan 2020 11:47:22 +0100           Waiting for user to (re-)start a pod to finish file system resize of volume on node.
+Events:
+  Type     Reason                 Age                    From                                                                                         Message
+  ----     ------                 ----                   ----                                                                                         -------
+  Normal   ExternalProvisioning   2m27s (x2 over 2m27s)  persistentvolume-controller                                                                  waiting for a volume to be created, either by external provisioner "cinder.csi.openstack.org" or manually created by system administrator
+  Normal   Provisioning           2m27s                  cinder.csi.openstack.org_csi-cinder-controllerplugin-0_4da74c15-1973-486d-9dde-2ccf2f19811b  External provisioner is provisioning volume for claim "default/mysql-pv-claim"
+  Normal   ProvisioningSucceeded  2m25s                  cinder.csi.openstack.org_csi-cinder-controllerplugin-0_4da74c15-1973-486d-9dde-2ccf2f19811b  Successfully provisioned volume ovh-managed-kubernetes-btw8lc-pvc-ab896768-b995-453b-85ab-4bcb378de01d
+  Normal   Resizing                  9s (x9 over 13s)  external-resizer cinder.csi.openstack.org  External resizer is resizing volume ovh-managed-kubernetes-btw8lc-pvc-ab896768-b995-453b-85ab-4bcb378de01d
+  Normal   FileSystemResizeRequired  8s                external-resizer cinder.csi.openstack.org  Require file system resize of volume on node
 
 $ kubectl patch deployment mysql -p '{ "spec": { "replicas": 1 }}'
 deployment.extensions/mysql patched
@@ -342,21 +349,28 @@ mysql   1/1     1            1           4h4m
 $ kubectl describe pvc mysql-pv-claim
 Name:          mysql-pv-claim
 Namespace:     default
-StorageClass:  cinder-high-speed
+StorageClass:  csi-cinder-high-speed
 Status:        Bound
-Volume:        pvc-0e5b7256-81f6-11e9-92ef-32a9d43e9f33
+Volume:        ovh-managed-kubernetes-btw8lc-pvc-ab896768-b995-453b-85ab-4bcb378de01d
 Labels:        &lt;none>
 Annotations:   kubectl.kubernetes.io/last-applied-configuration:
                  {"apiVersion":"v1","kind":"PersistentVolumeClaim","metadata":{"annotations":{},"name":"mysql-pv-claim","namespace":"default"},"spec":{"acc...
                pv.kubernetes.io/bind-completed: yes
                pv.kubernetes.io/bound-by-controller: yes
-               volume.beta.kubernetes.io/storage-provisioner: kubernetes.io/cinder
+               volume.beta.kubernetes.io/storage-provisioner: cinder.csi.openstack.org
 Finalizers:    [kubernetes.io/pvc-protection]
 Capacity:      6Gi
 Access Modes:  RWO
 VolumeMode:    Filesystem
-Events:        &lt;none>
-Mounted By:    mysql-799956477c-bj5m5
+Mounted By:    mysql-c85f7f79c-9nn8q
+Events:
+  Type     Reason                 Age                    From                                                                                         Message
+  ----     ------                 ----                   ----                                                                                         -------
+  Normal   ExternalProvisioning   8m8s (x2 over 8m8s)    persistentvolume-controller                                                                  waiting for a volume to be created, either by external provisioner "cinder.csi.openstack.org" or manually created by system administrator
+  Normal   Provisioning           8m8s                   cinder.csi.openstack.org_csi-cinder-controllerplugin-0_4da74c15-1973-486d-9dde-2ccf2f19811b  External provisioner is provisioning volume for claim "default/mysql-pv-claim"
+  Normal   ProvisioningSucceeded  8m6s                   cinder.csi.openstack.org_csi-cinder-controllerplugin-0_4da74c15-1973-486d-9dde-2ccf2f19811b  Successfully provisioned volume ovh-managed-kubernetes-btw8lc-pvc-ab896768-b995-453b-85ab-4bcb378de01d
+  Normal   Resizing                  5m50s (x9 over 5m54s)  external-resizer cinder.csi.openstack.org  External resizer is resizing volume ovh-managed-kubernetes-btw8lc-pvc-ab896768-b995-453b-85ab-4bcb378de01d
+  Normal   FileSystemResizeRequired  5m49s                  external-resizer cinder.csi.openstack.org  Require file system resize of volume on node
 </code></pre>
 
 

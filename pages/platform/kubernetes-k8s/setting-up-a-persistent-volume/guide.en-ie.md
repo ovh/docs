@@ -73,8 +73,11 @@ spec:
   resources:
     requests:
       storage: 10Gi
-  storageClassName: cinder-high-speed
-```      
+  storageClassName: csi-cinder-high-speed
+```
+
+> [!warning]
+> For Kubernetes clusters running in versions 1.12.x, 1.13.x and 1.14.x the storageClassName should be: cinder-high-speed.
 
 And apply it to your cluster:
 
@@ -92,12 +95,14 @@ kubectl get pv
 
 <pre class="console"><code>$ kubectl apply -f test-pvc.yaml
 persistentvolumeclaim/test-pvc created
+
 $ kubectl get pvc
-NAME       STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS        AGE
-test-pvc   Bound    pvc-8ed251c3-4a1e-478e-82cf-01dd637ca459   10Gi       RWO            cinder-high-speed   16s
+NAME       STATUS   VOLUME                                                                   CAPACITY   ACCESS MODES   STORAGECLASS            AGE
+test-pvc   Bound    ovh-managed-kubernetes-btw8lc-pvc-8a035acf-23e9-4125-a392-119f5763edee   10Gi       RWO            csi-cinder-high-speed   5s
+
 $ kubectl get pv
-NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM              STORAGECLASS        REASON   AGE
-pvc-8ed251c3-4a1e-478e-82cf-01dd637ca459   10Gi       RWO            Delete           Bound    default/test-pvc   cinder-high-speed            15s
+NAME                                                                     CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                        STORAGECLASS            REASON   AGE
+ovh-managed-kubernetes-btw8lc-pvc-8a035acf-23e9-4125-a392-119f5763edee   10Gi       RWO            Delete           Bound    default/test-pvc   csi-cinder-high-speed            15s
 </code></pre>
 
 ## Using the PVC
@@ -138,7 +143,7 @@ Namespace:          default
 Priority:           0
 PriorityClassName:  &lt;none>
 Node:               node-03/51.75.199.0
-Start Time:         Thu, 05 Sep 2019 18:14:42 +0200
+Start Time:         Mon, 06 Jan 2020 11:38:16 +0100
 Labels:             &lt;none>
 [...]
 Volumes:
@@ -151,7 +156,7 @@ Events:
   Type    Reason                  Age   From                     Message
   ----    ------                  ----  ----                     -------
   Normal  Scheduled               70s   default-scheduler        Successfully assigned default/test-pvc-pod to node-03
-  Normal  SuccessfulAttachVolume  68s   attachdetach-controller  AttachVolume.Attach succeeded for volume "pvc-8e0c9b3c-7760-41e7-b89b-cc3f8f04a735"
+  Normal  SuccessfulAttachVolume  68s   attachdetach-controller  AttachVolume.Attach succeeded for volume "ovh-managed-kubernetes-btw8lc-pvc-8a035acf-23e9-4125-a392-119f5763edee"
   Normal  Pulling                 60s   kubelet, node-03         Pulling image "nginx"
   Normal  Pulled                  59s   kubelet, node-03         Successfully pulled image "nginx"
   Normal  Created                 59s   kubelet, node-03         Created container myfrontend
@@ -161,7 +166,7 @@ Events:
 
 ## Storage Classes
 
-We currently support two [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) on OVHcloud Managed Kubernetes: `cinder-high-speed` and `cinder-classic`, both based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}, the OpenStack Block Storage service. The difference between them is the associated physical storage device. `cinder-high-speed` uses SSD, while `cinder-classic` uses traditional spinning disks. Both are distributed transparently, on three physical local replicas.
+We currently support two [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) on OVHcloud Managed Kubernetes: `csi-cinder-high-speed` and `csi-cinder-classic`, both based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}, the OpenStack Block Storage service. The difference between them is the associated physical storage device. `csi-cinder-high-speed` uses SSD, while `csi-cinder-classic` uses traditional spinning disks. Both are distributed transparently, on three physical local replicas.
 
 When you create a Persistent Volume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [flexible cloud storage prices](https://www.ovh.com/world/public-cloud/storage/additional-disks/){.external}.
 
@@ -198,8 +203,8 @@ kubectl get pv
 
 <pre class="console"><code>$ kubectl 
 get pv
-NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM              STORAGECLASS        REASON   AGE
-pvc-8ed251c3-4a1e-478e-82cf-01dd637ca459   10Gi       RWO            Delete           Bound    default/test-pvc   cinder-high-speed            15s
+NAME                                                                     CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                        STORAGECLASS            REASON   AGE
+ovh-managed-kubernetes-btw8lc-pvc-8a035acf-23e9-4125-a392-119f5763edee   10Gi       RWO            Delete           Bound    default/test-pvc   csi-cinder-high-speed            15s
 </code></pre>
 
 
@@ -216,8 +221,10 @@ kubectl get pv
 <pre class="console"><code>$ kubectl 
 $ kubectl delete pvc test-pvc
 persistentvolumeclaim "test-pvc" deleted
+
 $ kubectl get pvc
 No resources found.
+
 $ kubectl get pv
 No resources found.
 </code></pre>
@@ -256,14 +263,16 @@ kubectl get pv
 <pre class="console"><code>$ kubectl apply -f test-pvc.yaml
 persistentvolumeclaim/test-pvc created
 $ kubectl get pv
-NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM              STORAGECLASS        REASON   AGE
-pvc-e53d180d-51a4-4237-b9b3-f6b32cce54cf   10Gi       RWO            Delete           Bound    default/test-pvc   cinder-high-speed            3s
-$ kubectl patch pv pvc-e53d180d-51a4-4237-b9b3-f6b32cce54cf -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
+NAME                                                                     CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM              STORAGECLASS            REASON   AGE
+ovh-managed-kubernetes-btw8lc-pvc-e935df1d-7b7f-4839-bed7-43cb3bf0bb72   10Gi       RWO            Delete           Bound    default/test-pvc   csi-cinder-high-speed            19s
+
 $ kubectl patch pv pvc-e53d180d-51a4-4237-b9b3-f6b32cce54cf -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
 persistentvolume/pvc-e53d180d-51a4-4237-b9b3-f6b32cce54cf patched
+
 $ kubectl get pv
-NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM              STORAGECLASS        REASON   AGE
-pvc-e53d180d-51a4-4237-b9b3-f6b32cce54cf   10Gi       RWO            Retain           Bound    default/test-pvc   cinder-high-speed            4m
+NAME                                                                     CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM              STORAGECLASS            REASON   AGE
+ovh-managed-kubernetes-btw8lc-pvc-e935df1d-7b7f-4839-bed7-43cb3bf0bb72   10Gi       RWO            Retain           Bound    default/test-pvc   csi-cinder-high-speed            19s
+
 </code></pre>
 
 In the preceding output, you can see that the volume bound to PVC `default/test-pvc` has reclaim policy `Retain`. It will not be automatically deleted when a user deletes PVC `default/test-pvc`
