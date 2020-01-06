@@ -22,7 +22,7 @@ order: 2
 
 The Graphite API documentation is available at [http://graphite-api.readthedocs.io/en/latest/api.html](http://graphite-api.readthedocs.io/en/latest/api.html){.external}.
 
-We are currently supporting this calls:
+We are currently supporting these calls:
 
 | API                 | Method     | Supported                    | limitation                                     |
 | ------------------- | ---------- | ---------------------------- | ---------------------------------------------- |
@@ -33,12 +33,12 @@ We are currently supporting this calls:
 
 ### How to push data
 
-[Graphite Carbon](https://github.com/graphite-project/carbon){.external} use a push-based approach using a TCP listener to gather metrics. We developed open-source tools called
+[Graphite Carbon](https://github.com/graphite-project/carbon){.external} uses a push-based approach using a TCP listener to gather metrics. We developed open-source tools called
 `Beamium` and `Fossil` in order to push metrics to Metrics Data Platform. Please see the [dedicated guide to use Beamium](../source-beamium) and [Fossil github repository](https://github.com/ovh/fossil){.external}.
 
-The Graphite protocol is support on the Metrics Data Platform via a TCP connection or via an HTTP request. You can use the same syntax as defined in [Hosted Graphite](https://www.hostedgraphite.com/docs/#tcp-connection){.external}.
+The Graphite protocol is supported on the Metrics Data Platform via a TCP connection or via an HTTP request. You can use the same syntax as defined in [Hosted Graphite](https://www.hostedgraphite.com/docs/#tcp-connection){.external}.
 
-In this part og the guide, you will learn how to send Graphite's metrics to Metrics Data Platform.
+In this part of the guide, you will learn how to send Graphite's metrics to Metrics Data Platform.
 
 #### Via a TCP connection
 
@@ -62,7 +62,7 @@ echo "TOKEN@.tcp_metric 14.2 1546420308000" | ncat --ssl graphite.gra1.metrics.o
 
 [StatsD](https://github.com/etsy/statsd){.external} is a network daemon. It listens for statistics such as counters and timers sent via UDP or TCP. You can use StatsD to perform metrics aggregations before sending them to the Metrics Data Platform.
 
-You need to install StatsD, once it's done. StatsD can be used with a config file as describe below.
+Once it's done, you need to install StatsD. StatsD can be used with a config file as described below.
 
 ```yaml
 {
@@ -100,7 +100,7 @@ Where TOKEN is the write token of your Metrics Data Platform application.
 
 ### How to query
 
-Graphite expose an HTTP api in order to query time series. It offers basic query capabilities and a way to use functions on time series. All query documentation is available [here](https://graphite-api.readthedocs.io/en/latest/api.html#the-render-api-render){.external}.
+Graphite exposes an HTTP api in order to query time series. It offers basic query capabilities and a way to use functions on time series. All query documentation is available [here](https://graphite-api.readthedocs.io/en/latest/api.html#the-render-api-render){.external}.
 
 For example to retrieve your data, you can simply execute the following HTTP request using cURL.
 
@@ -285,7 +285,7 @@ For example this request will add 2 `os.cpu` series from host 1 and host 2.
 curl 'https://u:READ_TOKEN:@graphite.REGION.metrics.ovh.net/render?target=sumSeries("os.cpu;host=1", "os.cpu;host=1")'
 ```
 
-This case appears when you are using functions on Grafana. If you want to discover how works Grafana's Graphite plugin, please take a look [here](http://docs.grafana.org/features/datasources/graphite/).
+This case appears when you are using functions on Grafana. If you want to discover how Grafana's Graphite plugin works, please take a look [here](http://docs.grafana.org/features/datasources/graphite/).
 
 ## Go further
 
