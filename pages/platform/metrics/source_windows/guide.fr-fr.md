@@ -10,7 +10,7 @@ order: 7
 
 ## Objective
 
-In this guide, you will learn how to use the [telegraf tool](https://www.influxdata.com/time-series-platform/telegraf/) or the [Prometheus ecosystem](https://prometheus.io/) to collect Windows data and sending them to the Metrics Data Platform.
+In this guide, you will learn how to use the [telegraf tool](https://www.influxdata.com/time-series-platform/telegraf/) or the [Prometheus ecosystem](https://prometheus.io/) to collect Windows data and send them to the Metrics Data Platform.
 
 ## Requirements
 
@@ -19,11 +19,11 @@ In this guide, you will learn how to use the [telegraf tool](https://www.influxd
 
 ## Instructions
 
-Some known tools have the possibility to collect Windows data, and then sending them to a Backend. We will see how the [telegraf tool](https://www.influxdata.com/time-series-platform/telegraf/) and the [Prometheus ecosystem](https://prometheus.io/) can be used to collect and store data on the Metrics Data Platform.
+Some known tools have the possibility to collect Windows data, and then send them to a Backend. We will see how the [telegraf tool](https://www.influxdata.com/time-series-platform/telegraf/) and the [Prometheus ecosystem](https://prometheus.io/) can be used to collect and store data on the Metrics Data Platform.
 
 ### telegraf
 
-[telegraf runs on Windows](https://github.com/influxdata/docs.influxdata.com/blob/master/content/telegraf/v1.7/administration/windows_service.md){.external}. Following this documentation and setting a configuration as described in our [telegraf user documentation](../source-telegraf/guide.fr-fr.md) allow a user to push it's own server and application data to Metrics.
+[Telegraf runs on Windows](https://github.com/influxdata/docs.influxdata.com/blob/master/content/telegraf/v1.7/administration/windows_service.md){.external}. Following this documentation and setting a configuration as described in our [telegraf user documentation](../source-telegraf/guide.fr-fr.md) allow a user to push its own server and application data to Metrics.
 
 First go to [download telegraf page](https://portal.influxdata.com/downloads/){.external} and select the Windows binaries.
 
@@ -45,7 +45,7 @@ Once telegraf is unzipped, you shoud have a .exe file and a .conf one. Edit the 
 
 The telegraf basic configuration produced ~80 metrics for a single Windows 2016 server.
 
-If you want to record the total Metrics on all field, you can set:
+If you want to record the total Metrics on the whole field, you can set:
 
 ```yaml
 IncludeTotal=true    # Compute total metrics for current field
@@ -65,11 +65,11 @@ Otherwise to blacklist specific instance you can use `tagdrop` instead of `tagpa
 
 You can use the Prometheus ecosystem on Windows. An interesting Prometheus exporter for Windows is: [wmi_exporter](https://github.com/martinlindhe/wmi_exporter){.external}.
 
-telegraf supports Windows and can be used to record and forward Prometheus data to Metrics.
+Telegraf supports Windows and can be used to record and forward Prometheus data to Metrics.
 
-To collect metrics on a Windows 2016 server, simply download and install the last available [wmi_exporter release](https://github.com/martinlindhe/wmi_exporter/releases){.external} (.msi to install a windows service).
+To collect metrics on a Windows 2016 server, simply download and install the latest [wmi_exporter release available](https://github.com/martinlindhe/wmi_exporter/releases){.external} (.msi to install a windows service).
 
-As by default `WMI_EXPORTER` listen to `0.0.0.0` install it with `LISTEN_ADDR` set to `127.0.0.1` by executing:
+As by default `WMI_EXPORTER` listens to `0.0.0.0` install it with `LISTEN_ADDR` set to `127.0.0.1` by executing:
 
 ```shell-session
 msiexec /i <path-to-msi-file> LISTEN_ADDR=127.0.0.1  # update the IP address used to bind WMI Exporter
@@ -77,11 +77,11 @@ msiexec /i <path-to-msi-file> LISTEN_ADDR=127.0.0.1  # update the IP address use
 
 Once `WMI_EXPORTER` is installed all the server metrics are available at `http://127.0.0.1:9182/metrics`.
 
-If you wan't to access the `WMI_EXPORTER` metrics from internet you can expose them using `0.0.0.0` IP binded address but ensure that you apply **sufficient security**.
+If you want to access the `WMI_EXPORTER` metrics from internet you can expose them using `0.0.0.0` IP binded address but ensure that you apply **sufficient security**.
 
-Then [download telegraf on Windows](https://portal.influxdata.com/downloads/), and follow previous installastion steps.
+Then [download Telegraf on Windows](https://portal.influxdata.com/downloads/), and follow previous installation steps.
 
-Configure telegraf as declared previously and deactivate the `inputs.win_perf_counter plugin` if you do not wan't to record them by removing configuration lines or simply add a namedrop option to remove specific metrics:
+Configure Telegraf as declared previously and deactivate the `inputs.win_perf_counter plugin` if you do not want to record them by removing configuration lines or simply add a namedrop option to remove specific metrics:
 
 ```yaml
 [[inputs.win_perf_counters]] # Add a the start of the telegraf win_perf_counters input plugin:
@@ -89,7 +89,7 @@ Configure telegraf as declared previously and deactivate the `inputs.win_perf_co
 
 ```
 
-Then configure telegraf to use the prometheus plugin:
+Then configure Telegraf to use the prometheus plugin:
 
 ```yaml
 [[inputs.prometheus]] # Add the prometheus input plugin:
@@ -99,7 +99,7 @@ Then configure telegraf to use the prometheus plugin:
 
 ```
 
-> The telegraf prometheus plugin doesn't work on telegraf test mode. Restart telegraf windows service and you should see your data on your Metrics account.
+> The Telegraf prometheus plugin doesn't work on Telegraf test mode. Restart Telegraf Windows service and you should see your data on your Metrics account.
 
 This telegraf configuration produced ~140 metrics for a single Windows 2016 server. Check the [WMI exporter collector](https://github.com/martinlindhe/wmi_exporter/blob/master/docs/README.md) documentation to select and collect the right metrics.
 
