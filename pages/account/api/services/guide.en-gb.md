@@ -9,27 +9,28 @@ section: OVH APIv6
 
 ## Objective
 
-We will describe a par of services life cycle at OVH over API routes /service & /services
+We will describe part of the services lifecycle at OVHcloud through the API routes /service and /services.
 
-API **/service** have commons actions to all kinds of OVH services:
+The **/service** API route consists of actions common to all types of services at OVHcloud:
 
-* Bills
-* Manage life cycle
-* Associate contacts
-* API entrypoint for technical management if necessary.
+* Invoices
+* Lifecycle management
+* Related contacts
+* API entry point for possible technical management
 
 ## Requirements
 
-* Be connected on [API OVH](https://api.ovh.com/console){.external}.
-* Have [created your credentials for OVH API](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
-* Have a customer account wih Reseller Tag (Please contact your sale to know how to be eligible).
+* Being connected on [OVHcloud API](https://api.ovh.com/console){.external}.
+* Having [created your credentials for OVHcloud API](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
+* Having a customer account wih Reseller Tag (contact your sale representative for eligibility if applicable).
+
 
 ## Instructions
 
 ### Ressources
 
-* service : Core entity contracted to OVH
-* serviceId : Unique identifier of the service at OVH 
+* service : Core entity contractualised to OVHcloud
+* serviceId : OVHcloud service unique ID
 
 ### Operation process
 
@@ -40,7 +41,7 @@ API **/service** have commons actions to all kinds of OVH services:
 > @api {POST} /service/{serviceId}/suspend
 >
 
-The call change service status into suspend :
+The call changes service status into suspend :
 
 * state : expired
 
@@ -55,7 +56,7 @@ Where applicable:
 > @api {POST} /service/{serviceId}/reopen
 >
 
-The call causes the service to reopen and the invoice to be emitted over the period between the suspension date and the reopening date.
+The call will reopen the service and issue the invoice for the period between the suspension date and the reopen date.
 
 #### Terminate
 
@@ -66,7 +67,7 @@ Finally:
 > @api {POST} /service/{serviceId}/terminate
 >
 
-The call causes the service and data to be deleted and the invoice to be emitted for the period between the suspension date and the deletion date.
+The call will delete the service and data and issue the invoice for the period between the date of suspension and the date of deletion.
 
 ## Go further
 
