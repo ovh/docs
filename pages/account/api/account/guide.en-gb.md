@@ -9,15 +9,14 @@ section: OVH APIv6
 
 ## Objective
 
-We will describe how to create a OVH sub-account to create a particular identity in objective to isolate services access and billing.
-
-This guide will also indicate how to add one or more logins to a sub-account to provide access over OVH Manager.
+We will describe how to create a OVHcloud sub-account in order to create a unique identity that isolates visibility on services, billing.
+This guide will also show you how to add one or more logins to this sub-account to provide access the OVHcloud control panel.
 
 ## Requirements
 
-* Be connected on [API OVH](https://api.ovh.com/console){.external}.
-* Have [created your credentials for OVH API](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
-* Have a customer account wih Reseller Tag (lease contact your sale to know how to be eligible).
+* Being connected on [OVHcloud API](https://api.ovh.com/console){.external}.
+* Having [created your credentials for OVHcloud API](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
+* Having a customer account wih Reseller Tag (contact your sale representative for eligibility if applicable).
 
 ## Instructions
 
@@ -35,7 +34,7 @@ This guide will also indicate how to add one or more logins to a sub-account to 
 > @api {POST} /me/subAccount
 >
 
-Get and save the ID returned 
+Retrieve and save the resulting ID.
 
 #### Create a ConsumerKey for this sub-account
 
@@ -44,20 +43,20 @@ Get and save the ID returned
 > @api {POST} /me/subAccount/{id}/createConsumerKey
 >
 
-The ConsumerKey allow you to call the OVH API with the identiy of the sub-account.
+The ConsumerKey allows you to call the OVHcloud API with the identiy of the sub-account.
 
 #### Create a user for this sub-account
 
-With the ConsumerKey previously created.
+With the previously created ConsumerKey.
 
 > [!api]
 >
 > @api {POST} /me/identity/user
 >
 
-* email : add a email address for this user
-* login : put a string relevant for you
-* password : Must be follow rules from [zxcvbn: Low-Budget Password Strength Estimation](https://github.com/dropbox/zxcvbn){.external} and be validated on [Pwned Passwords](https://haveibeenpwned.com/Passwords){.external} .
+* email : add an email address for this user
+* login : enter a relevant string for this user
+* password : it must meet the requirements of [zxcvbn: Low-Budget Password Strength Estimation](https://github.com/dropbox/zxcvbn){.external} and be valid by testing it on [Pwned Passwords](https://haveibeenpwned.com/Passwords){.external}.
 
 ## Go further
 
