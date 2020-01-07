@@ -30,13 +30,14 @@ This guide will explain how to configure Cyberduck to manage your Object Storage
 
 
 
-![](images/img_2757.jpg){.thumbnail}
+![](images/v3.0.png){.thumbnail}
+
 Enter the following information:
 
 - Server: auth.cloud.ovh.net (Authentication server)
 - Tenant ID:Access Key : This is the Project_ID:Horizon_User_ID
 - Secret Key: your Horizon user password
-- More Options/Path: v2.0
+- More Options/Path: v3.0
 
 
 
