@@ -50,11 +50,11 @@ Pour OVHcloud, le document doit donc contenir a minima les informations suivante
 * Date de début de validité
 * Date de fin de validité
 
-### Comment renseigner un Numéro de commande et Purchase Order (PO) Number
+### Comment renseigner un Numéro de Purchase Order (PO)
 
-Afin que OVHcloud puisse éditer les factures avec le numéro de Purchase Order souhaité, contactez votre commercial afin de lui donner ce numéro.
+Afin que OVHcloud puisse éditer les factures avec le numéro de Purchase Order souhaité, contactez votre conseiller commercial afin de lui donner ce numéro.
 
-En cas de modification de ce numéro de Purchase Order, contactez votre commercial au plus vite.
+En cas de modification de ce numéro de Purchase Order, contactez votre conseiller commercial au plus vite.
 
 
 ## Aller plus loin
