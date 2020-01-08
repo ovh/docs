@@ -1,6 +1,6 @@
 ---
 title: 'Managing backups and restorations'
-slug: "manage-backups"
+slug: manage-backups
 excerpt: 'Find out how to manage all of your backups and restorations'
 section: 'Getting started with a PostgreSQL cluster'
 ---
