@@ -1,15 +1,14 @@
 ---
-title: Gestão dos tokens
-excerpt: Gestão dos tokens
+title: 'Gestão dos tokens'
+excerpt: 'Gestão dos tokens'
 slug: gestao_dos_tokens
 legacy_guide_number: g1872
 ---
 
-
 ## 
 
 ## Atenção
-As informações detalhadas neste guia são válidas para a versão 2.0 da API da Keystone.
+As informações detalhadas neste guia são válidas para a versão 3.0 da API da Keystone.
 
 
 ## Definições
