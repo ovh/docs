@@ -5,18 +5,17 @@ slug: token-verwaltung
 legacy_guide_number: g1872
 ---
 
-
 ## 
 
 ## Achtung!
-Alle Angaben in dieser Hilfe beziehen sich auf Version 2.0 der Keystone API.
+Alle Angaben in dieser Hilfe beziehen sich auf Version 3.0 der Keystone API.
 
 
 ## Definitionen
 
 - Endpoint: HTTP-Adresse, die direkt auf die API eines Service zeigt, wie etwa https://auth.cloud.ovh.net/v2.0 für den Authentifizierungs-Endpoint oder https://image.compute.gra1.cloud.ovh.net/ für den Endpoint zur Image-Verwaltung der Zone GRA1.
 
-- Token: Einmalige Zeichenkette für Authentifizierung und Zugriffsrechte. Ein Token wird vom Benutzer unter Angabe seiner Login-Daten über die Authentifizierungs-API angefordert. Das Token wird erstellt und ist dann 24 Stunden lang gültig. Ein Token kann "scoped" oder "unsocped" sein, also entweder an einen bestimmten Tenant gebunden oder eben nicht.
+- Token: Einmalige Zeichenkette für Authentifizierung und Zugriffsrechte. Ein Token wird vom Benutzer unter Angabe seiner Login-Daten über die Authentifizierungs-API angefordert. Das Token wird erstellt und ist dann 24 Stunden lang gültig. Ein Token kann "scoped" oder "unscoped" sein, also entweder an einen bestimmten Tenant gebunden oder eben nicht.
 
 
 
