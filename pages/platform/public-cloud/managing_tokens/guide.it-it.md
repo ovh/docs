@@ -1,15 +1,14 @@
 ---
-title: Gestisci i tuoi token
-excerpt: Gestisci i tuoi token
+title: 'Gestisci i tuoi token'
+excerpt: 'Gestisci i tuoi token'
 slug: gestisci_i_tuoi_token
 legacy_guide_number: g1872
 ---
 
-
 ## 
 
 ## Attenzione!
-Le informazioni fornite in questa guida sono valide per la versione 2.0 dell'API di Keystone.
+Le informazioni fornite in questa guida sono valide per la versione 3.0 dell'API di Keystone.
 
 
 ## Definizioni
