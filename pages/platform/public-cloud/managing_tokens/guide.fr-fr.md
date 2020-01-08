@@ -10,14 +10,14 @@ section: 'Actions via API et lignes de commande'
 
 > [!alert]
 >
-> Les informations détaillées ici sont valables pour la version 2.0 de l'API de
+> Les informations détaillées ici sont valables pour la version 3.0 de l'API de
 > Keystone.
 > 
 
 
 ### Définitions
 - Endpoint : Adresse HTTP pointant directement sur une API d'un service. par exemple [https://auth.cloud.ovh.net/v2.0](https://auth.cloud.ovh.net/v2.0){.external} pour le endpoint d'authentification ou [https://image.compute.gra1.cloud.ovh.net/](https://image.compute.gra1.cloud.ovh.net/){.external} pour le endpoint de gestion des images de la zone GRA1.
-- Token : Chaine de caractère unique liée à une authentification et à des droits d'accès. Un token est demandé par l'utilisateur en fournissant ses credentials (informations de login) à l'API d'authentification. Il est généré et fournis avec une durée de validité limitée de 24h. Un token peut être "scoped" ou "unsocped", c'est à dire qu'il peut être directement concerné un tenant ou n'être lié à aucun tenant.
+- Token : Chaine de caractère unique liée à une authentification et à des droits d'accès. Un token est demandé par l'utilisateur en fournissant ses credentials (informations de login) à l'API d'authentification. Il est généré et fournis avec une durée de validité limitée de 24h. Un token peut être "scoped" ou "unscoped", c'est à dire qu'il peut être directement concerné un tenant ou n'être lié à aucun tenant.
 
 
 ### Principe global

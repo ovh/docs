@@ -1,16 +1,15 @@
 ---
-title: Zarządzanie tokenami
-excerpt: Zarządzanie tokenami
+title: 'Zarządzanie tokenami'
+excerpt: 'Zarządzanie tokenami'
 slug: zarzadzanie_tokenami
 legacy_guide_number: g1872
-section: Zarządzanie w OpenStack CLI
+section: 'Zarządzanie w OpenStack CLI'
 ---
-
 
 ## 
 
 ## Uwaga!
-Poniższe informacje dotyczą tylko wersji 2.0 API Keystone.
+Poniższe informacje dotyczą tylko wersji 3.0 API Keystone.
 
 
 ## Definicje

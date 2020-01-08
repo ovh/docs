@@ -1,22 +1,21 @@
 ---
-title: Kodų (token) valdymas
-excerpt: Kodų (token) valdymas
+title: 'Kodų (token) valdymas'
+excerpt: 'Kodų (token) valdymas'
 slug: kodu_token_valdymas
 legacy_guide_number: g1872
 ---
 
-
 ## 
 
 ## Dėmesio!
-Čia pateiktos instrukcijos skirtos Keystone API 2.0 versijai.
+Čia pateiktos instrukcijos skirtos Keystone API 3.0 versijai.
 
 
 ## Terminai
 
 - Endpoint: HTTP adresas, nukreipiantis į paslaugos API. Pavyzdžiui, autorizacijos endpoint yra https://auth.cloud.ovh.net/v2.0, o GRA1 zonos atvaizdų valdymo endpoint yra https://image.compute.gra1.cloud.ovh.net/.
 
-- Token: Simbolių seka, susijusi su autentifikacija ir prieigos teisėmis. Kodas (token) yra sugeneruojamas vartotojo jam prisijungiant per API autentifikaciją. Kodas yra sugeneruojamas ir galioja 24 val. Kodas gali būti „scoped“ arba „unsocped“, t.y. jis gali būti tiesiogiai susijęs su valdytoju (tenant) arba nesusijęs su jokiu valdytoju.
+- Token: Simbolių seka, susijusi su autentifikacija ir prieigos teisėmis. Kodas (token) yra sugeneruojamas vartotojo jam prisijungiant per API autentifikaciją. Kodas yra sugeneruojamas ir galioja 24 val. Kodas gali būti „scoped“ arba „unscoped“, t.y. jis gali būti tiesiogiai susijęs su valdytoju (tenant) arba nesusijęs su jokiu valdytoju.
 
 
 

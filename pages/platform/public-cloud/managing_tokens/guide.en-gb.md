@@ -1,16 +1,15 @@
 ---
-title: Managing tokens
-excerpt: Managing tokens
+title: 'Managing tokens'
+excerpt: 'Managing tokens'
 slug: managing_tokens
 legacy_guide_number: g1872
-section: API reference/CLI
+section: 'API reference/CLI'
 ---
-
 
 ## 
 
 ## Warning!
-The information in this guide applies to version 2.0 of the Keystone API.
+The information in this guide applies to version 3.0 of the Keystone API.
 
 
 ## Definitions
