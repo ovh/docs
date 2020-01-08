@@ -8,7 +8,7 @@ legacy_guide_number: g1872
 ## 
 
 ## Huom!
-Tämän ohjeen tiedot pätevät API Keystone 2.0 versiossa.
+Tämän ohjeen tiedot pätevät API Keystone 3.0 versiossa.
 
 
 ## Määritelmät
