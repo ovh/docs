@@ -1,11 +1,12 @@
 ---
-title: Zarządzanie Object Storage za pomocą oprogramowania CyberDuck
-excerpt: Zarządzanie Object Storage za pomocą oprogramowania CyberDuck
+title: 'Zarządzanie Object Storage za pomocą oprogramowania CyberDuck'
+excerpt: 'Zarządzanie Object Storage za pomocą oprogramowania CyberDuck'
 slug: zarzadzanie_object_storage_za_pomoca_oprogramowania_cyberduck
-section: Object Storage
+section: 'Object Storage'
 legacy_guide_number: g1868
 ---
 
+**Ostatnia aktualizacja dnia 2020-01-08**
 
 ## 
 Object Storage to usługa przestrzeni dyskowej zarządzana z poziomu API OpenStack.
@@ -33,13 +34,13 @@ Przewodnik ten wyjaśnia, jak skonfigurować oprogramowanie Cyberduck, aby móc 
 
 
 
-![](images/img_2757.jpg){.thumbnail}
+![objectstorage-cyberduck](images/v3.0.png){.thumbnail}
 W formularzu należy podać różne informacje:
 
 - Server: auth.cloud.ovh.net (serwer uwierzytelniania)
 - Tenant ID:Access Key: Jest to ID_Projektu:ID_Utilisateur_Horizon
 - Secret Key: hasło użytkownika Horizon
-- More Options / Path: v2.0
+- More Options / Path: v3.0
 
 
 
@@ -47,7 +48,7 @@ W formularzu należy podać różne informacje:
 
 
 
-![](images/img_2756.jpg){.thumbnail}
+![objectstorage-cyberduck](images/img_2756.jpg){.thumbnail}
 
 
 ## 

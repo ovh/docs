@@ -1,11 +1,12 @@
 ---
-title: Object Storagen hallinta CyberDuckin avulla
-excerpt: Object Storagen hallinta CyberDuckin avulla
+title: 'Object Storagen hallinta CyberDuckin avulla'
+excerpt: 'Object Storagen hallinta CyberDuckin avulla'
 slug: object_storagen_hallinta_cyberduckin_avulla
-section: Object Storage
+section: 'Object Storage'
 legacy_guide_number: g1868
 ---
 
+**Päivitetty 08.1.2020**
 
 ## 
 Object Storage on säilytysratkaisu, jota hallinnoidaan pääasiallisesti OpenStack API -sovelluksen avulla. 
@@ -35,13 +36,13 @@ Tässä ohjeessa kerrotaan kuinka Cyberduck konfiguroidaan, jotta Object Storage
 
 
 
-![](images/img_2757.jpg){.thumbnail}
+![objectstorage-cyberduck](images/v3.0.png){.thumbnail}
 Kavaakkeseen on täytettävä erilaisia tietoja:
 
 - Palvelin: auth.cloud.ovh.net (Palvelimen tunnistus)
 - Tenant ID:Access Key: Tämä on sama kuin Project_ID:Horizon_User_ID
 - Secret Key: Horizon salasanasi
-- More Options / Path : v2.0
+- More Options / Path : v3.0
 
 
 
@@ -49,7 +50,7 @@ Kavaakkeseen on täytettävä erilaisia tietoja:
 
 
 
-![](images/img_2756.jpg){.thumbnail}
+![objectstorage-cyberduck](images/img_2756.jpg){.thumbnail}
 
 
 ## 

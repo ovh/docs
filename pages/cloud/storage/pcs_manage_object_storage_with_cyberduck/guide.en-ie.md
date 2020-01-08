@@ -1,11 +1,12 @@
 ---
-title: Manage Object Storage with CyberDuck
-excerpt: Manage Object Storage with CyberDuck
+title: 'Manage Object Storage with CyberDuck'
+excerpt: 'Manage Object Storage with CyberDuck'
 slug: manage_object_storage_with_cyberduck
-section: Object Storage
+section: 'Object Storage'
 legacy_guide_number: g1868
 ---
 
+**Last updated O8th January 2020**
 
 ## 
 Object Storage is a storage solution that is managed primarily through the OpenStack API.
@@ -30,13 +31,13 @@ This guide will explain how to configure Cyberduck to manage your Object Storage
 
 
 
-![](images/img_2757.jpg){.thumbnail}
+![objectstorage-cyberduck](images/v3.0.png){.thumbnail}
 Enter the following information:
 
 - Server: auth.cloud.ovh.net (Authentication server)
 - Tenant ID:Access Key : This is the Project_ID:Horizon_User_ID
 - Secret Key: your Horizon user password
-- More Options/Path: v2.0
+- More Options/Path: v3.0
 
 
 
@@ -44,7 +45,7 @@ Enter the following information:
 
 
 
-![](images/img_2756.jpg){.thumbnail}
+![objectstorage-cyberduck](images/img_2756.jpg){.thumbnail}
 
 
 ## 
