@@ -1,11 +1,12 @@
 ---
-title: Gestionar el Object Storage con Cyberduck
-excerpt: Gestionar el Object Storage con Cyberduck
+title: 'Gestionar el Object Storage con Cyberduck'
+excerpt: 'Gestionar el Object Storage con Cyberduck'
 slug: gestionar_el_object_storage_con_cyberduck
-section: Object Storage
+section: 'Object Storage'
 legacy_guide_number: g1868
 ---
 
+**Última actualización: 08/01/2020**
 
 ## 
 El Object Storage es una solución de almacenamiento qui se gestiona principalmente mediante la API de OpenStack. 
@@ -31,7 +32,7 @@ Descargue [Cyberduck](https://cyberduck.io/) en su equipo.
 
 Conéctese a una cuenta de tipo «Swift (OpenStack Object Storage)».
 
-![](images/img_2757.jpg){.thumbnail}
+![objectstorage-cyberduck](images/v3.0.png){.thumbnail}
 Cumplimente el formulario:
 
 
@@ -43,9 +44,9 @@ Cumplimente el formulario:
 Despligue las opciones haciendo clic en «More Options»:
 
 
-- Carpeta: v2.0
+- Carpeta: v3.0
 
 
 Haga clic en el botón «Conectar».
 
-![](images/img_2756.jpg){.thumbnail}
+![objectstorage-cyberduck](images/img_2756.jpg){.thumbnail}
