@@ -1,10 +1,9 @@
 ---
 title: 'Accessing cluster logs'
-slug: "cluster-logs"
+slug: cluster-logs
 excerpt: 'Find out how to access your cluster’s logs'
 section: 'Getting started with a PostgreSQL cluster'
 ---
-
 
 **Last updated 03rd January 2020**
 
@@ -23,7 +22,7 @@ This guide will outline the steps you need to follow in order to access your log
 ### Step 1: Activate an OVHcloud Logs account.
 
 The event logs are gathered and stored in a third-party product: the OVHcloud Logs Data Platform. Storage is included in our solution.
-To access your logs, you will need to create a free OVHcloud Logs account. You can do this via the [official page](https://www.ovh.co.uk/data-platforms/logs/){.external}.
+To access your logs, you will need to create a free OVHcloud Logs account. You can do this via the [official page](https://www.ovh.com/fr/data-platforms/logs/){.external}.
 
 Once you have created an account, your OVHcloud Logs service will appear in the OVHcloud Control Panel. Retrieve your username in `Home > Configuration`{.action}:
 
