@@ -1,6 +1,6 @@
 ---
 title: 'Adding and deleting a node from your cluster'
-slug: "add-delete-node"
+slug: add-delete-node
 excerpt: 'Find out how to add and delete nodes from your cluster'
 section: 'Getting started with a PostgreSQL cluster'
 ---
