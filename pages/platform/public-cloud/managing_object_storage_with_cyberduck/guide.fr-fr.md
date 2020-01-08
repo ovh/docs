@@ -1,10 +1,9 @@
 ---
-title: Gerer l’Object Storage a l’aide de CyberDuck
+title: 'Gerer l’Object Storage a l’aide de CyberDuck'
 slug: gerer-lobject-storage-a-laide-de-cyberduck
 legacy_guide_number: 1868
 section: Tutoriels
 ---
-
 
 ## Preambule
 L'Object Storage est une solution de stockage qui se gère principalement à l'aide de l'API d'OpenStack. Cependant, il est possible que vous ne soyez pas familier avec cette façon de gérer un espace de stockage à l'aide principalement de ligne de commandes.
@@ -26,14 +25,14 @@ Ce guide vous expliquera comment configurer Cyberduck afin de pouvoir gérer vot
 - Se connecter sur un compte de type "Swift - OpenStack Object Storage"
 
 
-![public-cloud](images/2757.png){.thumbnail}
+![public-cloud](images/v3.0.png){.thumbnail}
 
 Différentes informations sont à renseigner dans le formulaire :
 
 - Server : auth.cloud.ovh.net (Serveur d'authentification)
 - Tenant ID:Access Key : Cela correspond a ID_du_Projet : ID_Utilisateur_Horizon
 - Secret Key : le mot de passe de votre utilisateur Horizon
-- More Options / Path : v2.0
+- More Options / Path : v3.0
 - Se connecter
 
 
