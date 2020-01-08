@@ -1,16 +1,15 @@
 ---
-title: Gestión de los tokens
-excerpt: Gestión de los tokens
+title: 'Gestión de los tokens'
+excerpt: 'Gestión de los tokens'
 slug: gestion_de_los_tokens
 legacy_guide_number: g1872
 section: OpenStack
 ---
 
-
 ## 
 
 ## Atención:
-La información que contiene esta guía es válida para la versión 2.0 de la API de Keystone.
+La información que contiene esta guía es válida para la versión 3.0 de la API de Keystone.
 
 
 ## Definiciones
