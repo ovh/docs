@@ -1,6 +1,6 @@
 ---
 title: 'Setting a password for your admin user'
-slug: "configure-mdp-superuser"
+slug: configure-mdp-superuser
 excerpt: 'Find out how to set a password for your admin user'
 section: 'Getting started with a PostgreSQL cluster'
 order: 3
@@ -48,8 +48,8 @@ Using the following API call, you can update your admin password.
 Please ensure that you follow the complexity rules listed in step 2.
 
 
-> \[!api]
+> [!api]
 >
 > @api {POST} /cloudDB/enterprise/cluster/{clusterId}/user
 >
-```
+
