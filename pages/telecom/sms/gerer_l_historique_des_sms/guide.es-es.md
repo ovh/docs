@@ -24,7 +24,7 @@ El historial de envíos incluye información sobre la fecha, el remitente, el de
 
 > [!primary]
 >
-> El área de cliente solo permite consultar los últimos seis meses del historial de envío. Para consultar los SMS anteriores a esta fecha, vaya al paso [2. Descargar el historial de sus SMS en CSV](https://docs.ovh.es/sms/gestionar-el-historial-de-envios/#2-descargar-el-historial-de-sus-sms-en-csv).
+> El área de cliente solo permite consultar los últimos seis meses del historial de envío. Para consultar los SMS anteriores a esta fecha, vaya al paso [2. Descargar el historial de sus SMS en CSV](https://docs.ovh.com/es/sms/gestionar-el-historial-de-envios/#2-descargar-el-historial-de-sus-sms-en-csv).
 >
 
 
