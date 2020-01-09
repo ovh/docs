@@ -1,125 +1,143 @@
 ---
 title: 'Managing renewal for your services'
 slug: how-to-use-automatic-renewal-at-ovh
-excerpt: 'Find out how to manage automatic renewal for your OVH services via the OVH Control Panel'
+excerpt: 'Find out how to manage automatic renewal for OVHcloud services via the OVHcloud Control Panel'
 section: Billing
 ---
 
-**Last updated 15th January 2019**
+**Last updated 02nd January 2020**
 
 ## Objective
 
-If you have active OVH services, you can manage their renewal via the OVH Control Panel. 
+You can manage renewals and cancellations for your services via the OVHcloud Control Panel.
 
-**Find out how to manage automatic renewal for your OVH services via the OVH Control Panel.**
+**Find out how to manage automatic renewal for your services via the OVHcloud Control Panel.**
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislations, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to your OVH contracts, which you can access via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to `My services`{.action} then `My contracts`{.action}.
+> Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. If you are unsure about any details, please refer to your OVHcloud contracts. You can view these via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to the `My services`{.action} section, then `My contracts`{.action}.
 >
+
 
 ## Requirements
 
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-- active OVH services
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- active OVHcloud services
+- access as a billing contact for your OVHcloud services
 
 ## Instructions
 
-There are several ways you can manage renewal for your services, and in some instances you can pick from a variety of methods. We recommend reading these guides, and focusing on the operations you wish to carry out. 
+When you place orders, your services are set to be automatically renewed on their expiry date. Payments are taken via the default payment method saved in the OVHcloud Control Panel. You can cancel your services whenever you want via the OVHcloud Control Panel, and they will not be renewed after their expiry date has passed.
 
-- [View the renewal statuses for your services.](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#view-the-renewal-statuses-for-your-services){.external} Helps you check whether your services renew automatically, and gives you the renewal or expiry dates for your services.
+You can also set certain products (domains, hosting plans, VPS, dedicated servers) to manual renewal, if you do not want payments and renewals to be carried out automatically.
 
-- [Manage renewal for your services.](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#manage-renewal-for-your-services){.external} Helps you activate or deactivate automatic renewal, change a service’s payment frequency, and pay for renewals before the renewal date.
+We recommend reading the following guides, and you can focus on the operations you wish to carry out. 
 
-- [Manage your payment methods.](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#manage-your-payment-methods_1){.external} Helps you ensure that you have a saved payment method for future renewals. You can also add and delete payment methods, as required.
+- [ View the status of your services. ](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#display-the-renewal-statuses-for-your-services){.external} This guide will help you check if your services are renewed automatically. You can also check their renewal and expiry dates.
 
-### View the renewal statuses for your services.
+- [Manage renewal for your services.](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-at-ovhcloud){.external} This guide will help you enable or disable automatic renewal, change the payment frequency for a service, and pay for renewals before their expiry date.
 
-Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `My services`{.action}.
+- [Manage your payment methods.](https://docs.ovh.com/gb/en/billing/manage-payment-methods/){.external} You can use this guide to ensure that you have a payment method saved for future renewals. You can also add and delete payment methods, if necessary.
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step1.png){.thumbnail}
+### Access your service’s settings.
 
-The page that appears will contain a table for managing your OVH solutions. In this table, you can view each service’s expiry date and its renewal frequency.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `My services`{.action}. 
 
-To do this, go to the ‘Renewal date’ and ‘Payment frequency’ columns in the table. Use the filter options to filter and sort the way your services are displayed.
+![manageautomaticrenewal](images/manageautorenew1.png){.thumbnail}
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step2.png){.thumbnail}
+### Display the renewal statuses for your services.
+
+The “My services” page contains a table for managing your OVHcloud services. On this page, you can find the service names, types, service availability (e.g. if it is suspended), its status (renewal type, actions required, etc.), and the date by which you need to take the action.
+
+![manageautomaticrenewal](images/manageautorenew2b.png){.thumbnail}
+
+You can sort the columns by ascending or descending order, use the search field, or apply a filter to only display a selection of your services that match a chosen set of criteria.
+
+![manageautomaticrenewal](images/manageautorenew3.png){.thumbnail}
+
+Your filter criteria are then displayed above the table. Here is an example of a filter that displays domain names with bills awaiting payment.
+
+![manageautomaticrenewal](images/manageautorenew4b.png){.thumbnail}
+
+### Renewal at OVHcloud.
+
+#### **Automatic renewal**
+
+When you subscribe to a service, it is set to **automatic renewal** by default. This setting means you can ensure your services are systematically renewed on their expiry date. Also, if you have registered a payment method in the OVHcloud Control Panel, it will be used to pay for your bills automatically.
+
+If you have not registered any payment methods, you will be sent a bill via email. You can then pay it online.
+
+For services with an automatic renewal frequency higher than 1 month (3 months, 6 months, 12 months), you will also be sent an email reminder the month before, listing the services that will need to be renewed soon.
+
+If you do not want to renew a service, simply cancel it via the OVHcloud Control Panel.
+
+#### **Manual renewal.**
+
+For some OVHcloud products (domains, web hosting plans, VPS, dedicated servers), you can switch to **manual renewal**. This renewal mode is useful if you are not sure whether you want to keep the service until its expiry date, or if you do not want payments to be taken automatically via your payment method. 
+
+If you select this mode, you will receive several reminder emails before the expiry date, each containing a link for renewing your services online before the expiry date. You can also pay via the OVHcloud Control Panel.
+
+> [!warning]
+>
+>If you do not pay for a service in manual renewal, it is suspended on its expiry date, then deleted after a few days.
+>
+>However, if you do not want to keep this service, you will not need to request cancellation.
+>
+
 
 ### Manage renewal for your services.
 
-Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `My services`{.action}.
+To the right of each service, click on the `...`{.action} in the “Actions” column to set renewal for your services.
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step1.png){.thumbnail}
+![manageautomaticrenewal](images/manageautorenew5b.png){.thumbnail}
 
-The page that appears will contain a table for managing your OVH solutions. If applicable for the service, you can:
+> [!primary]
+>
+>Depending on the service, some actions may not be available depending on whether or not it is eligible for manual renewal.
+>
+ 
+#### **Configure the renewal.**
 
-|Possible actions|Description|
-|---|---|
-|Modify payment frequency|Modify the frequency with which you pay for a service. For some services, you may find that you cannot change the frequency, or that some frequencies may not be available.|
-|Pay for the service|Pay for a service before its automatic renewal date.|
-|Activate/deactivate automatic payment|Activate or deactivate automatic payment for a service.|
+![manageautomaticrenewal](images/manageautorenew6b.png){.thumbnail}
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step3.png){.thumbnail}
+Depending on the service you have chosen, you can set it to manual renewal, or choose a frequency for automatic renewal. If your service is eligible, you can choose the renewal type and frequency.
 
-#### Modify the payment frequency.
+![manageautomaticrenewal](images/manageautorenew7.png){.thumbnail}
 
-This action modifies the payment frequency for a service with automatic renewal. There are four frequencies: monthly, every three months, every six months, and every year. For some OVH services, you may find that you cannot change the frequency, or some frequencies may not be available.
+Depending on your choice, you will be given information on future payment dates, the payment method that will be used, and the service’s expiry date.
 
-Click on the three dots to the right of the service concerned, then `Modify payment frequency`{.action}.
+#### **Renew the service.**
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step4.png){.thumbnail} 
+This action is only applicable to services set to manual renewal, and it will redirect you to an online payment interface. You can renew these services at any time before their expiry, and choose their renewal duration. 
 
-In the window that opens, select a new payment frequency from the ‘Type’ dropdown menu, then click `Next`{.action} and `Confirm`{.action}. The new payment frequency will then be applied on your service’s next automatic renewal date.
+#### **Anticipate payment.**
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step5.png){.thumbnail} 
+This action is applicable to services set to automatic renewal, and it will redirect you to an online payment interface. You can renew these services at any time before their expiry, and choose their renewal duration.  In this case, the duration of validity you subscribe to will be added to the current validity duration. You will not lose any remaining validity time.
 
-#### Schedule service renewal.
+#### **Cancel on expiry.**
 
-Pay for a service before its automatic renewal date. For some OVH services, this option may not be available.
+This action is available for services set to automatic renewal. By choosing this action, automatic payments and renewals are disabled for the service you have selected.
 
-Click on the three dots to the right of the service concerned, then `Pay for the service`{.action}. If you would like to do this for multiple services, select them by ticking their respective boxes on the left-hand side of the table, then click `Pay for the service`{.action} underneath the table.
+#### **Pay your bill.**
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step6.png){.thumbnail} 
+If you have services set to automatic renewal, but have not registered a payment method for paying your bills, a “Bill to pay” comment will be displayed when a bill is awaiting payment. Then click `Pay my bill`{.action}, which will redirect you to an online payment interface.
 
-You will then be redirected to the renewal interface. If you are not redirected automatically, you can also use this link: <https://www.ovh.co.uk/cgi-bin/order/renew.cgi>. Follow the steps indicated until you complete the renewal process for your services. 
+#### **Group actions.**
 
-#### Activate or deactivate automatic renewal.
+You can perform group actions by selecting several services in the table, then clicking `Actions`{.action}.
 
-You can activate or deactivate automatic payment for a service. To do so, click on the three dots to the right of the service concerned, then `Activate automatic payment`{.action} or `Activate automatic payment`{.action}. 
+![manageautomaticrenewal](images/manageautorenew9.png){.thumbnail}
 
-Next, read the information that appears, and click `Confirm`{.action} to confirm your action.
+The table below details the group actions you can perform.
 
-Please note that disabling automatic renewal is not the same as cancelling your service. The service will remain active until its expiry date, giving you the choice of either cancelling it on its expiry date or renewing it before its expiry. However, if you would like to cancel a service  permanently on its expiry date, please refer to our guide to [Managing your services via the “Manage my services” interface](https://docs.ovh.com/gb/en/billing/manage-ovh-services/#cancel-a-service-on-its-expiry-date){.external} to find out more.
+|  Possible actions  |  Description  |
+|  :-----          |  :-----          |
+|  Renew |  Renew several services at once. You will be redirected to a page where you can choose the renewal duration you want, and pay online. |
+|  Disable automatic payment |  Disable automatic payment for several services at once. If one or more of your services cannot be set to automatic renewal, this will be flagged when you confirm. |
+|  Enable automatic payment |  Enable automatic payment for several services at once. Only eligible services will be updated. |
+|  Export in CSV |  Your service will remain enabled until its expiry date. After this, it will be suspended, then deleted. |
+|  Align renewal dates |  Aligns the expiry dates for your services on a single calendar day. Only eligible services can be updated. |
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step7.png){.thumbnail} 
-
-### Manage your payment methods.
-
-Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `Payment method`{.action}.
-
-![manageautomaticrenewal](images/manage-automatic-renewal-step8.png){.thumbnail}
-
-The page that appears will contain a table listing your payment methods for OVH solutions. In this table, you can manage the payment methods you have already added, and add new ones.
-
-For each payment method, you will also see:
-
-- its type (depending on which one you have decided to add)
-- a description, to help you distinguish it from other payment methods
-- whether it is currently saved as a default payment method
-- its status (may vary depending on the type of payment method and its activation status)
-
-![manageautomaticrenewal](images/manage-automatic-renewal-step9.png){.thumbnail}
-
-To add a new payment method, click `Add a payment method`{.action}, then select the type of payment you want to add. Follow the steps indicated and confirm your payment method.
-
-![manageautomaticrenewal](images/manage-automatic-renewal-step10.png){.thumbnail}
-
-To delete a payment method via the customer panel, you have to have at least one other valid mean of payment.
-
-If you want to delete all your payment methods, please use the API and follow these steps :
-- First GET the ID of the payment list: https://api.ovh.com/console/#/me/payment/method#GET
-- Then DELETE the payment method using the ID you got from the previous step:
-  https://api.ovh.com/console/#/me/payment/method/%7BpaymentMethodId%7D#DELETE
 
 ## Go further
 

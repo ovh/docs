@@ -1,58 +1,58 @@
 ---
 title: 'SSH-Schlüssel erstellen'
-slug: ssh-schluessel-erstellen
-excerpt: 'So erstellen Sie einen SSH-Schlüssel, um sich mit Ihrer Instanz zu verbinden'
+slug: create-ssh-keys
+excerpt: 'In diesem Handbuch erfahren Sie, wie Sie einen SSH-Schlüssel erstellen, um sich bei Ihrer Instanz anzumelden.'
 section: Sicherheit
 ---
 
-**Stand 23.07.2019**
+**Letzte Aktualisierung am 14\. November 2019**
 
-## Einleitung
+## Ziel
 
-Wenn Sie eine [Public Cloud Instanz](https://ovh.de/public-cloud/){.external} erstellen, wird Ihnen keine E-Mail mit Verbindungsinformationen zugesandt. Die Authentifizierung erfolgt in diesem Fall über gesicherte SSH-Schlüssel.
+Wenn Sie eine [Public Cloud-Instanz](https://www.ovh.de/public-cloud/instances/){.external} erstellen, erhalten Sie keine E-Mail mit Anmeldeinformationen, da die Authentifizierung auf sicheren SSH-Schlüsseln anstelle von Benutzernamen und Kennwörtern basiert.
 
-**In dieser Anleitung erfahren Sie, wie Sie einen SSH-Schlüssel erstellen, um sich mit Ihrer Instanz zu verbinden.**
+**In diesem Handbuch erfahren Sie, wie Sie einen SSH-Schlüssel erstellen, um sich bei Ihrer Instanz anzumelden.**
 
 > [!primary]
 >
-Bitte beachten Sie, dass bei Instanzen mit Windows-Betriebssystem keine SSH-Schlüssel zur Authentifizierung verwendet werden. Stattdessen werden Benutzername und Passwort verwendet.
+Beachten Sie bitte, dass SSH-Schlüssel bei Instanzen, auf denen das Windows-Betriebssystem ausgeführt wird, nicht zur Authentifizierung verwendet werden. Für Windows-Instanzen müssen Sie weiterhin einen Benutzernamen und ein Kennwort verwenden.
 >
 
-## Voraussetzungen
+## Anforderungen
 
-* Sie haben ein [Public Cloud](https://www.ovh.de/public-cloud/){.external} Projekt über Ihren OVH Account erstellt.
-* Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+* ein [Public Cloud](https://www.ovh.de/public-cloud/instances/){.external}-Projekt in Ihrem OVH-Konto
+* Zugriff auf das [OVH-Bedienfeld](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-## Beschreibung
+## Anweisungen
 
-### SSH-Schlüssel unter Linux und Mac erstellen
+### Erstellen eines SSH-Schlüssels auf Linux und Mac
 
-Öffnen Sie das Terminal (die Kommandozeile) und führen Sie folgenden Befehl aus, um einen SSH-Schlüssel mit 4096 Bits zu erstellen:
+Öffnen Sie zuerst die Terminal-App (Befehlszeile) und führen Sie dann den folgenden Befehl aus, um einen 4096-Bit-SSH-Schlüssel zu generieren:
 
 ```sh
 # ssh-keygen -b 4096
 ```
 
-Sie erhalten folgendes Ergebnis und werden aufgefordert, den neu erstellten Schlüssel zu speichern:
+Der Befehl gibt das folgende Ergebnis aus und fordert Sie auf, den neu erstellten Schlüssel zu speichern:
 
 ```sh
-Generating public/private rsa key pair.
-Enter file in which to save the key (/home/user/.ssh/id_rsa):
+Generierung eines öffentlichen/privaten RSA-Schlüsselpaars.
+Geben Sie die Datei ein, in der der Schlüssel gespeichert werden soll (/home/user/.ssh/id_rsa):
 ```
 
 > [!warning]
 >
-> Bewahren Sie den privaten Teil des Schlüssels sicher auf und gewähren Sie nur autorisierten Personen Zugriff.
+> Der private Teil des Schlüssels sollte sicher aufbewahrt werden, und der Zugriff sollte auf Personen beschränkt sein, die zur Verwendung des Schlüssels berechtigt sind.
 > 
 
-Wenn Sie den Schlüssel gespeichert haben, werden folgende Elemente in der Kommandozeile angezeigt:
+Nachdem Sie den Schlüssel gespeichert haben, gibt die Befehlszeile Folgendes aus:
 
 ```ssh
-Your identification has been saved in /home/user/.ssh/id_rsa.
-Your public key has been saved in /home/user/.ssh/id_rsa.pub.
-The key fingerprint is:
+Ihre Identifikation wurde in /home/user/.ssh/id_rsa gespeichert.
+Ihr öffentlicher Schlüssel wurde in /home/user/.ssh/id_rsa.pub gespeichert.
+Der Schlüsselfingerabdruck lautet:
 0a:3a:a4:ac:d1:40:6d:63:6d:fd:d9:fa:d6:b2:e0:36 user@host
-The key's randomart image is:
+Das „Randomart Image“ des Schlüssels sieht wie folgt aus:
 +---[RSA 4096]----+
 |      .          |
 |                 |
@@ -66,13 +66,13 @@ The key's randomart image is:
 +-----------------+
 ```
 
-Sie können den Schlüssel mit folgendem Befehl anzeigen:
+Sie können den Schlüssel mithilfe des folgenden Befehls lesen und anzeigen:
 
 ```ssh
 # cat .ssh/id_rsa.pub
 ```
 
-Wenn dieser Befehl ausgeführt wird, werden folgende Elemente angezeigt:
+Wenn Sie diesen Befehl ausführen, wird Folgendes ausgegeben:
 
 ```ssh
 cat /home/user/.ssh/id_rsa.pub
@@ -84,48 +84,44 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
  user@host
 ```
 
-### SSH-Schlüssel unter Windows erstellen
+### Erstellen eines SSH-Schlüssels unter Windows
 
-#### Mit PuTTY
+#### Verwendung von PuTTY
 
-[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/){.external} ist ein beliebter SSH-Client für Windows. Er wird verwendet, um sich remote mit einem Linux-Server zu verbinden. Die zugehörige Software [PuTTYgen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe){.external} kann verwendet werden, um SSH-Schlüssel zu erstellen.
+[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/){.external} ist ein beliebter SSH-Client für Windows. PuTTY bietet Ihnen die Möglichkeit, eine Remoteverbindung mit einem Linux-Server herzustellen. Die zugehörige Software [PuTTYgen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe){.external} kann zum Erstellen von SSH-Schlüsseln verwendet werden.
 
-Laden Sie zunächst das Programm [PuTTYgen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe){.external} herunter, mit dem wir den Schlüssel erstellen werden.
+Laden Sie zunächst die Software [PuTTYgen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe){.external} herunter, mit der wir den Schlüssel generieren.
 
-Starten Sie das Programm und wählen Sie RSA als Schlüsseltyp aus. Geben Sie anschließend 4096 als zu erstellende Bit-Anzahl ein und klicken Sie auf den Button `Generate`{.action}.
+Führen Sie als nächstes die Software aus und wählen Sie RSA als Schlüsseltyp. Geben Sie danach 4096 als Anzahl der zu generierenden Bits ein und klicken Sie dann auf die Schaltfläche `Generieren`{.action}.
 
 ![Schlüssel generieren](images/puttygen-01.png){.thumbnail}
 
-Bewegen Sie anschließend Ihre Maus wie nachstehend gezeigt willkürlich im Bereich unter der Fortschrittsanzeige.
+Als nächstes bewegen Sie die Maus zufällig in dem Bereich unterhalb des Fortschrittsbalkens (siehe unten).
 
 ![Schlüssel generieren](images/puttygen-02.gif){.thumbnail}
 
-Wenn Sie Ihre Maus bewegen, beginnt der Fortschrittsbalken, sich zu füllen. Wenn der Fortschrittsbalken komplett ausgefüllt ist, ist der SSH-Schlüssel fertig.
+Sobald Sie die Maus bewegen, füllt sich der Fortschrittsbalken. Wenn er ganz voll ist, ist der Schlüssel fertiggestellt.
 
 ![Schlüssel generieren](images/puttygen-03.png){.thumbnail}
 
-### SSH-Schlüssel in das OVH Kundencenter importieren
+### Ihren SSH-Schlüssel in die OVH-Systemsteuerung importieren
 
-Wählen Sie den Text Ihres öffentlichen Schlüssels aus und kopieren Sie diesen. Loggen Sie sich dann in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein.
+Markieren und kopieren Sie zuerst den Text Ihres öffentlichen Schlüssels und melden Sie sich dann in der [OVH-Systemsteuerung](https://www.ovh.com/auth/?action=gotomanager){.external} an.
 
-Gehen Sie im Menü in den Bereich `Cloud`{.action}.
+Klicken Sie nun auf das Menü `Public Cloud`{.action}.
 
 ![Cloud-Menü](images/cloud-menu.png){.thumbnail}
 
-Wählen Sie im linken Menü Ihr Public Cloud Projekt aus und klicken Sie dann auf `Infrastruktur`{.action}.
+Wählen Sie nun Ihr Public Cloud-Projekt aus dem linken Menü {.action} aus.
 
 ![Projekt auswählen](images/select-project.png){.thumbnail}
 
-Gehen Sie in den Tab `SSH-Schlüssel`{.action}.
+Wählen Sie nun die Registerkarte `SSH-Schlüssel`{.action}. Fügen Sie anschließend den 4096-Byte-Schlüssel in das dafür vorgesehene Feld ein, geben Sie dem Schlüssel einen Namen und klicken Sie auf die Schaltfläche `Diesen Schlüssel hinzufügen`{.action}.
 
-![SSH-Schlüssel speichern](images/save-ssh-key-01.png){.thumbnail}
+![SSH-Schlüssel speichern](images/save-key.png){.thumbnail}
 
-Fügen Sie den 4096-Bit-Schlüssel im hierzu vorgesehen Feld ein. Geben Sie dem Schlüssel einen Namen und klicken Sie auf den Button `Diesen Schlüssel hinzufügen`{.action}.
+Ihr Schlüssel wird nun zur Authentifizierung in der OVH-Systemsteuerung gespeichert.
 
-![SSH-Schlüssel speichern](images/save-ssh-key-02.png){.thumbnail}
+## Fortfahren
 
-Ihr SSH-Schlüssel ist nun zur Authentifizierung im OVH Kundencenter hinterlegt.
-
-## Weiterführende Informationen
-
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie am <https://community.ovh.com/en/> unserer Nutzergemeinschaft bei.
