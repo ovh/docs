@@ -132,7 +132,7 @@ Si le voyant « **POWER** » de votre box OVH n'est pas allumé vert fixe, ré
 
 Si malgré ces tests, le voyant « **POWER** » reste éteint, prenez contact avec notre équipe support afin de procéder à un échange de votre box OVH. 
 
-![diagnosticfibre](images/acces-internet-box-ovh-test-power.jpg)
+![diagnosticfibre](images/acces-internet-box-ovh-test-power.png)
 
 #### 3.2 Tests liés au voyant « WAN »
 
@@ -148,7 +148,7 @@ Si le voyant « WAN » de votre box OVH n'est pas allumé vert fixe, réalisez d
 
 Si malgré ces tests, le voyant « **WAN** » reste éteint, prenez contact avec notre équipe support afin de procéder à un échange de votre box OVH. 
 
-![diagnosticfibre](images/acces-internet-box-ovh-test-wan.jpg)
+![diagnosticfibre](images/acces-internet-box-ovh-test-wan.png)
 
 #### 3.3 Tests liés au voyant « INTERNET »
 
