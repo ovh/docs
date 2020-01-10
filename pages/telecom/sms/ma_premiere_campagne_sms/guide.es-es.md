@@ -50,7 +50,7 @@ Desde la pestaña `Agenda de contactos`{.action} es posible crear varias agendas
 
 ![Agenda de contactos](images/firstsms04.png){.thumbnail}
 
-Para más información sobre las agendas de contactos, consulte [esta guía](https://docs.ovh.com/es/sms/gestionar-la-agenda-de-contactos-de-sms).
+Para más información sobre las agendas de contactos, consulte [esta guía](https://docs.ovh.com/es/sms/agenda-de-contactos-de-sms/).
 
 ### 4. Crear un remitente
 
