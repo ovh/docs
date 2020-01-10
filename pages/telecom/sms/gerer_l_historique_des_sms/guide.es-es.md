@@ -1,7 +1,7 @@
 ---
-title: 'Gestionar el historial de envíos'
-slug: gestionar-el-historial-de-envios
-excerpt: 'Cómo consultar el historial de envíos de sus SMS desde una cuenta de OVHcloud'
+title: 'Historial de envíos'
+slug: historial-de-envios
+excerpt: 'Cómo gestionar el historial de envíos de sus SMS desde una cuenta de OVHcloud'
 legacy_guide_number: '8650753'
 space_key: CRSMSFAX
 space_name: SMS
@@ -80,4 +80,4 @@ Para más información sobre los códigos ptt y los diferentes ID del DLR, consu
  
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://community.ovh.com).
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/).
