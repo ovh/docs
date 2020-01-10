@@ -1,0 +1,58 @@
+---
+title: Tokens
+slug: tokens
+excerpt: Learn the concept behind serving engine tokens
+section: Concepts
+order: 2
+---
+## Definition
+
+**Tokens** in a **serving engine project** refer to encoded [JWT
+tokens](https://jwt.io/) containing access rigths information for
+querying or managing models in a namespace.
+
+**Tokens** object have 2 attributes :
+
+-   The list of authorized roles
+-   The target resource
+
+### Roles
+
+There are 2 roles available :
+
+-   `model-management` : Token containing this role are allowed to
+    manage models (deploy, update, delete) targetted by the applying
+    resource.
+-   `model-evaluation` : Token containing this role are allowed to
+    evaluate models (i.e call the model http endpoint) targeted by the
+    authorized resource.
+
+### Applying resource
+
+The resource attribute describes the resource (i.e. model identifiers)
+on which **roles** are applied (see the example below). You can provide
+an exact identifier that will match the resource id or a fuzzy string
+that ends with \* to match multiple resources starting with the same
+prefix or a \* to match all resources
+
+#### Example
+
+A token containing a role of `model-evaluation` with an applying
+resource of `iris*` will be allowed to request evaluation of each model
+whose identifier start with `iris` inside its namespace.
+
+## Considerations
+
+-   Each Token is created inside a [namespace](../namespaces) and is
+    only relevant for that [namespace](../namespaces).
+-   Tokens have no expiration date but can be renewed. For security
+    purpose it is important for user to understand that tokens should be
+    regularly renew to avoid compromise ones.
+
+## Going further
+
+-   Your can refer to the open source [serving engine official
+    documentation](https://serving-doc-mlg.ai.ovh.net/component/tokens.html)
+    for more information about tokens.
+-   You can check the [OVHcloud documention on how to manage
+    models](../manage-tokens).
