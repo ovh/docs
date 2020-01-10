@@ -1,5 +1,5 @@
 ---
-title: 'Gestionar el crédito de SMS y activar la recarga automática'
+title: 'Crédito de SMS y recarga automática'
 slug: activar-la-recarga-automatica-de-credito-sms
 excerpt: 'Cómo gestionar el crédito de SMS en OVHcloud'
 section: 'Gestionar el servicio'
@@ -14,7 +14,7 @@ Esta guía explica en qué consiste el crédito de SMS, cómo recargarlo de form
 ## Requisitos
 
 * Disponer de una cuenta de SMS en OVHcloud.
-* Conectarse a la [API de OVHcloud](https://api.ovh.com/console/) (solo para la transferencia de crédito).
+* Conectarse a la [API de OVHcloud](https://api.ovh.com/console/) (solo para las transferencias de crédito).
 
 ## Procedimiento
 
@@ -42,7 +42,7 @@ Para más información sobre el coste de envío en créditos de sus SMS en funci
 
 Para garantizar que su cuenta de SMS dispone siempre de crédito, puede activar la recarga automática. Con esta opción, cada vez que su cuenta de SMS baje de un número de créditos determinado, se añadirá de forma automática una nueva cantidad de crédito en su cuenta.
 
-Para activar la recarga automática, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, acceda a la pestaña `Telecom`{.action} y abra la sección `SMS`{.action} en el menú de la izquierda. Seleccione la cuenta de SMS en la que desea activar la recarga automática.
+Para activar la recarga automática, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, acceda a la pestaña `Telecom`{.action} y abra la sección `SMS`{.action} en el menú de la izquierda. Seleccione la cuenta de SMS en la que desea activar la recarga automática.
 
 Acceda al menú `Opciones`{.action} (1) y seleccione la opción `Recarga automática`{.action} (2).
 
@@ -86,4 +86,4 @@ Haga clic en `Execute`{.action} para confirmar la transferencia, que se realizar
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://community.ovh.com).
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/).
