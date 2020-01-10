@@ -1,7 +1,7 @@
 ---
-title: Branchements SPA112
+title: 'Branchements SPA112'
 slug: branchements-spa112
-section: Cisco SPA112
+section: 'Cisco SPA112'
 ---
 
 ------------------------------------------------------------------------
@@ -14,7 +14,7 @@ L'équipement adaptateur doit être raccordé :
 -   En Ethernet vers votre routeur
 -   Vers un équipement muni d'une prise de téléphone analogique (RJ11)
 
-![](images/Branchements%20SPA112.png){.thumbnail}
+![branchements-spa112](images/BranchementsSPA112.png){.thumbnail}
 
 Notez que pour les offre Plug & Fax, le téléphone est à remplacer par un télécopieur.
 
