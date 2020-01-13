@@ -21,7 +21,7 @@ OVHcloud oddaje do Twojej dyspozycji Panel klienta, w którym możesz wyświetla
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Zalogowanie jako kontakt księgowy (więcej szczegółów o rodzajach kontaktów w przewodniku [Zarządzanie kontaktami](https://docs.ovh.com/fr/customer/gestion-des-contacts/){.external})
+- Zalogowanie jako kontakt księgowy (więcej szczegółów o rodzajach kontaktów w przewodniku [Zarządzanie kontaktami](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/){.external})
 
 
 ## W praktyce
