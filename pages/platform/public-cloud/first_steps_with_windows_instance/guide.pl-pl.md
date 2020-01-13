@@ -1,95 +1,89 @@
 ---
-title: Rozpoczęcie pracy z instancją Windows
-excerpt: Rozpoczęcie pracy z instancją Windows
+title: 'Rozpoczęcie pracy z instancją Windows'
+excerpt: 'Odkryj, jak przeprowadzić instalację instancji z systemem Windows i nawiązać pierwsze połączenie'
 slug: rozpoczecie_pracy_z_instancja_windows
 legacy_guide_number: g1995
 section: Tutoriale
 ---
 
+**Ostatnia aktualizacja z dnia 25-11-2019**
 
-## 
-Możesz korzystać z usługi Public Cloud do instalowania stron www przy użyciu IIS lub aplikacji kompatybilnych tylko z systemem Windows. Jedynie w przypadku instancji EG i SP można zainstalować system Windows Server 2012 r2 (z powodu dodatkowego kosztu za licencję).
+## Wprowadzenie
 
-Pierwsze kroki z instancją Windows różnią się od rozpoczęcia pracy z instancją z systemem Linux. Nie ma na przykład konfiguracji klucza SSH. Należy skorzystać z konsoli VNC, aby skonfigurować hasło dla konta administratora. 
+Możesz korzystać z usługi Public Cloud w celu hostowania stron www przy użyciu IIS lub instalowania aplikacji kompatybilnych tylko z systemem Windows. Nasze instancje mogą być instalowane w dystrybucjach [Windows Desktop](https://www.ovh.pl/public-cloud/prices/){.external}.
 
-W przewodniku tym wyjaśniamy, jak rozpocząć pracę z instancją Windows.
+Po utworzeniu instancji konieczne będzie dokończenie jej instalacji za pomocą konsoli VNC.
 
+**Niniejszy przewodnik wyjaśnia procedurę, której należy przestrzegać, aby uzyskać dostęp do instancji Windows po jej zainstalowaniu.**
 
-## Wymagania
+## Wymagania początkowe
 
-- [Utworzenie instancji w panelu klienta OVH]({legacy}1775) z systemem Windows Server 2012.
+- Utworzenie projektu Public Cloud
+- Utworzenie [w panelu klienta instancji](https://docs.ovh.com/pl/public-cloud/tworzenie_instancji_w_panelu_klienta_ovh/) z dystrybucją Windows Desktop.
 
+## W praktyce
 
+### Etap 1: ustaw hasło
 
+W przeciwieństwie do instancji z systemem Linux, instancja Windows nie jest instalowana ze wstępnie skonfigurowanym kluczem SSH. 
 
-## Konfiguracja hasła
-Biorąc pod uwagę, że na instancji Windows nie można skonfigurować klucza SSH, najpierw należy skonfigurować hasło.
+Konieczne jest więc dokończenie instalacji poprzez konsolę VNC:
 
-W tym celu należy skorzystać z konsoli VNC:
+- Kliknij `...`{.action} po prawej stronie swojej instancji, a następnie wybierz opcję  `Instance details`{.action} (Szczegóły instancji):
 
+![windowsinstance](images/firststepswindows1.png){.thumbnail}
 
-- Uruchom konsolę VNC danej instancji w panelu OVH.
+- Przejdź do karty `Konsola VNC`{.action}
 
+![windowsinstance](images/firststepswindows2.png){.thumbnail}
 
+- Wybierz ustawienia języka i klawiatury, a następnie wprowadź hasło:
 
-![](images/img_3288.jpg){.thumbnail}
+![windowsinstance](images/firststepswindows3.png){.thumbnail}
 
-- Wpisz hasło dla konta administrator.
+> [!primary]
+>
+> Niektóre przyciski klawiatury w konsoli VNC mogą nie odpowiadać klawiaturze AZERTY. Sprawdź kilka razy swoje hasło przed jego zatwierdzeniem.
+>
 
+![windowsinstance](images/firststepswindows4.png){.thumbnail}
 
+### Etap 2: dostęp do zdalnego pulpitu
 
-![](images/img_3289.jpg){.thumbnail}
+Po ustawieniu hasła możesz łączyć się ze swoją instancją Windows za pomocą usługi zdalnego pulpitu.
 
-## Uwaga!
-Przed zaakceptowaniem hasła, sprawdź jego poprawność.
+Z poziomu komputera z systemem Windows:
 
+![windowsinstance](images/firststepswindows5.png){.thumbnail}
 
-## Dostęp do zdalnego pulpitu
-Po skonfigurowaniu hasła będziesz mógł się zalogować na instancję w trybie zdalnego pulpitu:
-
-Na przykład z komputera z systemem Linux:
-
+Aby połączyć się z poziomu komputera z systemem Linux, wprowadź następujące polecenie:
 
 ```
-user@poste :~$ rdesktop 149.202.160.94 -k fr -u administrator
-
--------
-Legenda argumentów:
--k: Typ klawiatury
--u: Użytkownik
+rdesktop 12.34.56.789 -u administrator
 ```
+ 
+### Etap 3: optymalizacja korzystania z Internetu
 
+Domyślnie aktywowany jest zwiększony poziom zabezpieczeń w programie Internet Explorer. Podczas nawigacji wielokrotnie pojawiać się będzie ostrzeżenie przed zagrożeniami i nie będzie też można pobierać plików:
 
-Lub z poziomu komputera Windows.
+![windowsinstance](images/firststepswindows6.png){.thumbnail}
 
-![](images/img_3290.jpg){.thumbnail}
+Aby tego uniknąć, należy wyłączyć zwiększony poziom zabezpieczeń z poziomu interfejsu zarządzania serwerem.
 
+- Otwórz element **Server Manager** (Interfejs zarządzania serwerem), a następnie wybierz opcję `Local server`{.action} (Serwer lokalny) (1).
 
-## Dostęp do Internetu
-Domyślnie dla przeglądarki Internet Explorer włączona jest zwiększona ochrona. Podczas korzystania z przeglądarki może pojawiać się komunikat z ostrzeżeniem:
+![windowsinstance](images/firststepswindows7.png){.thumbnail}
 
-![](images/img_3291.jpg){.thumbnail}
-Poza tym nie można pobierać danych. 
+- Kliknij opcję `Active`{.action} (Aktywny) (2) obok pozycji **Internet Explorer enhanced security configuration** (Konfiguracja zwiększonego poziomu zabezpieczeń programu Explorer), aby móc wyłączyć zwiększony poziom zabezpieczeń.
 
-Aby korzystać z tej funkcji, należy wyłączyć zwiększoną ochronę. 
+![windowsinstance](images/firststepswindows8.png){.thumbnail}
 
+## Sprawdź również
 
-- Przejdź do pulpitu Windows do części "Local Server".
+[Dostęp i bezpieczeństwo w Horizon](https://docs.ovh.com/gb/en/public-cloud/access_and_security_in_horizon/){.external}
 
+[Dostęp do konsoli instancji w Horizon](https://docs.ovh.com/pl/public-cloud/dostep_do_konsoli_instancji_w_interfejsie_horizon/){.external}
 
+[Korzystanie z vouchera](https://docs.ovh.com/pl/public-cloud/korzystanie-z-vouchera//){.external}
 
-![](images/img_3292.jpg){.thumbnail}
-
-- Kliknij na "IE Enhanced Security Configuration" i wyłącz zwiększoną ochronę.
-
-
-
-![](images/img_3293.jpg){.thumbnail}
-Teraz będziesz mógł dowolnie korzystać z przeglądarki i pobierać pliki.
-
-![](images/img_3294.jpg){.thumbnail}
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

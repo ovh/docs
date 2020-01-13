@@ -1,11 +1,11 @@
 ---
-title: 'Gérer ses factures OVH'
+title: 'Gérer mes factures OVHcloud'
 slug: gerer-factures-ovh
 excerpt: 'Découvrez comment gérer vos factures et les paiements liés à celles-ci'
-section: 'Gérer ses commandes, factures et services'
+section: Facturation
 ---
 
-**Dernière mise à jour le 2018/11/02**
+**Dernière mise à jour le 16/10/2018**
 
 ## Objectif
 
@@ -15,20 +15,20 @@ OVH met à votre disposition un espace vous permettant de consulter, gérer et r
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVH disponibles dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, rubrique `Mes services`{.action} puis `Mes contrats`{.action}.
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVH disponibles dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, rubrique `Mes services`{.action} puis `Mes contrats`{.action}.
 >
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
-- Être connecté en tant que contact facturation de votre service (plus de détails sur les différents contacts dans le guide « [Gérer les contacts de ses services](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/){.external} »).
+- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté en tant que contact facturation de votre service (plus de détails sur les différents contacts dans le guide « [Gérer les contacts de ses services](https://docs.ovh.com/fr/customer/gestion-des-contacts/){.external} »).
 
 
 ## En pratique
 
 ### Comprendre votre facture
 
-La facture vous est envoyée suite au règlement d'une commande ou à un renouvellement automatique. Elle récapitule les produits payés ou à payer avec les périodes de renouvellement correspondantes et le montant des services. La référence d'une facture commence toujours par deux lettres.
+La facture vous est envoyée suite au règlement d'une commande ou à un renouvellement automatique. Elle récapitule les produits payés ou à payer avec les périodes de renouvellement correspondantes et le montant des services. La référence d'une facture commence toujours par les lettres « FR ».
 
 ![Détail d'une facture](images/invoice_ovh.png){.thumbnail}
 
@@ -48,7 +48,7 @@ Les taxes seront ajoutées en bas, dans le récapitulatif global du montant indi
 
 > [!primary]
 >
-> Si la mention « Relevé de compte » apparaît au niveau du moyen de paiement utilisé, cela signifie qu'il s'agit d'un renouvellement automatique. Le moyen de paiement utilisé sera forcément celui qui a été validé dans l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+> Si la mention « Relevé de compte » apparaît au niveau du moyen de paiement utilisé, cela signifie qu'il s'agit d'un renouvellement automatique. Le moyen de paiement utilisé sera forcément celui qui a été validé dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 >
 
 
@@ -56,13 +56,13 @@ Les taxes seront ajoutées en bas, dans le récapitulatif global du montant indi
 
 #### Consulter et gérer ses factures
 
-Pour consulter vos factures, rendez-vous dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la section `Facturation`{.action} en cliquant sur votre prénom en haut à droite. Vous arriverez alors sur une page récapitulative de vos différentes factures : 
+Pour consulter vos factures, rendez-vous dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la section `Facturation`{.action} en cliquant sur votre prénom en haut à droite. Vous arriverez alors sur une page récapitulative de vos différentes factures : 
 
 ![Récapitulatif des factures](images/billing_section.png){.thumbnail}
 
 Sur chaque ligne du tableau vous retrouverez les informations suivantes :
 
-- la référence de la facture ;
+- la référence de la facture (exemple : FR12345678) ;
 - la date d'émission de la facture ;
 - le montant de la facture ;
 - le solde à régler ;
@@ -98,12 +98,12 @@ Afin de procéder au règlement de vos factures en attente de paiement, il vous 
 
 ![Paiement de la dette](images/pay_debt.png){.thumbnail}
 
-Un [bon de commande](https://docs.ovh.com/ca/fr/billing/gerer-ses-commandes-ovh/#le-bon-de-commande){.external} de régularisation sera alors créé. Une fois le paiement effectué, la situation sera régularisée.
+Un [bon de commande](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/#le-bon-de-commande){.external} de régularisation sera alors créé. Une fois le paiement effectué, la situation sera régularisée.
 
 
 ### Suivre les paiements
 
-Vous pouvez suivre tous les paiements effectués depuis la partie `Facturation` dans `Suivi des paiements`{.action}. Ceci permet de faire le lien entre les factures et les paiements associés. La référence d'un justificatif de paiement commence toujours par les lettres « PA_ ».
+Vous pouvez suivre tous les paiements effectués depuis la partie `Facturation` dans `Suivi des paiements`{.action}. Ceci permet de faire le lien entre les factures et les paiements associés. La référence d'un justificatif de paiement commence toujours par les lettres « PA_FR ».
 
 ![Suivi des paiements](images/payment_tracking.png){.thumbnail}
 
@@ -117,4 +117,4 @@ Depuis cet espace, vous pouvez également exporter vos justificatifs de paiement
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -1,95 +1,87 @@
 ---
-title: Die ersten Schritte mit Ihrer Windows Instanz
-excerpt: Die ersten Schritte mit Ihrer Windows Instanz
+title: 'Die ersten Schritte mit Ihrer Windows Instanz'
+excerpt: 'Entdecken Sie, wie Sie die Installation einer Windows-Instanz abschließen und eine erste Verbindung herstellen können'
 slug: die_ersten_schritte_mit_ihrer_windows_instanz
 legacy_guide_number: g1995
+section: Verschiedenes
 ---
 
+## Ziel
 
-## 
-Sie können die Public Cloud verwenden, um Ihre SSI-Webseiten oder Ihre nur mit Windows kompatiblen Applikationen zu hosten.
-Die Installation von Windows Server 2012 r2 ist nur auf unseren Instanzen der Typen EG und SP möglich (es fallen zusätzliche Kosten für die Lizenz an).
+Es ist möglich die Öffentliche Cloud zu nutzen, wenn Sie Websites unter IIS oder Ihrer nur mit Windows kompatiblen Anwendungen beherbergen wollen. Unsere Instanzen können unter den [Windows Desktop-](https://www.ovh.de/public-cloud/prices/){.external} Distributionen installiert werden.
 
-Die ersten Schritte mit einer Windows Instanz unterscheiden sich von denen mit Linux. So gibt es etwa keine Konfiguration der SSH-Schlüssel, und um Ihr Administrator-Passwort zu konfigurieren, müssen Sie die VNC-Konsole verwenden.
+Sobald Ihre Instanz erstellt ist muss die Installation über die VNC-Konsole abgeschlossen werden.
 
-In dieser Hilfe erfahren Sie alles über die ersten Schritte mit Ihrer Windows Instanz.
-
+**Dieses Handbuch erklärt Ihnen die zu befolgende Vorgehensweise, um nach der Installation zu Ihrer Windows-Instanz zu gelangen.**
 
 ## Voraussetzungen
 
-- [Erstellung einer Instanz im OVH Kundencenter]({legacy}1775) unter Windows Server 2012.
+- Sie haben ein Öffentliches Cloud-Projekt erstellt.
+- Sie haben [eine Instanz im Kundenbereich](https://docs.ovh.com/de/public-cloud/erstellung_einer_instanz_im_ovh_kundencenter/)unter einer Windows Desktop-Distribution erstellt.
 
+## Beschreibung
 
+### Schritt 1: Ihr Passwort konfigurieren
 
+Im Gegensatz zu einer Linux-Instanz wird eine Windows-Instanz nicht mit einem vorkonfigurierten SSH-Schlüssel installiert. 
 
-## Konfiguration des Passworts
-Da für Ihre Windows Instanz kein SSH-Schlüssel konfiguriert werden kann, müssen Sie zunächst ein Passwort konfigurieren.
+Die Installation muss daher über die VNC-Konsole abgeschlossen werden:
 
-Verwenden Sie hierfür die VNC-Konsole:
+- Klicken Sie auf die  `...`{.action} rechts von Ihrer Instanz und dann auf `Detail der Instanz`{.action} :
 
+![windowsinstance](images/firststepswindows1.png){.thumbnail}
 
-- Starten Sie die VNC-Konsole der Instanz über Ihr Kundencenter.
+- Gehen Sie dann auf den Tab `VNC-Konsole`{.action}
 
+![windowsinstance](images/firststepswindows2.png){.thumbnail}
 
+- Wählen Sie dann die Sprach- und Tastaturinformationen aus und geben Sie dann Ihr Passwort an:
 
-![](images/img_3288.jpg){.thumbnail}
+![windowsinstance](images/firststepswindows3.png){.thumbnail}
 
-- Geben Sie das Passwort für den Administrator-Account an.
+> [!primary]
+>
+> Manche Tasten der Tastatur der VNC-Konsole entsprechen nicht zwingend der Tastatur AZERTY. Zögern Sie nicht, Ihr Passwort mehrmals zu überprüfen bevor Sie es bestätigen.
+>
 
+![windowsinstance](images/firststepswindows4.png){.thumbnail}
 
+### Schritt 2: über Remote zum Büro zu gelangen
 
-![](images/img_3289.jpg){.thumbnail}
+Sobald das Passwort definiert ist können Sie über das Remote-Büro zu Ihrer Windows-Instanz gelangen.
 
-## ACHTUNG!
-Die Tastaturbelegung der VNC-Komnsole entspricht nicht notwendigerweise der von Ihnen verwendeten Tastaturbelegung. Überprüfen Sie daher am besten Ihr Passwort mehrfach, bevor Sie es bestätigen.
+Von einem Windows-Arbeitsplatz aus:
 
+![windowsinstance](images/firststepswindows5.png){.thumbnail}
 
-## Remote Desktop
-Wenn Sie das Passwort konfiguriert haben, können Sie sich per Remote Desktop mit Ihrer Instanz verbinden.
-
-Über einen Linux-Rechner:
-
+Um sich von einem Linux-Arbeitsplatz aus au verbinden tippen Sie folgenden Befehl ein:
 
 ```
-user@poste :~$ rdesktop 149.202.160.94 -k fr -u administrator
-
--------
-Verwendete Argumente:
--k: Tastaturtyp
--u: Benutzer
+rdesktop 12.34.56.789 -u administrator
 ```
+ 
+### Schritt 3: Verbesserung der Internet-Navigation
 
+Standardmässig ist die verstärkte Sicherheit des Internet Explorers aktiviert. Während Ihrer Navigation erscheint ein Warnungshinweis mehrmals, um Sie zu warnen und um Downloads zu blockieren:
 
-Oder über einen anderen Windows-Rechner:
+![windowsinstance](images/firststepswindows6.png){.thumbnail}
 
-![](images/img_3290.jpg){.thumbnail}
+Um dies zu verhindern können Sie die verstärkte Sicherheit von Ihrer Server-Verwaltung aus deaktivieren.
 
+- Offnen Sie die**Server-Verwaltung** und wählen Sie den Tab `örtlicher Server`{.action} (1).
 
-## Zugang zum Internet
-Beim Internet Explorer ist standardmäßig die verstärkte Sicherheitskonfiguration ("Enhanced Security") aktiviert. Daher wird folgender Warnhinweis erscheinen:
+![windowsinstance](images/firststepswindows7.png){.thumbnail}
 
-![](images/img_3291.jpg){.thumbnail}
-Außerdem sind bei dieser Funktion Downloads verboten.
+- Klicken Sie dann `Aktiv `{.action} (2) an der Seite der  **Konfiguration der verstärkten Sicherheit des Internet Explorer**, um die Option zu deaktivieren.
 
-Um diese Probleme zu umgehen, deaktivieren Sie die Funktion "Enhanced Security".
+![windowsinstance](images/firststepswindows8.png){.thumbnail}
 
+## Weiterführende Informationen
 
-- Klicken Sie im "Server Manager" auf "Local Server".
+[Zugang und Sicherheit im Horizon](https://docs.ovh.com/de/public-cloud/zugriff_und_sicherheit_in_horizon/){.external}
 
+[Zur Konsole einer Instanz in Horizon gelangen](https://docs.ovh.com/de/public-cloud/zugriff_auf_die_konsole_einer_instanz_in_horizon/){.external}
 
+[ Cloud Guthaben aufladen](https://docs.ovh.com/de/public-cloud/cloud_guthaben_aufladen/){.external}
 
-![](images/img_3292.jpg){.thumbnail}
-
-- Klicken Sie dann auf "IE Enhanced Security Configuration" und deaktivieren Sie die Funktion.
-
-
-
-![](images/img_3293.jpg){.thumbnail}
-Nun können Sie frei navigieren und auch Ihre Dateien downloaden.
-
-![](images/img_3294.jpg){.thumbnail}
-
-
-## 
-... lesen Sie auch unsere anderen Hilfen zum Thema Cloud!
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
