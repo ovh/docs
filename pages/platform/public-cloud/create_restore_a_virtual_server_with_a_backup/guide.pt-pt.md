@@ -60,7 +60,7 @@ Escolha, então, na secção `Imagem`{.action}, a imagem do backup a restaurar.
 ![public-cloud-instance-backup](images/restorebackup4.png){.thumbnail}
 
 
-> \[!alert]
+> [!alert]
 >
 >Como indicado no quadro amarelo que lhe é então apresentado, os dados adicionados depois da criação deste backup não poderão ser recuperados.
 >

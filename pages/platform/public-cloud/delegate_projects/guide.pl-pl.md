@@ -1,73 +1,64 @@
 ---
-title: Delegowanie projektów
-excerpt: Delegowanie projektów
+title: 'Delegowanie projektów'
+excerpt: 'Dowiedz się, jak delegować uprawnienia techniczne innym kontom OVHcloud w projekcie Public Cloud'
 slug: delegowanie_projektow
 legacy_guide_number: g1914
-section: Zarządzanie projektami
+section: 'Zarządzanie projektami'
 ---
 
+**Ostatnia aktualizacja z dnia 25-11-2019**
+ 
+## Wprowadzenie
 
-## 
-Może pojawić się sytuacja, w której będziesz musiał dać innemu użytkownikowi dostęp do niektórych projektów, bez nadawania dostępu do innych usług ze względów bezpieczeństwa. W takiej sytuacji można przekazać jeden lub kilka projektów na inne konto OVH, w trybie do odczytu lub do odczytu i zapisu. 
+Może pojawić się sytuacja, w której będziesz musiał dać innym użytkownikom dostęp do niektórych projektów, bez nadawania dostępu do innych usług ze względów bezpieczeństwa. 
 
-Przewodnik ten wyjaśnia, jak to wykonać.
+W takiej sytuacji można przypisać jeden lub więcej projektów do innego konta OVH w trybie samego odczytu lub odczytu i zapisu.
+
+Niniejszy przewodnik wyjaśnia, jak to zrobić.
 
 
-## Wstępne wymagania
+### Wymagania początkowe
 
 - 2 konta OVH
+- Projekt Public Cloud
 
 
+## W praktyce 
+
+### Delegowanie swojego projektu
+
+Zaloguj się do swojego [panelu klienta](https://www.ovhtelecom.fr/manager/) i wybierz opcję`Public Cloud`{.action}. Kliknij pozycję`Contacts and Rights`{.action} (Kontakty i uprawnienia) w rubryce **Project Management** (Zarządzanie projektem).
 
 
-## 
+![public-cloud-delegate-projects](images/pcidelegateprojects1.png){.thumbnail}
 
-- Zaloguj się do panelu klienta Public Cloud OVH.
-- Kliknij na "Zarządzanie i zasoby projektu".
+Z poziomu tego menu możesz:
 
+* skonfigurować dane kontaktowe administratora i księgowości.
 
-
-![](images/img_2872.jpg){.thumbnail}
-
-- Kliknij na "Kontakty i uprawnienia".
+* delegować projekty innym kontom w OVHcloud.
 
 
+![public-cloud-delegate-projects](images/pcidelegateprojects2.png){.thumbnail}
 
-![](images/img_2873.jpg){.thumbnail}
-W nowym menu możesz:
+### Konfiguracja delegowania
 
-- Skonfigurować kontakt właściciela i kontakt księgowy.
-- Delegować projekty na inne konta OVH.
+Kliknij przycisk `Add contact`{.action} (Dodaj), a następnie podaj identyfikator (w formacie xx000000-ovh) dodawanego konta OVHcloud oraz określ jego uprawnienia.
 
+![public-cloud-delegate-projects](images/pcidelegateprojects3.png){.thumbnail}
 
+Po zatwierdzonym dodaniu konta i odświeżeniu strony możesz sprawdzić, jakie konta zostały dodane i jakie mają uprawnienia.
 
-![](images/img_3220.jpg){.thumbnail}
+![public-cloud-delegate-projects](images/pcidelegateprojects4.png){.thumbnail}
 
+Osoby z kontami OVHcloud dodanymi w ten sposób mogą zobaczyć projekt w swoich panelach klienta po przejściu do strefy Public Cloud.
 
-## Konfiguracja
+## Sprawdź również
 
-- Kliknij na przycisk "Dodaj".
-- Wpisz identyfikator klienta, który chcesz dodać.
+[Dostęp i bezpieczeństwo w interfejsie Horizon](https://docs.ovh.com/gb/en/public-cloud/access_and_security_in_horizon/)
 
+[Zapewnienie dostępu do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/)
 
+[Pierwsze kroki z instancją Public Cloud](https://docs.ovh.com/pl/public-cloud/rozpoczecie_pracy_z_instancja_public_cloud/)
 
-![](images/img_2876.jpg){.thumbnail}
-
-- Wybierz rodzaj uprawnień
-
-|Tylko odczyt|Odczyt / zapis|
-
-Po zaakceptowaniu będziesz mógł sprawdzić dodane konta i ich uprawnienia.
-
-![](images/img_2877.jpg){.thumbnail}
-
-
-## Dostęp do projektu z poziomu innego konta
-Projekt pojawi się w menu z lewej strony w panelu klienta OVH dla skonfigurowanego konta:
-
-![](images/img_2878.jpg){.thumbnail}
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>
