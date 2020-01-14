@@ -3,8 +3,9 @@ title: 'Die ersten Schritte mit Ihrer Windows Instanz'
 excerpt: 'Entdecken Sie, wie Sie die Installation einer Windows-Instanz abschließen und eine erste Verbindung herstellen können'
 slug: die_ersten_schritte_mit_ihrer_windows_instanz
 legacy_guide_number: g1995
-section: Verschiedenes
 ---
+
+**letzter Stand 25.11.2019**
 
 ## Ziel
 
