@@ -9,7 +9,7 @@ section: Segurança
 
 ## Sumário
 
-Quando se cria uma [Instância Public Cloud](https://www.https://www.ovh.pt/public-cloud/){.external}, não se recebe um email com as credenciais para login, porque a autenticação baseia-se em chaves seguras SSH e não em  nomes de utilizador e senhas.
+Quando se cria uma [Instância Public Cloud](https://www.ovh.pt/public-cloud/){.external}, não se recebe um email com as credenciais para login, porque a autenticação baseia-se em chaves seguras SSH e não em  nomes de utilizador e senhas.
 
 **Este guia explica como criar uma chave SSH para poder fazer login na sua instância.**
 
@@ -20,7 +20,7 @@ Note que as chaves SSH não são utilizadas para a autenticação nas instância
 
 ## Requisitos
 
-* um projeto [Public Cloud](https://www.https://www.ovh.pt/public-cloud/){.external} na sua conta OVH
+* um projeto [Public Cloud](https://www.ovh.pt/public-cloud/){.external} na sua conta OVH
 * acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instruções
