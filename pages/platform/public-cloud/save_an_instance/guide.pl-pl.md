@@ -5,47 +5,80 @@ excerpt: 'Dowiedz się, jak w prosty sposób utworzyć kopię zapasową instancj
 section: 'Zarządzanie w Panelu klienta OVH'
 ---
 
-**Ostatnia aktualizacja z dnia 17-06-2019**
+**Ostatnia aktualizacja z dnia 22-11-2019**
 
 ## Wprowadzenie
 
-Możesz w dowolnym momencie utworzyć w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} kopię zapasową instancji. Dzięki kopii zapasowej możesz przywrócić Twoją instancję z pierwotną konfiguracją lub odtworzyć instancję.
+Możesz w dowolnym momencie utworzyć w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} kopię zapasową instancji. Dzięki kopii zapasowej możesz przywrócić Twoją instancję z pierwotną konfiguracją lub też ją odtworzyć.
 
 **Utwórz w prosty sposób kopię zapasową instancji Public Cloud.**
 
 ## Wymagania początkowe
 
-- [Utworzona na Twoim koncie instancja Public Cloud](../tworzenie_instancji_w_panelu_klienta_ovh/)
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Public Cloud`{.action} lub `Cloud`{.action} w poprzedniej wersji panelu
+- [Utworzona na Twoim koncie instancja Public Cloud](../creer-instance-espace-client/)
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## W praktyce
 
-### Etap 1: dostęp do interfejsu zarządzania instancją
+### Tworzenie kopii zapasowej instancji
 
-Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} W sekcji „Cloud” kliknij `Serwery`{.action} na pasku usług po lewej stronie. Wybierz odpowiednie rozwiązanie Public Cloud. Upewnij się, czy w zakładce `Compute`{.action} wybrałeś „Instancje”.
+Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, wybierz kartę Public Cloud,  a następnie rubrykę`Instances`{.action} (Instancje).
 
-![public cloud](images/2803-2.png){.thumbnail}
+Kliknij wówczas wielokropek `...`{.action} z prawej strony wybranej instancji, a następnie `Create snapshot`{.action} (Utwórz kopię zapasową).
 
-### Etap 2: tworzenie kopii zapasowej instancji
+![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 
-Na stronie z interfejsem zarządzania instancją, po kliknięciu strzałki skierowanej w dół, wybierz `Utwórz kopię zapasową`{.action}.
+Nazwij tę kopię zapasową na następnej stronie.
 
-![public cloud](images/2803-3.png){.thumbnail}
+![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-W oknie, które się pojawi, nadaj nazwę kopii zapasowej. **Zapoznaj się również z informacjami dotyczącymi ewentualnych kosztów wiążących się z utworzeniem kopii.**
+Utworzona kopia zapasowa będzie dostępna w rubryce`Instance Backup`{.action} (Kopia zapasowa instancji).
 
-Kiedy wszystko jest gotowe, `Uruchom kopię zapasową`{.action}
+![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
-![public cloud](images/2805-2.png){.thumbnail}
+### Automatyczne tworzenie kopii zapasowej instancji
 
-### Etap 3: dostęp do kopii zapasowych instancji
+W rubryce `Instances`{.action} (Instancje) wybierz opcję `Create an automatic backup`{.action} (Ustaw automatyczne tworzenie kopii zapasowej) w działaniach dostępnych dla danej instancji.
 
-Aby uzyskać dostęp do kopii zapasowych instancji Public Cloud, kliknij `Compute`{.action}, a następnie `Snapshoty`{.action}.
+![public-cloud-instance-backup](images/createbackup4.png){.thumbnail}
 
-W tabeli wyświetlą się dostępne kopie zapasowe. Do operacji na kopiach zapasowych użyj przycisków znajdujących się po prawej stronie.
+Na następnej stronie musisz podać wiele informacji:
 
-![public cloud](images/2807-2.png){.thumbnail}
+#### **Workflow (Przepływ pracy)** 
+
+Obecnie istnieje tylko jeden przepływ pracy, który odpowiada za tworzenie kopii zapasowej instancji i jej głównego woluminu.
+
+![public-cloud-instance-backup](images/createbackup5.png){.thumbnail}
+
+#### **Ressource (Zasób)**. 
+
+Wystarczy wybrać instancję, dla której ma być tworzona kopia zapasowa.
+
+![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
+
+#### **Schedule (Harmonogram)** 
+
+Tutaj określisz częstotliwość tworzenia kopii zapasowych. Domyślnie proponowane są dwie opcje:
+
+* Kopia zapasowa tworzona codziennie, z maksymalnie 7-dniową historią.
+* Kopia zapasowa tworzona codziennie, z maksymalnie 14-dniową historią.
+
+![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
+
+    
+#### **Name (Nazwa)** 
+
+Tutaj nadasz nazwę zadaniu tworzenia kopii zapasowej.
+ 
+![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
+
+Po utworzeniu kopii zapasowej stanie się ona dostępna w rubryce `Workflow Management`{.action} (Zarządzanie przepływami pracy):
+
+![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
+
+Kopie zapasowe będą dostępne w rubryce `Instance Backup`{.action} (Kopia zapasowa instancji) pod nadanymi im nazwami.
+
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en>.
