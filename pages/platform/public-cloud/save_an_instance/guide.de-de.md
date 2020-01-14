@@ -16,7 +16,7 @@ Sie können jederzeit über Ihren [OVH Kundenbereich](https://www.ovh.com/auth/?
 
 ## Voraussetzungen
 
-- Sie haben eine [Öffentliche Cloud Instanz](../creer-instance-espace-client/) in Ihrem Konto erstellt.
+- Sie haben eine [Öffentliche Cloud Instanz](https://docs.ovh.com/de/public-cloud/erstellung_einer_instanz_im_ovh_kundencenter/) in Ihrem Konto erstellt.
 - Sie sind mit Ihrem [OVH Kundenbereich](https://www.ovh.com/auth/?action=gotomanager){.external}verbunden.
 
 ## in der Praxis angewendet
