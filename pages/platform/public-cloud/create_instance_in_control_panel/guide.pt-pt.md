@@ -9,14 +9,14 @@ legacy_guide_number: g1775
 
 ## Sumário
 
-Pode utilizar a[Public Cloud](https://www.https://www.ovh.pt/public-cloud/){.external} OVHcloud para criar instâncias (ou seja, servidores virtuais) de forma rápida e fácil, com apenas alguns cliques.
+Pode utilizar a [Public Cloud](https://www.ovh.pt/public-cloud/){.external} OVHcloud para criar instâncias (ou seja, servidores virtuais) de forma rápida e fácil, com apenas alguns cliques.
 
 **Saiba como criar uma instância na Área de Cliente Public Cloud OVHcloud**
 
 ## Requisitos
 
 * acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
-* um projeto [Public Cloud](https://www.https://www.ovh.pt/public-cloud/){.external} criado na sua conta OVHcloud
+* um projeto [Public Cloud](https://www.ovh.pt/public-cloud/){.external} criado na sua conta OVHcloud
 * uma chave SSH criada na Área de Cliente OVHcloud
 
 ### Com Implementar uma Instância Public Cloud
