@@ -1,96 +1,71 @@
 ---
-title: Criar / Restaurar um servidor virtual a partir de um backup
-excerpt: Criar / Restaurar um servidor virtual a partir de um backup
+title: 'Criar / Restaurar um servidor virtual a partir de um backup'
+excerpt: 'Criar / Restaurar um servidor virtual a partir de um backup'
 slug: criar_restaurar_um_servidor_virtual_a_partir_de_um_backup
 legacy_guide_number: g1882
 ---
 
+**Última atualização: 22/11/2019**
 
-## 
-Em certas situações, como por exemplo uma má manipulação que efetuou, poderá necessitar de restaurar a sua instância para um momento anterior graças a um backup que efetuou. Outra das situações possíveis poderá ser a necessidade de criar uma nova instância graças a esse backup, seja para efeitos de repartição de carga seja para criar um ambiente de alta disponibilidade.
+## Sumário
+Pode querer restaurar a sua instância através de um backup, por exemplo, em caso de manipulação errada realizada na configuração da sua instância. 
 
-Tudo isto é possível e este guia foi desenvolvido para explicar como poderá utilizar os seus backups para recriar, duplicar ou restaurar as suas instâncias.
+Este backup pode também servir para criar uma nova instância, para duplicar a primeira e efetuar a repartição de carga, ou ainda para beneficiar da elevada disponibilidade.
 
+Este guia explica-lhe como usar os seus backups para recriar, duplicar ou restaurar as suas instâncias.
 
-## Pré-requisitos
+## Requisitos
+- Ter um backup de uma instância Public Cloud. Para isso, consulte [o guia relativo à criação de um backup](https://docs.ovh.com/pt/public-cloud/efetuar_backup_de_uma_instancia/).
+- Estar ligado à Área de Cliente OVHcloud.
 
-- Dispor de um backup de uma instância Public Cloud
-- Dispor de um servidor virtual já criado
+## Instruções
 
+### Criar uma instância a partir de um backup
 
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Public Cloud`{.action}. Selecione então a secção `Instance backup`{.action}.
 
+Clique então nas `...`{.action} do lado direito do backup escolhido e, por fim, em `Criar uma instância`{.action}.
 
-## 
+![public-cloud-instance-backup](images/restorebackup1.png){.thumbnail}
 
-- Ligue-se ao seu Espaço Cliente Public Cloud OVH
-- Clique em Backups
+A página de criação de instância é apresentada.
 
+![public-cloud-instance-backup](images/restorebackup2.png){.thumbnail}
 
+Alguns elementos estão predefinidos:
 
-![](images/img_2808.jpg){.thumbnail}
+* A localização: a sua instância será criada no mesmo datacenter do que o seu backup.
+* A imagem: corresponderá ao seu backup.
+* Os modelos: só os que podem acolher a sua imagem estarão disponíveis, em função da sua quota.
 
-- Clique no ícone "Criar um servidor a partir deste backup" à direita da linha do backup a restaurar
-- Obterá a seguinte janela:
+Para mais informações sobre a criação de uma instância, consulte [este guia](https://docs.ovh.com/pt/public-cloud/criar_uma_instancia_a_partir_do_espaco_cliente_ovh/).
 
+Para criar uma instância num datacenter diferente do do backup, será necessário transferir o backup para a zona correspondente. Consulte então o [guia relativo ao backup de uma instância de um datacenter para outro](https://docs.ovh.com/pt/public-cloud/transferir-a-copia-de-seguranca-de-uma-instancia-de-um-datacenter-para-outro/).
 
+### Restaurar uma instância a partir de um backup
 
-![](images/img_2809.jpg){.thumbnail}
+Para restaurar uma instância a partir de um backup, selecione o menu `Instância`{.action}, clique no botão `...`{.action} do lado direito da instância que pretende restaurar e, por fim, em `Editar`{.action}.
 
-- Personalizar o nome da VPS (se necessário)
-- Escolher o modelo
+![public-cloud-instance-backup](images/restorebackup3.png){.thumbnail}
 
-Attention
+A página de edição de instância será então apresentada. Nela poderá alterar:
 
-Atualmente, e a partir do Espaço Cliente, a restauração somente é possível unicamente no datacenter de onde o backup é proveniente. Para transferir o backup para outro datacenter será necessário utilizar a API OpenStack
+* O nome da instância.
+* A imagem da instância.
+* O modelo da instância.
+* A faturação da instância (apenas do modelo "Horário" para o modelo "Mensal").
 
+Escolha, então, na secção `Imagem`{.action}, a imagem do backup a restaurar.
 
-- Escolher a chave SSH
-- Escolher o modelo de faturação
-- Clique em Lançar agora
-- O servidor virtual estará, minutos mais tarde, disponível.
-
-
-
-
-## 
-
-- Ligue-se ao seu Espaço Cliente Public Cloud OVH
-- No menu seguinte clique em Editar:
-
-
-
-![](images/img_2810.jpg){.thumbnail}
-
-- Obteremos a seguinte janela:
+![public-cloud-instance-backup](images/restorebackup4.png){.thumbnail}
 
 
+> \[!alert]
+>
+>Como indicado no quadro amarelo que lhe é então apresentado, os dados adicionados depois da criação deste backup não poderão ser recuperados.
+>
 
-![](images/img_2812.jpg){.thumbnail}
+## Quer saber mais?
 
-- Personalize o nome do servidor (se necessário)
-- Escolha o modelo (características iguais ou superiores à máquina virtual inicial)
-- Clique nas distribuições
-- Ao aceder a Snapshots terá aí os seus backups
-
-
-
-![](images/img_2815.jpg){.thumbnail}
-
-- Clicar em Os meus backups:
-
-
-
-![](images/img_2816.jpg){.thumbnail}
-
-- Selecione o backup a restaurar
-- Escolha o modo de pagamento
-- Clique em Aplicar as modificações
-- O servidor virtual estará, segundos mais tarde, disponível.
-
-
-A sua instância não conservará os dados que foram criados após a criação deste backup.
-
-
-## 
-[Voltar à página principal dos guias Cloud]({legacy}1785)
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>
 
