@@ -1,92 +1,88 @@
 ---
-title: Tworzenie i usuwanie instancji w Panelu klienta
-excerpt: Zarządzanie instancjami
+title: 'Tworzenie i usuwanie instancji w Panelu klienta'
+excerpt: 'Dowiedz się, jak utworzyć instancję w Panelu klienta OVHcloud Public Cloud'
 slug: tworzenie_instancji_w_panelu_klienta_ovh
-section: Pierwsze kroki
+section: 'Pierwsze kroki'
 order: 3
 ---
 
-**Ostatnia aktualizacja dnia 2018-03-02**
+**Ostatnia aktualizacja: 3 grudnia 2019**
 
- 
 ## Wprowadzenie
-Usługa [Public Cloud](https://www.ovh.pl/cloud/){.external} pozwala szybko i łatwo tworzyć wirtualne serwery (instancje) za pomocą kilku kliknięć.
 
-W tym przewodniku przedstawiamy, jak utworzyć instancję za pośrednictwem Panelu klienta.
+OVHcloud [Public Cloud](https://www.ovh.pl/public-cloud/){.external} umożliwia szybkie i łatwe utworzenie instancji (np. serwerów wirtualnych) — wystarczy kilka kliknięć.
 
+**Dowiedz się, jak utworzyć instancję w Panelu klienta OVHcloud Public Cloud.**
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Utworzony Projekt Public Cloud
-- Dodany do Projektu klucz SSH
-- Utworzona sieć prywatna - nie jest wymagana, ale zalecana.
- 
+* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* projekt [Public Cloud](https://www.ovh.pl/public-cloud/){.external} utworzony na koncie OVHcloud
+* klucz SSH utworzony w Panelu klienta OVHcloud
 
-## W praktyce
+### Wdrażanie instancji Public Cloud
 
-### Tworzenie instancji
+Aby wdrożyć instancję Public Cloud, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij pozycję `Public Cloud`{.action} w lewym górnym rogu strony. Na następującym ekranie kliknij przycisk strzałki obok domyślnej nazwy projektu (w lewym górnym rogu ekranu). Wybierz projekt, w którym chcesz utworzyć nową instancję.
 
-W sekcji Cloud wskaż Projekt, następnie w zakładce `Infrastruktura`{.action} kliknij przycisk `Dodaj`{.action}, a następnie `Dodaj serwer`{.action}
+![select_project](images/select_project.png){.thumbnail}
 
-![Dodawanie instancji](images/1_PCI_add_the_server.png){.thumbnail}
+Po wybraniu właściwego projektu kliknij przycisk `Instancje`{.action} w sekcji „Środowisko obliczeniowe” znajdującej się na lewym pasku bocznym.
 
-W rezultacie pojawi się wstępna konfiguracja serwera, którą należy dostosować do swoich potrzeb.
+![create_instance](images/create_instance.png){.thumbnail}
 
-Poniżej pokazano i opisano kolejne elementy konfiguracyjne:
+Następnie kliknij przycisk `Utwórz instancję`{.action}. Zostanie wyświetlone następujące menu, w którym można wybrać instancję do utworzenia.
 
-![Tworzenie instancji](images/2_PCI_inst_building.png){.thumbnail}
+![create_instance1](images/create_instance1.png){.thumbnail}
 
-- zazn. 1 - wprowadź nazwę instancji dla łatwiejszego zarządzania;
-- zazn. 2 - wybierz Region, instancji nie można przenieść do innego regionu po uruchomieniu;
-- zazn. 3 - system operacyjny - system można zmienić w dowolnym momencie, to wiąże się z usunięciem wszelkich danych z instancji;
-- zazn. 4 - parametry serwera - rozwiń okno typu serwera, aby wybrać typ serwera wybierając ilość pamięci RAM lub procesor. 
+Poniższa tabela zawiera krótkie wyjaśnienie różnic między typami instancji:
 
-![Wybór RAM i CPU](images/3_inst_cpu_ram.png){.thumbnail}
- 
-Pamiętaj, że niektóre typy instancji są dostępne tylko w niektórych regionach. 
-Niektóre systemy operacyjne, jak Windows wymagają uruchomienia silniejszych instancji, dlatego te dwa parametry są od siebie zależne. Jeśli wybrany zostanie system z serii Windows, tylko serwery, które obsługują specyficzne potrzeby systemu, będą dostępne w polu wyboru, na przykład: po wybraniu systemu Windows instancje typu Sandbox nie są dostępne.
+| Typ serwera | Gwarantowane zasoby | Wdrożenie |
+| :---         |     :---:      |          ---: |
+| Ogólne zastosowanie   | ✓     | Serwery programistyczne, aplikacje internetowe i biznesowe    |
+| CPU     | ✓       | Kodowanie wideo lub inne zastosowania wymagające dużej wydajności obliczeniowej      |
+| RAM   | ✓     | Bazy danych, analiza i obliczenia w pamięci    |
+| Zasoby udostępnione    | -       | Środowiska testowe i deweloperskie      |
 
-Po wybraniu instancji pojawi się opcja `Zezwalaj na elastyczną zmianę rozmiaru`. Zaznaczenie tej opcji uruchamia instancję z pamięcią 50 GB, zapewniając szybsze migawki i możliwość późniejszej zmiany rozmiaru instancji. 
-Jeśli opcja nie jest wybrana podczas tworzenia serwera - będziesz mógł zmienić rozmiar instancji tylko na większy, bez możliwości powrotu do wersji początkowej.
-
-- zazn.5 - klucz SSH - wskaż klucz SSH, który będzie umożliwiał logowanie do instancji (nie dotyczy instancji uruchamianej z systemem Windows);
-- zazn.6 - opcje zaawansowane (sieć prywatna, ilość zainstalowanych instancji) - wskaż sieć prywatną VLAN, aby automatycznie utworzyć drugi interfejs sieciowy dla instancji.
- 
-Aby uruchomić instancję z wybranymi parametrami - kliknij `Uruchom teraz`{.action}. Uruchomienie potrwa kilka minut.
-
-Poniżej widoczne są dwie instancje - jedna z włączoną opcją i jedna bez.
-
-![Widok instancji FLEX](images/4_PCI_flex_inst.png){.thumbnail}
-
-
-### Usunięcie instancji
-
-Kiedy chcesz usunąć instancję, kliknij menu instancji i opcję `Usuń`{action}. 
-
-![Usuwanie instancji](images/5_inst_delete.png){.thumbnail}
-
-Potwierdzenie jest wymagane: 
-
-![Potwierdzenie usuwania](images/6_inst_del_confirm.png){.thumbnail}
-
-> [!alert]
-> 
-> Ta operacja jest nieodwracalna.
+> [!primary]
+>
+Początkowo obowiązuje ograniczenie do 20 instancji, 20 rdzeni wirtualnych i 40 GB pamięci RAM na każdy projekt. Wniosek o zwiększenie limitu zasobów można złożyć przez [przesłanie zgłoszenia](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} do naszego zespołu obsługi klienta.
 >
 
-Użyteczne jest utworzenie migawki obrazu instancji (snapshotu), aby móc zainstalować kolejną instancję korzystając z wykonanego obrazu.
 
-Jeśli podczas usuwania instancji jest do niej przypisany dysk, nie zostanie on usunięty. W dowolnym momencie dysk będzie można dodać do nowej lub działającej już instancji.
+W menu wybierz region, w którym ma się znajdować instancja Public Cloud. Trzecia opcja służy do wyboru systemu operacyjnego.
 
+> [!primary]
+>
+W przypadku wybrania systemu operacyjnego Windows automatycznie zostanie udostępniona licencja, która będzie rozliczana miesięcznie.
+>
+
+![install](images/os_install.png){.thumbnail}
+
+> [!primary]
+>
+W przypadku instancji Public Cloud z systemem operacyjnym Unix do serwera należy dodać klucz SSH. Więcej informacji o generowaniu klucza SSH zawiera artykuł [Tworzenie kluczy SSH](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/){.external}.
+>
+
+W czwartej części menu można wybrać liczbę instancji do utworzenia, nazwać instancję i dodać sieć prywatną lub skrypt uruchamiany po instalacji.
+
+![add an instance](images/configure_instance.png){.thumbnail}
+
+Na koniec należy wybrać model rozliczeniowy — miesięczny lub godzinowy.
+
+> [!warning]
+>
+>W przypadku modelu godzinowego opłaty są naliczane przez cały okres istnienia instancji. Nie ma znaczenia, czy instancja jest używana, czy nie.
+>
+
+
+Po potwierdzeniu prawidłowości wszystkich wprowadzonych informacji kliknij przycisk `Utwórz instancję`{.action}, aby ukończyć tworzenie nowej instancji. Udostępnienie instancji może zająć kilka minut.
+
+## Podsumowanie
+
+Ten artykuł zawiera informacje, które umożliwiają udostępnienie instancji w projekcie Public Cloud za pomocą Panelu klienta OVHcloud. Informacje o innych działaniach dotyczących instancji zawierają artykuły na stronie wsparcia technicznego [usług Public Cloud](https://docs.ovh.com/pl/public-cloud/){.external}.
 
 ## Sprawdź również
 
-[Zmiana typu rozliczenia z godzinowego na miesięczne dla instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/zmiana-typu-rozliczenia/){.external}
+[Pierwsze kroki z Public Cloud](https://docs.ovh.com/pl/public-cloud/tworzenie-usuwanie-projektow/){.external}
 
-[Dodanie przestrzeni dyskowej](https://docs.ovh.com/pl/public-cloud/dodanie_przestrzeni_dyskowej/){.external}
-
-[Połączenie instancji Public Cloud z innymi produktami OVH za pomocą vRack](https://docs.ovh.com/pl/public-cloud/polaczenie-vrack-public-cloud-inne-uslugi/){.external}
-
-
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
