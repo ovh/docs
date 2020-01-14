@@ -1,54 +1,68 @@
 ---
-title: Dostęp do panelu Horizon
+title: 'Dostęp do panelu Horizon'
 slug: tworzenie_dostepu_do_interfejsu_horizon
-excerpt: Aktywacja dostępu do panelu Horizon
-section: Zarządzanie w interfejsie Horizon
+excerpt: 'Aktywacja dostępu do panelu Horizon'
+section: 'Zarządzanie w interfejsie Horizon'
 order: 1
 ---
 
-**Ostatnia aktualizacja dnia 2018-01-16**
+**Ostatnia aktualizacja: 14 listopada 2019**
 
 ## Wprowadzenie
 
-Horizon jest implementacją interfejsu administracyjnego projektu OpenStack Dashboard. Niektóre funkcje zarządzania dostępne są tylko w tym interfejsie.
+Horizon to interfejs graficzny do zarządzania oprogramowaniem OpenStack. Niektóre funkcje są dostępne tylko przy użyciu tego interfejsu.
+
+**Ten przewodnik zawiera informacje o uzyskiwaniu dostępu do interfejsu Horizon.**
 
 
 ## Wymagania początkowe
 
-- Utworzony projekt Public Cloud
+- aktywny projekt Public Cloud
+- dostęp do [Panelu klienta OVHcloud](https://ovh.com/auth/?action=gotomanager){.external}
 
 ## W praktyce
 
-### Tworzenie użytkownika OpenStack Horizon
+### Tworzenie konta użytkownika OpenStack
 
-Aby uzyskać dostęp do panelu Horizon, należy utworzyć co najmniej jednego użytkownika. Jest to możliwe w sekcji OpenStack widocznej w lewym menu projektu Public Cloud.
+Aby uzyskać dostęp do interfejsu Horizon, przede wszystkim należy utworzyć konto użytkownika OpenStack. Aby to zrobić, zaloguj się do Panelu klienta i przejdź do sekcji `Public Cloud`{.action} w lewym górnym rogu strony. Na następującym ekranie kliknij `przycisk strzałki`{.action} obok nazwy projektu w lewym górnym rogu ekranu.
 
-![Dodawanie użytkownika](images/1_H_add_user.png){.thumbnail}
+![Add user](images/select_project.png){.thumbnail}
 
-Kliknij na przycisk `Dodaj Użytkownika`{.action}, następnie zostanie wyświetlone pole, gdzie możemy dodać opis konta, np. imię lub nazwę nowego użytkownika OpenStack.
-Gdy operacja zostanie zakończona, wyświetlony zostanie komunikat potwierdzający założenie konta.
+Na lewym pasku bocznym w sekcji „Zarządzanie projektami” wybierz pozycję `Użytkownicy i role użytkowników`{.action}.
 
-W każdej chwili możemy utworzyć kolejnego użytkownika - przycisk pokazany na zrzucie ekranu - zaznaczenie nr 1.
+![User roles](images/users_roles.png){.thumbnail}
 
-Identyfikator (ID) oraz hasło są generowane automatycznie. Hasło będzie widoczne w panelu klienta do momentu odświeżenia witryny. Możesz je skopiować, aby użyć tego samego hasła przy kolejnym logowaniu. Można również wygenerować nowe hasło, klikając na strzałki tuż obok kropek maskujących dotychczasowe hasło > zaznaczenie nr 2.
+Kliknij przycisk `Utwórz użytkownika`{.action}, aby wyświetlić następujące okno podręczne.
 
-Kliknij w ikonę menu `...`{.action}.
+![Add user](images/adduser.png){.thumbnail}
 
-![Menu projektu](images/2_H_user_manage.png){.thumbnail}
+Opis użytkownika nie jest nazwą użytkownika. To opisowe informacje ułatwiające zapamiętanie, jakiego rodzaju to użytkownik. Następny ekran służy do przyznawania uprawnień użytkownika. Użytkownik uzyska takie uprawnienia, jakie zostaną wskazane przez znaczenie ich pól wyboru. Ilustruje to poniższa tabela:
 
-###  Logowanie do OpenStack Horizon
+![Permissions](images/permissions.png){.thumbnail}
 
-Kliknij w ikonę menu `...`{.action}. Wybór opcji `Otwórz Openstack Horizon`{.action} otwiera okno logowania, gdzie konieczne jest podanie identyfikatora (ID) wpisując go w pole `User name` oraz aktualnego hasła.
+Po przyznaniu uprawnień kliknij przycisk `Potwierdź`{.action}. Zostanie wtedy wyświetlony następujący ekran:
 
-![Menu projektu](images/3_H_open_menu.png){.thumbnail}
+![User_pw](images/user_pw.png){.thumbnail}
 
-![Ekran logowania](images/4_H_login_window.png){.thumbnail}
+Zapisz hasło, ponieważ jest widoczne tylko w tym momencie i nie można go później odzyskać. Jednak w przypadku utraty hasła zawsze można utworzyć nowe. Wystarczy kliknąć ikonę wielokropka (...) w następującym menu i wybrać polecenie `Generuj hasło:`{.action}
 
-Po zalogowaniu będzie widoczny interfejs OpenStack Horizon:
+![Generate](images/generatepw.png){.thumbnail}
 
-![Interfejs Horizon](images/5_H_view.png){.thumbnail}
+Po utworzeniu użytkownika te dane logowania umożliwiają zalogowanie się do interfejsu Horizon — przy użyciu przycisku `Horizon`{.action} na lewym panelu bocznym.
+
+### Logowanie do OpenStack Horizon
+
+Aby otworzyć menu, kliknij ikonę z trzema kropkami na końcu wiersza (`...`{.action}). Następnie kliknij link `Otwórz OpenStack Horizon`{.action}. Zostanie wyświetlona strona logowania [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external}. Aby się zalogować, wpisz `nazwę użytkownika` i hasło.
+
+![Project menu](images/3_H_open_menu.png){.thumbnail}
+
+![Login screen](images/4_H_login_window.png){.thumbnail}
+
+Po zalogowaniu zostanie wyświetlony interfejs OpenStack Horizon:
+
+![Horizon interface](images/5_H_view.png){.thumbnail}
 
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
+Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
