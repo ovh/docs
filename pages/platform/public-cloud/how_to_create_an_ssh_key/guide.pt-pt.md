@@ -5,35 +5,35 @@ excerpt: 'Como criar uma chave SSH para se ligar uma instância'
 section: Segurança
 ---
 
-**Última atualização: 21/01/2019**
+**Última atualização a 14 de Novembro de 2019**
 
 ## Sumário
 
-Quando criar uma [instância Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external}, não receberá nenhum e-mail com as suas credenciais. Neste caso, a autenticação é realizada através de chaves SSH protegidas.
+Quando se cria uma [Instância Public Cloud](https://www.https://www.ovh.pt/public-cloud/){.external}, não se recebe um email com as credenciais para login, porque a autenticação baseia-se em chaves seguras SSH e não em  nomes de utilizador e senhas.
 
-**Saiba como criar uma chave SSH para se ligar uma instância.**
+**Este guia explica como criar uma chave SSH para poder fazer login na sua instância.**
 
 > [!primary]
 >
-Note que as chaves SSH não são utilizadas para a autenticação nas instâncias que executam o sistema operativo Windows. Para estas chaves, deve sempre utilizar um nome de utilizador e uma palavra-passe.
+Note que as chaves SSH não são utilizadas para a autenticação nas instâncias que executam o sistema operativo Windows. Para as instâncias no Windows, ainda é necessário usar um nome de utilizador e uma senha.
 >
 
 ## Requisitos
 
-* Criar um projeto [Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external} na sua conta OVH.
-* Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* um projeto [Public Cloud](https://www.https://www.ovh.pt/public-cloud/){.external} na sua conta OVH
+* acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instruções
 
-### Criar uma chave SSH em Linux e Mac
+### Como criar uma chave SSH no Linux e no Mac.
 
-Abra a aplicação Terminal (linha de comandos) e execute o seguinte comando para criar uma chave SSH de 4096 bits:
+Primeiro, abra a aplicação do terminal (linha de comando), e em seguida execute o seguinte comando para gerar uma chave SSH de 4096 bits:
 
 ```sh
 # ssh-keygen -b 4096
 ```
 
-O comando apresenta o resultado abaixo e pede-lhe para registar a chave que acabou de criar:
+O comando irá produzir o seguinte resultado e pedir que guarde a chave recém-criada:
 
 ```sh
 Generating public/private rsa key pair.
@@ -42,10 +42,10 @@ Enter file in which to save the key (/home/user/.ssh/id_rsa):
 
 > [!warning]
 >
-> Guarde a parte privada da chave de forma segura e limite o seu acesso unicamente para as pessoas autorizadas.
+> A parte privada da chave deve ser guardada em local seguro e o acesso deve ser limitado a pessoas autorizadas.
 > 
 
-Uma vez que registou a chave, a linha de comandos apresentará os seguintes elementos:
+Uma vez guardada a chave, a linha de comando irá produzir o seguinte resultado:
 
 ```ssh
 Your identification has been saved in /home/user/.ssh/id_rsa.
@@ -66,13 +66,13 @@ The key's randomart image is:
 +-----------------+
 ```
 
-Pode consultar e mostrar a chave através do seguinte comando:
+Poderá consultar e mostrar a chave através do seguinte comando:
 
 ```ssh
 # cat .ssh/id_rsa.pub
 ```
 
-A execução deste comando apresenta os seguintes elementos:
+A execução deste comando irá produzir o seguinte resultado:
 
 ```ssh
 cat /home/user/.ssh/id_rsa.pub
@@ -84,47 +84,44 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
  user@host
 ```
 
-### Criar uma chave SSH em Windows
+### Como criar uma chave SSH no Windows.
 
-#### Com PuTTY
+#### Utilizando PuTTY
 
-[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/){.external} é um cliente SSH utilizado pelo Windows. Poderá ligar-se remotamente a um servidor Linux. O seu software associado, [PuTTYgen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe){.external}, pode ser utilizado para criar chaves SSH.
+[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/){.external} é um cliente SSH muito utilizado no Windows. Pode utilizá-lo para se ligar remotamente a um servidor Linux. O seu software associado, [PuTTYgen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe){.external}, pode ser utilizado para criar chaves SSH.
 
-Comece por descarregar o programa [PuTTYgen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe){.external} para poder gerar a chave.
+Primeiro, descarregue o software [PuTTYgen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe){.external}, que iremos utilizar para gerar a chave.
 
-Execute o programa e selecione RSA como tipo de chave. A seguir, introduza 4096 no número de bits e clique em `Generate`{.action}.
+Em seguida, execute o software e selecione o tipo de chave RSA , digite 4096 no número de bits a gerar e clique no botão `Generate`{.action}.
 
-![Gerar a chave](images/puttygen-01.png){.thumbnail}
+![generate key](images/puttygen-01.png){.thumbnail}
 
-De seguida, mova o rato de forma aleatória na zona vazia situada por baixo da barra de progresso.
+Em seguida, mova o rato de forma aleatória na zona vazia situada por baixo da barra de progresso, como se mostra abaixo.
 
-![Gerar a chave](images/puttygen-02.gif){.thumbnail}
+![generate key](images/puttygen-02.gif){.thumbnail}
 
-À medida que for movendo o rato, a barra de progresso irá ficando completa. Quando a barra estiver completamente cheia, significa que a chave está pronta.
+À medida que for movendo o rato, a barra de progresso vai-se preenchendo. Quando a barra estiver completamente cheia, significa que a chave está pronta.
 
-![Gerar a chave](images/puttygen-03.png){.thumbnail}
+![generate key](images/puttygen-03.png){.thumbnail}
 
-### Importar uma chave SSH para a Área de Cliente OVH
+### Como importar a sua chave SSH para a Área de Cliente OVH
 
-Selecione e copie o texto da sua chave pública e, a seguir, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Primeiro, selecione e copie o texto da sua chave pública e, em seguida, faça login na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-Aceda ao menu `Cloud`{.action}.
+Agora clique no menu `Public Cloud`{.action}.
 
-![menu cloud](images/cloud-menu.png){.thumbnail}
+![cloud menu](images/cloud-menu.png){.thumbnail}
 
-Selecione o seu projeto Public Cloud no menu à esquerda e, a seguir, clique em `Infraestrutura`{.action}.
+Selecione o seu projeto Public Cloud do menu à esquerda{.action}.
 
-![selecione o projeto](images/select-project.png){.thumbnail}
+![select project](images/select-project.png){.thumbnail}
 
-Selecione o separador `Chaves SSH`{.action}.
+Agora selecione o separador `SSH keys`{.action}. Em seguida, cole a chave de 4096 bytes no espaço disponibilizado. Atribua um nome à chave e clique no botão `Add this key`{.action}.
 
-![registar a chave SSH](images/save-ssh-key-01.png){.thumbnail}
+![save ssh key](images/save-key.png){.thumbnail}
 
-A seguir, introduza a chave 4096 bytes no espaço disponível. Atribua-lhe um nome e clique no botão `Adicionar esta chave`{.action}.
+A sua chave ficará guardada na Área de Cliente OVH para a autenticação.
 
-![registar a chave SSH](images/save-ssh-key-02.png){.thumbnail}
-
-A sua chave ficará registada na Área de Cliente OVH para a autenticação.
 
 ## Quer saber mais?
 
