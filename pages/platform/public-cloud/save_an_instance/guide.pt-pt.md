@@ -15,7 +15,7 @@ Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.externa
 
 ## Requisitos
 
-- [Ter criado uma instância Public Cloud a partir da sua conta](../creer-instance-espace-client/).
+- [Ter criado uma instância Public Cloud a partir da sua conta](https://docs.ovh.com/pt/public-cloud/criar_uma_instancia_a_partir_do_espaco_cliente_ovh/).
 - Estar ligado à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instruções

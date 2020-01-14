@@ -15,7 +15,7 @@ Możesz w dowolnym momencie utworzyć w [Panelu klienta](https://www.ovh.com/aut
 
 ## Wymagania początkowe
 
-- [Utworzona na Twoim koncie instancja Public Cloud](../creer-instance-espace-client/)
+- [Utworzona na Twoim koncie instancja Public Cloud](https://docs.ovh.com/pl/public-cloud/tworzenie_instancji_w_panelu_klienta_ovh/)
 - Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## W praktyce
