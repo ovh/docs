@@ -1,6 +1,6 @@
 ---
 title: 'Gerir as minhas faturas OVHcloud'
-slug: "gerir-faturas-ovhcloud"
+slug: gerir-faturas-ovhcloud
 excerpt: 'Saiba como gerir as suas faturas e pagamentos na OVHcloud'
 section: Faturação
 ---
@@ -67,7 +67,7 @@ Em cada linha da tabela, encontrará as seguintes informações:
 - montante da fatura;
 - saldo a pagar;
 - data de vencimento; 
-- `...`{.action}\: diferentes ações possíveis.
+- `...`{.action}: diferentes ações possíveis.
 
 
 > [!primary]
@@ -79,9 +79,9 @@ Se aparecer a menção “Informações indisponíveis”, isto significa que a 
 
 ![Ações nas faturas](images/actions_choices.png){.thumbnail}
 
-- `Ver a versão HTML`{.action}\: a fatura irá abrir num novo separador do seu browser;
-- `Ver a versão PDF`{.action}\: será gerado um ficheiro PDF que poderá descarregar;
-- `Consultar os detalhes desta fatura`{.action}\: pode consultar o histórico de operações realizadas na fatura.
+- `Ver a versão HTML`{.action}: a fatura irá abrir num novo separador do seu browser;
+- `Ver a versão PDF`{.action}: será gerado um ficheiro PDF que poderá descarregar;
+- `Consultar os detalhes desta fatura`{.action}: pode consultar o histórico de operações realizadas na fatura.
 
 
 Para facilitar a leitura, pode utilizar os filtros que aparecem na parte superior da tabela:
