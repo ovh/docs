@@ -13,8 +13,9 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 |MariaDB 10.2|À définir|À définir|À définir|
 |MongoDB 4|2019-07-29|2019-02-25|À définir|
 |MySQL 5.7|À définir|À définir|À définir|
-|PostgreSQL 9.6|À définir|À définir|À définir|
+|PostgreSQL 9.6|2020-01-21|2021-05-12|2021-11-11|
 |PostgreSQL 10|À définir|À définir|À définir|
 |PostgreSQL 11|À définir|À définir|À définir|
+|PostgreSQL 12|À définir|À définir|À définir|
 |Redis 3.2|2019-07-29|2019-10-29|2020-01-28|
 |Redis 4.0|À définir|À définir|À définir|
