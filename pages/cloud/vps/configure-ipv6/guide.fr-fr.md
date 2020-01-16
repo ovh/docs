@@ -113,9 +113,9 @@ Il existe deux méthodes pour configurer votre réseau selon le système d'explo
 
 - **pour Debian 8 et inférieure, Ubuntu 16.04 et inférieure** : utilisez la méthode basée sur le fichier "interfaces" ;
 
-- **pour Debian 9, Ubuntu 17.04 et versions ultérieures** : utilisez la méthode basée sur la fonction « Netplan ».
+- **pour Ubuntu 17.04 et versions ultérieures** : utilisez la méthode basée sur la fonction « Netplan ».
 
-Dans certains cas (Debian 9 plus particulièrement), il se peut que la méthode à utiliser ne soit pas celle spécifiée ci-dessus. Pour vous en assurer, naviguez dans votre système pour voir celle active dans votre cas. Rendez-vous sur le site <https://netplan.io/> pour obtenir plus d'informations si nécessaire.
+Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spécifiée ci-dessus. Pour vous en assurer, naviguez dans votre système pour vérifier la méthode active dans votre cas (systemd-network, cloud-init ou interfaces).
 
 > [!warning]
 >
