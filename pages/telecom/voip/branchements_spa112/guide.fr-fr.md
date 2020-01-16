@@ -18,4 +18,4 @@ L'équipement adaptateur doit être raccordé :
 
 Notez que pour les offre Plug & Fax, le téléphone est à remplacer par un télécopieur.
 
-L'emplacement des deux prises Phone est trompeur,
+L'emplacement des deux prises Phone peut être trompeur. Le port N°1, qui doit être utilisé dans la majorité des cas, est situé à l'extérieur de l'adaptateur (à gauche lorsque l'on regarde l'arrière de l'adaptateur).
