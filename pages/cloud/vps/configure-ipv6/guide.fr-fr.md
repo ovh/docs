@@ -30,7 +30,7 @@ L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VP
 
 > [!primary]
 >
-> Les configurations visibles dans ce guide sont fournies à titre d'exemple, celles-ci peuvent varier selon le système d'exploitation que vous utilisez sur votre votre VPS.
+> Les configurations visibles dans ce guide sont fournies à titre d'exemple, celles-ci peuvent varier selon le système d'exploitation que vous utilisez sur votre VPS.
 > 
 
 La configuration de l'IPv6 sur votre serveur VPS s'effectue en plusieurs étapes. Durant ces dernières, vous serez invité à utiliser des commandes ou à personnaliser la configuration de votre serveur. 
