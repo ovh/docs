@@ -15,7 +15,7 @@ Rsync (z ang. „remote synchronization”), dystrybuowany w ramach licencji GNU
 
 > [!warning]
 >
-Tutorial przedstawia zastosowanie jednego lub kilku rozwiązań OVHcloud w powiązaniu z zewnętrznymi narzędziami i opisuje operacje, jakie należy wykonać w danym przypadku. Wybierz odpowiednie dla Ciebie rozwiązanie. Jeśli napotkasz trudności podczas przeprowadzania tych operacji, skontaktuj się z wyspecjalizowanym dostawcą usług administracyjnych i/lub zadaj pytanie na forum społeczności OVHcloud<https://community.ovh.com/en/>. Niestety OVHcloud nie jest w stanie udzielić Ci wsparcia w tym zakresie.
+Tutorial przedstawia zastosowanie jednego lub kilku rozwiązań OVHcloud w powiązaniu z zewnętrznymi narzędziami i opisuje operacje, jakie należy wykonać w danym przypadku. Wybierz odpowiednie dla Ciebie rozwiązanie. Jeśli napotkasz trudności podczas przeprowadzania tych operacji, skontaktuj się z wyspecjalizowanym dostawcą usług administracyjnych i/lub zadaj pytanie na forum społeczności OVHcloud <https://community.ovh.com/en/>. Niestety OVHcloud nie jest w stanie udzielić Ci wsparcia w tym zakresie.
 >
 
 ## Wymagania początkowe
@@ -112,4 +112,4 @@ rsync -av -P --stats --human-readable -e 'ssh -p X' --exclude="Folder_Name" --ex
 
 Teraz już wiesz, jak w prosty sposób kopiować dane z serwera na inny serwer za pomocą rsync.
 
-Aby dowiedzieć się więcej, przyłącz się do społeczności naszych użytkowników <https://community.ovh.com/>.
+Aby dowiedzieć się więcej, przyłącz się do społeczności naszych użytkowników <https://community.ovh.com/en/>.
