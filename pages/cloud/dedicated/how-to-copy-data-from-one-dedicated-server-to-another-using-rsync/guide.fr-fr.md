@@ -30,7 +30,7 @@ Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH
 
 ### Ce que vous devez avoir
 
-*     Posséder au moins deux serveurs dédiés OVH fonctionnant sous une distriubtion GNU/Linux.
+*     Posséder au moins deux serveurs dédiés OVH fonctionnant sous une distribution GNU/Linux.
 *     Disposer d'un accès *root* sur la machine source
 *     Disposer d'un accès *SSH* sur la machine de destination
 
@@ -78,7 +78,7 @@ rsync -av -e 'ssh -p X' YourLocalFolder/ login@server:/DestinationFolder/
 
 #### Vous souhaitez exclure un ou plusieurs dossiers de votre copie
 
-Si rsync permet de transférer l'ensemble des dossiers d'une machine, vous pouvez souhaiter exclure certains dossiers ou sous-dossiers de la copie que vous vous apprétez à effectuer. En ce cas, listez et ces derniers ainsi que leur nom sur votre serveur.
+Si rsync permet de transférer l'ensemble des dossiers d'une machine, vous pouvez souhaiter exclure certains dossiers ou sous-dossiers de la copie que vous vous apprétez à effectuer. Dans ce cas, listez ces derniers ainsi que leur nom sur votre serveur.
 
 Par ailleurs, et de manière générale, il est conseillé d'exclure du transfert les caches et fichiers systèmes temporaire du serveur source afin d'éviter tout conflit sur le serveur de destination. 
 
@@ -98,7 +98,7 @@ Cet argument devra être répété autant de fois qu'il y a de dossiers ou de so
 
 > [!primary]
 >
-Veuillez noter que l'emplacement du dossier doit être exprimé dans son emplacement relatif, Rsync ne prenant pas en compte les chemins absolus. Ainsi si l'un des dossiers à exclure est situé dans «/home/user/test» et que vous vous trouvez actuellemnt au sein de «/test», il conviendra de préciser «--exclude="test"» (chemin relatif) et non «--exclude="/home/user/test"» (chemin absolu).
+Veuillez noter que l'emplacement du dossier doit être exprimé dans son emplacement relatif, Rsync ne prenant pas en compte les chemins absolus. Ainsi si l'un des dossiers à exclure est situé dans «/home/user/test» et que vous vous trouvez actuellement au sein de «/test», il conviendra de préciser «--exclude="test"» (chemin relatif) et non «--exclude="/home/user/test"» (chemin absolu).
 >
 
 
