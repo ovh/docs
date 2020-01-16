@@ -1,88 +1,71 @@
 ---
 title: 'Tworzenie / przywracanie serwera wirtualnego na podstawie kopii zapasowej'
-excerpt: 'Dowiedz się, jak utworzyć instancję w Panelu klienta OVHcloud Public Cloud'
+excerpt: 'Dowiedz się, jak utworzyć lub przywrócić kopię zapasową instancji'
 slug: tworzenie_przywracanie_serwera_wirtualnego_na_podstawie_kopii_zapasowej
 legacy_guide_number: g1882
 section: 'Zarządzanie w Panelu klienta OVH'
 ---
 
-**Ostatnia aktualizacja: 3 grudnia 2019**
+**Ostatnia aktualizacja z dnia 22-11-2019**
 
 ## Wprowadzenie
+Może zajść konieczność przywrócenia instancji z kopii zapasowej, np. w przypadku błędu podczas konfigurowania Twojej instancji. 
 
-OVHcloud [Public Cloud](https://www.ovh.pl/public-cloud/){.external} umożliwia szybkie i łatwe utworzenie instancji (np. serwerów wirtualnych) — wystarczy kilka kliknięć.
+Kopia zapasowa może także posłużyć do utworzenia nowej instancji, zduplikowania jej w celu zrównoważenia obciążenia, czy też w celu zapewnienia wysokiej dostępności.
 
-**Dowiedz się, jak utworzyć instancję w Panelu klienta OVHcloud Public Cloud.**
+Dzięki niniejszemu przewodnikowi dowiesz się, jak korzystać ze swoich kopii zapasowych, by duplikować lub też przywracać swoje instancje.
 
 ## Wymagania początkowe
+- Posiadanie kopii zapasowej instancji Public Cloud. Należy zapoznać się w tym celu z [instrukcją tworzenia kopii zapasowej](https://docs.ovh.com/pl/public-cloud/kopia_zapasowa_instancji/).
+- Zalogowanie się do panelu klienta OVHcloud.
 
-* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
-* projekt [Public Cloud](https://www.ovh.pl/public-cloud/){.external} utworzony na koncie OVHcloud
-* klucz SSH utworzony w Panelu klienta OVHcloud
+## W praktyce
 
-### Wdrażanie instancji Public Cloud
+### Tworzenie instancji na podstawie kopii zapasowej
 
-Aby wdrożyć instancję Public Cloud, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij pozycję `Public Cloud`{.action} w lewym górnym rogu strony. Na następującym ekranie kliknij przycisk strzałki obok domyślnej nazwy projektu (w lewym górnym rogu ekranu). Wybierz projekt, w którym chcesz utworzyć nową instancję.
+Zaloguj się do swojego [panelu klient  OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i kliknij opcję`Public Cloud`{.action}. Następnie wybierz rubrykę `Instance backup`{.action} (Kopia zapasowa instancji).
 
-![select_project](images/select_project.png){.thumbnail}
+Kliknij `...`{.action} z prawej strony wybranej kopii zapasowej i wybierz opcję `Create an instance`{.action} (Utwórz instancję).
 
-Po wybraniu właściwego projektu kliknij przycisk `Instancje`{.action} w sekcji „Środowisko obliczeniowe” znajdującej się na lewym pasku bocznym.
+![public-cloud-instance-backup](images/restorebackup1.png){.thumbnail}
 
-![create_instance](images/create_instance.png){.thumbnail}
+Wyświetlona zostanie strona tworzenia instancji.
 
-Następnie kliknij przycisk `Utwórz instancję`{.action}. Zostanie wyświetlone następujące menu, w którym można wybrać instancję do utworzenia.
+![public-cloud-instance-backup](images/restorebackup2.png){.thumbnail}
 
-![create_instance1](images/create_instance1.png){.thumbnail}
+Niektóre elementy są wstępnie określone:
 
-Poniższa tabela zawiera krótkie wyjaśnienie różnic między typami instancji:
+* Lokalizacja: Twoja instancja zostanie utworzona w tym samym centrum danych, co Twoja kopia zapasowa.
+* Obraz: odpowiada Twojej kopii zapasowej.
+* Modele: dostępne są wyłącznie modele mogące przyjąć Twój obraz, w zależności od limitu miejsca.
 
-| Typ serwera | Gwarantowane zasoby | Wdrożenie |
-| :---         |     :---:      |          ---: |
-| Ogólne zastosowanie   | ✓     | Serwery programistyczne, aplikacje internetowe i biznesowe    |
-| CPU     | ✓       | Kodowanie wideo lub inne zastosowania wymagające dużej wydajności obliczeniowej      |
-| RAM   | ✓     | Bazy danych, analiza i obliczenia w pamięci    |
-| Zasoby udostępnione    | -       | Środowiska testowe i deweloperskie      |
+Aby uzyskać więcej informacji na temat tworzenia instancji, zapoznaj się z [tym przewodnikiem](https://docs.ovh.com/pl/public-cloud/tworzenie_instancji_w_panelu_klienta_ovh/).
 
-> [!primary]
+Aby utworzyć instancję w innym centrum danych niż lokalizacja kopii zapasowej, konieczne będzie jej przeniesienie do odpowiedniej strefy. Aby to zrobić, należy postępować zgodnie z [instrukcją przenoszenia instancji do innego centrum danych](https://docs.ovh.com/pl/public-cloud/przenoszenie_kopii_zapasowych_pomiedzy_centrami_danych/).
+
+### Przywracanie instancji z kopii zapasowej
+
+Aby przywrócić instancję z kopii zapasowej, wybierz menu `Instance`{.action} (Instancja), następnie kliknij przycisk `...`{.action} z prawej strony przywracanej instancji, a następnie wybierz opcję `Edit`{.action} (Edytuj).
+
+![public-cloud-instance-backup](images/restorebackup3.png){.thumbnail}
+
+Wyświetli się wówczas strona edycji instancji. Można tu zmienić:
+
+* nazwę instancji,
+* obraz instancji,
+* model instancji.
+* Sposób rozliczenia dla instancji (tylko od „Godzinowe” do „Miesięczne”).
+
+Wybierz wówczas w rubryce `Image`{.action} (Obraz) ten, który zawiera kopię zapasową do przywrócenia.
+
+![public-cloud-instance-backup](images/restorebackup4.png){.thumbnail}
+
+
+> [!alert]
 >
-Początkowo obowiązuje ograniczenie do 20 instancji, 20 rdzeni wirtualnych i 40 GB pamięci RAM na każdy projekt. Wniosek o zwiększenie limitu zasobów można złożyć przez [przesłanie zgłoszenia](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} do naszego zespołu obsługi klienta.
+>W żółtej ramce pojawi się informacja, że nie będzie możliwe przywrócenie żadnych danych dodanych po utworzeniu tej kopii zapasowej.
 >
-
-
-W menu wybierz region, w którym ma się znajdować instancja Public Cloud. Trzecia opcja służy do wyboru systemu operacyjnego.
-
-> [!primary]
->
-W przypadku wybrania systemu operacyjnego Windows automatycznie zostanie udostępniona licencja, która będzie rozliczana miesięcznie.
->
-
-![install](images/os_install.png){.thumbnail}
-
-> [!primary]
->
-W przypadku instancji Public Cloud z systemem operacyjnym Unix do serwera należy dodać klucz SSH. Więcej informacji o generowaniu klucza SSH zawiera artykuł [Tworzenie kluczy SSH](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/){.external}.
->
-
-W czwartej części menu można wybrać liczbę instancji do utworzenia, nazwać instancję i dodać sieć prywatną lub skrypt uruchamiany po instalacji.
-
-![add an instance](images/configure_instance.png){.thumbnail}
-
-Na koniec należy wybrać model rozliczeniowy — miesięczny lub godzinowy.
-
-> [!warning]
->
->W przypadku modelu godzinowego opłaty są naliczane przez cały okres istnienia instancji. Nie ma znaczenia, czy instancja jest używana, czy nie.
->
-
-
-Po potwierdzeniu prawidłowości wszystkich wprowadzonych informacji kliknij przycisk `Utwórz instancję`{.action}, aby ukończyć tworzenie nowej instancji. Udostępnienie instancji może zająć kilka minut.
-
-## Podsumowanie
-
-Ten artykuł zawiera informacje, które umożliwiają udostępnienie instancji w projekcie Public Cloud za pomocą Panelu klienta OVHcloud. Informacje o innych działaniach dotyczących instancji zawierają artykuły na stronie wsparcia technicznego [usług Public Cloud](https://docs.ovh.com/pl/public-cloud/){.external}.
 
 ## Sprawdź również
 
-[Pierwsze kroki z Public Cloud](https://docs.ovh.com/pl/public-cloud/tworzenie-usuwanie-projektow/){.external}
-
-Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>
