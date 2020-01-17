@@ -39,10 +39,10 @@ La fattura è il documento generato in seguito al pagamento di un ordine o al ri
 
 Più in basso vengono visualizzati i dettagli dei servizi fatturati:
 
-- <b>Abbonamento</b>\: descrizione del servizio e del periodo fatturato
-- <b>Dominio</b>\: riferimento del servizio fatturato
-- <b>Quantità</b>\: numero di unità del servizio fatturato 
-- <b>Prezzo unitario</b> e <b>Prezzo IVA esclusa</b>\: tariffa del servizio fatturato
+- <b>Abbonamento</b>: descrizione del servizio e del periodo fatturato
+- <b>Dominio</b>: riferimento del servizio fatturato
+- <b>Quantità</b>: numero di unità del servizio fatturato 
+- <b>Prezzo unitario</b> e <b>Prezzo IVA esclusa</b>: tariffa del servizio fatturato
 
 L’importo totale e comprensivo di IVA è indicato alla fine della tabella, in corrispondenza della voce <b>Totale IVA inclusa</b>.
 
@@ -79,9 +79,9 @@ Se la fattura non è associata a un rinnovo automatico, nelle colonne relative a
 
 ![Azioni sulle fatture](images/actions_choices.png){.thumbnail}
 
-- `Visualizza in HTML`{.action}\: il documento si aprirà in una nuova scheda del browser
-- `Visualizza in PDF`{.action}\: il documento verrà generato in formato PDF e il file sarà disponibili al download
-- `Visualizza i dettagli di questa fattura`{.action}\: questa opzione consente di visualizzare lo storico delle operazioni effettuate sulla fattura
+- `Visualizza in HTML`{.action}: il documento si aprirà in una nuova scheda del browser
+- `Visualizza in PDF`{.action}: il documento verrà generato in formato PDF e il file sarà disponibili al download
+- `Visualizza i dettagli di questa fattura`{.action}: questa opzione consente di visualizzare lo storico delle operazioni effettuate sulla fattura
 
 
 Per semplificare la lettura della tabella, in alto a destra sono disponibili alcuni filtri:
