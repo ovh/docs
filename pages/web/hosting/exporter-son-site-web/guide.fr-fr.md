@@ -1,6 +1,6 @@
 ---
 title: 'Exporter son site web'
-slug: Exporter-son-site-web
+slug: exporter-son-site-web
 excerpt: 'Découvrez comment exporter votre site web OVHcloud'
 section: 'Premiers pas'
 order: 2
