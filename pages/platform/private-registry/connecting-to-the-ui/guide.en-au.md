@@ -1,7 +1,7 @@
 ---
 title: 'OVHcloud Private Registry - Connecting to the UI'
 excerpt: ''
-slug: connecting-to-the-UI
+slug: connecting-to-the-ui
 section: 'Getting started'
 ---
 

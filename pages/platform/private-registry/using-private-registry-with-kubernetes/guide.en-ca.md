@@ -1,7 +1,7 @@
 ---
-title: 'OVHcloud Managed Private Registry - Creating and using a private image'
+title: 'Using OVHcloud Managed Private Registry with OVHcloud Managed Kubernetes'
 excerpt: ''
-slug: creating-and-using-a-private-image
+slug: using-private-registry-with-kubernetes
 section: 'Tutorials'
 ---
 
