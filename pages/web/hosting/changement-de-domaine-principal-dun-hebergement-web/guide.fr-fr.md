@@ -6,7 +6,7 @@ section: 'Configuration de l''hébergement'
 order: 4
 ---
 
-**Dernière mise à jour le 17/01/2019**
+**Dernière mise à jour le 17/01/2020**
 
 ## Objectif
 
