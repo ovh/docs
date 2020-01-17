@@ -1,7 +1,7 @@
 ---
-title: OpenShift Origin deployment on OVH Private Cloud - Mono-server
+title: 'OpenShift Origin deployment on OVH Private Cloud - Mono-server'
 slug: openshift-private-cloud-mono-server
-excerpt: Automate a mono-server installation of your Openshift Origin instance
+excerpt: 'Automate a mono-server installation of your Openshift Origin instance'
 section: OpenShift
 order: 20
 ---
@@ -27,7 +27,7 @@ This first guide will go throught:
 
 From your terminal, install `ansible` and `govc`.
 
-If you use `python-2`, make sure to use `ansible-2.7` or above due to issue [#42237](https://github.com/ansible/ansible/pull/42237) otherwise, switch to `python-3` and `ansible-2.6.4`
+If you use `python-2`, make sure to use `ansible-2.7` or above due to issue [#42237](https://github.com/ansible/ansible/pull/42237) otherwise, switch to `python-3` and `ansible-2.6.18`
 
 All variables are set in a `vars.yml` file that needs to be edited before running the playbooks
 
