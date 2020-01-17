@@ -43,9 +43,11 @@ Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotoman
 - **Étape 1 sur 3**: sélectionnez le nouveau nom de domaine que vous souhaitez attribuer à l'hébergement web.
 
 ![Domaine-Principal](images/change-primary-domain-step2-2.png){.thumbnail}
+
 - **Étape 2 sur 3**: précisez si vous ne souhaitez pas conserver les adresses e-mail associées au nom de domaine actuel (*image 1 ci-dessous*) ou les conserver en commandant un MX Plan (*image 2 ci-dessous*). En effet, l'offre e-mail associée à votre hébergement sera réattribuée au nouveau nom de domaine.
 
 ![Domaine-Principal](images/change-primary-domain-step2-3.png){.thumbnail}
+
 - **Étape 3 sur 3**: vérifiez les informations du bon de commande puis cliquez sur le bouton `Valider`{.action}.
 
 Le changement de domaine principal sera effectif une fois le paiement validé.
