@@ -1,8 +1,8 @@
 ---
-title: 'Changement de domaine principal d’un hébergement web'
+title: 'Changer le domaine principal d’un hébergement web'
 slug: changer-domaine-principal
 excerpt: 'Découvrez comment modifier le domaine principal de votre hébergement web'
-section: 'Configuration de l’hébergement'
+section: 'Configuration de l''hébergement'
 order: 4
 ---
 
@@ -56,6 +56,6 @@ Le changement de domaine principal sera effectif une fois le paiement validé.
 
 ## Aller plus loin
 
-[La réécriture d'URLgrace au mod_rewrite](../htaccess-reecriture-url-mod-rewrite/){.external}.
+[La réécriture d'URL grâce au mod_rewrite](../htaccess-reecriture-url-mod-rewrite/){.external}.
 
 Échangez avec notre communauté d’utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/){.external}.
