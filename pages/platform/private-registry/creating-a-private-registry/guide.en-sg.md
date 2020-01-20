@@ -1,5 +1,5 @@
 ---
-title: 'reating a private registry'
+title: 'Creating a private registry'
 excerpt: ''
 slug: creating-a-private-registry
 section: 'Getting started'
