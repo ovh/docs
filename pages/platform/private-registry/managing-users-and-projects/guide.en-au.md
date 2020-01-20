@@ -1,11 +1,11 @@
 ---
-title: 'OVHcloud Private Registry - Managing users and projects'
+title: 'Managing users and projects'
 excerpt: ''
 slug: managing-users-and-projects
 section: 'Getting started'
 ---
 
-**Last updated 17<sup>th</sup> January, 2020.**
+**Last updated 20<sup>th</sup> January, 2020.**
 
 <style>
  pre {
@@ -28,8 +28,6 @@ section: 'Getting started'
      font-size: 0.75em;
  }
 </style>
-
-# OVHcloud Private Registry - Managing users and projects
 
 
 ## Objective
