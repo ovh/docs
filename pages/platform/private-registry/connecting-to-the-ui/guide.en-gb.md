@@ -1,11 +1,11 @@
 ---
-title: 'OVHcloud Private Registry - Connecting to the UI'
+title: 'Connecting to the UI'
 excerpt: ''
 slug: connecting-to-the-ui
 section: 'Getting started'
 ---
 
-**Last updated 17<sup>th</sup> January, 2020.**
+**Last updated 20<sup>th</sup> January, 2020.**
 
 <style>
  pre {
@@ -28,9 +28,6 @@ section: 'Getting started'
      font-size: 0.75em;
  }
 </style>
-
-# OVHcloud Private Registry - Connecting to the UI
-
 
 
 ## Objective

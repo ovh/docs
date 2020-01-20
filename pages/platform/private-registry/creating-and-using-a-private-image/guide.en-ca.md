@@ -1,11 +1,11 @@
 ---
-title: 'OVHcloud Managed Private Registry - Creating and using a private image'
+title: 'Creating and using a private image'
 excerpt: ''
 slug: creating-and-using-a-private-image
 section: 'Tutorials'
 ---
 
-**Last updated 17<sup>th</sup> January, 2020.**
+**Last updated 20<sup>th</sup> January, 2020.**
 
 <style>
  pre {
@@ -28,9 +28,6 @@ section: 'Tutorials'
      font-size: 0.75em;
  }
 </style>
-
-# OVHcloud Managed Private Registry - Creating and using a private image
-
 
 
 ## Objective

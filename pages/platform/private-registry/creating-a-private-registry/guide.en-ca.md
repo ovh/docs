@@ -1,11 +1,11 @@
 ---
-title: 'OVHcloud Managed Private Registry - Creating a private registry'
+title: 'reating a private registry'
 excerpt: ''
 slug: creating-a-private-registry
 section: 'Getting started'
 ---
 
-**Last updated 17<sup>th</sup> January, 2020.**
+**Last updated 20<sup>th</sup> January, 2020.**
 
 <style>
  pre {
@@ -28,8 +28,6 @@ section: 'Getting started'
      font-size: 0.75em;
  }
 </style>
-
-# OVHcloud Managed Private Registry - Creating a private registry
 
 
 A Docker Registry is a system that lets you store and distribute your Docker images. The best known Registry is the official [Docker Hub](https://hub.docker.com/){.external}, where you can find official public images such as [Alpine](https://hub.docker.com/_/alpine){.external}, [Golang](https://hub.docker.com/_/golang){.external} or [Debian](https://hub.docker.com/_/debian){.external}.
