@@ -1,11 +1,11 @@
 ---
-title: 'Using OVHcloud Managed Private Registry with OVHcloud Managed Kubernetes'
+title: 'Using Private Registry with OVHcloud Managed Kubernetes'
 excerpt: ''
 slug: using-private-registry-with-kubernetes
 section: 'Tutorials'
 ---
 
-**Last updated 17<sup>th</sup> January, 2020.**
+**Last updated 20<sup>th</sup> January, 2020.**
 
 <style>
  pre {
@@ -29,7 +29,6 @@ section: 'Tutorials'
  }
 </style>
 
-# Using OVHcloud Managed Private Registry with OVHcloud Managed Kubernetes
 
 In this tutorial we are going to guide you in using images from OVHcloud Managed Private Registry service on OVHcloud Managed Kubernetes clusters.
 
