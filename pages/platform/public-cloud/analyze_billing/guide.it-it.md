@@ -1,6 +1,6 @@
 ---
-title: 'Analizza i tuoi consumi e gestisci la tua fatturazione'
-excerpt: 'Analizza i tuoi consumi e gestisci la tua fatturazione'
+title: 'Sistema di fatturazione dei servizi Cloud'
+excerpt: 'Come funziona il sistema di fatturazione dei servizi Public Cloud'
 slug: analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione
 section: 'Informazioni generali'
 legacy_guide_number: g2031
@@ -109,9 +109,7 @@ Ogni modello di istanza è disponibile con 2 tipi di fatturazione: oraria o mens
 
 
 ### Fatturazione oraria
-Questa soluzione segue la formula "Pay as you go" già descritta,
-
-che prevede il pagamento delle ore effettivamente consumate il 1° del mese successivo a quello di utilizzo.
+Questa soluzione segue la formula "Pay as you go" già descritta, che prevede il pagamento delle ore effettivamente consumate il 1° del mese successivo a quello di utilizzo.
 
 
 ### Fatturazione mensile
@@ -197,4 +195,4 @@ Lo storage di archivi prevede la fatturazione di tre elementi:
 > 
 
 ## Per saperne di più
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>
+Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
