@@ -1,8 +1,9 @@
 ---
-title: 'Sistema di fatturazione dei servizi Cloud'
-slug: "sistema-fatturazione-servizi-cloud"
+title: Analizza i tuoi consumi e gestisci la tua fatturazione
+excerpt: Analizza i tuoi consumi e gestisci la tua fatturazione
+slug: analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione
 section: 'Informazioni generali'
-excerpt: 'Come funziona il sistema di fatturazione dei servizi Public Cloud'
+legacy_guide_number: g2031
 ---
 
 **Ultimo aggiornamento: 6/01/2020**
