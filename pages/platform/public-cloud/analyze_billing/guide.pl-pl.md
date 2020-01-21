@@ -1,8 +1,8 @@
 ---
-title: Rozliczanie należności za usługę Public Cloud
+title: 'Rozliczanie należności za usługę Public Cloud'
 slug: analizowanie_platnosci_i_zarzadzanie_nimi
-excerpt: Zasady i modele naliczania opłat
-section: Pierwsze kroki
+excerpt: 'Zasady i modele naliczania opłat'
+section: 'Pierwsze kroki'
 order: 5
 ---
 
@@ -122,7 +122,7 @@ W przypadku zamówienia instancji z rozliczeniem miesięcznym generowana jest pi
 
 
 
-> \[!alert]
+> [!alert]
 >
 > Fakturowanie instancji zostaje wyłączone po jej ostatecznym usunięciu.
 >  Statusy „zatrzymana”, „pauza” lub podobne powodują dalsze naliczanie opłat, do momentu, kiedy instancja zostanie usunięta.
@@ -173,7 +173,7 @@ W przypadku Object Storage fakturowane są dwa elementy:
 
 
 
-> \[!alert]
+> [!alert]
 >
 > Przeglądanie obiektów w Panelu klienta OVHcloud jest traktowane tak samo, jak ruch wychodzący.
 > 
