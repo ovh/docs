@@ -6,7 +6,7 @@ section: Tutorials
 ---
 
 
-**Last updated 1<sup>st</sup> July, 2019.**
+**Last updated 21<sup>st</sup> January, 2020.**
 
 <style>
  pre {
@@ -60,10 +60,10 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-b
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta4/aio/deploy/recommended.yaml
 ```
 
-### For Kubernetes 1.16, choose version [v2.0.0-beta6](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-beta6)
+### For Kubernetes 1.16, choose version [v2.0.0-rc2](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-rc2)
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta6/aio/deploy/recommended.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc2/aio/deploy/recommended.yaml
 ```
 
 It should display something like this:
