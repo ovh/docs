@@ -1,8 +1,9 @@
 ---
-title: 'Rozliczanie należności za usługę Public Cloud'
-slug: "rozliczanie-naleznosci-za-usługe-public-cloud"
-section: 'Informacje ogólne'
-excerpt: 'Dowiedz się, na czym polega rozliczanie należności za usługę Public Cloud'
+title: Rozliczanie należności za usługę Public Cloud
+slug: analizowanie_platnosci_i_zarzadzanie_nimi
+excerpt: Zasady i modele naliczania opłat
+section: Pierwsze kroki
+order: 5
 ---
 
 **Ostatnia aktualizacja z dnia 2020-01-16**
