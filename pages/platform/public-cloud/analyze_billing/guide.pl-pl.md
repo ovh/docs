@@ -1,118 +1,198 @@
 ---
-title: Rozliczanie należności za usługę Public Cloud
-slug: analizowanie_platnosci_i_zarzadzanie_nimi
-excerpt: Zasady i modele naliczania opłat
-section: Pierwsze kroki
-order: 5
-hidden: true
+title: 'Rozliczanie należności za usługę Public Cloud'
+slug: "rozliczanie-naleznosci-za-usługe-public-cloud"
+section: 'Informacje ogólne'
+excerpt: 'Dowiedz się, na czym polega rozliczanie należności za usługę Public Cloud'
 ---
 
-**Ostatnia aktualizacja dnia 2018-03-19**
+**Ostatnia aktualizacja z dnia 2020-01-16**
 
-## Wprowadzenie
+## Wstęp
+Jeden z modeli rozliczania usług w chmurze to **Pay as you go**, czyli płatność za zużycie zasobów.
 
-Usługa Public Cloud jest dostępna w modelu płatności za wykorzystane zasoby (Pay as you Go). Dzięki temu pozwala na większą elastyczność i skalowanie według potrzeb bez nadmiernych kosztów. Możesz dodawać i usuwać zasoby (instancje, przestrzeń dyskowa, opcje…). Podliczenie wykorzystania zasobów jest wykonywane na koniec każdego miesiąca kalendarzowego.
+Tradycyjna metoda rozliczenia zasobów opiera się zazwyczaj na zobowiązaniu umownym zawartym między stronami na z góry określony czas  (zazwyczaj 12 miesięcy). Tymczasem chmura obliczeniowa oferuje bardziej elastyczne rozwiązanie - **płacisz pod koniec miesiąca za czas, w którym zasoby zostały wykorzystane**.
 
-Każdy projekt rozliczany jest jako zupełnie odrębna infrastruktura, dlatego też nie ma obecnie możliwości przenoszenia środków finansowych jak również składników projektu (instancje, dyski itp.) między projektami.
+Przypomina to model rozliczenia stosowany przez niektórych operatorów telefonii, którzy wystawiają faktury za wykorzystane minuty pod koniec miesiąca. OVHcloud wystawia faktury za godziny wykorzystania serwera, przestrzeni dyskowej lub innego elementu usługi.  
 
-Dostępne metody płatności oraz numery kont bankowych są różne w zależności od kraju, w którym zostało utworzone konto klienta.
-
-**Ten przewodnik przedstawia cały cykl korzystania z usługi od strony finansowej dla pojedynczego Projektu Public Cloud i dotyczy tylko klientów zarejestrowanych w Polsce.**
-
-Aby zamówić produkty Public Cloud, w pierwszej kolejności należy uruchomić Projekt. Ceny produktów oraz modele naliczania opłat (godzinowy lub miesięczny) są charakterystyczne dla każdego z nich i widoczne podczas tworzenia zamówienia. Cenniki usług Public Cloud są dostępne na stronach internetowych: [instancje Public Cloud](https://www.ovh.pl/public-cloud/instances/cennik/){.external}, [Public Cloud Storage](https://www.ovh.pl/public-cloud/storage/object-storage/){.external}, [Public Cloud Archive](https://www.ovh.pl/public-cloud/storage/cloud-archive/){.extrenal}.
+Ten przewodnik opisuje metody rozliczania należności za usługę Public Cloud.
 
 
-## Wymagania początkowe
+## Ogólna zasada
+Celem jest zapewnienie rozliczenia jak najlepiej dopasowanego do sposobu wykorzystania usługi przez klienta. Dlatego niezbędne jest rozliczenie z zastosowaniem odpowiednich jednostek zużycia usługi. Najczęstszą jednostką będzie czas wyrażony w godzinach.
 
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Utworzony projekt Public Cloud - omawiane opcje i funkcjonalności są widoczne po zalogowaniu do Panelu klienta i uruchomieniu Projektu
+W przypadku każdego zasobu, który podlega fakturowaniu odliczanie godzin rozpoczyna się w momencie utworzenia zasobu i kończy się w momencie jego usunięcia, z zachowaniem zasady: "każda rozpoczęta godzina jest płatna jako pełna godzina".
 
+Pod koniec miesiąca liczba godzin mnożona jest przez stawkę godzinową należną za dany zasób. Aby otrzymać całkowitą kwotę należności, należy zsumować wszystkie naliczone wcześniej kwoty cząstkowe.
 
-## W praktyce
-
-Poniżej przedstawiony jest przykładowy cykl życia projektu Public Cloud - krok po kroku od uruchomienia projektu i zasobów do końca pierwszego okresu rozliczeniowego. 
-W Panelu klienta jest także dostępna funkcja prognozowania kolejnego rachunku.
+Każdy projekt w chmurze jest fakturowany oddzielnie. Faktura obejmuje należności za wszystkie zasoby wykorzystane w ciągu miesiąca i jest wystawiana pierwszego dnia następnego miesiąca.
 
 
-### Cykl życia projektu
+## Przykład
+Poniższy przykład pozwoli lepiej zrozumieć, jak to działa.
 
-#### Etap 1. utworzenie projektu
+- użytkownik uruchamia instancję B2-15 czwartego dnia danego miesiąca o godz. 9:40
+- ósmego dnia miesiąca o godz. 10:00 dodaje 250 GB  dodatkowej przestrzeni dyskowej (Classic Volume) 
+- usuwa wszystkie zasoby dwunastego dnia tego samego miesiąca o 16:30 po zakończeniu zadań, do których tych zasobów potrzebował
 
-Aby [uruchomić projekt Public Cloud](https://docs.ovh.com/pl/public-cloud/tworzenie-usuwanie-projektow/){.external} należy aktywować konto przedpłacone, dokonując płatności za pierwsze zamówienie (utworzone podczas zakładania projektu). Otwarcie projektu następuje po zaksięgowaniu wpłaty. Inną opcją aktywacji jest [skorzystanie z vouchera](https://docs.ovh.com/pl/public-cloud/korzystanie-z-vouchera/){.external}, który można otrzymać podczas wydarzeń OVH lub akcji promocyjnych. Od tej chwili będziesz miał możliwość uruchamiania składników usługi.
+W przypadku instancji działającej od czwartego dnia miesiąca od 9:40 do 12 dnia tego samego miesiąca do 16:30 otrzymujemy 176 rozpoczętych godzin. Podlegają one opłacie 0,111 EUR za godzinę. 
 
-Cała suma z pierwszej wpłaty jest przeznaczona na zakup produktów usługi Public Cloud, aż do jej wyczerpania. Wysokość wpłaty może się zmieniać, np. w zależności od aktualnych promocji lub ich braku.
+W przypadku przestrzeni dyskowej, od ósmego dnia miesiące od godz. 10:00 do dwunastego dnia tego samego miesiąca do godz. 16:30, otrzymujemy 103 rozpoczęte godziny. Opłata za 1 GB Classic Volume to 0,04 EUR/m-c (0,0000555556 EUR/godz.).
+
+Na koniec miesiąca faktura będzie wyglądała następująco:
+
+- 176 x 0,111
+- 103 x 250 x 0,0000555556
+
+czyli 20,97 EUR.
 
 
-
-#### Etap 2. zamówienie i użytkowanie zasobów Public Cloud
-
-W przypadku instancji istnieją dwa typy rozliczenia - godzinowe i miesięczne z 50% zniżką w stosunku do ceny w trybie godzinowym.
-Usługi (instancje, dyski, usługi archiwizowania danych)  można zamawiać w dowolnym momencie, uruchamiane są natychmiast a rozliczenie regulowane zgodnie z wybranym modelem rozliczenia.
-
-
-
-#### Etap 3. rozliczanie projektu
-
-Fakturowanie:
-- instancja rozliczna godzinowo - rozliczenie "z dołu"- na koniec miesiąca jest wystawiana faktura z podsumowaniem zużycia;
-- instancja rozliczana miesięcznie - rozliczenie "z góry", faktura wystawiana bezpośrednio po uruchomieniu instancji;
-- pozostałe usługi - rozliczenie "z dołu" według wykorzystanych zasobów (ilości przesłanych i składowanych danych).
-
-W przypadku zmiany typu rozliczania usługi, podsumowywane są należności za dotychczasowe wykorzystanie w trybie godzinowym oraz za okres po zmianie rozliczenia na miesięczny - proporcjonalnie w skali miesiąca.
-
-Przykład: instancji b2-120 zamówionej i rozliczanej w trybie godzinowym przez 3 pierwsze dni, zmieniamy rozliczanie na miesięczne - na fakturze zobaczysz dwie pozycje:
-- godzinowe wykorzystanie zasobów dla instancji,
-- miesięczne wykorzystanie zasobów dla instancji.
-
-Termin wystawienia faktury - do 7 dni po zakończeniu miesiąca lub uruchomienia instancji w miesięcznym trybie rozliczania.
-Termin uregulowania wpłaty - do 7 dni kalendarzowych od daty wystawienia faktury.
 
 > [!primary]
-> Uruchamiając usługę w rozliczeniu miesięcznym, wyrażasz zgodę na uregulowanie całej kwoty miesięcznej z góry, niezależnie od ilości dni faktycznie pozostałych do końca miesiąca. 
-> W takim przypadku usługa nie jest rozliczana proporcjonalnie do ilości dni, w których została wykorzystywana.
 >
-
-Ceny usług są wyświetlane podczas ich uruchamiania w Panelu klienta, jak również są dostępne na [stronach internetowych](https://www.ovh.pl/public-cloud/){.external}.
-
-#### Etap 4. zamknięcie projektu
-Projekt możesz usunąć w dowolnej chwili, wszystkie usługi uruchomione w projekcie zostaną zamknięte wraz z nim.
-Jest to proces nieodwracalny.
+> Powyższe ceny zostały podane tytułem przykładu, nie są to ceny obowiązujące.
+> 
+> 
 
 
-### Prognozowanie kosztów
-W Panelu klienta jest dostępna funkcja kalkulacji kolejnego rachunku prezentująca wysokość opłaty, którą wygenerują uruchomione usługi na koniec miesiąca, o ile nie dokupisz / usuniesz żadnej z nich.
-
-Możesz też ustawić powiadomienie, dzięki któremu otrzymasz e-mail, gdy przekroczysz określoną kwotę w szacunkowych obliczeniach faktury.
-Więcej szczegółów znajdziesz w przewodniku: [Analiza wykorzystania zasobów Public Cloud](https://docs.ovh.com/pl/public-cloud/analiza-zasobow-public-cloud){.external}
+## Wyświetlanie faktur
+Aby wyświetlić faktury za dany projekt, przejdź do Panelu klienta OVHcloud > zakładka `Public Cloud`{.action}(1), następnie wybierz odpowiedni projekt z menu po lewej stronie (2), po czym kliknij `Billing Control`{.action} (3), a następnie `Historia`{.action}(4).
 
 
-### Metody płatności
+![public cloud](images/pci-billing-information1.png){.thumbnail}
 
-Polscy klienci mają do wyboru cztery metody płatności:
+Możesz teraz:
 
-- konto przedpłacone Public Cloud (forma konta pre-paid) - możesz zasilić konto dowolną wysokością wpłaty, należności za faktury będą automatycznie pobierane z tych środków;
-- PayU - wykonanie płatności online jest możliwe poprzez kliknięcie na przycisk "Płatność online" w zamówieniu lub kliknięcie w link przesłany w wiadomości e-mail;
-- PayPal - możesz podłączyć konto PayPal w Panelu klienta, skąd pobierane będą płatności za wystawione faktury;
-- przelew tradycyjny - OVH daje możliwość wykonania przelewu bankowego na nasze konto dla wszystkich klientów korzystających z kont bankowych oraz dla tych, którzy płacą za nasze usługi za pośrednictwem poczty.
-
-Pamiętaj, metody płatności i numery kont bankowych mogą być różne w zależności od kraju, w którym zostało utworzone konto klienta.
-
-### Zadłużenie projektu
-
-W przypadku nieuregulowania rachunku w terminie, projekt zostanie zawieszony.
-Jeśli w ciągu kolejnych 7 dni kwota nie zostanie uregulowana, projekt i jego składniki zostaną trwale usunięte, bez możliwości przywrócenia danych, co nie unieważnia długu, który musi zostać spłacony.
+- sprawdzić szczegóły dotyczące zasobów, rozwijając każdą sekcję
+- przeszukiwać historię, cofając się do wcześniejszego miesiąca lub przechodząc do następnego
 
 
+## sprawdzić obecne zużycie
+Obecne zużycie (z bieżącego miesiąca) możesz również sprawdzić, klikając zakładkę `Moje obecne zużycie`{.action}.
+
+
+![public cloud](images/pci-billing-information2.png){.thumbnail}
+
+Pierwsza część **„Zafakturowane”** dotyczy zasobów rozliczanych w trybie miesięcznym (w szczególności patrz poniżej instancje fakturowane w modelu miesięcznym). Zasoby te są wyjątkiem od zasady „Pay as you go”. Umowa terminowa obejmuje rozliczenie za jeden miesiąc, a należność za wykorzystanie zasobów w ciągu najbliższych 30 dni płatna jest z góry, czyli pierwszego dnia danego miesiąca. Celem jest uzyskanie korzyści handlowej. Na ekranie ukazującym bieżące zużycie zasoby zostały już opłacone pierwszego dnia bieżącego miesiąca.
+
+Druga część **„Do zafakturowania”** dotyczy wszystkich zasobów „Pay as you go”. W części tej sprawdzisz wykorzystanie zasobów od początku miesiąca do bieżącego dnia.
+
+Otrzymasz również `Prognozę kwoty Twojej następnej faktury`{.action} (pierwszego dnia następnego miesiąca) przygotowaną na podstawie wcześniejszego zużycia. 
+
+
+
+> [!primary]
+>
+> Informacje te podane są jako przykład, ponieważ sytuacja może się zmienić w każdym momencie w zależności od podjętych przez Ciebie działań (dodanie lub usunięcie zasobów).
+> 
+> 
+> 
+
+
+![public cloud](images/pci-billing-information3.png){.thumbnail}
+
+Jeśli chcesz otrzymywać powiadomienia, kiedy prognozowany poziom zużycia zasobów zostanie przekroczony, możesz zaznaczyć to w tym oknie. Kiedy prognozowany poziom zużycia zasobów zostanie przekroczony, otrzymasz e-mail z powiadomieniem.
+
+
+## Instancje
+Ceny instancji cloud (lub serwerów cloud) możesz sprawdzić w interfejsie OVHcloud przed wdrożeniem instancji. Możesz sprawdzić je również dodatkowo na [stronie z cennikiem](https://www.ovh.com/fr/public-cloud/instances/tarifs/){.external}.
+
+
+
+> [!primary]
+>
+> Przepustowość instancji nie jest fakturowana.
+> 
+
+Każdy model instancji jest dostępny w dwóch trybach rozliczenia: godzinowym lub miesięcznym.
+
+
+### Rozliczenie godzinowe
+Rozliczenie godzinowe odpowiada opisanemu wyżej modelowi „Pay as you go”.
+
+Płatności za instancje objęte takim rozliczeniem realizowane są pierwszego dnia następnego miesiąca za godziny zużyte w bieżącym miesiącu.
+
+
+### Rozliczenie miesięczne
+Zaletą rozliczenia miesięcznego jest cena niższa o około 50% w porównaniu do stawki godzinowej, co stanowi wyjątek od typowego rozliczenia usług w chmurze.
+
+Płatność za instancje realizowana jest pierwszego dnia każdego miesiąca za dzierżawę do pierwszego dnia kolejnego miesiąca. Instancje są zatem opłacane z góry za cały miesiąc, nawet jeśli któraś instancja zostanie usunięta przed zakończeniem miesiąca.
+
+W przypadku zamówienia instancji z rozliczeniem miesięcznym generowana jest pierwsza faktura opiewająca na kwotę odpowiadającą liczbie dni od złożenia zamówienia do końca miesiąca.
+
+
+
+> \[!alert]
+>
+> Fakturowanie instancji zostaje wyłączone po jej ostatecznym usunięciu.
+>  Statusy „zatrzymana”, „pauza” lub podobne powodują dalsze naliczanie opłat, do momentu, kiedy instancja zostanie usunięta.
+> 
+> W przypadku obydwu modeli rozliczenia, zostaje zafakturowana rozpoczęta jednostka czasu.
+> 
+
+
+## Przestrzeń dyskowa
+Przestrzeń dyskowa jest zazwyczaj rozliczana za liczbę wykorzystanych GB miesięcznie. Aby obliczyć cenę za GB za godzinę, należy cenę za liczbę GB wykorzystanych w danym miesiącu podzielić przez 720, czyli przez średnią liczbą godzin w miesiącu. Wynik tej kalkulacji pokazuje, ile kosztuje godzina przechowywania danego elementu.
+
+Obliczenie wygląda następująco: (Cena za liczbę GB w danym miesiącu / 720 ) x liczba godzin x liczba GB
+
+Liczba GB za godzinę odpowiada maksymalnej liczbie GB przechowywanych w czasie jednej godziny. Na przykład, jeśli o 16:20 przechowywałeś 15 GB, o 16:40 - 17 GB, a o 16:50 - 14 GB, OVHcloud przyjmie na potrzeby kalkulacji 17 GB za przedział czasowy 16:00-17:00.
+
+Ceny za przechowywanie danych podane są na [stronie OVHcloud](https://www.ovh.com/fr/public-cloud/storage/){.external}.
+
+
+### Dodatkowe dyski
+Dodatkowe dyski rozliczane są za każdy zaksięgowany GB z uwzględnieniem różnych stawek w zależności od gamy.
+
+
+### Dodatkowe dyski
+Dodatkowe dyski są fakturowane w taki sam sposób jak dyski standardowe.
+
+
+### Snapshoty dodatkowych dysków
+Snapshoty dodatkowych dysków są fakturowane w taki sam sposób jak dyski standardowe.
+
+
+### Snapshoty i obrazy instancji
+Snapshoty instancji, podobnie jak obrazy (spoza katalogu obrazów dostarczanych przez OVHcloud) są rozliczane według stałego cennika za liczbę GB wykorzystanych w miesiącu, niezależnie od oryginalnej instancji czy typu obrazu. Przejdź do [strony z cennikiem](https://www.ovh.com/fr/public-cloud/instances/tarifs/){.external}.
+
+
+### Object Storage
+W przypadku Object Storage fakturowane są dwa elementy:
+
+- przechowywanie obiektów, czyli faktycznie wykorzystana przestrzeń w GB
+- ruch wychodzący, czyli ilość danych wychodzących w ramach usługi zawarta w ciele zapytań (body HTTP)
+
+
+
+> [!primary]
+>
+> Ruch wychodzący między usługą Object Storage a instancjami jest fakturowany w taki sam sposób, jak gdyby miejscem docelowym był Internet.
+> 
+> 
+
+
+
+> \[!alert]
+>
+> Przeglądanie obiektów w Panelu klienta OVHcloud jest traktowane tak samo, jak ruch wychodzący.
+> 
+> 
+
+
+### Archiwa
+W przypadku Cloud Archive fakturowane są trzy elementy:
+
+- przechowywanie archiwów, czyli faktycznie wykorzystana przestrzeń w GB
+- ruch przychodzący, czyli ilość danych przychodzących w ramach usługi zawarta w ciele zapytań (body HTTP)
+- ruch wychodzący, czyli ilość danych wychodzących w ramach usługi zawarta w ciele zapytań (body HTTP)
+
+
+
+> [!primary]
+>
+> Ruch wychodzący między usługą Cloud Archive a instancjami fakturowany jest w takich sam sposób, jak gdyby miejscem docelowym był Internet.
+> 
+> 
 
 ## Sprawdź również
-
-[Tworzenie i usuwanie projektów Public Cloud](https://docs.ovh.com/pl/public-cloud/tworzenie-usuwanie-projektow/){.external}
-
-[Tworzenie i usuwanie instancji w Panelu klienta](https://docs.ovh.com/pl/public-cloud/tworzenie_instancji_w_panelu_klienta_ovh/){.external}
-
-[Zmiana typu rozliczenia z godzinowego na miesięczne dla instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/zmiana-typu-rozliczenia/){.external}
-
-[Korzystanie z vouchera](https://docs.ovh.com/pl/public-cloud/korzystanie-z-vouchera/){.external}
-
-
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com>https://community.ovh.com</https://community.ovh.com>{.external}
