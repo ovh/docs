@@ -1,6 +1,6 @@
 ---
-title: Analizza i tuoi consumi e gestisci la tua fatturazione
-excerpt: Analizza i tuoi consumi e gestisci la tua fatturazione
+title: 'Analizza i tuoi consumi e gestisci la tua fatturazione'
+excerpt: 'Analizza i tuoi consumi e gestisci la tua fatturazione'
 slug: analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione
 section: 'Informazioni generali'
 legacy_guide_number: g2031
@@ -123,7 +123,7 @@ L’attivazione di un’istanza con fatturazione mensile comporta la generazione
 
 
 
-> \[!alert]
+> [!alert]
 >
 > La fatturazione di un’istanza si interrompe esclusivamente con l’eliminazione
 > definitiva della macchina. Gli stati di sospensione, pausa o altro non comportano quindi
@@ -174,7 +174,7 @@ L’Object Storage prevede la fatturazione di due elementi:
 
 
 
-> \[!alert]
+> [!alert]
 >
 > Ti ricordiamo che la consultazione degli oggetti dallo Spazio Cliente OVHcloud è considerata
 > traffico in uscita.
