@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment ajouter des IP fail-over à votre configuration'
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 06/06/2019**
+**Dernière mise à jour le 20/01/2020**
 
 ## Objectif
 
@@ -23,6 +23,11 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 
 
 ## En pratique
+
+> [!primary]
+> Les configurations visibles dans ce guide sont fournies à titre d’exemples. Des adaptations peuvent être nécessaires suivant le système d’exploitation que vous utilisez sur votre serveur dédié. 
+>
+
 
 Voici les configurations pour les distributions et les systèmes d’exploitation principaux.
 
