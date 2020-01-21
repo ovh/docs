@@ -1,74 +1,65 @@
 ---
-title: 'Changer le proprietaire d’un nom de domaine'
-legacy_guide_number: 1350
+title: 'Changer le propriétaire d’un nom de domaine'
 slug: changement-proprietaire-domaine
-excerpt: 'Vous trouverez dans ce guide differentes informations concernant le changement de proprietaire d’un nom de domaine.'
+legacy_guide_number: 1350
+excerpt: 'Vous trouverez dans ce guide différentes informations concernant le changement de propriétaire d’un nom de domaine.'
 section: 'Changement de propriétaire'
 ---
 
+**Dernière mise à jour le 20/01/2020**
+
+## Objectif
+
+En dehors de la [gestion des contacts](https://docs.ovh.com/fr/customer/gestion-des-contacts/), l’enregistrement d’un nom de domaine nécessite de renseigner les informations relatives au propriétaire de celui-ci. Ce guide vous détaille comment effectuer cette procédure.
+
+**Découvrez comment changer le propriétaire d'un nom de domaine**
+
 ## Prérequis
 
-- Disposer d'un nom de domaine enregistré chez OVH.
-- Être l'administrateur du nom de domaine concerné.
-- Disposer de l'accord du propriétaire du nom de domaine concernant le changement de propriétaire.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/manager/web){.external}
+- Disposer d'un nom de domaine enregistré chez OVHcloud.
+- Être le [contact administrateur](https://docs.ovh.com/fr/customer/gestion-des-contacts/) du nom de domaine concerné.
+- Disposer de l'accord du propriétaire actuel du nom de domaine pour effectuer le changement de propriétaire.
 
-## Procedure de changement de proprietaire
+## En pratique
 
-### Connexion a l'espace client
-- Connectez-vous dans [l'espace
-client](https://www.ovh.com/manager/web){.external} à l'aide de votre identifiant (nic-handle) et de mot de passe.
-- Cliquez sur `Connexion`{.action} pour valider l'opération.
-
-
-![hosting](images/SS_1.PNG){.thumbnail}
-
-
-### Selection du domaine
-- Une fois connecté, sélectionnez dans la rubrique "domaines" le nom de domaine générique (gTLD) pour lequel vous souhaitez modifier le propriétaire. pour lequel vous souhaitez modifier le propriétaire.
+### Sélection du domaine
+Sélectionnez dans la rubrique `Domaines`{.action} le nom de domaine générique (gTLD) pour lequel vous souhaitez modifier le propriétaire.
 
 
 ![hosting](images/SS_2.PNG){.thumbnail}
 
 
-### Changer le proprietaire
-- Après avoir sélectionné votre domaine, dans la partie "Abonnement", cliquez sur le bouton "..." à côté des contacts, puis sur `Changer le propriétaire`{.action}.
+### Changement du propriétaire
+Dans l'onglet `Informations générales`{.action}, dans le cadre **Abonnement**, cliquez sur le bouton `...`{.action} à côté des contacts puis sur `Changer le propriétaire`{.action}.
 
 
 ![hosting](images/3652-2.png){.thumbnail}
 
 
-La plupart des domaines sont compatibles avec le changement de propriétaire par bon de commande.
-
-Si vous tentez de modifier le propriétaire d'une de ces extensions, vous serez automatiquement redirigé sur une page de commande.
-
-
-
 > [!warning]
 >
-> Toute modification du nom, prénom, organisation, forme juridique ou adresse e-mail sera
+> Toute modification des nom, prénom, organisation, forme juridique ou adresse e-mail sera
 > considérée comme un changement de propriétaire.
 > 
 
-- Un message d'informations s'affiche ensuite.
-- Cliquez sur le bouton `Continuer`{.action}.
+Un message d'information s'affiche ensuite, cliquez sur le bouton `Continuer`{.action}.
 
 Une fois la commande validée, deux e-mails seront envoyés afin de valider ou de refuser cette modification :
 
 - Un sur l'adresse e-mail renseignée pour le propriétaire actuel
 - Un sur l'adresse e-mail renseignée pour le futur propriétaire
 
-Une fois les deux e-mails validés, votre changement de propriétaire sera terminé.
+Une fois les deux e-mails validés, votre changement de propriétaire sera effectif.
 
 
 
 > [!primary]
 >
-> - 
-> un délai de 60 jours maximum est autorisé pour valider ces deux e-mails
-> - 
-> Vous avez un délai de 60 jours pour valider ces deux e-mails
-> - 
-> Si un refus est constaté, votre commande sera annulée
+> 
+> Un délai de 60 jours maximum est autorisé pour valider ces deux e-mails.
+> 
+> Si la modification est refusée par l'une des parties, la commande sera annulée.
 > 
 > 
 
@@ -77,6 +68,12 @@ Une fois les deux e-mails validés, votre changement de propriétaire sera termi
 > [!warning]
 >
 > En cas de modification du propriétaire, le nom de domaine sera
-> verrouillé dans le cadre d'un transfert sortant pour une période de 60 jours.
+> verrouillé et ne pourra donc pas faire l'objet d'un transfert sortant pendant une période de 60 jours.
 > 
+
+## Aller plus loin
+
+[« Gérer les contacts de ses services »](https://docs.ovh.com/fr/customer/gestion-des-contacts/)
+
+Échangez avec notre communauté d'utilisateurs sur https://community.ovh.com.
 
