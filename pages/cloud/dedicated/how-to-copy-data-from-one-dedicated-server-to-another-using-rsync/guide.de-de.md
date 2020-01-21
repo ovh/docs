@@ -1,8 +1,8 @@
 ---
 title: 'Daten von einem dedizierten Server auf einen anderen mit rsync kopieren'
-slug: "kopieren-Daten-Server-rsync"
+slug: kopieren-daten-server-rsync
 excerpt: 'Kopieren Sie mit rsync ganz einfach die Daten von Ihrem dedizierten Server auf einen anderen'
-section: Anleitung
+section: Tutorial
 ---
 
 ## Einleitung
