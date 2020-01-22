@@ -1,6 +1,6 @@
 ---
 title: 'Copiare dati da un server dedicato a un altro con rsync'
-slug: "copiare-dati-server-rsync"
+slug: copiare-dati-server-rsync
 excerpt: 'Come effettuare la copia dei dati tra server utilizzando il software rsync'
 section: Tutorial
 ---
