@@ -1,6 +1,6 @@
 ---
 title: 'Información sobre el tipo de facturación cloud'
-slug: "informacion-sobre-el-tipo-de-facturacion-cloud"
+slug: informacion-sobre-el-tipo-de-facturacion-cloud
 section: 'Información general'
 excerpt: 'Cómo interpretar la facturación de las soluciones Public Cloud'
 ---
@@ -121,7 +121,7 @@ Al contratar una instancia con facturación mensual, se generará una primera fa
 
 
 
-> \[!alert]
+> [!alert]
 >
 > La facturación de una instancia se detiene cuando esta se elimina
 > de forma definitiva. Los estados «detenida», «en pausa» o «interrumpida», entre otros,
@@ -172,7 +172,7 @@ La facturación de la solución Object Storage tiene en cuenta dos elementos:
 
 
 
-> \[!alert]
+> [!alert]
 >
 > La consulta de objetos desde el área de cliente de OVHcloud se considera, asimismo,
 > tráfico saliente.
