@@ -10,9 +10,9 @@ excerpt: 'Cómo interpretar la facturación de las soluciones Public Cloud'
 ## Introducción
 Las soluciones cloud funcionan en base al principio de pago por uso (en inglés, «pay-as-you-go»).
 
-El modo de facturación clásico para el alquiler de recursos informáticos se basa en un contrato con una duración predeterminada (normalmente de 12 meses) y, por lo tanto, conlleva un compromiso por parte de ambas partes durante este período de tiempo. Las soluciones cloud, sin embargo, ofrecen mayor flexibilidad, ya que permiten **pagar al final del mes por el tiempo durante el que se han utilizado los recursos**.
+El modo de facturación clásico para el alquiler de recursos informáticos se basa en un contrato con una duración predeterminada (normalmente de 12 meses) y, por lo tanto, conlleva un compromiso por ambas partes durante este período de tiempo. Las soluciones cloud, sin embargo, ofrecen mayor flexibilidad, ya que permiten **pagar al final del mes por el tiempo durante el que se han utilizado los recursos**.
 
-Este mecanismo es similar al de algunos operadores telefónicos que facturan a final de mes los minutos de comunicación consumidos. En nuestro caso, OVHcloud factura las horas de uso del servidor, del espacio de almacenamiento o de cualquier otro elemento del servicio.
+Este mecanismo es similar al de algunos operadores telefónicos que facturan a final de mes los minutos de comunicación consumidos. En nuestro caso, OVHcloud factura las horas de uso de un servidor, un espacio de almacenamiento o cualquier otro elemento del servicio.
 
 Esta guía analiza los distintos elementos de la facturación de la solución Public Cloud.
 
@@ -94,7 +94,7 @@ La opción `Alerta de consumo bajo demanda`{.action} permite crear una alerta ba
 
 
 ## Instancias
-Es posible consultar el precio de las instancias cloud (o servidores cloud) en el área de cliente de OVHcloud, antes de iniciarlas. También puede consultar el precio directamente en el [sitio web de OVHcloud](https://www.ovhcloud.com/es/public-cloud/prices/){.external}.
+Es posible consultar el precio de las instancias cloud (o servidores cloud) en el área de cliente de OVHcloud, antes de iniciarlas. También puede consultar el precio directamente en el [sitio web de OVHcloud](https://www.ovhcloud.com/es-es/public-cloud/prices/){.external}.
 
 
 
@@ -133,7 +133,7 @@ Al contratar una instancia con facturación mensual, se generará una primera fa
 ## Almacenamiento
 Las soluciones de almacenamiento suelen indicar el precio mensual por GB. Para calcular el precio del GB por hora, solo hay que dividir el precio mensual entre 720 (número medio de horas en un mes). El resultado de esta operación nos permitirá conocer el precio de un elemento almacenado durante una hora.
 
-El cálculo será el siguiente: (precio mensual del GB / 720) x número de horas x número de GB
+El cálculo será el siguiente: (precio mensual del GB / 720) x número de horas x número de GB.
 
 El número de GB por hora corresponde a la cantidad máxima de GB almacenada durante una hora. Por ejemplo, si usted tiene almacenados 15 GB a las 16:20, 17 GB a las 16:40 y 14 GB a las 16:50, OVHcloud facturará 17 GB para el período que va de las 16:00 a las 17:00.
 
