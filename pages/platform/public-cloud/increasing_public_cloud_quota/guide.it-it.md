@@ -18,7 +18,7 @@ Questi limiti non sono fissi: in qualsiasi momento puoi richiedere di aumentare 
 
 ## Prerequisiti
 
-- [Aggiungi un metodo di pagamento ]({legacy}1984){.ref}
+- [Aggiungi un metodo di pagamento ](https://docs.ovh.com/it/public-cloud/aggiungi_una_modalita_di_pagamento/){.ref}
 - Aver raggiunto il numero massimo di progetti utilizzati sul tuo account OVHCloud. 
 
 ## Procedura
