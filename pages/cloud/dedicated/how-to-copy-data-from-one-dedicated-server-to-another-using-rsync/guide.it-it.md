@@ -15,7 +15,7 @@ Distribuito sotto licenza GNU GPL, rsync (da “remote synchronization”) è un
 
 > [!warning]
 >
-Questa guida contiene informazioni relative all’utilizzo di una o più soluzioni OVHcloud con tool esterni in un contesto ben preciso: adatta le indicazioni fornite alla tua situazione e, in caso di difficoltà o dubbi, rivolgiti a un esperto del settore o alla nostra Community di utenti, disponibile all’indirizzo <https://www.ovh.it/community/>. OVH non potrà fornirti assistenza.
+Questa guida contiene informazioni relative all’utilizzo di una o più soluzioni OVHcloud con tool esterni in un contesto ben preciso: adatta le indicazioni fornite alla tua situazione e, in caso di difficoltà o dubbi, rivolgiti a un esperto del settore o alla nostra Community di utenti, disponibile all’indirizzo <https://www.ovh.it/community/>. OVHcloud non potrà fornirti assistenza.
 >
 
 ## Prerequisiti
@@ -39,9 +39,7 @@ Questa guida contiene informazioni relative all’utilizzo di una o più soluzio
 
 ### Step 1: installa rsync
 
-Nel nostro tutorial utilizzeremo un server sorgente con Debian 9.4, che include nativamente rsync nei suoi repository. Il software potrà quindi essere installato direttamente,
-
-accedendo alla macchina sorgente via SSH con l’utente root ed eseguendo il comando:
+Nel nostro tutorial utilizzeremo un server sorgente con Debian 9.4, che include nativamente rsync nei suoi repository. Il software potrà quindi essere installato direttamente, accedendo alla macchina sorgente via SSH con l’utente root ed eseguendo il comando:
 
 ```sh
 apt-get update && apt-get install rsync
@@ -112,5 +110,6 @@ rsync -av -P --stats --human-readable -e 'ssh -p X' --exclude="Folder_Name" --ex
 
 A questo punto, dovresti essere in grado di copiare i dati del tuo server dedicato su un’altra macchina grazie a rsync.
 
-Per saperne di più.
-Contatta la nostra community di utenti all’indirizzo<https://www.ovh.it/community/>.
+## Per saperne di più 
+
+Contatta la nostra community di utenti all’indirizzo <https://www.ovh.it/community/>.
