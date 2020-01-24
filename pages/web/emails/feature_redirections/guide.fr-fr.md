@@ -45,7 +45,7 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new.png){.thumbnail}<br>Repérez la `Référence serveur` dans le cadre « Résumé »|
-|Poursuivre vers « [Version historique de l'offre MX Plan](./#version-historique-de-loffre-mx-plan_2) »|Poursuivre vers « [Nouvelle version de l'offre MX Plan](./#nouvelle-version-de-loffre-mx-plan) »|
+|Poursuivre vers « [Version historique de l'offre MX Plan](./#version-historique-de-loffre-mx-plan) »|Poursuivre vers « [Nouvelle version de l'offre MX Plan](./#nouvelle-version-de-loffre-mx-plan_1) »|
 
 ### Version historique de l'offre MX Plan
 
@@ -108,6 +108,8 @@ Sur cette fenêtre, vous allez définir les règles nécessaires pour créer une
 |Nom |Définissez le nom de votre redirection (cadre 1).|  
 |Lorsque le message arrive et remplit toutes ces conditions| Votre redirection s'appliquant à tous les messages, selectionnez **[Appliquer à tous les messages]** (cadre 2).|
 |Effectuer toutes les opérations suivantes|C'est ici que vous appliquez la redirection, selectionnez **Transférer, rediriger ou envoyer** puis **Rediriger le message vers...** (cadre 3). Tapez ensuite l'adresse vers laquelle vous souhaitez rediriger l'e-mail devant **Rediriger le message vers...** puis cliquez sur `Enregistrer`{.action} (cadre 4)|
+
+
 ![emails](images/mxplan-new-4.png){.thumbnail}
 
 Dans notre exemple, il s'agit d'une **redirection avec copie locale** (voir le [schéma 2](./#generalites){.external} au début de ce guide). Si cela correspond à votre besoin, cliquez sur `OK`{.action} (icône de disquette) en haut à gauche et la règle sera appliquée. Sinon, passez à l'étape ci-dessous.
