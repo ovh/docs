@@ -22,7 +22,9 @@ Une redirection permet de réorienter un e-mail reçu sur une première adresse,
 Par exemple, vous souhaitez qu'à l'envoi d'un e-mail sur **public@mydomain.com**, celui-ci soit renvoyé vers **private@otherdomain.com**. Cela permet de communiquer la première adresse à l'expéditeur ( **public@mydomain.com** ), sans qu'il ne connaisse votre véritable adresse ( **private@otherdomain.com** ).
 
 Il y a deux types de redirections : 
+
 - La redirection simple (schéma 1); l'e-mail est directement renvoyé vers l'adresse de redirection et le destinataire ne reçoit pas l'e-mail. 
+
 - La redirection avec copie locale (schéma 2); l'e-mail est transmis au destinataire ainsi qu'à l'adresse de redirection.
 
 ![emails](images/schema-redirect.png){.thumbnail}
