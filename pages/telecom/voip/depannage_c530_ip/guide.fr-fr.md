@@ -1,10 +1,8 @@
 ---
-title: Dépannage C530 IP
+title: 'Dépannage C530 IP'
 slug: depannage-c530-ip
-section: Gigaset C530IP
+section: 'Gigaset C530IP'
 ---
-
-------------------------------------------------------------------------
 
 **Sommaire :**
 
@@ -22,24 +20,24 @@ Pour générer ce code d'auto-configuration rendez-vous dans votre Espace Client
 -   Cliquez sur "**Assistance**".
 -   Cliquez sur "**Dépannage Plug & Phone**".
 
-![](images/D%C3%A9pannage.jpg){.thumbnail}
+![depannage-c530ip](images/Depannage1.jpg){.thumbnail}
 
 -   Un pop-up apparaît vous demandant l'adresse IP publique de votre connexion Internet. Si votre PC est sur le même réseau que le téléphone, l'IP publique sera donc identique. Celle-ci vous sera donc indiquée par la phrase "***Pour information, l'adresse IP avec laquelle vous vous connectez est :xxx****.xxx.xxx.xxx"*.
 
-![](images/D%C3%A9pannage%202.jpg){.thumbnail}
+![depannage-c530ip](images/Depannage2.jpg){.thumbnail}
 
 -   Une fois l'IP publique saisie cliquez sur le bouton "**Suivant**".
 -   Un code d'auto-configuration est alors généré :
 
-![](images/D%C3%A9pannage%203.png){.thumbnail}
+![depannage-c530ip](images/Depannage3.png){.thumbnail}
 
--   Pour saisir ce code sur votre combiné il faut appuyer sur le bouton central :![](images/C530%20bouton%20central.png){.thumbnail}
+-   Pour saisir ce code sur votre combiné il faut appuyer sur le bouton central :![](images/combine.png){.thumbnail}
 -   Rendez-vous sur le menu "**Réglages**" caractérisé par une roue crantée.
 -   Puis sur "**Téléphonie"**et "**Assistant VoIP"**.
 
-![](images/Assistant%201.png){.thumbnail}
+![depannage-c530ip](images/Depannage4.png){.thumbnail}
 
--   Sélectionnez le compte l'emplacement du compte SIP souhaité, par défaut IP1 ![](images/Assistant%202.png){.thumbnail}
+-   Sélectionnez le compte l'emplacement du compte SIP souhaité, par défaut IP1 ![depannage-c530ip](images/Depannage5.png){.thumbnail}
 
 -   Validez en appuyant sur le bouton correspondant au choix "**Oui**".
 -   Saisissez le code généré dans l'Espace Client puis validez en appuyant sur le bouton correspondant au choix "**OK**".
@@ -52,7 +50,7 @@ Pour générer ce code d'auto-configuration rendez-vous dans votre Espace Client
 
 Si votre combiné affiche ce message c'est qu'il n'arrive pas à dialoguer avec la base.
 
--   Vérifiez dans un premier temps que la base est bien alimentée électriquement et que le bouton central soit allumé en bleu.![](images/Branchement%20base%20%C3%A9lectriquement.png){.thumbnail}![](images/Branchement%20base%20RJ45.png){.thumbnail}![](images/Base%20allum%C3%A9e.png){.thumbnail}
+-   Vérifiez dans un premier temps que la base est bien alimentée électriquement et que le bouton central soit allumé en bleu.![](baseallumee.png){.thumbnail}
 -   Si le voyant de la base est bien bleu il faut procéder à l'enregistrement du combiné.
 -   Cliquez sur le bouton central du téléphone.
 -   Déplacez vous sur "**Réglages**" puis validez en appuyant sur OK.
@@ -65,9 +63,9 @@ Si votre combiné affiche ce message c'est qu'il n'arrive pas à dialoguer avec 
 
 Lorsque votre combiné affiche ce message c'est que la base n'arrive pas à enregistrer le compte SIP inscrit en elle.
 
-Si vous allez dans l'interface web du C530 IP dans la partie **Paramètres &gt; Téléphonie &gt; Connexions**vous obtiendrez ceci :
+Si vous allez dans l'interface web du C530 IP dans la partie **Paramètres &gt; Téléphonie &gt; Connexions** vous obtiendrez ceci :
 
-![](images/Echec%20enregistrement.png){.thumbnail}
+![depannage-c530ip](images/Depannage6.png){.thumbnail}
 
 Dans 95% de cas, si en cliquant sur "**Modifier**" puis "**Afficher les réglages avancés"** les champs sont bien remplis, c'est que vous êtes probablement confronté à un firewall un peut trop restrictif.
 
@@ -75,7 +73,7 @@ Nos téléphones SIP utilisent les ports 5060 et 5962 pour s'enregistrer. Le 506
 
 Pour changer ce paramètre :
 
-![](images/Outbound.jpg){.thumbnail}
+![depannage-c530ip](images/Outbound.jpg){.thumbnail}
 
 -   Validez la modification en cliquant sur "**Définir**".
 -   Si après cette étape le téléphone ne s'enregistre toujours pas, il faudra regarder au niveau du firewall.

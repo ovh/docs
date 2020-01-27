@@ -1,7 +1,7 @@
 ---
 title: 'Intel SGX num servidor Infraestrutura'
 slug: ativar-e-usar-intel-sgx
-excerpt: 'Como ativar o SGX no seu servidor Infraestrutura e instalar  a pilha de software Linux SGX'
+excerpt: 'Ative o SGX no seu servidor Infraestrutura e instale a pilha de software Linux SGX'
 section: 'Uso avançado'
 ---
 
@@ -9,24 +9,24 @@ section: 'Uso avançado'
 
 ## Sumário
 
-Ativar Intel Software Guard Extensions no seu servidor, para poder executar aplicações SGX-ready  
-O Intel SGX oferece recursos avançados de encriptação de segurança para hardware e RAM, com o objetivo de isolar partes do código e dos dados específicos de cada aplicação.
+Ativar o Intel Software Guard Extensions no seu servidor, para poder executar aplicações preparadas para SGX  
+O Intel SGX oferece funcionalidades avançadas de encriptação de segurança para hardware e RAM, com o objetivo de isolar partes do código e dos dados específicas de cada aplicação.
 
 ## Requisitos
 
-- Um [servidor dedicado Infraestrutura](https://www.ovh.pt/servidores_dedicados/infra/){.external}, com a opção [SGX](https://www.ovh.pt/servidores_dedicados/software-guard-extensions/){.external}
-- Acesso administrativo (raiz) à sua instância via SSH
+- Um [servidor dedicado Infraestrutura](https://www.ovh.pt/servidores_dedicados/infra/){.external}, com a opção [SGX](https://www.ovh.pt/servidores_dedicados/infra/software-guard-extensions/){.external}
+- Acesso administrativo (raiz) ao servidor via SSH
 - Acesso à [API OVH](https://api.ovh.com/console/){.external}
-- Ubuntu 18.04 ou similar instalado no servidor
+- Ubuntu 18.04 ou semelhante instalado no servidor
 
 ## Instruções
 
-### Passo 1 - Aceda à consola API
+### Passo 1 - Aceder à consola da API
 
-Vá para <https://api.ovh.com/console/> e clique em  `Aceder`{.action} no canto superior direito da página.  
-Na página seguinte, aceda com as credenciais da sua conta OVH.
+Aceda a <https://api.ovh.com/console/> e clique em `Iniciar sessão`{.action} no canto superior direito da página.  
+Na página seguinte, inicie a sessão com as credenciais da sua conta OVH.
 
-### Passo 2 - Ative o SGX
+### Passo 2 - Ativar o SGX
 
 Obtenha o nome do seu servidor na lista devolvida pela seguinte chamada:
 
@@ -34,7 +34,7 @@ Obtenha o nome do seu servidor na lista devolvida pela seguinte chamada:
 >
 > @api {GET} /dedicated/server
 
-Verifique se o seu serviço tem a opção SGX, através da seguinte chamada: 
+Verifique se o seu serviço tem a opção SGX, chamando: 
 
 > [!api]
 >
@@ -50,15 +50,15 @@ Em seguida, ative o SGX:
 
 ![Configure SGX](images/post-configure.png){.thumbnail}
 
-Verifique o progresso da tarefa de configuração, através de uma chamada a este endpoint com a taskld devolvida pela chamada anterior:
+Verifique o progresso da tarefa de configuração, chamando este endpoint com a taskId devolvida pela chamada anterior:
 
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/task/{taskId}
 
-![Get SGX configuration task ](images/get-task.png){.thumbnail}
+![Get SGX configuration task](images/get-task.png){.thumbnail}
 
-Pode verificar se agora o estado está como ativado:
+Pode verificar se o estado está agora ativado:
 
 > [!api]
 >
@@ -66,13 +66,13 @@ Pode verificar se agora o estado está como ativado:
 
 ![SGX enabled](images/get-enabled.png){.thumbnail}
 
-### Passo 3 - Reinicie para aplicar as novas configurações BIOS
+### Passo 3 - Reiniciar para aplicar as novas definições do BIOS
 
-### Passo 4 - Instale a pilha de software SGX
+### Passo 4 - Instalar a pilha de software SGX
 
 Agora iremos instalar o driver Intel e o SDK para poder desenvolver e executar aplicações SGX.  
 
-Primeiro, instale algumas dependências:
+Primeiro, vamos instalar algumas dependências:
 ```bash
 sudo apt-get install build-essential ocaml ocamlbuild automake autoconf libtool wget python libssl-dev libcurl4-openssl-dev protobuf-compiler libprotobuf-dev debhelper cmake git
 ```
@@ -103,11 +103,11 @@ chmod +x sgx_linux_x64_driver_2.5.0_2605efa.bin
 sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
 ```
 
-### Passo 5 - Reinicie para concluir a instalação
+### Passo 5 - Reiniciar para concluir a instalação
 
-### Passo 6 - Utilize uma aplicação de amostra para validar a instalação
+### Passo 6 - Utilizar uma aplicação exemplo para validar a instalação
 
-Construa uma das aplicação de amostra fornecidas:
+Construa uma das aplicações exemplo fornecidas:
 ```bash
 BASE_DIR=/opt/intel
 cd $BASE_DIR/sgxsdk/SampleCode/LocalAttestation/
@@ -159,12 +159,12 @@ Close Session between Source (E3) and Destination (E1) Enclaves successful !!!
 Hit a key....
 ```
 
-### Passo 7 - Vá mais longe
+### Passo 7 - Ir mais longe
 
-Para ir mais longe (desenvolver a sua própria aplicação, registar-se para certificação remota, ...), aqui tem alguns recursos úteis :
+Seguem-se alguns recursos úteis que lhe permitem ir mais longe (desenvolver a sua própria aplicação, registar-se para atestado remoto...):
 
 - [Intel SGX](https://software.intel.com/en-us/sgx){.external}
-- [Serviços de Certificação Intel SGX](https://software.intel.com/en-us/sgx/attestation-services){.external}
+- [Serviços de Atestado Intel SGX](https://software.intel.com/en-us/sgx/attestation-services){.external}
 - [Documentação Intel SGX Linux-2.6](https://download.01.org/intel-sgx/linux-2.6/docs/){.external}
 - [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx){.external}
 - [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver){.external}
