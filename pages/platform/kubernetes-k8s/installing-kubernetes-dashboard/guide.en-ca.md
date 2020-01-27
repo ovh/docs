@@ -6,7 +6,7 @@ section: Tutorials
 ---
 
 
-**Last updated 21<sup>st</sup> January, 2020.**
+**Last updated 27<sup>st</sup> January, 2020.**
 
 <style>
  pre {
@@ -29,6 +29,7 @@ section: Tutorials
      font-size: 0.75em;
  }
 </style>
+
 
 The [Kubernetes Dashboard](https://github.com/kubernetes/dashboard){.external} is a general purpose, web-based UI for Kubernetes clusters. It allows users to manage and troubleshoot applications running in their cluster, as well as manage the cluster itself.
 
@@ -68,13 +69,21 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-r
 
 It should display something like this:
 
-<pre class="console"><code>
-secret/kubernetes-dashboard-certs created
+<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc2/aio/deploy/recommended.yaml
+namespace/kubernetes-dashboard created
 serviceaccount/kubernetes-dashboard created
-role.rbac.authorization.k8s.io/kubernetes-dashboard-minimal created
-rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard-minimal created
-deployment.apps/kubernetes-dashboard created
 service/kubernetes-dashboard created
+secret/kubernetes-dashboard-certs created
+secret/kubernetes-dashboard-csrf created
+secret/kubernetes-dashboard-key-holder created
+configmap/kubernetes-dashboard-settings created
+role.rbac.authorization.k8s.io/kubernetes-dashboard created
+clusterrole.rbac.authorization.k8s.io/kubernetes-dashboard created
+rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created
+clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created
+deployment.apps/kubernetes-dashboard created
+service/dashboard-metrics-scraper created
+deployment.apps/dashboard-metrics-scraper created
 </code></pre>
 
 ## Create An Authentication Token (RBAC)
@@ -83,7 +92,8 @@ In order to access the Dashboard, you need to create a new user with the service
 
 ### Create Service Account
 
-First, we will create a service account with the name `admin-user` in the `kube-system` namespace.
+First, we will create a service account with the name `admin-user` in the `kubernetes-dashboard` namespace.
+
 
 To do this, please copy the following YAML into a `dashboard-service-account.yml` file:
 
@@ -92,7 +102,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: admin-user
-  namespace: kube-system
+  namespace: kubernetes-dashboard
 ```
 
 You should then apply the file to add the service account to your cluster:
@@ -125,7 +135,7 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: admin-user
-  namespace: kube-system
+  namespace: kubernetes-dashboard
 ```
 
 You should then apply the file to add the `RoleBinding` to your cluster:
@@ -146,13 +156,13 @@ clusterrolebinding.rbac.authorization.k8s.io/admin-user created
 Next step is recovering the bearer token you will use to log in your Dashboard. Execute following command:
 
 ```bash
-kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user-token | awk '{print $1}')
+kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user-token | awk '{print $1}')
 ```
 
 It should display something like:
 
 <pre class="console"><code>Name:         admin-user-token-6gl6l
-Namespace:    kube-system
+Namespace:    kubernetes-dashboard
 Labels:       &lt;none>
 Annotations:  kubernetes.io/service-account.name=admin-user
               kubernetes.io/service-account.uid=b16afba9-dfec-11e7-bbb9-901b0e532516
@@ -185,7 +195,7 @@ Starting to serve on 127.0.0.1:8001
 Next, access the Dashboard at:
 
 ```
-http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
 ```
 
 In the log-in page, select authentication by token, and use the bearer token you recovered in the previous step.
