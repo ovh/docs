@@ -1,8 +1,8 @@
 ---
-title: Documentation technique CTI
+title: 'Documentation technique CTI'
 slug: documentation_technique_cti
-excerpt: Ce guide est une introduction aux outils de gestion des appels via les interfaces CRM et ERP les plus connus.
-section: Computer Telephony Integration (CTI)
+excerpt: 'Ce guide est une introduction aux outils de gestion des appels via les interfaces CRM et ERP les plus connus.'
+section: 'Computer Telephony Integration (CTI)'
 ---
 
 ## Définition
@@ -74,11 +74,6 @@ Il est possible d'associer un token à une ligne/alias (sipCirpack, mgcpCirpack,
 >
 > @api {GET} /telephony/{billingAccount}/service/{serviceName}/eventToken
 > 
-
-
-![](images/img_2569.jpg){.thumbnail}
-
-![](images/img_2571.jpg){.thumbnail}
 
 
 ## One liner CURL
