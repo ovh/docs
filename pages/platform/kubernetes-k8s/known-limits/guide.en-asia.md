@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated November 19<sup>th</sup>, 2019.**
+**Last updated January 28<sup>th</sup>, 2020.**
 
 <style>
  pre {
@@ -75,3 +75,7 @@ In any case, there are some ports that you shouldn't block on your instances if 
 ## Private Networks
 
 Privates networks  (vRack) aren't yet supported in OVHcloud Managed Kubernetes. Please refrain from adding private networks to your working nodes instances.
+
+## Cluster health
+
+The command `kubectl get componentstatus` is reporting the scheduler, the controller manager and the etcd service as unhealthy. This is a limitation due to our implementation of the Kubernetes control plane as the endpoints needed to report the health of these components are not accesible.
