@@ -5,7 +5,7 @@ excerpt: 'Włącz na swoim serwerze Infrastructure rozszerzenie SGX i zainstaluj
 section: 'Poziom zaawansowany'
 ---
 
-**Ostatnia aktualizacja: 17 października 2019**
+**Ostatnia aktualizacja: 17-10-2019**
 
 ## Wprowadzenie
 
@@ -14,7 +14,7 @@ Rozszerzenie Intel SGX zapewnia zaawansowane funkcje szyfrowania sprzętowego or
 
 ## Wymagania początkowe
 
-- [Dedykowany serwer Infrastructure](https://www.ovh.pl/serwery_dedykowane/infra/){.external} z opcją [SGX](https://www.ovh.pl/serwery_dedykowane/software-guard-extensions/){.external}
+- [Dedykowany serwer Infrastructure](https://www.ovh.pl/serwery_dedykowane/infra/){.external} z opcją [SGX](https://www.ovh.co.uk/dedicated_servers/software-guard-extensions/){.external}
 - Dostęp administracyjny (uprawnienia użytkownika root) do serwera za pośrednictwem protokołu SSH
 - Dostęp do [interfejsów API OVHcloud](https://api.ovh.com/console/){.external}
 - Zainstalowana na serwerze dystrybucja Ubuntu 18.04 lub podobna

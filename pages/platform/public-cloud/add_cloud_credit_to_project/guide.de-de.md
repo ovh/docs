@@ -1,62 +1,63 @@
 ---
-title: Cloud Guthaben aufladen
-excerpt: Cloud Guthaben aufladen
+title: 'Cloud Guthaben aufladen'
+excerpt: 'Entdecken Sie, wie Sie Guthaben für Ihr Public Cloud-Projekt aufladen können'
 slug: cloud_guthaben_aufladen
 legacy_guide_number: g1907
 ---
 
+**letzter Stand 22.11.2019**
 
-## 
-In dieser Hilfe erklären wir Ihnen, wie Sie Guthaben auf Ihr Public Cloud Konto aufladen können - über einen Gutschein oder einen Bestellschein.
+## Ziel
 
+Dieser Leitfaden erklärt Ihnen, wie Sie Guthaben für Ihr Public Cloud-Projekt aufladen können mittels eines Gutscheins oder durch eine Bestellung.
 
-## 
+Dies wird dann als Standardzahlungsart verwendet werden.
 
-- Loggen Sie sich in Ihr OVH Public Cloud [Kundencenter](https://www.ovh.com/manager/cloud/) ein
-- Erstellen Sie bei Bedarf ein neues Projekt
-- Klicken Sie auf "Verwaltung und Verbrauch des Projekts"
+Bei jeder Fakturierung wird der geschuldete Betrag zunächst von Ihrem Cloud-Guthaben abgebucht und dann Schritt für Schritt von Ihrem Digital LaunchPad- und Ihrem Treuepunktekonto. Ein eventuelles Sollsaldo wird dann über die eingetragene Zahlungsart ausgeglichen. 
 
+Mehr Details über diese drei letztgenannten Zahlungsarten finden Sie in Ihrem Kunden Center, in dem Sie auf Ihren Namen und Vornamen oben rechts klicken und dann auf  `Zahlungsarten`{.action} gehen.
 
+Das Cloud-Guthaben kann weder übertragen noch erstattet werden. Dieses Guthaben stellt keine Währung dar und jedes nicht verwendete Guthaben, das in den nach seinem Erstehen folgenden 13 Monaten nicht verwendet wurde, wird verloren sein. 
 
-![](images/img_2841.jpg){.thumbnail}
+## Voraussetzungen
 
-- Klicken Sie auf "Guthaben und Gutscheine"
-
-
-
-![](images/img_2842.jpg){.thumbnail}
-Über dieses neue Menü können Sie:
-
-- die History Ihrer Aufladungen einsehen,
-- einen Gutschein einlösen oder
-- Cloud Guthaben kaufen.
+* Sie müssen über ein Public Cloud Projekt verfügen.
 
 
+## Vorgehensweise:
 
-![](images/img_2843.jpg){.thumbnail}
+### Cloud Guthaben aufladen
 
-
-## Gutschein einlösen
-Bei manchen Gelegenheiten erhalten Sie Gutscheine, mit denen Sie Ihrem Public Cloud Projekt Guthaben hinzufügen können, etwa im Rahmen eines Discovery-Angebots oder auch bei OVH Events.
-
-- Klicken Sie auf "Einen Gutschein aktivieren"
-- Geben Sie Ihren Aktivierungscode ein:
+Um Ihr Public Cloud-Konto aufzuladen, gehen Sie zum Menü `Kredit und Gutscheine`{.action} des Bereichs Public Cloud Ihres Kundenbereichs, klicken Sie dann auf  `Public Cloud-Konto aufladen`{.action}.
 
 
+![addpubliccloudcredit](images/buycredit1.png){.thumbnail}
 
-![](images/img_2844.jpg){.thumbnail}
+Das folgende Fenster ermöglicht Ihnen, den hinzuzufügenden Betrag in Euro ohne MwSt. einzugeben.
 
+![addpubliccloudcredit](images/buycredit2.png){.thumbnail}
 
-## Guthaben kaufen
+Ein Link wird dann erstellt werden. Klicken Sie auf ihn, um die entsprechende Bestellung anzuzeigen.
 
-- Klicken Sie auf "Cloud Guthaben aufladen"
-- Geben Sie den Betrag an, den Sie Ihrem Cloud-Guthaben hinzufügen möchten:
+![addpubliccloudcredit](images/buycredit3.png){.thumbnail}
+![addpubliccloudcredit](images/buycredit4.png){.thumbnail}
 
+Sobald die Bezahlung über den Link erfolgt ist, finden Sie Ihren Guthabensstand in der Liste Kredite & Gutscheine wieder.
 
+### Einen Gutschein verwenden
 
-![](images/img_2845.jpg){.thumbnail}
+Um Ihr Public Cloud-Konto aufzuladen, gehen Sie zum Menü `Kredit und Gutscheine`{.action} des Bereichs Public Cloud Ihres Kundenbereichs, klicken Sie dann auf  `Public Cloud-Konto aufladen`{.action}.
 
+![addpubliccloudcredit](images/buycredit6.png){.thumbnail}
 
-## 
-... lesen Sie auch unsere anderen Hilfen zum Thema Cloud!
+Geben Sie dann den betroffenen Gutschein an.
 
+![addpubliccloudcredit](images/buycredit7.png){.thumbnail}
+
+Dieser wird dann in der Liste der Kredite & Gutscheine sichtbar sein.
+
+Aufgrund seiner Gültigkeitsdauer ist der Gutschein immer früher als das dem Public Cloud-Guthaben zu verwenden.
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

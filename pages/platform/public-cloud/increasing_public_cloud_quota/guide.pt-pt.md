@@ -1,64 +1,38 @@
 ---
-title: Aumentar a quota Public Cloud
-excerpt: Aumentar a quota Public Cloud
+title: 'Aumentar a quota Public Cloud'
+excerpt: 'Aprenda a aumentar as suas quotas Public Cloud'
 slug: aumentar_a_quota_public_cloud
 legacy_guide_number: g1904
 ---
 
+**Última atualização: 25/11/2019**
 
-## 
-Por razões de segurança implementámos uma quota no que diz respeito à possibilidade de criar instâncias e volumes adicionais.
-Este limite não é evidentemente fixo e poderá a qualquer momento contactar o nosso suporte Public Cloud para que o mesmo seja aumentado.
-Este guia explica-lhe o que fazer.
+## Objetivo
 
+Por defeito, o número de recursos (RAM, CPU, espaço em disco, número de instância...) e de projetos que pode criar é ilimitado.
 
-## Pré-requisitos
+Se precisar de criar mais, terá de aumentar a quota. 
 
-- [Adicionar um método de pagamento]({legacy}1984)
-
+**Descubra como proceder, consultando este guia.**
 
 
+## Requisitos
 
-## 
+- [Adicionar um método de pagamento](https://docs.ovh.com/gb/en/billing/manage-payment-methods/){.ref}
+- Ter atingido o número máximo de projetos utilizados na sua conta OVHCloud.
 
-- Ligar-se ao Espaço Cliente Public Cloud OVH
-- Clique em "Gestão e consumo do projeto" no canto superior direito:
+## Instruções
 
+Para solicitar o aumento do número de projetos e/ou de quotas de um projeto, precisa de efetuar um pedido junto da assistência.
 
+Para isso, selecione o seu projeto e, em seguida, a rubrica `Quota and location`{.action}. Poderá, então, consultar as quotas atuais do seu projeto.
 
-![](images/img_2835.jpg){.thumbnail}
+Clique, então, em `Aumentar as minhas quotas`{.action}.
 
-- Clique em "Quota":
+![raise-pci-quota](images/raisepciquota1.png){.thumbnail}
 
+Será então encaminhado(a) para a criação de um ticket de assistência. Basta preencher os campos necessários. O seu pedido será processado o mais depressa possível.
 
+## Quer saber mais?
 
-![](images/img_2836.jpg){.thumbnail}
-Poderá visualizar as atuais limitações neste ecrã.
-
-![](images/img_2837.jpg){.thumbnail}
-
-- Clique no botão "Aumentar os meus limites":
-
-
-
-![](images/img_2838.jpg){.thumbnail}
-
-- Efetue a criação do ticket de suporte para solicitar o seu pedido de aumento de quota.
-
-
-
-![](images/img_2840.jpg){.thumbnail}
-Poderá selecionar nessa janela:
-
-- O projeto em que pretende o aumento de quota
-- a equipa de suporte que deseja contactar
-- introduzir o assunto do seu ticket
-- redigir a sua mensagem
-
-
-Esta opção é igualmente válida para o aumento do número de projetos disponível.
-
-
-## 
-[Voltar à página inicial dos guias Cloud]({legacy}1785)
-
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>

@@ -77,8 +77,6 @@ By default, you will need to set this environment each time you open a session i
 
 #### **On Windows**
 
-- [Download or create the OpenStack openrc.sh file](https://docs.ovh.com/gb/en/public-cloud/access_and_security_in_horizon/) in order to retrieve your login information.
-
 The OpenRC file is not designed to be launched on Windows.
 
 There are two ways of setting environment variables:

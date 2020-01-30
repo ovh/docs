@@ -1,58 +1,63 @@
 ---
-title: Korzystanie z vouchera
+title: 'Korzystanie z vouchera'
 slug: korzystanie-z-vouchera
-section: Informacje wprowadzające
+excerpt: 'Dowiedz się, jak dodać zasilić swoje konto do projektu Public Cloud'
+section: 'Informacje wprowadzające'
 ---
 
-**Ostatnia aktualizacja dnia 2018-01-24**
+**Ostatnia aktualizacja z dnia 22-11-2019**
 
 ## Wprowadzenie
 
-Przewodnik dotyczy wykorzystania z voucherów dla usług Public Cloud.
+Z tego przewodnika dowiesz się, jak zasilić konto Public Cloud za pomocą vouchera lub poprzez wygenerowanie zamówienia.
 
-Voucher może być wykorzystany podczas otwierania projektu Public Cloud lub później.
-Wartość vouchera każdorazowo może być inna i wykorzystana tylko dla nowych obiektów (instancje, dyski) każdego typu usługi Public Cloud z wyłączeniem sytuacji, gdy voucher jest wydawany w związku z promocją konkretnego produktu. Kod może zostać dostarczony w dowolnej formie, np. w mailu lub w broszurze informacyjnej.
+Będzie on używany jako domyślny sposób płatności.
 
-**W pierwszej kolejności zużywane są środki z vouchera, po ich wyczerpaniu naliczone są kolejne opłaty i wystawiana jest faktura VAT z obowiązkiem zapłaty.**
+Po wystawieniu faktury kwota do zapłaty jest pobierana z konta Cloud, następnie z konta Digital LaunchPad i z konta prepaid. Saldo ujemne jest regulowane za pomocą ustawionego sposobu płatności. 
 
+Aby uzyskać więcej szczegółowych informacji na temat trzech ostatnich sposobów płatności, w prawym górnym rogu panelu klienta kliknij swoje imię, a następnie przejdź do pozycji `Sposoby płatności`{.action}.
+
+Zasilenia nie można przekazać innemu użytkownikowi ani zwrócić. Nie ma ono żadnej wartości pieniężnej, a zasilenie niewykorzystane przez 13 miesięcy zostaje utracone.
 
 ## Wymagania początkowe
 
-- Public Cloud Voucher
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Posiadanie projektu Public Cloud
 
 
 ## W praktyce
 
-### Aktywacja kodu dla istniejącego już projektu Public Cloud.
+### Zamówienie zasilenia
+
+Aby dodać zasilenie Public Cloud, w strefie Public Cloud w panelu klienta przejdź do menu `Credit and vouchers`{.action}, a następnie kliknij pozycję `Zamów zasilenie Public Cloud`{.action}.
 
 
-Wybierz projekt z listy po lewej stronie, a w nim sekcję `Zarządzanie projektem`, następnie przejdź do zakładki `Zasilenia i Kody`:
+![addpubliccloudcredit](images/buycredit1.png){.thumbnail}
 
-![Zasilenia i kody](images/1_voucher_adding.png){.thumbnail}
+W poniższym oknie możesz podać kwotę w EUR netto.
 
-Kliknij na przycisk `+ Aktywuj kod`{.action}.
+![addpubliccloudcredit](images/buycredit2.png){.thumbnail}
 
-Pojawi się pole do wpisania i zatwierdzenia kodu:
+Zostanie wygenerowany link. Kliknij ten link, aby wyświetlić odpowiednie zamówienie.
 
-![Wpisywanie kodu](images/2_voucher_code.png){.thumbnail}
+![addpubliccloudcredit](images/buycredit3.png){.thumbnail}
+![addpubliccloudcredit](images/buycredit4.png){.thumbnail}
 
+Po opłaceniu zamówienia zasilenie znajdziesz na liście zasileń i voucherów.
 
-###Dodawanie kodu podczas tworzenia projektu Public Cloud:
+### Wykorzystanie vouchera
 
-W widocznym poniżej oknie pokazano, gdzie rozpocząć tworzenie nowego projektu:
+Aby wykorzystać voucher, w strefie Public Cloud w panelu klienta przejdź do menu `Credit and vouchers`{.action}, a następnie kliknij pozycję `Dodaj voucher`{.action}.
 
-![Voucher dla projektu](images/3_voucher_in_project.png){.thumbnail}
+![addpubliccloudcredit](images/buycredit6.png){.thumbnail}
 
-Do utworzenia projektu konieczne jest wypełnienie zaznaczonych pól:
+Następnie wprowadź kod vouchera.
 
-![Voucher dla projektu](images/4_voucher_ceate_new_project.png){.thumbnail}
+![addpubliccloudcredit](images/buycredit7.png){.thumbnail}
 
-Jeśli wpisany kod jest nieprawidłowy lub minęła data ważności vouchera - w prawym dolnym rogu ekranu pojawi się stosowna informacja:
+Będzie on widoczny na liście zasileń i voucherów.
 
-![Voucher dla projektu](images/5_voucher_incorrect_code.png){.thumbnail}  
-
+Ze względu na okres ważności voucher zawsze będzie używany przed zasileniem Public Cloud.
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
