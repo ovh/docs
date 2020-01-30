@@ -15,7 +15,7 @@ L'identifiant client vous permet :
 - de gérer l'ensemble de vos services facilement grâce à votre espace client ;
 - de vous identifier lors de votre prise de contact avec le support d'OVHcloud et ainsi faciliter le traitement de vos questions.
 
-Il est le plus souvent composé de deux lettres suivies de chiffres. Par exemple : **ab123456-ovh**.
+Il est le plus souvent composé de deux lettres suivies de chiffres. Par exemple : **xx11111-ovh**.
 
 Il est aussi appelé NIC-handle. 
 

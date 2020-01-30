@@ -39,14 +39,14 @@ Vous pouvez choisir entre trois niveaux de privilèges pour chacun de vos utilis
 
 #### Exemple de gestion des utilisateurs
 
-Le propriétaire du compte ab123-ovh crée deux utilisateurs :
+Le propriétaire du compte xx11111-ovh crée deux utilisateurs :
 
 - l'utilisatrice Jane qui a le privilège **Utilisateur** et donc des droits en écriture sur toutes les rubriques du compte à l'exception de la gestion des utilisateurs ;
 - l'utilisateur Martin qui a le privilège **Aucun** et donc uniquement des droits en lecture sur toutes les rubriques du compte.
 
-Le propriétaire du compte ab123-ovh a obligatoirement le privilège **administrateur** et garde donc les droits en écriture sur l'ensemble de son espace client. Il peut aussi ajouter des utilisateurs et/ou supprimer les utilisateurs existants.
+Le propriétaire du compte xx11111-ovh a obligatoirement le privilège **administrateur** et garde donc les droits en écriture sur l'ensemble de son espace client. Il peut aussi ajouter des utilisateurs et/ou supprimer les utilisateurs existants.
 
-![users-management](images/umv3.png){.thumbnail}
+![users-management](images/umv4.png){.thumbnail}
 
 ### Étape 2 : ajouter un utilisateur
 
@@ -85,7 +85,7 @@ Vous pouvez modifier, désactiver/activer ou supprimer un utilisateur en cliquan
 
 La modification de l'utilisateur vous permettra de mettre à jour son adresse e-mail, ses privilèges ainsi que sa description.
 
-![users-management](images/usersmanagement5.png){.thumbnail}
+![users-management](images/usersmanagement6.png){.thumbnail}
 
 ## Aller plus loin
 
