@@ -77,8 +77,6 @@ Par défaut, il faudra charger cet environnement après chaque ouverture de sess
 
 #### **Sous Windows**
 
-- [Téléchargez ou créez le fichier openrc.sh d'OpenStack]({legacy}1774){.ref} afin de récupérer les informations pour vous authentifier.
-
 Le fichier OpenRC n'est pas conçu pour être lancé sur Windows.
 
 Vous avez donc 2 solutions pour charger les variables d'environnement :
