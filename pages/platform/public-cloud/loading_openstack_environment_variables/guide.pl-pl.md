@@ -1,102 +1,98 @@
 ---
-title: Zmienne środowiskowe OpenStack
-excerpt: Zarządzaj środowiskiem OpenStack z linii komend
+title: 'Zmienne środowiskowe OpenStack'
+excerpt: 'Zarządzaj środowiskiem OpenStack z linii komend'
 slug: zmienne-srodowiskowe-openstack
-section: Zarządzanie w OpenStack CLI
+section: 'Zarządzanie w OpenStack CLI'
 ---
 
-**Ostatnia aktualizacja dnia 2018-02-05**
+**Ostatnia aktualizacja z dnia 20-11-2019**
 
 ## Wprowadzenie
-W kontekście korzystania z klientów OpenStack konieczne jest załadowanie zmiennych środowiskowych, które umożliwiają uwierzytelnianie w naszych punktach dostępowych. 
 
-**W tym przewodniku wyjaśniamy, jak załadować te zmienne środowiskowe, aby umożliwić uwierzytelnianie i interakcję z różnymi usługami.**
+Pobranie zmiennych środowiskowych OpenStack na Twoje stanowisko umożliwi Ci korzystanie z interfejsu API OpenStack i zastosowanie go do zarządzania infrastrukturą.
+
 
 ## Wymagania początkowe
-
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Utworzony użytkownik Horizon OpenStack
+- Utworzenie użytkownika OpenStack. Informacje na ten temat znajdziesz [w tym przewodniku](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/#tworzenie-konta-uzytkownika-openstack)
+- Przygotowanie środowiska do korzystania z OpenStack. Informacje na ten temat znajdziesz w tym przewodniku: [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/)
 
 ## W praktyce
 
-### Pobieranie zmiennych środowiskowych
+### Etap 1: Zgromadzenie zmiennych
 
-Zmienne środowiskowe, możesz uzyskać pobierając plik openrc.sh dla swojego użytkownika OpenStack.
+Aby zgromadzić zmienne środowiskowe, możesz pobrać utworzony wcześniej plik OpenRC użytkownika OpenStack.
 
-Można to zrobić, w sekcji OpenStack danego Projektu.
+W tym celu przejdź do rubryki `Users & Roles`{.action}, po prawej stronie nazwy użytkownika kliknij symbol `...`{.action} i wybierz pozycję `Pobierz plik RC OpenStack`{.action}.
 
-Kliknij na ikonę klucza - wyświetli się małe menu. Następnie wybierz opcję: Pobierz plik konfiguracyjny OpenStack.
+![openstack-variables](images/pciopenstackvariables1.png){.thumbnail}
 
-![Pobranie zmiennych środowiskowych OpenStack](images/1_get_Horizon_conf_file.png){.thumbnail}
+Plik OpenRC odpowiada użytkownikowi, a także strefie. Nie można zarządzać kilkoma strefami w jednym pliku.
 
-Zostanie pobrany plik openrc.sh.
+### Etap 2: Pobranie zmiennych
 
+#### **Linux**
 
-### Ładowanie zmiennych środowiskowych
+* Otwórz terminal lub zaloguj się na konto użytkownika, który będzie wykonywał wywołania przez API OpenStack.
+* Załaduj treść pliku do bieżącego środowiska. Zostanie wyświetlony monit o podanie hasła odpowiedniego użytkownika Horizon.
 
-#### Dla Linux
-
-Otwórz terminal lub połącz się jako użytkownik, który będzie nawiązywał połączenia z interfejsem API OpenStack
-
-Załaduj zawartość pliku do bieżącego środowiska, wymagane jest hasło odpowiedniego użytkownika OpenStack (używane jest też w interfejsie Horizon):
-
-```sh
-admin@vps187763:~$ source openrc.sh Please enter your OpenStack Password:
+```bash
+admin@vpsxxxxxx:~$ source openrc.sh
+Please enter your OpenStack Password:
 ```
 
+Zgodnie z informacjami podanymi w przewodniku [Dostęp do panelu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/), hasło będzie widoczne tylko raz, podczas jego tworzenia.
 
-Jeśli CLI OpenStack został już zainstalowany, sprawdź poprawność jego działania:
+Jeśli zapomnisz hasła, konieczne będzie jego ponowne utworzenie.
 
-```sh
-admin@vps187763:~$ nova list 
+Jeśli CLI są już zainstalowane, sprawdź, czy działają prawidłowo:
+
+```bash
+admin@vpsxxxxxx:~$ nova list
 +--------------------------------------+------+--------+------------+-------------+------------------------+
-| ID | Name | Status | Task State | Power State | Networks | 
+| ID                                   | Name | Status | Task State | Power State | Networks               |
 +--------------------------------------+------+--------+------------+-------------+------------------------+
-| 2278e269-a529-40cc-9a08-794fda9302d3 | deb8 | ACTIVE | - | Running | Ext-Net=149.202.173.76 | 
+| 2278e269-a529-40cc-9a08-794fda9302d3 | deb8 | ACTIVE | -          | Running     | Ext-Net=xx.xxx.xx.xxx |
 +--------------------------------------+------+--------+------------+-------------+------------------------+
 ```
-W pliku openrc.sh można przechowywać hasło użytkownika OpenStack. Wystarczy zmienić go zgodnie z przykładem:
 
-z:
+Hasło użytkownika Horizon można zaszyć w kodzie. W tym celu zastąp element:
+
+```bash
+echo "Please enter your OpenStack Password: "
+read -sr OS_PASSWORD_INPUT
 export OS_PASSWORD=$OS_PASSWORD_INPUT
+```
 
-na:
+elementem:
 
-export OS_PASSWORD="Hasło_uzytkownika"
- 
+```bash
+#echo "Please enter your OpenStack Password: "
+#read -sr OS_PASSWORD_INPUT
+export OS_PASSWORD="Hasło użytkownika Horizon"
+```
 
-Domyślnie konieczne jest załadowanie środowiska po każdym logowaniu.
-
-Możliwe jest trwałe załadowanie środowiska OpenStack poprzez dodanie pliku openrc.sh jako źródła do pliku .bashrc - konieczne jest wprowadzenie hasła do pliku openrc.sh.
-
-
-
-#### Dla Windows
-
-Pobierz lub utwórz plik OpenStack openrc.sh, aby pobrać informacje do uwierzytelnienia. Plik openrc.sh nie został zaprojektowany do pracy w systemie Windows.
-
-Istnieją dwa rozwiązania do ładowania zmiennych środowiskowych  :
+Domyślnie trzeba będzie załadować to środowisko po każdym otwarciu sesji w bieżącym środowisku. Można to zrobić na stałe, dodając źródło openrc.sh do pliku bashrc. Wymaga to ustawienia hasła w pliku.
 
 
-- Rozwiązanie pierwsze: Konieczne jest dostosowanie pliku poprzez modyfikację niektórych poleceń. W rzeczywistości wystarczy zmienić zapisane dane dotyczące hasła zgodnie z przykładem:
+#### **Windows**
+
+Plik OpenRC nie jest przeznaczony do uruchamiania w systemie Windows.
+
+Masz więc do wyboru dwa sposoby na pobranie zmiennych środowiskowych:
+
+- Dostosować plik, modyfikując niektóre polecenia. Zastąpić element **export** elementem **set**:
+
+```bash
+set OS_PASSWORD="Hasło użytkownika Horizon"
+```
+
+- Zmienne można pobrać bezpośrednio z parametrów systemowych: Panel konfiguracyjny > System > Zaawansowane parametry systemu > Zmienne środowiskowe:
 
 
-z:
-export OS_PASSWORD=$OS_PASSWORD_INPUT
-
-na:
-
-export OS_PASSWORD="Hasło_uzytkownika"
- 
-
-- Rozwiązanie drugie: Zmienne mogą być ładowane bezpośrednio z parametrów systemu: Panel sterowania / System i Zabezpieczenia/ System / Zaawansowane ustawienia systemu / Zmienne środowiskowe.
-
-![Ładowanie zmiennych w systemie Windows](images/2_load_environment_variables.png){.thumbnail}
-
-
+![public-cloud](images/pciopenstackvariables2.png){.thumbnail}
 
 ## Sprawdź również
 
-[Dostęp do panelu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/){.external}
+Informacje na temat korzystania z OpenStack: [Dokumentacja OpenStack](https://docs.openstack.org/train/){.external}
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
