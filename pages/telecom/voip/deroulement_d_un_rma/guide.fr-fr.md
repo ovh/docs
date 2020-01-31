@@ -1,23 +1,23 @@
 ---
-title: Déroulement d’un RMA
+title: 'Déroulement d’un RMA'
 slug: deroulement-d-un-rma
+excerpt: 'Découvrez les étapes de restitution d’un téléphone fourni par OVHcloud'
 legacy_guide_number: '7536653'
 space_key: CRTEL
 space_name: Téléphonie
 section: Administratif
 ---
 
-### Préambule {#préambule}
+**Dernière mise à jour le 31/01/2020**
+
+## Objectif
 
 Lorsque vous changez de téléphone, vous restituez votre ancien matériel. Que notre support échange votre équipement ou que vous ayez résilié votre ligne, un RMA est généré. Il s'agit d'une autorisation de retour d'un équipement. Ce RMA permet de tracer également l'arrivée de l'équipement dans nos locaux et de restituer la caution ou valider la réception.
 
-**Sommaire :**
+**Découvrez les étapes d'un RMA.**
 
-Niveau : Débutant
 
-------------------------------------------------------------------------
-
-### Réception du premier e-mail et envoi du colis {#réception-du-premier-e-mail-et-envoi-du-colis}
+## Réception du premier e-mail et envoi du colis
 
 Lorsque votre RMA est créé, vous recevez un premier e-mail :
 
@@ -47,9 +47,9 @@ Lorsque votre RMA est créé, vous recevez un premier e-mail :
         dans les délais. A défaut, votre abonnement sera définitivement supprimé et les frais éventuels restants
         appliqués.
 
-Lorsque vous recevrez le mail, le lien du PDF est disponible dans le corps du mail. Il se présente sous cette forme :
+Lorsque vous recevrez le mail, le lien du PDF est disponible dans le corps de l' e-mail. Il se présente sous cette forme :
 
-![](images/2015-06-09-120602_572x810_scrot.png){.thumbnail}
+![deroulement-rma](images/rma2020.png){.thumbnail}
 
 Une partie du bon est impérativement à joindre dans le colis et l'autre volet est à scotcher sur le colis pour l'affranchissement.
 
@@ -57,7 +57,7 @@ Le volet à joindre dans le colis contient une checklist des éléments à renvo
 
 Conservez le récépissé de dépôt du colis tant que vous n'avez pas eu confirmation de la bonne réception dans nos locaux.
 
-### Les rappels {#les-rappels}
+## Les rappels
 
 Au bout de 10 et de 15 jours, si nous n'avons pas reçu votre colis avec le bon RMA, nous vous envoyons un rappel par e-mail sous cette forme :
 
@@ -69,9 +69,9 @@ Au bout de 10 et de 15 jours, si nous n'avons pas reçu votre colis avec le bon 
         d'origine. Sans restitution de votre matériel dans les 3 jours, nous devrons procéder à la fermeture de ce dossier.
         Adresse de retour : OVH SAS 130 quai du Sartel 59100 Roubaix
 
-### La clôture {#la-clôture}
+## La clôture
 
-#### **Le matériel est reçu** {#le-matériel-est-reçu}
+### Le matériel est reçu
 
 Lorsque nous avons reçu votre équipement, vous recevez cet e-mail :
 
@@ -81,17 +81,17 @@ Lorsque nous avons reçu votre équipement, vous recevez cet e-mail :
         accessible à partir de votre espace Client Télécom > Facturation > Mon Compte OVH. Vous pouvez à tout moment
         procéder à un transfert vers votre compte bancaire depuis votre espace client.
 
-Si une caution est restituée, elle sera disponible sur votre compte OVH pour payer vos prochaines factures. Si vous le souhaitez , vous pouvez en demander le versement sur votre compte bancaire via ces étapes :
+Si une caution est restituée, elle sera disponible sur votre compte OVHcloud pour payer vos prochaines factures. Si vous le souhaitez , vous pouvez en demander le versement sur votre compte bancaire via ces étapes :
 
 -   connectez vous à votre Manager : <https://ovh.com/managerv3/?go#tel> ;
 -   cliquez sur **Téléphonie**;****
 -   cliquez sur le bouton "**Groupe**" ;
 -   cliquez sur "**Facturation**" ;
--   cliquez sur "**Virementversuncompte bancaire**".
+-   cliquez sur "**Virement vers un compte bancaire**".
 
 Entrez le compte bancaire à créditer et validez. Le virement sera effectué sous 48 heures ouvrées.
 
-#### **Le matériel n'est pas reçu** {#le-matériel-nest-pas-reçu}
+### Le matériel n'est pas reçu
 
 Passé le délai de clôture du RMA, soit au bout de 45 jours, vous recevez l'e-mail suivant :
 
@@ -99,3 +99,7 @@ Passé le délai de clôture du RMA, soit au bout de 45 jours, vous recevez l'e-
         pas reçu le matériel lié au retour ouvert en date du #DATE# : Modèle : #MODEL# Réference/Mac : #REFERENCE# Le bon de
         retour, pour le renvoi de ce matériel, était le suivant : Lien vers le PDF du RMA. Nous sommes donc dans
         l'obligation de fermer votre ticket.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
