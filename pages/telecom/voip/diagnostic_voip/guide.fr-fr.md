@@ -1,10 +1,11 @@
 ---
-title: Diagnostic VoIP
+title: 'Diagnostic VoIP'
 slug: diagnostic-voip
 legacy_guide_number: '7536717'
 space_key: CRTEL
 space_name: Téléphonie
-section: Lignes téléphoniques
+section: 'Lignes téléphoniques'
+hidden: true
 ---
 
 ### Préambule {#préambule}
