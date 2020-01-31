@@ -1,11 +1,11 @@
 ---
-title: Evenements sur le traffic Voip
-excerpt: Evenements sur le traffic Voip
+title: 'Evenements sur le traffic Voip'
+excerpt: 'Evenements sur le traffic Voip'
 slug: evenements_sur_le_traffic_voip
 legacy_guide_number: g1715
 section: API
+hidden: true
 ---
-
 
 ## 
 Pour connaitre les bases de notre API :

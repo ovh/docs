@@ -27,10 +27,10 @@ Lorsque votre RMA est créé, vous recevez un premier e-mail :
         #DATE#, un matériel de remplacement à celui correspondant au modèle #MODEL# (Réference : #REFERENCE#). Voici le bon
         de retour, au format PDF, pour le renvoi de ce matériel : Lien vers le PDF du RMA Veuillez imprimer ce bon svp, puis
         joindre la partie basse à votre colis, tandis que la partie haute devra être collée dessus, à l'extérieur. Merci de
-        bien vérifier que votre matériel contienne tous les éléments d'origine. Vous disposez de 15 jours pour nous renvoyer
+        bien vérifier que votre colis contienne tous les éléments d'origine. Vous disposez de 15 jours pour nous renvoyer
         ce matériel. Après ce délai, vous pourrez être facturé de la caution et/ou des frais de pénalités. Votre numéro de
         retour (RMA) est : #RMA# Il vous sera demandé en cas d'échange avec notre support concernant ce dossier. Adresse de
-        retour : OVH SAS 130 quai du Sartel 59100 Roubaix
+        retour : OVH SAS 155 avenue Georges Hannart 59170 CROIX.
 
 *Lors d'une résiliation :*
 
@@ -39,11 +39,11 @@ Lorsque votre RMA est créé, vous recevez un premier e-mail :
         a pu être générée, non sur votre demande, dans les cas suivants : - Résiliation d'un abonnement - Suspension
         prolongée d'un abonnement - Impayé d'un abonnement* Voici le bon de retour, au format PDF, pour le renvoi de ce
         matériel : Lien vers le PDF du RMA Veuillez imprimer ce bon svp, puis joindre la partie basse à votre colis, tandis
-        que la partie haute devra être collée dessus, à l'extérieur. Merci de bien vérifier que votre matériel contienne
+        que la partie haute devra être collée dessus, à l'extérieur. Merci de bien vérifier que votre colis contienne
         tous les éléments d'origine. Vous disposez de 15 jours pour nous renvoyer ce matériel. Après ce délai, vous pourrez
         être facturé de la caution et/ou des frais de pénalités. Votre numéro de retour (RMA) est : #RMA# Il vous sera
-        demandé en cas d'échange avec notre support concernant ce dossier. Adresse de retour : OVH SAS 130 quai du Sartel
-        59100 Roubaix . *Cette demande de retour sera automatiquement annulée en cas de régularisation de votre situation
+        demandé en cas d'échange avec notre support concernant ce dossier. Adresse de retour : 155 avenue Georges Hannart
+        59170 CROIX. *Cette demande de retour sera automatiquement annulée en cas de régularisation de votre situation
         dans les délais. A défaut, votre abonnement sera définitivement supprimé et les frais éventuels restants
         appliqués.
 
@@ -65,9 +65,9 @@ Au bout de 10 et de 15 jours, si nous n'avons pas reçu votre colis avec le bon 
         notre part, nous n'avons toujours pas reçu le matériel lié au retour ouvert en date du #DATE# :Modèle :
         #MODEL#Réference : #REFERENCE# Voici le bon de retour, au format PDF, pour le renvoi de ce matériel : Lien vers le
         PDF du RMA Veuillez imprimer ce bon svp, puis joindre la partie basse à votre colis, tandis que la partie haute
-        devra être collée dessus, à l'extérieur. Merci de bien vérifier que votre matériel contienne tous les éléments
+        devra être collée dessus, à l'extérieur. Merci de bien vérifier que votre colis contienne tous les éléments
         d'origine. Sans restitution de votre matériel dans les 3 jours, nous devrons procéder à la fermeture de ce dossier.
-        Adresse de retour : OVH SAS 130 quai du Sartel 59100 Roubaix
+        Adresse de retour : OVH SAS 155 avenue Georges Hannart 59170 CROIX.
 
 ## La clôture
 
