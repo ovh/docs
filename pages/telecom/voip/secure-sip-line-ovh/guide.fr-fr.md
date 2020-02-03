@@ -2,7 +2,7 @@
 title: 'Restreindre sa ligne SIP OVH par IP'
 slug: restreindre-ligne-sip-par-ip
 excerpt: 'Découvrez comment restreindre l’accès à vos lignes SIP grâce à une restriction par IP'
-section: 'Lignes téléphoniques'
+section: Sécurité
 ---
 
 **Dernière mise à jour le 20/07/2018**

@@ -2,7 +2,7 @@
 title: 'Sécuriser sa ligne SIP OVH'
 slug: securiser-ligne-sip
 excerpt: 'Apprenez à sécuriser votre ligne SIP OVH'
-section: 'Lignes téléphoniques'
+section: Sécurité
 ---
 
 **Dernière mise à jour le 08/10/2018**
