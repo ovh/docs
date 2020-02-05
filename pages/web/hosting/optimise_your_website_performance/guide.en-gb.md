@@ -40,7 +40,7 @@ Check if errors are generated in order to identify the source of the latency. To
 
 Answering those questions can help to focus on specific points and diagnose areas for improvement.
 
-The use of CMS such as WordPress, PrestaShop, Drupal or Joomla requires many libraries, so that a single web page can handle a lot of elements.
+The use of CMS such as WordPress, PrestaShop, Drupal or Joomla! requires many libraries, so that a single web page can handle a lot of elements.
 Internet browsers must load and read all of these elements.
 We provide recommendations on what web hosting offer to use for the above listed CMS on [the product page](https://www.ovh.co.uk/web-hosting/){.external}.
 
@@ -49,9 +49,9 @@ You can find more informations regarding which plan to choose from on [this page
 
 ### Step 2: Checking the PHP version
 Using the latest php version compatible with your site can impact performance significantly.
-To check if your website is compatible with the latest PHP version, you can consult [the official documentation of PHP here](https://php.net/eol.php){.external}.
+To check if your website is compatible with the latest PHP version, you can consult [the official documentation of PHP](https://php.net/eol.php){.external}.
 
-- **PHP-FPM**
+**PHP-FPM**
 
 We have adapted PHP-FPM to our web infrastructure, in order to speed up PHP responses and radically reduce CPU load.
 Tests have shown that performance is up to **7 times faster** compared with the older mechanism.
@@ -66,9 +66,9 @@ Some server variables are changed via PHP-FPM usage:
 
 You can find out how to update PHP in [this guide](https://docs.ovh.com/gb/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/){.external}.
 
-To switch to use PHP-FPM in the "_stable_" version or to get details on more advanced options of your webhosting, please consult [this guide](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment/){.external}.
+To switch to use PHP-FPM in the _stable_ version or to get details on more advanced options of your webhosting, please consult [this guide](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment/){.external}.
 
-The _.ovhconfig_ file works at the root of the hosting package or in a level 1 sub-directory (ex: _/www/_) but not in level two or higher directories (ex : _/www/test/_ , _/www/test/test2/_)
+The _.ovhconfig_ file works at the root of the hosting package or in a level 1 sub-directory (ex.: _/www/_) but not in level two or higher directories (ex.: _/www/test/_ , _/www/test/test2/_)
 
 
 ### Step 3: Checking the media content (images, videos, ...)
@@ -131,7 +131,7 @@ You can access this tool by pressing the F12 key on your keyboard (via Firefox o
 
 Reducing the number of outgoing TCP requests is also a good way to reduce load time because if the server which you are requesting content from is taking time to answer, the delay to load your website will increase as well.
 
-- **CDN**
+**CDN**
 
 In order to improve website access website downloads and get naturally optimised ranking you could use the OVHcloud CDN (Content Delivery Network) to store your files, applications and websites closer to your end users.
 
@@ -156,13 +156,13 @@ _This step is optional if you are not using a database._
 You can access your database using PHPMyAdmin; instructions on how to use PHPMyAdmin would go beyond the scope of this guide, therefore it won't be furtherly detailed.
 However, lots of external guides exist on this matter.
 
-- **How to access the database via phpMyAdmin:** To access your database via phpMyAdmin, here is the procedure to follow via the OVHcloud Control Panel:
+**How to access the database via phpMyAdmin:** To access your database via phpMyAdmin, here is the procedure to follow via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}:
 
-1. Click on your domain under the `Hosting`{.action} section.
-2. Go to the `Database`{.action} tab.
-3. Click on the 3 dots `...`{.action} to the right of your database to access phpMyAdmin.
+- Click on your domain under the `Hosting`{.action} section.
+- Go to the `Database`{.action} tab.
+- Click on the 3 dots `...`{.action} to the right of your database to access phpMyAdmin.
 
-- **Why optimise a database?** You have to maintain a database to make sure it performs well. In other words, the information contained in the database should be returned to the script that requested it as soon as possible. To achieve this, a database has to be well structured and optimised, we will look at how to best optimise your database.
+**Why optimise a database?** You have to maintain a database to make sure it performs well. In other words, the information contained in the database should be returned to the script that requested it as soon as possible. To achieve this, a database has to be well structured and optimised. We will look at how to best optimise your database.
 
 #### On the database
 
