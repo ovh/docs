@@ -5,13 +5,13 @@ order: 01
 section: Use cases
 ---
 
-**Last updated 10th April, 2019**
+**Last updated 4th February, 2020**
 
 ## Objective
 
 [Filebeat](https://github.com/elastic/beats/tree/master/filebeat){.external} is an open source file harvester, mostly used to fetch logs files and feed them into logstash. Together with Logstash, Filebeat is a really powerful tool that allows you to parse and send your logs to PaaS logs in a elegant and non intrusive way (except installing filebeat of course).
 
-This guide will describe how to ask OVH to host your own dedicated Logstash on the Logs Data Platform and how to setup Filebeat on your system to forward your logs to it. It will also present you with some configuration setup you can use on Logstash to further structure your logs.
+This guide will describe how to setup Filebeat OSS on your system to forward your logs on Logs Data Platform. It will also present you with some configuration setup you can use to further structure your logs.
 
 ## Requirements
 
@@ -22,44 +22,31 @@ Note that in order to complete this tutorial, you should have at least:
 
 ## Instructions
 
-### Simple Logstash 6.x Configuration on Logs Data Platform
-
-This simple configuration is here to make it easier for you to see your logs, later on, you will find more advanced configurations that will breakdown your code. If you are already familiar with Logstash configuration on the Logs Data Platform, you can skip this one. Otherwise, it is a good start point to get it up and running. On Logs Data Platform manager, create a collector by doing the following:
-
-1. Click on `Host a new data-gathering tool`{.action}
-2. Give a name, a short description, select "Logstash 6.x" as engine,
-3. Attach your Graylog stream to logstash by using the list. Please refer to [this guide first](../quick_start/guide.en-gb.md){.ref} if you need to create a new one.
-4. Enter `5044` as exposed port. If you change it, you will have to also change it in the input section of your Logstash configuration.
-5. Click on `Next`{.action}  to add it.
-6. On `Configuration` panel, select **Filebeat** from our configuration wizard. It will fill the input, filter and grok sections with common Filebeat usage.
-
-Once configured and tested, you can launch your Logstash by clicking on `Start`{.action} button. At the end the procedure, a hostname will appear in green, meaning your input has started. You will need this hostname for your Filebeat configuration.
-
-### Setup Filebeat 6.X in your system
+### Setup Filebeat OSS 7.X in your system
 
 Filebeat supports many platforms as listed here [https://www.elastic.co/downloads/beats/filebeat](https://www.elastic.co/downloads/beats/filebeat){.external}
 
-You can decide to setup Filebeat from a package or to compile it from source (you will need the latest [go compiler](https://golang.org/){.external} to compile it) or just download the binary to start immediately.
+You can decide to setup Filebeat OSS from a package or to compile it from source (you will need the latest [go compiler](https://golang.org/){.external} to compile it) or just download the binary to start immediately.
 
-For this part, head to [Filebeat download website](https://www.elastic.co/downloads/beats/filebeat){.external} to download the best version for your distribution. On Linux, try the Linux 64 bit if you don't know which one to choose.
+For this part, head to [Filebeat OSS download website](https://www.elastic.co/fr/downloads/past-releases#filebeat-oss){.external} to download the best version for your distribution. On Linux, try the Linux 64 bit if you don't know which one to choose.
 
-The following configuration files have been tested on the latest version of Filebeat available at the time of writing (**6.7.1**).
+The following configuration files have been tested on the latest version of Filebeat OSS available at the time of writing (**7.5.2**).
 
 The Debian installation package will install the config file in the following directory: `/etc/filebeat/filebeat.yml`.
 
 
-### Configure Filebeat 6.X on your system
+### Configure Filebeat OSS 7.X on your system
 
-In the following example we will enable Apache and Syslog support, but you can easily prospect [https://www.elastic.co/guide/en/beats/filebeat/6.7/filebeat-modules.html](anything else){.external}.
+In the following example we will enable Apache and Syslog support, but you can easily prospect [https://www.elastic.co/guide/en/beats/filebeat/7.5/filebeat-modules.html](anything else){.external}.
 
 Filebeat expect a configuration file named **filebeat.yml** .
 
-1. For the configuration to work, the important part is to replace *hosts: ["`<your_cluster>-XXXXXXXXXXXXXXXXXXX.<your_cluster>.logs.ovh.com:5044`"] with the hostname given by Logs Data Platform.
-2. You should also put the SSL Certificate authority of the dedicated input into a file, (ex: /etc/ssl/certs/ldp.pem). The input SSL CA certificate is available in the **Home** page of the LDP manager.
+1. For the configuration to work, the important part is to replace *hosts: ["`<your_cluster>.logs.ovh.com:5044`"] with the hostname given by Logs Data Platform.
+2. You should also ensure to specify the `X-OVH-TOKEN` of the related stream.
 
 #### Filebeat configuration
 
-```yaml hl_lines="103 113"
+```yaml hl_lines="90 91 92 104"
 ###################### Filebeat Configuration Example #########################
 
 # This file is an example configuration file highlighting only the most common
@@ -149,8 +136,9 @@ filebeat.config.modules:
 
 # Optional fields that you can specify to add additional information to the
 # output.
-#fields:
-#  env: staging
+fields_under_root: true
+fields:
+  X-OVH-TOKEN: 'xxxxxxxxxxxxxxxxxxxxx'
 
 #================================ Outputs =====================================
 
@@ -162,7 +150,7 @@ output.logstash:
   enabled: true
 
   # The Logstash hosts
-  hosts: ["<your_cluster>-XXXXXXXXXXXXXXXXXX.<your_cluster>.logs.ovh.com:5044"]
+  hosts: ["<your_cluster>.logs.ovh.com:5044"]
 
   # Set gzip compression level.
   compression_level: 3
@@ -172,7 +160,7 @@ output.logstash:
 
   # Optional SSL configuration options. SSL is off by default.
   # List of root certificates for HTTPS server verifications
-  ssl.certificate_authorities: ["/etc/ssl/certs/ldp.pem"]
+  # ssl.certificate_authorities: ["/etc/pki/root/ca.pem"]
 
 #================================ Processors =====================================
 
@@ -194,15 +182,9 @@ processors:
 #logging.selectors: ["*"]
 ```
 
-#### SSL CA Certificate
-
-Fill the value of **/etc/ssl/certs/ldp.pem** with the "Data-gathering tools" certificate you will find in the **Home** page of your service.
-
-![SSL input](images/ssl_input.png){.thumbnail}
-
 #### Enable Apache Filebeat module
 
-To enable the apache2 support on filebeat, call the following command:
+To enable the apache2 support on Filebeat, call the following command:
 
 ```shell-session
 $ ldp@ubuntu:~$ sudo filebeat modules enable apache2
@@ -231,7 +213,7 @@ It will generate a new module file: **/etc/filebeat/modules.d/apache2.yml**, ple
 
 #### Enable System Filebeat module
 
-Syslog and authentication supports are part of the system filebeat module, to enable it:
+Syslog and authentication supports are part of the system Filebeat module, to enable it:
 
 ```shell-session
 $ ldp@ubuntu:~$ sudo filebeat modules enable system
@@ -260,7 +242,7 @@ Once again, it will generate a file **/etc/filebeat/modules.d/system.yml**
 
 Ensure both file path exists on your system.
 
-##### Launch Filebeat
+#### Launch Filebeat
 
 Launch the Filebeat binary or service to test your config file and head to your apache website for an example of how to send some logs. You will see this kind of log in Graylog:
 
@@ -280,12 +262,10 @@ Note the type value (apache or syslog or apache-error) that indicates the source
 
 ### Conclusion and useful resources
 
-Filebeat is a really useful tool to send the content of your current log files to Logs Data Platform. Combined with the filter in Logstash, it offers a clean and easy way to send your logs without changing the configuration of your software. There is a lot you can do with Logstash and Filebeat. Don't hesitate to check the links below to master these tools.
+Filebeat is a really useful tool to send the content of your current log files to Logs Data Platform. It offers a clean and easy way to send your logs without changing the configuration of your software. Don't hesitate to check the links below to master this tool.
 
 - Configuration's details: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html){.external}
 - Getting started: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html){.external}
-- Grok Patterns Documentation: [https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html](https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html){.external}
-- Current Grok Pattern reference: [https://github.com/logstash-plugins/logstash-patterns-core/tree/master/patterns](https://github.com/logstash-plugins/logstash-patterns-core/tree/master/patterns){.external}
 - Even a logstash_forwarder to filebeat tutorial: [https://www.elastic.co/guide/en/beats/filebeat/current/migrating-from-logstash-forwarder.html](https://www.elastic.co/guide/en/beats/filebeat/current/migrating-from-logstash-forwarder.html){.external}
 
 ## Go further
