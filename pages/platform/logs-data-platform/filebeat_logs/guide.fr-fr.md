@@ -5,11 +5,13 @@ order: 01
 section: Use cases
 ---
 
-**Last updated 4th February, 2020**
+**Last updated 5th February, 2020**
 
 ## Objective
 
-[Filebeat](https://github.com/elastic/beats/tree/master/filebeat){.external} is an open source file harvester, mostly used to fetch logs files and feed them into logstash. Together with Logstash, Filebeat is a really powerful tool that allows you to parse and send your logs to PaaS logs in a elegant and non intrusive way (except installing filebeat of course).
+[Filebeat](https://github.com/elastic/beats/tree/master/filebeat){.external} is an open source file harvester, used to fetch logs files and can be easily setup to feed them into Logs Data Platform.
+
+The main benefits of Filebeat are his very resilient protocol to send logs and his variety of modules ready-to-use for the most common applications.
 
 This guide will describe how to setup Filebeat OSS on your system to forward your logs on Logs Data Platform. It will also present you with some configuration setup you can use to further structure your logs.
 
@@ -28,16 +30,16 @@ Filebeat supports many platforms as listed here [https://www.elastic.co/download
 
 You can decide to setup Filebeat OSS from a package or to compile it from source (you will need the latest [go compiler](https://golang.org/){.external} to compile it) or just download the binary to start immediately.
 
-For this part, head to [Filebeat OSS download website](https://www.elastic.co/fr/downloads/past-releases#filebeat-oss){.external} to download the best version for your distribution. On Linux, try the Linux 64 bit if you don't know which one to choose.
+For this part, head to [Filebeat OSS download website](https://www.elastic.co/fr/downloads/past-releases#filebeat-oss){.external} to download the best version for your distribution.
 
 The following configuration files have been tested on the latest version of Filebeat OSS available at the time of writing (**7.5.2**).
 
-The Debian installation package will install the config file in the following directory: `/etc/filebeat/filebeat.yml`.
+The package will install the config file in the following directory: `/etc/filebeat/filebeat.yml`.
 
 
 ### Configure Filebeat OSS 7.X on your system
 
-In the following example we will enable Apache and Syslog support, but you can easily prospect [https://www.elastic.co/guide/en/beats/filebeat/7.5/filebeat-modules.html](anything else){.external}.
+In the following example we will enable Apache and Syslog support, but you can easily prospect [anything else](https://www.elastic.co/guide/en/beats/filebeat/7.5/filebeat-modules.html){.external}.
 
 Filebeat expect a configuration file named **filebeat.yml** .
 
@@ -266,7 +268,7 @@ Filebeat is a really useful tool to send the content of your current log files t
 
 - Configuration's details: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html){.external}
 - Getting started: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html){.external}
-- Even a logstash_forwarder to filebeat tutorial: [https://www.elastic.co/guide/en/beats/filebeat/current/migrating-from-logstash-forwarder.html](https://www.elastic.co/guide/en/beats/filebeat/current/migrating-from-logstash-forwarder.html){.external}
+- Learn how to configure Filebeat and Logstash to add your own extra filters: [All you have to know about the Logstash Collector on Logs Data Platform!](../logstash_input/guide.fr-fr.md){.ref}
 
 ## Go further
 
