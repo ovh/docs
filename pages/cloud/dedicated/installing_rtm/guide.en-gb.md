@@ -137,6 +137,18 @@ wget -qO - https://last-public-ovh-infra-yak.snap.mirrors.ovh.net/yak/archives/a
 
 #### Manual installation on Debian/Ubuntu.
 
+##### Using add-apt-repository
+
+In one line for Debian and Ubuntu
+```sh
+#metrics repo
+add-apt-repository "deb http://last.public.ovh.metrics.snap.mirrors.ovh.net/$(lsb_release --id --short | tr 'A-Z' 'a-z') $(lsb_release --codename --short) main"
+# rtm repo
+add-apt-repository "deb http://http://last.public.ovh.rtm.snap.mirrors.ovh.net/$(lsb_release --id --short | tr 'A-Z' 'a-z') $(lsb_release --codename --short) main"
+```
+
+###### Editing a file manually
+
 Add the RTM and the metrics repository for Debian:
 
 `<distribution codename>` is the name of your distribution (e.g. 'jessie').
