@@ -5,7 +5,7 @@ slug: web_hosting_optimise_your_website_performance
 legacy_guide_number: g1396
 ---
 
-**Last updated 4th February 2020**
+**Last updated 5th February 2020**
 
 ## Objective
 This guide is designed for customers who wish to improve the performance of their website.
@@ -87,7 +87,7 @@ Correlate the graphs of resource usage of your hosting (more information below) 
 
 You can access your logs, statistics and graphs directly from the [OVHcloud Control Panel](https://www.ovh.com/manager/web/login.html){.external}
 
-How to Access the logs ?
+How to Access the logs?
 - Click on the domain in the `Hosting`{.action} section,
 - Click on the `More +`{.action} tab then select `Statistics and logs`{.action}.
 - Then click on the links displayed to access either the _Website visit statistics_ or the _Logs_.
@@ -101,17 +101,23 @@ How to access the graphs ?
 ![graphs](images/graphs_highlighted.png){.thumbnail}
 
 What are the different types of information that can be displayed?
-* **HTTP requests**: Indicate the average number of website hits. Hits are classed by HTTP status 2xx/3xx/4xx/5xx.
-* **Average response time**: Refers to the average page response time. Dynamic and Static pages are differentiated.
-* **Exceeding the resource threshold**: This graphic shows the PHP Workers usage, in order to steer you towards a different web hosting package if needed. Using PHP-FPM could help you to reduce the use of PHP workers.
-* **CPU usage**: Shows your website's CPU usage. This might help you to spot a possible CPU overload.
-* **Outgoing connections**: This lets you see outgoing TCP request made by the server, for example if your website is hacked, the server could be used to attack other external websites. You can also check external calls made by modules such as Facebook, Twitter etc. Reducing the number of outgoing TCP requests is a good way to reduce load time because if the server which you are requesting content from is taking time to answer, the delay to load your website will increase.
-* **FTP commands**: Displays the different FTP commands that have been used on the hosting. For example successful and unsuccessful login attempts, download, upload and deletion of files, ...
+- **HTTP requests**: Indicate the average number of website hits. Hits are classed by HTTP status 2xx/3xx/4xx/5xx.
+
+- **Average response time**: Refers to the average page response time. Dynamic and Static pages are differentiated.
+
+- **Exceeding the resource threshold**: This graphic shows the PHP Workers usage, in order to steer you towards a different web hosting package if needed. Using PHP-FPM could help you to reduce the use of PHP workers.
+
+- **CPU usage**: Shows your website's CPU usage. This might help you to spot a possible CPU overload.
+
+- **Outgoing connections**: This lets you see outgoing TCP request made by the server, for example if your website is hacked, the server could be used to attack other external websites. You can also check external calls made by modules such as Facebook, Twitter etc. Reducing the number of outgoing TCP requests is a good way to reduce load time because if the server which you are requesting content from is taking time to answer, the delay to load your website will increase.
+
+- **FTP commands**: Displays the different FTP commands that have been used on the hosting. For example successful and unsuccessful login attempts, download, upload and deletion of files, ...
 
 The two following categories are only displayed if you currently use a Database on your hosting offer.
 Don't forget to select the name of your Database and the desired period.
-* **SQL response time**: Displays the response time of the queries.
-* **SQL requests**: Displays the amount of requests.
+- **SQL response time**: Displays the response time of the queries.
+
+- **SQL requests**: Displays the amount of requests.
 
 ### Step 5: Checking network requests
 One useful tool for analysis is the [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external} which is directly integrated in the Mozilla Firefox browser and allows to analyze a web page's loading time in detail.
@@ -119,12 +125,12 @@ One useful tool for analysis is the [Network Monitor](https://developer.mozilla.
 With it you can check which elements of your site have the slowest loading/heaviest load.
 It can help to narrow down which images and which content is increasing the website loading time and to prioritize where optimisations should be made .
 
-You can access the tool by pressing the F12 key on your keyboard (via firefox or chrome),
+You can access the tool by pressing the F12 key on your keyboard (via Firefox or Chrome),
 
 Reducing the number of outgoing TCP requests is also a good way to reduce load time because if the server which you are requesting content from is taking time to answer, the delay to load your website will increase as well.
 
 - **CDN**
-In order to improve website access website downloads and get naturally optimised ranking you could use the OVH CDN (Content Delivery Network) to store your files, applications and websites closer to your end users.
+In order to improve website access website downloads and get naturally optimised ranking you could use the OVHcloud CDN (Content Delivery Network) to store your files, applications and websites closer to your end users.
 
 As a result you will improve response times for visitors all over the world because the static parts of your website will be downloaded directly by your visitor in the point of presence which is closest to them.
 
@@ -154,7 +160,7 @@ You can access your database using PHPMyAdmin, explanation how to use PHPMyAdmin
 However, lots of external guides exist on this matter.
 
 - **How to access the database via phpMyAdmin ?**
-To access your database via phpMyAdmin, here is the procedure to follow via the OVH Control Panel :
+To access your database via phpMyAdmin, here is the procedure to follow via the OVHcloud Control Panel :
 - Click on your domain under the `Hosting`{.action} section,
 - Go to the `Database`{.action} tab,
 - Click on the 3 dots `...`{.action} on the right of your database to access phpMyAdmin.
