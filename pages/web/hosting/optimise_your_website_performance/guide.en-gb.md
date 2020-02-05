@@ -1,11 +1,11 @@
 ---
-title: Web hosting Optimise your website performance
-excerpt: This guide will give you advice on analysing latency on your website and how to improve it
+title: 'Optimise your website’s performance'
+excerpt: 'Find out how to analyse latency on your website and how to improve it'
 slug: web_hosting_optimise_your_website_performance
 legacy_guide_number: g1396
 ---
 
-**Last updated 27th June 2019**
+**Last updated 4th February 2020**
 
 ## Objective
 This guide is designed for customers who wish to improve the performance of their website.
@@ -14,13 +14,13 @@ This guide will help you get a basic understanding on what points can affect per
 **Find out how to improve the performance of your website.**
 
 > [!warning]
-> This use case will show you how to use one or more OVH solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation. If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVH cannot provide you with technical support in this regard.
+> This use case will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation. If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
 
 ## Requirements
-- You must have an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}.
-- You must have received an email confirming that your Web Hosting plan has been set up.
-- You must have a [domain name](https://www.ovh.co.uk/domains/){.external} that can be used to access your website.
-- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
+- an email confirming that your Web Hosting plan has been set up
+- a [domain name](https://www.ovh.co.uk/domains/){.external} that can be used to access your website
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
@@ -74,18 +74,18 @@ The _.ovhconfig_ file works at the root of the hosting package or in a level 1 s
 ### Step 3: Checking the media content (images, videos, ...)
 When accessing a website all content has to be downloaded by the browser.
 
-This can especially be problematic when accessing an non-optimized website via a mobile device.
+This can especially be problematic when accessing an non-optimised website via a mobile device.
 
 Using compressed images and videos is a good way to reduce the loading time.
-Several algorithms and tools can be used to optimize your content. Plugins also exist for the most common CMS.
+Several algorithms and tools can be used to optimise your content. Plugins also exist for the most common CMS.
 It's up to you to choose the ones fitting your specific needs.
 
 You can find more details on this topic in the Step 5 below.
 
-### Step 4: Optimizing your scripts
+### Step 4: Optimising your scripts
 Correlate the graphs of resource usage of your hosting (more information below) to find the origin of the delays and consult the logs at the dates of these peaks.
 
-You can access your logs, statistics and graphs directly from the [OVH Control Panel](https://www.ovh.com/manager/web/login.html){.external}
+You can access your logs, statistics and graphs directly from the [OVHcloud Control Panel](https://www.ovh.com/manager/web/login.html){.external}
 
 How to Access the logs ?
 - Click on the domain in the `Hosting`{.action} section,
@@ -100,24 +100,24 @@ How to access the graphs ?
 - There you will be able to select the type of information as well as the time period for the data to be visualized.
 ![graphs](images/graphs_highlighted.png){.thumbnail}
 
-What are the different types of information that can be displayed ?
-- **HTTP requests**: Indicate the average number of website hits. Hits are classed by HTTP status 2xx/3xx/4xx/5xx
-- **Average response time**: Refers to the average page response time. Dynamic and Static pages are differentiated.
-- **Exceeding the resource threshold**: This graphic shows the PHP Workers usage, in order to steer you towards a different web hosting package if needed. Using PHP-FPM could help you to reduce the use of PHP workers.
-- **CPU usage**: Shows your website's CPU usage. This might help you to spot a possible CPU overload.
-- **Outgoing connections**: This lets you see outgoing TCP request made by the server, for example if your website is hacked, the server could be used to attack other external websites. You can also check external calls made by modules such as Facebook, Twitter etc. Reducing the number of outgoing TCP requests is a good way to reduce load time because if the server which you are requesting content from is taking time to answer, the delay to load your website will increase.
-- **FTP commands**: Displays the different FTP commands that have been used on the hosting. For example successful and unsuccessful login attempts, download, upload and deletion of files, ... .
+What are the different types of information that can be displayed?
+* **HTTP requests**: Indicate the average number of website hits. Hits are classed by HTTP status 2xx/3xx/4xx/5xx.
+* **Average response time**: Refers to the average page response time. Dynamic and Static pages are differentiated.
+* **Exceeding the resource threshold**: This graphic shows the PHP Workers usage, in order to steer you towards a different web hosting package if needed. Using PHP-FPM could help you to reduce the use of PHP workers.
+* **CPU usage**: Shows your website's CPU usage. This might help you to spot a possible CPU overload.
+* **Outgoing connections**: This lets you see outgoing TCP request made by the server, for example if your website is hacked, the server could be used to attack other external websites. You can also check external calls made by modules such as Facebook, Twitter etc. Reducing the number of outgoing TCP requests is a good way to reduce load time because if the server which you are requesting content from is taking time to answer, the delay to load your website will increase.
+* **FTP commands**: Displays the different FTP commands that have been used on the hosting. For example successful and unsuccessful login attempts, download, upload and deletion of files, ...
 
 The two following categories are only displayed if you currently use a Database on your hosting offer.
 Don't forget to select the name of your Database and the desired period.
-- **SQL response time**: Displays the response time of the queries.
-- **SQL requests**: Displays the amount of requests.
+* **SQL response time**: Displays the response time of the queries.
+* **SQL requests**: Displays the amount of requests.
 
-## Step 5: Checking network requests
+### Step 5: Checking network requests
 One useful tool for analysis is the [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external} which is directly integrated in the Mozilla Firefox browser and allows to analyze a web page's loading time in detail.
 
-With it you can check which elements of your site have the slowest loading/heavyest load.
-It can help to narrow down which images and which content is increasing the website loading time and to prioritize where optimizations should be made .
+With it you can check which elements of your site have the slowest loading/heaviest load.
+It can help to narrow down which images and which content is increasing the website loading time and to prioritize where optimisations should be made .
 
 You can access the tool by pressing the F12 key on your keyboard (via firefox or chrome),
 
@@ -147,11 +147,11 @@ We recommend that you search for cache plugins on the community websites relatin
 - **Deactivation - deletion of unused plugins**
 It might be a good idea to deactivate or even delete unused plugins to improve website performance. This will prevent useless elements from being downloaded.
 
-### Step 7: Optimize your Database
+### Step 7: Optimise your Database
 
 _This step is optional if you are not using a Database._
 You can access your database using PHPMyAdmin, explanation how to use PHPMyAdmin would go beyond the scope of this guide, and won't be furtherly detailed.
-However lots of external guides exist on this matter.
+However, lots of external guides exist on this matter.
 
 - **How to access the database via phpMyAdmin ?**
 To access your database via phpMyAdmin, here is the procedure to follow via the OVH Control Panel :
@@ -171,11 +171,9 @@ To achieve this, a database has to be well structured and optimised, we will loo
 
 To increase the speed of searches during a query, you must index fields which are used in WHERE clauses.
 
-Example:
+Example: You often search for a person by town. You have to index the field "town" with the following request:
 
 ```
-For example: You often search for a person by town. You have to index the field "town" with the following request:
-
 ALTER TABLE `test` ADD INDEX (`town`);
 ```
 
@@ -231,5 +229,14 @@ Avoid using the "HAVING" clause which can slow down queries. You should also avo
 
 #### Private SQL
 If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our Private SQL offer to have more resources available.
-A comparison of our offers can be found [on the following page](https://www.ovh.co.uk/web-hosting/sql-options.xml){.external}
+A comparison of our offers can be found [on the following page](https://www.ovh.co.uk/web-hosting/sql-options.xml){.external}.
 
+## Go further
+
+[Modifying the configuration of a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment/){.external}
+
+[Managing a database on a web hosting package](https://docs.ovh.com/gb/en/hosting/managing-a-database-on-a-web-hosting-package){.external}
+
+[Getting started with the Private SQL service](https://docs.ovh.com/gb/en/hosting/getting-started-with-private-sql){.external}
+
+Join our community of users on <https://community.ovh.com/en/>.
