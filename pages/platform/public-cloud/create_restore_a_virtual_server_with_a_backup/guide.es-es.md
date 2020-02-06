@@ -1,70 +1,71 @@
 ---
-title: Crear o restaurar un servidor virtual a partir de un snapshot
-excerpt: Crear o restaurar un servidor virtual a partir de un snapshot
+title: 'Crear o restaurar un servidor virtual a partir de un snapshot'
+excerpt: 'Crear o restaurar un servidor virtual a partir de un snapshot'
 slug: crear_o_restaurar_un_servidor_virtual_a_partir_de_un_snapshot
 legacy_guide_number: g1882
-section: Gestión de las instancias desde el área de cliente
+section: 'Gestión de las instancias desde el área de cliente'
 ---
 
+**Última actualización: 22/11/2019**
 
-## 
-Probablemente encuentre situaciones en las que tenga que restaurar una instancia tal como se encontraba en un momento anterior utilizando un snapshot que haya realizado, por ejemplo después de realizar una manipulación incorrecta en la configuración de la instancia. O simplemente quiera crear una nueva instancia a partir de ese mismo backup porque necesite duplicar la instancia para balancear la carga o para garantizar la alta disponibilidad.
+## Objetivo
+Quizá necesite, en algún momento, restaurar su instancia utilizando un snapshot, por ejemplo, por haber configurado de manera incorrecta su instancia. 
 
-Todo esto es posible. Esta guía explica cómo utilizar los snapshots para volver a crear, duplicar o restaurar las instancias.
+Este mismo snapshot también podría servirle para crear una nueva instancia, para duplicar la primera y efectuar la distribución de carga, o incluso, para contar con alta disponibilidad.
 
+En esta guía, explicaremos cómo utilizar sus snapshots para volver a crear, duplicar o, incluso, restaurar sus instancias.
 
 ## Requisitos
-Para seguir los pasos descritos en esta guía es necesario:
+- Disponer de un snapshot de una instancia de Public Cloud. Para ello, consulte [la guía dedicada a la creación de un snapshot](https://docs.ovh.com/es/public-cloud/guardar_copia_de_seguridad_de_una_instancia/).
+- Estar conectado al área de cliente de OVHcloud.
+
+## Procedimiento
+
+### Crear una instancia a partir de un snapshot
+
+Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y seleccione `Public Cloud`{.action}. Luego, seleccione la sección `Instancia de backup`{.action}.
+
+Haga clic en los `...`{.action} a la derecha del snapshot seleccionado y por último, en `Crear una instancia`{.action}.
+
+![public-cloud-instance-backup](images/restorebackup1.png){.thumbnail}
+
+Se abrirá la página de creación de instancia.
+
+![public-cloud-instance-backup](images/restorebackup2.png){.thumbnail}
+
+Algunos elementos están predefinidos:
+
+* La localización: su instancia se creará en el mismo datacenter de su snapshot.
+* La imagen: corresponderá a su snapshot.
+* Los modelos: solo estarán disponibles aquellos que puedan alojar su imagen, en función de su capacidad.
+
+Para más información sobre la creación de una instancia, consulte [la presente guía](https://docs.ovh.com/es/public-cloud/crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
+
+Para crear una instancia en un datacenter diferente al del snapshot, habrá que transferirla a la zona correspondiente. Remítase entonces a la [guía que explica sobre cómo transferir un snapshot de una instancia entre datacenters](https://docs.ovh.com/es/public-cloud/transferir-backup-de-instancia-entre-datacenters/).
+
+### Restaurar una instancia a partir de un snapshot
+
+Para restaurar una instancia a partir de un snapshot, seleccione esta vez el menú `Instancia,`{.action} luego haga clic en el botón `...`{.action} a la derecha de la instancia que desea restaurar y por último, en `Editar`{.action}.
+
+![public-cloud-instance-backup](images/restorebackup3.png){.thumbnail}
+
+Se abrirá la página de edición de instancia. Allí, podrá modificar:
+
+* El nombre de la instancia
+* La imagen de la instancia
+* El modelo de la instancia
+* La facturación de la instancia (solo desde el modelo «Horario» y el modelo «Mensual»).
+
+En la sección `Imagen`{.action}, seleccione la del snapshot que va a restaurar.
+
+![public-cloud-instance-backup](images/restorebackup4.png){.thumbnail}
 
 
-- tener un snapshot de una instancia de Public Cloud;
-- tener un servidor virtual ya creado.
+> [!alert]
+>
+>Tal como se indica en el recuadro amarillo, no podrá recuperarse ningún dato que se haya añadido después de la creación de este snapshot.
+>
 
+## Más información
 
-
-
-## 
-Conéctese al [área de cliente Cloud](https://www.ovh.com/manager/cloud/) de OVH.
-
-Haga clic en «Snapshots».
-
-![](images/img_2808.jpg){.thumbnail}
-Haga clic en el icono «Crear un servidor a partir de este snapshot» situado al final de la línea del snapshot que quiera restaurar.
-
-Se abrirá la ventana de la imagen.
-
-![](images/img_2809.jpg){.thumbnail}
-Personalice el nombre del servidor si lo desea.
-
-Elija el modelo.
-
-Atención: Actualmente solo es posible restaurar una instancia desde el área de cliente en el datacenter del que provenga el snapshot. Para transferir el snapshot a otro datacenter, es necesario utilizar la API de OpenStack.
-
-Elija la llave SSH y el modo de facturación, y haga clic en «Iniciar ahora». El servidor virtual estará disponible unos segundos después.
-
-
-## 
-Conéctese al [área de cliente Cloud](https://www.ovh.com/manager/cloud/) de OVH.
-
-Despliegue el menú del servidor correspondiente y haga clic en «Editar».
-
-![](images/img_2810.jpg){.thumbnail}
-Se abrirá la ventana de la imagen.
-
-![](images/img_2812.jpg){.thumbnail}
-Personalice el nombre del servidor si lo desea.
-
-Elija el modelo (que debe tener características iguales o superiores a la instancia de partida).
-
-Haga clic en las distribuciones y, en la parte inferior de la ventana «Cambiar el SO», haga clic en «Mis snapshots».
-
-![](images/img_2815.jpg){.thumbnail}
-Se desplegará la lista de snapshots.
-
-![](images/img_2816.jpg){.thumbnail}
-Seleccione el snapshot que quiera restaurar.
-
-Elija la modalidad de facturación y haga clic en «Aplicar los cambios».
-
-Al cabo de unos segundos, ya estará disponible el servidor virtual.
-Atención: La instancia no tendrá los datos que se hayan añadido después de crear el snapshot.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
