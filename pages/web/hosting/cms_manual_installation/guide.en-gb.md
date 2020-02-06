@@ -1,97 +1,138 @@
 ---
-title: 'Hosting: Install your CMS manually'
-excerpt: Install your CMS manually
+title: 'Install a CMS manually on your Web Hosting plan'
+excerpt: 'Find out more about some of the compatible CMS for Web Hostings'
 id: '1375'
 slug: hosting_install_your_cms_manually
+section: CMS
 legacy_guide_number: g1375
 ---
 
+**Last updated 4th February 2020**
 
-## WordPress
-WordPress is web software you can use to create a website or blog. It is based on PHP technology and features tools including a spell checker and SEO plugins.
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>
+
+## Objective
+
+Our Web Hosting services are compatible with some of the most popular content management systems (CMS) which can cover a wide range of use cases.
+
+**Find out how to set up your website by manually installing a CMS.**
+
+## Requirements
+
+- a Web Hosting plan
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+
+## Instructions
+
+
+> [!primary]
+>**Automatic installation**
+>
+>You can install each of these CMS automatically in a few clicks from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). Please read the following guide:
+>
+>[Setting up your website with 1-click modules](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules)
+>
+
+
+
+
+### WordPress
+WordPress is a web software you can use to create a website or blog. It is based on PHP technology and features a variety of tools including a spell checker and SEO plugins.
 
 
 - [WordPress Module](https://www.ovh.co.uk/web-hosting/website/wordpress.xml)
 
-OVH support is not authorised to respond to any question concerning WordPress configuration.
+OVHcloud support is not authorised to respond to any questions concerning WordPress configuration.
 
 
-Please consult the forums dedicated to [Wordpress](https://wordpress.org/support/).
+Please consult the forums dedicated to [WordPress](https://wordpress.org/support/).
 
 
-- WordPress manual installation guide:[]({legacy}1977)
+- WordPress installation guide: [CMS, manually install WordPress](https://docs.ovh.com/gb/en/hosting/cms_manually_install_wordpress)
 
 
 
 ![](images/img_3379.jpg){.thumbnail}
 
 
-## Joomla!
-Joomla! is an award-winning, easy to use, content management system (CMS) which enables you to build websites and powerful online applications.
+### Joomla!
+Joomla! is an award-winning, easy to use software which enables you to build websites and powerful online applications.
 
-The Joomla! community is very large and can provide help and contributions in all areas of the cms (help, documentation, support, themes etc.)
+The Joomla! community is very large and can provide help and contributions in all areas of the CMS (help, documentation, support, themes etc.)
 
 
 - [Joomla! Module](https://www.ovh.co.uk/web-hosting/website/joomla.xml)
 
-OVH support is not authorised to respond to any questions concerning Joomla! configuration.
+OVHcloud support is not authorised to respond to any questions concerning Joomla! configuration.
 
 
-Please consult the dedicated [Joomla!](http://forum.joomla.org//) forums instead. 
-However, you can follow this guide:[]({legacy}2053).
+Please consult the dedicated [Joomla!](http://forum.joomla.org/) forums instead. 
 
-
-- Joomla! installation guide:[]({legacy}1978)
+- Joomla! installation guide: [CMS, manually install Joomla!](https://docs.ovh.com/gb/en/hosting/cms_manually_install_joomla)
 
 
 
 ![](images/img_3380.jpg){.thumbnail}
 
 
-## PrestaShop
-PrestaShop e-Commerce Solution was built to take advantage of essential Web 2.0 innovations such as dynamic AJAX-powered features and next-generation ergonomics. PrestaShop guides users through your product catalogue intelligently and effortlessly, turning intrigued visitors into paying customers. PrestaShop is so fast that even customers with low bandwidth connections will enjoy shopping on your website!
+### PrestaShop
+PrestaShop e-commerce solution was built to take advantage of essential Web 2.0 innovations such as dynamic AJAX-powered features and next generation ergonomics. Aside from common e-shop functionalities, the software can be customised with modules, themes and templates. 
 
-PrestaShop started in 2005 as a student project within the EPITECH IT School in Paris, France. The software was first available in two languages: English and French and was originally named phpOpenStore. The creators decided from the onset that it would be an open-source solution. It was tested by several small merchants who helped to co-write the specifications.
+PrestaShop started in 2005 as a student project within the EPITECH IT School in Paris, France. The creators decided from the onset that it would be an open source solution. It was tested by several small merchants who helped to co-write the specifications.
 
-Between 2005 and 2013 the software has continued to evolve. Version 1.5.4.1 is available in a stable version, translated in to more than 55 languages. The PrestaShop solution, used in more than 150 countries is now the world leader of e-commerce solutions, with 150,000 online shops. 
+Between 2005 and now the software has continued to evolve. Version 1.7.6.2 is available in a stable version, with 60 languages available. The PrestaShop CMS is now the world leader of e-commerce solutions, with over 300,000 online shops.
 
 
 
 - [PrestaShop Module](https://www.ovh.co.uk/solutions/prestashop/)
 
-OVH support is not authorised to respond to any question concerning PrestaShop configuration.
+OVHcloud support is not authorised to respond to any questions concerning PrestaShop configuration.
 
 
 Please consult the forum dedicated to the
-[Prestashop solution](https://www.prestashop.com/forums/).
+[PrestaShop solution](https://www.prestashop.com/forums/).
 
 
-- PrestaShop installation guide:[]({legacy}1979)
+- PrestaShop installation guide: [CMS, manually install PrestaShop](https://docs.ovh.com/gb/en/hosting/cms_manually_install_prestashop)
 
-- If you do not yet have a hosting package with OVH you can order our Performance hosting solution which includes PrestaShop here:  [](https://www.ovh.co.uk/solutions/prestashop/)
+
 
 
 
 ![](images/img_3381.jpg){.thumbnail}
 
 
-## Drupal
+### Drupal
 Drupal is a free open-source platform based on PHP and created in 2000. Drupal builds dynamic websites quickly. It is also customisable and used by 1% of websites worldwide. 
 
-Information: Drupal 8 is not yet compatible with our web hosting packages
+-  [Drupal Module](https://www.ovh.co.uk/web-hosting/website/drupal.xml)
 
-OVH support is not authorised to respond to any question concerning Drupal configuration.
+OVHcloud support is not authorised to respond to any questions concerning Drupal configuration.
 
-Please consult the forums dedicated to [Drupal](http://www.drupal.org.uk//).
+Please consult the forums dedicated to [Drupal](https://www.drupal.org).
 
 
--  Install Drupal manually:[]({legacy}1976)
+-  Drupal installation guide: [CMS, manually install Drupal](https://docs.ovh.com/gb/en/hosting/cms_manually_install_drupal)
 
 
 
 ![](images/img_3382.jpg){.thumbnail}
 
 
-## 
-You can install one of these CMS automatically in a few clicks from your customer account. Just use this guide: []({legacy}1402)
 
+
+## Go further
+
+[Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}
+
+[Publishing a website on your Web Hosting space](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external}
+
+[Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}
+
+See our [Web Hosting solutions](https://www.ovh.co.uk/web-hosting/){.external}
+
+Join our community of users on <https://community.ovh.com/en/>.
