@@ -2,7 +2,7 @@
 title: 'Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange'
 slug: migration-adresse-e-mail-mutualisee-vers-exchange
 excerpt: 'Apprenez comment migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange'
-section: 'Migration d''un compte Exchange'
+section: 'Migration d’un compte Exchange'
 order: 1
 ---
 
@@ -13,6 +13,7 @@ order: 1
 OVH propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dans une offre d'hébergement web), E-mail Pro et Exchange. Celles-ci bénéficient de fonctionnalités propres et peuvent s'adapter à plusieurs usages. Vos besoins évoluent ? OVH met à votre disposition un outil de migration vous permettant de passer d'une solution à une autre.
 
 **Apprenez comment migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange.**
+
 
 ## Prérequis
 
