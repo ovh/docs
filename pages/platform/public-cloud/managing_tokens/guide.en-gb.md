@@ -6,19 +6,22 @@ legacy_guide_number: g1872
 section: 'API reference/CLI'
 ---
 
-## 
+**Last updated 7th February 2020**
 
-## Warning!
+## Objective
+
+> [!primary]
+>
 The information in this guide applies to version 3.0 of the Keystone API.
+>
 
 
 ## Definitions
 
-- Endpoint: HTTP address pointing directly to a service's API. For example https://auth.cloud.ovh.net/v2.0 for the authentication endpoint or https://image.compute.gra1.cloud.ovh.net/ for the GRA zone image management endpoint. 
+- Endpoint: HTTP address pointing directly to a service's API. For example [https://auth.cloud.ovh.net/v3/](https://auth.cloud.ovh.net/v3/) for the authentication endpoint or [https://image.compute.gra1.cloud.ovh.net/]([https://image.compute.gra1.cloud.ovh.net/) for the GRA zone image management endpoint. 
 
 
 - Token: A unique string of characters used to authenticate and access resources. The user requests the token by entering his/her credentials (login details) to the authentication API. The token is generated and it is valid for 24 hours. A token can be "scoped" or "unscoped", by which we mean that it can be tied to a particular tenant or not.
-
 
 
 
@@ -40,7 +43,8 @@ You can also use the API to revoke a token before it expires.
 For more information, see the [OpenStack API](http://developer.openstack.org/api-guide/quick-start/) documentation.
 
 
-## 
+## Manual operations
+
 Manual operations are typically used for educational or debugging purposes.
 
 To run them, you must set your environment using the OpenStack RC file. 
@@ -56,104 +60,103 @@ In our example we will retrieve the meta-data information for an object that is 
 Any request can be built using the cURL command line tool.
 
 
-## Request token creation
+### Request token creation
 
+```bash
+curl -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | python -mjson.tool
 ```
-$ curl -X POST $OS_AUTH_URL/tokens -H "Content-Type: application/json" -d '{"auth": {"tenantName": "'$OS_TENANT_NAME'", "passwordCredentials": {"username": "'$OS_USERNAME'", "password": "'$OS_PASSWORD'"}}}' | python -mjson.tool
-```
-
-
-
-- -X POST: HTTP method used to send data
-
-- $OS_AUTH_URL/tokens: action on token elements 
-
-- -H "Content-Type: application/json": format of the request in JSON
-
-- -d '{"auth": {"tenantName": "'$OS_TENANT_NAME'", "passwordCredentials": {"username": "'$OS_USERNAME'", "password": "'$OS_PASSWORD'"}}}': body of the request ie. the authentication information 
-
-- python -mjson.tool: python tool that allows you to view the result in a readable format
 
 
 The server response will look like this:
 
 
+```json
+ {
+  "token": {
+    "is_domain": false,
+    "methods": [
+      "password"
+    ],
+    "roles": [
+      {
+        "id": "9543e89aeb484aee8ec7d01e87223b16",
+        "name": "objectstore_operator"
+      }
+    ],
+    "is_admin_project": false,
+    "project": {
+      "domain": {
+        "id": "default",
+        "name": "Default"
+      },
+      "id": "<ID OF THE PROJECT>",
+      "name": "<NAME OF THE PROJECT>"
+    },
+    "catalog": [
+      {
+        "endpoints": [
+          {
+            "url": "https://network.compute.sbg1.cloud.ovh.net/",
+            "interface": "internal",
+            "region": "SBG1",
+            "region_id": "SBG1",
+            "id": "075839111e7a41f1bb458926e5f04cec"
+          },
+          [...]
+        ],
+        "type": "network",
+        "id": "0be6ed3dce244b8295ff643739a86809",
+        "name": "neutron"
+      },
+      [...]
+    ],
+    "expires_at": "2020-01-17T14:53:32.000000Z",
+    "user": {
+      "password_expires_at": null,
+      "domain": {
+        "id": "default",
+        "name": "Default"
+      },
+      "id": "<ID OF THE USER>",
+      "name": "<NAME OF THE USER>"
+    },
+    "audit_ids": [
+      "IuNOR-lKQ9GJGQd8taWBnQ"
+    ],
+    "issued_at": "2020-01-16T14:53:32.000000Z"
+  }
+}
 ```
-{
-"access": {
-"metadata": {
-"is_admin": 0,
-"roles": [
-"9fe...fd4"
-]
-},
-"serviceCatalog": [
-[...]
-{
-"endpoints": [
-{
-"adminURL": "https://image.compute.sbg1.cloud.ovh.net/",
-"internalURL": "http://127.0.0.1:8888/v1/AUTH_9ea...ff0",
-"publicURL": "https://storage.sbg1.cloud.ovh.net/v1/AUTH_9ea...ff0",
-"region": "SBG1"
-}
-],
-"endpoints_links": [],
-"name": "swift",
-"type": "object-store"
-},
-
-[...]
-],
-"token": {
-"audit_ids": [
-"Mka...cmTw"
-],
-"expires": "2015-10-02T14:53:15Z",
-"id": "a4331ec98754472032f031e18b16bd00",
-"issued_at": "2015-10-01T14:53:15.072501",
-"tenant": {
-"description": null,
-"enabled": true,
-"id": "9ea...ff0",
-"name": "361...868"
-}
-},
-
-[...]
-}
-}
-```
 
 
 
 
-## Getting the "token ID" and "endpoint publicURL" variables
+### Getting the "token ID" and "endpoint publicURL" variables
+
 These two pieces of information are available in the results obtained by the above command.
 
-To retrieve the publicURL endpoint, you need to look in the "endpoints" section and the corresponding "Region" (in this example, "SBG1").
+To retrieve the publicURL endpoint, you need to look in the "endpoints" section and the corresponding "Region" (in this example, "SBG").
 
 
 ```
-$ export endpoint="https://storage.sbg1.cloud.ovh.net/v1/AUTH_9ea...ff0"
+$ export endpoint="https://storage.sbg.cloud.ovh.net/v1/AUTH_9ea...ff0"
 ```
 
 
 It is the endpoint address of the Object Storage service that lets you to retrieve information about the object.
 
 
+```bash
+export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | grep '^X-Subject-Token' | cut -d" " -f2)
 ```
-$ export token=a4331ec98754472032f031e18b16bd00
-```
-
 
 This token is the authentication element to use for the next request
 
 
-## Send an object request with the information retrieved
+### Send an object request with the information retrieved
 
-```
-$ curl -X GET $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg -H "X-Auth-Token: $token" -I
+```bash
+curl -X GET $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg -H "X-Auth-Token: $token" -I
 ```
 
 
@@ -167,7 +170,7 @@ $ curl -X GET $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg -H "X-A
 You will get the following response:
 
 
-```
+```bash
 HTTP/1.1 200 OK
 Content-Length: 190046
 Content-Type: image/jpeg
@@ -182,73 +185,12 @@ Connection: close
 ```
 
 
-
-
-## 
+## Automatic management
 We strongly recommend using libraries that allow for transparent token management. In this way, you can simply provide credentials to access the library and the tokens are automatically generated, used and renewed without you having to manage them at application level. 
 
-There are many libraries in different languages. For more information, see the official list.
+There are many libraries in different languages. For more information, see [the official list](https://wiki.openstack.org/wiki/SDKs).
 
 
-## Example in Python
-You can install the library using pip.
+## Go further
 
-```
-$ pip install python-openstacksdk
-```
-
-
-After starting the connection, the tokens are generated in the background.
-
-```
-from openstack import connection
-conn = connection.Connection(auth_url="https://auth.cloud.ovh.net/v2.0",
-project_name="361...868",
-username="vvQ...VBW",
-password="jCr...RGj")
-for cont in conn.object_store.containers():
-if(cont.name == "photos"):
-for obj in conn.object_store.objects(cont):
-if(obj.name == "fullsize/ovh-summit-2014-backstage-DS.jpg"):
-print conn.object_store.get_object_metadata(obj)
-```
-
-
-
-
-## Example in PHP
-You need php-curl and compose to install the library
-
-
-```
-$ apt-get install php5-curl
-$ curl -sS https://getcomposer.org/installer | php
-$ php composer.phar require rackspace/php-opencloud
-```
-
-
-The script also works with a "plug" that will handle tokens.
-
-
-```
-<?php
-require '/var/www/vendor/autoload.php';
-use OpenCloud\OpenStack;
-$client = new OpenStack("https://auth.cloud.ovh.net/v2.0", array(
-'username' => "vvQ...VBW",
-'password' => "jCr...RGj",
-'tenantName' => "361...868",
-));
-$objectStoreService = $client->objectStoreService('swift', "GRA1");
-$cont = $objectStoreService->getContainer("photos");
-$obj = $cont->getPartialObject('fullsize/ovh-summit-2014-backstage-DS.jpg');
-print_r($obj->getMetadata());
-?>
-```
-
-
-
-
-## 
- 
-
+Join our community of users on <https://community.ovh.com/en/>.
