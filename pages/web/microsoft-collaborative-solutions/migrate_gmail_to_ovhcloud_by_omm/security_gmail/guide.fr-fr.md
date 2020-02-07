@@ -8,6 +8,7 @@ hidden: true
 
 ## Objectif
 
+
 Ce guide vous détaille comment activer l'option "autoriser les applications moins sécurisées" sur votre compte Gmail.
 
 > [!primary] Cette documentation est une étape liée au guide 
