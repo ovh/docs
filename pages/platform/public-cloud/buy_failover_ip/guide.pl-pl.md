@@ -1,65 +1,82 @@
 ---
-title: Wykupienie adresu IP Failover
-excerpt: Wykupienie adresu IP Failover
+title: 'Wykupienie adresu IP Failover'
+excerpt: 'Dowiedz się, jak zamawiać adresy IP Failover dla swoich instancji'
 slug: wykupienie_adresu_ip_failover
 legacy_guide_number: g2030
-section: Zarządzanie w Panelu klienta OVH
+section: 'Zarządzanie w Panelu klienta OVH'
 ---
 
+**Ostatnia aktualizacja z dnia 21-11-2019**
 
-## 
-Jeśli chcesz skonfigurować adres IP Fail Over na swoich instancjach (masz kilka stron na jednej instancji, obsługujesz międzynarodowe projekty), możesz wykupić adres IP Fail Over dla swoich instancji Public Cloud.
+## Wprowadzenie
 
-Adresy te będą mogły być przenoszone tylko na instancje z tego samego projektu. 
+Potrzeba skonfigurowania adresu IP Failover na swoich instancjach może zajść z różnych powodów:
 
-Przewodnik ten wyjaśnia, jak wykupić adres IP Fail Over dla projektu Public Cloud OVH.
+- Masz kilka stron na swojej instancji.
+- Hostujesz projekty międzynarodowe.
 
+Aby spełnić te potrzeby, możesz wykupić adres IP Failover dla swoich instancji Public Cloud.
 
-## Wymagania
+Te adresy IP Failover można migrować tylko do instancji tego samego projektu.
 
-- [Utworzenie instancji w panelu klienta OVH]({legacy}1775)
-
-
-
-
-## 
-Aby zamówić adres IP, wystarczy kliknąć na przycisk "Dodaj" na górze z lewej strony. Następnie wybierz"Zamów IP Failover":
-
-![](images/img_3504.jpg){.thumbnail}
-Pojawi się nowe menu, w którym należy wybrać:
-
-- Liczbę adresów IP Failover,
-- Instancję, na którą będą routowane adresy IP Failover.
+Z tego przewodnika dowiesz się, jak wykupić adres IP Failover na potrzeby projektu Public Cloud OVHcloud.
 
 
-Menu dostosuje się w zależności od wybranej instancji.
+## Wymagania początkowe
+- Posiadanie co najmniej jednej instancji. W tym celu zapoznaj się z [przewodnikiem dotyczącym tworzenia instancji w Panelu klienta](https://docs.ovh.com/pl/public-cloud/tworzenie_instancji_w_panelu_klienta_ovh/).
 
-![](images/img_3505.jpg){.thumbnail}
-W przypadku instancji europejskich możliwe jest wybranie lokalizacji spośród poniższych państw:
+## W praktyce
 
-|Belgia|Finlandia|Francja|Niemcy|Czechy|
-|Irlandia|Włochy|Litwa|Holandia|Wielka Brytania|
-|Portugalia|Hiszpania|Polska|||
+Najpierw w Panelu klienta wybierz menu `Failover IP`{.action}, a następnie z zaproponowanych działań wybierz `Zamów IP Failover`{.action}:
+
+![failoverIP](images/buyfailoverip1.png){.thumbnail}
+
+Wówczas wyświetli się ta strona:
+
+![failoverIP](images/buyfailoverip2.png){.thumbnail}
+
+Wpisz następujące informacje:
+
+* Liczba żądanych IPFO (bloki IP nie są obecnie dostępne).
+* Instancja, na którą będą przekierowywane adresy IP.
+* Geolokalizacja adresów IP.
+
+Musisz także zaakceptować ogólne warunki korzystania z usługi.
+
+Każdy adres IP kosztuje 2 EUR netto w momencie zakupu. Następnie będą one co miesiąc bezpłatnie i automatycznie odnawiane.
+
+Dostępne geolokalizacje w Europie to:
+
+|          |          |          |           |                    |
+|:--------:|:--------:|:--------:|:---------:|:------------------:|
+| Belgia | Finlandia |  Francja  | Niemcy | Czechy |
+|  Irlandia |  Włochy  | Litwa |  Niderlandy |     Wielka Brytania    |
+| Portugalia |  Hiszpania |  Polska |  Litwa |                    |
 
 
-Dla instancji kanadyjskich wybór będzie wkrótce dostępny.
+> [!primary] **Dostępność**
+> 
+> Niektóre kraje z powyższej listy mogą się nie wyświetlać w zależności
+> od dostępności adresów IP.
+> 
 
-## Uwaga!
-Niektóre lokalizacje mogą się nie wyświetlać w zależności od dostępności adresów IP.
-Wyświetli się nowa strona z zamówieniem. Można również skorzystać z alertu, który pojawi się po wygenerowaniu zamówienia:
+> [!primary] **Geolokalizacja**
+>
+> Geolokalizacja opiera się wyłącznie na organizacjach referencyjnych.
+> 
+> Na przykład w przypadku RIPE: [https://www.ripe.net/](https://www.ripe.net/){.external}
+>
+> W przypadku weryfikacji w innych bazach prosimy o bezpośredni kontakt z zainteresowanymi organizacjami. OVHcloud nie będzie podejmować wobec nich żadnych działań.
 
-![](images/img_3506.jpg){.thumbnail}
+Zostaje wygenerowane zamówienie. Zezwól na wyświetlanie wyskakujących okienek, aby mogło nastąpić automatycznie przekierowanie do zamówienia.
 
+![failoverIP](images/buyfailoverip3.png){.thumbnail}
 
-## 
+Zamówienie znajdziesz także w Panelu klienta. W tym celu przejdź do sekcji `Moje konto`{.action}, a następnie `Moje zamówienia`{.action}.
 
-- [Importowanie adresu IP Fail Over]({legacy}1883)
-- [Przełączanie adresu IP Fail Over]({legacy}1890)
-- [Konfiguracja adresu IP Fail Over bez przerw w działaniu]({legacy}1884)
+![failoverIP](images/buyfailoverip4.png){.thumbnail}
 
+## Sprawdź również
 
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
 
