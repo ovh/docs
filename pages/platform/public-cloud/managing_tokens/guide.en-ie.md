@@ -8,7 +8,7 @@ legacy_guide_number: g1872
 ## 
 
 ## Warning!
-The information in this guide applies to version 3.0 of the Keystone API.
+The information in this guide it *outdated* and *does not use* version 3.0 of the Keystone API.
 
 
 ## Definitions
