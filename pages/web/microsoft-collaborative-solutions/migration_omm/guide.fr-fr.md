@@ -1,8 +1,8 @@
 ---
-title: Migrer des comptes e-mail via OVH Mail Migrator
+title: 'Migrer des comptes e-mail via OVH Mail Migrator'
 slug: exchange-migration-de-comptes-e-mail-ovh-mail-migrator
-excerpt: Apprenez à migrer vos comptes e-mail vers OVH grâce à notre outil OVH Mail Migrator
-section: Migration d'un compte Exchange
+excerpt: 'Apprenez à migrer vos comptes e-mail vers OVH grâce à notre outil OVH Mail Migrator'
+section: 'Migration d’un compte Exchange'
 order: 2
 ---
 
@@ -13,6 +13,7 @@ order: 2
 [OVH Mail Migrator](https://omm.ovh.net/){.external} est un outil créé par OVH. Il permet de migrer vos comptes e-mail vers vos adresses e-mail OVH. Le processus prend en charge différents types de contenus, tels que les e-mails, les contacts, les calendriers et les tâches, tant que ces derniers sont compatibles avec vos adresses e-mails.
 
 **Apprenez à migrer vos comptes e-mail vers OVH grâce à notre outil OVH Mail Migrator.**
+
 
 ## Prérequis
 
