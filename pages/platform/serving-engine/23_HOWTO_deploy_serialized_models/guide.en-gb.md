@@ -128,11 +128,11 @@ your model is also displayed so you can start requesting it.
 ## Step 9 - Check the model web interface
 
 When you follow the model URL in your web browser, you should arrive on
-the web page that describe the available API.
+the web page that describes the available API.
 
 > [!warning]
 >
-> On your first visit, you will need to provide credencials to access
+> On your first visit, you will need to provide credentials to access
 > the web page. Just log in with **no username** and your
 > [model-evaluation token](../tokens) as pasword.
 
@@ -145,7 +145,7 @@ There are two endpoints available on that kind of model :
 -   A endpoint to describe model's **inputs** and **outputs**
 -   A endpoint to query the model
 
-The web interface allow you to interactively execute queries on the
+The web interface allows you to interactively execute queries on the
 different endpoints of your model if you want to test quickly.
 
 ## Going Further
