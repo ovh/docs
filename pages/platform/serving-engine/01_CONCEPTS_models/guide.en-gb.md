@@ -8,7 +8,7 @@ order: 1
 ## Definition
 
 **Models** in a **serving engine project** refer to **HTTP API
-endpoints** that serves **machine learning models**.
+endpoints** that serve **machine learning models**.
 
 There are two kinds of models :
 
@@ -18,7 +18,7 @@ There are two kinds of models :
 ### Preset models
 
 A preset model is a model that has already been built and added by
-OVHcloud administrators of the serving platform and are available for
+OVHcloud administrators of the serving platform and is available for
 deployment on the fly.
 
 ### Serialized models
@@ -38,18 +38,18 @@ Instructions about how to export models can be found here:
 
 ## Considerations
 
--   User choose to deploy a model inside one of their
+-   Users choose to deploy a model inside one of their
     [namespaces](../namespaces).
--   Once deployed, each model is reachable from everywhere in the
-    internet from a generated url.
+-   Once deployed, each model is reachable from everywhere on the
+    Internet from a generated url.
 -   Access control over models management and querying can be configured
-    by **namespaces owner** by creating access [tokens](../tokens).
+    by the **namespaces owner** by creating access [tokens](../tokens).
 
 ## Under the hood
 
-Each model deployed inside a **serving engine namespace** is in reality
+Each model deployed inside a **serving engine namespace** is actually
 a [docker container](https://www.docker.com/resources/what-container)
-build and push into the linked [docker
+built and pushed into the linked [docker
 registry](https://docs.docker.com/registry/) and then started inside the
 [kubernetes
 namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/).
