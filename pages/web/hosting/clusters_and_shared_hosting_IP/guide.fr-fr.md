@@ -813,9 +813,11 @@ Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cett
 
 ```bash
  51.255.215.242 
- ```
+```
+
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
+
 
 
 ```bash
