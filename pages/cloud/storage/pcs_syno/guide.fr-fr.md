@@ -45,7 +45,7 @@ Une fois en possession de vos identifiants, vous pouvez vous connecter sur votre
 - Renseigner les informations de votre utilisateur OpenStack :
 
 
-![public-cloud](images/3789.png){.thumbnail}
+![public-cloud](images/3792.png){.thumbnail}
 
 Toutes ces informations sont trouvables dans le fichier OpenRC que vous avez récupéré lors de la précédente étape.
 

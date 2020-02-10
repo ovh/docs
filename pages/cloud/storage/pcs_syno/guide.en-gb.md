@@ -41,7 +41,7 @@ Once you have your credentials, you can log in to your NAS and take the followin
 - Enter your OpenStack credentials :
 
 
-![public-cloud](images/3789.png){.thumbnail}
+![public-cloud](images/3792.png){.thumbnail}
 
 You can find this information in the OpenRC file which you downloaded in the previous step.
 
