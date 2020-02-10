@@ -9,16 +9,16 @@ order: 4
 
 ## Objective
 
-The objective of this tutorial is to explain how to query deployed model
-on OVHcloud model.
+This tutorial will tech you how to query deployed model
+on OVHcloud serving engine.
 
 ## Requirements
 
 -   Having previously deployed a **serialized model** and knowing the
-    **url** on which it can be requested. Steps explaing how to deploy a
+    **url** on which it can be requested. Detailed steps on how to deploy a
     serialized model are explained [here](../deploy-serialized-models)
 -   Owning a **token** with `model-evaluation` role for the deployed
-    model. Step for generating such token are described
+    model. Steps to generate such a token are described
     [here](../tokens)
 -   Knowing the inputs that are needed for your model. Model description
     is explained [here](../describe-model)
@@ -30,7 +30,7 @@ model](../describe-model), just fill a correct **body** on your **HTTP
 query** with your wanted representation of tensor (see below) and send
 it to the model with a `POST` method on the path `/eval`.
 
-Two attaching headers are available for your query:
+Two attached headers are available for your query:
 
 -   The
     [Content-Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type)
@@ -47,14 +47,12 @@ Two attaching headers are available for your query:
 
 ### Supported Content-Type headers
 
--   `application/json` : A json document whose **key** are the **input
-    tensors** names and **values** are the n-dimensional json arrays
-    matching your tensors.
+-   `application/json` : A json document which **key** are the **input tensors** names and **values** are the n-dimensional json arrays matching your tensors.
 
--   `image/png` : A bytes content whose representation a **png** encoded
+-   `image/png` : A bytes content which representation is a **png** encoded
     image.
 
--   `image/jpeg` : A bytes content whose representation is a **jpeg**
+-   `image/jpeg` : A bytes content which representation is a **jpeg**
     encoded image.
 
 > [!warning]
@@ -63,7 +61,7 @@ Two attaching headers are available for your query:
 > single tensor as input. That tensor's shape should also be compatible
 > with an image representation.
 
--   `multipart/form-data` : A multipart body whose each part is named by
+-   `multipart/form-data` : A multipart body, each part of which is named by
     an **input tensor**.
 
 > [!primary]
@@ -73,14 +71,14 @@ Two attaching headers are available for your query:
 
 ### Supported Accept headers
 
--   `application/json` : A JSON document whose **key** are the **output
+-   `application/json` : A JSON document which **key** is the **output
     tensors** names and **values** are the n-dimensional json arrays
     matching your tensors.
 
--   `image/png` : A bytes content whose representation a **png** encoded
+-   `image/png` : A bytes content which representation is a **png** encoded
     image.
 
--   `image/jpeg` : A bytes content whose representation is a **jpeg**
+-   `image/jpeg` : A bytes content which representation is a **jpeg**
     encoded image.
 
 > [!warning]
@@ -91,25 +89,23 @@ Two attaching headers are available for your query:
 
 -   `text/html` : A HTML document displaying the **output tensors**
     representation.
--   `multipart/form-data` : A multipart body whose each part is named by
+-   `multipart/form-data` : A multipart body, each part of which is named by
     an **output tensor** and the content is the tensor json
     representation.
 
 > [!primary]
 >
-> In `multipart/form-data` and `text/html` header if you want some of
-> the output tensors to be interpreted as image you can specify it as
-> parameter in the header.
+> If you want some of the output tensors in `multipart/form-data` and `text/html` header to be interpreted as an image, you > can specify it as a parameter in the header.
 >
 > **Example** : The header
-> `text/html; tensor_1=image/png; tensor_2=image/png` return the global
-> response as HTML content. Inside the HTML page `tensor_1` and
+> `text/html; tensor_1=image/png; tensor_2=image/png` returns the global
+> response as HTML content. Inside the HTML page, `tensor_1` and
 > `tensor_2` are displayed as **png** images.
 
 ### Tensor interpretable as image
 
 For a tensor to be interpretable as image raw data, it should be of a
-compatible shape in your exported model. Here are the supported one :
+compatible shape in your exported model. Here are the supported ones :
 
 -   `(x, y, z, 1)` : Batch of **x** grayscale images with **y** pixels
     height and **z** pixels width
