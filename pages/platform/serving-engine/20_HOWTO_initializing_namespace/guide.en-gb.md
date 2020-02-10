@@ -9,8 +9,8 @@ order: 0
 
 ## Objective
 
-Before beeing able to deploy a **machine learning model**, you need to
-create a namespace on your **public cloud** project. This guide cover
+Before being able to deploy a **machine learning model**, you need to
+create a namespace on your **public cloud** project. This guide covers
 this first step.
 
 ## Requirements
@@ -22,15 +22,14 @@ this first step.
 ### Step 1 - Go to the serving engine menu
 
 All actions on the **serving engine** are made on the `Public Cloud`
-section of the **OVHcloud manager** and are located under
+section of the **OVHcloud control panel** and are located under
 `Data & Analytics` \> `Serving Engine`
 
 ![image](images/00_serving_engine_menu.png){.align-center}
 
 ### Step 2 - Start the creation of a new namespace
 
-After reading general information and validating contract terms about
-this product you can start the creation of a namespace by clicking on
+Once you read general information and validated this product's contract terms, you can start the creation of a namespace by clicking on
 the `Create a namespace` button.
 
 ![image](images/01_create_namespace_info.png){.align-center}
@@ -38,7 +37,7 @@ the `Create a namespace` button.
 ### Step 3 - Select the region for your namespace
 
 One or several regions are available for your namespace. Each region
-correspond to a physical OVHcloud datacenter. Just select the region in
+corresponds to a physical OVHcloud datacenter. Just select the region in
 which you want your namespace to be deployed and click `next`.
 
 ![image](images/02_select_region.png){.align-center}
