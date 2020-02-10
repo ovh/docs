@@ -1,7 +1,7 @@
 ---
 title: Exporting Scikit-learn models
 slug: export-sklearn-models
-excerpt: Learn how to export Scikit-learn model through ONNX format
+excerpt: Learn how to export a Scikit-learn model through ONNX format
 section: Tutorials
 order: 1
 ---
@@ -27,7 +27,7 @@ Serving Engine supports `scikit-learn` models through the
 
 ### Train Simple scikit-learn model
 
-Let\'s take a simple example of a `scikit-learn` model to illustrate:
+Let's take a simple example of a `scikit-learn` model to illustrate:
 
 ``` {.python}
 # Train a model.
