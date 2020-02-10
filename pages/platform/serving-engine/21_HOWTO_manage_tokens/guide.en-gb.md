@@ -2,7 +2,7 @@
 title: Manage tokens
 slug: manage-tokens
 excerpt: Learn how to manage OVHcloud Serving Engine Tokens
-section: Howto
+section: How to
 order: 1
 ---
 *Last updated 10th January, 2020.*
@@ -14,8 +14,7 @@ make you an admin of that namespace. However you probably want to
 delegate access rights and restrictions to other people inside your
 organization.
 
-This guide guide you through the process of creating tokens that you can
-then gives to your users.
+This guide guides you through the process of creating tokens for your users.
 
 ## Requirements
 
@@ -37,7 +36,7 @@ button.
 
 ### Step 2 - Fill token information
 
-The creation of a token implies to indicates two information :
+Creating a token requires completing the following information :
 
 -   The authorized `resource(s)` of the token
 -   The `user groups` of the token
@@ -49,18 +48,16 @@ button.
 
 ### Step 3 - Copy and save your token
 
-A green box indicates that your token has correctly been created and
-that token is displayed under it.
+A green box indicates that your token has been created correctly. You will find it displayed underneath.
 
 ![Token created page](images/02_token_created.png){.thumbnail}
 
-This is that token that you can give to your user or use it yourself to
-interact with the **serving engine** platform.
+You can choose to give this token to your user or use it yourself to interact with the **serving engine** platform.
 
 > [!warning]
 >
 > This is the only moment that the token is diplayed to you. We strongly
-> advise you to save it and keep it otherwise you will need to renew it.
+> advise you to save it and store it, otherwise you will need to renew it.
 
 ## Renewing a token
 
@@ -72,6 +69,6 @@ button and then `Regenerate`.
 
 ## Going Further
 
--   You can check the official documentation of the open source product
-    **serving engine** about
+-   You can check the official documentation of the open source 
+    **serving engine** product about
     [Tokens](https://serving-doc-mlg.ai.ovh.net/component/tokens.html)
