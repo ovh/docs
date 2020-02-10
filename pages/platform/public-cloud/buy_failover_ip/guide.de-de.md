@@ -18,7 +18,7 @@ Um diesen Anforderungen zu entsprechen, können Sie eine Failover-IP-Adresse fü
 
 Diese IPFOs können nur für Instanzen desselben Projekts migriert werden.
 
-**Diese Anleitung erklärt, wie Sie eine Failover-IP-Adresse für Ihr OVHCloud Public Cloud Projekt erwerben können.**
+**Diese Anleitung erklärt, wie Sie eine Failover-IP-Adresse für Ihr OVHcloud Public Cloud Projekt erwerben können.**
 
 
 ## Voraussetzungen
@@ -28,11 +28,11 @@ Diese IPFOs können nur für Instanzen desselben Projekts migriert werden.
 
 ## Praktische Vorgehensweise:
 
-Wählen Sie zuerst das Menü `Failover IP`{.action} in Ihrem OVHcloud Kundencenter und dann `Failovers-IPs kaufen`{.action} anlässlich der nachfolgenden:
+Wählen Sie zuerst links `Failover IP`{.action} in Ihrem OVHcloud Kundencenter aus und dann `Failovers-IPs kaufen`{.action} im `Aktionen`{.action} Menü:
 
 ![failoverIP](images/buyfailoverip1.png){.thumbnail}
 
-Dann erscheint diese Seite:
+Es erscheint diese Seite:
 
 ![failoverIP](images/buyfailoverip2.png){.thumbnail}
 
@@ -57,7 +57,7 @@ Die in Europa verfügbaren Lokalisierungen sind:
 
 > [!primary] **Verfügbarkeit**
 > 
-> In Abhängigkeit von der Verfügbarkeit von IP-Adressen ist es möglich,
+> Abhängig von der Verfügbarkeit von IP-Adressen ist es möglich,
 > dass einige der vorgenannten Länder nicht verfügbar sind.
 > 
 
@@ -67,7 +67,7 @@ Die in Europa verfügbaren Lokalisierungen sind:
 > 
 > Für RIPE-Blöcke zum Beispiel: [https://www.ripe.net/](https://www.ripe.net/){.external}
 >
-> Bezüglich der Überprüfung anderer Datenbanken wenden Sie sich bitte direkt an die betreffenden Organisationen. OVHCloud wird diesen gegenüber nicht intervenieren.
+> Bezüglich der Überprüfung anderer Datenbanken wenden Sie sich bitte direkt an die betreffenden Organisationen. OVHcloud wird diesen gegenüber nicht intervenieren.
 
 Anschließend wird ein Bestellschein erstellt. Erlauben Sie die Anzeige von Pop-Ups im Browser, um automatisch zum Bestellschein geleitet zu werden.
 
