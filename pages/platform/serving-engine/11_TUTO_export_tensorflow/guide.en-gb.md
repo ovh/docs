@@ -1,7 +1,7 @@
 ---
-title: Exporting TensorFlow model
+title: Exporting a TensorFlow model
 slug: export-tensorflow-models
-excerpt: Learn how to export Tensorflow model
+excerpt: Learn how to export a Tensorflow model
 section: Tutorials
 order: 2
 ---
@@ -25,7 +25,7 @@ SavedModel file.
 Serving Engine supports `TensorFlow` models thanks to the `SavedModel`
 serialization format of `TensorFlow`.
 
-Let\'s take a simple example of a `TensorFlow` model to illustrate:
+Let's take a simple example of a `TensorFlow` model to illustrate:
 
 ``` {.python}
 from sklearn.datasets import load_iris
@@ -88,9 +88,9 @@ In the previous example, four tensors are transformed:
 -   `petal_width` of shape `[None, 1]`
 
 Into a single tensor `x` of shape `[None, 4]` before feeding the
-classifier. .. note:: The `None` value in a tensor represents a
-dimension of arbitrary length. For example if you are using a
-classification algorithm `None` can simply be the number of record you
+classifier. Note: The `None` value in a tensor represents a
+dimension of arbitrary length. For example, if you are using a
+classification algorithm, `None` can simply be the number of records you
 wish to classify.
 
 ## Launch the conversion and save it into a file
