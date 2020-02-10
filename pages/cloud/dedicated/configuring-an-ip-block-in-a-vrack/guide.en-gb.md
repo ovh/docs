@@ -236,7 +236,7 @@ We must select the ```Use the following IP address``` option:
 
 And we can finally define the IP information:
 
-![ip configuration](images/win-ip-vrack-5-5.png){.thumbnail}
+![ip configuration](images/win-ip-vrack-5b.png){.thumbnail}
 
 #### Step 3: Rebooting the network interface
 
