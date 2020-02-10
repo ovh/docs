@@ -2,7 +2,7 @@
 title: Deploy Serialized Models
 slug: deploy-serialized-models
 excerpt: Learn how to deploy serialized models
-section: Howto
+section: How to
 order: 3
 ---
 *Last updated 10th January, 2020.*
@@ -10,7 +10,7 @@ order: 3
 ## Objective
 
 Deploying models is the main feature of the **serving engine**. This
-guide explains step by step how to deploy a **serialized model**.
+guide provides step by step instructions on how to deploy a **serialized model**.
 
 ## Requirements
 
@@ -44,7 +44,7 @@ model from your local file storage.
 
 ![Add Exported Model](images/01_add_exported_model.png)
 
-After clicking the `Import` button you should be your exported model in
+After clicking the `Import` button you should see your exported model in
 the list of containers object.
 
 ![Upload Model](images/02_uploaded_model.png)
@@ -86,7 +86,7 @@ After you filled your wanted name, click the `Next` button.
 
 A model is composed of one or several running instance(s). These
 instances are automaticaly scaled by the **serving engine** depending on
-the input load of your model. That step allow you to configure the
+the input load of your model. That step allows you to configure the
 minimum and maximum number of instances that you want to run.
 
 ![image](images/07_select_auto_scale.png){.align-center}
@@ -111,7 +111,7 @@ the wanted flavor among a list of existing ones.
 
 ### Step 8 - Wait for model deployment
 
-The **serving engine** chains the following tasks :
+The **serving engine** will sequentially perform the following tasks :
 
 -   The **building** of the model : you see the **build status** as
     `Building`.
@@ -134,7 +134,7 @@ the web page that describes the available API.
 >
 > On your first visit, you will need to provide credentials to access
 > the web page. Just log in with **no username** and your
-> [model-evaluation token](../tokens) as pasword.
+> [model-evaluation token](../tokens) as password.
 
 This page should look like this :
 
@@ -142,8 +142,8 @@ This page should look like this :
 
 There are two endpoints available on that kind of model :
 
--   A endpoint to describe model's **inputs** and **outputs**
--   A endpoint to query the model
+-   An endpoint to describe the model's **inputs** and **outputs**
+-   An endpoint to query the model
 
 The web interface allows you to interactively execute queries on the
 different endpoints of your model if you want to test quickly.
