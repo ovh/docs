@@ -1,73 +1,67 @@
 ---
-title: Criar e configurar um disco suplementar numa instância
-excerpt: Criar e configurar um disco suplementar numa instância
+title: 'Criar e configurar um disco suplementar numa instância'
+excerpt: 'Este manual explica como criar um disco adicional e como o configurar numa das suas instâncias.'
 slug: criar_e_configurar_um_disco_suplementar_numa_instancia
 legacy_guide_number: g1863
 ---
 
+**Última atualização: 14 de novembro de 2019**
 
-## 
-É possível que crie discos adicionais para as suas instâncias Public Cloud.
-Eles podem ser adicionais para:
+## Sumário
 
-- Aumentar a sua capacidade de armazenamento sem mudar para um modelo superior.
-- Dispor de um espaço de armazenamento de alta disponível e com melhores performances.
-- Poder migrar os seus dados para outra instância
+É possível criar discos adicionais para as suas instâncias Public Cloud
+Isto pode ser útil caso pretenda:
 
+* Aumentar a sua capacidade de armazenamento sem mudar o modelo de instância.
+* Dispor de armazenamento de elevada disponibilidade e com um excelente desempenho.
+* Migrar o seu armazenamento e os seus dados para outra instância.
 
-Este guia explica-lhe como poderá criar um disco suplementar e explica-lhe ainda como o configurar numa das suas instâncias.
+**Este manual explica como criar um disco adicional e como o configurar numa das suas instâncias.**
 
+## Requisitos
 
-## Pré-requisitos
+* acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* uma [Instância de Public Cloud](https://www.ovh.pt/public-cloud/){.external} na sua conta OVHcloud.
+* acesso administrativo (root) à sua instância via SSH.
 
-- Uma instância
+## Instruções
 
+Primeiro, faça login na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e clique no menu `Public Cloud.`{.action} Em seguida, clique em `Project`{.action} onde pretende criar a instância.
 
+Agora, clique no botão`Actions`{.action} e em seguida selecione `Create a volume`{.action}.
 
+![select project](images/attach-disk-01.png){.thumbnail}
 
-## 
+Agora configure as suas opções relativamente ao tipo, tamanho e localização do disco. Quando terminar, clique no botão `Add.`{.action}
 
-- Ligue-se a [Espaço Cliente OVH](https://www.ovh.com/manager/cloud/)
-- Clique no botão "Adicionar" e selecione "Adicionar um disco"
+![create disk](images/attach-disk-02.png){.thumbnail}
 
+O novo disco será apresentado na sua Área de Cliente
 
+![configure disk](images/attach-disk-03.png){.thumbnail}
 
-![](images/img_2731.jpg){.thumbnail}
-Poderá, neste menu, efetuar as seguintes operações:
+Para associar o disco a uma instância, clique em “...” e, em seguida, selecione `Attach to instance`{.action}
 
-- Atribuir um nome ao seu disco
-- Selecionar o tipo de disco:
+![attach disk 01](images/attach-disk-04.png){.thumbnail}
 
-|Clássico|200 IOPS garantidos|
-|Alta performance|Até 3000 IOPS|
+Selecione a instância e clique no botão `Confirm`{.action} para associar o disco.
 
+![attach disk 02](images/attach-disk-05.png){.thumbnail}
 
+O processo de associação do disco à sua instância inicia agora e pode levar alguns minutos a concluir.
 
-- Escolher a capacidade do disco: a partir de 10GB
-- Escolher a região do seu disco
-- Validar a criação do disco
+![attach disk 03](images/attach-disk-06.png){.thumbnail}
 
+> [!warning]
+Assegure-se de que não sai do separador de infraestrutura enquanto o disco está a ser associado. Isso poderia interromper o processo.
+>
 
-De seguida aparecerá uma nova janela com o seu disco:
+### Utilizando o Linux
 
-![](images/img_2732.jpg){.thumbnail}
-Poderá de seguida associar o seu disco suplementar a uma instância:
-
-- Basta efetuar um arrastar/largar (drag and drop) do seu disco na sua instância.
-- Ao clicar na seta à direita do seu disco e ao selecionar "Associar a um servidor".
-
-
-Após efetuar este processo o disco aparecerá por baixo da instância:
-
-![](images/img_2733.jpg){.thumbnail}
-
-
-## A partir de uma instância Linux
-
-- Liste os discos
+Primeiro, estabeleça uma conexão SSH para sua instância e em seguida utilize o comando abaixo para listar os discos da instância.
 
 ```
-admin@serveur-1:~$ lsblk
+# admin@serveur-1:~$ lsblk
 
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 254:0 0 10G 0 disk
@@ -75,14 +69,15 @@ vda 254:0 0 10G 0 disk
 vdb 254:16 0 10G 0 disk
 ```
 
+> [!primary]
+>
+Geralmente, o VDA corresponde ao disco rígido predefinido da sua instância O VDB corresponde ao disco adicional
+>
 
-
-O VDA corresponde geralmente ao disco da sua instãncia, o VDB será então o disco suplementar
-
-- Criar uma partição
+Em seguida, crie uma partição no disco adicional usando o comando abaixo.
 
 ```
-admin@serveur-1:~$ sudo fdisk /dev/vdb
+# admin@serveur-1:~$ sudo fdisk /dev/vdb
 
 Welcome to fdisk (util-linux 2.25.2).
 Changes will remain in memory only, until you decide to write them.
@@ -119,11 +114,10 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-
-- Formatar a partição
+Em seguida, formate a partição utilizando o comando abaixo.
 
 ```
-admin@serveur-1:~$ sudo mkfs.ext4 /dev/vdb1
+# admin@serveur-1:~$ sudo mkfs.ext4 /dev/vdb1
 mke2fs 1.42.12 (29-Aug-2014)
 Creating filesystem with 2621184 4k blocks and 655360 inodes
 Filesystem UUID: 781be788-c4be-462b-b946-88429a43c0cf
@@ -136,8 +130,7 @@ Creating journal (32768 blocks): done
 Writing superblocks and filesystem accounting information: done
 ```
 
-
-- Montar a partição
+Em seguida, monte a partição utilizando este comando:
 
 ```
 admin@serveur-1:~$ sudo mkdir /mnt/disk
@@ -145,7 +138,7 @@ admin@serveur-1:~$ sudo mount /dev/vdb1 /mnt/disk/
 ```
 
 
-- Verificação da montagem
+Por fim, verifique o ponto de montagem utilizando este comando:
 
 ```
 admin@serveur-1:~$ df -h
@@ -160,12 +153,7 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 9.8G 23M 9.2G 1% /mnt/disk
 ```
 
-
-
-Para montar o disco de forma persistente é necessário modificar o ficheiro /etc/fstab:
-
-
-- Recuperar o ID do bloco
+Para criar um ponto de montagem persistente, é necessário modificar o ficheiro /etc/fstab: Primeiro, utilize o comando abaixo para obter a identificação do bloco.
 
 ```
 admin@serveur-1:~$ sudo blkid
@@ -174,8 +162,7 @@ admin@serveur-1:~$ sudo blkid
 /dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
 ```
 
-
-- Adicionar o seu disco ao ficheiro /etc/fstab :
+Agora pode utilizar a identificação do bloco para alterar o ficheiro /etc/fstab.
 
 ```
 admin@serveur-1:~$ vim /etc/fstab
@@ -191,51 +178,61 @@ UUID=51ba13e7-398b-45f3-b5f3-fdfbe556f62c / ext4 defaults 0 0
 UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
 ```
 
+### Utilizando o Windows
 
+Primeiro, clicar com o botão direito do rato em `Start Menu`{.action} e depois clicar em `Disk Management`{.action}.
 
+![](images/start-menu.png){.thumbnail}
 
+Quando a ferramenta de gestão de discos abrir, verá o seu novo disco como um volume desconhecido com espaço não alocado, como se mostra abaixo.
 
-## A partir de uma instância Windows
+![disk management](images/disk-management-01.png){.thumbnail}
 
-- Aceda à ferramenta de gestão de discos
+#### Inicializar o disco utilizando o Disk Management
 
+Se o disco estiver offline, provavelmente é devido a uma política em vigor na instância. Para resolver isto, clicar com o botão direito do rato no disco e selecionar `Online`{.action}.
 
+![offline disk](images/disk-management-02.png){.thumbnail}
 
-![](images/img_2736.jpg){.thumbnail}
+Para inicializar o seu disco, clicar nele novamente com o botão direito do rato, e desta vez selecionar `Initialise Disk`{.action}.
 
-- Formatar o disco
+![offline disk](images/disk-management-03.png){.thumbnail}
 
+Em seguida, selecione `MBR`{.action} e clique em`OK`{.action}.
 
+![initialise disk](images/initialise-disk.png){.thumbnail}
 
-![](images/img_2737.jpg){.thumbnail}
-Atenção:
-Se recee a mensage "offline (the disk is offline because of policy set by an administrator)", será necessário modificar os atributos dos discos ao efetuar um clique direito no seu disco e depois selecionar "Online", devendo de seguida clicar em "Initialize" ou ao utilizar a ferramenta Diskpart:
+#### Inicializar o disco utilizando DISKPART
 
+Primeiro, clicar com o botão direito do rato no `Start Menu`{.action} e depois clicar em `Run`{.action}.
 
-- Lancer Powershell ou uma linha de comandos
-- Verificação da "policy" aplicada:
+![initialise disk](images/diskpart.png){.thumbnail}
+
+Em seguida, digite `cmd` no prompt Run e depois clique em `OK`{.action}
+
+![run prompt](images/run-prompt.png){.thumbnail}
+
+No prompt de comando, digite o seguinte comando para abrir o utilitário DISKPART
 
 ```
-PS C:\> diskpart
+C:\> diskpart
+```
+
+Em seguida, altere a política do disco com a seguinte série de comandos:
+
+```
 DISKPART> san
 
 SAN Policy : Offline Shared
 ```
 
-
-- Alterar a "policy":
-
 ```
-DISKPART> san policy=OnlineAll
+DISKPART> san policy = OnlineAll
 
-DiskPart successfully changed the SAN policy for the current operating system.
-```
+DiskPart successfully changed the SAN policy for the current operating system . [/ Code]
 
-
-- Aplicação da "policy" no disco suplementar:
-
-```
-DISKPART> list disk
+Implementação da estratégia no disco adicional:
+[Code] DISKPART> list disk
 
 Disk ### Status Size Free Dyn Gpt
 -------- ------------- ------- ------- --- ---
@@ -243,23 +240,17 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-
-
 ```
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-
-
 ```
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
-
-
 
 ```
 DISKPART> attributes disk
@@ -273,23 +264,40 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-
-
 ```
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
 ```
 
+#### Formatar o disco
 
-- Inicie o disco a partir do gestor de discos e proceda de seguida à formatação do disco.
+Abra novamente o utilitário Disk Management, clique com o botão direito do rato no volume e, em seguida, clique em `New Simple Volume...`{.action}
 
+![format disk](images/format-disk-01.png){.thumbnail}
 
-Após o disco ter sido formatado, já será possível que aceda ao mesmo através do explorador de ficheiros.
+Agora, clique em `Next`{.action}.
 
-![](images/img_2738.jpg){.thumbnail}
+![format disk](images/format-disk-02.png){.thumbnail}
 
+Configure o tamanho de disco pretendido. Geralmente, isto deve corresponder a 100% do espaço. Em seguida, clique em`Next`{.action}.
 
-## 
-[Voltar à página principal dos guias Cloud]({legacy}1785)
+![format disk](images/format-disk-03.png){.thumbnail}
 
+Selecione uma letra da lista pendente para identificar o drive e em seguida clique em `Next`{.action}.
+
+![format disk](images/format-disk-04.png){.thumbnail}
+
+Selecione as opções que pretende para o disco e em seguida clique em `Next`{.action} para efetuar a formatação.
+
+![format disk](images/format-disk-05.png){.thumbnail}
+
+Por fim, clique em `Finish`{.action} para concluir a operação.
+
+![format disk](images/format-disk-06.png){.thumbnail}
+
+Logo que o disco estiver formatado, poderá simplesmente aceder-lhe a partir do File Explorer.
+
+## Vá mais longe
+
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
