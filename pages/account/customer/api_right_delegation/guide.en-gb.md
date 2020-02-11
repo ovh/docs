@@ -1,5 +1,5 @@
 ---
-title: 'How to manage a client's account via OVH API'
+title: 'How to manage a customer's account via OVHcloud API'
 slug: api-rights-delegation
 excerpt: 'Find out how to create an application and manage services for your customers'
 section: OVH APIv6
@@ -9,25 +9,27 @@ section: OVH APIv6
 
 ## Objective
 
-In this guide, you'll learn how to use the OVH API to manage services and ressources of someone else account.
+In this guide, you will learn how to use the OVHcloud API to manage services and resources of someone else's account.
 
-As an example, let's assume that you want to create a marketplace where, you as a service provider, can install and configure ressources of other OVH clients.
+As an example, let's assume that you want to create a marketplace in which you, as a service provider, can install and configure resources of other OVHcloud customers.
 
 ## Requirements
 
-- an OVH account
+- an OVHcloud account
 
-## Application registration
+## Instructions
 
-The first part, as the application developper, is to register your application on OVH.
+### Application registration
+
+The first part, as the application developer, is to register your application on OVHcloud.
 
 To do so, go to https://api.ovh.com/createApp/
 
-You'll need to log in and set an application name and description.
+You will need to log in and set an application name and description.
 
 ![image](images/createapp.jpg)
 
-After submittion, you'll get your `Application Key` and `Application Secret`, later refered as `AK` and `AS`.
+Once logged in, you will get your `Application Key` and `Application Secret`, later refered as `AK` and `AS`.
 
 ![image](images/ak-as.jpg)
 
@@ -35,22 +37,22 @@ The `AK` is identifying your application. It can be publicly shared.
 
 The `AS` is a key used to sign the API requests which will be made later by your application. It **must** be kept secret.
 
-## Deploy your application
+### Deploy your application
 
-To illustrate that part, let's assume that you've deployed your application code on a server.
+To illustrate that part, let's assume that you have deployed your application code on a server.
 
-Your application can access the value of `AK` and `AS` and displays a list of software stack or services available for installation by customers.
+Your application can access the value of `AK` and `AS` and displays a list of software stacks or services available for installation by customers.
 
-## Right delegation
+### Rights delegation
 
-Let's assume that a client browsing your marketplace selects a service to deploy on its OVH account. So far, you don't have any right on the client's API. You have to ask the client the permission to manage its ressources.
+Let's assume that a customer browsing your marketplace selects a service to deploy to their OVHcloud account. So far, you don't have any rights on the customer's API. You have to ask their permission to manage its ressources.
 
 
 ### Create a permission request
 
-The first step is for your application to request permissions on the client's API.
+The first step is for your application to request permissions on the customer's API.
 
-To do so, your application will request credential by calling https://api.ovh.com/console/#/auth/credential#POST and passing as argument a list of endpoints the application needs access to.
+To do so, your application will request credentials by calling https://api.ovh.com/console/#/auth/credential#POST and passing as argument a list of endpoints the application needs access to.
 
 <!--
 Application Name: maketplace
@@ -61,7 +63,7 @@ Application Secret: UsNmaE8iqvAV6qT0VieCNVrSys9a5hkr
 
 <!-- https://webhook.site/586c652e-061e-453f-bd71-51912e33419d -->
 
-Example with curl with a access request to `GET /me`.
+Example with curl with an access request to `GET /me`.
 
 ```bash
 export AK=F7gzxgxN5eqwuAsK
@@ -80,19 +82,19 @@ The result of that call will be a JSON dictionary
 }
 ```
 
-As the developper, you have to store the `consumerKey`, later refered as `CK`. This key will be used to sign the OVH API requests on behalf of your client.
+As the developer, you have to store the `consumerKey`, later refered as `CK`. This key will be used to sign the OVHcloud API requests on behalf of your customer.
 
-The request has been made and you need your client to accept it by redirecting him to `validationUrl`
+The request has been made and you need your customer to accept it by redirecting him to `validationUrl`
 
 ### Client login form
 
-After redirecting the client to `validationUrl`, he'll be asked to confirm the right delegation.
+After redirecting the client to `validationUrl`, he will be asked to confirm the rights delegation.
 
 ![rights confirmation](images/validate-ck.jpg)
 
-On sucess, the client will be redirected to the url previously specified by `REDIRECT_URL` in the curl command.
+If successful, the client will be redirected to the url previously specified by `REDIRECT_URL` in the curl command.
 
-### Access client's API
+### Access customer's API
 
 At that point, you should have three tokens:
 
@@ -100,7 +102,7 @@ At that point, you should have three tokens:
 - the application secret `AS`
 - the consumer key `CK`
 
-From there, depending of the requested permissions, you can start managing your customers ressources.
+From there, depending on the requested permissions, you can start managing your customers resources.
 
 ## Summary
 
