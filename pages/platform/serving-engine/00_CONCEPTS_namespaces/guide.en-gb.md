@@ -17,8 +17,8 @@ learning models. That **object storage container** is configurable.
 
 Each namespace is also linked to a [docker
 registry](https://docs.docker.com/registry/). The default [docker
-registry](https://docs.docker.com/registry/) is an OVHcloud provided one but
-this can be configured.
+registry](https://docs.docker.com/registry/) is an OVHcloud provided one
+but this can be configured.
 
 ## Considerations
 
@@ -42,8 +42,5 @@ in a [kubernetes](https://kubernetes.io/) cluster.
 
 ## Going further
 
--   Your can refer to the open source [serving engine official
-    documentation](https://serving-doc-mlg.ai.ovh.net/component/namespaces.html)
-    for more information about namespaces.
 -   You can check the [OVHcloud documention on how to create a
     namespace](../initialize-namespace).

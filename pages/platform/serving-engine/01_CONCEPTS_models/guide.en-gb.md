@@ -47,8 +47,8 @@ Instructions about how to export models can be found here:
 
 ## Under the hood
 
-Each model deployed inside a **serving engine namespace** is actually
-a [docker container](https://www.docker.com/resources/what-container)
+Each model deployed inside a **serving engine namespace** is actually a
+[docker container](https://www.docker.com/resources/what-container)
 built and pushed into the linked [docker
 registry](https://docs.docker.com/registry/) and then started inside the
 [kubernetes
@@ -56,8 +56,9 @@ namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/nam
 
 ## Going further
 
--   Your can refer to the open source [serving engine official
-    documentation](https://serving-doc-mlg.ai.ovh.net/component/models.html)
-    for more information about models.
 -   You can check the [OVHcloud documention on how to deploy preset
     models](../deploy-preset-models).
+-   You can check the [OVHcloud documention on how to deploy custom
+    models](../deploy-serialized-models).
+-   You can check the [supported compatibilities for custom
+    models](../compatibility-matrix)

@@ -2,7 +2,7 @@
 title: Deploy Preset Models
 slug: deploy-preset-models
 excerpt: Learn how to deploy preset models
-section: Howto
+section: How to
 order: 2
 ---
 *Last updated 10th January, 2020.*
@@ -10,7 +10,8 @@ order: 2
 ## Objective
 
 Deploying models is the main feature of the **serving engine**. This
-guide explains step by step how to deploy a **preset model**.
+guide provides step by step instructions on how to deploy a **preset
+model**.
 
 ## Requirements
 
@@ -50,13 +51,13 @@ That name identifies your model among others on your namespace.
 
 ![image](images/03_select_model_name.png){.align-center}
 
-After you filled in your desired wanted name, click the `Next` button.
+Once you chose a name, click the `Next` button.
 
 ### Step 4 - Choose your auto-scaling options
 
 A model is composed of one or several running instance(s). These
 instances are automaticaly scaled by the **serving engine** depending on
-the input load of your model. That step allow you to configure the
+the input load of your model. That step allows you to configure the
 minimum and maximum number of instances that you want to run.
 
 ![image](images/04_select_auto_scale.png){.align-center}
@@ -81,7 +82,7 @@ the wanted flavor among a list of existing ones.
 
 ### Step 6 - Wait for model deployment
 
-The **serving engine** chains the following tasks :
+The **serving engine** sequentially performs the following tasks :
 
 -   The **building** of the model : you should see the **build status**
     as `Building`.

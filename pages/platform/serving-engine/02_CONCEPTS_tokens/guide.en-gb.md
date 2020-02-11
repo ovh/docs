@@ -18,7 +18,7 @@ querying or managing models in a namespace.
 
 ### Roles
 
-There are 2 available roles  :
+There are 2 available roles :
 
 -   `model-management` : Tokens containing this role are allowed to
     manage models (deploy, update, delete) targeted by the applying
@@ -46,13 +46,10 @@ whose identifier starts with `iris` inside its namespace.
 -   Each Token is created inside a [namespace](../namespaces) and is
     only relevant for that [namespace](../namespaces).
 -   Tokens have no expiration date but can be renewed. For security
-    purpose it is important for users to understand that tokens should be
-    regularly renewed to avoid compromised ones.
+    purpose it is important for users to understand that tokens should
+    be regularly renewed to avoid compromised ones.
 
 ## Going further
 
--   Your can refer to the open source [serving engine official
-    documentation](https://serving-doc-mlg.ai.ovh.net/component/tokens.html)
-    for more information about tokens.
 -   You can check the [OVHcloud documention on how to manage
     models](../manage-tokens).

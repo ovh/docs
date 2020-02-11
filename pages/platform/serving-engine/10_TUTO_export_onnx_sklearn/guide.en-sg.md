@@ -1,7 +1,7 @@
 ---
 title: Exporting Scikit-learn models
 slug: export-sklearn-models
-excerpt: Learn how to export Scikit-learn model through ONNX format
+excerpt: Learn how to export a Scikit-learn model through ONNX format
 section: Tutorials
 order: 1
 ---
@@ -88,8 +88,12 @@ Your model is now serialized on you local file system in the
 
 ## Going further
 
-For more information about how to serialize a `scikit-learn` model to
-ONNX serialization format, refer to the [official
-documentation](http://onnx.ai/sklearn-onnx/index.html). For example, you
-can find information about how to serialize [a complex scikit-learn
-pipeline](http://onnx.ai/sklearn-onnx/pipeline.html)
+-   For more information about how to serialize a `scikit-learn` model
+    to ONNX serialization format, refer to the [official
+    documentation](http://onnx.ai/sklearn-onnx/index.html). For example,
+    you can find information about how to serialize [a complex
+    scikit-learn pipeline](http://onnx.ai/sklearn-onnx/pipeline.html)
+-   You can check the [OVHcloud documention on how to deploy custom
+    models](../deploy-serialized-models).
+-   You can check the [supported compatibilities for ONNX
+    models](../compatibility-matrix)

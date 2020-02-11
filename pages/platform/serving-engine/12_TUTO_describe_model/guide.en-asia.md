@@ -9,16 +9,17 @@ order: 3
 
 ## Objective
 
-The objective of this tutorial is to explain how to know what are the
-expected inputs and outputs of a deployed model on OVHcloud model.
+This tutorial will help you identify the expected inputs and outputs of
+a deployed model on OVHcloud serving engine.
 
 ## Requirements
 
 -   Having previously deployed a **serialized model** and knowing the
-    **url** on which it can be requested. Steps explaing how to deploy a
-    serialized model are explained [here](../deploy-serialized-models)
+    **url** on which it can be requested. Detailed steps on how to
+    deploy a serialized model are explained
+    [here](../deploy-serialized-models)
 -   Owning a **token** with `model-evaluation` role for the deployed
-    model. Step for generating such token are described
+    model. Steps for generating such token are described
     [here](../tokens)
 
 ## Describe the models inputs and outputs
@@ -31,7 +32,7 @@ A **named tensors** is a **N-Dimensional array** with :
 -   A identifier name. Example: `my-tensor-name`
 -   A data type. Example: `integer` or `double` or `string`
 -   A shape. Example: `(5)` for a vector of length **5**, `(3, 2)` for a
-    matrix whose first dimension is of size **3** and second dimension
+    matrix which first dimension is of size **3** and second dimension
     is of size **2**. Etc.
 
 You can get access to the model inputs and outputs by calling the http
@@ -108,5 +109,10 @@ In this example, the deployed model is waiting for 4 tensors as inputs :
 It will answer a response with 2 tensors as outputs :
 
 -   `output_label` of shape `(-1)` (i.e. a vector of any size)
--   `output_probability` of shape `(-1, 2)` (i.e. a matrix whose first
-    dimension is of any size and whose second dimension is of size 2)
+-   `output_probability` of shape `(-1, 2)` (i.e. a matrix which first
+    dimension is of any size and which second dimension is of size 2)
+
+## Going further
+
+-   You can check the [OVHcloud documention on how to query custom
+    models](../query-model).

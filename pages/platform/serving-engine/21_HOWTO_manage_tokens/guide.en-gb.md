@@ -14,7 +14,8 @@ make you an admin of that namespace. However you probably want to
 delegate access rights and restrictions to other people inside your
 organization.
 
-This guide guides you through the process of creating tokens for your users.
+This guide guides you through the process of creating tokens for your
+users.
 
 ## Requirements
 
@@ -48,16 +49,19 @@ button.
 
 ### Step 3 - Copy and save your token
 
-A green box indicates that your token has been created correctly. You will find it displayed underneath.
+A green box indicates that your token has been created correctly. You
+will find it displayed underneath.
 
 ![Token created page](images/02_token_created.png){.thumbnail}
 
-You can choose to give this token to your user or use it yourself to interact with the **serving engine** platform.
+You can choose to give this token to your user or use it yourself to
+interact with the **serving engine** platform.
 
 > [!warning]
 >
 > This is the only moment that the token is diplayed to you. We strongly
-> advise you to save it and store it, otherwise you will need to renew it.
+> advise you to save it and store it otherwise you will need to renew
+> it.
 
 ## Renewing a token
 
@@ -69,6 +73,6 @@ button and then `Regenerate`.
 
 ## Going Further
 
--   You can check the official documentation of the open source 
+-   You can check the official documentation of the open source
     **serving engine** product about
     [Tokens](https://serving-doc-mlg.ai.ovh.net/component/tokens.html)

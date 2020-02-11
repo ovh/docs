@@ -10,7 +10,8 @@ order: 3
 ## Objective
 
 Deploying models is the main feature of the **serving engine**. This
-guide provides step by step instructions on how to deploy a **serialized model**.
+guide provides step by step instructions on how to deploy a **serialized
+model**.
 
 ## Requirements
 
@@ -153,3 +154,5 @@ different endpoints of your model if you want to test quickly.
 -   You can check the official documentation of the open source product
     **serving engine** about
     [Models](https://serving-doc-mlg.ai.ovh.net/component/models.html)
+-   You can check the [supported compatibilities for custom
+    models](../compatibility-matrix)

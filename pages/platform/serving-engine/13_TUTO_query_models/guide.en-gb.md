@@ -9,14 +9,15 @@ order: 4
 
 ## Objective
 
-This tutorial will tech you how to query deployed model
-on OVHcloud serving engine.
+This tutorial will tech you how to query deployed model on OVHcloud
+serving engine.
 
 ## Requirements
 
 -   Having previously deployed a **serialized model** and knowing the
-    **url** on which it can be requested. Detailed steps on how to deploy a
-    serialized model are explained [here](../deploy-serialized-models)
+    **url** on which it can be requested. Detailed steps on how to
+    deploy a serialized model are explained
+    [here](../deploy-serialized-models)
 -   Owning a **token** with `model-evaluation` role for the deployed
     model. Steps to generate such a token are described
     [here](../tokens)
@@ -47,10 +48,12 @@ Two attached headers are available for your query:
 
 ### Supported Content-Type headers
 
--   `application/json` : A json document which **key** are the **input tensors** names and **values** are the n-dimensional json arrays matching your tensors.
+-   `application/json` : A json document which **key** are the **input
+    tensors** names and **values** are the n-dimensional json arrays
+    matching your tensors.
 
--   `image/png` : A bytes content which representation is a **png** encoded
-    image.
+-   `image/png` : A bytes content which representation is a **png**
+    encoded image.
 
 -   `image/jpeg` : A bytes content which representation is a **jpeg**
     encoded image.
@@ -61,8 +64,8 @@ Two attached headers are available for your query:
 > single tensor as input. That tensor's shape should also be compatible
 > with an image representation.
 
--   `multipart/form-data` : A multipart body, each part of which is named by
-    an **input tensor**.
+-   `multipart/form-data` : A multipart body, each part of which is
+    named by an **input tensor**.
 
 > [!primary]
 >
@@ -75,8 +78,8 @@ Two attached headers are available for your query:
     tensors** names and **values** are the n-dimensional json arrays
     matching your tensors.
 
--   `image/png` : A bytes content which representation is a **png** encoded
-    image.
+-   `image/png` : A bytes content which representation is a **png**
+    encoded image.
 
 -   `image/jpeg` : A bytes content which representation is a **jpeg**
     encoded image.
@@ -89,13 +92,15 @@ Two attached headers are available for your query:
 
 -   `text/html` : A HTML document displaying the **output tensors**
     representation.
--   `multipart/form-data` : A multipart body, each part of which is named by
-    an **output tensor** and the content is the tensor json
+-   `multipart/form-data` : A multipart body, each part of which is
+    named by an **output tensor** and the content is the tensor json
     representation.
 
 > [!primary]
 >
-> If you want some of the output tensors in `multipart/form-data` and `text/html` header to be interpreted as an image, you > can specify it as a parameter in the header.
+> If you want some of the output tensors in `multipart/form-data` and
+> `text/html` header to be interpreted as an image, you can specify it
+> as a parameter in the header.
 >
 > **Example** : The header
 > `text/html; tensor_1=image/png; tensor_2=image/png` returns the global
@@ -241,3 +246,9 @@ be `1` with the following probabilities :
 
 -   1% of chance to be `0`
 -   99% of chance to be `1`
+
+## Going further
+
+-   You can check the [OVHcloud documention on how to manage
+    models](../manage-tokens) for fine configuration of access rights
+    over models.

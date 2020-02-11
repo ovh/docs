@@ -1,7 +1,7 @@
 ---
-title: Exporting TensorFlow model
+title: Exporting a TensorFlow model
 slug: export-tensorflow-models
-excerpt: Learn how to export Tensorflow model
+excerpt: Learn how to export a Tensorflow model
 section: Tutorials
 order: 2
 ---
@@ -88,10 +88,10 @@ In the previous example, four tensors are transformed:
 -   `petal_width` of shape `[None, 1]`
 
 Into a single tensor `x` of shape `[None, 4]` before feeding the
-classifier. .. note:: The `None` value in a tensor represents a
-dimension of arbitrary length. For example if you are using a
-classification algorithm `None` can simply be the number of record you
-wish to classify.
+classifier. Note: The `None` value in a tensor represents a dimension of
+arbitrary length. For example, if you are using a classification
+algorithm, `None` can simply be the number of records you wish to
+classify.
 
 ## Launch the conversion and save it into a file
 
@@ -108,3 +108,10 @@ classifier.export_saved_model(
     serving_input_receiver_fn=serving_input_receiver_fn
 )
 ```
+
+## Going further
+
+-   You can check the [OVHcloud documention on how to deploy custom
+    models](../deploy-serialized-models).
+-   You can check the [supported compatibilities for Tensorflow
+    SavedModel](../compatibility-matrix)

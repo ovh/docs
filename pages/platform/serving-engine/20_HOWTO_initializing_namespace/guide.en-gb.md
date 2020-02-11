@@ -2,7 +2,7 @@
 title: Initialize a Namespace
 slug: initialize-namespace
 excerpt: Learn how to initialize an OVHcloud Serving Engine Namespace
-section: Howto
+section: How to
 order: 0
 ---
 *Last updated 10th January, 2020.*
@@ -29,8 +29,9 @@ section of the **OVHcloud control panel** and are located under
 
 ### Step 2 - Start the creation of a new namespace
 
-Once you read general information and validated this product's contract terms, you can start the creation of a namespace by clicking on
-the `Create a namespace` button.
+Once you read general information and validated this product's contract
+terms, you can start the creation of a namespace by clicking on the
+`Create a namespace` button.
 
 ![image](images/01_create_namespace_info.png){.align-center}
 

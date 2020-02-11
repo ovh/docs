@@ -2,7 +2,7 @@
 title: Deploy Preset Models
 slug: deploy-preset-models
 excerpt: Learn how to deploy preset models
-section: Howto
+section: How to
 order: 2
 ---
 *Last updated 10th January, 2020.*
@@ -10,7 +10,8 @@ order: 2
 ## Objective
 
 Deploying models is the main feature of the **serving engine**. This
-guide provides step by step instructions on how to deploy a **preset model**.
+guide provides step by step instructions on how to deploy a **preset
+model**.
 
 ## Requirements
 
