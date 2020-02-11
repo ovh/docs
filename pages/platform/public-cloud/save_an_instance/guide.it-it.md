@@ -1,52 +1,85 @@
 ---
 title: 'Effettuare lo Snapshot di un''istanza'
-excerpt: 'Come eseguire l’istantanea di un’istanza Public Cloud OVH'
+excerpt: 'Come eseguire l’istantanea di un’istanza Public Cloud OVHcloud'
 slug: effettuare-snapshot-di-un-istanza
 legacy_guide_number: g1881
 section: 'Spazio Cliente OVH'
 ---
 
-**Ultimo aggiornamento: 27/03/2019**
+**Ultimo aggiornamento: 22/11/2019**
 
 ## Obiettivo
 
 Dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} è possibile creare uno Snapshot in qualsiasi momento e utilizzarlo per ripristinare una configurazione precedente o creare una nuova istanza.
 
-**Questa guida ti mostra come eseguire l’istantanea di un’istanza Public Cloud OVH in pochi click.**
+**Questa guida ti mostra come eseguire l’istantanea di un’istanza Public Cloud OVHcloud in pochi click.**
 
 ## Prerequisiti
 
-- [Disporre di un’istanza Public Cloud OVH](https://docs.ovh.com/it/public-cloud/crea_unistanza_dallo_spazio_cliente_ovh/)
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Cloud`{.action}
+- [Disporre di un’istanza Public Cloud](../creer-instance-espace-client/)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Procedura
 
-### Step 1: accedi alla gestione dell’istanza
+### Effettua un backup dell’istanza
 
-Accedi alla sezione “Cloud” dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca su `Server`{.action} nel menu a sinistra, seleziona il tuo servizio Public Cloud e, nella scheda `Compute`{.action}, assicurati di essere posizionato su “Istanze”.
+Accedi al tuo[Spazio Cliente OVHcloud], seleziona la scheda Public Cloud e poi la sezione `Istanze`{.action}.
 
-![public-cloud](images/2803-2.png){.thumbnail}
+Clicca sui `...`{.action} a destra dell’istanza che ti interessa e poi su `Crea uno Snapshot`{.action}.
 
-### Step 2: crea lo Snapshot di un’istanza
+![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 
-Nel riquadro di gestione dell’istanza, clicca sulla freccia verso il basso e seleziona l’opzione `Crea uno Snapshot`{.action}.
+Nella nuova finestra, assegna un nome alla tua istantanea.
 
-![public-cloud](images/2803-3.png){.thumbnail}
+![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Nella nuova finestra, assegna un nome alla tua istantanea e  **leggi le informazioni relative a eventuali costi aggiuntivi legati alla sua creazione**, poi clicca su `Avvia lo Snapshot`{.action}.
+Una volta terminata l’operazione, visualizzi l’istantanea nella sezione`Instance Backup`{.action}.
 
-![public-cloud](images/2805-2.png){.thumbnail}
+![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
-### Step 3: accedi agli Snapshot di un’istanza
+### Crea lo Snapshot di un’istanza
 
-Per visualizzare gli Snapshot di un’istanza Public Cloud, clicca su `Compute`{.action} e seleziona l’opzione `Snapshot`{.action}.
+Nella sezione `Istanze`{.action}, seleziona l’opzione`Crea uno Snapshot`{.action} tra le azioni disponibili per l’istanza interessata.
 
-Visualizzi una tabella con tutti gli Snapshot disponibili: utilizza i pulsanti situati a destra per scegliere le azioni che intendi eseguire.
+![public-cloud-instance-backup](images/createbackup4.png){.thumbnail}
 
-![public-cloud](images/2807-2.png){.thumbnail}
+Nella nuova finestra, ti verrà chiesto di inserire alcune informazioni :
+
+#### **Il workflow** 
+
+Attualmente esiste un unico workflow, che eseguirà un’istantanea dell’istanza e del suo volume principale.
+
+![public-cloud-instance-backup](images/createbackup5.png){.thumbnail}
+
+#### **La risorsa** 
+
+È sufficiente selezionare l’istanza della quale vuoi creare uno Snapshot.
+
+![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
+
+#### **L’autorizzazione** 
+
+Definisci la frequenza degli Snapshot. Di default, hai due opzioni:
+
+* Uno Snapshot giornaliero con una cronologia consultabile per un massimo di 7 giorni 
+* Uno Snapshot giornaliero con una cronologia consultabile per un massimo di 14 giorni
+
+![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
+
+    
+#### **Il naming** 
+
+Assegna un nome alla tua istantanea.
+ 
+![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
+
+Una volta creata, potrai visualizzarla nella sezione`Workflow Management`{.action}:
+
+![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
+
+Visualizzi gli Snapshot disponibili nella sezione `Instance Backup`{.action} e addebitati come tali.
+
 
 ## Per saperne di più
 
-[Creare un’istanza dallo Spazio Cliente OVH](https://docs.ovh.com/it/public-cloud/crea_unistanza_dallo_spazio_cliente_ovh/){.external}
-
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
