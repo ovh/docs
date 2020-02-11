@@ -1,7 +1,7 @@
 ---
 title: 'Effettuare lo Snapshot di un''istanza'
-excerpt: 'Come eseguire l’istantanea di un’istanza Public Cloud OVHcloud'
 slug: effettuare-snapshot-di-un-istanza
+excerpt: 'Come eseguire l’istantanea di un’istanza Public Cloud OVHcloud'
 legacy_guide_number: g1881
 section: 'Spazio Cliente OVH'
 ---
@@ -16,14 +16,14 @@ Dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.extern
 
 ## Prerequisiti
 
-- [Disporre di un’istanza Public Cloud](../creer-instance-espace-client/)
+- [Disporre di un’istanza Public Cloud](https://docs.ovh.com/it/public-cloud/crea_unistanza_dallo_spazio_cliente_ovh/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Procedura
 
 ### Effettua un backup dell’istanza
 
-Accedi al tuo[Spazio Cliente OVHcloud], seleziona la scheda Public Cloud e poi la sezione `Istanze`{.action}.
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona la scheda Public Cloud e poi la sezione `Istanze`{.action}.
 
 Clicca sui `...`{.action} a destra dell’istanza che ti interessa e poi su `Crea uno Snapshot`{.action}.
 
