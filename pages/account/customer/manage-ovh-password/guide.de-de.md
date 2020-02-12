@@ -2,9 +2,11 @@
 title: 'Das Passwort Ihres Kunden-Accounts anlegen und verwalten'
 slug: Passwort-verwalten
 excerpt: 'Sehen Sie hier, wie Sie das Passwort Ihres OVHcloud Kundencenters anlegen, ändern und verwalten können'
-section: Sicherheit
-hidden: true
+section: 'Erste Schritte'
+hidden: false
 ---
+
+**Letzte Aktualisierung am 12.02.2020**
 
 ## Ziel
 
@@ -43,7 +45,7 @@ Um Passwörter zu erstellen gibt es mehrere effiziente Methoden. Aus diesen empf
 
 In französischer Sprache bietet die Nationale Kommission für Informatik und Freiheiten (frz. CNIL) ebenfalls ein Werkzeug an, um auf Grundlage der Anfangsbuchstaben ein solides Passwort zu erstellen.
 
-Links zu detaillierteren Beschreibungen finden Sie im Abschnitt [Weiterführende Informationen](https://docs.ovh.com/de/customer/alles_uber_ihre_ovh_kundenkennung/#weiterfuhrende-informationen) am Ende dieser Anleitung.
+Links zu den ausführlichen Beschreibungen finden Sie im Abschnitt [Weiterführende Informationen](./#weiterfuhrende-informationen) am Ende dieser Anleitung.
 
 ### Einen Passwort-Manager verwenden 
 
@@ -92,13 +94,13 @@ Wenn Ihr Passwort gestohlen wurde, empfehlen wir Ihnen nachdrücklich, [es schne
 - Eine Meldung über die erfolgreiche Aktion erscheint. Klicken Sie auf die Schaltfläche `Weiter`{.action} unter dieser Nachricht, um zur Anmeldeseite weitergeleitet zu werden. Geben Sie nun Ihre Kennung und Ihr neues Passwort ein.
 
 
-#### Wenn Sie Ihr aktuelles Passwort nicht kennen, 
+#### Wenn Sie Ihr aktuelles Passwort nicht kennen 
 
-- klicken Sie auf `Kennung oder Passwort vergessen?`{.action} wenn Sie zum Anmeldefenster Ihres OVHcloud Kundencenters kommen.
+- klicken Sie auf `Login oder Passwort vergessen?`{.action} wenn Sie zum Anmeldefenster Ihres OVHcloud Kundencenters kommen.
 
 ![ovh-passwort-verwalten](images/account-password-modif-forgotten-step1.png){.thumbnail}
 
-- geben Sie Ihre OVHcloud Kundenkennung oder die E-Mail-Adresse, die Ihrem OVHcloud Kunden-Account als erstes zugeordnet ist, an, und klicken Sie dann auf `Absenden`{.action}. 
+- geben Sie Ihre OVHcloud Kundenkennung oder die E-Mail-Adresse, die Ihrem OVHcloud Kunden-Account als Primäradresse zugeordnet ist, an, und klicken Sie dann auf `Absenden`{.action}. 
 
 ![ovh-passwort-verwalten](images/account-password-modif-forgotten-step2.png){.thumbnail}
 
