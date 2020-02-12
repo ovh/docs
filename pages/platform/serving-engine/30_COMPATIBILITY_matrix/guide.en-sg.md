@@ -16,10 +16,10 @@ We currently support 3 serialisation format for models :
 
 We support the version of ONNX : `1.5`
 
-### Tensorflow Savedmodel 
+### Tensorflow serialized through SavedModel or HDF5
 
-We support the version of tensorflow SavedModel : `<=1.15`
+We support the version of tensorflow : `<=1.15`
 
-### JPPML
+### PMML
 
-We support the version of JPMML : `1.4`
+We support the version of PMML : `1.4`
