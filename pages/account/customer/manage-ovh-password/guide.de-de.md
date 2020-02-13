@@ -44,7 +44,7 @@ Um Passwörter zu erstellen gibt es mehrere effiziente Methoden. Aus diesen empf
 
 In französischer Sprache bietet die Nationale Kommission für Informatik und Freiheiten (frz. CNIL) ebenfalls ein Werkzeug an, um auf Grundlage der Anfangsbuchstaben ein solides Passwort zu erstellen.
 
-Links zu den ausführlichen Beschreibungen finden Sie im Abschnitt [Weiterführende Informationen](./#weiterfuhrende-informationen) am Ende dieser Anleitung.
+Links zu den ausführlichen Beschreibungen finden Sie im Abschnitt [Weiterführende Informationen](./#weiterfuhrende-informationen_2) am Ende dieser Anleitung.
 
 ### Einen Passwort-Manager verwenden 
 
@@ -120,17 +120,12 @@ Wenn Ihr Passwort gestohlen wurde, empfehlen wir Ihnen nachdrücklich, [es schne
 
 ## Weiterführende Informationen
 
-[Die Sicherheitsempfehlungen zu Passwörtern der ANSSI](https://www.ssi.gouv.fr/uploads/IMG/pdf/NP_MDP_NoteTech.pdf){.external}
+[Grundlegende Sicherheitsmaßnahmen zu Passwörtern vom BSI](https://www.bsi-fuer-buerger.de/BSIFB/DE/Empfehlungen/Passwoerter/passwoerter_node.html)
 
-[Grundlegende Sicherheitsmaßnahmen zu Passwörtern vom BSI](https://www.bsi-fuer-buerger.de/BSIFB/DE/Empfehlungen/Passwoerter/passwoerter_node.html){.external}
+[Passwort-Check des Bayerischen Staatsministeriums für Digitales](https://www.stmd.bayern.de/service/passwort-check/)
 
-[Ein Werkzeug zum Erstellen von Passwörtern, das die CNIL anbietet](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide){.external}
+[Der Passwort-Manager Keepass](https://keepass.info/)
 
-[Die Tipps von cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/){.external}
-
-[Der Passwort-Manager Keepass](https://keepass.info/){.external} 
-
-[Dazu eine Anleitung der Universität Mannheim](https://www.uni-mannheim.de/informationssicherheit/infomaterial/anleitung-keepass/#c132623){.external}
-
+[Dazu eine Anleitung der Universität Mannheim](https://www.uni-mannheim.de/informationssicherheit/infomaterial/anleitung-keepass/#c132623)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
