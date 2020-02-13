@@ -6,7 +6,7 @@ legacy_guide_number: 2029
 section: 'Résolution des défauts'
 ---
 
-**Dernière mise à jour le 13 mars 2019**
+**Dernière mise à jour le 13 février 2020**
 
 ## Objectif
 
