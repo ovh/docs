@@ -1,0 +1,26 @@
+title Right delegation sequence 1/2
+
+participant Developper as dev
+participant api.ovh.com as api
+participant www.mymarketplace.com as app
+
+note over dev
+    As a developper, I want to create an application
+    which can deploy a software stack
+    on a customer's account
+end note
+
+note over dev
+    I need first to register my application
+end note
+
+dev -> api: go to https://api.ovh.com/createApp/
+api -> dev: return a new AK / AS
+dev ->> app: deploy application code with AK / AS
+
+note over app
+    AK / AS are stored on the server.
+    The application is serving web pages with an application catalog
+end note
+
+destroy dev
