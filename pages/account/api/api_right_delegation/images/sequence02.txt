@@ -1,0 +1,51 @@
+title Right delegation sequence 2/2
+participant api.ovh.com as api
+participant www.mymarketplace.com as app
+participant Customer as client
+
+note over client
+    As a customer, I want to deploy a software stack
+    on my OVHcloud account with a one click action button
+end note
+
+
+note over client, app
+    browsing the application catalog
+    and click on 'Deploy'
+end note
+
+client -> app: /myapp/deploy?app=XYZ
+
+note over app
+    the application needs the customer's approval
+    to interract with his account
+end note
+
+note left of app: request a new CK and specify a redirectionUrl
+app -> api: /auth/credential to create a CK
+api -> app: return a CK and validationUrl
+
+note over app: the CK is not valid as long as the client doesn't validate it
+
+app ->> client: redirect client to validationUrl
+
+client -> *OVH login form: go to validationUrl
+note over OVH login form
+    customer authenticates himsef
+    with 2FA if activated
+end note
+OVH login form -> api: validate the CK
+api --> OVH login form:
+OVH login form ->> client: redirect to redirectionUrl
+destroy OVH login form
+
+client -> app: go to redirectionUrl
+
+note over app: the application has now the permission to manage customer's tenant
+
+loop deploy XYZ in client tenant
+    app -> api: uses AK/AS/CK
+end
+
+#A->+B: text1
+#B-->-A: text2
