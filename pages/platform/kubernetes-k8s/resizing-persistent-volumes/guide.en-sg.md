@@ -289,7 +289,7 @@ Let's put `replicas` back to `1` on `mysql-deployment.yaml`, and deploy it again
 kubectl patch deployment mysql -p '{ "spec": { "replicas": 1 }}'
 ```
 
-After the pod starts, we can use again `kubectl describe pvc mysql-pv-claim` and we see that the PV size is 4 GB.
+After the pod starts, we can use again `kubectl describe pvc mysql-pv-claim` and we see that the PV size is 6 GB.
 
 
 On my example cluster:
