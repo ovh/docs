@@ -6,59 +6,72 @@ section: 'Fonctionnalités des adresses e-mail'
 order: 4
 ---
 
-OVH propose à ses clients une solution de mailing list. Cette dernière est comprise dans certaines offres d'[hébergement Web](http://www.ovh.com/fr/hebergement-web/){.external} et [MxPlan](https://www.ovh.com/fr/produits/mxplan.xml){.external}.
+**Dernière mise à jour le 13/02/2020**
 
-## La mailing list
+## Objectif
 
-### Généralités
+Une mailing list vous permet de contacter des abonnés en masse, c'est à dire de diffuser un message ou une information à plusieurs destinataires à la fois. Cela peut avoir un intérêt dans le cadre d'un mailing d'information, par exemple, sur la sortie d'un nouveau produit (pour un site e-commerce) ou pour informer d'un prochain rassemblement (pour un site communautaire). 
 
-Une mailing list vous permet de contacter des abonnés en masse, c'est à dire de diffuser un message ou une information à plusieurs destinataires à la fois. Ceci peut avoir un intérêt dans le cadre d'un mailing d'information sur la sortie d'un nouveau produit (pour un site e-commerce) ou pour informer d'un prochain rassemblement (pour un site communautaire). Il existe diverses utilisations qui peuvent répondre à vos besoins.
+**Découvrer comment gérer vos mailing-lists**
 
-Ezmlm est un gestionnaire de listes de diffusion très répandu et performant. Nous allons voir dans ce guide comment créer, gérer et configurer une mailing list.
+### Principe de la modération
 
+Une mailing list peut être modérée pour éviter que n'importe qui n'envoie d'e-mail à votre liste d'abonnés. Une mailing list modérée pourra servir à l'envoi de newsletters, tandis qu'une mailing list non modérée permettra de réaliser facilement un dialogue entre plusieurs abonnés par e-mail.
 
+**Mailing list sans modération**
 
-> [!alert]
+![emails](images/manage_mailing-lists_no-modarate.png){.thumbnail}
+
+L'expéditeur (sender) transmet l'e-mail à la mailing list, les abonnés (subscribers) recoivent directement l'e-mail.
+
+**Mailing list avec modération**
+
+![emails](images/manage_mailing-lists_modarate.png){.thumbnail}
+
+L'expéditeur (sender) transmet l'e-mail à la mailing list. Le modérateur (moderator) reçoit un e-mail avec une demande de validation ou de refus. Si le modérateur valide, les abonnés (subscribers) recoivent l'e-mail transmis à la mailing list. Si le modérateur refuse, l'email de l'expéditeur est effacé et les abonnées ne reçoivent rien.
+
+> [!warning]
 >
-> - Il faut garder à l'esprit qu'une mailing list n'est pas une solution à l'envoi de Spam (messages de publicités) en masse. Ce type d'utilisation est toléré dans une certaine mesure tant que celle-ci ne se révèle pas abusive.
-> - Sachez qu'à tout moment, un utilisateur peut décider de se désabonner d'une liste de diffusion, mais peut également reporter tout abus si il le juge probant.
+> - Une mailing list n'est pas une solution prévue pour l'envoi de spam (messages de publicités) en masse. Cette utilisation est tolérée dans une certaine mesure tant qu'elle ne se révèle pas abusive.
+> - Un abonné peut, à tout moment, décider de se désinscrire d'une mailing list. Il peut également reporter tout abus s'il le juge avéré.
 >
 
-## Utiliser la mailing list OVH
+## Prérequis
+
+- Disposez d'une offre e-mail MX Plan 100 minimum ou d'un [Hébergement Web](https://www.ovh.com/fr/hebergement-web/){.external} éligible aux listes de diffusion.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/manager/web/login/){.external}.
+
+## En pratique
 
 ### Créer sa mailing list
 
-Dans notre exemple, il s'agit du service mailing list associée à une offre mutualisée pro. Afin de créer votre mailing list, vous devez dans un premier temps vous rendre dans votre [Espace client](http://www.ovh.com/manager/web){.external} OVH.
+Afin de créer votre mailing list, rendez-vous dans votre [Espace client OVHcloud](http://www.ovh.com/manager/web){.external}  et sélectionnez l'onglet `Web`{.action} en haut.
 
-Une fois connecté, sélectionnez votre hébergement dans la section `Emails`{.action} puis cliquez sur l'onglet `mailing lists`{.action}.
+Une fois connecté, cliquez dans la colonne de gauche sur `Emails`{.action} puis sur le nom de domaine concerné. Dirigez-vous sur l'onglet `mailing lists`{.action} de votre service e-mail.
 
-![emails](images/img_3626.jpg){.thumbnail}
+![emails](images/manage_mailing-lists_01.png){.thumbnail}
 
-Si vous avez déjà créé des mailing lists, celles-ci apparaissent dans le tableau récapitulatif. Dans notre exemple aucune mailing list n'est crée.
+Si vous avez déjà créé des mailing lists, celles-ci apparaissent dans le tableau récapitulatif. Dans l'exemple ci-dessous, une mailing list a déjà été créée.
 
-Pour créer une nouvelle mailing list, cliquez sur Ajouter une mailing list.
+Pour créer une nouvelle mailing list, cliquez sur `Ajouter une mailing list`{.action}.
 
+![emails](images/manage_mailing-lists_02.png){.thumbnail}
 
-![emails](images/img_3017.jpg){.thumbnail}
+Complétez le formulaire selon les informations décrites dans le tableau ci-dessous:
 
-Voici le formulaire pour créer votre mailing list, plusieurs informations sont nécessaires afin de pouvoir le valider :
-
-- Nom : le nom de votre mailing list
-- Propriétaire : saisir l'adresse e-mail du propriétaire de la mailing list (il sera aussi modérateur)
-- Réponse à : définir l'adresse de réponse
-- Langue : sélectionner la langue de votre mailing list (traduction des e-mails automatiques d'inscription ou de désinscription)
-- Modération des messages : le propriétaire (modérateur) doit approuver les réponses.
-- Modération des abonnés : le propriétaire (modérateur) doit approuver les inscriptions
-- Seuls les abonnés peuvent poster : il n'est pas possible d'envoyer un e-mail à la mailing list si la personne n'est pas inscrite à celle-ci
-
-
-![emails](images/img_3019.jpg){.thumbnail}
-
-Une fois le formulaire de création validé, un message de confirmation apparait :
+| Information                      	| Description                                                                                                            	|
+|----------------------------------	|------------------------------------------------------------------------------------------------------------------------	|
+| Nom                              	| Le nom de votre mailing list.                                                                                          	|
+| Propriétaire                     	| Saisissez l'adresse e-mail du propriétaire de la mailing list (il sera aussi modérateur).                              	|
+| Réponse à                        	| Definissez le(s) destinataire(s) lorsque qu'un abonné répond à la mailing-list.                                        	|
+| Langue                           	| Sélectionnez la langue des mentions automatiques d'inscription ou de désinscription de votre mailing list.				|
+| Modérer tous les messages         | Le propriétaire ou un modérateur doit approuver l'e-mail envoyé à la mailing-list.                                     	|
+| Seuls les abonnés peuvent poster 	| Restreint l'envoi d'e-mails sur la mailing list aux seules abonnés de celle-ci.              								|
+| Tout le monde peut poster (aucune modération) | L'envoi d'un e-mail à la mailing-list est directement envoyé aux abonnés sans validation.             		|
+| Modération des abonnés         	| Le propriétaire, ou un modérateur, doit approuver les inscriptions à la mailing-list.                                    	|
 
 
-![emails](images/img_3020.jpg){.thumbnail}
-
+![emails](images/manage_mailing-lists_03.png){.thumbnail}
 
 
 > [!primary]
@@ -69,57 +82,68 @@ Une fois le formulaire de création validé, un message de confirmation apparait
 > - 250 sans modération des messages
 >
 
-### Principe de la modération
 
-Une mailing list peut être modérée pour éviter que n'importe qui n'envoie d'e-mail à votre liste d'abonnés. Une mailing list modérée sert principalement à réaliser l'envoi de newsletters par exemple, contrairement à une mailing list non modérée qui servira plus facilement à réaliser un dialogue entre plusieurs abonnés par e-mail.
+### Gérer les options de la mailing list
 
+Pour modifier les options de la mailing list, cliquez sur `...`{.action} à droite de celle-ci. Vous pourrez alors mettre à jour les options, supprimer la mailing list ou encore partager la liste de ses abonnés par e-mail. 
 
-![emails](images/img_3565.jpg){.thumbnail}
-
-.
+![emails](images/manage_mailing-lists_04.png){.thumbnail}
 
 
-![emails](images/img_3564.jpg){.thumbnail}
+### Gérer les abonnés
 
+Pour gérer les abonnés de votre mailing list, cliquez sur la silhouette dans la colonne «Abonnés».
 
-### Modifier les options de la mailing list ou la supprimer
+![emails](images/manage_mailing-lists_05.png){.thumbnail}
 
-Si vous souhaitez modifier les options précédemment validées lors de la création de la mailing list ou la supprimer, cliquez sur la roue crantée à droite de votre mailing list.
+La fenêtre suivante apparait :
 
-![emails](images/img_3021.jpg){.thumbnail}
+![emails](images/manage_mailing-lists_06.png){.thumbnail}
 
+#### Ajouter/Supprimer des abonnés
 
-### Importer des abonnés
+|Ajouter des abonnés|Supprimer des abonnés|
+|---|---|
+|Cliquez sur `Ajouter des abonnés`{.action} à droite.|Cliquez sur `Supprimer via un fichier`{.action} à droite.|
+|![emails](images/manage_mailing-lists_07.png){.thumbnail}|![emails](images/manage_mailing-lists_07b.png){.thumbnail}|
 
-Dans notre exemple nous n'avons pas encore enregistré d'abonné. Pour ce faire il faut cliquer sur le symbole noire dans la section "Abonnés"
+Il y a 2 méthodes pour ajouter/supprimer des abonnés:
 
+- la saisie manuelle d'adresses en cliquant sur `Ajouter une adresse email`{.action}.
+- l'import d'un fichier texte contenant une adresse email par ligne, en cliquant sur l'icône de téléchargement au dessus du cadre de saisie.
 
-![emails](images/img_3022.jpg){.thumbnail}
+#### Exporter votre liste d'abonnés vers un fichier CSV
 
-- Cliquez sur `Ajouter des abonnés`{.action} afin de pouvoir ajouter vos abonnés.
+Cliquez sur `exporter les abonnés en CSV`{.action} afin de générer un fichier CSV contenant l'ensemble de vos abonnés. Cette option n'est pas disponible dans notre cas car aucun abonné n'a été ajouté.
+ 
+### Gérer les modérateurs
 
+Pour gérer les modérateurs de votre mailing list, cliquez sur la silhouette dans la colonne « Modérateurs ».
 
-![emails](images/3023.png){.thumbnail}
+![emails](images/manage_mailing-lists_08.png){.thumbnail}
 
-Il y a 2 méthodes pour ajouter des abonnés à une mailing list :
+La fenêtre suivante apparait :
 
-- la saisie d'adresse manuelle ;
-- l'import d'un fichier texte contenant une adresse email par ligne.
+![emails](images/manage_mailing-lists_09.png){.thumbnail}
 
+#### Ajouter/Supprimer des modérateurs
 
-![emails](images/3030.png){.thumbnail}
+|Ajouter des modérateurs|Supprimer des modérateurs|
+|---|---|
+|Cliquez sur `Ajouter des modérateurs`{.action} à droite.|Cliquez sur `Supprimer via un fichier`{.action} à droite.|
+|![emails](images/manage_mailing-lists_10.png){.thumbnail}|![emails](images/manage_mailing-lists_10b.png){.thumbnail}|
 
-Une fois la validation réalisée, un message de confirmation apparait :
+Il y a 2 méthodes pour ajouter/supprimer des modérateurs:
 
+- la saisie manuelle d'adresses en cliquant sur `Ajouter une adresse email`{.action}.
+- l'import d'un fichier texte contenant une adresse email par ligne, en cliquant sur l'icône de téléchargement au dessus du cadre de saisie.
 
-![emails](images/img_3033.jpg){.thumbnail}
+> [!primary]
+> - Lorsque plusieurs modérateurs sont définis sur une mailing list, la validation d'un seul des modérateurs suffit pour que l'e-mail soit diffusé aux abonnés.
+> - Lorsqu'un modérateur envoie un e-mail à la mailing list, seul lui reçoit l'e-mail de modération.
+> 
 
 Selon le nombre d'abonnés à ajouter, cela peut prendre un certains temps afin de réaliser l'opération.
-
-
-### Exporter votre liste d'abonnés vers un fichier CSV
-
-- Cliquez sur `exporter les abonnés en CSV`{.action} afin de générer un fichier CSV contenant l'ensemble de vos abonnés. Cette option n'est pas disponible dans notre cas car aucun abonné n'a été ajouté.
 
 
 ### S'inscrire à une mailing list
@@ -144,14 +168,14 @@ nom_de_votre_ML-unsubscribe@votredomaine.com
 
 ### Suppression automatique des adresses erronées
 
-Il est important de savoir que le système de mailing list ne supprime pas un abonné de la liste après un seul retour d'erreur (message non délivré, adresse inexistante...). Au contraire, il attend environ 12 jours après le premier échec d'envoi, puis envoie un message d'avertissement à l'abonné.
+Le système de mailing list ne supprime pas un abonné de la liste après un seul retour d'erreur (message non délivré, adresse inexistante...). Il attend environ 12 jours après le premier échec d'envoi, puis envoie un message d'avertissement à l'abonné.
 
 Le message d'avertissement indique les références des messages manqués. Si ce message d'avertissement tombe en échec également, notre système de mailing list attend encore 12 jours puis envoie un message "test". Si ce message de test tombe également en erreur, l'abonné est effacé de la liste des abonnés.
 
 
-## Erreurs récurrentes
+### Erreurs récurrentes
 
-### Envoi sans indiquer de sujet dans l'e-mail
+#### Envoi sans indiquer de sujet dans l'e-mail
 
 Un envoi vers une mailing list doit obligatoirement contenir un sujet. Sans cela, une erreur sera automatiquement générée et un e-mail de retour en erreur sera envoyé à l'expéditeur de l'envoi.
 
@@ -169,11 +193,11 @@ ezmlm-reject: fatal: Sorry, I don't accept message with empty Subject (#5.7.0)
 ```
 
 
-### Envoi en renseignant l'adresse de la mailing list en copie cachée
+#### Envoi en renseignant l'adresse de la mailing list en copie cachée
 
-Pour envoyer un message à une mailing list, l'adresse de celle-ci doit obligatoirement se trouver soit dans le champ « To », soit dans le champ « Copie à » (Cc).
+Pour envoyer un message à une mailing list, l'adresse de celle-ci doit obligatoirement se trouver soit dans le champ « To », soit dans le champ « Copie à » (Cc).
 
-Si le client renseigne l'adresse dans le champ « Copie Cachée », une erreur lui sera alors retournée.
+Si le client renseigne l'adresse dans le champ « Copie Cachée », une erreur lui sera alors retournée.
 
 L'expéditeur de l'e-mail recevra un retour d'erreur :
 
@@ -189,9 +213,7 @@ ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 ```
 
 
-## Personnalisation avancée
-
-### Comment personnaliser le contenu de ma mailing list ?
+### Personnalisation avancée
 
 Vous pouvez personnaliser la plupart des textes de votre mailing list. En tant que modérateur, vous devez envoyer un e-mail vide à nom_de_votre_ML- [edit@votredomaine.com](mailto:edit@votredomaine.com){.external}.
 
@@ -219,8 +241,8 @@ Ci-dessous, une liste des fichiers contenant les textes de réponses et une brè
 |mod_unsub_confirm|à un administrateur pour demander une désinscription.|
 |sub_bad|à l'abonné si la confirmation était mauvaise.|
 |sub_confirm|à l'abonné pour confirmer sa requête.|
-|sub_nop|à l'abonne après une nouvelle inscription.|
-|sub_ok|à l'abonne après un abonnement réussi.|
+|sub_nop|à l'abonné après une nouvelle inscription.|
+|sub_ok|à l'abonné après un abonnement réussi.|
 |top|en-tête de chaque réponse.|
 |trailer|ajouté à la fin de chaque contribution à la liste.|
 |unsub_bad|à l'abonné si la confirmation de désinscription est fausse.|
@@ -230,7 +252,7 @@ Ci-dessous, une liste des fichiers contenant les textes de réponses et une brè
 
 > [!primary]
 >
-> Exemple : Si vous souhaitez modifier le pied de page par défaut des e-mails envoyés à votre mailing list, il vous faudra envoyer un message à l'adresse « newsletter-edit.bottom@testinterne.ovh ». Vous recevrez alors un nouvel e-mail vous expliquant comment personnaliser le pied de page.
+> Exemple : Si vous souhaitez modifier le pied de page par défaut des e-mails envoyés à votre mailing list, il vous faudra envoyer un message à l'adresse « newsletter-edit.bottom@testinterne.ovh ». Vous recevrez alors un nouvel e-mail vous expliquant comment personnaliser le pied de page.
 > 
 
 ## Aller plus loin
