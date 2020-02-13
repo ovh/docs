@@ -2,28 +2,28 @@
 title: 'Se connecter à une instance Public Cloud'
 slug: premiere-connexion
 legacy_guide_number: 1787
-excerpt: 'Découvrez comment vous connecter à vos instances Public Cloud'
-section: Premiers pas
+excerpt: 'Découvrez comment vous connecter à vos instances Public Cloud OVHcloud sous Windows et Linux'
+section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 2 octobre 2018**
+**Dernière mise à jour le 11/02/2020**
 
 ## Objectif
 
-La connexion à vos instances Public Cloud avec OVH est similaire à une connexion standard pour un VPS ou un serveur dédié, mais chaque instance a un compte utilisateur spécifique.
+La connexion à vos instances Public Cloud avec OVHcloud est similaire à une connexion standard pour un VPS ou un serveur dédié, mais chaque instance a un compte utilisateur spécifique.
 
-**Ce guide explique comment vous connecter à vos instances Public Cloud d’OVH sous Windows et Linux.**
+**Ce guide explique comment vous connecter à vos instances Public Cloud OVHcloud sous Windows et Linux.**
 
 ## Prérequis
 
-* Avoir accès à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
-* Avoir créé une [instance Public Cloud d’OVH](https://www.ovh.co.uk/public-cloud/instances/){.external} dans votre compte
+* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Avoir créé une [instance Public Cloud OVHcloud](https://www.ovhcloud.com/fr/public-cloud/){.external} dans votre compte
 
-## Instructions
+## En pratique
 
 ### Connexion à une instance Linux à l'aide d'un système d'exploitation Linux / Mac
 
-Exécutez la commande SSH suivante pour vous connecter à votre instance Public Cloud d’OVH, en remplaçant "user" si nécessaire et "instance_IP" par l'adresse IP de votre instance:
+Exécutez la commande SSH suivante pour vous connecter à votre instance Public Cloud OVHcloud, en remplaçant "user" si nécessaire et "instance_IP" par l'adresse IP de votre instance:
 
 ```sh
 ssh user@instance_IP
@@ -54,7 +54,7 @@ L'utilisateur de Public Cloud sera différent selon le système d'exploitation q
 >
 
 
-**Avertissement concernant l’empreinte digitale du serveur distant SSH:**
+**Avertissement concernant la signature publique du serveur distant SSH:**
 
 Lorsque vous vous connectez pour la première fois, vous devrez confirmer l'authenticité du host en cliquant sur `yes`.
 
@@ -74,7 +74,7 @@ Pour vous connecter à une instance Linux à l'aide de Windows, vous pouvez util
 
 #### Finaliser l'installation
 
-Une fois que vous avez créé votre instance, vous devrez finaliser une chose appelée *sysprep*. Pour cela, connectez-vous à l’[Espace client d’OVH](https://www.ovh.com/auth/?action=gotomanager){.external} et lancez la console VNC:
+Une fois que vous avez créé votre instance, vous devrez finaliser une chose appelée *sysprep*. Pour cela, connectez-vous à [l’Espace client d’OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} et lancez la console VNC:
 
 ![Console VNC](images/vnc_console.png)
 
