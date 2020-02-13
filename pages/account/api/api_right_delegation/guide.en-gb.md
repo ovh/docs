@@ -116,7 +116,6 @@ Happy development !
 
 ## Go further
 
-- [API documentation](../product.gb-en.md){.ref}
 - [API Console](https://api.ovh.com/){.external}
 
 
