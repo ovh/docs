@@ -89,7 +89,6 @@ Pour suivre et gérer les demandes en cours, cliquez sur l'onglet `Mes demandes`
 Pour cela, vous devez être en possession du code de validation (aussi appelé token) contenu dans l'e-mail pour valider ou refuser la demande.
 
 > [!primary]
-
 > Ce code est personnel, à usage unique et sa composition différera pour les deux contacts.
 
 L'e-mail reçu contient  également un lien menant directement sur la page permettant de valider ou de refuser la demande. En passant par cet e-mail, le code de validation (token) sera automatiquement prérempli.
