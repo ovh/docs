@@ -6,7 +6,7 @@ excerpt: Use the power of Elasticsearch without managing a cluster.
 section: Features
 ---
 
-**Last updated 2nd April 2019**
+**Last updated 14th February 2020**
 
 ## Objective
 
