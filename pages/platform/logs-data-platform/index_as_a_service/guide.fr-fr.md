@@ -9,7 +9,7 @@ section: Features
 **Last updated 2nd April 2019**
 
 ## Objective
- 
+
 Elasticsearch is one of the main components of the Logs Data Platform. It is one of the most powerful search and analytics engines. From the outset we offered the possibility to host a Kibana index for your Kibana metadata. Index As A Service is the obvious next step of this functionality. You can now use a fully unlocked index for any purpose; complex documents, reports or even logs. Thanks to the Elasticsearch API, you will be able to use most of the tools of the ELK (Elasticsearch, Logstash, Kibana) Ecosystem.
 
 ## Requirements
@@ -43,7 +43,7 @@ Logs Data Platform Elasticsearch indices are compatible with the [Elasticsearch 
 
 
 ```shell-session
-$ curl -u <your-token-value>:token -XPUT -h 'Content-Type: application/json' 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1' -d '{ "user" : "Oles", "company" : "OVH", "message" : "Hello World !", "post_date" : "1999-11-02T23:01:00" }'
+$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1' -d '{ "user" : "Oles", "company" : "OVH", "message" : "Hello World !", "post_date" : "1999-11-02T23:01:00" }'
 ```
 
 Here is a quick explanation of this command:
@@ -58,17 +58,17 @@ This command will return with a simple payload indicating if the document has be
 
 ```json hl_lines="3"
 {
-   "_id": "1", 
-   "_index": "logs-<username>-i-<suffix>", 
-   "_primary_term": 1, 
-   "_seq_no": 0, 
+   "_id": "1",
+   "_index": "logs-<username>-i-<suffix>",
+   "_primary_term": 1,
+   "_seq_no": 0,
    "_shards": {
-      "failed": 0, 
-      "successful": 2, 
+      "failed": 0,
+      "successful": 2,
       "total": 2
-   }, 
-   "_type": "_doc", 
-   "_version": 1, 
+   },
+   "_type": "_doc",
+   "_version": 1,
    "result": "created"
 }
 ```
@@ -154,7 +154,7 @@ A bulk request is a succession of JSON objects with this structure:
 You can in one request ask Elasticsearch to index, update, delete several documents. Save the content of the previous commands in a file named **bulk** and use the following call to index these 3 users:
 
 ```shell-session
-$ curl -u <your-token-value>:token -XPUT -h 'Content-Type: application/json' 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
+$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
 ```
 
 This call will take the content of the bulk file and execute each index operation. Note that you have to use the option **--data-binary** and no **-d** to preserve the newline after each JSON. You can check that your data are properly indexed with the following call:
@@ -343,12 +343,71 @@ The log has been enriched with the fields we declared in our filter automaticall
 
 In this Dashboard, you can see that the first widget is a "quick values" widget based on the firstName fields of the logs we retrieved.
 
+
+### Monitor the Index Size
+
+The **maximum size** of your index is fixed and is dependent on the number of shards. Shards are the unit of parallelism in Elasticsearch, so if search performance is critical, you should choose an index with the highest number of shard you can afford. Thanks to the high performance nodes we use, we managed to send thousands of logs to the Logstash and enrich all of them within seconds using only one shard.
+
+It is not possible to change the number of shards of one index. So you will have to be careful of the storage used by your index. **Once your index is full, It will be blocked on write requests** and you will have no choice but to use [_Delete By query_](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/docs-delete-by-query.html) requests to free space on your index.
+
+Note that you can monitor yourself the size of the index by using the following curl query:
+
+```shell-session
+$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_stats/store?pretty' --data-binary "@bulk"
+```
+
+This command will give you a document with the following format:
+
+
+```json
+{
+  "_shards" : {
+    "total" : 2,
+    "successful" : 2,
+    "failed" : 0
+  },
+  "_all" : {
+    "primaries" : {
+      "store" : {
+        "size_in_bytes" : 876787361
+      }
+    },
+    "total" : {
+      "store" : {
+        "size_in_bytes" : 1746852820
+      }
+    }
+  },
+  "indices" : {
+    "logs-<username>-i-<suffix>" : {
+      "uuid" : "JC0IWkd3QYSBNd4B2bBZGg",
+      "primaries" : {
+        "store" : {
+          "size_in_bytes" : 876787361
+        }
+      },
+      "total" : {
+        "store" : {
+          "size_in_bytes" : 1746852820
+        }
+      }
+    }
+  }
+}
+```
+
+The size in bytes used to compute your billing is the one under the following path:
+
+"indices" -> "logs-<username>-i-<suffix>" -> "primaries" -> "store" -> "size\_in\_bytes".
+
+
+
 ### Additional Information
 
 Index as a service has some specificities on our platforms. This additional and technical information can help you to use it properly:
 
 - **Replication** is set at 1 and cannot be changed. We ensure the high availability of your index in case of a hardware failure.
-- The **maximum size** of your index is fixed and is dependent on the number of shards. Shards are the unit of parellism in Elasticsearch, so if search performance is critical, you should choose an index with the highest number of shard you can afford. Thanks to the high performance nodes we use, we managed to send thousands of logs to the Logstash and enrich all of them within seconds using only one shard.
+- The **maximum size** of your index is fixed and is dependent on the number of shards. If search performance is critical, you should choose an index with the highest number of shard you can afford.
 - The **index_refresh_interval** of the index is set at 1 second ensuring near real time search results.
 - You are not allowed to change the settings of your index.
 - You can create an **alias** on Logs Data Platform and attach it to one or several indices.
