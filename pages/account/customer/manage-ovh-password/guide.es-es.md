@@ -40,13 +40,13 @@ La seguridad de sus soluciones depende de la eficacia de la contraseña de acces
 
 Existen varios métodos eficaces para crear contraseñas. Entre ellos, le recomendamos el **método de las primeras letras** y el **método fonético** que se explican en [esta guía del sitio web de la Oficina de Seguridad del Intaernauta (OSI)](https://www.osi.es/es/contrasenas#robustas){.external}.
 
-Para ahondar más en el tema, consulte la sección [«Más información»](https://docs.ovh.com/gb/en/customer/manage-password/#go-further_2){.external} al final de esta guía.
+Para ahondar más en el tema, consulte la sección [«Más información»](https://docs.ovh.com/es/customer/gestionar-su-contrase%C3%B1a/#mas-informacion_2){.external} al final de esta guía.
 
 ### Utilizar un gestor de contraseñas 
 
 Tenga en cuenta que hay programas específicos que permiten guardar y proteger su contraseña de acceso a la cuenta de OVHcloud.
 
-Por ejemplo, puede utilizar el gestor de contraseñas **Keepass**. Es un programa libre y gratuito recomendado por la Agencia Nacional de Seguridad de los Sistemas de Información (ANSSI) de Francia.
+Por ejemplo, puede utilizar el gestor de contraseñas **Keepass**. Es un programa libre y gratuito recomendado por la OSI.
 
 Su principio es simple: una contraseña maestra —lo suficientemente compleja, pero que se puede memorizar— que le permite acceder a una base de datos que recoge todos sus identificadores y contraseñas. Estas últimas pueden ser muy complejas, pues el programa puede recordarlas.
 
@@ -55,7 +55,7 @@ Este programa también permite generar contraseñas complejas y aleatorias que g
 ### Buenas prácticas para la gestión de su contraseña
 
 - **Compruebe su fiabilidad.** Asegúrese de que su actual contraseña no se haya transmitido a personas malintencionadas. Puede realizar una prueba en el sitio web haveibeenpwned, previsto a tal efecto, para verificar que su contraseña no esté implicada en casos de violación de datos.
-Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inmediato](./#modifier-votre-mot-de-passe).
+Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inmediato](./#modificar-la-contrasena).
 
 - **Una contraseña única para cada servicio.** No debe utilizar la contraseña de acceso a su cuenta de OVHcloud en otros sitios web u otras aplicaciones. Le aconsejamos aplicar esta regla a todos sus servicios web. Si utiliza una contraseña diferente para cada sitio web, podrá evitar cualquier vulnerabilidad en caso de robo de una sola contraseña.
 
