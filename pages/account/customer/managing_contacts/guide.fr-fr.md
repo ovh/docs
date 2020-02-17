@@ -19,9 +19,9 @@ Trois types de contacts existent:
 
 - **le contact administrateur** gère les aspects administratifs et techniques d'un service. Il possède des droits de modification sur l'ensemble des contacts et peut effectuer des changements dans les informations du propriétaire d'un service, comme les noms de domaine par exemple .
 - **le contact technique** gère uniquement les aspects techniques d'un service .
-- **le contact facturation** gère uniquement les aspects liés à la facturation d'un service dont leurs prélevements. Ce contact reçoit notamment les notifications liées au renouvellement. 
+- **le contact facturation** gère uniquement la facturation d'un service dont ses prélèvements. Ce contact reçoit notamment les notifications liées au renouvellement. 
 
-L'identifiant client est un identifiant personnel que vous recevez par e-mail lors de la création de votre compte client chez OVHcloud. Il se compose de deux lettres puis de plusieurs chiffres, et se termine par -ovh (exemple : xx11111-ovh). Lorsque vous commandez des solutions, cet identifiant est associé en tant que contact aux services pour lesquels vous avez opté.
+L'identifiant client est un identifiant personnel que vous recevez par e-mail lors de la création de votre compte client chez OVHcloud. Il est le plus souvent composé de deux lettres suivies de chiffres. Par exemple : **xx11111-ovh**. Lorsque vous commandez des services, cet identifiant leur est associé en tant que contact.
 
 ![Contact management](images/managing_contacts_scheme.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Si l'un des contacts n'a pas reçu l'e-mail, il se peut que l'adresse de contact
 
 ![Contact management](images/managing_contacts_06.png){.thumbnail}
 
-Si un seul contact a validé le changement, un message apparaîtra, vous informant que la demande est toujours en attente de validation par l'autre contact. Si l'un des contacts vient tout juste de valider une demande,  l'affichage dans [l'espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} se mettra à jour sous quelques minutes.
+Si un seul contact a validé le changement, un message apparaîtra, vous informant que la demande est toujours en attente de validation par l'autre contact. Si l'un des contacts vient tout juste de valider une demande,  l'affichage dans [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} se mettra à jour sous quelques minutes.
 
 ![Contact management](images/managing_contacts_07.png){.thumbnail}
 
