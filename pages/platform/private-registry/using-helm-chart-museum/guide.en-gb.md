@@ -164,7 +164,7 @@ Clicking on the chart name will show you the chart details, with one line per ve
 
 - The chart version number
 - The maintainers of the chart version
-- The template engine used (default is gotpl)
+- The template engine used (default is `gotpl`)
 - The created timestamp of the chart version
 
 ![Chart details](images/harbor-ui-006.jpg){.thumbnail}
@@ -181,9 +181,45 @@ Same thing to download a chart, select it and click on `DOWNLOAD` to get the pac
 
 ![Download a chart](images/harbor-ui-008.jpg){.thumbnail}
 
+Of course, you can also click to the `UPLOAD` buttom to upload the new chart version for the current chart.
 
-Check the checkbox at the 1st column to select the specified chart versions:
+You can also use labels to tag the different chart versions. 
 
-Click the DELETE button to delete all the selected chart versions from the chart repository server. Batch operation is supported.
-Click the DOWNLOAD button to download the chart artifact file. Batch operation is not supported.
-Click the UPLOAD button to upload the new chart version for the current chart
+Labels are managed in the `Labels` section on the Harbor UI:
+
+![Create a label](images/harbor-ui-009.jpg){.thumbnail}
+
+![Create a label(images/harbor-ui-010.jpg){.thumbnail}
+
+And in the chart version page, you can add or remove tag for each version.
+
+![Adding tags](images/harbor-ui-011.jpg){.thumbnail}
+
+![Adding tags](images/harbor-ui-012.jpg){.thumbnail}
+
+You can also filter by tag
+
+![Filter by tag](images/harbor-ui-013.jpg){.thumbnail}
+
+
+### Chart version details
+
+To see the details of a chart version, click on the link on the chart version number.
+
+![Chart version details](images/harbor-ui-014.jpg){.thumbnail}
+
+You can see more details about the specified chart version, structured in three sections. There are three content sections: summary, dependencies,
+
+
+The summary shows the `README` of the chart, some metadata (like the timestamp of creation and the application version), and helm commands for reference (to add the repository or instal the chart).
+
+
+![Chart version details - Summary](images/harbor-ui-015.jpg){.thumbnail}
+
+![Chart version details - Summary](images/harbor-ui-016.jpg){.thumbnail}
+
+
+The dependencies section show the dependant charts
+
+![Chart version details - Dependencies](images/harbor-ui-017.jpg){.thumbnail}
+
