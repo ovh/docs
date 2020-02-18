@@ -19,7 +19,7 @@ Si necesita crear más, debe solicitar un aumento de límite.
 
 ## Requisitos
 
-- [Añadir una forma de pago](https://docs.ovh.com/es/account/billing/gestionar-formas-de-pago){.external}
+- [Añadir una forma de pago](https://docs.ovh.com/es/billing/gestionar-formas-de-pago/){.external}
 - Haber alcanzado el número máximo de proyectos utilizados en su cuenta de OVHCloud.
 
 ## Procedimiento
