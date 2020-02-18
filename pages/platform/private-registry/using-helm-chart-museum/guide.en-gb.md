@@ -208,10 +208,10 @@ To see the details of a chart version, click on the link on the chart version nu
 
 ![Chart version details](images/harbor-ui-014.jpg){.thumbnail}
 
-You can see more details about the specified chart version, structured in three sections. There are three content sections: summary, dependencies,
+You can see more details about the specified chart version, structured in three sections. There are three content sections: summary, dependencies and values.
 
 
-The summary shows the `README` of the chart, some metadata (like the timestamp of creation and the application version), and helm commands for reference (to add the repository or instal the chart).
+The *Summary* shows the `README` of the chart, some metadata (like the timestamp of creation and the application version), and helm commands for reference (to add the repository or instal the chart).
 
 
 ![Chart version details - Summary](images/harbor-ui-015.jpg){.thumbnail}
@@ -219,7 +219,128 @@ The summary shows the `README` of the chart, some metadata (like the timestamp o
 ![Chart version details - Summary](images/harbor-ui-016.jpg){.thumbnail}
 
 
-The dependencies section show the dependant charts
+The *Dependencies* section show the dependant charts
 
 ![Chart version details - Dependencies](images/harbor-ui-017.jpg){.thumbnail}
 
+
+And in the *Values* section you will find the content from the `values.yaml` file, with an option to see them as a key-value pairs list by clicking in the icon buttons on the top left.
+
+![Chart version details - Values](images/harbor-ui-018.jpg){.thumbnail}
+
+![Chart version details - Values](images/harbor-ui-019.jpg){.thumbnail}
+
+
+### Deploying a chart from your registry in Kubernetes
+
+In this step you are going to deploy a chart from your OVHcloud Managed Private Registry into an OVHcloud Managed Kubernetes (or any other Kubernetes).
+
+As indicated in the *Before you begin* section, you need to have `helm` installed in your cluster and a working `helm` CLI in your workstation (see the [installing helm](../../kubernetes-k8s/installing-helm/) guide for more information if needed).
+
+Run command `helm version` to make sure the version of Helm CLI is v2.9.1+.
+
+<pre class="console"><code>$ helm version
+Client: &version.Version{SemVer:"v2.15.2", GitCommit:"8dce272473e5f2a7bf58ce79bb5c3691db54c96b", GitTreeState:"clean"}
+Server: &version.Version{SemVer:"v2.15.2", GitCommit:"8dce272473e5f2a7bf58ce79bb5c3691db54c96b", GitTreeState:"clean"}
+</code></pre>
+
+#### Add your OVHcloud Managed Private Registry to the repository list
+
+The first thing to do is add your OVHcloud Managed Private Registry to the helm's repository list, with `helm repo add` command.
+
+You can do it in two ways: adding your private registry as single index entry point  or adding each project as a separate index entry point.
+
+- Adding your OVHcloud Managed Private Registry as a unified single index entry point
+
+  In this mode,Helm will be able to use all the charts in any of your projects which are accessible by the currently authenticated user
+  
+
+  ```bash
+  
+  helm repo add --username <username> --password <password> <repo name> https://<repo url>/chartrepo
+  ```
+
+
+- Adding a project in your OVHcloud Managed Private Registry as a separate index entry point
+
+  In this mode, Helm only can pull charts from the specified project.
+
+  ```bash
+  helm repo add --username <username> --password <password> <repo name> https://<repo url>/chartrepo/<project>
+  ```
+
+In my example, I added the project in the private registry as a separate index entry point:
+
+<pre class="console"><code>$ helm repo add --username admin --password xxxxxxxxxx privreg https://xxxxx.xxxxxx.xxx/chartrepo/test-project
+"privreg" has been added to your repositories
+</code></pre>
+
+
+#### Install charts
+
+Before installing, make sure your helm is correctly initialized with command `helm init` and the chart index is synchronized with command `helm repo update`.
+
+In my case:
+
+<pre class="console"><code>$ helm init
+$HELM_HOME has been configured at /home/horacio/.helm.
+Warning: Tiller is already installed in the cluster.
+(Use --client-only to suppress this message, or --upgrade to upgrade Tiller to the current version.)
+$ helm repo update
+Hang tight while we grab the latest from your chart repositories...
+...Skip local chart repository
+...Successfully got an update from the "privreg" chart repository
+...Successfully got an update from the "stable" chart repository
+Update Complete.
+</code></pre>
+
+Look for your chart:
+
+```bash 
+helm search wordpress
+```
+
+In my case, it finds two versions of Wordpress chart, the official one in the `stable` Helm repository, and the one in my `privreg` private registry project:
+
+<pre class="console"><code>$ helm search wordpress
+privreg/wordpress       7.6.1           5.2.4           Web publishing platform for building blogs and websites.
+stable/wordpress        8.1.3           5.3.2           Web publishing platform for building blogs and websites.
+</code></pre>
+
+Everything is ready, so now you can install the chart into your Kubernetes:
+
+```bash
+helm install  --username <username> --password <password> privreg/wordpress
+```
+
+In my case:
+
+<pre class="console"><code>$ helm install --username admin --password xxxxxxxxxx privreg/wordpress
+NAME:   falling-aardwolf
+LAST DEPLOYED: Tue Feb 18 17:37:07 2020
+NAMESPACE: default
+STATUS: DEPLOYED
+
+RESOURCES:
+==> v1/ConfigMap
+NAME                            DATA  AGE
+falling-aardwolf-mariadb        1     2s
+falling-aardwolf-mariadb-tests  1     2s
+
+==> v1/Deployment
+NAME                        READY  UP-TO-DATE  AVAILABLE  AGE
+falling-aardwolf-wordpress  0/1    1           0          1s
+
+==> v1/PersistentVolumeClaim
+NAME                        STATUS   VOLUME                 CAPACITY  ACCESS MODES  STORAGECLASS  AGE
+falling-aardwolf-wordpress  Pending  csi-cinder-high-speed  2s        Filesystem
+
+[...]
+</code></pre>
+
+
+## Go further
+
+To have an overview of OVHcloud Managed Private Registry service, you can go to the [OVHcloud Managed Private Registry site](../).
+
+Join our community of users on https://community.ovh.com/en/.
