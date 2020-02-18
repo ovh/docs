@@ -1,50 +1,63 @@
 ---
-title: Añadir crédito cloud
-excerpt: Añadir crédito cloud
+title: 'Añadir crédito Cloud'
 slug: anadir_credito_cloud
-legacy_guide_number: g1907
-section: Gestión del proyecto
+excerpt: 'Cómo añadir crédito en su proyecto Public Cloud'
+legacy_guide_number: 1907
+section: 'Gestión del proyecto'
 ---
 
+**Última actualización: 22/11/2019**
 
-## 
-Esta guía explica cómo añadir crédito a su cuenta de Public Cloud con un código promocional o generando una orden de pedido.
+## Objetivo
 
+Esta guía explica cómo añadir crédito en su cuenta Public Cloud con un código promocional o generando una orden de pedido.
 
-## 
-Conéctese al [área de cliente Cloud](https://www.ovh.com/manager/cloud/) de OVH.
+Este se utilizará como forma de pago por defecto.
 
-Si todavía no lo tiene, [cree un nuevo proyecto](https://docs.ovh.com/es/public-cloud/empezar_con_public_cloud_identificarse_y_crear_un_proyecto/). 
+El importe de cada factura emitida se cargará primeramente a su crédito Cloud y, a continuación, a su cuenta Digital LaunchPad y, por último, a su cuenta de fidelidad. El posible saldo deudor se liquidará mediante la forma de pago registrada. 
 
-Haga clic en «Gestión y consumo del proyecto».
+Encontrará más información sobre estas tres últimas formas de pago haciendo clic en su nombre en la esquina superior derecha del área de cliente y, seguidamente, accediendo a `«Formas de pago»`{.action}.
 
-![](images/img_2841.jpg){.thumbnail}
-Haga clic en «Crédito y códigos promocionales».
+El crédito Cloud no es transferible ni reembolsable. Tampoco tiene ningún valor monetario. Además, si no se utiliza en un plazo de 13 meses a partir de su emisión, se pierde.
 
-![](images/img_2842.jpg){.thumbnail}
-Desde este menú podrá:
+## Requisitos
 
-- consultar el historial de su crédito cloud
-- activar un código promocional
-- comprar crédito cloud
+* Disponer de un proyecto Public Cloud.
 
+## Procedimiento
 
+### Comprar crédito
 
-![](images/img_2843.jpg){.thumbnail}
+Para comprar crédito Public Cloud, acceda al menú `«Créditos y códigos promocionales»`{.action} de su área de cliente Public Cloud y, seguidamente, haga clic en `«Comprar crédito Public Cloud»`{.action}.
 
 
-## Activación de un código promocional
-En determinadas ocasiones, como en el contexto de ofertas de prueba o en eventos de OVH, podrá obtener códigos promocionales para añadir crédito a un proyecto de Public Cloud.
-Haga clic en «Activar un código promocional».
+![addpubliccloudcredit](images/buycredit1.png){.thumbnail}
 
-Introduzca el código y haga clic en «Añadir mi código promocional».
+En la siguiente ventana, introduzca el importe que desee recargar en euros (impuestos no incluidos).
 
-![](images/img_2844.jpg){.thumbnail}
+![addpubliccloudcredit](images/buycredit2.png){.thumbnail}
 
+Un enlace se generará. Haga clic en él para ver la orden de pedido correspondiente.
 
-## Compra de crédito
-Haga clic en «Comprar crédito cloud».
+![addpubliccloudcredit](images/buycredit3.png){.thumbnail}
+![addpubliccloudcredit](images/buycredit4.png){.thumbnail}
 
-Introduzca el importe que desee recargar, haga clic en «Generar una orden de pedido» y abónela.
+Una vez abonada dicha orden de pedido, su crédito aparecerá en la lista de créditos y códigos promocionales.
 
-![](images/img_2845.jpg){.thumbnail}
+### Utilizar un código promocional
+
+Para utilizar un código promocional, acceda al menú `«Créditos y códigos promocionales»`{.action} de su área de cliente Public Cloud y, seguidamente, haga clic en `«Añadir un código promocional»`{.action}.
+
+![addpubliccloudcredit](images/buycredit6.png){.thumbnail}
+
+Luego, introduzca el código promocional en cuestión.
+
+![addpubliccloudcredit](images/buycredit7.png){.thumbnail}
+
+Este aparecerá entonces en la lista de créditos y códigos promocionales.
+
+Debido a su periodo de validez, el código promocional siempre se utilizará antes que el crédito Public Cloud.
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
