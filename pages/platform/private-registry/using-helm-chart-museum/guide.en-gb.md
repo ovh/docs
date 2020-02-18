@@ -156,3 +156,34 @@ As you can see, the existing helm charts are listed under the tab Helm Charts wi
 You can click the icon buttons on the top right to switch views between card view and list view.
 
 ![List chart - Card view](images/harbor-ui-005.jpg){.thumbnail}
+
+
+### Managing chart versions
+
+Clicking on the chart name will show you the chart details, with one line per version of the chart. For each vers you will have the following information:
+
+- The chart version number
+- The maintainers of the chart version
+- The template engine used (default is gotpl)
+- The created timestamp of the chart version
+
+![Chart details](images/harbor-ui-006.jpg){.thumbnail}
+
+As with the top chart list, you can choose between a list mode and a card mode, by clicking on the icon buttons on the top right.
+
+To delete a version, select it by checking the corresponding checkbox and clicking on `DELETE`.
+
+
+![Delete a chart](images/harbor-ui-007.jpg){.thumbnail}
+
+Same thing to download a chart, select it and click on `DOWNLOAD` to get the packaged chart file.
+
+
+![Download a chart](images/harbor-ui-008.jpg){.thumbnail}
+
+
+Check the checkbox at the 1st column to select the specified chart versions:
+
+Click the DELETE button to delete all the selected chart versions from the chart repository server. Batch operation is supported.
+Click the DOWNLOAD button to download the chart artifact file. Batch operation is not supported.
+Click the UPLOAD button to upload the new chart version for the current chart
