@@ -36,9 +36,9 @@ Le recomendamos que lea las guías siguientes, centrándose particularmente en l
 
 - [ Consultar el estado de renovación de los servicios. ](https://docs.ovh.com/es/billing/renovacion-automatica-ovh/#consultar-el-estado-de-la-renovacion-de-los-servicios){.external} Esta guía explica cómo comprobar si un servicio tiene activada la renovación automática, así como la fecha en la que se renovará o expirará.
 
-- [Gestionar la renovación de los servicios.](https://docs.ovh.com/es/billing/renovacion-automatica-ovh/#la-renovacion-en-eovhcloud){.external} Esta guía explica cómo activar o desactivar la renovación automática o modificar la frecuencia de pago de un servicio. También explica cómo pagar las renovaciones antes de su expiración.
+- [Gestionar la renovación de los servicios.](https://docs.ovh.com/es/billing/renovacion-automatica-ovh/#la-renovacion-en-ovhcloud){.external} Esta guía explica cómo activar o desactivar la renovación automática o modificar la frecuencia de pago de un servicio. También explica cómo pagar las renovaciones antes de su expiración.
 
-- [Configurar las formas de pago.](https://docs.ovh.com/es-es/account/billing/gestionar-formas-de-pago){.external} Esta guía explica cómo asegurarse de disponer de una forma de pago registrada para abonar las próximas renovaciones. También puede añadir nuevas formas de pago o eliminar las existentes en función de sus necesidades.
+- [Configurar las formas de pago.](https://docs.ovh.com/es/billing/gestionar-formas-de-pago/){.external} Esta guía explica cómo asegurarse de disponer de una forma de pago registrada para abonar las próximas renovaciones. También puede añadir nuevas formas de pago o eliminar las existentes en función de sus necesidades.
 
 ### Acceder a la configuración de los servicios
 
