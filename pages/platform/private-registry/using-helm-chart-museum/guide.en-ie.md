@@ -37,7 +37,7 @@ This guide will explain how to manage Helm charts in the OVHcloud Managed Privat
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../kubernetes/deploying-hello-ovh/) documentation. You will need to have Helm installed on your cluster (see the [installing helm](../../kubernetes-k8s/installing-helm/) guide for more information).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../kubernetes/deploying-hello-ovh/) documentation. You will need to have Helm installed on your cluster (see the [installing helm](../../kubernetes/installing-helm/) guide for more information).
 
 You also need to have a working OVHcloud Managed Private Registry and have followed the guides on [creating a private registry](../creating-a-private-registry/), [connecting to the UI](../connecting-to-the-ui/), [managing users and projects](../managing-users-and-projects/), [creating and using private images](../creating-and-using-a-private-image/) and [Using Private Registry with OVHcloud Managed Kubernetes](../using-private-registry-with-kubernetes/).
 
@@ -235,7 +235,7 @@ And in the *Values* section you will find the content from the `values.yaml` fil
 
 In this step you are going to deploy a chart from your OVHcloud Managed Private Registry into an OVHcloud Managed Kubernetes (or any other Kubernetes).
 
-As indicated in the *Before you begin* section, you need to have `helm` installed in your cluster and a working `helm` CLI in your workstation (see the [installing helm](../../kubernetes-k8s/installing-helm/) guide for more information if needed).
+As indicated in the *Before you begin* section, you need to have `helm` installed in your cluster and a working `helm` CLI in your workstation (see the [installing helm](../../kubernetes/installing-helm/) guide for more information if needed).
 
 Run command `helm version` to make sure the version of Helm CLI is v2.9.1+.
 

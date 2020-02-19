@@ -3,9 +3,10 @@ title: 'Creating and using a private image'
 excerpt: ''
 slug: creating-and-using-a-private-image
 section: 'Tutorials'
+order: 1
 ---
 
-**Last updated 20<sup>th</sup> January, 2020.**
+**Last updated 19<sup>th</sup> February, 2020.**
 
 <style>
  pre {
@@ -65,7 +66,7 @@ create a `hello-ovh` folder and inside create:
 
 - A `Dockerfile` file:
 
-    ```Dockerfile
+    ```
     FROM nginx:1.15-alpine
 
     COPY index.html /usr/share/nginx/html/index.html
@@ -74,7 +75,7 @@ create a `hello-ovh` folder and inside create:
 
 - A `index.html` file:
 
-    ```HTML
+    ```html
     <!doctype html>
     <html>
       <head>
@@ -104,9 +105,9 @@ create a `hello-ovh` folder and inside create:
 1. Go into the `hello-ovh` folder with the three files and do a `docker build`.
   You will need to tag your build using your private registry URL, the project within the registry (*private* if you followed the [managing users and projects](../managing-users-and-projects/) guide), and the image name (*hello-ovh*):
 
-  ```bash
-  docker build --tag [YOUR_PRIVATE_REGISTRY_URL]/private/hello-ovh:1.0.0 .
-  ```
+    ```bash
+    docker build --tag [YOUR_PRIVATE_REGISTRY_URL]/private/hello-ovh:1.0.0 .
+    ```
 
   In my private registry example:
 
@@ -132,29 +133,27 @@ create a `hello-ovh` folder and inside create:
 
 1. Login to your private registry, using a user with write rights to the project (*private-user* if you followed the [managing users and projects](../managing-users-and-projects/) guide)
 
-  ```bash
-  docker login [YOUR_PRIVATE_REGISTRY_URL]
-  ```
+    ```bash
+    docker login [YOUR_PRIVATE_REGISTRY_URL]
+    ```
 
-  In my private registry example:
+    In my private registry example:
 
-  <pre class="console"><code>
-    $ docker login 8093ff7x.gra5.container-registry.ovh.net
+    <pre class="console"><code>$ docker login 8093ff7x.gra5.container-registry.ovh.net
     Username: private-user
     Password: 
-
     Login Succeeded
-  </code></pre>
+    </code></pre>
 
 1. Upload the image to the private registry
 
-  ```bash
-  docker push [YOUR_PRIVATE_REGISTRY_URL]/private/hello-ovh:1.0.0
-  ```
+    ```bash
+    docker push [YOUR_PRIVATE_REGISTRY_URL]/private/hello-ovh:1.0.0
+    ```
 
-  In my private registry example:
+    In my private registry example:
 
-  <pre class="console"><code>
+    <pre class="console"><code>
     $ docker push 8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh:1.0.0
     The push refers to repository [8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh]
     369ed87ef8b1: Pushed 
@@ -164,7 +163,7 @@ create a `hello-ovh` folder and inside create:
     a61993362baf: Pushed 
     f1b5933fe4b5: Pushed 
     1.0.0: digest: sha256:f5a6a8f0d7c95cf3926b504a7949c8575e478106b59d8913ab947729aa5bd075 size: 1568
-  </code></pre>
+    /code></pre>
 
 If you go to your Harbor UI, you will see that a `hello-ovh` repository in the  *private* project:
 
