@@ -3,6 +3,7 @@ title: 'Connecting to the UI'
 excerpt: ''
 slug: connecting-to-the-ui
 section: 'Getting started'
+order: 2
 ---
 
 **Last updated 20<sup>th</sup> January, 2020.**
