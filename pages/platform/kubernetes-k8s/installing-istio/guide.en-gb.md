@@ -3,6 +3,7 @@ title: 'Installing Istio on OVHcloud Managed Kubernetes'
 slug: installing-istio
 excerpt: 'Find out how to install Istio on OVHcloud Managed Kubernetes'
 section: Tutorials
+order: 8
 ---
 
 **Last updated 1<sup>st</sup> July, 2019.**

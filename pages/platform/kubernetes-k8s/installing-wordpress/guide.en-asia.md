@@ -3,6 +3,7 @@ title: Installing WordPress on OVHcloud Managed Kubernetes
 slug: installing-wordpress
 excerpt: 'Find out how to install WordPress on OVHcloud Managed Kubernetes'
 section: Tutorials
+order: 5
 ---
 
 **Last updated 3<sup>rd</sup> September, 2019.**

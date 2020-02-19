@@ -3,10 +3,11 @@ title: 'Using the Helm Chart Museum'
 excerpt: ''
 slug: using-helm-chart-museum
 section: 'Tutorials'
+order: 3
 ---
 
 
-**Last updated 18<sup>th</sup> February, 2020.**
+**Last updated 19<sup>th</sup> February, 2020.**
 
 <style>
  pre {

@@ -3,6 +3,7 @@ title: 'Deploying a Hello World application with the OVH Control Panel'
 slug: deploying-hello-world
 excerpt: 'Find out how to deploy a Hello World application with the OVH Control Panel'
 section: Tutorials
+order: 1
 ---
 
 **Last updated 1<sup>st</sup> July, 2019.**

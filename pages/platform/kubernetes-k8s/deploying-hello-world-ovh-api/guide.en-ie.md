@@ -3,6 +3,7 @@ title: 'Deploying a Hello World with the OVH API'
 slug: deploying-hello-world-ovh-api
 excerpt: 'Find out how to deploy a Hello World application with the OVH API'
 section: Tutorials
+order: 2
 ---
 
 **Last updated 1<sup>st</sup> July, 2019.**
