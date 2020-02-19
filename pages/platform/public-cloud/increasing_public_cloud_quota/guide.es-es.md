@@ -1,50 +1,39 @@
 ---
-title: Aumentar el límite de Public Cloud
-excerpt: Aumentar el límite de Public Cloud
+title: 'Aumentar el límite de Public Cloud'
+excerpt: 'Cómo aumentar el límite en Public Cloud'
 slug: aumentar_el_limite_de_public_cloud
 legacy_guide_number: g1904
-section: Gestión del proyecto
+section: 'Gestión del proyecto'
 ---
 
+**Última actualización: 25/11/2019**
 
-## 
-Por motivos de seguridad, la posibilidad de crear instancias y volúmenes adicionales está limitada.
+## Objetivo
 
-Evidentemente, no se trata de un límite fijo: en cualquier momento puede solicitar al soporte un aumento de esta restricción.
+Por defecto, el número de recursos (RAM, CPU, espacio de disco, número de instancias, etc.) y de proyectos que puede crear está limitado.
 
-Esta guía explica cómo hacerlo.
+Si necesita crear más, debe solicitar un aumento de límite. 
+
+**Descubra cómo hacerlo siguiendo esta guía.**
 
 
 ## Requisitos
-Para seguir todos los pasos de esta guía, es necesario haber añadido una forma de pago.
 
+- [Añadir una forma de pago](https://docs.ovh.com/es/billing/gestionar-formas-de-pago/){.external}
+- Haber alcanzado el número máximo de proyectos utilizados en su cuenta de OVHCloud.
 
-## 
-Conéctese al [área de cliente Cloud](https://www.ovh.com/manager/cloud/) de OVH.
+## Procedimiento
 
-En la columna izquierda, haga clic en «Gestión del proyecto»:
+Si desea solicitar un aumento del número de proyectos y/o los límites de un proyecto, póngase en contacto con el equipo de asistencia.
 
-![](images/img_2835.jpg){.thumbnail}
-Abra la pestaña «Límites».
+Para ello, seleccione su proyecto y, seguidamente, la sección `«Límite y localización»`{.action}. Entonces se mostrarán los límites actuales de su proyecto.
 
-![](images/img_2836.jpg){.thumbnail}
-En esta pantalla puede ver sus actuales limitaciones.
+Haga clic en `«Aumentar mis límites»`{.action}.
 
-![](images/img_2837.jpg){.thumbnail}
-Haga clic en «Aumentar mis límites».
+![raise-pci-quota](images/raisepciquota1.png){.thumbnail}
 
-![](images/img_2838.jpg){.thumbnail}
-Cree un tíquet de soporte solicitando el aumento de sus límites.
+El sistema le redirigirá a la página de creación de un tique de asistencia. Tan solo complete los campos necesarios y trataremos su solicitud lo antes posible.
 
-![](images/img_2840.jpg){.thumbnail}
-En el tíquet:
+## Más información
 
-
-- Seleccione el proyecto en el que quiera aumentar los límites.
-- Seleccione el soporte técnico.
-- Introduzca un asunto para el tíquet, por ejemplo «Aumento de los límites de Public Cloud».
-- Introduzca su mensaje.
-
-
-El procedimiento para aumentar el número de proyectos posibles es similar.
-
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
