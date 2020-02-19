@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer vos commandes chez OVHcloud'
 section: Facturation
 ---
 
-**Dernière mise à jour le 17/02/2019**
+**Dernière mise à jour le 17/02/2020**
 
 ## Objectif
 
@@ -43,7 +43,7 @@ Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace cl
 
 ### Accéder aux bons de commandes dans l'espace client OVHcloud
 
-Pour accéder au panneau de gestion des commandes, il vous suffit de cliquer en haut à droite dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} sur votre prénom, puis sur `Mes commandes`{.action}.
+Pour accéder au panneau de gestion des commandes, il vous suffit de cliquer en haut à droite dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} sur votre prénom, puis sur `Mes commandes`{.action}.
 
 ![Espace client](images/order02.png){.thumbnail}
 
