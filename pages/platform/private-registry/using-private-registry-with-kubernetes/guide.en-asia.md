@@ -3,6 +3,7 @@ title: 'Using Private Registry with OVHcloud Managed Kubernetes'
 excerpt: ''
 slug: using-private-registry-with-kubernetes
 section: 'Tutorials'
+order: 2
 ---
 
 **Last updated 19<sup>th</sup> February, 2020.**
