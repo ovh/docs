@@ -3,6 +3,7 @@ title: 'Creating a private registry'
 excerpt: ''
 slug: creating-a-private-registry
 section: 'Getting started'
+order: 1
 ---
 
 **Last updated 20<sup>th</sup> January, 2020.**

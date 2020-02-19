@@ -3,6 +3,7 @@ title: 'Managing users and projects'
 excerpt: ''
 slug: managing-users-and-projects
 section: 'Getting started'
+order: 3
 ---
 
 **Last updated 20<sup>th</sup> January, 2020.**
