@@ -38,6 +38,11 @@ Utilisez la commande ci-dessous pour installer les clients Nova (application de 
 apt-get install python-openstackclient python-novaclient -y
 ```
 
+Python3 Version
+```sh
+apt-get install python3-openstackclient python3-novaclient -y
+```
+
 À l'issue de cette étape, nous vous recommandons de créer un utilisateur spécial pour ne pas vous servir de l’utilisateur root.
 
 Pour accéder aux outils d'aide, exécutez la commande suivante :
