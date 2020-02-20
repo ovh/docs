@@ -46,7 +46,7 @@ Une offre VoIP Entreprise ne peut pas évoluer vers une offre VoIP Découverte.
 
 Le changement d'offre peut être annulé à tout moment, avant son application lors du prochain renouvellement de la ligne. Pour annuler un changement d'offre, sélectionnez votre ligne VoIP dans l'espace-client OVHcloud puis cliquez successivement sur `Gestion`{.action} et sur `Changer d'offre`{.action}. Cliquez enfin sur `Annuler le changement d'offre`{.action}.
 
-![changement-d-offre-voip](images/sip_change_offer_4.png){.thumbnail}
+![changement-d-offre-voip](images/sip_change_offer_5.png){.thumbnail}
 
 
 ### Modifier le nombre d'appels simultanés
@@ -69,7 +69,7 @@ Prenez connaissance des Conditions Générales de Téléphonie et validez-les en
 
 Cliquez sur `Générer le bon de commande`{.action} afin de l'afficher. L'option ne sera prise en compte qu'après validation du paiement de ce bon de commande.
 
-![appels-simultané](images/simultaneous_calls2.png){.thumbnail}
+![appels-simultané](images/simultaneous_calls3.png){.thumbnail}
 
 > [!primary] **Diminution du nombre d'appels simultanés**
 >
