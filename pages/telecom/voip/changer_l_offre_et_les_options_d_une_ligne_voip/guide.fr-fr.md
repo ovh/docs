@@ -4,7 +4,8 @@ slug: changer-l-offre-et-les-options-d-une-ligne-voip
 legacy_guide_number: '7536704'
 space_key: CRTEL
 space_name: Téléphonie
-section: 'Lignes téléphoniques'
+section: Administratif
+order: 1
 ---
 
 **Dernière mise à jour le 20/02/2020**
@@ -79,4 +80,4 @@ Si vous souhaitez diminuer le nombre d'appels simultanés sur une ligne, ce chan
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
