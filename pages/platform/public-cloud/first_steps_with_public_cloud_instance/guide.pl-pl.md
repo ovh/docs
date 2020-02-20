@@ -6,105 +6,124 @@ legacy_guide_number: g2018
 section: 'Pierwsze kroki'
 ---
 
-**Ostatnia aktualizacja z dnia 17-06-2019**
+**Ostatnia aktualizacja: 04-12-2019**
 
 ## Wprowadzenie
 
-Możesz zarządzać Twoimi instancjami Public Cloud w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Znajdziesz w nim wszystkie Twoje projekty związane z infrastrukturą (instancje, kopie zapasowe, dyski, klucze SSH, etc.) oraz przestrzenią dyskową (zawierającą listę Twoich kontenerów).
+Instancjami OVHcloud Public Cloud można łatwo zarządzać za pośrednictwem [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Znajdują się w nim informacje o całej infrastrukturze (instancjach, kopiach zapasowych, dyskach, kluczach SSH itd.) oraz projektach przestrzeni dyskowej (w tym lista kontenerów).
 
-**Dowiedz się, jak rozpocząć korzystanie z instancji Public Cloud.**
+**Dowiedz się, jak rozpocząć pracę z instancją Public Cloud.**
 
 ### Wymagania początkowe
 
-- [Utworzenie instancji Public Cloud na Twoim koncie](../tworzenie_instancji_w_panelu_klienta_ovh/)
-- [Posiadanie klucza SSH](../tworzenie-kluczy-ssh/)
+- [instancja OVHcloud Public Cloud](https://docs.ovh.com/pl/public-cloud/tworzenie_instancji_w_panelu_klienta_ovh/){.external}
+- [klucz SSH](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/){.external}
 
 ### W praktyce
 
 ### Dostęp do interfejsu zarządzania instancją
 
-Na początek zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja „Cloud”, następnie kliknij `Serwery`{.action} na pasku usług po lewej stronie. Wybierz odpowiednią usługę Public Cloud. Upewnij się, czy w zakładce `Compute`{.action} wybrałeś „Instancje”.
+Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, przejdź do sekcji „Public Cloud” i wybierz odpowiednią usługę Public Cloud. Następnie kliknij kartę `Instancje`{.action} po lewej stronie.
 
-Pod zakładkami wyświetla się grafika oznaczająca Twoją instancję. Odnajdziesz tam kilka informacji:
+Zostanie wyświetlona strona ze skrótem informacji o wszystkich instancjach. Widoczne będą następujące informacje:
 
-- model i cenę instancji;
-- jej nazwę i region;
-- dostępne zasoby;
-- przypisane dodatkowe dyski;
-- adres IP instancji.
+- model instancji
+- nazwa i region
+- możliwe dyski twarde
+- adresy IP instancji
+- stany
 
-![public cloud](images/3415-2.png){.thumbnail}
+![public-cloud](images/compute.png){.thumbnail}
 
 ### Edycja konfiguracji instancji
 
-Na stronie z interfejsem zarządzania instancją, po kliknięciu strzałki skierowanej w dół, wybierz `Edytuj`{.action}.
+W interfejsie zarządzania instancją kliknij ikonę z trzema kropkami (po prawej stronie instancji) i wybierz pozycję `Edytuj`{.action}.
 
-![public cloud](images/3481-2.png){.thumbnail}
+![public-cloud](images/edit.png){.thumbnail}
 
-W oknie, które się wyświetla możesz:
+Zostanie wyświetlone okno, w którym można:
 
-- zmienić nazwę instancji;
-- zmienić model instancji;
-- zainstalować inny system operacyjny na instancji (**uwaga, bieżące dane zostaną usunięte w wyniku tej operacji**);
-- zmienić rozliczenie godzinowe na abonament miesięczny (faktura zostanie wówczas wystawiona na proporcjonalną kwotę należności za dni pozostałe do końca miesiąca).
+- zmienić nazwę instancji
+- zmienić model instancji 
+- zainstalować ponownie instancję w innym systemie operacyjnym (**uwaga: wykonanie takiej operacji spowoduje usunięcie bieżących danych przechowywanych w instancji**)
+- zmienić rozliczanie godzinowe na stałą stawkę miesięczną (zostanie wystawiony rachunek na kwotę proporcjonalną do liczby dni w miesiącu — począwszy od dnia zmiany)
 
-![public cloud](images/3481-3.png){.thumbnail}
+![public-cloud](images/edit1.png){.thumbnail}
+![public-cloud](images/edit2.png){.thumbnail}
+![public-cloud](images/edit3.png){.thumbnail}
 
 ### Tworzenie kopii zapasowej instancji
 
-Możesz utworzyć kopię zapasową instancji na stronie z interfejsem zarządzania instancjami. W tym celu, po kliknięciu strzałki w dół, wybierz `Utwórz kopię zapasową`{.action}. Następnie postępuj zgodnie z instrukcjami pojawiającymi się na kolejnych etapach.
+Z poziomu strony administracyjnej instancji można utworzyć jej kopię zapasową.  Aby to zrobić, kliknij ikonę z trzema kropkami (po prawej stronie instancji) i wybierz pozycję `Utwórz kopię zapasową`{.action}. Zostanie wyświetlona strona ze wszystkimi niezbędnymi informacjami: ![public-cloud](images/backup.png){.thumbnail}
 
-Skorzystaj z naszego przewodnika [Tworzenie kopii zapasowej instancji](../kopia_zapasowa_instancji/). 
+Zostaną też wyświetlone następujące informacje: ![public-cloud](images/backup1.png){.thumbnail}
 
-![public cloud](images/3481-4.png){.thumbnail}
+Po potwierdzeniu zostaną wyświetlone następujące informacje: ![public-cloud](images/backup2.png){.thumbnail}
 
-### Pobranie danych do logowania
+Utworzona kopia zapasowa będzie widoczna w sekcji `Kopia zapasowa instancji`{.action}: ![public-cloud](images/backup3.png){.thumbnail}
 
-Na stronie z interfejsem zarządzania instancją, po kliknięciu strzałki skierowanej w dół, wybierz `Informacje o logowaniu`{.action}. Uzyskasz w ten sposób komendę SSH, której należy użyć, aby zalogować się do instancji.
+Pomocne informacje dotyczące kopii zapasowej można znaleźć w przewodniku [Tworzenie kopii zapasowej instancji](https://docs.ovh.com/pl/public-cloud/kopia_zapasowa_instancji/){.external}. 
 
-![public cloud](images/3484-2.png){.thumbnail}
+### Tworzenie automatycznej kopii zapasowej instancji
+
+Z poziomu strony administracyjnej instancji można zaplanować automatyczne tworzenie jej kopii zapasowej. Aby to zrobić, kliknij ikonę z trzema kropkami (po prawej stronie instancji) i wybierz pozycję `Utwórz automatyczną kopię zapasową`{.action}: ![public-cloud](images/backupauto.png){.thumbnail}
+
+Zostanie wyświetlona następująca strona: ![public-cloud](images/backupauto1.png){.thumbnail}
+
+Po wybraniu niezbędnych informacji i kliknięciu przycisku Utwórz nastąpi przekierowanie do następującej strony: ![public-cloud](images/backupauto2.png){.thumbnail}
+
+W dowolnym momencie można przejść do strony `Zarządzania przepływem pracy`{.action} i usunąć bieżący proces automatycznego tworzenia kopii zapasowej: ![public-cloud](images/backupautodelete.png){.thumbnail}
+
+Pomocne informacje dotyczące kopii zapasowej można znaleźć w przewodniku [Tworzenie kopii zapasowej instancji](../back-up-instance/). 
+
+### Pobieranie danych do logowania
+
+W interfejsie zarządzania instancją kliknij pozycję `Szczegóły dotyczące instancji` i sprawdź informacje w sekcji `Informacje o logowaniu`{.action}. Można tam znaleźć polecenia SSH potrzebne do nawiązania połączenia z instancją.
+
+![public-cloud](images/instancedetails1.png){.thumbnail}
+![public-cloud](images/instancedetails.png){.thumbnail}
 
 ### Dostęp do konsoli VNC
 
-Konsola VNC umożliwia bezpośredni dostęp do instancji. Najpierw skonfiguruj hasło dla użytkownika „root”.
+Konsola VNC umożliwia bezpośredni dostęp do instancji. Do tego jest jednak potrzebne skonfigurowane hasło administratora (użytkownika root).
 
-Aby uzyskać dostęp do konsoli, po kliknięciu strzałki skierowanej w dół na stronie z interfejsem zarządzania instancją, wybierz `Konsola VNC`{.action}.
+Aby uzyskać dostęp do konsoli, kliknij pozycję `Konsola VNC`{.action} na pulpicie nawigacyjnym instancji.
 
-![public cloud](images/3484-3.png){.thumbnail}
+![public-cloud](images/vnc.png){.thumbnail}
 
-Wówczas w oknie pojawi się konsola. 
+Zostanie wyświetlona konsola:
 
-![public cloud](images/3484-4.png){.thumbnail}
+![public-cloud](images/vnc1.png){.thumbnail}
 
-### Restart instancji 
+### Restart instancji
 
-Możesz zrestartować instancję, stosując jeden z dwóch sposobów:
+Istnieją dwa sposoby zrestartowania instancji:
 
-- restart programowy;
-- restart sprzętowy.
+- Restart programowy
+- Restart sprzętowy
 
-Na stronie z interfejsem zarządzania instancją, po kliknięciu strzałki skierowanej w dół, wybierz `Wykonaj restart programowy`{.action} lub `Wykonaj restart sprzętowy`{.action}.
+W interfejsie zarządzania instancją kliknij ikonę z trzema kropkami (po prawej stronie instancji) i wybierz pozycję `Restart programowy`{.action} lub `Restart sprzętowy`{.action}.
 
-Następnie potwierdź restart w oknie, które się wyświetli.
+Następnie potwierdź żądanie w wyświetlonym oknie.
 
-![public cloud](images/3484-5.png){.thumbnail}
+![public-cloud](images/reboot.png){.thumbnail}
 
-### Reinstalacja instancji 
+### Ponowna instalacja instancji
 
-Możesz przeprowadzić reinstalację instancji, zachowując ten sam system operacyjny. **W wyniku tej operacji zostaną usunięte wszystkie bieżące dane.**
+Instancję można zainstalować ponownie z zachowaniem tego samego systemu operacyjnego. **Uwaga: ponowna instalacja spowoduje usunięcie bieżących danych przechowywanych w instancji.**
 
-Na stronie z interfejsem zarządzania instancją, po kliknięciu strzałki skierowanej w dół, wybierz `Reinstaluj`{.action}. Zatwierdź następnie tę operację. 
+W interfejsie zarządzania instancją kliknij ikonę z trzema kropkami (po prawej stronie instancji) i wybierz pozycję `Zainstaluj ponownie`{.action}. Następnie kliknij Potwierdź, aby rozpocząć proces.
 
-![public cloud](images/3484-6.png){.thumbnail}
+![public-cloud](images/reinstall.png){.thumbnail}
 
 ### Usuwanie instancji
 
-Możesz usunąć instancję. **Spowoduje to ostateczne usunięcie instancji oraz wszystkich przechowywanych na niej danych.**
+Instancję można również usunąć. **Ta operacja spowoduje trwałe usunięcie instancji oraz wszystkich przechowywanych w niej danych.**
 
-Na stronie z interfejsem zarządzania instancją, po kliknięciu strzałki skierowanej w dół, wybierz `Usuń`{.action}. Zatwierdź tę operację. 
+W interfejsie zarządzania instancją kliknij ikonę strzałki w dół i wybierz pozycję `Usuń`{.action}. Następnie kliknij Potwierdź, aby rozpocząć proces. 
 
-![public cloud](images/3484-7.png){.thumbnail}
+![public-cloud](images/delete.png){.thumbnail}
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
