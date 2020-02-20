@@ -1,132 +1,88 @@
 ---
-title: Erstellung einer Instanz im OVH Kundencenter
-excerpt: Erstellung einer Instanz im OVH Kundencenter
+title: 'Erstellung einer Instanz im OVHcloud Kundencenter'
+excerpt: 'Erfahren Sie hier die notwendigen Schritte um eine Public Cloud-Instanz zu erstellen'
 slug: erstellung_einer_instanz_im_ovh_kundencenter
 legacy_guide_number: g1775
 ---
 
+**Letzte Aktualisierung am 03.12.2019**
 
-## 
-Mit der Public Cloud können Sie jederzeit schnell und einfach mit einigen Klicks virtuelle Server (Instanzen) erstellen.
-Diese Instanzen ähneln den [OVH VPS Angeboten](https://www.ovh.de/virtual_server/) der neuesten Generation, decken jedoch andere Anwendungsbereiche ab.
+## Ziel
 
-Die wichtigsten Unterschiede zwischen den VPS Angeboten und den Public Cloud Instanzen:
+Sie können die OVHcloud [Public Cloud](https://www.ovh.co.uk/public-cloud/instances) nutzen, um Instanzen (d.h. virtuelle Server) schnell und einfach mit nur wenigen Klicks zu erstellen.
 
-VPS:
-
-
-- Einfaches Kundencenter
-- Für einzelne Maschinen
-- Große Auswahl an verfügbaren Distributionen
-
-
-Public Cloud Instanzen:
-
-
-- Wahl der Abrechnung: stündlich oder monatlich
-- OpenStack API
-- Zusammen arbeitende Instanzen
-
-
-In dieser Anleitung wird die Vorgehensweise zur Erstellung einer Instanz beschieben.
-
+**In dieser Anleitung erfahren Sie, wie Sie eine Instanz in der Public Cloud Oberfläche des OVHcloud Kundencenters erzeugen und konfigurieren.**
 
 ## Voraussetzungen
 
-- Eine Verbindung mit dem [OVH Kundencenter](https://www.ovh.com/manager/cloud/)
-- Ein erstellter und im OVH Kundencenter konfigurierter SSH Schlüssel (siehe []({legacy}1769))
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben bereits ein [Public Cloud-Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account angelegt.
+- Sie haben im OVHcloud Kundencenter einen SSH-Schlüssel hinzugefügt.
 
 
+## In der praktischen Anwendung
+
+### Eine Public Cloud-Instanz bereitstellen
+
+Um eine Public Cloud-Instanz bereitzustellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Klicken Sie dann im folgenden Bereich auf die Pfeilschaltfläche neben Ihrem Standardprojektnamen in der oberen linken Ecke der Anzeige. Wählen Sie nun das Projekt aus, für das Sie eine neue Instanz erstellen möchten.
+
+![select_project](images/select_project.png){.thumbnail}
+
+Sobald Sie das richtige Projekt ausgewählt haben, klicken Sie auf `Instances`{.action} im Abschnitt „Compute“ in der linken Seitenleiste.
+
+![create_instance](images/create_instance.png){.thumbnail}
+
+Als Nächstes klicken Sie auf die Schaltfläche `Instanz erstellen`{.action}. Sie gelangen in das folgende Menü, wo Sie die Instanz konfigurieren können, die Sie erstellen möchten:
+
+![create_instance1](images/create_instance1.png){.thumbnail}
+
+Die folgende Tabelle enthält eine kurze Erläuterung der Unterschiede zwischen den Instanz-Arten:
+
+| Server-Art | Garantierte Ressourcen | Nutzung |
+| :---         |     :---:      |          ---: |
+| Allgemeine Verwendung   | ✓     | Entwicklungsserver, Web- oder Geschäftsanwendungen    |
+| CPU     | ✓       | Videokodierung oder andere Hochleistungsberechnungen      |
+| RAM   | ✓     | Datenbanken, Analysen und In-Memory Prozesse    |
+| Geteilte Ressourcen    | -       | Test- und Entwicklungsumgebungen      |
+
+> [!primary]
+>
+Sie werden anfangs auf 20 Instanzen, 20 vCores und 40 GB RAM pro Projekt beschränkt. Eine Erhöhung des Ressourcenlimits kann über eine [Support-Anfrage](https://www.ovh.com/manager/dedicated/index.html#/ticket) an unser Cloud-Team beantragt werden.
+>
 
 
-## Hinzufügen des Servers
+Folgen Sie dem Menü, um die Region auszuwählen, in der sich Ihre Public Cloud-Instanz befinden soll. Im dritten Schritt wählen Sie Ihr Betriebssystem aus.
 
-- Klicken Sie links oben auf Hinzufügen
+> [!primary]
+>
+Wenn Sie ein Windows-Betriebssystem auswählen, wird automatisch eine Lizenz aktiviert, die Ihnen monatlich in Rechnung gestellt wird.
+>
 
+![install](images/os_install.png){.thumbnail}
 
+> [!primary]
+>
+Für Public Cloud-Instanzen, auf denen ein Unix-basiertes Betriebssystem ausgeführt wird, muss ein SSH-Schlüssel zum Server hinzugefügt werden. Weitere Informationen zum Generieren eines SSH-Schlüssels finden Sie in unserer Anleitung [SSH-Schlüssel erstellen](https://docs.ovh.com/de/public-cloud/create-ssh-keys).
+>
 
-![](images/img_2707.jpg){.thumbnail}
+Im vierten Teil des Menüs können Sie die Anzahl der zu erstellenden Instanzen auswählen, Ihre Instanz benennen und gegebenenfalls ein privates Netzwerk oder ein Post-Installationsskript hinzufügen.
 
-- Wählen Sie Einen Server hinzufügen aus
+![add an instance](images/configure_instance.png){.thumbnail}
 
+Wählen Sie abschließend, ob Sie eine monatliche oder stündliche Abrechnung erhalten möchten.
 
-
-![](images/img_2708.jpg){.thumbnail}
-
-
-## Wahl des gewünschten Servers
-
-- Wenn Sie auf den Pfeil rechts neben dem gewählten Modell klicken, erscheint ein neues Menü:
-
-
-
-![](images/img_2709.jpg){.thumbnail}
-Anschließend können Sie den Typ Ihrer Instanz auswählen:
-
-- VPS SSD Reihe
-
-|1 bis 2 vCores|2 bis 8 GB RAM|10 bis 40 GB Speicherplatz|
+> [!warning]
+>
+>Wenn Sie sich für eine stündliche Abrechnung entscheiden, wird die Abrechnung für das gesamte Bestehen der Instanz fortgesetzt. Es spielt keine Rolle, ob die Instanz gerade verwendet wird oder nicht.
+>
 
 
+Nachdem Sie bestätigt haben, dass alle von Ihnen eingegebenen Informationen korrekt sind, klicken Sie auf die Schaltfläche `Instanz erstellen`{.action} um die Konfiguration Ihrer neuen Instanz abzuschließen. Es kann einige Minuten dauern, bis Ihre Instanz bereitgestellt werden kann.
 
-- CPU Reihe
+### Fazit
 
-|2 bis 32 vCores|7 bis 120 GB RAM|200 bis 1600 GB Speicherplatz|
+Nachdem Sie diesen Artikel gelesen haben, sollten Sie in der Lage sein, eine Instanz in Ihrem Public Cloud-Projekt über das OVHcloud Kundencenter bereitzustellen. Weitere Informationen zur Nutzung Ihrer Instanz finden Sie in unseren Artikeln auf der Anleitungsseite für [Public Cloud-Dienste](https://docs.ovh.com/de/public-cloud).
 
+## Weiterführende Informationen
 
-
-- RAM Reihe
-
-|2 bis 16 vCores|30 bis 240 GB RAM|200 bis 1600 GB Speicherplatz|
-
-
-
-
-## Wahl des Betriebssystems
-
-- Beispiel "Ubuntu 14.04"
-
-
-
-![](images/img_2710.jpg){.thumbnail}
-
-
-## Wahl des Rechenzentrums
-
-- Beispiel "Straßburg"
-
-
-
-![](images/img_2711.jpg){.thumbnail}
-
-
-## Wahl des zu verwendenden SSH Schlüssels
-
-- Beispiel:
-
-
-
-![](images/img_2712.jpg){.thumbnail}
-
-## Hinweis:
-Bei der Erstellung einer Windows Instanz muss kein SSH Schlüssel konfiguriert werden.
-
-
-## Benennung des virtuellen Servers und Start
-
-- Vergeben Sie einen Namen für den virtuellen Server
-- Wählen Sie aus, ob dieser stündlich oder monatlich abgerechnet werden soll
-
-
-
-## Achtung:
-Bei der Erstellung einer Instanz mit monatlicher Abrechnung verpflichten Sie sich, diese mindestens bis zum Ende des laufenden Monats zu behalten.
-
-- Klicken Sie auf Jetzt starten
-
-
-
-
-## 
-[Zurück zum Index der Cloud Hilfen]({legacy}1785)
-
+Für den Austausch mit unserer User Community gehen Sie auf  <https://community.ovh.com/en/>.

@@ -18,7 +18,7 @@ Sie haben die Möglichkeit, für Ihre Private Cloud die PCI-DSS-Zertifizierung z
 - Sie verfügen über eine Private Cloud Infrastruktur mit Version 6.0 oder höher.
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eingeloggt und befinden sich im Bereich `Dedicated`{.action} (im neuen Interface im Bereich „Server“).
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Überprüfen, dass die Sicherheitsoption aktiviert ist
 
@@ -67,6 +67,7 @@ Aus Sicherheitsgründen gilt Folgendes nach der Aktivierung der Sicherheitsoptio
 Zur Erinnerung: Es ist nicht möglich auf das sichere Interface zuzugreifen, bevor die Aktivierung der Sicherheitsoption abgeschlossen ist.
 
 Nach fertiger Aktivierung können Sie sich über den Link, den Sie per E-Mail erhalten haben, auf dem sicheren Interface einloggen. Dieser Link entspricht in etwa der Form „https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/password-lost“. Sobald Sie eingeloggt sind, können Sie das Passwort des Admin-Benutzers und anschließend die Passwörter der anderen Benutzer ändern. Weitere Informationen hierzu finden Sie in unserer Anleitung [Das sichere Interface verwenden](https://docs.ovh.com/de/private-cloud/sicheres-interface/).
+
 
 ## Weiterführende Informationen
 

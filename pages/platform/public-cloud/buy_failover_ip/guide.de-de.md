@@ -24,9 +24,9 @@ Diese IPFOs können nur für Instanzen desselben Projekts migriert werden.
 ## Voraussetzungen
 
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eingeloggt.
-- Sie verfügen über mindestens eine Instanz. Konsultieren Sie hierzu [den Leitfaden für die Erstellung einer Instanz von Ihrem Kunden-Account aus](https://docs.ovh.com/de/public-cloud/erstellung_einer_instanz_im_ovh_kundencenter/).
+- Sie verfügen über mindestens eine Instanz. Konsultieren Sie hierzu [die Anleitung zur Erstellung einer Instanz von Ihrem Kunden-Account aus](https://docs.ovh.com/de/public-cloud/erstellung_einer_instanz_im_ovh_kundencenter/).
 
-## In der praktischen Anwendung:
+## In der praktischen Anwendung
 
 Wählen Sie zuerst links `Failover IP`{.action} in Ihrem OVHcloud Kundencenter aus und dann `Failovers-IPs kaufen`{.action} im `Aktionen`{.action} Menü:
 
