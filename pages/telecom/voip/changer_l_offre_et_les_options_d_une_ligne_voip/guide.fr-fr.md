@@ -1,82 +1,82 @@
 ---
-title: Changer l’offre et les options d’une ligne VoIP
+title: 'Changer l’offre et les options d’une ligne VoIP'
 slug: changer-l-offre-et-les-options-d-une-ligne-voip
 legacy_guide_number: '7536704'
 space_key: CRTEL
 space_name: Téléphonie
-section: Lignes téléphoniques
+section: 'Lignes téléphoniques'
 ---
 
-### Préambule {#préambule}
+**Dernière mise à jour le 20/02/2020**
 
-Il est possible de modifier à votre convenance les options de votre ligne VoIP ainsi que l'offre souscrite.
+## Objectif
 
-Le changement d'offre et les différentes options possibles sont décrits ci-dessous.
+Afin d'adapter votre téléphonie à votre activité professionnelle, vous pouvez modifier à votre convenance les options de vos lignes VoIP ainsi que les offres souscrites.
 
-**Sommaire :**
+**Découvrez comment modifier l'offre et le nombre d'appels simultanés d'une ligne VoIP OVHcloud.**
 
-Niveau : Débutant
+## Prérequis
 
-------------------------------------------------------------------------
+- Disposer d'une [ligne VoIP](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
-### Changer d'offre VoIP {#changer-doffre-voip}
+## En pratique
 
-Votre forfait ne convient plus à vos besoins ? Vous souhaitez ajouter ou retirer une option d'appel incluse vers les mobiles ? Ceci est possible en seulement quelques clics via le Manager Téléphonie.
+### Changer d'offre VoIP
 
--   Sélectionnez la ligne dont vous souhaitez modifier le forfait puis cliquez sur "**Gestion**" :
+Un changement dans votre activité peut vous amener à vouloir modifier le forfait de votre ligne VoIP, pour le passer en Offre VoIP Entreprise ou ajouter des heures de communication vers les téléphones mobiles. Ce changement peut être effectué depuis votre espace client.
 
-![](images/option01.png){.thumbnail}
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Télécom`{.action} puis sur `Téléphonie`{.action}. Sélectionnez votre groupe de téléphonie puis la ligne VoIP souhaitée.
+Dans l'onglet `Gestion`{.action}, cliquez sur `Changer d'offre`{.action}. L'offre actuelle de votre ligne VoIP vous sera alors présentée. Cliquez sur `Modifier l'offre`{.action} pour accéder aux offres disponibles.
 
--   Cliquez ensuite sur "**Changerd'offre**" :
+Sélectionnez, dans le menu déroulant des offres disponibles, l'offre de votre choix. Le cas échéant, vous pouvez choisir d'appliquer cette nouvelle offre à plusieurs de vos lignes VoIP en cliquant sur `Appliquer à plusieurs lignes`{.action}. Validez enfin votre choix en cliquant sur `Valider`{.action}.
 
-![](images/option02.png){.thumbnail}
+![changement-d-offre-voip](images/changeoffer.gif){.thumbnail}
 
--   Cliquez sur "**Modifier**" :
+Le changement d'offre sera effectif lors du prochain renouvellement de la ligne. Le renouvellement est automatique, à chaque début de mois, lors de la facturation de vos services.
 
-![](images/option03.png){.thumbnail}
+Ainsi, un changement d'offre VoIP sollicité entre le 1er et le 31 janvier serait appliqué à partir du 1er février. 
 
-S'ouvre alors le menu permettant de choisir l'offre vers laquelle vous pouvez migrer votre ligne.
+> [!primary]
+>
+Une offre VoIP Entreprise ne peut pas évoluer vers une offre VoIP Découverte.
+>
 
--   Après avoir fait votre choix parmi les offres disponibles, il vous suffit de cliquer sur "**J'ai lu et j'accepte les contrats OVH avant de valider**" puis de cliquer sur "**Valider**".
+#### Annuler un changement d'offre VoIP
 
-![](images/option04.png){.thumbnail}
+Le changement d'offre peut être annulé à tout moment, avant son application lors du prochain renouvellement de la ligne. Pour annuler un changement d'offre, sélectionnez votre ligne VoIP dans l'espace-client OVHcloud puis cliquez successivement sur `Gestion`{.action} et sur `Changer d'offre`{.action}. Cliquez enfin sur `Annuler le changement d'offre`{.action}.
 
-Le changement d'offre sera effectif lors du prochain renouvellement de la ligne. Le renouvellement se fait automatiquement à chaque début de mois lors de la facturation.
-
-Une offre Entreprise ne peut évoluer vers une offre Individuelle.
-
-### Changer le nombre d'appels simultanés {#changer-le-nombre-dappels-simultanés}
-
-Vos besoins en nombre d'appels simultanés ont changé, vous souhaitez en ajouter ou en supprimer ? Rendez-vous alors sur votre Manager Téléphonie puis sélectionnez la ligne dont vous souhaitez modifier le nombre d'appels simultanés.
-
--   Cliquez sur "**Gestion des appels**" :
-
-![](images/option05.png){.thumbnail}
-
--   Cliquez sur "**Appels simultanés**" :
-
-![](images/option06.png){.thumbnail}
-
--   Puis sur "**Gérer**" :
-
-![](images/option07.png){.thumbnail}
-
-S'ouvre alors la fenêtre permettant de choisir le nombre d'appels simultanés dont vous souhaitez disposer sur la ligne. Pour choisir, ajustez simplement le curseur sur la ligne horizontale.
-
--   Après avoir fait votre choix, il vous suffit de cliquer sur "**J'ai lu et j'accepte les contrats OVH**" avant de valider puis de cliquer sur "**Commander**".
-
-![](images/option08.png){.thumbnail}
-
-L'ajout d'un appel simultané est facturé 1 € HT par mois. De ce fait, lors de l'ajout d'appels simultanés, un bon de commande est généré et requiert un paiement manuel. Cliquez alors sur "**Cliquezici**" afin d'afficher le bon de commande et de le régler.
-
-![](images/option09.png){.thumbnail}
-
-L'option ne sera prise en compte qu'après validation du paiement dudit bon de commande.
-
-Le retrait d'appel simultané supplémentaire est bien entendu gratuit.
-
-------------------------------------------------------------------------
+![changement-d-offre-voip](images/sip_change_offer_4.png){.thumbnail}
 
 
+### Modifier le nombre d'appels simultanés
+
+Vous pouvez adapter le nombre d'appels simultanés sur une ligne VoIP Entreprise afin, par exemple, de permettre une meilleure gestion de votre standard téléphonique.
+
+> [!primary]
+>
+> Une ligne VoIP découverte est limitée à 1 seul appel simultané. 
+>Si vous souhaitez augmenter le nombre d'appels simultanés sur une ligne VoIP Découverte, il sera nécessaire de la [convertir en ligne VoIP Entreprise](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#changer-doffre-voip).
+>
+
+Sélectionnez votre ligne VoIP puis l'onglet `Gestion des appels`{.action} (1). Cliquez alors sur `Appels simultanés`{.action} (2).
+
+![appels-simultané](images/simultaneous_calls1.png){.thumbnail}
+
+Modifiez le nombre d'appels simultanés dans le premier menu déroulant (3). Chaque appel simultané supplémentaire est facturé 1,00 € HT/mois. Un bon de commande correspondant devra être validé par vos soins.
+
+Prenez connaissance des Conditions Générales de Téléphonie et validez-les en cochant la case de validation (4). 
+
+Cliquez sur `Générer le bon de commande`{.action} afin de l'afficher. L'option ne sera prise en compte qu'après validation du paiement de ce bon de commande.
+
+![appels-simultané](images/simultaneous_calls2.png){.thumbnail}
+
+> [!primary] **Diminution du nombre d'appels simultanés**
+>
+Si vous souhaitez diminuer le nombre d'appels simultanés sur une ligne, ce changement ne sera effectif que lors du prochain renouvellement de la ligne. Le renouvellement est automatique, à chaque début de mois, lors de la facturation de vos services. Ainsi, un retrait d'appels simultanés sollicité entre le 1er et le 31 janvier serait appliqué à partir du 1er février.
+>
 
 
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

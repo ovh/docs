@@ -1,8 +1,8 @@
 ---
-title: Use of an SSH key in the Public Cloud interface
+title: 'Use of an SSH key in the Public Cloud interface'
 slug: use-of-an-ssh-key-in-the-public-cloud-interface
-excerpt: Step-by-step documentation on how to use an SSH key to simplify access to cloud servers
-section: Knowledge Base
+excerpt: 'Step-by-step documentation on how to use an SSH key to simplify access to cloud servers'
+section: 'Knowledge Base'
 ---
 
 **Last updated 4th December 2019**
@@ -17,7 +17,7 @@ There are two ways to add an SSH key from the Public Cloud interface:
 
 
 ### Prerequisites
-- An [SSH key](../howto_create_an_ssh_key/guide.en-gb.md){.ref}
+- An [SSH key](https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys/){.ref}
 
 
 ## Creation of an instance
@@ -45,4 +45,8 @@ Click on `Add a key`{.action} then click on `Add this key`{.action} after you ha
 
 ![Add a key](images/addkeymenu1.png){.thumbnail}
 
-This key will be available for use at the time of [creation your next cloud instance](../first_steps_start_my_first_server_within_3_minutes/guide.en-gb.md){.ref}.
+This key will be available for use at the time of [creation your next cloud instance](https://docs.ovh.com/gb/en/public-cloud/get-started-with-a-public-cloud-instance/){.ref}.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
