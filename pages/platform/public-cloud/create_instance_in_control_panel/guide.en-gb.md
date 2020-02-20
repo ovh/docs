@@ -6,11 +6,11 @@ legacy_guide_number: g1775
 section: 'Quick start'
 ---
 
-**Last updated 03rd December 2019**
+**Last updated 3rd December 2019**
 
 ## Objective
 
-You can use the OVHcloud [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} to create instances (i.e. virtual servers) quickly and easily, in just a few clicks.
+You can use the OVHcloud [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/) to create instances (i.e. virtual servers) quickly and easily, in just a few clicks.
 
 **Find out how to create an instance in the OVHcloud Public Cloud Control Panel.**
 
@@ -77,9 +77,9 @@ Finally, choose whether you would like to be billed monthly or hourly.
 
 Once you have confirmed that all of the information you have entered is correct, click the `Create an instance`{.action} button to finish creating your new instance. Your instance may take a few minutes to provision.
 
-## Conclusion
+### Conclusion
 
-Having read this article, you should be able to provision an instance on your public cloud project via the OVHcloud Control Panel. For further reading about what you can do with your instance, please check out our articles on the [Public Cloud Services](https://docs.ovh.com/gb/en/public-cloud/){.external} support page.
+Having read this article, you should be able to provision an instance on your public cloud project via the OVHcloud Control Panel. For further reading about what you can do with your instance, please check out our articles on the [Public Cloud Services](https://docs.ovh.com/gb/en/public-cloud/){.external} documentation page.
 
 ## Go further
 
