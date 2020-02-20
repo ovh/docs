@@ -4,7 +4,8 @@ slug: changer-l-offre-et-les-options-d-une-ligne-voip
 legacy_guide_number: '7536704'
 space_key: CRTEL
 space_name: Téléphonie
-section: 'Lignes téléphoniques'
+section: Administratif
+order: 1
 ---
 
 **Dernière mise à jour le 20/02/2020**
@@ -46,7 +47,7 @@ Une offre VoIP Entreprise ne peut pas évoluer vers une offre VoIP Découverte.
 
 Le changement d'offre peut être annulé à tout moment, avant son application lors du prochain renouvellement de la ligne. Pour annuler un changement d'offre, sélectionnez votre ligne VoIP dans l'espace-client OVHcloud puis cliquez successivement sur `Gestion`{.action} et sur `Changer d'offre`{.action}. Cliquez enfin sur `Annuler le changement d'offre`{.action}.
 
-![changement-d-offre-voip](images/sip_change_offer_4.png){.thumbnail}
+![changement-d-offre-voip](images/sip_change_offer_5.png){.thumbnail}
 
 
 ### Modifier le nombre d'appels simultanés
@@ -69,7 +70,7 @@ Prenez connaissance des Conditions Générales de Téléphonie et validez-les en
 
 Cliquez sur `Générer le bon de commande`{.action} afin de l'afficher. L'option ne sera prise en compte qu'après validation du paiement de ce bon de commande.
 
-![appels-simultané](images/simultaneous_calls2.png){.thumbnail}
+![appels-simultané](images/simultaneous_calls3.png){.thumbnail}
 
 > [!primary] **Diminution du nombre d'appels simultanés**
 >
@@ -79,4 +80,4 @@ Si vous souhaitez diminuer le nombre d'appels simultanés sur une ligne, ce chan
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
