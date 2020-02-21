@@ -4,7 +4,7 @@ slug: synchroniser-un-nas-synology-avec-lobject-storage-a-laide-de-diskstation-m
 legacy_guide_number: 2090
 section: Tutoriels
 ---
-
+--> obsolete car API v2 et régions avec des chiffres
 
 ## Preambule
 La [beta de DiskStation Manager 6.0](https://www.synology.com/en-global/dsm/6.0beta){.external} de Synology propose un outils de synchronisation avec différentes solutions Cloud.
