@@ -1,67 +1,60 @@
 ---
-title: Création et suppression d’un utilisateur OpenStack
+title: 'Création et suppression d’un utilisateur OpenStack'
 slug: creation-et-suppression-dun-utilisateur-openstack
-section: Base de connaissances
+section: 'Base de connaissances'
 ---
 
+**Dernière mise à jour le 6 décembre 2019**
 
-## Preambule
-Afin d'utiliser Horizon ou les APIs OpenStack, la création d'un utilisateur (ou user) OpenStack est nécessaire, ce guide décrit comment le créer et le supprimer.
+## Objectif
+Pour pouvoir utiliser les API Horizon ou OpenStack, vous devrez au préalable créer un utilisateur OpenStack. Vous pouvez créer un nombre illimité d’utilisateurs OpenStack.
 
-Le nombre d'utilisateurs OpenStack n'est pas limité.
-
+**Découvrez comment créer et supprimer un utilisateur OpenStack.**
 
 ### Prérequis
-Disposer d’un projet Public Cloud de plus de 7 jours en cas de premier projet (ou contacter le support pour vérifier si un déblocage anticipé est possible). Les autres projets n'auront pas cette limitation.
+
+Disposer d'un projet Public Cloud. S'il s'agit de votre premier projet, il doit dater de plus de 7 jours (ou contactez l’assistance technique pour vérifier si vous pouvez débloquer le projet plus tôt). Les autres projets n’auront pas cette limitation.
 
 
-## Création de l'utilisateur OpenStack
-Dans l'Espace Client il faut se rendre sur votre projet Public Cloud (Cloud → Serveurs → Nom de votre Projet Public Cloud). Toujours dans la colonne de gauche vous verrez la rubrique `OpenStack`{.action}.
+## Créer un utilisateur OpenStack.
+Tout d’abord, pour accéder à l’interface Horizon, vous devez créer un compte utilisateur OpenStack. Pour ce faire, connectez-vous à votre espace client et sélectionnez `Public Cloud`{.action}. Sur l’écran qui s’affiche, cliquez sur la `flèche`{.action} à côté du nom de votre projet en haut, à gauche.
 
-Pour créer un utilisateur OpenStack il suffit de cliquer sur `Ajouter un utilisateur`{.action} puis choisir une description. Le nom réel est auto-généré . Enfin il faut valider avec le bouton `Créer cet utilisateur`{.action} :
+![Add user](images/select_project.png){.thumbnail}
 
+Dans la rubrique « Project Management » dans la barre latérale gauche, sélectionnez `Users & Roles`{.action}.
 
-![public-cloud](images/add_user.png){.thumbnail}
+![User roles](images/users_roles.png){.thumbnail}
 
-Quelques secondes après, l'utilisateur est ajouté.
+Cliquez sur le bouton `Créer un utilisateur`{.action} pour afficher la fenêtre contextuelle suivante.
 
-Vous avez accès pour l'utilisateur à :
+![Add user](images/adduser.png){.thumbnail}
 
-- l'ID de l'utilisateur
-- Le nom que vous avez choisi qui apparaîtra dans Description
-- Le mot de passe
+La description de l’utilisateur ne représente pas le nom de cet utilisateur. Il s’agit simplement d’un terme descriptif qui vous rappellera le type d’utilisateur auquel il appartient. Sur l’écran suivant, vous pourrez définir les autorisations de l’utilisateur. Pour chaque case d’autorisation que vous cochez, l’utilisateur obtiendra les privilèges correspondants indiqués dans le tableau ci-dessous :
 
+![Permissions](images/permissions.png){.thumbnail}
 
-![public-cloud](images/add_user_menu.png){.thumbnail}
+Cliquez sur le bouton `Confirmer`{.action} lorsque vous avez terminé et vous verrez l’écran suivant :
 
+![User_pw](images/user_pw.png){.thumbnail}
 
+Enregistrez votre mot de passe à cet instant même, car c’est la seule occasion que vous aurez de le récupérer. Toutefois, si vous le perdez, vous pouvez toujours en créer un nouveau en cliquant sur le bouton (...) à droite de l'utilisateur puis sur `Regénérer un mot de passe :`{.action}
 
-> [!primary]
->
-> Le mot de passe présent dans votre Espace Client sera visible jusqu’au
-> rafraîchissement de la page uniquement. En cas de perte, il sera nécessaire
-> d'en générer un nouveau.
-> 
+![Generate](images/generatepw.png){.thumbnail}
 
-En cliquant sur la molette en bout de ligne, vous avez la possibilité de :
+Une fois votre utilisateur créé, vous pouvez utiliser ces identifiants pour vous connecter à l’interface Horizon via le bouton `Horizon`{.action} dans la barre latérale gauche.
 
-- Ouvrir OpenStack Horizon
-- Télécharger un fichier de configuration OpenStack
-- Générer un token OpenStack
+## Supprimer un utilisateur OpenStack
 
+Vous pouvez supprimer un utilisateur OpenStack depuis le menu `Users & Roles`{.action}. Cliquez sur le bouton (...) à droite de l'utilisateur à supprimer puis sur `Supprimer`{.action}. Vous devrez alors confirmer la suppression.
 
-## Suppression de l'utilisateur OpenStack
-La suppression de l'utilisateur OpenStack se fait directement dans l'Espace Client (Cloud → Serveurs → Nom de votre Projet Public Cloud). Dans la partie OpenStack vous trouverez à droite de l'utilisateur existant une petite corbeille :
-
-
-![public-cloud](images/delete_user.png){.thumbnail}
-
-Un simple clic dessus et une validation et l'utilisateur sera supprimé en quelques secondes.
-
+![public-cloud](images/delete.png){.thumbnail}
 
 
 > [!alert]
 >
-> Toute suppression d'utilisateur est définitive et invalidera tous les
-> tokens associés, même ceux dont la date d'expiration n'est pas dépassée.
-> 
+> Toute suppression d’utilisateur est définitive et invalidera tous les tokens associés, y compris ceux dont la date d’expiration n’est pas encore dépassée.
+>
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
