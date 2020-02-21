@@ -13,12 +13,12 @@ Vous pouvez gérer facilement vos projets Public Cloud OVHcloud depuis votre [es
 
 **Découvrez comment démarrer avec une instance Public Cloud.**
 
-### Prérequis
+## Prérequis
 
 - [Avoir créé une instance Public Cloud d’OVH depuis votre compte](../creer-instance-espace-client/).
 - [Avoir créé une clé SSH](../creation-des-cles-ssh/).
 
-### En pratique
+## En pratique
 
 ### Accéder à l’interface de gestion de l’instance.
 
@@ -53,13 +53,21 @@ Dans la fenêtre qui s’affiche, vous pouvez :
 
 ### Créer une sauvegarde d’une instance.
 
-Vous pouvez créer une sauvegarde d’une instance à partir de sa page d’administration.  Pour ce faire, cliquez sur les 3 points à droite de l’instance et sélectionnez `Créer un backup`{.action}. Vous verrez ensuite cette page affichant toutes les informations nécessaires : ![public-cloud](images/backup.png){.thumbnail} .
+Vous pouvez créer une sauvegarde d’une instance à partir de sa page d’administration.  Pour ce faire, cliquez sur les 3 points à droite de l’instance et sélectionnez `Créer un backup`{.action}. Vous verrez ensuite cette page affichant toutes les informations nécessaires : 
 
-Les informations suivantes s’afficheront alors : ![public-cloud](images/backup1.png){.thumbnail} .
+![public-cloud](images/backup.png){.thumbnail}
 
-Après votre confirmation, les informations suivantes s’afficheront : ![public-cloud](images/backup2.png){.thumbnail} .
+Les informations suivantes s’afficheront alors :
 
-Une fois la sauvegarde effectuée, vous pourrez la voir dans la section `Sauvegarde de l’instance`{.action} : ![public-cloud](images/backup3.png){.thumbnail} .
+![public-cloud](images/backup1.png){.thumbnail}
+
+Après votre confirmation, les informations suivantes s’afficheront : 
+
+![public-cloud](images/backup2.png){.thumbnail}
+
+Une fois la sauvegarde effectuée, vous pourrez la voir dans la section `Sauvegarde de l’instance`{.action} : 
+
+![public-cloud](images/backup3.png){.thumbnail}
 
 Vous pouvez vous référer à notre guide sur la [Sauvegarde d’une instance](../back-up-instance/) si vous avez besoin d’aide à ce sujet. 
 
@@ -67,13 +75,19 @@ Vous pouvez vous référer à notre guide sur la [Sauvegarde d’une instance](.
 
 Vous pouvez programmer une sauvegarde automatique pour une instance depuis sa page d’administration. Pour ce faire, cliquez sur les 3 points à droite de l’instance et sélectionnez `Créer une sauvegarde automatisée`{.action} : ![public-cloud](images/backupauto.png){.thumbnail}
 
-La page suivante s’affiche : ![public-cloud](images/backupauto1.png){.thumbnail} .
+La page suivante s’affiche : 
 
-Une fois que vous aurez sélectionné les informations nécessaires et que vous aurez cliqué sur `Créer`{.action}, vous serez redirigé vers la page suivante : ![public-cloud](images/backupauto2.png){.thumbnail} .
+![public-cloud](images/backupauto1.png){.thumbnail}
 
-Vous pouvez à tout moment accéder au menu `Workflow Management`{.action} pour supprimer le processus de sauvegarde automatique en cours : ![public-cloud](images/backupautodelete.png){.thumbnail}
+Une fois que vous aurez sélectionné les informations nécessaires et que vous aurez cliqué sur `Créer`{.action}, vous serez redirigé vers la page suivante : 
 
-Vous pouvez vous référer à notre guide sur la [Sauvegarde d’une instance](../back-up-instance/) si vous avez besoin d’aide à ce sujet. 
+![public-cloud](images/backupauto2.png){.thumbnail}
+
+Vous pouvez à tout moment accéder au menu `Workflow Management`{.action} pour supprimer le processus de sauvegarde automatique en cours : 
+
+![public-cloud](images/backupautodelete.png){.thumbnail}
+
+Vous pouvez vous référer à notre guide sur la [sauvegarde d’une instance](../back-up-instance/) si vous avez besoin d’aide à ce sujet. 
 
 ### Récupérer vos informations de connexion.
 
@@ -109,7 +123,13 @@ Ensuite confirmez votre requête dans la fenêtre qui s’affiche.
 
 ### Réinstaller une instance.
 
-Vous pouvez réinstaller une instance et conserver le même système d’exploitation. **Veuillez noter que si vous choisissez de réinstaller, toutes les données actuellement stockées sur votre instance seront effacées.**
+Vous pouvez réinstaller une instance et conserver le même système d’exploitation. 
+
+> [!warning]
+>
+Si vous choisissez de réinstaller une instance, toutes les données actuellement stockées sur celle-ci seront effacées.
+>
+
 
 Dans l’interface de gestion de l’instance, cliquez sur les 3 points situés à droite de l’instance et sélectionnez `Réinstaller`{.action}. Cliquez ensuite sur `Confirmer`{.action} pour lancer le processus.
 
@@ -117,7 +137,13 @@ Dans l’interface de gestion de l’instance, cliquez sur les 3 points situés
 
 ### Supprimer une instance.
 
-Vous pouvez également supprimer une instance. **Cette action supprimera définitivement l’instance ainsi que toutes les données qu’elle contient.**
+Vous pouvez également supprimer une instance. 
+
+> [!warning]
+>
+Cette action supprimera définitivement l’instance ainsi que toutes les données qu’elle contient.
+>
+
 
 Dans l’interface de gestion de l’instance, cliquez sur les 3 points situés à droite de l’instance et sélectionnez `Supprimer`{.action}. Cliquez ensuite sur `Confirmer`{.action} pour lancer le processus.
 
