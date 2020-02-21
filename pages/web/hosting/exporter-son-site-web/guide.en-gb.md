@@ -10,7 +10,7 @@ order: 2
 
 ## Objective
 
-This guideline will outline the steps to follow in order to export all elements of your website in a standard format, from an [OVHcloud web hosting plan]({https://www.ovh.co.uk/web-hosting/){.external}.
+This guideline will outline the steps to follow in order to export all elements of your website in a standard format, from an [OVHcloud web hosting plan](https://www.ovh.co.uk/web-hosting/){.external}.
 
 **Find out how to export an OVHcloud website.**
 
@@ -42,7 +42,7 @@ Once you have everything you need, there are two different ways of retrieving yo
 
 - **Using FTP- or SFTP-compatible software.** You will need to install a compatible program on your computer (e.g. FileZilla). Since OVHcloud did not create the software package you have installed, please contact the software’s publisher if you are experiencing difficulties using it.
 
-- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](https://docs.ovh.com/gb/en/hosting/){.external} are required to use this type of access. For further information on this, please refer to our guide on [Accessing your web hosting plan via SSH](https://docs.ovh.com/gb/en/hosting/web_hosting_ssh_on_web_hosting_packages/){.external}. 
+- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](https://www.ovh.co.uk/web-hosting/){.external} are required to use this type of access. For further information on this, please refer to our guide on [Accessing your web hosting plan via SSH](https://docs.ovh.com/gb/en/hosting/web_hosting_ssh_on_web_hosting_packages/){.external}. 
 
 #### 2.1 Upload the files from your storage space.
 
@@ -60,7 +60,7 @@ To identify the folder that the website is stored on, go to the `Multi-site`{.ac
 >
 
 To retrieve a backup of your database, please read our guide on
-[Retrieving the backup of a Web Hosting plan’s database](../exportation-bases-donnees/){.external}.
+[Retrieving the backup of a Web Hosting plan’s database](https://docs.ovh.com/gb/en/hosting/web_hosting_database_export_guide/){.external}.
 
 If you are using a **Private SQL** database for your website, you can go to the ‘Databases’ tab, click on the cogwheel next to the database, and click ‘Back up now’ in the drop-down menu.
 You can also download, import and restore backups in this section.
