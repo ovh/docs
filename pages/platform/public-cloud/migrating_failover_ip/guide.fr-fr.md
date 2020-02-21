@@ -5,6 +5,8 @@ legacy_guide_number: 1890
 section: 'Base de connaissances'
 ---
 
+**Dernière mise à jour le 21/02/2020**
+
 ## Objectif
 
 Ce guide vous explique comment basculer une IP Failover d'une instance à une autre. Cette opération peut avoir plusieurs applications, permettant généralement de limiter ou de supprimer les éventuels cas d'indisponibilité de service :
