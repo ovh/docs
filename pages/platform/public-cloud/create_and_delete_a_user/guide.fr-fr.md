@@ -11,12 +11,13 @@ Pour pouvoir utiliser les API Horizon ou OpenStack, vous devrez au préalable cr
 
 **Découvrez comment créer et supprimer un utilisateur OpenStack.**
 
-### Prérequis
+## Prérequis
 
 Disposer d'un projet Public Cloud. S'il s'agit de votre premier projet, il doit dater de plus de 7 jours (ou contactez l’assistance technique pour vérifier si vous pouvez débloquer le projet plus tôt). Les autres projets n’auront pas cette limitation.
 
+## En pratique
 
-## Créer un utilisateur OpenStack.
+### Créer un utilisateur OpenStack.
 Tout d’abord, pour accéder à l’interface Horizon, vous devez créer un compte utilisateur OpenStack. Pour ce faire, connectez-vous à votre espace client et sélectionnez `Public Cloud`{.action}. Sur l’écran qui s’affiche, cliquez sur la `flèche`{.action} à côté du nom de votre projet en haut, à gauche.
 
 ![Add user](images/select_project.png){.thumbnail}
@@ -43,7 +44,7 @@ Enregistrez votre mot de passe à cet instant même, car c’est la seule occasi
 
 Une fois votre utilisateur créé, vous pouvez utiliser ces identifiants pour vous connecter à l’interface Horizon via le bouton `Horizon`{.action} dans la barre latérale gauche.
 
-## Supprimer un utilisateur OpenStack
+### Supprimer un utilisateur OpenStack
 
 Vous pouvez supprimer un utilisateur OpenStack depuis le menu `Users & Roles`{.action}. Cliquez sur le bouton (...) à droite de l'utilisateur à supprimer puis sur `Supprimer`{.action}. Vous devrez alors confirmer la suppression.
 
