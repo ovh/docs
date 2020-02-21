@@ -18,11 +18,13 @@ Deux méthodes existent pour ajouter une clé SSH à partir de l’interface Pub
 - La seconde consiste à ajouter une clé via le gestionnaire de clés SSH.
 
 
-### Prérequis
+## Prérequis
+
 - Une [clé SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/){.ref}
 
+## En pratique
 
-## Création d’une instance
+### Création d’une instance
 Pour créer une instance cloud, accédez à l’interface client Public Cloud et cliquez sur `Créer une instance`{.action} dans le menu « Instances » situé dans la section `Compute`{.action} du menu de gauche.
 
 ![Add a server](images/compute.png){.thumbnail}
@@ -37,7 +39,7 @@ Si vous voulez ajouter une clé, cliquez sur `Ajouter une clé`{.action}. Créez
 
 ![Add a key](images/addkey.png){.thumbnail}
 
-## À partir de l’outil de gestion de clés
+### À partir de l’outil de gestion de clés
 
 Une fois que l’option « Clés SSH » a été sélectionnée dans le menu gauche de votre projet, un onglet « Clés SSH » devient accessible.
 
