@@ -1,55 +1,55 @@
 ---
-title: Przeniesienie adresu IP Fail Over
-excerpt: Przeniesienie adresu IP Fail Over
+title: 'Przeniesienie adresu IP Fail Over'
+excerpt: 'Przeniesienie adresu IP Fail Over'
 slug: przeniesienie_adresu_ip_fail_over
 legacy_guide_number: g1890
-section: Zarządzanie w Panelu klienta OVH
+section: 'Zarządzanie w Panelu klienta OVH'
 ---
 
+**Ostatnia aktualizacja: 04-12-2019**
 
 ## 
-Przewodnik ten wyjaśnia, jak przenieść adres IP fail over z jednej instancji na inną instancję. Operacja ta może mieć wiele zastosowań pozwalających na ograniczenie lub usunięcie ewentualnych przypadków niedostępności usługi:
+W tym przewodniku wyjaśniono, jak przenieść adres IP Failover (używany w przypadku awarii) z jednej instancji do innej. Dzięki tej operacji można ograniczyć czas niedostępności serwera lub uniknąć sytuacji braku dostępności, a ponadto jest możliwe:
 
-- przeniesienie na stronę w nowej wersji;
-- prowadzenie działalności na zreplikowanym serwerze podczas wykonywania konserwacji, aktualizacji na serwerze produkcyjnym.
-
-
-
-
-## Wstępne wymagania
-
-- Co najmniej dwie uruchomione instancje Public Cloud
-- Adres IP Fail Over
+- przeniesienie wielu stron internetowych do ich „nowych wersji”,
+- prowadzenie działalności na serwerze zreplikowanym przy jednoczesnym przeprowadzaniu konserwacji lub aktualizacji na serwerze produkcyjnym.
 
 
 
 
-## 
+## Wymagania początkowe
 
-- Początkowo IP jest routowane na serwer 1. Chcesz je przenieść na serwer 2.
-
-
-
-![](images/img_3815.jpg){.thumbnail}
-
-- Kliknij na opcję Zwiń/Rozwiń, i Zmień przypisany serwer.
+- Co najmniej dwie działające instancje Public Cloud
+- Adres IP Failover
 
 
-
-![](images/img_3816.jpg){.thumbnail}
-
-- Zaznacz pole wyboru przy serwerze docelowym.
-
-
-
-![](images/img_3817.jpg){.thumbnail}
-
-- Kliknij na Przypisz.
-
-
-IP Fail Over może zostać skonfigurowane na serwerze docelowym przed wykonaniem przeniesienia lub po jego wykonaniu. Jeśli konfiguracja zostanie wykonana wcześniej, adres zacznie odpowiadać po zakończeniu operacji routowania.
 
 
 ## 
-[Przewodniki Cloud]({legacy}1785)
+
+- Aby rozpocząć, kliknij sekcję Failover IP poniżej pozycji Sieć w lewym menu. Z informacji w wyświetlonym oknie wynika, że adres IP Failover jest kierowany do instancji A (instance_A), a ma zostać przekierowany do instancji B (instance_B).
+
+![](images/failover.png){.thumbnail}
+
+Kliknij ikonę z trzema kropkami po prawej stronie adresu IP Failover, a następnie wybierz pozycję Zmodyfikuj powiązaną instancję.
+
+![](images/modify.png){.thumbnail}
+
+Kliknij pole obok serwera docelowego.
+
+![](images/modify1.png){.thumbnail}
+
+- Kliknij przycisk Dołącz.
+
+- Po kilku sekundach Panel klienta zostanie zaktualizowany. Zostanie też wyświetlony następujący komunikat z potwierdzeniem pomyślnego przeniesienia:
+
+![](images/modify2.png){.thumbnail}
+
+## 
+
+Adres IP Failover można skonfigurować na serwerze docelowym przed przeniesieniem lub po nim. Jeśli został skonfigurowany wcześniej, zacznie odpowiadać od razu po ukończeniu operacji routingu.
+
+
+## 
+[Powrót do indeksu przewodników rozwiązania Cloud]({legacy}1785)
 
