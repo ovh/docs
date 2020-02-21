@@ -26,7 +26,7 @@ Aby dostosować swoją chmurę prywatną do certyfikacji HDS lub PCI DSS, należ
 
 W oknie, które się pojawi, kliknij kartę`Informacje ogólne`{.action}. Następnie sprawdź stan aktywacji opcji bezpieczeństwa w sekcji „Opcje bezpieczeństwa”. **Należy pamiętać, że na chwilę obecną nie można włączyć więcej niż jednej opcji bezpieczeństwa dla tej samej chmury prywatnej.**
 
-![hdspcidsscompliance](images/HomeSDDCManager.png){.thumbnail}
+![hdspcidsscompliance](images/HomeSDDCManager.PNG){.thumbnail}
 
 Jeśli pożądana opcja nie jest aktywna, włącz ją, klikając przycisk `...`{.action} i wybierając opcję `Aktywuj`{.action}. Wymaga to spełnienia wielu wymagań wstępnych.
 
