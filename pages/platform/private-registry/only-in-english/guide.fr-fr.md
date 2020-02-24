@@ -12,3 +12,4 @@ La documentation de notre produit *OVHcloud Managed Private Registry* n’est po
 Vous y trouverez des guides de prise en main, des tutoriels et une documentation complète relative aux fonctionnalités disponibles et limites connues. 
 
 Cliquez [ici](https://docs.ovh.com/gb/en/private-registry/) pour consulter la documentation de *OVHcloud Managed Private Registry*.
+
