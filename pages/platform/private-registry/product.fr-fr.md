@@ -1,7 +1,7 @@
 ---
 title: 'Managed Private Registry (Harbor)'
 slug: private-registry
-excerpt: 'Get started with Managed Private Registry'
-sections: 'Getting started'
+excerpt: 'Premiers pas avec Managed Private Registry'
+sections: 'Premier pas'
 ---
 

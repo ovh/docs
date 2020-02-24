@@ -1,8 +1,9 @@
 ---
-title: 'OVHcloud Managed Private Registry'
+title: 'Plus d’informations'
 slug: only-in-english
 excerpt: 'Disponible en anglais uniquement'
-section: 'Getting started'
+section: 'Premiers pas'
+order: 2
 ---
 
 ## Disponible en anglais uniquement.
