@@ -1,8 +1,8 @@
 ---
 title: 'Creating and using a private image'
-excerpt: ''
 slug: creating-and-using-a-private-image
-section: 'Tutorials'
+excerpt: ''
+section: Tutorials
 order: 1
 ---
 
@@ -47,9 +47,9 @@ OVHcloud Managed Private Registry service provides you a managed, authenticated 
 
 ### Get your OVHcloud Managed Private Registry API URL
 
-Go to your private registry section on the OVHcloud Public Cloud Manager, and in the *more options* (*...*) button at the right, click on API Harbor.
+Go to your private registry section on the OVHcloud Public Cloud Manager, and in the *more options* (*...*) button at the right, click on Harbor API.
 
-![API Harbor](images/creating-a-using-a-private-image-001.jpg){.thumbnail}
+![API Harbor](images/creating-a-using-a-private-image-001b.jpg){.thumbnail}
 
 Copy the URL of the API Harbor, it's the URL of your private registry and we are going to use it several times in this guide.
 
