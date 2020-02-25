@@ -46,43 +46,42 @@ OVHcloudManaged Private Registry service provides you a managed, authenticated D
 
 1. In the left menu, in section *Orchestration/Industrialisation*, select *Managed Private Registry*.
 
-    ![Create a Private Registry](images/create-a-private-registry-001-s.jpg){.thumbnail}
+    ![Create a Private Registry](images/create-a-private-registry-001.jpg){.thumbnail}
 
-1. Then click on *Create a Private Registry*. During the beta, the private registry is totally free.
+1. Then click on *Create a Private Registry*.
 
-    ![Create a Private Registry](images/create-a-private-registry-002-s.jpg){.thumbnail}
+    ![Create a Private Registry](images/create-a-private-registry-002.jpg){.thumbnail}
 
 
-1. In the pop-up *Create a private registry*, write a name for your private registry and read and accept the beta terms.
+1. In the *Create a private registry*, choose a region to deploy your private registry in, and click *Next*.
 
-    ![Create a Private Registry](images/create-a-private-registry-003-s.jpg){.thumbnail}
+    ![Create a Private Registry](images/create-a-private-registry-003.jpg){.thumbnail}
 
-1. So let's write `yourname-registry`, then tick the box to accept beta terms and click then on the blue button *Create*.
+1. Choose the registry name (`my-registry` in my example), and click *Next*.
 
-    ![Create a Private Registry](images/create-a-private-registry-004-s.jpg){.thumbnail}
+    ![Create a Private Registry](images/create-a-private-registry-004.jpg){.thumbnail}
 
+
+1. Choose your plan between the three available plans, and click *Next*.
+
+    ![Create a Private Registry](images/create-a-private-registry-005.jpg){.thumbnail}
 
 1. Your private registry is being created...
 
-    ![Create a Private Registry](images/create-a-private-registry-005-s.jpg){.thumbnail}
+    ![Create a Private Registry](images/create-a-private-registry-006.jpg){.thumbnail}
 
 
-1. When status switches to *Ready*. click on the right end button...
+1. When status switches to *Ready*. click on the right end button and select *Generate identification details*
 
-    ![Create a Private Registry](images/create-a-private-registry-006-s.jpg){.thumbnail}
-
-
-1. And select *Regenerate credentials*
-
-    ![Create a Private Registry](images/create-a-private-registry-007-s.jpg){.thumbnail}
+    ![Create a Private Registry](images/create-a-private-registry-007.jpg){.thumbnail}
 
 1. Then confirm to generate new credentials    
 
-    ![Create a Private Registry](images/create-a-private-registry-008-s.jpg){.thumbnail}
+    ![Create a Private Registry](images/create-a-private-registry-008.jpg){.thumbnail}
 
 1. Credential will be shown on the page. Please write then down, you will need them in order to use your private registry
 
-    ![Create a Private Registry](images/create-a-private-registry-009-s.jpg){.thumbnail}
+    ![Create a Private Registry](images/create-a-private-registry-009.jpg){.thumbnail}
 
 
 Congratulations, you have now a working OVHcloud Managed Private Registry
