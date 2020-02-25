@@ -9,7 +9,7 @@ order: 4
 
 ## Objective
 
-This tutorial will tech you how to query deployed model on OVHcloud
+This tutorial will teach you how to query deployed model on OVHcloud
 serving engine.
 
 ## Requirements
