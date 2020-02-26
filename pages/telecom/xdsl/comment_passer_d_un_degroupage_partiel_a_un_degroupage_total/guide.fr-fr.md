@@ -1,8 +1,8 @@
 ---
-title: Comment passer d’un dégroupage partiel à un dégroupage total
+title: 'Comment passer d’un dégroupage partiel à un dégroupage total'
 slug: comment-passer-d-un-degroupage-partiel-a-un-degroupage-total
 legacy_guide_number: '7962660'
-section: Gestion de mon offre
+section: 'Gestion de mon offre'
 ---
 
 ### Préambule {#préambule}
@@ -32,7 +32,7 @@ Pour effectuer cette migration, vous devez possédez :
 
 ### Passer en dégroupage Total {#passer-en-dégroupage-total}
 
-La commande du bloc IP s'effectue dans l'Espace Client Telecom :
+La commande du dégroupage total s'effectue dans l'Espace Client Telecom :
 
 -   Connectez vous à l'espace client : **<https://www.ovhtelecom.fr/espaceclient/login/>**
 -   Cliquez sur "**Gestion des offres**".

@@ -51,7 +51,7 @@ Le tableau qui apparaît permet ainsi de visionner les différents services pour
 
 ### Modifier les contacts d'un service
 
-Une fois sur la page de gestion des contacts, cliquez sur `...`{.action} à droite du service à modifier, puis `Modifier les contacts`{.action} . Renseignez le ou les nouveaux contacts souhaités puis sur `Valider`{.action} votre demande.
+Une fois sur la page de gestion des contacts, cliquez sur `...`{.action} à droite du service à modifier, puis sur `Modifier les contacts`{.action}. Renseignez le ou les nouveaux contacts souhaités puis cliquez sur `Valider`{.action} votre demande.
 
 ![Contact management](images/managing_contacts_03.png){.thumbnail}
 

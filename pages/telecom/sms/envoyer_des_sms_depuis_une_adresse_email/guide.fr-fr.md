@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment envoyer des SMS depuis une adresse email'
 section: 'Envoyer des SMS'
 ---
 
-**Dernière mise à jour le 13/11/2019**
+**Dernière mise à jour le 26/02/2020**
 
 ## Objectif
 
@@ -43,6 +43,14 @@ Pour envoyer un SMS contenant ces éléments, il vous faudra le faire depuis l'e
 
 Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](https://docs.ovh.com/fr/sms/envoyer-sms-depuis-adresse-email/#annexe_1) en bas de ce guide.
 
+> [!warning]
+>
+> Afin d'optimiser la prise en compte de certains caractères spéciaux, activez le « mode texte brut » dans votre client e-mail, comme ici sur Microsoft Outlook :
+> 
+>  ![email2sms](images/plaintext01.png){.thumbnail}
+>
+
+
 ### Étape 1 : inclure les champs obligatoires dans votre e-mail
 
 Ouvrez votre webmail ou client de messagerie puis créez un e-mail. 
@@ -58,7 +66,7 @@ CompteSMS:UtilisateurSMS:MotDePasse:Expediteur:Destinataire
 
 
 
-- CompteSMS = Compte SMS à utiliser (ex : sms-ab1234-1).
+- CompteSMS = Compte SMS à utiliser (ex : sms-xx11111-1).
 
 - UtilisateurSMS = Utilisateur SMS à utiliser sur le compte associé.
 
@@ -71,7 +79,7 @@ CompteSMS:UtilisateurSMS:MotDePasse:Expediteur:Destinataire
 Vous devriez obtenir un résultat équivalent à l'image ci-dessous. Par défaut, une fois votre e-mail envoyé, le SMS est envoyé immédiatement.
 
 
-![](images/send-sms-through-email1.png){.thumbnail}
+![email2sms](images/send-sms-through-email1.png){.thumbnail}
 
 > [!primary]
 >**Uniquement pour les comptes OVHcloud en France :**
@@ -151,11 +159,11 @@ Le(s) destinataire(s) du message peut/peuvent être géré(s) de plusieurs mani�
 
 Une fois votre envoi effectué, vous recevrez par e-mail un rapport d'envoi. Le rapport ci-dessous indique que l'envoi s'est effectué avec succès :
 
-![](images/send-sms-through-email4.png){.thumbnail}
+![email2sms](images/send-sms-through-email4.png){.thumbnail}
 
 Si vous avez rencontrez une erreur lors de l'envoi, cette dernière sera notifiée dans le rapport, comme dans l'exemple ci-dessous :
 
-![](images/send-sms-through-email5.png){.thumbnail}
+![email2sms](images/send-sms-through-email5.png){.thumbnail}
 
 ## Annexe
 
