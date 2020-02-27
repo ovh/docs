@@ -1,59 +1,66 @@
 ---
-title: 'Exchange 2016: how to set up automatic replies in OWA'
-excerpt: how to set up automatic replies in OWA guide
+title: 'Creating automatic replies in OWA'
+excerpt: 'Find out how to set up automatic replies in OWA'
 slug: exchange_2016_how_to_set_up_automatic_replies_in_owa
-section: Outlook Web Access
+section: 'Outlook Web Access'
 ---
 
+**Last updated 25th February 2020**
 
-## Overview
-This feature enables you to set up automatic replies for when you're away on holiday, or for any other reason.
+## Objective
 
+This Exchange feature allows you to set up automatic responses to emails sent to your account for various use cases, for example out-of-office messages.
 
-## How do you set up an automatic reply?
-
-## Set up
-Once you're logged in to the Exchange interface via the [Outlook Web App (OWA)](https://ex.mail.ovh.net/owa/), you can access this feature via the [blue "Settings"  button (the gear symbol) and then  "Set automatic replies" .
-
-You can also access it via: "Settings", "Options", "Mail", "Automatic Replies".
-
-![](images/img_2946.jpg){.thumbnail}
-You will then see the following interface:
-
-Click on "Send automatic replies"and define, if necessary, the time period during which the automatic replies will be sent.
-
-You have access to a content editor to create the format of your message (size, font, hyperlink, etc.).
-
-![](images/img_2947.jpg){.thumbnail}
-
-## Response types
-You can set up various types of automatic replies (or responses):
-
- - For senders within your organisation only.
-
-Automatic replies will only be sent to Exchange users on your Exchange platform.
-
-And/or
+**Find out how to enable automatic replies using the Outlook Web App (OWA).**
 
 
-- for senders within and outside your organisation.
+## Requirements
+
+- an [OVHcloud Exchange solution](https://www.ovh.co.uk/emails/hosted-exchange) already set up
+- access to your Exchange account (email address and password)
 
 
-You can, for example, choose to send a particular automatic reply to people in your organisation (your colleagues) and a different reply for people outside your organisation (clients, friends, etc.).
+## Instructions
 
-![](images/img_2948.jpg){.thumbnail}
+### Activating the feature
 
+Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.co.uk/mail). Click on the gear symbol on the top right to unfold the "Options" menu and select `Automatic replies`{.action}.
 
-## Additional information
-When automatic replies are enabled, you receive emails as normal in your inbox.
+![](images/exchange-autorep-step1.png){.thumbnail}
 
-When you define a time period for your automatic replies, a new button will appear on the blue strip at the very top of the interface.
+In this interface, simply activate the feature by selecting `Send automatic replies`{.action}. You can set an exact time period in the fields below or enable it indefinitely. Without the start and end time specified, it will have to be manually disabled. 
 
-You can disable  "automatic replies"  using this button.
+Compose your message in the editor box and confirm with the `Save`{.action} button on the top left.
 
-![](images/img_2949.jpg){.thumbnail}
-
-- Please note: to avoid spamming, the automatic reply is sent only once to each sender.
+![](images/exchange-autorep-step2.png){.thumbnail}
 
 
+### Response types
 
+The instructions above apply to emails sent by users on your Exchange service. You can prepare a separate message for everyone else if you check the box called "Send automatic reply messages to senders outside my organisation". You will then have two more options for automatic replies:
+
+- **"Send replies only to senders in my contact list"**: Only your contacts will receive a message.
+
+- **"Send automatic replies to all external senders"**: Everyone sending emails to you during your absence will receive a message.
+
+An alternative message for external senders can be entered into the second editor box. A typical use case would be to respond with the first message to your co-workers and with the second one to friends, clients or anyone else who may contact you.
+
+![](images/exchange-autorep-step3.png){.thumbnail}
+
+
+### Additional information
+
+- With automatic replies enabled, you will receive emails as usual in your inbox.
+
+- To avoid spamming and email loops, each sender will receive only one automatic reply.
+
+
+## Go further
+
+[Using the Outlook Web App with an Exchange account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide)
+
+[Delegating permissions on an Exchange account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2013_how_to_grant_full_access_permissions_for_an_account)
+
+[Sharing calendars in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_calendars_via_owa)
+
+Join our community of users on <https://community.ovh.com/en/>.
