@@ -1,610 +1,212 @@
 ---
-title: 'Outlook Web App user guide'
-excerpt: Outlook Web App user guide
+title: 'Using the Outlook Web App with an Exchange account'
+excerpt: 'Find out how to manage your Exchange address using OWA webmail'
 slug: exchange_2016_outlook_web_app_user_guide
-section: Email Clients
+section: 'Outlook Web Access'
 ---
 
+**Last updated 26th February 2020**
 
-**What is Outlook Web App (OWA)?**
+## Objective
 
-OWA is the Exchange webmail. This interface lets you access and use your Exchange account and the various associated features from a classic web page.
+With OVHcloud Hosted Exchange you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web Application (OWA). Our [webmail login page](https://www.ovh.co.uk/mail) is the single point of access to the respective OWA for all active email accounts on MX Plan, Email Pro and Hosted Exchange.
 
-This interface is very useful if you do not have the email software to configure and use an Exchange account.
+**This guide explains how to carry out common actions with your email address in the OWA interface.**
 
-**Where and how do I log in to OWA?**
+## Requirements
 
-The email address will be the full Exchange address that you wish to view.
+- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovh.co.uk/web-hosting), included in a [free Start10M hosting](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml) or ordered separately as a standalone solution; [**Hosted Exchange**](https://www.ovh.co.uk/emails/hosted-exchange) or [**Email Pro**](https://www.ovh.co.uk/emails/email-pro))
+- login credentials for the email address you want to configure
 
-The password matches the one you entered when you created the Exchange address in your [ Web Control Panel](https://www.ovh.com/manager/web/login.html).
+## Instructions
 
-Hosted Exchange:
+This guide will give you a better understanding of the usual email account tasks available in the OWA webmail. However, since this interface was not originally created by OVHcloud, we're unable to provide specific instructions about any settings not mentioned in this guide. Regarding Exchange functionalities, we have prepared some additional guides which you can find in the [**Go further**](./#go-further) section below.
 
-- [https://ex.mail.ovh.net](https://ex.mail.ovh.net)
-- [https://ex2.mail.ovh.net](https://ex2.mail.ovh.net)
-- [https://ex3.mail.ovh.net](https://ex3.mail.ovh.net)
 
-Private Exchange: The access URL will depend on the hostname of your server, defined when setting up the service.
+> [!primary]
+>
+> After the first two steps, the instructions don't have to be considered in a particular order. You can use the navigation bar on the left-hand side of this guide to jump to the paragraphs that are useful to you.
+>
 
-![](images/img_2884.jpg){.thumbnail}
+### 1. Accessing OWA webmail
 
-When you log in to OWA for the first time you have to set your time zone.
+To log in to OWA webmail with your email address, go to the general [webmail login page](https://www.ovh.co.uk/mail). Enter your full email address and password, then click the `Login`{.action} button.
 
-![](images/img_2885.jpg){.thumbnail}
+![useowa](images/owa_exchange_step1.png){.thumbnail}
 
-## Outlook Web App 2016
+If this is your first time logging in to OWA webmail with this email address, you will be prompted to set the interface language and time zone. Click `Save`{.action} to continue.
 
-### Interface
+![useowa](images/owa_exchange_step2.png){.thumbnail}
 
-#### Messaging
-Once you are logged on you can view the mailbox.
+From now on, your inbox view will appear by default after login.
 
-You can navigate back to the mailbox at any time from the Calendar, Contacts or Tasks sections. 
+![useowa](images/owa_exchange_step3.png){.thumbnail}
 
-You just have to click on the blue box in the top left in order to access the different sections.
+### 2. Understanding the OWA display
 
-![](images/img_2906.jpg){.thumbnail}
-To create new messages: Click on "new"
+There are several sections to the OWA interface. Please refer to the table and the image below to familiarise yourself with it.
 
-![](images/img_2907.jpg){.thumbnail}
-If you click on the black arrow you will get the following two messages:
+|Parts|Description|  
+|---|---|  
+|Top section (1)|Contains two tab bars: the first one allows access to general settings (such as the [options section](./#accessing-the-options-section)), and the second one can be used to perform specific actions with your address (such as sending or replying to emails).|  
+|Left-hand side (2)|Displays the list of folders for your email address. These appear as a tree-view that you can expand or hide.|
+|Central segment (3)|Displays the list of messages (read and unread) from the folder selected in the left-hand menu. This section can also display search results.|
+|Right-hand side (4)|Displays the reading pane when an email has been selected.|
 
+![useowa](images/owa_exchange_step4.png){.thumbnail}
 
-- Emails
+Note that you can change the size of the vertical sections by clicking and dragging their border lines.
 
-- Calendar event
+### Viewing emails
 
+To view your emails, select a folder on the left-hand side. Incoming emails that are not treated by inbox rules will arrive in the "Inbox" folder. To see if you have received any new emails, check if a number appears next to the respective folder.
 
+![useowa](images/owa_exchange_step5.png){.thumbnail}
 
-![](images/img_2908.jpg){.thumbnail}
-In the left-hand column you will find system folders or other custom folders ("TEST Folder" in our example).
+To read an email, select its folder if necessary. Now click on the email to show its content in the reading section. Unread messages appear in a different colour to set them apart from messages that have been read.
 
-![](images/img_2909.jpg){.thumbnail}
+![useowa](images/owa_exchange_step6.png){.thumbnail}
 
+### Sending and replying
 
-#### New message
-You can add an attachment to your email, use
-[additional applications](http://store.office.com/en-gb/appshome.aspx?productgroup=Outlook&CorrelationId=ec5df993-123e-48e2-894a-6286c39317d7) related to OWA, or activate delivery or read notifications, for example.
+**To send a new email**, click the `New`{.action} button at the top of the webmail interface. The editing pane will appear on the right-hand side. Fill in the fields for your email (recipients, subject, message body, attachments). Once you are ready to send it, click the `Send`{.action} button.
 
-You will also be able to edit content with standard options (font, size, colour, etc.).
+![useowa](images/owa_exchange_step7.png){.thumbnail}
 
-Additional information
-The size of an attachment in OWA is limited to 35 MB. The synchronisation application ActiveSync has a limit of 10 MB for attachments(mainly on ActiveSync compatible smartphones).
-By using compatible email software (Outlook, for example), you can send attachments up to 100 MB in size.
+**To reply to an email**, [click on it first](./#3-viewing-emails) to display it. Then click on the `Reply all`{.action} button. Use the down-arrow button instead if you only want to reply to the sender of the email (leaving out any recipient who is in copy).
 
-![](images/img_2911.jpg){.thumbnail}
+![useowa](images/owa_exchange_step8.png){.thumbnail}
 
+When you choose to reply, the quick-reply editor will appear above the email. Compose your reply here, and once you are ready to send your mail, click `Send`{.action}. Please note that for all reply options (like adding a signature), it must be extended to the full editing pane first by clicking on the double-arrow symbol.
 
-#### System folders and custom folders
-By default, you will see these folders in your mailbox:
+![useowa](images/owa_exchange_step9.png){.thumbnail}
 
+### Organising your inbox
 
-- Inbox
-- Drafts
-- Sent Items
-- Deleted Items
-- SPAM
-- RSS Feeds
-- Notes
+OWA provides several ways to organise your inbox. You can
 
+- [create folders and subfolders](./#creating-a-folder)
+- [move emails](./#moving-emails)
+- [set rules](./#creating-inbox-rules) so that actions are performed automatically when a new email is received
 
+#### Creating a folder
 
-![](images/img_2912.jpg){.thumbnail}
-A system folder cannot be renamed, moved or deleted. They are fixed and non-modifiable.
+To create a new folder, right-click on the name of your email address in the folder tree and then choose `Create new folder`{.action}. You can create a subfolder in existing folders in the same way (`Create new subfolder`{.action}). 
 
-When you right click on your Exchange account display name or a folder, you will be given various options:
+![useowa](images/owa_exchange_step10.png){.thumbnail}
 
-Create a folder: add a new folder to the place you clicked on. In our example, the file will be added to the same place as other folders.
+#### Moving emails
 
-Rename: rename a custom folder.
+**To move an email**, you can simply drag-and-drop it to the target folder or right-click it and select `Move`{.action}.
+**To move multiple emails** at once, select them by checking their tick boxes, and click `Move`{.action} (on the right-hand side) or `Move to`{.action} (in the top section). Then choose the destination folder.
 
-Delete: remove a custom folder.
+![useowa](images/owa_exchange_step11.png){.thumbnail}
 
-Empty: empty a custom folder. All content will be moved to "Deleted Items".
+#### Creating inbox rules
 
-Add to favourites: add selected folders to the "Favourites" folder.
+To manage rules, click on the gear icon at the top, then click on `Options`{.action}.
 
-Move: move the selected custom folder to another folder.
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Mark all read:  mark all unread emails as read.
+On the new page that appears, click on `Inbox and sweep rules`{.action} in the left-hand menu. In the "Options" tree-view, you can find this item under "Mail", then "Automatic processing". From here, you can create, edit, delete and move rules in the list. 
 
-Add a shared folder: access a folder that another user on your Exchange platform has shared with you (this option does not appear when you right click on a system or custom folder).
+> [!primary]
+>
+> If you create multiple rules that respond to the same conditions, only the first one in the list will run.
+>
 
-Permissions: give permissions to the system or custom folder of your choice on your Exchange platform to another user. When permissions are given, the user should (Add a shared folder) via OWA in their Exchange account.
+To add a new rule, click the `+`{.action} button. 
 
+![useowa](images/owa_exchange_step13.png){.thumbnail}
 
-#### Folder contents
-Here, the contents of the selected folder are displayed. In our example, we have selected the "Inbox" folder. It contains two test emails.
+Fill in the requested information depending on the action you want the rule to carry out. Afterwards, click `OK`{.action}. 
 
-You will find a search bar at the top of this column to search for emails or contacts, as well as various sorting options:
+![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-All : display all emails. 
 
-Unread:show only unread emails.
+### Managing a contact list
 
-To me: display only the emails sent to you directly.
+To manage your contacts, click the blue "app launcher" button at the top, then click on `People`{.action}.
 
-With flag: display only the emails with an indicator (⚐ symbol after the email title).
+![useowa](images/owa_exchange_step15.png){.thumbnail}
 
-Sort by lets you sort emails by various categories (Date, Destination, Size, etc.).
+On the new page, you can add a new contact, create a contact list, and remove existing contacts.
 
-![](images/img_2913.jpg){.thumbnail}
+**To add a new contact**, click `New`{.action}, and enter the contact details you want to add. Once you have done this, click `Save`{.action}.
 
-#### Email options
-If you right-click on an email you will get the following options:
+![useowa](images/owa_exchange_step16.png){.thumbnail}
 
-Reply: reply to the sender.
+**To create a contact list**, click the down-arrow button next to "New", then click `Contact List`{.action}. Give it a name, add contacts to it, then click `Save`{.action}.
 
-Reply to all: reply to all people in the "To" and cc field.
+![useowa](images/owa_exchange_step17.png){.thumbnail}
 
-Forward: forward the full email.
+### Changing the password
 
-Delete: delete the email selected. 
+You can change your account password when you are logged in to OWA. To do this, click the gear icon at the top, then click `Options`{.action}.
 
-Archive: archive the email in the "Archive" folder. You can custom name this folder.
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Mark as unread: mark the selected email as unread. 
+On the new page, expand the "General" tab in the tree on the left-hand side, then click `My Account`{.action}. Finally, click `Change Password`{.action}.
 
-Pin: pin the email at the top of your inbox. You can unpin the email at a later date. 
+![useowa](images/owa_exchange_step18.png){.thumbnail}
 
-Mark as Complete: you can only mark emails were previously flagged as complete.
+In the new window that pops up, enter your current password. Then enter a new password, and re-enter to confirm it. Click the `Save`{.action} button to save the new password.
 
-Mark as Spam: mark the email and sender as undesirable. The email is then automatically placed in the "Junk Mail" folder. You can see the list of approved or blocked users in "Settings" (indicated by the gear symbol), "Options", then "Block or allow."
+> [!primary]
+>
+> Remember to also enter your new password on any device i.e. email client used to access this account. In case of any issues with your password, contact your service administrator.
+>
 
-Ignore: ignore the selected email and conversation. The email and conversation will be placed in the "Deleted Items" folder. Future emails from the same conversation will automatically be placed in the "Deleted Items" folder.
+![useowa](images/owa_exchange_step19.png){.thumbnail}
 
-Move: move the selected email to a specific folder.
+### Adding an auto-reply
 
-Categorise: mark the email in a colour to categorise it. You can also manage your categories and change colours.
+In OWA, you can create an automatic reply on your email address to not leave emails unanswered during absences. To do this, click the gear icon at the top, then click `Automatic Replies`{.action}.
 
-Create a rule: Create an inbox rule and configure how your Exchange account manages future emails.
+![useowa](images/owa_exchange_step20.png){.thumbnail}
 
-![](images/img_2914.jpg){.thumbnail}
+In the window that appears, select the option "Send automatic replies". You can then set the auto-responder to fit several criteria:
+- send auto-reply emails for a fixed time interval, or continuously until it is manually disabled
+- define which senders will receive auto-reply emails (internal senders only, or include external senders)
 
+Now, fill in the requested information depending on the action you want it to carry out. Once you have done so, click `OK`{.action}.
 
-#### Email content
-Here you will see the content of the selected email, the profile picture of the sender, the date and time of receipt and additional options:
+![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-Reply to all: reply to all people in the "To" field.
+For more detailed instructions about creating auto-replies, please refer to our guide: [Creating automatic replies in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa).
 
-More options (represented by "..."): display additional options.
+### Adding a signature
 
-![](images/img_2916.jpg){.thumbnail}
+To add an email signature, click the gear icon at the top, then click `Options`{.action}.
 
-#### Additional options:
-Reply: reply to the last person who received the email. 
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Reply all: reply to all people in the "To" field.
+On the left-hand side of the new page, click `Electronic Signature`{.action}. In the options tree, this item is under "Mail" and "Layout". From here you can enable, disable and edit the signature.
 
-Forward: forward the full email.
+![useowa](images/owa_exchange_step22.png){.thumbnail}
 
-Reply to all with a meeting invitation Create an invite to a meeting to be accepted by the people concerned. 
+Compose your electronic signature in the editor box. You can specify whether you want to include the signature by default in new emails only or in replies and forwarded emails as well. Once you have finished, click `Save`{.action} to confirm.
 
-Reply with an instant message : this option is currently not available. This is a feature that will be implemented soon with the arrival of the Lync application.
+For more detailed instructions about creating signatures, please refer to our guide: [Creating an automatic signature in OWA](http://docs.uxci.ovh/admin/pages/web/microsoft-collaborative-solutions/feature_footers).
 
-Reply All with instant message: this option is currently not available. This is a feature that will be implemented soon with the arrival of the Lync application.
+### Accessing the options section
 
-Delete: delete the selected email.
+To access all your settings, click the gear icon at the top, then click `Options`{.action}.
 
-Delete all messages from : delete all messages from a particular sender.
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Mark as Spam: mark the email and sender as undesirable. The email is then automatically placed in the "Junk Mail" folder. You can see the list of approved or blocked users in "Settings" (indicated by the gear symbol), "Options", then "Block or allow."
+You can then browse the "Options" tree-view on the left-hand side of the page. Further adjustments to the layout and behaviour of your email account can be set from here. Please note that some of the account options may be disabled from our side for security reasons.
 
-Mark as unread: mark the selected email as unread.
+![useowa](images/owa_exchange_step23.png){.thumbnail}
 
-Print: open the selected email in a seperate window to print it 
+## Go further
 
-View message details: display the header of the selected email. This option will allow you to see the email path (server used, date, time, etc.) up to the point it reaches our servers. Our technical support team will ask you to use this option in some cases to make specific diagnostics.
+[Creating automatic replies in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa)
 
-Open another email: open the selected email in a separate window.
+[Sharing a folder in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_a_folder_via_owa)
 
-![](images/img_2917.jpg){.thumbnail}
+[Sharing calendars in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_calendars_via_owa)
 
-### Calendar 
+[Creating contact groups](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_use_the_groups_feature_mailing_lists)
 
-#### Overview
-The"Calendar" button lets you view, manage or create your calendars. This section will also allow you to access shared calendars or share your calendars.
-
-![](images/img_2918.jpg){.thumbnail}
-
-
-#### New event
-This button allows you to add an event to your calendar or a shared calendar.
-
-Just like writing a new email, you will find various options for editing the content of the event added to the selected calendar.
-
-![](images/img_2919.jpg){.thumbnail}
-
-### Contacts
-
-#### Overview
-The "Contacts" button lets you view contacts and create contacts or contact folders in your Exchange account.
-
-![](images/img_2920.jpg){.thumbnail}
-In the left-hand column, you will see your Exchange account contacts, as well as the contacts in the Exchange platform (or global address book) and the addresses in resource accounts:
-
-![](images/img_2921.jpg){.thumbnail}
-
-
-#### New event
-This button lets you create a new contact or a new contact group.
-
-![](images/img_2924.jpg){.thumbnail}
-Contact data
-
-When you create a new contact you will be able to add additional information, such as name, surname, telephone, etc.
-
-![](images/img_2922.jpg){.thumbnail}
-
-#### Contact group
-When you create a contact group you can add members to it. You can add email addresses from your address book automatically or add external addresses manually.
-
-You can then send an email to your contact group. The mail is then distributed to all the group members you added.
-
-![](images/img_2925.jpg){.thumbnail}
-
-#### Additional information
-OWA doesn't let you share contacts. You will need to use compatible email software, such as Outlook, to do this.
-
-### Tasks
-
-#### Overview
-The Tasks button lets you create, manage and view tasks in your Exchange account.
-
-The middle column displays the contents of the selected task and the right column displays the task details.
-
-![](images/img_2926.jpg){.thumbnail}
-
-
-#### New task
-This button let's you create a new task in the selected task folder, choose its subject and deadline, and add additional details such as the due date, the percentage of completion, etc.
-
-![](images/img_2928.jpg){.thumbnail}
-
-#### Task folder
-All the task folders appear in the left column. You can also right click  "My Tasks" on the menu to create a custom task folder.
-
-![](images/img_2929.jpg){.thumbnail}
-
-#### Additional information
-OWA doesn't let you share contacts. You will need to use compatible email software, such as Outlook, to do this.
-
-
-### Options
-This button will give you access to the following options:
-
-
-- Modify :: change your profile picture on your Exchange account.
-
-- Open a mailbox
-
-- Disconnect: disconnect the Exchange account and display the OWA login page.
-
-
-
-![](images/img_2931.jpg){.thumbnail}
-
-#### Profile picture
-Click the  "Choose"  button then select the photo on your computer to view your profile.
-
-
-#### Options
-Here you can access your Exchange account general settings and additional options. These are:
-
-Refresh:: update the Exchange account. If someone sends you an email, for example, use this button to refresh the inbox.
-
-Manage applications:  this section will help you to manage or add additional applications to OWA (or plugins). Some applications are installed by default by our administrators and can't be deleted.
-
- Offline settings : enables or disables access to your Exchange account when you're offline. This is useful if you want to check your Exchange account even if you can not connect to the internet.
-
-
-Change the theme: change the theme and colours of your OWA account.
-
-Options : display additional options for your Exchange account. We go through them in detail in the following section.
-
-![](images/img_2932.jpg){.thumbnail}
-"Help" (displayed as a question mark icon): Microsoft Help.
-
-![](images/img_2933.jpg){.thumbnail}
-
-### Additional options for your Exchange account
-In this section you will find the following options:
-
-General: general information about your Exchange account and the OWA interface. You can change your password and certain details. 
-
-
-
-- Additional information: you can only change your name, display name and Exchange address via your  [Web Control Panel](https://www.ovh.com/manager/web/login.html).
-
-Mail: configure your inbox settings, your automatic responses and see your Exchange account delivery reports.
-
-
-Calendar:change calendar options: notifications, reminders etc.
-
-
-![](images/img_2934.jpg){.thumbnail}
-
-You can find additional applications in the [L'office Store](https://store.office.com/en-gb/appshome.aspx?productgroup=Outlook&CorrelationId=ec5df993-123e-48e2-894a-6286c39317d7). Not all applications can be added automatically. Some of them require administrator permissions. If you want to install an application that requires administrator permissions, please contact our Exchange support so that we can analyse your request.
-
-
-
-
-## Outlook Web App 2013
-
-### Interface
-
-#### Messaging
-The mail button lets you to view your Exchange mailbox.
-
-In the left column you will find the button to create new messages, system folders or other customised folders ("TEST Folder" in our example).
-
-The « sign below "New message" lets you hide this column (excluding"New message").
-
-![](images/img_2070.jpg){.thumbnail}
-
-
-#### New message
-You can add an attachment to your email, use [additional applications](http://office.microsoft.com/en-gb/store/apps-for-outlook-FX102825292.aspx)related to OWA, or activate delivery or read notifications, for example.
-
-You will also be able to edit content with standard options (font, size, colour, etc.).
-
-Additional information
-The size of an attachment in OWA is limited to 35 MB. The synchronisation application ActiveSync has a limit of 10 MB (mainly on ActiveSync compatible smartphones).
-By using compatible email software (Outlook, for example), you can send attachments up to 100MB in size.
-
-![](images/img_2071.jpg){.thumbnail}
-
-
-#### System folders and custom folders
-By default, you will see these folders in your mailbox:
-
-
-- Inbox
-- Drafts
-- Sent Items
-- Deleted Items
-- RSS Feeds
-- SPAM
-- Notes
-
-A folder cannot be renamed, moved or deleted. They are fixed and non-modifiable.
-
-
-When you right click on your Exchange account display name or a folder, you will be given various options:
-
-Create a folder: add a new folder to the place you clicked on. In our example, the file will be added to the same place as other folders.
-
-Rename: rename a custom folder.
-
-Delete: remove a custom folder.
-
-Empty: empty a custom folder. All content will be moved to "Deleted Items".
-
-Add to favourites: add selected folders to the "Favourites" folder.
-
-Move: move the selected custom folder to another folder.
-
-Mark all read: mark all unread emails as read.
-
-Add a shared folder: access a folder that another user on your Exchange platform has shared with you (this option does not appear when you right click on a system or custom folder).
-
-Permissions: give permissions to the system or custom folder of your choice on your Exchange platform to another user. When permissions are given, the user should Add a shared folder (above) via OWA in their Exchange account.
-
-![](images/img_2072.jpg){.thumbnail}
-
-
-#### Folder contents
-Here, the contents of the selected folder are displayed. In our example, we have selected the "Inbox" folder. It contains two test emails.
-
-You will find a search bar at the top of this column to search for emails or contacts, as well as various sorting options:
-
-Conversations by date: filter emails into various categories (Date, To, Tagged, size, etc.).
-
-To: display all emails.
-
-Unread: show only unread emails.
-
-To me: display only the emails sent to you directly.
-
-With flag: display only the emails with an indicator (⚐ symbol after the email title).
-
-![](images/img_2075.jpg){.thumbnail}
-
-#### Email options
-Here are the different available options when you right click on an email:
-
-Delete: delete the selected email.
-
-Mark as Read: mark the selected email as read.
-
-Mark as Complete: this option appears only when an indicator (⚐) has been placed on the email, therefore allowing you to mark it as complete.
-
-Move: Move the selected email to a specific folder.
-
-Ignore: Ignore the selected email and conversation. The email and conversation will be placed in the "Deleted Items" folder. Future emails from the same conversation will automatically be placed in the "Deleted Items" folder.
-
-Categorise:] Mark the email in a colour to categorise it. You can also manage your categories and change colours.
-
-Create a rule:] Create an inbox rule and configure how your Exchange account manages future emails.
-
-Mark as Spam: Mark the email and sender as undesirable. The email is then automatically placed in the "Junk Mail" folder. You can see the list of approved or blocked users in "Settings" (indicated by the gear symbol), "Options", then "Block or allow."
-
-![](images/img_2076.jpg){.thumbnail}
-
-
-#### Email content
-Here you will see the content of the selected email, the profile picture of the sender, the date and time of receipt and additional options:
-
-Reply: reply to the sender.
-
-Reply to all: reply to all people in the "To" field.
-
-Forward: forward the full email, including attachments.
-
-More options (represented by "..."): display additional options.
-
-![](images/img_2077.jpg){.thumbnail}
-
-#### Additional options:
-Reply with Instant Message: this option is currently not available. This is a feature that will be implemented soon with the arrival of the Lync application.
-
-Reply All with Instant Message: this option is currently not available. This is a feature that will be implemented soon with the arrival of the Lync application.
-
-Delete: delete the selected email.
-
-Categorise:] mark the email in a colour to categorise it. You can also manage your categories and change colours.
-
-Mark as Spam: mark the email and sender as undesirable. The email is then automatically placed in the "Junk Mail" folder. You can see the list of approved or blocked users in "Settings" (indicated by the gear symbol), "Options", then "Block or allow."
-
-Open in a separate window: open the selected email in a new window.
-
-Print out: open the selected email in a separate window so you can start printing.
-
-Create a rule:] Create an inbox rule and configure how your Exchange account manages future emails.
-
-View message details: display the header of the selected email. This option will allow you to see the email path (server used, date, time, etc.) up to the point it reaches our servers. Our technical support team will ask you to use this option in some cases to make specific diagnostics.
-
-![](images/img_2081.jpg){.thumbnail}
-
-### Calendar
-
-#### Overview
-The "Calendar" button lets you view, manage or create your calendars. This section will also allow you to access shared calendars or share your calendars.
-
-Please see this user guide for the latter:
-[]({legacy}1248)
-
-![](images/img_2082.jpg){.thumbnail}
-
-
-#### New event
-This button allows you to add an event to your calendar or a shared calendar.
-
-Just like writing a new email, you will find various options for editing the content of the event added to the selected calendar.
-
-![](images/img_2083.jpg){.thumbnail}
-
-### Contacts
-
-#### Overview
-The "Contacts" button lets you view contacts and create contacts or contact folders in your Exchange account.
-
-In the left-hand column, you will see your Exchange account contacts, as well as the contacts in the Exchange platform (or global address book) and the addresses in resource accounts:
-
-![](images/img_2084.jpg){.thumbnail}
-
-
-#### New
-This button will allow you to create a new contact or a new contact group.
-
-![](images/img_2085.jpg){.thumbnail}
-
-#### Contact data
-When you create a new contact you will be able to add additional information, such as name, surname, telephone, etc.
-
-![](images/img_2086.jpg){.thumbnail}
-
-#### Contact group
-When you create a contact group you can add members to it. You can add email addresses from your address book automatically or add external addresses manually.
-
-You can then send an email to your contact group. The mail is then distributed to all the group members you added.
-
-![](images/img_2087.jpg){.thumbnail}
-
-#### Additional information
-OWA doesn't let you share contacts. You will need to use compatible email software, such as Outlook, to do this. Please refer to the following guide:
-[]({legacy}1251)
-
-### Tasks
-
-#### Overview
-The Tasks button will let you create, manage and view tasks in your Exchange account.
-
-The middle column displays the contents of the selected task and the right column displays the task details.
-
-![](images/img_2088.jpg){.thumbnail}
-
-
-#### New task
-This button will allow you to create a new task in the selected task folder, to choose its subject and deadline, and to add additional details such as the due date, the percentage of completion, etc.
-
-![](images/img_2089.jpg){.thumbnail}
-
-#### Task folder
-All the task folders appear in the left column. You can also right click"My Tasks" on the menu to create a custom task folder.
-
-![](images/img_2090.jpg){.thumbnail}
-
-#### Additional information
-OWA doesn't let you share contacts. You will need to use compatible email software, such as Outlook, to do this.
-
-
-### Options
-This button will give you access to the following options:
-
-
-- Modify: change your profile picture on your Exchange account.
-
-- Open a mailbox: refer to the available guide to perform this action:
-
-[]({legacy}1249)
-
-- Sign out: disconnect the Exchange account and display the OWA login page.
-
-
-
-![](images/img_2091.jpg){.thumbnail}
-
-#### Profile picture
-Click the "Choose" button then select the photo on your computer to view your profile.
-
-![](images/img_2092.jpg){.thumbnail}
-
-
-#### Options
-Here you can access your Exchange account general settings and additional options. These are:
-
-Refresh: update the Exchange account. If someone sends you an email, for example, use this button to refresh the inbox.
-
-Set automatic responses: set up automatic replies (auto-response) on your Exchange account.
-
-Display settings: change the the OWA interface display settings. Email layout, conversation settings, display email preview pane, activate OWA light version, Microsoft signs.
-
-Manage applications: this section will help you to manage or add additional applications to OWA (or plugins). Some applications are installed by default by our administrators and can't be deleted.
-
-Offline settings: Enables or disables access to your Exchange account when you're offline. This is useful if you want to check your Exchange account even if you can not connect to the internet.
-
-Change the theme: change the theme and colours of your OWA account.
-
-Change the password: change the password of your Exchange account. You can also use your [Web Control Panel](https://www.ovh.com/manager/web/login.html) to do this.
-
-Options : display additional options for your Exchange account. We go through them in detail in the following section.
-
-"Help" (displayed as a question mark icon): Microsoft Help.
-
-![](images/img_2093.jpg){.thumbnail}
-
-### Additional options for your Exchange account
-In this section you will find the following options:
-
-Account: here you will see the general information on your Exchange account. You can also change your Exchange account password and some other information.
-
-
-- Additional information: you can only change your name, display name and Exchange address via your [Web Control Panel](https://www.ovh.com/manager/web/login.html).
-
-Organise Mail: configure your inbox settings, your automatic responses and see your Exchange account delivery reports.
-
-Site mailbox: This option is not currently available. This feature will be implemented soon with the arrival of the Lync application.
-
-Settings: Other settings and posting options, messages, calendars, regional settings, change the Exchange account password.
-
-Telephone: check here for the portable devices that your Exchange account is configured to. You can remove a device from the list, reset it remotely or block it.
-
-Block or allow: here you can manage the approved or blocked email senders or recipients. When you consider email as spam, the email sender is blocked and placed in this folder.
-
-Application: here you can add additional applications (or plugins) to your OWA. Some applications are installed by default by the administrators and can not be deleted.
-
-Additional Information: You can find additional applications in the [Office Store](http://office.microsoft.com/en-gb/store/apps-for-outlook-FX102825292.aspx). Not all applications can be added automatically - some of them require administrator permissions. If you want to install an application that requires administrator permissions, please contact our Exchange support so that we can analyse your request.
-
-
-![](images/img_2094.jpg){.thumbnail}
+Join our community of users on <https://community.ovh.com/en/>.
