@@ -2,6 +2,8 @@
 title: 'Using the Outlook Web App with an Email Pro account'
 slug: using-outlook-web-app-email-pro
 excerpt: 'Find out how to manage your Email Pro address using OWA webmail'
+section: 'Email client configuration'
+order: 1
 ---
 
 **Last updated 25th February 2020**
