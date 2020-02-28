@@ -3,6 +3,7 @@ title: 'Using the Outlook Web App with an Exchange account'
 excerpt: 'Find out how to manage your Exchange address using OWA webmail'
 slug: exchange_2016_outlook_web_app_user_guide
 section: 'Outlook Web Access'
+order: 1
 ---
 
 **Last updated 26th February 2020**
@@ -20,7 +21,7 @@ With OVHcloud Hosted Exchange you can send and receive your emails using a devic
 
 ## Instructions
 
-This guide will give you a better understanding of the usual email account tasks available in the OWA webmail. However, since this interface was not originally created by OVHcloud, we're unable to provide specific instructions about any settings not mentioned in this guide. Regarding Exchange functionalities, we have prepared some additional guides which you can find in the [**Go further**](./#go-further) section below.
+This guide will give you a better understanding of the usual email account tasks available in the OWA webmail. However, since this interface was not originally created by OVHcloud, we're unable to provide specific instructions about any settings not mentioned in this guide. Regarding Exchange functionalities, we have prepared some additional guides which you can find in the [**Go further**](./#go-further_1) section below.
 
 
 > [!primary]
@@ -73,7 +74,7 @@ To read an email, select its folder if necessary. Now click on the email to show
 
 ![useowa](images/owa_exchange_step7.png){.thumbnail}
 
-**To reply to an email**, [click on it first](./#3-viewing-emails) to display it. Then click on the `Reply all`{.action} button. Use the down-arrow button instead if you only want to reply to the sender of the email (leaving out any recipient who is in copy).
+**To reply to an email**, [click on it first](./#viewing-emails) to display it. Then click on the `Reply all`{.action} button. Use the down-arrow button instead if you only want to reply to the sender of the email (leaving out any recipient who is in copy).
 
 ![useowa](images/owa_exchange_step8.png){.thumbnail}
 
@@ -187,7 +188,7 @@ On the left-hand side of the new page, click `Electronic Signature`{.action}. In
 
 Compose your electronic signature in the editor box. You can specify whether you want to include the signature by default in new emails only or in replies and forwarded emails as well. Once you have finished, click `Save`{.action} to confirm.
 
-For more detailed instructions about creating signatures, please refer to our guide: [Creating an automatic signature in OWA](http://docs.uxci.ovh/admin/pages/web/microsoft-collaborative-solutions/feature_footers).
+For more detailed instructions about creating signatures, please refer to our guide: [Creating an automatic signature in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_create_an_automatic_signature).
 
 ### Accessing the options section
 
