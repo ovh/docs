@@ -1,9 +1,9 @@
 ---
-title: Configuring an Email Pro account on iPhone and iPad
+title: 'Configuring an Email Pro account on iPhone and iPad'
 slug: iphone-configuration
-excerpt: Find out how to configure an Email Pro account on iPhone and iPad, via the Mail app
-section: Email client configuration
-order: 3
+excerpt: 'Find out how to configure an Email Pro account on iPhone and iPad, via the Mail app'
+section: 'Email client configuration'
+order: 6
 ---
 
 **Last updated 21st February 2018**
@@ -89,8 +89,8 @@ OVH also offers a web application that includes various [collaborative features]
 
 ## Go further
 
-[Configuring an email address on iPhone and iPad](https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/){.external}.
+[Configuring an email address on iPhone and iPad](https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/)
 
-[Configuring an Exchange account on iPhone and iPad](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2013_how_to_configure_on_ios_iphoneipad/){.external}.
+[Configuring an Exchange account on iPhone and iPad](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2013_how_to_configure_on_ios_iphoneipad/)
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
