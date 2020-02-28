@@ -3,7 +3,7 @@ title: 'Configuring your Email Pro account in Outlook 2016 for Mac'
 slug: configuration-outlook-2016-mac
 excerpt: 'Find out how to configure your Email Pro account in Outlook 2016 for Mac.'
 section: 'Email client configuration'
-order: 2
+order: 4
 ---
 
 **Last updated 31st May 2018**
@@ -71,8 +71,8 @@ OVH also offers a web application that includes various [collaborative features]
 
 ## Go further
 
-[Configuring an email address included in an MX Plan package or in a Web Hosting package in Outlook 2016 for Mac](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016-mac/){.external}
+[Configuring an email address included in an MX Plan package or in a Web Hosting package in Outlook 2016 for Mac](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016-mac/)
 
-[Configuring your Exchange account in Outlook 2016 for Mac](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/configuration-outlook-2016-mac/){.external}
+[Configuring your Exchange account in Outlook 2016 for Mac](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/configuration-outlook-2016-mac/)
 
 Join our community of users on <https://community.ovh.com/en/>.

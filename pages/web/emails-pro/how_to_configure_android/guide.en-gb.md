@@ -1,9 +1,9 @@
 ---
-title: Configuring an Email Pro account on Android via the Gmail app
+title: 'Configuring an Email Pro account on Android via the Gmail app'
 slug: configuration-android
-excerpt: Find out how to configure an Email Pro account on Android, via the Gmail app
-section: Email client configuration
-order: 5
+excerpt: 'Find out how to configure an Email Pro account on Android, via the Gmail app'
+section: 'Email client configuration'
+order: 8
 ---
 
 **Last updated 13th March 2018**
@@ -79,12 +79,12 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH also offers a web application that has [collaborative features](https://www.ovh.co.uk/emails/){.external}, accessible via [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external}. You can log in using your email credentials.
+OVH also offers a web application that has [collaborative features](https://www.ovh.co.uk/emails/){.external}, accessible via [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net). You can log in using your email credentials.
 
 ## Go further
 
-[Configuring an email address included in an MX Plan or web hosting plan on Android, via the Gmail app](https://docs.ovh.com/gb/en/emails/configuration-android/){.external}.
+[Configuring an email address included in an MX Plan or web hosting plan on Android, via the Gmail app](https://docs.ovh.com/gb/en/emails/configuration-android/)
 
-[Configuring an Exchange account on Android via the Gmail app](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2013_how_to_configure_on_android/){.external}.
+[Configuring an Exchange account on Android via the Gmail app](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2013_how_to_configure_on_android/)
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
