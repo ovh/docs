@@ -1,9 +1,9 @@
 ---
-title: Configuring your Email Pro account on the macOS Mail app
+title: 'Configuring your Email Pro account on the macOS Mail app'
 slug: configuring-email-pro-macos-mail
-excerpt: Find out how to configure your Email Pro account on the Mail app, for the following macOS operating systems - El Capitan, Sierra and High Sierra
-section: Email client configuration
-order: 4
+excerpt: 'Find out how to configure your Email Pro account on the Mail app, for the following macOS operating systems - El Capitan, Sierra and High Sierra'
+section: 'Email client configuration'
+order: 5
 ---
 
 **Last updated 15th February 2018**
@@ -84,8 +84,8 @@ OVH offers a web application that has [collaborative features](https://www.ovh.c
 
 ## Go further
 
-[Configuring an email address on the macOS Mail app](https://docs.ovh.com/gb/en/emails/guide-configuring-mail-on-macos/){.external}.
+[Configuring an email address on the macOS Mail app](https://docs.ovh.com/gb/en/emails/guide-configuring-mail-on-macos/)
 
-[Configuring your Exchange account on the macOS Mail app](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange-automatic-configuration-on-mail-mac/){.external}.
+[Configuring your Exchange account on the macOS Mail app](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange-automatic-configuration-on-mail-mac/)
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
