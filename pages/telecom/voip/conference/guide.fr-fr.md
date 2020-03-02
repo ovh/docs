@@ -3,6 +3,7 @@ title: 'Créer et gérer des conférences téléphoniques'
 slug: conference
 excerpt: 'Apprenez à gérer des conférences téléphoniques avec votre numéro OVH'
 section: 'Numéros ou alias'
+order: 7
 ---
 
 **Dernière mise à jour le 24/01/2019**
