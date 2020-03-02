@@ -3,6 +3,7 @@ title: 'Configurer un serveur vocal interactif (SVI)'
 slug: svi-serveur-vocal-interactif
 excerpt: 'Apprenez à configurer un serveur vocal interactif depuis l''espace client OVH'
 section: 'Numéros ou alias'
+order: 6
 ---
 
 **Dernière mise à jour le 07/03/2019**

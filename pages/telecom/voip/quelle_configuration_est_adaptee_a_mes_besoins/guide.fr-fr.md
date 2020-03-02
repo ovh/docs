@@ -3,6 +3,7 @@ title: 'Choisir et appliquer une configuration pour un numéro'
 slug: quelle-configuration-est-adaptee-a-mes-besoins
 excerpt: 'Apprenez comment choisir et appliquer une configuration sur votre numéro'
 section: 'Numéros ou alias'
+order: 3
 ---
 
 **Dernière mise à jour le 18/02/2019**
