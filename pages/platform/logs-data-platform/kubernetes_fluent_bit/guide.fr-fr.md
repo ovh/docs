@@ -41,10 +41,10 @@ We will configure Fluent Bit with these steps:
 The Fluent Bit installation part is strictly identical to the documentation. Run the following commands to create the namespace, the service account and the role of this account
 
 ```shell-session
-$ kubectl create namespace logging
-$ kubectl create -f https://raw.githubusercontent.com/fluent/fluent-bit-kubernetes-logging/master/fluent-bit-service-account.yaml
-$ kubectl create -f https://raw.githubusercontent.com/fluent/fluent-bit-kubernetes-logging/master/fluent-bit-role.yaml
-$ kubectl create -f https://raw.githubusercontent.com/fluent/fluent-bit-kubernetes-logging/master/fluent-bit-role-binding.yaml
+kubectl create namespace logging
+kubectl create -f https://raw.githubusercontent.com/fluent/fluent-bit-kubernetes-logging/master/fluent-bit-service-account.yaml
+kubectl create -f https://raw.githubusercontent.com/fluent/fluent-bit-kubernetes-logging/master/fluent-bit-role.yaml
+kubectl create -f https://raw.githubusercontent.com/fluent/fluent-bit-kubernetes-logging/master/fluent-bit-role-binding.yaml
 ```
 
 ### Configuration 
@@ -56,7 +56,7 @@ Once the account created, we can proceed to the next steps: define a secret for 
 there is several methods to create a secret in Kubernetes, for brevity sake, we will use the one-liner version of secret creation. 
 
 ```shell-session
-$ kubectl --namespace logging create secret generic ldp-token --from-literal=ldp-token=<your-token-value>
+kubectl --namespace logging create secret generic ldp-token --from-literal=ldp-token=<your-token-value>
 ```
 
 We create a *ldp-token* secret with only one key named *ldp-token* as the value of our token. Replace the *ldp-token* value with the value of your token.
@@ -210,7 +210,7 @@ The final part of the file is some parsers that you can use to create structured
 To upload the configuration file use the following command 
 
 ```shell-session 
-$ kubectl create -f fluent-bit-configmap.yaml
+kubectl create -f fluent-bit-configmap.yaml
 ```
 
 ### Launch Fluent Bit
@@ -289,12 +289,12 @@ In this file you must specify the address of your cluster (here **gra2.logs.ovh.
 
 Upload this file with the following command:
 ```shell-session 
-$ kubectl create -f fluent-bit-ds.yaml
+kubectl create -f fluent-bit-ds.yaml
 ```
 
 Verify that the pods are running correctly with the command: 
 ```shell-session 
-$ kubectl get pods --namespace logging 
+kubectl get pods --namespace logging 
 ```
 
 You can now fly to the stream interface to witness your beautifully structured logs
