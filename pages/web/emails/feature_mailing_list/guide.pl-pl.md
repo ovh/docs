@@ -1,141 +1,189 @@
 ---
-title: 'Tworzenie listy mailingowych'
-excerpt: 'Przewodnik na temat korzystania z list mailingowych'
+title: 'Korzystanie z list mailingowych i zarządzanie nimi'
+excerpt: 'Z tego przewodnika dowiesz się, jak korzystać z list mailingowych'
 slug: hosting_www_listy_mailingowe
 legacy_guide_number: g1596
 section: 'Funkcjonalności kont e-mail'
 ---
 
-## Informacje ogólne
-Lista mailingowa pozwala na kontaktowanie jednocześnie wielu abonentów, czyli na przesyłanie informacji do kilku odbiorców jednocześnie. Opcja ta może być interesująca w przypadku chęci wysłania mailingu informacyjnego na temat pojawienia się nowego produktu (sklepy internetowe) lub w przypadku chęci poinformowania o zbliżającym się spotkaniu (strona społecznościowa). 
+**Ostatnia aktualizacja z dnia 13-02-2020**
 
-Ezmlm to znany i wydajny program zarządzający listami mailingowymi. W przewodniku tym sprawdzimy, jak założyć i skonfigurować listę mailingową oraz jak nią zarządzać.
+## Wprowadzenie
 
-- Lista mailingowa nie służy do masowego wysyłania spamu (wiadomości z reklamami). 
+Lista mailingowa pozwala na masowe kontaktowanie się z abonentami, tzn. na przesyłanie wiadomości lub informacji do wielu odbiorców jednocześnie. Rozwiązanie to może być przydatne w ramach korespondencji informacyjnej, np. dotyczącej wydania nowego produktu (w przypadku witryny e-commerce) lub w celu poinformowania o nadchodzącym spotkaniu (w przypadku witryny społecznościowej). 
 
-- W każdej chwili użytkownik może podjąć decyzję o wypisaniu się z listy mailingowej i zgłoszeniu nadużycia.
+**Dowiedz się, jak zarządzać listami mailingowymi**
 
+### Zasada działania moderacji
 
+Listę mailingową można moderować, aby uniemożliwić niepowołanym osobom wysyłanie wiadomości do Twojej listy abonentów. Moderowana lista mailingowa może służyć do wysyłania newsletterów, natomiast niemoderowana lista mailingowa pozwala na łatwą komunikację za pośrednictwem poczty e-mail między grupą abonentów.
 
+**Niemoderowana lista mailingowa**
 
-## Zakładanie listy mailingowej
-W naszym przykładzie chodzi o listę mailingową w ofercie hostingu Pro.
-Jeśli chcesz założyć listę mailingową, zaloguj się do [panelu klienta](http://www.ovh.com/manager/web) OVH.
+![emails](images/manage_mailing-lists_no-modarate.png){.thumbnail}
 
-Po zalogowaniu wybierz hosting w sekcji "E-maile" i kliknij na zakładkę "Listy mailingowe".
+Nadawca (sender) przesyła e-mail do odbiorców z listy mailingowej, a abonenci (subscribers) bezpośrednio otrzymują tę wiadomość.
 
-![](images/img_3626.jpg){.thumbnail}
-Jeśli posiadasz już listy mailingowe, będą one widoczne w tabeli z podsumowaniem. W naszym przykładzie lista mailingowa nie została jeszcze założona. 
+**Moderowana lista mailingowa**
 
-Aby założyć nową listę mailingową, kliknij na Dodaj listę mailingową.
+![emails](images/manage_mailing-lists_modarate.png){.thumbnail}
 
-![](images/img_3017.jpg){.thumbnail}
-Pojawi się formularz dotyczący utworzenia listy mailingowej. W formularzu należy wypełnić poszczególne pola:
+Nadawca (sender) przesyła wiadomość e-mail do odbiorców z listy mailingowej. Moderator (moderator) otrzymuje wiadomość e-mail z prośbą o zatwierdzenie lub odrzucenie. Jeśli moderator zatwierdzi wiadomość, abonenci (subscribers) otrzymają e-mail przeznaczony dla odbiorców z listy mailingowej. Jeśli moderator odrzuci wiadomość nadawcy, zostanie ona usunięta, a abonenci nie otrzymają e-maila.
 
+> [!warning]
+>
+> - Lista mailingowa nie służy do masowego rozsyłania spamu (wiadomości reklamowych). Takie wykorzystanie listy mailingowej jest tolerowane do pewnego stopnia, o ile nie jest nadużywane.
+> - Abonent może w każdej chwili podjąć decyzję o wypisaniu się z listy mailingowej. Może on również zgłosić wszelkie nadużycia, jeśli uzna, że do nich doszło.
+>
 
-- Nazwa: nazwa listy mailingowej
-- Właściciel: wpisz adres e-mail właściciela listy mailingowej (będzie on również moderatorem)
-- Odpowiedź na: zdefiniuj adres odpowiedzi
-- Język: wybierz język listy mailingowej (tłumaczenie automatycznych e-maili rejestracji i wypisywania się)
-- Moderowanie wiadomości: właściciel (moderator) musi zaakceptować odpowiedzi.
-- Moderowanie abonentów: właściciel (moderator) musi zaakceptować zapisy.
-- Tylko abonenci mogą wysyłać wiadomości: osoba nie zapisana na listę mailingową nie może przesłać na nią wiadomości.
+## Wymagania początkowe
 
+- Posiadanie usługi kont e-mail w postaci co najmniej pakietu MX Plan 100 lub [hostingu WWW](https://www.ovh.pl/hosting/){.external} obsługującego listy mailingowe.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/manager/web/login/){.external}
 
+## W praktyce
 
-![](images/img_3019.jpg){.thumbnail}
-Po wypełnieniu i zatwierdzeniu formularza pojawi się komunikat z potwierdzeniem:
+### Tworzenie listy mailingowej
 
-![](images/img_3020.jpg){.thumbnail}
+Aby utworzyć listę mailingową, przejdź do [Panelu klienta OVHcloud](http://www.ovh.com/manager/web){.external} i wybierz kartę `Web`{.action} znajdującą się u góry.
 
-## Każda lista mailingowa pozwala na dodanie maksymalnie:
+Po zalogowaniu kliknij w lewej kolumnie w sekcję `E-maile`{.action}, a następnie nazwę danej domeny. Przejdź do karty `Listy mailingowe`{.action} w Twojej usłudze e-mail.
 
-- 250 abonentów w przypadku listy mailingowej typu Newsletter, listy limitowanej, otwartej, prywatnej i zamkniętej.
-- 5000 abonentów w przypadku listy moderowanej.
+![emails](images/manage_mailing-lists_01.png){.thumbnail}
 
+Jeśli masz już utworzone listy mailingowe, pojawią się one w tabeli podsumowującej. W poniższym przykładzie jest już utworzona lista mailingowa.
 
+Aby utworzyć nową listę mailingową, kliknij polecenie `Dodaj listę mailingową`{.action}.
 
+![emails](images/manage_mailing-lists_02.png){.thumbnail}
 
-## Zasada moderowania
-Lista mailingowa może być moderowana. Moderowana lista mailingowa służy głównie do wysyłania newsletterów, w przeciwieństwie do listy nie moderowanej, która służy do komunikowania się abonentów ze sobą za pomocą e-maila.
+Uzupełnij formularz zgodnie z informacjami zawartymi w poniższej tabeli:
 
-![](images/img_3565.jpg){.thumbnail}
-.
-
-![](images/img_3564.jpg){.thumbnail}
-
-
-## Zmiana opcji listy mailingowej i jej usunięcie
-Jeśli chcesz zmienić zatwierdzone wcześniej opcje lub usunąć listę mailingową, kliknij na ikonkę koła zębatego z prawej strony listy mailingowej.
-
-![](images/img_3021.jpg){.thumbnail}
-
-
-## Importowanie abonentów
-W naszym przykładzie nie zarejestrowaliśmy jeszcze abonenta. Aby to zrobić, należy kliknąć na czarny symbol w sekcji "Abonenci".
-
-![](images/img_3022.jpg){.thumbnail}
-
-- Kliknij na "Dodaj abonentów".
+| Informacja                      	| Opis                                                                                                            	|
+|----------------------------------	|------------------------------------------------------------------------------------------------------------------------	|
+| Nazwa                              	| Nazwa listy mailingowej.                                                                                          	|
+| Właściciel                     	| Podaj adres e-mail właściciela listy mailingowej (będzie on również moderatorem).                              	|
+| Odpowiedź do                        	| Określ odbiorcę (lub odbiorców) odpowiedzi abonenta na mailing.                                        	|
+| Język                           	| Wybierz język automatycznych informacji pojawiających się podczas zapisywania się do listy mailingowej lub wypisywania się z niej.				|
+| Moderuj wszystkie wiadomości         | Właściciel lub moderator musi zatwierdzić wiadomość e-mail wysyłaną do odbiorców z listy mailingowej.                                     	|
+| Tylko abonenci mogą wysyłać wiadomości 	| Wysyłanie wiadomości e-mail do odbiorców z listy mailingowej jest możliwe tylko dla jej abonentów.              								|
+| Każdy może przesłać wiadomość (bez moderowania) | Wiadomości e-mail do odbiorców z listy mailingowej są wysyłane bezpośrednio do abonentów bez zatwierdzenia.             		|
+| Moderowanie abonentów         	| Właściciel lub moderator musi zatwierdzić zapisanie się abonenta do listy mailingowej.                                    	|
 
 
-
-![](images/img_3023.jpg){.thumbnail}
-Istnieją 2 sposoby dodawania abonentów do listy mailingowej:
+![emails](images/manage_mailing-lists_03.png){.thumbnail}
 
 
-- ręczne wpisanie adresu
-- import pliku tekstowego z listą adresów (jeden adres w linii)
+> [!primary]
+>
+> Maksymalna liczba abonentów listy mailingowej:
+>
+> - 5000, jeśli wiadomości są moderowane
+> - 250, jeśli wiadomości nie są moderowane
+>
 
 
+### Zarządzanie opcjami listy mailingowej
 
-![](images/img_3030.jpg){.thumbnail}
-Po zaakceptowaniu pojawi się komunikat z potwierdzeniem:
+Aby zmodyfikować opcje listy mailingowej, kliknij przycisk `...`{.action} po prawej stronie listy. Teraz można zaktualizować opcje, usunąć listę mailingową lub udostępnić listę jej abonentów przez e-mail. 
 
-![](images/img_3033.jpg){.thumbnail}
-Czas trwania operacji zależy od liczby abonentów do dodania.
-
-
-## Eksportowanie listy abonentów do pliku CSV
-
-- Kliknij na "Eksport abonentów w pliku CSV", aby wygenerować plik CSV zawierający listę wszystkich abonentów.
+![emails](images/manage_mailing-lists_04.png){.thumbnail}
 
 
+### Zarządzanie abonentami
+
+Aby zarządzać abonentami listy mailingowej, kliknij sylwetkę w kolumnie „Abonenci”.
+
+![emails](images/manage_mailing-lists_05.png){.thumbnail}
+
+Pojawi się następujące okno:
+
+![emails](images/manage_mailing-lists_06.png){.thumbnail}
+
+#### Dodawanie/usuwanie abonentów
+
+|Dodawanie abonentów|Usuwanie abonentów|
+|---|---|
+|Kliknij polecenie `Dodaj abonenta`{.action} po prawej stronie.|Kliknij polecenie `Usuń za pomocą pliku`{.action} po prawej stronie.|
+|![emails](images/manage_mailing-lists_07.png){.thumbnail}|![emails](images/manage_mailing-lists_07b.png){.thumbnail}|
+
+Istnieją dwie metody dodawania/usuwania abonentów:
+
+- ręczne wprowadzenie adresów po kliknięciu polecenia `Dodaj adres e-mail`{.action}.
+- zaimportowanie pliku tekstowego zawierającego jeden adres e-mail na wiersz, klikając ikonę pobierania znajdującą się powyżej pola wprowadzania danych.
+
+#### Eksport listy abonentów do pliku CSV
+
+Kliknij polecenie `Eksport abonentów do pliku CSV`{.action}, aby wyprodukować plik CSV zawierający listę wszystkich abonentów. Ta opcja nie jest dostępna w naszym przypadku, ponieważ nie dodano żadnego abonenta.
+ 
+### Zarządzanie moderatorami
+
+Aby zarządzać moderatorami listy mailingowej, kliknij sylwetkę w kolumnie „Moderatorzy”.
+
+![emails](images/manage_mailing-lists_08.png){.thumbnail}
+
+Pojawi się następujące okno:
+
+![emails](images/manage_mailing-lists_09.png){.thumbnail}
+
+#### Dodawanie/usuwanie moderatorów
+
+|Dodawanie moderatorów|Usuwanie moderatorów|
+|---|---|
+|Kliknij polecenie `Dodaj moderatora`{.action} po prawej stronie.|Kliknij polecenie `Usuń za pomocą pliku`{.action} po prawej stronie.|
+|![emails](images/manage_mailing-lists_10.png){.thumbnail}|![emails](images/manage_mailing-lists_10b.png){.thumbnail}|
+
+Istnieją dwie metody dodawania/usuwania moderatorów:
+
+- ręczne wprowadzenie adresów po kliknięciu polecenia `Dodaj adres e-mail`{.action}.
+- zaimportowanie pliku tekstowego zawierającego jeden adres e-mail na wiersz, klikając ikonę pobierania znajdującą się powyżej pola wprowadzania danych.
+
+> [!primary]
+> \- Jeśli do jednej listy mailingowej wyznaczonych jest kilku moderatorów, wystarczy, że jeden z nich zatwierdzi wysłanie wiadomości do abonentów.
+> \- Jeśli moderator wysyła wiadomość e-mail do odbiorców z listy mailingowej, tylko on otrzymuje e-mail dotyczący moderacji.
+> 
+
+W zależności od liczby abonentów do dodania, operacja może zająć trochę czasu.
 
 
-## Zapisywanie się na listę mailingową
-Jeśli ktoś chce się zapisać na listę mailingową, wystarczy wysłać e-mail na adres:
+### Zapisywanie się do listy mailingowej
+
+Jeśli ktoś chce się zapisać do Twojej listy mailingowej, wystarczy, że wyśle wiadomość e-mail na adres:
 
 
+```bash
+nazwa_twojej_LM-subscribe@twojadomena.com
 ```
-nazwa_listy_mailingowej-subscribe@twoja_domena_z_rozszerzeniem
+
+
+### Wypisywanie się z listy mailingowej
+
+Jeśli ktoś chce się wypisać z Twojej listy mailingowej, wystarczy, że wyśle wiadomość e-mail na adres:
+
+
+```bash
+nazwa_twojej_LM-unsubscribe@twojadomena.com
 ```
 
 
+### Automatyczne usuwanie błędnych adresów
+
+System listy mailingowej nie usuwa abonenta z listy po pierwszej wiadomości zwrotnej informującej o błędzie (wiadomość niedostarczona, nieistniejący adres itp.). Czeka około 12 dni od pierwszego nieudanego wysłania, a następnie wysyła abonentowi wiadomość ostrzegawczą.
+
+Wiadomość ostrzegawcza zawiera odniesienia do pominiętych wiadomości. Jeśli wysłanie wiadomości ostrzegawczej również się nie powiedzie, nasz system listy mailingowej czeka kolejne 12 dni, a następnie wysyła wiadomość testową. Jeśli wysłanie wiadomości testowej również się nie powiedzie, abonent zostaje usunięty z listy abonentów.
 
 
-## Wypisywanie się z listy mailingowej
-Jeśli ktoś chce się wypisać z listy mailingowej, wystarczy wysłać e-mail na adres:
-```
-nazwa_listy_mailingowej-unsubscribe@twoja_domena_z_rozszerzeniem
-```
+### Częste błędy
+
+#### Wysłanie e-maila bez podania tematu wiadomości
+
+Wiadomość wysyłana do abonentów listy mailingowej musi zawierać temat. W przeciwnym razie automatycznie zostanie wyprodukowany błąd, a nadawca wiadomości otrzyma e-maila zwrotnego informującego o błędzie.
+
+Nadawca wiadomości bez tematu otrzyma zatem e-mail zwrotny informujący o błędzie, podobny do widocznego poniżej:
 
 
-
-
-## Automatyczne usuwanie błędnych adresów
-System list mailingowych nie usuwa abonenta w przypadku wiadomości zwrotnej z błędem (wiadomość nie dostarczona, nieistniejący adres, itp.). System czeka 12 dni i wysyła wiadomość z ostrzeżeniem do abonenta. 
-
-Wiadomość z ostrzeżeniem wskazuje informacje na temat brakujących wiadomości. Jeśli dla wiadomości tej system otrzyma wiadomość zwrotną z błędem, czeka kolejne 12 dni i wysyła wiadomość testową. Jeśli w tym przypadku pojawi się błąd, abonent zostanie usunięty z listy abonentów.
-
-
-## Wysyłka e-maila bez Tematu
-Wysyłka na listę mailingową musi obowiązkowo zawierać temat. W przypadku braku tematu pojawi się błąd i e-mail z błędem zostanie przesłany do nadawcy wiadomości:
-
-
-
-```
-Hi. This is the qmail-send program at mx1.mail.ovh.net.
+```bash
+Hi. This is the qmail-send program at mx1.ovh.net.
 I'm afraid I wasn't able to deliver your message to the following addresses.
 This is a permanent error; I've given up. Sorry it didn't work out.
 
@@ -145,16 +193,17 @@ ezmlm-reject: fatal: Sorry, I don't accept message with empty Subject (#5.7.0)
 ```
 
 
+#### Wysłanie wiadomości z adresem e-mail abonenta listy mailingowej w polu UDW
+
+Aby wysłać wiadomość do abonentów listy mailingowej, ich adresy muszą być wpisane w polu „Do” lub „DW” (Do wiadomości).
+
+Jeśli klient wpisze adres w polu UDW (Ukryte do wiadomości), zostanie zwrócony błąd.
+
+Nadawca e-maila otrzyma wiadomość zwrotną informującą o błędzie:
 
 
-## Wysyłka z wpisaniem adresu listy mailingowej w ukrytej kopii
-Aby wiadomość została wysłana na listę mailingową, adres tej listy musi znajdować się w polu « To » lub w polu « Cc ».
-
-Jeśli klient wpisze adres w polu « Kopia ukryta », otrzyma on poniższy błąd:
-
-
-```
-Hi. This is the qmail-send program at mx1.mail.ovh.net.
+```bash
+Hi. This is the qmail-send program at mx1.ovh.net.
 I'm afraid I wasn't able to deliver your message to the following addresses.
 This is a permanent error; I've given up. Sorry it didn't work out.
 
@@ -164,46 +213,48 @@ ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 ```
 
 
+### Zaawansowana personalizacja
+
+Możesz spersonalizować większość tekstów listy mailingowej. Jako moderator musisz wysłać pustą wiadomość na adres nazwa_twojej_LM- [edit@twojadomena.com](mailto:edit@twojadomena.com){.external}.
+
+- Przykład: Twoja lista mailingowa to [newsletter@testinterne.ovh](mailto:newsletter@testinterne.ovh){.external}. Z adresu e-mail moderatora należy wysłać wiadomość na adres [newsletter-edit@testinterne.ovh](mailto:newsletter-edit@testinterne.ovh){.external} .
+
+Wówczas otrzymasz wiadomość z instrukcją wprowadzania modyfikacji.
+
+Poniżej znajduje się lista plików zawierających teksty odpowiedzi i krótki opis wykorzystania ich treści. Aby edytować plik, wystarczy wysłać wiadomość na envoi-edit.plik, zastępując słowo „plik” nazwą pliku. Instrukcje edycji zostaną wysłane razem z plikiem tekstowym.
 
 
-## Jak dostosować zawartość listy mailingowej?
-Możesz dostosować większość tekstów swojej listy mailingowej. Jako moderator musisz wysłać pusty e-mail na adres nazwa_listy_mailingowej-edit@twoja_domena.com.
-
-
-- Przykład: Twoja lista mailingowa to blue]newsletter@testinterne.ovh. Z adresu e-mail moderatora należy przesłać wiadomość na adres newsletter-edit@config-support.com.
-
-
-Otrzymasz e-mail z informacjami na temat możliwości modyfikacji.
-
-Poniżej znajduje się lista plików zawierających teksty odpowiedzi i krótki opis wykorzystania ich zawartości. Aby edytować plik, prześlij wiadomość na envoi-edit.plik,  zastępując 'plik' nazwą pliku. Instrukcje zostaną przesłane wraz z plikiem tekstowym.
-
-
-|Plik|Zastosowanie|
+|Plik|Wykorzystanie|
+|---|---|
 |bottom|Stopka wszystkich odpowiedzi: informacje ogólne.|
-|digest|Sekcja 'administrative' biuletynów.|
-|faq|Odpowiedzi na najczęstsze pytania dotyczące tej listy.|
-|get_bad|W przypadku wiadomości niedostępnych w archiwach.|
-|help|Ogólna pomoc (między 'top' i 'bottom').|
-|info|Informacje o liście. Pierwsza linia to podsumowanie.|
-|mod_help|Specyficzna pomoc dla moderatorów listy.|
-|mod_reject|Dla nadawcy odrzuconych wiadomości.|
-|mod_request|Dla moderatorów.|
-|mod_sub|Dla abonenta po potwierdzeniu rejestracji przez moderatora|
-|mod_sub_confirm|Dla moderatorów do zaakceptowania rejestracji.|
-|mod_timeout|Dla nadawcy wiadomości nieważnej od dłuższego czasu.|
-|mod_unsub_confirm|Dla administratora, w celu zlecenie wypisu.|
-|sub_bad|Dla abonenta, jeśli potwierdzenie było nieprawidłowe.|
-|sub_confirm|Dla abonenta, w celu potwierdzenia zapytania.|
-|sub_nop|Dla abonenta po nowej rejestracji.|
-|sub_ok|Dla abonenta po udanej rejestracji.|
-|trailer|Dodawany na końcu każdego zapisu na listę.|
-|unsub_bad|Dla abonenta, jeśli potwierdzenie wypisania się jest nieprawidłowe.|
-|unsub_confirm|Dla abonenta, w celu zlecenia potwierdzenia wypisania się.|
-|unsub_nop|Dla nie abonenta po zleceniu wypisania się.|
-|unsub_ok|Dla byłego abonenta po udanym wypisaniu się.|
+|digest|Sekcja „administracyjna” newsletterów okresowych.|
+|faq|Odpowiedzi na najczęstsze pytania na temat tej listy.|
+|get_bad|W przypadku wiadomości nieobecnych w archiwach.|
+|help|Ogólna pomoc (między „top” a „bottom”).|
+|info|Informacje o liście. Pierwszy wiersz zawiera ich podsumowanie.|
+|mod_help|Specjalna pomoc dla moderatorów.|
+|mod_reject|Do nadawcy odrzuconych wysyłek.|
+|mod_request|Do moderatorów z wysyłką.|
+|mod_sub|Do abonenta po potwierdzeniu przez moderatora zapisania się na listę.|
+|mod_sub_confirm|Do moderatorów w celu zatwierdzenia zapisania się na listę.|
+|mod_timeout|Do nadawcy wiadomości nieważnej od długiego czasu.|
+|mod_unsub_confirm|Do administratora w celu zażądania wypisania się z listy.|
+|sub_bad|Do abonenta, jeśli potwierdzenie przebiegło negatywnie.|
+|sub_confirm|Do abonenta w celu potwierdzenia jego zapytania.|
+|sub_nop|Do abonenta po nowym zapisaniu się na listę.|
+|sub_ok|Do abonenta po udanym zapisaniu się na listę.|
+|top|Nagłówek każdej odpowiedzi.|
+|trailer|Dodawany na końcu każdego wpisu na listę.|
+|unsub_bad|Do abonenta, jeśli jego potwierdzenie wypisania się jest błędne,|
+|unsub_confirm|Do abonenta w celu potwierdzenia wypisania się z listy.|
+|unsub_nop|Do osoby niebędącej abonentem po żądaniu wypisania się z listy.|
+|unsub_ok|Do byłego abonenta po udanym wypisaniu się z listy.|
 
+> [!primary]
+>
+> Przykład: Jeśli chcesz zmodyfikować domyślą stopkę wiadomości wysyłanych do abonentów listy mailingowej, musisz wysłać wiadomość na adres „newsletter-edit.bottom@testinterne.ovh”. Otrzymasz wówczas nową wiadomość informującą, jak spersonalizować stopkę.
+> 
 
-Przykład: Jeśli chcesz zmienić domyślną stopkę e-maili wysyłanych na Twoją listę mailingową, należy przesłać wiadomość na adres « newsletter-edit.bottom@config-support.com ».
+## Sprawdź również
 
-Otrzymasz nowy e-mail wyjaśniający, jak spersonalizować stopkę.
-
+Dołącz do społeczności naszych użytkowników na stronie https://community.ovh.com/en/
