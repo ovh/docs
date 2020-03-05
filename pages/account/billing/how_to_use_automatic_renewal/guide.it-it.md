@@ -1,125 +1,146 @@
 ---
-title: 'Gestire il rinnovo dei servizi OVH'
+title: 'Gestire il rinnovo dei servizi OVHcloud'
 slug: imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh
-excerpt: 'Come visualizzare e amministrare il rinnovo delle tue soluzioni dallo Spazio Cliente OVH'
+excerpt: 'Come visualizzare e amministrare il rinnovo delle tue soluzioni dallo Spazio Cliente OVHcloud'
 section: Fatturazione
 order: 1
 legacy_guide_number: g1271
 ---
 
-**Ultimo aggiornamento: 16/07/2019**
+**Ultimo aggiornamento: 21/11/2019**
 
 ## Obiettivo
 
-La gestione dei servizi OVH, incluse le opzioni di rinnovo, è disponibile direttamente nell’area utente dedicata. 
+Puoi gestire il rinnovo e l’annullamento dei tuoi servizi dallo Spazio Cliente.
 
-**Questa guida ti mostra come modificare i parametri relativi al rinnovo automatico dei tuoi servizi dallo Spazio Cliente OVH.**
+**Questa guida ti mostra come modificare i parametri relativi al rinnovo automatico dei tuoi servizi dallo Spazio Cliente OVHcloud.**
 
 > [!primary]
 >
-> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. In caso di difficoltà o dubbi, consulta i contratti disponibili nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `I tuoi servizi`{.action} > `I tuoi contratti`{.action}.
+> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione.  In caso di difficoltà o dubbi, consulta i contratti disponibili nel tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `I tuoi servizi`{.action} >`I tuoi contratti`{.action}.
 >
+
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 - Disporre di servizi OVH attivi
+- Essere contatto fatturazione dei tuoi servizi OVHcloud
 
 ## Procedura
 
-Per gestire le modalità di rinnovo attive sui servizi OVH è possibile scegliere tra diverse azioni e, in alcuni casi, diversi metodi. Prosegui nella lettura di questa guida in base all’operazione che vuoi effettuare: 
+Al momento dell’acquisto, i tuoi servizi sono impostati con rinnovo automatico alla data di scadenza, mediante addebito automatico sul metodo di pagamento salvato sul tuo Spazio Cliente. Puoi disdire i tuoi servizi in qualsiasi momento dal tuo Spazio Cliente, in modo che non vengano rinnovati automaticamente alla data di scadenza.
 
-- [visualizzare lo stato del rinnovo dei servizi](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#visualizzare-lo-stato-del-rinnovo-dei-servizi){.external}, per verificare se la funzione di rinnovo automatico è attiva e conoscere la data relativa al prossimo rinnovo o alla scadenza dei servizi.
+Se non desideri rinnovi e prelevamenti automatici, è anche possibile impostare il rinnovo “manuale” per alcuni servizi, quali ad esempio Domini, Hosting, VPS e Server dedicati.
 
-- [gestire il rinnovo dei servizi](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#gestire-il-rinnovo-dei-servizi){.external}, per attivare o disattivare la funzione di rinnovo automatico, modificare la frequenza di pagamento di un servizio o effettuare il rinnovo prima della data di scadenza.
+Prosegui nella lettura di questa guida in base all’operazione che vuoi effettuare: 
 
-- [gestire i metodi di pagamento](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#gestire-i-metodi-di-pagamento_1){.external}, per assicurarsi che una modalità di pagamento risulti attivata correttamente per i futuri rinnovi e, se necessario, aggiungere o rimuovere altre modalità.
+- [visualizzare lo stato del rinnovo dei servizi, ](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#visualizzare-lo-stato-del-rinnovo-dei-servizi){.external} per verificare se la funzione di rinnovo automatico è attiva e conoscere la data relativa al prossimo rinnovo o alla scadenza dei servizi.
+
+- [gestire il rinnovo dei servizi](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#gestire-il-rinnovo-dei-servizi-ovhcloud){.external}, per attivare o disattivare la funzione di rinnovo automatico, modificare la frequenza di pagamento di un servizio o effettuare il rinnovo prima della data di scadenza.
+
+- [gestire i metodi di pagamento](https://docs.ovh.com/it/billing/manage-payment-methods/){.external}, per assicurarsi che una modalità di pagamento risulti attivata correttamente per i futuri rinnovi e, se necessario, aggiungere o rimuovere altre modalità.
+
+### Accedere alle impostazioni dei servizi
+
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome utente in alto a destra e seleziona `I tuoi servizi`{.action}.
+
+![Gestione rinnovo automatico](images/manageautorenew1.png){.thumbnail}
 
 ### Visualizzare lo stato del rinnovo dei servizi
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome utente in alto a destra e seleziona `I tuoi servizi`{.action}.
+Visualizzi una tabella con tutte le soluzioni OVHcloud attive e le relative informazioni: nome, tipo di servizio, disponibilità (se, ad esempio, è stato sospeso), data di rinnovo o scadenza e la frequenza impostata.
 
-![Gestione rinnovo automatico](images/manage-automatic-renewal-step1.png){.thumbnail}
+![manageautomaticrenewal](images/manageautorenew2b.png){.thumbnail}
 
-Visualizzi una tabella con tutte le soluzioni OVH attive e le relative informazioni: data di rinnovo o scadenza e frequenza impostata. Questi dati sono disponibili nelle colonne “Data di rinnovo” e “Frequenza di pagamento”.
+Puoi utilizzare i filtri per ordinare i tuoi servizi in base a diversi criteri.
 
-Utilizza i filtri per ordinare i tuoi servizi in base a diversi criteri.
+![manageautomaticrenewal](images/manageautorenew3.png){.thumbnail}
 
-![Gestione rinnovo automatico](images/manage-automatic-renewal-step2.png){.thumbnail}
+I criteri di filtraggio da te selezionati saranno visualizzati sopra la tabella. Ecco un esempio di filtro che permette di visualizzare i domini con fattura in attesa di pagamento.
+
+![manageautomaticrenewal](images/manageautorenew4b.png){.thumbnail}
+
+### Gestire il rinnovo dei servizi OVHcloud
+
+#### **Il rinnovo automatico**
+
+Al momento della sottoscrizione, il**rinnovo automatico** è attivato di default per garantire la continuità dei servizi dopo la data di scadenza. Inoltre, se hai salvato un metodo di pagamento sul tuo account, l’importo delle tue fatture sarà prelevato automaticamente.
+
+Se, invece, non hai salvato nessun metodo di pagamento, riceverai una fattura via email e potrai effettuare il pagamento online.
+
+Per i servizi con una frequenza di rinnovo automatico superiore a 1 mese (3 mesi, 6 mesi, 12 mesi), riceverai un’email di promemoria un mese prima, insieme a una lista di servizi che saranno rinnovati in seguito.
+
+Se non ti interessa rinnovare uno di questi servizi, ti basterà effettuarne la disattivazione dal tuo Spazio Cliente.
+
+#### **Il rinnovo manuale**
+
+Per alcuni prodotti OVH, quali domini, hosting, VPS e server dedicati, puoi attivare la funzionalità di**rinnovo manuale**. Questa modalità è comoda se non sei sicuro di voler mantenere il servizio alla data di scadenza oppure se non vuoi che l’importo delle tue fatture venga automaticamente addebitato sul metodo di pagamento impostato. 
+
+Se scegli questa modalità, riceverai diverse email di promemoria prima della scadenza, ciascuna contenente un link che permette di rinnovare online i servizi in scadenza. Inoltre potrai effettuare semplicemente il pagamento dal tuo Spazio Cliente.
+
+> [!warning]
+>
+>Se non effettui il pagamento di un servizio con rinnovo manuale, questo verrà sospeso alla data di scadenza e poi eliminato dopo alcuni giorni.
+>
+>Mentre, se non vuoi mantenere il servizio attivo, non è necessario richiederne la disattivazione.
+>
+
 
 ### Gestire il rinnovo dei servizi
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome utente in alto a destra e seleziona `I tuoi servizi`{.action}.
+A destra di ogni servizio, clicca sul pulsante`...`{.action} nella colonna “Actions” per impostare il rinnovo dei servizi.
 
-![Gestione rinnovo automatico](images/manage-automatic-renewal-step1.png){.thumbnail}
+![manageautomaticrenewal](images/manageautorenew5b.png){.thumbnail}
 
-Visualizzi una tabella con tutti le soluzioni OVH attive per cui, se l’operazione è consentita, puoi scegliere di:
+> [!primary]
+>
+>A seconda del servizio (se l’operazione di rinnovo manuale è consentita o meno), alcune azioni non sono disponibili.
+>
+ 
+#### **Impostare il rinnovo**
 
-|Azione|Descrizione|
-|---|---|
-|Modificare la frequenza di pagamento|Consente di impostare un’altra periodicità per l’addebito di pagamento del servizio. Su alcune soluzioni potrebbe non essere possibile apportare questo tipo di modifica o alcune frequenze potrebbero non essere disponibili.|
-|Pagare il servizio|Consente di saldare l’importo relativo a un servizio prima della data in cui è previsto il rinnovo automatico.|
-|Attivare/disattivare il rinnovo automatico|Consente di attivare o disattivare il rinnovo automatico di un servizio.|
+![manageautomaticrenewal](images/manageautorenew6b.png){.thumbnail}
 
-![Gestione rinnovo automatico](images/manage-automatic-renewal-step3.png){.thumbnail}
+A seconda del servizio scelto, puoi impostare la funzionalità di rinnovo manuale oppure scegliere la frequenza di rinnovo automatico. Se l’operazione è consentita, puoi scegliere il tipo di rinnovo e la frequenza.
 
-#### Modificare la frequenza di pagamento
+![manageautomaticrenewal](images/manageautorenew7.png){.thumbnail}
 
-Questa azione consiste nell’impostare una nuova periodicità di pagamento per il rinnovo automatico di un servizio. Le frequenze disponibili sono quattro: mensile, trimestrale, semestrale e annuale. Su alcune soluzioni potrebbe non essere possibile apportare questo tipo di modifica o alcune frequenze potrebbero non essere disponibili.
+In base alla scelta effettuata, visualizzerai tutte le date di prelevamento, il metodo di pagamento impostato e la data di scadenza del servizio. 
 
-Per effettuare l’operazione clicca sui tre puntini in corrispondenza del servizio interessato e seleziona `Modifica la frequenza di pagamento`{.action}.
+#### **Rinnovare il servizio**
 
-![Gestione rinnovo automatico](images/manage-automatic-renewal-step4.png){.thumbnail} 
+Questa azione è consentita soltanto per i servizi impostati con il rinnovo manuale e ti reindirizza verso un’interfaccia di pagamento online.  Puoi rinnovare i tuoi servizi in qualsiasi momento prima della scadenza e scegliere la durata del rinnovo.
 
-Nella nuova finestra, seleziona il parametro da impostare nel menu a tendina, clicca su `Seguente`{.action} e poi su `Conferma`{.action}. La nuova frequenza verrà applicata al prossimo rinnovo automatico del servizio.
+#### **Pagare il servizio**
 
-![Gestione rinnovo automatico](images/manage-automatic-renewal-step5.png){.thumbnail} 
+Questa azione è consentita per i servizi impostati con il rinnovo automatico e ti reindirizza verso un’interfaccia di pagamento online. Puoi rinnovare i tuoi servizi in qualsiasi momento prima della scadenza e scegliere la durata del rinnovo. In questo caso il periodo di validità sottoscritto sarà aggiunto a quello in corso. Il periodo di validità rimanente non andrà perso.
 
-#### Pagare il servizio
+#### **Disattivare un servizio alla data di scadenza**
 
-Questa azione permette di pagare un servizio prima della data in cui è previsto il suo rinnovo automatico e potrebbe non essere disponibile per alcuni servizi OVH.
+Questa azione è consentita per i servizi impostati con il rinnovo automatico. In questo caso, il rinnovo e il prelevamento automatico sono disattivati per il servizio selezionato.
 
-Per effettuare l’operazione clicca sui tre puntini in corrispondenza del servizio interessato e seleziona `Paga il servizio`{.action}. Per eseguire l’azione su più servizi, selezionali spuntando la casella corrispondente a sinistra e clicca sul pulsante `Paga il servizio`{.action} nella parte inferiore della tabella.
+#### **Salda l’importo dovuto**
 
-![Gestione rinnovo automatico](images/manage-automatic-renewal-step6.png){.thumbnail} 
+Se hai sottoscritto un servizio con rinnovo automatico, ma non hai salvato alcun metodo di pagamento che consenta il prelevamento automatico, comparirà la dicitura “Importo da saldare” quando una fattura è in attesa di pagamento. Per eseguire l’operazione clicca sul pulsante`Salda subito l’importo dovuto`{.action}e sarai reindirizzato all’interfaccia per il pagamento online.
 
-A questo punto sarai reindirizzato all’interfaccia per il rinnovo, disponibile anche al link <https://www.ovh.com/it/cgi-bin/order/renew.cgi>. Segui gli step fino al completamento dell’operazione. 
+#### **Azioni in blocco**
 
-#### Attivare o disattivare il rinnovo automatico
+Puoi eseguire azioni in blocco, selezionando più servizi nella tabella e cliccando sul pulsante `Actions`{.action}.
 
-Questa azione permette di attivare o disattivare il rinnovo automatico di un servizio.
+![manageautomaticrenewal](images/manageautorenew9.png){.thumbnail}
 
-Per effettuare l'operazione clicca sui tre puntini in corrispondenza del servizio interessato e, in base all’azione scelta, seleziona `Attiva il pagamento automatico`{.action} oppure `Disattiva il pagamento automatico`{.action}, leggi le informazioni mostrate e infine conferma.
+La tabella seguente illustra tutte le azioni in blocco possibili.
 
-Ti ricordiamo che la disattivazione della funzionalità di rinnovo automatico non implica anche la disdetta del servizio, che resterà attivo fino alla data di scadenza. Per disattivare definitivamente un servizio alla data di scadenza, consulta il paragrafo “Gestisci i tuoi servizi dallo Spazio Cliente OVH” di [questa guida](https://docs.ovh.com/it/billing/gestire-servizi-ovh/#disdire-un-servizio-alla-data-di-scadenza){.external}.
+|  Azioni possibili  |  Descrizione  |
+|  :-----          |  :-----          |
+|  Rinnovare |  Rinnova più servizi in una sola volta.  Sarai reindirizzato verso una pagina che ti permette di scegliere la durata del rinnovo e effettuare il pagamento online. |
+|  Disattivare il pagamento automatico |  Disattiva il rinnovo automatico su diversi servizi in una sola volta Se su uno o più servizi non è consentita la funzionalità di rinnovo manuale, ti verrà indicato al momento della conferma dell’operazione. |
+|  Attivare il pagamento automatico |  Riattiva il rinnovo automatico su più servizi in una sola volta. Verranno rinnovati solo i servizi per cui è applicabile l’operazione. |
+|  Esporta in CSV |  Il servizio resterà attivo fino alla data di scadenza, dopodiché verrà sospeso e infine eliminato. |
+|  Allineare le date di rinnovo |  Consente di allineare la data di scadenza dei tuoi servizi in modo che abbiano tutti un’unica data di rinnovo.  Verranno aggiornati solo i servizi per cui è applicabile l’operazione. |
 
-![Gestione rinnovo automatico](images/manage-automatic-renewal-step7.png){.thumbnail} 
-
-### Gestire i metodi di pagamento
-
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome utente in alto a destra e seleziona `I tuoi metodi di pagamento`{.action}.
-
-![Gestione rinnovo automatico](images/manage-automatic-renewal-step8.png){.thumbnail}
-
-Visualizzi una tabella con tutti i metodi di pagamento OVH: da questa pagina è possibile gestire le modalità già inserite o aggiungerne di nuove.
-
-Per ogni metodo di pagamento sono indicati:
-
-- la tipologia (in base alla modalità aggiunta)
-- una descrizione, per permetterti un’identificazione più immediata tra gli altri metodi di pagamento accettati
-- l’indicazione se è definito o meno come modalità predefinita
-- lo stato (che può variare in base al tipo di modalità scelto e al suo stato di attivazione)
-
-![Gestione rinnovo automatico](images/manage-automatic-renewal-step9.png){.thumbnail}
-
-Per aggiungere un nuovo metodo di pagamento, clicca su `Aggiungi un metodo di pagamento`{.action} e seleziona la tipologia che intendi utilizzare. Segui gli step fino al completamento dell’operazione e conferma.
-
-![Gestione rinnovo automatico](images/manage-automatic-renewal-step10.png){.thumbnail}
-
-Per eliminare un metodo di pagamento tramite lo Spazio Cliente OVH, è necessario disporre almeno di un altro metodo di pagamento valido.
 
 ## Per saperne di più
 
-[Gestire i servizi OVH](https://docs.ovh.com/it/billing/gestire-servizi-ovh/){.external}
-
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
