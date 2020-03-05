@@ -1,8 +1,8 @@
 ---
-title: Éditer une zone DNS OVH
+title: 'Éditer une zone DNS OVH'
 slug: editer-ma-zone-dns
-excerpt: Apprenez à éditer une zone DNS OVH via votre espace client
-section: DNS et zone DNS
+excerpt: 'Apprenez à éditer une zone DNS OVH via votre espace client'
+section: 'DNS et zone DNS'
 order: 3
 ---
 
@@ -43,6 +43,11 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 |TXT|Permet d'ajouter la valeur de votre choix (en format texte) aux paramètres DNS de votre nom de domaine. Cet enregistrement est souvent utilisé lors de processus de vérification.|
 |SPF|Permet d'éviter les potentielles usurpations d’identité avec les adresses e-mail utilisant votre nom de domaine. Par exemple, cet enregistrement peut indiquer que seul le serveur de votre fournisseur de solution e-mail doit être identifié comme étant une source légitime d'envoi. Apprenez-en plus grâce à notre [documentation sur l'enregistrement SPF](https://docs.ovh.com/fr/domains/le-champ-spf/){.external}.|
 |CAA|Permet de lister les autorités de certification autorisées à délivrer des certificats SSL pour un nom de domaine.|
+
+> [!warning]
+>
+> Un enregistrement CNAME ne peut pas coexister avec un autre type d'enregistrement du même domaine ou sous-domaine. 
+>
 
 ### Étape 1 : accéder à la gestion de la zone DNS OVH de votre domaine
 
