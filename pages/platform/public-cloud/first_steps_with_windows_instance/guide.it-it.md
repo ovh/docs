@@ -1,95 +1,88 @@
 ---
-title: Come utilizzare un’istanza Windows
-excerpt: Come utilizzare un'istanza Windows
+title: 'Iniziare a utilizzare un’istanza Windows'
+excerpt: 'Come eseguire le prime operazioni su un’istanza Windows'
 slug: come_utilizzare_unistanza_windows
 legacy_guide_number: g1995
 ---
 
+**Ultimo aggiornamento: 11/07/2019**
 
-## 
-Il Public Cloud OVH ti permette di ospitare siti Web con IIS o le tue applicazioni compatibili solo con Windows.
-Per le istanze di tipo EG e SP, ad esempio, è possibile installare Windows Server 2012 r2 (con un costo aggiuntivo per la licenza).
+## Obiettivo
 
-La configurazione iniziale di un'istanza Windows è diversa da quella di un'istanza Linux. Ad esempio, non devi creare chiavi SSH mentre è necessario utilizzare la console VNC per impostare la tua password amministratore.
+ll Public Cloud OVH ti permette di ospitare siti Web con IIS o le tue applicazioni compatibili solo con Windows. Le nostre istanze possono essere installate su [Windows Desktop](https://www.ovhcloud.com/it/public-cloud/prices/){.external}.
 
-Questa guida ti mostra come utilizzare un'istanza Windows.
+Una volta creata l’istanza, sarà necessario completarne l’installazione mediante la console VNC.
 
+**Questa guida ti mostra come utilizzare un’istanza Windows.**
 
-## Requisiti necessari
+## Prerequisiti
 
-- [Crea un'istanza dallo Spazio Cliente OVH]({legacy}1775) con Windows Server 2012.
+- Aver creato un progetto Public Cloud.
+- Aver creato [un’istanza dallo Spazio Cliente](https://docs.ovh.com/it/public-cloud/crea_unistanza_dallo_spazio_cliente_ovh/) con Windows Desktop.
 
+## Procedura
 
+### Step 1: configura la tua password
 
+Ricordati che, a differenza di un’istanza Linux, le chiavi SSH non possono essere configurate sulla tua istanza Windows.  
 
-## Configura la tua password
-Ricordati che le chiavi SSH non possono essere configurate sulla tua istanza Windows. 
-Prima di tutto, imposta la tua password utilizzando la console VNC:
+Quindi, prima di tutto, è necessario completare l’installazione mediante la console VNC:
 
+- Clicca sui `...`{.action} a destra dell’istanza e poi su`Dettagli dell’istanza`{.action}:
 
-- Avvia la console VNC dell'istanza dal tuo Spazio Cliente OVH
+![windowsinstance](images/firststepswindows1.png){.thumbnail}
 
+- Accedi alla sezione`Console VNC`{.action}
 
+![windowsinstance](images/firststepswindows2.png){.thumbnail}
 
-![](images/img_3288.jpg){.thumbnail}
+- Scegli la lingua della tastiera e inserisci la password.
 
-- Inserisci la password per l'account amministratore
+![windowsinstance](images/firststepswindows3.png){.thumbnail}
 
+> [!primary]
+>
+> Alcuni tasti della console VNC potrebbero non corrispondere alla tastiera AZERTY.  Ricordati di verificare più volte la password prima di confermarla.
+>
 
+![windowsinstance](images/firststepswindows4.png){.thumbnail}
 
-![](images/img_3289.jpg){.thumbnail}
+### Step 2: accedi al Remote Desktop
 
-## Attenzione!
-Alcuni tasti della console VNC potrebbero non corrispondere alla tastiera QWERTY: verifica la password inserita prima di confermarla.
-
-
-## Accedi al Remote Desktop
 Una volta configurata la password, puoi accedere alla tua istanza via remote desktop.
 
-Ad esempio, da una macchina Linux:
+Ad esempio, da una macchina Windows:
 
+![windowsinstance](images/firststepswindows5.png){.thumbnail}
+
+Per accedere da una macchina Linux esegui il comando seguente:
 
 ```
-user@poste :~$ rdesktop 149.202.160.94 -k fr -u administrator
-
--------
-Descrizione degli argomenti:
--k: tipo di tastiera
--u: utente
+rdesktop 12.34.56.789 -u administrator
 ```
+ 
+### Step 3: migliora la navigazione su Internet
 
+Le impostazioni di sicurezza di Internet Explorer sono attive di default. Durante la navigazione, visualizzerai più volte un alert per metterti in guardia e bloccare i download.
 
-O da un'altra macchina Windows
+![windowsinstance](images/firststepswindows6.png){.thumbnail}
 
-![](images/img_3290.jpg){.thumbnail}
+Puoi disattivare le impostazioni di sicurezza dal pannello di controllo.
 
+- Apri il **Pannello di controllo** e accedi alla sezione `Local Server`{.action}(1).
 
-## Accedi a Internet
-Le impostazioni di sicurezza di Internet Explorer sono attive di default.
-Durante la tua navigazione, visualizzerai più volte un alert:
+![windowsinstance](images/firststepswindows7.png){.thumbnail}
 
-![](images/img_3291.jpg){.thumbnail}
-I download non sono autorizzati.
+- Clicca su`On`{.action}accanto a **IE Enhanced Security Configuration** e disattiva l’opzione.
 
-Per scaricare file, è necessario disattivare le impostazioni di sicurezza.
+![windowsinstance](images/firststepswindows8.png){.thumbnail}
 
+## Per saperne di più
 
-- Apri il pannello di controllo Windows e accedi alla sezione "Local Server"
+[Accesso e sicurezza con Horizon](https://docs.ovh.com/it/public-cloud/accesso_e_sicurezza_con_horizon/){.external}
 
+[Accedi al pannello di gestione di un’istanza con Horizon](https://docs.ovh.com/it/public-cloud/accedi_al_pannello_di_gestione_di_unistanza_con_horizon/){.external}
 
+[Aggiungi credito Cloud](https://docs.ovh.com/it/public-cloud/aggiungi_credito_cloud_al_tuo_progetto/){.external}
 
-![](images/img_3292.jpg){.thumbnail}
-
-- Clicca su "IE Enhanced Security Configuration" e disattiva l'opzione.
-
-
-
-![](images/img_3293.jpg){.thumbnail}
-A questo punto, puoi navigare liberamente e scaricare file.
-
-![](images/img_3294.jpg){.thumbnail}
-
-
-## 
-[Ritorna all'indice delle guide Cloud]({legacy}1785)
-
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>
