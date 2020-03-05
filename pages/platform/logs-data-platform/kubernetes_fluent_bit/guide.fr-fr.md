@@ -218,7 +218,7 @@ kubectl create -f fluent-bit-configmap.yaml
 Now that Fluent Bit accounts and configuration file are setup, we can now launch our DaemonSet. Create a *fluent-bit-ds.yaml* file with the following content to configure the DaemonSet. 
 
 ```yaml hl_lines="103 113"
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: fluent-bit
@@ -228,6 +228,9 @@ metadata:
     version: v1
     kubernetes.io/cluster-service: "true"
 spec:
+  selector:
+    matchLabels:
+      k8s-app: fluent-bit-logging
   template:
     metadata:
       labels:
