@@ -188,7 +188,7 @@ On the left-hand side of the new page, click `Electronic Signature`{.action}. In
 
 Compose your electronic signature in the editor box. You can specify whether you want to include the signature by default in new emails only or in replies and forwarded emails as well. Once you have finished, click `Save`{.action} to confirm.
 
-For more detailed instructions about creating signatures, please refer to our guide: [Creating an automatic signature in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_create_an_automatic_signature).
+For instructions about creating automated signatures by using templates, please refer to our guide: [Creating automatic signatures](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_create_an_automatic_signature).
 
 ### Accessing the options section
 
