@@ -46,4 +46,4 @@ Tras la validación, el siguiente mensaje le indica que su elección ha sido con
 
 ## Más información
 
-[«Migrar una cuenta de Gmail a una dirección de correo electrónico de OVHcloud a través de OVH Mail Migrator»](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migracion-de-gmail-mediante-ovh-mail-migrator){.external}
+[«Migrar una cuenta de Gmail a una dirección de correo electrónico de OVHcloud a través de OVH Mail Migrator»](https://docs.ovh.com/es/microsoft-collaborative-solutions/migracion-de-gmail-mediante-ovh-mail-migrator){.external}

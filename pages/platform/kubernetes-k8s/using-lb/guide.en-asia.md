@@ -75,7 +75,7 @@ Declaring a service of type `NodePort` exposes the `Service` on each Node’s IP
 It's rather cumbersome to use `NodePort` `Services` in production. As you are using non-standard ports, you often need to set-up an external load balancer that listen in standard ports and redirects the traffic to  the `<NodeIp>:<NodePort>`.
 
 
- ### Exposing services as LoadBalancer
+### Exposing services as LoadBalancer
 
 Declaring a service of type `LoadBalancer` exposes it externally using a cloud provider’s load balancer. The cloud provider will provision a load balancer for the `Service`, and map it to its automatically assigned `NodePort`.How the traffic from that external load balancer is routed to the `Service` pods depends on the cluster provider.
 
