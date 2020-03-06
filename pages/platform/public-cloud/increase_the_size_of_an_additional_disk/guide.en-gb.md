@@ -46,7 +46,7 @@ When you've finished, click the `Modify the volume`{.action} button.
 First, unmount the disk using this command.
 
 ```
-admin@server-1:~$ sudo unmount /mnt/disk
+admin@server-1:~$ sudo umount /mnt/disk
 ```
 
 Next, recreate the partition.
@@ -165,6 +165,7 @@ Finally, click `Finish`{.action} to complete the process.
 
 ## Go further
 
-* [Create and configure an additional disk on an instance](https://docs.ovh.com/gb/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/){.external}
-* Join our community of users on <https://community.ovh.com/en/>.
+[Create and configure an additional disk on an instance](https://docs.ovh.com/gb/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
+
+Join our community of users on <https://community.ovh.com/en/>.
 

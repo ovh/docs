@@ -1,97 +1,83 @@
 ---
-title: 'Créer une instance depuis l''espace client'
+title: 'Créer une instance depuis l’espace client'
 slug: creer-instance-espace-client
-excerpt: Ce guide vous montre comment créer une instance sur Public Cloud
-section: Premiers pas
+excerpt: 'Découvrez comment créer une instance depuis l’espace client Public Cloud OVHcloud'
+section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 25/10/2018**
+**Dernière mise à jour le 3 décembre 2019**
 
 ## Objectif
 
-Notre offre [Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} vous permet de créer des instances en quelques clics, des serveurs privés virtuels par exemple, rapidement et facilement.
+Le [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} OVHcloud vous permet de créer des instances (par exemple des serveurs virtuels) rapidement et facilement en quelques clics.
 
-**Ce guide vous montre comment créer une instance sur Public Cloud.**
+**Découvrez comment créer une instance depuis l’espace client Public Cloud OVHcloud.**
 
 ## Prérequis
 
-* Avoir accès à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-* Posséder un projet [Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} créé sur votre compte OVH.
-* Disposer d'une clé SSH créée sur votre compte OVH.
+* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} créé dans votre compte OVHcloud
+* Une clé SSH créée dans votre espace client OVHcloud
 
 ## En pratique
 
-> [!primary]
->
-> Ce guide suppose que vous avez défini la « vue » de votre projet cloud sur `Infrastructure`{.action}. Vous pouvez modifier celle-ci avec le bouton situé sur le côté droit de la page, comme illustré ci-dessous :
->
+### Déployer une instance Public Cloud.
 
-![vue](images/pci-instance-view-01.png){.thumbnail}
+Pour déployer une instance public cloud, connectez-vous à [l’espace client d’OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur `Public Cloud`{.action} en haut à gauche. Sur l’écran qui s’affiche, cliquez sur la flèche à côté du nom par défaut de votre projet, en haut à gauche. Sélectionnez le projet dans lequel vous souhaitez créer une nouvelle instance.
 
-### Ajouter une instance
+![select_project](images/select_project.png){.thumbnail}
 
-Tout d’abord, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le menu `Cloud`{.action}.
+Une fois que vous avez choisi votre projet, cliquez sur `Instances`{.action}dans la section «Compute» du menu latéral de gauche.
 
-![menu cloud](images/pci-instance-cloud-01.png){.thumbnail}
+![create_instance](images/create_instance.png){.thumbnail}
 
-Cliquez sur `Serveurs`{.action} dans la barre de services à gauche, puis choisissez le projet cloud concerné.
+Cliquez alors sur `Créer une instance`{.action}. Le menu suivant vous permettra de choisir l’instance que vous souhaitez créer.
 
-![liste des serveurs](images/pci-instance-servers-01.png){.thumbnail}
+![create_instance1](images/create_instance1.png){.thumbnail}
 
-Après avoir sélectionné votre projet, cliquez sur l'option `Infrastructure`{.action}.
+Le tableau suivant donne un aperçu des caractéristiques de chaque type d’instance:
 
-![infrastructure](images/pci-instance-infrastructure-01.png){.thumbnail}
-
-Cliquez maintenant sur le bouton `Actions`{.action}.
-
-![actions](images/pci-instance-actions-01.png){.thumbnail}
-
-Ensuite, cliquez sur le bouton `Ajouter un serveur`{.action}.
-
-![Ajouter une instance](images/pci-instance-actions-02.png){.thumbnail}
-
-### Configurer l’instance
-
-Après avoir cliqué sur le bouton `Ajouter un serveur`{.action}, les paramètres de configuration apparaissent comme indiqué ci-dessous.
-
-![configurer une instance](images/pci-instance-configuration-01.png){.thumbnail}
-
-Ces paramètres vous permettent de configurer :
-
-* le datacenter et la région où l'instance sera hébergée ;
-* le système d'exploitation du serveur ;
-* le modèle du serveur ;
-* une clé SSH pour la sécurité (non nécessaire pour les serveurs Windows) ;
-* plusieurs options avancées.
+| Type de serveur | Ressources garanties | Utilisation |
+| :---         |     :---:      |          ---: |
+| General Use   | ✓     | Serveurs de développement, applications web ou commerciales    |
+| CPU     | ✓       | Encodage vidéo ou autres calculs haute performance      |
+| RAM   | ✓     | Base de données, analyse et calculs in-memory    |
+| Shared Ressources    | -       | Environnements de test et de développement      |
 
 > [!primary]
 >
-> Veuillez noter que pour les serveurs Windows, l'authentification est basée sur un mot de passe. Les clés SSH ne sont donc pas utilisées.
+Vous aurez une limite initiale de 20 instances, 20 vCores et 20Go de RAM pour un projet donné. Pour augmenter la limite des ressources, vous devrez [créer un ticket](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} auprès du support client.
 >
 
-Une fois que vous avez configuré les options souhaitées, vous devez choisir la facturation de votre service à l'heure ou au mois.
+Suivez le menu pour choisir la région dans laquelle vous souhaitez situer vos instances public cloud. La troisième option correspond au choix de votre système d’exploitation.
 
-![configurer une instance](images/pci-instance-configuration-02.png){.thumbnail}
+> [!primary]
+>
+Si vous choisissez un système d’exploitation Windows, une licence sera automatiquement fournie et vous serez facturé mensuellement pour celle-ci.
+>
 
-Enfin, cliquez sur le bouton `Lancer maintenant`{.action} pour créer l'instance.
+![install](images/os_install.png){.thumbnail}
 
-![configurer une instance](images/pci-instance-configuration-03.png){.thumbnail}
+> [!primary]
+>
+Les instances Public Cloud qui fonctionnent sur un système d’exploitation basé sur Unix nécessitent une clé SSH pour pouvoir être ajoutées au serveur. Pour plus d’informations sur la création d’une clé SSH, consultez le guide [Créer des clés SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/){.external}.
+>
 
-Votre instance va maintenant être créée et peut nécessiter quelques minutes pour être finalisée.
+Dans la quatrième partie du menu, vous pouvez choisir le nombre d’instances à créer, nommer votre instance et ajouter un réseau privé ou un script de post-installation, si vous le souhaitez.
 
-Une fois la création effectuée, vos informations de connexion seront affichées. Vous pourrez les copier dans le presse-papier de votre ordinateur en cliquant sur l'icône de copie.
+![Ajouter une instance](images/configure_instance.png){.thumbnail}
 
-![login](images/pci-instance-login-01.png){.thumbnail}
-
-L'instance nouvellement créée sera désormais visible dans votre espace client.
-
-![account](images/pci-instance-created-01.png){.thumbnail}
+Finalement, vous devez indiquer si vous souhaitez une facturation mensuelle ou une facturation à l’heure.
 
 > [!warning]
 >
-> Lorsque vous créez une instance et que vous optez pour le paiement mensuel, vous devez conserver celle-ci au moins jusqu'à la fin du mois en cours.
+>Si vous choisissez une facturation à l’heure, vous serez facturés pendant toute l’existence de l’instance. La facturation s’arrête quand l’instance est supprimée définitivement. Donc vous serez facturés même si l’instance n’est pas utilisée.
 >
 
+Après avoir confirmé que toutes les informatons fournies sont correctes, cliquez sur `Créer une instance`{.action} pour terminer la création de votre nouvelle instance. Cette création peut prendre quelques minutes.
+
 ## Aller plus loin
+
+[Démarrer avec Public Cloud](https://docs.ovh.com/fr/public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.

@@ -1,100 +1,87 @@
 ---
-title: Crear una instancia desde el área de cliente de OVH
-excerpt: Crear una instancia desde el área de cliente de OVH
+title: 'Crear una instancia desde el área de cliente de OVHcloud'
+excerpt: 'Aprenda a crear una instancia desde el área de cliente Public Cloud de OVHcloud'
 slug: crear_una_instancia_desde_el_area_de_cliente_de_ovh
 legacy_guide_number: g1775
-section: Primeros pasos
+section: 'Primeros pasos'
 ---
 
+**Última actualización: 3 de diciembre de 2019**
 
-## 
-Public Cloud le permite crear rápida y fácilmente servidores virtuales (instancias) en cualquier momento y en tan solo unos clics. 
+## Objetivo
 
-Estas instancias son similares a los [VPS OVH](https://www.ovh.es/vps/) de última generación, aunque ofrecen otras funcionalidades. Estas son las principales diferencias entre los VPS y las instancias Public Cloud: 
+[Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} le permite crear rápida y fácilmente instancias (por ejemplo: servidores virtuales) en tan solo unos clics.
 
-VPS:
-
-- Área de cliente sencilla. 
-- Orientados a una única máquina. 
-- Un gran número de distribuciones. 
-
-Instancias Public Cloud:
-- Facturación a la carta: mensual o por horas.
-- API de OpenStack. 
-- Las instancias trabajan de forma conjunta.
-
-
-Esta guía explica cómo crear una instancia.
-
+**Aprenda a crear una instancia desde el área de cliente Public Cloud de OVHcloud.**
 
 ## Requisitos
 
-- Conectarse al [área de cliente de OVH](https://www.ovh.com/manager/cloud/). 
-- Crear y configurar una llave SSH en el área de cliente
+* acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* un proyecto [Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} creado en su cuenta de OVHcloud
+* una llave SSH creada en el área de cliente de OVHcloud
+
+### Desplegar una instancia de Public Cloud
+
+Para desplegar una instancia public cloud, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en `Public Cloud`{.action} en la esquina superior izquierda. En la pantalla siguiente, haga clic en la flecha junto al nombre por defecto del proyecto en la esquina superior izquierda de la pantalla. Seleccione el proyecto en el que quiere crear una nueva instancia.
+
+![select_project](images/select_project.png){.thumbnail}
+
+Una vez haya seleccionado el proyecto deseado, haga clic en el botón `{.action}Instancias` de la sección «Compute» del menú de la izquierda.
+
+![create_instance](images/create_instance.png){.thumbnail}
+
+A continuación, haga clic en `Crear una instancia`{.action}. Será redirigido al siguiente menú donde tendrá que seleccionar la instancia que desea crear.
+
+![create_instance1](images/create_instance1.png){.thumbnail}
+
+La siguiente tabla muestra un resumen de las características de cada tipo de instancia:
+
+| Tipo de servidor | Recursos garantizados | Modo de utilización |
+| :---         |     :---:      |          ---: |
+| General Use   | ✓     | Servidores de desarrollo, aplicaciones web o comerciales    |
+| CPU     | ✓       | Codificación de vídeo o alta computación.      |
+| RAM   | ✓     | Bases de datos, análisis y cálculos en memoria.    |
+| Shared Resources    | -       | Entornos de prueba y de desarrollo      |
+
+> [!primary]
+>
+Tendrá un límite inicial de 20 instancias, 20 vCores y 40GB de RAM en un proyecto dado. Si desea aumentar el límite de recursos, deberá [generar un tíquet](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} dirigido a nuestro equipo de soporte.
+>
+
+Siga el menú para seleccionar la región en la que quiere que se ubique su instancia public cloud. La tercera opción permite seleccionar el sistema operativo.
+
+> [!primary]
+>
+Si selecciona un sistema operativo Windows, se le proporcionará automáticamente una licencia que se le cobrará mensualmente.
+>
+
+![install](images/os_install.png){.thumbnail}
+
+> [!primary]
+>
+Las instancias que se ejecutan en un sistema operativo basado en Unix requieren que se añada una clave SSH al servidor. Para más información sobre la creación de una clave SSH, consulte nuestra guía [Crear claves SSH](https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys/){.external}.
+>
+
+En el cuarto paso puede elegir el número de instancias que desea crear, asignarle un nombre, y añadir una red privada o un script de post-instalación, si así lo desea.
+
+![add an instance](images/configure_instance.png){.thumbnail}
+
+Por último, debe elegir si desea una facturación mensual o por horas.
+
+> [!warning]
+>
+>Si elige una facturación por horas, la facturación se mantendrá hasta que se elimine la instancia. Por tanto, tenga en cuenta que se le facturará aunque la instancia no se esté utilizando.
+>
 
 
+Una vez haya confirmado que todos los datos introducidos son correctos, haga clic en `Crear una instancia`{.action} para finalizar el proceso. Su instancia puede tardar unos minutos en estar disponible.
 
+## Conclusiones
 
-## Añadir un servidor
-Haga clic en el botón «Añadir» en la esquina superior izquierda.
+Después de leer esta guía debe ser capaz de crear una instancia en su proyecto de public cloud a través del área de cliente de OVHcloud. Si desea más información sobre lo que puede hacer con su instancia, consulte nuestras guías en la página de soporte de los [Servicios Public Cloud](https://docs.ovh.com/es/public-cloud/){.external}.
 
-![](images/img_2707.jpg){.thumbnail}
-Seleccione «Añadir un servidor».
+## Más información
 
-![](images/img_2708.jpg){.thumbnail}
+[Primeros pasos con Public Cloud](https://docs.ovh.com/es/public-cloud/empezar_con_public_cloud_identificarse_y_crear_un_proyecto/){.external}
 
-
-## Elegir las características del servidor
-Al hacer clic en la flecha a la derecha del modelo aparecerá un menú nuevo:
-
-![](images/img_2709.jpg){.thumbnail}
-A continuación podrá elegir el tipo de instancia:
-
-- Gama VPS-SSD
-
-|de 1 a 2 vCores|de 2 a 8 GB de RAM|de 10 a 40 GB de almacenamiento|
-
-
-
-- Gama CPU
-
-|de 2 a 32 vCores|de 7 a 120 GB de RAM|de 200 a 1.600 GB de almacenamiento|
-
-
-
-- Gama RAM
-
-|de 2 a 16 vCores|de 30 a 240 GB de RAM|de 200 a 1.600 GB de almacenamiento|
-
-
-
-
-## Elegir el sistema operativo
-Elija el sistema operativo, por ejemplo, Ubuntu 14.04.
-
-![](images/img_2710.jpg){.thumbnail}
-
-
-## Elegir el centro de datos
-Elija el centro de datos, por ejemplo, Estrasburgo.
-
-![](images/img_2711.jpg){.thumbnail}
-
-
-## Seleccionar la llave SSH
-Seleccione la llave SSH:
-
-![](images/img_2712.jpg){.thumbnail}
-
-## Información:
-Al crear una instancia Windows, no es necesario configurar una llave SSH.
-
-
-## Asignar un nombre al servidor virtual e iniciarlo
-Asigne un nombre al servidor virtual.
-
-Elija entre facturación por horas o facturación mensual.
-
-## Atención:
-Al crear una instancia con facturación mensual, se compromete a mantener este tipo de tarificación al menos hasta el final del mes en curso.
-Haga clic en «Iniciar ahora».
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
