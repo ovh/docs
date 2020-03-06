@@ -26,7 +26,7 @@ Para desplegar una instancia public cloud, conéctese al [área de cliente de OV
 
 ![select_project](images/select_project.png){.thumbnail}
 
-Una vez haya seleccionado el proyecto deseado, haga clic en el botón `{.action}Instancias` de la sección «Compute» del menú de la izquierda.
+Una vez haya seleccionado el proyecto deseado, haga clic en el botón `Instancias`{.action} de la sección «Compute» del menú de la izquierda.
 
 ![create_instance](images/create_instance.png){.thumbnail}
 
@@ -59,7 +59,7 @@ Si selecciona un sistema operativo Windows, se le proporcionará automáticament
 
 > [!primary]
 >
-Las instancias que se ejecutan en un sistema operativo basado en Unix requieren que se añada una clave SSH al servidor. Para más información sobre la creación de una clave SSH, consulte nuestra guía [Crear claves SSH](https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys/){.external}.
+Las instancias que se ejecutan en un sistema operativo basado en Unix requieren que se añada una clave SSH al servidor. Para más información sobre la creación de una clave SSH, consulte nuestra guía [Crear claves SSH](https://docs.ovh.com/es/public-cloud/crear-llave-ssh/){.external}.
 >
 
 En el cuarto paso puede elegir el número de instancias que desea crear, asignarle un nombre, y añadir una red privada o un script de post-instalación, si así lo desea.
