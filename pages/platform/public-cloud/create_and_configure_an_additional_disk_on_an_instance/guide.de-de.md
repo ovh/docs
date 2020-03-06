@@ -273,7 +273,7 @@ DiskPart successfully onlined the selected disk.
 
 #### Die Festplatte formatieren
 
-Öffnen Sie die Datenträgerverwaltung erneut, klicken Sie mit der rechten Maustaste auf den Datenträger, und danach auf`Neues einfaches Volume...`{.action}
+Öffnen Sie die Datenträgerverwaltung erneut, klicken Sie mit der rechten Maustaste auf den Datenträger, und danach auf `Neues einfaches Volume...`{.action}
 
 ![format disk](images/format-disk-01.png){.thumbnail}
 
@@ -285,7 +285,7 @@ Konfigurieren Sie nun die gewünschte Festplattengröße. Normalerweise sollte d
 
 ![format disk](images/format-disk-03.png){.thumbnail}
 
-Wählen Sie aus der Dropdown-Liste einen Laufwerksbuchstaben aus und klicken Sie dann auf`Weiter`{.action}.
+Wählen Sie aus der Dropdown-Liste einen Laufwerksbuchstaben aus und klicken Sie dann auf `Weiter`{.action}.
 
 ![format disk](images/format-disk-04.png){.thumbnail}
 
