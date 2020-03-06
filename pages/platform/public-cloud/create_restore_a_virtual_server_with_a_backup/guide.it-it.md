@@ -1,96 +1,71 @@
 ---
-title: Crea/ripristina il tuo server virtuale da un backup
-excerpt: Crea/ripristina il tuo server virtuale da un backup
+title: 'Crea/ripristina il tuo server virtuale da un backup'
+excerpt: 'Crea/ripristina il tuo server virtuale da un backup'
 slug: crearipristina_il_tuo_server_virtuale_da_un_backup
 legacy_guide_number: g1882
 ---
 
+**Ultimo aggiornamento: 11/07/2019**
 
-## 
-Riprortare la tua istanza a stato precedente utilizzando un backup è necessario, ad esempio, se hai effettuato una modifica scorretta sulla sua configurazione o semplicemente per crearne una nuova. La duplicazione dell'istanza, infatti, è utile anche per la ripartizione del carico o per l'high availability.
+## Obiettivo
+Ripristinare un’istanza utilizzando un backup è necessario, ad esempio, se hai effettuato un’operazione scorretta sulla sua configurazione o semplicemente per crearne una nuova. 
+
+La duplicazione dell’istanza, infatti, è utile anche per la ripartizione del carico o per l'elevata disponibilità.
 
 Questa guida ti mostra come utilizzare i tuoi backup per creare, duplicare o ripristinare le tue istanze.
 
+## Prerequisiti
 
-## Descrizione
+- Disporre del backup di un’istanza Public Cloud A questo proposito, consulta [la guida dedicata alla creazione di un backup](https://docs.ovh.com/it/public-cloud/effettuare-snapshot-di-un-istanza/)
+- Avere accesso allo Spazio Cliente OVHcloud
 
-- Il backup di un'istanza Public Cloud
-- Un server virtuale già creato
+## Procedura
 
+### Crea un’istanza a partire da un backup
 
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona `Public Cloud`{.action}. Seleziona la sezione `Instance Backup`{.action}.
 
+E clicca sui `...` a destra del tuo backup e infine su `Crea un’istanza`{.action}.
 
-## 
+![public-cloud-instance-backup](images/restorebackup1.png){.thumbnail}
 
-- Accedi allo Spazio Cliente Public Cloud OVH
-- Clicca sul tab "Backup"
+Visualizzi la pagina di creazione dell’istanza
 
+![public-cloud-instance-backup](images/restorebackup2.png){.thumbnail}
 
+Alcuni elementi sono predefiniti:
 
-![](images/img_2808.jpg){.thumbnail}
+* La localizzazione: l’istanza sarà creata nello stesso datacenter del tuo backup
+* L’immagine: corrisponderà al tuo backup
+* I modelli: saranno disponibili solo quelli che possono ospitare la tua immagine, a seconda della tua quota
 
-- Clicca sull'icona "Crea un Cloud server con questo backup" a destra del backup da ripristinare
-- Si apre questa finestra:
+Per maggiori informazioni sulla creazione di un’istanza, consulta [questa guida](https://docs.ovh.com/it/public-cloud/crea_unistanza_dallo_spazio_cliente_ovh/).
 
+Per creare un’istanza in un datacenter diverso da quello del backup, è necessario trasferirla nell’area corrispondente. Consulta quindi la [guida sul trasferimento del backup di un’istanza tra datacenter](https://docs.ovh.com/it/public-cloud/trasferisci_il_backup_di_unistanza_da_un_datacenter_a_un_altro/).
 
+### Ripristinare un’istanza a partire da un backup
 
-![](images/img_2809.jpg){.thumbnail}
+Per ripristinare un’istanza a partire da un backup, seleziona il menu`Istanza`{.action} e clicca sui tre puntini`...`{.action} a destra dell’istanza che vuoi ripristinare e infine su`Modifica`{.action}.
 
-- Personalizza il nome del VPS, se necessario
-- Scegli il tuo modello
+![public-cloud-instance-backup](images/restorebackup3.png){.thumbnail}
 
-Attenzione!
+Visualizzi la pagina di modifica dell’istanza dalla quale è possibile modificare:
 
-Attualmente, dallo Spazio Cliente OVH, è possibile eseguire il ripristino solo nel datacenter in cui si trova il backup. Per trasferire il backup in un altro datacenter, è necessario utilizzare l'API OpenStack.
+* Nome dell'istanza
+* Immagine dell'istanza
+* Modello dell’istanza
+* La fatturazione dell’istanza (soltanto da “Oraria” a “Mensile”).
 
+Quindi, nella sezione`Immagine`{.action}, seleziona quella del backup da ripristinare.
 
-- Scegli la tua chiave SSH
-- Scegli la modalità di fatturazione
-- Clicca su "Avvia adesso"
-- Il tuo server virtuale è disponibile dopo qualche secondo
-
-
-
-
-## 
-
-- Accedi allo Spazio Cliente Public Cloud OVH
-- Clicca sulla freccia e, nel menu, seleziona "Modifica":
-
-
-
-![](images/img_2810.jpg){.thumbnail}
-
-- Si apre questa finestra:
+![public-cloud-instance-backup](images/restorebackup4.png){.thumbnail}
 
 
+> [!alert]
+>
+>Come indicato nel riquadro giallo, la tua istanza non conserverà i dati generati dopo la creazione di questo backup.
+>
 
-![](images/img_2812.jpg){.thumbnail}
+## Per saperne di più
 
-- Personalizza il nome del tuo server
-- Scegli il modello (caratteristiche uguali o superiori alla macchina virtuale di partenza)
-- Clicca sulle distribuzioni
-- Visualizzi i backup che puoi utilizzare:
-
-
-
-![](images/img_2815.jpg){.thumbnail}
-
-- Clicca su "I tuoi backup (Snapshot)":
-
-
-
-![](images/img_2816.jpg){.thumbnail}
-
-- Seleziona i backup da ripristinare
-- Scegli la modalità di pagamento
-- Clicca su "Applica le modifiche"
-- Il tuo server virtuale è disponibile dopo qualche secondo
-
-
-La tua istanza non conserverà i dati generati dopo la creazione di questo backup.
-
-
-## 
-[Ritorna all'indice delle guide Cloud]({legacy}1785)
-
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en>
