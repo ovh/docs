@@ -1,146 +1,156 @@
 ---
-title: Gestion du dépôt de garantie et de la limite hors forfait
+title: 'Gestion du dépôt de garantie et de la limite hors forfait'
 slug: gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait
+excerpt: 'Découvrez comment gérer les consommations hors forfait de vos services VoIP OVHcloud'
 legacy_guide_number: '7536699'
-space_key: CRTEL
-space_name: Téléphonie
 section: Administratif
 ---
 
-### Préambule {#préambule}
+**Dernière mise à jour le 09/03/2020**
 
-Avec la téléphonie OVH, votre groupe possède un plafond de hors forfait autorisé. Vous trouverez dans ce guide commande gérer ce plafond et le modifier.
+## Objectif
+Vos lignes téléphoniques OVHcloud appartiennent à un ou plusieurs groupes de téléphonie. Chaque groupe possède un plafond de hors forfait autorisé que vous pouvez ajuster selon vos besoins.
 
-Niveau : Débutant
+**Découvrez comment gérer le plafond de hors-forfait de vos services VoIP.**
 
-------------------------------------------------------------------------
+## Prérequis
 
-### Autorisation de hors-forfait, limite et dépôt de garantie, qu'est-ce que c'est ? {#autorisation-de-hors-forfait-limite-et-dépôt-de-garantie-quest-ce-que-cest}
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Disposer d'au moins un groupe de téléphonie.
+
+## Généralités
 
 Chaque groupe de téléphonie possède une autorisation de hors-forfait globale. C'est un hors forfait maximum par mois qui ne pourra être dépassé par votre groupe, c'est-à-dire par l'ensemble des lignes et numéros qui le composent.
+Cette autorisation de hors-forfait est en fait composée de 2 entités :
 
-Exemple {#exemple}
--------
+- **La limite de base**, une valeur non personnalisée.
+- **Le dépôt de garantie**, un dépôt d'argent qui peut vous être restitué sur demande.
 
-Nous avons un groupe **G** qui contient une ligne **A** et une ligne **B** et qui a une autorisation de hors-forfait à **150€ HT** par mois.Au cours du mois:
+Par défaut, la limite de base est à 150€ HT et le dépôt de garantie à 0 € HT. Vous avez donc, par défaut, une autorisation de hors-forfait à 150€ HT par groupe.
 
--   **A** fait un hors forfait de **50€ HT**
--   **B** fait un hors forfait de **90€ HT**
+> [!primary]
+> Cette limitation est obligatoire. Celle-ci va vous éviter d'avoir une facture hors-normes en cas de piratage de votre ligne SIP.
+> Pour éviter ce dernier cas de figure, nous vous recommandons de [sécuriser votre ligne SIP](https://docs.ovh.com/fr/voip/securiser-ligne-sip/).  
+> 
 
-Il ne reste donc plus que**10€ HT***(150-(50+90)=10)* de hors-forfait autorisé pour le reste du mois et pour l'ensemble des lignes **A** et **B.**
+### Exemple
 
-Cette limitation est obligatoire. Celle-ci va vous éviter d'avoir une facture hors-normes en cas de piratage de votre ligne SIP.
+Le groupe G contient une ligne A et une ligne B et a une autorisation de hors-forfait à 150€ HT par mois. 
+Au cours du mois:
 
-Il y a évidement d'autres sécurités possibles à configurer sur une ligne SIP pour éviter cela.
+-   A fait un hors forfait de 50€ HT
+-   B fait un hors forfait de 90€ HT
 
-Cette autorisation de hors-forfait est en fait composée de **2 entités**:
+![hors-forfait voip](images/HFvoip1.png){.thumbnail}
 
--   **La limite de base**=&gt; valeur non personnalisée
--   **Le dépôt de garantie =&gt;**dépôt d'argent par virement qui sera restitué sur demande****
+Il ne reste donc plus que 10€ HT (150-(50+90)=10) de hors-forfait autorisé pour le reste du mois et pour l'ensemble des lignes.
 
-Par défaut, la limite de base est à **150€ HT** et le dépôt de garantie à **0€ HT**.Vous avez donc, par défaut, une autorisation de hors-forfait à **150€ HT** par groupe.
+#### Comment augmenter le hors forfait autorisé ? 
 
-Vous pouvez gérer cette autorisation de hors-forfait :
+Selon vos besoins, deux méthodes existent pour augmenter l'autorisation de hors-forfait. Ces deux méthodes peuvent être cumulées.
 
--   Rendez vous sur le **manager Téléphonie**.
--   Cliquez sur l'onglet **"Groupe"** et choisissez le **groupe concerné**.
+Vous pouvez augmenter la limite de base du groupe à 300€ sans verser d'argent, en [suivant ces instructions.](https://docs.ovh.com/fr/voip/gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait/#augmenter-la-limite-de-base)
 
-![](images/2015-03-19-170642_261x98_scrot.png){.thumbnail}
+Pour l'exemple cité plus haut :
 
--   Cliquez sur "**Facturation"**.
--   Cliquez sur "**Dépôt de garantie"**.
+![hors-forfait voip](images/HFvoip2.png){.thumbnail}
 
-Vous pouvez consulter un résumé pour le groupe :
 
--   Cliquez sur **"Modifier votre limite**".
+Vous pouvez également augmenter votre dépôt de garantie en [suivant cette méthode](https://docs.ovh.com/fr/voip/gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait/#augmenter-le-depot-de-garantie). 
 
-![](images/2015-03-19-170625_393x85_scrot.png){.thumbnail}
+Pour l'exemple cité plus haut :
 
-Dans notre cas :
+![hors-forfait voip](images/HFvoip3.png){.thumbnail}
 
--   L'autorisation de hors-forfait est de **350€ HT** (limite de base **150€ HT** + dépôt de garantie **200€ HT**).
--   Le hors forfait total du groupe pour le mois en cours est de **31,01€ HT**.
+> [!primary]
+>
+> En cas de dépassement du hors-forfait autorisé sur votre groupe de téléphonie, vous ne pourrez pas augmenter la limite de base du groupe. Vous devrez alors augmenter votre dépôt de garantie.
+> Pour en savoir plus, reportez-vous à la partie [Qu'arrive t-il en cas de dépassement ?](https://docs.ovh.com/fr/voip/gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait/#qu-arrive-t-il-en-cas-de-depassement) en bas de ce guide.
+>
 
-------------------------------------------------------------------------
 
-### Comment augmenter mon hors forfait autorisé ? {#comment-augmenter-mon-hors-forfait-autorisé}
 
-Selon vos besoins, il est possible d'augmenter cette autorisation via le Manager. Pour cela, il y a**deux solutions (qui peuvent être cumulées)** :
+## En pratique
 
-#### Augmenter ma limite de base {#augmenter-ma-limite-de-base}
+### Augmenter la limite de base
 
-Vous pouvez augmenter votre limite de base à 300€ sans verser d'argent :
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sélectionnez l'onglet `Telecom`{.action} puis la rubrique `Téléphonie`{.action} et enfin votre groupe de téléphonie.
+Dans l'onglet `Facturation`{.action}, cliquez sur `Modifier votre limite de dépôt de garantie`{.action}.
 
--   Cliquez sur **"Modifier votre limite**"
--   Cliquez sur **"Modifier"**
--   Choisissez le montant de votre limite
--   Une lecture des contrats relatifs à cette limite est demandée. Ensuite, **cochez la case**.
--   Cliquez sur "**Valider**"
+![augmenter limite hors forfait](images/hflimit1.png){.thumbnail}
 
-![](images/2015-03-19-172504_702x273_scrot.png){.thumbnail}
+Choisissez le montant de votre limite. Une lecture des contrats relatifs à cette limite est demandée. Cochez ensuite la case d'acceptation de ces contrats puis cliquez sur `Modifier`{.action}.
 
-Vous pouvez revenir à **150€ HT** à tout moment via la même méthode.
+![augmenter limite hors forfait](images/hflimit2.png){.thumbnail}
 
-#### Augmenter mon dépôt de garantie {#augmenter-mon-dépôt-de-garantie}
+Vous pouvez revenir à 150€ HT à tout moment via la même méthode.
 
-Vous pouvez augmenter votre dépôt de garantie en faisant un virement bancaire :
+### Augmenter le dépôt de garantie
 
--   Cliquez sur **"Augmenter le plafond"**.
--   Choisissez la somme à ajouter.
--   Une lecture des contrats relatifs à cet ajout est demandée, ensuite**cochez la case**.
--   Cliquez sur **"Commander"**.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sélectionnez l'onglet `Telecom`{.action} puis la rubrique `Téléphonie`{.action} et enfin votre groupe de téléphonie.
+Dans l'onglet `Facturation`{.action}, cliquez sur `Augmenter le plafond de dépôt de garantie`{.action}.
 
-![](images/2015-03-19-175702_695x218_scrot.png){.thumbnail}
+![augmenter depot de garantie](images/securitydeposit1.png){.thumbnail}
 
-Un bon de commande est alors généré, cliquez sur **"Payer par virement"**. Les coordonnées bancaires d'OVH s’afficheront pour que vous puissiez effectuer le virement.
+Sélectionnez le montant du dépôt parmi les choix proposés. Une lecture des contrats relatifs à cette commande est demandée. Cochez ensuite la case d'acceptation de ces contrats puis cliquez sur `Commander`{.action}. 
 
-Pour les montants de moins de 300 € HT, il est possible de payer grâce à votre compte OVH. Pour ce faire, cliquez simplement sur "**Payer ce bon de commande grâce à mon compte OVH**"
+![augmenter depot de garantie](images/securitydeposit2.png){.thumbnail}
 
-Vous pouvez rajouter une somme par dessus un dépôt déjà existant, elle sera cumulée au premier.
+Un bon de commande sera alors généré. Cliquez sur le numéro de bon de commande pour l'afficher et le payer.
 
-Sauf en cas de litige, ce dépôt ne servira pas à payer votre hors-forfait, il restera inactif tant qu'il ne sera pas récupéré.
+![augmenter depot de garantie](images/securitydeposit3.png){.thumbnail}
 
-------------------------------------------------------------------------
+> [!primary]
+> - Vous pouvez rajouter une somme par dessus un dépôt déjà existant, elle sera cumulée au premier.
+> - Le dépôt de garantie ne peut pas servir à payer votre hors-forfait. Ce dépôt restera inactif tant qu'il ne sera pas récupéré.
+>
 
-### Comment récupérer mon dépôt de garantie ? {#comment-récupérer-mon-dépôt-de-garantie}
+### Comment récupérer le dépôt de garantie ?
 
-Si votre dépôt de garantie est trop élevé pour vos besoins actuels, OVH peut vous faire un remboursement total ou partiel sur demande.Veuillez contacter le support par e-mail en suivant ce lien : [Support OVH](http://www.ovhtelecom.fr/support/support/support.xml){.external-link}.
+Si votre dépôt de garantie est trop élevé pour vos besoins actuels, vous pouvez demander à nos services un remboursement total ou partiel. Dans votre espace client, cliquez sur `Besoin d'aide`{.action} en haut à droite puis sur `Demande d'assistance`{.action}.
 
-------------------------------------------------------------------------
+### Les transferts entre groupes
 
-### Les transferts entre groupes {#les-transferts-entre-groupes}
+Si vous possédez plusieurs groupes de téléphonie, vous pouvez ajuster leur hors-forfait autorisé en transférant, partiellement ou totalement, un dépôt de garantie d'un groupe à l'autre.
 
-Dans la gestion du hors-forfait autorisé, vous avez pu voir l'onglet **"Transfert entre groupes"**, Cette option est une solution alternative au remboursement pour ajuster un dépôt de garantie trop élevé si vous avez d'autres groupes.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sélectionnez l'onglet `Telecom`{.action} puis la rubrique `Téléphonie`{.action} et enfin votre groupe de téléphonie.
+Dans l'onglet `Facturation`{.action}, cliquez sur `Transfert de vos dépôts de garantie entre groupes`{.action}.
 
-Elle vous permet de faire un transfert total ou partiel du dépôt de garantie d'un groupe vers un autre groupe du même compte de facturation :
+![transfert depot de garantie](images/transferdeposit1.png){.thumbnail}
 
--   Cliquez sur **"Transfert entre groupes"**.
--   Cliquez sur **"Gérer"**.
--   Choisissez le **groupe source**.
--   Choisissez le **montant**.
--   Choisissez le **groupe destination**.
--   Cliquez sur **"Valider"**.
+Sélectionnez le groupe « Source » qui va transférer le dépôt de garantie, choisissez le montant à transférer puis choisissez le groupe « Destination ». Confirmez le transfert en cliquant sur `Valider`{.action}. 
 
-![](images/2015-03-20-112606_701x354_scrot.png){.thumbnail}
+![transfert depot de garantie](images/transferdeposit2.png){.thumbnail}
 
-Le transfert entre groupes n'est pas possible si le groupe source ou destination est suspendu pour dépassement du hors forfait autorisé.
 
-------------------------------------------------------------------------
+> [!warning]
+> Le transfert entre groupes n'est pas possible si le groupe source ou destination est suspendu pour dépassement du hors forfait autorisé.
+>
 
-### Qu'arrive t-il en cas de dépassement? {#quarrive-t-il-en-cas-de-dépassement}
+### Qu'arrive t-il en cas de dépassement ?
 
-Au cours du mois, vous recevrez des mails de notifications sur votre adresse de contact lorsque:
+Au cours du mois, vous recevrez des e-mails de notification sur votre adresse e-mail de contact lorsque:
 
--   Votre hors forfait dépasse **50%** de l'autorisation
--   Votre hors forfait dépasse **80%** de l'autorisation
--   Votre hors forfait dépasse **90%** de l'autorisation
--   Votre hors forfait dépasse **100%** de l'autorisation =&gt; **Groupe suspendu**
+- Votre hors-forfait dépasse 50% de l'autorisation
+- Votre hors-forfait dépasse 80% de l'autorisation
+- Votre hors-forfait dépasse 90% de l'autorisation
 
-En effet, votre groupe ainsi que les lignes/numéros qui y sont rattachés seront suspendus et inutilisables si le hors-forfait autorisé est dépassé.
+> [!warning]
+> Lorsque votre hors forfait atteint 100% de l'autorisation, le groupe de téléphonie, ainsi que les lignes et numéros qui y sont attachés, sont automatiquement suspendus et inutilisables.
+>
 
-Si votre groupe est suspendu pour dépassement du hors-forfait autorisé, la première chose à faire est de **s'assurer qu'il n'y a pas eu un piratage de votre ligne.** Pour cela, consultez les appels émis:
+Si votre groupe est suspendu pour dépassement du hors-forfait autorisé, la première chose à faire est de s'assurer qu'il n'y a pas eu un piratage de votre ligne. Pour cela, consultez les appels émis par les lignes et numéros du groupe.
 
--   Choisissez le **groupe concerné**.
--   Cliquez sur "**Consommation générale"**.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sélectionnez l'onglet `Telecom`{.action} puis la rubrique `Téléphonie`{.action} et enfin votre groupe de téléphonie.
 
-Une fois cette vérification faite, vous pouvez débloquer le groupe en faisant un [dépôt de garantie par virement](#Gestiondudépôtdegarantieetdelalimitehorsforfait-DepotDeGarantie).
+Dans l'onglet `Facturation`{.action}, cliquez sur `Consommation générale`{.action}.
+
+![consommation générale](images/voipconso.png){.thumbnail}
+
+Si vous constatez des anomalies, commencez par [sécuriser votre ligne SIP](https://docs.ovh.com/fr/voip/securiser-ligne-sip/). 
+
+Une fois ces vérifications effectuées, vous pouvez débloquer le groupe en [augmentant le dépôt de garantie du groupe](https://docs.ovh.com/fr/voip/gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait/#augmenter-le-depot-de-garantie).
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
