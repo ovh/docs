@@ -15,15 +15,20 @@ Votre ligne SIP OVH vous permet de recevoir et d’émettre des appels. Afin de 
 
 ## Prérequis
 
-- Disposer d'une [ligne téléphonique OVH](https://www.ovhtelecom.fr/telephonie/){.external}.
+- Disposer d'une [ligne téléphonique OVH](https://www.ovhtelecom.fr/telephonie/){.external}, entreprise
 - Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
 - Être en possession de la ou des musiques ou sonneries que vous souhaitez utiliser, au format audio adéquat.
+
+> [!primary]
+>
+> La gestion des musiques n'est pas disponible sur les lignes SIP Découverte.
+>
 
 ## En pratique
 
 ### Étape 1 : accéder à la gestion des musiques et sonneries
 
-Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et rendez-vous dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée parmi celles qui s'affichent. 
+Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et rendez-vous dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée parmi celles qui s'affichent.
 
 Positionnez-vous ensuite sur l'onglet `Gestion des musiques`{.action}.
 
