@@ -13,12 +13,12 @@ This guide helps you to upload an Apache Spark job in Python to your OVHcloud Ob
 
 If you want to submit an Apache Spark job in Java or Scala language, you can read this document: [How to submit a Java/Scala job using Data Processing Manager](../submit-javascala/){.external}
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/manager/cloud/){.external} to use the Data Processing platform. 
+In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external} to use the Data Processing platform. 
 
 To read an introduction about the Data Processing service you can visit [Data Processing Overview](../overview){.external}.
 
 ## Requirements 
-- Access to [OVHcloud Manager](https://www.ovh.com/manager/cloud/){.external}
+- Access to [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external}
 - An OVHcloud account 
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details.)
 - An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](../../public-cloud/configure_user_access_to_horizon/){.external} for details.)
@@ -27,7 +27,7 @@ To read an introduction about the Data Processing service you can visit [Data Pr
 
 ## Instructions
 
-### **Step 1 - Upload your Python application code and requirements file** 
+### Step 1: Upload your Python application code and requirements file
 
 Before running your job in the Data Processing platform, you will need to create a container in your Object Storage for your job and upload your application Python files into this container. You can work with your Object Storage using either the OVHcloud manager or the Openstack Horizon dashboard. 
 
@@ -38,7 +38,7 @@ If you don’t currently have an application code and you still would like to tr
 
 If your application needs some package requirements, create a Conda requirements.yml file containing all requirements you need to install in your Apache Spark cluster and upload this file into the same container as your Python files. 
 
-### **Step 2 - Submit your Apache Spark job**
+### Step 2: Submit your Apache Spark job
 To submit your job with your required parameters follow these steps: 
 
 - Login to the OVHcloud manager and select `Public Cloud`{.action}
@@ -52,14 +52,14 @@ To submit your job with your required parameters follow these steps:
 
 Please see [How to fill job submit form in Data Processing Manager](../job-submit-form){.external} for more details. 
 
-### **Step 3 - Check information, status and logs of a job**
+### Step 3: Check information, status and logs of a job
 In the **Data Processing** section of the OVHcloud Manager you can see the list of all the jobs that you have submitted so far. If you click on a job's name, you can see detailed information on it, including its status. Then you can click on the `Logs`{.action} to see the live logs while the job is running.
 
 Once the job will be finished, the complete logs will be saved to your Object Storage container. You will be able to download it from your account whenever you would like.
 
 Please see [How to check your job's logs in the Data Processing manager page](../check-logs){.external} for more details. 
 
-### **Step 4 - Check your job's results!** 
+### Step 4: Check your job's results
 After your Spark job is finished, you will be able to check the results from your logs as well as in any connected storage your job was designed to update. 
 
 ## Go further

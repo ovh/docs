@@ -12,18 +12,18 @@ order: 2
 
 This guide will tell you how you can monitor you jobs after submitting them. 
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/manager/cloud/){.external} to use the Data Processing platform and you have already submitted a job. 
+In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external} to use the Data Processing platform and you have already submitted a job. 
 
 To read an introduction about Data Processing service you can visit [Data Processing Overview](../overview){.external}.
 
 ## Requirements 
 
-- Access to the [OVHcloud Manager](https://www.ovh.com/manager/cloud/){.external}
+- Access to the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external}
 - A job that has been already submitted to Data Processing
 
 ## Instructions
 
-### **Apache Spark Dashboard** 
+### Apache Spark Dashboard 
 
 After submitting your job, follow these steps to open its Apache Spark dashboard: 
 
@@ -32,7 +32,7 @@ After submitting your job, follow these steps to open its Apache Spark dashboard
 
 ![Data Processing Job dashboard](images/jobuserinterface.png){.thumbnail}
 
-- Click on  `Open job user interface`{.action} in the ***Actions*** panel to open the Apache Spark dashboard. If you do this right after submitting a job, you will see a warm up page for a few seconds while your job is starting. 
+- Click on  `Open job user interface`{.action} in the **Actions** panel to open the Apache Spark dashboard. If you do this right after submitting a job, you will see a warm up page for a few seconds while your job is starting. 
 
 ![Warming up](images/warmup.png){.thumbnail}
 
@@ -40,13 +40,13 @@ The Apache Spark dashboard for your job will then start automatically.
 
 ![Apache Spark dashboard](images/sparkdashboard.png){.thumbnail}
 
-### **Grafana Dashboard**
+### Grafana Dashboard
 
 After you submit a job to the Data Processing platform, follow these steps to monitor your job using a Grafana dashboard. 
 
 - Find your job in the list of jobs in the Data Processing page in the OVHcloud Manager.
 - Click on the name of the job to open its dashboard. 
-- In the dashboard, click on `Monitor job`{.action} in the ***Actions*** panel. 
+- In the dashboard, click on `Monitor job`{.action} in the **Actions** panel. 
 
 ![Metrics token](images/token.png){.thumbnail}
 

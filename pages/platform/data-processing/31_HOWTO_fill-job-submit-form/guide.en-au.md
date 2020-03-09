@@ -12,13 +12,13 @@ order: 1
 
 This guide will help you to understand the different parameters that you can set when submitting a new job to the Data Processing platform
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/manager/cloud/){.external} to use the Data Processing platform. 
+In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external} to use the Data Processing platform. 
 
 To read an introduction about Data Processing service you can visit [Data Processing Overview](../overview){.external}.
 
 ## Requirements 
 
-- Access to the [OVHcloud Manager](https://www.ovh.com/manager/cloud/){.external}
+- Access to the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external}
 - An OVHcloud account 
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details.)
 
@@ -29,7 +29,7 @@ Your application must be uploaded into a container in your Object Storage. Durin
 
 ## Instructions
 
-### **Step 1 - Select your processing engine** 
+### Step 1: Select your processing engine
 
 To submit your job with your required parameters follow these steps: 
 
@@ -42,13 +42,13 @@ To submit your job with your required parameters follow these steps:
 
 ![Data Processing Engine](images/engine.png){.thumbnail}
 
-### **Step 2 - Select a region**
+### Step 2: Select a region
 
 In this step you will have to select the region in which you would like your Data Processing job to be run. The region list you will see will only contain the currently supported regions. Select a region and then click on `Next`{.action} button.
 
 ![Data Processing Engine](images/region.png){.thumbnail}
 
-### **Step 3 - Define your computation power and memory needs**
+### Step 3: Define your computation power and memory needs
 
 An OVHcloud Data Processing job being executed in a distributed environment, you will have to specify the amount of resources you would like your job to use. The resources you will have to specify are going to depend on the engine you selected previously.
 
@@ -70,7 +70,7 @@ When you configured compute and memory of your cluster, click on `Next`{.action}
 
 ![Data Processing Engine](images/advanced.png){.thumbnail}
 
-### **Step 4 - Configure your job** 
+### Step 4: Configure your job 
 
 Follow these steps to configure your job before submitting it to the Data Processing service: 
 

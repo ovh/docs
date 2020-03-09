@@ -10,14 +10,14 @@ order: 3
 
 ## Objective
 
-This guide explain how you can activate the OVHcloud Data Processing service on your cloud project. It will also explains what activating the service implies for you and your cloud project. 
+This guide explains how you can activate the OVHcloud Data Processing service on your cloud project. It will also explain what activating the service implies for you and your cloud project. 
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/manager/cloud/){.external} to use the Data Processing platform. 
+In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external} to use the Data Processing platform. 
 
 To read an introduction about Data Processing service you can visit [Data Processing Overview](../overview){.external}.
 
 ## Requirements 
-- Access to [OVHcloud Manager](https://www.ovh.com/manager/cloud/){.external}
+- Access to [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external}
 - An OVHcloud account 
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details.)
 

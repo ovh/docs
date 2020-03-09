@@ -12,13 +12,13 @@ order: 1
 
 This guide will help you to check your job's logs while your job is running or after your job is finished. 
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/manager/cloud/){.external} to use the Data Processing platform.
+In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external} to use the Data Processing platform.
 
 To read an introduction about Data Processing service you can visit [Data Processing Overview](../overview){.external}.
 
 ## Requirements 
 
-- Access to [OVHcloud Manager](https://www.ovh.com/manager/cloud/){.external}
+- Access to [OVHcloud Manager]( https://www.ovh.com/auth/?action=gotomanager){.external}
 - A job that has been already submitted to Data Processing
 
 ## Instructions
@@ -27,7 +27,7 @@ You can see your live job's logs while it is running in the job dashboard. After
 
 ![Data Processing Engine](images/dataprocessingmanager.png){.thumbnail}
 
-### **Download the logs from your job dashboard**
+### Download the logs from your job dashboard
 
 Follow these steps to download your job's logs from your job dashboard: 
 
@@ -48,7 +48,7 @@ Follow these steps to download your job's logs from your job dashboard:
 >
 > When your job is finished, the output log is automatically saved in your **Object Storage** and you can download it whenever you would like. 
 
-### **Download your job logs from Object Storage**
+### Download your job logs from Object Storage
 
 When the job is finished, the output logs will be saved automatically in your **Object Storage** account and in the **odp-logs** container. Beside using the job dashboard from the Data Processing page of the OVHcloud Manager, you can also use the **Object Storage** directly to download the logs. To download your logs from the **Object Storage**, follow these steps: 
 
