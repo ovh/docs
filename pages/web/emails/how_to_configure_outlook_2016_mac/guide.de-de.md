@@ -2,7 +2,8 @@
 title: 'Konfiguration Ihrer E-Mail-Adresse auf Outlook 2016 für Mac'
 slug: konfiguration-outlook-2016-mac
 excerpt: 'So konfigurieren Sie Ihre MX Plan E-Mail-Adresse auf Outlook 2016 für Mac'
-section: Outlook
+section: 'E-Mail Clients'
+order: 4
 ---
 
 **Stand 29.06.2018**
@@ -79,8 +80,8 @@ Eine OVH Webanwendung, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adress
 
 ## Weiterführende Informationen
 
-[Konfiguration von E-Mail Pro auf Outlook 2016 für Mac](https://docs.ovh.com/de/emails-pro/konfiguration-outlook-2016-mac/){.external}
+[Konfiguration von E-Mail Pro auf Outlook 2016 für Mac](https://docs.ovh.com/de/emails-pro/konfiguration-outlook-2016-mac)
 
-[Konfiguration von Exchange auf Outlook 2016 für Mac](https://docs.ovh.com/de/microsoft-collaborative-solutions/konfiguration-outlook-2016-mac/){.external}
+[Konfiguration von Exchange auf Outlook 2016 für Mac](https://docs.ovh.com/de/microsoft-collaborative-solutions/konfiguration-outlook-2016-mac)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
