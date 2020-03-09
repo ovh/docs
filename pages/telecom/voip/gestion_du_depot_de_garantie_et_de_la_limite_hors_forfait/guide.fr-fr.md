@@ -98,7 +98,7 @@ Sélectionnez le montant du dépôt parmi les choix proposés. Une lecture des c
 
 Un bon de commande sera alors généré. Cliquez sur le numéro de bon de commande pour l'afficher et le payer.
 
-![augmenter depot de garantie](images/securitydeposit3.png){.thumbnail}
+![augmenter depot de garantie](images/securitydeposit3b.png){.thumbnail}
 
 > [!primary]
 > - Vous pouvez rajouter une somme par dessus un dépôt déjà existant, elle sera cumulée au premier.
