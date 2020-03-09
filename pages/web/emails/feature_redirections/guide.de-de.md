@@ -2,9 +2,10 @@
 title: 'Webhosting E-Mail: Anleitung zum Einrichten einer Mail-Weiterleitung'
 excerpt: 'Webhosting E-Mail: Anleitung zum Einrichten einer Mail-Weiterleitung'
 slug: webhosting_e-mail_anleitung_zum_einrichten_einer_mail-weiterleitung
+section: 'E-Mail Account Funktionen'
+order: 1
 legacy_guide_number: g2001
 ---
-
 
 ## Was ist eigentlich eine Mail-Umleitung?
 Mit einer Mail-Umleitung können Sie E-Mails, die Sie auf einer bestimmten Mail-Adresse empfangen, direkt an eine oder mehrere andere Adresse(n) schicken.

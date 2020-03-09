@@ -1,10 +1,11 @@
 ---
-title: Die Statuscodes von SMTP-Servern
-excerpt: Die Statuscodes von SMTP-Servern
+title: 'Die Statuscodes von SMTP-Servern'
+excerpt: 'Details zu den Statuscodes von SMTP-Servern'
 slug: die_statuscodes_von_smtp-servern
+section: Diagnose
+order: 1
 legacy_guide_number: g2272
 ---
-
 
 ## SMTP-Befehle
 SMTP-Befehle werden für den Versand von E-Mails benötigt.
@@ -20,12 +21,9 @@ Die Zahl dient den Servern dazu, den nächsten Schritt bestimmen zu können. Der
 
 Die drei Ziffern des Antwortcodes haben jeweils eine spezifische Bedeutung:
 
-
 - Die erste Ziffer zeigt an, ob die Anfrage verarbeitet werden konnte, weitere Informationen benötigt werden oder die Bearbeitung der Anfrage fehlgeschlagen ist. Der SMTP-Client kann in Abhängigkeit von der ausgegebenen ersten Ziffer die nächste Aktion einleiten.
 
 - Die zweite und dritte Ziffer liefern zusätzliche Informationen.
-
-
 
 
 ## Kurzüberblick: Serverantworten (erste Ziffer)
@@ -43,7 +41,7 @@ Der Befehl wurde akzeptiert, zur Ausführung der Aktion werden aber weitere Info
 Der SMTP-Client muss eine neue Anfrage mit der benötigten Information senden. 
 
 
-- 4xx  Negative Antwort (temporärer Fehler):
+- 4xx  Negative Antwort (Temporärer Fehler):
 
 Der Befehl wurde nicht akzeptiert und die angeforderte Aktion konnte nicht ausgeführt werden. Da es sich um einen temporären Fehler handelt, ist eine erneute Anfrage möglicherweise erfolgreich.
 
