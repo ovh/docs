@@ -2,7 +2,8 @@
 title: 'Konfiguration Ihrer E-Mail-Adresse auf macOS Mail'
 slug: anleitung-mail-konfiguration-auf-macos
 excerpt: 'Hier erfahren Sie, wie Sie eine MX Plan Adresse auf der Mail App von macOS El Capitan, Sierra und High Sierra einrichten.'
-section: Apple
+section: 'E-Mail Clients'
+order: 6
 ---
 
 **Stand 27.06.2018**
@@ -89,6 +90,7 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
 Eine OVH Webanwendung, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können, ist verfügbar unter [https://www.ovh.de/mail/](https://www.ovh.de/mail/){.external}. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+
 
 ## Weiterführende Informationen
 
