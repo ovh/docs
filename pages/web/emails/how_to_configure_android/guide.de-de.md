@@ -3,7 +3,7 @@ title: 'Konfiguration Ihrer E-Mail-Adresse in Android über die Gmail-App'
 slug: konfiguration-android
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie Ihre MX Plan Adresse in Android über die Gmail-App einrichten.'
 section: 'E-Mail Clients'
-order: 8
+order: 9
 ---
 
 **Stand 14.09.2018**
@@ -91,6 +91,7 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
 Eine OVH Webanwendung, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können, ist verfügbar unter <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+
 
 ## Weiterführende Informationen
 
