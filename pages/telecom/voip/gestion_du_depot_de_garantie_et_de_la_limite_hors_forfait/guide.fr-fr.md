@@ -65,7 +65,7 @@ Pour l'exemple cité plus haut :
 > [!primary]
 >
 > En cas de dépassement du hors-forfait autorisé sur votre groupe de téléphonie, vous ne pourrez pas augmenter la limite de base du groupe. Vous devrez alors augmenter votre dépôt de garantie.
-> Pour en savoir plus, reportez-vous à la partie [Qu'arrive t-il en cas de dépassement ?](https://docs.ovh.com/fr/voip/gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait/#qu-arrive-t-il-en-cas-de-depassement) en bas de ce guide.
+> Pour en savoir plus, reportez-vous à la partie [Qu'arrive t-il en cas de dépassement ?](https://docs.ovh.com/fr/voip/gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait/#quarrive-t-il-en-cas-de-depassement) en bas de ce guide.
 >
 
 
