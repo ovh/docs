@@ -10,8 +10,10 @@ hidden: true
 
 In dieser Anleitung wird erklärt, wie Sie die Option „Weniger sichere Apps zulassen" in Ihrem Google Mail-Account aktivieren.
 
-> [!primary] Nachfolgend werden Schritte zur Konfiguration von Gmail im Zusammenhang mit dieser Anleitung beschrieben: 
-> [Einen Gmail-Account mit dem OVH Mail Migrator auf einen OVHcloud E-Mail-Account migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-gmail-mit-ovh-mail-migrator)
+> [!primary] 
+> 
+Nachfolgend werden Schritte zur Konfiguration von Gmail im Zusammenhang mit dieser Anleitung beschrieben: 
+[Einen Gmail-Account mit dem OVH Mail Migrator auf einen OVHcloud E-Mail-Account migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-gmail-mit-ovh-mail-migrator)
 > 
 
 ## In der praktischen Anwendung
