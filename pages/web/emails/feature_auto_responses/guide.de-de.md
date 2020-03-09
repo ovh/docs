@@ -1,10 +1,11 @@
 ---
-title: Einrichten von Auto-Antworten
-excerpt: Einrichten von Auto-Antworten
+title: 'Einrichten von Auto-Antworten'
+excerpt: 'Einrichten von Auto-Antworten'
 slug: einrichten_von_auto-antworten
+section: 'E-Mail Account Funktionen'
+order: 2
 legacy_guide_number: g2052
 ---
-
 
 ## Voraussetzungen
 
