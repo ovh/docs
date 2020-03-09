@@ -2,7 +2,8 @@
 title: 'Konfiguration Ihrer E-Mail-Adresse in Android über die Gmail-App'
 slug: konfiguration-android
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie Ihre MX Plan Adresse in Android über die Gmail-App einrichten.'
-section: Android
+section: 'E-Mail Clients'
+order: 8
 ---
 
 **Stand 14.09.2018**
@@ -15,7 +16,7 @@ E-Mail-Adressen aus dem MX Plan Angebot können auf verschiedenen, kompatiblen E
 
 ## Voraussetzungen
 
-- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder bei einem [OVH Webhosting](https://www.ovh.de/hosting/){.external} enthalten).
+- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder bei einem [OVH Webhosting](https://www.ovh.de/hosting/) enthalten).
 - Die Gmail-App ist auf Ihrem Gerät installiert. Sie können diese über den Google Play Store installieren.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
