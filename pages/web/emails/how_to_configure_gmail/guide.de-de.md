@@ -2,7 +2,8 @@
 title: 'Konfiguration Ihrer E-Mail-Adresse im Gmail-Webinterface'
 slug: konfiguration-einer-shared-e-mail-adresse-im-gmail-interface
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie eine MX Plan Adresse im Webinterface von Gmail einrichten.'
-section: 'Weitere E-Mail-Clients'
+section: 'E-Mail Clients'
+order: 8
 ---
 
 **Stand 10.09.2018**
@@ -101,6 +102,7 @@ Um eine Nachricht mit Ihrer OVH E-Mail-Adresse über das Gmail-Interface zu vers
 ![mxplan](images/configuration-gmail-web-step6.png){.thumbnail}
 
 Natürlich können Sie auch weiterhin unser Webinterface unter <https://www.ovh.de/mail/> verwenden, um auf Ihre OVH E-Mail-Adresse zuzugreifen. Loggen Sie sich hierzu wie gewohnt mit Ihren zugehörigen Login-Daten ein.
+
 
 ## Weiterführende Informationen
 
