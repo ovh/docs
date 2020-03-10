@@ -33,7 +33,7 @@ Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre sit
 
 > [!primary]
 > 
-> L'option CDN est comprise dans les offres d'hébergement web Performance.
+> L'option CDN est déjà incluse dans les offres d'hébergement web Performance.
 
 ####  Si vous n'avez pas de CDN sur votre hébergement Web
 

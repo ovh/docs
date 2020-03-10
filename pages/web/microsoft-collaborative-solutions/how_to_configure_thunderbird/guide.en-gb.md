@@ -1,99 +1,101 @@
 ---
-title: 'Exchange 2013: How to configure in Thunderbird'
-slug: exchange_2013_how_to_configure_in_thunderbird
-section: Email Clients
+title: 'Configuring your Exchange account in Thunderbird for Windows'
+slug: exchange-configuration-thunderbird
+section: 'Email Clients'
+excerpt: 'Find out how to add an Exchange account on Thunderbird'
 ---
 
+**Last updated 05th March 2020**
 
-## Part 1: Startup
-Open the Thunderbird application installed on your computer.
+## Objective
 
-This screen will appear if you haven't configured any email accounts. If not, go to the menu bar and select Tools > Account Settings, and then click "Add Account".
+You can configure Exchange accounts on email clients, if they are compatible. Thunderbird is not compatible with the Exchange MAPI protocol, but you can configure it in POP or IMAP. In our example, a Hosted Exchange account is configured in IMAP.
 
-To create a new email account, click on the "Email" icon to continue.
+**Find out how to configure an Exchange account on Thunderbird email software for Windows.**
 
-![](images/1fix.png){.thumbnail}
+> [!warning]
+>
+> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> 
+> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or
+> contacting the software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [Go further](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange-configuration-thunderbird/#go-further_1) section
+> of this guide.
+> 
 
+## Requirements
 
-## Part 2: Startup
-A new window will open asking if you would like to create a new email address. To add your existing email address, click on "Skip this and use my existing email".
+- an [Exchange](https://www.ovh.co.uk/emails/){.external} solution
+- the Thunderbird application installed on your device
+- the required credentials for the email address you would like to configure
 
-![](images/2fix.png){.thumbnail}
+## Instructions
 
+### Step 1: Add the account on Thunderbird.
+Open the Thunderbird application installed on your desktop.
 
-## Part 3: Creating an account
-In the New Account Setup wizard, enter the following information:
+You will need to add a new account via the menu below. Select `Email`{.action} to continue.
 
-Your name: enter your chosen display name.
-
-Email address: your full email address.
-
-Password: the Exchange 2013 account password you set up in the [Web Control Panel](https://www.ovh.com/manager/web/login.html).
-
-Tick Remember password: if you don't want to enter your password every time you launch Thunderbird.
-
-Click on "Continue" to continue with the installation.
-
-![](images/3fix.png){.thumbnail}
-
-
-## Part 4: Advanced configuration
-If you click on "Manual configuration", you will see the adjacent screen:
-
-Please check that the following elements are entered correctly:
-
-"Incoming server: IMAP"
-
-For Hosted Exchange accounts:
-
-Server hostname: ex#.mail.ovh.net (# depends on your assigned Exchange server, you can check it in your OVH Control Panel)
-
-Port: 993
-
-SSL: SSL
-
-Authentication: Normal password.
+![emails](images/configuration-thunderbird-exchange-step1.png){.thumbnail}
 
 
-"Outgoing server: SMTP"
+### Step 2: Create the account.
+Fill in the required fields.
 
-For Hosted Exchange accounts:
+- Your surname and first name: *Enter the display name you want.*
+- Email address: *Enter your full email address.*
+- Password: *The password set in the [OVHcloud Control Panel](https://www.ovh.com/manager/web/login.html){.external} for the Exchange account.*
+- Remember password: *You will need to tick this option.*
 
-Server hostname: ex#.mail.ovh.net (# depends on your assigned Exchange server, you can check it in your OVH Control Panel)
-
-Port: 587
-
-SSL: STARTTLS
-
-Authentication: Normal password.
-
-"Username": your full email address.
-
-For Private Exchange accounts, enter the server you selected when you ordered the Exchange server.
-
-If the "Normal password" authentication doesn't work, you can also enter "NTLM".
-
-Then click on "Done" to proceed with the final stages of installation.
-
-![](images/4fix.png){.thumbnail}
+Click `Manual configuration`{.action} to follow the installation steps.
 
 
-## Part 5: Finish up
-Your Exchange 2013 account is now correctly configured in IMAP.
-
-You should see the adjacent screenshot.
-
-![](images/5fix.png){.thumbnail}
+![emails](images/configuration-thunderbird-exchange-step2.png){.thumbnail}
 
 
-## Incoming server settings
-See this image for a reminder of how to view the account settings "for the incoming server".
+### Step 3: Manual configuration.
 
-![](images/6fix.png){.thumbnail}
+> [!primary]
+>
+> In our example, we use the server comment: e.g. **X**.mail.ovh.net.
+> 
+> You can find your server in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in the `Web`{.action} section, then `Microsoft`{.action}
+>  in the left-hand column. Select `Exchange`{.action}, then your platform. The server is visible in the **Connection** box in the `General Information`{.action} tab.
+> 
+
+Once you have clicked `Manual configuration`{.action}, check that the following elements have been correctly entered.
+
+- Incoming server: **IMAP** 
+- Server host name: *Enter the details for the server your Exchange service is hosted on.*
+- Port:  **993**
+- Encryption method:   **SSL**
+- Authentication:  **Normal password**
+- Outgoing server: **SMTP**
+- Server host name: *Enter the details for the server your Exchange service is hosted on.* 
+- Port:  **587** 
+- Encryption method:  **STARTTLS** 
+- Authentication:  **Normal password** 
+- ID: *Enter your full email address.*
+
+> [!primary]
+>
+> For Private Exchange accounts, the server you need to enter will be the one chosen when you placed your order.
+>
+
+If the **Normal password** authentication does not work, you can also enter **NTLM**.
+
+Click `Done`{.action} to finish the setup.
 
 
-## Outgoing server settings
-See this image for a reminder of how to view the account settings "for the outgoing server".
+![emails](images/configuration-thunderbird-exchange-step3.png){.thumbnail}
 
-![](images/7fix.png){.thumbnail}
 
+### Step 4: The process is complete.
+
+Your Exchange account is now correctly configured in IMAP, so you can start sending and receiving emails.
+
+OVHcloud also offers a [webmail application](https://www.ovh.co.uk/mail/){.external}. You can log in using your email credentials.
+
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
