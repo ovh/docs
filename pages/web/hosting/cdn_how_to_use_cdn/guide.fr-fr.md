@@ -1,90 +1,143 @@
 ---
-title: 'Accelerer mon site web en utilisant le CDN'
+title: 'Accélérer mon site web en utilisant le CDN'
 slug: accelerer-mon-site-web-en-utilisant-le-cdn
 legacy_guide_number: 1290
-excerpt: 'Ameliorez votre site en accelerant son chargement sur votre hebergement Web grace au CDN'
+excerpt: 'Améliorez votre site en accélérant son chargement sur votre hébergement Web grâce au CDN'
 section: 'Optimiser son site'
 ---
 
-Si vous souhaitez améliorer l'expérience de vos utilisateur en accélérant votre site web, la technique la plus efficace est d'activer un CDN (Content Delivery Network). Ce dernier permet de mettre en cache les fichiers statiques tel que les images, les css et les javascripts, dans des serveurs plus proches de vos clients.
+**Dernière mise à jour le 10/03/2020**
 
-L'activation d'un CDN est automatique dans les offres d'hébergements web si vous activez l'option CDN. Celle-ci est offerte dans les offres performances.
+## Objectif
+
+Si vous souhaitez améliorer l'expérience de vos utilisateurs en accélérant votre site web, la technique la plus efficace est d'activer un CDN (Content Delivery Network). Ce dernier permet de mettre en cache les fichiers statiques tels que les images, les css et les javascript, dans des serveurs plus proches de vos clients.
+
+**Découvrez comment gérer l'option CDN de votre hébergement web.**
+
+## Définition
+
+**Comment fonctionne un CDN ?**
+
+Le CDN (Content Delivery Network) est littéralement un réseau dédié à la livraison de contenu. Il utilise plusieurs serveurs déployés autour du monde pour afficher votre site web. Plus ces serveurs sont proches de vos utilisateurs, plus votre site web est rapide pour eux.
+
+Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre site web. Généralement, il est conseillé d'y inclure les fichiers dits statiques : les images, les fichiers javascript et css qui permettent le bon fonctionnement de votre site mais qui ne sont que très rarement modifiés.
+
+## Prérequis
+
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Posséder une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external}.
+
+## En pratique
+
+###  Activer l'option CDN
+
+> [!primary]
+> 
+> L'option CDN est comprise dans les offres d'hébergement web Performance.
+
+####  Si vous n'avez pas de CDN sur votre hébergement Web
+
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Commander un CDN`{.action}.
+
+![CDN](images/manage_CDN_01.png){.thumbnail}
+
+Vous serez redirigé vers la génération du bon de commande. Une fois la commande payée, votre service sera disponible en quelques minutes.
+
+#### Si le CDN est déjà activé sur votre hébergement Web
+
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur la roue crantée à droite de l'entrée multisite puis cliquez sur `Modifier`{.action}.
+
+Cochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
+
+![CDN](images/manage_CDN_01_02.gif){.thumbnail}
+
+> [!warning]
+> 
+> Dans le cas d'un nom de domaine externe à OVHcloud ajouté en multisite sur l'hébergement web, vous devez mentionner l'adresse IP du CDN de votre hébergement dans la zone DNS du nom de domaine.<br>
+> Consultez la [liste des adresses IP des clusters et hébergement web](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external} pour retrouver l'adresse IP spécifique du CDN de votre cluster.
+
+ 
+**Pourquoi ne puis-je pas beneficier de l'IP géolocalisée avec l'option CDN ?** <br>
+<br>
+Le CDN utilise le principe des IP anycast. Vous n'interrogerez pas le même serveur en fonction de votre géolocalisation, ce qui est très efficace pour réduire le temps de chargement de vos fichiers statiques. La géolocalisation d'adresse IP est donc inutile. <br>
+Concernant le SEO (référencement sur les moteurs de recherche), la vitesse d'affichage de votre site web a plus d'importance que la géolocalisation de l'adresses IP de votre hébergement.
 
 
-## Comment fonctionne un CDN ?
-Le CDN (Content Delivery Network) est littéralement un réseau dédiée à la livraison de contenu. C'est à dire qu'il s'agit de nombreux serveurs déployés tout autour du monde qui ont en charge de délivrer votre site web. En effet, plus ces serveurs sont proches de vos utilisateurs, plus votre site web est rapide pour eux.
+### Vider le cache du CDN
 
-Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre site web. Généralement, il est conseillé d'y inclure les fichiers dits statiques : les images, les fichiers javascripts et css qui permettent le bon fonctionnement de votre site mais qui ne sont que trés rarement modifiés.
+Il est parfois utile de vider le cache du CDN, notamment lorsque vous modifiez vos fichiers statiques. Par exemple lors de la mise en production d'une nouvelle version de votre site. Dans ce cas, vous pouvez vider totalement le cache du CDN.
 
-Cependant, les pages qui sont modifiés à chaque visites, tels que les sections d'administration de blogs, ou bien encore les mécanismes de panier dans les sites web ne doivent pas être mis en cache, au risque que l'ensemble de vos clients ne voient la même chose. Dans ces cas, le serveur CDN ne bénéficiant pas du cache, récupère la page directement auprés de votre hébergement web avant de la retourner, tel quel, à votre utilisateur.
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Vider le cache`{.action}.
 
+![CDN](images/manage_CDN_02.png){.thumbnail}
 
-## Comment activer l'option CDN ?
-L'option CDN s'active au sein de la section "Hébergement web" de votre espace client. Le "CDN" disponible dans le menu concerne les clients ayant commandé un CDN Infrastructure qui est recommandée pour les utilisateurs de serveurs dédiés.
+### Desactiver l'option CDN
 
-Au sein de votre espace "Hébergement web", la ligne "Option CDN" vous indique si votre CDN est activé. Si ce n'est pas le cas, vous pouvez "commander un CDN".
+Cette action permet de désactiver le CDN pour une ou plusieurs de vos entrées multisite sans supprimer l'option CDN de votre hébergement Web.
 
-- Sélectionnez le CDN que vous souhaitez activer. La différence se joue habituellement sur le nombre de Pop, c'est à dire le nombre de serveurs cache disponibles dans le monde. Plus d'informations ici [https://www.ovh.com/fr/hebergement-web/geocache.xml](https://www.ovh.com/fr/hebergement-web/geocache.xml){.external}
-- Sélectionnez la durée d'engagement (12 mois par défaut)
-- Validez les contrats
-- Vous serez redirigé vers le bon de commande. Une fois la commande payée, votre service sera disponible quelques minutes après et vous recevrez une facture.
+Rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur la roue crantée à droite de l'entrée multisite puis `Modifier`{.action}.
 
+Décochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
-## Comment vider le cache du CDN ?
-Il est parfois utile de vider le cache du CDN. C'est particulierement le cas lorsque vous modifiez vos fichier statiques, par exemple lors de la mise en production d'une nouvelle version de votre site. Dans ces cas, vous pouvez demander de vider totalement le cache du CDN.
+![CDN](images/manage_CDN_03.png){.thumbnail}
 
-Pour cela, rendez vous au sein de la section "hébergement web" de votre espace client puis sélectionnez l'hébergement concerné. Vous trouverez dans les informations générales, près de 'Option CDN', un bouton "Vider le cache".
+### Supprimer l'option CDN
 
+Cette action a pour but de supprimer l'option CDN pour l'ensemble de votre hébergement Web.
 
+Rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Résilier le CDN`{.action}.
+
+![CDN](images/manage_CDN_04.png){.thumbnail}
+
+Cliquez sur `Valider`{.action} pour confirmer la résiliation.
 
 > [!warning]
 >
-> Vider le cache du CDN prend quelques instants.
+> Un e-mail contenant la procédure de fermeture de votre CDN vous sera envoyé, il est nécessaire de suivre les instructions de celui-ci afin de confirmer ou annuler la demande. 
 > 
 
+### Vérifier que votre CDN est en service
 
-## Comment desactiver l'option CDN ?
-Pour résilier cette option, rendez vous dans la section "hébergement web" de votre espace client et sélectionnez votre l'hébergement concerné. Vous trouverez dans les informations générales, près de 'Option CDN', un bouton "Résilier le CDN".
+Pour vous assurer que le CDN est bien actif sur votre nom de domaine, il est possible d'effectuer une vérification via un terminal avec la commande suivante :
 
-
-
-> [!warning]
->
-> La résiliation du CDN prend quelques minutes.
-> 
-
-
-## Comment mettre en cache mes fichiers dans le CDN ?
-**En utilisant un CMS**
-
-Les principaux CMS tel que Wordpress distribuent de nombreux plugins permettant de les configurer afin que les fichiers statiques soient pris en compte automatique par le CDN. Le plus connu est probablement W3 Total Cache [https://wordpress.org/plugins/w3-total-cache/](https://wordpress.org/plugins/w3-total-cache/){.external} pour wordpress. D'autres CMS tel que prestashop permettent la configuration automatique des fichiers statiques en activant le cache (Voir le guide [http://doc.prestashop.com/pages/viewpage.action?pageId=20840893](http://doc.prestashop.com/pages/viewpage.action?pageId=20840893){.external}, section 'Concaténation, Compression et mise en Cache (CCC)'). Les autres CMS permettent d'activer le cache sur les fichiers statiques. Référez vous à leur documentation.
-
-**Sans utiliser de CMS**
-
-Si vous n'utilisez pas de CMS, vous pouvez aussi bénéficier du cache du CDN. Pour cela, vous devez ajouter des headers sur les requêtes HTTP. Il existe plusieurs techniques permettant d'ajouter ces headers. L'une des plus simple est de définir des régles au sein d'un fichier .htaccess en fonction des extensions de fichiers.
-
-
-```htaccess
-1. # Cache des images durant 1 semaine
-2. <FilesMatch "\.(jpg|jpeg|png|gif)$">
-3. Header set Cache-Control "max-age=604800, public"
-4. </FilesMatch>
-5. 
-6. # Cache des javascript et CSS durant 1 mois
-7. <FilesMatch "\.(js|css)$">
-8. Header set Cache-Control "max-age=2592000"
-9. </FilesMatch>
+```
+curl -i http://yourpersonnaldomain.ovh/
 ```
 
+Si votre nom de domaine est bien pris en charge par le CDN, vous obtiendrez un résultat comme ci-dessous :
+
+```
+HTTP/1.1 200 OK
+Date: Mon, 01 Jan 2020 00:00:00 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: SERVERID12345=123456; path=/; max-age=900
+Vary: Accept-Encoding
+X-Request-ID: 123456789
+X-CDN-Pop: rbx1
+X-CDN-Pop-IP: 00.111.22.333/44
+X-Cacheable: Cacheable
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-IPLB-Instance: 12345
+```
+Les mentions « *X-CDN* » permettent de confirmer que vous passez bien par le CDN.
+
+Dans le cas où le nom de domaine ne passe pas par le CDN, vous obtenez un résultat comme ci-dessous :
+
+```
+HTTP/1.1 200 OK
+Date: Mon, 01 Jan 2020 00:00:00 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: SERVERID12345=123456; path=/; max-age=900
+Server: Apache
+X-Powered-By: PHP/7.1
+Vary: Accept-Encoding
+X-IPLB-Instance: 12345
+```
+
+L'absence de la mention « *X-CDN* » indique que vous ne passez pas à travers le CDN.
 
 
-> [!warning]
->
-> La mise en cache via les headers HTTP permet la mise en cache au sein du CDN mais aussi au sein du navigateurs de vos utilisateurs. Ainsi, pour éviter que vos client ne bénéficient d'une version en cache trop longtemps, il est recommandé de modifier les noms de fichiers à chaque nouvelle version.
-> 
+## Aller plus loin
 
-
-## Est ce que je peux beneficier de l'IP geolocalisee avec un CDN ?
-Le CDN utilise le principe des IP anycast : avec la même adresse IP, vous n'arriverez pas sur le même serveur en fonction de votre localisation dans le monde, ce qui est trés efficace pour réduire le temps de chargement de vos fichiers statiques.
-
-Ainsi, l'utilisation de la géolocalisation d'adresse IP n'a pas de sens avec les IP anycast. Mais ne vous inquiétez pas pour votre SEO (référencement sur les moteurs de recherche), la vitesse des sites web est prise en compte et a plus d'impact que la localisation des adresses IP de nos jours.
+Échangez avec notre communauté d’utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/){.external}.
