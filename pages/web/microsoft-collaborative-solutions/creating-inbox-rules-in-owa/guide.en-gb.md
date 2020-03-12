@@ -27,15 +27,15 @@ With the "Inbox rules" option, you can create an elaborate set of rules to handl
 
 Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.co.uk/mail). Click on the gear symbol on the top right to unfold the "Options" menu and select `Options`{.action}.
 
-![](images/exchange-rules-step1.png){.thumbnail}
+![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 
 From the "Options" tree, select `Inbox and sweep rules`{.action} to access the rules interface. You can see here the list of rules that are applied to this account. Create a new rule by clicking on the `+`{.action} icon.
 
-![](images/exchange-rules-step2.png){.thumbnail}
+![inboxrules](images/exchange-rules-step2.png){.thumbnail}
 
 ### Step 2: Creating rules
 
-![](images/exchange-rules-step3.png){.thumbnail}
+![inboxrules](images/exchange-rules-step3.png){.thumbnail}
 
 The rules editor assists in setting up distinct measures for all incoming emails depending on various presuppositions. Specifying a rule is done in three parts:
 
@@ -65,13 +65,13 @@ Since there are many conditions and actions available, we are unable to cover al
 
 Create a new rule by clicking on the `+`{.action} icon. Give your rule a name and select below which emails it should apply to. For this example, we initially choose to include **all messages**. Next, select the appropriate action; here we will focus on illustrating a **redirection**. Please note the technical distinction: if you "forward" a mail, the final recipient will see your email address as a sender. "Redirecting" an email on the other hand will send it to your target address without changing the original sender address. 
 
-![](images/exchange-rules-step4.png){.thumbnail}
+![inboxrules](images/exchange-rules-step4.png){.thumbnail}
 
 In the next interface, select from "Your contacts" (`+`{.action}) or type an email address into the top bar. You can also search for users not listed here as a contact. Once finished, click `Save`{.action} to get back to the "New inbox rule" interface. You can extend this rule further if you click `Add action`{.action}. If appropriate, also add exceptions below, for example to prevent the redirection if an incoming message was sent by a specific email address or if it contains certain keywords. Save the rule by clicking `OK`{.action}.
 
 The new rule is now listed with an explanation of what it does and it can be edited, deactivated or deleted.
 
-![](images/redirection_rulebis.gif){.thumbnail}
+![inboxrules](images/redirection_rulebis.gif){.thumbnail}
 
 
 #### Example 2: Filtering undesired emails (spam)
@@ -83,15 +83,15 @@ These instructions are only feasible if your domain is using the OVHcloud MX rec
 
 Create a new rule by clicking on the `+`{.action} icon.
 
-![](images/exchange-rules-step7.png){.thumbnail}
+![inboxrules](images/exchange-rules-step7.png){.thumbnail}
 
 Give your rule a name and select as conditions "It includes these words" and "in the subject...". In the next interface, type "[SPAM]" to single out the messages that were pre-tagged by our spam protection. Add it with `+`{.action}, then click on `OK`{.action}.
 
-![](images/exchange-rules-step8.png){.thumbnail}
+![inboxrules](images/exchange-rules-step8.png){.thumbnail}
 
 Since no automated spam protection can decide with perfect accuracy whether an email is actually spam, it's good practice to collect these emails in a dedicated folder. This way, you can verify the contents of this spam folder before emptying it. To achieve this, select as action "Move, copy, or delete", then "Move the message to folder...". Select a folder from the list. Save the rule by clicking `OK`{.action}.
 
-![](images/exchange-rules-step9_2.png){.thumbnail}
+![inboxrules](images/exchange-rules-step9_2.png){.thumbnail}
 
 
 > [!primary]
