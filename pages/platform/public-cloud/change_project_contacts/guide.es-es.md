@@ -23,7 +23,7 @@ Esta guía explica cómo editar sus contactos.
 
 ## Procedimiento
 
-Para modificar los contactos de su proyecto, acceda primeramente a «Contactos y derechos», debajo de la pestaña «Gestión de proyectos».
+Para modificar los contactos de su proyecto, acceda primeramente a `Contactos y derechos`{.action}, debajo de la pestaña `Gestión de proyectos`{.action}.
 
 ![cambiar-contactos](images/contact.png){.thumbnail}
 
@@ -31,11 +31,11 @@ Verá sus contactos de administración y de facturación actuales.
 
 ![cambiar-contactos](images/contact1.png){.thumbnail}
 
-Cuando haga clic en «Modificar», se le redirigirá a una nueva página que le permitirá modificar sus contactos:
+Cuando haga clic en `Modificar`{.action}, se le redirigirá a una nueva página que le permitirá modificar sus contactos:
 
 ![cambiar-contactos](images/contactchange.png){.thumbnail}
 
-A continuación, haga clic en los 3 puntos a la derecha del proyecto de Public Cloud y, seguidamente, haga clic en «Modificar contactos». Aparecerá una nueva ventana en la que podrá cambiar los contactos.
+A continuación, haga clic en los 3 puntos a la derecha del proyecto de Public Cloud y, seguidamente, haga clic en `Modificar contactos`{.action}. Aparecerá una nueva ventana en la que podrá cambiar los contactos.
 
 ![cambiar-contactos](images/contactchange1.png){.thumbnail}
 
@@ -55,7 +55,7 @@ En ambos paneles de control de contactos, acceda a la sección «Mis solicitudes
 
 ![cambiar-contactos](images/controlpanel1.png){.thumbnail}
 
-Haga clic en los 3 puntos a la derecha y, seguidamente, haga clic en «Aceptar solicitud». Aparecerá una nueva ventana: 
+Haga clic en los 3 puntos a la derecha y, seguidamente, haga clic en `Aceptar solicitud`{.action}. Aparecerá una nueva ventana: 
 
 ![cambiar-contactos](images/contactchange3.png){.thumbnail}
 
@@ -65,4 +65,4 @@ Tras hacerlo, los contactos habrán cambiado conforme a lo solicitado.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
