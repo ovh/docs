@@ -5,58 +5,61 @@ excerpt: 'Cómo desplegar una instancia GPU en Linux o Windows'
 section: 'Gestión de las instancias desde el área de cliente'
 ---
 
-**Última actualización: 01/10/2018**
+**Última actualización: 6/12/2019**
 
 ## Objetivo
 
-Las instancias GPU son técnicamente similares a las demás instancias de la gama 2017, pero disponen además de una tarjeta gráfica (*graphic processing unit* o GPU). La tecnología utilizada (pci_passthrough) permite que el sistema operativo de la instancia controle la GPU exactamente igual que en una máquina física.
+Las instancias de GPU son técnicamente similares a las instancias de la gama de 2017, pero también cuentan con una tarjeta gráfica (unidad de procesamiento gráfico o GPU). La tecnología usada (*pci_passthrough*) permite que el sistema operativo de la instancia controle la GPU de la misma forma en la que lo haría una máquina física.
 
-OVH ofrece tarjetas gráficas NVIDIA GeForce GTX 1060, GTX 1070 y GTX 1080Ti. 
+Las GPU que se ofrecen son las NVIDIA Tesla V100. 
 
 > [!warning]
 >
-> Actualmente las instancias GPU solo están disponibles en los datacenters GRA3, GRA5 y BHS3. Para poder disfrutar de estas instancias, es posible que necesite crear un nuevo proyecto y seleccionar la nueva gama 2017. Para más información, consulte [esta guía](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/) (en inglés).
+> Actualmente, las instancias de GPU solo están disponibles en los centros de datos GRA3, GRA5, GRA7 y BHS3. Puede que tenga que crear un nuevo proyecto y elegir la nueva gama de 2017. [Más información.](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/)
 > 
 
-**Esta guía explica cómo desplegar una instancia GPU en Linux o Windows.**
-
+**Esta guía explica cómo instrumentar una instancia de GPU en Linux o Windows**
 
 ## Requisitos
 
-* Haber creado un proyecto de [Public Cloud](https://www.ovh.es/public-cloud/instancias/){.external} con acceso a las regiones en las que las instancias GPU están disponibles (GRA3, GRA5 y BHS3).
+- Un proyecto de Public Cloud con acceso a las regiones en las que las GPU están disponibles (GRA3, GRA5, GRA7 y BHS3)
 
 ## Procedimiento
 
-Es posible desplegar una instancia GPU en Linux o en Windows.
+A continuación, encontrará la información necesaria para instrumentar una instancia de GPU en Linux o Windows.
+Tenga en cuenta que no puede cambiar el sistema operativo de la instancia de Linux a Windows, o viceversa. Por tanto, asegúrese de crear la instancia con el sistema operativo correcto por defecto.
 
 
 ### En Linux
 
-Todas las imágenes que ofrece OVH son compatibles con las instancias GPU.
+Todas las imágenes que ofrecemos pueden utilizarse en una instancia de GPU.
 
 > [!primary]
 >
-> Si prefiere no compilar usted mismo el módulo de kernel manualmente, le recomendamos que utilice una distribución que sea oficialmente compatible con NVIDIA y para la que ofrezca drivers listos para usar: <https://developer.nvidia.com/cuda-downloads>.
+> Si no se siente a gusto con la compilación manual de un módulo kernel, le recomendamos usar una distribución con soporte oficial de Nvidia y para la que se proporcionen controladores *listos para usar*: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Una vez que se haya conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, acceda a su proyecto de Public Cloud, haga clic en `Acciones`{.action} y seleccione `Añadir un servidor`{.action}. Elija una instancia GPU.
+Una vez iniciada sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en su proyecto de Public Cloud en el panel de control, haga clic en `«Crear una instancia»`{.action}y elija una instancia de GPU:
 
-![Public Cloud](images/EN-Flavors.png){.thumbnail}
+![public-cloud](images/gpu.png){.thumbnail}
 
-La instancia se iniciará al cabo de unos segundos. Una vez iniciada, puede conectarse a ella y comprobar que detecte la tarjeta gráfica: 
+A continuación, seleccione el sistema operativo Linux de su elección:
+
+![public-cloud](images/linuxchoice.png){.thumbnail}
+
+La instancia se iniciará unos segundos más tarde. A continuación, puede iniciar sesión y buscar la tarjeta gráfica: 
 
 ```ssh
 lspci | grep -i nvidia
-00:05.0 VGA compatible controller: NVIDIA Corporation Device 1c03 (rev a1)
-00:06.0 Audio device: NVIDIA Corporation Device 10f1 (rev a1)
+00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```
 
-La instancia detecta la tarjeta gráfica, pero todavía no puede utilizarla, ya que es necesario instalar los drivers NVIDIA. Puede consultar la lista de los paquetes disponibles en el siguiente [enlace](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+La tarjeta gráfica está ahí, pero todavía no puede utilizarse. Para ello, primero debe instalar el controlador NVIDIA. Puede encontrar la lista de los paquetes en esta dirección: [Lista de paquetes Linux disponibles](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
 
-Ejecute los siguientes comandos:
+A continuación, deberá introducir los siguientes comandos:
 
 ```sh
-wget URL_del_paquete_a_descargar
+wget URL_of_packet_to_download
 sudo dpkg -i cuda-repo-XXXX-XXXXXX
 sudo apt-get update
 sudo apt-get upgrade
@@ -66,62 +69,60 @@ sudo reboot
 
 > [!primary]
 >
-> El comando Linux puede variar en función de la distribución. En caso de duda, consulte la documentación oficial de su versión Linux.
+> El comando de Linux puede variar en función de su distribución. Si tiene dudas, consulte la guía oficial de su versión de Linux.
 > 
 
 
-Una vez reiniciada la instancia, la tarjeta gráfica aparecerá en la utilidad de NVIDIA:
+Cuando su instancia se haya reiniciado, la tarjeta gráfica aparecerá en el programa de utilidades de NVIDIA:
 
 ```sh
 nvidia-smi
-Wed Apr 26 13:05:25 2017
+Fri Dec  6 12:32:25 2019       
 +-----------------------------------------------------------------------------+
-| NVIDIA-SMI 375.51                 Driver Version: 375.51                    |
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
 |-------------------------------+----------------------+----------------------+
 | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
 | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
 |===============================+======================+======================|
-|   0  GeForce GTX 106...  Off  | 0000:00:05.0     Off |                  N/A |
-|  0%   22C    P0    26W / 120W |      0MiB /  6072MiB |      0%      Default |
+|   0  Tesla V100-PCIE...  On   | 00000000:00:05.0 Off |                    0 |
+| N/A   26C    P0    35W / 250W |      0MiB / 16130MiB |      5%      Default |
 +-------------------------------+----------------------+----------------------+
-
+                                                                               
 +-----------------------------------------------------------------------------+
 | Processes:                                                       GPU Memory |
-|  GPU       PID  Type  Process name                               Usage      |
+|  GPU       PID   Type   Process name                             Usage      |
 |=============================================================================|
 |  No running processes found                                                 |
 +-----------------------------------------------------------------------------+
 ```
 
-La instancia GPU ya está plenamente operativa y lista para su uso.
+A partir de ahí, la instancia de GPU estará completamente funcional y podrá utilizarse.
 
 
 ### En Windows
 
-Debido a la existencia de incompatibilidades entre el driver NVIDIA y la solución de virtualización KVM/pci_passthrough, **las imágenes Windows estándar no funcionan**.
+Existen incompatibilidades entre el controlador NVIDIA y la solución de virtualización *KVM/pci_passthrough*. **Las imágenes estándar de Windows no funcionan.**
+Por ello, ofrecemos imágenes especiales, basadas en una BIOS UEFI virtual que permite que el controlador funcione correctamente (solo en el caso de instancias de G1, G2 y G3, gama 2017 y anteriores).
 
-OVH ofrece imágenes especiales, basadas en una BIOS virtual UEFI, que permiten que el driver funcione correctamente.
+Una vez iniciada sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en su proyecto de Public Cloud en el panel de control, haga clic en `«Crear una instancia»`{.action} y elija una instancia de GPU:
 
-![Public Cloud](images/EN-WindowsImages.png){.thumbnail}
+![public-cloud](images/gpu.png){.thumbnail}
 
+A continuación, seleccione el Windows de su elección: 
 
-> [!warning]
->
-> No podemos garantizar que la solución vaya a funcionar con todas las versiones futuras del driver NVIDIA. Por lo tanto, le recomendamos que, antes de actualizar el driver NVIDIA, realice un snapshot para poder restaurar la instancia a un estado anterior si fuera necesario.
->
+![public-cloud](images/oschoice.png){.thumbnail}
 
-Una vez iniciada la instancia GPU, deberá instalar el driver NVIDIA desde la [web oficial](https://www.nvidia.es/Download/index.aspx?lang=es){.external}.
+Cuando se haya iniciado su instancia de GPU, deberá instalar el controlador NVIDIA desde el [sitio web oficial](https://www.nvidia.com/Download/index.aspx){.external}.
 
-Inicie una instancia utilizando uno de los *flavors* GPU (win-g1-15, win-g1-30...).
+Inicie una instancia usando uno de los tipos de GPU disponibles (t1-45, t1-90, t1-180, etc.). Solo debería tardar unos minutos.
 
-La instancia se iniciará al cabo de unos segundos. Solo queda instalar el driver necesario. Una vez instalado, aparecerá aquí:
+Después, todo lo que falta por hacer es instalar el controlador necesario, el cual se mostrará aquí:
 
+![public-cloud](images/driverson.png){.thumbnail}
 
-![Public Cloud](images/WindowsDriverVersion.png){.thumbnail}
-
-![Public Cloud](images/WindowsDeviceManager.png){.thumbnail}
+![public-cloud](images/devicemanager.png){.thumbnail}
 
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
