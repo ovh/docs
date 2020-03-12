@@ -1,61 +1,68 @@
 ---
-title: Cambiar los contactos de un proyecto
-excerpt: Cambiar los contactos de un proyecto
+title: 'Cambiar los contactos de un proyecto'
+excerpt: 'Cambiar los contactos de un proyecto'
 slug: cambiar_los_contactos_de_un_proyecto
 legacy_guide_number: g2106
-section: Gestión del proyecto
+section: 'Gestión del proyecto'
 ---
 
+**Última actualización: 6/12/2019**
 
-## 
-El Public Cloud de OVH le ofrece ahora la posibilidad de modificar el contacto administrador y de facturación de sus proyectos. De este modo, podrá separar la cuenta OVH que se encarga de pagar sus facturas de la cuenta OVH que se encarga de gestionar y administrar las distintas instancias. 
+## Objetivo
+Con la Public Cloud de OVHcloud, puede cambiar los contactos de facturación y de administración de un proyecto.
+Esto significa que puede separar la cuenta de OVHcloud en la que gestiona sus facturas de la cuenta de OVHcloud en la que gestiona sus otras instancias. 
 
-Esta guía explica cómo modificar estos contactos.
+Esta guía explica cómo editar sus contactos.
 
 
 ## Requisitos
 
-- Contar con dos cuentas OVH. 
-- Contar con un proyecto Public Cloud.
+- Dos cuentas de OVHcloud
+- Un proyecto de Public Cloud
+- Asegurarse de que tanto los contactos de administración como los de facturación pertenezcan a la misma filial.
 
+## Procedimiento
 
+Para modificar los contactos de su proyecto, acceda primeramente a «Contactos y derechos», debajo de la pestaña «Gestión de proyectos».
 
+![cambiar-contactos](images/contact.png){.thumbnail}
 
-## 
-Para modificar los contactos de su proyecto, en primer lugar deberá acceder a la pestaña «Gestión y consumo del proyecto».
+Verá sus contactos de administración y de facturación actuales.
 
-![](images/img_3825.jpg){.thumbnail}
-A continuación, seleccione la opción «Contactos y permisos».
+![cambiar-contactos](images/contact1.png){.thumbnail}
 
-![](images/img_3822.jpg){.thumbnail}
-Se mostrarán los contactos administrador y de facturación actuales.
+Cuando haga clic en «Modificar», se le redirigirá a una nueva página que le permitirá modificar sus contactos:
 
-![](images/img_3823.jpg){.thumbnail}
-Haga clic en «Editar». Será redirigido a una nueva página en la que podrá modificar los contactos:
+![cambiar-contactos](images/contactchange.png){.thumbnail}
 
-![](images/img_3819.jpg){.thumbnail}
-Una vez configurados los nuevos contactos, las dos cuentas OVH recibirán un mensaje de correo con un código que les permitirá confirmar el cambio de contacto:
+A continuación, haga clic en los 3 puntos a la derecha del proyecto de Public Cloud y, seguidamente, haga clic en «Modificar contactos». Aparecerá una nueva ventana en la que podrá cambiar los contactos.
 
-![](images/img_3820.jpg){.thumbnail}
-A continuación, ambas cuentas deberán confirmar el cambio. 
+![cambiar-contactos](images/contactchange1.png){.thumbnail}
 
-Para ello, acceda a «Mi cuenta» y seleccione «Mis contactos» en el menú de la derecha.
+Una vez confirmados los nuevos contactos, se enviará un mensaje de correo electrónico a ambas cuentas de OVHcloud con un código que permitirá confirmar el cambio:
 
-![](images/img_3824.jpg){.thumbnail}
-Para el contacto de origen, deberá acceder a la pestaña «Solicitudes enviadas»; para el nuevo contacto, deberá acceder a la pestaña «Solicitudes recibidas».
+![cambiar-contactos](images/contactchange2.png){.thumbnail}
 
-![](images/img_3821.jpg){.thumbnail}
-Tan solo debe introducir el código recibido por correo electrónico en la ventana que aparecerá tras la confirmación de la solicitud por parte de las dos cuentas.
+Debe confirmar este procedimiento en ambas cuentas.
 
+## Confirmación
 
-## 
+Para ello, acceda a las propiedades de su cuenta y seleccione «Mis contactos» en el lado derecho:
 
-- []({legacy}1914)
-- []({legacy}2031)
+![cambiar-contactos](images/controlpanel.png){.thumbnail}
 
+En ambos paneles de control de contactos, acceda a la sección «Mis solicitudes»:
 
+![cambiar-contactos](images/controlpanel1.png){.thumbnail}
 
+Haga clic en los 3 puntos a la derecha y, seguidamente, haga clic en «Aceptar solicitud». Aparecerá una nueva ventana: 
 
-## 
- 
+![cambiar-contactos](images/contactchange3.png){.thumbnail}
 
+Tras confirmar el procedimiento para ambas cuentas, aparece una ventana en la que deberá introducir el código recibido por correo electrónico.
+
+Tras hacerlo, los contactos habrán cambiado conforme a lo solicitado.
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/).
