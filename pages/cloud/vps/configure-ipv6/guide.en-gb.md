@@ -6,7 +6,7 @@ section: 'Network Management'
 order: 1
 ---
 
-**Last updated 15th June 2019**
+**Last updated 12th March 2020**
 
 ## Objective
 
@@ -191,7 +191,7 @@ network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: false
+            dhcp6: no
             match:
               name: eth0
             addresses:
