@@ -6,7 +6,7 @@ section: 'Rede e IP'
 order: 1
 ---
 
-**Última atualização: 15/04/2019**
+**Última atualização: 12/03/2020**
 
 ## Sumário
 
@@ -191,7 +191,7 @@ network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: false
+            dhcp6: no
             match:
               name: eth0
             addresses:

@@ -6,7 +6,7 @@ section: 'Red e IP'
 order: 1
 ---
 
-**Última actualización: 11/02/2019**
+**Última actualización: 12/03/2020**
 
 ## Objetivo
 
@@ -192,7 +192,7 @@ network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: false
+            dhcp6: no
             match:
               name: eth0
             addresses:
