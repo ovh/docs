@@ -22,11 +22,11 @@ Il [Public Cloud OVH](https://www.ovhcloud.com/it/public-cloud/){.external} ti p
 
 ### Distribuire un’istanza Public Cloud 
 
-Per distribuire un’istanza Public Cloud accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} Clicca su`Public Cloud`in alto a sinistra. Poi, nella nuova pagina, clicca sulla freccia accanto al nome del progetto predefinito in alto a sinistra. Seleziona il progetto su cui vuoi creare una nuova istanza.
+Per distribuire un’istanza Public Cloud accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} Clicca su`Public Cloud`{.action} in alto a sinistra. Poi, nella nuova pagina, clicca sulla freccia accanto al nome del progetto predefinito in alto a sinistra. Seleziona il progetto su cui vuoi creare una nuova istanza.
 
 ![select_project](images/select_project.png){.thumbnail}
 
-Dopo aver selezionato il progetto, clicca su`Istanze`{.action}sotto alla sezione “Compute” sul riquadro a sinistra.
+Dopo aver selezionato il progetto, clicca su`Istanze`{.action} sotto alla sezione “Compute” sul riquadro a sinistra.
 
 ![create_instance](images/create_instance.png){.thumbnail}
 
@@ -45,7 +45,7 @@ La tabella seguente illustra brevemente le differenze tra i diversi tipi di ista
 
 > [!primary]
 >
-Inizialmente potrai disporre di un limite massimo di 20 istanze, 20vCores e 40GB di RAM per ogni progetto. Puoi richiedere un aumento delle risorse[aprendo un ticket](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}al nostro team di Supporto.
+Inizialmente potrai disporre di un limite massimo di 20 istanze, 20vCores e 40GB di RAM per ogni progetto. Puoi richiedere un aumento delle risorse [aprendo un ticket](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} al nostro team di Supporto.
 >
 
 
