@@ -39,11 +39,11 @@ La fenêtre d'activation s'affiche. **L'étape 1** vous rappelle l'offre et son 
 | Les enregistrements MX de *exemple.com*      	| Le nom de domaine pointera vers les serveurs e-mail d'OVHcloud sans modification de pointage au niveau de l'hébergement.  								|
 
 > [!primary]
-> Il n'y a pas de base de données incluse avec l'hébergement gratuit Start 10M. Si votre projet nécessite une base de données, nous vous invitons à consulter nos [offres d'hébergements Web](https://www.ovh.com/fr/hebergement-web/) qui en contiennent.
+> Il n'y a pas de base de données incluse avec l'hébergement gratuit Start 10M. Si votre projet nécessite une base de données, nous vous invitons à consulter nos [offres d'hébergement Web](https://www.ovh.com/fr/hebergement-web/) qui en contiennent.
 
 Il ne vous reste plus qu'à lire et valider les termes et conditions de l'offre à **l'étape 3** et enfin à `Valider`{.action}le récapitulatif à **l'étape 4**.
 
-Une fois votre commande validée, un e-mail vous sera transmis avec les informations de [connexion FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/){.external} à votre hébergemenent Start 10M.
+Une fois votre commande validée, un e-mail vous sera transmis avec les informations de [connexion FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/){.external} à votre hébergement Start 10M.
 
 Consultez le guide de [création d'un compte E-mail MX Plan](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/){.external} pour profiter de l'adresse e-mail incluse avec votre hébergement Start 10M.
 
