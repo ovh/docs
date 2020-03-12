@@ -7,7 +7,7 @@ section: 'Fonctionnalités des adresses e-mail'
 order: 2
 ---
 
-**Dernière mise à jour le 22/01/2019**
+**Dernière mise à jour le 22/01/2020**
 
 ## Objectif
 
