@@ -29,15 +29,6 @@ Utilizzare un container di oggetti come file system può causare un calo delle p
 
 ## Crea il tuo file system
 
-- Installa S3QL:
-
-```
-admin@serveur1:~$ sudo apt-get install s3ql
-```
-
-
-
-Nel repository di Debian 8 in genere è disponibile l'ultima versione
 
 - Crea un file che contenga le informazioni di connessione:
 
@@ -72,7 +63,7 @@ admin@serveur1:~$ sudo chmod 600 s3qlcredentials.txt
 - Formatta il container di oggetti:
 
 ```
-admin@serveur1:~$ sudo mkfs.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA1:CT_S3QL
+admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL
 ```
 
 
@@ -93,7 +84,7 @@ admin@serveur1:~$ sudo mkdir /mnt/container
 - Configura il container di oggetti
 
 ```
-admin@serveur1:~$ sudo mount.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA1:CT_S3QL /mnt/container/
+admin@serveur1:~$ sudo mount.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL /mnt/container/
 ```
 
 
@@ -109,7 +100,7 @@ tmpfs 393M 5.2M 388M 2% /run
 tmpfs 982M 0 982M 0% /dev/shm
 tmpfs 5.0M 0 5.0M 0% /run/lock
 tmpfs 982M 0 982M 0% /sys/fs/cgroup
-swiftks://auth.cloud.ovh.net/GRA1:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
+swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
 ```
 
 
