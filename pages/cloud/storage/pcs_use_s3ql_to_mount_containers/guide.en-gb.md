@@ -29,16 +29,6 @@ Using an object container as a file system can impact the performance of your op
 
 ## Create your file system
 
-- Install S3QL:
-
-```
-admin@serveur1:~$ sudo apt-get install s3ql
-```
-
-
-
-The latest version should be available in the Debian 8 repository
-
 - Create a file containing the login information:
 
 ```
@@ -72,7 +62,7 @@ admin@serveur1:~$ sudo chmod 600 s3qlcredentials.txt
 - Object container formating:
 
 ```
-admin@serveur1:~$ sudo mkfs.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA1:CT_S3QL
+admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL
 ```
 
 
@@ -93,7 +83,7 @@ admin@serveur1:~$ sudo mkdir /mnt/container
 - Mount the object container
 
 ```
-admin@serveur1:~$ sudo mount.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA1:CT_S3QL /mnt/container/
+admin@serveur1:~$ sudo mount.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL /mnt/container/
 ```
 
 
@@ -109,7 +99,7 @@ tmpfs 393M 5.2M 388M 2% /run
 tmpfs 982M 0 982M 0% /dev/shm
 tmpfs 5.0M 0 5.0M 0% /run/lock
 tmpfs 982M 0 982M 0% /sys/fs/cgroup
-swiftks://auth.cloud.ovh.net/GRA1:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
+swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
 ```
 
 

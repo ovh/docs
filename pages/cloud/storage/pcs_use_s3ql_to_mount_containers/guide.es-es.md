@@ -31,15 +31,7 @@ Utilizar un contenedor de objetos como sistema de archivos puede reducir el rend
 
 
 ## Creación del sistema de archivos
-Instale S3QL:
 
-
-```
-admin@servidor1:~$ sudo apt-get install s3ql
-```
-
-
-La última versión suele estar disponible en los repositorios de Debian 8.
 Crear un archivo que contenga los datos de conexión:
 
 
@@ -70,7 +62,7 @@ Formatee el contenedor de objetos:
 
 
 ```
-admin@servidor1:~$ sudo mkfs.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA1:CT_S3QL
+admin@servidor1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL
 ```
 
 
@@ -92,7 +84,7 @@ Monte el contenedor de objetos:
 
 
 ```
-admin@servidor1:~$ sudo mount.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA1:CT_S3QL /mnt/container/
+admin@servidor1:~$ sudo mount.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL /mnt/container/
 ```
 
 
@@ -109,7 +101,7 @@ tmpfs 393M 5.2M 388M 2% /run
 tmpfs 982M 0 982M 0% /dev/shm
 tmpfs 5.0M 0 5.0M 0% /run/lock
 tmpfs 982M 0 982M 0% /sys/fs/cgroup
-swiftks://auth.cloud.ovh.net/GRA1:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
+swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
 ```
 
 
