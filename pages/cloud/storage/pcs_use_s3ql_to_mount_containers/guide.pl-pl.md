@@ -29,16 +29,6 @@ Wykorzystywanie kontenera obiektów jako systemu plików może zmniejszyć wydaj
 
 ## Tworzenie systemu plików
 
-- Zainstaluj S3QL:
-
-```
-admin@serveur1:~$ sudo apt-get install s3ql
-```
-
-
-
-Najnowsza wersja jest dostępna w repozytoriach systemu Debian 8.
-
 - Utwórz plik zawierający informacje dotyczące logowania:
 
 ```
@@ -72,7 +62,7 @@ admin@serveur1:~$ sudo chmod 600 s3qlcredentials.txt
 - Formatowanie kontenera obiektów:
 
 ```
-admin@serveur1:~$ sudo mkfs.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA1:CT_S3QL
+admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL
 ```
 
 
@@ -94,7 +84,7 @@ admin@serveur1:~$ sudo mkdir /mnt/container
 - Montowanie kontenera obiektów
 
 ```
-admin@serveur1:~$ sudo mount.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA1:CT_S3QL /mnt/container/
+admin@serveur1:~$ sudo mount.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL /mnt/container/
 ```
 
 
@@ -110,7 +100,7 @@ tmpfs 393M 5.2M 388M 2% /run
 tmpfs 982M 0 982M 0% /dev/shm
 tmpfs 5.0M 0 5.0M 0% /run/lock
 tmpfs 982M 0 982M 0% /sys/fs/cgroup
-swiftks://auth.cloud.ovh.net/GRA1:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
+swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
 ```
 
 
