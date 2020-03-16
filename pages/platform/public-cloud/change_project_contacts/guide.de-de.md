@@ -1,62 +1,71 @@
 ---
-title: Die Kontakte eines Projekts ändern
-excerpt: Die Kontakte eines Projekts ändern
+title: 'Die Kontakte eines Projekts ändern'
+excerpt: 'Erfahren Sie hier, wie Sie die Kontakte eines Projekts ändern können'
 slug: die_kontakte_eines_projekts_andern
 legacy_guide_number: g2106
 ---
 
+**Letzte Aktualisierung am 03.12.2019**
 
-## 
-Die OVH Public Cloud ermöglicht Ihnen die Änderung des Administrator- und des Rechnungs-Kontakts Ihrer Projekte.
-So können Sie zum Beispiel den OVH Account, der die Rechnungen begleicht, und den für die Administration der Instanzen zuständigen Account voneinander trennen.
+## Ziel
 
-In dieser Hilfe wird die Vorgehensweise zur Änderung Ihrer Kontakte beschrieben.
+Mit der OVHcloud Public Cloud können Sie die Kontakte für die Abrechnung und Projektverwaltung ändern.
+Dies bedeutet, dass Sie den OVHcloud Kunden-Account, der Ihre Rechnungen verwaltet, vom OVHcloud Kunden-Account, der Ihre verschiedenen Instanzen verwaltet, trennen können.
+
+**In dieser Anleitung wird erläutert, wie Sie Ihre Public Cloud-Kontakte bearbeiten.**
 
 
 ## Voraussetzungen
 
-- 2 OVH Accounts
-- Ein Public Cloud Projekt
+- Sie verfügen über ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) für beide Kennungen.
+- Sie haben sichergestellt, dass sowohl Administrator- als auch Rechnungskontakte derselben OVHcloud Filiale angehören.
 
+## In der praktischen Anwendung
 
+### Schritt 1: Kontaktänderung
 
+Um Ihre Projektkontakte zu ändern, wechseln Sie zunächst mit Klick auf `Contacts and Rights`{.action} in der Projektverwaltung zur Sektion "Kontakte und Berechtigungen" .
 
-## 
-Um die Kontakte Ihres Projekts zu ändern begeben Sie sich in die Rubrik Verwaltung und Verbrauch des Projekts.
+![](images/contact.png){.thumbnail}
 
-![](images/img_3825.jpg){.thumbnail}
-Auf der nun angezeigten Seite wählen Sie Kontakte und Rechte aus.
+Sie sehen nun Ihre aktuellen Admin- und Rechnungskontakte.
 
-![](images/img_3822.jpg){.thumbnail}
-Sie sehen dann Ihren derzeitigen Administrator- und Rechnungs-Kontakt.
+![](images/contact1.png){.thumbnail}
 
-![](images/img_3823.jpg){.thumbnail}
-Mit einem Klick auf Ändern gelangen Sie auf eine neue Seite, auf der Sie Ihre Kontakte ändern können:
+Wenn Sie auf `Ändern`{.action} klicken, werden Sie zu einer neuen Seite weitergeleitet, auf der Sie Ihre Kontakte ändern können:
 
-![](images/img_3819.jpg){.thumbnail}
-Sobald die neuen Kontakte konfiguriert wurden, wird den beiden OVH Accounts eine E-Mail mit einem Code zugesandt, mit dem die Kontaktänderung bestätigt werden kann:
+![](images/contactchange.png){.thumbnail}
 
-![](images/img_3820.jpg){.thumbnail}
-Diese Bestätigung muss dann auf den beiden Accounts durchgeführt werden.
+Klicken Sie dann auf `...`{.action} rechts neben dem Public Cloud Projekt und dann auf `Kontakte ändern`{.action}. Ein neues Fenster wird angezeigt, in dem Sie die Kontakte eintragen können.
 
-Klicken Sie dazu in Ihrem Kundencenter rechts oben auf Ihren Namen, wählen Sie Mein Account aus und klicken Sie in dem Menü auf der linken Seite auf Meine Kontakte.
+![](images/contactchange1.png){.thumbnail}
 
-![](images/img_3824.jpg){.thumbnail}
-Der ursprüngliche Kontakt führt die Bestätigung in der Rubrik Meine versandten Anfragen durch, der neue Kontakt tut dies in der Rubrik Meine erhaltenen Anfragen.
-Jede Anfrage wird in einer eigenen Zeile aufgeführt:
+Sobald Sie die neuen Kontakte bestätigt haben, erhalten beide OVHcloud Kunden-Accounts eine E-Mail mit einem Code, mit dem sie diese Änderung bestätigen können:
 
-![](images/img_3821.jpg){.thumbnail}
-Bestätigen Sie dann die Anfrage und geben Sie den per E-Mail erhaltenen Validierungs-Code ein, um die Änderung der Kontakte abzuschließen.
+![](images/contactchange2.png){.thumbnail}
 
+Der Vorgang muss in beiden Konten bestätigt werden.
 
-## 
+### Schritt 2: Bestätigung der Änderung
 
-- [Projekte delegieren]({legacy}1914)
-- [Abrechnung analysieren und verwalten]({legacy}2031)
+Zu diesem Zweck wechseln Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/manager/dedicated/#/contacts/services) zum Bereich "Verwaltung der Kontakte".
 
+![](images/controlpanel.png){.thumbnail}
 
+ Klicken Sie dort auf `Meine Anfragen`{.action} (in beiden Kundenkennungen).
 
+![](images/controlpanel1.png){.thumbnail}
 
-## 
-[Zurück zum Index der Cloud Hilfen]({legacy}1785)
+Klicken Sie rechts auf `...`{.action} und bestätigen Sie die Anfrage. Ein neues Fenster wird angezeigt. 
+
+![](images/contactchange3.png){.thumbnail}
+
+Sie müssen nun noch den Code, den Sie per E-Mail erhalten haben, in das angezeigte Fenster einfügen, nachdem Sie den Vorgang von beiden Accounts aus bestätigt haben.
+
+Danach werden die Kontakte wie gewünscht geändert.
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en).
 
