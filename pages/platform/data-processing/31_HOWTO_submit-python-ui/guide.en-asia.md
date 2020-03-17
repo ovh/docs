@@ -3,7 +3,7 @@ title: How to submit a Python job on the Data Processing platform using the OVHc
 slug: submit-python
 excerpt: Find out how to create a cluster and run your Apache Spark Python job with Data Processing platform using the OVHcloud manager
 section: How to
-order: 0
+order: 1
 ---
 
 **Last updated 06<sup>th</sup> March, 2020**
@@ -23,20 +23,20 @@ To read an introduction about the Data Processing service you can visit [Data Pr
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details.)
 - An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](../../public-cloud/configure_user_access_to_horizon/){.external} for details.)
 - Your application code as Python files 
-- Your Python requirement file in Conda yml format 
+- An environment.yml file in Conda standard.  (Anaconda is a Python distribution that helps you easily manage and share your Python environment and requirements. It contains a lot of Python packages by default and specially the data science related packages. Please visit [this website](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment) to learn more about how to create your environment.yml file with Conda format.)
 
 ## Instructions
 
 ### Step 1: Upload your Python application code and requirements file
 
-Before running your job in the Data Processing platform, you will need to create a container in your Object Storage for your job and upload your application Python files into this container. You can work with your Object Storage using either the OVHcloud manager or the Openstack Horizon dashboard. 
+Before running your job in the Data Processing platform, you will need to create a container in your Object Storage for your job and upload your application Python files and environment.yml file into this container. You can work with your Object Storage using either the OVHcloud manager or the Openstack Horizon dashboard. 
 
 Please see [Creating Storage Containers in Customer Panel](../../storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details. 
 
 
 If you don’t currently have an application code and you still would like to try OVHcloud Data Processing, you can download and use the [PI sample from Apache Spark repository](https://github.com/apache/spark/blob/master/examples/src/main/python/pi.py){.external}.
 
-If your application needs some package requirements, create a Conda requirements.yml file containing all requirements you need to install in your Apache Spark cluster and upload this file into the same container as your Python files. 
+If your application has some package requirements or needs a specific version of Python to run on the cluster, make sure that you mention them in your Conda environment.yml file and upload it into the same container as your Python files in your Object Storage. 
 
 ### Step 2: Submit your Apache Spark job
 To submit your job with your required parameters follow these steps: 

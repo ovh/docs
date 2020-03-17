@@ -3,7 +3,7 @@ title: How to cancel a running job using the Data Processing page in the OVHclou
 slug: cancel-job
 excerpt: Find out how to cancel a job running in the Data Processing platform through the OVHcloud Manager
 section: How to
-order: 2
+order: 3
 ---
 
 **Last updated 06<sup>th</sup> March, 2020**
