@@ -2,7 +2,8 @@
 title: 'Konfiguration Ihrer E-Mail-Adresse auf Outlook 2016 für Windows'
 slug: konfiguration-outlook-2016
 excerpt: 'So konfigurieren Sie Ihre MX Plan E-Mail-Adresse auf Outlook 2016 für Windows'
-section: Outlook
+section: 'E-Mail Clients'
+order: 3
 ---
 
 **Stand 29.06.2018**
@@ -18,6 +19,7 @@ E-Mail-Adressen aus dem MX Plan Angebot können auf einem kompatiblen E-Mail-Cli
 - Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem [OVH Webhosting Angebot](https://www.ovh.de/hosting/){.external} enthalten).
 - Die Microsoft Outlook-Anwendung ist auf Ihrem Gerät installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
+
 
 > [!primary] 
 >
@@ -89,6 +91,7 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
 Eine OVH Webanwendung, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können, ist verfügbar unter <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+
 
 ## Weiterführende Informationen
 

@@ -111,11 +111,6 @@ To manage rules, click on the gear icon at the top, then click on `Options`{.act
 
 On the new page that appears, click on `Inbox and sweep rules`{.action} in the left-hand menu. In the "Options" tree-view, you can find this item under "Mail", then "Automatic processing". From here, you can create, edit, delete and move rules in the list. 
 
-> [!primary]
->
-> If you create multiple rules that respond to the same conditions, only the first one in the list will run.
->
-
 To add a new rule, click the `+`{.action} button. 
 
 ![useowa](images/owa_exchange_step13.png){.thumbnail}
@@ -124,6 +119,7 @@ Fill in the requested information depending on the action you want the rule to c
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
+For more detailed instructions about creating inbox rules, please refer to our guide: [Creating inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa).
 
 ### Managing a contact list
 

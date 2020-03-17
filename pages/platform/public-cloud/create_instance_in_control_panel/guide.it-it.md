@@ -1,129 +1,88 @@
 ---
-title: Crea un’istanza dallo Spazio Cliente OVH
-excerpt: Crea un'istanza dallo Spazio Cliente OVH
+title: 'Crea un’istanza dallo Spazio Cliente OVHcloud'
+excerpt: 'Come creare un’istanza dallo Spazio Cliente OVHcloud'
 slug: crea_unistanza_dallo_spazio_cliente_ovh
 legacy_guide_number: g1775
+section: 'Per iniziare'
 ---
 
+**Ultimo aggiornamento 03/12/2019**
 
-## 
-Il Public Cloud OVH ti permette di creare server virtuali (istanze), in qualsiasi momento e in tutta semplicità.
-Queste istanze sono molto simili ai [VPS OVH](https://www.ovh.it/vps/) di ultima generazione, ma rispondono anche ad altre esigenze.
-Ecco le caratteristiche principali dei VPS e delle istanze Public Cloud:
+## Obiettivo
 
-VPS:
+Il [Public Cloud OVH](https://www.ovhcloud.com/it/public-cloud/){.external} ti permette di creare server virtuali (istanze), in qualsiasi momento e in tutta semplicità.
 
-- Spazio Cliente OVH semplificato
-- visione su una singola macchina
-- numerose distribuzioni disponibili
+**Questa guida ti mostra la procedura da seguire per creare un’istanza dallo Spazio Cliente OVHcloud**
 
+## Prerequisiti
 
-Istanze Public Cloud:
+* avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} OVHcloud
+* aver già creato un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} nel tuo account OVHcloud
+* disporre di una chiave SSH nel tuo Spazio Cliente OVHcloud
 
-- Possibilità di scelta della fatturazione: mensile o oraria
-- API OpenStack disponibili
-- richieste distribuite tra più istanze
+### Distribuire un’istanza Public Cloud 
 
+Per distribuire un’istanza Public Cloud accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} Clicca su`Public Cloud`{.action} in alto a sinistra. Poi, nella nuova pagina, clicca sulla freccia accanto al nome del progetto predefinito in alto a sinistra. Seleziona il progetto su cui vuoi creare una nuova istanza.
 
-Questa guida ti mostra la procedura da seguire per creare un'istanza.
+![select_project](images/select_project.png){.thumbnail}
 
+Dopo aver selezionato il progetto, clicca su`Istanze`{.action} sotto alla sezione “Compute” sul riquadro a sinistra.
 
-## Requisiti
+![create_instance](images/create_instance.png){.thumbnail}
 
-- Avere accesso allo [Spazio Cliente OVH Cloud](https://www.ovh.com/manager/cloud/)
-- Aver già creato e configurato una chiave SSH nel tuo Spazio Cliente OVH
+Clicca sul pulsante `Crea un’istanza`{.action} Sarai reindirizzato al seguente menu dove è possibile selezionare l’istanza da creare.
 
-Guida: []({legacy}1769)
+![create_instance1](images/create_instance1.png){.thumbnail}
 
+La tabella seguente illustra brevemente le differenze tra i diversi tipi di istanze:
 
-## Aggiungi il server
+| Tipo di Server | Risorse garantite | Operazioni da riga di comando |
+| :---         |     :---:      |          ---: |
+| Utilizzo   | ✓     | Server di sviluppo, applicazioni business o web    |
+| CPU     | ✓       | Codifica video o altri calcoli intensivi      |
+| RAM   | ✓     | Database, analisi e calcoli in-memory    |
+| Risorse condivise    | -       | Ambienti di test e sviluppo      |
 
-- Clicca su Aggiungi in alto a sinistra
+> [!primary]
+>
+Inizialmente potrai disporre di un limite massimo di 20 istanze, 20vCores e 40GB di RAM per ogni progetto. Puoi richiedere un aumento delle risorse [aprendo un ticket](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} al nostro team di Supporto.
+>
 
 
+Segui le indicazioni nel menu per scegliere la localizzazione della tua istanza Public Cloud. Nella terza parte del menu, seleziona il Sistema Operativo.
 
-![](images/img_2707.jpg){.thumbnail}
+> [!primary]
+>
+Se scegli Windows, ti verrà automaticamente fornita una licenza che ti sarà fatturata mensilmente.
+>
 
-- Seleziona Aggiungi un server
+![install](images/os_install.png){.thumbnail}
 
+> [!primary]
+>
+Le istanze Public Cloud installate su un Sistema Operativo basato su Unix richiedono una chiave SSH per essere aggiunte al server. Per maggiori informazioni su come generare una chiave SSH, consulta la nostra guida [Crea una chiave SSH](https://docs.ovh.com/it/public-cloud/creare-chiave-ssh/){.external}.
+>
 
+Nella quarta parte del menu, è possibile scegliere il numero di istanze da creare, il nome e, eventualmente, aggiungere una rete privata o uno script post-installazione. 
 
-![](images/img_2708.jpg){.thumbnail}
+![Aggiungi un’istanza](images/configure_instance.png){.thumbnail}
 
+Scegli la fatturazione (mensile o oraria).
 
-## Scegli le caratteristiche del server
+> [!warning]
+>
+>Scegliendo la fatturazione mensile per la tua istanza, ti impegni a mantenere questa tariffa almeno fino alla fine del mese in corso. A prescindere dal fatto che l’istanza sia in uso oppure no.
+>
 
-- Clicca sulla freccia che si trova sul lato destro del modello. Visualizzerai un altro menu:
 
+Una volta confermate le informazioni inserite, clicca sul pulsante`Crea un’istanza`{.action}per completare l’operazione. L’installazione dell’istanza potrebbe richiedere alcuni minuti.
 
+## Conclusioni
 
-![](images/img_2709.jpg){.thumbnail}
-Scegli il tipo di istanza:
+A questo punto dovresti essere in grado di installare un’istanza sul tuo progetto Public Cloud dallo Spazio Cliente OVHcloud. Per maggiori informazioni sull’utilizzo della tua istanza, consulta la [documentazione disponibile nella pagina del supporto](https://docs.ovh.com/it/public-cloud/).
 
-- Gamma VPS-SSD
+## Per saperne di più 
 
-|da 1 a 2 vCore|da 2 GB a 8 GB di RAM|da 10 a 40 GB di storage|
+[Crea il tuo primo progetto Public Cloud](https://docs.ovh.com/it/public-cloud/crea_il_tuo_primo_progetto_public_cloud/){.external}
 
-
-
-- Gamma CPU
-
-|da 2 a 32 vCore|da 7 GB a 120 GB di RAM|da 200 a 1600 GB di storage|
-
-
-
-- Gamma RAM
-
-|da 2 a 16 vCore|da 30 GB a 240 GB di RAM|da 200 a 1600 GB di storage|
-
-
-
-
-## Scegli il sistema operativo
-
-- Ad esempio Ubuntu 14.04
-
-
-
-![](images/img_2710.jpg){.thumbnail}
-
-
-## Scegli il datacenter
-
-- Ad esempio Strasburgo
-
-
-
-![](images/img_2711.jpg){.thumbnail}
-
-
-## Seleziona la chiave SSH che vuoi utilizzare
-
-- Ad esempio:
-
-
-
-![](images/img_2712.jpg){.thumbnail}
-
-## Informazione:
-Quando crei un'istanza Windows, non è necessario configurare una chiave SSH.
-
-
-## Rinomina il server virtuale e inizia!
-
-- Rinomina il server virtuale 
-- Scegli la Fatturazione (oraria o mensile)
-
-
-
-## Attenzione:
-Scegliendo la fatturazione mensile per la tua istanza, ti impegni a mantenere questa tariffa almeno fino alla fine del mese in corso.
-
-- Clicca su Avvia adesso
-
-
-
-
-## 
-[Ritorna all'indice delle guide Cloud]({legacy}1785)
-
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

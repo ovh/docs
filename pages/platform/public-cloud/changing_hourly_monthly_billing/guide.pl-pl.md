@@ -1,34 +1,48 @@
 ---
-title: Zmiana typu rozliczenia z godzinowego na miesięczne dla instancji Public Cloud
+title: 'Zmiana typu rozliczenia z godzinowego na miesięczne dla instancji Public Cloud'
+excerpt: 'Dowiedz się, jak zmienić typ rozliczenia za instancję Public Cloud'
 slug: zmiana-typu-rozliczenia
-section: Zarządzanie projektami
+section: 'Zarządzanie projektami'
 ---
 
-**Ostatnia aktualizacja dnia 2018-01-22**
+**Ostatnia aktualizacja: 06-12-2019**
 
 ## Wprowadzenie
 
-Przewodnik ten wyjaśnia, w jaki sposób można zmienić formę naliczania opłat za zainstalowane instancji Public Cloud z godzinowego modelu na subskrybcję miesięczną.
-Podczas tworzenia instancji możemy wybrać w jaki sposób mają być naliczane opłaty za jej wykorzystanie. Jeśli początkowo wybrano formę godzinową, w trakcie korzystania z instancji można zmienić formę rozliczania na miesięczne. Odwrotna operacja jest niedostępna.
+Podczas tworzenia instancji Public Cloud można wybrać typ rozliczenia za godzinę lub miesięcznie. Instancje w typu godzinowym są płatne według faktycznego zużycia, czyli na koniec miesiąca użytkownicy są rozliczani za konkretne zasoby, z których korzystali. Instancje w subskrypcji miesięcznej są płatne z góry, ale rozliczane według niższej ceny (o 50% taniej niż w przypadku rozliczenia godzinowego). Jeśli początkowo zostało wybrane rozliczenie godzinowe, w dowolnym momencie można je zmienić na miesięczne.
+
+**Dowiedz się, jak zmienić typ rozliczenia godzinowego na miesięczne.**
+
+> [!warning]
+>
+> Nie można zmienić rozliczenia miesięcznego na godzinowe. Aby rozliczać się godzinowo, należy usunąć instancję rozliczaną miesięcznie, utworzyć nową instancję i wybrać dla niej typ rozliczenia godzinowego. W takiej sytuacji wykonaj następujące działania:
+>
+>- Utwórz migawkę bieżącej instancji.
+>
+>- Utwórz nową instancję na podstawie migawki.
+>
+>- Usuń instancję rozliczaną miesięcznie.
+>
 
 ## Wymagania początkowe
 
-- Instancja Public Cloud
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- utworzona [instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}
+- zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+
 
 ## W praktyce
 
-Wyświetlając menu danej instancji proszę wybrać widoczną w nim opcję zmiany typu subskrybcji:
+W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} wybierz instancję, dla której chcesz zmienić typ rozliczenia, i otwórz menu opcji, klikając ikonę z trzema kropkami (po prawej stronie instancji). Zobaczysz przycisk `Zmień na subskrypcję miesięczną`{.action}:
 
-![Zamiana rozliczenia](images/1_swich_to_monthly_sub.png){.thumbnail}
+![Change billing calculation](images/switch.png){.thumbnail}
 
-Następnie wyświetlone zostanie okno w którym należy potwierdzić zmianę:
+Następnie potwierdź zmianę typu rozliczenia:
 
-![Potwierdzenie zmiany rozliczenia](images/2_switch_to_monthly_confirm.png){.thumbnail}
+![Confirm billing calculation change](images/switch1.png){.thumbnail}
 
-W wyniku zmiany wystawiona zostanie faktura na kwotę odpowiadającą liczbie dni do końca miesiąca. Z końcem miesiąca zostanie wystawiona faktura podsumowująca dotychczasowe wykorzystanie instancji w trybie godzinowym.
+Po potwierdzeniu wyboru następny rachunek będzie obejmował godzinowy koszt instancji za pozostałe dni bieżącego miesiąca oraz stałą opłatę miesięczną za kolejny miesiąc.
 
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

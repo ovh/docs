@@ -2,7 +2,7 @@
 title: 'Eine E-Mail-Adresse mit MX Plan erstellen'
 slug: e-mail-adresse-erstellen
 excerpt: 'So erstellen Sie eine E-Mail-Adresse mit MX Plan'
-section: 'E-Mail-Adressen verwalten'
+section: 'Erste Schritte'
 order: 2
 ---
 
@@ -18,18 +18,18 @@ Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät
 
 - Sie besitzen ein MX Plan Angebot, verfügbar mit einer [Webhosting](https://www.ovh.de/hosting/){.external} Lösung, dem [kostenlosen Start 10M Hosting](https://www.ovh.de/domains/angebot_hosting_start10m.xml){.external} oder separat bestellbar.
 - Sie können noch weitere E-Mail-Adressen im Rahmen Ihres Angebots erstellen.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web`{.action}.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web`{.action}.
 
 > [!primary]
 >
-> Hinweis zum Start 10M Hosting: Dieses muss unbedingt zuerst aktiviert werden, um eine E-Mail-Adresse zu erstellen. Sie können Start 10M in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} aktivieren, indem Sie zur betreffenden Domain gehen.
+> Hinweis zum Start 10M Hosting: Dieses muss unbedingt zuerst aktiviert werden, um eine E-Mail-Adresse zu erstellen. Sie können Start 10M in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} aktivieren, indem Sie zur betreffenden Domain gehen.
 >
 
 ## Beschreibung
 
 Je nach Aktivierungsdatum Ihres Dienstes, oder falls [Ihr Angebot vor Kurzem migriert wurde](https://www.ovh.de/mxplan-migration/){.external}, verfügen Sie entweder über die historische oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion. 
 
-Loggen Sie sich hierzu in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie in den Bereich „Web“. Klicken Sie im linken Menü auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plan Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
+Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie in den Bereich „Web“. Klicken Sie im linken Menü auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plan Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
 
 |Historische MX Plan Version|Neue MX Plan Version|
 |---|---|

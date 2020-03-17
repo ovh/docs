@@ -1,43 +1,48 @@
 ---
 title: 'Von der stündlichen auf monatliche Abrechnung umstellen'
-excerpt: 'In dieser Anleitung erfahren Sie, wie Sie die Abrechnungsart Ihrer Public Cloud Instanz ändern.'
+excerpt: 'Erfahren Sie hier, wie Sie die Abrechnungsart Ihrer Public Cloud Instanz ändern'
 slug: abrechnungsart-aendern-public-cloud
 section: Projektverwaltung
 ---
 
-**Stand 29.06.2018**
+**Letzte Aktualisierung am 03.12.2019**
 
-## Einleitung
+## Ziel
 
-Bei Erstellung einer Public Cloud Instanz können Sie zwischen der stündlichen und der monatlichen Abrechnung wählen. Bei der stundengenauen Abrechnung werden die Instanzen nach *Pay as you go* in Rechnung gestellt. So bezahlt der Nutzer am Monatsende genau die Ressourcen, die er verbraucht hat. Dagegen wird bei der monatlichen Abrechnung der Instanzen jeder Monat im Voraus und zu einem geringeren Preis berechnet (50 % günstiger als Pay as you go). Wenn Sie sich zu Beginn für die stündliche Abrechnung entschieden haben, können Sie jederzeit auf die monatliche Abrechnung umstellen.
+Wenn Sie eine Public Cloud Instanz erstellen, können Sie wählen, ob die Abrechnung stündlich oder monatlich erfolgen soll. Instanzen mit Stundensatz werden nach einem _Pay as you go_ Verfahren abgerechnet, d.h. am Monatsende werden den Nutzern die spezifischen Ressourcen in Rechnung gestellt, die sie verwendet haben. Instanzen mit monatlicher Fälligkeit können im Voraus bezahlt werden und werden zu einem niedrigeren Preis berechnet (50% weniger als bei der verbrauchsspezifischen Abrechnung). Wenn Sie ursprünglich die stündliche Abrechnung ausgewählt haben, können Sie jederzeit zur monatlichen Abrechnung wechseln.
 
-**In dieser Anleitung zeigen wir Ihnen, wie Sie von der stündlichen auf die monatliche Abrechnung umstellen.**
+**In dieser Anleitung wird erläutert, wie Sie von der stündlichen zur monatlichen Abrechnung wechseln.**
 
 > [!warning]
 >
-> Die Umstellung von der monatlichen auf die stündliche Abrechnung ist nicht möglich. In diesem Fall muss die Instanz mit monatlicher Abrechnung gelöscht und anschließend eine neue Instanz mit stündlicher Abrechnung erstellt werden.
+> Sie können nicht von der monatlichen zur stündlichen Abrechnung wechseln. Wenn Sie zum Stundensatz abgerechnet werden möchten, müssen Sie Ihre monatlich abgerechnete Instanz löschen, eine neue erstellen und die stündliche Abrechnung auswählen. In diesem Fall empfehlen wir Ihnen das folgende Verfahren:
 >
-
+>- Erstellen Sie einen Snapshot Ihrer aktuellen Instanz.
+>
+>- Erstellen Sie eine neue Instanz basierend auf diesem Snapshot.
+>
+>- Löschen Sie die alte Instanz.
+>
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/){.external} erstellt.
-- Sie sind im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
 
-## Beschreibung
+## In der praktischen Anwendung
 
-Wählen Sie im [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} die Instanz aus, für die Sie die Abrechnungsart ändern möchten, und wählen Sie das Optionsmenü an. Klicken Sie dann auf den Button `Auf das monatliche Abo umstellen`{.action}:
+Wählen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) unter `Instances`{.action} die Instanz für welche Sie den Abrechnungssatz ändern möchten. Öffnen Sie das Kontextmenü indem Sie auf die 3 Punkte rechts neben der Instanz klicken. Sie sehen dann die Option `Auf monatliche Abrechnung umstellen`{.action}:
 
-![Abrechnungsänderung](images/1_swich_to_monthly_sub.png){.thumbnail}
+![Change billing calculation](images/switch.png){.thumbnail}
 
-Bestätigen Sie anschließend die Änderung:
+Sie müssen dann bestätigen, dass Sie die Abrechnungsart ändern möchten:
 
-![Bestätigung Abrechnungsänderung](images/2_switch_to_monthly_confirm.png){.thumbnail}
+![Confirm billing calculation change](images/switch1.png){.thumbnail}
 
-Nach der Umstellung wird eine Rechnung mit dem anteiligen Preis für die noch verbleibenden Tage im laufenden Monat erstellt. Am Ende des Monats, in dem die Umstellung vorgenommen wurde, umfasst die Rechnung dann sowohl die Kosten für den Verbrauch im Zeitraum mit stündlicher Abrechnung als auch den Pauschalpreis der Instanz für den Folgemonat.
+Sobald Sie Ihre Wahl bestätigt haben, enthält Ihre nächste Rechnung die stündlichen Kosten der Instanz für die verbleibenden Tage des Monats sowie die Kosten für den nächsten Monat zum monatlichen Pauschalpreis.
 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en).

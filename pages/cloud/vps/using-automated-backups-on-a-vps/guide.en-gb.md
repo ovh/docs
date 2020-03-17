@@ -1,0 +1,113 @@
+---
+title: 'Using automated backups on a VPS'
+excerpt: 'Find out how to enable and use the automated backups option in the OVHcloud Control Panel'
+slug: using-automated-backups-on-a-vps
+section: 'Backup options'
+order: 2
+hidden: true
+---
+
+**Last updated 20th march 2020**
+
+
+## Objective
+
+> [!primary]
+>
+Before applying backup options, we recommend to consult the [product page](https://www.ovh.co.uk/vps/backup-vps.xml) for pricing comparisons and further details.
+>
+
+This option offers a convenient way to frequently have complete VPS backups available from your OVHcloud Control Panel without having to connect to the server to create and restore them manually. Another advantage is that you can also choose to mount a backup and access it via SSH.
+
+**This guide explains the usage of automated backups for your VPS.**
+
+## Requirements
+
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- a compatible OVHcloud [VPS service](https://www.ovh.co.uk/vps/) already set up
+- SSH access to your VPS (optional)
+
+### Step 1: Subscribing to the Automated backups option
+
+After selecting your VPS, click on the `Automated backups`{.action} tab in the horizontal menu.
+
+![autobackupvps](images/backup_vps_step1.png){.thumbnail}
+
+In the new screen, please take note of the pricing information, then click on `Order`{.action}. You will be guided through the order process and receive a confirmation email. Backups will now be created daily until the option is cancelled again.
+
+
+### Step 2: Restoring a backup from the OVHcloud Control Panel
+
+After selecting your VPS, click on the `Automated backups`{.action} tab in the horizontal menu. There will be a maximum of 15 daily backups available. Click on `...`{.action} next to the backup you want to restore and select `Restoration`{.action}.
+
+![autobackupvps](images/backup_vps_step2.png){.thumbnail}
+
+Unless there's a good reason not to, make sure to tick the option "Modify the root password on restoration" in the pop-up window to preserve your current root password and click on `Confirm`{.action}. You will receive an email as soon as the task is complete. The restoration might take a while, depending on the disk space used.
+
+> [!alert]
+>
+Please note that the automated backups will not include your additional disks.
+>
+
+### How to mount and access a backup
+
+This option allows to access the backup data in case you don't want to completely overwrite your existing service with the restoration.
+
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>
+
+#### Step 1: Control Panel 
+
+Click on `...`{.action} next to the backup you want to access and select `Mounting`{.action}.
+
+![autobackupvps](images/backup_vps_step3.png){.thumbnail}
+
+After the process is completed, you will receive an email. You can now connect to your VPS and add the partition where your backup is located.
+
+#### Step 2: Secure Shell
+
+Connect to your VPS using SSH.
+
+You can use the following command to verify the name of the newly attached device:
+
+```
+# lsblk
+```
+
+Here is a sample output of this command:
+
+```
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda       8:0    0   25G  0 disk 
+├─sda1    8:1    0 24.9G  0 part /
+├─sda14   8:14   0    4M  0 part 
+└─sda15   8:15   0  106M  0 part 
+sdb       8:16   0   25G  0 disk 
+├─sdb1    8:17   0 24.9G  0 part 
+├─sdb14   8:30   0    4M  0 part 
+└─sdb15   8:31   0  106M  0 part /boot/efi
+sdc       8:32   0   50G  0 disk 
+```
+In this example, the partition containing your backup filesystem is named "sdb1".
+Now create a directory for this partition and define it as the mountpoint:
+
+```
+# mkdir -p /mnt/restore
+# mount /dev/sdb1 /mnt/restore
+```
+
+You can now switch to this folder and access your backup data.
+
+
+
+## Go further
+
+[Using snapshots on a VPS]()
+
+[Using backup storage on a VPS]()
+
+
+Join our community of users on <https://community.ovh.com/en/>.

@@ -1,8 +1,9 @@
 ---
-title: Comment gérer mon bon d’achat
+title: 'Comment gérer mon bon d’achat'
 slug: comment-gerer-mon-bon-d-achat
 legacy_guide_number: '7962632'
-section: Gestion de mes options
+section: 'Gestion de mes options'
+hidden: true
 ---
 
 ### Préambule {#préambule}
@@ -68,5 +69,4 @@ Sélectionnez la ligne xDSL afin de générer votre bon d'achat et cliquez sur "
 Une demande de confirmation sera affichée lors de la validation de votre bon afin de valider le réengagement.
 
 ------------------------------------------------------------------------
-
 

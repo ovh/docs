@@ -6,7 +6,7 @@ section: 'Rete e IP'
 order: 1
 ---
 
-**Ultimo aggiornamento: 25/11/2019**
+**Ultimo aggiornamento: 12/03/2020**
 
 ## Obiettivo
 
@@ -189,7 +189,7 @@ network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: false
+            dhcp6: no
             match:
               name: eth0
             addresses:

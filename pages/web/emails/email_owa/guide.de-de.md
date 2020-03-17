@@ -2,15 +2,15 @@
 title: 'E-Mail-Adresse via Outlook on the web (OWA) verwenden'
 slug: verwendung-owa
 excerpt: 'So verwenden Sie Ihre E-Mail-Adressen über OWA Webmail'
-section: 'Erste Schritte'
-order: 4
+section: 'E-Mail Clients'
+order: 1
 ---
 
 **Stand 28.06.2019**
 
 ## Einleitung
 
-Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät versenden und empfangen. Um den Zugriff zu erleichtern, stellt OVH unter [diesem Link](https://www.ovh.de/mail/){.external} eine Online-Anwendung (Webmail) zur Verfügung: Outlook on the web (OWA).
+Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät versenden und empfangen. Um den Zugriff zu erleichtern, stellt OVH unter [diesem Link](https://www.ovh.de/mail) eine Online-Anwendung (Webmail) zur Verfügung: Outlook on the web (OWA).
 
 **Hier erfahren Sie, wie Sie die gängigsten Aktionen zur Verwendung Ihrer E-Mail-Adresse mit OWA Webmail durchführen.**
 

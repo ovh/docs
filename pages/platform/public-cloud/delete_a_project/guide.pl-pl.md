@@ -1,64 +1,51 @@
 ---
-title: Usuwanie projektu
-excerpt: Usuwanie projektu
+title: 'Usuwanie projektu'
+excerpt: 'Dowiedz się, jak usunąć projekt Public Cloud'
 slug: usuwanie_projektu
 legacy_guide_number: g2129
-section: Zarządzanie projektami
+section: 'Zarządzanie projektami'
 ---
 
+**Ostatnia aktualizacja: 06-12-2019**
 
-## 
-Usunięcie projektu Public Cloud jest możliwe w panelu klienta. 
+## Wprowadzenie
 
-Usunięice projektu wiąże się z wystawieniem ostatniej faktury za wykorzystane zasoby. 
-W przewodniku tym wyjaśniamy, jak usunąć projekt.
+Jeśli projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} nie jest już potrzebny, można go usunąć bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+Po usunięciu projektu Public Cloud zostanie utworzona końcowa faktura za pozostałą należność.
 
-## Wymagania
+> [!warning]
+>
+Usunięcie projektu nie jest tym samym co dezaktywacja instancji Public Cloud. Po usunięciu projektu zawarte w nim zasoby zostaną skasowane. Tego działania nie można cofnąć.
+>
 
-- Projekt Public Cloud
+**Dowiedz się, jak usunąć projekt Public Cloud.**
 
+## Wymagania początkowe
 
+* projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud
+* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 
+## W praktyce
 
-## 
-Kliknij na kosz z prawej strony projektu.
+Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i kliknij menu `Public Cloud`{.action}.
 
-![](images/img_3960.jpg){.thumbnail}
+Następnie kliknij pozycję `Ustawienia projektu`{.action} w sekcji Zarządzanie projektami.
 
-- Pojawi się komunikat z podsumowaniem usług, które zostaną usunięte.
+![cloud menu](images/deleteproject.png){.thumbnail}
 
+Kliknij kartę `Usuwanie projektu`{.action}.
 
+![compute tab](images/deleteproject1.png){.thumbnail}
 
-![](images/img_3961.jpg){.thumbnail}
+Zostanie wyświetlony komunikat potwierdzenia wraz z listą zasobów, które zostaną zachowane albo skasowane po usunięciu projektu. Uważnie przeczytaj komunikat, a po zapoznaniu się z informacjami kliknij przycisk `Usuń projekt`{.action}.
 
-- Następnie pojawi się okno pop-up z informacją o przesłanym do Ciebie e-mailu.
+![compute tab](images/deleteproject2.png){.thumbnail}
 
+Kliknięcie przycisku usuwania spowoduje wysłanie do Ciebie e-maila z prośbą o potwierdzenie lub anulowanie usuwania projektu. Gdy klikniesz link potwierdzający, zostanie wyświetlona strona internetowa, na której trzeba wprowadzić hasło konta. Gdy wprowadzisz i potwierdzisz hasło, projekt zostanie usunięty.
 
+## Sprawdź również
 
-![](images/img_3962.jpg){.thumbnail}
+[Pierwsze kroki z Public Cloud](https://docs.ovh.com/pl/public-cloud/tworzenie-usuwanie-projektow/){.external}.
 
-- E-mail będzie zawierał 2 linki: pierwszy do potwierdzenia usunięcia, drugi do anulowania tej operacji.
-
-
-
-![](images/img_3963.jpg){.thumbnail}
-
-- Wystarczy zatwierdzić operację wpisując hasło:
-
-
-
-![](images/img_3964.jpg){.thumbnail}
-
-
-## 
-
-- [Delegowanie projektów]({legacy}1914)
-- [Analizowanie i zarządzanie płatnościami]({legacy}2031)
-
-
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

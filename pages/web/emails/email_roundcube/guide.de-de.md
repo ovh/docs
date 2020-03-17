@@ -3,10 +3,12 @@ title: 'Webmail: Verwendung von RoundCube'
 excerpt: ''
 slug: webmail_verwendung_von_roundcube
 legacy_guide_number: g1302
+section: 'E-Mail Clients'
+order: 2
 ---
 
 ## Über die OVH Webseite
-Begeben Sie sich auf die [OVH Webseite](http://www.ovh.de) und klicken Sie rechts oben auf "Webmail".
+Begeben Sie sich auf die [OVH Webseite](http://www.ovh.de) und klicken Sie oben auf "Webmail".
 
 ![](images/img_2413.jpg){.thumbnail}
 

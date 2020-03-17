@@ -5,39 +5,44 @@ slug: cambiar-modalidad-facturacion-public-cloud
 section: 'Gestión del proyecto'
 ---
 
-**Última actualización: 18/06/2018**
+**Última actualización: 6/12/2019**
 
 ## Objetivo
 
-Al crear una instancia de Public Cloud, es posible elegir entre facturación por horas o facturación mensual. Las instancias **por horas** se facturan según la modalidad de pago por consumo, es decir, que el usuario paga al final del mes el total correspondiente a las horas consumidas. Las instancias **mensuales** deben abonarse por adelantado para el mes siguiente y su coste es inferior (50% con respecto al coste por horas). En caso de haber elegido inicialmente la modalidad de facturación por horas, es posible cambiarla a facturación mensual en cualquier momento.
+Al crear una instancia de Public Cloud, puede elegir entre una tarifa por horas o mensual. Las instancias con tarifa por horas se facturan según el consumo, esto es, los usuarios reciben una factura por los recursos específicos que han utilizado al final de cada mes. Las instancias con tarifas mensuales se pueden pagar por adelantado y se facturan a un precio inferior (un 50 % menos que aquellas según el consumo). Si inicialmente seleccionó la facturación por horas, puede cambiar a la facturación mensual en cualquier momento.
 
 **Esta guía explica cómo cambiar de facturación por horas a facturación mensual.**
 
 > [!warning]
 >
-> No es posible cambiar de facturación mensual a facturación por horas. Para ello será necesario eliminar la instancia con facturación mensual y crear una nueva instancia por horas.
+> No puede cambiar de facturación mensual a facturación por horas. Si desea que se le facture con la tarifa por horas, tendrá que eliminar su instancia de facturación con tarifa mensual, crear una nueva y seleccionar facturación por horas. En este caso, le sugerimos que siga el siguiente procedimiento:
 >
-
+>- Cree una instantánea de su instancia actual
+>
+>- Cree una nueva instancia basada en la instantánea anterior
+>
+>- Elimine la instancia mensual
+>
 
 ## Requisitos
 
-- Haber creado una [instancia de Public Cloud](https://www.ovh.es/public-cloud/instancias/){.external}.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Debe haber creado una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external}
+- Debe haber iniciado sesión en el [área de cliente de OVHcloud para tener acceso al panel de control](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Procedimiento
 
-En el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, elija la instancia en la que desea cambiar el modo de facturación y despliegue las opciones haciendo clic en la flecha situada en su esquina superior derecha. A continuación, seleccione `Cambiar a tarifa mensual`{.action}.
+Una vez iniciada sesión en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, seleccione la instancia cuya tarifa de facturación desea cambiar en el panel de control y abra su menú de opciones haciendo clic en los tres puntos a la derecha de dicha instancia. A continuación, podrá ver el botón `«Cambiar a suscripción mensual»`{.action}:
 
-![Cambio de la modalidad](images/1_swich_to_monthly_sub.png){.thumbnail}
+![Change billing calculation](images/switch.png){.thumbnail}
 
-Por último, confirme el cambio haciendo clic en el botón `Confirmar`{.action}.
+A continuación, debe confirmar que desea cambiar su tarifa de facturación:
 
-![Confirmación del cambio de modalidad](images/2_switch_to_monthly_confirm.png){.thumbnail}
+![Confirm billing calculation change](images/switch1.png){.thumbnail}
 
-Después de cambiar la modalidad de facturación, se  emitirá una factura por la parte proporcional al período restante del mes. A fin de mes, la factura incluirá el coste de las horas de la instancia consumidas en la modalidad de facturación por horas más el coste del mes siguiente con facturación mensual.
+Una vez confirmada su elección, su siguiente factura incluirá el coste por horas de la instancia en concepto de los días restantes del mes, incluyendo el coste del mes siguiente a la tarifa plana mensual.
 
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
