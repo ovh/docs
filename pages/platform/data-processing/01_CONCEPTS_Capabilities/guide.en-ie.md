@@ -26,6 +26,7 @@ In this document, we list all the features currently supported by the Data Proce
 - Minimum 1 and maximum 30 GB of RAM per Executor
 - Minimum 1 and maximum 8 Cores of CPU per Executor 
 - Minimum 1 and maximum 10 Executors per job 
+- Maximum 24 hours for the duration of each job 
 
 ### Supported languages for Apache Spark code
 
