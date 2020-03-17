@@ -3,7 +3,7 @@ title: How to activate the Data Processing service for your cloud project
 slug: activation
 excerpt: Find out how to activate the Data Processing service for your cloud project and what are its implications 
 section: How to
-order: 3
+order: 0
 ---
 
 **Last updated 06<sup>th</sup> March, 2020**
