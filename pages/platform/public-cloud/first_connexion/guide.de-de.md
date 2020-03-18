@@ -2,49 +2,48 @@
 title: 'Auf einer Public Cloud Instanz einloggen'
 slug: erster-login
 legacy_guide_number: 1787
-excerpt: 'Hier erfahren Sie, wie Sie sich auf Ihren Public Cloud Instanzen einloggen.'
+excerpt: 'Erfahren Sie hier, wie Sie sich unter Windows und Linux mit Ihren Public Cloud Instanzen verbinden'
 section: 'Erste Schritte'
 ---
 
-**Stand 23.08.2018**
+**Letzte Aktualisierung am 03.12.2019**
 
-## Einleitung
+## Ziel
 
-Der Login auf Ihre Public Cloud Instanz funktioniert auf dieselbe Weise wie ein „normaler“ Login auf einem dedizierten Server (VPS, Dedicated Server etc.), nur dass jede Instanz einen bestimmten Benutzer hat.
+Das Einloggen in Ihre OVHcloud Public Cloud Instanzen erfolgt ähnlich einem Login für VPS oder dedizierte Server, jedoch hat jede Instanz ein eigenes Benutzerkonto.
 
-**In dieser Anleitung erfahren Sie, wie Sie sich über Windows oder Linux auf Ihren Public Cloud Instanzen einloggen können.**
-
+**Diese Anleitung erklärt, wie Sie sich unter Windows und Linux in einer OVHcloud Public Cloud Instanz einloggen können.**
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
-- Sie haben eine [Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/){.external} erstellt.
+- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
 
-## Beschreibung
+## In der praktischen Anwendung
 
-### Auf einer Linux-Instanz über Linux/Mac-Umgebung einloggen
+### Einloggen in eine Linux-Instanz mit Linux-/Mac-Betriebssystem
 
-Geben Sie folgenden SSH-Befehl ein, um sich auf Ihrer Public Cloud Instanz einzuloggen:
+Nutzen Sie zum Einloggen in Ihre OVHcloud Public Cloud Instanz den nachfolgenden Befehl, wobei Sie „user“ individuell anpassen und anstelle „instance_IP“ die IP-Adresse Ihrer Instanz nutzen: 
 
 ```sh
-ssh *user*@IP_instance
+ssh user@instance_IP
 ```
 
-Die Public Cloud Benutzer unterscheiden sich je nach verwendeter Distribution. In dieser Tabelle sehen Sie eine nicht vollständige Auflistung der Benutzer und zugehörigen Distributionen:
+Der Public Cloud Nutzer unterscheidet sich in Abhängigkeit des von Ihnen genutzten Betriebssystems. Die nachfolgende Tabelle bietet eine (unvollständige) Auflistung von Anwenderbezeichnungen nach Betriebssystem.
 
-|Distribution|Benutzer|
+|Betriebssystem|User|
 |---|---|
-|Archlinux|arch|
-|Centos 6|centos|
-|Centos 7|centos|
+|Arch Linux|arch|
+|CentOS 6|CentOS 7|
+|CentOS 7|CentOS 7|
 |CoreOS|core|
-|Debian 7|debian|
-|Debian 8|debian|
-|Debian 9|debian|
-|Fedora 25|fedora|
-|Fedora 26|fedora|
-|FreeBSD 11.0 ZFS|FreeBSD|
+|Debian 7|Debian 7|
+|Debian 8|Debian 7|
+|Debian 9|Debian 7|
+|Fedora 25|Fedora 27|
+|Fedora 26|Fedora 27|
+|FreeBSD 11.0 ZFS|freeBSD|
 |Ubuntu 14.04|ubuntu|
 |Ubuntu 16.04|ubuntu|
 |Ubuntu 16.10|ubuntu|
@@ -52,68 +51,69 @@ Die Public Cloud Benutzer unterscheiden sich je nach verwendeter Distribution. I
 
 > [!primary]
 >
-> Wenn Sie sich direkt einloggen, verfügen Sie über die Rechte dieser Benutzer. Um *Superuser*-Rechte zu erhalten, verwenden Sie den `sudo`-Befehl.
+> Sie werden mit Standard-Nutzerberechtigungen eingeloggt. Wenn Sie zum Root-Benutzer wechseln möchten, können Sie den _sudo -i_ oder den _sudo su_ Befehl verwenden.
 >
 
-- Warnung zum SSH-Fingerabdruck des Remote-Servers:
 
-Bestätigen Sie bei Ihrem ersten Login die Authentizität des Hosts, indem Sie auf `yes` klicken.
+**Warnungsmeldung bezüglich des SSH Remote Server Fingerprint:**
+
+Beim ersten Einloggen müssen Sie die Authentizität des Nutzers mit `yes` bestätigen.
 
 ```sh
-The authenticity of host 217.xxx.xxx.98 (217.xxx.xx.98) cant be established.
+The authenticity of host 217.xxx.xxx.98 (217.xxx.xx.98) can't be established.
 ECDSA key fingerprint is f4:95:09:ce:b6:63:73:ea:54:db:76:5e:64:f1:5e:6d.
 Are you sure you want to continue connecting (yes/no)?
 ```
 
 
-### Auf einer Linux-Instanz über Windows-Umgebung einloggen
+### Einloggen in eine Linux-Instanz mit Windows-Betriebssystem
 
-Um sich über Windows auf einer Linux-Instanz einzuloggen, können Sie entweder ein Softwareprogramm wie [PuTTY](https://www.putty.org/){.external} oder bei den aktuellen Windows-10-Versionen auch [native Funktionen](https://docs.microsoft.com/en-us/windows/wsl/about){.external} verwenden. Danach können Sie den oben beschriebenen Schritten folgen.
-
-
-### Auf einer Windows-Instanz einloggen
-
-#### Installation abschließen
-
-Nach der Erstellung Ihrer Instanz muss *sysprep* ausgeführt werden. Starten Sie dazu die VNC-Konsole in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}:
-
-![VNC-Konsole](images/vnc_console.png)
-
-Im ersten Schritt können Sie Ihr Land, die gewünschte Sprache und die Tastatursprache auswählen. Klicken Sie danach auf `Next`{.action}:
-
-![Sprachauswahl in sysprep](images/sysprep_first_step.png)
-
-Legen Sie im nächsten Schritt das *Administrator*-Passwort fest:
-
-![Auswahl des Passworts in sysprep](images/sysprep_password.png)
-
-Bestätigen Sie Ihre Auswahl mit `Finish`{.action}. Die Instanz wird neu gestartet und Sie können sich auf Ihrem Windows Server einloggen.
+Um sich unter Windows mit einer Linux-Instanz zu verbinden, können Sie eine Anwendung wie z.B. [PuTTY](https://www.putty.org) verwenden oder, unter den letzten Windows 10 Versionen, auch [die systemeigenen Funktionen nutzen](https://docs.microsoft.com/en-us/windows/wsl/about). Sie können dabei den Instruktionen folgen wie oben beschrieben.
 
 
-#### In Windows einloggen
+### Einloggen in eine Windows-Instanz
 
-Sie können sich direkt über die `Remotedesktop`-Funktion auf Ihrer Windows-Instanz einloggen:
+#### Schritt 1: Abschließen der Installation
 
-![Windows Remotedesktop](images/remote_desktop.png)
+Wenn Sie Ihre Instanz erstellt haben, muss noch _sysprep_ ausgeführt werden. Hierzu loggen Sie sich ins [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und starten die `VNC-Konsole`{.action} von der Startseite der ausgewählten Instanz.
 
-Geben Sie in den folgenden Schritten zunächst die IP-Adresse Ihrer Instanz an (erster Schritt beim Einloggen über den Remotedesktop) und anschließend Ihren Benutzernamen (*administrator*) sowie das Passwort, das Sie erstellt haben:
+![VNC Instrumententafel](images/vnc_console.png)
 
-![Remotedesktop - Login](images/remote_desktop_connection_IP.png)
+Wählen Sie im ersten Schritt Ihr Land, die Sprache und die Tastaturbelegung aus und klicken Sie auf `Weiter`{.action}:
 
-![Remotedesktop - User-Login](images/remote_desktop_connection_user.png)
+![Wählen Sie die Sprache in sysprep](images/sysprep_first_step.png)
 
-Sie werden dazu aufgefordert, den Login zu bestätigen. Klicken Sie dazu auf `Ja`{.action}:
+Danach müssen Sie das Administrator-Passwort festlegen:
 
-![Bestätigung des Login](images/connection_validation.png)
+![Wählen Sie die Passwort-Option in  sysprep](images/sysprep_password.png)
 
-Sie sind nun auf Ihrer Instanz eingeloggt.
+Schließlich bestätigen Sie die Änderungen, indem Sie auf `Fertig stellen`{.action} klicken. Die Instanz startet neu und Sie können sich auf Ihrem Windows-Server einloggen. 
+
+
+#### Schritt 2: Einloggen uner Windows
+
+Sie können direkt von Ihrem Windows PC aus auf die Windows-Instanz zugreifen, indem Sie die `Remote Desktop` Funktion nutzen:
+
+![Wählen Sie die Passwort-Option in  sysprep](images/remote_desktop.png)
+
+In den nächsten Schritten geben Sie die IP-Adresse Ihrer Instanz ein, gefolgt von der Eingabe des Benutzernamens („administrator“) und des von Ihnen definierten Passworts: 
+
+![Remote desktop - Login](images/remote_desktop_connection_IP.png)
+
+![Remote desktop - User login](images/remote_desktop_connection_user.png)
+
+Danach erscheint eine Meldung, mit der Sie aufgefordert werden Ihre Login-Daten zu bestätigen. Klicken Sie auf `Ja`{.action}:
+
+![Login Bestätigung](images/connection_validation.png)
+
+Sie werden dann in Ihre Instanz eingeloggt.
 
 > [!primary]
 >
-> Überprüfen Sie bei Verbindungsschwierigkeiten, ob die Windows Firewall RDP-Verbindungen zulässt. Für weitere Informationen lesen Sie die Anleitung zur [Erstkonfiguration von Windows Server](https://docs.ovh.com/de/vps/windows-first-config/){.external}.
->
+> Wenn Probleme beim Einloggen in Ihre Windows-Instanz auftreten, überprüfen Sie, ob Ihre Windows Firewall RDP-Verbindungen erlaubt. Bitte beachten Sie unsere Anleitung zur [Windows Server-Konfiguration](https://docs.ovh.com/gb/en/vps/windows-first-config), falls Sie weitere Informationen dazu benötigen.
+> 
 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en).
