@@ -6,7 +6,7 @@ section: 'Email client configuration'
 order: 2
 ---
 
-**Last updated 31st May 2018**
+**Last updated 18th March 2020**
 
 ## Objective
 
@@ -16,7 +16,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- You must have an [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} solution.
+- You must have an [Email Pro](https://www.ovh.co.uk/emails/email-pro/) solution.
 - You must have Microsoft Outlook 2016 installed on your device.
 - You need to have the required credentials for the email address you would like to configure.
 
@@ -28,6 +28,13 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 ## Instructions
 
 ### Step 1: Add the account
+
+> [!primary]
+>
+> In this guide, we will use as the server name: pro**X**.mail.ovh.net. You will need to replace the "X" with the actual number indicating the appropriate server for your Email Pro service.
+> 
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), in the `Web`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> 
 
 Once you have launched the Outlook app on your device, you can add an account in two different ways:
 
@@ -47,7 +54,7 @@ Then fill in the information requested:
 
 |Information|Description|
 |---|---|
-|Server|Enter the server “pro1.mail.ovh.net”.|
+|Server|Enter “pro**X**.mail.ovh.net”.|
 |Port|Enter port “993”.|
 |Encryption method|Select “SSL/TLS”.|
 |Requiring authentication|Do not tick the “Require secure password authentication (SPA) on connection” box.|
@@ -56,7 +63,7 @@ Then fill in the information requested:
 
 |Information|Description|
 |---|---|
-|Server|Enter the server “pro1.mail.ovh.net”.|
+|Server|Enter “pro**X**.mail.ovh.net”.|
 |Port|Enter port “587”.|
 |Encryption method|Select “STARTTLS”.|
 |Requiring authentication|Do not tick the “Require secure password authentication (SPA) on connection” box.|
@@ -71,14 +78,14 @@ If you need to enter any settings manually in your account preferences, the tech
 
 |Server type|Server name|Encryption method|Port|
 |---|---|---|---|
-|Incoming|pro1.mail.ovh.net|SSL/TLS|993|
-|Outgoing|pro1.mail.ovh.net|STARTTLS|587|
+|Incoming|pro**X**.mail.ovh.net|SSL/TLS|993|
+|Outgoing|pro**X**.mail.ovh.net|STARTTLS|587|
 
 ### Step 2: Use the email address
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH also offers a web application that includes various [collaborative features](https://www.ovh.co.uk/emails/){.external},  accessible at <https://pro1.mail.ovh.net>. You can log in using your email credentials.
+OVH also offers a web application that includes various [collaborative features](https://www.ovh.co.uk/emails/), accessible at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials.
 
 ## Go further
 
