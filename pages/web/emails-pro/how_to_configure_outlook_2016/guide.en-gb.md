@@ -14,6 +14,12 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 **Find out how to configure your Email Pro account in Outlook 2016 for Windows.**
 
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>
+
 ## Requirements
 
 - You must have an [Email Pro](https://www.ovh.co.uk/emails/email-pro/) solution.
