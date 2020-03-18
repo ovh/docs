@@ -97,6 +97,13 @@ Lors de la mise en place, les problèmes les plus fréquemment rencontrés sont 
 
 * L'absence de croisement entre les éléments de reception et transmissions RX/Tx entre les routeurs OVHcloud et "vos" routeurs. Demandez l'inversement de la fibre optique au gestionnaire du point de présence;
 
+* Vérifiez les niveaux optiques en émission/réception. Si après croisement des paires, aucun signal en réception n'est présent, re-faites vérifier la cross-connect et les positions avec la LOA
+
+* Désactivez l'autonégotiation, forcer la vitesse ne suffit pas toujours, des commandes supplémentaires sont nécessaires
+|:--------:|:--------------------------------:|
+| IOS | speed nonegotiate |
+| NX-OS | no negotiation auto |
+
 * L'annonce de plus de 100 réseaux à travers chaque session BGP entraine une extinction automatique de la session. Pour se prémunir de cet arrêt, vous devez consolider vos réseaux;
 
 * En cas de doute sur la configuration, contactez le support pour avoir un extrait de celle mise en place par OVHcloud.
