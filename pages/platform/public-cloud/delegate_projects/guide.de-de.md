@@ -1,62 +1,61 @@
 ---
-title: 'Seine Projekte delegieren'
+title: 'Projekte delegieren'
 slug: seine-Projekte-delegieren
-excerpt: 'Lernen wie technische Rechte auf andere OVHCloud-Konten für ein Projekt Public Cloud zu delegieren sind'
+excerpt: 'Erfahren Sie hier, wie Sie technische Berechtigungen für ein Public Cloud Projekt vergeben'
 ---
 
-**Stand 25.11.2019**
+**Letzte Aktualisierung am 29.11.2019**
  
-## Einleitung
+## Ziel
 
-Sie können auf die Notwendigkeit stoßen, den Zugang zu manchen Ihrer Projekte an andere Nutzer zu geben ohne dabei gleichzeitig die Möglichkeit zu geben, auf die Gesamtheit Ihrer Dienstleistungen zu interagieren und dies aus Sicherheitsgründen . 
+Für manche Ihrer Projekte kann es notwendig werden, anderen Nutzern Zugriff zu gewähren, ohne dabei gleichzeitig die Möglichkeit zur Gesamtverwaltung Ihrer Dienste einzuräumen.
 
-In dieser Situation ist es vollkommen möglich, eines oder mehrere Projekte an andere OVHcloud-Konten zu delegieren, ob im Lese- oder im Lese-Schreibmodus.
+Sie können hierzu ein oder mehrere Projekte an andere OVHcloud Kundenkennungen delegieren, im Lese- als auch im Lese-Schreibmodus.
 
-Dieses Handbuch erklärt Ihnen das Vorgehen.
+**In dieser Anleitung wird erläutert, wie Sie Ihre Public Cloud Projekte delegieren können.**
 
 
 ### Voraussetzungen
 
-- 2 OVH-Konten
-- Ein Public Cloud Projekt
+- Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) für beide Kennungen.
 
 
-## in der Praxis angewendet 
+## In der praktischen Anwendung 
 
-### sein Projekt delegieren
+### Schritt 1: Ein Projekt auswählen
 
-Verbinden Sie sich mit dem [Kundenbereich](https://www.ovhtelecom.fr/manager/), und wählen Sie dann den `Public Cloud`{.action}. Klicken Sie auf `Kontakte und Rechte`{.action} in der Rubrik  **Projektmanagement**.
-
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Wechseln Sie nun mit Klick auf `Contacts and Rights`{.action} links unter "Project Management" zur Sektion "Kontakte und Berechtigungen".
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects1.png){.thumbnail}
 
 In diesem Menü können Sie:
 
-* Ihre Verwaltungs- und Fakturierungskontakte konfigurieren
+- Ihre Admin- und Rechnungskontakte [konfigurieren](https://docs.ovh.com/de/public-cloud/die_kontakte_eines_projekts_andern).
 
-* Ihre Projekte auf andere OVHcloud-Konten delegieren.
+- Ihre Projekte auf andere OVHcloud Kunden-Accounts delegieren.
 
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects2.png){.thumbnail}
 
-### Konfiguration der Delegierung
+### Schritt 2: Konfiguration der Delegierung
 
-Klicken Sie auf den Knopf `hinzufügen`{.action} geben Sie dann Ihren Nutzernamen des OVHCloud-Kontos (in der Form von xx000000-ovh) an, das Sie hinzufügen wollen, und das Recht, das Sie mit ihm verbinden wollen.
+Klicken Sie unten auf `Hinzufügen`{.action}. Geben Sie dann die OVHcloud Kundenkennung (in der Form xx000000-ovh) an, die Sie hinzufügen möchten, und wählen Sie die Berechtigung aus, die damit verknüpft werden soll.
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects3.png){.thumbnail}
 
-Sobald Sie die Hinzufügung bestätigt und die Seite neu geladen haben können Sie die verschiedenen hinzugefügten Konten mit ihren jeweiligen Rechten verifizieren.
+Sobald Sie den Vorgang bestätigt und die Seite neu geladen haben, können Sie die verknüpften Kundenkennungen mit ihren jeweiligen Berechtigungen überprüfen.
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects4.png){.thumbnail}
 
-Die so hinzugefügten OVHCloud-Konten können das Projekt in ihrem eigenen Kundenbereich wiederfinden, wenn Sie sich in den Bereich Public Cloud begeben.
+Die so hinzugefügten Kundenkennungen können das Projekt in ihrem eigenen OVHcloud Kundencenter wiederfinden, wenn Sie sich in den Bereich `Public Cloud`{.action} begeben.
 
 ## Weiterführende Informationen
 
-[Zugang und Sicherheit im Horizon](https://docs.ovh.com/de/public-cloud/zugriff_und_sicherheit_in_horizon/)
+[Zugang und Sicherheit in Horizon](https://docs.ovh.com/de/public-cloud/zugriff_und_sicherheit_in_horizon/)
 
-[ Einen Zugang zu Horizon erstellen](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/)
+[Auf das Horizon-Interface zugreifen](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/)
 
-[Mit einer Instanz Public Cloud beginnen](https://docs.ovh.com/de/public-cloud/die_ersten_schritte_mit_ihrer_public_cloud_instanz/)
+[Die ersten Schritte mit Ihrer Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/die_ersten_schritte_mit_ihrer_public_cloud_instanz/)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en).
