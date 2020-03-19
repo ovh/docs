@@ -6,22 +6,36 @@ section: 'Configuration sur une interface en ligne'
 order: 2
 ---
 
-## Généralités
+**Dernière mise à jour le 19/03/2020**
+
+## Objectif
+
+Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix.
+
+**Apprenez à configurer un compte E-mail Pro sur l'interface en ligne de Outlook.com**.
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
 
 ### Prérequis
 
-- Disposer d'une adresse E-mail Pro OVH fonctionnelle
+- Disposer d'une adresse E-mail Pro OVHcloud fonctionnelle
 
 - Disposer d'une adresse e-mail Outlook.com
 
 ## Configuration du webmail Outlook.com
+
+> [!primary]
+>
+> Dans notre exemple, nous utilisons la mention serveur : pro**X**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
+> 
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web`{.action} puis `E-mail Pro`{.action}
+>  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> 
 
 ### Demarrage et configuration
 
@@ -48,13 +62,13 @@ Voici comment réaliser votre configuration en  **IMAP**  avec  **SSL** activé.
 |Intitulé|Description|
 |---|---|
 |Nom complet|Le nom qui s'affichera chez le destinataire|
-|Adresse de messagerie|Votre adresse E-mail Pro OVH|
-|Nom d'utilisateur|Votre adresse E-mail Pro OVH|
-|Mot de passe|Le mot de passe de votre adresse E-mail Pro OVH|
-|Serveur entrant (IMAP)|pro1.mail.ovh.net|
+|Adresse de messagerie|Votre adresse E-mail Pro OVHcloud|
+|Nom d'utilisateur|Votre adresse E-mail Pro OVHcloud|
+|Mot de passe|Le mot de passe de votre adresse E-mail Pro OVHcloud|
+|Serveur entrant (IMAP)|pro**X**.mail.ovh.net|
 |Port de serveur entrant|993|
 |Chiffrement|SSL|
-|Serveur sortant (SMTP)|pro1.mail.ovh.net|
+|Serveur sortant (SMTP)|pro**X**.mail.ovh.net|
 |Port de serveur sortant|587|
 
 ![hosting](images/6.PNG){.thumbnail}
@@ -70,7 +84,7 @@ Voici comment réaliser votre configuration en  **IMAP**  avec  **SSL** activé.
 > A cette étape, il est recommandé de fermer la page Outlook.com, puis de la réouvrir quelques instants plus tard afin que l'importation se finalise.
 > 
 
-Il vous sera ensuite possible de visualiser votre adresse E-mail Pro OVH.
+Il vous sera ensuite possible de visualiser votre adresse E-mail Pro OVHcloud.
 
 - Cliquez sur `Nouveau`{.action}.
 
@@ -94,18 +108,18 @@ Lors de la configuration, vous pouvez choisir le protocole "**POP**" au lieu de 
 Nous vous invitons à vous renseigner sur l'utilisation de ces deux protocoles avant de faire votre choix. Dans le doute, choisissez la configuration "**IMAP**".
 
 ### Configuration POP
-Si vous désirez configurer votre compte en POP, choisissez ce protocole lors de l'ajout de votre compte E-mail Pro OVH, puis indiquez ces paramètres :
+Si vous désirez configurer votre compte en POP, choisissez ce protocole lors de l'ajout de votre compte E-mail Pro OVHcloud, puis indiquez ces paramètres :
 
 |Intitulé|Description|
 |---|---|
 |Nom complet|Le nom qui s'affichera chez le destinataire|
-|Adresse de messagerie|Votre adresse E-mail Pro OVH|
-|Nom d'utilisateur|Votre adresse E-mail Pro OVH|
-|Mot de passe|Le mot de passe de votre adresse E-mail Pro OVH|
-|Serveur entrant (IMAP)|pro1.mail.ovh.net|
+|Adresse de messagerie|Votre adresse E-mail Pro OVHcloud|
+|Nom d'utilisateur|Votre adresse E-mail Pro OVHcloud|
+|Mot de passe|Le mot de passe de votre adresse E-mail Pro OVHcloud|
+|Serveur entrant (IMAP)|pro**X**.mail.ovh.net|
 |Port de serveur entrant|995|
 |Chiffrement|SSL|
-|Serveur sortant (SMTP)|pro1.mail.ovh.net|
+|Serveur sortant (SMTP)|pro**X**.mail.ovh.net|
 |Port de serveur sortant|587|
 
 
