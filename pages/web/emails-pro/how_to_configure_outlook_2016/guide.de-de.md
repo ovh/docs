@@ -6,7 +6,7 @@ section: 'Konfiguration des E-Mail-Clients'
 order: 1
 ---
 
-**Letzte Aktualisierung 18.03.2020**
+**Letzte Aktualisierung am 18.03.2020**
 
 ## Ziel
 
@@ -33,6 +33,9 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 ## In der praktischen Anwendung
 
+
+### Schritt 1: Account hinzufügen
+
 > [!primary]
 >
 > In dieser Anleitung verwenden wir als Serverbezeichnung: pro**X**.mail.ovh.net. Das „X“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
@@ -40,8 +43,6 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 > Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), wenn Sie im Bereich `Web`{.action} im Menü links unter `E-Mail Pro`{.action}
 > den Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
 >
-
-### Schritt 1: Account hinzufügen
 
 Nachdem Sie die Outlook-Anwendung auf Ihrem Gerät gestartet haben, können Sie einen Account auf zwei Arten hinzufügen:
 
