@@ -1,12 +1,12 @@
 ---
-title: Configurer son compte E-mail Pro sur Outlook 2016 pour Windows
+title: 'Configurer son compte E-mail Pro sur Outlook 2016 pour Windows'
 slug: configuration-outlook-2016
-excerpt: Apprenez à configurer un compte E-mail Pro sur Outlook 2016 pour Windows
-section: Configuration sur ordinateur
+excerpt: 'Apprenez à configurer un compte E-mail Pro sur Outlook 2016 pour Windows'
+section: 'Configuration sur ordinateur'
 order: 1
 ---
 
-**Dernière mise à jour le 19/03/2018**
+**Dernière mise à jour le 19/03/2020**
 
 ## Objectif
 
@@ -37,6 +37,14 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 ### Étape 1 : ajouter le compte
 
+> [!primary]
+>
+> Dans notre exemple, nous utilisons la mention serveur : pro**X**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
+> 
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web`{.action} puis `E-mail Pro`{.action}
+>  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> 
+
 Une fois l'application Outlook lancée sur votre appareil, l'ajout d'un compte peut être effectué de deux manières différentes.
 
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche et vous invite à renseigner votre adresse e-mail.
@@ -55,7 +63,7 @@ Complétez ensuite les informations demandées :
 
 |Information|Description|
 |---|---|
-|Serveur|Renseignez le serveur « pro1.mail.ovh.net ».|
+|Serveur|Renseignez le serveur « pro**X**.mail.ovh.net ».|
 |Port|Indiquez le port « 993 ».|
 |Méthode de chiffrement|Sélectionnez « SSL/TLS ».|
 |Exiger l'authentification|Ne cochez pas la case « Exiger l'authentification par mot de passe sécurisé (SPA) lors de la connexion ».|
@@ -64,7 +72,7 @@ Complétez ensuite les informations demandées :
 
 |Information|Description|
 |---|---|
-|Serveur|Renseignez le serveur « pro1.mail.ovh.net ».|
+|Serveur|Renseignez le serveur « pro**X**.mail.ovh.net ».|
 |Port|Indiquez le port « 587 ».|
 |Méthode de chiffrement|Sélectionnez « STARTTLS ».|
 |Exiger l'authentification|Ne cochez pas la case « Exiger l'authentification par mot de passe sécurisé (SPA) lors de la connexion ».|
@@ -79,8 +87,8 @@ Si vous êtes amené à renseigner manuellement des champs techniques dans les p
 
 |Type de serveur|Nom du serveur|Méthode de chiffrement|Port|
 |---|---|---|---|
-|Entrant|pro1.mail.ovh.net|SSL/TLS|993|
-|Sortant|pro1.mail.ovh.net|STARTTLS|587|
+|Entrant|pro**X**.mail.ovh.net|SSL/TLS|993|
+|Sortant|pro**X**.mail.ovh.net|STARTTLS|587|
 
 ### Étape 2 : utiliser l'adresse e-mail
 
