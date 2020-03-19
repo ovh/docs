@@ -100,7 +100,9 @@ Lors de la mise en place, les problèmes les plus fréquemment rencontrés sont 
 * Vérifiez les niveaux optiques en émission/réception. Si après croisement des paires, aucun signal en réception n'est présent, faites vérifier à nouveau la cross-connect et les positions avec la LOA.
 
 * Désactivez l'auto-négociation. Forcer la vitesse ne suffit pas toujours, des commandes supplémentaires sont nécessaires.
-|:--------:|:--------------------------------:|
+
+| Modèle OS | Commande |
+|:---------:|:--------------------------------:|
 | IOS | speed nonegotiate |
 | NX-OS | no negotiation auto |
 
