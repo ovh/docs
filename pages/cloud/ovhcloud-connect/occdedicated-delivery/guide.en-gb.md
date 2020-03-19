@@ -96,9 +96,9 @@ The most common issues encountered during setup are:
 
 * A lack of cross-connection between the receiving elements, and RX/TX transmissions between OVHcloud routers and “your” routers. Request for the manager at the point of presence to reverse the fibre optic connection.
 
-* Check optical levels in emission and reception. If after switching TX/RX you still have no power on reception, ask a double-check on the cross-connect with the position from the LOA
+* Check optical levels in emission and reception. If after switching TX/RX you still have no power on reception, ask a double-check on the cross-connect with the position from the LOA.
 
-* Disable autonegotiation. Setting speed is not always sufficient, some additionals commands could be needed:
+* Disable autonegotiation. Setting speed is not always sufficient, some additional commands could be needed:
 
 | OS Model | Command |
 |:--------:|:-----------------|
