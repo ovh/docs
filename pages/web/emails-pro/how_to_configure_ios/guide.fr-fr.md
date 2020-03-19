@@ -1,12 +1,12 @@
 ---
-title: Configurer son compte E-mail Pro sur un iPhone ou un iPad
+title: 'Configurer son compte E-mail Pro sur un iPhone ou un iPad'
 slug: configuration-iphone
-excerpt: Apprenez à configurer un compte E-mail Pro sur un iPhone ou un iPad, via l'application Mail
-section: Configuration sur smartphone
+excerpt: 'Apprenez à configurer un compte E-mail Pro sur un iPhone ou un iPad, via l''application Mail'
+section: 'Configuration sur smartphone'
 order: 1
 ---
 
-**Dernière mise à jour le 14/02/2018**
+**Dernière mise à jour le 19/03/2020**
 
 ## Objectif
 
@@ -17,7 +17,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -46,6 +46,14 @@ Cet ajout peut s'effectuer de deux manières différentes :
 
 ### Étape 1 : ajouter le compte
 
+> [!primary]
+>
+> Dans notre exemple, nous utilisons la mention serveur : pro**X**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
+> 
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web`{.action} puis `E-mail Pro`{.action}
+>  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> 
+
 Sur l'écran d'accueil de votre appareil, rendez-vous sur `Réglages`{.action}. L'ajout d'un compte s'effectue de deux manières selon votre version d'iOS :
 
 - **pour iOS 7, 8, 9 et 10** : appuyez sur `Mail, Contacts, Calendrier`{.action}, puis sur `Ajouter un compte`{.action}. Choisissez finalement `Autre`{.action}, puis `Ajouter un compte Mail`{.action} ;
@@ -68,10 +76,10 @@ Appuyez maintenant sur `Suivant`{.action}, puis renseignez les informations dema
 |Information|Description|
 |---|---|
 |IMAP ou POP|Laissez **IMAP** déjà sélectionné par défaut.|
-|Nom d'hôte (réception)|Renseignez le serveur « pro1.mail.ovh.net ».|
+|Nom d'hôte (réception)|Renseignez le serveur « pro**X**.mail.ovh.net ».|
 |Nom d'utilisateur (réception)|Renseignez l'adresse e-mail complète.|
 |Mot de passe (réception)|Renseignez le mot de passe de l'adresse e-mail.|  
-|Nom d'hôte (envoi)|Renseignez le serveur « pro1.mail.ovh.net ».|
+|Nom d'hôte (envoi)|Renseignez le serveur « pro**X**.mail.ovh.net ».|
 |Nom d'utilisateur (envoi)|Renseignez l'adresse e-mail complète.|
 |Mot de passe (envoi)|Renseignez le mot de passe de l'adresse e-mail.|
 
@@ -87,8 +95,8 @@ Si vous êtes amené à renseigner manuellement des champs techniques dans les p
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|
-|Entrant|pro1.mail.ovh.net|Oui|993|
-|Sortant|pro1.mail.ovh.net|Oui|587|
+|Entrant|pro**X**.mail.ovh.net|Oui|993|
+|Sortant|pro**X**.mail.ovh.net|Oui|587|
 
 ### Étape 2 : utiliser l'adresse e-mail
 
