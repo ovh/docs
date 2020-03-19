@@ -96,6 +96,15 @@ The most common issues encountered during setup are:
 
 * A lack of cross-connection between the receiving elements, and RX/TX transmissions between OVHcloud routers and “your” routers. Request for the manager at the point of presence to reverse the fibre optic connection.
 
+* Check optical levels in emission and reception. If after switching TX/RX you still have no power on reception, ask a double-check on the cross-connect with the position from the LOA
+
+* Disable autonegotiation. Setting speed is not always sufficient, some additionals commands could be needed:
+
+| OS Model | Command |
+|:--------:|:-----------------|
+| IOS | speed nonegotiate |
+| NX-OS | no negotiation auto |
+
 * If more than 100 networks are announced through each BGP session, the session will automatically expire. To prevent this from happening, you will need to consolidate your networks.
 
 * If you have any doubts regarding the configuration, please contact our support team to receive an extract of the configuration set up by OVHcloud.
