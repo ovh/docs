@@ -45,7 +45,7 @@ Esta guía solo hace referencia a la configuración del correo desde su disposit
 
 ### 1. Añadir la cuenta
 
-> [!warning]
+> [!primary]
 >
 > En nuestro ejemplo, hemos utilizado la mención servidor: pro**X**.mail.ovh.net. Sustituya la «X» por la cifra que designa al servidor de su servicio Email Pro.
 >
