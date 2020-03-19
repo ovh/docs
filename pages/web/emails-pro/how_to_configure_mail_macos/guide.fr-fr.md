@@ -1,12 +1,12 @@
 ---
-title: Configurer son compte E-mail Pro sur Mail de macOS
+title: 'Configurer son compte E-mail Pro sur Mail de macOS'
 slug: configurer-email-pro-mail-macos
-excerpt: Apprenez à configurer votre compte E-mail Pro sur Mail de macOS El Capitan, Sierra et High Sierra
-section: Configuration sur ordinateur
+excerpt: 'Apprenez à configurer votre compte E-mail Pro sur Mail de macOS El Capitan, Sierra et High Sierra'
+section: 'Configuration sur ordinateur'
 order: 3
 ---
 
-**Dernière mise à jour le 17/05/2018**
+**Dernière mise à jour le 19/03/2020**
 
 ## Objectif
 
@@ -16,7 +16,7 @@ Les comptes E-mail Pro peuvent être configurés sur un logiciel de messagerie c
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -44,6 +44,14 @@ Cet ajout peut s'effectuer de deux manières différentes :
 
 ### Étape 1 : ajouter le compte
 
+> [!primary]
+>
+> Dans notre exemple, nous utilisons la mention serveur : pro**X**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
+> 
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web`{.action} puis `E-mail Pro`{.action}
+>  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> 
+
 Une fois l'application Mail lancée sur votre appareil, l'ajout d'un compte peut s'initier de deux manières différentes.
 
 - **Lors du premier démarrage de l'application** : une fenêtre vous invite à choisir un fournisseur de compte Mail. Sélectionnez `Autre compte Mail`{.action}, puis continuez.
@@ -65,8 +73,8 @@ Cliquez à présent sur le bouton `Se connecter`{.action}. Un message vous invit
 |Information|Description|  
 |---|---|  
 |Type de compte|Laissez IMAP déjà sélectionné dans le menu déroulant.| 
-|Serveur de réception|Renseignez le serveur « pro1.mail.ovh.net ».| 
-|Serveur d'envoi|Renseignez le serveur « pro1.mail.ovh.net ».|  
+|Serveur de réception|Renseignez le serveur « pro**X**.mail.ovh.net ».| 
+|Serveur d'envoi|Renseignez le serveur « pro**X**.mail.ovh.net ».|  
 
 Cliquez de nouveau sur le bouton `Se connecter`{.action}. Si les informations renseignées sont correctes, la connexion au compte réussira.
 
@@ -80,14 +88,14 @@ Si vous êtes amené à renseigner manuellement des paramètres dans les préfé
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|
-|Entrant|pro1.mail.ovh.net|Oui|993|
-|Sortant|pro1.mail.ovh.net|Oui|587|
+|Entrant|pro**X**.mail.ovh.net|Oui|993|
+|Sortant|pro**X**.mail.ovh.net|Oui|587|
 
 ### Étape 2 : utiliser l'adresse e-mail
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVH propose une application web disposant de [fonctions collaboratives](https://www.ovh.com/fr/emails/){.external} accessible sur l’adresse [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external}. Vous pouvez y accéder grâce aux identifiants relatifs à votre adresse e-mail. 
+OVH propose une application web disposant de [fonctions collaboratives](https://www.ovh.com/fr/emails/){.external} accessible sur l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez y accéder grâce aux identifiants relatifs à votre adresse e-mail. 
 
 ## Aller plus loin
 
