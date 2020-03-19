@@ -102,7 +102,7 @@ Si vous êtes amené à renseigner manuellement des champs techniques dans les p
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVH propose également une application web disposant de [fonctions collaboratives](https://www.ovh.com/fr/emails/){.external} accessible à l’adresse [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external}. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
+OVH propose également une application web disposant de [fonctions collaboratives](https://www.ovh.com/fr/emails/){.external} accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
 
 ## Aller plus loin
 
