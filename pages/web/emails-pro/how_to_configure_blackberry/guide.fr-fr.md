@@ -1,16 +1,22 @@
 ---
-title: Configurer son compte E-mail Pro sur un BlackBerry
+title: 'Configurer son compte E-mail Pro sur un BlackBerry'
 slug: configuration-blackberry
-excerpt: Retrouvez ici comment configurer votre adresse E-mail Pro sur BlackBerry
-section: Configuration sur smartphone
+excerpt: 'Retrouvez ici comment configurer votre adresse E-mail Pro sur BlackBerry'
+section: 'Configuration sur smartphone'
 order: 3
 ---
 
-## Généralités
+**Dernière mise à jour le 19/03/2020**
+
+## Objectif
+
+Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix.
+
+**Apprenez à configurer un compte E-mail Pro sur un BlackBerry.**
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -20,6 +26,14 @@ order: 3
 - Disposer d'un BlackBerry (version 10 dans ce guide)
 
 ## Configuration du BlackBerry
+
+> [!primary]
+>
+> Dans notre exemple, nous utilisons la mention serveur : pro**X**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
+> 
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web`{.action} puis `E-mail Pro`{.action}
+>  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> 
 
 ### Demarrage et configuration
 Voici comment réaliser votre configuration en  **IMAP**  avec  **SSL** activé. Suivez les étapes en cliquant sur les différentes images.
@@ -34,9 +48,9 @@ Voici comment réaliser votre configuration en  **IMAP**  avec  **SSL** activé.
 
 5. Complétez les informations (description, nom, et compte).
 
-6. Renseignez en adresse de serveur "pro1.mail.ovh.net", en port "993" et en cryptage "SSL".
+6. Renseignez en adresse de serveur "pro**X**.mail.ovh.net", en port "993" et en cryptage "SSL".
 
-7. Concernant le SMTP, renseignez en serveur SMTP "pro1.mail.ovh.net", en port "587" et en cryptage "StartTLS".
+7. Concernant le SMTP, renseignez en serveur SMTP "pro**X**.mail.ovh.nett", en port "587" et en cryptage "StartTLS".
 
 8. Choisissez vos options puis terminez.
 
