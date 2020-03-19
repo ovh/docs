@@ -1,12 +1,12 @@
 ---
-title: Configuring an Email Pro account on iPhone and iPad
+title: 'Configuring an Email Pro account on iPhone and iPad'
 slug: iphone-configuration
-excerpt: Find out how to configure an Email Pro account on iPhone and iPad, via the Mail app
-section: Email client configuration
+excerpt: 'Find out how to configure an Email Pro account on iPhone and iPad, via the Mail app'
+section: 'Email client configuration'
 order: 3
 ---
 
-**Last updated 22nd February 2018**
+**Last updated 18th March 2020**
 
 ## Objective
 
@@ -14,9 +14,15 @@ You can configure Email Pro accounts on a range of email clients, provided they 
 
 **Find out how to configure an Email Pro account on iPhone and iPad, via the Mail app.**
 
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>
+
 ## Requirements
 
-- You must have an [Email Pro](https://www.ovh.ie/emails/email-pro/){.external} solution.
+- You must have an [Email Pro](https://www.ovh.co.uk/emails/email-pro) solution.
 - You need to have the Mail app installed on your device.
 - You need to have the appropriate credentials for the email address you would like to configure.
 
@@ -29,13 +35,20 @@ You can configure Email Pro accounts on a range of email clients, provided they 
 
 There are two ways of adding your email address to the Mail app:
 
-- **Via our Apple Devices tool:** Tap on the following link and follow the configuration steps:  <https://autodiscover.mail.ovh.net/AppleDevices/>
+- **Via our Apple Devices tool:** Tap on the following link and follow the configuration steps: <https://autodiscover.mail.ovh.net/AppleDevices/>
 
 - **You can also follow your device’s configuration assistant**.
 
 From this point onwards, this guide will only cover email configuration using your device.
 
 ### Step 1: Add the account
+
+> [!primary]
+>
+> In this guide, we will use as the server name: pro**X**.mail.ovh.net. You will need to replace the "X" with the actual number indicating the appropriate server for your Email Pro service.
+> 
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), in the `Web`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> 
 
 On your device’s homepage, go to `Settings`{.action}. There are two ways of adding an account, depending on the iOS version you are using:
 
@@ -59,10 +72,10 @@ Tap `Next`{.action}, and enter the information requested:
 |Information|Description|
 |---|---|
 |IMAP or POP|Leave **IMAP** selected by default.|
-|Host name (incoming)|Enter the following server: pro1.mail.ovh.net.|
+|Host name (incoming)|Enter the server: pro**X**.mail.ovh.net.|
 |Username (incoming)|Enter your full email address.|
 |Password (incoming)|Enter your email address' password.|  
-|Host name (outgoing)|Enter the following server: pro1.mail.ovh.net|
+|Host name (outgoing)|Enter the server: pro**X**.mail.ovh.net|
 |Username (outgoing)|Enter your full email address.|
 |Password (outgoing)|Enter your email address' password.|
 
@@ -78,19 +91,19 @@ If you need to enter any settings manually in your account preferences, the tech
 
 |Server type|Server name|SSL|Port|
 |---|---|---|---|
-|Incoming|pro1.mail.ovh.net|Yes|993|
-|Outgoing|pro1.mail.ovh.net|Yes|587|
+|Incoming|pro**X**.mail.ovh.net|Yes|993|
+|Outgoing|pro**X**.mail.ovh.net|Yes|587|
 
 ### Step 2: Use the email address
 
 Once you have configured your email address, you can start using it to send and receive emails straight away!
 
-OVH also offers a web application that includes various [collaborative features](https://www.ovh.ie/emails/){.external}. You can access it here, using your email credentials: <https://pro1.mail.ovh.net>.
+OVHcloud also offers a web application that includes various [collaborative features](https://www.ovh.co.uk/emails). You can access it here, using your email credentials: <https://www.ovh.co.uk/mail>.
 
 ## Go further
 
-[Configuring an email address on iPhone and iPad](https://docs.ovh.com/ie/en/emails/email_hosting_iphone_ios_91_configuration/){.external}.
+[Configuring an email address on iPhone and iPad](https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/)
 
-[Configuring an Exchange account on iPhone and iPad](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_2013_automatic_configuration_on_ios_iphone_-_ipad/){.external}.
+[Configuring an Exchange account on iPhone and iPad](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2013_how_to_configure_on_ios_iphoneipad/)
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

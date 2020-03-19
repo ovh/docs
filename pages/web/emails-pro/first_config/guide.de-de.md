@@ -1,36 +1,36 @@
 ---
 title: 'Konfiguration von E-Mail Pro'
 slug: erstkonfiguration
-excerpt: 'Hier erfahren Sie, wie Sie Ihre E-Mail Pro Lösung einrichten'
+excerpt: 'Erfahren Sie hier, wie Sie Ihre E-Mail Pro Lösung einrichten'
 section: Allgemein
 ---
 
-**Stand 28.11.2018**
+**Letzte Aktualisierung am 18.03.2020**
 
-## Einleitung
+## Ziel
 
 Sie haben gerade eine E-Mail Pro Lösung erworben. Nun können Sie zu einem günstigen Preis professionelle E-Mail-Adressen nutzen, um Ihr Business zu fördern oder neu zu starten.
 
-**In dieser Anleitung erfahren Sie, wie Sie Ihre E-Mail Pro Lösung konfigurieren.**
+**Diese Anleitung erläutert, wie Sie Ihre E-Mail Pro Lösung konfigurieren.**
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [E-Mail Pro](https://www.ovh.de/emails/email-pro/){.external} Lösung.
+- Sie verfügen über eine [E-Mail Pro](https://www.ovh.de/emails/email-pro) Lösung.
 - Sie haben die Bestätigungs-E-Mail zur Installation von E-Mail Pro erhalten.
 - Sie besitzen eine Domain.
-- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eingeloggt.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Schritt 1: Zugang zur Verwaltung Ihres Dienstes
 
-Wenn der E-Mail Pro Dienst eingerichtet und verfügbar ist, können Sie ihn über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} verwalten.
+Wenn der E-Mail Pro Dienst eingerichtet und verfügbar ist, können Sie ihn über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) verwalten.
 
 Loggen Sie sich hierzu in Ihrem Kundencenter ein, klicken im linken Menü auf `E-Mail Pro`{.action} und anschließend auf den Namen des entsprechenden Dienstes.
 
 > [!primary]
 >
-> Der Name eines E-Mail Pro Dienstes in Ihrem OVH Kundencenter beginnt mit *emailpro-*, enthält dann einen Teil Ihrer Kundenkennung und endet mit einer Zahl (1 für den ersten eingerichteten E-Mail Pro Dienst, 2 für den zweiten usw.).
+> Der Name eines E-Mail Pro Dienstes in Ihrem OVHcloud Kundencenter beginnt mit *emailpro-*, enthält dann einen Teil Ihrer Kundenkennung und endet mit einer Zahl (1 für den ersten eingerichteten E-Mail Pro Dienst, 2 für den zweiten usw.).
 >
 
 ### Schritt 2: Ihre Domain hinzufügen
@@ -39,8 +39,8 @@ Wenn Sie Ihren E-Mail Pro Dienst gerade bestellt haben, erscheint automatisch ei
 
 Sie haben folgende Auswahlmöglichkeiten:
 
-- **Eine Domain in der Liste auswählen**: Es werden nur Domains mit OVH Konfiguration angezeigt, die mit Ihrer Kundenkennung verknüpft sind.
-- **Eine Domain hinzufügen, die nicht in Ihrem OVH Account verwaltetet wird**: Sie sollten in der Lage sein, die Konfiguration der Domain zu ändern (die zugehörige DNS-Zone), damit der E-Mail Pro Dienst korrekt funktioniert.
+- **Eine Domain in der Liste auswählen**: Es werden nur Domains mit OVHcloud Konfiguration angezeigt, die mit Ihrer Kundenkennung verknüpft sind.
+- **Eine Domain hinzufügen, die nicht in Ihrem OVHcloud Account verwaltetet wird**: Sie sollten in der Lage sein, die Konfiguration der Domain zu ändern (die zugehörige DNS-Zone), damit der E-Mail Pro Dienst korrekt funktioniert.
 
 Wenn Sie Ihre Auswahl vorgenommen haben, klicken Sie auf `Weiter`{.action}.
 
@@ -48,8 +48,8 @@ Wenn Sie Ihre Auswahl vorgenommen haben, klicken Sie auf `Weiter`{.action}.
 
 Das Fenster zeigt dann die Informationen zur Konfiguration eines Modus an.
 
-- **Wenn Sie eine nicht von OVH verwaltete Domain angegeben haben**: Es wird standardmäßig der nicht-autoritative Modus eingestellt.
-- **Wenn Sie in der Liste eine von OVH verwaltete Domain ausgewählt haben**: Sie haben die Wahl zwischen zwei Modi.
+- **Wenn Sie eine nicht von OVHcloud verwaltete Domain angegeben haben**: Es wird standardmäßig der nicht-autoritative Modus eingestellt.
+- **Wenn Sie in der Liste eine von OVHcloud verwaltete Domain ausgewählt haben**: Sie haben die Wahl zwischen zwei Modi.
 
 |Modus|Beschreibung|
 |---|---|
@@ -58,16 +58,16 @@ Das Fenster zeigt dann die Informationen zur Konfiguration eines Modus an.
 
 > [!primary]
 >
-> Die Wahl des Modus ist nicht dauerhaft festgelegt und kann im Nachhinein über das OVH Kundencenter geändert werden.
+> Die Wahl des Modus ist nicht dauerhaft festgelegt und kann im Nachhinein über das OVHcloud Kundencenter geändert werden.
 >
 
 Klicken Sie auf `Weiter`{.action}, um die Domain hinzuzufügen.
 
 ![emailpro](images/first_config_email_pro_add_domain_step2.png){.thumbnail}
 
-**Wenn Sie in der Liste eine von OVH verwaltete Domain ausgewählt haben**, kann deren Konfiguration automatisch vorgenommen werden. Setzen Sie hierzu einen Haken im entsprechenden Kästchen und klicken Sie dann auf `Weiter`{.action}, um mit dem Hinzufügen der Domain fortzufahren.
+**Wenn Sie in der Liste eine von OVHcloud verwaltete Domain ausgewählt haben**, kann deren Konfiguration automatisch vorgenommen werden. Setzen Sie hierzu einen Haken im entsprechenden Kästchen und klicken Sie dann auf `Weiter`{.action}, um mit dem Hinzufügen der Domain fortzufahren.
 
-**Wenn Sie eine Domain angegeben haben, die nicht von OVH verwaltet wird**, wird die Konfiguration im folgenden Schritt vorgenommen.
+**Wenn Sie eine Domain angegeben haben, die nicht von OVHcloud verwaltet wird**, wird die Konfiguration im folgenden Schritt vorgenommen.
 
 ![emailpro](images/first_config_email_pro_add_domain_step3.png){.thumbnail}
 
@@ -79,8 +79,8 @@ Sobald die Domain als assoziierte Domain hinzugefügt ist, überprüfen Sie bitt
 
 In der Spalte `Diagnose`{.action} können Sie sehen, ob die Konfiguration der MX-Felder der Domain korrekt ist. Ein rotes Kästchen zeigt an, dass die Konfiguration geändert werden muss.
 
-- **Wenn Sie beim Hinzufügen der Domain die automatische Konfiguration gewählt haben**: Es kann einige Stunden dauern, bis diese im OVH Kundencenter angezeigt wird.
-- **Wenn Sie eine nicht von OVH verwaltete Domain angegeben haben**: Klicken Sie auf das rote Kästchen, um zu sehen, welche Änderungen notwendig sind. Wenn Sie diese erst durchgeführt haben, kann es einige Stunden dauern, bis sie im OVH Kundencenter angezeigt werden.
+- **Wenn Sie beim Hinzufügen der Domain die automatische Konfiguration gewählt haben**: Es kann einige Stunden dauern, bis diese im OVHcloud Kundencenter angezeigt wird.
+- **Wenn Sie eine nicht von OVHcloud verwaltete Domain angegeben haben**: Klicken Sie auf das rote Kästchen, um zu sehen, welche Änderungen notwendig sind. Wenn Sie diese erst durchgeführt haben, kann es einige Stunden dauern, bis sie im OVHcloud Kundencenter angezeigt werden.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
 
@@ -113,14 +113,22 @@ Wenn alle Angaben vollständig sind, klicken Sie auf `Weiter`{.action}. Überpr�
 
 ### Schritt 5: Ihre E-Mail-Adressen verwenden
 
-Nach Abschluss der Konfiguration können Sie Ihre E-Mail-Adressen verwenden. Dazu stellt Ihnen OVH eine Online-Anwendung (eine *Webapp*) zur Verfügung. Diese App ist über die Adresse <https://pro1.mail.ovh.net> erreichbar, auf der Sie die Login-Daten für Ihre E-Mail-Adresse eingeben.
+Nach Abschluss der Konfiguration können Sie Ihre E-Mail-Adressen verwenden. Dazu stellt Ihnen OVHcloud eine Online-Anwendung (eine *Webapp*) zur Verfügung. Diese App ist über die Adresse <https://www.ovh.de/mail> erreichbar, auf der Sie die Login-Daten für Ihre E-Mail-Adresse eingeben.
 
-Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem _Smartphone_ oder einem Tablet) einrichten möchten, werfen Sie bitte einen Blick in die jeweilige Anleitung unter <https://docs.ovh.com/de/emails-pro/>. Wenn Sie nur die erforderlichen Informationen zur Konfiguration Ihres E-Mail Pro Accounts benötigen, verwenden Sie die folgenden Einstellungen:
+Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, werfen Sie bitte einen Blick in die passende [E-Mail Pro Anleitung](https://docs.ovh.com/de/emails-pro). Wenn Sie nur die erforderlichen Informationen zur Konfiguration Ihres E-Mail Pro Accounts benötigen, verwenden Sie die folgenden Einstellungen:
 
 |Servertyp|Servername|Sicherheitstyp|Port|
 |---|---|---|---|
-|Eingangsserver|pro1.mail.ovh.net|SSL/TLS|993|
-|Ausgangsserver|pro1.mail.ovh.net|STARTTLS|587|
+|Eingangsserver|pro**X**.mail.ovh.net|SSL/TLS|993|
+|Ausgangsserver|pro**X**.mail.ovh.net|STARTTLS|587|
+
+> [!primary]
+>
+> In den Anleitungen verwenden wir als Serverbezeichnung: pro**X**.mail.ovh.net. Das „X“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> 
+> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), wenn Sie im Bereich `Web`{.action} im Menü links unter `E-Mail Pro`{.action}
+> den Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+>
 
 ## Weiterführende Informationen
 
