@@ -50,7 +50,7 @@ Voici comment réaliser votre configuration en  **IMAP**  avec  **SSL** activé.
 
 6. Renseignez en adresse de serveur "pro**X**.mail.ovh.net", en port "993" et en cryptage "SSL".
 
-7. Concernant le SMTP, renseignez en serveur SMTP "pro**X**.mail.ovh.nett", en port "587" et en cryptage "StartTLS".
+7. Concernant le SMTP, renseignez en serveur SMTP "pro**X**.mail.ovh.net", en port "587" et en cryptage "StartTLS".
 
 8. Choisissez vos options puis terminez.
 
