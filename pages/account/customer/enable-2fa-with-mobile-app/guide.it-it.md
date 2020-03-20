@@ -16,7 +16,7 @@ La doppia autenticazione con il sistema *one-time password*(OTP), disponibile tr
 
 ## Prerequisiti
 
-- Conoscere i[diversi metodi di doppia autenticazione proposti da OVHcloud](https://docs.ovh.com/fr/customer/proteggi_il_tuo_account_con_2FA/).
+- Conoscere i[diversi metodi di doppia autenticazione proposti da OVHcloud](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/).
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 - Aver installato un’applicazione OTP su smartphone o tablet Android o iOS. 
 
