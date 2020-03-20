@@ -72,10 +72,10 @@ Tap `Next`{.action}, and enter the information requested:
 |Information|Description|
 |---|---|
 |IMAP or POP|Leave **IMAP** selected by default.|
-|Host name (incoming)|Enter the server: pro**X**.mail.ovh.net.|
+|Host name (incoming)|Enter "pro**X**.mail.ovh.net".|
 |Username (incoming)|Enter your full email address.|
 |Password (incoming)|Enter your email address' password.|  
-|Host name (outgoing)|Enter the server: pro**X**.mail.ovh.net|
+|Host name (outgoing)|Enter "pro**X**.mail.ovh.net".|
 |Username (outgoing)|Enter your full email address.|
 |Password (outgoing)|Enter your email address' password.|
 

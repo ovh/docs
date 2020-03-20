@@ -58,7 +58,7 @@ Enter the information requested:
 |Send your messages using this name|Enter the sender name that you wish to be displayed when sending emails from this address.|
 |Incoming email server|Enter “pro**X**.mail.ovh.net:993”.|
 |Account type|We recommend using **IMAP4**. You can however also select **POP** (in which emails are stored locally on your Mail app) in the drop-down menu.|
-|Outgoing email server|Enter the server “pro**X**.mail.ovh.net:587”.|
+|Outgoing email server|Enter “pro**X**.mail.ovh.net:587”.|
 
 Make sure that the checkboxes are ticked for the following options:
 
@@ -88,8 +88,8 @@ OVHcloud also offers a web application that includes various [collaborative feat
 
 ## Go further
 
-[Configuring an email address included in an MX Plan package or web hosting plan in the Mail application for Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/)
+[Configuring an email address included in an MX Plan package or web hosting plan in the Mail application for Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10)
 
-[Configuring your Exchange account in the Mail app for Windows 10](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/mail-configuration-windows-10/)
+[Configuring your Exchange account in the Mail app for Windows 10](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/mail-configuration-windows-10)
 
 Join our community of users on <https://community.ovh.com/en/>.

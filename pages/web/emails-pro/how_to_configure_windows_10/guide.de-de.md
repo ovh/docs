@@ -57,9 +57,9 @@ Geben Sie nun folgende Informationen ein:
 |Kennwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
 |Kontoname|Geben Sie einen Namen für diesen Account ein, damit Sie ihn später von anderen Accounts in Ihrer Mail App unterscheiden können.|
 |Sendet Ihre Nachrichten unter diesem Namen|Geben Sie den Namen an, der als Absender angezeigt werden soll, wenn E-Mails mit dieser Adresse verschickt werden.|
-|Posteingangsserver|Tragen Sie den Server „pro**X**.mail.ovh.net:993“ ein.|
+|Posteingangsserver|Tragen Sie „pro**X**.mail.ovh.net:993“ ein.|
 |Kontotyp|Wir empfehlen die Verwendung von **IMAP4**. Sie können auch **POP** im Drop-down-Menü auswählen (dann werden Ihre E-Mails lokal in Ihrer Mail App gespeichert).|
-|Postausgangsserver|Tragen Sie den Server „pro**X**.mail.ovh.net:587“ ein.|
+|Postausgangsserver|Tragen Sie „pro**X**.mail.ovh.net:587“ ein.|
 
 Überprüfen Sie, dass die folgenden Haken gesetzt sind:
 - „Ausgangsserver erfordert Authentifizierung“
