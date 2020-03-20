@@ -58,7 +58,7 @@ Enter the information requested:
 |Send your messages using this name|Enter the sender name that you wish to be displayed when sending emails from this address.|
 |Incoming email server|Enter “pro**X**.mail.ovh.net:993”.|
 |Account type|We recommend using **IMAP4**. You can however also select **POP** (in which emails are stored locally on your Mail app) in the drop-down menu.|
-|Outgoing email server|Enter the server “pro**X**.mail.ovh.net:587”.|
+|Outgoing email server|Enter “pro**X**.mail.ovh.net:587”.|
 
 Make sure that the checkboxes are ticked for the following options:
 
