@@ -6,7 +6,7 @@ section: 'Configuración del cliente de correo'
 order: 2
 ---
 
-**Última actualización: 15/06/2018**
+**Última actualización: 20/03/2020**
 
 ## Objetivo
 
@@ -16,7 +16,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 > [!warning]
 >
-> La responsabilidad sobre la configuración y la gestión de los servicios que OVH pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+> La responsabilidad sobre la configuración y la gestión de los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
 > 
@@ -36,6 +36,13 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 ### 1. Añadir la cuenta
 
+> [!primary]
+>
+> En nuestro ejemplo, hemos utilizado la mención servidor: pro**X**.mail.ovh.net. Sustituya la «X» por la cifra que designa al servidor de su servicio Email Pro.
+>
+> Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action} y `Email Pro`{.action} en la columna de la izquierda. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+>
+
 Abra la aplicación Outlook en su dispositivo. Puede añadir una cuenta de dos formas distintas:
 
 - **Si es la primera vez que usa la aplicación**, aparecerá un asistente de configuración solicitándole su dirección de correo electrónico.
@@ -52,9 +59,9 @@ Introduzca su dirección de correo electrónico y haga clic en `Continuar`{.acti
 |Dirección de correo electrónico|Introduzca un nombre que le permita diferenciar su cuenta del resto de cuentas de su aplicación Outlook.|
 |Nombre de usuario|Introduzca la dirección de correo electrónico completa.|
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
-|Servidor de entrada|Introduzca el servidor **pro1.mail.ovh.net**. Deje marcada la casilla **Usar SSL para conectar (recomendado)**.|
+|Servidor de entrada|Introduzca el servidor pro**X**.mail.ovh.net. Deje marcada la casilla **Usar SSL para conectar (recomendado)**.|
 |Puerto de entrada|Introduzca el puerto **993**.|
-|Servidor de salida|Introduzca el servidor **pro1.mail.ovh.net**. Deje marcada la casilla **Usar SSL para conectar (recomendado)**.|
+|Servidor de salida|Introduzca el servidor pro**X**.mail.ovh.net. Deje marcada la casilla **Usar SSL para conectar (recomendado)**.|
 |Puerto de salida|Introduzca el puerto **587**.|
 
 Una vez introducidos los datos, haga clic en el botón `Agregar cuenta`{.action}. Si son correctos, la aplicación se conectará a la cuenta.
@@ -67,14 +74,14 @@ En caso de que la aplicación le pida que introduzca de forma manual algunos dat
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
-|Entrante|pro1.mail.ovh.net|Sí|993|
-|Saliente|pro1.mail.ovh.net|Sí|587|
+|Entrante|pro**X**.mail.ovh.net|Sí|993|
+|Saliente|pro**X**.mail.ovh.net|Sí|587|
 
 ### 2. Utilizar la dirección de correo electrónico
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVH ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovh.es/emails/){.external} y está disponible en la dirección <https://pro1.mail.ovh.net>. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovh.es/emails/){.external} y está disponible en la dirección [https://www.ovh.es/mail/](https://www.ovh.es/mail/). Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 ## Más información
 
