@@ -88,8 +88,8 @@ OVHcloud also offers a web application that includes various [collaborative feat
 
 ## Go further
 
-[Configuring an email address included in an MX Plan package or web hosting plan in the Mail application for Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/)
+[Configuring an email address included in an MX Plan package or web hosting plan in the Mail application for Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10)
 
-[Configuring your Exchange account in the Mail app for Windows 10](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/mail-configuration-windows-10/)
+[Configuring your Exchange account in the Mail app for Windows 10](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/mail-configuration-windows-10)
 
 Join our community of users on <https://community.ovh.com/en/>.
