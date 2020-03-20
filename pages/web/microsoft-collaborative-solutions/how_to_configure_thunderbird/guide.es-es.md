@@ -19,7 +19,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo electrónico 
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, le recomendamos que recurra a un proveedor especializado y/o
-> ponerse en contacto con el editor del servicio si tiene algún problema. Nosotros no podremos asistirle al respecto. Para ahondar en el tema, consulte el apartado [«Más información»](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange-configuration-thunderbird/#go-further_1)
+> ponerse en contacto con el editor del servicio si tiene algún problema. Nosotros no podremos asistirle al respecto. Para ahondar en el tema, consulte el apartado [«Más información»](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-configuracion-de-thunderbird/#mas-informacion_1)
 > de esta guía
 > 
 
@@ -99,4 +99,4 @@ OVHcloud también propone una aplicación web que cuenta con >. Puede conectarse
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>https://community.ovh.com/en/</https://community.ovh.com/en/>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
