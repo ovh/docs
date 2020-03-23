@@ -1,18 +1,25 @@
 ---
-title: Como configurar uma conta E-mail Pro no Mail do macOS
+title: 'Como configurar uma conta E-mail Pro no Mail do macOS'
 slug: configurar-email-pro-mail-macos
-excerpt: Saiba como configurar o E-mail Pro no Mail dos macOS El Capitan, Sierra e High Sierra
-section: Configuração do software cliente de e-mail
+excerpt: 'Saiba como configurar o E-mail Pro no Mail dos macOS El Capitan, Sierra e High Sierra'
+section: 'Configuração do software cliente de e-mail'
 order: 4
 ---
 
-**Última atualização: 21/02/2018**
+**Última atualização: 23/03/2020**
 
 ## Sumário
 
 As contas E-mail Pro podem ser usadas com vários softwares de e-mail (desde que sejam compatíveis). 
 
 **Aprenda a configurar uma conta E-mail Pro no Mail dos macOS El Capitan, Sierra e High Sierra.**
+
+> [!warning]
+>
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+> 
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, recomendamos que recorra a um fornecedor especializado e/ou que contacte o editor do serviço se encontrar dificuldades. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção “Quer saber mais?” deste manual.
+>
 
 ## Requisitos
 
@@ -37,6 +44,13 @@ A partir de agora, o guia irá só abordar a configuração da aplicação Mail.
 
 ### 1 - Adicionar uma conta
 
+> [!primary]
+>
+> Neste manual, utilizamos a menção do servidor: pro**X**.mail.ovh.net. Deverá substituir o "X" pelo número que designa o servidor do seu serviço E-mail Pro.
+>
+> Pode encontrar esse número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web`{.action} e, a seguir, em `E-mail Pro`{.action} na coluna à esquerda. O nome do servidor está visível na secção Ligação do separador `Informações gerais`{.action}.
+> 
+
 Na aplicação Mail existem dois métodos para adicionar uma conta:
 
 - **Primeira utilização da aplicação**: surge uma janela com uma lista de serviços de E-mail. Selecione `Outra conta de Mail`{.action} e continue.
@@ -58,8 +72,8 @@ Agora clique no botão `Continuar`{.action}. Será convidado a continuar o proce
 |Informação|Descrição|  
 |---|---|  
 |Tipo de conta|A opção predefinida é IMAP. Não altere essa opção.| 
-|Servidor de receção|Introduza o servidor *pro1.mail.ovh.net*.| 
-|Servidor de envio|Introduza o servidor *pro1.mail.ovh.net*.|  
+|Servidor de receção|Introduza o servidor pro**X**.mail.ovh.net| 
+|Servidor de envio|Introduza o servidor pro**X**.mail.ovh.net|  
 
 Clique novamente no botão `Continuar`{.action}. Se os dados inseridos estiverem corretos, a ligação será estabelecida sem problemas.
 
@@ -73,14 +87,14 @@ Precisa de inserir os dados de forma manual nas preferências da conta? A tabela
 
 |Tipo de Servidor|Nome do servidor;|SSL|Porta|
 |---|---|---|---|
-|Receção|pro1.mail.ovh.net|Sim|993|
-|Envio|pro1.mail.ovh.net|Sim|587|
+|Receção|pro**X**.mail.ovh.net|Sim|993|
+|Envio|pro**X**.mail.ovh.net|Sim|587|
 
 ### 2 - Usar o endereço de e-mail
 
 Após a configuração, a conta de e-mail está pronta a usar! Já pode enviar e receber mensagens no seu dispositivo.
 
-A OVH disponibiliza uma aplicação web com funcionalidades de [colaboração online](https://www.ovh.pt/emails/){.external} acessível através do endereço <https://pro1.mail.ovh.net>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail. 
+A OVHcloud disponibiliza uma aplicação web com funcionalidades de [colaboração online](https://www.ovh.pt/emails/){.external} acessível através do endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail. 
 
 ## Quer saber mais?
 
