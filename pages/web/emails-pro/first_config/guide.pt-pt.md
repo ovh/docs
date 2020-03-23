@@ -5,7 +5,7 @@ excerpt: 'Saiba como configurar a solução E-mail Pro'
 section: Geral
 ---
 
-**Última atualização: 31/10/2019**
+**Última atualização: 23/03/2020**
 
 ## Sumário
 
@@ -120,8 +120,15 @@ Se desejar associar o seu endereço de e-mail a um software de correio eletróni
 
 |Tipo de servidor|Nome do servidor|Tipo de segurança|Porta|
 |---|---|---|---|
-|Entrada|pro1.mail.ovh.net|SSL/TLS|993|
-|Saída|pro1.mail.ovh.net|STARTTLS|587|
+|Entrada|pro**X**.mail.ovh.net|SSL/TLS|993|
+|Saída|pro**X**.mail.ovh.net|STARTTLS|587|
+
+> [!primary]
+>
+> Neste manual, utilizamos a menção do servidor: pro**X**.mail.ovh.net. Deverá substituir o "X" pelo número que designa o servidor do seu serviço E-mail Pro.
+>
+> Pode encontrar esse número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web`{.action} e, a seguir, em `E-mail Pro`{.action} na coluna à esquerda. O nome do servidor está visível na secção Ligação do separador `Informações gerais`{.action}.
+> 
 
 ## Quer saber mais?
 
