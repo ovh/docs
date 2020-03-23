@@ -22,7 +22,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- You must have an [Email Pro](https://www.ovh.co.uk/emails/email-pro/) solution.
+- You must have an [Email Pro](https://www.ovh.ie/emails/email-pro/) solution.
 - You need to have the Gmail app installed on your device. You can install the app from the Google Play Store.
 - You need to have the required credentials for the email address you would like to configure.
 
@@ -92,7 +92,7 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also offers a web application that includes various [collaborative features](https://www.ovh.co.uk/emails/), accessible at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials.
+OVHcloud also offers a web application that includes various [collaborative features](https://www.ovh.ie/emails/), accessible at <https://www.ovh.ie/mail/>. You can log in using your email credentials.
 
 ## Go further
 
