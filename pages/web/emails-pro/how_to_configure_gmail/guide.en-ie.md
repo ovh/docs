@@ -22,7 +22,7 @@ You can configure Email Pro accounts on email clients and online interfaces, if 
 
 ## Requirements
 
-- an [Email Pro](https://www.ovh.co.uk/emails/email-pro/) solution
+- an [Email Pro](https://www.ovh.ie/emails/email-pro/) solution
 - credentials for the Email Pro account you would like to configure
 - credentials for the Gmail account you want to configure the OVHcloud Email Pro account on
 
@@ -94,7 +94,7 @@ Once you have filled in the information requested, tick the box next to `Secured
 
 ![emailpro](images/configuration-gmail-web-step5.png){.thumbnail}
 
-At this stage, you simply need to confirm this addition by entering a confirmation code sent to your OVHcloud Email Pro address. To receive it, log on to our [Webmail](https://www.ovh.co.uk/mail/). 
+At this stage, you simply need to confirm this addition by entering a confirmation code sent to your OVHcloud Email Pro address. To receive it, log on to our [Webmail](https://www.ovh.ie/mail/). 
 
 Once you have pressed confirm, the OVHcloud Email Pro address will then appear in the `Accounts and Import`{.action} tab, which you accessed to start with.
 
@@ -106,7 +106,7 @@ To send an email from your OVHcloud Email Pro address via the Gmail online inter
 
 ![emailpro](images/configuration-gmail-web-step6.png){.thumbnail}
 
-Please also note that you can still use our online interface, accessible via <https://www.ovh.co.uk/mail>, to access your OVH Email Pro address. You just need to use your usual credentials to log in.
+Please also note that you can still use our online interface, accessible via <https://www.ovh.ie/mail/>, to access your OVH Email Pro address. You just need to use your usual credentials to log in.
 
 ## Go further
 
