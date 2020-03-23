@@ -22,13 +22,13 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- You must have an [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} solution.
+- You must have an [Email Pro](https://www.ovh.ie/emails/email-pro/){.external} solution.
 - You must have Microsoft Outlook installed on your Mac.
 - You need to have the required credentials for the email address you would like to configure.
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Windows? Read this guide: [Configuring your email address in Outlook 2016 for Windows](https://docs.ovh.com/gb/en/emails-pro/configuration-outlook-2016/).
+> Are you using Outlook 2016 for Windows? Read this guide: [Configuring your email address in Outlook 2016 for Windows](https://docs.ovh.com/ie/en/emails-pro/configuration-outlook-2016/).
 >
 
 ## Instructions
@@ -80,7 +80,7 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also offers a web application that includes various [collaborative features](https://www.ovh.co.uk/emails), accessible at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials.
+OVHcloud also offers a web application that includes various [collaborative features](https://www.ovh.ie/emails/), accessible at <https://www.ovh.ie/mail/>. You can log in using your email credentials.
 
 ## Go further
 
