@@ -6,7 +6,7 @@ section: 'Configuração do software cliente de e-mail'
 order: 2
 ---
 
-**Última atualização: 22/01/2019**
+**Última atualização: 23/03/2020**
 
 ## Sumário
 
@@ -16,7 +16,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 > [!warning]
 >
-> A responsabilidade sobre a configuração e a gestão dos serviços que a OVH disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
 > Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, recomendamos que recorra a um fornecedor especializado e/ou que contacte o editor do serviço se encontrar dificuldades. Não lhe poderemos prestar assistência. Para mais informações, aceda à secção "Quer saber mais?" deste manual.
 
@@ -35,6 +35,13 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 ### 1 - Adicionar uma conta
 
+> [!primary]
+>
+> Neste manual, utilizamos a menção do servidor: pro**X**.mail.ovh.net. Deverá substituir o "X" pelo número que designa o servidor do seu serviço E-mail Pro.
+>
+> Pode encontrar esse número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web`{.action} e, a seguir, em `E-mail Pro`{.action} na coluna à esquerda. O nome do servidor está visível na secção Ligação do separador `Informações gerais`{.action}.
+> 
+
 Abra a aplicação Outlook no seu dispositivo. Existem duas formas de adicionar uma conta:
 
 - **Se for a primeira vez que utiliza a aplicação**, aparecerá um assistente de configuração que lhe irá solicitar o seu endereço de e-mail.
@@ -51,9 +58,9 @@ Introduza o seu endereço de e-mail e clique em `Continuar`{.action}. Selecione 
 |Endereço de e-mail|Insira um nome que lhe permita reconhecer esta conta entre as outras presentes na aplicação Outlook.|
 |Nome de utilizador|Insira o endereço de e-mail completo.|
 |Palavra-passe|Insira a palavra-passe do endereço de e-mail.|
-|Servidor de entrada|Introduza o servidor **pro1.mail.ovh.net.** Deixe a caixa **Utilizar SSL para ligar (recomendado)** selecionada.|
+|Servidor de entrada|Introduza o servidor pro**X**.mail.ovh.net. Deixe a caixa **Utilizar SSL para ligar (recomendado)** selecionada.|
 |Porta de entrada|Introduza a porta **993**.|
-|Servidor de saída|Introduza o servidor **pro1.mail.ovh.net.** Deixe a caixa **Utilizar SSL para ligar (recomendado)** selecionada.|
+|Servidor de saída|Introduza o servidor pro**X**.mail.ovh.net. Deixe a caixa **Utilizar SSL para ligar (recomendado)** selecionada.|
 |Porta de saída|Introduza a porta **587**.|
 
 Concluída esta etapa, clique no botão `Adicionar conta`{.action}. Se os dados estiverem corretos, a aplicação ligar-se-á à conta.
@@ -66,14 +73,14 @@ Caso a aplicação lhe solicite para inserir manualmente alguns dados técnicos 
 
 |Tipo de servidor|Nome do servidor|SSL|Porta|
 |---|---|---|---|
-|Entrada|pro1.mail.ovh.net|Sim|993|
-|Saída|pro1.mail.ovh.net|Sim|587|
+|Entrada|pro**X**.mail.ovh.net|Sim|993|
+|Saída|pro**X**.mail.ovh.net|Sim|587|
 
 ### 2 - Utilizar o endereço de e-mail
 
 Após a sua configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVH também disponibiliza uma aplicação web que tem [funcionalidades de colaboração](https://www.ovh.com/pt/emails/){.external} e está disponível no endereço <https://pro1.mail.ovh.net>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
+A OVH também disponibiliza uma aplicação web que tem [funcionalidades de colaboração](https://www.ovh.com/pt/emails/){.external} e está disponível no endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
 
 ## Quer saber mais?
 
