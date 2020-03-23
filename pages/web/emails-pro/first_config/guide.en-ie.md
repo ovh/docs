@@ -15,7 +15,7 @@ You have just purchased an Email Pro solution, which gives you affordable profes
 
 ## Requirements
 
-- an [Email Pro](https://www.ovh.co.uk/emails/email-pro/) solution
+- an [Email Pro](https://www.ovh.ie/emails/email-pro/) solution
 - an email confirming that your Email Pro solution has been set up
 - a domain name
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
@@ -114,7 +114,7 @@ Once the information is complete, click on the `Next`{.action} button, check the
 
 ### Step 5: Use your email addresses.
 
-Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an online application (a *web app*), available [here](https://www.ovh.co.uk/mail/), and you will need to enter your email credentials.
+Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an online application (a *web app*), available [here](https://www.ovh.ie/mail/), and you will need to enter your email credentials.
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our [configuration guides](https://docs.ovh.com/gb/en/emails-pro/). If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
 
