@@ -71,7 +71,7 @@ user@host:~$ curl -s -D headers -H "Content-Type: application/json" -d '
       }
     }
   }
-}' "${OS_AUTH_URL}/v3/auth/tokens" > token_info
+}' "${OS_AUTH_URL}/auth/tokens" > token_info
 user@host:~$ OS_TOKEN=$(egrep "^X-Subject-Token:" headers | awk '{print $2}')
 user@host:~$ OS_USER_ID=$(cat token_info  | jq -r '.["token"]["user"]["id"]')
 user@host:~$ OS_PROJECT_ID=$(cat token_info  | jq -r '.["token"]["project"]["id"]')
