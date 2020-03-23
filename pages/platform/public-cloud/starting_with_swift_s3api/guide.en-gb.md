@@ -75,7 +75,7 @@ user@host:~$ curl -s -D headers -H "Content-Type: application/json" -d '
 user@host:~$ OS_TOKEN=$(egrep "^X-Subject-Token:" headers | awk '{print $2}')
 user@host:~$ OS_USER_ID=$(cat token_info  | jq -r '.["token"]["user"]["id"]')
 user@host:~$ OS_PROJECT_ID=$(cat token_info  | jq -r '.["token"]["project"]["id"]')
-user@host:~$ curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Token: $OS_TOKEN" -d '{"tenant_id": "$OS_PROJECT_ID"}' "${OS_AUTH_URL}/v3/users/${OS_USER_ID}/credentials/OS-EC2" | jq .
+user@host:~$ curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Token: $OS_TOKEN" -d '{"tenant_id": "$OS_PROJECT_ID"}' "${OS_AUTH_URL}/users/${OS_USER_ID}/credentials/OS-EC2" | jq .
 {
   "credential": {
     "user_id": "d74d05ff121b44bea9216495e7f0df61",
