@@ -12,6 +12,7 @@ order: 1
 
 Les services Hosted Exchange et Private Exchange disposent d'une gestion flexible concernant la facturation des comptes. Ce guide vous détaille comment la configurer.
 
+
 **Découvrez comment gérer les abonnements de vos comptes Exchange.**
 
 ## Prérequis
