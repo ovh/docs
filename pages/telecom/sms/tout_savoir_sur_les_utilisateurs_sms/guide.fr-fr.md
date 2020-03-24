@@ -19,7 +19,7 @@ Ce guide vous explique comment créer et gérer des utilisateurs API.
 
 ## En pratique
 
-![](images/smsusers.png){.thumbnail}
+![sms-users](images/smsusers.png){.thumbnail}
 
 Un utilisateur SMS API peut être utile pour plusieurs raisons :
 
@@ -44,11 +44,11 @@ Connectez-vous à votre [espace client](https://www.ovhtelecom.fr/manager/), pui
 
 Cliquez enfin sur l'onglet `Utilisateurs API`{.action} (4).
 
-![](images/smsusers01e.png){.thumbnail}
+![sms-users](images/smsusers01e.png){.thumbnail}
 
 Pour ajouter un utilisateur, cliquez sur le bouton `Actions`{.action} puis sur `Ajouter`{.action}. 
 
-![](images/smsusers02e.png){.thumbnail}
+![sms-users](images/smsusers02e.png){.thumbnail}
 
 La définition du nom de l'utilisateur API est libre. Le mot de passe d'un utilisateur API doit être composé de 8 caractères alphanumériques. 
 
@@ -57,14 +57,21 @@ La définition du nom de l'utilisateur API est libre. Le mot de passe d'un utili
 
 La gestion du quota s'effectue depuis l'onglet `Utilisateurs API`{.action}. En face de l'utilisateur choisi, cliquez sur les `...`{.action} puis sur `Quota`{.action}.
 
-![](images/smsusers03e.png){.thumbnail}
+![sms-users](images/smsusers03e.png){.thumbnail}
 
 Vous pourrez alors effectuer deux actions.
 
 - **Activer quota ?** : vous permet de définir si cet utilisateur est soumis à un quota.
 - **Nouveau quota** : définit le quota de l’utilisateur. Une fois ce quota atteint, l’envoi de SMS sera bloqué pour cet utilisateur.
 
-![](images/smsusers04.png){.thumbnail}
+![sms-users](images/smsusers04.png){.thumbnail}
+
+> [!primary]
+> 
+> L'affectation d'un quota à un utilisateur API va réduire d'autant le crédit total du compte SMS.
+>
+> Exemple : un compte SMS dispose au total de 200 crédits. L'affectation de 150 crédits à un utilisateur API va défalquer 150 crédits du compte SMS qui ne disposera alors plus que de 50 crédits.
+> 
 
 ### Étape 3 : attribuer une limite à un utilisateur API
 
@@ -81,7 +88,7 @@ Les paramètres suivants sont alors disponibles :
 >L'envoi d'une notification par SMS sera déduit de votre crédit SMS.
 >
 
-![](images/smsusers05.png){.thumbnail}
+![sms-users](images/smsusers05.png){.thumbnail}
 
 
 ### Étape 4 : définir une restriction par IP pour la fonction http2sms
@@ -92,7 +99,7 @@ Pour l'activer, cliquez sur les `...`{.action} à droite de l'utilisateur puis s
 
 Vous pouvez renseigner jusqu'à 5 adresses IP publiques différentes pour les envois de vos requêtes https.
 
-![](images/smsusers06.png){.thumbnail}
+![sms-users](images/smsusers06.png){.thumbnail}
 
 Pour plus d'informations sur la fonction http2sms, consultez le guide [Envoyer des SMS depuis une URL](https://docs.ovh.com/fr/sms/envoyer_des_sms_depuis_une_url_-_http2sms/).
 
@@ -100,7 +107,7 @@ Pour plus d'informations sur la fonction http2sms, consultez le guide [Envoyer d
 
 Pour un suivi personnalisé des accusés de réception SMS (Delivery reporting ou DLR), il est possible de spécifier une URL dite de Callback en cliquant sur les `...`{.action} à droite de l'utilisateur puis sur `Callback`{.action}.
 
-![](images/smsusers07.png){.thumbnail}
+![sms-users](images/smsusers07.png){.thumbnail}
 
 Lorsque le statut d'envoi du SMS est mis à jour, nous appelons l'URL spécifiée. Les valeurs suivantes sont automatiquement insérées dans la querystring :
 
