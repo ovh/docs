@@ -61,7 +61,7 @@ The official way to install the **NGINX Ingress Controller** is using a mandator
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
 ```
 
-It creates the `namespace`, `serviceaccount`, `role` and all the other Kuberbetes objects needed for the Ingress Controller, and then it deploys the controller:
+It creates the `namespace`, `serviceaccount`, `role` and all the other Kubernetes objects needed for the Ingress Controller, and then it deploys the controller:
 
 
 <pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
