@@ -1,5 +1,5 @@
 ---
-itle: 'Tworzenie i usuwanie użytkownika OpenStack'
+title: 'Tworzenie i usuwanie użytkownika OpenStack'
 slug: tworzenie-i-usuwanie-uzytkownika-openstack
 section: 'Zarządzanie w Panelu klienta OVH'
 ---
