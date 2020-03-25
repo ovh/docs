@@ -169,7 +169,7 @@ If you point your web browser to the service URL, the `hello-world` service will
 
 ### Step 6 - Clean up
 
-AAt the end you can proceed to clean up by deleting the service and the deployment.
+At the end you can proceed to clean up by deleting the service and the deployment.
 
 Let's begin by deleting the service:
 
