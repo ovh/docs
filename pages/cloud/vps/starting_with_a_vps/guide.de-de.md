@@ -23,7 +23,7 @@ Ein Virtual Private Server oder VPS ist ein virtualisierter Dedicated Server. Im
 
 ## Voraussetzungen
 
-- Sie haben einen VPS aus dem Angebot der [OVHcloud Website](https://www.ovhcloud.com/de/){.external} gebucht.
+- Sie haben einen VPS aus dem Angebot der [OVHcloud Website](https://www.ovhcloud.com/de/vps/){.external} gebucht.
 - Sie haben nach der Installation (Betriebssystem wird bei der Bestellung ausgewählt) eine E-Mail mit Ihren Zugangsdaten erhalten.
 
 
