@@ -1,21 +1,21 @@
 ---
-title: Mettere in sicurezza un VPS
+title: 'Mettere in sicurezza un VPS'
 slug: consigli-sicurezza-vps
-section: Per iniziare
+section: 'Per iniziare'
 ---
 
 **Ultimo aggiornamento: 26/02/2018**
 
 ## Obiettivo
 
-Al momento dell’ordine, un VPS include una distribuzione preinstallata ma i protocolli di sicurezza non sono abilitati. OVH non può intervenire sulla tua macchina: la protezione del VPS è quindi a tuo carico.
+Al momento dell’ordine, un VPS include una distribuzione preinstallata ma i protocolli di sicurezza non sono abilitati. OVHcloud non può intervenire sulla tua macchina: la protezione del VPS è quindi a tuo carico.
 
 **Questa guida ti mostra le operazioni da effettuare per mettere in sicurezza il tuo server.**
 
  
 > [!warning]
 >
-> OVH mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è responsabilità dell’utente. Questa guida ti aiuta a eseguire le operazioni necessarie sul tuo VPS. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+> OVHcloud mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è responsabilità dell’utente. Questa guida ti aiuta a eseguire le operazioni necessarie sul tuo VPS. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 > 
 
 
@@ -187,9 +187,9 @@ iptables -L
 
 Ti consigliamo di creare e adattare le regole di questo firewall in base alle tue necessità. Per maggiori informazioni sulle diverse operazioni disponibili, consulta la documentazione ufficiale della distribuzione utilizzata.
 
-### Configura il Firewall Network OVH
+### Configura il Firewall Network OVHcloud
 
-OVH propone il servizio Firewall Network, un firewall all’ingresso dell’infrastruttura la cui attivazione e configurazione consente di bloccare i protocolli prima che arrivino al tuo server.
+OVHcloud propone il servizio Firewall Network, un firewall all’ingresso dell’infrastruttura la cui attivazione e configurazione consente di bloccare i protocolli prima che arrivino al tuo server.
 
 Per consultare la nostra guida relativa a questa soluzione, [clicca qui](https://docs.ovh.com/it/dedicated/firewall-network/){.external}.
 
@@ -197,13 +197,13 @@ Per consultare la nostra guida relativa a questa soluzione, [clicca qui](https:/
 
 Il concetto di sicurezza non si limita esclusivamente alla protezione di un sistema dagli attacchi.
 
-Anche la sicurezza dei dati è un elemento fondamentale e per salvaguardarlo OVH propone tre opzioni di backup:
+Anche la sicurezza dei dati è un elemento fondamentale e per salvaguardarlo OVHcloud propone tre opzioni di backup:
 
 - `Snapshot`, un’istantanea della tua macchina virtuale creata manualmente (disponibile su VPS SSD, Cloud e Cloud RAM)
-- `Backup automatizzato`, una copia giornaliera del tuo VPS (disco aggiuntivo escluso) esportata e replicata tre volte prima di essere disponibile nello Spazio Cliente OVH (disponibile esclusivamente su VPS Cloud e Cloud RAM)
+- `Backup automatizzato`, una copia giornaliera del tuo VPS (disco aggiuntivo escluso) esportata e replicata tre volte prima di essere disponibile nello Spazio Cliente OVHcloud (disponibile esclusivamente su VPS Cloud e Cloud RAM)
 - `Backup Storage`, una soluzione per archiviare e recuperare manualmente i file su uno spazio disco dedicato. I protocolli disponibili per eseguire queste operazioni sono FTP, NFS e CIFS, compatibili con tutti i sistemi operativi. Grazie a questa opzione i dati sono al sicuro in caso di interruzione di servizio (disponibile esclusivamente su VPS Cloud e Cloud RAM)
 
-Per maggiori informazioni sulle nostre soluzioni di storage per VPS: <https://www.ovh.it/vps/backup-vps.xml>.
+Per maggiori informazioni sulle nostre soluzioni di storage per VPS: <https://www.ovhcloud.com/it/vps/>.
 
 ## Per saperne di più
 
