@@ -8,14 +8,14 @@ section: 'Pierwsze kroki'
 
 ## Wprowadzenie
 
-Zamówienie serwera VPS obejmuje preinstalowaną dystrybucję, natomiast brak jest jakiegokolwiek natywnego protokołu bezpieczeństwa. Należy więc przeprowadzić procedurę zabezpieczenia serwera VPS, w co OVH nie może ingerować.
+Zamówienie serwera VPS obejmuje preinstalowaną dystrybucję, natomiast brak jest jakiegokolwiek natywnego protokołu bezpieczeństwa. Należy więc przeprowadzić procedurę zabezpieczenia serwera VPS, w co OVHcloud nie może ingerować.
 
 **Celem niniejszej instrukcji jest dostarczenie ogólnych wskazówek dotyczących zabezpieczania serwera.**
 
  
 > [!warning]
 >
-> OVH oddaje do Twojej dyspozycji maszynę, za którą to Ty przejmujesz odpowiedzialność. Ponieważ nie mamy dostępu do udostępnionej Ci maszyny, nie możemy być jej administratorem. Dlatego to do Ciebie należy codzienne  zarządzanie oprogramowaniem i dbanie o bezpieczeństwo. Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z firmą oferującą usługi zarządzania serwerem. Więcej informacji znajduje się w rozdziale „Sprawdź również”.
+> OVHcloud oddaje do Twojej dyspozycji maszynę, za którą to Ty przejmujesz odpowiedzialność. Ponieważ nie mamy dostępu do udostępnionej Ci maszyny, nie możemy być jej administratorem. Dlatego to do Ciebie należy codzienne  zarządzanie oprogramowaniem i dbanie o bezpieczeństwo. Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z firmą oferującą usługi zarządzania serwerem. Więcej informacji znajduje się w rozdziale „Sprawdź również”.
 > 
 
 
@@ -189,9 +189,9 @@ iptables -L
 
 Zalecamy utworzenie na tej zaporze reguł i dostosowanie ich do swojego trybu użytkowania. Wszelkie informacje na temat różnego rodzaju możliwości obsługi znajdują się w rozdziale dotyczącym działania usługi w oficjalnej dokumentacji dołączonej do użytkowanej dystrybucji.
 
-### Konfiguracja firewalla od OVH
+### Konfiguracja firewalla od OVHcloud
 
-OVH oferuje zaporę sieciową na wejściu do infrastruktury OVH.  Jej uruchomienie i skonfigurowanie umożliwia blokowanie protokołów zanim jeszcze dotrą do Twojego serwera.
+OVHcloud oferuje zaporę sieciową na wejściu do infrastruktury OVHcloud.  Jej uruchomienie i skonfigurowanie umożliwia blokowanie protokołów zanim jeszcze dotrą do Twojego serwera.
 
 Poniżej [link](https://docs.ovh.com/gb/en/dedicated/firewall-network/){.external} do instrukcji poświęconej tej zaporze sieciowej.
 
@@ -199,13 +199,13 @@ Poniżej [link](https://docs.ovh.com/gb/en/dedicated/firewall-network/){.externa
 
 Pojęcie bezpieczeństwa nie ogranicza się wyłącznie do ochrony systemu przed atakami.
 
-Zabezpieczenie Twoich danych jest kluczowa kwestią, dlatego też OVH oferuje trzy możliwości wykonywania backupu:
+Zabezpieczenie Twoich danych jest kluczowa kwestią, dlatego też OVHcloud oferuje trzy możliwości wykonywania backupu:
 
 - opcja `Snapshot` polegająca na ręcznym tworzeniu kopii migawkowej (snapshot) Twojej maszyny wirtualnej (dostępna na VPS-ach SSD, Cloud i Cloud RAM);
 - opcja `Zautomatyzowany Backup `, w ramach której kopia zapasowa Twojego serwera VPS (poza dyskiem dodatkowym) jest tworzona codziennie zgodnie z harmonogramem, eksportowana, a następnie poddana trzykrotnej replikacji. Dopiero wówczas jest ona udostępniana w Twoim panelu klienta (dostępna wyłącznie na VPS-ach Cloud i Cloud RAM) ;
 - opcja `Backup Storage` umożliwiająca ręczne magazynowanie i odzyskiwanie plików na dedykowanej przestrzeni dyskowej. W tym celu, aby sprostać potrzebom użytkowników wszystkich systemów operacyjnych, dostępne są protokoły FTP, NFS i CIFS. W ten sposób możesz zabezpieczyć swoje dane na wypadek przerwy w działaniu usługi (dostępna wyłącznie na VPS-ach Cloud i Cloud RAM).
 
-Wszystkie informacje na temat naszej oferty magazynowania danych dla serwerów VPS: <https://www.ovh.pl/vps/backup-vps.xml>.
+Wszystkie informacje na temat naszej oferty magazynowania danych dla serwerów VPS: <https://www.ovhcloud.com/pl/vps/>.
 
 ## Sprawdź również
 
