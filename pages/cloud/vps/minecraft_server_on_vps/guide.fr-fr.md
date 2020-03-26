@@ -9,13 +9,13 @@ section: Tutoriel
 
 Minecraft est un jeu vidéo de construction au succès mondial. Il nécessite un serveur pour héberger votre partie, sur lequel vous vous connectez à distance avec vos amis.
 
-L'administration de ce serveur peut être déléguée à une entreprise externe, mais vous pouvez tout à fait l'héberger vous-même sur un [VPS](https://www.ovh.com/fr/vps/){.external} ou un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}. Cela vous permet de réaliser des économies, ainsi que de personnaliser vos parties sans limite.
+L'administration de ce serveur peut être déléguée à une entreprise externe, mais vous pouvez tout à fait l'héberger vous-même sur un [VPS](https://www.ovhcloud.com/fr/vps/){.external} ou un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}. Cela vous permet de réaliser des économies, ainsi que de personnaliser vos parties sans limite.
 
-Dans ce tutoriel, nous allons créer de A à Z un serveur Minecraft Java Edition sur un VPS OVH et tester sa connectivité.
+Dans ce tutoriel, nous allons créer de A à Z un serveur Minecraft Java Edition sur un VPS OVHcloud et tester sa connectivité.
 
 > [!warning]
 > 
-> OVH met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. N'hésitez pas à vous rendre sur notre [forum communautaire](https://community.ovh.com/){.external} pour échanger avec d'autres utilisateurs.
 >
@@ -30,7 +30,7 @@ Dans ce tutoriel, nous allons créer de A à Z un serveur Minecraft Java Edition
 
 ### Ce que vous devez avoir
 
-- Disposer d'un [VPS SSD](https://www.ovh.com/fr/vps/vps-ssd.xml){.external}. Un minimum de 2 Go de RAM est conseillé.
+- Disposer d'un [VPS SSD](https://www.ovhcloud.com/fr/vps/){.external}. Un minimum de 2 Go de RAM est conseillé.
 - Télécharger le paquet *minecraft_server.1.12.2.jar* sur <https://minecraft.net/fr-fr/download/server>.
 
 
@@ -162,6 +162,6 @@ Par défaut, aucun port n'est à renseigner.
 
 Votre serveur Vanilla Minecraft est désormais installé sur votre VPS. Avant de jouer, il ne vous reste plus qu'à le configurer selon vos envies.
 
-À noter que cette installation fonctionne tout aussi bien sur un serveur dédié ou du Public Cloud OVH. Avec ces solutions, vous profitez également de ressources physiques garanties et stables à tout moment de la journée.
+À noter que cette installation fonctionne tout aussi bien sur un serveur dédié ou du Public Cloud OVHcloud. Avec ces solutions, vous profitez également de ressources physiques garanties et stables à tout moment de la journée.
 
-Enfin, pour ajouter des add-ons et configurer plus finement votre serveur Minecraft, consultez la documentation officielle sur <https://help.mojang.com/>. D'autres versions personnalisées existent, comme la prometteuse Minecraft Bukkit, et sont également compatibles avec les produits OVH.
+Enfin, pour ajouter des add-ons et configurer plus finement votre serveur Minecraft, consultez la documentation officielle sur <https://help.mojang.com/>. D'autres versions personnalisées existent, comme la prometteuse Minecraft Bukkit, et sont également compatibles avec les produits OVHcloud.
