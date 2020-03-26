@@ -5,7 +5,7 @@
 
 ### alert
 
-```
+```md
 /* markdown */
 
 > [!alert]
@@ -24,11 +24,11 @@
 
 ![alert notice](images/notice-alert.png)
 
-### Other notices: 
+### Other notices
 
 #### primary
 
-```
+```md
 /* markdown */
 
 > [!primary]
@@ -41,7 +41,7 @@
 
 #### warning
 
-```
+```md
 /* markdown */
 
 > [!warning]
@@ -54,7 +54,7 @@
 
 #### info
 
-```
+```md
 /* markdown */
 
 > [!info]
@@ -65,10 +65,9 @@
 
 ![alert notice](images/notice-simple.png)
 
-
 ## Carousel
 
-```
+```md
 /* markdown */
 
 > [!carousel]
@@ -80,7 +79,7 @@
 ```
 
 ```html
-<!-- generated html --> 
+<!-- generated html -->
 
 <div class="carousel">
     <div>
@@ -102,7 +101,7 @@
 
 ## FAQ
 
-```
+```md
 /* markdown */
 
 > [!faq]
@@ -122,7 +121,7 @@
 ```
 
 ```html
-<!-- generated html --> 
+<!-- generated html -->
 
 <dl class="docutils">
     <dt><em>Question 1</em></dt>
@@ -168,7 +167,7 @@
 
 ## Api
 
-```
+```md
 /* markdown */
 
 > [!api]
@@ -178,7 +177,7 @@
 ```
 
 ```html
-<!-- generated html --> 
+<!-- generated html -->
 
 <div class="ovh-api-main">
   <a href="https://eu.api.ovh.com/console/#/ipLoadbalancing/{serviceName}/tcp/route#POST" target="_blank">
@@ -190,12 +189,11 @@
 
 ![api](images/api.png)
 
-
 ## Advanced
 
 You can mix different custom syntax
 
-```
+```md
 /* markdown */
 
 > [!faq]
