@@ -1,5 +1,5 @@
 ---
-title: 'Resizing Persistent Volumes'
+title: Resizing Persistent Volumes
 slug: resizing-persistent-volumes
 excerpt: 'Find out how to resize Persistent Volumes on OVHcloud Managed Kubernetes'
 section: Tutorials
@@ -11,7 +11,7 @@ order: 7
      font-size: 14px;
  }
  pre.console {
-   background-color: #300A24; 
+   background-color: #300A24;
    color: #ccc;
    font-family: monospace;
    padding: 5px;
@@ -28,13 +28,13 @@ order: 7
  }
 </style>
 
-**Last updated 6<sup>th</sup> January, 2020.**
+**Last updated March 25<sup>th</sup>, 2020.**
 
 In this tutorial we are going to guide you with the resize of [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) (PVs) on your OVHcloud Managed Kubernetes Service.
 
 The Kubernetes `PersistentVolume` subsystem provides an API for users and administrators that abstracts details of how storage is provided from how it is consumed. To do this Kubernetes provides two API resources: `PersistentVolume` (PVs) and `PersistentVolumeClaim` (PVCs).
 
-Since Kubernetes 1.11, support for expanding PersistentVolumeClaims (PVCs) is enabled by default, and in this tutorial you will learn how to do it. 
+Since Kubernetes 1.11, support for expanding PersistentVolumeClaims (PVCs) is enabled by default, and in this tutorial you will learn how to do it.
 
 > [!warning]
 > Kubernetes PVCs resizing only allows to expand volumes, not to decrease them.
@@ -44,7 +44,6 @@ Since Kubernetes 1.11, support for expanding PersistentVolumeClaims (PVCs) is en
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
 You also need to know how PVs are handled on OVHcloud Managed Kubernetes service, please refer to the [Persistent Volumes on OVHcloud Managed Kubernetes](../ovh-kubernetes-persistent-volumes/) guide.
-
 
 ## Let's make a Persistent Volume Claim
 
@@ -68,7 +67,7 @@ spec:
 And apply it to the cluster:
 
 ```bash
-kubectl apply -f mysql/mysql-pvc.yaml 
+kubectl apply -f mysql/mysql-pvc.yaml
 ```
 
 We can then verify that the PVC is correctly created and bound to a PV:
@@ -91,7 +90,7 @@ spec:
     app: mysql
   clusterIP: None
 ---
-apiVersion: apps/v1 
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql
@@ -135,7 +134,7 @@ kubectl describe deployment mysql
 
 In my example cluster, the precedent commands obtains:
 
-<pre class="console"><code>$ kubectl apply -f mysql/mysql-pvc.yaml 
+<pre class="console"><code>$ kubectl apply -f mysql/mysql-pvc.yaml
 persistentvolumeclaim/mysql-pv-claim created
 
 $ kubectl describe pvc mysql-pv-claim
@@ -162,7 +161,7 @@ Events:
   Normal  Provisioning           72s                cinder.csi.openstack.org_csi-cinder-controllerplugin-0_4da74c15-1973-486d-9dde-2ccf2f19811b  External provisioner is provisioning volume for claim "default/mysql-pv-claim"
   Normal  ProvisioningSucceeded  70s                cinder.csi.openstack.org_csi-cinder-controllerplugin-0_4da74c15-1973-486d-9dde-2ccf2f19811b  Successfully provisioned volume ovh-managed-kubernetes-btw8lc-pvc-ab896768-b995-453b-85ab-4bcb378de01d
 
-$ kubectl apply -f mysql/mysql-deployment.yaml 
+$ kubectl apply -f mysql/mysql-deployment.yaml
 service/mysql created
 deployment.apps/mysql created
 
@@ -207,7 +206,6 @@ Events:
   Normal  ScalingReplicaSet  27s   deployment-controller  Scaled up replica set mysql-c85f7f79c to 1
 </code></pre>
 
-
 ## Accessing the MySQL instance and initializing a database
 
 The preceding YAML file creates a service that allows other Pods in the cluster to access the database. The Service option `clusterIP: None` lets the Service DNS name resolve directly to the Pod’s IP address. This is optimal when you have only one Pod behind a Service and you don’t intend to increase the number of Pods.
@@ -226,7 +224,6 @@ USE testingResize;
 CREATE TABLE anEmptyTable (k VARCHAR(256), v TEXT);
 SHOW TABLES;
 ```
-
 
 On my example cluster:
 
@@ -249,16 +246,15 @@ mysql> SHOW TABLES;
 | anEmptyTable            |
 +-------------------------+
 1 row in set (0.00 sec)
-</code></pre> 
-
-
-
+</code></pre>
 
 ## Expand the PVs
 
 In order to expand the persistent volume, the first step is to unbound the PVC from the deployments using them.
 To do that, we set the `deployment`'s `replicas` to 0:
 
+> [!warning]
+> Do not forget to downscale your deployment before to resize your volume
 
 ```bash
 kubectl patch deployment mysql -p '{ "spec": { "replicas": 0 }}'
@@ -269,7 +265,6 @@ Then we path the PVC definition to expand the volume to 6 GB:
 ```bash
 kubectl patch pvc mysql-pv-claim -p '{ "spec": { "resources": { "requests": { "storage": "6Gi" }}}}'
 ```
-
 
 > [!warning]
 > Kubernetes PVCs resizing only allows to expand volumes, not to decrease them.
@@ -292,9 +287,7 @@ kubectl patch deployment mysql -p '{ "spec": { "replicas": 1 }}'
 
 After the pod starts, we can use again `kubectl describe pvc mysql-pv-claim` and we see that the PV size is 6 GB.
 
-
 On my example cluster:
-
 
 <pre class="console"><code>$ kubectl patch deployment mysql -p '{ "spec": { "replicas": 0 }}'
 deployment.extensions/mysql patched
@@ -374,11 +367,9 @@ Events:
   Normal   FileSystemResizeRequired  5m49s                  external-resizer cinder.csi.openstack.org  Require file system resize of volume on node
 </code></pre>
 
-
 ## Verifying data integrity
 
 So we launch again a MySQL client to verify that we can still read our database:
-
 
 ```bash
 kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -ppassword
@@ -415,15 +406,12 @@ mysql> SHOW TABLES;
 | anEmptyTable            |
 +-------------------------+
 1 row in set (0.00 sec)
-
-</code></pre> 
+</code></pre>
 
 ## Where do we go from here?
 
 Now you can expand the Persistent Volumes on your OVHcloud Managed Kubernetes cluster, and adapt them to the live of your data.
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](../).
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
-
-
