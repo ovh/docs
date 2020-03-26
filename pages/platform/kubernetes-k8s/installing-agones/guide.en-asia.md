@@ -1,5 +1,5 @@
 ---
-title: 'Installing Agones on OVHcloud Managed Kubernetes'
+title: Installing Agones on OVHcloud Managed Kubernetes
 slug: installing-agones
 excerpt: 'Find out how to install Agones on OVHcloud Managed Kubernetes'
 section: Tutorials
@@ -10,7 +10,7 @@ section: Tutorials
      font-size: 14px;
  }
  pre.console {
-   background-color: #300A24; 
+   background-color: #300A24;
    color: #ccc;
    font-family: monospace;
    padding: 5px;
@@ -29,18 +29,15 @@ section: Tutorials
 
 **Last updated 1<sup>st</sup> July, 2019.**
 
-
 In this tutorial we are going to guide you with the install of [Agones](https://agones.dev){.external} on your OVHcloud Managed Kubernetes Service. Agones is an open-source, multiplayer, dedicated game-server hosting built on Kubernetes.
 
 And to test your install, you will install a [Xonotic](http://www.xonotic.org/){.external} game server and playing some old-school deathmatches...
-
 
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
 You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
-
 
 ## What is Agones?
 
@@ -50,13 +47,11 @@ One of the latests additions to this ecosystem is the [Agones](https://agones.de
 
 ![Agones on OVHcloud Managed Kubernetes](images/agones-001-small.jpg){.thumbnail}
 
-
 ## Why Agones?
 
 Agones ([derived from the Greek word *agōn*](https://www.merriam-webster.com/dictionary/agones){.external}, contests held during public festivals or more generally "contest" or "competition at games") aims to replace the usual proprietary solutions to deploy, scale and manage game servers.
 
 Agones enriches Kubernetes with a [Custom Controller](https://kubernetes.io/docs/concepts/api-extension/custom-resources/#custom-controllers){.external} and a [Custom Resource Definition](https://kubernetes.io/docs/concepts/api-extension/custom-resources/#customresourcedefinitions){.external} With them, you can standardise Kubernetes tooling and APIs to create, scale and manage game server clusters.
-
 
 ### What kind of game servers
 
@@ -76,7 +71,6 @@ Agones and it's Custom Controller and Custom Resource Definition replaces the co
 
 ![Online gaming matchmaking and game server assignation with Agones](images/agones-003-small.jpg){.thumbnail}
 
-
 > [!primary]
 > ### The cherry on the cake
 >
@@ -92,7 +86,7 @@ There are several ways to install Agones in a Kubernetes cluster. For our test w
 
 The first step to install Agones is to setup a service account with enough permissions to create some special RBAC resource types.
 
-```
+```bash
 kubectl create clusterrolebinding cluster-admin-binding \
   --clusterrole=cluster-admin --serviceaccount=kube-system:default
 ```
@@ -103,22 +97,21 @@ Now we have the [Cluster Role Binding](https://kubernetes.io/docs/reference/acce
 >   --clusterrole=cluster-admin --serviceaccount=kube-system:default
 clusterrolebinding.rbac.authorization.k8s.io/cluster-admin-binding created</code></pre>
 
-
 ## Installing the Agones chart
 
 Now let's continue by adding Agones repository to Helm's repository list.
 
-```
+```bash
 helm repo add agones https://agones.dev/chart/stable
 ```
 
 And then installing the stable Agones chart:
-```
+
+```bash
 helm install --name my-agones --namespace agones-system agones/agones
 ```
 
 After some moments, Agones should we installed:
-
 
 <pre class="console"><code>$ helm repo add agones https://agones.dev/chart/stable
 "agones" has been added to your repositories
@@ -129,22 +122,21 @@ NAMESPACE: agones-system
 STATUS: DEPLOYED
 [...]</code></pre>
 
-
 > [!warning]
-> The installation we have just done isn't suited for production, as the [official install instructions](https://agones.dev/site/docs/installation/helm/) recommend running Agones and the game servers in separate, dedicated pools of nodes. 
+> The installation we have just done isn't suited for production, as the [official install instructions](https://agones.dev/site/docs/installation/helm/) recommend running Agones and the game servers in separate, dedicated pools of nodes.
 > But for the needs of our test, the basic setup is enough.
 
 ## Confirming Agones started successfully
 
 To verify that Agones is running on our Kubernetes cluster, we can look at the pods in the `agones-system` namespace:
 
-```
+```bash
 kubectl get --namespace agones-system pods
 ```
 
 If everything is ok, you should see an `agones-controller` pod with a `Running` status:
 
-<pre class="console"><code>$$ kubectl get --namespace agones-system pods
+<pre class="console"><code>$ kubectl get --namespace agones-system pods
 NAME                                 READY   STATUS    RESTARTS   AGE
 agones-controller-5f766fc567-xf4vv   1/1     Running   0          5d15h
 agones-ping-889c5954d-6kfj4          1/1     Running   0          5d15h
@@ -153,7 +145,7 @@ agones-ping-889c5954d-mtp4g          1/1     Running   0          5d15h
 
 You can also see more details using:
 
-```
+```bash
 kubectl describe --namespace agones-system pods
 ```
 
@@ -165,13 +157,12 @@ Namespace:          agones-system
 [...]
 Conditions:
   Type              Status
-  Initialized       True 
-  Ready             True 
-  ContainersReady   True 
+  Initialized       True
+  Ready             True
+  ContainersReady   True
   PodScheduled      True</code></pre>
 
 Where all the `Conditions` should have status `True`.
-
 
 ## Deploying a game server
 
@@ -185,7 +176,7 @@ Deploying a Xonotic game server over Agones is rather easy:
 The game server deployment can take some moments, so we need to wait until its status is `Ready` before using it. We can fetch the status with:
 <pre><code class="language-bash">kubectl get gameserver</code></pre>
 We wait until the fetch gives a `Ready` status on our game server:
-<pre class="console"><code>$ kubectl get gameserver
+<pre class="console"><code>kubectl get gameserver
 NAME      STATE   ADDRESS         PORT   NODE       AGE
 xonotic   Ready   51.83.xxx.yyy   7094   node-zzz   5d
 </code></pre>
@@ -212,13 +203,13 @@ And you are ready to play!
 
 On the server side, you can spy how things are going for your game server, using `kubectl logs`. Let's begin by finding the pod running the game:
 
-```
+```bash
 kubectl get pods
 ```
 
 You will see that your game server is running in a pod called `xonotic`:
 
-<pre class="console"><code>$ kubectl get pods 
+<pre class="console"><code>$ kubectl get pods
 NAME      READY   STATUS    RESTARTS   AGE
 xonotic   2/2     Running   0          5d15h
 </code></pre>
@@ -255,7 +246,7 @@ unconnected changed name to [BOT]Hellfire
 unconnected changed name to [BOT]Lion
 unconnected changed name to [BOT]Scorcher
 [BOT]Scorcher picked up Strength
-[BOT]Scorcher drew first blood! 
+[BOT]Scorcher drew first blood!
 [BOT]Hellfire was gunned down by [BOT]Scorcher's Shotgun
 [BOT]Scorcher slapped [BOT]Lion around a bit with a large Shotgun
 [BOT]Scorcher was gunned down by [BOT]Eureka's Shotgun, ending their 2 frag spree
@@ -270,7 +261,7 @@ unconnected changed name to [BOT]Scorcher
 [...]
 </code></pre>
 
-### Add some friends...
+### Add some friends
 
 The next step is mostly enjoyable: ask some friends to connect to the server and do a true deathmatch like in *Quake 2* times.
 

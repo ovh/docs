@@ -1,8 +1,8 @@
 ---
-title: 'Using the OVHcloud Managed Kubernetes LoadBalancer'
+title: Using the OVHcloud Managed Kubernetes LoadBalancer
 excerpt: ''
 slug: using-lb
-section: 'Getting started'
+section: Getting started
 ---
 
 
@@ -13,7 +13,7 @@ section: 'Getting started'
      font-size: 14px;
  }
  pre.console {
-   background-color: #300A24; 
+   background-color: #300A24;
    color: #ccc;
    font-family: monospace;
    padding: 5px;
@@ -34,11 +34,9 @@ section: 'Getting started'
 
 In this tutorial we are explaining how to deploy services on OVHcloud Managed Kubernetes service using our `LoadBalancer` to get external traffic into your cluster. We will begin by listing the main methods to expose Kubernetes services outside the cluster, with its advantages and disadvantage. Then  we will see a complete example of `LoadBalancer` service deployment.
 
-
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
-
 
 ## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
 
@@ -54,13 +52,11 @@ There are several ways to route the external traffic into your cluster:
 
 ### Using Kubernetes proxy and ClusterIP
 
-The default Kubernetes `ServiceType` is `ClusterIp`, that exposes the `Service` on a cluster-internal IP. To reach the `ClusterIp` from an external computer, you can open a Kubernetes proxy between the external computer and the cluster. 
+The default Kubernetes `ServiceType` is `ClusterIp`, that exposes the `Service` on a cluster-internal IP. To reach the `ClusterIp` from an external computer, you can open a Kubernetes proxy between the external computer and the cluster.
 
 You can use `kubectl` to create such a proxy. When the proxy is up, you're directly connected to the cluster, and you can use the `Services` internal IP (ClusterIp)
 
-
 ![ClusterIp and kubectl proxy](images/using-lb-ClusterIp.jpg){.thumbnail}
-
 
 This method isn't suited for a production environment, but it's interesting for development, debugging or other quick-and-dirty operations.
 
@@ -68,21 +64,15 @@ This method isn't suited for a production environment, but it's interesting for 
 
 Declaring a service of type `NodePort` exposes the `Service` on each Node’s IP at a static port, the `NodePort` (a fixed port for that `Service`, in the default range of 30000-32767). You can then access the `Service` from the outside of the cluster by requesting `<NodeIp>:<NodePort>`. Every service you deploy as `NodePort` will ve exposed in its own port, on every Node.
 
-
 ![NodePort](images/using-lb-NodePort.jpg){.thumbnail}
 
-
 It's rather cumbersome to use `NodePort` `Services` in production. As you are using non-standard ports, you often need to set-up an external load balancer that listen in standard ports and redirects the traffic to  the `<NodeIp>:<NodePort>`.
-
 
 ### Exposing services as LoadBalancer
 
 Declaring a service of type `LoadBalancer` exposes it externally using a cloud provider’s load balancer. The cloud provider will provision a load balancer for the `Service`, and map it to its automatically assigned `NodePort`.How the traffic from that external load balancer is routed to the `Service` pods depends on the cluster provider.
 
-
 ![LoadBalancer](images/using-lb-LoadBalancer.jpg){.thumbnail}
-
-
 
 The `LoadBalancer` is the best option for a production environnement, with two caveats:
 
@@ -91,7 +81,6 @@ The `LoadBalancer` is the best option for a production environnement, with two c
 
 > [!primary]
 > We are currently offering OVHcloud Managed Kubernetes LoadBalancer service as a free preview, until the end of summer 2019. During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
-
 
 ### What about Ingress
 
@@ -103,16 +92,15 @@ An Ingress is exposed to the outside of the cluster either via `ClusterIP` and K
 
 The main advance of using an `Ingress` behind a `LoadBalancer` is the cost: you can have lots of services behind a single `LoadBalancer`.
 
-
 ## Deploying LoadBalancer Services on OVHcloud Managed Kubernetes clusters
 
 In our OVHcloud Managed Kubernetes we propose a load balancing service enabling you to use `LoadBalancer` `ServiceType`. We are currently offering OVHcloud Managed Kubernetes LoadBalancer service as a free preview until the end of summer 2019. During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
 
-## Deploying a Hello World LoadBalancer service 
+## Deploying a Hello World LoadBalancer service
 
 Create a `hello.yaml` file for our `ovhplatform/hello` Docker image, defining the service type as `LoadBalancer`:
 
-```
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -152,10 +140,9 @@ spec:
         - containerPort: 80
 ```
 
-
 And apply the file:
 
-```
+```bash
 kubectl apply -f hello.yml
 ```
 
@@ -170,12 +157,11 @@ deployment.apps/hello-world-deployment created
 > The application you have just deployed is a simple nginx server with a single static *Hello World* page. 
 > Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/)
 
-
 ### List the services
 
 And now you're going to use `kubectl` to see your service:
 
-```
+```bash
 kubectl get service hello-world -w
 ```
 
@@ -186,11 +172,11 @@ NAME          TYPE           CLUSTER-IP    EXTERNAL-IP                        PO
 hello-world   LoadBalancer   10.3.81.234   &lt;pending>                          80:31699/TCP              9s
 </code></pre>
 
-As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `&lt;pending>` `EXTERNAL-IP`. 
+As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `&lt;pending>` `EXTERNAL-IP`.
 
 If you try again in a few minutes you should get an `EXTERNAL-IP`:
 
-<pre class="console"><code>$ kubectl get service hello-world 
+<pre class="console"><code>$ kubectl get service hello-world
 NAME          TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)        AGE
 hello-world   LoadBalancer   10.3.81.234   6d6regsa9pc.lb.c1.gra.k8s.ovh.net   80:31699/TCP   4m
 </code></pre>
@@ -200,8 +186,7 @@ For each service you deploy with LoadBalancer type, you will get a new sub-domai
 > [!primary]
 > The `LoadBalancer` is giving you a domain name and not an IP, because we anticipate a possible IP change at the end of the `LoadBalancer` free preview phase. The domain name will remain stable, so we prefer you to use it.
 > This can be a problem if you're directing a domain name to your OVHcloud Managed Kubernetes cluster, as to route your domain name to the `LoadBalancer` domain name you can only use `CNAME` records and not `A` ones.
-> If you want to route a root domain, for which `CNAME` records aren't allowed, you could use an `A` record to the IP behind the `LoadBalancer` domain name, but if you do it, please be aware that the IP can change. 
-
+> If you want to route a root domain, for which `CNAME` records aren't allowed, you could use an `A` record to the IP behind the `LoadBalancer` domain name, but if you do it, please be aware that the IP can change.
 
 ### Testing your service
 
@@ -209,14 +194,13 @@ If you point your web browser to the service URL, the `hello-world` service will
 
 ![Testing your service](images/using-lb-01.png){.thumbnail}
 
-
 ### Cleaning up
 
 At the end you can proceed to clean up by deleting the service and the deployment.
 
 Let's begin by deleting the service:
 
-```
+```bash
 kubectl delete service hello-world
 ```
 
@@ -230,7 +214,7 @@ No resources found.
 
 Then, you can delete the deployment:
 
-```
+```bash
 kubectl delete deploy hello-world-deployment
 ```
 
@@ -242,10 +226,9 @@ $ kubectl get deployments
 No resources found.
 </code></pre>
 
-
 If now you list the pods:
 
-```
+```bash
 kubectl get pods
 ```
 
