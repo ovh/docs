@@ -24,7 +24,7 @@ This guide is designed to help you with the most common tasks. However, we recom
 
 ## Requirements
 
-- You need to have purchased a VPS on the [OVHcloud website](https://www.ovhcloud.com/en-gb/){.external}.
+- You need to have purchased a VPS on the [OVHcloud website](https://www.ovhcloud.com/en-gb/vps/){.external}.
 - You need to have received the email with your access ID after the installation (validated during your order).
 
 
