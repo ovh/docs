@@ -1,7 +1,7 @@
 ---
-title: Accelerez WordPress grace a Redis
+title: 'Accelerez WordPress grace a Redis'
 slug: speed-up-wordpress-with-redis
-excerpt: Utilisation avancee d'un cache NoSQL
+excerpt: 'Utilisation avancee d''un cache NoSQL'
 section: Tutoriels
 ---
 
@@ -19,7 +19,7 @@ Vous disposez d'un site ou d'un blog propulsé par WordPress ? Découvrez commen
 > [!warning]
 >
 > Toutes les actions réalisées dans ce tutoriel sont de la responsabilité du Client.
-> OVH ne sera tenu responsable d'une quelconque défaillance.
+> OVHcloud ne sera tenu responsable d'une quelconque défaillance.
 > Pensez à effectuer une sauvegarde de vos fichiers avant toute modification.
 > 
 
@@ -28,7 +28,7 @@ Vous disposez d'un site ou d'un blog propulsé par WordPress ? Découvrez commen
 > [!primary]
 >
 > Ce tutoriel nécessite :
-> - un hébergement Web compatible et avec le module PHP-redis d'installé ou installable (un hébergement Web mutualisé OVH n'est pour l'instant pas compatible) : VPS, Serveur Dédié, Public Cloud.. chez OVH ou un autre prestataire.
+> - un hébergement Web compatible et avec le module PHP-redis d'installé ou installable (un hébergement Web mutualisé OVHcloud n'est pour l'instant pas compatible) : VPS, Serveur Dédié, Public Cloud.. chez OVHcloud ou un autre prestataire.
 > - un compte administrateur sur votre WordPress, afin d'installer un plugin.
 > - WordPress en version 4.x ou supérieure
 > - et bien sûr une base de données Redis, activable sur notre lab !
@@ -43,7 +43,7 @@ Vous l'aurez compris, les gains seront plus ou moins significatifs en fonction d
 
 Il existe une multitude de plugins permettant de gérer ce cache, le plus connu étant W3 Total Cache (W3TC). Cependant, il propose un cache d'objets en local (sur votre VPS, ou serveur), ce qui ne nous arrange parfois pas. Maintenir une base redis ou memcached peut être fastidieux et consommateur de mémoire.
 
-Nous allons voir dans ce tutoriel comment configurer le Lab Redis proposé par OVH, et le relier à votre WordPress. L'objectif est de gagner en performance au chargement de WordPress pour les visiteurs, mais aussi pour ses administrateurs.
+Nous allons voir dans ce tutoriel comment configurer le Lab Redis proposé par OVHcloud, et le relier à votre WordPress. L'objectif est de gagner en performance au chargement de WordPress pour les visiteurs, mais aussi pour ses administrateurs.
 
 C'est parti !
 
@@ -51,7 +51,7 @@ C'est parti !
 ## S'inscrire au Lab et tester sa base Redis
 La première étape consiste à obtenir une base de données Redis et à vérifier son fonctionnement.
 
-Direction [Runabove OVH labs](http://www.runabove.com.){.external} puis souscrivez au lab Redis. Une fois fait, via le [Manager OVH Sunrise](https://www.ovh.com/manager/sunrise/){.external}, créez une base Redis, changez de mot de passe, et gardez la page ouverte, nous allons nous en servir.
+Direction [Runabove OVHcloud labs](http://www.runabove.com.){.external} puis souscrivez au lab Redis. Une fois fait, via le [Manager OVHcloud Sunrise](https://www.ovh.com/manager/sunrise/){.external}, créez une base Redis, changez de mot de passe, et gardez la page ouverte, nous allons nous en servir.
 
 
 ![Redis Sunrise manager](images/sunrise.png){.thumbnail}
@@ -72,7 +72,7 @@ Pour ma part cela ressemble à :
 redis-cli -h 950c9520-ed3c-492c-8e0a-c1xxxxxxxxxx.pdb.ovh.net -p 21244
 ```
 
-Puis authentifiez-vous avec le mot de passe défini dans votre Manager OVH Sunrise. Redis fonctionne avec un mot de passe unique, aucun User requis..
+Puis authentifiez-vous avec le mot de passe défini dans votre Manager OVHcloud Sunrise. Redis fonctionne avec un mot de passe unique, aucun User requis..
 
 
 ```bash
@@ -132,7 +132,7 @@ Testons maintenant la connexion à Redis en PHP, depuis votre hébergement. Via 
 9. ?>
 ```
 
-N'oubliez pas de renseigner l'URL d'accès, le port et le mot de passe de votre base, renseignés dans votre Manager OVH Sunrise. Rendez-vous ensuite sur [http://www.mywebsite.com/wordpress/redis.php](http://www.mywebsite.com/wordpress/redis.php){.external}.
+N'oubliez pas de renseigner l'URL d'accès, le port et le mot de passe de votre base, renseignés dans votre Manager OVHcloud Sunrise. Rendez-vous ensuite sur [http://www.mywebsite.com/wordpress/redis.php](http://www.mywebsite.com/wordpress/redis.php){.external}.
 
 Si la connexion est réussie, vous devriez voir "Server is running: +PONG"
 
@@ -220,7 +220,7 @@ get myvpswp_:posts:1
 
 Au niveau performance, j'ai ouvert les outils de développement puis "Network". Etant parti d'un WordPress totalement propre et sans contenu, je n'ai pas un gain très significatif mais tout de même appréciable !
 
-Le site s'affiche en 250ms en moyenne au lieu de 500ms (hébergé sur un [VPS SSD OVH](https://www.ovh.com/fr/vps/vps-ssd.xml){.external} situé à Strasbourg).
+Le site s'affiche en 250ms en moyenne au lieu de 500ms (hébergé sur un [VPS SSD OVHcloud](https://www.ovhcloud.com/fr/vps/){.external} situé à Strasbourg).
 
 
 ![Chrome Network tool](images/chrome.png){.thumbnail}
