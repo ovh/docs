@@ -1,8 +1,8 @@
 ---
-title: Pierwsze kroki z serwerem VPS
-excerpt: Poznaj podstawy korzystania z serwera VPS
+title: 'Pierwsze kroki z serwerem VPS'
+excerpt: 'Poznaj podstawy korzystania z serwera VPS'
 slug: pierwsze-kroki-vps
-section: Pierwsze kroki
+section: 'Pierwsze kroki'
 order: 1
 ---
 
@@ -10,18 +10,18 @@ order: 1
  
 ## Wprowadzenie
 
-Wirtualny serwer prywatny (VPS, Virtual Private Server) to inaczej zwirtualizowana wydzielona część serwera dedykowanego. W przeciwieństwie do hostingu współdzielonego, w przypadku którego zarządzanie techniczne leży po stronie OVH, tutaj to Ty zarządzasz w całości serwerem VPS.
+Wirtualny serwer prywatny (VPS, Virtual Private Server) to inaczej zwirtualizowana wydzielona część serwera dedykowanego. W przeciwieństwie do hostingu współdzielonego, w przypadku którego zarządzanie techniczne leży po stronie OVHcloud, tutaj to Ty zarządzasz w całości serwerem VPS.
 
 **Ten przewodnik pomoże Ci rozpocząć pracę z Twoim nowym serwerem VPS.**
 
 > [!warning]
 >
-> OVH oddaje do Twojej dyspozycji maszynę, za którą to Ty przejmujesz odpowiedzialność. Ponieważ nie mamy dostępu do udostępnionej Ci maszyny, nie możemy być jej administratorem. Dlatego to do Ciebie należy codzienne  zarządzanie oprogramowaniem i dbanie o bezpieczeństwo. Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z wyspecjalizowanym dostawcą. Więcej informacji znajduje się w rozdziale „Sprawdź również”.
+> OVHcloud oddaje do Twojej dyspozycji maszynę, za którą to Ty przejmujesz odpowiedzialność. Ponieważ nie mamy dostępu do udostępnionej Ci maszyny, nie możemy być jej administratorem. Dlatego to do Ciebie należy codzienne  zarządzanie oprogramowaniem i dbanie o bezpieczeństwo. Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z wyspecjalizowanym dostawcą. Więcej informacji znajduje się w rozdziale „Sprawdź również”.
 > 
 
 ## Wymagania początkowe
 
-- Zakupienie serwera VPS na [stronie OVH](https://www.ovh.pl/vps/){.external}.
+- Zakupienie serwera VPS na [stronie OVHcloud](https://www.ovhcloud.com/pl/https://www.ovh.pl/vps/){.external}.
 - Otrzymanie po instalacji wiadomości e-mail (po weryfikacji i zrealizowaniu zamówienia) zawierającej dane dostępowe.
 
 ## W praktyce
@@ -62,7 +62,7 @@ Otworzy się okienko, w którym należy wybrać:
 
 > [!primary]
 >
-> Niektóre dystrybucje, np. Plesk lub Windows wymagają wcześniejszego wykupienia licencji, którą możesz nabyć w OVH lub od innego dystrybutora. Następnie należy wprowadzić go ręcznie lub poprzez Panel klienta. Wchodząc w panel `Dedykowany`{.action}, a następnie `Licencje`{.action}, można również zarządzać licencjami.
+> Niektóre dystrybucje, np. Plesk lub Windows wymagają wcześniejszego wykupienia licencji, którą możesz nabyć w OVHcloud lub od innego dystrybutora. Następnie należy wprowadzić go ręcznie lub poprzez Panel klienta. Wchodząc w panel `Dedykowany`{.action}, a następnie `Licencje`{.action}, można również zarządzać licencjami.
 > W tym miejscu możesz także zamawiać licencje (przycisk po prawej `Zamów`{.action}) lub dodać własną licencję SPLA Windows lub SPLA SQL Server (przycisk po prawej `Dodaj licencję SPLA`{.action}).
 > 
 
@@ -80,7 +80,7 @@ Po zainstalowaniu i zabezpieczeniu serwera VPS możesz również zabezpieczyć s
 
 Certyfikat ten można zainstalować ręcznie we własnym zakresie bezpośrednio na serwerze VPS. W tym celu sprawdź oficjalną dokumentację użytkowanej przez Ciebie dystrybucji.
 
-Jeśli chcesz tego dokonać w sposób bardziej zautomatyzowany, OVH oferuje [SSL Gateway](https://www.ovh.pl/ssl-gateway/). Przejdź na stronę [oferty](https://www.ovh.pl/ssl-gateway/){.external} lub do [dokumentacji](https://docs.ovh.com/pl/ssl-gateway/korzystanie-ssl-gateway/){.external} proponowanej oferty.
+Jeśli chcesz tego dokonać w sposób bardziej zautomatyzowany, OVHcloud oferuje [SSL Gateway](https://www.ovh.pl/ssl-gateway/). Przejdź na stronę [oferty](https://www.ovh.pl/ssl-gateway/){.external} lub do [dokumentacji](https://docs.ovh.com/pl/ssl-gateway/korzystanie-ssl-gateway/){.external} proponowanej oferty.
 
 ## Sprawdź również
 
