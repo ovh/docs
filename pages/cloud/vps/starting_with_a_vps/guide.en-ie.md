@@ -23,7 +23,7 @@ A virtual private server (VPS) is a virtualised dedicated server. Unlike web hos
 
 ## Requirements
 
-- You need to have reserved your VPS on the [OVHcloud website](https://www.ovhcloud.com/en-ie/){.external}.
+- You need to have reserved your VPS on the [OVHcloud website](https://www.ovhcloud.com/en-ie/vps/){.external}.
 - You need to have received the email with your access ID after the installation (validated during your order).
 
 
