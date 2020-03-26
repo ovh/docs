@@ -23,7 +23,7 @@ Um VPS (Virtual Private Server) é um servidor dedicado virtual. Ao contrário d
 
 ## Requisitos
 
-- Ter contratado um [VPS OVHcloud](https://www.ovhcloud.com/pt/){.external}.
+- Ter contratado um [VPS OVHcloud](https://www.ovhcloud.com/pt/vps/){.external}.
 - Ter recebido um e-mail depois da instalação com os dados de utilizador.
 
 
