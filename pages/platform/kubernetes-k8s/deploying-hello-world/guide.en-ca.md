@@ -1,5 +1,5 @@
 ---
-title: 'Deploying a Hello World application with the OVH Control Panel'
+title: Deploying a Hello World application with the OVH Control Panel
 slug: deploying-hello-world
 excerpt: 'Find out how to deploy a Hello World application with the OVH Control Panel'
 section: Tutorials
@@ -14,12 +14,10 @@ In this guide, we are assuming that you're using the [OVH Control Panel](https:/
 
 - [Deploying a Hello World with the OVH API](../deploying-hello-world-ovh-api/)
 
-
 ## Before you begin
 
 * You should have already created a cluster on the OVHcloud Managed Kubernetes service.
 * You will also need the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool. You can find the [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/){.external} for this tool on Kubernetes' official site.
-
 
 ## Getting your cluster information
 
@@ -45,17 +43,14 @@ In the *Computer Nodes* tab of the administration UI, click on *Add Node*. For t
 
 ![Add a worker node](images/kubernetes-quickstart-03.png){.thumbnail}
 
-
 ## Verify that your node is ready
-
 
 In the *Computer Nodes* tab, you can inspect the state of your nodes. The node you have just created should now be in an *Installing* state. The node installation can take a minute, so feel free to take a short break, then try again until it's ready.
 
 ![Verify your node is ready](images/kubernetes-quickstart-06.png){.thumbnail}
 
-
 ## Deploy your first application
 
 You're now ready to deploy your first application.
 
-For more details about this process, you can refer to our [deploying an application](../deploying-an-application/) documentation. 
+For more details about this process, you can refer to our [deploying an application](../deploying-an-application/) documentation.
