@@ -21,7 +21,7 @@ Wirtualny serwer prywatny (VPS, Virtual Private Server) to inaczej zwirtualizowa
 
 ## Wymagania początkowe
 
-- Zakupienie serwera VPS na [stronie OVHcloud](https://www.ovhcloud.com/pl/https://www.ovh.pl/vps/){.external}.
+- Zakupienie serwera VPS na [stronie OVHcloud](https://www.ovhcloud.com/pl/vps/){.external}.
 - Otrzymanie po instalacji wiadomości e-mail (po weryfikacji i zrealizowaniu zamówienia) zawierającej dane dostępowe.
 
 ## W praktyce
