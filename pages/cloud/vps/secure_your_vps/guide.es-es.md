@@ -1,22 +1,22 @@
 ---
-title: Proteger un VPS
+title: 'Proteger un VPS'
 slug: consejos-proteccion-vps
-excerpt: Medidas de seguridad para proteger un servidor privado virtual
-section: Primeros pasos
+excerpt: 'Medidas de seguridad para proteger un servidor privado virtual'
+section: 'Primeros pasos'
 ---
 
 **Última actualización: 05/02/2018**
 
 ## Objetivo
 
-Los VPS de OVH se entregan con una distribución preinstalada, pero no incluyen de forma nativa ningún protocolo de seguridad. Por lo tanto, usted deberá proteger su VPS, ya que este es un aspecto sobre el que OVH no puede intervenir.
+Los VPS de OVHcloud se entregan con una distribución preinstalada, pero no incluyen de forma nativa ningún protocolo de seguridad. Por lo tanto, usted deberá proteger su VPS, ya que este es un aspecto sobre el que OVHcloud no puede intervenir.
 
-**En esta guía le ofrecemos algunos consejos para proteger un VPS de OVH.**
+**En esta guía le ofrecemos algunos consejos para proteger un VPS de OVHcloud.**
 
  
 > [!warning]
 >
-> La responsabilidad sobre las máquinas que OVH pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. Esta guía le ayudará a realizar las operaciones más habituales en su VPS.
+> La responsabilidad sobre las máquinas que OVHcloud pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. Esta guía le ayudará a realizar las operaciones más habituales en su VPS.
 >
 > No obstante, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
 > 
@@ -194,9 +194,9 @@ iptables -L
 
 Le recomendamos que cree y adapte las reglas del firewall en función de su uso. Para más información sobre las distintas acciones que puede realizar, consulte la documentación oficial de su distribución.
 
-### Configurar el firewall de red de OVH
+### Configurar el firewall de red de OVHcloud
 
-OVH pone a disposición de sus clientes un firewall de red en la entrada de la infraestructura. Activándolo y configurándolo correctamente es posible bloquear determinados protocolos antes incluso de que lleguen al servidor.
+OVHcloud pone a disposición de sus clientes un firewall de red en la entrada de la infraestructura. Activándolo y configurándolo correctamente es posible bloquear determinados protocolos antes incluso de que lleguen al servidor.
 
 Para más información sobre el firewall de red, consulte esta [guía](https://docs.ovh.com/es/dedicated/firewall-de-red/){.external}.
 
@@ -204,13 +204,13 @@ Para más información sobre el firewall de red, consulte esta [guía](https://d
 
 La noción de seguridad va más allá de proteger un sistema frente a posibles ataques.
 
-La protección de los datos es un aspecto fundamental. Por eso, OVH ofrece tres opciones de backup:
+La protección de los datos es un aspecto fundamental. Por eso, OVHcloud ofrece tres opciones de backup:
 
 - La opción **Snapshot** permite crear manualmente una «instantánea» (llamada snapshot) de la máquina virtual. Está disponible en los VPS SSD, VPS Cloud y VPS Cloud RAM.
 - La opción **Backup automatizado** permite planificar una copia de seguridad diaria del VPS (exceptuando los discos adicionales), que es exportada y replicada tres veces antes de estar disponible en el área de cliente. Está disponible en los VPS Cloud y VPS Cloud RAM.
-- La opción **Backup Storage** permite transferir y recuperar archivos manualmente en un espacio en disco dedicado. Para adaptarse a los métodos de acceso de los usuarios de los distintos sistemas operativos, OVH pone a su disposición los siguientes protocolos de transferencia: FTP, NFS y CIFS. De este modo, podrá proteger sus datos en caso de interrupción del servicio. Esta opción está disponible en los VPS Cloud y VPS Cloud RAM.
+- La opción **Backup Storage** permite transferir y recuperar archivos manualmente en un espacio en disco dedicado. Para adaptarse a los métodos de acceso de los usuarios de los distintos sistemas operativos, OVHcloud pone a su disposición los siguientes protocolos de transferencia: FTP, NFS y CIFS. De este modo, podrá proteger sus datos en caso de interrupción del servicio. Esta opción está disponible en los VPS Cloud y VPS Cloud RAM.
 
-Para más información sobre nuestras soluciones de backup para VPS, visite la página <https://www.ovh.es/vps/backup-vps.xml>.
+Para más información sobre nuestras soluciones de backup para VPS, visite la página <https://www.ovhcloud.com/es/vps/>.
 
 ## Más información
 
