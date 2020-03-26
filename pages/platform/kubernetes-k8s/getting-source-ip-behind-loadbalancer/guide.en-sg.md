@@ -1,5 +1,5 @@
 ---
-title: 'Getting the source IP behind the LoadBalancer'
+title: Getting the source IP behind the LoadBalancer
 slug: getting-source-ip-behind-loadbalancer
 excerpt: 'Find out how to get the source IP behind the LoadBalancer on OVHcloud Managed Kubernetes'
 section: Tutorials
@@ -10,7 +10,7 @@ section: Tutorials
      font-size: 14px;
  }
  pre.console {
-   background-color: #300A24; 
+   background-color: #300A24;
    color: #ccc;
    font-family: monospace;
    padding: 5px;
@@ -29,11 +29,9 @@ section: Tutorials
 
 **Last updated 20<sup>th</sup> August, 2019.**
 
-
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and you have deployed there an application using the OVHcloud Managed Kubernetes LoadBalancer. If you want to know more on those topics, please look at the [using the OVHcloud Managed Kubernetes LoadBalancer](../using-lb/) documentation.
-
 
 ## The problem
 
@@ -43,15 +41,13 @@ When deploying the services in `LoadBalancer` mode, things are a bit different, 
 
 This tutorial describe how to deploy a `LoadBalancer` service on OVHcloud Managed Kubernetes and preserve the source IP.
 
-
 ## Getting the request's source IP behind the LoadBalancer
 
-The easiest way to deploy services behind the Load Balancer while keeping the source IP is to place your services under an `Ingress`, itself behind the `LoadBalancer`. 
+The easiest way to deploy services behind the Load Balancer while keeping the source IP is to place your services under an `Ingress`, itself behind the `LoadBalancer`.
 
 The `Ingress` is exposed to the outside of the cluster either via  `LoadBalancer`, and it routes incoming traffic to your services according to configured rules. And additional advantage of this setting is the cost: you can have lots of services behind a single `LoadBalancer`.
 
 In this tutorial we are using the most basic Ingress Controller: [NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx){.external}, where an NGINX server take the role of reverse proxy.
-
 
 ### 1. Installing the NGINX Ingress Controller
 
@@ -63,7 +59,6 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/mast
 
 It creates the `namespace`, `serviceaccount`, `role` and all the other Kuberbetes objects needed for the Ingress Controller, and then it deploys the controller:
 
-
 <pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
 namespace/ingress-nginx created
 configmap/nginx-configuration created
@@ -74,16 +69,15 @@ clusterrole.rbac.authorization.k8s.io/nginx-ingress-clusterrole created
 role.rbac.authorization.k8s.io/nginx-ingress-role created
 rolebinding.rbac.authorization.k8s.io/nginx-ingress-role-nisa-binding created
 clusterrolebinding.rbac.authorization.k8s.io/nginx-ingress-clusterrole-nisa-binding created
-deployment.apps/nginx-ingress-controller created</code></pre>
-
+deployment.apps/nginx-ingress-controller created
+</code></pre>
 
 ### 2. Deploying an Ingress behind the LoadBalancer
 
 Now we are deploying the Ingress that will be the entry point for your services, and placing it behind the `LoadBalancer`.
 Our Ingress definition uses the [`externalTrafficPolicy`](https://kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/#preserving-the-client-source-ip) property with `Local` value, that preserves the client source IP.
 
-
-Here you have the manifest for this Ingress: 
+Here you have the manifest for this Ingress:
 
 ```yaml
 kind: Service
@@ -134,12 +128,11 @@ NAME         TYPE           CLUSTER-IP    EXTERNAL-IP                          P
 ingress-lb   LoadBalancer   10.3.242.23   xxxxxxxxxx.lb.c1.gra.k8s.ovh.net     80:30113/TCP,443:30051/TCP   3m8s</code></pre>
 
 > [!warning]
-> As the `LoadBalancer` creation is asynchronous, and the provisioning of the Load Balancer can take several minutes,  you can get a `&lt;pending>` at `EXTERNAL-IP` while the Load Balancer is setting up. In this case, please wait some minutes and try again.
-
+> As the `LoadBalancer` creation is asynchronous, and the provisioning of the Load Balancer can take several minutes,  you can get a `<pending>` at `EXTERNAL-IP` while the Load Balancer is setting up. In this case, please wait some minutes and try again.
 
 ### 3. Patching the Ingress Controller
 
-Now you need to patch the Ingress controller to support the proxy protocol. 
+Now you need to patch the Ingress controller to support the proxy protocol.
 
 Copy the next YAML snippet in a `patch-ingress-configmap.yml` file:
 
@@ -177,7 +170,6 @@ You should see the configuration being patched and the controller pod deleted (a
 configmap/nginx-configuration patched
 $ kubectl -n ingress-nginx get pod | grep 'ingress' | cut -d " " -f1 - | xargs -n1 kubectl -n ingress-nginx delete pod
 pod "nginx-ingress-controller-86449c74bb-cfwnv" deleted</code></pre>
-
 
 ### 4. Testing
 
@@ -225,7 +217,7 @@ metadata:
   name: echo-service
   namespace: echo
 spec:
-  selector:    
+  selector:
     app: echo
   ports:  
   - name: http
@@ -244,7 +236,7 @@ spec:
   backend:
     serviceName: echo-service
     servicePort: 80
-```        
+```
 
 And deploy it on your cluster:
 
@@ -253,8 +245,8 @@ kubectl apply -f echo.yaml
 ```
 
 <pre class="console"><code>$ kubectl apply -f echo.yaml
-namespace/echo created                           
-deployment.apps/echo-deployment created          
+namespace/echo created
+deployment.apps/echo-deployment created
 service/echo-service created
 ingress.extensions/echo-ingress created</code></pre>  
 
@@ -306,4 +298,4 @@ And you should get the HTTP parameters of your request, including the right sour
 
 ## What if I want to use another Ingress Controller
 
-The precedent method should work in a similar way for any Ingress Controller. We will soon update this tutorial with more detailed information on other Ingress Controllers, specifically Traefik 
+The precedent method should work in a similar way for any Ingress Controller. We will soon update this tutorial with more detailed information on other Ingress Controllers, specifically Traefik.
