@@ -1,7 +1,7 @@
 ---
 title: 'IPv6 auf einem VPS einrichten'
 slug: ipv6-konfigurieren
-excerpt: 'So konfigurieren Sie IPv6 auf Ihrem OVH VPS'
+excerpt: 'So konfigurieren Sie IPv6 auf Ihrem OVHcloud VPS'
 section: 'Netzwerk und IP'
 order: 1
 ---
@@ -10,21 +10,21 @@ order: 1
 
 ## Einleitung
 
-IPv6 ist die neueste Version des *Internet Protocol* (IP). Jeder OVH VPS wird mit einer IPv4-Adresse und einer IPv6-Adresse geliefert. Standardmäßig ist nur IPv4 eingerichtet. Allerdings möchten Sie möglicherweise aus verschiedenen Gründen auch IPv6 konfigurieren.
+IPv6 ist die neueste Version des *Internet Protocol* (IP). Jeder OVHcloud VPS wird mit einer IPv4-Adresse und einer IPv6-Adresse geliefert. Standardmäßig ist nur IPv4 eingerichtet. Allerdings möchten Sie möglicherweise aus verschiedenen Gründen auch IPv6 konfigurieren.
 
-**In dieser Anleitung erfahren Sie, wie Sie eine IPv6 auf Ihrem OVH VPS einrichten.**
+**In dieser Anleitung erfahren Sie, wie Sie eine IPv6 auf Ihrem OVHcloud VPS einrichten.**
 
 > [!warning]
 >
-> OVH stellt Ihnen Maschinen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir keinerlei Administrator-Aufgaben für diese Server übernehmen. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit Ihrer Anlage zu gewährleisten. Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> OVHcloud stellt Ihnen Maschinen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir keinerlei Administrator-Aufgaben für diese Server übernehmen. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit Ihrer Anlage zu gewährleisten. Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
 > 
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [VPS von OVH](https://www.ovh.de/virtual_server/){.external}.
+- Sie verfügen über einen [VPS von OVHcloud](https://www.ovhcloud.com/de/vps/){.external}.
 - Sie sind via SSH auf Ihrem VPS eingeloggt (Root-Zugriff).
 - Sie verfügen über grundlegende Netzwerkkenntnisse.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Server`{.action} (früher „Cloud“).
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Server`{.action} (früher „Cloud“).
 
 ## Beschreibung
 
@@ -43,19 +43,19 @@ Bevor Sie beginnen und um durchgehend konsistente Terminologie zu verwenden, les
 Der erste Schritt besteht darin, die Ihrem Server zugewiesene IPv6-Adresse sowie das zugehörige IPv6-Gateway zu ermitteln. Hierzu stehen Ihnen zwei Möglichkeiten zur Auswahl.
 
 - [Netzwerkinformationen über das Kundencenter abrufen](https://docs.ovh.com/de/vps/ipv6-konfigurieren/#uber-ihr-kundencenter)
-- [Netzwerkinformationen via API abrufen](https://docs.ovh.com/de/vps/ipv6-konfigurieren/#via-ovh-api)
+- [Netzwerkinformationen via API abrufen](https://docs.ovh.com/de/vps/ipv6-konfigurieren/#via-ovhcloud-api)
 
 #### Über Ihr Kundencenter
 
-Loggen Sie sich hierzu in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie in den Bereich `Server`{.action} (früher „Cloud“). Klicken Sie im linken Menü auf `VPS`{.action} und wählen Sie den betreffenden VPS aus. Vergewissern Sie sich, dass Sie sich im Tab `Start`{.action} befinden.
+Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie in den Bereich `Server`{.action} (früher „Cloud“). Klicken Sie im linken Menü auf `VPS`{.action} und wählen Sie den betreffenden VPS aus. Vergewissern Sie sich, dass Sie sich im Tab `Start`{.action} befinden.
 
 Die Ihrem Server zugewiesene IPv6-Adresse sowie das zugehörige IPv6-Gateway werden im Bereich `IP` angezeigt. Speichern Sie diese und gehen Sie weiter zu Schritt 2 „[IPv6-Konfiguration anwenden](https://docs.ovh.com/de/vps/ipv6-konfigurieren/#schritt-2-ipv6-konfiguration-anwenden_1){.external}“.
 
 ![ipv6 konfigurieren](images/configure-ipv6-step1.png){.thumbnail}
 
-#### Via OVH API
+#### Via OVHcloud API
 
-Gehen Sie auf die Seite <https://api.ovh.com/console/> und loggen Sie sich mir Ihrer OVH Kennung ein. Verwenden Sie anschließend die nachstehenden API-Aufrufe.
+Gehen Sie auf die Seite <https://api.ovh.com/console/> und loggen Sie sich mir Ihrer OVHcloud Kennung ein. Verwenden Sie anschließend die nachstehenden API-Aufrufe.
 
 Über den ersten erhalten Sie die zu Ihrem Server gehörige IPv6-Adresse.
 
