@@ -23,7 +23,7 @@ Un Virtual Private Server (VPS) è un server dedicato virtualizzato. A differenz
 
 ## Prerequisiti
 
-- Aver ordinato un VPS sul [sito OVHcloud](https://www.ovhcloud.com/it/){.external}
+- Aver ordinato un VPS sul [sito OVHcloud](https://www.ovhcloud.com/it/vps/){.external}
 - Avere a disposizione le credenziali di accesso ricevute via email dopo l'installazione
 
 
