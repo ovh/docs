@@ -25,7 +25,7 @@ Un servidor virtual privado (VPS, por sus siglas en inglés) es un servidor dedi
 
 ## Requisitos
 
-- Haber contratado un VPS en el [sitio web de OVHcloud](https://www.ovhcloud.com/es/){.external}.
+- Haber contratado un VPS en el [sitio web de OVHcloud](https://www.ovhcloud.com/es/vps/){.external}.
 - Haber recibido el mensaje de correo electrónico con sus claves de acceso tras la instalación.
 
 
