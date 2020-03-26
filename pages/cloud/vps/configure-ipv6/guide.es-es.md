@@ -1,7 +1,7 @@
 ---
 title: 'Configurar una dirección IPv6 en un VPS'
 slug: configurar-ipv6
-excerpt: 'Cómo configurar una dirección IPv6 en un VPS de OVH'
+excerpt: 'Cómo configurar una dirección IPv6 en un VPS de OVHcloud'
 section: 'Red e IP'
 order: 1
 ---
@@ -10,23 +10,23 @@ order: 1
 
 ## Objetivo
 
-El protocolo de internet versión 6 (**IPv6**) es la última versión del protocolo de internet (IP). Todos los VPS de OVH se entregan con una dirección IPv4 y una dirección IPv6. Por defecto solo está configurada la IPv4, pero existen diversos motivos por los que podría ser necesario configurar la IPv6.
+El protocolo de internet versión 6 (**IPv6**) es la última versión del protocolo de internet (IP). Todos los VPS de OVHcloud se entregan con una dirección IPv4 y una dirección IPv6. Por defecto solo está configurada la IPv4, pero existen diversos motivos por los que podría ser necesario configurar la IPv6.
 
-**Esta guía explica cómo configurar la IPv6 en un VPS de OVH.**
+**Esta guía explica cómo configurar la IPv6 en un VPS de OVHcloud.**
 
 > [!warning]
 >
-> La responsabilidad sobre las máquinas que OVH pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. 
+> La responsabilidad sobre las máquinas que OVHcloud pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. 
 > 
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
 > 
 
 ## Requisitos
 
-- Tener un [VPS de OVH](https://www.ovh.es/vps/){.external}.
+- Tener un [VPS de OVHcloud](https://www.ovhcloud.com/es/vps/){.external}.
 - Estar conectado al VPS por SSH (acceso *root*).
 - Tener conocimientos básicos de redes.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Procedimiento
 
@@ -49,7 +49,7 @@ En primer lugar, es necesario conocer la dirección IPV6 y la puerta de enlace I
 
 #### Desde el área de cliente
 
-Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Cloud`{.action}. En la columna izquierda, haga clic en `Servidores`{.action} y seleccione el VPS correspondiente. Por defecto, se abrirá la pestaña `Inicio`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Cloud`{.action}. En la columna izquierda, haga clic en `Servidores`{.action} y seleccione el VPS correspondiente. Por defecto, se abrirá la pestaña `Inicio`{.action}.
 
 En el apartado **IP** podrá ver la dirección IPv6 y la puerta de enlace IPv6 asignadas al VPS. Anótelas y continúe en el apartado [2. Aplicar la configuración IPv6](https://docs.ovh.com/es/vps/configurar-ipv6/#2-aplicar-la-configuracion-ipv6_1){.external}.
 
@@ -57,7 +57,7 @@ En el apartado **IP** podrá ver la dirección IPv6 y la puerta de enlace IPv6 a
 
 #### A través de la API
 
-Vaya a la página <https://api.ovh.com/console/> y conéctese a la API de OVH con su ID de cliente y contraseña. Utilice las llamadas a la API que se indican a continuación.
+Vaya a la página <https://api.ovh.com/console/> y conéctese a la API de OVHcloud con su ID de cliente y contraseña. Utilice las llamadas a la API que se indican a continuación.
 
 Para obtener la dirección IPv6 asignada al VPS:
 
@@ -370,4 +370,4 @@ Para que cloud-init vuelva a gestionar la red automáticamente, elimine dicho ar
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
