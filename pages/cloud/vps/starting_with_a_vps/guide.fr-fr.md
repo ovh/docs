@@ -23,7 +23,7 @@ Un serveur privé virtuel (VPS, pour Virtual Private Server) est un serveur déd
 
 ## Prérequis
 
-- Avoir réservé votre VPS sur le [site OVHcloud](https://www.ovhcloud.com/fr/){.external}.
+- Avoir réservé votre VPS sur le [site OVHcloud](https://www.ovhcloud.com/fr/vps/){.external}.
 - Avoir reçu l'e-mail après l'installation (validée lors de la commande initiale) avec vos accès.
 
 
