@@ -1,6 +1,6 @@
 ---
-título: 'Alterar os contactos de um projeto'
-excerto: 'Alterar os contactos de um projeto'
+title: 'Alterar os contactos de um projeto'
+excerpt: 'Alterar os contactos de um projeto'
 slug: alterar_os_contactos_de_um_projeto
 legacy_guide_number: g2106
 section: 'Gestão do projeto'
