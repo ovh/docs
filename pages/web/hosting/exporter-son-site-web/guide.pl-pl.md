@@ -40,9 +40,9 @@ Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. Dzięki n
 
 Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz pobrać pliki z przestrzeni dyskowej na dwa sposoby:
 
-- **program kompatybilny z protokołem FTP lub SFTP**\: zainstaluj na Twoim komputerze odpowiedni program, np. [ FileZilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/). Jeśli chcesz uzyskać pomoc w zakresie korzystania z tego programu, skontaktuj się z jego producentem.
+- **program kompatybilny z protokołem FTP lub SFTP**: zainstaluj na Twoim komputerze odpowiedni program, np. [ FileZilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/). Jeśli chcesz uzyskać pomoc w zakresie korzystania z tego programu, skontaktuj się z jego producentem.
 
-- **dostęp przez SSH**\: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową. Do tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz [posiadanie hostingu OVHcloud](https://www.ovh.pl/hosting/){.external}. Aby uzyskać więcej informacji, zapoznaj się z naszą instrukcją [„Korzystanie z dostępu SSH do hostingu WWW”](https://docs.ovh.com/pl/hosting/hosting_www_ssh_na_hostingu/){.external}. 
+- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową. Do tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz [posiadanie hostingu OVHcloud](https://www.ovh.pl/hosting/){.external}. Aby uzyskać więcej informacji, zapoznaj się z naszą instrukcją [„Korzystanie z dostępu SSH do hostingu WWW”](https://docs.ovh.com/pl/hosting/hosting_www_ssh_na_hostingu/){.external}. 
 
 #### 1.2 Pobranie plików z przestrzeni dyskowej.
 
