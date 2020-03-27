@@ -44,6 +44,11 @@ By understanding what each of these records does, you will gain a better underst
 |SPF|The SPF record is used to avoid potential identity theft via the email addresses that use your domain name. For example, this record specifies that only your email service provider’s server must be identified as a legitimate sending source. To find out more about this, you can refer to our guide to [Adding an SPF record to your domain name’s DNS configuration](https://docs.ovh.com/gb/en/domains/web_hosting_the_spf_record/){.external}.|
 |CAA|The CAA record is used to list the certificate authorities authorised to deliver SSL certificates for a domain name.|
 
+> [!warning]
+>
+> A CNAME record cannot exist with another type of record with the same domain or subdomain. 
+>
+
 ### Step 1: Access the area for managing your domain’s OVH DNS zone
 
 First of all, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
