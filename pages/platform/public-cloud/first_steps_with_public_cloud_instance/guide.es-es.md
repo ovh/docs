@@ -69,7 +69,7 @@ Una vez realizada la copia de seguridad, podrá verla en la sección `«Copia de
 
 ![public-cloud](images/backup3.png){.thumbnail}
 
-Si necesita ayuda, puede consultar nuestra guía [«Hacer una copia de seguridad de una instancia»](../back-up-instance/).
+Si necesita ayuda, puede consultar nuestra guía [«Guardar una copia de seguridad de una instancia»](../guardar_copia_de_seguridad_de_una_instancia/).
 
 ### Crear automáticamente una copia de seguridad de una instancia.
 
@@ -89,7 +89,7 @@ En cualquier momento, puede acceder a `«Gestión del flujo de trabajo»`{.actio
 
 ![public-cloud](images/backupautodelete.png){.thumbnail}
 
-Si necesita ayuda, puede consultar nuestra guía [«Hacer una copia de seguridad de una instancia»](../back-up-instance/). 
+Si necesita ayuda, puede consultar nuestra guía [«Guardar una copia de seguridad de una instancia»](../guardar_copia_de_seguridad_de_una_instancia/). 
 
 ### Recuperar la información de inicio de sesión.
 
@@ -117,7 +117,7 @@ Hay dos formas diferentes de reiniciar una instancia:
 - Reinicio en caliente (mediante <i>software</i>)
 - Reinicio en frío (mediante <i>hardware</i>)
 
-En la interfaz de administración de la instancia, haga clic en los 3 puntos a la derecha de la instancia y seleccione ora `«Reinicio en caliente (mediante <i>software</i>)»`{.action}, ora `«Reinicio en frío (mediante <i>hardware</i>)»`{.action}.
+En la interfaz de administración de la instancia, haga clic en los 3 puntos a la derecha de la instancia y seleccione ora `«Reinicio en caliente (mediante software)»`{.action}, ora `«Reinicio en frío (mediante hardware)»`{.action}.
 
 Entonces confirme su petición en la ventana que se abre.
 
