@@ -1,22 +1,22 @@
 ---
 title: 'Creating and deleting an OpenStack user'
 slug: creation-and-deletion-of-openstack-user
-section: Knowledge Base
+section: 'Knowledge Base'
 ---
 
 **Last updated 6th December 2019**
 
-## Introduction
+## Objective
 To use the Horizon or OpenStack APIs, you will need to create an OpenStack user. This guide will show you how to create and delete a user.
 
 The number of OpenStack users is not limited.
 
-
-### Requirements
+## Requirements
 A Public Cloud project, and it must be more than 7 days old if it is your first project (or contact the support team to check if you can unblock the project early) Other projects will not have this limitation.
 
+## Instructions
 
-## Create an OpenStack user.
+### Create an OpenStack user.
 First of all, to access the Horizon interface, you need to create an OpenStack user account. To do this, log in to your Control Panel and go to the `Public Cloud`{.action} section in the top-left corner of the page. Then, on the following screen, click the `arrow button`{.action} next to your project name in the top-left corner of the screen.
 
 ![Add user](images/select_project.png){.thumbnail}
@@ -43,7 +43,7 @@ Be sure to save your password now as this is the only time you will be able to r
 
 Once your user has been created, you can use these credentials to log into the Horizon interface using the `Horizon button`{.action} on the left-hand sidebar.
 
-## Delete an OpenStack user
+### Delete an OpenStack user
 You can delete an OpenStack user directly in the OVH Control Panel (Cloud → Servers → Name of your Public Cloud project). In the OpenStack section, on the right you will find a small recycle bin icon:
 
 
@@ -53,5 +53,9 @@ Simply click on it, and the user will be deleted in a few seconds.
 
 > [!alert]
 >
-> Any user deletion is permanent, and will invalidate all
-> associated tokens, even those with an expiry date that has not yet been exceeded.
+> Any user deletion is permanent, and will invalidate all associated tokens, even those with an expiry date that has not yet been exceeded.
+> 
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
