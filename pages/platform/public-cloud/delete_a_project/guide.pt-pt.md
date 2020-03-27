@@ -1,9 +1,9 @@
 ---
-título: 'Eliminar um projeto Public Cloud'
+title: 'Eliminar um projeto Public Cloud'
 slug: delete_a_project
-excerto: 'Este guia explica como eliminar um projeto Public Cloud'
+excerpt: 'Este guia explica como eliminar um projeto Public Cloud'
 legacy_guide_number: g2129
-secção: 'Gestão do projeto'
+section: 'Gestão do projeto'
 ---
 
 **Última atualização a 6 de dezembro de 2019**

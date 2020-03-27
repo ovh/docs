@@ -6,7 +6,7 @@ excerpt: 'Esta guía explica como conectarse a las instancias de Public Cloud de
 section: 'Primeros pasos'
 ---
 
-**Última actualización: 11/06/2018**
+**Última actualización: 27/03/2020**
 
 ## Objetivo
 
