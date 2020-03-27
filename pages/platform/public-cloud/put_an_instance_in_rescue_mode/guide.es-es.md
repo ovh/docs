@@ -1,96 +1,94 @@
 ---
-title: Poner una instancia en modo de rescate
-excerpt: Poner una instancia en modo de rescate
+title: 'Poner una instancia en modo de rescate'
+excerpt: 'Poner una instancia en modo de rescate'
 slug: poner_una_instancia_en_modo_de_rescate
 legacy_guide_number: g2029
-section: Gestión de las instancias desde el área de cliente
+section: 'Gestión de las instancias desde el área de cliente'
 ---
 
+**Última actualización: 4/12/2019**
 
-## 
-Existen casos en los que es posible que no pueda acceder a su instancia, como una configuración inadecuada o la pérdida de la clave SSL.
+## Objetivo
 
-OVH ofrece un modo de rescate (rescue mode) que permite acceder a los datos para poder corregir los archivos de configuración. Su funcionamiento es bastante sencillo: la instancia se inicia en una nueva imagen, es decir, una instancia con una configuración básica. El disco de la instancia se conecta a la instancia como un disco adicional, de modo que solo hay que montarlo para poder acceder a los datos.
+Si su instancia no se ha configurado correctamente o si ha perdido su clave SSH, es posible que no pueda acceder a su instancia.
 
-A continuación se describe cómo utilizar el modo de rescate.
+En esos casos, puede utilizar el modo de rescate para reconfigurar su instancia o recuperar sus datos. 
+
+**Esta guía muestra cómo poner una instancia en modo de rescate**
+
+## Requisitos
+
+* Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} en su cuenta de OVHcloud
+* Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Tener acceso a la instancia por SSH como administrador (usuario raíz).
+
+## Procedimiento
+
+### Activar el modo de rescate
+
+En primer lugar, inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} para acceder al panel de control y, seguidamente, haga clic en el menú `«Public Cloud»`{.action}.
+
+A continuación, seleccione su proyecto de Public Cloud en el menú lateral a la izquierda de la pantalla y acceda a «Instancias».
+
+![control panel](images/compute.png){.thumbnail}
+
+A continuación, haga clic en los 3 puntos a la derecha de la instancia y seleccione `«Reiniciar en modo de rescate»`{.action}
+
+![control panel](images/rescue1.png){.thumbnail}
+
+Entonces verá el cuadro de diálogo «Reiniciar en modo de rescate». Haga clic en la lista desplegable para seleccionar la distribución de Linux que desea utilizar en el modo de rescate y, a continuación, en el botón `«Reiniciar»`{.action}.
+
+![control panel](images/rescue2.png){.thumbnail}
+
+Una vez que su instancia se haya reiniciado en el modo de rescate, aparecerá un mensaje en la parte superior de la pantalla con su contraseña temporal.
+
+![control panel](images/rescuedata.png){.thumbnail}
 
 
-## Requisitos previos
-[Crear una instancia desde el área de cliente de OVH](https://docs.ovh.com/es/public-cloud/crear_una_instancia_desde_el_area_de_cliente_de_ovh/)
+### Acceso a sus datos
 
+Una vez activado el modo de rescate, los datos de su instancia se adjuntarán como un disco adicional. Ahora, deberá instalarlo realizando los pasos siguientes.
 
-## Pasar a modo de rescate
-Para poner el servidor en modo de rescate, solo hay que hacer clic en en la flecha situada en la esquina superior derecha de la instancia y seleccionar «Reiniciar en modo de rescate».
-
-![](images/img_3494.jpg){.thumbnail}
-A continuación deberá seleccionar la imagen en la que quiere reiniciar el servidor en modo de rescate.
-
-![](images/img_3495.jpg){.thumbnail}
-En la lista desplegable se mostrarán las imágenes que ofrecemos por defecto y una imagen adicional llamada «Distribución Rescue Made-in-OVH» que permite conectarse a la instancia en modo de rescate con una contraseña temporal.
-
-Una vez que el servidor se haya iniciado en modo de rescate, aparecerá una nueva ventana en la esquina inferior derecha de la pantalla con la contraseña temporal.
-
-![](images/img_3497.jpg){.thumbnail}
-
-
-## Acceder a los datos
-Como se explica más arriba, los datos de la instancia se conectarán al modo de rescate como un disco adicional. Por lo tanto, solo tiene que montarlo como se indica a continuación para poder acceder a ellos:
-
-Conectarse como root:
-
-```
-admin@instance:~$ sudo su
-```
-
-
-
-Comprobar los discos disponibles:
+En primer lugar, cree una conexión SSH a su instancia. Una vez conectado, verifique los discos disponibles con este comando:
 
 ```
 root@instance:/home/admin# lsblk
+
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 253:0 0 1G 0 disk 
+vda 253:0 0 1G 0 disk
 └─vda1 253:1 0 1023M 0 part /
-vdb 253:16 0 10G 0 disk 
+vdb 253:16 0 10G 0 disk
 └─vdb1 253:17 0 10G 0 part
 ```
 
-
-Montar la partición:
+A continuación, instale la partición:
 
 ```
 root@instance:/home/admin# mount /dev/vdb1 /mnt
 ```
 
+Podrá acceder a sus datos desde la carpeta /mnt.
 
-Sus datos estarán disponibles en la carpeta /mnt.
+### Desactivar el modo de rescate
 
-Así podrá, por ejemplo, editar el archivo que contiene la lista de llaves SSH que puede utilizar el usuario admin:
+Una vez que haya completado sus tareas, puede desactivar el modo de rescate reiniciando normalmente su instancia. Para hacerlo, haga clic en la flecha desplegable de su instancia y seleccione `«Salir del modo de rescate»`{.action}.
 
+![control panel](images/rescueexit.png){.thumbnail}
 
-```
-root@instance:/home/admin# vim /mnt/home/admin/.ssh/authorized_keys
-```
+### Activar el modo rescate utilizando la API de OpenStack
 
-
-
-
-## Reiniciar la instancia en modo normal
-Cuando haya realizado las operaciones necesarias, puede reiniciar la instancia en modo normal. Para ello, solo tiene que hacer clic en la flecha situada en la esquina superior derecha de la instancia y seleccionar «Salir del modo de rescate».
-
-![](images/img_3496.jpg){.thumbnail}
-
-
-## Con la API OpenStack
-Puede reiniciar la instancia en modo de rescate mediante la API OpenStack utilizando el siguiente comando:
+También puede activar el modo de rescate a través de la API OpenStack utilizando el siguiente comando:
 
 ```
-root@server:~# nova rescue INSTANCE_ID
+# root@server:~# nova rescue INSTANCE_ID
 ```
 
-
-Para salir del modo de rescate, puede utilizar el siguiente comando:
+Para salir del modo de rescate, utilice el siguiente comando:
 
 ```
-root@server:~# nova unrescue INSTANCE_ID
+# root@server:~# nova unrescue INSTANCE_ID
 ```
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
