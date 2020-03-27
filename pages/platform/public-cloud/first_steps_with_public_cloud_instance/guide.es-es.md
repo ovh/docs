@@ -9,7 +9,7 @@ section: 'Primeros pasos'
 
 ## Objetivo
 
-Es posible gestionar las instancias de Public Cloud de OVH directamente desde el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, donde podrá consultar todos sus proyectos de infraestructura (instancias, backups, discos, llaves SSH...) y de almacenamiento (incluida la lista de contenedores).
+Es posible gestionar las instancias de Public Cloud de OVHcloud directamente desde el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, donde podrá consultar todos sus proyectos de infraestructura (instancias, backups, discos, llaves SSH...) y de almacenamiento (incluida la lista de contenedores).
 
 **Esta guía explica cómo empezar a utilizar una instancia de Public Cloud.**
 
@@ -20,90 +20,125 @@ Es posible gestionar las instancias de Public Cloud de OVH directamente desde el
 
 ### Procedimiento
 
-### Acceder a la gestión de la instancia
+### Acceder a la interfaz de administración de la instancia.
 
-Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Cloud`{.action}. En la columna izquierda, haga clic en `Servidores`{.action} y seleccione el servicio Public Cloud correspondiente. Por defecto, se abrirá la pestaña `Procesamiento`{.action} en `Instancias`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, acceda a la sección «Public Cloud» y seleccione el servicio Public Cloud de su interés. A continuación, haga clic en la pestaña `«Instancias»`{.action} a la izquierda.
 
-En esa pantalla se mostrará la información relativa a sus instancias:
+En esa página, verá un resumen de todas sus instancias. En ella se presentan varios datos:
 
-- modelo y precio de la instancia;
-- nombre y región;
-- recursos disponibles;
-- discos adicionales asociados, si los hay;
-- dirección IP de la instancia.
+- El modelo de su instancia
+- El nombre y la región de la instancia en cuestión
+- Cualquier posible disco duro
+- La dirección IP de su instancia
+- El estado de la instancia
 
-![Public Cloud](images/3415-2.png){.thumbnail}
+![public-cloud](images/compute.png){.thumbnail}
 
-### Editar la configuración de una instancia
+### Editar la configuración de una instancia.
 
-En la página de gestión de las instancias, haga clic en la flecha situada en la esquina superior derecha de la instancia correspondiente y seleccione `Editar`{.action}.
+En la interfaz de administración de la instancia, haga clic en los 3 puntos a la derecha de la instancia y seleccione `«Editar»`{.action}.
 
-![Public Cloud](images/3481-2.png){.thumbnail}
+![public-cloud](images/edit.png){.thumbnail}
 
-Se abrirá un cuadro de diálogo en el que podrá:
+En la ventana que se abre, puede:
 
-- renombrar la instancia;
-- cambiar el modelo de la instancia;
-- reinstalar la instancia con otro sistema operativo (**atención: esta operación eliminará los datos actuales**);
-- cambiar la modalidad de pago de consumo por horas a tarifa mensual (se emitirá una factura por la parte proporcional al período restante del mes).
+- Cambiar el nombre de la instancia
+- Cambiar el modelo de la instancia 
+- Reinstalar la instancia en otro sistema operativo (**tenga en cuenta que se borrarán todos los datos almacenados en la instancia si selecciona esta opción**)
+- Cambiar la modalidad de pago de facturación por horas a tarifa mensual (entonces se emitirá una factura por la parte proporcional al período restante del mes)
 
-![Public Cloud](images/3481-3.png){.thumbnail}
+![public-cloud](images/edit1.png){.thumbnail}
+![public-cloud](images/edit2.png){.thumbnail}
+![public-cloud](images/edit3.png){.thumbnail}
 
-### Crear una copia de seguridad de una instancia
+### Crear una copia de seguridad de una instancia.
 
-Desde la página de gestión de las instancias, es posible crear una copia de seguridad de una instancia. Para ello, haga clic en la flecha situada en la esquina superior derecha de la instancia correspondiente y seleccione `Crear un snapshot`{.action}. Siga los pasos que se indican.
+Puede crear una copia de seguridad de una instancia desde su página de administración.  Para hacerlo, haga clic en los 3 puntos a la derecha de la instancia y seleccione `«Crear una copia de seguridad»`{.action}. Entonces verá esta página con toda la información necesaria: 
 
-Para más información, consulte nuestra guía [Guardar una copia de seguridad de una instancia](../guardar_copia_de_seguridad_de_una_instancia/). 
+![public-cloud](images/backup.png){.thumbnail}
 
-![Public Cloud](images/3481-4.png){.thumbnail}
+A continuación, se mostrará la siguiente información: 
 
-### Consultar la información de conexión
+![public-cloud](images/backup1.png){.thumbnail}
 
-En la página de gestión de las instancias, haga clic en la flecha situada en la esquina superior derecha de la instancia correspondiente y seleccione `Datos de conexión`{.action}. Se abrirá un cuadro de diálogo en el que podrá ver el comando SSH que deberá utilizar para conectarse a la instancia.
+Después de confirmar, se mostrará la siguiente información:
 
-![Public Cloud](images/3484-2.png){.thumbnail}
+![public-cloud](images/backup2.png){.thumbnail}
 
-### Acceder a la consola VNC
+Una vez realizada la copia de seguridad, podrá verla en la sección `«Copia de Seguridad de la Instancia`{.action}: 
 
-La consola VNC permite acceder directamente a la instancia. Para ello, es necesario haber configurado previamente una contraseña para el usuario root.
+![public-cloud](images/backup3.png){.thumbnail}
 
-Para acceder a esta consola, haga clic en la flecha situada en la esquina superior derecha de la instancia correspondiente y seleccione `Consola VNC`{.action}.
+Si necesita ayuda, puede consultar nuestra guía [«Hacer una copia de seguridad de una instancia»](../back-up-instance/).
 
-![Public Cloud](images/3484-3.png){.thumbnail}
+### Crear automáticamente una copia de seguridad de una instancia.
 
-La consola se abrirá en una nueva ventana. 
+Puede programar una copia de seguridad automática de una instancia desde su página de administración. Para hacerlo, haga clic en los 3 puntos de la derecha y seleccione `«Crear automáticamente una copia de seguridad»`{.action}: 
 
-![Public Cloud](images/3484-4.png){.thumbnail}
+![public-cloud](images/backupauto.png){.thumbnail}
 
-### Reiniciar una instancia
+Se mostrará la siguiente página: 
 
-Existen dos formas de reiniciar una instancia:
+![public-cloud](images/backupauto1.png){.thumbnail}
 
-- reinicio en caliente (por software);
-- reinicio en frío (por hardware).
+Una vez que haya seleccionado la información necesaria y haya hecho clic en «Crear», se le redirigirá a la siguiente página: 
 
-En la página de gestión de las instancias, haga clic en la flecha situada en la esquina superior derecha de la instancia correspondiente y seleccione `Reiniciar en caliente (soft)`{.action} o `Reiniciar en frío (hard)`{.action}.
+![public-cloud](images/backupauto2.png){.thumbnail}
 
-A continuación, confirme el reinicio.
+En cualquier momento, puede acceder a `«Gestión del flujo de trabajo»`{.action} para eliminar el proceso de copia de seguridad automática actual: 
 
-![Public Cloud](images/3484-5.png){.thumbnail}
+![public-cloud](images/backupautodelete.png){.thumbnail}
 
-### Reinstalar una instancia
+Si necesita ayuda, puede consultar nuestra guía [«Hacer una copia de seguridad de una instancia»](../back-up-instance/). 
 
-Es posible reinstalar una instancia manteniendo el mismo sistema operativo. **Esta operación eliminará todos los datos actuales.**
+### Recuperar la información de inicio de sesión.
 
-En la página de gestión de las instancias, haga clic en la flecha situada en la esquina superior derecha de la instancia correspondiente y seleccione `Reinstalar`{.action}. A continuación, confirme la operación. 
+En la interfaz de administración de la instancia, haga clic en `«Datos de la instancia»` y compruebe la información que aparece a continuación de `«Información de inicio de sesión»`{.action}. Ahí, puede recuperar los comandos SSH que necesita utilizar para conectarse a su instancia.
 
-![Public Cloud](images/3484-6.png){.thumbnail}
+![public-cloud](images/instancedetails1.png){.thumbnail}
+![public-cloud](images/instancedetails.png){.thumbnail}
 
-### Eliminar una instancia
+### Acceso a la consola VNC.
 
-También es posible eliminar un instancia. **Esta operación eliminará de forma definitiva la instancia y todos los datos que contiene.**
+Utilizando la consola VNC, puede acceder directamente a su instancia. No obstante, tenga en cuenta que tendrá que haber establecido una contraseña para el administrador.
 
-En la página de gestión de las instancias, haga clic en la flecha situada en la esquina superior derecha de la instancia correspondiente y seleccione `Eliminar`{.action}. A continuación, confirme la operación. 
+Para acceder a esta consola, haga clic en `«Consola VNC»`{.action} en el panel de la instancia.
 
-![Public Cloud](images/3484-7.png){.thumbnail}
+![public-cloud](images/vnc.png){.thumbnail}
+
+Entonces se abrirá la consola:
+
+![public-cloud](images/vnc1.png){.thumbnail}
+
+### Reiniciar una instancia.
+
+Hay dos formas diferentes de reiniciar una instancia:
+
+- Reinicio en caliente (mediante <i>software</i>)
+- Reinicio en frío (mediante <i>hardware</i>)
+
+En la interfaz de administración de la instancia, haga clic en los 3 puntos a la derecha de la instancia y seleccione ora `«Reinicio en caliente (mediante <i>software</i>)»`{.action}, ora `«Reinicio en frío (mediante <i>hardware</i>)»`{.action}.
+
+Entonces confirme su petición en la ventana que se abre.
+
+![public-cloud](images/reboot.png){.thumbnail}
+
+### Reinstalar una instancia.
+
+Puede reinstalar una instancia y conservar el mismo sistema operativo. **Tenga en cuenta que se borrarán todos los datos guardados en su instancia si opta por reinstalar.**
+
+En la interfaz de administración de la instancia, haga clic en los 3 puntos a la derecha de la instancia y seleccione `«Reinstalar»`{.action}. Haga clic en «Confirmar» para iniciar el proceso.
+
+![public-cloud](images/reinstall.png){.thumbnail}
+
+### Eliminar una instancia.
+
+También puede eliminar una instancia. **Esta operación eliminará permanentemente la instancia y todos los datos que contiene.**
+
+En la interfaz de administración de la instancia, haga clic en el icono de la flecha desplegable y seleccione `«Eliminar»`{.action}. Haga clic en «Confirmar» para iniciar el proceso. 
+
+![public-cloud](images/delete.png){.thumbnail}
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
