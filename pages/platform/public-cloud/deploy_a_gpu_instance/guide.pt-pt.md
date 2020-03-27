@@ -5,58 +5,61 @@ excerpt: 'Saiba como criar uma instância GPU em Linux ou Windows'
 section: 'A partir da Área de Cliente OVH'
 ---
 
-**Última atualização: 13/09/2018**
+**Última atualização a 6 de dezembro de 2019**
 
 ## Sumário
 
-As instâncias GPU são tecnicamente similares às instâncias da gama 2017, mas dispõem ainda de uma placa gráfica (Graphic Processing Unit ou GPU). A tecnologia utilizada (*pci_passthrough*) permite que o sistema operativo da instância controle a GPU exatamente como numa máquina física.
+As instâncias GPU são tecnicamente semelhantes às instâncias da gama 2017, mas dispõem também de uma placa gráfica (Unidade de Processamento Gráfico ou GPU). A tecnologia utilizada (*pci_passthrough*) permite ao sistema operativo da instância controlar a GPU tal como faria uma máquina física.
 
-As GPU disponibilizadas são as NVIDIA GeForce GTX 1060, GTX 1070 ou GTX 1080Ti. 
+As GPU disponibilizadas são as NVIDIA Tesla V100. 
 
 > [!warning]
 >
-> As instâncias GPU por enquanto só se encontram disponíveis no datacenter de GRA3, GRA5 e BHS3. Talvez tenha de criar um novo projeto e selecionar a nova gama 2017. Para mais informações, consulte este [manual](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/) (sobre a nova nomenclatura na gama 2017 - versão inglesa).
+> Atualmente, as instâncias GPU só estão disponíveis nos datacentres GRA3, GRA5, GRA7 e BHS3. É possível que tenha de criar um novo projeto e escolher a nova gama 2017. [Saber mais.](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/)
 > 
 
-**Este manual explica como criar uma instância GPU em Linux ou Windows**
-
+**Este guia explica como criar uma instância GPU em Linux ou Windows**
 
 ## Requisitos
 
-- Ter criado um projeto Public Cloud com acesso às regiões em que a GPU está disponível (GRA3, GRA5 e BHS3).
+- um projeto Public Cloud com acesso às regiões onde as GPU estão disponíveis (GRA3, GRA5, GRA7 e BHS3)
 
 ## Instruções
 
-Encontrará a seguir as informações necessárias para criar uma instância GPU via Linux ou via Windows.
+Encontrará a informação necessária para criar uma instância GPU em Linux ou Windows abaixo.
+Tenha presente que não pode alterar o SO da Instância de Linux para Windows ou vice-versa. Deste modo, certifique-se de que cria a instância com o SO correto por predefinição.
 
 
 ### Em Linux
 
-Todas as imagens que disponibilizamos podem ser utilizadas numa instância GPU.
+Todas as imagens que disponibilizamos são compatíveis com uma instância GPU.
 
 > [!primary]
 >
-> Se não se sentir à vontade com a compilação manual de módulos de núcleo, recomendamos que utilize um sistema operativo oficialmente suportado por Nvidia, para o qual são fornecidos drivers de tipo *chave-na-mão*: <https://developer.nvidia.com/cuda-downloads>.
+> Se não se sentir à vontade para compilar manualmente um módulo do kernel, recomendamos que utilize uma distribuição oficialmente suportada pela Nvidia e para a qual a Nvidia forneça drivers *prontos a usar*: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Depois de iniciar sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, vá ao seu projeto Public Cloud, clique em `Adicionar servidor`{.action} e selecione uma instância GPU:
+Depois de iniciar sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, aceda ao seu projeto Public Cloud, clique em `Criar uma instância`{.action}e escolha uma instância GPU:
 
-![public-cloud](images/EN-Flavors.png){.thumbnail}
+![public-cloud](images/gpu.png){.thumbnail}
 
-Depois de alguns segundos, a instância será iniciada. De seguida, poderá aceder à mesma e verificar a presença da placa gráfica: 
+Em seguida, selecione o SO Linux à sua escolha:
+
+![public-cloud](images/linuxchoice.png){.thumbnail}
+
+A instância será iniciada ao fim de alguns segundos. Pode depois iniciar sessão e procurar a placa gráfica: 
 
 ```ssh
 lspci | grep -i nvidia
-00:05.0 VGA compatible controller: NVIDIA Corporation Device 1c03 (rev a1)
-00:06.0 Audio device: NVIDIA Corporation Device 10f1 (rev a1)
+00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```
 
-A placa gráfica, embora já presente, ainda não está utilizável: falta instalar os drivers NVIDIA. Pode encontrar a lista dos pacotes no seguinte endereço: [Lista dos pacotes Linux disponíveis](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+A placa gráfica está identificada, mas ainda não pode ser utilizada. Para o fazer, primeiro deve instalar o driver NVIDIA. Pode encontrar a lista dos pacotes no seguinte endereço: [Lista de pacotes Linux disponíveis](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
 
-A seguir, basta introduzir os seguintes comandos:
+Em seguida, deve executar os seguintes comandos:
 
 ```sh
-wget URL_do_pacote_a_descarregar
+wget URL_of_packet_to_download
 sudo dpkg -i cuda-repo-XXXX-XXXXXX
 sudo apt-get update
 sudo apt-get upgrade
@@ -66,64 +69,60 @@ sudo reboot
 
 > [!primary]
 >
-> O comando Linux pode variar em função do sistema operativo. Em caso de dúvida, verifique na documentação oficial da sua versão Linux.
+> O comando Linux pode variar em função da sua distribuição. Em caso de dúvida, consulte o guia oficial da sua versão Linux.
 > 
 
 
-Uma vez reiniciada a instância, a placa gráfica surge no utilitário NVIDIA:
+Depois de a instância ser reiniciada, a placa gráfica será apresentada no utilitário NVIDIA:
 
 ```sh
 nvidia-smi
-Wed Apr 26 13:05:25 2017
+Fri Dec  6 12:32:25 2019       
 +-----------------------------------------------------------------------------+
-| NVIDIA-SMI 375.51                 Driver Version: 375.51                    |
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
 |-------------------------------+----------------------+----------------------+
 | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
 | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
 |===============================+======================+======================|
-|   0  GeForce GTX 106...  Off  | 0000:00:05.0     Off |                  N/A |
-|  0%   22C    P0    26W / 120W |      0MiB /  6072MiB |      0%      Default |
+|   0  Tesla V100-PCIE...  On   | 00000000:00:05.0 Off |                    0 |
+| N/A   26C    P0    35W / 250W |      0MiB / 16130MiB |      5%      Default |
 +-------------------------------+----------------------+----------------------+
-
+                                                                               
 +-----------------------------------------------------------------------------+
 | Processes:                                                       GPU Memory |
-|  GPU       PID  Type  Process name                               Usage      |
+|  GPU       PID   Type   Process name                             Usage      |
 |=============================================================================|
 |  No running processes found                                                 |
 +-----------------------------------------------------------------------------+
 ```
 
-A instância GPU já se encontra plenamente funcional e utilizável.
+A instância GPU está agora totalmente funcional e utilizável.
 
 
 ### Em Windows
 
-Existem algumas incompatibilidades entre o driver NVIDIA e a solução de virtualização *KVM/pci_passthrough*. **As imagens Windows padrão não funcionam.**
+Existem incompatibilidades entre o driver NVIDIA e a solução de virtualização *KVM/pci_passthrough*. **As imagens padrão do Windows não funcionam.**
+Por isso, oferecemos imagens especiais, baseadas numa BIOS UEFI virtual, que permitem ao driver funcionar corretamente (tal só se aplica às instâncias G1, G2 e G3 - gama 2017 e anterior).
 
-A OVH disponibiliza imagens especiais que assentam num BIOS virtual UEFI e que permitem um funcionamento correto do driver:
+Depois de iniciar sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, aceda ao seu projeto Public Cloud, clique em `Criar uma instância`{.action}e escolha uma instância GPU:
 
-![public-cloud](images/EN-WindowsImages.png){.thumbnail}
+![public-cloud](images/gpu.png){.thumbnail}
 
+Em seguida, selecione o SO Windows à sua escolha: 
 
-> [!warning]
->
-> Não nos é possível garantir que a solução funcionará com todas as versões futuras do driver NVIDIA.
->
-> Antes de qualquer atualização do driver NVIDIA, é fortemente recomendado que faça um snapshot que lhe permita reverter as alterações, caso necessário.
->
+![public-cloud](images/oschoice.png){.thumbnail}
 
-Uma vez a instância GPU iniciada, é preciso instalar o driver NVIDIA a partir do [site oficial](http://www.nvidia.fr/Download/index.aspx){.external}.
+Depois de a sua instância GPU ser iniciada, deve instalar o driver NVIDIA a partir do [website oficial](https://www.nvidia.com/Download/index.aspx){.external}.
 
-Inicie uma instância utilizando uma das características da GPU (win-g1-15, win-g1-30, etc.).
+Inicie uma instância utilizando um dos tipos de GPU disponíveis (t1-45, t1-90, t1-180...). A instância será iniciada ao fim de alguns minutos.
 
-Alguns minutos mais tarde, a instância é iniciada. Depois, só falta instalar o piloto necessário, que de seguida aparecerá aqui:
+Depois desse processo, basta instalar o driver necessário que será depois apresentado aqui:
 
+![public-cloud](images/driverson.png){.thumbnail}
 
-![public-cloud](images/WindowsDriverVersion.png){.thumbnail}
-
-![public-cloud](images/WindowsDeviceManager.png){.thumbnail}
+![public-cloud](images/devicemanager.png){.thumbnail}
 
 
-## Quer saber mais?
+## Vá mais longe
 
-Fale com a nossa comunidade de utilizadores: [Comunidade OVH](https://community.ovh.com/en/){.external}
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
