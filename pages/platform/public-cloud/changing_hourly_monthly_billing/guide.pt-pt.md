@@ -5,7 +5,7 @@ slug: mudar-tipo-faturacao-public-cloud
 section: 'Gestão do projeto'
 ---
 
-**Última atualização: 21/05/2018**
+**Última atualização: 30/03/2020**
 
 ## Sumário
 
@@ -15,27 +15,33 @@ Ao criar uma instância Public Cloud, é possível escolher entre uma faturaçã
 
 > [!warning]
 >
-> Não é possível passar de uma faturação ao mês para uma faturação à hora. É necessário suprimir a instância de faturação ao mês e criar uma nova para a faturação à hora.
+> Não é possível passar de uma faturação mensal para uma faturação horária. Se pretende uma faturação horária, será necessário eliminar a instância de faturação mensal e criar uma nova, selecionando a faturação horária. Neste caso, sugerimos que proceda da seguinte forma:
+>
+>- Crie um snapshot da sua instância atual;
+>
+>- Crie uma nova instância com base neste snapshot;
+>
+>- Elimine a instância mensal.
 >
 
 
 ## Requisitos
 
 - Ter criado uma [instância Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external}.
-- Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Instruções
 
-Na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, escolha a instância para a qual deseja modificar o modo de faturação e selecione as opções desta última. Então terá acesso ao botão `Passar para o plano mensal`{.action}:
+Na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, escolha a instância para a qual deseja mudar o modo de faturação e abra o respetivo menu de opções clicando nos 3 pontos do lado direito da Instância. Terá então acesso ao botão `Passar para o plano mensal`{.action}:
 
-![Modificação de cálculo](images/1_swich_to_monthly_sub.png){.thumbnail}
+![Mudar o cálculo de faturação](images/switch.png){.thumbnail}
 
-Já só resta confirmar a modificação:
+Em seguida, tem de confirmar que pretende mudar o modo de faturação:
 
-![Confirmação da modificação de cálculo](images/2_switch_to_monthly_confirm.png){.thumbnail}
+![Confirmar a mudança do cálculo de faturação](images/switch1.png){.thumbnail}
 
-No seguimento desta alteração, será emitida uma fatura de um montante correspondente ao número de dias restantes até ao fim do mês. No fim do mês, a fatura integrará o custo das horas da instância do mês decorrido em configuração «horária», mas também o custo do mês seguinte em configuração «mensal».
+Depois de confirmar a sua escolha, a sua fatura seguinte incluirá o valor por hora da instância correspondente ao número de dias restantes até ao fim do mês e o valor do mês seguinte à taxa fixa mensal.
 
 
 ## Quer saber mais?
