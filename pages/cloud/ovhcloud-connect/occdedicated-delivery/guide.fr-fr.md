@@ -5,7 +5,7 @@ excerpt: 'Processus de mise en service de l’offre OVHcloud Connect Dedicated'
 section: Dedicated
 ---
 
-**Dernière mise à jour le 12/12/2019**
+**Dernière mise à jour le 30/03/2020**
 
 ## Objectif
 
@@ -105,6 +105,8 @@ Lors de la mise en place, les problèmes les plus fréquemment rencontrés sont 
 |:---------:|:--------------------------------:|
 | IOS | speed nonegotiate |
 | NX-OS | no negotiation auto |
+
+* Vérifiez votre type de SFP/SFP+: 1000Base-LX/LH pour une vitesse de 1Gb/s, 10GBase-LR pour une vitesse de 10Gb/s
 
 * L'annonce de plus de 100 réseaux à travers chaque session BGP entraîne une extinction automatique de la session. Pour se prémunir de cet arrêt, vous devez consolider vos réseaux;
 
