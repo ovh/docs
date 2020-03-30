@@ -10,7 +10,7 @@ section: 'Gestão do projeto'
 
 ## Objetivo
 
-Quando o seu projeto [Public Cloud](https://docs.ovh.com/pt/public-cloud/){.external} deixa de ser necessário, pode eliminá-lo diretamente na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Quando o seu projeto [Public Cloud](https://docs.ovh.com/pt/public-cloud/){.external} deixa de ser necessário, pode eliminá-lo diretamente na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 Quando elimina o seu projeto Public Cloud, será criada uma fatura final pelo valor remanescente em dívida.
 
@@ -23,12 +23,12 @@ Tenha em conta que eliminar um projeto não é a mesma coisa que desativar as su
 
 ## Requisitos
 
-* um projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVH
-* acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Um projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVH
+* Acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instruções
 
-Primeiro, inicie sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clique no menu `Public Cloud`{.action}.
+Primeiro, inicie sessão na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e clique no menu `Public Cloud`{.action}.
 
 Em seguida, clique em `Definições do projeto`{.action} sob Gestão de Projetos.
 
