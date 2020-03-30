@@ -5,7 +5,7 @@ excerpt: 'FAQ - OVHcloud Dedicated Connect'
 section: Dedicated
 ---
 
-**Last updated 17th March 2020**
+**Last updated 30th March 2020**
 
 ## Objective
 
@@ -59,7 +59,7 @@ OVHcloud does not host network hardware for customers in datacentres and points 
 
 ### 5. What connections are supported for OVHcloud Connect?
 
-We support single-mode fibre optic, either 1000LX/LH or 10G-LR.
+We support single-mode fibre optic, your SFP/SFP+ must support either 1000LX/LH or 10G-LR.
 
 ## Go further
 
