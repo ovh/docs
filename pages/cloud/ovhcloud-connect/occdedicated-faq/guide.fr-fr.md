@@ -5,7 +5,7 @@ excerpt: 'Les FAQ sur l’offre OVHcloud Connect Dedicated'
 section: Dedicated
 ---
 
-**Dernière mise à jour le 24/12/2019**
+**Dernière mise à jour le 30/03/2020**
 
 ## Objectif
 
@@ -59,7 +59,7 @@ OVHcloud n'héberge pas de matériel réseau pour les clients dans ses datacente
 
 ### 5. Pour OVHcloud Connect, quelles connectiques sont supportées?  ?
 
-Nous supportons la fibre optique mono-mode soit 1000LX/LH soit 10G-LR.
+Nous supportons la fibre optique mono-mode pour modules SFP/SFP+ compatible soit 1000LX/LH (1Gb/s) soit 10G-LR (10Gb/s).
 
 ## Aller plus loin
 
