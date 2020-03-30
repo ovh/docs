@@ -84,7 +84,7 @@ Here's an example of the OWA "Calendar" section with multiple calendars displaye
 
 ![sharecalendar](images/exchange-calendars-step7.png){.thumbnail}
 
-Clicking on a calendar in list adds or removes them from the overview display in the middle. You can also add availability calendars of people from your organisation if you use the search field. Once added, they can be bookmarked as a "favourite" by clicking on the star symbol.
+Clicking on a calendar in the list adds or removes them from the overview display in the middle. You can also add availability calendars of people from your organisation if you use the search field. Once added, they can be bookmarked as a "favourite" by clicking on the star symbol.
 
 
 ## Go further
