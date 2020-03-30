@@ -5,7 +5,7 @@ excerpt: 'Setting up the OVHcloud Dedicated Connect solution'
 section: Dedicated
 ---
 
-**Last updated 18th March 2020**
+**Last updated 30th March 2020**
 
 ## Objective
 
@@ -104,6 +104,8 @@ The most common issues encountered during setup are:
 |:--------:|:-----------------|
 | IOS | speed nonegotiate |
 | NX-OS | no negotiation auto |
+
+* Check your SFP/SFP+: 1000Base-LX/LH for 1Gb/s speed, 10GBase-LR for 10Gb/s speed
 
 * If more than 100 networks are announced through each BGP session, the session will automatically expire. To prevent this from happening, you will need to consolidate your networks.
 
