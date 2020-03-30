@@ -5,7 +5,7 @@ excerpt: 'Cómo enviar SMS desde una dirección de correo electrónico'
 section: 'Enviar SMS'
 ---
 
-**Última actualización: 21/11/2019**
+**Última actualización: 30/03/2020**
 
 ## Objetivo
 
@@ -43,6 +43,13 @@ Si quiere enviar un SMS con estos elementos, deberá hacerlo desde el área de c
 
 Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](https://docs.ovh.com/es/sms/enviar-sms-desde-correo-electronico/#anexo_1) que encontrará al final de esta guía.
 
+> [!warning]
+>
+> Para permitir el uso de determinados caracteres especiales, le recomendamos que active el modo de «texto sin formato» en su cliente de correo, tal como se indica a continuación en el caso de Microsoft Outlook:
+> 
+> ![email2sms](images/plaintext01.png){.thumbnail}
+> 
+
 ### 1\. Campos obligatorios
 
 Abra el webmail o el cliente de correo y cree un nuevo mensaje de correo electrónico. 
@@ -71,7 +78,7 @@ CuentaSMS:UsuarioSMS:Contraseña:Remitente:Destinatario
 Deberá obtener un resultado similar al de la imagen siguiente. Por defecto, una vez enviado el correo, el SMS se enviará de inmediato.
 
 
-![](images/send-sms-through-email1.png){.thumbnail}
+![email2sms](images/send-sms-through-email1.png){.thumbnail}
 
 > [!primary]
 >**Solo para las cuentas de OVHcloud Francia:**
@@ -105,7 +112,7 @@ CuentaSMS:UsuarioSMS:Contraseña:Remitente:Destinatario1,Destinatario2:FechaEnvi
 
 A continuación, puede consultar un ejemplo de correo electrónico con campos opcionales:
 
-![](images/send-sms-through-email3.png){.thumbnail}
+![email2sms](images/send-sms-through-email3.png){.thumbnail}
 
 Existen dos formas de declarar los diferentes elementos del asunto:
 
@@ -151,11 +158,11 @@ Existen distintas formas de gestionar los destinatarios del mensaje:
 
 Una vez realizado el envío, recibirá por correo electrónico un informe. El siguiente informe indica que el envío se ha realizado correctamente:
 
-![](images/send-sms-through-email4.png){.thumbnail}
+![email2sms](images/send-sms-through-email4.png){.thumbnail}
 
 Si se ha producido un error, este aparecerá recogido en el informe, tal y como se muestra a continuación:
 
-![](images/send-sms-through-email5.png){.thumbnail}
+![email2sms](images/send-sms-through-email5.png){.thumbnail}
 
 ## Anexo
 
