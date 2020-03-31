@@ -23,7 +23,7 @@ Each protocol provides different capabilities. Some will be easier than others b
 
 |Protocol|Push|Query|Protocol documentation|Features|Corresponding Open Source project|
 |---|---|---|---|---|---|
-|InfluxDB|<i class="fas fa-check"></i>|<i class="fas fa-times"></i>|[Metrics Influx](../protocol_influxdb/guide.en-gb.md){.ref}|<i class="fas fa-star"></i>|[https://github.com/influxdata/influxdb](https://github.com/influxdata/influxdb){.external}|
+|InfluxDB|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics Influx](../protocol_influxdb/guide.en-gb.md){.ref}|<i class="fas fa-star"></i>|[https://github.com/influxdata/influxdb](https://github.com/influxdata/influxdb){.external}|
 |OpenTSDB|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics OpenTSDB](../protocol_opentsdb/guide.en-gb.md){.ref}|<i class="fas fa-star"><i class="fas fa-star">|[http://opentsdb.net/](http://opentsdb.net/){.external}|
 |Graphite|<i class="fas fa-check"></i>|<i class="fas fa-check"></i>|[Metrics Graphite](../protocol_graphite/guide.en-gb.md){.ref}|<i class="fas fa-star"><i class="fas fa-star"></i>|[http://graphiteapp.org/](http://graphiteapp.org/){.external}|
 |Metrics2.0|<i class="fas fa-check"></i>|<i class="fas fa-times"></i>|[Metrics 2.0 spec](../protocol_opentsdb/guide.en-gb.md){.ref}|<i class="fas fa-star"><i class="fas fa-star">|[http://metrics20.org/](http://metrics20.org/){.external}|
