@@ -3,6 +3,7 @@ title: 'Creating contact groups'
 slug: exchange_20132016_how_to_use_the_groups_feature_mailing_lists
 excerpt: 'Find out how to manage mailing lists in Exchange'
 section: 'Exchange account features'
+order: 1
 ---
 
 **Last updated 26th February 2020**
@@ -85,6 +86,6 @@ You can now test your mailing list via [OVHcloud webmail](https://www.ovh.co.uk/
 
 [Using the Outlook Web App with an Exchange account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide)
 
-[How to share calendars via OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_calendars_via_owa)
+[Sharing calendars in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_calendars_via_owa)
 
 Join our community of users on <https://community.ovh.com/en/>.
