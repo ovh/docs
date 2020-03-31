@@ -36,7 +36,7 @@ Le tableau qui apparaît affiche les moteurs d'exécution ajoutés actuellement 
 
 ### Étape 2 : gérer les moteurs d'exécution
 
-La gestion des moteurs d'exécution de votre hébergement Cloud Web s'effectue de plusieurs manières :
+La gestion des moteurs d'exécution de votre hébergement Cloud Web s'effectue de plusieurs manières :
 
 - [ajouter ou modifier un moteur d'exécution](./#21-ajouter-ou-modifier-un-moteur-dexecution){.external} (le nombre maximum de moteurs dépend de l’[offre choisie](https://www.ovh.com/fr/hebergement-web/cloud-web.xml){.external}) ;
 - définir un moteur en tant que choix par défaut ;
@@ -81,7 +81,7 @@ Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-
 |Nom personnalisé|Renseignez un nom vous permettant de reconnaître ce moteur parmi d'autres affichés dans votre espace client OVHcloud.|
 |Moteur d'exécution|Choisissez le nouveau moteur d'exécution souhaité.|
 |Chemin d'accès au répertoire public|Indiquez le répertoire dans lequel sera hébergé le contenu statique (le moteur n'exécutera pas ce contenu).|
-|Environnement de l'application|Précisez s'il s'agit d'un environnement de « production », de « test » ou encore de « development ». À noter que ce dernier a un comportement différent des autres et affiche des erreurs directement dans l'interface web : utilisez-le en connaissance de cause.|
+|Environnement de l'application|Précisez s'il s'agit d'un environnement de « production », de « test » ou encore de « development ». À noter que ce dernier a un comportement différent des autres et affiche des erreurs directement dans l'interface web : utilisez-le en connaissance de cause.|
 |Script de lancement de l'application|Nommez le script qui appellera la technologie Node.js.|
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-vous maintenant que ce moteur d'exécution est bien utilisé par le ou les multisites souhaités. Pour cela, poursuivez vers l'étape 3 « [Associer le moteur d'exécution à un multisite](./#etape-3-associer-le-moteur-dexecution-a-un-multisite_2){.external} ».

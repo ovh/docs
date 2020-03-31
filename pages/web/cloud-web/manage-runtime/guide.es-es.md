@@ -38,7 +38,7 @@ Se mostrará una tabla con los motores de ejecución que haya añadido a su aloj
 
 Existen diversas formas de gestionar los motores de ejecución de su alojamiento Cloud Web:
 
-- [Añadir o modificar un motor de ejecución](./#21-añadir-o-modificar-un-motor-de-ejecución){.external} (el número máximo de motores de ejecución depende del [plan Cloud Web que tenga contratado](https://www.ovh.es/hosting/cloud-web.xml){.external}).
+- [Añadir o modificar un motor de ejecución](./#21-anadir-o-modificar-un-motor-de-ejecucion){.external} (el número máximo de motores de ejecución depende del [plan Cloud Web que tenga contratado](https://www.ovh.es/hosting/cloud-web.xml){.external}).
 - Establecer un motor de ejecución como opción por defecto.
 - Eliminar un motor de ejecución.
 
@@ -70,7 +70,7 @@ Introduzca la información solicitada en la ventana que aparece. Prosiga en func
 |Nombre personalizado|Introduzca un nombre que le permita diferenciar este motor de ejecución de los otros motores de su cuenta de OVHcloud.|  
 |Motor de ejecución|Seleccione el nuevo motor de ejecución deseado.|  
 
-Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la Etapa 3 [«asociar el motor de ejecución a un multisitio»](./#3-asociar-el-motor-de-ejecución-a-un-multisitio _2){.external}.
+Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la Etapa 3 [«asociar el motor de ejecución a un multisitio»](./#etapa-3-asociar-el-motor-de-ejecucion-a-un-multisitio_2){.external}.
 
 ![cloudweb](images/cloud-web-runtime-step3.png){.thumbnail}
 

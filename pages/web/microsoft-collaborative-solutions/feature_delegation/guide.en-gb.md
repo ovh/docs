@@ -2,22 +2,23 @@
 title: 'Delegating permissions on an Exchange account'
 slug: exchange_2013_how_to_grant_full_access_permissions_for_an_account
 excerpt: 'Find out how to delegate permissions on your Exchange account to another user'
-section: 'Features and Exchange sharing'
+section: 'Exchange account features'
+order: 2
 ---
 
-**Last updated 31st August 2018**
+**Last updated 30th March 2020**
 
 ## Objective
 
-With the Exchange service, you can set up professional email addresses, and use them with a range of features for collaborative work. One of these features is the ability to delegate specific permissions (e.g. sending or access permissions) between different Exchange accounts.
+With the OVHcloud Exchange service, you can set up professional email addresses, and use them with a range of features for collaborative work. One of these features is the ability to delegate specific permissions (for example sending or access permissions) between different Exchange accounts.
 
 **Find out how to delegate permissions on your Exchange account to another user.**
 
 ## Requirements
 
-- an [Exchange](https://www.ovh.co.uk/emails/){.external} solution
-- at least two active Exchange accounts, configured on the same OVH Exchange platform
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- an [OVHcloud Exchange solution](https://www.ovh.co.uk/emails/hosted-exchange) already set up
+- at least two active Exchange accounts, configured on the same OVHcloud Exchange platform
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 - credentials for the Exchange account that will be delegated new permissions
 
 ## Instructions
@@ -39,7 +40,7 @@ When you have identified the account that you want to delegate permissions for, 
 
 ### Step 1: Set up the delegation.
 
-To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Then click on the name of the Exchange service containing the account that you want to delegate permissions for. Next, go to the `Email accounts`{.action} tab.
+To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Then click on the name of the Exchange service containing the account that you want to delegate permissions for. Next, go to the `Email accounts`{.action} tab.
 
 The table that appears will list all of the accounts linked to your Exchange service. Click on the three dots to the right of the account you want to delegate permissions for, then `Manage delegations`{.action}.
 

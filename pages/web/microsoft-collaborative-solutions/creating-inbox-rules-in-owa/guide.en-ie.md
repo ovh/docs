@@ -18,7 +18,7 @@ With the "Inbox rules" option, you can create an elaborate set of rules to handl
 
 ## Requirements
 
-- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovh.co.uk/web-hosting), included in a [free Start10M hosting](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml) or ordered separately as a standalone solution; [**Hosted Exchange**](https://www.ovh.co.uk/emails/hosted-exchange) or [**Email Pro**](https://www.ovh.co.uk/emails/email-pro))
+- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovh.ie/web-hosting), included in a [free Start10M hosting](https://www.ovh.ie/domains/start10m_hosting_offer.xml) or ordered separately as a standalone solution; [**Hosted Exchange**](https://www.ovh.ie/emails/hosted-exchange) or [**Email Pro**](https://www.ovh.ie/emails/email-pro))
 - login credentials for the email address you want to configure
 
 
@@ -26,7 +26,7 @@ With the "Inbox rules" option, you can create an elaborate set of rules to handl
 
 ### Step 1: Navigating to the options section
 
-Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.co.uk/mail). Click on the gear symbol on the top right to unfold the "Options" menu and select `Options`{.action}.
+Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.ie/mail). Click on the gear symbol on the top right to unfold the "Options" menu and select `Options`{.action}.
 
 ![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 
@@ -103,10 +103,10 @@ Please note that spam false positives cannot be declared directly from OWA. If y
 
 ## Go further
 
-[Creating automatic replies in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa)
+[Creating automatic replies in OWA](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa)
 
-[Sharing calendars in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_calendars_via_owa)
+[Sharing calendars in OWA](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_calendars_via_owa)
 
-[Using the Outlook Web App with an email account](https://docs.ovh.com/gb/en/emails/using-owa)
+[Using the Outlook Web App with an email account](https://docs.ovh.com/ie/en/emails/using-owa)
 
 Join our community of users on <https://community.ovh.com/en/>.

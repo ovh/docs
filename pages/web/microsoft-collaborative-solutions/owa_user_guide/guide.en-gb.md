@@ -2,7 +2,7 @@
 title: 'Using the Outlook Web App with an Exchange account'
 excerpt: 'Find out how to manage your Exchange address using OWA webmail'
 slug: exchange_2016_outlook_web_app_user_guide
-section: 'Outlook Web Access'
+section: 'Outlook Web Application (OWA)'
 order: 1
 ---
 
@@ -200,7 +200,7 @@ You can then browse the "Options" tree-view on the left-hand side of the page. F
 
 [Creating automatic replies in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa)
 
-[Sharing a folder in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_a_folder_via_owa)
+[Sharing folders in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_a_folder_via_owa)
 
 [Sharing calendars in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_calendars_via_owa)
 
