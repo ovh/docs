@@ -3,13 +3,14 @@ title: 'SSH-Schlüssel erstellen'
 slug: create-ssh-keys
 excerpt: 'Erfahren Sie hier, wie Sie einen SSH-Schlüssel erstellen, um sich bei Ihrer Instanz anzumelden'
 section: Sicherheit
+order: 1
 ---
 
 **Letzte Aktualisierung am 14.11.2019**
 
 ## Ziel
 
-Wenn Sie eine [Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/) erstellen, erhalten Sie keine E-Mail mit Anmeldeinformationen, da die Authentifizierung auf sicheren SSH-Schlüsseln anstelle von Benutzernamen und Kennwörtern basiert.
+Wenn Sie eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) erstellen, erhalten Sie keine E-Mail mit Anmeldeinformationen, da die Authentifizierung auf sicheren SSH-Schlüsseln anstelle von Benutzernamen und Kennwörtern basiert.
 
 **Diese Anleitung erklärt, wie Sie einen SSH-Schlüssel erstellen, um sich bei Ihrer Instanz anzumelden.**
 
