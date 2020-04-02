@@ -25,7 +25,7 @@ A dedicated server is a physical server located in one of our datacentres. Unlik
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/) in your OVHcloud account
+- a [dedicated server](https://www.ovh.com/asia/dedicated-servers/) in your OVHcloud account
 - administrative access (root) via SSH or remote desktop (Windows) to your server
 
 
