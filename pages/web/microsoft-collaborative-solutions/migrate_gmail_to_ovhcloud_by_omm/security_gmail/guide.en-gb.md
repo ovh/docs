@@ -11,7 +11,7 @@ hidden: true
 This guide details how to enable the “authorise less secure apps” option on your Gmail account.
 
 > [!primary] This documentation is a step linked to our guide on
-> [Migrating a Gmail account to an OVHcloud email address via the OVH Mail Migrator.](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migration-de-gmail-via-ovh-mail-migrator){.external}
+> [Migrating a Gmail account to an OVHcloud email address via the OVH Mail Migrator.](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migrate-gmail-via-ovh-mail-migrator){.external}
 
 ## Instructions
 
@@ -45,4 +45,4 @@ Once you have confirmed, the message below will show that your choice has been p
 
 ## Go further
 
-[Migrating a Gmail account to an OVHcloud email address via the OVH Mail Migrator](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migration-de-gmail-via-ovh-mail-migrator){.external}
+[Migrating a Gmail account to an OVHcloud email address via the OVH Mail Migrator](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migrate-gmail-via-ovh-mail-migrator){.external}
