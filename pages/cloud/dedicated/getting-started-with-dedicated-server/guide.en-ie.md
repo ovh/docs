@@ -25,7 +25,7 @@ A dedicated server is a physical server located in one of our datacentres. Unlik
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/) in your OVHcloud account
+- a [dedicated server](https://www.ovh.ie/dedicated_servers/) in your OVHcloud account
 - administrative access (root) via SSH or remote desktop (Windows) to your server
 
 
@@ -75,14 +75,13 @@ In the new window, enter an ID (a name of your choice) and the key itself (of ty
 
 ![Customise the partition configuration](images/SSH_12.png){.thumbnail}
 
-For a detailed explanation on how to generate SSH keys, please refer to [this guide](https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys).
+For a detailed explanation on how to generate SSH keys, please refer to [this guide](https://docs.ovh.com/ie/en/public-cloud/create-ssh-keys).
 
 
 > [!primary]
 >
-> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVHcloud](https://www.ovh.co.uk/dedicated_servers/distributions/), or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). You can manage your licences in the Control Panel in the `Server`{.action} section under `Licences`{.action}. In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Add an SPLA licence`{.action} button on the right).
->
-
+> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVHcloud](https://www.ovh.ie/dedicated_servers/distributions/), or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). You can manage your licences in the Control Panel in the `Server`{.action} section under `Licences`{.action}. In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Add an SPLA licence`{.action} button on the right).
+> 
 
 ### Logging on to your server
 
@@ -127,24 +126,24 @@ Network bridging is the action taken by network equipment to create an aggregate
 
 The Network Bridge configuration is most commonly used in the context of virtualisation, to allow each Virtual Machine to have its own public IP address.
 
-For more information on network bridging, please refer to our guide: [Network Bridging](https://docs.ovh.com/gb/en/dedicated/network-bridging/){.external}.
+For more information on network bridging, please refer to our guide: [Network Bridging](https://docs.ovh.com/ie/en/dedicated/network-bridging/).
 
 #### IP aliasing
 
 IP aliasing is the process of associating two or more IP addresses to the same network interface. This allows your server to establish multiple connections to a network, each serving a different purpose.
 
-For detailed instructions on how to configure IP aliasing, please refer to [this guide](https://docs.ovh.com/gb/en/dedicated/network-ipaliasing).
+For detailed instructions on how to configure IP aliasing, please refer to [this guide](https://docs.ovh.com/ie/en/dedicated/network-ipaliasing).
 
 #### IPv6 configuration
 
-All OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addresses in this block, you will need to make some network configuration changes. Please refer to our guide: [IPv6 Configuration](https://docs.ovh.com/gb/en/dedicated/network-ipv6/).
+All OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addresses in this block, you will need to make some network configuration changes. Please refer to our guide: [IPv6 Configuration](https://docs.ovh.com/ie/en/dedicated/network-ipv6/).
 
 
 ### Troubleshooting
 
 OVHcloud deploys all its dedicated servers with an IPMI (Intelligent Platform Management Interface) console, which runs in your browser or from a Java applet, and enables you to connect directly to your server, even if it has no network connection. This makes it good for troubleshooting issues that may have taken your server offline.
 
-For more information, please refer to our guide: [Using the IPMI with dedicated servers](https://docs.ovh.com/gb/en/dedicated/use-ipmi-dedicated-servers).
+For more information, please refer to our guide: [Using the IPMI with dedicated servers](https://docs.ovh.com/ie/en/dedicated/use-ipmi-dedicated-servers).
 
 ### Rescue mode
 
@@ -162,7 +161,7 @@ Confirm your options on the next screen and then reboot your server to apply the
 
 Your server will now reboot into rescue mode, and you will receive the credentials for logging in via the email address you provided. To exit rescue mode, simply change the boot mode back to boot on the hard disk, then reboot your server.
 
-To learn more about how you can use rescue mode to resolve issues with your server, please refer to our guide: [Rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/).
+To learn more about how you can use rescue mode to resolve issues with your server, please refer to our guide: [Rescue mode](https://docs.ovh.com/ie/en/dedicated/ovh-rescue).
 
 
 #### Hardware diagnosis
