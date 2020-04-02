@@ -2,7 +2,7 @@
 title: 'Setting up Veeam Backup & Replication'
 slug: veeam-backup-replication
 excerpt: 'Find out how to set up a Veeam Backup & Replication server with Veeam Enterprise'
-section: 'Veeam'
+section: Veeam
 ---
 
 **Last updated 8th November 2018**
@@ -96,23 +96,23 @@ Launch the Veeam console.
 
 Check that it is in **Free Edition** mode, in the bottom right-hand corner.
 
-![](images/veeamBandR_conf_13.PNG){.thumbnail}
+![](images/veeamBandR_conf_1.png){.thumbnail}
 
 Go to the menu, and click `Users and Roles`{.action}.
 
-![](images/veeamBandR_conf_14.PNG){.thumbnail}
+![](images/veeamBandR_conf_2.png){.thumbnail}
 
 In the `Security`{.action} window, select `Add...`{.action}.
 
-![](images/veeamBandR_conf_15.PNG){.thumbnail}
+![](images/veeamBandR_conf_3.png){.thumbnail}
 
 Then, in the `Add User`{.action} window, enter the service account you have created. Select the **Veeam Backup Administrator** role, then confirm by clicking `OK`{.action}.
 
-![](images/veeamBandR_conf_15.PNG){.thumbnail}
+![](images/veeamBandR_conf_4.png){.thumbnail}
 
 If you go back to the **Security** window, you can check that the account has been defined properly.
 
-![](images/veeamBandR_conf_16.PNG){.thumbnail}
+![](images/veeamBandR_conf_5.png){.thumbnail}
 
 #### Register the Veeam Backup & Replication server.
 

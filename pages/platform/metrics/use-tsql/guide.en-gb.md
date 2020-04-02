@@ -239,12 +239,12 @@ select("sys.cpu.nice")
 
 To resume **from** valid parameters are listed below. A parameter can be optional or mandatory. When a prefix is indicated, it means that this parameter can be set using a prefix name.
 
-| name | type | mandatory | prefix | Complementary information |
-|------|------|-----------|--------|---------------------------|
-| from | Integer,String | <i class="fas fa-check"></i> | from | Only on Warp 10, [ISO 8601 dates string](https://en.wikipedia.org/wiki/ISO_8601) |
-| from | Integer, Double, String |<i class="fas fa-check"></i>| from | Only on Prometheus, [RFC3339 format](https://www.ietf.org/rfc/rfc3339.txt) |
-| to | Integer,String | <i class="fas fa-times"></i> | to | Only on Warp 10, [ISO 8601 dates string](https://en.wikipedia.org/wiki/ISO_8601) |
-| to | Integer, Double, String |<i class="fas fa-times"></i> | to | Only on Prometheus, [RFC3339 format](https://www.ietf.org/rfc/rfc3339.txt) |
+| name | type                    | mandatory                    | prefix | Complementary information                                                        |
+| ---- | ----------------------- | ---------------------------- | ------ | -------------------------------------------------------------------------------- |
+| from | Integer,String          | <i class="fas fa-check"></i> | from   | Only on Warp 10, [ISO 8601 dates string](https://en.wikipedia.org/wiki/ISO_8601) |
+| from | Integer, Double, String | <i class="fas fa-check"></i> | from   | Only on Prometheus, [RFC3339 format](https://www.ietf.org/rfc/rfc3339.txt)       |
+| to   | Integer,String          | <i class="fas fa-times"></i> | to     | Only on Warp 10, [ISO 8601 dates string](https://en.wikipedia.org/wiki/ISO_8601) |
+| to   | Integer, Double, String | <i class="fas fa-times"></i> | to     | Only on Prometheus, [RFC3339 format](https://www.ietf.org/rfc/rfc3339.txt)       |
 
 The **last** method is used to select the last recorded datapoints after a valid date.
 
@@ -280,14 +280,14 @@ select("sys.cpu.nice")
 
 To resume **last** valid parameters are listed below. A parameter can be optional or mandatory. When a prefix is indicated, it means that this parameter can be set using a prefix name.
 
-| name | type | mandatory | prefix | Complementary information |
-|------|------|-----------|--------|---------------------------|
-| span | Duration value | <i class="fas fa-check"></i> | None | first parameter |
-| count | Integer | <i class="fas fa-check"></i> | None | Only on Warp 10, first parameter |
-| date | String| <i class="fas fa-times"></i> | date | On Prometheus, [RFC3339 format](https://www.ietf.org/rfc/rfc3339.txt) and on Warp 10, [ISO 8601 dates string](https://en.wikipedia.org/wiki/ISO_8601) |
-| timestamp | Integer | <i class="fas fa-times"></i> | timestamp | Only on Warp 10 |
-| timestamp | Integer, Double | <i class="fas fa-times"></i> | timestamp | Only on Prometheus |
-| shift | Duration value |<i class="fas fa-times"></i> | shift | |
+| name      | type            | mandatory                    | prefix    | Complementary information                                                                                                                             |
+| --------- | --------------- | ---------------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| span      | Duration value  | <i class="fas fa-check"></i> | None      | first parameter                                                                                                                                       |
+| count     | Integer         | <i class="fas fa-check"></i> | None      | Only on Warp 10, first parameter                                                                                                                      |
+| date      | String          | <i class="fas fa-times"></i> | date      | On Prometheus, [RFC3339 format](https://www.ietf.org/rfc/rfc3339.txt) and on Warp 10, [ISO 8601 dates string](https://en.wikipedia.org/wiki/ISO_8601) |
+| timestamp | Integer         | <i class="fas fa-times"></i> | timestamp | Only on Warp 10                                                                                                                                       |
+| timestamp | Integer, Double | <i class="fas fa-times"></i> | timestamp | Only on Prometheus                                                                                                                                    |
+| shift     | Duration value  | <i class="fas fa-times"></i> | shift     |                                                                                                                                                       |
 
 ### Sampling
 
@@ -352,14 +352,14 @@ select("sys.cpu.nice")
 
 To resume **sampleBy** valid parameters are listed below. A parameter can be optional or mandatory. When a prefix is indicated, it means that this parameter can be set using a prefix name.
 
-| name | type | mandatory | prefix | Complementary information |
-|------|------|-----------|--------|---------------------------|
-| span | Duration value | <i class="fas fa-check"></i> | span | |
-| count | Number | <i class="fas fa-check"></i> | count | |
-| aggregator | Operator | <i class="fas fa-check"></i> | aggregator | Operator value can be one of: **max, mean, min, first, last, sum, join, median, count, and, or** |
-| fill | String | <i class="fas fa-times"></i> | fill | Fill value can be one of **auto, none, interpolate, next, previous** |
-| fill | List of string | <i class="fas fa-times"></i> | fill | Each values of the list can be one of **interpolate, next, previous** |
-| relative | Boolean | <i class="fas fa-times"></i> | relative | |
+| name       | type           | mandatory                    | prefix     | Complementary information                                                                        |
+| ---------- | -------------- | ---------------------------- | ---------- | ------------------------------------------------------------------------------------------------ |
+| span       | Duration value | <i class="fas fa-check"></i> | span       |                                                                                                  |
+| count      | Number         | <i class="fas fa-check"></i> | count      |                                                                                                  |
+| aggregator | Operator       | <i class="fas fa-check"></i> | aggregator | Operator value can be one of: **max, mean, min, first, last, sum, join, median, count, and, or** |
+| fill       | String         | <i class="fas fa-times"></i> | fill       | Fill value can be one of **auto, none, interpolate, next, previous**                             |
+| fill       | List of string | <i class="fas fa-times"></i> | fill       | Each values of the list can be one of **interpolate, next, previous**                            |
+| relative   | Boolean        | <i class="fas fa-times"></i> | relative   |                                                                                                  |
 
 ### Group and GroupBy
 
@@ -404,11 +404,11 @@ select("sys.cpu.nice")
 
 To resume **groupBy** valid parameters are listed below. A parameter can be optional or mandatory. When a prefix is indicated, it means that this parameter can be set using a prefix name.
 
-| name | type | mandatory | prefix | Complementary information |
-|------|------|-----------|--------|---------------------------|
-| label | String | <i class="fas fa-check"></i> | None | a label key as first parameter |
-| labels | List of string | <i class="fas fa-check"></i> | None | a label key list as first parameter |
-| aggregator | Operator | <i class="fas fa-check"></i> | None | Operator value can be one of: **max, mean, min, sum, join, median, count, and** or **or** as second parameter |
+| name       | type           | mandatory                    | prefix | Complementary information                                                                                     |
+| ---------- | -------------- | ---------------------------- | ------ | ------------------------------------------------------------------------------------------------------------- |
+| label      | String         | <i class="fas fa-check"></i> | None   | a label key as first parameter                                                                                |
+| labels     | List of string | <i class="fas fa-check"></i> | None   | a label key list as first parameter                                                                           |
+| aggregator | Operator       | <i class="fas fa-check"></i> | None   | Operator value can be one of: **max, mean, min, sum, join, median, count, and** or **or** as second parameter |
 
 ### Metrics values operators
 
@@ -420,9 +420,9 @@ The **window** method expects
 
 * At least a **window function** to use: can be one of **max, mean, min, first, last, sum, delta, stddev, stdvar, join, median, count, and** or **or**. TSL expects the window function to be set as an ident field.
 * A single duration time window to compute the **over_time** method on for **Prometheus** or **Warp10**.
-* **Warp10** MAP frame supports two parameters as TSL window function a [pre and/or post](http://www.warp10.io/reference/frameworks/framework-map/){.external} parameter. The **pre** and **post** parameters can be a number of points to compute the window on, or a duration if the series was sampled before.
+* **Warp10** MAP frame supports two parameters as TSL window function a [pre and/or post](https://www.warp10.io/tags/mapper){.external} parameter. The **pre** and **post** parameters can be a number of points to compute the window on, or a duration if the series was sampled before.
 
-As Warp 10 is more flexible, you can either specify a duration or a number of points to apply on with the [pre and/or post](http://www.warp10.io/reference/frameworks/framework-map/){.external} parameter.
+As Warp 10 is more flexible, you can either specify a duration or a number of points to apply on with the [pre and/or post](https://www.warp10.io/tags/mapper){.external} parameter.
 
 Example:
 
@@ -501,12 +501,12 @@ The following TSL methods can be used to apply time related operators on metrics
 
 #### Time window methods
 
-TSL includ a method to apply an operation on a selected time window. This represents [**time window mapper**](http://www.warp10.io/reference/frameworks/framework-map/){.external} in Warp 10 and [**over_time**](https://prometheus.io/docs/prometheus/latest/querying/functions/#%3Caggregation%3E_over_time()){.external} operators in PromQL.
-This methods apply a function to all values of a time window of each metrics and replace the current value by the result of this function. 
+TSL includ a method to apply an operation on a selected time window. This represents [**time window mapper**](https://www.warp10.io/tags/mapper){.external} in Warp 10 and [**over_time**](https://prometheus.io/docs/prometheus/latest/querying/functions/#%3Caggregation%3E_over_time()){.external} operators in PromQL.
+This methods apply a function to all values of a time window of each metrics and replace the current value by the result of this function.
 
 The method applied can be one of
 
-### Metrics sort 
+### Metrics sort
 
 TSL introduces some methods to sort metrics by their samples values.
 
