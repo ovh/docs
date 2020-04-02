@@ -1,11 +1,12 @@
 ---
-title: Getting started with a dedicated server
+title: 'Getting started with a dedicated server'
 slug: getting-started-dedicated-server
-excerpt: This guide will give you a few tips to help you manage your newly-delivered dedicated server
-section: Getting started
+excerpt: 'This guide will give you a few tips to help you manage your newly-delivered dedicated server'
+section: 'Getting started'
+order: 1
 ---
 
-**Last updated 25/05/2018**
+**Last updated 1st April 2020**
 
 ## Objective
 
@@ -13,20 +14,87 @@ A dedicated server is a physical server located in one of our datacentres. Unlik
 
 **This guide will give you a few tips to help you manage your newly-delivered dedicated server.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I2G6TkKg0gQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requirements
 
-* A [dedicated server](https://www.ovh.com/sg/dedicated-servers/){.external} in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} with root to via SSH (Linux)
-* A [dedicated server](https://www.ovh.com/sg/dedicated-servers/){.external} in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} with administrative access via remote desktop (Windows).
+* A [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} with root to via SSH (Linux)
+* A [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} with administrative access via remote desktop (Windows).
 
 
 ## Instructions
+
+When your dedicated server is first set up, you can select which operating system will be installed.
+
+### Installing or reinstalling your dedicated server
+
+Go to your server's page in your [control panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Reinstall`{.action} button.
+
+![Reinstall button](images/reinstalling-your-server-01.png){.thumbnail}
+
+On the next screen, select either `Install from an OVH template`{.action} (to use one of our installation templates) or `Install one of your templates`{.action} (to use your own), then click `Next`{.action}.
+
+![Template selection](images/reinstalling-your-server-02.png){.thumbnail}
+
+Select the operating system you want to install and click `Next`{.action}.
+
+![Operating selection](images/reinstalling-your-server-03.png){.thumbnail}
+
+Follow the rest of the instructions on the screen, then click `Confirm`{.action} to proceed with the installation.
+
+### Optional
+At this moment, if you wish to install a Linux based operating system, you can add your SSH key during the installation process.
+
+In order to do so, check the box before "Customise the partition configuration"
+
+![Customise the partition configuration](images/SSH_01.png){.thumbnail}
+
+Once done, you will see this next step where you can modify the partioning scheme of your operating system :
+
+![Customise the partition configuration](images/SSH_02.png){.thumbnail}
+
+After changing it (if necessary), then click `Next`{.action}.
+
+![Customise the partition configuration](images/SSH_03.png){.thumbnail}
+
+Now, you will see at the bottom SSH keys with a drop down menu. If you already have an existing SSH key registered, the key will appear on the list once you open the drop down menu. Otherwise, you will need to add one to your control panel through "My account" section :
+
+![Customise the partition configuration](images/SSH_05.png){.thumbnail}
+
+To retrieve this section, you can click on your name at the top right corner and then click on "My account".
+
+![Customise the partition configuration](images/SSH_06.png){.thumbnail}
+
+Then, this will be displayed and you will be able to reach "My SSH keys" section :
+
+![Customise the partition configuration](images/SSH_08.png){.thumbnail}
+
+Where you can add your own : 
+
+![Customise the partition configuration](images/SSH_09.png){.thumbnail}
+
+As we are installing a dedicated server (or a VPS), make sure to select "Dedicated" on the drop down menu :
+
+![Customise the partition configuration](images/SSH_10.png){.thumbnail}
+
+What you need to enter is an ID (a name of your choice) and the key itself (type supported  : RSA, ECDSA and Ed25519) :
+
+![Customise the partition configuration](images/SSH_12.png){.thumbnail}
+
+As a side note, if you need to know how to generate a SSH key, we suggest this guide : <https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys/>
+
+
+
+> [!primary]
+>
+> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVHcloud](https://www.ovh.co.uk/dedicated_servers/distributions/){.external}, or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [control panel](https://www.ovh.com/auth/?action=gotomanager){.external}. You can manage your licences via the [control panel](https://www.ovh.com/auth/?action=gotomanager){.external}, under `Dedicated`{.action}, then `Licences`{.action}. In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Add an SPLA licence`{.action} button on the right).
+> 
 
 ### Logging on to your server
 
 #### Linux
 
-When your dedicated server is first set up, you will get an email containing your password for root access. Root access lets you connect to your server via SSH, which is a secure communication protocol. You can access your server through a command terminal (Linux or MAC), or through third-party software on Windows (e.g.: PuTTy).
+Once the installation is completed, you will get an email containing your password for root access. Root access lets you connect to your server via SSH, which is a secure communication protocol. You can access your server through a command terminal (Linux or MAC), or through third-party software on Windows (e.g.: PuTTy).
 
 Once you have opened the terminal, type the following command to log on to your server, replacing the text after the @ symbol with the information required (IP address or server reference name). Your server's reference name will always start with *ns*.
 
@@ -44,29 +112,7 @@ ssh root@your_server_reference_name
 
 #### Windows
 
-When your dedicated server is first set up, you will get an email containing your password for administrative (root) access. You will need to use these credentials to connect to the server via RDP. Once you've connected, Windows will guide you through an intial setup.
-
-### Installing or reinstalling your dedicated server
-
-Go to your server's page in your [control panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click the `Reinstall`{.action} button.
-
-![Reinstall button](images/reinstalling-your-server-01.png){.thumbnail}
-
-On the next screen, select either `Install from an OVH template`{.action} (to use one of our installation templates) or `Install one of your templates`{.action} (to use your own), then click `Next`{.action}.
-
-![Template selection](images/reinstalling-your-server-02.png){.thumbnail}
-
-Select the operating system you want to install and click `Next`{.action}.
-
-![Operating selection](images/reinstalling-your-server-03.png){.thumbnail}
-
-Follow the rest of the instructions on the screen, then click `Confirm`{.action} to proceed with the installation.
-
-
-> [!primary]
->
-> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVH](https://www.ovh.com/sg/dedicated-servers/distributions/){.external}, or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. You can manage your licences via the [control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, under `Dedicated`{.action}, then `Licences`{.action}. In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Add an SPLA licence`{.action} button on the right).
-> 
+Once the installation is completed, you will get an email containing your password for administrative (root) access. You will need to use these credentials to connect to the server via RDP (**R**emote **D**esktop **P**rotocol). Once you've connected, Windows will guide you through an intial setup.
 
 
 ### Securing your dedicated server
@@ -87,43 +133,42 @@ Network bridging is the action taken by network equipment to create an aggregate
 
 The Network Bridge configuration is most commonly used in the context of virtualisation, to allow each Virtual Machine to have its own public IP address.
 
-For more information on network bridging, please refer to our guide: [Network Bridging](https://docs.ovh.com/asia/en/dedicated/network-bridging/){.external}.
+For more information on network bridging, please refer to our guide: [Network Bridging](https://docs.ovh.com/gb/en/dedicated/network-bridging/){.external}.
 
 #### IP aliasing
 
 IP aliasing is the process of associating two or more IP addresses to the same network interface. This allows your server to establish multiple connections to a network, each serving a different purpose.
 
-For detailed instructions on how to configure IP aliasing, please refer to [this guide](https://docs.ovh.com/asia/en/dedicated/network-ipaliasing/){.external}.
+For detailed instructions on how to configure IP aliasing, please refer to [this guide](https://docs.ovh.com/gb/en/dedicated/network-ipaliasing/){.external}.
 
 #### IPv6 configuration
 
-All OVH dedicated servers are delivered with a /64 IPv6 block. To use the addresses in this block, you will need to make some network configuration changes. 
+All OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addresses in this block, you will need to make some network configuration changes. Please refer to our guide: [IPv6 Configuration](https://docs.ovh.com/gb/en/dedicated/network-ipv6/){.external}.
+
 
 ### Troubleshooting
 
-OVH deploys all its dedicated servers with an IPMI (Intelligent Platform Management Interface) console, which runs in your browser or from a Java applet, and enables you to connect directly to your server, even if it has no network connection. This makes it good for troubleshooting issues that may have taken your server offline.
+OVHcloud deploys all its dedicated servers with an IPMI (Intelligent Platform Management Interface) console, which runs in your browser or from a Java applet, and enables you to connect directly to your server, even if it has no network connection. This makes it good for troubleshooting issues that may have taken your server offline.
 
-For more information, please refer to our guide: [Using the IPMI with dedicated servers](https://docs.ovh.com/asia/en/dedicated/use-ipmi-dedicated-servers/){.external}.
+For more information, please refer to our guide: [Using the IPMI with dedicated servers](https://docs.ovh.com/gb/en/dedicated/use-ipmi-dedicated-servers/){.external}.
 
 ### Rescue mode
 
-If there's ever an issue with your server, the first troubleshooting step you should take is to reboot your server into rescue mode. To activate rescue mode, log in to your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager){.external} and go to your server's page. Then go to `Server Status`{.action} > `General information`{.action} > `Boot`{.action}. Click the `Edit`{.action} button to change the boot mode.
+If there's ever an issue with your server, the first troubleshooting step you should take is to reboot your server into rescue mode. To activate rescue mode, log in to your [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager){.external} and go to your server's page. Then go to `Server Status`{.action} > `General information`{.action} > `Boot`{.action}. Click the `Edit`{.action} button to change the boot mode.
 
 ![Change boot selection](images/rescue-mode-01.png){.thumbnail}
 
-On the next screen, select `Boot on rescue mode`{.action} and select `rescue64-pro`{.action} from the dropdown list. Type your email address in the text field, then click `Next`{.action}.
+On the next screen, select `Boot on rescue mode`{.action} and select `rescue64-pro`{.action} from the dropdown list. Type your email address in the text field, then click `Next`{.action}. If you leave the email field empty, the email address from your NIC handle is used by default.
 
 ![Rescue Pro 64](images/rescue-mode-03.png){.thumbnail}
-
 
 Confirm your options on the next screen and then reboot your server to apply the changes.
 
 ![Confirmation and reboot](images/rescue-mode-02.png){.thumbnail}
 
-
 Your server will now reboot into rescue mode, and you will receive the credentials for logging in via the email address you provided. To exit rescue mode, simply change the boot mode back to boot on the hard disk, then reboot your server.
 
-To learn more about how you can use rescue mode to resolve issues with your server, please refer to our guide: [Rescue mode](https://docs.ovh.com/asia/en/dedicated/ovh-rescue/){.external}.
+To learn more about how you can use rescue mode to resolve issues with your server, please refer to our guide: [Rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external}.
 
 
 #### Hardware diagnosis
