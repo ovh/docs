@@ -6,6 +6,8 @@ section: 'Migration d’un compte Exchange'
 order: 3
 ---
 
+****Dernière mise à jour le 09/03/2020****
+
 ## Objectif
 
 [OVH Mail Migrator](https://omm.ovh.net/){.external} (OMM) est un outil créé par OVHcloud. Il permet de migrer vos comptes e-mail d'un hébergeur à un autre. Le processus prend en charge différents types de contenus, tels que les e-mails, les contacts, les calendriers et les tâches, tant que ces derniers sont compatibles avec vos comptes e-mail OVHcloud. 
@@ -166,6 +168,3 @@ La fenêtre de suivi de migration s'affiche, vous pouvez laisser celle-ci ouvert
 [Comment autoriser les connexions moins sécurisées sur Gmail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-de-gmail-via-ovh-mail-migrator/securite-gmail){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
-
-
-
