@@ -25,7 +25,7 @@ A dedicated server is a physical server located in one of our datacentres. Unlik
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/) in your OVHcloud account
+- a [dedicated server](https://www.ovh.com/ca/en/dedicated-servers/) in your OVHcloud account
 - administrative access (root) via SSH or remote desktop (Windows) to your server
 
 
@@ -80,7 +80,7 @@ For a detailed explanation on how to generate SSH keys, please refer to [this gu
 
 > [!primary]
 >
-> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVHcloud](https://www.ovh.co.uk/dedicated_servers/distributions/), or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). You can manage your licences in the Control Panel in the `Server`{.action} section under `Licences`{.action}. In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Add an SPLA licence`{.action} button on the right).
+> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVHcloud](https://www.ovh.com/ca/en/dedicated-servers/distributions/), or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). You can manage your licences in the Control Panel in the `Server`{.action} section under `Licences`{.action}. In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Add an SPLA licence`{.action} button on the right).
 >
 
 
