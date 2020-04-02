@@ -120,7 +120,7 @@ Write a file called `script.mc2` with this content:
 Then, you can execute the query using `curl`:
 
 ```shell-session
-$ curl -X POST @script.mc2 'https://warp10.gra1.metrics.ovh.net/api/v0/exec'
+$ curl -X POST --data-binary @script.mc2 'https://warp10.gra1.metrics.ovh.net/api/v0/exec'
 ```
 
 ### How to delete my data
