@@ -10,6 +10,7 @@ The product covered by those End Of Sale (EOS) and End Of Life (EOL) announcemen
 
 |Version|EOL and End-of-Support|
 |---|---|
+|12|2024-11-14|
 |11|2023-11-9|
 |10|2022-11-10|
 |9.6|2021-11-11|
