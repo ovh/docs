@@ -40,7 +40,7 @@ Une fenêtre vous demande votre nom d'utilisateur OVHcloud Logs. Renseignez-le e
 ### Étape 3 : utilisation de Graylog
 
 Nous vous proposons le logiciel Graylog pour visualiser vos logs de manière simple et interactive. Graylog vous permet de créer des dashboards de toutes sortes et de naviguer dans vos journaux d'évènements.
-[La documentation officielle de OVHcloud Logs](../../platform/logs-data-platform/){.external} détaille toutes les étapes de configuration qui vous permettront de créer les dashboards nécessaires à votre usage, et plus encore.
+[La documentation officielle de OVHcloud Logs](../../../../fr/logs-data-platform/){.external} détaille toutes les étapes de configuration qui vous permettront de créer les dashboards nécessaires à votre usage, et plus encore.
 
 Exemple de dashboard :
 

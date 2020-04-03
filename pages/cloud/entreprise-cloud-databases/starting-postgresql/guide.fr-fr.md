@@ -90,11 +90,11 @@ psql -U postgres -h 5f771a6d99ee4102980c2d.prm.clouddb.ovh.net -p 6713 -W --set=
 ### Étape 5 : créer les bases et les utilisateurs
 
 Une fois connecté sur votre cluster, vous pouvez y créer des bases et des utilisateurs supplémentaires.
-Consultez à cet effet la [https://www.postgresql.org/docs/](documentation PostgreSQL){.external} documentation PostgreSQL officielle pour la création de bases et d'utilisateurs.
+Consultez à cet effet la [documentation PostgreSQL](https://www.postgresql.org/docs/){.external} documentation PostgreSQL officielle pour la création de bases et d'utilisateurs.
 
 
 ## Aller plus loin
 
-Apprenez à gérer votre cluster PostgreSQL en consultant la [documentation technique d'OVHcloud](../enterprise-cloud-databases/){.external} pour davantage d'informations sur le fonctionnement technique de votre offre managée.
+Apprenez à gérer votre cluster PostgreSQL en consultant la [documentation technique d'OVHcloud](../){.external} pour davantage d'informations sur le fonctionnement technique de votre offre managée.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
