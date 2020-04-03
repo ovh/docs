@@ -93,6 +93,6 @@ Once you have logged in to your cluster, you can create additional databases and
 
 ## Go further
 
-Learn how to manage your PostgreSQL cluster by reading [OVHcloud’s technical guides](../enterprise-cloud-databases/){.external} for further information on the technical aspects of how your managed solution works.
+Learn how to manage your PostgreSQL cluster by reading [OVHcloud’s technical guides](../){.external} for further information on the technical aspects of how your managed solution works.
 
 Join our community of users on <https://community.ovh.com/en/>.

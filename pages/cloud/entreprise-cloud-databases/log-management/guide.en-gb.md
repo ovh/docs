@@ -39,7 +39,7 @@ A window will appear, prompting you to enter your OVHcloud Logs username. Enter 
 ### Step 3: Use Graylog.
 
 We offer Graylog software for viewing logs in a simple, interactive interface. You can use Graylog to create a range of different dashboard types, and browse event logs.
-[The official OVHcloud Logs documentation](../../platform/logs-data-platform/){.external} details all the configuration steps you need to follow in order to create the dashboards you need, and much more.
+[The official OVHcloud Logs documentation](../../logs-data-platform/){.external} details all the configuration steps you need to follow in order to create the dashboards you need, and much more.
 
 Dashboard example:
 
