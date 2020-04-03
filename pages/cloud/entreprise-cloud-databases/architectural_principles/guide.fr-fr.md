@@ -52,7 +52,7 @@ Basés sur une infrastructure redondée de serveurs de stockage OVH, ils conserv
 
 - **Haute disponibilité de vos données**
 
-OVH utilise et contribue à [Patroni](https://github.com/zalando/patroni){.external}, un programme en Python utilisé pour gérer la configuration de PostgreSQL.
+OVHcloud utilise et contribue à [Patroni](https://github.com/zalando/patroni){.external}, un programme en Python utilisé pour gérer la configuration de PostgreSQL.
 Cette couche logicielle prend en charge la réplication et la promotion des nœuds au sein du cluster.
 Le quorum de haute disponibilité du cluster est assuré par une instance ZooKeeper installée sur chaque serveur.
 
