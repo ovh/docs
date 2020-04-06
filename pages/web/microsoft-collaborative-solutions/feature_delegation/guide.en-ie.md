@@ -12,7 +12,7 @@ order: 2
 
 With the OVHcloud Exchange service, you can set up professional email addresses, and use them with a range of features for collaborative work. One of these features is the ability to delegate specific permissions (for example sending or access permissions) between different Exchange accounts.
 
-**Find out how to delegate permissions on your Exchange account to another user.**
+**This guide explains how to delegate permissions on your Exchange account to another user.**
 
 ## Requirements
 
@@ -38,9 +38,9 @@ Before you get started, define the permissions you want to delegate. As a remind
 
 When you have identified the account that you want to delegate permissions for, determined the kinds of permissions you want to delegate, and listed the users that will be delegated these permissions, go to the next step.
 
-### Step 1: Set up the delegation.
+### Step 1: Setting up the delegation
 
-To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Then click on the name of the Exchange service containing the account that you want to delegate permissions for. Next, go to the `Email accounts`{.action} tab.
+To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Then click on the name of the Exchange service containing the account that you want to delegate permissions for. Next, go to the `Email accounts`{.action} tab.
 
 The table that appears will list all of the accounts linked to your Exchange service. Click on the three dots to the right of the account you want to delegate permissions for, then `Manage delegations`{.action}.
 
@@ -54,7 +54,7 @@ Take a few moments to check the change summary. If the information in the summar
 
 Once the delegation has been configured, *test@mypersonaldomain.ovh* can carry out the selected actions on the *test2@mypersonaldomain.ovh* account.
 
-### Step 2: Use the delegated permissions.
+### Step 2: Using the delegated permissions
 
 Now that the delegation has been set up, it is ready to use. Before you go any further, please ensure that you have the credentials for the Exchange account that has been granted the newly delegated permissions.
 
@@ -66,11 +66,11 @@ This will work differently depending on the permissions you have delegated, and 
 > This solution requires knowledge of the software or interface you would like to use. We have provided general information below on how to proceed, but we recommend contacting a specialist provider and/or getting in touch with the publisher of the interface or software if you encounter any difficulties. We will not be able to assist you ourselves.
 >
 
-#### 2.1 Use your access permissions.
+#### 2.1 Using your access permissions
 
 - **From the Outlook Web Application (OWA)**
 
-Go to <https://www.ovh.ie/mail/> and enter the login details for the Exchange account that has been delegated permissions. Once you have logged in, right-click on the name of the account in the menu on the left-hand side, then select `Add shared folder`{.action}.
+Log in via the [OVHcloud webmail](https://www.ovh.ie/mail) using the credentials for the Exchange account that has been delegated permissions. Once you are logged in, right-click on the name of the account in the menu on the left-hand side, then select `Add shared folder`{.action}.
 
 In the window that pops up, enter the name for the account that holds the delegated permissions, then click `Add`{.action}. The account will then appear in the left-hand menu, and you can view its content.
 
@@ -86,11 +86,11 @@ Next, click on `More Settings`{.action}. In the new window, go to the `Advanced`
 
 ![delegation](images/delegation-step5.png){.thumbnail}
 
-#### 2.2 Use the ‘Send As’ permission.
+#### 2.2 Using the ‘Send As’ permission
 
 - **From the Outlook Web Application (OWA)**
 
-Go to <https://www.ovh.ie/mail/> and enter the login details for the Exchange account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
+Log in via the [OVHcloud webmail](https://www.ovh.ie/mail) using the credentials for the Exchange account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
 
 In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated that permission for). If it doesn’t appear, delete the address that is already displayed, and enter the address you want to appear. 
 
@@ -112,7 +112,7 @@ At this stage, you are now ready to write and send your email.
 
 - **From the Outlook Web Application (OWA)**
 
-Go to <https://www.ovh.ie/mail/> and enter the login details for the Exchange account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
+Log in via the [OVHcloud webmail](https://www.ovh.ie/mail) using the credentials for the Exchange account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
 
 In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If it doesn’t appear, delete the address that is already displayed, and enter the address you want to appear. 
 
@@ -130,6 +130,13 @@ At this stage, you are now ready to write and send your email.
 
 ![delegation](images/delegation-step7.png){.thumbnail}
 
+
 ## Go further
+
+[Using the Outlook Web App with an Exchange account](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide)
+
+[Sharing folders in OWA](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_a_folder_via_owa)
+
+[Creating contact groups](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_20132016_how_to_use_the_groups_feature_mailing_lists)
 
 Join our community of users on <https://community.ovh.com/en/>.
