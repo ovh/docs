@@ -41,10 +41,10 @@ Delivering a fully managed service, including OS and other component updates, yo
 
 ## LoadBalancer
 
-We are currently offering OVHcloud Managed Kubernetes LoadBalancer service as a free preview, until the end of summer 2020.  
-During the free preview there is a limit of 6 active `LoadBalancers` per cluster.  
+There is a default quota of 16 external `LoadBalancers` per cluster.  
 This limit can be exceptionally raised upon request though our support team.  
-There is also a limit of __10 open ports__ on every `LoadBalancer`, and these ports must be in a range between __1 and 49151__.
+There is also a limit of __10 open ports__ on every `LoadBalancer`, and these ports must be in a range between __6 and 65535__.
+(Additonally, node-ports are using default range of 30000 - 32767 , allowing you to expose 2767 services/ports).
 
 ## OpenStack
 
