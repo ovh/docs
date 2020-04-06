@@ -13,13 +13,13 @@ You can manage your Public Cloud projects easily via the [OVHcloud Control Panel
 
 **This guide explains the first steps with a Public Cloud Instance.**
 
-### Requirements
+## Requirements
 
 - a [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud) in your OVHcloud account
 - an [SSH key](https://docs.ovh.com/ie/en/public-cloud/create-ssh-keys/)
 
 
-### Instructions
+## Instructions
 
 ### Access the management interface for the instance
 
