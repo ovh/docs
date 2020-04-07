@@ -26,6 +26,15 @@ Please enter your OpenStack Password for project <project_name> as user <user_na
 user@host:~$
 ```
 
+## Install Openstack client if needed
+
+```bash
+user@host:~$ pip install python-openstackclient
+
+user@host:~$
+```
+
+Openstack client command reference [here](https://docs.openstack.org/python-openstackclient/latest/)
 
 ## Create EC2 credentials
 
