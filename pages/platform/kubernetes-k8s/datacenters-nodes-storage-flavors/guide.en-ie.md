@@ -5,7 +5,7 @@ slug: datacenters-nodes-storage-flavors
 section: Technical resources
 ---
 
-**Last updated March 27<sup>th</sup>, 2020.**
+**Last updated April 08<sup>th</sup>, 2020.**
 
 ## Available datacenters, worker nodes and persistent storage flavors
 
@@ -25,9 +25,10 @@ We currently support 3 types of instances with guaranteed and constant resources
 * GENERAL PURPOSE (`B2-*`)
 * CPU ORIENTED (`C2-*`)
 * RAM ORIENTED (`R2-*`)
+* IOPS ORIENTED (`i1-*`)
 
 Each family offers contains 5 different flavors, consisting of a five amount of vCores, RAM and local storage.  
-For more information, please refer to the following page: [OVHcloud Public Cloud instances](https://www.ovhcloud.com/en-gb/public-cloud/prices/)
+For more information, please refer to the following page: [OVHcloud Public Cloud instances](https://www.ovhcloud.com/en-ie/public-cloud/prices/)
 
 Note that we are both compatible with the standard and flex variations (Flex offering the same disk size for each flavor).
 Note however that Managed Kubernetes Service does not currently offer worker nodes resize.  
