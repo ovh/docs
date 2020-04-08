@@ -23,6 +23,11 @@ SSH is a protocol making it possible to access and communicate with a server in 
 
 ## Instructions
 
+> [!primary]
+>
+If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA, or ECDSA encryption. ED25519 is currently not supported.
+>
+
 There are two ways to add an SSH key from the Public Cloud interface:
 
 - The first and more direct method is done at the time of the creation of an instance.

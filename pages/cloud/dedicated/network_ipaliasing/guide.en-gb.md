@@ -1,27 +1,38 @@
 ---
 title: 'Configuring IP aliasing'
 slug: network-ipaliasing
-excerpt: 'This guide explains how to add failover IPs to your configuration'
+excerpt: 'Find out how to add failover IP addresses to your server configuration'
 section: 'Network Management'
 ---
 
-**Last updated 10th May 2019**
+**Last updated 8th April 2020**
 
 ## Objective
 
-IP aliasing is a special network configuration for your OVH Dedicated Server, which allows you to associate multiple IP addresses with a single network interface.
+IP aliasing is a special network configuration for your OVHcloud dedicated servers, which allows you to associate multiple IP addresses with a single network interface.
 
-**This guide explains how to make this addition.**
+**This guide explains how to add failover IP addresses to your network configuration.**
+
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>
 
 ## Requirements
 
-* a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}
-* a [failover IP address](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external} or a failover IP block (RIPE)
-* administrative (root) access to the server via SSH (Linux, Unix) or remote desktop (Windows)
+- a [Dedicated server](https://www.ovh.co.uk/dedicated_servers) in your OVHcloud account
+- a [failover IP address](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml) or a failover IP block (RIPE)
+- administrative access (root) via SSH or remote desktop (Windows) to your server
 
 ## Instructions
 
-Here are the configurations for the main distributions/operating systems:
+The following sections contain the configurations for the most commonly used distributions/operating systems.
+
+> [!primary]
+>
+Concerning current distributions, please note that the proper procedure to configure your network interface may be subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
+> 
 
 
 ### Debian 6/7/8 and derivatives
@@ -35,6 +46,11 @@ cp /etc/network/interfaces /etc/network/interfaces.bak
 ```
 
 #### Step 2: Edit the config file
+
+> [!primary]
+>
+Note that the names of the network interfaces in our examples may differ from your own. Please adjust to your appropriate interface names.
+>
 
 You can now modify the config file:
 
@@ -141,7 +157,7 @@ systemctl restart systemd-networkd
 ```
 ### Ubuntu 17.10 and following
 
-Each failover IP address will need its own line in the configuration file. The configuration file is called 50-cloud-init.yaml and is located in /etc/netplan.
+Each failover IP address will need its own line in the configuration file. The configuration file is called "50-cloud-init.yaml" and is located in /etc/netplan.
 
 
 #### Step 1: Determine the interface
@@ -244,7 +260,7 @@ Now you have to edit the file to add the failover IP. In Gentoo, an alias is add
 
 > [!warning]
 >
-> The server’s default IP and config_eth0= should stay on the same line. This is to ensure that certain OVH-specific operations work properly.
+> The server’s default IP and config_eth0= should stay on the same line. This is to ensure that certain OVHcloud-specific operations work properly.
 > 
 
 All you need to do is add a line break after the netmask **255.255.255.0** and add your failover IP (SERVER_IP must be replaced by your server’s primary IP).
@@ -312,7 +328,7 @@ LABEL_1=ens32:0
 Finally, reboot your server to apply the changes.
 
 
-### cPanel
+### cPanel (on CentOS 6)
 
 #### Step 1: Create a backup
 
@@ -557,7 +573,7 @@ ifconfig eth0:0 FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP up
 
 Where you will replace FAILOVER_IP by the actual IPFO.
 
-Next, simply ping your IPFO from the outside. If it works, it probably means that there is a configuration error that requires to be fixed. If, on the contrary, the IP is still not working, please open a ticket to the support team via your Control Panel for further investigations.
+Next, simply ping your IPFO from the outside. If it works, it probably means that there is a configuration error that requires to be fixed. If, on the contrary, the IP is still not working, please inform our support team by creating a support request in your [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/support/tickets/new) for further investigations.
 
 
 ## Go further

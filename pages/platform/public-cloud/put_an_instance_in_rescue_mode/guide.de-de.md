@@ -1,122 +1,90 @@
 ---
-title: Umstellung einer Instanz auf den Rescue-Modus
-excerpt: Umstellung einer Instanz auf den Rescue-Modus
+title: "Umstellen einer Instanz auf den\_Rescue-Modus"
 slug: umstellung_einer_instanz_auf_den_rescue-modus
+excerpt: 'Erfahren Sie hier, wie Sie den Rescue-Modus für Ihre Public Cloud Instanz aktivieren'
 legacy_guide_number: g2029
 ---
 
+**Letzte Aktualisierung am 08.04.2020**
 
-## 
-Bei einer fehlerhaften Konfiguration oder dem Verlust des SSH Schlüssels kann es vorkommen, dass Sie keinen Zugang mehr zu Ihrer Instanz haben.
+## Ziel
 
-Um wieder Zugriff zu erhalten stellen wir Ihnen den Rescue-Modus zur Verfügung, über den Sie sich mit Ihrer Instanz verbinden und die notwendigen Konfigurationsdateien anpassen können.
+Ihre Instanz kann unter Umständen nicht mehr zugänglich sein, etwa aufgrund eines verlorenen SSH-Schlüssels oder einer Fehlkonfiguration.
+In diesem Fall können Sie Ihre Instanz mithilfe des Rescue-Modus neu konfigurieren oder den Zugang zu Ihren Daten wiederherstellen. 
 
-Dabei wird Ihre Instanz auf einem neuen Image (einer neuen Instanz mit einer Standard-Konfiguration) gestartet. Die Festplatte Ihrer Instanz wird dann als zusätzliche Festplatte an die neue Instanz angehängt und muss nur noch von Ihnen gemountet werden, damit Sie auf Ihre Daten zugreifen und diese bearbeiten können.
-
-In dieser Hilfe wird die Verwendung des Rescue-Modus beschrieben.
-
+**Diese Anleitung erklärt, wie Sie Ihre OVHcloud Public Cloud Instanz in den Rescue-Modus setzen und Datenzugriff erhalten.**
 
 ## Voraussetzungen
 
-- [Erstellung einer Instanz im OVH Kundencenter]({legacy}1775)
+- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH.
+
+## In der praktischen Anwendung
+
+### Schritt 1: Rescue-Modus aktivieren
+
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
+
+![control panel](images/compute.png){.thumbnail}
+
+Klicken Sie im Interface für die Instanzen auf `...`{.action} rechts neben der Instanz und wählen Sie `Neustart im Rescue-Modus`{.action}
+
+![control panel](images/rescue1.png){.thumbnail}
+
+Sie sehen nun den Dialog „Neustart im Rescue-Modus“. Klicken Sie auf die Dropdown-Liste, um die Distribution auszuwählen, die Sie im Rescue-Modus verwenden möchten, und klicken Sie dann auf `Neu starten`{.action}.
+
+![control panel](images/rescue2.png){.thumbnail}
+
+Nach dem Neustart Ihrer Instanz im Rescue-Modus wird oben auf dem Bildschirm eine Meldung mit Ihrem temporären Passwort angezeigt.
+
+![control panel](images/rescuedata.png){.thumbnail}
 
 
+### Schritt 2: Auf Ihre Daten zugreifen
 
+Sobald der Rescue-Modus aktiviert wurde, werden die Daten Ihrer Instanz als zusätzliche Festplatte angehängt. Sie muss noch eingebunden werden, indem Sie die folgenden Schritte ausführen.
 
-## Umstellung auf den Rescue-Modus
-Um Ihren Server in den Rescue-Modus zu versetzen, klicken Sie einfach auf den Pfeil rechts oben auf der Übersichtsseite Ihrer Instanz und wählen Sie "Start im Rescue-Modus" aus:
-
-![](images/img_3494.jpg){.thumbnail}
-Anschließend wählen Sie das Image aus, mit dem Sie Ihren Server im Rescue-Modus starten möchten:
-
-![](images/img_3495.jpg){.thumbnail}
-In dem Dropdown-Menü finden Sie die standardmäßig von uns angebotenen Images sowie ein zusätzliches Image "Rescue-Distribution Made by OVH", mit dem Sie sich mit Hilfe eines temporären Passworts für den Rescue-Modus mit Ihrer Instanz verbinden können.
-
-Sobald der Server auf den Rescue-Modus umgestellt wurde, wird rechts unten ein Fenster mit Ihrem temporären Passwort angezeigt:
-
-![](images/img_3497.jpg){.thumbnail}
-
-
-## Zugriff auf Ihre Daten
-Wie weiter oben beschrieben, werden die Daten Ihrer Instanz im Rescue-Modus als zusätzliche Festplatte eingebunden.
-Sie müssen diese dann nur noch wie folgt mounten, um darauf zugreifen zu können:
-
-
-- root-Rechte verschaffen:
-
-
-```
-admin@instance:~$ sudo su
-```
-
-
-- Die verfügbaren Festplatten überprüfen:
-
+Stellen Sie zuerst eine SSH-Verbindung zu Ihrer Instanz her. Wenn Sie verbunden sind, überprüfen Sie die verfügbaren Festplatten mit diesem Befehl:
 
 ```
 root@instance:/home/admin# lsblk
+
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 253:0 0 1G 0 disk
-└─vda1 253:1 0 1023M 0 part /
-vdb 253:16 0 10G 0 disk
-└─vdb1 253:17 0 10G 0 part
+vda 253:0 0 1G 0 Festplatte
+└─vda1 253:1 0 1023M 0 Teil /
+vdb 253:16 0 10G 0 Festplatte
+└─vdb1 253:17 0 10G 0 Teil
 ```
 
-
-- Die Partition mounten
-
+Als Nächstes mounten Sie die Partition:
 
 ```
 root@instance:/home/admin# mount /dev/vdb1 /mnt
 ```
 
+Ihre Daten sind jetzt über den Ordner /mnt abrufbar.
 
+### Schritt 3: Rescue-Modus deaktivieren
 
-Ihre Daten sind dann im Ordner /mnt verfügbar.
+Sobald Sie Ihre Maßnahmen beendet haben, können Sie den Rescue-Modus deaktivieren, indem Sie Ihre Instanz in der Instanzenverwaltung neu starten. Klicken Sie dazu auf `...`{.action} und wählen Sie `Rescue-Modus verlassen`{.action}.
 
-Sie können nun zum Beispiel die Datei mit der Liste der vom Benutzer admin verwendbaren SSH Schlüssel bearbeiten und einen neuen Schlüssel hinzufügen:
+![control panel](images/rescueexit.png){.thumbnail}
 
+### Den Rescue-Modus mit der OpenStack API aktivieren
 
-```
-root@instance:/home/admin# vim /mnt/home/admin/.ssh/authorized_keys
-```
-
-
-
-
-## Neustart Ihrer Instanz im normalen Modus
-Nachdem Sie die gewünschten Operationen durchgeführt haben, können Sie Ihre Instanz wieder im normalen Modus starten. Klicken Sie dazu auf den Pfeil rechts oben auf der Übersichtsseite Ihrer Instanz und wählen Sie "Den Rescue Modus verlassen" aus:
-
-![](images/img_3496.jpg){.thumbnail}
-
-
-## OpenStack API
-Über die OpenStack API können Sie Ihre Instanz im Rescue-Modus neu starten. Verwenden Sie dafür folgenden Befehl:
-
+Sie können den Rescue-Modus auch über die OpenStack API mit dem folgenden Befehl aktivieren:
 
 ```
-root@server:~# nova rescue INSTANCE_ID
+# root@server:~# nova rescue INSTANCE_ID
 ```
 
-
-Um den Rescue-Modus zu beenden, verwenden Sie folgenden Befehl:
-
+Um den Rescue-Modus zu beenden, verwenden Sie den folgenden Befehl:
 
 ```
-root@server:~# nova unrescue INSTANCE_ID
+# root@server:~# nova unrescue INSTANCE_ID
 ```
 
+## Weiterführende Informationen
 
-
-
-## 
-
-- [Erstellung der SSH Schlüssel]({legacy}1769)
-- [Konfiguration zusätzlicher SSH Schlüssel]({legacy}1924)
-
-
-
-
-## 
-[Zurück zum Index der Cloud Hilfen]({legacy}1785)
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

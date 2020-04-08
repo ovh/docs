@@ -23,6 +23,11 @@ When creating an instance, it is not possible to configure only one SSH key. How
 
 ## Instructions
 
+> [!primary]
+>
+If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA, or ECDSA encryption. ED25519 is currently not supported.
+>
+
 ### Creating the SSH key
 
 First, follow our guide to [Creating SSH keys](https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys/).
