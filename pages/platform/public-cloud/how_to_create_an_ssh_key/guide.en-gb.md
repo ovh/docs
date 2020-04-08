@@ -1,7 +1,7 @@
 ---
 title: 'Creating SSH keys'
 slug: create-ssh-keys
-excerpt: 'Find out how to create an SSH key and add it in your OVHcloud Control Panel'
+excerpt: 'Find out how to create an SSH key and add it in your Public Cloud Control Panel'
 section: Security
 order: 1
 ---
@@ -25,6 +25,11 @@ Please note that SSH keys are not used for authentication on instances running t
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
+
+> [!primary]
+>
+If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA, or ECDSA encryption. ED25519 is currently not supported.
+>
 
 ### Creating an SSH key on Linux and Mac
 
@@ -107,7 +112,7 @@ As you move your mouse, the progress bar will start to fill up. When it's comple
 
 ### Import your SSH key into the OVHcloud Control Panel
 
-First, highlight and copy the text of your public key, then log into the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+First, highlight and copy the text of your public key, then log into the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
 Now click on the `Public Cloud`{.action} menu.
 
