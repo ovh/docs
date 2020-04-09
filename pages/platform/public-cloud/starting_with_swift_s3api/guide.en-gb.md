@@ -115,11 +115,14 @@ aws_access_key_id = <access fetched in previous step>
 aws_secret_access_key = <secret fetched in previous step>
 region = <public cloud region in lower case>
 s3 =
-  endpoint_url = https://storage.<public cloud region>.cloud.ovh.net
+  endpoint_url = https://s3.<public cloud region>.cloud.ovh.net
   signature_version = s3v4
+  addressing_style = virtual
 s3api =
-  endpoint_url = https://storage.<public cloud region>.cloud.ovh.net
+  endpoint_url = https://s3.<public cloud region>.cloud.ovh.net
 ```
+
+Virtual hosted-style and path-style access are supported in all regions, but we recommend to use virtual hosted-style since path-style access will be deprecated after September 30, 2020.
 
 ## Use aws client
 
