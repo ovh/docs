@@ -6,7 +6,7 @@ section: 'Configurazione di un client di posta'
 order: 2
 ---
 
-**Ultimo aggiornamento: 23/08/2018**
+**Ultimo aggiornamento: 09/04/2020**
 
 ## Obiettivo
 
@@ -14,9 +14,16 @@ Gli account Email Pro possono essere configurati su diversi client di posta comp
 
 **Questa guida ti mostra come configurare un account Email Pro su Outlook 2016 per Mac.**
 
+> [!warning]
+>
+> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione; garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+> 
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio.  Per maggiori informazioni consulta la sezione “Per saperne di più”.
+> 
+
 ## Prerequisiti
 
-- Disporre di una soluzione [Email Pro]( https://www.ovh.it/emails/email-pro/){.external}
+- Disporre di una soluzione [Email Pro](https://www.ovh.it/emails/email-pro/){.external}
 - Aver installato l'applicazione Microsoft Outlook sul proprio Mac
 - Disporre delle credenziali associate all'account email da configurare
 
@@ -28,6 +35,14 @@ Gli account Email Pro possono essere configurati su diversi client di posta comp
 ## Procedura
 
 ### Step 1: aggiungi il tuo account
+
+> [!primary]
+>
+> Nel nostro esempio abbiamo utilizzato come nome del server "pro**X**.mail.ovh.net", dove "X" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
+>
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`
+{.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
+>
 
 Una volta avviata l'applicazione Outlook sul tuo dispositivo, puoi aggiungere un nuovo account in due modi diversi.
 
@@ -45,9 +60,9 @@ Inserisci il tuo indirizzo email e clicca su `Avanti`{.action}. Come provider, s
 |Indirizzo di posta elettronica|Inserisci un nome che ti permetterà di riconoscere questo account tra quelli presenti nella tua applicazione Outlook.|
 |Nome utente|Inserisci líindirizzo email completo|
 |Password|Digita la password associata all'account|
-|Server in entrata |Inserisci il server 'pro1.mail.ovh.net'. Seleziona la voce 'Utilizza SSL' per connetterti.|
+|Server in entrata |Inserisci il server 'pro**X**.mail.ovh.net'. Seleziona la voce 'Utilizza SSL' per connetterti.|
 |Porta in entrata|Indica la porta '993'.|
-|Server in uscita|Inserisci il server 'pro1.mail.ovh.net'. Seleziona la voce 'Utilizza SSL' per connettersi.|
+|Server in uscita|Inserisci il server 'pro**X**.mail.ovh.net'. Seleziona la voce 'Utilizza SSL' per connettersi.|
 |Porta in uscita|Indica la porta '587'.|
 
 Una volta inseriti tutti i dati, clicca su `Avanti`{.action}. Se le informazioni inserite sono corrette, la connessione all'account andrà a buon fine. 
@@ -60,14 +75,14 @@ Se devi inserire manualmente le impostazioni nelle preferenze del tuo account, p
 
 |Tipo di server |Nome del server|SSL|Porta|
 |---|---|---|---|
-|In entrata|pro1.mail.ovh.net|SÏ|993|
-|In uscita|pro1.mail.ovh.net|SÏ|587|
+|In entrata|pro**X**.mail.ovh.net|SÏ|993|
+|In uscita|pro**X**.mail.ovh.net|SÏ|587|
 
 ### Step 2: utilizza il tuo account
 
 Una volta configurato l'indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVH propone anche un'applicazione Web con [funzionalità collaborative](https://www.ovh.com/fr/emails/){.external}, disponibile all'indirizzo [https://www.ovh.it](https://www.ovh.it){.external}. Puoi collegarti utilizzando le credenziali del tuo account.
+OVHcloud propone anche un'applicazione Web con [funzionalità collaborative](https://www.ovh.com/fr/emails/){.external}, disponibile all'indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external}. Puoi collegarti utilizzando le credenziali del tuo account.
 
 ## Per saperne di più
 
@@ -75,4 +90,4 @@ OVH propone anche un'applicazione Web con [funzionalità collaborative](https://
 
 [Configurare un account Exchange su Outlook 2016 per Mac](https://docs.ovh.com/it/microsoft-collaborative-solutions/configurazione-exchange-outlook-2016-mac/){.external}
 
-Contatta la nostra Community di utenti all'indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
+Contatta la nostra Community di utenti all'indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
