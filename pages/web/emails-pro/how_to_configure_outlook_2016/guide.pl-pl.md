@@ -6,13 +6,20 @@ section: 'Konfiguracja programu pocztowego'
 order: 1
 ---
 
-**Ostatnia aktualizacja dnia 2018-08-06**
+**Ostatnia aktualizacja dnia 2020-04-08**
 
 ## Wprowadzenie
 
 Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji.
 
 **Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook 2016 na urządzeniu z systemem Windows.**
+
+> [!warning]
+>
+> OVHcloud udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie. Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
+> 
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> 
 
 ## Wymagania początkowe
 
@@ -28,6 +35,13 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 ## W praktyce
 
 ### Etap 1: dodanie konta
+
+> [!primary]
+>
+> W przewodniku używamy oznaczenia serwera: pro**X**.mail.ovh.net. Zastąp “X” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
+> 
+> Odszukaj cyfrę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, w sekcji `Web`{.action} =>  `E-mail Pro`{.action} => w kolumnie po lewej stronie. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
+>
 
 Po uruchomieniu aplikacji Outlook na Twoim urządzeniu możesz dodać konto, korzystając z jednej z dwóch dostępnych metod.
 
@@ -47,7 +61,7 @@ Podaj następnie wymagane informacje.
 
 |Informacja|Opis |
 |---|---|
-|Serwer|Wpisz serwer « pro1.mail.ovh.net ».|
+|Serwer|Wpisz serwer « pro**X**.mail.ovh.net ».|
 |Port|Wskaż port « 993 ».|
 |Metoda szyfrowania|Wybierz « SSL/TLS ».|
 |Wymaganie uwierzytelnienia|Nie zaznaczaj kratki « Wymagaj logowania przy użyciu bezpiecznego uwierzytelniania hasła » .|
@@ -56,7 +70,7 @@ Podaj następnie wymagane informacje.
 
 |Informacja|Opis |
 |---|---|
-|Serwer|Wpisz serwer « pro1.mail.ovh.net ».|
+|Serwer|Wpisz serwer « pro**X**.mail.ovh.net ».|
 |Port|Wskaż port « 587 ».|
 |Metoda szyfrowania|Wybierz « STARTTLS ».|
 |Wymaganie uwierzytelnienia|Nie zaznaczaj kratki « Wymagaj logowania przy użyciu bezpiecznego uwierzytelniania hasła » .|
@@ -71,14 +85,14 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajd
 
 |Typ serwera|Nazwa serwera|Metoda szyfrowania|Port|
 |---|---|---|---|
-|Serwer poczty przychodzącej|pro1.mail.ovh.net|SSL/TLS|993|
-|Serwer poczty wychodzącej|pro1.mail.ovh.net|STARTTLS|587|
+|Serwer poczty przychodzącej|pro**X**.mail.ovh.net|SSL/TLS|993|
+|Serwer poczty wychodzącej|pro**X**.mail.ovh.net|STARTTLS|587|
 
 ### Etap 2: korzystanie z konta e-mail
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVH oferuje również aplikację internetową [funkcje do pracy zespołowej](https://www.ovh.pl/emaile/){.external}. Jest ona dostępna pod adresem <https://pro1.mail.ovh.net>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+OVHcloud oferuje również aplikację internetową [funkcje do pracy zespołowej](https://www.ovh.pl/emaile/){.external}. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ## Sprawdź również
 
