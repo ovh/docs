@@ -10,7 +10,7 @@ section: 'Netzwerk und IP'
 
 ## Ziel
 
-Möglicherweise müssen Sie auf Ihre Instanz eine Failover-IP-Adresse konfigurieren, weil:
+Möglicherweise müssen Sie auf Ihrer Instanz eine Failover-IP-Adresse konfigurieren, weil
 
 - Sie mehrere Webseiten auf Ihrer Instanz verwalten.
 - Sie internationale Projekte hosten.

@@ -5,13 +5,13 @@ excerpt: 'Find out how to configure your Email Pro solution'
 section: General
 ---
 
-**Last updated 18th March 2020**
+**Last updated 9th April 2020**
 
 ## Objective
 
 You have just purchased an Email Pro solution, which gives you affordable professional email addresses to support or start up your business.
 
-**Find out how to configure your Email Pro solution.**
+**This guide explains the steps to correctly configure your Email Pro solution.**
 
 ## Requirements
 
@@ -22,18 +22,18 @@ You have just purchased an Email Pro solution, which gives you affordable profes
 
 ## Instructions
 
-### Step 1: Log in to your service’s interface.
+### Step 1: Log in to your service’s interface
 
 Once the Email Pro service has been created and is available, you can manage it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
-To do this, log in to the Control Panel, click on `Email Pro`{.action} in the services menu on the left, then select the appropriate service.
+To do this, log in, then click on `Email Pro`{.action} in the services menu on the left and select the appropriate service.
 
 > [!primary]
 >
 > The name of an Email Pro service in the OVHcloud Control Panel begins with *emailpro-*, contains part of your NIC handle, and ends with a figure (1 for the first Email Pro service installed, 2 for the second, etc.).
 >
 
-### Step 2: Add your domain name.
+### Step 2: Add your domain name
 
 If you have just ordered your Email Pro service, a window will automatically pop up, prompting you to `Add a domain`{.action}. If the window does not pop up, go to the `Associated domains`{.action} tab, then click on the `Add a domain`{.action} button.
 
@@ -67,25 +67,28 @@ Click on the `Next`{.action} button to continue adding the domain.
 
 **If you have selected an OVHcloud domain name in the list**, it will be automatically configured. To do this, tick the boxes and click on the `Next`{.action} button to continue adding the domain.
 
-**If you have entered a non-OVHcloud domain name**, it must be configured in the next step.
-
 ![emailpro](images/first_config_email_pro_add_domain_step3.png){.thumbnail}
 
-At the end of the configuration process, we will ask you to check the information you have entered, then click on the `Confirm`{.action} button to add the domain.
+- **SRV**: DNS records defining specific information used to identify the values necessary to connect to a service; in this case they enable an email client software to be automatically configured for your email account ("Autodiscover").
+- **MX**: DNS records pointing a domain name to an email server and therefore necessary for the reception of emails.
 
-### Step 3: Configure your domain name.
+**For a non-OVHcloud domain name**, continue with step 3.
 
-Once you have added the domain name as an associated domain, check its configuration using the table that pops up.
+At the end of the configuration process, please check the information you have entered, then click on the `Confirm`{.action} button to add the domain.
 
-You can use the `Diagnosis`{.action} column to check the domain name’s DNS configuration. A red box will appear if these configurations need to be changed.
+### Step 3: Configure your domain name
 
-- **If you chose automatic configuration when you added the domain:** it can take a few hours before it appears on the OVHcloud Control Panel.
+Once you have added the domain name as an associated domain, you can check its configuration using the table on the `Associated domains`{.action} tab.
 
-- **If you entered a non-OVHcloud domain name:** click on the red box to view the changes you need to make. For a CNAME record, you can refer to our guide on [Creating a CNAME record to add an associated domain](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/). For an MX record, you can refer to our guide on [Add an MX record to your domain name’s configuration](https://docs.ovh.com/gb/en/domains/web_hosting_configuring_mx_with_the_ovh_dns_zone/). If you have just made the changes, they may take a few hours to show up on the OVHcloud Control Panel.
+You can use the `Diagnosis`{.action} column to modify the domain name’s DNS configuration. A red box will appear if these configurations need to be changed. There are two options:
 
-![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
+- **Automatic configuration, when adding an OVHcloud domain name:** it may take a few hours after the modification before it is correctly displayed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
-### Step 4: Configure the Email Pro accounts.
+- **Manual configuration, when adding a non-OVHcloud domain name:** click on the red box to verify the changes you need to make. <br>_For a CNAME record_, please refer to our guide on [Creating a CNAME record to add an associated domain](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/). <br>_For an MX record_, please refer to our guide [Add an MX record to your domain name’s configuration](https://docs.ovh.com/gb/en/domains/web_hosting_configuring_mx_with_the_ovh_dns_zone/). <br>_For an SRV record_, you can edit your DNS zone using the information provided when you click on the red "SRV" box. We recommend to consult [our guide](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone) regarding these modifications. If you have just made the changes, they may take a few hours to be correctly displayed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+
+![emailpro](images/first_config_email_pro_configure_domain_update.png){.thumbnail}
+
+### Step 4: Configure the Email Pro accounts
 
 To configure your email addresses, go to the `Email accounts`{.action} tab. The table displays the accounts that you have ordered in this format: “*@configureme.me*”.
 
@@ -112,7 +115,7 @@ Once the information is complete, click on the `Next`{.action} button, check the
 
 ![emailpro](images/first_config_email_pro_configure_email_accounts_step2.png){.thumbnail}
 
-### Step 5: Use your email addresses.
+### Step 5: Use your email addresses
 
 Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an online application (a *web app*), available [here](https://www.ovh.co.uk/mail/), and you will need to enter your email credentials.
 
