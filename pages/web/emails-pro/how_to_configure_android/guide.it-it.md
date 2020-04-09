@@ -6,7 +6,7 @@ section: 'Configurazione di un client di posta'
 order: 5
 ---
 
-**Ultimo aggiornamento: 23/08/2020**
+**Ultimo aggiornamento: 09/04/2020**
 
 ## Obiettivo
 
