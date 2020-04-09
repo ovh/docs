@@ -6,13 +6,20 @@ section: 'Configurazione di un client di posta'
 order: 1
 ---
 
-**Ultimo aggiornamento: 23/08/2018**
+**Ultimo aggiornamento: 08/04/2020**
 
 ## Obiettivo
 
 Gli account Email Pro possono essere configurati su client di posta compatibili per permetterti di utilizzare il tuo account email dal dispositivo che preferisci.
 
 **Questa guida ti mostra come configurare un account Email Pro su Outlook 2016 per Windows.**
+
+> [!warning]
+>
+> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione; garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+> 
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio.  Per maggiori informazioni consulta la sezione “Per saperne di più”.
+> 
 
 ## Prerequisiti
 
@@ -28,6 +35,13 @@ Gli account Email Pro possono essere configurati su client di posta compatibili 
 ## Procedura
 
 ### Step 1: aggiungi il tuo account
+
+> [!primary]
+>
+> Nel nostro esempio abbiamo utilizzato come nome del server "pro**X**.mail.ovh.net", dove "X" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
+>
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
+> 
 
 Una volta avviata l’applicazione Outlook sul tuo dispositivo, puoi aggiungere un nuovo account in due modi diversi.
 
@@ -47,7 +61,7 @@ Compila i campi richiesti:
 
 |Informazione|Descrizione|
 |---|---|
-|Server|Inserisci il server 'pro1.mail.ovh.net'|
+|Server|Inserisci il server 'pro**X**.mail.ovh.net'|
 |Porta|Indica la porta '993'|
 |Metodo di cifratura|Seleziona 'SSL/TLS'|
 |Richiedere l’autorizzazione |Non selezionare la voce “Richiedere l’autenticazione tramite password sicura (SPA) durante la connessione”.|
@@ -56,7 +70,7 @@ Compila i campi richiesti:
 
 |Informazione|Descrizione|
 |---|---|
-|Server|Inserisci il server 'pro1.mail.ovh.net'|
+|Server|Inserisci il server 'pro**X**.mail.ovh.net'|
 |Porta|Indica la porta '587'|
 |Metodo di cifratura|Seleziona 'STARTTLS'|
 |Richiedere l’autorizzazione |Non selezionare la voce “Richiedere l’autenticazione tramite password sicura (SPA) durante la connessione”.|
@@ -71,20 +85,20 @@ Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco
 
 |Tipo di server |Nome del server|Metodo di cifratura|Porta|
 |---|---|---|---|
-|In entrata|pro1.mail.ovh.net|SSL/TLS|993|
-|In uscita|pro1.mail.ovh.net|STARTTLS|587|
+|In entrata|pro**X**.mail.ovh.net|SSL/TLS|993|
+|In uscita|pro**X**.mail.ovh.net|STARTTLS|587|
 
 ### Step 2: utilizza il tuo account
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVH propone anche un’applicazione Web con [funzionalità collaborative](https://www.ovh.it/emails/){.external} disponibile all’indirizzo [https://www.ovh.com/it/mail/](https://www.ovh.com/it/mail/){.external} e accessibile con le credenziali del tuo account.
+OVHcloud propone anche un’applicazione Web con [funzionalità collaborative](https://www.ovh.it/emails/){.external} disponibile all’indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} e accessibile con le credenziali del tuo account.
 
 ## Per saperne di più
 
-[Configurare un indirizzo email compreso nell’offerta MX Plan o in un’offerta di hosting web su Outlook 2016 per Windows](https://docs.ovh.com/it/emails/configurazione-outlook-2016-mac/){.external}{.external}
+[Configurare un indirizzo email compreso nell’offerta MX Plan o in un’offerta di hosting web su Outlook 2016 per Windows](https://docs.ovh.com/it/emails/configurazione-outlook-2016-mac/){.external}
 
 [Configurare un account Exchange su Outlook 2016 per Windows](https://docs.ovh.com/it/microsoft-collaborative-solutions/configurazione-exchange-outlook-2016-windows/){.external}
 
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
