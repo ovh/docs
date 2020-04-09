@@ -6,7 +6,7 @@ section: 'Per iniziare'
 order: 1
 ---
 
-**Ultimo aggiornamento: 08/08/2019**
+**Ultimo aggiornamento: 09/04/2020**
 
 ## Obiettivo
 
@@ -18,18 +18,18 @@ La soluzione Email Pro permette di usufruire di un servizio di posta elettronica
 
 - Disporre di una soluzione [Email Pro](https://www.ovh.it/emails/email-pro/){.external}
 - Aver ricevuto l’email di conferma dell’installazione di Email Pro
-- Disporre di un dominio OVH
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Disporre di un dominio OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Procedura
 
 ### Step 1: accedi alla gestione del servizio
 
-Per gestire la soluzione Email Pro accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio nella sezione `Email Pro`{.action} del menu a sinistra.
+Per gestire la soluzione Email Pro accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio nella sezione `Email Pro`{.action} del menu a sinistra.
 
 > [!primary]
 >
-> Nello Spazio Cliente OVH il nome di questo servizio inizia per *emailpro-*, contiene una parte dell’identificativo cliente e termina con una cifra (1 per la prima soluzione Email Pro installata, 2 per la seconda, ecc...).
+> Nello Spazio Cliente OVHcloud il nome di questo servizio inizia per *emailpro-*, contiene una parte dell’identificativo cliente e termina con una cifra (1 per la prima soluzione Email Pro installata, 2 per la seconda, ecc...).
 >
 
 ### Step 2: aggiungi il dominio
@@ -38,8 +38,8 @@ Se il servizio Email Pro è stato appena ordinato, si apre automaticamente la fi
 
 A questo punto scegli una delle opzioni proposte:
 
-- **Seleziona un dominio dalla lista**: nell’elenco vengono mostrati soltanto i domini che utilizzano una configurazione OVH e associati al tuo identificativo cliente come contatto
-- **Inserisci un dominio non gestito dal tuo account OVH**: in questo caso accertati di poter modificare la zona DNS del dominio in modo che Email Pro possa funzionare correttamente
+- **Seleziona un dominio dalla lista**: nell’elenco vengono mostrati soltanto i domini che utilizzano una configurazione OVHcloud e associati al tuo identificativo cliente come contatto
+- **Inserisci un dominio non gestito dal tuo account OVHcloud**: in questo caso accertati di poter modificare la zona DNS del dominio in modo che Email Pro possa funzionare correttamente
 
 Una volta effettuata la scelta, clicca su `Continua`{.action}. 
 
@@ -47,8 +47,8 @@ Una volta effettuata la scelta, clicca su `Continua`{.action}.
 
 La finestra successiva mostra le informazioni relative alla configurazione della modalità del dominio:
 
-- **se il dominio inserito non è gestito da OVH**, la modalità non autoritativa sarà attiva di default
-- **se il dominio inserito è gestito da OVH**, è possibile scegliere tra le due modalità
+- **se il dominio inserito non è gestito da OVHcloud**, la modalità non autoritativa sarà attiva di default
+- **se il dominio inserito è gestito da OVHcloud**, è possibile scegliere tra le due modalità
 
 |Modalità |Descrizione|
 |---|---|
@@ -57,16 +57,16 @@ La finestra successiva mostra le informazioni relative alla configurazione della
 
 > [!primary]
 >
-> La scelta di una modalità non è un’operazione definitiva e può essere modificata in un secondo momento direttamente dallo Spazio Cliente OVH.
+> La scelta di una modalità non è un’operazione definitiva e può essere modificata in un secondo momento direttamente dallo Spazio Cliente OVHcloud.
 >
 
 Una volta effettuata la scelta, clicca su `Continua`{.action}. 
 
 ![emailpro](images/first_config_email_pro_add_domain_step2.png){.thumbnail}
 
-**Se il dominio selezionato dalla lista è gestito da OVH**, è disponibile la configurazione automatica e per aggiungere il dominio sarà sufficiente spuntare le caselle e cliccare su `Continua`{.action}. 
+**Se il dominio selezionato dalla lista è gestito da OVHcloud**, è disponibile la configurazione automatica e per aggiungere il dominio sarà sufficiente spuntare le caselle e cliccare su `Continua`{.action}. 
 
-**Se il dominio inserito non è gestito da OVH**, la configurazione verrà eseguita nello step successivo.
+**Se il dominio inserito non è gestito da OVHcloud**, la configurazione verrà eseguita nello step successivo.
 
 ![emailpro](images/first_config_email_pro_add_domain_step3.png){.thumbnail}
 
@@ -78,9 +78,9 @@ A operazioni ultimata, il dominio aggiunto dovrebbe risultare come dominio assoc
 
 Nella colonna `Diagnostica`{.action} è possibile assicurarsi della corretta configurazione del dominio. Se è presente una casellina rossa, significa che è necessario modificare alcuni parametri.
 
-- **In caso di configurazione automatica**, l’aggiornamento nello Spazio Cliente OVH potrebbe richiedere qualche ora.
+- **In caso di configurazione automatica**, l’aggiornamento nello Spazio Cliente OVHcloud potrebbe richiedere qualche ora.
 
-- **Se il dominio inserito non è gestito da OVH**, clicca sulla casellina rossa per visualizzare le modifiche da apportare. Nel caso sia necessario intervenire su un record di tipo CNAME, consulta la guida [Creare un record CNAME per aggiungere un dominio associato](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_20132016_aggiungi_un_record_di_tipo_cname/). Se invece è necessario modificare un record MX, consulta la guida [Aggiungere un record MX alla configurazione di un dominio](https://docs.ovh.com/it/domains/aggiungere-record-mx-configurazione-dominio/). Per visualizzare le modifiche apportate nello Spazio Cliente OVH potrebbe essere necessaria qualche ora.
+- **Se il dominio inserito non è gestito da OVHcloud**, clicca sulla casellina rossa per visualizzare le modifiche da apportare. Nel caso sia necessario intervenire su un record di tipo CNAME, consulta la guida [Creare un record CNAME per aggiungere un dominio associato](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_20132016_aggiungi_un_record_di_tipo_cname/). Se invece è necessario modificare un record MX, consulta la guida [Aggiungere un record MX alla configurazione di un dominio](https://docs.ovh.com/it/domains/aggiungere-record-mx-configurazione-dominio/). Per visualizzare le modifiche apportate nello Spazio Cliente OVHcloud potrebbe essere necessaria qualche ora.
 
 ![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
 
@@ -113,15 +113,22 @@ Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la co
 
 ### Step 5: utilizza gli indirizzi email
 
-Una volta creati gli account non ti resta che utilizzarli. Per accedervi OVH mette a disposizione un’applicazione online (*Webapp*), accessibile dall’indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} tramite le credenziali associate al proprio account email.
+Una volta creati gli account non ti resta che utilizzarli. Per accedervi OVHcloud mette a disposizione un’applicazione online (*Webapp*), accessibile dall’indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} tramite le credenziali associate al proprio account email.
 
 Per configurare l’account su un altro client di posta o dispositivi come smartphone e tablet, è possibile trovare alcune informazioni [utili nelle nostre guide disponibili online](https://docs.ovh.com/it/emails-pro/){.external}. Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
 
 |Tipo di server|Nome del server|Tipo di sicurezza|Porta|
 |---|---|---|---|
-|In entrata|pro1.mail.ovh.net|SSL/TLS|993|
-|In uscita|pro1.mail.ovh.net|STARTTLS|587|
+|In entrata|pro**X**.mail.ovh.net|SSL/TLS|993|
+|In uscita|pro**X**.mail.ovh.net|STARTTLS|587|
+
+> [!primary]
+>
+> Nel nostro esempio abbiamo utilizzato come nome del server "pro**X**.mail.ovh.net", dove "X" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
+>
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
+> 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
