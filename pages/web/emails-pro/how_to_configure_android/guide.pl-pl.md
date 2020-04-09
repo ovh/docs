@@ -6,13 +6,20 @@ section: 'Konfiguracja programu pocztowego'
 order: 5
 ---
 
-**Ostatnia aktualizacja dnia 2018-08-06**
+**Ostatnia aktualizacja dnia 2020-04-09**
 
 ## Wprowadzenie
 
 Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji.
 
 **Dowiedz się, jak skonfigurować konto E-mail Pro na urządzeniu z systemem Android przy użyciu aplikacji Gmail.**
+
+> [!warning]
+>
+> OVHcloud udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie. Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
+> 
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> 
 
 ## Wymagania początkowe
 
@@ -28,6 +35,13 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 ## W praktyce
 
 ### Etap 1: dodanie konta
+
+> [!primary]
+>
+> W przewodniku używamy oznaczenia serwera: pro**X**.mail.ovh.net. Zastąp “X” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
+> 
+> Odszukaj cyfrę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, w sekcji `Web`{.action} =>  `E-mail Pro`{.action} => w kolumnie po lewej stronie. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
+>
 
 Na ekranie Twojego urządzenia wybierz aplikację `Gmail`{.action}. Dodanie konta może zostać przeprowadzone na dwa różne sposoby:
 
@@ -49,7 +63,7 @@ Wpisz parametry serwera poczty przychodzącej:
 |---|---| 
 |Nazwa użytkownika|Wpisz pełny adres e-mail.|
 |Hasło|Wpisz hasło przypisane do tego konta e-mail.|
-|Serwer|Wpisz serwer « pro1.mail.ovh.net ».|
+|Serwer|Wpisz serwer « pro**X**.mail.ovh.net ».|
 
 Kliknij `Dalej`{.action}, po czym wpisz parametry serwera poczty wychodzącej:
 
@@ -58,7 +72,7 @@ Kliknij `Dalej`{.action}, po czym wpisz parametry serwera poczty wychodzącej:
 |Wymaga rejestracji|Upewnij się, że to pole zostało zaznaczone.|
 |Nazwa użytkownika|Wpisz pełny adres e-mail.|
 |Hasło|Wpisz hasło przypisane do tego konta e-mail.|
-|Serwer SMTP|Wpisz serwer « pro1.mail.ovh.net ».|
+|Serwer SMTP|Wpisz serwer « pro**X**.mail.ovh.net ».|
 
 Następnie kliknij `Dalej`{.action}. Jeśli wpisane informacje są poprawne, logowanie zakończy się sukcesem.
 
@@ -72,14 +86,14 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta poniżej znajdz
 
 |Typ serwera|Nazwa serwera|Typ zabezpieczenia|Port|
 |---|---|---|---|
-|Serwer poczty przychodzącej|pro1.mail.ovh.net|SSL/TLS|993|
-|Serwer poczty wychodzącej|pro1.mail.ovh.net|STARTTLS|587|
+|Serwer poczty przychodzącej|pro**X**.mail.ovh.net|SSL/TLS|993|
+|Serwer poczty wychodzącej|pro**X**.mail.ovh.net|STARTTLS|587|
 
 ### Etap 2: korzystanie z konta e-mail
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVH oferuje również aplikację internetową posiadającą [funkcje pracy zespołowej](https://www.ovh.pl/emaile/){.external} dostępną pod adresem <https://pro1.mail.ovh.net>. Możesz się do niej zalogować, używając tych samych danych, których użyłeś do skonfigurowania konta e-mail.
+OVHcloud oferuje również aplikację internetową posiadającą [funkcje pracy zespołowej](https://www.ovh.pl/emaile/){.external} dostępną pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których użyłeś do skonfigurowania konta e-mail.
 
 ## Sprawdź również
 
