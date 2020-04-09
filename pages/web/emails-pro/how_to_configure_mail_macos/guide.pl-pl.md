@@ -6,7 +6,7 @@ section: 'Konfiguracja programu pocztowego'
 order: 4
 ---
 
-**Ostatnia aktualizacja dnia 2018-08-02**
+**Ostatnia aktualizacja dnia 2020-04-09**
 
 ## Wprowadzenie
 
@@ -16,9 +16,9 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 > [!warning]
 >
-> OVH udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie. Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
+> OVHcloud udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie. Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
 > 
 
 ## Wymagania początkowe
@@ -36,13 +36,20 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 Konfigurację można przeprowadzić na dwa różne sposoby:
 
-- **przy użyciu narzędzia Apple Devices OVH**: kliknij link [https://autodiscover.mail.ovh.net/AppleDevices/](https://autodiscover.mail.ovh.net/AppleDevices/){.external} i postępuj zgodnie z kolejnymi instrukcjami;
+- **przy użyciu narzędzia Apple Devices OVHcloud**: kliknij link [https://autodiscover.mail.ovh.net/AppleDevices/](https://autodiscover.mail.ovh.net/AppleDevices/){.external} i postępuj zgodnie z kolejnymi instrukcjami;
 
 - **przy użyciu asystenta konfiguracji Twojej aplikacji Mail**: uruchom aplikację Mail na Twoim urządzeniu.
 
 Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację kont e-mail przy użyciu aplikacji Mail.
 
 ### Etap 1: dodanie konta
+
+> [!primary]
+>
+> W przewodniku używamy oznaczenia serwera: pro**X**.mail.ovh.net. Zastąp “X” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
+> 
+> Odszukaj cyfrę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, w sekcji `Web`{.action} =>  `E-mail Pro`{.action} => w kolumnie po lewej stronie. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
+>
 
 Po uruchomieniu aplikacji Mail na Twoim urządzeniu możesz dodać konto, korzystając z jednej z dwóch dostępnych metod.
 
@@ -65,8 +72,8 @@ Kliknij przycisk `Zaloguj się`{.action}. Pojawi się komunikat, w którym zosta
 |Informacja|Opis|  
 |---|---|  
 |Typ konta|Pozostaw IMAP zaznaczony w rozwijanym menu.| 
-|Serwer poczty przychodzącej|Wpisz serwer « pro1.mail.ovh.net ».| 
-|Serwer poczty wychodzącej|Wpisz serwer « pro1.mail.ovh.net ».|  
+|Serwer poczty przychodzącej|Wpisz serwer « pro**X**.mail.ovh.net ».| 
+|Serwer poczty wychodzącej|Wpisz serwer « pro**X**.mail.ovh.net ».|  
 
 Kliknij ponownie przycisk `Zaloguj się`{.action}. Jeśli wpisane informacje są poprawne, logowanie zakończy się sukcesem.
 
@@ -80,14 +87,14 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajd
 
 |Typ serwera|Nazwa serwera|SSL|Port|
 |---|---|---|---|
-|Serwer poczty przychodzącej|pro1.mail.ovh.net|Tak|993|
-|Serwer poczty wychodzącej|pro1.mail.ovh.net|Tak|587|
+|Serwer poczty przychodzącej|pro**X**.mail.ovh.net|Tak|993|
+|Serwer poczty wychodzącej|pro**X**.mail.ovh.net|Tak|587|
 
 ### Etap 2: korzystanie z konta e-mail
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVH oferuje aplikację internetową posiadającą [funkcje do pracy zespołowej](https://www.ovh.pl/emaile/){.external} dostępną pod adresem [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external}. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. 
+OVHcloud oferuje aplikację internetową posiadającą [funkcje do pracy zespołowej](https://www.ovh.pl/emaile/){.external} dostępną pod adresem [https://www.ovh.pl/mail/](https://www.ovh.pl/mail/){.external}. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. 
 
 ## Sprawdź również
 
