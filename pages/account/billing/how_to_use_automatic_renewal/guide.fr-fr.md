@@ -6,7 +6,7 @@ section: 'Gérer mes services et leur renouvellement'
 order: 1
 ---
 
-**Dernière mise à jour le 21/11/2019**
+**Dernière mise à jour le 10/04/2020**
 
 ## Objectif
 
@@ -42,9 +42,9 @@ Nous vous recommandons de lire les guides suivants, ainsi que de vous concentrer
 
 ### Accéder au paramétrage de vos services
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur le nom associé à votre identifiant client dans la barre de menus située dans le coin supérieur droit, puis choisissez `Mes services`{.action}.
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur le nom associé à votre identifiant client dans la barre de menus située dans le coin supérieur droit, puis choisissez `Produits et services`{.action}.
 
-![manageautomaticrenewal](images/manageautorenew1.png){.thumbnail}
+![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 
 ### Afficher les statuts de renouvellement de vos services
 
