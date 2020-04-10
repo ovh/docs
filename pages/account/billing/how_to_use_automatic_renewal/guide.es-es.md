@@ -1,12 +1,12 @@
 ---
 title: 'Gestionar la renovación de los servicios'
 slug: renovacion-automatica-ovh
-excerpt: 'Cómo gestionar la renovación de los servicios de OVH desde el área de cliente'
+excerpt: 'Cómo gestionar la renovación de los servicios de OVHcloud desde el área de cliente'
 section: 'Primeros pasos'
 order: 1
 ---
 
-**Última actualización: 21/11/2019**
+**Última actualización: 10/04/2020**
 
 ## Objetivo
 
@@ -42,9 +42,9 @@ Le recomendamos que lea las guías siguientes, centrándose particularmente en l
 
 ### Acceder a la configuración de los servicios
 
-Tras haber iniciado sesión en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `«Mis servicios»`{.action}.
+Tras haber iniciado sesión en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}.
 
-![manageautomaticrenewal](images/manageautorenew1.png){.thumbnail}
+![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 
 ### Consultar el estado de la renovación de los servicios
 
