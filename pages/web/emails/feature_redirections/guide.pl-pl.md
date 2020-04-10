@@ -72,6 +72,8 @@ Kliknij na "Zatwierdź", aby potwierdzić dodanie nowego przekierowania.
 
 ![](images/img_3335.jpg){.thumbnail}
 
+Zmiana zostanie wykonana w ciągu kilku minut.
+
 
 ## Usuwanie przekierowania
 Jeśli chcesz usunąć aktywne przekierowanie, przejdź do tabeli aktywnych przekierowań. 
