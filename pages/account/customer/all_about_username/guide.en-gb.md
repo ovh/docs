@@ -5,7 +5,7 @@ excerpt: 'Find out how to create a NIC handle and manage your personal details'
 Section: 'Getting started'
 ---
 
-**Last updated 19th February 2020**
+**Last updated 10th April 2020**
 
 ## Objective
 
@@ -61,7 +61,7 @@ Your NIC handle is in the top right-hand corner of all your bills.
 You can view your NIC handle in the OVHcloud Control Panel by clicking your name in the top right-hand corner.
 
 
-![NIC handle](images/nichandle02.png){.thumbnail}
+![NIC handle](images/newhub1.png){.thumbnail}
 
 
 ## How to log in to the OVHcloud Control Panel
@@ -92,9 +92,9 @@ If you have not entered a backup email address, or it is also unavailable, pleas
 
 ### Change your personal details
 
-You can change your account information via the Control Panel. To do this, click on your name in the top right-hand corner of the OVHcloud Control Panel, then `My account`{.action}.
+You can change your account information via the Control Panel. To do this, click on your name in the top right-hand corner of the OVHcloud Control Panel, then click your initials.
 
-![NIC handle](images/nichandle05.png){.thumbnail}
+![NIC handle](images/newhub2.png){.thumbnail}
 
 Next, click `...`{.action} in the “My profile” section, then `Edit my profile`{.action}.
 
