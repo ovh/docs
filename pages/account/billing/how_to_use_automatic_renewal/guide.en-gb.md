@@ -5,7 +5,7 @@ excerpt: 'Find out how to manage automatic renewal for OVHcloud services via the
 section: Billing
 ---
 
-**Last updated 02nd January 2020**
+**Last updated 10th April 2020**
 
 ## Objective
 
@@ -41,9 +41,9 @@ We recommend reading the following guides, and you can focus on the operations y
 
 ### Access your service’s settings.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `My services`{.action}. 
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Products and services`{.action}. 
 
-![manageautomaticrenewal](images/manageautorenew1.png){.thumbnail}
+![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 
 ### Display the renewal statuses for your services.
 

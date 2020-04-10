@@ -7,7 +7,7 @@ section: 'Pierwsze kroki'
 order: 1
 ---
 
-**Ostatnia aktualizacja z dnia 21-11-2019**
+**Ostatnia aktualizacja z dnia 10-04-2020**
 
 ## Wprowadzenie
 
@@ -43,9 +43,9 @@ Aby dowiedzieć się więcej na temat operacji, które chcesz wykonać, zalecamy
 
 ### Uzyskiwanie dostępu do konfiguracji usług
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Na pasku menu w prawym górnym rogu kliknij nazwę powiązaną z Twoim identyfikatorem klienta, a następnie wybierz pozycję `Moje usługi`{.action}.
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Na pasku menu w prawym górnym rogu kliknij nazwę powiązaną z Twoim identyfikatorem klienta, a następnie wybierz pozycję `Produkty i usługi`{.action}.
 
-![manageautomaticrenewal](images/manageautorenew1.png){.thumbnail}
+![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 
 ### Wyświetlenie statusu odnowienia usług
 

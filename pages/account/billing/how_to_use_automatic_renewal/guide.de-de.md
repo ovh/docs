@@ -7,7 +7,7 @@ order: 1
 legacy_guide_number: g1271
 ---
 
-**letzter Stand 21.11.2019**
+**letzter Stand 10.04.2020**
 
 ## Ziel
 
@@ -43,9 +43,9 @@ Folgen Sie dieser Anleitung nun entsprechend der von Ihnen gewünschten Aktionen
 
 ### Zur Einstellung Ihrer Dienstleistungen gelangen Sie wie folgt:
 
-Loggen Sie sich in Ihr [Kunden Center](https://www.ovh.com/auth/?action=gotomanager){.external} ein. Klicken Sie oben rechts auf den zu Ihrer Kundenkennung gehörigen Namen und wählen Sie dann `Meine Dienste`{.action} aus.
+Loggen Sie sich in Ihr [Kunden Center](https://www.ovh.com/auth/?action=gotomanager){.external} ein. Klicken Sie oben rechts auf den zu Ihrer Kundenkennung gehörigen Namen und wählen Sie dann `Produkte und Dienstleistungen`{.action} aus.
 
-![manageautomaticrenewal](images/manageautorenew1.png){.thumbnail}
+![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 
 ### Verlängerungsstatus Ihrer Dienste anzeigen
 

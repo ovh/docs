@@ -7,7 +7,7 @@ order: 1
 legacy_guide_number: g1271
 ---
 
-**Ultimo aggiornamento: 21/11/2019**
+**Ultimo aggiornamento: 10/04/2020**
 
 ## Obiettivo
 
@@ -43,9 +43,9 @@ Prosegui nella lettura di questa guida in base all’operazione che vuoi effettu
 
 ### Accedere alle impostazioni dei servizi
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome utente in alto a destra e seleziona `I tuoi servizi`{.action}.
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome utente in alto a destra e seleziona `Prodotti e servizi`{.action}.
 
-![Gestione rinnovo automatico](images/manageautorenew1.png){.thumbnail}
+![Gestione rinnovo automatico](images/hubservices.png){.thumbnail}
 
 ### Visualizzare lo stato del rinnovo dei servizi
 
