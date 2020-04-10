@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer les contacts de vos services OVHcloud'
 section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 14/02/2020** 
+**Dernière mise à jour le 10/04/2020** 
 
 ## Objectif
 
@@ -39,9 +39,9 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 ### Accéder à la gestion des contacts
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le nom rattaché à votre identifiant client dans la barre de menu en haut à droite, puis cliquez sur `Mes contacts`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le nom rattaché à votre identifiant client dans la barre de menu en haut à droite, puis cliquez sur `Gestion des contacts`{.action}.
 
-![Contact management](images/managing_contacts_01.png){.thumbnail}
+![Contact management](images/hubcontacts.png){.thumbnail}
 
 Le tableau qui apparaît permet ainsi de visionner les différents services pour lesquels votre identifiant client est renseigné en tant que contact.
 
