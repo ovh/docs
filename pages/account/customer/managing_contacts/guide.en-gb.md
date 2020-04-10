@@ -5,7 +5,7 @@ excerpt: 'Find out how to manage contacts for your OVHcloud services'
 section: 'Getting started'
 ---
 
-**Last updated 18th February 2020** 
+**Last updated 10th April 2020** 
 
 ## Objective
 
@@ -39,9 +39,9 @@ The NIC handle is a personal username that you receive via email when you create
 
 ### Access contact management.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `My contacts`{.action}.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `Contact management`{.action}.
 
-![Contact management](images/managing_contacts_01.png){.thumbnail}
+![Contact management](images/hubcontacts.png){.thumbnail}
 
 The table that appears will show all of the services your NIC handle is registered with as a contact.
 
