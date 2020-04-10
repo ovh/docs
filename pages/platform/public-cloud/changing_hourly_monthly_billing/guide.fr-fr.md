@@ -1,11 +1,11 @@
 ---
-title: Passer d'une facturation à l'heure à mensuelle
-excerpt: Découvrez comment modifier le type de facturation de votre instance Public Cloud
+title: 'Passer d''une facturation à l''heure à mensuelle'
+excerpt: 'Découvrez comment modifier le type de facturation de votre instance Public Cloud'
 slug: changer-type-facturation-public-cloud
-section: Base de connaissances
+section: 'Base de connaissances'
 ---
 
-**Dernière mise à jour le 21/02/2018**
+**Dernière mise à jour le 6 décembre 2019**
 
 ## Objectif
 
@@ -15,28 +15,33 @@ En créant une instance Public Cloud, il est possible de choisir entre une factu
 
 > [!warning]
 >
-> Le passage d'une facturation mensuelle vers une facturation à l'heure n'est pas possible. Il faudra supprimer l'instance en facturation mensuelle et en créer une nouvelle à l'heure.
+> Le passage d'une facturation mensuelle vers une facturation à l'heure n'est pas possible. Si vous voulez passer à la facturation à l'heure, il vous faudra supprimer l’instance facturée mensuellement, puis créer une nouvelle instance et choisir la facturation à l'heure. Dans ce cas, nous vous conseillons de suivre ces étapes :
+>
+>- Créez un <i>snapshot </i>de votre instance actuelle ;
+>
+>- Créez une nouvelle instance à partir de ce <i>snapshot </i>;
+>
+>- Supprimez l’instance à facturation mensuelle.
 >
 
 
 ## Prérequis
 
-- Avoir créé une [instance Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external}.
-- Être connecté à [l'espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Vous devez avoir créé une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external}.
+- Vous devez être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## En pratique
 
-Dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external} choisissez l'instance pour laquelle vous souhaitez modifier le mode de facturation et sélectionnez les options de celle-ci. Vous aurez alors accès au bouton `Passer au forfait mensuel`{.action} :
+Dans [votre espace client](https://www.ovh.com/auth/?action=alleraugestionnaire){.external}, cliquez sur `Public cloud`{.action}, choisissez le projet Public cloud concerné puis cliquez sur `Instances`{.action} dans le menu `Compute`. Cliquez sur le bouton `...`{.action} à droite de l'instance pour laquelle vous souhaitez modifier la facturation. Vous verrez alors le bouton `Passer au forfait mensuel`{.action} :
 
-![Modification de calcul](images/1_swich_to_monthly_sub.png){.thumbnail}
+![Modifier le mode de calcul des factures](images/switch.png){.thumbnail}
 
-Il vous reste à confirmer la modification :
+Il vous faudra ensuite confirmer que vous souhaitez modifier le mode de facturation :
 
-![Confirmation modification de calcul](images/2_switch_to_monthly_confirm.png){.thumbnail}
+![Confirmer la modification du mode de calcul des factures](images/switch1.png){.thumbnail}
 
 Suite à cette modification, une facture sera émise d’un montant correspondant au nombre de jours restant jusqu’à la fin du mois. À la fin du mois, la facture intègrera le coût des heures de l'instance du mois écoulé en configuration « horaire », mais également le coût du mois à venir en configuration « mensuelle ».
-
 
 ## Aller plus loin
 
