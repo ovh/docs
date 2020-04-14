@@ -68,27 +68,26 @@ The simplest way to install Helm is grabbing the binary release for your platfor
 
 
 
-
 ## Initialize a Helm Chart Repository
 
 > [!warn]
 > As with Helm 2, the official Helm `stable` repository is currently deprecated. 
 > The Helm community is currently transitioning to a hub model, with a [Helm Hub](https://hub.helm.sh/), where charts can be searched using `helm search hub <keyword>`
-> As the Helm *stable* repository is still popular, we are using it in the tutorial.
+> As most charts from the Helm *stable* repository have been transferred to the [Bitnami repository](https://github.com/bitnami/charts/) we are using it in the tutorial.
 
-Once you have Helm ready, you can add a chart repository. The easiest way to begin with Helm is to add the official Helm `stable` repository:
+Once you have Helm ready, you can add a chart repository. The easiest way to begin with Helm is to add the [Bitnami repository](https://github.com/bitnami/charts/):
 
 ```bash
-helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+helm repo add bitnami https://charts.bitnami.com/bitnami
 ```
 
 Once the repository added, run `helm repo update`to make sure we get the latest list of charts 
 
-<pre class="console"><code>$ helm repo add stable https://kubernetes-charts.storage.googleapis.com/
-"stable" has been added to your repositories
+<pre class="console"><code>$ helm repo add bitnami https://charts.bitnami.com/bitnami
+"bitnami" has been added to your repositories
 $ helm repo update
 Hang tight while we grab the latest from your chart repositories...
-...Successfully got an update from the "stable" chart repository
+...Successfully got an update from the "bitnami" chart repository
 Update Complete. ⎈ Happy Helming!⎈
 </code></pre>
 
@@ -98,56 +97,21 @@ Update Complete. ⎈ Happy Helming!⎈
 Let's validate your Helm installation by installing an example chart, the official Redis one, with no persistence:
 
 ```bash
-helm install test-redis stable/redis --set master.persistence.enabled=false
+helm install test-redis bitnami/redis --set master.persistence.enabled=false
 ```
 
-> [!warning]
-> As the Helm *stable* repository is deprecated, you're going to get a  
-> *This chart is deprecated* warning. 
-> The current location of the official Redis chart is `bitnami/redis`, 
-> if you want to install a production-ready Redis, please use it:
->
-> `helm install test-redis stable/redis --set master.persistence.enabled=false`
 
-This will install the required elements and initialise the services. And at the end, it will give you the connection parameters for your new Redis database:
+This will install the required elements and initialize the services. And at the end, it will give you the connection parameters for your new Redis database:
 
 
-<pre class="console"><code>$ helm install test-redis stable/redis --set master.persistence.enabled=false
-WARNING: This chart is deprecated
+<pre class="console"><code>$ helm install test-redis bitnami/redis --set master.persistence.enabled=false
 NAME: test-redis
-LAST DEPLOYED: Tue Apr 14 14:23:46 2020
+LAST DEPLOYED: Tue Apr 14 15:13:14 2020
 NAMESPACE: default
 STATUS: deployed
 REVISION: 1
 TEST SUITE: None
 NOTES:
-This Helm chart is deprecated
-
-Given the `stable` deprecation timeline (https://github.com/helm/charts#deprecation-timeline), the Bitnami maintained Redis Helm chart is no
-w located at bitnami/charts (https://github.com/bitnami/charts/).
-
-The Bitnami repository is already included in the Hubs and we will continue providing the same cadence of updates, support, etc that we've b
-een keeping here these years. Installation instructions are very similar, just adding the _bitnami_ repo and using it during the installatio
-n (`bitnami/<chart>` instead of `stable/<chart>`)
-
-```bash
-$ helm repo add bitnami https://charts.bitnami.com/bitnami
-$ helm install my-release bitnami/<chart>           # Helm 3
-$ helm install --name my-release bitnami/<chart>    # Helm 2
-```
-
-To update an exisiting _stable_ deployment with a chart hosted in the bitnami repository you can execute
- ```bash
-
-                                                                                    $ helm
- repo add bitnami https://charts.bitnami.com/bitnami
-  $ helm upgrade my-release bitnami/<chart>
-  ```
-
-  Issues and PRs related to the chart itself will be redirected to `bitnami/charts` GitHub repository. In the same way, we'll be happy to an
-swer questions related to this migration process in this issue (https://github.com/helm/charts/issues/20969) created as a common place for d
-iscussion.
-
 ** Please be patient while the chart is being deployed **
 Redis can be accessed via port 6379 on the following DNS names from within your cluster:
 
@@ -165,7 +129,7 @@ To connect to your Redis server:
 
    kubectl run --namespace default test-redis-client --rm --tty -i --restart='Never' \
     --env REDIS_PASSWORD=$REDIS_PASSWORD \
-   --image docker.io/bitnami/redis:5.0.7-debian-10-r32 -- bash
+   --image docker.io/bitnami/redis:5.0.8-debian-10-r39 -- bash
 
 2. Connect using the Redis CLI:
    redis-cli -h test-redis-master -a $REDIS_PASSWORD
