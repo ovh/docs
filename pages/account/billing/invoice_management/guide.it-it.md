@@ -5,7 +5,7 @@ excerpt: 'Come amministrare fatture e pagamenti dallo Spazio Cliente'
 section: Fatturazione
 ---
 
-**Ultimo aggiornamento: 16/10/2018**
+**Ultimo aggiornamento: 15/04/2020**
 
 ## Obiettivo
 
@@ -15,13 +15,13 @@ Lo Spazio Cliente OVHcloud offre un’amministrazione completa di tutti i serviz
 
 > [!primary]
 >
-> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. In caso di difficoltà o dubbi, consulta i contratti disponibili nel tuo Spazio Cliente, sezione [I tuoi servizi](https://www.ovh.com/auth/?action=gotomanager){.external} > `I tuoi contratti`{.action}.
+> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. In caso di difficoltà o dubbi, consulta i contratti disponibili nel tuo Spazio Cliente, sezione [Prodotti e servizi](https://www.ovh.com/auth/?action=gotomanager){.external} > `Contratti`{.action}.
 >
 
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Essere connesso come contatto di fatturazione del servizio (per maggiori informazioni sulle diverse tipologie di contatti, consulta la guida [Gestire i contatti dei servizi OVH](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/){.external}.
+- Essere connesso come contatto di fatturazione del servizio (per maggiori informazioni sulle diverse tipologie di contatti, consulta la guida [Gestire i contatti dei servizi OVHcloud](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/){.external}.
 
 
 ## Procedura
@@ -56,7 +56,11 @@ L’importo totale e comprensivo di IVA è indicato alla fine della tabella, in 
 
 #### Consulta e gestisci le tue fatture
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome utente in alto a destra e seleziona `Fatturazione`{.action}. Visualizzi una tabella con tutte le fatture associate al tuo identificativo: 
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome utente in alto a destra e seleziona `Fatture`{.action}. 
+
+![Spazio cliente](images/hubinvoices.png){.thumbnail}
+
+Visualizzi una tabella con tutte le fatture associate al tuo identificativo: 
 
 ![Riepilogo delle fatture](images/billing_section.png){.thumbnail}
 
