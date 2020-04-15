@@ -1,11 +1,11 @@
 ---
 title: 'Zarządzanie fakturami OVHcloud'
-slug: "zarzadzanie-fakturami-ovhcloud"
+slug: zarzadzanie-fakturami-ovhcloud
 excerpt: 'Dowiedz się, jak zarządzać fakturami i związanymi z nimi płatnościami'
 section: Płatności
 ---
 
-**Ostatnia aktualizacja z dnia 08-01-2019**
+**Ostatnia aktualizacja z dnia 15-04-2020**
 
 ## Wprowadzenie
 
@@ -15,7 +15,7 @@ OVHcloud oddaje do Twojej dyspozycji Panel klienta, w którym możesz wyświetla
 
 > [!primary]
 >
-> Możliwe, że niektóre części niniejszego przewodnika nie mają zastosowania do Twojej sytuacji, która może różnić się w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. Jeśli masz wątpliwości, sprawdź zapisy w umowach OVH dostępnych w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Moje usługi`{.action} > `Regulaminy`{.action}.
+> Możliwe, że niektóre części niniejszego przewodnika nie mają zastosowania do Twojej sytuacji, która może różnić się w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. Jeśli masz wątpliwości, sprawdź zapisy w umowach OVHcloud dostępnych w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Produkty i usługi`{.action} > `Regulaminy`{.action}.
 >
 
 ## Wymagania początkowe
@@ -56,7 +56,11 @@ Kwota podatku jest wyszczególniona na dole w podsumowaniu całkowitej kwoty nal
 
 #### Wyświetlanie i zarządzanie fakturami
 
-Aby wyświetlać faktury, przejdź do sekcji `Płatności`{.action} w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, klikając Twoje imię na górze po prawej stronie. Zostaniesz wówczas przekierowany do strony z listą Twoich faktur: 
+Aby wyświetlać faktury, przejdź do sekcji `Faktury`{.action} w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, klikając Twoje imię na górze po prawej stronie. 
+
+![Panelu klienta](images/hubinvoices.png){.thumbnail}
+
+Zostaniesz wówczas przekierowany do strony z listą Twoich faktur: 
 
 ![Lista faktur](images/billing_section.png){.thumbnail}
 
@@ -67,7 +71,7 @@ W poszczególnych wierszach tabelki znajdziesz następujące informacje:
 - kwota należności na fakturze;
 - saldo do uregulowania;
 - termin płatności faktury; 
-- `...`{.action}\: możliwe będą różne działania.
+- `...`{.action}: możliwe będą różne działania.
 
 
 > [!primary]
@@ -79,9 +83,9 @@ Jeśli wyświetla się napis „Informacja niedostępna”, oznacza to, że fakt
 
 ![Operacje dotyczące faktur](images/actions_choices.png){.thumbnail}
 
-- `Wyświetl wersję HTML`{.action}\: faktura otworzy się w nowej zakładce w przeglądarce internetowej; 
-- `Wyświetl wersję PDF`{.action}\: wygenerowany zostanie plik w formacie PDF, który będziesz mógł pobrać;
-- `Wyświetl szczegóły faktury`{.action}\: będziesz mógł sprawdzić historię operacji wykonanych w związku z fakturą. 
+- `Wyświetl wersję HTML`{.action}: faktura otworzy się w nowej zakładce w przeglądarce internetowej; 
+- `Wyświetl wersję PDF`{.action}: wygenerowany zostanie plik w formacie PDF, który będziesz mógł pobrać;
+- `Wyświetl szczegóły faktury`{.action}: będziesz mógł sprawdzić historię operacji wykonanych w związku z fakturą. 
 
 
 Dostępnych jest kilka filtrów ułatwiających sortowanie faktur:
