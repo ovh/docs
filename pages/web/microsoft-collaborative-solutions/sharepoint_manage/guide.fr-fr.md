@@ -1,148 +1,113 @@
 ---
-title: Activer et gérer votre Sharepoint OVH
-legacy_guide_number: 2249
+title: 'Activer et gérer votre SharePoint OVHcloud'
 slug: activation-et-gestion-de-votre-sharepoint-ovh
-excerpt: Retrouvez dans ce guide de l’aide pour realiser l’activation d’une plateforme Sharepoint.
+legacy_guide_number: 2249
+excerpt: 'Découvrez comment commander et configurer une plateforme SharePoint.'
 section: Sharepoint
 order: 1
 ---
 
+**Dernière mise à jour le 15/04/2020**
 
-## Commande de votre service Sharepoint
-Rendez-vous sur l'espace client via ce lien : [Espace client OVH](https://www.ovh.com/manager/web/login/){.external}.
+## Objectif
 
-Une fois connecté, sélectionnez dans la colonne de gauche le menu **Microsoft**  puis cliquez sur  **Commander une plateforme Sharepoint** .
+Les offres SharePoint permettent de bénéficier d'un espace de stockage partagé pour votre travail collaboratif.
 
+**Découvrez comment commander et configurer une plateforme SharePoint.**
 
-![emails](images/4473.png){.thumbnail}
+## Prérequis
 
-- Si vous n'avez pas de service Exchange Hosted OVH, vous pourrez lancer la commande de votre Sharepoint directement.
-- Si vous avez sur votre espace client un service Hosted Exchange, vous pourrez l'associer à votre Sharepoint.
+- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Avoir souscrit à une plateforme [Hosted Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external} pour la commande d'une plateforme SharePoint associée.
 
-Cliquez ensuite sur  **Lancer la demande d'activation**
+## En pratique
 
+### Étape 1 : commander une plateforme SharePoint
 
-![emails](images/4474.png){.thumbnail}
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) et dirigez-vous dans la section « Web ». Cliquez sur `Commander`{.action} dans la barre de services à gauche puis sur `Sharepoint`{.action} .
 
-Vous serez alors redirigé vers notre site pour finaliser votre commande.
+Il y a deux types de plateformes qui vous sont proposées :
 
+| SharePoint associé                                                                                                                      	| SharePoint standalone                                                                                                                                                                       	|
+|-----------------------------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| ![sharepoint](images/order-manage-sharepoint-02.png){.thumbnail}                                                                        	| ![sharepoint](images/order-manage-sharepoint-03.png){.thumbnail}                                                                                                                            	|
+| Si vous possédez une plateforme Hosted Exchange sur votre espace client, vous pouvez associer ses comptes à une plateforme SharePoint. Cochez le ou les comptes auxquels vous souhaitez associer une licence SharePoint 	| Si vous n'avez pas de plateforme Exchange Hosted OVHcloud ou que vous souhaitez une plateforme SharePoint indépendante, choisissez la commande d'une plateforme SharePoint Standalone. <br>Définissez le nombre de licences que vous souhaitez en fonction du nombre d'utilisateurs.	|
 
-![emails](images/4475.png){.thumbnail}
+Une fois votre choix effectué, Cliquez sur `Commander votre service`{.action} afin de finaliser votre commande.
 
-Cliquez sur Poursuivre afin de valider les contrats liés à Sharepoint et obtenir votre bon de commande.
+### Étape 2: activer la plateforme SharePoint
 
-Une fois réglé, la livraison de votre service Sharepoint se fait sous un délai maximal de 4 heures.
+Une fois votre commande validée et réglée, vous recevrez sur l'adresse e-mail de référence de votre espace client un e-mail de confirmation indiquant que la plateforme est prête à la configuration.
 
+Pour consulter cet e-mail, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) puis cliquez sur votre profil en haut à droite et enfin cliquez sur vos initiales. Dirigez-vous sur l'onglet `Emails reçus`{.action} et recherchez l'e-mail ayant pour objet :
 
-## Activation de votre service Sharepoint
-Votre service est disponible, il est nécessaire de l'activer.
+> **[xx-11111-ovh] Configurer votre service Microsoft SharePoint !**
 
-Un mail vous est envoyé confirmant que l'activation est disponible : **Configurer votre service Microsoft SharePoint !**
+Pour débuter cette configuration, dirigez-vous dans la section `Web` de votre espace client. Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Sharepoint`{.action} et sélectionnez la plateforme SharePoint concernée.
 
-Vous pouvez retrouver cet e-mail depuis votre espace client dans la section : **Mon compte**  puis  **Mes e-mails reçus** .
+Définissez le nom de votre plateforme dans la case « URL du SharePoint » puis cliquez sur `Valider l'URL`{.action}
 
-Voici un aperçu de l'e-mail :
+![sharepoint](images/order-manage-sharepoint-04.png){.thumbnail}  
 
+> [!warning]
+>
+> Une fois validé, le nom de la plateforme ne peut pas être modifié.
 
-![emails](images/4494.png){.thumbnail}
+### Étape 3: configuration de la plateforme SharePoint
 
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) et dirigez-vous dans la section `Web`. Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Sharepoint`{.action} et sélectionnez la plateforme SharePoint concernée.
 
-### Finalisation de l'activation
-La finalisation de l'activation se fait depuis votre espace client sélectionnez dans la colonne de gauche le menu  **Microsoft**  puis Sharepoint.
+#### **SharePoint standalone**
 
+Cette plateforme est indépendante, il faut d'abord y associer un nom de domaine avant de configurer vos utilisateurs.
 
-![emails](images/4477.png){.thumbnail}
+##### ***Ajouter un domaine***
 
-A ce niveau vous devez définir l'url de votre Sharepoint. Une vérification est réalisée, si celle-ci est disponible vous pourrez valider  cette étape.
+Dirigez-vous dans l'onglet `Domaines` et cliquez sur `Ajouter un domaine`{.action}. Sélectionnez un domaine que vous possédez dans votre espace client ou tapez un nom de domaine externe que vous gérez. 
 
+- Si vous choisissez un nom de domaine présent dans votre espace client, celui-ci sera automatiquement validé, il ne vous restera plus qu'à configurer vos utilisateurs.
+ 
+- Si vous choisissez un nom de domaine externe, il est nécessaire d'ajouter un enregistrement CNAME dans la zone DNS du nom de domaine pour le valider sur la plateforme SharePoint. L'enregistrement CNAME à renseigner est accessible en cliquant sur l'icône d'information à côté de la mention « Validation de domaine en cours », comme ci-dessous.
 
-![emails](images/4478.png){.thumbnail}
 
-Une fois l'url validée, il faut patienter que l'activation se finalise. Cela peut prendre jusqu'à 4 heures.
+![sharepoint](images/order-manage-sharepoint-05.png){.thumbnail}
 
+##### ***Configurer un utilisateur***
 
-## Gestion de votre Sharepoint
+Dirigez-vous dans l'onglet `Utilisateur`, cliquez sur `...`{.action} à droite du compte puis cliquez sur `Modifier le compte`{.action}
 
-### Sharepoint associe a un service Exchange
-La gestion de votre service Sharepoint se fait depuis l'espace client OVH, depuis le menu  **Microsoft**  puis  **Sharepoint** .
+![sharepoint](images/order-manage-sharepoint-06.png){.thumbnail} 
 
+Complétez la fenêtre qui apparaît avec les informations de l'utilisateur et cliquez sur `valider`{.action}
 
-![emails](images/4477.png){.thumbnail}
+Pour obtenir les droits administrateur sur la plateforme SharePoint, cliquez à nouveau sur `...`{.action} à droite du compte puis cliquez sur `Activer les droits administrateur`{.action}
 
-Depuis l'onglet  **Informations générales**  :
+#### **SharePoint associé**
 
-- La référence de votre service et le serveur Exchange associé.
-- Accès : vous pouvez retrouver l'url de votre service et le serveur Exchange associé à votre Sharepoint.
-- Quotas : vous pourrez retrouver toutes les informations concernant votre espace de stockage.
+Comme son nom l'indique, cette plateforme est associée à la plateforme Exchange que vous avez choisie lors de votre commande, il n'y a donc pas de nom de domaine à associer.
 
+##### ***Configurer un utilisateur***
 
-![emails](images/4481.png){.thumbnail}
+Dirigez-vous dans l'onglet `Utilisateurs` de votre plateforme pour y visualiser l'ensemble des comptes Exchange qui peuvent bénéficier d'une licence SharePoint.
 
-Depuis l'onglet  **Utilisateurs**  :
+![sharepoint](images/order-manage-sharepoint-07.png){.thumbnail} 
 
-- Rétablir les droits administrateur : permet de remettre en place les droits administrateur à un utilisateur en cas de mauvaise manipulation depuis l'interface Sharepoint.
+Une colonne `Compte activé` indique si le compte de la plateforme Exchange bénéficie d'une licence sharePoint. 
 
-Par défaut le compte saisi lors de la commande est un utilisateur classique. Il est possible de le passer en Administrateur depuis la roue crantée à droite du compte.
+> [!primary]
+>
+> Si vous souhaitez activer une licence sur un compte qui n'en possède pas, cliquez sur `...`{.action} à droite du compte puis cliquez sur `Activer SharePoint`{.action}.
 
-Il est aussi possible de modifier le mot de passe de connexion depuis ce même menu.
+Par défaut, un compte bénéficiant d'une licence n'a pas les droits administrateur. Pour les activer, Cliquez sur `...`{.action} à droite du compte puis sur `Activer les droits administrateur`{.action}.
 
-Si vous souhaitez ajouter un utilisateur Sharepoint supplémentaire, cliquez sur la roue crantée à droite du compte Exchange concerné puis Activer sharepoint.
+![sharepoint](images/order-manage-sharepoint-08.png){.thumbnail} 
 
-Cela entraine une souscription d'une nouvelle licence.
+#### **Rétablir les droits administrateur**
 
+Sur les deux types de plateformes SharePoint, vous retrouvez le bouton `Rétablir droits administrateur`{.action} dans l'onglet `Utilisateur`. Il permet de remettre en place les droits administrateur de la plateforme en cas de mauvaise manipulation depuis l'interface SharePoint.
 
-![emails](images/4495.png){.thumbnail}
+![sharepoint](images/order-manage-sharepoint-09.png){.thumbnail}
 
+## Aller plus loin
 
-### Sharepoint Standalone
-La gestion de votre service Sharepoint se fait depuis l'espace client OVH, depuis le menu  **Microsoft**  puis  **Sharepoint** .
-
-
-![emails](images/4497.png){.thumbnail}
-
-Depuis l'onglet  **Informations générales**  :
-
-- La référence de votre service : il sera indiqué "Sharepoint Standalone". Cela signifie que votre service Sharepoint n'est pas associé à une plateforme Exchange.
-- Accès : vous pouvez retrouver l'url de votre service.
-- Quotas : vous pourrez retrouver toutes les informations concernant votre espace de stockage.
-
-Depuis l'onglet  **Domaines**  :
-
-Vous pouvez depuis cette section gérer les domaines associés à votre service Sharepoint. Par défaut aucun domaine n'est présent.
-
-Il est nécessaire d'en ajouter un afin de réaliser la configuration du nom de l'utilisateur Sharepoint.
-
-
-![emails](images/4496.png){.thumbnail}
-
-Si votre domaine n'est pas géré sur le même identifiant que le service Sharepoint, une demande de vérification par "CNAME" sera réalisée.
-
-Il sera nécessaire dans ce cas de créer un champ de type "CNAME" dans la zone dns de votre domaine afin de valider l'ajout de celui-ci.
-
-Depuis l'onglet  **Utilisateurs**  :
-
-
-![emails](images/4499.png){.thumbnail}
-
-- Rétablir les droits administrateur : permet de remettre en place les droits administrateur à un utilisateur en cas de mauvaise manipulation depuis l'interface Sharepoint.
-
-Par défaut il n'y a aucun utilisateur administrateur. Il est possible de le passer en Administrateur depuis la roue crantée à droite du compte.
-
-- Le stylo noir à droite du compte permet de parsonnaliser l'utilisateur Sharepoint
-
-Vous souhaitez ajouter un ou plusieurs utilisateurs ?
-
-Cliquez sur le bouton : **"Commander des comptes"**
-
-- L'icône **"Mode de facturation"** vous permet de gérer vos utilisateurs et de sélectionner les utilisateurs dont le compte sharepoint ne doit pas être renouvelé.
-
-La roue crantée permet :
-
-- de modifier le mot de passe lié à l'utilisateur Sharepoint.
-- d'ajouter ou retirer les droits administrateur.
-- d'activer les webb app Office
-
-
-![emails](images/4482.png){.thumbnail}
-
-Votre sharepoint standalone est maintenant configuré.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
