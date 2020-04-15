@@ -21,7 +21,7 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 
 ## Requirements
 
-- a [Dedicated server](https://www.ovh.ie/dedicated_servers) in your OVHcloud account
+- a [dedicated server](https://www.ovh.ie/dedicated_servers) in your OVHcloud account
 - a [failover IP address](https://www.ovh.ie/dedicated_servers/ip_failover.xml) or a failover IP block (RIPE)
 - administrative access (root) via SSH or remote desktop (Windows) to your server
 

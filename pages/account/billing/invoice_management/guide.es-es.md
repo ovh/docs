@@ -1,11 +1,11 @@
 ---
-title: 'Gestionar las facturas de OVH'
+title: 'Gestionar las facturas de OVHcloud'
 slug: gestionar-facturas-ovh
-excerpt: 'Cómo gestionar sus facturas y pagos en OVH'
+excerpt: 'Cómo gestionar sus facturas y pagos en OVHcloud'
 section: 'Pedidos, facturas y servicios'
 ---
 
-**Última actualización: 14/11/2018**
+**Última actualización: 15/04/2020**
 
 ## Objetivo
 
@@ -15,19 +15,19 @@ Desde el área de cliente puede consultar, administrar y abonar sus facturas en 
 
 > [!primary]
 >
-> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicio en cuestión, es posible que algunos apartados de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVH aplicables, que encontrará en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Mis servicios`{.action}. En la página de administración de sus servicios, haga clic en `Mis contratos`{.action} en la columna izquierda.
+> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicio en cuestión, es posible que algunos apartados de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud aplicables, que encontrará en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}. En la página de administración de sus servicios, haga clic en `Contratos`{.action}.
 >
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} como contacto de facturación del servicio (para más información sobre los distintos tipos de contactos, consulte la guía [Gestionar los contactos de los servicios](https://docs.ovh.com/es/customer/gestion-de-los-contactos/){.external}).
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} como contacto de facturación del servicio (para más información sobre los distintos tipos de contactos, consulte la guía [Gestionar los contactos de los servicios](https://docs.ovh.com/es/customer/gestion-de-los-contactos/){.external}).
 
 
 ## Procedimiento
 
-### Partes de una factura de OVH
+### Partes de una factura de OVHcloud
 
-La factura es el documento que se genera al abonar un pedido o cuando se realiza una renovación automática un servicio. Dicho documento recoge los productos pagados o pendientes de pago, junto con el período de renovación y el importe correspondientes. La referencia de las facturas de OVH emitidas por la filial española de OVH siempre empieza por «ES».
+La factura es el documento que se genera al abonar un pedido o cuando se realiza una renovación automática un servicio. Dicho documento recoge los productos pagados o pendientes de pago, junto con el período de renovación y el importe correspondientes. La referencia de las facturas de OVHcloud emitidas por la filial española de OVH siempre empieza por «ES».
 
 ![Detalles de una factura](images/invoice-es.png){.thumbnail}
 
@@ -48,15 +48,19 @@ El precio total del servicio con el IVA incluido se indica al final de la tabla,
 
 > [!primary]
 >
-> Si, en la esquina superior derecha, aparece «Número de cuenta» como forma de pago, significa que se trata de una renovación automática. En ese caso, se utilizará la forma de pago que haya configurado en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+> Si, en la esquina superior derecha, aparece «Número de cuenta» como forma de pago, significa que se trata de una renovación automática. En ese caso, se utilizará la forma de pago que haya configurado en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 >
 
 
 ### Sección de facturación
 
-#### Consultar y gestionar las facturas de OVH
+#### Consultar y gestionar las facturas de OVHcloud
 
-Para consultar sus facturas, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Facturación`{.action}. Se abrirá una página en la que podrá ver todas sus facturas.
+Para consultar sus facturas, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Facturas`{.action}. 
+
+![area de cliente](images/hubinvoices.png){.thumbnail}
+
+Se abrirá una página en la que podrá ver todas sus facturas.
 
 ![Mis facturas](images/billing-section.png){.thumbnail}
 
@@ -109,7 +113,7 @@ En cualquiera de los casos, confirme haciendo clic en el botón `Abonar el impor
 
 ### Consultar los pagos
 
-Puede realizar un seguimiento de los pagos en la sección de facturación del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la pestaña `Seguimiento de los pagos`{.action}. La página muestra los pagos de facturas realizados con la forma de pago configurada en el área de cliente. La referencia de los justificantes de pago siempre empieza por «PA_ES».
+Puede realizar un seguimiento de los pagos en la sección de facturación del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la pestaña `Seguimiento de los pagos`{.action}. La página muestra los pagos de facturas realizados con la forma de pago configurada en el área de cliente. La referencia de los justificantes de pago siempre empieza por «PA_ES».
 
 ![Seguimiento de los pagos](images/payment_tracking.png){.thumbnail}
 
@@ -123,4 +127,4 @@ Al igual que las facturas, puede exportar los justificantes de pago en formato C
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
