@@ -10,7 +10,7 @@ order: 1
 
 ## Objective
 
-When you create a [Public Cloud Instance](https://www.ovh.ie/public-cloud/instances), you won't receive an email with login credentials, because authentication is based on secure SSH keys instead of usernames and passwords.
+When you create a [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud/), you won't receive an email with login credentials, because authentication is based on secure SSH keys instead of usernames and passwords.
 
 **This guide will show you how to create an SSH key, so that you can log into your instance.**
 
@@ -28,7 +28,7 @@ Please note that SSH keys are not used for authentication on instances running t
 
 > [!primary]
 >
-If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA, or ECDSA encryption. ED25519 is currently not supported.
+If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA or ECDSA encryption. ED25519 is currently not supported.
 >
 
 ### Creating an SSH key on Linux and Mac

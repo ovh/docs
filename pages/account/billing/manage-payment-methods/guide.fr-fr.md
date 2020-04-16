@@ -5,7 +5,7 @@ excerpt: 'Apprenez à ajouter et gérer vos moyens de paiement au sein de l’es
 section: Facturation
 ---
 
-**Dernière mise à jour le 20/11/2019**
+**Dernière mise à jour le 15/04/2020**
 
 ## Objectif
 L'espace client OVHcloud vous permet d'enregistrer et gérer différents moyens de paiement.
@@ -16,9 +16,9 @@ L'espace client OVHcloud vous permet d'enregistrer et gérer différents moyens 
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur votre nom en haut à droite, puis sélectionnez `Moyens de paiement`{.action}.
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur votre nom en haut à droite, puis sélectionnez `Moyen de paiement`{.action}.
 
-![manage-payment-methods](images/managepaymentmethods1.png){.thumbnail}
+![manage-payment-methods](images/hubpayment.png){.thumbnail}
 
 La page qui s’affiche contient un tableau répertoriant les moyens de paiement enregistrés sur votre espace client, notamment ceux utilisés lors de vos commandes. Vous pourrez y :
 

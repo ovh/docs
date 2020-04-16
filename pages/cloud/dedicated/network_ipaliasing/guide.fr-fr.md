@@ -5,28 +5,35 @@ excerpt: 'Découvrez comment ajouter des IP fail-over à votre configuration'
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 20/01/2020**
+**Dernière mise à jour le 16/04/2020**
 
 ## Objectif
 
-L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du réseau de votre serveur dédié, qui vous permet d'associer plusieurs adresses IP sur une seule interface réseau.
+L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du réseau de votre serveur dédié OVHcloud, qui vous permet d'associer plusieurs adresses IP sur une seule interface réseau.
+
+**Ce guide vous explique comment réaliser cet ajout.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s1qDqQ0p07Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-**Ce guide vous explique comment réaliser cet ajout.**
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+>
 
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, un [VPS](https://www.ovh.com/fr/vps/){.external} ou une [instance Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external}.
 - Avoir une ou plusieurs [IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external}.
-- Être connecté en SSH au serveur (accès root).
+- Être connecté en SSH au serveur (accès root) ou via remote desktop pour Windows
 
 
 ## En pratique
 
 > [!primary]
-> Les configurations visibles dans ce guide sont fournies à titre d’exemples. Des adaptations peuvent être nécessaires suivant le système d’exploitation que vous utilisez sur votre serveur dédié. 
->
+>  
+>Si vous souhaitez utiliser une distribution récente, la procédure adéquate pour configurer votre interface réseau peut nécessiter des adaptations. Si vous rencontrez des difficultés, nous vous recommandons de consulter la documentation relative à votre système d’exploitation. 
 
 
 Voici les configurations pour les distributions et les systèmes d’exploitation principaux.
@@ -43,6 +50,10 @@ cp /etc/network/interfaces /etc/network/interfaces.bak
 ```
 
 #### Étape 2 : éditer le fichier de configuration
+
+> [!primary]
+>
+> Les noms donnés aux interfaces réseau dans ce guide peuvent différer des vôtres. Veuillez adapter les manipulations en conséquence.
 
 Vous pouvez désormais modifier le fichier source :
 
@@ -184,7 +195,7 @@ network:
             - FAILOVER_IP/32
 ```
 
-Enregistrez et fermez le fichier. Vous pouvez tester la configuration avec la commande suivante :
+Enregistrez et fermez le fichier. Pour tester la configuration, saisissez la commande suivante :
 
 ```sh
 # netplan try
@@ -253,7 +264,7 @@ Maintenant, vous devez modifier le fichier pour ajouter l'IP fail-over. Dans Gen
 
 > [!warning]
 >
-> L’IP par défaut du serveur et `config_eth0=` doivent rester sur la même ligne. Cela permet d'assurer le bon fonctionnement de certaines opérations spécifiques à OVH.
+> L’IP par défaut du serveur et `config_eth0=` doivent rester sur la même ligne. Cela permet d'assurer le bon fonctionnement de certaines opérations spécifiques à OVHcloud.
 > 
 
 Il vous suffit de faire un retour à la ligne après le masque de réseau **255.255.255.0** et d’y ajouter votre adresse IP fail-over. « SERVER_IP » doit être remplacé par l’IP principale de votre serveur.
@@ -321,7 +332,7 @@ LABEL_1=ens32:0
 Finalement, redémarrez votre serveur pour appliquer les modifications.
 
 
-### cPanel
+### cPanel (pour CentOS 6)
 
 #### Étape 1 : créer une sauvegarde
 
@@ -566,7 +577,7 @@ ifconfig_eth0="inet FAILOVER_IP netmask 0 broadcast FAILOVER_IP"
 
 Où vous remplacerez « FAILOVER_IP » par la véritable IP fail-over.
 
-Ensuite, il vous suffit d'effectuer un ping depuis votre IP fail-over vers l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration devant être corrigée. Si, au contraire, l'adresse IP ne fonctionne toujours pas, veuillez ouvrir un ticket à l'équipe d'assistance via votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Ensuite, il vous suffit d'effectuer un ping depuis votre IP fail-over vers l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration devant être corrigée. Si, au contraire, l'adresse IP ne fonctionne toujours pas, veuillez ouvrir un ticket à l'équipe d'assistance via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Aller plus loin
 
