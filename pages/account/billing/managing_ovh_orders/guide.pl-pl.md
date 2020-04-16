@@ -1,27 +1,27 @@
 ---
-title: 'Zarządzanie zamówieniami w OVH'
+title: 'Zarządzanie zamówieniami w OVHcloud'
 slug: zarzadzanie-zamowieniami-ovh
-excerpt: 'Dowiedz się, jak zarządzać zamówieniami na usługi w OVH'
+excerpt: 'Dowiedz się, jak zarządzać zamówieniami na usługi w OVHcloud'
 section: 'Zamówienia, faktury i usługi'
 ---
 
-**Ostatnia aktualizacja z dnia 26-11-2018**
+**Ostatnia aktualizacja z dnia 16-04-2020**
 
 ## Wprowadzenie
 
-Zamówienie w OVH przechodzi przez kilka etapów, które możesz śledzić w Twoim [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Zamówienie w OVHcloud przechodzi przez kilka etapów, które możesz śledzić w Twoim [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 **Niniejszy przewodnik wyjaśnia, jak interpretować poszczególne etapy realizacji zamówienia.**
 
 > [!primary]
 >
-> Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania do Twojej sytuacji, która może być różna w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. Jeśli masz wątpliwości, sprawdź zapisy w umowach OVH dostępnych w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja`Moje usługi`{.action} > `Regulaminy`{.action}.
+> Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania do Twojej sytuacji, która może być różna w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. Jeśli masz wątpliwości, sprawdź zapisy w umowach OVHcloud dostępnych w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja`Produkty i usługi`{.action} > `Regulaminy`{.action}.
 >
 
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Złożenie co najmniej jednego zamówienia w OVH
+- Złożenie co najmniej jednego zamówienia w OVHcloud
 
 
 ## W praktyce
@@ -45,9 +45,9 @@ Możesz w każdym momencie odnaleźć Twoje zamówienie w [Panelu klienta](https
 
 ### Dostęp do zamówień w Panelu klienta
 
-Aby uzyskać dostęp do panelu zarządzania zamówieniami, kliknij Twoje nazwisko w prawym górnym rogu w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, a następnie kliknij `Moje zamówienia`{.action}.
+Aby uzyskać dostęp do panelu zarządzania zamówieniami, kliknij `Dashboard` w lewym górnym rogu w aplecie [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, a następnie kliknij `Wyświetl moje zamówienia`{.action}.
 
-![Panel klienta](images/customer_panel_order.png){.thumbnail}
+![Panel klienta](images/huborders.png){.thumbnail}
 
 Wyświetli się strona z listą złożonych w ramach Twojego konta zamówień, których ważność nie wygasła.
 
@@ -77,7 +77,7 @@ Możesz wyświetlić zamówienie, które ma status „dostarczanie w trakcie” 
 
 ### Korzystanie z prawa do odstąpienia od umowy
 
-Artykuł 5 punkt 8 [Regulaminów OVH](https://www.ovh.pl/pomoc/regulaminy/){.action} stanowi, że *Użytkownik, będący konsumentem może odstąpić od umowy bez podania przyczyny, składając stosowne oświadczenie na piśmie w ciągu 10 dni od dnia zawarcia umowy świadczenia usługi. Do zachowania tego terminu wystarczy przesłanie oświadczenia w tym terminie.*
+Artykuł 5 punkt 8 [Regulaminów OVHcloud](https://www.ovh.pl/pomoc/regulaminy/){.action} stanowi, że *Użytkownik, będący konsumentem może odstąpić od umowy bez podania przyczyny, składając stosowne oświadczenie na piśmie w ciągu 10 dni od dnia zawarcia umowy świadczenia usługi. Do zachowania tego terminu wystarczy przesłanie oświadczenia w tym terminie.*
 
 Opcję skorzystania z prawa do odstąpienia od umowy znajdziesz w dalszym ciągu tego artykułu.
 
@@ -94,7 +94,7 @@ Zaznacz kratkę `Tak, chcę anulować to zamówienie`{.action}, po czym zatwierd
 
 > [!primary]
 >
-> W ciągu 30 dni od dnia odstąpienia od umowy zwrócimy Ci pierwotnie wpłaconą kwotę po uprzednim potrąceniu należności za dni, w których skorzystałeś z usług OVH. 
+> W ciągu 30 dni od dnia odstąpienia od umowy zwrócimy Ci pierwotnie wpłaconą kwotę po uprzednim potrąceniu należności za dni, w których skorzystałeś z usług OVHcloud. 
 >
 
 
