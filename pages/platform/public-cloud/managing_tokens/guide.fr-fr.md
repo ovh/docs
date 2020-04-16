@@ -1,14 +1,16 @@
 ---
 title: 'Gestion des tokens'
+excerpt: 'Découvrez comment utiliser les token via API Keystone'
 slug: gestion-des-tokens
 legacy_guide_number: 1872
 section: 'Actions via API et lignes de commande'
 ---
 
-**Dernière mise à jour le 07/02/2020**
+**Dernière mise à jour le 16/04/2020**
 
 ## Objectif
 
+** Découvrez comment configurer les connexions aux API keystone sur votre service à l'aide des tokens.**
 
 > [!primary]
 >
@@ -16,6 +18,7 @@ section: 'Actions via API et lignes de commande'
 > Keystone.
 > 
 
+## En pratique
 
 ### Définitions
 - Endpoint : Adresse HTTP pointant directement sur une API d'un service. par exemple [https://auth.cloud.ovh.net/v3/](https://auth.cloud.ovh.net/v3/){.external} pour le endpoint d'authentification ou [https://image.compute.gra1.cloud.ovh.net/](https://image.compute.gra1.cloud.ovh.net/){.external} pour le endpoint de gestion des images de la zone GRA1.
@@ -37,7 +40,7 @@ De la même manière, si un token doit être révoqué avant sa date d'expiratio
 Pour plus d'information, consultez la documentation d'[OpenStack de l'API](https://docs.openstack.org/keystone/train/api_curl_examples.html){.external}.
 
 
-## Operations manuelles
+### Operations manuelles
 Les opérations qui suivent peuvent être effectuées manuellement, elles sont généralement utilisées à des fins pédagogiques ou de debugging.
 
 Il est nécessaire de charger l'environnement à l'aide du fichier openrc (voir le guide).
@@ -51,7 +54,7 @@ Dans notre exemple, nous souhaitons obtenir les informations de metadata d'un ob
 L'outil en ligne de commande cURL permet de construire des requêtes de toutes pièce.
 
 
-### Demande de creation d'un token
+#### Étape 1 : Demande de creation d'un token
 
 ```bash
 curl -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | python -mjson.tool
@@ -119,7 +122,7 @@ La réponse du serveur ressemble à ceci :
 ```
 
 
-### Recuperation des variables token ID et endpoint publicURL
+#### Étape 2 : Recuperation des variables token ID et endpoint publicURL
 Les deux informations sont disponibles dans la sortie de la commande précédente.
 
 Pour le endpoint publicURL, il faut rechercher dans la section "object-store" et la région qui convient, ici "SBG".
@@ -139,7 +142,7 @@ export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: appl
 Ce token est maintenant l'élément d'authentification qui sera utilisé pour la requête suivante.
 
 
-### Requête sur l'objet avec les informations récupérées
+#### Étape 3 : Requête sur l'objet avec les informations récupérées
 
 ```bash
 curl -X GET $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg -H "X-Auth-Token: $token" -I
@@ -168,7 +171,7 @@ Connection: close
 ```
 
 
-## Gestion automatique : librairie et SDK
+### Gestion automatique : librairie et SDK
 Il est fortement recommandé d'utiliser les librairies permettant la gestion transparente des tokens. De cette manière, en fournissant simplement les credentials de connexion à la librairie, les tokens seront automatiquement générés, utilisés et renouvelés sans devoir en faire la gestion au niveau applicatif.
 
 Il existe de nombreuses librairies dans les différents langages. Consultez [la liste officielle pour plus d'informations](https://wiki.openstack.org/wiki/SDKs){.external}.
