@@ -6,7 +6,7 @@ section: Sicherheit
 hidden: true
 ---
 
-**Letzte Aktualisierung am 15.11.2019**
+**Letzte Aktualisierung am 16.04.2020**
 
 ## Ziel
 
@@ -33,9 +33,9 @@ Neben weiteren Methoden, um den Zugang zu Ihrem Kundencenter abzusichern, bietet
 
 ### Schritt 1: Die Zwei-Faktor-Authentifizierung aktivieren
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie auf Ihren Namen oben rechts (1) und wählen Sie dann `Mein Account`{.action} (2). Klicken Sie nun auf `Sicherheit`{.action} (3) und schließlich auf `Die Zwei-Faktor-Authentifizierung aktivieren`{.action} (4).
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie auf Ihren Namen oben rechts (1), und klicken Sie dann auf Ihre Initialen (2). Klicken Sie nun auf `Sicherheit`{.action} (3) und schließlich auf `Die Zwei-Faktor-Authentifizierung aktivieren`{.action} (4).
 
-![2FA mobileapp](images/2fagen2.png){.thumbnail}
+![2FA mobileapp](images/hub2FA.png){.thumbnail}
 
 
 ### Schritt 2: Wählen Sie die Methode per mobiler Applikation

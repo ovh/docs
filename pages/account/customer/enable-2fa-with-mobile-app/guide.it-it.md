@@ -6,7 +6,7 @@ section: Sicurezza
 hidden: true
 ---
 
-**Ultimo aggiornamento: 15/11/2019**
+**Ultimo aggiornamento: 16/04/2020**
 
 ## Obiettivo
 
@@ -33,9 +33,9 @@ La doppia autenticazione con il sistema *one-time password*(OTP), disponibile tr
 
 ### Step 1: attiva la doppia autenticazione
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clicca sul tuo nome in alto a destra (primo step nell’immagine qui di seguito), e poi su`Il tuo account`{.action} (secondo step). Poi clicca su `Sicurezza`{.action}(terzo step) e su `Attiva la doppia autenticazione`{.action}(quarto step).
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clicca sul tuo nome in alto a destra (primo step nell’immagine qui di seguito), e poi sulle iniziali (secondo step). Poi clicca su `Sicurezza`{.action}(terzo step) e su `Attiva la doppia autenticazione`{.action}(quarto step).
 
-![2FA mobileapp](images/2fagen2.png){.thumbnail}
+![2FA mobileapp](images/hub2FA.png){.thumbnail}
 
 
 ### Step 2: scegli il metodo applicazione mobile
