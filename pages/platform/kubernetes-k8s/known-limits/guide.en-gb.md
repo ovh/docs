@@ -41,6 +41,7 @@ Delivering a fully managed service, including OS and other component updates, yo
 
 ## LoadBalancer
 
+Based on a new highly-available infrastructure since late April 2020, the external load-balancer included in Managed Kubernetes Service is currently offered free-of-charge and under OVhcloud Beta Terms and conditions.
 There is a default quota of 16 external `LoadBalancers` per cluster.  
 This limit can be exceptionally raised upon request though our support team.  
 There is also a limit of __10 open ports__ on every `LoadBalancer`, and these ports must be in a range between __6 and 65535__.
