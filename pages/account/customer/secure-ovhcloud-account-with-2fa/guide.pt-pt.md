@@ -87,13 +87,13 @@ Também pode utilizar um dos códigos de segurança disponíveis.
 > - códigos de segurança válidos.
 > 
 
-Para eliminar um periférico, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, Clique no seu nome no canto superior direito (etapa 1 na imagem abaixo), depois em `A minha Conta`{.action} (etapa 2). 
+Para eliminar um periférico, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, Clique no seu nome no canto superior direito (etapa 1 na imagem abaixo), depois em suas iniciais (etapa 2). 
 
-![2FA](images/2fadevicedeletion1.png){.thumbnail}
+![2FA](images/hub2FAb.png){.thumbnail}
 
 Clique então em `Segurança`{.action} (etapa 1 na imagem abaixo), depois em `...`{.action} (etapa 2) à direita do periférico que pretende eliminar e, por fim, em `Eliminar`{.action} (etapa 3).
 
-![2FA](images/2fadevicedeletion2.png){.thumbnail}
+![2FA](images/hub2FAc.png){.thumbnail}
 
 
 ## Quer saber mais?

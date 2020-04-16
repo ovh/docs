@@ -5,7 +5,7 @@ excerpt: 'Find out how to improve security for your OVHcloud account by enabling
 section: Security
 ---
 
-**Last updated 10th February 2020**
+**Last updated 16th April 2020**
 
 ## Objective
 
@@ -91,13 +91,13 @@ You can also use one of the security codes provided to you.
 > - via valid security codes
 > 
 
-To remove a device, please log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click on your name in the top right-hand corner (first step on the image below), then `My account`{.action} (second step). 
+To remove a device, please log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click on your name in the top right-hand corner (first step on the image below), then click your initials (second step). 
 
-![2FA](images/2fadevicedeletion1.png){.thumbnail}
+![2FA](images/hub2FAb.png){.thumbnail}
 
 Next, click `Security`{.action} (the first step on the image below), then click on the `...`{.action} icon (second step) to the right of the device you want to delete, and finally, click `Remove`{.action} (third step).
 
-![2FA](images/2fadevicedeletion2.png){.thumbnail}
+![2FA](images/hub2FAc.png){.thumbnail}
 
 
 ## Go further

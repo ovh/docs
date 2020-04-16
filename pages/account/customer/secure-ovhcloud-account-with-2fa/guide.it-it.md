@@ -5,7 +5,7 @@ excerpt: 'Come rendere più sicuro il tuo account OVHcloud attivando la doppia a
 section: Sicurezza
 ---
 
-**Ultimo aggiornamento: 15/11/2019**
+**Ultimo aggiornamento: 16/04/2020**
 
 ## Obiettivo
 
@@ -89,13 +89,13 @@ Se il tuo dispositivo (telefono cellulare/smartphone/chiave di sicurezza) è sta
 > - codici di sicurezza validi
 > 
 
-Per rimuovere un dispositivo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clicca sul tuo nome in alto a destra (primo step nell’immagine qui di seguito) e poi su `Il tuo account`{.action}(secondo step). 
+Per rimuovere un dispositivo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clicca sul tuo nome in alto a destra (primo step nell’immagine qui di seguito) e poi su e clicca sulle iniziali(secondo step). 
 
-![2FA](images/2fadevicedeletion1.png){.thumbnail}
+![2FA](images/hub2FAb.png){.thumbnail}
 
 Clicca su `Sicurezza`{.action}(primo step nell’immagine qui di seguito) e poi sui tre puntini `...`{.action}(secondo step) a destra del dispositivo da rimuovere e infine clicca su`Rimuovi`{.action}(terzo step).
 
-![2FA](images/2fadevicedeletion2.png){.thumbnail}
+![2FA](images/hub2FAc.png){.thumbnail}
 
 
 ## Per saperne di più
