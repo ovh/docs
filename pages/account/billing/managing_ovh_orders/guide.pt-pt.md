@@ -1,27 +1,27 @@
 ---
-title: 'Gerir as encomendas da OVH'
+title: 'Gerir as encomendas da OVHcloud'
 slug: gerir-as-encomendas-ovh
-excerpt: 'Saiba como gerir as suas encomendas da OVH'
+excerpt: 'Saiba como gerir as suas encomendas da OVHcloud'
 section: 'Gerir as encomendas, faturas e serviços'
 ---
 
-**Última atualização: 23/11/2018**
+**Última atualização: 16/04/2020**
 
 ## Sumário
 
-Uma encomenda da OVH passar por diferentes estados que poderá seguir através da [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Uma encomenda da OVHcloud passar por diferentes estados que poderá seguir através da [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 **Este manual explica-lhe como compreender a sua nota de encomenda e os respetivos estados.**
 
 > [!primary]
 >
-> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Caso tenha alguma dúvida, consulte os contratos OVH disponíveis na sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. Para isso, clique no seu ID de cliente no canto superior direito e selecione `Serviços`{.action} > `Contratos`{.action}.
+> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Caso tenha alguma dúvida, consulte os contratos OVHcloud disponíveis na sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. Para isso, clique no seu ID de cliente no canto superior direito e selecione `Produtos e serviços`{.action} > `Contratos`{.action}.
 >
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Ter realizado, pelo menos, uma encomenda na OVH.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter realizado, pelo menos, uma encomenda na OVHcloud.
 
 
 ##  Instruções
@@ -40,16 +40,16 @@ A nota de encomenda é criada quando efetua uma encomenda. Indica os produtos en
 |4|Nesta secção, encontrará os métodos de pagamento disponíveis. Apenas serão sugeridos os métodos de pagamento autorizados no país de origem da conta ou os que estão associados ao tipo de conta registada.|
 
 
-Pode consultar a sua nota de encomenda a qualquer momento através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, conforme explicado abaixo.
+Pode consultar a sua nota de encomenda a qualquer momento através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, conforme explicado abaixo.
 
 
-### Aceder às notas de encomenda na Área de Cliente OVH
+### Aceder às notas de encomenda na Área de Cliente OVHcloud
 
-Para aceder ao painel de gestão das encomendas, deverá clicar no seu ID de cliente no canto superior direito da sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, selecionar `A minha conta`{.action} e clicar em `Encomendas`{.action} na coluna à esquerda.
+Para aceder ao painel de gestão das encomendas, deverá clicar no seu `Paneil de controlo` no canto superior esquerdo da sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, e clicar em `Ver as minhas encomendas`{.action}.
 
-![Área de Cliente](images/customer_panel_order.png){.thumbnail}
+![Área de Cliente](images/huborders.png){.thumbnail}
 
-De seguida, será redirecionado para uma página que resume as diferentes encomendas válidas que foram efetuadas na conta da OVH.
+De seguida, será redirecionado para uma página que resume as diferentes encomendas válidas que foram efetuadas na conta da OVHcloud.
 
 ![Resumo das encomendas](images/order_recap.png){.thumbnail}
 
@@ -86,7 +86,7 @@ Se o cliente cumprir os requisitos necessários para exercer o seu direito de re
 
 > [!primary]
 >
-> A OVH garante o reembolso dos montantes pagos no prazo de trinta dias após a data em que o Cliente exerceu o seu direito de retratação.
+> A OVHcloud garante o reembolso dos montantes pagos no prazo de trinta dias após a data em que o Cliente exerceu o seu direito de retratação.
 >
 
 
