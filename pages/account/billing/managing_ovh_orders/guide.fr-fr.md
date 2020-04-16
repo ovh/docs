@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer vos commandes chez OVHcloud'
 section: Facturation
 ---
 
-**Dernière mise à jour le 17/02/2020**
+**Dernière mise à jour le 16/04/2020**
 
 ## Objectif
 
@@ -15,7 +15,7 @@ Lorsque vous effectuez une commande, vous pouvez suivre et interagir avec celle-
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si besoin, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, rubrique `Mes services`{.action} puis `Mes contrats`{.action}.
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si besoin, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, rubrique `Produits et services`{.action} puis `Contrats`{.action}.
 >
 
 ## Prérequis
@@ -43,13 +43,13 @@ Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace cl
 
 ### Accéder aux bons de commandes dans l'espace client OVHcloud
 
-Pour accéder au panneau de gestion des commandes, il vous suffit de cliquer en haut à droite dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} sur votre prénom, puis sur `Mes commandes`{.action}.
+Pour accéder au panneau de gestion des commandes, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}  puis cliquez sur `Voir mes commandes`{.action} dans votre `Tableau de bord`.
 
-![Espace client](images/order02.png){.thumbnail}
+![Espace client](images/huborders.png){.thumbnail}
 
 Un récapitulatif des différentes commandes passées et non expirées apparaît comme ci-dessous.
 
-![Récpitulatif des commandes](images/order03.png){.thumbnail}
+![Récapitulatif des commandes](images/order03.png){.thumbnail}
 
 Sur celui-ci, vous retrouverez les informations suivantes :
 
@@ -73,7 +73,7 @@ Vous pouvez également afficher le bon de commande au format HTML en cliquant su
 
 ### Suivre votre commande.
 
-Après génération de votre bon de commande, vous pouvez suivre votre commande depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur votre prénom, puis sur `Mes commandes`{.action} et enfin sur `...`{.action} devant votre commande. Sélectionnez `Suivi de commande`{.action}. Le suivi de commande peut également être affiché en cliquant sur l'état d'une commande dans la colonne « État ».
+Après génération de votre bon de commande, vous pouvez suivre votre commande depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur votre `Tableau de bord`, puis sur `Voir mes commandes`{.action} et enfin sur `...`{.action} devant votre commande. Sélectionnez `Suivi de commande`{.action}. Le suivi de commande peut également être affiché en cliquant sur l'état d'une commande dans la colonne « État ».
 
 ![Suivi de commande](images/order05b.png){.thumbnail}
 
@@ -87,7 +87,7 @@ L'article 12.1.2 de nos [Conditions Générales de Service](https://www.ovh.com/
 
 Vous trouverez toutes les modalités d'application du droit de rétractation dans la suite de ce même article.
 
-Si les critères d'éligibilité à ce délai de rétractation sont remplis, il peut être mis en application directement depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur votre prénom, puis sur `Mes commandes`{.action} et enfin sur `...`{.action} devant votre commande. Sélectionnez `Annuler la commande`{.action}.
+Si les critères d'éligibilité à ce délai de rétractation sont remplis, il peut être mis en application directement depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur votre `Tableau de bord`, puis sur `Voir mes commandes`{.action} et enfin sur `...`{.action} devant votre commande. Sélectionnez `Annuler la commande`{.action}.
 
 ![Annulation d'une commande](images/cancelorder1.png){.thumbnail}
 
