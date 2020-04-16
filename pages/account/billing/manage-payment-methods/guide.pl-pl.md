@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak dodawać sposoby płatności do Panelu klienta OVHcl
 section: Płatności
 ---
 
-**Ostatnia aktualizacja z dnia 20-11-2019**
+**Ostatnia aktualizacja z dnia 15-04-2020**
 
 ## Wprowadzenie
 
@@ -20,7 +20,7 @@ W Panelu klienta OVHcloud możesz dodać różne sposoby płatności i zarządza
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, w prawym górnym rogu kliknij swoją nazwę użytkownika, a następnie wybierz pozycję `Sposoby płatności`{.action}.
 
-![manage-payment-methods](images/managepaymentmethods1.png){.thumbnail}
+![manage-payment-methods](images/hubpayment.png){.thumbnail}
 
 Na wyświetlonej stronie znajduje się tabela podsumowująca sposoby płatności dodane do Panelu klienta, przede wszystkim te używane do opłacania zamówień. W Panelu klienta można:
 
