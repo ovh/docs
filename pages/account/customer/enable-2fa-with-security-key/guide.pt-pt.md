@@ -6,7 +6,7 @@ section: Segurança
 hidden: true
 ---
 
-**Última atualização: 15/11/2019**
+**Última atualização: 16/04/2020**
 
 ## Objetivo
 
@@ -25,9 +25,9 @@ A dupla autenticação com chave de segurança Universal Second Factor (U2F) é 
 
 ### Etapa 1: ativar a dupla autenticação
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no seu nome no canto superior direito (1) e selecione `A minha Conta`{.action} (2). A seguir, clique em `Segurança`{.action} (3) e por fim em `Ativar a dupla autenticação`{.action} (4).
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no seu nome no canto superior direito (1) e clique em suas iniciais (2). A seguir, clique em `Segurança`{.action} (3) e por fim em `Ativar a dupla autenticação`{.action} (4).
 
-![2FA securitykey](images/2fagen2.png){.thumbnail}
+![2FA securitykey](images/hub2FA.png){.thumbnail}
 
 
 ### Etapa 2: Escolher o método com chave de segurança
