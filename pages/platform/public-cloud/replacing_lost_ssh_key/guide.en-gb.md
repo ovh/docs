@@ -26,7 +26,7 @@ To regain access, we have provided you with a [rescue mode](https://docs.ovh.com
 
 > [!primary]
 >
-If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA, or ECDSA encryption. ED25519 is currently not supported.
+If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA or ECDSA encryption. ED25519 is currently not supported.
 >
 
 After mounting your instance's disk in [rescue mode](https://docs.ovh.com/gb/en/public-cloud/put_an_instance_in_rescue_mode/), you will be able to access all your files. The file containing your SSH keys is shown below:
