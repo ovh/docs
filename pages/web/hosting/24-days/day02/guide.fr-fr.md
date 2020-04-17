@@ -50,7 +50,7 @@ Comme il est bien trop difficile de retenir des coordonnées précises, que ce s
 
 Ainsi, lors de votre première connexion à un site web, le navigateur demande au serveur DNS (l’annuaire) quelle est l’adresse IP du nom de domaine qui vient d’être entré. Ensuite, il le garde en mémoire quelque temps et envoie toutes les requêtes à l’adresse IP correspondante, qui retourne alors le site web.
 
-## Comment gerer son nom de domaine de maniere optimale ?
+## Comment gérer son nom de domaine de manière optimale ?
 Lorsque vous commandez votre nom de domaine, OVH vous propose de configurer et de maintenir automatiquement les serveurs DNS, en toute simplicité. Vous pouvez aussi, bien entendu, décider de les gérer vous-même. Dans ce cas, vous trouverez plus d'informations dans [ce guide](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/).
 
 ### Créer des sous-domaines
@@ -63,12 +63,12 @@ Comme ces informations sont publiques, OVH vous propose gratuitement un service 
 
 Le service **OwO** est activable lors de la commande ou dans l’espace client.
 
-### Ameliorer la vitesse de votre site avec DNS Anycast
+### Améliorer la vitesse de votre site avec DNS Anycast
 Si vous souhaitez de meilleures performances, vous pouvez utiliser un service nommé **DNS Anycast** qui utilise des serveurs DNS performants répartis tout autour de la planète. Les performances de la première requête vers votre site sont meilleures, quel que soit le lieu où se trouvent les visiteurs de votre site web. Cette option est disponible lors de la commande de votre nom de domaine, ou depuis votre espace client.
 
 OVH fournit des serveurs DNS par défaut lorsque vous commandez un nom de domaine, mais ces serveurs sont seulement localisés en France.
 
-### Ameliorer la securite du nom de domaine avec DNSSEC
+### Améliorer la sécurité du nom de domaine avec DNSSEC
 Le protocole DNS qui permet aux noms de domaine de fonctionner a été créé tout au début d’Internet, à une période où les premiers internautes se faisaient confiance et lorsque les tentatives de piratage étaient plus rares. Par défaut, tous les échanges utilisant le protocole DNS sont dans un format non authentifié, et qu’il est possible d’intercepter. Un attaquant peut ainsi falsifier les échanges et modifier l’adresse IP correspondante, s’il a la main sur le réseau (sur un réseau wifi sans mot de passe par exemple).
 
 Pour cela, un protocole plus sécurisé permet d'authentifier la source de l'annuaire et de s'assurer que seul le serveur qui gère le nom de domaine est légitime pour annoncer l'adresse IP. Ce protocole est DNSSEC. Les aspects techniques de DNSSEC ne sont pas l'objet de ce calendrier de l'avent, mais sachez qu'il est géré gratuitement par OVH.
