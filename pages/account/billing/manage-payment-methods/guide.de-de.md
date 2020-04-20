@@ -5,7 +5,7 @@ excerpt: 'Hier erfahren Sie, wie Sie Ihre Zahlungsarten in Ihrem OVHcloud Kunden
 section: Abrechnung
 ---
 
-**Letzte Aktualisierung am 20.11.2019**
+**Letzte Aktualisierung am 15.04.2020**
 
 ## Ziel
 
@@ -20,9 +20,9 @@ Ihr OVHcloud Kunden-Account ermöglicht Ihnen, verschiedene Zahlungsarten zu hin
 
 ## In der praktischen Anwendung
 
-Klicken Sie auf Ihren Namen oben rechts im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) und wählen Sie dann im Menü `Zahlungsarten`{.action}.
+Klicken Sie auf Ihren Namen oben rechts im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) und wählen Sie dann im Menü `Zahlungsmittel`{.action}.
 
-![manage-payment-methods](images/managepaymentmethods1.png){.thumbnail}
+![manage-payment-methods](images/hubpayment.png){.thumbnail}
 
 Die nun angezeigte Seite enthält eine Tabelle mit den in Ihrem Kunden-Account gespeicherten Zahlungsarten. Sie können dort:
 

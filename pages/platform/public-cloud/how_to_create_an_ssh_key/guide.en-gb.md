@@ -28,7 +28,7 @@ Please note that SSH keys are not used for authentication on instances running t
 
 > [!primary]
 >
-If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA, or ECDSA encryption. ED25519 is currently not supported.
+If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA or ECDSA encryption. ED25519 is currently not supported.
 >
 
 ### Creating an SSH key on Linux and Mac

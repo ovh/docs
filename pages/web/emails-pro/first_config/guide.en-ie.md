@@ -15,7 +15,7 @@ You have just purchased an Email Pro solution, which gives you affordable profes
 
 ## Requirements
 
-- an [Email Pro](https://www.ovh.ie/emails/email-pro/) solution
+- an [Email Pro](https://www.ovh.co.uk/emails/email-pro/) solution
 - an email confirming that your Email Pro solution has been set up
 - a domain name
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
@@ -84,7 +84,7 @@ You can use the `Diagnosis`{.action} column to modify the domain name’s DNS co
 
 - **Automatic configuration, when adding an OVHcloud domain name:** it may take a few hours after the modification before it is correctly displayed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
-- **Manual configuration, when adding a non-OVHcloud domain name:** click on the red box to verify the changes you need to make. <br>_For a CNAME record_, please refer to our guide on [Creating a CNAME record to add an associated domain](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/). <br>_For an MX record_, please refer to our guide [Add an MX record to your domain name’s configuration](https://docs.ovh.com/ie/en/domains/web_hosting_configuring_mx_with_the_ovh_dns_zone/). <br>_For an SRV record_, you can edit your DNS zone using the information provided when you click on the red "SRV" box. We recommend to consult [our guide](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone) regarding these modifications. If you have just made the changes, they may take a few hours to be correctly displayed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+- **Manual configuration, when adding a non-OVHcloud domain name:** click on the red box to verify the changes you need to make. <br>_For a CNAME record_, please refer to our guide on [Creating a CNAME record to add an associated domain](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/). <br>_For an MX record_, please refer to our guide [Add an MX record to your domain name’s configuration](https://docs.ovh.com/gb/en/domains/web_hosting_configuring_mx_with_the_ovh_dns_zone/). <br>_For an SRV record_, you can edit your DNS zone using the information provided when you click on the red "SRV" box. We recommend to consult [our guide](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone) regarding these modifications. If you have just made the changes, they may take a few hours to be correctly displayed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
 ![emailpro](images/first_config_email_pro_configure_domain_update.png){.thumbnail}
 
@@ -117,9 +117,9 @@ Once the information is complete, click on the `Next`{.action} button, check the
 
 ### Step 5: Use your email addresses
 
-Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an online application (a *web app*), available [here](https://www.ovh.ie/mail/), and you will need to enter your email credentials.
+Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an online application (a *web app*), available [here](https://www.ovh.co.uk/mail/), and you will need to enter your email credentials.
 
-If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our [configuration guides](https://docs.ovh.com/ie/en/emails-pro/). If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
+If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our [configuration guides](https://docs.ovh.com/gb/en/emails-pro/). If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
 
 |Server type|Server name|Security type|Port|
 |---|---|---|---|

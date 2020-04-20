@@ -15,7 +15,7 @@ Lorsque vous créez une [instance Public Cloud](https://www.ovh.com/fr/public-cl
 
 > [!primary]
 >
-Veuillez noter que les clés SSH ne sont pas utilisées pour l'authentification sur les instances exécutant le système d'exploitation Windows. Pour les instances Windows, vous devrez toujours utiliser un nom d'utilisateur et un mot de passe.
+Veuillez noter que les clés SSH ne sont pas utilisées pour l'authentification sur les instances exécutant le système d'exploitation Windows. Pour celles-ci, vous devrez toujours utiliser un nom d'utilisateur et un mot de passe.
 >
 
 ## Prérequis
@@ -24,6 +24,11 @@ Veuillez noter que les clés SSH ne sont pas utilisées pour l'authentification 
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
+
+> [!primary]
+>
+Si vous souhaitez stocker une clé SSH dans l'espace client OVHcloud, nous vous recommandons d'utiliser le chiffrement RSA ou ECDSA. ED25519 n'est actuellement pas pris en charge.
+>
 
 ### Création d'une clé SSH sous Linux et Mac
 
@@ -42,7 +47,7 @@ Enter file in which to save the key (/home/user/.ssh/id_rsa):
 
 > [!warning]
 >
-> La partie privée de la clé devrait être gardée en sécurité et l'accès devrait être limité aux personnes autorisées à l'utiliser.
+> La partie privée de la clé doit être gardée en sécurité et son accès limité aux seules personnes autorisées à l'utiliser.
 > 
 
 Une fois que vous avez enregistré la clé, la ligne de commande affichera les éléments suivants :

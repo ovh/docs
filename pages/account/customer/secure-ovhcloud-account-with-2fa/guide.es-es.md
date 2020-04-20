@@ -5,7 +5,7 @@ excerpt: 'Cómo mejorar la seguridad de su cuenta de OVHcloud activando la doble
 section: Seguridad
 ---
 
-**Última actualización: 15/11/2019**
+**Última actualización: 16/04/2020**
 
 ## Objetivo
 
@@ -90,13 +90,13 @@ También puede utilizar uno de los códigos de seguridad que tiene a su disposic
 > - Códigos de seguridad válidos.
 > 
 
-Si desea eliminar un dispositivo, inicie sesión en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en su nombre en la esquina superior derecha (primer paso en la siguiente imagen) y, seguidamente, en `«Mi cuenta»`{.action} (segundo paso). 
+Si desea eliminar un dispositivo, inicie sesión en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en su nombre en la esquina superior derecha (primer paso en la siguiente imagen) y, seguidamente, en sus iniciales (segundo paso). 
 
-![2FA](images/2fadevicedeletion1.png){.thumbnail}
+![2FA](images/hub2FAb.png){.thumbnail}
 
 Haga clic en `«Seguridad»`{.action} (primer paso en la siguiente imagen) y, seguidamente, en el icono de 3 puntos `«...»`{.action} (segundo paso) a la derecha del dispositivo que va a eliminar. Por último, haga clic en `«Eliminar»`{.action} (tercer paso).
 
-![2FA](images/2fadevicedeletion2.png){.thumbnail}
+![2FA](images/hub2FAc.png){.thumbnail}
 
 
 ## Más información

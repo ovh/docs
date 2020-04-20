@@ -6,7 +6,7 @@ section: Sicurezza
 hidden: true
 ---
 
-**Ultimo aggiornamento: 15/11/2019**
+**Ultimo aggiornamento: 15/04/2020**
 
 ## Obiettivo
 
@@ -24,9 +24,9 @@ La doppia autenticazione via SMS è uno dei metodi proposti da OVHcloud per rend
 
 ### Step 1: attiva la doppia autenticazione
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome in alto a destra (1) e seleziona `Il tuo account`{.action}.(2). Clicca su `Sicurezza`{.action} (3) e infine su`Attiva la doppia autenticazione`{.action} (4).
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome in alto a destra (1) e clicca sulle iniziali (2). Clicca su `Sicurezza`{.action} (3) e infine su`Attiva la doppia autenticazione`{.action} (4).
 
-![2FA sms](images/2fagen2.png){.thumbnail}
+![2FA sms](images/hub2FA.png){.thumbnail}
 
 
 ### Step 2: scegli il metodo SMS

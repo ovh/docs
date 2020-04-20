@@ -20,7 +20,12 @@ Lors de la création d’une instance, il n’est pas possible de configurer une
 * Posséder une [instance Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} dans votre compte OVH.
 * Avoir accès en ligne de commande à votre instance via SSH. 
 
-## Instructions
+## En pratique
+
+> [!primary]
+>
+Si vous souhaitez enregistrer une clé SSH dans l'espace client OVHcloud, nous vous recommandons d'utiliser le chiffrement RSA ou ECDSA. ED25519 n'est actuellement pas pris en charge.
+>
 
 ### Créer la clé SSH
 

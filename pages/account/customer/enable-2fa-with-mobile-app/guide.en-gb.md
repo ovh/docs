@@ -6,7 +6,7 @@ section: Security
 hidden: true
 ---
 
-**Last updated 10th February 2020**
+**Last updated 16th April 2020**
 
 ## Objective
 
@@ -33,9 +33,9 @@ Two-factor authentication authentication with a one-time password (OTP) mobile a
 
 ### Step 1: Enable two-factor authentication.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click on your name in the top right-hand corner (first step on the image below), then `My account`{.action} (second step). Next, click `Security`{.action} (third step), and `Enable two-factor authentication`{.action} (fourth step).
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click on your name in the top right-hand corner (first step on the image below), then click your initials (second step). Next, click `Security`{.action} (third step), and `Enable two-factor authentication`{.action} (fourth step).
 
-![2FA mobileapp](images/2fagen2.png){.thumbnail}
+![2FA mobileapp](images/hub2FA.png){.thumbnail}
 
 
 ### Step 2: Select the method on the mobile application.

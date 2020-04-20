@@ -1,27 +1,27 @@
 ---
-title: 'Gestionar los pedidos en OVH'
+title: 'Gestionar los pedidos en OVHcloud'
 slug: gestionar-los-pedidos-en-ovh
-excerpt: 'Cómo gestionar los pedidos en OVH'
+excerpt: 'Cómo gestionar los pedidos en OVHcloud'
 section: 'Pedidos, facturas y servicios'
 ---
 
-**Última actualización: 08/11/2018**
+**Última actualización: 16/04/2020**
 
 ## Objetivo
 
-En el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} puede realizar un seguimiento de los pedidos para conocer en qué estado se encuentran.
+En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} puede realizar un seguimiento de los pedidos para conocer en qué estado se encuentran.
 
 **Esta guía explica los diferentes estados por los que pasa una orden de pedido y le ayuda a interpretarla.**
 
 > [!primary]
 >
-> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicio en cuestión, es posible que algunos apartados de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVH aplicables, que encontrará en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Mis servicios`{.action}. En la página de administración de sus servicios, haga clic en `Mis contratos`{.action} en la columna izquierda.
+> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicio en cuestión, es posible que algunos apartados de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud aplicables, que encontrará en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}. En la página de administración de sus servicios, haga clic en `Contratos`{.action}.
 >
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Haber realizado al menos un pedido en OVH.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Haber realizado al menos un pedido en OVHcloud.
 
 
 ##  Procedimiento
@@ -45,11 +45,11 @@ En cualquier momento puede ver las órdenes de pedido desde el área de cliente 
 
 ### Acceder a las órdenes de pedido desde el área de cliente de OVH
 
-Para gestionar sus pedidos, haga clic en su nombre en la esquina superior derecha del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} y seleccione `Mis pedidos`{.action}.
+Para gestionar sus pedidos, haga clic en su `Panel de control` en la esquina superior izquierda del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y seleccione `Ver mis pedidos`{.action}.
 
-![Área de cliente](images/customer_panel_order.png){.thumbnail}
+![Área de cliente](images/huborders.png){.thumbnail}
 
-Se mostrarán todos los pedidos realizados con su cuenta de OVH que no hayan expirado.
+Se mostrarán todos los pedidos realizados con su cuenta de OVHcloud que no hayan expirado.
 
 ![Mis pedidos](images/order_recap.png){.thumbnail} 
 
@@ -81,7 +81,7 @@ La cláusula 14.1 de nuestras [Condiciones Generales del Servicio](https://www.o
 
 Encontrará más información sobre cómo ejercer dicho derecho en los siguientes párrafos de dichas Condiciones.
 
-Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, [acceda a las órdenes de pedido](https://docs.ovh.com/es/billing/gestionar-los-pedidos-en-ovh/#acceder-a-las-ordenes-de-pedido-desde-el-area-de-cliente-de-ovh){.external}, haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Cancelar el pedido`{.action}.
+Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, [acceda a las órdenes de pedido](https://docs.ovh.com/es/billing/gestionar-los-pedidos-en-ovh/#acceder-a-las-ordenes-de-pedido-desde-el-area-de-cliente-de-ovh){.external}, haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Cancelar el pedido`{.action}.
 
 ![Cancelar un pedido](images/cancel_order.png){.thumbnail}
 
@@ -92,10 +92,10 @@ Por último, marque la casilla `Sí, quiero cancelar el pedido`{.action} y confi
 
 > [!primary]
 >
-> OVH le reembolsará la cantidad proporcional a los días de servicio no consumidos en el plazo de treinta días naturales contados a partir de la fecha de comunicación del ejercicio del derecho de desistimiento.
+> OVHcloud le reembolsará la cantidad proporcional a los días de servicio no consumidos en el plazo de treinta días naturales contados a partir de la fecha de comunicación del ejercicio del derecho de desistimiento.
 >
 
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

@@ -12,17 +12,25 @@ section: 'Base de connaissances'
 
 Le protocole SSH permet d’accéder à un serveur et de communiquer avec lui de manière authentifiée et cryptée.
 
-Deux méthodes existent pour ajouter une clé SSH à partir de l’interface Public Cloud :
-
-- La première, plus directe, consiste à ajouter la clé au moment de la création d’une instance.
-- La seconde consiste à ajouter une clé via le gestionnaire de clés SSH.
-
+**Découvrez comment utiliser les clés SSH avec l'espace client OVHcloud.**
 
 ## Prérequis
 
-- Une [clé SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/){.ref}
+- Avoir créé un project [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre espace client.
+- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Avoir une [clé SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/){.ref}
 
 ## En pratique
+
+> [!primary]
+>
+Si vous souhaitez enregistrer une clé SSH dans l'espace client OVHcloud, nous vous recommandons d'utiliser le chiffrement RSA ou ECDSA. ED25519 n'est actuellement pas pris en charge.
+>
+
+Deux méthodes existent pour ajouter une clé SSH à partir de l’interface Public Cloud :
+
+- La première, plus directe, consiste à ajouter la clé au moment de la création d’une instance.
+- La seconde consiste à ajouter une clé via le gestionnaire de clés SSH.
 
 ### Création d’une instance
 Pour créer une instance cloud, accédez à l’interface client Public Cloud et cliquez sur `Créer une instance`{.action} dans le menu « Instances » situé dans la section `Compute`{.action} du menu de gauche.

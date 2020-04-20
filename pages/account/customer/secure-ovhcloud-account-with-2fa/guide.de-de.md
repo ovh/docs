@@ -5,7 +5,7 @@ excerpt: 'Erfahren Sie hier, wie Sie die Sicherheit Ihres Accounts bei OVHcloud 
 section: Sicherheit
 ---
 
-**Letzte Aktualisierung am 15.11.2019**
+**Letzte Aktualisierung am 16.04.2020**
 
 ## Ziel
 
@@ -91,13 +91,13 @@ Auch können Sie einen der Sicherheitscodes verwenden, die Ihnen zur Verfügung 
 > - gültige Sicherheitscodes.
 > 
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, um ein Peripheriegerät zu entfernen. Klicken Sie auf Ihren Namen oben rechts (Schritt 1 auf dem Bild unten), dann auf `Mein Account`{.action} (Schritt 2). 
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, um ein Peripheriegerät zu entfernen. Klicken Sie auf Ihren Namen oben rechts (Schritt 1 auf dem Bild unten), und klicken Sie dann auf Ihre Initialen (Schritt 2). 
 
-![2FA](images/2fadevicedeletion1.png){.thumbnail}
+![2FA](images/hub2FAb.png){.thumbnail}
 
 Klicken Sie danach auf `Sicherheit`{.action} (Schritt 1 auf dem Bild unten), dann auf `...`{.action} (Schritt 2) rechts vom Peripheriegerät, das Sie entfernen möchten, und schließlich auf `Löschen`{.action} (Schritt 3).
 
-![2FA](images/2fadevicedeletion2.png){.thumbnail}
+![2FA](images/hub2FAc.png){.thumbnail}
 
 
 ## Weiterführende Informationen
