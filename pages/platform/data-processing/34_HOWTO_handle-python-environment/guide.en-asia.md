@@ -23,7 +23,7 @@ To read an introduction about the Data Processing service you can visit [Data Pr
 
 OVHcloud Data processing is using Conda in order to manage packages and their dependencies. If you haven't installed Conda yet please do.
 
-With Conda, you can create, export, list, remove, and update environments that have different versions of Python and/or packages installed in them. OVHcloud Data Processing use this environment to make sure your Python job has everything necessary to run smoothly. If you want to learn more about Conda have a look at [there documentation](https://docs.conda.io/en/latest/).
+With Conda, you can create, export, list, remove, and update environments that have different versions of Python and/or packages installed in them. OVHcloud Data Processing uses this environment to make sure your Python job has everything necessary to run smoothly. If you want to learn more about Conda, have a look at [their documentation](https://docs.conda.io/en/latest/).
 
 Once installed, Conda will automatically create a first environment. You can then start installing the needed packages. To do so, use the install command:
 ```shell-session
@@ -38,7 +38,7 @@ Now that you have an environment that suits your code, it's time to export it! T
 $ conda env export --from-history -f environment.yml
 ```
 
-It's going to generate a portable environment file. You will need this file to run your code on OVHcloud Data Processing. To learn more about environment file have a look [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment).
+It's going to generate a portable environment file. You will need this file to run your code on OVHcloud Data Processing. To learn more about environment file, have a look [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment).
 
 You can now move on to the next step and [submit a Python job](../submit-python).
 
