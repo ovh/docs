@@ -15,13 +15,13 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- You must have an [Exchange](https://www.ovh.ie/emails/){.external} solution.
+- You must have an [Exchange](https://www.ovh.co.uk/emails/){.external} solution.
 - You must have Microsoft Outlook installed on your Mac.
 - You need to have the required credentials for the email address you would like to configure.
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Windows? Read our guide: [Configuring your Exchange account in Outlook 2016 for Windows](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/configuration-outlook-2016/){.external}.
+> Are you using Outlook 2016 for Windows? Read our guide: [Configuring your Exchange account in Outlook 2016 for Windows](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/configuration-outlook-2016/){.external}.
 >
 
 ## Instructions
@@ -56,12 +56,12 @@ To check that the account has been properly configured, you can send a test emai
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH offers a web application that includes various [collaborative features](https://www.ovh.ie/emails/){.external}, which can be accessed at <https://www.ovh.ie/mail/>. You can log in using your email credentials.
+OVH offers a web application that includes various [collaborative features](https://www.ovh.co.uk/emails/){.external}, which can be accessed at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials.
 
 ## Go further
 
-[Configuring an email address included in an MX Plan package or in a web hosting solution in Outlook 2016 for Mac](https://docs.ovh.com/ie/en/emails/configuration-outlook-2016-mac/){.external}.
+[Configuring an email address included in an MX Plan package or in a web hosting solution in Outlook 2016 for Mac](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016-mac/){.external}.
 
-[Configuring your Email Pro account on Outlook 2016 for Mac](https://docs.ovh.com/ie/en/emails-pro/configuration-outlook-2016-mac/){.external}.
+[Configuring your Email Pro account on Outlook 2016 for Mac](https://docs.ovh.com/gb/en/emails-pro/configuration-outlook-2016-mac/){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.

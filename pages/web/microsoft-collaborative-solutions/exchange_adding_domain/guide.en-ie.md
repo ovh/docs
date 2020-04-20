@@ -5,7 +5,7 @@ excerpt: Find out how to add a domain name to your Exchange service
 section: Getting started
 ---
 
-**Last updated 18th January 2018**
+**Last updated 19th January 2018**
 
 ## Objective
 
@@ -15,7 +15,7 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 ## Requirements
 
-- You must have an [Exchange solution](https://www.ovh.ie/emails/){.external}.
+- You must have an [Exchange solution](https://www.ovh.co.uk/emails/){.external}.
 - You must have one or several domain names.
 - You must have the right to modify your domain name’s configuration (via its DNS zone).
 - You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
@@ -39,7 +39,7 @@ To add a domain name, click on the `Associated domains`{.action} tab. The table 
 
 > [!warning]
 >
-> In the directory, all of the addresses created on your Exchange service can view all other addresses associated with it, including those that have different domain names. To stop different domain names from being displayed this way, you will need to order a new [Exchange solution](https://www.ovh.ie/emails/){.external} for the domain name(s) concerned.
+> In the directory, all of the addresses created on your Exchange service can view all other addresses associated with it, including those that have different domain names. To stop different domain names from being displayed this way, you will need to order a new [Exchange solution](https://www.ovh.co.uk/emails/){.external} for the domain name(s) concerned.
 >
 
 ![Exchange](images/add_domain_exchange_step1.png){.thumbnail}
@@ -88,7 +88,7 @@ Once the domain name has been added as an associated domain, make sure that its 
 
 - **If you chose automatic configuration when adding the domain**: it can take a few minutes to appear on the OVH Control Panel.
 
-- **If you have entered a non-OVH domain name**: click on the red box to view the modifications that you must make. If this domain name does not use OVH configuration (its DNS servers), you must carry out the modifications in the interface you use to manage your domain name’s configuration. If you need to modify the CNAME record, you can find out more by referring to this documentation: [Creating a CNAME record for adding an associated domain](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/){.external}.
+- **If you have entered a non-OVH domain name**: click on the red box to view the modifications that you must make. If this domain name does not use OVH configuration (its DNS servers), you must carry out the modifications in the interface you use to manage your domain name’s configuration. If you need to modify the CNAME record, you can find out more by referring to this documentation: [Creating a CNAME record for adding an associated domain](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/){.external}.
 
 > [!primary]
 >
@@ -105,12 +105,12 @@ Now that you have added the domain names to your Exchange service, you can confi
 
 As a reminder, all of the addresses created on your Exchange service can view all other associated addresses, including those that have different domain names.
 
-Once you have finished configuring your accounts, you can now start using them. To do this, OVH offers the *webmail* **Outlook Web Application** (OWA) which you can access via the following link: [https://www.ovh.ie/mail/](https://www.ovh.ie/mail/){.external}. To optimise the way you use your Exchange email address on an email client, ensure that it is compatible with the service. If you would like to configure your email address on an email client, a device such as a smartphone or tablet, or if you would like assistance regarding Exchange features, please refer to the documentation accessible via this portal: [https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/){.external}.
+Once you have finished configuring your accounts, you can now start using them. To do this, OVH offers the *webmail* **Outlook Web Application** (OWA) which you can access via the following link: [https://www.ovh.co.uk/mail/](https://www.ovh.co.uk/mail/){.external}. To optimise the way you use your Exchange email address on an email client, ensure that it is compatible with the service. If you would like to configure your email address on an email client, a device such as a smartphone or tablet, or if you would like assistance regarding Exchange features, please refer to the documentation accessible via this portal: [https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/){.external}.
 
-You can get Outlook licences in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and Office 365 licences on the following page: [https://www.ovh.ie/office-365/](https://www.ovh.ie/office-365/){.external}. We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
+You can get Outlook licences in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and Office 365 licences on the following page: [https://www.ovh.co.uk/office-365/](https://www.ovh.co.uk/office-365/){.external}. We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
 
 ## Go further
 
-[Creating a CNAME record for adding an associated domain](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/){.external}.
+[Creating a CNAME record for adding an associated domain](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/){.external}.
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

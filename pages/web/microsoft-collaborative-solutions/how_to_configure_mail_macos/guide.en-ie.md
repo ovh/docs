@@ -5,7 +5,7 @@ excerpt: Find out how to configure your Exchange email account on the Mail app, 
 section: Email Clients
 ---
 
-**Last updated 22nd February 2018**
+**Last updated 20th February 2018**
 
 ## Objective
 
@@ -16,7 +16,7 @@ You can configure Exchange accounts on a range of email clients, provided they a
 
 ## Requirements
 
-- You must have an [Exchange](https://www.ovh.ie/emails/){.external} solution.
+- You must have an [Exchange](https://www.ovh.co.uk/emails/){.external} solution.
 - You need to have the Mail app installed on your device.
 - You need to have the appropriate credentials for the email address you would like to configure.
 
@@ -75,12 +75,12 @@ To find the server details you need, log in to your [OVH Control Panel](https://
 
 Once you have configured your email address, you can start using it to send and receive emails straight away!
 
-OVH also offers a web application that includes various [collaborative features](https://www.ovh.ie/emails/){.external}. You can access it here, using your email credentials: <https://www.ovh.ie/mail/>.
+OVH also offers a web application that includes various [collaborative features](https://www.ovh.co.uk/emails/){.external}. You can access it here, using your email credentials: <https://www.ovh.co.uk/mail/>.
 
 ## Go further
 
-[Configuring an email address on the macOS Mail app](https://docs.ovh.com/ie/en/emails/guide-configuring-mail-on-macos/){.external}.
+[Configuring an email address on the macOS Mail app](https://docs.ovh.com/gb/en/emails/guide-configuring-mail-on-macos/){.external}.
 
-[Configuring your Email Pro account on the macOS Mail app](https://docs.ovh.com/ie/en/emails-pro/configuring-email-pro-macos-mail/){.external}.
+[Configuring your Email Pro account on the macOS Mail app](https://docs.ovh.com/gb/en/emails-pro/configuring-email-pro-macos-mail/){.external}.
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

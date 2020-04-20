@@ -1,11 +1,11 @@
 ---
 title: Configuring an Exchange account on iPhone and iPad
 excerpt: Find out how to configure an Exchange account on iPhone and iPad, via the Mail app
-slug: exchange_2013_automatic_configuration_on_ios_iphone_-_ipad
+slug: exchange_2013_how_to_configure_on_ios_iphoneipad
 section: Email Clients
 ---
 
-**Last updated 22nd February 2018**
+**Last updated 21st February 2018**
 
 ## Objective
 
@@ -15,7 +15,7 @@ You can configure Exchange accounts on iPad or iPhone devices using the Mail app
 
 ## Requirements
 
-- You must have an [Exchange](https://www.ovh.ie/emails/){.external} solution.
+- You must have an [Exchange](https://www.ovh.co.uk/emails/){.external} solution.
 - You need to have the Mail app installed on your device.
 - You need to have the appropriate credentials for the email address you would like to configure.
 
@@ -78,12 +78,12 @@ To check that the account has been correctly configured, you can send a test ema
 
 Once you have configured your email address, you can start using it to send and receive emails straight away!
 
-OVH also offers a web application, with further [collaborative features](https://www.ovh.ie/emails/){.external}. Follow this link, and log in with your email credentials: <https://www.ovh.ie/mail/>.
+OVH also offers a web application, with further [collaborative features](https://www.ovh.co.uk/emails/){.external}. Follow this link, and log in with your email credentials: <https://www.ovh.co.uk/mail/>.
 
 ## Go further
 
-[Configuring an email address on iPhone and iPad](https://docs.ovh.com/ie/en/emails/email_hosting_iphone_ios_91_configuration/){.external}.
+[Configuring an email address on iPhone and iPad](https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/){.external}.
 
-[Configuring an Email Pro account on iPhone and iPad](https://docs.ovh.com/ie/en/emails-pro/iphone-configuration/){.external}.
+[Configuring an Email Pro account on iPhone and iPad](https://docs.ovh.com/gb/en/emails-pro/iphone-configuration/){.external}.
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

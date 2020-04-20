@@ -1,12 +1,12 @@
 ---
 title: Configurer son compte Exchange sur Android via l'application Gmail
-slug: exchange-configuration-android
+slug: exchange-configuration-sous-android
 excerpt: Apprenez à configurer un compte Exchange sur Android, via l'application Gmail
 section: Configuration Exchange sur smartphone
 order: 2
 ---
 
-**Dernière mise à jour le 2018/10/05**
+**Dernière mise à jour le 17/05/2018**
 
 ## Objectif
 
@@ -14,15 +14,25 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 **Apprenez à configurer un compte Exchange sur Android via l'application Gmail.**
 
+
+> [!warning]
+>
+> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> 
+
 ## Prérequis
 
-- Disposer d'une offre [Exchange](https://www.ovh.com/ca/fr/emails/hosted-exchange/){.external}.
+- Disposer d'une offre [Exchange](https://www.ovh.com/fr/emails/){.external}.
 - Disposer de l'application Gmail installée sur votre appareil. Vous pouvez installer cette dernière depuis Google Play Store.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
 > [!primary]
 >
 > Cette documentation a été réalisée depuis un appareil Nexus 6 utilisant la version 7.1.1 d'Android. Pour une question d'uniformisation, nous utilisons l'application Gmail pouvant être installée depuis le Play Store. Si vous souhaitez utiliser une autre application, la marche à suivre sera alors différente.
+>
+> Vous utilisez une version antérieure d'Android ? Consultez notre documentation : [Configurer son compte Exchange sur Android 5 Lollipop](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-sous-android-5-lollipop/){.external}.
 >
 
 ## En pratique
@@ -48,7 +58,7 @@ Renseignez à présent les paramètres du serveur entrant. Certains champs peuve
 |Domaine/Nom d'utilisateur|Renseignez l'adresse e-mail complète.|  
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
 |Certificat client|Ne sélectionnez rien.|
-|Serveur|Indiquez le serveur sur lequel est hébergé votre service Exchange. Vous pouvez le retrouver depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} dans l'onglet `Informations générales`{.action} du service Exchange concerné, puis dans le cadre `Connexion`{.action}.|
+|Serveur|Indiquez le serveur sur lequel est hébergé votre service Exchange. Vous pouvez le retrouver depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans l'onglet `Informations générales`{.action} du service Exchange concerné, puis dans le cadre `Connexion`{.action}.|
 |Port|Renseignez le port  443 .|  
 |Type de sécurité|Choisissez « SSL/TLS ».|
 
@@ -66,8 +76,12 @@ Vous pouvez effectuer un test d'envoi de message pour vérifier que le compte es
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVH propose également une application web disposant de fonctions collaboratives accessible à l’adresse <https://ex.mail.ovh.ca/>. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
+OVH propose également une application web disposant de [fonctions collaboratives](https://www.ovh.com/fr/emails/){.external} accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Android via l'application Gmail](https://docs.ovh.com/fr/emails/configuration-android-6/){.external}.
+
+[Configurer son compte E-mail Pro sur Android via l'application Gmail](https://docs.ovh.com/fr/emails-pro/configuration-android/){.external}.
+
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
