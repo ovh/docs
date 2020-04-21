@@ -175,7 +175,7 @@ Information sur les librairies disponibles :
 |PDO|activé|
 |Zip - Gzip|activé|
 
-Il vous est possible de retrouver différentes informations sur votre cluster via ce lien : [http://cluster015.ovh.net/infos/](http://cluster015.ovh.net/infos/){.external}
+Il vous est possible de retrouver différentes informations sur votre cluster via ce lien : [http://cluster015.hosting.ovh.net/infos/](http://cluster015.hosting.ovh.net/infos/){.external}
 
 Remplacez le cluster indiqué dans l'URL par le votre, il vous est possible de retrouver cette information dans le manager : `Mutualisé`{.action} - `Hébergement`{.action} - `Synthèse`{.action}.
 
