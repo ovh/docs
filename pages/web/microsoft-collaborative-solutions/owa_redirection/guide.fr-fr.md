@@ -1,16 +1,16 @@
 ---
-title: Mettre en place une redirection depuis l'interface OWA
+title: 'Mettre en place une redirection depuis l''interface OWA'
 slug: exchange-2016-mise-en-place-dune-redirection-e-mail-depuis-owa
 legacy_guide_number: 1920
-excerpt: Retrouvez ici la procedure de mise en place d’une redirection e-mail depuis OWA
-section: Utilisation d'Outlook Web Application (OWA)
+excerpt: 'Retrouvez ici la procedure de mise en place d’une redirection e-mail depuis OWA'
+section: 'Utilisation d''Outlook Web Application (OWA)'
 order: 3
 ---
 
 ## Mise en place sur Outlook Web Application 2016 
 
 ### Mise en place Étape 1
-Voici comment ajouter votre redirection e-mail depuis l'interface du [Webmail Exchange](https://ex.mail.ovh.net/owa/){.external}.
+Voici comment ajouter votre redirection e-mail depuis l'interface du [Webmail Exchange](https://www.ovh.com/fr/mail/){.external}.
 
 Identifiez-vous avec votre adresse e-mail entière et le mot de passe de votre compte e-mail.
 
