@@ -11,14 +11,14 @@ order: 2
 
 ## Objective
 
+This option offers a convenient way to frequently have complete VPS backups available from your OVHcloud Control Panel without having to connect to the server to create and restore them manually. Another advantage is that you can also choose to mount a backup and then access it via SSH.
+
+**This guide explains the usage of auto-backups for your OVHcloud VPS.**
+
 > [!primary]
 >
 Before applying backup options, we recommend to consult the [product pages and FAQ](https://www.ovhcloud.com/en-ie/vps/options/) for pricing comparisons and further details.
 >
-
-This option offers a convenient way to frequently have complete VPS backups available from your OVHcloud Control Panel without having to connect to the server to create and restore them manually. Another advantage is that you can also choose to mount a backup and then access it via SSH.
-
-**This guide explains the usage of auto-backups for your OVHcloud VPS.**
 
 ## Requirements
 
@@ -43,7 +43,7 @@ After selecting your VPS, click on the `Automated backup`{.action} tab in the ho
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
 
-Unless there is a good reason not to, make sure to tick the option "Modify the root password on restoration" in the pop-up window to preserve your current root password and click on `Confirm`{.action}. You will receive an email as soon as the task is complete. The restoration might take a while, depending on the disk space used.
+If you recently changed your root password, make sure to tick the option "Modify the root password on restoration" in the popup window to preserve your current root password and click on `Confirm`{.action}. You will receive an email as soon as the task is complete. The restoration might take a while, depending on the disk space used.
 
 > [!alert]
 >
