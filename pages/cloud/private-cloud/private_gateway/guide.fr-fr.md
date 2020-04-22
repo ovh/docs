@@ -6,13 +6,13 @@ section: Fonctionnalités OVH
 hidden: true
 ---
 
-**Dernière mise à jour le 17/04/2020**
+**Dernière mise à jour le 22/04/2020**
 
 ## Objectif
 
 L'interface vSphere est accessible par défaut via internet. Pour les infrastructures qui peuvent être gérées via le réseau privé vRack, il est possible de basculer l'accès vSphere sur le vRack au moyen de la private gateway.
 
-**Ce guide vous explique comment activer la private gateway sur votre infrastructure Hosted Private Cloud via l'API OVH.**
+**Ce guide vous explique comment activer la private gateway sur votre infrastructure Hosted Private Cloud via l'API OVHCloud.**
 
 > [!warning]
 >
@@ -23,12 +23,10 @@ L'interface vSphere est accessible par défaut via internet. Pour les infrastruc
 
 * Posséder une offre [Hosted Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
 * Accéder à l’interface de gestion vSphere.
-* Être connecté aux [API OVH](https://api.ovh.com/console){.external}.
-* Avoir [créé ses identifiants pour l'API OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
+* Être connecté aux [API OVHCloud](https://api.ovh.com/console){.external}.
+* Avoir [créé ses identifiants pour l'API OVHCloud](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
 
 ## En pratique
-
-La suppression d’un serveur hôte se déroule en deux étapes : la mise en mode maintenance de cette ressource, puis la suppression de celle-ci.
 
 ### Architecture
 
@@ -37,8 +35,7 @@ La suppression d’un serveur hôte se déroule en deux étapes : la mise en mod
 
 > [!warning]
 >
-> Le certificat TLS reste le même (pcc-X-X-X-X-X.ovh.com). A
-> Afin d'éviter des messages d'erreurs au sujet de la correspondance IP et le certificat, ajouter 
+> Le certificat TLS reste le même (pcc-X-X-X-X-X.ovh.com).
 >
 
 ### Pré-requis
@@ -58,18 +55,13 @@ Avant de commencer, rassembler les informations nécessaires suivantes :
 A utiliser dans les différents appels d'API qui suivent.
 
 Lancer l'activation avec :
+
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/privateGateway/enable
 >
 
-L'appel entraîne la création d'une tache qui va déployer la machine virtuelle est faire la configuration réseau.
-
-
-> [!primary]
->
-> La suppression passera en erreur si le moindre répertoire ou fichier qui n’était pas présent initialement sur le stockage local du serveur hôte a été ajouté. Seuls les répertoires de base et les fichiers de vSwap ne bloquent pas cette opération.
-> 
+L'appel entraîne la création d'une tache qui va déployer la machine virtuelle et fait la configuration réseau.
 
 ### Désactiver la private gateway
 
@@ -84,6 +76,7 @@ Avant de commencer, rassembler les informations nécessaires suivantes :
 
 
 Lancer la désactivation avec :
+
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/privateGateway/disable
