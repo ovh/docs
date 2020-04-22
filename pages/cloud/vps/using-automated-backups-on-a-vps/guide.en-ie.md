@@ -1,7 +1,7 @@
 ---
-title: 'Using automatic backups on a VPS'
+title: 'Using automated backups on a VPS'
 slug: using-automated-backups-on-a-vps
-excerpt: 'Find out how to enable and use the Automated Backup option in the OVHcloud Control Panel'
+excerpt: 'Find out how to enable and use the automated backups option in the OVHcloud Control Panel'
 section: 'Backup options'
 order: 2
 ---
@@ -13,7 +13,7 @@ order: 2
 
 > [!primary]
 >
-Before applying backup options, we recommend to consult the [product pages and FAQ](https://www.ovhcloud.com/en-gb/vps/options/) for pricing comparisons and further details.
+Before applying backup options, we recommend to consult the [product pages and FAQ](https://www.ovhcloud.com/en-ie/vps/options/) for pricing comparisons and further details.
 >
 
 This option offers a convenient way to frequently have complete VPS backups available from your OVHcloud Control Panel without having to connect to the server to create and restore them manually. Another advantage is that you can also choose to mount a backup and then access it via SSH.
@@ -23,7 +23,7 @@ This option offers a convenient way to frequently have complete VPS backups avai
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-- an OVHcloud [VPS service](https://www.ovhcloud.com/en-gb/vps/) already set up
+- an OVHcloud [VPS service](https://www.ovhcloud.com/en-ie/vps/) already set up
 - administrative access (root) via SSH to your VPS (optional)
 
 ## Instructions
@@ -105,7 +105,7 @@ You can now switch to this folder and access your backup data.
 
 ## Go further
 
-[Using snapshots on a VPS](https://docs.ovh.com/gb/en/vps/using-snapshots-on-a-vps)
+[Using snapshots on a VPS](https://docs.ovh.com/ie/en/vps/using-snapshots-on-a-vps)
 
 
 Join our community of users on <https://community.ovh.com/en/>.
