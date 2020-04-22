@@ -4,7 +4,6 @@ excerpt: 'FAQ sur les VPS OVHcloud'
 slug: vps-faq
 section: 'Premiers pas'
 order: 1
-hidden: true
 ---
 
 ## FAQ VPS
@@ -70,3 +69,7 @@ La bande passante affichée sur la page de nos offres est garantie. Il s'agit du
 
 OVHcloud n'effectue pas de sauvegarde des données hébergées sur votre VPS. Il vous appartient donc de les réaliser par vos propres moyens.
 À cette fin, vous pouvez utiliser les options suivantes : la sauvegarde manuelle (Snapshot) ou la sauvegarde automatisée.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
