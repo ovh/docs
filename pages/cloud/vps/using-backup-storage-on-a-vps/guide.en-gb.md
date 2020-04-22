@@ -11,14 +11,14 @@ order: 1
 
 ## Objective
 
+Creating a snapshot is a fast and simple way to secure a functioning system before making changes that might have undesired or unforeseen consequences, for example testing a new configuration or software. It does not, however, constitute a complete system backup strategy.
+
+**This guide explains the usage of snapshots for your OVHcloud VPS.**
+
 > [!primary]
 >
 Before applying backup options, we recommend to consult the [product pages and FAQ](https://www.ovhcloud.com/en-gb/vps/options/) for pricing comparisons and further details.
 >
-
-Creating a snapshot is a fast and simple way to secure a functioning system before making changes that might have undesired or unforeseen consequences, for example testing a new configuration or software. It does not, however, constitute a complete system backup strategy.
-
-**This guide explains the usage of snapshots for your OVHcloud VPS.**
 
 ## Requirements
 
@@ -34,7 +34,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 From the `Home`{.action} tab, scroll down to the box labelled "Summary of options". Click on `...`{.action} next to the option "Snapshot" and in the context menu click on `Order`{.action}.
 
-![snapshotvps](images/snapshot_vps_step1.png){.thumbnail}
+![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
 In the next step, please take note of the pricing information, then click on `Order`{.action}. You will be guided through the order process and receive a confirmation email.
 
