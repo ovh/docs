@@ -1,21 +1,21 @@
 ---
-title: 'Redirigir un dominio gestionado por OVH'
+title: 'Redirigir un dominio gestionado por OVHcloud'
 slug: redireccion-dominio
-excerpt: 'Distintos tipos de redirecciones y cómo crear una redirección para un dominio gestionado por OVH'
+excerpt: 'Distintos tipos de redirecciones y cómo crear una redirección para un dominio gestionado por OVHcloud'
 section: General
 ---
 
-**Última actualización: 18/04/2018**
+**Última actualización: 05/05/2020**
 
 ## Objetivo
 
 La redirección de un dominio permite que este dirija al visitante hacia un nuevo destino. Existen distintos tipos de redirecciones que se adaptan a las diferentes necesidades de los usuarios.
 
-**Esta guía explica los distintos tipos de redirecciones y cómo crear una redirección para un dominio gestionado por OVH.**
+**Esta guía explica los distintos tipos de redirecciones y cómo crear una redirección para un dominio gestionado por OVHcloud.**
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://ovh.com/auth?action=gotomanager){.external}.
 - Estar conectado a su alojamiento web (si desea añadir un archivo .htaccess).
 
 ## Procedimiento
@@ -28,7 +28,7 @@ Existen muchos casos en los que puede ser útil redirigir un dominio, aunque lo 
 
 Hay varias maneras de redirigir un dominio:
 
-- **Desde el área de cliente de OVH**: Puede utilizar el asistente de configuración para realizar la redirección.
+- **Desde el área de cliente de OVHcloud**: Puede utilizar el asistente de configuración para realizar la redirección.
 
 - **Mediante un archivo (es necesario tener conocimientos de programación)**: Usted mismo puede crear la redirección en un archivo (normalmente, un archivo **.htaccess**).
 
@@ -36,7 +36,7 @@ Tenga en cuenta que la redirección puede afectar al posicionamiento de su sitio
 
 ### Redirigir un dominio desde el área de cliente
 
-Una vez conectado al [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda (**1** en la imagen de abajo), seleccione el dominio correspondiente y abra la pestaña `Redireccciones`{.action} (**2** en la imagen de abajo).
+Una vez conectado al [área de cliente de OVHcloud](https://ovh.com/auth?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda (**1** en la imagen de abajo), seleccione el dominio correspondiente y abra la pestaña `Redireccciones`{.action} (**2** en la imagen de abajo).
 
 Se mostrará una tabla con las redirecciones activas para el dominio.
 
@@ -57,9 +57,9 @@ Redirige un dominio hacia otro dominio. Es la mejor opción si ha cambiado el no
 **Redirección hacia un servidor de OVH o externo**
 
 Modifica la configuración DNS de un dominio sustituyendo el destino (registro A, AAAA o CNAME). Es la mejor opción si su sitio web ya no está alojado en el mismo lugar, pero el dominio sigue siendo el mismo.
-Si su dominio utiliza la configuración de OVH, también puede realizar esta acción directamente desde el área de cliente (ver la guía [Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}).
+Si su dominio utiliza la configuración de OVHcloud, también puede realizar esta acción directamente desde el área de cliente (ver la guía [Editar una zona DNS de OVHcloud](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}).
 
-Esta guía solo explica cómo realizar una redirección **hacia una dirección web**. Si necesita más información sobre cómo realizar una redirección hacia un servidor de OVH o externo, puede ponerse en contacto con su proveedor de DNS para conocer los registros DNS que debe configurar antes de continuar.
+Esta guía solo explica cómo realizar una redirección **hacia una dirección web**. Si necesita más información sobre cómo realizar una redirección hacia un servidor de OVHcloud o externo, puede ponerse en contacto con su proveedor de DNS para conocer los registros DNS que debe configurar antes de continuar.
 
 ![Segunda etapa de creación de una redirección](images/adding_redirection_2.png){.thumbnail}
 
@@ -163,6 +163,6 @@ Redirect temp / http://otro_sitio_web.tld/sitio/
 
 ## Más información
 
-[Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}
+[Editar una zona DNS de OVHcloud](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
