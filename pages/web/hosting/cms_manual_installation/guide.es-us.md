@@ -16,7 +16,7 @@ Basado en la tecnología PHP, WordPress es una aplicación dotada de potentes he
 
 - [Módulo WordPress](http://www.ovh.es/items/modulos/blog/word_press.xml)
 
-El soporte de OVH no está facultado para responder a solicitudes relativas a la configuración de WordPress, pero puede consultar nuestra guía para más información: 
+El soporte de OVHcloud no está facultado para responder a solicitudes relativas a la configuración de WordPress, pero puede consultar nuestra guía para más información: 
 - []({legacy}2053).
 
 
@@ -39,7 +39,7 @@ La comunidad hispanohablante de Joomla! es muy numerosa y proporciona ayuda y co
 
 - [Módulo Joomla!](http://www.ovh.es/items/modulos/cms/joomla.xml)
 
-El soporte de OVH no está facultado para responder a solicitudes relativas a la configuración de Joomla!, pero puede consultar nuestra guía para más información: 
+El soporte de OVHcloud no está facultado para responder a solicitudes relativas a la configuración de Joomla!, pero puede consultar nuestra guía para más información: 
 - []({legacy}2053).
 
 
@@ -64,7 +64,7 @@ Desde 2005, la aplicación no ha dejado de mejorar. En 2013, la versión 1.5.4.1
 
 - [Módulo PrestaShop](http://www.ovh.es/items/modulos/ecomercio/prestashop-2.xml)
 
-El soporte de OVH no está facultado para responder a solicitudes relativas a la configuración de PrestaShop, pero puede consultar nuestra guía para más información: 
+El soporte de OVHcloud no está facultado para responder a solicitudes relativas a la configuración de PrestaShop, pero puede consultar nuestra guía para más información: 
 - []({legacy}2053).
 
 
@@ -75,7 +75,7 @@ También puede encontrar más información en la guía de instalación manual de
 - []({legacy}1979)
 
 
-Si todavía no dispone de un alojamiento con OVH, puede contratar un alojamiento compartido Performance, que incluye la instalación de PrestaShop en el siguiente enlace: 
+Si todavía no dispone de un alojamiento con OVHcloud, puede contratar un alojamiento compartido Performance, que incluye la instalación de PrestaShop en el siguiente enlace: 
 
 [https://www.ovh.es/soluciones/prestashop/](https://www.ovh.es/soluciones/prestashop/)
 
@@ -87,7 +87,7 @@ Calificado por el desarrollador que lo creó como un «ensamblador rápido de si
 
 Información: La versión 8 de Drupal todavía no es compatible con los alojamientos compartidos. 
 
-El soporte de OVH no está facultado para responder a solicitudes relativas a la configuración de Drupal, pero puede consultar nuestra guía para más información: 
+El soporte de OVHcloud no está facultado para responder a solicitudes relativas a la configuración de Drupal, pero puede consultar nuestra guía para más información: 
 -[]({legacy}2053).
 
 Si necesita ayuda, consulte alguno de los foros dedicados a la solución [Drupal](https://www.drupal.org/).
