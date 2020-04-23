@@ -1,23 +1,23 @@
 ---
-title: 'Transferir un dominio de OVH a otro agente registrador'
+title: 'Transferir un dominio de OVHcloud a otro agente registrador'
 slug: transferencia_saliente_de_un_dominio_generico_o_geografico
-excerpt: 'Cómo transferir un dominio de OVH a otro agente registrador'
+excerpt: 'Cómo transferir un dominio de OVHcloud a otro agente registrador'
 section: 'Operaciones en los dominios'
 order: 3
 ---
 
-**Última actualización: 20/06/2018**
+**Última actualización: 05/05/2020**
 
 ## Objetivo
 
-La transferencia de un dominio permite cambiar el agente registrador que lo gestiona. Es posible transferir un dominio de OVH a otro agente registrador.
+La transferencia de un dominio permite cambiar el agente registrador que lo gestiona. Es posible transferir un dominio de OVHcloud a otro agente registrador.
 
-**Esta guía explica cómo transferir un dominio de OVH al agente registrador que usted elija.**
+**Esta guía explica cómo transferir un dominio de OVHcloud al agente registrador que usted elija.**
 
 ## Requisitos
-- Tener un dominio registrado en OVH.
+- Tener un dominio registrado en OVHcloud.
 - Estar facultado para solicitar la transferencia del dominio. El propietario y las personas que lo administren deben haber sido informados.
-- Tener acceso a la gestión del dominio desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - El dominio debe haber sido creado más de 61 días antes, y no debe haber sido transferido ni haber cambiado de propietario durante ese período.
 
 > [!primary]
@@ -29,7 +29,7 @@ La transferencia de un dominio permite cambiar el agente registrador que lo gest
 
 ### 1. Desactivar la protección contra la transferencia del dominio
 
-Para desactivar la protección de OVH contra la transferencia del dominio, también desde el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio. En la pestaña `Información general`{.action}, desmarque la opción `Protección contra la transferencia`{.action} y haga clic en `Aceptar`{.action}.
+Para desactivar la protección de OVHcloud contra la transferencia del dominio, también desde el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio. En la pestaña `Información general`{.action}, desmarque la opción `Protección contra la transferencia`{.action} y haga clic en `Aceptar`{.action}.
 
 > [!primary]
 >
@@ -54,4 +54,4 @@ Si desea información sobre los plazos de transferencia, consulte con el nuevo a
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
