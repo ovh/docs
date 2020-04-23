@@ -1,6 +1,6 @@
 ---
-title: 'Editar una zona DNS de OVH'
-excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVH'
+title: 'Editar una zona DNS de OVHcloud'
+excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVHcloud'
 slug: web_hosting_como_editar_mi_zona_dns
 section: 'DNS (servidor y zona)'
 ---
@@ -11,18 +11,18 @@ section: 'DNS (servidor y zona)'
 
 La zona DNS (Domain Name System) de un dominio es el archivo de configuración en el que se almacena su información técnica en forma de registros. Convencionalmente, estos registros sirven de enlace entre el dominio y el servidor o servidores en los que están alojados el sitio web y las cuentas de correo electrónico.
 
-**Esta guía explica cómo editar una zona DNS desde el área de cliente de OVH.**
+**Esta guía explica cómo editar una zona DNS desde el área de cliente de OVHcloud.**
 
 ## Requisitos
 
-- Tener acceso a la gestión del dominio desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Utilizar la configuración de OVH (es decir, sus servidores DNS) para el dominio en cuestión. 
+- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Utilizar la configuración de OVHcloud (es decir, sus servidores DNS) para el dominio en cuestión. 
 
 > [!warning]
 >
-> - Si el dominio no utiliza los servidores DNS de OVH, deberá realizar los cambios necesarios desde el panel que le ofrezca el proveedor que gestione la configuración de su dominio.
-> - Si el dominio está registrado con OVH, compruebe que utiliza nuestra configuración. Para ello, en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleccione el dominio en la columna izquierda y abra la pestaña `Servidores DNS`{.action}.
+> - Si el dominio no utiliza los servidores DNS de OVHcloud, deberá realizar los cambios necesarios desde el panel que le ofrezca el proveedor que gestione la configuración de su dominio.
+> - Si el dominio está registrado con OVH, compruebe que utiliza nuestra configuración. Para ello, en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, seleccione el dominio en la columna izquierda y abra la pestaña `Servidores DNS`{.action}.
 >
 
 ## Procedimiento
@@ -39,14 +39,14 @@ Conocer los distintos tipos de registros le permitirá entender mejor los cambio
 |MX|Permite asociar un dominio a un servidor de correo indicando la dirección del servidor en el que está alojada la solución de correo. Es probable que el proveedor disponga de varios servidores de correo, en cuyo caso será necesario crear varios registros MX.|
 |SRV|Indica la dirección del servidor que gestiona un servicio como, por ejemplo, la dirección de un servidor SIP o la de un servidor que permite que un cliente de correo se configure automáticamente mediante el *autodiscover*.|
 |TXT|Permite añadir el valor que desee (en formato de texto) a los parámetros DNS del dominio. Este registro suele utilizarse en procesos de verificación.|
-|SPF|Permite evitar posibles usurpaciones de identidad con las direcciones de correo electrónico que utilizan el dominio, por ejemplo, identificando el servidor de su proveedor de solución de correo electrónico como único origen de envío legítimo. Encontrará más información en nuestra guía sobre [cómo añadir un registro SPF a la configuración del dominio](https://docs.ovh.com/es/domains/web_hosting_el_registro_spf/){.external}.|
+|SPF|Permite evitar posibles usurpaciones de identidad con las direcciones de correo electrónico que utilizan el dominio, por ejemplo, identificando el servidor de su proveedor de solución de correo electrónico como único origen de envío legítimo. Encontrará más información en nuestra guía sobre [cómo añadir un registro SPF a la configuración del dominio](https://docs.ovh.com/us/es/domains/web_hosting_el_registro_spf/){.external}.|
 |CAA|Permite indicar las autoridades de certificación autorizadas a emitir certificados SSL para un dominio.|
 
 ### 1. Acceder a la gestión de la zona DNS del dominio
 
-Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
-Se mostrará una tabla con la configuración del dominio en OVH. Cada línea de la tabla contiene un registro DNS. Puede filtrar el contenido por tipo de registro o por dominio.
+Se mostrará una tabla con la configuración del dominio en OVHcloud. Cada línea de la tabla contiene un registro DNS. Puede filtrar el contenido por tipo de registro o por dominio.
 
 ![Zona DNS](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
 
@@ -97,9 +97,9 @@ También es posible modificar el TTL de un registro DNS concreto. Esta operació
 
 ## Más información
 
-[Información general sobre los servidores DNS](https://docs.ovh.com/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
+[Información general sobre los servidores DNS](https://docs.ovh.com/us/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
 
-[Añadir un registro SPF a la configuración del dominio](https://docs.ovh.com/es/domains/web_hosting_el_registro_spf/){.external}
+[Añadir un registro SPF a la configuración del dominio](https://docs.ovh.com/us/es/domains/web_hosting_el_registro_spf/){.external}
 
 [Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](https://www.ovh.es/dominios/servicio-dnssec.xml){.external}
 
