@@ -10,13 +10,13 @@ hidden: true
 
 ## Objectif
 
-L'interface vSphere est accessible par défaut via internet. Pour les infrastructures qui peuvent être gérées via le réseau privé vRack, il est possible de basculer l'accès vSphere sur le vRack au moyen de la private gateway.
+L'interface vSphere est accessible par défaut via Internet. Pour les infrastructures qui peuvent être gérées via le réseau privé vRack, il est possible de basculer l'accès vSphere sur le vRack au moyen de la private gateway.
 
 **Ce guide vous explique comment activer la private gateway sur votre infrastructure Hosted Private Cloud via l'API OVHCloud.**
 
 > [!warning]
 >
-> L'activation de la private gateway coupe l'accès depuis internet, il est donc important de s'assurer de pouvoir accéder au vRack.
+> L'activation de la private gateway coupe l'accès depuis Internet, il est donc important de s'assurer de pouvoir accéder au vRack.
 >
 
 ## Prérequis
@@ -30,7 +30,7 @@ L'interface vSphere est accessible par défaut via internet. Pour les infrastruc
 
 ### Architecture
 
-* La private gateway est une machine virtuelle (VM) qui sera déployée sur l'infrastructure et connecter au vRack.
+* La private gateway est une machine virtuelle (VM) qui sera déployée sur l'infrastructure et connectée au vRack.
 * La private gateway n'a pas de route, donc seul l'utilisateur du même sous-réseau peut atteindre la passerelle. La connexion à partir d'un autre réseau doit être source-natté.
 
 > [!warning]
@@ -38,7 +38,7 @@ L'interface vSphere est accessible par défaut via internet. Pour les infrastruc
 > Le certificat TLS reste le même (pcc-X-X-X-X-X.ovh.com).
 >
 
-### Pré-requis
+### Prérequis
 
 * Avoir créer un Portgroup sur le vRack pour connecter la private gateway. Il doit etre sous le datacenter prévu.
 * Avoir ajouté le réseau de la private gateway dans [les autorisations par IP source](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/).
@@ -61,7 +61,7 @@ Lancer l'activation avec :
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/privateGateway/enable
 >
 
-L'appel entraîne la création d'une tache qui va déployer la machine virtuelle et fait la configuration réseau.
+L'appel entraîne la création d'une tâche qui va déployer la machine virtuelle et fait la configuration réseau.
 
 ### Désactiver la private gateway
 
@@ -71,7 +71,7 @@ Avant de commencer, rassembler les informations nécessaires suivantes :
 
 > [!warning]
 >
-> La désactivation de la private gateway rétablit l'accès depuis internet, il est donc important de s'assurer d'avoir mis en place le filtrage IP voulu.
+> La désactivation de la private gateway rétablit l'accès depuis Internet, il est donc important de s'assurer d'avoir mis en place le filtrage IP voulu.
 >
 
 
