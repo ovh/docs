@@ -5,7 +5,7 @@ slug: web_hosting_como_editar_mi_zona_dns
 section: 'DNS (servidor y zona)'
 ---
 
-**Última actualización: 15/06/2018**
+**Última actualización: 05/05/2020**
 
 ## Objetivo
 
