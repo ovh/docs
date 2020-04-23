@@ -1,30 +1,30 @@
 ---
-title: 'Editing an OVH DNS zone'
+title: 'Editing an OVHcloud DNS zone'
 slug: web_hosting_how_to_edit_my_dns_zone
-excerpt: 'Find out how to edit an OVH DNS zone via your Control Panel'
+excerpt: 'Find out how to edit an OVHcloud DNS zone via your Control Panel'
 section: 'DNS and DNS zone'
 order: 3
 ---
 
-**Last updated 3rd April 2018**
+**Last updated 5th May 2020**
 
 ## Objective
 
 A Domain Name System (DNS) zone is a domain name’s config file. It is composed of technical information, otherwise called ‘records’. DNS zones are usually used to link your domain name to the server (or servers) that hosts your website and email addresses.
 
-**Find out how to edit your OVH DNS zone via your Control Panel.**
+**Find out how to edit your OVHcloud DNS zone via your Control Panel.**
 
 ## Requirements
 
-- You must have permission to manage the domain name from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- You need to use the OVH configuration for the domain name concerned (on its DNS servers).
+- You must have permission to manage the domain name from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You need to use the OVHcloud configuration for the domain name concerned (on its DNS servers).
 
 > [!warning]
 >
-> - If your domain name does not use the OVH DNS servers, you will need to edit the configuration using the interface given by the service provider that manages your domain name.
+> - If your domain name does not use the OVHcloud DNS servers, you will need to edit the configuration using the interface given by the service provider that manages your domain name.
 > 
-> - If your domain name is registered with OVH, you can check if the domain name uses our configuration. To do this, go to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the domain concerned, and go to the `DNS servers`{.action} tab.
+> - If your domain name is registered with OVHcloud, you can check if the domain name uses our configuration. To do this, go to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the domain concerned, and go to the `DNS servers`{.action} tab.
 >
 
 ## Instructions
@@ -41,7 +41,7 @@ By understanding what each of these records does, you will gain a better underst
 |MX|The MX record is used to point a domain name to an email server. For example, the IP address of the server your email solution is hosted on. Your service provider may have several email servers. If this is the case, you will need to create multiple MX records.|
 |SRV|The SRV record is used to define information on the address of a server that manages a service. For example, this record can define the address of a SIP server, or the address of a server that enables an email client to be configured automatically using autodiscover.|
 |TXT|The TXT record is used to add a chosen value (in text format) to your domain name’s DNS settings. This record is often used during the verification process.|
-|SPF|The SPF record is used to avoid potential identity theft via the email addresses that use your domain name. For example, this record specifies that only your email service provider’s server must be identified as a legitimate sending source. To find out more about this, you can refer to our guide to [Adding an SPF record to your domain name’s DNS configuration](https://docs.ovh.com/gb/en/domains/web_hosting_the_spf_record/){.external}.|
+|SPF|The SPF record is used to avoid potential identity theft via the email addresses that use your domain name. For example, this record specifies that only your email service provider’s server must be identified as a legitimate sending source. To find out more about this, you can refer to our guide to [Adding an SPF record to your domain name’s DNS configuration](https://docs.ovh.com/ca/en/domains/web_hosting_the_spf_record/){.external}.|
 |CAA|The CAA record is used to list the certificate authorities authorised to deliver SSL certificates for a domain name.|
 
 > [!warning]
@@ -51,9 +51,9 @@ By understanding what each of these records does, you will gain a better underst
 
 ### Step 1: Access the area for managing your domain’s OVH DNS zone
 
-First of all, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+First of all, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
-The table that opens will display your domain name’s configuration at OVH. It is made up of several DNS records (one per row in the table). You can filter the table's contents by DNS record type, or by domain name.
+The table that opens will display your domain name’s configuration at OVHcloud. It is made up of several DNS records (one per row in the table). You can filter the table's contents by DNS record type, or by domain name.
 
 ![dnszone](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
 
@@ -96,7 +96,7 @@ You can delete several records at once by ticking them on the left-hand side of 
 
 ### Step 3: Wait for the changes to propagate
 
-Once you have modified your domain name’s OVH DNS zone, you will need to allow a maximum of 24 hours for the changes to fully propagate and be effective.
+Once you have modified your domain name’s OVHcloud DNS zone, you will need to allow a maximum of 24 hours for the changes to fully propagate and be effective.
 
 If you would like the propagation time to be shorter the next time you edit your OVH DNS zone, you can shorten it slightly by adjusting the TTL (*Time To Live*) that applies to all of the DNS records.
 To do this, go to the `DNS Zone`{.action} tab in your Control Panel, click `Default TTL`{.action}, and follow the steps indicated.
@@ -105,9 +105,9 @@ You can also modify an individual DNS record’s TTL. You can only do this for o
 
 ## Go further
 
-[General information about DNS servers](https://docs.ovh.com/gb/en/domains/web_hosting_general_information_about_dns_servers/){.external}.
+[General information about DNS servers](https://docs.ovh.com/ca/en/domains/web_hosting_general_information_about_dns_servers/){.external}.
 
-[Adding an SPF record to your domain name’s configuration](https://docs.ovh.com/gb/en/domains/web_hosting_the_spf_record/){.external}.
+[Adding an SPF record to your domain name’s configuration](https://docs.ovh.com/ca/en/domains/web_hosting_the_spf_record/){.external}.
 
 [Protect your data from DNS cache poisoning with DNSSEC](https://www.ovh.co.uk/domains/dnssec_service.xml){.external}.
 
