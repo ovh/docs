@@ -6,19 +6,19 @@ section: Diagnóstico
 order: 1
 ---
 
-**Última actualización: 28/01/2019**
+**Última actualización: 05/05/2020**
 
 ## Objetivo
 
-Si tiene un sitio web en un alojamiento de OVH, podría recibir en algún momento un mensaje de correo electrónico informándole de que hemos realizado una operación relacionada con la seguridad de su servicio. Esta operación podría impedirle acceder a su sitio web o limitar algunas de sus funcionalidades. OVH lleva a cabo este tipo de acciones cuando se ha producido una actividad sospechosa, generalmente maliciosa, en el alojamiento web. 
+Si tiene un sitio web en un alojamiento de OVHcloud, podría recibir en algún momento un mensaje de correo electrónico informándole de que hemos realizado una operación relacionada con la seguridad de su servicio. Esta operación podría impedirle acceder a su sitio web o limitar algunas de sus funcionalidades. OVHcloud lleva a cabo este tipo de acciones cuando se ha producido una actividad sospechosa, generalmente maliciosa, en el alojamiento web. 
 
 **Esta guía incluye algunas recomendaciones de seguridad y explica qué hacer si su alojamiento web ha sido desactivado por motivos de seguridad.**
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
 - Disponer de las claves necesarias para conectarse al espacio de almacenamiento del alojamiento.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
 
 ## Procedimiento
 
@@ -30,7 +30,7 @@ Los fallos de seguridad que puede tener un sitio web son muy variados. Aunque un
 
 Una fallo de seguridad en un sitio web podría permitir a alguien utilizar el alojamiento con fines maliciosos, por ejemplo para enviar spam o para alojar sitios web fraudulentos, sin que usted lo supiera. 
 
-Para evitarlo, y así garantizar su seguridad y la de todos nuestros clientes, OVH puede desactivar temporalmente el alojamiento o algunas de sus funcionalidades. En ese caso, será necesario realizar diversas operaciones para solucionar el problema. Aunque no existe un único procedimiento, esta guía ofrece información sobre las medidas que debe tomar si su alojamiento web es desactivado por motivos de seguridad. 
+Para evitarlo, y así garantizar su seguridad y la de todos nuestros clientes, OVHcloud puede desactivar temporalmente el alojamiento o algunas de sus funcionalidades. En ese caso, será necesario realizar diversas operaciones para solucionar el problema. Aunque no existe un único procedimiento, esta guía ofrece información sobre las medidas que debe tomar si su alojamiento web es desactivado por motivos de seguridad. 
 
 > [!warning]
 >
@@ -41,9 +41,9 @@ Para evitarlo, y así garantizar su seguridad y la de todos nuestros clientes, O
 
 Antes de realizar cualquier operación en su sitio web, deberá recabar toda la información posible para intentar averiguar qué ha sucedido. A continuación le ofrecemos algunos consejos: 
 
-#### 1.1. Lea atentamente los mensajes enviados por OVH
+#### 1.1. Lea atentamente los mensajes enviados por OVHcloud
 
-OVH debería haberle enviado un mensaje de correo electrónico notificándole que ha realizado una acción relativa a la seguridad del alojamiento. Lea atentamente la información que contiene dicho mensaje. Esta información puede variar en función de la situación, pero, en cualquier caso, le permitirá:
+OVHcloud debería haberle enviado un mensaje de correo electrónico notificándole que ha realizado una acción relativa a la seguridad del alojamiento. Lea atentamente la información que contiene dicho mensaje. Esta información puede variar en función de la situación, pero, en cualquier caso, le permitirá:
 
 - determinar el momento exacto en el que se ha desactivado el sitio web;
 - conocer el motivo por el que se ha desactivado el sitio web.
@@ -74,7 +74,7 @@ Asegúrese, pues, de que los diferentes elementos adicionales de su sitio web so
 
 Esto le permitirá conocer con mayor detalle las acciones que se han realizado sobre el servicio y el sitio web para poder determinar qué ha podido haber motivado la desactivación del alojamiento.
 
-Para consultar la actividad y los logs del alojamiento, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, podrá realizar dos acciones diferentes en función de la información a la que desee acceder:
+Para consultar la actividad y los logs del alojamiento, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, podrá realizar dos acciones diferentes en función de la información a la que desee acceder:
 
 - **Consultar la actividad del alojamiento**
 
@@ -130,13 +130,13 @@ Existen distintas formas de restaurar un sitio web:
 
 - **Si usted tiene una copia de seguridad del sitio web** 
 
-Solo tiene que restaurar la copia de seguridad en el alojamiento, sustituyendo el contenido del espacio de almacenamiento y de la base de datos por el de la copia de seguridad. Si necesita ayuda, consulte nuestra guía [Importar una copia de seguridad en la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/){.external}.
+Solo tiene que restaurar la copia de seguridad en el alojamiento, sustituyendo el contenido del espacio de almacenamiento y de la base de datos por el de la copia de seguridad. Si necesita ayuda, consulte nuestra guía [Importar una copia de seguridad en la base de datos de un alojamiento web](https://docs.ovh.com/us/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/){.external}.
 
-- **Si OVH tiene una copia seguridad del sitio web (espacio de almacenamiento y base de datos)**
+- **Si OVHcloud tiene una copia seguridad del sitio web (espacio de almacenamiento y base de datos)**
 
-Según la fecha a la que quiera restaurar el sitio web, es posible que OVH tenga una copia de seguridad de este último. Si necesita ayuda, consulte nuestras guías [Restaurar el espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/){.external}, [Exportar una copia de seguridad de la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_exportacion_de_una_base_de_datos/){.external} e [Importar una copia de seguridad en la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/){.external}. En la medida de lo posible, asegúrese de que las fechas de las copias de seguridad seleccionadas coinciden.
+Según la fecha a la que quiera restaurar el sitio web, es posible que OVH tenga una copia de seguridad de este último. Si necesita ayuda, consulte nuestras guías [Restaurar el espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/us/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/){.external}, [Exportar una copia de seguridad de la base de datos de un alojamiento web](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/){.external} e [Importar una copia de seguridad en la base de datos de un alojamiento web](https://docs.ovh.com/us/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/){.external}. En la medida de lo posible, asegúrese de que las fechas de las copias de seguridad seleccionadas coinciden.
 
-- **Si ni usted ni OVH tienen una copia de seguridad del sitio web** 
+- **Si ni usted ni OVHcloud tienen una copia de seguridad del sitio web** 
 
 En ese caso, deberá [corregir manualmente el código del sitio web](./#23-corregir-manualmente-el-codigo-del-sitio-web){.external} para realizar los cambios necesarios. 
 
@@ -146,10 +146,10 @@ Para realizar esta operación debemos tener en cuenta diversas consideraciones t
 
 > [!primary]
 >
-> Si la acción llevada a cabo por OVH ha inhabilitado el acceso al sitio web, no podrá actualizarlo. En ese caso, vaya al paso [3. Reactivar el alojamiento web](./#3-reactivar-el-alojamiento-web_1){.external} para recuperar el acceso. Una vez que haya accedido al sitio web, podrá actualizarlo.
+> Si la acción llevada a cabo por OVHcloud ha inhabilitado el acceso al sitio web, no podrá actualizarlo. En ese caso, vaya al paso [3. Reactivar el alojamiento web](./#3-reactivar-el-alojamiento-web_1){.external} para recuperar el acceso. Una vez que haya accedido al sitio web, podrá actualizarlo.
 >
 
-Conéctese al panel de administración del sitio web (que es distinto del área de cliente de OVH). Compruebe lo siguiente:
+Conéctese al panel de administración del sitio web (que es distinto del área de cliente de OVHcloud). Compruebe lo siguiente:
 
 - el sitio web está correctamente actualizado;
 - todos los temas y módulos adicionales (o plugins) instalados están actualizados.
@@ -163,7 +163,7 @@ De lo contrario, deberá actualizarlos. Para ello, siga las indicaciones que le 
 
 Dichas indicaciones pueden hacer referencia a elementos que podrían bloquear la actualización, por ejemplo:
 
-- Asegúrese de que la nueva versión del CMS (como WordPress) es compatible con la versión de PHP configurada en el alojamiento. Si necesitara cambiar esta última, puede consultar nuestra guía [Cambiar la versión PHP de un alojamiento web](https://docs.ovh.com/es/hosting/cambiar-version-php-en-alojamiento-web/){.external}.
+- Asegúrese de que la nueva versión del CMS (como WordPress) es compatible con la versión de PHP configurada en el alojamiento. Si necesitara cambiar esta última, puede consultar nuestra guía [Cambiar la versión PHP de un alojamiento web](https://docs.ovh.com/us/es/hosting/cambiar-version-php-en-alojamiento-web/){.external}.
 - Asegúrese de que los temas y módulos adicionales son compatibles con la nueva versión de su CMS. De lo contrario, no podrá utilizarlos y deberá encontrar una solución alternativa.
 
 #### 2.3. Corregir manualmente el código del sitio web
@@ -178,12 +178,12 @@ Para reactivar el alojamiento web, es necesario realizar una operación en el es
 
 > [!primary]
 >
-> Si el mensaje de correo electrónico enviado por OVH especifica que usted no puede reactivar el alojamiento, siga los pasos que se indican en el mensaje.
+> Si el mensaje de correo electrónico enviado por OVHcloud especifica que usted no puede reactivar el alojamiento, siga los pasos que se indican en el mensaje.
 >
 
 Si tiene la posibilidad de reactivar usted mismo el alojamiento, recopile la información necesaria para conectarse a su espacio de almacenamiento (es decir, el servidor FTP, el usuario FTP y la contraseña asociada).
 
-Para ello, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Desde el mismo lugar también podrá [cambiar la contraseña del usuario FTP](https://docs.ovh.com/es/hosting/cambiar-contrasena-usuario-ftp/){.external} si fuera necesario.
+Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Desde el mismo lugar también podrá [cambiar la contraseña del usuario FTP](https://docs.ovh.com/us/es/hosting/cambiar-contrasena-usuario-ftp/){.external} si fuera necesario.
 
 ![Desactivación del hosting](images/hosting-deactivation-step3.png){.thumbnail}
 
@@ -203,7 +203,7 @@ Si la operación se ha realizado correctamente, recibirá la respuesta «OK». P
 
 #### 3.2. Reabrir el alojamiento web con el explorador de FTP «net2ftp»
 
-Abra la pestaña `FTP - SSH`{.action} del área de cliente de OVH, haga clic en el botón `Explorador FTP`{.action} y conéctese al espacio de almacenamiento. Haga clic en el botón `Avanzado`{.action} para acceder a las funciones avanzadas y, a continuación, haga clic en el botón `Go`{.action}, situado junto a «Send arbitrary FTP commands to the FTP server» (enviar comandos FTP arbitrarios al servidor FTP).
+Abra la pestaña `FTP - SSH`{.action} del área de cliente de OVHcloud, haga clic en el botón `Explorador FTP`{.action} y conéctese al espacio de almacenamiento. Haga clic en el botón `Avanzado`{.action} para acceder a las funciones avanzadas y, a continuación, haga clic en el botón `Go`{.action}, situado junto a «Send arbitrary FTP commands to the FTP server» (enviar comandos FTP arbitrarios al servidor FTP).
 
 ![Actividad del alojamiento](images/hosting-deactivation-step5.png){.thumbnail}
 
@@ -244,4 +244,4 @@ En resumen, se trata de actualizar el sitio web con regularidad y de ser precavi
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
