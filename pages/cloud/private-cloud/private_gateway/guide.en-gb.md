@@ -10,27 +10,27 @@ hidden: true
 
 ## Objective
 
-The vSphere interface is accessible by default over the Internet. For infrastructure that can be managed through the vRack private network, vSphere access can be switched over to the vRack through the private gateway.
+The vSphere interface is accessible by default over the Internet. For infrastructures that can be managed through the vRack private network, vSphere access can be switched over to the vRack through the private gateway.
 
-**This guide explains how to enable private gateway on your Hosted Private Cloud infrastructure through the OVHCloud API.**
+**This guide explains how to enable private gateway on your Hosted Private Cloud infrastructure through the OVHcloud API.**
 
 > [!warning]
 >
-> Activating the private gateway blocks access from the internet, so it is important to make sure you can access the vRack.
+> Activating the private gateway blocks access from the Internet, so it is important to make sure you can access the vRack.
 >
 
 ## Requirements
 
-* An [OVHCloud Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
+* An [OVHcloud Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
 * Access to the vSphere interface
-* Be connected to [OVHCloud API](https://api.ovh.com/console){.external}.
-* Creating [OVHCloud API credentials](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
+* Being connected to [OVHcloud API](https://api.ovh.com/console){.external}.
+* Creating [OVHcloud API credentials](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
 
 ## Instructions
 
 ### Architecture
 
-* The private gateway is a virtual machine (VM) that will be deployed on the infrastructure and connect to the vRack.
+* The private gateway is a virtual machine (VM) that will be deployed on the infrastructure and connected to the vRack.
 * The private gateway does not have a route, so only the user of the same subnet can reach the gateway. The connection from another network must be a source-nat.
 
 > [!warning]
@@ -71,7 +71,7 @@ Before starting, get the following necessary information:
 
 > [!warning]
 >
-> Turning off the private gateway restores access from the internet, so it is important to ensure that you have set up the IP filtering you want.
+> Turning off the private gateway restores access from the Internet, so it is important to ensure that you have set up the IP filtering you want.
 >
 
 Start deactivation with:
