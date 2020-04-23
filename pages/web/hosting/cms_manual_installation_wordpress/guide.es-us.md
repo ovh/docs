@@ -185,7 +185,7 @@ Este será el aspecto del panel de administración de Wordpress.
 
 
 ## Información útil
-El soporte de OVH no está facultado para responder a solicitudes relativas a la configuración de WordPress, pero puede consultar nuestra guía para más información: []({legacy}2053).
+El soporte de OVHcloud no está facultado para responder a solicitudes relativas a la configuración de WordPress, pero puede consultar nuestra guía para más información: []({legacy}2053).
 
 Si necesita ayuda, consulte alguno de los foros dedicados a la solución [WordPress](https://es.wordpress.com/).
 
@@ -194,11 +194,11 @@ También puede encontrar más información en el [foro de ayuda de WordPress](ht
 ## Error clásico: Sitio en construcción
 Ha colocado sus archivos en el FTP, pero sigue viéndose la página de «sitio en construcción». 
 
-Al instalar el alojamiento, OVH crea una página de espera hasta que usted coloca los archivos de su sitio web. 
+Al instalar el alojamiento, OVHcloud crea una página de espera hasta que usted coloca los archivos de su sitio web. 
 
-Si ha subido los archivos a la carpeta «www», pero no ha eliminado el contenido colocado en esta por OVH, puede aparecer este problema. 
+Si ha subido los archivos a la carpeta «www», pero no ha eliminado el contenido colocado en esta por OVHcloud, puede aparecer este problema. 
 
-Para solucionarlo, elimine o renombre el archivo «index.html» colocado por OVH en el alojamiento. Si le asigna otro nombre, podrá reactivarlo en cualquier momento y utilizarlo como página de espera.
+Para solucionarlo, elimine o renombre el archivo «index.html» colocado por OVHcloud en el alojamiento. Si le asigna otro nombre, podrá reactivarlo en cualquier momento y utilizarlo como página de espera.
 
 Importante: Los archivos del sitio web deben subirse a la carpeta «www».
 
