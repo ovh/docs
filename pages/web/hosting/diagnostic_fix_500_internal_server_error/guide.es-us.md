@@ -15,7 +15,7 @@ Si la sintaxis de .htaccess no es la correcta, el servidor web mostrará un erro
 ## Permisos/Derechos
 Es necesario respetar determinadas normas de seguridad en relación con los derechos que se dan a los scripts: 
 
-- La raíz de su sitio debe estar obligatoriamente en 705 (los permisos establecidos por defecto por OVH). Se trata de un directorio / (barra) o . (punto) en su conexión FTP. No lo modifique. 
+- La raíz de su sitio debe estar obligatoriamente en 705 (los permisos establecidos por defecto por OVHcloud). Se trata de un directorio / (barra) o . (punto) en su conexión FTP. No lo modifique. 
 - El resto de directorios deben estar como máximo en 755. 
 - Los scripts PHP/CGI deben estar como máximo en 755.
 
