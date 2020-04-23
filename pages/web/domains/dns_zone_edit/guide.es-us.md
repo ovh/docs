@@ -103,4 +103,4 @@ También es posible modificar el TTL de un registro DNS concreto. Esta operació
 
 [Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](https://www.ovh.es/dominios/servicio-dnssec.xml){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
