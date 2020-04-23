@@ -9,9 +9,9 @@ section: Casos de uso
 
 
 ## 
-Esta guía se dirige a todos aquellos usuarios que disponen de un sitio web WordPress alojado en OVH que ha desaparecido, está redirigido a otro sitio o lleno de anuncios molestos. 
+Esta guía se dirige a todos aquellos usuarios que disponen de un sitio web WordPress alojado en OVHcloud que ha desaparecido, está redirigido a otro sitio o lleno de anuncios molestos. 
 
-OVH no ofrece soporte para los productos de WordPress ni por correo ni por teléfono. Sin embargo, podemos indicarle los pasos a seguir en caso de pirateo.
+OVHcloud no ofrece soporte para los productos de WordPress ni por correo ni por teléfono. Sin embargo, podemos indicarle los pasos a seguir en caso de pirateo.
 
 
 ## ¿Por qué me han pirateado el sitio web?
@@ -25,7 +25,7 @@ Puede adoptar una serie de medidas prácticas que le permitirán corregir el pro
 
 Esta guía explica cómo volver a poner en línea su sitio web. 
 
-Si OVH ha cerrado su sitio, puede consultar una [guía general](https://www.ovh.es/g1392.procedimiento-cierre-hack-ovh) sobre los procedimientos de cierre por pirateo (hack).
+Si OVHcloud ha cerrado su sitio, puede consultar una [guía general](https://www.ovh.es/g1392.procedimiento-cierre-hack-ovh) sobre los procedimientos de cierre por pirateo (hack).
 
 
 ## Escanee su puesto de trabajo
@@ -35,7 +35,7 @@ Asegúrese de que utiliza un antivirus/malware en su ordenador local. Algunos an
 
 
 ## Evaluar la situación
-Si descubre que su sitio web ha sido pirateado, debe actuar de inmediato. En primer lugar, debe identificar cuándo se produjo el pirateo para determinar si OVH puede recuperar los datos. A continuación, veremos cómo localizar la intrusión y abordaremos los dos casos posibles.
+Si descubre que su sitio web ha sido pirateado, debe actuar de inmediato. En primer lugar, debe identificar cuándo se produjo el pirateo para determinar si OVHcloud puede recuperar los datos. A continuación, veremos cómo localizar la intrusión y abordaremos los dos casos posibles.
 
 
 ## 
@@ -58,7 +58,7 @@ Nuestro soporte no está facultado para prestar asistencia directa en este tipo 
 
 
 ## Restauración del sitio
-WordPress está compuesto por archivos y una base de datos. Puede restaurar sus archivos a una fecha anterior. OVH le ofrece un historial de 3 semanas de los archivos alojados en su alojamiento. En cuanto a la base de datos, es posible realizar una copia de hace 7 días.
+WordPress está compuesto por archivos y una base de datos. Puede restaurar sus archivos a una fecha anterior. OVHcloud le ofrece un historial de 3 semanas de los archivos alojados en su alojamiento. En cuanto a la base de datos, es posible realizar una copia de hace 7 días.
 La restauración no permite corregir los fallos de seguridad, sino que es necesario buscar el fallo y corregirlo. 
 La restauración sustituye los datos presentes por el contenido de la copia de seguridad.
 
