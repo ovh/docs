@@ -5,6 +5,7 @@ excerpt: 'Découvrez comment bien débuter avec la solution CloudDB'
 section: 'Premiers pas'
 ---
 
+
 **Dernière mise à jour le 24/04/2020**
 
 ## Objectif
@@ -170,7 +171,6 @@ Après avoir récupéré le numéro du cluster sur lequel est situé votre hébe
 > **L'adresse IP** du cluster ne fonctionnera pas pour autoriser la connexion au serveur Cloud DB, il faut bien ajouter **l'adresse IP « passerelle de sortie »**.
 >
 
- 
 ### Lier votre site à la base de données
 
 Maintenant que votre base de données est créée, qu'un ou plusieurs utilisateurs disposent de droits sur cette dernière et qu'au minimum une adresse IP a été autorisée sur votre instance CloudDB, il ne reste plus qu'à lier votre site à votre base de données. Cette étape peut s'effectuer de plusieurs manières, en fonction du site ou du CMS (WordPress, Joomla!, etc.) utilisé, ainsi que de l'étape à laquelle vous vous trouvez si vous installez un site web.

@@ -5,6 +5,7 @@ excerpt: 'Find out how to get started with the CloudDB service'
 section: 'Getting started'
 ---
 
+
 **Last updated 24th April 2020**
 
 ## Objective
@@ -168,7 +169,6 @@ Once you have ascertained the cluster number of your Web Hosting, consult [this 
 >
 > The **IP address** of the cluster cannot be used to authorise a connection to the Cloud DB server; the **gateway IP address** must be added to the ACL.
 >
-
 
 ### Link your website to the database
 
