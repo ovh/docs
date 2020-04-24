@@ -59,7 +59,7 @@ The table that opens will display your domain name’s configuration at OVHcloud
 
 ### Step 2: Edit your domain name’s DNS zone
 
-You can edit your domain name’s OVH DNS zone by adding, modifying or deleting DNS records. There are two ways you can do this:
+You can edit your domain name’s OVHcloud DNS zone by adding, modifying or deleting DNS records. There are two ways you can do this:
 
 - **Modifying the zone manually, in text mode:** Only for users with advanced technical knowledge. In the `DNS Zone`{.action} tab, click `Change in text format`{.action}, then follow the steps provided.
 
@@ -98,7 +98,7 @@ You can delete several records at once by ticking them on the left-hand side of 
 
 Once you have modified your domain name’s OVHcloud DNS zone, you will need to allow a maximum of 24 hours for the changes to fully propagate and be effective.
 
-If you would like the propagation time to be shorter the next time you edit your OVH DNS zone, you can shorten it slightly by adjusting the TTL (*Time To Live*) that applies to all of the DNS records.
+If you would like the propagation time to be shorter the next time you edit your OVHcloud DNS zone, you can shorten it slightly by adjusting the TTL (*Time To Live*) that applies to all of the DNS records.
 To do this, go to the `DNS Zone`{.action} tab in your Control Panel, click `Default TTL`{.action}, and follow the steps indicated.
 
 You can also modify an individual DNS record’s TTL. You can only do this for one record at a time, by editing them or setting it when they are added.
