@@ -16,17 +16,17 @@ La solution CloudDB permet de bénéficier d’une instance de bases de données
 ## Prérequis
 
 - Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external}.
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
 ### Visionner les informations générales de l'instance
 
-Dans la barre de services à gauche de votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, rendez-vous dans la section `Bases de données`{.action}, puis sur l'instance concernée. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}.
+Dans la barre de services à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, rendez-vous dans la section `Bases de données`{.action}, puis sur l'instance concernée. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}.
 
 > [!primary]
 >
-> Le nom du service CloudDB dans votre espace client OVH contient une partie de votre référence client et se termine par trois chiffres (001 pour le premier service CloudDB installé, 002 pour le deuxième, etc.).
+> Le nom du service CloudDB dans votre espace client OVHcloud contient une partie de votre référence client et se termine par trois chiffres (001 pour le premier service CloudDB installé, 002 pour le deuxième, etc.).
 >
 
 Vous pouvez y consulter les informations importantes concernant votre instance. Nous vous invitons à prendre quelques instants afin de vous assurer que les données affichées sont correctes ou correspondent aux indications ci-dessous.
@@ -37,9 +37,9 @@ Vous pouvez y consulter les informations importantes concernant votre instance. 
 |Type|Affiche le système de bases de données utilisée par le serveur.|
 |Version|Affiche la version du système de bases de données utilisée par le serveur. Veillez à la compatibilité de votre site avec la version choisie.|
 |RAM|Affiche la mémoire vive disponible pour votre instance ainsi que les éventuels dépassements de mémoire. Votre instance CloudDB dispose de ressources dédiées et garanties : sa mémoire RAM. Si besoin, vous pouvez faire évoluer cette dernière et être prévenu si vous consommez toutes les ressources mémoire de votre instance.|
-|Infrastructure|Affiche l'infrastructure utilisée par votre instance. Il s'agit d'une information inhérente à l'infrastructure d'OVH.|
+|Infrastructure|Affiche l'infrastructure utilisée par votre instance. Il s'agit d'une information inhérente à l'infrastructure d'OVHcloud.|
 |Datacenter|Affiche le centre de données dans lequel l'instance a été créée.|
-|Host|Affiche le serveur OVH dans lequel votre instance est créée. Il s'agit d'une information inhérente à l'infrastructure d'OVH et peut être utilisée dans nos communications liées aux [incidents OVH](http://travaux.ovh.net/){.external}.|
+|Host|Affiche le serveur OVHcloud dans lequel votre instance est créée. Il s'agit d'une information inhérente à l'infrastructure d'OVHcloud et peut être utilisée dans nos communications liées aux [incidents OVHcloud](http://travaux.ovh.net/){.external}.|
 
 ![clouddb](images/clouddb-general-information.png){.thumbnail}
 
@@ -116,9 +116,9 @@ Dès qu'un utilisateur est créé, il est nécessaire de lui attribuer des droit
 > Cette étape s'applique si vous souhaitez importer une sauvegarde d'une base de données déjà existante. Si ce n'est pas le cas, passez à la manipulation suivante.
 >
 
-Il existe plusieurs techniques pour importer une base de données. Un outil est notamment à votre disposition depuis l'espace client OVH et nous allons nous intéresser à cette méthode. Vous pouvez cependant en utiliser une autre, selon vos préférences et connaissances.
+Il existe plusieurs techniques pour importer une base de données. Un outil est notamment à votre disposition depuis l'espace client OVHcloud et nous allons nous intéresser à cette méthode. Vous pouvez cependant en utiliser une autre, selon vos préférences et connaissances.
 
-Les étapes ci-dessous décrivent comme importer une base de données grâce à l'outil disponible dans l'espace client OVH.
+Les étapes ci-dessous décrivent comme importer une base de données grâce à l'outil disponible dans l'espace client OVHcloud.
 
 - **Étape 1 : accéder à l'interface d'importation**
 
@@ -153,6 +153,24 @@ Sur la fenêtre qui s'affiche, indiquez l'adresse IP ou le masque que vous dési
 
 ![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
+#### Autoriser la connexion à un hébergement web OVHcloud
+
+Pour un hébergement web OVHcloud, vous devez autoriser l'adresse IP « passerelle de sortie » (gateway) de celui-ci . 
+
+Pour retrouvez l'adresse IP « passerelle de sortie », rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`, puis sur`Hébergement`{.action} dans la colonne de gauche. Sélectionnez votre hébergement dans la liste, puis cliquez sur l'onglet `FTP - SSH`.
+
+Retrouvez la mention **« Serveur FTP »**, celle-ci vous indiquera le numéro de cluster sur lequel vous êtes, comme ci-dessous.
+
+![clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
+
+Après avoir récupéré le numéro du cluster sur lequel est situé votre hébergement, consultez la page [« Liste des adresses IP des clusters et hebergements web »](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external}. Vous y trouverez l'adresse IP « passerelle de sortie » de chaque cluster.
+
+> [!warning]
+>
+> **L'adresse IP** du cluster ne fonctionnera pas pour autoriser la connexion au serveur Cloud DB, il faut bien ajouter **l'adresse IP « passerelle de sortie »**.
+>
+
+ 
 ### Lier votre site à la base de données
 
 Maintenant que votre base de données est créée, qu'un ou plusieurs utilisateurs disposent de droits sur cette dernière et qu'au minimum une adresse IP a été autorisée sur votre instance CloudDB, il ne reste plus qu'à lier votre site à votre base de données. Cette étape peut s'effectuer de plusieurs manières, en fonction du site ou du CMS (WordPress, Joomla!, etc.) utilisé, ainsi que de l'étape à laquelle vous vous trouvez si vous installez un site web.
