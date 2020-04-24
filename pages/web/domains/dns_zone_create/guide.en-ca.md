@@ -7,7 +7,7 @@ section: 'DNS and DNS zone'
 order: 2
 ---
 
-**Last updated 05th May 2020**
+**Last updated 5th May 2020**
 
 ## Objective
 
