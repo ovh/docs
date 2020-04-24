@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment bien débuter avec la solution CloudDB'
 section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 26/03/2018**
+**Dernière mise à jour le 24/04/2020**
 
 ## Objectif
 
