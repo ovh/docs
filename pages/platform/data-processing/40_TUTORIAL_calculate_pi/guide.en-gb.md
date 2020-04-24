@@ -38,16 +38,17 @@ import numpy as np
 from time import time
 from random import random
 
-inside=0
-n=10000000
+inside = 0
+n = 10000000
 
-t_0=time()
+t_0 = time()
 for i in range(n):
-    x,y=random(),random()
-    if x**2+y**2<1:
-        inside+=1
-print(np.round(time()-t_0,3),"seconds elapsed for naive method and n=",n)
-print("pi is roughly",inside/n*4)
+    x, y = random(), random()
+    if x**2 + y**2 < 1:
+        inside += 1
+print(np.round(time()-t_0, 3), "seconds elapsed for naive method and n=", n)
+print("pi is roughly", inside/n*4)
+
 ```
 
     6.131 seconds elapsed for naive method and n= 10000000
@@ -71,39 +72,42 @@ Save it in a file called 'pi-spark.py' or download it from OVHcloud repository :
 
 
 ```python
-import sys
 from time import time
 import numpy as np
 from random import random
 from operator import add
 
 from pyspark.sql import SparkSession
-from pyspark import SparkContext
 
-spark = SparkSession.builder.appName('abc').getOrCreate()
-sc=spark.sparkContext
+spark = SparkSession.builder.appName('CalculatePi').getOrCreate()
+sc = spark.sparkContext
 
 n = 10000000
 
-def inside(p):
-    #p is useless here
+
+def is_point_inside_unit_circle(p):
+    # p is useless here
     x, y = random(), random()
     return 1 if x*x + y*y < 1 else 0
 
-t_0=time()
+
+t_0 = time()
+
 # parallelize creates a spark Resilient Distributed Dataset (RDD)
-# its values are useless in this case but allows us to distribute our calculation (inside function)
+# its values are useless in this case
+# but allows us to distribute our calculation (inside function)
 count = sc.parallelize(range(0, n)) \
-             .map(inside).reduce(add)
-print(np.round(time()-t_0,3),"seconds elapsed for spark approach and n=.",n)
+             .map(is_point_inside_unit_circle).reduce(add)
+print(np.round(time()-t_0, 3), "seconds elapsed for spark approach and n=", n)
 print("Pi is roughly %f" % (4.0 * count / n))
 
 # VERY important to stop SparkSession
 # Otherwise, the job will keep running indefinitely
 spark.stop()
+
 ```
 
-    5.622 seconds elapsed for spark approach and n=. 10000000
+    5.622 seconds elapsed for spark approach and n= 10000000
     Pi is roughly 3.141336
     
 
@@ -124,9 +128,8 @@ channels:
   - defaults
 dependencies:
   - python=3.7.6
-  - pip:
-    - numpy==1.18.2
-    - pyspark==2.4.5
+  - numpy==1.18.2
+  - pyspark==2.4.5
 ```
 
 
@@ -171,61 +174,64 @@ from operator import add
 import matplotlib.pyplot as plt
 
 from pyspark.sql import SparkSession
-from pyspark import SparkContext
+
 
 def naive_method_time(n):
+    inside = 0
 
-    inside=0
-    rand_float=np.random.random((n,2))
-
-    t_0=time()
+    t_0 = time()
     for i in range(n):
-        x,y=random(),random()
-        if x**2+y**2<1:
-            inside+=1
-    return(np.round(time()-t_0,3))
+        x, y = random(), random()
+        if x**2 + y**2 < 1:
+            inside += 1
+    return(np.round(time()-t_0, 3))
+
 
 def spark_method_time(n):
-    def inside(p):
-        #p is useless here
+    def is_point_inside_unit_circle(p):
+        # p is useless here
         x, y = random(), random()
         return 1 if x*x + y*y < 1 else 0
-
-    t_0=time()
+    t_0 = time()
     # parallelize creates a spark Resilient Distributed Dataset (RDD)
-    # its values are useless in this case but allows us to distribute our calculation (inside function)
-    count = sc.parallelize(range(0, n)) \
-                 .map(inside).reduce(add)
-    return(np.round(time()-t_0,3))
+    # its values are useless in this case
+    # but allows us to distribute our calculation (inside function)
+    # we do not need to store the results
+    sc.parallelize(range(0, n)) \
+        .map(is_point_inside_unit_circle).reduce(add)
+    return(np.round(time()-t_0, 3))
+
 
 spark = SparkSession.builder.appName('CalculatePi').getOrCreate()
-sc=spark.sparkContext
+sc = spark.sparkContext
 
-N=[10000, 50000, 100000, 500000, 1000000, 5000000, 10000000,50000000,100000000]
-T=[]
-T_spark=[]
-T_spark_2_executors=[]
+N = [10000, 50000, 100000, 500000,
+     1000000, 5000000, 10000000, 50000000, 100000000]
+T = []
+T_spark = []
+T_spark_2_executors = []
 for n in N:
     T_spark.append(spark_method_time(n))
     T.append(naive_method_time(n))
-    
+
 spark.stop()
 spark = SparkSession.builder.appName('CalculatePi').getOrCreate()
-sc=spark.sparkContext
+sc = spark.sparkContext
 for n in N:
     T_spark_2_executors.append(spark_method_time(n))
-    
+
 spark.stop()
 
-plt.plot(N,T,label="naive")
-plt.plot(N,T_spark,label="spark - 4 exec")
-plt.plot(N,T_spark_2_executors,label="spark - 2 exec")
+plt.plot(N, T, label="naive")
+plt.plot(N, T_spark, label="spark - 4 exec")
+plt.plot(N, T_spark_2_executors, label="spark - 2 exec")
 
 plt.xscale("log")
 plt.xlabel("Total number of points.")
 plt.ylabel("Time to estimate pi (en sec.)")
 plt.legend()
 plt.show()
+
 ```
 
 Apache Spark tasks distribution to workers is not very efficient for simple calculations.
