@@ -5,7 +5,7 @@ excerpt: 'Find out how to get started with the CloudDB service'
 section: 'Getting started'
 ---
 
-**Last updated 15th June 2018**
+**Last updated 24th April 2020**
 
 ## Objective
 
