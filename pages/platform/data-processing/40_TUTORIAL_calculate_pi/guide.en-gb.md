@@ -128,7 +128,6 @@ channels:
   - defaults
 dependencies:
   - python=3.7.6
-  - numpy==1.18.2
   - pyspark==2.4.5
 ```
 
