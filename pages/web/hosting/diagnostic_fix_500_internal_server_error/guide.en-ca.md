@@ -6,6 +6,7 @@ slug: web_hosting_how_to_fix_the_500_internal_server_error
 legacy_guide_number: g1987
 ---
 
+**Last updated 5th May 2020**
 
 ## .htaccess
 If the .htaccess syntax is incorrect, the web server will return a 500 Internal Server Error. To confirm whether .htaccess is the cause, rename the .htaccess file .htaccess_bak for example. 
@@ -16,7 +17,7 @@ Find out more:[]({legacy}1967)
 ## Permissions:
 You must follow a few security rules concerning the permissions you give to your scripts. 
 
-- your website's root folder must be set to 705 (the default permissions set up by OVH). This is your FTP server / (slash) or . (point) directory, do not change it. 
+- your website's root folder must be set to 705 (the default permissions set up by OVHcloud). This is your FTP server / (slash) or . (point) directory, do not change it. 
 - other directories must be set to no higher than 755,
 - php/cgi scripts must be set to no higher than 755.
 
