@@ -5,26 +5,26 @@ excerpt: Cómo empezar con un SQL Privado
 section: SQL Privado
 ---
 
-**Última actualización: 15/01/2018**
+**Última actualización: 05/05/2020**
 
 ## Objetivo
 
-El servicio SQL Privado permite disfrutar de una instancia de SQL que, en combinación con un plan de hosting de OVH, permite disponer de recursos dedicados y garantizados. De esta manera, ofrece un mejor rendimiento y mayor flexibilidad en los sistemas de bases de datos disponibles, así como en los que es posible crear. De manera general, este servicio está destinado a clientes con necesidades específicas.
+El servicio SQL Privado permite disfrutar de una instancia de SQL que, en combinación con un plan de hosting de OVHcloud, permite disponer de recursos dedicados y garantizados. De esta manera, ofrece un mejor rendimiento y mayor flexibilidad en los sistemas de bases de datos disponibles, así como en los que es posible crear. De manera general, este servicio está destinado a clientes con necesidades específicas.
 
 Esta guía explica cómo empezar con un SQL Privado.
 
 ## Requisitos
 
-- Tener un SQL Privado (incluido en un [plan de hosting](https://www.ovh.es/hosting/){.external} o contratado como [opción SQL](https://www.ovh.es/hosting/opciones-sql.xml){.external}).
-- Tener un [plan de hosting ](https://www.ovh.es/hosting/){.external} alojado en el mismo datacenter que el SQL Privado (puede consultar dicha información en el área de cliente de OVH).
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Tener un SQL Privado (incluido en un [plan de hosting](https://www.ovh.com/world/es/hosting/){.external} o contratado como [opción SQL](https://www.ovh.com/world/es/hosting/opciones-sql.xml){.external}).
+- Tener un [plan de hosting ](https://www.ovh.com/world/es/hosting/){.external} alojado en el mismo datacenter que el SQL Privado (puede consultar dicha información en el área de cliente de OVHcloud).
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Procedimiento
 
 ### Ver la información general de la instancia
 
-En la columna izquierda del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio de bases de datos correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
+En la columna izquierda del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio de bases de datos correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
 
 > [!primary]
 >
@@ -42,9 +42,9 @@ En dicha pestaña podrá consultar la información más importante relativa al s
 |Tipo|Muestra el sistema de bases de datos utilizado por el servidor. Si no sabe si el tipo utilizado es correcto, debe saber que el más frecuente es **MySQL**, aunque existen otros, como PostgreSQL o MariaDB. Por ejemplo, si su sitio web está basado en WordPress, MySQL es un sistema perfectamente adecuado.|
 |Versión|Muestra la versión del sistema de bases de datos utilizado por el servidor. Asegúrese de que su sitio web es compatible con la versión elegida.|
 |RAM|Muestra la memoria RAM disponible para el servicio SQL e indica cuándo se está sobrepasando dicha cantidad de memoria. El servicio SQL Privado tiene recursos de RAM dedicados y garantizados. Si lo necesita, puede cambiar a un modelo superior, así como recibir alertas si consume todos los recursos de RAM de su servicio.|
-|Infraestructura|Muestra la infraestructura utilizada por el servicio. Se trata de una información inherente a la infraestructura de OVH.|
-|Datacenter|Muestra el centro de datos en el que se ha creado el servicio. Asegúrese de que el datacenter de su servicio sea el mismo que el del plan de hosting de OVH en el que esté alojado su sitio web.|
-|Host|Indica el servidor de OVH en el que se ha creado el servicio. Se trata de una información inherente a la infraestructura de OVH y se utiliza en nuestras comunicaciones relacionadas con [incidencias](http://travaux.ovh.net/){.external}.|
+|Infraestructura|Muestra la infraestructura utilizada por el servicio. Se trata de una información inherente a la infraestructura de OVHcloud.|
+|Datacenter|Muestra el centro de datos en el que se ha creado el servicio. Asegúrese de que el datacenter de su servicio sea el mismo que el del plan de hosting de OVHcloud en el que esté alojado su sitio web.|
+|Host|Indica el servidor de OVHcloud en el que se ha creado el servicio. Se trata de una información inherente a la infraestructura de OVHcloud y se utiliza en nuestras comunicaciones relacionadas con [incidencias](http://travaux.ovh.net/){.external}.|
 
 ![Información general](images/privatesql01-General-information.png){.thumbnail}
 
@@ -111,9 +111,9 @@ En la nueva página, seleccione el permiso correspondiente haciendo clic. Para u
 
 ### Importar una base de datos
 
-Esta operación solo debe realizarse si desea importar una copia de seguridad de una base de datos preexistente (necesario para, por ejemplo, migrar un sitio web a OVH o migrar las bases de datos a un SQL Privado). Si no tiene que importar ninguna base de datos, puede pasar a la siguiente operación.
+Esta operación solo debe realizarse si desea importar una copia de seguridad de una base de datos preexistente (necesario para, por ejemplo, migrar un sitio web a OVHcloud o migrar las bases de datos a un SQL Privado). Si no tiene que importar ninguna base de datos, puede pasar a la siguiente operación.
 
-Hay varias maneras de importar una base de datos. OVH ofrece una herramienta que permite hacerlo desde el área de cliente. A continuación vamos a explicar el funcionamiento de esa herramienta. Si desea utilizar otro método de importación, consulte la guía [Todo sobre el SQL Privado](https://docs.ovh.com/es/hosting/todo_sobre_el_sql_privado/){.external}.
+Hay varias maneras de importar una base de datos. OVHcloud ofrece una herramienta que permite hacerlo desde el área de cliente. A continuación vamos a explicar el funcionamiento de esa herramienta. Si desea utilizar otro método de importación, consulte la guía [Todo sobre el SQL Privado](../hosting/todo_sobre_el_sql_privado/){.external}.
 
 #### 1. Acceder a la importación de una base de datos
 
@@ -169,6 +169,6 @@ Ya puede finalizar la instalación de su sitio web o la migración de su base de
 
 ## Más información
 
-[Todo sobre el SQL Privado](https://docs.ovh.com/es/hosting/todo_sobre_el_sql_privado/){.external}
+[Todo sobre el SQL Privado](../todo_sobre_el_sql_privado/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/).
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).
