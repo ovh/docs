@@ -6,17 +6,17 @@ section: 'Configuring the Web Hosting plan'
 order: 4
 ---
 
-**Last updated 3rd January 2019**
+**Last updated 5th May 2020**
 
 ## Objective
 
-For numerous reasons, you may need to modify the configuration of your [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}. For this reason, OVH has implemented a file that allows you to change certain settings: the **.ovhconfig** file.
+For numerous reasons, you may need to modify the configuration of your [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/). For this reason, OVHcloud has implemented a file that allows you to change certain settings: the **.ovhconfig** file.
 
 **This guide explains the.ovhconfig file and how to edit it.**
 
 ## Requirements
 
-- a compatible [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} (excluding Cloud Web)
+- a compatible [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/) (excluding Cloud Web)
 - your FTP user password, which provides you with access to your storage space 
 
 ## Instructions
@@ -27,7 +27,7 @@ The .ovhconfig file can be edited in two ways:
 
 - **By manually editing the .ovhconfig file.** This method is technical in nature, and requires you to be connected to your storage space. In this guide, we will focus on this method.
 
-- **Through a configuration wizard in the OVH Control Panel.** This solution is less technical and requires you to be logged in to the OVH Control Panel, where you can select the changes to be made. Please refer to the instructions set out in our guide: [“Modifying the configuration of a Web Hosting plan”](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment/){.external}.
+- **Through a configuration wizard in the OVHcloud Control Panel.** This solution is less technical and requires you to be logged in to the OVHcloud Control Panel, where you can select the changes to be made. Please refer to the instructions set out in our guide: [Modifying the configuration of a Web Hosting plan](../modify_your_web_hosting_systems_runtime_environment/).
 
 Continue reading if you wish to edit the .ovhconfig file manually. 
 
@@ -35,9 +35,9 @@ Continue reading if you wish to edit the .ovhconfig file manually.
 
 #### Step 1: Log in to your storage space.
 
-Get your main FTP username, its password and the FTP server address. Once you have all these elements, log in to your storage space. If you are unsure how to do this, refer to the following guide: ["Log in to your storage space"](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/#2-log-in-to-your-storage-space){.external}.
+Get your main FTP username, its password and the FTP server address. Once you have all these elements, log in to your storage space. If you are unsure how to do this, refer to the following guide: [Log in to your storage space](../web_hosting_how_to_get_my_website_online/#2-log-in-to-your-storage-space).
 
-**If you no longer have that information**, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then click on `Hosting plans`{.action} in the services bar on the left. Select the name of the hosting plan concerned,and click on the `FTP - SSH`{.action} tab. There you will find the information you need to log in. With regards to the FTP user password, please refer to the instructions set out in our guide to [“Modifying a FTP user password”](https://docs.ovh.com/gb/en/hosting/modify-ftp-user-password/){.external}, if necessary.
+**If you no longer have that information**, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then click on `Hosting plans`{.action} in the services bar on the left. Select the name of the hosting plan concerned,and click on the `FTP - SSH`{.action} tab. There you will find the information you need to log in. With regards to the FTP user password, please refer to the instructions set out in our guide to [Modifying a FTP user password](../modify-ftp-user-password), if necessary.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 
@@ -71,10 +71,10 @@ Customise the values of the variables according to the configuration you wish to
 |Variables|Details|
 |---|---|
 |app.engine|Allows you to modify the PHP engine used by the hosting plan. Enter “php” to enable the PHP-FPM accelerator and  “phpcgi” to disable it. |
-|app.engine.version|Allows you to define the PHP version used by the hosting plan from [the ones proposed by OVH](https://www.ovh.co.uk/web-hosting/php.xml){.external}. Enter the version of your choice.|
-|http.firewall|Allows you to enable or disable the  [firewall supplied with all OVH Web Hosting plans](https://www.ovh.co.uk/web-hosting/mod_security.xml){.external}. Enter “security” to enable it or “none” to disable it.|
+|app.engine.version|Allows you to define the PHP version used by the hosting plan from [the ones proposed by OVHcloud](https://www.ovh.com/ca/en/web-hosting/php.xml). Enter the version of your choice.|
+|http.firewall|Allows you to enable or disable the  [firewall supplied with all OVHcloud Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/mod_security.xml){.external}. Enter “security” to enable it or “none” to disable it.|
 |environment|Allows you to manage cache behaviour for the static files of your website, as well as PHP error processing. Enter “production” to maximise caching and hide PHP errors or “development”, so that no cache is applied and PHP error are displayed.|
-|container.image|Allows you to modify the runtime environment used by the hosting plan. Enter the search engine of your choice. You can find them here: [“View the configurations available”](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment/#view-the-configurations-available_1){.external}.|
+|container.image|Allows you to modify the runtime environment used by the hosting plan. Enter the search engine of your choice. You can find them here: [View the configurations available](../modify_your_web_hosting_systems_runtime_environment/#view-the-configurations-available_1).|
 
 Below is the full application detail for the .ovhconfig file:
 
@@ -148,7 +148,7 @@ Once the .ovhconfig file has been edited, all you have to do is download it to y
 
 If you host several websites on your hosting space, you have almost certainly configured a few Multisites. There are a number of reasons why you might decide to use a different PHP version on some of your Multisites.
 
-To do this, you must create an .ovhconfig file for the Multisite(s), containing the desired PHP version. You can refer to the instructions set out in the [“Editing the .ovhconfig file”](https://docs.ovh.com/gb/en/hosting/configuring-file-ovhconfig/#editing-the-ovhconfig-file){.external} section of this guide, if necessary. When you download the .ovhconfig file to your storage space, be sure to do so inside the Multisite's root folder. You can access the root folders through the OVH Control Panel, under the`Multisite`{.action} tab of the relevant hosting plan.
+To do this, you must create an .ovhconfig file for the Multisite(s), containing the desired PHP version. You can refer to the instructions set out in the [Editing the .ovhconfig file](../configuring-file-ovhconfig/#editing-the-ovhconfig-file) section of this guide, if necessary. When you download the .ovhconfig file to your storage space, be sure to do so inside the Multisite's root folder. You can access the root folders through the OVHcloud Control Panel, under the`Multisite`{.action} tab of the relevant hosting plan.
 
 > [!warning]
 >
