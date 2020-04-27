@@ -6,6 +6,7 @@ slug: cms_manually_install_drupal
 legacy_guide_number: g1976
 ---
 
+**Last updated 5th May 2020**
 
 ## Part 1: preparing for installation
 Necessary tools
@@ -13,7 +14,7 @@ Necessary tools
 To install the Drupal platform on your shared hosting package, we advise your to get an FTP program such as  FileZilla (free).
 
 ## Necessary credentials
-Make sure that you have your customer ID (nic-handle) and password so you can log in to your [OVH customer account](https://www.ovh.com/manager/web/login/) if necessary.
+Make sure that you have your customer ID (nic-handle) and password so you can log in to your [OVHcloud customer account](https://www.ovh.com/auth/?action=gotomanager) if necessary.
 
 
 - Get your FTP ID and password so you can log in to your hosting package. 
@@ -68,7 +69,7 @@ Once you are logged in to FileZilla.
 
 In the "Local site" section, which refers to the list of files on your computer, open the unzipped file entitled "Drupal-xxx" where your CMS files will be located. 
 
-In the "Remote site" section, which refers to your OVH shared hosting package, open the "www" folder. This is the folder that you need to upload your CMS files to.
+In the "Remote site" section, which refers to your OVHcloud shared hosting package, open the "www" folder. This is the folder that you need to upload your CMS files to.
 If this folder does not exist you can create it.
 Your files must be uploaded to the "www" folder or you will not be able to access the installation procedure from your domain name.
 
@@ -207,22 +208,22 @@ Please have a look at the forums dedicated to the Drupal solution.
 - Here is the [Drupal](https://www.drupal.org/support) website if you need help.
 
 
-OVH support is not authorised to answer questions about Drupal configuration.
+OVHcloud support is not authorised to answer questions about Drupal configuration.
 However, there is a user guide available: []({legacy}2053).
 
 
 ## Typical errors
 
-- Error "OVH - site under construction"
+- Error "OVHcloud - site under construction"
 
 
 You have set up your files on FTP, however the "site under construction" page is still displayed. 
 
-When your hosting system was installed, OVH set up a "waiting" page while you were uploading files to your site. 
+When your hosting system was installed, OVHcloud set up a "waiting" page while you were uploading files to your site. 
 
-If you only drop your own files into the "www" folder and do not delete the OVH content first, then you may encounter this problem.
+If you only drop your own files into the "www" folder and do not delete the OVHcloud content first, then you may encounter this problem.
 
-To correct/fix this issue, you will need to remove or rename the "index.html" file that was created by OVH.
+To correct/fix this issue, you will need to remove or rename the "index.html" file that was created by OVHcloud.
 
 It may be useful to simply just rename the file so that you can re-enable it at any time, and use it as your own "waiting" page.
 
