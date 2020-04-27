@@ -5,11 +5,12 @@ slug: what_to_do_if_your_wordpress_site_is_hacked
 legacy_guide_number: g1874
 ---
 
+**Last updated 5th May 2020**
 
 ## 
-You have a WordPress website hosted at OVH, and you realise that your website is no longer reachable, redirects to another site, or is full of unwanted messages. 
+You have a WordPress website hosted at OVHcloud, and you realise that your website is no longer reachable, redirects to another site, or is full of unwanted messages. 
 
-OVH does not offer WordPress support by email or phone. However we can tell you the steps to take if you are hacked.
+OVHcloud does not offer WordPress support by email or phone. However we can tell you the steps to take if you are hacked.
 
 
 ## Why was my website hacked?
@@ -32,7 +33,7 @@ Check your local computer for viruses and/or infections with malware. It is a go
 
 ## Assess the damage
 Now it is time to assess the situation and plan how to proceed.
-First, work out when you were hacked to see whether or not OVH can recover your data. 
+First, work out when you were hacked to see whether or not OVHcloud can recover your data. 
 In the rest of this guide we will explain how to locate the intrusion, and then explain how to deal with two different scenarios.
 
 
@@ -55,22 +56,22 @@ Replace "your_domain" with your domain name and the extension. ex: "ovh.com".
 Just deleting the malicious code added by the hacker is not enough, you have to fix the flaw in its entirety.
 
 We recommend that you ask a [web master](https://partners.ovh.com) to help with this sort of task and/or seek guidance from the official WordPress forum.
-The OVH support team cannot provide direct assistance for this type of request under any circumstances.
+The OVHcloud support team cannot provide direct assistance for this type of request under any circumstances.
 
 
 ## Restoring your backup
-WordPress is made up of files and a database. You can restore your files to an earlier date. OVH gives you a 3-week history of the files in your webspace. As for the database you can go back seven days.
+WordPress is made up of files and a database. You can restore your files to an earlier date. OVHcloud gives you a 3-week history of the files in your webspace. As for the database you can go back seven days.
 Restore does not fix the security flaws, you just replace all the infected files with files from an uninfected backup.
 
 
 ## Restore your files via FTP
 You can restore the whole of your FTP space from the control panel but this can be complicated if you have multiple domains attached to the same hosting package. 
 
-If you have multiple websites on your webspace, it is better to only restore the directory in question. See this guide for more [info](https://www.ovh.co.uk/g1593.retrieve-full-backup-or-specific-file-in-FTP-via-FileZilla)
+If you have multiple websites on your webspace, it is better to only restore the directory in question. See this guide for more [info](https://docs.ovh.com/ca/en/hosting/restoring-ftp-filezilla-control-panel/)
 
 
 ## Restoring your SQL database
-If you need to, see our two guides, to [export](http://www.ovh.co.uk/g1394.exportation-bases-de-donneesde) your database.
+If you need to, see our two guides, to [export](https://docs.ovh.com/ca/en/hosting/web_hosting_database_export_guide/) your database.
 
 Once you have backed up your database (dump), you have to delete all the tables from [phpMyAdmin](https://phpmyadmin.ovh.net) in order to import your backup.
 
@@ -91,14 +92,14 @@ If you find this too complicated, you can update your email from [phpMyAdmin](ht
 ## Download new WordPress files and replace the existing ones.
 By installing new database files you can guarantee that you are using non-infected content. 
 
-- Go to the official [WordPress](https://fr.wordpress.org).
+- Go to the official [WordPress](https://wordpress.org).
 
 
 Usually there will be a link where you can download the latest stable version of the CMS. 
 
 The file you download will normally be compressed (zipped), you have to be able to decompress (unzip) it. There is help available for this online. 
 
-Once it is decompressed, transfer the files to your FTP space. You can follow this guide if you need to [here](https://www.ovh.co.uk/hosting/guides/g1374.mutualise_mettre_mon_site_en_ligne).
+Once it is decompressed, transfer the files to your FTP space. You can follow this guide if you need to [here](https://docs.ovh.com/ca/en/hosting/log-in-to-storage-ftp-web-hosting/).
 
 If you have multiple websites on the same web space, the files must be transfered to the directory in question. 
 
@@ -106,7 +107,7 @@ You have to modify the wp-config.php file to activate the database link.
 
 To do this you will need the email you received when you created the database. 
 
-If you cannot remember your database password, you can change it from your customer account. The procedure is explained in this [guide](https://www.ovh.co.uk/g1374.mettre-mon-site-en-ligne)
+If you cannot remember your database password, you can change it from your customer account. The procedure is explained in this [guide](https://docs.ovh.com/ca/en/hosting/web_hosting_how_to_get_my_website_online/)
 Important: check for updates in the WordPress admin panel.
 
 
