@@ -1,23 +1,23 @@
 ---
-title: Transferring your OVH domain name to another registrar
+title: Transferring your OVHcloud domain name to another registrar
 slug: outgoing-transfer-of-generic-or-geographical-domain-name
-excerpt: Learn how to transfer an OVH domain name to the registrar of your choice
+excerpt: Learn how to transfer an OVHcloud domain name to the registrar of your choice
 section: Transfer
 order: 4
 ---
 
-**Last updated 13th March 2018**
+**Last updated 5th May 2020**
 
 ## Objective
 
-It is possible to transfer an OVH domain name, allowing you to work with your preferred registrar. 
+It is possible to transfer an OVHcloud domain name, allowing you to work with your preferred registrar. 
 
-**Learn how to transfer an OVH domain name to the registrar of your choice.**
+**Learn how to transfer an OVHcloud domain name to the registrar of your choice.**
 
 ## Requirements
-- You must have a domain name registered with OVH.
+- You must have a domain name registered with OVHcloud.
 - You must be authorised to request the domain name transfer. Furthermore, the domain name holder and/or its administrators must be informed of the transfer request.
-- You must have the appropriate permissions to manage the domain name from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must have the appropriate permissions to manage the domain name from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - The domain name must have been created over 61 days ago, and must not have been transferred or changed ownership during that period.
 
 > [!primary]
@@ -29,7 +29,7 @@ It is possible to transfer an OVH domain name, allowing you to work with your pr
 
 ### Step 1: Remove the transfer protection for the domain name
 
-To remove the transfer protection for your OVH domain name, when you are logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web`{.action} in the service bar at the top. Go to the `Domains`{.action} section on the left, then click on the domain name in question. In the `General information`{.action} tab, untick the `Protection against domain name transfer`{.action} box, then click `Confirm`{.action}.
+To remove the transfer protection for your OVHcloud domain name, when you are logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web`{.action} in the service bar at the top. Go to the `Domains`{.action} section on the left, then click on the domain name in question. In the `General information`{.action} tab, untick the `Protection against domain name transfer`{.action} box, then click `Confirm`{.action}.
 
 > [!primary]
 >
