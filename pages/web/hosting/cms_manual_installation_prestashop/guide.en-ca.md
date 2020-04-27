@@ -6,6 +6,7 @@ slug: cms_manually_install_prestashop
 legacy_guide_number: g1979
 ---
 
+**Last updated 5th May 2020**
 
 ## Part 1: prepare to install
 
@@ -209,7 +210,7 @@ A look at the PrestaShop administration panel.
 
 
 ## Useful information
-OVH support is not authorised to answer questions about PrestaShop configuration.
+OVHcloud support is not authorised to answer questions about PrestaShop configuration.
 
 However, there is a user guide available: []({legacy}2053).
 
@@ -223,11 +224,11 @@ Please consult the forum dedicated to PrestaShop
 ## Typical error: site under construction
 You have set up your files on FTP, however the "site under construction" page is still displayed. 
 
-When your hosting package was installed, OVH set up a "waiting" page while you were uploading files to your site. 
+When your hosting package was installed, OVHcloud set up a "waiting" page while you were uploading files to your site. 
 
-If you only upload your own files to the "www" folder and do not delete the OVH content first, then you may encounter this problem.
+If you only upload your own files to the "www" folder and do not delete the OVHcloud content first, then you may encounter this problem.
 
-To fix this issue, you will need to remove or rename the "index.html" file that was created by OVH.
+To fix this issue, you will need to remove or rename the "index.html" file that was created by OVHcloud.
 
 It may be useful to simply just rename the file so that you can re-enable it at any time, and use it as your own "waiting" page.
 
