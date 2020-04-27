@@ -6,6 +6,7 @@ slug: cms_manually_install_joomla
 legacy_guide_number: g1978
 ---
 
+**Last updated 5th May 2020**
 
 ## Part 1: preparing for installation
 
@@ -13,7 +14,7 @@ legacy_guide_number: g1978
 To install the Joomla! platform on your shared hosting package, we advise your to get an FTP program such as  FileZilla (it's free).
 
 ## Necessary credentials
-Make sure that you have your customer ID (nic-handle) and password so you can log in to your [OVH customer account](https://www.ovh.com/manager/web/login/) if necessary.
+Make sure that you have your customer ID (nic-handle) and password so you can log in to your [OVHcloud customer account](https://www.ovh.com/auth/?action=gotomanager) if necessary.
 
 
 - Get your FTP ID and password so you can log in to your hosting package. 
@@ -211,7 +212,7 @@ For an overview of the Joomla! admin panel, click on the image below.
 
 
 ## Useful information
-OVH support is not authorised to answer questions about Joomla! configuration.
+OVHcloud support is not authorised to answer questions about Joomla! configuration.
 However, there is a user guide available:  []({legacy}2053).
 
 You can also view the forums dedicated to the Joomla! solution.
@@ -224,11 +225,11 @@ You can also view the forums dedicated to the Joomla! solution.
 ## Typical error: site under construction
 You have set up your files on FTP, however the "site under construction" page is still displayed. 
 
-When your hosting package was installed, OVH set up a "waiting" page while you were uploading files to your site. 
+When your hosting package was installed, OVHcloud set up a "waiting" page while you were uploading files to your site. 
 
-If you only upload your own files to the "www" folder and do not delete the OVH content first, then you may encounter this problem.
+If you only upload your own files to the "www" folder and do not delete the OVHcloud content first, then you may encounter this problem.
 
-To fix this issue, you will need to remove or rename the "index.html" file that was created by OVH.
+To fix this issue, you will need to remove or rename the "index.html" file that was created by OVHcloud.
 
 It may be useful to simply just rename the file so that you can re-enable it at any time, and use it as your own "waiting" page.
 
