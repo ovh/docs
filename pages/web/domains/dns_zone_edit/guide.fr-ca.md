@@ -1,12 +1,12 @@
 ---
 title: 'Éditer une zone DNS OVH'
 slug: editer-ma-zone-dns
-excerpt: 'Apprenez à éditer une zone DNS OVH via votre espace client'
+excerpt: 'Apprenez à éditer une zone DNS OVHcloud via votre espace client'
 section: 'DNS et zone DNS'
 order: 3
 ---
 
-**Dernière mise à jour le 21/02/2018**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
@@ -105,10 +105,10 @@ Il est également possible de modifier le TTL d'un enregistrement DNS. Cette man
 
 ## Aller plus loin
 
-[Généralités sur les serveurs DNS](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/){.external}.
+[Généralités sur les serveurs DNS](../generalites-serveurs-dns/){.external}.
 
-[Ajouter un champ SPF à la configuration de son nom de domaine](https://docs.ovh.com/fr/domains/le-champ-spf/){.external}.
+[Ajouter un champ SPF à la configuration de son nom de domaine](../le-champ-spf/){.external}.
 
-[Protégez votre domaine contre le Cache Poisoning avec le DNSSEC](https://www.ovh.com/fr/domaines/service_dnssec.xml){.external}.
+[Protégez votre domaine contre le Cache Poisoning avec le DNSSEC](https://www.ovh.com/ca/fr/domaines/service_dnssec.xml){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
