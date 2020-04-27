@@ -1,7 +1,7 @@
 ---
 title: Python : Calculating π number with Apache Spark
 slug: pi-spark
-excerpt: Calculting π number is a basic example about how using Apache Spark. Let's find how !
+excerpt: Calculting π number is a basic example about how to use Apache Spark. Let's find how !
 section: Tutorials
 order: 0
 ---
@@ -12,7 +12,7 @@ order: 0
 This guide  gives you a basic example about using Apache Spark and OVHcloud Data Processing.
 We will first explain how to calculte π number, then use a naive method and OVHcloud Data Processing.
 
-We want to calculate the value of π (pi) with the Monte-Carlo method. It is based on the following principle: we use a square whose side equals 1 and a circle of radius 1 and center (0,0) as shown in the graph below. Then take a random point inside this square, the probability that it is in the circle equals to π/4.
+We want to calculate the value of π (pi) with the Monte-Carlo method. It is based on the following principle: we use a square which side equals 1 and a circle of radius 1 and center (0,0) as shown in the graph below. Then take a random point inside this square, the probability that it is in the circle equals to π/4.
 
 ![Monte Carlo Graph](images/monte_carlo_graph.png){.thumbnail}
 
@@ -20,10 +20,10 @@ This probabilty can be estimated by picking a high number of random points and t
 
 
 ## Requirements 
-- Access to [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 - An OVHcloud account 
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details.)
-- Data Processing activated (see [How to activate the Data Processing](../30_HOWTO_activate_project){.external} for details.)
+- Data Processing activated (see [How to activate the Data Processing](../activation){.external} for details.)
 
 
 ## 1. Naive method
@@ -136,16 +136,16 @@ dependencies:
 
 You are now ready to submit this job.
 
-A detailled version about how to deploy a job in Python is explained on the guide [How to submit a job in Python](../31_HOWTO_submit-python-ui){.external}.
+A detailed version about how to deploy a job in Python is explained on the guide [How to submit a job in Python](../submit-python){.external}.
 
 Briefly, inside OVHcloud Data Processing control panel, click on "start a new job" then:
 
 - Put your Python Script and environment.yml file in a OVHcloud Object storage container (public or private) 
 - Select `Data Processing`{.action} from the left panel 
 - Select `Submit a new job`{.action}
-- Select Apache Spark, chose a region
+- Select Apache Spark, choose a region
 - Configure your Spark cluster (4vCores - 15GB memory for driver & executor template, executor count set to 4 recommended)
-- Name your job, select your object storage container, find your Python file (the environement file is detected automatically within your job's container), do not set additional arguments
+- Name your job, select your object storage container, find your Python file (the environment file is detected automatically within your job's container), do not set additional arguments
 - Submit your job (make sure that your code stops your SparkSession, otherwise it will be kept running)
 
 When the job is completed, you can access his log file, either in the object container 'odp-files' or in the dashboard of your job. Below are two extracts of this log.
@@ -154,7 +154,7 @@ Here is an extract :
 
 ![Logs](images/logs.png){.thumbnail}
 
-As you can see, the two Python's print functions are displayed in the logs. It is the easiest way to keep track of a job run. We also see Apache Spark logs. You can notice the 4 tasks executed simultanously by the executors. 
+As you can see, the two Python's print functions are displayed in the logs. It is the easiest way to keep track of a job run. We also see Apache Spark logs. You can notice the 4 tasks executed simultaneously by the executors. 
 
 
 
@@ -243,7 +243,7 @@ Here is a graphical representation of the results :
 
 ## Go further
 
-Calculating π number is a basic example, but Apache Spark is able of powerful feature on data processing and machine learning
+Calculating π number is a basic example, but Apache Spark is capable of powerful features on data processing and machine learning.
 
 If you are not familiar with Apache Spark, we recommend you to visit [Apache Spark's official website](https://spark.apache.org/) and [pyspark's documentation](https://spark.apache.org/docs/latest/api/python/index.html).
 
