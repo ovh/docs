@@ -1,7 +1,7 @@
 ---
 title: Python - Calculating π number with Apache Spark
 slug: pi-spark
-excerpt: Calculting π number is a basic example about how to use Apache Spark. Let's find out how to do it !
+excerpt: Calculting π number is a basic example about how to use Apache Spark. Let’s find out how to do it !
 section: Tutorials
 order: 1
 ---
