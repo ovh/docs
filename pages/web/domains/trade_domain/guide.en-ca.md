@@ -6,11 +6,11 @@ excerpt: 'This guide will provide you with information on how to change the hold
 section: 'Changing holders'
 ---
 
-**Last updated 30th January 2020**
+**Last updated 5th May 2020**
 
 ## Objective
 
-Beside [managing contacts](https://docs.ovh.com/gb/en/customer/managing-contacts/), to register a domain name, you need to enter information on the holder. This guide will detail how to do this.
+Beside [managing contacts](https://docs.ovh.com/ca/en/customer/managing-contacts/), to register a domain name, you need to enter information on the holder. This guide will detail how to do this.
 
 **Find out how to change a domain name holder.**
 
@@ -18,7 +18,7 @@ Beside [managing contacts](https://docs.ovh.com/gb/en/customer/managing-contacts
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/manager/web){.external}
 - a domain name registered with OVHcloud
-- access as the [admin contact](https://docs.ovh.com/gb/en/customer/managing-contacts/) for the domain name concerned
+- access as the [admin contact](https://docs.ovh.com/ca/en/customer/managing-contacts/) for the domain name concerned
 - permission from the current domain name holder to change holders
 
 ## Instructions
@@ -73,6 +73,6 @@ Once the two recipients confirm their agreement via email, the domain name holde
 
 ## Go further
 
-[Managing contacts for your services](https://docs.ovh.com/gb/en/customer/managing-contacts/)
+[Managing contacts for your services](https://docs.ovh.com/ca/en/customer/managing-contacts/)
 
 Join our community of users on https://community.ovh.com/en/.
