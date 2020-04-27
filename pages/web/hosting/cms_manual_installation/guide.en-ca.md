@@ -7,7 +7,7 @@ section: CMS
 legacy_guide_number: g1375
 ---
 
-**Last updated 4th February 2020**
+**Last updated 5th May 2020**
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
@@ -34,7 +34,7 @@ Our Web Hosting services are compatible with some of the most popular content ma
 >
 >You can install each of these CMS automatically in a few clicks from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). Please read the following guide:
 >
->[Setting up your website with 1-click modules](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules)
+>[Setting up your website with 1-click modules](https://docs.ovh.com/ca/en/hosting/web_hosting_web_hosting_modules)
 >
 
 
@@ -44,7 +44,7 @@ Our Web Hosting services are compatible with some of the most popular content ma
 WordPress is a web software you can use to create a website or blog. It is based on PHP technology and features a variety of tools including a spell checker and SEO plugins.
 
 
-- [WordPress Module](https://www.ovh.co.uk/web-hosting/website/wordpress.xml)
+- [WordPress Module](https://www.ovh.com/ca/en/web-hosting/website/wordpress.xml)
 
 OVHcloud support is not authorised to respond to any questions concerning WordPress configuration.
 
@@ -52,7 +52,7 @@ OVHcloud support is not authorised to respond to any questions concerning WordPr
 Please consult the forums dedicated to [WordPress](https://wordpress.org/support/).
 
 
-- WordPress installation guide: [CMS, manually install WordPress](https://docs.ovh.com/gb/en/hosting/cms_manually_install_wordpress)
+- WordPress installation guide: [CMS, manually install WordPress](https://docs.ovh.com/ca/en/hosting/cms_manually_install_wordpress)
 
 
 
@@ -65,14 +65,14 @@ Joomla! is an award-winning, easy to use software which enables you to build web
 The Joomla! community is very large and can provide help and contributions in all areas of the CMS (help, documentation, support, themes etc.)
 
 
-- [Joomla! Module](https://www.ovh.co.uk/web-hosting/website/joomla.xml)
+- [Joomla! Module](https://www.ovh.com/ca/en/web-hosting/website/joomla.xml)
 
 OVHcloud support is not authorised to respond to any questions concerning Joomla! configuration.
 
 
 Please consult the dedicated [Joomla!](http://forum.joomla.org/) forums instead. 
 
-- Joomla! installation guide: [CMS, manually install Joomla!](https://docs.ovh.com/gb/en/hosting/cms_manually_install_joomla)
+- Joomla! installation guide: [CMS, manually install Joomla!](https://docs.ovh.com/ca/en/hosting/cms_manually_install_joomla)
 
 
 
@@ -88,7 +88,7 @@ Between 2005 and now the software has continued to evolve. Version 1.7.6.2 is av
 
 
 
-- [PrestaShop Module](https://www.ovh.co.uk/solutions/prestashop/)
+- [PrestaShop Module](https://www.ovh.com/ca/en/web-hosting/website/prestashop.xml)
 
 OVHcloud support is not authorised to respond to any questions concerning PrestaShop configuration.
 
@@ -97,7 +97,7 @@ Please consult the forum dedicated to the
 [PrestaShop solution](https://www.prestashop.com/forums/).
 
 
-- PrestaShop installation guide: [CMS, manually install PrestaShop](https://docs.ovh.com/gb/en/hosting/cms_manually_install_prestashop)
+- PrestaShop installation guide: [CMS, manually install PrestaShop](https://docs.ovh.com/ca/en/hosting/cms_manually_install_prestashop)
 
 
 
@@ -109,14 +109,14 @@ Please consult the forum dedicated to the
 ### Drupal
 Drupal is a free open-source platform based on PHP and created in 2000. Drupal builds dynamic websites quickly. It is also customisable and used by 1% of websites worldwide. 
 
--  [Drupal Module](https://www.ovh.co.uk/web-hosting/website/drupal.xml)
+-  [Drupal Module](https://www.ovh.com/ca/en/web-hosting/website/drupal.xml)
 
 OVHcloud support is not authorised to respond to any questions concerning Drupal configuration.
 
 Please consult the forums dedicated to [Drupal](https://www.drupal.org).
 
 
--  Drupal installation guide: [CMS, manually install Drupal](https://docs.ovh.com/gb/en/hosting/cms_manually_install_drupal)
+-  Drupal installation guide: [CMS, manually install Drupal](https://docs.ovh.com/ca/en/hosting/cms_manually_install_drupal)
 
 
 
@@ -127,12 +127,12 @@ Please consult the forums dedicated to [Drupal](https://www.drupal.org).
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](https://docs.ovh.com/ca/en/hosting/migrating-website-to-ovh/){.external}
 
-[Publishing a website on your Web Hosting space](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external}
+[Publishing a website on your Web Hosting space](https://docs.ovh.com/ca/en/hosting/web_hosting_how_to_get_my_website_online/){.external}
 
-[Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}
+[Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/ca/en/hosting/multisites-configuring-multiple-websites/){.external}
 
-See our [Web Hosting solutions](https://www.ovh.co.uk/web-hosting/){.external}
+See our [Web Hosting solutions](https://www.ovh.com/ca/en/web-hosting/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.
