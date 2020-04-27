@@ -6,14 +6,15 @@ slug: cms_manually_install_wordpress
 legacy_guide_number: g1977
 ---
 
+**Last updated 5th May 2020**
 
 ## Part 1: preparing for installation
 
-## [b]Necessary tools[/b]
+## Necessary tools
 To install the WordPress platform on your shared hosting package, we advise you to get an FTP program such as FileZilla (free).
 
 ## Necessary credentials
-Make sure that you have your customer ID (nic-handle) and password so you can log in to your OVH customer account if necessary.
+Make sure that you have your customer ID (nic-handle) and password so you can log in to your OVHcloud customer account if necessary.
 
 
 - Get your FTP ID and password so you can log on to your hosting package. 
@@ -70,7 +71,7 @@ Once you are logged in to FileZilla.
 
 In the "Local site" section, which refers to the list of files on your computer, open the unzipped file entitled "WordPress" where your CMS files will be located. 
 
-In the "Remote site" section, which refers to your OVH shared hosting package, open the "www" folder. It is this folder that you need to drop your CMS files into. 
+In the "Remote site" section, which refers to your OVHcloud shared hosting package, open the "www" folder. It is this folder that you need to drop your CMS files into. 
 
 If this folder does not exist you can create it.
 
@@ -194,7 +195,7 @@ A look at the WordPress administration panel.
 
 
 ## Useful information
-OVH support is not authorised to answer questions about WordPress configuration.
+OVHcloud support is not authorised to answer questions about WordPress configuration.
 However, there is a user guide available: []({legacy}2053).
 
 Please consult the forum dedicated to WordPress.
@@ -207,11 +208,11 @@ Please consult the forum dedicated to WordPress.
 ## Typical error: site under construction
 You have set up your files on FTP, however the "site under construction" page is still displayed. 
 
-When your hosting system was installed, OVH set up a "waiting" page while you were uploading files to your site. 
+When your hosting system was installed, OVHcloud set up a "waiting" page while you were uploading files to your site. 
 
-If you only drop your own files into the "www" folder and do not delete the OVH content first, then you may encounter this problem.
+If you only drop your own files into the "www" folder and do not delete the OVHcloud content first, then you may encounter this problem.
 
-To correct/fix this issue, you will need to remove or rename the "index.html" file that was created by OVH.
+To correct/fix this issue, you will need to remove or rename the "index.html" file that was created by OVHcloud.
 
 It may be useful to simply just rename the file so that you can re-enable it at any time, and use it as your own "waiting" page.
 
