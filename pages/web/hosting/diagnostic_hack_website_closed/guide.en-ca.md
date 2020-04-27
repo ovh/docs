@@ -6,19 +6,19 @@ section: Diagnostic
 order: 1
 ---
 
-**Last updated 18th Febuary 2019 **
+**Last updated 5th May 2020**
 
 ## Objective
 
-Your Web Hosting plan allows you to upload one or more websites. You may have received a message from OVH informing you that a security action had just been taken on your service. This could render your websites inaccessible, or limit some of their features. However, this action is performed only in the event that a suspicious, and usually malicious, activity has occurred on your Web Hosting plan. 
+Your Web Hosting plan allows you to upload one or more websites. You may have received a message from OVHcloud informing you that a security action had just been taken on your service. This could render your websites inaccessible, or limit some of their features. However, this action is performed only in the event that a suspicious, and usually malicious, activity has occurred on your Web Hosting plan. 
 
 **Understand common security practices and learn how to react if your hosting is disabled.**
 
 ## Requirements
 
-- an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
+- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}
 - the permissions necessary to connect to your hosting plan’s storage space
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
@@ -41,7 +41,7 @@ As a result, for your security and that of all our customers, your hosting or so
 
 Before you start modifying anything on your website, make sure you understand what happened. To achieve this, you will find below several steps to help you in your analysis. 
 
-#### 1.1 Take note of OVH’s message
+#### 1.1 Take note of OVHcloud's message
 
 You should have received a message from OVH, informing you that an action related to the security of your hosting has been undertaken. Then take note of the information set out here. Its content will vary, depending on the specifics of your case. It is not possible to reference every possibility in this documentation. However, these elements will tell you:
 
@@ -74,11 +74,11 @@ However, it is still advisable to ensure, in the next step, that the various add
 
 This provides you with full visibility of your service and sites’ activities. The goal is to analyse what happened when the deactivation of your hosting took place.
 
-To view your hosting activity and logs, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the `Web`{.action} section. Click `Web Hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. There are two options here, depending on the specific information you want to collect.
+To view your hosting activity and logs, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the `Web`{.action} section. Click `Web Hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. There are two options here, depending on the specific information you want to collect.
 
 - **View your hosting activity**
 
-You can view your service’s activity, broken down by days, weeks or months. This way, you can see if any unusual activity has taken place, and take action before OVH detects it and disables your hosting. 
+You can view your service’s activity, broken down by days, weeks or months. This way, you can see if any unusual activity has taken place, and take action before OVHcloud detects it and disables your hosting. 
 
 To access to it, go to the `General Information`{.action} tab, then scroll down the page to the `Hosting Activity` section.
 
@@ -134,9 +134,9 @@ All you have to do is restore it on your hosting, replacing the contents of the 
 
 - **If OVH has a copy of your website (storage space and database)**:
 
-Depending on the date you want to revert your site to, OVH may be able to provide you with a backup. Refer to our guides to [Restoring your Web Hosting plan’s storage space](../restoring-ftp-filezilla-control-panel/){.external}, [Retrieving the backup of a Web Hosting plan database](https://docs.ovh.com/gb/en/hosting/web_hosting_database_export_guide/){.external}, and [Importing a backup into a Web Hosting plan database](../web_hosting_guide_to_importing_a_mysql_database/){.external} if you require assistance with this process. Also, make sure that (wherever possible) you match the dates of the selected backups.
+Depending on the date you want to revert your site to, OVHcloud may be able to provide you with a backup. Refer to our guides to [Restoring your Web Hosting plan’s storage space](../restoring-ftp-filezilla-control-panel/){.external}, [Retrieving the backup of a Web Hosting plan database](https://docs.ovh.com/ca/en/hosting/web_hosting_database_export_guide/){.external}, and [Importing a backup into a Web Hosting plan database](../web_hosting_guide_to_importing_a_mysql_database/){.external} if you require assistance with this process. Also, make sure that (wherever possible) you match the dates of the selected backups.
 
-- **If neither you or OVH has a copy of your website**: 
+- **If neither you or OVHcloud has a copy of your website**: 
 
 In this case, you will have to make the necessary corrections [by manually changing the code of your site](./#23-manually-fix-your-sites-code){.external}. 
 
@@ -149,7 +149,7 @@ This process may seem simple, but there are still some technical elements are to
 > If the action taken by OVH has rendered your site inaccessible, you will not be able to update it immediately. If this is the case, first complete step 3, [Reactivate your Web Hosting plan](./#step-3-reactivate-your-web-hosting-plan_1){.external}, to regain access to your site. Once this is done, you will be able to carry out the updates.
 >
 
-Log in to your website’s administration interface (not the OVH Control Panel). Use this to check if:
+Log in to your website’s administration interface (not the OVHcloud Control Panel). Use this to check if:
 
 - your website is up-to-date
 - every theme and add-on/plugin installed is up-to-date
@@ -173,17 +173,17 @@ If you do not use a turnkey solution-based site (such as a CMS as WordPress), or
 There is no universal procedure to follow, as each case is different. You can, however, use your hosting’s logs to more easily locate infected file(s) that will require action.
 
 ### Step 3: Reactivate your Web Hosting plan
-
+ 
 In order to reactivate your Web Hosting plan, you have to make changes to your storage space. To do so, you must change the permissions (or rights) for "705" of the root (considered to be the "/") of your storage space.
 
 > [!primary]
 >
-> If the message you have received from OVH explicitly states that you do not have the option of reactivating your hosting yourself, follow the instructions in this guide.
+> If the message you have received from OVHcloud explicitly states that you do not have the option of reactivating your hosting yourself, follow the instructions in this guide.
 >
 
 If you are able to reactivate your Web Hosting plan yourself, please have ready the information needed to connect to your storage space (i.e. FTP server, FTP user and password).
 
-To retrieve them, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and click `Hosting Plans`{.action} in the services bar on the left-hand side. Select the name of the hosting plan concerned, and click on the `FTP - SSH`{.action} tab. On this page, you can [change the password of the FTP user](../modify-ftp-user-password/){.external}, if necessary.
+To retrieve them, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and click `Hosting Plans`{.action} in the services bar on the left-hand side. Select the name of the hosting plan concerned, and click on the `FTP - SSH`{.action} tab. On this page, you can [change the password of the FTP user](../modify-ftp-user-password/){.external}, if necessary.
 
 ![hostingdeactivation](images/hosting-deactivation-step3.png){.thumbnail}
 
@@ -203,7 +203,7 @@ An "ok" answer should confirm that the change was successful. To check, try to a
 
 #### 3.2 Reopen your hosting with FTP Explorer (net2ftp")
 
-In the `FTP - SSH`{.action} tab of the OVH Control Panel, click the `FTP Explorer`{.action} button and connect to your storage space. Click the `Advanced`{.action} button, then the `Go`{.action} button, next to "Send arbitrary FTP commands to the FTP server".
+In the `FTP - SSH`{.action} tab of the OVHcloud Control Panel, click the `FTP Explorer`{.action} button and connect to your storage space. Click the `Advanced`{.action} button, then the `Go`{.action} button, next to "Send arbitrary FTP commands to the FTP server".
 
 ![hostingdeactivation](images/hosting-deactivation-step5.png){.thumbnail}
 
