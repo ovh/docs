@@ -68,7 +68,7 @@ Spark allows us to use this method much faster. Instead of making each calculati
 ### Step 1 : Write a python code using Apache Spark
 
 Here is a code sample written in Python do calculate π.
-Save it in a file called 'pi-spark.py' or download it from OVHcloud repository : ##### / BastienBellion
+Save it in a file called 'pi-spark.py'.
 
 
 ```python
