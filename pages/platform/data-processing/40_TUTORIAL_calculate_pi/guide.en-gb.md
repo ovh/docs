@@ -115,7 +115,7 @@ spark.stop()
 ### Step 2 : Create an environment.yml file
 
 All Python jobs launched via Data Processing require a conda environment.yml file in order to manage libraries used and versions.
-You can find how to generate them here: **put link to How to submit a Python job on the Data Processing platform using the OVHcloud manager** . 
+You can find how to generate them here: [How to submit a Python job on the Data Processing platform using the OVHcloud manager](../job-submit-form){.external} . 
 
 
 Both files must be placed in the same object container.
