@@ -1,7 +1,7 @@
 ---
-title: 'Premiers pas avec l''offre MX Plan'
+title: 'Premiers pas avec les e-mails de votre hébergement web'
 slug: generalites-sur-les-emails-mutualises
-excerpt: 'Découvrez comment bien débuter avec votre offre MX Plan'
+excerpt: 'Découvrez comment bien débuter avec les e-mails de votre hébergement web'
 section: 'Premiers pas'
 order: 1
 ---
@@ -12,7 +12,7 @@ order: 1
 
 Vous venez d'acquérir une solution MX Plan. Celle-ci vous permet de bénéficier d'adresses e-mail, avec lesquelles vous pouvez envoyer et recevoir des messages depuis l’appareil de votre choix. 
 
-**Découvrez comment bien débuter avec votre offre MX Plan.**
+**Découvrez comment bien débuter avec les e-mails de votre hébergement web.**
 
 ## Prérequis
 
