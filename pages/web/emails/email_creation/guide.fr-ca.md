@@ -1,7 +1,7 @@
 ---
-title: 'Créer une adresse e-mail avec son offre MX Plan'
+title: 'Créer une adresse e-mail avec son offre d'hébergement Web'
 slug: creation-dune-adresse-e-mail
-excerpt: 'Apprenez à créer une adresse e-mail avec votre offre MX Plan'
+excerpt: 'Apprenez à créer une adresse e-mail avec votre offre d'hébergement Web'
 section: 'Premiers pas'
 order: 2
 ---
@@ -12,7 +12,7 @@ order: 2
 
 Les adresses e-mail de l’offre MX Plan permettent d’envoyer et de recevoir vos messages depuis l’appareil de votre choix.
 
-**Apprenez à créer une adresse e-mail avec votre offre MX Plan.**
+**Apprenez à créer une adresse e-mail avec votre offre d'hébergement Web.**
 
 ## Prérequis
 
