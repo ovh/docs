@@ -6,6 +6,7 @@ excerpt: Ce guide a pour objectif de vous lister les codes de retour d’un serv
 section: Diagnostic
 ---
 
+**Dernière mise à jour le 05/05/2020**
 
 ## Erreurs HTTP
 
@@ -37,7 +38,7 @@ Pour une lecture plus facile, nous allons scinder ces catégories en deux sectio
 - 404 : Document introuvable
 - 414 : URL trop longue
 - 415 : Le format du média n'est pas supporté
-- 500 : Erreur interne du serveur ( []({legacy}1987){.ref} )
+- 500 : Erreur interne du serveur ( [Que faire en cas d’erreur 500 Internal Server Error ?](/erreur-500-internal-server-error/){.external} )
 - 501 : Action non gérée par le serveur
 - 503 : Indisponiblité temporaire du serveur
 - 505 : Version du protocole non supporté par le serveur
