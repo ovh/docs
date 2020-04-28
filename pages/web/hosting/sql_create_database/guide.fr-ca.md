@@ -1,30 +1,30 @@
 ---
 title: Créer une base de données sur son hébergement web
 slug: creer-base-de-donnees
-excerpt: Apprenez à créer une base de données sur votre hébergement web OVH
+excerpt: Apprenez à créer une base de données sur votre hébergement web OVHcloud
 section: Bases de données
 order: 1
 ---
 
-**Dernière mise à jour le 27/04/2018**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
 Une base de données (*database*, « DB » ou « BDD ») permet de stocker des éléments dits dynamiques, comme des commentaires ou des articles par exemple. Ces bases sont aujourd'hui utilisées par la quasi-totalité des systèmes de gestion de contenu (*Content Management System* ou CMS) comme WordPress, Joomla!.
 
-**Apprenez à créer une base de données sur votre hébergement web OVH.**
+**Apprenez à créer une base de données sur votre hébergement web OVHcloud.**
 
 ## Prérequis
 
-- Disposer d'une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Disposer d'une offre d’[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
 - Avoir la possibilité de créer des bases de données dans le cadre de votre offre.
-- Disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
 ### Étape 1 : accéder à la gestion des bases de données de l'hébergement
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web.
 
@@ -42,7 +42,7 @@ Dans la fenêtre qui s'affiche, sélectionnez les informations souhaitées, puis
 
 |Information|Description|  
 |---|---|  
-|Moteur de base de données|Sélectionnez le moteur de base de données qui sera utilisé par cette dernière. Les bases de données comprises dans une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} ne proposent que le moteur MySQL.|  
+|Moteur de base de données|Sélectionnez le moteur de base de données qui sera utilisé par cette dernière. Les bases de données comprises dans une offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} ne proposent que le moteur MySQL.|  
 |Version de la base de données|Sélectionnez la version utilisée par le moteur de la base de données. Veillez à la compatibilité de votre site avec la version choisie. |  
 |Type de base de données|Sélectionnez la capacité de la base de données. Il s'agit de l'espace dont bénéficiera votre base pour stocker des données.|   
 
@@ -76,9 +76,9 @@ Vérifiez alors les informations qui s'affichent dans le récapitulatif ; si cel
 
 Il ne reste plus qu'à utiliser votre base de données. Pour cela, munissez-vous des informations permettant de s'y connecter : le nom d'utilisateur et le mot de passe que vous venez de définir, le nom de la base de données que vous venez également de personnaliser, ainsi que de l'adresse du serveur.
 
-Ces informations sont indispensables pour relier votre site internet à la base de données. Selon le site internet utilisé, ce lien doit être réalisé manuellement ou via une interface générée par le site lui-même. Ce paramétrage étant inhérent à la configuration de votre site et non à OVH, nous vous recommandons de vous rapprocher de l'éditeur du site internet ou de faire appel à un professionnel comme un prestataire spécialisé si vous souhaitez obtenir de l'aide pour effectuer cette manipulation.
+Ces informations sont indispensables pour relier votre site internet à la base de données. Selon le site internet utilisé, ce lien doit être réalisé manuellement ou via une interface générée par le site lui-même. Ce paramétrage étant inhérent à la configuration de votre site et non à OVHcloud, nous vous recommandons de vous rapprocher de l'éditeur du site internet ou de faire appel à un professionnel comme un prestataire spécialisé si vous souhaitez obtenir de l'aide pour effectuer cette manipulation.
 
-OVH met à votre disposition un applicatif en ligne : phpMyAdmin. Pour connaître le lien d'accès à ce dernier, toujours positionné sur l'onglet `Bases de données`{.action}, cliquez dans le tableau sur les trois points à droite de la base de données concernée puis sur `Accéder à phpMyAdmin`{.action}. Vous devrez y renseigner les identifiants de la base créée chez OVH.
+OVHcloud met à votre disposition un applicatif en ligne : phpMyAdmin. Pour connaître le lien d'accès à ce dernier, toujours positionné sur l'onglet `Bases de données`{.action}, cliquez dans le tableau sur les trois points à droite de la base de données concernée puis sur `Accéder à phpMyAdmin`{.action}. Vous devrez y renseigner les identifiants de la base créée chez OVHcloud.
 
 ## Aller plus loin
 
