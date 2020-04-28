@@ -6,17 +6,17 @@ section: 'Primeros pasos'
 order: 4
 ---
 
-**Última actualización: 26/03/2019**
+**Última actualización: 05/05/2020**
 
 ## Objetivo
 
-Las direcciones de correo de la solución MX Plan permiten enviar y recibir mensajes desde cualquier dispositivo. Para facilitar el acceso a ellos, OVH pone a su disposición un cliente de correo online (o «webmail»), Outlook en la Web, al que se puede acceder a través de internet [en esta dirección](https://www.ovh.es/mail/){.external}.
+Las direcciones de correo de la solución MX Plan permiten enviar y recibir mensajes desde cualquier dispositivo. Para facilitar el acceso a ellos, OVHcloud pone a su disposición un cliente de correo online (o «webmail»), Outlook en la Web, al que se puede acceder a través de internet [en esta dirección](https://www.ovh.com/world/es/mail/){.external}.
 
 **Esta guía explica cómo realizar las operaciones más comunes sobre una dirección de correo electrónico desde el webmail Outlook en la Web.**
 
 ## Requisitos
 
-- Tener una solución MX Plan (incluida en un [plan de hosting de OVH]({ovh_www}/hosting/){.external}, en un [alojamiento gratuito Start 10M]({ovh_www}/dominios/oferta_hosting_start10m.xml){.external} o contratada por separado).
+- Tener una solución MX Plan (incluida en un [plan de hosting de OVHcloud]({ovh_www}/hosting/){.external}, en un [alojamiento gratuito Start 10M]({ovh_www}/dominios/oferta_hosting_start10m.xml){.external} o contratada por separado).
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera utilizar.
 
 ## Procedimiento
@@ -36,12 +36,12 @@ El webmail Outlook en la Web permite realizar diversas operaciones en una direcc
 
 > [!primary]
 >
-> Es posible que algunas acciones no se describan en esta guía. En ese caso, no podemos orientarle sobre cómo ejecutarlas, ya que Outlook en la Web no pertenece a OVH.
+> Es posible que algunas acciones no se describan en esta guía. En ese caso, no podemos orientarle sobre cómo ejecutarlas, ya que Outlook en la Web no pertenece a OVHcloud.
 >
 
 ### 1. Conectarse a Outlook en la Web
 
-Para conectarse al webmail Outlook en la Web con su dirección de correo, vaya a la página de [conexión al webmail](https://www.ovh.es/mail/){.external}. Introduzca su dirección de correo electrónico completa y su contraseña y haga clic en el botón `Conexión`{.action}.
+Para conectarse al webmail Outlook en la Web con su dirección de correo, vaya a la página de [conexión al webmail](https://www.ovh.com/world/es/mail/){.external}. Introduzca su dirección de correo electrónico completa y su contraseña y haga clic en el botón `Conexión`{.action}.
 
 ![Outlook en la Web](images/use-owa-step1.png){.thumbnail}
 
@@ -208,4 +208,4 @@ Puede consultar todas las opciones disponibles en el menú situado en la columna
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
