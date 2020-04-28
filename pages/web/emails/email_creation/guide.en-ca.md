@@ -1,35 +1,35 @@
 ---
-title: 'Creating an email address with an MX Plan solution'
+title: 'Creating an email address'
 slug: hosted_email_how_to_set_up_an_email_address
-excerpt: 'Find out how to create an email address with an MX Plan solution'
+excerpt: 'Find out how to create an email address with an OVHcloud Web Hosting plan'
 section: 'Getting started'
 order: 1
 ---
 
-**Last updated 26th March 2019**
+**Last updated 5th May 2020**
 
 ## Objective
 
 You can use an email address in your MX Plan solution to send and receive emails through your preferred device.
 
-**Find out how to create an email address with an MX Plan solution.**
+**Find out how to create an email address with an OVHcloud Web Hosting plan.**
 
 ## Requirements
 
-- an MX Plan solution, available via a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}, [a free Start 10M hosting solution](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.external} including a domain name (activated in advance), or the MX Plan solution, ordered separately
+- an MX Plan solution, available via a [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}, [a free Start 10M hosting solution](https://www.ovh.com/ca/domains/start10m_hosting_offer.xml){.external} including a domain name (activated in advance), or the MX Plan solution, ordered separately
 - the ability to create email addresses as part of your solution
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 > [!primary]
 >
-> Regarding the free Start 10M hosting solution, you will need to activate it beforehand in order to create an email address. You can do this via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to the domain name concerned.
+> Regarding the free Start 10M hosting solution, you will need to activate it beforehand in order to create an email address. You can do this via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to the domain name concerned.
 >
 
 ## Instructions
 
 Depending on when your service was activated or if [it was recently migrated](https://www.ovh.co.uk/mxplan-migration/){.external}, you will have either the legacy version or the new version of the MX Plan solution. Before you proceed any further, you will need to establish which version you are using. 
 
-To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and go to the `Web`{.action} section. Click `Emails`{.action} in the service bar on the left-hand side, and then choose the name of the MX Plan service concerned. Then you can proceed in accordance with the version you are using.
+To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and go to the `Web`{.action} section. Click `Emails`{.action} in the service bar on the left-hand side, and then choose the name of the MX Plan service concerned. Then you can proceed in accordance with the version you are using.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|
@@ -76,9 +76,9 @@ Once you have created your email addresses, you can start using them straight aw
 
 ##### 1. Use Outlook Web Access (OWA) webmail.
 
-Go to the [Webmail login](https://www.ovh.co.uk/mail/){.external} page, then enter your email address and password. Then click the `Login`{.action} button.
+Go to the [Webmail login](https://www.ovh.com/ca/en/mail/){.external} page, then enter your email address and password. Then click the `Login`{.action} button.
 
-When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/){.external}.
+When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/){.external}.
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -88,7 +88,7 @@ You will need to configure your email address on the device you want to use (e.g
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/){.external}|[Outlook 2016](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016/){.external}|[MacOS Mail (latest version)](https://docs.ovh.com/gb/en/emails/guide-configuring-mail-on-macos/){.external}|[Android (latest version)](https://docs.ovh.com/gb/en/emails/configuration-android/){.external}|[Gmail](https://docs.ovh.com/gb/en/emails/gmail-configuration/){.external}|[Mail for iPhone and iPad (iOS 7 and later)](https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/){.external}|
+|[Windows 10](https://docs.ovh.com/ca/en/emails/mail-configuration-windows-10/){.external}|[Outlook 2016](https://docs.ovh.com/ca/en/emails/configuration-outlook-2016/){.external}|[MacOS Mail (latest version)](https://docs.ovh.com/ca/en/emails/guide-configuring-mail-on-macos/){.external}|[Android (latest version)](https://docs.ovh.com/ca/en/emails/configuration-android/){.external}|[Gmail](https://docs.ovh.com/ca/en/emails/gmail-configuration/){.external}|[Mail for iPhone and iPad (iOS 7 and later)](https://docs.ovh.com/ca/en/emails/email_hosting_iphone_ios_91_configuration/){.external}|
 
 If you just need the information required to configure your email address, the settings to use are listed below:
 
@@ -130,7 +130,7 @@ In the pop-up window, enter the following information:
 |Information|Description|  
 |---|---|  
 |User name|Enter the name for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.|  
-|Account description|Enter a short description that will distinguish this account from any other accounts added in the OVH Control Panel.|  
+|Account description|Enter a short description that will distinguish this account from any other accounts added in the OVHcloud Control Panel.|  
 |Account size|Select the size of account you want. This size refers to the space available to your account for storing messages.|  
 |Password|Type in a password, and confirm it. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name, and date of birth) and we also recommend renewing it regularly.|
 
@@ -148,7 +148,7 @@ Once you have created your email addresses, you can start using them straight aw
 
 ##### 1. Use Roundcube webmail.
 
-Go to the [Webmail login](https://www.ovh.co.uk/mail/){.external} page, then enter your email address and password. Then click the `Login`{.action} button.
+Go to the [Webmail login](https://www.ovh.com/ca/en/mail/) page, then enter your email address and password. Then click the `Login`{.action} button.
 
 Your inbox will then appear.
 
@@ -160,7 +160,7 @@ You will need to configure your email address on the device you want to use (e.g
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/){.external}|[Outlook 2016](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016/){.external}|[MacOS Mail (latest version)](https://docs.ovh.com/gb/en/emails/guide-configuring-mail-on-macos/){.external}|[Android (latest version)](https://docs.ovh.com/gb/en/emails/configuration-android/){.external}|[Gmail](https://docs.ovh.com/gb/en/emails/gmail-configuration/){.external}|[Mail for iPhone and iPad (iOS 7 and later)](https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/){.external}|
+|[Windows 10](https://docs.ovh.com/ca/en/emails/mail-configuration-windows-10/){.external}|[Outlook 2016](https://docs.ovh.com/ca/en/emails/configuration-outlook-2016/){.external}|[MacOS Mail (latest version)](https://docs.ovh.com/ca/en/emails/guide-configuring-mail-on-macos/){.external}|[Android (latest version)](https://docs.ovh.com/ca/en/emails/configuration-android/){.external}|[Gmail](https://docs.ovh.com/ca/en/emails/gmail-configuration/){.external}|[Mail for iPhone and iPad (iOS 7 and later)](https://docs.ovh.com/ca/en/emails/email_hosting_iphone_ios_91_configuration/){.external}|
 
 If you just need the information required to configure your email address, the settings to use are listed below:
 
