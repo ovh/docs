@@ -5,29 +5,29 @@ excerpt: Find out how to get started with a Private SQL service
 section: Private SQL
 ---
 
-**Last updated 4th January 2018**
+**Last updated 5th May 2020**
 
 ## Objective
 
-With the Private SQL service, you can get an SQL instance that works hand-in-hand with an OVH web hosting plan, with dedicated, guaranteed resources. You can get even higher performance and flexibility on the database systems that are available, as well as those that you can create. This service is generally designed for customers with more specific requirements.
+With the Private SQL service, you can get an SQL instance that works hand-in-hand with an OVHcloud web hosting plan, with dedicated, guaranteed resources. You can get even higher performance and flexibility on the database systems that are available, as well as those that you can create. This service is generally designed for customers with more specific requirements.
 
 **Learn how to get started with a Private SQL service.**
 
 ## Requirements
 
-- You must have a Private SQL instance (included in [web hosting plans](https://www.ovh.co.uk/web-hosting/){.external}, or available to order as an [SQL option](https://www.ovh.co.uk/web-hosting/sql-options.xml){.external}).
-- You must have a [web hosting plan](https://www.ovh.co.uk/web-hosting/){.external} hosted in the same datacentre as your Private SQL instance (you can view this information in your OVH Control Panel).
-- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must have a Private SQL instance (included in [web hosting plans](https://www.ovh.com/ca/en/web-hosting/){.external}, or available to order as an [SQL option](https://www.ovh.com/ca/en/web-hosting/sql-options.xml){.external}).
+- You must have a [web hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external} hosted in the same datacentre as your Private SQL instance (you can view this information in your OVHcloud Control Panel).
+- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
 
 ### View general information on the instance
 
-In the services bar on the left-hand side of your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then to the SQL instance concerned. Click on the `General information`{.action} tab.
+In the services bar on the left-hand side of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then to the SQL instance concerned. Click on the `General information`{.action} tab.
 
 > [!primary]
 >
-> The name of the Private SQL service may be displayed in two ways in the OVH Control Panel:
+> The name of the Private SQL service may be displayed in two ways in the OVHcloud Control Panel:
 >
 > - it either contains a part of your NIC handle and ends with three figures (001 for the first Private SQL service installed, 002 for the second, etc.)
 > - or it starts with *privatesql-*, then contains a part of your NIC handle, and ends with three figures (001 for the first Private SQL service installed, 002 for the second, etc.).
@@ -41,9 +41,9 @@ You can also view important information on your SQL instance. Please take a few 
 |Type|Shows the database system used by the server. If you are unsure if the correct type is being used, please note that the most recent version is “MySQL”, but other versions also exist (PostgreSQL, MariaDB). For example, if you are using WordPress for your website, a MySQL system is perfect for it.|
 |Version|Shows the database system version used by the server. Check that your website is compatible with the version you have chosen.|
 |RAM|Shows the RAM available for your instance, also shows if you are close to exceeding the RAM limit. Your Private SQL instance uses dedicated, guaranteed resources: its RAM. If required, you can scale the RAM, and receive warnings if you are consuming all of your instance’s RAM resources.|
-|Infrastructure|Shows the infrastructure used by your instance. This information is inherent to the OVH infrastructure.|
-|Datacentre|Shows the datacentre in which the instance has been created. Checks that your instance is hosted in is the same datacentre as the OVH web hosting plan that your website is based (or will be based) on.|
-|Host|Shows the OVH server your instance has been created in. This information is inherent to the OVH infrastructure, and can be used in our communications on [OVH incidents](http://status.ovh.net/){.external}.|
+|Infrastructure|Shows the infrastructure used by your instance. This information is inherent to the OVHcloud infrastructure.|
+|Datacentre|Shows the datacentre in which the instance has been created. Checks that your instance is hosted in is the same datacentre as the OVHcloud web hosting plan that your website is based (or will be based) on.|
+|Host|Shows the OVHcloud server your instance has been created in. This information is inherent to the OVHcloud infrastructure, and can be used in our communications on [OVHcloud incidents](http://status.ovh.net/){.external}.|
 
 ![General information](images/privatesql01-General-information.png){.thumbnail}
 
@@ -103,9 +103,9 @@ On the new page, select the permission by clicking on it. For standard usage, se
 
 ### Importing a database (optional)
 
-This step only applies if you want to import a backup of a database that already exists (which is essential if you are migrating your website to OVH, or if you are migrating your databases to your new Private SQL instance). If you do not need to import any databases, you can move to the next step.
+This step only applies if you want to import a backup of a database that already exists (which is essential if you are migrating your website to OVHcloud, or if you are migrating your databases to your new Private SQL instance). If you do not need to import any databases, you can move to the next step.
 
-There are several techniques you can choose from to import a database. OVH offers a tool for this in its Control Panel. We will focus on this tool. To use another import method, please refer to our documentation.
+There are several techniques you can choose from to import a database. OVHcloud offers a tool for this in its Control Panel. We will focus on this tool. To use another import method, please refer to our documentation.
 
 #### Step 1: access a database import
 
