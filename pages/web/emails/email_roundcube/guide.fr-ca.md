@@ -6,19 +6,22 @@ section: 'Premiers pas'
 order: 5
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 ## Ou et comment se connecter au Webmail RoundCube ?
 
-### Via le site OVH.com
-Rendez-vous sur le site [OVH.com](http://www.ovh.com){.external} et cliquez sur "Webmail" en haut à droite.
+### Via le site OVHcloud.com
 
+Rendez-vous sur le site [OVHcloud](http://www.ovh.com){.external} et cliquez sur "Webmail" en haut à droite.
 
 ![hosting](images/img_2413.jpg){.thumbnail}
 
 
-### Interface generale de Webmail OVH
-Vous arrivez alors sur une interface de saisie d'adresse e-mail. Cette interface permet de vous rediriger directement vers le Webmail propre à votre service mail OVH sans à vous soucier de quoi que ce soit.
+### Interface generale de Webmail OVHcloud
 
-Si vous connaissez déjà votre type d'offre mail OVH, vous pouvez accéder directement au Webmail de votre choix en bas de page en cliquant sur .
+Vous arrivez alors sur une interface de saisie d'adresse e-mail. Cette interface permet de vous rediriger directement vers le Webmail propre à votre service mail OVHcloud sans à vous soucier de quoi que ce soit.
+
+Si vous connaissez déjà votre type d'offre mail OVHcloud, vous pouvez accéder directement au Webmail de votre choix en bas de page en cliquant sur .
 
 En cliquant sur , vous accéderez directement aux guides relatifs au Webmail survolé.
 
@@ -129,7 +132,7 @@ Lorsque vous cliquez sur l'option "...Plus", vous obtenez ce menu contextuel. Vo
 - Télécharger : vous permet de télécharger sur votre ordinateur l'e-mail au format .eml ;
 - Éditer en tant que nouveau message : vous permet d'éditer un e-mail en conservant sa mise en page d'origine ;
 - Voir la source : permet d'afficher la source complète du message. Très utile lorsqu'un [entête vous est
-demandé](https://www.ovh.com/fr/g1365.recuperation-entetes-e-mail#webmail_roundcube){.external} !
+demandé](../recuperation-des-entetes-e-mails/){.external} !
 - Ouvrir dans une nouvelle fenêtre : vous permet d'ouvrir le message dans une nouvelle fenêtre (utile pour consulter/ouvrir plusieurs messages à la fois)
 
 
@@ -312,9 +315,9 @@ Pour insérer la signature associée à cette identité, référez-vous à la se
 
 
 ### Mettre en place une signature avec une image (1)
-Cette étape nécessite que l'image soit hébergée sur un serveur (votre hébergement OVH ou autre).
+Cette étape nécessite que l'image soit hébergée sur un serveur (votre hébergement OVHcloud ou autre).
 
-Afin de placer une image sur votre hébergement OVH, veuillez suivre le guide disponible [ici](http://guides.ovh.com/FtpFileZilla){.external}.
+Afin de placer une image sur votre hébergement OVHcloud, veuillez suivre le guide disponible [ici](http://guides.ovh.com/FtpFileZilla){.external}.
 
 En cochant Signature HTML, l'éditeur WYSWYG* apparaît comme montré ci-contre. Cliquez sur le carré  **HTML**  afin d'ouvrir la fenêtre qui vous permettra d'insérer du code HTML. Pour ajouter une image vous pouvez ajouter le code suivant :
 
@@ -358,9 +361,9 @@ Dans Identités, cliquez sur le "+" afin d'ajouter une nouvelle identité.
 
 
 ### Nouvelle identite/signature (2)
-Dans l'exemple ci-contre, je m'apprête à créer une identité nommée Guides OVH. Celle-ci est rattachée à l'adresse [no-reply@ovh.net](mailto:no-reply@ovh.net){.external}, adresse que je souhaite montrer à mes correspondants. Lorsque ceux-ci répondront à mes messages, la réponse sera envoyée à l'adresse [support@ovh.net](mailto:support@ovh.net){.external}. Je personnalise ma signature (facultatif) et clique sur Enregistrer.
+Dans l'exemple ci-contre, je m'apprête à créer une identité nommée Guides OVHcloud. Celle-ci est rattachée à l'adresse [no-reply@ovh.net](mailto:no-reply@ovh.net){.external}, adresse que je souhaite montrer à mes correspondants. Lorsque ceux-ci répondront à mes messages, la réponse sera envoyée à l'adresse [support@ovh.net](mailto:support@ovh.net){.external}. Je personnalise ma signature (facultatif) et clique sur Enregistrer.
 
-Une fois enregistrée, ma nouvelle identité Guides OVH <[no-reply@ovh.net](mailto:no-reply@ovh.net){.external}> apparaît dans la colonne des identités.
+Une fois enregistrée, ma nouvelle identité Guides OVHcloud <[no-reply@ovh.net](mailto:no-reply@ovh.net){.external}> apparaît dans la colonne des identités.
 
 Pour insérer la signature associée à cette identité, référez-vous à la section [Insérer une signature au format HTML](#SIGNATURE){.external}.
 
@@ -412,7 +415,7 @@ L'envoi précédent a été effectué pour [support@ovh.net](mailto:support@ovh.
 
 Si l'e-mail n'est pas reçu automatiquement, vous pouvez cliquer sur "Actualiser" tout en haut à gauche (flèches horizontales opposées).
 
-On constate bien que l'expéditeur est Support OVH et la signature est affichée correctement.
+On constate bien que l'expéditeur est Support OVHcloud et la signature est affichée correctement.
 
 
 ![hosting](images/img_1408.jpg){.thumbnail}
@@ -459,7 +462,7 @@ Selon vos besoins, votre société et votre quotidien, il peut être très utile
 
 Pour commencer, cliquez sur l'icône du Carnet d'adresses RoundCube (personnage en haut à droite) afin d'accéder à l'interface ci-contre.
 
-Afin de mettre tous les contacts qui seront en lien avec les guides OVH, nous décidons de créer un groupe intitulé "Guides".
+Afin de mettre tous les contacts qui seront en lien avec les guides OVHcloud, nous décidons de créer un groupe intitulé "Guides".
 
 Pour cela, cliquez sur le "+" en bas à gauche afin de créer un groupe de contacts. Le curseur se place automatiquement dans la zone de saisie du nom, comme sur la capture ci-contre
 
@@ -587,7 +590,7 @@ Saisissez votre/vos critère(s) de recherche et cliquez sur "Rechercher" (le bou
 
 
 ### Exporter votre carnet d'adresses
-Vous souhaitez récupérer l'ensemble de vos contacts actuels de votre Webmail RoundCube OVH par le biais d'un export de fichier de votre carnet d'adresses. Pour cela, cliquez sur l'option "Exporter" dans le bandeau du haut.
+Vous souhaitez récupérer l'ensemble de vos contacts actuels de votre Webmail RoundCube OVHcloud par le biais d'un export de fichier de votre carnet d'adresses. Pour cela, cliquez sur l'option "Exporter" dans le bandeau du haut.
 
 En cliquant dessus, un fichier rcube_contacts.vcf est généré et vous est proposé au téléchargement.
 
