@@ -5,18 +5,18 @@ excerpt: Découvrez comment bien débuter avec un SQL Privé
 section: SQL Privé
 ---
 
-**Dernière mise à jour le 27/11/2017**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
-Le service SQL Privé permet de bénéficier d’une instance SQL fonctionnant de pair avec un hébergement web OVH et disposant de ressources dédiées et garanties. Cela offre davantage de performance et de flexibilité sur les systèmes de bases de données disponibles, ainsi que sur celles qu’il est possible de créer. Ce service s’adresse généralement à des clients ayant des besoins plus spécifiques.
+Le service SQL Privé permet de bénéficier d’une instance SQL fonctionnant de pair avec un hébergement web OVHcloud et disposant de ressources dédiées et garanties. Cela offre davantage de performance et de flexibilité sur les systèmes de bases de données disponibles, ainsi que sur celles qu’il est possible de créer. Ce service s’adresse généralement à des clients ayant des besoins plus spécifiques.
 
 **Découvrez comment bien débuter avec un SQL Privé.**
 
 ## Prérequis
 
-- Disposer d'une instance SQL Privé (incluse dans une offre d'[hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} ou commandée via une [option SQL](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external}).
-- Disposer d'un [hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} hébergé sur le même centre de données que votre instance SQL Privé (cette information est visible dans l'espace client OVH).
+- Disposer d'une instance SQL Privé (incluse dans une offre d'[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external} ou commandée via une [option SQL](https://www.ovh.com/ca/fr/hebergement-web/options-sql.xml){.external}).
+- Disposer d'un [hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external} hébergé sur le même centre de données que votre instance SQL Privé (cette information est visible dans l'espace client OVHcloud).
 - Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
@@ -24,11 +24,11 @@ Le service SQL Privé permet de bénéficier d’une instance SQL fonctionnant d
 
 ### Visionner les informations générales de l'instance
 
-Dans la barre de services à gauche de votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, rendez-vous dans la section `Bases de données`{.action}, puis sur l'instance SQL concernée. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}.
+Dans la barre de services à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, rendez-vous dans la section `Bases de données`{.action}, puis sur l'instance SQL concernée. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}.
 
 > [!primary]
 >
-> Le nom du service SQL Privé dans votre espace client OVH peut s'afficher de deux manières :
+> Le nom du service SQL Privé dans votre espace client OVHcloud peut s'afficher de deux manières :
 >
 > - soit il contient une partie de votre référence client et se termine par trois chiffres (001 pour le premier service SQL Privé installé, 002 pour le second, etc.) ;
 > - soit il débute par *sqlprive-*, puis contient une partie de votre référence client et se termine par trois chiffres (001 pour le premier service SQL Privé installé, 002 pour le second, etc.).
@@ -42,9 +42,9 @@ Vous pouvez y consulter les informations importantes concernant votre instance S
 |Type|Affiche le système de base de données utilisée par le serveur. Si vous ne savez pas si le type utilisé est correct, sachez que le plus courant est "MySQL", mais que d'autres existent également (PostgreSQL, MariaDB). À titre d'exemple, si votre site est un WordPress, un système MySQL convient parfaitement.|
 |Version|Affiche la version du système de base de données utilisée par le serveur. Veillez à la compatibilité de votre site avec la version choisie.|
 |RAM|Affiche la mémoire vive disponible pour votre instance ainsi que les éventuels dépassements de mémoire. Votre instance SQL Privé dispose de ressources dédiées et garanties : sa mémoire RAM. Si besoin, vous pouvez faire évoluer cette dernière et être prévenu si vous consommez toutes les ressources mémoires de votre instance.|
-|Infrastructure|Affiche l'infrastructure utilisée par votre instance. Il s'agit d'une information inhérente à l'infrastructure d'OVH.|
-|Datacenter|Affiche le centre de données dans lequel l'instance a été créée. Assurez-vous que le centre de données de votre instance soit le même que celui de l'hébergement web OVH où votre site internet est, ou sera, hébergé.|
-|Host|Affiche le serveur OVH dans lequel votre instance est créée. Il s'agit d'une information inhérente à l'infrastructure d'OVH et peut être utilisée dans nos communications liées aux [incidents OVH](http://travaux.ovh.net/){.external}.|
+|Infrastructure|Affiche l'infrastructure utilisée par votre instance. Il s'agit d'une information inhérente à l'infrastructure d'OVHcloud.|
+|Datacenter|Affiche le centre de données dans lequel l'instance a été créée. Assurez-vous que le centre de données de votre instance soit le même que celui de l'hébergement web OVHcloud où votre site internet est, ou sera, hébergé.|
+|Host|Affiche le serveur OVHcloud dans lequel votre instance est créée. Il s'agit d'une information inhérente à l'infrastructure d'OVHcloud et peut être utilisée dans nos communications liées aux [incidents OVHcloud](http://travaux.ovh.net/){.external}.|
 
 ![Informations générales](images/privatesql01-General-information.png){.thumbnail}
 
@@ -111,9 +111,9 @@ Sur la nouvelle page, sélectionnez le droit souhaité en cliquant dessus. Pour 
 
 ### Importation d'une base de données (facultatif)
 
-Cette étape s'applique uniquement si vous souhaitez importer une sauvegarde d'une base de données déjà existante (indispensable si vous migrez votre site chez OVH ou si vous migrez vos bases de données vers votre nouvelle instance SQL Privé). Si vous n'avez aucune base de données à importer, vous pouvez passer à la manipulation suivante.
+Cette étape s'applique uniquement si vous souhaitez importer une sauvegarde d'une base de données déjà existante (indispensable si vous migrez votre site chez OVHcloud ou si vous migrez vos bases de données vers votre nouvelle instance SQL Privé). Si vous n'avez aucune base de données à importer, vous pouvez passer à la manipulation suivante.
 
-Selon votre choix, il existe plusieurs techniques pour importer une base de données. OVH met à disposition dans son espace client un outil permettant de le faire. Nous allons nous intéresser spécifiquement à cet outil. Pour utiliser une autre méthode d'importation, reportez-vous aux documentations suivantes : pour une [base de données MySQL ou MariaDB](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/#export-et-import-de-base-de-donnees-mysql-ou-mariadb-hors-espace-client_1){.external} ; pour une [base de données en PostgreSQL](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/#export-et-import-de-base-de-donnees-postgresql-hors-espace-client_1){.external}.
+Selon votre choix, il existe plusieurs techniques pour importer une base de données. OVHcloud met à disposition dans son espace client un outil permettant de le faire. Nous allons nous intéresser spécifiquement à cet outil. Pour utiliser une autre méthode d'importation, reportez-vous aux documentations suivantes : pour une [base de données MySQL ou MariaDB](../tout-sur-le-sql-prive/#export-et-import-de-base-de-donnees-mysql-ou-mariadb-hors-espace-client_1){.external} ; pour une [base de données en PostgreSQL](../tout-sur-le-sql-prive/#export-et-import-de-base-de-donnees-postgresql-hors-espace-client_1){.external}.
 
 #### Étape 1 : accéder à l'importation d'une base de données
 
@@ -171,6 +171,6 @@ Dès lors, vous pourrez finaliser l'installation de votre site ou la migration d
 
 ## Aller plus loin
 
-[Tout sur le SQL Privé](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/){.external}
+[Tout sur le SQL Privé](../tout-sur-le-sql-prive/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com)
