@@ -5,6 +5,7 @@ legacy_guide_number: '7536677'
 space_key: CRTEL
 space_name: Téléphonie
 section: LG8820
+hidden: true
 ---
 
 ------------------------------------------------------------------------
