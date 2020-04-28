@@ -1,12 +1,12 @@
 ---
-title: 'Getting started with an MX Plan solution'
+title: 'Getting started with an OVHcloud email solution'
 slug: web_hosting_an_overview_of_ovh_email
-excerpt: 'Find out how to get started with an MX Plan solution'
+excerpt: 'Find out how to get started with an OVHcloud email solution'
 section: 'Getting started'
 order: 3
 ---
 
-**Last updated 26th March 2019**
+**Last updated 5th May 2020**
 
 ## Objective
 
@@ -17,13 +17,13 @@ If you have just purchased an MX Plan solution, you can have email addresses, wh
 ## Requirements
 
 - an MX plan solution, available via a [Web Hosting plan]({ovh_www}/web-hosting/){.external}, [the free Start10M Hosting plan]({ovh_www}/domains/start10m_hosting_offer.xmll){.external} or an MX Plan solution ordered separately
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
-Once the MX Plan solution is created and available, you can manage it from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Depending on its activation date or if [it has been migrated recently]({ovh_www}/mxplan-migration/){.external}, you may have the old or new version of the solution. You will need to check this before you proceed any further. 
+Once the MX Plan solution is created and available, you can manage it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Depending on its activation date or if [it has been migrated recently]({ovh_www}/mxplan-migration/){.external}, you may have the old or new version of the solution. You will need to check this before you proceed any further. 
 
-To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the `Web`{.action} section. Click `Emails`{.action} in the services bar on the left-hand side, then choose the name of the plan concerned. Continue with the next steps, depending on which version you own.
+To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the `Web`{.action} section. Click `Emails`{.action} in the services bar on the left-hand side, then choose the name of the plan concerned. Continue with the next steps, depending on which version you own.
 
 |MX Plan solution legacy version|MX Plan solution new version|
 |---|---|
@@ -66,7 +66,7 @@ Once you have configured your email addresses, you can start using them straight
 
 Go to the [Webmail login]({ovh_www}/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button.
 
-When you first log in to webmail, you will be prompted to set the interface language, and the time zone you are in. Your inbox will then appear. To find out how to use your email address via OWA webmail, you can refer to our [](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/){.external}Outlook Web App user guide.
+When you first log in to webmail, you will be prompted to set the interface language, and the time zone you are in. Your inbox will then appear. To find out how to use your email address via OWA webmail, you can refer to our [Outlook Web App user guide](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/){.external}.
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 
@@ -119,7 +119,7 @@ In the pop-up window, enter the following information:
 |Information|Description|  
 |---|---|  
 |User name|Enter the name for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.|  
-|Account description|Enter a short description that will distinguish this account from any other accounts added in your OVH Control Panel.|  
+|Account description|Enter a short description that will distinguish this account from any other accounts added in your OVHcloud Control Panel.|  
 |Account size|Select the size of account you want. This size refers to the space available to your account for storing messages.|  
 |Password|Type in a password, and confirm it. For security reasons, we recommend not using the the same password twice, and choosing one that does not contain any personal information (e.g. first name, surname and date of birth). We also recommend changing your password regularly.|
 
