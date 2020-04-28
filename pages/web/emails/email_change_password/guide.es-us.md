@@ -1,12 +1,12 @@
 ---
-title: 'Cambiar la contraseña de una dirección de correo MX Plan'
+title: 'Cambiar la contraseña de una dirección de correo'
 slug: cambiar-contrasena-direccion-correo
-excerpt: 'Cómo cambiar la contraseña de una dirección de correo electrónico de la solución MX Plan'
+excerpt: 'Cómo cambiar la contraseña de una dirección de correo electrónico'
 section: 'Primeros pasos'
 order: 3
 ---
 
-**Última actualización: 17/05/2019**
+**Última actualización: 05/05/2020**
 
 ## Objetivo
 
@@ -16,8 +16,8 @@ Las direcciones de correo de la solución MX Plan permiten enviar y recibir mens
 
 ## Requisitos
 
-- Tener una solución MX Plan (incluida en un [plan de hosting de OVH]({ovh_www}/hosting/){.external}, en un [alojamiento gratuito Start 10M]({ovh_www}/dominios/oferta_hosting_start10m.xml){.external} o contratada por separado).
-- En función del método que utilice, estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} en la sección `Web`{.action}, o estar conectado a la dirección de correo desde el [webmail](https://www.ovh.es/mail/){.external} Outlook en la Web.
+- Tener una solución MX Plan (incluida en un [plan de hosting de OVHcloud]({ovh_www}/hosting/){.external}, en un [alojamiento gratuito Start 10M]({ovh_www}/dominios/oferta_hosting_start10m.xml){.external} o contratada por separado).
+- En función del método que utilice, estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} en la sección `Web`{.action}, o estar conectado a la dirección de correo desde el [webmail](https://www.ovh.es/mail/){.external} Outlook en la Web.
 
 > [!primary]
 >
@@ -28,7 +28,7 @@ Las direcciones de correo de la solución MX Plan permiten enviar y recibir mens
 
 En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente]({ovh_www}/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
 
-Para ello, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
+Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
@@ -44,7 +44,7 @@ Si dispone de la nueva versión de la solución MX Plan, la pestaña `Informaci�
 Existen dos formas de cambiar la contraseña de una dirección de correo: desde el webmail Outlook en la Web o desde el área de cliente. Continúe leyendo esta guía en el apartado correspondiente al método que desee utilizar.
 
 - [Cambiar la contraseña desde el webmail Outlook en la Web](./#cambiar-la-contrasena-desde-el-webmail-outlook-en-la-web): Para seguir este procedimiento necesitará la contraseña actual. 
-- [Cambiar la contraseña desde el área de cliente de OVH](./#cambiar-la-contrasena-desde-el-area-de-cliente-de-ovh): En este caso, no necesitará la contraseña actual.
+- [Cambiar la contraseña desde el área de cliente de OVHcloud](./#cambiar-la-contrasena-desde-el-area-de-cliente-de-ovhcloud): En este caso, no necesitará la contraseña actual.
 
 #### Cambiar la contraseña desde el webmail Outlook en la Web
 
@@ -69,7 +69,7 @@ En la nueva ventana, introduzca la contraseña actual, escriba una nueva contras
 
 ![Correo electrónico](images/mxplan-password-new-step5.png){.thumbnail}
 
-#### Cambiar la contraseña desde el área de cliente de OVH
+#### Cambiar la contraseña desde el área de cliente de OVHcloud
 
 Seleccione el MX Plan en la columna izquierda y abra la pestaña `Cuentas de correo`{.action}. Se mostrará una tabla con todas las direcciones de correo electrónico creadas en el MX Plan. Haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Editar`{.action}.
 
@@ -113,4 +113,4 @@ Una vez que haya cambiado la contraseña, puede acceder a la dirección de corre
 
 [*Privacidad y seguridad en internet*, «Ficha 3: ¿Son suficientes las contraseñas?)», AEPD](https://www.aepd.es/media/guias/guia-privacidad-y-seguridad-en-internet.pdf){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
