@@ -6,9 +6,11 @@ excerpt: 'Vous trouverez dans ce guide differents conseils concernant l''analyse
 section: 'Optimiser son site'
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -43,7 +45,7 @@ Pour cela vous devez accéder à l'onglet "Réseau".
 
 
 ### Statistiques de votre site
-Il vous est maintenant possible depuis le nouvel [espace client](https://www.ovh.com/manager/web/login.html){.external} d'accéder à des nouvelles statistiques de votre site.
+Il vous est maintenant possible depuis le nouvel [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} d'accéder à des nouvelles statistiques de votre site.
 
 - Requêtes HTTP : Indique le nombre de hits moyen sur le site. (Hit : Requête de demande d'accès à un fichier (quelle que soit sa nature, texte, image, etc.) formée lors de l'appel d'une page web par votre navigateur).
 
@@ -122,11 +124,11 @@ Toujours dans l'optique d'améliorer les performances de votre CMS, il peut êtr
 
 
 ### CDN
-*Afin d'améliorer les performances d'accès à vos sites, de téléchargement, et de bénéficier d'un référencement naturel optimisé, il vous est possible d'utiliser le CDN (Content Delivery Network) OVH pour stocker vos fichiers, vos applications, vos sites web, au plus près des utilisateurs finaux.*
+*Afin d'améliorer les performances d'accès à vos sites, de téléchargement, et de bénéficier d'un référencement naturel optimisé, il vous est possible d'utiliser le CDN (Content Delivery Network) OVHcloud pour stocker vos fichiers, vos applications, vos sites web, au plus près des utilisateurs finaux.*
 
 De cette manière vous améliorez les temps de réponses pour vos utilisateurs finaux partout dans le monde, car les parties statiques de votre site seront chargées directement par votre visiteur dans le point de présence le plus proche de lui.
 
-Retrouver nos offres commerciales concernant le CDN : [Offre Commercial CDN](https://www.ovh.com/fr/cdn/){.external}
+Retrouver nos offres commerciales concernant le CDN : [Offre Commercial CDN](https://www.ovh.com/ca/fr/cdn/){.external}
 
 
 ![hosting](images/1891.png){.thumbnail}
