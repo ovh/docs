@@ -1,23 +1,23 @@
 ---
-title: 'Rediriger un nom de domaine géré par OVH'
+title: 'Rediriger un nom de domaine géré par OVHcloud'
 slug: redirection-nom-de-domaine
-excerpt: 'Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVH'
+excerpt: 'Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVHcloud'
 section: 'Tâches courantes'
 order: 1
 ---
 
-**Dernière mise à jour le 25/01/2018**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
 La redirection d'un nom de domaine permet de rediriger celui-ci vers une nouvelle cible. Il existe différents types de redirections qui répondent à des besoins spécifiques.
 
-**Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVH.**
+**Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVHcloud.**
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Être connecté à votre hébergement web (si vous souhaitez ajouter un [fichier .htaccess](https://docs.ovh.com/fr/hosting/mutualise-tout-sur-le-fichier-htaccess/){.external}).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre hébergement web (si vous souhaitez ajouter un [fichier .htaccess](../../hosting/mutualise-tout-sur-le-fichier-htaccess/){.external}).
 
 ## En pratique
 
@@ -29,7 +29,7 @@ Il existe plusieurs cas où une redirection peut être pertinente, le plus coura
 
 Cette action peut être réalisée de plusieurs manières :
 
-- **depuis l'espace client OVH** : un assistant de configuration vous permettra de paramétrer votre redirection ;
+- **depuis l'espace client OVHcloud** : un assistant de configuration vous permettra de paramétrer votre redirection ;
 
 - **depuis une méthode nécessitant de la programmation** : vous devrez créer vous-même la redirection dans un fichier (généralement un *.htaccess*).
 
@@ -37,7 +37,7 @@ Sachez que la mise en place d'une redirection peut avoir un impact sur le réfé
 
 ### Rediriger un nom de domaine via l'espace client
 
-Une fois connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la barre de services à gauche, rendez-vous dans la section `Domaines`{.action} (*1* sur l'image ci-dessous), puis sur l'onglet `Redirection`{.action} (*2* sur l'image ci-dessous).
+Une fois connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la barre de services à gauche, rendez-vous dans la section `Domaines`{.action} (*1* sur l'image ci-dessous), puis sur l'onglet `Redirection`{.action} (*2* sur l'image ci-dessous).
 
 Le tableau affiche les redirections actives pour votre nom de domaine.
 
@@ -55,10 +55,10 @@ Vous devez à présent choisir vers quelle cible vous souhaitez rediriger le nom
 
 Redirigez un nom de domaine vers un autre. Cette solution est idéale lorsque vous changez le nom de domaine de votre site internet ;
 
-- **redirection vers un serveur OVH ou ailleurs**
+- **redirection vers un serveur OVHcloud ou ailleurs**
 
 Modifiez la configuration DNS d'un nom de domaine pour une autre cible (champ A, AAAA ou CNAME). Cette solution est idéale si votre site internet n'est plus hébergé au même endroit, mais que le nom de domaine reste similaire.
-Vous pouvez également réaliser cette action si votre nom de domaine utilise la configuration OVH en la modifiant depuis l'espace client (voir : [Comment éditer ma zone DNS ?](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external}).
+Vous pouvez également réaliser cette action si votre nom de domaine utilise la configuration OVHcloud en la modifiant depuis l'espace client (voir : [Comment éditer ma zone DNS ?](../editer-ma-zone-dns/){.external}).
 
 À partir de ce point, ce guide abordera uniquement la redirection **vers une adresse web**. Concernant l'autre possibilité, rapprochez-vous de votre prestataire afin de connaître les enregistrements DNS que vous devrez modifier avant de poursuivre la démarche.
 
@@ -116,7 +116,7 @@ Les fichiers .htaccess sont des fichiers de configuration dans lesquels des comm
 
 Modifier un fichier .htaccess peut nécessiter des compétences techniques du fait qu'une manipulation incorrecte peut rendre inaccessible un ou plusieurs sites internet si vous utilisez des sous-répertoires sur votre hébergement. En cas de doute, et si vous désirez obtenir de l’aide concernant la modification d'un fichier .htaccess, nous vous recommandons de faire appel à un développeur web spécialisé sur la question.
 
-Vous pouvez également vous reporter à notre documentation [Tout sur le fichier .htaccess](https://docs.ovh.com/fr/hosting/mutualise-tout-sur-le-fichier-htaccess/){.external} qui vous donnera quelques astuces concernant son utilisation.
+Vous pouvez également vous reporter à notre documentation [Tout sur le fichier .htaccess](../../hosting/mutualise-tout-sur-le-fichier-htaccess/){.external} qui vous donnera quelques astuces concernant son utilisation.
 
 > [!primary]
 >
@@ -166,8 +166,8 @@ Redirect temp / http://autre_site_web.tld/site/
 
 ## Aller plus loin
 
-[Tout sur le fichier .htaccess](https://docs.ovh.com/fr/hosting/mutualise-tout-sur-le-fichier-htaccess/){.external}.
+[Tout sur le fichier .htaccess](../../hosting/mutualise-tout-sur-le-fichier-htaccess/){.external}.
 
-[Comment éditer ma zone DNS ?](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external}
+[Comment éditer ma zone DNS ?](../domains/editer-ma-zone-dns/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
