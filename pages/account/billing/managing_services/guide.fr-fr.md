@@ -3,6 +3,7 @@ title: 'Gérer mes services OVH'
 slug: gerer-ses-services-ovh
 excerpt: 'Apprenez à visualiser et administrer vos solutions depuis l''interface « Gérer mes services » dans votre espace client'
 section: 'Gérer mes services et leur renouvellement'
+hidden: true
 ---
 
 **Dernière mise à jour le 16/10/2018**
