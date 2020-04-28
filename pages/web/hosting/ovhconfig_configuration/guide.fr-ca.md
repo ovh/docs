@@ -6,17 +6,17 @@ section: 'Configuration de l''hébergement'
 order: 4
 ---
 
-**Dernière mise à jour le 03/01/2019**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
-Diverses raisons peuvent vous amener à vouloir modifier la configuration de votre [hébergement web](https://www.ovh.com/fr/hebergement-web/){.external}. Pour cela, OVH a mis en place un fichier permettant de changer certains paramètres : le **.ovhconfig**.
+Diverses raisons peuvent vous amener à vouloir modifier la configuration de votre [hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}. Pour cela, OVHcloud a mis en place un fichier permettant de changer certains paramètres : le **.ovhconfig**.
 
 **Découvrez le fichier .ovhconfig et apprenez à le configurer.**
 
 ## Prérequis
 
-- Disposer d’une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} (sauf Cloud Web).
+- Disposer d’une offre d’[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} (sauf Cloud Web).
 - Disposer du mot de passe de l’utilisateur FTP vous permettant d’accéder à votre espace de stockage. 
 
 ## En pratique
@@ -27,7 +27,7 @@ La modification du fichier .ovhconfig peut se réaliser de deux manières :
 
 - **en modifiant manuellement le fichier .ovhconfig** : cette solution est technique et nécessite d'être connecté à votre espace de stockage. Dans cette documentation, nous aborderons exclusivement cette méthode ;
 
-- **via un assistant de configuration depuis votre espace client OVH** : cette solution est moins technique et nécessite d'être connecté à votre espace client, où vous pourrez choisir les changements à réaliser. Reportez-vous aux instructions décrites dans notre documentation [« Modifier la configuration de son hébergement web »](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/){.external}.
+- **via un assistant de configuration depuis votre espace client OVHcloud** : cette solution est moins technique et nécessite d'être connecté à votre espace client, où vous pourrez choisir les changements à réaliser. Reportez-vous aux instructions décrites dans notre documentation [« Modifier la configuration de son hébergement web »](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/){.external}.
 
 Poursuivez la lecture de cette documentation si vous souhaitez modifier manuellement le fichier .ovhconfig. 
 
@@ -35,9 +35,9 @@ Poursuivez la lecture de cette documentation si vous souhaitez modifier manuelle
 
 #### Étape 1 : se connecter à l'espace de stockage
 
-Munissez-vous de votre identifiant FTP principal, de son mot de passe, ainsi que de l'adresse du serveur FTP. Une fois tous ces éléments en votre possession, connectez-vous à votre espace de stockage. Aidez-vous de la documentation intitulée « [Se connecter à l’espace de stockage](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#2-se-connecter-a-lespace-de-stockage){.external} » si cela est nécessaire.
+Munissez-vous de votre identifiant FTP principal, de son mot de passe, ainsi que de l'adresse du serveur FTP. Une fois tous ces éléments en votre possession, connectez-vous à votre espace de stockage. Aidez-vous de la documentation intitulée « [Se connecter à l’espace de stockage](../mettre-mon-site-en-ligne/#2-se-connecter-a-lespace-de-stockage){.external} » si cela est nécessaire.
 
-**Si vous n'êtes plus en possession de ces informations**, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `FTP - SSH`{.action}. Vous y retrouverez les informations vous permettant de vous connecter. Concernant le mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/){.external} si cela est nécessaire.
+**Si vous n'êtes plus en possession de ces informations**, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `FTP - SSH`{.action}. Vous y retrouverez les informations vous permettant de vous connecter. Concernant le mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](../modifier-mot-de-passe-utilisateur-ftp/){.external} si cela est nécessaire.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 
@@ -71,10 +71,10 @@ Personnalisez les valeurs des variables selon la configuration que vous souhaite
 |Variables|Détail|
 |---|---|
 |app.engine|Permet de modifier le moteur PHP utilisé par l'hébergement. Renseignez « php » pour activer l'accélérateur PHP-FPM et « phpcgi » pour le désactiver.|
-|app.engine.version|Permet de définir la version de PHP utilisée par l'hébergement parmi [celles qu'OVH propose](https://www.ovh.com/fr/hebergement-web/php.xml){.external}. Renseignez la version de votre choix.|
-|http.firewall|Permet d'activer ou de désactiver le [firewall fourni avec les hébergements web OVH](https://www.ovh.com/fr/hebergement-web/mod_security.xml){.external}. Renseignez « security » pour l'activer ou « none » pour le désactiver.|
+|app.engine.version|Permet de définir la version de PHP utilisée par l'hébergement parmi [celles qu'OVHcloud propose](https://www.ovh.com/ca/fr/hebergement-web/php.xml){.external}. Renseignez la version de votre choix.|
+|http.firewall|Permet d'activer ou de désactiver le [firewall fourni avec les hébergements web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/mod_security.xml){.external}. Renseignez « security » pour l'activer ou « none » pour le désactiver.|
 |environment|Permet de gérer le comportement du cache des fichiers statiques de votre site internet ainsi que le traitement des erreurs PHP. Renseignez « production » pour maximiser la mise en cache et masquer les erreurs PHP ou « development » pour qu'aucun cache ne soit appliqué et que les erreurs PHP s'affichent.|
-|container.image|Permet de modifier l'environnement d'exécution utilisé par l'hébergement. Renseignez le moteur de votre choix. Vous pouvez les retrouver depuis notre documentation : [« Découvrir les configurations disponibles »](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/#decouvrir-les-configurations-disponibles){.external}.|
+|container.image|Permet de modifier l'environnement d'exécution utilisé par l'hébergement. Renseignez le moteur de votre choix. Vous pouvez les retrouver depuis notre documentation : [« Découvrir les configurations disponibles »](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#decouvrir-les-configurations-disponibles){.external}.|
 
 Vous trouverez ci-dessous le détail d'application complet du fichier .ovhconfig :
 
@@ -148,7 +148,7 @@ Une fois le fichier .ovhconfig modifié, il ne vous reste plus qu'à le téléch
 
 Si vous utilisez votre hébergement web pour y héberger plusieurs sites internet, vous avez sûrement configuré des Multisites. Diverses raisons peuvent vous amener à vouloir bénéficier d'une version de PHP différente pour certains de vos Multisites.
 
-Pour cela, vous devez créer un fichier .ovhconfig pour le ou les Multisites concernés contenant la version de PHP souhaitée. Aidez-vous des manipulations décrites dans la section [« Modifier le fichier .ovhconfig »](https://docs.ovh.com/fr/hosting/configurer-fichier-ovhconfig/#modifier-le-fichier-ovhconfig){.external} de cette documentation si nécessaire. Lorsque vous devrez télécharger le fichier .ovhconfig sur votre espace de stockage, prenez soin de le faire dans le dossier racine du Multisite. Vous pouvez retrouver le dossier racine de vos Multisites depuis votre espace client dans l'onglet `Multisite`{.action} de l'hébergement concerné.
+Pour cela, vous devez créer un fichier .ovhconfig pour le ou les Multisites concernés contenant la version de PHP souhaitée. Aidez-vous des manipulations décrites dans la section [« Modifier le fichier .ovhconfig »](../configurer-fichier-ovhconfig/#modifier-le-fichier-ovhconfig){.external} de cette documentation si nécessaire. Lorsque vous devrez télécharger le fichier .ovhconfig sur votre espace de stockage, prenez soin de le faire dans le dossier racine du Multisite. Vous pouvez retrouver le dossier racine de vos Multisites depuis votre espace client dans l'onglet `Multisite`{.action} de l'hébergement concerné.
 
 > [!warning]
 >
