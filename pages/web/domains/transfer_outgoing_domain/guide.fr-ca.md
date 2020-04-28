@@ -1,23 +1,23 @@
 ---
-title: Transférer son nom de domaine OVH vers un autre bureau d'enregistrement
+title: Transférer son nom de domaine OVHcloud vers un autre bureau d'enregistrement
 slug: transfert-sortant-dun-nom-de-domaine-generique-ou-geographique
-excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVH vers le bureau d'enregistrement de votre choix
+excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix
 section: Transfert
 order: 4
 ---
 
-**Dernière mise à jour le 08/03/2018**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
 Le transfert d’un nom de domaine permet de changer le bureau d’enregistrement de ce dernier. Ce transfert est possible vers un autre bureau d'enregistrement.
 
-**Découvrez comment effectuer le transfert d’un nom de domaine OVH vers le bureau d'enregistrement de votre choix.**
+**Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix.**
 
 ## Prérequis
-- Disposer d'un nom de domaine enregistré chez OVH.
+- Disposer d'un nom de domaine enregistré chez OVHcloud.
 - Être habilité à demander le transfert du nom de domaine : le propriétaire et/ou les personnes l'administrant doivent être informés de la demande du transfert.
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - Le nom de domaine doit avoir été créé il y a plus de 61 jours et ne doit pas avoir été transféré ou avoir changé de propriétaire durant cette période.
 
 > [!primary]
@@ -29,7 +29,7 @@ Le transfert d’un nom de domaine permet de changer le bureau d’enregistremen
 
 ### Étape 1 : lever la protection contre le transfert du nom de domaine
 
-Pour lever la protection contre le transfert de votre nom de domaine OVH, toujours connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Web`{.action} dans la barre de services en haut. Rendez-vous dans la section `Domaines`{.action} située à gauche, puis cliquez sur le nom de domaine concerné. Depuis l'onglet `Informations générales`{.action}, décochez la case `Protection contre le transfert`{.action}, puis cliquez sur `Valider`{.action}.
+Pour lever la protection contre le transfert de votre nom de domaine OVHcloud, toujours connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Web`{.action} dans la barre de services en haut. Rendez-vous dans la section `Domaines`{.action} située à gauche, puis cliquez sur le nom de domaine concerné. Depuis l'onglet `Informations générales`{.action}, décochez la case `Protection contre le transfert`{.action}, puis cliquez sur `Valider`{.action}.
 
 > [!primary]
 >
