@@ -7,16 +7,16 @@ section: Herramientas
 ---
 
 
-## Desde la web de OVH
+## Desde la web de OVHcloud
 Acceda a [OVH.es](http://www.ovh.es) y haga clic en el enlace «Webmail» situado en la esquina superior derecha.
 
 ![](images/img_2413.jpg){.thumbnail}
 
 
-## Página de conexión al webmail de OVH
-Llegará a una pantalla en la que deberá introducir su dirección de correo electrónico. La interfaz le redirigirá directamente al webmail correspondiente a su servicio de correo OVH.
+## Página de conexión al webmail de OVHcloud
+Llegará a una pantalla en la que deberá introducir su dirección de correo electrónico. La interfaz le redirigirá directamente al webmail correspondiente a su servicio de correo OVHcloud.
 
-Si ya sabe qué tipo de servicio de correo tiene en OVH, puede seleccionar directamente el webmail en la parte inferior de la página, haciendo clic en el icono .
+Si ya sabe qué tipo de servicio de correo tiene en OVHcloud, puede seleccionar directamente el webmail en la parte inferior de la página, haciendo clic en el icono .
 
 Haciendo clic en , accederá directamente a las guías relativas al webmail seleccionado.
 
@@ -24,7 +24,7 @@ Haciendo clic en , accederá directamente a las guías relativas al webmail sele
 Si marca la casilla «Memorizar esta dirección», la dirección de correo introducida se guardará en el menú «Webmail» situado en la esquina superior derecha. Así podrá conectarse más fácilmente a esa dirección.
 
 
-## Página de conexión al webmail de OVH
+## Página de conexión al webmail de OVHcloud
 Llegará a la página de conexión al webmail de su servicio de correo.
 
 Si la dirección de correo no aparece cumplimentada en el campo «Nombre de usuario», introdúzcala. Introduzca también la contraseña y haga clic en «Iniciar sesión».
