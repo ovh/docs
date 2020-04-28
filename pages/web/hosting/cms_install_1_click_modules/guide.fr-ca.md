@@ -6,7 +6,7 @@ section: CMS
 order: 1
 ---
 
-**Dernière mise à jour le 15/12/2017**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
@@ -18,8 +18,8 @@ Les modules en 1 clic permettent l'installation facile et rapide d'un site Inter
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovh.com/fr/hebergement-web/) compatible.
-- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager).
+- Disposer d'une offre d'[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/) compatible.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 - Ne pas avoir téléchargé de fichiers dans le répertoire où sera installé votre module.
 - Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site internet doit être déclaré en tant que multisite.
 
@@ -29,16 +29,16 @@ Les modules en 1 clic permettent l'installation facile et rapide d'un site Inter
 
 Un CMS (pour Content Management System) vous permet de concevoir un site web via une interface simple d'utilisation. Il en existe plusieurs types en fonction des projets de chacun. Vous pourrez ainsi bénéficier d'une structure de site prête à l'emploi à personnaliser (thème, textes, etc.) à votre convenance.
 
-OVH propose 4 quatre CMS avec ses modules en 1 clic. En utilisant cette solution, vous devrez donc choisir dans cette liste. Si votre choix s'est déjà porté sur l'un d'entre eux, poursuivez les différentes étapes de ce tutoriel. Dans le cas contraire, ce [comparatif des CMS](https://www.ovh.com/fr/hebergement-web/site/comparatif-cms/) pourrait vous aider dans votre décision.
+OVHcloud propose 4 quatre CMS avec ses modules en 1 clic. En utilisant cette solution, vous devrez donc choisir dans cette liste. Si votre choix s'est déjà porté sur l'un d'entre eux, poursuivez les différentes étapes de ce tutoriel. Dans le cas contraire, ce [comparatif des CMS](https://www.ovh.com/ca/fr/hebergement-web/site/comparatif-cms/) pourrait vous aider dans votre décision.
 
-Si vous souhaitez installer un CMS non proposé par les modules en 1 clic OVH, vous pouvez toujours l'installer manuellement sur votre hébergement, sous réserve de la compatibilité de ce CMS avec votre offre (retrouvez nos offres [ici](https://www.ovh.com/fr/hebergement-web/)).
+Si vous souhaitez installer un CMS non proposé par les modules en 1 clic OVHcloud, vous pouvez toujours l'installer manuellement sur votre hébergement, sous réserve de la compatibilité de ce CMS avec votre offre (retrouvez nos offres [ici](https://www.ovh.com/ca/fr/hebergement-web/)).
 
 ![Logo des CMS](images/CMS_logo.png){.thumbnail}
 
 
 ### Étape 2 : accéder à la gestion des modules 1 clic
 
-Dans la barre de services à gauche de votre espace client OVH, rendez-vous dans la section `Hébergements`{.action} puis sur l'hébergement concerné. Cliquez maintenant sur l'onglet `Modules en 1 clic`{.action}.
+Dans la barre de services à gauche de votre espace client OVHcloud, rendez-vous dans la section `Hébergements`{.action} puis sur l'hébergement concerné. Cliquez maintenant sur l'onglet `Modules en 1 clic`{.action}.
 
 Vous pourrez y consulter les différents modules en 1 clic déjà installés, les gérer et en installer de nouveaux.
 
@@ -54,7 +54,7 @@ Dans la fenêtre qui s'affiche, choisissez le CMS souhaité puis le domaine sur 
 
 Si vous ne trouvez pas le domaine voulu dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter, puis essayez de nouveau d'ajouter un module.
 
-Vous pouvez également consulter le guide [Comment partager mon hébergement web entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external} pour vous aider.
+Vous pouvez également consulter le guide [Comment partager mon hébergement web entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external} pour vous aider.
 
 Une fois le CMS sélectionné, vous devrez choisir entre une installation simple ou avancée :
 
@@ -87,7 +87,7 @@ Vous devez à présent renseigner les informations de connexion à votre base de
 - la base de données est déjà créée sur votre hébergement : sélectionnez-la dans la liste et complétez les informations demandées ;
 - la base de données n'est pas encore créée sur votre hébergement : suivez les indications afin de créer cette dernière, puis effectuez de nouveau la manipulation ;
 - la base de données est créée sur mon instance SQL Privé ou CloudDB : sélectionnez dans la liste `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. L'instance et l'hébergement web doivent être hébergés dans le même centre de données ;
-- la base de données est créée sur un autre hébergement Web OVH : sélectionnez dans la liste `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. La base de données et l'hébergement web doivent être hébergés dans le même centre de données ;
+- la base de données est créée sur un autre hébergement Web OVHcloud : sélectionnez dans la liste `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. La base de données et l'hébergement web doivent être hébergés dans le même centre de données ;
 
 Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}.
 
@@ -105,7 +105,7 @@ Vous devez à présent renseigner les informations suivantes pour la configurati
 - *nom ou e-mail de l'administrateur :* il s'agit de l'identifiant que vous utiliserez pour vous connecter à l'administration de votre CMS ;
 - *mot de passe :* il s'agit du mot de passe que vous utiliserez pour vous connecter à l'interface d'administration de votre CMS ;
 - *domaine :* il s'agit du domaine sur lequel vous souhaitez installer votre site ;
-Vous pouvez également consulter le guide [Comment partager mon hébergement web entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) pour vous aider.
+Vous pouvez également consulter le guide [Comment partager mon hébergement web entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/) pour vous aider.
 - *langue :* il s'agit de langue dans laquelle le CMS sera installé ;
 - *chemin d’installation :* ce dernier est automatiquement renseigné à la sélection du domaine. Vous avez la possibilité de le compléter en y renseignant des sous-répertoires.
 
@@ -139,14 +139,14 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre site
 
 ## Aller plus loin
 
-[Choisir un CMS pour créer un site web](https://www.ovh.com/fr/hebergement-web/site/comparatif-cms/){.external}
+[Choisir un CMS pour créer un site web](https://www.ovh.com/ca/fr/hebergement-web/site/comparatif-cms/){.external}
 
-[Comment partager mon hébergement Web entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
+[Comment partager mon hébergement Web entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
 
-[Gestion d’une base de données depuis un hébergement mutualisé](https://docs.ovh.com/fr/hosting/gestion-dune-base-de-donnees-depuis-un-hebergement-mutualise/){.external}
+[Gestion d’une base de données depuis un hébergement mutualisé](../gestion-dune-base-de-donnees-depuis-un-hebergement-mutualise/){.external}
 
-Découvrez nos [offres SQL Privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external}
+Découvrez nos [offres SQL Privé](https://www.ovh.com/ca/fr/hebergement-web/options-sql.xml){.external}
 
-Découvrez nos [offres CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external}
+Découvrez nos [offres CloudDB](https://www.ovh.com/ca/fr/cloud/cloud-databases/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
