@@ -1,29 +1,29 @@
 ---
-title: 'Primeros pasos con la solución MX Plan'
+title: 'Primeros pasos con la solución de correo electrónico OVHcloud'
 slug: primeros-pasos-correo-compartido
-excerpt: 'Cómo empezar a utilizar la solución de correo electrónico MX Plan'
+excerpt: 'Cómo empezar a utilizar la solución de correo electrónico OVHcloud'
 section: 'Primeros pasos'
 order: 1
 ---
 
-**Última actualización: 07/05/2019**
+**Última actualización: 05/05/2020**
 
 ## Objetivo
 
-La solución MX Plan permite disfrutar de direcciones de correo electrónico para enviar y recibir mensajes desde cualquier dispositivo. 
+La solución de alojamiento web permite disfrutar de direcciones de correo electrónico para enviar y recibir mensajes desde cualquier dispositivo. 
 
-**Esta guía explica cómo empezar a utilizar la solución MX Plan.**
+**Esta guía explica cómo empezar a utilizar la solución de correo electrónico OVHcloud.**
 
 ## Requisitos
 
-- Tener una solución MX Plan  (incluida en un [plan de hosting de OVH]({ovh_www}/hosting/){.external}, en un [alojamiento gratuito Start 10M]({ovh_www}/dominios/oferta_hosting_start10m.xml){.external} o contratada por separado).
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
+- Tener una solución MX Plan  (incluida en un [plan de hosting de OVHcloud]({ovh_www}/hosting/){.external}, en un [alojamiento gratuito Start 10M]({ovh_www}/dominios/oferta_hosting_start10m.xml){.external} o contratada por separado).
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
 
 ## Procedimiento
 
-Una vez que el MX Plan haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente]({ovh_www}/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
+Una vez que el MX Plan haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente]({ovh_www}/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
 
-Para ello, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Siga leyendo esta guía en función de su versión:
+Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Siga leyendo esta guía en función de su versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
@@ -64,7 +64,7 @@ Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. P
 
 ##### 3.1. Utilizar el webmail Outlook Web Access (OWA)
 
-Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
+Vaya a la [página de conexión al webmail](https://www.ovh.com/world/es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
 La primera vez que se conecte al webmail deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde Outlook en la Web](../uso-outlook-en-la-web/){.external}.
 
@@ -76,11 +76,11 @@ Puede configurar su dirección de correo en el dispositivo que desee (smartphone
 
 |Windows|Outlook|Apple|Android|Otros|
 |---|---|---|---|---|
-|[Windows 10](https://docs.ovh.com/es/emails/configuracion-correo-windows-10/){.external}|[Outlook 2016](https://docs.ovh.com/es/emails/configuracion-outlook-2016/){.external}|[Mail de macOS (última versión)](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/){.external}|[Android (última versión)](https://docs.ovh.com/es/emails/configuracion-android/){.external}|[Gmail](https://docs.ovh.com/es/emails/configurar-direccion-de-correo-electronico-en-interfaz-web-gmail/){.external}|
-|[Windows 8](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_windows_8/){.external}|[Outlook 2011 en Mac](https://docs.ovh.com/es/emails/web_hosting_guia_de_configuracion_de_outlook_2011_en_mac/){.external}|[Mail de Mac (Mavericks y Yosemite)](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_mail_de_mac_mavericks_y_yosemite/){.external}|[Android 5.1](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_de_un_telefono_movil_en_android_51/){.external}| |
-|[Windows Phone](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_windows_phone/){.external}|[Outlook 2010](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_outlook_2010/){.external}|[iPhone o iPad (iOS 7 y versiones posteriores)](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_iphone_ios_91/){.external}|[Android 4.1.2](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_una_tablet_android_412/){.external} | |
-|[Windows Mail](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_windows_mail/){.external}|[Outlook 2007](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_outlook_2007/){.external}|[Thunderbird en Mac](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_para_thunderbird_en_mac/){.external}| | |
-|[Thunderbird en Windows](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_thunderbird/){.external}| | | | |
+|[Windows 10](../configuracion-correo-windows-10/){.external}|[Outlook 2016](../configuracion-outlook-2016/){.external}|[Mail de macOS (última versión)](../correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/){.external}|[Android (última versión)](../configuracion-android/){.external}|[Gmail](../configurar-direccion-de-correo-electronico-en-interfaz-web-gmail/){.external}|
+|[Windows 8](../correo_guia_de_configuracion_en_windows_8/){.external}|[Outlook 2011 en Mac](../web_hosting_guia_de_configuracion_de_outlook_2011_en_mac/){.external}|[Mail de Mac (Mavericks y Yosemite)](../correo_guia_de_configuracion_en_mail_de_mac_mavericks_y_yosemite/){.external}|[Android 5.1](../correo_guia_de_configuracion_de_un_telefono_movil_en_android_51/){.external}| |
+|[Windows Phone](../correo_guia_de_configuracion_en_windows_phone/){.external}|[Outlook 2010](../correo_guia_de_configuracion_en_outlook_2010/){.external}|[iPhone o iPad (iOS 7 y versiones posteriores)](../correo_guia_de_configuracion_en_iphone_ios_91/){.external}|[Android 4.1.2](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_una_tablet_android_412/){.external} | |
+|[Windows Mail](../correo_guia_de_configuracion_en_windows_mail/){.external}|[Outlook 2007](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_outlook_2007/){.external}|[Thunderbird en Mac](../correo_guia_de_configuracion_para_thunderbird_en_mac/){.external}| | |
+|[Thunderbird en Windows](../correo_guia_de_configuracion_en_thunderbird/){.external}| | | | |
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
 
@@ -122,7 +122,7 @@ A continuación, introduzca la información solicitada:
 |Campo|Descripción|  
 |---|---|  
 |Nombre de la cuenta|Introduzca el nombre que quiera asignar a la dirección de correo (por ejemplo, «nombre.apellido»). El dominio aparecerá ya completado.|  
-|Descripción de la cuenta|Introduzca una descripción que le permita diferenciar esta cuenta de las otras cuentas de su área de cliente de OVH.|  
+|Descripción de la cuenta|Introduzca una descripción que le permita diferenciar esta cuenta de las otras cuentas de su área de cliente de OVHcloud.|  
 |Tamaño de la cuenta|Seleccione el tamaño de la cuenta de correo, es decir, su capacidad para almacenar mensajes de correo electrónico.|  
 |Contraseña|Introduzca una contraseña y luego confírmela en el último campo. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.|
 
@@ -136,7 +136,7 @@ Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. P
 
 ##### 3.1. Utilizar el webmail Roundcube
 
-Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
+Vaya a la [página de conexión al webmail](https://www.ovh.com/world/es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
 A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](../webmail_guia_de_uso_de_roundcube/){.external}.
 
@@ -148,11 +148,11 @@ Puede configurar su dirección de correo en el dispositivo que desee (smartphone
 
 |Windows|Outlook|Apple|Android|Otros|
 |---|---|---|---|---|
-|[Windows 10](https://docs.ovh.com/es/emails/configuracion-correo-windows-10/){.external}|[Outlook 2016](https://docs.ovh.com/es/emails/configuracion-outlook-2016/){.external}|[Mail de macOS (última versión)](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/){.external}|[Android (última versión)](https://docs.ovh.com/es/emails/configuracion-android/){.external}|[Gmail](https://docs.ovh.com/es/emails/configurar-direccion-de-correo-electronico-en-interfaz-web-gmail/){.external}|
-|[Windows 8](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_windows_8/){.external}|[Outlook 2011 en Mac](https://docs.ovh.com/es/emails/web_hosting_guia_de_configuracion_de_outlook_2011_en_mac/){.external}|[Mail de Mac (Mavericks y Yosemite)](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_mail_de_mac_mavericks_y_yosemite/){.external}|[Android 5.1](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_de_un_telefono_movil_en_android_51/){.external}| |
-|[Windows Phone](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_windows_phone/){.external}|[Outlook 2010](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_outlook_2010/){.external}|[iPhone o iPad (iOS 7 y versiones posteriores)](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_iphone_ios_91/){.external}|[Android 4.1.2](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_una_tablet_android_412/){.external} | |
-|[Windows Mail](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_windows_mail/){.external}|[Outlook 2007](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_outlook_2007/){.external}|[Thunderbird en Mac](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_para_thunderbird_en_mac/){.external}| | |
-|[Thunderbird en Windows](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_thunderbird/){.external}| | | | |
+|[Windows 10](../configuracion-correo-windows-10/){.external}|[Outlook 2016](../configuracion-outlook-2016/){.external}|[Mail de macOS (última versión)](../correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/){.external}|[Android (última versión)](../configuracion-android/){.external}|[Gmail](../configurar-direccion-de-correo-electronico-en-interfaz-web-gmail/){.external}|
+|[Windows 8](../correo_guia_de_configuracion_en_windows_8/){.external}|[Outlook 2011 en Mac](../web_hosting_guia_de_configuracion_de_outlook_2011_en_mac/){.external}|[Mail de Mac (Mavericks y Yosemite)](../correo_guia_de_configuracion_en_mail_de_mac_mavericks_y_yosemite/){.external}|[Android 5.1](../correo_guia_de_configuracion_de_un_telefono_movil_en_android_51/){.external}| |
+|[Windows Phone](../correo_guia_de_configuracion_en_windows_phone/){.external}|[Outlook 2010](../correo_guia_de_configuracion_en_outlook_2010/){.external}|[iPhone o iPad (iOS 7 y versiones posteriores)](../correo_guia_de_configuracion_en_iphone_ios_91/){.external}|[Android 4.1.2](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_una_tablet_android_412/){.external} | |
+|[Windows Mail](../correo_guia_de_configuracion_en_windows_mail/){.external}|[Outlook 2007](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_outlook_2007/){.external}|[Thunderbird en Mac](../correo_guia_de_configuracion_para_thunderbird_en_mac/){.external}| | |
+|[Thunderbird en Windows](../correo_guia_de_configuracion_en_thunderbird/){.external}| | | | |
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
 
@@ -177,4 +177,4 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
