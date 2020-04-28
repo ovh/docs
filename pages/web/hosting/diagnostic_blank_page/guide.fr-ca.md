@@ -6,6 +6,7 @@ excerpt: Dans ce guide vous trouverez des informations sur les pages blanches qu
 section: Diagnostic
 ---
 
+**Dernière mise à jour le 05/05/2020**
 
 ## Erreur page blanche ?
 
@@ -52,7 +53,7 @@ http.firewall=none
 environment=development
 ```
 
-*Un guide est disponible concernant la mise en place de phpfpm :* []({legacy}1175){.ref}
+*N'hésitez pas à consulter le gudie suivant :* [Configurer le fichier .ovhconfig de son hébergement web](../configurer-fichier-ovhconfig/){.external}
 
 
 ![hosting](images/img_2159.jpg){.thumbnail}
