@@ -6,11 +6,11 @@ excerpt: 'Vous trouverez dans ce guide différentes informations concernant le c
 section: 'Changement de propriétaire'
 ---
 
-**Dernière mise à jour le 20/01/2020**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
-En dehors de la [gestion des contacts](https://docs.ovh.com/fr/customer/gestion-des-contacts/), l’enregistrement d’un nom de domaine nécessite de renseigner les informations relatives au propriétaire de celui-ci. Ce guide vous détaille comment effectuer cette procédure.
+En dehors de la [gestion des contacts](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/), l’enregistrement d’un nom de domaine nécessite de renseigner les informations relatives au propriétaire de celui-ci. Ce guide vous détaille comment effectuer cette procédure.
 
 **Découvrez comment changer le propriétaire d'un nom de domaine**
 
@@ -18,7 +18,7 @@ En dehors de la [gestion des contacts](https://docs.ovh.com/fr/customer/gestion-
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/manager/web){.external}
 - Disposer d'un nom de domaine enregistré chez OVHcloud.
-- Être le [contact administrateur](https://docs.ovh.com/fr/customer/gestion-des-contacts/) du nom de domaine concerné.
+- Être le [contact administrateur](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/) du nom de domaine concerné.
 - Disposer de l'accord du propriétaire actuel du nom de domaine pour effectuer le changement de propriétaire.
 
 ## En pratique
@@ -73,7 +73,7 @@ Une fois les deux e-mails validés, votre changement de propriétaire sera effec
 
 ## Aller plus loin
 
-[« Gérer les contacts de ses services »](https://docs.ovh.com/fr/customer/gestion-des-contacts/)
+[« Gérer les contacts de ses services »](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/)
 
 Échangez avec notre communauté d'utilisateurs sur https://community.ovh.com.
 
