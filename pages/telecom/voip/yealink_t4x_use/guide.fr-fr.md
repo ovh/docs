@@ -3,6 +3,7 @@ title: 'Utiliser le Yealink T4X'
 slug: utiliser-yealink-t4x
 excerpt: 'Découvrez comment utiliser votre téléphone Yealink T4X'
 section: 'Yealink T4X'
+hidden: true
 ---
 
 **Dernière mise à jour le 30/05/2018**
