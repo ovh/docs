@@ -3,20 +3,22 @@ title: 'Conseils suite au piratage de votre site WordPress'
 slug: piratage-de-votre-site-wordpress-conseils-et-cas-dusages
 legacy_guide_number: 1874
 excerpt: 'Ce guide vous donne des conseils lorsque votre site WordPress s’est fait pirate'
-section: 'Cas d''usage'
+section: 'Cas d'usage'
 ---
+
+**Dernière mise à jour le 05/05/2020**
 
 > [!warning]
 >
-> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVHcloud avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
 >
-> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVHcloud ne sera pas en mesure de vous fournir une assistance.
 >
 
 ## Je me suis fait pirater &#58; que faire ?
-Vous disposez d'un site Wordpress hébergé chez OVH, et vous vous apercevez que votre site n'apparaît plus, ou qu'il est redirigé vers un autre site, ou encore votre site est rempli d'annonces intempestives.
+Vous disposez d'un site Wordpress hébergé chez OVHcloud, et vous vous apercevez que votre site n'apparaît plus, ou qu'il est redirigé vers un autre site, ou encore votre site est rempli d'annonces intempestives.
 
-OVH n'assure pas de support sur l'utilisation du produit Wordpress, ni par courriel, ni par téléphone. Mais nous pouvons vous indiquer les démarches à suivre en cas de piratage.
+OVHcloud n'assure pas de support sur l'utilisation du produit Wordpress, ni par courriel, ni par téléphone. Mais nous pouvons vous indiquer les démarches à suivre en cas de piratage.
 
 
 ### Pourquoi mon site Web s'est fait pirate ?
@@ -30,7 +32,7 @@ Il y a un certain nombre de mesures pratiques que vous pouvez prendre pour corri
 
 Ci-dessous, nous allons vous aider dans les différentes étapes pour remettre en ligne votre site.
 
-Si OVH a fermé votre site, vous pouvez retrouver un [guide généraliste]({legacy}1392){.ref}  sur les procédures de fermeture pour piratage (hack).
+Si OVHcloud a fermé votre site, vous pouvez retrouver un [guide généraliste](../site-ferme-pour-hack/){.ref}  sur les procédures de fermeture pour piratage (hack).
 
 
 ### Scannez votre poste
@@ -40,7 +42,7 @@ Assurez-vous que vous exécutez un antivirus/malware sur votre machine locale. C
 
 
 ### Estimer la situation
-Dès que vous vous rendez compte du piratage de votre site, il faut agir de suite. Dans un premier temps, il est nécessaire de savoir à quand remonte ce piratage pour valider si une restauration des données par OVH est possible. Nous allons dans la suite de ce guide localiser l'intrusion, puis aborder les 2 cas possibles.
+Dès que vous vous rendez compte du piratage de votre site, il faut agir de suite. Dans un premier temps, il est nécessaire de savoir à quand remonte ce piratage pour valider si une restauration des données par OVHcloud est possible. Nous allons dans la suite de ce guide localiser l'intrusion, puis aborder les 2 cas possibles.
 
 
 ## Recherche et correction des failles de securite
@@ -55,7 +57,7 @@ Dès que vous vous rendez compte du piratage de votre site, il faut agir de suit
 
 Il n'est pas possible de faire une procédure détaillée permettant de localiser à coup sûr l'origine de toute intrusion, mais voici comment procéder de façon générale, en s'appuyant sur le fait que l'attaque a pour origine une faille de script et donc que le pirate est passé par une requête HTTP.
 
-Toutes les requêtes HTTP sont disponibles dans vos logs ([https://logs.ovh.net/votre_domaine](https://logs.ovh.net/votre_domaine){.external}). Remplacez "votre_domaine" par votre nom de domaine et son extension. ex: ovh.com.
+Toutes les requêtes HTTP sont disponibles dans vos logs ([https://logs.ovh.net/votre_domaine](https://logs.ovh.net/){.external}). Remplacez "votre_domaine" par votre nom de domaine et son extension. ex: ovh.com.
 
 - 1 Relevez la date et l'heure apparaissant dans l'horodatage (contenu du mail que vous avez reçu)*
 - 2 Consultez vos logs en partant de cet horaire et en élargissant progressivement le champ de recherche sur des horaires antérieurs jusqu'à repérer une entrée incorrecte (étrange, différente des autres, etc.). Cela peut demander un peu de pratique ou de connaissance du format des requêtes suivant les cas. Prêtez plutôt attention aux requêtes de type POST, qui sont la principale source de hack ;
@@ -78,10 +80,10 @@ Nous vous conseillons de demander l'assistance d'un [webmaster](https://partners
 > 
 
 
-## Cas 1 &#58; le piratage a lieu dans le delai de restauration possible (sauvegarde OVH)
+## Cas 1: le piratage a lieu dans le delai de restauration possible (sauvegarde OVHcloud)
 
 ### Restauration du site
-Wordpress est composé de fichiers et d¹une base de données. Il est possible de restaurer vos fichiers à une date antérieure. OVH propose un historique de 3 semaines concernant les fichiers présents sur votre hébergement. Concernant la base de données, il est possible de remonter à 7 jours.
+Wordpress est composé de fichiers et d¹une base de données. Il est possible de restaurer vos fichiers à une date antérieure. OVHcloud propose un historique de 3 semaines concernant les fichiers présents sur votre hébergement. Concernant la base de données, il est possible de remonter à 7 jours.
 
 
 
@@ -97,11 +99,11 @@ Concernant la restauration des fichiers :
 
 Via le manager il est possible de restaurer la totalité de votre espace FTP mais cela peut être compliqué si vous avez des domaines attachés au même hébergement.
 
-Il est préférable de ne restaurer que le répertoire concerné dans le cas où plusieurs sites cohabitent sur le même hébergement : un guide est disponible  [ici]({legacy}1593){.ref}
+Il est préférable de ne restaurer que le répertoire concerné dans le cas où plusieurs sites cohabitent sur le même hébergement : un guide est disponible  [Restaurer l’espace de stockage de son hébergement web](../restauration-ftp-filezilla-espace-client/){.external}.
 
 
 ### Restauration base de donnees SQL
-Voici 2 guides expliquant comment réaliser un [export]({legacy}1394){.ref} de la base de données et comment réaliser [l'import]({legacy}1393){.ref}.
+Voici 2 guides expliquant comment réaliser un [export](../exportation-bases-donnees/){.external} de la base de données et comment réaliser [l'import](../mutualise-guide-importation-dune-base-de-donnees-mysql/){.external}.
 
 Une fois la sauvegarde de la base (dump) réalisée, il sera nécessaire de supprimer l'ensemble des tables depuis [phpMyAdmin](https://phpmyadmin.ovh.net){.external} afin de pouvoir importer votre sauvegarde.
 
@@ -112,7 +114,7 @@ Une fois la restauration terminée, vous devez vérifier si des mises à jour de
 Il faut aussi désinstaller les plugins non utilisés, la désactivation n'est pas suffisante car cela peut laisser une faille présente.
 
 
-## Cas 2 &#58; le piratage est plus ancien, la restauration non fonctionnelle
+## Cas 2 : le piratage est plus ancien, la restauration non fonctionnelle
 
 ### Vous ne pouvez pas vous connecter a votre panneau administrateur WordPress
 Il faut dans ce cas modifier votre [mot de passe administrateur](https://codex.wordpress.org/fr:R%C3%A9initialisation_de_votre_mot_de_passe){.external} en suivant le guide officiel de Wordpress.
@@ -129,7 +131,7 @@ Vous y trouverez généralement un lien vous permettant de télécharger la dern
 
 Le fichier que vous allez récupérer est généralement compressé (zippé), il faudra être en mesure de le décompresser (extraire) sur votre ordinateur. Vous trouverez sur Internet différentes aides à ce sujet.
 
-Une fois décompressé, il faut transférer les fichiers vers votre espace FTP, un guide est disponible [ici]({legacy}1374){.ref}.
+Une fois décompressé, il faut transférer les fichiers vers votre espace FTP, un guide est disponible [ici](../connexion-espace-stockage-ftp-hebergement-web/){.external}.
 
 Dans le cas où plusieurs sites cohabitent sur le même hébergement, le transfert des fichiers doit être réalisé dans le répertoire concerné.
 
@@ -137,7 +139,7 @@ Il sera nécessaire de modifier le fichier  **wp-config.php**  afin que le lien 
 
 Il faut pour cela vous munir du mail reçu suite à la création de votre base de données, vous pouvez retrouver les informations depuis votre espace client dans la section assistance > Historique des e-mails sauf le mot de passe que vous seul connaissez.
 
-Si vous ne vous rappelez plus du mot de passe de votre base de données, il est possible de le modifier depuis votre espace client. Cette manipulation est expliquée dans ce [guide]({legacy}1374){.ref}
+Si vous ne vous rappelez plus du mot de passe de votre base de données, il est possible de le modifier depuis votre espace client. Cette manipulation est expliquée dans ce [guide](../modifier-mot-de-passe-base-de-donnees/){.ref}
 
 
 
