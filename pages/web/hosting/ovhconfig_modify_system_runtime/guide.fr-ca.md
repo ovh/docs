@@ -1,23 +1,23 @@
 ---
 title: 'Modifier la configuration de son hébergement web'
 slug: modifier-lenvironnement-dexecution-de-mon-hebergement-web
-excerpt: 'Apprenez à modifier la configuration de votre hébergement web OVH'
+excerpt: 'Apprenez à modifier la configuration de votre hébergement web OVHcloud'
 section: 'Configuration de l''hébergement'
 order: 3
 ---
 
-**Dernière mise à jour le 06/12/2018**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
-Sur le web, il existe une multitude de sites internet. Qu’il s’agisse de créer un blog ou une boutique en ligne, de partager une passion ou de promouvoir une activité professionnelle, votre [hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} vous permet d’héberger le site internet que vous souhaitez, dans la mesure où celui-ci est compatible avec la [configuration de nos infrastructures](http://pro.ovh.net/infos/){.external}.
+Sur le web, il existe une multitude de sites internet. Qu’il s’agisse de créer un blog ou une boutique en ligne, de partager une passion ou de promouvoir une activité professionnelle, votre [hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} vous permet d’héberger le site internet que vous souhaitez, dans la mesure où celui-ci est compatible avec la [configuration de nos infrastructures](http://pro.ovh.net/infos/){.external}.
 
-**Apprenez à modifier la configuration de votre hébergement web OVH depuis votre espace client.**
+**Apprenez à modifier la configuration de votre hébergement web OVHcloud depuis votre espace client.**
 
 ## Prérequis
 
-- Disposer d’une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} (sauf Cloud Web).
-- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager).
+- Disposer d’une offre d’[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} (sauf Cloud Web).
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
 ## En pratique
 
@@ -34,7 +34,7 @@ Lorsque vous changez la configuration de votre hébergement, vous modifiez celle
 
 #### Étape 1 : accéder à la gestion de la configuration de l'hébergement
 
-Pour démarrer cette manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. Cliquez ensuite sur le bouton représentant trois points, puis sur `Modifier la configuration`{.action}.
+Pour démarrer cette manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. Cliquez ensuite sur le bouton représentant trois points, puis sur `Modifier la configuration`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
@@ -49,7 +49,7 @@ Sur la fenêtre qui apparaît, deux choix sont possibles. Sélectionnez celui qu
 |Choix|Détail|
 |---|---|
 |« Revenir à une configuration précédente »|Après avoir sélectionné cette option, choisissez la configuration à restaurer à côté de `Choix historique`. Cette possibilité peut ne pas être disponible si vous n'avez pas effectué de changement dans le passé.|
-|« Modifier la configuration courante »|Après avoir sélectionné cette option, choisissez les modifications à apporter à la configuration parmi les champs proposés. Si nécessaire, découvrez-les en vous rendant à la section [« Découvrir les configurations disponibles »](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/#decouvrir-les-configurations-disponibles){.external} de cette documentation.|
+|« Modifier la configuration courante »|Après avoir sélectionné cette option, choisissez les modifications à apporter à la configuration parmi les champs proposés. Si nécessaire, découvrez-les en vous rendant à la section [« Découvrir les configurations disponibles »](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#decouvrir-les-configurations-disponibles){.external} de cette documentation.|
 
 > [!primary]
 >
@@ -64,10 +64,10 @@ Dès que vous êtes prêt, cliquez sur `Valider`{.action} pour appliquer la modi
 
 Lorsque vous modifiez la configuration d'un hébergement web, plusieurs choix de configuration sont possibles. Poursuivez la lecture de cette documentation en fonction du choix pour lequel vous souhaitez obtenir plus d'informations.
 
-- [Environnement d'exécution](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/#environnement-dexecution){.external}.
-- [Version de PHP](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/#version-de-php){.external}.
-- [Moteur PHP](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/#moteur-php){.external}.
-- [Mode](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/#mode){.external}.
+- [Environnement d'exécution](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#environnement-dexecution){.external}.
+- [Version de PHP](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#version-de-php){.external}.
+- [Moteur PHP](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#moteur-php){.external}.
+- [Mode](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#mode){.external}.
 
 #### Environnement d'exécution
 
@@ -98,21 +98,21 @@ Changer l'environnement d'exécution permet de modifier certaines valeurs techni
 
 Une fois votre choix effectué, il existe deux possibilités pour réaliser ce changement :
 
-- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation ;
-- **en modifiant manuellement le fichier « .ovhconfig** » : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. Si vous souhaitez modifier le fichier « **.ovhconfig** », reportez-vous aux instructions décrites dans notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](https://docs.ovh.com/fr/hosting/configurer-fichier-ovhconfig/){.external}.
+- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation ;
+- **en modifiant manuellement le fichier « .ovhconfig** » : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. Si vous souhaitez modifier le fichier « **.ovhconfig** », reportez-vous aux instructions décrites dans notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](../configurer-fichier-ovhconfig/){.external}.
 
 #### Version de PHP
 
-Il existe aujourd'hui plusieurs versions du langage de programmation PHP. Comme à l'accoutumée, les évolutions de versions apportent des correctifs divers ainsi que l'ajout ou l'arrêt de fonctionnalités. OVH propose les dernières versions majeures de PHP dont vous pouvez retrouver la liste en cliquant sur ce lien : <https://www.ovh.com/fr/hebergement-web/php.xml>. 
+Il existe aujourd'hui plusieurs versions du langage de programmation PHP. Comme à l'accoutumée, les évolutions de versions apportent des correctifs divers ainsi que l'ajout ou l'arrêt de fonctionnalités. OVHcloud propose les dernières versions majeures de PHP dont vous pouvez retrouver la liste en cliquant sur ce lien : <https://www.ovh.com/ca/fr/hebergement-web/php.xml>. 
 
 Du fait que certaines fonctionnalités peuvent ne pas être maintenues au fil des nouvelles versions, **assurez-vous avant d'entamer tout changement que la nouvelle version de PHP souhaitée est compatible avec votre site internet.**
 
 Il existe plusieurs manières de modifier la version de PHP de votre hébergement web :
 
-- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation ;
+- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation ;
 - **en modifiant manuellement un fichier sur votre espace de stockage** : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. 
 
-De manière générale, si vous souhaitez obtenir plus d'informations sur le changement d'une version de PHP, reportez-vous aux instructions décrites dans notre documentation [« Changer la version de PHP d’un hébergement web OVH »](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/){.external}.
+De manière générale, si vous souhaitez obtenir plus d'informations sur le changement d'une version de PHP, reportez-vous aux instructions décrites dans notre documentation [« Changer la version de PHP d’un hébergement web OVHcloud »](../configurer-le-php-sur-son-hebergement-web-mutu-2014/){.external}.
 
 #### Moteur PHP
 
@@ -120,8 +120,8 @@ Le choix du moteur PHP permet d'activer ou de désactiver l'accélérateur PHP (
 
 Il existe deux possibilités pour modifier le moteur PHP utilisé par votre hébergement web :
 
-- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation. Pour activer l'accélérateur PHP (« PHP-FPM »), choisissez « php » en tant que moteur. Pour le désactiver, choisissez « phpcgi » ;
-- **en modifiant manuellement le fichier « .ovhconfig** » : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. Si vous souhaitez modifier le fichier « **.ovhconfig** », reportez-vous aux instructions décrites dans notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](https://docs.ovh.com/fr/hosting/configurer-fichier-ovhconfig/){.external}.
+- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation. Pour activer l'accélérateur PHP (« PHP-FPM »), choisissez « php » en tant que moteur. Pour le désactiver, choisissez « phpcgi » ;
+- **en modifiant manuellement le fichier « .ovhconfig** » : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. Si vous souhaitez modifier le fichier « **.ovhconfig** », reportez-vous aux instructions décrites dans notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](../configurer-fichier-ovhconfig/){.external}.
 
 #### Mode
 
@@ -139,8 +139,8 @@ Le choix du mode permet de gérer le comportement du cache des fichiers statique
 
 Pour modifier le mode utilisé par votre hébergement web, il existe deux possibilités :
 
-- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation ;
-- **en modifiant manuellement le fichier « .ovhconfig** » : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. Si vous souhaitez modifier le fichier « **.ovhconfig** », reportez-vous aux instructions décrites dans notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](https://docs.ovh.com/fr/hosting/configurer-fichier-ovhconfig/){.external}.
+- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation ;
+- **en modifiant manuellement le fichier « .ovhconfig** » : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. Si vous souhaitez modifier le fichier « **.ovhconfig** », reportez-vous aux instructions décrites dans notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](../configurer-fichier-ovhconfig/){.external}.
 
 ## Aller plus loin
 
