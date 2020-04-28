@@ -57,7 +57,7 @@ Si vous souhaitez éditer cette zone DNS, toujours depuis l'[espace client OVHcl
 > Si vous venez juste de créer la zone DNS et que le nom de domaine n'apparaît pas encore dans la liste des vos services `Domaines`{.action}, patientez quelques instants puis rechargez la page.
 >
 
-Dès lors, réalisez les manipulations nécessaires. Vous pouvez en apprendre plus sur l'édition d'une zone DNS grâce à notre documentation intitulée « [Éditer une zone DNS OVH](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/){.external} ». Une fois la zone DNS OVHcloud de votre nom de domaine modifiée, un temps de propagation de 4 à 24 heures maximum est nécessaire afin que les modifications soient effectives.
+Dès lors, réalisez les manipulations nécessaires. Vous pouvez en apprendre plus sur l'édition d'une zone DNS grâce à notre documentation intitulée « [Éditer une zone DNS OVHcloud](../editer-ma-zone-dns/){.external} ». Une fois la zone DNS OVHcloud de votre nom de domaine modifiée, un temps de propagation de 4 à 24 heures maximum est nécessaire afin que les modifications soient effectives.
 
 ### Étape 3 : modifier les serveurs DNS du nom de domaine
 
@@ -69,6 +69,6 @@ Une fois en votre possession, **modifiez les serveurs DNS de votre nom de domain
 
 ## Aller plus loin
 
-[Éditer une zone DNS OVHcloud](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/){.external}.
+[Éditer une zone DNS OVHcloud](../editer-ma-zone-dns/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
