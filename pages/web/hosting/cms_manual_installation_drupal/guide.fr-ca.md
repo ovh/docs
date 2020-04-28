@@ -6,10 +6,11 @@ excerpt: Vous trouverez dans ce guide comment installer manuellement votre CMS D
 section: CMS
 ---
 
+**Dernière mise à jour le 05/05/2020**
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -23,13 +24,13 @@ La version de Drupal utilisée dans ce guide est la versions 7.41.
 
 Plus d'informations [dans ce guide](../modifier_environnement_execution_hebergement_web_optmisation/guide.fr-fr.md){.ref}.
 
-Si vous souhaitez installer d'autres modules/CMS, consultez [ce guide]({legacy}1375){.ref}.
+Si vous souhaitez installer d'autres modules/CMS, consultez [ce guide](../mutualise-installer-manuellement-mon-cms/){.ref}.
 
 Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu){.external}, ils ont généralement besoin d'une plateforme d'hébergement comprenant un serveur FTP, une base de données, et un nom de domaine.
 
-Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovh.com/fr/hebergement-web/){.external}.
+Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
 
-*Si vous souhaitez installer Drupal de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* []({legacy}1402){.ref}
+*Si vous souhaitez installer Drupal de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [Installer son site avec les modules en 1 clic](../modules-en-1-clic/){.ref}
 
 
 ## Mise en ligne de Drupal
@@ -37,7 +38,7 @@ Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovh.com/fr
 ### Partie 1 &#58; preparation de linstallation
 **Outils nécessaires**
 
-Pour installer le CMS  **Drupal**  sur votre offre d'hébergement mutualisé, nous vous conseillons de vous munir d'un logiciel  **FTP**  tel que **FileZilla**  (gratuit). *Assurez-vous d'être en possession de votre identifiant client (nic-handle) et de votre mot de passe, pour pouvoir vous connecter à votre* [espace client OVH](https://www.ovh.com/manager/web/login/){.external} *si nécessaire.*
+Pour installer le CMS  **Drupal**  sur votre offre d'hébergement mutualisé, nous vous conseillons de vous munir d'un logiciel  **FTP**  tel que **FileZilla**  (gratuit). *Assurez-vous d'être en possession de votre identifiant client (nic-handle) et de votre mot de passe, pour pouvoir vous connecter à votre* [espace client OVHcloud](https://www.ovh.com/manager/web/login/){.external} *si nécessaire.*
 
 - Récupérez votre identifiant et le mot de passe FTP qui vous permettent de vous connecter sur l'hébergement web.
 - Il est aussi nécessaire d'avoir en votre possession votre identifiant et le mot de passe de la base de données SQL qui vous permettent de vous connecter dans la base de données.
@@ -80,7 +81,7 @@ Le dossier cible sera intitulé " **Drupal-xxx**" (xxx étant souvent remplacé 
 
 Pour déposer les fichiers de  **Drupal**  sur votre hébergement, vous devez tout d'abord vous connecter à celui-ci.
 
-*Un guide est disponible concernant la connexion en FTP sur l'offre mutualisée :* []({legacy}1374){.ref}
+*Un guide est disponible concernant la connexion en FTP sur l'offre mutualisée :* [Se connecter à l’espace de stockage de son hébergement web](../connexion-espace-stockage-ftp-hebergement-web/){.ref}
 
 - Transfert des fichiers via FTP
 
@@ -88,7 +89,7 @@ Suivez ces étapes pour déposer vos fichiers sur le FTP. Une fois connecté à 
 
 Dans la partie "Site local", qui correspond à la liste des fichiers présents sur votre ordinateur, ouvrez le dossier décompressé intitulé "Drupal-xxx" dans lequel sont présents les fichiers du CMS.
 
-Dans la partie "Site distant" qui correspond dans ce cas à votre hébergement mutualisé OVH, ouvrez le dossier "www". C'est dans ce dossier que tous les fichiers du CMS devront être déposés.
+Dans la partie "Site distant" qui correspond dans ce cas à votre hébergement mutualisé OVHcloud, ouvrez le dossier "www". C'est dans ce dossier que tous les fichiers du CMS devront être déposés.
 
 
 
@@ -141,7 +142,8 @@ Sélectionnez la langue d'installation "Français" puis cliquez sur "Save and co
 
 
 ### Étape 3 - Connexion a la base de donnees
-Munissez-vous des identifiants de votre base de données (une aide à ce sujet est disponible ici :[]({legacy}1374){.ref} ).
+
+Munissez-vous des identifiants de votre base de données (une aide à ce sujet est disponible dans le guide :[Créer une base de données sur son hébergement web](../creer-base-de-donnees/){.ref} ).
 
 Renseignez les informations demandées concernant la base de données :
 
@@ -230,7 +232,7 @@ Nous vous invitons à consulter les forums dédiés à la solution Drupal.
 
 > [!alert]
 >
-> Le support d'OVH ne sera pas habilité à vous répondre pour toute demande d'aide concernant la configuration de votre Drupal.
+> Le support d'OVHcloud ne sera pas habilité à vous répondre pour toute demande d'aide concernant la configuration de votre Drupal.
 > Cependant, un guide d'utilisation est à votre disposition : <legacy:2053>.
 > 
 
@@ -240,11 +242,11 @@ Nous vous invitons à consulter les forums dédiés à la solution Drupal.
 
 Vous avez mis en place vos fichiers sur le FTP, cependant la page "Site en construction" est toujours affichée.
 
-À l'installation de votre hébergement, OVH met en place une page d'attente, le temps que vous déposiez les fichiers de votre site internet.
+À l'installation de votre hébergement, OVHcloud met en place une page d'attente, le temps que vous déposiez les fichiers de votre site internet.
 
-Si vous déposez simplement vos fichiers dans le dossier  **"www"**  sans supprimer le contenu déposé par OVH, vous risquez de rencontrer ce souci.
+Si vous déposez simplement vos fichiers dans le dossier  **"www"**  sans supprimer le contenu déposé par OVHcloud, vous risquez de rencontrer ce souci.
 
-Afin de corriger cela, vous devez supprimer ou renommer le fichier "index.html" mis en place par OVH sur votre hébergement.
+Afin de corriger cela, vous devez supprimer ou renommer le fichier "index.html" mis en place par OVHcloud sur votre hébergement.
 
 *Il peut être intéressant de simplement le renommer afin de vous permettre de le réactiver à tout moment et de vous en servir comme page d'attente.*
 
