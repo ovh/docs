@@ -37,7 +37,7 @@ Desde el área de cliente, OVHcloud pone a disposición de sus clientes una herr
 
 **Migrar un sitio web existente a OVHcloud**
 
-La migración de un sitio web puede ser complicada, sobre todo cuando se trata de servicios en producción en los que no quiere que se produzcan interrupciones. Esta guía solo describe algunas de las operaciones que debe realizar para migrar sus servicios. Para conocer todos los pasos, consulte nuestra guía [Transferir un sitio web y el correo sin cortes del servicio](https://docs.ovh.com/us/es/domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/).
+La migración de un sitio web puede ser complicada, sobre todo cuando se trata de servicios en producción en los que no quiere que se produzcan interrupciones. Esta guía solo describe algunas de las operaciones que debe realizar para migrar sus servicios. Para conocer todos los pasos, consulte nuestra guía [Transferir un sitio web y el correo sin cortes del servicio](../../domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/).
 
 ### 2. Instalar el sitio web
 
@@ -55,7 +55,7 @@ Por último, para instalar el módulo en un clic, seleccione el CMS que quiera i
 
 Una vez haya finalizado la instalación del módulo, recibirá por correo electrónico la confirmación, así como la información necesaria para conectarse al panel de administración del sitio web. Una vez hecho esto, puede pasar a las siguientes etapas descritas en esta guía.
 
-Si desea más información sobre los módulos en un clic de OVHcloud, consulte la guía [Instalar un sitio web con un módulo en un clic](https://docs.ovh.com/us/es/hosting/modulos-en-un-clic/).
+Si desea más información sobre los módulos en un clic de OVHcloud, consulte la guía [Instalar un sitio web con un módulo en un clic](../modulos-en-un-clic/).
 
 #### Solución rápida en pocos clics y sin necesidad de conocimientos técnicos
 
@@ -82,7 +82,7 @@ Si desea más información sobre la instalación de un módulo en modo avanzado,
 
 Esta solución es útil si desea crear o migrar un sitio web sin utilizar los módulos de OVHcloud. Para ello, debe tener los archivos del sitio web que desea instalar, ya que deberá conectarse manualmente a su espacio de almacenamiento para subir dichos archivos y luego, si es posible, conectar su sitio a una base de datos previamente creada.
 
-No existe un procedimiento universal, ya que cada sitio web es diferente, pero podemos orientarle sobre las operaciones que deberá realizar en su alojamiento web de OVHcloud en las guías [Publicar un sitio web en internet](https://docs.ovh.com/us/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/) y [Transferir un sitio web y el correo sin cortes del servicio](https://docs.ovh.com/us/es/domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/). Una vez haya instalado el sitio web manualmente en su alojamiento, continúe con los pasos explicados a continuación.
+No existe un procedimiento universal, ya que cada sitio web es diferente, pero podemos orientarle sobre las operaciones que deberá realizar en su alojamiento web de OVHcloud en las guías [Publicar un sitio web en internet](../web_hosting_publicar_un_sitio_web_en_internet/) y [Transferir un sitio web y el correo sin cortes del servicio](../../domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/). Una vez haya instalado el sitio web manualmente en su alojamiento, continúe con los pasos explicados a continuación.
 
 ### 3. Crear las direcciones de correo electrónico
 
@@ -94,7 +94,7 @@ Para crear una o más direcciones de correo electrónico, deber estar conectado 
 
 Introduzca la información solicitada para crear su dirección de correo electrónico y repita este mismo proceso si desea crear más direcciones. Para migrar todas sus direcciones de correo electrónico a OVHcloud, le recomendamos que utilice nuestra herramienta [OVHcloud Mail Migrator](https://omm.ovh.net/){.external}, que le simplificará el proceso. 
 
-Si desea más información sobre cómo crear una dirección de correo electrónico o migrar sus servicios a OVHcloud, consulte nuestras guías [Crear una dirección de correo electrónico](https://docs.ovh.com/us/es/emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/) y, en su caso, [Transferir un sitio web y el correo sin cortes del servicio](https://docs.ovh.com/us/es/domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/).
+Si desea más información sobre cómo crear una dirección de correo electrónico o migrar sus servicios a OVHcloud, consulte nuestras guías [Crear una dirección de correo electrónico](../../emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/) y, en su caso, [Transferir un sitio web y el correo sin cortes del servicio](../../domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/).
 
 ### 4. Comprobar o modificar la configuración del dominio
 
@@ -136,7 +136,7 @@ Compruebe la zona DNS de su dominio directamente con el proveedor que lo gestion
 
 **Migración de servicios a OVHcloud (sitio web y correo electrónico)**
 
-En este caso, si las operaciones relacionadas con los DNS no se efectúan de forma adecuada, pueden afectar a la disponibilidad de los servicios. Tal como se indica en la guía [Transferir un sitio web y el correo sin cortes del servicio](https://docs.ovh.com/us/es/domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}, deberá modificar los servidores DNS del dominio al final del proceso.
+En este caso, si las operaciones relacionadas con los DNS no se efectúan de forma adecuada, pueden afectar a la disponibilidad de los servicios. Tal como se indica en la guía [Transferir un sitio web y el correo sin cortes del servicio](../../domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}, deberá modificar los servidores DNS del dominio al final del proceso.
 
 > [!primary]
 >
@@ -153,16 +153,16 @@ Si necesita ayuda con las opciones de configuración del sitio, le invitamos a c
 
 Para utilizar sus direcciones de correo electrónico, OVHcloud pone a su disposición el cliente de correo web (webmail) Roundcube. Puede acceder desde <https://www.ovh.es/mail/>, donde tendrá que indicar las claves de la dirección de correo electrónico creada con OVHcloud.
 
-Si desea configurar su dirección de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte la siguiente documentación: <https://docs.ovh.com/us/es/emails/>.
+Si desea configurar su dirección de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte la siguiente documentación: <../../emails/>.
 
 ## Más información
 
-[Transferir un sitio web y el correo sin cortes del servicio](https://docs.ovh.com/us/es/domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/)
+[Transferir un sitio web y el correo sin cortes del servicio](../../domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/)
 
-[Publicar un sitio web en internet](https://docs.ovh.com/us/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/)
+[Publicar un sitio web en internet](../web_hosting_publicar_un_sitio_web_en_internet/)
 
-[Instalar un sitio web con un módulo en un clic](https://docs.ovh.com/us/es/hosting/modulos-en-un-clic/)
+[Instalar un sitio web con un módulo en un clic](../modulos-en-un-clic/)
 
-[Crear una dirección de correo electrónico](https://docs.ovh.com/us/es/emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/)
+[Crear una dirección de correo electrónico](../../emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/)
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
