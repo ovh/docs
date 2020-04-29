@@ -1,5 +1,5 @@
 ---
-title: 'Web hosting: FileZilla user guide'
+title: 'Web Hosting: FileZilla user guide'
 slug: web_hosting_filezilla_user_guide
 excerpt: 'How to use FileZilla'
 id: '1380'
@@ -64,7 +64,7 @@ In the green box at the top, in order to establish the connection to the remote 
 |FTP user password|This is the password associated with the FTP login.<br><br> Depending on which software you are using, the field should be labelled as "Password".|
 |Connection port|This is usually entered automatically by the program. If you need to enter it manually:<br><br>\- use port "21" for a connection using FTP protocol<br>\- use port "22" for a connection using SFTP (if it is enabled)|
 
-If you don’t have this information, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Web`{.action} section, then click on `Hosting`{.action} in the services bar on the left-hand side. Select the name of the Web Hosting plan concerned, and click on the `FTP - SSH`{.action} tab. The information about your storage space will appear, along with a table listing the FTP and SSH users created on your Web Hosting plan.
+If you don’t have this information, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Web`{.action} section, then click on `Hosting`{.action} in the services bar on the left-hand side. Select the name of the Web Hosting plan concerned, and click on the `FTP - SSH`{.action} tab. The information about your storage space will appear, along with a table listing the FTP and SSH users created on your Web Hosting plan.
 
 
 Once everything is entered correctly, clickQuickconnect to connect to the server.
@@ -74,7 +74,7 @@ Once everything is entered correctly, clickQuickconnect to connect to the server
 
 ## SFTP connection
 The SFTP (for SSH File Transfer Protocol) is an FTP connection on port 22 and therefore provides a secure connection.
-Be careful, this type of connection is only valid from the [Professional](https://www.ovh.co.uk/web-hosting/) hosting package and upwards.
+Be careful, this type of connection is only valid from the [Professional](https://www.ovh.com/ca/en/web-hosting/) hosting package and upwards.
 It allows you to change file permissions that you cannot run while logged in FTP on port 21 for example.
 
 In the green box at the top this time to connect to the remote server, you will be asked:
@@ -89,7 +89,7 @@ newftp.cluster0XX.ovh.net
 - Port: 22 this time
 
 
-After clicking the Quickconnect button, a dialog box opens (see above) to certify the connection to the host which you are signing on to. As you are connected to an OVH host, you can tick "Always trust this host, add this key to the cache" so that it does not ask you this in the future.
+After clicking the Quickconnect button, a dialog box opens (see above) to certify the connection to the host which you are signing on to. As you are connected to an OVHcloud host, you can tick "Always trust this host, add this key to the cache" so that it does not ask you this in the future.
 
 ![](images/img_1834.jpg){.thumbnail}
 
