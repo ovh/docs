@@ -39,7 +39,7 @@ Conocer los distintos tipos de registros le permitirá entender mejor los cambio
 |MX|Permite asociar un dominio a un servidor de correo indicando la dirección del servidor en el que está alojada la solución de correo. Es probable que el proveedor disponga de varios servidores de correo, en cuyo caso será necesario crear varios registros MX.|
 |SRV|Indica la dirección del servidor que gestiona un servicio como, por ejemplo, la dirección de un servidor SIP o la de un servidor que permite que un cliente de correo se configure automáticamente mediante el *autodiscover*.|
 |TXT|Permite añadir el valor que desee (en formato de texto) a los parámetros DNS del dominio. Este registro suele utilizarse en procesos de verificación.|
-|SPF|Permite evitar posibles usurpaciones de identidad con las direcciones de correo electrónico que utilizan el dominio, por ejemplo, identificando el servidor de su proveedor de solución de correo electrónico como único origen de envío legítimo. Encontrará más información en nuestra guía sobre [cómo añadir un registro SPF a la configuración del dominio](https://docs.ovh.com/us/es/domains/web_hosting_el_registro_spf/){.external}.|
+|SPF|Permite evitar posibles usurpaciones de identidad con las direcciones de correo electrónico que utilizan el dominio, por ejemplo, identificando el servidor de su proveedor de solución de correo electrónico como único origen de envío legítimo. Encontrará más información en nuestra guía sobre [cómo añadir un registro SPF a la configuración del dominio](../web_hosting_el_registro_spf/){.external}.|
 |CAA|Permite indicar las autoridades de certificación autorizadas a emitir certificados SSL para un dominio.|
 
 ### 1. Acceder a la gestión de la zona DNS del dominio
@@ -97,9 +97,9 @@ También es posible modificar el TTL de un registro DNS concreto. Esta operació
 
 ## Más información
 
-[Información general sobre los servidores DNS](https://docs.ovh.com/us/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
+[Información general sobre los servidores DNS](../web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
 
-[Añadir un registro SPF a la configuración del dominio](https://docs.ovh.com/us/es/domains/web_hosting_el_registro_spf/){.external}
+[Añadir un registro SPF a la configuración del dominio](../web_hosting_el_registro_spf/){.external}
 
 [Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](https://www.ovh.es/dominios/servicio-dnssec.xml){.external}
 
