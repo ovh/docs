@@ -8,6 +8,7 @@ legacy_guide_number: g1972
 
 
 ## Prevent the content of a directory from being listed
+
 To prevent users from listing all the files contained in a directory in the absence of an index (.cgi, .html, .php etc ....), create an .htaccess file containing the following line:
 
 
@@ -17,8 +18,8 @@ Options -Indexes
 
 
 
-
 ## Redirect error messages
+
 If you want to use custom error messages or associate each type of error with an associated error page, create a .htaccess file containing the following lines: 
 
 
@@ -81,6 +82,7 @@ If that doesn't work, check the Internet Explorer properties > Advanced tab and 
 
 
 ## Specify a different index file
+
 The server default for a directory's default file is index.html, index.htm or index.php. If you want to set your DirectoryIndex to another file,you can insert the code format to your .htaccess file:
 
 
@@ -97,16 +99,6 @@ DirectoryIndex home.html
 ```
 
 
+## Go further
 
-
-## Redirections
-To do this, click on: [This link](https://www.ovh.co.uk/g1339.redirection-nom-de-domaine#redirection_web_via_le_htaccess)
-
-
-## URL rewriting
-For URL rewriting, click on: [This link](https://www.ovh.co.uk/g1971.reecriture_durl_grace_au_mod_rewrite)
-
-
-## 
-Find out all about the .htaccess file [Here](https://www.ovh.co.uk/g1967.mutualise_tout_sur_le_fichier_htaccess)
-
+Join our community of users on https://community.ovh.com/en/.
