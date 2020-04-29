@@ -17,7 +17,7 @@ It is possible to transfer an OVHcloud domain name, allowing you to work with yo
 ## Requirements
 - You must have a domain name registered with OVHcloud.
 - You must be authorised to request the domain name transfer. Furthermore, the domain name holder and/or its administrators must be informed of the transfer request.
-- You must have the appropriate permissions to manage the domain name from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must have the appropriate permissions to manage the domain name from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 - The domain name must have been created over 61 days ago, and must not have been transferred or changed ownership during that period.
 
 > [!primary]
