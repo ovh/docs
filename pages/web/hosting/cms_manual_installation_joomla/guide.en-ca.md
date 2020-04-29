@@ -11,9 +11,11 @@ legacy_guide_number: g1978
 ## Part 1: preparing for installation
 
 ## Necessary tools
+
 To install the Joomla! platform on your shared hosting package, we advise your to get an FTP program such as  FileZilla (it's free).
 
 ## Necessary credentials
+
 Make sure that you have your customer ID (nic-handle) and password so you can log in to your [OVHcloud customer account](https://www.ovh.com/auth/?action=gotomanager) if necessary.
 
 
@@ -42,6 +44,7 @@ The file that you download will usually be compressed (zipped) so you have to be
 ## Part 3: Upload your files to your hosting package via FTP
 
 ## - Unzip the file folder
+
 Open the folder that contains the zipped folder you downloaded. 
 
 Right-click on the folder, then select "Extract all...".
@@ -58,6 +61,7 @@ The target folder will be called "Joomla!"
 ![](images/img_3143.jpg){.thumbnail}
 
 ## Log on to the web hosting package via FTP
+
 To upload the Joomla! files to your hosting package, you first have to log on. 
 
 Follow this guide on connecting to a hosting package in FTP:[]({legacy}1374)
@@ -65,9 +69,11 @@ Follow this guide on connecting to a hosting package in FTP:[]({legacy}1374)
 ![](images/img_3144.jpg){.thumbnail}
 
 ## Transfer files via FTP
+
 Follow these steps to upload your files using FTP.
 
 ## Step 1
+
 Once you are logged in to FileZilla. 
 
 In the "Local site" section, which refers to the list of files on your computer, open the unzipped file entitled "Joomla!" where your CMS files will be located. 
@@ -82,6 +88,7 @@ Your files must be uploaded to the "www" folder or you will not be able to acces
 ![](images/img_3145.jpg){.thumbnail}
 
 ## Step 2
+
 Once these folders are open:
 
 In the "Local site" section, find all the files you need to install the Drupal CMS. 
@@ -95,6 +102,7 @@ It is very likely that the "www" folder is not empty. You do not have to remove 
 ![](images/img_3146.jpg){.thumbnail}
 
 ## Step 3
+
 The files have been transferred. 
 
 All the files should be uploaded to the remote FTP server. This could take a few minutes. 
@@ -114,6 +122,7 @@ This operation is the final step in uploading files via FTP.
 In order to link your database to Joomla!, you have to follow the CMS install steps:
 
 ## Step 1
+
 Go to your domain name. The installation wizard will run. 
 
 First, enter the Joomla! configuration settings:
@@ -137,6 +146,7 @@ Click "Next"
 ![](images/img_3148.jpg){.thumbnail}
 
 ## Step 2
+
 Get your database credentials (see the beginning of this guide)
 
 Enter the information requested concerning the database
@@ -163,9 +173,11 @@ Click "Next" to confirm the information requested.
 ## Completion
 
 ## Completing the installation steps
+
 In order to complete the Joomla! installation take the following steps.
 
 ## Step 1
+
 A summary of selected settings will appear. 
 
 Two pieces of information are requested:
@@ -187,11 +199,13 @@ Click "Install" to continue.
 ![](images/img_3150.jpg){.thumbnail}
 
 ## Step 2
+
 Wait a few minutes for it to install.
 
 ![](images/img_3151.jpg){.thumbnail}
 
 ## Step 3
+
 For security reasons Joomla! please delete the installation directory.
 
 To do this just click "delete the installation directory".
@@ -199,6 +213,7 @@ To do this just click "delete the installation directory".
 ![](images/img_3152.jpg){.thumbnail}
 
 ## Step 4
+
 You will get a message confirming that the directory has been deleted. 
 
 You can now connect to the Joomla! administration section. Log in in the window that opens, where you can also view the homepage set up by Joomla!.
@@ -206,12 +221,14 @@ You can now connect to the Joomla! administration section. Log in in the window 
 ![](images/img_3153.jpg){.thumbnail}
 
 ## Joomla! administration section.
+
 For an overview of the Joomla! admin panel, click on the image below.
 
 ![](images/img_3154.jpg){.thumbnail}
 
 
 ## Useful information
+
 OVHcloud support is not authorised to answer questions about Joomla! configuration.
 However, there is a user guide available:  []({legacy}2053).
 
@@ -223,6 +240,7 @@ You can also view the forums dedicated to the Joomla! solution.
 
 
 ## Typical error: site under construction
+
 You have set up your files on FTP, however the "site under construction" page is still displayed. 
 
 When your hosting package was installed, OVHcloud set up a "waiting" page while you were uploading files to your site. 
@@ -238,6 +256,7 @@ Something else to note: Your website's files must be uploaded to the "www" folde
 ![](images/img_3155.jpg){.thumbnail}
 
 ## Typical error: PHP version
+
 This error is to do with your server's PHP version. 
 
 The cause is simple: the latest version of PHP is not enabled. 
@@ -247,6 +266,7 @@ A guide is available detailing how to modify the PHP version on your hosting pac
 ![](images/img_3156.jpg){.thumbnail}
 
 ## Typical error: Magic Quotes
+
 A variable which has not been properly defined is preventing Joomla! from installing. 
 
 Magic Quotes must be Off and, therefore, set to 0 in your configuration file. 
