@@ -5,18 +5,18 @@ excerpt: 'Find out how to restore a file or an entire storage space from your We
 section: 'FTP and SSH'
 ---
 
-**Last updated 25th September 2018**
+**Last updated 5th May 2020**
 
 ## Objective
 
-With an OVH Web Hosting plan, you get a storage space to host your websites on. A range of actions (e.g. deleting or editing a file) could make your website inaccessible. As a result, you may find that you need to restore all of the data stored on your storage space, or simply a file stored on it.
+With an OVHcloud Web Hosting plan, you get a storage space to host your websites on. A range of actions (e.g. deleting or editing a file) could make your website inaccessible. As a result, you may find that you need to restore all of the data stored on your storage space, or simply a file stored on it.
 
 **Find out how to restore a file or an entire storage space from your Web Hosting plan.**
 
 ## Requirements
 
-- a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} (please note that this does not work with Cloud Web)
-- Depending on which method you use, you must be able to manage the Web Hosting plan from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, or have the FTP user password required to access your storage space. 
+- a [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/) (please note that this does not work with Cloud Web)
+- Depending on which method you use, you must be able to manage the Web Hosting plan from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), or have the FTP user password required to access your storage space. 
 
 ## Instructions
 
@@ -28,24 +28,24 @@ Before you begin, ensure that you can use the restore dates offered to restore y
 - Sunday, at 01:00 (UTC+1)
 - Sunday two weeks ago, at 01:00 (UTC+1)
 
-If you want to retrieve a backup from an earlier period, OVH will not be able to provide you with this. We advise taking personal backups of your website in advance, and using those if you would like an earlier backup. 
+If you want to retrieve a backup from an earlier period, OVHcloud will not be able to provide you with this. We advise taking personal backups of your website in advance, and using those if you would like an earlier backup. 
 
 You also need to decide which restore method you will use:
 
 |Restore method|Description|
 |---|---|
-|Restoring via the OVH Control Panel|Restores the entire content of your storage space. The current content will be fully replaced by the content of the backup you have selected.|
+|Restoring via the OVHcloud Control Panel|Restores the entire content of your storage space. The current content will be fully replaced by the content of the backup you have selected.|
 |Restoring via software or an interface|Gives you read-only access to a backup of the storage space. Although this method is more technical, you can use it to recover one or more files from a previous date, without having to overwrite the entire contents of the storage space.|
 
 Once you are ready to do so, carry on reading the section of this guide that is relevant to the restore method you have chosen.
 
-- [Restore the storage space via the OVH Control Panel](https://docs.ovh.com/gb/en/hosting/restoring-ftp-filezilla-control-panel/#restore-the-storage-space-via-the-ovh-control-panel){.external}.
+- [Restore the storage space via the OVHcloud Control Panel](../restoring-ftp-filezilla-control-panel/#restore-the-storage-space-via-the-ovh-control-panel).
 
-- [Restore a file using a software program or interface](https://docs.ovh.com/gb/en/hosting/restoring-ftp-filezilla-control-panel/#restore-a-file-using-a-software-program-or-interface){.external}.
+- [Restore a file using a software program or interface](../restoring-ftp-filezilla-control-panel/#restore-a-file-using-a-software-program-or-interface).
 
-### Restore the storage space via the OVH Control Panel.
+### Restore the storage space via the OVHcloud Control Panel.
 
-First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
+First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
 
 ![backupftp](images/backupftp-step1.png){.thumbnail}
 
@@ -80,11 +80,11 @@ There are several stages to this procedure. Ensure that you have your FTP user p
 
 First of all, decide which software or interface you would like to use in order to connect to your storage space backup.  If you have already decided on one, you can move straight to step 2. Otherwise, we recommend using one of the following three solutions:
 
-- **Using FileZilla software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using FileZilla](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/){.external}. Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
+- **Using FileZilla software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using FileZilla](../web_hosting_filezilla_user_guide/)}. Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
 
-- **Using Cyberduck software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using Cyberduck](https://docs.ovh.com/gb/en/hosting/web_hosting_cyberduck_user_guide_on_mac/){.external}. Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
+- **Using Cyberduck software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using Cyberduck](../web_hosting_cyberduck_user_guide_on_mac/). Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
 
-- **Using the FTP Explorer interface.** To use this method, you will need to log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Once you have logged in, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Go to the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
+- **Using the FTP Explorer interface.** To use this method, you will need to log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). Once you have logged in, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Go to the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
 
 Once you are ready to start making changes, continue to the next step.
 
@@ -94,7 +94,7 @@ Once you are ready to start making changes, continue to the next step.
 
 To access the backup data you would like to restore, you will need to log in to your storage space via the interface or software you have selected. To do this, you will need to have the FTP username, its password and your FTP server’s host name.
 
-You can find this information in the `FTP - SSH`{.action} tab of your Web Hosting plan. If you no longer have the FTP user password, please refer to our guide on instructions set out in our documentation on [Modifying a FTP user password](https://docs.ovh.com/gb/en/hosting/modify-ftp-user-password/){.external}.
+You can find this information in the `FTP - SSH`{.action} tab of your Web Hosting plan. If you no longer have the FTP user password, please refer to our guide on instructions set out in our documentation on [Modifying a FTP user password](../modify-ftp-user-password/).
 
 ![backupftp](images/backupftp-step4.png){.thumbnail}
 
@@ -128,6 +128,6 @@ Once you have connected, you can now restore the files you want. To do this, exp
 
 ## Go further
 
-[Using FileZilla software with your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/){.external}
+[Using FileZilla software with your Web Hosting plan](../web_hosting_filezilla_user_guide/)
 
 Join our community of users on <https://community.ovh.com/en/>.
