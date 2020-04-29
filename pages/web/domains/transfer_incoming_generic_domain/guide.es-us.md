@@ -42,7 +42,7 @@ La operación de transferencia se desarrolla en varias etapas e involucra a vari
 
 > [!warning]
 >
-> Este procedimiento se aplica a la mayoría de las transferencias. Sin embargo, según la extensión del dominio, es posible que varíe. Puede consultar la información del dominio en cuestión en la página <https://www.ovh.com/world/dominios/precios/>.
+> Este procedimiento se aplica a la mayoría de las transferencias. Sin embargo, según la extensión del dominio, es posible que varíe. Puede consultar la información del dominio en cuestión en la página <https://www.ovh.com/world/es/dominios/precios/>.
 >
 
 ### 1. Comprobar la información relativa al dominio
@@ -77,7 +77,7 @@ Una vez desbloqueado el dominio, y con el código de transferencia en su poder, 
 
 Cuando se le pida el código de transferencia, introdúzcalo en el campo situado junto al dominio. Si todavía no tiene el código de transferencia, puede marcar la casilla `Indicar el código de autenticación posteriormente`{.action}. No obstante, le recomendamos que, antes de continuar, se asegure previamente de que podrá obtener el código.
 
-Si lo desea, puede completar el pedido con un [plan de hosting](https://www.ovh.com/world/es/hosting/){.external} u otras soluciones de OVHcloud. Esto puede ser interesante si la transferencia del dominio se inscribe en un proyecto más amplio de migración de sus servicios. En ese caso, la guía [Migrar un sitio web y el correo a OVHcloud](https://docs.ovh.com/us/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external} explica en detalle cómo hacerlo.
+Si lo desea, puede completar el pedido con un [plan de hosting](https://www.ovh.com/world/es/hosting/){.external} u otras soluciones de OVHcloud. Esto puede ser interesante si la transferencia del dominio se inscribe en un proyecto más amplio de migración de sus servicios. En ese caso, la guía [Migrar un sitio web y el correo a OVHcloud](../..//hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external} explica en detalle cómo hacerlo.
 
 > [!warning]
 >
@@ -132,6 +132,6 @@ Una vez finalizado el procedimiento de transferencia, podrá administrar el domi
 
 ## Más información
 
-[Migrar un sitio web y el correo a OVHcloud](https://docs.ovh.com/us/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}
+[Migrar un sitio web y el correo a OVHcloud](../..//hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
