@@ -12,7 +12,7 @@ order: 1
 
 OVHcloud Web Hosting plans provide you with access to a storage space you can use to put your website and application files online. You can access this space using an FTP or SSH user account and password.
 
-**Find out how to log in to your OVH Web Hosting plan’s storage space.**
+**Find out how to log in to your OVHcloud Web Hosting plan’s storage space.**
 
 ## Requirements
 
