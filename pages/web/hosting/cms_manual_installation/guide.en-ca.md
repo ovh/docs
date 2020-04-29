@@ -34,7 +34,7 @@ Our Web Hosting services are compatible with some of the most popular content ma
 >
 >You can install each of these CMS automatically in a few clicks from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). Please read the following guide:
 >
->[Setting up your website with 1-click modules](https://docs.ovh.com/ca/en/hosting/web_hosting_web_hosting_modules)
+>[Setting up your website with 1-click modules](../web_hosting_web_hosting_modules)
 >
 
 
@@ -52,7 +52,7 @@ OVHcloud support is not authorised to respond to any questions concerning WordPr
 Please consult the forums dedicated to [WordPress](https://wordpress.org/support/).
 
 
-- WordPress installation guide: [CMS, manually install WordPress](https://docs.ovh.com/ca/en/hosting/cms_manually_install_wordpress)
+- WordPress installation guide: [CMS, manually install WordPress](../cms_manually_install_wordpress)
 
 
 
@@ -72,7 +72,7 @@ OVHcloud support is not authorised to respond to any questions concerning Joomla
 
 Please consult the dedicated [Joomla!](http://forum.joomla.org/) forums instead. 
 
-- Joomla! installation guide: [CMS, manually install Joomla!](https://docs.ovh.com/ca/en/hosting/cms_manually_install_joomla)
+- Joomla! installation guide: [CMS, manually install Joomla!](../cms_manually_install_joomla)
 
 
 
@@ -97,7 +97,7 @@ Please consult the forum dedicated to the
 [PrestaShop solution](https://www.prestashop.com/forums/).
 
 
-- PrestaShop installation guide: [CMS, manually install PrestaShop](https://docs.ovh.com/ca/en/hosting/cms_manually_install_prestashop)
+- PrestaShop installation guide: [CMS, manually install PrestaShop](../cms_manually_install_prestashop)
 
 
 
@@ -116,7 +116,7 @@ OVHcloud support is not authorised to respond to any questions concerning Drupal
 Please consult the forums dedicated to [Drupal](https://www.drupal.org).
 
 
--  Drupal installation guide: [CMS, manually install Drupal](https://docs.ovh.com/ca/en/hosting/cms_manually_install_drupal)
+-  Drupal installation guide: [CMS, manually install Drupal](../cms_manually_install_drupal)
 
 
 
@@ -127,12 +127,12 @@ Please consult the forums dedicated to [Drupal](https://www.drupal.org).
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](https://docs.ovh.com/ca/en/hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](../migrating-website-to-ovh/)
 
-[Publishing a website on your Web Hosting space](https://docs.ovh.com/ca/en/hosting/web_hosting_how_to_get_my_website_online/){.external}
+[Publishing a website on your Web Hosting space](../web_hosting_how_to_get_my_website_online/)
 
-[Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/ca/en/hosting/multisites-configuring-multiple-websites/){.external}
+[Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites/)
 
-See our [Web Hosting solutions](https://www.ovh.com/ca/en/web-hosting/){.external}
+See our [Web Hosting solutions](https://www.ovh.com/ca/en/web-hosting/)
 
 Join our community of users on <https://community.ovh.com/en/>.
