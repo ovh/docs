@@ -1,5 +1,5 @@
 ---
-title: 'Shared: View my website’s logs and statistics'
+title: 'View my website’s logs and statistics'
 excerpt: Access your website's statistics
 slug: shared_view_my_websites_logs_and_statistics
 legacy_guide_number: g1344
@@ -7,24 +7,27 @@ legacy_guide_number: g1344
 
 
 ## Log in to your customer account
-Log in to your [Manager](https://www.ovh.com/manager/web/) with your username (nic-handle) and password.
+
+Log in to your [Manager](https://www.ovh.com/auth/?action=gotomanager) with your username (nic-handle) and password.
 
 Once logged on, select the "hosting" platform that you want to view the statistics for in the left-hand menu.
 
 ![](images/img_2827.jpg){.thumbnail}
+
 In the general information tab click on the link: Website visit statistics.
 
 ![](images/img_2826.jpg){.thumbnail}
 
 
 ## Access to the Statistics & Logs page
+
 You can access your website statistics by going to:
 
 
 - https://logs.ovh.net/nomdevotredomaine
 
 
-You log on with your OVH username and password. 
+You log on with your OVHcloud username and password. 
 
 Statistics are simple to use and view. With a few clicks, you can analyse your site without having to provide additional statistical calculations.
 
@@ -34,6 +37,7 @@ You need to identify yourself with your customer ID (Nic-handle) and your passwo
 
 
 ## Statistical area
+
 Once you are logged on to the statistics area, this page will appear (see capture opposite).
 
 Two options are available:
@@ -49,6 +53,7 @@ Two options are available:
 
 
 ## Urchin v6
+
 These statistics provide information on :
 
  The traffic on your site 
@@ -92,6 +97,7 @@ Manage your website pages better, find out what pages your visitors are most int
 
 
 ## Raw logs
+
 You can view your website logs virtually and practically live. Logs of your site are available in under 15 minutes, allowing you to check that your website is working correctly or to calculate your website logs in almost real time.
 
 Different types of logs are available :
@@ -119,5 +125,9 @@ Different types of logs are available :
 
 
 ## Is it possible to change the language of the statistical software Urchin?
+
 You can choose the language used by Urchin on its interface: click Preferences and then from the menu, choose the language and confirm (click on 'submit'). Urchin will remember your preferences.
 
+## Go further
+
+Join our community of users on https://community.ovh.com/en/.
