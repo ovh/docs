@@ -67,11 +67,11 @@ Restore does not fix the security flaws, you just replace all the infected files
 ## Restore your files via FTP
 You can restore the whole of your FTP space from the control panel but this can be complicated if you have multiple domains attached to the same hosting package. 
 
-If you have multiple websites on your webspace, it is better to only restore the directory in question. See this guide for more [info](https://docs.ovh.com/ca/en/hosting/restoring-ftp-filezilla-control-panel/)
+If you have multiple websites on your webspace, it is better to only restore the directory in question. See this guide for more [info](../restoring-ftp-filezilla-control-panel/)
 
 
 ## Restoring your SQL database
-If you need to, see our two guides, to [export](https://docs.ovh.com/ca/en/hosting/web_hosting_database_export_guide/) your database.
+If you need to, see our two guides, to [export](../web_hosting_database_export_guide/) your database.
 
 Once you have backed up your database (dump), you have to delete all the tables from [phpMyAdmin](https://phpmyadmin.ovh.net) in order to import your backup.
 
@@ -99,7 +99,7 @@ Usually there will be a link where you can download the latest stable version of
 
 The file you download will normally be compressed (zipped), you have to be able to decompress (unzip) it. There is help available for this online. 
 
-Once it is decompressed, transfer the files to your FTP space. You can follow this guide if you need to [here](https://docs.ovh.com/ca/en/hosting/log-in-to-storage-ftp-web-hosting/).
+Once it is decompressed, transfer the files to your FTP space. You can follow this guide if you need to [here](../log-in-to-storage-ftp-web-hosting/).
 
 If you have multiple websites on the same web space, the files must be transfered to the directory in question. 
 
