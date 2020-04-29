@@ -39,7 +39,7 @@ Dado que es posible configurar varios registros MX para un mismo dominio, es nec
 
 ### 2. Conocer la configuración MX de OVHcloud
 
-A continuación se indica la configuración MX de OVHcloud que deberá utilizar para su Email (solo o incluido en un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}), [Email Pro](https://www.ovh.com/world/es/emails/email-pro/){.external} o [Exchange](https://www.ovh.com/world/es/emails/){.external}. Le recordamos que nuestros servidores de correo disponen de antispam y antivirus.
+A continuación se indica la configuración MX de OVHcloud que deberá utilizar para su Email (solo o incluido en un [plan de hosting de OVHcloud](https://www.ovh.es/hosting/){.external}), [Email Pro](https://www.ovh.es/emails/email-pro/){.external} o [Exchange](https://www.ovh.es/emails/){.external}. Le recordamos que nuestros servidores de correo disponen de antispam y antivirus.
 
 |Dominio|TTL|Registro|Prioridad|Destino|
 |---|---|---|---|---|
