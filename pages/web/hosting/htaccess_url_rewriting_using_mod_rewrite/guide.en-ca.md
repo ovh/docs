@@ -1,6 +1,6 @@
 ---
 title: '.htaccess, URL rewriting using mod_rewrite'
-excerpt: Mod_rewrite is available at OVH on all web hosting packages (apart from 20gp packages)
+excerpt: Mod_rewrite is available on all web hosting packages
 slug: htaccess_url_rewriting_using_mod_rewrite
 legacy_guide_number: g1971
 ---
@@ -66,6 +66,7 @@ Rewriterule ^(.*)$ /MySite/
 
 
 ## URL rewriting
+
 mod_rewrite enables URL rewriting
 
 
@@ -98,6 +99,7 @@ print("var: {$_GET['var']}\n");
 
 
 ## Automatically redirect visitors to SSL when they visit the unsecured version of the website
+
 The mod_rewrite module enables you to rewrite URLs. 
 
 
@@ -108,6 +110,6 @@ RewriteRule ^(.*)$ https://www.example.com/$1 [R,L]
 ```
 
 
-## 
-To find out all about the .htaccess file: [Click here](https://docs.ovh.com/gb/en/hosting/all_about_the_htaccess_file/)
+## Go further
 
+Join our community of users on https://community.ovh.com/en/.
