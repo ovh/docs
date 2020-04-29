@@ -1,29 +1,29 @@
 ---
 title: 'Modifier le mot de passe d''un utilisateur FTP'
 slug: modifier-mot-de-passe-utilisateur-ftp
-excerpt: 'Apprenez à changer le mot de passe d''un utilisateur FTP créé sur votre hébergement web OVH'
+excerpt: 'Apprenez à changer le mot de passe d''un utilisateur FTP créé sur votre hébergement web OVHcloud'
 section: 'FTP et SSH'
 order: 1
 ---
 
-**Dernière mise à jour le 05/03/2019**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
-Les offres d'hébergement web d'OVH donnent accès à un espace de stockage permettant la mise en ligne des fichiers de votre site internet. L'accès à cet espace est possible via un utilisateur FTP et du mot de passe qui lui est associé.
+Les offres d'hébergement web d'OVHcloud donnent accès à un espace de stockage permettant la mise en ligne des fichiers de votre site internet. L'accès à cet espace est possible via un utilisateur FTP et du mot de passe qui lui est associé.
 
-**Apprenez à modifier le mot de passe d'un utilisateur FTP créé sur votre hébergement web OVH.**
+**Apprenez à modifier le mot de passe d'un utilisateur FTP créé sur votre hébergement web OVHcloud.**
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVH]({ovh_www}/hebergement-web/){.external}.
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
 ### Étape 1 : accéder à la gestion des utilisateurs FTP
 
-Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `FTP - SSH`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `FTP - SSH`{.action}.
 
 Le tableau affiche les utilisateurs FTP créés sur votre hébergement. Ces utilisateurs vous permettent d'accéder à votre espace de stockage pour y mettre en ligne les fichiers de votre site internet. Un utilisateur est créé automatiquement lors de l'installation de votre hébergement.
 
@@ -31,7 +31,7 @@ Le tableau affiche les utilisateurs FTP créés sur votre hébergement. Ces util
 
 ### Étape 2 : modifier le mot de passe d'un utilisateur FTP
 
-La modification du mot de passe d'un utilisateur FTP créé sur votre hébergement s'effectue de deux manières selon votre offre d'[hébergement web OVH]({ovh_www}/hebergement-web/){.external} :
+La modification du mot de passe d'un utilisateur FTP créé sur votre hébergement s'effectue de deux manières selon votre offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external} :
 
 - **pour les offres ne pouvant pas créer plusieurs utilisateurs FTP** (offres Start 10M, Kimsufi Web et Perso) : cliquez sur sur le pictogramme en forme de crayon dans la colonne `Mot de passe`{.action} du tableau, renseignez le nouveau mot de passe dans la zone de texte, puis validez le changement ;
 
@@ -58,7 +58,7 @@ Le changement nécessite quelques minutes pour être effectif.
 
 Une fois le mot de passe de l'utilisateur FTP modifié, vous pouvez à présent accéder à votre espace de stockage.
 
-Pour cela, et selon votre offre d'[hébergement web OVH]({ovh_www}/hebergement-web/){.external}, plusieurs moyens s'offrent à vous :
+Pour cela, et selon votre offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external}, plusieurs moyens s'offrent à vous :
 
 - **utiliser le FTP Explorer** : vous permettra d'accéder à votre espace de stockage depuis votre navigateur internet. Pour l'utiliser, toujours depuis l'onglet `FTP - SSH`{.action}, cliquez sur le bouton `FTP Explorer`{.action} ;
 
@@ -69,8 +69,6 @@ Pour cela, et selon votre offre d'[hébergement web OVH]({ovh_www}/hebergement-w
 Pour vous aider dans cette démarche, nous vous invitons également à consulter cette documentation : [« Se connecter à l’espace de stockage de son hébergement web »](../connexion-espace-stockage-ftp-hebergement-web/){.external}.
 
 ## Aller plus loin
-
-[En apprendre plus sur la sécurité des mots de passe grâce à l'ANSSI](http://www.ssi.gouv.fr/guide/mot-de-passe/){.external}.
 
 [Se connecter à l’espace de stockage de son hébergement web](../connexion-espace-stockage-ftp-hebergement-web/){.external}.
 
