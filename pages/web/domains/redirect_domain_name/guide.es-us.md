@@ -57,7 +57,7 @@ Redirige un dominio hacia otro dominio. Es la mejor opción si ha cambiado el no
 **Redirección hacia un servidor de OVH o externo**
 
 Modifica la configuración DNS de un dominio sustituyendo el destino (registro A, AAAA o CNAME). Es la mejor opción si su sitio web ya no está alojado en el mismo lugar, pero el dominio sigue siendo el mismo.
-Si su dominio utiliza la configuración de OVHcloud, también puede realizar esta acción directamente desde el área de cliente (ver la guía [Editar una zona DNS de OVHcloud](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}).
+Si su dominio utiliza la configuración de OVHcloud, también puede realizar esta acción directamente desde el área de cliente (ver la guía [Editar una zona DNS de OVHcloud](../web_hosting_como_editar_mi_zona_dns/){.external}).
 
 Esta guía solo explica cómo realizar una redirección **hacia una dirección web**. Si necesita más información sobre cómo realizar una redirección hacia un servidor de OVHcloud o externo, puede ponerse en contacto con su proveedor de DNS para conocer los registros DNS que debe configurar antes de continuar.
 
@@ -163,6 +163,6 @@ Redirect temp / http://otro_sitio_web.tld/sitio/
 
 ## Más información
 
-[Editar una zona DNS de OVHcloud](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}
+[Editar una zona DNS de OVHcloud](../web_hosting_como_editar_mi_zona_dns/){.external}
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
