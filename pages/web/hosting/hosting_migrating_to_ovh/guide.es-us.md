@@ -61,15 +61,15 @@ Deberá realizar varias acciones.
 |---|---|
 |1. Realizar una copia de seguridad del sitio web|Debe tratarse de una copia de seguridad completa del sitio web, incluyendo los archivos y, en su caso, las bases de datos. Dicha copia de seguridad es fundamental para realizar la migración del sitio web a OVHcloud.|
 |2. Publicar el sitio web con OVHcloud|Conéctese a su espacio de almacenamiento (FTP) y suba los archivos del sitio web a la carpeta **www**. Las claves de conexión al espacio FTP se envían por correo electrónico al instalar el alojamiento.|
-|3. Crear una base de datos en OVHcloud|Si su sitio web utiliza una base de datos, deberá [crear una nueva en OVHcloud](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/){.external} desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.|
-|4. Importar los datos de la base de datos|Importe la copia de seguridad de la base de datos utilizando [la herramienta que OVHcloud pone a su disposición](https://docs.ovh.com/us/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/){.external} en el área de cliente.|
+|3. Crear una base de datos en OVHcloud|Si su sitio web utiliza una base de datos, deberá [crear una nueva en OVHcloud](../crear-base-de-datos/){.external} desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.|
+|4. Importar los datos de la base de datos|Importe la copia de seguridad de la base de datos utilizando [la herramienta que OVHcloud pone a su disposición](../web_hosting_importacion_de_una_base_de_datos_mysql/){.external} en el área de cliente.|
 |5. Conectar el sitio web a la nueva base de datos|En el archivo de configuración de su sitio web seguirá guardada la información de su anterior base de datos. Edite dicho archivo, presente en su espacio de almacenamiento de OVHcloud, indicando la información de la nueva base de datos en OVHcloud.|
 
 Al no haber cambiado todavía la configuración del dominio, el alojamiento utilizado para mostrar el sitio web seguirá siendo el de su actual proveedor.
 
 #### 3. Crear las direcciones de correo en OVH
 
-Una vez transferido el sitio web, deberá [crear en OVHcloud las mismas direcciones](https://docs.ovh.com/us/es/emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/){.external} que utiliza con su actual proveedor (es decir, que deberán tener el mismo nombre). En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el alojamiento que acaba de contratar (el nombre será el mismo que el de su dominio). Abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}. A continuación, siga los pasos que se indican.
+Una vez transferido el sitio web, deberá [crear en OVHcloud las mismas direcciones](../../emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/){.external} que utiliza con su actual proveedor (es decir, que deberán tener el mismo nombre). En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el alojamiento que acaba de contratar (el nombre será el mismo que el de su dominio). Abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}. A continuación, siga los pasos que se indican.
 
 Al no haber cambiado todavía la configuración del dominio, los nuevos mensajes se seguirán recibiendo en las direcciones de correo que tiene con su actual proveedor. Asimismo, deberá seguir utilizando dichas direcciones para enviar mensajes de correo.
 
@@ -131,14 +131,14 @@ Deberá realizar varias acciones.
 |1. Realizar una copia de seguridad del sitio web|Debe tratarse de una copia de seguridad completa del sitio web, incluyendo los archivos y, en su caso, las bases de datos. Dicha copia de seguridad es fundamental para realizar la migración del sitio web a OVHcloud.|
 |2. Publicar el sitio web con OVHcloud|Conéctese a su espacio de almacenamiento (FTP) y suba los archivos del sitio web a la carpeta **www**. Las claves de conexión al espacio FTP se envían por correo electrónico al instalar el alojamiento.|
 |3. Crear una base de datos en OVHcloud|Si su sitio web utiliza una base de datos, deberá crear una nueva en OVHcloud desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.|
-|4. Importar los datos de la base de datos|Importe la copia de seguridad de la base de datos utilizando [la herramienta que OVHcloud pone a su disposición](https://docs.ovh.com/us/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/){.external} en el área de cliente.|
+|4. Importar los datos de la base de datos|Importe la copia de seguridad de la base de datos utilizando [la herramienta que OVHcloud pone a su disposición](../web_hosting_importacion_de_una_base_de_datos_mysql/){.external} en el área de cliente.|
 |5. Conectar el sitio web a la nueva base de datos|En el archivo de configuración de su sitio web seguirá guardada la información de su anterior base de datos. Edite dicho archivo, presente en su espacio de almacenamiento de OVHcloud, indicando la información de la nueva base de datos en OVHcloud.|
 
 Al no haber cambiado todavía la configuración del dominio, el alojamiento utilizado para mostrar el sitio web seguirá siendo el de su actual proveedor, en caso de que la resolución DNS siga activa.
 
 #### 3. Crear las direcciones de correo en OVHcloud
 
-**Una vez finalizada la transferencia del dominio**, recibirá un mensaje de correo electrónico informándole de que el servicio de correo asociado a su alojamiento web acaba de ser instalado. A continuación, deberá [crear en OVHcloud las mismas direcciones](https://docs.ovh.com/us/es/emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/){.external} que utiliza con su actual proveedor (es decir, que deberán tener el mismo nombre). Desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el alojamiento web que acaba de contratar (el nombre será el mismo que el del dominio). Abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}. Siga las indicaciones para finalizar la creación.
+**Una vez finalizada la transferencia del dominio**, recibirá un mensaje de correo electrónico informándole de que el servicio de correo asociado a su alojamiento web acaba de ser instalado. A continuación, deberá [crear en OVHcloud las mismas direcciones](../../emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/){.external} que utiliza con su actual proveedor (es decir, que deberán tener el mismo nombre). Desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el alojamiento web que acaba de contratar (el nombre será el mismo que el del dominio). Abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}. Siga las indicaciones para finalizar la creación.
 
 Al no haber cambiado todavía la configuración del dominio, los nuevos mensajes se seguirán recibiendo en las direcciones de correo que tiene con su actual proveedor, en caso de que la resolución DNS siga activa. Asimismo, deberá seguir utilizando dichas direcciones para enviar mensajes de correo.
 
@@ -146,7 +146,7 @@ Al no haber cambiado todavía la configuración del dominio, los nuevos mensajes
 
 Una vez que haya transferido su sitio web, haya creado sus direcciones de correo en OVHcloud y haya transferido su dominio a OVHcloud, deberá modificar la configuración de este último. Para ello, sustituya los servidores DNS del dominio por los de OVHcloud desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-Si necesita ayuda, puede consultar la guía [Información general sobre los servidores DNS](https://docs.ovh.com/us/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}.
+Si necesita ayuda, puede consultar la guía [Información general sobre los servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}.
 
 El objetivo de esta operación es doble:
 
@@ -171,12 +171,12 @@ Deberá realizar varias acciones.
 
 ## Más información
 
-[Información general sobre los servidores DNS](https://docs.ovh.com/us/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
+[Información general sobre los servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
 
-[Crear una dirección de correo electrónico](https://docs.ovh.com/us/es/emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/){.external}
+[Crear una dirección de correo electrónico](../../emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/){.external}
 
-[Importar una base de datos MySQL](https://docs.ovh.com/us/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/){.external}
+[Importar una base de datos MySQL](../web_hosting_importacion_de_una_base_de_datos_mysql/){.external}
 
-[Gestionar una base de datos desde un alojamiento compartido](https://docs.ovh.com/us/es/hosting/gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
+[Gestionar una base de datos desde un alojamiento compartido](../gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
