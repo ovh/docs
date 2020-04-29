@@ -6,9 +6,11 @@ excerpt: 'Retrouvez ici les informations sur les problemes recurrents que vous p
 section: 'FTP et SSH'
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 Vous trouverez dans ce guide différentes solutions aux problèmes de FTP que vous pouvez rencontrer.
 
-Pour réaliser une connexion FTP, vous pouvez vous aider de se guide : [Utilisation logiciel FileZilla avec votre hebergement](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/){.external}
+Pour réaliser une connexion FTP, vous pouvez vous aider de se guide : [Utilisation logiciel FileZilla avec votre hebergement](../mutualise-guide-utilisation-filezilla/){.external}
 
 
 ## Problemes recurrents
@@ -16,7 +18,7 @@ Pour réaliser une connexion FTP, vous pouvez vous aider de se guide : [Utilisat
 ### J'ai transfere mes fichiers avec un logiciel FTP, mais rien ne s'affiche
 - Il faut pour cela vérifier que les fichiers de votre site soient bien présents dans le répertoire /www de votre hébergement.
 - Si vous avez réalisé une modification dans votre zone DNS, il peut y avoir un délai de propagation de 4 à 24 heures.
-- En cas d'erreur 500, "Internal server error", veuillez consulter ce guide : [Que faire en cas d’erreur 500 Internal Server Error ?](https://docs.ovh.com/fr/hosting/erreur-500-internal-server-error/){.external}
+- En cas d'erreur 500, "Internal server error", veuillez consulter ce guide : [Que faire en cas d’erreur 500 Internal Server Error ?](../erreur-500-internal-server-error/){.external}
 
 
 ### Mes codes ftp ne fonctionnent pas
