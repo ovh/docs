@@ -16,7 +16,7 @@ legacy_guide_number: g1967
 
 ## How to block certain IPs from your website
 
-- See our guide on blocking selected IPs:
+- See our guide on blocking selected IP addresses:
 
 [How to block certain IPs from your website](https://www.ovh.co.uk/fr/g1970.mutualise_htaccess_comment_bloquer_certaines_ip_au_niveau_de_mon_site)
 
