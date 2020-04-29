@@ -47,7 +47,7 @@ Following issues apply on OVHcloud Connect.
 | Issue | Detail | Cause | Workaround | Affected sites |
 |:-----:|:------:|:-----:|:----------:|:--------------:|
 | BGP Session rejected | Error message "Bad AS" and NeighborID is configured in 169.254.0.0/16 range | Bug identified with device vendor | Change NeighborID | DC: RBX, SBG, GRA, LIM; POP: PAR-TH2, PAR-GSW, PAR-PA3, FRA-FR5 |
-| DC routes not propagated to POP | When using AS65501, routes announced using BGP in vRack are not propagated to POP | OVH internal configuration | Do not use AS65501 | ALL |
-| ECMP not working | When ECMP is configured on a single POP with 2 or more links, trafic is not load-balanced for a given destination | Limitation | Divide destination with more specific prefixes | ALL POP |
+| DC routes not propagated to POP | When using AS65501, routes announced using BGP in vRack are not propagated to POP | OVHcloud internal configuration | Do not use AS65501 | ALL |
+| ECMP not working | When ECMP is configured on a single POP with 2 or more links, traffic is not load-balanced for a given destination | Limitation | Divide destination with more specific prefixes | ALL POP |
 | Light received but port is down | Device fail to change interface status to UP despite optical levels on RX are correct | Autonegotiation is configured | Unconfigure autonegotiation | ALL POP |
 
