@@ -16,9 +16,9 @@ Your Web Hosting plan allows you to upload one or more websites. You may have re
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}
+- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
 - the permissions necessary to connect to your hosting plan’s storage space
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
@@ -130,11 +130,11 @@ There are several ways to restore your site:
 
 - **If you have a personal copy of your website**: 
 
-All you have to do is restore it on your hosting, replacing the contents of the storage space and the database with that of the backup. Our guide to [Importing a backup into a Web Hosting Plan database](../web_hosting_guide_to_importing_a_mysql_database/){.external} explains more about this process.
+All you have to do is restore it on your hosting, replacing the contents of the storage space and the database with that of the backup. Our guide to [Importing a backup into a Web Hosting Plan database](../web_hosting_guide_to_importing_a_mysql_database/) explains more about this process.
 
 - **If OVH has a copy of your website (storage space and database)**:
 
-Depending on the date you want to revert your site to, OVHcloud may be able to provide you with a backup. Refer to our guides to [Restoring your Web Hosting plan’s storage space](../restoring-ftp-filezilla-control-panel/){.external}, [Retrieving the backup of a Web Hosting plan database](https://docs.ovh.com/ca/en/hosting/web_hosting_database_export_guide/){.external}, and [Importing a backup into a Web Hosting plan database](../web_hosting_guide_to_importing_a_mysql_database/){.external} if you require assistance with this process. Also, make sure that (wherever possible) you match the dates of the selected backups.
+Depending on the date you want to revert your site to, OVHcloud may be able to provide you with a backup. Refer to our guides to [Restoring your Web Hosting plan’s storage space](../restoring-ftp-filezilla-control-panel/), [Retrieving the backup of a Web Hosting plan database](../web_hosting_database_export_guide/), and [Importing a backup into a Web Hosting plan database](../web_hosting_guide_to_importing_a_mysql_database/) if you require assistance with this process. Also, make sure that (wherever possible) you match the dates of the selected backups.
 
 - **If neither you or OVHcloud has a copy of your website**: 
 
