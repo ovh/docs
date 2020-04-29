@@ -1,6 +1,6 @@
 ---
-title: 'Web hosting: Activating an application firewall'
-excerpt: 'Web hosting: Activating an application firewall'
+title: 'Activating an application firewall'
+excerpt: 'Web Hosting: Activating an application firewall'
 id: '1937'
 slug: web_hosting_activating_an_application_firewall
 legacy_guide_number: g1937
@@ -27,7 +27,7 @@ With the Core Rule Set (CRS), your ModSecurity is preconfigured in an optimal wa
 
 
 ## 
-Log on to your [control panel](https://www.ovh.com/manager/web) with your NIC handle and password.
+Log on to your [control panel](https://www.ovh.com/auth/?action=gotomanager) with your NIC handle and password.
 
 ![](images/img_3005.jpg){.thumbnail}
 Select your domain name in the "Hostings" section
