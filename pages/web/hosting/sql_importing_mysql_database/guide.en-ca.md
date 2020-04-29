@@ -25,9 +25,9 @@ Databases are used in virtually all modern content management systems (CMS), suc
 
 Before you start, you must choose which method you are going to use to import the backup into the database concerned. There are three ways to do this, depending on the level of technical knowledge you have.
 
-- **Restore an earlier version of your database in just a few clicks**: this method can be used to restore the contents of your databases, thanks to the backups present in the OVHcloud backup tool. This method does not require any particular technical knowledge, and can be carried out from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- **Restore an earlier version of your database in just a few clicks**: this method can be used to restore the contents of your databases, thanks to the backups present in the OVHcloud backup tool. This method does not require any particular technical knowledge, and can be carried out from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
-- **Import your own backup file in just a few clicks**: this method lets you import the data from your own backup file, already in your possession, into one of your databases. This method can be carried out from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- **Import your own backup file in just a few clicks**: this method lets you import the data from your own backup file, already in your possession, into one of your databases. This method can be carried out from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
 - **Carry out the import from the phpMyAdmin web interface**: this method involves logging in to the phpMyAdmin interface in order to carry out the procedure. You need to be familiar with the interface to use this method, and the backup file may not exceed a certain size.
 
