@@ -6,13 +6,15 @@ excerpt: 'Retrouvez ici un tutoriel pour l''utilisation du logiciel Filezilla su
 section: 'FTP et SSH'
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 Retrouvez dans ce guide de l'aide concernant l'utilisation du logiciel FileZilla.
 
-Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovh.com/fr/hebergement-web/faq/){.external} disponibles.
+Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovh.com/ca/fr/hebergement-web/faq/){.external} disponibles.
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -61,7 +63,7 @@ Dans l'encadré vert tout en haut, afin d'établir la connexion au serveur dista
 |Mot de passe de l'utilisateur FTP|Il s'agit du mot de passe associé au login FTP.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à « Mot de passe » ou « Password ».|
 |Port de connexion|Celui-ci est généralement complété automatiquement par le logiciel. Si vous devez le renseigner :<br><br>- utilisez le port « 21 » pour une connexion utilisant le protocole FTP ;<br>- utilisez le port « 22 » pour une connexion utilisant le protocole SFTP (dans le cas où celui-ci est activé).|
 
-Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors.
+Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors.
 
 Une fois que tout est correctement saisi, cliquez sur *Connexion rapide* afin d'établir la connexion au serveur.
 
@@ -77,7 +79,7 @@ Le SFTP (pour **S**ecure **F**ile **T**ransfer **P**rotocol) est un protocole si
 > [!success]
 >
 > SFTP est activable gratuitement pour toutes les
-> offres d'hébergements d'OVH (sauf 60free / demo1g) !
+> offres d'hébergements d'OVHcloud (sauf 60free / demo1g) !
 > 
 
 
@@ -114,7 +116,7 @@ Dans l'encadré vert tout en haut cette fois, afin d'établir la connexion au se
 - Mot de passe : le mot de passe FTP associé au login
 - Port : 22 cette fois
 
-Après avoir cliqué sur le bouton *Connexion rapide*, une boîte de dialogue s'ouvre (cf. ci-dessus) afin de certifier la connexion à l'hôte sur lequel vous vous apprêtez à vous connecter. En étant connecté sur un hôte OVH, vous pouvez cocher "*Toujours faire confiance à cet hôte, ajouter cette clé au cache*" afin qu'on ne vous le redemande plus à l'avenir.
+Après avoir cliqué sur le bouton *Connexion rapide*, une boîte de dialogue s'ouvre (cf. ci-dessus) afin de certifier la connexion à l'hôte sur lequel vous vous apprêtez à vous connecter. En étant connecté sur un hôte OVHcloud, vous pouvez cocher "*Toujours faire confiance à cet hôte, ajouter cette clé au cache*" afin qu'on ne vous le redemande plus à l'avenir.
 
 
 ![hosting](images/1834.png){.thumbnail}
