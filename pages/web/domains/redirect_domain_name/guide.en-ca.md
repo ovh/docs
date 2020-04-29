@@ -58,7 +58,7 @@ Redirect a domain name to another domain name. This solution is ideal if you are
 - **Redirect to an OVHcloud server, or elsewhere**
 
 Modify a domain name’s DNS configuration and enter another target (A record, AAAA record or CNAME record). This solution is ideal if your website is no longer hosted by the same hosting provider, but the domain name is still registered with the same registrar. 
-You can also do this if your domain name uses OVHcloud configuration, by modifying it within the Control Panel (see [How to edit my DNS zone](https://docs.ovh.com/ca/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}).
+You can also do this if your domain name uses OVHcloud configuration, by modifying it within the Control Panel (see [How to edit my DNS zone](../web_hosting_how_to_edit_my_dns_zone/){.external}).
 
 From this point onwards, we will only focus on redirections **to a web address**. For the latter option, please contact your service provider to find out which DNS records you will need to modify in order to redirect your domain.
 
