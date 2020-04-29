@@ -16,9 +16,9 @@ This guide is designed for customers who have just purchased a Web Hosting plan 
 
 ## Requirements
 
-- You must have an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}.
+- You must have an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/).
 - You must have received an email confirming that your Web Hosting plan has been set up.
-- You must have a [domain name](https://www.ovh.com/ca/domains/){.external} that can be used to access your website.
+- You must have a [domain name](https://www.ovh.com/ca/en/domains/) that can be used to access your website.
 - You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
@@ -37,7 +37,7 @@ In the Control Panel, OVHcloud provides a tool that allows you to install a CMS 
 
 - **Migrating an existing website to OVHcloud**
 
-Website migration can sometimes be quite tricky, particularly if you are migrating a website that is currently online and cannot experience service interruptions. As a result, this guide only includes a few of the steps you will need to take to migrate your services. Please refer to our guide: [Migrating your website and emails to OVHcloud](https://docs.ovh.com/ca/en/hosting/migrating-website-to-ovh/){.external}.
+Website migration can sometimes be quite tricky, particularly if you are migrating a website that is currently online and cannot experience service interruptions. As a result, this guide only includes a few of the steps you will need to take to migrate your services. Please refer to our guide: [Migrating your website and emails to OVHcloud](../migrating-website-to-ovh/){.external}.
 
 ### Step 2: Set up your website
 
@@ -55,7 +55,7 @@ Finally, to begin installing the 1-click module, select the CMS you want to inst
 
 At this stage, you will need to wait a few minutes to receive an email confirming that the module has been installed. This email will also contain the details required to log in to your website as an admin. You can then follow the remaining steps below.
 
-If you need more information on OVHcloud 1-click modules, please read our documentation: [Installing your website with a 1-click module](https://docs.ovh.com/ca/en/hosting/web_hosting_web_hosting_modules/){.external}.
+If you need more information on OVHcloud 1-click modules, please read our documentation: [Installing your website with a 1-click module](../web_hosting_web_hosting_modules/){.external}.
 
 #### A quick solution in just a few clicks – no technical knowledge required
 
@@ -76,13 +76,13 @@ Once you have created a database, to install a 1-click module, go to the `1-clic
 
 Enter the information requested to launch the module installation. Once you have done this, please wait a few minutes until you receive an email confirming that the installation has been successful. You can then follow the remaining steps below.
 
-If you need more details on installing a module in advanced mode, please read our documentation: [Installing your website with a 1-click module](https://docs.ovh.com/ca/en/hosting/web_hosting_web_hosting_modules/){.external}.
+If you need more details on installing a module in advanced mode, please read our documentation: [Installing your website with a 1-click module](../web_hosting_web_hosting_modules/){.external}.
 
 #### Manual installation – technical knowledge required
 
 This solution is useful if you want to build or migrate a website without using the OVHcloud modules. You will need to have the website files that you wish to install. You will need to manually log in to your storage space to upload the website files onto it, then (if possible) link those files to a database you have already created.
 
-As every website is unique, there is no universal straightforward method for getting them online. However, in our documentation, we provide tips on the changes you will need to make to your OVHcloud Web Hosting plan: [How to get my website online](https://docs.ovh.com/ca/en/hosting/web_hosting_how_to_get_my_website_online/){.external}. Once you have set up your website in this way, follow the remaining steps below.
+As every website is unique, there is no universal straightforward method for getting them online. However, in our documentation, we provide tips on the changes you will need to make to your OVHcloud Web Hosting plan: [How to get my website online](../web_hosting_how_to_get_my_website_online/). Once you have set up your website in this way, follow the remaining steps below.
 
 ### Step 3: Create your email addresses
 
@@ -90,9 +90,9 @@ This stage is optional if you don’t want to use the email addresses included i
 
 ![Create an email address](images/create_an_email_address.png){/thumbnail}
 
-Enter the information requested to create your email address. Repeat this step for each additional email address you wish to create. If you are in the process of migrating your emails to OVHcloud, we would recommend that you use the [OVHcloud Mail Migrator](https://omm.ovh.net/){.external} tool to help you with this. 
+Enter the information requested to create your email address. Repeat this step for each additional email address you wish to create. If you are in the process of migrating your emails to OVHcloud, we would recommend that you use the [OVHcloud Mail Migrator](https://omm.ovh.net/) tool to help you with this. 
 
-If you need more information on creating an email address, please refer to our documentation: [How to set up an email address](https://docs.ovh.com/ca/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}.
+If you need more information on creating an email address, please refer to our documentation: [How to set up an email address](../../emails/hosted_email_how_to_set_up_an_email_address/){.external}.
 
 ### Step 4: Check or modify your domain configuration
 
@@ -155,12 +155,12 @@ If you would like to configure your email address on an email client or device (
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](https://docs.ovh.com/ca/en/hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](../migrating-website-to-ovh/){.external}
 
-[How to get your website online](https://docs.ovh.com/ca/en/hosting/web_hosting_how_to_get_my_website_online/){.external}
+[How to get your website online](../web_hosting_how_to_get_my_website_online/){.external}
 
-[Web hosting modules](https://docs.ovh.com/ca/en/hosting/web_hosting_web_hosting_modules/){.external}
+[Web hosting modules](../web_hosting_web_hosting_modules/){.external}
 
-[How to set up an email address](https://docs.ovh.com/ca/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}
+[How to set up an email address]../../emails/hosted_email_how_to_set_up_an_email_address/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.
