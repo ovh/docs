@@ -103,7 +103,7 @@ Para configurar el módulo, introduzca los siguientes datos:
 - **Nombre o dirección de correo electrónico del administrador:** Identificador que utilizará para conectarse al panel de administración de su CMS.
 - **Contraseña:** Contraseña que utilizará para conectarse al panel de administración de su CMS.
 - **Dominio:** Dominio en el que desea instalar su sitio web.
-Para más información, consulte la guía [Utilizar un mismo plan de hosting para varios sitios web](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/).
+Para más información, consulte la guía [Utilizar un mismo plan de hosting para varios sitios web](../configurar-un-multisitio-en-un-alojamiento-web/).
 - **Idioma:** Idioma en el que se instalará el CMS.
 - **Ruta de instalación:** Este parámetro se completa automáticamente al seleccionar el dominio. También puede completar la ruta introduciendo subdirectorios.
 
@@ -139,7 +139,7 @@ Para más información sobre las distintas funcionalidades de su nuevo sitio web
 
 [Elegir un CMS para crear un sitio web](https://www.ovh.com/world/es/hosting/website/comparativa-cms/){.external}
 
-[Gestionar una base de datos desde un alojamiento compartido](https://docs.ovh.com/us/es/hosting/gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
+[Gestionar una base de datos desde un alojamiento compartido](../gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
 
 Descubra nuestras [opciones de SQL Privado](https://www.ovh.com/world/es/hosting/opciones-sql.xml){.external}.
 
