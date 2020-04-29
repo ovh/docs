@@ -1,7 +1,7 @@
 ---
-title: 'Publishing a website on your web hosting plan'
+title: 'Publishing a website on your Web Hosting plan'
 slug: web_hosting_how_to_get_my_website_online
-excerpt: 'Find how to publish a website on your OVHcloud web hosting plan'
+excerpt: 'Find how to publish a website on your OVHcloud Web Hosting plan'
 section: 'Getting started'
 order: 2
 ---
@@ -10,16 +10,16 @@ order: 2
 
 ## Objective
 
-There are many different types of website you can put online. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVHcloud web hosting space](https://www.ovh.com/ca/en/web-hosting/){.external} lets you host the site you want, provided that it is compatible with the [configuration of our infrastructures](http://pro.ovh.net/infos/){.external}.
+There are many different types of website you can put online. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVHcloud web hosting space](https://www.ovh.com/ca/en/web-hosting/) lets you host the site you want, provided that it is compatible with the [configuration of our infrastructures](http://pro.ovh.net/infos/).
 
 **Find out how to publish a website on your OVHcloud web hosting plan.**
 
 ## Requirements
 
-- an [OVHcloud web hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}
+- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
 - an email confirming that your web hosting plan has been set up
-- a [domain name](https://www.ovh.com/ca/domains/){.external} which can be used to access your website
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- a [domain name](https://www.ovh.com/ca/en/domains/) which can be used to access your website
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
@@ -27,26 +27,26 @@ There are many different types of website you can put online. Whether you are cr
 
 It is important to have a clear idea of your objective, for your project to succeed. What do you want to do with your website? How will you publish it? There are several ways to get your project off the ground with an OVHcloud web hosting plan.
 
-- **Using a turn-key website, with OVHcloud’s one-click modules**: this solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). We offer four different 1-click modules compatible with our infrastructures, and they are detailed on the [Setting up your website with 1-click modules](https://docs.ovh.com/ca/en/hosting/web_hosting_web_hosting_modules/){.external} page.
+- **Using a turn-key website, with OVHcloud’s one-click modules**: this solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). We offer four different 1-click modules compatible with our infrastructures, and they are detailed on the [Setting up your website with 1-click modules](../web_hosting_web_hosting_modules/) page.
 
 - **Using a turn-key website that you install manually**: this solution gives you the benefit of a ready-made website structure that you can customise (themes, text, etc.), and you set it up yourself on your OVHcloud web hosting plan.
 
 - **Creating your website yourself**: this is a more technical solution that requires programming skills, but does give you the option of creating a tailor-made project.
 
-- **Migrating an existing website to OVHcloud**: this solution may prove complicated if an interruption in service for the website concerned is not an option. To guide you through this process, you can also refer to the following documentation: [Migrating your website and emails to OVH](https://docs.ovh.com/ca/en/hosting/migrating-website-to-ovh/){.external}
+- **Migrating an existing website to OVHcloud**: this solution may prove complicated if an interruption in service for the website concerned is not an option. To guide you through this process, you can also refer to the following documentation: [Migrating your website and emails to OVHcloud](../migrating-website-to-ovh/)
 
 
 Once you have considered the possibilities above, you can choose one of two options.
 
-- **If you want to use our 1-click modules**, refer to the instructions set out in our guide on [Setting up your website with 1-click modules](../web_hosting_web_hosting_modules/){.external}.
+- **If you want to use our 1-click modules**, refer to the instructions set out in our guide on [Setting up your website with 1-click modules](../web_hosting_web_hosting_modules/).
 
 - **If you do not want to use our 1-click modules**, you can set up your website manually on your hosting plan. You may find the information in our guide helpful, but it is not a substitute for the support of a webmaster.
  
 > [!warning]
 >
-> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are responsible for ensuring that they work properly.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide. 
 >
 
 ### Step 2: Put your website files online in your storage space.
@@ -72,7 +72,7 @@ These elements were sent to you in the email informing you that your web hosting
 
 ![websitesetup](images/get-website-online-step1.png){.thumbnail}
 
-The information associated with your storage space will now appear, and you should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on on [Logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/ca/en/hosting/modify-ftp-user-password/){.external}. If you no longer have the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](https://docs.ovh.com/ca/en/hosting/modify-ftp-user-password/){.external}.
+The information associated with your storage space will now appear, and you should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on on [Logging in to your Web Hosting plan’s storage space](../modify-ftp-user-password/){.external}. If you no longer have the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](../modify-ftp-user-password/).
 
 Once you have everything you need, there are three different ways of connecting to your storage space:
 
@@ -80,7 +80,7 @@ Once you have everything you need, there are three different ways of connecting 
 
 - **Using FTP- or SFTP-compatible software.** You will need to install a compatible program on your computer (e.g. FileZilla). Since OVHcloud did not create the software package you have installed, please contact the software’s publisher if you are encountering difficulties in using it.
 
-- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external} are required to use this type of access.
+- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](https://www.ovh.com/ca/en/web-hosting/) are required to use this type of access.
 
 #### 3. Upload the files to the storage space.
 
@@ -109,7 +109,7 @@ If you are migrating an existing website, you can recover your existing database
 
 #### 2. Create the database at OVHcloud (optional).
 
-If you already have a database and wish to use it (from an [OVHcloud web hosting plan]https://www.ovh.com/ca/en/web-hosting/){.external} or a [Private SQL](https://www.ovh.co.uk/web-hosting/sql-options.xml){.external} or [Cloud DB solution](https://www.ovh.co.uk/cloud/cloud-databases/){.external}), you will need your username and password, the name of the database and the address of the server. You can now go on to the next step.
+If you already have a database and wish to use it (from an [OVHcloud web hosting plan](https://www.ovh.com/ca/en/web-hosting/) or a [Private SQL](https://www.ovh.com/ca/en/web-hosting/sql-options.xml){.external} or [Cloud DB solution](https://www.ovh.co.uk/cloud/cloud-databases/){.external}), you will need your username and password, the name of the database and the address of the server. You can now go on to the next step.
 
 If you want to create a new database with OVHcloud, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then click on `Hosting`{.action} in the services bar on the left. Select the name of the hosting plan concerned, and click on the `Database`{.action} tab.
 
@@ -148,10 +148,10 @@ As a reminder, if you encounter any difficulties publishing your website, we rec
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](https://docs.ovh.com/ca/en/hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](../migrating-website-to-ovh/)
 
-[Setting up your website with 1-click modules](https://docs.ovh.com/ca/en/hosting/web_hosting_web_hosting_modules/){.external}
+[Setting up your website with 1-click modules](../web_hosting_web_hosting_modules/)
 
-[Modifying an FTP user password](https://docs.ovh.com/ca/en/hosting/modify-ftp-user-password/){.external}
+[Modifying an FTP user password](../modify-ftp-user-password/)
 
 Join our community of users on <https://community.ovh.com/en/>.
