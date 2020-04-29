@@ -47,7 +47,7 @@ Les problèmes suivants sont présents sur OVHcloud Connect.
 | Problème | Détail | Cause | Contournement | Sites impactés |
 |:--------:|:------:|:-----:|:-------------:|:--------------:|
 | Session BGP rejetée | Message d'erreur "Bad AS" avec NeighborID configuré dans le range 169.254.0.0/16 | Bug identifié avec le constructeur | Changer NeighborID | DC: RBX, SBG, GRA, LIM; POP: PAR-TH2, PAR-GSW, PAR-PA3, FRA-FR5 |
-| Routes du EndPoint/DC non propagées jusqu'au EntryPoint/POP | En utilisation l'AS65501, les routes annoncées en BGP depuis le vRack ne remontent pas | Configuration OVH interne | Ne pas utiliser AS65501 | ALL |
+| Routes du EndPoint/DC non propagées jusqu'au EntryPoint/POP | En utilisant l'AS65501, les routes annoncées en BGP depuis le vRack ne remontent pas | Configuration OVH interne | Ne pas utiliser AS65501 | ALL |
 | ECMP non fonctionnel | Quand ECMP est activé sur un même POP par le client, les flux en sortie sont mal répartis | Limitation | Diviser les annonces pour répartir le trafic | Tous les POP |
 | Lumière en réception mais absence de lien | L'équipement échoue à activer le lien malgré des valeurs optiques en réception correctes | L'autonegotiation est configurée | Désactiver l'autonégotiation | Tous les POP |
 
