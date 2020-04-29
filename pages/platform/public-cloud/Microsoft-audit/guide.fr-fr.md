@@ -22,7 +22,7 @@ Pour cela, vous pouvez choisir parmi ces 3 possibilités :
 
 > [!primary]
 > 
-> Vous trouverez à [cette adresse](https://github.com/ovh/docs/tree/develop/pages/platform/public-cloud/Microsoft-audit/files) l'e-mail envoyé par Microsoft, l'e-mail qui vous a été envoyé par OVHcloud ainsi que le mandat nécessaire si vous choisissez [l'option 2](./#option-2-donner-acces-a-vos-serveurs-a-ovhcloud-pour-execution-du-script-fourni-par-ernst-young)
+> Vous trouverez à [cette adresse](https://github.com/ovh/docs/tree/develop/pages/platform/public-cloud/Microsoft-audit/files) l'e-mail envoyé par Microsoft, l'e-mail qui vous a été envoyé par OVHcloud ainsi que le mandat nécessaire si vous choisissez [l'option 2](./#option-2-donner-acces-a-vos-serveurs-a-ovhcloud-pour-execution-du-script-fourni-par-ernst-young).
 > 
 
 ## En pratique
@@ -164,7 +164,7 @@ Vérifiez que l'ensemble de ces éléments sont visibles dans toutes les capture
 
 La méthode la plus simple pour obtenir cette preuve est de se connecter au serveur SQL à l'aide du SQL Server Management Studio et d'afficher le panneau des propriétés du serveur (voir l'image ci-dessous) en cliquant avec le bouton droit de la souris sur le nom du serveur SQL dans le panneau de l'explorateur d'objets.
 
-![option3-1](images/option3-1.png)
+![option3-1](images/option3-3.png)
 
 4. Envoyez ces informations par email à l'adresse suivante : auditmicrosoft@ovhcloud.com, avant le 26 mai 2020
 
