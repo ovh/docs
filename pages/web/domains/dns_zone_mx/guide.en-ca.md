@@ -39,7 +39,7 @@ Generally speaking, **changing MX records is a tricky task**. If you make any mi
 
 ### Step 2: Familiarise yourself with the OVHcloud MX configuration
 
-In the table below, we have listed the OVHcloud MX configuration to use for our MX Plan solutions (both as a standalone solution, or included as part of our [OVHcloud Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/){.external}, [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} and [Exchange](https://www.ovh.co.uk/emails/hosted-exchange){.external} solutions. Our email servers also have anti-spam and anti-virus protection.
+In the table below, we have listed the OVHcloud MX configuration to use for our MX Plan solutions (both as a standalone solution, or included as part of our [OVHcloud Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/){.external}, [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} and [Exchange](https://www.ovh.com/ca/en/emails/hosted-exchange){.external} solutions. Our email servers also have anti-spam and anti-virus protection.
 
 |Domain|TTL|Record type|Priority|Target|
 |---|---|---|---|---|
@@ -62,7 +62,7 @@ If there are already MX records and you would like to replace them, click the co
 
 To add a record, click `Add record`{.action}, then select `MX`{.action}. Fill in the information required, depending on the email solution you have ordered:
 
-- **If you have an OVHcloud email solution:** Please refer to the information provided in [Step 2: Familiarise yourself with the OVHcloud MX configuration](https://docs.ovh.com/ca/en/domains/web_hosting_configuring_mx_with_the_ovh_dns_zone/#step-2-familiarise-yourself-with-the-ovh-mx-configuration){.external}.
+- **If you have an OVHcloud email solution:** Please refer to the information provided in [Step 2: Familiarise yourself with the OVHcloud MX configuration](../web_hosting_configuring_mx_with_the_ovh_dns_zone/#step-2-familiarise-yourself-with-the-ovh-mx-configuration).
 
 - **If you are using an email solution from another service provider:** Please refer to the information given by your service provider.
 
