@@ -6,14 +6,16 @@ excerpt: Retrouvez dans ce guide de l’aide concernant l’utilisation de l’a
 section: FTP et SSH
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 Ce guide a été réalisé avec une version gratuite de l'applicatif en version 4.5.2 téléchargée depuis le site officiel.
 
-Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovh.com/fr/hebergement-web/guides/){.external} disponibles.
+Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovh.com/ca/fr/hebergement-web/guides/){.external} disponibles.
 
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -27,7 +29,7 @@ Ce dernier vous donne notamment la possibilité de mettre en ligne votre site in
 
 Pour en bénéficier, veuillez vous reporter au site officiel de l'application :
 
-- Site officiel Cyberduck (site non OVH) : [cyberduck.io](https://cyberduck.io/){.external}
+- Site officiel Cyberduck (site non OVHcloud) : [cyberduck.io](https://cyberduck.io/){.external}
 
 
 ![hosting](images/2344.png){.thumbnail}
@@ -188,7 +190,7 @@ Afin de pouvoir vous connecter à votre espace d'hébergement, suivez les étape
 
 Lorsque vous effectuez une première connexion vers votre espace d'hébergement, une fenêtre Lhôte est actuellement inconnu du système apparaîtra.
 
-- Cochez la case Toujours puis cliquez sur Permettre . Ceci vous permettra de certifier définitivement l'hôte de connexion (qui est OVH).
+- Cochez la case Toujours puis cliquez sur Permettre . Ceci vous permettra de certifier définitivement l'hôte de connexion (qui est OVHcloud).
 
 
 ![hosting](images/2363.png){.thumbnail}
@@ -347,7 +349,7 @@ Sur la nouvelle fenêtre, cliquez sur Permissions puis effectuez les modificatio
 ### Reouverture du site
 Vous avez la possibilité d'effectuer la réouverture de votre site en utilisant une commande personnalisée.
 
-Dans la plupart des cas, cette manipulation fait suite à une fermeture par sécurité de votre espace d'hébergement par OVH suite à un hack.
+Dans la plupart des cas, cette manipulation fait suite à une fermeture par sécurité de votre espace d'hébergement par OVHcloud suite à un hack.
 
 Pour utiliser une commande :
 
