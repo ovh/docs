@@ -20,7 +20,7 @@ Esta guía le ayudará a obtener un entendimiento básico de los puntos que pued
 ## Requisitos
 - Un [plan de hospedaje web de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}
 - Un mensaje de correo electrónico que confirme que su plan de hospedaje web ha sido contratado
-- Un [nombre de dominio](https://www.ovh.com/world/dominios/){.external} que pueda utilizarse para acceder a su sitio web
+- Un [nombre de dominio](https://www.ovh.com/world/es/dominios/){.external} que pueda utilizarse para acceder a su sitio web
 - Haber iniciado sesión en el [área de cliente de OVHcloud para tener acceso al panel de control](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Procedimiento
