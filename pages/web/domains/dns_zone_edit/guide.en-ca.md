@@ -49,7 +49,7 @@ By understanding what each of these records does, you will gain a better underst
 > A CNAME record cannot exist with another type of record with the same domain or subdomain. 
 >
 
-### Step 1: Access the area for managing your domain’s OVH DNS zone
+### Step 1: Access the area for managing your domain’s OVHcloud DNS zone
 
 First of all, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
@@ -109,6 +109,6 @@ You can also modify an individual DNS record’s TTL. You can only do this for o
 
 [Adding an SPF record to your domain name’s configuration](https://docs.ovh.com/ca/en/domains/web_hosting_the_spf_record/){.external}.
 
-[Protect your data from DNS cache poisoning with DNSSEC](https://www.ovh.co.uk/domains/dnssec_service.xml){.external}.
+[Protect your data from DNS cache poisoning with DNSSEC](https://www.ovh.com/ca/en/domains/dnssec_service.xml){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.
