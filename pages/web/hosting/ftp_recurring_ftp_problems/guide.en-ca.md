@@ -20,7 +20,7 @@ If it still doesn't work, your credentials are probably incorrect.
 ## How much space do I have left on my wesite?
 If you are running out of space on your website this could cause problems when you want to upload new files. 
 
-- To check this, log in to your [customer account](https://www.ovh.com/manager/web/login/).
+- To check this, log in to your [customer account](https://www.ovh.com/auth/?action=gotomanager).
 - Select your hosting platform
 
 
@@ -32,7 +32,7 @@ You will be met with a summary including your FTP quota.
 
 
 ## I cannot upload my files to the ftp server.
-You have to connect in passive mode (configuration mode that allows the FTP server to define the connection port) in your ftp client. For example, in FileZilla, click Edit -> Settings -> Connections -> then FTP on the left-hand side - > Passive mode.
+You have to connect in passive mode (configuration mode that allows the FTP server to define the connection port) in your FTP client. For example, in FileZilla, click Edit -> Settings -> Connections -> then FTP on the left-hand side - > Passive mode.
 
 
 ## What is the "cgi-bin" directory used for?
