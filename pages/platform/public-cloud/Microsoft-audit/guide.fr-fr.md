@@ -10,11 +10,7 @@ hidden: true
 
 ## Objectif
 
-Dans le cadre de [l'audit Microsoft](files/Microsoft-audit.pdf?raw=true), mené par le cabinet de consulting Ernst & Young, OVHcloud vous a adressé [un e-mail](files/OVH-email.pdf?raw=true) afin de solliciter votre contribution pour déclarer vos utilisations.
-
-Dans le cadre de [l'audit Microsoft](images/microsoft-audit.pdf?raw=true), mené par le cabinet de consulting Ernst & Young, OVHcloud vous a adressé [un e-mail](files/OVH-email.pdf?raw=true) afin de solliciter votre contribution pour déclarer vos utilisations.
-
-Dans le cadre de [l'audit Microsoft](images/microsoft-audit.pdf), mené par le cabinet de consulting Ernst & Young, OVHcloud vous a adressé [un e-mail](files/OVH-email.pdf?raw=true) afin de solliciter votre contribution pour déclarer vos utilisations.
+Dans le cadre de l'audit Microsoft, mené par le cabinet de consulting Ernst & Young, OVHcloud vous a adressé un e-mail afin de solliciter votre contribution pour déclarer vos utilisations.
 
 En souscrivant à l'offre Public Cloud, vous avez obtenu le droit d'utiliser des logiciels tiers et vous avez accepté d'utiliser ces logiciels conformément à leurs conditions d'utilisation. Les propriétaires de ces logiciels tiers, comme Microsoft, sont en droit dé vérifier la conformité de l'utilisation que vous faites de leurs logiciels.
 
@@ -23,6 +19,11 @@ Pour cela, vous pouvez choisir parmi ces 3 possibilités :
 * Option 1 : [Exécuter vous-même le script fourni par Ernst & Young](./#option-1-executer-vous-meme-le-script-fourni-par-ernst-young)
 * Option 2 : [Donner accès à vos serveurs à OVHcloud pour exécution du script fourni par Ernst & Young](./#option-2-donner-acces-a-vos-serveurs-a-ovhcloud-pour-execution-du-script-fourni-par-ernst-young)
 * Option 3 : [Effectuer et envoyer les copies d'écran et éléments nécessaires à OVHcloud](./#option-3-effectuer-et-envoyer-les-copies-decran-et-elements-necessaires-a-ovhcloud)
+
+> [!primary]
+> 
+> Vous trouverez à [cette adresse](https://github.com/ovh/docs/tree/develop/pages/platform/public-cloud/Microsoft-audit/files) l'e-mail envoyé par Microsoft, l'e-mail qui vous a été envoyé par OVHcloud ainsi que le mandat nécessaire si vous choisissez [l'option 2](./#option-2-donner-acces-a-vos-serveurs-a-ovhcloud-pour-execution-du-script-fourni-par-ernst-young)
+> 
 
 ## En pratique
 
@@ -76,12 +77,6 @@ Nous allons vous expliquer comment vous pouvez nous transmettre ces informations
 Ce dont vous avez besoin :
 
 * le fichier à chiffrer
-
-* le logiciel [Gpg4win](https://gpg4win.org/download.html){.external}
-
-* la clef de chiffrement d'OVHcloud : 
-
-* le fichier à chiffrer
 * le logiciel [Gpg4win](https://gpg4win.org/download.html){.external}
 * la clef de chiffrement d'OVHcloud : 
 
@@ -94,13 +89,6 @@ mQENBF4u00YBCADquJKlBrqmsHG/V8ldOLgpKpLrNmPw06HxeUKv8aKTnj/w0uQ/ Y6aUeII4bzmqFgB
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-```bash
------BEGIN PGP PUBLIC KEY BLOCK-----
-
-mQENBF4u00YBCADquJKlBrqmsHG/V8ldOLgpKpLrNmPw06HxeUKv8aKTnj/w0uQ/ Y6aUeII4bzmqFgBVlfBF3VCM7K6wLfr4QQoCnxlebWdNAB+HwXho0+cq/PoWhgw8 awDFIaJjDEnGFEeFCOkEwCH9GmUeCumZ+6+E1KKc0s3W3S6SvHzhDMmP6F5X8KZl O2dEtEeV2l7adgORDypVE4or9tqytOqsPJmvIWvMQEfO74CGVG3VzkgR3384Pm3a MDiLhc3GBQgZ6oS20UxrO0A25gpblbrfV4R8YUlFrhDTO9zer79Njijqj2udQVOw /xzP+S18ybTFKEwxJFBnwGIp3xAth2CZFJ8lABEBAAG0JVJ1bmNsaW92aCA8bG9p Yy5ibG9uZGVsQGNvcnAub3ZoLmNvbT6JAU4EEwEKADgWIQQFKqz42fnVoqz84rzi 1i5j1bdesAUCXi7TRgIbAwULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRDi1i5j 1bdesJozB/0QMINDKKLyV1qO9CHBoPpgeAz8tET7UAqoLcflOqPWFFoKPD6lHITJ qXTc7OZEX/keP3vR357JAfVxXZDe4kOB9/4TlaOExBRKYSN0aa4wPRGUCfju1hJ0 YMatsRFJnDjekuzPoeU/aXyvjSZ3mORwE91/WPGuLrK1F2H8ypnskmXC1CezW/X8 dKiVwV9qJcW8BBF0ygWQZ/O9gsH69JL17G3m9+TOaSGq7qBzYvQTMnvJScINlbFJ Es7JyT9cx9t97mS40TATvdm52YjkH5O0x4HqTI5udBe0AVG3QLuqkBAv8PxvITpn pGpfMAW2KmqC+ZRj39nE+cOCmUTvuFwDuQENBF4u00YBCACx5qxncxlaU+sDmzF4 CTXhZTBBLu3FaViBT34dvsqlrYyZ0ONOlTi5k/zNnBp9v/tmM4WSmQ0xPMV4Veqk fQh5bIZd328/g9QLMwCCkFSLxo8+VUCuEG02kiu+2BMTNRvAxOdmHMHO3v/NfzHS ViAFGqxmR3lsRXol3QvKYlOs8ziItH3HBvjd/DT+L9S08KNv9wXx/8iOnYSapaHC hGCtR/O/QUJlvBpOZELWCLDRA+IcTvMqXj4y1S87V4cvE+X0cy0s1UqL6xa8pqfU kSYNlyzt4EkGrri0wjTyfxSxB79CFDS0/m1sL9JIcU1sIg8ZE/TQCdAKP5rVNF40 HT1pABEBAAGJATYEGAEKACAWIQQFKqz42fnVoqz84rzi1i5j1bdesAUCXi7TRgIb DAAKCRDi1i5j1bdesLvCB/9GXDdZhbhg0Xey24Uh2e/46zWrzBAmYCmaLLjtc5QM 1bhueHRs5YxtorLOteVqL7v54IOgl9qsRIvasuyUm3EJs3r3f3zAEEnn1ORtpnf0 sY77qtGbCWk/G2gnxhm0MVFrlQCptJZjMr2lqZfFc4mar4yZBeRA6cfW8JJFjJKj UksrfAI2MRH9f+nQD9jfGxRY8JrfCGWhSoB8S9xHRarZNjqKjcizA6UyL6I55Eh8 4LySeyLJVUo0yhbxAkZmJLHgjFq62IOdXM8eg2Xe1EoVnh/60osOXkZnQWkuwApU BaRKeC0IDZCa9f1VU+zFLDwLXcq8yHGv2RjP39B0T0ZU =9bNm
-
------END PGP PUBLIC KEY BLOCK-----
-```
 
 1. Téléchargez et installez le logiciel [Gpg4win](https://gpg4win.org/download.html){.external} disponible à cette adresse : [https://gpg4win.org/index.html](https://gpg4win.org/index.html){.external}
 
@@ -142,11 +130,7 @@ mQENBF4u00YBCADquJKlBrqmsHG/V8ldOLgpKpLrNmPw06HxeUKv8aKTnj/w0uQ/ Y6aUeII4bzmqFgB
 
 11. Le fichier chiffré est créé dans le même répertoire que le fichier source.
 
-12. Envoyez-nous ce fichier chiffré ainsi que [le mandat suivant complété et signé par vos soins](files/autorisation.docx?raw=true), avant le 26 mai 2020, à l'adresse suivante : auditmicrosoft@ovhcloud.com
-
-12. Envoyez-nous ce fichier chiffré ainsi que [le mandat suivant complété et signé par vos soins](images/autorisation.docx?raw=true), avant le 26 mai 2020, à l'adresse suivante : auditmicrosoft@ovhcloud.com
-
-12. Envoyez-nous ce fichier chiffré ainsi que [le mandat suivant complété et signé par vos soins](images/autorisation.docx), avant le 26 mai 2020, à l'adresse suivante : auditmicrosoft@ovhcloud.com
+12. Envoyez-nous ce fichier chiffré ainsi que le mandat disponible à [cette adresse](https://github.com/ovh/docs/tree/develop/pages/platform/public-cloud/Microsoft-audit/files), complété et signé par vos soins, avant le 26 mai 2020, à l'adresse suivante : auditmicrosoft@ovhcloud.com
 
 ### Option 3 : Effectuer et envoyer les copies d'écran et éléments nécessaires à OVHcloud
 
