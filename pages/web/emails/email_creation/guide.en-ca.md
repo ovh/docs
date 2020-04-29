@@ -16,9 +16,9 @@ You can use an email address in your MX Plan solution to send and receive emails
 
 ## Requirements
 
-- an MX Plan solution, available via a [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}, [a free Start 10M hosting solution](https://www.ovh.com/ca/domains/start10m_hosting_offer.xml){.external} including a domain name (activated in advance), or the MX Plan solution, ordered separately
+- an MX Plan solution, available via a [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/), [a free Start 10M hosting solution](https://www.ovh.com/ca/en/domains/start10m_hosting_offer.xml) including a domain name (activated in advance), or the MX Plan solution, ordered separately
 - the ability to create email addresses as part of your solution
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 > [!primary]
 >
@@ -76,9 +76,9 @@ Once you have created your email addresses, you can start using them straight aw
 
 ##### 1. Use Outlook Web Access (OWA) webmail.
 
-Go to the [Webmail login](https://www.ovh.com/ca/en/mail/){.external} page, then enter your email address and password. Then click the `Login`{.action} button.
+Go to the [Webmail login](https://www.ovh.com/ca/en/mail/) page, then enter your email address and password. Then click the `Login`{.action} button.
 
-When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/){.external}.
+When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](../ca/../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -88,7 +88,7 @@ You will need to configure your email address on the device you want to use (e.g
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10](https://docs.ovh.com/ca/en/emails/mail-configuration-windows-10/){.external}|[Outlook 2016](https://docs.ovh.com/ca/en/emails/configuration-outlook-2016/){.external}|[MacOS Mail (latest version)](https://docs.ovh.com/ca/en/emails/guide-configuring-mail-on-macos/){.external}|[Android (latest version)](https://docs.ovh.com/ca/en/emails/configuration-android/){.external}|[Gmail](https://docs.ovh.com/ca/en/emails/gmail-configuration/){.external}|[Mail for iPhone and iPad (iOS 7 and later)](https://docs.ovh.com/ca/en/emails/email_hosting_iphone_ios_91_configuration/){.external}|
+|[Windows 10](../mail-configuration-windows-10/){.external}|[Outlook 2016](../configuration-outlook-2016/)|[MacOS Mail (latest version)](../guide-configuring-mail-on-macos/)|[Android (latest version)](../configuration-android/)|[Gmail](../gmail-configuration/)|[Mail for iPhone and iPad (iOS 7 and later)](../email_hosting_iphone_ios_91_configuration/)|
 
 If you just need the information required to configure your email address, the settings to use are listed below:
 
@@ -160,7 +160,7 @@ You will need to configure your email address on the device you want to use (e.g
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10](https://docs.ovh.com/ca/en/emails/mail-configuration-windows-10/){.external}|[Outlook 2016](https://docs.ovh.com/ca/en/emails/configuration-outlook-2016/){.external}|[MacOS Mail (latest version)](https://docs.ovh.com/ca/en/emails/guide-configuring-mail-on-macos/){.external}|[Android (latest version)](https://docs.ovh.com/ca/en/emails/configuration-android/){.external}|[Gmail](https://docs.ovh.com/ca/en/emails/gmail-configuration/){.external}|[Mail for iPhone and iPad (iOS 7 and later)](https://docs.ovh.com/ca/en/emails/email_hosting_iphone_ios_91_configuration/){.external}|
+|[Windows 10](../mail-configuration-windows-10/)|[Outlook 2016](../configuration-outlook-2016/)|[MacOS Mail (latest version)](../guide-configuring-mail-on-macos/){.external}|[Android (latest version)](../configuration-android/)|[Gmail]../gmail-configuration/)|[Mail for iPhone and iPad (iOS 7 and later)](../email_hosting_iphone_ios_91_configuration/)|
 
 If you just need the information required to configure your email address, the settings to use are listed below:
 
