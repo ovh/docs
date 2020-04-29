@@ -39,7 +39,7 @@ Dado que es posible configurar varios registros MX para un mismo dominio, es nec
 
 ### 2. Conocer la configuración MX de OVHcloud
 
-A continuación se indica la configuración MX de OVHcloud que deberá utilizar para su Email (solo o incluido en un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}), [Email Pro](https://www.ovh.es/emails/email-pro/){.external} o [Exchange](https://www.ovh.es/emails/){.external}. Le recordamos que nuestros servidores de correo disponen de antispam y antivirus.
+A continuación se indica la configuración MX de OVHcloud que deberá utilizar para su Email (solo o incluido en un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}), [Email Pro](https://www.ovh.com/world/es/emails/email-pro/){.external} o [Exchange](https://www.ovh.com/world/es/emails/){.external}. Le recordamos que nuestros servidores de correo disponen de antispam y antivirus.
 
 |Dominio|TTL|Registro|Prioridad|Destino|
 |---|---|---|---|---|
@@ -62,7 +62,7 @@ Si los registros MX ya existen y quiere sustituirlos, haga clic en el icono con 
 
 Para crear un nuevo registro MX, haga clic en el botón `Añadir un registro`{.action} y seleccione `MX`{.action}. Complete la información solicitada (en función de la solución de correo de que disponga):
 
-- **Si tiene contratada una solución de correo de OVHcloud**, consulte la información del paso [2. Conocer la configuración MX de OVH](https://docs.ovh.com/us/es/domains/anadir-registro-mx-configuracion-dominio/#2-conocer-la-configuracion-mx-de-ovhcloud){.external}.
+- **Si tiene contratada una solución de correo de OVHcloud**, consulte la información del paso [2. Conocer la configuración MX de OVH](../anadir-registro-mx-configuracion-dominio/#2-conocer-la-configuracion-mx-de-ovhcloud){.external}.
 
 - **Si tiene contratada una solución de correo externa**, consulte la información que le haya proporcionado el proveedor de su servicio de correo.
 
@@ -75,8 +75,8 @@ Una vez que haya completado la información, siga los pasos que se indican y hag
 
 ## Más información
 
-[Información general sobre los servidores DNS](https://docs.ovh.com/us/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
+[Información general sobre los servidores DNS](../web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
 
-[Editar una zona DNS de OVHcloud](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}
+[Editar una zona DNS de OVHcloud](../web_hosting_como_editar_mi_zona_dns/){.external}
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
