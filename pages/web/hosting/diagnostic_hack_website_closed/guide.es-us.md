@@ -130,11 +130,11 @@ Existen distintas formas de restaurar un sitio web:
 
 - **Si usted tiene una copia de seguridad del sitio web** 
 
-Solo tiene que restaurar la copia de seguridad en el alojamiento, sustituyendo el contenido del espacio de almacenamiento y de la base de datos por el de la copia de seguridad. Si necesita ayuda, consulte nuestra guía [Importar una copia de seguridad en la base de datos de un alojamiento web](https://docs.ovh.com/us/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/){.external}.
+Solo tiene que restaurar la copia de seguridad en el alojamiento, sustituyendo el contenido del espacio de almacenamiento y de la base de datos por el de la copia de seguridad. Si necesita ayuda, consulte nuestra guía [Importar una copia de seguridad en la base de datos de un alojamiento web](../web_hosting_importacion_de_una_base_de_datos_mysql/){.external}.
 
 - **Si OVHcloud tiene una copia seguridad del sitio web (espacio de almacenamiento y base de datos)**
 
-Según la fecha a la que quiera restaurar el sitio web, es posible que OVH tenga una copia de seguridad de este último. Si necesita ayuda, consulte nuestras guías [Restaurar el espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/us/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/){.external}, [Exportar una copia de seguridad de la base de datos de un alojamiento web](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/){.external} e [Importar una copia de seguridad en la base de datos de un alojamiento web](https://docs.ovh.com/us/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/){.external}. En la medida de lo posible, asegúrese de que las fechas de las copias de seguridad seleccionadas coinciden.
+Según la fecha a la que quiera restaurar el sitio web, es posible que OVH tenga una copia de seguridad de este último. Si necesita ayuda, consulte nuestras guías [Restaurar el espacio de almacenamiento de un alojamiento web](../restaurar-espacio-almacenamiento-alojamiento-web/){.external}, [Exportar una copia de seguridad de la base de datos de un alojamiento web](../web_hosting_exportacion_de_una_base_de_datos/){.external} e [Importar una copia de seguridad en la base de datos de un alojamiento web](../web_hosting_importacion_de_una_base_de_datos_mysql/){.external}. En la medida de lo posible, asegúrese de que las fechas de las copias de seguridad seleccionadas coinciden.
 
 - **Si ni usted ni OVHcloud tienen una copia de seguridad del sitio web** 
 
@@ -163,7 +163,7 @@ De lo contrario, deberá actualizarlos. Para ello, siga las indicaciones que le 
 
 Dichas indicaciones pueden hacer referencia a elementos que podrían bloquear la actualización, por ejemplo:
 
-- Asegúrese de que la nueva versión del CMS (como WordPress) es compatible con la versión de PHP configurada en el alojamiento. Si necesitara cambiar esta última, puede consultar nuestra guía [Cambiar la versión PHP de un alojamiento web](https://docs.ovh.com/us/es/hosting/cambiar-version-php-en-alojamiento-web/){.external}.
+- Asegúrese de que la nueva versión del CMS (como WordPress) es compatible con la versión de PHP configurada en el alojamiento. Si necesitara cambiar esta última, puede consultar nuestra guía [Cambiar la versión PHP de un alojamiento web](../cambiar-version-php-en-alojamiento-web/){.external}.
 - Asegúrese de que los temas y módulos adicionales son compatibles con la nueva versión de su CMS. De lo contrario, no podrá utilizarlos y deberá encontrar una solución alternativa.
 
 #### 2.3. Corregir manualmente el código del sitio web
@@ -183,7 +183,7 @@ Para reactivar el alojamiento web, es necesario realizar una operación en el es
 
 Si tiene la posibilidad de reactivar usted mismo el alojamiento, recopile la información necesaria para conectarse a su espacio de almacenamiento (es decir, el servidor FTP, el usuario FTP y la contraseña asociada).
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Desde el mismo lugar también podrá [cambiar la contraseña del usuario FTP](https://docs.ovh.com/us/es/hosting/cambiar-contrasena-usuario-ftp/){.external} si fuera necesario.
+Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Desde el mismo lugar también podrá [cambiar la contraseña del usuario FTP](../cambiar-contrasena-usuario-ftp/){.external} si fuera necesario.
 
 ![Desactivación del hosting](images/hosting-deactivation-step3.png){.thumbnail}
 
