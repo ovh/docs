@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 2
 ---
 
-**Dernière mise à jour le 14/01/2020**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
@@ -63,7 +63,7 @@ Pour récupérer une sauvegarde de votre base de données, consultez notre guide
 [« Récupérer la sauvegarde de la base de données d’un hébergement web »](../exportation-bases-donnees/){.external}.
 
 Si vous utilisez une base de données **SQL privé** pour votre site Web, consultez la section dédiée à la sauvegarde sur notre guide :
-[« Tout sur le SQL privé »](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/#sauvegarde-restauration-et-importation-depuis-lespace-client_1){.external}.
+[« Tout sur le SQL privé »](../tout-sur-le-sql-prive/#sauvegarde-restauration-et-importation-depuis-lespace-client_1){.external}.
 
 ### Étape 3 : récupérer les logs de votre hébergement OVHcloud
 
@@ -107,6 +107,6 @@ Lorsque vous avez sélectionné le type de logs sur le mois qui vous intéresse,
 
 [Récupérer la sauvegarde de la base de données d’un hébergement web](../exportation-bases-donnees/){.external}.
 
-[Tout sur le SQL privé](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/#sauvegarde-restauration-et-importation-depuis-lespace-client_1){.external}.
+[Tout sur le SQL privé](../tout-sur-le-sql-prive/#sauvegarde-restauration-et-importation-depuis-lespace-client_1){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
