@@ -5,18 +5,18 @@ excerpt: 'Apprenez à restaurer un fichier ou l''intégralité de l''espace de s
 section: 'FTP et SSH'
 ---
 
-**Dernière mise à jour le 07/09/2018**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
-Votre offre d'hébergement web OVH vous donne accès à un espace de stockage sur lequel vous pouvez héberger vos sites internet. Pour diverses raisons, comme la suppression ou la modification d'un fichier rendant inaccessible un site, vous pouvez être amené à devoir restaurer l'ensemble des données de votre espace de stockage, ou simplement un fichier stocké dans celui-ci.
+Votre offre d'hébergement web OVHcloud vous donne accès à un espace de stockage sur lequel vous pouvez héberger vos sites internet. Pour diverses raisons, comme la suppression ou la modification d'un fichier rendant inaccessible un site, vous pouvez être amené à devoir restaurer l'ensemble des données de votre espace de stockage, ou simplement un fichier stocké dans celui-ci.
 
 **Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web.**
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} (ne fonctionne pas avec un hébergement Cloud Web).
-- Selon la méthode utilisée, disposer d’un accès à la gestion de l’offre d’hébergement web depuis l’[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} ou du mot de passe de l'utilisateur FTP vous permettant d'accéder à votre espace de stockage. 
+- Disposer d'une offre d'[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external} (ne fonctionne pas avec un hébergement Cloud Web).
+- Selon la méthode utilisée, disposer d’un accès à la gestion de l’offre d’hébergement web depuis l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} ou du mot de passe de l'utilisateur FTP vous permettant d'accéder à votre espace de stockage. 
 
 ## En pratique
 
@@ -28,7 +28,7 @@ Avant de débuter, assurez-vous que les dates de restauration proposées peuvent
 - le dimanche précédent, à 01 h 00 du matin ;
 - le dimanche, deux semaines avant, à 01h00 du matin.
 
-Si vous souhaitiez bénéficier d'une sauvegarde plus ancienne, OVH ne sera pas en mesure de vous la fournir. Reportez-vous à une éventuelle sauvegarde personnelle de votre site que vous auriez pu effectuer par le passé. 
+Si vous souhaitiez bénéficier d'une sauvegarde plus ancienne, OVHcloud ne sera pas en mesure de vous la fournir. Reportez-vous à une éventuelle sauvegarde personnelle de votre site que vous auriez pu effectuer par le passé. 
 
 Définissez également la méthode de restauration que vous allez utiliser :
 
@@ -39,13 +39,13 @@ Définissez également la méthode de restauration que vous allez utiliser :
 
 Une fois prêt, poursuivez la lecture de cette documentation en fonction de la méthode de restauration choisie.
 
-- « [Restaurer l'espace de stockage depuis l'espace client](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/#restaurer-lespace-de-stockage-depuis-lespace-client){.external} ».
+- « [Restaurer l'espace de stockage depuis l'espace client](../restauration-ftp-filezilla-espace-client/#restaurer-lespace-de-stockage-depuis-lespace-client){.external} ».
 
-- « [Restaurer un fichier depuis un logiciel ou une interface](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/#restaurer-un-fichier-depuis-un-logiciel-ou-une-interface){.external} ».
+- « [Restaurer un fichier depuis un logiciel ou une interface](../restauration-ftp-filezilla-espace-client/#restaurer-un-fichier-depuis-un-logiciel-ou-une-interface){.external} ».
 
 ### Restaurer l'espace de stockage depuis l'espace client
 
-Pour effectuer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Restaurer une sauvegarde`{.action}.
+Pour effectuer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Restaurer une sauvegarde`{.action}.
 
 ![backupftp](images/backupftp-step1.png){.thumbnail}
 
@@ -80,11 +80,11 @@ La manipulation s’effectue en plusieurs étapes. Assurez-vous d'être en posse
 
 Dans un premier temps, définissez le logiciel ou l'interface que vous allez utiliser pour vous connecter à la sauvegarde de votre espace de stockage. Si vous le connaissez déjà, passez tout de suite à l'étape 2. Dans le cas contraire, nous vous recommandons d'utiliser l'une des trois solutions suivantes :
 
-- **utiliser le logiciel FileZilla** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVH met à votre disposition la documentation [« Utiliser le logiciel FileZilla avec son hébergement web »](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/){.external}, vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
+- **utiliser le logiciel FileZilla** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel FileZilla avec son hébergement web »](../mutualise-guide-utilisation-filezilla/){.external}, vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
 
-- **utiliser le logiciel Cyberduck** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVH met à votre disposition la documentation [« Utiliser le logiciel Cyberduck avec son hébergement web »](https://docs.ovh.com/fr/hosting/utilisation-cyberduck-mac/){.external}, vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
+- **utiliser le logiciel Cyberduck** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel Cyberduck avec son hébergement web »](../utilisation-cyberduck-mac/){.external}, vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
 
-- **utiliser l'interface du FTP Explorer** : vous devrez au préalable accéder à cette dernière via votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Une fois connecté, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `FTP Explorer`{.action}.
+- **utiliser l'interface du FTP Explorer** : vous devrez au préalable accéder à cette dernière via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Une fois connecté, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `FTP Explorer`{.action}.
 
 Dès que vous êtes prêt à poursuivre la manipulation, continuez vers l'étape suivante.
 
@@ -94,7 +94,7 @@ Dès que vous êtes prêt à poursuivre la manipulation, continuez vers l'étape
 
 Depuis l'interface ou le logiciel sélectionné, vous allez devoir vous connecter à votre espace de stockage pour accéder aux données de la sauvegarde que vous voulez récupérer. Pour cela, vous devrez être en possession du nom d'utilisateur FTP, de son mot de passe et du nom d'hôte de votre serveur FTP.
 
-Vous pouvez retrouver ces informations dans l'onglet `FTP - SSH`{.action} de votre hébergement. Si vous n’êtes plus en possession du mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/){.external}.
+Vous pouvez retrouver ces informations dans l'onglet `FTP - SSH`{.action} de votre hébergement. Si vous n’êtes plus en possession du mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](../modifier-mot-de-passe-utilisateur-ftp/){.external}.
 
 ![backupftp](images/backupftp-step4.png){.thumbnail}
 
@@ -128,8 +128,8 @@ Une fois connecté, il ne vous reste plus qu'à restaurer le ou les fichiers sou
 
 ## Aller plus loin
 
-[Utiliser le logiciel FileZilla avec son hébergement web](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/){.external}.
+[Utiliser le logiciel FileZilla avec son hébergement web](../mutualise-guide-utilisation-filezilla/){.external}.
 
-[Utiliser le logiciel Cyberduck avec son hébergement web](https://docs.ovh.com/fr/hosting/utilisation-cyberduck-mac/){.external}.
+[Utiliser le logiciel Cyberduck avec son hébergement web](../utilisation-cyberduck-mac/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
