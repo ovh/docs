@@ -17,7 +17,7 @@ Es posible alojar varios sitios web en un mismo hosting, tanto si sus dominios e
 ## Requisitos
 
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external} compatible.
-- Tener uno o más [dominios](https://www.ovh.com/world/dominios/){.external}.
+- Tener uno o más [dominios](https://www.ovh.com/world/es/dominios/){.external}.
 - Poder modificar la configuración (zona DNS) del dominio o dominios.
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
@@ -77,7 +77,7 @@ Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}. Com
 Al añadir un dominio registrado en OVHcloud, podrá elegir entre realizar la configuración DNS de forma automática o manual:
 
 - **Para una configuración DNS automática**, marque la casilla `Configuración automática (recomendado)`{.action}.
-- **Para una configuración DNS manual**, desmarque la casilla `Configuración automática (recomendado)`{.action}. En este caso, se mostrarán los parámetros que debe modificar. Para más información sobre cómo realizar manualmente la configuración DNS, consulte la guía [Editar una zona DNS de OVHcloud](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}. 
+- **Para una configuración DNS manual**, desmarque la casilla `Configuración automática (recomendado)`{.action}. En este caso, se mostrarán los parámetros que debe modificar. Para más información sobre cómo realizar manualmente la configuración DNS, consulte la guía [Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/){.external}. 
 
 Haga clic en `Aceptar`{.action} para añadir el dominio. Esta operación puede tardar un máximo de una hora. No obstante, la modificación de la configuración DNS del dominio tarda entre 4 y 24 horas en propagarse y ser efectiva.
 
@@ -111,7 +111,7 @@ Compruebe que la información que se muestra es correcta y haga clic en `Aceptar
 > La modificación de la configuración DNS del dominio es imprescindible para poder añadir el dominio. Si no la realiza, la adición del dominio se anulará.
 >
 
-Para modificar la configuración del dominio (su zona DNS), deberá acceder al panel que le ofrezca el proveedor encargado de su gestión. Si su proveedor es OVHcloud, consulte la guía [Editar una zona DNS de OVHcloud](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}. Una vez realizada la operación, los cambios tardarán entre 4 y 24 horas en propagarse y ser plenamente efectivos.
+Para modificar la configuración del dominio (su zona DNS), deberá acceder al panel que le ofrezca el proveedor encargado de su gestión. Si su proveedor es OVHcloud, consulte la guía [Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/){.external}. Una vez realizada la operación, los cambios tardarán entre 4 y 24 horas en propagarse y ser plenamente efectivos.
 
 A continuación le indicamos algunos datos relativos a la configuración DNS del dominio:
 
