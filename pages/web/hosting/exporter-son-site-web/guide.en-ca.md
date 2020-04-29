@@ -6,18 +6,18 @@ section: 'Getting started'
 order: 2
 ---
 
-**Last updated 18th February 2020**
+**Last updated 5th May 2020**
 
 ## Objective
 
-This guideline will outline the steps to follow in order to export all elements of your website in a standard format, from an [OVHcloud web hosting plan](https://www.ovh.co.uk/web-hosting/){.external}.
+This guideline will outline the steps to follow in order to export all elements of your website in a standard format, from an [OVHcloud web hosting plan](https://www.ovh.co.uk/web-hosting/).
 
 **Find out how to export an OVHcloud website.**
 
 ## Requirements
 
-- an [OVHcloud web hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
@@ -36,13 +36,13 @@ This information was included in the email informing you that your web hosting p
 
 ![export-website](images/export-website-step1-1.png){.thumbnail}
 
-The information associated with your storage space will now appear. You should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on [Logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/){.external}. If you are no longer in possession of the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](https://docs.ovh.com/gb/en/hosting/modify-ftp-user-password/){.external}.
+The information associated with your storage space will now appear. You should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on [Logging in to your Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting/). If you are no longer in possession of the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](../modify-ftp-user-password/).
 
 Once you have everything you need, there are two different ways of retrieving your files from the storage space:
 
 - **Using FTP- or SFTP-compatible software.** You will need to install a compatible program on your computer (e.g. FileZilla). Since OVHcloud did not create the software package you have installed, please contact the software’s publisher if you are experiencing difficulties using it.
 
-- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](https://www.ovh.co.uk/web-hosting/){.external} are required to use this type of access. For further information on this, please refer to our guide on [Accessing your web hosting plan via SSH](https://docs.ovh.com/gb/en/hosting/web_hosting_ssh_on_web_hosting_packages/){.external}. 
+- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](https://www.ovh.com/ca/en/web-hosting/) are required to use this type of access. For further information on this, please refer to our guide on [Accessing your web hosting plan via SSH](../web_hosting_ssh_on_web_hosting_packages/). 
 
 #### 2.1 Upload the files from your storage space.
 
@@ -60,7 +60,7 @@ To identify the folder that the website is stored on, go to the `Multi-site`{.ac
 >
 
 To retrieve a backup of your database, please read our guide on
-[Retrieving the backup of a Web Hosting plan’s database](https://docs.ovh.com/gb/en/hosting/web_hosting_database_export_guide/){.external}.
+[Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide/).
 
 If you are using a **Private SQL** database for your website, you can go to the ‘Databases’ tab, click on the cogwheel next to the database, and click ‘Back up now’ in the drop-down menu.
 You can also download, import and restore backups in this section.
@@ -97,16 +97,16 @@ When you have selected the log types and month you want to view, the logs are ar
 
 ## Go further
 
-[Logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/){.external}.
+[Logging in to your Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting/)
 
-[Modifying a FTP user password](https://docs.ovh.com/gb/en/hosting/modify-ftp-user-password/){.external}.
+[Modifying a FTP user password](../modify-ftp-user-password/)
 
-[FileZilla user guide](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/){.external}.
+[FileZilla user guide](../web_hosting_filezilla_user_guide/)
 
-[Accessing a web hosting plan via SSH](https://docs.ovh.com/gb/en/hosting/web_hosting_ssh_on_web_hosting_packages/){.external}. 
+[Accessing a web hosting plan via SSH](../web_hosting_ssh_on_web_hosting_packages/)
 
-[Retrieving the backup of a Web Hosting plan’s database](https://docs.ovh.com/gb/en/hosting/web_hosting_database_export_guide/){.external}.
+[Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide/)
 
-[Everything you need to know about Private SQL](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/#sauvegarde-restauration-et-importation-depuis-lespace-client_1){.external} (French only).
+[Everything you need to know about Private SQL](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/#sauvegarde-restauration-et-importation-depuis-lespace-client_1) (French only)
 
 Join our community of users on <https://community.ovh.com/en/>.
