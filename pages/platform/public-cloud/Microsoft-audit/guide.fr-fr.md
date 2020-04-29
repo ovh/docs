@@ -31,40 +31,40 @@ Pour cela, vous pouvez choisir parmi ces 3 possibilités :
 
 Si vous souhaitez exécuter vous-même le script fourni par Ernst & Young, merci de suivre la procédure suivante.
 
-1. Connectez-vous à votre VPS ou Instance Public Cloud.
+**Étape 1** : Connectez-vous à votre VPS ou Instance Public Cloud.
 
-2. Téléchargez à l'aide de votre navigateur habituel le script fourni par Ernst & Young à [cette adresse](https://onedrive.live.com/?authkey=%21AKjh-46_qHwVuCQ&id=80ADB8E634F8B2A%21146&cid=080ADB8E634F8B2A){.external}.
+**Étape 2** : Téléchargez à l'aide de votre navigateur habituel le script fourni par Ernst & Young à [cette adresse](https://onedrive.live.com/?authkey=%21AKjh-46_qHwVuCQ&id=80ADB8E634F8B2A%21146&cid=080ADB8E634F8B2A){.external}.
 
-3. Décompressez le fichier zip téléchargé.
+**Étape 3** : Décompressez le fichier zip téléchargé.
 
 ![option1-1](images/option1-1.png)
 
-4. Double-cliquez sur le fichier "EYInventoryScript" pour lancer l'exécution du script.
+**Étape 4** : Double-cliquez sur le fichier "EYInventoryScript" pour lancer l'exécution du script.
 
 ![option1-2](images/option1-2.png)
 
-5. Tapez 1 pour exécuter le scan sur un serveur local, en l'occurence votre vps ou instance Public Cloud.
+**Étape 5** : Tapez 1 pour exécuter le scan sur un serveur local, en l'occurence votre vps ou instance Public Cloud.
 
 ![option1-3](images/option1-3.png)
 
-6. Patientez quelques secondes pour voir l'apparition des premiers résultats du script.
+**Étape 6** : Patientez quelques secondes pour voir l'apparition des premiers résultats du script.
 
 ![option1-4](images/option1-4.png)
 
-7. Une fois terminé, le script retourne sur le menu initial.
+**Étape 7** : Une fois terminé, le script retourne sur le menu initial.
 
-8. Un dossier "EY_Output" a été créé dans le dossier où se trouve l'exécutable "EYInventoryScript". Le dossier contient tous les fichiers de sortie du script. Ce sont ces fichiers qu'il faudra nous transmettre.
+**Étape 8** : Un dossier "EY_Output" a été créé dans le dossier où se trouve l'exécutable "EYInventoryScript". Le dossier contient tous les fichiers de sortie du script. Ce sont ces fichiers qu'il faudra nous transmettre.
 
 ![option1-5](images/option1-5.png)
 
-9. Compressez et nommez le dossier "EY_Output" comme suit : EY_Output_ipv4_principal de votre instance Public cloud suivi de .zip ex : EY_Output_10.10.10.10.zip
+**Étape 9** : Compressez et nommez le dossier "EY_Output" comme suit : EY_Output_ipv4_principal de votre instance Public cloud suivi de .zip ex : EY_Output_10.10.10.10.zip
 
 ![option1-6](images/option1-6.png)
 ![option1-7](images/option1-7.png)
 
-10. Ouvrez votre boite mail ou logiciel de mail habituel
+**Étape 10** : Ouvrez votre boite mail ou logiciel de mail habituel
 
-11. Envoyez-nous le dossier des résultats zippé (ici EY_Output_10.10.10.10.zip), avant le 26 mai 2020 à l'adresse suivante : auditmicrosoft@ovhcloud.com
+**Étape 11** : Envoyez-nous le dossier des résultats zippé (ici EY_Output_10.10.10.10.zip), avant le 26 mai 2020 à l'adresse suivante : auditmicrosoft@ovhcloud.com
 
 ### Option 2 : Donner accès à vos serveurs à OVHcloud pour exécution du script fourni par Ernst & Young
 
@@ -90,47 +90,47 @@ mQENBF4u00YBCADquJKlBrqmsHG/V8ldOLgpKpLrNmPw06HxeUKv8aKTnj/w0uQ/ Y6aUeII4bzmqFgB
 ```
 
 
-1. Téléchargez et installez le logiciel [Gpg4win](https://gpg4win.org/download.html){.external} disponible à cette adresse : [https://gpg4win.org/index.html](https://gpg4win.org/index.html){.external}
+**Étape 1** : Téléchargez et installez le logiciel [Gpg4win](https://gpg4win.org/download.html){.external} disponible à cette adresse : [https://gpg4win.org/index.html](https://gpg4win.org/index.html){.external}
 
-2. Une fois installé, lancez Kleopatra (interface graphique pour utiliser Gpg4win) sur votre système.
+**Étape 2** : Une fois installé, lancez Kleopatra (interface graphique pour utiliser Gpg4win) sur votre système.
 
 ![option2-1](images/option2-1.png)
 
-3. Copiez la clef publique d'OVHcloud dans un fichier texte.
+**Étape 3** : Copiez la clef publique d'OVHcloud dans un fichier texte.
 
 ![option2-2](images/option2-2.png)
 
-4. Cliquez sur `import`{.action} et recherchez la clef que vous venez d'enregistrer.
+**Étape 4** : Cliquez sur `import`{.action} et recherchez la clef que vous venez d'enregistrer.
 
 ![option2-3](images/option2-3.png)
 
-5. Répondez "Non" suite à la demande de création de certificat.
+**Étape 5** : Répondez "Non" suite à la demande de création de certificat.
 
 ![option2-4](images/option2-4.png)
 
 ![option2-5](images/option2-5.png)
 
-6. Pour chiffrer un fichier, cliquez sur `Sign/Encrypt`{.action}.
+**Étape 6** : Pour chiffrer un fichier, cliquez sur `Sign/Encrypt`{.action}.
 
-7. Sélectionnez votre fichier.
+**Étape 7** : Sélectionnez votre fichier.
 
 ![option2-6](images/option2-6.png)
 
-8. Dans le champ "Encrypt for others:" indiquez le nom de la clef (ici "Runcliovh") que vous avez choisie. Elle apparaîtra dans le champ.
+**Étape 8** : Dans le champ "Encrypt for others:" indiquez le nom de la clef (ici "Runcliovh") que vous avez choisie. Elle apparaîtra dans le champ.
 
-9. Cliquez sur Encrypt.
+**Étape 9** : Cliquez sur Encrypt.
 
 ![option2-7](images/option2-7.png)
 
-10. Cliquez sur `Continuer`{.action}. 
+**Étape 10** : Cliquez sur `Continuer`{.action}. 
 
 ![option2-8](images/option2-8.png)
 
 ![option2-9](images/option2-9.png)
 
-11. Le fichier chiffré est créé dans le même répertoire que le fichier source.
+**Étape 11** : Le fichier chiffré est créé dans le même répertoire que le fichier source.
 
-12. Envoyez-nous ce fichier chiffré ainsi que le mandat disponible à [cette adresse](https://github.com/ovh/docs/tree/develop/pages/platform/public-cloud/Microsoft-audit/files), complété et signé par vos soins, avant le 26 mai 2020, à l'adresse suivante : auditmicrosoft@ovhcloud.com
+**Étape 12** : Envoyez-nous ce fichier chiffré ainsi que le mandat disponible à [cette adresse](https://github.com/ovh/docs/tree/develop/pages/platform/public-cloud/Microsoft-audit/files), complété et signé par vos soins, avant le 26 mai 2020, à l'adresse suivante : auditmicrosoft@ovhcloud.com
 
 ### Option 3 : Effectuer et envoyer les copies d'écran et éléments nécessaires à OVHcloud
 
@@ -138,8 +138,9 @@ Si vous ne pouvez pas appliquer l'une des deux procédures mentionnées préalab
 
 Le support OVHcloud vous demande de communiquer vos informations "matériel" et "logiciels", de manière sécurisée. En complément de ces éléments, vous devrez également spécifier les raisons qui vous empêchent de suivre les deux premières options.
 
-1. Exécutez la commande "systeminfo" à partir de la ligne de commande. La ligne de commande est accessible en tapant `cmd` dans le dialogue d'exécution de Windows. Une fois la commande exécutée, veuillez faire défiler l'écran jusqu'en haut de la fenêtre d'invite de commande. Il n'est pas nécessaire d'inclure les détails des correctifs dans la capture d'écran.
-2. Ouvrez la boîte de dialogue "Ajout/Suppression de programmes" ou "Programmes et fonctionnalités" à partir du panneau de configuration et placez-le côte à côte avec la ligne de commande (comme indiqué dans la première capture d'écran ci-dessous).
+**Étape 1** : Exécutez la commande "systeminfo" à partir de la ligne de commande. La ligne de commande est accessible en tapant `cmd` dans le dialogue d'exécution de Windows. Une fois la commande exécutée, veuillez faire défiler l'écran jusqu'en haut de la fenêtre d'invite de commande. Il n'est pas nécessaire d'inclure les détails des correctifs dans la capture d'écran.
+
+**Étape 2** : Ouvrez la boîte de dialogue "Ajout/Suppression de programmes" ou "Programmes et fonctionnalités" à partir du panneau de configuration et placez-le côte à côte avec la ligne de commande (comme indiqué dans la première capture d'écran ci-dessous).
     
 > [!primary]
 > 
@@ -160,12 +161,12 @@ Vérifiez que l'ensemble de ces éléments sont visibles dans toutes les capture
 
 #### Version et édition de SQL
 
-3. Si le serveur SQL de Microsoft est déployé sur l'appareil, réalisez une capture d'écran montrant la version et l'édition SQL.
+**Étape 3** : Si le serveur SQL de Microsoft est déployé sur l'appareil, réalisez une capture d'écran montrant la version et l'édition SQL.
 
 La méthode la plus simple pour obtenir cette preuve est de se connecter au serveur SQL à l'aide du SQL Server Management Studio et d'afficher le panneau des propriétés du serveur (voir l'image ci-dessous) en cliquant avec le bouton droit de la souris sur le nom du serveur SQL dans le panneau de l'explorateur d'objets.
 
 ![option3-1](images/option3-3.png)
 
-4. Envoyez ces informations par email à l'adresse suivante : auditmicrosoft@ovhcloud.com, avant le 26 mai 2020
+**Étape 4** : Envoyez ces informations par email à l'adresse suivante : auditmicrosoft@ovhcloud.com, avant le 26 mai 2020
 
- Ces preuves seront par la suite communiquées au cabinet Ernst & Young pour analyse de conformité.
+Ces preuves seront par la suite communiquées au cabinet Ernst & Young pour analyse de conformité.
