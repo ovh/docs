@@ -9,11 +9,13 @@ legacy_guide_number: g1976
 **Last updated 5th May 2020**
 
 ## Part 1: preparing for installation
+
 Necessary tools
 
 To install the Drupal platform on your shared hosting package, we advise your to get an FTP program such as  FileZilla (free).
 
 ## Necessary credentials
+
 Make sure that you have your customer ID (nic-handle) and password so you can log in to your [OVHcloud customer account](https://www.ovh.com/auth/?action=gotomanager) if necessary.
 
 
@@ -65,6 +67,7 @@ Transfer files via FTP
 Follow these steps to upload your files using FTP.
 
 ## Step 1
+
 Once you are logged in to FileZilla. 
 
 In the "Local site" section, which refers to the list of files on your computer, open the unzipped file entitled "Drupal-xxx" where your CMS files will be located. 
@@ -74,6 +77,7 @@ If this folder does not exist you can create it.
 Your files must be uploaded to the "www" folder or you will not be able to access the installation procedure from your domain name.
 
 ## Step 2
+
 Once these folders are open:
 
 In the "Local site" section, find all the files you need to install the Drupal CMS. 
@@ -86,6 +90,7 @@ Then drag and drop the files in to the "Remote site" section in the "www" folder
 It is very likely that the "www" folder is not empty. You do not have to remove the files that are in it. We will go back to this point later on in the guide.
 
 ## Step 3
+
 The files are being transferred.. 
 
 Wait until all of the files are dropped in to the remote FTP server. This could take a few minutes.
@@ -98,6 +103,7 @@ This is the end of the section devoted to transfering files via FTP.
 
 
 ## Step 1 - Installing Drupal
+
 Go to your web browser, and type your domain name in the address bar. 
 
 You will reach this page
@@ -108,12 +114,14 @@ Tick "Standard Install with commonly used features pre-configured." then click "
 
 
 ## Step 2 - Language choice
+
 Select your chosen language and then click "Save and continue".
 
 ![](images/img_3218.jpg){.thumbnail}
 
 
 ## Step 3 - Log on to the database
+
 Get your database credentials (there is a guide available here: []({legacy}1374)).
 
 
