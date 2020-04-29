@@ -18,7 +18,7 @@ Go to the [FileZilla](https://filezilla-project.org/) website to download it.
 
 ## Interface
 
-## The [b][red]Zone 1[/red][/b] provides information on the status of the connection, transfers, connection errors, etc..
+Zone 1 provides information on the status of the connection, transfers, connection errors, etc.
 Generally the information is not important.
 
 Zone 2 shows the path of the site folder on your computer.
