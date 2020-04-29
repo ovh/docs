@@ -84,6 +84,7 @@ allow from 192.168
 
 
 
-## 
-Find out more about the .htaccess file in the following guide: [Click here](https://www.ovh.co.uk/g1967.mutualise_tout_sur_le_fichier_htaccess)
+## Go further
+
+Join our community of users on https://community.ovh.com/en/.
 
