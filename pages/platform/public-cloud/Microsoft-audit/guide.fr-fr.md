@@ -22,7 +22,7 @@ Pour cela, vous pouvez choisir parmi ces 3 possibilités :
 
 > [!primary]
 > 
-> Vous trouverez à [cette adresse](https://github.com/ovh/docs/tree/develop/pages/platform/public-cloud/Microsoft-audit/files) l'e-mail envoyé par Microsoft, l'e-mail qui vous a été envoyé par OVHcloud ainsi que le mandat nécessaire si vous choisissez [l'option 2](./#option-2-donner-acces-a-vos-serveurs-a-ovhcloud-pour-execution-du-script-fourni-par-ernst-young).
+> Vous trouverez à [cette adresse](https://github.com/ovh/docs/tree/develop/pages/platform/public-cloud/Microsoft-audit/files) l'e-mail envoyé par Microsoft ainsi que le mandat nécessaire si vous choisissez [l'option 2](./#option-2-donner-acces-a-vos-serveurs-a-ovhcloud-pour-execution-du-script-fourni-par-ernst-young).
 > 
 
 ## En pratique
