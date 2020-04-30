@@ -17,13 +17,13 @@ PHP-FPM interprets PHP requests more quickly and speeds up response time. Accord
 
 ## What are the advantages of migrating to a newer version of PHP?
 By migrating your site to the latest supported version of PHP, you are much less likely to experience security vulnerabilities and you will also benefit from all the new features of the language. 
-OVH also offers free PHP-FPM optimisation (from version 5.3) to boost your website's performance.
+OVHcloud also offers free PHP-FPM optimisation (from version 5.3) to boost your website's performance.
 
 ## My website, or part of my website, uses old versions of PHP. What should I do?
 We urge you to test your websites and scheduled tasks with these new versions as soon as possible. We will explain how to do this further on in the guide.
 
 ## Why won't OVH update PHP automatically?
-As all websites are different, OVH cannot cater for every customer, so customers will need to migrate their scripts themselves.
+As all websites are different, OVHcloud cannot cater for every customer, so customers will need to migrate their scripts themselves.
 
 ## You are a developer?
 You can also configure PHP manually by configuring the .ovhconfig file. 
@@ -42,18 +42,7 @@ To alter this version, click on "Modify configuration " (2 in the image opposite
 You can choose the following elements:
 
 Runtime environment :
-OVH web hosting packages let you change the runtime environment that your website runs in.This means that you can either take advantage of a stable configuration over the long term, or benefit from the latest updates on the software provided by OVH. 
-
-You can choose from the following versions:
-
-Versions of PHP:
-
-- 5.4
-- 5.5
-- 5.6
-- 7.0 
-
-(by default, you can choose the latest stable version of PHP, 5.6)
+OVHcloud web hosting packages let you change the runtime environment that your website runs in.This means that you can either take advantage of a stable configuration over the long term, or benefit from the latest updates on the software provided by OVHcloud. (You can only choose stable and maintained versions of PHP.)
 
 Engine:
 
@@ -65,7 +54,7 @@ Engine:
 Environement:
 
 - In development mode: no cache is stored. PHP logs are displayed on your site (display_errors=On).
-- In production mode: static files such as images, videos and audio files have a longer lifespan which maximises file caching on web browsers. PHP logs aren't displayed on your website(display_errors=Off).
+- In production mode: static files such as images, videos and audio files have a longer lifespan which maximises file caching on web browsers. PHP logs aren't displayed on your website (display_errors=Off).
 
 Application firewall: 
 - deactivated
@@ -107,7 +96,7 @@ If you do want to return to a previous version, we suggest you refer to the para
 - [Drupal](https://www.drupal.org/documentation)
 - [Prestashop](http://doc.prestashop.com/display/PS15/Updating+PrestaShop)
 
-2. If your site is based on a custom solution, you should refer to [url="http://php.net/manual/en/appendices.php"]the official PHP documentation
+2. If your site is based on a custom solution, you should refer to <http://php.net/manual/en/appendices.php> official PHP documentation
 
 If you are not the developer, contact your webmaster.
 
