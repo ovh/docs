@@ -2,13 +2,15 @@
 title: .htaccess&#58; reecriture d’URL grace au mod_rewrite
 legacy_guide_number: 1971
 slug: htaccess-reecriture-url-mod-rewrite
-excerpt: Mod_rewrite est disponible chez OVH sur l'ensemble des hebergements mutualises (sauf 20gp). En savoir plus sur le site d'Apache.
+excerpt: Mod_rewrite est disponible chez OVHcloud sur l'ensemble des hebergements mutualises (sauf 20gp). En savoir plus sur le site d'Apache.
 section: Réécriture et authentification
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -92,12 +94,12 @@ Le module mod_rewrite permet la réécriture des URL.
 ```bash
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.votredomaine.fr/$1 [R,L]
+RewriteRule ^(.*)$ https://www.votredomaine.com/$1 [R,L]
 ```
 
 
 ## Le fichier .htaccess
-Tout sur le fichier .htaccess sur le lien suivant : [Cliquer ici]({legacy}1967){.ref}
+Tout sur le fichier .htaccess sur le lien suivant : [Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/){.ref}
 
 
 ## Aller plus loin
