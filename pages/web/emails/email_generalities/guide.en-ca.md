@@ -10,13 +10,13 @@ order: 3
 
 ## Objective
 
-If you have just purchased an MX Plan solution, you can have email addresses, which can be used to send and receive messages from any device. 
+If you have activated an OVHcloud Web Hosting plan, you can have email addresses, which can be used to send and receive messages from any device. 
 
-**Find out how to get started with an MX Plan solution.**
+**This guide describes the first steps with an OVHcloud email solution.**
 
 ## Requirements
 
-- an MX plan solution, available via a [Web Hosting plan]({ovh_www}/web-hosting/), [the free Start10M Hosting plan]({ovh_www}/domains/start10m_hosting_offer.xml) or an MX Plan solution ordered separately
+- an MX plan solution, available via a [Web Hosting plan]({ovh_www}/web-hosting/) or [the free Start10M Hosting plan]({ovh_www}/domains/start10m_hosting_offer.xml)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
