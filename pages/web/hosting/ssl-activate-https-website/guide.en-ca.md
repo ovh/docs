@@ -6,19 +6,19 @@ section: SSL
 order: 2
 ---
 
-**Last updated 5th December 2018**
+**Last updated 5th May 2020**
 
 ## Objective
 
-With an OVH Web Hosting plan, you can get a free SSL certificate. An SSL certificate provides one or more of your websites with secure connections by making them accessible via HTTPS. You will need to follow several steps to ensure that your websites can use this secure connection.
+With an OVHcloud Web Hosting plan, you can get a free SSL certificate. An SSL certificate provides one or more of your websites with secure connections by making them accessible via HTTPS. You will need to follow several steps to ensure that your websites can use this secure connection.
 
 **Find out how to activate HTTPS on your website with an SSL certificate.**
 
 ## Requirements
 
-- an [SSL certificate](https://www.ovh.co.uk/ssl/){.external} set up on your [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
-- at least one website set up and accessible via your OVH Web Hosting plan
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- an [SSL certificate](https://www.ovh.com/ca/en/ssl/) set up on your [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
+- at least one website set up and accessible via your OVHcloud Web Hosting plan
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
@@ -41,16 +41,16 @@ The table below provides a breakdown of the changes you will need to make.
 
 ### Step 1: Activate the SSL certificate on the Web Hosting plan.
 
-You can activate the SSL certificate on your Web Hosting plan via the  [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. To do this, you will need to make two separate changes:
+You can activate the SSL certificate on your Web Hosting plan via the  [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. To do this, you will need to make two separate changes:
 
 |Change|Description|
 |---|---|
-|Activate an SSL certificate on the Web Hosting plan.|Allows OVH to set up an SSL certificate on your Web Hosting plan. You can choose between two certificate types. Please ensure you select the certificate that best suits your needs.|
+|Activate an SSL certificate on the Web Hosting plan.|Allows OVHcloud to set up an SSL certificate on your Web Hosting plan. You can choose between two certificate types. Please ensure you select the certificate that best suits your needs.|
 |Activate SSL on the multi-site concerned.|The website you would like to use HTTPS for must be configured as a multi-site on your Web Hosting plan. Please ensure that SSL is active for your Web Hosting plan.|
 
-You can read a detailed version of the changes you need to make in our guide to [Managing an SSL certificate on a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans){.external}. If you have just ordered an OVH Web Hosting plan, you may find that a free SSL certificate has already been set up on it, and that the multisite already has an active SSL connection.
+You can read a detailed version of the changes you need to make in our guide to [Managing an SSL certificate on a Web Hosting plan](../ssl-certificates-on-web-hosting-plans). If you have just ordered an OVHcloud Web Hosting plan, you may find that a free SSL certificate has already been set up on it, and that the multisite already has an active SSL connection.
 
-To check this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Click on the `General information`{.action} tab. Beneath ‘SSL certificate’, the word ‘Yes’ should be visible, showing that an SSL certificate is set up on your Web Hosting plan. 
+To check this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Click on the `General information`{.action} tab. Beneath ‘SSL certificate’, the word ‘Yes’ should be visible, showing that an SSL certificate is set up on your Web Hosting plan. 
 
 ![httpswebsite](images/activate-https-website-ssl-step2.png){.thumbnail}
 
@@ -58,7 +58,7 @@ Go to the `Multisite`{.action} tab. The table displayed will contain all of the 
 
 ![httpswebsite](images/activate-https-website-ssl-step3.png){.thumbnail}
 
-If, from these verifications, it seems that an SSL certificate may not be set up properly on your Web Hosting plan and/or is not active on the multisite concerned, please read our guide to [Managing an SSL certificate on a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/){.external}.
+If, from these verifications, it seems that an SSL certificate may not be set up properly on your Web Hosting plan and/or is not active on the multisite concerned, please read our guide to [Managing an SSL certificate on a Web Hosting plan](../ssl-certificates-on-web-hosting-plans/).
 
 ### Step 2: Check the technical environment.
 
@@ -68,7 +68,7 @@ As a result, we strongly recommend taking the following information into conside
 
 > [!warning]
 >
-> OVH provides services which you are responsible for with regard to their configuration and management. You are responsible for ensuring that they work properly.
+> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are responsible for ensuring that they work properly.
 >
 > We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the "Go further" section in this guide. 
 >
@@ -77,7 +77,7 @@ As a result, we strongly recommend taking the following information into conside
 
 As a general rule, when your website loads in HTTPS, it is absolutely essential not to mix HTTP and HTTPS content on either a single webpage, or your whole website. If your website must load in HTTPS, please ensure that all of its content loads in HTTPS, too.
 
-If this is not the case, you are providing web browsers with what is known as ‘mixed content’. As a result, you are at risk of providing potentially non-secure content on a page that is marked as secure. There are two possible consequences to providing mixed content, depending on its type:
+If this is not the case, you are providing web browsers with what is known as "mixed content". As a result, you are at risk of providing potentially non-secure content on a page that is marked as secure. There are two possible consequences to providing mixed content, depending on its type:
 
 - **The website will display properly, but a warning will appear in the URL address bar.** This can indicate that passive content (images, videos, etc.) is loaded from a non-secure source.
 
