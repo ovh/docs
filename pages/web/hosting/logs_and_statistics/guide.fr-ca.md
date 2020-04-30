@@ -6,9 +6,11 @@ excerpt: 'Retrouvez ici les demarches pour consulter les statistiques et logs de
 section: 'Optimiser son site'
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 L'accès aux statistiques de votre site est compris dans votre hébergement. Vous n'avez pas besoin de souscrire à un autre abonnement pour bénéficier de ce service.
 
-Cliquez [ici](http://www.ovh.com/fr/hebergement-web/faq){.external} pour retrouver nos différents guides des offres mutualisées.
+Cliquez [ici](http://www.ovh.com/ca/fr/hebergement-web/faq){.external} pour retrouver nos différents guides des offres mutualisées.
 
 > [!warning]
 >
@@ -18,10 +20,9 @@ Cliquez [ici](http://www.ovh.com/fr/hebergement-web/faq){.external} pour retrouv
 ## Consulter les statistiques et les logs
 
 ### Connexion a l'espace client
-Connectez-vous dans le [Manager](https://www.ovh.com/manager/web/){.external} à l'aide de votre couple identifiant (nic-handle) - mot de passe.
+Connectez-vous sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} à l'aide de votre couple identifiant (nic-handle) - mot de passe.
 
 Une fois connecté, sélectionner l'hébergement pour lequel vous souhaitez consulter les statistiques dans le menu de gauche.
-
 
 ![hosting](images/2827.png){.thumbnail}
 
@@ -34,9 +35,9 @@ Dans le récapitulatif général, cliquer sur le lien d'accès : "Statistiques e
 ### Acces a la page Statistiques &amp; logs
 Vous pouvez accéder aux statistiques de votre site, simplement en vous rendant sur :
 
-- [https://logs.ovh.net/nomdevotredomaine](https://logs.ovh.net/nomdevotredomaine){.external}
+- [https://logs.ovh.net/nomdevotredomaine](https://logs.ovh.net/){.external}
 
-La connexion se fait via votre identifiant OVH et le mot de passe associé.
+La connexion se fait via votre identifiant OVHcloud et le mot de passe associé.
 
 Elles sont simples à utiliser et à visualiser. En quelques clics, vous pouvez analyser votre site sans avoir à fournir d'autres calculs statistiques.
 
@@ -88,7 +89,7 @@ Différents type de logs sont à votre disposition :
 - Logs CGI : les différents appels aux scripts cgi.bin qui ont été réalisés.
 - Logs out : les statistiques de votre hébergement sur les différents appels externes réalisés.
 - Logs SSH : ces logs indiquent les différentes connexions réalisées avec le protocole SSH.
-- Logs cron : le résultat de l'exécution de vos tâches planifiées ([http://guides.ovh.com/MutualiseCron](http://guides.ovh.com/MutualiseCron){.external})
+- Logs cron : le résultat de l'exécution de [vos tâches planifiées](../mutualise-taches-automatisees-cron/){.external}.
 
 
 ![hosting](images/2828.png){.thumbnail}
