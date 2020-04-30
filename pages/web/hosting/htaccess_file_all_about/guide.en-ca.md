@@ -10,7 +10,7 @@ legacy_guide_number: g1967
 
 - See our guide on password protecting a directory on your website:
 
-[How to password protect a directory on your website](https://www.ovh.co.uk/fr/g1968.mutualise_htaccess_comment_proteger_lacces_a_un_repertoire_par_une_authentification)
+[How to password protect a directory on your website](https://www.ovh.com/ca/en/g1968.mutualise_htaccess_comment_proteger_lacces_a_un_repertoire_par_une_authentification)
 
 
 
@@ -18,7 +18,7 @@ legacy_guide_number: g1967
 
 - See our guide on blocking selected IP addresses:
 
-[How to block certain IPs from your website](https://www.ovh.co.uk/fr/g1970.mutualise_htaccess_comment_bloquer_certaines_ip_au_niveau_de_mon_site)
+[How to block certain IPs from your website](https://www.ovh.com/ca/en/g1970.mutualise_htaccess_comment_bloquer_certaines_ip_au_niveau_de_mon_site)
 
 
 
@@ -34,6 +34,6 @@ legacy_guide_number: g1967
 
 - This guide details the different ways you can use a .htaccess file:
 
-[Different ways of using a .htaccess file:](https://www.ovh.co.uk/fr/g1972.mutualise_htaccess_les_autres_operations_realisables_avec_des_fichiers_htaccess)
+[Different ways of using a .htaccess file:](https://www.ovh.com/ca/en/g1972.mutualise_htaccess_les_autres_operations_realisables_avec_des_fichiers_htaccess)
 
 
