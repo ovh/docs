@@ -12,7 +12,7 @@ hidden: true
 
 Dans le cadre de l'audit Microsoft, mené par le cabinet de consulting Ernst & Young, OVHcloud vous a adressé un e-mail afin de solliciter votre contribution pour déclarer vos utilisations.
 
-En souscrivant à l'offre Public Cloud, vous avez obtenu le droit d'utiliser des logiciels tiers et vous avez accepté d'utiliser ces logiciels conformément à leurs conditions d'utilisation. Les propriétaires de ces logiciels tiers, comme Microsoft, sont en droit dé vérifier la conformité de l'utilisation que vous faites de leurs logiciels.
+En souscrivant à l'offre Public Cloud, vous avez obtenu le droit d'utiliser des logiciels tiers et vous avez accepté d'utiliser ces logiciels conformément à leurs conditions d'utilisation. Les propriétaires de ces logiciels tiers, comme Microsoft, sont en droit de vérifier la conformité de l'utilisation que vous faites de leurs logiciels.
 
 Pour cela, vous pouvez choisir parmi ces 3 possibilités :
 
@@ -116,7 +116,7 @@ mQENBF4u00YBCADquJKlBrqmsHG/V8ldOLgpKpLrNmPw06HxeUKv8aKTnj/w0uQ/ Y6aUeII4bzmqFgB
 
 ![option2-6](images/option2-6.png)
 
-**Étape 8** : Dans le champ "Encrypt for others:" indiquez le nom de la clef (ici "Runcliovh") que vous avez choisie. Elle apparaîtra dans le champ.
+**Étape 8** : Dans le champ "Encrypt for others:" indiquez le nom de la clef (ici "Runcliovh") que vous avez choisie. Elle apparaîtra dans ce champ.
 
 **Étape 9** : Cliquez sur Encrypt.
 
