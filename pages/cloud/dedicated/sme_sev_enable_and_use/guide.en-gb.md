@@ -150,3 +150,7 @@ ubuntu@ubuntu:~$ dmesg | grep SEV
 - [libvirt domain capabilities - SEV](https://libvirt.org/formatdomaincaps.html#elementsSEV){.external}
 - [github.com/AMDESE/AMDSEV](https://github.com/AMDESE/AMDSEV){.external}
 - [github.com/AMDESE/sev-tool](https://github.com/AMDESE/sev-tool){.external}
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
