@@ -6,9 +6,9 @@ excerpt: EV SSL certificates establish the legitimacy of your company and reassu
 
 
 ## Overview
-EV SSL certificates offered by OVH are published by the certificate authority Comodo. Comodo establishes the legitimacy of your company.
+EV SSL certificates offered by OVHcloud are published by the certificate authority Comodo. Comodo establishes the legitimacy of your company.
 
-See all commercial details on our site: [https://www.ovh.co.uk/ssl/](https://www.ovh.co.uk/ssl/){.external}
+See all commercial details on our [website](https://www.ovh.com/ca/en/ssl/)
 
 
 ### Why choose an EV SSL certificate?
@@ -25,9 +25,10 @@ EV SSL certificate
 ![hosting](images/ssl_EV.png){.thumbnail}
 
 
-## How do I order an EV SSL certificate from OVH?
+## How do I order an EV SSL certificate from OVHcloud?
 
-### If OVH already hosts your website
+### If OVHcloud already hosts your website
+
 Order an EV SSL certificate from your control panel.
 
 
@@ -40,6 +41,7 @@ Simply follow the different steps.
 
 
 ### If your website does not yet exist
+
 When you order a domain name with your future web hosting plan we will ask if you want to order an EV SSL certificate.
 
 
@@ -52,7 +54,8 @@ You then simply enter your company details:
 
 
 ## How do I get my company verified?
-After placing your order with OVH, you will get an email from Comodo
+
+After placing your order with OVHcloud, you will get an email from Comodo
 
 ```
  Subject : "ORDER #xxxxxxxxxx - Agreement"
@@ -115,7 +118,7 @@ After placing your order with OVH, you will get an email from Comodo
  best practices or security compliance requirements.
 ```
 
-Click on the validation link to confirm your order. You will also have to state your authority within your company and verify the email address associated with your OVH account, via a link.
+Click on the validation link to confirm your order. You will also have to state your authority within your company and verify the email address associated with your OVHcloud account, via a link.
 
 If your company is on a third party database (such as Dun & Bradstreet [http://www.dnb.com/](http://www.dnb.com/){.external},) Comodo will call you to ask for additional information.
 
@@ -154,11 +157,11 @@ If your company can't be found on a third party database, Comodo will email you 
  COMODO Validation Team
 ```
 
-Once COMODO has verified that your company exists and that you have the authority to represent it, OVH will automatically receive your EV SSL certificate and deploy it automatically on your website.
+Once COMODO has verified that your company exists and that you have the authority to represent it, OVHcloud will automatically receive your EV SSL certificate and deploy it automatically on your website.
 
 
 ## What are the eligibility conditions?
-Click here for a summary of eligibility conditions: [https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/](https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/){.external}
+Click here for a summary of eligibility conditions: [https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/](https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/)
 
 Only companies are eligible.
 
@@ -175,5 +178,5 @@ You must have a customer account at OVH and be registered as a company. The foll
 
 > [!alert]
 >
-> OVH will not refund your certificate if you are not eligible.
+> OVHcloud will not refund your certificate if you are not eligible.
 > 
