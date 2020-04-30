@@ -6,9 +6,11 @@ excerpt: Ce guide va vous permettre de vous familiariser avec le fichier .htacce
 section: Réécriture et authentification
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -21,19 +23,19 @@ Avant de procéder, il est nécessaire de préciser quelques petites choses par 
 ## Les cas d'utilisations
 
 ### Comment protéger l'acces à un répertoire par une authentification ?
-- Retrouvez notre guide vous expliquant comment protéger un répertoire par une authentification par mot de passe : [https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification/](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification/){.external}
+- Consultez notre guide vous expliquant [comment protéger un répertoire par une authentification par mot de passe](../mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification/){.external}.
 
 
 ### Comment bloquer certaines IP au niveau de mon site ?
-- Retrouvez notre guide vous expliquant comment bloquer certaines IP : [https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/){.external}
+- Consultez notre guide vous expliquant comment bloquer certaines IP [comment bloquer certaines IP](../mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/){.external}.
 
 
 ### Réecriture d'URL grâce au mod_rewrite
-- Retrouvez notre guide vous expliquant comment faire de la réécriture d'URL : [https://docs.ovh.com/fr/hosting/htaccess-reecriture-url-mod-rewrite/](https://docs.ovh.com/fr/hosting/htaccess-reecriture-url-mod-rewrite/){.external}
+- Consultez notre guide vous expliquant comment faire de la [réécriture d'URL](../htaccess-reecriture-url-mod-rewrite/){.external}.
 
 
 ### Les autres opérations réalisables avec des fichiers .htaccess
-- Ce guide détaille d'autres opérations qui peuvent être mises en place grâce au fichier .htaccess : [https://docs.ovh.com/fr/hosting/mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-htaccess/](https://docs.ovh.com/fr/hosting/mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-htaccess/){.external}
+- Consultez notre guide détaillant d'autres opérations qui peuvent être mises en place grâce au fichier .htaccess : [Tout sur le fichier .htaccess](../mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-htaccess/){.external}
 
 ## Aller plus loin
 
