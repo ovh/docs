@@ -6,11 +6,13 @@ excerpt: Retrouvez ici les actions possibles dans votre .htaccess pour bloquer c
 section: Réécriture et authentification
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 Vous pouvez réaliser ceci grâce à un fichier .htaccess. Il s'agit de fichiers textes particuliers qui sont détectés par le serveur web (Apache), et qui permettent de définir des règles spéciales sur un répertoire et l'ensemble de ses sous-répertoires.
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -75,7 +77,7 @@ Allow from 192.168.1
 
 
 ## Le fichier .htaccess
-Tout sur le fichier .htaccess sur le lien suivant : [Cliquer ici]({legacy}1967){.ref}
+Tout sur le fichier .htaccess sur le lien suivant : [Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/){.ref}
 
 ## Aller plus loin
 
