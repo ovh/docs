@@ -7,6 +7,7 @@ section: Configuration de l'hébergement
 order: 5
 ---
 
+**Dernière mise à jour le 05/05/2020**
 
 ## Le mod_security
 Ce module complémentaire d'Apache filtre toutes les requêtes entrantes sur vos serveurs web. Pour plus de sécurité, il les intercepte et les vérifie avant même qu'elles ne soient traitées par les scripts.
@@ -24,7 +25,7 @@ Grâce au Core Rule Set (CRS), vous profitez d'emblée d'une pré-configuration 
 
 
 ## Activation du pare-feu applicatif
-Connectez-vous à votre [espace client](https://www.ovh.com/manager/web){.external} à l'aide de votre couple identifiant (nic-handle) - mot de passe.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} à l'aide de votre couple identifiant (nic-handle) - mot de passe.
 
 
 ![hosting](images/3005.png){.thumbnail}
