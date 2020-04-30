@@ -1,35 +1,35 @@
 ---
 title: 'Suivre et gérer les e-mails automatisés de son hébergement web'
 slug: suivi-emails-automatises
-excerpt: 'Apprenez à suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVH'
+excerpt: 'Apprenez à suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud'
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 12/04/2018**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
 Les e-mails automatisés sont des messages envoyés via des scripts. Ils sont par exemple utilisés dans un formulaire de contact de votre site internet et permettent à vos visiteurs de vous envoyer des messages.
 
-**Apprenez à suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVH.**
+**Apprenez à suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud.**
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 > [!primary]
 >
-> Ce guide ne concerne que les e-mails envoyés depuis des scripts situés sur votre hébergement web OVH.
+> Ce guide ne concerne que les e-mails envoyés depuis des scripts situés sur votre hébergement web OVHcloud.
 >
-> Vous souhaitez gérer les adresses e-mail comprises dans votre offre MX Plan ou dans votre offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} ? Rendez-vous dans la section `Emails`{.action} de votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+> Vous souhaitez gérer les adresses e-mail comprises dans votre offre MX Plan ou dans votre offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} ? Rendez-vous dans la section `Emails`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 >
 
 ## En pratique
 
-Le suivi et la gestion des e-mails automatisés de votre hébergement web OVH s'effectuent depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Pour cela, connectez-vous à ce dernier, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus +`{.action}, puis sur `Scripts emails`{.action}.
+Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Pour cela, connectez-vous à ce dernier, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus +`{.action}, puis sur `Scripts emails`{.action}.
 
-La page qui s'affiche alors vous permet de suivre et de gérer les e-mails automatisés envoyés depuis votre hébergement web OVH.
+La page qui s'affiche alors vous permet de suivre et de gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud.
 
 ![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
@@ -39,11 +39,11 @@ Toujours positionné dans la partie `Scripts emails`{.action}, la page affiche p
 
 |Information|Détails|
 |---|---|
-|État du service|Affiche l'état actuel du service réalisant les envois d'e-mails automatisés de votre hébergement web. Un état dans un cadre vert signifie que les envois sont opérationnels, contrairement à un état dans un cadre rouge qui signifie que les envois ne s'effectuent plus. Selon cet état, la gestion des envois sera différente ; voir [« Gérer les envois d'e-mails automatisés »](https://docs.ovh.com/fr/hosting/suivi-emails-automatises/#gerer-les-envois-de-mails-automatises){.external}.|
-|Rapport d'erreurs à|Recevez un rapport d'erreur quotidien sur l'adresse e-mail de votre choix. Vous pouvez la définir grâce au bouton `Changer le destinataire`{.action}. Ce rapport comporte les e-mails envoyés depuis votre hébergement web revenus en erreur chez OVH car ils n'ont pas pu être desservis. Un bouton `Emails en erreur`{.action} permet également de consulter ces rapports à tout moment depuis votre espace client OVH.|
-|Total des e-mails envoyés|Affiche le nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web OVH.|
+|État du service|Affiche l'état actuel du service réalisant les envois d'e-mails automatisés de votre hébergement web. Un état dans un cadre vert signifie que les envois sont opérationnels, contrairement à un état dans un cadre rouge qui signifie que les envois ne s'effectuent plus. Selon cet état, la gestion des envois sera différente ; voir [« Gérer les envois d'e-mails automatisés »](../suivi-emails-automatises/#gerer-les-envois-de-mails-automatises){.external}.|
+|Rapport d'erreurs à|Recevez un rapport d'erreur quotidien sur l'adresse e-mail de votre choix. Vous pouvez la définir grâce au bouton `Changer le destinataire`{.action}. Ce rapport comporte les e-mails envoyés depuis votre hébergement web revenus en erreur chez OVHcloud car ils n'ont pas pu être desservis. Un bouton `Emails en erreur`{.action} permet également de consulter ces rapports à tout moment depuis votre espace client OVHcloud.|
+|Total des e-mails envoyés|Affiche le nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web OVHcloud.|
 |E-mails envoyés aujourd'hui|Affiche le nombre total des e-mails automatisés envoyés aujourd'hui uniquement.|
-|Total des e-mails en erreur|Affiche le nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web qui sont revenus en erreur chez OVH car ils n'ont pas pu être desservis.|
+|Total des e-mails en erreur|Affiche le nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web qui sont revenus en erreur chez OVHcloud car ils n'ont pas pu être desservis.|
 |Historique des e-mails envoyés|Affiche un graphique représentant l'historique des e-mails envoyés depuis votre hébergement web sur les jours précédents.|
 
 > [!primary]
