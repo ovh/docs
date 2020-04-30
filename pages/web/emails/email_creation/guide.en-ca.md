@@ -78,7 +78,7 @@ Once you have created your email addresses, you can start using them straight aw
 
 Go to the [Webmail login](https://www.ovh.com/ca/en/mail/) page, then enter your email address and password. Then click the `Login`{.action} button.
 
-When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](../ca/../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
+When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](../../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
