@@ -6,6 +6,8 @@ section: 'Configuration de l''hébergement'
 order: 6
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 ## FTP
 
 ### Logiciel FTP - Passif
@@ -36,7 +38,7 @@ Actuellement les bases de données mutualisées (*Perso* // *Pro* // *Module*) s
 
 - Pour des raisons de sécurité il n'est pas possible de vous connecter depuis un serveur externe sur une base de données mutualisée.
 
-Uniquement les serveurs mutualisés d'OVH peuvent se connecter sur le serveur MySQL.
+Uniquement les serveurs mutualisés d'OVHcloud peuvent se connecter sur le serveur MySQL.
 
 Toute autre connexion générera l'erreur suivante :
 
