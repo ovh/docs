@@ -6,11 +6,13 @@ excerpt: Retrouvez ici toutes les operations possibles avec votre .htaccess autr
 section: Réécriture et authentification
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 Avant de procéder, il est nécessaire de préciser quelques petites choses par rapport aux fichiers .htaccess. Tout d'abord, il faut savoir qu'il s'agit de fichiers particuliers pour le serveur web, et que ces fichiers n'apparaissent pas dans l'arborescence du répertoire concerné si un internaute fait un accès à un répertoire listable (qui ne contient pas de page index, et dont le listage n'est pas interdit). Ensuite, il faut bien prendre en compte que les paramétrages indiqués par un fichier .htaccess s'appliquent au répertoire où le fichier est installé, ainsi qu'à tout ses sous-répertoires.
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -79,16 +81,12 @@ DirectoryIndex accueil.html
 ```
 
 
-### Faire des redirections
-Vous pouvez pour cela vous rendre sur le lien suivant : [Cliquer ici]({legacy}1339){.ref}
-
-
 ### Faire de la reecriture d'URL
-Vous pouvez pour cela vous rendre sur le lien suivant : [Cliquer ici]({legacy}1971){.ref}
+Vous pouvez pour cela vous rendre sur le lien suivant : [.htaccess: reecriture d’URL grace au mod_rewrite](../htaccess-reecriture-url-mod-rewrite/){.ref}
 
 
 ## Le fichier .htaccess
-Tout sur le fichier .htaccess sur le lien suivant : [Cliquer ici]({legacy}1967){.ref}
+Tout sur le fichier .htaccess sur le lien suivant : [Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/){.ref}
 
 ## Aller plus loin
 
