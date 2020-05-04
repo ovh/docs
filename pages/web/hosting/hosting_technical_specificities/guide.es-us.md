@@ -59,7 +59,7 @@ Con el objetivo de acelerar las respuestas PHP, hemos adaptado PHP-FPM a nuestra
 
 En nuestros laboratorios de prueba obtenemos un rendimiento hasta 7 veces más rápido que el antiguo mecanismo.
 
-Para más información sobre el funcionamiento de PHP-FPM, consulte la guía [Activar la optimización de PHP en un alojamiento compartido OVH](https://docs.ovh.com/es/hosting/activar_la_optimizacion_de_php_en_un_alojamiento_compartido_ovh/){.external}.
+Para más información sobre el funcionamiento de PHP-FPM, consulte la guía [Activar la optimización de PHP en un alojamiento compartido OVHcloud](../activar_la_optimizacion_de_php_en_un_alojamiento_compartido_ovh/){.external}.
 
 
 Al utilizar PHP-FPM, se modifican algunas variables de servidor: 
