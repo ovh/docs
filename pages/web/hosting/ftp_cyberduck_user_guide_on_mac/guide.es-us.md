@@ -67,7 +67,7 @@ Para conectarse a su espacio de alojamiento por FTP, siga las indicaciones que s
 
 Si no marca la casilla «Guardar contraseña», deberá introducir la contraseña cada vez que se conecte a su espacio de alojamiento.
 
-Si no recuerda sus claves FTP, consulte esta guía para [recuperar sus claves FTP](http://www.ovh.es/g1374.publicar-sitio-web-en-internet#subir_los_archivos_por_ftp_claves_ftp).
+Si no recuerda sus claves FTP, consulte esta guía para [cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/).
 Debería aparecer un mensaje informando de que el servidor admite conexiones encriptadas (SSL).
 Nuestro servidor no es compatible con FTP-SSL, por lo que debe marcar la casilla «No mostrar de nuevo» y seleccionar «Continuar».
 
@@ -75,17 +75,17 @@ Si desea conectarse de forma segura, conéctese por  [SFTP](#utilizar_cyberduck_
 
 ![hosting](images/2349.png){.thumbnail}
 
-Si no sabe si su alojamiento incluye acceso SSH, consulte nuestros [planes de web hosting](http://www.ovh.es/hosting/). 
+Si no sabe si su alojamiento incluye acceso SSH, consulte nuestros [planes de web hosting](http://www.ovh.com/world/es/hosting/). 
 
 Si sigue sin estar seguro, elija «Continuar». El servidor rechazará la conexión si su alojamiento no tiene acceso SSH.
-Le recomendamos que guarde los datos de conexión en los [favoritos](#utilizar_cyberduck_favoritos).
+Le recomendamos que guarde los datos de conexión en los [favoritos](./#favoritos).
 
 
 ## Conexión SFTP
 Si su plan de hosting es compatible con el acceso SSH, también puede conectarse por SFTP. Es imprescindible disponer de este acceso para que funcione la conexión SFTP.
-Si no sabe si su alojamiento incluye acceso SSH, consulte nuestros [planes de web hosting](http://www.ovh.es/hosting/).
+Si no sabe si su alojamiento incluye acceso SSH, consulte nuestros [planes de web hosting](http://www.ovh.com/world/es/hosting/).
 
-Si sigue sin estar seguro, conéctese por [FTP](#utilizar_cyberduck_conexion_ftp) en lugar de SFTP. El servidor rechazará la conexión si su alojamiento no tiene acceso SSH.
+Si sigue sin estar seguro, conéctese por [FTP](./#conexion-ftp) en lugar de SFTP. El servidor rechazará la conexión si su alojamiento no tiene acceso SSH.
 Para poder conectarse a su espacio de alojamiento, siga indicaciones que se ofrecen a continuación:
 
 1. Haga clic en «Nueva conexión», en la esquina superior izquierda.
@@ -108,13 +108,13 @@ Para poder conectarse a su espacio de alojamiento, siga indicaciones que se ofre
 
 Si no marca la casilla «Guardar contraseña», deberá introducir la contraseña cada vez que se conecte a su espacio de alojamiento.
 
-Si no recuerda sus claves FTP, consulte esta guía para [recuperar sus claves FTP](http://www.ovh.es/g1374.publicar-sitio-web-en-internet#subir_los_archivos_por_ftp_claves_ftp).
+Si no recuerda sus claves FTP, consulte esta guía para [cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/).
 La primera vez que se conecte a su espacio de alojamiento, aparecerá un mensaje informando de que el servidor no es reconocido por el sistema.
-Marque la casilla «Siempre» y haga clic en «Permitir». De esa forma, no tendrá que volver a confirmar el servidor de conexión (OVH).
+Marque la casilla «Siempre» y haga clic en «Permitir». De esa forma, no tendrá que volver a confirmar el servidor de conexión (OVHcloud).
 
 ![hosting](images/2363.png){.thumbnail}
 
-Le recomendamos que guarde los datos de conexión en los [favoritos](#utilizar_cyberduck_favoritos).
+Le recomendamos que guarde los datos de conexión en los [favoritos](./#favoritos).
 
 
 ## Errores de conexión
@@ -129,7 +129,7 @@ Si ha creado un favorito, también deberá modificarlo. Para ello, selecciónelo
 
 ![hosting](images/2352.png){.thumbnail}
 
-Si no recuerda sus claves FTP, consulte esta guía para [recuperar sus claves FTP](http://www.ovh.es/g1374.publicar-sitio-web-en-internet#subir_los_archivos_por_ftp_claves_ftp).
+Si no recuerda sus claves FTP, consulte esta guía para [cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/).
 Falló la conexión
 
 Este mensaje, seguido de la mención Timed out waiting for initial connect reply, suele indicar que no ha sido posible conectar con el servidor. 
@@ -147,7 +147,7 @@ También puede deberse a que un cortafuegos o red local bloquean el puerto 21 o 
 Le recordamos que el servidor de conexión a su espacio de alojamiento es ftp.su-dominio.tld (sustituyendo su-dominio.tld por su nombre de dominio y extensión) o ftp.clusterXXX.ovh.net (sustituyendo XXX por su número de cluster).
 
 
-- Si lo necesita, consulte esta guía para [recuperar sus claves FTP](http://www.ovh.es/g1374.publicar-sitio-web-en-internet#subir_los_archivos_por_ftp_claves_ftp).
+- Si lo necesita, consulte esta guía para [cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/).
 
 
 
@@ -267,7 +267,7 @@ Para comprobar que el sitio web se haya abierto, simplemente pruebe a acceder a 
 
 ![hosting](images/2360.png){.thumbnail}
 
-- El comando anterior no funciona en SFTP. Para realizarlo, utilice una conexión [conexión FTP](#utilizar_cyberduck_conexion_ftp).
+- El comando anterior no funciona en SFTP. Para realizarlo, utilice una conexión [conexión FTP](./#conexion-ftp).
 
 - Recordamos que para probar que el sitio esté abierto, debe esperar un máximo de 3 horas. Nuestros robots pasan cada 3 horas para comprobar si se han realizado cambios de estado. En función del momento en el que haya realizado la operación, el sitio puede tardar más o menos en volver a visualizarse.
 
