@@ -26,7 +26,7 @@ Es kann notwendig werden, Zugriffseinstellungen für Dienste manuell anzupassen.
 
 ## In der praktischen Anwendung
 
-Um herauszufinden, auf welchem Webhosting Cluster Ihr Dienst liegt, loggen Sie sich in Ihr [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und klicken Sie im Bereich `Web`{.action} links in der Menüleiste auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Sie können hier die Clusternummer unter **FTP-Server** ablesen.
+Um herauszufinden, auf welchem Webhosting Cluster Ihr Dienst liegt, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und klicken Sie im Bereich `Web`{.action} links in der Menüleiste auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Sie können hier die Clusternummer unter **FTP-Server** ablesen.
 
 ### Cluster 002
 
