@@ -6,7 +6,7 @@ section: Tutorials
 order: 1
 ---
 
-**Last updated 24<sup>th</sup> April, 2020**
+**Last updated 30<sup>th</sup> April, 2020**
 
 ## Objective
 This guide  gives you a basic example about using Apache Spark and OVHcloud Data Processing.
@@ -68,7 +68,7 @@ Spark allows us to use this method much faster. Instead of making each calculati
 ### Step 1 : Write a python code using Apache Spark
 
 Here is a code sample written in Python do calculate π.
-Save it in a file called 'pi-spark.py'.
+Save it in a file called 'pi-spark.py' or download it from this repository: [Data Processing Samples - Calculate Pi](https://github.com/ovh/data-processing-samples/tree/master/python_calculatePi).
 
 
 ```python
@@ -122,7 +122,7 @@ Both files must be placed in the same object container.
 
 *In this particular case*, you can use this environment. Copy and paste in a environment.yml file.
 
-```python
+```yml
 name: condaenv
 channels:
   - defaults
