@@ -5,7 +5,6 @@ excerpt: 'Find out how to get started with the CloudDB service'
 section: 'Getting started'
 ---
 
-
 **Last updated 24th April 2020**
 
 ## Objective
@@ -163,7 +162,7 @@ You can verify the cluster number of the Web Hosting on this page under **FTP se
 
 ![clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
 
-Once you have ascertained the cluster number of your Web Hosting, consult [this page](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/) where you can verify the gateway IP address for each cluster.
+Once you have ascertained the cluster number of your Web Hosting, consult [this page](https://docs.ovh.com/gb/en/hosting/list-of-ip-addresses-of-web-hosting-clusters) where you can verify the gateway IP address for each cluster.
 
 > [!warning]
 >
@@ -181,7 +180,7 @@ No matter which method you choose to follow, you must have the following five pi
 |Database name|The name you entered when you created your database. You can view all the databases created in your CloudDB instance under the `Databases`{.action} tab.|
 |Username|The name of the user you entered when you created the database, or the name of an additional user that you created at a later stage. You can view all the users created in your CloudDB instance under the `Users and permissions`{.action} tab.|
 |User password|The password associated with the user, which was defined during the previous steps.|
-|Server host name|The server that needs to be entered for your website to be connected to your database. You can access this information in your Control Panel by going to the `Connections`{.action} section, then the General information tab.|
+|Server hostname|The server that needs to be entered for your website to be connected to your database. You can access this information in your Control Panel by going to the `Connections`{.action} section, then the General information tab.|
 |Server port|The port for connecting to your CloudDB instance, so that your website can connect to your database. You can access this information in your Control Panel by going to the `Connections`{.action} section, then the `General information`{.action} tab.|
 
 > [!warning]

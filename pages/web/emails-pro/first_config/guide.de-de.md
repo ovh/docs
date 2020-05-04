@@ -5,7 +5,7 @@ excerpt: 'Erfahren Sie hier, wie Sie Ihre E-Mail Pro Lösung einrichten'
 section: Allgemein
 ---
 
-**Letzte Aktualisierung am 18.03.2020**
+**Letzte Aktualisierung am 22.04.2020**
 
 ## Ziel
 
@@ -15,10 +15,10 @@ Sie haben gerade eine E-Mail Pro Lösung erworben. Nun können Sie zu einem gün
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [E-Mail Pro](https://www.ovh.de/emails/email-pro) Lösung.
-- Sie haben die Bestätigungs-E-Mail zur Installation von E-Mail Pro erhalten.
-- Sie besitzen eine Domain.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eingeloggt.
+- Sie haben einen [E-Mail Pro](https://www.ovh.de/emails/email-pro)-Dienst in Ihrem Kunden-Account.
+- Sie haben die E-Mail zur Installation von E-Mail Pro bereits erhalten.
+- Sie verfügen über einen [Domainnamen](https://www.ovh.de/domains/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
 ## In der praktischen Anwendung
 
