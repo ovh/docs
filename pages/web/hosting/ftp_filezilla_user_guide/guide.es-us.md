@@ -12,7 +12,7 @@ FileZilla es un programa disponible para varios sistemas operativos (Windows, Ma
 
 Para descargarlo, visite la web oficial de [FileZilla](https://filezilla-project.org/).
 
-![](images/img_2400.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_2400.jpg){.thumbnail}
 
 
 ## Interfaz
@@ -32,7 +32,7 @@ La zona 6 muestra la lista de espera de los archivos pendientes de transferencia
 
 En la barra de conexión rápida, situada bajo la zona encuadrada en verde en la imagen, aparece el nombre del servidor al que está conectado y el nombre de usuario del FTP, su contraseña y el puerto utilizado.
 
-![](images/img_1818.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_1818.jpg){.thumbnail}
 
 ## Barra de herramientas
 La barra de herramientas, que aparece en la imagen en un recuadro verde, contiene los iconos necesarios para el funcionamiento básico de la aplicación. Para transferir archivos no se utilizan todos ellos.
@@ -65,17 +65,17 @@ Para establecer la conexión con el servidor remoto, introduzca los siguientes d
 |Contraseña del usuario FTP|Es la contraseña asociada al usuario FTP.<br>Según el cliente FTP utilizado, puede denominarse «contraseña» o «password».|
 |Puerto de conexión|Este campo suele autocompletarse. Si tuviera que rellenarlo:<br>- utilice el puerto 21 para conectarse mediante el protocolo FTP;<br>- utilice el puerto 22 para conectarse mediante el protocolo SFTP (en caso de que esté activado).|
 
-Si no dispone de esta información, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} en la sección **Web** y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento, así como una tabla con los usuarios FTP y SSH creados en el alojamiento.
+Si no dispone de esta información, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} en la sección **Web** y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento, así como una tabla con los usuarios FTP y SSH creados en el alojamiento.
 
 Cuando haya completado todos los datos, haga clic en «Conexión rápida» para establecer la conexión con el servidor.
 
-![](images/img_1819.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_1819.jpg){.thumbnail}
 
 
 ## Conexión SFTP
 El SFTP (de SSH File Transfer Protocol) es una conexión FTP en el puerto 22, por lo que permite una conexión segura.
 
-Este tipo de conexión solo es válido a partir del plan [Profesional](https://www.ovh.es/hosting/).
+Este tipo de conexión solo es válido a partir del plan [Profesional](https://www.ovh.com/world/es/hosting/).
 
 Permite, por ejemplo, cambiar los permisos de archivos que no se pueden ejecutar estando conectado por FTP al puerto 21.
 
@@ -90,9 +90,9 @@ Para establecer la conexión con el servidor remoto por SFTP, introduzca los sig
 
 Haga clic en «Conexión rápida». Se abrirá el cuadro de diálogo de la imagen, en el que deberá confirmar la conexión al servidor.
 
-Como la conexión se realiza con un servidor de OVH, puede marcar la casilla «Confiar siempre en este sitio, añadir su clave a la caché» para que la aplicación no vuelva a preguntarle.
+Como la conexión se realiza con un servidor de OVHcloud, puede marcar la casilla «Confiar siempre en este sitio, añadir su clave a la caché» para que la aplicación no vuelva a preguntarle.
 
-![](images/img_1834.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_1834.jpg){.thumbnail}
 
 
 ## Errores de conexión
@@ -104,14 +104,14 @@ Compruebe sus claves para asegurarse de no haber cometido un error al introducir
 
 En la siguiente guía puede consultar cómo cambiar la contraseña del FTP en los planes de alojamiento compartido: 
 
-- []({legacy}1374)
+- [Cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/)
 
 
 
-![](images/img_1820.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_1820.jpg){.thumbnail}
 En esta imagen, el error se debe a que el nombre del servidor introducido no es correcto.
 
-![](images/img_1824.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_1824.jpg){.thumbnail}
 
 
 ## Transferencia de los archivos
@@ -121,7 +121,7 @@ Preste atención para seleccionar correctamente la carpeta de destino en el recu
 
 A continuación, los archivos se pondrán automáticamente en la cola para subirlos al servidor.
 
-![](images/img_1821.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_1821.jpg){.thumbnail}
 
 
 ## Archivos en cola
@@ -134,7 +134,7 @@ En la interfaz puede ver los archivos en cola:
 
 
 
-![](images/img_1822.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_1822.jpg){.thumbnail}
 
 
 ## Menú contextual del servidor
@@ -153,7 +153,7 @@ Haciendo clic derecho en cualquiera los archivos contenidos en el servidor remot
 
 
 
-![](images/img_1830.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_1830.jpg){.thumbnail}
 
 
 ## Permisos de los archivos y carpetas
@@ -165,7 +165,7 @@ Introduzca los permisos que quiera asignar; el valor CHMOD se actualizará autom
 
 Para las carpetas, marque si lo desea la casilla «Incluir todos los subdirectorios» para editar los permisos de la carpeta, así como de las subcarpetas y archivos que pudiera contener.
 
-![](images/img_1831.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_1831.jpg){.thumbnail}
 
 
 ## Reapertura de un sitio web
@@ -191,7 +191,7 @@ Para comprobar si el sitio se ha reabierto, simplemente pruébelo desde un naveg
 
 Este comando no funciona en SFTP.
 
-![](images/img_1829.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_1829.jpg){.thumbnail}
 Recordamos que para probar que el sitio esté abierto, debe esperar un máximo de 3 horas. Nuestros robots pasan cada 3 horas para comprobar si se han realizado cambios de estado. En función del momento en el que haya realizado la operación, el sitio puede tardar más o menos en volver a visualizarse.
 
 Si ha transcurrido el intervalo de 3 horas y su sitio web sigue sin estar disponible, contacte con el soporte.
@@ -202,7 +202,7 @@ Para los archivos de tipo binario, como los archivos CGI, puede ser interesante 
 
 Para cambiarla, en el menú superior haga clic en «Transferencia» y seleccione «Tipo de transferencia».
 
-![](images/img_1832.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_1832.jpg){.thumbnail}
 
 
 ## Comparación de carpetas
@@ -223,7 +223,7 @@ El significado de los colores utilizados para la comparación es el siguiente:
 
 
 
-![](images/img_1823.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_1823.jpg){.thumbnail}
 
 
 ## Opciones
@@ -233,14 +233,14 @@ Es posible editar los ajustes de reconexión al servidor. Sin embargo, tenga en 
 
 Para cambiar estos ajustes, acceda al menú superior «Edición» y seleccione «Opciones». Las opciones de conexión aparecerán por defecto en primer lugar.
 
-![](images/img_1825.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_1825.jpg){.thumbnail}
 
 ## Transferencias
 Es posible editar los ajustes relativos a las acciones que se ejecutan por defecto al actualizar un archivo existente.
 
 Para cambiar estos ajustes, acceda al menú superior «Edición», seleccione «Opciones» y haga clic en «Transferencias».
 
-![](images/img_1826.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_1826.jpg){.thumbnail}
 
 
 ## Conocer el servidor de conexión
@@ -255,5 +255,5 @@ Para conocer el servidor de conexión:
 
 
 
-![](images/img_2399.jpg){.thumbnail}
+![Filezilla-user-guide](images/img_2399.jpg){.thumbnail}
 
