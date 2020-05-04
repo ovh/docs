@@ -6,7 +6,7 @@ section: 'Configuring the Web Hosting plan'
 order: 2
 ---
 
-**Last updated 21st March 2018**
+**Last updated 5th May 2020**
 
 ## Objective
 
