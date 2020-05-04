@@ -9,7 +9,7 @@ section: 'OVH services and options'
 
 ## Objective
 
-Veeam is a software editor in backup and disater recovery plan (DRP) solutions in virtualized environments. The Veeam Backup Managed is base on the Veeam Availability Suite software stack to provide you a on demand backup solution.
+Veeam is a software editor in backup and disaster recovery plan (DRP) solutions in virtualized environments. The Veeam Backup Managed option is based on the Veeam Availability Suite software stack to provide you with an on demand backup solution.
 
 Backups are performed using a virtual machine (VM) within your [Hosted Private cloud](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/){.external} infrastructure. The backed-up data is outsourced to an independent storage space at OVHcloud. Backups are performed during night, with a retention time depending on the offer level you choose.
 
@@ -28,7 +28,7 @@ Backups are performed using a virtual machine (VM) within your [Hosted Private c
 
 ### Enable Service
 
-The first step is to enable the service from the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external}. To do this, go to the `Hosted Private Cloud`{.action} section of the `Server`{.action} tab. Click the relevant vSphere infrastructure, and then click the data center that you want. Choose the `Backup`{.action} tab.
+The first step is to enable the service from the [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager){.external}. To do this, go to the `Hosted Private Cloud`{.action} section of the `Server`{.action} tab. Click the relevant vSphere infrastructure, and then click the data center that you want. Choose the `Backup`{.action} tab.
 
 ![Enable backup](images/backuppcc_01_fr.png){.thumbnail}
 
@@ -36,11 +36,11 @@ Choose the level of the backup offer and continue by clicking `Choose Offer`{.ac
 
 Validate contracts by clicking `Enable backup`{.action}.
 
-Une notification vous confirme la demande d'activation :
+A notification confirms the activation request:
 
 ![Enable backup](images/backuppcc_02_fr.png){.thumbnail}
 
-Once the option is installed, a confirmation e-mail is sent to you and the activation of the backup will be indicated to you in the client area, with the reminder of the level of the chosen offer.
+Once the option is installed, a confirmation e-mail is sent to you and the activation of the backup will be indicated to you in the OVHcloud control panel, with the reminder of the level of the chosen offer.
 
 ![Enable backup](images/backuppcc_03_fr.png){.thumbnail}
 
@@ -79,7 +79,7 @@ Every day, an email containing the status of all the work performed is sent to t
 
 Select the Vmware data center, then the `Configure`{.action} tab and choose `Backup Management`{.action} from the OVHcloud section of the menu.
 
-From the list, select the VM for which you want to restore a backup (it must have a **backup state** to **Enabled**).
+From the list, select the VM for which you want to restore a backup (its **backup state** must be **Enabled**).
 
 ![Restoring backup](images/restorebackup_01.png){.thumbnail}
 
@@ -126,9 +126,9 @@ Then confirm the deactivation by clicking `OK`{.action}.
 
 > [!warning]
 >
-> Backup can be reactivated at any time from the time the virtual machine is present in the infrastructure.
+> Backups can be reactivated at any time from the moment the virtual machine is present in the infrastructure.
 > 
-> Please note that the backups performed remain available for recovery until the retention period expires.
+> Please note that the performed backups remain available for recovery until the retention period expires.
 >
 
 > [!primary]
