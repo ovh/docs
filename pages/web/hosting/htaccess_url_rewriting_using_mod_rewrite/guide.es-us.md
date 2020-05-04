@@ -1,6 +1,6 @@
 ---
 title: 'Web hosting: .htaccess, reescritura de URL con mod_rewrite'
-excerpt: El mod_rewrite está disponible en todos los planes de OVH (menos en los 20GP).
+excerpt: El mod_rewrite está disponible en todos los planes de OVHcloud (menos en los 20GP).
 id: '1971'
 slug: web_hosting_htaccess_reescritura_de_url_con_mod_rewrite
 legacy_guide_number: g1971
@@ -125,10 +125,4 @@ RewriteRule ^(.*) https://ssl5.ovh.net/~login_ftp/$1 [QSA,L,R=301]
 
 
 ## Importante:
-Para conocer la dirección segura de su plan, consulte nuestra [guía](https://www.ovh.es/g1594.informacion-sobre-los-tipos-de-certificados-ssl-ovh).
-
-
-## 
-Si desea más información sobre el archivo .htaccess, consulte la siguiente guía:
-[]({legacy}1967).
-
+Para conocer la dirección segura de su plan, consulte nuestra [guía](../gestionar-un-certificado-ssl-en-un-alojamiento-web/).
