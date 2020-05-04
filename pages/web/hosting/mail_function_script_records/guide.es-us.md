@@ -1,33 +1,33 @@
 ---
 title: 'Gestionar los mensajes de correo automatizados'
 slug: web_hosting_seguimiento_de_los_mensajes_de_correo_automatizados
-excerpt: 'Cómo realizar el seguimiento y la gestión de los emails automatizados enviados desde un alojamiento web de OVH'
+excerpt: 'Cómo realizar el seguimiento y la gestión de los emails automatizados enviados desde un alojamiento web de OVHcloud'
 section: Diagnóstico
 ---
 
-**Última actualización: 03/07/2018**
+**Última actualización: 04/05/2020**
 
 ## Objetivo
 
 Los mensajes de correo automatizados son emails enviados mediante scripts. Se utilizan, por ejemplo, para que los visitantes de un sitio web puedan enviarle mensajes de correo electrónico a través de un formulario de contacto.
 
-**Esta guía explica cómo gestionar los mensajes de correo automatizados enviados desde un alojamiento web de OVH.**
+**Esta guía explica cómo gestionar los mensajes de correo automatizados enviados desde un alojamiento web de OVHcloud.**
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 > [!primary]
 >
-> Esta guía solo es aplicable a los mensajes de correo electrónico enviados desde los scripts de un alojamiento web de OVH. Si quiere gestionar las direcciones de correo electrónico incluidas en su solución MX Plan o en su [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}, vaya a la sección `Correo electrónico`{.action} del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+> Esta guía solo es aplicable a los mensajes de correo electrónico enviados desde los scripts de un alojamiento web de OVHcloud. Si quiere gestionar las direcciones de correo electrónico incluidas en su solución MX Plan o en su [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}, vaya a la sección `Correo electrónico`{.action} del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 >
 
 ## Procedimiento
 
-El seguimiento y la gestión de los emails automatizados de un alojamiento web de OVH se realizan desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, en la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, haga clic en `Más +`{.action} y seleccione `Scripts de correo electrónico`{.action}.
+El seguimiento y la gestión de los emails automatizados de un alojamiento web de OVH se realizan desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, en la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, haga clic en `Más +`{.action} y seleccione `Scripts de correo electrónico`{.action}.
 
-En la nueva página podrá gestionar los emails automatizados enviados desde el alojamiento web de OVH y realizar un seguimiento de los envíos.
+En la nueva página podrá gestionar los emails automatizados enviados desde el alojamiento web de OVHcloud y realizar un seguimiento de los envíos.
 
 ![Alojamiento](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
@@ -37,11 +37,11 @@ En `Scripts de correo electrónico`{.action} también podrá consultar toda la i
 
 |Campo|Detalles|
 |---|---|
-|Estado del servicio|Muestra el estado actual del servicio que realiza los envíos de mensajes de correo automatizados del alojamiento web. El color verde indica que los envíos se están realizando correctamente, mientras que el color rojo indica que no se están enviando mensajes. En función del estado, las operaciones que podrá realizar sobre los envíos serán diferentes. Para más información, vaya a la sección [Gestionar el envío de mensajes de correo automatizados](https://docs.ovh.com/es/hosting/web_hosting_seguimiento_de_los_mensajes_de_correo_automatizados/#gestionar-el-envio-de-mensajes-de-correo-automatizados){.external}.|
-|Informes de error a|Envía un informe de errores diario a la dirección de correo electrónico que usted indique. Puede cambiar dicha dirección haciendo clic en el botón `Cambiar el destinatario`{.action}. En el informe se indican los mensajes de correo enviados desde el alojamiento web que han vuelto a OVH porque no han podido entregarse. En cualquier momento puede consultar estos informes haciendo clic en el botón `Mensajes en error`{.action} situado a la derecha. |
-|Total de mensajes enviados|Indica el número de mensajes de correo automatizados enviados desde la creación del alojamiento web en OVH.|
+|Estado del servicio|Muestra el estado actual del servicio que realiza los envíos de mensajes de correo automatizados del alojamiento web. El color verde indica que los envíos se están realizando correctamente, mientras que el color rojo indica que no se están enviando mensajes. En función del estado, las operaciones que podrá realizar sobre los envíos serán diferentes. Para más información, vaya a la sección [Gestionar el envío de mensajes de correo automatizados](./#gestionar-el-envio-de-mensajes-de-correo-automatizados){.external}.|
+|Informes de error a|Envía un informe de errores diario a la dirección de correo electrónico que usted indique. Puede cambiar dicha dirección haciendo clic en el botón `Cambiar el destinatario`{.action}. En el informe se indican los mensajes de correo enviados desde el alojamiento web que han vuelto a OVHcloud porque no han podido entregarse. En cualquier momento puede consultar estos informes haciendo clic en el botón `Mensajes en error`{.action} situado a la derecha. |
+|Total de mensajes enviados|Indica el número de mensajes de correo automatizados enviados desde la creación del alojamiento web en OVHcloud.|
 |Mensajes enviados hoy|Indica el número de mensajes de correo automatizados enviados ese día.|
-|Total de mensajes en error|Indica el número total de mensajes de correo automatizados enviados desde la creación del alojamiento web que han vuelto a OVH porque no han podido entregarse.|
+|Total de mensajes en error|Indica el número total de mensajes de correo automatizados enviados desde la creación del alojamiento web que han vuelto a OVHcloud porque no han podido entregarse.|
 |Historial de mensajes enviados|Muestra una gráfica con los mensajes enviados desde el alojamiento web en los días previos.|
 
 > [!primary]
@@ -75,4 +75,4 @@ Para realizar cualquiera de las acciones anteriores, haga clic en el botón corr
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
