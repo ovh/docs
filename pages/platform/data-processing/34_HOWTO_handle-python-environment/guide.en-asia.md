@@ -6,7 +6,7 @@ section: How to
 order: 4
 ---
 
-**Last updated 17<sup>th</sup> April, 2020**
+**Last updated 04<sup>th</sup> May, 2020**
 
 ## Objective
 This guide helps you create your python environment with Conda. Then we will see how to export it so you can use it to submit your Python job on OVHcloud Data Processing platform.
@@ -41,6 +41,27 @@ $ conda env export --from-history -f environment.yml
 It's going to generate a portable environment file. You will need this file to run your code on OVHcloud Data Processing. To learn more about environment file, have a look [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment).
 
 You can now move on to the next step and [submit a Python job](../submit-python).
+
+## Generic environment file
+If you want to quickly test OVHcloud Data Processing with a basic job, you can use this environment file it includes commonly used packages:
+```yml
+name: datascience-environment
+channels:
+  - defaults
+dependencies:
+  - python=3.7.6
+  - numpy
+  - requests
+  - pandas
+  - boto3
+  - pyspark
+  - beautifulsoup4
+  - sqlalchemy
+  - pillow
+  - scikit-learn
+```
+
+Do not hesitate to reuse this environment file. Also, feel free to add or remove packages to better fit your needs.
 
 ## Go further
 
