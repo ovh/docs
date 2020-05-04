@@ -8,7 +8,7 @@ section: OVH Features
 
 ## Objective
 
-The purpose of this guide is to explain the user rights management on OVH's Private Cloud offer.
+The purpose of this guide is to explain the user rights management on OVHcloud Private Cloud offer.
 
 **Learn how to manage user rights management on your infrastructure.**
 
@@ -34,7 +34,7 @@ From this menu, you can change the rights of your vSphere users per Datacenter :
 | vSphere access | None / Read-only / Read & Write | Global user rights on vSphere |
 | Access to the VM Network | None / Read-only / Provider | Management rights over the public network section (a.k.a VM Network in the vSphere interface) |
 | Access to the V(X)LANs | None / Read-only / Provider / Administrator | Management rights over the private network section (VxLan et VLAN) |
-| Add resources | Yes / No | Right to add additional resources through the OVH plugin in the vSphere client (Host, Datastore, Veeam Backup) |
+| Add resources | Yes / No | Right to add additional resources through the OVHcloud plugin in the vSphere client (Host, Datastore, Veeam Backup) |
 
 ![Modify rights](images/user_rights_3.png){.thumbnail}
 
