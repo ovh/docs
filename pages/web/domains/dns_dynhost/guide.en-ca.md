@@ -1,37 +1,37 @@
 ---
 title: 'Configuring a dynamic DNS for a domain name'
-excerpt: 'Find out how to configure a dynamic DNS record (DynHost) for your OVH domain name'
+excerpt: 'Find out how to configure a dynamic DNS record (DynHost) for your OVHcloud domain name'
 slug: hosting_dynhost
 section: 'DNS and DNS zone'
 order: 6
 ---
 
-**Last updated 19th July 2018**
+**Last updated 5th May 2020**
 
 ## Objective
 
 A Domain Name System (DNS) zone is a domain name’s config file. It is composed of technical information, otherwise called ‘records’. For a number of applications, such as hosting your own gaming server without a fixed IP address, dynamically updating a DNS record may be necessary to avoid any prolonged service interruptions. 
 
-**Find out how to configure a dynamic DNS record (DynHost) for your OVH domain name.**
+**Find out how to configure a dynamic DNS record (DynHost) for your OVHcloud domain name.**
 
 ## Requirements
 
-- permission to manage the domain name from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-- the OVH domain name configuration (on OVH's DNS servers)
-- The DynHost record you are about to create must not already exist as an A record in your domain name’s OVH DNS zone.
+- permission to manage the domain name from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- the OVHcloud domain name configuration (on OVHcloud's DNS servers)
+- The DynHost record you are about to create must not already exist as an A record in your domain name’s OVHcloud DNS zone.
 
 > [!warning]
 >
-> - If your domain name does not use OVH's DNS servers, you will need to contact the service provider managing its configuration in order to find out what approach you need to take.
+> - If your domain name does not use OVHcloud's DNS servers, you will need to contact the service provider managing its configuration in order to find out what approach you need to take.
 > 
-> - If your domain name is registered with OVH, you can check if the domain name is using our configuration. To do this, go to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the domain concerned, and go to the `DNS servers`{.action} tab.
+> - If your domain name is registered with OVHcloud, you can check if the domain name is using our configuration. To do this, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the domain concerned, and go to the `DNS servers`{.action} tab.
 >
 
 ## Instructions
 
 ### Step 1: Create a DynHost username.
 
-The first step involves creating a DynHost username. Once you do so, you can then update the dynamic DNS record you would like to create. First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Next, go to the `DynHost`{.action} tab.
+The first step involves creating a DynHost username. Once you do so, you can then update the dynamic DNS record you would like to create. First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Next, go to the `DynHost`{.action} tab.
 
 ![dynhost](images/use-dynhost-step1.png){.thumbnail}
 
@@ -49,7 +49,7 @@ Once you have filled in all of the required fields, click `Confirm`{.action}. Th
 
 ### Step 2: Create the dynamic DNS record (DynHost).
 
-This second step involves creating the DNS record that must be updated dynamically. As a reminder, it must not already exist in your domain name’s OVH DNS zone as an A record. For advice on how to check this and delete the A record if necessary, please read our guide to [Editing an OVH DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
+This second step involves creating the DNS record that must be updated dynamically. As a reminder, it must not already exist in your domain name’s OVHcloud DNS zone as an A record. For advice on how to check this and delete the A record if necessary, please read our guide to [Editing an OVHcloud DNS zone](../web_hosting_how_to_edit_my_dns_zone/).
 
 Once you are ready to create the DynHost record, go to the `DynHost`{.action} tab, then click `Add a DynHost`{.action}. In the pop-up window, enter the following information:
 
@@ -82,7 +82,7 @@ http://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
 |$HOSTNAME|The subdomain you are modifying the DNS configuration for.|
 |$IP|The new target IP address.|
 
-To check that the target IP address has been updated, go to the `DynHost`{.action} tab in the OVH Control Panel. Check the IP address that appears in the `Target`{.action} column.
+To check that the target IP address has been updated, go to the `DynHost`{.action} tab in the OVHcloud Control Panel. Check the IP address that appears in the `Target`{.action} column.
 
 ![dynhost](images/use-dynhost-step4.png){.thumbnail}
 
