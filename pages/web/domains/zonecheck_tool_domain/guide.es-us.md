@@ -19,7 +19,7 @@ Para ello, acceda a la web de [Zonemaster](https://zonemaster.net/), haga clic e
 
 
 
-![](images/img_3213.jpg){.thumbnail}
+![zonecheck tool domain](images/img_3213.jpg){.thumbnail}
 
 
 ## Resultado
@@ -33,11 +33,11 @@ Unos instantes después de haber iniciado la prueba, se mostrará el resultado:
 Atención: Si aparecen elementos en rojo, no actualice los servidores DNS a menos que esté seguro de que es lo que desea, ya que la operación podría bloquearse y los servicios asociados a los dominios podrían dejar de funcionar.
 
 
-![](images/img_3211.jpg){.thumbnail}
+![zonecheck tool domain](images/img_3211.jpg){.thumbnail}
 
 
 ## Información útil
 Si tiene alguna duda sobre Zonemaster y sus funcionalidades, consulte el apartado «FAQ» de la herramienta.
 
-![](images/img_3212.jpg){.thumbnail}
+![zonecheck tool domain](images/img_3212.jpg){.thumbnail}
 
