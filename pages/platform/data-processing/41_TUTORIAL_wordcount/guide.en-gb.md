@@ -1,7 +1,7 @@
 ---
 title: Python : Word count with Apache Spark
 slug: wordcount-spark
-excerpt: Couting occurences of words in a file is a basic example about how using Apache Spark. Let's find how !
+excerpt: Couting occurences of words in a file is a basic example about how using Apache Spark. Let's find out how !
 section: Tutorials
 order: 2
 ---
@@ -21,15 +21,15 @@ At the end of the tutorial, you will succeed to read CSV file from OVHcloud Obje
 
 
 ## Requirements 
-- Access to [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Access to the [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 - An OVHcloud account 
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details.)
-- Data Processing activated (see [How to activate the Data Processing](../30_HOWTO_activate_project){.external} for details.)
+- Data Processing activated (see [How to activate the Data Processing](../activation){.external} for details.)
 
 
 ## Step 1: Download dataset
 
-For this tutorial we will download a CSV file who includes :
+For this tutorial we will download a CSV file which includes :
 - Rank, Year, Artist, Song Title, Lyrics of TOP 100 billboard songs
 - From 1965 to 2015
 
@@ -80,7 +80,7 @@ print('############ CSV extract:')
 data.show()
 ```
 
-This first piece of code creates a new Apache Spark session, then read and load a CSV file into a dataframe called "data".
+This first piece of code creates a new Apache Spark session, then reads and loads a CSV file into a dataframe called "data".
 
 
 When executed, inside our logs we will see the content of the dataframe thanks to the data.show() function:
@@ -180,7 +180,7 @@ print('############ Data Cleaning extract:')
 data_clean.show()
 
 
-# Final step : like on the beginning, we can group again words and sort them by the most used
+# Final step : like in the beginning, we can group again words and sort them by the most used
 result = data_clean.withColumn('word', f.explode(f.col('words_clean'))) \
   .groupBy('word') \
   .count().sort('count', ascending=False) \
@@ -221,8 +221,8 @@ The result is much better:
     only showing top 20 rows
 
 
-Here is the main finding: if we analyse the lyrics of most famous songs during the last 50 years, the word "love" comes in first position with 15283 occurences.
-Followred by "i'm", "don't", "know", and so on.
+Here is the main finding: if we analyze the lyrics of most famous songs during the last 50 years, the word "love" comes in first position with 15283 occurences.
+Followed by "i'm", "don't", "know", and so on.
 
 Our code is now complete, let's now use OVHcloud Data Processing to benefit from an online Apache Spark cluster, with automation and scalability.
 
@@ -251,19 +251,19 @@ dependencies:
 
 You are now ready to submit this job.
 
-A detailed version about how to deploy a job in Python is explained on the guide [How to submit a job in Python](../31_HOWTO_submit-python-ui){.external}.
+A detailed version about how to deploy a job in Python is explained on the guide [How to submit a job in Python](../submit-python){.external}.
 
 Briefly, inside OVHcloud Data Processing control panel, click on "start a new job" then:
 
 - Put your CSV file, your Python Script and environment.yml file in the same OVHcloud Object storage container (public or private) at the root level
 - Select `Data Processing`{.action} from the left panel 
 - Select `Submit a new job`{.action}
-- Select Apache Spark, chose a region
+- Select Apache Spark, choose a region
 - Configure your Spark cluster (4vCores - 15GB memory for driver & executor template, executor count set to 1 recommended)
 - Name your job, select your object storage container, find your Python file (the environement file is detected automatically within your job's container), do not set additional arguments
 - Submit your job (make sure that your code stops your SparkSession, otherwise it will be kept running)
 
-When the job is completed, you can access his log file, either in the object container 'odp-files' or in the dashboard of your job. Below are two extracts of this log.
+When the job is completed, you can access its log file, either in the object container 'odp-files' or in the dashboard of your job. Below are two extracts of this log.
 
 Here is an extract :
 
@@ -275,7 +275,7 @@ As you can see, all our the Python's print functions are displayed in the logs. 
 ## Go further
 
 Counting word frequencies on a 8MB file as shown here does not require lot of power, and could have been done on a single laptop.
-But as said previously we can imagine much more useful use-cases, such as analyzing product review sfor an e-commerce website, dig into social networks messages, analyzing most recurring patterns in support tickets and so on.
+But as said previously we can imagine much more useful use-cases, such as analyzing product reviews for an e-commerce website, dig into social networks messages, analyzing most recurring patterns in support tickets and so on.
 
 Usually it will require more compute power due to the amount of data to manipulate.
 That's where OVHcloud Data Processing will become helpful, bringing automation and scalability.
