@@ -6,10 +6,11 @@ excerpt: 'Retrouver ici comment récupérer un entête e-mail.'
 section: Diagnostic
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 Chaque e-mail reçu possède des entêtes (les headers) qui permettent de connaître les serveurs par lesquels votre e-mail a transité.
 
-Ces entêtes permettent à OVH de diagnostiquer des lenteurs, des mails en erreur ou non délivrés. Ils vous seront généralement demandés par le service technique afin de mieux cibler votre souci.
-
+Ces entêtes permettent à OVHcloud de diagnostiquer des lenteurs, des mails en erreur ou non délivrés. Ils vous seront généralement demandés par le service technique afin de mieux cibler votre souci.
 
 ## Logiciel de messagerie Windows
 
