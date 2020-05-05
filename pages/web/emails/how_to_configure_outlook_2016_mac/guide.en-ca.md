@@ -1,28 +1,28 @@
 ---
 title: 'Configuring your email address in Outlook 2016 for Mac'
 slug: configuration-outlook-2016-mac
-excerpt: 'Find out how to configure your MX Plan email address in Outlook 2016 for Mac'
+excerpt: 'Find out how to configure your email address in Outlook 2016 for Mac'
 section: 'Configure on computer'
 order: 2
 ---
 
-**Last updated 31st May 2018**
+**Last updated 5th May 2020**
 
 ## Objective
 
-You can configure MX Plan email addresses on email clients, if they are compatible. This means that you can send and receive messages from the application of your choice.
+You can configure email addresses on email clients, if they are compatible. This means that you can send and receive messages from the application of your choice.
 
-**Find out how to configure your MX Plan email address in Outlook 2016 for Mac.**
+**Find out how to configure your email address in Outlook 2016 for Mac.**
 
 ## Requirements
 
-- You need to have an MX Plan email address (included in the MX Plan solution, and in [OVH Web Hosting plans](https://www.ovh.co.uk/web-hosting/){.external}).
+- You need to have an MX Plan email address, available as part of our [Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/).
 - You must have Microsoft Outlook installed on your Mac.
 - You must have the login details for the email address you want to set up.
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Windows? Read our guide: [Configuring your email address in Outlook 2016 for Windows](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016/){.external}.
+> Are you using Outlook 2016 for Windows? Read our guide: [Configuring your email address in Outlook 2016 for Windows](../configuration-outlook-2016/).
 >
 
 ## Instructions
@@ -56,7 +56,7 @@ To check that the account has been correctly configured, you can send a test ema
 
 ![mxplan](images/configuration-outlook-2016-mac-step2.png){.thumbnail}
 
-If you need to enter any settings manually in your account preferences, the technical settings you will need to use with our MX Plan solution are listed below:
+If you need to enter any settings manually in your account preferences, the technical settings you will need to use are listed below:
 
 - **IMAP configuration**
 
@@ -76,12 +76,12 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive messages.
 
-OVH also offers a web application that you can use to consult your email from a web browser. You can access this application at <https://www.ovh.co.uk/mail/>. Just log in using your email login details.
+OVHcloud also offers a web application that you can use to consult your email from a web browser. You can access this application at <https://www.ovh.com/ca/en/mail>. Just log in using your email login details.
 
 ## Go further
 
-[Configuring your Email Pro account in Outlook 2016 for Mac](https://docs.ovh.com/gb/en/emails-pro/configuration-outlook-2016-mac/){.external}.
+[Configuring your Email Pro account in Outlook 2016 for Mac](../../emails-pro/configuration-outlook-2016-mac/)
 
-[Configuring your Exchange account in Outlook 2016 for Mac](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/configuration-outlook-2016-mac/){.external}.
+[Configuring your Exchange account in Outlook 2016 for Mac](../../microsoft-collaborative-solutions/configuration-outlook-2016-mac/)
 
 Join our community of users on <https://community.ovh.com/en/>.
