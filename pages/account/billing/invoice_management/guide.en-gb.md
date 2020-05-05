@@ -2,7 +2,7 @@
 title: 'Managing OVHcloud bills'
 slug: manage-ovh-bills
 excerpt: 'Find out how to manage your bills and the payments associated with them'
-section: 'Managing orders, bills and services'
+section: Billing
 ---
 
 **Last updated 15th April 2020**
@@ -15,12 +15,12 @@ OVHcloud provides you with a space where you can view, manage and pay your vario
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to your OVHcloud contracts, which you can access from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to `Products and services`{.action} then `Contracts`{.action}.
+> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to your OVHcloud contracts, which you can access from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) by going to `Products and services`{.action} then `Contracts`{.action}.
 >
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 - access as a billing contact for your service (you can read more about the different contact types in our guide to [Managing contacts for your services](https://docs.ovh.com/gb/en/customer/managing-contacts/){.external})
 
 
