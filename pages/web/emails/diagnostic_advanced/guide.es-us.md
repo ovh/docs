@@ -1,7 +1,7 @@
 ---
-title: Uso avanzado del correo de OVH
-excerpt: Uso avanzado del correo de OVH
-slug: uso_avanzado_del_correo_de_ovh
+title: Uso avanzado del correo de OVHcloud
+excerpt: Uso avanzado del correo de OVHcloud
+slug: uso_avanzado_del_correo_de_ovhcloud
 legacy_guide_number: g2117
 section: Uso avanzado
 ---
@@ -14,16 +14,16 @@ Si los mensajes no se envían o reciben correctamente, compruebe los siguientes 
 Para que sus mensajes funcionen correctamente, debe tener un servicio de correo activo. Si utiliza las cuentas incluidas con un plan de hosting, compruebe que este no haya expirado. Puede consultar esta información directamente en el área de cliente. Igualmente, su dominio también debe estar activo.
 
 ¿El correo funciona desde el webmail?
-Para asegurarse de que el problema no se deba a un error de configuración, realice una prueba de envío y recepción directamente desde el webmail de OVH. Si todo funciona correctamente, compruebe la configuración de su cliente de correo sirviéndose de las guías que ponemos a su disposición.
+Para asegurarse de que el problema no se deba a un error de configuración, realice una prueba de envío y recepción directamente desde el webmail de OVHcloud. Si todo funciona correctamente, compruebe la configuración de su cliente de correo sirviéndose de las guías que ponemos a su disposición.
 
 ¿No puede conectarse al webmail?
 Asegúrese de estar utilizando la contraseña correcta. Si lo necesita, puede cambiarla. Para ello, consulte el apartado correspondiente de esta guía.
 
 ¿Se está realizando una intervención en el servicio?
-Puede consultar las intervenciones abiertas en la página [Status OVH](http://status.ovh.es/).
+Puede consultar las intervenciones abiertas en la página [Status OVHcloud](http://travaux.ovh.net/).
 
 ¿El dominio apunta correctamente al servidor de correo?
-Compruebe que su dominio utilice los servidores de correo (registro MX) de su servicio de correo en OVH. Si desea más información, consulte nuestra [guía](https://docs.ovh.com/es/domains/anadir-registro-mx-configuracion-dominio/).
+Compruebe que su dominio utilice los servidores de correo (registro MX) de su servicio de correo en OVHcloud. Si desea más información, consulte nuestra [guía](https://docs.ovh.com/us/es/domains/anadir-registro-mx-configuracion-dominio/).
 
 ## Códigos de respuesta de un servidor SMTP
 
