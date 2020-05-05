@@ -10,38 +10,35 @@ section: Gestión de la cuenta de correo
 ## Requisitos
 
 - Tener acceso al área de cliente. 
-- Disponer de una solución OVH que permita crear mensajes de correo. 
-- Utilizar los servidores MX* de OVH. 
-
-
-* Para más información sobre los servidores MX, consulte la guía: []({legacy}2003)
+- Disponer de una solución OVHcloud que permita crear mensajes de correo. 
+- Utilizar los servidores MX de OVHcloud. 
 
 
 ## Conexión al área de cliente
 
-- Conéctese al [área de cliente](https://www.ovh.com/manager/web) e introduzca su ID de cliente y contraseña.
+- Conéctese al [área de cliente](https://www.ovh.com/auth/?action=gotomanager) e introduzca su ID de cliente y contraseña.
 
 
 
-![](images/img_3592.jpg){.thumbnail}
+![contestador](images/img_3592.jpg){.thumbnail}
 
 
 ## Selección del dominio asociado a la solución de correo
 Acceda a la sección «Correo electrónico», tal y como se indica en la captura de pantalla, y seleccione su dominio.
 
-![](images/img_3600.jpg){.thumbnail}
+![contestador](images/img_3600.jpg){.thumbnail}
 
 
 ## Correo electrónico
 Para gestionar sus contestadores, acceda a la pestaña «Correo electrónico» y haga clic en «Gestión de los contestadores».
 
-![](images/img_3597.jpg){.thumbnail}
+![contestador](images/img_3597.jpg){.thumbnail}
 
 
 ## Contestador
 A continuación, haga clic en «Añadir un contestador».
 
-![](images/img_3598.jpg){.thumbnail}
+![contestador](images/img_3598.jpg){.thumbnail}
 
 
 ## Configuración del contestador
@@ -70,14 +67,14 @@ Debe introducir los detalles del contestador:
 
 
 
-![](images/img_3589.jpg){.thumbnail}
+![contestador](images/img_3589.jpg){.thumbnail}
 Si el contestador se ha creado correctamente, aparecerá el siguiente mensaje de confirmación:
 
-![](images/img_3590.jpg){.thumbnail}
+![contestador](images/img_3590.jpg){.thumbnail}
 
 
 ## Visualización del contestador
 El contestador aparecerá en la lista. Haga clic en el icono con forma de engranaje para modificarlo o eliminarlo.
 
-![](images/img_3599.jpg){.thumbnail}
+![contestador](images/img_3599.jpg){.thumbnail}
 
