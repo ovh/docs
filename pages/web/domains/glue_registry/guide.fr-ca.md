@@ -38,7 +38,7 @@ Dans la fenêtre qui apparaît, complétez les informations demandées :
 |Informations|Détail|  
 |---|---|
 |Nom du hôte|Personnalisez le nom d'hôte que vous souhaitez utiliser en tant que serveur DNS personnalisé.|
-|IP(s) de destination|Indiquez la ou les adresses IP auxquelles le nom d'hôte doit être relié. Il s'agit en définitive de l'adresse IP du serveur DNS actuellement utilisé par votre nom de domaine. Si celui-ci utilise les serveurs DNS d'OVHcloud et que vous n'en connaissez pas l'adresse IP correspondante, utilisez notre outil « [Dig](https://www.ovh.com/ca/fr/support/outils/dig_domain.pl){.external} » afin de la récupérer. Elle apparaîtra dans la partie `ANSWER SECTION` à côté du « A ».|
+|IP(s) de destination|Indiquez la ou les adresses IP auxquelles le nom d'hôte doit être relié. Il s'agit en définitive de l'adresse IP du serveur DNS actuellement utilisé par votre nom de domaine.|
 
 Une fois les informations complétées, cliquez sur le bouton `Ajouter`{.action}, prenez connaissance des informations affichées, puis cliquez sur `Valider`{.action}. Répétez cette manipulation autant de fois que nécessaire, selon le nombre de serveurs DNS utilisés par votre nom de domaine.
 
