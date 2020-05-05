@@ -1,17 +1,18 @@
 ---
-title: Transférer un nom de domaine .co.uk vers OVH
+title: Transférer un nom de domaine .co.uk vers OVHcloud
 legacy_guide_number: 2026
 slug: transferer-domaine-couk
-excerpt: Vous trouverez dans ce guide differentes informations concernant le rapatriement d’un nom de domaine ayant l’extension .co.uk ou assimilees vers OVH.
+excerpt: Vous trouverez dans ce guide differentes informations concernant le rapatriement d’un nom de domaine ayant l’extension .co.uk ou assimilees vers OVHcloud.
 section: Transfert
 order: 3
 ---
 
+**Dernière mise à jour le 05/05/2020**
 
 ## Généralités
 
 ### Prérequis
-Pour pouvoir rapatrier un nom de domaine .co.uk ou sassimilés vers OVH, assurez-vous qu'il respecte les prérequis suivants :
+Pour pouvoir rapatrier un nom de domaine .co.uk ou sassimilés vers OVHcloud, assurez-vous qu'il respecte les prérequis suivants :
 
 - Votre domaine ne doit pas être en période de rédemption ou de suppression. *
 - Le domaine n'est pas bloqué chez votre registrar. *
@@ -35,7 +36,7 @@ Pour pouvoir rapatrier un nom de domaine .co.uk ou sassimilés vers OVH, assurez
 ## Procedure de transfert
 
 ### Étape 1 &#58; Modification du TAG de votre domaine
-Pour pouvoir transférer votre domaine chez OVH, il n'est pas nécessaire de créer un bon de commande, car le transfert est gratuit et se gère par un système de TAG. il faut tout d'abord indiquer le TAG OVH chez votre registrar actuel. Le TAG OVH est "OVH-FR" La liste des TAGS des différents registrars est disponible sur le site officiel du registre [Nominet](http://www.nominet.uk/registrar-list){.external}.
+Pour pouvoir transférer votre domaine chez OVHcloud, il n'est pas nécessaire de créer un bon de commande, car le transfert est gratuit et se gère par un système de TAG. il faut tout d'abord indiquer le TAG OVHcloud chez votre registrar actuel. Le TAG OVHcloud est "OVH-FR" La liste des TAGS des différents registrars est disponible sur le site officiel du registre [Nominet](http://www.nominet.uk/registrar-list){.external}.
 
 
 
@@ -49,8 +50,8 @@ Pour pouvoir transférer votre domaine chez OVH, il n'est pas nécessaire de cr�
 > 
 
 
-### Étape 2 &#58; Transfert du domaine chez OVH
-Une fois que vous aurez modifié le TAG, le domaine sera transféré automatiquement chez OVH sous quelques heures.
+### Étape 2 &#58; Transfert du domaine chez OVHcloud
+Une fois que vous aurez modifié le TAG, le domaine sera transféré automatiquement chez OVHcloud sous quelques heures.
 
 
 ### Étape 3 &#58; Validation des contacts
