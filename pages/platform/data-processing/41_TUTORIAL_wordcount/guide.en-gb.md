@@ -12,7 +12,7 @@ order: 2
 This guide  gives you a basic example about using Apache Spark and OVHcloud Data Processing.
 We will first read data from a CSV file, then count the frequence of each word in this particular file.
 
-Here we will use as an example a dataset of lyrics from billboard songs, and find the most common words.
+Here we will use as an example a dataset of lyrics from billboard songs, and find the most common words used over time.
 
 Apart being fun here, word count is really helpful when you want to analyze products reviews, support tickets, most researched words, and so on.
 You can easily make statistics for yourself or users. Famous social networks such as Twitter also analyze the trending topics by counting frequencies of words.
@@ -44,7 +44,14 @@ As you can see in the graph we can find surprising results. She wrote that "Aver
 Let's go back to the tutorial. Click on the CSV file, then download "billboard_lyrics_1964-2015.csv" on your computer.
 
 
-## Step 2 : Write a wordcount function in Python with Apache Spark
+## Step 2 : Write a wordcount function locally in Python with Apache Spark
+
+> [!primary]
+>
+> You can download Python and Environment files generated here on [official OVHcloud Github repository](https://github.com/ovh/data-processing-samples){.external} 
+> We recommend the use of Conda as a preferred Python environment.
+> Also, if you want to execute this code on your computer, it will require Apache Spark up and running, locally.
+>
 
 Apache Spark comes with handy functions to read various kind of data sources but also powerful ones to analyze data.
 
@@ -76,7 +83,8 @@ data.show()
 
 This first piece of code creates a new Apache Spark session, then read and load a CSV file into a dataframe called "data".
 
-Inside our logs, we will see the content of the dataframe thanks to the data.show() function:
+
+When executed, inside our logs we will see the content of the dataframe thanks to the data.show() function:
 
     +----+--------------------+--------------------+----+--------------------+------+
     |Rank|                Song|              Artist|Year|              Lyrics|Source|
@@ -105,7 +113,7 @@ Inside our logs, we will see the content of the dataframe thanks to the data.sho
     only showing top 20 rows
     
 
-Now, we can play with this dataframe. Let's explode the strings in the "Lyrics" column and count the words frequencies:
+Now, we can play with this dataframe! Let's explode the strings of the "Lyrics" column and count the words frequencies:
 
 ```python
 # Count and group word frequencies on the column Lyrics, when splitted by space comma
@@ -115,6 +123,8 @@ data.withColumn('word', f.explode(f.split(f.col('Lyrics'), ' '))) \
   .sort('count', ascending=False)
   .show()
 ```
+
+The explode() function will take the data inside the Lyrics column, and separate all the data found based on the separator "whitespace character".
 
 Here is the result shown in the logs:
 
@@ -212,7 +222,10 @@ The result is much better:
     only showing top 20 rows
 
 
-Our code is now complete, let's use OVHcloud Data Processing to benefit from automation and scalbility.
+Here is the main finding: if we analyse the lyrics of most famous songs during the last 50 years, the word "love" comes in first position with 15283 occurences.
+Followred by "i'm", "don't", "know", and so on.
+
+Our code is now complete, let's now use OVHcloud Data Processing to benefit from an online Apache Spark cluster, with automation and scalability.
 
 
 
@@ -232,7 +245,6 @@ channels:
 dependencies:
   - python=3.7.6
   - pyspark
-  - numpy
 ```
 
 
