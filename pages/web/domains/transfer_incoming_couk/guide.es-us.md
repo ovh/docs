@@ -8,7 +8,7 @@ section: Operaciones en los dominios
 
 
 ## Requisitos
-Para transferir un dominio con la extensión .CO.UK o similar a OVH, asegúrese de que cumple con los siguientes requisitos obligatorios: 
+Para transferir un dominio con la extensión .CO.UK o similar a OVHcloud, asegúrese de que cumple con los siguientes requisitos obligatorios: 
 
 
 - El dominio no debe estar en periodo de redención o de eliminación. 
@@ -18,7 +18,7 @@ Para transferir un dominio con la extensión .CO.UK o similar a OVH, asegúrese 
 
 Si no sabe o no recuerda cuál es su actual agente registrador, consulte el [Whois](https://www.ovh.es/soporte/herramientas/check_whois.pl) del dominio.
 
-![](images/img_3485.jpg){.thumbnail}
+![transfer-couk](images/img_3485.jpg){.thumbnail}
 
 
 ## Extensiones afectadas
@@ -34,10 +34,10 @@ Si no sabe o no recuerda cuál es su actual agente registrador, consulte el [Who
 
 
 ## 1. Modificación del TAG de su dominio
-Para poder transferir su dominio a OVH, no necesita generar ninguna orden de pedido, ya que la transferencia es gratis y se gestiona mediante un sistema de TAG. 
+Para poder transferir su dominio a OVHcloud, no necesita generar ninguna orden de pedido, ya que la transferencia es gratis y se gestiona mediante un sistema de TAG. 
 
 
-- Indique, en primer lugar, el TAG de OVH en su agente registrador actual. El TAG de OVH es «OVH-FR». 
+- Indique, en primer lugar, el TAG de OVHcloud en su agente registrador actual. El TAG de OVHcloud es «OVH-FR». 
 
 
 Puede acceder a la lista de los diferentes agentes registradores en la página oficial del Registro [Nominet](http://www.nominet.uk/registrar-list).
@@ -48,8 +48,8 @@ Acceda a la siguiente página del Registro: [Manage your domain - Change registr
 Atención: Nominet le aplicará la tarifa correspondiente por realizar esta operación.
 
 
-## 2. Transferencia del dominio a OVH
-Una vez modificado el TAG, el dominio se transferirá automáticamente a OVH en las próximas horas.
+## 2. Transferencia del dominio a OVHcloud
+Una vez modificado el TAG, el dominio se transferirá automáticamente a OVHcloud en las próximas horas.
 
 
 ## 3. Validación de los contactos
@@ -88,5 +88,5 @@ Si acepta el correo electrónico que recibe el propietario, la transferencia se 
 
 
 ## Renovación del dominio tras una transferencia
-La transferencia es una operación gratuita. Así pues, la fecha de caducidad del dominio tras su transferencia será la misma que antes de la transferencia. Para renovar su dominio, acceda a [www.ovh.es](https://www.ovh.es).
+La transferencia es una operación gratuita. Así pues, la fecha de caducidad del dominio tras su transferencia será la misma que antes de la transferencia.
 
