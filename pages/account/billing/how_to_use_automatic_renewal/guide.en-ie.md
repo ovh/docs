@@ -1,8 +1,8 @@
 ---
-title: 'Managing renewal for your services'
+title: 'Managing renewal for OVHcloud services'
 slug: how-to-use-automatic-renewal-at-ovh
-excerpt: 'Find out how to manage automatic renewal for OVHcloud services via the OVHcloud Control Panel'
-section: Billing
+excerpt: 'Find out how to manage automatic renewal for your services via the OVHcloud Control Panel'
+section: 'Managing the renewal of services'
 ---
 
 **Last updated 10th April 2020**
@@ -33,7 +33,7 @@ You can also set certain products (domains, hosting plans, VPS, dedicated server
 
 We recommend reading the following guides, and you can focus on the operations you wish to carry out. 
 
-- [ View the status of your services. ](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#display-the-renewal-statuses-for-your-services){.external} This guide will help you check if your services are renewed automatically. You can also check their renewal and expiry dates.
+- [View the status of your services. ](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#display-the-renewal-statuses-for-your-services){.external} This guide will help you check if your services are renewed automatically. You can also check their renewal and expiry dates.
 
 - [Manage renewal for your services.](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-at-ovhcloud){.external} This guide will help you enable or disable automatic renewal, change the payment frequency for a service, and pay for renewals before their expiry date.
 

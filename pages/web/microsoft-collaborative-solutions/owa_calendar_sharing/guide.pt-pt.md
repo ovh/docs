@@ -1,50 +1,100 @@
 ---
-title: 'Exchange 2016: partilhar um calendário através do webmail OWA'
-excerpt: ''
+título: 'Partilha de calendários em OWA'
+excerto: 'Saiba como partilhar calendários no Exchange'
 slug: exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa
-legacy_guide_number: g1923
+secção: 'Outlook Web Application (OWA)'
+order: 4
 ---
 
+**Última atualização: 30/04/2020**
 
-## Autorizações de partilha de Calendário, Etapa 1
-Esta partilha será realiada a partir da conta: <ovhguide@support-exchange.eu> para a conta <ovhguide2@support-exchange.eu> .
-Selecione o menu azul no canto superior esquerdo e depois "Calendário".
+## Sumário
 
-![](images/img_2950.jpg){.thumbnail}
-Uma vez nesta interface, no menu da esquerda, selecione através de um clique com o botão do lado direito do rato o calendário principal.
-Trata-se, no nosso exemplo, do calendário com o ícone azul.
+Esta funcionalidade do Exchange permite que outras pessoas tenham acesso aos seus calendários.
 
-Clique, de seguida em "partilhar o calendário"
-
-![](images/img_2951.jpg){.thumbnail}
+**Este guia explica como partilhar e obter calendários através do Outlook Web App (OWA).**
 
 
-## Autorizações de partilha de calendário, Etapa 2
-Em "Partilhar com:" introduza o colaborador com o qual deseja iniciar a partilha do seu calendário. Esse colaborador deve obrigatoriamente ter uma conta Exchange no mesmo domínio.
+## Requisitos
 
-Uma vez adicionado o utilizador, poderá escolher as permissões que lhe atribuirá.
-
-Para fazer o seu pedido de partilha de calendário, basta clicar no botão "Enviar"
-
-![](images/img_2966.jpg){.thumbnail}
+- Dispor de uma [solução Exchange OVHcloud](https://www.ovh.pt/emails/hosted-exchange/).
+- Ter acesso à conta Exchange (com endereço de e-mail e palavra-passe).
 
 
-## Obtenção do calendário partilhado através do email de confirmação
-Uma vez ligado à interface [Webmail Exchange](https://ex.mail.ovh.net/owa), um email enviado pela pessoa que partilhou o calendário deverá estar na sua caixa.
+## Instruções
 
 
-- Poderá validar a partilha do calendário a partir do email recebido;
-- Poderá partilhar o seu calendário com a pessoa que enviou o convite de partilha.
+### Passo 1: Selecionar o calendário a partilhar
+
+Aceda à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/mail//). Mude para a interface «Calendário». Para isso, clique no menu de aplicações (canto superior esquerdo) e selecione o ícone `Calendário`{.action}.
+
+![sharecalendar](images/exchange-calendars-step1.png){.thumbnail}
+
+À esquerda, verá a lista de calendários disponíveis na sua conta. Com o botão direito do rato, clique naquele que pretende partilhar. De seguida, selecione `Permissões de partilha`{.action}.
+
+![sharecalendar](images/exchange-calendars-step2.png){.thumbnail}
 
 
+### Passo 2: Convidar e autorizar utilizadores
 
-![](images/img_2973.jpg){.thumbnail}
+Na janela que se abrir, adicione os utilizadores com quem pretende partilhar o calendário. Comece a digitar para visualizar sugestões de contactos, introduza um endereço de e-mail completo ou use a opção de pesquisa através do `Diretório de pesquisa`{.action}. 
+
+![sharecalendar](images/exchange-calendars-step3.png){.thumbnail}
+
+Em baixo, pode definir um assunto para o e-mail que será enviado a indicar a partilha.
+
+![sharecalendar](images/exchange-calendars-step4.png){.thumbnail}
+
+As autorizações de acesso podem ser personalizadas:
+
+|Nome|Descrição|
+|---|---|
+|Apenas disponibilidade|Mostra a disponibilidade sem revelar pormenores acerca dos eventos calendarizados.|
+|Informações restritas|Mostra a disponibilidade, os nomes e as localizações dos eventos.|
+|Todas as informações|Mostra todas as informações dos eventos.|
+|Edição|Permite a edição do seu calendário.|
+|Delegar|Permite a edição e a partilha do seu calendário.|
+
+Atenção: para os contactos externos, só estarão disponíveis as primeiras três opções. Quando tiver acabado de adicionar destinatários, confirme clicando em `Enviar`{.action}. Os convites de partilha serão imediatamente enviados.
 
 
-## Obtenção do calendário partilhado em OWA
-A partir da secção Calendário o calendário passará a estar disponível na sia interface OWA.
+### Passo 3: Obter um calendário partilhado
 
-Trata-se do calendário da conta compte <ovhguide@support-exchange.eu> que passa a estar presente na conta <ovhguide2@support-exchange.eu> .
+Os convites de partilha de calendário podem ser aceites diretamente no e-mail de notificação. Para isso, basta clicar no botão azul `Aceitar`{.action}.
 
-![](images/img_2974.jpg){.thumbnail}
+![sharecalendar](images/exchange-calendars-step5.png){.thumbnail}
 
+O calendário partilhado passará a estar disponível na interface «Calendário» da conta, na secção «Outros calendários».
+
+> [!primary]
+>
+Em geral, é possível partilhar calendários com utilizadores externos. Contudo, pode haver problemas de compatibilidade em função do cliente de e-mail ou do serviço web utilizado. Encontre mais informações na [documentação Microsoft](http://go.microsoft.com/fwlink/?LinkId=57561) oficial.
+>
+
+
+### Alterar permissões
+
+Nos calendários partilhados, pode alterar permissões já existentes ou até revogar acessos. Para isso, dirija-se à secção «Calendário», clique com o botão direito no calendário em causa e selecione `Permissões`{.action}. Na nova janela, apague os utilizadores da lista ou modifique as respetivas permissões de acesso. De seguida, confirme clicando no botão `Guardar`{.action}.
+
+![sharecalendar](images/exchange-calendars-step6.png){.thumbnail}
+
+
+### Usar calendários em OWA
+
+Este é um exemplo da secção «Calendário» em OWA, com vários calendários em exibição:
+
+![sharecalendar](images/exchange-calendars-step7.png){.thumbnail}
+
+Se clicar num calendário da lista, pode exibi-los ou ocultá-los. Através do campo de pesquisa, pode igualmente adicionar calendários de disponibilidade de membros da sua organização. Uma vez adicionados, podem ser assinalados como «favoritos» se clicar na estrela.
+
+
+## Saiba mais
+
+[Guia de utilização do Outlook Web App](../exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
+
+[Partilhar uma pasta através do webmail OWA](../exchange_2016_partilhar_uma_pasta_atraves_do_webmail_owa/)
+
+[Utilização de grupos de difusão (mailing list)](../exchange_20132016_utilizacao_de_grupos_de_difusao_mailing_list/)
+
+
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
