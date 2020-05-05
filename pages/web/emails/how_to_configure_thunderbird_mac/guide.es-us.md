@@ -1,6 +1,5 @@
 ---
 title: 'Correo: Guía de configuración para Thunderbird en Mac'
-excerpt: ''
 slug: correo_guia_de_configuracion_para_thunderbird_en_mac
 legacy_guide_number: g1911
 section: Apple
@@ -14,7 +13,7 @@ Esta es la interfaz que aparecerá por defecto si no tiene ninguna dirección de
 
 Para instalar su cuenta de correo, seleccione la opción «Saltarse esto y usar mi cuenta de correo».
 
-![](images/img_2856.jpg){.thumbnail}
+![Thunderbird](images/img_2856.jpg){.thumbnail}
 
 
 ## Parte 2: Creación de la cuenta
@@ -28,7 +27,7 @@ Para instalar su cuenta de correo, seleccione la opción «Saltarse esto y usar 
 
 Haga clic en «Continuar» para proseguir con la instalación.
 
-![](images/img_2857.jpg){.thumbnail}
+![Thunderbird](images/img_2857.jpg){.thumbnail}
 
 
 ## Parte 3: Creación de la cuenta - Continuación
@@ -40,7 +39,7 @@ Thunderbird propone una configuración manual.
 
 Haga clic en «Config. manual» para proseguir con la instalación.
 
-![](images/img_2858.jpg){.thumbnail}
+![Thunderbird](images/img_2858.jpg){.thumbnail}
 
 
 ## Parte 4: Configuración de los parámetros del servidor
@@ -68,7 +67,7 @@ Una vez creada la cuenta, podrá acceder a los distintos parámetros del servido
 
 Haga clic en «Servidor de salida (SMTP)» para verificar la información introducida en el servidor saliente.
 
-![](images/img_2860.jpg){.thumbnail}
+![Thunderbird](images/img_2860.jpg){.thumbnail}
 
 
 ## Parte 6: Parámetros del servidor & servidor de salida (SMTP) - Continuación
@@ -81,7 +80,7 @@ Nombre de usuario: «Dirección completa de correo
 
 Haga clic en «Aceptar» para validar la configuración del SMTP.
 
-![](images/img_2861.jpg){.thumbnail}
+![Thunderbird](images/img_2861.jpg){.thumbnail}
 
 
 ## Configuración POP
@@ -91,7 +90,7 @@ Configuración POP con seguridad SSL activada o desactivada:
 
 Dirección de correo: Su dirección completa de correo.
 
-Contraseña: La contraseña que haya definido en su [área de cliente](https://www.ovh.com/managerv3/).
+Contraseña: La contraseña que haya definido en su [área de cliente](https://www.ovh.com/auth/?action=gotomanager).
 
 Nombre de usuario: Su dirección completa de correo.
 
@@ -124,7 +123,7 @@ Configuración IMAP con seguridad SSL activada o desactivada:
 
 Dirección de correo: Su dirección completa de correo.
 
-Contraseña: La contraseña que haya definido en su [área de cliente](https://www.ovh.com/managerv3/).
+Contraseña: La contraseña que haya definido en su [área de cliente](https://www.ovh.com/auth/?action=gotomanager).
 
 Nombre de usuario: Su dirección completa de correo.
 
