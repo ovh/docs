@@ -7,7 +7,7 @@ section: 'Diagnostic'
 order: 9
 ---
 
-**Dernière mise à jour le 23/01/2020**
+**Dernière mise à jour le 05/05/2020**
 
 ## Les vérifications à réaliser
 
