@@ -7,6 +7,7 @@ section: DNS et zone DNS
 order: 8
 ---
 
+**Dernière mise à jour le 05/05/2020**
 
 ## Utilisation de ZoneMaster
 
