@@ -1,5 +1,5 @@
 ---
-title: 'Shared Mail: Guide to view email headers'
+title: 'How to view email headers'
 slug: shared_mail_guide_to_view_email_headers
 section: 'Diagnostic'
 order: 2
