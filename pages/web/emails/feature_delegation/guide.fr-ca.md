@@ -2,10 +2,12 @@
 title: 'Déléguer la gestion de vos e-mails à une autre personne'
 legacy_guide_number: 1933
 slug: deleguer-gestion-emails-autre-identifiant
-excerpt: 'Ce guide vous aidera a deleguer la gestion de vos emails a un autre identifiant OVH.'
+excerpt: 'Ce guide vous aidera a deleguer la gestion de vos emails a un autre identifiant OVHcloud.'
 section: 'Fonctionnalités des adresses e-mail'
 order: 6
 ---
+
+**Dernière mise à jour le 05/05/2020**
 
 ## Informations et pre-requis
 
@@ -15,11 +17,11 @@ Deux choix s'offrent à vous :
 
 - Déléguer tout le service email d'un domaine à un identifiant
 
-Utile dans le cas ou vous souhaitez déléguer  **tous**  les comptes emails lié à un nom de domaine, à un ou plusieurs identifiants OVH. Cela permettra aussi à l'identifiant final de gérer  **les filtres, les répondeurs emails, les redirections/alias, ainsi que les Mailing Lists** .
+Utile dans le cas ou vous souhaitez déléguer  **tous**  les comptes emails lié à un nom de domaine, à un ou plusieurs identifiants OVHcloud. Cela permettra aussi à l'identifiant final de gérer  **les filtres, les répondeurs emails, les redirections/alias, ainsi que les Mailing Lists** .
 
 - Déléguer un ou plusieurs comptes emails à un identifiant
 
-Utile dans le cas ou vous souhaitez déléguer  **seulement un ou certains comptes emails et leur filtres**  d'un nom de domaine, à un identifiant OVH. Cela  **ne permet pas**  à l'identifiant final de gérer  **les répondeurs emails, les redirections, ni les Mailing Lists** . Cela ne permet pas non plus à l'identifiant final de supprimer le compte, ou d'importer les emails d'un autre compte, ni de lui-même redéléguer le compte.
+Utile dans le cas ou vous souhaitez déléguer  **seulement un ou certains comptes emails et leur filtres**  d'un nom de domaine, à un identifiant OVHcloud. Cela  **ne permet pas**  à l'identifiant final de gérer  **les répondeurs emails, les redirections, ni les Mailing Lists** . Cela ne permet pas non plus à l'identifiant final de supprimer le compte, ou d'importer les emails d'un autre compte, ni de lui-même redéléguer le compte.
 
 ### Pre-requis
 
@@ -36,11 +38,11 @@ Dans un premier temps, connectez-vous à votre [espace client](https://www.ovh.c
 
 ![hosting](images/4141.png){.thumbnail}
 
-- Enfin, entrez l'identifiant OVH avec qui partager l'administration de vos adresses emails et validez l'opération .
+- Enfin, entrez l'identifiant OVHcloud avec qui partager l'administration de vos adresses emails et validez l'opération .
 
 ![hosting](images/4143.png){.thumbnail}
 
-Il est possible d'ajouter plusieurs identifiants OVH pour gérer chaque adresse email. La délégation permet de gérer les adresses email de mon domaine, ainsi que les répondeurs, les redirections/alias, et les Mailing Lists.
+Il est possible d'ajouter plusieurs identifiants OVHcloud pour gérer chaque adresse email. La délégation permet de gérer les adresses email de mon domaine, ainsi que les répondeurs, les redirections/alias, et les Mailing Lists.
 
 ### Deleguer un ou plusieurs comptes emails a un identifiant
 
@@ -50,6 +52,6 @@ Il est possible d'ajouter plusieurs identifiants OVH pour gérer chaque adresse 
 
 ![hosting](images/4138.png){.thumbnail}
 
-Vous pourrez saisir l'identifiant OVH avec qui partager l'administration de cette adresse email et valider l'opération. Il est possible d'ajouter plusieurs identifiants OVH pour gérer chaque adresse email.
+Vous pourrez saisir l'identifiant OVHcloud avec qui partager l'administration de cette adresse email et valider l'opération. Il est possible d'ajouter plusieurs identifiants OVHcloud pour gérer chaque adresse email.
 
 ![hosting](images/4140.png){.thumbnail}
