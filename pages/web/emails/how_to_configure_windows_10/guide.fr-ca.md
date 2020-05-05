@@ -1,12 +1,12 @@
 ---
 title: 'Configurer son adresse e-mail sur Courrier pour Windows 10'
 slug: configuration-courrier-sur-windows-10
-excerpt: 'Apprenez à configurer votre adresse e-mail MX Plan sur l''application Courrier pour Windows'
+excerpt: 'Apprenez à configurer une adresse e-mail de votre hébergement sur l'application Courrier pour Windows'
 section: 'Configuration sur ordinateur'
 order: 4
 ---
 
-**Dernière mise à jour le 21/03/2018**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
@@ -16,20 +16,20 @@ Les adresses e-mail de l'offre MX Plan peuvent être configurées sur un logicie
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
 
 ## Prérequis
 
-- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}).
+- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}).
 - Disposer de l'application Courrier installée sur votre appareil.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
 > [!primary]
 >
-> Vous utilisez une version antérieure de Windows ? Consultez notre documentation : [Configurer son adresse e-mail sur l'application Courrier pour Windows 8](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-sous-windows-8/){.external}.
+> Vous utilisez une version antérieure de Windows ? Consultez notre documentation : [Configurer son adresse e-mail sur l'application Courrier pour Windows 8](../mail-mutualise-guide-configuration-sous-windows-8/){.external}.
 >
 
 ## En pratique
@@ -92,12 +92,12 @@ Si vous êtes amené à renseigner manuellement des champs techniques dans les p
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVH propose une application web permettant d'accéder à votre adresse e-mail depuis votre navigateur internet accessible sur l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
+OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis votre navigateur internet accessible sur l’adresse <https://www.ovh.com/ca/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
  
 ## Aller plus loin
 
-[Configurer son compte E-mail Pro sur l'application Courrier pour Windows](https://docs.ovh.com/fr/emails-pro/configuration-courrier-windows-10/){.external}
+[Configurer son compte E-mail Pro sur l'application Courrier pour Windows](../../configuration-courrier-windows-10/){.external}
 
-[Configurer son compte Exchange sur l'application Courrier pour Windows](https://docs.ovh.com/fr/microsoft-collaborative-solutions/configuration-courrier-windows-10/){.external}
+[Configurer son compte Exchange sur l'application Courrier pour Windows](../../microsoft-collaborative-solutions/configuration-courrier-windows-10/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
