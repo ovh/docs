@@ -1,8 +1,8 @@
 ---
-title: '“Configurar a dupla autenticação numa conta Exchange”'
+title: 'Configurar a dupla autenticação numa conta Exchange'
 slug: configurar-2fa-exchange
-excerpt: '“Descubra como configurar a dupla autenticação numa conta Exchange”'
-section: '“Funcionalidades das contas Exchange”'
+excerpt: 'Descubra como configurar a dupla autenticação numa conta Exchange'
+section: 'Funcionalidades das contas Exchange'
 order: 3
 ---
 
