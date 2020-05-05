@@ -7,7 +7,7 @@ section: 'Fonctionnalités des adresses e-mail'
 order: 2
 ---
 
-**Dernière mise à jour le 22/01/2020**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
@@ -84,12 +84,12 @@ Cliquez ensuite sur `Valider`{.action} pour confirmer l'ajout de cette redirecti
 
 La gestion des redirections ne se fait pas via l'espace client pour la nouvelle version de l'offre MX Plan mais directement via le webmail de l'adresse e-mail concernée.
 
-Rendez-vous sur le webmail à l'adresse [mail.ovh.net](https://www.ovh.com/fr/mail/){.external}. Saisissez **l'adresse e-mail** et le **mot de passe** pour vous y connecter.
+Rendez-vous sur le webmail à l'adresse [mail.ovh.net](https://www.ovh.com/ca/fr/mail/){.external}. Saisissez **l'adresse e-mail** et le **mot de passe** pour vous y connecter.
 ![emails](images/webmail.png){.thumbnail}
 
 #### Étape 1: accéder à la gestion des redirections
 
-Une fois connecté à votre adresse e-mail via le [webmail](https://www.ovh.com/fr/mail/){.external}, cliquez sur la roue crantée en haut à droite puis sur `Options`{.action},
+Une fois connecté à votre adresse e-mail via le [webmail](https://www.ovh.com/ca/fr/mail/){.external}, cliquez sur la roue crantée en haut à droite puis sur `Options`{.action},
 
 ![emails](images/mxplan-new-1.png){.thumbnail}
 Depuis la fenêtre **Options**, dans la colonne de gauche, dirigez-vous dans la catégorie **Traitement automatique** de la section **Courrier** puis cliquez sur `Règles de boîte de réception et de rangement`{.action} 
