@@ -7,6 +7,8 @@ section: Protection et sécurité
 order: 2
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 ## Qu'est-ce que le Trademark Clearinghouse (TMCH) ?
 
 L’entité ClearingHouse permet aux titulaires de marques commerciales d’introduire les données relatives à cette dernière dans une base de données centralisée avant le lancement des nouvelles extensions génériques et une fois que ces dernières sont sur le marché.
@@ -66,7 +68,7 @@ Les justificatifs dépendent de votre marque :
 
 Le TMCH couvre uniquement les nouvelles extensions génériques, aussi appelées ***New gTLD***. Comme le nom l'indique, ces dernières reprennent des termes génériques dont en voici quelques exemples : .shop, .mobi, .top, .immo, .cloud, .store, .email, .space, .blog, .agency, .website, .photos.
 
-Vous pouvez retrouver la liste complète des extensions que propose OVH depuis la page : [https://www.ovh.com/fr/domaines/tarifs/](https://www.ovh.com/fr/domaines/tarifs/){.external}. L'ICANN propose également une liste de toutes les extensions disponibles sur le marché : [https://www.icann.org/resources/pages/tlds-2012-02-25-en](https://www.icann.org/resources/pages/tlds-2012-02-25-en){.external}.
+Vous pouvez retrouver la liste complète des extensions que propose OVHcloud depuis la page : [https://www.ovh.com/ca/fr/domaines/tarifs/](https://www.ovh.com/ca/fr/domaines/tarifs/){.external}. L'ICANN propose également une liste de toutes les extensions disponibles sur le marché : [https://www.icann.org/resources/pages/tlds-2012-02-25-en](https://www.icann.org/resources/pages/tlds-2012-02-25-en){.external}.
 
 ## Lorsqu'une nouvelle extension générique arrive sur le marché, est-elle automatiquement incluse à la protection du TMCH ?
 
