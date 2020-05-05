@@ -6,22 +6,22 @@ section: Getting started
 order: 0
 ---
 
-**Last updated 06<sup>th</sup> March, 2020**
+**Last updated 04<sup>th</sup> May, 2020**
 
 ## Objective
 
-This guide helps you to upload an Apache Spark job in Java or Scala to your OVHcloud Object Storage and run your job with Data Processing using OVHcloud Manager. 
+This guide helps you to upload an Apache Spark job in Java or Scala to your OVHcloud Object Storage and run your job with Data Processing using OVHcloud Manager.
 
 If you would like to submit an Apache Spark job in Python language, you can read this document: [How to submit a Python job to Data Processing using OVHcloud Manager](../submit-python/){.external}
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external} to use Data Processing platform. 
+In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external} to use Data Processing platform.
 
 To read an introduction about Data Processing service you can visit [Data Processing Overview](../overview){.external}.
 
-## Requirements 
+## Requirements
 
 - Access to [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external}
-- An OVHcloud account 
+- An OVHcloud account
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details.)
 - An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](../../public-cloud/configure_user_access_to_horizon/){.external} for details.)
 - A jar file containing your Java or Scala code to be run in Apache Spark environment
@@ -30,34 +30,37 @@ To read an introduction about Data Processing service you can visit [Data Proces
 
 ### Step 1: Upload your application code to Object Storage
 
-Before running your job in Data Processing platform, you will need to create a container in OVHcloud Object Storage for your job and upload your application jar file into this container. You can work with your Object Storage using either the OVHcloud Manager or the Openstack Horizon dashboard. 
+Before running your job in Data Processing platform, you will need to create a container in OVHcloud Object Storage for your job and upload your application jar file into this container. You can work with your Object Storage using either the OVHcloud Manager or the Openstack Horizon dashboard.
 
-Please see [Creating Storage Containers in Customer Panel](../../storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details. 
+Please see [Creating Storage Containers in Customer Panel](../../storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
 
 
 If you don’t currently have an application code and you still would like to try OVHcloud Data Processing, you can download an [Apache Spark package](http://spark.apache.org/downloads.html) and extract it. Inside, you can find a jar file in examples/jars folder to run the SparkPi sample (which will just compute the Pi value).
 
 ### Step 2: Submit your Spark job
-To submit your job with your required parameters follow these steps: 
+To submit your job with your required parameters follow these steps:
 
 - Login to the OVHcloud Manager and select `Public Cloud`{.action}
 - Select the relevant project if you have multiple projects in your OVHcloud account
-- Select `Data Processing`{.action} from the left panel 
+- Select `Data Processing`{.action} from the left panel
 - Select `Submit a new job`{.action}
 
 ![Data Processing Manager](images/dataprocessingmanager.png){.thumbnail}
 
-- Fill the "**Submit a job**" form that is now displayed, and at the end push `Submit job`{.action} button to submit your Apache Spark job. Please see [How to fill job submit form in Data Processing Manager](../job-submit-form){.external} for more details. 
+- Fill the "**Submit a job**" form that is now displayed, and at the end push `Submit job`{.action} button to submit your Apache Spark job. Please see [How to fill job submit form in Data Processing Manager](../job-submit-form){.external} for more details.
 
 ### Step 3: Check information, status and logs of a job
 In the **Data Processing** section of Manager you can see the list of all the jobs that you have submitted so far. If you click on a job's name, you can see detailed information on it, including its status. Then you can click on the `Logs`{.action} to see the live logs while the job is running.
 
+> [!warning]
+>If your jobs are stuck in "Running", you probably forgot to stop the spark context in your code. To stop it, please refer to the [java spark context documentation](https://spark.apache.org/docs/latest/api/java/index.html?org/apache/spark/api/java/JavaSparkContext.html).
+
 Once the job will be finished, the complete logs will be saved to your Object Storage container. You will be able to download it from your account whenever you would like.
 
-Please see [How to check your job's logs in the Data Processing manager page](../check-logs){.external} for more details. 
+Please see [How to check your job's logs in the Data Processing manager page](../check-logs){.external} for more details.
 
 ### Step 4: Check your job's results
-After your Spark job is finished, you will be able to check the results from your logs as well as in any connected storage your job was designed to update. 
+After your Spark job is finished, you will be able to check the results from your logs as well as in any connected storage your job was designed to update.
 
 ## Go further
 
