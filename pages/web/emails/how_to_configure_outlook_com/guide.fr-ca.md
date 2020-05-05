@@ -6,12 +6,14 @@ section: Configuration sur une interface en ligne
 order: 2
 ---
 
-[Cliquez ici]({legacy}1474){.ref} pour retrouver nos différents guides de configuration e-mail.
+**Dernière mise à jour le 05/05/2020**
+
+[Cliquez ici](../){.external} pour retrouver nos différents guides de configuration e-mail.
 
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -24,7 +26,7 @@ order: 2
 > [!primary]
 >
 > - 
-> Disposer d'une adresse e-mail OVH fonctionnelle
+> Disposer d'une adresse e-mail OVHcloud fonctionnelle
 > - 
 > Disposer d'une adresse e-mail outlook.com
 > 
@@ -60,9 +62,9 @@ Voici comment réaliser votre configuration en  **IMAP**  avec  **SSL** activé.
 
 |---|---|
 |Nom complet|Le nom qui s'affichera chez le destinataire|
-|Adresse de messagerie|Votre adresse e-mail OVH|
-|Nom d'utilisateur|Votre adresse e-mail OVH|
-|Mot de passe|Le mot de passe de votre adresse e-mail OVH|
+|Adresse de messagerie|Votre adresse e-mail OVHcloud|
+|Nom d'utilisateur|Votre adresse e-mail OVHcloud|
+|Mot de passe|Le mot de passe de votre adresse e-mail OVHcloud|
 |Serveur entrant (IMAP)|SSL0.OVH.NET|
 |Port de serveur entrant|993|
 |Chiffrement|SSL|
@@ -87,7 +89,7 @@ Voici comment réaliser votre configuration en  **IMAP**  avec  **SSL** activé.
 > A cette étape, il est recommandé de fermer la page outlook.com, puis de la réouvrir quelques instants plus tard afin que l'importation se finalise.
 > 
 
-Il vous sera ensuite possible de visualiser votre adresse e-mail OVH.
+Il vous sera ensuite possible de visualiser votre adresse e-mail OVHcloud.
 
 - Cliquez sur `Nouveau`{.action}.
 
@@ -117,13 +119,13 @@ Nous vous invitons à vous renseigner sur l'utilisation de ces deux protocoles a
 
 
 ### Configuration POP
-Si vous désirez configurer votre compte en POP, choisissez ce protocole lors de l'ajout de votre compte e-mail OVH, puis indiquez ces paramètres :
+Si vous désirez configurer votre compte en POP, choisissez ce protocole lors de l'ajout de votre compte e-mail OVHcloud, puis indiquez ces paramètres :
 
 |---|---|
 |Nom complet|Le nom qui s'affichera chez le destinataire|
-|Adresse de messagerie|Votre adresse e-mail OVH|
-|Nom d'utilisateur|Votre adresse e-mail OVH|
-|Mot de passe|Le mot de passe de votre adresse e-mail OVH|
+|Adresse de messagerie|Votre adresse e-mail OVHcloud|
+|Nom d'utilisateur|Votre adresse e-mail OVHcloud|
+|Mot de passe|Le mot de passe de votre adresse e-mail OVHcloud|
 |Serveur entrant (IMAP)|SSL0.OVH.NET|
 |Port de serveur entrant|995|
 |Chiffrement|SSL|
