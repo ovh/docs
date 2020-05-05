@@ -1,11 +1,13 @@
 ---
-title: 'Réagir en cas d''indisponibilité de vos e-mails'
+title: 'Réagir en cas d'indisponibilité de vos e-mails'
 slug: utilisation-avancee-des-e-mails
 legacy_guide_number: 2117
-excerpt: 'Vous trouverez dans ce guide differentes informations concernant les services e-mails chez OVH.'
+excerpt: 'Vous trouverez dans ce guide differentes informations concernant les services e-mails chez OVHcloud.'
 section: 'Diagnostic'
 order: 9
 ---
+
+**Dernière mise à jour le 23/01/2020**
 
 ## Les vérifications à réaliser
 
@@ -17,11 +19,11 @@ Pour que vos e-mails soient fonctionnels, vous devez posséder une offre e-mail 
 
 - **Les e-mails sont-ils fonctionnels depuis le webmail ?** 
 
-Afin de vous assurer que le souci n'est pas lié à une erreur de configuration, réalisez un test d'envoi et de réception directement via le webmail d'OVH. Si tout fonctionne correctement, vérifiez la configuration de votre logiciel via les guides mis à votre disposition.
+Afin de vous assurer que le souci n'est pas lié à une erreur de configuration, réalisez un test d'envoi et de réception directement via le webmail d'OVHcloud. Si tout fonctionne correctement, vérifiez la configuration de votre logiciel via les guides mis à votre disposition.
 
 - **Vous ne pouvez pas vous connecter au webmail ?** 
 
-Assurez-vous d'avoir le bon mot de passe, si nécessaire il vous est possible de le modifier. Pour cela, référez-vous à [ce guide](https://docs.ovh.com/fr/emails/modifier-mot-de-passe-adresse-email/){.external}.
+Assurez-vous d'avoir le bon mot de passe, si nécessaire il vous est possible de le modifier. Pour cela, référez-vous à [ce guide](../modifier-mot-de-passe-adresse-email/){.external}.
 
 - **Une tâche travaux est-elle en cours sur mon service ?**
 
@@ -30,7 +32,7 @@ Il vous est possible de vérifier les différentes tâches travaux actuellement 
 
 - **Le pointage de mon nom de domaine est-il correct ?**
 
-Vérifiez que votre nom de domaine utilise correctement les serveurs e-mail (Enregistrement de type MX) de l'offre e-mail d'OVH. Référez-vous à [ce guide](https://docs.ovh.com/fr/domains/mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/){.external}.
+Vérifiez que votre nom de domaine utilise correctement les serveurs e-mail (Enregistrement de type MX) de l'offre e-mail d'OVHcloud. Référez-vous à [ce guide](../../domains/mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/){.external}.
 
 ## Les codes de reponse d’un serveur SMTP
 
@@ -84,4 +86,4 @@ Vous trouverez ci-dessous la majorité des codes de réponse SMTP utilisés par 
 |552|Action de messagerie demandée interrompue : espace de stockage dépassé|L'utilisateur que vous avez essayé de contacter n'a plus d'espace disponible pour recevoir des messages. Malheureusement, la seule solution est de contacter le destinataire via une autre méthode|
 |553|Action demandée non effectuée : adresse e-mail non autorisé|Cela est en général causé par une adresse e-mail de destination incorrecte. Veuillez vérifier que l'adresse e-mail en question est bien correcte|
 |554|Transaction échouée, "Aucun service SMTP ici")|Il s'agit en général d'un problème de blacklist. Vérifiez si votre adresse IP du serveur de messagerie n'est pas blacklistée ([SpamHaus](https://www.spamhaus.org/lookup/){.external})|
-|555|MAIL FROM / RCPT TO, paramètres non reconnus ou non mis en oeuvre|Le serveur SMTP sortant n'enregistre pas correctement l'adresse e-mail utilisée soit dans vos paramètres "De" ou "A". Veuillez vérifier que les adresses e-mail indiquées sont correctes, et vérifiez également que vous n'avez pas dépassé la limite définie par OVH : 200 mails /heure /compte et 300 mails /heure /ip|
+|555|MAIL FROM / RCPT TO, paramètres non reconnus ou non mis en oeuvre|Le serveur SMTP sortant n'enregistre pas correctement l'adresse e-mail utilisée soit dans vos paramètres "De" ou "A". Veuillez vérifier que les adresses e-mail indiquées sont correctes, et vérifiez également que vous n'avez pas dépassé la limite définie par OVHcloud : 200 mails /heure /compte et 300 mails /heure /ip|
