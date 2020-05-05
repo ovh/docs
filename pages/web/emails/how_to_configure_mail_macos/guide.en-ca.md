@@ -1,22 +1,22 @@
 ---
 title: 'Configuring an email address on the macOS Mail app'
 slug: guide-configuring-mail-on-macos
-excerpt: 'Find out how to configure an MX Plan email address on the Mail app, for the following macOS operating systems - El Capitan, Sierra and High Sierra'
+excerpt: 'Find out how to configure an email address on the Mail app, for the following macOS operating systems - El Capitan, Sierra and High Sierra'
 section: 'Configure on computer'
 order: 3
 ---
 
-**Last updated 16th February 2018**
+**Last updated 5th May 2020**
 
 ## Objective
 
-You can configure MX Plan email addresses on a range of email clients, provided they are compatible. This way, you can use your new email address through your preferred email application.
+You can configure email addresses on a range of email clients, provided they are compatible. This way, you can use your new email address through your preferred email application.
 
-**Find out how to configure an MX Plan email address on the Mail app, for the following macOS operating systems: El Capitan, Sierra and High Sierra.**
+**Find out how to configure an email address on the Mail app, for the following macOS operating systems: El Capitan, Sierra and High Sierra.**
 
 ## Requirements
 
-- You need to have an MX Plan email address (included in the MX Plan solution and in [OVH web hosting plans](https://www.ovh.co.uk/web-hosting/){.external}).
+- You need to have an MX Plan email address, available as part of our [Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/).
 - You need to have the Mail app installed on your device.
 - You need to have the appropriate credentials for the email address you would like to configure.
 
@@ -89,12 +89,12 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it to send and receive emails straight away!
 
-OVH also has a web application you can use to access your email account via your browser. You can access the application at the following address, using your email credentials: <https://www.ovh.co.uk/mail/>.
+OVHcloud also has a web application you can use to access your email account via your browser. You can access the application at the following address, using your email credentials: <https://www.ovh.com/ca/en/mail>.
 
 ## Go further
 
-[Configuring your Email Pro account on the macOS Mail app](https://docs.ovh.com/gb/en/emails-pro/configuring-email-pro-macos-mail/){.external}.
+[Configuring your Email Pro account on the macOS Mail app](../../emails-pro/configuring-email-pro-macos-mail/)
 
-[Configuring your Exchange account on the macOS Mail app](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange-automatic-configuration-on-mail-mac/){.external}.
+[Configuring your Exchange account on the macOS Mail app](../../microsoft-collaborative-solutions/exchange-automatic-configuration-on-mail-mac/)
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our community of users on <https://community.ovh.com/en/>.
