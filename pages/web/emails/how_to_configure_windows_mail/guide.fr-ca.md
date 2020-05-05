@@ -7,14 +7,16 @@ section: Configuration sur ordinateur
 hidden: true
 ---
 
-Cliquez [ici](http://www.ovh.com/fr/hebergement-web/faq){.external} pour retrouver nos différents guides de configuration e-mail.
+**Dernière mise à jour le 05/05/2020**
+
+Cliquez [ici](http://www.ovh.com/ca/fr/hebergement-web/faq){.external} pour retrouver nos différents guides de configuration e-mail.
 
 Windows Mail est un logiciel de messagerie gratuit pour le système d'exploitation Windows, présenté comme le successeur d'Outlook Express Vous pouvez le retrouver via la page suivante : [Windows Mail (site officiel)](http://windows.microsoft.com/fr-fr/hotmail/home){.external}
 
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -80,7 +82,7 @@ Voici les informations à retenir pour la configuration d'un compte e-mail **POP
 Configuration  **POP**  avec sécurisation SSL activée ou désactivée :
 
 - Adresse Email : Votre adresse e-mail mutualisée entière.
-- Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/manager/web/login/){.external}.
+- Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - Nom d'utilisateur : Votre adresse e-mail mutualisée entière.
 - Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET**
 - Port serveur entrant : Le port du serveur entrant :  **995**  ou  **110**
@@ -100,7 +102,7 @@ Voici les informations à retenir pour la configuration d'un compte e-mail **IMA
 Configuration  **IMAP**  avec sécurisation SSL activée ou désactivée :
 
 - Adresse Email : Votre adresse e-mail mutualisée entière.
-- Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/manager/web/login/){.external}.
+- Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - Nom d'utilisateur : Votre adresse e-mail mutualisé entière.
 - Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET**
 - Port serveur entrant : Le port du serveur entrant :  **993**  ou  **143**
