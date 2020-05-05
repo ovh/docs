@@ -7,12 +7,14 @@ section: 'Fonctionnalités des adresses e-mail'
 order: 3
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 ## Généralités
 
 ### Prérequis
 - Avoir accès à votre espace client
-- Disposez d'une offre OVH permettant de créer des e-mails
-- Utiliser les serveurs MX* OVH
+- Disposez d'une offre OVHcloud permettant de créer des e-mails
+- Utiliser les serveurs MX* OVHcloud
 
 - Pour plus d'informations sur les MX, voir [ce guide]({legacy}2003){.ref}.
 
