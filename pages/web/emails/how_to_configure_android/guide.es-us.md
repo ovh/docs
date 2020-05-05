@@ -5,7 +5,7 @@ excerpt: 'Cómo configurar una cuenta MX Plan en Android utilizando la aplicaci�
 section: Android
 ---
 
-**Última actualización: 31/05/2018**
+**Última actualización: 05/05/2020**
 
 ## Objetivo
 
@@ -15,7 +15,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 ## Requisitos
 
-- Tener una cuenta MX Plan (incluida en un MX Plan o en un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}).
+- Tener una cuenta MX Plan (incluida en un MX Plan o en un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}).
 - Tener la aplicación Gmail instalada en su dispositivo. Puede instalarla desde Google Play Store.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
@@ -89,12 +89,8 @@ Si la aplicación le pide que introduzca de forma manual algunos datos en las pr
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVH ofrece una aplicación web con la que podrá acceder a su cuenta de correo electrónico desde el navegador, disponible en la dirección <https://www.ovh.es/mail/>. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVH ofrece una aplicación web con la que podrá acceder a su cuenta de correo electrónico desde el navegador, disponible en la dirección <https://www.ovh.com/world/es/mail/>. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 ## Más información
 
-[Configurar una cuenta Email Pro en Android utilizando la aplicación Gmail](https://docs.ovh.com/es/emails-pro/configuracion-android/){.external}
-
-[Configurar una cuenta Exchange en Android utilizando la aplicación Gmail](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-android/){.external}
-
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
