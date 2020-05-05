@@ -7,9 +7,9 @@ section: SSL
 
 
 ## Introduccion
-Los certificados SSL EV comercializados por OVH son emitidos por la autoridad de certificación Comodo, que se encarga de verificar la existencia jurídica de la empresa.
+Los certificados SSL EV comercializados por OVHcloud son emitidos por la autoridad de certificación Comodo, que se encarga de verificar la existencia jurídica de la empresa.
 
-Toda la información comercial está disponible en nuestro sitio web: [https://www.ovh.es/ssl/](https://www.ovh.es/ssl/){.external}.
+Toda la información comercial está disponible en nuestro sitio web: [https://www.ovh.com/world/es/ssl/](https://www.ovh.com/world/es/ssl/){.external}.
 
 
 ### Por que utilizar un certificado SSL EV
@@ -28,9 +28,9 @@ Cuando consulte un sitio web protegido por un certificado SSL EV, este último m
 ![hosting](images/ssl_EV.png){.thumbnail}
 
 
-## Como contratar un certificado SSL EV en OVH
+## Como contratar un certificado SSL EV en OVHcloud
 
-### Si su sitio web ya esta en OVH
+### Si su sitio web ya esta en OVHcloud
 Acceda al área de cliente para enviar el pedido relativo al certificado SSL EV.
 
 
@@ -55,7 +55,7 @@ A continuación solo tendrá que indicar los datos de su empresa.
 
 
 ## Como verificar mi empresa
-Una vez realizado el pedido en OVH, recibirá de Comodo un mensaje de correo electrónico como el siguiente:
+Una vez realizado el pedido en OVHcloud, recibirá de Comodo un mensaje de correo electrónico como el siguiente:
 
 ```
  Subject: "ORDER #xxxxxxxxxx - Agreement"
@@ -120,7 +120,7 @@ Una vez realizado el pedido en OVH, recibirá de Comodo un mensaje de correo ele
  best practices or security compliance requirements.
 ```
 
-Haga clic en el enlace destinado a confirmar el pedido. Deberá también indicar su puesto en la empresa. A continuación se realizará una verificación de la dirección de correo electrónico asociada a su cuenta de OVH.
+Haga clic en el enlace destinado a confirmar el pedido. Deberá también indicar su puesto en la empresa. A continuación se realizará una verificación de la dirección de correo electrónico asociada a su cuenta de OVHcloud.
 
 Si su empresa figura en el censo de la cámara de comercio, recibirá una llamada de Comodo para realizar comprobaciones adicionales : [http://empresas.informa.es/](http://empresas.informa.es/){.external}
 
@@ -159,7 +159,7 @@ Si no, Comodo le enviará un email pidiéndole que se inscriba en él. Comodo in
  COMODO Validation Team
 ```
 
-Una vez que Comodo haya comprobado que su empresa existe y que usted está facultado para representarla, OVH recibirá su certificado SSL EV y lo desplegará automáticamente en su sitio web.
+Una vez que Comodo haya comprobado que su empresa existe y que usted está facultado para representarla, OVHcloud recibirá su certificado SSL EV y lo desplegará automáticamente en su sitio web.
 
 
 ## Que condiciones hay que cumplir?
@@ -167,7 +167,7 @@ En la siguiente página se indican las condiciones para poder contratar un certi
 
 Solo pueden optar a él las empresas.
 
-Es obligatorio disponer de una cuenta de cliente OVH en la que esté registrado como empresa. Además, al realizar el pedido deberá introducir un NIF de empresa.
+Es obligatorio disponer de una cuenta de cliente OVHcloud en la que esté registrado como empresa. Además, al realizar el pedido deberá introducir un NIF de empresa.
 
 Se realizarán las siguientes verificaciones:
 
@@ -182,5 +182,5 @@ Se realizarán las siguientes verificaciones:
 
 > [!alert]
 >
-> Si no cumple los requisitos para adquirir un certificado, OVH no podrá realizar ninguna devolución. Se trata de un producto altamente personalizado, por lo que no se beneficia del período de desistimiento de 14 días.
+> Si no cumple los requisitos para adquirir un certificado, OVHcloud no podrá realizar ninguna devolución. Se trata de un producto altamente personalizado, por lo que no se beneficia del período de desistimiento de 14 días.
 > 
