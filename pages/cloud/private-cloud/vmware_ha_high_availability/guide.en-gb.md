@@ -9,7 +9,7 @@ section: VMware vSphere features
 
 ## Objective
 
-The primary function of **VMware HA** (High Availability) is to restart the virtual machines on another host in the cluster if a hardware failure occur. **HA** also monitors VMs and applications.
+The primary function of **VMware HA** (High Availability) is to restart the virtual machines on another host in the cluster if a hardware failure occurs. **HA** also monitors VMs and applications.
 
 ![](images/HA3.png){.thumbnail}
 
@@ -57,7 +57,7 @@ You can choose :
 
 - No action will be taken on the affected VMs. 
 - All affected VMs will be powered off and vSphere HA will attempt to restart the VMs on hosts that still have network connectivity.
-- All affected hosts will be gracefully shutdown and vSphere HA will attempt to restart the VMs on hosts that are still online. 
+- All affected hosts will be gracefully shut down and vSphere HA will attempt to restart the VMs on hosts that are still online. 
 
 ![](images/HAparam2.PNG){.thumbnail}
 
@@ -78,7 +78,7 @@ If a datastore fails with an all path down status, you can set the actions to ta
 - No action will be taken on the affected VMs.
 - No action will be taken on the affected VMs. Events will be generated.
 - A VM will be powered off, if HA determines the VM can be restarted on a different host.
-- A VM will be powered off, If HA determines the VM can be restarted on a different host, or if HA cannot detect the resources on other hosts because of network connectivity loss (network partition).
+- A VM will be powered off, If HA determines the VM can be restarted on a different host, or if HA can not detect the resources on other hosts because of network connectivity loss (network partition).
 
 ![](images/HAparam4.PNG){.thumbnail}
 
@@ -106,7 +106,7 @@ The basis of the vSphere Admission control is the number of host failures that t
 
 #### Heartbeat datastore
 
-When the primary host of an HA cluster cannot communicate with a subordinate host on the management network, the primary host uses the database heartbeat signal to determine if the subordinate host is failing, is in a network partition, or is isolated from the network.
+When the primary host of an HA cluster can not communicate with a subordinate host on the management network, the primary host uses the database heartbeat signal to determine if the subordinate host is failing, is in a network partition, or is isolated from the network.
 
 #### Advanced options
 
@@ -120,7 +120,7 @@ In the `configuration`{.action} section and then in the `VM/Host Rules`{.action}
 
 This will add a reboot condition to ensure that all virtual machines in the first group are started before starting the ones in the second group.
 
-This rule can be added to the parameterable restart priorities in the `VM Overrides`{.action}.
+This rule can be added to the configurable restart priorities in the `VM Overrides`{.action}.
 
 ## Go further
 

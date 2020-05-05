@@ -21,7 +21,7 @@ Starting from the fact that **DRS*** will allow us to better allocate resources 
 
 ### Activation
 
-DRS is enabled by default in the first cluster that OVHcloud provides you when we deliver your Hosted Private Cloud.
+DRS is enabled by default in the first cluster that OVHcloud provides you with when we deliver your Hosted Private Cloud.
 If a new cluster is created, you can enable it when it is created, or after.
 
 If DRS is not enabled in your cluster, go to the `Configure`{.action} tab of your cluster and then to the `vSphere DRS`{.action} tab available in `Services`{.action}.
@@ -44,10 +44,10 @@ The Automation Level have 3 different levels :
 
 It is also possible to set a migration threshold more or less aggressive on automated modes.
 
-The "Predictive DRS" option, allows you to perform migrations based on the forecast measurements returned by vROps.
+The "Predictive DRS" option allows you to perform migrations based on the forecast measurements returned by vROps.
 vROps is mandatory for this DRS option.
 
-Finally, virtual machine automation allows you to configure specific DRS settings for some VMs in the `VM Overrides`{.action} tab of the `configuration`{.action} section (Some VMs may have a partially automatic migration mode while the cluster will be fully automated).
+Finally, virtual machine automation allows you to configure specific DRS settings for some VMs in the `VM Overrides`{.action} tab of the `configuration`{.action} section (some VMs may have a partially automatic migration mode while the cluster will be fully automated).
 
 ![](images/drs2.png){.thumbnail}
 
@@ -81,7 +81,7 @@ Here are some examples:
 
 |Advanced Option Name|Description|Default value|Most aggressive value|
 |:---|:---|:---|:---|
-|UseDownTime|If cost analysis should take into account the workload impact of possible memory stalls during migration|1|0 (pas de prise en compte des impacts)|
+|UseDownTime|If cost analysis should take into account the workload impact of possible memory stalls during migration|1|0 (no impact consideration)|
 |IgnoreDownTimeLessThan|Threshold (in seconds) to discard cumulative migration stall times in cost analysis (can be increased if VM workloads are not sensitive to memory stalls during migration).|1|A large number (not including downtime)|
 |MinImbalance|Used to calculate target imbalance|50|0|
 |MinGoodness|Minimal improvement in cluster imbalance required for each move|Adaptive|0 (All vMotion is considered)|
@@ -89,7 +89,7 @@ Here are some examples:
 
 ![](images/drs5.png){.thumbnail}
 
-### Les règles DRS
+### DRS rules
 
 In the `Configuration`{.action} section you can find the management of `VM/host rules`{.action} :
 

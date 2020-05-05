@@ -8,7 +8,7 @@ section: Fonctionnalités OVH
 
 ## Objectif
 
-Ce guide a pour objectif d'expliquer les détails de la gestion de droits utilisateurs sur l'offre Private Cloud d'OVH.
+Ce guide a pour objectif d'expliquer les détails de la gestion de droits utilisateurs sur l'offre Private Cloud d'OVHcloud.
 
 **Découvrez comment gérer la gestion des droits utilisateurs sur votre infrastructure.**
 
@@ -34,7 +34,7 @@ A partir de ce menu, vous avez la possibilité de modifier les droits de vos uti
 | Accès vSphere | Aucun / Lecture seule / Lecture et Ecriture | Droits globaux de l'utilisateur sur vSphere |
 | Accès au vmNetwork | Aucun / Lecture seule / Opérateur | Droits de management sur la partie réseau public (appelé VM Network dans l'interface vSphere) |
 | Accès au V(x)Lans | Aucun / Lecture seule / Opérateur / Administrateur | Droits de management sur la partie réseau privé (VxLan et VLAN) |
-| Ajout de ressource | Oui / Non | Droit d'ajouter des ressources supplémentaires via le plugin OVH dans vSphere Client (Host, Datastore, Sauvegarde Veeam) |
+| Ajout de ressource | Oui / Non | Droit d'ajouter des ressources supplémentaires via le plugin OVHcloud dans vSphere Client (Host, Datastore, Sauvegarde Veeam) |
 
 ![Modifier les droits](images/user_rights_3.png){.thumbnail}
 
