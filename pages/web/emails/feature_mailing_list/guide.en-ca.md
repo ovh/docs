@@ -6,7 +6,7 @@ section: 'Email address features'
 order: 2
 ---
 
-**Last updated 19th March 2020**
+**Last updated 5th May 2020**
 
 ## Objective
 
@@ -38,7 +38,7 @@ The sender sends an email to the mailing list. The moderator receives an email w
 
 ## Requirements
 
-- an MX Plan 100 minimum or [web hosting plan](https://www.ovh.co.uk/web-hosting/){.external} eligible for mailing lists
+- an MX Plan 100 minimum or [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external} eligible for mailing lists
 - access to the [OVHcloud Control Panel](https://www.ovh.com/manager/web/login/){.external}
 
 ## Instructions
