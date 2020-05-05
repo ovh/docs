@@ -8,13 +8,13 @@ section: DNS (servidor y zona)
 
 
 ## 
-Si quiere utilizar su servidor como DNS primario para su dominio, OVH le ofrece un DNS secundario.
+Si quiere utilizar su servidor como DNS primario para su dominio, OVHcloud le ofrece un DNS secundario.
 
 El menú «DNS secundario» aparece el panel central del área de cliente, seleccionando un VPS como plataforma.
 
 La pantalla se muestra de la siguiente forma:
 
-![](images/img_2008.jpg){.thumbnail}
+![secondary dns](images/img_2008.jpg){.thumbnail}
 En esa pantalla, es posible:
 
 
@@ -29,20 +29,20 @@ Para añadir un dominio, haga clic en «Añadir un dominio». Se mostrará el cu
 
 Introduzca el dominio en el campo de texto.
 
-![](images/img_2009.jpg){.thumbnail}
+![secondary dns](images/img_2009.jpg){.thumbnail}
 Haga clic en «Aceptar».
 
-![](images/img_2010.jpg){.thumbnail}
+![secondary dns](images/img_2010.jpg){.thumbnail}
 A continuación, su dominio aparecerá en la lista, como en el siguiente ejemplo:
 
-![](images/img_2011.jpg){.thumbnail}
+![secondary dns](images/img_2011.jpg){.thumbnail}
 Para cada dominio añadido, se mostrarán los siguientes datos:
 
 
 - Dominio: El dominio configurado en el servidor DNS secundario.
 - IP: La dirección IP del servidor DNS primario para el dominio correspondiente.
 - Fecha de creación: Fecha en la que se añadió el dominio al servidor DNS secundario.
-- DNS secundario: Nombre del DNS secundario de OVH en el que se ha configurado el dominio.
+- DNS secundario: Nombre del DNS secundario de OVHcloud en el que se ha configurado el dominio.
 
 
 Es posible que sea necesaria una verificación de la gestión del dominio. En ese caso, al aceptar la adición del dominio aparecerá el siguiente mensaje de error:
