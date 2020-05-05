@@ -1,22 +1,22 @@
 ---
 title: Configuring an email address on Android via the Gmail app
 slug: configuration-android
-excerpt: Find out how to configure an MX Plan email address on Android, via the Gmail app
+excerpt: Find out how to configure an email address on Android, via the Gmail app
 section: Configure on smartphone
 order: 2
 ---
 
-**Last updated 12th March 2018**
+**Last updated 5th May 2020**
 
 ## Objective
 
-You can configure MX Plan email addresses on email clients, if they are compatible. By doing so, you can use your email address through your preferred device.
+You can configure email addresses on email clients, if they are compatible. By doing so, you can use your email address through your preferred device.
 
-**Find out how to configure an MX Plan email address on Android, via the Gmail app.**
+**Find out how to configure an email address on Android, via the Gmail app.**
 
 ## Requirements
 
-- You need to have an MX Plan email address (included in the MX Plan solution and in [OVH web hosting plans](https://www.ovh.co.uk/web-hosting/){.external}).
+- You need to have an MX Plan email address (included in the MX Plan solution and in [OVHcloud Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/)).
 - You need to have the Gmail app installed on your device. You can install the app from the Google Play Store.
 - You need to have the required credentials for the email address you would like to configure.
 
@@ -90,12 +90,12 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH also has a web application you can use to access your email account from your browser, via the following address: <https://www.ovh.co.uk/mail/>. You can log in using your email credentials.
+OVHcloud also has a web application you can use to access your email account from your browser, via the following address: <https://www.ovh.com/ca/en/mail>. You can log in using your email credentials.
 
 ## Go further
 
-[Configuring an Email Pro account on Android via the Gmail app](https://docs.ovh.com/gb/en/emails-pro/configuration-android/){.external}.
+[Configuring an Email Pro account on Android via the Gmail app](../../emails-pro/configuration-android/){.external}.
 
-[Configuring an Exchange account on Android via the Gmail app](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2013_how_to_configure_on_android/){.external}.
+[Configuring an Exchange account on Android via the Gmail app](../../microsoft-collaborative-solutions/exchange_2013_how_to_configure_on_android/){.external}.  
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our community of users on <https://community.ovh.com/en/>.
