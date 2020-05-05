@@ -7,6 +7,7 @@ section: Transfert
 order: 5
 ---
 
+**Dernière mise à jour le 05/05/2020**
 
 ## Généralités
 
@@ -15,7 +16,7 @@ order: 5
 
 - Votre domaine ne doit pas être suspendu
 - Votre domaine ne doit pas être avoir de litige en cours auprès de Nominet
-- Votre domaine ne doit pas être bloqué par OVH
+- Votre domaine ne doit pas être bloqué par OVHcloud
 
 
 ### Extensions concernees
@@ -63,4 +64,4 @@ Vous pouvez retrouver les informations à partir de votre Espace client accessib
 
 
 ### Étape 3 &#58; Transmettre les informations a votre nouveau prestataire de domaine
-Les étapes sont maintenant finies chez OVH. Vous avez maintenant toutes les informations nécessaires pour transférer votre domaine.
+Les étapes sont maintenant finies chez OVHcloud. Vous avez maintenant toutes les informations nécessaires pour transférer votre domaine.
