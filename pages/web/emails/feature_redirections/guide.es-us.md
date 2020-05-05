@@ -17,48 +17,36 @@ También puede redirigir su correo a diversas direcciones y redirigir un mensaje
 
 De este modo, todos los mensajes de correo que lleguen a una redirección se enviarán a otra de sus cuentas sin que el remitente se de cuenta.
 
-![](images/img_3339.jpg){.thumbnail}
+![Redirecciones](images/img_3339.jpg){.thumbnail}
 
 
 ## Requisitos
 
-- Tener acceso al [área de cliente](https://www.ovh.com/manager/web/login/). 
-
-Si no tiene acceso al área de cliente, puede consultar la siguiente guía: 
-[]({legacy}1909).
-
-
+- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager). 
 - Si ya utiliza cuentas de correo de OVH, pase al siguiente apartado. 
-
-- Si no cuenta con un servicio de correo, consulte la siguiente guía: 
-[]({legacy}2012).
-
 
 
 ## ¿Dónde se configuran las redirecciones de correo?
 
-- Conéctese a su [área de cliente](https://www.ovh.com/manager/web/login/).
-
+- Conéctese a su [área de cliente](https://www.ovh.com/auth/?action=gotomanager).
 - Haga clic en la sección «Correo electrónico».
 
 
-
-![](images/img_3334.jpg){.thumbnail}
+![Redirecciones](images/img_3334.jpg){.thumbnail}
 
 - Seleccione el dominio para el que desea crear una redirección de correo. 
 
 
-Si no encuentra su dominio en la lista quiere decir que no tiene contratado un servicio de correo. En ese caso, haga clic en Contratar un MX Plan o consulte la siguiente guía: 
-[]({legacy}1864).
+Si no encuentra su dominio en la lista quiere decir que no tiene contratado un servicio de correo. 
 
-![](images/img_3332.jpg){.thumbnail}
+![Redirecciones](images/img_3332.jpg){.thumbnail}
 
 - Tras seleccionar su nombre de dominio, acceda a la pestaña «Correo electrónico» y haga clic en el botón «Gestión de las redirecciones».
 
 
 Accederá a la lista de redirecciones activas y podrá crear nuevas.
 
-![](images/img_3333.jpg){.thumbnail}
+![Redirecciones](images/img_3333.jpg){.thumbnail}
 
 
 ## Crear una redirección
@@ -68,20 +56,20 @@ En el centro, se mostrará un cuadro con las redirecciones activas.
 
 Si desea añadir una nueva redirección de correo, haga clic en el botón «Crear una redirección».
 
-![](images/img_3336.jpg){.thumbnail}
+![Redirecciones](images/img_3336.jpg){.thumbnail}
 Deberá tener en cuenta tres parámetros: 
 
 
 - De la dirección: Introduzca la dirección de correo que desea redirigir. Será una de sus cuentas de correo que termine por @sudominio.
 
-- A la dirección: Introduzca la dirección de destino de su redirección. Puede ser una de sus direcciones de correo de OVH o una dirección de correo externa. 
+- A la dirección: Introduzca la dirección de destino de su redirección. Puede ser una de sus direcciones de correo de OVHcloud o una dirección de correo externa. 
 
 - Guardar una copia local: Marque esta opción si desea que, además de redirigirse, los mensajes de correo también se guarden en su dirección de correo. Al marcarlo, recibirá el correo en las dos direcciones. 
 
 
 A continuación, haga clic en «Aceptar» para crear la dirección.
 
-![](images/img_3335.jpg){.thumbnail}
+![Redirecciones](images/img_3335.jpg){.thumbnail}
 
 
 ## Eliminar una redirección
@@ -94,19 +82,19 @@ Si ya no desea redirigir su correo o desea eliminar una redirección activa, acc
 
 
 
-![](images/img_3337.jpg){.thumbnail}
+![Redirecciones](images/img_3337.jpg){.thumbnail}
 
 - Haga clic en «Aceptar» para eliminar de forma definitiva la redirección.
 
 
 
-![](images/img_3338.jpg){.thumbnail}
+![Redirecciones](images/img_3338.jpg){.thumbnail}
 
 
 ## Copiar el correo que se recibe en una dirección A a una dirección B
 Si desea que todos los mensajes de correo que recibe también los reciba su secretaria, puede configurar su redirección de la siguiente manera:
 
-![](images/img_3340.jpg){.thumbnail}
+![Redirecciones](images/img_3340.jpg){.thumbnail}
 
 
 ## Redirigir el correo que se recibe en una dirección A hacia dos direcciones de correo B y C
@@ -116,5 +104,5 @@ Ha cambiado de dirección de correo, pero no desea comunicar su nueva dirección
 Ya no desea recibir los mensajes de correo en la dirección A, pero desea redirigirlos todos a sus direcciones de correo B y C.
 Deberá configurar dos redirecciones distintas, tal y como se muestra en la siguiente imagen:
 
-![](images/img_3341.jpg){.thumbnail}
+![Redirecciones](images/img_3341.jpg){.thumbnail}
 
