@@ -36,15 +36,7 @@ Choose the level of the backup offer and continue by clicking `Choose Offer`{.ac
 
 Validate contracts by clicking `Enable backup`{.action}.
 
-<<<<<<< HEAD
 Once the option is installed, a confirmation e-mail is sent to you and the activation of the backup will be indicated to you in the client area, with the reminder of the level of the chosen offer.
-=======
-A notification confirms the activation request:
-
-![Enable backup](images/backuppcc_02_fr.png){.thumbnail}
-
-Once the option is installed, a confirmation e-mail is sent to you and the activation of the backup will be indicated to you in the OVHcloud control panel, with the reminder of the level of the chosen offer.
->>>>>>> fb4aa3bf41de62b8f2411ef231c8296a6a1c7b1b
 
 ![Enable backup](images/backuppcc_03_en.png){.thumbnail}
 
