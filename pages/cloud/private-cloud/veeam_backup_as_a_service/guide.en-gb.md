@@ -30,19 +30,15 @@ Backups are performed using a virtual machine (VM) within your [Hosted Private c
 
 The first step is to enable the service from the [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager){.external}. To do this, go to the `Hosted Private Cloud`{.action} section of the `Server`{.action} tab. Click the relevant vSphere infrastructure, and then click the data center that you want. Choose the `Backup`{.action} tab.
 
-![Enable backup](images/backuppcc_01_fr.png){.thumbnail}
+![Enable backup](images/backuppcc_01_en.png){.thumbnail}
 
 Choose the level of the backup offer and continue by clicking `Choose Offer`{.action}.
 
 Validate contracts by clicking `Enable backup`{.action}.
 
-A notification confirms the activation request:
+Once the option is installed, a confirmation e-mail is sent to you and the activation of the backup will be indicated to you in the client area, with the reminder of the level of the chosen offer.
 
-![Enable backup](images/backuppcc_02_fr.png){.thumbnail}
-
-Once the option is installed, a confirmation e-mail is sent to you and the activation of the backup will be indicated to you in the OVHcloud control panel, with the reminder of the level of the chosen offer.
-
-![Enable backup](images/backuppcc_03_fr.png){.thumbnail}
+![Enable backup](images/backuppcc_03_en.png){.thumbnail}
 
 The service can be used directly from vSphere.
 
