@@ -6,9 +6,10 @@ section: DNS and DNS zone
 order: 9
 ---
 
+**Last updated 5th May 2020**
 
 ## 
-OVH will give you a secondary DNS if you want to use your server as your domain's primary DNS.
+OVHcloud will give you a secondary DNS if you want to use your server as your domain's primary DNS.
 
 You can find the secondary DNS option under the VPS section in your Control Panel.
 
