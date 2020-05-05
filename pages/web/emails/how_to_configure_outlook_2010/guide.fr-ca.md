@@ -7,7 +7,9 @@ section: Configuration sur ordinateur
 hidden: true
 ---
 
-Cliquez [ici](http://www.ovh.com/fr/hebergement-web/faq){.external} pour retrouver nos différents guides de configuration e-mail.
+**Dernière mise à jour le 05/05/2020**
+
+Cliquez [ici](http://www.ovh.com/ca/fr/hebergement-web/faq){.external} pour retrouver nos différents guides de configuration e-mail.
 
 Ce guide vous permettra de paramétrer vos comptes e-mails avec Outlook 2010. Vous n'avez qu'à suivre les étapes pas à pas.
 
@@ -15,7 +17,7 @@ Ce guide vous permettra de paramétrer vos comptes e-mails avec Outlook 2010. Vo
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -70,7 +72,7 @@ Sur cette page il vous faut entrer les informations suivantes :
 
 
 ### General
-1. Cliquez sur Paramètres supplémentaires.... Vous pouvez saisir la référence du compte que vous souhaitez. Par défaut, il s'agit de l'adresse e-mail. Ici, nous l'avons remplacée par  **Support OVH** . Cette référence sera affichée dans la gestion de comptes e-mail dans Outlook.
+1. Cliquez sur Paramètres supplémentaires.... Vous pouvez saisir la référence du compte que vous souhaitez. Par défaut, il s'agit de l'adresse e-mail. Ici, nous l'avons remplacée par  **Support OVHcloud** . Cette référence sera affichée dans la gestion de comptes e-mail dans Outlook.
 
 1. Cliquez ensuite sur l'onglet Serveur sortant.
 
