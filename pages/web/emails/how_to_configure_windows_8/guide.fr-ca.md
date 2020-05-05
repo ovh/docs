@@ -7,14 +7,16 @@ section: Configuration sur ordinateur
 hidden: true
 ---
 
-Cliquez [ici](http://www.ovh.com/fr/hebergement-web/faq){.external} pour retrouver nos différents guides de configuration e-mail.
+**Dernière mise à jour le 05/05/2020**
+
+Cliquez [ici](http://www.ovh.com/ca/fr/hebergement-web/faq){.external} pour retrouver nos différents guides de configuration e-mail.
 
 *Uniquement la configuration en IMAP sera possible dans l'application Courrier de Windows 8.*
 
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -37,7 +39,7 @@ Placez votre curseur sur la partie de droite, et sélectionnez "Paramètres".
 
 
 ### Comptes
-Cliquez ensuite sur l'icône "Comptes" afin d'ajouter votre nouveau compte e-mail mutualisé OVH.
+Cliquez ensuite sur l'icône "Comptes" afin d'ajouter votre nouveau compte e-mail mutualisé OVHcloud.
 
 
 ![emails](images/img_1143.jpg){.thumbnail}
@@ -64,9 +66,9 @@ Vous devez sélectionner le type de compte e-mail à ajouter. Cliquez sur l'icô
 ### Parametres
 Sur cette nouvelle interface, renseignez dans le champ :
 
-"Adresse de messagerie" : L'adresse e-mail mutualisé OVH en entier.
+"Adresse de messagerie" : L'adresse e-mail mutualisé OVHcloud en entier.
 
-"Mot de passe" : Le mot de passe défini dans [l'espace client](https://www.ovh.com/managerv3){.external} pour ce compte e-mail.
+"Mot de passe" : Le mot de passe défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external} pour ce compte e-mail.
 
 Cliquez sur l'icône "Connecter" pour continuer.
 
@@ -81,7 +83,7 @@ Dans cette interface, renseignez dans le champ :
 
 "Nom d'utilisateur" : Vous devez renseigner votre adresse e-mail entière.
 
-"Mot de passe" : Le mot de passe défini dans [l'espace client](https://www.ovh.com/managerv3){.external} pour ce compte e-mail.
+"Mot de passe" : Le mot de passe défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external} pour ce compte e-mail.
 
 "Serveur de messagerie entrant (IMAP)" : L'adresse du serveur est donc  **SSL0.OVH.NET** Le  **"Port"**  est   **993** .
 
@@ -137,7 +139,7 @@ Voici les informations à retenir pour la configuration d'un compte e-mail **POP
 
 Configuration  **POP**  avec sécurisation SSL activée ou désactivée :
 
-Adresse Email : Votre adresse e-mail mutualisée entière. Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/managerv3/){.external}. Nom d'utilisateur : Votre adresse e-mail mutualisée entière. Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET** Port serveur entrant : Le port du serveur entrant :  **995**  ou  **110** Serveur sortant : Le serveur d'envoi des e-mails :  **SSL0.OVH.NET** Port serveur sortant : Le port du serveur sortant :  **465**  ou  **587**
+Adresse Email : Votre adresse e-mail mutualisée entière. Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Nom d'utilisateur : Votre adresse e-mail mutualisée entière. Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET** Port serveur entrant : Le port du serveur entrant :  **995**  ou  **110** Serveur sortant : Le serveur d'envoi des e-mails :  **SSL0.OVH.NET** Port serveur sortant : Le port du serveur sortant :  **465**  ou  **587**
 
 Les ports  **110**  et  **587**  correspondent à la sécurisation SSL désactivée. Les ports  **995**  et  **465**  correspondent à la sécurisation SSL activée.
 
@@ -154,7 +156,7 @@ Voici les informations à retenir pour la configuration d'un compte e-mail **IMA
 
 Configuration  **IMAP**  avec sécurisation SSL activée ou désactivée :
 
-Adresse Email : Votre adresse e-mail mutualisée entière. Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/managerv3/){.external}. Nom d'utilisateur : Votre adresse e-mail mutualisée entière. Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET** Port serveur entrant : Le port du serveur entrant :  **993**  ou  **143** Serveur sortant : Le serveur d'envoi des e-mails :  **SSL0.OVH.NET** Port serveur sortant : Le port du serveur sortant :  **465**  ou  **587**
+Adresse Email : Votre adresse e-mail mutualisée entière. Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Nom d'utilisateur : Votre adresse e-mail mutualisée entière. Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET** Port serveur entrant : Le port du serveur entrant :  **993**  ou  **143** Serveur sortant : Le serveur d'envoi des e-mails :  **SSL0.OVH.NET** Port serveur sortant : Le port du serveur sortant :  **465**  ou  **587**
 
 Les ports  **143**  et  **587**  correspondent à la sécurisation SSL désactivée. Les ports  **993**  et  **465**  correspondent à la sécurisation SSL activée.
 
