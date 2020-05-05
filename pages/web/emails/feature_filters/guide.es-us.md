@@ -27,15 +27,12 @@ entonces,
 Es necesario:
 
 
-- Tener un servicio de correo [MX Plan](https://www.ovh.es/productos/mxplan.xml) o un [plan de hosting](https://www.ovh.es/hosting/).
-- Tener acceso al [área de cliente](https://www.ovh.com/manager/web/login/) de OVH.
-
-
-Si no puede acceder al área de cliente, consulte [esta guía](https://www.ovh.es/g1909.web_hosting_administrar_y_acceder_a_sus_contrasenas).
+- Tener un servicio de correo [MX Plan](https://www.ovh.com/world/es/productos/mxplan.xml) o un [plan de hosting](https://www.ovh.com/world/es/hosting/).
+- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager) de OVHcloud.
 
 
 ## ¿Dónde se configuran los filtros de correo?
-Para empezar, conéctese al [área de cliente](https://www.ovh.com/manager/web/login/).
+Para empezar, conéctese al [área de cliente](https://www.ovh.com/auth/?action=gotomanager).
 
 Seleccione en la columna izquierda el dominio al que está asociado el servicio de correo.
 
@@ -43,10 +40,10 @@ La tabla que muestra las distintas direcciones de correo contiene una columna ll
 
 Haga clic en el icono con forma de embudo situado en esa columna correspondiente a la cuenta de la que desee gestionar los filtros.
 
-![](images/img_3240.jpg){.thumbnail}
+![filtros](images/img_3240.jpg){.thumbnail}
 Para añadir un filtro, haga clic en el botón «Añadir un filtro».
 
-![](images/img_3239.jpg){.thumbnail}
+![filtros](images/img_3239.jpg){.thumbnail}
 
 
 ## Información
@@ -83,7 +80,7 @@ Valor
 
 
 
-![](images/img_3241.jpg){.thumbnail}
+![filtros](images/img_3241.jpg){.thumbnail}
 
 
 ## Acción
@@ -140,5 +137,5 @@ Aquí es donde se configuran las acciones, es decir, lo que hará el filtro si s
 
 En este caso, habría que configurar dos reglas:
 
-![](images/img_3242.jpg){.thumbnail}
+![filtros](images/img_3242.jpg){.thumbnail}
 
