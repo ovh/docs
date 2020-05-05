@@ -1,5 +1,5 @@
 ---
-title: Python - Word count with Apache Spark
+title: Analyzing most used words in lyrics with Apache Spark
 slug: wordcount-spark
 excerpt: Couting occurences of words in a file is a basic example about how using Apache Spark. Let's find out how !
 section: Tutorials
