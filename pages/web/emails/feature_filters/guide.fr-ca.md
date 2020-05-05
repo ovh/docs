@@ -7,8 +7,9 @@ section: 'Fonctionnalités des adresses e-mail'
 order: 5
 ---
 
-Vous trouverez dans ce guide différentes informations et aides concernant la configuration de vos filtres d'e-mails, par exemple pour filtrer les SPAMS reçus.
+**Dernière mise à jour le 05/05/2020**
 
+Vous trouverez dans ce guide différentes informations et aides concernant la configuration de vos filtres d'e-mails, par exemple pour filtrer les SPAMS reçus.
 
 ## Généralité sur les filtres d'e-mails
 
@@ -24,9 +25,8 @@ Par exemple : vous souhaitez que tout e-mail contenant "[SPAM]" dans le sujet so
 
 ### Prérequis
 
-- Avoir une offre e-mail MX Plan ou un [Pack Hébergement Web](https://www.ovh.com/fr/hebergement-web/){.external} .
+- Avoir une offre e-mail MX Plan ou un [Pack Hébergement Web](https://www.ovh.com/ca/fr/hebergement-web/){.external} .
 - Avoir l'accès à votre [espace client](https://www.ovh.com/manager/web/login/){.external}.
-
 
 ### Ou se configurent les filtres d'e-mails ?
 
