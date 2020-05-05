@@ -5,7 +5,7 @@ excerpt: 'Cómo configurar una cuenta de correo electrónico en la aplicación C
 section: Windows
 ---
 
-**Última actualización: 15/06/2018**
+**Última actualización: 05/05/2020**
 
 ## Objetivo
 
@@ -15,13 +15,13 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 ## Requisitos
 
-- Tener una cuenta MX Plan (incluida en un MX Plan o en un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}).
+- Tener una cuenta MX Plan (incluida en un MX Plan o en un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}).
 - Tener la aplicación Correo instalada en su dispositivo.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
 > [!primary]
 >
-> Si utiliza una versión anterior de Windows, consulte nuestra guía [Correo: Guía de configuración en Windows 8](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_windows_8/){.external}.
+> Si utiliza una versión anterior de Windows, consulte nuestra guía [Correo: Guía de configuración en Windows 8](../correo_guia_de_configuracion_en_windows_8/){.external}.
 >
 
 ## Procedimiento
@@ -83,12 +83,8 @@ Si la aplicación le pide que introduzca de forma manual algunos datos técnicos
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVH ofrece una aplicación web con la que podrá acceder a su cuenta de correo electrónico desde el navegador, disponible en la dirección [https://www.ovh.es/mail/](https://www.ovh.es/mail/){.external}). Puede acceder con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud ofrece una aplicación web con la que podrá acceder a su cuenta de correo electrónico desde el navegador, disponible en la dirección [https://www.ovh.com/world/es/mail/](https://www.ovh.com/world/es/mail/){.external}). Puede acceder con el nombre de usuario y la contraseña de su dirección de correo electrónico.
  
 ## Más información
 
-[Configurar una cuenta Email Pro en la aplicación Correo de Windows](https://docs.ovh.com/es/emails-pro/configuracion-correo-windows-10/){.external}
-
-[Configurar una cuenta Exchange en la aplicación Correo de Windows](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-correo-windows-10/){.external}
-
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
