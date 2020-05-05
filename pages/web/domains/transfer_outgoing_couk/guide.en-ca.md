@@ -6,6 +6,7 @@ section: Transfer
 order: 5
 ---
 
+**Last updated 5th May 2020**
 
 ## Prerequisites
 To transfer a .co.uk domain name or equivalent to another registrar, make sure that it meets the following conditions:
@@ -13,7 +14,7 @@ To transfer a .co.uk domain name or equivalent to another registrar, make sure t
 
 - Your domain must not have expired. 
 - Your domain name must not be the subject of an ongoing dispute with Nominet
-- Your domain must not be blocked by OVH
+- Your domain must not be blocked by OVHcloud
 
 
 
@@ -31,7 +32,7 @@ To transfer a .co.uk domain name or equivalent to another registrar, make sure t
 
 
 ## Step 1: Verify domain name information
-You can find the information in your control panel [here](https://www.ovh.com/manager/web/login/). 
+You can find the information in your [Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 You must log in as the administrative contact.
 
 
@@ -39,7 +40,7 @@ You must log in as the administrative contact.
 
 
 
-![](images/img_4266.jpg){.thumbnail}
+![domaininfo](images/img_4266.jpg){.thumbnail}
 
 
 ## Step 2: Change your domain TAG
@@ -48,14 +49,14 @@ You must log in as the administrative contact.
 
 
 
-![](images/img_4267.jpg){.thumbnail}
+![domaintag](images/img_4267.jpg){.thumbnail}
 
 - Specify the TAG provided by your future registrar, then click "confirm".
 
 
 
-![](images/img_4268.jpg){.thumbnail}
-If for whatever reason you cannot modify your domain's TAG in your control panel, you can ask Nominet to modify it for you. 
+![domaintag](images/img_4268.jpg){.thumbnail}
+If for whatever reason you cannot modify your domain's TAG in your Control Panel, you can ask Nominet to modify it for you. 
 
 Go to this page on the Registry's website: [Manage your domain - Change registrar](http://www.nominet.org.uk/uk-domain-names/manage-your-domain/change-registrar).
 Please note, you will be charged for this service.
@@ -64,3 +65,6 @@ Please note, you will be charged for this service.
 ## Step 3: Pass the information on to your new domain name provider
 This is all you need to do. You now have all the information you need to transfer your domain name.
 
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
