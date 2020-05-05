@@ -1,22 +1,22 @@
 ---
 title: 'Configuring your email address in the Mail application for Windows 10'
 slug: mail-configuration-windows-10
-excerpt: 'Find out how to configure your MX Plan email address in the Mail app for Windows 10.'
+excerpt: 'Find out how to configure your email address in the Mail app for Windows 10.'
 section: 'Configure on computer'
 order: 4
 ---
 
-**Last updated 4th April 2018**
+**Last updated 5th May 2020**
 
 ## Objective
 
-You can configure MX Plan email addresses on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application.
+You can configure email addresses on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application.
 
-**Find out how to configure your MX Plan email address in the Mail application for Windows 10.**
+**Find out how to configure your email address in the Mail application for Windows 10.**
 
 ## Requirements
 
-- You need to have an MX Plan email address (included in the MX Plan solution, and in [OVH Web Hosting plans](https://www.ovh.co.uk/web-hosting/){.external}).
+- You need to have an MX Plan email address, available as part of our [Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/).
 - You need to have the Mail app installed on your device.
 - You need to have the required credentials for the email address you would like to configure.
 
@@ -60,7 +60,7 @@ To check that the account has been correctly configured, you can send a test ema
 
 ![mxplan](images/configuration-mail-windows-step2.png){.thumbnail}
 
-If you need to enter any settings manually in your account preferences, the technical settings you will need to use with our MX Plan solution are listed below:
+If you need to enter any settings manually in your account preferences, the technical settings you will need to use are listed below:
 
 - **For IMAP4 configuration**
 
@@ -80,12 +80,12 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH also has a web application you can use to access your email account from your browser. You can access this application via the following address: <https://www.ovh.co.uk/mail/>. You can log in using your email credentials.
+OVHcloud also has a web application you can use to access your email account from your browser. You can access this application via the following address: <https://www.ovh.com/ca/en/mail>. You can log in using your email credentials.
  
 ## Go further
 
-[Configuring your Email Pro account in the Mail app for Windows](https://docs.ovh.com/gb/en/emails-pro/mail-configuration-windows-10/){.external}
+[Configuring your Email Pro account in the Mail app for Windows](../../emails-pro/mail-configuration-windows-10/){.external}
 
-[Configuring your Exchange account in the Mail app for Windows](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/mail-configuration-windows-10/){.external}
+[Configuring your Exchange account in the Mail app for Windows](../../microsoft-collaborative-solutions/mail-configuration-windows-10/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.
