@@ -59,7 +59,6 @@ Create a new Python file in the same folder as your CSV file and add inside it:
 
 ```python
 import sys
-import numpy
 
 from operator import add
 from pyspark.sql import SparkSession
