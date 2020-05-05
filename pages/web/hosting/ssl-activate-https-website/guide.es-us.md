@@ -6,19 +6,19 @@ section: SSL
 order: 2
 ---
 
-**Última actualización: 05/12/2018**
+**Última actualización: 05/05/2020**
 
 ## Objetivo
 
-Los planes de hosting de OVH incluyen un certificado SSL gratuito. Dicho certificado permite establecer una conexión segura con uno o más sitios web y que, por tanto, sea posible acceder a ellos a través de HTTPS. Sin embargo, para poder disfrutar de esta conexión segura, es necesario configurar previamente el sitio web.
+Los planes de hosting de OVHcloud incluyen un certificado SSL gratuito. Dicho certificado permite establecer una conexión segura con uno o más sitios web y que, por tanto, sea posible acceder a ellos a través de HTTPS. Sin embargo, para poder disfrutar de esta conexión segura, es necesario configurar previamente el sitio web.
 
 **Esta guía explica cómo habilitar el protocolo HTTPS en un sitio web con certificado SSL.**
 
 ## Requisitos
 
-- Tener un [certificado SSL](https://www.ovh.es/ssl/){.external} instalado en su [alojamiento web de OVH](https://www.ovh.es/hosting/){.external}.
-- Tener al menos un sitio web instalado y accesible en su alojamiento web de OVH.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
+- Tener un [certificado SSL](https://www.ovh.com/world/es/ssl/){.external} instalado en su [alojamiento web de OVH](https://www.ovh.com/world/es/hosting/){.external}.
+- Tener al menos un sitio web instalado y accesible en su alojamiento web de OVHcloud.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
 
 ## Procedimiento
 
@@ -41,16 +41,16 @@ A continuación se resumen los pasos necesarios para habilitar la conexión HTTP
 
 ### 1. Activar el certificado SSL en el alojamiento web
 
-Para activar el certificado SSL en un alojamiento web, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} y realice las siguientes acciones:
+Para activar el certificado SSL en un alojamiento web, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y realice las siguientes acciones:
 
 |Acción|Descripción|
 |---|---|
 |Activar un certificado SSL en el alojamiento web|Una vez que haya elegido el certificado SSL más adecuado en función de sus necesidades, OVH lo instalará en su alojamiento.|
 |Activar el certificado SSL en el multisitio correspondiente|El sitio web en el que quiera activar el protocolo HTTPS debe estar configurado como multisitio en el alojamiento web. Asimismo, asegúrese de que el certificado SSL está activado para el multisitio.|
 
-Para más información sobre estas dos acciones, consulte nuestra guía [Gestionar un certificado SSL en un alojamiento web](https://docs.ovh.com/es/hosting/gestionar-un-certificado-ssl-en-un-alojamiento-web/){.external}. Si ha contratado recientemente su alojamiento web con OVH, es posible que este último ya tenga un certificado SSL instalado y que la conexión SSL para el multisitio ya esté activa.
+Para más información sobre estas dos acciones, consulte nuestra guía [Gestionar un certificado SSL en un alojamiento web](../gestionar-un-certificado-ssl-en-un-alojamiento-web/){.external}. Si ha contratado recientemente su alojamiento web con OVH, es posible que este último ya tenga un certificado SSL instalado y que la conexión SSL para el multisitio ya esté activa.
 
-Para comprobarlo, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. Por defecto, se abrirá la pestaña **Información general**. En el panel **Configuración**, consulte la información que aparece bajo el epígrafe **Certificado SSL**. Si se indica «Sí», significa que hay un certificado SSL instalado en el alojamiento web. 
+Para comprobarlo, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. Por defecto, se abrirá la pestaña **Información general**. En el panel **Configuración**, consulte la información que aparece bajo el epígrafe **Certificado SSL**. Si se indica «Sí», significa que hay un certificado SSL instalado en el alojamiento web. 
 
 ![Sitio web en HTTPS](images/activate-https-website-ssl-step2.png){.thumbnail}
 
@@ -58,7 +58,7 @@ A continuación, abra la pestaña `Multisitio`{.action}. Aparecerá una tabla en
 
 ![Sitio web en HTTPS](images/activate-https-website-ssl-step3.png){.thumbnail}
 
-Si tiene dificultades para comprobar si el certificado SSL está instalado en su alojamiento web y/o está activo en el multisitio correspondiente, consulte la guía [Gestionar un certificado SSL en un alojamiento web](https://docs.ovh.com/es/hosting/gestionar-un-certificado-ssl-en-un-alojamiento-web/){.external}.
+Si tiene dificultades para comprobar si el certificado SSL está instalado en su alojamiento web y/o está activo en el multisitio correspondiente, consulte la guía [Gestionar un certificado SSL en un alojamiento web](../gestionar-un-certificado-ssl-en-un-alojamiento-web/){.external}.
 
 ### 2. Comprobar el entorno técnico
 
@@ -68,7 +68,7 @@ Le recomendamos que tenga en cuenta las consideraciones que se ofrecen a continu
 
 > [!warning]
 >
-> La responsabilidad sobre la configuración y la gestión de los servicios que OVH pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+> La responsabilidad sobre la configuración y la gestión de los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 >
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía. 
 >
@@ -145,4 +145,4 @@ Si el contenido del sitio web se muestra con normalidad en HTTPS y no aparece ni
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
