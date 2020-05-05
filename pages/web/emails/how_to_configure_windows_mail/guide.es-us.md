@@ -12,7 +12,7 @@ Abra Windows Mail y cree una nueva cuenta.
 
 Cumplimente los campos y haga clic en «Siguiente».
 
-![](images/img_1268.jpg){.thumbnail}
+![windows-mail](images/img_1268.jpg){.thumbnail}
 
 
 ## Etapa 2: Configuración de la cuenta de correo
@@ -33,5 +33,5 @@ Haga clic en «Siguiente» para finalizar.
 
 La cuenta de correo estará correctamente configurada.
 
-![](images/img_1269.jpg){.thumbnail}
+![windows-mail](images/img_1269.jpg){.thumbnail}
 
