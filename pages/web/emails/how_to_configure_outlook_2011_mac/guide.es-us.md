@@ -14,7 +14,7 @@ En este caso, vamos a configurar la aplicación en IMAP, con el SSL activado. He
 
 Si desea configurar la aplicación en POP, puede hacerlo con los datos que se indican al final de esta guía.
 
-![](images/img_1492.jpg){.thumbnail}
+![outlook2011](images/img_1492.jpg){.thumbnail}
 
 
 ## Etapa 2: Herramientas - Cuentas
@@ -22,7 +22,7 @@ En la barra de menús, haga clic en «Herramientas» y seleccione «Cuentas».
 
 En el ejemplo, aún no hay ninguna cuenta configurada en la aplicación.
 
-![](images/img_1493.jpg){.thumbnail}
+![outlook2011](images/img_1493.jpg){.thumbnail}
 
 
 ## Etapa 3: Añadir una cuenta
@@ -30,7 +30,7 @@ Aparecerá una nueva ventana.
 
 Seleccione el icono «Cuenta de correo electrónico» para añadir una cuenta de correo electrónico en POP o IMAP.
 
-![](images/img_1494.jpg){.thumbnail}
+![outlook2011](images/img_1494.jpg){.thumbnail}
 
 
 ## Etapa 4: Datos de la cuenta
@@ -38,7 +38,7 @@ En la nueva pantalla, introduzca los siguientes datos:
 
 Dirección de correo electrónico: Dirección de correo electrónico completa.
 
-Contraseña: La contraseña elegida en el [manager](https://www.ovh.es/managerv3/).
+Contraseña: La contraseña elegida en el [manager](https://www.ovh.com/auth/?action=gotomanager).
 
 Nombre de usuario: Dirección de correo electrónico completa. 
 
@@ -56,13 +56,13 @@ Si la aplicación le pregunta si quiere añadir la contraseña al llavero de Mac
 
 Haga clic en «Agregar cuenta» para guardar la cuenta.
 
-![](images/img_1495.jpg){.thumbnail}
+![outlook2011](images/img_1495.jpg){.thumbnail}
 
 
 ## Etapa 5: Finalizar
 La cuenta de correo ya aparecerá en la interfaz de Outlook 2011, y podrá consultar, redactar o eliminar sus mensajes de correo electrónico.
 
-![](images/img_1496.jpg){.thumbnail}
+![outlook2011](images/img_1496.jpg){.thumbnail}
 
 
 ## Herramientas - Cuentas
@@ -76,25 +76,25 @@ Aquí también puede cambiar la información de configuración de su cuenta de c
 
 A continuación se describen las opciones disponibles en «Avanzadas...».
 
-![](images/img_1497.jpg){.thumbnail}
+![outlook2011](images/img_1497.jpg){.thumbnail}
 
 
 ## Servidor
 En la imagen puede ver las opciones configurables de la pestaña «Servidor», en las preferencias avanzadas de la cuenta.
 
-![](images/img_1498.jpg){.thumbnail}
+![outlook2011](images/img_1498.jpg){.thumbnail}
 
 
 ## Carpetas
 En la imagen puede ver las opciones configurables de la pestaña «Carpetas», en las preferencias avanzadas de la cuenta.
 
-![](images/img_1499.jpg){.thumbnail}
+![outlook2011](images/img_1499.jpg){.thumbnail}
 
 
 ## Seguridad
 En la imagen puede ver las opciones configurables de la pestaña «Seguridad», en las preferencias avanzadas de la cuenta.
 
-![](images/img_1500.jpg){.thumbnail}
+![outlook2011](images/img_1500.jpg){.thumbnail}
 
 
 ## Configuración POP
@@ -103,7 +103,7 @@ A continuación recordamos los valores de configuración de una cuenta de correo
 Configuración POP con la protección SSL activada o desactivada:
 
 Dirección de correo electrónico: Dirección de correo electrónico completa.
-Contraseña: La contraseña elegida en el [manager](https://www.ovh.es/managerv3/).
+Contraseña: La contraseña elegida en el [manager](https://www.ovh.com/auth/?action=gotomanager).
 Nombre de usuario: Dirección de correo electrónico completa
 Servidor entrante:SSL0.OVH.NET
 Puerto del servidor entrante:995 o 110
@@ -120,7 +120,7 @@ A continuación recordamos los valores de configuración de una cuenta de correo
 Configuración IMAP con la protección SSL activada o desactivada:
 
 Dirección de correo electrónico: Dirección de correo electrónico completa.
-Contraseña: La contraseña elegida en el [manager](https://www.ovh.es/managerv3/).
+Contraseña: La contraseña elegida en el [manager](https://www.ovh.com/auth/?action=gotomanager).
 Nombre de usuario: Dirección de correo electrónico completa
 Servidor entrante:SSL0.OVH.NET
 Puerto del servidor entrante:993 o 143
