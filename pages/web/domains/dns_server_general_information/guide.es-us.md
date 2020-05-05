@@ -1,12 +1,12 @@
 ---
-title: 'Cambiar los servidores DNS de un dominio en OVH'
+title: 'Cambiar los servidores DNS de un dominio en OVHcloud'
 slug: web_hosting_informacion_general_sobre_los_servidores_dns
-excerpt: 'Cómo cambiar los servidores DNS de un dominio registrado en OVH'
+excerpt: 'Cómo cambiar los servidores DNS de un dominio registrado en OVHcloud'
 section: 'DNS (servidor y zona)'
 order: 1
 ---
 
-**Última actualización: 17/05/2019**
+**Última actualización: 05/05/2020**
 
 ## Objetivo
 
@@ -14,17 +14,17 @@ La función de los servidores DNS es alojar la configuración DNS de los dominio
 
 Dicho de otra forma, los registros DNS, que se almacenan en los servidores DNS, permiten que se pueda acceder a los dominios desde internet.
 
-**Esta guía explica cómo cambiar los servidores DNS de un dominio en OVH.**
+**Esta guía explica cómo cambiar los servidores DNS de un dominio en OVHcloud.**
 
 ## Requisitos
 
-- Tener un dominio registrado en OVH.
-- Disponer de los [permisos necesarios para gestionar el dominio](https://docs.ovh.com/es/customer/gestion-de-los-contactos/){.external} desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Tener un dominio registrado en OVHcloud.
+- Disponer de los [permisos necesarios para gestionar el dominio](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/){.external} desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 > [!warning]
 >
-> Si el dominio no está registrado en OVH, deberá editar los servidores DNS desde el panel que le ofrezca el proveedor que tenga su gestión.
+> Si el dominio no está registrado en OVHcloud, deberá editar los servidores DNS desde el panel que le ofrezca el proveedor que tenga su gestión.
 >
 
 ## Procedimiento
@@ -37,7 +37,7 @@ Tenga en cuenta los siguientes aspectos:
 
 - El contenido de la antigua configuración DNS no se replica automáticamente en la nueva. Por lo tanto, deberá asegurarse de que la nueva configuración contiene toda la información necesaria para que los servicios asociados al dominio (como el sitio web o las direcciones de correo electrónico) funcionen correctamente.
 
-- Si quiere modificar un único elemento de la configuración DNS actual (un registro DNS, por ejemplo), le recomendamos que edite la zona DNS como se indica en la guía [Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}.
+- Si quiere modificar un único elemento de la configuración DNS actual (un registro DNS, por ejemplo), le recomendamos que edite la zona DNS como se indica en la guía [Editar una zona DNS de OVHcloud](../domains/web_hosting_como_editar_mi_zona_dns/){.external}.
 
 - Existen registros (las entidades encargadas de gestionar las extensiones de dominio) que aplican requisitos particulares relativos a los servidores DNS: número de servidores de nombres, valor de los registros... En caso de duda, consulte con el registro responsable de la extensión.
 
@@ -48,9 +48,9 @@ Tenga en cuenta los siguientes aspectos:
 
 ### 1. Acceder a la zona de gestión de los servidores DNS del dominio
 
-En primer lugar, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Servidores DNS`{.action}.
+En primer lugar, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Servidores DNS`{.action}.
 
-Se mostrará una tabla con los servidores DNS actualmente configurados en OVH para el dominio. Cada línea de la tabla contiene un servidor DNS (puede haber varios).
+Se mostrará una tabla con los servidores DNS actualmente configurados en OVHcloud para el dominio. Cada línea de la tabla contiene un servidor DNS (puede haber varios).
 
 ![Servidor DNS](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
@@ -64,7 +64,7 @@ Una vez que haya introducido los datos, haga clic en el botón `Aplicar la confi
 
 > [!primary]
 >
-> El botón `Restaurar los servidores DNS`{.action} permite sustituir los servidores DNS actuales del dominio por los servidores de OVH de origen. Le recomendamos que solo utilice esta opción si quiere volver a utilizar los servidores DNS de OVH. 
+> El botón `Restaurar los servidores DNS`{.action} permite sustituir los servidores DNS actuales del dominio por los servidores de OVHcloud de origen. Le recomendamos que solo utilice esta opción si quiere volver a utilizar los servidores DNS de OVHcloud. 
 >
 
 ![Servidor DNS](images/edit-dns-server-ovh-step2.png){.thumbnail}
@@ -73,11 +73,11 @@ Una vez que haya introducido los datos, haga clic en el botón `Aplicar la confi
 
 Una vez que haya realizado los cambios, deberá esperar a que se apliquen. Ocurrirán dos cosas:
 
-- En primer lugar, el registro encargado de gestionar la extensión del dominio debe aplicar los cambios realizados desde OVH. Puede consultar el progreso de esta operación en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, en la columna izquierda, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
+- En primer lugar, el registro encargado de gestionar la extensión del dominio debe aplicar los cambios realizados desde OVHcloud. Puede consultar el progreso de esta operación en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, en la columna izquierda, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
 - Una vez que el registro encargado de gestionar la extensión del dominio haya aplicado los cambios, estos tardan un máximo de 48 horas en propagarse y ser efectivos.
 
 ## Más información
 
-[Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}
+[Editar una zona DNS de OVHcloud](../domains/web_hosting_como_editar_mi_zona_dns/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
