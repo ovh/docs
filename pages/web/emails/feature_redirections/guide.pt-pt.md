@@ -1,115 +1,128 @@
 ---
-title: 'Mail Partilhado: Guia dos reencaminhamentos email'
-excerpt: 'Mail Partilhado: Guia dos reencaminhamentos email'
+title: 'Guia dos reencaminhamentos email'
+excerpt: 'Saiba como gerir os reencaminhamentos e-mail'
 slug: mail_partilhado_guia_dos_reencaminhamentos_email
+section: 'Funcionalidades dos endereços e-mail'
 legacy_guide_number: g2001
 ---
 
+**Última atualização: 16/04/2020**
 
-## O que é um reencaminhamento email?
-Um reencaminhamento permite reencaminhar um e-mail recebido num primeiro endereço para um ou vários endereços de e-mail.
+## Objetivo
 
-Por exemplo, quando deseja:
+Este guia apresenta diferentes informações e dicas quanto à configuração dos reencaminhamentos de e-mails, nomeadamente para reencaminhar e-mails recebidos num endereço A para um endereço B.
 
-- um e-mail enviado para meuendereco@dominio.pt
-- seja reenviado para meuoutroendereco@meuoutrodominio.pt.
+## Informação Geral
 
+### O que é um reencaminhamento de e-mail?
 
-Esta alteração permite comunicar apenas o primeiro endereço público (monadresse@mypersonaldomain.ovh), sem que as outras pessoas conheçam o verdadeiro endereço (meuoutroendereco@meuoutrodominio.pt).
+O reencaminhamento permite reencaminhar um e-mail recebido num primeiro endereço para um ou vários outros endereços.
 
-Pode igualmente reencaminhar para vários endereços, e igualmente reencaminhar um e-mail ao conservar a sua cópia na primeira caixa de e-mail.
+Por exemplo, quando deseja que um e-mail enviado para **omeuendereco@dominio.pt** seja reencaminhado para **omeuoutroendereco@omeuoutrodominio.pt**. Esta alteração possibilita comunicar apenas o primeiro endereço público (**omeuendereco@dominio.pt**), sem que as outras pessoas conheçam o verdadeiro endereço (**omeuoutroendereco@omeuoutrodominio.pt**).
 
-Qualquer e-mail que chegue derivado de um reencaminhamento é reencaminhado para outra caixa de e-mail sem que o remetente o saiba.
+Há dois tipos de reencaminhamento: 
 
-![](images/img_3339.jpg){.thumbnail}
+- O reencaminhamento simples (esquema 1), no qual o e-mail é enviado diretamente para o endereço de reencaminhamento e o destinatário não recebe a mensagem. 
 
+- O reencaminhamento com cópia local (esquema 2), no qual o e-mail é recebido tanto pelo destinatário quanto pelo endereço de reencaminhamento.
 
-## Pré-requisitos
+![emails](images/schema-redirect.png){.thumbnail}
 
-- Dispor de acesso ao seu [Espaço Cliente](https://www.ovh.com/manager/web/login/).
+> [!primary]
+>
+> Atenção: é possível efetuar um reencaminhamento para vários endereços de e-mail.
 
-Se não dispõe de acesso consulte o [seguinte guia](https://www.ovh.com/fr/g1909.mutualise_gerer_et_acceder_a_ses_mots_de_passe#les_differents_mots_de_passe_lies_au_service_mutualise_dovh_lacces_au_manager_dovh).
+## Requisitos
 
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Dispor do serviço MX Plan (incluído num plano de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, num [alojamento gratuito Start 10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml){.external} ou disponível em subscrição autónoma).
 
-- Se já utiliza contas de e-mail OVH passe à frente.
+## Instruções
 
-- Caso contrário, se não possui ofertas de e-mail consulte o seguinte guia: []({legacy}2012).
+A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou do facto de o serviço [ter sido migrado recentemente](https://www.ovh.pt/mxplan-migration/){.external}. Antes de continuar, deve verificar a versão de que dispõe. 
 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e, a seguir, à secção «Web». Clique em E-mails na barra à esquerda e selecione o serviço correspondente. Continue a ler em função da sua versão:
 
+|Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
+|---|---|
+|![email](images/mxplan-starter-legacy.png){.thumbnail}<br> Consulte o tipo de oferta na secção «Subscrição».|![email](images/mxplan-starter-new.png){.thumbnail}<br>Consulte a `Referência do servidor` na secção «Resumo».|
+|Continuar a ler na secção «[Versão antiga da oferta MX Plan](../partilhado_generalidades_e-mail_partilhado_ovh/#versao-antiga-da-oferta-mx-plan_2)».|Continuar a ler na secção «[Nova versão da oferta MX Plan](../partilhado_generalidades_e-mail_partilhado_ovh/#nova-versao-da-oferta-mx-plan)».|
 
+### Versão antiga da oferta MX Plan
 
-## Onde se configuram os reencaminhamentos de e-mail?
-Num primeiro tempo aceda ao seu [Espaço Cliente](https://www.ovh.com/manager/web/login/).
+#### 1.ª etapa: Aceder à gestão dos reencaminhamentos
+Por defeito, aparecerá o separador `Informações gerais`{.action} do seu MX Plan. Clique no separador `E-mails`{.action} e, a seguir, no botão `Gestão dos reencaminhamentos`{.action}, à direita.
 
-Depois de estar ligado aceda à secção Emails.
-
-![](images/img_3334.jpg){.thumbnail}
-Na lista dos nomes de domínios clique no nome de domínio onde pretende adicionar um reencaminhamento de e-mail.
-
-Se o seu domínio não está na lista é porque não possui nenhuma oferta de e-mail. É então necessário seguir [este guia](https://www.ovh.pt/g1864.encomendar_um_mx_plan) ou clique em "Encomendar um MX Plan" antes de prosseguir.
-
-![](images/img_3332.jpg){.thumbnail}
-Após clicar no seu nome de domínio chegará à secção Emails..
-
-Fique no primeiro separador Emails, e clique à direita no botão "Gestão dos reencaminhamentos".
-
-É aqui que verá a lista dos seus reencaminhamentos ativos, e poderá criar novos.
-
-![](images/img_3333.jpg){.thumbnail}
+![emails](images/mxplan-legacy-1.png){.thumbnail}
 
 
-## Adicionar um reencaminhamento
-Está nesta página.
+#### 2.ª etapa: Adicionar um reencaminhamento
 
-No centro, a tabela dos seus reencaminhamentos ativos.
-À direita poderá clicar no botão "Adicionar um reencaminhamento" para poder adicionar um novo.
+Aparecerá o quadro dos reencaminhamentos ativos. À direita, clique no botão `Adicionar um reencaminhamento`{.action}.
 
-![](images/img_3336.jpg){.thumbnail}
-Terá de configurar 3 parâmetros:
+![emails](images/mxplan-legacy-2.png){.thumbnail}
+
+Complete em função dos 3 parâmetros seguintes:
+
+|Informação|Descrição| 
+|---|---|  
+|Do endereço |Introduza o endereço de e-mail que será a fonte do reencaminhamento.|  
+|Para o endereço|Introduza o endereço de e-mail que será o destino do reencaminhamento. Pode ser um dos seus endereços de e-mail OVHcloud ou um endereço de e-mail externo.|
+|Escolha um modo de cópia|Escolha se pretende: <br> - **Conservar uma cópia do e-mail na OVHcloud** (receber os e-mails no seu endereço principal e no endereço de reencaminhamento) <br> - **Não conservar uma cópia do e-mail** (enviá-lo diretamente para o endereço de reencaminhamento sem manter uma cópia no endereço principal) <br> *cf. o [esquema](./#informacao-geral){.external} no início deste guia*|
+
+De seguida, clique em `Validar`{.action} para confirmar o novo reencaminhamento.
+
+![emails](images/mxplan-legacy-3.png){.thumbnail}
+
+> [!primary]
+> Quando escolhe o modo de cópia «**Conservar uma cópia do e-mail na OVHcloud**», cria automaticamente um reencaminhamento do endereço de e-mail para si próprio,
+> materializando a cópia local.
+> 
+
+### Nova versão da oferta MX Plan
+
+Na nova versão da oferta MX Plan, a gestão dos reencaminhamentos não é feita através da Área de Cliente, mas diretamente a partir do webmail do endereço em causa.
+
+Aceda ao webmail [aqui](https://www.ovh.com/pt/mail/){.external}. Introduza o **endereço de e-mail** e a **palavra-passe**.
+![emails](images/webmail.png){.thumbnail}
+
+#### 1.ª etapa: Aceder à gestão dos reencaminhamentos
+
+Depois de aceder ao webmail, clique na roda dentada no canto superior direito e, a seguir, em `Opções`{.action}.
+
+![emails](images/mxplan-new-1.png){.thumbnail}
+Na janela **Opções**, na coluna da esquerda, selecione a categoria **Tratamento automático** da secção **Correio**. A seguir, clique em `Regras da caixa de receção e de organização`{.action}. 
+
+![emails](images/mxplan-new-2.png){.thumbnail}
+
+Nesta janela, pode gerir os reencaminhamentos e aplicar filtros ao conjunto dos e-mails recebidos.
+
+#### 2.ª etapa: Adicionar um reencaminhamento
+
+Na janela de gestão das **Regras da caixa de receção**, clique no ícone `+`{.action}, em cima, à esquerda.
+![emails](images/mxplan-new-3.png){.thumbnail}
+
+Defina as regras necessárias a fim de criar um reencaminhamento:
+
+|Informação|Descrição| 
+|---|---|  
+|Nome |Defina o nome do reencaminhamento (quadro 1).|  
+|Quando a mensagem é recebida e cumpre todas estas condições| Se pretende que o reencaminhamento abranja todos os e-mails, selecione **\[Aplicar a todos os e-mails]** (quadro 2).|
+|Efetuar todas as operações seguintes|É aqui que implementa o reencaminhamento.  Selecione **Transferir, reencaminhar ou enviar** e, a seguir, **Reencaminhar o e-mail para...** (quadro 3). Depois, introduza o endereço para o qual deseja reencaminhar o e-mail no campo **Reencaminhar o e-mail para...** e clique em `Gravar`{.action} (quadro 4). |
 
 
-- Do endereço: Introduza aqui o endereço de e-mail que pretende reencaminhar
+![emails](images/mxplan-new-4.png){.thumbnail}
 
-Será portanto uma das suas caixas de e-mail que terminam em @SeuNomeDeDominio.
-
-
-- Para o endereço: Introduza aqui o endereço de destino do seu reencaminhamento. Poderá ser um dos seus endereços de e-mail OVH ou um endereço externo.
-
-- Guardar uma cópia local: Selecione esta opção se deseja que além dos e-mails serem reencaminhados, os e-mails sejam guardados no seu endereço de e-mail. Ao selecionar esta opção os e-mails serão distribídos pelos dois endereços.
-
-
-Clique depois em "Validar" para confirmar a adição deste reencaminhamento.
-
-![](images/img_3335.jpg){.thumbnail}
-
-
-## Eliminar um reencaminhamento
-Quando já não deseja reencaminhar os seus e-mails, ou pretende eliminar um reencaminhamento ativo, deve aceder à tabela de reencaminhamentos ativos.
-
-
-- Clique na roda dentada à direita do reencaminhamento em questão
-
-- Clique em "Eliminar o reencaminhamento"
+Neste exemplo, trata-se de um **reencaminhamento com cópia local** (ver o [esquema 2](./#informacao-geral){.external} no início deste guia). Se é o que deseja, clique em `OK`{.action} (ícone de disquete em cima, à esquerda) para a regra ser aplicada. Caso contrário, siga as instruções seguintes.
 
 
 
-![](images/img_3337.jpg){.thumbnail}
-Basta que clique em "Validar" para eliminar definitivamente o reencaminhamento.
+Para aplicar um **reencaminhamento simples** ([esquema 1](./#informacao-geral){.external}, no início deste guia), crie uma regra suplementar ao seu **reencaminhamento com cópia local** a partir desta janela. Clique em `Adicionar uma ação`{.action} (quadro 1), depois em **Transferir, copiar ou suprimir** e, por fim, em **Suprimir o e-mail**. Esta regra envia os e-mails diretamente para o lixo depois de ter reencaminhado as mensagens para o endereço final.
 
-![](images/img_3338.jpg){.thumbnail}
+![emails](images/mxplan-new-5.png){.thumbnail}
 
+Concluída a operação, clique em `OK`{.action} (ícone de disquete em cima, à esquerda).
 
-## Copiar os e-mails recebidos num endereço de e-mail A para um endereço de e-mail B
-Se deseja que todos os e-mails que lhe são enviados sejam igualmente recebidos pela sua secretária, poderá configurá-lo da seguinte forma:
+## Quer saber mais?
 
-![](images/img_3340.jpg){.thumbnail}
-
-
-## Reencaminhar os e-mails recebidos num endereço de e-mail A para dois endereços de e-mail B e C
-Situação:
-Alterou o endereço de e-mail mas não o deseja comunicar a certos contactos.
-Não deseja receber novos endereços de e-mail que lhe são enviados para o endereço A mas deseja que os e-mails sejam reencaminhados para os seus dois endereços de e-mail B et C.
-É necessário configurar dois reencaminhamentos separados, como o exemplo:
-
-![](images/img_3341.jpg){.thumbnail}
-
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
