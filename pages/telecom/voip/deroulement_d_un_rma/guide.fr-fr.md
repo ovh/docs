@@ -8,7 +8,7 @@ space_name: Téléphonie
 section: Administratif
 ---
 
-**Dernière mise à jour le 31/01/2020**
+**Dernière mise à jour le 06/05/2020**
 
 ## Objectif
 
@@ -56,6 +56,13 @@ Une partie du bon est impérativement à joindre dans le colis et l'autre volet 
 Le volet à joindre dans le colis contient une checklist des éléments à renvoyer. N'oubliez rien pour récupérer la totalité de la caution.
 
 Conservez le récépissé de dépôt du colis tant que vous n'avez pas eu confirmation de la bonne réception dans nos locaux.
+
+> [!warning]
+>
+>  Nous vous prions de bien vouloir retirer du matériel et de son emballage tout effet personnel, information ou élément qui n’aurait aucun lien avec le matériel retourné.
+>  
+>  Dans le cas contraire, OVHcloud tentera de prendre contact avec le client par courriel pour restituer les biens n’appartenant pas à OVHcloud. A compter de l’envoi de ce courriel et sans retour de la part du client dans un délai de 30 jours calendaires, OVHcloud procédera à la destruction dudit matériel.
+>
 
 ## Les rappels
 
