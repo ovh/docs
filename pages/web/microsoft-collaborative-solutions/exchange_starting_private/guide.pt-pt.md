@@ -1,167 +1,104 @@
 ---
-title: 'Exchange: Primeiros passos com um servidor Private'
-excerpt: Primeiros passos com um servidor Private
+title: 'Primeiros passos com um servidor Private'
+excerpt: 'Descubra como configurar o seu servidor Private Exchange.'
 slug: exchange_primeiros_passos_com_um_servidor_private
 legacy_guide_number: g2074
+section: 'Primeiros passos com Exchange'
 ---
 
+**Última atualização: 25/03/2020**
 
-## Etapa 1: receção do e-mail de configuração do seu servidor
-Após a encomenda paga receberá um e-mail para que possa realizar a instalação do seu servidor "Private".
-O e-mail é enviado para o endereço de contacto indicado no seu Espaço Cliente, e o e-mail está igualmente disponível no seu Espaço Cliente.
-Para consultar este e-mail a partir do seu Espaço Cliente deve:
+## Objetivo
 
+Acaba de efetuar a encomenda de uma plataforma Private Exchange. Este guia explica em pormenor como realizar a sua primeira configuração.
 
-- clicar no seu identificador (canto superior direito, sob a forma de ab12345-ovh) e depois "A minha conta"
+**Descubra como configurar a sua plataforma Private Exchange**
 
+## Requisitos
 
+- Ter encomendado uma [solução Private Exchange OVHcloud](https://www.ovh.com/pt/emails/){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
-![](images/img_4047.jpg){.thumbnail}
+## Instruções
 
-- Emails recebidos
+### Etapa 1: receção do e-mail de configuração da sua platforma
 
+Uma vez realizada a encomenda, receberá no endereço de e-mail referenciado na sua Área de Cliente, as informações para configurar a sua plataforma Private Exchange. 
 
+Para consultar este e-mail a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), clique no seu perfil, no topo da página à direita, e depois em `A minha conta`{.action}. Dirija-se ao separador `E-mails recebidos`{.action} e pesquise o e-mail com o assunto:
 
-![](images/img_4050.jpg){.thumbnail}
-Encontrará nessa secção o e-mail que lhe foi enviado para que possa efetuar a configuração do seu servidor private Exchange:
+> **\[xx-11111-ovh] O seu serviço Private Exchange 2016v1 será entregue em breve!**
 
 
-- o assunto do e-mail é:
+![first-use-private-exchange](images/first-use-private-exchange-01.png){.thumbnail}
 
-"O seu serviço Exchange 2016v1 está em curso de entrega!"
+Este e-mail contém um link que permite completar duas etapas da configuração da sua plataforma:
 
+- personalizar o link de acesso ao seu webmail (certificado SSL dedicado);
+- indicar um endereço de e-mail para validar o seu certificado (atenção: este endereço de e-mail deve existir e deverá conseguir aceder-lhe).
 
-![](images/img_4051.jpg){.thumbnail}
-Deixamos o e-mail 'template' que recebeu:
+Clique no link mencionado no e-mail e passe à [etapa 2 ](./#etape-2-initializacao-da-sua-plateforma){.external}.
 
+### Etapa 2: inicialização da sua plataforma
 
-```
-OVH.HOSTING LDA - http://www.ovh.pt
-Avenida Miguel Bombarda, 133-6ºA
-1050-164 LISBOA
+Após ter clicado no link de e-mail na [etapa 1](./#etape-1-rececao-do-email-de-configuracao-da-sua-platforma){.external}, deve identificar-se na página exibida.
 
-Estimado(a) Cliente,
+Será então redirecionado para a página de configuração:
+![first-use-private-exchange](images/first-use-private-exchange-02.png){.thumbnail}
 
-A sua oferta de e-mail Exchange Private 2016v1 está em curso de entrega.
+Complete a configuração de acordo com as indicações da tabela que se segue.
 
-No entanto, são necessárias algumas etapas a fim de poder utilizar o seu servidor Exchange Private 2016v1 
+| Informação          	| Descrição                                                                                                                                                                                                                             	|
+|----------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Nome do seu servidor 	| No menu pendente, escolha o subdomínio associado ao seu nome de domínio. <br> No campo livre, introduza o nome de domínio que deseja associar.                                                                   	|
+| E-mail               	| Escolha um endereço de e-mail da lista proposta. Este servirá para receber o e-mail de validação do certificado SSL da sua plataforma, é portanto imperativo que seja válido ou que redirecione para um endereço de e-mail acessível onde o possa receber.
+| DNS Assist           	| Ao assinalar esta opção estará a autorizar a configuração automática da sua zona DNS para o nome de domínio da sua plataforma. O domínio deve ser gerado na mesma conta OVHcloud que a sua plataforma. Se não assinalar esta opção, ser-lhe-á enviado um e-mail contendo as informações de configuração da sua zona DNS. 	|
 
-- Personalizar o sue link de acesso ao nosso website (certificado SSL dedicado)
-- Introduzir o seu endereço de e-mail correspondente para validar o seu certificado (atenção: este endereço de e-mail deve existir, e deverá poder aceder ao mesmo)
+Após a validação desta etapa surgirá uma mensagem a indicar que a configuração foi bem sucedida. Ser-lhe-á igualmente recordado o endereço de e-mail de validação do certificado SSL e o endereço de acesso ao webmail da sua plataforma.
 
-Para tal, clique no seguinte link:
+### Etapa 3: configuração manual da zona DNS do nome de domínio da sua plataforma
 
-https://www.ovh.pt/emails/encomenda/?orderId=5035xxxx&orderPassword=nqiJ#/serverConfig
+> [!primary]
+>
+> Esta etapa é facultativa se tiver assinalado a opção "**DNS Assist**" na [etapa 2](./#etape-2-initializacao-da-sua-plateforma){.external}.
+> 
 
-Deverá ser necessário autenticar-se com a ajuda do seu Nichandle (ab12345-ovh) e a respetiva password.
+Se o nome de domínio não for gerado na mesma conta de cliente ou não estiver alojado na OVHcloud, ser-lhe-á enviado um segundo e-mail contendo as informações necessárias para configurar manualmente a sua zona DNS.
 
-IMPORTANTE: uma vez efetuadas ambas as ações, basta uma última etapa: apontamento do subdomínio escolhido para o IP do seu servidor (este IP ser-lhe-á comunicado num segundo e-mail).
+O e-mail contém os endereços IPv4 e IPv6 da sua plataforma. Indique estes endereços na zona DNS do subdomínio previamente criada na [etapa 2](./#etape-2-initializacao-da-sua-plateforma){.external}, sob as formas respetivas de um registo de tipo "A" e de um registo de tipo "AAAA". Para o orientar na criação de um nome de domínio OVHcloud, consulte o nosso guia ["Editar uma zona DNS"(]../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
 
-Necessita de ajuda?
-Descubra todos os nossos guias Exchange :
 
-https://www.ovh.pt/emails/hosted-exchange-2013/guias/
 
-Cordialmente,
+### Etapa 4: validação do seu certificado SSL
 
-O seu serviço ao Cliente OVH
-```
+Após ter concluído a [etapa 2](./#etape-2-initializacao-da-sua-plateforma){.external}, ser-lhe-á enviado um e-mail para o endereço selecionado para validar o seu certificado SSL.
 
+Este e-mail ser-lhe-á enviado pela entidade responsável pela emissão do certificado SSL com o assunto:
 
+> **ORDER #1111111 - Domain Control Validation for exchange.oseudominio.com**
 
+Copie o código contido no e-mail e clique no link de validação do certificado SSL.
 
-## Etapa 2: Configuração automática da zona DNS
-Clique no link contido no e-mail recebido e será reencaminhado para a página de configuração do seu servidor.
+Cole o código na caixa correspondente da janela exibida e clique em `Next`{.action}.
 
-![](images/img_4052.jpg){.thumbnail}
+![first-use-private-exchange](images/first-use-private-exchange-03.png){.thumbnail}
 
-- "Nome do seu servidor": Deve definir o nome do seu servidort o ainda o link de acesso ao webmail. Serão apresentadas várias propostas.
+Surgirá uma mensagem a informar se o código inserido é válido. Se for o caso, clique em `Close window`{.action}.
 
+### Finalização
 
-Exemplo:
+Uma vez validado o certificado SSL, será ainda necessário aguardar 4 horas pela entrega do serviço. Durante este período, a sua plataforma Private Exchange não estará visível na sua Área de Cliente.
 
+Assim que o servidor esteja pronto e disponível, ser-lhe-á enviado um e-mail de confirmação com o assunto:
 
-- mail
-- exchange
-- exchange2016
+> **\[xx-11111-ovh] O seu serviço Private Exchange 2016v1 está pronto!**
 
+Para adicionar o primeiro nome de domínio à sua plataforma e configurar as contas, consulte o nosso guia ["Adicionar um domínio ao serviço Exchange"](../exchange_20132016_a_primeira_configuracao_do_servico/){.external}
 
-Após o subdomínio selecionado é necessário indicar um domínio válido. O link de acesso ao webmail (owa) será, por exemplo,: exchange2016.seudominio.pt
-A segunda etapa consiste em escolher um endereço de e-mail para a receção do e-mail de validação do seu certificado SSL. Este endereço deverá ser válido. Caso não seja, não conseguirá validar o seu certificado SSL.
+## Quer saber mais?
 
-A lista proposta contém os endereços de e-mail genéricos tais como:
+[Editar uma zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}
 
+[Adicionar um nome de domínio ao serviço Exchange ](../exchange_20132016_a_primeira_configuracao_do_servico/){.external}
 
-- postmaster@seudominio.pt
-- administrateur@seudominio.pt
-- admin@seudominio.pt
-
-
-Se o seu domínio está alojado na OVH e não possui este serviço de e-mail, poderá criar um reencaminhamento (Alias) de um endereco@oseudominio para um endereço existente para o seu Espaço Cliente.
-
-É igualmente possível que crie um reencaminhamento de e-mail para um endereço existente.
-A opção Assistente DNS: Esta opção permite a configuração automática da sua zona DNS  (Criação do campo do tipo ipv4 (A) em função do subdomínio selecionado)
-É necessário que o seu domínio seja gerido pelo mesmo identificador (nichandle) que o utilizado para a encomenda do seu servido private. Caso contrário, a configuração da zona DNS deve ser efetuada de forma manual.
-No nosso exemplo, a opção "Assistente DNS" está selecionada, e vamos de seguida validar a configuração. Se utiliza a opção Assistente DNS é necessário efetuar a etapa 3.
-
-
-## Etapa 3: Configuração manual da zona DNS
-Se o seu domínio não é gerido pelo mesmo identificador de cliente (nichandle) ou não está alojado na OVH, um segundo e-mail ser-lhe-á enviado com as informações necessárias à modificação da sua zona DNS.
-
-Veja o conteúdo do e-mail:
-
-
-```
-OVH.HOSTING LDA - http://www.ovh.pt
-Avenida Miguel Bombarda, 133-6ºA
-1050-164 LISBOA
-
-Estimado(a) Cliente,
-
-Assunto: [OVH-EXCHANGE] O seu servidor exchange está quase pronto!
-
-Estimado(a) Cliente,
-
-Para poder encomendar o certificado SSL do seu servidor é necessário criar o seu endereço na zona DNS. 
-
-O endereço que escolheu foi:: exchange2016.testinterne.ovh
-O IP do seu servidor é o: 149.202.xxx.103
-
-Agradecemos que crie o registo A para o endereço escolhido.
-
-Cordialmente,
-
-O seu Serviço ao Cliente OVH
-```
-
-
-É então necessário que crie o registo do tipo A correspondente a:
-
-
-- exchange2016.testinterne.ovh A 149.202.xxx.103
-
-
-
-
-## Etapa 4: Validação do seu certificado SSL
-Após a sua zona DNS estar configurada de forma automática ou manual, receberá o e-mail de validação no endereço escolhido aquando da personalização do seu link de acesso ao webmail.
-Poderemos levar até 4h a enviar-lhe o e-mail.
-Veja o conteúdo do e-mail recebido:
-
-![](images/img_4059.jpg){.thumbnail}
-Clique de seguida no  link  para que possa validar o seu certificado SSL.
-Será depois reencaminhado para a interface da Global Sign para que possa validar o seu certificado SSL. Será necessário que clique em "I APPROVE" para o validar.
-
-![](images/img_4054.jpg){.thumbnail}
-
-
-## Término da operação
-Após o seu certificado SSL estar validado, podem ser necessárias 4 horas para a entrega final do seu serviço.
-Durante estas etapas o seu servidor Private Exchange não será visível no seu Espaço Cliente.
-
-Assim que o seu servidor estiver pronto e disponível, receberá um e-mail de configuração e o seu servidor Private Exchange aparecerá no seu Espaço Cliente.
-
-O ssunto do e-mail é: O seu serviço Private Exchange 2016 está pronto!
-
-Para realizar a configuração do seu serviço de e-mails consulte o nosso [guia de primemira configuração do serviço](https://www.ovh.pt/g1311.configuracao-servico).
-
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
