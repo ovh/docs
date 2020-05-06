@@ -5,7 +5,7 @@ excerpt: 'Apprenez à vous connecter et utiliser l''accès SSH de votre héberge
 section: 'FTP et SSH'
 ---
 
-**Dernière mise à jour le 04/06/2019**
+**Dernière mise à jour le 11/07/2019**
 
 ## Objectif
 
@@ -50,7 +50,7 @@ On pourrait par exemple retrouver : « ssh://`ssh.cluster023.hosting.ovh.net`:`
 
 Pour vous connecter en SSH, utilisez un terminal afin d’interagir directement avec votre espace de stockage via des lignes de commande. 
 
-Cet outil est installé par défaut sur macOS ou Linux. Un environnement Windows nécessitera l’installation d’un logiciel comme PuTTY ou l’ajout de la fonctionnalité OpenSSH. Cette démarche étant spécifique au système d’exploitation que vous utilisez, nous ne pouvons pas la détailler dans cette documentation.
+Cet outil est installé par défaut sur macOS, Linux et Windows 10. Un environnement Windows plus ancien nécessitera l’installation d’un logiciel comme PuTTY ou l’ajout de la fonctionnalité OpenSSH. Cette démarche étant spécifique au système d’exploitation que vous utilisez, nous ne pouvons pas la détailler dans cette documentation.
 
 Dès lors, il existe deux possibilités pour vous connecter selon la méthode que vous utilisez :
 
