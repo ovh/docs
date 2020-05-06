@@ -27,7 +27,7 @@ Se tiver recebido um e-mail a indicar que um dos seus endereços de e-mail foi b
 
 Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e dirija-se à secção "Web". Na barra de serviços à esquerda, clique em `Microsoft`{.action} e em `Exchange`{.action}. Por fim, selecione a plataforma Exchange em questão.
 
-Dirija-se ao separador `Contas de e-mail`{.action} da sua plataforma. Se a coluna "Estado" do endereço de e-mail em questão mencionar "bloqueado", clique em `...`{.action} à direita da conta e depois em `Desbloquear`{.action}. Passe em seguida à [etapa 2](./#etapa-2-aceder-ao-ticket-de-assistencia){.external} do guia.
+Dirija-se ao separador `Contas de e-mail`{.action} da sua plataforma. Se a coluna "Estado" do endereço de e-mail em questão mencionar "bloqueado", clique em `...`{.action} à direita da conta e depois em `Desbloquear`{.action}. Passe em seguida à [etapa 2](./#etapa-2-aceder-ao-ticket-de-assistencia_1){.external} do guia.
 
 ![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
 
@@ -35,7 +35,7 @@ Dirija-se ao separador `Contas de e-mail`{.action} da sua plataforma. Se a colun
 
 Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e dirija-se à secção "Web". Clique em `E-mail Pro`{.action} na barra de serviços à esquerda e, depois, selecione a plataforma E-mail Pro correspondente.
 
-Dirija-se ao separador `Contas de e-mail`{.action} da sua plataforma. Se a coluna "Estado" à direita do endereço de e-mail em questão mencionar "Spam", clique sobre esta indicação e depois em `Responder ao ticket`{.action}. Passe em seguida à [etapa 2](./#etapa-2-aceder-ao-ticket-de-assistencia){.external} do guia.
+Dirija-se ao separador `Contas de e-mail`{.action} da sua plataforma. Se a coluna "Estado" à direita do endereço de e-mail em questão mencionar "Spam", clique sobre esta indicação e depois em `Responder ao ticket`{.action}. Passe em seguida à [etapa 2](./#etapa-2-aceder-ao-ticket-de-assistencia_1){.external} do guia.
 
 ![spam](images/blocked-for-SPAM-01-02.png){.thumbnail}
 
@@ -43,7 +43,7 @@ Dirija-se ao separador `Contas de e-mail`{.action} da sua plataforma. Se a colun
 
 Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e dirija-se à secção "Web". Clique em `E-mails`{.action} na barra de serviços à esquerda e selecione o nome do domínio correspondente.
 
-Dirija-se ao separador `Contas de e-mail`{.action} da sua plataforma. Se a coluna "Estado" à direita do endereço de e-mail em questão mencionar "Spam", clique sobre esta indicação e depois em `Responder ao ticket`{.action}. Passe em seguida à [etapa 2](./#etapa-2-aceder-ao-ticket-de-assistencia){.external} do guia.
+Dirija-se ao separador `Contas de e-mail`{.action} da sua plataforma. Se a coluna "Estado" à direita do endereço de e-mail em questão mencionar "Spam", clique sobre esta indicação e depois em `Responder ao ticket`{.action}. Passe em seguida à [etapa 2](./#etapa-2-aceder-ao-ticket-de-assistencia_1){.external} do guia.
 
 ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
 

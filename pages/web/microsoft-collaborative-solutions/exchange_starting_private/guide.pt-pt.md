@@ -1,7 +1,7 @@
 ---
 title: 'Primeiros passos com um servidor Private'
-excerpt: 'Descubra como configurar o seu servidor Private Exchange.'
 slug: exchange_primeiros_passos_com_um_servidor_private
+excerpt: 'Descubra como configurar o seu servidor Private Exchange.'
 legacy_guide_number: g2074
 section: 'Primeiros passos com Exchange'
 ---
@@ -37,11 +37,11 @@ Este e-mail contém um link que permite completar duas etapas da configuração 
 - personalizar o link de acesso ao seu webmail (certificado SSL dedicado);
 - indicar um endereço de e-mail para validar o seu certificado (atenção: este endereço de e-mail deve existir e deverá conseguir aceder-lhe).
 
-Clique no link mencionado no e-mail e passe à [etapa 2 ](./#etape-2-initializacao-da-sua-plateforma){.external}.
+Clique no link mencionado no e-mail e passe à [etapa 2 ](./#etapa-2-inicializacao-da-sua-plataforma){.external}.
 
 ### Etapa 2: inicialização da sua plataforma
 
-Após ter clicado no link de e-mail na [etapa 1](./#etape-1-rececao-do-email-de-configuracao-da-sua-platforma){.external}, deve identificar-se na página exibida.
+Após ter clicado no link de e-mail na [etapa 1](./#etapa-1-rececao-do-e-mail-de-configuracao-da-sua-platforma){.external}, deve identificar-se na página exibida.
 
 Será então redirecionado para a página de configuração:
 ![first-use-private-exchange](images/first-use-private-exchange-02.png){.thumbnail}
@@ -65,13 +65,13 @@ Após a validação desta etapa surgirá uma mensagem a indicar que a configura�
 
 Se o nome de domínio não for gerado na mesma conta de cliente ou não estiver alojado na OVHcloud, ser-lhe-á enviado um segundo e-mail contendo as informações necessárias para configurar manualmente a sua zona DNS.
 
-O e-mail contém os endereços IPv4 e IPv6 da sua plataforma. Indique estes endereços na zona DNS do subdomínio previamente criada na [etapa 2](./#etape-2-initializacao-da-sua-plateforma){.external}, sob as formas respetivas de um registo de tipo "A" e de um registo de tipo "AAAA". Para o orientar na criação de um nome de domínio OVHcloud, consulte o nosso guia ["Editar uma zona DNS"(]../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
+O e-mail contém os endereços IPv4 e IPv6 da sua plataforma. Indique estes endereços na zona DNS do subdomínio previamente criada na [etapa 2](./#etapa-2-inicializacao-da-sua-plataforma){.external}, sob as formas respetivas de um registo de tipo "A" e de um registo de tipo "AAAA". Para o orientar na criação de um nome de domínio OVHcloud, consulte o nosso guia ["Editar uma zona DNS"(]../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
 
 
 
 ### Etapa 4: validação do seu certificado SSL
 
-Após ter concluído a [etapa 2](./#etape-2-initializacao-da-sua-plateforma){.external}, ser-lhe-á enviado um e-mail para o endereço selecionado para validar o seu certificado SSL.
+Após ter concluído a [etapa 2](./#etapa-2-inicializacao-da-sua-plataforma){.external}, ser-lhe-á enviado um e-mail para o endereço selecionado para validar o seu certificado SSL.
 
 Este e-mail ser-lhe-á enviado pela entidade responsável pela emissão do certificado SSL com o assunto:
 

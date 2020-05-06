@@ -1,10 +1,10 @@
 ---
-title: Bestellung und Verwaltung einer Office 365 Lizenzgruppe bei OVH
-excerpt: Bestellung einer Office 365 Lizenz bei OVH
+title: 'Bestellung und Verwaltung einer Office 365 Lizenzgruppe bei OVH'
+excerpt: 'Bestellung einer Office 365 Lizenz bei OVH'
 slug: bestellung_und_verwaltung_einer_office_365_lizenzgruppe_bei_ovh
 legacy_guide_number: g1960
+section: Office
 ---
-
 
 ## Über OVH.com
 Die Bestellung von Office 365 Lizenzen kann für deutsche Kunden nur über Ihr Kundencenter erfolgen. Kunden in Frankreich haben außerdem die Möglichkeit, Ihre Bestellung über die Webseite [OVH.com](https://www.ovh.com/fr/office-365-business) zu starten.
@@ -112,3 +112,6 @@ Im Menü Smartphone und Tablet" erfahren Sie, wie Sie Ihre Office-Suite auf dies
 
 ![](images/img_3092.jpg){.thumbnail}
 
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
