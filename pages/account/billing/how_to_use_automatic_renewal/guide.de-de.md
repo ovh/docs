@@ -5,7 +5,6 @@ excerpt: 'Erfahren Sie hier, wie Sie im OVHcloud Kundencenter die automatische V
 section: 'Verlängerung der Dienste verwalten'
 order: 1
 legacy_guide_number: g1271
-hidden: true
 ---
 
 **Letzte Aktualisierung am 06.05.2020**
