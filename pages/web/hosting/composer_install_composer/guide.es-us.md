@@ -7,9 +7,10 @@ legacy_guide_number: g1894
 section: PHP
 ---
 
+**Última actualización: 05/05/2020**
 
 ## Requisitos
-En los planes de web hosting de OVH es posible utilizar «Composer» a partir de la gama Profesional. Así pues, es necesario un acceso SSH ya que se trata de una herramienta de línea de comandos.
+En los planes de web hosting de OVHcloud es posible utilizar «Composer» a partir de la gama Profesional. Así pues, es necesario un acceso SSH ya que se trata de una herramienta de línea de comandos.
 
 
 ## Instalación
@@ -54,9 +55,9 @@ php composer.phar create-project symfony/framework-standard-edition my_project_n
 ```
 
 
-Asimismo, puede utilizar la API OVH desde su alojamiento utilizando el wrapper oficial. Para ello, tan solo tiene que añadir un archivo llamado «composer.json» que contenga la lista de dependencias que necesita. 
+Asimismo, puede utilizar la API OVHcloud desde su alojamiento utilizando el wrapper oficial. Para ello, tan solo tiene que añadir un archivo llamado «composer.json» que contenga la lista de dependencias que necesita. 
 
-Ejemplo de este archivo con el wrapper de la API OVH. 
+Ejemplo de este archivo con el wrapper de la API OVHcloud. 
 
 
 ```
