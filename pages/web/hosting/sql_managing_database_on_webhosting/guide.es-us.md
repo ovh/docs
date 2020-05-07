@@ -5,15 +5,16 @@ legacy_guide_number: 1943
 section: Bases de datos
 ---
 
+**Última actualización: 05/05/2020**
 
 ## Informacion general
 Una base de datos está formada por un conjunto de datos estructurados y organizados que permiten almacenar y acceder a gran cantidad de información de forma eficaz. Se suele hablar de «BDD» o de «SQL». El SQL es el lenguaje que nos permite especificar diversos tipos de operaciones: incluir, editar, recuperar o eliminar datos de nuestra base.
 
 Los planes de web hosting de OVH incluyen por defecto bases de datos SQL. El número de bases y su capacidad dependerá del tipo de plan.
 
-Haga clic [aquí](https://www.ovh.es/hosting/){.external} para consultar nuestras guías de web hosting.
+Haga clic [aquí](https://www.ovh.com/world/es/hosting/){.external} para consultar nuestras guías de web hosting.
 
-A estas bases de datos tan solo se puede acceder desde los alojamientos compartidos de OVH. No es posible conectar un sitio o una aplicación fuera de OVH.
+A estas bases de datos tan solo se puede acceder desde los alojamientos compartidos de OVHcloud. No es posible conectar un sitio o una aplicación fuera de OVHcloud.
 
 Proponemos dos tipos de bases de datos: MySQL o PostgreSQL.
 
@@ -21,13 +22,13 @@ Proponemos dos tipos de bases de datos: MySQL o PostgreSQL.
 ## Gestion de una base de datos en alojamiento compartido
 
 ### Creacion de una base de datos
-- Conéctese al [área de cliente](https://www.ovh.com/manager/web){.external} con su ID de cliente (NIC Handle) y contraseña.
+- Conéctese al [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external} con su ID de cliente (NIC Handle) y contraseña.
 - Haga clic en «Login» para aceptar la operación.
 
 
 ![hosting](images/3035.png){.thumbnail}
 
-En nuestro ejemplo, utilizaremos un plan de web hosting OVH con varias bases de datos y crearemos una base de datos MySQL.
+En nuestro ejemplo, utilizaremos un plan de web hosting OVHcloud con varias bases de datos y crearemos una base de datos MySQL.
 
 - Seleccione su alojamiento en la sección «Alojamientos» y, a continuación, acceda a la pestaña «Bases de datos» .
 
@@ -74,8 +75,8 @@ Recibirá un mensaje de correo electrónico cuando esté disponible.
 ¡Ya ha terminado de crear su base de datos!
 
 
-## Opciones de gestion disponibles desde el area de cliente OVH
-Una vez creada la base de datos, OVH pone a su disposición un panel de operaciones para simplificar su administración.
+## Opciones de gestion disponibles desde el area de cliente OVHcloud
+Una vez creada la base de datos, OVHcloud pone a su disposición un panel de operaciones para simplificar su administración.
 
 
 ![hosting](images/3847.png){.thumbnail}
@@ -94,7 +95,7 @@ Es posible crear una copia de seguridad de su base de datos directamente desde e
 
 Para ello, haga clic en el icono con forma de «rueda dentada» a la derecha de su base de datos y seleccione «Crear una copia de seguridad».
 
-OVH le ofrece elegir entre tres fechas para su copia de seguridad:
+OVHcloud le ofrece elegir entre tres fechas para su copia de seguridad:
 
 - Ahora: Copia de la base de datos en el momento de realizarla.
 - Ayer: Copia de la base de datos en el estado en que se encontraba hace 24 horas.
@@ -158,7 +159,7 @@ Tan solo deberá introducir la contraseña de su base de datos. El resto de info
 ## Errores comunes
 
 ### Can t connect to local MySQL
-Se trata de un error de conexión en el servidor MySQL. El mensaje le indica que su script intenta conectarse a MySQL en local y no lo consigue. MySQL en un alojamiento compartido de OVH no funciona en local, sino en la red.
+Se trata de un error de conexión en el servidor MySQL. El mensaje le indica que su script intenta conectarse a MySQL en local y no lo consigue. MySQL en un alojamiento compartido de OVHcloud no funciona en local, sino en la red.
 
 Probablemente, haya escrito «localhost» en la configuración de sus scripts y no es correcto.
 
@@ -176,10 +177,10 @@ En este caso, ha alcanzado el número total de conexiones simultáneas autorizad
 ### Importar un dump (copia de seguridad)
 ¿Cómo importar el backup de mi base de datos MySQL? ¿Cuáles son las distintas formas de hacerlo?
 
-Si desea más información sobre cómo importar una base de datos MySQL, consulte nuestra [guía](https://www.ovh.es/g1393.importacion-base-de-datos-mysql){.external}.
+Si desea más información sobre cómo importar una base de datos MySQL, consulte nuestra [guía](..//web_hosting_importacion_de_una_base_de_datos_mysql/){.external}.
 
 
 ### Exportar una base de datos
 ¿Cómo exportar mi base de datos SQL? ¿Cuáles son las distintas formas de realizar el backup de mi base de datos?
 
-Si desea más información sobre cómo exportar una base de datos, consulte nuestra [guía](https://www.ovh.es/g1394.exportacion-base-de-datos){.external}.
+Si desea más información sobre cómo exportar una base de datos, consulte nuestra [guía](../web_hosting_exportacion_de_una_base_de_datos/){.external}.
