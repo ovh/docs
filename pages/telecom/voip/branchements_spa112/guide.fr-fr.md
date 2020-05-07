@@ -2,6 +2,7 @@
 title: 'Branchements SPA112'
 slug: branchements-spa112
 section: 'Cisco SPA112'
+hidden: true
 ---
 
 ------------------------------------------------------------------------

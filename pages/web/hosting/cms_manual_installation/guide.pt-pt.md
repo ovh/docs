@@ -1,101 +1,137 @@
 ---
 title: 'Partilhado: Instalar manualmente o meu CMS'
-excerpt: Instalar de forma manual o meu CMS
+excerpt: 'Instalar de forma manual o meu CMS'
 id: '1375'
 slug: partilhado_instalar_manualmente_o_meu_cms
 legacy_guide_number: g1375
 ---
 
+**Última atualização: 4 de fevereiro de 2020**
 
-## WordPress
-WordPress é um motor de blog mantido por uma comunidade francesa.
-Baseado na tecnologia PHP, WordPress é uma aplicação dotada de ferramentas de boa performance que permitem facilitar a criação das suas páginas, como por exemplo o corretor ortográfico ou uma ferramenta de ajuda ao referenciamento (SEO).
+> [!warning]
+>A OVHcloud presta-lhe serviços cuja configuração e gestão é da sua inteira responsabilidade, cabendo-lhe a si assegurar o seu correto funcionamento. 
+>
+>Este guia foi concebido para o ajudar, tanto quanto possível, nas tarefas mais comuns. No entanto, caso tenha alguma dificuldade, recomendamos que contacte um fornecedor especializado e/ou o editor do software do serviço, uma vez que não poderemos assisti-lo pessoalmente. Para mais informações, consulte a secção “Vá mais longe” neste guia.
+>
+
+## Sumário
+
+Os nossos serviços de Alojamento Web são compatíveis com alguns dos mais populares sistemas de gestão de conteúdos (CMS) que cobrem um vasto conjunto de situações.
+
+**Saiba como configurar o seu website instalando um CMS manualmente.**
+
+## Requisitos
+
+- um plano de Alojamento Web
+- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+
+## Instruções
+
+
+> [!primary]
+>**Instalação automática**
+>
+>Poderá instalar automaticamente cada um destes CMS com apenas alguns cliques a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Para isso, leia o seguinte guia:
+>
+>[Configurar o seu website com módulos 1 clique](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/)
+>
+
+
+
+
+### WordPress
+O WordPress é um software que pode ser utilizado para criar um website ou um blog. É baseado na tecnologia PHP e dispõe de uma variedade de ferramentas que incluem um corretor ortográfico e plugins SEO.
 
 
 - [Módulo WordPress](https://www.ovh.pt/alojamento-partilhado/website/wordpress.xml)
 
-O suporte da OVH não está habilitado para responder às suas questões sobre configuração e utilização de WordPress.
-Está no entanto disponível um guia para o ajudar na utilização: []({legacy}2053)..
+A equipa de assistência da OVHcloud não está autorizada a responder a questões sobre configuração do WordPress.
 
 
-Convidamo-lo a consultar os fóruns dedicados à [ferramenta Wordpress](http://www.wordpress-fr.net/).
+Para isso, poderá consultar os fóruns dedicados ao [WordPress](https://wordpress.org/support/).
 
 
-- Encontre o guia de ajuda à instalação manual de Wordpress :[]({legacy}1977)
+- Guia de instalação do WordPress: [CMS, como instalar manualmente o WordPress](../cms_como_instalar_manualmente_wordpress/)
 
 
 
 ![](images/img_3379.jpg){.thumbnail}
 
 
-## Joomla!
-O Joomla! é um CMS desenvolvido pela antiga comunidade baseada no projeto Mambo. Fácil de administrar e de utilizar, o Joomla! é um CMS de qualidade bastante recompensado em vários testes.
+### Joomla!
+Vencedor de alguns prémios, o Joomla! é um software extremamente fácil de usar que permite criar websites e poderosas aplicações online.
 
-A comunidade francesa do Joomla! é uma comunidade bastante importante e que dá bastante ajuda e contribui a todos os níveis do CMS (ajudas, documentação, suporte, temas, etc.).
+A sua comunidade é bastante extensa e pode fornecer ajuda e outras contribuições em todas as áreas do CMS (ajuda, documentação, assistência técnica, temas, etc.).
 
 
 - [Módulo Joomla!](https://www.ovh.pt/alojamento-partilhado/website/joomla.xml)
 
-O suporte da OVH não está habilitado a responder às suas dúvidas relativas à configuração e utilização de Joomla!.
-Está no entanto disponível um guia para o ajudar na utilização: []({legacy}2053)..
+A equipa de assistência da OVHcloud não está autorizada a responder a questões sobre configuração do Joomla!.
 
 
-Convidamo-lo a consultar os fóruns dedicados à [solução Joomla!](http://www.joomla.org/).
+Para isso, poderá consultar os fóruns dedicados ao [Joomla!.](http://forum.joomla.org/) 
 
-
-- Aceda igualmente ao guia de instalação manual do Joomla:[]({legacy}1375)
+- Guia de instalação do Joomla!: [CMS, como instalar manualmente o Joomla!](../cms_instalar_manualmente_o_joomla/)
 
 
 
 ![](images/img_3380.jpg){.thumbnail}
 
 
-## Prestashop
-Crie a sua loja online! A solução de E-commerce PrestaShop foi criada para tirar partido do essencial das inovações da «Web 2.0» tais como AJAX ou uma ergonomia de nova geração. PrestaShop guia os utilizadores através de um catálogo de produtos de forma inteligente, transformando simples visitantes em futuros compradores.
-PrestaShop é de tal forma rápido que mesmo os clientes que possuam ligações à Internet de baixo débito poderão fazer compras no seu site!
+### PrestaShop
+A solução de E-commerce PrestaShop foi criada para tirar partido do essencial das inovações da Web 2.0, tais como as aplicações dinâmicas do AJAX ou uma ergonomia de nova geração. Para além das funcionalidades e-shop mais comuns, o software pode ser personalizado com módulos, temas e modelos. 
 
-PrestaShop foi criado em 2005 numa escola de informática (Epitech) por 5 jovens estudantes. O projeto de origem, traduzo em 2 idiomas (Francês e Inglês) tinha o nome de phpopenstore (P O S). Os criadores decidiram colocar o seu trabalho às disposição como software livre, desde a sua conceção. O código foi testado por vários pequenos comerciantes que participaram na redação do caderno de encargos.
+O PrestaShop começou em 2005 como um projeto de estudantes da escola de informática EPITECH em Paris, França. Os criadores decidiram colocar o seu trabalho à disposição como software open source, desde a sua conceção.  O código foi testado por vários pequenos comerciantes que participaram na redação das respetivas especificações.
 
-Desde 2005 que o software não para de evoluir até que em 2013 foi criada a versão 1.5.4.1 lançada como «stable» e traduzida em mais 55 idiomas. A solução PrestaShop, utilizada em mais de 150 países é hoje líder mundial em soluções de e-commerce com 150 000 lojas online.
+Desde 2005, o software não tem parado de evoluir. Vai já na sua versão 1.7.6.2, tida como bastante estável, e traduzida em cerca de 60 idiomas. O CMS PrestaShop é hoje líder mundial em soluções de e-commerce com mais de 300 000 lojas online.
 
 
 
 - [Módulo PrestaShop](https://www.ovh.pt/alojamento-partilhado/website/prestashop.xml)
 
-O suporte da OVH não está habilitado para responder às suas questões sobre configuração e utilização de PrestaShop.
-Está no entanto disponível um guia para o ajudar na utilização: []({legacy}2053)..
+A equipa de assistência da OVHcloud não está autorizada a responder a questões sobre configuração do PrestaShop.
 
 
-Convidamo-lo a consultar os fóruns dedicados à [ferramenta Prestashop](https://www.prestashop.com/forums/).
+Para isso, poderá consultar o fórum dedicado ao 
+[PrestaShop](https://www.prestashop.com/forums/).
 
 
-- Encontre o guia de ajuda à instalação manual de Wordpress :[]({legacy}1979)
+- Guia de instalação do PrestaShop: [CMS, como instalar manualmente o PrestaShop](../cms_como_instalar_manualmente_prestashop/)
 
-- Se não dispõe de um alojamento partilhado na OVH, poder encomendar um alojamento Performance que inclui a instalação de Prestashop através do seguinte URL: [https://www.ovh.pt/solucoes/prestashop/](https://www.ovh.pt/solucoes/prestashop/)
+
 
 
 
 ![](images/img_3381.jpg){.thumbnail}
 
 
-## Drupal
-Drupal é um CMS livre e open-source baseado em PHP que viu a luz do dia em 2000 e que era categorizado como um "criador rápido de sites" pelo seu programador original. Além disso, é altamente personalizável e centenas de milhares de pessoas utilizam esta ferramenta, utilizada por 1% dos sites a nível mundial.
+### Drupal
+O Drupal é uma plataforma grátis e open-source baseada em PHP lançada no ano 2000. É um criador rápido de websites. Esta ferramenta é personalizável, sendo atualmente utilizada por 1% dos websites a nível mundial. 
 
-Informação: A versão 8 de Drupal não é compatível com os alojamentos partilhados.
+-  [Módulo Drupal](https://www.ovh.pt/alojamento-partilhado/website/drupal.xml)
 
-O suporte da OVH não está habilitado para responder às suas questões sobre configuração e utilização de Drupal.
-Está no entanto disponível um guia para o ajudar na utilização: []({legacy}2053)..
+A equipa de assistência da OVHcloud não está autorizada a responder a questões sobre configuração do Drupal.
 
-Convidamo-lo a consultar os fóruns dedicados à [ferramenta Drupal](https://www.drupal.org/).
+Para isso, poderá consultar os fóruns dedicados ao [Drupal](https://www.drupal.org).
 
 
-- Encontre o guia de ajuda à instalação manual de Wordpress:[]({legacy}1976)
+-  Guia de instalação do Drupal: [CMS, como instalar manualmente o Drupal](../cms_instalar_manualmente_drupal/)
 
 
 
 ![](images/img_3382.jpg){.thumbnail}
 
 
-## 
-É possível instalar um destes CMS de forma automática em apenas alguns cliques a partir do seu Espaço Cliente. Pode seguir, para ajuda, as instruções do seguinte guia: []({legacy}1402)
 
+
+## Vá mais longe
+
+[Como migrar um site e e-mails para a OVH](../migrar-site-para-ovh/){.external}
+
+[Publicar um site num alojamento web](../partilhado_colocar_o_meu_website_online/){.external}
+
+[Partilhar o alojamento entre vários sites](../multisites-configurar-um-multisite-no-meu-alojamento-web/){.external}
+
+Consulte ainda as nossas [Soluções de alojamento de websites](https://www.ovh.pt/alojamento-partilhado//){.external}
+
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

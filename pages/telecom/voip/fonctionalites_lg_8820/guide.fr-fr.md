@@ -2,6 +2,7 @@
 title: Fonctionalités LG 8820
 slug: fonctionalites-lg-8820
 section: LG8820
+hidden: true
 ---
 
 ------------------------------------------------------------------------

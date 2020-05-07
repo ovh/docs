@@ -3,7 +3,7 @@ title: 'Managing the security policy of an Exchange service'
 slug: manage-security-policy-password
 excerpt: 'Find out how to manage the security policy of your Exchange service'
 section: 'Getting started with Exchange'
-order: 6
+order: 5
 ---
 
 **Last updated 25th January 2019**
@@ -16,7 +16,7 @@ With the Exchange service, you can set up professional email addresses, and use 
 
 ## Requirements
 
-- an [Exchange](https://www.ovh.co.uk/emails/){.external} service
+- an [Exchange](https://www.ovh.co.uk/emails/) service
 - access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions

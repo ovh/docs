@@ -5,7 +5,7 @@ excerpt: 'Find out how to get started with the CloudDB service'
 section: 'Getting started'
 ---
 
-**Last updated 15th June 2018**
+**Last updated 24th April 2020**
 
 ## Objective
 
@@ -16,17 +16,17 @@ The CloudDB solution gives you access to a database instance offering dedicated,
 ## Requirements
 
 - a [CloudDB instance](https://www.ovh.ie/cloud/cloud-databases/){.external}
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 ### View general information about the instance
 
-In the services bar on the left-hand side of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
+In the services bar on the left-hand side of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
 
 > [!primary]
 >
-> The name of the CloudDB service in your OVH Control Panel contains part of your NIC handle (username), and ends with three figures (001 for the first CloudDB service installed, 002 for the second, etc.).
+> The name of the CloudDB service in your OVHcloud Control Panel contains part of your NIC handle (username), and ends with three figures (001 for the first CloudDB service installed, 002 for the second, etc.).
 >
 
 You can also view important information about your instance. Please take a few moments to ensure that the information displayed is correct, and corresponds to the instructions below.
@@ -37,9 +37,9 @@ You can also view important information about your instance. Please take a few m
 |Type|Shows the database system used by the server.|
 |Version|Shows the database system version used by the server. Check that your website is compatible with the version you have chosen.|
 |RAM|Shows the RAM available for your instance, also shows if you are close to exceeding the RAM limit. Your CloudDB instance uses dedicated, guaranteed resources: its RAM. If required, you can scale the RAM, and receive warnings if you are consuming all of your instance’s RAM resources.|
-|Infrastructure|Shows the infrastructure that your instance uses. This information relates to the OVH infrastructure.|
+|Infrastructure|Shows the infrastructure that your instance uses. This information relates to the OVHcloud infrastructure.|
 |Datacentre|Shows the datacentre where the instance has been created.|
-|Host|Shows the OVH server where your instance is. This information relates to the OVH infrastructure, and we may use it in our communication on [OVH incidents](http://status.ovh.net/){.external}.|
+|Host|Shows the OVHcloud server where your instance is. This information relates to the OVHcloud infrastructure, and we may use it in our communication on [OVHcloud incidents](http://status.ovh.net/){.external}.|
 
 ![clouddb](images/clouddb-general-information.png){.thumbnail}
 
@@ -115,9 +115,9 @@ Once you have created a user, you will need to assign rights that allow them to 
 > This step applies if you want to import the backup of an existing database. Otherwise, please go to the next step.
 >
 
-There are several methods you can choose from to import a database. There is a tool available in your OVH Control Panel, and we are going to focus on this method. However, you may of course use another method, if you prefer to do so and are familiar with it.
+There are several methods you can choose from to import a database. There is a tool available in your OVHcloud Control Panel, and we are going to focus on this method. However, you may of course use another method, if you prefer to do so and are familiar with it.
 
-The steps below show how to import a database using the tool available in your OVH Control Panel.
+The steps below show how to import a database using the tool available in your OVHcloud Control Panel.
 
 #### Step 1: Access the import interface.
 
@@ -152,6 +152,23 @@ In the window that pops up, enter the IP address or mask that you wish to author
 
 ![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
+#### Authorise the connection for an OVHcloud Web Hosting plan
+
+To access the database from an OVHcloud Web Hosting, the outgoing IP address (gateway) of the hosting cluster has to be authorised.
+
+To find out the appropriate gateway IP address for your service, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
+
+You can verify the cluster number of the Web Hosting on this page under **FTP server**:
+
+![clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
+
+Once you have ascertained the cluster number of your Web Hosting, consult [this page](https://docs.ovh.com/ie/en/hosting/list-of-ip-addresses-of-web-hosting-clusters) where you can verify the gateway IP address for each cluster.
+
+> [!warning]
+>
+> The **IP address** of the cluster cannot be used to authorise a connection to the Cloud DB server; the **gateway IP address** must be added to the ACL.
+>
+
 ### Link your website to the database
 
 Now that you have created your database, one or several users with access, and authorised a minimum of one IP address in your CloudDB instance, you simply need to link your website to the database. You can use several methods, depending on your website, the CMS you are using (WordPress, Joomla! etc.), or the stage you are at, if you are setting up a website.
@@ -163,7 +180,7 @@ No matter which method you choose to follow, you must have the following five pi
 |Database name|The name you entered when you created your database. You can view all the databases created in your CloudDB instance under the `Databases`{.action} tab.|
 |Username|The name of the user you entered when you created the database, or the name of an additional user that you created at a later stage. You can view all the users created in your CloudDB instance under the `Users and permissions`{.action} tab.|
 |User password|The password associated with the user, which was defined during the previous steps.|
-|Server host name|The server that needs to be entered for your website to be connected to your database. You can access this information in your Control Panel by going to the `Connections`{.action} section, then the General information tab.|
+|Server hostname|The server that needs to be entered for your website to be connected to your database. You can access this information in your Control Panel by going to the `Connections`{.action} section, then the General information tab.|
 |Server port|The port for connecting to your CloudDB instance, so that your website can connect to your database. You can access this information in your Control Panel by going to the `Connections`{.action} section, then the `General information`{.action} tab.|
 
 > [!warning]

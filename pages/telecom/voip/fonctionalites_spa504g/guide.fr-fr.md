@@ -5,6 +5,7 @@ legacy_guide_number: '7536654'
 space_key: CRTEL
 space_name: Téléphonie
 section: Cisco SPA504g
+hidden: true
 ---
 
 ------------------------------------------------------------------------

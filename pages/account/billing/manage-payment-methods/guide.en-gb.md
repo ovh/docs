@@ -5,7 +5,7 @@ excerpt: 'Find out how to add and manage payment methods within the OVHcloud Con
 section: Billing
 ---
 
-**Last updated 15th April 2020**
+**Last updated 7th May 2020**
 
 ## Objective
 In the OVHcloud Control Panel, you can save and manage different payment methods.
@@ -46,13 +46,15 @@ To do this, simply click `Add a payment method`{.action}.
 
 Follow the the steps for saving a payment method. In the first step, you can set the new payment method as a ‘default payment method’, so that it is used for future orders and automatic payments.
 
-If you are saving a new bank account, you will need to send an authorisation to send payments by post. To download this document, click `...`{.action} to the right of your bank account, then `Download the procedure to return by post`{.action}.
+#### Adding a bank account
 
-![manage-payment-methods](images/managepaymentmethods2b.png){.thumbnail}
+If you are saving a new bank account, you will receive an email from our partner Yousign, allowing you to digitally sign your debit mandate.
+
+![manage-payment-methods](images/yousign.png){.thumbnail}
 
 > [!primary]
 >
-While this authorisation has not yet been received by our services, the status “Pending receipt” will appear next to your bank account. While it has this status, it cannot be used as a payment method.
+As long as this authorisation is not signed and validated by you, the status “Validation in progress” will appear next to your bank account. While it has this status, it cannot be used as a payment method.
 >
 
 

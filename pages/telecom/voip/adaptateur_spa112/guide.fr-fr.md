@@ -2,6 +2,7 @@
 title: Adaptateur SPA112
 slug: adaptateur-spa112
 section: Cisco SPA112
+hidden: true
 ---
 
 [![](images/spa112-main.jpg){.thumbnail}](https://www.ovhtelecom.fr/telephonie/telephones/cisco_spa112/){.external-link}
