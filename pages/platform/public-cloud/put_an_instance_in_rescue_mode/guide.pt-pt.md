@@ -1,61 +1,58 @@
 ---
-title: Passar uma instância em modo de rescue
-excerpt: Passar uma instância em modo de rescue
+title: 'Passar uma instância em modo de rescue'
+excerpt: 'Passar uma instância em modo de rescue'
 slug: passar_uma_instancia_em_modo_de_rescue
 legacy_guide_number: g2029
 ---
 
+**Última atualização: 4 de dezembro de 2019**
 
-## 
-Em caso de má configuração ou perda da password SSH, é possível que deixe de poder aceder à sua instância.
-Propomos-lhe então um modo de rescue para poder aceder aos seus dados para poder corrigir os seus diferentes ficheiros de conmfiguração.
+## Sumário
 
-Este modo funciona de forma simples:
-A sua instância é lançada numa nova imagem, ou seja, uma instância com uma configuração básica.
-O disco da sua instância fica então associado à esta instância como um disco adicional, e basta montá-la para poder acder aos dados.
+Em caso de má configuração ou perda da chave SSH, é possível que deixe de poder aceder à sua instância.
 
-Este guia explica-lhe como pode utilizar o modo de reescue.
+Nestas circunstâncias, poderá utilizar o modo de resgate (rescue) para reconfigurar a sua instância ou recuperar os seus dados. 
 
+**Este guia mostra-lhe como passar uma instância para modo rescue**
 
-## Pré-requisitos
+## Requisitos
 
-- [Criar uma instância no Espaço Cliente OVH]({legacy}1775)
+* uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVH
+* acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+* acesso administrativo (root) à sua instância via SSH
 
+## Instruções
 
+### Ativar o modo rescue
 
+Primeiro, inicie sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clique no menu `Public Cloud`{.action}.
 
-## Passar a instância em modo de rescue
-Para passar a sua instância em modo de rescue basta clicar na flecha no canto superior direito da sua instância e selecionar "Iniciar em modo de rescue":
+Em seguida, selecione o seu projeto Public Cloud no menu lateral situado à esquerda do ecrã e vá até Instâncias.
 
-![](images/img_3494.jpg){.thumbnail}
-Deverá de seguida escolher a imagem na qual deseja iniciar o seu servidor em modo de rescue:
+![área de cliente](images/compute.png){.thumbnail}
 
-![](images/img_3495.jpg){.thumbnail}
-Encontrará as imagens que propomos de forma padrão, bem como uma imagem adicional "Distribuição Rescue Made-in-OVH" que permite que se ligue à sua instância em modo de rescue com a ajuda de uma password temporária.
+Clique nos três pontos situados à direita da instância e selecione a opção `Reiniciar em modo rescue`{.action}.
 
-Após o servidor estar em modo de rescue, uma nova janela será apresentada em baixo à direita contendo a sua password temporária:
+![área de cliente](images/rescue1.png){.thumbnail}
 
-![](images/img_3497.jpg){.thumbnail}
+Surgirá então a janela que lhe permite executar esta ação. Clique na lista pendente para selecionar a distribuição Linux que deseja usar em modo rescue e clique no botão `Reiniciar`{.action}. 
 
+![área de cliente](images/rescue2.png){.thumbnail}
 
-## Aceder aos seus dados
-Como explicado anteriormente, os dados da sua instância serão associados ao modo de rescue como um disco adicional.
-Basta que os monte ao seguir o procedimento seguinte:
+Uma vez reiniciada a instância em modo rescue, aparecerá uma mensagem no topo do ecrã, com a sua palavra-passe temporária.
 
-
-- Ligar-se como root:
+![área de cliente](images/rescuedata.png){.thumbnail}
 
 
-```
-admin@instance:~$ sudo su
-```
+### Aceder à sua informação
 
+Sempre que o modo rescue é ativado, a informação relativa à sua instância é anexada sob a forma de um disco adicional. Será então necessário montar este disco, procedendo aos seguintes passos.
 
-- Verificar os discos disponíveis:
-
+Primeiro, estabeleça uma conexão SSH com a sua instância. Assim que estiver conectado, verifique os discos disponíveis utilizando o seguinte comando:
 
 ```
 root@instance:/home/admin# lsblk
+
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 253:0 0 1G 0 disk
 └─vda1 253:1 0 1023M 0 part /
@@ -63,61 +60,34 @@ vdb 253:16 0 10G 0 disk
 └─vdb1 253:17 0 10G 0 part
 ```
 
-
-- Montar a partição;
-
+Depois, monte a partição:
 
 ```
 root@instance:/home/admin# mount /dev/vdb1 /mnt
 ```
 
+A sua informação estará agora disponível a partir da pasta /mnt.
 
+### Desativar o modo rescue
 
-Os seus dados estarão então acessíveis na pasta /mnt.
+Após concluir as suas tarefas, pode desativar o modo rescue reiniciando normalmente a sua instância. Para o fazer, clique na seta voltada para baixo na sua instância e selecione `Sair do modo rescue`{.action}.
 
-Poderá, por exemplo, editar o ficheiro que contém a lista das chaves SSH utilizadas pelo utilizador admin:
+![área de cliente](images/rescueexit.png){.thumbnail}
 
+### Ativar o modo rescue usando a API OpenStack
 
-```
-root@instance:/home/admin# vim /mnt/home/admin/.ssh/authorized_keys
-```
-
-
-
-
-## Reiniciar a sua instância em modo normal
-Após todas as operações efetuadas, basta que reinicie a sua instância normalmente, e para tal basta que clique na flecha no canto superior direito da sua instância e clique em "Sair do modo de rescue" :
-
-![](images/img_3496.jpg){.thumbnail}
-
-
-## Com as API OpenStack
-Pode reiniciar a sua instância em modo de rescue através da API OpenStack ao utilizar o seguinte comando:
-
+Pode também ativar o modo rescue através da API OpenStack, utilizando o seguinte comando:
 
 ```
-root@server:~# nova rescue INSTANCE_ID
+# root@server:~# nova rescue INSTANCE_ID
 ```
 
-
-Para sair do modo de rescue poderá utilizar o seguinte comando:
-
+Para sair do modo rescue, utilize o comando abaixo:
 
 ```
-root@server:~# nova unrescue INSTANCE_ID
+# root@server:~# nova unrescue INSTANCE_ID
 ```
 
+## Vá mais longe
 
-
-
-## 
-
-- [Criação das chaves SSH]({legacy}1769)
-- [Configurar chaves SSH suplementares]({legacy}1924)
-
-
-
-
-## 
-[Voltar à página inicial dos guias Cloud]({legacy}1785)
-
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
