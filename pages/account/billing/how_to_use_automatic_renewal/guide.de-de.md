@@ -17,7 +17,7 @@ Sie können die Verlängerung und die Kündigung Ihrer Dienste in Ihrem OVHcloud
 
 > [!primary]
 >
-> In Abhängigkeit von ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager) im Bereich `Meine Dienste`{.action} unter `Verträge`{.action} einsehen können.
+> In Abhängigkeit von ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager) im Bereich „Meine Dienste“ unter `Verträge`{.action} einsehen können.
 >
 
 
@@ -49,7 +49,7 @@ Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotom
 
 ### Verlängerungsstatus Ihrer Dienste anzeigen
 
-Die Seite „Meine Dienste“ enthält eine Tabelle zur Verwaltung Ihrer Dienstleistungen bei OVHcloud. Sie können deren Bezeichnungen, die Dienstleistungsart, die Verfügbarkeit der Dienste (aktiv oder deaktiviert), deren Status (Verlängerungsart, durchzuführende Aktion, etc.) sowie die Ablaufdaten einsehen.
+Die Seite „Meine Dienste“ enthält eine Tabelle zur Verwaltung Ihrer Dienstleistungen bei OVHcloud. Sie können deren Bezeichnungen, die Dienstleistungsart, die Verfügbarkeit der Dienste (aktiv oder abgelaufen), deren Status (Verlängerungsart, durchzuführende Aktion, etc.) sowie die Ablaufdaten einsehen.
 
 ![manageautomaticrenewal](images/manageautorenew2b.png){.thumbnail}
 
