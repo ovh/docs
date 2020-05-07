@@ -1,13 +1,13 @@
 ---
 title: 'Liste des adresses IP des clusters et hebergements web'
 slug: liste-des-adresses-ip-des-clusters-et-hebergements-web
-section: 'Configuration de l''hébergement'
+section: 'Configuration de l'hébergement'
 order: 3
 ---
 
-**Dernière mise à jour le 17/09/2019**
+**Dernière mise à jour le 05/05/2020**
 
-Vous trouverez dans ce guide toutes les adresses IP des hébergements web OVH. Cela vous permettra par exemple de trouver quelle adresse IP renseigner dans vos zones DNS, en fonction de :
+Vous trouverez dans ce guide toutes les adresses IP des hébergements web OVHcloud. Cela vous permettra par exemple de trouver quelle adresse IP renseigner dans vos zones DNS, en fonction de :
 
 - votre cluster
 - vos options (CDN, SSL payant, SSL gratuit...)
