@@ -1,23 +1,23 @@
 ---
 title: 'Cambiar la contraseña de la base de datos de un alojamiento web'
 slug: cambiar-contrasena-base-de-datos
-excerpt: 'Cómo cambiar la contraseña de una base de datos creada en un alojamiento web de OVH'
+excerpt: 'Cómo cambiar la contraseña de una base de datos creada en un alojamiento web de OVHcloud'
 section: 'Bases de datos'
 order: 2
 ---
 
-**Última actualización: 11/07/2018**
+**Última actualización: 05/05/2020**
 
 ## Objetivo
 
 Una base de datos (también llamada *database*, DB o BD) permite almacenar elementos dinámicos, como comentarios o artículos. Prácticamente todos los sistemas de gestión de contenidos (*content management system* o CMS), como WordPress o Joomla, utilizan bases de datos, a las que se puede acceder utilizando una contraseña.
 
-**Esta guía explica cómo cambiar la contraseña de una base de datos creada en un alojamiento web de OVH.**
+**Esta guía explica cómo cambiar la contraseña de una base de datos creada en un alojamiento web de OVHcloud.**
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
-- Tener acceso a la gestión del alojamiento web desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.es/hosting/){.external}.
+- Tener acceso a la gestión del alojamiento web desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 > [!warning]
 >
@@ -41,7 +41,7 @@ En la actualidad, prácticamente todos los sistemas de gestión de contenidos ut
 
 ### 2. Acceder a la administración de las bases de datos del alojamiento
 
-Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting.
 
@@ -81,10 +81,10 @@ Si en su sitio web aparece un mensaje indicándole que no es posible conectarse 
 
 Para que el sitio web pueda conectarse a la base de datos, utiliza la información que contiene el archivo de configuración: el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor. Es posible que, al cambiar la contraseña de la base de datos desde el área de cliente, la conexión entre el sitio web y la base de datos se haya perdido.
 
-Para restablecer la conexión, introduzca la nueva contraseña en el archivo de configuración de la base de datos, que se encuentra en el espacio de almacenamiento del alojamiento. Esta operación no forma parte de la configuración de los servicios de OVH sino del sitio web, por lo que, si necesita ayuda para realizarla, le recomendamos que se ponga en contacto con el editor del sitio web o con un profesional especializado.
+Para restablecer la conexión, introduzca la nueva contraseña en el archivo de configuración de la base de datos, que se encuentra en el espacio de almacenamiento del alojamiento. Esta operación no forma parte de la configuración de los servicios de OVHcloud sino del sitio web, por lo que, si necesita ayuda para realizarla, le recomendamos que se ponga en contacto con el editor del sitio web o con un profesional especializado.
 
 ## Más información
 
 [*Privacidad y seguridad en internet*, «Ficha 3: ¿Son suficientes las contraseñas?)», AEPD](https://www.aepd.es/media/guias/guia-privacidad-y-seguridad-en-internet.pdf){.external}.
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
