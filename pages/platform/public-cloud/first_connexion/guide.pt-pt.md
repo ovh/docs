@@ -6,38 +6,36 @@ excerpt: 'Descubra como conectar-se a uma instância Public Cloud'
 section: Introdução
 ---
 
-**Última atualização: 16/05/2018**
+**Última atualização: 6 de dezembro de 2019**
 
 ## Sumário
 
-A conexão a uma instância Public Cloud é similar a uma conexão «normal» a um servidor dedicado (VPS, servidor dedicado, etc.), mas possui um utilizador específico.
+A conexão a uma instância Public Cloud é similar a uma conexão a um Servidor dedicado ou VPS, mas cada instância possui uma conta ou utilizador específico.
 
 **Este guia explica como pode conectar-se a instâncias Public Cloud em Linux ou em Windows.**
 
-
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Ter criado uma [instância Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external}.
-
+* acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+* uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} criada na sua conta
 
 ## Instruções
 
 ### Conectar-se a uma instância Linux a partir de um ambiente Linux/Mac
 
-Este é o comando SSH para se conectar à sua instância Public Cloud:
+Para se conectar à instância Public Cloud execute o seguinte comando SSH, substituindo o “utilizador” e a “instância_IP” com a instância do seu endereço IP.
 
 ```sh
-ssh *user*@IP_instance
+ssh user@instance_IP
 ```
 
-Em função das distribuições, o utilizador será diferente em Public Cloud. A seguir está um quadro (não exaustivo) dos utilizadores em função das distribuições:
+O utilizador Public Cloud será diferente, em função do sistema operativo que estiver a utilizar. A tabela abaixo exibe uma lista (não exaustiva) de utilizadores, por sistema operativo.
 
-|Distribuição|Utilizador|
+|Sistema operativo|Utilizador|
 |---|---|
-|Archlinux|arch|
-|Centos 6|centos|
-|Centos 7|centos|
+|Arch Linux|arch|
+|CentOS 6|centos|
+|CentOS 7|centos|
 |CoreOS|core|
 |Debian 7|debian|
 |Debian 8|debian|
@@ -52,24 +50,24 @@ Em função das distribuições, o utilizador será diferente em Public Cloud. A
 
 > [!primary]
 >
-> Em conexão direta, terá as autorizações destes utilizadores. Se deseja utilizar os privilégios de *superutilizador*, terá de utilizar o comando `sudo`.
+> Ao conectar-se diretamente, são-lhe atribuídos por defeito os direitos de utilizador padrão. Se deseja utilizar os privilégios de utilizador “root” (superutilizador), terá de utilizar o comando sudo-i ou sudo su.
 >
 
 
-- Aviso quanto ao certificado digital do servidor SSH remoto:
+**Aviso relativo ao certificado digital do servidor SSH remoto:**
 
-Na primeira conexão, terá de confirmar a autenticidade do host clicando em `yes`.
+Na primeira conexão, terá de confirmar a autenticidade do host clicando em `sim`.
 
 ```sh
 The authenticity of host 217.xxx.xxx.98 (217.xxx.xx.98) cant be established.
 ECDSA key fingerprint is f4:95:09:ce:b6:63:73:ea:54:db:76:5e:64:f1:5e:6d.
-Are you sure you want to continue connecting (yes/no)?
+Are you sure you want to continue connecting (yes/no)?`
 ```
 
 
 ### Conectar-se a uma instância Linux a partir de um ambiente Windows
 
-Para se conectar a uma instância Linux a partir do Windows, basta utilizar um programa de tipo [PuTTY](https://www.putty.org/){.external} ou, para as versões mais recentes do Windows 10, utilizar as funções [já nativas](https://docs.microsoft.com/en-us/windows/wsl/about){.external}. A seguir, já só precisará de seguir as indicações anteriores para Linux.
+Para se conectar a uma instância Linux a partir do Windows, basta utilizar um programa de tipo [PuTTY](https://www.putty.org/){.external} ou, para as versões mais recentes do Windows 10, utilizar as funções [já nativas](https://docs.microsoft.com/pt-br/windows/wsl/about){.external}. A seguir, só precisará de seguir as mesmas indicações acima referidas.
 
 
 ### Conectar-se a uma instância Windows
@@ -78,43 +76,43 @@ Para se conectar a uma instância Linux a partir do Windows, basta utilizar um p
 
 Quando tiver criado a instância, é preciso finalizar o chamado *sysprep*. Para isso, na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, é preciso executar a consola VNC:
 
-![Consola VNC](images/vnc_console.png)
+![consola VNC](images/vnc_console.png)
 
-Durante a primeira etapa, poderá escolher o seu país, a língua desejada e a língua do teclado. A seguir, clique em `Next`{.action}:
+Durante a primeira etapa, selecione o seu país, a língua desejada e a configuração do teclado. A seguir, clique em `Seguinte`{.action}:
 
-![Escolha da língua no sysprep](images/sysprep_first_step.png)
+![Escolha o idioma no sysprep](images/sysprep_first_step.png)
 
-Depois, deve escolher a palavra-passe para o utilizador *administrator*:
+Depois, selecione a palavra-passe para o *administrador*:
 
-![Escolha da palavra-passe no sysprep](images/sysprep_first_step.png)
+![Escolha a palavra-passe no sysprep](images/sysprep_password.png)
 
-Resta validar a sua escolha com `Finish`{.action}. A instância vai reiniciar. Então poderá conectar-se ao seu servidor Windows.
+Por fim, confirme as alterações efetuadas clicando em `Concluir`{.action}. A instância irá reiniciar e poderá então conectar-se ao seu servidor Windows.
 
 
 #### Conectar-se a uma instância Windows
 
-A conexão à sua instância Windows é feita diretamente através da função `Área de Trabalho remota`, a partir do seu computador Windows:
+A conexão à sua instância Windows é feita diretamente através da função `Área de trabalho remota`, a partir do seu computador Windows: 
 
-![Escolha da palavra-passe no sysprep](images/remote_desktop.png)
+![Escolha a palavra-passe no sysprep](images/remote_desktop.png)
 
-Nas etapas seguintes, bastará especificar o IP da sua instância (primeira etapa da conexão através da Área de Trabalho remota) e a seguir adicionar o seu username (*administrator*) e a palavra-passe que definiu:
+Nas etapas seguintes, bastará especificar o IP da sua instância (primeira etapa da conexão através da Área de trabalho remota) e a seguir adicionar o seu nome de utilizador (administrador) e a palavra-passe que definiu:
 
-![Área de Trabalho remota - Conexão](images/remote_desktop_connection_IP.png)
+![Área de trabalho remota - Login](images/remote_desktop_connection_IP.png)
 
-![Área de Trabalho remota - Conexão utilizador](images/remote_desktop_connection_user.png)
+![Área de trabalho remota - Login do utilizador](images/remote_desktop_connection_user.png)
 
-Uma mensagem vai pedir-lhe que valide a conexão. Escolha `Sim`{.action} ou `Yes`{.action}:
+Uma mensagem vai pedir-lhe que valide a informação de login: Clique em `Sim`{.action}:
 
-![Validação da conexão](images/connection_validation.png)
+![Confirmação do login](images/connection_validation.png)
 
-Já está conectado à sua instância.
+Será então conectado à sua instância.
 
 > [!primary]
 >
-> Em caso de problemas de conexão à sua instância Windows, verifique se a firewall do Windows autoriza conexões RDP. Recorra ao [guia correspondente](https://docs.ovh.com/fr/vps/windows-first-config/){.external} se precisar de mais informações.
->
+> Em caso de problemas de conexão à sua instância Windows, verifique se a firewall do Windows autoriza conexões RDP. Se precisar de mais informações, consulte o [guia de configuração do servidor Windows.
+> 
 
 
-## Quer saber mais?
+## Vá mais longe
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
