@@ -7,6 +7,7 @@ legacy_guide_number: g2220
 section: SSL
 ---
 
+**Última actualización: 05/05/2020**
 
 ## El contenido mixto
 ¿El sitio web no carga los elementos externos, como los botones de Facebook o Twitter? ¿Las interacciones de la página no funcionan como en HTTP? Es probable que se trate de una cuestión de contenido mixto.
