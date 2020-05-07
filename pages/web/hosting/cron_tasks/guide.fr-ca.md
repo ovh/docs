@@ -6,6 +6,8 @@ excerpt: Retrouvez ici les actions possibles avec l'option des taches automatise
 section: Tâches automatisées (CRON)
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 Dans Linux, il existe un système permettant de traiter automatiquement des tâches après les avoir planifiées, en déterminant la fréquence d'exécution et la date et l'heure de lancement de la tâche. Ce genre de routine est très souvent utilisé pour des tâches d'administration système permettant de garder votre système à jour. Par exemple, effectuer des copies de sauvegarde périodiques, surveiller le système, exécuter des scripts personnalisés, etc.
 
 
@@ -103,7 +105,7 @@ Cliquez ensuite sur le lien `Logs`{.action} :
 
 ![hosting](images/4013.png){.thumbnail}
 
-Si votre tâche automatisée a été exécutée dans le courant de la journée, vous pouvez regarder les logs d'exécution dans le OVH Speed Log (1).
+Si votre tâche automatisée a été exécutée dans le courant de la journée, vous pouvez regarder les logs d'exécution dans le OVHcloud Speed Log (1).
 
 -> Dans le cas où votre exécution date de plus de 24h, sélectionnez le fichier de logs du mois que vous souhaitez consulter (ici pour le mois de juin).
 
