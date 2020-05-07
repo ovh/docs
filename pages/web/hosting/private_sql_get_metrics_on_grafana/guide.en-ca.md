@@ -5,27 +5,28 @@ slug: get_private_sql_metrics_on_grafana
 legacy_guide_number: g2057
 ---
 
+**Last updated 5th May 2020**
 
 ## 
 
 ## What is Docker?
 Docker is an open-source project that automates the deployment of applications within software containers.
 
-![](images/img_3657.jpg){.thumbnail}
+![docker](images/img_3657.jpg){.thumbnail}
 
 ## What is Grafana?
 Grafana is an open-source solution that allows you to transform data into graphs, for example.
 
-![](images/img_3658.jpg){.thumbnail}
+![grafana](images/img_3658.jpg){.thumbnail}
 
 
 ## An instance
 To install Grafana, you need to use Docker. You can install it on different OVH solutions:
 
 
-- [VPS](https://www.ovh.co.uk/vps/)
-- [Dedicated server](https://www.ovh.co.uk/dedicated_servers/)
-- [Cloud Instance](https://www.ovh.co.uk/cloud/instances/)
+- [VPS](https://www.ovh.com/ca/en/vps/)
+- [Dedicated server](https://www.ovh.com/ca/en/dedicated_servers/)
+- [Cloud Instance](https://www.ovhcloud.com/en-ca/public-cloud/)
 
 
 
@@ -36,9 +37,9 @@ To install Grafana, you need to use Docker. You can install it on different OVH 
 See the documentation available at [this link](https://docs.docker.com/engine/installation/) to install Docker, based on your particular machine.
 
 ## On VPS
-If you have an OVH VPS, you can choose to install the "Docker on Ubuntu" distribution that includes a server that already has Docker.
+If you have an OVHcloud VPS, you can choose to install the "Docker on Ubuntu" distribution that includes a server that already has Docker.
 
-![](images/img_3659.jpg){.thumbnail}
+![vps](images/img_3659.jpg){.thumbnail}
 
 
 ## Grafana
@@ -72,23 +73,23 @@ You can order a Private SQL server directly from your control panel.
 
 
 
-![](images/img_3660.jpg){.thumbnail}
+![sql1](images/img_3660.jpg){.thumbnail}
 
 ## Is my Private SQL Server Legacy or Docker?
 The old Private SQL servers are Legacy servers (for example: "sqlprive-kx11111-009"), the new ones are Docker (for example: "sx11111-012").
 They are two different infrastructures.
 
-![](images/img_3661.jpg){.thumbnail}
+![sql2](images/img_3661.jpg){.thumbnail}
 
 
-## Get the token via the OVH API
+## Get the token via the OVHcloud API
 
-## Connect to the OVH API
-Use the following link to connect to the OVH API, and then click "Login" to connect.
+## Connect to the OVHcloud API
+Use the following link to connect to the OVHcloud API, and then click "Login" to connect.
 
 [https://api.ovh.com/console/](https://api.ovh.com/console/)
 
-![](images/img_3662.jpg){.thumbnail}
+![ovhapi1](images/img_3662.jpg){.thumbnail}
 
 ## Retrieve the token
 Use the following function to retrieve the list of Private SQL servers in your account, and then click "Run":
@@ -100,7 +101,7 @@ Use the following function to retrieve the list of Private SQL servers in your a
 
 
 
-![](images/img_3663.jpg){.thumbnail}
+![ovhapi2](images/img_3663.jpg){.thumbnail}
 Enter the name of your Docker Private SQL server through the following command:
 
 
@@ -117,7 +118,7 @@ In "graphEndpoint" you will find the data you need:
 
 
 
-![](images/img_3664.jpg){.thumbnail}
+![ovhapi3](images/img_3664.jpg){.thumbnail}
 
 
 ## Use Grafana
@@ -128,9 +129,7 @@ Access Grafan through your browser, with these credentials:
 
 - admin/admin
 
-
-
-![](images/img_3665.jpg){.thumbnail}
+![browser](images/img_3665.jpg){.thumbnail}
 
 ## Add your data source
 To do this, click on "Data Sources in the left column and then on "Add new.
@@ -141,16 +140,16 @@ Enter the following information:
 - Name: The name of your data source. In our case, it could be "private SQL".
 - Default: Yes.
 - Type: "OpenTSDB".
-- URL: Specify the content of the "host" field that you previously retrieved from the OVH API.
+- URL: Specify the content of the "host" field that you previously retrieved from the OVHcloud API.
 - Access: "proxy"
 - Http Auth: Check "Basic Auth" and uncheck "With Credentials".
-- User: Specify the contents of the "readToken" field that you previously retrieved from the OVH API.
-- Password: Re-enter the contents of the "readToken" field that you previously retrieved from the OVH API.
+- User: Specify the contents of the "readToken" field that you previously retrieved from the OVHcloud API.
+- Password: Re-enter the contents of the "readToken" field that you previously retrieved from the OVHcloud API.
 
 
 Do a connection test and if it works, add the data source.
 
-![](images/img_3666.jpg){.thumbnail}
+![test](images/img_3666.jpg){.thumbnail}
 
 ## Configure your "Dashboard"
 Click Dahboards in the left column, and then click "Home" > "New".
@@ -161,26 +160,26 @@ You can save your control panel at any time by clicking the icon at the top.
 
 A control panel consists of a line ("Row"). To add the first graphic, click on the green button and select "Add Panel" > "Graph".
 
-![](images/img_3667.jpg){.thumbnail}
+![dashboard](images/img_3667.jpg){.thumbnail}
 In the "General" tab, enter the title of your graph, for example "RAM".
 
-![](images/img_3668.jpg){.thumbnail}
+![control](images/img_3668.jpg){.thumbnail}
 In the "Metrics" tab, check that your data source is correct, at the bottom right.
 
 The first metric to enter is "memory.hierarchical_memory_limit", which refers to the maximum RAM allocated to your Private SQL server.
 
 Then click "+ Query" to set the second metric «memory.rss», which refers to the RAM used by your server.
 
-![](images/img_3669.jpg){.thumbnail}
+![panel](images/img_3669.jpg){.thumbnail}
 In the "Axes & Grid" tab, select the data unit in "Left Y" and then "Bytes".
 
-![](images/img_3670.jpg){.thumbnail}
+![data](images/img_3670.jpg){.thumbnail}
 
 - At the top right, select the time interval you want. This is the result obtained in the last 60 days.
 
 
 
-![](images/img_3671.jpg){.thumbnail}
+![interval](images/img_3671.jpg){.thumbnail}
 
 
 ## The metrics
@@ -199,4 +198,6 @@ In the following link you will find official information on Docker metrics:
 - [https://docs.docker.com/engine/articles/runmetrics/](https://docs.docker.com/engine/articles/runmetrics/)
 
 
+## Go further
 
+Join our community of users on <https://community.ovh.com/en/>.
