@@ -5,19 +5,20 @@ excerpt: 'Ce guide va vous permettre de recuperer les metriques d''un SQL privé
 section: 'SQL Privé'
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 Ce guide technique vous indiquera comment récupérer les métriques (RAM par exemple) de votre serveur SQL en utilisant Grafana.
 
 - Cela s'adresse à des utilisateurs avancés.
 - Vous devez disposez d'un serveur SQL Privé de type "Docker" pour utiliser Grafana
 
-Vous retrouverez sur le guide suivant comment utiliser et gérer votre serveur SQL Privé : []({legacy}2023){.ref}
+Vous retrouverez sur le guide  [« Tout sur le SQL privé »](../tout-sur-le-sql-prive/){.external}, comment utiliser et gérer votre serveur SQL Privé.
 
 - Il est possible de récupérer les métriques directement depuis votre espace client dans l'onglet "Métriques" sur les serveurs de type "Docker".
 
-
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -38,15 +39,15 @@ Grafana est une solution open-source permettant de mettre en forme des données 
 ## Les pre-requis pour les utiliser
 
 ### Une instance
-Pour installer Grafana, il sera nécessaire d'utiliser Docker. Celui-ci pourra être installé sur différents produits proposés par OVH :
+Pour installer Grafana, il sera nécessaire d'utiliser Docker. Celui-ci pourra être installé sur différents produits proposés par OVHcloud :
 
-- [VPS](https://www.ovh.com/fr/vps/){.external}
-- [Serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}
-- [Instance Cloud](https://www.ovh.com/fr/cloud/instances/){.external}
+- [VPS](https://www.ovh.com/ca/fr/vps/){.external}
+- [Serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}
+- [Instance Cloud](https://www.ovh.com/ca/fr/cloud/instances/){.external}
 
 
 ### Docker
-En fonction de votre machine, vous pouvez suivre la documentation accessible via [ce lien](https://docs.docker.com/engine/installation/){.external} pour l'installer. Si vous disposez d'un VPS chez OVH, vous pouvez choisir d'installer la distribution "Docker on Ubuntu" qui vous permettra de disposer d'un serveur disposant déjà de Docker.
+En fonction de votre machine, vous pouvez suivre la documentation accessible via [ce lien](https://docs.docker.com/engine/installation/){.external} pour l'installer. Si vous disposez d'un VPS chez OVHcloud, vous pouvez choisir d'installer la distribution "Docker on Ubuntu" qui vous permettra de disposer d'un serveur disposant déjà de Docker.
 
 
 ![hosting](images/3659.png){.thumbnail}
@@ -64,7 +65,7 @@ Vous retrouverez plus d'informations sur [ce lien](http://docs.grafana.org/insta
 
 
 ### Un serveur SQL privé
-Votre serveur SQL Privé doit être de type " **Docker**" pour récupérer des métriques. Si vous disposez d'un hébergement performance, vous pouvez activer un serveur SQL Privé gratuitement en vous aidant du [guide suivant]({legacy}2023){.ref}. Vous pouvez commander un serveur SQL Privé directement dans votre espace client.
+Votre serveur SQL Privé doit être de type " **Docker**" pour récupérer des métriques. Si vous disposez d'un hébergement performance, vous pouvez activer un serveur SQL Privé gratuitement en vous aidant du guide [« Tout sur le SQL privé »](../tout-sur-le-sql-prive/){.external}. Vous pouvez commander un serveur SQL Privé directement dans votre espace client.
 
 - Tous les nouveaux serveurs SQL Privé mis en place sont de type "Docker".
 
@@ -79,8 +80,8 @@ Les anciens serveurs SQL Privé sont de type "Legacy" (exemple : sqlprivé-kx111
 
 ## Comment les utiliser ?
 
-### Obtenir le token via l'API OVH
-Pour vous connecter à l'API OVH, veuillez vous rendre sur le lien suivant puis cliquer sur "Login" afin de vous connecter.
+### Obtenir le token via l'API OVHcloud
+Pour vous connecter à l'API OVHcloud, veuillez vous rendre sur le lien suivant puis cliquer sur "Login" afin de vous connecter.
 
 [https://api.ovh.com/console/](https://api.ovh.com/console/){.external}
 
@@ -128,11 +129,11 @@ Remplissez les informations suivantes :
 - Name : le nom de votre source de données, dans notre cas je la nommerai "private SQL".
 - Default : Oui
 - Type : "OpenTSDB"
-- URL : renseigner ici le contenu du champs " host " récupéré précédemment dans l'API OVH
+- URL : renseigner ici le contenu du champs " host " récupéré précédemment dans l'API OVHcloud
 - Access : "proxy"
 - Http Auth : Cochez "Basic Auth", décochez "With Credentials"
-- User : renseignez ici le contenu du champs " readToken " récupéré précédemment dans l'API OVH
-- Password : renseignez également ici le contenu du champs " readToken " récupéré précédemment dans l'API OVH
+- User : renseignez ici le contenu du champs " readToken " récupéré précédemment dans l'API OVHcloud
+- Password : renseignez également ici le contenu du champs " readToken " récupéré précédemment dans l'API OVHcloud
 
 Réalisez un test de connexion et si celui-ci est concluant, ajouter la source de données.
 
