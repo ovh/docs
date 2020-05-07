@@ -6,13 +6,15 @@ excerpt: Vous trouverez dans ce guide differentes informations et aides concerna
 section: FTP et SSH
 ---
 
-Pour l'aide à l'utilisation du SSH sur vos hébergements, le mieux est de consulter [ce guide sur le SSH]({legacy}1962){.ref}. Attention l'option SSH n'est disponible qu'à partir des [hébergements PRO](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml){.external}.
+**Dernière mise à jour le 05/05/2020**
 
-Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovh.com/fr/hebergement-web/guides/){.external} disponibles.
+Pour l'aide à l'utilisation du SSH sur vos hébergements, le mieux est de consulter [ce guide sur le SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.ref}. Attention l'option SSH n'est disponible qu'à partir des [hébergements PRO](https://www.ovh.com/ca/fr/hebergement-web/hebergement-pro.xml){.external}.
+
+Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovh.com/ca/fr/hebergement-web/guides/){.external} disponibles.
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -28,7 +30,7 @@ Vous aurez également besoin de vos identifiants FTP
 - Login FTP .
 - Mot de passe FTP .
 
-Vous pouvez retrouver ces informations de connexion sur votre espace client, partie FTP, ou en suivant [ce guide]({legacy}1909){.ref}.
+Vous pouvez retrouver ces informations de connexion sur votre espace client, partie FTP, ou en suivant [ce guide](../connexion-espace-stockage-ftp-hebergement-web/){.external}.
 
 
 ### Lancement de Putty
@@ -52,7 +54,7 @@ Il est normal à cette étape si vous ne voyez pas les caractères que vous tape
 
 
 ### Utilisation du SSH.
-Pour l'utilisation du SSH il faut maintenant vous diriger vers [ce guide]({legacy}1962){.ref}.
+Pour l'utilisation du SSH il faut maintenant vous diriger vers [ce guide](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.ref}.
 
 ## Aller plus loin
 
