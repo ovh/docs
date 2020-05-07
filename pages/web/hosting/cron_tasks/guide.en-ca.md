@@ -6,11 +6,12 @@ slug: hosting_automated_taskscron
 legacy_guide_number: g1990
 ---
 
+**Last updated 5th May 2020**
 
 ## Create an automated task
 Select your platform under hosting in the left-hand column (1), then click on the "More +" tab and finally on "Scheduled tasks - Cron" (2) "Add a scheduling" (3).
 
-![](images/3261.png){.thumbnail}
+![cron1](images/3261.png){.thumbnail}
 For the first stage, you have to enter the command to be executed and the programming language. You can choose to receive your Cron task execution logs via email at a predefined email address. 
 
 
@@ -19,13 +20,13 @@ For the first stage, you have to enter the command to be executed and the progra
 
 You can also provide a description for your Cron job.
 
-![](images/3262.png){.thumbnail}
+![cron2](images/3262.png){.thumbnail}
 Secondly you have to set the frequency of the task.
 
-![](images/3264.png){.thumbnail}
+![cron3](images/3264.png){.thumbnail}
 There are two modes: simple mode and advanced mode.
 
-![](images/3265.png){.thumbnail}
+![cron4](images/3265.png){.thumbnail}
 Once you have chosen your task's settings a summary will appear. 
 
 
@@ -33,28 +34,28 @@ Once you have chosen your task's settings a summary will appear.
 
 
 
-![](images/3266.png){.thumbnail}
+![cron5](images/3266.png){.thumbnail}
 A message will appear to tell you that your task will be available in a few minutes.
 
-![](images/3267.png){.thumbnail}
+![cron6](images/3267.png){.thumbnail}
 
 
 ## Modifying an automated task
 Select your platform under hosting in the left-hand column (1), click on the "More+" tab and finally on "Scheduled tasks - Cron" (2). Click on the pencil (3) corresponding to the automated task that you wish to modify.
 
-![](images/3268.png){.thumbnail}
+![cron7](images/3268.png){.thumbnail}
 At this point you can modify the command to be executed and the programming language, enable email logs and add a description to your Cron job.
 
-![](images/3269.png){.thumbnail}
+![cron8](images/3269.png){.thumbnail}
 
 
 ## Delete an automated task
 Select your platform under hosting in the left-hand column (1), click on the "More+" tab and finally on "Scheduled tasks - Cron" (2). Click on the trash icon next to the automated job which you want to delete
 
-![](images/3270.png){.thumbnail}
+![cron9](images/3270.png){.thumbnail}
 A summary of what you have chosen to delete will appear. If this is correct just click confirm.
 
-![](images/3271.png){.thumbnail}
+![cron10](images/3271.png){.thumbnail}
 
 
 ## Test how your automated task will run with a web browser
@@ -67,15 +68,15 @@ If you have an error, you have to correct your script. If no error has been dete
 ## View execution logs for your automated task
 Select your platform under hosting in the left-hand column then click "More +".
 
-![](images/4012.png){.thumbnail}
+![cron11](images/4012.png){.thumbnail}
 Then click on the link to access "Logs" and statistics.
 
-![](images/4013.png){.thumbnail}
-If your automated tasks were executed over the day, you can view the execution logs in the OVH Speed Log (1).
+![cron12](images/4013.png){.thumbnail}
+If your automated tasks were executed over the day, you can view the execution logs in the OVHcloud Speed Log (1).
 
 -> If your task was executed over 24 hours ago, select the log file for the month that you wish to view.
 
-![](images/3274.png){.thumbnail}
+![cron13](images/3274.png){.thumbnail}
 Example execution logs for an automated task:
 
 
@@ -95,8 +96,6 @@ Could not open input file: /homez.600/loginftp/www/cron.php
 ```
 
 
-
-
 ## Limitations
 
 - In shared hosting, you cannot specify the minute that you want the task to run. In addition the task can only be executed once an hour. 
@@ -104,8 +103,6 @@ Could not open input file: /homez.600/loginftp/www/cron.php
 - Tasks cannot run for longer than 60 minutes
 
 - You can only generate up to 5 MB of data  (stdin/stderr)
-
-
 
 
 ## Automated tasks with variables
@@ -117,24 +114,23 @@ Example:
 /www/cron.php?variable=test
 ```
 
-
-
 - You can however define these variables in your script.
 
 
-
-
 ## Use of absolute paths
+
 To make sure that your Cron job works, you have to use absolute paths in your script not relative paths.
 To get the address of the current path you can use the "_DIR_" constant:  
 [PHP documentation](http://php.net/manual/en/language.constants.predefined.php)
 
 
 ## Execution report
+
 Only one Cron job execution report is sent daily. This is sent in the night.
 
 
 ## Calling another script
+
 If the script used by your Cron task uses other scripts, you must use an absolute path for this to work. The absolute path for your hosting begins with:
 
 
@@ -202,4 +198,6 @@ Script execution error because of a permissions error (chmod) or incorrect confi
 ```
 
 
+## Go further
 
+Join our community of users on <https://community.ovh.com/en/>.
