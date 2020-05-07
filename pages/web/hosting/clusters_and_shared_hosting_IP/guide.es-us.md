@@ -5,6 +5,8 @@ legacy_guide_number: 2328
 section: 'Configuración del alojamiento'
 ---
 
+**Última actualización: 05/05/2020**
+
 Esta guía recoge todas las direcciones IP de los alojamientos web de OVHcloud. Dichas direcciones le serán útiles para, por ejemplo, saber qué dirección IP debe introducir en sus zonas DNS en función de:
 
 - su cluster
