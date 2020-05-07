@@ -6,12 +6,13 @@ excerpt: En choisissant l’IP d’un pays pour votre site, vous optimisez votre
 section: Optimiser son site
 ---
 
-Si vous créez des sites à vocation internationale, vous vous intéressez fortement à leur référencement dans les moteurs de recherche des pays ciblés. Le positionnement dans beaucoup de moteurs de recherche dépend du pays d'hébergement de l'IP du site.
+**Dernière mise à jour le 05/05/2020**
 
+Si vous créez des sites à vocation internationale, vous vous intéressez fortement à leur référencement dans les moteurs de recherche des pays ciblés. Le positionnement dans beaucoup de moteurs de recherche dépend du pays d'hébergement de l'IP du site.
 
 ## Utilisation
 La mise en place de la géolocalisation se fait à partir de votre [Espace
-Client](https://www.ovh.com/manager/web/login/){.external}.
+Client](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 Une fois connecté, il faut que vous cliquiez sur le nom de votre site principal se trouvant à gauche dans la partie Hébergement
 
