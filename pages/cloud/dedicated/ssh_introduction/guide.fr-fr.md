@@ -6,13 +6,15 @@ section: 'SSH et clé SSH'
 order: 1
 ---
 
-**Dernière mise à jour le 17/06/2019**
+**Dernière mise à jour le 07/05/2020**
 
 ## Objectif
 
-Le protocole de communication SSH (Secure Shell) est installé nativement sur tous les serveurs OVH (VPS, serveurs dédiés, instances Public Cloud).
+Le protocole de communication SSH (Secure Shell) est installé nativement sur tous les serveurs OVHcloud (VPS, serveurs dédiés, instances Public Cloud).
 
 **Découvrez comment utiliser le service SSH pour accéder à votre serveur.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
