@@ -48,13 +48,13 @@ Follow the the steps for saving a payment method. In the first step, you can set
 
 #### Adding a bank account
 
-If you are saving a new bank account, you will receive and email from our partner Yousign, allowing you to digitally sign your debit mandate.
+If you are saving a new bank account, you will receive an email from our partner Yousign, allowing you to digitally sign your debit mandate.
 
 ![manage-payment-methods](images/yousign.png){.thumbnail}
 
 > [!primary]
 >
-As long as this authorization is not signed and validated by you, the status “Validation in progress” will appear next to your bank account. While it has this status, it cannot be used as a payment method.
+As long as this authorisation is not signed and validated by you, the status “Validation in progress” will appear next to your bank account. While it has this status, it cannot be used as a payment method.
 >
 
 
