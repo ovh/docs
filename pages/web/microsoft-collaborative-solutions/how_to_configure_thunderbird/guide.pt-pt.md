@@ -20,8 +20,7 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
 > Este manual fornece as instruções necessárias para realizar as operações mais habituais. Contudo, se precisar de ajuda, recomendamos que recorra a um prestador de serviços especializado e/ou
-> que entre em contato com o editor de serviço se tiver dificuldades. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](../microsoft-collaborative-solutions/exchange_20132016_configuracao_de_thunderbird/)
-> deste manual.
+> que entre em contato com o editor de serviço se tiver dificuldades. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção **Quer saber mais?** deste manual.
 > 
 
 ## Requisitos
@@ -80,7 +79,7 @@ Após clicar em `Configuração manual`{.action}, verifique se estes elementos e
 
 > [!primary]
 >
-> Para as contas do tipo [Private Exchange](../microsoft-collaborative-solutions/exchange_primeiros_passos_com_um_servidor_private/){.external}, o servidor a inserir será o escolhido durante a encomenda.
+> Para as contas do tipo [Private Exchange](../exchange_primeiros_passos_com_um_servidor_private/){.external}, o servidor a inserir será o escolhido durante a encomenda.
 >
 
 Se a autenticação **Palavra-passe normal** não é funcional, também pode inserir **NTLM**.
