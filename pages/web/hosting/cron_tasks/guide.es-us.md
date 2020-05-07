@@ -7,11 +7,12 @@ legacy_guide_number: g1990
 section: Tareas automatizadas (Cron)
 ---
 
+**Última actualización: 05/05/2020**
 
 ## Crear una tarea automatizada
 Seleccione el alojamiento en la sección «Alojamientos» (1) situada en la columna de la izquierda, haga clic en «Más +» y seleccione la opción «Tareas planificadas - Cron» (2). Una vez dentro, haga clic en «Añadir una planificación» (3).
 
-![](images/3261.png){.thumbnail}
+![cron tareas](images/3261.png){.thumbnail}
 En esta primera etapa, debe indicar la ruta hacia su script y el tipo de lenguaje de programación.
 
 El resto de campos son opcionales. La opción de logs por email le ofrece la posibilidad de recibir los logs de ejecución de su tarea cron en una de las direcciones predefinidas o en la que usted indique.
@@ -20,41 +21,41 @@ Solo recibirá este mensaje de correo en caso de error.
 
 Por último, puede añadir una descripción a la tarea cron.
 
-![](images/3262.png){.thumbnail}
+![cron tareas](images/3262.png){.thumbnail}
 En la segunda etapa, seleccione la periodicidad de la tarea cron.
 
-![](images/3264.png){.thumbnail}
+![cron tareas](images/3264.png){.thumbnail}
 Existen dos opciones disponibles: el modo simple y el modo experto.
 
-![](images/3265.png){.thumbnail}
+![cron tareas](images/3265.png){.thumbnail}
 Una vez finalizada la configuración de la tarea cron, se muestra un resumen. 
 
 Si la información es correcta, haga clic en «Aceptar» para crear la tarea automatizada.
 
-![](images/3266.png){.thumbnail}
+![cron tareas](images/3266.png){.thumbnail}
 Aparecerá un mensaje confirmando que la solicitud se ha enviado correctamente.
 
-![](images/3267.png){.thumbnail}
+![cron tareas](images/3267.png){.thumbnail}
 
 
 ## Editar una tarea automatizada
 Seleccione el alojamiento en la sección «Alojamientos» (1) situada en la columna de la izquierda, haga clic en «Más +» y seleccione la opción «Tareas planificadas - Cron» (2). Una vez dentro, haga clic en el icono con forma de lápiz «Editar» (3) correspondiente a la tarea automatizada que desee modificar.
 
-![](images/3268.png){.thumbnail}
+![cron tareas](images/3268.png){.thumbnail}
 Podrá modificar la ruta o el lenguaje de programación, activar los logs por email y añadir una descripción a su tarea cron.
 
-![](images/3269.png){.thumbnail}
+![cron tareas](images/3269.png){.thumbnail}
 
 
 ## Eliminar una tarea automatizada
 Seleccione el alojamiento en la sección «Alojamientos» (1) situada en la columna de la izquierda, haga clic en «Más +» y seleccione la opción «Tareas planificadas - Cron» (2). Una vez dentro, haga clic en el icono «Eliminar» (3), con forma de papelera, correspondiente a la tarea automatizada que desee eliminar.
 
-![](images/3270.png){.thumbnail}
+![cron tareas](images/3270.png){.thumbnail}
 Aparecerá un resumen de la tarea automatizada que desea eliminar.
 
 Haga clic en «Aceptar» para completar la operación.
 
-![](images/3271.png){.thumbnail}
+![cron tareas](images/3271.png){.thumbnail}
 
 
 ## Probar la ejecución de la tarea automatizada en un navegador de internet
@@ -70,15 +71,15 @@ Si no se detecta ningún error, le aconsejamos que analice los logs de ejecució
 ## Analizar los logs de ejecución de la tarea automatizada
 Seleccione el alojamiento en la sección «Alojamientos» situada en la columna de la izquierda, haga clic en «Más +» y seleccione la opción «Estadísticas y logs».
 
-![](images/4012.png){.thumbnail}
+![cron tareas](images/4012.png){.thumbnail}
 Haga clic en el enlace de acceso a los logs.
 
-![](images/4013.png){.thumbnail}
-Si la tarea automatizada se ha realizado durante ese mismo día, podrá acceder a los logs de ejecución en el OVH Speed Log (1). 
+![cron tareas](images/4013.png){.thumbnail}
+Si la tarea automatizada se ha realizado durante ese mismo día, podrá acceder a los logs de ejecución en el OVHcloud Speed Log (1). 
 
 Si la tarea se ha realizado más de 24 horas antes, seleccione el archivo de los logs del mes que quiera consultar (en la imagen, del mes de junio).
 
-![](images/3274.png){.thumbnail}
+![cron tareas](images/3274.png){.thumbnail}
 Ejemplo de logs de ejecución de una tarea automatizada:
 
 
