@@ -5,7 +5,7 @@ legacy_guide_number: 2328
 section: 'Configuración del alojamiento'
 ---
 
-Esta guía recoge todas las direcciones IP de los alojamientos web de OVH. Dichas direcciones le serán útiles para, por ejemplo, saber qué dirección IP debe introducir en sus zonas DNS en función de:
+Esta guía recoge todas las direcciones IP de los alojamientos web de OVHcloud. Dichas direcciones le serán útiles para, por ejemplo, saber qué dirección IP debe introducir en sus zonas DNS en función de:
 
 - su cluster
 - sus opciones (CDN, SSL de pago, SSL gratuito...)
