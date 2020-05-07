@@ -7,6 +7,7 @@ legacy_guide_number: g1962
 section: FTP y SSH
 ---
 
+**Última actualización: 05/05/2020**
 
 ## ¿En qué consiste el acceso SSH y cómo utilizarlo?
 El acceso SSH está disponible a partir del plan Profesional (a partir de los alojamientos Plan en los [antiguos planes](https://www.ovh.es/hosting/antiguos_productos_hosting.xml)). 
@@ -20,7 +21,7 @@ Si necesita más información sobre el protocolo SSH, haga clic [aquí](https://
 
 ## Requisitos
 
-- La opción SSH, disponible para los alojamientos web a partir del plan [Profesional](https://www.ovh.es/hosting/hosting-profesional.xml). 
+- La opción SSH, disponible para los alojamientos web a partir del plan [Profesional](https://www.ovh.com/world/es/hosting/hosting-profesional.xml). 
 
 - Un software que permita el acceso SSH.
 
@@ -34,12 +35,12 @@ Es posible administrar los accesos SSH desde el área de cliente. Para ello, sel
 
 Al crear nuevos usuarios FTP, se activa automáticamente la conexión SSH para ese mismo usuario.
 
-![](images/img_3945.jpg){.thumbnail}
+![ssh](images/img_3945.jpg){.thumbnail}
 Puede desactivar la conexión SSH del usuario haciendo clic en la rueda dentada que aparece a la derecha del usuario y seleccionando la opción «Editar». 
 
 El cambio se hará efectivo en unos minutos.
 
-![](images/img_3946.jpg){.thumbnail}
+![ssh](images/img_3946.jpg){.thumbnail}
 
 
 ## Prompt
@@ -62,15 +63,15 @@ En Linux y Mac:
 Para conectarse a su alojamiento en SSH, abra su prompt, tal y como se indica a continuación, e introduzca: 
 SSH SuUsuarioFtp@SuServidorFtp
 
-Si necesita información sobre cómo recuperar los usuarios FTP, consulte nuestra [guía](https://www.ovh.es/g1909.web_hosting_administrar_y_acceder_a_sus_contrasenas).
+Si necesita información sobre cómo recuperar los usuarios FTP, consulte nuestra [guía](../web_hosting_administrar_y_acceder_a_sus_contrasenas/).
 
-![](images/img_3093.jpg){.thumbnail}
+![ssh](images/img_3093.jpg){.thumbnail}
 En Windows:
 
 Para Windows le recomendamos que siga esta guía sobre PuTTY. 
 
 
-- []({legacy}1964).
+- [ssh]({legacy}1964).
 
 
 
