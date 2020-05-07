@@ -21,7 +21,7 @@ También necesitará sus usuarios FTP:
 - Contraseña FTP 
 
 
-Podrá acceder a esta información en su área de cliente, en la pestaña «FTP-SSH». Si desea más información, consulte nuestra [guía](https://www.ovh.es/g1909.web_hosting_administrar_y_acceder_a_sus_contrasenas).
+Podrá acceder a esta información en su área de cliente, en la pestaña «FTP-SSH». Si desea más información, consulte nuestra [guía](../web_hosting_administrar_y_acceder_a_sus_contrasenas/).
 
 
 ## Ejecutar PuTTY
@@ -34,7 +34,7 @@ Podrá acceder a esta información en su área de cliente, en la pestaña «FTP-
 
 
 
-![](images/img_3094.jpg){.thumbnail}
+![Putty](images/img_3094.jpg){.thumbnail}
 
 
 ## Conexión a su alojamiento
@@ -53,5 +53,5 @@ Por motivos de seguridad PuTTY no muestra los caracteres introducidos. Si el nom
 
 
 ## Uso de SSH
-Si desea más información sobre el uso de SSH, consulte nuestra [guía](https://www.ovh.es/g1962.web_hosting_ssh_en_alojamiento_compartido).
+Si desea más información sobre el uso de SSH, consulte nuestra [guía](../web_hosting_ssh_en_alojamiento_compartido/).
 
