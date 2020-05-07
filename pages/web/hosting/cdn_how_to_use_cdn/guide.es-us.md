@@ -6,6 +6,7 @@ legacy_guide_number: g1290
 section: Optimización del sitio web
 ---
 
+**Última actualización: 05/05/2020**
 
 ##
 Conéctese al [área de cliente](https://www.ovh.com/auth/?action=gotomanager) con su ID de cliente y contraseña.
