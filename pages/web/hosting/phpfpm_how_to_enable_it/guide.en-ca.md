@@ -15,7 +15,7 @@ It is compiled by caching the opcode which minimises slow disk reads and speeds 
 Tests have shown that performance is up to 7 times faster compared with the older mechanism.
 
 ## In your customer account
-This guide will explain how to enable PHP FPM and select the PHP version by using the .ovhconfig file. Alternatively you can do this straight from your customer account by following this guide: []({legacy}1999)
+This guide will explain how to enable PHP FPM and select the PHP version by using the .ovhconfig file. Alternatively you can do this straight from your customer account by following [this guide](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
 
 Warning: the following options are disabled for safety reasons when using PHP-FPM
 
