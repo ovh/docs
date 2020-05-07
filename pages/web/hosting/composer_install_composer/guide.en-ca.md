@@ -5,6 +5,7 @@ slug: install_composer_on_web_hosting_packages
 legacy_guide_number: g1894
 ---
 
+**Last updated 5th May 2020**
 
 ## Prerequisites
 You can use "Composer" on Professional hosting packages and above. You need to have SSH access because you need to use command lines.
@@ -52,7 +53,7 @@ php composer.phar create-project symfony/framework-standard-edition my_project_n
 ```
 
 
-Similarly, you can use the OVH API from your web hosting package by using the offical wrapper. Just add a file called composer.json which contains the list of dependencies you need. Here is an example of this file with the OVH API wrapper:
+Similarly, you can use the OVHcloud API from your web hosting package by using the offical wrapper. Just add a file called composer.json which contains the list of dependencies you need. Here is an example of this file with the OVH API wrapper:
 
 
 ```
@@ -76,3 +77,6 @@ php composer.phar install
 
 To use this library, you can refer to the documentation and code available on [github](https://github.com/ovh/php-ovh)
 
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
