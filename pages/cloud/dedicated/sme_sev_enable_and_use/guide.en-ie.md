@@ -5,7 +5,7 @@ excerpt: 'Enable SME on your ubuntu server and spawn an SEV virtual machine'
 section: 'Advanced use'
 ---
 
-**Last updated April 30th, 2020**
+**Last updated May 7th, 2020**
 
 ## Objective
 
@@ -13,7 +13,7 @@ Enable AMD SME on your Ubuntu 20.04 server, and spawn a KVM/QEMU virtual machine
 
 ## Requirements
 
-- A dedicated server with an AMD Epyc CPU
+- A dedicated server with an AMD Naples/Rome Epyc CPU
 - Administrative (root) access to the server via SSH
 - Ubuntu 20.04 installed
 
@@ -126,7 +126,7 @@ Note : at the time of writing, there is an issue in apparmor/libvirt that wil ma
 ERROR    internal error: process exited while connecting to monitor: 2020-04-28T15:04:14.348979Z qemu-system-x86_64: sev_guest_init: Failed to open /dev/sev 'Permission denied'
 ```
 To fix it, we'll edit `/etc/apparmor.d/abstractions/libvirt-qemu` to authorize `rw` access to `/dev/sev`. Here's what it should look like once edited :
-```
+```bash
 [...]
   /dev/net/tun rw,
   /dev/kvm rw,
