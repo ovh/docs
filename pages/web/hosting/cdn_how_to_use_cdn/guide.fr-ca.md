@@ -6,7 +6,7 @@ excerpt: 'Améliorez votre site en accélérant son chargement sur votre héberg
 section: 'Optimiser son site'
 ---
 
-**Dernière mise à jour le 19/03/2020**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
@@ -25,7 +25,7 @@ Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre sit
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Posséder une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Posséder une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
 
 ## En pratique
 
@@ -54,7 +54,7 @@ Cochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur 
 > [!warning]
 > 
 > Dans le cas d'un nom de domaine externe à OVHcloud ajouté en multisite sur l'hébergement web, vous devez mentionner l'adresse IP du CDN de votre hébergement dans la zone DNS du nom de domaine.<br>
-> Consultez la [liste des adresses IP des clusters et hébergement web](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external} pour retrouver l'adresse IP spécifique du CDN de votre cluster.
+> Consultez la [liste des adresses IP des clusters et hébergement web](../liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external} pour retrouver l'adresse IP spécifique du CDN de votre cluster.
 
  
 **Pourquoi ne puis-je pas beneficier de l'IP géolocalisée avec l'option CDN ?** <br>
