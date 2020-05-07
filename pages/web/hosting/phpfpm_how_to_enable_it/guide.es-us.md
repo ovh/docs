@@ -1,7 +1,7 @@
 ---
-title: Activar la optimización de PHP en un alojamiento compartido OVH
-excerpt: Esta guía explica cómo activar PHP-FPM en un alojamiento de OVH para mejorar los tiempos de respuesta de PHP
-slug: activar_la_optimizacion_de_php_en_un_alojamiento_compartido_ovh
+title: Activar la optimización de PHP en un alojamiento compartido OVHcloud
+excerpt: Esta guía explica cómo activar PHP-FPM en un alojamiento de OVHcloud para mejorar los tiempos de respuesta de PHP
+slug: activar_la_optimizacion_de_php_en_un_alojamiento_compartido_ovhcloud
 legacy_guide_number: g1175
 section: PHP
 ---
@@ -15,7 +15,7 @@ PHP-FPM está compilado con un sistema de opcode cache, lo que permite minimizar
 Esto permite obtener un rendimiento hasta 7 veces más rápido que el anterior mecanismo en nuestros laboratorios de prueba.
 
 ## En su área de cliente
-Esta guía explica cómo activar el PHP FPM y definir la versión de PHP a través del archivo .ovhconfig. Si lo desea, puede realizar esta operación de forma más sencilla directamente desde el área de cliente. Para ello, puede consultar la siguiente guía: []({legacy}1999)
+Esta guía explica cómo activar el PHP FPM y definir la versión de PHP a través del archivo .ovhconfig. Si lo desea, puede realizar esta operación de forma más sencilla directamente desde el área de cliente. Para ello, puede consultar : [la siguiente guía](../cambiar-version-php-en-alojamiento-web/)
 
 Atención: Por motivos de seguridad, con PHP-FPM se deshabilitan las siguientes opciones (deprecadas por PHP):
 
@@ -53,7 +53,7 @@ Los planes de web hosting 2014 contienen por defecto el archivo .ovhconfig. En p
 
 En los antiguos planes o al migrar a un nuevo plan, no se añade automáticamente, ya que es posible que algunos parámetros no sean compatibles, según la versión de PHP utilizada.
 
-El archivo .ovhconfig debe estar colocado en la raíz o en una carpeta de primer nivel. No es posible utilizar varios archivos para combinar configuraciones de PHP diferentes en un mismo alojamiento (excepto en un [multidominio](https://www.ovh.es/g1332.creacion-multidominio)correctamente declarado).
+El archivo .ovhconfig debe estar colocado en la raíz o en una carpeta de primer nivel. No es posible utilizar varios archivos para combinar configuraciones de PHP diferentes en un mismo alojamiento (excepto en un [multidominio](../configurar-un-multisitio-en-un-alojamiento-web/)correctamente declarado).
 
 El archivo .ovhconfig deberá contener el siguiente código:
 
