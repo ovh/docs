@@ -6,14 +6,16 @@ excerpt: Ce guide va vous permettre de migrer votre base de donnees de MySQL 4 v
 section: Bases de données
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 Vous trouverez dans ce guide différentes informations et aides concernant la migration de la version MySQL 4 vers la version MySQL 5.6 de vos bases de données.
 
-Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovh.com/fr/hebergement-web/faq/){.external} disponibles.
+Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovh.com/ca/fr/hebergement-web/faq/){.external} disponibles.
 
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -31,7 +33,7 @@ En suivant les différentes étapes de ce guide, la migration devrait vous prend
 ## Retrouver les acces et acceder a votre base de donnees
 
 ### Ou retrouver les acces a votre base de donnees
-Dans un premier temps il faut vous connecter à votre [espace client](https://www.ovh.com/manager/web/login/){.external}.
+Dans un premier temps il faut vous connecter à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 Une fois identifié, sélectionnez votre hébergement concerné à gauche dans la partie Hébergement. Rendez-vous ensuite dans l'onglet Bases de données.
 
@@ -47,7 +49,7 @@ Cliquez sur le  **rouage à droite**  : Vous pourrez ainsi  **changer le mot de 
 Pour vous connecter à votre base de données en version MySQL 4, vous avez deux possibilités :
 
 - Utilisez [ce lien](https://phpmyadmin.ovh.net/old/){.external} .
-- Sur votre [espace client](https://www.ovh.com/manager/web/login/){.external} , dans la partie Hébergement & onglet SQL, cliquez sur le rouage à droite de votre base de données en MySQL 4, et cliquez sur " Accéder à phpMyAdmin " puis sur [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/){.external} (en bas de la page).
+- Sur votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} , dans la partie Hébergement & onglet SQL, cliquez sur le rouage à droite de votre base de données en MySQL 4, et cliquez sur " Accéder à phpMyAdmin " puis sur [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/){.external} (en bas de la page).
 
 
 ![hosting](images/go-to-phpmyadmin.png){.thumbnail}
@@ -97,7 +99,7 @@ Suite à cette opération, votre base de donnée se retrouvera vide.
 
 
 ### Comment supprimer votre base de donnees en version MySQL 4 ?
-Vous pouvez maintenant quitter PhpMyAdmin. A nouveau sur votre [espace client](https://www.ovh.com/manager/web/login/){.external}, cliquez sur votre hébergement, puis sur l'onglet SQL.
+Vous pouvez maintenant quitter PhpMyAdmin. A nouveau sur votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur votre hébergement, puis sur l'onglet SQL.
 
 A droite de la ligne de votre base de données en version MYSQL v4.0, cliquez sur le rouage, puis choisissez "Supprimer la base de données".
 
@@ -112,7 +114,7 @@ Il faudra ensuite patienter un délai de 10-15 minutes pour que votre base soit 
 ## Créer et restaurer votre base de donnees en version MySQL 5.6.
 
 ### Comment créer votre base de donnees en version MySQL 5.6 ?
-Maintenant que vous avez supprimé votre base de données en version MySQL 4, il vous faut maintenant en créer une nouvelle en version MySQL 5.6. Pour cela rendez-vous sur votre [espace client](https://www.ovh.com/manager/web/login/){.external}, section Hébergement, onglet SQL.
+Maintenant que vous avez supprimé votre base de données en version MySQL 4, il vous faut maintenant en créer une nouvelle en version MySQL 5.6. Pour cela rendez-vous sur votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, section Hébergement, onglet SQL.
 
 Ici, cliquez sur le bouton Créer une base de données.
 
@@ -122,7 +124,7 @@ Il faudra patienter 5 à 10 minutes maximum, le temps que la base se créée. Vo
 
 
 ### Comment restaurer/importer votre sauvegarde, dans votre base de donnees en version MySQL 5.6 ?
-Pour restaurer votre sauvegarde de base de données, il vous suffit de suivre [ce guide](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql){.ref}.
+Pour restaurer votre sauvegarde de base de données, il vous suffit de suivre [ce guide](../mutualise-guide-importation-dune-base-de-donnees-mysql){.ref}.
 
 
 ## Modifier le fichier de configuration de votre site
@@ -134,7 +136,7 @@ Cela se produit car votre site tente toujours de se connecter à l'ancienne base
 
 
 ### Comment modifier mon fichier de configuration ?
-En fonction du type de site que vous avez, il peut se trouver à différents endroits, mais toujours sur votre espace FTP. Pour vous connecter à votre espace FTP, il vous suffit de suivre [ce guide](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web){.ref}.
+En fonction du type de site que vous avez, il peut se trouver à différents endroits, mais toujours sur votre espace FTP. Pour vous connecter à votre espace FTP, il vous suffit de suivre [ce guide](../connexion-espace-stockage-ftp-hebergement-web){.ref}.
 
 Par exemple si votre site est basé sur WordPress, le fichier de configuration se nomme wp-config.php et se trouve dans le dossier principal de votre site, sur votre espace FTP.
 
@@ -142,7 +144,7 @@ Pour les autres CMS ou les sites faits par un développeur, le mieux est de vous
 
 Une fois que vous avez retrouvé ce fichier sur votre espace FTP, il faut éditer ce fichier. Dans un premier temps, copiez le fichier en local sur votre ordinateur, et éditez le avec un logiciel de texte, comme WordPad ou un blocnote.
 
-Il vous faut modifier les lignes de type "DB_NAME", "DBPASSWORD", "DB_USER" et "DB_HOST" (peut s'appeler différemment en fonction du type de site), et modifier les valeurs correspondantes, par les nouvelles valeurs, que vous retrouvez sur votre [espace client](https://www.ovh.com/manager/web/login/){.external}, onglet SQL.
+Il vous faut modifier les lignes de type "DB_NAME", "DBPASSWORD", "DB_USER" et "DB_HOST" (peut s'appeler différemment en fonction du type de site), et modifier les valeurs correspondantes, par les nouvelles valeurs, que vous retrouvez sur votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, onglet SQL.
 
 
 ## Cas particuliers
