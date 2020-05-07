@@ -1,31 +1,34 @@
 ---
-title: Guide to Using the GeoCache Accelerator on a Web Hosting Package
-excerpt: User guide for the GeoCache Accelerator included in our web hosting plans
+title: Guide to Using the GeoCache Accelerator on a Web Hosting
+excerpt: User guide for the GeoCache Accelerator included in our Web Hosting plans
 id: '1290'
 slug: guide_to_using_the_geocache_accelerator_on_a_web_hosting_package
 legacy_guide_number: g1290
 ---
 
+**Last updated 5th May 2020**
 
 ## 
-Sign in to the [control panel](https://www.ovh.com/manager/web) using your OVH username (NIC) and password. 
+Sign in to the [Control Panel](https://www.ovh.com/auth/?action=gotomanager) using your OVHcloud username (NIC) and password. 
 
 Select your web hosting platform in the "Hosting" section.
 
-![](images/img_2904.jpg){.thumbnail}
+![CDN1](images/img_2904.jpg){.thumbnail}
 
 
 ## Clearing the GeoCache Accelerator cache
+
 The TTL (Time to Live - the time that a cached file remains on a PoP) goes from 5 to 60 minutes (which is managed by our servers for optimisation purposes). After this time has passed, the cached file is deleted. A new visitor will then have to request the file before it will be re-cached on the related PoP.
 
 To replace a file cached on the PoPs after updating your website, you will need to clear the existing cache so that visitors will see the updated content. The files will be re-cached on each PoP when they are requested by visitors in the relevant zones.
 
-To manually clear your cache on the PoPs of the OVH network, you just have to click on "Clear CDN cache"
+To manually clear your cache on the PoPs of the OVHcloud network, you just have to click on "Clear CDN cache"
 
-![](images/img_2957.jpg){.thumbnail}
+![CDN2](images/img_2957.jpg){.thumbnail}
 
 
 ## Disable your GeoCache Accelerator
+
 If you don't want to use the GeoCache included with your hosting package, there are various ways to disable it:
 
 
@@ -79,12 +82,14 @@ You can find out which cluster corresponds to your Web Hosting in your Control P
 
 
 ## 
+
 To access this file you will need to connect to your hosting space via FTP. 
 
 You can use the 'FileZilla' FTP client for this.
 
 
 ## Enable/Disable the GeoCache Accelerator
+
 Once you have logged into your hosting system via FTP, you will automatically reach the root directory. Several files and folders should be located here, including the ".ovhconfig" file.
 
 Download this file to your PC (by double clicking) and open using a text editor. Rename the file as 'ovhconfig.txt' if necessary.
@@ -95,7 +100,7 @@ Rename the file as '.ovhconfig' again and return it to the FTP root, replacing t
 
 To renable the GeoCache, simply replace environment" with "production" again.
 
-![](images/img_1207.jpg){.thumbnail}
+![CDN3](images/img_1207.jpg){.thumbnail}
 You can also add the following ling to your .htaccess file:
 
 ```
