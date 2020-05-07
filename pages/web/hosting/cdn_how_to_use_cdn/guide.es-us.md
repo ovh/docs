@@ -7,12 +7,12 @@ section: Optimización del sitio web
 ---
 
 
-## 
-Conéctese al [área de cliente](https://www.ovh.com/manager/web) con su ID de cliente y contraseña.
+##
+Conéctese al [área de cliente](https://www.ovh.com/auth/?action=gotomanager) con su ID de cliente y contraseña.
 
 En la columna izquierda, sección «Alojamientos», seleccione el alojamiento.
 
-![](images/img_2904.jpg){.thumbnail}
+![geocache](images/img_2904.jpg){.thumbnail}
 
 
 ## Vaciar la caché del acelerador GeoCaché
@@ -20,9 +20,9 @@ El TTL (Time to Live, tiempo de permanencia en caché de un archivo en un PoP) e
 
 Para forzar la sustitución de un archivo en la caché de los PoP, por ejemplo después de modificar la web, hay que vaciar lo que ya está en caché. Posteriormente, cuando un usuario llame al archivo desde la zona de influencia de ese PoP, dicho archivo volverá a guardarse en caché.
 
-Para vaciar manualmente la caché de los PoP de la red de OVH, solo hay que hacer clic en «Vaciar la caché de la CDN de base».
+Para vaciar manualmente la caché de los PoP de la red de OVHcloud, solo hay que hacer clic en «Vaciar la caché de la CDN de base».
 
-![](images/img_2957.jpg){.thumbnail}
+![geocache](images/img_2957.jpg){.thumbnail}
 
 
 ## Desactivar el acelerador GeoCaché
@@ -93,7 +93,7 @@ Si ha cambiado el nombre del archivo, vuelva a llamarlo .ovhconfig y súbalo a l
 
 Para reactivar el acelerador GeoCaché, solo tendrá que repetir la operación modificando el parámetro environment con el valor «production».
 
-![](images/img_1207.jpg){.thumbnail}
+![geocache](images/img_1207.jpg){.thumbnail}
 También puede añadir la siguiente linea en el archivo .htaccess: 
 
 ```
