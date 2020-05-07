@@ -1,10 +1,11 @@
 ---
-title: Enable PHP optimisation with OVH web hosting
-excerpt: This guide will show you how to enable PHP-FPM on your hosting package with OVH in order to improve the PHP response time
+title: Enable PHP optimisation with OVHcloud Web Hosting
+excerpt: This guide will show you how to enable PHP-FPM on your hosting package with OVHcloud in order to improve the PHP response time
 slug: enable_php_optimisation_with_ovh_web_hosting
 legacy_guide_number: g1175
 ---
 
+**Last updated 5th May 2020**
 
 ## What is PHP-FPM?
 We have adapted PHP-FPM to our web infrastructure so that you can enjoy speedier PHP response times.
@@ -51,7 +52,7 @@ Just save the .ovhcongig file at the root of your disk space, via your FTP clien
 PLEASE NOTE: The .ovhconfig file exists by default on 2014 Web Hosting packages. On older packages you have to create it and save it at the root of your disk space. 
 It is not automatically added to the older plans or when changing your plan, some settings may not be compatible depending on the version of PHP that you are using.
 
-NB: the .ovhconfig file can only be placed at the root or in a top-level directory. It is not possible to have multiple files with different versions of PHP on the same hosting package (except [url ="https://www.ovh.co.uk/g1332.hosting_multi-domain_setup_guide"]correctly configured multi-domains[/url]).
+NB: the .ovhconfig file can only be placed at the root or in a top-level directory. It is not possible to have multiple files with different versions of PHP on the same hosting package (except [Multisites](../multisites-configuring-multiple-websites/)).
 
 This .ovhconfig should contain the following code:
 
@@ -191,5 +192,7 @@ http.firewall=none
 environment=development
 ```
 
+## Go further
 
+Join our community of users on <https://community.ovh.com/en/>.
 
