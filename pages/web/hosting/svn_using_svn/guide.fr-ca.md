@@ -6,18 +6,20 @@ excerpt: Ce guide montre la facon d'utiliser svn via l'acces ssh de l'hebergemen
 section: FTP et SSH
 ---
 
+**Dernière mise à jour le 05/05/2020**
+
 Subversion (en abrégé svn) est un système de gestion de versions. La suite du guide suppose que vous êtes connecté en ssh à la racine de votre hébergement.
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
 
 ## Pre-requis
 - Avoir un hébergement qui permet une connection ssh (à partir de l'offre Pro)
-- Savoir se connecter en SSH (vous pouvez pour cela vous aider de ce [guide]({legacy}1962){.ref} )
+- Savoir se connecter en SSH (vous pouvez pour cela vous aider de ce [guide](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.ref} )
 
 
 ## Creation du depot
