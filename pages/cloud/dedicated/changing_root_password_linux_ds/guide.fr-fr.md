@@ -5,19 +5,21 @@ excerpt: 'Découvrez comment modifier le mot de passe root de votre serveur, pou
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 20/06/2018**
+**Dernière mise à jour le 07/05/2020**
 
 ## Objectif
 
-Lors de l’installation ou de la réinstallation d’une distribution ou d’un système d’exploitation, un mot de passe pour l’accès root vous est fourni. Nous vous conseillons vivement de le modifier, comme expliqué dans notre guide [« Sécuriser un serveur dédié »](https://docs.ovh.com/fr/dedicated/securiser-un-serveur-dedie/){.external}. Il est également possible que vous ne retrouviez plus ce mot de passe et que vous ayez donc besoin de le changer.
+Lors de l’installation ou de la réinstallation d’une distribution ou d’un système d’exploitation, un mot de passe pour l’accès root vous est fourni. Nous vous conseillons vivement de le modifier, comme expliqué dans notre guide [« Sécuriser un serveur dédié »](../securiser-un-serveur-dedie/){.external}. Il est également possible que vous ne retrouviez plus ce mot de passe et que vous ayez donc besoin de le changer.
 
 **Ce guide détaille ces deux situations et vous montre comment modifier le mot de passe root de votre serveur.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
 * Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
 * Être connecté en SSH avec l’identifiant root.
-* Avoir accès à l’[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Avoir accès à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
@@ -46,7 +48,7 @@ passwd: password updated successfully
 
 #### Étape 1 : identifier la partition système
 
-Après avoir activé le [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external} sur votre serveur, vous devez identifier la partition système. Vous pouvez le faire via la commande suivante :
+Après avoir activé le [mode rescue](../ovh-rescue/){.external} sur votre serveur, vous devez identifier la partition système. Vous pouvez le faire via la commande suivante :
 
 ```sh
 # fdisk -l
@@ -112,8 +114,8 @@ Ensuite, changez le mode de démarrage sur votre serveur pour `Booter sur le dis
 
 ## Aller plus loin
 
-[« Activer et utiliser le mode rescue. »](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external}
+[« Activer et utiliser le mode rescue. »](../ovh-rescue/){.external}
 
-[« Changer le mot de passe administrateur sur un serveur dédié Windows. »](https://docs.ovh.com/fr/dedicated/changer-mot-passe-admin-windows/){.external}
+[« Changer le mot de passe administrateur sur un serveur dédié Windows. »](../changer-mot-passe-admin-windows/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
