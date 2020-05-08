@@ -1,11 +1,12 @@
 ---
-title: 'Web hosting: Using PuTTy on Windows'
-excerpt: 'Web hosting: Using PuTTy on Windows'
+title: 'Using PuTTy on Windows'
+excerpt: 'Web Hosting: Using PuTTy on Windows'
 id: '1964'
 slug: web_hosting_using_putty_on_windows
 legacy_guide_number: g1964
 ---
 
+**Last updated 5th May 2020**
 
 ## Introduction
 There are many programs available on Windows which are based on SSH. 
@@ -20,7 +21,7 @@ You will also need your FTP credentials
 
 
 You can find this information in your control panel. Go to the FTP section or follow
-[this guide](https://www.ovh.co.uk/fr/g1909.mutualise_gerer_et_acceder_a_ses_mots_de_passe).
+[this guide](../log-in-to-storage-ftp-web-hosting/).
 
 
 ## Run PuTTy
@@ -33,7 +34,7 @@ You can find this information in your control panel. Go to the FTP section or fo
 
 
 
-![](images/img_3094.jpg){.thumbnail}
+![putty](images/img_3094.jpg){.thumbnail}
 
 
 ## Log on
@@ -48,8 +49,9 @@ If the password or login are incorrect, start again.
 - If all is well, you will see the message "Welcome to Ovh"
 
 
-
-
 ## Using SSH.
-To use SSH you should now refer to [this guide](https://www.ovh.co.uk/fr/g1962.mutualise_le_ssh_sur_les_hebergements_mutualises).
+To use SSH you should now refer to [this guide](../web_hosting_ssh_on_web_hosting_packages/).
 
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
