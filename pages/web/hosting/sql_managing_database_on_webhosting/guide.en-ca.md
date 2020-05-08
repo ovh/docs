@@ -4,21 +4,23 @@ slug: managing-a-database-on-a-web-hosting-package
 legacy_guide_number: 1943
 ---
 
+**Last updated 5th May 2020**
 
 ## General information
+
 A database is a collection of data that is structured and organised so that it can easily be stored and accessed. SQL is a standard language which you can use to request that a database includes, edits, restores, or deletes data.
 
-OVH's shared web hosting packages include SQL databases by default. The number and size of the database depends on the package that you have ordered. You can find more [details here](https://www.ovh.co.uk/web-hosting/){.external}.
+OVHcloud's shared web hosting packages include SQL databases by default. The number and size of the database depends on the package that you have ordered. You can find more [details here](https://www.ovh.com/ca/en/web-hosting/){.external}.
 
-You can only access these databases from OVH shared hosting packages. You cannot connect a website or application to one of these databases if it is not hosted by OVH.
+You can only access these databases from OVHcloud shared hosting packages. You cannot connect a website or application to one of these databases if it is not hosted by OVHcloud.
 
-OVH provides two types of databases: MySQL and PostgreSQL
+OVHcloud provides two types of databases: MySQL and PostgreSQL
 
 
 ## Managing a database
 
 ### Creating a database
-Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} with your ID (nic-handle, for example " **xx999-ovh** ") - and password.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} with your ID (nic-handle, for example " **xx999-ovh** ") - and password.
 
 
 ![hosting](images/3035.png){.thumbnail}
@@ -68,7 +70,7 @@ If there are no problems, you will see a message confirming that your database w
 You have now completed the final step to create your database.
 
 
-## Management options available from your OVH Control Panel
+## Management options available from your OVHcloud Control Panel
 Once you have created your database, you will be provided with a little interface in order to simplify your database admin.
 
 
@@ -86,7 +88,7 @@ If you are changing the password and you have a website which is using this data
 ### Create a backup (dump)
 You can back up your database directly from your Control Panel.
 
-OVH lets you restore whatever data is on your database on various dates:
+OVHcloud lets you restore whatever data is on your database on various dates:
 
 - Now: i.e the data currently stored on the database
 - Yesterday: the data as it was stored on your database 24 hours ago
@@ -149,7 +151,7 @@ Version: you can choose to log on to your current database or a backup which is 
 ## Recurring errors
 
 ### Can't connect to local MySQL
-/mysql.sock' (2)) At OVH, MySQL (on shared hosting) does not work locally but on the network. You may have incorrectly put localhost in your script configuration. Instead you have to enter "name_of_your_db.mysql.db" as the server name in your website's configuration file.
+/mysql.sock' (2)) At OVHcloud, MySQL (on shared hosting) does not work locally but on the network. You may have incorrectly put localhost in your script configuration. Instead you have to enter "name_of_your_db.mysql.db" as the server name in your website's configuration file.
 
 
 ### Too Many Connections
@@ -161,4 +163,8 @@ If you get a " **Too many connections**" error when trying to connect to MySQL, 
 ### Import a dump (backup)
 How do I import my MySQL database backup? What different methods are there?
 
-There is a guide available: [here](https://docs.ovh.com/gb/en/hosting/web_hosting_guide_to_importing_a_mysql_database/){.external}
+There is a guide available [here](../web_hosting_guide_to_importing_a_mysql_database/).
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
