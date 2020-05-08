@@ -58,7 +58,7 @@ Im Fall der Hinterlegung eines neuen Bankkontos wird eine E-Mail von unserem Par
 
 > [!primary]
 >
-Solange dieses Formular nicht ausgefüllt und unterschrieben bei uns eingegangen ist, wird der Status „Validierung wird durchgeführt“ neben Ihrem Bankkonto angezeigt. Es kann in diesem Status für Zahlungen per Einzug noch nicht berücksichtigt werden.
+Solange diese Authorisierung nicht erfolgt ist, wird der Status „Validierung wird durchgeführt“ neben Ihrem Bankkonto angezeigt. Es kann in diesem Status für Zahlungen per Einzug noch nicht berücksichtigt werden.
 >
 
 
