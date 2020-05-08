@@ -1,8 +1,8 @@
 ---
-title: Eine Domain zu Ihrem Exchange Dienst hinzufügen
+title: 'Eine Domain zu Ihrem Exchange Dienst hinzufügen'
 slug: domain-zu-exchange-hinzufugen
-excerpt: So fügen Sie eine Domain zu Ihrer Exchange Lösung hinzu
-section: Konfiguration des Exchange Angebots
+excerpt: 'So fügen Sie eine Domain zu Ihrer Exchange Lösung hinzu'
+section: 'Erste Schritte mit Exchange'
 ---
 
 **Stand 22.03.2018**
@@ -111,6 +111,6 @@ Sie können Outlook Lizenzen über Ihr [OVH Kundencenter](https://ovh.com/auth/?
 
 ## Weiterführende Informationen
 
-[CNAME-Eintrag zu einer assoziierten Domain hinzufügen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_einen_cname_eintrag_hinzufugen/){.external}.
+[CNAME-Eintrag zu einer assoziierten Domain hinzufügen](../exchange_20132016_einen_cname_eintrag_hinzufugen/)
 
 Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
