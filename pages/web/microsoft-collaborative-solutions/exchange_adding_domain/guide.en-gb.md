@@ -1,8 +1,8 @@
 ---
-title: Adding a domain name to your Exchange service
+title: 'Adding a domain name to your Exchange service'
 slug: adding-domain-exchange
-excerpt: Find out how to add a domain name to your Exchange service
-section: Getting started
+excerpt: 'Find out how to add a domain name to your Exchange service'
+section: 'Getting started with Exchange'
 ---
 
 **Last updated 19th January 2018**
@@ -111,6 +111,6 @@ You can get Outlook licences in the [OVH Control Panel](https://www.ovh.com/auth
 
 ## Go further
 
-[Creating a CNAME record for adding an associated domain](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/){.external}.
+[Creating a CNAME record for adding an associated domain](../exchange_20132016_how_to_add_a_cname_record/).
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
