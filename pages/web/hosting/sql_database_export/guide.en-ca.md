@@ -1,51 +1,51 @@
 ---
 title: 'Retrieving the backup of a Web Hosting plan’s database'
 slug: web_hosting_database_export_guide
-excerpt: 'Find out how to retrieve a database backup from your OVH Web Hosting plan'
+excerpt: 'Find out how to retrieve a database backup from your OVHcloud Web Hosting plan'
 section: Databases
 order: 3
 ---
 
-**Last updated 19th May 2018**
+**Last updated 5th May 2020**
 
 ## Objective
 
 Databases are used in virtually all modern content management systems (CMS), such as WordPress or Joomla!, to store dynamic elements like comments or articles. For various reasons, you may find that you need to back up your database in order to retrieve its contents.
 
-**Find out how to retrieve a database backup from your OVH Web Hosting plan.**
+**Find out how to retrieve a database backup from your OVHcloud Web Hosting plan.**
 
 ## Requirements
 
-- an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
-- a database created as part of an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
-- Depending on which backup method you use, you must be able to administer the Web Hosting plan from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, or have the information you need in order to connect to the database.
+- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}
+- a database created as part of an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}
+- Depending on which backup method you use, you must be able to administer the Web Hosting plan from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, or have the information you need in order to connect to the database.
 
 ## Instructions
 
 Before you begin, you must choose which method you are going to use to retrieve the database backup. There are several methods you can use, depending on your level of technical knowledge.
 
-- **Use the OVH backup tool.** This method lets you retrieve backups of your databases via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. This is the most accessible solution, as it does not require any specific technical knowledge.
+- **Use the OVHcloud backup tool.** This method lets you retrieve backups of your databases via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. This is the most accessible solution, as it does not require any specific technical knowledge.
 
 - **Carry out the backup from the phpMyAdmin web interface.** This method involves logging in to the phpMyAdmin interface in order to carry out the procedure. If you want to use this method, you will need a good command of the interface.
 
-- **Use a script to carry out the backup.** This method involves creating a script that is saved on your OVH Web Hosting plan, which will carry out the backup. Writing this script requires a specific level of technical knowledge.
+- **Use a script to carry out the backup.** This method involves creating a script that is saved on your OVHcloud Web Hosting plan, which will carry out the backup. Writing this script requires a specific level of technical knowledge.
 
-- **Carry out the backup from an SSH command line.** This method involves using the SSH protocol to log in to your storage space, then using commands to interact with it. More advanced knowledge and a specific [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} are required to use this method.
+- **Carry out the backup from an SSH command line.** This method involves using the SSH protocol to log in to your storage space, then using commands to interact with it. More advanced knowledge and a specific [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external} are required to use this method.
 
-Some of the methods listed above are not included in the OVH interface. You will therefore need to rely on your own knowledge to carry out these methods. We have set out some general information below, but this is not a substitute for the assistance of a webmaster. 
+Some of the methods listed above are not included in the OVHcloud interface. You will therefore need to rely on your own knowledge to carry out these methods. We have set out some general information below, but this is not a substitute for the assistance of a webmaster. 
 
 We recommend reading this guide, and focusing on the backup method you wish to use.
 
 > [!warning]
 >
-> OVH provides services which you are responsible for with regard to their configuration and management. You are responsible for ensuring that they work properly.
+> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are responsible for ensuring that they work properly.
 >
 > This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
 >
 
-### Retrieve a backup using the OVH tool.
+### Retrieve a backup using the OVHcloud tool.
 
-To access the OVH backup tool, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the name of the plan concerned. Next, go to the `Databases`{.action} tab.
+To access the OVHcloud backup tool, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the name of the plan concerned. Next, go to the `Databases`{.action} tab.
 
 The table shown contains all the databases created as part of your Web Hosting plan. You can now choose to create a new backup and/or retrieve an existing backup, in two separate steps.
 
@@ -67,7 +67,7 @@ In the `Databases`{.action} tab, click the three dots to the right of the databa
 
 ![databasedump](images/database-dump-step4.png){.thumbnail}
 
-The table shown contains all available backups for the database you have selected. You can view the exact date of each backup, and the date on which they will be deleted from the OVH tool.
+The table shown contains all available backups for the database you have selected. You can view the exact date of each backup, and the date on which they will be deleted from the OVHcloud tool.
 
 To download a backup, click the three dots to the right of the backup you want to retrieve, then click `Download the backup`{.action}. A pop-up window will appear, prompting you to save the backup to your machine. Accept, then wait for the backup to finish downloading.
 
@@ -75,7 +75,7 @@ To download a backup, click the three dots to the right of the backup you want t
 
 ### Retrieve a backup via the phpMyAdmin web interface
 
-To use this method, you will need to log in to phpMyAdmin. To get the access link for this interface, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the name of the plan concerned. Next, go to the `Databases`{.action} tab.
+To use this method, you will need to log in to phpMyAdmin. To get the access link for this interface, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the name of the plan concerned. Next, go to the `Databases`{.action} tab.
 
 The table shown contains all the databases created as part of your Web Hosting plan. In this table, click the three dots to the right of the database concerned, then `Go to phpMyAdmin`{.action}.
 
@@ -89,7 +89,7 @@ Once you are on the phpMyAdmin page, enter the database information, use the dro
 
 > [!warning]
 >
-> Since the phpMyAdmin interface was not developed by OVH, you will have to rely on your own knowledge to carry out this procedure. We recommend contacting a specialist provider and/or getting in touch with the interface’s publisher if you encounter any difficulties. We will not be able to assist you with this ourselves.
+> Since the phpMyAdmin interface was not developed by OVHcloud, you will have to rely on your own knowledge to carry out this procedure. We recommend contacting a specialist provider and/or getting in touch with the interface’s publisher if you encounter any difficulties. We will not be able to assist you with this ourselves.
 >
 
 ### Retrieve a backup using a script
@@ -130,7 +130,7 @@ Make sure you replace the generic information given in this script (i.e. ‘serv
 
 #### Step 2: Upload the script to the storage space.
 
-Once you have finished creating the backup script, you will need to upload it to the storage space on your Web Hosting plan. To do this, you will need to log in to your Web Hosting plan. If you do not know how to do this, please refer to the instructions in step 2 of our guide to publishing a website on your Web Hosting plan:  “[Log in to your storage space](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/#2-log-in-to-your-storage-space){.external}”.
+Once you have finished creating the backup script, you will need to upload it to the storage space on your Web Hosting plan. To do this, you will need to log in to your Web Hosting plan. If you do not know how to do this, please refer to the instructions in step 2 of our guide to publishing a website on your Web Hosting plan:  “[Log in to your storage space](../web_hosting_how_to_get_my_website_online/#2-log-in-to-your-storage-space){.external}”.
 
 In order to carry out the following steps, you will need to upload the script to the “www” folder. **We recommend taking special care when you name the backup script file.** Make sure you do not overwrite an existing file with the same name in your storage space when you upload the script. If a warning message appears for this, change the name of the script you have just created and try to upload it again.
 
@@ -148,7 +148,7 @@ As a final step, we highly recommend deleting the backup file and the script fro
 
 > [!primary]
 >
-> Using a backup script and scheduled tasks (known as ‘CRON’ jobs) is one way to organise automatic backups at an interval of your choice. You can find out more about scheduled tasks in the following guide: “[Setting up scheduled tasks (CRON jobs) on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/hosting_automated_taskscron/){.external}”.
+> Using a backup script and scheduled tasks (known as ‘CRON’ jobs) is one way to organise automatic backups at an interval of your choice. You can find out more about scheduled tasks in the following guide: “[Setting up scheduled tasks (CRON jobs) on your Web Hosting plan](../hosting_automated_taskscron/)”.
 >
 
 ### Retrieve a backup using an SSH command
