@@ -1,8 +1,8 @@
 ---
-title: Erste Schritte mit Hosted Exchange
-excerpt: In dieser Anleitung wird beschrieben, wie Sie Ihren Hosted Exchange Dienst konfigurieren
+title: 'Erste Schritte mit Hosted Exchange'
+excerpt: 'In dieser Anleitung wird beschrieben, wie Sie Ihren Hosted Exchange Dienst konfigurieren'
 slug: exchange_20132016_konfiguration_der_dienstleistung
-section: Konfiguration des Exchange Angebots
+section: 'Erste Schritte mit Exchange'
 order: 1
 ---
 
@@ -16,10 +16,10 @@ Mit Hosted Exchange verfügen Sie über professionelle E-Mail-Adressen mit erwei
 
 ## Voraussetzungen
 
-- Sie haben ein [Hosted Exchange](https://www.ovh.de/emails/hosted-exchange/){.external} Angebot.
+- Sie haben ein [Hosted Exchange](https://www.ovh.de/emails/hosted-exchange/) Angebot.
 - Sie haben die E-Mail mit der Installationsbestätigung für Ihr Hosted Exchange Angebot erhalten.
 - Sie besitzen eine Domain.
-- Sie sind in Ihrem [Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie sind in Ihrem [Kundencenter](https://ovh.com/auth/?action=gotomanager) eingeloggt.
 
 ## Beschreibung
 
