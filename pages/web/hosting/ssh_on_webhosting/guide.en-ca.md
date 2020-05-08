@@ -1,10 +1,12 @@
 ---
-title: 'Web hosting: SSH on web hosting packages'
-excerpt: 'Web hosting: SSH on web hosting packages'
+title: 'SSH on web hosting packages'
+excerpt: 'SSH on web hosting packages'
 id: '1962'
 slug: web_hosting_ssh_on_web_hosting_packages
 legacy_guide_number: g1962
 ---
+
+**Last updated 5th May 2020**
 
 ## What is SSH and how do you use it?
 SSH is available on professional and performance hosting plans.
@@ -16,20 +18,20 @@ For more information on the SSH protocol, [click here](https://en.wikipedia.org/
 
 ## Prerequisites
 
-- The SSH option, available on: Hosting plans starting with [Professional hosting](https://www.ovh.co.uk/web-hosting/).
+- The SSH option, available on: Hosting plans starting with [Professional hosting](https://www.ovh.com/ca/en/web-hosting/).
 - An SSH client.
 - Port 22 must be open on your firewall and your router.
 
 ## Enable/Disable SSH for a user
 You can manage your SSH logins in your control panel. You just have to click on the name of your website in the left-hand column, then go to the "FTP - SSH" tab.
 
-![](images/sshguide_screen1.png){.thumbnail}
+![sshonweb](images/sshguide_screen1.png){.thumbnail}
 
 You can disable the SSH connection for a user by clicking on the button to the right of your login and then "Edit".
 
 This modification will take a few minutes.
 
-![](images/sshguide_screen2.png){.thumbnail}
+![sshonweb](images/sshguide_screen2.png){.thumbnail}
 
 ## Command prompt
 Linux: KDE: Open the main menu (by default this will be at the bottom left of your screen), then in the search bar which appears, tap "konsole", then click on the first search result.
@@ -42,10 +44,10 @@ Windows: There is no native SSH client but you can use a free, open-source appli
 Linux and Mac: To connect to your server in SSH, open your command prompt as indicated above and enter:
 SSH YourFtpLogin@YourFtpServer
 
-![](images/img_3093.jpg){.thumbnail}
+![sshonweb](images/img_3093.jpg){.thumbnail}
 
 Windows: It is best to follow a this guide on
-[PuTTy](https://docs.ovh.com/gb/en/hosting/web_hosting_using_putty_on_windows/).
+[PuTTy](../web_hosting_using_putty_on_windows/).
 
 ## List of common SSH commands
 Just replace arg with the filename or directory that you want to work with. 
@@ -97,3 +99,7 @@ php.ORIG.5_3 /www/myScript.php
 
 ## Public key fingerprints (to be verified when you first connect in SSH)
 When you first connect to the server you will be asked to verify the public key.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
