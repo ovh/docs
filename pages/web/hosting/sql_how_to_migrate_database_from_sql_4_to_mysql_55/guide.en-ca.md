@@ -6,9 +6,11 @@ excerpt: 'This guide will explain how to migrate your database from MySQL 4.0 to
 section: Databases
 ---
 
+**Last updated 5th May 2020**
+
 In this guide, you will find a range of information and support on migrating your databases from MySQL 4.0 to MySQL 5.6.
 
-You can also refer to the [web hosting FAQ](https://www.ovh.co.uk/web-hosting/faq/){.external} available on our website.
+You can also refer to the [web hosting FAQ](https://www.ovh.com/ca/en/web-hosting/faq/){.external} available on our website.
 
 
 > [!warning]
@@ -31,7 +33,7 @@ By following the steps in this guide, the migration should take between 10 and 4
 ## Find the access details, and access your database.
 
 ### Where to find your database’s access details
-First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/manager/web/login/){.external}.
+First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 Then select the web hosting plan on the left, in the Hosting section. Next, go to the Databases tab.
 
@@ -47,7 +49,7 @@ Click on the **cogwheel icon on the right**: You can **change the password** for
 To log in to your database in MySQL version 4.0, you have two options:
 
 - Use [this link](https://phpmyadmin.ovh.net/old/){.external}.
-- In the Hosting & SQL tab section of the [OVHcloud Control Panel](https://www.ovh.com/manager/web/login/){.external}, click on the cogwheel icon to the right of your MySQL version 4.0 database, and "Access phpMyAdmin". Then click on [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/){.external} (at the bottom of the page).
+- In the Hosting & SQL tab section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the cogwheel icon to the right of your MySQL version 4.0 database, and "Access phpMyAdmin". Then click on [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/){.external} (at the bottom of the page).
 
 
 ![hosting](images/go-to-phpmyadmin.png){.thumbnail}
@@ -86,7 +88,7 @@ In the centre, you will have an overview of all your tables.
 
 Click “**Tick all**”, then on the right, click “**For the selection**”, and replace it with “**Delete**”.
 
-**Then click Run** .
+Then click **Run**.
 
 A confirmation window will appear, and you can confirm by clicking “Yes”.
 
@@ -97,7 +99,7 @@ Following this operation, your database will be empty.
 
 
 ### How do I delete my database in MySQL version 4.0?
-You can now close phpMyAdmin. In the [OVHcloud Control Panel](https://www.ovh.com/manager/web/login/){.external}, click on your web hosting plan, then on the SQL tab.
+You can now close phpMyAdmin. In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on your web hosting plan, then on the SQL tab.
 
 To the right of the line of your database in MySQL version 4.0, click on the cogwheel icon, then choose "Delete database".
 
@@ -112,7 +114,7 @@ You will then need to wait 10-15 minutes for your database to be deleted.
 ## How do I delete my database in MySQL version 5.6?
 
 ### How do I create my database in MySQL version 5.6?
-Now that you have deleted your database in MySQL version 4.0, you will now need to create a new database in MySQL version 5.6. To do this, go to the Hosting section of the [OVHcloud Control Panel](https://www.ovh.com/manager/web/login/){.external}, then the SQL tab.
+Now that you have deleted your database in MySQL version 4.0, you will now need to create a new database in MySQL version 5.6. To do this, go to the Hosting section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then the SQL tab.
 
 Here, click on the “Create a database” button.
 
@@ -122,7 +124,7 @@ You will need to wait 5 to 10 minutes maximum for the database to be created. Yo
 
 
 ### How do I restore/import my backup to my database in MySQL version 5.6?
-To restore your database backup, simply follow [this guide](https://docs.ovh.com/gb/en/hosting/web_hosting_guide_to_importing_a_mysql_database){.ref}.
+To restore your database backup, simply follow [this guide](../web_hosting_guide_to_importing_a_mysql_database)}.
 
 
 ## Modify your website’s configuration file.
@@ -134,7 +136,7 @@ This happens because your website is still trying to connect to the old database
 
 
 ### How do I edit my configuration file?
-Depending on the type of website you have, it may be located in different places, but always on your FTP space. To connect to your FTP space, simply follow [this guide](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting){.ref}.
+Depending on the type of website you have, it may be located in different places, but always on your FTP space. To connect to your FTP space, simply follow [this guide](../log-in-to-storage-ftp-web-hosting).
 
 For example, if your website is based on WordPress, the configuration file is called wp-config.php, and is located in your website’s main folder, on your FTP space.
 
@@ -142,7 +144,7 @@ For other CMS or websites build by a developer, it is best to contact the provid
 
 Once you have found this file on your FTP space, you will need to edit it. First, copy the file locally to your computer, and edit it with text software, such as WordPad or a notepad.
 
-You need to modify the "DB_NAME", "DBPASSWORD", "DB_USER" and "DB_HOST" lines (may be named differently depending on the type of website), and replace the corresponding values with the new values found earlier in the SQL tab of the [OVHcloud Control Panel](https://www.ovh.com/manager/web/login/){.external}.
+You need to modify the "DB_NAME", "DBPASSWORD", "DB_USER" and "DB_HOST" lines (may be named differently depending on the type of website), and replace the corresponding values with the new values found earlier in the SQL tab of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Special cases
