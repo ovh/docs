@@ -19,7 +19,7 @@ Wenn Sie eine Domain zu Ihrem E-Mail-Dienst hinzufügen, werden Sie gegebenenfal
 - Sie verfügen über eine OVH E-Mail-Lösung.
 - Sie haben eine Domain zu Ihrem E-Mail-Dienst hinzugefügt und wurden dazu aufgefordert, einen CNAME-Eintrag hinzuzufügen.
 - Sie können die Konfiguration Ihrer Domain (ihre DNS-Zone) bearbeiten.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web`{.action}.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eingeloggt und befinden sich im Bereich `Web`{.action}.
 
 ## Beschreibung
 
