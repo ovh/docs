@@ -1,6 +1,12 @@
 ---
-title: E-Mail Pro
+title: 'E-Mail Pro'
 slug: emails-pro
-excertp: All you need to know about E-Mail Pro
-sections: Allgemein, Konfiguration des E-Mail-Clients
+sections: 'Allgemein, Konfiguration des E-Mail-Clients, Troubleshooting'
 ---
+
+> [!product-section]
+>
+> ### Troubleshooting
+>
+> - [Was tun, wenn ein Account aufgrund Spamversands gesperrt wurde](https://docs.ovh.com/de/microsoft-collaborative-solutions/blocked-wegen-spam)
+>
