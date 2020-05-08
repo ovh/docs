@@ -5,8 +5,10 @@ slug: avoid_the_common_pitfalls_of_making_your_website_secure_with_ssl
 legacy_guide_number: g2220
 ---
 
+**Last updated 5th May 2020**
 
 ## Mixed content
+
 Your website is not loading external elements, such as Facebook and Twitter buttons? Interactions on your webpage are not working as they did in HTTP? You probbably have an issue with mixed content. 
 
 For a few years, web browsers including Google Chrome, Mozilla Firefox and Internet Explorer have been preventing HTTPS websites from loading page elements if they are on an HTTP URL. This is so that the confidentiality provided by HTTPS is not compromised by an element loaded in HTTP. 
@@ -35,8 +37,6 @@ RewriteRule ^(.*)$ https://www.votredomaine.fr/$1 [R,L]
 ```
 
 
-
-
 ## Go back to HTTP from HTTPS
 If you want to restrict your website to HTTP and not use the HTTPS protocol, you just have to force it via the .https file. 
 
@@ -51,5 +51,6 @@ RewriteCond %{SERVER_PORT} 443
 RewriteRule ^(.*)$ http://www.votredomaine.fr/$1 [R,L]
 ```
 
+## Go further
 
-
+Join our community of users on <https://community.ovh.com/en/>.
