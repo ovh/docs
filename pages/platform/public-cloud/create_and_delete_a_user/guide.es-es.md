@@ -4,58 +4,58 @@ slug: crear-y-eliminar-un-usuario-de-openstack
 section: OpenStack
 ---
 
-**Última actualización: 6/12/2019**
+**Última atualização: 6 de dezembro de 2019**
 
-## Objetivo
-Deberá crear un usuario de OpenStack para poder utilizar las APIs de Horizon o de OpenStack. Esta guía muestra cómo crear y eliminar un usuario.
+## Introdução
+Para usar o Horizon ou as API OpenStack precisa de criar um utilizador OpenStack. Este guia mostra como criar e eliminar um utilizador.
 
-El número de usuarios de OpenStack no está limitado.
+O número de utilizadores OpenStack não é limitado.
 
 
-## Requisitos
-Un proyecto Public Cloud que tenga más de 7 días de antigüedad en el caso de que sea su primer proyecto. Alternativamente, puede ponerse en contacto con el equipo de asistencia para comprobar si puede desbloquear antes el proyecto. Otros proyectos no tendrán esta limitación.
+### Requisitos
+Ter criado um projeto Public Cloud há mais de 7 dias, se for o seu primeiro projeto (ou contacte o Apoio ao Cliente para verificar se se é possível desbloquear o projeto mais cedo). Os restantes projetos não têm esta limitação.
 
-## Procedimiento
 
-### Crear un usuario de OpenStack
-Para conectarse a Horizon, debe crear primeramente una cuenta de usuario de OpenStack. Para hacerlo, inicie sesión y, en el panel de control, acceda a la sección `«Public Cloud»`{.action} en la esquina superior izquierda de la página. Seguidamente, en la pantalla siguiente, haga clic en la `flecha`{.action} junto al nombre del proyecto en la esquina superior izquierda de la pantalla.
+## Criar um utilizador OpenStack
+Antes de mais, para aceder à interface Horizon, é necessário criar uma conta de utilizador OpenStack. Para isso, faça login na sua Área de Cliente e vá para a secção `Public Cloud`{.action} no canto superior esquerdo da página. No ecrã seguinte, clique na `seta `{.action}ao lado do nome do seu projeto no canto superior esquerdo do ecrã.
 
-![Add user](images/select_project.png){.thumbnail}
+![Adicionar utilizador](images/select_project.png){.thumbnail}
 
-A continuación de «Gestión de proyectos» en la barra lateral de la izquierda, seleccione `«Usuarios y funciones»`{.action}.
+Em “Gestão de projetos” na barra lateral esquerda, selecione `Utilizadores e funções`{.action}.
 
-![User roles](images/users_roles.png){.thumbnail}
+![Funções](images/users_roles.png){.thumbnail}
 
-Haga clic en el botón `«Crear usuario»`{.action} para generar el siguiente elemento emergente:
+Clique em `Criar utilizador`{.action} para gerar o pop-up seguinte.
 
-![Add user](images/adduser.png){.thumbnail}
+![Adicionar utilizador](images/adduser.png){.thumbnail}
 
-La descripción del usuario no es el nombre de usuario del usuario. Solo es un término descriptivo para ayudarle a recordar el tipo de usuario. La siguiente pantalla le va a permitir conceder permisos de usuario. Por cada casilla de permisos que marque, el usuario obtendrá los privilegios correspondientes como se muestra en la tabla siguiente:
+A descrição do utilizador não é o nome de utilizador. É apenas um descritivo para o ajudar a recordar de que tipo de utilizador se trata. O ecrã seguinte permite-lhe conceder permissões de utilizador. Para cada caixa de permissões que marcar, o utilizador terá os privilégios correspondentes, como se pode ver na seguinte tabela:
 
-![Permissions](images/permissions.png){.thumbnail}
+![Permissões](images/permissions.png){.thumbnail}
 
-Haga clic en `«Confirmar»`{.action} cuando haya terminado y aparecerá la siguiente pantalla:
+Clique no botão `Confirmar`{.action} após concluir, e será apresentado o seguinte ecrã:
 
-![User_pw](images/user_pw.png){.thumbnail}
+![Utilizador_pw](images/user_pw.png){.thumbnail}
 
-Asegúrese de guardar su contraseña en ese momento, ya que será la única oportunidad para recuperarla. No obstante, si la pierde, siempre puede crear una nueva haciendo clic en los tres puntos (...) del siguiente menú y seleccionar `«Generar una contraseña»:`{.action}
+Certifique-se de que guarda a sua palavra-passe agora, pois este é o único momento em que a poderá recuperar. No entanto, se a perder pode sempre criar uma senha nova ao clicar nas reticências (...) no menu seguinte e selecionar `Gerar palavra-passe:`{.action}
 
-![Generate](images/generatepw.png){.thumbnail}
+![Gerar](images/generatepw.png){.thumbnail}
 
-Una vez creado su usuario, puede utilizar estas credenciales de acceso para iniciar sesión en la interfaz de Horizon utilizando el botón` «Horizon»`{.action} en la barra lateral de la izquierda.
+Uma vez criado o seu utilizador, pode usar estas credenciais para iniciar uma sessão na interface Horizon utilizando o botão `Horizon`{.action} na barra lateral esquerda.
 
-### Eliminar un usuario de OpenStack
-Puede eliminar directamente un usuario de OpenStack en el panel de control de OVHcloud (Cloud → Servidores → Nombre de su proyecto Public Cloud). En la sección «OpenStack», encontrará un pequeño icono de papelera de reciclaje a la derecha:
+## Eliminar um utilizador OpenStack
+Pode eliminar um utilizador OpenStack diretamente na Área de Cliente OVH (Cloud → Servidores → Nome do seu projeto Public Cloud). Na secção OpenStack, à direita, irá encontrar o ícone do caixote do lixo:
 
 
 ![public-cloud](images/delete.png){.thumbnail}
 
-Simplemente haga clic en él y el usuario será eliminado en unos segundos.
+Basta clicar nele e o utilizador será eliminado em apenas alguns segundos.
 
 > [!alert]
 >
-> Cualquier eliminación de usuario es permanente e invalidará todos los tokens asociados, incluso los que aún no hayan sobrepasado su fecha de validez.
-> 
+> Qualquer eliminação de utilizador é permanente e irá invalidar todos os
+> tokens associados, mesmo aqueles com uma data de expiração que ainda não foi excedida.
+
 
 ## Más información
 
