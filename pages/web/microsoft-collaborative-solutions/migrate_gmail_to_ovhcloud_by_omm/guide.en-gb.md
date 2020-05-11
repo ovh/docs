@@ -78,7 +78,7 @@ The migration tracking window (below) will then appear. You can leave it open to
 
 ![omm](images/OMM-gmail-step01-05.png){.thumbnail}
 
-If it appears, go to your Gmail account mailbox and check if you have received an email with the subject **“Critical security alert”**. This is a security measure put in place by Gmail. To resolve this situation, follow our guide on [authorising less secure connections on Gmail](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migrate-gmail-via-ovh-mail-migrator/gmail-security){.external}.
+If it appears, go to your Gmail account mailbox and check if you have received an email with the subject **“Critical security alert”**. This is a security measure put in place by Gmail. To resolve this situation, follow our guide on [authorising less secure connections on Gmail](../migrate-gmail-via-ovh-mail-migrator/gmail-security).
 
 After you have **authorised less secure connections** on Gmail, you will need to relaunch the migration.
 
@@ -165,6 +165,6 @@ The migration tracking window will then open. You can leave it open to track the
 
 ## Go further
 
-[Authorising less secure connections on Gmail](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migrate-gmail-via-ovh-mail-migrator/gmail-security){.external}.
+[Authorising less secure connections on Gmail](../migrate-gmail-via-ovh-mail-migrator/gmail-security)
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our community of users on <https://community.ovh.com/en/>.
