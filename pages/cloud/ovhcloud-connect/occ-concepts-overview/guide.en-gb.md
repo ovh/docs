@@ -1,7 +1,7 @@
 ---
-title: Concepts Overview
+title: Concepts overview
 slug: overview
-excerpt: 'Concepts Overview - OVHcloud Connect'
+excerpt: 'Concepts overview - OVHcloud Connect'
 section: Concepts
 ---
 
@@ -17,27 +17,27 @@ It's a connection between your vRack and an external network.
 
 ### Dedicated
 
-Dedicated Mode is a direct connection with OVHcloud devices. You can manage differents configurations, from an single connection to a multiple using LACP (Layer2) or BGP-ECMP (Layer3) with port speed at 1Gb or 10Gb. Interface and bandwidth are not shared with others customers.
+Dedicated Mode is a direct connection with OVHcloud devices. You can manage different configurations, from a single connection to a multiple one using LACP (Layer2) or BGP-ECMP (Layer3) with port speed at 1Gb or 10Gb. Interface and bandwidth are not shared with other customers.
 
 ### Private
 
-Your trafic is isolated from Internet, you manage your own Vlans (Layer2) and/or your own IP addresses (Layer3). Even BGP instances are private and you can configure your choice's ASN.
+Your traffic is isolated from the Internet, you manage your own Vlans (Layer2) and/or your own IP addresses (Layer3). Even BGP instances are private and you can configure the ASN you want.
 
 OVHcloud Connect is connected to your vRack with all compatible services.
 
 ### Network Extension
 
-OVHcloud Connect can be connected either to your WAN or your Datacenter Network, allowing extension to the cloud or even ease your migration by keeping Vlans topology or IP addresses.
+OVHcloud Connect can be connected either to your WAN or your Datacenter Network, allowing extension to the cloud or even easing your migration by keeping Vlans topology or IP addresses.
 
-### High Availibility
+### High Availability
 
-Using BGP, you can inter-connect your network through several POP and reach several OVHcloud Datacenter. From vRack, configure BGP to enable maximum resiliency with distributed services.
+Using BGP, you can inter-connect your network through several POP and reach several OVHcloud datacenters. From vRack, configure BGP to enable maximum resiliency with distributed services.
 
 ## Components
 
 ### POP - EntryPoint
 
-Point-of-Presence are facilities like Equinix, InterXion, Telehouse or Global Switch. POP is OVHcloud Connect's service Entry: we call it EntryPoint.
+Point-of-Presence are facilities like Equinix, InterXion, Telehouse or Global Switch. POP is OVHcloud Connect's service entry: we call it EntryPoint.
 
 ### DC - EndPoint
 
@@ -45,11 +45,11 @@ OVHcloud Datacenter is the service terminaison, the EndPoint.
 
 ### Cross-connect
 
-A cross-connection is a physical link (monomode fiber) managed by the local facility team in the POP. The cross-connection is established in the MMR (Meet-Me-Room) between the position given by OVHcloud and the position owned by the customer. Customer must order and manage the cross-connect for OVHcloud Dedicated Connect. 
+A cross-connection is a physical link (monomode fiber) managed by the local facility team in the POP. The cross-connection is established in the MMR (Meet-Me-Room) between the position given by OVHcloud and the position owned by the customer. The customer must order and manage the cross-connect for OVHcloud Dedicated Connect. 
 
 ### vRack
 
-OVHcloud Private Network, available on compute ressources between all OVHcloud Datacenters.
+OVHcloud Private Network, available on compute resources between all OVHcloud Datacenters.
 
 ### BGP
 
@@ -57,8 +57,8 @@ Routing protocol to use when using Layer-3 mode.
 
 ## Principles
 
-The OVHcloud Connect  is  based on a virtual  link between  an  EntryPoint  and  an  EndPoint. The  EntryPoint  is 
-where you want to make the inter-connection with OVHcloud. The EndPoint is the OVHcloud Datacenter with your services. You can choose any Datacenter in the same region than the POP. 
+OVHcloud Connect  is  based on a virtual  link between  an  EntryPoint  and  an  EndPoint. The  EntryPoint  is 
+where you want to make the inter-connection with OVHcloud. The EndPoint is the OVHcloud Datacenter with your services. You can choose any datacenter in the same region as the POP. 
 
 ### Layer-2 Mode
 
