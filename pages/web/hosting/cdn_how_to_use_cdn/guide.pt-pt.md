@@ -1,102 +1,170 @@
 ---
-title: Guia de utilização do Acelerador GeoCache num Alojamento Web
-excerpt: Guia de utilização do Acelerador GeoCache incluído nas ofertas de Alojamento Web
+title: 'Guia de utilização do Acelerador GeoCache num Alojamento Web'
+excerpt: 'Guia de utilização do Acelerador GeoCache incluído nas ofertas de Alojamento Web'
 slug: guia_de_utilizacao_do_acelerador_geocache_num_alojamento_web
 legacy_guide_number: g1290
 ---
 
+**Última atualização: 19/03/2020**
 
-## 
-Ligue-se ao [Espaço Cliente](https://www.ovh.com/manager/web) com o seu identificador OVH (Nic) e a password.
+## Objetivo
 
-Selecione de seguida o seu alojamento web na secção "Alojamento".
+Se deseja melhorar a experiência dos seus utilizadores acelerando o seu site, a técnica mais eficaz é ativar um CDN (Content Delivery Network).  Este último permite colocar em cache os ficheiros estáticos tais como as imagens, os css e os javascript, nos servidores mais próximos dos seus clientes.
 
-![](images/img_2904.jpg){.thumbnail}
+**Descubra como gerar a opção CDN do seu alojamento Web.**
 
+## Definição
 
-## Limpar a cache do Acelerador GeoCache
-O TTL (Time to Live = tempo de vida de um ficheiro em cache num PoP) vai de 5 a 60 minutos (geridos pelos nossos servidores para uma maior otimização). Após este prazo, o ficheiro em cache é eliminado. É então necessário aguardar que um novo utilizador peça novamente o elemento, para que este seja colocado novamente em cache no PoP em questão.
+**Como funciona um CDN ?**
 
-Para forçar a substituição de um ficheiro em cache nos PoP, após a modificação do seu site por exemplo, é necessário limpar a cache. A recolocação em cache num PoP efetua-se quando um utilizador pede novamente o ficheiro a partir da zona que depende desse PoP.
+O CDN (Content Delivery Network) é literalmente uma rede dedicada à disponibilização de conteúdos. Utiliza vários servidores implementados em todo o mundo para apresentar o seu website. Quanto mais próximos esses servidores estiverem dos seus utilizadores, mais rápido será o seu website para eles.
 
-Para purgar manualmente a sua cache dos PoP da rede OVH, basta clicar em "Limpar a cache CDN de base"
+Para funcionar, cada servidor guarda na sua memória cache uma parte do seu website. Geralmente, é aconselhável incluir os ficheiros ditos estáticos: as imagens, os ficheiros javascript e css que permitem o bom funcionamento do seu site, mas que são modificados muito raramente.
 
-![](images/img_2957.jpg){.thumbnail}
+## Requisitos
 
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter um serviço de [alojamento Web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
 
-## Desativar a utilização do Acelerador GeoCache
-se não deseja utilizar o Acelerador GeoCache incluído com a sua oferta de alojamento Web tem à sua disposição várias soluções:
+## Instruções
 
+###  Ativar a opção CDN
 
-- Não utiliza o IP (campo A) do seu alojamento que está anexado ao Acelerador GeoCache.
-- Modifica o ficheiro de regras na raiz do seu alojamento (ver a secção seguinte)
+> [!primary]
+> 
+> A opção CDN já se encontra incluída nas soluções de alojamento web Performance.
 
+####  Se não possui CDN no seu alojamento Web
 
-Explicaremos aqui a solução que consiste na modificação do IP utilizado pelo seu alojamento.
+Ligue-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. Clique em `...`{.action} à direita de "Opção CDN" e depois em `Encomendar um CDN`{.action}.
 
-Para tal deverá aceder à secção "Domínio & DNS" do nome de domínio anexado ao alojamento que beneficia do Acelerador GeoCache. Aceda de seguida à "Zona DNS".
+![CDN](images/manage_CDN_01.png){.thumbnail}
 
-Deve então procurar o "campo A", associado a um IP do tipo 213.xxx.xxxx.xxx *
+Será então redirecionado para a página onde será gerada a nota de encomenda. Uma vez efetuada e paga a encomenda, o serviço ficará disponível em apenas alguns minutos.
 
-* Este IP é o IP do Acelerador GeoCache associado ao seu alojamento. Para restabelecer o Acelerador GeoCache deverá substitui-lo mais tarde aqui. A lista dos IPs está disponível mais abaixo. Pode ainda pedir ao suporte esta lista. Guarde esta lista caso pretenda consultá-lo mais tarde.
+#### Se o CDN já estiver ativado no seu alojamento Web
 
-Clique de seguida no botão "Editar" (ícone com uma folha de papel e um lápis em cima) ao lado do campo A para aceder ao formulário de edição.
+Ligue-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. No separador `Multisite`{.action}, clique na roda dentada situada à direita da entrada multisite e depois em `Alterar`{.action}.
 
-Na página do formulário em questão encontrará os seguintes campos:
+Assinale a opção "Ativar o CDN", clique em `Seguinte`{.action} e depois em `Validar`{.action}.
 
+![CDN](images/manage_CDN_01_02.gif){.thumbnail}
 
-- Subdomínio: campo A selecionado por defeito (não o modifique)
-- Selecionar um IP: escolher "Alojamento partilhado"
-- Selecionar um alojamento: Escolha o nome de domínio anexado ao seu alojamento
-- Selecionar um país: escolher a geolocalização do IP de saída que deseja
+> [!warning]
+> 
+> No caso de um nome de domínio externo na OVHcloud adicionado à opção multisite no alojamento Web, deve mencionar o endereço IP do CDN do seu alojamento na zona DNS do nome do domínio.<br>
+> Consulte a [lista de endereços IP dos clusters e alojamento Web](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external} para encontrar o endereço IP específico do CDN do seu cluster.
 
-
-Confirme de seguida a sua seleção ao clicar em "Validar". O seu IP será modificado e esta atualização levará alguns instantes.
-
-NB : Lista dos IPs anexados ao Acelerador GeoCache 3 PoP / 17 PoP
-
-Poderá encontrar o cluster ao qual o seu Alojamento Web corresponde no seu Espaço Cliente (Manager) separador "Alojamento" opção "FTP" ou no e-mail de instalação que recebeu aquando da ativação da sua oferta.
-
-|Cluster|sem GeoCache|3 PoP (Basic)|17 PoP (Business)|
-|002|37.187.184.2|213.186.33.2 ou 213.186.33.68|213.186.33.69|
-|003|37.187.184.4|213.186.33.4 ou 213.186.33.84|213.186.33.85|
-|005|37.187.184.16|213.186.33.16 ou 213.186.33.94|213.186.33.95|
-|006|37.187.184.17|213.186.33.17 ou 213.186.33.96|213.186.33.97|
-|007|37.187.184.18|213.186.33.18 ou 213.186.33.104|213.186.33.105|
-|010|37.187.184.19|213.186.33.19 ou 213.186.33.106|213.186.33.107|
-|011|37.187.184.40|213.186.33.40 ou 213.186.33.150|213.186.33.151|
-|012|37.187.184.48|213.186.33.48 ou 213.186.33.152|213.186.33.153|
-|013|37.187.184.24|213.186.33.24 ou 213.186.33.82|213.186.33.83|
-|014|37.187.184.87|213.186.33.87 ou 213.186.33.168|213.186.33.169|
-|015|37.187.184.3|213.186.33.3 ou 213.186.33.170|213.186.33.171|
-|017|37.187.184.50|213.186.33.50 ou 213.186.33.172|213.186.33.173|
+ 
+**Porque não posso beneficiar do IP geolocalizado com a opção CDN?** <br>
+<br>
+O CDN utiliza o princípio dos IP anycast. Não recorrerá ao mesmo servidor em função da sua geolocalização, o que é extremamente eficaz para reduzir o tempo de carregamento dos seus ficheiros estáticos. A geolocalização do endereço IP é, portanto, inútil. <br>
+Relativamente ao SEO (referenciação nos motores de pesquisa), a velocidade de apresentação do seu website adquire mais importância do que a geolocalização de endereços IP do seu alojamento.
 
 
+### Como colocar em cache os meus ficheiros no CDN?
+
+**Com CMS**
+
+Os principais gestores de conteúdo (CMS) distribuem inúmeros plugins que permitem configurar a colocação em cache dos ficheiros estáticos para que estes sejam automaticamente considerados pelo CDN. Outros permitem a configuração automática dos ficheiros estáticos, ativando a colocação em cache integrada no CMS. Para mais informações, consulte a documentação oficial do CMS que utiliza ou do editor do plugin.
+
+**Sem CMS**
+
+Mesmo que não utilize um CMS, poderá beneficiar da cache do CDN. Para isso, deve adicionar headers aos pedidos HTTP. Existem várias técnicas que permitem adicionar headers. Uma das mais simples é definir regras para um ficheiro .htaccess em função das extensões de ficheiros.
+
+```htaccess
+1. # Cache das imagens durante 1 semana
+2. <FilesMatch "\.(jpg|jpeg|png|gif)$">
+3. Header set Cache-Control "max-age=604800, public"
+4. </FilesMatch>
+5. 
+6. # Cache dos javascript e CSS durante 1 mês
+7. <FilesMatch "\.(js|css)$">
+8. Header set Cache-Control "max-age=2592000"
+9. </FilesMatch>
+```
+> [!warning]
+>
+> A colocação em cache utilizando headers HTTP permite fazê-lo no CDN, mas também no navegador dos seus utilizadores. Assim, para evitar que os seus visitantes não visualizem uma versão em cache demasiado antiga, é recomendada a alteração dos nomes dos ficheiros a cada nova versão.
+> 
 
 
-## 
-Para aceder ao ficheiro em questão ligue-se por FTP ao seu espaço de alojamento.
 
-Pode utilizar o software FileZilla para tal.
+### Esvaziar a cache do CDN
+
+É por vezes útil esvaziar a cache do CDN, nomeadamente sempre que modifica os seus ficheiros estáticos. Por exemplo, quando realiza uma nova versão do seu site. Neste caso, pode esvaziar a cache do CDN na sua totalidade.
+
+Ligue-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. Clique em `...`{.action} à direita de "Opção CDN" e depois em `Limpar a cache`{.action}.
+
+![CDN](images/manage_CDN_02.png){.thumbnail}
+
+### Desativar a opção CDN
+
+Esta ação permite desativar o CDN para uma ou mais entradas multisite sem eliminar a opção CDN do seu alojamento Web.
+
+Dirija-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. No separador `Multisite`{.action}, clique na roda dentada situada à direita da entrada multisite e depois em `Alterar`{.action}.
+
+Desmarque a opção "Ativar o CDN", clique em `Seguinte`{.action} e depois em `Validar`{.action}.
+
+![CDN](images/manage_CDN_03.png){.thumbnail}
+
+### Eliminar a opção CDN
+
+Esta ação tem como objetivo eliminar a opção CDN para a totalidade do seu alojamento Web.
+
+Dirija-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. Clique em `...`{.action} à direita de "Opção CDN" e depois em `Eliminar CDN`{.action}.
+
+![CDN](images/manage_CDN_04.png){.thumbnail}
+
+Clique em `Validar`{.action} para confirmar a eliminação.
+
+> [!warning]
+>
+> Receberá um e-mail com o procedimento a realizar para o encerramento do CDN, cujas instruções deverá seguir seja para confirmar ou para anular o pedido. 
+> 
 
 
-## Ativar/Desativar a utilização do Acelerador GeoCache
-Após efetuar o login no FTP do seu alojamento será, de forma padrão, encaminhado para a raiz do mesmo. Encontrará certamente vários ficheiros e várias pastas mas o que nos interessa é o ficheiro ".ovhconfig".
+### Verificar que o CDN se encontra ativo
 
-Deverá efetuar o download desse ficheiro para o seu Computador (duplo clique no mesmo deve funcionar) e depois deverá abrir/editar o ficheiro com a ajuda de um editor de texto, por exemplo, Bloco de notas/Notepad. Caso seja necessário, renomeie o ficheiro em ovhconfig.txt.
-
-Nas linhas que compõem o ficheiro, modifique na linha "environment", "production" por "development" (deixe em inglês).
-
-Volte a nomear o renomear o ficheiro em .ovhconfig e faça o upload do mesmo para a raiz do FTP, substituindo o ficheiro atual.
-
-Para reativar a utilização do Acelerador GeoCache, basta que volte a efetuar esta opação, modificando o parâmetro "environment" por "production".
-
-![](images/img_1207.jpg){.thumbnail}
-Pode igualmente adicionar a seguinte linha no ficheiro .htaccess:
+Para garantir que o CDN se encontra ativo no seu domínio, é possível efetuar uma verificação através de um terminal com a seguinte ordem:
 
 ```
-Header set Cache-Control "no-cache"
+curl -i http://yourpersonnaldomain.ovh/
 ```
 
+Se o CDN estiver ativo no seu domínio, obterá o seguinte resultado:
 
+```
+HTTP/1.1 200 OK
+Date: Mon, 01 Jan 2020 00:00:00 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: SERVERID12345=123456; path=/; max-age=900
+Vary: Accept-Encoding
+X-Request-ID: 123456789
+X-CDN-Pop: rbx1
+X-CDN-Pop-IP: 00.111.22.333/44
+X-Cacheable: Cacheable
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-IPLB-Instance: 12345
+```
+As menções "*X-CDN*" permitem confirmar que passou através do CDN.
 
+Caso o domínio não passe pelo CDN, obterá o seguinte resultado:
+
+```
+HTTP/1.1 200 OK
+Date: Mon, 01 Jan 2020 00:00:00 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: SERVERID12345=123456; path=/; max-age=900
+Server: Apache
+X-Powered-By: PHP/7.1
+Vary: Accept-Encoding
+X-IPLB-Instance: 12345
+```
+
+A ausência da menção "*X-CDN*" indica que não passou através do CDN.
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}. 

@@ -2,6 +2,7 @@
 title: Branchements IP5000
 slug: branchements-ip5000
 section: Polycom IP5000
+hidden: true
 ---
 
 ------------------------------------------------------------------------

@@ -3,10 +3,12 @@ title: 'Exchange Diagnose: Was tun bei Fehlern?'
 excerpt: 'Exchange Diagnose: Was tun bei Fehlern?'
 slug: exchange_diagnose_was_tun_bei_fehlern
 legacy_guide_number: g2277
+section: Troubleshooting
+order: 2
 ---
 
-
 ## Diagnose durchführen
+
 Loggen Sie sich in Ihr OVH Kundencenter ein:[OVH Kundencenter](https://www.ovh.com/manager/web/login/).
 
 Wählen Sie dann im Menü links unter Microsoft Ihren Exchange Service aus.
@@ -78,7 +80,7 @@ Hier als Übersicht die MX-Server für das Angebot Exchange:
 
 - Nur Exchange: mx1.mail.ovh.net
 - Exchange + E-Mail POP/IMAP von OVH: mx1.mail.ovh.net
-- Exchange + E-mail POP/IMAP von einem Drittanbieter: ex.mail.ovh.net oder ex2.mail.ovh.net
+- Exchange + E-mail POP/IMAP von einem Drittanbieter: ex**X**.mail.ovh.net
 
 
 
@@ -96,7 +98,7 @@ Hier im Überblick die korrekten Daten für Exchange:
 |Priorität|0|
 |Gewicht|0|
 |Port|443|
-|Server bei Hosted|ex.mail.ovh.net oder ex2.mail.ovh.net|
+|Server bei Hosted|ex**X**.mail.ovh.net|
 |Server bei Private|Ihr-Host-Name|
 
 

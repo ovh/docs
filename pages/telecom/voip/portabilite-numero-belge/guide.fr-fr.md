@@ -50,7 +50,7 @@ Dans la page qui apparaît, les deux types de demandes de portabilité sont prop
 Choisissez la demande selon que votre demande concerne  **Un numéro isolé** ou **Un ou plusieurs numéros appartenant à une tranche de numéros (SDA)**.
 
 - Pour un numéro isolé, renseignez le numéro à porter au format international (il doit nécessairement commencer par 0032). 
-- Dans le cas d'une tranche de numéros, renseignez le numéro de tête de ligne de la tranche concernée au format international (il doit nécessairement commencer par 0032). En cas de doute, votre opérateur actuel peut vous communiquer ce numéro. Cochez ensuite ensuite le bouton `Porter votre numéro principal et une partie des numéros Sélection Directe à l'Arrivée (SDA)`{.action} et renseignez successivement, dans la case prévue à cet effet, **chacun des numéros de votre tranche de numéros (SDA)**.
+- Dans le cas d'une tranche de numéros, renseignez le numéro de tête de ligne de la tranche concernée au format international (il doit nécessairement commencer par 0032). En cas de doute, votre opérateur actuel peut vous communiquer ce numéro. Cochez ensuite le bouton `Porter votre numéro principal et une partie des numéros Sélection Directe à l'Arrivée (SDA)`{.action} et renseignez successivement, dans la case prévue à cet effet, **chacun des numéros de votre tranche de numéros (SDA)**.
 
 Sélectionnez enfin la date souhaitée de la portabilité, puis cliquez sur `Suivant`{.action}.
 

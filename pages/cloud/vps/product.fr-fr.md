@@ -1,8 +1,8 @@
 ---
 title: VPS
 slug: vps
-excerpt: Utiliser les VPS OVH
-Sections: Premiers pas, Diagnostic et mode Rescue, SSH et clé SSH, Utilisation avancée
+excerpt: 'Utiliser les VPS OVHcloud'
+Sections: 'Premiers pas, Diagnostic et mode Rescue, Réseau et IP, SSH et clé SSH, Utilisation avancée'
 ---
 
 > [!product-section]

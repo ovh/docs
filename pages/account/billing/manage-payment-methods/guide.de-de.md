@@ -1,11 +1,11 @@
 ---
 title: 'Meine Zahlungsarten verwalten'
 slug: zahlungsarten-verwalten
-excerpt: 'Hier erfahren Sie, wie Sie Ihre Zahlungsarten in Ihrem OVHcloud Kundencenter hinzufügen und verwalten können'
+excerpt: 'Erfahren Sie hier, wie Sie Ihre Zahlungsarten in Ihrem OVHcloud Kundencenter hinzufügen und verwalten können'
 section: Abrechnung
 ---
 
-**Letzte Aktualisierung am 15.04.2020**
+**Letzte Aktualisierung am 07.05.2020**
 
 ## Ziel
 
@@ -50,13 +50,15 @@ Klicken Sie hierfür auf den Button `Zahlungsart hinzufügen`{.action}.
 
 Folgen Sie den nachfolgenden Schritten zur Hinterlegung einer Zahlungsart. Im ersten Schritt schlägt man Ihnen vor, diese neue Zahlungsart als „Standardzahlungsart“ zu definieren, damit sie für künftige Bestellungen oder automatische Zahlungen verwendet werden kann.
 
-Im Fall der Eintragung eines Bankkontos muss uns eine SEPA Einzugsermächtigung übermittelt (Post, Fax oder E-Mail) werden. Um dieses Dokument herunterzuladen, klicken auf die Schaltfläche `...`{.action} rechts von Ihrem Bankkonto und dann auf `Dokument herunterladen, das per Post zurückzusenden ist`{.action}.
+#### Ein Bankkonto hinzufügen
 
-![manage-payment-methods](images/managepaymentmethods2b.png){.thumbnail}
+Im Fall der Hinterlegung eines neuen Bankkontos wird eine E-Mail von unserem Partner Yousign versendet, mit der Sie die Einzugsermächtigung dann digital signieren können.
+
+![manage-payment-methods](images/yousign.png){.thumbnail}
 
 > [!primary]
 >
-Solange dieses Formular nicht ausgefüllt und unterschrieben bei uns eingegangen ist, wird der Status „Validierung wird durchgeführt“ neben Ihrem Bankkonto angezeigt. Es kann in diesem Status für Zahlungen per Einzug noch nicht berücksichtigt werden.
+Solange diese Authorisierung nicht erfolgt ist, wird der Status „Validierung wird durchgeführt“ neben Ihrem Bankkonto angezeigt. Es kann in diesem Status für Zahlungen per Einzug noch nicht berücksichtigt werden.
 >
 
 
