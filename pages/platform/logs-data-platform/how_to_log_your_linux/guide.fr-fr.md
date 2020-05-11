@@ -73,30 +73,28 @@ $ debian@server:~$ sudo nano /etc/syslog-ng/conf.d/ldp.conf
 
 ``` hl_lines="10 15"
 template ovhTemplate {
-    # important:
-    ## Bracket [] no space between inside (opening/closing), space outside.
-    ## sid_id (exampleSDID@32473), flowgger need an id for structured data as specified by the RFC 5424.
-    ## change X-OVH-TOKEN=\"xxxxxxxxxxxxxx\" by your X-OVH-TOKEN
-    #flowgger RFC5424 example:
-    #<23>1 2016-09-05T15:53:45.637824Z hostname appname 69 42 [origin@123 software="test script" swVersion="0.0.1"] test message
-    #pri timestamp hostname appname pid msgid [sd_id sd_field=sd_value] message
-
-    template("<${LEVEL_NUM}>1 ${ISODATE} ${HOST} ${PROGRAM} ${PID} - [sdid@32473 X-OVH-TOKEN=\"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx\" pid=\"${PID}\" facility=\"${FACILITY}\" priority=\"${PRIORITY}\"] ${MSG}\n");
+    # Important:
+    ## Square brackets: No space after the opening [ or before the closing ].
+    ## sdid@32473: Needed. Leave it as it is for OVHCloud use. (Flowgger needs an id for structured data as specified by the RFC 5424).
+    ## X-OVH-TOKEN: Change X-OVH-TOKEN=\"xxxxxxxxxxxxxx\" with your X-OVH-TOKEN available in your OVHCloud Log Data Platform panel.
+    
+    template("<${PRI}>1 ${ISODATE} ${HOST} ${PROGRAM} ${PID} - [sdid@32473 X-OVH-TOKEN=\"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx\" pid=\"${PID}\" facility=\"${FACILITY}\" priority=\"${PRIORITY}\"] ${MSG}\n");
     template_escape(no);
 };
 
 destination ovhPaaSLogs {
-    network("<your_cluster>.logs.ovh.com"
-        port(6514),
-        template(ovhTemplate),
-        ts_format("iso"),
-        transport("tls"),
+    network(
+        "<your_cluster>.logs.ovh.com"
+        port(6514)
+        template(ovhTemplate)
+        ts-format("iso")
+        transport("tls")
         tls(
-            peer-verify("required-trusted") 
+            peer-verify(required-trusted) 
             ca_dir("/etc/ssl/certs/")
-        ),
-        keep-alive(yes),
-        so_keepalive(yes),
+        )
+        keep-alive(yes)
+        so-keepalive(yes)
     );
 };
 
