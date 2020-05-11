@@ -2,7 +2,7 @@
 title: 'Configurer son adresse IP en alias'
 slug: network-ipaliasing
 excerpt: 'Découvrez comment ajouter des IP fail-over à votre configuration'
-section: 'Réseau et IP'
+section: 'Réseau & IP'
 ---
 
 **Dernière mise à jour le 16/04/2020**
