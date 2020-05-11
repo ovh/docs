@@ -11,7 +11,7 @@ order: 5
 ## Objective
 This guide gives you some basic examples about using OpenStack Swift and its S3 API with OVHcloud Data Processing.
 
-We will use the both OpenStack Swift native API and its S3 API in read/write mode.
+We will use both the OpenStack Swift native API and its S3 API in read/write mode.
 
 Samples are based on the well-known WordCount. We will first read data from a text file, then count the frequence of each word in this particular file.
 
@@ -22,14 +22,13 @@ Samples are based on the well-known WordCount. We will first read data from a te
 - Data Processing activated (see [How to activate the Data Processing](../activation){.external} for details).
 - First use of OVHcloud Data Processing already done. For example, the first tutorial [Calculating π number with Apache Spark](../pi-spark){.external}.
 - An environment file is required.
-Here after an example with only dependencies required for this Howto: [environment.yml](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/environment.yml).
-Otherwise, this [Howto](../generate-environment) explains how to generate an environment file.
-- The input file 'wordcount.txt' used by the following samples is available [Here](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount.txt).
-You have to upload it in the same Swift container as the one used for Python samples. Here after a documentation that explains how to create a Swift container [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/).
+The following is an example with only dependencies required for this Howto: [environment.yml](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/environment.yml).
+Otherwise, this [How to](../generate-environment) explains how to generate an environment file.
+- The input file 'wordcount.txt' used by the following samples is available [here](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount.txt).
+You have to upload it in the same Swift container as the one used for Python samples. Please refer to this documentation that explains how to create a Swift container [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/).
 
 ## Read data in the current container with Apache Spark using OpenStack Swift API
-
-Here after the code in Python that reads one object wordcount.txt in the current container and print the number of occurrences per word.
+Find below the code in Python that reads one object wordcount.txt in the current container and prints the number of occurrences per word.
 
 Save it in a file called 'wordcount.py' or download it from this repository: [Data Processing Samples - Object Storage](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount.py).
 
@@ -121,7 +120,7 @@ if __name__ == "__main__":
 
 ## Read data with Apache Spark using the both OpenStack Swift API and its S3 implementation
 
-Here after the code in Python that:
+Find below the code in Python that:
 
 - reads one object 'wordcount.txt' through the native Swift API
 - stores the number of occurrences per word in Swift through its S3 API
@@ -212,7 +211,7 @@ if __name__ == "__main__":
 
 These samples are quite basic. They provide the first step to interact with object storage from within your code and, then, go further.
 
-Concerning the 'WordCount' use case, here after a link to the tutorial with a more advanced [Wordcount](../wordcount-spark){.external}.
+Concerning the 'WordCount' use case, here is a link to the tutorial with a more advanced [Wordcount](../wordcount-spark){.external}.
 
 If you are not familiar with Apache Spark, we recommend you to visit [Apache Spark's official website](https://spark.apache.org/) and [pyspark's documentation](https://spark.apache.org/docs/latest/api/python/index.html).
 
