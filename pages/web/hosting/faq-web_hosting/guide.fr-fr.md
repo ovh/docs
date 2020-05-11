@@ -1,15 +1,14 @@
 ---
 title: 'FAQ Hébergements Web'
-excerpt: 'Retrouvez les questions les plus fréquemment posées sur les hébergements Web OVHcloud'
+excerpt: 'Retrouvez les questions les plus fréquemment posées sur les hébergements web OVHcloud'
 slug: faq-hebergement
 section: 'Premiers pas'
-order: 1
 hidden: true
 ---
 
 **Dernière mise à jour le 05/05/2020**
 
-## Retrouvez les questions les plus fréquemment posées sur les hébergements Web OVHcloud
+## FAQ hébergements web OVHcloud
 
 
 ### Que faire si mon site web dysfonctionne ? 
