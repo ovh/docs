@@ -2,14 +2,13 @@
 title: 'FAQ Domaines & DNS'
 excerpt: 'Retrouvez les questions les plus fréquemment posées sur les noms de domaines et DNS'
 slug: faq-domains-dns
-section: 'Premiers pas'
-order: 1
+section: 'DNS et zone DNS'
 hidden: true
 ---
 
 **Dernière mise à jour le 05/05/2020**
 
-## Retrouvez les questions les plus fréquemment posées sur les noms de domaines et DNS
+## FAQ domaines et DNS
 
 ### Comment configurer ma zone DNS ? 
 
