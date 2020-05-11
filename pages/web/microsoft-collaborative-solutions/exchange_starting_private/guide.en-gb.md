@@ -26,7 +26,7 @@ This guide is for customers who have just ordered a Private Exchange platform. I
 
 Once you have placed your order, you will be sent an email to your contact email address you have listed in the OVHcloud Control Panel. This email will contain the information you need to configure your Private Exchange platform. 
 
-To read this email via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), click on your account name in the top right-hand corner, then `My account`{.action}. Go to the `Emails received`{.action} tab, and search for an email with the subject:
+To read this email via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), click on your account name in the top right-hand corner, then click on `Service emails`{.action}. Search for an email with the subject:
 
 > **\[xx-11111-ovh] Your Private Exchange 20_xxx_ service is being delivered.**
 
@@ -66,7 +66,7 @@ Once you have confirmed this step, you will receive a message that the configura
 
 If your domain name is not managed on the same customer account, or is not hosted with OVHcloud, you will be sent a second email containing the information required to configure your DNS zone manually.
 
-This email will contain the IPv4 and IPv6 addresses for your platform. Enter these IP addresses into the DNS zone for the sub-domain created in [step 2](./#step-2-starting-up-your-platform), as an A record and an AAAA record respectively. For an OVHcloud domain name, please read our guide on [Editing a DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/) to help you.
+This email will contain the IPv4 and IPv6 addresses of your Private Exchange server. Enter these IP addresses into the DNS zone for the sub-domain created in [step 2](./#step-2-starting-up-your-platform), as an A record and an AAAA record respectively. For an OVHcloud domain name, please read our guide on [Editing a DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/) to help you.
 
 
 ### Step 4: Validating your SSL certificate
@@ -91,9 +91,9 @@ Once your SSL certificate has been validated, you may need to wait around 4 hour
 
 Once your server is ready and available, you will receive a confirmation email with the subject:
 
-> **\[xx-11111-ovh] Your Private Exchange 2016v1 service is ready.**
+> **\[xx-11111-ovh] Your Private Exchange 20_xxx_ service is ready.**
 
-To add the first domain name to your platform and configure the accounts, please refer to our guide on [Adding a domain name to an Exchange service](../microsoft-collaborative-solutions/adding-domain-exchange/). 
+To add the first domain name to your platform and configure the accounts, please refer to our guide on [Adding a domain name to an Exchange service](../adding-domain-exchange/). 
 
 ## Go further
 
