@@ -14,6 +14,7 @@ OVHcloud Connect configured in Layer 3 differ from Layer 2 as you have to config
 ![L3 Implementation](images/occ-l3-implementation.jpg){.thumbnail}
 
 A L3 Domain is composed of:
+
 * A subnet
 * A BGP ASN
 
@@ -30,6 +31,7 @@ Now, we are multi-DC capable:
 These two examples need to order and configure two OVHcloud Connect as one OVHcloud Connect equal to one POP/EntryPoint.
 
 Rules:
+
 * You can have as many OVHcloud Connect L3 as you want in the same vRack
 * You can associate several EntryPoint/POP with one EndPoint/DC
 * You can associate several Endpoint/DC with one EntryPoint/POP
@@ -51,6 +53,7 @@ The following schema shows the mix of L2 and L3. They can end in the same OVHclo
 On such architecture, two L3 Domains are needed: POP/EntryPoint and DC/EndPoint.
 
 "IP Net A" is part of the L3 Domain in DC, needed information:
+
 * IP Addressing plan (subnet and netmask) with a minimum netmask value “/29”
 * The first IP address is reserved for the virtual gateway (if running VRRP)
 * The two following IP addresses are reserved for OVHcloud routing instance
@@ -64,6 +67,7 @@ On such architecture, two L3 Domains are needed: POP/EntryPoint and DC/EndPoint.
 | A.B.C.3 | OVHcloud Router B |
 
 "IP Net B" is part of the L3 Domain in POP, needed information:
+
 * Supported netmask: /30 (CIDR notation)
 * First IP address for OVHcloud Routing instance
 * Second IP address for customer equipment
