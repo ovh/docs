@@ -43,7 +43,7 @@ Before you start modifying anything on your website, make sure you understand wh
 
 #### 1.1 Take note of OVHcloud's message
 
-You should have received a message from OVH, informing you that an action related to the security of your hosting has been undertaken. Then take note of the information set out here. Its content will vary, depending on the specifics of your case. It is not possible to reference every possibility in this documentation. However, these elements will tell you:
+You should have received a message from OVHcloud, informing you that an action related to the security of your hosting has been undertaken. Then take note of the information set out here. Its content will vary, depending on the specifics of your case. It is not possible to reference every possibility in this documentation. However, these elements will tell you:
 
 - exactly when the deactivation took place
 - the reason the deactivation was undertaken
