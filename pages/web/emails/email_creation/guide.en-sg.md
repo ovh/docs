@@ -16,7 +16,7 @@ You can use an email address in your MX Plan solution to send and receive emails
 
 ## Requirements
 
-- an MX Plan solution, available via a [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/), [a free Start 10M hosting solution](https://www.ovh.com/ca/en/domains/start10m_hosting_offer.xml) including a domain name (activated in advance), or the MX Plan solution, ordered separately
+- an MX Plan solution, available via a [Web Hosting plan](https://www.ovh.com/sg/web-hosting/), [a free Start 10M hosting solution](https://www.ovh.com/sg/domains/start10m_hosting_offer.xml) including a domain name (activated in advance), or the MX Plan solution, ordered separately
 - the ability to create email addresses as part of your solution
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
@@ -76,9 +76,9 @@ Once you have created your email addresses, you can start using them straight aw
 
 ##### 1. Use Outlook Web Access (OWA) webmail.
 
-Go to the [Webmail login](https://www.ovh.com/ca/en/mail/) page, then enter your email address and password. Then click the `Login`{.action} button.
+Go to the [Webmail login](https://www.ovh.com/sg/mail/) page, then enter your email address and password. Then click the `Login`{.action} button.
 
-When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](../../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
+When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -148,7 +148,7 @@ Once you have created your email addresses, you can start using them straight aw
 
 ##### 1. Use Roundcube webmail.
 
-Go to the [Webmail login](https://www.ovh.com/ca/en/mail/) page, then enter your email address and password. Then click the `Login`{.action} button.
+Go to the [Webmail login](https://www.ovh.com/sg/mail/) page, then enter your email address and password. Then click the `Login`{.action} button.
 
 Your inbox will then appear.
 
