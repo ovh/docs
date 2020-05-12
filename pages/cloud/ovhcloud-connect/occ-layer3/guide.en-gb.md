@@ -84,11 +84,11 @@ On such architecture, two L3 Domains are needed: POP/EntryPoint and DC/EndPoint.
 VRRP allows router redundancy on OVHcloud devices.
 
 * Each EndPoint/DC supports only one VRRP instance,
-* The VRRP VRID value is provided by OVHcloud.
-* By default, VRRP is master on ‘A’ device
-* Static routes can be configured 
+* The VRRP VRID value is provided by OVHcloud,
+* By default, VRRP is master on ‘A’ device,
+* Static routes can be configured. 
 
-### BGP Configuration
+### BGP configuration
 
 BGP is mandatory in POP/EntryPoint and optional in DC/EndPoint. Enabling BGP in DC/EndPoint disables VRRP configuration.
 
@@ -99,6 +99,26 @@ Recommended value in the range 64512-65534.
 * Each EndPoint/DC supports up to 4 BGP peers
 * Up to 100 prefixes can be announced per BGP session
 * For each EndPoint/DC, you must establish a BGP session with ‘A’ device and ‘B’ device
+* By default, BFD is activated on all BGP session, this protocol is higly recommended on DC side to have a faster convergence
+
+For example, IP network 'B' will be announced to OVH router through BGP session.
 
 ![L3 BGP vRack](images/occ-l3-bgpvrack.jpg){.thumbnail}
 
+At a more global level, BGP topology will look like this:
+
+![L3 BGP Global Topology](images/occ-l3-bgpglobal.jpg){.thumbnail}
+
+### BGP path selection
+
+By default, all available paths are enabled using ECMP, up to 4 paths are supported. So to have an active/passive topology with two POP/EntryPoint, we can use as-path using prepend or MED.
+
+If as-prepend is configured on customer's devices on POP2, topology will look like:
+
+![L3 BGP as-prepend](images/occ-l3-bgpasprepend.jpg){.thumbnail}
+
+Note: as-prepend is not configurable on OVHcloud devices
+
+Using MED is another alternative to get the same topology:
+
+![L3 BGP MED](images/occ-l3-bgpmed.jpg){.thumbnail}
