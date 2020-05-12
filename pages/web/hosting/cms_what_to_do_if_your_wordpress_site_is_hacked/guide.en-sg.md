@@ -51,7 +51,7 @@ Replace "your_domain" with your domain name and the extension. ex: "ovh.com".
 - 5 Fix the flaw
 
 
-*You will only get an email if your website has been blocked. If it has not been blocked, you have to check the date of the last modification from the FTP space (the file dates).
+You will only get an email if your website has been blocked. If it has not been blocked, you have to check the date of the last modification from the FTP space (the file dates).
 
 Just deleting the malicious code added by the hacker is not enough, you have to fix the flaw in its entirety.
 
@@ -107,7 +107,7 @@ You have to modify the wp-config.php file to activate the database link.
 
 To do this you will need the email you received when you created the database. 
 
-If you cannot remember your database password, you can change it from your customer account. The procedure is explained in this [guide](https://docs.ovh.com/ca/en/hosting/web_hosting_how_to_get_my_website_online/)
+If you cannot remember your database password, you can change it from your customer account. The procedure is explained in this [guide](../web_hosting_how_to_get_my_website_online/)
 Important: check for updates in the WordPress admin panel.
 
 
