@@ -16,7 +16,7 @@ A *database* (“DB”) is used to store what are known as dynamic elements, suc
 
 ## Requirements
 
-- You must have an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/).
+- You must have an [OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/).
 - You must be able to create databases as part of your package.
 - You must have the necessary permissions to manage the Web Hosting plan in question from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
@@ -42,7 +42,7 @@ In the window that pops up, select the information that you want, then click on 
 
 |Information|Description|  
 |---|---|  
-|Database engine|Select the engine that the database will use. Databases included in an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/) are available with the MySQL engine only.|  
+|Database engine|Select the engine that the database will use. Databases included in an [OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/) are available with the MySQL engine only.|  
 |Database version|Select the version used by the database engine. Check that your website is compatible with the version you have chosen. |  
 |Database type|Select the size of the database. This size refers to the space available to your database for storing data.|   
 
