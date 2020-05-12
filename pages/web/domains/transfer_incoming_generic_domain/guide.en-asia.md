@@ -40,7 +40,7 @@ The transfer procedure has several steps. These steps will involve various entit
 
 > [!warning]
 >
-> This procedure applies to most transfers. However, depending on your domain name extension, it may be different. We recommend checking the information displayed on the page for the extension concerned, via: <https://www.ovh.com/ca/en/domains/prices/>.
+> This procedure applies to most transfers. However, depending on your domain name extension, it may be different. We recommend checking the information displayed on the page for the extension concerned, via: <https://www.ovh.com/asia/domains/prices/>.
 >
 
 ### Step 1: Check the information associated with the domain.
@@ -71,11 +71,11 @@ Please note that OVHcloud is not your current domain name registrar. We are, the
 
 ### Step 3: Request a domain name transfer to OVHcloud.
 
-Now that your domain name is unlocked and you have your transfer code, you can request for your domain name to be transferred to OVHcloud. To do this, you will need to order a domain name transfer on [our website](https://www.ovh.com/ca/en){.external}. Enter your domain name, and follow the order process.
+Now that your domain name is unlocked and you have your transfer code, you can request for your domain name to be transferred to OVHcloud. To do this, you will need to order a domain name transfer on [our website](https://www.ovh.com/asia/){.external}. Enter your domain name, and follow the order process.
 
 When you are asked to provide your transfer code, enter it in the box next to your domain name. If you do not have the transfer code, you can tick a box labelled `Enter transfer code at a later stage`{.action}. However, we strongly advise ensuring that you have the code to hand before you continue any further.
 
-You can also complete your order with a [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}, and other OVHcloud solutions. This may be of interest to you, if you are also looking to migrate your services to OVHcloud. Our guide on [Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/){.external} will provide you with instructions on how to do this.
+You can also complete your order with a [Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external}, and other OVHcloud solutions. This may be of interest to you, if you are also looking to migrate your services to OVHcloud. Our guide on [Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/){.external} will provide you with instructions on how to do this.
 
 > [!warning]
 >
@@ -132,6 +132,6 @@ To do this, click `Domains`{.action} in the services bar on the left-hand side, 
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](https://docs.ovh.com/ca/en/hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/){.external}
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
