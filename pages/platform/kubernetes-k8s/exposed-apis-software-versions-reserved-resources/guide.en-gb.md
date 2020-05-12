@@ -21,11 +21,11 @@ Using it you will be able to add and remove nodes, update and reset your cluster
 
 Currently, we support the following Kubernetes releases:
 
-* `1.13` (deprecated)
 * `1.14` (deprecated)
-* `1.15`
+* `1.15` (deprecated)
 * `1.16`
 * `1.17`
+* `1.18`
 
 If you run a Managed Kubernetes Service using an older version we strongly encourage you to use the [version upgrade feature](../upgrading-kubernetes-version/) to receive official support for your cluster.
 
@@ -46,11 +46,11 @@ The CNI plugin installed is [canal](https://github.com/projectcalico/canal){.ext
 
 The versions installed depends on the Kubernetes version:
 
-* `1.13`: calico 3.6.0, flannel 0.9.1 (deprecated)
 * `1.14`: calico 3.7.2, flannel 0.11.0 (deprecated)
-* `1.15`: calico 3.7.2, flannel 0.11.0
+* `1.15`: calico 3.7.2, flannel 0.11.0 (deprecated)
 * `1.16`: calico 3.9.1, flannel 0.11.0
 * `1.17`: calico 3.10.3, flannel 0.11.0
+* `1.18`: calico 3.10.3, flannel 0.11.0
 
 ## Enabled policies
 
