@@ -16,8 +16,8 @@ Databases are used in virtually all modern content management systems (CMS), suc
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
-- a database created as part of an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/)
+- a database created as part of an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/)
 - access to the backup that you want to import into your database, or the ability to retrieve it
 - Depending on which import method you use, you must be able to administer the Web Hosting plan from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, or have the information you need in order to connect to the database.
 
@@ -33,7 +33,7 @@ Before you start, you must choose which method you are going to use to import th
 
 - **Carry out the import using a script**: this solution requires writing a script, hosted on your OVHcloud Web Hosting plan, which will perform the import. Writing this script requires a specific level of technical knowledge.
 
-- **Carry out the import from an SSH command line**: this method involves using the SSH protocol to log in to your storage space, then using commands to interact with the storage space. More advanced knowledge and a specific [OVHcloud Hosting Plan](https://www.ovh.com/ca/en/web-hosting/) are required to use this type of access.
+- **Carry out the import from an SSH command line**: this method involves using the SSH protocol to log in to your storage space, then using commands to interact with the storage space. More advanced knowledge and a specific [OVHcloud Hosting Plan](https://www.ovh.com/asia/web-hosting/) are required to use this type of access.
 
 Some of the methods listed above are not included in the OVHcloud interface. You will, therefore, need to rely on your own knowledge to follow these methods. We have set out some instructions below, but they are not a substitute for the assistance of a webmaster.
 
