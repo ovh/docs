@@ -101,7 +101,7 @@ Recommended value in the range 64512-65534.
 * For each EndPoint/DC, you must establish a BGP session with ‘A’ device and ‘B’ device
 * By default, BFD is activated on all BGP session, this protocol is higly recommended on DC side to have a faster convergence
 
-For example, IP network 'B' will be announced to OVH router through BGP session.
+For example, IP network 'B' will be announced to OVHcloud router through BGP session.
 
 ![L3 BGP vRack](images/occ-l3-bgpvrack.jpg){.thumbnail}
 
