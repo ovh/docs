@@ -164,6 +164,6 @@ Redirect temp / http://other_website.tld/site/
 
 ## Go further
 
-[How to edit my DNS zone](https://docs.ovh.com/ca/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
+[How to edit my DNS zone](../web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
