@@ -40,7 +40,7 @@ Once the verifications are complete, you must choose whether to enable the minim
 |Enable minimal records?|Details|
 |---|---|
 |Yes|Select this option if you would like to customise the DNS zone yourself at a later stage.|
-|No|Select this option if you are planning to use OVHcloud services like a [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting){.external}, since the zone has already been pre-configured.|
+|No|Select this option if you are planning to use OVHcloud services like a [Web Hosting plan](https://www.ovh.com/sg/web-hosting){.external}, since the zone has already been pre-configured.|
 
 ![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 
