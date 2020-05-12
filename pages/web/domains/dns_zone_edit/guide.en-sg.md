@@ -41,7 +41,7 @@ By understanding what each of these records does, you will gain a better underst
 |MX|The MX record is used to point a domain name to an email server. For example, the IP address of the server your email solution is hosted on. Your service provider may have several email servers. If this is the case, you will need to create multiple MX records.|
 |SRV|The SRV record is used to define information on the address of a server that manages a service. For example, this record can define the address of a SIP server, or the address of a server that enables an email client to be configured automatically using autodiscover.|
 |TXT|The TXT record is used to add a chosen value (in text format) to your domain name’s DNS settings. This record is often used during the verification process.|
-|SPF|The SPF record is used to avoid potential identity theft via the email addresses that use your domain name. For example, this record specifies that only your email service provider’s server must be identified as a legitimate sending source. To find out more about this, you can refer to our guide to [Adding an SPF record to your domain name’s DNS configuration](https://docs.ovh.com/ca/en/domains/web_hosting_the_spf_record/){.external}.|
+|SPF|The SPF record is used to avoid potential identity theft via the email addresses that use your domain name. For example, this record specifies that only your email service provider’s server must be identified as a legitimate sending source. To find out more about this, you can refer to our guide to [Adding an SPF record to your domain name’s DNS configuration](../web_hosting_the_spf_record/){.external}.|
 |CAA|The CAA record is used to list the certificate authorities authorised to deliver SSL certificates for a domain name.|
 
 > [!warning]
@@ -105,10 +105,10 @@ You can also modify an individual DNS record’s TTL. You can only do this for o
 
 ## Go further
 
-[General information about DNS servers](https://docs.ovh.com/ca/en/domains/web_hosting_general_information_about_dns_servers/){.external}.
+[General information about DNS servers](../web_hosting_general_information_about_dns_servers/){.external}.
 
-[Adding an SPF record to your domain name’s configuration](https://docs.ovh.com/ca/en/domains/web_hosting_the_spf_record/){.external}.
+[Adding an SPF record to your domain name’s configuration](../web_hosting_the_spf_record/){.external}.
 
-[Protect your data from DNS cache poisoning with DNSSEC](https://www.ovh.com/ca/en/domains/dnssec_service.xml){.external}.
+[Protect your data from DNS cache poisoning with DNSSEC](https://www.ovh.com/sg/domains/dnssec_service.xml){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.
