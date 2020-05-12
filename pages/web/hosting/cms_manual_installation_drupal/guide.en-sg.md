@@ -22,7 +22,7 @@ Make sure that you have your customer ID (nic-handle) and password so you can lo
 - Get your FTP ID and password so you can log in to your hosting package. 
 
 - You also need to have your SQL database ID and password so you can log in to the database.
-There is a guide showing you how to get your SQL credentials: []({legacy}1374)
+There is a guide showing you how to change your SQL credentials: [Changing the password for a Web Hosting plan database](../change-password-database/)
 
 
 
@@ -32,7 +32,8 @@ There is a guide showing you how to get your SQL credentials: []({legacy}1374)
 
 
 
-![](images/img_3234.jpg){.thumbnail}
+![drupal](images/img_3234.jpg){.thumbnail}
+
 There should be a link that lets you download the latest stable version of the CMS
 Our example uses 7.41.
 The file that you download will usually be compressed (zipped) so you have to be able to extract the files to your computer. There is lots of help available online.
@@ -56,12 +57,14 @@ Check them out if you are stuck at this stage.
 
 The target folder will be called "Drupal-xxx" (xxx often being replaced by the number of the version).
 
-![](images/img_3233.jpg){.thumbnail}
+![drupal](images/img_3233.jpg){.thumbnail}
+
 Log on to the web hosting package via FTP
 
 To upload the Drupal files to your hosting package, you first have to log on. 
 
-Follow this guide on connecting to a hosting package in FTP:[]({legacy}1374)
+Follow this guide on connecting to a hosting package in FTP:[Logging in to your Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting)
+
 Transfer files via FTP
 
 Follow these steps to upload your files using FTP.
@@ -86,7 +89,7 @@ To select them all just click CTRL+A.
 
 Then drag and drop the files in to the "Remote site" section in the "www" folder.
 
-![](images/img_3199.jpg){.thumbnail}
+![drupal](images/img_3199.jpg){.thumbnail}
 It is very likely that the "www" folder is not empty. You do not have to remove the files that are in it. We will go back to this point later on in the guide.
 
 ## Step 3
@@ -99,7 +102,7 @@ Once the transfer is complete, make sure that all of the files and folders have 
 
 This is the end of the section devoted to transfering files via FTP.
 
-![](images/img_3200.jpg){.thumbnail}
+![drupal](images/img_3200.jpg){.thumbnail}
 
 
 ## Step 1 - Installing Drupal
@@ -110,19 +113,19 @@ You will reach this page
 
 Tick "Standard Install with commonly used features pre-configured." then click "Save and continue".
 
-![](images/img_3219.jpg){.thumbnail}
+![drupal](images/img_3219.jpg){.thumbnail}
 
 
 ## Step 2 - Language choice
 
 Select your chosen language and then click "Save and continue".
 
-![](images/img_3218.jpg){.thumbnail}
+![drupal](images/img_3218.jpg){.thumbnail}
 
 
 ## Step 3 - Log on to the database
 
-Get your database credentials (there is a guide available here: []({legacy}1374)).
+Get your database credentials. There is a guide available [here](../change-password-database/) to change your credentials.
 
 
 Enter the information requested:
@@ -140,7 +143,7 @@ Tick "MySQL, MariaDB or equivalent".
 
 
 
-![](images/img_3202.jpg){.thumbnail}
+![drupal](images/img_3202.jpg){.thumbnail}
 
 - Database survey: enter your database's server name, as stated in the setup email or in your customer account. It usually ends in ".mysql.db".
 
@@ -149,7 +152,7 @@ Tick "MySQL, MariaDB or equivalent".
 Table prefix: useful for installing Drupal lots of times on the same database. In this case, you have to enter a different prefix for each installation. If in doubt, leave empty
 
 
-![](images/img_3203.jpg){.thumbnail}
+![drupal](images/img_3203.jpg){.thumbnail}
 Important: the database IDs are not automatically sent when installing the hosting package. To receive them, you have to enable the database in your customer account.
 Click "Save and continue" to confirm the database login details.
 
@@ -163,7 +166,7 @@ If not you need to enter it again correctly.
 
 
 
-![](images/img_3190.jpg){.thumbnail}
+![drupal](images/img_3190.jpg){.thumbnail}
 
 
 ## Step 5 - Configuring Drupal administration
@@ -183,7 +186,7 @@ Here are the administration settings for your Drupal CMS.
 
 Go to the bottom of the page
 
-![](images/img_3206.jpg){.thumbnail}
+![drupal](images/img_3206.jpg){.thumbnail}
 
 - By default: Choose the country/language of the website. 
 - Default time zone: Choose the website time zone. 
@@ -197,17 +200,17 @@ We recommend that you enable these options before increasing the stability and s
 
 
 
-![](images/img_3207.jpg){.thumbnail}
+![drupal](images/img_3207.jpg){.thumbnail}
 
 
 ## Step 6 - Completion
 Your Drupal CMS is now installed. 
 Click on "Visit your new website".
 
-![](images/img_3208.jpg){.thumbnail}
+![drupal](images/img_3208.jpg){.thumbnail}
 You now simply have to use Drupal and build your website.
 
-![](images/img_3209.jpg){.thumbnail}
+![drupal](images/img_3209.jpg){.thumbnail}
 
 
 ## Drupal support
@@ -217,7 +220,6 @@ Please have a look at the forums dedicated to the Drupal solution.
 
 
 OVHcloud support is not authorised to answer questions about Drupal configuration.
-However, there is a user guide available: []({legacy}2053).
 
 
 ## Typical errors
@@ -237,12 +239,13 @@ It may be useful to simply just rename the file so that you can re-enable it at 
 
 Something else to note: Your website's files must be placed in the "www" folder in order for them to display your website.
 
-![](images/img_3217.jpg){.thumbnail}
+![drupal](images/img_3217.jpg){.thumbnail}
+
 Typical error: PHP version
 
 This is an error to do with your server's PHP version. 
 
 The cause is simple: the latest version of PHP is not enabled. 
 
-A guide is available concerning how to modify the PHP version on your shared hosting package:[Modify hosting package PHP version]({legacy}1207)
+A guide is available concerning how to modify the PHP version on your shared hosting package:[Modify hosting package PHP version](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/)
 
