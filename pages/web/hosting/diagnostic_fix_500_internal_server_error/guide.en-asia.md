@@ -12,7 +12,7 @@ legacy_guide_number: g1987
 
 If the .htaccess syntax is incorrect, the web server will return a 500 Internal Server Error. To confirm whether .htaccess is the cause, rename the .htaccess file .htaccess_bak for example. 
 
-Find out more:[]({legacy}1967)
+Find out more:[What else can you do with the .htaccess file?](/what_else_can_you_do_with_the_htaccess_file/)
 
 
 ## Permissions:
@@ -28,5 +28,5 @@ You must follow a few security rules concerning the permissions you give to your
 
 If you program in perl for example, an error in your script is summed up by a 500 error. Due to security you will not be given more details. To debug your scripts, you can use the telnet/ssh connection (available with Professional hosting and upwards).
 
-Click here for more information: []({legacy}1962)
+Click here for more information: [Modifying the configuration of a Web Hosting plan]({modify_your_web_hosting_systems_runtime_environment/)
 
