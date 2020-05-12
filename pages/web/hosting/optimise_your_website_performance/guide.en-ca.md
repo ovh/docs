@@ -19,7 +19,7 @@ This guide will help you get a basic understanding on what points can affect per
 ## Requirements
 - an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
 - an email confirming that your Web Hosting plan has been set up
-- a [domain name](https://www.ovh.com/ca/domains/) that can be used to access your website
+- a [domain name](https://www.ovh.com/ca/en/domains/) that can be used to access your website
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
