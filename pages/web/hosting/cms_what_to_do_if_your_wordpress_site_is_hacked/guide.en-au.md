@@ -51,7 +51,7 @@ Replace "your_domain" with your domain name and the extension. ex: "ovh.com".
 - 5 Fix the flaw
 
 
-*You will only get an email if your website has been blocked. If it has not been blocked, you have to check the date of the last modification from the FTP space (the file dates).
+You will only get an email if your website has been blocked. If it has not been blocked, you have to check the date of the last modification from the FTP space (the file dates).
 
 Just deleting the malicious code added by the hacker is not enough, you have to fix the flaw in its entirety.
 
