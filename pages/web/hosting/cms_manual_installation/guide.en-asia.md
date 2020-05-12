@@ -44,7 +44,7 @@ Our Web Hosting services are compatible with some of the most popular content ma
 WordPress is a web software you can use to create a website or blog. It is based on PHP technology and features a variety of tools including a spell checker and SEO plugins.
 
 
-- [WordPress Module](https://www.ovh.com/ca/en/web-hosting/website/wordpress.xml)
+- [WordPress Module](https://www.ovh.com/asia/web-hosting/website/wordpress.xml)
 
 OVHcloud support is not authorised to respond to any questions concerning WordPress configuration.
 
@@ -65,7 +65,7 @@ Joomla! is an award-winning, easy to use software which enables you to build web
 The Joomla! community is very large and can provide help and contributions in all areas of the CMS (help, documentation, support, themes etc.)
 
 
-- [Joomla! Module](https://www.ovh.com/ca/en/web-hosting/website/joomla.xml)
+- [Joomla! Module](https://www.ovh.com/asia/web-hosting/website/joomla.xml)
 
 OVHcloud support is not authorised to respond to any questions concerning Joomla! configuration.
 
@@ -88,7 +88,7 @@ Between 2005 and now the software has continued to evolve. Version 1.7.6.2 is av
 
 
 
-- [PrestaShop Module](https://www.ovh.com/ca/en/web-hosting/website/prestashop.xml)
+- [PrestaShop Module](https://www.ovh.com/asia/web-hosting/website/prestashop.xml)
 
 OVHcloud support is not authorised to respond to any questions concerning PrestaShop configuration.
 
@@ -109,7 +109,7 @@ Please consult the forum dedicated to the
 ### Drupal
 Drupal is a free open-source platform based on PHP and created in 2000. Drupal builds dynamic websites quickly. It is also customisable and used by 1% of websites worldwide. 
 
--  [Drupal Module](https://www.ovh.com/ca/en/web-hosting/website/drupal.xml)
+-  [Drupal Module](https://www.ovh.com/asia/web-hosting/website/drupal.xml)
 
 OVHcloud support is not authorised to respond to any questions concerning Drupal configuration.
 
@@ -133,6 +133,6 @@ Please consult the forums dedicated to [Drupal](https://www.drupal.org).
 
 [Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites/)
 
-See our [Web Hosting solutions](https://www.ovh.com/ca/en/web-hosting/)
+See our [Web Hosting solutions](https://www.ovh.com/asia/web-hosting/)
 
 Join our community of users on <https://community.ovh.com/en/>.
