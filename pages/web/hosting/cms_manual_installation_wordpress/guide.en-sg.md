@@ -20,25 +20,25 @@ Make sure that you have your customer ID (nic-handle) and password so you can lo
 
 
 - Get your FTP ID and password so you can log on to your hosting package. 
-There is a guide showing you how to get your FTP details:[]({legacy}1374)
+There is a guide showing you how to change your FTP details: [Modifying a FTP user password](modify-ftp-user-password/)
 
 - You also need to have your SQL database ID and password so you can log on to the database.
-There is a guide showing you how to get your SQL credentials: []({legacy}1374)
+There is a guide showing you how to change your SQL credentials: [Changing the password for a Web Hosting plan database](../change-password-database/)
 
 
-![](images/img_3125.jpg){.thumbnail}
+![wordpress](images/img_3125.jpg){.thumbnail}
 
 
 ## Part 2: get source files
 
 - Go to the [WordPress](https://wordpress.com/learn-more/?v=discover) website. 
 
-There should be a link that lets you download the latest stable version of the CMS
+There should be a link that lets you download the latest stable version of the CMS.
 
 
 The file will usually be compressed (zipped) so you have to be able to extract the files to your computer. There is lots of help available online.
 
-![](images/img_3126.jpg){.thumbnail}
+![wordpress](images/img_3126.jpg){.thumbnail}
 
 
 ## Part 3: Upload your files to your hosting package via FTP
@@ -57,15 +57,15 @@ Check them out if you are stuck at this stage.
 
 The target folder will be called "WordPress"
 
-![](images/img_3127.jpg){.thumbnail}
+![wordpress](images/img_3127.jpg){.thumbnail}
 
 ## Log on to the web hosting package via FTP
 
 To upload the WordPress files to your hosting package, you first have to log on. 
 
-Follow this guide on connecting to a hosting package in FTP:[]({legacy}1374)
+Follow this guide on connecting to a hosting package in FTP: [Logging in to your Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting)
 
-![](images/img_3128.jpg){.thumbnail}
+![wordpress](images/img_3128.jpg){.thumbnail}
 
 ## Transfer files via FTP
 
@@ -83,7 +83,7 @@ If this folder does not exist you can create it.
 
 Your files must be dropped in to the "www" folder or you will not be able to access the installation procedure from your domain name.
 
-![](images/img_3129.jpg){.thumbnail}
+![wordpress](images/img_3129.jpg){.thumbnail}
 
 ## Step 2
 
@@ -97,7 +97,7 @@ Then drag and drop the files in to the "Remote site" section in the "www" folder
 
 It is very likely that the "www" folder is not empty. You do not have to remove the files that are in it. We will go back to this point later on in the guide.
 
-![](images/img_3130.jpg){.thumbnail}
+![wordpress](images/img_3130.jpg){.thumbnail}
 
 ## Step 3
 
@@ -109,14 +109,14 @@ Once the transfer is complete, make sure that all of the files and folders have 
 
 This is the end of the section devoted to transferring files via FTP.
 
-![](images/img_3131.jpg){.thumbnail}
+![wordpress](images/img_3131.jpg){.thumbnail}
 
 
 ## Step 4: link with the database
 
 ## Follow WordPress installation steps
 
-- Before continuing with the installation, clear your browser's cache, to prevent any errors. 
+Before continuing with the installation, clear your browser's cache, to prevent any errors. 
 
 
 In order to link your database to WordPress, you have to follow the CMS install steps.
@@ -129,7 +129,7 @@ This message will appear.
 
 Click on "Create a configuration file to continue."
 
-![](images/img_3132.jpg){.thumbnail}
+![wordpress](images/img_3132.jpg){.thumbnail}
 
 ## Step 2
 
@@ -137,7 +137,7 @@ Get your database credentials (see the beginning of this guide)
 
 Click "We're off!" or equivalent to go to the next step.
 
-![](images/img_3133.jpg){.thumbnail}
+![wordpress](images/img_3133.jpg){.thumbnail}
 
 ## Step 3
 
@@ -158,11 +158,11 @@ Important: the database IDs are not automatically sent when installing the hosti
 Click "Send" to confirm login details for the database. 
 
 
-- These are the final steps for creating a link between your database and WordPress. You now just have to complete the installation itself.
+These are the final steps for creating a link between your database and WordPress. You now just have to complete the installation itself.
 
 
 
-![](images/img_3134.jpg){.thumbnail}
+![wordpress](images/img_3134.jpg){.thumbnail}
 
 
 ## Completion
@@ -175,7 +175,7 @@ Take the following steps to finish installing the WordPress blog.
 
 Click "Run install" or equivalent to continue.
 
-![](images/img_3135.jpg){.thumbnail}
+![wordpress](images/img_3135.jpg){.thumbnail}
 
 ## Step 2
 
@@ -191,9 +191,9 @@ Your email address: enter a valid email address.
 
 Private life: if this box is checked, the search engines will rank the blog. 
 
-To launch the WordPress installation click on green]"Install WordPress".
+To launch the WordPress installation click on green "Install WordPress".
 
-![](images/img_3136.jpg){.thumbnail}
+![wordpress](images/img_3136.jpg){.thumbnail}
 
 ## Step 3
 
@@ -201,19 +201,18 @@ Your WordPress blog has now been installed!
 
 You can now log in and start to work on your blog. Click "Log in".
 
-![](images/img_3137.jpg){.thumbnail}
+![wordpress](images/img_3137.jpg){.thumbnail}
 
 ## WordPress administration
 
 A look at the WordPress administration panel.
 
-![](images/img_3138.jpg){.thumbnail}
+![wordpress](images/img_3138.jpg){.thumbnail}
 
 
 ## Useful information
 
 OVHcloud support is not authorised to answer questions about WordPress configuration.
-However, there is a user guide available: []({legacy}2053).
 
 Please consult the forum dedicated to WordPress.
 
@@ -236,7 +235,7 @@ It may be useful to simply just rename the file so that you can re-enable it at 
 
 Something else to note: Your website's files must be placed in the "www" folder in order for them to display your website.
 
-![](images/img_3139.jpg){.thumbnail}
+![wordpress](images/img_3139.jpg){.thumbnail}
 
 ## Typical error: PHP version
 
@@ -244,7 +243,7 @@ This is an error to do with your server's PHP version.
 
 The cause is simple: the latest version of PHP is not enabled. 
 
-A guide is available concerning how to modify the PHP version on your hosting package:[Modify hosting package PHP version]({legacy}1207)
+A guide is available concerning how to modify the PHP version on your hosting package:[Modify hosting package PHP version](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/)
 
-![](images/img_3140.jpg){.thumbnail}
+![wordpress](images/img_3140.jpg){.thumbnail}
 
