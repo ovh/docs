@@ -16,8 +16,8 @@ The “Website not installed” warning page is designed to flag that your domai
 
 ## Requirements
 
-- You must have an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/).
-- You must have the appropriate rights to manage the [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/) that your website is hosted on.
+- You must have an [OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/).
+- You must have the appropriate rights to manage the [OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/) that your website is hosted on.
 - You must have the appropriate rights to manage the configuration for the domain name concerned (i.e. its DNS zone).
 - You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
