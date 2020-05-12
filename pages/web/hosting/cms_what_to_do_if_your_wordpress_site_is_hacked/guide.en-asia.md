@@ -107,7 +107,7 @@ You have to modify the wp-config.php file to activate the database link.
 
 To do this you will need the email you received when you created the database. 
 
-If you cannot remember your database password, you can change it from your customer account. The procedure is explained in this [guide](https://docs.ovh.com/ca/en/hosting/web_hosting_how_to_get_my_website_online/)
+If you cannot remember your database password, you can change it from your customer account. The procedure is explained in this [guide](../web_hosting_how_to_get_my_website_online/)
 Important: check for updates in the WordPress admin panel.
 
 
