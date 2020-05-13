@@ -3,10 +3,9 @@ title: FAQ
 excerpt: 'Retrouvez les questions les plus fréquemment posées sur les e-mails OVHcloud'
 slug: faq-emails
 section: 'Premiers pas'
-hidden: true
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 13/05/2020**
 
 ## FAQ e-mails
 
