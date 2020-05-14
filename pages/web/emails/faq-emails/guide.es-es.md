@@ -3,7 +3,6 @@ title: FAQ
 excerpt: 'Encuentre las respuestas a las preguntas más frecuentes sobre las soluciónes de correo electrónico de OVHcloud'
 slug: correo-electronico-faq
 section: 'Primeros pasos'
-hidden: true
 ---
 
 **Última actualización: 14/05/2020**
@@ -13,6 +12,7 @@ hidden: true
 ### ¿Qué hacer si no puedo enviar o recibir mensajes de correo electrónico? 
 
 A menudo, cuando no es posible enviar o recibir un mensaje de correo electrónico, suele deberse a la configuración de la dirección en su cliente de correo. Para comprobarlo, conéctese al [webmail](https://www.ovh.es/mail/){.external} y realice una prueba de envío y recepción desde su dirección. 
+
 * Si funciona, deberá comprobar su configuración del software. 
 * Por el contrario, si sigue sin poder enviar o recibir mensajes, existen otras soluciones. 
 
