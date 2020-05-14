@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja IPv6 na serwerze VPS'
 slug: konfiguracja-ipv6
-excerpt: 'Dowiedz się, jak skonfigurować IPv6 na serwerze VPS od OVH'
+excerpt: 'Dowiedz się, jak skonfigurować IPv6 na serwerze VPS od OVHcloud'
 section: 'Sieć & IP'
 order: 1
 ---
@@ -10,18 +10,18 @@ order: 1
 
 ## Wprowadzenie
 
-IPv6 to najnowsza wersja *Internet Protocol* (IP). Wszystkie serwery VPS dostarczane są klientom OVH z adresem IPv4 oraz IPv6. Domyślnie skonfigurowany jest tylko adres IPv4. Możesz jednak również skonfigurować IPv6.
+IPv6 to najnowsza wersja *Internet Protocol* (IP). Wszystkie serwery VPS dostarczane są klientom OVHcloud z adresem IPv4 oraz IPv6. Domyślnie skonfigurowany jest tylko adres IPv4. Możesz jednak również skonfigurować IPv6.
 
-**Dowiedz się, jak skonfigurować IPv6 na serwerze VPS od OVH.**
+**Dowiedz się, jak skonfigurować IPv6 na serwerze VPS od OVHcloud.**
 
 > [!warning]
 >
-> OVH oddaje do Twojej dyspozycji serwery, którymi samodzielnie zarządzasz. OVH nie ma dostępu do Twoich serwerów i nie pełni funkcji administratora. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> OVHcloud oddaje do Twojej dyspozycji serwery, którymi samodzielnie zarządzasz. OVHcloud nie ma dostępu do Twoich serwerów i nie pełni funkcji administratora. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji „Sprawdź również”.
 > 
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera VPS OVH](https://www.ovh.pl/vps/){.external}
+- Posiadanie [serwera VPS OVHcloud](https://www.ovhcloud.com/pl/vps/){.external}
 - Zalogowanie się poprzez SSH do Twojego serwera VPS (dostęp root)
 - Posiadanie podstawowej wiedzy w zakresie sieci
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Cloud`{.action}
@@ -43,7 +43,7 @@ Przed rozpoczęciem operacji zapoznaj się z poniższą tabelą zawierającą te
 Pierwszy etap polega na pobraniu adresu IPv6 oraz bramy IPv6 przypisanych do Twojego serwera. Możesz to wykonać jedną z dwóch dostępnych metod. Przejdź w dalszej części przewodnika do tej, której chciałbyś użyć:
 
 - [Uzyskanie niezbędnych informacji dotyczących sieci w Panelu klienta](https://docs.ovh.com/pl/vps/konfiguracja-ipv6/#za-posrednictwem-panelu-klienta),
-- [Uzyskanie niezbędnych informacji dotyczących sieci za pomocą API](https://docs.ovh.com/pl/vps/konfiguracja-ipv6/#za-posrednictwem-api-ovh).
+- [Uzyskanie niezbędnych informacji dotyczących sieci za pomocą API](https://docs.ovh.com/pl/vps/konfiguracja-ipv6/#za-posrednictwem-api-ovhcloud).
 
 #### Za pośrednictwem Panelu klienta
 
@@ -53,9 +53,9 @@ Adres IPv6 i brama IPv6 przypisane do Twojego serwera wyświetlają się w sekcj
 
 ![configureipv6](images/configure-ipv6-step1.png){.thumbnail}
 
-#### Za pośrednictwem API OVH
+#### Za pośrednictwem API OVHcloud
 
-Przejdź do strony WWW <https://api.ovh.com/console/> i zaloguj się, używając identyfikatora OVH. Następnie użyj dwóch podanych poniżej komend API.
+Przejdź do strony WWW <https://api.ovh.com/console/> i zaloguj się, używając identyfikatora OVHcloud. Następnie użyj dwóch podanych poniżej komend API.
 
 Pierwsze umożliwia pobranie adresu IPv6 przypisanego do Twojego serwera.
 

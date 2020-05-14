@@ -14,6 +14,13 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 **Esta guía explica cómo configurar una cuenta Email Pro en la aplicación Correo de Windows 10.**
 
+> [!warning]
+>
+> La responsabilidad sobre los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+>
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
+>
+
 ## Requisitos
 
 - Tener una cuenta [Email Pro](https://www.ovh.es/emails/email-pro/){.external}.
@@ -23,6 +30,13 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 ## Procedimiento
 
 ### 1. Añadir la cuenta
+
+> [!primary]
+>
+> En nuestro ejemplo, hemos utilizado la mención servidor: pro**X**.mail.ovh.net. Sustituya la «X» por la cifra que designa al servidor de su servicio Email Pro.
+>
+> Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action} y `Email Pro`{.action} en la columna de la izquierda. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+>
 
 Abra la aplicación Correo en su dispositivo. Puede añadir una cuenta de dos formas distintas:
 
@@ -42,9 +56,9 @@ Cumplimente la información de su cuenta:
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
 |Nombre de cuenta|Introduzca un nombre que le permita diferenciar su cuenta del resto de cuentas de su aplicación Correo.|
 |Enviar mensajes con este nombre|Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes de correo desde esa dirección.|
-|Servidor de correo entrante|Introduzca el servidor **pro1.mail.ovh.net:993**.|
+|Servidor de correo entrante|Introduzca el servidor pro**X**.mail.ovh.net:993.|
 |Tipo de cuenta|Le recomendamos que utilice **IMAP4**. También puede elegir **POP3** (almacenamiento de los mensajes de correo en local en su aplicación Correo) en el menú desplegable.|
-|Servidor de correo saliente|Introduzca el servidor **pro1.mail.ovh.net:587**.|
+|Servidor de correo saliente|Introduzca el servidor pro**X**.mail.ovh.net:587.|
 
 Asegúrese de que las siguientes casillas estén marcadas:
 
@@ -63,14 +77,14 @@ Si la aplicación le pide que introduzca de forma manual algunos datos técnicos
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
-|Entrante|pro1.mail.ovh.net|Sí|993|
-|Saliente|pro1.mail.ovh.net|Sí|587|
+|Entrante|pro**X**.mail.ovh.net|Sí|993|
+|Saliente|pro**X**.mail.ovh.net|Sí|587|
 
 ### 2. Utilizar la dirección de correo electrónico
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVH ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovh.es/emails/){.external} y está disponible en la dirección <https://pro1.mail.ovh.net>. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovh.es/emails/){.external} y está disponible en la dirección [https://www.ovh.es/mail/](https://www.ovh.es/mail/). Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 ## Más información
 

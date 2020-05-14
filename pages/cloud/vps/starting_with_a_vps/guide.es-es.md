@@ -10,14 +10,14 @@ order: 1
  
 ## Objetivo
 
-Un servidor virtual privado (VPS, por sus siglas en inglés) es un servidor dedicado virtualizado. A diferencia de un alojamiento web (compartido), cuya gestión técnica recae en OVH, usted es el único responsable de la administración de su VPS.
+Un servidor virtual privado (VPS, por sus siglas en inglés) es un servidor dedicado virtualizado. A diferencia de un alojamiento web (compartido), cuya gestión técnica recae en OVHcloud, usted es el único responsable de la administración de su VPS.
 
 **Esta guía ofrece algunos consejos para que pueda empezar a utilizar su VPS recién entregado e instalado.**
 
 
 > [!warning]
 >
-> La responsabilidad sobre las máquinas que OVH pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. Esta guía le ayudará a realizar las operaciones más comunes en su VPS. 
+> La responsabilidad sobre las máquinas que OVHcloud pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. Esta guía le ayudará a realizar las operaciones más comunes en su VPS. 
 >
 > No obstante, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
 > 
@@ -25,13 +25,13 @@ Un servidor virtual privado (VPS, por sus siglas en inglés) es un servidor dedi
 
 ## Requisitos
 
-- Haber contratado un VPS en el [sitio web de OVH](https://www.ovh.es/vps/){.external}.
+- Haber contratado un VPS en el [sitio web de OVHcloud](https://www.ovhcloud.com/es/vps/){.external}.
 - Haber recibido el mensaje de correo electrónico con sus claves de acceso tras la instalación.
 
 
 ## Procedimiento
 
-Para consultar la información relacionada con su VPS, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Acceda a la sección `Cloud`{.action} y, en la columna izquierda, haga clic en `Servidores`{.action} y seleccione su VPS.
+Para consultar la información relacionada con su VPS, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Acceda a la sección `Cloud`{.action} y, en la columna izquierda, haga clic en `Servidores`{.action} y seleccione su VPS.
 
 En esta pantalla podrá consultar todo lo relacionado con su VPS. En el centro encontrará la información general; en el lado derecho, las acciones que puede realizar (con sus correspondientes botones) y, en la parte inferior, las diferentes opciones.
 
@@ -71,7 +71,7 @@ Se abrirá una ventana donde deberá elegir:
 
 > [!primary]
 >
-> Para algunas distribuciones, como Plesk o Windows, es necesario disponer previamente de una licencia, que se puede adquirir, o bien directamente en OVH, o bien a través de un revendedor. A continuación, tendrá que añadirla, o bien de forma manual, o bien desde el área de cliente. Puede gestionar sus licencias en la sección `Dedicado`{.action}, seleccionando `Licencias`{.action} en la columna izquierda. En este mismo lugar puede también contratar licencias (utilizando el botón `Contratar`{.action}) o añadir su propia licencia SPLA de Windows o SQL Server (con el botón `Añadir una licencia SPLA`{.action}).
+> Para algunas distribuciones, como Plesk o Windows, es necesario disponer previamente de una licencia, que se puede adquirir, o bien directamente en OVHcloud, o bien a través de un revendedor. A continuación, tendrá que añadirla, o bien de forma manual, o bien desde el área de cliente. Puede gestionar sus licencias en la sección `Dedicado`{.action}, seleccionando `Licencias`{.action} en la columna izquierda. En este mismo lugar puede también contratar licencias (utilizando el botón `Contratar`{.action}) o añadir su propia licencia SPLA de Windows o SQL Server (con el botón `Añadir una licencia SPLA`{.action}).
 > 
 
 En el área de cliente se mostrará una barra de progreso indicando el estado de la tarea de reinstalación, que puede tardar hasta 30 minutos.
@@ -89,7 +89,7 @@ Una vez haya instalado y protegido su VPS, es probable que también quiera prote
 
 Puede instalar dicho certificado SSL directamente en el VPS de forma manual. Para ello, consulte la documentación oficial de la distribución que utilice.
 
-Si prefiere automatizar la protección de su sitio web, OVH le ofrece la solución [SSL Gateway](https://www.ovh.es/ssl-gateway/){.external}. Para más información, consulte la [página comercial](https://www.ovh.es/ssl-gateway/){.external} o las [guías](https://docs.ovh.com/es/ssl-gateway/){.external} de la solución.
+Si prefiere automatizar la protección de su sitio web, OVHcloud le ofrece la solución [SSL Gateway](https://www.ovh.es/ssl-gateway/){.external}. Para más información, consulte la [página comercial](https://www.ovh.es/ssl-gateway/){.external} o las [guías](https://docs.ovh.com/es/ssl-gateway/){.external} de la solución.
 
 ## Más información
 

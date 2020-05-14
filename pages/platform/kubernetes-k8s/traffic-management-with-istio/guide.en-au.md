@@ -350,5 +350,5 @@ And now the `v2` of `reviews` receives all the traffic, and our Rolling Deployme
 
 ## What's next?
 
-Now you have seem some of the traffic management capabilities of Istio, you can explore other [exaples of Istio traffic management](https://istio.io/docs/tasks/traffic-management/){.external}: [fault injection](https://istio.io/docs/tasks/traffic-management/fault-injection/){.external}, [circuit breaking](https://istio.io/docs/tasks/traffic-management/circuit-breaking/){.external}, [mirroring](https://istio.io/docs/tasks/traffic-management/mirroring/){.external}... 
+Now you have seem some of the traffic management capabilities of Istio, you can explore other [examples of Istio traffic management](https://istio.io/docs/tasks/traffic-management/){.external}: [fault injection](https://istio.io/docs/tasks/traffic-management/fault-injection/){.external}, [circuit breaking](https://istio.io/docs/tasks/traffic-management/circuit-breaking/){.external}, [mirroring](https://istio.io/docs/tasks/traffic-management/mirroring/){.external}... 
 

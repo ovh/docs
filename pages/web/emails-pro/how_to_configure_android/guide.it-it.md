@@ -6,13 +6,20 @@ section: 'Configurazione di un client di posta'
 order: 5
 ---
 
-**Ultimo aggiornamento: 23/08/2018**
+**Ultimo aggiornamento: 09/04/2020**
 
 ## Obiettivo
 
 È possibile configurare un account Email Pro su diversi client di posta elettronica compatibili per permetterti di utilizzare il tuo account email dal dispositivo che preferisci.
 
 **Questa guida ti mostra come configurare un account Email Pro su Android tramite l’applicazione Gmail.**
+
+> [!warning]
+>
+> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione; garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+> 
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio.  Per maggiori informazioni consulta la sezione “Per saperne di più”.
+> 
 
 ## Prerequisiti
 
@@ -28,6 +35,13 @@ order: 5
 ## Procedura
 
 ### Step 1: aggiungi il tuo account
+
+> [!primary]
+>
+> Nel nostro esempio abbiamo utilizzato come nome del server "pro**X**.mail.ovh.net", dove "X" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
+>
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
+> 
 
 Sulla schermata Home del tuo dispositivo clicca sull’applicazione `Gmail`{.action}. L’aggiunta di un account si può effettuare in due modi diversi:
 
@@ -49,7 +63,7 @@ Imposta i parametri del server in entrata.
 |---|---| 
 |Nome utente (server posta in uscita)|Inserisci l’indirizzo email completo.|  
 |Password|Digita la password associata all’account.|
-|Server|Inserisci il server 'pro1.mail.ovh.net'.|
+|Server|Inserisci il server 'pro**X**.mail.ovh.net'.|
 
 Clicca su `Avanti`{.action} e inserisci le impostazioni del server in uscita. 
 
@@ -58,7 +72,7 @@ Clicca su `Avanti`{.action} e inserisci le impostazioni del server in uscita.
 |Richiedere una connessione |Assicurati che il pulsante sia selezionato.|
 |Nome utente (server posta in uscita)|Inserisci l’indirizzo email completo.|  
 |Password|Digita la password associata all’account.|
-|Server SMTP|Inserisci il server 'pro1.mail.ovh.net'.|
+|Server SMTP|Inserisci il server 'pro**X**.mail.ovh.net'.|
 
 Clicca su `Avanti`{.action}. Se le informazioni inserite sono corrette, l’accesso all’account andrà a buon fine.
 
@@ -72,14 +86,14 @@ Se devi inserire manualmente dei campi tecnici nelle preferenze del tuo account,
 
 |Tipo di server |Nome del server|Tipo di sicurezza|Porta|
 |---|---|---|---|
-|In entrata|pro1.mail.ovh.net|SSL/TLS|993|
-|In uscita|pro1.mail.ovh.net|STARTTLS|587|
+|In entrata|pro**X**.mail.ovh.net|SSL/TLS|993|
+|In uscita|pro**X**.mail.ovh.net|STARTTLS|587|
 
 ### Step 2: utilizza il tuo account
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVH propone un’applicazione Web con [funzionalità collaborative](https://www.ovh.it/emails/){.external}, disponibile alla pagina [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external} e accessibile con le credenziali del tuo indirizzo email.
+OVHcloud propone un’applicazione Web con [funzionalità collaborative](https://www.ovh.it/emails/){.external}, disponibile alla pagina [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} e accessibile con le credenziali del tuo indirizzo email.
 
 ## Per saperne di più
 
@@ -87,4 +101,4 @@ OVH propone un’applicazione Web con [funzionalità collaborative](https://www.
 
 [Configurare un account Exchange su Android tramite l’applicazione Gmail](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_configurazione_di_android/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}. 
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}. 

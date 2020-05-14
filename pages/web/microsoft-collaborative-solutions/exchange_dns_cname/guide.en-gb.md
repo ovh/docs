@@ -2,7 +2,8 @@
 title: 'Creating a CNAME record to add an associated domain'
 slug: exchange_20132016_how_to_add_a_cname_record
 excerpt: 'Find out about the purpose of a CNAME record, and how to add one at OVH'
-section: 'Getting started'
+section: 'Getting started with Exchange'
+order: 5
 ---
 
 **Last updated 26th March 2019**
@@ -18,7 +19,7 @@ When you add a domain name to your email solution, you may be required to config
 - an OVH email solution
 - a domain name added to your email solution requesting the addition of a CNAME record
 - the right to modify your domain name’s configuration (via its DNS zone)
-- access to the `Web`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the `Web`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 

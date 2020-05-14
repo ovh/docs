@@ -5,7 +5,7 @@ excerpt: 'Find out how to manage users via your OVHcloud account'
 section: 'Getting started'
 ---
 
-**Last updated 21st February 2020**
+**Last updated 16th April 2020**
 
 ## Objective
 
@@ -50,10 +50,10 @@ The holder of the account xx11111-ovh always has **administrator** access, so th
 
 ### Step 2: Add a user.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `your name`{.action} (1) in the top right-hand corner, then click `My account`{.action} (2).
-Next, click on the `User management`{.action}tab (3), and `Add a user`{.action} (4).
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `your name`{.action} (1) in the top right-hand corner, then click your initials (2).
+Next, click on the `User management`{.action} tab (3), and `Add a user`{.action} (4).
 
-![users-management](images/usersmanagement1.png){.thumbnail}
+![users-management](images/hubusers.png){.thumbnail}
 
 A window will pop up, and you will need to complete the required fields. Click `Confirm`{.action} to create the user.
 

@@ -74,17 +74,17 @@ Wenn Ihr Passwort gestohlen wurde, empfehlen wir Ihnen nachdrücklich, [es schne
 
 #### Von Ihrem OVHcloud Kundencenter aus
 
-- Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie auf Ihren Namen oben rechts und wählen Sie dann `Mein Account`{.action}.
+- Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet sind, klicken Sie oben rechts auf Ihren Namen und dann auf Ihre Initialen.
 
-![ovh-passwort-verwalten](images/account-password-modif-manager-step1.png){.thumbnail}
+![manage-ovh-password](images/newhub2.png){.thumbnail}
 
 - Klicken Sie danach auf `Sicherheit`{.action}, dann auf `Ändern`{.action} rechts von „Passwort“.
 
-![ovh-passwort-verwalten](images/account-password-modif-manager-step2.png){.thumbnail}
+![manage-ovh-password](images/manage-password02.png){.thumbnail}
 
 - Bestätigen Sie die Passwortänderung.
 
-![ovh-passwort-verwalten](images/account-password-modif-manager-step3.png){.thumbnail}
+![manage-ovh-password](images/manage-password03.png){.thumbnail}
 
 - Sie erhalten danach eine E-Mail an die für den Kontakt zu Ihnen hinterlegte E-Mail-Adresse, um die Passwortänderung zu bestätigen. Lesen Sie die Anweisungen bitte sorgfältig durch, und klicken Sie auf den Link in der E-Mail. Dieser leitet Sie weiter auf die Seite für Passwortänderungen. Geben Sie im ersten Feld Ihre Kennung an, im zweiten Feld das neue Passwort und bestätigen Sie dieses im dritten Feld.
 

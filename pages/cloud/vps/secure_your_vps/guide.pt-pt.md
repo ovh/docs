@@ -1,21 +1,21 @@
 ---
-title: Como proteger um VPS (Sistema Linux)
+title: 'Como proteger um VPS (Sistema Linux)'
 slug: como-proteger-vps
-section: Primeiros passos
+section: 'Primeiros passos'
 ---
 
 **Última Atualização 02/01/2018**
 
 ## Sumário
 
-O VPS OVH inclui a instalação do sistema operativo mas não tem nenhum protocolo de segurança predefinido. Cabe ao cliente implementar e configurar as medidas de segurança adequadas ao tipo de utilização do VPS.
+O VPS OVHcloud inclui a instalação do sistema operativo mas não tem nenhum protocolo de segurança predefinido. Cabe ao cliente implementar e configurar as medidas de segurança adequadas ao tipo de utilização do VPS.
 
 **Este guia fornece algumas orientações para proteger o seu servidor virtual.**
 
  
 > [!warning]
 >
-> A utilização e gestão das soluções VPS da OVH são da responsabilidade do cliente. A OVH não tem permissões de acesso aos VPS. O cliente é o único responsável pela segurança do serviço. Este guia explica como implementar algumas de medidas para tornar o seu sistema mais seguro. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste guia intitulada: «Quer saber mais?»
+> A utilização e gestão das soluções VPS da OVHcloud são da responsabilidade do cliente. A OVHcloud não tem permissões de acesso aos VPS. O cliente é o único responsável pela segurança do serviço. Este guia explica como implementar algumas de medidas para tornar o seu sistema mais seguro. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste guia intitulada: «Quer saber mais?»
 > 
 
 
@@ -189,9 +189,9 @@ iptables -L
 
 Como tal, recomendamos a criação e ajustamento das regras da firewall ao tipo de utilização do seu VPS. Para mais informação sobre as opções de configuração, consulte informação relativa funcionamento deste serviço nos manuais oficiais do sistema operativo instalado.
 
-### Configurar a Firewall Network da OVH
+### Configurar a Firewall Network da OVHcloud
 
-O serviço OVH inclui uma firewall para proteger o acesso à infraestrutura designada Firewall Network. A configuração deste serviço permite o bloqueio de protocolos antes mesmo de chegarem ao servidor.
+O serviço OVHcloud inclui uma firewall para proteger o acesso à infraestrutura designada Firewall Network. A configuração deste serviço permite o bloqueio de protocolos antes mesmo de chegarem ao servidor.
 
 Para mais informação, por favor consulte o [Guia Firewall Network](https://docs.ovh.com/pt/dedicated/firewall-network/){.external}.
 
@@ -199,16 +199,16 @@ Para mais informação, por favor consulte o [Guia Firewall Network](https://doc
 
 A segurança de um sistema também inclui a proteção dos dados.
 
-A OVH disponibiliza três opções de backup:
+A OVHcloud disponibiliza três opções de backup:
 
 - Opção `Snapshot`: criação manual de uma imagem instantânea (snapshot) da sua máquina virtual (disponível para os serviços VPS SSD. Cloud e Cloud RAM).
 - Opção `Backup Automático`: backup diário do VPS (não inclui backup de discos adicionais), exportado e replicado três vezes antes de estar disponível na Área de Cliente (disponível para os serviços VPS Cloud e Cloud RAM);
 - Opção `Backup Storage`: espaço partilhado que permite o armazenamento e a recuperação manual dos ficheiros. Protocolos compatíveis com o Backup Storage: FTP, NFS e CIFS. A compatibilidade com estes protocolos permite a utilização do serviço com todos os sistemas operativos. Com este serviço, os dados ficam protegidos em caso de interrupção do serviço (disponível para VPS Cloud e Cloud RAM).
 
-Para mais informações sobre as soluções de backup para VPS, aceda a: <https://www.ovh.pt/vps/backup-vps.xml>.
+Para mais informações sobre as soluções de backup para VPS, aceda a: <https://www.ovhcloud.com/pt/vps/>.
 
 ## Para saber mais
 
 Consulte o [Guia sobre a Firewall Network](https://docs.ovh.com/pt/dedicated/firewall-network/){.external}.
 
-Ou fale com a comunidade de utilizadores OVH: <https://community.ovh.com/en/>
+Ou fale com a comunidade de utilizadores OVHcloud: <https://community.ovh.com/en/>

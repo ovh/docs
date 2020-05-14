@@ -5,7 +5,7 @@ slug: cambiare-tipo-fatturazione-public-cloud
 section: 'Gestione del progetto'
 ---
 
-**Ultimo aggiornamento: 24/08/2018**
+**Ultimo aggiornamento 06/12/2019**
 
 ## Obiettivo
 
@@ -15,30 +15,35 @@ Creando un’istanza Public Cloud, si può scegliere tra fatturazione oraria o m
 
 > [!warning]
 >
-> Non è possibile passare da una fatturazione mensile ad una oraria. Per poterlo fare, è necessario eliminare l’istanza a fatturazione mensile e crearne una nuova a fatturazione oraria. 
+> Non è possibile passare da una fatturazione mensile ad una oraria.  Per poterlo fare, è necessario eliminare l’istanza a fatturazione mensile e crearne una nuova a fatturazione oraria.  In questo caso, ti consigliamo di seguire questa procedura:
+>
+>- Crea uno snapshot della tua istanza
+>
+>- Crea una nuova istanza basata sullo snapshot effettuato
+>
+>- Elimina l’istanza a fatturazione mensile
 >
 
 
 ## Prerequisiti
 
-- Aver creato un’[istanza Public Cloud](https://www.ovh.it/public-cloud/istanze/){.external}
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Aver creato un’[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}.
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 
 ## Procedura
 
-Nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} seleziona l’istanza per la quale desideri modificare la modalità di fatturazione e apri il relativo menu opzioni. A questo punto clicca sul pulsante `Passa al forfait mensile`{.action}:
+Nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} seleziona l’istanza per la quale desideri modificare la modalità di fatturazione e clicca sui tre puntini a destra per aprire il relativo menu opzioni. A questo punto clicca sul pulsante `Passa al forfait mensile`{.action}:
 
-![Modifica del calcolo](images/1_swich_to_monthly_sub.png){.thumbnail}
+![Change billing calculation](images/switch.png){.thumbnail}
 
-Non rimane quindi che confermare la modifica:
+È necessario confermare la modifica:
 
-![Conferma modifica di calcolo](images/2_switch_to_monthly_confirm.png){.thumbnail}
+![Confirm billing calculation change](images/switch1.png){.thumbnail}
 
-
-In seguito a questa modifica, verrà emessa una fattura per l'ammontare corrispondente al numero dei giorni rimanenti fino alla fine del mese. Pertanto, la fattura finale conterrà il costo delle ore dell’istanza del mese trascorso in configurazione oraria ed il costo del mese entrante in configurazione mensile.
+In seguito a questa modifica, verrà emessa una fattura per l’ammontare corrispondente al numero dei giorni rimanenti fino alla fine del mese. Pertanto, la fattura finale conterrà il costo delle ore dell’istanza del mese trascorso in configurazione oraria ed il costo del mese entrante in configurazione mensile.
 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

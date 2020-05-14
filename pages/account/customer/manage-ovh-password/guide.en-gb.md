@@ -70,17 +70,17 @@ If your password has been compromised, we strongly recommend [changing it as soo
 
 #### Via the OVHcloud Control Panel.
 
-- Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click your name in the top right-hand corner, then click `My account`{.action}.
+- Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click your name in the top right-hand corner, then click on your initials.
 
-![manage-ovh-password](images/account-password-modif-manager-step1.png){.thumbnail}
+![manage-ovh-password](images/newhub2.png){.thumbnail}
 
 - Next, click `Security`{.action}, then `Modify`{.action} to the right of “Password”.
 
-![manage-ovh-password](images/account-password-modif-manager-step2.png){.thumbnail}
+![manage-ovh-password](images/manage-password02.png){.thumbnail}
 
 - Confirm that you want to change the password.
 
-![manage-ovh-password](images/account-password-modif-manager-step3.png){.thumbnail}
+![manage-ovh-password](images/manage-password03.png){.thumbnail}
 
 - An email is then sent to the account’s contact email address, to confirm the password change. Please read the instructions in the email carefully, then click on the link. The link will redirect you to the page for changing your password. Enter your NIC handle in the first field, enter your new password into the second field, and re-enter your new password in the third field.
 

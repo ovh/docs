@@ -1,83 +1,112 @@
 ---
-title: Aktivierung und Verwaltung Ihres OVH SharePoint
-excerpt: Aktivierung und Verwaltung Ihres OVH SharePoint
+title: 'OVHcloud SharePoint aktivieren und verwalten'
+excerpt: 'Erfahren Sie hier, wie Sie einen OVHcloud SharePoint Dienst bestellen und konfigurieren'
 slug: aktivierung_und_verwaltung_ihres_ovh_sharepoint
 legacy_guide_number: g2249
+section: Sharepoint
+order: 1
 ---
 
+**Letzte Aktualisierung am 15.04.2020**
 
-## 
-Voraussetzung: Sie verwenden das Angebot Hosted Exchange 2013 oder 2016
-Loggen Sie sich über folgenden Link in Ihr OVH Kundencenter ein:
-[OVH Kundencenter](https://www.ovh.com/manager/web/login/).
+## Ziel
 
-Wählen Sie dann im Menü links die Kategorie Microsoft aus und klicken Sie auf Eine SharePoint Plattform bestellen.
+Mit einer Microsoft SharePoint Lösung können Sie während Ihrer kollaborativen Arbeit von einem gemeinsam genutzten Speicherplatz profitieren.
 
-![](images/img_4473.jpg){.thumbnail}
-Im nächsten Schritt müssen Sie den entsprechenden Hosted Exchange Server auswählen und eine gültige E-Mail-Adresse auf diesem Service angeben.
+**In dieser Anleitung wird erklärt, wie Sie eine SharePoint Plattform bestellen und konfigurieren.**
 
-Klicken Sie dann auf Aktivierunganfrage starten
+## Voraussetzungen
 
-![](images/img_4474.jpg){.thumbnail}
-Sie werden dann auf unsere Seite weitergeleitet, um Ihre Bestellung abzuschließen.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben bereits einen [OVHcloud Exchange](https://www.ovh.de/emails/) Dienst eingerichtet (optional).
 
-![](images/img_4475.jpg){.thumbnail}
-Klicken Sie auf Fortfahren, um die SharePoint Verträge zu validieren und Ihren Bestellschein zu erstellen.
+## In der praktischen Anwendung
 
-Nach der Bezahlung wird Ihre SharePoint Dienstleistung innerhalb von maximal vier Stunden bereitgestellt.
+### Schritt 1: Eine SharePoint Plattform bestellen
 
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager). Klicken Sie im Bereich `Web`{.action} links in der Menüleiste auf `Bestellen`{.action} und dann auf `SharePoint`{.action}.
 
-## 
-Wenn Ihr Service verfügbar ist, müssen Sie ihn noch aktivieren.
+Ihnen stehen zwei Arten von Plattformen zur Verfügung:
 
-Sie erhalten eine E-Mail mit der Bestätigung, dass die Aktivierung verfügbar ist:
-[OVH Info] Konfiguration Ihres Service Microsoft SharePoint
+| Geteilter SharePoint                                                                                                                      	| SharePoint Standalone                                                                                                                                                                       	|
+|-----------------------------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| ![sharepoint](images/order-manage-sharepoint-02.png){.thumbnail}                                                                        	| ![sharepoint](images/order-manage-sharepoint-03.png){.thumbnail}                                                                                                                            	|
+| Wenn Sie bereits einen Hosted Exchange Dienst in Ihrem Kunden-Account haben, können Sie dessen Benutzer der neuen SharePoint Plattform zuordnen. Überprüfen Sie die Accounts, denen Sie eine SharePoint-Lizenz zuordnen möchten 	| Wenn Sie nicht über einen Hosted Exchange Dienst verfügen oder eine unabhängige SharePoint Plattform wünschen, bestellen Sie SharePoint Standalone. <br>Legen Sie die Anzahl der gewünschten Lizenzen basierend auf der Anzahl der Benutzer fest.	|
 
-Sie finden diese E-Mail auch in Ihrem Kundencenter unter Mein Account und Empfangene E-Mails.
+Wenn Sie Ihre Wahl getroffen haben, klicken Sie auf `Dienst bestellen`{.action}, um zum Bestellvorgang zu gelangen.
 
-![](images/img_4494.jpg){.thumbnail}
+### Schritt 2: Die SharePoint Plattform aktivieren
 
+Sobald Ihre Bestellung bestätigt und bezahlt wurde, erhalten Sie eine Bestätigungsmail an die hinterlegte E-Mail-Adresse in Ihrem Kunden-Account. Diese bestätigt, dass der Dienst für die Konfiguration bereit ist.
 
-## Abschluss der Aktivierung
-Um die Aktivierung abzuschließen, wählen Sie in Ihrem Kundencenter im Menü links die Kategorie Microsoft aus und klicken Sie dann auf SharePoint.
+Um die E-Mail einzusehen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, klicken Sie auf Ihren Namen oben rechts und danach auf Ihre Initialen. Gehen Sie zum Tab `Empfangene E-Mails`{.action} und suchen Sie nach der E-Mail mit dem Betreff:
 
-![](images/img_4477.jpg){.thumbnail}
-Nun müssen Sie die URL Ihres SharePoint angeben. Diese wird dann überprüft. Sobald sie verfügbar ist, müssen Sie diesen Schritt bestätigen.
+> **\[xx-11111-ovh] Konfigurieren Sie Ihren Microsoft SharePoint Dienst!**
 
-![](images/img_4478.jpg){.thumbnail}
-Wenn die URL validiert ist, müssen Sie nur noch abwarten, bis die Aktivierung abgeschlossen ist. Das wird nicht mehr als vier Stunden in Anspruch nehmen.
+Um mit dieser Konfiguration zu beginnen, gehen Sie zum `Web`{.action}-Bereich Ihres Kundencenters. Klicken Sie links im Menü auf `Microsoft`{.action}, dann auf `SharePoint`{.action} und wählen Sie die entsprechende SharePoint Plattform aus.
 
+Definieren Sie den Namen Ihrer Plattform im Feld „SharePoint URL“ und klicken Sie danach auf `URL bestätigen`{.action}
 
-## 
-Die Verwaltung Ihres SharePoint Service erfolgt ganz einfach über Ihr OVH Kundencenter, im Menü links unter der Kategorie Microsoft - SharePoint.
+![sharepoint](images/order-manage-sharepoint-04.png){.thumbnail}  
 
-![](images/img_4477.jpg){.thumbnail}
-Im Tab Allgemeine Informationen:
+> [!warning]
+>
+> Nach der Bestätigung kann der Name der Plattform nicht mehr geändert werden.
 
+### Schritt 3: Die SharePoint Plattform konfigurieren
 
-- Die Referenz Ihres Service und des zugehörigen Exchange Servers.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und klicken Sie im Bereich `Web`{.action} links in der Menüleiste auf `Microsoft`{.action} und dann auf `SharePoint`{.action}. Wählen Sie den betreffenden SharePoint Dienst aus.
 
-- Zugang: Hier finden Sie die URL Ihrer Dienstleistung und den zu SharePoint gehörigen Exchange Server.
+#### **SharePoint Standalone**
 
-- Quotas: Hier finden Sie alle Informationen zu Ihrem Speicherplatz.
+Diese Plattform ist unabhängig. Sie müssen zuerst einen Domainnamen zuordnen, bevor Sie Ihre Benutzer konfigurieren können.
 
+##### ***Domain hinzufügen***
 
+Gehen Sie zum Tab `Domains`{.action} und klicken Sie auf `Domain hinzufügen`{.action}. Wählen Sie eine Domain aus, die Sie in Ihrem Kunden-Account verwalten, oder geben Sie einen externen Domainnamen ein, über den Sie verfügen. 
 
-![](images/img_4481.jpg){.thumbnail}
-Im Tab Benutzer:
+- Wenn Sie einen Domainnamen innerhalb derselben Kundenkennung auswählen, wird dieser automatisch überprüft. Sie müssen lediglich Ihre Benutzer konfigurieren.
+ 
+- Wenn Sie einen externen Domainnamen auswählen, muss in der DNS-Zone des Domainnamens ein Eintrag vom Typ CNAME hinzugefügt werden, um ihn auf der SharePoint Plattform zu überprüfen. Der CNAME-Eintrag kann abgerufen werden, indem Sie auf das Informationssymbol neben „Validierung der Domain“ klicken.
 
+![sharepoint](images/order-manage-sharepoint-05.png){.thumbnail}
 
-- Administrator-Rechte wiederherstellen:  ermöglicht die Wiederherstellung der Administrator-Rechte für einen Benutzer, wenn es über das SharePoint Interface zu einem Fehler gekommen ist.
+##### Benutzer konfigurieren
 
+Gehen Sie zum Tab `Benutzer`{.action}, klicken Sie auf `...`{.action} rechts in der Zeile und danach auf `Account bearbeiten`{.action}
 
-Standardmäßig ist das bei der Bestellung angegebene Konto ein klassischer Benutzer. Für die Zuweisung von Administrator-Rechten klicken Sie auf das kleine Zahnrad rechts neben dem Account.
+![sharepoint](images/order-manage-sharepoint-06.png){.thumbnail} 
 
-Über dieses Menü können Sie auch das Passwort ändern.
+Füllen Sie das angezeigte Fenster mit den Benutzerinformationen aus und klicken Sie auf `Bestätigen`{.action}.
 
-Wenn Sie einen weiteren SharePoint Benutzer hinzufügen möchten, klicken Sie auf das kleine Zahnrad rechts neben dem gewünschten Exchange Account und dann auf "SharePoint aktivieren".
+Um auf der SharePoint Plattform Administratorrechte zu erhalten, klicken Sie auf `...`{.action} rechts in der Zeile und danach auf `Administrator-Rechte aktivieren`{.action}
 
-Hierdurch kaufen Sie eine weitere Lizenz.
+#### **Geteilter SharePoint**
 
-![](images/img_4495.jpg){.thumbnail}
-Wenn SharePoint im Read-only-Modus verwendet werden soll, muss kein neuer Benutzer aktiviert werden. Alle mit der Plattform verbundenen Exchange Accounts können standardmäßig im Read-only-Modus auf SharePoint zugreifen.
+Diese Art Plattform ist bereits mit der Exchange Plattform verknüpft, die Sie bei der Bestellung ausgewählt haben, sodass kein Domainname zugeordnet werden kann.
 
+##### Benutzer konfigurieren
+
+Gehen Sie zum Tab `Benutzer`{.action} Ihrer Plattform, um alle Exchange Accounts anzuzeigen, die von einer SharePoint Lizenz profitieren können.
+
+![sharepoint](images/order-manage-sharepoint-07.png){.thumbnail} 
+
+Die Spalte `Konto aktiviert` gibt an, ob der Exchange Account über eine SharePoint Lizenz verfügt. 
+
+> [!primary]
+>
+> Wenn Sie eine Lizenz für einen Account aktivieren möchten, der noch keine besitzt, klicken Sie auf `...`{.action} rechts neben dem Konto und danach auf `SharePoint aktivieren`{.action}.
+
+Anfangs verfügt ein lizenziertes Konto nicht über Administrator-Rechte. Um diese zu aktivieren, klicken Sie auf `...`{.action} rechts neben dem Konto und danach auf `Administrator-Rechte aktivieren`{.action}.
+
+![sharepoint](images/order-manage-sharepoint-08.png){.thumbnail} 
+
+#### **Administratorrechte wiederherstellen**
+
+Auf beiden Varianten von SharePoint Plattformen finden Sie die Schaltfläche `Administrator-Rechte wiederherstellen`{.action} im Tab `Benutzer`. Damit können die Administrator-Rechte der Plattform im Falle eines Missbrauchs über die SharePoint Oberfläche wiederhergestellt werden.
+
+![sharepoint](images/order-manage-sharepoint-09.png){.thumbnail}
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

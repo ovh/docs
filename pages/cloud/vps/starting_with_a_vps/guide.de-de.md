@@ -1,8 +1,8 @@
 ---
-title: Erste Schritte mit einem VPS
-excerpt: Lernen Sie die Grundlagen der Verwendung eines VPS
+title: 'Erste Schritte mit einem VPS'
+excerpt: 'Lernen Sie die Grundlagen der Verwendung eines VPS'
 slug: erste-schritte-mit-einem-vps
-section: Erste Schritte
+section: 'Erste Schritte'
 order: 1
 ---
 
@@ -10,20 +10,20 @@ order: 1
  
 ## Einleitung
 
-Ein Virtual Private Server oder VPS ist ein virtualisierter Dedicated Server. Im Gegensatz zum Webhosting (auch „Shared Hosting" genannt), bei dem die technische Verwaltung von OVH geleistet wird, sind Sie allein für die Verwaltung Ihres VPS verantwortlich. 
+Ein Virtual Private Server oder VPS ist ein virtualisierter Dedicated Server. Im Gegensatz zum Webhosting (auch „Shared Hosting" genannt), bei dem die technische Verwaltung von OVHcloud geleistet wird, sind Sie allein für die Verwaltung Ihres VPS verantwortlich. 
 
 **In dieser Anleitung finden Sie einige Anhaltspunkte zur Verwaltung Ihres neuen und frisch installierten VPS.**
 
 
 > [!warning]
 >
-> OVH stellt Ihnen Maschinen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir keinerlei Administrator-Aufgaben für diese Server übernehmen. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit Ihrer Anlage zu gewährleisten. Wir stellen Ihnen diesen Leitfaden zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Server-Verwaltungsaufgaben zu helfen.  Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben.  Genauere Informationen finden Sie im Teil "Weiterführende Informationen" dieser Anleitung. 
+> OVHcloud stellt Ihnen Maschinen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir keinerlei Administrator-Aufgaben für diese Server übernehmen. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit Ihrer Anlage zu gewährleisten. Wir stellen Ihnen diesen Leitfaden zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Server-Verwaltungsaufgaben zu helfen.  Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben.  Genauere Informationen finden Sie im Teil "Weiterführende Informationen" dieser Anleitung. 
 > 
 
 
 ## Voraussetzungen
 
-- Sie haben einen VPS aus dem Angebot der [OVH Website](https://www.ovh.de/vps/){.external} gebucht.
+- Sie haben einen VPS aus dem Angebot der [OVHcloud Website](https://www.ovhcloud.com/de/vps/){.external} gebucht.
 - Sie haben nach der Installation (Betriebssystem wird bei der Bestellung ausgewählt) eine E-Mail mit Ihren Zugangsdaten erhalten.
 
 
@@ -67,7 +67,7 @@ Es wird ein Fenster geöffnet, in dem Sie Folgendes auswählen:
 
 > [!primary]
 >
-> Für einige Distributionen wie Plesk oder Windows benötigen Sie vor der Installation eine Lizenz, die Sie bei OVH oder einem Reseller erwerben können. Diese müssen Sie dann manuell oder über Ihr Kundencenter einbinden. Die Verwaltung Ihrer Lizenzen geschieht in dem Bereich `Dedicated`{.action} unter `Lizenzen`{.action}.
+> Für einige Distributionen wie Plesk oder Windows benötigen Sie vor der Installation eine Lizenz, die Sie bei OVHcloud oder einem Reseller erwerben können. Diese müssen Sie dann manuell oder über Ihr Kundencenter einbinden. Die Verwaltung Ihrer Lizenzen geschieht in dem Bereich `Dedicated`{.action} unter `Lizenzen`{.action}.
 > Auf dieser Seite können Sie außerdem Lizenzen bestellen (Button rechts `Bestellen`{.action}) oder Ihre eigene Windows- oder SQL-Server-SPLA-Lizenz hinzufügen (Button rechts `Eine SPLA-Lizenz hinzufügen`{.action}).
 > 
 
@@ -87,7 +87,7 @@ Sobald Ihr VPS installiert und gesichert ist, können Sie Ihre Domain und Ihre W
 
 Sie können das SSL-Zertifikat manuell direkt auf Ihrem VPS installieren. Bitte beachten Sie dazu die offizielle Dokumentation der von Ihnen verwendeten Distribution.
 
-Sie können aber auch die automatische Lösung von OVH nutzen: [SSL Gateway](https://www.ovh.de/ssl-gateway/){.external}. Weitere Informationen zu SSL Gateway finden Sie auf der [Produktseite](https://www.ovh.de/ssl-gateway/){.external} oder in der zugehörigen [Dokumentation](https://docs.ovh.com/de/ssl-gateway/verwendung-von-ssl-gateway/){.external} .
+Sie können aber auch die automatische Lösung von OVHcloud nutzen: [SSL Gateway](https://www.ovh.de/ssl-gateway/){.external}. Weitere Informationen zu SSL Gateway finden Sie auf der [Produktseite](https://www.ovh.de/ssl-gateway/){.external} oder in der zugehörigen [Dokumentation](https://docs.ovh.com/de/ssl-gateway/verwendung-von-ssl-gateway/){.external} .
 
 
 ## Weiterführende Informationen

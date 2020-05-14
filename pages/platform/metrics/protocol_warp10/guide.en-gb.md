@@ -22,12 +22,12 @@ order: 7
 
 Being based on Warp10, we are first class citizens for it. **All functions and calls are supported**:
 
-| API                                                              | Method | Supported                    |
-| ---------------------------------------------------------------- | ------ | ---------------------------- |
-| [/api/v0/update](http://www.warp10.io/apis/ingress/){.external}  | POST   | <i class="fas fa-check"></i> |
-| [/api/v0/fetch](http://www.warp10.io/apis/fetch/){.external}     | GET    | <i class="fas fa-check"></i> |
-| [/api/v0/exec](http://www.warp10.io/apis/warpscript/){.external} | POST   | <i class="fas fa-check"></i> |
-| [/api/v0/delete](http://www.warp10.io/apis/delete/){.external}   | GET    | <i class="fas fa-check"></i> |
+| API                                                                                                                                       | Method | Supported                    |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------------------- |
+| [/api/v0/update](https://www.warp10.io/content/03_Documentation/03_Interacting_with_Warp_10/03_Ingesting_data/01_Ingress/){.external}     | POST   | <i class="fas fa-check"></i> |
+| [/api/v0/fetch](https://www.warp10.io/content/03_Documentation/03_Interacting_with_Warp_10/04_Fetching_data/01_Fetching_data/){.external} | GET    | <i class="fas fa-check"></i> |
+| [/api/v0/exec](https://www.warp10.io/content/03_Documentation/03_Interacting_with_Warp_10/09_Analysing_data/){.external}                  | POST   | <i class="fas fa-check"></i> |
+| [/api/v0/delete](https://www.warp10.io/content/03_Documentation/03_Interacting_with_Warp_10/07_Deleting_data/){.external}                 | GET    | <i class="fas fa-check"></i> |
 
 ### How to Push data
 
@@ -37,7 +37,7 @@ To push data to the platform, you will need a **WRITE TOKEN**. Warp10 supports a
 
 #### Push data using curl
 
-The full documentation is available at [http://www.warp10.io/apis/ingress/](http://www.warp10.io/apis/ingress/){.external}
+The full documentation is available at [https://www.warp10.io/content/03_Documentation/03_Interacting_with_Warp_10/03_Ingesting_data/01_Ingress/](https://www.warp10.io/content/03_Documentation/03_Interacting_with_Warp_10/03_Ingesting_data/01_Ingress/){.external}.
 
 Write a file called `warp.data` with this included:
 
@@ -102,11 +102,11 @@ Here's a WarpScript example:
 [ SWAP mapper.rate 1 0 0 ] MAP                      // Consumption being a counter, compute the rate
 ```
 
-To help you get started, we've created a "Tour" available at [http://tour.warp10.io](http://tour.warp10.io){.external}.
+To help you get started, we've created a "Tour" available at [https://tour.warp10.io/](https://tour.warp10.io/){.external}.
 
 #### How to query data with curl
 
-The full documentation is available at [http://www.warp10.io/apis/warpscript/](http://www.warp10.io/apis/warpscript/){.external}.
+The full documentation is available at [https://www.warp10.io/doc/reference](https://www.warp10.io/doc/reference){.external}.
 
 Write a file called `script.mc2` with this content:
 
@@ -120,7 +120,7 @@ Write a file called `script.mc2` with this content:
 Then, you can execute the query using `curl`:
 
 ```shell-session
-$ curl -X POST @script.mc2 'https://warp10.gra1.metrics.ovh.net/api/v0/exec'
+$ curl -X POST --data-binary @script.mc2 'https://warp10.gra1.metrics.ovh.net/api/v0/exec'
 ```
 
 ### How to delete my data

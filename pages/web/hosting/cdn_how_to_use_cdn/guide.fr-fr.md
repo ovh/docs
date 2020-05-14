@@ -6,7 +6,7 @@ excerpt: 'Améliorez votre site en accélérant son chargement sur votre héberg
 section: 'Optimiser son site'
 ---
 
-**Dernière mise à jour le 10/03/2020**
+**Dernière mise à jour le 19/03/2020**
 
 ## Objectif
 
@@ -63,6 +63,34 @@ Le CDN utilise le principe des IP anycast. Vous n'interrogerez pas le même serv
 Concernant le SEO (référencement sur les moteurs de recherche), la vitesse d'affichage de votre site web a plus d'importance que la géolocalisation de l'adresses IP de votre hébergement.
 
 
+### Comment mettre en cache mes fichiers dans le CDN ?
+
+**En utilisant un CMS**
+
+Les principaux CMS distribuent de nombreux plugins permettant de configurer la mise en cache des fichiers statiques afin qu'ils soient pris en compte automatiquement par le CDN. D'autres permettent la configuration automatique des fichiers statiques en activant la mise en cache intégrée au CMS. Pour plus d'informations, référez-vous à la documentation officielle du CMS que vous utilisez ou de l'éditeur du plugin.
+
+**Sans utiliser de CMS**
+
+Si vous n'utilisez pas de CMS, vous pouvez aussi bénéficier du cache du CDN. Pour cela, vous devez ajouter des headers sur les requêtes HTTP. Il existe plusieurs techniques permettant d'ajouter ces headers. L'une des plus simples est de définir des régles au sein d'un fichier .htaccess en fonction des extensions de fichiers.
+
+```htaccess
+1. # Cache des images durant 1 semaine
+2. <FilesMatch "\.(jpg|jpeg|png|gif)$">
+3. Header set Cache-Control "max-age=604800, public"
+4. </FilesMatch>
+5. 
+6. # Cache des javascript et CSS durant 1 mois
+7. <FilesMatch "\.(js|css)$">
+8. Header set Cache-Control "max-age=2592000"
+9. </FilesMatch>
+```
+> [!warning]
+>
+> La mise en cache via les headers HTTP permet la mise en cache au sein du CDN mais aussi au sein du navigateur de vos utilisateurs. Ainsi, pour éviter que vos visiteurs ne visualisent une version en cache trop ancienne, il est recommandé de modifier les noms des fichiers à chaque nouvelle version.
+> 
+
+
+
 ### Vider le cache du CDN
 
 Il est parfois utile de vider le cache du CDN, notamment lorsque vous modifiez vos fichiers statiques. Par exemple lors de la mise en production d'une nouvelle version de votre site. Dans ce cas, vous pouvez vider totalement le cache du CDN.
@@ -95,6 +123,7 @@ Cliquez sur `Valider`{.action} pour confirmer la résiliation.
 >
 > Un e-mail contenant la procédure de fermeture de votre CDN vous sera envoyé, il est nécessaire de suivre les instructions de celui-ci afin de confirmer ou annuler la demande. 
 > 
+
 
 ### Vérifier que votre CDN est en service
 
@@ -136,7 +165,6 @@ X-IPLB-Instance: 12345
 ```
 
 L'absence de la mention « *X-CDN* » indique que vous ne passez pas à travers le CDN.
-
 
 ## Aller plus loin
 

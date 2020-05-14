@@ -1,172 +1,144 @@
 ---
-title: How to use automatic renewal at OVH
-slug: how_to_use_automatic_renewal_at_ovh
-xcerpt: You can now renew your services automatically. First you need to choose a payment method and then choose the services that you wish to automatically renew.
-section: Payment preferences
+title: 'Managing renewal for OVHcloud services'
+slug: how-to-use-automatic-renewal-at-ovh
+excerpt: 'Find out how to manage automatic renewal for your services via the OVHcloud Control Panel'
+section: 'Managing the renewal of services'
 ---
 
+**Last updated 10th April 2020**
 
-## Overview
-You can add and choose your payment method in the [Control Panel](https://www.ovh.com/manager/web/) under "Billing", "My payment methods" and "Add a method of payment".
+## Objective
 
-Please note: if no payment method is enabled and you select one of your services for automatic renewal, your OVH account will  be debited and you will need to settle it to avoid any service interruptions.
+You can manage renewals and cancellations for your services via the OVHcloud Control Panel.
 
-You can enable direct debit under 
-"My services".
+**Find out how to manage automatic renewal for your services via the OVHcloud Control Panel.**
 
-![](images/3734.png){.thumbnail}
+> [!primary]
+>
+> Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. If you are unsure about any details, please refer to your OVHcloud contracts. You can view these via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to the `My services`{.action} section, then `Contracts`{.action}.
+>
 
 
-## Registering a credit or debit card
-To do this choose "credit card" then click "Add".
+## Requirements
 
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- active OVHcloud services
+- access as a billing contact for your OVHcloud services
 
-- Please note, you have to enable pop-ups for the purchase order to be displayed.
+## Instructions
 
+When you place orders, your services are set to be automatically renewed on their expiry date. Payments are taken via the default payment method saved in the OVHcloud Control Panel. You can cancel your services whenever you want via the OVHcloud Control Panel, and they will not be renewed after their expiry date has passed.
 
+You can also set certain products (domains, hosting plans, VPS, dedicated servers) to manual renewal, if you do not want payments and renewals to be carried out automatically.
 
-![](images/3735.png){.thumbnail}
-To authorise your credit or debit card, an initial charge of £1 excl.VAT will be taken from your bank account.
-This amount will be immediately credited to your OVH account and deducted from your next invoice.
-You credit or debit card will be activated immediately.
+We recommend reading the following guides, and you can focus on the operations you wish to carry out. 
 
-![](images/3736.png){.thumbnail}
+- [View the status of your services.](./#display-the-renewal-statuses-for-your-services) This guide will help you check if your services are renewed automatically. You can also check their renewal and expiry dates.
 
+- [Manage renewal for your services.](./#renewal-at-ovhcloud) This guide will help you enable or disable automatic renewal, change the payment frequency for a service, and pay for renewals before their expiry date.
 
-## Registering a bank account
-Firstly, fill in the required information. Click on "Add" to continue.
+- [Manage your payment methods.](../manage-payment-methods/) You can use this guide to ensure that you have a payment method saved for future renewals. You can also add and delete payment methods, if necessary.
 
-![](images/3738.png){.thumbnail}
-When you click "Add" a document will be downloaded. 
+### Access your service’s settings.
 
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Products and services`{.action}. 
 
-- Please note, you have to enable pop-ups for the purchase order to be displayed.
+![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 
+### Display the renewal statuses for your services.
 
-Please follow the procedure in the document to validate the payment method. Your bank account will be approved within 24 to 48 hours after receiving your debit authorisation.
+The “My services” page contains a table for managing your OVHcloud services. On this page, you can find the service names, types, service availability (e.g. if it is suspended), its status (renewal type, actions required, etc.), and the date by which you need to take the action.
 
-![](images/1077.png){.thumbnail}
+![manageautomaticrenewal](images/manageautorenew2b.png){.thumbnail}
 
+You can sort the columns by ascending or descending order, use the search field, or apply a filter to only display a selection of your services that match a chosen set of criteria.
 
-## Registering a PayPal account
-You can add a PayPal account by selecting "Add". A new window will open. 
+![manageautomaticrenewal](images/manageautorenew3.png){.thumbnail}
 
+Your filter criteria are then displayed above the table. Here is an example of a filter that displays domain names with bills awaiting payment.
 
-- Please note, you have to enable pop-ups for the purchase order to be displayed.
+![manageautomaticrenewal](images/manageautorenew4b.png){.thumbnail}
 
+### Renewal at OVHcloud.
 
+#### **Automatic renewal**
 
-![](images/3738.png){.thumbnail}
-On the new page, enter your payment details.
+When you subscribe to a service, it is set to **automatic renewal** by default. This setting means you can ensure your services are systematically renewed on their expiry date. Also, if you have registered a payment method in the OVHcloud Control Panel, it will be used to pay for your bills automatically.
 
-![](images/3739.png){.thumbnail}
+If you have not registered any payment methods, you will be sent a bill via email. You can then pay it online.
 
+For services with an automatic renewal frequency higher than 1 month (3 months, 6 months, 12 months), you will also be sent an email reminder the month before, listing the services that will need to be renewed soon.
 
-## Type of renewal enabled on your service.
-Firstly go to "My services" to select the services to be automatically renewed.
+If you do not want to renew a service, simply cancel it via the OVHcloud Control Panel.
 
-![](images/3740.png){.thumbnail}
-You will find the following elements in the table:
+#### **Manual renewal.**
 
+For some OVHcloud products (domains, web hosting plans, VPS, dedicated servers), you can switch to **manual renewal**. This renewal mode is useful if you are not sure whether you want to keep the service until its expiry date, or if you do not want payments to be taken automatically via your payment method. 
 
-- Automatic renewal date: Here you have to choose the day of the month when you want OVH to carry out the withdrawal using your payment method. 
+If you select this mode, you will receive several reminder emails before the expiry date, each containing a link for renewing your services online before the expiry date. You can also pay via the OVHcloud Control Panel.
 
-- Login: This column corresponds to the name of the service concerned. 
+> [!warning]
+>
+>If you do not pay for a service in manual renewal, it is suspended on its expiry date, then deleted after a few days.
+>
+>However, if you do not want to keep this service, you will not need to request cancellation.
+>
 
-- Renewal: This column lets you verify the current renewal type on your service.
 
-- 1. All services: here you can filter the table by service type.
+### Manage renewal for your services.
 
-- 2. Date:  You can filter the table so that only the services which    "expire in a week", "expire in a month" or have already "expired" are displayed.
+To the right of each service, click on the `...`{.action} in the “Actions” column to set renewal for your services.
 
-- 3. Renewal: Here you can filter the table to show only the services which are in "annual automatic renewal", "monthly automatic renewal" or "manual renewal" mode.
+![manageautomaticrenewal](images/manageautorenew5b.png){.thumbnail}
 
+> [!primary]
+>
+>Depending on the service, some actions may not be available depending on whether or not it is eligible for manual renewal.
+>
+ 
+#### **Configure the renewal.**
 
+![manageautomaticrenewal](images/manageautorenew6b.png){.thumbnail}
 
-![](images/3741.png){.thumbnail}
-Clicking "Cancel" disables automatic renewal and your service will be deleted on the expiration date.
+Depending on the service you have chosen, you can set it to manual renewal, or choose a frequency for automatic renewal. If your service is eligible, you can choose the renewal type and frequency.
 
+![manageautomaticrenewal](images/manageautorenew7.png){.thumbnail}
 
-## Choice of automatic renewal
-If you click on the "pen" to the right of the service in the "renewal" column you can modify the renewal type. 
+Depending on your choice, you will be given information on future payment dates, the payment method that will be used, and the service’s expiry date.
 
+#### **Renew the service.**
 
-- Renewal: Here you can choose "Automatic" to specify that you want automatic renewal. 
+This action is only applicable to services set to manual renewal, and it will redirect you to an online payment interface. You can renew these services at any time before their expiry, and choose their renewal duration. 
 
-- Frequency: Depending on the type of service chosen, you can choose how often you pay. 
+#### **Anticipate payment.**
 
-If you choose "two months" as the frequency, an amount equivalent to two months of service usage will be charged every two months.
+This action is applicable to services set to automatic renewal, and it will redirect you to an online payment interface. You can renew these services at any time before their expiry, and choose their renewal duration. In this case, the duration of validity you subscribe to will be added to the current validity duration. You will not lose any remaining validity time.
 
+#### **Cancel on expiry.**
 
-![](images/3742.png){.thumbnail}
+This action is available for services set to automatic renewal. By choosing this action, automatic payments and renewals are disabled for the service you have selected.
 
+#### **Pay your bill.**
 
-## Enabling automatic renewal on several services
-You can change the renewal type for several services by ticking the box next the the relevent services in the left-hand column and then clicking "Modify the renewals"
+If you have services set to automatic renewal, but have not registered a payment method for paying your bills, a “Bill to pay” comment will be displayed when a bill is awaiting payment. Then click `Pay my bill`{.action}, which will redirect you to an online payment interface.
 
-![](images/3743.png){.thumbnail}
+#### **Group actions.**
 
+You can perform group actions by selecting several services in the table, then clicking `Actions`{.action}.
 
-## Operation
-On the February 2nd 2014, I set up an automatic renewal on February 12th. The renewal period is 1 year for each service.
+![manageautomaticrenewal](images/manageautorenew9.png){.thumbnail}
 
-![](images/1564.png){.thumbnail}
-Caution: the consolidated renewal won't take place on February 2nd; it will take place on the date that you have selected: February 12th 2014!!
+The table below details the group actions you can perform.
 
-When you activate automatic renewal for your services, the initial consolidated renewal will take place after one month. You may then have to modify the length of your renewals, hence why the initial renewal is monthly.
-It's only possible to renew OVH's own services (such as hosting, Private SQL, options, etc).
+|  Possible actions  |  Description  |
+|  :-----          |  :-----          |
+|  Renew |  Renew several services at once. You will be redirected to a page where you can choose the renewal duration you want, and pay online. |
+|  Disable automatic payment |  Disable automatic payment for several services at once. If one or more of your services cannot be set to automatic renewal, this will be flagged when you confirm. |
+|  Enable automatic payment |  Enable automatic payment for several services at once. Only eligible services will be updated. |
+|  Export in CSV |  Create a file in the *.csv* format. |
+|  Align renewal dates |  Aligns the expiry dates for your services on a single calendar day. Only eligible services can be updated. |
 
-/!\ Domain names can be renewed only for one year minimum; consolidated renewal doesn't cover these. This explains the importance of selecting a general renewal date.
 
-What you need to know:
-To renew the services on your selected date, we'll go by this date every month to check which services are due to expire between this date (included) and the same date in the following month. This happens regardless of the renewal period that you've selected.
+## Go further
 
-In my case, on February 12th 2014, a purchase order would look like this:
-
-
-- Service 3: for 1 month + 1 day (from February 11th to March 12th 2014);
-- Service 5: for 27 days (from  February 13th to  March 12th 2014);
-
-thus aligning the expirations dates of both services to March 12th 2014.
-
-On March 12th 2014, Services 3 & 5 will therefore be renewed for 1 year (selected period).
-
-Caution: Service 3 that expires on February 11th 2014 will be deactivated until February 12th 2014!
-
-Service 2 expires on February 12th 2014. Therefore, it'll be automatically renewed for 1 year  (selected duration).
-
-Regarding Service 4 that expires on February 15th 2014, we'll detect that it expires between  February 12th 2014 and March 12th 2014. It'll be renewed for 1 year and the 1 year will be credited on the date of termination of the service.
-
-So, on February 12th 2014, my Service 4 will be renewed for 1 additional year, and its new expiration date will be February 15th 2015.
-
-Service 1 will be unavailable from February 10th to 12th 2014 but will be automatically renewed for 1 year (selected duration) on February 12th 2014.
-
- To summarise, the correct February 12th order includes:
-Consolidations:
-
-- Service 3: to 1 month + 1 day[ blue] (from February 11 to March 12th 2014)
-- Service 5: to 27 days (from February 13 to March 12th 2014)
-
-Renewals:
-
-- Service 1: to 1 year (from February 10th 2014 to February 10th 2015)
-- Service 2: to 1 year (from February 12th 2014 to February 12th 2015)
-- Service 4: to 1 year (from February 15th 2014 to February 15th 2015)
-
-The correct March 12th 2014 order includes:
-
-
-Renewals:
-
-- Service 3: to 1 year (from March 12th 2014 to March 12th 2015)
-- Service 5: to 1 year (from March 12th 2014 to March 12th 2015)
-
-Note: If you request an automatic renewal on the 29th, 30th or 31st, it will automatically take place on the 1st of the following month, depending on the number of days in the month (February, for example).
-
-
-
-## The domain name life cycle
-Diagram (Information is in French)
-
-![](images/2554.png){.thumbnail}
-
+Join our community of users on <https://community.ovh.com/en/>.

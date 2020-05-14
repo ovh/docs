@@ -5,7 +5,7 @@ excerpt: 'Apprenez à vérifier l''état de votre RAID et de vos disques durs'
 section: 'RAID & disques'
 ---
 
-**Dernière mise à jour le 12/06/2019**
+**Dernière mise à jour le 01/04/2020**
 
 ## Objectif
 
@@ -13,9 +13,11 @@ Sur un serveur disposant d'une configuration RAID matériel, la matrice RAID est
 
 **Ce guide vous montre comment vérifier l'état de votre RAID et de vos disques durs.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t_BL_uOXQVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovh.co.uk/dedicated_servers/){.external} avec une configuration RAID matériel.
+- Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} avec une configuration RAID matériel.
 - Avoir accès à votre serveur via SSH en tant qu'administrateur (root).
 
 > [!warning]
@@ -408,7 +410,7 @@ RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 
 ### Contrôleur Raid 3Ware
 
-Ce contrôleur RAID est déprécié et devient instable. Nous vous suggérons fortement de contacter le support OVH pour planifier une intervention visant à remplacer ce contrôleur RAID par un contrôleur LSI, puisque les contrôleurs RAID 3ware s’avèrent plutôt instables. Ce type d’intervention nécessite une réinstallation de votre serveur. Veillez alors à bien sauvegarder vos données au préalable.
+Ce contrôleur RAID est déprécié et devient instable. Nous vous suggérons fortement de contacter le support OVHcloud pour planifier une intervention visant à remplacer ce contrôleur RAID par un contrôleur LSI, puisque les contrôleurs RAID 3ware s’avèrent plutôt instables. Ce type d’intervention nécessite une réinstallation de votre serveur. Veillez alors à bien sauvegarder vos données au préalable.
  
 
 ## Aller plus loin

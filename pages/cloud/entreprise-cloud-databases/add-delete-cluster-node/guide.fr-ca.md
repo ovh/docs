@@ -62,6 +62,6 @@ Vous serez amené à choisir le nombre de réplicas que vous souhaitez supprimer
 
 ## Aller plus loin
 
-Apprenez à gérer votre cluster PostgreSQL en consultant la [documentation technique d'OVHcloud](../enterprise-cloud-databases/){.external} pour davantage d'informations sur le fonctionnement technique de votre offre managée.
+Apprenez à gérer votre cluster PostgreSQL en consultant la [documentation technique d'OVHcloud](../../../../fr/enterprise-cloud-databases/){.external} pour davantage d'informations sur le fonctionnement technique de votre offre managée.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

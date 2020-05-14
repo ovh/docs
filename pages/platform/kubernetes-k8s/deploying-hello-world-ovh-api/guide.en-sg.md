@@ -1,5 +1,5 @@
 ---
-title: 'Deploying a Hello World with the OVH API'
+title: Deploying a Hello World with the OVH API
 slug: deploying-hello-world-ovh-api
 excerpt: 'Find out how to deploy a Hello World application with the OVH API'
 section: Tutorials
@@ -7,7 +7,6 @@ order: 2
 ---
 
 **Last updated 1<sup>st</sup> July, 2019.**
-
 
 Follow this quickstart guide to deploy a containerised *Hello World* application on your OVHcloud Managed Kubernetes Service cluster, using the OVH API.
 
@@ -56,7 +55,7 @@ Please refer to the [Configuring kubectl on an OVHcloud Managed Kubernetes clust
 
 ## Add a worker node
 
-The first element needed to deploy the *Hello World* application is a worker node in your cluster. To create this node, you can use the `POST /kube/{serviceName}/publiccloud/node` endpoint, which will deploy a node for your cluster on the Public Cloud. 
+The first element needed to deploy the *Hello World* application is a worker node in your cluster. To create this node, you can use the `POST /kube/{serviceName}/publiccloud/node` endpoint, which will deploy a node for your cluster on the Public Cloud.
 
 You will need to give it a `flavorName` parameter, with the flavor of the instance you want to create. For this tutorial choose a general purpose node, like the `b2-7` flavor.
 
@@ -74,4 +73,4 @@ You can use the `GET /kube/{serviceName}/publiccloud/node` entrypoint to list al
 
 You're now ready to deploy your first application.
 
-For more details about this process, you can refer to the [deploying an application](../deploying-an-application/) documentation. 
+For more details about this process, you can refer to the [deploying an application](../deploying-an-application/) documentation.

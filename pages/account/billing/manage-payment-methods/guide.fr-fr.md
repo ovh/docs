@@ -5,7 +5,7 @@ excerpt: 'Apprenez à ajouter et gérer vos moyens de paiement au sein de l’es
 section: Facturation
 ---
 
-**Dernière mise à jour le 20/11/2019**
+**Dernière mise à jour le 07/05/2020**
 
 ## Objectif
 L'espace client OVHcloud vous permet d'enregistrer et gérer différents moyens de paiement.
@@ -16,9 +16,9 @@ L'espace client OVHcloud vous permet d'enregistrer et gérer différents moyens 
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur votre nom en haut à droite, puis sélectionnez `Moyens de paiement`{.action}.
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur votre nom en haut à droite, puis sélectionnez `Moyen de paiement`{.action}.
 
-![manage-payment-methods](images/managepaymentmethods1.png){.thumbnail}
+![manage-payment-methods](images/hubpayment.png){.thumbnail}
 
 La page qui s’affiche contient un tableau répertoriant les moyens de paiement enregistrés sur votre espace client, notamment ceux utilisés lors de vos commandes. Vous pourrez y :
 
@@ -28,7 +28,7 @@ La page qui s’affiche contient un tableau répertoriant les moyens de paiement
 
 ### Ajouter un moyen de paiement
 
-Lors de votre toute première commande d'un produit OVH, il vous est demandé d'enregistrer un moyen de paiement, afin d'assurer le renouvellement de votre service par prélèvement automatique.
+Lors de votre toute première commande d'un produit OVHcloud, il vous est demandé d'enregistrer un moyen de paiement, afin d'assurer le renouvellement de votre service par prélèvement automatique.
 
 Ce moyen de paiement est alors utilisé par défaut pour tous vos renouvellements, et proposé lors de nouveaux achats.
 
@@ -46,15 +46,16 @@ Pour cela, cliquez simplement sur le bouton `Ajouter un moyen de paiement`{.acti
 
 Suivez les étapes successives d'enregistrement du moyen de paiement. A la première étape, il vous sera proposé de définir ce nouveau moyen de paiement comme « moyen de paiement par défaut », afin qu'il soit utilisé pour vos futurs achats ou prélèvements automatiques.
 
-En cas d'enregistrement d'un compte bancaire, il vous faudra retourner une autorisation de prélèvement par voie postale. Pour télécharger ce document, cliquez sur le bouton `...`{.action} à droite de votre compte bancaire puis sur `Télécharger la procédure à retourner par voie postale`{.action}.
+#### Ajout d'un compte bancaire
 
-![manage-payment-methods](images/managepaymentmethods2b.png){.thumbnail}
+En cas d'enregistrement d'un compte bancaire, vous recevrez un e-mail de notre partenaire Yousign, vous permettant de signer électroniquement votre mandat de prélèvement.
+
+![manage-payment-methods](images/yousign.png){.thumbnail}
 
 > [!primary]
 >
-Tant que cette autorisation n'est pas reçue par nos services, la mention « En attente de réception » sera indiquée à côté de votre compte bancaire, celui-ci ne pouvant alors être pris en compte pour vos paiements.
+Tant que cette autorisation n'est pas signée et validée par vos soins, la mention « En cours de validation » sera indiquée à côté de votre compte bancaire, celui-ci ne pouvant alors être pris en compte pour vos paiements.
 >
-
 
 ### Modifier votre moyen de paiement par défaut
 

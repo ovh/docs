@@ -1,8 +1,8 @@
 ---
-title: Getting started with a VPS
-excerpt: Learn the basics of using a VPS
+title: 'Getting started with a VPS'
+excerpt: 'Learn the basics of using a VPS'
 slug: getting-started-vps
-section: Getting started
+section: 'Getting started'
 order: 1
 ---
 
@@ -10,21 +10,21 @@ order: 1
 
 ## Objective
 
-A virtual private server (VPS) is a virtualised dedicated server. Unlike web hosting plans (described as “shared”), which are technically managed by OVH, you are fully responsible for administrating your VPS.
+A virtual private server (VPS) is a virtualised dedicated server. Unlike web hosting plans (described as “shared”), which are technically managed by OVHcloud, you are fully responsible for administrating your VPS.
 
 **This guide will give you a few tips to help you manage your newly delivered and installed VPS.**
 
 
 > [!warning]
 >
-> While OVH provides you with the devices, the responsibility rests solely in your hands. Keep in mind that OVH is an IAAS (Infrastructure As A Service), then you are the only one who can access your server(s), as you are administrators. For this reason, you are the only responsible for your service’s software and security.
+> While OVHcloud provides you with the devices, the responsibility rests solely in your hands. Keep in mind that OVHcloud is an IAAS (Infrastructure As A Service), then you are the only one who can access your server(s), as you are administrators. For this reason, you are the only responsible for your service’s software and security.
 This guide is designed to help you with the most common tasks. However, we recommend contacting a specialized service provider if you experience any difficulties or have any doubts about managing, using and securing a server. You can find more information in the “Go further” section of this guide.
 >
 
 
 ## Requirements
 
-- You need to have purchased a VPS on the [OVH website](https://www.ovh.co.uk/vps/){.external}.
+- You need to have purchased a VPS on the [OVHcloud website](https://www.ovhcloud.com/en-gb/vps/){.external}.
 - You need to have received the email with your access ID after the installation (validated during your order).
 
 
@@ -68,7 +68,7 @@ A window will open, and you will be asked to choose:
 
 > [!primary]
 >
-> Some operating systems or platforms such as Plesk or Windows require a licence to be purchased prior to installation. You can buy this licence from OVH, or from a reseller. You will then need to integrate it manually, or through your Control Panel. You can manage your licences under `Dedicated`{.action}, then `Licences`{.action}.
+> Some operating systems or platforms such as Plesk or Windows require a licence to be purchased prior to installation. You can buy this licence from OVHcloud, or from a reseller. You will then need to integrate it manually, or through your Control Panel. You can manage your licences under `Dedicated`{.action}, then `Licences`{.action}.
 In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Actions`{.action} button on the right).
 >
 
@@ -87,7 +87,7 @@ Once you have installed and secured your VPS, you may want to secure your domain
 
 You can install this SSL certificate yourself manually, directly on the VPS. Please refer to the official documentation that you have been using.
 
-For a more automated process, OVH also offers the [SSL Gateway](https://www.ovh.co.uk/ssl-gateway/). For more information, please refer to the [product page](https://www.ovh.co.uk/ssl-gateway/){.external} or [guide documents](https://docs.ovh.com/gb/en/ssl-gateway/){.external} on this solution.
+For a more automated process, OVHcloud also offers the [SSL Gateway](https://www.ovh.co.uk/ssl-gateway/). For more information, please refer to the [product page](https://www.ovh.co.uk/ssl-gateway/){.external} or [guide documents](https://docs.ovh.com/gb/en/ssl-gateway/){.external} on this solution.
 
 ## Go further
 

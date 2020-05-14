@@ -17,10 +17,10 @@ This guide will help you get a basic understanding on what points can affect per
 > This use case will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation. If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
 
 ## Requirements
-- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
+- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
 - an email confirming that your Web Hosting plan has been set up
-- a [domain name](https://www.ovh.co.uk/domains/){.external} that can be used to access your website
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- a [domain name](https://www.ovh.co.uk/domains/) that can be used to access your website
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
@@ -158,9 +158,9 @@ However, lots of external guides exist on this matter.
 
 **How to access the database via phpMyAdmin:** To access your database via phpMyAdmin, here is the procedure to follow via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}:
 
-- Click on your domain under the `Hosting`{.action} section.
+- Click on your domain under the `Hosting plans`{.action} section.
 - Go to the `Database`{.action} tab.
-- Click on the 3 dots `...`{.action} to the right of your database to access phpMyAdmin.
+- Click on `...`{.action} to the right of your database to find the access link to phpMyAdmin.
 
 **Why optimise a database?** You have to maintain a database to make sure it performs well. In other words, the information contained in the database should be returned to the script that requested it as soon as possible. To achieve this, a database has to be well structured and optimised. We will look at how to best optimise your database.
 
@@ -217,14 +217,14 @@ Avoid using the "HAVING" clause which can slow down queries. You should also avo
 
 #### Private SQL
 If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our Private SQL offer to have more resources available.
-A comparison of our offers can be found [on the product page](https://www.ovh.co.uk/web-hosting/sql-options.xml){.external}.
+A comparison of our offers can be found [on the product page](https://www.ovh.co.uk/web-hosting/sql-options.xml).
 
 ## Go further
 
-[Modifying the configuration of a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment/){.external}
+[Modifying the configuration of a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment)
 
-[Managing a database on a web hosting package](https://docs.ovh.com/gb/en/hosting/managing-a-database-on-a-web-hosting-package){.external}
+[Creating and managing a database in your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/creating-database)
 
-[Getting started with the Private SQL service](https://docs.ovh.com/gb/en/hosting/getting-started-with-private-sql){.external}
+[Getting started with the Private SQL service](https://docs.ovh.com/gb/en/hosting/getting-started-with-private-sql)
 
 Join our community of users on <https://community.ovh.com/en/>.

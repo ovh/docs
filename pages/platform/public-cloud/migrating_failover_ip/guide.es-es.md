@@ -1,48 +1,48 @@
 ---
-title: Migrar una IP Failover
-excerpt: Migrar una IP Failover
+title: 'Migrar una IP Failover'
+excerpt: 'Migrar una IP Failover'
 slug: migrar_una_ip_failover
 legacy_guide_number: g1890
-section: Red e IP
+section: 'Red e IP'
 ---
 
+**Última actualización: 4/12/2019**
 
-## 
-Esta guía explica cómo migrar una dirección IP Failover de una instancia a otra. 
+## Objetivo
+Esta guía explica cómo migrar una IP de conmutación de una instancia a otra. Por lo general, esta acción limita o elimina la posibilidad de que su servidor esté inaccesible y le permite:
 
-Esta operación puede tener diversas aplicaciones, por lo general relacionadas con la necesidad de limitar o evitar los posibles casos de inaccesibilidad del servicio:
+- Migrar un sitio web a su «nueva versión»
+- Ejecutar su actividad en un servidor replicado mientras realiza un mantenimiento o ejecuta una actualización en el servidor de producción.
 
+## Requisitos:
 
-- Migrar un sitio web a su «nueva versión». 
-- Hacer funcionar la producción en un servidor replicado mientras realiza una operación de mantenimiento o una actualización en el servidor de producción.
+- Tener al menos dos instancias de Public Cloud ejecutándose
+- Tener una IP de conmutación
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+## Procedimiento
 
+- Para comenzar, haga clic en la sección «IP de conmutación» a continuación de «Red» en el menú de la izquierda. Entonces podrá ver que nuestra IP de conmutación está enrutada hacia la instancia A, pero queremos redireccionarla hacia la instancia B.
 
+![migrar IP failover](images/failover.png){.thumbnail}
 
-## Requisitos
-Para seguir los pasos descritos en esta guía, es necesario:
+Haga clic en los 3 puntos a la derecha de la IP de conmutación y, a continuación, modifique la instancia asociada.
 
+![migrar IP failover](images/modify.png){.thumbnail}
 
-- tener al menos dos instancias de Public Cloud iniciadas; 
-- tener una IP Failover.
+Haga clic en la casilla junto al servidor de destino
 
+![migrar IP failover](images/modify1.png){.thumbnail}
 
+- Haga clic en «Adjuntar»
 
+- Pasados unos segundos, el panel de control se actualizará y se mostrará el siguiente mensaje, confirmando que la migración se ha realizado correctamente:
 
-## 
-Partimos de una situación en la que tenemos una IP enrutada hacia el Servidor 1, y queremos redirigirla al Servidor 2.
-
-![](images/img_3815.jpg){.thumbnail}
-Para ello, haga clic en la flecha y seleccione «Cambiar el servidor asociado».
-
-![](images/img_3816.jpg){.thumbnail}
-Marque la casilla correspondiente para seleccionar el servidor de destino.
-
-![](images/img_3817.jpg){.thumbnail}
-Haga clic en «Asociar».
-La IP Failover puede configurarse en el servidor de destino antes o después de realizar la migración. Si se configura antes, empezará a responder en cuanto finalice la operación de enrutamiento.
+![migrar IP failover](images/modify2.png){.thumbnail}
 
 
-## 
- 
+La IP de conmutación puede configurarse en el servidor de destino antes o después de realizar la migración. Si está preconfigurada, comenzará a responder en cuanto se haya realizado la operación de enrutamiento.
 
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -10,7 +10,7 @@ OVH managed databases services are based on several major releases of different 
 
 ## Products coverage
 
-The products covered by this EOL policy are Enterprise Cloud Databases. ([See announcements](../clouddb-eos-eol/guide.en-gb.md)).
+The products covered by this EOL policy are Enterprise Cloud Databases. ([See announcements](../postgresql-eos-eol/)).
 
 
 

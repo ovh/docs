@@ -26,6 +26,15 @@ Please enter your OpenStack Password for project <project_name> as user <user_na
 user@host:~$
 ```
 
+## Install Openstack client if needed
+
+```bash
+user@host:~$ pip install python-openstackclient
+
+user@host:~$
+```
+
+Openstack client command reference [here](https://docs.openstack.org/python-openstackclient/latest/)
 
 ## Create EC2 credentials
 
@@ -71,11 +80,11 @@ user@host:~$ curl -s -D headers -H "Content-Type: application/json" -d '
       }
     }
   }
-}' "${OS_AUTH_URL}/v3/auth/tokens" > token_info
+}' "${OS_AUTH_URL}/auth/tokens" > token_info
 user@host:~$ OS_TOKEN=$(egrep "^X-Subject-Token:" headers | awk '{print $2}')
 user@host:~$ OS_USER_ID=$(cat token_info  | jq -r '.["token"]["user"]["id"]')
 user@host:~$ OS_PROJECT_ID=$(cat token_info  | jq -r '.["token"]["project"]["id"]')
-user@host:~$ curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Token: $OS_TOKEN" -d '{"tenant_id": "$OS_PROJECT_ID"}' "${OS_AUTH_URL}/v3/users/${OS_USER_ID}/credentials/OS-EC2" | jq .
+user@host:~$ curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Token: $OS_TOKEN" -d '{"tenant_id": "$OS_PROJECT_ID"}' "${OS_AUTH_URL}/users/${OS_USER_ID}/credentials/OS-EC2" | jq .
 {
   "credential": {
     "user_id": "d74d05ff121b44bea9216495e7f0df61",
@@ -106,11 +115,14 @@ aws_access_key_id = <access fetched in previous step>
 aws_secret_access_key = <secret fetched in previous step>
 region = <public cloud region in lower case>
 s3 =
-  endpoint_url = https://storage.<public cloud region>.cloud.ovh.net
+  endpoint_url = https://s3.<public cloud region>.cloud.ovh.net
   signature_version = s3v4
+  addressing_style = virtual
 s3api =
-  endpoint_url = https://storage.<public cloud region>.cloud.ovh.net
+  endpoint_url = https://s3.<public cloud region>.cloud.ovh.net
 ```
+
+Virtual hosted-style and path-style access are supported in all regions, but we recommend to use virtual hosted-style since path-style access will be deprecated after September 30, 2020.
 
 ## Use aws client
 

@@ -6,7 +6,7 @@ section: Introdução
 legacy_guide_number: g1271
 ---
 
-**Última atualização: 21/11/2019**
+**Última atualização: 10/04/2020**
 
 ## Objetivo
 
@@ -42,9 +42,9 @@ Consulte este documento em função da operação que pretende realizar.
 
 ### Aceder à parametrização dos seus serviços
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no seu ID de cliente no canto superior direito e, em seguida, clique em `Serviços`{.action}.
+Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no seu ID de cliente no canto superior direito e, em seguida, clique em `Produtos e serviços`{.action}.
 
-![manageautomaticrenewal](images/manageautorenew1.png){.thumbnail}
+![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 
 ### Visualizar o estado da renovação dos serviços
 

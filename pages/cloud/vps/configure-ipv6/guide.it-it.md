@@ -1,7 +1,7 @@
 ---
 title: 'Configurare un indirizzo IPv6 su un VPS'
 slug: configurare-ipv6
-excerpt: 'Come utilizzare un IPv6 sul tuo server VPS OVH'
+excerpt: 'Come utilizzare un IPv6 sul tuo server VPS OVHcloud'
 section: 'Rete e IP'
 order: 1
 ---
@@ -10,21 +10,21 @@ order: 1
 
 ## Obiettivo
 
-L’IPv6 è la versione più recente dell’*Internet Protocol* (IP). Tutti i VPS OVH vengono consegnati con un indirizzo IPv4 e un indirizzo IPv6. Di default è configurato soltanto l’IPv4 ma, per diversi motivi, potrebbe essere necessario utilizzare anche l’IPv6.
+L’IPv6 è la versione più recente dell’*Internet Protocol* (IP). Tutti i VPS OVHcloud vengono consegnati con un indirizzo IPv4 e un indirizzo IPv6. Di default è configurato soltanto l’IPv4 ma, per diversi motivi, potrebbe essere necessario utilizzare anche l’IPv6.
 
-**Questa guida ti mostra come abilitare l’IPv6 sul tuo server privato virtuale OVH.**
+**Questa guida ti mostra come abilitare l’IPv6 sul tuo server privato virtuale OVHcloud.**
 
 > [!warning]
 >
-> OVH mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativamente ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+> OVHcloud mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativamente ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 > 
 
 ## Prerequisiti
 
-- Disporre di un [VPS OVH](https://www.ovh.it/vps/){.external}
+- Disporre di un [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external}
 - Essere connesso al VPS in SSH (accesso root)
 - Possedere conoscenze base di rete
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Procedura
 
@@ -42,18 +42,18 @@ Prima di iniziare ti consigliamo di consultare la tabella qui sotto, che contien
 
 Per prima cosa, è necessario avere a disposizione l’indirizzo IPv6 e il gateway IPv6 assegnati al server. Esistono due modi per ottenere questa informazione:
 
-- [dallo Spazio Cliente OVH](https://docs.ovh.com/it/vps/configurare-ipv6/#dallo-spazio-cliente-ovh)
+- [dallo Spazio Cliente OVHcloud](https://docs.ovh.com/it/vps/configurare-ipv6/#dallo-spazio-cliente-ovhcloud)
 - [via API](https://docs.ovh.com/it/vps/configurare-ipv6/#via-api)
 
-#### Dallo Spazio Cliente OVH
+#### Dallo Spazio Cliente OVHcloud
 
-Accedi all’area `Cloud`{.action} dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo VPS nella sezione`Server`{.action} della colonna a sinistra. Assicurati di essere posizionato nella scheda `Home`{.action}: nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 assegnato al server. Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](https://docs.ovh.com/it/vps/configurare-ipv6/#step-2-applica-la-configurazione-ipv6_1){.external}.
+Accedi all’area `Cloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo VPS nella sezione`Server`{.action} della colonna a sinistra. Assicurati di essere posizionato nella scheda `Home`{.action}: nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 assegnato al server. Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](https://docs.ovh.com/it/vps/configurare-ipv6/#step-2-applica-la-configurazione-ipv6_1){.external}.
 
 ![configureipv6](images/configure-ipv6-step1.png){.thumbnail}
 
 #### Via API
 
-Accedi alla pagina <https://api.ovh.com/console/> con l’identificativo cliente OVH e relativa password ed esegui le chiamate API indicate di seguito.
+Accedi alla pagina <https://api.ovh.com/console/> con l’identificativo cliente OVHcloud e relativa password ed esegui le chiamate API indicate di seguito.
 
 Per ottenere l’indirizzo IPv6 assegnato al VPS:
 
@@ -367,4 +367,4 @@ Per ripristinare la gestione automatica del server tramite cloud-Init, rimuovi i
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

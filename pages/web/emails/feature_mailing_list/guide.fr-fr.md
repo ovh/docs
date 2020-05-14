@@ -187,7 +187,7 @@ Hi. This is the qmail-send program at mx1.ovh.net.
 I'm afraid I wasn't able to deliver your message to the following addresses.
 This is a permanent error; I've given up. Sorry it didn't work out.
 
-<newsletter@testinterne.ovh>:
+<newsletter@votredomaine.com>:
 
 ezmlm-reject: fatal: Sorry, I don't accept message with empty Subject (#5.7.0)
 ```
@@ -207,7 +207,7 @@ Hi. This is the qmail-send program at mx1.ovh.net.
 I'm afraid I wasn't able to deliver your message to the following addresses.
 This is a permanent error; I've given up. Sorry it didn't work out.
 
-<newsletter@testinterne.ovh>:
+<newsletter@votredomaine.com>:
 
 ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 ```
@@ -217,7 +217,7 @@ ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 
 Vous pouvez personnaliser la plupart des textes de votre mailing list. En tant que modérateur, vous devez envoyer un e-mail vide à nom_de_votre_ML- [edit@votredomaine.com](mailto:edit@votredomaine.com){.external}.
 
-- Exemple : Votre mailing list est [newsletter@testinterne.ovh](mailto:newsletter@testinterne.ovh){.external} . Depuis votre adresse e-mail modérateur, il vous faudra envoyer un message à [newsletter-edit@testinterne.ovh](mailto:newsletter-edit@testinterne.ovh){.external} .
+- Exemple : Votre mailing list est [newsletter@votredomaine.com](mailto:newsletter@votredomaine.com){.external} . Depuis votre adresse e-mail modérateur, il vous faudra envoyer un message à [newsletter-edit@votredomaine.com](mailto:newsletter-edit@votredomaine.com){.external} .
 
 Vous recevrez alors un e-mail qui vous guidera pour effectuer vos modifications.
 
@@ -252,7 +252,7 @@ Ci-dessous, une liste des fichiers contenant les textes de réponses et une brè
 
 > [!primary]
 >
-> Exemple : Si vous souhaitez modifier le pied de page par défaut des e-mails envoyés à votre mailing list, il vous faudra envoyer un message à l'adresse « newsletter-edit.bottom@testinterne.ovh ». Vous recevrez alors un nouvel e-mail vous expliquant comment personnaliser le pied de page.
+> Exemple : Si vous souhaitez modifier le pied de page par défaut des e-mails envoyés à votre mailing list, il vous faudra envoyer un message à l'adresse « nom_de_votre_ML-edit.bottom@votredomaine.com ». Vous recevrez alors un nouvel e-mail vous expliquant comment personnaliser le pied de page.
 > 
 
 ## Aller plus loin

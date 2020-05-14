@@ -1,169 +1,105 @@
 ---
-title: Premiers pas avec le service Private Exchange
-legacy_guide_number: 2074
+title: 'Premiers pas avec le service Private Exchange'
 slug: exchange-premiers-pas-avec-un-serveur-private
-excerpt: Retrouvez ici les details sur la mise en place de votre serveur private Exchange depuis le reglement de votre commande a la livraison. Une fois le serveur livre, vous pourrez configurer votre systeme de messagerie.
-section: Premiers pas avec Exchange
+legacy_guide_number: 2074
+excerpt: 'Découvrez comment mettre en place votre serveur Private Exchange.'
+section: 'Premiers pas avec Exchange'
 order: 2
 ---
 
+**Dernière mise à jour le 25/03/2020**
 
-## Étape 1 &#58; reception de l'e-mail de configuration de votre serveur
-Une fois votre bon de commande réglé, un e-mail vous sera envoyé pour réaliser l'installation de votre serveur "Private". L'e-mail est envoyé sur votre adresse de contact indiquée dans votre espace client, il est aussi disponible depuis celui-ci. Pour consulter cet e-mail depuis votre espace client :
+## Objectif
 
-- cliquez sur votre identifiant (en haut à droite, sous la forme ab12345-ovh) puis "Mon compte"
+Vous venez d'effectuer la commande d'une plateforme Private Exchange. Ce guide détaille les étapes à réaliser pour votre première configuration.
 
+**Découvrez comment configurer votre plateforme Private Exchange**
 
-![emails](images/4047.png){.thumbnail}
+## Prérequis
 
-- Emails reçus
+- Avoir commandé une [offre Private Exchange OVHcloud](https://www.ovh.com/fr/emails/){.external}.
+- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
+## En pratique
 
-![emails](images/4050.png){.thumbnail}
+### Étape 1 : réception de l'e-mail de configuration de votre plateforme
 
-Vous pourrez retrouver à ce niveau l'e-mail envoyé afin de réaliser la configuration de votre serveur private Exchange :
+Une fois la commande réalisée, vous recevrez, sur l'adresse e-mail de référence de votre espace client, les informations pour configurer votre plateforme Private Exchange. 
 
-- le sujet de l'e-mail est :
+Pour consulter cet e-mail depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), cliquez sur votre profil en haut à droite puis cliquez sur `Mon compte`{.action}. Dirigez-vous sur l'onglet `Emails reçus`{.action} et recherchez l'e-mail ayant pour objet:
 
-
-![emails](images/4051.png){.thumbnail}
-
-Voici le détail du mail reçu suite à votre commande :
-
-
-```None
-1. SAS OVH - http://www.ovh.com
-2. 2 rue Kellermann
-3. BP 80157
-4. 59100 Roubaix
-5. 
-6. Cher client,
-7. 
-8. Votre offre e-mail Exchange Private 2016v1 est en cours de livraison.
-9. 
-10. Quelques étapes sont encore nécessaires afin de pouvoir utiliser votre serveur Exchange Private 2016v1 :
-11. 
-12. - Personnaliser votre lien d'accès à votre webmail (certificat SSL dédié)
-13. - Renseigner l'adresse e-mail de correspondance pour valider votre certificat (attention : cette adresse e-mail doit être existante, et vous devez pouvoir y accéder)
-14. 
-15. Pour cela veuillez cliquer sur le lien :
-16. 
-17. https://www.ovh.com/fr/emails/commande/?orderId=5035xxxx&orderPassword=nqiJ#/serverConfig
-18. 
-19. Il faudra vous authentifier à l'aide de votre NicHandle (ab12345-ovh) et mot de passe associé.
-20. 
-21. IMPORTANT : une fois ces deux actions réalisées, il restera une dernière étape : pointage du sous-domaine choisi vers l'IP de votre serveur (celle-ci vous sera communiquée dans un second e-mail).
-22. 
-23. Besoin d'aide ?
-24. Découvrez tous nos guides Exchange :
-25. 
-26. https://www.ovh.com/fr/emails/hosted-exchange/guides
-27. 
-28. Cordialement,
-29. 
-30. Votre Service Client OVH
-```
+> **[xx-11111-ovh] Votre service Private Exchange 2016v1 est en cours de livraison !**
 
 
-### Choix du lien d'acces au webmail (SSL dedie) et configuration de la zone dns
+![first-use-private-exchange](images/first-use-private-exchange-01.png){.thumbnail}
 
-## Étape 2 &#58; Configuration automatique de la zone dns
-Cliquez sur le lien contenu dans l'e-mail que vous avez reçu, vous serez alors redirigé vers la page de configuration de votre serveur.
+Cet e-mail contient un lien permettant de compléter deux étapes de la configuration votre plateforme :
 
+- personnaliser votre lien d'accès à votre webmail (certificat SSL dédié);
+- renseigner l'adresse e-mail de correspondance pour valider votre certificat (attention : cette adresse e-mail doit être existante, et vous devez pouvoir y accéder).
 
-![emails](images/4052.png){.thumbnail}
+Cliquez sur le lien présent dans l'e-mail, puis passez à [l'étape 2 ](./#etape-2-initialisation-de-votre-plateforme){.external} ci-dessous.
 
-- "Nom de votre serveur" : Vous devez définir le nom de votre serveur ou encore le lien d'accès au webmail. Plusieurs choix vous seront proposés.
+### Étape 2 : initialisation de votre plateforme
 
-Exemple :
+Après avoir cliqué sur le lien de l'e-mail à [l'étape 1 ](./#etape-1-reception-de-lemail-de-configuration-de-votre-serveur){.external}, identifiez-vous sur la page qui s'affiche.
 
-- mail
-- exchange
-- exchange2016
+Vous serez redirigé vers la page de configuration suivante :
+![first-use-private-exchange](images/first-use-private-exchange-02.png){.thumbnail}
 
-Une fois le sous domaine sélectionné, il est nécessaire d'indiquer un domaine valide. Le lien d'accès au webmail (owa) sera par exemple : exchange2016.votredomaine.fr La seconde étape consiste à choisir une adresse e-mail pour la réception du mail de validation de votre certificat SSL. Cette adresse e-mail doit être valide. Dans le cas contraire vous ne pourrez pas valider votre certificat SSL.
+Complétez celle-ci selon les indications du tableau ci-dessous.
 
-La liste proposée contient des adresses e-mails génériques tels que :
+| Information          	| Description                                                                                                                                                                                                                             	|
+|----------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Nom de votre serveur 	| Dans le menu déroulant, choisissez le sous-domaine associé à votre nom de domaine. <br> Dans le champ libre, tapez le nom de domaine que vous souhaitez associer.                                                                   	|
+| E-mail               	| Choisissez une adresse e-mail dans la liste proposée. Celle-ci servira à recevoir l'e-mail de validation du certificat SSL de votre plateforme, il est donc impératif qu'elle soit valide ou qu'elle redirige vers une adresse e-mail accessible pour le recevoir.
+| DNS Assist           	| En cochant cette case vous autorisez la configuration automatique de votre zone DNS pour le nom de domaine de votre plateforme. Le domaine doit être géré sur le même compte OVHcloud que votre plateforme. Si vous ne cochez pas lq case, un e-mail avec les informations de configuration de votre zone DNS vous sera envoyé. 	|
 
-- [postmaster@votredomaine.fr](mailto:postmaster@votredomaine.fr){.external}
-- [administrateur@votredomaine.fr](mailto:administrateur@votredomaine.fr){.external}
-- [admin@votredomaine.fr](mailto:admin@votredomaine.fr){.external}
+Après validation de cette étape, un message vous indique que la configuration a bien été effectuée. Vous sont également rappelées l'adresse e-mail de validation du certificat SSL et l'adresse d'accès au webmail de votre plateforme.
 
+### Étape 3 : configuration manuelle de la zone DNS du nom de domaine de votre plateforme
 
-
-> [!success]
+> [!primary]
 >
-> Si votre domaine est hébergé par OVH et que vous n'avez pas ce service de
-> messagerie, vous pouvez créer une redirection (Alias) d'une
-> adresse@votredomaine vers une adresse existante depuis votre espace client.
-> Il est aussi possible de créer une redirection e-mail vers une adresse
-> existante.
+> Cette étape est facultative si vous avez coché « **DNS Assist** » à [l'étape 2 ](./#etape-2-initialisation-de-votre-plateforme){.external}.
 > 
 
-L'option DNS Assist : Cette option permet la configuration automatique de votre zone dns (création du champ de type ipv4 (A) en fonction du sous domaine sélectionné)
+Si votre nom de domaine n'est pas géré sur le même compte client ou non-hébergé par OVHcloud, un second e-mail vous sera envoyé et contiendra les informations nécessaires pour configurer manuellement votre zone dns.
+
+L'e-mail contient les adresses IPv4 et IPv6 de votre plateforme. Renseignez ces adresses dans la zone DNS du sous-domaine préalablement créé à [l'étape 2 ](./#etape-2-initialisation-de-votre-plateforme){.external}, sous les formes respectives d'un enregistrement de type « A » et d'un enregistrement de type « AAAA ». Pour un nom de domaine OVHcloud, consultez notre guide [« Éditer une zone DNS »](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/) pour vous aider.
 
 
 
-> [!alert]
->
-> Il est nécessaire que votre domaine soit géré par le même identifiant que
-> celui utilisé lors de la commande de votre serveur private. Dans le cas
-> contraire la configuration de la zone dns est à réaliser manuellement.
-> 
+### Étape 4: validation du certificat SSL
 
-Dans notre exemple l'option DNS Assist a été cochée. vous pouvez ensuite valider la configuration. Si vous avez utilisé l'option DNS Assist il n'est pas nécessaire de réaliser l'étape 3.
+Après avoir effectué [l'étape 2 ](./#etape-2-initialisation-de-votre-plateforme){.external}, un e-mail vous est envoyé à l'adresse que vous avez choisie pour valider votre certificat SSL.
 
+Cet e-mail vous est envoyé par l'organisme qui délivre le certificat SSL avec pour objet :
 
-## Étape 3 &#58; Configuration manuelle de la zone dns
-Si votre domaine n'est pas géré sur le même identifiant client ou non hébergé par OVH, un second e-mail vous sera envoyé contenant les informations nécessaires pour modifier votre zone dns.
+> **ORDER #1111111 - Domain Control Validation for exchange.votredomaine.com**
 
-voici le contenu de l'e-mail :
+Copiez le code contenu dans l'e-mail et cliquez sur le lien de validation du certificat SSL.
 
+La fenêtre ci-dessous apparaît, collez le code dans la case puis cliquez sur `Next`{.action}.
 
-```None
-1. SAS OVH - http://www.ovh.com
-2. 2 rue Kellermann
-3. BP 80157
-4. 59100 Roubaix
-5. 
-6. Subject: [OVH-EXCHANGE] Votre serveur exchange est presque prêt !
-7. 
-8. Bonjour,
-9. 
-10. Afin de pouvoir commander le certificat SSL de votre serveur, il est nécessaire de créer son adresse dans votre zone DNS.
-11. 
-12. L'adresse que vous avez choisi est : exchange2016.testinterne.ovh
-13. L'IP de votre server est :           149.202.xxx.103
-14. 
-15. Merci de créer un enregistrement A pour celui-ci.
-16. 
-17. Cordialement,
-18. 
-19. Votre Service Client OVH
-```
+![first-use-private-exchange](images/first-use-private-exchange-03.png){.thumbnail}
 
-Il est necessaire dans ce cas de créer l'enregistrement type A correspondant à :
+Un message vous informe si le code renseigné est valide. Si c'est le cas, cliquez sur `Close window`{.action}.
 
-- exchange2016.testinterne.ovh A 149.202.xxx.103
+### Finalisation
 
+Une fois votre certificat SSL validé, un délai de 4 heures peut encore être nécessaire pour la livraison de votre service. Durant cette période, votre plateforme private Exchange n'est pas visible dans votre espace client.
 
-## Étape 4 &#58; Validation de votre certificat SSL
-Une fois votre zone dns configurée de manière automatique ou manuelle, vous recevrez le mail de validation sur l'adresse choisie lors de la personnalisation de votre lien d'accès au webmail. Cela peut prendre jusque 4 heures afin de recevoir ce mail. voici le contenu de l'e-mail reçu :
+Une fois votre serveur prêt et disponible, un e-mail de confirmation vous est envoyé avec pour objet :
 
+> **[xx-11111-ovh] Votre service Private Exchange 2016v1 est prêt !**
 
-![emails](images/4059.png){.thumbnail}
+Pour ajouter votre premier nom de domaine à votre plateforme et configurer les comptes, consultez notre guide [« ajouter un nom de domaine sur son service Exchange »](https://docs.ovh.com/fr/microsoft-collaborative-solutions/ajouter-domaine-exchange/) 
 
-Cliquez ensuite sur le  lien  afin de valider votre certificat SSL. Vous serez redirigé vers une page "ovhssl Security Services" afin de valider votre certificat SSL. Il sera necessaire de copier/coller le token reçu dans l'e-mail et de cliquer sur "Next" pour valider l'installation de votre certificat.
+## Aller plus loin
 
+[Éditer une zone DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/)
 
-![emails](images/4054.png){.thumbnail}
+[Ajouter un nom de domaine sur son service Exchange ](https://docs.ovh.com/fr/microsoft-collaborative-solutions/ajouter-domaine-exchange/) 
 
-
-## Finalisation
-Une fois votre certificat SSL validé, un délai de 4 heures peut encore intervenir pour la livraison de votre service. Durant ces différentes étapes, votre serveur private Exchange n'est pas visible dans votre espace client.
-
-Une fois votre serveur prêt et disponible, un e-mail de confirmation vous sera envoyé. Celui-ci est disponible depuis votre Manager.
-
-Le sujet de cet e-mail est :  Votre service Private Exchange 2016 est prêt !
-
-Pour réaliser la configuration de votre service de messagerie, suivez notre [guide de première configuration]({legacy}1311){.ref}.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

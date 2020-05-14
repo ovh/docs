@@ -10,7 +10,7 @@ section: Getting started
      font-size: 14px;
  }
  pre.console {
-   background-color: #300A24; 
+   background-color: #300A24;
    color: #ccc;
    font-family: monospace;
    padding: 5px;
@@ -27,13 +27,11 @@ section: Getting started
  }
 </style>
 
-
 **Last updated 1<sup>st</sup> July, 2019.**
 
 ## Objective
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will explain how to deploy a simple *Hello World* application on a OVHcloud Managed Kubernetes cluster.
-
 
 ## Requirements
 
@@ -41,9 +39,7 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 - at least one node on the cluster (see the [ordering a node](../adding-nodes/) guide for details) 
 - a well configured  `kubectl` (see the [configuring kubectl](../configuring-kubectl/) guide for details) 
 
-
 ## Instructions
-
 
 ### Step 1 - Deploy your first application
 
@@ -51,7 +47,7 @@ The following command will deploy a simple application (nginx image) using a [Ku
 
 Create a `hello.yaml` file for our `ovhplatform/hello` Docker image:
 
-```
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -93,7 +89,7 @@ spec:
 
 And apply the file:
 
-```
+```bash
 kubectl apply -f hello.yml
 ```
 
@@ -108,12 +104,11 @@ deployment.apps/hello-world-deployment created
 > The application you have just deployed is a simple nginx server with a single static *Hello World* page. 
 > Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/){.external}
 
-
 ### Step 2 - List the pods
 
 You have just deployed a `hello-world` service in a pod in your worker node. Let's verify that everything is correct by listing the pods.
 
-```
+```bash
 kubectl -n=default get pods
 ```
 
@@ -124,12 +119,11 @@ NAME                                           READY     STATUS    RESTARTS   AG
 hello-world-deployment-d98c6464b-7jqvg         1/1       Running   0          47s
 </code></pre>
 
-
 ### Step 3 - List the deployments
 
 You can also verify the deployment is active:
 
-```
+```bash
 kubectl -n=default get deploy
 ```
 
@@ -144,13 +138,13 @@ hello-world-deployment        1         1         1            1           1m
 
 And now you're going to use `kubectl` to see your service:
 
-```
+```bash
 kubectl -n=default get services
 ```
 
 You should see your newly created service:
 
-<pre class="console"><code>$ kubectl get service hello-world 
+<pre class="console"><code>$ kubectl get service hello-world
 NAME          TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)        AGE
 hello-world   LoadBalancer   10.3.81.234   6d6regsa9pc.lb.c1.gra.k8s.ovh.net   80:31699/TCP   4m
 </code></pre>
@@ -169,11 +163,11 @@ If you point your web browser to the service URL, the `hello-world` service will
 
 ### Step 6 - Clean up
 
-AAt the end you can proceed to clean up by deleting the service and the deployment.
+At the end you can proceed to clean up by deleting the service and the deployment.
 
 Let's begin by deleting the service:
 
-```
+```bash
 kubectl delete service hello-world
 ```
 
@@ -187,7 +181,7 @@ No resources found.
 
 Then, you can delete the deployment:
 
-```
+```bash
 kubectl delete deploy hello-world-deployment
 ```
 
@@ -199,10 +193,9 @@ $ kubectl get deployments
 No resources found.
 </code></pre>
 
-
 If now you list the pods:
 
-```
+```bash
 kubectl get pods
 ```
 
@@ -211,8 +204,6 @@ you will see that the pod created for `hello-world` has been deleted too:
 <pre class="console"><code>$ kubectl -n=default get pods
 No resources found
 </code></pre>
-
-
 
 ## Go further
 

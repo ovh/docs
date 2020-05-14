@@ -1,39 +1,36 @@
 ---
 title: 'Installing Real Time Monitoring (RTM)'
 slug: install-rtm
-excerpt: 'Find out how to install Real Time Monitoring on Linux and Windows'
+excerpt: 'Find out how to install Real Time Monitoring using Linux'
 section: 'Diagnostic and rescue mode'
 ---
 
-**Last updated 6th August 2019**
+**Last updated 24th March 2020**
 
 ## Objective
 
-With Real Time Monitoring (RTM), you can partially monitor your server and its activity. In the OVH Control Panel, you can find information on the CPU (Central Processing Unit), RAM (Random Access Memory), disk partitions, open ports, etc. To display this information, you will need to install the RTM package.
+With Real Time Monitoring (RTM), you can partially monitor your server and its activity regarding CPU, RAM, disk partitions, etc. To display this information directly in your OVHcloud Control Panel, it's necessary to install the RTM package on your server first.
 
-**This guide will explain how to install RTM on Linux and Windows.**
+**This guide explains how to install RTM on Linux.**
 
 ## Requirements
 
-- access via SSH (or via your graphical user interface) on your Linux server (root access)
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- root access via SSH (or via graphical user interface) on your server
+
 
 ## Instructions
 
-Once you have installed RTM on the OVH Control Panel, you can monitor your server in the `Dedicated`{.action} section. On the main page for your server, you can find the monitoring information under `Real Time Monitoring`:
-
-![Real Time Monitoring](images/rtm.png){.thumbnail}
-
 > [!primary]
 >
-> Some firewall restrictions may stop your infrastructure from being monitored, even if you have added RTM. Please remember to authorise server access for the OVH monitoring IP addresses. You can find more details for this [here](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/){.external}.
+> Some firewall restrictions may prevent your infrastructure from being monitored, even if you have added RTM. Please remember to authorise server access for the OVHcloud monitoring IP addresses. You can find the details [this guide](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh).
 > 
 
 ### RTM on Linux
-With dedicated servers, RTM gathers real-time information on the CPU, RAM, disks, RAID and hardware.
 
+#### Components
 
-#### Component
+With dedicated servers, RTM gathers real-time information on the CPU, RAM, disks, RAID and hardware. Below, you can find some details regarding the components used.
 
 ##### Beamium
 
@@ -108,6 +105,7 @@ period: 60000
 collectors: /opt/noderig
 ```
 
+
 ##### RTM Binaries
 
 **rtmHardware**:
@@ -122,7 +120,7 @@ collectors: /opt/noderig
 
 - Verifies the health of the RAID (if available).
 
-### Automatically install RTM on Linux.
+### Installing RTM automatically
 
 Once you have connected to your server via SSH, run the following command:
 
@@ -131,15 +129,18 @@ wget -qO - https://last-public-ovh-infra-yak.snap.mirrors.ovh.net/yak/archives/a
 ```
 > [!primary]
 > 
-> This automatic installation may not work on your distribution (depending on certain dependencies). If it does not work, please proceed with manual installation, following the instructions outlined further down.
+> This automatic installation may not work on your distribution (depending on certain dependencies). If it produces an error, please proceed with the manual installation, following the instructions outlined in the sections below.
 >
 
+### Installing RTM manually
 
-#### Manual installation on Debian/Ubuntu.
+#### Manual installation on Debian/Ubuntu
 
-##### Using add-apt-repository
 
-In one line for Debian and Ubuntu
+##### Step 1: Adding OVHcloud repositories
+
+- by using **add-apt-repository**
+
 ```sh
 #metrics repo
 add-apt-repository "deb http://last.public.ovh.metrics.snap.mirrors.ovh.net/$(lsb_release --id --short | tr 'A-Z' 'a-z') $(lsb_release --codename --short) main"
@@ -147,53 +148,67 @@ add-apt-repository "deb http://last.public.ovh.metrics.snap.mirrors.ovh.net/$(ls
 add-apt-repository "deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/$(lsb_release --id --short | tr 'A-Z' 'a-z') $(lsb_release --codename --short) main"
 ```
 
-###### Editing a file manually
+- by adding them manually
 
-Add the RTM and the metrics repository for Debian:
+For **Debian**:
 
-`<distribution codename>` is the name of your distribution (e.g. 'jessie').
+`<distribution codename>` is the name of your distribution (for example: "buster").
   
 ```sh
-vi /etc/apt/sources.list.d/rtm.list
+nano /etc/apt/sources.list.d/rtm.list
 #metrics repo
 deb http://last.public.ovh.metrics.snap.mirrors.ovh.net/debian <distribution codename> main
 # rtm repo
 deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/debian <distribution codename> main
 ```
 
-Add the RTM and the metrics repository for Ubuntu:
+For **Ubuntu**:
 
-`<distribution codename>` is the name of your distribution (e.g. 'xenial').
+`<distribution codename>` is the name of your distribution (for example: "bionic").
   
 ```sh
-vi /etc/apt/sources.list.d/rtm.list
+nano /etc/apt/sources.list.d/rtm.list
+
+```
+Add these lines and save the file:
+  
+```sh
 # metrics repo
 deb http://last.public.ovh.metrics.snap.mirrors.ovh.net/ubuntu <distribution codename> main
 # rtm repo
 deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/ubuntu <distribution codename> main
 
 ```
-Install the apt key:
+> [!primary]
+> 
+> Concerning current distributions, please note that the necessary packages might not be included yet in the repositories of up-to-date Linux OS versions. In that case, please use the codename of an older (Ubuntu) version as a workaround.
+>
+
+
+##### Step 2: Installing the apt key
 
 ```sh
 curl  https://last-public-ovh-rtm.snap.mirrors.ovh.net/ovh_rtm.pub | apt-key add -
 curl  http://last.public.ovh.metrics.snap.mirrors.ovh.net/pub.key | apt-key add -
 ```
 
-Install the RTM packages:
+##### Step 3: Installing the RTM packages
 
 ```sh
 apt-get update
 apt-get install ovh-rtm-metrics-toolkit
 ```
 
-#### CentOS
+#### Manual installation on CentOS
 
 Add the RTM and the metrics repository for CentOS:
 
 ```sh
-vi /etc/yum.repos.d/ovh-rtm.repo
+nano /etc/yum.repos.d/ovh-rtm.repo
+```
+Add these lines and save the file:
 
+```sh
 [rtm]
 name=OVH RTM RHEL/ CentOS $releasever - $basearch
 baseurl=http://last.public.ovh.rtm.snap.mirrors.ovh.net/centos/$releasever/$basearch/Packages/
@@ -218,15 +233,17 @@ yum update
 yum install ovh-rtm-metrics-toolkit
 ```
 
-### FreeBSD
+#### Manual installation on FreeBSD
 
 Add the RTM and the metrics repository for FreeBSD:
 
 ```sh
-mkdir -p /usr/local/etc/pkg/repos 
+mkdir -p /usr/local/etc/pkg/repos
+nano /usr/local/etc/pkg/repos/OVH.conf
+```
+Add these lines and save the file:
 
-vi /usr/local/etc/pkg/repos/OVH.conf
-
+```sh
 # OVH mirror
 RTM: {
   url: "http://last.public.ovh.rtm.snap.mirrors.ovh.net/FreeBSD-pkg/${ABI}/latest",
@@ -252,32 +269,27 @@ service noderig start
 service beamium start
 ```
 
-### Install RTM on Windows.
+> [!primary]
+>**RTM on Windows**
+>
+The RTM package is currently not compatible with Windows systems. We are continuously developing and improving our services; eventually there will be a Windows option as well.
+>
 
-The RTM packet is not yet compatible with Windows (although it will be compatible soon).
 
-### Uninstall RTMv1
+### RTM in the OVHcloud Control Panel
 
-The legacy monitoring tool is automatically removed from your system if you install this version.
+Once you have successfully installed RTM, you can view the monitoring data for your server in the the OVHcloud Control Panel. (It might be necessary to refresh your browser or to log out and log in again). Navigate to the `Server`{.action} section and select your server from the left-hand menu. On the `General information`{.action} tab, scroll down to find the monitoring information.
 
-#### Manual uninstall (legacy monitoring tool)
+![Real Time Monitoring](images/rtm_panel.png){.thumbnail}
 
-In order to remove the legacy monitoring tool, please proceed theses steps:
-
-- Remove directory "/usr/local/rtm":
-```sh
-rm -Rf /usr/local/rtm
-```
-
-- Remove crontab :
-Edit the file /etc/crontab and remove the line with "rtm"
-* it looks like */1 * * * * root /usr/local/rtm/bin/rtm XX > /dev/null 2> /dev/null
 
 
 ## Go further
 
-[What are the IP addresses of the OVH monitoring?](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/){.external}
+[What are the IP addresses of the OVH monitoring?](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh)
 
-[Visualize your data](https://docs.ovh.com/gb/en/metrics/usecase-visualize/){.external}
+[Visualise your data](https://docs.ovh.com/gb/en/metrics/usecase-visualize)
+
+[Activating and using rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue)
 
 Join our community of users on <https://community.ovh.com/en/>.

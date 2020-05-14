@@ -1,22 +1,28 @@
 ---
 title: 'Konfiguration von E-Mail Pro auf iPhone oder iPad'
 slug: iphone-konfiguration
-excerpt: 'Hier erfahren Sie, wie Sie einen E-Mail Pro Account via Mail App auf einem iPhone oder iPad einrichten.'
+excerpt: 'Erfahren Sie hier, wie Sie einen E-Mail Pro Account via Mail App auf einem iPhone oder iPad einrichten'
 section: 'Konfiguration des E-Mail-Clients'
 order: 3
 ---
 
-**Stand 27.06.2018**
+**Letzte Aktualisierung am 18.03.2020**
 
-## Einleitung
+## Ziel
 
 E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden.
 
-**In dieser Anleitung erfahren Sie, wie Sie einen E-Mail Pro Account via Mail App auf einem iPhone oder iPad einrichten.**
+**In dieser Anleitung wird erläutert, wie Sie einen E-Mail Pro Account via Mail App auf einem iPhone oder iPad einrichten.**
+
+> [!warning]
+>OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+>
+>Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Hinweise finden Sie im Teil „Weiterführende Informationen” dieser Anleitung.
+>
 
 ## Voraussetzungen
 
-- Sie besitzen ein [E-Mail Pro](https://www.ovh.de/emails/email-pro/){.external} Angebot.
+- Sie besitzen ein [E-Mail Pro](https://www.ovh.de/emails/email-pro/) Angebot.
 - Die Mail App ist auf Ihrem Gerät installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
@@ -25,7 +31,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 > Diese Anleitung gilt für folgende iOS-Versionen: iOS 7 und neuere Versionen.
 >
 
-## Beschreibung
+## In der praktischen Anwendung
 
 Es gibt zwei Möglichkeiten, um Ihre E-Mail-Adresse zur Mail App hinzuzufügen:
 
@@ -37,6 +43,14 @@ Die vorliegende Anleitung beschreibt von hier an nur die Konfiguration über Ihr
 
 
 ### Schritt 1: Account hinzufügen
+
+> [!primary]
+>
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro**X**.mail.ovh.net. Das „X“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> 
+> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), wenn Sie im Bereich `Web`{.action} im Menü links unter `E-Mail Pro`{.action}
+> den Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+>
 
 Tippen Sie auf dem Bildschirm Ihres Gerätes auf `Einstellungen`{.action}. Es gibt nun abhängig von Ihrer iOS-Version zwei Möglichkeiten, um den Account hinzuzufügen:
 
@@ -60,10 +74,10 @@ Tippen Sie nun auf `Weiter`{.action} und geben Sie dann die folgenden Informatio
 |Information|Beschreibung|
 |---|---|
 |IMAP oder POP|Lassen Sie die Standardauswahl **IMAP** eingestellt.|
-|Hostname (eintreffende Mails)|Geben Sie den Server „pro1.mail.ovh.net“ ein.|
+|Hostname (eintreffende Mails)|Tragen Sie „pro**X**.mail.ovh.net“ ein.|
 |Benutzername (eintreffende Mails)|Geben Sie die vollständige E-Mail-Adresse ein.|
 |Passwort (eintreffende Mails)|Geben Sie das Passwort der E-Mail-Adresse ein.|  
-|Hostname (ausgehende Mails)|Geben Sie den Server „pro1.mail.ovh.net“ ein.|
+|Hostname (ausgehende Mails)|Tragen Sie „pro**X**.mail.ovh.net“ ein.|
 |Benutzername (ausgehende Mails)|Geben Sie die vollständige E-Mail-Adresse ein.|
 |Passwort (ausgehende Mails)|Geben Sie das Passwort der E-Mail-Adresse ein.|
 
@@ -79,19 +93,19 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 
 |Servertyp|Servername|SSL|Port|
 |---|---|---|---|
-|Für eintreffende E-Mails|pro1.mail.ovh.net|Ja|993|
-|Für ausgehende E-Mails|pro1.mail.ovh.net|Ja|587|
+|Für eintreffende E-Mails|pro**X**.mail.ovh.net|Ja|993|
+|Für ausgehende E-Mails|pro**X**.mail.ovh.net|Ja|587|
 
 ### Schritt 2: E-Mail-Adresse verwenden
 
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
-Eine OVH Webanwendung mit [kollaborativen Funktionen](https://www.ovh.com/de/emails/){.external} ist verfügbar unter [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external}. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+OVHcloud bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen](https://www.ovh.de/emails/). Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder aus einem Webhosting Angebot auf iPhone oder iPad](https://docs.ovh.com/de/emails/mail-konfiguration-iphone-ios-91/){.external}
+[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder aus einem Webhosting Angebot auf iPhone oder iPad](https://docs.ovh.com/de/emails/mail-konfiguration-iphone-ios-91/)
 
-[Konfiguration von Exchange auf iPhone oder iPad](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_automatische_konfiguration_in_ios_iphone_-_ipad){.external}
+[Konfiguration von Exchange auf iPhone oder iPad](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_automatische_konfiguration_in_ios_iphone_-_ipad)
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

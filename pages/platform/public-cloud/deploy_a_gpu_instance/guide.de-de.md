@@ -1,129 +1,130 @@
 ---
-title: 'GPU Instanz einrichten'
+title: 'GPU Instanzen einrichten'
 slug: gpu-intanz-einrichten
-excerpt: 'Hier erfahren Sie, wie Sie eine GPU Instanz unter Linux oder Windows einrichten.'
+excerpt: 'Erfahren Sie hier, wie Sie unter Windows und Linux eine GPU Instanz einrichten'
 section: 'Über das OVH Kundencenter'
 ---
 
-**Stand 18.12.2018**
+**Letzte Aktualisierung am 06.12.2019**
 
-## Einleitung
+## Ziel
 
-GPU Instanzen sind den anderen Instanzen der Produktreihe 2017 technisch sehr ähnlich, verfügen jedoch über eine Grafikkarte (Graphic Processing Unit oder kurz GPU). Die verwendete Technologie (*pci_passthrough*) ermöglicht es dem Betriebssystem der Instanz, die GPU genau wie auf einer physischen Maschine zu kontrollieren.
+GPU Instanzen ähneln technisch den Instanzen aus der Produktreihe 2017, verfügen jedoch zusätzlich über eine Grafikkarte (Graphic Processing Unit oder GPU). Die verwendete Technik (*pci_passthrough*) ermöglicht es dem Betriebssystem der Instanz, die GPU genau wie eine physische Maschine zu steuern.
 
-OVH bietet die folgenden GPUs: NVIDIA GeForce GTX 1060, GTX 1070 und GTX 1080Ti. 
+Bei den eingesetzten GPUs handelt es sich um NVIDIA Tesla V100. 
 
 > [!warning]
 >
-> GPU Instanzen sind im Moment nur in den Rechenzentren GRA3, GRA5 und BHS3 verfügbar. Es kann daher sein, dass Sie ein neues Projekt erstellen und die 2017er Reihe auswählen müssen. Weitere Informationen finden Sie [hier](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/) (Englisch).
+> Derzeit sind GPU Instanzen nur in den Rechenzentren GRA3, GRA5, GRA7 und BHS3 verfügbar. Möglicherweise müssen Sie ein neues Projekt erstellen und die Reihe 2017 auswählen. [Mehr erfahren](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range) (EN).
 > 
 
-**In dieser Anleitung erfahren Sie, wie Sie eine GPU Instanz unter Linux oder Windows einrichten.**
-
+**Diese Anleitung erläutert, wie Sie eine GPU Instanz unter Linux oder Windows einrichten.**
 
 ## Voraussetzungen
 
-- Sie haben ein Public Cloud Projekt mit Zugriff auf die Regionen erstellt, in denen GPU Instanzen verfügbar sind (GRA3, GRA5 und BHS3).
-
-## Beschreibung
-
-Im Folgenden erklären wir Ihnen, wie Sie eine GPU Instanz unter Linux oder Windows einrichten.
+- Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) mit Zugriff auf die Regionen, in denen GPUs verfügbar sind (GRA3, GRA5, GRA7 und BHS3) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
 
-### Linux
+## In der praktischen Anwendung
 
-Alle von uns zur Verfügung gestellten Images können auf GPU Instanzen verwendet werden.
+Nachfolgend finden Sie die Informationen, die zum Bereitstellen einer GPU Instanz unter Linux oder Windows erforderlich sind.
+Beachten Sie bitte, dass Sie das Instanz-Betriebssystem nicht ändern können, um von Linux auf Windows zu wechseln oder umgekehrt. Stellen Sie daher sicher, dass die Instanz in der Ausgangskonfiguration mit dem richtigen Betriebssystem erstellt wird.
+
+
+### Unter Linux
+
+Alle von uns angebotenen Images können auf einer GPU Instanz verwendet werden.
 
 > [!primary]
 >
-> Wenn Sie das Kernel-Modul nicht manuell kompilieren möchten, empfehlen wir Ihnen, eine offiziell von Nvidia unterstützte Distribution zu verwenden, für die Sie einsatzbereite Treiber herunterladen können: <https://developer.nvidia.com/cuda-downloads>.
+> Wenn Sie mit dem manuellen Kompilieren eines Kernelmoduls nicht vertraut sind, empfehlen wir die Verwendung einer Distribution, die offiziell von NVIDIA unterstützt wird und für die _turnkey_ Treiber angeboten werden: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Loggen Sie sich in Ihr [OVH Kundencenter ](https://www.docs.ovh.com/auth/?action=gotomanager){.external}ein und wählen Sie Ihr Public Cloud Projekt aus. Klicken Sie dann auf `Aktionen`{.action}, `Server hinzufügen`{.action} und wählen Sie eine GPU Instanz aus:
+Wenn Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) angemeldet haben, klicken Sie im Dashboard Ihres Public Cloud Projekts auf `Instanz erstellen`{.action} und wählen Sie eine GPU Instanz:
 
-![Public Cloud](images/EN-Flavors.png){.thumbnail}
+![public-cloud](images/gpu.png){.thumbnail}
 
-Wenige Sekunden später wird die Instanz gestartet. Sie können sich dann auf Ihrer Instanz einloggen und überprüfen, ob die Grafikkarte erkannt wird: 
+Wählen Sie die gewünschte Unix-Distribution aus:
+
+![public-cloud](images/linuxchoice.png){.thumbnail}
+
+Die Instanz wird einige Sekunden später gestartet. Sie können sich dann anmelden und nach der Grafikkarte suchen: 
 
 ```ssh
 lspci | grep -i nvidia
-00:05.0 VGA compatible controller: NVIDIA Corporation Device 1c03 (rev a1)
-00:06.0 Audio device: NVIDIA Corporation Device 10f1 (rev a1)
+00:05.0 3D-Controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```
 
-Die Karte ist vorhanden, kann jedoch noch nicht verwendet werden, da zuerst die zugehörigen NVIDIA-Treiber installiert werden müssen. Die verfügbaren Pakete finden Sie [hier](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+Die Grafikkarte ist vorhanden, kann aber noch nicht verwendet werden. Dazu müssen Sie zuerst den NVIDIA-Treiber installieren. Die passenden Pakete finden Sie unter diesem Link: [Liste der verfügbaren Linux-Pakete](http://developer.download.nvidia.com/compute/cuda/repos/).
 
-Geben Sie nun die folgenden Befehle ein:
+Die folgenden Befehle sind noch erforderlich:
 
 ```sh
-wget URL_des_herunterzuladenden_pakets
+wget URL_of_packet_to_download
 sudo dpkg -i cuda-repo-XXXX-XXXXXX
-sh apt-get update
-apt-get upgrade
-apt-get install cuda
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install cuda
 sudo reboot
 ```
 
 > [!primary]
 >
-> Der Linux-Befehl kann je nach installierter Distribution variieren. Wenn Sie sich nicht sicher sind, lesen Sie bitte die offizielle Dokumentation Ihrer Linux-Version.
+> Der Linux-Befehl kann je nach Version variieren. Im Zweifelsfall lesen Sie bitte die offizielle Dokumentation für Ihre Linux-Version.
 > 
 
 
-Nach dem Neustart der Instanz erscheint die Grafikkarte im NVIDIA-Dienstprogramm:
+Nach dem Neustart der Instanz wird die Grafikkarte im NVIDIA-Dienstprogramm angezeigt:
 
 ```sh
 nvidia-smi
-Wed Apr 26 13:05:25 2017
+Fri Dec  6 12:32:25 2019       
 +-----------------------------------------------------------------------------+
-| NVIDIA-SMI 375.51                 Driver Version: 375.51                    |
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
 |-------------------------------+----------------------+----------------------+
 | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
 | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
 |===============================+======================+======================|
-|   0  GeForce GTX 106...  Off  | 0000:00:05.0     Off |                  N/A |
-|  0%   22C    P0    26W / 120W |      0MiB /  6072MiB |      0%      Default |
+|   0  Tesla V100-PCIE...  On   | 00000000:00:05.0 Off |                    0 |
+| N/A   26C    P0    35W / 250W |      0MiB / 16130MiB |      5%      Default |
 +-------------------------------+----------------------+----------------------+
 
 +-----------------------------------------------------------------------------+
 | Processes:                                                       GPU Memory |
-|  GPU       PID  Type  Process name                               Usage      |
+|  GPU       PID   Type   Process name                             Usage      |
 |=============================================================================|
 |  No running processes found                                                 |
 +-----------------------------------------------------------------------------+
 ```
 
-Die GPU Instanz ist nun voll funktionsfähig und kann verwendet werden.
+Die GPU Instanz ist jetzt voll funktionsfähig und verwendbar.
 
 
-### Windows
+### Unter Windows
 
-Der Nvidia-Treiber und die Virtualisierungslösung *KVM/pci_passthrough* sind nicht voll kompatibel. **Die Windows-Standard-Images funktionieren nicht.**
+Es gibt Inkompatibilitäten zwischen dem NVIDIA-Treiber und der Visualisierungslösung *KVM/pci_passthrough*. **Standard-Windows-Images funktionieren nicht.**
+Aus diesem Grund bieten wir spezielle Images an, die auf einem virtuellen UEFI-BIOS basieren und dem Treiber eine ordnungsgemäße Funktion ermöglichen (dies gilt nur für G1-, G2- und G3-Instanzen; Reihe 2017 und frühere).
 
-Wir stellen spezielle Images zur Verfügung, die auf einem virtuellen UEFI-BIOS basieren, damit der Treiber korrekt funktioniert:
+Wenn Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) angemeldet haben, klicken Sie im Dashboard Ihres Public Cloud Projekts auf `Instanz erstellen`{.action} und wählen Sie eine GPU Instanz:
 
-![Public Cloud](images/EN-WindowsImages.png){.thumbnail}
+![public-cloud](images/gpu.png){.thumbnail}
 
+Wählen Sie dann die gewünschte Windows-Distribution aus: 
 
-> [!warning]
->
-> Wir können leider nicht garantieren, dass diese Lösung für alle zukünftigen Versionen des NVIDIA-Treibers funktioniert.
->
-> Daher empfehlen wir Ihnen, vor einem Update des NVIDIA-Treibers unbedingt einen Snapshot zu erstellen, um falls nötig zu einem vorherigen Zustand zurückzukehren.
->
+![public-cloud](images/oschoice.png){.thumbnail}
 
-Nach dem Start Ihrer GPU Instanz, installieren Sie den NVIDIA-Treiber über die [offizielle Website](http://www.nvidia.de/Download/index.aspx){.external}.
+Sobald Ihre GPU Instanz gestartet wurde, müssen Sie den NVIDIA-Treiber von der [offiziellen Webseite](https://www.nvidia.com/Download/index.aspx) installieren.
 
-Starten Sie eine Instanz mit einem der GPU-Typen (win-g1-15, win-g1-30, …).
+Starten Sie eine Instanz mit einem der verfügbaren GPU-Typ (t1-45, t1-90, t1-180 ...). Dieser Vorgang sollte nur wenige Minuten dauern.
 
-Die Instanz wird nach wenigen Minuten gestartet. Installieren Sie nun noch den notwendigen Treiber, der hier erscheint:
+Anschließend müssen Sie nur noch den erforderlichen Treiber installieren, der dann in den Windows-Einstellungen angezeigt wird:
 
+![public-cloud](images/driverson.png){.thumbnail}
 
-![Public Cloud](images/WindowsDriverVersion.png){.thumbnail}
-
-![Public Cloud](images/WindowsDeviceManager.png){.thumbnail}
+![public-cloud](images/devicemanager.png){.thumbnail}
 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en).

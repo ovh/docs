@@ -2,11 +2,11 @@
 title: 'Conectarse a una instancia de Public Cloud'
 slug: primera-conexion
 legacy_guide_number: 1787
-excerpt: 'Cómo conectarse a una instancia de Public Cloud'
+excerpt: 'Esta guía explica como conectarse a las instancias de Public Cloud de OVHcloud utilizando Windows y Linux'
 section: 'Primeros pasos'
 ---
 
-**Última actualización: 11/06/2018**
+**Última actualización: 27/03/2020**
 
 ## Objetivo
 
@@ -18,33 +18,33 @@ Para conectarse a una instancia de Public Cloud, el procedimiento es similar a u
 ## Requisitos
 
 - Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Haber creado una [instancia de Public Cloud](https://www.ovh.es/public-cloud/instancias/){.external}.
+- Haber creado una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external}.
 
 
 ## Procedimiento
 
-### Conectarse a una instancia Linux desde un entorno Linux o Mac
+### Iniciar sesión en una instancia de Linux utilizando un sistema operativo Linux/Mac
 
-Utilice el siguiente comando para conectarse por SSH a su instancia de Public Cloud:
+Ejecute el siguiente comando SSH para iniciar sesión en su instancia Public Cloud de OVHcloud. Para ello, sustituya «usuario» según sea necesario e «instance_IP» por la dirección IP de su instancia:
 
 ```sh
-ssh *usuario*@IP_instancia
+ssh user@instance_IP
 ```
 
-En Public Cloud, el usuario dependerá de la distribución que utilice. A continuación se ofrece una lista (no exhaustiva) de los usuarios según la distribución:
+El usuario de Public Cloud será diferente en función del sistema operativo que esté utilizando. La tabla siguiente muestra una lista (no exhaustiva) de usuarios por sistema operativo:
 
-|Distribución|Usuario|
+|Sistema operativo|Usuario|
 |---|---|
-|Archlinux|arch|
-|Centos 6|centos|
-|Centos 7|centos|
+|Arch Linux|arch|
+|CentOS 6|centos|
+|CentOS 7|centos|
 |CoreOS|core|
 |Debian 7|debian|
 |Debian 8|debian|
-|Debian 9|debian|
-|Fedora 25|fedora|
-|Fedora 26|fedora|
-|FreeBSD 11.0 ZFS|freeBSD|
+|Debian 9|debian|
+|Fedora 25|fedora|
+|Fedora 26|fedora|
+|FreeBSD 11.0 ZFS|FreeBSD|
 |Ubuntu 14.04|ubuntu|
 |Ubuntu 16.04|ubuntu|
 |Ubuntu 16.10|ubuntu|
@@ -52,13 +52,13 @@ En Public Cloud, el usuario dependerá de la distribución que utilice. A contin
 
 > [!primary]
 >
-> Si se conecta directamente, tendrá los permisos del usuario correspondiente. Si quiere disponer de privilegios de **superusuario**, utilice el comando `sudo`.
+> Si inicia sesión directamente, tendrá los derechos de usuario tipo. Si quiere ser un usuario raíz, puede utilizar el comando sudo -i o sudo su.
 >
 
 
-#### Advertencia sobre la huella del servidor SSH remoto
+**Aviso relativo a la huella digital del servidor SSH remoto:**
 
-La primera vez que se conecte, deberá confirmar la autenticidad del host tecleando **yes**.
+Al iniciar sesión por primera vez, es necesario confirmar la autenticidad del host haciendo clic en `«Sí»`.
 
 ```sh
 The authenticity of host 217.xxx.xxx.98 (217.xxx.xx.98) cant be established.
@@ -67,56 +67,54 @@ Are you sure you want to continue connecting (yes/no)?`
 ```
 
 
-### Conectarse a una instancia Linux desde un entorno Windows
+### Iniciar sesión en una instancia de Linux utilizando un sistema operativo Windows
 
-Para conectarse a una instancia Linux desde Windows, puede usar un programa como [PuTTY](https://www.putty.org/){.external} o, en las últimas versiones de Windows 10, utilizar las [funciones nativas](https://docs.microsoft.com/es-es/windows/wsl/about){.external}. A continuación, siga los pasos arriba descritos para Linux.
+Para iniciar sesión en una instancia de Linux utilizando Windows, puede utilizar un programa como [PuTTY](https://www.putty.org/){.external} o —para las últimas versiones de Windows 10— las [características nativas](https://docs.microsoft.com/es-es/windows/wsl/about){.external}. A continuación, puede seguir las mismas instrucciones anteriores.
 
 
-### Conectarse a una instancia Windows
+### Iniciar sesión en una instancia de Windows
 
 #### Finalizar la instalación
 
-Una vez creada la instancia, deberá finalizar el **Sysprep** (preparación del sistema). Para ello, abra la consola VNC desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} como se muestra en la imagen:
+Una vez que haya creado su instancia, deberá finalizar algo denominado *sysrep*. Para hacerlo, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y ejecute la consola VNC desde el panel de la instancia:
 
-![Consola VNC](images/vnc_console.png)
+![VNC console](images/vnc_console.png)
 
-En primer lugar podrá elegir su país, el idioma de la aplicación y el idioma del teclado. Haga clic en `Next`{.action}:
+En el primer paso, seleccione el país, el idioma y la distribución del teclado. Seguidamente, haga clic en `«Siguiente»`{.action}:
 
-![Selección de idioma en el Sysprep](images/sysprep_first_step.png)
+![Choose language in sysprep](images/sysprep_first_step.png)
 
-A continuación, asigne una contraseña al usuario **administrator**:
+A continuación, deberá seleccionar la contraseña de *administrador*:
 
-![Elección de contraseña en el Sysprep](images/sysprep_first_step.png)
+![Choose password in sysprep](images/sysprep_password.png)
 
-Haga clic en `Finish`{.action} para terminar. La instancia se reiniciará. 
-
-Ya podrá conectarse al servidor Windows.
+Por último, confirme los cambios realizados haciendo clic en `«Finalizar»`{.action}. La instancia se reiniciará y entonces podrá conectarse a su servidor de Windows.
 
 
-#### Conectarse a Windows
+#### Iniciar sesión en Windows
 
-Para conectarse a su instancia Windows, utilice directamente el **Escritorio remoto** de su equipo Windows.
+Deberá iniciar sesión directamente en su instancia de Windows desde su PC Windows utilizando la función `«Escritorio remoto»`:
 
-![Elección de contraseña en el Sysprep](images/remote_desktop.png)
+![Choose password in sysprep](images/remote_desktop.png)
 
-A continuación solo tendrá que indicar la IP de su instancia (en la primera etapa de la conexión a través del escritorio remoto) e introducir el nombre de usuario (**administrator**) y la contraseña que haya establecido.
+En los próximos pasos, deberá introducir la dirección IP de su instancia (primer paso de inicio de sesión a través del escritorio remoto) y, a continuación, su nombre de usuario (administrador) y la contraseña que estableció:
 
-![Escritorio remoto - Conexión](images/remote_desktop_connection_IP.png)
+![Remote desktop - Login](images/remote_desktop_connection_IP.png)
 
-![Escritorio remoto - Conexión de usuario](images/remote_desktop_connection_user.png)
+![Remote desktop - User login](images/remote_desktop_connection_user.png)
 
-Aparecerá un mensaje solicitándole que confirme la conexión. Haga clic en `Sí`{.action}:
+Entonces aparecerá un mensaje en el que se pide confirmar las credenciales de inicio de sesión. Haga clic en `«Sí»`{.action}:
 
-![Confirmación de la conexión](images/connection_validation.png)
+![Login confirmation](images/connection_validation.png)
 
-Ya se habrá conectado a la instancia.
+Entonces habrá iniciado sesión en su instancia.
 
 > [!primary]
 >
-> Si tiene problemas para conectarse a su instancia Windows, compruebe que el firewall de Windows autorice la conexión RDP. Para más información, consulte [esta guía](https://docs.ovh.com/es/vps/windows-first-config/){.external}.
->
+> Si tiene algún problema para iniciar sesión en su instancia de Windows, asegúrese de que el cortafuegos de Windows autorice las conexiones RDP. Si necesita más información, consulte nuestra guía [«Configuración del servidor de Windows»](https://docs.ovh.com/es/vps/windows-first-config/){.external}.
+> 
 
 
 ## Más información
 
-IntInteractúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

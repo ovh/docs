@@ -2,7 +2,8 @@
 title: 'Creating inbox rules in OWA'
 slug: creating-inbox-rules-in-owa
 excerpt: 'Find out how to create email redirections and filters using OWA'
-section: 'Outlook Web Access'
+section: 'Outlook Web Application (OWA)'
+order: 2
 ---
 
 **Last updated 11th March 2020**
@@ -10,7 +11,7 @@ section: 'Outlook Web Access'
 
 ## Objective
 
-With the "Inbox rules" option, you can create an elaborate set of rules to handle incoming emails. These can help you to keep your email account organised by automatically sorting emails into folders. It's also the way to define forwarding settings (redirections) and to filter out spam messages.
+With the "Inbox rules" option, you can create an elaborate set of rules to handle incoming emails. These can help you to keep your email account organised by automatically sorting emails into folders. This is also the way to define forwarding settings (redirections) and to filter out spam messages.
 
 **Find out how to create email filters and redirections using the Outlook Web App (OWA).**
 
@@ -49,7 +50,7 @@ For example, you can set as condition "Received from..." and specify an email ad
 
 #### Checkbox "Stop processing more rules"
 
-If you have created several rules, it's possible that more than one will apply to an incoming email. Leave this option activated for any rule that should never be followed by other rules; this is a simple way to prevent further treatment of emails that match multiple conditions.
+If you have created several rules, it is possible that more than one will apply to an incoming email. Leave this option activated for any rule that should never be followed by other rules; this is a simple way to prevent further treatment of emails that match multiple conditions.
 
 ### Creating useful rules by means of two examples: Redirection and spam filtering 
 
@@ -89,7 +90,7 @@ Give your rule a name and select as conditions "It includes these words" and "in
 
 ![inboxrules](images/exchange-rules-step8.png){.thumbnail}
 
-Since no automated spam protection can decide with perfect accuracy whether an email is actually spam, it's good practice to collect these emails in a dedicated folder. This way, you can verify the contents of this spam folder before emptying it. To achieve this, select as action "Move, copy, or delete", then "Move the message to folder...". Select a folder from the list. Save the rule by clicking `OK`{.action}.
+Since no automated spam protection can decide with perfect accuracy whether an email is actually spam, it is good practice to collect these emails in a dedicated folder. This way, you can verify the contents of this spam folder before emptying it. To achieve this, select as action "Move, copy, or delete", then "Move the message to folder...". Select a folder from the list. Save the rule by clicking `OK`{.action}.
 
 ![inboxrules](images/exchange-rules-step9_2.png){.thumbnail}
 
@@ -104,7 +105,7 @@ Please note that spam false positives cannot be declared directly from OWA. If y
 
 [Creating automatic replies in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa)
 
-[Sharing calendars in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_calendars_via_owa/)
+[Sharing calendars in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_calendars_via_owa)
 
 [Using the Outlook Web App with an email account](https://docs.ovh.com/gb/en/emails/using-owa)
 

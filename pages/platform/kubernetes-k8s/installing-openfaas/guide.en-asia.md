@@ -5,7 +5,7 @@ excerpt: 'Find out how to install a FaaS platform on OVHcloud Managed Kubernetes
 section: Tutorials
 ---
 
-**Last updated 1<sup>st</sup> July, 2019.**
+**Last updated May 12<sup>th</sup>, 2020.**
 
 <style>
  pre {
@@ -137,21 +137,6 @@ helm upgrade openfaas --install openfaas/openfaas \
     --set serviceType=LoadBalancer
 ```
 
-
-> [!warning]
-> ### Troubleshooting
->
->If you get an `Error: Unauthorized` when installing the `openfaas/openfaas` chart, please try the following steps:
->
-> 
->     kubectl create serviceaccount --namespace kube-system tiller
->     kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
->     kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
->     helm init --skip-refresh --upgrade --service-account-tiller
->
-> 
-
-
 As suggested in the install message, you can verify that OpenFaaS has started by running:
 
 ```
@@ -191,7 +176,7 @@ kubectl get svc -n openfaas gateway-external -o wide
 >
 > <pre class="console"><code>$ kubectl get svc -n openfaas gateway-external -o wide
 > NAME               TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)          AGE    
-> gateway-external   LoadBalancer   10.3.xxx.yyy  PENDINF                            8080:30012/TCP   10s   
+> gateway-external   LoadBalancer   10.3.xxx.yyy  PENDING                           8080:30012/TCP   10s   
 > </code></pre>
 >
 >The problem come from the the `LoadBalancer` creation, that is asynchronous, and the provisioning of the load balancer can take several minutes.
@@ -241,21 +226,21 @@ $ ./faas-cli version
       |_|
 
 CLI:
- commit:  b42d0703b6136cac7b0d06fa2b212c468b0cff92
- version: 0.8.11
+ commit:  f7c29ea19b5df9d7aa87e9c70aacf4d9315da2cd
+ version: 0.12.4
 
 Gateway
  uri:     http://xxxrt657xx.lb.c1.gra.k8s.ovh.net:8080
- version: 0.13.0
- sha:     fa93655d90d1518b04e7cfca7d7548d7d133a34e
- commit:  Update test for metrics server
+ version: 0.18.17
+ sha:     18f6c720b50db7da5f9c410f9fd3369ed7aff379
+ commit:  Extract a caching function_query type
 
 
 Provider
  name:          faas-netes
  orchestration: kubernetes
- version:       0.7.5 
- sha:           4d3671bae8993cf3fde2da9845818a668a009617
+ version:       0.10.5
+ sha:           9be50543b372381a505e9e54a1356bb076c8f01f
 
 $ ./faas-cli list
 Function                      	Invocations    	Replicas
@@ -325,7 +310,7 @@ In OpenFaaS you can write your these function on many languages, not only the us
 
 That also means that in order to create your own functions, you need to have [Docker](https://www.docker.com/){.external} installed in your workstation, and you will need to push the images in a Docker registry, either the official one or a private one.
 
-If you need a private registry, you can [install one](https://docs.docker.com/registry/){.external} on your OVHcloud Managed Kubernetes cluster. For this tutorial we are choosing to deploy our image on the official Docker registry.
+If you need a private registry, you can use our [OVHcloud Managed Private Registry](../../private-registry). For this tutorial we are choosing to deploy our image on the official Docker registry.
 
 
 ## Writing our first function
@@ -347,7 +332,7 @@ Edit `hello-js.yml` to set the name of the image you'll want to upload to docker
 version: 1.0
 provider:
   name: openfaas
-  gateway: http://6d6rt657vc.lb.c1.gra.k8s.ovh.net:8080
+  gateway: http://xxxxx657xx.lb.c1.gra.k8s.ovh.net:8080
 functions:
   hello-js:
     lang: node

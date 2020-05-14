@@ -2,125 +2,143 @@
 title: 'Gérer le renouvellement de mes services'
 slug: renouvellement-automatique-ovh
 excerpt: 'Apprenez à gérer le renouvellement de vos services OVH dans votre espace client'
-section: Facturation
+section: 'Gérer mes services et leur renouvellement'
 order: 1
 ---
 
-**Dernière mise à jour le 15/05/2019**
+**Dernière mise à jour le 10/04/2020**
 
 ## Objectif
 
-Si vous disposez de services OVH actifs, vous pouvez administrer leur renouvellement via votre espace client.
+Vous avez la possibilité d'administrer le renouvellement et la résiliation de vos services dans l'espace client.
 
-**Découvrez comment gérer le renouvellement automatique de vos services via l'espace client OVH.**
+**Découvrez comment gérer le renouvellement automatique de vos services via l'espace client OVHcloud.**
 
 > [!primary]
 >
-> Selon votre lieu de résidence, la législation locale, ainsi que les solutions concernées, certains détails de ce guide peuvent varier ou ne pas s'appliquer à votre situation. Si vous avez des doutes, veuillez consulter vos contrats OVH. Ceux-ci sont disponibles depuis votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, en accédant à `Mes services`{.action} puis à `Mes contrats`{.action}.
+> Selon votre lieu de résidence, la législation locale, ainsi que les solutions concernées, certains détails de ce guide peuvent varier ou ne pas s'appliquer à votre situation. Si vous avez des doutes, veuillez consulter vos contrats OVHcloud. Ceux-ci sont disponibles depuis votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, en accédant à `Mes services`{.action} puis à `Mes contrats`{.action}.
 >
+
 
 ## Prérequis
 
-- Avoir accès à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - Posséder des services OVH actifs.
+- Être contact facturation de vos services OVHcloud
 
 ## En pratique
 
-Il existe différentes façons de gérer le renouvellement de vos services et, dans certains cas, vous pouvez choisir parmi plusieurs méthodes. Nous vous recommandons de lire les guides suivants, ainsi que de vous concentrer sur les opérations que vous souhaitez effectuer. 
+À l'achat, vos services sont paramétrés pour être automatiquement renouvelés à échéance, par prélèvement sur votre moyen de paiement enregistré dans votre espace client. Vous pouvez résilier ces services dès que vous le souhaitez dans votre espace client, afin qu'il ne soient pas reconduits une fois leur période de validité terminée.
 
-- [« Visualiser l’état du renouvellement de vos services. »](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#visualiser-letat-du-renouvellement-de-vos-services){.external} Ce guide vous aide à vérifier si vos services sont renouvelés automatiquement. Il vous permet également d'obtenir leur date de renouvellement ou d'expiration.
+Mais il est également possible de paramétrer certains produits (Domaines, Hébergements, VPS, Serveurs dédiés) en renouvellement « manuel», si vous ne souhaitez pas de renouvellements et de prélèvements automatiques.
 
-- [« Gérer le renouvellement de vos services. »](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#gerer-le-renouvellement-de-vos-services){.external} Ce guide vous aide à activer ou désactiver le renouvellement automatique, à modifier la fréquence de paiement d'un service, ainsi qu'à payer les renouvellements avant leur échéance.
+Nous vous recommandons de lire les guides suivants, ainsi que de vous concentrer sur les opérations que vous souhaitez effectuer. 
 
-- [« Gérer vos moyens de paiement. »](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#gerer-vos-moyens-de-paiement_1){.external} Ce guide vous permet de vous assurer que vous disposez d'un moyen de paiement enregistré pour les futurs renouvellements. Vous pouvez également ajouter et supprimer des moyens de paiement, si nécessaire.
+- [ Afficher les statuts de renouvellement de vos services. ](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#afficher-les-statuts-de-renouvellement-de-vos-services){.external} Ce guide vous aide à vérifier si vos services sont renouvelés automatiquement. Il vous permet également d'obtenir leur date de renouvellement ou d'expiration.
+
+- [Gérer le renouvellement de vos services.](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#le-renouvellement-chez-ovhcloud){.external} Ce guide vous aide à activer ou désactiver le renouvellement automatique, à modifier la fréquence de paiement d'un service, ainsi qu'à payer les renouvellements avant leur échéance.
+
+- [Gérer vos moyens de paiement.](https://docs.ovh.com/fr/billing/manage-payment-methods){.external} Ce guide vous permet de vous assurer que vous disposez d'un moyen de paiement enregistré pour les futurs renouvellements. Vous pouvez également ajouter et supprimer des moyens de paiement, si nécessaire.
+
+### Accéder au paramétrage de vos services
+
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur le nom associé à votre identifiant client dans la barre de menus située dans le coin supérieur droit, puis choisissez `Produits et services`{.action}.
+
+![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 
 ### Afficher les statuts de renouvellement de vos services
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur le nom associé à votre identifiant client dans la barre de menus située dans le coin supérieur droit, puis choisissez `Mes services`{.action}.
+La page « Mes services » contient un tableau de gestion de vos services OVHcloud. Vous pouvez y retrouver leurs noms, le type de service, la disponibilité du service (s'il est, par exemple, suspendu), son statut (type de renouvellement, action à réaliser, etc...), et la date d'effet de l'action à réaliser.
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step1.png){.thumbnail}
+![manageautomaticrenewal](images/manageautorenew2b.png){.thumbnail}
 
-La page qui s'affiche contient un tableau de gestion de vos solutions OVH. Vous pouvez y voir la date d’expiration de chaque service et sa fréquence de renouvellement. Pour ce faire, accédez aux colonnes « Date de renouvellement » et « Fréquence de paiement ».
+Vous avez la possibilité de trier les colonnes par ordre croissant ou décroissant, d'utiliser le champ de recherche, ou également d'appliquer un filtre pour n'afficher que certains de vos services selon les critères de votre choix.
 
-Vous pouvez aussi utiliser les options de filtrage pour trier l'affichage de vos services.
+![manageautomaticrenewal](images/manageautorenew3.png){.thumbnail}
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step2.png){.thumbnail}
+Vos critères de filtrage seront alors affichés au dessus du tableau. Voici un exemple de filtre permettant d'afficher les noms de domaines pour lesquels une facture est en attente de réglement.
+
+![manageautomaticrenewal](images/manageautorenew4b.png){.thumbnail}
+
+### Le renouvellement chez OVHcloud
+
+#### **Le renouvellement automatique**
+
+Par défaut, à la souscription, vos services sont paramétrés en **renouvellement automatique**. Ce mode vous permet de vous assurer que vos services soient systématiquement reconduits à échéance. De plus, si vous avez enregistré un moyen de paiement sur votre compte client, vos factures seront automatiquement prélevées sur celui-ci.
+
+Si vous n'avez enregistré aucun moyen de paiement, une facture vous sera adressée par e-mail. Il vous suffira alors de la régler en ligne.
+
+Pour les services ayant une fréquence de renouvellement automatique supérieure à 1 mois (3 mois, 6 mois, 12 mois), un rappel vous est également envoyé par e-mail le mois précédent, récapitulant les services allant être renouvelés prochainement.
+
+Si vous ne souhaitez pas prolonger l'un de ces services, il vous suffit alors de le résilier dans votre espace client.
+
+#### **Le renouvellement manuel**
+
+Vous avez également la possibilité, pour certains produits OVH (domaines, hébergements, VPS, serveurs dédiés), de les passer en **renouvellement manuel**. Ce mode de renouvellement est utile si vous n'êtes pas certain de vouloir conserver le service à échéance, ou si vous ne souhaitez pas que vos factures soient prélevées automatiquement sur votre moyen de paiement. 
+
+Si vous choisissez ce mode, vous recevrez plusieurs relances par e-mail avant échéance, chacune contenant un lien permettant de renouveler en ligne les services arrivant à expiration. Vous pourrez aussi simplement effectuer le règlement depuis votre espace client.
+
+> [!warning]
+>
+>Si vous n'effectuez pas de paiement pour un service en renouvellement manuel, celui-ci sera suspendu à sa date d'expiration puis supprimé au bout de quelques jours.
+>
+>En revanche, si vous ne souhaitez pas conserver ce service, il n'est pas nécessaire d'en demander la résiliation.
+>
+
 
 ### Gérer le renouvellement de vos services
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur le nom associé à votre identifiant client dans la barre de menus située dans le coin supérieur droit, puis choisissez `Mes services`{.action}.
+À la droite de chaque service, cliquez sur le bouton `...`{.action} dans la colonne « Actions » pour paramétrer le renouvellement de vos services.
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step1.png){.thumbnail}
+![manageautomaticrenewal](images/manageautorenew5b.png){.thumbnail}
 
-La page qui s'affiche contient un tableau de gestion de vos solutions OVH. Le cas échéant, vous pouvez :
+> [!primary]
+>
+>Selon le service, s'il est éligible ou non au renouvellement manuel, certaines actions ne sont pas disponibles.
+>
+ 
+#### **Configurer le renouvellement**
 
-|Actions possibles|Description|
-|---|---|
-|Modifier la fréquence de paiement|Modifiez la fréquence de paiement d'un service. Pour certaines solutions, cette action ou certaines fréquences peuvent ne pas être disponibles.|
-|Payer le service|Réglez une solution avant sa date de renouvellement automatique.|
-|Activer/désactiver le renouvellement automatique|Activez ou désactivez le paiement automatique d'un service.|
+![manageautomaticrenewal](images/manageautorenew6b.png){.thumbnail}
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step3.png){.thumbnail}
+Selon le service choisi, vous pouvez le paramétrer en renouvellement manuel, ou choisir la fréquence de renouvellement automatique. Le cas échéant, vous pourrez donc choisir le type de renouvellement, ainsi que la fréquence de celui-ci.
 
-#### Modifier la fréquence de paiement
+![manageautomaticrenewal](images/manageautorenew7.png){.thumbnail}
 
-Cette action change la fréquence de paiement d'un service avec renouvellement automatique. Il en existe quatre : tous les mois, tous les trois mois, tous les six mois et tous les ans. Pour certaines solutions, cette action ou certaines fréquences peuvent ne pas être disponibles.
+En fonction du choix effectué, vous seront précisés les futures dates de prélèvement, le moyen de paiement qui sera utilisé, ainsi que la date d'expiration du service.
 
-Cliquez sur les trois points à droite du service concerné, puis sur `Modifier la fréquence de paiement`{.action}.
+#### **Renouveler le service**
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step4.png){.thumbnail} 
+Cette action est uniquement proposée pour les services paramétrés en renouvellement manuel, et vous redirige vers une interface de paiement en ligne. Vous pouvez renouveler ces services à tout moment avant leur expiration, ainsi que choisir la durée de leur renouvellement.
 
-Dans la fenêtre qui s'ouvre, sélectionnez une nouvelle fréquence de paiement dans le menu déroulant. Puis cliquez sur `Suivant`{.action} et `Confirmer`{.action}. La nouvelle fréquence de paiement sera alors appliquée à la prochaine date de renouvellement automatique de votre service.
+#### **Anticiper le paiement**
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step5.png){.thumbnail} 
+Cette action est proposée pour les services paramétrés en renouvellement automatique, et vous redirige vers une interface de paiement en ligne. Vous pouvez renouveler ces services à tout moment avant leur expiration, ainsi que choisir la durée de leur renouvellement. Dans ce cas, la durée de validité souscrite sera rajoutée au temps de validité en cours. Vous ne perdrez pas le temps de validité restant.
 
-#### Payer le service
+#### **Résilier à expiration**
 
-Vous avez la possibilité de payer un service avant sa date de renouvellement automatique. Pour certaines solutions, cette action peut ne pas être disponible.
+Cette action est proposée pour les services paramétrés en renouvellement automatique. En choisissant cette action, le renouvellement et le prélèvement automatiques sont désactivés pour le service que vous avez sélectionné.
 
-Cliquez sur les trois points à droite du service concerné, puis sur `Payer pour le service`{.action}. Si vous souhaitez effectuer cette opération pour plusieurs solutions, sélectionnez-les en cochant leurs cases respectives dans la partie gauche du tableau, puis cliquez sur `Payer pour le service`{.action} sous le tableau.
+#### **Régler ma facture**
 
-![manageautomaticrenewal](images/manage-automatic-renewal-step6.png){.thumbnail} 
+Si vous possédez des services en renouvellement automatique, mais n'avez pas enregistré de moyen de paiement permettant d'effectuer un prélèvement pour le règlement de vos facture, une mention « Facture à payer » s'affiche lorsqu'une facture est en attente de règlement. Il vous suffit alors de choisir l'action `Régler ma facture`{.action}, qui vous redirigera vers une plateforme de paiement en ligne.
 
-Vous serez ensuite redirigé vers l'interface de renouvellement. Si vous n'êtes pas redirigé automatiquement, vous pouvez également utiliser ce lien : <https://www.ovh.com/fr/cgi-bin/order/renew.cgi>.
+#### **Actions groupées**
 
-Suivez alors les étapes indiquées jusqu'à la fin du processus de renouvellement.
+Vous avez la possibilité d'effectuer des actions groupées, en sélectionnant plusieurs services dans le tableau, puis en cliquant sur le bouton `Actions`{.action}.
 
-#### Activer ou désactiver le renouvellement automatique
+![manageautomaticrenewal](images/manageautorenew9.png){.thumbnail}
 
-Vous pouvez activer ou désactiver le renouvellement automatique de vos services. Pour ce faire, cliquez sur les trois points situés à droite de la solution concernée, puis sur `Activer le paiement automatique`{.action} ou ` Désactiver le paiement automatique`{.action}. 
+Le tableau ci-dessous détaille les actions groupées possibles.
 
-Lisez ensuite les informations qui s'affichent et cliquez sur `Confirmer`{.action} pour valider votre action.
+|  Actions possibles  |  Description  |
+|  :-----          |  :-----          |
+|  Renouveler |  Renouvelez plusieurs services en une seule fois. Vous serez redirigé vers une page permettant de choisir la durée de renouvellement souhaitée, et pourrez réaliser un paiement en ligne. |
+|  Désactiver le paiement automatique |  Désactivez le renouvellement automatique sur plusieurs services en une seule fois. Si l'un ou plusieurs de vos services ne sont pas compatibles avec le renouvellement manuel, cela vous sera indiqué lors de la validation. |
+|  Activer le paiement automatique |  Réactivez le renouvellement automatique sur plusieurs services en une seule fois. Seuls les services éligibles seront mis à jour. |
+|  Exporter en CSV |  Exportez dans un fichier csv l'ensemble de vos services et leurs dates d'expiration. |
+|  Aligner les dates de renouvellement |  Permet d'aligner la date d'expiration de vos services à un jour calendaire. Seuls les services éligibles pourront être mis à jour. |
 
-Notez que la désactivation du renouvellement automatique ne signifie pas l'annulation de votre service : celui-ci restera actif jusqu'à sa date d'expiration. Si vous souhaitez supprimer définitivement une solution à sa date d'expiration, consultez notre guide [« Gérer vos services depuis l’interface “Gérer mes services” »](https://docs.ovh.com/fr/billing/gerer-ses-services-ovh/#gerer-vos-services-depuis-linterface-gerer-mes-services){.external} pour en savoir plus.
-
-![manageautomaticrenewal](images/manage-automatic-renewal-step7.png){.thumbnail} 
-
-### Gérer vos moyens de paiement
-
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur le nom associé à votre identifiant client dans la barre de menus située dans le coin supérieur droit, puis choisissez `Moyens de paiement`{.action}.
-
-![manageautomaticrenewal](images/manage-automatic-renewal-step8.png){.thumbnail}
-
-La page qui s'affiche contient un tableau répertoriant les moyens de paiement de vos solutions. Vous pouvez les gérer et en ajouter de nouveaux.
-
-Pour chaque moyen de paiement, vous verrez également :
-- son type (selon celui que vous avez décidé d'ajouter) ;
-- une description pour vous aider à le distinguer des autres ;
-- s'il est actuellement enregistré comme moyen de paiement par défaut ;
-- son statut (variable selon le type de moyen de paiement et son activation).
-
-![manageautomaticrenewal](images/manage-automatic-renewal-step9.png){.thumbnail}
-
-Pour ajouter un nouveau moyen de paiement, cliquez sur `Ajouter un moyen de paiement`{.action} puis sélectionnez-le. Suivez ensuite les étapes indiquées et confirmez votre choix.
-
-![manageautomaticrenewal](images/manage-automatic-renewal-step10.png){.thumbnail}
-
-Pour supprimer un moyen de paiement via l'espace client, vous devez disposer d'au moins un autre moyen de paiement valide.
-
-Pour supprimer tous vos moyens de paiement, utilisez l'API et procédez comme suit :
-- commencez par obtenir l'ID de la liste de paiement : <https://api.ovh.com/console/#/me/payment/method#GET> ;
-- supprimez ensuite le moyen de paiement en utilisant l'ID que vous avez obtenue à l'étape précédente : <https://api.ovh.com/console/#/me/payment/method/%7BpaymentMethodId%7D#DELETE>.
 
 ## Aller plus loin
 

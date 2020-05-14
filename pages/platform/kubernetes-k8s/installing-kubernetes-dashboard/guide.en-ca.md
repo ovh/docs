@@ -6,15 +6,14 @@ section: Tutorials
 order: 3
 ---
 
-
-**Last updated 27<sup>st</sup> January, 2020.**
+**Last updated April 08<sup>th</sup>, 2020.**
 
 <style>
  pre {
      font-size: 14px;
  }
  pre.console {
-   background-color: #300A24; 
+   background-color: #300A24;
    color: #ccc;
    font-family: monospace;
    padding: 5px;
@@ -31,12 +30,9 @@ order: 3
  }
 </style>
 
-
 The [Kubernetes Dashboard](https://github.com/kubernetes/dashboard){.external} is a general purpose, web-based UI for Kubernetes clusters. It allows users to manage and troubleshoot applications running in their cluster, as well as manage the cluster itself.
 
-
-![kubernetes-dashboard](./images/kubernetes-dashboard-02.png){.thumbnail}
-
+![kubernetes-dashboard](images/kubernetes-dashboard-02.png){.thumbnail}
 
 ## Before you begin
 
@@ -50,27 +46,27 @@ This tutorial assumes that you already have a working OVHcloud Managed Kubernete
 
 According to which version of Kubernetes you are running, you have to choose the right Dashboard version to deploy in order to avoid incompatibilities.
 
-### For Kubernetes 1.14, choose version [v2.0.0-beta1](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-beta1)
-
-```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta1/aio/deploy/recommended.yaml
-```
-
 ### For Kubernetes 1.15, choose version [v2.0.0-beta4](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-beta4)
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta4/aio/deploy/recommended.yaml
 ```
 
-### For Kubernetes 1.16, choose version [v2.0.0-rc2](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-rc2)
+### For Kubernetes 1.16, choose version [v2.0.0-rc3](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-rc3)
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc2/aio/deploy/recommended.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc3/aio/deploy/recommended.yaml
+```
+
+### For Kubernetes 1.17, choose version [v2.0.0-rc7](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-rc7)
+
+```bash
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc7/aio/deploy/recommended.yaml
 ```
 
 It should display something like this:
 
-<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc2/aio/deploy/recommended.yaml
+<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc7/aio/deploy/recommended.yaml
 namespace/kubernetes-dashboard created
 serviceaccount/kubernetes-dashboard created
 service/kubernetes-dashboard created
@@ -94,7 +90,6 @@ In order to access the Dashboard, you need to create a new user with the service
 ### Create Service Account
 
 First, we will create a service account with the name `admin-user` in the `kubernetes-dashboard` namespace.
-
 
 To do this, please copy the following YAML into a `dashboard-service-account.yml` file:
 
@@ -151,7 +146,6 @@ It should display something like this:
 clusterrolebinding.rbac.authorization.k8s.io/admin-user created
 </code></pre>
 
-
 ### Bearer Token
 
 Next step is recovering the bearer token you will use to log in your Dashboard. Execute following command:
@@ -162,19 +156,20 @@ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboar
 
 It should display something like:
 
-<pre class="console"><code>Name:         admin-user-token-6gl6l
+<pre class="console"><code>$ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user-token | awk '{print $1}')
+Name:         admin-user-token-2kv9s
 Namespace:    kubernetes-dashboard
 Labels:       &lt;none>
-Annotations:  kubernetes.io/service-account.name=admin-user
-              kubernetes.io/service-account.uid=b16afba9-dfec-11e7-bbb9-901b0e532516
+Annotations:  kubernetes.io/service-account.name: admin-user
+              kubernetes.io/service-account.uid: fa0408f5-bb43-4bf3-976c-0e584e284332
 
 Type:  kubernetes.io/service-account-token
 
 Data
 ====
-ca.crt:     1025 bytes
-namespace:  11 bytes
-token:      eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2V
+namespace:  20 bytes
+token:      &lt;very_very_long_token>
+ca.crt:     1801 bytes
 </code></pre>
 
 Copy the token and store it securely, as it's your key to the Dashboard.
@@ -193,11 +188,8 @@ Your kubectl is opening a connection and acting as a proxy from your workstation
 Starting to serve on 127.0.0.1:8001
 </code></pre>
 
-Next, access the Dashboard at:
-
-```
+Next, access the Dashboard at:  
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
-```
 
 In the log-in page, select authentication by token, and use the bearer token you recovered in the previous step.
 
@@ -206,3 +198,12 @@ In the log-in page, select authentication by token, and use the bearer token you
 You will then be taken directly to your Dashboard:
 
 ![kubernetes-dashboard](images/kubernetes-dashboard-02.png){.thumbnail}
+
+## Delete all kubernetes-dashboard resources
+
+To remove all resources created by your previous `kubernetes-dashboard` deployment, just execute the following command line:
+
+```bash
+kubectl delete ns kubernetes-dashboard
+kubectl delete -f dashboard-cluster-role-binding.yml
+```

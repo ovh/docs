@@ -1,28 +1,42 @@
 ---
 title: 'Konfiguration von E-Mail Pro auf der Windows 10 Mail App'
 slug: mail-konfiguration-windows-10
-excerpt: 'Hier erfahren Sie, wie Sie Ihren E-Mail Pro Account auf der Mail App von Windows 10 einrichten.'
+excerpt: 'Erfahren Sie hier, wie Sie Ihren E-Mail Pro Account auf der Mail App von Windows 10 einrichten'
 section: 'Konfiguration des E-Mail-Clients'
 order: 7
 ---
 
-**Stand 29.06.2018**
+**Letzte Aktualisierung am 18.03.2020**
 
-## Einleitung
+## Ziel
 
 E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihre E-Mail-Adresse von dem von Ihnen bevorzugten Gerät aus verwenden.
 
 **In dieser Anleitung erfahren Sie, wie Sie Ihren E-Mail Pro Account auf der Mail App von Windows 10 einrichten.**
 
+> [!warning]
+>OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+>
+>Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Hinweise finden Sie im Teil „Weiterführende Informationen” dieser Anleitung.
+>
+
 ## Voraussetzungen
 
-- Sie verfügen über eine [E-Mail Pro](https://www.ovh.de/emails/email-pro/){.external} Lösung.
+- Sie verfügen über eine [E-Mail Pro](https://www.ovh.de/emails/email-pro) Lösung.
 - Die Mail App ist auf Ihrem Gerät installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Schritt 1: Account hinzufügen
+
+> [!primary]
+>
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro**X**.mail.ovh.net. Das „X“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> 
+> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), wenn Sie im Bereich `Web`{.action} im Menü links unter `E-Mail Pro`{.action}
+> den Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+>
 
 Nachdem Sie die Mail App auf Ihrem Gerät gestartet haben, können Sie einen Account auf zwei Arten hinzufügen:
 
@@ -43,9 +57,9 @@ Geben Sie nun folgende Informationen ein:
 |Kennwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
 |Kontoname|Geben Sie einen Namen für diesen Account ein, damit Sie ihn später von anderen Accounts in Ihrer Mail App unterscheiden können.|
 |Sendet Ihre Nachrichten unter diesem Namen|Geben Sie den Namen an, der als Absender angezeigt werden soll, wenn E-Mails mit dieser Adresse verschickt werden.|
-|Posteingangsserver|Tragen Sie den Server „pro1.mail.ovh.net:993“ ein.|
+|Posteingangsserver|Tragen Sie „pro**X**.mail.ovh.net:993“ ein.|
 |Kontotyp|Wir empfehlen die Verwendung von **IMAP4**. Sie können auch **POP** im Drop-down-Menü auswählen (dann werden Ihre E-Mails lokal in Ihrer Mail App gespeichert).|
-|Postausgangsserver|Tragen Sie den Server „pro1.mail.ovh.net:587“ ein.|
+|Postausgangsserver|Tragen Sie „pro**X**.mail.ovh.net:587“ ein.|
 
 Überprüfen Sie, dass die folgenden Haken gesetzt sind:
 - „Ausgangsserver erfordert Authentifizierung“
@@ -63,14 +77,14 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 
 |Servertyp|Servername|SSL|Port|
 |---|---|---|---|
-|Eingangsserver|pro1.mail.ovh.net|Ja|993|
-|Ausgangsserver|pro1.mail.ovh.net|Ja|587|
+|Eingangsserver|pro**X**.mail.ovh.net|Ja|993|
+|Ausgangsserver|pro**X**.mail.ovh.net|Ja|587|
 
 ### Schritt 2: E-Mail-Adresse verwenden
 
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
-OVH bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen](https://www.ovh.de/emails/){.external}. Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+OVHcloud bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen](https://www.ovh.de/emails/). Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
 ## Weiterführende Informationen
 

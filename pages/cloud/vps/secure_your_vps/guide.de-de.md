@@ -1,20 +1,20 @@
 ---
-title: VPS Sicherheit
+title: 'VPS Sicherheit'
 slug: vps-sicherheit
-section: Erste Schritte  
+section: 'Erste Schritte'
 ---
 
 **Stand 18.01.2018**
 
 ## Einleitung
 
-Wenn Sie einen VPS bestellen, wird dieser mit einer vorinstallierten Distribution geliefert, aber ohne nativ eingerichtetes Sicherheitsprotokoll. Es liegt also an Ihnen, Ihren VPS zu sichern. OVH kann in diesem Punkt nicht eingreifen.
+Wenn Sie einen VPS bestellen, wird dieser mit einer vorinstallierten Distribution geliefert, aber ohne nativ eingerichtetes Sicherheitsprotokoll. Es liegt also an Ihnen, Ihren VPS zu sichern. OVHcloud kann in diesem Punkt nicht eingreifen.
 
 **Zweck dieser Anleitung ist, Ihnen allgemeine Tipps zur Sicherung Ihres Servers zu geben.**
  
 > [!warning]
 >
-> OVH stellt Ihnen Maschinen zur Verfügung, für die Sie alleine die Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir keinerlei Administrator-Aufgaben auf diesen ausführen. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit Ihrer Anlage zu gewährleisten. Wir stellen Ihnen diesen Leitfaden zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Server-Verwaltungsaufgaben zu helfen.  Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben.  Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> OVHcloud stellt Ihnen Maschinen zur Verfügung, für die Sie alleine die Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir keinerlei Administrator-Aufgaben auf diesen ausführen. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit Ihrer Anlage zu gewährleisten. Wir stellen Ihnen diesen Leitfaden zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Server-Verwaltungsaufgaben zu helfen.  Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben.  Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
 > 
 
 ## Voraussetzungen
@@ -186,9 +186,9 @@ iptables -L
 
 Es wird empfohlen, dass Sie die Regeln dieser Firewall erstellen und an Ihre Bedürfnisse anpassen. Für sämtliche Informationen über die verschiedenen möglichen Konfigurationen konsultieren Sie bitte das entsprechende Kapitel der offiziellen Dokumentation Ihrer Distribution.
 
-### Konfiguration des OVH Firewall Network
+### Konfiguration des OVHcloud Firewall Network
 
-Mit Firewall Network bietet OVH eine eigene Firewall direkt am Eingang Ihrer Infrastruktur an. Installation und Konfiguration von Firewall Network ermöglichen das Blockieren von Protokollen, bevor diese überhaupt auf Ihrem Server ankommen.
+Mit Firewall Network bietet OVHcloud eine eigene Firewall direkt am Eingang Ihrer Infrastruktur an. Installation und Konfiguration von Firewall Network ermöglichen das Blockieren von Protokollen, bevor diese überhaupt auf Ihrem Server ankommen.
 
 Unter [Firewall Network](https://docs.ovh.com/gb/en/dedicated/firewall-network/){.external} finden Sie die Anleitung für diese Firewall.
 
@@ -196,13 +196,13 @@ Unter [Firewall Network](https://docs.ovh.com/gb/en/dedicated/firewall-network/)
 
 Das Konzept der Sicherheit beschränkt sich nicht auf den Schutz eines Systems vor Angriffen. 
 
-Die Datensicherung (Backup) ist ein wesentliches Element Ihrer Sicherheit, weshalb OVH Ihnen drei Backup-Optionen anbietet:
+Die Datensicherung (Backup) ist ein wesentliches Element Ihrer Sicherheit, weshalb OVHcloud Ihnen drei Backup-Optionen anbietet:
 
 - Die Option `Snapshot`, erlaubt Ihnen das manuelle Erstellen eines Schnappschusses (Snapshot) der virtuellen Maschine (erhältlich für VPS SSD, VPS Cloud und VPS Cloud RAM).
 - Die Option `Automatisches Backup` ist ein täglich geplantes Backup Ihres VPS (zusätzliche Festplatten ausgenommen), das exportiert und dreifach repliziert wird, bevor es von Ihrem Kundencenter aus verfügbar ist (nur erhältlich für VPS Cloud und VPS Cloud RAM).
 - Die Option `Backup Storage` ermöglicht Ihnen, auf einem dedizierten Speicherplatz manuell Dateien abzulegen und wiederherzustellen. Als Protokolle stehen FTP, NFS und CIFS zur Verfügung, um mit den Zugangsmethoden der Nutzer auf allen Betriebssystemen kompatibel zu sein.  Dies schützt Ihre Daten im Falle einer Service-Unterbrechung (nur erhältlich für VPS Cloud und VPS Cloud RAM).
 
-Weitere Informationen zu unseren Storage-Angeboten für VPS: <https://www.ovh.de/virtual_server/backup-vps.xml>.
+Weitere Informationen zu unseren Storage-Angeboten für VPS: <https://www.ovhcloud.com/de/vps/>.
 
 ## Weiterführende Informationen
 

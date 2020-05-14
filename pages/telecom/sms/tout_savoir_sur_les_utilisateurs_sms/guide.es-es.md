@@ -6,7 +6,7 @@ legacy_guide_number: g2144
 section: 'Gestionar el servicio'
 ---
 
-**Última actualización: 19/11/2019** 
+**Última actualización: 30/03/2020** 
 
 ## Objetivo
 
@@ -64,6 +64,13 @@ Podrá realizar dos acciones:
 - **Establecer una cuota**: Establezca una cuota para el usuario en el campo `Nueva cuota`{.action}. Una vez alcanzada la cuota asignada, el envío de SMS se bloqueará para ese usuario.
 
 ![Activar una cuota](images/smsusers04.png){.thumbnail}
+
+> [!primary]
+> 
+> La asignación de una cuota a un usuario de la API reducirá considerablemente el crédito total de la cuenta de SMS.
+> 
+> Por ejemplo, si una cuenta de SMS tiene un total de 200 créditos y asigna 150 créditos a un usuario de la API, este crédito se descontará de la cuenta de SMS, que solo dispondrá de 50 créditos.
+>
 
 ### 3. Asignar un límite a un usuario de la API
 

@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment installer un serveur Veeam Backup & Replication ave
 section: 'Veeam'
 ---
 
-**Dernière mise à jour le 2018/11/08**
+**Dernière mise à jour le 24/09/2018**
 
 ## Objectif
 

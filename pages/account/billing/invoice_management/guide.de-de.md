@@ -5,7 +5,7 @@ excerpt: 'Hier erfahren Sie, wie Sie Ihre Rechnungen und deren Bezahlung verwalt
 section: Abrechnung
 ---
 
-**Stand 20.01.2020**
+**Stand 15.04.2020**
 
 ## Einleitung
 
@@ -15,7 +15,7 @@ OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie alle Ihre Rech
 
 > [!primary]
 >
-> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `Meine Dienstleistungen`{.action}, unter `Meine Verträge`{.action} einsehen können.
+> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `Produkte und Dienstleistungen`{.action}, unter `Verträge`{.action} einsehen können.
 >
 
 ## Voraussetzungen
@@ -56,7 +56,11 @@ Die Steuern werden auf der Rechnung erst unten beim Gesamtpreis „Total inkl. M
 
 #### Rechnungen einsehen und verwalten
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und klicken Sie rechts oben auf Ihren Vornamen, um Ihre Rechnungen im Bereich `Abrechnungen`{.action} einzusehen. Sie gelangen dann auf eine Übersichtsseite, auf der alle Ihre Rechnungen aufgelistet werden: 
+Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} angemeldet sind, klicken Sie oben rechts auf Ihren Namen, um über `Rechnungen`{.action} den Abrechnungsbereich aufzurufen.
+
+![Kundencenter](images/hubinvoices.png){.thumbnail}
+
+Sie gelangen dann auf eine Übersichtsseite, auf der alle Ihre Rechnungen aufgelistet werden: 
 
 ![Rechnungsübersicht](images/billing_section.png){.thumbnail}
 

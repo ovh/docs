@@ -1,8 +1,8 @@
 ---
-title: Verwaltung des Office 365 Reseller Dienstes (CSP2) bei OVH
+title: 'Verwaltung des Office 365 Reseller Dienstes (CSP2) bei OVH'
 slug: verwaltung_einer_office_365_reseller_lizenzgruppe_csp2
-excerpt: So verwalten Sie den Office 365 Reseller Dienst (CSP2) bei OVH
-section: Office 365
+excerpt: 'So verwalten Sie den Office 365 Reseller Dienst (CSP2) bei OVH'
+section: Office
 ---
 
 **Stand 19.03.2018**
@@ -92,4 +92,4 @@ Um sich dort einzuloggen, geben Sie Ihren Benutzernamen und das Passwort ein, da
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

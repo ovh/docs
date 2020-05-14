@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment créer votre identifiant et gérer vos informations
 Section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 30/01/2020**
+**Dernière mise à jour le 10/04/2020**
 
 ## Objectif
 
@@ -61,7 +61,7 @@ Votre identifiant client est renseigné en haut à droite sur toutes vos facture
 Vous pouvez retrouver votre identifiant dans votre espace client, en cliquant sur votre nom en haut à droite.
 
 
-![identifiant client](images/nichandle02.png){.thumbnail}
+![identifiant client](images/newhub1.png){.thumbnail}
 
 
 ## Comment vous connecter à votre espace client ?
@@ -92,9 +92,9 @@ Si vous n'avez pas renseigné d'adresse e-mail de secours ou que celle-ci est é
 
 ### Modifier vos informations personnelles
 
-Vous pouvez modifier les informations de votre compte depuis votre espace client. Pour cela, cliquez sur votre nom en haut à droite dans votre espace client, puis sur `Mon compte`{.action}
+Vous pouvez modifier les informations de votre compte depuis votre espace client. Pour cela, cliquez sur votre nom en haut à droite dans votre espace client, puis sur vos initiales.
 
-![identifiant client](images/nichandle05.png){.thumbnail}
+![identifiant client](images/newhub2.png){.thumbnail}
 
 Cliquez alors sur les `...`{.action} dans la section « Mon profil », puis sur `Éditer mon profil`{.action}.
 

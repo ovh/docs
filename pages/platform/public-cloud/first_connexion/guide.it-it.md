@@ -6,20 +6,18 @@ excerpt: 'Scopri come connettersi a un’istanza Public Cloud'
 section: 'Per iniziare'
 ---
 
-**Ultimo aggiornamento: 20/09/2018**
+**Ultimo aggiornamento 06/12/2019**
 
 ## Obiettivo
 
-Per connettersi a un’istanza Public Cloud, il procedimento da seguire è simile quello di una connessione «normale» a un server dedicato (VPS, server dedicato, ecc...), ma in questo caso con un utente specifico.
+Per connettersi a un’istanza Public Cloud OVH, il procedimento da seguire è simile quello di una connessione «normale» a un server dedicato (VPS, server dedicato, ecc…), ma in questo caso con un utente specifico.
 
-**Questa guida ti mostra come connettersi a un’istanza Public Cloud su Linux o Windows.**
-
+**Questa guida ti mostra come connettersi a un’istanza Public Cloud OVHcloud con Windows e Linux.**
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Aver creato un’[istanza Public Cloud](https://www.ovh.it/public-cloud/istanze/){.external}
-
+* Avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Aver creato un’[istanza Public Cloud OVH](https://www.ovhcloud.com/it/public-cloud/){.external}
 
 ## Procedura
 
@@ -35,15 +33,15 @@ Nel Public Cloud, l’utente varia in base alle distribuzioni utilizzate. Ecco u
 
 |Distribuzioni|Utente|
 |---|---|
-|Archilinux|arch|
-|Centos 6|centos|
-|Centos 7|centos|
-|CoreOS|Core|
-|Debian 7|debian|
-|Debian 8|debian|
-|Debian 9|debian|
-|Fedora 25|fedora|
-|Fedora 26|fedora|
+|Arch Linux|arch|
+|CentOS 6|CentOS 7|
+|CentOS 7|CentOS 7|
+|CoreOS|core|
+|Debian 7|Debian 7|
+|Debian 8|Debian 7|
+|Debian 9|Debian 7|
+|Fedora 25|Fedora 29|
+|Fedora 26|Fedora 29|
 |FreeBSD 11.0 ZFS|FreeBSD|
 |Ubuntu 14.04|ubuntu|
 |Ubuntu 16.04|ubuntu|
@@ -52,11 +50,12 @@ Nel Public Cloud, l’utente varia in base alle distribuzioni utilizzate. Ecco u
 
 > [!primary]
 >
-> Se ti connetti direttamente, avrai i diritti dell’utente corrispondente. Se vuoi usufruire dei privilegi da *super-utente*, utilizza il comando `sudo`.
+> Se ti connetti direttamente, avrai i diritti dell’utente standard. Se vuoi usufruire dei privilegi da super-utente, utilizza il comando sudo -i o sudo su.
 >
 
 
-- Avviso sul certificato digitale del server SSH remoto:
+**Avviso sul certificato digitale del server SSH remoto:**
+
 
 Al momento della prima connessione, dovrai confermare l’autenticità dell’host cliccando su `yes`.
 
@@ -74,19 +73,19 @@ Per connetterti a un’istanza Linux da Windows, è sufficiente utilizzare un pr
 
 ### Connettersi a un’istanza Windows
 
-#### Completare l'installazione
+#### Completare l’installazione
 
-Dopo aver creato la tua istanza, è necessario portare a termine il cosiddetto *Sysprep*. Per fare ciò, avvia la console VNC dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}:
+Dopo aver creato la tua istanza, è necessario portare a termine il cosiddetto *sysprep*.  Per fare ciò, avvia la console VNC dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}:
 
-![Console VNC](images/vnc_console.png)
+![VNC console](images/vnc_console.png)
 
 Durante il primo step, puoi scegliere il tuo Paese, la lingua desiderata e la lingua della tastiera. Poi clicca su `Next`{.action}:
 
-![Choix de la langue dans le sysprep](images/sysprep_first_step.png)
+![Scegli la lingua in sysprep](images/sysprep_first_step.png)
 
 In seguito, scegli la password per l’utente *administrator*:
 
-![Choix du mot de passe dans le sysprep](images/sysprep_first_step.png)
+![Scegli la password in sysprep](images/sysprep_password.png)
 
 Non ti resta che confermare la tua scelta cliccando su `Finish`{.action}. L’istanza si riavvierà e potrai connetterti al server Windows.
 
@@ -95,26 +94,26 @@ Non ti resta che confermare la tua scelta cliccando su `Finish`{.action}. L’is
 
 La connessione alla tua istanza Windows avviene direttamente attraverso la funzione `Desktop remoto` da Risorse del computer in ambiente Windows:
 
-![Choix du mot de passe dans le sysprep](images/remote_desktop.png)
+![Scegli la password in sysprep](images/remote_desktop.png)
 
-Negli step successivi basterà precisare l’IP della tua istanza (primo step della tua connessione tramite il desktop remoto) e poi aggiungere il tuo nome utente (*administrator*) e la password che hai scelto.
+Negli step successivi basterà precisare l’IP della tua istanza (primo step della tua connessione tramite il desktop remoto) e poi aggiungere il tuo nome utente (administrator) e la password che hai scelto.
 
-![Bureau à distance - Connexion](images/remote_desktop_connection_IP.png)
+![Remote desktop - Login](images/remote_desktop_connection_IP.png)
 
-![Bureau à distance - Connexion utilisateur](images/remote_desktop_connection_user.png)
+![Remote desktop - User login](images/remote_desktop_connection_user.png)
 
-Un messaggio ti chiederà di confermare la connessione: clicca su `Sì`{.action} o `Yes`{.action}.
+Un messaggio ti chiederà di confermare la connessione:  clicca su `Sì`{.action}.
 
-![Validation de la connexion](images/connection_validation.png)
+![Login confirmation](images/connection_validation.png)
 
 Da questo momento sei connesso alla tua istanza.
 
 > [!primary]
 >
-> In caso di problemi di connessione alla tua istanza Windows, verifica che il firewall Windows autorizzi la connessione RDP. Per maggiori informazioni consulta questa [guida](https://docs.ovh.com/it/vps/windows-first-config/){.external}.
->
+> In caso di problemi di connessione alla tua istanza Windows, verifica che il firewall Windows autorizzi la connessione RDP. Per maggiori informazioni consulta questa [guida](https://docs.ovh.com/it/vps/windows-first-config/){.external}. 
+> 
 
 
-## Per saperne di più
+## Per saperne di più 
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,104 +1,171 @@
 ---
-title: Guía de uso del acelerador GeoCaché en un alojamiento web
-excerpt: Guía de uso del acelerador GeoCaché incluido con los planes de web hosting.
+title: 'Guía de uso del acelerador GeoCaché en un alojamiento web'
+excerpt: 'Guía de uso del acelerador GeoCaché incluido con los planes de web hosting.'
 slug: guia_de_uso_del_acelerador_geocache_en_un_alojamiento_web
 legacy_guide_number: g1290
-section: Optimización del sitio web
+section: 'Optimización del sitio web'
 ---
 
+**Última actualización: 19/3/2020**
 
-## 
-Conéctese al [área de cliente](https://www.ovh.com/manager/web) con su ID de cliente y contraseña.
+## Objetivo
 
-En la columna izquierda, sección «Alojamientos», seleccione el alojamiento.
+Si desea mejorar la experiencia de sus usuarios acelerando la carga de su sitio web, la técnica más eficaz es activar una CDN <i>(</i>siglas en inglés de Content Delivery Network que significan red de entrega de contenidos<i>)</i>. Esta permite guardar en caché los archivos estáticos, como imágenes, CSS y JavaScript en los servidores que se encuentran más cerca de sus clientes.
 
-![](images/img_2904.jpg){.thumbnail}
+**Cómo gestionar la opción CDN de su alojamiento web.**
 
+## Definición
 
-## Vaciar la caché del acelerador GeoCaché
-El TTL (Time to Live, tiempo de permanencia en caché de un archivo en un PoP) es de entre 5 y 60 minutos (gestionado por nuestros servidores para su optimización). Transcurrido este plazo, el archivo se elimina de la caché, por lo que otro usuario tendrá que llamar al elemento para vuelva a guardarse en caché en el PoP correspondiente.
+**¿Cómo funciona una CDN?**
 
-Para forzar la sustitución de un archivo en la caché de los PoP, por ejemplo después de modificar la web, hay que vaciar lo que ya está en caché. Posteriormente, cuando un usuario llame al archivo desde la zona de influencia de ese PoP, dicho archivo volverá a guardarse en caché.
+La CDN<i> (</i>siglas en inglés de Content Delivery Network que significan red de entrega de contenidos<i>)</i> es literalmente una red dedicada a la entrega de contenidos. Para mostrar el contenido de su sitio web, la CDN utiliza varios servidores repartidos por todo el mundo. Cuanto más cerca estén los servidores de los usuarios, más rápida será la carga de su sitio web en sus dispositivos.
 
-Para vaciar manualmente la caché de los PoP de la red de OVH, solo hay que hacer clic en «Vaciar la caché de la CDN de base».
+Para funcionar, cada servidor guarda en memoria caché una parte de su sitio web. Siempre se recomienda incluir en ellos los archivos llamados estáticos, como las imágenes, los archivos JavaScript y CSS que permiten el buen funcionamiento de su sitio web, pero rara vez se modifican.
 
-![](images/img_2957.jpg){.thumbnail}
+## Requisitos
 
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Tener contratado un [plan de alojamiento web](https://www.ovh.es/hosting/){.external}.
 
-## Desactivar el acelerador GeoCaché
-Si no quiere utilizar el acelerador GeoCaché incluido con su plan de hosting, tiene varias posibilidades:
+## Procedimiento
 
+###  Activar la opción CDN
 
-- No utilizar la IP (campo A) del alojamiento asociado al acelerador.
-- Editar el archivo de reglas ubicado en la raíz del alojamiento (ver punto siguiente).
+> [!primary]
+> 
+> La opción CDN ya está incluida en los planes de alojamiento web Performance.
 
+####  Si su alojamiento web no cuenta con una CDN
 
-A continuación explicaremos la solución que consiste en cambiar la IP que utiliza el alojamiento.
+Inicie sesión en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external} y seleccione `«Web»`{.action}. En la barra de servicios a la izquierda, haga clic en `«Alojamientos»`{.action} y seleccione el alojamiento correspondiente. Haga clic en `«...»`{.action} a la derecha de «Opción CDN» y, seguidamente, en `«Contratar una CDN»`{.action}.
 
-Para ello, en la columna izquierda seleccione el dominio asociado al alojamiento que cuenta con el acelerador GeoCaché y haga clic en la pestaña «Zona DNS».
+![CDN](images/manage_CDN_01.png){.thumbnail}
 
-De todos los campos que forman la zona DNS, busque el campo «A», asociado a una IP de tipo 213.xxx.xxxx.xxx*.
+Se le redirigirá a la generación del pedido. Unos minutos después de haber abonado el pedido, su servicio estará disponible.
 
-* Esta IP es la del acelerador GeoCaché asociado al alojamiento. Si en algún momento desea restablecerlo, solo tendrá que volver a introducirla en el campo A. La lista de IP se incluye más abajo y puede solicitarse también al soporte. Si no quiere tener que buscar la información más adelante en caso de necesitarla, anótela.
+#### Si la CDN ya está activada en su alojamiento web
 
-Haga clic en el botón de edición (icono con forma de lápiz) del campo A para acceder al formulario de edición.
+Inicie sesión en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external} y seleccione `«Web»`{.action}. En la barra de servicios a la izquierda, haga clic en `«Alojamientos»`{.action} y seleccione el alojamiento correspondiente. En la pestaña `«Multisitio»`{.action}, haga clic en el icono con forma de rueda dentada a la derecha de la entrada multisitio y, seguidamente, pulse `«Modificar»`{.action}.
 
-En la página del formulario, podrá ver los siguientes campos:
+Marque la opción «Activar la CDN», haga clic en `«Siguiente»`{.action} y, seguidamente, en `«Validar»`{.action}.
 
+![CDN](images/manage_CDN_01_02.gif){.thumbnail}
 
-- Subdominio: El campo A aparecerá seleccionado por defecto (no debe cambiarlo).
-- Seleccionar una IP: Seleccione «Alojamiento compartido».
-- Seleccionar un alojamiento: Seleccione el dominio asociado al alojamiento.
-- Seleccionar un país: Elija una localización geográfica de salida de la IP.
+> [!warning]
+> 
+> Si añade un nombre de dominio externo a OVHcloud en multisitio al alojamiento web, debe indicar la dirección IP de la CDN de su alojamiento en la zona DNS del nombre de dominio.<br>
+> Consulte la [lista de direcciones IP de los clústeres y alojamientos web](../lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/){.external} para saber qué dirección IP corresponde a la CDN de su clúster.
 
-
-Confirme la selección con el botón «Aceptar». La IP se modificará de inmediato, aunque el cambio tardará unos instantes en aplicarse.
-
-
-Lista de IP asociadas al acelerador GeoCaché 3 PoP/17 PoP
-
-En su área de cliente, en la sección «Alojamientos» > «FTP-SSH» o en el mensaje de instalación que le enviamos al activar el alojamiento, puede consultar el cluster que corresponde a su alojamiento.
-
-|Cluster|Sin geocaché|3 PoP (Basic)|17 PoP (Business)|
-|002|37.187.184.2|213.186.33.2 o 213.186.33.68|213.186.33.69|
-|003|37.187.184.4|213.186.33.4 o 213.186.33.84|213.186.33.85|
-|005|37.187.184.16|213.186.33.16 o 213.186.33.94|213.186.33.95|
-|006|37.187.184.17|213.186.33.17 o 213.186.33.96|213.186.33.97|
-|007|37.187.184.18|213.186.33.18 o 213.186.33.104|213.186.33.105|
-|010|37.187.184.19|213.186.33.19 o 213.186.33.106|213.186.33.107|
-|011|37.187.184.40|213.186.33.40 o 213.186.33.150|213.186.33.151|
-|012|37.187.184.48|213.186.33.48 o 213.186.33.152|213.186.33.153|
-|013|37.187.184.24|213.186.33.24 o 213.186.33.82|213.186.33.83|
-|014|37.187.184.87|213.186.33.87 o 213.186.33.168|213.186.33.169|
-|015|37.187.184.3|213.186.33.3 o 213.186.33.170|213.186.33.171|
-|017|37.187.184.50|213.186.33.50 o 213.186.33.172|213.186.33.173|
+ 
+**¿Por qué no puedo disponer de una IP geolocalizada con la opción CDN?** <br>
+<br>
+La CDN utiliza el principio de las direcciones IP Anycast. Según su geolocalización, hará peticiones a diferentes servidores, lo que reducirá el tiempo de carga de sus archivos estáticos de forma eficaz. Por ello, de nada sirve la geolocalización de la dirección IP. <br>
+En lo relativo al SEO (posicionamiento en los motores de búsqueda), la velocidad de carga de su sitio web reviste mayor importancia que la geolocalización de la dirección IP de su alojamiento.
 
 
+### ¿Cómo guardar en caché los archivos en la CDN?
+
+**Con un CMS**
+
+Los principales sistemas de gestión de contenidos (CMS) distribuyen numerosos complementos que permiten configurar el almacenamiento en caché de los archivos estáticos para que la CDN los guarde automáticamente. Hay otros que permiten la configuración automática de los archivos estáticos activando el almacenamiento en caché integrado al sistema de gestión de contenidos. Para más información, consulte la documentación oficial del sistema de gestión de contenidos que utilice o del editor del complemento.
+
+**Sin CMS**
+
+En caso de no utilizar ningún sistema de gestión de contenidos, puede disponer de la caché de la CDN. Para ello, debe añadir encabezados en las peticiones HTTP. Existen numerosas técnicas que permiten añadir encabezados. Una de las más sencillas es establecer reglas en un fichero .htaccess en función de las extensiones de los archivos.
+
+```htaccess
+1. # Caché de las imágenes durante una semana
+2. <FilesMatch "\.(jpg|jpeg|png|gif)$">
+3. Header set Cache-Control "max-age=604800, public"
+4. </FilesMatch>
+5. 
+6. # Caché de los JavaScript y CSS durante un mes
+7. <FilesMatch "\.(js|css)$">
+8. Header set Cache-Control "max-age=2592000"
+9. </FilesMatch>
+```
+> [!warning]
+>
+> El almacenamiento en caché a través de los encabezados HTTP permite almacenar en caché tanto en la CDN como en el navegador de sus usuarios. Así, para que sus visitantes no visualicen una versión en caché muy antigua, se recomienda modificar los nombres de los archivos en cada nueva versión.
+> 
 
 
-## 
-Para acceder al archivo necesario, conéctese a su espacio de alojamiento por FTP.
 
-Para ello, puede utilizar FileZilla, por ejemplo.
+### Vaciar la caché de la CDN
+
+En ocasiones, resulta útil vaciar la caché de la CDN, principalmente cuando se actualizan los archivos estáticos. Por ejemplo, cuando pone en línea una nueva versión de su sitio web. En dicho caso, vacíe por completo la caché de la CDN.
+
+Inicie sesión en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external} y seleccione `«Web»`{.action}. En la barra de servicios a la izquierda, haga clic en `«Alojamientos»`{.action} y seleccione el alojamiento correspondiente. Haga clic en `«...»`{.action} a la derecha de «Opción CDN» y, seguidamente, en `«Vaciar la caché»`{.action}.
+
+![CDN](images/manage_CDN_02.png){.thumbnail}
+
+### Desactivar la opción CDN
+
+Esta acción permite desactivar la CDN en una o varias de sus entradas multisitio sin eliminar la opción CDN de su alojamiento web.
+
+Inicie sesión en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external} y seleccione `«Web»`{.action}. En la barra de servicios a la izquierda, haga clic en `«Alojamientos»`{.action} y seleccione el plan correspondiente. En la pestaña `«Multisitio»`{.action}, pulse el icono con forma de rueda dentada a la derecha de la entrada multisitio y, seguidamente, en `«Modificar»`{.action}.
+
+Desmarque la opción «Activar la CDN», haga clic en `«Siguiente»`{.action} y, a continuación, en `«Validar»`{.action}.
+
+![CDN](images/manage_CDN_03.png){.thumbnail}
+
+### Eliminar la opción CDN
+
+Esta acción permite eliminar la opción CDN en todo su alojamiento web.
+
+Inicie sesión en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external} y seleccione `«Web»`{.action}. En la barra de servicios a la izquierda, haga clic en `«Alojamientos»`{.action} y seleccione el plan correspondiente. Haga clic en `«...»`{.action} a la derecha de «Opción CDN» y, seguidamente, en `«Anular la CDN»`{.action}.
+
+![CDN](images/manage_CDN_04.png){.thumbnail}
+
+Pulse `«Validar»`{.action} para confirmar la anulación.
+
+> [!warning]
+>
+> Cuando reciba el mensaje de correo electrónico con el procedimiento de cierre de su CDN, siga las instrucciones para confirmar o cancelar la solicitud. 
+> 
 
 
-## Activar/Desactivar el acelerador GeoCaché
-Una vez se haya conectado al espacio FTP del alojamiento, llegará por defecto a la raíz. En ella debería encontrar varios archivos y carpetas, uno de ellos un archivo con el nombre «.ovhconfig».
+### Comprobar que la CDN esté operativa
 
-Descargue el archivo en su ordenador (normalmente puede hacerse con doble clic en el archivo) y ábralo con un editor de texto plano. Si es necesario, renómbrelo como ovhconfig.txt.
-
-En su contenido, cambie el environment «production» por «development» (en inglés).
-
-Si ha cambiado el nombre del archivo, vuelva a llamarlo .ovhconfig y súbalo a la raíz del espacio FTP, reemplazando al actual.
-
-Para reactivar el acelerador GeoCaché, solo tendrá que repetir la operación modificando el parámetro environment con el valor «production».
-
-![](images/img_1207.jpg){.thumbnail}
-También puede añadir la siguiente linea en el archivo .htaccess: 
+Puede comprobar que la CDN está activa en su nombre de dominio a través de un terminal y el siguiente comando:
 
 ```
-Header set Cache-Control "no-cache"
+curl -i http://yourpersonnaldomain.ovh/
 ```
 
+Si su nombre de dominio está correctamente asociado a la CDN, obtendrá un resultado como el que se muestra a continuación:
 
+```
+HTTP/1.1 200 OK
+Date: Mon, 01 Jan 2020 00:00:00 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: SERVERID12345=123456; path=/; max-age=900
+Vary: Accept-Encoding
+X-Request-ID: 123456789
+X-CDN-Pop: rbx1
+X-CDN-Pop-IP: 00.111.22.333/44
+X-Cacheable: Cacheable
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-IPLB-Instance: 12345
+```
+Las indicaciones «*X-CDN*» confirman que el tráfico de su sitio web se transmite correctamente a través de la CDN.
 
+En caso de que el dominio no se transmita por la CDN, obtendrá el siguiente resultado:
+
+```
+HTTP/1.1 200 OK
+Date: Mon, 01 Jan 2020 00:00:00 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: SERVERID12345=123456; path=/; max-age=900
+Server: Apache
+X-Powered-By: PHP/7.1
+Vary: Accept-Encoding
+X-IPLB-Instance: 12345
+```
+
+La ausencia de la indicación «*X-CDN*» confirma que el tráfico de su sitio web no se transmite a través de la CDN.
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

@@ -6,7 +6,7 @@ section: 'Configuration sur ordinateur'
 order: 4
 ---
 
-**Dernière mise à jour le 17/05/2018**
+**Dernière mise à jour le 20/03/2020**
 
 ## Objectif
 
@@ -16,7 +16,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -30,6 +30,14 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 ## En pratique
 
 ### Étape 1 : ajouter le compte
+
+> [!primary]
+>
+> Dans notre exemple, nous utilisons la mention serveur : pro**X**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
+> 
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web`{.action} puis `E-mail Pro`{.action}
+> dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> 
 
 Une fois l'application Courrier lancée sur votre appareil, l'ajout d'un compte peut être effectué de deux manières différentes.
 
@@ -50,9 +58,9 @@ Renseignez à présent les informations demandées :
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
 |Nom du compte|Indiquez un nom vous permettant de reconnaître ce compte parmi d'autres affichés dans votre application Courrier.|
 |Envoyer vos messages en utilisant ce nom|Renseignez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés avec cette adresse.|
-|Serveur de courrier entrant|Renseignez le serveur « pro1.mail.ovh.net:993 ».|
+|Serveur de courrier entrant|Renseignez le serveur « pro**X**.mail.ovh.net:993 ».|
 |Type de compte|Nous conseillons une utilisation en **IMAP4**. Vous pouvez cependant sélectionner **POP** (stockage des e-mails en local sur votre application Courrier) dans le menu déroulant.|
-|Serveur de courrier sortant|Renseignez le serveur « pro1.mail.ovh.net:587 ».|
+|Serveur de courrier sortant|Renseignez le serveur « pro**X**.mail.ovh.net:587 ».|
 
 Assurez-vous que les cases sont bien cochées pour les choix suivants :
 
@@ -71,14 +79,14 @@ Si vous devez renseigner manuellement des champs techniques dans les préférenc
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|
-|Entrant|pro1.mail.ovh.net|Oui|993|
-|Sortant|pro1.mail.ovh.net|Oui|587|
+|Entrant|pro**X**.mail.ovh.net|Oui|993|
+|Sortant|pro**X**.mail.ovh.net|Oui|587|
 
 ### Étape 2 : utiliser l'adresse e-mail
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVH propose également une application web disposant de [fonctions collaboratives](https://www.ovh.com/fr/emails/){.external}. Celle-ci est accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
+OVHcloud propose également une application web disposant de [fonctions collaboratives](https://www.ovh.com/fr/emails/){.external}. Celle-ci est accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ## Aller plus loin
 

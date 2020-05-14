@@ -104,7 +104,7 @@ If everyting happens correctly, the CURL would exit with a 200 code status.
 
 #### Push datapoints using Python
 
-Here's an example how you can use Python to push datapoints in OpenTSDB format using [Requests](http://docs.python-requests.org/en/master/){.external}:
+Here's an example how you can use Python to push datapoints in OpenTSDB format using [Requests](https://2.python-requests.org/en/master/){.external}:
 
 ```python
 >>> import requests

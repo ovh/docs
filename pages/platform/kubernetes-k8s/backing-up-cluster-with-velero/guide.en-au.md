@@ -27,7 +27,7 @@ section: Tutorials
  }
 </style>
 
-**Last updated November 19<sup>st</sup>, 2019.**
+**Last updated April 10<sup>th</sup>, 2020.**
 
 In this tutorial, we are using [Velero](https://velero.io/){.external} to backup and restore an OVHcloud Managed Kubernetes cluster.
 
@@ -97,10 +97,10 @@ Please write down the **access** and **secret** parameters:
 Install the `awscli` client:
 
 ```bash
-pip install awscli awscli-plugin-endpoint
+pip3 install awscli awscli-plugin-endpoint
 ```
 
-Complete and write down the configuration for `awscli` into `~/aws/config`:
+Complete and write down the configuration for `awscli` into `~/.aws/config`:
 
 ```yaml
 [plugins]
@@ -109,12 +109,13 @@ endpoint = awscli_plugin_endpoint
 [profile default]
 aws_access_key_id = <access fetched in previous step>
 aws_secret_access_key = <secret fetched in previous step>
-region = <public cloud region without digit>
+region = <public cloud region in lower case without digit>
 s3 =
-  endpoint_url = https://storage.<public cloud region without digit>.cloud.ovh.net
+  endpoint_url = https://s3.<public cloud region without digit>.cloud.ovh.net
   signature_version = s3v4
+  addressing_style = virtual
 s3api =
-  endpoint_url = https://storage.<public cloud region without digit>.cloud.ovh.net
+  endpoint_url = https://s3.<public cloud region without digit>.cloud.ovh.net
 ```
 
 ### Create a S3 bucket for Velero
@@ -144,6 +145,7 @@ Install Velero, including all prerequisites, into the cluster and start the depl
 ```bash
 velero install \
   --provider aws \
+  --plugins velero/velero-plugin-for-aws:v1.0.1 \
   --bucket <your bucket name> \
   --secret-file ./credentials-velero \
   --snapshot-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://storage.<public cloud region without digit>.cloud.ovh.net \
@@ -153,7 +155,11 @@ velero install \
 In my case, with the cluster in the `GRA` region, that meant:
 
 ```bash
-velero install --provider aws --bucket velero-s3 --secret-file ./credentials/credentials-velero --backup-location-config region=GRA,s3ForcePathStyle="true",s3Url=https://storage.gra.cloud.ovh.net --snapshot-location-config region=GRA,s3ForcePathStyle="true",s3Url=https://storage.gra.cloud.ovh.net
+velero install --provider aws --bucket mytestcluster-velero-s3 --secret-file ./credentials/credentials-velero --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://storage.gra.cloud.ovh.net --snapshot-location-config region=gra,s3ForcePathStyle="true",s3Url=https://storage.gra.cloud.ovh.net
+```
+
+```bash
+velero install --provider aws --plugins velero/velero-plugin-for-aws:v1.0.1 --bucket velero-s3 --secret-file ./credentials/credentials-velero --backup-location-config region=gra,s3Url=https://storage.gra.cloud.ovh.net --snapshot-location-config region=gra,s3Url=https://storage.gra.cloud.ovh.net
 ```
 
 <pre class="console"><code>$ velero install \
@@ -293,6 +299,9 @@ Persistent Volumes: &lt;none included>
 $ kubectl delete namespaces nginx-example
 namespace "nginx-example" deleted
 
+$ kubectl get all -n nginx-example
+No resources found in nginx-example namespace.
+
 $ velero restore create --from-backup nginx-backup
 Restore request "nginx-backup-20191105182030" submitted successfully.
 Run `velero restore describe nginx-backup-20191105182030` or `velero restore logs nginx-backup-20191105182030` for more details.
@@ -341,7 +350,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  storageClassName: cinder-classic
+  storageClassName: csi-cinder-high-speed
   accessModes:
     - ReadWriteOnce
   resources:
@@ -449,6 +458,12 @@ namespace/nginx-example created
 persistentvolumeclaim/nginx-logs created
 deployment.apps/nginx-deployment created
 service/my-nginx created
+
+$ kubectl -n nginx-example get pvc
+NAME         STATUS   VOLUME                                                                   CAPACITY   ACCESS MODES   STORAGECLASS
+   AGE
+nginx-logs   Bound    ovh-managed-kubernetes-chw5gb-pvc-12511c29-xxxx-xxxx-xxxx-7228fe2adc22   1Gi        RWO            csi-cinder-high-speed
+   3s
 
 $ velero backup create nginx-backup-with-pv --include-namespaces nginx-example
 Backup request "nginx-backup-with-pv" submitted successfully.

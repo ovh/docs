@@ -6,7 +6,7 @@ section: 'Email client configuration'
 order: 8
 ---
 
-**Last updated 13th March 2018**
+**Last updated 18th March 2020**
 
 ## Objective
 
@@ -14,9 +14,15 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 **Find out how to configure an Email Pro account on Android, via the Gmail app.**
 
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>
+
 ## Requirements
 
-- You must have an [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} solution.
+- You must have an [Email Pro](https://www.ovh.co.uk/emails/email-pro/) solution.
 - You need to have the Gmail app installed on your device. You can install the app from the Google Play Store.
 - You need to have the required credentials for the email address you would like to configure.
 
@@ -28,6 +34,13 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 ## Instructions
 
 ### Step 1: Add the account
+
+> [!primary]
+>
+> In this guide, we will use as the server name: pro**X**.mail.ovh.net. You will need to replace the "X" with the actual number indicating the appropriate server for your Email Pro service.
+> 
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), in the `Web`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+>
 
 On your device’s homepage, open the `Gmail`{.action} app. You can add an account in two different ways:
 
@@ -49,7 +62,7 @@ Enter the incoming server settings:
 |---|---| 
 |Username|Enter your full email address.|  
 |Password|Enter the password for your email address.|
-|Server|Enter the server “pro1.mail.ovh.net”.|
+|Server|Enter “pro**X**.mail.ovh.net”.|
 
 Tap `Next`{.action}, then enter the outgoing server settings:
 
@@ -58,7 +71,7 @@ Tap `Next`{.action}, then enter the outgoing server settings:
 |Request a connection|Ensure that this button is enabled.|
 |Username|Enter your full email address.|  
 |Password|Enter the password for your email address.|
-|SMTP server|Enter the server “pro1.mail.ovh.net”.|
+|SMTP server|Enter “pro**X**.mail.ovh.net”.|
 
 Then tap `Next`{.action}. If all the information you have entered is correct, you will be able to log in to your account straight away.
 
@@ -72,14 +85,14 @@ If you need to enter any settings manually in your account preferences, the tech
 
 |Server type|Server name|Security type|Port|
 |---|---|---|---|
-|Incoming|pro1.mail.ovh.net|SSL/TLS|993|
-|Outgoing|pro1.mail.ovh.net|STARTTLS|587|
+|Incoming|pro**X**.mail.ovh.net|SSL/TLS|993|
+|Outgoing|pro**X**.mail.ovh.net|STARTTLS|587|
 
 ### Step 2: Use the email address
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH also offers a web application that has [collaborative features](https://www.ovh.co.uk/emails/){.external}, accessible via [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net). You can log in using your email credentials.
+OVHcloud also offers a web application that includes various [collaborative features](https://www.ovh.co.uk/emails/), accessible at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials.
 
 ## Go further
 

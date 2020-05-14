@@ -70,17 +70,17 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 
 #### A partir da sua Área de Cliente OVHcloud
 
-- Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no seu nome (canto superior direito) e selecione `A minha Conta`{.action}.
+- Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no seu nome (canto superior direito) e clicar nas suas iniciais.
 
-![manage-ovh-password](images/account-password-modif-manager-step1.png){.thumbnail}
+![manage-ovh-password](images/newhub2.png){.thumbnail}
 
 - Clique então em `Segurança`{.action} e em `Alterar`{.action} à direita de "Palavra-passe".
 
-![manage-ovh-password](images/account-password-modif-manager-step2.png){.thumbnail}
+![manage-ovh-password](images/manage-password02.png){.thumbnail}
 
 - Confirmar a alteração da palavra-passe.
 
-![manage-ovh-password](images/account-password-modif-manager-step3.png){.thumbnail}
+![manage-ovh-password](images/manage-password03.png){.thumbnail}
 
 - Um e-mail é, então, enviado para o endereço de contacto da conta, para confirmar a alteração de palavra-passe. Leia atentamente as instruções e clique na ligação que nele está incluída. Esta ligação encaminha para a página de alteração da palavra-passe. Introduza a sua ID de utilizador no primeiro campo, a nova palavra-passe no segundo campo e confirme esta nova palavra-passe no terceiro campo.
 

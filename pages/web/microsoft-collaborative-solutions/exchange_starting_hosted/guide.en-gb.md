@@ -1,8 +1,8 @@
 ---
-title: Getting started with the Hosted Exchange service
-excerpt: Get started with a Hosted Exchange service
+title: 'Getting started with the Hosted Exchange service'
+excerpt: 'Get started with a Hosted Exchange service'
 slug: exchange_20132016_configuring_the_solution_for_the_first_time
-section: Getting started
+section: 'Getting started with Exchange'
 order: 1
 ---
 
@@ -16,7 +16,7 @@ With the Hosted Exchange service, you can get professional emails to use for col
 
 ## Requirements
 
-- You need to have a subscription to a [Hosted Exchange](https://www.ovh.co.uk/emails/hosted-exchange/){.external} solution.
+- You need to have a subscription to a [Hosted Exchange](https://www.ovh.co.uk/emails/hosted-exchange/) solution.
 - You need to have received an email confirming that your Hosted Exchange solution has been set up.
 - You must have a domain name.
 - You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.

@@ -39,7 +39,7 @@ They are many choices:
 
 ## Instructions
 
-In order to offer you a direct presence in many countries from many Operators, we invite you to use [PilotThings](http://www.pilot-things.com/accueil/){.external} which will operate for you :
+In order to offer you a direct presence in many countries from many Operators, we invite you to use [PilotThings](https://www.pilot-things.com/){.external} which will operate for you :
 
 - Local ISP Acquisition
 - Payload extraction

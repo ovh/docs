@@ -9,14 +9,14 @@ excerpt: 'Découvrez les éléments de base vous permettant de sécuriser votre 
 
 ## Objectif
 
-Lorsque vous commandez votre VPS, une distribution ou un système d'exploitation est pré-installé, mais aucun protocole de sécurité n'est implémenté nativement. Il vous appartient donc de sécuriser votre machine, point sur lequel OVH ne peut intervenir.
+Lorsque vous commandez votre VPS, une distribution ou un système d'exploitation est pré-installé, mais aucun protocole de sécurité n'est implémenté nativement. Il vous appartient donc de sécuriser votre machine, point sur lequel OVHcloud ne peut intervenir.
 
 **Ce guide vous propose quelques conseils généraux pour sécuriser votre serveur.**
 
  
 > [!warning]
 >
-> OVH vous fournit des machines dont la responsabilité vous revient. En effet, nous n'avons pas accès à ces machines et n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à disposition ce guide afin de vous accompagner au mieux sur les tâches courantes. Toutefois, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes quant à l’administration, l'utilisation ou la sécurisation de votre serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> OVHcloud vous fournit des machines dont la responsabilité vous revient. En effet, nous n'avons pas accès à ces machines et n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à disposition ce guide afin de vous accompagner au mieux sur les tâches courantes. Toutefois, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes quant à l’administration, l'utilisation ou la sécurisation de votre serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 > 
 
 
@@ -190,9 +190,9 @@ iptables -L
 
 Nous vous recommandons alors de créer et d’ajuster à votre utilisation des règles sur ce pare-feu. Pour plus d'informations sur les diverses manipulations possibles, reportez-vous à la section correspondante de la documentation officielle de la distribution utilisée.
 
-### Configuration du réseau de pare-feu OVH
+### Configuration du réseau de pare-feu OVHcloud
 
-Les solutions OVH incluent un pare-feu à l'entrée de l'infrastructure, appelé firewall network. Sa mise en place et sa configuration permettent le blocage des protocoles avant même leur arrivée sur votre serveur.
+Les solutions OVHcloud incluent un pare-feu à l'entrée de l'infrastructure, appelé firewall network. Sa mise en place et sa configuration permettent le blocage des protocoles avant même leur arrivée sur votre serveur.
 
 Nous vous proposons également un guide sur la [configuration de ce réseau](https://docs.ovh.com/fr/dedicated/firewall-network/){.external} de pare-feu.
 
@@ -200,13 +200,13 @@ Nous vous proposons également un guide sur la [configuration de ce réseau](htt
 
 La notion de sécurité ne se limite pas uniquement à la protection d’un système contre des attaques.
 
-La sécurisation de vos données est un élément clé, c'est pourquoi OVH vous propose trois options de sauvegarde :
+La sécurisation de vos données est un élément clé, c'est pourquoi OVHcloud vous propose trois options de sauvegarde :
 
 - l'option snapshot, qui vous permet de créer un instantané manuel de votre machine virtuelle (disponible sur VPS SSD, Cloud et Cloud RAM) ;
 - l'option backup automatisé vous permet d'effectuer une sauvegarde régulière de votre VPS (hors disques additionnels), puis de l'exporter et de la répliquer trois fois avant d'être disponible à partir de votre espace client (disponible uniquement sur les VPS Cloud et les VPS Cloud RAM) ;
 - l'option backup automatisé qui vous permet de déposer et de récupérer manuellement des fichiers sur un espace disque dédié. Les protocoles de transfert de fichiers disponibles sont FTP, NFS et CIFS, pour garantir la compatibilité avec les méthodes d'accès aux fichiers de tous les systèmes d'exploitation. Cela vous permet de protéger vos données en cas d'interruption de service (uniquement disponible sur les VPS Cloud et Cloud RAM VPS).
 
-Vous trouverez toutes les informations sur nos solutions de sauvegarde VPS ici : <https://www.ovh.com/fr/vps/backup-vps.xml>.
+Vous trouverez toutes les informations sur nos solutions de sauvegarde VPS ici : <https://www.ovhcloud.com/fr/vps/>.
 
 ## Aller plus loin
 

@@ -1,22 +1,28 @@
 ---
-title: Anleitung zur Konfiguration von E-Mail Pro auf macOS Mail
+title: 'Konfiguration von E-Mail Pro auf macOS Mail'
 slug: email-pro-auf-macos-konfigurieren
-excerpt: Hier erfahren Sie, wie Sie Ihren E-Mail Pro Account auf der Mail App von macOS El Capitan, Sierra und High Sierra einrichten
-section: Konfiguration des E-Mail-Clients
+excerpt: 'Erfahren Sie hier, wie Sie Ihren E-Mail Pro Account auf der Mail App von macOS El Capitan, Sierra und High Sierra einrichten'
+section: 'Konfiguration des E-Mail-Clients'
 order: 4
 ---
 
-**Stand 19.02.2018**
+**Letzte Aktualisierung am 18.03.2020**
 
-## Einleitung
+## Ziel
 
 E-Mail Pro Accounts können auch auf einem kompatiblen E-Mail-Client eingerichtet werden. So können Sie Ihre bevorzugte App für Ihre E-Mail-Adressen verwenden.
 
 **In dieser Anleitung erfahren Sie, wie Sie Ihren E-Mail Pro Account auf der Mail App von macOS El Capitan, Sierra und High Sierra einrichten.**
 
+> [!warning]
+>OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+>
+>Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Hinweise finden Sie im Teil „Weiterführende Informationen” dieser Anleitung.
+>
+
 ## Voraussetzungen
 
-- Sie besitzen ein [E-Mail Pro](https://www.ovh.de/emails/email-pro/){.external} Angebot.
+- Sie besitzen ein [E-Mail Pro](https://www.ovh.de/emails/email-pro/) Angebot.
 - Die Mail App ist auf Ihrem Gerät installiert
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
@@ -25,7 +31,7 @@ E-Mail Pro Accounts können auch auf einem kompatiblen E-Mail-Client eingerichte
 > Diese Anleitung gilt für folgende macOS Versionen: El Capitan, Sierra, High Sierra.
 >
 
-## Beschreibung
+## In der praktischen Anwendung
 
 Es gibt zwei Möglichkeiten, um Ihre E-Mail-Adresse zur Mail App hinzuzufügen:
 
@@ -36,6 +42,14 @@ Es gibt zwei Möglichkeiten, um Ihre E-Mail-Adresse zur Mail App hinzuzufügen:
 Die vorliegende Anleitung beschreibt von hier an nur die Konfiguration über die Mail App.
 
 ### Schritt 1: Account hinzufügen
+
+> [!primary]
+>
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro**X**.mail.ovh.net. Das „X“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> 
+> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), wenn Sie im Bereich `Web`{.action} im Menü links unter `E-Mail Pro`{.action}
+> den Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+>
 
 Nachdem Sie die Mail App auf Ihrem Gerät gestartet haben, können Sie einen Account auf zwei Arten hinzufügen:
 
@@ -58,8 +72,8 @@ Klicken Sie auf `Anmelden`{.action}. Es erscheint eine Nachricht, die Sie auffor
 |Information|Beschreibung|  
 |---|---|  
 |Accounttyp|Lassen Sie IMAP im Drop-down-Menü ausgewählt.| 
-|Server für eintreffende E-Mails|Geben Sie den Server *pro1.mail.ovh.net* ein.| 
-|Server für ausgehende E-Mails|Geben Sie den Server *pro1.mail.ovh.net* ein.|  
+|Server für eintreffende E-Mails|Tragen Sie „pro**X**.mail.ovh.net“ ein.| 
+|Server für ausgehende E-Mails|Tragen Sie „pro**X**.mail.ovh.net“ ein.|  
 
 Klicken Sie erneut auf `Anmelden`{.action}. Wenn Ihre Angaben korrekt sind, wird die Verbindung zu Ihrem Account hergestellt.
 
@@ -73,14 +87,14 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 
 |Servertyp|Servername|SSL|Port|
 |---|---|---|---|
-|Für eintreffende E-Mails|pro1.mail.ovh.net|Ja|993|
-|Für ausgehende E-Mails|pro1.mail.ovh.net|Ja|587|
+|Für eintreffende E-Mails|pro**X**.mail.ovh.net|Ja|993|
+|Für ausgehende E-Mails|pro**X**.mail.ovh.net|Ja|587|
 
 ### Schritt 2: E-Mail-Adresse verwenden
 
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
-Eine OVH Webanwendung mit [kollaborativen Funktionen](https://www.ovh.de/emails/){.external} ist verfügbar unter [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net){.external}. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. 
+OVHcloud bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen](https://www.ovh.de/emails/). Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. 
 
 ## Weiterführende Informationen
 

@@ -1,7 +1,7 @@
 ---
-title: Securing a VPS
+title: 'Securing a VPS'
 slug: tips-for-securing-a-vps
-section: Getting started
+section: 'Getting started'
 order: 1
 ---
 
@@ -9,14 +9,14 @@ order: 1
 
 ## Objective
 
-When you order your VPS, a distribution or operating system is pre-installed, but no security protocol is implemented natively. It is therefore up to you to secure your VPS, an aspect in which OVH cannot intervene.
+When you order your VPS, a distribution or operating system is pre-installed, but no security protocol is implemented natively. It is therefore up to you to secure your VPS, an aspect in which OVHcloud cannot intervene.
 
 **This guide offers some general tips for securing your server.**
 
  
 > [!warning]
 >
-> OVH is providing you with machines that you will be responsible for. We have no access to these machines, and therefore cannot manage them. You are responsible for your own software and security management. This guide is designed to assist you in common tasks as much as possible. However, we recommend that you call upon a specialised service provider if you experience any issues or doubts when it comes to managing, using or securing your server.
+> OVHcloud is providing you with machines that you will be responsible for. We have no access to these machines, and therefore cannot manage them. You are responsible for your own software and security management. This guide is designed to assist you in common tasks as much as possible. However, we recommend that you call upon a specialised service provider if you experience any issues or doubts when it comes to managing, using or securing your server.
 > 
 
 
@@ -190,9 +190,9 @@ iptables -L
 
 It is recommended that you create and adjust rules on this firewall, to fit your needs. For more detailed information on the variety of manipulations that are possible, please refer to the relevant section in the official documentation of the distribution used.
 
-### Configuring the OVH Firewall Network
+### Configuring the OVHcloud Firewall Network
 
-OVH solutions include a firewall at the entrance to the infrastructure, called the Firewall Network. Its implementation and configuration allow protocols to be blocked before they even arrive on your server.
+OVHcloud solutions include a firewall at the entrance to the infrastructure, called the Firewall Network. Its implementation and configuration allow protocols to be blocked before they even arrive on your server.
 
 We also have a guide on [configuring this firewall network](https://docs.ovh.com/gb/en/dedicated/firewall-network/){.external}.
 
@@ -200,13 +200,13 @@ We also have a guide on [configuring this firewall network](https://docs.ovh.com
 
 The concept of security is not limited to protecting a system against attacks.
 
-Securing your data is a key element, which is why OVH offers you three backup options:
+Securing your data is a key element, which is why OVHcloud offers you three backup options:
 
 - The `Snapshot` option, which allows you to create a manual snapshot of your virtual machine (available on VPS SSD, Cloud and Cloud RAM);
 - The `Automated Backup` option allows you to make a regular backup of your VPS (excluding additional disks) on a daily basis, exported and replicated three times before being available from your Control Panel (available only on Cloud VPS and Cloud RAM VPS);
 - The `Backup Storage` option that allows you to manually deposit and recover files on a dedicated disk space. The available file transfer protocols are FTP, NFS and CIFS, to ensure compatibility with the file access methods of all operating systems and distributions used. This allows you to keep your data safe in case of service interruption (only available on Cloud VPS and Cloud RAM VPS).
 
-You will find all information on our VPS backup solutions here: <https://www.ovh.co.uk/vps/backup-vps.xml>.
+You will find all information on our VPS backup solutions here: <https://www.ovhcloud.com/en-gb/vps/>.
 
 ## Go further
 

@@ -5,15 +5,17 @@ excerpt: 'Apprenez à configurer la baie RAID de votre serveur en cas de panne o
 section: 'RAID & disques'
 ---
 
-**Dernière mise à jour le 23/05/2019**
+**Dernière mise à jour le 01/04/2020**
 
 ## Objectif
 
 Le RAID (Redundant Array of Independent Disks) est un ensemble de techniques prévues pour atténuer la perte de données sur un serveur en répliquant celles-ci sur plusieurs disques.
 
-Le niveau RAID par défaut pour les installations de serveurs OVH est RAID 1, ce qui double l'espace occupé par vos données, réduisant ainsi de moitié l'espace disque utilisable.
+Le niveau RAID par défaut pour les installations de serveurs OVHcloud est RAID 1, ce qui double l'espace occupé par vos données, réduisant ainsi de moitié l'espace disque utilisable.
 
 **Ce guide va vous aider à configurer la matrice RAID de votre serveur dans l'éventualité où elle doit être reconstruite en raison d'une corruption ou d'une panne de disque.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t_BL_uOXQVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 

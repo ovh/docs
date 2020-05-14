@@ -1,43 +1,51 @@
 ---
-title: Supprimer un projet
+title: 'Supprimer un projet'
 slug: supprimer-un-projet
+excerpt: 'Ce guide décrit comment supprimer un projet Public Cloud depuis votre espace client OVHcloud'
 legacy_guide_number: 2129
-section: Base de connaissances
+section: 'Base de connaissances'
 ---
 
+**Dernière mise à jour le 6 décembre 2019**
 
-## Preambule
-Pour diverses raisons, vous pouvez être amené à souhaiter la résiliation de votre projet Public Cloud. Cela est désormais faisable directement depuis votre Espace Client OVH.
+## Objectif
 
-Une suppression de votre projet déclenchera la création d'une dernière facture correspondant à votre utilisation en cours. Ce guide vous explique les différentes manipulations à effectuer pour supprimer votre projet.
+Lorsque vous n’avez plus besoin de votre projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external}, vous pouvez le supprimer directement depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+La suppression de votre projet déclenchera la création d’une dernière facture correspondant à votre utilisation en cours. 
 
-### Prérequis
-- Un projet Public Cloud
+> [!warning]
+>
+Veuillez noter que la procédure de suppression d’un projet est différente de la désactivation de vos instances Public Cloud. Lorsque vous supprimez un projet, les ressources qu’il contient sont détruites. Cette action est irréversible.
+>
 
+**Ce guide décrit comment supprimer un projet Public Cloud.**
 
-## Suppression du projet
-- Cliquer sur la corbeille à droite de votre projet
+## Prérequis
 
+* un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} créé dans votre compte OVH
+* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-![public-cloud](images/3960.png){.thumbnail}
+## En pratique
 
-- Un message de confirmation apparaitra et récapitulera l'ensemble de vos services qui seront supprimés.
+Tout d’abord, connectez-vous à [l’Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le menu `Public Cloud`{.action}.
 
+Cliquez ensuite sur `Project settings`{.action} sous le menu `Project Management` dans le volet de gauche.
 
-![public-cloud](images/3961.png){.thumbnail}
+![menu cloud](images/deleteproject.png){.thumbnail}
 
-- Une pop-up apparait ensuite pour vous confirmer qu'un mail vous a été envoyé.
+Cliquez alors sur `Supprimer le projet`{.action}.
 
+![supprimer projet](images/deleteproject1.png){.thumbnail}
 
-![public-cloud](images/3962.png){.thumbnail}
+Vous verrez un message de confirmation indiquant les ressources qui seront sauvegardées ou détruites une fois le projet supprimé. Veuillez lire le message attentivement puis cliquez sur `Supprimer le projet`{.action} lorsque vous êtes prêt à continuer.
 
-- Un fois le mail recu, celui ci qui contiendra 2 liens : Le premier pour confirmer la suppression, le second pour annuler celle ci.
+![supprimer projet](images/deleteproject2.png){.thumbnail}
 
+Vous recevrez alors un e-mail vous demandant de confirmer ou d’annuler la suppression du projet. Après avoir cliqué sur le lien de confirmation, vous serez redirigé vers une page web où vous devrez saisir votre mot de passe. Une fois que vous aurez saisi et confirmé votre mot de passe, votre projet sera supprimé.
 
-![public-cloud](images/3963.png){.thumbnail}
+## Aller plus loin
 
-- Il suffira donc ensuite de valider cette suppression en inscrivant votre mot de passe :
+[Démarrer avec Public Cloud](https://docs.ovh.com/fr/public-cloud/debuter-avec-une-instance-public-cloud/){.external}.
 
-
-![public-cloud](images/3964.png){.thumbnail}
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

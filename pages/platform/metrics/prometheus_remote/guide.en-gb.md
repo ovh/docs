@@ -69,6 +69,6 @@ Don't forget to restart your Prometheus instance to apply modifications.
 
 ## Going further
 
-[How to make PromQL queries on OVH Metrics](../protocol_prometheus)
+[How to make PromQL queries on OVH Metrics](../protocol_prometheus/guide.en-gb.md){.ref}
 
 You can exchange with our community of users on [OVH Comunnity](https://community.ovh.com/c/platform/data-platforms) or directly with us with our [gitter room](https://gitter.im/ovh/metrics).

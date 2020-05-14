@@ -18,7 +18,7 @@ Do you have a website or blog powered by WordPress? Discover how to speed up pag
 > [!warning]
 >
 > Any action carried out in this tutorial is at the user’s own risk.
-> OVH shall not be held liable for any technical failure, loss of data, etc.
+> OVHcloud shall not be held liable for any technical failure, loss of data, etc.
 > Remember to back up your files prior to making any changes.
 > 
 
@@ -26,7 +26,7 @@ Do you have a website or blog powered by WordPress? Discover how to speed up pag
 
 
 This tutorial requires:
-- a compatible Web hosting with the PHP-redis module installed or the possibility of installing it (currently this is not compatible with OVH shared webhosting plans): VPS, dedicated server, Public Cloud... with OVH or another provider.
+- a compatible Web hosting with the PHP-redis module installed or the possibility of installing it (currently this is not compatible with OVHcloud shared webhosting plans): VPS, dedicated server, Public Cloud... with OVHcloud or another provider.
 - a WordPress administrator account to install a plugin.
 - a WordPress version 4.x or above
 - and of course, a Redis database, that you can activate on our lab!
@@ -41,7 +41,7 @@ As you can well imagine, optimization will be more or less significant depending
 
 There are many plugins that make it possible to manage this cache, but the most popular one is W3 Total Cache (W3TC). However, it offers a local object cache (on your VPS, or server), which is not always suitable. Maintaining a Redis or Memcached database can be tedious and memory consuming.
 
-In this tutorial, you will learn how to configure the Redis Lab provided by OVH, and link it to your WordPress installation. The aim is to improve the WordPress page loading times for both visitors and administrators.
+In this tutorial, you will learn how to configure the Redis Lab provided by OVHcloud, and link it to your WordPress installation. The aim is to improve the WordPress page loading times for both visitors and administrators.
 
 Let’s get started!
 
@@ -49,7 +49,7 @@ Let’s get started!
 ## Signing up for the Lab and testing your Redis database
 The first step is to get a Redis database and check that it is operational.
 
-Go to [Runabove OVH labs](http://www.runabove.com.){.external} and then sign up for the Redis lab. Once it’s done, create a Redis database via the [OVH Sunrise Control Panel](https://www.ovh.com/manager/sunrise/){.external}, change the password, and leave the page open as we are going to use it.
+Go to [Runabove OVHcloud labs](http://www.runabove.com.){.external} and then sign up for the Redis lab. Once it’s done, create a Redis database via the [OVHcloud Sunrise Control Panel](https://www.ovh.com/manager/sunrise/){.external}, change the password, and leave the page open as we are going to use it.
 
 
 ![Redis Sunrise Control Panel](images/sunrise.png){.thumbnail}
@@ -84,7 +84,7 @@ This is what it looks like for me:
 redis-cli -h 950c9520-ed3c-492c-8e0a-c1xxxxxxxxxx.pdb.ovh.net -p 21244
 ```
 
-Then, authenticate yourself using the password set in your OVH Sunrise Control Panel. Redis works with a unique password, but no user is required.
+Then, authenticate yourself using the password set in your OVHcloud Sunrise Control Panel. Redis works with a unique password, but no user is required.
 
 
 ```bash
@@ -144,7 +144,7 @@ Let’s now test the connection to Redis using PHP, from your hosting. Through t
 9. ?>
 ```
 
-Do not forget to fill in the access URL, the port and the password for your database, as they appear in your OVH Sunrise Control Panel. Then go to [http://www.mywebsite.com/wordpress/redis.php](http://www.mywebsite.com/wordpress/redis.php){.external}.
+Do not forget to fill in the access URL, the port and the password for your database, as they appear in your OVHcloud Sunrise Control Panel. Then go to [http://www.mywebsite.com/wordpress/redis.php](http://www.mywebsite.com/wordpress/redis.php){.external}.
 
 If the connection works, you should see "Server is running: +PONG"
 
@@ -232,7 +232,7 @@ get myvpswp_:posts:1
 
 As for performance, I opened the development tools and then "Network". As I started with a fully clean WordPress site with no content, the increase is not that significant but it is still noticeable!
 
-The website displays in an average of 250 ms instead of 500 ms (hosted on an [OVH SSD VPS](https://www.ovh.com/fr/vps/vps-ssd.xml){.external} located in Strasbourg).
+The website displays in an average of 250 ms instead of 500 ms (hosted on an [OVHcloud SSD VPS](https://www.ovhcloud.com/en-gb/vps/){.external} located in Strasbourg).
 
 
 ![Chrome Network tool](images/chrome.png){.thumbnail}

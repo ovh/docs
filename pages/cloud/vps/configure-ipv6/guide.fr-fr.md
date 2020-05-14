@@ -1,30 +1,29 @@
 ---
 title: 'Configurer l''IPv6 sur un serveur VPS'
 slug: configurer-ipv6
-excerpt: 'Apprenez à configurer l''IPv6 sur votre serveur VPS OVH'
+excerpt: 'Apprenez à configurer l''IPv6 sur votre serveur VPS OVHcloud'
 section: 'Réseau et IP'
-order: 1
 ---
 
 **Dernière mise à jour le 12/03/2019**
 
 ## Objectif
 
-L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VPS OVH est livré avec une adresse IPv4 ainsi qu'une adresse IPv6. Par défaut, seule l'IPv4 y est configurée. Pour diverses raisons, vous pouvez également vouloir paramétrer l'IPv6.
+L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VPS OVHcloud est livré avec une adresse IPv4 ainsi qu'une adresse IPv6. Par défaut, seule l'IPv4 y est configurée. Pour diverses raisons, vous pouvez également vouloir paramétrer l'IPv6.
 
-**Apprenez à configurer l'IPv6 sur votre serveur VPS OVH.**
+**Apprenez à configurer l'IPv6 sur votre serveur VPS OVHcloud.**
 
 > [!warning]
 >
-> OVH met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 > 
 
 ## Prérequis
 
-- Disposer d'un [serveur VPS OVH](https://www.ovh.com/fr/vps/){.external}.
+- Disposer d'un [serveur VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external}.
 - Être connecté en SSH à votre VPS (accès root).
 - Disposer de connaissances basiques en réseau.
-- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Cloud`{.action}.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Cloud`{.action}.
 
 ## En pratique
 
@@ -48,19 +47,19 @@ Avant de débuter, et afin d’utiliser les mêmes terminologies durant les mani
 La première étape consiste à récupérer l’adresse IPV6 et la gateway IPv6 assignées à votre serveur. Deux méthodes sont possibles, poursuivez vers celle que vous souhaitez utiliser.
 
 - [Obtenir les informations réseau via l'espace client](https://docs.ovh.com/fr/vps/configurer-ipv6/#via-votre-espace-client).
-- [Obtenir les informations réseau via les API](https://docs.ovh.com/fr/vps/configurer-ipv6/#via-les-api-ovh).
+- [Obtenir les informations réseau via les API](https://docs.ovh.com/fr/vps/configurer-ipv6/#via-les-api-ovhcloud).
 
 #### Via votre espace client
 
-Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Cloud`{.action}. Cliquez sur `Serveurs`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné. Assurez-vous d'être bien positionné sur l'onglet `Accueil`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Cloud`{.action}. Cliquez sur `Serveurs`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné. Assurez-vous d'être bien positionné sur l'onglet `Accueil`{.action}.
 
-L'adresse IPv6 et la gateway IPv6 assignées à votre serveur apparaissent dans la partie `IP`. Récupérez ces dernières puis poursuivez vers l'étape 2 « [Appliquer la configuration IPv6](https://docs.ovh.com/fr/vps/configurer-ipv6/#etape-2-appliquer-la-configuration-ipv6_1){.external} ».
+L'adresse IPv6 et la gateway IPv6 assignées à votre serveur apparaissent dans la partie `IP`. Récupérez ces dernières puis poursuivez vers l'étape 2 « [Appliquer la configuration IPv6](./#etape-2-appliquer-la-configuration-ipv6_1){.external} ».
 
 ![configureipv6](images/configure-ipv6-step1.png){.thumbnail}
 
-#### Via les API OVH
+#### Via les API OVHcloud
 
-Rendez-vous sur le site <https://api.ovh.com/console/> et connectez-vous à ce dernier avec votre identifiant OVH. Utilisez ensuite les deux API ci-dessous.
+Rendez-vous sur le site <https://api.ovh.com/console/> et connectez-vous à ce dernier avec votre identifiant OVHcloud. Utilisez ensuite les deux API ci-dessous.
 
 La première vous permet de récupérer l'adresse IPv6 assignée à votre serveur.
 
@@ -76,7 +75,7 @@ La seconde vous permet de récupérer la gateway IPv6 assignée à votre serveur
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >
 
-Récupérez ces dernières puis poursuivez vers l'étape 2 « [Appliquer la configuration IPv6](https://docs.ovh.com/fr/vps/configurer-ipv6/#etape-2-appliquer-la-configuration-ipv6_1){.external} ».
+Récupérez ces dernières puis poursuivez vers l'étape 2 « [Appliquer la configuration IPv6](./#etape-2-appliquer-la-configuration-ipv6_1){.external} ».
 
 ### Étape 2 : appliquer la configuration IPv6
 
@@ -84,10 +83,10 @@ Une fois les informations nécessaires pour la configuration IPv6 en votre posse
 
 Il existe plusieurs méthodes pour appliquer la configuration IPv6. En fonction de votre situation et de vos besoins, poursuivez vers celle que vous souhaitez utiliser.
 
-- [Application non persistante](https://docs.ovh.com/fr/vps/configurer-ipv6/#application-non-persistante).
-- [Application persistante sur Debian et dérivés (Ubuntu, Crunchbang, SteamOS…)](https://docs.ovh.com/fr/vps/configurer-ipv6/#application-persistante-sur-debian-et-derives-ubuntu-crunchbang-steamos).
-- [Application persistante sur Redhat et dérivés (CentOS, ClearOS…)](https://docs.ovh.com/fr/vps/configurer-ipv6/#application-persistante-sur-redhat-et-derives-centos-clearos_1).
-- [Application persistante sur Windows Server](https://docs.ovh.com/fr/vps/configurer-ipv6/#application-persistante-sur-windows-server).
+- [Application non persistante](./#application-non-persistante).
+- [Application persistante sur Debian et dérivés (Ubuntu, Crunchbang, SteamOS…)](./#application-persistante-sur-debian-et-derives-ubuntu-crunchbang-steamos).
+- [Application persistante sur Redhat et dérivés (CentOS, ClearOS…)](./#application-persistante-sur-redhat-et-derives-centos-clearos_1).
+- [Application persistante sur Windows Server](./#application-persistante-sur-windows-server).
 
 #### Application non persistante
 
@@ -124,8 +123,8 @@ Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spé
 
 Poursuivez à présent vers la méthode qui correspond à votre situation.
 
-- [Configuration du fichier « interfaces »](https://docs.ovh.com/fr/vps/configurer-ipv6/#configuration-du-fichier-interfaces)
-- [Configuration via la fonction Netplan](https://docs.ovh.com/fr/vps/configurer-ipv6/#configuration-via-la-fonction-netplan)
+- [Configuration du fichier « interfaces »](../configurer-ipv6/#configuration-du-fichier-interfaces)
+- [Configuration via la fonction Netplan](../configurer-ipv6/#configuration-via-la-fonction-netplan)
 
 #####  Configuration du fichier « interfaces »
 

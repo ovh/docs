@@ -1,8 +1,8 @@
 ---
-title: VPS - primeira utilização
-excerpt: Saiba como instalar e começar a gerir um VPS 
+title: 'VPS - primeira utilização'
+excerpt: 'Saiba como instalar e começar a gerir um VPS'
 slug: instalar-gerir-vps
-section: Primeiros passos
+section: 'Primeiros passos'
 order: 1
 ---
 
@@ -10,20 +10,20 @@ order: 1
  
 ## Sumário
 
-Um VPS (Virtual Private Server) é um servidor dedicado virtual. Ao contrário de um alojamento web (com recursos partilhados), cuja gestão cabe à OVH, a gestão e a utilização de um VPS é da total responsabilidade do cliente.
+Um VPS (Virtual Private Server) é um servidor dedicado virtual. Ao contrário de um alojamento web (com recursos partilhados), cuja gestão cabe à OVHcloud, a gestão e a utilização de um VPS é da total responsabilidade do cliente.
 
-**Este manual fornece instruções sobre a instalação e a gestão básica do VPS OVH que acabou de contratar.**
+**Este manual fornece instruções sobre a instalação e a gestão básica do VPS OVHcloud que acabou de contratar.**
 
 
 > [!warning]
 >
-> A utilização e gestão das soluções VPS da OVH são da responsabilidade do cliente. A OVH não tem permissões de acesso aos VPS. O cliente é o único responsável pela gestão e pela segurança do serviço. Este guia fornece as instruções necessárias para usar as funcionalidades básicas de um VPS. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção abaixo intitulada: «Quer saber mais?»
+> A utilização e gestão das soluções VPS da OVHcloud são da responsabilidade do cliente. A OVHcloud não tem permissões de acesso aos VPS. O cliente é o único responsável pela gestão e pela segurança do serviço. Este guia fornece as instruções necessárias para usar as funcionalidades básicas de um VPS. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção abaixo intitulada: «Quer saber mais?»
 > 
 
 
 ## Requisitos
 
-- Ter contratado um [VPS OVH](https://www.ovh.pt/vps/){.external}.
+- Ter contratado um [VPS OVHcloud](https://www.ovhcloud.com/pt/vps/){.external}.
 - Ter recebido um e-mail depois da instalação com os dados de utilizador.
 
 
@@ -62,7 +62,7 @@ Depois, surge uma janela onde poderá escolher:
 
 > [!primary]
 >
-> Os sistemas como o Plesk ou o Windows só podem ser usados com uma licença válida. Esta pode ser adquirida através da OVH ou de um revendedor de software. Se já tiver uma licença, deverá integrá-la no serviço de forma manual ou através da Área de Cliente. Para gerir as licenças na Área de Cliente, clique em `Servidores Dedicados`{.action}, e em `Licenças`{.action}.
+> Os sistemas como o Plesk ou o Windows só podem ser usados com uma licença válida. Esta pode ser adquirida através da OVHcloud ou de um revendedor de software. Se já tiver uma licença, deverá integrá-la no serviço de forma manual ou através da Área de Cliente. Para gerir as licenças na Área de Cliente, clique em `Servidores Dedicados`{.action}, e em `Licenças`{.action}.
 Nesta secção, pode adquirir licenças (clicando no botão à direita «Ações» e em `Encomendar`{.action}), ou adicionar a sua licença SPLA Windows ou SPLA SQL Server (clicando no botão à direita «Ações» e em `Adicionar uma licença SPLA`{.action}).
 > 
 

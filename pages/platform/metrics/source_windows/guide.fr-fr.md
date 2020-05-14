@@ -23,7 +23,7 @@ Some known tools have the possibility to collect Windows data, and then send the
 
 ### telegraf
 
-[Telegraf runs on Windows](https://github.com/influxdata/docs.influxdata.com/blob/master/content/telegraf/v1.7/administration/windows_service.md){.external}. Following this documentation and setting a configuration as described in our [telegraf user documentation](../source-telegraf/guide.fr-fr.md) allow a user to push its own server and application data to Metrics.
+[Telegraf runs on Windows](https://github.com/influxdata/docs.influxdata.com/blob/master/content/telegraf/v1.7/administration/windows_service.md){.external}. Following this documentation and setting a configuration as described in our [telegraf user documentation](../source-telegraf/guide.fr-fr.md){.ref} allow a user to push its own server and application data to Metrics.
 
 First go to [download telegraf page](https://portal.influxdata.com/downloads/){.external} and select the Windows binaries.
 

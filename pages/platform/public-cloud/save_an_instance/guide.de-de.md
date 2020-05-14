@@ -6,78 +6,81 @@ legacy_guide_number: g1881
 section: 'Über das OVH Kundencenter'
 ---
 
-**letzter Stand 22.11.2019**
+**Letzte Aktualisierung am 22.11.2019**
+
 
 ## Ziel
 
-Sie können jederzeit über Ihren [OVH Kundenbereich](https://www.ovh.com/auth/?action=gotomanager){.external} eine Sicherheitskopie einer Instanz erstellen. Mit diesem können Sie Ihre Instanz auf eine frühere Konfiguration zurücksetzen oder die Instanz wiederherstellen.
+Sie können jederzeit über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eine Sicherheitskopie einer Instanz erstellen. Damit können Sie Ihre Instanz auf eine frühere Konfiguration zurücksetzen oder auf deren Basis eine neue Instanz erstellen.
 
-**Erstellen Sie mit wenigen Klicks eine Sicherheitskopie einer Öffentliche Cloud Instanz.**
+**Diese Anleitung erklärt, wie Sie in der Public Cloud Oberfläche des OVHcloud Kundencenters Backups erstellen und planen.**
 
 ## Voraussetzungen
 
-- Sie haben eine [Öffentliche Cloud Instanz](https://docs.ovh.com/de/public-cloud/erstellung_einer_instanz_im_ovh_kundencenter/) in Ihrem Konto erstellt.
-- Sie sind mit Ihrem [OVH Kundenbereich](https://www.ovh.com/auth/?action=gotomanager){.external}verbunden.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
 
-## in der Praxis angewendet
+## In der praktischen Anwendung
 
-### eine Sicherheitskopie einer Instanz erstellen
+### Ein Backup einer Instanz erstellen
 
-Verbinden Sie sich mit Ihrem [Kundenbereich OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, wählen Sie dann den Tab Öffentlicher Cloud in der Rubrik `Instanzen`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Klicken Sie dann im folgenden Bereich auf die Pfeilschaltfläche neben Ihrem Standardprojektnamen in der oberen linken Ecke der Anzeige. Wählen Sie nun das gewünschte Projekt aus und klicken anschließend im linken Menü auf `Instances`{.action}.
 
-Klicken Sie dann auf die`...`{.action} rechts von der gewählten Instanz und anschließend auf  `ein Backup erstellen`{.action}.
+Klicken Sie dann auf `...`{.action} rechts neben der Instanz und wählen Sie `Backup erstellen`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 
-Geben Sie dann auf der folgenden Seite einen Namen für diese Sicherheitskopie an.
+Geben Sie dann auf der folgenden Seite einen Namen für dieses Backup an.
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Sobald die Sicherung abgeschlossen ist wird sie in der Rubrik `Instanz Backup`{.action} zur Verfügung stehen.
+Sobald die Sicherung abgeschlossen ist, wird das Backup im Abschnitt `Instance Backup`{.action} angezeigt
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
-### automatische Sicherheitskopie einer Instanz erstellen
+### Ein automatisches Backup einer Instanz erstellen
 
-In der Rubrik `Instanzen`{.action} wählen Sie `eine automatische Sicherheitskopie erstellen`{.action} in den für die zu sicherende Instanz verfügbaren Aktionen.
+Im Bereich `Instances`{.action} klicken Sie auf die 3 Punkte rechts neben der Instanz und wählen `Automatisches Backup erstellen`{.action}
 
 ![public-cloud-instance-backup](images/createbackup4.png){.thumbnail}
 
-Sie müssen dann auf der nächsten Seite ein paar Informationen abgeben:
+Sie müssen dann auf der nächsten Seite einige Informationen abgeben:
 
-#### **Der Arbeitsfluss** 
+#### **Workflow** 
 
-Es gibt zur Zeit nur einen einzigen Arbeitsfluss, dieser wird eine Sicherheitskopie der Instanz und ihrem hauptsächlichen Volumen erstellen.
+Es gibt zur Zeit nur diesen einen Workflow, er erstellt die Backups der Instanz und des primären Volume.
 
 ![public-cloud-instance-backup](images/createbackup5.png){.thumbnail}
 
-#### **Die Ressource**. 
+#### **Zugeteilte Ressource**. 
 
-Es genügt die für die Sicherheitskopie betroffene Instanz zu wählen.
+Es genügt, die für die Sicherheitskopie betroffene Instanz zu wählen.
 
 ![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
 
-#### **Die Ablaufplanung** 
+#### **Scheduling** 
 
-Es handelt sich darum die Häufigkeit der Sicherheitskopien zu definieren. Standardmäßig werden zwei Optionen vorgeschlagen:
+Legen Sie hier die Häufigkeit der Sicherheitskopien fest. Es gibt auch zwei Standard-Optionen zur Auswahl:
 
-* Eine tägliche Sicherungskopie mit einer Historik von maximal 7 Tagen.
-* Eine tägliche Sicherungskopie mit einer Historik von maximal 14 Tagen.
+- Tägliches Backup mit einer Historie von maximal 7 Tagen.
+- Tägliches Backup mit einer Historie von maximal 14 Tagen.
 
 ![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
 
     
-#### **Die Bezeichnung** 
+#### **Schedule-Name** 
 
-Es handelt sich ganz einfach darum der Aufgabe der Sicherungskopie einen Namen zu geben.
+Geben Sie eine Bezeichnung für den Workflow-Task an.
  
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
 
-Sobald diese erstellt ist wird sie in der Rubrik  `Arbeitsfluss Management`{.action} zur Verfügung stehen:
+Sobald er erstellt wurde, wird der neue Workflow unter `Workflow Management`{.action} angezeigt.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
 
-Die Sicherheitskopien werden in der Rubrik  `Instanz Backup`{.action} verfügbar sein und auch so berechnet.
+Die Backups werden im linken Menü unter `Instance Backup`{.action} verfügbar sein und gemäß Ihrer Instanzkonfiguration berechnet.
+
+Um eine neue Instanz basierend auf einem Backup zu erstellen, klicken Sie hier rechts auf `...`{.action} und dann auf `Instanz erstellen`{.action}.
 
 
 ## Weiterführende Informationen

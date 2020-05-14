@@ -11,7 +11,7 @@ All guides are stored in this [repository](#)
 
 A `guide` belongs to a `product` that belongs to an `universe`. Keep this in mind :).
 
-```
+```bash
 .
 ├── pages
 |   ├── web
@@ -45,12 +45,13 @@ _example_: `home.en-gb.md`, `universe.fr-fr.md`, ...
 #### content-types
 
 ##### home
+
 Home page for a specific `zone` and `language` pair.
 No content in this file except metadata.
 
 ###### available metadata
 
-| name    | description                      | extra                  | 
+| name    | description                      | extra                  |
 |---------|----------------------------------|------------------------|
 | title   | title of the site                | mandatory              |
 | excerpt | short desc of the site           |                        |
@@ -70,7 +71,8 @@ Page that lists all visible products the universe owns.
 No content in this file except metadata.
 
 ###### available metadata
-| name    | description                      | extra                  | 
+
+| name    | description                      | extra                  |
 |---------|----------------------------------|------------------------|
 | title   | title of the product             | mandatory              |
 | excerpt | short desc of the universe       |                        |
@@ -85,7 +87,7 @@ No content in this file except metadata.
 
 ###### available metadata
 
-| name    | description                      | extra                  | 
+| name    | description                      | extra                  |
 |---------|----------------------------------|------------------------|
 | title   | title of the product             | mandatory              |
 | excerpt | short desc of the product        |                        |
@@ -99,7 +101,7 @@ Page containing documentation about the subject of your choice.
 
 ###### metadata
 
-| name    | description                      | extra                  | 
+| name    | description                      | extra                  |
 |---------|----------------------------------|------------------------|
 | title   | title of the doc                 | mandatory              |
 | excerpt | short desc of the doc            |                        |
@@ -112,7 +114,7 @@ Page containing documentation about the subject of your choice.
 
 If you want to add some pictures in your guide, create a folder images within your guide folder and place your pics there.
 
-```
+```bash
 ...
 ├── my-super-guide
 |   ├── images
@@ -132,6 +134,7 @@ You can now reference your pics relatively to your guide. See below an example f
 Each guide must be placed in a folder with a representative name
 
 #### languages
+
 Allowed `ISO 639-1` language code (*[wikipedia](https://en.wikipedia.org/wiki/ISO_639-1)*)
 
 - `cs`: Czech
@@ -147,6 +150,7 @@ Allowed `ISO 639-1` language code (*[wikipedia](https://en.wikipedia.org/wiki/IS
 - `pt`: Portuguese
 
 #### zones
+
 Allowed `ISO 3166-1` country code (*[wikipedia](https://en.wikipedia.org/wiki/ISO_3166-1)*)
 
 - `au`: Australia
@@ -172,6 +176,6 @@ ___
 
 ## Format
 
-All ressources are written in `markdown`. [See examples](http://commonmark.org/help/)
+All ressources are written in `markdown`. [See examples](http://commonmark.org/help/).
 
-In order to write specific content, we extend the base syntax to fit our needs. [see examples](markdown-custom.md)
+In order to write specific content, we extend the base syntax to fit our needs. [See examples](markdown-custom.md).

@@ -1,25 +1,39 @@
 ---
 title: 'Configuring IP aliasing'
 slug: network-ipaliasing-vps
-excerpt: 'This guide explains how to add failover IPs to your configuration'
+excerpt: 'Find out how to add failover IP addresses to your VPS configuration'
 section: 'Network Management'
 ---
 
-**Last updated 4th September 2018**
+**Last updated 8th April 2020**
 
 ## Objective
 
-IP aliasing is a special network configuration for your OVH servers, which allows you to associate multiple IP addresses with a single network interface.
+IP aliasing is a special network configuration for your OVHcloud servers, which allows you to associate multiple IP addresses with a single network interface.
 
-**This guide explains how to add failover IPs to your VPS configuration.**
+**This guide explains how to add failover IP addresses to your network configuration.**
+
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>
 
 ## Requirements
 
-* a [Virtual Private Server](https://www.ovh.co.uk/vps/){.external}
-* a failover IP address or a failover IP block (RIPE)
-* administrative (root) access to the server via SSH
+- a [Virtual Private Server](https://www.ovhcloud.com/en-gb/vps) in your OVHcloud account
+- a failover IP address or a failover IP block (RIPE)
+- administrative access (root) via SSH or remote desktop (Windows) to your server
+
 
 ## Instructions
+
+The following sections contain the configurations for the most commonly used distributions/operating systems.
+
+> [!primary]
+>
+Concerning current distributions, please note that the proper procedure to configure your network interface may be subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
+> 
 
 ### Debian 9
 
@@ -47,7 +61,7 @@ Then edit the file with the following configuration:
 
 > [!primary]
 >
-Note that then names of the network interfaces in our example may differ from your own. Please substitute your own interfaces.
+Note that the names of the network interfaces in our examples may differ from your own. Please adjust to your appropriate interface names.
 >
 
 ```sh
@@ -67,7 +81,7 @@ netmask 255.255.255.255
 
 ### Ubuntu 18.04
 
-Each failover IP address will need its own line within this file. The configuration file for your failover IP addresses should be called `50-cloud-init.yaml`.
+Each failover IP address will need its own line within this file. The configuration file for your failover IP addresses should be called "50-cloud-init.yaml".
 
 #### Step 1: Create the configuration file
 
@@ -143,7 +157,7 @@ ifup eth0:0
 
 #### Step 1: Check the main IP configuration
 
-First of all we need to recover the information of the main IP:
+First of all we need to recover the information of the main IP address:
 
 ![check main IP configuration](images/image1-1.png){.thumbnail}
 
@@ -157,11 +171,11 @@ Now we can define the IP information obtained previously:
 
 ![change the ip configuration](images/image3-3.png){.thumbnail}
 
-#### Step 3: Add the IP Fail Over in the 'Advanced configuration' section
+#### Step 3: Add the failover IP in the 'Advanced configuration' section
 
 ![advance configuration section](images/image4-4.png){.thumbnail}
 
-Here we must to define the IP FailOver information and the correspond netmask (normally the netmask is -> 255.255.255.255)
+Here we must to define the failover IP information and the correspond netmask (normally the netmask is -> 255.255.255.255)
 
 ![IP fail over configuration](images/image5-5.png){.thumbnail}
 
@@ -182,7 +196,7 @@ Using the console and the ___ipconfig___ command we can check the new network co
 ![check current network configuration](images/image8-8.png){.thumbnail}
 
 
-### cPanel
+### cPanel (on CentOS 6)
 
 #### Step 1: Create the source file
 
@@ -204,7 +218,7 @@ Then add the failover IP to the file:
 ```bash
 IP_FAILOVER:255.255.255.255:IP_FAILOVER
 ```
-Next, add the IP in `/etc/ipaddrpool``:
+Next, add the IP in /etc/ipaddrpool:
 
 ```bash
 IP_FAILOVER
@@ -244,16 +258,19 @@ Then put the additional IP information in the form and press ```OK```
 
 If you are unable to establish a connection from the public network to your alias IP and suspect a network problem, please reboot the server in Rescue Mode and setup the alias directly on the server.
 
-In order to do that, once you’ve rebooted your server in Rescue Mode, please enter the following command:
+In order to do that, once you have rebooted your server in Rescue Mode, please enter the following command:
 
 ```sh
 ifconfig ens3:0 FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP up
 ```
 
-Where you will replace FAILOVER_IP by the actual IPFO.
+Replace FAILOVER_IP with the actual IPFO.
 
-Next, simply ping your IPFO from the outside. If it works, it probably means that there is a configuration error that requires to be fixed. If, on the contrary, the IP is still not working, please open a ticket to the support team via your Control Panel for further investigations.
+Next, simply ping your IPFO from the outside. If it works, it probably means that there is a configuration error that requires to be fixed. If, on the contrary, the IP is still not working, please inform our support team by creating a support request in your [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/support/tickets/new) for further investigations.
  
 ## Go further
+
+[Activating Rescue Mode on VPS](https://docs.ovh.com/gb/en/vps/rescue)
+
 
 Join our community of users on <https://community.ovh.com/en/>.

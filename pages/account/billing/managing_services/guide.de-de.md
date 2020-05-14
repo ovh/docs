@@ -1,15 +1,16 @@
 ---
-title: 'OVH Dienste verwalten'
+title: 'OVHcloud Dienste verwalten'
 slug: ovh-dienste-verwalten
-excerpt: 'Hier erfahren Sie, wie Sie Ihre Lösungen im Kundencenter anzeigen und diese verwalten können.'
-section: 'Bestellungen, Rechnungen und Dienste verwalten'
+excerpt: 'Hier erfahren Sie, wie Sie Ihre Dienste im Kundencenter anzeigen und diese verwalten können.'
+section: Abrechnung
+hidden: true
 ---
 
 **Stand 08.04.2019**
 
-## Einleitung
+## Ziel
 
-Im Kundencenter können Sie alle Ihre OVH Dienste verwalten. 
+Im Kundencenter können Sie alle Ihre OVHcloud Dienste verwalten. 
 
 **In dieser Anleitung erfahren Sie, wie Sie Ihre Lösungen über den Bereich „Meine Dienste verwalten“ in Ihrem Kundencenter anzeigen und diese verwalten können.**
 

@@ -6,13 +6,20 @@ section: 'Configurazione di un client di posta'
 order: 7
 ---
 
-**Ultimo aggiornamento: 19/07/2018**
+**Ultimo aggiornamento: 09/04/2020**
 
 ## Obiettivo
 
 Gli account Email Pro possono essere configurati su diversi client di posta elettronica compatibili per permetterti di utilizzare il tuo account email dal dispositivo che preferisci.
 
 **Questa guida ti mostra come configurare un account Email Pro sull’applicazione Posta per Windows 10.**
+
+> [!warning]
+>
+> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione; garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+> 
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio.  Per maggiori informazioni consulta la sezione “Per saperne di più”.
+> 
 
 ## Prerequisiti
 
@@ -23,6 +30,13 @@ Gli account Email Pro possono essere configurati su diversi client di posta elet
 ## Procedura
 
 ### Step 1: aggiungi il tuo account
+
+> [!primary]
+>
+> Nel nostro esempio abbiamo utilizzato come nome del server "pro**X**.mail.ovh.net", dove "X" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
+>
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
+> 
 
 Una volta avviata l’applicazione Posta sul tuo dispositivo, puoi aggiungere un nuovo account in due modi diversi.
 
@@ -43,9 +57,9 @@ Inserisci le informazioni richieste:
 |Password|Digita la password associata all’account.|
 |Nome dell’account|Inserisci un nome che ti permetterà di riconoscere questo account tra quelli presenti nella tua applicazione Posta.|
 |Invia i tuoi messaggi utilizzando questo nome|Indica il nome che comparirà come mittente dei messaggi inviati da questo indirizzo|
-|Server di posta in entrata|Inserisci il server “pro1.mail.ovh.net:993”.|
+|Server di posta in entrata|Inserisci il server “pro**X**.mail.ovh.net:993”.|
 |Tipo di account|Ti consigliamo di usare il protocollo **IMAP4**. Tuttavia puoi selezionare **POP** (archiviazione di email nella tua applicazione Posta) nel menu a tendina.|
-|Server di posta in uscita|Inserisci il server “pro1.mail.ovh.net:587”.|
+|Server di posta in uscita|Inserisci il server “pro**X**.mail.ovh.net:587”.|
 
 Assicurati di aver selezionato correttamente le seguenti voci:
 - “Il server in uscita richiede l’autenticazione”
@@ -63,14 +77,14 @@ Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco
 
 |Tipo di server |Nome del server|SSL|Porta|
 |---|---|---|---|
-|In entrata|pro1.mail.ovh.net|Sì|993|
-|In uscita|pro1.mail.ovh.net|Sì|587|
+|In entrata|pro**X**.mail.ovh.net|Sì|993|
+|In uscita|pro**X**.mail.ovh.net|Sì|587|
 
 ### Step 2: utilizza il tuo account
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVH propone anche un’applicazione Web con [funzionalità collaborative](https://www.ovh.it/emails/){.external}. disponibile alla pagina <https://www.ovh.it/mail/> e accessibile con le credenziali del tuo account.
+OVHcloud propone anche un’applicazione Web con [funzionalità collaborative](https://www.ovh.it/emails/){.external}. disponibile alla pagina <https://www.ovh.it/mail/> e accessibile con le credenziali del tuo account.
 
 ## Per saperne di più
 
@@ -78,4 +92,4 @@ OVH propone anche un’applicazione Web con [funzionalità collaborative](https:
 
 [Configurare un account Exchange sull’applicazione Posta per Windows 10](https://docs.ovh.com/it/microsoft-collaborative-solutions/configurazione-posta-windows-10/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

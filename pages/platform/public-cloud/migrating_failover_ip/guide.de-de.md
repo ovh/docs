@@ -1,54 +1,56 @@
 ---
-title: Umzug einer Failover-IP
-excerpt: Umzug einer Failover-IP
+title: 'Failover-IP migrieren'
+excerpt: 'Erfahren Sie hier, wie Sie eine Failover-IP-Adresse zu einer anderen Instanz migrieren'
 slug: umzug_einer_failover-ip
 legacy_guide_number: g1890
+section: 'Netzwerk und IP'
 ---
 
+**Letzte Aktualisierung am 09.04.2020**
 
-## 
-In dieser Hilfe wird beschrieben, wie Sie eine Failover-IP von einer Instanz auf eine andere Instanz umziehen können. Dies kann aus verschiedenen Gründen interessant sein, meist wird diese Operation dazu genutzt, um die durchgehende Erreichbarkeit einer Dienstleistung sicherzustellen, zum Beispiel:
+## Ziel
 
-- Im Rahmen einer Umstellung einer Website auf deren "neue Version".
-- Um den Produktivbetrieb auf einen replizierten Server umzuleiten, während Sie eine Wartung oder ein Update am Produktiv-Server durchführen.
+IP-Adressen migrieren zu können bedeutet, die Möglichkeit eines Dienstausfalls einzuschränken oder gar auszuschließen. Sie können beispielsweise eine Webseite vollständig auf eine neue Version updaten oder einen replizierten Server verfügbar halten, während der Produktionsserver gewartet wird oder Updates darauf installiert werden.
 
-
-
+**Diese Anleitung erklärt, wie Sie eine Failover-IP von einer OVHcloud Public Cloud Instanz auf eine andere umziehen können.**
 
 ## Voraussetzungen
 
-- Mindestens zwei gestartete Public Cloud Instanzen
-- Eine Failover-IP
+- Sie verfügen über mindestens zwei [Public Cloud Instanzen](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
+- Sie verfügen über eine Failover-IP.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+
+## In der praktischen Anwendung
+
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken im linken Menü auf `Failover IP`{.action} unter "Network".
+In diesem Beispiel soll die auf „Instance_A“ geroutete Failover-IP zu „Instance_B“ migriert werden.
+
+![](images/failover.png){.thumbnail}
+
+Klicken Sie auf `...`{.action} neben der Failover-IP und dann auf „Verbundene Instanz bearbeiten“.
+
+![](images/modify.png){.thumbnail}
+
+Wählen Sie den Zielserver aus der Liste über die Checkbox aus.
+
+![](images/modify1.png){.thumbnail}
+
+Bestätigen Sie die Auswahl mit `Verbinden`{.action}.
+
+Nach einigen Sekunden wird die Kundencenter-Anzeige aktualisiert und eine Bestätigungsmeldung wird angezeigt, wenn die Migration erfolgreich durchgeführt wurde.
+
+![](images/modify2.png){.thumbnail}
 
 
+> [!primary]
+>
+Die Failover-IP kann vor oder nach der Migration auf dem Zielserver konfiguriert werden. Wenn sie vorkonfiguriert wurde, wird sie funktional, sobald die Routing-Operation abgeschlossen ist.
+>
 
+## Weiterführende Informationen
 
-## 
+[Failover-IP konfigurieren](https://docs.ovh.com/gb/en/public-cloud/configure_a_failover_ip)
 
-- Die IP-Adresse wird derzeit auf den Server 1 geroutet und soll auf den Server 2 umgezogen werden.
+[Failover-IP importieren](https://docs.ovh.com/de/public-cloud/import_einer_failover-ip/)
 
-
-
-![](images/img_3815.jpg){.thumbnail}
-
-- Klicken Sie auf die IP-Adresse und dann auf "Den dazugehörigen Server ändern".
-
-
-
-![](images/img_3816.jpg){.thumbnail}
-
-- Wählen Sie den gewünschten Ziel-Server aus.
-
-
-
-![](images/img_3817.jpg){.thumbnail}
-
-- Klicken Sie auf "Anhängen".
-
-
-Die Failover-IP kann auf dem Ziel-Server sowohl vor als auch nach deren Umzug konfiguriert werden. Es empfiehlt sich jedoch eine vorherige Konfiguration, da die Adresse dann unmittelbar nach dem Abschluss der Routing-Operation antwortet.
-
-
-## 
-[Zurück zum Index der Cloud Hilfen]({legacy}1785)
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

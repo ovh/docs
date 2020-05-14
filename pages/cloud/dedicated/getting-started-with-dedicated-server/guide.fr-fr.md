@@ -5,17 +5,19 @@ excerpt: 'Découvrez comment prendre en main votre nouveau serveur dédié'
 section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 16/08/2018**
+**Dernière mise à jour le 01/04/2020**
 
 ## Objectif
 
-Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. Contrairement aux solutions d'hébergement web (décrites comme « mutualisées ») qui sont techniquement gérées par OVH, vous êtes entièrement responsable de l'administration de votre serveur dédié.
+Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. Contrairement aux solutions d'hébergement web (décrites comme « mutualisées ») qui sont techniquement gérées par OVHcloud, vous êtes entièrement responsable de l'administration de votre serveur dédié.
 
 **Découvrez comment prendre en main votre nouveau serveur dédié.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MkayHx0LCN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 > [!warning]
 >
-> OVH met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
@@ -23,7 +25,7 @@ Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. 
 
 ## Prérequis
 
-* Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, visible dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Dédié`{.action}, puis `Serveurs Dédiés`{.action}.
+* Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, visible dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Server`{.action}, puis `Serveurs Dédiés`{.action}.
 
 
 ## En pratique
@@ -71,7 +73,7 @@ Suivez le reste des instructions à l’écran, puis cliquez sur `Confirmer`{.ac
 
 > [!primary]
 >
-> Certains systèmes d'exploitation ou plateformes, tels que Plesk et Windows, nécessitent l'achat d'une licence avant leur installation. Vous pouvez acheter celle-ci par l'intermédiaire d'OVH dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Dédié`{.action}, puis `Licences`{.action} ou auprès d'un revendeur. Vous devrez ensuite l'intégrer manuellement, via le système d'exploitation lui-même, ou via votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+> Certains systèmes d'exploitation ou plateformes, tels que Plesk et Windows, nécessitent l'achat d'une licence avant leur installation. Vous pouvez acheter celle-ci par l'intermédiaire d'OVHcloud dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Dédié`{.action}, puis `Licences`{.action} ou auprès d'un revendeur. Vous devrez ensuite l'intégrer manuellement, via le système d'exploitation lui-même, ou via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. 
 > 
 
 
@@ -106,12 +108,12 @@ Pour obtenir des instructions détaillées sur la configuration de l'alias IP, r
 
 #### Configuration de l’IPv6
 
-Tous les serveurs dédiés OVH comprennent un bloc /64 d'IPv6. Pour utiliser les adresses de ce bloc, vous devrez effectuer certaines modifications de configuration du réseau. Référez-vous au guide: [Configuration de IPv6](https://docs.ovh.com/fr/dedicated/network-ipv6/){.external}.
+Tous les serveurs dédiés OVHcloud comprennent un bloc /64 d'IPv6. Pour utiliser les adresses de ce bloc, vous devrez effectuer certaines modifications de configuration du réseau. Référez-vous au guide: [Configuration de IPv6](https://docs.ovh.com/fr/dedicated/network-ipv6/){.external}.
 
 
 ### Résoudre des soucis de configuration via l'IPMI
 
-OVH déploie tous ses serveurs dédiés avec une console IPMI (Intelligent Platform Management Interface), qui s'exécute dans votre navigateur ou depuis une applet Java et qui vous permet de vous connecter directement à votre serveur, même s'il n'a pas de connexion réseau. Cela permet de résoudre les problèmes qui ont pu entraîner la déconnexion de votre serveur.
+OVHcloud déploie tous ses serveurs dédiés avec une console IPMI (Intelligent Platform Management Interface), qui s'exécute dans votre navigateur ou depuis une applet Java et qui vous permet de vous connecter directement à votre serveur, même s'il n'a pas de connexion réseau. Cela permet de résoudre les problèmes qui ont pu entraîner la déconnexion de votre serveur.
 
 Pour plus d’informations, référez-vous au guide sur [l’utilisation de l’IPMI pour les serveurs dédiés](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies/){.external}.
 
