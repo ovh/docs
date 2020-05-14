@@ -12,6 +12,7 @@ section: 'Premiers pas'
 ### Que faire si l'émission/réception de mes e-mails est impossible ? 
 
 La plupart du temps, une émission/réception d'e-mails impossible est liée à la configuration de votre adresse sur votre logiciel de messagerie. Pour le vérifier, testez-le en vous connectant sur le [webmail](https://www.ovh.com/fr/mail/){.external} et réalisez un test d'envoi et de réception à partir de votre adresse.
+
 * Si cela fonctionne normalement, c'est que le phénomène provient bien de votre configuration logicielle. 
 * À l'inverse si l'émission ou réception reste impossible, d'autres solutions s'offrent à vous.
 
