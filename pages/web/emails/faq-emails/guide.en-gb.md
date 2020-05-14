@@ -34,8 +34,9 @@ With [webmail](https://www.ovh.co.uk/mail/), you can access your inbox at any ti
 All of your email addresses are managed via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. To do this, log in and access the product concerned. You can change the passwords for your email addresses, check how much space they have left, create new email addresses, or delete existing ones. 
 
 **Tips and tricks**: With MX Plan email solutions, you can delegate the management of an email account to another OVHcloud account while keeping control over it yourself. To do this, simply set up a delegation from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}: Log in to the OVHcloud Control Panel, navigate to the `Emails` section and select the domain concerned. Next, go to the `Emails` tab, then select an option:
-* `Manage the elements shared by all email adresses`{.action} on the right-hand side if you would like to delegate management of all accounts for this domain
-* `Delegation management`{.action} if you would like to delegate management of a specific account (click on `...`{.action} next to the account)  
+
+- `Manage the elements shared by all email adresses`{.action} on the right-hand side if you would like to delegate management of all accounts for this domain
+- `Delegation management`{.action} if you would like to delegate management of a specific account (click on `...`{.action} next to the account)  
 
 Please note that an OVHcloud customer ID (NIC handle) is required for both options.
 
