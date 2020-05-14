@@ -1,7 +1,7 @@
 ---
 title: 'Activación y gestión de un SharePoint OVH'
-excerpt: 'Cómo contratar y configurar una plataforma SharePoint'
 slug: activacion_y_gestion_de_un_sharepoint_ovh
+excerpt: 'Cómo contratar y configurar una plataforma SharePoint'
 legacy_guide_number: g2249
 section: Sharepoint
 ---
@@ -23,7 +23,7 @@ Los planes SharePoint permiten disfrutar de un espacio de almacenamiento compart
 
 ### 1. Contratar una plataforma SharePoint
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y acceda al apartado «Web». En la barra de servicios a la izquierda, haga clic en `«Contratar»`{.action} y, seguidamente, en `«SharePoint».
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y acceda al apartado «Web». En la barra de servicios a la izquierda, haga clic en `«Contratar»`{.action} y, seguidamente, en `«SharePoint»`{.action}.
 
 Podrá elegir entre dos plataformas:
 
