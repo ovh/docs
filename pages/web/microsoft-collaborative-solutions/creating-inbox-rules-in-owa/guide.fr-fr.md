@@ -1,8 +1,8 @@
 ---
-Title: 'Création de règles de gestion de la boîte de réception depuis OWA'
+title: 'Création de règles de gestion de la boîte de réception depuis OWA'
 slug: regles-boite-de-reception-owa
 excerpt: 'Comment créer des filtres et des redirections e-mails depuis OWA'
-section: 'Utilisation de Outlook Web Application (OWA)'
+section: 'Utilisation d''Outlook Web Application (OWA)'
 ---
 
 **Dernière mise à jour le 11 mars 2020**
