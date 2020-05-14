@@ -37,7 +37,7 @@ If you're wondering which protocol to choose, here is a simple guideline :
 - You want to push json? -> `OpenTSDB`
 - You want to instrument your code? -> `Prometheus SDK` & `Beamium`
 - You want powerful analytics? -> `Warp 10™` & `WarpScript™`
-- You want BI tools integration like Tableau, Power BI, Qlik? -> `SQL`
+- You want tooling integration? ->  `InfluxDB`
 
 ### Authentification and endpoints
 
