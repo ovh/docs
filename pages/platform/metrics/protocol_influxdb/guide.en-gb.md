@@ -232,7 +232,7 @@ The InfluxQL [continuous queries](https://docs.influxdata.com/influxdb/v1.7/quer
 ### Query parameters
 
 Natively an InfluxQL requests expects two parameter `q` and `db`. As in metrics application the database notion doesn't exist the `db` parameter is optional.
-By default the time parameters are rendered with an **rfc3339** string. To get a time value, you will need to specify `epoch` as query parameter with the wanted unit. The supported one on the Metrics Data Platform are: `ms`, `us` and `ns`.
+By default the time parameters are rendered with an **rfc3339** string. To get a time value, you will need to specify `epoch` as query parameter with the wanted unit. The supported ones on the Metrics Data Platform are: `ms`, `us` and `ns`.
 
 ### Use InfluxQL to query data from sources that were not pushed on the Influx format
 
