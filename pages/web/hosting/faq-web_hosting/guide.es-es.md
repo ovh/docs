@@ -3,7 +3,6 @@ title: FAQ
 excerpt: 'Encuentre las respuestas a las preguntas más frecuentes sobre alojamiento web'
 slug: faq-web-hosting
 section: 'Primeros pasos'
-hidden: true
 ---
 
 **Última actualización: 14/05/2020**
