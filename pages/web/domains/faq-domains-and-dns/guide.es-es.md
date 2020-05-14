@@ -3,7 +3,6 @@ title: FAQ
 excerpt: 'Encuentre las respuestas a las preguntas más frecuentes sobre dominios y DNS'
 slug: faq-dominios-dns
 section: General
-hidden: true
 ---
 
 **Última actualización: 14/05/2020**
