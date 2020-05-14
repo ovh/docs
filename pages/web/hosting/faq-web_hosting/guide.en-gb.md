@@ -3,7 +3,6 @@ title: 'Web Hosting FAQ'
 excerpt: 'Find the answers to the most frequently asked questions about OVHcloud Web Hosting plans'
 slug: web-hosting-faq
 section: 'Getting started'
-hidden: true
 ---
 
 **Last updated 05th May 2020**
@@ -61,9 +60,9 @@ As an experienced user, you can host several websites on the same Web Hosting pl
 
 ### I have published my website but the OVHcloud "Congratulations" message is still being displayed
 
-When you set up a Web Hosting plan, OVHcloud implements a preliminary index page while you move your website files on to your storage space. If you simply place your files in the ‘www’ folder without deleting the content stored there by OVHcloud, you may encounter this issue. 
+When you set up a Web Hosting plan, OVHcloud implements a preliminary index page while you move your website files on to your storage space. If you simply place your files in the "www" folder without deleting the content stored there by OVHcloud, you may encounter this issue. 
 
-To correct this, you will need to delete or rename the ‘index.html’ file set up by OVHcloud on your hosting space. It may be useful to just rename it, so that you can re-enable it as needed to act as a temporary fallback page. 
+To correct this, you will need to delete or rename the "index.html" file set up by OVHcloud on your hosting space. It may be useful to just rename it, so that you can re-enable it as needed to act as a temporary fallback page. 
 
 **Other useful information**: make sure you upload your website files to the "www" folder, so that they are visible.
 
