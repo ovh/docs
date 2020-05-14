@@ -1,15 +1,15 @@
 ---
-Titre: '« Création de règles de gestion de la boîte de réception depuis OWA »'
+Titre: 'Création de règles de gestion de la boîte de réception depuis OWA'
 slug: regles-boite-de-reception-owa
-excerpt: '« Comment créer des filtres et des redirections e-mails depuis OWA »'
-section: 'Utilisation d''Outlook Web Application (OWA)'
+excerpt: 'Comment créer des filtres et des redirections e-mails depuis OWA'
+section: 'Utilisation de Outlook Web Application (OWA)'
 ---
 
 **Dernière mise à jour le 11 mars 2020**
 
 ## Objectif
 
-Avec l’option « Règles de gestion de la boîte de réception », vous pouvez créer un ensemble de règles pour gérer votre courrier entrant. Ces règles vous permettent maintenir l’ordre dans votre compte de messagerie en acheminant automatiquement les e-mails dans différents dossiers. Il s’agit également d’une méthode qui permet de définir les paramètres de transfert (redirections) et de filtrer les messages indésirables.
+Avec l’option « Règles de gestion de la boîte de réception », vous pouvez créer un ensemble de règles pour gérer votre courrier entrant. Ces règles vous permettent de maintenir l’ordre dans votre compte de messagerie en acheminant automatiquement les e-mails dans différents dossiers. Il s’agit également d’une méthode qui permet de définir les paramètres de transfert (redirections) et de filtrer les messages indésirables.
 
 **Découvrez comment créer des filtres et des redirections e-mails depuis Outlook Web App (OWA).**
 
@@ -24,7 +24,7 @@ Avec l’option « Règles de gestion de la boîte de réception », vous pouvez
 
 ### Étape 1 : Accéder à la section Options
 
-Connectez-vous à votre compte Exchange via le webmail [OVHcloud](https://www.ovh.com/fr/mail/). Cliquez sur l’icône de réglage en haut à droite pour afficher le menu « Options » et sélectionnez `Options`{.action}.
+Connectez-vous à votre compte Exchange via le webmail [OVHcloud](https://www.ovh.com/fr/mail/). Cliquez sur l’icône de réglages en haut à droite pour afficher le menu « Options » et sélectionnez `Options`{.action}.
 
 ![règles boîte de réception](images/exchange-rules-step1.png){.thumbnail}
 
@@ -62,11 +62,20 @@ Puisqu’il existe une multitude de conditions et d’actions au choix, il nous 
 
 #### Exemple 1 : Rediriger des e-mails vers une autre adresse
 
-Créez une nouvelle règle en cliquant sur l’icône `+`{.action}. Nommez votre règle et sélectionnez en dessous les e-mails auxquels elle doit s’appliquer. Pour cet exemple, nous choisissons d’abord d’inclure **tous les messages**. Ensuite, sélectionnez l’action appropriée ; à ce niveau, nous allons nous appesantir sur l’illustration d’une **redirection**. À titre de rappel, il y a une différence technique : si vous « transférez » un e-mail, le destinataire final verra votre adresse e-mail comme expéditeur. Par contre, le fait de « rediriger » un e-mail va l’envoyer à votre adresse cible sans modifier l’adresse de l’expéditeur initial. 
+Créez une nouvelle règle en cliquant sur l’icône `+`{.action}. Nommez votre règle et sélectionnez en dessous les e-mails auxquels elle doit s’appliquer. Pour cet exemple, nous choisissons d’abord d’inclure **tous les messages**. Ensuite, sélectionnez l’action appropriée ; à ce niveau, nous allons nous appesantir sur l’illustration d’une **redirection**. 
+
+À titre de rappel, il y a une différence technique : 
+
+* Si vous « transférez » un e-mail, le destinataire final verra votre adresse e-mail comme expéditeur. 
+* Par contre, le fait de « rediriger » un e-mail va l’envoyer à votre adresse cible sans modifier l’adresse de l’expéditeur initial. 
 
 ![règles boîte de réception](images/exchange-rules-step4.png){.thumbnail}
 
-Sur l’écran suivant, sélectionnez parmi « vos contacts » (`+`{.action}) ou saisissez une adresse e-mail dans la barre supérieure. Vous pouvez également rechercher des utilisateurs non répertoriés ici comme contacts. Une fois la sélection effectuée, cliquez sur `Enregistrer`{.action} pour retourner à l’écran « Nouvelle règle de la boîte de réception ». Vous pouvez affiner davantage cette règle en cliquant sur `Ajouter une action`{.action}. Le cas échéant, ajoutez également les exceptions listées en dessous, par exemple pour éviter une redirection si un message entrant a été envoyé par une adresse e-mail spécifique ou s’il contient des mots-clés précis. Enregistrez la règle en cliquant sur `OK`{.action}.
+Sur l’écran suivant, sélectionnez parmi « vos contacts » (`+`{.action}) ou saisissez une adresse e-mail dans la barre supérieure. Vous pouvez également rechercher des utilisateurs non répertoriés ici comme contacts. Une fois la sélection effectuée, cliquez sur `Enregistrer`{.action} pour retourner à l’écran « Nouvelle règle de la boîte de réception ». 
+
+Vous pouvez affiner davantage cette règle en cliquant sur `Ajouter une action`{.action}. 
+
+Le cas échéant, ajoutez également les exceptions listées en dessous, par exemple pour éviter une redirection si un message entrant a été envoyé par une adresse e-mail spécifique ou s’il contient des mots-clés précis. Enregistrez la règle en cliquant sur `OK`{.action}.
 
 La nouvelle règle est maintenant listée avec une explication de son action et elle peut être modifiée, désactivée ou supprimée.
 
@@ -107,4 +116,4 @@ Veuillez noter que les faux-positifs ne peuvent pas être identifiés directemen
 
 [Utilisation de Outlook Web App avec un compte de messagerie](../../utilisation-owa/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
