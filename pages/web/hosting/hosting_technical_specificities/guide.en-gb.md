@@ -30,7 +30,7 @@ hidden: true
 
 ### FTP
 
-- Access error ("530 Login authentication failed"): You can make sure the access credentials to your hosting space are correct by checking via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) ("FTP - SSH"). Passwords are never displayed but they can be changed. Please refer to our [FTP guides](../hosting/).
+- Access error ("530 Login authentication failed"): You can make sure the access credentials to your hosting space are correct by checking via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) ("FTP - SSH"). Passwords are never displayed but they can be changed. Please refer to our [FTP guides](../).
 
 - FTP connections have to use **passive mode**. Please make sure your script or FTP client is adjusted accordingly.
 
@@ -41,7 +41,7 @@ hidden: true
 
 #### Simultaneous Database Connections
 
-- On Web Hosting plans (shared databases), there is a limit of 30 concurrent connections per database (50 with the included Private SQL database). Plese refer to the [product page](https://www.ovh.co.uk/web-hosting/) to verify the available options of our Web Hosting plans.
+- On Web Hosting plans (shared databases), there is a limit of 30 concurrent connections per database (200 with the included Private SQL database). Plese refer to the [product page](https://www.ovh.co.uk/web-hosting/) to verify the available options of our Web Hosting plans.
 
 - You can also order additional **Private SQL** databases, which have some customisation options:
 
@@ -84,7 +84,7 @@ Please refer to [this guide](../creating-database/) for more information about m
 > [!primary]
 >
 > The .ovhconfig file is functional at the root folder of the Web Hosting or in a level 1 subdirectory (usually _/www/_). The only way to override the main .ovhconfig settings is with another .ovhconfig file in a subfolder.  
-Placing this file deeper in the directory structure will have no effect (e.g. _/www/test/_, _/www/test/test2/_). Make sure the file is readable by your CMS (0604 or 0644).
+Placing this file deeper in the directory structure will have no effect (e.g. _/www/test/_, _/www/test/test2/_). Make sure the file is readable by your CMS (604 or 644).
 >
 
 
@@ -115,18 +115,18 @@ As an example, you can use the function *gethostbyaddr()* to retrieve the hostna
 
 
 > [!warning]
->OVHcloud does not force PHP updates. Customers are fully responsible for keeping their services secure and for ensuring that installed software is updated regularly.
+>OVHcloud does not force PHP updates. Customers are fully responsible for keeping their services secure and for ensuring that any installed software is updated regularly.
 >
 
 
 #### Web Hosting libraries
 
-Please consult the respective information pages to verify the available libraries for your Web Hosting plan:
+We recommend to consult the information pages to verify the available libraries for your Web Hosting plan. You can find your "infos" page by using the respective cluster link: <http://cluster015.hosting.ovh.net/infos/>
 
-- <https://perso.ovh.net/infos/>
-- <https://pro.ovh.net/infos/>
-- <https://cloudweb-infos.hosting.ovh.net/>
+To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
+You can verify the cluster number of the Web Hosting on this page under **FTP server**.
 
+For CloudWeb Hostings, please refer to: <https://cloudweb-infos.hosting.ovh.net/>
 
 
 ### Cookie Policy
@@ -135,19 +135,21 @@ Please consult the respective information pages to verify the available librarie
 
 In order to ensure the proper functioning of websites hosted on the Shared Hosting service, a "SERVER ID" cookie for those websites is placed on the end user's device. The "SERVER ID" cookie enables a service for allocating incoming traffic between the different infrastructures used for hosting the website (OVHcloud Load Balancer). It allows the user to stay on the same host server for the duration of the session. This helps to maintains and preserve the consistency of the user experience.
 
-The "SERVER ID" cookie is a file saved on the end user's device that indicates the instance (server and disk array) of the infrastructure with which the user interacts. The cookie is anonymous in that no personal data of the user is processed.
+The "SERVER ID" cookie is a file stored on the end user's device that indicates the instance (server) of the infrastructure with which the user interacts. The cookie is anonymous in that no personal data of the user is processed.
 
 The "SERVER ID" cookie is placed on the user's device for a period of less than 24 hours.
+
+Based on the fact that this cookie is anonymous and is only necessary for the operation of the Shared Hosting service, it is not liable to the prior consent of the website visitor within the meaning of the General Data Protection Regulation (GDPR).
 
 ### Information about statistical tools
 
 **OVHcloud Website Statistics**
 
-OVHcloud makes available to the client statistics on website visitors and audience measurement of the website(s) hosted as part of the Hosting service (hereinafter "OVHcloud Website Statistics"). OVHcloud Website Statistics helps to identify the geographical area of users of these websites, the characteristics of the devices used to access the website(s), the page views and HTTP codes. OVHcloud Website Statistics is enabled by default as part of the Shared Hosting service and can be disabled at the customer's request. In order to provide "OVHcloud Website Statistics", OVHcloud performs data processing.
+OVHcloud makes available to the client statistics on website visitors and audience measurement of the website(s) hosted as part of the Hosting service(s) (hereinafter "OVHcloud Website Statistics"). OVHcloud Website Statistics helps to identify the geographical area of users of these websites, the characteristics of the devices used to access the website(s), the page views and HTTP codes. OVHcloud Website Statistics is enabled by default as part of the Shared Hosting service and can be readily disabled at the customer's request by contacting the technical support. In order to provide "OVHcloud Website Statistics", OVHcloud performs data processing.
 
 OVHcloud Website Statistics reports are compiled from anonymised traffic data, such as the IP address and logs of users of the website, the url of the request, the duration of the request and the "user agent".
 
-In order to be used as part of OVHcloud Website Statistics, the aforementioned data is anonymised and aggregated using algorithms operated by OVHcloud on its own infrastructure. In particular, in order to be processed and analysed to determine the geolocation of the user, the IP address of the user, present in the above mentioned traffic data, is extracted in anonymised form. Thus, no personal data allowing the identification, direct or indirect, of the website users is stored as part of OVHcloud Website Statistics.
+In order to be used as part of OVHcloud Website Statistics, the aforementioned data is anonymised and aggregated using algorithms operated by OVHcloud on its own infrastructure. In particular, in order to be processed and analysed to determine the geolocation of the user (limited to a region), the IP address of the user, present in the above mentioned traffic data, is extracted in anonymised form. Thus, no personal data allowing the identification, direct or indirect, of the website users is stored as part of OVHcloud Website Statistics.
 
 
 ## Go further
