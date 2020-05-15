@@ -3,8 +3,9 @@ title: 'Exchange 2016: How to share a folder via OWA'
 excerpt: ''
 slug: exchange_2016_how_to_share_a_folder_via_owa
 legacy_guide_number: g1929
+section: 'Outlook Web Application (OWA)'
+order: 5
 ---
-
 
 ## Step 1: Authorise mailbox sharing
 In our example, a folder is shared from the ovhguide@support-exchange.eu account to ovhguide2@support-exchange.eu.
@@ -31,7 +32,7 @@ You can also customise the level of access for this user by changing the permiss
 
 For example you may want the ovhguide2@support-exchange.eu user to only have access to the "Drafts" folder in the ovhguide@support-exchange.eu. mailbox. 
 
-Click "OK"to confirm your selection.]
+Click "OK"to confirm your selection.
 
 Permissions will be granted only for the file in question.
 

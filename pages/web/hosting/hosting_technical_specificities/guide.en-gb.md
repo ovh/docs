@@ -4,7 +4,6 @@ slug: technical-specifications-web-hosting
 excerpt: 'Find out more about the technical capabilities of your Web Hosting plan '
 section: 'Configuring the Web Hosting plan'
 order: 4
-hidden: true
 ---
 
 **Last updated 13th May 2020**
@@ -143,13 +142,13 @@ Based on the fact that this cookie is anonymous and is only necessary for the op
 
 ### Information about statistical tools
 
-**OVHcloud Website Statistics**
+**OVHcloud Web Statistics**
 
-OVHcloud makes available to the client statistics on website visitors and audience measurement of the website(s) hosted as part of the Hosting service(s) (hereinafter "OVHcloud Website Statistics"). OVHcloud Website Statistics helps to identify the geographical area of users of these websites, the characteristics of the devices used to access the website(s), the page views and HTTP codes. OVHcloud Website Statistics is enabled by default as part of the Shared Hosting service and can be readily disabled at the customer's request by contacting the technical support. In order to provide "OVHcloud Website Statistics", OVHcloud performs data processing.
+OVHcloud makes available to the client statistics on website visitors and audience measurement of the website(s) hosted as part of the Hosting service(s) (hereinafter "OVHcloud Web Statistics"). OVHcloud Web Statistics helps to identify the geographical area of users of these websites, the characteristics of the devices used to access the website(s), the page views and HTTP codes. OVHcloud Web Statistics is enabled by default as part of the Shared Hosting service and can be readily disabled at the customer's request by contacting the technical support. In order to provide "OVHcloud Web Statistics", OVHcloud performs data processing.
 
-OVHcloud Website Statistics reports are compiled from anonymised traffic data, such as the IP address and logs of users of the website, the url of the request, the duration of the request and the "user agent".
+OVHcloud Web Statistics reports are compiled from anonymised traffic data, such as the IP address and logs of users of the website, the url of the request, the duration of the request and the "user agent".
 
-In order to be used as part of OVHcloud Website Statistics, the aforementioned data is anonymised and aggregated using algorithms operated by OVHcloud on its own infrastructure. In particular, in order to be processed and analysed to determine the geolocation of the user (limited to a region), the IP address of the user, present in the above mentioned traffic data, is extracted in anonymised form. Thus, no personal data allowing the identification, direct or indirect, of the website users is stored as part of OVHcloud Website Statistics.
+In order to be used as part of OVHcloud Web Statistics Statistics, the aforementioned data is anonymised and aggregated using algorithms operated by OVHcloud on its own infrastructure. In particular, in order to be processed and analysed to determine the geolocation of the user (limited to a region), the IP address of the user, present in the above mentioned traffic data, is extracted in anonymised form. Thus, no personal data allowing the identification, direct or indirect, of the website users is stored as part of OVHcloud Web Statistics.
 
 
 ## Go further

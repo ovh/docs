@@ -1,6 +1,5 @@
 ---
 title: 'Déployer cPanel sur centOS7'
-description: 'Découvrez comment déployer cPanel en un clic avec les applications pré-installées sur VPS.'
 slug: cpanel
 excerpt: 'Découvrez ici comment instancier un VPS avec l’application cPanel pré-installée.'
 section: 'Utilisation avancée'
@@ -12,7 +11,7 @@ section: 'Utilisation avancée'
 
 cPanel est un panneau de configuration conçu pour les hébergeurs web. Constitué d'une interface graphique permettant l'automatisation des paramètres, l'hébergement de site web est ainsi simplifié.
 
-**Ce guide explique comment effectuer la première connexion au manager cPanel.**
+**Découvrez comment déployer cPanel en un clic avec les applications pré-installées sur VPS.**
 
 
 ## Prérequis
@@ -21,13 +20,13 @@ Afin de créer votre serveur cPanel, il faut d'abord commander un VPS avec la di
 
 ![horizon](images/cpanel_order.png)
 
-Quand votre VPS est prêt, vous recevez un e-mail vous donnant les accès pour vous connecter à votre serveur cPanel:
+Quand votre VPS est prêt, vous recevez un e-mail vous donnant les accès pour vous connecter à votre serveur cPanel :
 
-```
- |    Vos application(s):
- |    Vous pouvez vous connecter à cpanel depuis https://<ip>:2087/<session_parameters>
-```
+> Vos application(s):
+> Vous pouvez vous connecter à cpanel depuis https://<ip>:2087/<session_parameters>
+
 Votre serveur cPanel est maintenant prêt à être utilisé.
+
 ## En pratique
 
 ### Première connexion
