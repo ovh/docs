@@ -5,7 +5,7 @@ slug: faq-emails
 section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 13/05/2020**
+**Dernière mise à jour le 15/05/2020**
 
 ## FAQ e-mails
 
@@ -42,6 +42,8 @@ L'ensemble de vos adresses e-mail se gère depuis votre [espace client OVHcloud]
 
 Pour limiter la réception de SPAMS, vous pouvez mettre en place des filtres sur vos e-mails (appelées « Filtres » sur l'offre MXPlan). Ils auront pour but de supprimer ou de déplacer des e-mails dans le dossier « courriers indésirables » dès leur réception. 
 Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, puis dans la rubrique `E-mail`, sélectionnez le domaine concerné , l'onglet `E-mail`{.action} puis dans la colonne `Filtre`{.action}, cliquez sur le bouton d'action.
+
+Si la colonne `Filtre`{.action} n'est pas présente dans votre espace-client, la création de filtres doit alors s'effectuer via des règles de gestion de boîte de réception dans le [webmail](https://www.ovh.com/fr/mail/){.external}. Vous pouvez consulter le guide suivant pour plus de détails : [Règles de boîte de réception depuis l'interface OWA](../../microsoft-collaborative-solutions/regles-boite-de-reception-owa/#exemple-2-filtrer-les-e-mails-indesirables-spam).
 
 **Trucs et Astuces** : Si vous définissez un filtre sur la réception de SPAMS, il est possible que des e-mails légitimes soient considérés comme étant des SPAMS. On appelle cela des « faux positifs ».Si cela vous arrive, nous vous invitons à déclarer une demande d'assistance dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} afin de nous en faire part. Nous pourrons ainsi faire le nécessaire afin que ceux-ci ne soient plus considérés comme SPAMS par la suite.
 
