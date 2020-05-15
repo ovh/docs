@@ -41,7 +41,7 @@ L'url générée est temporaire afin de sécuriser l'accès. Si une demande d'id
 
 Vous pouvez regénérer cette url avec un outil disponible en ligne de commande sur votre vps. La procédure est expliquée [ci-dessous](./#regenerer-votre-url-de-connexion)
 
-La page suivante vous demande de renseigner votre adresse e-mail et de nommer les serveurs que vous souhaitez utiliser.
+La page suivante vous demande de renseigner votre adresse e-mail et les serveurs de noms que vous souhaitez utiliser.
 
 ![horizon](images/setup_config_cpanel.png)
 
