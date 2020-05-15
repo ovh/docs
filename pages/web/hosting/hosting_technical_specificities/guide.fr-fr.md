@@ -6,7 +6,6 @@ section: 'Configuration de l''hébergement'
 order: 6
 ---
 
-
 **Dernière mise à jour le 14/05/2020**
 
 ## Objectif
@@ -138,7 +137,7 @@ S'agissant d'un cookie nécessaire au fonctionnement du service d’hébergement
 
 ## Informations sur les outils de statistiques
 
-**OVHcloud Web Statisticss**
+**OVHcloud Web Statistics**
 
 OVHcloud met à disposition du client des statistiques de fréquentation et de mesure d’audience du ou des site(s) Internet hébergé(s) dans le cadre du service hébergement mutualisé. (ci-après « OVHcloud Web Statistics »). OVHcloud Web Statistics permet notamment d’identifier la zone géographique des visiteurs des sites Internet hébergé(s) dans le cadre du service hébergement mutualisé, les caractéristiques de leurs terminaux, des pages vues et codes HTTP. OVHcloud Web Statistics est activé par défaut dans le cadre du service hébergement mutualisé et peut être désactivé sur simple demande du client en contactant le support technique. Afin de fournir « OVHcloud Web Statistics », OVHcloud opère des traitements de données.
 
