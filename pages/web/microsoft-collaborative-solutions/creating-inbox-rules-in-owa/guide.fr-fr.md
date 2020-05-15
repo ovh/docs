@@ -1,13 +1,14 @@
 ---
-title: 'Création de règles de gestion de la boîte de réception depuis OWA'
+title: 'Règles de boîte de réception depuis l''interface OWA'
 slug: regles-boite-de-reception-owa
-excerpt: 'Comment créer des filtres et des redirections e-mails depuis OWA'
+excerpt: 'Comment créer des filtres et des redirections e-mails depuis l''interface OWA'
 section: 'Utilisation d''Outlook Web Application (OWA)'
 ---
 
 **Dernière mise à jour le 11 mars 2020**
 
 ## Objectif
+
 
 Avec l’option « Règles de gestion de la boîte de réception », vous pouvez créer un ensemble de règles pour gérer votre courrier entrant. Ces règles vous permettent de maintenir l’ordre dans votre compte de messagerie en acheminant automatiquement les e-mails dans différents dossiers. Il s’agit également d’une méthode qui permet de définir les paramètres de transfert (redirections) et de filtrer les messages indésirables.
 

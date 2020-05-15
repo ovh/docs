@@ -12,8 +12,9 @@ section: 'Getting started'
 ### What do I do if I can't send or receive emails? 
 
 Most of the time, a failure in sending/receiving emails is related to the configuration of your address in your email client. To verify, test it by connecting to [webmail](https://www.ovh.co.uk/mail/), and try sending and receiving a test email with this account. 
-* If this works fine, the failure is indeed due to your email client configuration. 
-* If, however, you still cannot send or receive an email, there are other solutions you can try. 
+
+- If this works fine, the failure is indeed due to your email client configuration. 
+- If, however, you still cannot send or receive an email, there are other solutions you can try. 
 
 After sending an email to your email account, do you receive an error message? If yes, check the error message, as it may specify the reason (mailbox full, mailbox does not exist, etc.). 
 
