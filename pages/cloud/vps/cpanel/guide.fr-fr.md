@@ -22,8 +22,10 @@ Afin de créer votre serveur cPanel, il faut d'abord commander un VPS avec la di
 
 Quand votre VPS est prêt, vous recevez un e-mail vous donnant les accès pour vous connecter à votre serveur cPanel :
 
-> Vos application(s):
-> Vous pouvez vous connecter à cpanel depuis https://<ip>:2087/<session_parameters>
+```
+ |    Vos application(s):
+ |    Vous pouvez vous connecter à cpanel depuis https://<ip>:2087/<session_parameters>
+```
 
 Votre serveur cPanel est maintenant prêt à être utilisé.
 
