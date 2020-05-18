@@ -11,7 +11,7 @@ section: 'Premiers pas'
 
 ### Que faire si l'émission/réception de mes e-mails est impossible ? 
 
-La plupart du temps, une émission/réception d'e-mails impossible est liée à la configuration de votre adresse sur votre logiciel de messagerie. Pour le vérifier, testez-le en vous connectant sur le [webmail](https://www.ovh.com/fr/mail/){.external} et réalisez un test d'envoi et de réception à partir de votre adresse.
+La plupart du temps, une émission/réception d'e-mails impossible est liée à la configuration de votre adresse sur votre logiciel de messagerie. Pour le vérifier, testez-le en vous connectant sur le [webmail](https://www.ovh.com/ca/fr/mail/){.external} et réalisez un test d'envoi et de réception à partir de votre adresse.
 
 * Si cela fonctionne normalement, c'est que le phénomène provient bien de votre configuration logicielle. 
 * À l'inverse si l'émission ou réception reste impossible, d'autres solutions s'offrent à vous.
@@ -28,9 +28,9 @@ Si les enregistrements MX sont différents, c'est que vous avez potentiellement 
 Il est possible de configurer votre compte e-mail sur un logiciel de messagerie tel que Outlook, Thunderbird, Mail de Mac... 
 Pour ce faire nous vous mettons à disposition des guides afin d'effectuer la mise en place de votre adresse. Vous pouvez les retrouver sur [cette page](../).
 
-Grâce au [webmail](https://www.ovh.com/fr/mail/){.external}, vous pouvez accéder à tout moment à votre messagerie, depuis n'importe quel appareil connecté. Une fois votre compte e-mail créé, connectez-vous ici pour y accéder.
+Grâce au [webmail](https://www.ovh.com/ca/fr/mail/){.external}, vous pouvez accéder à tout moment à votre messagerie, depuis n'importe quel appareil connecté. Une fois votre compte e-mail créé, connectez-vous ici pour y accéder.
 
-**Trucs et Astuces** : Si vous configurez votre compte e-mail sur un logiciel de messagerie, nous vous conseillons de le configurer avec le protocole IMAP. De cette manière, les e-mails resteront stockés sur le serveur et vous pourrez les consulter où que vous soyez depuis le [webmail](https://www.ovh.com/fr/mail/){.external}. Pour cela, vous pouvez vous appuyer sur [notre documentation](../generalites-sur-les-emails-mutualises/).
+**Trucs et Astuces** : Si vous configurez votre compte e-mail sur un logiciel de messagerie, nous vous conseillons de le configurer avec le protocole IMAP. De cette manière, les e-mails resteront stockés sur le serveur et vous pourrez les consulter où que vous soyez depuis le [webmail](https://www.ovh.com/ca/fr/mail/){.external}. Pour cela, vous pouvez vous appuyer sur [notre documentation](../generalites-sur-les-emails-mutualises/).
 
 ### Comment gérer mes services e-mails ? 
 
@@ -43,7 +43,7 @@ L'ensemble de vos adresses e-mail se gère depuis votre [espace client OVHcloud]
 Pour limiter la réception de SPAMS, vous pouvez mettre en place des filtres sur vos e-mails (appelées « Filtres » sur l'offre MXPlan). Ils auront pour but de supprimer ou de déplacer des e-mails dans le dossier « courriers indésirables » dès leur réception. 
 Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, puis dans la rubrique `E-mail`, sélectionnez le domaine concerné , l'onglet `E-mail`{.action} puis dans la colonne `Filtre`{.action}, cliquez sur le bouton d'action.
 
-Si la colonne `Filtre`{.action} n'est pas présente dans votre espace-client, la création de filtres doit alors s'effectuer via des règles de gestion de boîte de réception dans le [webmail](https://www.ovh.com/fr/mail/){.external}. Vous pouvez consulter le guide suivant pour plus de détails : [Règles de boîte de réception depuis l'interface OWA](../../microsoft-collaborative-solutions/regles-boite-de-reception-owa/#exemple-2-filtrer-les-e-mails-indesirables-spam).
+Si la colonne `Filtre`{.action} n'est pas présente dans votre espace-client, la création de filtres doit alors s'effectuer via des règles de gestion de boîte de réception dans le [webmail](https://www.ovh.com/ca/fr/mail/){.external}. Vous pouvez consulter le guide suivant pour plus de détails : [Règles de boîte de réception depuis l'interface OWA](../../microsoft-collaborative-solutions/regles-boite-de-reception-owa/#exemple-2-filtrer-les-e-mails-indesirables-spam).
 
 **Trucs et Astuces** : Si vous définissez un filtre sur la réception de SPAMS, il est possible que des e-mails légitimes soient considérés comme étant des SPAMS. On appelle cela des « faux positifs ».Si cela vous arrive, nous vous invitons à déclarer une demande d'assistance dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} afin de nous en faire part. Nous pourrons ainsi faire le nécessaire afin que ceux-ci ne soient plus considérés comme SPAMS par la suite.
 
