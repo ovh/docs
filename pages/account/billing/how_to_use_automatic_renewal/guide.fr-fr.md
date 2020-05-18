@@ -1,12 +1,12 @@
 ---
 title: 'Gérer le renouvellement de mes services'
 slug: renouvellement-automatique-ovh
-excerpt: 'Apprenez à gérer le renouvellement de vos services OVH dans votre espace client'
+excerpt: 'Apprenez à gérer le renouvellement de vos services OVHcloud dans votre espace client'
 section: 'Gérer mes services et leur renouvellement'
 order: 1
 ---
 
-**Dernière mise à jour le 10/04/2020**
+**Dernière mise à jour le 18/05/2020**
 
 ## Objectif
 
@@ -23,8 +23,8 @@ Vous avez la possibilité d'administrer le renouvellement et la résiliation de 
 ## Prérequis
 
 - Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Posséder des services OVH actifs.
-- Être contact facturation de vos services OVHcloud
+- Posséder des services OVHcloud actifs.
+- Être [contact facturation](../../customer/gestion-des-contacts/#definition) de vos services OVHcloud.
 
 ## En pratique
 
