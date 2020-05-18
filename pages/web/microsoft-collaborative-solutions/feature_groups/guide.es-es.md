@@ -6,86 +6,85 @@ legacy_guide_number: g1258
 section: 'Funcionalidades de Exchange'
 ---
 
-**Última atualização: 13/05/2020**
+**Última actualización: 26/2/2020**
 
+## Objetivo
 
-## Sumário
+Los grupos de Exchange permiten que varios participantes puedan comunicarse a través del envío de emails a una única dirección del grupo. Con esta función colaborativa puede crear y gestionar listas de correo que incluyan tanto a usuarios Exchange como a contactos externos.
 
-Os grupos Exchange permitem que vários participantes comuniquem ao enviarem emails para um endereço coletivo único. Graças a esta característica colaborativa, é possível criar e gerir grupos de difusão (mailing lists) que incluem tanto utilizadores Exchange quanto contactos externos.
-
-**Este guia explica como usar os grupos Exchange através da Área de Cliente OVHcloud e do Outlook Web App (OWA).**
+**Esta guía explica cómo usar los grupos de Exchange a través del área de cliente de OVHcloud y Outlook Web App (OWA).**
 
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
-- Dispor de uma [solução Exchange OVHcloud](https://www.ovh.pt/emails/hosted-exchange/).
+- Tener acceso al [panel de control de OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Tener una [solución Exchange de OVHcloud](https://www.ovh.es/emails/hosted-exchange/) activa.
 
 
-## Instruções
+## Procedimiento
 
-### Passo 1: Criar um novo grupo
+### Paso 1: Crear un grupo nuevo
 
-Antes de mais, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), clique na secção «Web» e selecione o serviço Exchange na coluna sob `Microsoft`{.action} `Exchange`{.action} à esquerda. De seguida clique em `Grupos`{.action}, no menu horizontal.
+Primero acceda a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager), diríjase a la sección «Web», y seleccione su servicio Exchange de la columna que está debajo de `Microsoft`{.action} `Exchange`{.action} del menú de la izquierda. Haga clic en la pestaña `Grupos`{.action} del menú horizontal.
 
 ![contactgroups](images/exchange-groups-step1.png){.thumbnail}
 
-Ao clicar em `Criar um grupo de contacto`{.action}, aparecerá uma janela onde poderá definir as características do grupo:
+Al hacer clic en `Crear un grupo de contactos`{.action} se abrirá una nueva ventana donde podrá configurar las opciones del grupo:
 
 ![contactgroups](images/exchange-groups-step2.png){.thumbnail}
 
-|Nome|Descrição|
+|Nombre|Descripción|
 |---|---|
-|Endereço de e-mail|Novo endereço que enviará mensagens ao grupo de difusão. Atenção: não pode introduzir um endereço de email já existente.|
-|Nome do grupo|Nome de exibição na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e no [webmail OVHcloud](https://www.ovh.pt/mail//) (OWA).|
-|Tamanho máx. entrada / saída|Pode especificar o tamanho máximo dos emails recebidos e enviados.|
-|Ocultar no Outlook|Se selecionar esta opção, o endereço de grupo não vai aparecer na lista de endereços do serviço Exchange.|
-|Autenticação necessária|Se selecionar esta opção, apenas os membros do grupo poderão enviar mensagens através do endereço coletivo.|
+|Dirección de correo electrónico|La nueva dirección que mandará los mensajes a la lista de correo. Tenga en cuenta que no puede introducir una dirección de correo ya existente.|
+|Nombre del grupo|El nombre que aparecerá en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y en el [webmail de OVHcloud](https://www.ovh.es/mail/) (OWA).|
+|Tamaño máx. de entrada/salida|Puede especificar el tamaño máximo de sus correos entrantes y salientes.|
+|Ocultar en Outlook|Si marca esta casilla, la dirección del grupo no aparecerá en la lista de direcciones del servicio Exchange.|
+|Autenticación obligatoria|Si marca esta casilla, los usuarios de la misma plataforma serán los únicos que podrán mandar un mensaje utilizando la dirección del grupo.|
 
 > [!primary]
 >
-Atenção: as opções «Gerir subscrições» e «Gerir cancelamentos» foram desativadas pelos nossos administradores por razões de segurança. Lamentamos qualquer inconveniência.
+Tenga en cuenta que las opciones «Administrar suscriptores» y «Administrar bajas de suscriptores» se han desactivado por razones de seguridad. Lamentamos las molestias ocasionadas.
 >
 
-Clique `Seguinte`{.action} para continuar.
+Haga clic en `Siguiente`{.action} para continuar.
 
-Na segunda página, defina os membros do grupo e escolha os «Administradores». As escolhas só abrangerão endereços de email e contactos externos que já existam no serviço.
+Seleccione en la segunda pantalla los miembros del grupo y elija los «Administradores». Solo se podrán seleccionar direcciones de correo y contactos externos creados previamente en el servicio.
 
 ![contactgroups](images/exchange-groups-step3.png){.thumbnail}
 
-Atenção: os Administradores também têm de ser definidos como «Contactos» de modo a receber emails coletivos.
-Clique em `Seguinte`{.action} para continuar e conclua o processo de escolha clicando em `Confirmar`{.action}.
+Tenga en cuenta que los administradores también deben haber sido configurados como «Contactos» para recibir los correos del grupo.
+Haga clic en `Siguiente`{.action} para continuar y termine la configuración de sus opciones pulsando en `Confirmar`{.action}.
 
 
-### Passo 2: Gerir grupos
+### Paso 2: Gestionar los grupos
 
-Os grupos recém-criados ficarão operacionais dentro de poucos minutos. Pode ajustar as opções descritas acima a partir da lista de difusão. Para isso, clique em `...`{.action} e selecione-as no menu. 
+Su grupo recién creado estará operativo en unos minutos. Puede modificar las configuraciones descritas más abajo desde la lista de grupo haciendo clic en el icono `...`{.action} y seleccionándolas en el menú.
 
 ![contactgroups](images/exchange-groups-step4.png){.thumbnail}
 
-Terá igualmente acesso à opção `Gerir permissões`{.action}. Ela permite-lhe atribuir acesso tal como para uma conta Exchange. Mais informações [neste guia](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_3013_atribuir_permissoes_full_access_a_uma_conta/).
+Además, también aparecerá el elemento del menú `Gestionar las delegaciones`{.action}. Con esta opción podrá delegar el acceso del mismo modo que en una cuenta Exchange. Encontrará todos los detalles en [esta guía](../exchange_2013_dar_permisos_full_access_a_una_cuenta/).
 
 ![contactgroups](images/exchange-groups-step5.png){.thumbnail}
 
 > [!primary]
 >
-Atenção: as alterações feitas podem levar alguns minutos a entrar em vigor. Se desejar consultar o estado da maioria das operações, selecione `Mais+`{.action} e `Tarefas recentes`{.action} no menu horizontal.
+Tenga en cuenta que cualquier cambio del servicio puede tardar unos minutos en efectuarse. Puede comprobar el estado de la mayoría de operaciones seleccionando `More+`{.action} y `Tareas recientes`{.action} en el menú horizontal.
 >
 
 
-### Passo 3: Enviar um email coletivo em OWA
+### Paso 3: Enviar mensajes a un grupo en OWA
 
-Já pode testar a sua lista de difusão (mailing list) através do [webmail OVHcloud](https://www.ovh.pt/mail//) (OWA). Para isso, basta enviar um email para o endereço coletivo.
+Ahora puede probar su lista de correo a través del [webmail de OVHcloud](https://www.ovh.es/mail) (OWA) simplemente mandando un correo a la dirección del grupo.
 
 ![contactgroups](images/exchange-groups-step6.png){.thumbnail}
 
 
-## Saiba mais
+## Más información
 
-[Atribuir permissões a uma conta Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_3013_atribuir_permissoes_full_access_a_uma_conta/)
+[Delegar permisos en una cuenta Exchange](../exchange_2013_dar_permisos_full_access_a_una_cuenta/)
 
-[Guia de utilização do Outlook Web App](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
+[Usar Outlook Web App con una cuenta Exchange](../exchange_2016_guia_de_uso_de_outlook_web_app/)
 
-[Partilhar calendários em OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/)
+[Compartir calendarios en OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa/)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
