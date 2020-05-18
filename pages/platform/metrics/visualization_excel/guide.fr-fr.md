@@ -14,15 +14,15 @@ order: 3
 
 ## Requirements
 
-- a valid OVH Metrics account.
-- a `READ` token that can be found on Metrics`s manager
-- This documentation is for an excel data sheet. This can be used as a start to use Metrics on similar tools as LibreOffice or PowerBI for instance.
+- a valid OVHcloud Metrics account.
+- a `READ` token that can be found on Metrics's manager
+- This documentation is for an Excel data sheet. This can be used as a start to use Metrics on similar tools as LibreOffice or PowerBI for instance.
 
 ## Instructions
 
 ### Create an Excel query file
 
-First, you will need to set-up a Web query on Excel. Let's create an `.iqy` file. [.igy](https://www.shufflepoint.com/help/QuickStartExcelIQY.aspx){.external} files are the one used by excel to perform WebQueries. Let's write the following content in a `warp10.iqy` file:
+First, you will need to set-up a Web query on Excel. Let's create an `.iqy` file. [.igy](https://www.shufflepoint.com/help/QuickStartExcelIQY.aspx){.external} files are the one used by Excel to perform WebQueries. Let's write the following content in a `warp10.iqy` file:
 
 ```shell-session
 WEB
@@ -38,19 +38,19 @@ DisableDateRecognition=False
 DisableRedirections=False
 ```
 
-To resume what we are doing in the `warp10.iqy` file: we use the Warp10 native [`fetch` entrypoint](https://www.warp10.io/content/03_Documentation/03_Interacting_with_Warp_10/04_Fetching_data/01_Fetching_data) as it can generates tsv files. Those files can natively be loaded by Excel.
+To resume what we are doing in the `warp10.iqy` file: we use the Warp10 native [`fetch` entrypoint](https://www.warp10.io/content/03_Documentation/03_Interacting_with_Warp_10/04_Fetching_data/01_Fetching_data) as it can generate tsv files. Those files can natively be loaded by Excel.
 
 How does the Warp10 fetch endpoint works:
 
-- The `now` and `timespan` parameter are query time limits. This means we will search for the last 100 points (before current time). You can also use the `start` or `end` parameter to set ISO string dates as time limits.
-- The `selector` parameter is used to select the data to retrieve. In this query example we retrieve the `my.selector` metrics that have as tag `tag` the value `Test`.
+- The `now` and `timespan` parameters are query time limits. This means we will search for the last 100 points (before current time). You can also use the `start` or `end` parameter to set ISO string dates as time limits.
+- The `selector` parameter is used to select the data to retrieve. In this query example we retrieve the `my.selector` metrics that have as `tag` the value `Test`.
 - The `format` key is used to retrieve the data in `tsv` format. Two values are possible `tsv` to **not** retrieve the series tags and `fulltsv` to retrieve the series tags
 - The `token` key to set the Metrics authentication token.
 
 > [!warning]
 >
 >You need to replace the READ_TOKEN key by your own Metrics token, and the selector by one matching the data you want to retrieve.
->Be carefull with the time limits set in your queries, as you may load too many data for an Excel sheet.
+>Be careful with the time limits set in your queries, as you may load too much data for an Excel sheet.
 >
 
 ### Retrieve Metrics data on Excel
@@ -85,7 +85,7 @@ DisableDateRecognition=False
 DisableRedirections=False
 ```
 
-Once this is done, create a `timespan` cell on your excel sheet:
+Once this is done, create a `timespan` cell on your Excel sheet:
 
 ![menu](images/webqueries_var_init.png){.thumbnail}
 
