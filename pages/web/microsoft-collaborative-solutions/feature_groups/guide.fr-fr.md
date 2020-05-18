@@ -1,89 +1,92 @@
 ---
-title: Créer un groupe de contacts
+title: 'Créer un groupe de contacts'
 slug: exchange-utilisation-des-groupes-mailing-list
 legacy_guide_number: 1258
-excerpt: Retrouvez ici la mise en place et l’utilisation de groupe via votre compte Exchange
-section: Fonctionnalités des comptes Exchange
+excerpt: 'Retrouvez ici la mise en place et l’utilisation de groupe via votre compte Exchange'
+section: 'Fonctionnalités des comptes Exchange'
 order: 2
 ---
 
-Le groupe permet à plusieurs utilisateurs Exchange de recevoir les e-mails envoyés à  une adresse unique : l'adresse du groupe. Cette adresse doit être unique et les messages qui y seront envoyés seront transférés à tous les membres du groupe.
-
-Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} pour retrouver nos différents guides.
+**Dernière mise à jour le 26/02/2020**
 
 
-## Création de la liste de diffusion
+## Objectif
 
-### Mise en place depuis le Manager &#58; Partie 1
-Vous devez dans un premier vous connecter sur votre [espace client](https://www.ovh.com/manager/web/login.html){.external}.
+Grâce aux groupes Exchange, de nombreux participants peuvent communiquer par envoi d’ e-mails à une seule adresse, celle du groupe.  Cette fonction collaborative vous permet de créer et gérer des listes de diffusion constituées aussi bien d’utilisateurs d’Exchange que de contacts externes.
 
-Une fois connecté, sélectionnez votre service dans le menu de gauche : Microsoft puis Exchange
-
-Dans la partie "Groupes", sélectionnez "Créer un groupe de contact"
+**Ce guide va vous expliquer comment utiliser les groupes Exchange via l’espace client OVHcloud et le service Outlook Web App (OWA).**
 
 
-![emails](images/1064.png){.thumbnail}
+## Prérequis
+
+- Etre connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Avoir installé une [solution OVHcloud Exchange](https://www.ovh.com/fr/emails/hosted-exchange/) 
 
 
-### Mise en place depuis le Manager &#58; Partie 2
-Une nouvelle interface va apparaître, voici à quoi les éléments correspondent :
+## Instructions
 
-"Adresse e-mail" : l'adresse e-mail de votre liste de diffusion. Attention : vous ne pouvez pas renseigner une adresse déjà existante.
+### Étape 1 : Créez un nouveau groupe
 
-"Nom du groupe" : le nom d'affichage qui va apparaître dans votre [espace
-client](https://www.ovh.com/manager/web/login.html){.external} ainsi que le nom d'affichage du groupe dans le [Webmail](https://ex.mail.ovh.net/owa/){.external}.
+Connectez-vous d’abord à votre [espace client OVHcloud ](https://www.ovh.com/auth/?action=gotomanager). Accédez à la section « Web » et sélectionnez votre service Exchange à partir de la colonne figurant sous `Microsoft`{.action} `Exchange`{.action} située sur le coté gauche. Cliquez sur l'onglet `Groupes`{.action} dans le menu horizontal.
 
-"Taille max entrante-sortante" : vous pouvez définir la taille des pièces jointes pour les e-mails entrants et sortants de la liste de diffusion.
+![contactgroups](images/exchange-groups-step1.png){.thumbnail}
 
-"Gestion des abonnements-désabonnements" : définit le niveau de sécurité d'accès au groupe. Ouvert : tout le monde peut s'inscrire au groupe. Modérée : un administrateur valide l'inscription. Fermée : c'est l'administrateur qui inscrit les membres au groupe.
+Cliquez sur `Créer un groupe de contacts`{.action} afin d’ouvrir une nouvelle fenêtre à partir de laquelle vous pourrez définir les paramètres du groupe :
 
-"Cacher l'adresse dans l'annuaire" : cacher l'adresse dans l'annuaire permet que l'adresse du groupe ne soit pas visible dans la liste des adresses du service Exchange.
+![contactgroups](images/exchange-groups-step2.png){.thumbnail}
 
-"Authentification nécessaire" : si cochée, seuls les membres du groupe peuvent envoyer un message sur l'adresse du groupe.
+|Nom|Description|
+|---|---|
+|Adresse e-mail|Une nouvelle adresse pour envoyer des messages à la liste de diffusion. Veuillez à ne pas utiliser une adresse déjà fonctionnelle. |
+|Nom du Groupe|Utilisez le nom apparaissant dans votre [ espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) et dans votre [messagerie Web d’ OVHcloud](https://www.ovh.com/fr/mail/) (OWA).|
+|Taille maximale d’entrée ou de sortie|Vous pouvez spécifier la taille maximale des e-mails entrants et des e-mails sortants.|
+|Masquer dans Outlook|Lorsque cette case est cochée, l’adresse du groupe ne s’affichera pas dans la liste des adresses du service Exchange.|
+|Authentication requise|Lorsque cette case est cochée, seuls les utilisateurs de la même plate-forme pourront envoyer des messages avec l’adresse du groupe.|
 
-Cliquez sur "Suivant" pour continuer.
+> [!primary]
+>
+Veuillez remarquer que pour des raisons de sécurité, les administrateurs ont désactivé les options « Gérer les abonnés » et « Gérer les désabonnés ». Nous nous excusons des désagréments.
+>
 
+Cliquez sur `Suivant`{.action} pour continuer.
 
-![emails](images/1065.png){.thumbnail}
+Sur la deuxième page, sélectionnez les membres du groupe et désignez les « Administrateurs ». Ces choix se feront uniquement parmi les adresses e-mail et les contacts externes déjà répertoriés dans le service.
 
+![contactgroups](images/exchange-groups-step3.png){.thumbnail}
 
-### Mise en place depuis le Manager &#58; Partie 3
-Il vous suffit ensuite de valider ces deux étapes :
-
-Dans un premier temps : Définir pour vos abonnés, quelles sont les personnes "Administrateurs" et "Contacts". Attention : uniquement les e-mails renseignés en "Contacts" reçoivent les mails envoyés à la liste de diffusion. Continuez en cliquant sur "Suivant".
-
-Dans un second temps :
-
-Finalisez vos choix avec un clic sur "Valider".
-
-
-![emails](images/1067.png){.thumbnail}
-
-
-### Mise en place depuis le Manager &#58; Partie 4
-Votre groupe apparaît dans [l'espace client](https://www.ovh.com/manager/web/login.html){.external} après quelques minutes.
-
-Les options de paramétrage des groupes sont disponibles depuis la roue crantée de droite.
-
-Si vous souahitez ajouter ou supprimer des contacts, il faut choisir "configurer le groupe" puis "suivant".
+Veuillez noter que les administrateurs doivent être configurés en tant que « Contacts » afin de recevoir les e-mails du groupe. 
+Cliquez sur `Suivant`{.action} pour continuer et cliquez sur `Confirmer`{.action} pour finaliser vos choix.
 
 
-![emails](images/1068.png){.thumbnail}
+### Étape 2 : Gérez les groupes
+
+Votre groupe nouvellement créé sera opérationnel en quelques minutes. Vous pouvez modifier les paramètres décrits plus haut à  partir de la liste du groupe. Pour cela, cliquez sur`...`{.action} et sélectionnez le paramètre à modifier dans le menu.
+
+![contactgroups](images/exchange-groups-step4.png){.thumbnail}
+
+De plus, l’option `Gérer les délégations`{.action} du menu s’affichera. Cette option vous permet de déléguer l’accès de la même manière qu’on le fait pour un compte Exchange. Veuillez retrouver tous les détails dans [ce guide](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-donner-les-droits-full-access-sur-un-compte/).
+
+![contactgroups](images/exchange-groups-step5.png){.thumbnail}
+
+> [!primary]
+>
+Veuillez noter que chaque modification à ce service peut prendre quelques minutes pour être appliquée. Vous pouvez vérifier l’état de la plupart des opérations en sélectionnant les options `Plus`{.action} et `Taches récentes`{.action} à partir du menu horizontal.
+>
 
 
-## Utilisation de la liste de diffusion
+### Étape 3 : Ecrivez à un groupe via OWA
 
-### Exemple d'utilisation depuis OWA &#58; Partie 1
-Depuis le [webmail](https://ex.mail.ovh.net/owa/){.external} vous pouvez à présent réaliser le test de votre liste de diffusion.
+Vous pouvez déjà  tester votre liste de diffusion via [la messagerie Web d ’OVHcloud](https://www.ovh.com/fr/mail/) (OWA)! Il suffit d’envoyer un e-mail à l’adresse du groupe.
 
-Envoyez simplement un e-mail vers l'adresse électronique de votre groupe.
-
-
-![emails](images/1069.png){.thumbnail}
+![contactgroups](images/exchange-groups-step6.png){.thumbnail}
 
 
-### Exemple d'utilisation depuis OWA &#58; Partie 2
-Votre mail doit être correctement délivré.
+## Aller plus loin
 
+[Déléguer des permissions sur un compte Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-donner-les-droits-full-access-sur-un-compte/)
 
-![emails](images/1070.png){.thumbnail}
+[Consulter son compte Exchange depuis l’interface OWA ](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/)
+
+[Partager des calendriers via l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
