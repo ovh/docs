@@ -17,13 +17,13 @@ Creating a snapshot is a fast and simple way to secure a functioning system befo
 
 > [!primary]
 >
-Before applying backup options, we recommend to consult the [product pages and FAQ](https://www.ovhcloud.com/en-gb/vps/options/) for pricing comparisons and further details.
+Before applying backup options, we recommend to consult the [product pages and FAQ](https://www.ovhcloud.com/asia/vps/options/) for pricing comparisons and further details.
 >
 
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-- an OVHcloud [VPS service](https://www.ovhcloud.com/en-gb/vps/) already set up
+- an OVHcloud [VPS service](https://www.ovhcloud.com/asia/vps/) already set up
 
 
 ## Instructions
@@ -53,7 +53,7 @@ If you are sure that you would like to reset your VPS to the status of the snaps
 
 ## Go further
 
-[Using automated backups on a VPS](https://docs.ovh.com/gb/en/vps/using-automated-backups-on-a-vps)
+[Using automated backups on a VPS](https://docs.ovh.com/asia/en/vps/using-automated-backups-on-a-vps)
 
 
 Join our community of users on <https://community.ovh.com/en/>.
