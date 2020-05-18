@@ -46,7 +46,7 @@ To put your website online via OVHcloud, you need to have a domain name correspo
 
 ### How do I migrate my website and emails to OVHcloud? 
 
-To migrate your website and emails to OVHcloud, you need to have an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/) and an [OVHcloud email solution](https://www.ovh.co.uk/emails/). You can then connect to your Web Hosting plan’s FTP server, in order to transfer your website’s files on to it. If you currently have a database, it is also worth creating a dump of it. 
+To migrate your website and emails to OVHcloud, you need to have an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/) and an [OVHcloud email solution](https://www.ovh.com/asia/emails/). You can then connect to your Web Hosting plan’s FTP server, in order to transfer your website’s files on to it. If you currently have a database, it is also worth creating a dump of it. 
 
 To migrate emails, you will need to recreate your accounts at OVHcloud, then use our [OMM migration tool (OVH Mail Migrator)](https://omm.ovh.net/). You can find it [here](https://omm.ovh.net/). 
 
