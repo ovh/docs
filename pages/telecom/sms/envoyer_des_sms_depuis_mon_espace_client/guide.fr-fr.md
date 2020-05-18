@@ -6,7 +6,7 @@ legacy_guide_number: g2142
 section: 'Envoyer des SMS'
 ---
 
-**Dernière mise à jour le 14/11/2019**
+**Dernière mise à jour le 18/05/2020**
 
 ## Objectif
 
@@ -22,13 +22,13 @@ Connectez-vous à votre [espace client](https://www.ovhtelecom.fr/manager/) puis
 
 Le champ "Envoyer un SMS" (4) est le premier élément disponible dans la liste des actions.
 
-![](images/sms-send-control-panel01E.png){.thumbnail}
+![envoi sms manager](images/sms-send-control-panel01E.png){.thumbnail}
 
 ### Étape 1 : configurer l’expéditeur et le destinataire
 
 Une fois sur la page d'envoi de SMS, vous disposez de différents paramètres à renseigner pour adapter au mieux votre envoi de SMS à votre besoin.
 
-![](images/sms-send-control-panel02E.png){.thumbnail}
+![envoi sms manager](images/sms-send-control-panel02E.png){.thumbnail}
 
 Pour l’expéditeur du SMS (1) , vous avez la possibilité de sélectionner soit un numéro court permettant la réponse (uniquement pour les comptes OVHcloud en France), soit un expéditeur alphanumérique. 
 Renseignez ensuite  le numéro du destinataire (2) au format international (+336xxxxxxxx). 
@@ -46,7 +46,7 @@ N'hésitez pas à consulter notre [guide sur les carnets d'adresses SMS](https:/
 
 Une fois l'expéditeur sélectionné et vos destinataires renseignés, vous pouvez désormais passer à la composition du message.
 
-![](images/sms-send-control-panel03E.png){.thumbnail}
+![envoi sms manager](images/sms-send-control-panel03E.png){.thumbnail}
 
 Tapez votre message dans le cadre prévu à cet effet (1). Un compteur est présent à titre indicatif pour le nombre de caractères utilisés et le nombre de SMS correspondants (2).
 
@@ -58,7 +58,19 @@ L’utilisation de caractères ne figurant pas dans ces tableaux provoquera le b
 
 ![Liste des caractères SMS](images/smsauthorizedcharacters.png){.thumbnail}
 
-**Options avancées**
+#### Taille des SMS à caractère commercial
+
+Un SMS à caractère commercial devra obligatoirement inclure la mention STOP. Celle-ci contient 11 caractères et est automatiquement déduite des 160 caractères de base du 1er SMS.
+Le tableau ci-dessous indique donc le nombre maximum de caractères autorisés pour les SMS à caractère commercial. 
+
+Exemple : en encodage 7bits, si votre message fait plus de 149 caractères, il sera envoyé en 2 SMS et coûtera donc 2 crédits.
+
+| Encodage | 1er SMS | 2ème SMS et suivants  |
+|---|---|---|
+| 7bits (norme GSM 03.38) | 149 caractères | 153 caractères |
+| Unicode | 59 caractères | 70 caractères  |
+
+#### Options avancées
 
 Dans cette section vous avez la possibilité d’effectuer un envoi immédiat ou différé.
 
@@ -70,11 +82,11 @@ Trois formats d’envoi sont également disponibles :
 
 ### Étape 3 : choisir votre expéditeur SMS
 
-####**Numéro court permettant la réponse** (Uniquement pour les comptes OVHcloud en France)
+#### Numéro court permettant la réponse (Uniquement pour les comptes OVHcloud en France)
 
 Il permet de recevoir une réponse via l’onglet SMS reçus.
 
-####**Numéro mobile virtuel** (Uniquement pour les comptes OVHcloud en France)
+#### Numéro mobile virtuel (Uniquement pour les comptes OVHcloud en France)
 
 Si vous disposez d'une offre SMS avec numéro mobile virtuel, vous pouvez renseigner celui-ci comme expéditeur. Pour plus d'informations, consultez notre [page numéro mobile virtuel](https://www.ovhtelecom.fr/sms/reponse/numeros-virtuels.xml).
 
@@ -83,15 +95,15 @@ Si vous disposez d'une offre SMS avec numéro mobile virtuel, vous pouvez rensei
 >Si vous disposez déjà d'un compte SMS, la création d'un numéro mobile virtuel pour ce compte existant est impossible. Il sera nécessaire de commander un nouveau compte SMS via la page de l'offre numéro mobile virtuel.
 >
 
-####**Expéditeur alphanumérique**
+#### Expéditeur alphanumérique
 
 Vous pouvez personnaliser votre expéditeur. Il n’est alors plus possible de recevoir une réponse de la part du destinataire de votre SMS. Pour accéder à la gestion des expéditeurs SMS, sélectionnez `Expéditeurs`{.action}(1) lorsque vous êtes sur le compte SMS concerné.
 
-![](images/sms-send-control-panel04E.png){.thumbnail}
+![envoi sms manager](images/sms-send-control-panel04E.png){.thumbnail}
 
 Si vous souhaitez ajouter un expéditeur SMS supplémentaire, cliquez sur le bouton `Actions`{.action} au centre puis sur `Ajouter`{.action}(2).
 
-![](images/sms-send-control-panel05E.png){.thumbnail}
+![envoi sms manager](images/sms-send-control-panel05E.png){.thumbnail}
 
 Une fois sur la page d'ajout, vous disposez de plusieurs options pour configurer un nouvel expéditeur SMS (3) :
 

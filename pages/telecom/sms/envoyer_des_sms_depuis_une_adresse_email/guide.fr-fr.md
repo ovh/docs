@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment envoyer des SMS depuis une adresse email'
 section: 'Envoyer des SMS'
 ---
 
-**Dernière mise à jour le 26/02/2020**
+**Dernière mise à jour le 18/05/2020**
 
 ## Objectif
 
@@ -50,6 +50,17 @@ Pour plus d'informations sur les caractères autorisés en encodage 7bit, report
 >  ![email2sms](images/plaintext01.png){.thumbnail}
 >
 
+### Taille des SMS à caractère commercial
+
+Un SMS à caractère commercial devra obligatoirement inclure la mention STOP. Celle-ci contient 11 caractères et est automatiquement déduite des 160 caractères de base du 1er SMS.
+Le tableau ci-dessous indique donc le nombre maximum de caractères autorisés pour les SMS à caractère commercial. 
+
+Exemple : en encodage 7bits, si votre message fait plus de 149 caractères, il sera envoyé en 2 SMS et coûtera donc 2 crédits.
+
+| Encodage | 1er SMS | 2ème SMS et suivants  |
+|---|---|---|
+| 7bits (norme GSM 03.38) | 149 caractères | 153 caractères |
+| Unicode | 59 caractères | 70 caractères  |
 
 ### Étape 1 : inclure les champs obligatoires dans votre e-mail
 
@@ -113,7 +124,7 @@ CompteSMS:UtilisateurSMS:MotDePasse:Expediteur:Destinataire1,Destinataire2:DateE
 
 Voici un exemple d'e-mail comprenant des champs facultatifs :
 
-![](images/send-sms-through-email3.png){.thumbnail}
+![email2sms](images/send-sms-through-email3.png){.thumbnail}
 
 Il est possible de déclarer les différents éléments constituant le sujet de deux manières différentes :
 

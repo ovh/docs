@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment envoyer des SMS depuis une adresse http'
 section: 'Envoyer des SMS'
 ---
 
-**Dernière mise à jour le 04/11/2019** 
+**Dernière mise à jour le 18/05/2020** 
 
 ## Objectif
 
@@ -14,7 +14,7 @@ Différentes méthodes existent pour envoyer des SMS. L'une d'entre elles consis
 **Apprenez comment envoyer des SMS grâce à l'outil Wget.**
 
 ## Prérequis
-- Avoir créé un utilisateur SMS via l'espace client OVHcloud ou directement via les API. À cet effet, vous pouvez consulter le guide suivant : [Tout savoir sur les utilisateurs SMS](https://docs.ovh.com/fr/sms/tout_savoir_sur_les_utilisateurs_sms/)
+- Avoir créé un utilisateur SMS via l'espace client OVHcloud ou directement via les API. À cet effet, vous pouvez consulter le guide suivant : [Tout savoir sur les utilisateurs SMS](../tout_savoir_sur_les_utilisateurs_sms/)
 - Disposer d'un compte SMS OVHcloud avec des crédits SMS
 
 
@@ -22,7 +22,7 @@ Différentes méthodes existent pour envoyer des SMS. L'une d'entre elles consis
 
 L'envoi d'un SMS se fait via une requête HTTPS avec ses champs obligatoires (et facultatifs, le cas échéant) à l'adresse suivante : <https://www.ovh.com/cgi-bin/sms/http2sms.cgi?>.
 
-![](images/img_4011.jpg){.thumbnail}
+![http2sms](images/img_4011.jpg){.thumbnail}
 
 ### Étape 1 : Inclure les champs obligatoires
 
@@ -89,9 +89,20 @@ Remplacez les X par par les informations ci-dessous :
 > 
 >Si vous modifiez l’encodage pour l'encodage Unicode, votre SMS fera 70 caractères maximum contre 160 sur l'encodage 7bit.
 >
->Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](https://docs.ovh.com/fr/sms/envoyer_des_sms_depuis_une_url_-_http2sms/#annexe_2) en bas de ce guide.
+>Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](./#annexe_2) en bas de ce guide.
 >
 
+#### Taille des SMS à caractère commercial
+
+Un SMS à caractère commercial devra obligatoirement inclure la mention STOP. Celle-ci contient 11 caractères et est automatiquement déduite des 160 caractères de base du 1er SMS.
+Le tableau ci-dessous indique donc le nombre maximum de caractères autorisés pour les SMS à caractère commercial. 
+
+Exemple : en encodage 7bits, si votre message fait plus de 149 caractères, il sera envoyé en 2 SMS et coûtera donc 2 crédits.
+
+| Encodage | 1er SMS | 2ème SMS et suivants  |
+|---|---|---|
+| 7bits (norme GSM 03.38) | 149 caractères | 153 caractères |
+| Unicode | 59 caractères | 70 caractères  |
 
 ### Étape 3 : Analyser les envois effectués
 
