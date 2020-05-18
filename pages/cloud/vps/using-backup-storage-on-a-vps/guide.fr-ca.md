@@ -16,13 +16,13 @@ Un snapshot ne constitue pas pour autant une sauvegarde complète du système.
 **Ce guide explique l'utilisation des snapshots pour votre VPS.**
 
 > [!primary]
->Avant d'appliquer une option de sauvegarde, nous vous recommandons de consulter les [options VPS](https://www.ovhcloud.com/fr/vps/options/) afin de comparer les détails et tarifs de chaque option.
+>Avant d'appliquer une option de sauvegarde, nous vous recommandons de consulter les [options VPS](https://www.ovhcloud.com/fr-ca/vps/options/) afin de comparer les détails et tarifs de chaque option.
 >
 
 ## Prérequis
 
 - Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
-- Un [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/) déjà configuré.
+- Un [VPS OVHcloud](https://www.ovhcloud.com/fr-ca/vps/) déjà configuré.
 
 ## En pratique
 
@@ -50,6 +50,6 @@ Si vous êtes sûr de vouloir restaurer votre VPS à l'état du snapshot, clique
 
 ## Aller plus loin
 
-[Utiliser la sauvegarde automatique sur un VPS](https://docs.ovh.com/fr/vps/autobackup-vps/)
+[Utiliser la sauvegarde automatique sur un VPS](https://docs.ovh.com/ca/fr/vps/autobackup-vps/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
