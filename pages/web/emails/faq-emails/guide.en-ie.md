@@ -11,7 +11,7 @@ section: 'Getting started'
 
 ### What do I do if I can't send or receive emails? 
 
-Most of the time, a failure in sending/receiving emails is related to the configuration of your address in your email client. To verify, test it by connecting to [webmail](https://www.ovh.co.uk/mail/), and try sending and receiving a test email with this account. 
+Most of the time, a failure in sending/receiving emails is related to the configuration of your address in your email client. To verify, test it by connecting to [webmail](https://www.ovh.ie/mail/), and try sending and receiving a test email with this account. 
 
 - If this works fine, the failure is indeed due to your email client configuration. 
 - If, however, you still cannot send or receive an email, there are other solutions you can try. 
@@ -26,9 +26,9 @@ You can also check that your domain name is delivering emails to the right place
 
 You can configure your email account to use an email client like Outlook, Thunderbird, Mac Mail, etc. To do this, we have created guides to help you set up your email address. You can find them on [this page](../). 
 
-With [webmail](https://www.ovh.co.uk/mail/), you can access your inbox at any time from any connected device. Once you have created your email account, you can log in here to access it. 
+With [webmail](https://www.ovh.ie/mail/), you can access your inbox at any time from any connected device. Once you have created your email account, you can log in here to access it. 
 
-**Tips and tricks**: If you configure your email account in an email software client, we advise configuring it with the IMAP protocol. This way, emails will stay stored on the server, and you can read them from any device via [webmail](https://www.ovh.co.uk/mail/). To do this, you can use the following documentation: [Getting started with an MX Plan solution](../web_hosting_an_overview_of_ovh_email).
+**Tips and tricks**: If you configure your email account in an email software client, we advise configuring it with the IMAP protocol. This way, emails will stay stored on the server, and you can read them from any device via [webmail](https://www.ovh.ie/mail/). To do this, you can use the following documentation: [Getting started with an MX Plan solution](../web_hosting_an_overview_of_ovh_email).
 
 ### How do I manage my email services? 
 
@@ -45,7 +45,7 @@ Please note that an OVHcloud customer ID (NIC handle) is required for both optio
 
 To limit the amount of spam emails you receive, you can set up inbox rules on your account (called "Filters" in the old MX Plan solution). Their purpose is to move emails to the spam folder ot delete them as soon as they are received. To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then in the `Emails` section, select the domain concerned. Next, go to the `Emails`{.action} tab and click on the filter symbol in the "Filter" column. 
 
-If you don't see this column, spam filters can only be created by setting up inbox rules on your email account via [webmail](https://www.ovh.co.uk/mail/). Please refer to [this guide](../../microsoft-collaborative-solutions/creating-inbox-rules-in-owa/) for detailed instructions.
+If you don't see this column, spam filters can only be created by setting up inbox rules on your email account via [webmail](https://www.ovh.ie/mail/). Please refer to [this guide](../../microsoft-collaborative-solutions/creating-inbox-rules-in-owa/) for detailed instructions.
 
 **Tips and tricks**: If you set up a spam filter, legitimate emails may be marked as spam. These are called "false positives". If this happens, please submit a support ticket via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and let us know. We can then take the necessary steps to ensure that they are no longer labelled as spam in the future.
 
