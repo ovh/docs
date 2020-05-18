@@ -72,7 +72,7 @@ El equipo de asistencia de OVHcloud no está autorizado a responder a preguntas 
 
 En su lugar, consulte los foros dedicados de [Joomla!](http://forum.joomla.org/). 
 
-- Guía de instalación de Joomla!: [CMS, instalación manual de Joomla!](../cms_manually_install_joomla)
+- Guía de instalación de Joomla!: [CMS, instalación manual de Joomla!](https://docs.ovh.com/gb/en/hosting/cms_manually_install_joomla/)
 
 
 
@@ -127,11 +127,11 @@ Consulte los foros dedicados a [Drupal](https://www.drupal.org).
 
 ## Más información
 
-[Migrar su sitio web y correos electrónicos a OVHcloud](..web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}
+[Migrar su sitio web y correos electrónicos a OVHcloud](../web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}
 
-[Publicar un sitio web en su espacio de alojamiento web](..web_hosting_publicar_un_sitio_web_en_internet/){.external}
+[Publicar un sitio web en su espacio de alojamiento web](../web_hosting_publicar_un_sitio_web_en_internet/){.external}
 
-[Alojar varios sitios web en su plan de alojamiento web](..configurar-un-multisitio-en-un-alojamiento-web/){.external}
+[Alojar varios sitios web en su plan de alojamiento web](../configurar-un-multisitio-en-un-alojamiento-web/){.external}
 
 Consulte nuestras [soluciones de alojamiento web](https://www.ovh.es/hosting/){.external}
 
