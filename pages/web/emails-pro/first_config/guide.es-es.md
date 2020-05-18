@@ -40,8 +40,8 @@ Después de contratar el servicio E-mail Pro, se abrirá automáticamente una ve
 
 Puede elegir entre dos opciones:
 
-- **Seleccionar un dominio en la lista**\: solo se muestran los nombres de dominio que gestiona en el área de cliente de OVHcloud.
-- **Introducir un nombre de dominio no gestionado en su cuenta OVHcloud**\: si elige esta opción, deberá estar en condiciones de modificar la configuración del nombre de dominio (su zona DNS) para que el servicio E-mail Pro pueda funcionar correctamente.
+- **Seleccionar un dominio en la lista**: solo se muestran los nombres de dominio que gestiona en el área de cliente de OVHcloud.
+- **Introducir un nombre de dominio no gestionado en su cuenta OVHcloud**: si elige esta opción, deberá estar en condiciones de modificar la configuración del nombre de dominio (su zona DNS) para que el servicio E-mail Pro pueda funcionar correctamente.
 
 A continuación, haga clic en `Siguiente`{.action}.
 
@@ -83,9 +83,9 @@ Una vez añadido el nombre de dominio como dominio asociado, compruebe su config
 
 En la columna `Diagnóstico`{.action}, podrá ver si la configuración DNS del nombre de dominio es correcta. Si debe modificarla, se mostrará una señal roja. Existen dos posibilidades:
 
-- **Configuración automática al añadir un nombre de dominio de OVHcloud**\: si acaba de realizar el cambio, pueden pasar algunas horas antes de que se muestre en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- **Configuración automática al añadir un nombre de dominio de OVHcloud**: si acaba de realizar el cambio, pueden pasar algunas horas antes de que se muestre en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-- **Configuración manual de un nombre dominio no gestionado por OVHcloud**\: haga clic en la señal roja para ver los cambios que debe realizar. <br>*Para un registro CNAME*, consulte nuestra guía <br>*Para un registro MX*, consulte nuestra guía <br>*Para un registro SRV*, complete la zona DNS con la ayuda de la información proporcionada al hacer clic en la señal roja. Puede consultar la guía «[Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/)» para añadir este registro.
+- **Configuración manual de un nombre dominio no gestionado por OVHcloud**: haga clic en la señal roja para ver los cambios que debe realizar. <br>*Para un registro CNAME*, consulte nuestra guía <br>*Para un registro MX*, consulte nuestra guía <br>*Para un registro SRV*, complete la zona DNS con la ayuda de la información proporcionada al hacer clic en la señal roja. Puede consultar la guía « [Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/) » para añadir este registro.
 
 ![emailpro](images/first_config_email_pro_configure_domain_update.png){.thumbnail}
 
@@ -132,7 +132,7 @@ Para configurar su dirección de correo electrónico en un cliente de correo o e
 > En nuestro ejemplo, utilizamos el nombre de servidor pro**X**.mail.ovh.net. Deberá sustituir la «X» por el número que designa el servidor del servicio E-mail Pro.
 > 
 > Encontrará este número en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en el apartado `Web`{.action} de la sección `E-mail Pro`{.action},
->  en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **«Conexión»** de la pestaña `Información General`{.action}.
+>  en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **« Conexión »** de la pestaña `Información General`{.action}.
 > 
 
 ## Más información
