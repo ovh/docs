@@ -14,6 +14,7 @@ section: Concepts
 L2 Tunnel is directly forwarded to/from vRack so all L2 traffic is forwarded to/from customer inter-connection.
 
 By L2 Traffic, it means Ethernet frames, with 802.1q header if present:
+
 * Ethernet broadcast are forwarded
 * Unknown Ethernet unicast are forwarded
 * Multicast is forwarded (considered broadcast, limited to 20pps)

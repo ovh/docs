@@ -97,10 +97,10 @@ Please write down the **access** and **secret** parameters:
 Install the `awscli` client:
 
 ```bash
-pip install awscli awscli-plugin-endpoint
+pip3 install awscli awscli-plugin-endpoint
 ```
 
-Complete and write down the configuration for `awscli` into `~/aws/config`:
+Complete and write down the configuration for `awscli` into `~/.aws/config`:
 
 ```yaml
 [plugins]
@@ -109,7 +109,7 @@ endpoint = awscli_plugin_endpoint
 [profile default]
 aws_access_key_id = <access fetched in previous step>
 aws_secret_access_key = <secret fetched in previous step>
-region = <public cloud region in lower case>
+region = <public cloud region in lower case without digit>
 s3 =
   endpoint_url = https://s3.<public cloud region without digit>.cloud.ovh.net
   signature_version = s3v4
@@ -145,20 +145,21 @@ Install Velero, including all prerequisites, into the cluster and start the depl
 ```bash
 velero install \
   --provider aws \
+  --plugins velero/velero-plugin-for-aws:v1.0.1 \
   --bucket <your bucket name> \
   --secret-file ./credentials-velero \
-  --snapshot-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.cloud.ovh.net \
-  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.cloud.ovh.net
+  --snapshot-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://storage.<public cloud region without digit>.cloud.ovh.net \
+  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://storage.<public cloud region without digit>.cloud.ovh.net
 ```
 
 In my case, with the cluster in the `GRA` region, that meant:
 
 ```bash
-velero install --provider aws --bucket mytestcluster-velero-s3 --secret-file ./credentials/credentials-velero --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net --snapshot-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net
+velero install --provider aws --bucket mytestcluster-velero-s3 --secret-file ./credentials/credentials-velero --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://storage.gra.cloud.ovh.net --snapshot-location-config region=gra,s3ForcePathStyle="true",s3Url=https://storage.gra.cloud.ovh.net
 ```
 
 ```bash
-velero install --provider aws --plugins velero/velero-plugin-for-aws:v1.0.1 --bucket velero-s3 --secret-file ./credentials/credentials-velero --backup-location-config region=gra,s3Url=https://s3.gra.cloud.ovh.net --snapshot-location-config region=gra,s3Url=https://s3.gra.cloud.ovh.net
+velero install --provider aws --plugins velero/velero-plugin-for-aws:v1.0.1 --bucket velero-s3 --secret-file ./credentials/credentials-velero --backup-location-config region=gra,s3Url=https://storage.gra.cloud.ovh.net --snapshot-location-config region=gra,s3Url=https://storage.gra.cloud.ovh.net
 ```
 
 <pre class="console"><code>$ velero install \
