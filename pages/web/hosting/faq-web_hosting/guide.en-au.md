@@ -42,11 +42,11 @@ Once you have logged in to the OVHcloud Control Panel, you can manage different 
 
 To put your website online via OVHcloud, you need to have a domain name corresponding to the address of your future website (e.g. ovh.com). You also need to have a web hosting space to set up your website. Please read the following guide: [Publishing a website on your web hosting plan](../web_hosting_how_to_get_my_website_online).
 
-**Tips and tricks**: To help you build your website, OVHcloud offers 1-click modules like WordPress, PrestaShop, Joomla!, and Drupal. You can find them [here](https://www.ovh.co.uk/web-hosting/website/). You can also use the following documentation: [Setting up your website with 1-click modules](../web_hosting_web_hosting_modules).
+**Tips and tricks**: To help you build your website, OVHcloud offers 1-click modules like WordPress, PrestaShop, Joomla!, and Drupal. You can find them [here](https://www.ovh.com.au/web-hosting/website/). You can also use the following documentation: [Setting up your website with 1-click modules](../web_hosting_web_hosting_modules).
 
 ### How do I migrate my website and emails to OVHcloud? 
 
-To migrate your website and emails to OVHcloud, you need to have an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/) and an [OVHcloud email solution](https://www.ovh.co.uk/emails/). You can then connect to your Web Hosting plan’s FTP server, in order to transfer your website’s files on to it. If you currently have a database, it is also worth creating a dump of it. 
+To migrate your website and emails to OVHcloud, you need to have an [OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/) and an [OVHcloud email solution](https://www.ovh.com.au/emails/). You can then connect to your Web Hosting plan’s FTP server, in order to transfer your website’s files on to it. If you currently have a database, it is also worth creating a dump of it. 
 
 To migrate emails, you will need to recreate your accounts at OVHcloud, then use our [OMM migration tool (OVH Mail Migrator)](https://omm.ovh.net/). You can find it [here](https://omm.ovh.net/). 
 
