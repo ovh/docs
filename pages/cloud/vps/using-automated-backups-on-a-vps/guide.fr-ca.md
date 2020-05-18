@@ -15,7 +15,7 @@ Cette option vous offre un moyen pratique de disposer fréquemment de sauvegarde
 **Ce guide explique comment utiliser la sauvegarde automatique pour votre VPS.**
 
 > [!primary]
->Avant d'appliquer une option de sauvegarde, nous vous recommandons de consulter les [options VPS](https://www.ovhcloud.com/fr/vps/options/) afin de comparer les détails et tarifs de chaque option.
+>Avant d'appliquer une option de sauvegarde, nous vous recommandons de consulter les [options VPS](https://www.ovhcloud.com/fr-ca/vps/options/) afin de comparer les détails et tarifs de chaque option.
 >
 
 ## Prérequis
@@ -101,6 +101,6 @@ Vous pouvez maintenant basculer vers ce dossier et accéder à vos données de s
 
 ## Aller plus loin
 
-[Utiliser les snapshots sur un VPS](https://docs.ovh.com/fr/vps/snapshot-vps/)
+[Utiliser les snapshots sur un VPS](https://docs.ovh.com/ca/fr/vps/snapshot-vps/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
