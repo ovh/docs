@@ -1,12 +1,12 @@
 ---
-title: How to use object storage with Apache Spark on the Data Processing platform
-slug: object-storage
-excerpt: Object storage based on Swift and its S3 API is the common way to store data. Let’s find out how to do it !
+title: Python - How to use Object Storage with Apache Spark on the Data Processing platform
+slug: object-storage-python
+excerpt: OpenStack Swift and its S3 compatible API is a common way to store the data you want to use for your Apache Spark jobs. Let's find out how to do it in Python!
 section: How to
 order: 5
 ---
 
-**Last updated 07<sup>th</sup> May, 2020**
+**Last updated 19<sup>th</sup> May, 2020**
 
 ## Objective
 This guide gives you some basic examples about using OpenStack Swift and its S3 API with OVHcloud Data Processing.
@@ -19,9 +19,8 @@ Samples are based on the well-known WordCount. We will first read data from a te
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 - An OVHcloud account
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details).
-- Data Processing activated (see [How to activate the Data Processing](../activation){.external} for details).
-- First use of OVHcloud Data Processing already done. For example, the first tutorial [Calculating π number with Apache Spark](../pi-spark){.external}.
-- An environment file is required.
+- Data Processing activated (see [How to activate the Data Processing service](../activation){.external} for details).
+- A Conda compatible environment file.
 The following is an example with only dependencies required for this How to: [environment.yml](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/environment.yml).
 Otherwise, this [How to](../generate-environment) explains how to generate an environment file.
 - The input file 'wordcount.txt' used by the following samples is available [Here](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount.txt).
@@ -70,13 +69,13 @@ if __name__ == "__main__":
 
 Find below the code in Python that:
 
-- reads one object 'wordcount.txt' in Swift through its S3 API
-- stores the number of occurrences per word in S3 object
-- prints the result
+- reads an object 'wordcount.txt' in an OVHcloud Object Storage container using its S3 API
+- stores the number of occurrences per word in a S3 object
+- prints the result in output log of the job
 
 Save it in a file called 'wordcount_s3only.py' or download it from this repository: [Data Processing Samples - Object Storage](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount_s3only.py).
 
-Credentials provided for S3 can concern any Swift container.
+Credentials provided for S3 can concern any OVHcloud Object Storage container.
 
 ```python
 from __future__ import print_function
@@ -119,17 +118,17 @@ if __name__ == "__main__":
     spark.stop()
 ```
 
-## Read data with Apache Spark using the both OpenStack Swift API and its S3 implementation
+## Read data with Apache Spark using both OpenStack Swift API and its S3 implementation
 
 Find below the code in Python that:
 
-- reads one object 'wordcount.txt' through the native Swift API
-- stores the number of occurrences per word in Swift through its S3 API
-- prints the result
+- reads an object 'wordcount.txt' through the native OpenStack Swift API
+- stores the number of occurrences per word in Object Storage through its S3 API
+- prints the result in the output log of the job
 
 Save it in a file called 'wordcount_both.py' or download it from this repository: [Data Processing Samples - Object Storage](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount_both.py).
 
-Credentials provided for S3 can concern any Swift container.
+Credentials provided for S3 can concern any OVHcloud Object Storage container.
 Thus, we can read data from one Swift container and write the result in another container.
 
 ```python
@@ -178,11 +177,11 @@ if __name__ == "__main__":
 Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like Amazon S3 and Amazon EC2.
 [Boto3 - the AWS SDK for Python](https://pypi.org/project/boto3/) 
 
-Find below the code in Python that stores one basic string in S3 object.
+Find below the code in Python that stores a basic string in S3 object.
 
 Save it in a file called 'boto3_sample.py' or download it from this repository: [Data Processing Samples - Object Storage](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/boto3_sample.py).
 
-Credentials provided for S3 can concern any Swift container.
+Credentials provided for S3 can concern any OVHcloud Object Storage container.
 
 Here we don't use Spark but sometimes depending on your use cases you may have to interact with S3 outside the Apache Spark framework.
 
@@ -210,7 +209,7 @@ if __name__ == "__main__":
 
 ## Go further
 
-These samples are quite basic. They provide the first step to interact with object storage from within your code and, then, go further.
+These samples are quite basic. They provide the first step to interact with Object Storage from within your code and, then, go further.
 
 Concerning the 'WordCount' use case, here is a link to the tutorial with a more advanced [Wordcount](../wordcount-spark){.external}.
 

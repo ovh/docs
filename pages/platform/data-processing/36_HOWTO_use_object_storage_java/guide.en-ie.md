@@ -1,7 +1,7 @@
 ---
-title: How to use object storage with Apache Spark on the Data Processing platform using Java
+title: How to use OVHcloud Object Storage with Apache Spark on the Data Processing platform using Java
 slug: object-storage-java
-excerpt: Object storage based on Swift and its S3 API is the common way to store data. Let’s find out how to do it in Java!
+excerpt: OpenStack Swift and its S3 compatible API is a common way to store the data you want to use for your Apache Spark jobs. Let's find out how to do it in Java!
 section: How to
 order: 6
 ---
@@ -13,7 +13,7 @@ This guide gives you a basic example about using OpenStack Swift and its S3 API 
 
 We will use the OpenStack S3 API to read and write data to Swift Object Storage.
 
-Samples are based on the well-known WordCount. We will first read data from a text file, then count the frequence of each word in this particular file. And the print the result in output log and also write the result in a text file in Swift object storage. 
+Samples are based on the well-known WordCount. We will first read data from a text file, then count the frequence of each word in this particular file. And the print the result in output log and also write the result in a text file in OVHcloud Swift Object Storage. 
 
 ## Requirements
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
@@ -21,18 +21,18 @@ Samples are based on the well-known WordCount. We will first read data from a te
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details).
 - Data Processing activated (see [How to activate the Data Processing](../activation){.external} for details).
 - The input file 'novel.txt' used by the following samples is available [Here](https://github.com/ovh/data-processing-samples/tree/master/java_wordCount_S3/novel.txt){.external}.
-You have to upload it in a Swift container. (see [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/){.external} to read more about how to create a Swift container).
-- OVHcloud object storage "secret key" and "access key" for the container that you have uploaded the 'novel.txt' text file. (See [How to create EC2 credentials](../../public-cloud/getting_started_with_the_swift_S3_API/){.external} for more details).
+You have to upload it in an Object Storage container. (see [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/){.external} to read more about how to create an OVHcloud Object Storage container).
+- OVHcloud Object Storage "secret key" and "access key" for the container that you have uploaded the 'novel.txt' text file. (See [How to create EC2 credentials](../../public-cloud/getting_started_with_the_swift_S3_API/){.external} for more details).
 
 ## Read/Write data with Apache Spark using OpenStack Swift S3 API in Java
 
 Find below the code in Java that:
 
-- reads one object 'novel.txt' in Swift through its S3 API
-- stores the number of occurrences per word in object storage
-- prints the results in output log
+- reads one object 'novel.txt' in OVHcloud Object Storage through its S3 API
+- stores the number of occurrences per word in OVHcloud Object Storage through its S3 API
+- prints the results in output log of the job 
 
-This code in Java reads one object novel.txt that is uploaded into a conainer named `textfile` and prints the number of occurrences per word. You need to create a jar file from your Java code and upload it in your Swift object storage as well. This jar file and novel.txt can be uploaded in different containers or even in different cloud projects or OVHcloud accounts. Then the program will write the result in another text file named `result.txt` in the same container that novel.txt have been uploaded.  
+This code in Java reads one object novel.txt that is uploaded into a conainer named `textfile` and prints the number of occurrences per word. You need to create a jar file from your Java code and upload it in your OVHcloud Object Storage as well. This jar file and novel.txt can be uploaded in different containers or even in different cloud projects or OVHcloud accounts. Then the program will write the result in another text file named `result.txt` in the same container that novel.txt have been uploaded.  
 
 JavaWordCount.java :
 ```java
