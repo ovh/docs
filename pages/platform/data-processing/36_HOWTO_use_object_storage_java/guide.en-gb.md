@@ -13,18 +13,18 @@ This guide gives you a basic example about using OpenStack Swift and its S3 API 
 
 We will use the OpenStack S3 API to read and write data to Swift Object Storage.
 
-Samples are based on the well-known WordCount. We will first read data from a text file, then count the frequence of each word in this particular file.
+Samples are based on the well-known WordCount. We will first read data from a text file, then count the frequence of each word in this particular file. And the print the result in output log and also write the result in a text file in Swift object storage. 
 
 ## Requirements
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- An OVHcloud account
+- An OVHcloud account.
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details).
 - Data Processing activated (see [How to activate the Data Processing](../activation){.external} for details).
 - The input file 'novel.txt' used by the following samples is available [Here](https://github.com/ovh/data-processing-samples/tree/master/java_wordCount_S3/novel.txt){.external}.
-You have to upload it in a Swift container. Please refer to this documentation that explains how to create a Swift container [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/){.external}.
-- OVHcloud object storage "secret key" and "access key" for the container that you have uploaded the 'novel.txt' text file. (See [How to create EC2 credentials](../../public-cloud/getting_started_with_the_swift_S3_API/){.external}).
+You have to upload it in a Swift container. (see [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/){.external} to read more about how to create a Swift container).
+- OVHcloud object storage "secret key" and "access key" for the container that you have uploaded the 'novel.txt' text file. (See [How to create EC2 credentials](../../public-cloud/getting_started_with_the_swift_S3_API/){.external} for more details).
 
-## Read data with Apache Spark using OpenStack Swift S3 API
+## Read/Write data with Apache Spark using OpenStack Swift S3 API in Java
 
 Find below the code in Java that:
 
@@ -182,7 +182,7 @@ You can find the source code of this project in OVHcloud github repository in th
 
 These samples are quite basic. They provide the first step to interact with object storage from within your code and, then, go further.
 
-Concerning the 'WordCount' use case, here is a link to the tutorial with a more advanced [Wordcount](../wordcount-spark){.external}.
+Concerning the 'WordCount' use case, here is a link to a more advanced tutorial about [Wordcount](../wordcount-spark){.external}.
 
 If you are not familiar with Apache Spark, we recommend you to visit [Apache Spark's official website](https://spark.apache.org/){.external}
 
