@@ -175,6 +175,9 @@ pom.xml :
 </project>
 ```
 
+> [!warning]
+> Everything in OVHcloud object storage container in which you uploaded your code, will be downloaded to the Spark cluster. If you have big volume of data, the best practice is to put your data in a separated Object Storage container. 
+
 
 You can find the source code of this project in OVHcloud github repository in this address: [ovh/data-processing-samples](https://github.com/ovh/data-processing-samples/tree/master/){.external}
 
