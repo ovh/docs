@@ -1,59 +1,63 @@
 ---
-title: 'Deploying a GPU instance'
+title: 'Creare un’istanza GPU'
 slug: deploying-a-gpu-instance
-excerpt: 'Find out how to deploy a GPU instance on Linux or Windows'
-section: 'From the OVH Control Panel'
+excerpt: 'Come creare un’istanza GPU con Linux o Windows'
+section: 'Dallo Spazio Cliente OVH'
 ---
 
-**Last updated 30th October 2018**
+**Ultimo aggiornamento 06/12/2019**
 
-## Objective
+## Obiettivo
 
-GPU instances are technically similar to the instances from the 2017 range, but they also have a graphics card (Graphic Processing Unit or GPU). The technology used (*pci_passthrough*) allows the instance’s operating system to control the GPU in exactly the same way a physical machine would.
+Le istanze GPU sono tecnicamente simili alle istanze della gamma 2017, con la differenza che dispongono di una scheda grafica (Graphic Processing Unit o GPU). La tecnologia utilizzata (*pci_passthrough*) permette al sistema operativo dell’istanza di controllare la GPU esattamente come su una macchina fisica.
 
-The GPUs offered are the NVIDIA GeForce GTX 1060, GTX 1070 and GTX 1080Ti. 
+Le GPU proposte da OVHcloud sono NVIDIA Tesla V100. 
 
 > [!warning]
 >
-> At the moment, GPU instances are only available in the GRA3, GRA5 and BHS3 datacentres. You may have to create a new project and choose the new 2017 range. [Find out more.](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/)
+> Per il momento, le istanze GPU sono disponibili soltanto nei datacenter di GRA3, GRA5, GRA7 e BHS3. Per poter utilizzare queste istanze, probabilmente sarà necessario creare un nuovo progetto selezionando la nuova gamma 2017.  Per maggiori informazioni clicca [qui](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/)
 > 
 
-**This guide explains how to deploy a GPU instance on Linux or Windows**
+**Questa guida ti mostra come creare un’istanza GPU con Linux o Windows.**
+
+## Prerequisiti
+
+- Aver creato un progetto Public Cloud con accesso alle Region in cui sono disponibili le istanze GPU (GRA3, GRA5, GRA7 e BHS3)
 
 
-## Requirements
+## Procedura
 
-- a Public Cloud project with access to the regions where GPUs are available (GRA3, GRA5 and BHS3)
-
-## Instructions
-
-You will find the information needed to deploy a GPU instance on Linux or Windows below.
+Di seguito troverai le informazioni necessarie per creare un’istanza GPU utilizzando Linux o Windows.
+Ricordati che non è possibile modificare il sistema operativo dell’istanza da Linux a Windows o viceversa. Pertanto, assicurati di creare l’istanza con il sistema operativo corretto, di default.
 
 
-### On Linux
+### Linux
 
-All the images we offer can be used on a GPU instance.
+Tutte le immagini proposte da OVHcloud sono compatibili con le istanze GPU.
 
 > [!primary]
 >
-> If you don’t feel comfortable with manually compiling a kernel module, we recommend using a distribution that is officially supported by Nvidia and for which they provide *turnkey* drivers: <https://developer.nvidia.com/cuda-downloads>.
+> Se preferisci non compilare manualmente il modulo del kernel, ti consigliamo di utilizzare una distribuzione ufficialmente supportata da Nvidia e per la quale esistono dei driver *pronti all’uso*: <https://developer.nvidia.com/cuda-downloads>
 > 
 
-Once you are logged in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in your Public Cloud project, click on `Add server`{.action}and choose a GPU instance:
+Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, accedi al tuo progetto Public Cloud, clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU:
 
-![public-cloud](images/EN-Flavors.png){.thumbnail}
+![/public-cloud](images/gpu.png){.thumbnail}
 
-The instance will start a few seconds later. You can then log in and check for the graphics card: 
+Quindi, seleziona il sistema operativo Linux da utilizzare:
+
+![/public-cloud](images/linuxchoice.png){.thumbnail}
+
+L’istanza si avvierà nel giro di pochi secondi,  dopodiché potrai effettuare la connessione e verificare la presenza della scheda grafica:  
 
 ```ssh
 lspci | grep -i nvidia
-00:05.0 VGA compatible controller: NVIDIA Corporation Device 1c03 (rev a1)
-00:06.0 Audio device: NVIDIA Corporation Device 10f1 (rev a1)
+00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```
 
-The graphics card is there, but cannot be used yet. To do so, you must first install the NVIDIA driver. You can find the list of packages at this address: [List of available Linux packages](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+Poiché la scheda grafica è presente ma non ancora utilizzabile è necessario installare il driver NVIDIA. Puoi consultare la lista dei pacchetti disponibili cliccando su questo [link](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
 
-You will then need to enter the following commands:
+Successivamente, inserisci i seguenti comandi:
 
 ```sh
 wget URL_of_packet_to_download
@@ -66,64 +70,60 @@ sudo reboot
 
 > [!primary]
 >
-> The Linux command can vary based on your distribution. If in doubt, please check the official guide for your version of Linux.
+> Il comando Linux può variare in base alla distribuzione utilizzata. In caso di dubbi, consulta la documentazione ufficiale della tua versione Linux. 
 > 
 
 
-Once the instance has been rebooted, the graphics card will appear in the NVIDIA utility program:
+Una volta riavviata l’istanza, la scheda grafica compare all’interno del programma NVIDIA:
 
 ```sh
 nvidia-smi
-Wed Apr 26 13:05:25 2017
+Fri Dec  6 12:32:25 2019       
 +-----------------------------------------------------------------------------+
-| NVIDIA-SMI 375.51                 Driver Version: 375.51                    |
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
 |-------------------------------+----------------------+----------------------+
 | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
 | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
 |===============================+======================+======================|
-|   0  GeForce GTX 106...  Off  | 0000:00:05.0     Off |                  N/A |
-|  0%   22C    P0    26W / 120W |      0MiB /  6072MiB |      0%      Default |
+|   0  Tesla V100-PCIE...  On   | 00000000:00:05.0 Off |                    0 |
+| N/A   26C    P0    35W / 250W |      0MiB / 16130MiB |      5%      Default |
 +-------------------------------+----------------------+----------------------+
-
+                                                                               
 +-----------------------------------------------------------------------------+
 | Processes:                                                       GPU Memory |
-|  GPU       PID  Type  Process name                               Usage      |
+|  GPU       PID   Type   Process name                             Usage      |
 |=============================================================================|
 |  No running processes found                                                 |
 +-----------------------------------------------------------------------------+
 ```
 
-The GPU instance is now fully functional and usable.
+Da questo momento l’istanza GPU è pienamente operativa e pronta per essere utilizzata.
 
 
-### On Windows
+### Windows
 
-There are incompatibilities between the NVIDIA driver and the *KVM/pci_passthrough* virtualisation solution. **Windows standard images do not work.**
+A causa di alcune incompatibilità tra il driver Nvidia e la soluzione di virtualizzazione *KVM/pci_passthrough*, **le immagini Windows standard non funzionano.**
+OVHcloud fornisce immagini speciali, basate su un BIOS virtuale UEFI, che permettono al driver di funzionare correttamente (valide solo per le istanze G1, G2 e G3 - gamma 2017 e meno recenti)
 
-We offer special images, based on a virtual UEFI BIOS, which allow the driver to function correctly:
+Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, accedi al tuo progetto Public Cloud, clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU:
 
-![public-cloud](images/EN-WindowsImages.png){.thumbnail}
+![/public-cloud](images/gpu.png){.thumbnail}
 
+Quindi seleziona il sistema operativo Windows da utilizzare: 
 
-> [!warning]
->
-> We cannot guarantee that the solution will work with all future versions of the NVIDIA driver.
->
-> Before performing any update of the NVIDIA driver, we strongly recommend that you take a snapshot that will allow you to do a rollback, if necessary.
->
+![/public-cloud](images/oschoice.png){.thumbnail}
 
-Once your GPU instance has started, you will need to install the NVIDIA driver from the [official website](https://www.nvidia.com/Download/index.aspx){.external}.
+Dopo aver avviato l’istanza GPU, è necessario installare il driver NVIDIA dal [sito ufficiale](https://www.nvidia.com/Download/index.aspx){.external}.
 
-Start an instance using one of the available GPU types (win-g1-15, win-g1-30...). This should only take a few minutes.
+Avvia un’istanza utilizzando uno dei flavor GPU (t1-45, t1-90, t1-180...). L’istanza si avvierà nel giro di pochi minuti.
 
-Afterwards, all that’s left to do is to install the required driver, which will then be displayed here:
+Non ti resta che installare il driver necessario, che successivamente comparirà qui:
 
+![/public-cloud](images/driverson.png){.thumbnail}
 
-![public-cloud](images/WindowsDriverVersion.png){.thumbnail}
-
-![public-cloud](images/WindowsDeviceManager.png){.thumbnail}
+![/public-cloud](images/devicemanager.png){.thumbnail}
 
 
-## Going further
+## Per saperne di più
 
-Join our community of users on <https://community.ovh.com/en/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
