@@ -11,8 +11,8 @@ We list here the most frequently requested OVHcloud Managed Kubernetes features 
 
 ### Available features
 
-- **Persistent Volumes ** Use the integrated Cinder Volumes to host the persistent data of your stateful containerized workloads. Details in the[working with persitent volumes ](../ovh-kubernetes-persistent-volumes/) guide.
-- **Load Balancer** Use the free preview of our integrated load balancer to expose your services on any port. Details available in the [exposing your services](../using-lb/) guide.
+- **Persistent Volumes ** Use the integrated Cinder Volumes to host the persistent data of your stateful containerized workloads. Details in the[working with persistent volumes ](../ovh-kubernetes-persistent-volumes/) guide.
+- **Load Balancer** Use the integrated External Load balancers to expose your services on any port of a dedicated public IPv4. Details available in the [exposing your services](../using-lb/) guide.
 - **Pod autoscaling** Use the  [standard horizontal pod autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/){.external} to distribute dynamically your containerized workloads on a given set of worker nodes.
 - **RBAC** Use the standard [RBAC authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external} mode to distribute rights within your organization and/or assure compatibility with specific applications.
 - **New versions** : We support upcoming versions, during the quarter following their official release. We also propose managed version upgrades.
