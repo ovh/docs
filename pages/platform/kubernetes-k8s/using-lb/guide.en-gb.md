@@ -181,7 +181,7 @@ NAME          TYPE           CLUSTER-IP    EXTERNAL-IP                        PO
 hello-world   LoadBalancer   10.3.81.234   xxx.xxx.xxx.xxx   80:31699/TCP   4m
 </code></pre>
 
-For each service you deploy with LoadBalancer type, you will get a new IPV4 `xxx.xxx.xxx.xxx` to access the service.
+For each service you deploy with LoadBalancer type, you will get a new IPv4 `xxx.xxx.xxx.xxx` to access the service.
 
 ### Testing your service
 
