@@ -80,7 +80,7 @@ The `LoadBalancer` is the best option for a production environnement, with two c
 - The `LoadBalancer` is usually billed by the number of exposed services, it can be expensive.
 
 > [!primary]
-> There is a limit of 16 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
+> There is a limit of 16 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request through our support team
 
 ### What about Ingress
 
