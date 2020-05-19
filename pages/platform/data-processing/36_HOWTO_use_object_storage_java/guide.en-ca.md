@@ -1,5 +1,5 @@
 ---
-title: How to use OVHcloud Object Storage with Apache Spark on the Data Processing platform using Java
+title: Java - How to use OVHcloud Object Storage with Apache Spark on the Data Processing platform
 slug: object-storage-java
 excerpt: OpenStack Swift and its S3 compatible API is a common way to store the data you want to use for your Apache Spark jobs. Let's find out how to do it in Java!
 section: How to
