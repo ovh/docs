@@ -6,7 +6,7 @@ section: Getting started
 ---
 
 
-**Last updated 1<sup>st</sup> July, 2019.**
+**Last updated 19<sup>st</sup> May, 2020.**
 
 <style>
  pre {
@@ -80,7 +80,17 @@ The `LoadBalancer` is the best option for a production environnement, with two c
 - The `LoadBalancer` is usually billed by the number of exposed services, it can be expensive.
 
 > [!primary]
-> We are currently offering OVHcloud Managed Kubernetes LoadBalancer service as a free preview, until the end of summer 2019. During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
+> We are currently offering OVHcloud Managed Kubernetes load balancer service as a free preview, until the end of summer 2019. During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
+
+### Supported annotations
+
+There are several annotations available to customize your load balancer:
+
+- `service.beta.kubernetes.io/ovh-loadbalancer-proxy-protocol`: Used on the service to enable the proxy protocol on all backends. Supported values: `v1`, `v2`, `v2_ssl`, `v2_ssl_cn`.
+
+- `service.beta.kubernetes.io/ovh-loadbalancer-allowed-sources`: Used on the service to specify allowed client IP source ranges. Value: comma separated list of CIDRs. For example: `10.0.0.0/24,172.10.0.1`. **Deprecated** please use `loadBalancerSourceRanges` spec instead, see [Restrict Access For LoadBalancer Service](https://kubernetes.io/docs/tasks/access-application-cluster/configure-cloud-provider-firewall/#restrict-access-for-loadbalancer-service){.external}.
+
+- `service.beta.kubernetes.io/ovh-loadbalancer-balance`: Used on the service to set the algorithm to use for load balancing. Supported values: `first`, `leastconn`, `roundrobin`, `source`. Default: `roundrobin`.
 
 ### What about Ingress
 
@@ -94,7 +104,7 @@ The main advance of using an `Ingress` behind a `LoadBalancer` is the cost: you 
 
 ## Deploying LoadBalancer Services on OVHcloud Managed Kubernetes clusters
 
-In our OVHcloud Managed Kubernetes we propose a load balancing service enabling you to use `LoadBalancer` `ServiceType`. We are currently offering OVHcloud Managed Kubernetes LoadBalancer service as a free preview until the end of summer 2019. During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
+In our OVHcloud Managed Kubernetes we propose a load balancing service enabling you to use `LoadBalancer` `ServiceType`. We are currently offering OVHcloud Managed Kubernetes load balancer service as a free preview until the end of summer 2019. During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
 
 ## Deploying a Hello World LoadBalancer service
 
@@ -181,7 +191,7 @@ NAME          TYPE           CLUSTER-IP    EXTERNAL-IP                        PO
 hello-world   LoadBalancer   10.3.81.234   6d6regsa9pc.lb.c1.gra.k8s.ovh.net   80:31699/TCP   4m
 </code></pre>
 
-For each service you deploy with LoadBalancer type, you will get a new sub-domain `XXXXXX.lb.c1.gra.k8s.ovh.net` to access the service. In my example that URL to access the service would be `http://6d6regsa9pc.lb.c1.gra.k8s.ovh.net`
+For each service you deploy with `LoadBalancer` type, you will get a new sub-domain `XXXXXX.lb.c1.gra.k8s.ovh.net` to access the service. In my example that URL to access the service would be `http://6d6regsa9pc.lb.c1.gra.k8s.ovh.net`
 
 > [!primary]
 > The `LoadBalancer` is giving you a domain name and not an IP, because we anticipate a possible IP change at the end of the `LoadBalancer` free preview phase. The domain name will remain stable, so we prefer you to use it.
