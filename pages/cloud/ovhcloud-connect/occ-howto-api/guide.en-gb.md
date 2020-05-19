@@ -196,14 +196,14 @@ Extra Configuration is the smallest ressource without any child.
 > @api {DELETE} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}
 >
 
-If Extra Configuration is present, it will be immediatly deleted.
+If Extra Configuration is present, it will be deleted recursively.
 
 > [!api]
 >
 > @api {DELETE} /ovhCloudConnect/{serviceName}/config/pop/{popId} 
 >
 
-When all children have been delete, POP can be deleted safely.
+When all children have been deleted, POP can be deleted safely.
 
 ### Adherences
 
