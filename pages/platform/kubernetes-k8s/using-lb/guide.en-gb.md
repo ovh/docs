@@ -6,7 +6,7 @@ section: Getting started
 ---
 
 
-**Last updated 1<sup>st</sup> July, 2019.**
+**Last updated 19<sup>st</sup> May, 2020.**
 
 <style>
  pre {
