@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment envoyer des SMS depuis une adresse http'
 section: 'Envoyer des SMS'
 ---
 
-**Dernière mise à jour le 18/05/2020** 
+**Dernière mise à jour le 19/05/2020** 
 
 ## Objectif
 
@@ -37,7 +37,7 @@ Les paramètres suivants doivent être séparés par des &. Remplacez les X par 
 
 |Paramètres|À remplacer par|
 |---|---|
-|account|Compte SMS à utiliser (ex : sms-ab1234-1)|
+|account|Compte SMS à utiliser (ex : sms-xx11111-1)|
 |login|Utilisateur SMS à utiliser sur le compte associé|
 |password|Mot de passe de l'utilisateur|
 |from|Un des expéditeurs déclarés sur votre compte SMS.|
