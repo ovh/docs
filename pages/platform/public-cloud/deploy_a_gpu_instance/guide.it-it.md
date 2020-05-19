@@ -9,21 +9,21 @@ section: 'Dallo Spazio Cliente OVH'
 
 ## Obiettivo
 
-Le istanze GPU sono tecnicamente simili alle istanze della gamma 2017, con la differenza che dispongono di una scheda grafica (_Graphic Processing Unit_ o GPU). La tecnologia utilizzata (pci_passthrough) permette al sistema operativo dell’istanza di controllare la GPU esattamente come su una macchina fisica.
+Le istanze GPU sono tecnicamente simili alle istanze della gamma 2017, con la differenza che dispongono di una scheda grafica (Graphic Processing Unit o GPU). La tecnologia utilizzata (*pci_passthrough*) permette al sistema operativo dell’istanza di controllare la GPU esattamente come su una macchina fisica.
 
-Le GPU proposte da OVH sono NVIDIA GeForce GTX 1060, GTX 1070 e GTX 1080Ti. 
+Le GPU proposte da OVHcloud sono NVIDIA Tesla V100. 
 
 > [!warning]
 >
-> Per il momento, le istanze GPU sono disponibili soltanto nei datacenter di GRA3, GRA5, GRA7 e BHS3. Per poter utilizzare queste istanze, probabilmente sarà necessario creare un nuovo progetto selezionando la nuova gamma 2017. Per maggiori informazioni clicca [qui](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/) (documentazione in inglese).
+> Per il momento, le istanze GPU sono disponibili soltanto nei datacenter di GRA3, GRA5, GRA7 e BHS3. Per poter utilizzare queste istanze, probabilmente sarà necessario creare un nuovo progetto selezionando la nuova gamma 2017.  Per maggiori informazioni clicca [qui](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/)
 > 
 
 **Questa guida ti mostra come creare un’istanza GPU con Linux o Windows.**
 
-
 ## Prerequisiti
 
-- Aver creato un progetto Public Cloud con accesso alle Region in cui sono disponibili le istanze GPU (GRA3, GRA5, GRA7 e BHS3).
+- Aver creato un progetto Public Cloud con accesso alle Region in cui sono disponibili le istanze GPU (GRA3, GRA5, GRA7 e BHS3)
+
 
 ## Procedura
 
@@ -33,14 +33,14 @@ Ricordati che non è possibile modificare il sistema operativo dell’istanza da
 
 ### Linux
 
-Tutte le immagini proposte da OVH sono compatibili con le istanze GPU.
+Tutte le immagini proposte da OVHcloud sono compatibili con le istanze GPU.
 
 > [!primary]
 >
 > Se preferisci non compilare manualmente il modulo del kernel, ti consigliamo di utilizzare una distribuzione ufficialmente supportata da Nvidia e per la quale esistono dei driver *pronti all’uso*: <https://developer.nvidia.com/cuda-downloads>
 > 
 
-Una volta connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, accedi al tuo progetto Public Cloud, clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU:
+Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, accedi al tuo progetto Public Cloud, clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU:
 
 ![/public-cloud](images/gpu.png){.thumbnail}
 
@@ -55,7 +55,7 @@ lspci | grep -i nvidia
 00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```
 
-Poiché la scheda grafica è presente ma non ancora utilizzabile è necessario installare il driver NVIDIA. Puoi consultare la lista dei pacchetti disponibili cliccando su questo[link](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+Poiché la scheda grafica è presente ma non ancora utilizzabile è necessario installare il driver NVIDIA. Puoi consultare la lista dei pacchetti disponibili cliccando su questo [link](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
 
 Successivamente, inserisci i seguenti comandi:
 
@@ -103,9 +103,9 @@ Da questo momento l’istanza GPU è pienamente operativa e pronta per essere ut
 ### Windows
 
 A causa di alcune incompatibilità tra il driver Nvidia e la soluzione di virtualizzazione *KVM/pci_passthrough*, **le immagini Windows standard non funzionano.**
-OVH fornisce immagini speciali, basate su un BIOS virtuale UEFI, che permettono al driver di funzionare correttamente (valide solo per le istanze G1, G2 e G3 - gamma 2017 e meno recenti)
+OVHcloud fornisce immagini speciali, basate su un BIOS virtuale UEFI, che permettono al driver di funzionare correttamente (valide solo per le istanze G1, G2 e G3 - gamma 2017 e meno recenti)
 
-Una volta connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, accedi al tuo progetto Public Cloud, clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU:
+Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, accedi al tuo progetto Public Cloud, clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU:
 
 ![/public-cloud](images/gpu.png){.thumbnail}
 

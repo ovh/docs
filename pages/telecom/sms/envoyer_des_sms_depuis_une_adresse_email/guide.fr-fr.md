@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment envoyer des SMS depuis une adresse email'
 section: 'Envoyer des SMS'
 ---
 
-**Dernière mise à jour le 18/05/2020**
+**Dernière mise à jour le 19/05/2020**
 
 ## Objectif
 
@@ -41,7 +41,7 @@ Si votre texte contient 2 sauts de ligne (double /n) ou si vous écrivez le para
 Pour envoyer un SMS contenant ces éléments, il vous faudra le faire depuis l'espace client ou via les API.
 >
 
-Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](https://docs.ovh.com/fr/sms/envoyer-sms-depuis-adresse-email/#annexe_1) en bas de ce guide.
+Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](./#annexe_1) en bas de ce guide.
 
 > [!warning]
 >
@@ -98,7 +98,7 @@ Vous devriez obtenir un résultat équivalent à l'image ci-dessous. Par défaut
 Si vous souhaitez utiliser un numéro court permettant la réponse, renseignez senderForResponse=1 en tant qu'expéditeur.
 >
 
-Vous pouvez consulter le guide suivant pour toute précision sur les utilisateurs SMS : [Tout savoir sur les utilisateurs SMS](https://docs.ovh.com/fr/sms/tout_savoir_sur_les_utilisateurs_sms/)
+Vous pouvez consulter le guide suivant pour toute précision sur les utilisateurs SMS : [Tout savoir sur les utilisateurs SMS](../tout_savoir_sur_les_utilisateurs_sms/)
 
 
 ### Étape 2 : ajouter des champs facultatifs

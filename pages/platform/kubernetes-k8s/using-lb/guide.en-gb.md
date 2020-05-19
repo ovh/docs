@@ -82,6 +82,16 @@ The `LoadBalancer` is the best option for a production environnement, with two c
 > [!primary]
 > There is a limit of 16 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request through our support team
 
+### Supported annotations
+
+There are several annotations available to customize your load balancer:
+
+- `service.beta.kubernetes.io/ovh-loadbalancer-proxy-protocol`: Used on the service to enable the proxy protocol on all backends. Supported values: `v1`, `v2`, `v2_ssl`, `v2_ssl_cn`.
+
+- `service.beta.kubernetes.io/ovh-loadbalancer-allowed-sources`: Used on the service to specify allowed client IP source ranges. Value: comma separated list of CIDRs. For example: `10.0.0.0/24,172.10.0.1`. **Deprecated** please use `loadBalancerSourceRanges` spec instead, see [Restrict Access For LoadBalancer Service](https://kubernetes.io/docs/tasks/access-application-cluster/configure-cloud-provider-firewall/#restrict-access-for-loadbalancer-service){.external}.
+
+- `service.beta.kubernetes.io/ovh-loadbalancer-balance`: Used on the service to set the algorithm to use for load balancing. Supported values: `first`, `leastconn`, `roundrobin`, `source`. Default: `roundrobin`.
+
 ### What about Ingress
 
 According to the [official documentation](https://kubernetes.io/docs/concepts/services-networking/ingress/){.external}, an `Ingress` is an API object that manages external access to the services in a cluster, typically HTTP. Whats the difference with the `LoadBalancer` or `NodePort`?
@@ -181,7 +191,7 @@ NAME          TYPE           CLUSTER-IP    EXTERNAL-IP                        PO
 hello-world   LoadBalancer   10.3.81.234   xxx.xxx.xxx.xxx   80:31699/TCP   4m
 </code></pre>
 
-For each service you deploy with LoadBalancer type, you will get a new IPv4 `xxx.xxx.xxx.xxx` to access the service.
+For each service you deploy with `LoadBalancer` type, you will get a new IPv4 `xxx.xxx.xxx.xxx` to access the service.
 
 ### Testing your service
 
