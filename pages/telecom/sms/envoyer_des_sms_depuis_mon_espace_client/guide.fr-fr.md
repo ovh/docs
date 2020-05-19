@@ -6,7 +6,7 @@ legacy_guide_number: g2142
 section: 'Envoyer des SMS'
 ---
 
-**Dernière mise à jour le 18/05/2020**
+**Dernière mise à jour le 19/05/2020**
 
 ## Objectif
 
@@ -18,9 +18,9 @@ Vous pouvez envoyer des SMS directement via votre espace client. Ce guide indiqu
 
 ## En pratique
 
-Connectez-vous à votre [espace client](https://www.ovhtelecom.fr/manager/) puis sélectionnez `Télécom`{.action} (1). Cliquez ensuite sur `SMS`{.action} à gauche (2)  puis choisissez votre compte SMS (3).
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager) puis sélectionnez `Télécom`{.action} (1). Cliquez ensuite sur `SMS`{.action} à gauche (2)  puis choisissez votre compte SMS (3).
 
-Le champ "Envoyer un SMS" (4) est le premier élément disponible dans la liste des actions.
+Le champ « Envoyer un SMS » (4) est le premier élément disponible dans la liste des actions.
 
 ![envoi sms manager](images/sms-send-control-panel01E.png){.thumbnail}
 
@@ -32,15 +32,15 @@ Une fois sur la page d'envoi de SMS, vous disposez de différents paramètres à
 
 Pour l’expéditeur du SMS (1) , vous avez la possibilité de sélectionner soit un numéro court permettant la réponse (uniquement pour les comptes OVHcloud en France), soit un expéditeur alphanumérique. 
 Renseignez ensuite  le numéro du destinataire (2) au format international (+336xxxxxxxx). 
-Pour plus de renseignements sur la création d'un expéditeur, reportez-vous à l'[étape 3: choisir votre expéditeur SMS](https://docs.ovh.com/fr/sms/envoyer_des_sms_depuis_mon_espace_client/#etape-3-choisir-votre-expediteur-sms){.external}.
+Pour plus de renseignements sur la création d'un expéditeur, reportez-vous à l'[étape 3: choisir votre expéditeur SMS](./#etape-3-choisir-votre-expediteur-sms){.external}.
 
 Vous pouvez également envoyer des SMS à plusieurs destinataires. Deux méthodes sont disponibles pour y parvenir :
 
 - Par le biais d'une liste de destinataires au format .csv via le bouton "Gérer les destinataires". 
-Pour plus d'informations, vous pouvez consulter notre [guide sur les listes de destinataires SMS](https://docs.ovh.com/fr/sms/liste_de_destinataire_sms/).
+Pour plus d'informations, vous pouvez consulter notre [guide sur les listes de destinataires SMS](../liste_de_destinataire_sms/).
 
 - Par le biais d'un carnet d'adresses (3) . Celui-ci peut être créé directement via votre espace client, ou être importé via un fichier .csv ou .txt. 
-N'hésitez pas à consulter notre [guide sur les carnets d'adresses SMS](https://docs.ovh.com/fr/sms/gerer_mes_carnets_dadresses_sms/).
+N'hésitez pas à consulter notre [guide sur les carnets d'adresses SMS](../gerer_mes_carnets_dadresses_sms/).
 
 ### Étape 2 : composer votre SMS
 
@@ -114,9 +114,9 @@ Une fois sur la page d'ajout, vous disposez de plusieurs options pour configurer
 >En cas de requête d'un expéditeur au nom d'une société tierce, un document justificatif vous sera demandé. Nous vous invitons dans ce cas à nous transmettre ce document via l'ouverture d'une demande d'assistance dans votre espace client.  La validation des expéditeurs créés manuellement est gratuite et est effectuée sous un à deux jours ouvrés du lundi au vendredi de 08h00 à 20h00.
 >
 
-- **Ajouter des expéditeurs à partir de données personnelles** : Vous pouvez demander un expéditeur se basant sur les coordonnées de votre compte OVH. Une liste déroulante des expéditeurs disponibles s'affichera alors.
+- **Ajouter des expéditeurs à partir de données personnelles** : Vous pouvez demander un expéditeur se basant sur les coordonnées de votre compte OVHcloud. Une liste déroulante des expéditeurs disponibles s'affichera alors.
 
-- **Ajouter des expéditeurs à partir de vos noms de domaines OVH** : Vous pouvez utiliser un nom de domaine disponible dans votre compte OVHcloud en tant qu'expéditeur. Une liste déroulante des expéditeurs disponibles s'affichera alors.
+- **Ajouter des expéditeurs à partir de vos noms de domaines OVHcloud** : Vous pouvez utiliser un nom de domaine disponible dans votre compte OVHcloud en tant qu'expéditeur. Une liste déroulante des expéditeurs disponibles s'affichera alors.
 
 ## Aller plus loin
 
