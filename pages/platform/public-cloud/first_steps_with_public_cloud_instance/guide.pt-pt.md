@@ -48,20 +48,28 @@ Na janela que aparece, poderá:
 - passar de uma faturação à hora para uma faturação mensal (será então emitida uma fatura proporcional à data de mudança).
 
 ![public-cloud](images/edit1.png){.thumbnail}
+
 ![public-cloud](images/edit2.png){.thumbnail}
+
 ![public-cloud](images/edit3.png){.thumbnail}
 
 ### Criar uma cópia de segurança de uma instância
 
 Pode criar uma cópia de segurança de uma instância a partir da página de gestão da mesma.  Para isso, clique nos três pontos situados à direita da instância e selecione a opção `Criar uma cópia de segurança`{.action}. Em seguida, visualizará uma página com toda a informação necessária: 
 
-![public-cloud](images/backup.png){.thumbnail} .
+![public-cloud](images/backup.png){.thumbnail}
 
-Será depois exibida a seguinte informação: ![public-cloud](images/backup1.png){.thumbnail}.
+Será depois exibida a seguinte informação: 
 
-Após confirmar, será exibida a seguinte informação: ![public-cloud](images/backup2.png){.thumbnail}.
+![public-cloud](images/backup1.png){.thumbnail}
 
-Uma vez realizada a cópia de segurança será possível visualizá-la na secção `Cópia de segurança da instância`{.action}: ![public-cloud](images/backup3.png){.thumbnail}.
+Após confirmar, será exibida a seguinte informação: 
+
+![public-cloud](images/backup2.png){.thumbnail}
+
+Uma vez realizada a cópia de segurança será possível visualizá-la na secção `Cópia de segurança da instância`{.action}: 
+
+![public-cloud](images/backup3.png){.thumbnail}
 
 Consulte o nosso manual [Criar uma cópia de segurança de uma instância](../guardar_copia_de_seguridad_de_una_instancia/) para obter ajuda nesta operação. 
 
@@ -73,11 +81,11 @@ Pode agendar uma cópia de segurança automática da instância a partir da pág
 
 Será então exibida a seguinte página: 
 
-![public-cloud](images/backupauto1.png){.thumbnail}.
+![public-cloud](images/backupauto1.png){.thumbnail}
 
 Uma vez selecionada a informação necessária e após ter clicado em Criar, será redirecionado para a página: 
 
-![public-cloud](images/backupauto2.png){.thumbnail}.
+![public-cloud](images/backupauto2.png){.thumbnail}
 
 Poderá consultar a qualquer altura a `Gestão de workflow`{.action} para eliminar o atual processo de criação de uma cópia de segurança automática: 
 
