@@ -1,5 +1,5 @@
 ---
-title: 'Install a CMS manually on your Web Hosting plan'
+title: 'Installing a CMS manually on your Web Hosting plan'
 excerpt: 'Find out more about some of the compatible CMS for Web Hostings'
 id: '1375'
 slug: hosting_install_your_cms_manually
@@ -9,21 +9,21 @@ legacy_guide_number: g1375
 
 **Last updated 4th February 2020**
 
+## Objective
+
+Our Web Hosting services are compatible with some of the most popular content management systems (CMS) which can cover a wide range of use cases.
+
+**This guide explains how to set up your website by manually installing a CMS.**
+
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
 >This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
 >
 
-## Objective
-
-Our Web Hosting services are compatible with some of the most popular content management systems (CMS) which can cover a wide range of use cases.
-
-**Find out how to set up your website by manually installing a CMS.**
-
 ## Requirements
 
-- a Web Hosting plan
+- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
@@ -34,9 +34,8 @@ Our Web Hosting services are compatible with some of the most popular content ma
 >
 >You can install each of these CMS automatically in a few clicks from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). Please read the following guide:
 >
->[Setting up your website with 1-click modules](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules)
+>[Setting up your website with 1-click modules](../web_hosting_web_hosting_modules)
 >
-
 
 
 
@@ -52,11 +51,11 @@ OVHcloud support is not authorised to respond to any questions concerning WordPr
 Please consult the forums dedicated to [WordPress](https://wordpress.org/support/).
 
 
-- WordPress installation guide: [CMS, manually install WordPress](https://docs.ovh.com/gb/en/hosting/cms_manually_install_wordpress)
+- WordPress installation guide: [CMS, manually install WordPress](../cms_manually_install_wordpress)
 
 
 
-![](images/img_3379.jpg){.thumbnail}
+![WordPress](images/img_3379.jpg){.thumbnail}
 
 
 ### Joomla!
@@ -72,11 +71,11 @@ OVHcloud support is not authorised to respond to any questions concerning Joomla
 
 Please consult the dedicated [Joomla!](http://forum.joomla.org/) forums instead. 
 
-- Joomla! installation guide: [CMS, manually install Joomla!](https://docs.ovh.com/gb/en/hosting/cms_manually_install_joomla)
+- Joomla! installation guide: [CMS, manually install Joomla!](../cms_manually_install_joomla)
 
 
 
-![](images/img_3380.jpg){.thumbnail}
+![Joomla](images/img_3380.jpg){.thumbnail}
 
 
 ### PrestaShop
@@ -97,13 +96,13 @@ Please consult the forum dedicated to the
 [PrestaShop solution](https://www.prestashop.com/forums/).
 
 
-- PrestaShop installation guide: [CMS, manually install PrestaShop](https://docs.ovh.com/gb/en/hosting/cms_manually_install_prestashop)
+- PrestaShop installation guide: [CMS, manually install PrestaShop](../cms_manually_install_prestashop)
 
 
 
 
 
-![](images/img_3381.jpg){.thumbnail}
+![PrestaShop](images/img_3381.jpg){.thumbnail}
 
 
 ### Drupal
@@ -116,23 +115,21 @@ OVHcloud support is not authorised to respond to any questions concerning Drupal
 Please consult the forums dedicated to [Drupal](https://www.drupal.org).
 
 
--  Drupal installation guide: [CMS, manually install Drupal](https://docs.ovh.com/gb/en/hosting/cms_manually_install_drupal)
+-  Drupal installation guide: [CMS, manually install Drupal](../cms_manually_install_drupal)
 
 
 
-![](images/img_3382.jpg){.thumbnail}
+![Drupal](images/img_3382.jpg){.thumbnail}
 
 
 
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](../migrating-website-to-ovh/)
 
-[Publishing a website on your Web Hosting space](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external}
+[Publishing a website on your Web Hosting space](../web_hosting_how_to_get_my_website_online/)
 
-[Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}
-
-See our [Web Hosting solutions](https://www.ovh.co.uk/web-hosting/){.external}
+[Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites/)
 
 Join our community of users on <https://community.ovh.com/en/>.

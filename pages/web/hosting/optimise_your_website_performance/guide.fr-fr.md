@@ -10,6 +10,7 @@ section: 'Optimiser son site'
 
 ## Objectif
 
+
 Ce guide est destiné aux clients qui souhaitent améliorer le rendement de leur site web.
 Il vous permettra d’acquérir des connaissances fondamentales au sujet des facteurs qui peuvent affecter le rendement des sites web.
 
