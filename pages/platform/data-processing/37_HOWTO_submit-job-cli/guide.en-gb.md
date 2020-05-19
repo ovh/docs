@@ -1,9 +1,9 @@
 ---
 title: How to submit a job on the Data Processing platform using the CLI
 slug: submit-cli
-excerpt: Find out how to run your Apache Spark job with Data Processing platform using the CLI
+excerpt: Find out how to run your Apache Spark job with the Data Processing platform using the CLI
 section: How to
-order: 6
+order: 7
 ---
 
 **Last updated 15<sup>th</sup> May, 2020**
@@ -21,8 +21,13 @@ To read an introduction about the Data Processing service you can visit [Data Pr
 
 ## Instructions
 
-### Step 1: Download and build the Data Processing CLI
-Download the CLI binary available on [GitHub](https://github.com/ovh/data-processing-spark-submit/releases){.external} and save it as ``ovh-spark-submit``.
+### Step 1: Download the Data Processing CLI
+Download the latest release for your system of the CLI binary available on [GitHub](https://github.com/ovh/data-processing-spark-submit/releases){.external} and save it as ``ovh-spark-submit``.
+If your on Linux or MacOs, you may have to run this command to make it executable:
+
+```shell-session
+chmod u+x ovh-spak-submit
+```
 
 ### Step 2: Set up the configuration.ini file
 To be able to submit a job with your CLI, you must set up some configurations that will allow it to authenticate to the OVHcloud API.
@@ -31,7 +36,7 @@ To do so, you will need an application key, a secret application key and a consu
 You need to add the rights ``GET/POST/PUT`` on the endpoint ``/cloud/project/\*/dataProcessing/\*`` .
 ![Creating API Keys for your script](images/keys.png){.thumbnail}
 
-Once you got your keys, you have to create a new ``configuration.ini`` file in the same directory and complete it with your 3 keys.
+Once you have got your keys, you have to create a new ``configuration.ini`` file in the same directory and complete it with your 3 keys.
 ```
 [ovh]
 ; configuration specific to 'ovh-eu' endpoint as it's the only one available for now
@@ -42,7 +47,7 @@ consumer_key=my_consumer_key
 ```
 
 ### Step 3: Upload your application code to Object Storage
-Before running your job in Data Processing platform, you will need to create a container in OVHcloud Object Storage. 
+Before running your job in the Data Processing platform, you will need to create a container in OVHcloud Object Storage. 
 You can work with your Object Storage using either the OVHcloud Manager or the Openstack Horizon dashboard.
 
 Please see [Creating Storage Containers in Customer Panel](../../storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
@@ -86,16 +91,16 @@ While your job is running, you can watch logs in your terminal or access Spark U
 
 ``https://adc.{region}.dataconvergence.ovh.com/{your-job-id}/jobs/``
 
-At any time, you can stop your job by pressing ``Ctrl+C``. If you do so, the CLI will ask you to confirm that you want to cancel the before killing it.
+At any time, you can stop your job by pressing ``Ctrl+C``. If you do so, the CLI will ask you to confirm that you want to cancel the job before killing it.
 
-If you want to check your result after job has finished, you can download the logs of your job from your Object Storage (see [Checking a job's logs in the Data Processing manager's page](../check-logs)).
+If you want to check your results after job has finished, you can download its logs from your Object Storage (see [Checking a job's logs in the Data Processing manager's page](../check-logs)).
 
 #### Optionally use auto-upload
 If you want to save time when you often need to change your application code, the auto-upload feature of the CLI allows you to upload your code on Object Storage automatically.
+Uploading a file this way into your Object Storage will overwrite previous artefacts with the same name.
+To enable it, you need to update the ``configuration.ini`` file to add the configurations needed for the protocol you want to use.
 
-To enable it, you need to update the configuration.ini file to add the configurations needed for the protocol you want to use.
-
-For now, the only protocol supported is swift. Here is how you should update you configuration.ini file in order to upload your code with this protocol:
+For now, the only protocol supported is OpenStack Swift. Here is how you should update you ``configuration.ini`` file in order to upload your code with this protocol:
 
 ```
 [ovh]
