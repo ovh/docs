@@ -1,90 +1,102 @@
 ---
-title: 'Exchange 2013/2016: configurazione di Thunderbird'
-excerpt: ''
+title: 'Configurare un account Exchange su Thunderbird per Windows'
+excerpt: 'Come configurare un account Exchange sul client di posta Thunderbird per Windows'
 slug: exchange_20132016_configurazione_di_thunderbird
+section: 'Configurazione di un client di posta elettronica Exchange'
 legacy_guide_number: g1278
 ---
 
+**Ultimo aggiornamento: 17/01/2020**
 
-## Parte 1: avvio
-Accedi a Thunderbird.
+## Obiettivo
 
-Se non hai account configurati, si apre questa interfaccia, altrimenti accedi al menu per aggiungere un nuovo account.
+Gli account Exchange possono essere configurati su client di posta compatibili. Thunderbird non è compatibile con il protocollo Exchange MAPI, ma la configurazione può essere effettuata in POP o in IMAP. Nel nostro esempio, un account Hosted Exchange è configurato in IMAP.
 
-Seleziona Posta elettronica per continuare.
+**Come configurare un account Exchange sul client di posta Thunderbird per Windows.**
 
-![](images/img_1127.jpg){.thumbnail}
+> [!warning]
+>
+> OVHcloud mette a tua disposizione servizi di cui tu sei il responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+> 
+> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare uno esperto del settore 
+> o il fornitore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_20132016_configurazione_di_thunderbird/#per_saperne_di_piu_1)
+> di questa guida.
+> 
 
+## Prerequisiti
 
-## Parte 2: avvio
-Per proseguire nell'installazione di un indirizzo mail, seleziona  Vai avanti e utilizza un indirizzo esistente.
+- Disporre di una soluzione [Exchange](https://www.ovh.it/emails/){.external}
+- Aver installato l’applicazione Thunderbird sul proprio dispositivo
+- Disporre delle credenziali associate all’account email da configurare
 
-![](images/img_1128.jpg){.thumbnail}
+## Procedura
 
+### Step 1: avvio
+Una volta avviata l’applicazione Thunderbird sul tuo dispositivo,
 
-## Parte 3: creazione dell'account
-Compila i campi:
+accedi al menu per aggiungere un nuovo account. Seleziona `Posta elettronica`{.action} per continuare.
 
-Nome e cognome: inserisci il nome che vuoi che venga visualizzato.
-
-Indirizzo mail: il tuo indirizzo email.
-
-Password: password che hai scelto nel tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login.html) per questo account Exchange.
-La password deve contenere minimo 8 caratteri di cui almeno 1 numero, 1 lettera e 1 speciale.
-
-Ricorda la password: seleziona questa opzione.
-
-Clicca su Continua per continuare l'installazione.
-
-![](images/img_1129.jpg){.thumbnail}
-
-
-## Parte 4: configurazione avanzata
-Per gli ordini effettuati dal 26/04/2016, per il server Exchange per un'offerta Hosted è: ex2.mail.ovh.net.
-Clicca su Configurazione manuale.
-
-Verifica che questi campi siano compilati correttamente:
-
-Server in entrata: IMAP:
-per un account di tipo Hosted
-nome host del server: ex.mail.ovh.net.
-Porta: 143.
-Cifratura: STARTTLS.
-Autenticazione: password normale.
-
-Server in uscita: SMTP:
-per un account di tipo Hosted
-nome host del server: ex.mail.ovh.net.
-Porta: 587.
-Cifratura: STARTTLS.
-Autenticazione: password normale.
-
-Identificativo: il tuo indirizzo email completo.
-
-Per gli account di tipo Private, inserisci il nome del server che hai scelto durante l'installazione dell'offerta Exchange 2013.
-
-Se l'autenticazione "Password normale" non funziona, puoi inserire anche "NTLM"..
-Clicca su Termina per continuare l'installazione.
-
-![](images/img_2309.jpg){.thumbnail}
+![emails](images/configuration-thunderbird-exchange-step1.png){.thumbnail}
 
 
-## Parte 5: finalizzazione
-Il tuo account Exchange è configurato correttamente in IMAP.
+### Step 2: Crea l'account
+Completa i campi richiesti:
 
-![](images/img_1134.jpg){.thumbnail}
+- Nome e Cognome *Inserisci qui il nome da visualizzare.*
+- Indirizzo di posta elettronica: *Inserisci l’indirizzo email completo.*
+- Password:  *La password definita nel tuo [Spazio Cliente](https://www.ovh.com/manager/web/login.html){.external} per l’account Exchange.*
+- Ricorda password:  *È necessario selezionare questa opzione.*
 
-
-## Impostazione di account sul server in entrata
-Ecco una sintesi delle impostazioni degli account.
-
-Per il server in entrata
-
-![](images/img_1132.jpg){.thumbnail}
+Clicca su `Configurazione manuale`{.action} per continuare l’installazione.
 
 
-## Impostazione di account sul server in uscita
-Per il server in uscita
+![emails](images/configuration-thunderbird-exchange-step2.png){.thumbnail}
 
-![](images/img_1133.jpg){.thumbnail}
 
+### Step 3: Configurazione manuale
+
+> [!primary]
+>
+> Nel nostro esempio, usiamo il nome del server, ad esempio: **X**.mail.ovh.net.
+> 
+> Per recuperare i dati del server accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}, quindi seleziona `Microsoft`{.action}
+>  nella colonna a sinistra. Seleziona `Exchange`{.action}, quindi la tua piattaforma. Il server è visibile nel riquadro **Connessione** della scheda `Informazioni Generali`{.action}
+> 
+
+Dopo aver cliccato su `Configurazione manuale`{.action}, verifica che i dati siano stati inseriti correttamente.
+
+- Server in entrata: **IMAP** 
+- Nome host del server: *indica il server che ospita il il tuo servizio Exchange.*
+- Porta:  **993**
+- Metodo di cifratura:   **SSL**
+- Autenticazione:  **password normale**
+- Server in uscita **SMTP**
+- Nome host del server: *indica il server che ospita il il tuo servizio Exchange.* 
+- Porta:  **587** 
+- Metodo di cifratura:  **STARTTLS** 
+- Autenticazione:  **password normale** 
+- Identificativo: *inserisci l’indirizzo email completo.*
+
+> [!primary]
+>
+> Per gli account di tipo [Private Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_configura_la_tua_soluzione_private_exchange/){.external}, inserisci il nome del server che hai scelto al momento dell’ordine.
+>
+
+Se l’autenticazione **Password normale** non funziona, puoi inserire anche **NTLM**.
+
+Clicca su `Termina`{.action} per continuare l’installazione.
+
+
+![emails](images/configuration-thunderbird-exchange-step3.png){.thumbnail}
+
+
+### Step 4: finalizzazione
+
+Il tuo account Exchange è configurato correttamente in IMAP. Da questo momento, puoi infatti inviare e ricevere messaggi.
+
+OVHcloud propone anche un’applicazione Web con > accessibile utilizzando le credenziali del tuo account.
+
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
