@@ -22,11 +22,15 @@ To read an introduction about the Data Processing service you can visit [Data Pr
 ## Instructions
 
 ### Step 1: Download the Data Processing CLI
-Download the latest release for your system of the CLI binary available on [GitHub](https://github.com/ovh/data-processing-spark-submit/releases){.external} and save it as ``ovh-spark-submit``.
+Download the latest release for your system of the CLI binary available on [GitHub](https://github.com/ovh/data-processing-spark-submit/releases){.external} and save it as ``ovh-spark-submit`` or run this command : 
+```shell-session
+$ export SYSTEM=darwin_386 // or darwin_amd64 or linux_386 or linux_amd64 or windows_386 or windows_amd64
+$ wget -O ovh-spark-submit  https://github.com/ovh/data-processing-spark-submit/releases/download/v1.0.0/ovh-spark-submit_$SYSTEM
+```
 If you are on Linux or MacOs, you may have to run this command to make it executable:
 
 ```shell-session
-chmod u+x ovh-spak-submit
+$ chmod u+x ovh-spark-submit
 ```
 
 ### Step 2: Set up the configuration.ini file
@@ -97,7 +101,7 @@ Where **region** refers to the region you chose to submit your job.
 
 At any time, you can stop your job by pressing ``Ctrl+C``. If you do so, the CLI will ask you to confirm that you want to cancel the job before killing it.
 
-If you want to check your results after the job, you can download its logs from your Object Storage (see [Checking a job's logs in the Data Processing manager's page](../check-logs)).
+If you want to check your results after the job has finished, you can download its logs from your Object Storage (see [Checking a job's logs in the Data Processing manager's page](../check-logs)).
 
 #### Optionally use auto-upload
 If you want to save time when you often need to change your application code, the auto-upload feature of the CLI allows you to upload your code on Object Storage automatically.
