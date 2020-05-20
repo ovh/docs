@@ -87,7 +87,7 @@ For Apache Spark, for example, you will also have to :
 ![Data Processing Engine](images/configure.png){.thumbnail}
 
 > [!warning]
-> The arguments of the application are stored in plane text. It is advised that you store your credentials in configuration files instead of using arguments.
+> The arguments of the application are stored in plain text. It is advised that you store your credentials in configuration files instead of using arguments in the Manager. You need to upload the configuration files in the same Object Storage container that you upload the code so they will be downloaded to the data processing cluster together when you submit the job. 
 
 
 ## Go further

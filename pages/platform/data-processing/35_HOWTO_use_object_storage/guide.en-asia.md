@@ -24,11 +24,16 @@ Samples are based on the well-known WordCount. We will first read data from a te
 The following is an example with only dependencies required for this How to: [environment.yml](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/environment.yml).
 Otherwise, this [How to](../generate-environment) explains how to generate an environment file.
 - The input file 'wordcount.txt' used by the following samples is available [Here](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount.txt).
-You have to upload it in the same Swift container as the one used for Python samples. Please refer to this documentation that explains how to create a Swift container [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/).
+The wordcount.txt file should be uploaded in the container you're using when submitting a job. Please refer to this documentation that explains how to create a Swift container [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/).
 
 ## Read data in the current container with Apache Spark using OpenStack Swift API
 
-Find below the code in Python that reads one object wordcount.txt in the current container and prints the number of occurrences per word.
+Find below the code in Python that:
+
+- reads 'wordcount.txt' object in your OVHcloud Object Storage container
+- prints the result in output log of the job
+
+In this sample, the wordcount.txt should be uploaded to the same container as you uploaded the wordcount.py file. Then Data Processing will download all of the files in this container into the cluster and the wordcount.txt file would be accessible in the python code as a local file. 
 
 Save it in a file called 'wordcount.py' or download it from this repository: [Data Processing Samples - Object Storage](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount.py).
 
@@ -65,7 +70,7 @@ if __name__ == "__main__":
     spark.stop()
 ```
 
-## Read data with Apache Spark using OpenStack Swift S3 API
+## Read and write data with Apache Spark using OpenStack Swift S3 API
 
 Find below the code in Python that:
 
@@ -75,7 +80,7 @@ Find below the code in Python that:
 
 Save it in a file called 'wordcount_s3only.py' or download it from this repository: [Data Processing Samples - Object Storage](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount_s3only.py).
 
-Credentials provided for S3 can concern any OVHcloud Object Storage container.
+Credentials provided for S3 can concern any OVHcloud Object Storage container. In this sample, you can upload the wordcount.txt file in any Object Storage container or account and it is not necessary that you upload it in the same container as the one that you upload the source code. Just you need to generate the proper access key and secret key for that container. (See [How to create EC2 credentials](../../public-cloud/getting_started_with_the_swift_S3_API/){.external} for more details)
 
 ```python
 from __future__ import print_function
@@ -118,7 +123,7 @@ if __name__ == "__main__":
     spark.stop()
 ```
 
-## Read data with Apache Spark using both OpenStack Swift API and its S3 implementation
+## Read data with Apache Spark using OpenStack Swift API and write the result using S3 implementation
 
 Find below the code in Python that:
 
@@ -126,10 +131,14 @@ Find below the code in Python that:
 - stores the number of occurrences per word in Object Storage through its S3 API
 - prints the result in the output log of the job
 
+In this sample, the wordcount.txt should be uploaded to the same container as you uploaded the wordcount.py file. Then Data Processing will download all of the files in this container into the cluster and the wordcount.txt file would be accessible in the python code as a local file. 
+
 Save it in a file called 'wordcount_both.py' or download it from this repository: [Data Processing Samples - Object Storage](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount_both.py).
 
-Credentials provided for S3 can concern any OVHcloud Object Storage container.
-Thus, we can read data from one Swift container and write the result in another container.
+Credentials provided for S3 can concern any OVHcloud Object Storage container. 
+In this sample you need to generate S3 access key and secret key for the destination container in which you would like to write the result. 
+(See [How to create EC2 credentials](../../public-cloud/getting_started_with_the_swift_S3_API/){.external} for more details)
+Thus, you can read data from your Swift container and write the result in another container.
 
 ```python
 from __future__ import print_function

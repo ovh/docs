@@ -11,28 +11,30 @@ order: 6
 ## Objective
 This guide gives you a basic example about using OpenStack Swift and its S3 API with OVHcloud Data Processing using Java.
 
-We will use the OpenStack S3 API to read and write data to Swift Object Storage.
+We will use the OpenStack S3 API to read and write data to OVHcloud Object Storage.
 
-Samples are based on the well-known WordCount. We will first read data from a text file, then count the frequence of each word in this particular file. And the print the result in output log and also write the result in a text file in OVHcloud Swift Object Storage. 
+Samples are based on the well-known WordCount. We will first read data from a text file, then count the occurrences of each word in this particular file. And then print the result in output log and also write the result in a text file in OVHcloud Swift Object Storage. 
 
 ## Requirements
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - An OVHcloud account.
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details).
-- Data Processing activated (see [How to activate the Data Processing](../activation){.external} for details).
+- Data Processing activated (see [How to activate the Data Processing service](../activation){.external} for details).
 - The input file 'novel.txt' used by the following samples is available [Here](https://github.com/ovh/data-processing-samples/tree/master/java_wordCount_S3/novel.txt){.external}.
-You have to upload it in an Object Storage container. (see [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/){.external} to read more about how to create an OVHcloud Object Storage container).
-- OVHcloud Object Storage "secret key" and "access key" for the container that you have uploaded the 'novel.txt' text file. (See [How to create EC2 credentials](../../public-cloud/getting_started_with_the_swift_S3_API/){.external} for more details).
+You have to upload it in an Object Storage container. (see [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/){.external} to read more about how to create an OVHcloud Object Storage container). In this example, we created a container named 'textfile" and uploaded the novel.txt object into that container. 
+- OVHcloud Object Storage "secret key" and "access key" for the container that you have uploaded the 'novel.txt' text file (textfile container in this example). (See [How to create EC2 credentials](../../public-cloud/getting_started_with_the_swift_S3_API/){.external} for more details).
 
 ## Read/Write data with Apache Spark using OpenStack Swift S3 API in Java
 
 Find below the code in Java that:
 
-- reads one object 'novel.txt' in OVHcloud Object Storage through its S3 API
-- stores the number of occurrences per word in OVHcloud Object Storage through its S3 API
-- prints the results in output log of the job 
+- reads 'novel.txt' object in OVHcloud Object Storage through its S3 API
+- stores the results in the OVHcloud Object Storage through its S3 API
+- prints the results in the output log of the job 
 
-This code in Java reads one object novel.txt that is uploaded into a conainer named `textfile` and prints the number of occurrences per word. You need to create a jar file from your Java code and upload it in your OVHcloud Object Storage as well. This jar file and novel.txt can be uploaded in different containers or even in different cloud projects or OVHcloud accounts. Then the program will write the result in another text file named `result.txt` in the same container that novel.txt have been uploaded.  
+This code in Java reads one object novel.txt that is uploaded into a container named `textfile` and prints the number of occurrences per word in output logs of the job. As it is mentioned in requirements, we created a container named textfile and uploaded the novel.txt object into that container. 
+
+You need to create a jar file from your Java code and upload it in your OVHcloud Object Storage as well. This jar file and novel.txt can be uploaded in separated containers or even in different cloud projects or OVHcloud accounts. Also this program will write the result in another text file named `result.txt` in the same container that novel.txt have been uploaded.  
 
 JavaWordCount.java :
 ```java
@@ -52,8 +54,8 @@ public final class JavaWordCount {
 
     public static void main(String[] args) throws Exception {
 
-        String myAccessKey = "put your S3 access key here";
-        String mySecretKey = "<put your S3 secret key here";
+        String myAccessKey = "7decf61921524a6b828c9305a77bb201";
+        String mySecretKey = "9e9c50f2ff514fc3bdc5f98e61bec81f";
         String bucket = "textfile";
         String filepath = "novel.txt";
         String filepath_result = "result.txt"; 
@@ -84,7 +86,7 @@ public final class JavaWordCount {
 }
 ```
 
-To package this java code and create a jar file you need to create a pom.xml file and build with Maven software with command `mvn package`: 
+One way to package this java code and create a jar file, is to create a pom.xml file and build with Maven software with command `mvn package`. You can use this pom.xml file for example: 
 
 pom.xml :
 ```xml 
@@ -176,7 +178,7 @@ pom.xml :
 ```
 
 > [!warning]
-> Everything in OVHcloud object storage container in which you uploaded your code, will be downloaded to the Spark cluster. If you have big volume of data, the best practice is to put your data in a separated Object Storage container. 
+> Everything in OVHcloud object storage container in which you uploaded your code, will be downloaded to the Data Processing cluster. If you have big volume of data, the best practice is to put your data in a separated Object Storage container. 
 
 
 You can find the source code of this project in OVHcloud github repository in this address: [ovh/data-processing-samples](https://github.com/ovh/data-processing-samples/tree/master/){.external}
