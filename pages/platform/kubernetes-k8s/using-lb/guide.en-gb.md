@@ -40,7 +40,7 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 ## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
 
-When you begin to use Kubernetes for real applications, one of the first questions if how to get external traffic into your cluster. The [official doc](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types){.external} gives you a good but rather dry explanation on the topic, but here we are trying to explain the concepts in a minimal, need-to-know way.
+When you begin to use Kubernetes for real applications, one of the first questions is how to get external traffic into your cluster. The [official doc](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types){.external} gives you a good but rather dry explanation on the topic, but here we are trying to explain the concepts in a minimal, need-to-know way.
 
 There are several ways to route the external traffic into your cluster:
 
@@ -62,7 +62,7 @@ This method isn't suited for a production environment, but it's interesting for 
 
 ### Exposing services as NodePort
 
-Declaring a service of type `NodePort` exposes the `Service` on each Node’s IP at a static port, the `NodePort` (a fixed port for that `Service`, in the default range of 30000-32767). You can then access the `Service` from the outside of the cluster by requesting `<NodeIp>:<NodePort>`. Every service you deploy as `NodePort` will ve exposed in its own port, on every Node.
+Declaring a service of type `NodePort` exposes the `Service` on each Node’s IP at a static port, the `NodePort` (a fixed port for that `Service`, in the default range of 30000-32767). You can then access the `Service` from the outside of the cluster by requesting `<NodeIp>:<NodePort>`. Every service you deploy as `NodePort` will be exposed in its own port, on every Node.
 
 ![NodePort](images/using-lb-NodePort.jpg){.thumbnail}
 

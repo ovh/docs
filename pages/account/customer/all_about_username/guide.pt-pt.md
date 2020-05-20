@@ -61,7 +61,7 @@ O seu identificador de cliente está presente em todas as suas faturas, no canto
 
 Pode encontrar o seu identificador na Área de Cliente. Para isso, clique no seu nome, no canto superior direito.
 
-![identificador de cliente](images/newhub1.png.png){.thumbnail}
+![identificador de cliente](images/newhub1.png){.thumbnail}
 
 
 ## Como aceder à Área de Cliente?

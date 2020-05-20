@@ -18,7 +18,7 @@ Bei OVHcloud haben Sie die Möglichkeit, Benutzer zu erstellen und diesen Lese- 
 > Bei der Kontaktverwaltung hingegen geht es darum, die vollständige Verwaltung der administrativen, technischen oder rechnungsrelevanten Aspekte eines oder mehrerer Dienste Ihres OVHcloud Accounts auf eine andere Person zu übertragen. Für weitere Informationen zur Verwaltung der Kontakte lesen Sie [diese Anleitung](../verwaltung-der-kontakte/).
 >
 
-**Diese Anleitung erlärt, über welche Rechte ein Benutzer verfügen kann und wie Sie Benutzer hinzufügen und verwalten.**
+**Diese Anleitung erklärt, über welche Rechte ein Benutzer verfügen kann und wie Sie Benutzer hinzufügen und verwalten.**
 
 ## Voraussetzungen
 
