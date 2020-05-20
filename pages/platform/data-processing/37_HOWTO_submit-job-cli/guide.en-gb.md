@@ -87,9 +87,13 @@ If you want to know more about these parameters run:
 $ ./ovh-spark-submit -h
 ```
 
+If you don't know how to set these parameters values, please refer to the page [How to fill the job submit form in the Data Processing page from the OVHcloud Manager](../job-submit-form){.external})
+
 While your job is running, you can watch logs in your terminal or access Spark UI through this URL: 
 
 ``https://adc.{region}.dataconvergence.ovh.com/{your-job-id}/jobs/``
+
+Where **region** refers to the region you chose to submit your job.
 
 At any time, you can stop your job by pressing ``Ctrl+C``. If you do so, the CLI will ask you to confirm that you want to cancel the job before killing it.
 
