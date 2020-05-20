@@ -5,7 +5,7 @@ excerpt: 'Cómo gestionar los pedidos en OVHcloud'
 section: 'Pedidos, facturas y servicios'
 ---
 
-**Última actualización: 16/04/2020**
+**Última actualización: 20/05/2020**
 
 ## Objetivo
 
@@ -28,22 +28,22 @@ En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 ### La orden de pedido
 
-La orden de pedido es el documento que se genera al realizar un pedido en OVH y que recoge los productos, su precio y los posibles descuentos que se hayan aplicado. A continuación se explican los distintos elementos que la componen:
+La orden de pedido es el documento que se genera al realizar un pedido en OVHcloud y que recoge los productos, su precio y los posibles descuentos que se hayan aplicado. A continuación se explican los distintos elementos que la componen:
 
-![Orden de pedido de OVH](images/order_ovh.png){.thumbnail}
+![Orden de pedido de OVHcloud](images/order01.png){.thumbnail}
 
 |Número|Descripción|
 |---|---|
 |1|Aquí se indica la información relativa a la orden de pedido: el número, la fecha de creación y la fecha de expiración. Tenga en cuenta que las órdenes de pedido que hayan expirado no aparecerán en el área de cliente.|
-|2|Si realiza el pedido desde el área de cliente, en este apartado aparecerá el contacto de facturación. Para más información sobre los distintos contactos, consulte [esta guía](https://docs.ovh.com/es/customer/gestion-de-los-contactos/){.external}.|
+|2|Si realiza el pedido desde el área de cliente, en este apartado aparecerá el contacto de facturación. Para más información sobre los distintos contactos, consulte [esta guía](../../customer/gestion-de-los-contactos/){.external}.|
 |3|Si ha configurado en el área de cliente una forma de pago por defecto, esta se indicará en este apartado. Le recordamos que es necesario configurar una forma de pago por defecto para activar la renovación automática.|
 |4|En este apartado se incluyen las formas de pago disponibles. Tenga en cuenta que solo aparecen las formas de pago autorizadas en el país de origen de la cuenta o las asociadas al tipo de cuenta.|
 
 
-En cualquier momento puede ver las órdenes de pedido desde el área de cliente de OVH como se explica a continuación.
+En cualquier momento puede ver las órdenes de pedido desde el área de cliente de OVHcloud como se explica a continuación.
 
 
-### Acceder a las órdenes de pedido desde el área de cliente de OVH
+### Acceder a las órdenes de pedido desde el área de cliente de OVHcloud
 
 Para gestionar sus pedidos, haga clic en su `Panel de control` en la esquina superior izquierda del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y seleccione `Ver mis pedidos`{.action}.
 
@@ -51,7 +51,7 @@ Para gestionar sus pedidos, haga clic en su `Panel de control` en la esquina sup
 
 Se mostrarán todos los pedidos realizados con su cuenta de OVHcloud que no hayan expirado.
 
-![Mis pedidos](images/order_recap.png){.thumbnail} 
+![Mis pedidos](images/order03.png){.thumbnail} 
 
 
 En la tabla podrá ver los siguientes datos:
@@ -72,22 +72,31 @@ Estos son los posibles estados de una orden de pedido:
 
 Si el estado del pedido es «Entregando...» o «Pago no recibido», podrá ver la orden de pedido haciendo clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccionando la opción `Ver la orden de pedido en formato HTML`{.action}.
 
-![Mis pedidos](images/html_order.png){.thumbnail} 
+![Mis pedidos](images/order04.png){.thumbnail} 
 
+### Seguimiento de su pedido.
+
+Una vez generado el pedido, puede realizar su seguimiento desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en su `Panel de control`, luego en `Ver mis pedidos`{.action} y, por último, en `...`{.action} delante del pedido. Seleccione `Seguimiento de los pedidos`{.action}. También puede visualizar el seguimiento del pedido haciendo clic en el estado de un pedido en la columna «Estado».
+
+![Seguimiento de los pedidos](images/order05b.png){.thumbnail}
+
+La siguiente ventana se abre para permitirle hacer el seguimiento en cuatro pasos. 
+
+![Seguimiento de los pedidos](images/order06.png){.thumbnail}
 
 ### Ejercer el derecho de desistimiento
 
-La cláusula 14.1 de nuestras [Condiciones Generales del Servicio](https://www.ovh.es/soporte/documentos_legales/CondicionesGeneralesServicio.pdf){.action} establece que «los clientes que conforme a la legislación española en vigor tengan la consideración de consumidores y usuarios, y siempre que las características del producto o servicio contratado lo hiciesen posible, podrán ejercer su derecho de desistimiento durante los primeros 14 días naturales desde la contratación del producto o servicio correspondiente».
+La cláusula 14.1 de nuestras [Condiciones Generales del Servicio](https://www.ovh.es/soporte/documentos_legales/CondicionesGeneralesServicio.pdf){.external} establece que «los clientes que conforme a la legislación española en vigor tengan la consideración de consumidores y usuarios, y siempre que las características del producto o servicio contratado lo hiciesen posible, podrán ejercer su derecho de desistimiento durante los primeros 14 días naturales desde la contratación del producto o servicio correspondiente».
 
 Encontrará más información sobre cómo ejercer dicho derecho en los siguientes párrafos de dichas Condiciones.
 
-Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, [acceda a las órdenes de pedido](https://docs.ovh.com/es/billing/gestionar-los-pedidos-en-ovh/#acceder-a-las-ordenes-de-pedido-desde-el-area-de-cliente-de-ovh){.external}, haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Cancelar el pedido`{.action}.
+Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, [acceda a las órdenes de pedido](./#acceder-a-las-ordenes-de-pedido-desde-el-area-de-cliente-de-ovhcloud){.external}, haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Cancelar el pedido`{.action}.
 
-![Cancelar un pedido](images/cancel_order.png){.thumbnail}
+![Cancelar un pedido](images/cancelorder1.png){.thumbnail}
 
 Por último, marque la casilla `Sí, quiero cancelar el pedido`{.action} y confirme.
 
-![Confirmación de la cancelación](images/cancellation_validation.png){.thumbnail}
+![Confirmación de la cancelación](images/cancelorder2.png){.thumbnail}
 
 
 > [!primary]

@@ -60,8 +60,7 @@ Ihre Kundenkennung steht oben rechts auf allen Ihren Rechnungen.
 
 Um Ihre Kundenkennung im Kundencenter einzusehen, klicken Sie oben rechts auf Ihren Namen.
 
-
-![Kundenkennung](images/nichandle02.png){.thumbnail}
+![Kundenkennung](images/newhub1.png){.thumbnail}
 
 
 ## Wie kann ich mich in meinem Kundencenter einloggen?
@@ -94,7 +93,7 @@ Wenn Sie keine Backup-Adresse angegeben haben oder diese ebenfalls nicht verfüg
 
 Sie können Ihre Account-Daten im Kundencenter ändern. Klicken Sie hierzu rechts oben in Ihrem Kundencenter auf Ihren Namen und dann auf Ihre Initialen.
 
-![Kundenkennung](images/nichandle05.png){.thumbnail}
+![Kundenkennung](images/newhub2.png){.thumbnail}
 
 Klicken Sie dann im Bereich „Mein Profil“ auf `...`{.action} und anschließend auf `Profil bearbeiten`{.action}.
 

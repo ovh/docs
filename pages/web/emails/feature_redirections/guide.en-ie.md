@@ -36,7 +36,7 @@ There are two types of redirection:
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovh.co.uk/web-hosting/), the [free Start 10M hosting plan](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml), or ordered separately as a standalone solution
+- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovh.ie/web-hosting/), the [free Start 10M hosting plan](https://www.ovh.ie/domains/start10m_hosting_offer.xml), or ordered separately as a standalone solution
 
 ## Instructions
 
@@ -84,12 +84,12 @@ Then click `Confirm`{.action} to add this redirection.
 
 For the new version of MX Plan, redirections are not managed via the OVHcloud Control Panel. They are managed directly via the webmail platform for the email address concerned.
 
-Go to the webmail platform [here](https://www.ovh.co.uk/mail/). Enter the **email address** and **password** to log in.
+Go to the webmail platform [here](https://www.ovh.ie/mail/){.external}. Enter the **email address** and **password** to log in.
 ![emails](images/webmail.png){.thumbnail}
 
 #### Step 1: Access the section for managing redirections.
 
-Once you have logged in via the [webmail platform](https://www.ovh.co.uk/mail/), click on the cogwheel icon in the top right-hand corner, then `Options`{.action}.
+Once you have logged in via the [webmail platform](https://www.ovh.ie/mail/){.external}, click on the cogwheel icon in the top right-hand corner, then `Options`{.action}.
 
 ![emails](images/mxplan-new-1.png){.thumbnail}
 From the **Options** window in the left-hand corner, go to the **Automatic processing** category in the **Mail** section, then click `Inbox and sweep rules`{.action}. 
@@ -114,11 +114,11 @@ In this window, you can define the rules necessary for creating a redirection:
 
 ![emails](images/mxplan-new-4.png){.thumbnail}
 
-In our example, we are setting a **redirection with a local copy** (see [diagram 2](./#overview) at the beginning of this guide). If this is what you need, click `OK`{.action} (floppy disk icon) in the top left-hand corner, and the rule will be applied. If you do not want to do this, skip to the next step.
+In our example, we are setting a **redirection with a local copy** (see [diagram 2](./#overview){.external} at the beginning of this guide). If this is what you need, click `OK`{.action} (floppy disk icon) in the top left-hand corner, and the rule will be applied. If you do not want to do this, skip to the next step.
 
 
 
-To apply a **simple redirection** ([diagram 1](./#overview) at the beginning of this guide), add an extra rule to your **redirection with a local copy** in this window. Click `Add an action`{.action} (box 1), then **Move, copy or delete** — then **delete the message**. This rule directly moves the email into the trash folder, once the email has been redirected to the redirection email address.
+To apply a **simple redirection** ([diagram 1](./#overview){.external} at the beginning of this guide), add an extra rule to your **redirection with a local copy** in this window. Click `Add an action`{.action} (box 1), then **Move, copy or delete** — then **delete the message**. This rule directly moves the email into the trash folder, once the email has been redirected to the redirection email address.
 
 ![emails](images/mxplan-new-5.png){.thumbnail}
 

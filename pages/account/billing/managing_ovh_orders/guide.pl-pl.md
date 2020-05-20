@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak zarządzać zamówieniami na usługi w OVHcloud'
 section: 'Zamówienia, faktury i usługi'
 ---
 
-**Ostatnia aktualizacja z dnia 16-04-2020**
+**Ostatnia aktualizacja z dnia 20-05-2020**
 
 ## Wprowadzenie
 
@@ -30,12 +30,12 @@ Zamówienie w OVHcloud przechodzi przez kilka etapów, które możesz śledzić 
 
 Formularz zamówienia tworzony jest na ostatnim etapie składania zamówienia. Wyszczególnione są na nim zamówione produkty, ich cena i ewentualne naliczone rabaty.
 
-![Bon de commande OVH](images/order_ovh.png){.thumbnail}
+![Bon de commande OVH](images/order01.png){.thumbnail}
 
 |Numer|Opis |
 |---|---|
 |1|Wszystkie informacje związane z zamówieniem znajdują się tutaj: numer, data utworzenia oraz data wygaśnięcia. Pamiętaj, że wszystkie nieopłacone zamówienia, których ważność wygasła nie będą się wyświetlały w Twoim Panelu klienta.|
-|2|Jeśli jesteś zalogowany do Panelu klienta podczas składania zamówienia, w tym miejscu pojawi się kontakt księgowy. Jeśli chcesz dowiedzieć się więcej o poszczególnych kontaktach, zapoznaj się z [tą dokumentacją](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/){.external}.|
+|2|Jeśli jesteś zalogowany do Panelu klienta podczas składania zamówienia, w tym miejscu pojawi się kontakt księgowy. Jeśli chcesz dowiedzieć się więcej o poszczególnych kontaktach, zapoznaj się z [tą dokumentacją](../../customer/zarzadzanie_kontaktami/){.external}.|
 |3|Jeśli zarejestrowałeś domyślną metodę płatności, zostanie Ci ona zaproponowana w tym miejscu. W przypadku automatycznego odnawiania usług zarejestrowanie domyślnej metody płatności jest konieczne.|
 |4|Tutaj znajdziesz dostępne metody płatności. Zostaną Ci zaproponowane jedynie metody płatności akceptowane w kraju, w którym zostało zarejestrowane konto lub metody związane z typem zarejestrowanego konta.|
 
@@ -51,7 +51,7 @@ Aby uzyskać dostęp do panelu zarządzania zamówieniami, kliknij `Dashboard` w
 
 Wyświetli się strona z listą złożonych w ramach Twojego konta zamówień, których ważność nie wygasła.
 
-![Podsumowanie zamówień](images/order_recap.png){.thumbnail}
+![Podsumowanie zamówień](images/order03.png){.thumbnail}
 
 
 W podsumowaniu znajdziesz następujące informacje:
@@ -74,22 +74,32 @@ Możesz wyświetlić zamówienie, które ma status „dostarczanie w trakcie” 
 
 ![Podsumowanie zamówień](images/html_order.png){.thumbnail}
 
+### Śledzenie zamówienia
+
+Po wygenerowaniu formularza zamówienia możesz je śledzić z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij na `Dashboard`{.action}, a następnie na `Wyświetl moje zamówienia`{action} i wreszcie na `...`{.action} obok Twojego zamówienia. Wybierz `Informacje o zamówieniu`{.action}. Aby śledzić zamówienie, możesz też kliknąć jego stan w kolumnie „Status”.
+
+![Informacje o zamówieniu](images/order05b.png){.thumbnail}
+
+Pojawi się poniższe okienko umożliwiające śledzenie zamówienia w 4 krokach. 
+
+![Informacje o zamówieniu](images/order06.png){.thumbnail}
+
 
 ### Korzystanie z prawa do odstąpienia od umowy
 
-Artykuł 5 punkt 8 [Regulaminów OVHcloud](https://www.ovh.pl/pomoc/regulaminy/){.action} stanowi, że *Użytkownik, będący konsumentem może odstąpić od umowy bez podania przyczyny, składając stosowne oświadczenie na piśmie w ciągu 10 dni od dnia zawarcia umowy świadczenia usługi. Do zachowania tego terminu wystarczy przesłanie oświadczenia w tym terminie.*
+Artykuł 5 punkt 8 [Regulaminów OVHcloud](https://www.ovh.pl/pomoc/regulaminy/){.external} stanowi, że *Użytkownik, będący konsumentem może odstąpić od umowy bez podania przyczyny, składając stosowne oświadczenie na piśmie w ciągu 10 dni od dnia zawarcia umowy świadczenia usługi. Do zachowania tego terminu wystarczy przesłanie oświadczenia w tym terminie.*
 
 Opcję skorzystania z prawa do odstąpienia od umowy znajdziesz w dalszym ciągu tego artykułu.
 
 **Poniższa opcja nie jest dostępna dla klientów polskich:**
 
-Jeśli warunki dotyczące terminu odstąpienia od umowy są spełnione, możesz skorzystać z prawa odstąpienia od umowy bezpośrednio w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. W tym celu wykonaj takie same czynności, jak w przypadku wyświetlenia zamówienia, jednak zamiast wybrać `Wyświetl zamówienie w formacie HTML`{.action}, wybierz `Anuluj zamówienie`{.action}.
+Jeśli warunki dotyczące terminu odstąpienia od umowy są spełnione, możesz skorzystać z prawa odstąpienia od umowy bezpośrednio w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. W tym celu wykonaj takie same czynności, jak w przypadku wyświetlenia zamówienia, jednak zamiast wybrać `Informacje o zamówieniu`{.action}, wybierz `Anuluj zamówienie`{.action}.
 
-![Anulowanie zamówienia](images/cancel_order.png){.thumbnail}
+![Anulowanie zamówienia](images/cancelorder1.png){.thumbnail}
 
 Zaznacz kratkę `Tak, chcę anulować to zamówienie`{.action}, po czym zatwierdź tę operację.
 
-![Potwierdzenie anulowania zamówienia](images/cancellation_validation.png){.thumbnail}
+![Potwierdzenie anulowania zamówienia](images/cancelorder2.png){.thumbnail}
 
 
 > [!primary]

@@ -1,115 +1,128 @@
 ---
-title: 'Webhosting E-Mail: Anleitung zum Einrichten einer Mail-Weiterleitung'
-excerpt: 'Webhosting E-Mail: Anleitung zum Einrichten einer Mail-Weiterleitung'
+title: 'E-Mail-Weiterleitungen verwenden'
+excerpt: 'Erfahren Sie hier, wie Sie Ihre E-Mail-Weiterleitungen verwalten'
 slug: webhosting_e-mail_anleitung_zum_einrichten_einer_mail-weiterleitung
 section: 'E-Mail Account Funktionen'
 order: 1
 legacy_guide_number: g2001
 ---
 
-## Was ist eigentlich eine Mail-Umleitung?
-Mit einer Mail-Umleitung können Sie E-Mails, die Sie auf einer bestimmten Mail-Adresse empfangen, direkt an eine oder mehrere andere Adresse(n) schicken.
+**Letzte Aktualisierung am 20.05.2020**
 
-Sie können also beispielsweise
+## Ziel
 
-- eine E-Mail, die an Ihre Adresse MeineAdresse@MeineDomain.com geschickt wurde,
-- automatisch weiterleiten an MeineAndereAdresse@AndereDomain.com.
+In dieser Anleitung erhalten Sie Informationen und Hilfen zur Konfiguration Ihrer E-Mail-Weiterleitungen, um zum Beispiel an eine E-Mail-Adresse A empfangene E-Mails an eine Adresse B weiterzuleiten.
 
+## Definition
 
-So können Sie die erste Adresse (MeineAdresse@MeineDomain.com) öffentlich mitteilen, ohne dass jemand Ihre eigentlich verwendete Adresse erfährt(MeineAndereAdresse@AndereDomain.com).
+### Was ist eine E-Mail-Weiterleitung?
 
-Sie können eingehende Nachrichten auch an mehrere Adressen umleiten. Gleichzeitig können Sie auch festlegen, dass immer eine Kopie der umgeleiteten Nachricht in Ihrem ersten Postfach gespeichert wird.
+Mit einer Weiterleitung können E-Mails, die mit einer Adresse empfangen wurden, zu einer oder mehreren anderen Adressen umgeleitet werden.
 
-Jede Mail, die an eine Adresse gesendet wird, für die eine Umleitung eingerichtet ist, wird an die von Ihnen gewählte(n) Adresse(n) umgeleitet, ohne dass der Absender davon etwas erfährt.
+Zum Beispiel möchten Sie vielleicht, dass E-Mails, die an **public@mydomain.com** versendet werden, an **private@otherdomain.com** weitergeleitet werden. Auf diese Weise können Sie dem Absender die erste Adresse (**public@mydomain.com**) geben, ohne dass dieser Ihre echte Adresse (**private@otherdomain.com**) erfährt.
 
-![](images/img_3339.jpg){.thumbnail}
+Es gibt zwei Arten von Weiterleitungen: 
 
+- einfache Weiterleitung (Schema 1): Die E-Mail wird direkt an die Weiterleitungsadresse versendet, der ursprüngliche Empfänger erhält die E-Mail nicht. 
+
+- Weiterleitung mit lokaler Kopie (Schema 2): Die E-Mail wird sowohl an den ursprünglichen Empfänger als auch an die Weiterleitungsadresse übertragen.
+
+![E-Mails](images/schema-redirect.png){.thumbnail}
+
+> [!primary]
+>
+> Es ist auch möglich, eine Weiterleitung an mehrere E-Mail-Adressen einzurichten.
 
 ## Voraussetzungen
 
-- Zugang zu Ihrem [OVH Kundencenter](https://www.ovh.com/manager/web/login/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie besitzen ein MX Plan Angebot, verfügbar mit einer [Webhosting](https://www.ovh.de/hosting/) Lösung, dem [kostenlosen Start 10M Hosting](https://www.ovh.de/domains/angebot_hosting_start10m.xml) oder separat bestellbar.
 
-Falls Sie die Zugangsinformationen zu Ihrem Kundencenter nicht mehr haben, kann Ihnen [diese Anleitung](https://www.ovh.de/g1909.mutualise_gerer_et_acceder_a_ses_mots_de_passe#les_differents_mots_de_passe_lies_au_service_mutualise_dovh_lacces_au_manager_dovh) weiterhelfen.
+## In der praktischen Anwendung
 
+Je nach Aktivierungsdatum Ihres MX Plan Angebots, oder falls [dieses vor Kurzem migriert wurde](https://www.ovh.de/mxplan-migration/), verfügen Sie entweder über die historische oder die neue Version des Angebots. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion. 
 
-- Wenn Sie bereits OVH Postfächer verwenden, können Sie sofort zum nächsten Schritt übergehen.
+Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und gehen Sie in den Bereich „Web“. Klicken Sie im linken Menü auf `E-Mails`{.action} und wählen Sie den Namen Ihres Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
 
-- Falls Sie bisher kein Mailing-Angebot verwenden, lesen Sie zunächst folgende Anleitung:[]({legacy}2012).
+|Historische MX Plan Version|Neue MX Plan Version|
+|---|---|
+|![E-Mail](images/mxplan-starter-legacy.png){.thumbnail}<br> Ihr Angebot steht in der Box „Abo“.|![E-Mail](images/mxplan-starter-new.png){.thumbnail}<br>Die `Server-Referenz` steht in der Box „Zusammenfassung“.|
+|Weiter zur [historischen MX Plan Version](./#historische-mx-plan-version)|Weiter zur [neuen MX Plan Version](./#neue-mx-plan-version_1)|
 
+### Historische MX Plan Version
 
+#### Schritt 1: Auf die Verwaltung der Weiterleitungen zugreifen
+Wenn Sie Ihr MX Plan Angebot aufrufen, gelangen Sie zuerst zum Tab `Allgemeine Informationen`{.action}. Klicken Sie auf den Tab `E-Mails`{.action} und dann rechts auf den Button `Verwaltung der Weiterleitungen`{.action}.
 
-
-## Wo kann ich Mail-Umleitungen konfigurieren?
-Loggen Sie sich zunächst in Ihr [Kundencenter](https://www.ovh.com/manager/web/login/) ein.
-
-Klicken Sie dann im Menü links auf E-Mails.
-
-![](images/img_3334.jpg){.thumbnail}
-Wählen Sie aus der Liste Ihrer Domainnamen denjenigen aus, für den Sie eine Mail-Umleitung einrichten wollen.
-
-Falls der von Ihnen gewünschte Domainname in der Liste nicht aufgeführt ist, verfügt er nicht über ein Mailing-Angebot. In diesem Fall können Sie den Anweisungen in [dieser Anleitung](https://www.ovh.de/g1864.commander_un_mx_plan) folgen oder in Ihrem Kundencenter auf "Ein MX Plan Paket bestellen" klicken, bevor Sie fortfahren.
-
-![](images/img_3332.jpg){.thumbnail}
-Wenn Sie auf den gewünschten Domainnamen klicken, kommen Sie in den E-Mail-Bereich.
-
-Bleiben Sie im ersten Tab E-Mails und klicken Sie rechts auf den Button "Verwaltung der Weiterleitungen".
-
-Hier sehen Sie nun eine Liste der aktiven Mail-Umleitungen und können auch neue erstellen.
-
-![](images/img_3333.jpg){.thumbnail}
+![E-Mails](images/mxplan-legacy-1.png){.thumbnail}
 
 
-## Eine Weiterleitung hinzufügen
-Sie sehen in Ihrem Kundencenter aktuell Folgendes:
+#### Schritt 2: Weiterleitung hinzufügen
 
-In der Mitte befindet sich eine Liste Ihrer aktiven Weiterleitungen.
-Rechts sehen Sie den Button "Eine Weiterleitung hinzufügen", mit dem Sie neue Umleitungen einrichten können.
+Es wird eine Tabelle mit bereits aktiven Weiterleitungen angezeigt. Klicken Sie rechts auf den Button `Weiterleitung hinzufügen`{.action}.
 
-![](images/img_3336.jpg){.thumbnail}
-Folgende drei Angaben sind zum Einrichten einer Umleitung notwendig:
+![E-Mails](images/mxplan-legacy-2.png){.thumbnail}
+
+Vervollständigen Sie die folgenden 3 Einstellungen:
+
+|Information|Beschreibung| 
+|---|---|  
+|Von der Adresse |Geben Sie hier die Adresse ein, die Sie umleiten möchten.|  
+|Zur Adresse|Geben Sie hier die Zieladresse der Weiterleitung ein. Hierbei kann es sich um eine Ihrer OVHcloud E-Mail-Adressen oder eine externe Adresse handeln.|
+|Wählen Sie einen Kopiermodus aus|Wählen Sie die gewünschte Option aus: <br> - **Eine Kopie der Mail bei OVHcloud aufbewahren** (Sie erhalten die E-Mail auf Ihrer Haupt-E-Mail-Adresse sowie auf der Weiterleitungsadresse.) <br> - **Keine Kopie der Mail aufbewahren** (Die E-Mail wird direkt an die Weiterleitungsadresse versendet, ohne dass die Hauptadresse die E-Mail empfängt.) <br> *vgl. [Schema](./#definition){.external} am Anfang der Anleitung.*|
+
+Klicken Sie anschließend auf `Bestätigen`{.action}, um das Hinzufügen der Weiterleitung zu bestätigen.
+
+![E-Mails](images/mxplan-legacy-3.png){.thumbnail}
+
+> [!primary]
+> Wenn Sie den Kopiermodus „**Eine Kopie der Mail bei OVHcloud aufbewahren**“ auswählen, wird in der Liste der Weiterleitungen automatisch eine Weiterleitung von der ursprünglichen E-Mail-Adresse zu sich selbst erstellt; diese stellt die lokale Kopie dar.
+> 
+
+### Neue MX Plan Version
+
+Bei der neuen MX Plan Version wird die Verwaltung der Weiterleitungen nicht im Kundencenter sondern direkt im Webmail der betreffenden E-Mail-Adresse vorgenommen.
+
+Gehen Sie hierzu zum [Webmail](https://www.ovh.com/de/mail/). Geben Sie die **E-Mail-Adresse** und das **Passwort** ein, um sich einzuloggen.
+![E-Mails](images/webmail.png){.thumbnail}
+
+#### Schritt 1: Auf die Verwaltung der Weiterleitungen zugreifen
+
+Nachdem Sie sich via [Webmail](https://www.ovh.com/de/mail/) in Ihrem E-Mail-Account eingeloggt haben, klicken Sie oben rechts auf das Zahnrad-Symbol und dann auf `Optionen`{.action}.
+
+![E-Mails](images/mxplan-new-1.png){.thumbnail}
+Vom Fenster **Optionen** im linken Menü, gehen Sie im Bereich **Mail** zur Kategorie **Automatische Verarbeitung** und klicken Sie dann auf `Posteingangs- und Aufräumregeln`{.action}. 
+
+![E-Mails](images/mxplan-new-2.png){.thumbnail}
+
+In diesem Fenster können Sie Ihre Weiterleitungen verwalten und Filter für alle eingehenden E-Mails einrichten.
+
+#### Schritt 2: Weiterleitung hinzufügen
+
+Wenn Sie im Verwaltungsfenster für **Posteingangsregeln** sind, klicken Sie oben links auf das `+`{.action}-Icon.
+![E-Mails](images/mxplan-new-3.png){.thumbnail}
+
+In diesem Fenster legen Sie die notwendigen Regeln fest, um eine Weiterleitung zu erstellen:
+
+|Information|Beschreibung| 
+|---|---|  
+|Name |Legen Sie den Namen Ihrer Weiterleitung fest (Box 1).|  
+|Wenn die Nachricht eintrifft und all diesen Bedingungen entspricht| Wenn Sie möchten, dass Ihre Weiterleitung für alle E-Mails angewendet wird, wählen Sie **\[Auf alle E-Mails anwenden]** aus (Box 2).|
+|Alle folgenden Aktionen ausführen|Hier richten Sie die Weiterleitung ein. Wählen Sie **Weiterleiten, umleiten oder senden** aus und dann **Nachricht umleiten an...** (Box 3). Geben Sie anschließend im Feld **Nachricht umleiten an...** die Adresse ein, an die Sie die E-Mail umleiten möchten, und klicken Sie dann auf `Speichern`{.action} (Box 4).|
 
 
-- Von der Adresse: Geben Sie hier die E-Mail-Adresse an, von der die Nachrichten weitergeleitet werden sollen.
+![E-Mails](images/mxplan-new-4.png){.thumbnail}
 
-Dabei handelt es sich um ein Postfach, das auf @IhrDomainname endet.
-
-
-- Zur Adresse: Geben Sie hier die Zieladresse an, auf die Sie alle Nachrichten umleiten möchten. Dies kann eine Ihrer OVH Adressen sein oder auch eine externe Adresse eines anderen Anbieters.
-
-- Eine lokale Kopie aufbewahren: Setzen Sie hier ein Häkchen, wenn alle weitergeleiteten Nachrichten dennoch in Ihrem ursprünglichen Posteingang gespeichert werden sollen. Sie finden die Nachricht dann in beiden Postfächern.
-
-
-Klicken Sie dann auf "Bestätigen", um die Weiterleitung zu erstellen.
-
-![](images/img_3335.jpg){.thumbnail}
-
-
-## Eine Weiterleitung löschen
-Wenn Ihre eingehenden Nachrichten künftig nicht mehr umgeleitet werden sollen bzw. Sie eine aktive Weiterleitung löschen möchten, gehen Sie auf die Liste Ihrer aktiven Weiterleitungen.
-
-
-- Dann klicken Sie auf das kleine Zahnrad rechts neben der Umleitung, die Sie ändern möchten.
-
-- Klicken Sie dann auf "Die Weiterleitung löschen"
+In unserem Beispiel handelt es sich um eine **Weiterleitung mit lokaler Kopie** (siehe [Schema 2](./#definition) am Anfang dieser Anleitung). Wenn das auch Ihre gewünschte Einstellung ist, klicken Sie links oben auf `OK`{.action} (Diskettensymbol) und die Regel wird angewendet. Ist das nicht der Fall, gehen Sie zum nachstehenden Schritt über.
 
 
 
-![](images/img_3337.jpg){.thumbnail}
-Dann müssen Sie nur noch auf "Bestätigen" klicken, um die Weiterleitung endgültig zu löschen.
+Um eine **einfache Weiterleitung** (nach [Schema 1](./#definition) am Anfang der Anleitung) einzurichten, fügen Sie in diesem Fenster eine zusätzliche Regel zu Ihrer **Weiterleitung mit lokaler Kopie** hinzu. Klicken Sie auf `Aktion hinzufügen`{.action} (Box 1), dann auf **Verschieben, kopieren oder löschen** und anschließend auf **Nachricht löschen**. Mit dieser Regel wird die E-Mail direkt im Papierkorb abgelegt, nachdem sie an die Weiterleitungsadresse versendet wurde.
 
-![](images/img_3338.jpg){.thumbnail}
+![E-Mails](images/mxplan-new-5.png){.thumbnail}
 
+Wenn Sie das Fenster fertig ausgefüllt haben, klicken Sie links oben auf `OK`{.action} (Diskettensymbol).
 
-## Sie wollen alle auf eine E-Mail-Adresse A eingehenden Nachrichten als Kopie an eine E-Mail-Adresse B weiterleiten.
-Dies kann etwa sinnvoll sein, wenn auch Ihr(e) Sekretär(in) alle an Sie gesendeten Nachrichten empfangen soll. Nehmen Sie dann folgende Konfiguration vor:
+## Weiterführende Informationen
 
-![](images/img_3340.jpg){.thumbnail}
-
-
-## Sie wollen alle auf eine E-Mail-Adresse A eingehenden Nachrichten als Kopie an die beiden E-Mail-Adressen B und C weiterleiten.
-Ausgangslage:
-Sie haben eine neue E-Mail-Adresse, möchten das aber nicht den Hunderten Kontakten in Ihrem Adressbuch mitteilen müssen. Sie möchten die eingehenden Nachrichten also nicht mehr über Ihre E-Mail-Adresse A empfangen, sondern Sie direkt an Ihre beiden anderen Mail-Adressen B und C weiterleiten.
-In diesem Fall müssen Sie zwei getrennte Umleitungen einrichten.
-
-![](images/img_3341.jpg){.thumbnail}
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

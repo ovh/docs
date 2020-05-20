@@ -69,7 +69,7 @@ Go to the [OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager), a
 
 ![NIC handle](images/nichandle03.png){.thumbnail}
 
-If your login attempts are unsuccessful, you will need to follow the [two-factor authentication](../secure-account-with-2FA/) procedure. This additional layer of security on your account complements your username-password couple, and is managed via a device you own: e.g. a smartphone, a tablet, or a security key.
+If the [two-factor authentication](../secure-account-with-2FA/) is already active, you will need to complete this procedure as well. This additional layer of security on your account complements your username-password credentials, and is managed via a device you own, e.g. a smartphone, a tablet, or a security key.
 
 > [!primary]
 > If you have not set up two-factor authentication on your account, you may be asked to enter a verification code in order to confirm your identity. The verification code is sent to the **primary email address** listed on your account.  
