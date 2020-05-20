@@ -23,7 +23,7 @@ To read an introduction about the Data Processing service you can visit [Data Pr
 
 ### Step 1: Download the Data Processing CLI
 Download the latest release for your system of the CLI binary available on [GitHub](https://github.com/ovh/data-processing-spark-submit/releases){.external} and save it as ``ovh-spark-submit``.
-If your on Linux or MacOs, you may have to run this command to make it executable:
+If you are on Linux or MacOs, you may have to run this command to make it executable:
 
 ```shell-session
 chmod u+x ovh-spak-submit
