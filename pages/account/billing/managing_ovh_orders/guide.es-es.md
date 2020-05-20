@@ -30,7 +30,7 @@ En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 La orden de pedido es el documento que se genera al realizar un pedido en OVHcloud y que recoge los productos, su precio y los posibles descuentos que se hayan aplicado. A continuación se explican los distintos elementos que la componen:
 
-![Orden de pedido de OVH](images/order01.png){.thumbnail}
+![Orden de pedido de OVHcloud](images/order01.png){.thumbnail}
 
 |Número|Descripción|
 |---|---|
@@ -40,10 +40,10 @@ La orden de pedido es el documento que se genera al realizar un pedido en OVHclo
 |4|En este apartado se incluyen las formas de pago disponibles. Tenga en cuenta que solo aparecen las formas de pago autorizadas en el país de origen de la cuenta o las asociadas al tipo de cuenta.|
 
 
-En cualquier momento puede ver las órdenes de pedido desde el área de cliente de OVH como se explica a continuación.
+En cualquier momento puede ver las órdenes de pedido desde el área de cliente de OVHcloud como se explica a continuación.
 
 
-### Acceder a las órdenes de pedido desde el área de cliente de OVH
+### Acceder a las órdenes de pedido desde el área de cliente de OVHcloud
 
 Para gestionar sus pedidos, haga clic en su `Panel de control` en la esquina superior izquierda del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y seleccione `Ver mis pedidos`{.action}.
 
@@ -86,11 +86,11 @@ La siguiente ventana se abre para permitirle hacer el seguimiento en cuatro paso
 
 ### Ejercer el derecho de desistimiento
 
-La cláusula 14.1 de nuestras [Condiciones Generales del Servicio](https://www.ovh.es/soporte/documentos_legales/CondicionesGeneralesServicio.pdf){.action} establece que «los clientes que conforme a la legislación española en vigor tengan la consideración de consumidores y usuarios, y siempre que las características del producto o servicio contratado lo hiciesen posible, podrán ejercer su derecho de desistimiento durante los primeros 14 días naturales desde la contratación del producto o servicio correspondiente».
+La cláusula 14.1 de nuestras [Condiciones Generales del Servicio](https://www.ovh.es/soporte/documentos_legales/CondicionesGeneralesServicio.pdf){.external} establece que «los clientes que conforme a la legislación española en vigor tengan la consideración de consumidores y usuarios, y siempre que las características del producto o servicio contratado lo hiciesen posible, podrán ejercer su derecho de desistimiento durante los primeros 14 días naturales desde la contratación del producto o servicio correspondiente».
 
 Encontrará más información sobre cómo ejercer dicho derecho en los siguientes párrafos de dichas Condiciones.
 
-Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, [acceda a las órdenes de pedido](https://docs.ovh.com/es/billing/gestionar-los-pedidos-en-ovh/#acceder-a-las-ordenes-de-pedido-desde-el-area-de-cliente-de-ovh){.external}, haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Cancelar el pedido`{.action}.
+Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, [acceda a las órdenes de pedido](./#acceder-a-las-ordenes-de-pedido-desde-el-area-de-cliente-de-ovhcloud){.external}, haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Cancelar el pedido`{.action}.
 
 ![Cancelar un pedido](images/cancelorder1.png){.thumbnail}
 
