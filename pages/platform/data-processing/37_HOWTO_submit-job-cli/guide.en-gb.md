@@ -22,7 +22,7 @@ To read an introduction about the Data Processing service you can visit [Data Pr
 ## Instructions
 
 ### Step 1: Download the Data Processing CLI
-Download the latest release for your system of the CLI binary available on [GitHub](https://github.com/ovh/data-processing-spark-submit/releases){.external} and save it as ``ovh-spark-submit`` or run this command : 
+Download the latest release for your system of the CLI binary available on [GitHub](https://github.com/ovh/data-processing-spark-submit/releases){.external} and save it as ``ovh-spark-submit`` or run this: 
 ```shell-session
 $ export SYSTEM_ARCHITECTURE=darwin_386 # or darwin_amd64 or linux_386 or linux_amd64 or windows_386 or windows_amd64
 $ export VERSION=$(curl -s https://api.github.com/repos/ovh/data-processing-spark-submit/releases/latest | grep "tag_name" | cut -d : -f 2,3 | tr -d \",\ )
