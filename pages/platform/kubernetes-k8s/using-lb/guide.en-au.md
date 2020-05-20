@@ -6,7 +6,7 @@ section: Getting started
 ---
 
 
-**Last updated 1<sup>st</sup> July, 2019.**
+**Last updated 19<sup>st</sup> May, 2020.**
 
 <style>
  pre {
@@ -40,7 +40,7 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 ## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
 
-When you begin to use Kubernetes for real applications, one of the first questions if how to get external traffic into your cluster. The [official doc](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types){.external} gives you a good but rather dry explanation on the topic, but here we are trying to explain the concepts in a minimal, need-to-know way.
+When you begin to use Kubernetes for real applications, one of the first questions is how to get external traffic into your cluster. The [official doc](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types){.external} gives you a good but rather dry explanation on the topic, but here we are trying to explain the concepts in a minimal, need-to-know way.
 
 There are several ways to route the external traffic into your cluster:
 
@@ -62,7 +62,7 @@ This method isn't suited for a production environment, but it's interesting for 
 
 ### Exposing services as NodePort
 
-Declaring a service of type `NodePort` exposes the `Service` on each Node’s IP at a static port, the `NodePort` (a fixed port for that `Service`, in the default range of 30000-32767). You can then access the `Service` from the outside of the cluster by requesting `<NodeIp>:<NodePort>`. Every service you deploy as `NodePort` will ve exposed in its own port, on every Node.
+Declaring a service of type `NodePort` exposes the `Service` on each Node’s IP at a static port, the `NodePort` (a fixed port for that `Service`, in the default range of 30000-32767). You can then access the `Service` from the outside of the cluster by requesting `<NodeIp>:<NodePort>`. Every service you deploy as `NodePort` will be exposed in its own port, on every Node.
 
 ![NodePort](images/using-lb-NodePort.jpg){.thumbnail}
 
@@ -80,7 +80,17 @@ The `LoadBalancer` is the best option for a production environnement, with two c
 - The `LoadBalancer` is usually billed by the number of exposed services, it can be expensive.
 
 > [!primary]
-> We are currently offering OVHcloud Managed Kubernetes LoadBalancer service as a free preview, until the end of summer 2019. During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
+> There is a limit of 16 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request through our support team
+
+### Supported annotations
+
+There are several annotations available to customize your load balancer:
+
+- `service.beta.kubernetes.io/ovh-loadbalancer-proxy-protocol`: Used on the service to enable the proxy protocol on all backends. Supported values: `v1`, `v2`, `v2_ssl`, `v2_ssl_cn`.
+
+- `service.beta.kubernetes.io/ovh-loadbalancer-allowed-sources`: Used on the service to specify allowed client IP source ranges. Value: comma separated list of CIDRs. For example: `10.0.0.0/24,172.10.0.1`. **Deprecated** please use `loadBalancerSourceRanges` spec instead, see [Restrict Access For LoadBalancer Service](https://kubernetes.io/docs/tasks/access-application-cluster/configure-cloud-provider-firewall/#restrict-access-for-loadbalancer-service){.external}.
+
+- `service.beta.kubernetes.io/ovh-loadbalancer-balance`: Used on the service to set the algorithm to use for load balancing. Supported values: `first`, `leastconn`, `roundrobin`, `source`. Default: `roundrobin`.
 
 ### What about Ingress
 
@@ -94,7 +104,7 @@ The main advance of using an `Ingress` behind a `LoadBalancer` is the cost: you 
 
 ## Deploying LoadBalancer Services on OVHcloud Managed Kubernetes clusters
 
-In our OVHcloud Managed Kubernetes we propose a load balancing service enabling you to use `LoadBalancer` `ServiceType`. We are currently offering OVHcloud Managed Kubernetes LoadBalancer service as a free preview until the end of summer 2019. During the free preview there is a limit of 6 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request though our support team
+In our OVHcloud Managed Kubernetes we propose a load balancing service enabling you to use `LoadBalancer` `ServiceType`. There is a limit of 16 active `LoadBalancer` per cluster. This limit can be exceptionally raised upon request through our support team
 
 ## Deploying a Hello World LoadBalancer service
 
@@ -178,15 +188,10 @@ If you try again in a few minutes you should get an `EXTERNAL-IP`:
 
 <pre class="console"><code>$ kubectl get service hello-world
 NAME          TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)        AGE
-hello-world   LoadBalancer   10.3.81.234   6d6regsa9pc.lb.c1.gra.k8s.ovh.net   80:31699/TCP   4m
+hello-world   LoadBalancer   10.3.81.234   xxx.xxx.xxx.xxx   80:31699/TCP   4m
 </code></pre>
 
-For each service you deploy with LoadBalancer type, you will get a new sub-domain `XXXXXX.lb.c1.gra.k8s.ovh.net` to access the service. In my example that URL to access the service would be `http://6d6regsa9pc.lb.c1.gra.k8s.ovh.net`
-
-> [!primary]
-> The `LoadBalancer` is giving you a domain name and not an IP, because we anticipate a possible IP change at the end of the `LoadBalancer` free preview phase. The domain name will remain stable, so we prefer you to use it.
-> This can be a problem if you're directing a domain name to your OVHcloud Managed Kubernetes cluster, as to route your domain name to the `LoadBalancer` domain name you can only use `CNAME` records and not `A` ones.
-> If you want to route a root domain, for which `CNAME` records aren't allowed, you could use an `A` record to the IP behind the `LoadBalancer` domain name, but if you do it, please be aware that the IP can change.
+For each service you deploy with `LoadBalancer` type, you will get a new IPv4 `xxx.xxx.xxx.xxx` to access the service.
 
 ### Testing your service
 

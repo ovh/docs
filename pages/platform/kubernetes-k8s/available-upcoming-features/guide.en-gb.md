@@ -5,7 +5,7 @@ slug: available-upcoming-features
 section: Technical resources
 ---
 
-**Last updated March 5<sup>th</sup>, 2020.**
+**Last updated May 20, 2020.**
 
 We list here the most frequently requested OVHcloud Managed Kubernetes features that are currently available or planned in the upcoming year.
 

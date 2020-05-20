@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated March 26<sup>th</sup>, 2020.**
+**Last updated May 20, 2020.**
 
 <style>
  pre {

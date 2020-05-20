@@ -27,7 +27,7 @@ section: Tutorials
  }
 </style>
 
-**Last updated 7<sup>th</sup> May, 2020.**
+**Last updated 20 May, 2020.**
 
 ## Before you begin
 

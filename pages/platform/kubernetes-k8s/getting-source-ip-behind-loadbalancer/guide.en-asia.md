@@ -27,7 +27,7 @@ section: Tutorials
  }
 </style>
 
-**Last updated 7<sup>th</sup> May, 2020.**
+**Last updated 20 May, 2020.**
 
 ## Before you begin
 
@@ -134,7 +134,7 @@ You should see your newly created Ingress service:
 
 <pre class="console"><code>$ kubectl get service -n ingress-nginx ingress-lb
 NAME         TYPE           CLUSTER-IP    EXTERNAL-IP                          PORT(S)                      AGE
-ingress-lb   LoadBalancer   10.3.242.23   xxxxxxxxxx.lb.c1.gra.k8s.ovh.net     80:30113/TCP,443:30051/TCP   3m8s</code></pre>
+ingress-lb   LoadBalancer   10.3.242.23   xxx.xxx.xxx.xxx    80:30113/TCP,443:30051/TCP   3m8s</code></pre>
 
 > [!warning]
 > As the `LoadBalancer` creation is asynchronous, and the provisioning of the Load Balancer can take several minutes,  you can get a `<pending>` at `EXTERNAL-IP` while the Load Balancer is setting up. In this case, please wait some minutes and try again.
@@ -253,7 +253,7 @@ ingress.extensions/echo-ingress created</code></pre>
 Now you can test it using the LoadBalancer URL:
 
 ```bash
-curl  xxxxxxxxxx.lb.c1.gra.k8s.ovh.net
+curl  xxx.xxx.xxx.xxx
 ```
 
 And you should get the HTTP parameters of your request, including the right source IP in the `x-real-ip` header:
@@ -262,11 +262,11 @@ And you should get the HTTP parameters of your request, including the right sour
 {
   "path": "/",
   "headers": {
-    "host": "6d6rslnrn8.lb.c1.gra.k8s.ovh.net",
+    "host": "xxx.xxx.xxx.xxx",
     "x-request-id": "2126b343bc837ecbd07eca904c33daa3",
     "x-real-ip": "XXX.XXX.XXX.XXX",
     "x-forwarded-for": "XXX.XXX.XXX.XXX",
-    "x-forwarded-host": "xxxxxxxxxx.lb.c1.gra.k8s.ovh.net",
+    "x-forwarded-host": "xxx.xxx.xxx.xxx",
     "x-forwarded-port": "80",
     "x-forwarded-proto": "http",
     "x-original-uri": "/",
@@ -277,7 +277,7 @@ And you should get the HTTP parameters of your request, including the right sour
   "method": "GET",
   "body": "",
   "fresh": false,
-  "hostname": "6d6rslnrn8.lb.c1.gra.k8s.ovh.net",
+  "hostname": "xxx.xxx.xxx.xxx",
   "ip": "::ffff:10.2.1.2",
   "ips": [],
   "protocol": "http",
