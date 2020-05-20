@@ -107,7 +107,7 @@ In diesem Fenster legen Sie die notwendigen Regeln fest, um eine Weiterleitung z
 |Information|Beschreibung| 
 |---|---|  
 |Name |Legen Sie den Namen Ihrer Weiterleitung fest (Box 1).|  
-|Wenn die Nachricht eintrifft und all diesen Bedingungen entspricht| Wenn Sie möchten, dass Ihre Weiterleitung für alle E-Mails angewendet wird, wählen Sie **\[Auf alle E-Mails anwenden]** aus (Box 2).|
+|Wenn die Nachricht eintrifft und all diesen Bedingungen entspricht| Wenn Sie möchten, dass Ihre Weiterleitung für alle E-Mails angewendet wird, wählen Sie **\[Auf alle Nachrichten anwenden]** aus (Box 2).|
 |Alle folgenden Aktionen ausführen|Hier richten Sie die Weiterleitung ein. Wählen Sie **Weiterleiten, umleiten oder senden** aus und dann **Nachricht umleiten an...** (Box 3). Geben Sie anschließend im Feld **Nachricht umleiten an...** die Adresse ein, an die Sie die E-Mail umleiten möchten, und klicken Sie dann auf `Speichern`{.action} (Box 4).|
 
 
