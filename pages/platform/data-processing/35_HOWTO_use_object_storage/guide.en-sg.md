@@ -26,7 +26,7 @@ Otherwise, this [How to](../generate-environment) explains how to generate an en
 - The input file 'wordcount.txt' used by the following samples is available [Here](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount.txt).
 The wordcount.txt file should be uploaded in the container you're using when submitting a job. Please refer to this documentation that explains how to create a Swift container [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/).
 
-## Read data in the current container with Apache Spark using OpenStack Swift API
+## Read data in the container specified when submitting your job using OpenStack Swift API
 
 Find below the code in Python that:
 
