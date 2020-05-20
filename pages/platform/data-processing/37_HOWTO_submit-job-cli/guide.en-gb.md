@@ -97,7 +97,7 @@ Where **region** refers to the region you chose to submit your job.
 
 At any time, you can stop your job by pressing ``Ctrl+C``. If you do so, the CLI will ask you to confirm that you want to cancel the job before killing it.
 
-If you want to check your results after job has finished, you can download its logs from your Object Storage (see [Checking a job's logs in the Data Processing manager's page](../check-logs)).
+If you want to check your results after the job, you can download its logs from your Object Storage (see [Checking a job's logs in the Data Processing manager's page](../check-logs)).
 
 #### Optionally use auto-upload
 If you want to save time when you often need to change your application code, the auto-upload feature of the CLI allows you to upload your code on Object Storage automatically.
