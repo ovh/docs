@@ -10,7 +10,7 @@ section: CMS
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -56,7 +56,7 @@ Joomla! est un logiciel primé et convivial qui vous permet de créer des sites 
 
 La communauté Joomla! est très grande et peut fournir de l’assistance et des services dans tous les domaines ayant trait à ce CMS (aide, documentation, assistance technique, thèmes, etc.)
 
-- Joomla! Module](https://www.ovh.com/fr/hebergement-web/site/joomla.xml)
+- [Module Joomla!](https://www.ovh.com/fr/hebergement-web/site/joomla.xml)
 
 Le service d’assistance technique OVHcloud n’est pas autorisé à répondre aux questions relatives à la configuration de Joomla!.
 
@@ -102,7 +102,7 @@ Veuillez consulter les forums dédiés à [Drupal](https://www.drupal.org).
 
 ## Aller plus loin
 
-[Migration de votre site web et de vos e-mails vers OVH. ](../migrer-mon-site-chez-ovh/){.external}
+[Migration de votre site web et de vos e-mails vers OVHcloud. ](../migrer-mon-site-chez-ovh/){.external}
 
 [Mettre en ligne un site internet sur son hébergement web.](../mettre-mon-site-en-ligne/){.external}
 
