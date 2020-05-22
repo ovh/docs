@@ -17,13 +17,13 @@ Avec l’option « Règles de gestion de la boîte de réception », vous pouvez
 
 ## Prérequis
 
-- une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposé parmi nos [offres d’hébergement web](https://www.ovh.com/fr/hebergement-web/), inclus dans un [hébergement Start10M gratuit](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml) ou commandé séparément comme solution autonome ; [**Hosted Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/))
+- une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposé parmi nos [offres d’hébergement web](https://www.ovh.com/fr/hebergement-web/), inclus dans un [hébergement Start10M gratuit](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml) ou commandé séparément comme solution autonome ; [**Hosted Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/))
 - les paramètres de connexion de l’adresse e-mail que vous souhaitez configurer
 
 
 ## Instructions
 
-### Étape 1 : Accéder à la section Options
+### Étape 1 : Accéder à la section Options
 
 Connectez-vous à votre compte Exchange via le webmail [OVHcloud](https://www.ovh.com/fr/mail/). Cliquez sur l’icône de réglages en haut à droite pour afficher le menu « Options » et sélectionnez `Options`{.action}.
 
@@ -33,7 +33,7 @@ Connectez-vous à votre compte Exchange via le webmail [OVHcloud](https://www.ov
 
 ![règles boîte de réception](images/exchange-rules-step2.png){.thumbnail}
 
-### Étape 2 : Créer des règles
+### Étape 2 : Créer des règles
 
 ![règles boîte de réception](images/exchange-rules-step3.png){.thumbnail}
 
@@ -58,21 +58,21 @@ Puisqu’il existe une multitude de conditions et d’actions au choix, il nous 
 > [!warning]
 >OVHcloud vous offre un certain nombre de services dont la configuration et la gestion relèvent de votre responsabilité. Il vous incombe par conséquent de veiller à ce que ces services fonctionnent correctement.
 >
->Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur les tâches courantes. Toutefois, il est recommandé de contacter un fournisseur de services spécialisé et/ou l’éditeur du logiciel exploité par le service en cas de difficultés. Nous ne serons personnellement pas en mesure de vous fournir une assistance à ce propos. Plus d’informations dans la section « Aller plus loin » de ce guide.
+>Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur les tâches courantes. Toutefois, il est recommandé de contacter un fournisseur de services spécialisé et/ou l’éditeur du logiciel exploité par le service en cas de difficultés. Nous ne serons personnellement pas en mesure de vous fournir une assistance à ce propos. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
-#### Exemple 1 : Rediriger des e-mails vers une autre adresse
+#### Exemple 1 : Rediriger des e-mails vers une autre adresse
 
 Créez une nouvelle règle en cliquant sur l’icône `+`{.action}. Nommez votre règle et sélectionnez en dessous les e-mails auxquels elle doit s’appliquer. Pour cet exemple, nous choisissons d’abord d’inclure **tous les messages**. Ensuite, sélectionnez l’action appropriée ; à ce niveau, nous allons nous appesantir sur l’illustration d’une **redirection**. 
 
-À titre de rappel, il y a une différence technique : 
+À titre de rappel, il y a une différence technique : 
 
 * Si vous « transférez » un e-mail, le destinataire final verra votre adresse e-mail comme expéditeur. 
 * Par contre, le fait de « rediriger » un e-mail va l’envoyer à votre adresse cible sans modifier l’adresse de l’expéditeur initial. 
 
 ![règles boîte de réception](images/exchange-rules-step4.png){.thumbnail}
 
-Sur l’écran suivant, sélectionnez parmi « vos contacts » (`+`{.action}) ou saisissez une adresse e-mail dans la barre supérieure. Vous pouvez également rechercher des utilisateurs non répertoriés ici comme contacts. Une fois la sélection effectuée, cliquez sur `Enregistrer`{.action} pour retourner à l’écran « Nouvelle règle de la boîte de réception ». 
+Sur l’écran suivant, sélectionnez parmi « vos contacts » (`+`{.action}) ou saisissez une adresse e-mail dans la barre supérieure. Vous pouvez également rechercher des utilisateurs non répertoriés ici comme contacts. Une fois la sélection effectuée, cliquez sur `Enregistrer`{.action} pour retourner à l’écran « Nouvelle règle de la boîte de réception ». 
 
 Vous pouvez affiner davantage cette règle en cliquant sur `Ajouter une action`{.action}. 
 
@@ -83,7 +83,7 @@ La nouvelle règle est maintenant listée avec une explication de son action et 
 ![règles boîte de réception](images/redirection_rulebis.gif){.thumbnail}
 
 
-#### Exemple 2 : Filtrer les e-mails indésirables (spam)
+#### Exemple 2 : Filtrer les e-mails indésirables (spam)
 
 > [!primary]
 >
@@ -94,11 +94,11 @@ Créez une nouvelle règle en cliquant sur l’icône `+`{.action}.
 
 ![règles boîte de réception](images/exchange-rules-step7.png){.thumbnail}
 
-Nommez votre règle et sélectionnez comme conditions « comprend les mots suivants » et « dans l’objet... ». Dans l’écran suivant, tapez « \[SPAM] » pour isoler les messages qui ont été pré-étiquetés par notre protection contre les spams. Ajoutez-le en cliquant sur `+`{.action}, puis cliquez sur `OK`{.action}.
+Nommez votre règle et sélectionnez comme conditions « comprend les mots suivants » et « dans l’objet... ». Dans l’écran suivant, tapez « [SPAM] » pour isoler les messages qui ont été pré-étiquetés par notre protection contre les spams. Ajoutez-le en cliquant sur `+`{.action}, puis cliquez sur `OK`{.action}.
 
 ![règles boîte de réception](images/exchange-rules-step8.png){.thumbnail}
 
-Étant donné qu’aucune protection automatique anti-spam ne peut déterminer avec une précision parfaite si un e-mail est véritablement un spam, il est recommandé de placer ces e-mails dans un dossier dédié. De cette façon, vous pouvez vérifier le contenu du dossier spams avant de le vider. Pour effectuer ce réglage, sélectionnez comme action « Déplacer, copier ou supprimer », puis « Déplacer le message vers le dossier... ». Sélectionnez un dossier à partir de la liste. Enregistrez la règle en cliquant sur `OK`{.action}.
+Étant donné qu’aucune protection automatique anti-spam ne peut déterminer avec une précision parfaite si un e-mail est véritablement un spam, il est recommandé de placer ces e-mails dans un dossier dédié. De cette façon, vous pouvez vérifier le contenu du dossier spams avant de le vider. Pour effectuer ce réglage, sélectionnez comme action « Déplacer, copier ou supprimer », puis « Déplacer le message vers le dossier... ». Sélectionnez un dossier à partir de la liste. Enregistrez la règle en cliquant sur `OK`{.action}.
 
 ![règles boîte de réception](images/exchange-rules-step9_2.png){.thumbnail}
 
