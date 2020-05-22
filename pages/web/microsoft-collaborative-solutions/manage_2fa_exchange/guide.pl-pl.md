@@ -1,8 +1,8 @@
 ---
-title: 'Configurer la double authentification sur un compte Exchange'
-slug: configurer-2fa-exchange
-excerpt: 'Découvrez comment configurer la double authentification sur un compte Exchange'
-section: 'Fonctionnalités des comptes Exchange'
+title: 'Konfiguracja weryfikacji dwuetapowej na koncie Exchange'
+slug: konfiguracja-2fa-exchange
+excerpt: 'Dowiedz się, jak skonfigurować weryfikację dwuetapową na koncie Exchange'
+section: 'Funkcjonalności i współdzielenie Exchange'
 order: 3
 ---
 
