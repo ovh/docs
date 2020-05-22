@@ -9,6 +9,7 @@ order: 4
 
 **Dernière mise à jour le 19/02/2020**
 
+
 ## Objectif
 
 Grâce à cette fonction d’Exchange, autorisez l'accès à vos calendriers par d’autres utilisateurs.
