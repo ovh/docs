@@ -17,18 +17,18 @@ Il vous permettra d’acquérir des connaissances fondamentales au sujet des fac
 **Découvrez comment améliorer le rendement de votre site web.**
 
 > [!warning]
-> Ce cas d’application vous montrera comment utiliser une ou plusieurs solutions oVHcloud avec des outils externes. Il décrit les mesures à appliquer dans un contexte précis. Veuillez noter que ces mesures doivent être adaptées à votre cas particulier. Si vous éprouvez des difficultés à appliquer ces mesures, veuillez contacter un prestataire de services spécialisés et/ou posez la question à notre communauté sur <https://community.ovh.com/en/>. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
+> Ce cas d’application vous montrera comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes. Il décrit les mesures à appliquer dans un contexte précis. Veuillez noter que ces mesures doivent être adaptées à votre cas particulier. Si vous éprouvez des difficultés à appliquer ces mesures, veuillez contacter un prestataire de services spécialisés et/ou posez la question à notre communauté sur <https://community.ovh.com/en/>. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
 
 ## Prérequis
 
 - Un [hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external}
-- Un courriel confirmant que votre hébergement web a été configuré;
-- Un [nom de domaine](https://www.ovh.com/fr/domaines/){.external} pouvant être utilisé pour accéder à votre site web;
+- Un e-mail confirmant que votre hébergement web a été configuré;
+- Un [nom de domaine](https://www.ovh.com/fr/domaines/){.external} lié à votre hébergement web;
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=alleraugestionnaire){.external}.
 
 ## Instructions
 
-### Étape 1 : Définir la portée du problème
+### Étape 1 : Définir la portée du problème
 
 #### Les questions auxquelles vous devez répondre :
 Si votre site web est lent, il est important de poser les questions ci-dessous pour préciser la portée du problème.
@@ -48,10 +48,10 @@ L’utilisation des CMS comme WordPress, PrestaShop, Drupal ou Joomla! nécessit
 Les navigateurs Internet doivent pouvoir charger et lire tous ces éléments.
 Nous fournissons des recommandations sur les solutions offertes par l’hébergement web, lesquelles peuvent être utilisées pour les CMS répertoriés ci-dessus sur la [page du produit](https://www.ovh.com/fr/hebergement-web/){.external}.
 
-Pour plus d’information sur les différents forfaits offerts, veuillez consulter [cette page](https://www.ovh.com/fr/hebergement-web/quel_hebergement_web_choisir.xml){.external}.
+Pour plus d’information sur les différents forfaits offerts, veuillez consulter [cette page](https://www.ovh.com/fr/hebergement-web/quel_hebergement_mutualise_choisir.xml){.external}.
 
 
-### Étape 2 : Vérification de la version PHP
+### Étape 2 : Vérification de la version PHP
 L’utilisation de la dernière version php compatible avec votre site peut avoir une influence considérable sur son rendement.
 Pour vérifier si votre site web est compatible avec la dernière version PHP, veuillez vous référer à [la documentation officielle de PHP](https://php.net/eol.php){.external}.
 
@@ -70,12 +70,12 @@ Les variables de certains serveurs sont modifiées par le biais de l’utilisati
 
 Pour plus d’information sur les mises à jour PHP, veuillez vous référer à [ce guide](../configurer-le-php-sur-son-hebergement-web-mutu-2014/){.externe}.
 
-Pour plus d’information sur l’utilisation de la version _stable_ de PHP-FPM ou les options avancées d’hébergement de votre site, veuillez consulter [ce guide](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/{.externe}.
+Pour plus d’information sur l’utilisation de la version _stable_ de PHP-FPM ou les options avancées d’hébergement de votre site, veuillez consulter [ce guide](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/){.externe}.
 
 Le fichier _.ovhconfig_ fonctionne à la racine d’un ensemble d’hébergement ou dans un sous-répertoire de niveau 1 (ex. : _/www/_) mais pas au niveau 2 ou dans les répertoires de niveaux supérieurs (ex. : _/www/test/_ , _/www/test/test2/_)
 
 
-### Étape 3 : Vérification du contenu média (images, vidéos...)
+### Étape 3 : Vérification du contenu média (images, vidéos...)
 
 Lorsqu’on accède à un site web, tout le contenu doit pouvoir être téléchargé par le navigateur.
 
@@ -87,23 +87,23 @@ C’est à vous de choisir ceux qui répondent à vos besoins spécifiques.
 
 Pour plus d’information à ce sujet, veuillez vous référer à l’étape 5 ci-dessous.
 
-### Étape 4 : Optimisation de vos scripts
+### Étape 4 : Optimisation de vos scripts
 
 Établissez une corrélation entre les graphiques d’utilisation des ressources de votre hébergement (voir ci-dessous pour plus d’information) pour déterminer l’origine des retards et consultez les fichiers journaux en vous référant aux dates de ces pointes d’utilisation.
 
 Vous pouvez accéder à vos fichiers journaux, aux statistiques et aux graphiques directement à partir de [l’espace client OVHcloud](https://www.ovh.com/manager/web/login.html){.external}.
 
 Comment accéder aux fichiers journaux :
-- Cliquer sur le domaine dans la section `Hébergement`{.action};
-- Cliquer sur l’onglet `Plus +`{.action}, puis sélectionner `Statistiques et fichiers journaux`{.action};
-- Cliquer ensuite sur les liens affichés pour accéder soit aux _statistiques de visite du site web_ ou aux _fichiers journaux_.
+- Cliquez sur le domaine dans la section `Hébergement`{.action};
+- Cliquez sur l’onglet `Plus +`{.action}, puis sélectionnez `Statistiques et fichiers journaux`{.action};
+- Cliquez ensuite sur les liens affichés pour accéder soit aux _statistiques de visite du site web_ ou aux _fichiers journaux_.
 ![logs](images/logs_highlighted.png){.thumbnail}
 
 
 Comment accéder aux graphiques :
-- Cliquer sur le domaine dans la section `Hébergement`{.action};
-- Lorsque vous êtes dans la section `Informations générales`{.action}, défiler jusqu’au bas de la page où vous pouvez consulter les graphiques liés à l’utilisation de votre hébergement;
-- À cet endroit, vous pourrez sélectionner le type d’information ainsi que la période des données affichées.
+- Cliquez sur le domaine dans la section `Hébergement`{.action};
+- Lorsque vous êtes dans la section `Informations générales`{.action}, défilez jusqu’au bas de la page où vous pouvez consulter les graphiques liés à l’utilisation de votre hébergement;
+- Sélectionnez le type d’information ainsi que la période des données affichées.
 ![graphs](images/graphs_highlighted.png){.thumbnail}
 
 Quels sont les différents types de renseignements qui peuvent être affichés?
@@ -120,14 +120,13 @@ Quels sont les différents types de renseignements qui peuvent être affichés?
 
 - **Commandes FTP** : Affiche les différentes commandes FTP qui ont été utilisées par l’hébergement. Par exemple, les tentatives de connexion qui ont réussi et échoué, les téléchargements, les chargements et la suppression des fichiers, etc.
 
-Les deux catégories suivantes sont visibles seulement si vous utilisez actuellement une base de données dans votre forfait d’hébergement.
-N’oubliez pas de sélectionner le nom de votre base de données et la période souhaitée.
+Les deux catégories suivantes sont visibles seulement si vous utilisez actuellement une base de données dans votre forfait d’hébergement. Sélectionnez le nom de votre base de données et la période souhaitée.
 
 - **Temps de réponse SQL** : Affiche le temps de réponse aux requêtes.
 
 - **Requêtes SQL**: Affiche le nombre de requêtes.
 
-### Étape 5 : Vérification des requêtes sur le réseau
+### Étape 5 : Vérification des requêtes sur le réseau
 La [Surveillance réseau](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external} constitue un outil d’analyse utile qui est intégré dans le navigateur Mozilla Firefox et qui permet d’analyser en détail le temps de chargement d’une page web. 
 
 Avec cet outil, vous pouvez vérifier les éléments de votre site qui sont plus lents ou plus lourds à charger.
@@ -146,7 +145,7 @@ Ainsi, vous améliorez le temps de réponse pour les visiteurs dans le monde ent
 Découvrez notre [solution CDN](https://www.ovh.com/fr/cdn/){.external}. 
 
 
-### Étape 6 : Contrôle du système de gestion du contenu (CMS) et des plugins utilisés
+### Étape 6 : Contrôle du système de gestion du contenu (CMS) et des plugins utilisés
 
 > [!primary]
 > Cette étape est facultative si vous n’utilisez pas de CMS.
@@ -167,9 +166,9 @@ Toutefois, il existe un grand nombre de guides externes qui traitent le sujet.
 
 **Comment accéder à la base de données par le biais de phpMyAdmin :** Pour accéder à votre base de données par le biais de phpMyAdmin, procédez comme suit à partir de [l’espace client OVHcloud](https://www.ovh.com/auth/?action=alleraugestionnaire){.external} :
 
-- Cliquer sur votre domaine dans la section `Hébergement`{.action};
-- Aller à l’onglet `Base de données`{.action};
-- Cliquer sur les 3 points `...`{.action} à droite de votre base de données pour accéder à phpMyAdmin.
+- Cliquez sur votre domaine dans la section `Hébergement`{.action};
+- Cliquez sur l’onglet `Base de données`{.action};
+- Cliquez sur les 3 points `...`{.action} à droite de votre base de données pour accéder à phpMyAdmin.
 
 **Pourquoi optimiser une base de données?** Vous devez entretenir votre base de données pour qu’elle continue de bien fonctionner. Autrement dit, les informations contenues dans la base de données doivent être renvoyées au script qui les a demandées le plus tôt possible. Pour ce faire, la base de données doit être bien structurée et optimisée. Nous allons voir comment optimiser votre base de données.
 
@@ -204,7 +203,7 @@ Afficher...
 ...
 ```
 
-Une déconnexion après la requête permet au serveur de la base de données d’être immédiatement disponible pour d’autres requêtes (et évite l’erreur « l’utilisateur a dépassé la limite de connexions actives ’connexions_max_utilisateur’ »).
+Une déconnexion après la requête permet au serveur de la base de données d’être immédiatement disponible pour d’autres requêtes (et évite l’erreur “User already has more than *max_user_connections* active connections”).
 
 #### Optimiser votre base de données en utilisant la mémoire cache
 
@@ -212,12 +211,12 @@ Une déconnexion après la requête permet au serveur de la base de données d�
 
 - Vous pouvez également exécuter une session en cache, en d’autres termes, vous mettez les résultats de la recherche dans une variable de session. De cette façon, vous n’avez pas besoin d’exécuter une requête identique la prochaine fois; il suffit de récupérer les variables de la session.
 
-- Récupérer seulement les données utilisées : Dans vos requêtes SQL, assurez-vous que vous avez sélectionné uniquement ce dont vous avez besoin, et que vous n’avez pas oublié les liens entre les tableaux.
+- Récupérez seulement les données utilisées : Dans vos requêtes SQL, assurez-vous que vous avez sélectionné uniquement ce dont vous avez besoin, et que vous n’avez pas oublié les liens entre les tableaux.
 
 Par exemple :
 
 ```
-(où tableau1.champs = tableau2.champs2)
+(where table1.champs = table2.champs2)
 ```
 
 #### Éviter les options qui font appel à une utilisation intensive des ressources :
