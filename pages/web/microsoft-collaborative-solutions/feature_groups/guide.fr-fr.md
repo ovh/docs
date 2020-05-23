@@ -22,8 +22,6 @@ Grâce aux groupes Exchange, de nombreux participants peuvent communiquer par en
 - Etre connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
 - Avoir souscrit une offre [solution Exchange OVHcloud](https://www.ovh.com/fr/emails/hosted-exchange/) 
 
-
-
 ## Instructions
 
 ### Étape 1 : Créez un nouveau groupe
