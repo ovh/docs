@@ -3,6 +3,7 @@ title: 'Administrar los servicios de OVH'
 slug: administrar-los-servicios-de-ovh
 excerpt: 'Cómo visualizar y administrar las soluciones de OVH desde el área de cliente'
 section: 'Pedidos, facturas y servicios'
+hidden: true
 ---
 
 **Última actualización: 08/11/2018**
