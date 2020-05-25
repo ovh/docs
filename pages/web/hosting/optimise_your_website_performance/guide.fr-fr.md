@@ -95,9 +95,9 @@ Vous pouvez accéder à vos fichiers journaux, aux statistiques et aux graphique
 
 Comment accéder aux fichiers journaux :
 
-- Cliquez sur le domaine dans la section `Hébergement`{.action};
+- Cliquez sur le domaine dans la section `Hébergement`{.action} ;
 
-- Cliquez sur l’onglet `Plus +`{.action}, puis sélectionnez `Statistiques et fichiers journaux`{.action};
+- Cliquez sur l’onglet `Plus +`{.action}, puis sélectionnez `Statistiques et fichiers journaux`{.action} ;
 
 - Cliquez ensuite sur les liens affichés pour accéder soit aux _statistiques de visite du site web_ ou aux _fichiers journaux_.
 
@@ -105,9 +105,10 @@ Comment accéder aux fichiers journaux :
 
 
 Comment accéder aux graphiques :
-- Cliquez sur le domaine dans la section `Hébergement`{.action};
 
-- Lorsque vous êtes dans la section `Informations générales`{.action}, défilez jusqu’au bas de la page où vous pouvez consulter les graphiques liés à l’utilisation de votre hébergement;
+- Cliquez sur le domaine dans la section `Hébergement`{.action} ;
+
+- Lorsque vous êtes dans la section `Informations générales`{.action}, défilez jusqu’au bas de la page où vous pouvez consulter les graphiques liés à l’utilisation de votre hébergement ;
 
 - Sélectionnez le type d’information ainsi que la période des données affichées.
 ![graphs](images/graphs_highlighted.png){.thumbnail}
@@ -172,9 +173,9 @@ Toutefois, il existe un grand nombre de guides externes qui traitent le sujet.
 
 **Comment accéder à la base de données par le biais de phpMyAdmin :** Pour accéder à votre base de données par le biais de phpMyAdmin, procédez comme suit à partir de [l’espace client OVHcloud](https://www.ovh.com/auth/?action=alleraugestionnaire){.external} :
 
-- Cliquez sur votre domaine dans la section `Hébergement`{.action};
+- Cliquez sur votre domaine dans la section `Hébergement`{.action} ;
 
-- Cliquez sur l’onglet `Base de données`{.action};
+- Cliquez sur l’onglet `Base de données`{.action} ;
 
 - Cliquez sur les 3 points `...`{.action} à droite de votre base de données pour accéder à phpMyAdmin.
 
