@@ -3,6 +3,7 @@ title: 'Gestire i servizi OVH'
 slug: gestire-servizi-ovh
 excerpt: 'Come visualizzare e amministrare le tue soluzioni dallo Spazio Cliente OVH'
 section: 'Gestire ordini, fatture e servizi'
+hidden: true
 ---
 
 **Ultimo aggiornamento: 18/02/2019**
