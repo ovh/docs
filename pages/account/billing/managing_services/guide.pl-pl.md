@@ -3,6 +3,7 @@ title: 'Zarządzanie usługami OVH'
 slug: zarzadzanie-uslugami-ovh
 excerpt: 'Dowiedz się, jak zarządzać rozwiązaniami OVH w interfejsie „Zarządzanie usługami” w Panelu klienta'
 section: 'Zamówienia, faktury i usługi'
+hidden: true
 ---
 
 **Ostatnia aktualizacja z dnia 23-11-2018**
