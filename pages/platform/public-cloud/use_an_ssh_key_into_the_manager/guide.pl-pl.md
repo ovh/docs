@@ -18,7 +18,7 @@ Klucz SSH można dodać w interfejsie Public Cloud na dwa sposoby:
 
 ### Wymagania początkowe
 
-- [klucz SSH](../howto_create_an_ssh_key/guide.en-gb.md){.ref}
+- [klucz SSH](../tworzenie-kluczy-ssh/){.external}
 
 
 ## Tworzenie instancji
@@ -46,5 +46,5 @@ Kliknij przycisk `Dodaj klucz`{.action}, a następnie — po wpisaniu nazwy i wk
 
 ![Add a key](images/addkeymenu1.png){.thumbnail}
 
-Klucz będzie dostępny do użycia podczas [tworzenia następnej instancji w chmurze](../first_steps_start_my_first_server_within_3_minutes/guide.en-gb.md){.ref}.
+Klucz będzie dostępny do użycia podczas [tworzenia następnej instancji w chmurze](../rozpoczecie_pracy_z_instancja_public_cloud/){.external}.
       
