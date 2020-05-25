@@ -8,6 +8,7 @@ order: 3
 
 **Ostatnia aktualizacja z dnia 11-03-2020**
 
+
 ## Wprowadzenie
 
 Możesz wzmocnić bezpieczeństwo swojego konta Exchange za pomocą weryfikacji dwuetapowej (2FA). Pozwala ona wygenerować kod, który należy wprowadzić przy każdym logowaniu, jako uzupełnienie zabezpieczenia hasłem. Kod jest generowany przez aplikację *one-time password* (OTP), którą należy zainstalować na smartfonie lub tablecie.
@@ -16,7 +17,7 @@ Możesz wzmocnić bezpieczeństwo swojego konta Exchange za pomocą weryfikacji 
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Exchange OVHcloud](https://www.ovh.com/fr/emails/){.external}.
+- Wykupienie usługi [Exchange OVHcloud](https://www.ovh.pl/emaile/hosted-exchange/){.external}.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 - Zainstalowanie aplikacji OTP na smartfonie lub tablecie z systemem Android lub iOS.
 
@@ -51,7 +52,7 @@ Pozostając w platformie Exchange, przejdź do karty `Konta e-mail`{.action}. Kl
 
 ![2fa-exchange](images/2fa-exchange-01.png){.thumbnail}
 
-Aby powiązać konto z Twoją aplikacją OTP, zaloguj się do [poczty webmail](https://mail.ovh.net).
+Aby powiązać konto z Twoją aplikacją OTP, zaloguj się do [poczty webmail](https://www.ovh.pl/mail/).
 
 Przy pierwszym logowaniu wyświetlony zostanie kod QR. Zeskanuj go za pomocą aplikacji OTP, a następnie wprowadź wygenerowany w aplikacji kod, aby się zalogować.
 
