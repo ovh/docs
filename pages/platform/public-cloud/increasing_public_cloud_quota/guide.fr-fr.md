@@ -3,7 +3,8 @@ title: 'Augmenter le quota Public Cloud'
 excerpt: 'Apprenez à augmenter vos quotas Public Cloud'
 slug: augmenter-le-quota-public-cloud
 legacy_guide_number: 1904
-section: 'Base de connaissances'
+section: 'Gestion de projets'
+order: 6
 ---
 
 **Dernière mise à jour le 25/11/2019**
