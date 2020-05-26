@@ -1,8 +1,9 @@
 ---
-title: Editer une instance
+title: Configurer les groupes de sécurité de votre instance
 slug: diter-une-instance
 legacy_guide_number: 1777
-section: Base de connaissances
+section: Gestion depuis Horizon
+order: 6
 ---
 
 
