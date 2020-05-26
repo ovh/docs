@@ -2,7 +2,9 @@
 title: Créer un volume supplementaire et l’attacher a une instance
 slug: creer-un-volume-supplementaire-et-l-attacher-a-une-instance
 excerpt: Documentation pas a pas traitant de la creation et de l’attachement d’un disque additionnel a un serveur cloud.
-section: Premiers pas
+section: Stockage
+order: 4
+hidden: true
 ---
 
 
