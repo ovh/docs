@@ -1,7 +1,8 @@
 ---
 title: 'Création et suppression d’un utilisateur OpenStack'
 slug: creation-et-suppression-dun-utilisateur-openstack
-section: 'Base de connaissances'
+section: 'Gestion de projets'
+order: 9
 ---
 
 **Dernière mise à jour le 6 décembre 2019**
