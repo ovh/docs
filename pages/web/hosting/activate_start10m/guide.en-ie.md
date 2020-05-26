@@ -10,13 +10,13 @@ order: 2
 
 ## Objective
 
-With [Start10M](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.external}, OVHcloud gives you a 10MB Web Hosting plan, and an email account with 5GB storage. This guide will show you how to activate Start 10M hosting on your [domain name](https://www.ovh.co.uk/domains/){.external}.
+With [Start10M](https://www.ovh.ie/domains/start10m_hosting_offer.xml){.external}, OVHcloud gives you a 10MB Web Hosting plan, and an email account with 5GB storage. This guide will show you how to activate Start 10M hosting on your [domain name](https://www.ovh.ie/domains/){.external}.
 
 **Find out how to activate your free Start 10M hosting plan.**
 
 ## Requirements
 
-- a [domain name](https://www.ovh.co.uk/domains/){.external}, detached from any Web Hosting plans, in the OVHcloud Control Panel
+- a [domain name](https://www.ovh.ie/domains/){.external}, detached from any Web Hosting plans, in the OVHcloud Control Panel
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
@@ -39,7 +39,7 @@ The activation window will appear. **Step 1** will detail the plan and its price
 | The MX records of *example.com*      	| The domain name will point to the OVHcloud email servers without any change to how the hosting plan is pointed.  								|
 
 > [!primary]
-> No databases are included with Start 10M free hosting. If your project requires a database, we recommend browsing our [Web Hosting plans](https://www.ovh.co.uk/web-hosting/), which include them.
+> No databases are included with Start 10M free hosting. If your project requires a database, we recommend browsing our [Web Hosting plans](https://www.ovh.ie/web-hosting/), which include them.
 
 You simply need to read and confirm the terms and conditions for the plan in **step 3**, then `Confirm`{.action}the summary in **step 4**.
 

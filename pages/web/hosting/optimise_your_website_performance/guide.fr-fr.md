@@ -26,20 +26,20 @@ Il vous permettra d’acquérir des connaissances fondamentales au sujet des fac
 - Un [nom de domaine](https://www.ovh.com/fr/domaines/){.external} lié à votre hébergement web;
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=alleraugestionnaire){.external}.
 
-## Instructions
+## En pratique
 
 ### Étape 1 : Définir la portée du problème
 
 #### Les questions auxquelles vous devez répondre :
 Si votre site web est lent, il est important de poser les questions ci-dessous pour préciser la portée du problème.
 
-1. **Quand avez-vous remarqué un ralentissement de votre site web ?**
+1. **Quand avez-vous remarqué un ralentissement sur votre site web ?**
 Cette question vous aide à déterminer si le temps de latence est provoqué par une modification récente au site web, notamment un plugin mal optimisé ou un nouveau thème, susceptible d’envoyer de nombreuses demandes sortantes, qui pourraient être à l’origine du ralentissement de votre site web.
 2. **S’agit-il d’un problème ponctuel ou le ralentissement est-il permanent?**
 Il serait judicieux de noter la date à laquelle vous avez constaté un ralentissement sur votre site, de déterminer ensuite si ce ralentissement est imputable à une pointe de trafic, ou si d’autres tâches ont commencé à s’exécuter sur l'hébergement au même moment.
 3. **Le ralentissement affecte-t-il tout le site web ou juste une partie de celui-ci?**
 Si le problème concerne seulement une seule page et non tout le site web, il est impératif d’analyser cette page en particulier et de vérifier la requête ou le script qui serait à l’origine du temps de latence.
-4. **Avez-vous reçu un message d’erreur? Si oui, de quel type?**
+4. **Le site affiche-t-il une page d’erreur ? Si oui, de quel type ?**
 Vérifiez si des erreurs sont créées pour identifier la source du temps de latence. Pour avoir un meilleur aperçu des erreurs qui surviennent sur votre hébergement, veuillez consulter les fichiers journaux.
 
 Les réponses à ces questions peuvent vous aider à cibler certains points spécifiques et à identifier les zones problématiques pour améliorer le rendement du site.
@@ -52,7 +52,7 @@ Pour plus d’information sur les différents forfaits offerts, veuillez consult
 
 
 ### Étape 2 : Vérification de la version PHP
-L’utilisation de la dernière version php compatible avec votre site peut avoir une influence considérable sur son rendement.
+Utiliser la dernière version de PHP compatible avec votre site peut avoir une influence considérable sur son rendement.
 Pour vérifier si votre site web est compatible avec la dernière version PHP, veuillez vous référer à [la documentation officielle de PHP](https://php.net/eol.php){.external}.
 
 **PHP-FPM**
@@ -60,7 +60,7 @@ Pour vérifier si votre site web est compatible avec la dernière version PHP, v
 Nous avons adapté PHP-FPM à notre infrastructure web afin d’accélérer les réponses PHP et de réduire substantiellement la charge du processeur central.
 Des tests ont révélé un rendement jusqu’à **7 fois supérieur**à l’ancien mécanisme.
 
-Les variables de certains serveurs sont modifiées par le biais de l’utilisation PHP-FPM :
+Certaines variables du serveur sont modifiées par l’utilisation de PHP-FPM :
 
 |Variable|sans PHP-FPM|avec PHP-FPM|
 | ------------- |:-------------:| -----:|
@@ -70,16 +70,16 @@ Les variables de certains serveurs sont modifiées par le biais de l’utilisati
 
 Pour plus d’information sur les mises à jour PHP, veuillez vous référer à [ce guide](../configurer-le-php-sur-son-hebergement-web-mutu-2014/){.externe}.
 
-Pour plus d’information sur l’utilisation de la version _stable_ de PHP-FPM ou les options avancées d’hébergement de votre site, veuillez consulter [ce guide](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/){.externe}.
+Pour basculer vers l’utilisation de PHP-FPM en version _stable_ ou pour en savoir plus sur les options avancées de votre hébergement web, veuillez consulter [ce guide](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/){.external}.
 
-Le fichier _.ovhconfig_ fonctionne à la racine d’un ensemble d’hébergement ou dans un sous-répertoire de niveau 1 (ex. : _/www/_) mais pas au niveau 2 ou dans les répertoires de niveaux supérieurs (ex. : _/www/test/_ , _/www/test/test2/_)
+Le fichier _.ovhconfig_ fonctionne à la racine de l’hébergement ou dans un sous-répertoire de niveau 1 (ex. : _/www/_) mais pas dans des répertoires de niveau 2 ou supérieurs (ex. : _/www/test/_ , _/www/test/test2/_)
 
 
 ### Étape 3 : Vérification du contenu média (images, vidéos...)
 
 Lorsqu’on accède à un site web, tout le contenu doit pouvoir être téléchargé par le navigateur.
 
-Cette situation peut être particulièrement problématique si on tente d’accéder à un site web non optimisé à partir d’un appareil mobile.
+D'importants ralentissements peuvent être constatés si l'on tente d’accéder à un site web non optimisé depuis un appareil mobile.
 
 L’utilisation d’images et des vidéos compressées constitue un excellent moyen de diminuer le temps de chargement.
 De nombreux algorithmes et outils peuvent être utilisés pour optimiser votre contenu. Il existe par ailleurs des plugins pour la plupart des CMS courants.
@@ -125,7 +125,7 @@ Quels sont les différents types de renseignements qui peuvent être affichés?
 
 - **Connexions sortantes**: Cette fonctionnalité vous permet de voir la requête TCP émise par le serveur; par exemple en cas de piratage de votre site web, le serveur pourrait être utilisé pour attaquer d’autres sites web externes. Vous pouvez également vérifier les appels externes envoyés par des modules comme Facebook, Twitter etc. La réduction du nombre de requêtes TCP sortantes constitue un excellent moyen de diminuer le temps de chargement, car si le serveur dont vous sollicitez le contenu tarde à répondre, le temps de chargement de votre site web augmentera.
 
-- **Commandes FTP** : Affiche les différentes commandes FTP qui ont été utilisées par l’hébergement. Par exemple, les tentatives de connexion qui ont réussi et échoué, les téléchargements, les chargements et la suppression des fichiers, etc.
+- **Commandes FTP** : Affiche les différentes commandes FTP qui ont été utilisées par l’hébergement. Par exemple, les tentatives de connexion qui ont réussi et en échec, les téléchargements, les chargements et la suppression des fichiers, etc.
 
 Les deux catégories suivantes sont visibles seulement si vous utilisez actuellement une base de données dans votre forfait d’hébergement. Sélectionnez le nom de votre base de données et la période souhaitée.
 
@@ -134,7 +134,8 @@ Les deux catégories suivantes sont visibles seulement si vous utilisez actuelle
 - **Requêtes SQL**: Affiche le nombre de requêtes.
 
 ### Étape 5 : Vérification des requêtes sur le réseau
-La [Surveillance réseau](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external} constitue un outil d’analyse utile qui est intégré dans le navigateur Mozilla Firefox et qui permet d’analyser en détail le temps de chargement d’une page web. 
+
+La [Surveillance réseau](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external} constitue un outil d’analyse utile qui est intégré au navigateur Mozilla Firefox et qui permet d’analyser en détail le temps de chargement d’une page web. 
 
 Avec cet outil, vous pouvez vérifier les éléments de votre site qui sont plus lents ou plus lourds à charger.
 Il permet de circonscrire les images et le contenu qui augmentent la durée de chargement du site web et de définir des priorités si une optimisation est nécessaire.
@@ -168,7 +169,7 @@ Pour vous assurer que votre forfait d’hébergement est adaptée aux besoins de
 > [!primary]
 > Cette étape est facultative si vous n’utilisez pas de base de données.
 
-Vous pouvez accéder à votre base de données à l’aide de PHPMyAdmin; les instructions d’utilisation de PHPMyAdmin vont au-delà de la portée de ce guide. Par conséquent, nous n’aborderons pas le sujet en détail.
+Vous pouvez accéder à votre base de données à l’aide de PHPMyAdmin; l'utilisation détaillée de PHPMyAdmin va au-delà de la portée de ce guide. Par conséquent, nous n’aborderons pas le sujet en détail.
 Toutefois, il existe un grand nombre de guides externes qui traitent le sujet.
 
 **Comment accéder à la base de données par le biais de phpMyAdmin :** Pour accéder à votre base de données par le biais de phpMyAdmin, procédez comme suit à partir de [l’espace client OVHcloud](https://www.ovh.com/auth/?action=alleraugestionnaire){.external} :
@@ -194,7 +195,6 @@ ALTER TABLE `test` ADD INDEX (`ville`);
 #### Dans vos scripts
 
 - **Afficher la limite :** Restreignez le nombre de résultats affichés (par exemple : 10 par page) dans la partie LIMITE de votre requête SQL.
-
 
 - **Ordonner les requêtes :** Regroupez vos requêtes au début du script comme suit :
 
@@ -229,7 +229,7 @@ Par exemple :
 ```
 
 #### Éviter les options qui font appel à une utilisation intensive des ressources :
-Évitez d’utiliser la clause « HAVING » qui peut ralentir les recherches. Vous devriez également éviter « GROUP BY », à moins que son utilisation soit absolument nécessaire.
+Évitez d’utiliser la clause « HAVING » qui peut ralentir les recherches. Évitez également la clause « GROUP BY », à moins que son utilisation soit absolument nécessaire.
 
 
 #### SQL privé
