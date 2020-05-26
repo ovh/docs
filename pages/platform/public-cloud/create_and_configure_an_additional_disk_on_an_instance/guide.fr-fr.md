@@ -3,7 +3,8 @@ title: 'Créer et configurer un disque supplementaire sur une instance'
 slug: creer-et-configurer-un-disque-supplementaire-sur-une-instance
 excerpt: 'Découvrez comment créer et configurer un disque supplémentaire sur une de vos instances.'
 legacy_guide_number: 1863
-section: 'Base de connaissances'
+section: 'Stockage'
+order: 3
 ---
 
 **Dernière mise à jour le 14 novembre 2019**

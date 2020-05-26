@@ -2,7 +2,8 @@
 title: Débuter avec l’API Glance
 slug: debuter-avec-lapi-glance
 legacy_guide_number: 2072
-section: Actions via API et lignes de commande
+section: Gestion via OpenStack
+order: 5
 ---
 
 

@@ -3,7 +3,8 @@ title: 'Modifier les serveurs DNS d’une instance'
 slug: modifier-les-serveurs-dns-dune-instance
 excerpt: 'Modifier les serveurs DNS par défaut d’une instance Public Cloud'
 legacy_guide_number: 1985
-section: 'Base de connaissances'
+section: 'Réseau'
+order: 22
 ---
 
 **Dernière mise à jour le 18/11/2019**

@@ -2,7 +2,8 @@
 title: Débuter avec l’API Nova
 slug: debuter-avec-lapi-nova
 legacy_guide_number: 1935
-section: Actions via API et lignes de commande
+section: Gestion via OpenStack
+order: 3
 ---
 
 

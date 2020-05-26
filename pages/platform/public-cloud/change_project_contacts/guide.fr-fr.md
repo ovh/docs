@@ -3,7 +3,8 @@ title: 'Changer les contacts d’un projet'
 excerpt: 'Découvrez comment gérer les contacts de vos projets Public Cloud'
 slug: changer-les-contacts-dun-projet
 legacy_guide_number: 2106
-section: 'Base de connaissances'
+section: 'Gestion de projets'
+order: 7
 ---
 
 **Dernière mise à jour le 10 avril 2020**

@@ -3,7 +3,8 @@ title: 'Augmenter la taille d’un disque supplémentaire'
 excerpt: 'Découvrez comment augmenter la taille d’un disque supplémentaire ainsi que celle de la partition principale.'
 slug: augmenter-la-taille-dun-disque-supplementaire
 legacy_guide_number: 1865
-section: 'Base de connaissances'
+section: 'Stockage'
+order: 6
 ---
 
 **Dernière mise à jour le 14 novembre 2019**

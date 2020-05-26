@@ -2,7 +2,8 @@
 title: 'Créer des clés SSH'
 slug: creation-des-cles-ssh
 excerpt: 'Générez une clé SSH afin de vous connecter à votre instance'
-section: Sécurité
+section: 'Gestion depuis l''espace client'
+order: 4
 ---
 
 **Dernière mise à jour le 20 décembre 2019**
