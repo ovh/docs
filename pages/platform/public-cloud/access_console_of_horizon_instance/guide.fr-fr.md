@@ -2,7 +2,8 @@
 title: Acceder a la console d’une instance dans Horizon
 slug: acceder-a-la-console-dune-instance-dans-horizon
 legacy_guide_number: 1782
-section: Base de connaissances
+section: Gestion depuis Horizon
+order: 15
 ---
 
 
