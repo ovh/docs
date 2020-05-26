@@ -2,7 +2,7 @@
 title: 'Sauvegarder une instance'
 slug: sauvegarder-une-instance
 excerpt: 'Découvrez comment sauvegarder une instance Public Cloud en quelques clics'
-section: 'Gestion depuis l'espace client'
+section: 'Gestion depuis l''espace client'
 order: 1
 ---
 
