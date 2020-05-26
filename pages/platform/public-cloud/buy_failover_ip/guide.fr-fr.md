@@ -3,7 +3,8 @@ title: 'Acheter une IP Failover'
 slug: acheter-une-ip-failover
 excerpt: 'Découvrez comment commander des adresses IP Failover pour vos instances'
 legacy_guide_number: 2030
-section: 'Base de connaissances'
+section: 'Réseau'
+order: 1
 ---
 
 **Dernière mise à jour le 21/11/2019**

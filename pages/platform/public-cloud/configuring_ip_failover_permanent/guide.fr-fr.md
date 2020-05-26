@@ -2,7 +2,8 @@
 title: Rendre la configuration IP Fail Over persistante
 slug: rendre-la-configuration-ip-fail-over-persistante
 legacy_guide_number: 1885
-section: Base de connaissances
+section: Réseau
+order: 4
 ---
 
 

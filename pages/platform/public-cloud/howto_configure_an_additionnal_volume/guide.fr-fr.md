@@ -2,7 +2,9 @@
 title: Configurer un volume additionnel
 slug: configurer-un-volume-additionnel
 excerpt: Tutoriel de configuration d'un disque additionnel sur un serveur cloud dans l'offre Public Cloud
-section: Tutoriels
+section: Stockage
+order: 5
+hidden: true
 ---
 
 

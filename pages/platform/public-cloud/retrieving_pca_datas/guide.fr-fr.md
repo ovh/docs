@@ -2,7 +2,8 @@
 title: Récupérer les donnees provenant de PCA
 slug: recuperer-les-donnees-provenant-de-pca
 legacy_guide_number: 2067
-section: Base de connaissances
+section: Stockage
+order: 8
 ---
 
 
