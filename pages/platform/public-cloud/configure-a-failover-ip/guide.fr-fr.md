@@ -3,6 +3,7 @@ title: 'Configurer une IP fail-over'
 slug: configurer_une_ip_failover
 excerpt: 'Découvrez comment configurer une IP fail-over sur plusieurs distributions Linux et Windows'
 section: Réseau
+order: 2
 ---
 
 **Dernière mise à jour le 31/07/2019**
