@@ -34,7 +34,7 @@ W ramach serwerów dedykowanych narzędzie RTM zbiera w czasie rzeczywistym info
 
 ##### Beamium
 
-https://github.com/ovh/beamium
+[https://github.com/ovh/beamium](https://github.com/ovh/beamium)
 
 Narzędzie Beamium zbiera metryki z terminali HTTP, takie jak _http://127.0.0.1:9100/metrics_, i obsługuje formaty Prometheus Sensision. 
 

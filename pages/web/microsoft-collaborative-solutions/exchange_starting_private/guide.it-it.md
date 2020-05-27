@@ -66,13 +66,13 @@ Una volta completato questo step, un messaggio ti informa che la configurazione 
 
 Se il tuo dominio non è associato allo stesso identificativo cliente o non è ospitato in OVHcloud, riceverai un’altra email con le informazioni necessarie a modificare la tua zona DNS.
 
-L’email contiene gli indirizzi IPv4 e IPv6 della tua piattaforma: Inserisci questi indirizzi nella zona DNS del sottodominio creato allo [Step 2](./#step-2-avvia-la-tua-piattaforma){.external}, rispettivamente sotto forma di un record “A” e di un record “AAAA”. Se disponi di un dominio OVHcloud, consulta la nostra guida [Modifica una zona DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/).
+L’email contiene gli indirizzi IPv4 e IPv6 della tua piattaforma: Inserisci questi indirizzi nella zona DNS del sottodominio creato allo [Step 2](./#step-2-avvia-la-piattaforma){.external}, rispettivamente sotto forma di un record “A” e di un record “AAAA”. Se disponi di un dominio OVHcloud, consulta la nostra guida [Modifica una zona DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/).
 
 
 
 ### Step 4: conferma il certificato SSL
 
-Una volta completato [lo Step 2](./#step-2-avvia-la-tua-piattaforma){.external}, ricevi un’email all’indirizzo scelto per confermare il tuo certificato SSL.
+Una volta completato lo [Step 2](./#step-2-avvia-la-piattaforma){.external}, ricevi un’email all’indirizzo scelto per confermare il tuo certificato SSL.
 
 Questa email è inviata dall’organismo che rilascia il certificato SSL e ha come oggetto:
 
