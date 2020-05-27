@@ -1,101 +1,109 @@
 ---
 title: Zarządzanie kontaktami swoich usług
 slug: zarzadzanie_kontaktami
-excerpt: Dowiedz się, jak zarządzać kontaktami swoich usług OVH
+excerpt: 'Dowiedz się, jak zarządzać kontaktami dla Twoich usług OVHcloud'
 section: Pierwsze kroki
 ---
 
-**Ostatnia aktualizacja dnia 2019-01-03** 
+**Ostatnia aktualizacja z dnia 27-05-2020** 
 
 ## Wprowadzenie
 
-Usługa utworzona w OVH jest zwykle powiązana z kilkoma kontaktami. Umożliwiają one nadanie różnych uprawnień do zarządzania usługą.
+Większość usług tworzonych w OVHcloud jest zarządzana przez wiele kontaktów. Każdy z tych kontaktów jest przypisany do identyfikatora klienta. 
 
-**Dowiedz się, jak zarządzać kontaktami swoich usług OVH**
+**Dowiedz się, jak zarządzać kontaktami Twoich usług OVHcloud.**
+
+## Definicja
+
+Istnieją trzy rodzaje kontaktów:
+
+- **Kontakt administracyjny** zarządza kwestiami administracyjnymi i technicznymi usługi. Ma uprawnienia do modyfikowania wszystkich kontaktów i może wprowadzać zmiany w informacjach właściciela usługi, takich jak nazwy domeny.
+- **Kontakt techniczny** zarządza wyłącznie kwestiami technicznymi usługi.
+- **Kontakt księgowy** zarządza wyłącznie płatnościami usługi, w tym przelewami. Kontakt ten otrzymuje zwłaszcza powiadomienia o odnowieniu. 
+
+Identyfikator klienta to osobisty login, który otrzymujesz e-mailem podczas tworzenia konta klienta w OVHcloud. Najczęściej składa się on z dwóch liter i następujących po nich cyfr. Na przykład: **xx11111-ovh**. Podczas zamawiania usług identyfikator ten jest do nich przypisany jako kontakt.
+
+![Contact management](images/managing_contacts_scheme.png){.thumbnail}
+
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Dostęp do adresu e-mail wpisanego w koncie klienta.
-- Mieć wystarczające uprawnienia do danej usługi.
-- Posiadać identyfikator klienta nowego kontaktu (któremu chcesz nadać uprawnienia).
-- Nowy kontakt musi mieć dostęp do adresu e-mail wpisanego w jego koncie klienta.
-- Stary i nowy kontakt księgowy muszą być na bieżąco ze swoimi płatnościami.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do adresu e-mail podanego w profilu.
+- Wystarczające uprawnienia dotyczące danej usługi.
+- Posiadanie identyfikatora klienta nowego kontaktu (dla którego wprowadzasz zmianę).
+- Nowy kontakt musi mieć dostęp do adresu e-mail podanego w jego profilu.
+- Stary i nowy kontakt księgowy muszą mieć uregulowane płatności.
 
 ## W praktyce
 
 ### Dostęp do zarządzania kontaktami
 
-Zaloguj się do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij nazwisko powiązane z Twoim identyfikatorem klienta na pasku menu w górnym prawym rogu, następnie kliknij `Moje kontakty`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij nazwę powiązaną z Twoim identyfikatorem klienta na pasku menu w prawym górnym rogu, a następnie kliknij pozycję `Zarządzanie kontaktami`{.action}.
 
-![Zarządzanie kontaktami](images/contactmanagement0.png){.thumbnail}
+![Contact management](images/hubcontacts.png){.thumbnail}
 
-Tabela wyświetli usługi, do których zarządzania masz uprawnienia jako jeden z kontaktów.
+Pojawi się tabela, która umożliwia wyświetlenie różnych usług, dla których Twój identyfikator klienta jest podany jako kontakt.
 
-![Zarządzanie kontaktami](images/contactmanagement1.png){.thumbnail}
+![Contact management](images/managing_contacts_02.png){.thumbnail}
 
-Poniżej znajdziesz kilka wyjaśnień na temat rodzajów dostępnych kontaktów:
 
-- **kontakt administracyjny** zarządza administracyjnymi i technicznymi aspektami usługi. Ma uprawnienia do modyfikacji wszystkich kontaktów i może wprowadzać zmiany w informacjach o właścicielu usługi, na przykład aktualizować dane właściciela nazwy domeny;
-- **kontakt techniczny** zarządza tylko aspektami technicznymi usługi;
-- **kontakt księgowy** zarządza tylko aspektami rozliczeniowymi usługi. Ten kontakt otrzymuje powiadomienia związane z odnowieniem usług.
 
-Identyfikator klienta to osobisty identyfikator, który otrzymujesz e-mailem podczas tworzenia konta klienta w OVH. Składa się on z dwóch liter, a następnie z kilku cyfr, a kończy się na -ovh (na przykład: aa123456-ovh). Podczas zamawiania rozwiązań ten identyfikator jest powiązany z usługami, które wybrałeś.
+### Zmiana kontaktów usługi
 
-![Zarządzanie kontaktami](images/contactmanagement21.png){.thumbnail}
+Na stronie zarządzania kontaktami kliknij przycisk `…`{.action} po prawej stronie usługi, którą chcesz zmienić, a następnie kliknij `Zmień kontakty`{.action}. Podaj nowy kontakt lub nowe kontakty, a następnie kliknij przycisk `Zatwierdź`{.action}.
 
-### Edytowanie kontaktów usługi
+![Contact management](images/managing_contacts_03.png){.thumbnail}
 
-Po przejściu na stronę zarządzania kontaktami, kliknij ikonę ołówka. Wpisz nowy kontakt lub kontakty i potwierdź zmianę.
+![Contact management](images/managing_contacts_04.png){.thumbnail}
 
-![Zarządzanie kontaktami](images/contactmanagement3.png){.thumbnail}
+Do kontaktów, których dotyczy ten proces modyfikacji, zostanie wysłany e-mail.
 
-Jeśli operacja przebiegła pomyślnie, na zielonym polu pojawia się komunikat informujący, że żądanie zmiany zostało zarejestrowane. Informuje również, że zostanie wysłany e-mail do kontaktów biorących udział w tym procesie zmiany.
+#### Jestem kontaktem administracyjnym
 
-**Ważne**: w zależności od bieżącej roli, być może nie będziesz mieć możliwości edytowania innych kontaktów.
+Jako administrator możesz przeprowadzać różne działania wobec kontaktów dla usługi, na przykład:
 
-#### Uprawnienia kontaktu administracyjnego
+- Wyznaczać nowy kontakt do zarządzania technicznego i/lub księgowego. Konieczne jest potwierdzenie z Twojej strony oraz ze strony nowego kontaktu. Stary kontakt otrzyma e-mail informujący o zmianie, gdy ta zostanie zakończona.
 
-Jako administrator możesz wykonywać zmiany względem kontaktów usługi:
+- Przywracać zarządzanie techniczne i/lub księgowe. Ten wniosek wymaga zatwierdzenia. Stary kontakt otrzyma e-mail informujący o zmianie. 
 
-- wyznaczenie nowego kontaktu w zakresie zarządzania technicznego i/lub rozliczeń. Konieczne będzie Twoje potwierdzenie oraz ze strony nowego kontaktu. Stary kontakt otrzyma wiadomość e-mail z informacją o zmianie, jeśli zostanie ona dokończona;
-- odzyskiwanie zarządzania technicznego i/lub rozliczeń. To zlecenie będzie wymagało potwierdzenia. Stary kontakt otrzyma e-mail z informacją o zmianie;
-- wyznaczanie nowego kontaktu administracyjnego zamiast ciebie. Konieczne będzie Twoje potwierdzenie oraz ze strony nowego kontaktu.
+- Wyznaczać nowy kontakt administracyjny na swoje miejsce. Konieczne jest potwierdzenie z Twojej strony oraz ze strony nowego kontaktu. 
 
-**Ważne**: kontakt administracyjny może, w niektórych przypadkach, wprowadzić zmiany w informacjach o właścicielu usługi, na przykład dla nazwy domeny. Zachęcamy do zachowania czujności względem wykonywanych zmian w kontaktach.
+#### Jestem kontaktem technicznym
 
-#### Uprawnienia kontaktu technicznego
+Możesz wyznaczyć wyłącznie inny kontakt techniczny na Twoje miejsce. Konieczne jest potwierdzenie z Twojej strony oraz ze strony nowego kontaktu technicznego.
 
-Możesz jedynie wyznaczyć inny kontakt techniczny, który cię zastąpi. Konieczne będzie Twoje potwierdzenie oraz ze strony nowego kontaktu technicznego.
+#### Jestem kontaktem księgowym
 
-#### Uprawnienia kontaktu księgowego
+Możesz wyznaczyć wyłącznie inny kontakt księgowy na swoje miejsce. Konieczne jest potwierdzenie z Twojej strony oraz ze strony nowego kontaktu księgowego.
 
-Możesz jedynie wyznaczyć inny kontakt księgowy, który cię zastąpi. Konieczne będzie Twoje potwierdzenie oraz ze strony nowego kontaktu księgowego.
+> [!warning]
+> Stary i nowy kontakt księgowy nie może mieć żadnych nieuregulowanych faktur.
 
-**Ważne**:  stary i nowy kontakt księgowy muszą być na bieżąco z płatnościami za swoje usługi.
+### Zatwierdzenie, odrzucenie lub śledzenie zmiany kontaktu
 
-### Zatwierdzanie, odrzucanie lub śledzenie zmiany kontaktu
+Aby śledzić bieżące wnioski i zarządzać nimi, kliknij kartę `Moje wnioski`{.action}. Tutaj możesz zaakceptować lub odrzucić wniosek.
 
-Aby śledzić bieżące zlecenia i nimi zarządzać, kliknij kartę `Moje zlecenia`{.action}. Tutaj możesz zaakceptować lub odrzucić zmianę.
+![Contact management](images/managing_contacts_05.png){.thumbnail}
 
-![Zarządzanie kontaktami](images/contactmanagement4.png){.thumbnail}
+W tym celu musisz mieć kod potwierdzający (zwany również tokenem) zawarty w e-mailu z prośbą o zatwierdzenie lub odrzucenia wniosku.
 
-Aby potwierdzić lub odrzucić zlecenie zmiany, musisz posiadać kod weryfikacyjny (zwany również tokenem) zawarty w wiadomości e-mail.
+> [!primary]
+> Ten jednorazowy kod jest przypisany do konkretnej osoby i różni się dla obu kontaktów.
 
-** Ważne**: ten kod jest osobisty, jednorazowego użytku i będzie różny dla obu kontaktów.
+Otrzymany e-mail zawiera również link prowadzący bezpośrednio do strony umożliwiającej zatwierdzenie lub odrzucenie wniosku. Gdy klikniesz ten link, kod potwierdzający (token) zostanie automatycznie wstępnie uzupełniony.
 
-Otrzymana wiadomość e-mail zawiera również link prowadzący bezpośrednio do strony umożliwiającej potwierdzenie lub odrzucenie zmian. Za pośrednictwem tej wiadomości e-mail, kod weryfikacyjny (token) zostanie wstępnie automatycznie wpisany.
+Jeśli jeden z kontaktów nie otrzymał e-maila, może to na przykład oznaczać, że adres kontaktowy podany w profilu jest nieaktualny. Można to sprawdzić w swoim profilu, w razie potrzeby zmienić adres, a następnie ponownie poprosić o przesłanie e-maila, klikając przycisk `Prześlij ponownie wniosek`{.action}.
 
-Jeśli jeden z kontaktów nie otrzymał e-maila, to prawdopodobnie adres kontaktowy podany w profilu jest nieaktualny. Możesz go sprawdzić w swoim profilu, w razie potrzeby zmodyfikować, a następnie poprosić o ponowne wysłanie wiadomości e-mail, klikając `Wyślij ponownie zlecenie`{.action}.
+![Contact management](images/managing_contacts_06.png){.thumbnail}
 
-![Zarządzanie kontaktami](images/contactmanagement5.png){.thumbnail}
+Jeśli tylko jeden kontakt zatwierdzi zmianę, pojawi się komunikat informujący, że wniosek wciąż oczekuje na zatwierdzenie przez drugi kontakt. Gdy jeden z kontaktów zatwierdzi wniosek, informacje wyświetlane w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} zaktualizują się w ciągu kilku minut.
 
-Jeśli tylko jeden kontakt potwierdził zmianę, pojawi się komunikat informujący, że zlecenie zmiany nadal oczekuje na potwierdzenie przez drugi kontakt. Jeśli jeden z kontaktów właśnie przed chwilą zatwierdził zlecenie, jego wyświetlenie w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external } może zostać zaktualizowane za kilka minut.
+![Contact management](images/managing_contacts_07.png){.thumbnail}
 
-![Zarządzanie kontaktami](images/contactmanagement6.png){.thumbnail}
+Gdy oba kontakty zatwierdzą wniosek, zmiany wejdą w życie po kilku minutach. Oba kontakty otrzymają e-mail informujący o pomyślnym rozpatrzeniu wniosku.
 
-Zmiana będzie obowiązywać, gdy tylko oba kontakty potwierdzą zlecenie. Oba kontakty otrzymają wiadomość e-mail z informacją, że zmiana została przetworzona.
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
+Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en)
