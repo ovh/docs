@@ -1,17 +1,17 @@
 ---
-title: 'Deploying cPanel on CentOS 7'
+title: 'Deploying cPanel on VPS 2020'
 slug: cpanel
 excerpt: 'Find out how to instantiate a VPS with the pre-installed cPanel application'
 section: 'Advanced usage'
 ---
 
-**Last updated 15th May 2020**
+**Last updated 28th May 2020**
 
 ## Objective
 
 cPanel is a control panel designed for web hosting. Web hosting tasks are simplified, as it is made up of a graphical interface that allows the automation of settings.
 
-**Learn how to deploy cPanel with pre-installed applications on a VPS in one click.**
+**Learn how to deploy cPanel with pre-installed applications on a VPS 2020**
 
 ## Requirements
 
@@ -25,32 +25,46 @@ When your VPS is ready, you will receive an email providing the information to c
 >
 >You can connect to cPanel from https://*hostname*:2087/*session_parameters*
 
+If you already have a VPS and want to have cPanel on it, you can reinstall the VPS from your control panel with the "CentOS 7 + cPanel" template.
 
-Your cPanel server is now ready to use.
+> [!warning]
+>
+> If you reinstall a VPS, all data stored on the VPS will be lost.
+>
+
 
 ## Instructions
 
 ### First connection
 
-The URL above allows you to log in without credentials (user and password) to your cPanel manager.
-You will then have to validate your licence and configure your root password in order to access the interface.
+Once you received the email with the unique link, please proceed to the link to do the initial setup. 
+
+> [!primary]
+>
+> If the link has expired already, please reinstall the VPS again with cPanel.
+>
+
+The URL above allows you to log in without credentials (user and password) to your WHM manager.
+
+1. First read and accept the terms of cPanel
 
 ![horizon](images/license_validation.png)
 
-The generated URL is temporary to grant a secure first connection. If a prompt for identification is displayed when you click the link, the token in the URL has expired.
-You can regenerate this URL with a command line tool available on your VPS. The procedure is explained [below](./#regenerate-your-login-url).
-The next page will prompt you for your email address and the nameservers you would like to use.
+2. Provide your email and nameservers you wish to set on the VPS
 
 ![horizon](images/setup_config_cpanel.png)
 
-### Regenerate your login URL
+3. Set root password
 
-Log in via SSH using the credentials provided in the installation email and run the following command:
+![horizon](images/change_root.png)
 
-```sh
-sudo whmlogin
-```
-You can now click on the generated link to access your administrative interface and configure your root password.
+Now you should be able to login to WHM and SSH using the root user with the password that was just set.
+
+### Securing your service
+
+We recommend that you take further additional steps to ensure you secure your WHM & VPS. For this we recommend reading the recommendations provided by cPanel [here](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+
+Furthermore we recommend setting up the [OVHcloud network firewall](https://docs.ovh.com/gb/en/dedicated/firewall-network/) and [setup a backup solution](https://docs.ovh.com/gb/en/vps/tips-for-securing-a-vps/#backing-up-your-system-and-your-data) on your VPS.
 
 ## Go further
 
