@@ -49,15 +49,15 @@ Once you received the email with the unique link, please proceed to the link to 
 
 The URL above allows you to log in without credentials (user and password) to your WHM manager.
 
-1. First read and accept the terms of cPanel
+#### Step 1: Read and accept the terms of cPanel
 
 ![horizon](images/license_validation.png)
 
-2. Provide your email and nameservers you wish to set on the VPS
+#### Step 2: Provide your email and nameservers you wish to set on the VPS
 
 ![horizon](images/setup_config_cpanel.png)
 
-3. Set root password
+#### Step 3: Set the root password
 
 ![horizon](images/change_root.png)
 
