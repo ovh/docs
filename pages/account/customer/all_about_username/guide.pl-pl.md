@@ -1,91 +1,161 @@
 ---
-title: 'Identyfikator klienta'
-excerpt: 'Identyfikator klienta'
+title: 'Tworzenie i używanie identyfikatora klienta oraz zarządzanie nim'
+excerpt: 'Dowiedz się, jak utworzyć identyfikator i zarządzać danymi osobowymi'
 slug: identyfikator_klienta
 legacy_guide_number: g2123
+Section: 'Pierwsze kroki'
 ---
 
-## 
-Identyfikator klienta pozwala na:
+## Wprowadzenie
+
+Za pomocą identyfikatora klienta możesz:
+
+- składać zamówienia online,
+- łatwo zarządzać wszystkimi usługami w Panelu klienta,
+- zalogować się podczas kontaktu z zespołem obsługi klienta OVHcloud, co ułatwi udzielenie odpowiedzi na Twoje pytania.
+
+Identyfikator składa się najczęściej z dwóch liter i następujących po nich cyfr. Na przykład: **xx11111-ovh**.
+
+Jest też nazywany „NIC-handle”. 
+
+**Dowiedz się, jak utworzyć identyfikator klienta i logować się do konta, a także zarządzać danymi osobowymi i dostępem do konta.**
 
 
-- składanie zamówień,
-- logowanie do panelu klienta,
-- zarządzanie wszystkimi usługami w panelu klienta.
+## Jak utworzyć identyfikator klienta?
+
+Jeśli jeszcze nie masz identyfikatora, wystarczy przejść na stronę [tworzenia konta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+
+W internetowym formularzu wprowadź swoje dane, uważając, aby podać **prawidłowy adres e-mail**.
+
+> [!primary]
+>
+> Zachęcamy do podania adresu e-mail spoza Twojej domeny oraz adresu zapasowego. Adres zapasowy **musi** być inny niż adres główny. 
+> 
+
+Po zatwierdzeniu formularza otrzymasz wiadomość e-mail z potwierdzeniem utworzenia konta. Zachowaj swój identyfikator klienta (NIC-handle), a zwłaszcza powiązane z nim hasło. 
+
+Aby zwiększyć poziom bezpieczeństwa konta, zalecamy podjęcie następujących kroków:
+
+- Zapoznaj się z [przewodnikiem dotyczącym tworzenia hasła do konta i zarządzania nim](../zarzadzanie-haslem/).
+- Zabezpiecz dostęp do konta, stosując weryfikację dwuetapową. Z tego przewodnika dowiesz się, jak ją włączyć: [Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](../zabezpieczenie-konta-za-pomoca-2FA/).
+
+## Gdzie znaleźć identyfikator klienta?
+
+Podanie identyfikatora klienta jest wymagane przy każdym logowaniu do konta lub kontakcie z zespołem obsługi klienta OVHcloud. Twój identyfikator znajdziesz w różnych miejscach.
+
+### W e-mailach wysyłanych przez OVHcloud
+
+Identyfikator klienta jest podany w e-mailu z potwierdzeniem utworzenia konta, w wiadomościach z potwierdzeniem zamówienia lub odnowienia usług, a także w powiadomieniach dotyczących logowania do konta.
 
 
-Ma on postać: dm429850-OVH
+### Na fakturach
 
-Identyfikator klienta nosi również nazwę NIC-handle.
+Identyfikator klienta jest podany w prawym górnym rogu wszystkich faktur.
 
-
-## 
-Jeśli nie masz jeszcze identyfikatora klienta, przejdź na tę [stronę](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Pojawi się formularz. Wpisz swoje dane. Pamiętaj, żeby podać prawidłowy aktywny adres e-mail.
-
-## Uwaga:
-Zalecamy podanie zewnętrznego adresu e-mail w przypadku głównego oraz zapasowego adresu e-mail do kontaktu.
-Po wypełnieniu formularza otrzymasz e-mail z potwierdzeniem założenia konta klienta. Zapamiętaj swój identyfikator klienta (nic-handle) oraz przypisane do niego hasło.
+![identyfikator klienta](images/nichandle01b.png){.thumbnail}
 
 
-## W e-mailu z potwierdzeniem założenia konta klienta
-Identyfikator klienta jest podawany w e-mailu potwierdzającym założenie konta klienta, w e-mailach z potwierdzeniem złożenia zamówienia oraz odnowienia oraz w e-mailach z powiadomieniem o logowaniu do panelu klienta.
+### W Panelu klienta
+
+Identyfikator znajdziesz w Panelu klienta, klikając swoją nazwę w prawym górnym rogu.
 
 
-## Na fakturach
-Identyfikator klienta jest podany na fakturach w prawym górnym rogu.
-
-![](images/3948.png){.thumbnail}
+![identyfikator klienta](images/newhub1.png){.thumbnail}
 
 
-## W panelu klienta
-Po zalogowaniu do panelu klienta identyfikator klienta jest widoczny w górnym prawym rogu.
+## Jak zalogować się do Panelu klienta?
 
-![](images/3949.png){.thumbnail}
+Przejdź do [strony uwierzytelniania OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, a następnie podaj identyfikator i hasło.
 
+![identyfikator klienta](images/nichandle03.png){.thumbnail}
 
-## 
-Hasło można odzyskać klikając na link Forgotten password? na stronie logowania do [panelu klienta](https://www.ovh.com/manager/web/login/).
+Przeprowadź procedurę [weryfikacji dwuetapowej](../zabezpieczenie-konta-za-pomoca-2FA/), jeśli jest ona włączona. To dodatkowe zabezpieczenie konta stanowi uzupełnienie identyfikatora i hasła. Można z niego korzystać za pośrednictwem posiadanego urządzenia: telefonu, tabletu lub kodu bezpieczeństwa.
 
-Na adres e-mail do kontaktu otrzymasz wiadomość z potwierdzeniem zmiany hasła. Jeśli nie masz dostępu do tego adresu, prześlij [ten wniosek](https://www.ovh.pl/cgi-bin/pl/procedure/procedureChangeEmail.cgi).
+> [!primary]
+> Jeśli konto nie zostało zabezpieczone weryfikacją dwuetapową, w celu potwierdzenia logowania należy podać kod weryfikacyjny. Zostanie on wysłany e-mailem na **główny adres** konta.  
+>
+> Jeśli e-mail z kodem nie dotarł, sprawdź folder ze spamem/niechcianymi wiadomościami w Twojej skrzynce e-mail.
+>
 
-![](images/3936.png){.thumbnail}
+### W przypadku utraty hasła
 
+Jeśli utracisz hasło lub je zapomnisz, zapoznaj się z [przewodnikiem dotyczącym sposobu zmiany hasła](../zarzadzanie-haslem/#jesli-nie-znasz-swojego-aktualnego-hasla).
 
-## Zmiana danych
-Możesz zmienić dane przypisane do konta klienta w panelu klienta. W tym celu:
+### W przypadku niedostępności adresu e-mail
 
+Jeśli masz adres zapasowy, możesz [skontaktować się z zespołem obsługi klienta OVHcloud](https://www.ovhcloud.com/pl/contact/), aby adres zapasowy zmienić w główny. Po wykonaniu tego działania należy pamiętać, aby podać nowy adres zapasowy.
 
-- Kliknij na identyfikator klienta w prawym górnym rogu panelu klienta.
-- Kliknij na Moje konto.
+Jeśli nie masz adresu zapasowego lub też jest on niedostępny, możesz wysłać nam list zgodnie z tą [procedurą](https://www.ovh.pl/cgi-bin/pl/procedure/procedureChangeEmail.cgi){.external}. Gdy otrzymamy Twoją wiadomość i jeśli wszystkie żądane dokumenty potwierdzające będą zgodne, przystąpimy do zmiany Twojego kontaktowego adresu e-mail.
 
+## Jak zarządzać danymi osobowymi?
 
+### Zmiana danych osobowych
 
-![](images/3953.png){.thumbnail}
+Dane przypisane do konta klienta możesz zmienić w Panelu klienta. W tym celu kliknij swoją nazwę w prawym górnym rogu Panelu klienta, a następnie kliknij pozycję `Moje konto`{.action}.
 
-- Kliknij na Zmień.
+![identyfikator klienta](images/newhub2.png){.thumbnail}
 
+Następnie w sekcji „Mój profil” kliknij przycisk `…`{.action}, a następnie `Edytuj profil`{.action}.
 
+![identyfikator klienta](images/nichandle06.png){.thumbnail}
 
-![](images/3954.png){.thumbnail}
+Zmień dane, a następnie kliknij przycisk `Potwierdź`{.action}.
 
-- Zmień swoje dane i kliknij na przycisk Zatwierdź.
+> [!warning]
+>
+> Ważne, aby dane osobowe były **aktualne** i **dokładne**. O te informacje poprosi Cię zespół obsługi klienta OVHcloud, gdy się z nim skontaktujesz, i w stosownych przypadkach musisz być w stanie udowodnić, że są one poprawne (na przykład podczas procedury zmiany adresu e-mail możemy Cię poprosić o dokument potwierdzający, że adres zamieszkania jest taki sam jak adres podany w koncie).
+>
 
+### Zmiana głównego adresu e-mail
 
+Jeśli chcesz podać nowy główny kontaktowy adres e-mail, musisz to potwierdzić za pomocą kodu wysłanego na obecny główny kontaktowy adres e-mail. Po otrzymaniu kodu kliknij przycisk „Otrzymałem kod”.
 
-![](images/3955.png){.thumbnail}
+![identyfikator klienta](images/nichandle07.png){.thumbnail}
 
+Wpisz kod w rubryce „Kod potwierdzający”, a następnie potwierdź.
 
-## Użyteczne informacje
-Jeśli chcesz zmienić główny adres e-mail do kontaktu, będziesz musiał zatwierdzić tę zmianę za pomocą kodu wysłanego na dotychczasowy główny adres e-mail.
-Po otrzymaniu kodu kliknij na przycisk "Otrzymałem kod potwierdzający".
+![identyfikator klienta](images/nichandle08.png){.thumbnail}
 
-![](images/3956.png){.thumbnail}
-Podaj kod w zakładce "Kod potwierdzający" i zatwierdź.
+### Korzystanie ze swoich praw dotyczących danych osobowych
 
-![](images/3957.png){.thumbnail}
-Jeśli nie wykonasz tej operacji w ciągu 24 godzin, zmiana zostanie automatycznie zaakceptowana.
+Zgodnie z ogólnym rozporządzeniem o ochronie danych osobowych (RODO) możesz skorzystać z przysługujących Ci praw dotyczących ochrony danych osobowych, wypełniając [ten formularz](https://www.ovh.pl/ochrona-danych-osobowych/korzystanie-z-praw){.external}.
 
+### Usunięcie identyfikatora klienta
 
-## 
-Zapraszamy do zapoznania się z tym [przewodnikiem](https://www.ovh.pl/g1858.zarzadanie_kontaktami_i_danymi_osobowymi) na temat zarządzania kontaktami.
+Możesz zażądać usunięcia swojego identyfikatora klienta i związanych z nim danych, wypełniając [formularz korzystania z praw RODO](https://www.ovh.pl/ochrona-danych-osobowych/korzystanie-z-praw){.external} i wybierając w nim pozycję „Prawo do usunięcia danych”.
 
+> [!warning]
+>
+Usunięcie identyfikatora klienta wymaga spełnienia następujących warunków:
+>
+> - na koncie nie ma żadnej usługi,
+>
+> - na koncie nie ma żadnej nieopłaconej faktury lub zamówienia.
+>
+>
+
+## Zarządzanie dostępem do konta
+
+Danych identyfikacyjnych konta nie wolno udostępniać ani ujawniać.
+
+Jednak może zaistnieć potrzeba przekazania dostępu do usług OVHcloud osobom trzecim, niezależnie od tego, czy są one pracownikami Twojej firmy (np. webmaster), czy niezależnymi podmiotami (np. firma księgowa).
+
+W tych przypadkach OVHcloud pozwala na przekazanie dostępu do konta przy jednoczesnej ochronie danych identyfikacyjnych (hasło, weryfikacja dwuetapowa).
+
+### Dodawanie użytkowników
+
+Użytkownik może mieć uprawnienia do odczytu lub zapisu na Twoim koncie i we wszystkich Twoich usługach. Użytkowników tych można tworzyć i usuwać oraz zarządzać nimi w Panelu klienta. Aby dowiedzieć się więcej, zapoznaj się z [przewodnikiem dotyczącym zarządzania użytkownikami](../zarzadzanie_uzytkownikami/).
+
+### Zarządzanie kontaktami
+
+Zarządzanie administracyjne **lub** techniczne **lub** księgowe jedną lub kilkoma usługami w ramach konta można przekazać innemu identyfikatorowi klienta. Aby dowiedzieć się więcej, zapoznaj się z [przewodnikiem dotyczącym zarządzania kontaktami](../zarzadzanie_kontaktami/).
+
+## Co zrobić w przypadku podejrzenia kradzieży tożsamości?
+
+Jeśli otrzymasz e-mail informujący o nieznanym logowaniu do Panelu klienta, zalecamy [natychmiastową zmianę hasła do konta](../zarzadzanie-haslem/#w-panelu-klienta-ovhcloud) i [zabezpieczenie go weryfikacją dwuetapową](../zabezpieczenie-konta-za-pomoca-2FA/).
+
+Jeśli zauważysz podejrzaną aktywność na koncie, [skontaktuj się z obsługą klienta OVHcloud](https://www.ovhcloud.com/pl/contact/), aby nasz zespół mógł pomóc Ci w podjęciu odpowiednich kroków.
+
+## Sprawdź również
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
