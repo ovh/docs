@@ -5,7 +5,7 @@ excerpt: 'Find out how to use the secure interface to confirm sensitive operatio
 section: 'OVH services and options'
 ---
 
-**Last updated 31st January 2019**
+**Last updated 28th May 2020**
 
 ## Objective
 

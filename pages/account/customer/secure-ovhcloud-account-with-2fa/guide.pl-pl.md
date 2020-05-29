@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak poprawić bezpieczeństwo Twojego konta OVHcloud dzi
 section: Bezpieczeństwo
 ---
 
-**Ostatnia aktualizacja z dnia 15-11-2019**
+**Ostatnia aktualizacja z dnia 29-05-2020**
 
 ## Wprowadzenie
 
@@ -18,7 +18,7 @@ Możesz aktywować uwierzytelnianie z wykorzystaniem weryfikacji dwuetapowej (2F
 
 - Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 - Posiadanie telefonu komórkowego (w przypadku metody SMS-owej), smartfona lub tabletu (w przypadku aplikacji mobilnej), bądź klucza sprzętowego Universal Second Factor (U2F).
-- Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/).
+- Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](../zarzadzanie-haslem/).
 
 ## W praktyce
 
@@ -35,9 +35,9 @@ Po pierwszym powiązaniu aplikacji z Twoim kontem dostęp urządzenia do Interne
 
 ### Etap 1: aktywowanie Twojej pierwszej metody weryfikacji dwuetapowej
 
-- [Aktywuj weryfikację dwuetapową przez SMS](https://docs.ovh.com/pl/customer/aktywacja-weryfikacji-dwuetapowej-przez-sms/).
-- [Aktywuj weryfikację dwuetapową przy użyciu aplikacji mobilnej](https://docs.ovh.com/pl/customer/wlacz-weryfikacje-dwuetapowa-przez-aplikacje-mobilna/).
-- [Aktywuj weryfikację dwuetapową za pomocą klucza sprzętowego](https://docs.ovh.com/pl/customer/aktywacja-weryfikacji-dwuetapowej-za-pomoca-klucza-sprzetowego/).
+- [Aktywuj weryfikację dwuetapową przez SMS](../aktywacja-weryfikacji-dwuetapowej-przez-sms/).
+- [Aktywuj weryfikację dwuetapową przy użyciu aplikacji mobilnej](../wlacz-weryfikacje-dwuetapowa-przez-aplikacje-mobilna/).
+- [Aktywuj weryfikację dwuetapową za pomocą klucza sprzętowego](../aktywacja-weryfikacji-dwuetapowej-za-pomoca-klucza-sprzetowego/).
 
 Po dodaniu pierwszej metody możesz dodać jeszcze jedną lub dwie kolejne, aby mieć więcej sposobów logowania się do swojego konta.
 
@@ -90,11 +90,11 @@ Możesz także wykorzystać jeden z otrzymanych kodów bezpieczeństwa.
 
 Aby usunąć urządzenie, zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij Twoją nazwę użytkownika w prawym górnym rogu (pierwszy etap na poniższym obrazie), a następnie `Moje konto`{.action} (drugi etap). 
 
-![2FA](images/2fadevicedeletion1.png){.thumbnail}
+![2FA](images/hub2FAb.png){.thumbnail}
 
 Następnie kliknij przycisk `Bezpieczeństwo`{.action} (pierwszy etap na poniższym obrazie), a później `...`{.action} (drugi etap) z prawej strony Twojego urządzenia do usunięcia, a na koniec wybierz opcję `Usuń`{.action} (trzeci etap).
 
-![2FA](images/2fadevicedeletion2.png){.thumbnail}
+![2FA](images/hub2FAc.png){.thumbnail}
 
 
 ## Sprawdź również
