@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak poprawić bezpieczeństwo Twojego konta OVHcloud dzi
 section: Bezpieczeństwo
 ---
 
-**Ostatnia aktualizacja z dnia 15-11-2019**
+**Ostatnia aktualizacja z dnia 29-05-2020**
 
 ## Wprowadzenie
 
