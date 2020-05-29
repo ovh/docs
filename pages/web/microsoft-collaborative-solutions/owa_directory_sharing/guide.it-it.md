@@ -1,5 +1,5 @@
 ---
-title: 'Exchange 2016: condividi una cartella con la Webmail OWA'
+title: 'Exchange : condividi una cartella con la Webmail OWA'
 excerpt: ''
 slug: exchange_2016_condividi_una_cartella_con_la_webmail_owa
 legacy_guide_number: g1929
