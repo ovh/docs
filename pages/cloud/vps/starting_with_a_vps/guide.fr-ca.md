@@ -23,7 +23,7 @@ Un serveur privé virtuel (VPS, pour Virtual Private Server) est un serveur déd
 
 ## Prérequis
 
-- Avoir réservé votre VPS sur le [site OVHcloud](https://www.ovhcloud.com/fr/vps/){.external}.
+- Avoir réservé votre VPS sur le [site OVHcloud](https://www.ovhcloud.com/fr-ca/vps/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 - Disposer des informations de connexion envoyées par e-mail après l'installation
 
@@ -38,7 +38,7 @@ Ce tableau de bord contient des informations importantes sur votre service et vo
 
 Pour la gamme actuelle de VPS, poursuivez la lecture de ce guide à la section suivante, **Premiers pas (gamme VPS actuelle)**. 
 
-Pour un modèle VPS plus ancien, poursuivez la lecture de ce guide en cliquant sur le lien suivant : [Premiers pas (ancienne gamme VPS)](./#premiers-pas-ancienne-gamme-vps).
+Pour un modèle VPS plus ancien, poursuivez la lecture de ce guide en cliquant sur le lien suivant : [Premiers pas (ancienne gamme VPS)](./#premiers-pas-ancienne-gamme-vps_1).
 
 ### Premiers pas (gamme VPS actuelle)
 
@@ -49,7 +49,7 @@ Le nom d'utilisateur sera généré en fonction du système d'exploitation, par 
 
 Vous pouvez vous connecter à votre VPS en SSH avec le nom d'utilisateur et le mot de passe. (Le SSH est un protocole de communication sécurisé. Pour en savoir plus, consultez [ce guide d'introduction au SSH pour les serveurs dédiés OVHcloud](../../dedicated/ssh-introduction/). Vous pouvez accéder à votre serveur via un terminal de ligne de commande (Linux ou MAC) ou via un logiciel tiers sous Windows (nous vous recommandons PuTTy).
 
-En utilisant PuTy par exemple, ouvrez simplement l'application et entrez le nom de serveur ou son adresse IPv4 pour établir une connexion. Vous serez invité à entrer le nom d'utilisateur et le mot de passe, puis vous pourrez passer à l'interface de ligne de commande (CLI).
+En utilisant PuTTy par exemple, ouvrez simplement l'application et entrez le nom de serveur ou son adresse IPv4 pour établir une connexion. Vous serez invité à entrer le nom d'utilisateur et le mot de passe, puis vous pourrez passer à l'interface de ligne de commande (CLI).
 
 ![utilisation putty](images/putty1.png){.thumbnail}
 
@@ -107,6 +107,10 @@ Lors de l'installation (ou de la réinstallation) de votre VPS, un e-mail vous s
 
 L'accès se fait via un terminal de commande (Linux ou MAC) ou par l'intermédiaire d'un logiciel tiers sur Windows (PuTTy, par exemple).
 
+En utilisant PuTTy par exemple, ouvrez simplement l'application et entrez le nom de serveur ou son adresse IPv4 pour établir une connexion. Vous serez invité à entrer le nom d'utilisateur et le mot de passe, puis vous pourrez passer à l'interface de ligne de commande (CLI).
+
+![utilisation putty](images/putty1.png){.thumbnail}
+
 Une fois votre terminal ouvert, voici la commande à taper pour vous connecter à votre VPS :
 
 ```sh
@@ -155,7 +159,7 @@ Une fois votre VPS installé et sécurisé, vous pouvez vouloir sécuriser votre
 
 Ce certificat SSL peut être installé manuellement par vos soins, directement sur le VPS. Reportez-vous pour cela à la documentation officielle de la distribution que vous utilisez.
 
-De manière plus automatique, OVHcloud vous propose le [SSL Gateway](https://www.ovh.com/fr/ssl-gateway/). N'hésitez pas à vous reporter à la [page commerciale](https://www.ovh.com/fr/ssl-gateway/){.external} ou à la [documentation](https://docs.ovh.com/fr/ssl-gateway/){.external} de cette offre.
+De manière plus automatique, OVHcloud vous propose le [SSL Gateway](https://www.ovh.com/ca/fr/ssl-gateway/). N'hésitez pas à vous reporter à la [page commerciale](https://www.ovh.com/ca/fr/ssl-gateway/){.external} ou à la [documentation](https://docs.ovh.com/fr/ssl-gateway/){.external} de cette offre.
 
 ## Aller plus loin
 
