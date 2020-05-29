@@ -1,5 +1,5 @@
 ---
-title: 'Exchange 2016: einen Ordner via OWA Webmail freigeben'
+title: 'Exchange : einen Ordner via OWA Webmail freigeben'
 excerpt: ''
 slug: exchange_2016_einen_ordner_via_owa_webmail_freigeben
 legacy_guide_number: g1929
