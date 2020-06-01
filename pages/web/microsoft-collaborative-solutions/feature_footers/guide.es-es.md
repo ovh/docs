@@ -1,5 +1,5 @@
 ---
-title: Exchange 2013/2016 Firma automática – Disclaimer
+title: Exchange Firma automática – Disclaimer
 excerpt: Utilice las herramientas a su disposición para personalizar y dar formato a su firma. Dicha firma se añadirá automática al pie de cada mensaje enviado.
 slug: exchange_20132016_firma_automatica_disclaimer
 legacy_guide_number: g1330
