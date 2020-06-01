@@ -1,5 +1,5 @@
 ---
-title: Exchange 2013/2016 Automatische Signatur - Disclaimer
+title: Exchange Automatische Signatur - Disclaimer
 excerpt: In dieser Hilfe wird die Einrichtung einer automatischen Signatur (Disclaimer) beschrieben
 slug: exchange_20132016_automatische_signatur_-_disclaimer
 legacy_guide_number: g1330
