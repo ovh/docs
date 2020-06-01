@@ -53,7 +53,7 @@ Es wird auch eine Zusammenfassung der Informationen Ihrer Signatur angezeigt.
 
 
 ## E-Mail-Beispiel Teil 1
-In diesem Beispiel zeigen wir, wie Sie Ihre Signatur über das [Exchange Webmail-Interface](https://ex.mail.ovh.net/owa/) zu einer E-Mail hinzufügen können.
+In diesem Beispiel zeigen wir, wie Sie Ihre Signatur über das [Exchange Webmail-Interface](https://mail.ovh.net/) zu einer E-Mail hinzufügen können.
 
 Verwenden Sie für die Anmeldung die vollständige E-Mail-Adresse und das dazugehörige Passwort.
 
