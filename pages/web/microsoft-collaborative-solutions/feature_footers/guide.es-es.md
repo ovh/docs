@@ -52,7 +52,7 @@ En la tabla podrá ver la información general de la firma.
 
 
 ## Ejemplo de mensaje, etapa 1
-A continuación se describe cómo añadir la firma a un mensaje de correo desde la interfaz de [Webmail Exchange](https://ex.mail.ovh.net/owa/).
+A continuación se describe cómo añadir la firma a un mensaje de correo desde la interfaz de [Webmail Exchange](https://mail.ovh.net/).
 
 Identifíquese con su dirección de correo completa y la contraseña y, en el menú «Correo», haga clic en «nuevo correo», en la esquina superior izquierda.
 
