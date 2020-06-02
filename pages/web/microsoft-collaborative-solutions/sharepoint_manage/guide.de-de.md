@@ -3,7 +3,7 @@ title: 'OVHcloud SharePoint aktivieren und verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie einen OVHcloud SharePoint Dienst bestellen und konfigurieren'
 slug: aktivierung_und_verwaltung_ihres_ovh_sharepoint
 legacy_guide_number: g2249
-section: Sharepoint
+section: SharePoint
 order: 1
 ---
 

@@ -44,13 +44,13 @@ For the current VPS range, please continue with the next section, **First steps 
 
 At the first installation or when reinstalling from the Control Panel, a user with elevated permissions will be created and you will be sent an email containing the login credentials. The username will be chosen according to the operating system, for example "ubuntu" or "debian".
 
-You can now connect to your VPS via SSH with username and password. (SSH is a secure communication protocol. Find out more in [this guide about SSH on dedicated servers](../../dedicated/ssh-introduction/)). You can access your server through a command line terminal (Linux or MAC) or through third-party software on Windows (we can recommend PuTTy).
+You can now connect to your VPS via SSH with username and password. (SSH is a secure communication protocol. Find out more in [this guide about SSH on dedicated servers](../../dedicated/ssh-introduction/)). You can access your server through a command terminal (Linux or MAC) or through third-party software on Windows (we can recommend PuTTY).
 
-Using PuTTy for example, simply open the application and enter the servername or its IPv4 address to establish a connection. You will be prompted for username and password and then you can proceed with the command line interface (CLI).
+Using PuTTY for example, simply open the application and enter the servername or the IPv4 address to establish a connection. You will be prompted for username and password and then you can proceed with the command line interface (CLI).
 
 ![puttyconnect](images/putty1.png){.thumbnail}
 
-Once you have opened the terminal, type the following command to log in to your VPS with the information provided in the email (username and IPv4 address):
+Connecting from a command terminal, type the following to log in to your VPS with the information provided in the email (username and IPv4 address):
 
 ```sh
 ssh username@IPv4_of_your_VPS
@@ -66,7 +66,7 @@ passwd: password updated successfully
 ```
 Note that passwords are not displayed. Next, switch to the "root" user and set your admin password:
 
-```sh
+```
 $ sudo su -
 # passwd
 New password:
@@ -102,13 +102,13 @@ A progress bar for the reinstallation will appear in your Control Panel - please
 
 #### Connecting to your VPS (for older ranges)
 
-When you install (or reinstall) your VPS, you will be sent an email containing your password for root access. Root access lets you connect via SSH to your VPS. SSH is a secure communication protocol. You can access your server through a command terminal (Linux or MAC) or through third-party software on Windows (we can recommend PuTTy).
+When you install (or reinstall) your VPS, you will be sent an email containing your password for root access. Root access lets you connect via SSH to your VPS. SSH is a secure communication protocol. You can access your server through a command terminal (Linux or MAC) or through third-party software on Windows (we can recommend PuTTY).
 
-Using PuTTy for example, simply open the application and enter the servername or its IPv4 address to establish a connection. You will be prompted for username and password and then you can proceed with the command line interface (CLI).
+Using PuTTY for example, simply open the application and enter the servername or the IPv4 address to establish a connection. You will be prompted for username and password and then you can proceed with the command line interface (CLI).
 
 ![puttyconnect](images/putty1.png){.thumbnail}
 
-Once you have opened the terminal, type the following command to log in to your VPS, replacing the text after the @ symbol with the information required (IPv4 address or VPS reference name):
+Connecting from a command terminal, type the  command to log in to your VPS, replacing the text after the @ symbol with the information required (IPv4 address or VPS reference name):
 
 ```sh
 ssh root@IPv4_of_your_VPS
