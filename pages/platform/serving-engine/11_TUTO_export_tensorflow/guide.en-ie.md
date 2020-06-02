@@ -11,7 +11,7 @@ order: 2
 
 [Tensorflow](https://www.tensorflow.org/) is a popular machine learning
 library and SavedModel is a serialization format that is supported by
-OVHcloud Serving Engine. This tutorial will cover how to export a
+OVHcloud ML Serving. This tutorial will cover how to export a
 [Tensorflow](https://www.tensorflow.org/) trained model into an
 SavedModel file.
 
@@ -22,7 +22,7 @@ SavedModel file.
 
 ## Convert a simple model to SavedModel
 
-Serving Engine supports `TensorFlow` models thanks to the `SavedModel`
+ML Serving supports `TensorFlow` models thanks to the `SavedModel`
 serialization format of `TensorFlow`.
 
 Let\'s take a simple example of a `TensorFlow` model to illustrate:

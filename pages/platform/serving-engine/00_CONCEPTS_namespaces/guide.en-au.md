@@ -7,9 +7,9 @@ order: 1
 ---
 ## Definition
 
-**Namespaces** in a **serving engine project** are organization entities
-for your models. It allows user to simply classify their models
-depending on their needs by attaching them to an existing namespace.
+**Namespaces** in a **ML Serving project** are organization entities for
+your models. It allows user to simply classify their models depending on
+their needs by attaching them to an existing namespace.
 
 Each namespace is linked to an **object storage container** of the same
 **public cloud** project where users can upload their serialized machine
@@ -36,7 +36,7 @@ but this can be configured.
 
 ## Under the hood
 
-**Namespaces** in a **serving engine** project correspond to
+**Namespaces** in a **ML Serving** project correspond to
 [namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
 in a [kubernetes](https://kubernetes.io/) cluster.
 
