@@ -27,7 +27,7 @@ Po realizacji zamówienia otrzymasz na adres e-mail podany w Panelu klienta info
 
 Aby przeczytać ten e-mail w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), kliknij swój profil w prawym górnym rogu, a następnie wybierz `Moje konto`{.action}. Przejdź do karty `Wiadomości odebrane`{.action} i wyszukaj e-mail z następującym tematem:
 
-> **[xx-11111-ovh] Trwa instalowanie usługi Exchange 2016v1**
+> **[xx-11111-ovh] Trwa instalowanie usługi Exchange 20_xxx_**
 
 
 ![first-use-private-exchange](images/first-use-private-exchange-01.png){.thumbnail}
@@ -91,7 +91,7 @@ Po walidacji certyfikatu SSL konieczne może okazać się odczekanie 4 godzin na
 
 Kiedy tylko Twój serwer będzie gotowy i dostępny, otrzymasz wiadomość e-mail z potwierdzeniem. Temat wiadomości będzie wyglądał następująco:
 
-> **[xx-11111-ovh] Twoja usługa Private Exchange 2016v1 jest gotowa!**
+> **[xx-11111-ovh] Twoja usługa Private Exchange 20_xxx_ jest gotowa!**
 
 Aby dodać pierwszą nazwę domeny do platformy i rozpocząć konfigurowanie kont, zapoznaj się z naszym przewodnikiem [„Dodanie domeny do usługi Exchange”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/dodanie-domeny-exchange/) 
 

@@ -2,7 +2,7 @@
 title: 'Consulter son compte Exchange depuis l''interface OWA'
 slug: exchange-2016-guide-utilisation-outlook-web-app
 legacy_guide_number: 1918
-excerpt: 'Retrouvez ici le detail concernant Outlook Web App pour Exchange 2016'
+excerpt: 'Retrouvez ici le detail concernant Outlook Web App pour Exchange '
 section: 'Utilisation d''Outlook Web Application (OWA)'
 order: 1
 ---
@@ -37,7 +37,7 @@ Lorsque vous vous connecterez pour la première fois à  **OWA**  il sera néces
 
 ![emails](images/2885.png){.thumbnail}
 
-## Outlook Web App 2016
+## Outlook Web App 2016 et ultérieur
 
 ### Interface et fonctionnalites
 

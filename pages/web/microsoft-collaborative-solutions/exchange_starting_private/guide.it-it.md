@@ -27,7 +27,7 @@ Una volta saldato il tuo ordine, ricevi un’email all’indirizzo di contatto i
 
 Per consultare questa email dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), clicca sul tuo profilo in alto a destra e poi su `Il tuo account`{.action}. Clicca sulla scheda `Email ricevute`{.action} e cerca l’email che ha come oggetto:
 
-> **[xx-11111-ovh] Il tuo servizio Private Exchange 2016v1 è in consegna!**
+> **[xx-11111-ovh] Il tuo servizio Private Exchange 20_xxx_ è in consegna!**
 
 
 ![first-use-private-exchange](images/first-use-private-exchange-01.png){.thumbnail}
@@ -92,7 +92,7 @@ Una volta confermato il certificato SSL, potrebbero essere necessarie fino a 4 o
 
 Una volta che il tuo server è pronto e disponibile, riceverai un’email di conferma con il seguente oggetto:
 
-> **[xx-11111-ovh] Il tuo servizio Private Exchange 2016v1 è pronto!**
+> **[xx-11111-ovh] Il tuo servizio Private Exchange 20_xxx_ è pronto!**
 
 Per aggiungere un dominio alla tua piattaforma e configurare gli account; consulta la nostra guida [“Aggiungere un dominio su Exchange”](../aggiungere-dominio-su-exchange/) 
 

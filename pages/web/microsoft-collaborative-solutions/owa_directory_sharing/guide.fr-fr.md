@@ -2,12 +2,12 @@
 title: Partager un dossier depuis l'interface OWA
 slug: exchange-2016-partager-un-dossier-via-le-webmail-owa
 legacy_guide_number: 1929
-excerpt: Retrouvez ici la procedure de partage d’un dossier depuis votre compte Exchange 2016
+excerpt: Retrouvez ici la procedure de partage d’un dossier depuis votre compte Exchange 
 section: Utilisation d'Outlook Web Application (OWA)
 order: 5
 ---
 
-## Mise en place sur Outlook Web Application 2016
+## Mise en place sur Outlook Web Application 2016 et ultérieur
 
 ### Point de vue de l'utilisateur qui partage le dossier
 

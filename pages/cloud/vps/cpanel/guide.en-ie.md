@@ -22,7 +22,7 @@ cPanel is a control panel designed for web hosting. Web hosting tasks are simpli
 
 In order to install your cPanel server, you will first need to order a VPS with a cPanel distribution.
 
-![horizon](images/cpanel_order.png)
+![horizon](images/cpanel_order.png){.thumbnail}
 
 When your VPS is ready, you will receive an email providing the information to connect to your cPanel server:
 
@@ -51,15 +51,15 @@ The URL above allows you to log in without credentials (user and password) to yo
 
 #### Step 1: Read and accept the terms of cPanel
 
-![horizon](images/license_validation.png)
+![horizon](images/license_validation.png){.thumbnail}
 
 #### Step 2: Provide your email and nameservers you wish to set on the VPS
 
-![horizon](images/setup_config_cpanel.png)
+![horizon](images/setup_config_cpanel.png){.thumbnail}
 
 #### Step 3: Set the root password
 
-![horizon](images/change_root.png)
+![horizon](images/change_root.png){.thumbnail}
 
 Now you should be able to login to WHM and SSH using the root user with the password that was just set.
 

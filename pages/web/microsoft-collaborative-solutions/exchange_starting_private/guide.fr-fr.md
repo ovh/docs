@@ -28,8 +28,7 @@ Une fois la commande réalisée, vous recevrez, sur l'adresse e-mail de référe
 
 Pour consulter cet e-mail depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), cliquez sur votre profil en haut à droite puis cliquez sur `Mon compte`{.action}. Dirigez-vous sur l'onglet `Emails reçus`{.action} et recherchez l'e-mail ayant pour objet:
 
-> **[xx-11111-ovh] Votre service Private Exchange est en cours de livraison !**
-
+> **[xx-11111-ovh] Votre service Private Exchange 20_xxx_ est en cours de livraison !**
 
 ![first-use-private-exchange](images/first-use-private-exchange-01.png){.thumbnail}
 
@@ -92,7 +91,7 @@ Une fois votre certificat SSL validé, un délai de 4 heures peut encore être n
 
 Une fois votre serveur prêt et disponible, un e-mail de confirmation vous est envoyé avec pour objet :
 
-> **[xx-11111-ovh] Votre service Private Exchange  est prêt !**
+> **[xx-11111-ovh] Votre service Private Exchange 20_xxx_ est prêt !**
 
 Pour ajouter votre premier nom de domaine à votre plateforme et configurer les comptes, consultez notre guide [« ajouter un nom de domaine sur son service Exchange »](https://docs.ovh.com/fr/microsoft-collaborative-solutions/ajouter-domaine-exchange/) 
 

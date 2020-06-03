@@ -1,5 +1,5 @@
 ---
-title: 'Exchange 2013/2016: Assinatura automática - Disclaimer'
+title: 'Exchange : Assinatura automática - Disclaimer'
 excerpt: Insert Here A Short Desc
 slug: exchange_20132016_assinatura_automatica_-_disclaimer
 legacy_guide_number: g1330
@@ -53,7 +53,7 @@ Uma tabela resumo irá mostrar-lhe as informações gerais da sua assinatura.
 
 
 ## Exemplo de e-mail Parte 1
-Veja como adicionar a sua assinatura num e-mail através da interface do [Webmail Exchange](https://ex.mail.ovh.net/owa/).
+Veja como adicionar a sua assinatura num e-mail através da interface do [Webmail Exchange](https://mail.ovh.net/).
 
 Identifique-se com o seu endereço de e-mail completo e a respetiva password.
 
