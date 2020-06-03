@@ -1,7 +1,7 @@
 ---
 title: 'Déployer cPanel sur centOS7'
 slug: cpanel
-excerpt: 'Découvrez ici comment instancier un VPS avec l’application cPanel pré-installée.'
+excerpt: 'Découvrez comment instancier un VPS avec l’application cPanel pré-installée.'
 section: 'Utilisation avancée'
 ---
 
@@ -16,9 +16,14 @@ cPanel est un panneau de configuration conçu pour les hébergeurs web. Constitu
 
 ## Prérequis
 
-Afin de créer votre serveur cPanel, il faut d'abord commander un VPS avec la distribution cPanel.
+- Un [VPS de la gamme actuelle](https://www.ovhcloud.com/fr-ca/vps/){.external} (offres Value, Essential, Comfort ou Elite).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-![horizon](images/cpanel_order.png)
+## En pratique
+
+Afin d'installer votre serveur cPanel, il faut d'abord commander un VPS avec la distribution cPanel.
+
+![cPanel](images/cpanel_order.png){.thumbnail}
 
 Quand votre VPS est prêt, vous recevez un e-mail vous donnant les accès pour vous connecter à votre serveur cPanel :
 
@@ -27,34 +32,47 @@ Quand votre VPS est prêt, vous recevez un e-mail vous donnant les accès pour v
  |    Vous pouvez vous connecter à cpanel depuis https://<ip>:2087/<session_parameters>
 ```
 
-Votre serveur cPanel est maintenant prêt à être utilisé.
+Si vous disposez déjà d'un VPS et que vous souhaitez y installer cPanel, vous pouvez réinstaller le VPS à partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) à l'aide du modèle « CentOS 7 - cPanel » (disponible uniquement avec une offre VPS compatible).
 
-## En pratique
+> [!warning]
+>
+> Si vous réinstallez un VPS, toutes les données stockées sur le VPS seront perdues.
+> 
 
 ### Première connexion
 
-L'url ci-dessus vous permet de vous connecter sans login et mot de passe à votre manager cPanel.
-Il faut dans un premier temps valider votre licence puis ensuite configurer votre mot de passe du user root afin de vous connecter ensuite à cette interface.
+Une fois que vous avez reçu l'e-mail avec le lien unique, cliquez sur ce lien pour effectuer la configuration initiale.
 
-![horizon](images/license_validation.png)
+> [!primary]
+>
+> Si le lien a déjà expiré, réinstallez le VPS avec cPanel.
+>
 
-L'url générée est temporaire afin de sécuriser l'accès. Si une demande d'identification vous est adressée lorsque vous cliquez sur le lien, cela signifie que le token dans l'url a expiré.
+L'URL citée plus haut vous permet de vous connecter sans informations d'identification (utilisateur et mot de passe) à votre interface WHM.
 
-Vous pouvez regénérer cette url avec un outil disponible en ligne de commande sur votre vps. La procédure est expliquée [ci-dessous](./#regenerer-votre-url-de-connexion)
+#### Étape 1 : lire les conditions d'utilisation de cPanel
 
-La page suivante vous demande de renseigner votre adresse e-mail et les serveurs de noms que vous souhaitez utiliser.
+Lisez et acceptez les conditions d'utilisation de cPanel
 
-![horizon](images/setup_config_cpanel.png)
+![cPanel](images/license_validation.png){.thumbnail}
 
-### Regénérer votre url de connexion
+#### Étape 2 : compléter les champs requis
 
-Connectez vous en SSH avec les identifiants fournis dans l'e-mail d'accès et exécutez la commande suivante :
+Indiquez les serveurs de messagerie et de noms (nameservers) que vous souhaitez définir sur le serveur VPS.
 
-```sh
-sudo whmlogin
-```
+![cPanel](images/setup_config_cpanel.png){.thumbnail}
 
-Vous pouvez maintenant cliquer sur le lien généré pour accéder à votre interface d'administration et configurer votre mot de passe root.
+#### Étape 3 : définir le mot de passe root
+
+![cPanel](images/change_root.png){.thumbnail}
+
+Vous devriez à présent pouvoir vous connecter à WHM et en SSH en utilisant l'utilisateur root avec le mot de passe qui vient d'être défini.
+
+### Sécurisation de votre service
+
+Nous vous recommandons de prendre toutes les mesures nécessaires pour sécuriser votre WHM et votre VPS. Pour cela, nous vous recommandons de lire les recommandations de cPanel [ici](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+
+Nous vous recommandons également de consulter notre guide pour [sécuriser un VPS](../conseils-securisation-vps/), d'utiliser [nos solutions de sauvegarde](../) et de configurer le [Firewall Network](../../dedicated/firewall-network/).
 
 ## Aller plus loin
 
