@@ -1,6 +1,6 @@
 ---
-title: 'Exchange : How to create an automatic signature'
-excerpt: This guide explains how to create an automatic signature for Exchange
+title: 'Creating automatic signatures'
+excerpt: 'Find out how to add automatic signatures to your email accounts'
 slug: exchange_20132016_how_to_create_an_automatic_signature
 section: 'Exchange account features'
 order: 3
@@ -8,9 +8,6 @@ order: 3
 
 **Last updated 26th March 2020**
 
-## Step 1: Setup
-
-To create your email signature, log in to your [OVH Control Panel](https://www.ovh.com/manager/web/login.html). 
 
 ## Objective
 
@@ -24,9 +21,7 @@ In the OVHcloud Control Panel, you can create universal signatures (footers) for
 >
 
 
-## Step 2: Setup
-
-Use the available tools to customise and format your signature.
+## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 - an [OVHcloud Exchange](https://www.ovh.co.uk/emails/hosted-exchange) or [Email Pro](https://www.ovh.co.uk/emails/email-pro) solution already set up
@@ -37,9 +32,7 @@ Use the available tools to customise and format your signature.
 
 First, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), navigate to the "Web" section, and select your Exchange service from the column under `Microsoft`{.action} `Exchange`{.action} on the left-hand side. Click on the `More+`{.action} tab in the horizontal menu and select `Footers`{.action}.
 
-## Step 3: Setup
-
-You will then be able to resize the image as you wish. 
+![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 
 In this section you will see your attached domains, for each of which you can create a footer scheme. Click on `...`{.action} and then on `Configuration`{.action} to open the HTML editor.
 
@@ -53,9 +46,7 @@ The footer is created using HTML tags, which allow for some formatting options. 
  
 ![exchangesig](images/exchange-footer-step4.png){.thumbnail}
 
-## Step 4: Setup
-
-Once you have created your signature, it will appear in the Web Control Panel.
+Tick the box "Enable the signature for outgoing mail only" to prevent adding this footer to emails sent between users on the same domain. Click `Confirm`{.action} once the signature is finished. It will now be attached to emails sent from this domain's user accounts. You can edit or delete signatures in the OVHcloud Control Panel after they are created.
 
 Please take the following specifics into consideration before applying signatures for users:
 
@@ -68,9 +59,7 @@ Please take the following specifics into consideration before applying signature
 - The editor supports HTML formatting, hyperlinks, images, etc. However, signatures should not rely on these options too heavily. Recipients may use email clients that prevent HTML and embedded images, or the signatures will appear in a different way than intended. Note that HTML tags will be completely removed if a message is sent as "Plain text" from OWA.
 - "Initials" are not active on the service. Adding this variable will have no effect.
 
-## Step 1: Add signature to an email
-
-Here's how to add your signature to an email via [Exchange Webmail](https://www.ovh.co.uk/mail/).
+## Go further
 
 [Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide)
 
