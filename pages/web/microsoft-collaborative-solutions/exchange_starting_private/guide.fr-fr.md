@@ -30,7 +30,6 @@ Pour consulter cet e-mail depuis votre [espace client OVHcloud](https://www.ovh.
 
 > **[xx-11111-ovh] Votre service Private Exchange 20_xxx_ est en cours de livraison !**
 
-
 ![first-use-private-exchange](images/first-use-private-exchange-01.png){.thumbnail}
 
 Cet e-mail contient un lien permettant de compléter deux étapes de la configuration votre plateforme :

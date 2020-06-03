@@ -38,17 +38,17 @@ Bezpieczeństwo Twoich rozwiązań zależy od skuteczności hasła do Panelu kli
 - musi różnić się od wcześniejszego hasła.
 
 
-Istnieje kilka skutecznych metod tworzenia haseł. Polecamy na przykład **metodę pierwszych liter** oraz **metodę fonetyczną**, które są opisane w przewodniku cybermalveillance.gouv.fr - rządowej stronie WWW poświęconej zapobieganiu cyberatakom.
+Istnieje kilka skutecznych metod tworzenia haseł. Polecamy na przykład **metodę pierwszych liter** opisaną tutaj: https://www.gov.pl/web/baza-wiedzy/jak-tworzyc-bezpieczne-hasla
 
 Narodowa Komisja Ochrony Informacji i Wolności (CNIL), francuska organizacja powołana do czuwania nad przestrzeganiem postanowień dotyczących ochrony danych osobowych, rekomenduje również użycie narzędzia do generacji silnych haseł działającego w oparciu o metodę pierwszych liter.
 
-Więcej informacji znajdziesz w sekcji [Sprawdź również](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/#sprawdz-rowniez){.external}na końcu tego przewodnika.
+Więcej informacji znajdziesz w sekcji  [Sprawdź również](./#sprawdz-rowniez){.external} na końcu tego przewodnika.
 
 ### Użycie managera haseł 
 
 Specjalne oprogramowanie do zapisywania i zabezpieczania hasła dostępu do konta OVHcloud.
 
-Można na przykład użyć managera haseł **Keepass**.
+Można na przykład użyć managera haseł **Keepass**. Jest to bezpłatne i otwarte oprogramowanie rekomendowane przez francuską Agencją ds. Cyberbezpieczeństwa (ANSSI).
 
 Jego zasada jest prosta: hasło główne - które musi być silne, ale które powinieneś zapamiętać - umożliwia dostęp do bazy danych zawierającej wszystkie identyfikatory i hasła. Identyfikatory i hasła mogą być bardzo złożone, ponieważ zostaną one zapisane w oprogramowaniu.
 
@@ -61,7 +61,7 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 
 - **Unikalne hasło dla każdej usługi.** Hasło dostępu do konta OVHcloud nie powinno być wykorzystywane na innych stronach WWW lub aplikacjach. Zalecamy stosowanie tej zasady w odniesieniu do wszystkich usług internetowych. Ustanowienie różnych haseł dla każdej ze stron WWW pozwala uniknąć niebezpieczeństwa występującego w sytuacji, gdy posługujesz się tylko jednym hasłem i zostaje ono wykradzione. 
 
-- **N'enregistrez pas votre mot de passe dans votre navigateur.** Mimo że jest to praktyczne, odradzamy udzielenie zgody na zapisywanie hasła przez przeglądarkę.  Operacja ta stwarza kilka problemów związanych z bezpieczeństwem, na przykład w sytuacji gdy niepowołana osoba przejmie kontrolę nad Twoim komputerem. Wystarczy, że osoba ta pobierze plik zawierający listę zapisanych haseł - z łatwością będzie mogła wówczas zalogować się na Twoje różne konta.
+- **Nie zapisuj haseł w przeglądarce.** Mimo że jest to praktyczne, odradzamy udzielenie zgody na zapisywanie hasła przez przeglądarkę.  Operacja ta stwarza kilka problemów związanych z bezpieczeństwem, na przykład w sytuacji gdy niepowołana osoba przejmie kontrolę nad Twoim komputerem. Wystarczy, że osoba ta pobierze plik zawierający listę zapisanych haseł - z łatwością będzie mogła wówczas zalogować się na Twoje różne konta.
 
 - **Regularna zmiana hasła:** Regularna zmiana hasła zwiększa bezpieczeństwo konta. Jeśli masz jakiekolwiek podejrzenia, że Twoje hasło jest zagrożone, zmień je natychmiast.  Ustanowienie nowego hasła automatycznie powoduje zamknięcie wszystkich aktywnych sesji na koncie OVHcloud. Nowe hasło musi różnić od poprzednich haseł.
 
@@ -117,7 +117,12 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 > 
 
 ## Sprawdź również
+[Zalecenia dotyczące tworzenia bezpiecznych haseł](https://www.gov.pl/web/baza-wiedzy/jak-tworzyc-bezpieczne-hasla){.external}
+
+[Krajowy system cyberbezpieczeństwa](https://www.gov.pl/web/cyfryzacja/krajowy-system-cyberbezpieczenstwa-){.external}
 
 [Manager haseł Keepass](https://keepass.info/){.external}
 
-Przyłącz się do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>
+[Przykładowy darmowy generator haseł](https://www.lastpass.com/password-generator){.external}
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
