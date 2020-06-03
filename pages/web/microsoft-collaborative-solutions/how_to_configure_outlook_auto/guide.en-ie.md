@@ -33,7 +33,7 @@ Then click "Mail Accounts"
 
 
 ## Step 2: Adding new e-mail account
-Click "New" to add a  Exchange 2013 email account.
+Click "New" to add a  Exchange email account.
 
 ![](images/img_1551.jpg){.thumbnail}
 

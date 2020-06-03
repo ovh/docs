@@ -28,7 +28,7 @@ Una vez realizado el pedido, le enviaremos la información necesaria para config
 
 También puede consultar este mensaje de correo electrónico iniciando sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager), haciendo clic en su perfil en la esquina superior derecha y seleccionando `«Mi cuenta»`{.action}. Acceda a la pestaña `«Mensajes recibidos»`{.action} y busque el mensaje de correo electrónico con el siguiente asunto:
 
-> **\[xx-11111-ovh] ¡Su servicio Private Exchange 2016v1 está en proceso de entrega!**
+> **\[xx-11111-ovh] ¡Su servicio Private Exchange 20_xxx_ está en proceso de entrega!**
 
 
 ![first-use-private-exchange](images/first-use-private-exchange-01.png){.thumbnail}
@@ -92,7 +92,7 @@ Una vez que haya validado el certificado SSL, puede ser necesario un plazo de 4 
 
 Una vez que el servidor esté listo y disponible, recibirá un mensaje de correo electrónico de confirmación con el siguiente asunto:
 
-> **\[xx-11111-ovh] ¡Su servicio Private Exchange 2016v1 está listo!**
+> **\[xx-11111-ovh] ¡Su servicio Private Exchange 20_xxx_ está listo!**
 
 Para añadir su primer nombre de dominio a su plataforma y configurar las cuentas, consulte nuestra guía [«Añadir un dominio a un servicio Exchange»](../anadir-dominio-exchange/) 
 

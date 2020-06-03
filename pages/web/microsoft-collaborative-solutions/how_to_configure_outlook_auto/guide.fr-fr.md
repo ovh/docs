@@ -25,7 +25,7 @@ Vous utilisez Outlook 2016 pour Windows ? Consultez notre documentation : [Confi
 
 ## Configuration automatique
 
-Avant de réaliser ces manipulations, assurez-vous que le champ SRV de votre nom de domaine est correctement configuré. Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} pour retrouver nos différents guides Outlook 2007 n'est pas compatible avec Exchange 2016.
+Avant de réaliser ces manipulations, assurez-vous que le champ SRV de votre nom de domaine est correctement configuré. Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} pour retrouver nos différents guides Outlook 2007 n'est pas compatible avec Exchange 2016 et ultérieur.
 
 ### Étape 1 : Panneau de configuration
 Les manipulations réalisées sont effectuées sur un poste équipé du système d'exploitation Windows.

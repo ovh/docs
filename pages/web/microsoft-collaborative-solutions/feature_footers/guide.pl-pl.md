@@ -1,5 +1,5 @@
 ---
-title: 'Exchange 2013/2016: Automatyczny podpis - Disclaimer'
+title: 'Exchange : Automatyczny podpis - Disclaimer'
 excerpt: 'Przewodnik ten opisuje, w jaki sposób dodać automatyczny podpis.'
 slug: exchange_20132016_automatyczny_podpis_-_disclaimer
 section: 'Funkcjonalności i współdzielenie Exchange'
@@ -9,7 +9,7 @@ legacy_guide_number: g1330
 ## Aktywacja - część 1
 Zaloguj się do [panelu klienta](https://www.ovh.com/manager/web/login.html).
 
-Wybierz ofertę Exchange 2013 w zakładce "Platforma".
+Wybierz ofertę Exchange w zakładce "Platforma".
 
 Wybierz zakładkę "Podpis" i "Dodaj podpis".
 
@@ -54,7 +54,7 @@ W tabeli porównawczej pojawią się informacje na temat podpisu.
 
 ## Przykład e-maila - część 1
 Sposób dodania podpisu do e-maila z interfejsu 
-[Webmail Exchange](https://ex.mail.ovh.net/owa/).
+[Webmail Exchange](https://mail.ovh.net/).
 
 Zaloguj się podając adres e-mail i hasło do tego konta.
 

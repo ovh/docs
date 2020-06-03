@@ -1,5 +1,5 @@
 ---
-title: Exchange 2013 firma automatica - disclaimer
+title: Exchange firma automatica - disclaimer
 excerpt: In questa guida ti insegnamo a inserire una firma automatica o un disclaimer ai tuoi messaggi Exchange
 slug: exchange_2013_firma_automatica_-_disclaimer
 legacy_guide_number: g1330
@@ -9,7 +9,7 @@ legacy_guide_number: g1330
 ## Step 1
 Crea una firma da aggiungere ai tuoi messaggi email, accedendo al tuo [Spazio Cliente](https://www.ovh.com/manager/web/login.html).
 
-Seleziona la tua offerta Exchange 2013 in "Piattaforma".
+Seleziona la tua offerta Exchange in "Piattaforma".
 
 Scegli "Firma" e "Aggiungi una firma".
 
@@ -52,7 +52,7 @@ La tabella di sintesi ti fornisce le informazioni generali sulla tua firma.
 
 
 ## Esempio di email - Step 1
-Qui trovi alcune indicazioni su come aggiungere una firma alle email che invii dall'interfaccia  [Webmail Exchange 2013](https://ex.mail.ovh.net/owa/).
+Qui trovi alcune indicazioni su come aggiungere una firma alle email che invii dall'interfaccia [Webmail Exchange](https://mail.ovh.net/).
 
 Accedi con il tuo indirizzo email completo e la password.
 
