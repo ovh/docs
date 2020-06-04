@@ -144,7 +144,7 @@ Après avoir cliqué sur `Create keys`{.action}, Vous obtiendrez trois clés :
 EXEgWIz07P0HYwtQDs7cNIqCiQaWSuHF
 ```
 
-- une **consumerKey** secrète, à ne pas divulguer, appelée **CK**. Par exemple :
+- une « **consumer key** » secrète, à ne pas divulguer, appelée **CK**. Par exemple :
 
 ```sh
 MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1
