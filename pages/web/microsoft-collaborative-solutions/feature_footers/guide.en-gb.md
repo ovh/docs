@@ -55,7 +55,7 @@ Please take the following specifics into consideration before applying signature
 ![exchangesig](images/exchange-footer-step5.png){.thumbnail}
 
 - The signature will be added to the email's body without gap, meaning it is advisable to begin the signature with at least one empty line.
-- It is not indicated in OWA whether a footer is enabled on this domain. If users add their [own signatures](../exchange_2016_outlook_web_app_user_guide/#adding-a-signature), emails will include both the individual and the domain-wide footer.
+- It is not indicated in OWA whether a footer is enabled on this domain and there is **no synchronisation**. If users add their [own signatures](../exchange_2016_outlook_web_app_user_guide/#adding-a-signature), emails will include both the individual and the domain-wide footer.
 - The editor supports HTML formatting, hyperlinks, images, etc. However, signatures should not rely on these options too heavily. Recipients may use email clients that prevent HTML and embedded images, or the signatures will appear in a different way than intended. Note that HTML tags will be completely removed if a message is sent as "Plain text" from OWA.
 - "Initials" are not active on the service. Adding this variable will have no effect.
 

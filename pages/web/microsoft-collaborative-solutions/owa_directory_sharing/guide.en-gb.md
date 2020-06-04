@@ -1,6 +1,5 @@
 ---
-title: 'Exchange : How to share a folder via OWA'
-excerpt: ''
+title: 'Sharing folders in OWA'
 slug: exchange_2016_how_to_share_a_folder_via_owa
 excerpt: 'Find out how to share folders between Exchange accounts'
 section: 'Outlook Web Application (OWA)'
