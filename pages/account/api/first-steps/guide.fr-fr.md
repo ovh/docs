@@ -5,11 +5,11 @@ slug: api-premiers-pas
 section: API
 ---
 
-**Dernière mise à jour le 02/06/2020**
+**Dernière mise à jour le 04/06/2020**
 
 ## Objectif
 
-Les API mises à disposition sur [https://api.ovh.com/](https://api.ovh.com/){.external} vous permettent d'acheter, gérer, mettre à jour et configurer des produits OVHcloud sans utiliser une interface graphique comme l'espace client.
+Les API disponibles sur [https://api.ovh.com/](https://api.ovh.com/){.external} vous permettent d'acheter, gérer, mettre à jour et configurer des produits OVHcloud sans utiliser une interface graphique comme l'espace client.
 
 **Découvrez comment utiliser les API OVHcloud mais aussi comment les coupler avec vos applications**
 
@@ -113,7 +113,7 @@ L'onglet `Result` alord affiché vous donnera le rapport d'éxécution de l'API.
 
 Les onglets `PHP` et `Python` contiennent les éléments à ajouter dans votre script en fonction du language utilisé.
 
-### Utilisation avancée : coupler les API OVHcloud avec votre application
+### Utilisation avancée : coupler les API OVHcloud avec une application
 
 #### Créer les clés de votre application
 
@@ -173,7 +173,7 @@ Les utiliser vous permettra de ne pas vous préoccuper du calcul de la signature
 - *Swift* : <https://github.com/ovh/swift-ovh>
 - *C#* : <https://github.com/ovh/csharp-ovh>
 
-Example d'utilisation de la section `/me` qui permet de gerer votre compte OVHcloud :
+Voici un exemple d'utilisation de la section `/me` qui permet de gérer votre compte OVHcloud :
 
 ```python
 import ovh
