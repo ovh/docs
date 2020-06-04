@@ -9,7 +9,7 @@ section: API
 
 ## Objectif
 
-OVHcloud permet à ses clients, grâce à ses [API](https://api.ovh.com/){.external}, d'acheter, gérer, mettre à jour et configurer des produits OVHcloud sans utiliser l'interface graphique qu'est l'espace client.
+Les API mises à disposition sur [https://api.ovh.com/](https://api.ovh.com/){.external} vous permettent d'acheter, gérer, mettre à jour et configurer des produits OVHcloud sans utiliser une interface graphique comme l'espace client.
 
 **Découvrez comment utiliser les API OVHcloud mais aussi comment les coupler avec vos applications**
 
