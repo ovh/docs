@@ -24,7 +24,7 @@ OVHcloud permet à ses clients, grâce à ses [API](https://api.ovh.com/){.exter
 
 #### Se connecter aux API OVHcloud
 
-Dirigez-vous sur la page des [API OVHcloud](https://api.ovh.com/). Cliquez sur `Explore the OVH API`{.action} pour afficher la liste des API. 
+Sur la page des [API OVHcloud](https://api.ovh.com/), cliquez sur `Explore the OVH API`{.action} pour afficher la liste des API. 
 
 Pour utiliser les API sur vos produits, vous devez vous connecter sur ce site grâce à vos identifiants OVHcloud.
 
@@ -37,6 +37,7 @@ Pour utiliser les API sur vos produits, vous devez vous connecter sur ce site gr
 > [!primary]
 >
 > Si votre compte OVHcloud est protégé par une [double authentification](../../customer/securiser-son-compte-avec-une-2FA/),  vous devrez également saisir le code généré par SMS ou application OTP ou clé U2F.
+>
 
 #### Explorer les produits disponibles sur les API
 
@@ -98,15 +99,15 @@ Par exemple, si vous ne souhaitez finalement pas conserver l'enregistrement DNS 
 > @api {DELETE}  /domain/zone/{zoneName}/record/{id}
 >
 
-Après avoir cliqué sur l'application, la section **Parameters** permet d'attribuer les variables relatives à l'application.
+Après avoir cliqué sur l'API de votre choix, la section **Parameters** permet d'attribuer les variables relatives à son application.
  
-Par exemple, pour l'ajout d'un enregistrement TXT dans votre zone DNS, vous optiendrez les paramètres suivant :
+Par exemple, pour l'ajout d'un enregistrement TXT dans votre zone DNS, vous optiendrez les paramètres suivants :
  	
 ![API](images/parameters.png){.thumbnail} 
  
-Une fois les paramètres définis, vous pouvez lancer l'API en cliquant sur `Execute`. 
+Une fois les paramètres définis, vous pouvez lancer l'API en cliquant sur `Execute`{.action}. 
 
-L'onglet `Result` en dessous vous donnera le rapport d'éxécution de l'API.
+L'onglet `Result` alord affiché vous donnera le rapport d'éxécution de l'API.
 
 ![API](images/result.png){.thumbnail} 
 
@@ -190,7 +191,7 @@ $1$6a77f43f2871db97a029f1d1d81c4dcd3c6f7265
 
 ##### Gestion des horodatages
 
-Vous pouvez constater que la signature inclut l'horodatage actuel dans le paragraphe précédent.
+Vous pouvez constater que, dans le paragraphe précédent, la signature inclut l'horodatage actuel.
 
 Afin de pouvoir fonctionner, même si votre machine n'est pas à jour, vous pouvez récupérer le « l'heure OVHcloud » en effectuant un **GET** sur l'URL suivante: <https://eu.api.ovh.com/1.0/auth/time>.
 
@@ -198,7 +199,7 @@ Afin de pouvoir fonctionner, même si votre machine n'est pas à jour, vous pouv
 $ curl https://eu.api.ovh.com/1.0/auth/time
 1366561236
 ```
-Vous pouvez également calculer le décalage entre l'heure "OVH" et l'horloge de votre système et l'appliquer aux signatures.
+Vous pouvez également calculer le décalage entre l'heure "OVHcloud" et l'horloge de votre système et l'appliquer aux signatures.
 
 
 ##### Exécution d'une demande
@@ -220,13 +221,17 @@ https://eu.api.ovh.com/1.0/domain/
 
 Afin de simplifier le développement de vos applications, OVHcloud vous fournit des wrappers API dans plusieurs langages. Les utiliser vous permettra de ne pas vous préoccuper du calcul de la signature et de vous concentrer sur le développement de votre application.
 
-- *Perl*: <https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip>
-- *Python*: <https://github.com/ovh/python-ovh>
-- *PHP*: <https://github.com/ovh/php-ovh>
-- *Node.js*: <https://github.com/ovh/node-ovh>
-- *Swift*: <https://github.com/ovh/swift-ovh>
-- *C#*: <https://github.com/ovh/csharp-ovh>
+- *Perl* : <https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip>
+- *Python* : <https://github.com/ovh/python-ovh>
+- *PHP* : <https://github.com/ovh/php-ovh>
+- *Node.js* : <https://github.com/ovh/node-ovh>
+- *Swift* : <https://github.com/ovh/swift-ovh>
+- *C#* : <https://github.com/ovh/csharp-ovh>
 
 ## Aller plus loin
+
+[Utilisation des API sur Private Cloud](../../private-cloud/connexion-a-l-api-ovh/)
+
+[Comment gérer le compte d'un client OVHcloud via les API](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (guide en anglais)
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
