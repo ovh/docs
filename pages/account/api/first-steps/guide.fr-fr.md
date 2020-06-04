@@ -2,7 +2,7 @@
 title: Premiers pas avec les API OVHcloud
 excerpt: Découvrez comment utiliser les API OVHcloud
 slug: api-premiers-pas
-section: API
+section: Premiers pas
 ---
 
 **Dernière mise à jour le 04/06/2020**
