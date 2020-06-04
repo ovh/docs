@@ -41,7 +41,7 @@ Pour utiliser les API sur vos produits, vous devez vous connecter sur ce site gr
 
 #### Explorer les produits disponibles sur les API
 
-Une fois connecté, vous retrouvez la liste des produits OVHcloud disposant des API. Cette liste est classé par ordre alphabétique.
+Une fois connecté, vous retrouvez la liste des produits OVHcloud disposant des API. Cette liste est classée par ordre alphabétique.
 
 ![API](images/api-list.png){.thumbnail} 
 
@@ -53,7 +53,7 @@ Après avoir cliqué sur le produit, la liste des API de ce dernier s'affiche en
 
 #### Exécuter une API
 
-Il existe 4 types d'API disponibles qui emploient ce que l'on appelle des verbes HTTP : 
+Il existe 4 types d'API disponibles qui emploient ce que l'on appelle des méthodes HTTP : 
 
 **GET** 
 
@@ -115,39 +115,40 @@ Les onglets `PHP` et `Python` contiennent les éléments à ajouter dans votre s
 
 ### Utilisation avancée : coupler les API OVHcloud avec votre application
 
-#### Créer vos identifiants
+#### Créer les clés de votre application
 
-##### Créer les clés de votre application
+Toute application souhaitant communiquer avec l'API OVHcloud doit être déclarée à l'avance.
 
-L'authentification fait appel à deux clés. La première est la clé d'application. Toute application souhaitant communiquer avec l'API OVHcloud doit être déclarée à l'avance.
+Pour ce faire, cliquez sur le lien suivant : [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/){.external}.
 
-Cliquez sur le lien suivant : [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/){.external},  entrez votre identifiant client, votre mot de passe et le nom de votre application. Le nom sera utile plus tard si vous voulez autoriser d'autres personnes à l'utiliser.
+Renseignez votre identifiant client, votre mot de passe et le nom de votre application. Le nom sera utile plus tard si vous voulez autoriser d'autres personnes à l'utiliser.
+
+![API keys](images/api-keys.png){.thumbnail} 
 
 Vous obtiendrez trois clés :
 
-- la clé d'application, appelée **AK,** par exemple:
+- la clé d'application, appelée **AK,**. Par exemple:
 
 ```sh
 7kbG7Bk7S9Nt7ZSV
 ```
 
-- votre clé d'application secrète,à ne pas divulger, appelée **AS**, par exemple:
+- votre clé d'application secrète, à ne pas divulguer, appelée **AS**. Par exemple:
 
 ```sh
 EXEgWIz07P0HYwtQDs7cNIqCiQaWSuHF
 ```
 
-- une **consumerKey** secrète, à ne pas divulger, appelée **CK**, par exemple:
+- une **consumerKey** secrète, à ne pas divulguer, appelée **CK**. Par exemple:
 
 ```sh
 MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1
 ```
 
-Le token **CK** peut être utilisé pour de la délégation de droit. Voir [Comment gérer le compte d'un client OVHcloud via les API](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (guide en anglais)
+Dans le cas présent, la clé **CK** est attachée à votre compte.
 
-Dans le cas présent, la clef **CK** est attachée à votre compte.
+Le token **CK** peut être utilisé pour de la délégation de droits. Consultez le guide suivant pour en savoir plus : [Comment gérer le compte d'un client OVHcloud via les API](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (guide en anglais).
 
-Pour l'instant, ce token a une durée de vie illimitée (vous pouvez donc le placer dans vos scripts). Les tokens à durée de vie limitée seront proposés ultérieurement. Une fois l'utilisateur authentifié, il est automatiquement redirigé vers l'URL que vous avez renseignée lors de la création du jeton (*https://www.monsiteweb.com/* dans l'exemple ci-dessus).
 
 #### Première utilisation de l'API
 
@@ -167,7 +168,7 @@ Les utiliser vous permettra de ne pas vous préoccuper du calcul de la signature
 - *Swift* : <https://github.com/ovh/swift-ovh>
 - *C#* : <https://github.com/ovh/csharp-ovh>
 
-Example d'utilisation de la section `/me` qui permet de gerer votre compte OVH
+Example d'utilisation de la section `/me` qui permet de gerer votre compte OVHcloud :
 
 ```python
 import ovh
