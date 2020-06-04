@@ -28,7 +28,7 @@ Sur la page des [API OVHcloud](https://api.ovh.com/), cliquez sur `Explore the O
 
 Pour utiliser les API sur vos produits, vous devez vous connecter sur ce site grâce à vos identifiants OVHcloud.
 
-- Cliquez sur `Login`{.action} en haut à droite, 
+- Cliquez sur `Login`{.action} en haut à droite. 
 - Saisissez vos identifiants OVHcloud. 
 - Définissez une temporalité, sous la mention **Validity**, pendant laquelle vous autorisez les actions via les API OVHcloud.
 
@@ -107,7 +107,7 @@ Par exemple, pour l'ajout d'un enregistrement TXT dans votre zone DNS, vous opti
  
 Une fois les paramètres définis, vous pouvez lancer l'API en cliquant sur `Execute`{.action}. 
 
-L'onglet `Result` alord affiché vous donnera le rapport d'éxécution de l'API.
+L'onglet `Result` alors affiché vous donnera le rapport d'éxécution de l'API.
 
 ![API](images/result.png){.thumbnail} 
 
