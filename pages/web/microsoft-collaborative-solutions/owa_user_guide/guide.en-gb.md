@@ -21,7 +21,7 @@ With OVHcloud Hosted Exchange you can send and receive your emails using a devic
 
 ## Instructions
 
-This guide will give you a better understanding of the usual email account tasks available in the OWA webmail. However, since this interface was not originally created by OVHcloud, we're unable to provide specific instructions about any settings not mentioned in this guide. Regarding Exchange functionalities, we have prepared some additional guides which you can find in the [**Go further**](./#go-further_1) section below.
+This guide will give you a better understanding of the usual email account tasks available in the OWA webmail. However, since this interface was not originally created by OVHcloud, we are unable to provide specific instructions about any settings not mentioned in this guide. Regarding Exchange functionalities, we have prepared some additional guides which you can find in the [**Go further**](./#go-further_1) section below.
 
 
 > [!primary]
@@ -119,7 +119,7 @@ Fill in the requested information depending on the action you want the rule to c
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-For more detailed instructions about creating inbox rules, please refer to our guide: [Creating inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa).
+For more detailed instructions about creating inbox rules, please refer to our guide: [Creating inbox rules in OWA](../creating-inbox-rules-in-owa).
 
 ### Managing a contact list
 
@@ -170,7 +170,7 @@ Now, fill in the requested information depending on the action you want it to ca
 
 ![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-For more detailed instructions about creating auto-replies, please refer to our guide: [Creating automatic replies in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa).
+For more detailed instructions about creating auto-replies, please refer to our guide: [Creating automatic replies in OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa).
 
 ### Adding a signature
 
@@ -178,13 +178,13 @@ To add an email signature, click the gear icon at the top, then click `Options`{
 
 ![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-On the left-hand side of the new page, click `Electronic Signature`{.action}. In the options tree, this item is under "Mail" and "Layout". From here you can enable, disable and edit the signature.
+On the left-hand side of the new page, click `Email signature`{.action}. In the options tree, this item is under "Mail" and "Layout". From here you can enable, disable and edit the signature.
 
 ![useowa](images/owa_exchange_step22.png){.thumbnail}
 
 Compose your electronic signature in the editor box. You can specify whether you want to include the signature by default in new emails only or in replies and forwarded emails as well. Once you have finished, click `Save`{.action} to confirm.
 
-For instructions about creating automated signatures by using templates, please refer to our guide: [Creating automatic signatures](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_create_an_automatic_signature).
+For instructions about creating automated signatures by using domain-wide templates, please refer to our guide: [Creating automatic signatures](../exchange_20132016_how_to_create_an_automatic_signature).
 
 ### Accessing the options section
 
@@ -198,12 +198,12 @@ You can then browse the "Options" tree-view on the left-hand side of the page. F
 
 ## Go further
 
-[Creating automatic replies in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa)
+[Creating automatic replies in OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa)
 
-[Sharing folders in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_a_folder_via_owa)
+[Sharing folders in OWA](../exchange_2016_how_to_share_a_folder_via_owa)
 
-[Sharing calendars in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_calendars_via_owa)
+[Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa)
 
-[Creating contact groups](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_use_the_groups_feature_mailing_lists)
+[Creating contact groups](../exchange_20132016_how_to_use_the_groups_feature_mailing_lists)
 
 Join our community of users on <https://community.ovh.com/en/>.
