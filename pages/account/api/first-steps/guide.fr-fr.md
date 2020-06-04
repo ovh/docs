@@ -123,23 +123,28 @@ Pour ce faire, cliquez sur le lien suivant : [https://eu.api.ovh.com/createToken
 
 Renseignez votre identifiant client, votre mot de passe et le nom de votre application. Le nom sera utile plus tard si vous voulez autoriser d'autres personnes à l'utiliser.
 
+Vous pouvez également ajouter une description de l'application ainsi qu'une temporalité. 
+
+Le champ `Rights` vous permet de restreindre l'usage de l'application à certaines API. 
+<br> Afin d'autoriser toutes les API OVHcloud pour une méthode HTTP, renseignez une étoile `*` dans le champ, comme dans l'exemple ci-dessous où la méthode GET est autorisée pour toutes les API :
+
 ![API keys](images/api-keys.png){.thumbnail} 
 
-Vous obtiendrez trois clés :
+Après avoir cliqué sur `Create keys`{.action}, Vous obtiendrez trois clés :
 
-- la clé d'application, appelée **AK,**. Par exemple:
+- la clé d'application, appelée **AK**. Par exemple :
 
 ```sh
 7kbG7Bk7S9Nt7ZSV
 ```
 
-- votre clé d'application secrète, à ne pas divulguer, appelée **AS**. Par exemple:
+- votre clé d'application secrète, à ne pas divulguer, appelée **AS**. Par exemple :
 
 ```sh
 EXEgWIz07P0HYwtQDs7cNIqCiQaWSuHF
 ```
 
-- une **consumerKey** secrète, à ne pas divulguer, appelée **CK**. Par exemple:
+- une **consumerKey** secrète, à ne pas divulguer, appelée **CK**. Par exemple :
 
 ```sh
 MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1
