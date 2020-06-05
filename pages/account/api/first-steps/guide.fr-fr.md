@@ -99,6 +99,8 @@ Par exemple, si vous ne souhaitez finalement pas conserver l'enregistrement DNS 
 > @api {DELETE}  /domain/zone/{zoneName}/record/{id}
 >
 
+##### Paramètres de l'API
+
 Après avoir cliqué sur l'API de votre choix, la section **Parameters** permet d'attribuer les variables relatives à son application.
  
 Par exemple, pour l'ajout d'un enregistrement TXT dans votre zone DNS, vous optiendrez les paramètres suivants :
