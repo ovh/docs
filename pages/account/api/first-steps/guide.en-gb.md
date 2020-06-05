@@ -99,6 +99,8 @@ For example, if you do not want to keep the DNS record that you added to your DN
 > @api {DELETE} /domain/zone/{zoneName}/record/{id}
 >
 
+##### **API parameters**
+
 After you click the API you want, the **Parameters** section allows you to assign variables for its application.
  
 For example, when adding a TXT record to your DNS zone, you will optimise the following settings:
