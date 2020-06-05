@@ -37,8 +37,8 @@ Please ensure that you have a sufficient number of SMS credits before you send.
 
 > [!primary]
 >
-If your text contains 2 line breaks (double /n), or if you write the "--end" parameter, these elements will not be taken into account when the message is sent.
-To send an SMS message with these elements, you will need to do so via the OVHcloud Control Panel or via the APIs.
+> If your text contains 2 line breaks (double /n), or if you write the "--end" parameter, these elements will not be taken into account when the message is sent.
+> To send an SMS message with these elements, you will need to do so via the OVHcloud Control Panel or via the APIs.
 >
 
 For further information on authorised characters in 7bit encoding, please refer to the [appendix](./#appendix_1) at the bottom of this guide.
@@ -59,9 +59,11 @@ Enter the following email address as a recipient: email2sms@ovh.net
 
 The email subject should be written in the following format: 
 
+
 ```
 SMSaccount:SMSuser:Password:Sender:Recipient
 ```
+
 
 
 - SMSaccount = the SMS account you want to use (e.g.: sms-xx11111-1).
@@ -82,7 +84,7 @@ You should see a result similar to the image below. By default, once you send yo
 > [!primary]
 >**For OVHcloud accounts in France only:**
 >
-If you would like to use a short number that enables replies, enter senderForResponse=1 as a sender.
+> If you would like to use a short number that enables replies, enter senderForResponse=1 as a sender.
 >
 
 You can refer to the following guide for any specifics about SMS users: [Everything you need to know about SMS users](../everything_you_need_to_know_about_sms_users/)
@@ -92,9 +94,11 @@ You can refer to the following guide for any specifics about SMS users: [Everyth
 
 You can add extra fields in the subject, such as:
 
+
 ```
 SMSaccount:SMSuser:Password:Sender:Recipient1,Recipient2:SendDate:SMSclass:SMSencoding:NoStop
 ```
+
 
 
 - Recipient1 = phone number of the message recipient - you can add more recipients, and separate them via a comma (,).
