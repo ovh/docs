@@ -1,5 +1,5 @@
 ---
-title: 'Exchange 2016: współdzielenie katalogu w interfejsie OWA'
+title: 'Exchange: współdzielenie katalogu w interfejsie OWA'
 excerpt: ''
 slug: exchange_2016_wspoldzielenie_katalogu_poprzez_webmail_owa
 section: 'Outlook Web Application (Aplikacja WWW)'

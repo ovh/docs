@@ -2,7 +2,8 @@
 title: Débuter avec l’API Cinder
 slug: debuter-avec-lapi-cinder
 legacy_guide_number: 2071
-section: Actions via API et lignes de commande
+section: Gestion via OpenStack
+order: 6
 ---
 
 

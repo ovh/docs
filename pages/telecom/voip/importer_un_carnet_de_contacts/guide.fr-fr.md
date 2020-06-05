@@ -1,22 +1,22 @@
 ---
 title: 'Gérer un carnet de contacts sur une ligne SIP'
 slug: importer_un_carnet_de_contacts
-excerpt: 'Apprenez à gérer un carnet de contacts sur une ligne SIP OVH'
+excerpt: 'Apprenez à gérer un carnet de contacts sur une ligne SIP OVHcloud'
 section: 'Lignes téléphoniques'
 ---
 
-**Dernière mise à jour le 11/09/2018**
+**Dernière mise à jour le 03/06/2020**
 
 ## Objectif
 
-Votre ligne SIP OVH vous permet de recevoir et d’émettre des appels. Afin de rendre les interactions avec vos correspondants plus faciles, vous avez la possibilité de créer un carnet de contacts permettant de retrouver ou d'identifier ceux-ci directement depuis vos téléphones, dans le répertoire ou lors d'un appel entrant.
+Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afin de rendre les interactions avec vos correspondants plus faciles, vous avez la possibilité de créer un carnet de contacts permettant de retrouver ou d'identifier ceux-ci directement depuis vos téléphones, dans le répertoire ou lors d'un appel entrant.
 
-**Apprenez à gérer le carnet de contacts et les numéros abrégés de vos lignes SIP OVH.**
+**Apprenez à gérer le carnet de contacts et les numéros abrégés de vos lignes SIP OVHcloud.**
 
 ## Prérequis
 
-- Disposer au moins d'une [ligne SIP OVH](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
-- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
+- Disposer au moins d'une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
+- Être connecté à l'[espace client OVHcloud](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
 
 ## En pratique
 
@@ -26,15 +26,15 @@ Vous avez la possibilité de gérer le carnet de contacts d'une seule ligne ou d
 
 - **Pour accéder à la gestion du carnet de contacts d'une seule ligne** :
 
-Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et assurez-vous de vous situer dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Téléphone`{.action} et cliquez sur `Carnets de contacts`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et assurez-vous de vous situer dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Téléphone`{.action} et cliquez sur `Carnets de contacts`{.action}.
  
-![carnetcontacts](images/carnet-contacts-step1.png){.thumbnail}
+![carnet de contacts](images/carnet-contacts-step1.png){.thumbnail}
 
 - **Pour accéder à la gestion du carnet de contacts d'un groupe de lignes** :
 
-Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et assurez-vous de vous situer dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis cliquez sur le groupe de lignes concerné. Cliquez enfin sur le bouton `Carnet de contacts`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et assurez-vous de vous situer dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis cliquez sur le groupe de lignes concerné. Cliquez enfin sur le bouton `Carnet de contacts`{.action}.
  
-![carnetcontacts](images/carnet-contacts-step2.png){.thumbnail}
+![carnet de contacts](images/carnet-contacts-step2.png){.thumbnail}
 
 ### Étape 2 : gérer le carnet de contacts
 
@@ -44,17 +44,17 @@ La gestion du carnet de contacts s'effectue de la même manière, que vous ayez 
 
 Pour créer un carnet de contact, renseignez le nom du carnet dans la zone de texte en dessous de « Nom du carnet de contacts », puis cliquez sur le bouton `Créer le carnet de contacts`{.action}.
 
-![carnetcontacts](images/carnet-contacts-step3.png){.thumbnail}
+![carnet de contacts](images/carnet-contacts-step3.png){.thumbnail}
 
 #### Ajouter ou modifier un contact
 
 Pour ajouter un nouveau contact, cliquez sur le bouton `Actions`{.action}, puis sur `Ajouter`{.action}. Pour modifier un contact existant, cliquez sur le bouton représentant trois points à droite du contact concerné, puis sur `Éditer`{.action}.
 
-![carnetcontacts](images/carnet-contacts-step4.png){.thumbnail}
+![carnet de contacts](images/carnet-contacts-step4.png){.thumbnail}
 
 Remplissez ensuite les informations demandées. Les numéros doivent être renseignés au format international (par exemple, « 0033100000000 » pour un numéro français). Une fois les informations complétées, cliquez sur le bouton `Valider`{.action} pour ajouter le contact. Répétez cette manipulation autant de fois que nécessaire.
 
-![carnetcontacts](images/carnet-contacts-step5.png){.thumbnail}
+![carnet de contacts](images/carnet-contacts-step5.png){.thumbnail}
 
 #### Importer des contacts
 
@@ -93,7 +93,7 @@ Pour supprimer un carnet de contacts, cliquez sur le bouton `Supprimer le carnet
 
 Afin que votre téléphone puisse utiliser le carnet de contacts ou récupérer les éventuelles modifications effectuées dans celui-ci, commencez par le redémarrer. Une fois votre téléphone redémarré, il devrait avoir téléchargé le nouveau carnet de contacts.
 
-À noter que si vous utilisez un téléphone Cisco, seul le numéro du contact sera affiché (et non son nom et son prénom) lors d'un appel sortant, même si ce dernier est présent dans le carnet de contacts dans votre espace client. Ce comportement est spécifique aux téléphones Cisco. Si vous souhaitez afficher le nom de vos correspondants, vous devrez enregistrer ces informations dans votre téléphone. 
+À noter que si vous utilisez un téléphone Cisco, seul le numéro du contact sera affiché (et non son nom et son prénom) lors d'un appel entrant, même si ce dernier est présent dans le carnet de contacts dans votre espace client. Ce comportement est spécifique aux téléphones Cisco. Si vous souhaitez afficher le nom de vos correspondants, vous devrez enregistrer ces informations dans votre téléphone. 
 
 ## Aller plus loin
 

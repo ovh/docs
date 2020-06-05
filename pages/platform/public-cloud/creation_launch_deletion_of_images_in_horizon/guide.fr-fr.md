@@ -2,7 +2,8 @@
 title: Création, lancement et suppression d’images dans Horizon
 slug: creation-lancement-et-suppression-dimages-dans-horizon
 legacy_guide_number: 1784
-section: Base de connaissances
+section: Gestion depuis Horizon
+order: 13
 ---
 
 

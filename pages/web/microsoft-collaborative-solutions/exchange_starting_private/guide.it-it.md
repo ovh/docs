@@ -1,146 +1,105 @@
 ---
-title: 'Exchange: configura la tua soluzione Private Exchange'
-excerpt: Configura il tuo server Private Exchange
-slug: exchange_configura_la_tua_soluzione_private_exchange
+title: 'Iniziare a utilizzare Private Exchange'
+excerpt: 'Come configurare il tuo server Private Exchange'
+slug: exchange_pirmi_zingsniai_su_private_serveriu
+section: 'Iniziare a utilizzare Exchange'
 legacy_guide_number: g2074
 ---
 
+**Ultimo aggiornamento: 25/03/2020**
 
-## Step 1: ricezione dell'email di configurazione del tuo server
-Una volta saldato il tuo ordine, ricevi un'email per eseguire l'installazione del tuo server Private.
-L'email viene inviata all'indirizzo email che hai indicato nel tuo Spazio Cliente OVH.
-Il messaggio sarà disponibile anche nel tuo Spazio Cliente OVH. Per visualizzarlo, clicca sul tuo identificativo in alto a destra e poi su Il tuo account
+## Obiettivo
 
-![](images/img_4047.jpg){.thumbnail}
-Clicca su Email ricevute
+Se hai appena ordinato una soluzione Private Exchange, segui questi passaggi per configurare il tuo servizio.
 
-![](images/img_4050.jpg){.thumbnail}
-In questa sezione puoi visualizzare l'email ricevuta per effettuare la configurazione del tuo server Private Exchange.
+**Questa guida ti mostra come configurare la piattaforma Private Exchange**.
 
+## Prerequisiti
 
-- L'oggetto dell'email è:
+- Aver ordinato una [soluzione Private Exchange OVHcloud](https://www.ovh.it/emails/){.external}.
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
 
-Il tuo servizio Private Exchange 2016v1 è in consegna!
+## Procedura
 
+### Step 1: ricevi l’email di configurazione della tua piattaforma
 
-![](images/img_4051.jpg){.thumbnail}
-Ecco il testo del messaggio:
+Una volta saldato il tuo ordine, ricevi un’email all’indirizzo di contatto indicato nel tuo Spazio Cliente, con le informazioni necessarie per eseguire l’installazione della tua piattaforma Private Exchange. 
 
+Per consultare questa email dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), clicca sul tuo profilo in alto a destra e poi su `Il tuo account`{.action}. Clicca sulla scheda `Email ricevute`{.action} e cerca l’email che ha come oggetto:
 
-```
-Gentile Cliente,
-
-   ti informiamo che la tua offerta Private Exchange 2016v1 è quasi pronta!
-
-Per utilizzare il tuo server, è necessario:
-- personalizzare il link di accesso alla tua Webmail (certificato SSL dedicato)
-- inserire un indirizzo email valido a cui ricevere il messaggio per la conferma del tuo certificato
-
-Puoi eseguire queste due operazioni cliccando sul link:
-https://www.ovh.it/emails/ordine/?orderId=5035xxxx&orderPassword=nqiJ#/serverConfig
-
-Per accedere dovrai inserire il tuo NicHandle (ab12345-ovh) e la tua password.
-
-ATTENZIONE: dopo aver eseguito quanto richiesto, imposta il puntamento del sottodominio scelto verso l'IP del tuo server, che ti verrà comunicato tramite email.
-
-Hai bisogno di aiuto?
-Scopri tutte le nostre guide Exchange:
-https://www.ovh.it/emails/hosted-exchange/guide
-
-Come specificato nel nostro contratto, il servizio si rinnova automaticamente alla scadenza. Se non vuoi rinnovarlo, puoi disattivarlo direttamente dal tuo Spazio Cliente OVH o tramite l'API OVH.
-
-A presto,
-
-Il team OVH
-```
+> **[xx-11111-ovh] Il tuo servizio Private Exchange 20_xxx_ è in consegna!**
 
 
+![first-use-private-exchange](images/first-use-private-exchange-01.png){.thumbnail}
 
+Questa email contiene un link che consente di effettuare due operazioni di configurazione della piattaforma:
 
-## Step 2: configurazione automatica della tua zona DNS
-Clicca sul link indicato nell'email ricevuta per accedere alla pagina di configurazione del tuo server.
+- personalizzare il link d’accesso alla tua Webmail
+- inserire l’indirizzo email di contatto per confermare il tuo certificato (attenzione: questo indirizzo email deve essere esistente e accessibile).
 
-![](images/img_4052.jpg){.thumbnail}
+Clicca sul link indicato nell’email ricevuta, e poi passa allo [Step 2](./#step-2-avvia-la-piattaforma){.external} :
 
-- Nome del server: definisci il nome del tuo server e il link di accesso alla tua Webmail. Ti vengono proposte più opzioni:
+### Step 2: avvia la piattaforma
 
-- mail
-- exchange
-- exchange 2016
-- ex
-- mailex
+Dopo aver cliccato sul link indicato nell’email allo [Step 1](./#step-1-ricevi-lemail-di-configurazione-della-tua-piattaforma){.external} , 
 
+sarai reindirizzato alla pagina di configurazione:
 
-Una volta selezionato il sottodominio, inserisci un dominio valido. Il link di accesso alla Webmail (OWA) sarà ad esempio: exchange2016.tuodominio.it
-Scegli un indirizzo emailvalido a cui ricevere l'email di conferma del tuo certificato SSL.
+![first-use-private-exchange](images/first-use-private-exchange-02.png){.thumbnail}
 
-Il menu contiene indirizzi email generici, come:
+Per effettuare la configurazione segui le indicazioni di questa tabella:
 
+| Campo          	| Descrizione                                                                                                                                                                                                                             	|
+|----------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Nome del server: 	| Nel menu a tendina, seleziona il sottodominio associato al tuo dominio. <br> Nel campo vuoto, inserisci il dominio che vuoi associare.                                                                   	|
+| Email               	| Scegli un indirizzo email tra quelli proposti nella lista, per ricevere l’email di conferma del tuo certificato SSL. Per questo motivo è molto importante che sia valido o che reindirizzi verso un altro indirizzo email accessibile per riceverlo.
+| DNS Assist:           	| Selezionando questa casella, autorizzi la configurazione automatica della tua zona DNS per il dominio della tua piattaforma. Il dominio deve essere associato allo stesso account OVHcloud della tua piattaforma. Se non selezioni la casella, ti verrà inviata un’email con le informazioni necessarie per la configurazione della tua zona DNS. 	|
 
-- postmaster@tuodominio.it
-- administrator@tuodominio.it
-- admin@tuodominio.it
-- hostmaster@tuodominio.it
-- webmaster@tuodominio.it
+Una volta completato questo step, un messaggio ti informa che la configurazione è stata eseguita correttamente e ti ricorda l’indirizzo email di conferma del certificato SSL, nonché l’indirizzo di accesso alla Webmail della tua piattaforma.
 
+### Step 3: configura manualmente la tua zona DNS
 
-Se il tuo dominio è ospitato in OVH e non hai attivato un servizio di posta, dal tuo Spazio Cliente OVH puoi creare un reindirizzamento (Alias) da indirizzo@tuodominio verso un indirizzo esistente.
-Utilizza l'opzione DNS Assist per eseguire la configurazione automatica della tua zona DNS (creazione del record di tipo ipv4 (A) in base al sottodominio selezionato)
-Questa operazione è possibile se il tuo dominio è associato allo stesso identificativo OVH utilizzato per l'ordine del tuo server Private Exchange. In caso contario, dovrai configurare manualmente la tua zona DNS.
-Nel notro esempio, abbiamo selezionato l'opzione DNS Assist. In seguito, puoi confermare la configurazione. Se hai utilizzato l'opzione DNS Assist, salta lo Step 3.
+> [!primary]
+>
+> Questo step è facoltativo, se hai selezionato “**DNS Assist**” allo [Step 2](./#step-2-avvia-la-piattaforma){.external}  .
+> 
 
+Se il tuo dominio non è associato allo stesso identificativo cliente o non è ospitato in OVHcloud, riceverai un’altra email con le informazioni necessarie a modificare la tua zona DNS.
 
-## Step 3: Configura manualmente la tua zona DNS
-Se il tuo dominio non è associato allo stesso identificativo cliente o non è ospitato in OVH, riceverai un'altra email con le informazioni necessarie a modificare la tua zona DNS.
-
-Ecco il contenuto del messaggio:
-
-
-```
-Oggetto: [OVH-EXCHANGE] il tuo server Exchange è quasi pronto!
-
-Gentile Cliente,
-
-   per attivare il certificato SSL del tuo server, è necessario creare il suo indirizzo nella tua zona DNS.
-
-L'indirizzo che hai scelto è: exchange2016.testinterne.ovh
-L'IP del tuo server è: 149.202.xxx.103
-
-Ti ricordiamo che è necessario creare un record A per questo elemento.
-
-Se hai bisogno di assistenza, apri un ticket nella sezione "Supporto" del nuovo Spazio Cliente OVH. Sarà necessario effettuare il login per rendere la tua richiesta ancora più sicura.
-
-A presto,
-
-Il team OVH
-```
-
-
-In questo caso, è necessario creare un record A corrispondente a:
-
-
-- exchange2016.testinterne.ovh A 149.202.xxx.103
+L’email contiene gli indirizzi IPv4 e IPv6 della tua piattaforma: Inserisci questi indirizzi nella zona DNS del sottodominio creato allo [Step 2](./#step-2-avvia-la-piattaforma){.external}, rispettivamente sotto forma di un record “A” e di un record “AAAA”. Se disponi di un dominio OVHcloud, consulta la nostra guida [Modifica una zona DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/).
 
 
 
+### Step 4: conferma il certificato SSL
 
-## Step 4: conferma il tuo certificato SSL
-Una volta configurata la tua zona DNS in modalità automatica o manuale, ricevi un'email di conferma all'indirizzo scelto nella fase di personalizzazione del link di accesso alla Webmail.
-Questa operazione può richiedere fino a 4 ore.
-Ecco il contenuto dell'email ricevuta:
+Una volta completato lo [Step 2](./#step-2-avvia-la-piattaforma){.external}, ricevi un’email all’indirizzo scelto per confermare il tuo certificato SSL.
 
-![](images/img_4059.jpg){.thumbnail}
-Clicca sul link per confermare il tuo certificato SSL.
-Vieni reindirizzato all'interfaccia di Global Sign. Clicca su I APPROVE[
-/green] per confermare il tuo certificato.
+Questa email è inviata dall’organismo che rilascia il certificato SSL e ha come oggetto:
 
-![](images/img_4054.jpg){.thumbnail}
+> **ORDER #1111111 - Domain Control Validation for exchange.votredomaine.com**
 
+Copia il codice presente nell’email e clicca sul link di conferma del certificato SSL.
 
-## Finalizzazione
-Una volta confermato il certificato, potrebbero essere necessarie fino a 4 ore per la consegna del tuo servizio. Durante le fasi di configurazione il tuo server Private Exchange non è visibile nel tuo Spazio Cliente OVH.
+Incolla il codice nell’apposita casella, all’interno della finestra che appare, e poi clicca su Next.
 
-Una volta che il tuo server è pronto e disponibile, riceverai un'email di conferma.
+![first-use-private-exchange](images/first-use-private-exchange-03.png){.thumbnail}
 
-Se hai bisogno di aiuto per la configurazione del tuo servizio di posta, consulta [questa guida](https://www.ovh.it/g1311.configurazione-servizio).
+Un messaggio ti informa se il codice inserito è valido. In caso affermativo, clicca su `Close window`{.action}.
 
+### Finalizzazione
+
+Una volta confermato il certificato SSL, potrebbero essere necessarie fino a 4 ore per la consegna del tuo servizio. Durante le fasi di configurazione il tuo server Private Exchange non è visibile nel tuo Spazio Cliente OVHcloud.
+
+Una volta che il tuo server è pronto e disponibile, riceverai un’email di conferma con il seguente oggetto:
+
+> **[xx-11111-ovh] Il tuo servizio Private Exchange 20_xxx_ è pronto!**
+
+Per aggiungere un dominio alla tua piattaforma e configurare gli account; consulta la nostra guida [“Aggiungere un dominio su Exchange”](../aggiungere-dominio-su-exchange/) 
+
+## Per saperne di più
+
+[Modificare una zona DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/)
+
+[Aggiungere un dominio su Exchange](../aggiungere-dominio-su-exchange/) 
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

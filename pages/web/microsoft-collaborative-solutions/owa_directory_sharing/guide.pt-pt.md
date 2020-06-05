@@ -1,5 +1,5 @@
 ---
-title: 'Exchange 2016: partilhar uma pasta através do webmail OWA'
+title: 'Exchange : partilhar uma pasta através do webmail OWA'
 excerpt: ''
 slug: exchange_2016_partilhar_uma_pasta_atraves_do_webmail_owa
 legacy_guide_number: g1929

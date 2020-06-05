@@ -2,7 +2,8 @@
 title: 'Basculer une IP Fail Over'
 slug: basculer-une-ip-fail-over
 legacy_guide_number: 1890
-section: 'Base de connaissances'
+section: 'Réseau'
+order: 12
 ---
 
 **Dernière mise à jour le 21/02/2020**

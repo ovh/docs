@@ -1,5 +1,5 @@
 ---
-title: Exchange 2013/2016 Automatische Signatur - Disclaimer
+title: Exchange Automatische Signatur - Disclaimer
 excerpt: In dieser Hilfe wird die Einrichtung einer automatischen Signatur (Disclaimer) beschrieben
 slug: exchange_20132016_automatische_signatur_-_disclaimer
 legacy_guide_number: g1330
@@ -53,7 +53,7 @@ Es wird auch eine Zusammenfassung der Informationen Ihrer Signatur angezeigt.
 
 
 ## E-Mail-Beispiel Teil 1
-In diesem Beispiel zeigen wir, wie Sie Ihre Signatur über das [Exchange Webmail-Interface](https://ex.mail.ovh.net/owa/) zu einer E-Mail hinzufügen können.
+In diesem Beispiel zeigen wir, wie Sie Ihre Signatur über das [Exchange Webmail-Interface](https://mail.ovh.net/) zu einer E-Mail hinzufügen können.
 
 Verwenden Sie für die Anmeldung die vollständige E-Mail-Adresse und das dazugehörige Passwort.
 

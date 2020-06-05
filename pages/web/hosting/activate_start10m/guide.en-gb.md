@@ -10,20 +10,20 @@ order: 2
 
 ## Objective
 
-With [Start10M](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.external}, OVHcloud gives you a 10MB hosting plan, and an email account with 5GB storage. This guide will show you how to activate Start 10M hosting on your [domain name](https://www.ovh.co.uk/domains/){.external}.
+With [Start10M](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.external}, OVHcloud gives you a 10MB Web Hosting plan, and an email account with 5GB storage. This guide will show you how to activate Start 10M hosting on your [domain name](https://www.ovh.co.uk/domains/){.external}.
 
-**Find out how to activate your free Start 10M hosting plan**
+**Find out how to activate your free Start 10M hosting plan.**
 
 ## Requirements
 
-- A [domain name](https://www.ovh.co.uk/domains/){.external}, detached from any web hosting plans, in the OVHcloud Control Panel
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- a [domain name](https://www.ovh.co.uk/domains/){.external}, detached from any Web Hosting plans, in the OVHcloud Control Panel
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action}(**1**) in the services bar on the left-hand side, then choose the domain name concerned.
 
-In the **General information** box (**2**), you will see *Free web hosting and email*. Click `...`{.action} on the right-hand side, then `Activate`{.action}(**3**).
+In the **General information** box (**2**), you will see *Web hosting with free email*. Click `...`{.action} on the right-hand side, then `Enable`{.action}(**3**).
 
 ![start10m](images/start10m-step1-01.png){.thumbnail}
 
@@ -39,21 +39,18 @@ The activation window will appear. **Step 1** will detail the plan and its price
 | The MX records of *example.com*      	| The domain name will point to the OVHcloud email servers without any change to how the hosting plan is pointed.  								|
 
 > [!primary]
-> No databases are included with Start 10M free hosting. If your project requires a database, we recommend browsing our [web hosting plans](https://www.ovh.co.uk/web-hosting/), which include them.
+> No databases are included with Start 10M free hosting. If your project requires a database, we recommend browsing our [Web Hosting plans](https://www.ovh.co.uk/web-hosting/), which include them.
 
 You simply need to read and confirm the terms and conditions for the plan in **step 3**, then `Confirm`{.action}the summary in **step 4**.
 
-Once you have placed your order, you will be sent an email containing the [FTP connection details](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/){.external} for your Start 10M hosting plan.
+Once you have placed your order, you will be sent an email containing the [FTP connection details](../log-in-to-storage-ftp-web-hosting/){.external} for your Start 10M hosting plan.
 
-Please read our guide on [creating an MX Plan email account](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external} to get the very most out of the email address included with the Start 10M hosting solution.
+Please read our guide on [creating an MX Plan email account](../emails/hosted_email_how_to_set_up_an_email_address/){.external} to get the very most out of the email address included with the Start 10M hosting solution.
 
 ## Go further
 
-[Logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/){.external}
+[Logging in to your Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting/){.external}
 
-[Creating an email address with an MX Plan solution](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}
+[Creating an email address with an MX Plan solution](../emails/hosted_email_how_to_set_up_an_email_address/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.
-
-
-

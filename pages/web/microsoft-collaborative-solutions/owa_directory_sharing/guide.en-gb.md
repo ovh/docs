@@ -1,73 +1,108 @@
 ---
-title: 'Exchange 2016: How to share a folder via OWA'
-excerpt: ''
+title: 'Sharing folders in OWA'
 slug: exchange_2016_how_to_share_a_folder_via_owa
+excerpt: 'Find out how to share folders between Exchange accounts'
 section: 'Outlook Web Application (OWA)'
 order: 5
 ---
 
-## Step 1: Authorise mailbox sharing
-In our example, a folder is shared from the ovhguide@support-exchange.eu account to ovhguide2@support-exchange.eu.  
-Firstly: authorise sharing on your account.  
-To do this, right-click on the account name and select "permissions" . A new window will appear.  
+**Last updated 7th April 2020**
 
-![](images/img_2976.jpg){.thumbnail}
+## Objective
 
+It is not always appropriate to delegate the usage of an entire email account. The Exchange folder sharing feature allows you to grant other users access to selected folders in your account by assigning very specific permissions.
 
-## Step 2: Authorise mailbox sharing
-Click on the+ icon to add the user you want to share folders with. A new interface will then appear.
+**This guide explains how to share folders and define their access permissions using the Outlook Web App (OWA).**
 
-![](images/img_2982.jpg){.thumbnail}
-
-
-## Step 3: Authorise mailbox sharing
-Add the user.
-
-![](images/img_2983.jpg){.thumbnail}
+> [!primary]
+>
+> Although this guide will refer to our Exchange services, you can follow the instructions for [Email Pro](https://www.ovh.co.uk/emails/email-pro) accounts as well.
+>
 
 
-## Step 4: Authorise mailbox sharing
-You can also customise the level of access for this user by changing the permission options in the Permissions section. 
+## Requirements
 
-For example you may want the ovhguide2@support-exchange.eu user to only have access to the "Drafts" folder in the ovhguide@support-exchange.eu. mailbox. 
-
-Click "OK"to confirm your selection.
-
-Permissions will be granted only for the file in question.
-
-![](images/img_2985.jpg){.thumbnail}
+- an [OVHcloud Exchange solution](https://www.ovh.co.uk/emails/hosted-exchange) already set up
+- access to your Exchange account (email address and password)
 
 
-## Set up folder sharing permissions
-You can now give the second user sharing permissions for a folder, such as the "Drafts" folder.
+## Instructions
 
-The process is almost the same as before: right-click on the "Drafts" folder, then 
+### Step 1: Defining access permissions to a folder
 
-click on "Permissions"
+Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.co.uk/mail). Right-click on the folder to be shared and select `Permissions...`{.action} from the context menu.
 
-This step can be carried out for any folder.
+![sharefolder](images/exchange-folder-step1.png){.thumbnail}
 
-Carry out the same actions as before by adding a user then giving them the necessary permissions for the folder in question.
+In the next interface, add a user first by clicking on the `+`{.action} icon. Start typing to display suggestions from your contacts, enter a full email address or use the search option via `Search directory`{.action}.
 
-You can assign different permissions: Owner, Editer, Author, User...
+There are sets of pre-defined permissions ("Permission level") to choose from. It is easiest to select one of these roles first, for example "Author", to see which permissions it will grant. Then, customise them according to your needs by modifying the checkboxes.
 
-![](images/img_2986.jpg){.thumbnail}
+![sharefolder](images/exchange-folder-step2aag.gif){.thumbnail}
 
+#### Permission details
 
-## Step 1: Retrieve the shared folder
-The user that has been given permission must add the shared folder in [OWA](https://ex.mail.ovh.net/owa/).
+- **Read**
 
-To do this, right-click on your email account, then select "add shared folder".
-
-![](images/img_2988.jpg){.thumbnail}
-
-
-## Step 2: Retrieve the shared folder
-Enter the first user's account name.
+|Permission|Description|
+|---|---|
+|None|The user cannot see the content of the folder.|
+|Full details|The user can see the content of the folder.|
 
 
-## Step 3: Retrieve the shared folder
-Our shared folder "Sent items" should now appear in [OWA](https://ex.mail.ovh.net/owa/).
+- **Delete access**
 
-![](images/img_2989.jpg){.thumbnail}
+|Permission|Description|
+|---|---|
+|None|The user cannot delete any items.|
+|Own|The user can delete self-created items.|
+|All|The user can delete any item in the folder.|
 
+
+- **Write**
+
+|Permission|Description|
+|---|---|
+|Create items|The user can create new items in the folder.|
+|Create subfolders|The user can create new subfolders inside the shared folder.|
+|Edit own|The user can edit self-created items.|
+|Edit all|The user can edit any item in the folder.|
+
+
+- **Other**
+
+|Permission|Description|
+|---|---|
+|Folder owner|The user has the same permissions on this folder as the owner (all permissions).|
+|Folder contact|The user will receive notifications and requests concerning the folder (status changes, permission requests, error messages).|
+|Folder visible|The folder will appear in the user's account.|
+
+> [!primary]
+>**Subfolders**
+> 
+> - Subfolders created in a shared folder will automatically inherit the parent folder's permissions. If you grant new permissions on a folder and its subfolder(s) are to be shared as well, permissions have to be set **for each subfolder**.
+> 
+> - If you share a **subfolder** of an existing folder that itself has no permissions set, make sure to tick at least "Folder visible" on the **parent folder**. Without it, the subfolder will not appear in the other user's account. (The user will not be able to see the parent folder's content, unless you also grant the "Read" permission.)
+> 
+> - Users will not be able to delete subfolders they did not create themselves.
+> 
+> - Users with the permission "Folder owner" on a subfolder can rename it and grant permissions to it.
+>
+
+
+### Step 2: Retrieving a shared folder
+
+![sharefolder](images/exchange-folder-step3.png){.thumbnail}
+
+Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.co.uk/mail). Right-click on your account name in the left-hand navigation and select `Add shared folder...`{.action} from the context menu. In the new window, provide the account name from which a folder was shared. Start typing to display suggestions from your contacts, enter a full email address or use the search option via `Search directory`{.action}. Confirm by clicking on `Add`{.action}. The new shared folder will immediately appear underneath your other folders.
+
+
+## Go further
+
+[Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide)
+
+[Delegating permissions on an Exchange account](../exchange_2013_how_to_grant_full_access_permissions_for_an_account)
+
+[Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa)
+
+Join our community of users on <https://community.ovh.com/en/>.

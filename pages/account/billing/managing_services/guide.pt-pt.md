@@ -3,6 +3,7 @@ title: 'Gerir os serviços da OVH'
 slug: gerir-os-servicos-ovh
 excerpt: 'Saiba como visualizar e gerir as suas soluções a partir da interface “Gerir serviços” da Área de Cliente'
 section: 'Gerir as encomendas, faturas e serviços'
+hidden: true
 ---
 
 **Última atualização: 11/12/2018**

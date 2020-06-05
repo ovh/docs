@@ -2,7 +2,8 @@
 title: Débuter avec l’API Swift
 slug: debuter-avec-lapi-swift
 legacy_guide_number: 1916
-section: Actions via API et lignes de commande
+section: Gestion via OpenStack
+order: 4
 ---
 
 

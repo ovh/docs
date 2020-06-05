@@ -3,6 +3,7 @@ title: 'Managing OVH services'
 slug: manage-ovh-services
 excerpt: 'Find out how to view and manage your solutions via the “Manage my services” section of the OVH Control Panel'
 section: 'Managing orders, bills and services'
+hidden: true
 ---
 
 **Last updated 5th December 2018**

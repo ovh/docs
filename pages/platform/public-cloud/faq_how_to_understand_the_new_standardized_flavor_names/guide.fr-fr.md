@@ -2,7 +2,9 @@
 title: Comprendre la nomenclature des flavors de la gamme 2017
 slug: faq-comment-comprendre-la-nouvelle-nomenclature-de-la-gamme-2017
 excerpt: FAQ expliquant le nommage du catalogue Public Cloud 2017
-section: Base de connaissances
+section: Premiers pas
+order: 7
+hidden: true
 ---
 
 
