@@ -5,18 +5,18 @@ excerpt: Learn how to use OVHcloud APIs
 section: API
 ---
 
-**Last updated 05th June 2020**
+**Last updated 5th June 2020**
 
 ## Objective
 
-The APIs available on [https://api.ovh.com/](https://api.ovh.com/){.external} allow you to purchase, manage, update and configure OVHcloud products without using a graphical interface such as the control panel.
+The APIs available on [https://api.ovh.com/](https://api.ovh.com/){.external} allow you to purchase, manage, update and configure OVHcloud products without using a graphical interface such as the Control Panel.
 
-**Learn how to use OVHcloud APIs and how to pair them with your applications**
+**Learn how to use OVHcloud APIs and how to pair them with your applications.**
 
 ## Requirements
 
-- Have an active OVHcloud account and know its credentials.
-- Be on the [OVHcloud API](https://api.ovh.com/){.external} web page.
+- You have an active OVHcloud account and know its credentials.
+- You are on the [OVHcloud API](https://api.ovh.com/){.external} web page.
 
 ## Instructions
 
@@ -30,7 +30,7 @@ To use the APIs on your products, you must sign in to this site using your OVHcl
 
 - Click `Login`{.action} in the upper right.
 - Enter your OVHcloud credentials.
-- Set a timeline, labeled **Validity**, during which you allow actions through the OVHcloud APIs.
+- Set a timeline, labelled **Validity**, during which you allow actions through the OVHcloud APIs.
 
 ![API](images/login.png){.thumbnail}
 
@@ -81,7 +81,7 @@ For example, to add a record to your DNS zone, use the following API:
 
 The PUT method is used to replace the current data in the resource with the data in the query.
 
-For example, if you are mistaken in a record in your DNS zone, use the following API:
+For example, if you have mistakenly set a record in your DNS zone, use the following API:
 
 > [!api]
 >
@@ -101,7 +101,7 @@ For example, if you do not want to keep the DNS record that you added to your DN
 
 After you click the API you want, the **Parameters** section allows you to assign variables for its application.
  
-For example, when adding a TXT record to your DNS zone, you will optimize the following settings:
+For example, when adding a TXT record to your DNS zone, you will optimise the following settings:
  	
 ![API](images/parameters.png){.thumbnail} 
  
@@ -130,7 +130,7 @@ The `Rights` field allows you to restrict the use of the application to certain 
 
 ![API keys](images/api-keys.png){.thumbnail}
 
-After you click `Create keys`{.action}, you will get three keys:
+After you click `Create keys`{.action}, you will be issued three keys:
 
 - the application key, called **AK**. For example:
 
@@ -163,7 +163,7 @@ Once you have obtained your three keys (**AK**, **AS**, **CK**), you can sign AP
 ```
 
 To simplify the development of your applications, OVHcloud provides API wrappers in multiple languages.
-Using them will help you avoid worrying about signing and focus on developing your application.
+Using them will help you to avoid worrying about signing requests, so that you can focus on developing your application.
 
 - *Perl* : <https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip>
 - *Python* : <https://github.com/ovh/python-ovh>
