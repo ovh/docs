@@ -2,7 +2,7 @@
 title: 'Manage payment and billing of OVHcloud services'
 slug: ovh-enterprise-payment
 excerpt: 'Discover how to add a payment mean, automate accounting and manage your corporate billing'
-section: 'OVH APIv6'
+section: 'APIv6'
 ---
 
 **Last updated January 2 2020**
