@@ -6,84 +6,163 @@ section: 'Pierwsze kroki'
 order: 1
 ---
 
-**Ostatnia aktualizacja dnia 2018-04-18**
+**Ostatnia aktualizacja z dnia 29-05-2020**
  
 ## Wprowadzenie
 
-Wirtualny serwer prywatny (VPS, Virtual Private Server) to inaczej zwirtualizowana wydzielona część serwera dedykowanego. W przeciwieństwie do hostingu współdzielonego, w przypadku którego zarządzanie techniczne leży po stronie OVHcloud, tutaj to Ty zarządzasz w całości serwerem VPS.
+Prywatny serwer wirtualny VPS (z ang. *Virtual Private Server*) to wirtualny serwer dedykowany. W przeciwieństwie do hostingu, gdzie techniczne zarządzanie należy do zadań OVHcloud, Twój serwer VPS jest administrowany wyłącznie przez Ciebie.
 
-**Ten przewodnik pomoże Ci rozpocząć pracę z Twoim nowym serwerem VPS.**
+**Niniejszy przewodnik zawiera kilka podstawowych wskazówek, które pomogą Ci zacząć pracować z Twoim nowym, zainstalowanym serwerem VPS.**
+
 
 > [!warning]
 >
-> OVHcloud oddaje do Twojej dyspozycji maszynę, za którą to Ty przejmujesz odpowiedzialność. Ponieważ nie mamy dostępu do udostępnionej Ci maszyny, nie możemy być jej administratorem. Dlatego to do Ciebie należy codzienne  zarządzanie oprogramowaniem i dbanie o bezpieczeństwo. Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z wyspecjalizowanym dostawcą. Więcej informacji znajduje się w rozdziale „Sprawdź również”.
+> OVHcloud oddaje do Twojej dyspozycji serwery, za które w pełni odpowiadasz - nie mając dostępu do tych maszyn, nie możemy być ich administratorem. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. Oddajemy w Twoje ręce przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji „Sprawdź również” niniejszego przewodnika.
 > 
+
 
 ## Wymagania początkowe
 
-- Zakupienie serwera VPS na [stronie OVHcloud](https://www.ovhcloud.com/pl/vps/){.external}.
-- Otrzymanie po instalacji wiadomości e-mail (po weryfikacji i zrealizowaniu zamówienia) zawierającej dane dostępowe.
+- Rezerwacja Twojego serwera VPS na [stronie OVHcloud](https://www.ovhcloud.com/pl/vps/){.external}.
+- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do danych do logowania wysłanych e-mailem po zakończonej instalacji
 
 ## W praktyce
 
-W celu sprawdzenia informacji o Twoim serwerze VPS wystarczy po zalogowaniu się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} przejść do części `Cloud`{.action}, a następnie do `Serwery`{.action} w kolumnie po lewej stronie. Znajdziesz tam wszystko, co dotyczy Twojego serwera VPS: informacje ogólne o środowisku, dostępne operacje, które możesz wykonywać w formie przycisków po prawej stronie ekranu, a u dołu strony dostępne opcje.
+Zaloguj się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, wejdź do sekcji `Serwer`{.action} i wybierz Twój serwer na liście nawigacyjnej znajdującej się po lewej stronie, pod `VPS`{.action}. 
 
-### Logowanie do serwera VPS
+Ten interfejs zarządzania zawiera ważne informacje o Twojej usłudze i pozwala na przeprowadzenie najważniejszych operacji. Jego wygląd będzie różnił się w zależności od gamy, do jakiej należy Twój VPS. 
 
-Podczas instalacji (lub reinstalacji) serwera VPS otrzymasz e-mail z hasłem dostępu do roota. Połączenie będzie szyfrowane protokołem SSH. SSH to szyfrowany protokół komunikacyjny. Dostęp odbywa się przez okienko terminala (Linux lub MAC), a  w systemie Windows za pomocą oprogramowania innych producentów (np. Putty).
+- Jeżeli właśnie zamówiłeś/-aś serwer VPS, jego numer referencyjny przedstawia się w sposób następujący:  *vps-XXXXXXX.vps.ovh.net* (przy czym *X* odpowiada cyfrze lub literze). 
+- Jeśli zarządzasz starszym modelem VPS, jego numer referencyjny będzie skonstruowany inaczej: *vpsXXXX.ovh.net* (gdzie *X* odpowiada liczbie). 
 
-W celu połączenia się z serwerem VPS, po otwarciu okienka terminala należy wpisać następujące polecenie:
+W przypadku aktualnej gamy VPS, przeczytaj następną sekcję niniejszego przewodnika: **Pierwsze kroki (aktualna gama VPS)**. 
+
+W przypadku starszego modelu VPS, zapraszamy do dalszej lektury przewodnika po kliknięciu w link: [Pierwsze kroki (poprzednia gama VPS)](./#pierwsze-kroki-poprzednia-gama-vps_1).
+
+### Pierwsze kroki (aktualna gama VPS)
+
+#### Łączenie z Twoim serwerem VPS (gama aktualna)
+
+W momencie pierwszej instalacji lub reinstalacji z poziomu panelu klienta, zostanie stworzony profil użytkownika posiadający wszystkie uprawnienia. Jego dane identyfikacyjne zostaną Ci wysłane w wiadomości e-mail.
+Nazwa użytkownika zostanie wygenerowana w zależności od systemu operacyjnego, na przykład „ubuntu” czy „debian”. 
+
+Z serwerem VPS będzie można połączyć się za pomocą SSH, używając nazwy użytkownika oraz hasła dostępu. (SSH to szyfrowany protokół komunikacyjny. Aby dowiedzieć się więcej na jego temat, zapraszamy do lektury [przewodnika wprowadzającego do tematyki SSH dla serwerów dedykowanych OVHcloud](../../dedicated/ssh-wprowadzenie/). Dostęp do Twojego serwera odbywa się przez okienko terminala linii poleceń (Linux lub MAC), a w systemie Windows za pomocą oprogramowania innych producentów (zalecamy PuTTy).
+
+Jeśli korzystasz na przykład z oprogramowania PuTTy, wystarczy, że otworzysz aplikację i wpiszesz nazwę serwera lub jego adres IPv4, aby zainicjować połączenie. Po wpisaniu nazwy użytkownika oraz hasła otrzymasz dostęp do interfejsu linii poleceń CLI (z ang. *Command Line Interface*).
+
+![zastosowanie putty](images/putty1.png){.thumbnail}
+
+Po otworzeniu terminala należy wpisać następujące polecenie, aby połączyć się z Twoim serwerem VPS używając informacji przekazanych e-mailem (nazwa użytkownika i adres IPV4):
+
+```sh
+ssh nom_d_utilisateur@IPv4_de_votre_VPS
+```
+
+Jesteś teraz zalogowany/-a jako użytkownik z uprawnieniami root (użytkownik sudo), możesz zacząć wpisywać polecenia i wykonywać zadania administracyjne. Przed rozpoczęciem tych operacji zalecamy zmianę hasła:
+
+```sh
+$ sudo passwd
+New password:
+Retype new password:
+passwd: password updated successfully
+```
+
+Należy zaznaczyć, iż hasła nie są wyświetlane. Zmień następnie profil użytkownika na profil „root” i ustaw Twoje hasło dostępu dla administratora:
+
+```sh
+$ sudo su -
+# passwd
+New password:
+Retype new password:
+passwd: password updated successfully
+```
+
+#### Instalacja lub reinstalacja Twojego serwera VPS (gama aktualna)
+
+Każdą reinstalację możesz przeprowadzić bezpośrednio z poziomu panelu klienta OVHcloud. Z zakładce „Strona główna” odszukaj  „OS / Dystrybucja” w części **Twój VPS**. Kliknij `...`{.action}, a następnie `Reinstalacja serwera VPS`{.action}.
+
+![Reinstalacja serwera VPS](images/2020panel_02.png){.thumbnail}
+
+Po otwarciu się okna będziesz mieć do wyboru:
+
+- jedną spośród proponowanych dystrybucji;
+- klucz SSH, jeżeli stworzyłeś/-aś uprzednio klucz w Twoim panelu klienta.
+
+![Reinstalacja serwera VPS](images/2020panel_01.png){.thumbnail}
+
+> [!primary]
+>
+> Niektóre dystrybucje, jak Plesk czy Windows, wymagają uprzedniego wykupienia licencji. Możesz ją zamówić albo bezpośrednio u OVHcloud, albo u pośrednika. Następnie należy uruchomić ją ręcznie lub z poziomu Twojego panelu klienta. Licencjami możesz zarządzać udając się do sekcji `Serwer`{.action}, a następnie `Licencje`{.action}.
+Z tego samego miejsca możesz również zamawiać licencje (przycisk po prawej stronie `Zamów`{.action}) lub dodać Twoją własną licencję SPLA Windows albo SPLA SQL Server (przycisk po prawej stronie `Dodaj licencję SPLA`{.action}).
+> 
+
+W Twoim panelu klienta wyświetli się pasek postępu informujący o stanie zaawansowania procesu reinstalacji, która może trwać do 30 minut.
+
+### Pierwsze kroki (poprzednia gama VPS)
+
+#### Łączenie z Twoim serwerem VPS (poprzednia gama)
+
+Podczas instalacji (lub reinstalacji) Twojego serwera VPS, otrzymasz wiadomość e-mail z hasłem dostępu root. Połączenie będzie inicjowane za pomocą SSH - szyfrowanego protokołu komunikacyjnego. Aby dowiedzieć się więcej na jego temat, zapraszamy do lektury [przewodnika wprowadzającego do tematyki SSH dla serwerów dedykowanych OVHcloud](../../dedicated/ssh-wprowadzenie/). 
+
+Dostęp odbywa się przez okienko terminala poleceń (Linux lub MAC), a w systemie Windows za pomocą oprogramowania innych producentów (na przykład PuTTy).
+
+Jeśli korzystasz na przykład z oprogramowania PuTTy, wystarczy, że otworzysz aplikację i wpiszesz nazwę serwera lub jego adres IPv4, aby zainicjować połączenie. Po wpisaniu nazwy użytkownika oraz hasła otrzymasz dostęp do interfejsu linii poleceń CLI (z ang. *Command Line Interface*).
+
+![zastosowanie putty](images/putty1.png){.thumbnail}
+
+Po otworzeniu terminala należy wpisać następujące polecenie, aby połączyć się z serwerem VPS:
 
 ```sh
 ssh root@IPv4_de_votre_VPS
 ```
 
-Lub:
+Albo:
 
 ```sh
-ssh root@nazwa_Twojego_VPS
+ssh root@Référence_de_votre_VPS
 ```
 
-Oznaczenie serwera VPS będzie zawsze zaczynało się następująco: vpsXXXX.ovh.net (gdzie XXXX to ciąg cyfr).
+#### Instalacja lub reinstalacja Twojego serwera VPS (poprzednia gama)
 
-### Instalacja lub reinstalacja serwera VPS
-
-Reinstalacja odbywa się bezpośrednio w Panelu klienta. Wystarczy kliknąć przycisk `Reinstalacja serwera VPS`{.action}:
+Każda reinstalacja zostaje przeprowadzona bezpośrednio z poziomu Twojego panelu klienta. W tym celu wystarczy kliknąć przycisk `Reinstalacja serwera VPS`{.action}:
 
 ![Reinstalacja serwera VPS](images/reinstall_manager.png){.thumbnail}
 
-Otworzy się okienko, w którym należy wybrać:
+Po otwarciu się okna będziesz mieć do wyboru:
 
-- właściwą dystrybucję z listy wyświetlonych;
+- jedną spośród proponowanych dystrybucji;
 - język;
-- klucz SSH, jeśli wygenerowałeś klucz w Panelu klienta.
+- klucz SSH, jeżeli stworzyłeś/-aś uprzednio klucz w Twoim panelu klienta.
 
-![Menu wyboru dla reinstalacji](images/reinstall_menu.png){.thumbnail}
+
+![Menu z opcjami reinstalacji](images/reinstall_menu.png){.thumbnail}
 
 > [!primary]
 >
-> Niektóre dystrybucje, np. Plesk lub Windows wymagają wcześniejszego wykupienia licencji, którą możesz nabyć w OVHcloud lub od innego dystrybutora. Następnie należy wprowadzić go ręcznie lub poprzez Panel klienta. Wchodząc w panel `Dedykowany`{.action}, a następnie `Licencje`{.action}, można również zarządzać licencjami.
-> W tym miejscu możesz także zamawiać licencje (przycisk po prawej `Zamów`{.action}) lub dodać własną licencję SPLA Windows lub SPLA SQL Server (przycisk po prawej `Dodaj licencję SPLA`{.action}).
+> Niektóre dystrybucje, jak Plesk czy Windows, wymagają uprzedniego wykupienia licencji. Możesz ją zamówić albo bezpośrednio u OVHcloud, albo u pośrednika. Następnie należy uruchomić ją ręcznie lub z poziomu Twojego panelu klienta. Licencjami możesz zarządzać udając się do sekcji `Serwer`{.action}, a następnie `Licencje`{.action}.
+Z tego samego miejsca możesz również zamawiać licencje (przycisk po prawej stronie `Zamów`{.action}) lub dodać Twoją własną licencję SPLA Windows albo SPLA SQL Server (przycisk po prawej stronie `Dodaj licencję SPLA`{.action}).
 > 
 
-W Panelu klienta wyświetli się pasek postępu informujący o postępie reinstalacji, która może trwać do 30 minut.
+W Twoim panelu klienta wyświetli się pasek postępu informujący o stanie zaawansowania procesu reinstalacji, która może trwać do 30 minut.
 
-### Zadbaj o bezpieczeństwo swojego serwera VPS
+### Zabezpiecz Twój serwer VPS
 
-Jak wyjaśniono we „Wprowadzeniu”, to Ty jesteś administratorem swojego serwera VPS. W związku z tym jesteś odpowiedzialny za jego bezpieczeństwo oraz znajdujące się tam dane.
+Zgodnie z informacją zawartą w części „Wprowadzenie” niniejszego przewodnika, jesteś administratorem Twojego serwera VPS. W związku z tym ponosisz odpowiedzialność za dane oraz ich bezpieczeństwo.
 
-Jeśli potrzebujesz podstawowych objaśnień, przejdź do przewodnika [zabezpieczenia serwera VPS](https://docs.ovh.com/pl/vps/porady-zabezpieczenie-vps/).
+Jeśli chcesz otrzymać kilka podstawowych informacji na ten temat, zachęcamy do przeczytania sekcji dotyczącej [zabezpieczania serwera VPS](../porady-zabezpieczenie-vps/){.external} naszego przewodnika.
 
-### Zadbaj o bezpieczeństwo swojej domeny z certyfikatem SSL
 
-Po zainstalowaniu i zabezpieczeniu serwera VPS możesz również zabezpieczyć swoją witrynę i nazwę domeny. W tym celu konieczna jest instalacja certyfikatu SSL, dzięki któremu adres strony będzie posiadał oznaczenie protokołu *https*, a nie tylko *http*.
+### Zabezpiecz swoją domenę certyfikatem SSL
 
-Certyfikat ten można zainstalować ręcznie we własnym zakresie bezpośrednio na serwerze VPS. W tym celu sprawdź oficjalną dokumentację użytkowanej przez Ciebie dystrybucji.
+Po zainstalowaniu i zabezpieczeniu Twojego serwera VPS, masz możliwość zabezpieczenia nazwy Twojej domeny oraz Twojej strony web. W tym celu konieczne jest zainstalowanie certyfikatu SSL, który umożliwi transfer danych w ramach protokołu szyfrowanego *https*, a nie wyłącznie na podstawie protokołu *http*.
 
-Jeśli chcesz tego dokonać w sposób bardziej zautomatyzowany, OVHcloud oferuje [SSL Gateway](https://www.ovh.pl/ssl-gateway/). Przejdź na stronę [oferty](https://www.ovh.pl/ssl-gateway/){.external} lub do [dokumentacji](https://docs.ovh.com/pl/ssl-gateway/korzystanie-ssl-gateway/){.external} proponowanej oferty.
+Certyfikat SSL możesz zainstalować ręcznie, bezpośrednio na serwerze VPS. W tym celu skonsultuj oficjalne materiały informacyjne odnoszące się do używanej przez Ciebie dystrybucji.
+
+OVHcloud zaproponuje Ci w sposób automatyczny [SSL Gateway](https://www.ovh.pl/ssl-gateway/). Zachęcamy do odwiedzenia [strony komercyjnej](https://www.ovh.pl/ssl-gateway/){.external} lub zapoznania się z [dokumentacją](https://docs.ovh.com/pl/ssl-gateway/){.external} dotyczącą tej oferty.
 
 ## Sprawdź również
 
-[Wprowadzenie do protokołów SSH](https://docs.ovh.com/pl/dedicated/ssh-wprowadzenie/){.external}
+[Wprowadzenie do protokołów SSH](../../dedicated/ssh-wprowadzenie/){.external}
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

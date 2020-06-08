@@ -93,7 +93,7 @@ Une fenêtre s'ouvre et vous aurez alors à choisir :
 
 > [!primary]
 >
-> Certaines distributions comme Plesk ou Windows nécessitent au préalable une licence que vous pouvez acquérir soit chez OVHcloud, soit auprès d'un revendeur. Vous aurez ensuite à l'intégrer manuellement ou via votre espace client. Vous pouvez gérer vos licences dans `Dédié`{.action} puis `Licences`{.action}.
+> Certaines distributions comme Plesk ou Windows nécessitent au préalable une licence que vous pouvez acquérir soit chez OVHcloud, soit auprès d'un revendeur. Vous aurez ensuite à l'intégrer manuellement ou via votre espace client. Vous pouvez gérer vos licences dans `Server`{.action} puis `Licences`{.action}.
 À cet endroit, vous pouvez également commander des licences (bouton à droite `Commander`{.action}) ou ajouter votre propre licence SPLA Windows ou SPLA SQL Server (bouton à droite `Ajouter une licence SPLA`{.action}).
 > 
 
@@ -140,7 +140,7 @@ Une fenêtre s'ouvre et vous aurez alors à choisir :
 
 > [!primary]
 >
-> Certaines distributions comme Plesk ou Windows nécessitent au préalable une licence que vous pouvez acquérir soit chez OVHcloud, soit auprès d'un revendeur. Vous aurez ensuite à l'intégrer manuellement ou via votre espace client. Vous pouvez gérer vos licences dans `Dédié`{.action} puis `Licences`{.action}.
+> Certaines distributions comme Plesk ou Windows nécessitent au préalable une licence que vous pouvez acquérir soit chez OVHcloud, soit auprès d'un revendeur. Vous aurez ensuite à l'intégrer manuellement ou via votre espace client. Vous pouvez gérer vos licences dans `Server`{.action} puis `Licences`{.action}.
 À cet endroit, vous pouvez également commander des licences (bouton à droite `Commander`{.action}) ou ajouter votre propre licence SPLA Windows ou SPLA SQL Server (bouton à droite `Ajouter une licence SPLA`{.action}).
 > 
 
