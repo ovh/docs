@@ -2,7 +2,7 @@
 title: First Steps with the OVHcloud APIs
 slug: first-steps-with-ovh-api
 excerpt: Learn how to use OVHcloud APIs
-section: API
+section: Getting started
 ---
 
 **Last updated 5th June 2020**

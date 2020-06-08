@@ -2,10 +2,10 @@
 title: 'Gérer le paiement et la facturation de vos services OVHcloud'
 slug: ovh-enterprise-payment
 excerpt: 'Découvrez comment ajouter un moyen de paiement, automatiser sa prise en compte et gérer votre facturation Entreprise'
-section: 'OVH APIv6'
+section: 'APIv6 OVHcloud'
 ---
 
-**Dernière mise à jour le 06/11/2019**
+**Dernière mise à jour le 08/06/2019**
 
 ## Objectif
 
@@ -14,8 +14,8 @@ Nous allons décrire une partie du cycle de gestion de votre paiement et de votr
 ## Prérequis
 
 * Être connecté aux [API OVHcloud](https://api.ovh.com/console){.external}.
-* Avoir [créé ses identifiants pour l'API OVHcloud](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
-* Avoir [créé des sous-comptes pour l'API OVHcloud si nécéssaire](https://docs.ovh.com/fr/api/ovh-api-sub-account/){.external}.
+* Avoir [créé ses identifiants pour l'API OVHcloud](../api-premiers-pas/){.external}.
+* Avoir [créé des sous-comptes pour l'API OVHcloud si nécéssaire](../ovh-api-sub-account/){.external}.
 * Avoir a minima le niveau de support de type Business ou Enterprise.
 
 ## En pratique
