@@ -1,22 +1,22 @@
 ---
-title: Création d'un sous compte OVH et d'un utilisateur via l'API OVH
-excerpt: Création d'un sous compte OVH et d'un utilisateur pour l'accès au manager OVH via l'API
+title: Création d'un sous compte OVHcloud et d'un utilisateur via l'API OVH
+excerpt: Création d'un sous compte OVHcloud et d'un utilisateur pour l'accès au manager OVHcloud via l'API
 slug: ovh-api-sub-account
-section: OVH APIv6
+section: APIv6 OVHcloud
 ---
 
-**Dernière mise à jour le 15/10/2019**
+**Dernière mise à jour le 08/06/2020**
 
 ## Objectif
 
-Nous allons décrire comment créer un sous-compte OVH afin de créer une identité particulière permettant d'isoler la visibilité sur des services, la facturation.
+Nous allons décrire comment créer un sous-compte OVHcloud afin de créer une identité particulière permettant d'isoler la visibilité sur des services, la facturation.
 
-Ce guide vous permettra aussi d'ajouter un ou des logins a ce sous-compte pour l'accès à l'espace-client OVH.
+Ce guide vous permettra aussi d'ajouter un ou des logins a ce sous-compte pour l'accès à l'espace-client OVHcloud.
 
 ## Prérequis
 
-* Être connecté aux [API OVH](https://api.ovh.com/console){.external}.
-* Avoir [créé ses identifiants pour l'API OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
+* Être connecté aux [API OVHcloud](https://api.ovh.com/console){.external}.
+* Avoir [créé ses identifiants pour l'API OVHcloud](../api-premiers-pas/){.external}.
 * Avoir un compte client avec un tag Reseller (Contactez votre commercial pour connaitre votre éligibilité le cas échéant).
 
 ## En pratique
@@ -28,7 +28,7 @@ Ce guide vous permettra aussi d'ajouter un ou des logins a ce sous-compte pour l
 
 ### Déroulement des opérations
 
-#### Création d'un Sous compte
+#### Création d'un sous-compte
 
 > [!api]
 >
