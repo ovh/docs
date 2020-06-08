@@ -1,18 +1,18 @@
 ---
 title: 'Gestion des services'
 slug: ovh-api-service
-excerpt: 'Gérer le cycle de vie de vos services OVH après leur livraison'
-section: 'OVH APIv6'
+excerpt: 'Gérer le cycle de vie de vos services OVHcloud après leur livraison'
+section: 'APIv6 OVHcloud'
 ---
 
-**Dernière mise à jour le 15/10/2019**
+**Dernière mise à jour le 08/06/2020**
 
 ## Objectif
 
-Nous allons décrire une partie du cycle de vie des services chez OVH
+Nous allons décrire une partie du cycle de vie des services chez OVHcloud
 via les routes d'API /service & /services
 
-La route d'API **/service** regroupe les actions communes à tous types de services chez OVH :
+La route d'API **/service** regroupe les actions communes à tous types de services chez OVHcloud :
 
 * Factures
 * Gestion du cycle de vie
@@ -21,16 +21,16 @@ La route d'API **/service** regroupe les actions communes à tous types de servi
 
 ## Prérequis
 
-* Être connecté aux [API OVH](https://api.ovh.com/console){.external}.
-* Avoir [créé ses identifiants pour l'API OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
+* Être connecté aux [API OVHcloud](https://api.ovh.com/console){.external}.
+* Avoir [créé ses identifiants pour l'API OVHcloud](../api-premiers-pas/){.external}.
 * Avoir un compte client avec un tag Reseller (contactez votre commercial pour connaître votre éligibilité le cas échéant).
 
 ## En pratique
 
 ### Ressources
 
-* service : Entité de base qui est contractualisée auprès d'OVH
-* serviceId : Identifiant unique du service chez OVH 
+* service : Entité de base qui est contractualisée auprès d'OVHcloud
+* serviceId : Identifiant unique du service chez OVHcloud
 
 ### Déroulement des opérations
 
