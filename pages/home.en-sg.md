@@ -1,4 +1,4 @@
 ---
-title: OVH documentation
+title: OVHcloud documentation
 excerpt: How can we help?
 ---
