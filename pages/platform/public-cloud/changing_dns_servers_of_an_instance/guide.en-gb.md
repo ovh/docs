@@ -3,7 +3,8 @@ title: 'Changing an instance’s DNS servers'
 slug: change-instance-dns-servers
 excerpt: 'Find out how to change the default DNS servers on a Public Cloud instance'
 legacy_guide_number: 1985
-section: 'Knowledge base'
+section: Networking
+order: 12
 ---
 
 **Last updated 02nd January 2020**
@@ -22,8 +23,8 @@ This guide explains the procedure to follow in order to change your instance’s
 
 ### For Debian/Ubuntu
 
-- Connect to your instance via SSH. To do this, you can refer to our guide on [Logging in to a Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/first-login/){.external}.
-- Make yourself the root user. To do this, you can refer to our guide on [Becoming the root user and selecting a password](https://docs.ovh.com/gb/en/public-cloud/become_the_root_user_and_select_a_password/){.external}.
+- Connect to your instance via SSH. To do this, you can refer to our guide on [Logging in to a Public Cloud instance](../first-login/){.external}.
+- Make yourself the root user. To do this, you can refer to our guide on [Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/){.external}.
 
 > [!success]
 >
@@ -65,8 +66,8 @@ nameserver 213.186.33.99
 
 ### For CentOS/Fedora
 
-- Connect to your instance via SSH. To do this, you can refer to our guide on [Logging in to a Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/first-login/){.external}.
-- Make yourself the root user. To do this, you can refer to our guide on [Becoming the root user and selecting a password](https://docs.ovh.com/gb/en/public-cloud/become_the_root_user_and_select_a_password/){.external}.
+- Connect to your instance via SSH. To do this, you can refer to our guide on [Logging in to a Public Cloud instance](../first-login/){.external}.
+- Make yourself the root user. To do this, you can refer to our guide on [Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/){.external}.
 - Check the current configuration via the nmcli command:
 
 ```
@@ -123,7 +124,7 @@ DNS configuration:
 
 ### On Windows
 
-- Connect via remote desktop, or via the VNC console. To do this, you can refer to our guide on [Logging in to a Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/first-login/){.external}.
+- Connect via remote desktop, or via the VNC console. To do this, you can refer to our guide on [Logging in to a Public Cloud instance](../first-login/){.external}.
 
 - Go to network configuration.
 
@@ -144,11 +145,11 @@ In PowerShell, you can use the nslookup command to check which DNS server is use
 
 ## Go further
 
-[Logging in to an OVHcloud Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/first-login/){.external}.
+[Logging in to an OVHcloud Public Cloud instance](../first-login/){.external}.
 
-[Becoming the root user and selecting a password](https://docs.ovh.com/gb/en/public-cloud/become_the_root_user_and_select_a_password/){.external}.
+[Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/){.external}.
 
-[Changing the hostname of a Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/changing_the_hostname_of_an_instance/){.external}.
+[Changing the hostname of a Public Cloud instance](../changing_the_hostname_of_an_instance/){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.
 
