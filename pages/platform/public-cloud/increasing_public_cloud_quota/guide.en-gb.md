@@ -3,7 +3,7 @@ title: 'Increasing Public Cloud quota'
 excerpt: 'Find out how to increase your Public Cloud quotas'
 slug: increase-public-cloud-quota
 legacy_guide_number: 1904
-section: Project managament
+section: Project management
 order: 5
 ---
 
