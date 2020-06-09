@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 4
 ---
 
-**Last updated 15th April 2020**
+**Last updated 8th June 2020**
 
 ## Objective
 
@@ -97,19 +97,19 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 
 ### Creating an SSH key using PuTTY (for Windows)
 
-[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) is a popular SSH client for Windows. You can use it to remotely connect to a Linux server. Its companion software [PuTTYgen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe) can be used to create SSH keys.
+[PuTTY](https://putty.org/){.external} is an open source SSH client software with a graphical user interface, available for Windows and other operating systems. You can use it to remotely connect to a Linux server. Its companion software, PuTTY Key Generator (PuTTYgen), can be used to create SSH keys.
 
-First, download the [PuTTYgen](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe) software, which we will use to generate the key.
+First, download PuTTY [from the official website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), if it is not already installed. The recommended standard installation package includes PuTTYgen but it is available as a standalone file there as well. To find out if you have it available already, check your Windows "programs" menu or use Search.
 
 Next, run the software and select the key type. In our example, we choose a 4096 bit RSA key. Click the `Generate`{.action} button to start the creation process.
 
 ![putty key](images/puttygen_01.png){.thumbnail}
 
-Randomly move your mouse cursor around the area underneath the progress bar, as shown below.
+Now, randomly move your mouse cursor about the area below the progress bar:
 
 ![putty key](images/puttygen_02.gif){.thumbnail}
 
-Keep moving the mouse until the bar is full. Your key is now created and ready to use.
+The key is ready when the progress bar is full. You can copy the public key from this window. It is highly recommended to enter a passphrase for the key files before saving them.
 
 ![putty key](images/puttygen_03.png){.thumbnail}
 
@@ -170,7 +170,7 @@ If you have copied the full output, the identifier after the key should already 
 
 > [!primary]
 >
-> Any keys saved in the "Dedicated" section will be usable for your VPS services as well. Regarding SSH keys for Public Cloud services, please refer to [this guide](https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys).
+> Any keys saved in the "Dedicated" section will be usable for your VPS services as well. Regarding SSH keys for Public Cloud services, please refer to [this guide](../../public-cloud/create-ssh-keys).
 >
 
 
