@@ -2,7 +2,8 @@
 title: 'Preparing an environment for using the OpenStack API'
 slug: prepare_the_environment_for_using_the_openstack_api
 excerpt: 'Install the OpenStack environment to manage your instances via the API'
-section: 'Via command line clients'
+section: 'OpenStack
+order: 1
 ---
 
 **Last updated 1st July 2019**
