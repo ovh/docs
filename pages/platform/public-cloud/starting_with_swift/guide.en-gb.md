@@ -15,7 +15,7 @@ The OpenStack Swift client lets you interact with and manage your containers and
 
 For example you can upload files to your containers regularly in order to back them up. 
 
-This guide will help you get to grips with the OpenStack APIs so you can manage your object containers using the Python-Swiftclient.
+**This guide will help you get to grips with the OpenStack APIs so you can manage your object containers using the Python-Swiftclient.**
 
 
 ## Requirements
