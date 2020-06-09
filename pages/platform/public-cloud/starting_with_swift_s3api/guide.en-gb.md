@@ -6,7 +6,7 @@ section: OpenStack
 order: 5
 ---
 
-## Introduction
+## Objective
 
 The Swift s3api middleware providing S3 API compatibility has been enabled on all Public Cloud regions.
 This guide will help you access objects in Swift using a software designed to interact with S3-compatible endpoints.
