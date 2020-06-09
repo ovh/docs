@@ -2,19 +2,21 @@
 title: 'Configuring IPv6 on a Public Cloud instance'
 slug: configuring-ipv6
 excerpt: 'Configuration tutorial for IPv6 on a Public Cloud instance'
-section: 'Knowledge base'
+section: Networking
+order: 11
 ---
 
 **Last updated 31st January 2020**
 
 ## Objective
+
 Internet Protocol version 6 (IPv6) is the latest version of Internet Protocol (IP). It is designed to resolve the long-anticipated exhaustion of IPv4 addresses, by using addresses made up of 128-bits rather than the standard 32-bits of IPv4.
 
 Each Public Cloud instance is delivered with an IPv4 address and an IPv6 address.
 
 By default, only the IPv4 address is configured.
 
-This tutorial will show you how to configure an IPv6 address on a Public Cloud instance.
+**This guide will show you how to configure an IPv6 address on a Public Cloud instance.**
 
 ## Requirements
 
@@ -122,13 +124,13 @@ Lastly, enter your IPv6 details.
 
 ![public-cloud ipv6](images/pcipv66.png){.thumbnail}
 
-## Diagnostic
+### Diagnostic
 
 Have you configured your IPv6, but found that not nothing is working? 
 
 There is a simple operation to determine whether the error is in your configuration, or on the OVHcloud network.
 
-Firstly, [put your instance into rescue-pro mode](https://docs.ovh.com/gb/en/public-cloud/put_an_instance_in_rescue_mode/).
+Firstly, [put your instance into rescue-pro mode](../put_an_instance_in_rescue_mode/).
 
 Next, use the template commands below to configure your IP non-persistently, replacing ‘YOUR_IPV6’, ‘IPV6_PREFIX’, etc. with your own details:
 

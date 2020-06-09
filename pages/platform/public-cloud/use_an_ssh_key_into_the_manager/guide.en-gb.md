@@ -2,8 +2,8 @@
 title: 'Using an SSH key in the Public Cloud interface'
 slug: use-of-an-ssh-key-in-the-public-cloud-interface
 excerpt: 'Step-by-step documentation on how to use an SSH key to simplify access to Cloud servers'
-section: Security
-order: 2
+section: Management via Control Panel
+order: 3
 ---
 
 **Last updated 4th December 2019**
@@ -18,7 +18,7 @@ SSH is a protocol making it possible to access and communicate with a server in 
 
 - a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVH account
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-- an [SSH key](https://docs.ovh.com/gb/en/public-cloud/create-ssh-keys/)
+- an [SSH key](../create-ssh-keys/)
 
 
 ## Instructions
@@ -59,7 +59,7 @@ Click on `Add a key`{.action} then click on `Add this key`{.action} after you ha
 
 ![Add a key](images/addkeymenu1.png){.thumbnail}
 
-This key will be available to use at the next [creation of a Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/get-started-with-a-public-cloud-instance/){.ref}.
+This key will be available to use at the next [creation of a Public Cloud instance](../get-started-with-a-public-cloud-instance/){.ref}.
 
 ## Go further
 

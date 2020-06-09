@@ -2,22 +2,24 @@
 title: 'Getting started with the Swift S3 API'
 excerpt: 'Getting started with the Swift S3 API'
 slug: getting_started_with_the_swift_S3_API
-section: 'API reference/CLI'
+section: OpenStack
+order: 5
 ---
 
-## Introduction
+## Objective
 
 The Swift s3api middleware providing S3 API compatibility has been enabled on all Public Cloud regions.
 This guide will help you access objects in Swift using a software designed to interact with S3-compatible endpoints.
 
 
-## Prerequisites
+## Requirements
 
-- [Prepare the environment to use the OpenStack API](/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Get Openstack RC File v3 from Horizon](/gb/en/public-cloud/access_and_security_in_horizon/)
+- [Prepare the environment to use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)
+- [Get Openstack RC File v3 from Horizon](../access_and_security_in_horizon/)
 
+## Instructions
 
-## Set the OpenStack environment variables
+### Set the OpenStack environment variables
 
 ```bash
 user@host:~$ source <user_name>-openrc.sh
@@ -26,7 +28,7 @@ Please enter your OpenStack Password for project <project_name> as user <user_na
 user@host:~$
 ```
 
-## Install Openstack client if needed
+### Install Openstack client if needed
 
 ```bash
 user@host:~$ pip install python-openstackclient
@@ -34,9 +36,9 @@ user@host:~$ pip install python-openstackclient
 user@host:~$
 ```
 
-Openstack client command reference [here](https://docs.openstack.org/python-openstackclient/latest/)
+Openstack client command reference [here](https://docs.openstack.org/python-openstackclient/latest/).
 
-## Create EC2 credentials
+### Create EC2 credentials
 
 S3 tokens are different, you need 2 parameters (**access** and **secret**) to generate a S3 token.
 These credentials will be safely stored in Keystone. To generate it:
@@ -99,7 +101,7 @@ user@host:~$ curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Toke
 }
 ```
 
-## Configure aws client
+### Configure aws client
 
 Install the aws client and configure it as follows:
 
@@ -124,7 +126,7 @@ s3api =
 
 Virtual hosted-style and path-style access are supported in all regions, but we recommend to use virtual hosted-style since path-style access will be deprecated after September 30, 2020.
 
-## Use aws client
+### Use aws client
 
 List buckets (containers):
 

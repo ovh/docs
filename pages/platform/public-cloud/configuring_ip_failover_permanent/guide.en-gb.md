@@ -2,22 +2,27 @@
 title: 'Making a failover IP configuration persistent'
 slug: make-failover-ip-configuration-persistent
 legacy_guide_number: 1885
-section: Knowledge Base
+section: Networking
+order: 3
 ---
 
-## Introduction
+## Objective
+
 To maintain your instance in the long term, it would be a good idea to configure your failover IP addresses so that they are persistent. This way, you don't have to reconfigure it every time you restart. This guide explains how to configure a failover IP permanently on an instance.
 
 
-### Requirements
-- an OVH Public Cloud instance
+## Requirements
+
+- an OVHcloud Public Cloud instance
 - a failover IP imported on to the Public Cloud project
 - SSH access to the server
 
+## Instructions
 
-## Configure the failover IP.
+### Configure the failover IP.
 
-### For Debian/Ubuntu
+#### For Debian/Ubuntu
+
 - Edit the configuration file with the following command:
 
 ```bash
@@ -59,7 +64,8 @@ service networking restart
 
 
 
-### For CentOS/Fedora
+#### For CentOS/Fedora
+
 - Edit the configuration file with the following command:
 
 ```bash
@@ -89,9 +95,8 @@ ONBOOT=yes
 ifup ethX:Y
 ```
 
+#### For Windows
 
-
-### For Windows
 Windows does not accept the failover IP address configuration in addition to the primary IP address configuration in DHCP. You will need to reconfigure your network adapter with a manually supplied IP.
 
 - Retrieve the network information using "ipconfig":
@@ -128,3 +133,7 @@ Windows does not accept the failover IP address configuration in addition to the
 
 
 ![public-cloud](images/3551.png){.thumbnail}
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

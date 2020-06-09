@@ -3,7 +3,7 @@ title: 'Replacing your lost SSH key pair'
 slug: replacing_your_lost_ssh_key_pair
 excerpt: 'Find out how to regain SSH access to your Public Cloud Instance'
 legacy_guide_number: g2069
-section: Security
+section: Management via Control Panel
 order: 4
 ---
 
@@ -13,7 +13,7 @@ order: 4
 
 If you have lost your SSH key, you might be unable to connect to your Public Cloud Instance if you have not configured any alternative way to do so.
 
-To regain access, we have provided you with a [rescue mode](https://docs.ovh.com/gb/en/public-cloud/put_an_instance_in_rescue_mode/), which allows you to log in with a password and then change your files.
+To regain access, we have provided you with a [rescue mode](../put_an_instance_in_rescue_mode/), which allows you to log in with a password and then change your files.
 
 **This guide explains how to configure the *authorized_keys* file for the admin user, so that you can add a new SSH key to regain access to your instance.**
 
@@ -29,7 +29,7 @@ To regain access, we have provided you with a [rescue mode](https://docs.ovh.com
 If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA or ECDSA encryption. ED25519 is currently not supported.
 >
 
-After mounting your instance's disk in [rescue mode](https://docs.ovh.com/gb/en/public-cloud/put_an_instance_in_rescue_mode/), you will be able to access all your files. The file containing your SSH keys is shown below:
+After mounting your instance's disk in [rescue mode](../put_an_instance_in_rescue_mode/), you will be able to access all your files. The file containing your SSH keys is shown below:
 
 ```
 /home/USER_NAME/.ssh/authorized_keys
@@ -90,6 +90,6 @@ Once this change has taken place and been backed up, you need to reboot your ins
 
 ## Go further
 
-[Become root and select a password](https://docs.ovh.com/gb/en/public-cloud/become_root_and_select_a_password/)
+[Become root and select a password](../become_root_and_select_a_password/)
 
 Join our community of users on <https://community.ovh.com/en/>.

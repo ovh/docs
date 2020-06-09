@@ -2,7 +2,8 @@
 title: Changing an OpenStack user password in Horizon
 excerpt: Find out how to change a user password in the Horizon interface.
 slug: change-openstack-user-password
-section: Knowledge Base
+section: Horizon
+order: 2
 ---
 
 **Last updated 07th March 2018**
@@ -10,7 +11,7 @@ section: Knowledge Base
 
 ## Objective
 
-In our guide to [Configuring user access to Horizon](https://docs.ovh.com/gb/en/public-cloud/configure_user_access_to_horizon/){.external}, we explained how to create and delete OpenStack users, as well as how to generate an access password.
+In our guide to [Configuring user access to Horizon](../configure_user_access_to_horizon/){.external}, we explained how to create and delete OpenStack users, as well as how to generate an access password.
 
 Using the Horizon panel, you can also set passwords for each individual user. Please note that when you change a user password, the previous password will be immediately cancelled.
 

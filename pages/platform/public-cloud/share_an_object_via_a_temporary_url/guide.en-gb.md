@@ -3,7 +3,8 @@ title: 'Sharing an object via a temporary URL'
 excerpt: 'Share an object via a temporary URL'
 slug: share_an_object_via_a_temporary_url
 legacy_guide_number: g2007
-section: 'Object Storage'
+section: OpenStack
+order: 8
 ---
 
 **Last updated 21st January 2019**

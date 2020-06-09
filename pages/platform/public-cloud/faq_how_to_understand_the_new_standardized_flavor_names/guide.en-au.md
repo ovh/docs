@@ -3,6 +3,7 @@ title: How to understand the new flavor naming rules for the 2017 range?
 slug: faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range
 excerpt: FAQ on naming rules for the 2017 Public Cloud offers
 section: Getting started
+hidden: true
 ---
 
 

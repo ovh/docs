@@ -8,15 +8,19 @@ section: Tutorials
 ---
 
 
-## Preamble
-OpenStack is a cloud operating system open source for creating public and private instances. OpenStack is offered in the Public Cloud product in OVH. Terraform, also open source, is a tool developed in order to easily create complex cloud infrastructure. It abstracts many concepts, give a way to describe your infrastructure in plain text file and deploy this infrastructure thanks to this file. In this guide, we explain to you how to use Terraform.
+## Objective
+
+OpenStack is a cloud operating system open source for creating public and private instances. OpenStack is offered in the Public Cloud product in OVHcloud. Terraform, also open source, is a tool developed in order to easily create complex cloud infrastructure. It abstracts many concepts, give a way to describe your infrastructure in plain text file and deploy this infrastructure thanks to this file. 
+
+**In this guide, we explain to you how to use Terraform.**
 
 
-### Prerequisites
+### Requirements
+
 - An OpenStack user
 - OpenStack environment variables
-- [Your OVH API identifiers and OVH authorisation key](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}
-- [An SSH key](../guide.en-gb.md){.ref}
+- [Your OVHcloud API identifiers and OVHcloud authorisation key](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/){.external}
+- [An SSH key](../create-ssh-keys)
 - [Terraform executable](https://www.terraform.io/intro/getting-started/install.html){.external}
 - [OpenStack executables](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux_OpenStack_Platform/4/html/End_User_Guide/install_clients.html){.external}
 
@@ -27,9 +31,13 @@ OpenStack is a cloud operating system open source for creating public and privat
 > This tutorial was made with the following version : Terraform v0.9.11
 > 
 
+## Instructions
 
-## Create an Terraform environment
-After the Terraform installation, we create a directory so that we can put all text files that describe your infrastructure. Create a directory test_terraform, and go into it :
+### Create an Terraform environment
+
+After the Terraform installation, we create a directory so that we can put all text files that describe your infrastructure.
+
+Create a directory test_terraform, and go into it :
 
 
 ```console
@@ -44,28 +52,30 @@ Now we can create a Terraform environment. Thanks to this environment, Terraform
 ```
 
 
-## Create resources
+### Create resources
 
-### Create the provider
-The provider, like OVH, gives you an environment to create and develop amazing applications. In Terraform a provider is the entry point of your cloud environment.
+#### Create the provider
+
+The provider, like OVHcloud, gives you an environment to create and develop amazing applications. In Terraform a provider is the entry point of your cloud environment.
 
 In a file provider.tf, put the following :
 
 
 ```python
-1. # Configure the OpenStack provider hosted by OVH
+1. # Configure the OpenStack provider hosted by OVHcloud
 2. provider "openstack" {
 3.   auth_url = "https://auth.cloud.ovh.net/v3" # Authentication URL
-4.   domain_name = "default" # Domain Name - Always "default" for OVH
+4.   domain_name = "default" # Domain Name - Always "default" for OVHcloud
 5.   alias = "ovh" # An alias
 6. }
 ```
 
-An alias is an unique identifier of a provider. If you have 2 OpenStack provider with different credentials you must precise the provider in the resource.
+An alias is an unique identifier of a provider. If you have 2 OpenStack providers with different credentials you must precise the provider in the resource.
 
 
-### Create an instance
-In Terraform, a resource is a component of your infrastructure. This can be an instance, a storage block, delivered by OpenStack provider or network delivered by OVH provider.
+#### Create an instance
+
+In Terraform, a resource is a component of your infrastructure. This can be an instance, a storage block, delivered by OpenStack provider or network delivered by OVHcloud provider.
 
 To create a simple instance, you need 4 things :
 
@@ -129,10 +139,11 @@ Wait a moment, look into you OVH Cloud panel, and you will see your instance nam
 Launch again the previous command and you can see there is no change. Terraform applies change only if there are difference in configuration files or new one. But how to create multiple instances ?
 
 
-### Create multiple instances
+#### Create multiple instances
+
 In this section, we want to create one Ubuntu instance on the flavor s1-2 in each region.
 
-To find all region names you must look [the OVH API](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/region#GET){.external} For example in OVH, you can find these 3 regions :
+To find all region names you must look [the OVHcloud API](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/region#GET){.external} For example in OVHcloud, you can find these 3 regions :
 
 - GRA3
 - SBG3
@@ -193,7 +204,8 @@ Don't forget to apply your change with the following command :
 With Terraform is simple to create multiple instances but it's also easy to modify you current infrastructure.
 
 
-### Modify an instance
+#### Modify an instance
+
 Here we want to attach a new storage volume to our first instance. To do that edit the file named simple_instance.tf and add the following lines :
 
 
@@ -224,10 +236,11 @@ Don't forget to apply your change with :
 Terraform have attached this new device for you without losting your old data, and allowed you to upgrade your infrastructure.
 
 
-### Create an instance in the OVH network
-The Terraform OVH plugin can create for you, private network, private sub networks, Public Cloud user and vRack attachment. In this part we focus on the network creation.
+#### Create an instance in the OVHcloud network
 
-First of all, you must load the OVH identifiers in your environment. Theses OVH API identifiers are :
+The Terraform OVHcloud plugin can create for you, private network, private sub networks, Public Cloud user and vRack attachment. In this part we focus on the network creation.
+
+First of all, you must load the OVHcloud identifiers in your environment. Theses OVHcloud API identifiers are :
 
 
 ```console
@@ -293,8 +306,9 @@ Create a file create_private_instance.tf, and put the following :
 You have just created an instance with 2 interfaces in the OVH Public Cloud.
 
 
-### Create an infrastructure for a web site
-In this example, we want to make a basic web site infrastructure using Terraform and the OVH private network. In this part we want to create :
+#### Create an infrastructure for a web site
+
+In this example, we want to make a basic web site infrastructure using Terraform and the OVHcloud private network. In this part we want to create :
 
 - A private network
 - A sub network
@@ -415,17 +429,19 @@ To do that, we create a file named simple_web_site.tf :
 ```
 
 
-## Destroy everything
-Terraform can create an infrastructure but can destroy it too, if needed. If you want to remove every resource you can enter the following command :
+### Destroy everything
 
+Terraform can create an infrastructure but can destroy it too, if needed. If you want to remove every resource you can enter the following command :
 
 ```console
 1. $ terraform destroy
 ```
 
-
-
 > [!primary]
 >
 > If you encounter some problems at the destruction, don't hesitate to relaunch the command.
 > 
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
