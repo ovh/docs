@@ -2,7 +2,7 @@
 title: 'Preparing an environment for using the OpenStack API'
 slug: prepare_the_environment_for_using_the_openstack_api
 excerpt: 'Install the OpenStack environment to manage your instances via the API'
-section: 'OpenStack
+section: OpenStack
 order: 1
 ---
 
