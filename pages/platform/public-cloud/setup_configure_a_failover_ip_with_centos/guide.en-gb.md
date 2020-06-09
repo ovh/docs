@@ -23,7 +23,7 @@ However failover IPs will not be automatically configured on your instance.
 
 ## Requirements
 
-- [Make sure you have created an instance in your OVHcloud Control Panel](../create_an_instance_in_your_ovh_customer_accoun)
+- [Make sure you have created an instance in your OVHcloud Control Panel](../create_an_instance_in_your_ovh_customer_account/)
 - You must have a failover IP address
 
 
