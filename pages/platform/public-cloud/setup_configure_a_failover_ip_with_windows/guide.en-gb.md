@@ -34,30 +34,42 @@ Windows does not allow you to configure a failover IP address in addition to con
 
 - Recover network information using "ipconfig":
 
+
 ![windows failover ip](images/img_3609.jpg){.thumbnail}
+
 
 - Go to the Control Panel then the Network and Sharing Centre
 
 
 ![windows failover ip](images/img_3602.jpg){.thumbnail}
 
+
 -  Modify the card's parametres:
+
 
 ![windows failover ip](images/img_3603.jpg){.thumbnail}
 
+
 - Access your interface's properties:
+
 
 ![windows failover ip](images/img_3604.jpg){.thumbnail}
 
+
 - Access the TCP/IPv4 configuration
+
 
 ![windows failover ip](images/img_3605.jpg){.thumbnail}
 
+
 - Complete your configuration manually, and use a similar configuration to the one shown below by adapating the IP addresses according to the information obtained from your "ipconfig", and then click on "Advanced:
+
 
 ![windows failover ip](images/img_3606.jpg){.thumbnail}
 
+
 - Add your failover IP as follows:
+
 
 ![windows failover ip](images/img_3607.jpg){.thumbnail}
 
