@@ -16,7 +16,7 @@ The GPUs offered are the NVIDIA Tesla V100.
 
 > [!warning]
 >
-> At the moment, GPU instances are only available in the GRA3, GRA5, GRA7 and BHS3 datacentres. You may have to create a new project and choose the new 2017 range. [Find out more.](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/)
+> At the moment, GPU instances are only available in the GRA3, GRA5, GRA7 and BHS3 datacentres. You may have to create a new project and choose the new 2017 range.
 > 
 
 **This guide explains how to deploy a GPU instance on Linux or Windows**
