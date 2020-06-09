@@ -1,12 +1,12 @@
 ---
-title: 'Gérer la politique de sécurité d''un service email'
+title: 'Gérer la politique de sécurité d''un service e-mail'
 slug: gerer-politique-de-securite-mot-de-passe
-excerpt: 'Découvrez comment gérer la politique de sécurité de votre service email'
+excerpt: 'Découvrez comment gérer la politique de sécurité de votre service e-mail'
 section: 'Premiers pas avec Exchange'
 order: 6
 ---
 
-**Dernière mise à jour le 08/06/2019**
+**Dernière mise à jour le 09/06/2020**
 
 ## Objectif
 
