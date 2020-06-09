@@ -2,14 +2,15 @@
 title: 'Transfer a volume backup from one datacentre to another'
 slug: transfer_volume_backup_from_one_datacentre_to_another
 excerpt: 'This guide will show you how to transfer a volume backup from one datacentre to another'
-section: API reference/CLI
+section: Storage
+order: 7
 ---
 
 **Last updated 29th March 2019**
 
 ## Objective
 
-It may become necessary to move additional volumes from one datacentre to another, either because you would prefer to move to a newly-available datacentre, or because you want to migrate from [OVH Labs](https://labs.ovh.com/){.external} (formerly RunAbove) to the [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external}.
+It may become necessary to move additional volumes from one datacentre to another, either because you would prefer to move to a newly-available datacentre, or because you want to migrate from [OVHcloud Labs](https://labs.ovh.com/){.external} (formerly RunAbove) to the [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external}.
 
 **This guide will show you how to transfer a volume backup from one datacentre to another.**
 
@@ -17,7 +18,7 @@ It may become necessary to move additional volumes from one datacentre to anothe
 
 Before following these steps, it’s recommended that you first complete this guide:
 
-* [Prepare the environment to use the OpenStack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.external}
+* [Prepare the environment to use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/){.external}
 
 You will also need the following:
 
@@ -186,4 +187,4 @@ root@serveur:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12
 ## Go further
 
 * Join our community of users on <https://community.ovh.com/en/>.
-* [Transfer an instance backup from one datacentre to another](https://docs.ovh.com/gb/en/public-cloud/transfer_instance_backup_from_one_datacentre_to_another/){.external}
+* [Transfer an instance backup from one datacentre to another](../transfer_instance_backup_from_one_datacentre_to_another/){.external}
