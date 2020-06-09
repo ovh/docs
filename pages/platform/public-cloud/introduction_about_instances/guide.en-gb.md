@@ -1,7 +1,8 @@
 ---
 title: 'An introduction to instances and other cloud-based terms'
 slug: introduction-to-instances-and-other-cloud-based-terms
-section: Information and Concepts
+section: Getting started
+order: 1
 ---
 
 ## Introduction
@@ -21,7 +22,7 @@ The term instance is often used to simply talk about servers in a cloud computin
 
 In any case, it is the same thing — a server managed by a cloud computing platform that can be used **as-a-Service**. The user is then billed on a "Pay-as-you-go" basis, and has an API that can be used to manage the infrastructure with compatible tools.
 
-Please note that although an instance is usually a virtual server, as is the case in the OVH Public Cloud, it may well be used to refer to something else, like a physical server.
+Please note that although an instance is usually a virtual server, as is the case in the OVHcloud Public Cloud, it may well be used to refer to something else, like a physical server.
 
 An instance is a cloud server booted from a system **image** and a **flavor** (see below). Each time an instance is booted, it results in a new image deployment. The system image is "instanced" to create a new server.
 
@@ -52,7 +53,7 @@ For example, flavor b2-30 defines 8 vCPUs, 30 GB RAM, and 200 GB primary disk sp
 
 
 ### OpenStack
-OpenStack is the software suite used by OVH to build the foundation of the Public Cloud service. Over the years, this technology has become a market standard, and many tools are directly compatible with OpenStack.
+OpenStack is the software suite used by OVHcloud to build the foundation of the Public Cloud service. Over the years, this technology has become a market standard, and many tools are directly compatible with OpenStack.
 
 
 ### Volume

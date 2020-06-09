@@ -2,7 +2,8 @@
 title: 'Getting started with a Public Cloud Instance'
 slug: get-started-with-a-public-cloud-instance
 excerpt: 'Find out how to get started with an OVHcloud Public Cloud Instance'
-section: 'Quick start'
+section: Getting started
+order: 5
 ---
 
 **Last updated 4th December 2019**

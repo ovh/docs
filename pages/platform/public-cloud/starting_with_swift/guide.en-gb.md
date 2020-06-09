@@ -3,28 +3,30 @@ title: Getting started with the Swift API
 excerpt: Getting started with the Swift API
 slug: getting_started_with_the_swift_api
 legacy_guide_number: g1916
-section: API reference/CLI
+section: OpenStack
+order: 3
 ---
 
 
-## 
+## Objective
+
 You can use the OpenStack APIs to generate different scripts in order to automate your actions on the Public Cloud. 
 The OpenStack Swift client lets you interact with and manage your containers and objects. 
 
 For example you can upload files to your containers regularly in order to back them up. 
 
-This guide will help you get to grips with the OpenStack APIs so you can manage your object containers using the Python-Swiftclient.
+**This guide will help you get to grips with the OpenStack APIs so you can manage your object containers using the Python-Swiftclient.**
 
 
-## Prerequisites
+## Requirements
 
-- [Prepare the environment to use the OpenStack API]({legacy}1851) by installing python-swiftclient
+- [Prepare the environment to use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
 - Set the OpenStack environment variables
 
 
+## Instructions
 
-
-## Swift documentation
+### Swift documentation
 You can get the list of possible commands from the client's documentation:
 
 
@@ -68,7 +70,7 @@ for multiple objects.
 You can also find the Swift client documentation on the  [OpenStack website](http://docs.openstack.org/cli-reference/content/swiftclient_commands.html)
 
 
-## Creating a public object container
+### Creating a public object container
 
 - Create the container "container1"
 
@@ -112,7 +114,7 @@ Content-Type: text/plain; charset=utf-8
 
 
 
-## Upload files to your container
+### Upload files to your container
 
 - Uploading the content of a local folder to a container 
 
@@ -161,10 +163,10 @@ https://storage.gra1.cloud.ovh.net/v1/AUTH_b3e26xxxxxxxxxxxxxxxxxxxb0ba29/contai
 ```
 
 
-This URL is made up of an endpoint, which you can get from the [Access and Security]({legacy}1774) menu in Horizon, the name of your container and the name of your object (including the prefix).
+This URL is made up of an endpoint, which you can get from the [Access and Security](../access_and_security_in_horizon) menu in Horizon, the name of your container and the name of your object (including the prefix).
 
 
-## Download files
+### Download files
 
 - Download a file:
 
@@ -190,7 +192,7 @@ images/OVHSummitKeynote.jpg [auth 0.371s, headers 0.514s, total 0.559s, 2.657 MB
 
 
 
-## Deleting containers or objects
+### Deleting containers or objects
 
 - Delete a file:
 
@@ -230,6 +232,6 @@ text3.txt
 This will delete all the files in the container.
 
 
-## 
+## Go further
  
-
+Join our community of users on <https://community.ovh.com/en/>.

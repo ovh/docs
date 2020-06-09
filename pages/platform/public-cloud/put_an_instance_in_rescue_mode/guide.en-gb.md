@@ -3,7 +3,8 @@ title: 'Putting an instance in rescue mode'
 slug: put_an_instance_in_rescue_mode
 excerpt: 'Find out how to activate rescue mode for your Public Cloud instance'
 legacy_guide_number: g2029
-section: 'Knowledge Base'
+section: Management via Control Panel
+order: 3
 ---
 
 **Last updated 8th April 2020**

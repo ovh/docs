@@ -3,7 +3,8 @@ title: 'Getting started with a Windows instance'
 slug: get-started-with-windows-instance
 excerpt: 'Find out how to install a Windows instance and connect to it for the first time'
 legacy_guide_number: 1995
-section: 'Knowledge base'
+section: Getting started
+order: 6
 ---
 
 **Last updated 17th December 2019**

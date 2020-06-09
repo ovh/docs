@@ -2,7 +2,8 @@
 title: 'Create and configure an additional disk on an instance'
 slug: create_and_configure_an_additional_disk_on_an_instance
 excerpt: 'This guide explains how to create an additional disk and then configure it on one of your instances.'
-section: 'Knowledge Base'
+section: Storage
+order: 1
 ---
 
 **Last updated 14th November 2019**
@@ -20,13 +21,13 @@ This can be useful in cases where:
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 * a [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external} in your OVH account.
 * administrative (root) access to your instance via SSH.
 
 ## Instructions
 
-Firstly, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Public Cloud`{.action} menu. Then click on the `Project`{.action} you want to create the instance.
+Firstly, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Public Cloud`{.action} menu. Then click on the `Project`{.action} you want to create the instance.
 
 Now click the `Actions`{.action} button and then select `Create a volume`{.action}.
 
@@ -182,11 +183,11 @@ UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
 
 First, right-click on the `Start Menu`{.action} button and then click `Disk Management`{.action}.
 
-![](images/start-menu.png){.thumbnail}
+![disk management](images/start-menu.png){.thumbnail}
 
 When the disk management tool opens you'll see your new disk as an unknown volume with unallocated space as shown below.
 
-![disk management](images/disk-management-01.png){.thumbnail}
+![unknown volume](images/disk-management-01.png){.thumbnail}
 
 #### Initialising the disk using Disk Management
 

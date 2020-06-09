@@ -3,6 +3,7 @@ title: Public Cloud and vRack - details and roadmap
 excerpt: Public Cloud and vRack - details and roadmap
 slug: public_cloud_and_vrack_-_details_and_roadmap
 section: Knowledge base
+hidden: true
 ---
 
 

@@ -3,7 +3,8 @@ title: 'Setting OpenStack environment variables'
 slug: set-openstack-environment-variables
 excerpt: 'Find out how to set your environment variables to use the OpenStack API'
 legacy_guide_number: 1852
-section: 'Via the API and command lines'
+section: OpenStack
+order: 2
 ---
 
 **Last updated 02nd January 2020**
@@ -14,8 +15,8 @@ By setting OpenStack environment variables on your desktop, you can use the Open
 
 
 ## Requirements
-- an OpenStack user account (please refer to [our guide on this](https://docs.ovh.com/gb/en/public-cloud/configure_user_access_to_horizon/#create-an-openstack-user-account))
-- OpenStack installed on your system (please refer to [our guide on this](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
+- an OpenStack user account (please refer to [our guide on this](../configure_user_access_to_horizon/#create-an-openstack-user-account))
+- OpenStack installed on your system (please refer to [our guide on this](../prepare_the_environment_for_using_the_openstack_api/))
 
 ## Instructions
 
@@ -41,7 +42,7 @@ admin@vpsxxxxxx:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
-As outlined in our guide on [Accessing the Horizon interface](https://docs.ovh.com/gb/en/public-cloud/configure_user_access_to_horizon/), the password is only visible once — when it is created.
+As outlined in our guide on [Accessing the Horizon interface](../configure_user_access_to_horizon/), the password is only visible once — when it is created.
 
 If you forget your password, you will need to reset it.
 

@@ -2,8 +2,7 @@
 title: 'Create a custom OpenStack image with Packer'
 slug: packer-openstack-builder
 excerpt: 'Create and customize an OpenStack image from an existing one with Packer'
-section: Packer
-order: 10
+section: Tutorials
 ---
 
 **Last updated 24th October 2018**
@@ -14,7 +13,7 @@ This guide will show you how to create a Packer configuration file to create you
 
 ## Requirements
 
-You'll need an [OVH Public Cloud](https://www.ovh.com/public-cloud/instances/) OpenStack project and a terminal.
+You'll need an [OVHcloud Public Cloud](https://www.ovh.com/public-cloud/instances/) OpenStack project and a terminal.
 
 ### Install Packer
 
@@ -37,7 +36,7 @@ apt-get install jq
 
 ### Fetch your openrc.sh configuration
 
-From [OVH Cloud manager](https://www.ovh.com/manager/cloud/index.html), fetch your `openrc.sh` configuration file. You can fetch it from OpenStack menu entry in the left panel and under the `...` button on the right `Download an OpenStack configuration file`. You might need to create an OpenStack user before.
+From [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), fetch your `openrc.sh` configuration file. You can fetch it from OpenStack menu entry in the left panel and under the `...` button on the right `Download an OpenStack configuration file`. You might need to create an OpenStack user before.
 
 ### Install openstack command line client
 

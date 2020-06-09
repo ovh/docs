@@ -3,7 +3,7 @@ title: 'Changing the hostname of a Public Cloud instance'
 excerpt: 'Find out how to change the hostname of a Public Cloud instance'
 slug: changing_the_hostname_of_an_instance
 legacy_guide_number: g1928
-section: Knowledge Base
+section: Tutorials
 ---
 
 **Last updated 18th September 2018**
@@ -16,7 +16,7 @@ With the cloud-init module, you can configure your [Public Cloud instance](https
 
 > [!warning]
 >
-> OVH provides services which you are responsible for.  In fact, as we not not have administrative access to these machines, we are not administrators and we cannot provide you with support. This means that it is up to you to manage the software and security daily.
+> OVHcloud provides services which you are responsible for.  In fact, as we do not have administrative access to these machines, we are not administrators and we cannot provide you with support. This means that it is up to you to manage the software and security daily.
 >
 > We have provided you with this guide in order to help you with common tasks. However, we advise contacting a specialist provider if you experience any difficulties or doubts about administration, usage or server security. You can find more information in the "Go further" section in this guide.
 >
@@ -24,8 +24,8 @@ With the cloud-init module, you can configure your [Public Cloud instance](https
 
 ## Requirements
 
-- an [OVH Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external}
-- [root access](https://docs.ovh.com/gb/en/public-cloud/first-login/){.external} (via SSH) to the instance
+- an [OVHcloud Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external}
+- [root access](../first-login/){.external} (via SSH) to the instance
 
 
 ## Instructions
