@@ -11,6 +11,3 @@ sections: 'Premiers pas, Fonctionnalités des adresses e-mail, Configuration sur
 >
 > - [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-adresse-e-mail-mutualisee-vers-exchange/)
 > 
-> ### Premiers pas
-> 
-> - [Gérer la politique de sécurité d’un service email](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gerer-politique-de-securite-mot-de-passe/)

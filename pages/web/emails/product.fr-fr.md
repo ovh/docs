@@ -5,8 +5,3 @@ excertp: 'Tout sur les produits e-mail et messagerie'
 sections: 'Premiers pas, Fonctionnalités des adresses e-mail, Configuration sur smartphone, Configuration sur ordinateur, Configuration sur une interface en ligne'
 ---
 
-> [!product-section]
-> 
-> ### Premiers pas
-> 
-> - [Gérer la politique de sécurité d’un service email](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gerer-politique-de-securite-mot-de-passe/)
