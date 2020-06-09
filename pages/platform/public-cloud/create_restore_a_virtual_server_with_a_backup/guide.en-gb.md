@@ -3,7 +3,8 @@ title: 'Creating and restoring a virtual server from a backup'
 slug: create-restore-virtual-server-from-backup
 excerpt: 'Find out how to create or restore an instance backup'
 legacy_guide_number: 1882
-section: 'Knowledge base'
+section: Management via Control Panel
+order: 2
 ---
 
 **Last updated 02nd December 2019**
@@ -16,7 +17,7 @@ You can also use a backup to create a new instance, duplicate the first one for 
 This guide will show you how to use backups to re-create, duplicate and restore your instances.
 
 ## Requirements
-- A backup of a Public Cloud instance. To find out how to create one, please refer to out guide on [Backing up an instance](https://docs.ovh.com/gb/en/public-cloud/back-up-instance/).
+- A backup of a Public Cloud instance. To find out how to create one, please refer to out guide on [Backing up an instance](../back-up-instance/).
 - access to the OVHcloud Control Panel
 
 ## Instructions
@@ -39,9 +40,9 @@ Some elements are pre-defined:
 * <b>Image</b>. The image will correspond to your backup.
 * <b>Models</b>. Only the models that are compatible with your image are available, depending on your quota.
 
-For further information on creating an instance, please refer to [this guide](https://docs.ovh.com/gb/en/public-cloud/create_an_instance_in_your_ovh_customer_account/).
+For further information on creating an instance, please refer to [this guide](../create_an_instance_in_your_ovh_customer_account/).
 
-To create an instance in a different datacentre to the one your backup is stored in, you will need to transfer it to the region you want. If you would like to do this, please refer to our guide to [transferring an instance backup from one datacentre to another](https://docs.ovh.com/gb/en/public-cloud/transfer_instance_backup_from_one_datacentre_to_another/).
+To create an instance in a different datacentre to the one your backup is stored in, you will need to transfer it to the region you want. If you would like to do this, please refer to our guide to [transferring an instance backup from one datacentre to another](../transfer_instance_backup_from_one_datacentre_to_another/).
 
 ### Restore an instance from a backup.
 
