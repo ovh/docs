@@ -3,7 +3,8 @@ title: 'Adding cloud credit'
 slug: add-cloud-credit
 excerpt: 'Find out how to add credit to your Public Cloud project'
 legacy_guide_number: 1907
-section: 'Knowledge base'
+section: Project management
+order: 3
 ---
 
 **Last updated 03rd January 2020**
