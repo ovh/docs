@@ -3,7 +3,8 @@ title: 'Become the root user and select a password'
 slug: become_the_root_user_and_select_a_password
 excerpt: 'This guide will show you how to become the root user and create a password for the root account'
 legacy_guide_number: g1786
-section: Knowledge Base
+section: Getting started
+order: 7
 ---
 
 **Last updated 11th October 2018**
