@@ -1,11 +1,11 @@
 ---
-title: 'Managing renewal for your services'
+title: 'Managing renewal for OVHcloud services'
 slug: how-to-use-automatic-renewal-at-ovh
-excerpt: 'Find out how to manage automatic renewal for OVHcloud services via the OVHcloud Control Panel'
-section: Billing
+excerpt: 'Find out how to manage automatic renewal for your services via the OVHcloud Control Panel'
+section: 'Managing the renewal of services'
 ---
 
-**Last updated 10th April 2020**
+**Last updated 10th June 2020**
 
 ## Objective
 
@@ -15,7 +15,9 @@ You can manage renewals and cancellations for your services via the OVHcloud Con
 
 > [!primary]
 >
-> Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. If you are unsure about any details, please refer to your OVHcloud contracts. You can view these via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to the `My services`{.action} section, then `My contracts`{.action}.
+> Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. If you are unsure about any details, please refer to your OVHcloud contracts. You can view these via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to the `My services`{.action} section, then `Contracts`{.action}.
+> 
+This guide is not applicable for US services. If you are a customer of OVHcloud US, please refer to [the guide for your region](https://support.us.ovhcloud.com/hc/en-us/articles/360002306224). 
 >
 
 
@@ -33,11 +35,11 @@ You can also set certain products (domains, hosting plans, VPS, dedicated server
 
 We recommend reading the following guides, and you can focus on the operations you wish to carry out. 
 
-- [ View the status of your services. ](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#display-the-renewal-statuses-for-your-services){.external} This guide will help you check if your services are renewed automatically. You can also check their renewal and expiry dates.
+- [View the status of your services.](./#display-the-renewal-statuses-for-your-services) This guide will help you check if your services are renewed automatically. You can also check their renewal and expiry dates.
 
-- [Manage renewal for your services.](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-at-ovhcloud){.external} This guide will help you enable or disable automatic renewal, change the payment frequency for a service, and pay for renewals before their expiry date.
+- [Manage renewal for your services.](./#renewal-at-ovhcloud) This guide will help you enable or disable automatic renewal, change the payment frequency for a service, and pay for renewals before their expiry date.
 
-- [Manage your payment methods.](https://docs.ovh.com/gb/en/billing/manage-payment-methods/){.external} You can use this guide to ensure that you have a payment method saved for future renewals. You can also add and delete payment methods, if necessary.
+- [Manage your payment methods.](../manage-payment-methods/) You can use this guide to ensure that you have a payment method saved for future renewals. You can also add and delete payment methods, if necessary.
 
 ### Access your service’s settings.
 
@@ -112,7 +114,7 @@ This action is only applicable to services set to manual renewal, and it will re
 
 #### **Anticipate payment.**
 
-This action is applicable to services set to automatic renewal, and it will redirect you to an online payment interface. You can renew these services at any time before their expiry, and choose their renewal duration.  In this case, the duration of validity you subscribe to will be added to the current validity duration. You will not lose any remaining validity time.
+This action is applicable to services set to automatic renewal, and it will redirect you to an online payment interface. You can renew these services at any time before their expiry, and choose their renewal duration. In this case, the duration of validity you subscribe to will be added to the current validity duration. You will not lose any remaining validity time.
 
 #### **Cancel on expiry.**
 
@@ -135,7 +137,7 @@ The table below details the group actions you can perform.
 |  Renew |  Renew several services at once. You will be redirected to a page where you can choose the renewal duration you want, and pay online. |
 |  Disable automatic payment |  Disable automatic payment for several services at once. If one or more of your services cannot be set to automatic renewal, this will be flagged when you confirm. |
 |  Enable automatic payment |  Enable automatic payment for several services at once. Only eligible services will be updated. |
-|  Export in CSV |  Your service will remain enabled until its expiry date. After this, it will be suspended, then deleted. |
+|  Export in CSV |  Create a file in the *.csv* format. |
 |  Align renewal dates |  Aligns the expiry dates for your services on a single calendar day. Only eligible services can be updated. |
 
 

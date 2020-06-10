@@ -27,13 +27,13 @@ This Exchange feature allows you to set up automatic responses to emails sent to
 
 Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.co.uk/mail). Click on the gear symbol on the top right to unfold the "Options" menu and select `Automatic replies`{.action}.
 
-![](images/exchange-autorep-step1.png){.thumbnail}
+![owaoptions](images/exchange-autorep-step1.png){.thumbnail}
 
 In this interface, simply activate the feature by selecting `Send automatic replies`{.action}. You can set an exact time period in the fields below or enable it indefinitely. Without the start and end time specified, it will have to be manually disabled. 
 
 Compose your message in the editor box and confirm with the `Save`{.action} button on the top left.
 
-![](images/exchange-autorep-step2.png){.thumbnail}
+![owaautoreply](images/exchange-autorep-step2.png){.thumbnail}
 
 
 ### Response types
@@ -46,7 +46,7 @@ The instructions above apply to emails sent by users on your Exchange service. Y
 
 An alternative message for external senders can be entered into the second editor box. A typical use case would be to respond with the first message to your co-workers and with the second one to friends, clients or anyone else who may contact you.
 
-![](images/exchange-autorep-step3.png){.thumbnail}
+![owaaddreply](images/exchange-autorep-step3.png){.thumbnail}
 
 
 ### Additional information
@@ -58,10 +58,10 @@ An alternative message for external senders can be entered into the second edito
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide)
+[Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide/)
 
-[Delegating permissions on an Exchange account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2013_how_to_grant_full_access_permissions_for_an_account)
+[Delegating permissions on an Exchange account](../exchange_2013_how_to_grant_full_access_permissions_for_an_account/)
 
-[Sharing calendars in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_calendars_via_owa)
+[Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa/)
 
 Join our community of users on <https://community.ovh.com/en/>.
