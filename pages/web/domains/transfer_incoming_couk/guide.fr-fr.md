@@ -53,7 +53,7 @@ Pour pouvoir transférer votre domaine chez OVH, vous devez préalablement indiq
 Une fois que vous aurez modifié le TAG, le propriétaire du nom de domaine recevra après quelques minutes un code d'autorisation (authcode) par courriel. Celui-ci, valide 5 jours, permettra d'initier la commande (gratuite) du domaine chez OVH.
 
 
-### Étape 3 &#58; Commande du transfer gratuit
+### Étape 3 &#58; Commande du transfert gratuit
 Une fois en possession de votre code d'autorisation, vous pouvez rechercher et initier la commande transfert de votre nom de domaine sur le site OVHcloud. La commande est similaire à celle tout autre nom de domaine générique.
 
 
