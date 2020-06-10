@@ -122,7 +122,7 @@ This action is available for services set to automatic renewal. By choosing this
 
 #### **Pay your bill.**
 
-If you have services set to automatic renewal, but have not registered a payment method for paying your bills, a “Bill to pay” comment will be displayed when a bill is awaiting payment. Then click `Pay my bill`{.action}, which will redirect you to an online payment interface.
+If you have services set to automatic renewal, but have not registered a payment method for paying your bills, a "Bill to pay" comment will be displayed when a bill is awaiting payment. Then click `Pay my bill`{.action}, which will redirect you to an online payment interface.
 
 #### **Group actions.**
 
