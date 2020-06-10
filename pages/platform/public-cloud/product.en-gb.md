@@ -2,5 +2,5 @@
 title: Public Cloud
 slug: public-cloud
 excerpt: Use Public Cloud with OVHcloud
-sections: Quick start, Information and Concepts, API reference/CLI, Knowledge Base, Tutorials, Networking, Security, Knowledge base, Getting started, Packer
+sections: Getting started, Project management, Management via Control Panel, Horizon, OpenStack, Networking, Storage, Tutorials
 ---
