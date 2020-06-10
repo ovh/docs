@@ -58,10 +58,10 @@ An alternative message for external senders can be entered into the second edito
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide)
+[Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide/)
 
-[Delegating permissions on an Exchange account](../exchange_2013_how_to_grant_full_access_permissions_for_an_account)
+[Delegating permissions on an Exchange account](../exchange_2013_how_to_grant_full_access_permissions_for_an_account/)
 
-[Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa)
+[Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa/)
 
 Join our community of users on <https://community.ovh.com/en/>.
