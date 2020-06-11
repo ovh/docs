@@ -1,8 +1,8 @@
 ---
-title: Premiers pas avec les API OVHcloud
-excerpt: Découvrez comment utiliser les API OVHcloud
+title: 'Premiers pas avec les API OVHcloud'
 slug: api-premiers-pas
-section: Premiers pas
+excerpt: 'Découvrez comment utiliser les API OVHcloud'
+section: 'Premiers pas'
 ---
 
 **Dernière mise à jour le 04/06/2020**
@@ -19,6 +19,14 @@ Les API disponibles sur [https://api.ovh.com/](https://api.ovh.com/){.external} 
 - Être sur la page web des [API OVHcloud](https://api.ovh.com/){.external}.
 
 ## En pratique
+
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> 
+
 
 ### Utilisation simple
 
