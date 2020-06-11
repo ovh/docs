@@ -513,6 +513,7 @@ Vous devrez renseigner a minima les champs suivants :
 ## Aller plus loin
 
 [Configuration du vRack Public Cloud](../public-cloud-vrack)
+
 [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
