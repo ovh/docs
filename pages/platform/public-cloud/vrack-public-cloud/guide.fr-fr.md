@@ -32,7 +32,7 @@ Selon votre profil technique et vos besoins,  vous serez amenés à devoir chois
 
 ### Espace client OVHcloud
 
-[L'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) est une interface entièrement et uniquement visuelle, ce qui en fait une interface idéale si vous n'avez qu'un seul vLan à gérer. Vous ne pourrez personnaliser la plage d'IP privée qui sera uniquement en 192.168.0.0/24.
+[L'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) est une interface entièrement et uniquement visuelle, ce qui en fait une interface idéale si vous n'avez qu'un seul vLan à gérer. Vous ne pourrez personnaliser la plage d'IP privée qui sera uniquement en 10.x.x.x/16.
 
 Les vLan seront déployés par défaut sur toutes les zones. Vous aurez juste la possibilité d'activer ou non les passerelles.
 
