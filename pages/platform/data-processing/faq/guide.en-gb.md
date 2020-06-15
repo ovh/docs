@@ -16,7 +16,7 @@ Here are the most frequently asked questions about OVHcloud Data Processing.
 
 Yes, OVHcloud offers turnkey Big Data Apache Hadoop clusters and Data Processing tools in the Public Cloud, and Big Data clusters in the Private Cloud.
 
-To summarize :
+To summarize:
 
 A big data cluster allows massive data storage and is equipped with a suite of tools (Apache Hadoop) to extract useful information. 
 <br>A big data cluster often has fixed resources (power and storage). They are for example very useful for Business Intelligence (financial reporting etc).
@@ -44,7 +44,7 @@ They can order Data Processing via [OVHcloud EU or CA Control Panel](https://www
 
 ### From which regions is the Data processing solution available?
 
-For the moment, only the following region is currently offered :
+For the moment, only the following region is currently offered:
 
 EU WEST EN 1: automatic deployment of servers from Gravelines (GRA).
 
@@ -98,13 +98,12 @@ Data processing is charged by the minute. Also, you pay the amount of "power" us
 
 We have pricing per GB of RAM and per vCore.
 
-Example : you launch a job with 16vCores and 67GB RAM. You job will last 1 hours and 20 minutes
+Example: you launch a job with 16vCores and 67GB RAM. You job will last 1 hours and 20 minutes
 
-You will pay :
-
+You will have to pay:
 <br>0,xxx euros x vCOREs x 80 minutes
 <br>0,yyy euros x GB OF RAM x 80 minutes
-<br>if used by the customer (not mandatory) : Object storage prices
+<br>if used by the customer (not mandatory): Object storage prices
 
 
 ### What is included in the Data processing offer?
