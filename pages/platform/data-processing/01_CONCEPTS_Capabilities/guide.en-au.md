@@ -18,14 +18,13 @@ In this document, we list all the features currently supported by the Data Proce
 ### Processing engine 
 
 - Currently the only available processing engine is [Apache Spark](http://spark.apache.org/).
-- During beta, the only available version of Apache Spark is 2.4.3
+- The only available version of Apache Spark is 2.4.3 for now. 
 - It is not possible to interact with Apache Spark cluster via command line.  
 
-### The Apache Spark job in Data Processing beta is limited to: 
+### The Apache Spark job in Data Processing is limited to: 
 
-- Minimum 1 and maximum 30 GB of RAM per Executor
-- Minimum 1 and maximum 8 Cores of CPU per Executor 
-- Minimum 1 and maximum 10 Executors per job 
+- Minimum 1 and maximum 60 GB of RAM per Executor
+- Minimum 1 and maximum 16 Cores of CPU per Executor 
 - Maximum 24 hours for the duration of each job 
 
 ### Supported languages for Apache Spark code
