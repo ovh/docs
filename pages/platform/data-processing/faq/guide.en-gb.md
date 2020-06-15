@@ -126,7 +126,7 @@ For more information, we invite you to read the terms and conditions of use:
 
 Once your job is started, you can find in your Control Panel an Apache Spark monitoring tool called Spark Web UI.
 To access the tool: <https://spark.apache.org/docs/3.0.0-preview/web-ui.html>
-Datadog is not compatible for monitoring.
+<br>Datadog is not compatible for monitoring.
 
 
 ### What are the main advantages of OVHcloud Data Processing?
