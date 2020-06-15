@@ -46,7 +46,7 @@ They can order Data Processing via [OVHcloud EU or CA Control Panel](https://www
 
 For the moment, only the following region is currently offered:
 
-EU WEST EN 1: automatic deployment of servers from Gravelines (GRA).
+EU WEST FR 1: automatic deployment of servers from Gravelines (GRA).
 
 Other regions are currently coming up because OVHcloud wants to deploy Data Processing in all Public Cloud regions.
 
