@@ -6,7 +6,7 @@ section: 'Erste Schritte'
 order: 1
 ---
 
-**Letzte Aktualisierung am 07.06.2020**
+**Letzte Aktualisierung am 15.06.2020**
  
 ## Ziel
 
@@ -94,9 +94,11 @@ Es wird ein Fenster geöffnet, in dem Sie Folgendes auswählen:
 
 > [!primary]
 >
-> Für einige Distributionen wie Plesk oder Windows benötigen Sie vor der Installation eine Lizenz, die Sie bei OVHcloud oder einem Reseller erwerben können. Diese müssen Sie dann manuell oder über Ihr Kundencenter einbinden. Die Verwaltung Ihrer Lizenzen geschieht im Bereich `Server`{.action} unter `Lizenzen`{.action}.
-Auf dieser Seite können Sie außerdem Lizenzen bestellen oder Ihre eigene Windows- oder SQL-Server-SPLA-Lizenz hinzufügen (Button `Aktionen`{.action} und dann `Eine SPLA-Lizenz hinzufügen`{.action}).
+>Einige Betriebssysteme bzw. Verwaltungsoberflächen wie Plesk oder cPanel benötigen Lizenzen, die zusätzliche Kosten verursachen. Lizenzen können im OVHcloud Kundencenter verwaltet werden: gehen Sie zum Bereich `Server`{.action} und klicken Sie in der linken Menüleiste auf `Lizenzen`{.action}.
 >
+Um ein **Windows** Betriebssystem auf einem VPS zu betreiben, muss es **bei der Bestellung des Dienstes** ausgewählt werden. Ein VPS mit einem anderen Betriebssystem kann nicht nachträglich auf dem beschriebenen Weg mit Windows reinstalliert werden.
+>
+
 
 In Ihrem Kundencenter wird ein Ladebalken eingeblendet, der Ihnen den Fortschritt der Neuinstallation anzeigt. Diese kann bis zu 30 Minuten dauern.
 
@@ -141,8 +143,9 @@ Es wird ein Fenster geöffnet, in dem Sie Folgendes auswählen:
 
 > [!primary]
 >
-> Für einige Distributionen wie Plesk oder Windows benötigen Sie vor der Installation eine Lizenz, die Sie bei OVHcloud oder einem Reseller erwerben können. Diese müssen Sie dann manuell oder über Ihr Kundencenter einbinden. Die Verwaltung Ihrer Lizenzen geschieht im Bereich `Server`{.action} unter `Lizenzen`{.action}.
-Auf dieser Seite können Sie außerdem Lizenzen bestellen oder Ihre eigene Windows- oder SQL-Server-SPLA-Lizenz hinzufügen (Button `Aktionen`{.action} und dann `Eine SPLA-Lizenz hinzufügen`{.action}).
+>Einige Betriebssysteme bzw. Verwaltungsoberflächen wie Plesk oder cPanel benötigen Lizenzen, die zusätzliche Kosten verursachen. Lizenzen können im OVHcloud Kundencenter verwaltet werden: gehen Sie zum Bereich `Server`{.action} und klicken Sie in der linken Menüleiste auf `Lizenzen`{.action}.
+>
+Um ein **Windows** Betriebssystem auf einem VPS zu betreiben, muss es **bei der Bestellung des Dienstes** ausgewählt werden. Ein VPS mit einem anderen Betriebssystem kann nicht nachträglich auf dem beschriebenen Weg mit Windows reinstalliert werden.
 >
 
 In Ihrem Kundencenter wird ein Ladebalken eingeblendet, der Ihnen den Fortschritt der Neuinstallation anzeigt. Diese kann bis zu 30 Minuten dauern.
