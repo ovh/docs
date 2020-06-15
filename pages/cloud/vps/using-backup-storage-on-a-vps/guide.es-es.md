@@ -1,7 +1,7 @@
 ---
 title: 'Uso de instantáneas Snapshots en un servidor virtual privado (VPS)'
-excerpt: 'Cómo activar y usar la opción Instantáneas  en el panel de control de OVHcloud'
 slug: usar-instantaneas-en-un-vps
+excerpt: 'Cómo activar y usar la opción Instantáneas  en el panel de control de OVHcloud'
 section: 'Opciones de copia de seguridad'
 order: 1
 ---
@@ -53,7 +53,7 @@ Si está seguro de que desea restablecer su servidor virtual privado (VPS) al es
 
 ## Más información
 
-[Usar copias de seguridad automatizadas en un servidor virtual privado (VPS)](../using-automated-backups-on-a-vps)
+[Usar copias de seguridad automatizadas en un servidor virtual privado (VPS)](../usar-copias-de-seguridad-automatizadas-en-un-vps/)
 
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

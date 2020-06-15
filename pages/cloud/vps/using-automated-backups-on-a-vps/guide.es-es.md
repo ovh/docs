@@ -105,7 +105,7 @@ Ahora, puede cambiar a esta carpeta y acceder a los datos de su copia de segurid
 
 ## Más información
 
-[Usar instantáneas en un servidor virtual privado (VPS)](https://docs.ovh.com/gb/en/vps/using-snapshots-on-a-vps)
+[Usar instantáneas en un servidor virtual privado (VPS)](../usar-instantaneas-en-un-vps/)
 
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -6,7 +6,7 @@ section: 'Primeros pasos'
 order: 1
 ---
 
-**Última actualización: 31/08/2018**
+**Última actualización: 08/06/2020**
  
 ## Objetivo
 
@@ -26,18 +26,93 @@ Un servidor virtual privado (VPS, por sus siglas en inglés) es un servidor dedi
 ## Requisitos
 
 - Haber contratado un VPS en el [sitio web de OVHcloud](https://www.ovhcloud.com/es/vps/){.external}.
-- Haber recibido el mensaje de correo electrónico con sus claves de acceso tras la instalación.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Haber recibido el correo electrónico con sus datos de acceso tras la instalación
 
 
 ## Procedimiento
 
-Para consultar la información relacionada con su VPS, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Acceda a la sección `Cloud`{.action} y, en la columna izquierda, haga clic en `Servidores`{.action} y seleccione su VPS.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, acceda a la sección `Servidores`{.action} y seleccione su servidor de la lista de navegación de la izquierda debajo de `VPS`{.action}. 
 
-En esta pantalla podrá consultar todo lo relacionado con su VPS. En el centro encontrará la información general; en el lado derecho, las acciones que puede realizar (con sus correspondientes botones) y, en la parte inferior, las diferentes opciones.
+El panel de control que aparece le muestra toda la información importante sobre su servicio y le permite llevar a cabo las operaciones básicas. La apariencia puede variar según la gama de su VPS. 
 
-### Conectarse al VPS
+- Si acaba de contratar un VPS, la referencia seguirá esta nomenclatura: *vps-XXXXXXX.vps.ovh.net* (donde las *X* representan una secuencia de números y letras). 
+- Si tiene un VPS más antiguo, verá que la referencia tiene una estructura diferente: *vpsXXXX.ovh.net* (donde las *X* representan un número). 
 
-Al instalar (o reinstalar) su VPS, recibirá por correo electrónico la contraseña de acceso *root*, necesaria para conectarse mediante el protocolo SSH de comunicaciones seguras. El acceso se realiza a través de un terminal (en Linux o MAC) o utilizando software de terceros en Windows (Putty, por ejemplo).
+Para la gama actual de VPS, lea detenidamente la sección siguiente de esta guía, **Primeros pasos (gama actual de VPS)**. 
+
+Para un modelo de VPS más antiguo, siga leyendo esta guía haciendo clic en el enlace siguiente: [Primeros pasos (antigua gama de VPS)](./#primeros-pasos-antigua-gama-de-vps_1).
+
+### Primeros pasos (gama actual de VPS):
+
+#### Conectarse a su VPS (gama actual)
+
+Al instalar el VPS por primera vez o reinstalarlo desde el área de cliente, se creará un usuario con todos los derechos y recibirá un correo electrónico con los datos de acceso.
+El nombre de usuario se generará en función del sistema operativo, por ejemplo, «ubuntu» o «debian». 
+
+Puede conectarse a su VPS por SSH con el nombre de usuario y la contraseña. SSH es un protocolo de comunicaciones seguras. Para más información, consulte [esta guía de introducción al SSH para servidores dedicados OVHcloud](../../dedicated/introduccion-ssh/). Puede acceder al servidor a través de un terminal de línea de comandos (en Linux o Mac) o utilizando un software de terceros en Windows (le recomendamos PuTTy).
+
+Si utiliza PuTTy, tan solo tiene que abrir la aplicación e introducir el nombre del servidor o la dirección IPv4 para establecer la conexión. Tendrá que introducir el nombre de usuario y la contraseña, y a continuación podrá acceder a la interfaz de línea de comandos (CLI).
+
+![Uso de putty](images/putty1.png){.thumbnail}
+
+Una vez abierto el terminal, introduzca el comando siguiente para conectarse a su VPS con los datos de conexión proporcionados en el correo electrónico (nombre de usuario y dirección IPv4):
+
+```sh
+ssh nombre_de_usuario@IPv4_de_su_VPS
+```
+
+Al estar conectado con privilegios root (un usuario sudo), puede introducir comandos para realizar tareas administrativas. Le recomendamos que primero cambie su contraseña:
+
+```sh
+~$ sudo passwd
+New password:
+Retype new password:
+passwd: password updated successfully
+```
+
+Tenga en cuenta que no se muestran las contraseñas. Cambie al usuario «root» y establezca su contraseña admin:
+
+```sh
+$ sudo su -
+# passwd
+New password:
+Retype new password:
+passwd: password updated successfully
+```
+
+#### Instalar o reinstalar su VPS (gama actual)
+
+Puede realizar cualquier reinstalación directamente desde el área de cliente de OVHcloud. En la pestaña «Inicio», busque «SO / Distribución» en la sección **Su VPS**. Haga clic en `...`{.action}, y en `Reinstalar mi VPS`{.action}.
+
+![Reinstalación del VPS](images/2020panel_02.png){.thumbnail}
+
+Se abrirá una ventana donde tendrá que elegir:
+
+- la distribución;
+- una llave SSH, si ya ha creado alguna desde el área de cliente.
+
+![Reinstalación del VPS](images/2020panel_01.png){.thumbnail}
+
+> [!primary]
+>
+> Para algunas distribuciones, como Plesk o Windows, es necesario disponer previamente de una licencia, que se puede adquirir, o bien directamente en OVHcloud, o bien a través de un revendedor. A continuación, tendrá que integrarla de forma manual o desde el área de cliente. Puede gestionar sus licencias en la sección `Servidores`{.action}, seleccionando `Licencias`{.action} en la columna izquierda.
+En esta misma pantalla puede también contratar licencias (utilizando el botón `Contratar`{.action}) o añadir su propia licencia SPLA de Windows o de SQL Server (con el botón `Añadir una licencia SPLA`{.action}).
+> 
+
+En el área de cliente se mostrará una barra de progreso indicando el estado de la tarea de reinstalación, que puede tardar hasta 30 minutos:
+
+### Primeros pasos (antigua gama de VPS)
+
+#### Conectarse a su VPS (antigua gama)
+
+Al instalar (o reinstalar) su VPS, se le enviará un correo electrónico con una contraseña de acceso root, la conexión que utiliza el protocolo SSH. SSH es un protocolo de comunicaciones seguras. Para más información, consulte [esta guía de introducción al SSH para servidores dedicados OVHcloud](../../dedicated/introduccion-ssh/). 
+
+El acceso se realiza a través de un terminal (en Linux o MAC) o utilizando software de terceros en Windows (PuTTy, por ejemplo).
+
+Si utiliza PuTTy, tan solo tiene que abrir la aplicación e introducir el nombre del servidor o la dirección IPv4 para establecer la conexión. Tendrá que introducir el nombre de usuario y la contraseña, y a continuación podrá acceder a la interfaz de línea de comandos (CLI).
+
+![Uso de putty](images/putty1.png){.thumbnail}
 
 Una vez abierto el terminal, ejecute el siguiente comando para conectarse a su VPS:
 
@@ -51,16 +126,13 @@ Como alternativa, también puede utilizar este comando:
 ssh root@referencia_de_su_VPS
 ```
 
-La referencia de su VPS siempre empezará por vpsXXXX.ovh.net (donde XXXX es una serie de números).
+#### Instalar o reinstalar su VPS (antigua gama)
 
-
-### Instalar o reinstalar el VPS
-
-La reinstalación se realiza directamente desde el área de cliente. Para ello, solo tiene que hacer clic en el botón `Reinstalar mi VPS`{.action}.
+La reinstalación se realiza directamente desde el área de cliente. Para ello, solo tiene que hacer clic en el botón `Reinstalar mi VPS`{.action}:
 
 ![Reinstalación del VPS](images/reinstall_manager.png){.thumbnail}
 
-Se abrirá una ventana donde deberá elegir:
+Se abrirá una ventana donde tendrá que elegir:
 
 - la distribución;
 - el idioma de instalación, y
@@ -71,28 +143,29 @@ Se abrirá una ventana donde deberá elegir:
 
 > [!primary]
 >
-> Para algunas distribuciones, como Plesk o Windows, es necesario disponer previamente de una licencia, que se puede adquirir, o bien directamente en OVHcloud, o bien a través de un revendedor. A continuación, tendrá que añadirla, o bien de forma manual, o bien desde el área de cliente. Puede gestionar sus licencias en la sección `Dedicado`{.action}, seleccionando `Licencias`{.action} en la columna izquierda. En este mismo lugar puede también contratar licencias (utilizando el botón `Contratar`{.action}) o añadir su propia licencia SPLA de Windows o SQL Server (con el botón `Añadir una licencia SPLA`{.action}).
+> Para algunas distribuciones, como Plesk o Windows, es necesario disponer previamente de una licencia, que se puede adquirir, o bien directamente en OVHcloud, o bien a través de un revendedor. A continuación, tendrá que integrarla de forma manual o desde el área de cliente. Puede gestionar sus licencias en la sección `Servidores`{.action}, seleccionando `Licencias`{.action} en la columna izquierda.
+En esta misma pantalla puede también contratar licencias (utilizando el botón `Contratar`{.action}) o añadir su propia licencia SPLA de Windows o de SQL Server (con el botón `Añadir una licencia SPLA`{.action}).
 > 
 
-En el área de cliente se mostrará una barra de progreso indicando el estado de la tarea de reinstalación, que puede tardar hasta 30 minutos.
+En el área de cliente se mostrará una barra de progreso indicando el estado de la tarea de reinstalación, que puede tardar hasta 30 minutos:
 
 ### Proteger el VPS
 
-Como se recuerda en el apartado «Objetivo» de esta guía, usted es el administrador de su VPS y, por lo tanto, el responsable de los datos almacenados, así como de su seguridad.
+Como se explica en la sección "Objetivos" de esta guía, usted es quien se encarga de administrar su VPS. Es decir: usted es responsable de los datos y de su protección.
 
-Nuestra guía relativa a la [seguridad de los VPS](https://docs.ovh.com/es/vps/consejos-proteccion-vps/){.external} ofrece unas nociones básicas sobre este aspecto.
+Por favor, consulte la guía sobre la [seguridad de un VPS](../consejos-proteccion-vps/) si necesita algunas nociones básicas.
 
 
 ### Proteger el dominio con un certificado SSL
 
-Una vez haya instalado y protegido su VPS, es probable que también quiera proteger su nombre de dominio y su sitio web. Para ello, debe instalar un certificado SSL que le permita tener su sitio en «https» y no solo en «http».
+Una vez haya instalado y protegido su VPS, es probable que también quiera proteger su nombre de dominio y su sitio web. Para ello, debe instalar un certificado SSL que le permita tener su sitio en *https* y no solo en *http*.
 
 Puede instalar dicho certificado SSL directamente en el VPS de forma manual. Para ello, consulte la documentación oficial de la distribución que utilice.
 
-Si prefiere automatizar la protección de su sitio web, OVHcloud le ofrece la solución [SSL Gateway](https://www.ovh.es/ssl-gateway/){.external}. Para más información, consulte la [página comercial](https://www.ovh.es/ssl-gateway/){.external} o las [guías](https://docs.ovh.com/es/ssl-gateway/){.external} de la solución.
+Si prefiere automatizar la protección de su sitio web, OVHcloud le ofrece la solución [SSL Gateway](https://www.ovh.es/ssl-gateway/). Para más información, consulte la [página comercial](https://www.ovh.es/ssl-gateway/){.external} o las [guías](https://docs.ovh.com/es/ssl-gateway/){.external} de la solución.
 
 ## Más información
 
-[Introducción al SSH](https://docs.ovh.com/es/dedicated/introduccion-ssh/){.external}
+[Introducción al SSH](../../dedicated/introduccion-ssh/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>

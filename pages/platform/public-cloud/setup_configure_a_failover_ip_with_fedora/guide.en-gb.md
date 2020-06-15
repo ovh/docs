@@ -4,10 +4,11 @@ excerpt: Configure a failover IP with Fedora
 slug: configure_a_failover_ip_with_fedora
 legacy_guide_number: g2045
 section: Networking
+order: 6
 ---
 
+## Objective
 
-## 
 You may need to configure a failover IP address on your instances, for one of the following reasons:
 
 - you have a large number of websites on your instance, 
@@ -17,27 +18,23 @@ In order to do this you can either buy or import a failover IP address for your 
 
 However failover IPs will not be automatically configured on your instance. 
 
-This guide explains how to configure your instance's network interface so that a failover IP can be allocated to it.
+**This guide explains how to configure your instance's network interface so that a failover IP can be allocated to it.**
 
 
 ## Requirements
 
-- [Mak- [url=GUIDE#1775] Make sure you have launched an instance in your OVH customer account OVH]({legacy}1775)
-- You must have a failover IP addresse sure you have launched an instance in your OVH customer account OVH[/url]
+- [Make sure you have created an instance in your OVHcloud Control Panel](../create_an_instance_in_your_ovh_customer_account/)
 - You must have a failover IP address
 
+## Instructions
 
-
-
-## Configuring the interface
+### Configuring the interface
 
 - Edit the configuration file with the following command:
 
 ```
 vi /etc/sysconfig/network-scripts/ifcfg-ethX:Y
 ```
-
-
 
 |# Variables|#Values|
 |X|main interface number (usually eth0 )|
@@ -54,7 +51,7 @@ BROADCAST="xxx.xxx.xxx.xxx"
 ONBOOT=yes[/code]
 
 
-## Rebooting the network service
+### Rebooting the network service
 
 - Restart the network services with the command:
 
@@ -62,14 +59,8 @@ ONBOOT=yes[/code]
 ifup ethX:Y
 ```
 
+## Go further
 
+[Migrating a failover IP](../migrating_a_failover_ip/)
 
-
-
-## 
-[Go back to the index of Cloud guides]({legacy}1890)
-
-
-## 
-[Go back to the index of Cloud guides]({legacy}1785)
-
+Join our community of users on <https://community.ovh.com/en/>.

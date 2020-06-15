@@ -2,7 +2,7 @@
 title: Create a OVH sub-account and a user account with OVH API
 excerpt: Create a sub-account and a user account with OVH API to access to OVH Manager
 slug: ovh-api-sub-account
-section: OVH APIv6
+section: APIv6
 ---
 
 **Last updated January 2 2020**

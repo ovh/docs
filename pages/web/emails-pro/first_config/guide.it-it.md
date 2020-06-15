@@ -85,7 +85,10 @@ Nella colonna `Diagnostica`{.action} è possibile assicurarsi della corretta con
 
 - ** In caso di configurazione automatica**, l’aggiornamento nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} potrebbe richiedere qualche ora.
 
-- **Se il dominio inserito non è gestito da OVH**, clicca sulla casellina rossa per visualizzare le modifiche da apportare. <br>*Nel caso sia necessario intervenire su un record di tipo CNAME*, consulta la guida “>*Se invece è necessario modificare un record MX, consulta la guida “>*Nel caso di un record SRV*,completa la tua zona DNS con le informazioni fornite dopo aver cliccato sulla casellina rossa. Per aggiungere questo record, consulta la guida “[Modificare una zona DNS di OVHcloud](../../domains/web_hosting_modifica_la_tua_zona_dns/)”.
+- **Se il dominio inserito non è gestito da OVH**, clicca sulla casellina rossa per visualizzare le modifiche da apportare. <br>
+*Nel caso sia necessario intervenire su un record di tipo CNAME*, consulta la guida “[Creare un record CNAME per aggiungere un dominio associato](../../microsoft-collaborative-solutions/exchange_20132016_aggiungi_un_record_di_tipo_cname/)” <br>
+*Se invece è necessario modificare un record MX, consulta la guida “[Aggiungere un record MX alla configurazione di un dominio](../../domains/aggiungere-record-mx-configurazione-dominio/)” <br>
+*Nel caso di un record SRV*,completa la tua zona DNS con le informazioni fornite dopo aver cliccato sulla casellina rossa. Per aggiungere questo record, consulta la guida “[Modificare una zona DNS di OVHcloud](../../domains/web_hosting_modifica_la_tua_zona_dns/)”.
 
 ![emailpro](images/first_config_email_pro_configure_domain_update.png){.thumbnail}
 
@@ -118,7 +121,7 @@ Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la co
 
 ### Step 5: utilizza gli indirizzi email
 
-Una volta creati gli account non ti resta che utilizzarli. Per accedervi OVHcloud mette a disposizione un’applicazione online (*webapp*), accessibile all’indirizzo [https://pro1.mail.ovh.net](https://www.ovh.it/mail/){.external} usando le credenziali associate al tuo indirizzo di posta elettronica.
+Una volta creati gli account non ti resta che utilizzarli. Per accedervi OVHcloud mette a disposizione un’applicazione online (*webapp*), accessibile all’indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} usando le credenziali associate al tuo indirizzo di posta elettronica.
 
 Per configurare l’account su un altro client di posta o dispositivi come _smartphone_ e tablet, [è possibile trovare alcune informazioni utili nelle nostre guide disponibili online](../). Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
 

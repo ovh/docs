@@ -3,7 +3,8 @@ title: 'Buying a failover IP'
 slug: buy-a-failover-ip
 excerpt: 'Find out how to order failover IP addresses for your instances'
 legacy_guide_number: 2030
-section: 'Knowledge base'
+section: Networking
+order: 1
 ---
 
 **Last updated 02nd January 2020**
@@ -23,7 +24,7 @@ This guide explains how to buy a failover IP for an OVHcloud Public Cloud projec
 
 
 ## Requirements
-- at least one instance (please refer to our guide on [Creating an instance in the OVHcloud Control Panel](https://docs.ovh.com/gb/en/public-cloud/create_an_instance_in_your_ovh_customer_account/))
+- at least one instance (please refer to our guide on [Creating an instance in the OVHcloud Control Panel](../create_an_instance_in_your_ovh_customer_account/))
 
 ## Instructions
 

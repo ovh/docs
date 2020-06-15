@@ -25,6 +25,7 @@ This guide shows you how to set up an object container as file system.
 
 ## Please note
 Using an object container as a file system can impact the performance of your operations.
+S3ql version 3.3 or above is required.
 
 
 ## Create your file system
@@ -35,15 +36,15 @@ Using an object container as a file system can impact the performance of your op
 admin@serveur1:~$ sudo vim s3qlcredentials.txt
 
 [swift]
-backend-login: TENANT_NAME:USERNAME
-backend-password: PASSWORD
+backend-login: OS_PROJECT_ID:OS_USERNAME
+backend-password: OS_PASSWORD
 storage-url: swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME
 fs-passphrase: PASSPHRASE
 ```
 
 
 
-Information such as TENANT_NAME, USERNAME can be found in your OpenRC file. 
+OS_PROJECT_ID, OS_USERNAME and OS_PASSWORD parameters can be found in your OpenRC file.
 You can follow this guide below in order to retrieve it:
 
 - [Access and Security in Horizon]({legacy}1774)
@@ -62,7 +63,7 @@ admin@serveur1:~$ sudo chmod 600 s3qlcredentials.txt
 - Object container formating:
 
 ```
-admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL
+admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME
 ```
 
 
@@ -83,7 +84,7 @@ admin@serveur1:~$ sudo mkdir /mnt/container
 - Mount the object container
 
 ```
-admin@serveur1:~$ sudo mount.s3ql --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/GRA:CT_S3QL /mnt/container/
+admin@serveur1:~$ sudo mount.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME /mnt/container/
 ```
 
 

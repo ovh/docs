@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 27th May 2020**
+**Last updated 15th June 2020**
 
 ## Objective
 
@@ -90,9 +90,9 @@ In the popup window, you will be asked to choose:
 
 > [!primary]
 >
-> Some operating systems or platforms such as Plesk or Windows require a licence to be purchased prior to installation. You can buy this licence from OVHcloud or from a reseller. You will then need to integrate it manually or through your Control Panel. You can manage your licences under `Server`{.action}, then `Licences`{.action}.
-In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Actions`{.action} button on the right).
-For a Windows VPS, please also refer to [this guide](../windows-first-config/).
+> Some proprietary operating systems or platforms such as Plesk or cPanel require licences which generate additional fees. Licences can be managed from the OVHcloud Control Panel: go to the `Server`{.action} section, then click on  `Licences`{.action} in the left-hand navigation.
+>
+In order to have a **Windows** operating system running on a VPS, it has to be **selected in the order process**. A VPS with another OS installed cannot be reinstalled with Windows in the described way.
 >
 
 A progress bar for the reinstallation will appear in your Control Panel - please note that installation can take up to 30 minutes.
@@ -137,9 +137,9 @@ A window will open, and you will be asked to choose:
 
 > [!primary]
 >
-> Some operating systems or platforms such as Plesk or Windows require a licence to be purchased prior to installation. You can buy this licence from OVHcloud or from a reseller. You will then need to integrate it manually or through your Control Panel. You can manage your licences under `Server`{.action}, then `Licences`{.action}.
-In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Actions`{.action} button on the right).
-For a Windows VPS, please also refer to [this guide](../windows-first-config/).
+> Some proprietary operating systems or platforms such as Plesk or cPanel require licences which generate additional fees. Licences can be managed from the OVHcloud Control Panel: go to the `Server`{.action} section, then click on  `Licences`{.action} in the left-hand navigation.
+>
+In order to have a **Windows** operating system running on a VPS, it has to be **selected in the order process**. A VPS with another OS installed cannot be reinstalled with Windows in the described way.
 >
 
 A progress bar for the reinstallation will appear in your Control Panel - please note that installation can take up to 30 minutes.

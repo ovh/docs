@@ -3,7 +3,8 @@ title: 'Delete a Public Cloud project'
 slug: delete_a_project
 excerpt: 'This guide will show you how to delete a Public Cloud project'
 legacy_guide_number: g2129
-section: 'Knowledge Base'
+section: Project management
+order: 1
 ---
 
 **Last updated 6th December 2019**

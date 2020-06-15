@@ -1,6 +1,6 @@
 ---
 title: Public Cloud
 slug: public-cloud
-excerpt: Utiliser le Public Cloud avec OVH
-sections: Premiers pas, Informations générales, Actions via API et lignes de commande, Base de connaissances, Tutoriels, Sécurité
+excerpt: Utiliser le Public Cloud avec OVHcloud
+sections: Premiers pas, Gestion de projets, Gestion depuis l'espace client, Gestion depuis Horizon, Gestion via OpenStack, Réseau, Stockage, Tutoriels
 ---
