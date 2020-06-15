@@ -10,7 +10,7 @@ order: 3
 
 ## Objective
 
-Here are the most frequently asked questions about OVHcloud Data Processing solution.
+Here are the most frequently asked questions about OVHcloud Data Processing.
 
 ### Does OVHcloud offer products for collecting and analyzing large amounts of data, the big data?
 
@@ -20,7 +20,7 @@ To summarize :
 
 A big data cluster allows massive data storage and is equipped with a suite of tools (Apache Hadoop) to extract useful information. 
 <br>A big data cluster often has fixed resources (power and storage). They are for example very useful for Business Intelligence (financial reporting etc).
-<br>Data Processing (Apache Spark), is often included in a big data cluster. But with technical limitations in terms of physical resources. For example, it is impossible to run parallel computing tasks. 
+<br>Data Processing (Apache Spark) is often included in a big data cluster but with technical limitations in terms of physical resources. For example, it is impossible to run parallel computing tasks. 
 <br>OVhcloud Data Processing solves this problem by offering you Data Processing "as a Service". 
 <br>Extracting text from videos, mathematical calculations, cleaning tabular data, ... launch dozens of tasks in parallel, OVHcloud takes care of the infrastructure
 
