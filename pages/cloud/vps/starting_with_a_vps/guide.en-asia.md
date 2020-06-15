@@ -92,7 +92,7 @@ In the popup window, you will be asked to choose:
 >
 > Some proprietary operating systems or platforms such as Plesk or cPanel require licences which generate additional fees. Licences can be managed from the OVHcloud Control Panel: go to the `Server`{.action} section, then click on `Licences`{.action} in the left-hand navigation.
 >
-In order to have a **Windows** operating system running on a VPS, it has to be **selected in the order process**. A VPS with another OS installed cannot be reinstalled with Windows in the described way.
+> In order to have a **Windows** operating system running on a VPS, it has to be **selected in the order process**. A VPS with another OS installed cannot be reinstalled with Windows in the described way.
 >
 
 A progress bar for the reinstallation will appear in your Control Panel - please note that installation can take up to 30 minutes.
@@ -139,7 +139,7 @@ A window will open, and you will be asked to choose:
 >
 > Some proprietary operating systems or platforms such as Plesk or cPanel require licences which generate additional fees. Licences can be managed from the OVHcloud Control Panel: go to the `Server`{.action} section, then click on `Licences`{.action} in the left-hand navigation.
 >
-In order to have a **Windows** operating system running on a VPS, it has to be **selected in the order process**. A VPS with another OS installed cannot be reinstalled with Windows in the described way.
+> In order to have a **Windows** operating system running on a VPS, it has to be **selected in the order process**. A VPS with another OS installed cannot be reinstalled with Windows in the described way.
 >
 
 A progress bar for the reinstallation will appear in your Control Panel - please note that installation can take up to 30 minutes.
