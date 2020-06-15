@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 1
 ---
 
-**Dernière mise à jour le 27/05/2020**
+**Dernière mise à jour le 15/06/2020**
  
 ## Objectif
 
@@ -93,8 +93,9 @@ Une fenêtre s'ouvre et vous aurez alors à choisir :
 
 > [!primary]
 >
-> Certaines distributions comme Plesk ou Windows nécessitent au préalable une licence que vous pouvez acquérir soit chez OVHcloud, soit auprès d'un revendeur. Vous aurez ensuite à l'intégrer manuellement ou via votre espace client. Vous pouvez gérer vos licences dans `Server`{.action} puis `Licences`{.action}.
-À cet endroit, vous pouvez également commander des licences (bouton à droite `Commander`{.action}) ou ajouter votre propre licence SPLA Windows ou SPLA SQL Server (bouton à droite `Ajouter une licence SPLA`{.action}).
+> Certains systèmes d'exploitation ou plates-formes propriétaires tels que Plesk ou cPanel nécessitent des licences qui génèrent des frais supplémentaires. Les licences peuvent être gérées à partir de votre espace client OVHcloud : accédez à la section `Server` en haut à gauche de votre espace client puis cliquez sur `Licences`{.action}.
+> 
+> Pour qu'un système d'exploitation **Windows** s'exécute sur un VPS, il doit être **sélectionné pendant la commande** de celui-ci. Un VPS avec un autre système d'exploitation installé ne peut pas être réinstallé avec Windows selon la méthode décrite ci-dessus.
 > 
 
 Dans votre espace client, une barre de progression s'affichera, vous informant de l'avancée de la réinstallation, celle-ci pouvant prendre jusqu'à 30 minutes.
@@ -140,8 +141,9 @@ Une fenêtre s'ouvre et vous aurez alors à choisir :
 
 > [!primary]
 >
-> Certaines distributions comme Plesk ou Windows nécessitent au préalable une licence que vous pouvez acquérir soit chez OVHcloud, soit auprès d'un revendeur. Vous aurez ensuite à l'intégrer manuellement ou via votre espace client. Vous pouvez gérer vos licences dans `Server`{.action} puis `Licences`{.action}.
-À cet endroit, vous pouvez également commander des licences (bouton à droite `Commander`{.action}) ou ajouter votre propre licence SPLA Windows ou SPLA SQL Server (bouton à droite `Ajouter une licence SPLA`{.action}).
+> Certains systèmes d'exploitation ou plates-formes propriétaires tels que Plesk ou cPanel nécessitent des licences qui génèrent des frais supplémentaires. Les licences peuvent être gérées à partir de votre espace client OVHcloud : accédez à la section `Server` en haut à gauche de votre espace client puis cliquez sur `Licences`{.action}.
+> 
+> Pour qu'un système d'exploitation **Windows** s'exécute sur un VPS, il doit être **sélectionné pendant la commande** de celui-ci. Un VPS avec un autre système d'exploitation installé ne peut pas être réinstallé avec Windows selon la méthode décrite ci-dessus.
 > 
 
 Dans votre espace client, une barre de progression s'affichera, vous informant de l'avancée de la réinstallation, celle-ci pouvant prendre jusqu'à 30 minutes.
