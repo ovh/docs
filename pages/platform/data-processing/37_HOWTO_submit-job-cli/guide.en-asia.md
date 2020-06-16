@@ -38,7 +38,7 @@ $ chmod u+x ovh-spark-submit
 To be able to submit a job with your CLI, you must set up some configurations that will allow it to authenticate to the OVHcloud API.
 To do so, you will need an application key, a secret application key and a consumer key. These can be obtained [here]( https://eu.api.ovh.com/createToken/){.external}.
 
-You need to add the rights `GET/POST/PUT` on the endpoint `/cloud/project/\*/dataProcessing/\*` .
+You need to add the rights `GET/POST/PUT` on the endpoint `/cloud/project/*/dataProcessing/*` .
 ![Creating API Keys for your script](images/keys.png){.thumbnail}
 
 Once you have got your keys, you have to create a new `configuration.ini` file in the same directory and complete it with your 3 keys.
