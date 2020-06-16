@@ -1,8 +1,9 @@
 ---
-title: Commander des SMS
+title: 'Commander des SMS'
 slug: commander-des-sms
 legacy_guide_number: '8650771'
-section: Gérer mon offre
+section: 'Gérer mon offre'
+hidden: true
 ---
 
 **Préambule**
@@ -98,5 +99,3 @@ Aucun SMS ne sera crédité si le bon de commande n'est pas réglé.
 Pour régler le bon de commande, rendez-vous en bas de ce dernier afin de trouver les moyens de paiement disponibles.
 
 ![](images/07.jpg){.thumbnail}
-
-
