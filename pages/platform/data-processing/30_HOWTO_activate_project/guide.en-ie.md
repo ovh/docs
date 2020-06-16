@@ -27,7 +27,7 @@ By default, the Data Processing service is not activated on any cloud project. Y
 
 ![Data Processing Contract](images/welcome.png){.thumbnail}
 
-To activate the service on the selected cloud project, you will have to read and agree to the terms and conditions by checking the related checkbox. The `submit my first processing job`{.action} button will then become clickable, activating the service for your cloud project.
+To activate the service on the selected cloud project, click on the `Start my first job`{.action} button.
 
 ## Activating the OVHcloud Data Processing service: What does it mean for you?
 
