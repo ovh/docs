@@ -21,11 +21,10 @@ To read an introduction about Data Processing service you can visit [Data Proces
 - Access to the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external}
 - An OVHcloud account 
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details.)
-
-Your application must be uploaded into a container in your Object Storage and for the Spark engine, your application can either be :
-
-- a JAR file, if you're using Java or Scala
-- Python files and a yaml requirement file (in Conda format), if your job is in Python
+- Your application must be uploaded into a container in your Object Storage.
+- For the Spark engine, your application can either be :
+  - a JAR file, if you're using Java or Scala
+  - Python files and a yaml requirement file (in Conda format), if your job is in Python
 
 ## Instructions
 
@@ -52,7 +51,7 @@ In this step you will have to select the region in which you would like your Dat
 
 An OVHcloud Data Processing job being executed in a distributed environment, you will have to specify the amount of resources you would like your job to use. The resources you will have to specify are going to depend on the engine you selected previously.
 
-For Apache Spark Engine, the resources you will have to specify are:
+For the Apache Spark Engine, the resources you will have to specify are:
 
 - Resources for each executor nodes
 - Resources for the masters nodes

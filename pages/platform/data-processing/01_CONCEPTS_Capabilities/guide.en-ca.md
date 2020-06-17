@@ -17,8 +17,10 @@ In this document, we list all the features currently supported by the Data Proce
 
 ### Processing engine 
 
-- Currently the only available processing engine is [Apache Spark](http://spark.apache.org/).
-- The only available version of Apache Spark is 2.4.3 for now. 
+- At this moment, OVHcloud Data Processing supports the following engines:
+
+  - Spark 2.4.3 
+
 - It is not possible to interact with Apache Spark cluster via command line.  
 
 ### The Apache Spark job in Data Processing is limited to: 
@@ -41,7 +43,7 @@ In this document, we list all the features currently supported by the Data Proce
 
 ### OVHcloud vRack
 
-Data Processing can not use or access OVHcloud vRack. 
+- Data Processing can not use or access OVHcloud vRack. 
 
 ### Available regions 
 
