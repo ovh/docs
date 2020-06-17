@@ -1,6 +1,7 @@
 ---
 title: Changement du mot de passe utilisateur
 slug: changement-du-mot-de-passe-utilisateur
+excerpt: Découvrez comment modifier le mot de passe d'un utilisateur du client vSphere depuis votre espace client OVHcloud
 section: Fonctionnalités OVH
 ---
 
