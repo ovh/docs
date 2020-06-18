@@ -2,9 +2,6 @@
 title: Comment résilier votre offre Private Cloud 
 slug: comment-resilier-le-private-cloud
 excerpt: Découvrez comment demander la résiliation d'une infrastructure Private cloud
-legacy_guide_number: '7766556'
-space_key: VS
-space_name: vSphere as a Service
 section: Fonctionnalités OVH
 order: 09
 ---
@@ -66,7 +63,7 @@ L'e-mail contient un lien cliquable qui vous permettra de confirmer la résiliat
 
 > [!primary]
 >
-> Attention ce formulaire est accessible pendant **72 heures**, nous vous conseillons de transmettre votre requête à partir du 25 du mois.
+> Attention, ce lien est valable pendant **72 heures**. Nous vous conseillons donc de formuler votre demande de résiliation à partir du 25 du mois.
 >
 
 Vous pouvez également valider la demande de résiliation via l'API OVHcloud suivante :
