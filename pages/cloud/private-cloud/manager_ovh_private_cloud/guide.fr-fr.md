@@ -51,12 +51,19 @@ Dans le tableau de gauche, vous trouverez les informations générales de votre 
 
 #### Options et conformité
 
-Dans le tableau central, vous aurez un visuel sur l'état des options NSX et vRops ainsi que sur l'état des options HDS et PCI-DSS.
+Dans le tableau central, vous aurez un visuel sur l'état d'activation des options de votre Private Cloud.
 
 ![Options](images/controlpanel3.png){.thumbnail}
 
-Dans cet exemple, les options NSX et vRops sont activées.
+#### Gestion du service
 
+Dans le tableau de droite, vous pourrez gérer votre abonnement à la mailing list Private Cloud OVHcloud.
+
+Le prochain renouvellement de votre service Private Cloud y est également mentionné. À droite de cette date, le bouton `...`{.action} vous permet de commander une licence ou de supprimer votre service Private Cloud.
+
+![Options](images/controlpanel4.png){.thumbnail}
+
+Pour plus de détails sur la résiliation d'un service Private Cloud, consultez notre guide [Comment résilier le Private Cloud](../comment-resilier-le-private-cloud/).
 
 #### Datacentres
 
