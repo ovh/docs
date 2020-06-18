@@ -13,7 +13,7 @@ order: 09
 
 ## Objectif
 
-Si votre offre Private Cloud ne vous convient plus ou que vous avez commandé une nouvelle infrastructure pour l'ancienne, vous pouvez alors demander la résiliation de cette infrastructure, une fois toutes vos données récupérées.
+Si votre offre Private Cloud ne vous convient plus, ou que vous avez commandé une nouvelle infrastructure pour remplacer l'ancienne, vous pouvez demander la résiliation de cette infrastructure, une fois toutes vos données récupérées.
 
 **Découvrez comment demander la résiliation d'une offre Private Cloud** 
 
@@ -29,28 +29,32 @@ L'offre Private Cloud est sans engagement. Cependant, comme indiqué dans les [C
 
 >[!warning]
 >
-> Avant de résilier votre offre, veuillez prendre garde à récupérer les données que vous souhaitez conserver. En effet, la résiliation entrainera la suppression intégrale de votre Private Cloud et toutes les données qu'il contient.
+> Avant de résilier votre offre, veuillez prendre garde à récupérer toutes les données que vous souhaitez conserver. En effet, la résiliation entrainera la suppression intégrale de votre Private Cloud et toutes les données qu'il contient.
 >
 
 ### Étape 1 : demander la résiliation depuis l'espace client OVHcloud
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `Server`{.action} (1), cliquez sur `Private Cloud`{.action} (2) et sélectionnez votre offre dans la liste (3).
 
-Dans le tableau « Gestion du service » du menu « Informations Générales », cliquez sur le bouton `...`{.action} (4) à droite de la date de renouvellement. Cliquez enfin sur `Supprimer le service`{.action} (5).
+Dans le tableau « Gestion du service » de l'onglet « Informations Générales », cliquez sur le bouton `...`{.action} (4) à droite de la date de renouvellement. Cliquez enfin sur `Supprimer le service`{.action} (5).
 
 ![resiliation depuis l'espace client](images/resiliation1.png){.thumbnail}
 
-Prenez alors connaissance du fait que cela suspendra l'infrastructure et supprimera toute donnée présente sur l'infrastructure dès la confirmation de la résiliation. Aucun remboursement au prorata ne sera effectué si l'infrastructure est résiliée avant la fin du mois. Cliquez sur `Valider`{.action} pour demander la résiliation.
+Prenez alors connaissance du fait que cette action supprimera toute donnée présente sur l'infrastructure dès la confirmation de la résiliation. Aucun remboursement au prorata ne sera effectué si l'infrastructure est résiliée avant la fin du mois.
+
+Cliquez sur `Valider`{.action} pour demander la résiliation.
 
 ![validation resiliation](images/resiliation2.png){.thumbnail}
 
-Un message de confirmation de votre demande vous sera alors présenté. La procédure de confirmation de la résiliation vous est envoyée par e-mail, à l'adresse liée au compte OVHcloud.
+Une notification de confirmation de votre demande vous sera alors présentée. La procédure de confirmation de la résiliation vous est envoyée par e-mail, à l'adresse liée au compte OVHcloud.
 
 ![validation resiliation](images/resiliation3.png){.thumbnail}
 
 ### Étape 2 : confirmer la résiliation
 
-Suite à votre demande, un e-mail de confirmation de résiliation vous est envoyé à l'adresse liée au compte OVHcloud. Vous pouvez également retrouver cet e-mail dans votre espace client OVHcloud. Cliquez sur votre nom en haut à droite puis `E-mails de service`{.action}.
+Suite à votre demande, un e-mail de confirmation de résiliation vous est envoyé à l'adresse liée au compte OVHcloud. 
+
+Vous pouvez également retrouver cet e-mail dans votre espace client OVHcloud. Cliquez sur votre nom en haut à droite puis sur `E-mails de service`{.action}.
 
 ![validation resiliation](images/resiliation4.png){.thumbnail}
 
