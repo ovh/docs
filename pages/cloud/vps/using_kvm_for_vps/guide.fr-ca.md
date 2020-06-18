@@ -24,7 +24,7 @@ La console KVM permet une connexion directe à votre VPS sans avoir à utiliser 
 Une fois connecté à votre espace client, il vous suffit de vous rendre sur la page de gestion de votre VPS. Vous trouverez un bouton `KVM`{.action} :
 
 ![Sélectionner le bouton KVM](images/activating_kvm_manager.png){.thumbnail}
-
+![Sélectionner le bouton KVM](images/activate_kvm_vps2020.png){.thumbnail}
  
 Une fenêtre va alors initier la connexion sur votre VPS, ce qui peut durer quelques secondes. Vous n'aurez plus qu'à vous connecter :
 
