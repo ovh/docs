@@ -64,7 +64,7 @@ Passerelle par défaut = default_gateway
 
 Tout d'abord, connectez-vous à votre instance en ligne de commande et ouvrez votre fichier de configuration réseau.
 
-**Récupérez votre configuration DHCP actuelle :**
+Récupérez votre configuration DHCP actuelle :
 
 ```
 ifconfig eth0
@@ -83,13 +83,13 @@ default  default_gateway  0.0.0.0 UG 0 0 0 eth0
 default_gateway * 255.255.255.255 UH 0 0 0 eth0
 ```
 
-**Modifiez votre fichier de configuration :**
+Modifiez votre fichier de configuration :
 
 ```
 vi /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-**Ajoutez les lignes suivantes :**
+Ajoutez les lignes suivantes :
 
 ```
 DEVICE="eth0"
@@ -131,7 +131,7 @@ Passerelle par défaut = default_gateway
 
 Tout d'abord, connectez-vous à votre instance en ligne de commande et ouvrez votre fichier de configuration réseau.
 
-**Récupérez votre configuration DHCP actuelle :**
+Récupérez votre configuration DHCP actuelle :
 
 ```
 ifconfig eth0
@@ -150,13 +150,13 @@ default default_gateway 0.0.0.0 UG 0 0 0 eth0
 default_gateway * 255.255.255.255 UH 0 0 0 eth0
 ```
 
-**Modifiez votre fichier de configuration :**
+Modifiez votre fichier de configuration :
 
 ```
 vi /etc/network/interfaces
 ```
 
-**Ajoutez les lignes suivantes :**
+Ajoutez les lignes suivantes :
 
 ```
 auto eth0
@@ -194,7 +194,7 @@ Passerelle par défaut = default_gateway
 
 Tout d'abord, connectez-vous à votre instance en ligne de commande et ouvrez votre fichier de configuration réseau.
 
-**Récupérez votre configuration DHCP actuelle :**
+Récupérez votre configuration DHCP actuelle :
 
 ```
 ifconfig eth0
@@ -213,13 +213,13 @@ default default_gateway 0.0.0.0 UG 0 0 0 eth0
 default_gateway * 255.255.255.255 UH 0 0 0 eth0
 ```
 
-**Modifiez votre fichier de configuration :**
+Modifiez votre fichier de configuration :
 
 ```
 vi /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-**Ajoutez les lignes suivantes :**
+Ajoutez les lignes suivantes :
 
 ```
 DEVICE="eth0"
@@ -268,7 +268,7 @@ Notez votre adresse IPv4 et votre masque de sous-réseau.
 
 Ouvrez le Panneau de configuration Windows et cliquez sur `Centre réseau et partage`{.action}.
 
-![centre réseau et partage](images/network-and-sharing-center.jpg){.thumbnail}
+![centre réseau et partage](images/network-and-sharing-centre.jpg){.thumbnail}
 
 Cliquez ensuite sur `Modifier les paramètres de la carte`{.action} dans le menu de gauche.
 
