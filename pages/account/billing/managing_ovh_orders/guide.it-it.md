@@ -75,6 +75,17 @@ Se lo stato è “Consegna in corso” o “Pagamento non ricevuto”, l’ordin
 ![Riepilogo degli ordini](images/html_order.png){.thumbnail}
 
 
+### Gestione degli ordini
+
+Dopo aver generato il buono d’ordine, è possibile verificare lo stato dell’ordine dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Per farlo, clicca sul tuo nome utente, seleziona `I tuoi ordini`{.action} e infine clicca sui tre puntini`...`{.action} in corrispondenza dell’ordine in questione. Seleziona `Gestione degli ordini`{.action}. Inoltre è possibile verificare lo stato dell’ordine dal menu “Stato”.
+
+![Gestione degli ordini](images/order05b.png){.thumbnail}
+
+La tabella seguente mostra l’elaborazione degli ordini in 4 step. 
+
+![Gestione degli ordini](images/order06.png){.thumbnail}
+
+
 ### Esercita il diritto di recesso
 
 Le modalità e le condizioni per esercitare il diritto di recesso vengono stabilite nell’articolo 10 delle [Condizioni Generali di Servizio](https://www.ovh.it/supporto//documenti_legali/condizioni_generali_servizio.pdf){.action}.
