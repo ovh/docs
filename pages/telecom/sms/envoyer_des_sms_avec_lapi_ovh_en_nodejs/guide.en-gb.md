@@ -112,20 +112,6 @@ my account SMS sms-XXXXXXX-1
 
 We retrieve the SMS account (ServiceName), and receive a response with 1 credit used for a valid phone number.
 
-
-#### Size of advertising SMS messages
-
-An advertising SMS must include the STOP clause. It contains 11 characters, and is automatically deducted from the 160 base characters of the first SMS.
-The table below indicates the maximum number of authorised characters for advertising SMS messages. 
-
-E.g. in 7bit encoding, if your message is more than 149 characters, it will be sent via 2 SMS messages — and will cost 2 credits as a result.
-
-| Encoding | First SMS | Second SMS and later  |
-|---|---|---|
-| 7bits (GSM 03.38 standard) | 149 characters | 153 characters |
-| Unicode | 59 characters | 70 characters  |
-
-
 ## Go further
 
 With the API console ([https://api.ovh.com/console/#/sms](https://api.ovh.com/console/#/sms)), you can explore other methods for using SMS services, such as: SMS messages with the ability to send replies (for OVHcloud accounts in France only), mass-sending a CSV file, advertising mail, acknowledgements of receipt, etc.
