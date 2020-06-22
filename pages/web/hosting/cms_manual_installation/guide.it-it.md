@@ -1,81 +1,122 @@
 ---
-title: 'Web Hosting: installa manualmente il tuo CMS'
-excerpt: Installa manualmente il tuo CMS
+title: 'Installare manualmente un CMS'
+excerpt: 'CMS compatibili con il tuo hosting Web OVHcloud'
 id: '1375'
 slug: web_hosting_installa_manualmente_il_tuo_cms
 legacy_guide_number: g1375
+section: CMS
 ---
 
+**Ultimo aggiornamento: 04/02/2020**
 
-## Wordpress
-WordPress è una piattaforma gestita dalla sua Community italiana.
-Basato sulla tecnologia PHP, WordPress è un'applicazione che ti permette di creare le tue pagine in modo sempre più semplice, con strumenti come il correttore ortografico o un tool per la gestione del SEO.
+> [!warning]
+>OVHcloud fornisce servizi la cui gestione e configurazione sono sotto la tua completa responsabilità. Pertanto spetta a te garantire che tali servizi funzionino correttamente.
+>
+>Questa guida ti mostra come effettuare le operazioni più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un esperto del settore e/o il fornitore del servizio. OVHcloud non potrà fornirti alcuna assistenza.  Per maggiori informazioni, consulta la sezione “Per saperne di più” di questa guida.
+>
 
+## Obiettivo
 
-- [WordPress](https://www.ovh.it/hosting-web/website/wordpress.xml)
+I nostri servizi di hosting Web sono compatibili con alcuni dei più diffusi sistemi di gestione dei contenuti (CMS) che possono rispondere a molteplici modalità di utilizzo.
 
-Il supporto OVH non risponde alle domande relative alla configurazione di WordPress. Se hai bisogno di aiuto, consulta la guida []({legacy}2053) disponibile online o i forum dedicati.
-
-- Guida all'installazione manuale di Wordpress: []({legacy}1977)
-
-
-
-![](images/img_3379.jpg){.thumbnail}
+**Questa guida ti mostra come installare manualmente un CMS.**
 
 
-## Joomla!
-Joomla! è un CMS sviluppato dalla precedente community, sulla base del progetto Mambo. L'interfaccia è molto intuitiva e di semplice utilizzo e ha reso Joomla! un CMS di qualità, riconosciuto e premiato in numerosi concorsi.
+## Prerequisiti
 
-La community italiana di Joomla! è molto importante e offre supporti a tutti i livelli del CMS (aiuti, documentazioni, argomenti, ecc...)
+- Disporre di una soluzione hosting Web
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
 
-
-- [Joomla!](https://www.ovh.it/hosting-web/website/joomla.xml)
-
-Il supporto OVH non risponde alle domande relative alla configurazione di Joomla!. Se hai bisogno di aiuto, consulta la guida []({legacy}2053) disponibile online o i forum dedicati.
-
-- Guida all'installazione manuale di Joomla!: []({legacy}1978)
+## Procedura
 
 
-
-![](images/img_3380.jpg){.thumbnail}
-
-
-## Prestashop
-Crea il tuo negozio virtuale! La soluzione e-commerce PrestaShop utilizza le novità "Web 2.0" come AJAX o l’ergonomia di nuova generazione. PrestaShop guida in maniera chiara e semplice gli utenti attraverso il tuo catalogo di prodotti, trasformandoli da semplici visitatori in futuri clienti. PrestaShop è così leggero che anche i clienti con connessioni a bassa velocità potranno comprare dal tuo sito.
-
-PrestaShop è stato creato nel 2005 nella scuola di informatica Epitech da cinque giovani studenti. Il progetto iniziale, tradotto in due lingue (francese e inglese) si chiamava phpopenstore (POS). Sin dall'inizio, i creatori decisero di rendere il software libero. Alcuni commercianti lo hanno testato e hanno contribuito a definirne le specifiche.
-
-Dal 2005 è continuata l'evoluzione del software, oggi disponibile nella sua versione "stabile" tradotta in più di 55 lingue. La soluzione PrestaShop, utilizzata in oltre 150 paesi, è ormai leader mondiale dell'e-commerce con i suoi 150.000 negozi.
-
-
-- [PrestaShop](https://www.ovh.it/hosting-web/website/prestashop.xml)
-
-Il supporto OVH non risponde alle domande relative alla configurazione del tuo PrestaShop. Se hai bisogno di aiuto, consulta la guida []({legacy}2053) disponibile online o i forum dedicati.
-
-- Guida all'installazione manuale di Prestashop: []({legacy}1979)
-
-- Se non hai ancora un hosting OVH, clicca [qui](https://www.ovh.it/soluzioni/prestashop/) e attiva il tuo hosting Performance con Prestashop preinstallato!
+> [!primary]
+>**Installazione automatica**
+>
+>Con pochi click è possibile installare automaticamente un CMS dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).  Per farlo, prosegui nella lettura di questa guida: 
+>
+>[Installare i moduli in 1 click OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/)
+>
 
 
 
-![](images/img_3381.jpg){.thumbnail}
+
+### WordPress
+WordPress è un software che permette di creare siti web e blog. Basato sulla tecnologia PHP, dispone di una varietà di strumenti come il correttore ortografico e i plugin SEO.
 
 
-## Drupal
-Drupal è un CMS open source basato sulla tecnologia PHP. Nato nel 2000, è stato definito dal suo creatore un "assemblatore rapido di siti". Ampiamente personalizzabile, è già utilizzato da centinaia di migliaia di siti Web.
+- [Modulo WordPress](https://www.ovh.it/hosting-web/website/wordpress.xml)
 
-Attenzione: la versione 8 di Drupal non è ancora compatibile con gli hosting condivisi.
-
-Il supporto OVH non risponde alle domande relative alla configurazione del tuo Drupal. Se hai bisogno di aiuto, consulta la guida []({legacy}2053) disponibile online o i forum dedicati.
+Il supporto OVHcloud non è autorizzato a rispondere alle domande relative alla configurazione di WordPress. 
 
 
-- Guida all'installazione manuale di Drupal: []({legacy}1976)
+Se hai bisogno di aiuto, consulta i forum dedicati a [WordPress](https://wordpress.org/support/).
+
+- Guida all’installazione di WordPress [CMS: installa manualmente WordPress](../cms_installa_manualmente_wordpress)
+
+![cms](images/img_3379.jpg){.thumbnail}
+
+### Joomla!
+Joomla! è un software pluripremiato e facile da usare che consente di creare siti web e applicazioni ad alte prestazioni.
+
+La community di Joomla! è molto grande e offre supporti a tutti i livelli del CMS (aiuto, documentazioni, argomenti, ecc.)
+
+- [Joomla! Modulo](https://www.ovh.it/hosting-web/website/joomla.xml)
+
+Il supporto OVHcloud non è autorizzato a rispondere alle domande relative alla configurazione di Joomla!. 
+
+Se hai bisogno di aiuto, consulta i forum dedicati a[ Joomla!](http://forum.joomla.org/). 
+
+- Guida all’installazione di Joomla!: [CMS: installa manualmente Joomla!](../cms_installa_manualmente_joomla)
+
+![cms](images/img_3380.jpg){.thumbnail}
+
+### PrestaShop
+La soluzione e-commerce PrestaShop utilizza le novità “Web 2.0” come AJAX o l’ergonomia di nuova generazione. Oltre alle comuni funzionalità di shopping online, il software può essere personalizzato con moduli, temi e modelli. 
+
+PrestaShop è stato creato nel 2005 nella scuola di informatica EPITECH IT di Parigi da cinque giovani studenti. Sin dall’inizio, i creatori decisero di realizzare una soluzione open source. Alcuni commercianti lo hanno testato e hanno contribuito a definirne le specifiche.
+
+Dal 2005 è continuata l’evoluzione del software,  oggi disponibile nella sua versione 1.7.6.2 tradotta in più di 60 lingue. Il CMS PrestaShop è ormai leader mondiale delle soluzioni e-commerce con i suoi 300.000 negozi online.
+
+- [Modulo PrestaShop](https://www.ovh.it/hosting-web/website/prestashop.xml)
+
+Il supporto OVHcolud non risponde alle domande relative alla configurazione del tuo PrestaShop. 
+
+Se hai bisogno di aiuto, consulta i forum dedicati a
+[ PrestaShop](https://www.prestashop.com/forums/).
+
+- Guida all’installazione di PrestaShop: [CMS: installa manualmente PrestaShop](../cms_installa_manualmente_prestashop/)
+
+![cms](images/img_3381.jpg){.thumbnail}
+
+
+### Drupal
+Drupal è un CMS open source basato sulla tecnologia PHP. Nato nel 2000, consente di creare rapidamente siti Web dinamici. Ampiamente personalizzabile, è già utilizzato dall’1% dei siti Web in tutto il mondo. 
+
+-  [Modulo Drupal](https://www.ovh.it/hosting-web/website/drupal.xml)
+
+Il supporto OVHcolud non risponde alle domande relative alla configurazione di Drupal. 
+
+Se hai bisogno di aiuto, consulta i forum dedicati a [Drupal](https://www.drupal.org).
+
+
+-  Guida all’installazione di Drupal: [ CMS: installa manualmente Drupal](../cms_installa_manualmente_drupal/)
 
 
 
-![](images/img_3382.jpg){.thumbnail}
+![cms](images/img_3382.jpg){.thumbnail}
 
 
-## 
-Per installare uno dei CMS in modo automatico e in pochi click direttamente dal tuo Spazio Cliente OVH, consulta questa guida: []({legacy}1402)
 
+
+## Per saperne di più 
+
+[Migrare un sito e un servizio di posta in OVHcloud](../migrare-un-sito-in-ovh/){.external}
+
+[Mettere online un sito Internet su un hosting Web](../hosting_condiviso_come_mettere_online_il_tuo_sito/){.external}
+
+[Ospitare più siti su uno stesso hosting](../configurare-un-multisito-su-un-hosting-web/){.external}
+
+Consulta le nostre [soluzioni di hosting di siti Web](https://www.ovh.it/hosting-web/){.external}
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

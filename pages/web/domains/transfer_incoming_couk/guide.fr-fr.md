@@ -1,8 +1,8 @@
 ---
-title: Transférer un nom de domaine .uk vers OVHcloud
+title: 'Transférer un nom de domaine .uk vers OVHcloud'
 legacy_guide_number: 2026
 slug: transferer-domaine-couk
-excerpt: Vous trouverez dans ce guide différentes informations concernant le transfert d’un nom de domaine .uk ou assimilé vers OVHcloud
+excerpt: 'Vous trouverez dans ce guide différentes informations concernant le transfert d’un nom de domaine .uk ou assimilé vers OVHcloud'
 section: Transfert
 order: 3
 ---
@@ -19,11 +19,8 @@ Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une 
 
 - Votre domaine ne doit pas être en période de rédemption ou de suppression.
 - Le domaine ne doit pas être bloqué chez votre registrar. 
-- Les coordonnées du propriétaire doivent être bien à jour sur le [whois](https://www.ovh.com/cgi-bin/whois.pl){.external} du domaine.
+- Les coordonnées du propriétaire doivent être bien à jour sur le [whois](https://www.nominet.uk/whois/){.external} du domaine.
 - Vous devrez obtenir le code d'autorisation qui sera envoyé à l'adresse email du propriétaire. 
-
-
-![hosting](images/3485.png){.thumbnail}
 
 
 ## Extensions concernées
@@ -80,6 +77,5 @@ Le code d'autorisation est généré automatiquement suite à la modification du
 Le transfert étant gratuit, la date d'expiration du domaine suite à son transfert sera la même qu'avant son transfert. Pour le renouveler suite au transfert, rendez-vous sur [le site OVHcloud](https://www.ovh.com/cgi-bin/order/renew.cgi){.external}.
 
 ## Aller plus loin
-
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
