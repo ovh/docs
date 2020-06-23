@@ -5,7 +5,7 @@ excerpt: 'Cómo mejorar la seguridad de su cuenta de OVHcloud activando la doble
 section: Seguridad
 ---
 
-**Última actualización: 16/04/2020**
+**Última actualización: 23/06/2020**
 
 ## Objetivo
 
@@ -16,9 +16,9 @@ Puede activar la autentificación de dos factores (2FA). Esta se agrega a su nom
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
 - Disponer de un móvil (para el método por SMS), un teléfono inteligente o una tableta (para el método a través de la aplicación móvil) o una llave de seguridad U2F (Universal Second Factor).
-- Haber consultado las [recomendaciones sobre la gestión de la contraseña de acceso a su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrase%C3%B1a/).
+- Haber consultado las [recomendaciones sobre la gestión de la contraseña de acceso a su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/).
 
 ## Procedimiento
 
@@ -35,9 +35,8 @@ Tras asociar por primera vez la aplicación a su cuenta, ya no será necesario q
 
 ### Etapa 1: activar su primer método de doble autenticación
 
-- [Activar el método de doble autenticación por SMS](https://docs.ovh.com/es/customer/activar-la-doble-autenticacion-por-sms/).
-- [Activar el método de doble autenticación por aplicación móvil](https://docs.ovh.com/es/customer/activar-la-doble-autenticacion-por-aplicacion-movil/).
-- [Activar el método de doble autenticación por llave de seguridad](https://docs.ovh.com/es/customer/activar-la-doble-autenticacion-por-llave-de-seguridad/).
+- [Activar el método de doble autenticación por aplicación móvil](https://docs.ovh.com/us/es/customer/activar-la-doble-autenticacion-por-aplicacion-movil/).
+- [Activar el método de doble autenticación por llave de seguridad](https://docs.ovh.com/us/es/customer/activar-la-doble-autenticacion-por-llave-de-seguridad/).
 
 Tras añadir el primer método, puede agregar uno o dos más a fin de disponer de múltiples medios para iniciar sesión en su cuenta.
 
@@ -62,11 +61,11 @@ Podrá eliminarlos o regenerarlos en su área de cliente:
 
 Tras activar la doble autenticación, la pantalla de identificación le mostrará el método de seguridad seleccionado. Si desea utilizar otro, haga clic en el botón `«Intentarlo con otro método»`{.action}.
 
-![2FA](images/2fasmsloginedit.png){.thumbnail}
+![2FA](images/mobile_auth.png){.thumbnail}
 
 Entonces aparecerán todos los métodos que activó:
 
-![2FA](images/2faloginchoice.png){.thumbnail}
+![2FA](images/backupcode_auth.png){.thumbnail}
 
 ### ¿Qué se debe hacer en caso de pérdida o avería de uno de los dispositivos?
 
@@ -90,7 +89,7 @@ También puede utilizar uno de los códigos de seguridad que tiene a su disposic
 > - Códigos de seguridad válidos.
 > 
 
-Si desea eliminar un dispositivo, inicie sesión en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en su nombre en la esquina superior derecha (primer paso en la siguiente imagen) y, seguidamente, en sus iniciales (segundo paso). 
+Si desea eliminar un dispositivo, inicie sesión en su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Haga clic en su nombre en la esquina superior derecha (primer paso en la siguiente imagen) y, seguidamente, en sus iniciales (segundo paso). 
 
 ![2FA](images/hub2FAb.png){.thumbnail}
 

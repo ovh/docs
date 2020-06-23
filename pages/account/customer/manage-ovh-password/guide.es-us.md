@@ -5,6 +5,8 @@ excerpt: 'Cómo establecer, cambiar y gestionar la contraseña de acceso al áre
 section: 'Primeros pasos'
 ---
 
+**Última actualización: 23/06/2020**
+
 ## Objetivo
 
 La contraseña de acceso al área de cliente de OVHcloud es la llave de acceso a todos sus servicios e información. Debe ser suficientemente compleja y renovarse regularmente para garantizar su seguridad.
@@ -40,7 +42,7 @@ La seguridad de sus soluciones depende de la eficacia de la contraseña de acces
 
 Existen varios métodos eficaces para crear contraseñas. Entre ellos, le recomendamos el **método de las primeras letras** y el **método fonético** que se explican en [esta guía del sitio web de la Oficina de Seguridad del Intaernauta (OSI)](https://www.osi.es/es/contrasenas#robustas){.external}.
 
-Para ahondar más en el tema, consulte la sección [«Más información»](https://docs.ovh.com/es/customer/gestionar-su-contrase%C3%B1a/#mas-informacion_2){.external} al final de esta guía.
+Para ahondar más en el tema, consulte la sección [«Más información»](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/#mas-informacion_2){.external} al final de esta guía.
 
 ### Utilizar un gestor de contraseñas 
 
@@ -70,7 +72,7 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 
 #### Desde el área de cliente de OVHcloud
 
-- Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y haga clic en sus iniciales.
+- Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y haga clic en sus iniciales.
 
 ![manage-ovh-password](images/newhub2.png){.thumbnail}
 

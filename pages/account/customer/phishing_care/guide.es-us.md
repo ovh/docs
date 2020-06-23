@@ -5,7 +5,7 @@ excerpt: 'Cómo reconocer un email de phishing y qué hacer si ha hecho clic en 
 section: Seguridad
 ---
 
-**Última actualización: 26/06/2018**
+**Última actualización: 26/06/2020**
 
 ## Objetivo
 
@@ -21,24 +21,24 @@ El **phishing** consiste en enviar mensajes de correo electrónico pidiendo a lo
 
 ## Procedimiento
 
-### He recibido un email de phishing en nombre de OVH
+### He recibido un email de phishing en nombre de OVHcloud
 
 #### Identificar un mensaje de phishing
 
-¿Ha recibido un email en nombre de OVH y quiere asegurarse de que es legítimo? A continuación le ofrecemos algunas claves que le ayudarán a distinguir visualmente un mensaje de correo de OVH de un intento de phishing.
+¿Ha recibido un email en nombre de OVHcloud y quiere asegurarse de que es legítimo? A continuación le ofrecemos algunas claves que le ayudarán a distinguir visualmente un mensaje de correo de OVHcloud de un intento de phishing.
 
-![Diferencia entre un email de OVH y un email de phishing](images/phishing_email.png){.thumbnail}
+![Diferencia entre un email de OVHcloud y un email de phishing](images/phishing_email.png){.thumbnail}
 
 > [!alert]
 > 
 > Compruebe siempre que se cumplan las tres condiciones siguientes.
 > 
 
-|Elemento|Email de OVH|Email de phishing|
+|Elemento|Email de OVHcloud|Email de phishing|
 |---|---|---|
-|Remitente|Compruebe que la dirección utilizada para enviar el mensaje de correo termina en **@ovh.com**, **@ovh.es**, **@soyoustart.com** o **@kimsufi.com**.|El remitente del correo será una dirección que no proviene de OVH.|
-|Asunto|Si su ID de cliente (que empieza con dos letras que corresponden a las iniciales del primer apellido y del nombre, según figura en su cuenta de OVH) o la dirección de correo electrónico asociada a su cuenta aparecen en el asunto del mensaje, verifique que son correctos.|Por lo general, el mensaje estará marcado como **spam**, indicándolo entre corchetes en el asunto, y no aparecerá su ID de cliente (o este será incorrecto).|
-|Enlace|Si sitúa el ratón sobre el enlace, podrá ver el destino en la parte inferior de su navegador sin tener que hacer clic en él. En la imagen, el enlace dirige efectivamente a <https://www.ovh.com/>.|En el email de phishing, al pasar el ratón sobre el enlace se observa que este no tiene ninguna relación con OVH. **No haga clic en él**.|
+|Remitente|Compruebe que la dirección utilizada para enviar el mensaje de correo termina en **@ovh.com**, **@ovh.ca**, **@soyoustart.com** o **@kimsufi.com**.|El remitente del correo será una dirección que no proviene de OVH.|
+|Asunto|Si su ID de cliente (que empieza con dos letras que corresponden a las iniciales del primer apellido y del nombre, según figura en su cuenta de OVHcloud) o la dirección de correo electrónico asociada a su cuenta aparecen en el asunto del mensaje, verifique que son correctos.|Por lo general, el mensaje estará marcado como **spam**, indicándolo entre corchetes en el asunto, y no aparecerá su ID de cliente (o este será incorrecto).|
+|Enlace|Si sitúa el ratón sobre el enlace, podrá ver el destino en la parte inferior de su navegador sin tener que hacer clic en él. En la imagen, el enlace dirige efectivamente a <https://www.ovh.com/>.|En el email de phishing, al pasar el ratón sobre el enlace se observa que este no tiene ninguna relación con OVHcloud. **No haga clic en él**.|
 
 
 #### Informar de un email de phishing
@@ -53,9 +53,9 @@ Si, después de las comprobaciones anteriores, está seguro de haber recibido un
 Contacte inmediatamente con su banco para bloquear la tarjeta e indique la fecha y, si es posible, la hora en la que introdujo su número de tarjeta. **Su banco es el único que puede anular cualquier transacción fraudulenta que se haya realizado sin su conocimiento.**
 
 
-#### Si ha introducido su contraseña de OVH en una web fraudulenta
+#### Si ha introducido su contraseña de OVHcloud en una web fraudulenta
 
-Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&){.external} y cambie la contraseña inmediatamente. Asimismo, le aconsejamos encarecidamente que active la doble autenticación para proteger su cuenta de forma permanente.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&){.external} y cambie la contraseña inmediatamente. Asimismo, le aconsejamos encarecidamente que active la doble autenticación para proteger su cuenta de forma permanente.
 
 > [!primary]
 >
@@ -74,4 +74,4 @@ Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotoman
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

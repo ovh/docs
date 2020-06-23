@@ -5,7 +5,7 @@ excerpt: 'Cómo añadir usuarios desde su cuenta de OVHcloud'
 section: 'Primeros pasos'
 ---
 
-**Última actualización: 14/5/2020**
+**Última actualización: 23/06/2020**
 
 ## Objetivo
 
@@ -50,7 +50,7 @@ El propietario de la cuenta xx11111-ovh tiene siempre el privilegio **«Administ
 
 ### 2. Añadir un usuario
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `su nombre`{.action} (1) en la parte superior derecha y en sus iniciales (2).
+Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en `su nombre`{.action} (1) en la parte superior derecha y en sus iniciales (2).
 A continuación, haga clic en la pestaña `«Gestión de usuarios»`{.action} (3) y, seguidamente, en `«Añadir un usuario»`{.action} (4).
 
 ![users-management](images/hubusers.png){.thumbnail}
@@ -73,7 +73,7 @@ Por ejemplo: **1234-567-89/john.smith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 
-A partir de ese momento, el usuario creado podrá iniciar sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} con este identificador. 
+A partir de ese momento, el usuario creado podrá iniciar sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} con este identificador. 
 
 También podrá cambiar su contraseña y proteger el acceso a su cuenta activando la doble autenticación (esta última medida solo se aplicará a su acceso como usuario). A tal fin, puede consultar [la guía sobre la instrumentación de la doble autenticación](../proteger-su-cuenta-con-una-2FA/){.external}.
 
