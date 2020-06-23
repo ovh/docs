@@ -15,8 +15,8 @@ You can host several websites on a single Web Hosting plan, and you can do this 
 
 ## Requirements
 
-- a compatible [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}
-- one or more [domain names](https://www.ovh.com/ca/en/domains/){.external}
+- a compatible [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external}
+- one or more [domain names](https://www.ovh.com/asia/domains/){.external}
 - the rights to modify configuration for the domains (via their DNS zones)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
@@ -56,18 +56,18 @@ If the domain name does not appear in the list, it is considered external (to yo
 > This step only applies if you have selected “Add an OVHcloud-registered domain”. For non-OVHcloud registered domain names, go to [Step 3.2: Add a non-OVHcloud registered domain name](../multisites-configuring-multiple-websites/#step-32-add-an-non-ovh-registered-domain){.external}.
 >
 
-You will now need to customise the way you add your domain. Depending on the [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external} you have purchased, some options may not be available.
+You will now need to customise the way you add your domain. Depending on the [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external} you have purchased, some options may not be available.
 
 |Information|Description|
 |---|---|
 |Domain|The domain that you have selected will be automatically entered by default. You can also add subdomains (e.g. blog.mypersonaldomain.ovh), and create the corresponding www subdomain at the same time (e.g. www.mypersonaldomain.ovh). This domain will be the website that you want to put online.|
 |Root directory|Defines the directory where the domain will be hosted on your storage space. This space is where the website files will be put online. For example, for blog.mypersonaldomain.ovh, the root directory will be ‘blog’. If the directory does not exist, it will be created automatically.|
-|Enable IPv6|Enables IPv6 protocol on the selected domain. Find out more about this on [our IP page](https://www.ovh.com/ca/en/web-hosting/ip.xml){.external}.|
+|Enable IPv6|Enables IPv6 protocol on the selected domain. Find out more about this on [our IP page](https://www.ovh.com/asia/web-hosting/ip.xml){.external}.|
 |SSL|Provides you with a secure connection (HTTPS://) on the selected domain. Find out more about this on [our SSL page](https://www.ovh.co.uk/ssl/){.external}. By enabling SSL and the CDN (Content Delivery Network), you can also benefit from **HTTP2** protocol (HTTP2 enabled by default on Gravelines).|
-|Enable CDN|Enables the CDN (which replicates and caches your website’s static elements, e.g. images) on the selected domain. To find out more about this, go to [our CDN page](https://www.ovh.com/ca/en/web-hosting/cdn.xml){.external}. By enabling SSL and the CDN, you can also benefit from **HTTP2** protocol (HTTP2 enabled by default on Gravelines).|
-|Geolocated IP|Provides you with a geolocated IP address (from a country list) for the selected domain. To find out more about this, go to [our IP page](https://www.ovh.com/ca/en/web-hosting/ip.xml){.external}.|
-|Enable firewall|Enables a firewall (request analysis) for the selected domain. To find out more about this, go to [our ModSecurity page](https://www.ovh.com/ca/en/web-hosting/mod_security.xml){.external}.|
-|Separate logs|Activates a new space for logs on the selected domain. You will need to choose a domain name from the list. The selected domain will be used as an access name for this new space.  To find out more about this, go to [our Web Statistics page](https://www.ovh.com/ca/en/web-hosting/website_statistics.xml){.external}.|
+|Enable CDN|Enables the CDN (which replicates and caches your website’s static elements, e.g. images) on the selected domain. To find out more about this, go to [our CDN page](https://www.ovh.com/asia/web-hosting/cdn.xml){.external}. By enabling SSL and the CDN, you can also benefit from **HTTP2** protocol (HTTP2 enabled by default on Gravelines).|
+|Geolocated IP|Provides you with a geolocated IP address (from a country list) for the selected domain. To find out more about this, go to [our IP page](https://www.ovh.com/asia/web-hosting/ip.xml){.external}.|
+|Enable firewall|Enables a firewall (request analysis) for the selected domain. To find out more about this, go to [our ModSecurity page](https://www.ovh.com/asia/web-hosting/mod_security.xml){.external}.|
+|Separate logs|Activates a new space for logs on the selected domain. You will need to choose a domain name from the list. The selected domain will be used as an access name for this new space.  To find out more about this, go to [our Web Statistics page](https://www.ovh.com/asia/web-hosting/website_statistics.xml){.external}.|
 
 Once you have entered this information, click `Next`{.action}. Then check the summary that pops up.
 
@@ -86,16 +86,16 @@ Now that you have added the domain name, go to [Step 4: Put your website online]
 
 > [!primary]
 >
-> You will only need to follow this step if you have selected “Add a non-OVHcloud registered domain name” (domains registered with a domain registrar other than OVHcloud, which you cannot manage from the OVHcloud Control Panel). For an OVHcloud-registered domain, go back to [Step 3.1: Add an OVHcloud-registered domain](https://docs.ovh.com/ca/en/hosting/multisites-configuring-multiple-websites/#step-31-add-an-ovh-registered-domain){.external}.
+> You will only need to follow this step if you have selected “Add a non-OVHcloud registered domain name” (domains registered with a domain registrar other than OVHcloud, which you cannot manage from the OVHcloud Control Panel). For an OVHcloud-registered domain, go back to [Step 3.1: Add an OVHcloud-registered domain](../multisites-configuring-multiple-websites/#step-31-add-an-ovh-registered-domain){.external}.
 >
 
-You will now need to customise the way you add your domain. Please note that some of the options included in your [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external} cannot be enabled during this process. You will need to finalise this operation in order to activate the options, by changing the Multisite configuration when it is added.
+You will now need to customise the way you add your domain. Please note that some of the options included in your [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external} cannot be enabled during this process. You will need to finalise this operation in order to activate the options, by changing the Multisite configuration when it is added.
 
 |Information|Description|
 |---|---|
 |Domain|Enter the domain name you want to use. Add subdomains (e.g. blog.mypersonaldomain.ovh) if required, and create the corresponding www subdomain at the same time (e.g. www.mypersonaldomain.ovh). This domain will correspond to the website that you want to put online. As a reminder, you must have the appropriate rights to modify the domain’s configuration (its DNS zone) to finalise this addition.|
 |Root directory|Define the directory which the domain will be hosted in on your storage space. This space is where the website files will be put online. For example, for blog.mypersonaldomain.ovh, the root directory will be ‘blog’. If the directory does not exist, it will be created automatically.|
-|Enable IPv6|Enables IPv6 protocol on the selected domain. To find out more about this, go to [our IP page](https://www.ovh.com/ca/en/web-hosting/ip.xml){.external}.|
+|Enable IPv6|Enables IPv6 protocol on the selected domain. To find out more about this, go to [our IP page](https://www.ovh.com/asia/web-hosting/ip.xml){.external}.|
 
 Once you have entered this information, click `Next`{.action}. Then check the summary that pops up.
 
@@ -110,7 +110,7 @@ Check through the information displayed, then click `Confirm`{.action}. Once you
 > You will need to carry out these modifications for your domain to be added successfully. If you do not do this, your domain addition will be cancelled.
 >
 
-To modify the domain name’s configuration (its DNS zone), you will need to use the interface provided by the service provider managing it. If you are doing this for a domain name registered with OVHcloud, please use our guide on [Editing an OVHcloud DNS zone](https://docs.ovh.com/ca/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}. Once you have configured your domain, you will need to allow between 4 and 24 hours for the changes to propagate fully.
+To modify the domain name’s configuration (its DNS zone), you will need to use the interface provided by the service provider managing it. If you are doing this for a domain name registered with OVHcloud, please use our guide on [Editing an OVHcloud DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/){.external}. Once you have configured your domain, you will need to allow between 4 and 24 hours for the changes to propagate fully.
 
 If you would like to find the elements that need to be changed in your domain name’s DNS configuration:
 
@@ -123,24 +123,24 @@ If you would like to find the elements that need to be changed in your domain na
 
 Once you have added your domain name, you just need to put your website online. As a reminder, you will need to make this change in the root directory, which you defined in the previous step.
 
-To help you with this, you can use OVHcloud 1-click modules, which provide you with a ready-to-use website structure. The website will then be set up automatically in the root directory you configured earlier. You can find out more about this option by referring to our guide on [Setting up your website with 1-click modules](https://docs.ovh.com/ca/en/hosting/web_hosting_web_hosting_modules/){.external}. 
+To help you with this, you can use OVHcloud 1-click modules, which provide you with a ready-to-use website structure. The website will then be set up automatically in the root directory you configured earlier. You can find out more about this option by referring to our guide on [Setting up your website with 1-click modules](../web_hosting_web_hosting_modules/){.external}. 
 
-However, if you would like to set up your website manually, you can put it online by moving all of your website files into the right root directory on your storage space. You can find out more about this option by referring to our guide on [Publishing a website on your Web Hosting space](https://docs.ovh.com/ca/en/hosting/web_hosting_how_to_get_my_website_online/){.external}.
+However, if you would like to set up your website manually, you can put it online by moving all of your website files into the right root directory on your storage space. You can find out more about this option by referring to our guide on [Publishing a website on your Web Hosting space](../web_hosting_how_to_get_my_website_online/){.external}.
 
 > [!primary]
 >
 > If you would like to add several websites, you will need to repeat this step as required.
 >
-> We recommend taking care with the number of websites you host on your Web Hosting plan. The more websites you host, the higher the demand will be on your allocated resources. [Our Web Hosting page](https://www.ovh.com/ca/en/web-hosting/){.external} shows the number of websites you can host on your plan.
+> We recommend taking care with the number of websites you host on your Web Hosting plan. The more websites you host, the higher the demand will be on your allocated resources. [Our Web Hosting page](https://www.ovh.com/asia/web-hosting/){.external} shows the number of websites you can host on your plan.
 >
 
 
 ## Go further
 
-[Setting up your website with 1-click modules](https://docs.ovh.com/ca/en/hosting/web_hosting_web_hosting_modules/){.external}.
+[Setting up your website with 1-click modules](../web_hosting_web_hosting_modules/){.external}.
 
-[Editing an OVHcloud DNS zone](https://docs.ovh.com/ca/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
+[Editing an OVHcloud DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
-[Publishing a website on your Web Hosting space](https://docs.ovh.com/ca/en/hosting/web_hosting_how_to_get_my_website_online/){.external}.
+[Publishing a website on your Web Hosting space](../web_hosting_how_to_get_my_website_online/){.external}.
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

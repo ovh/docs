@@ -16,7 +16,7 @@ Your Web Hosting plan allows you to upload one or more websites. You may have re
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/)
 - the permissions necessary to connect to your hosting plan’s storage space
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
