@@ -80,7 +80,7 @@ A message should appear notifying you that the server supports encrypted connect
 
 ![](images/img_2349.jpg){.thumbnail}
 
-- If you do not know if SSH is included in your web hosting plan, have a look at the [details of our web hosting plans](https://www.ovh.com/ca/en/web-hosting/).
+- If you do not know if SSH is included in your web hosting plan, have a look at the [details of our web hosting plans](https://www.ovh.com/asia/web-hosting/).
 
 - If you are still unsure, click Continue. The server will not connect if SSH is not included in your plan.
 
@@ -96,7 +96,7 @@ A message should appear notifying you that the server supports encrypted connect
 ## SFTP connection
 If your web hosting plan is compatible with SSH access, you already have the option to log in via SFTP. You must have SSH access for the SFTP connection to work.
 
-- If you do not know if SSH is included in your web hosting plan, have a look at the [details of our web hosting plans](https://www.ovh.com/ca/en/web-hosting/).
+- If you do not know if SSH is included in your web hosting plan, have a look at the [details of our web hosting plans](https://www.ovh.com/asia/web-hosting/).
 
 - If you are still unsure, connect via FTP rather than SFTP. The server will not connect if SSH is not included in your plan.
 
