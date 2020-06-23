@@ -74,7 +74,7 @@ Once everything is entered correctly, clickQuickconnect to connect to the server
 
 ## SFTP connection
 The SFTP (for SSH File Transfer Protocol) is an FTP connection on port 22 and therefore provides a secure connection.
-Be careful, this type of connection is only valid from the [Professional](https://www.ovh.com/ca/en/web-hosting/) hosting package and upwards.
+Be careful, this type of connection is only valid from the [Professional](https://www.ovh.com/sg/web-hosting/) hosting package and upwards.
 It allows you to change file permissions that you cannot run while logged in FTP on port 21 for example.
 
 In the green box at the top this time to connect to the remote server, you will be asked:
