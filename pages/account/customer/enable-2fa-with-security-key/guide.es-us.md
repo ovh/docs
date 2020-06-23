@@ -6,7 +6,7 @@ section: Seguridad
 hidden: true
 ---
 
-**Última actualización: 16/04/2020**
+**Última actualización: 23/06/2020**
 
 ## Objetivo
 
@@ -16,8 +16,8 @@ La doble autenticación por llave de seguridad U2F (Universal Second Factor) es 
 
 ## Requisitos
 
-- Haber consultado los [diferentes métodos de doble autenticación que ofrece OVHcloud](https://docs.ovh.com/es/customer/proteger-su-cuenta-con-una-2FA/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Haber consultado los [diferentes métodos de doble autenticación que ofrece OVHcloud](https://docs.ovh.com/us/es/customer/proteger-su-cuenta-con-una-2FA/).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - Disponer de una llave de seguridad U2F.
 - Disponer de un puerto USB libre en su ordenador.
 
@@ -25,7 +25,7 @@ La doble autenticación por llave de seguridad U2F (Universal Second Factor) es 
 
 ### Etapa 1: activar la doble autenticación
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha (1) y, a continuación, haga clic en sus iniciales (2). Luego, haga clic en `«Seguridad»`{.action}(3) y, por último, en`«Activar la doble autenticación»`{.action}(4).
+Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha (1) y, a continuación, haga clic en sus iniciales (2). Luego, haga clic en `«Seguridad»`{.action}(3) y, por último, en`«Activar la doble autenticación»`{.action}(4).
 
 ![2FA securitykey](images/hub2FA.png){.thumbnail}
 
