@@ -8,7 +8,7 @@ excerpt: EV SSL certificates establish the legitimacy of your company and reassu
 ## Overview
 EV SSL certificates offered by OVHcloud are published by the certificate authority Comodo. Comodo establishes the legitimacy of your company.
 
-See all commercial details on our [website](https://www.ovh.com/ca/en/ssl/)
+See all commercial details on our [website](https://www.ovh.com/asia/ssl/)
 
 
 ### Why choose an EV SSL certificate?
