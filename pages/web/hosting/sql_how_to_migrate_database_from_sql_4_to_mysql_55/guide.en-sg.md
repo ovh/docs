@@ -10,7 +10,7 @@ section: Databases
 
 In this guide, you will find a range of information and support on migrating your databases from MySQL 4.0 to MySQL 5.6.
 
-You can also refer to the [web hosting FAQ](https://www.ovh.com/ca/en/web-hosting/faq/){.external} available on our website.
+You can also refer to the [web hosting FAQ](https://www.ovh.com/sg/web-hosting/faq/){.external} available on our website.
 
 
 > [!warning]
