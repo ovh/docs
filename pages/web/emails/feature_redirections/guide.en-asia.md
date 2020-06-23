@@ -84,12 +84,12 @@ Then click `Confirm`{.action} to add this redirection.
 
 For the new version of MX Plan, redirections are not managed via the OVHcloud Control Panel. They are managed directly via the webmail platform for the email address concerned.
 
-Go to the webmail platform [here](https://www.ovh.com/ca/en/mail){.external}. Enter the **email address** and **password** to log in.
+Go to the webmail platform [here](https://www.ovh.com/asia/mail){.external}. Enter the **email address** and **password** to log in.
 ![emails](images/webmail.png){.thumbnail}
 
 #### Step 1: Access the section for managing redirections.
 
-Once you have logged in via the [webmail platform](https://www.ovh.com/ca/en/mail){.external}, click on the cogwheel icon in the top right-hand corner, then `Options`{.action}.
+Once you have logged in via the [webmail platform](https://www.ovh.com/asia/mail){.external}, click on the cogwheel icon in the top right-hand corner, then `Options`{.action}.
 
 ![emails](images/mxplan-new-1.png){.thumbnail}
 From the **Options** window in the left-hand corner, go to the **Automatic processing** category in the **Mail** section, then click `Mailbox and storage rules`{.action}. 
