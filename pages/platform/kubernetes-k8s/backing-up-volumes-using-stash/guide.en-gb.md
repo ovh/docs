@@ -3,6 +3,7 @@ title: 'Backing-up Persistent Volumes using Stash'
 excerpt: 'Backing-up Persistent Volumes using Stash'
 slug: backing-up-volumes-using-stash
 section: Tutorials
+hidden: true
 ---
 
 <style>
