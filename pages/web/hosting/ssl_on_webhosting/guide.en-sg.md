@@ -16,8 +16,8 @@ You can manage an SSL certificate on your Web Hosting plan. You can either order
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
-- at least one [domain name](https://www.ovh.com/ca/en/domains/)
+- an [OVHcloud Web Hosting plan](https://www.ovh.com/sg/web-hosting/)
+- at least one [domain name](https://www.ovh.com/sg/domains/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
@@ -34,10 +34,10 @@ There are several ways of managing an SSL certificate on your OVHcloud Web Hosti
 
 ### Activate an SSL certificate on your Web Hosting plan.
 
-With an OVHcloud Web Hosting plan, you can choose from a range of [SSL certificate solutions](https://www.ovh.com/ca/en/ssl/){.external}:
+With an OVHcloud Web Hosting plan, you can choose from a range of [SSL certificate solutions](https://www.ovh.com/sg/ssl/){.external}:
 
-- a free Let's Encrypt SSL certificate ([included with compatible Web Hosting plans](https://www.ovh.com/ca/en/ssl/){.external})
-- a paid SSL certificate ([available as an option with compatible Web Hosting plans](https://www.ovh.com/ca/en/ssl/){.external})
+- a free Let's Encrypt SSL certificate ([included with compatible Web Hosting plans](https://www.ovh.com/sg/ssl/){.external})
+- a paid SSL certificate ([available as an option with compatible Web Hosting plans](https://www.ovh.com/sg/ssl/){.external})
 - importing an SSL certificate ordered from another provider
 
 To start activating your certificate, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Click on the `General information`{.action} tab. Beneath ‘SSL certificate’, the word ‘No’ should be visible, showing that no SSL certificates have been set up on your Web Hosting plan. Click on the three dots next to ‘SSL certificate’, then `Order an SSL certificate`{.action}.
@@ -46,7 +46,7 @@ If the word ‘Yes’ is visible, this means that an SSL certificate has already
 
 ![managessl](images/manage-ssl-step1.png){.thumbnail}
 
-In the window that appears, select the SSL certificate you would like to order. Depending on the [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external} you have ordered and its configuration, it may be the case that none of the solutions listed below are available. Once you have selected an option, click on the `Next`{.action} button.
+In the window that appears, select the SSL certificate you would like to order. Depending on the [Web Hosting plan](https://www.ovh.com/sg/web-hosting/){.external} you have ordered and its configuration, it may be the case that none of the solutions listed below are available. Once you have selected an option, click on the `Next`{.action} button.
 
 ![managessl](images/manage-ssl-step2.png){.thumbnail}
 
