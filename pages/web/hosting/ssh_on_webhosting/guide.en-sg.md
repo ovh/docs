@@ -18,7 +18,7 @@ For more information on the SSH protocol, [click here](https://en.wikipedia.org/
 
 ## Prerequisites
 
-- The SSH option, available on: Hosting plans starting with [Professional hosting](https://www.ovh.com/ca/en/web-hosting/).
+- The SSH option, available on: Hosting plans starting with [Professional hosting](https://www.ovh.com/sg/web-hosting/).
 - An SSH client.
 - Port 22 must be open on your firewall and your router.
 
