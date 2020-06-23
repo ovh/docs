@@ -16,7 +16,7 @@ With an OVHcloud Web Hosting plan, you can get a free SSL certificate. An SSL ce
 
 ## Requirements
 
-- an [SSL certificate](https://www.ovh.com/ca/en/ssl/) set up on your [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
+- an [SSL certificate](https://www.ovh.com/asia/ssl/) set up on your [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/)
 - at least one website set up and accessible via your OVHcloud Web Hosting plan
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
