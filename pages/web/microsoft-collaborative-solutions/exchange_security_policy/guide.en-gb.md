@@ -26,7 +26,7 @@ The security policy management of your email service has four aspects:
 - enhancing email account security when users try to log in
 - adding complexity to the security of your email account passwords
 - strengthening the verification of incoming messages on our servers and to your email addresses (for [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/) accounts only)
-- configuring how so-called “unwanted” messages will be displayed in your inbox (for [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/){.external} accounts only)
+- configuring how so-called “unwanted” messages will be displayed in your inbox (for [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/) accounts only)
 
 To access the security policy of your email service, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and make sure you are in the `Web`{.action} section. 
 
