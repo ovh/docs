@@ -15,14 +15,14 @@ Automated emails are messages that are sent via scripts. For example, they are u
 
 ## Requirements
 
-- You must have an[OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/).
+- You must have an[OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/).
 - You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
 > [!primary]
 >
 > This guide is only relevant for emails sent using scripts located on your OVHcloud Web Hosting plan.
 >
-> Are you looking to manage email addresses included in your MX Plan solution, or in your [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}? Go to the `Emails`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+> Are you looking to manage email addresses included in your MX Plan solution, or in your [OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/){.external}? Go to the `Emails`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 >
 
 ## Instructions
