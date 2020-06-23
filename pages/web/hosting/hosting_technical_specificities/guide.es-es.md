@@ -69,7 +69,7 @@ Para saber más sobre la gestión de las bases de datos, consulte la guía [Crea
 
 - Le recomendamos que consulte nuestros [planes de hosting](https://www.ovh.es/hosting/) para asegurarse de que el alojamiento web que desea contratar sea compatible con sus necesidades.
 
-- Puede verificar los detalles de la configuración de su alojamiento web. Para ello, consulte la sección https://www.ovh.es/hosting/[« Información técnica de su alojamiento web »https://www.ovh.es/hosting/](./#informacion-tecnica-de-su-alojamiento-web) al final de esta guía. 
+- Puede verificar los detalles de la configuración de su alojamiento web. Para ello, consulte la sección [« Información técnica de su alojamiento web »](./#informacion-tecnica-de-su-alojamiento-web) al final de esta guía. 
 
 - Podrá modificar la versión PHP de su alojamiento web, o bien en [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) ("**Configuración**"), o bien modificando el archivo .ovhconfig. También se pueden llevar a cabo configuraciones mixtas en estas últimas. Tiene a su disposición instrucciones detalladas en nuestras guías:
 
