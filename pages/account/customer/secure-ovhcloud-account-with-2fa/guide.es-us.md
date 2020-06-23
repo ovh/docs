@@ -61,11 +61,11 @@ Podrá eliminarlos o regenerarlos en su área de cliente:
 
 Tras activar la doble autenticación, la pantalla de identificación le mostrará el método de seguridad seleccionado. Si desea utilizar otro, haga clic en el botón `«Intentarlo con otro método»`{.action}.
 
-![2FA](images/2fasmsloginedit.png){.thumbnail}
+![2FA](images/mobile_auth.png){.thumbnail}
 
 Entonces aparecerán todos los métodos que activó:
 
-![2FA](images/2faloginchoice.png){.thumbnail}
+![2FA](images/backupcode_auth.png){.thumbnail}
 
 ### ¿Qué se debe hacer en caso de pérdida o avería de uno de los dispositivos?
 
