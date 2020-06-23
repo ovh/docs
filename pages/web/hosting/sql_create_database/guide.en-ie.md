@@ -91,7 +91,7 @@ Depending on the software used, this connection may need to be configured manual
 
 OVHcloud provides an online tool for database managment: phpMyAdmin. To find the access link for this application, from the `Databases`{.action} tab click on `...`{.action} to the right of the database concerned, then select `Go to phpMyAdmin`{.action} in the drop-down menu.
 
-#The login details will be pre-filled in the new window; you will only have to enter the database password. This is also a good way to verify your current password, for example if you are troubleshooting a CMS producing an "permission denied" error message.
+The login details will be pre-filled in the new window; you will only have to enter the database password. This is also a good way to verify your current password, for example if you are troubleshooting a CMS producing an "permission denied" error message.
 
 ![databasecreation](images/database-creation-step3.png){.thumbnail}
 
