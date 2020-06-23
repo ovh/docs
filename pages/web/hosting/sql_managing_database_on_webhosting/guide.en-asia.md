@@ -10,7 +10,7 @@ legacy_guide_number: 1943
 
 A database is a collection of data that is structured and organised so that it can easily be stored and accessed. SQL is a standard language which you can use to request that a database includes, edits, restores, or deletes data.
 
-OVHcloud's shared web hosting packages include SQL databases by default. The number and size of the database depends on the package that you have ordered. You can find more [details here](https://www.ovh.com/ca/en/web-hosting/){.external}.
+OVHcloud's shared web hosting packages include SQL databases by default. The number and size of the database depends on the package that you have ordered. You can find more [details here](https://www.ovh.com/asia/web-hosting/){.external}.
 
 You can only access these databases from OVHcloud shared hosting packages. You cannot connect a website or application to one of these databases if it is not hosted by OVHcloud.
 
