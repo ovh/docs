@@ -1,48 +1,48 @@
 ---
 title: 'Utiliser l''accès SSH de son hébergement web'
 slug: mutualise-le-ssh-sur-les-hebergements-mutualises
-excerpt: 'Apprenez à vous connecter et utiliser l''accès SSH de votre hébergement web OVH'
+excerpt: 'Apprenez à vous connecter et utiliser l''accès SSH de votre hébergement web OVHcloud'
 section: 'FTP et SSH'
 ---
 
-**Dernière mise à jour le 04/06/2019**
+**Dernière mise à jour le 05/05/2020**
 
 ## Objectif
 
-Les offres d'hébergement web d'OVH vous donnent accès à un espace de stockage permettant la mise en ligne des fichiers de vos sites internet ou de vos applications. L'accès à cet espace est possible notamment via un utilisateur FTP ou SSH et des mots de passe qui leur sont associés.
+Les offres d'hébergement web d'OVHcloud vous donnent accès à un espace de stockage permettant la mise en ligne des fichiers de vos sites internet ou de vos applications. L'accès à cet espace est possible notamment via un utilisateur FTP ou SSH et des mots de passe qui leur sont associés.
 
-**Découvrez comment vous connecter et utiliser l'accès SSH de votre hébergement web OVH.**
+**Découvrez comment vous connecter et utiliser l'accès SSH de votre hébergement web OVHcloud.**
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVH]({ovh_www}/hebergement-web/){.external} bénéficiant d'un accès SSH.
+- Disposer d'une offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external} bénéficiant d'un accès SSH.
 - Être en possession des informations permettant de vous connecter en SSH à l'espace de stockage.
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
 
 ## En pratique
 
 ### Étape 1 : s'assurer que l'accès SSH est actif
 
-Commencez en vous connectant à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors. 
+Commencez en vous connectant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors. 
 
-Repérez dans le tableau la colonne « SSH » afin de vérifier que l'utilisateur (ou « login ») SSH concerné dispose bien d'un accès SSH actif. La mention « Désactivé » apparaît si ce n'est pas le cas.
+Repérez dans le tableau la colonne « SSH » afin de vérifier que l'utilisateur (ou « login ») SSH concerné dispose bien d'un accès SSH actif. La mention « Désactivé » apparaît si ce n'est pas le cas.
 
 ![usessh](images/use-ssh-step1.png){.thumbnail}
 
-Si l'accès SSH n'est pas actif, cliquez sur le bouton `...`{.action} à droite de l'utilisateur concerné, puis sur `Modifier`{.action}. Dans la fenêtre qui s'affiche, activez alors l'accès SSH puis finalisez la modification. Si vous n'avez pas la possibilité de l'activer, assurez-vous que [votre offre d'hébergement web OVH]({ovh_www}/hebergement-web/){.external} bénéficie bien d'un accès SSH.
+Si l'accès SSH n'est pas actif, cliquez sur le bouton `...`{.action} à droite de l'utilisateur concerné, puis sur `Modifier`{.action}. Dans la fenêtre qui s'affiche, activez alors l'accès SSH puis finalisez la modification. Si vous n'avez pas la possibilité de l'activer, assurez-vous que [votre offre d'hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external} bénéficie bien d'un accès SSH.
 
 ### Étape 2 : récupérer les informations nécessaires pour se connecter
 
-Pour vous connecter en SSH à votre espace de stockage, vous devez être en possession des éléments suivants. Si ce n'est pas le cas, vous pouvez les retrouver depuis l'onglet « FTP - SSH ».
+Pour vous connecter en SSH à votre espace de stockage, vous devez être en possession des éléments suivants. Si ce n'est pas le cas, vous pouvez les retrouver depuis l'onglet « FTP - SSH ».
 
-|Élément|Comment le récupérer ?|
+|Élément|Comment le récupérer ?|
 |---|---|
-|Utilisateur SSH actif|Repérez-le dans la colonne « Login SSH » du tableau. Pour rappel, cet utilisateur doit [disposer d'un accès SSH actif](./#etape-1-sassurer-que-lacces-ssh-est-actif).|
+|Utilisateur SSH actif|Repérez-le dans la colonne « Login SSH » du tableau. Pour rappel, cet utilisateur doit [disposer d'un accès SSH actif](./#etape-1-sassurer-que-lacces-ssh-est-actif).|
 |Mot de passe de l'utilisateur SSH|Si vous avez oublié ce mot de passe, vous avez la possibilité de le modifier en cliquant sur le bouton `...`{.action}, puis sur `Changer le mot de passe`{.action}.|
-|Adresse du serveur SSH|Repérez la mention « Accès SSH au cluster ». Dans l'élément qui apparaît, l'adresse du serveur SSH débute après « ssh:// » et se termine avant les « : ».|
-|Port de connexion au serveur SSH|Repérez la mention « Accès SSH au cluster ». Dans l'élément qui apparaît, le numéro de port est mentionné après les « : ».|
+|Adresse du serveur SSH|Repérez la mention « Accès SSH au cluster ». Dans l'élément qui apparaît, l'adresse du serveur SSH débute après « ssh:// » et se termine avant les « : ».|
+|Port de connexion au serveur SSH|Repérez la mention « Accès SSH au cluster ». Dans l'élément qui apparaît, le numéro de port est mentionné après les « : ».|
 
-On pourrait par exemple retrouver : « ssh://`ssh.cluster023.hosting.ovh.net`:`22`/ ». Donc « ssh.cluster023.hosting.ovh.net » comme adresse de serveur SSH et « 22 » en port de connexion SSH.
+On pourrait par exemple retrouver : « ssh://`ssh.cluster023.hosting.ovh.net`:`22`/ ». Donc « ssh.cluster023.hosting.ovh.net » comme adresse de serveur SSH et « 22 » en port de connexion SSH.
 
 ![usessh](images/use-ssh-step2.png){.thumbnail}
 
@@ -50,32 +50,32 @@ On pourrait par exemple retrouver : « ssh://`ssh.cluster023.hosting.ovh.net`:`
 
 Pour vous connecter en SSH, utilisez un terminal afin d’interagir directement avec votre espace de stockage via des lignes de commande. 
 
-Cet outil est installé par défaut sur macOS ou Linux. Un environnement Windows nécessitera l’installation d’un logiciel comme PuTTY ou l’ajout de la fonctionnalité OpenSSH. Cette démarche étant spécifique au système d’exploitation que vous utilisez, nous ne pouvons pas la détailler dans cette documentation.
+Cet outil est installé par défaut sur macOS, Linux et Windows 10. Un environnement Windows plus ancien nécessitera l’installation d’un logiciel comme PuTTY ou l’ajout de la fonctionnalité OpenSSH. Cette démarche étant spécifique au système d’exploitation que vous utilisez, nous ne pouvons pas la détailler dans cette documentation.
 
-Dès lors, il existe deux possibilités pour vous connecter selon la méthode que vous utilisez :
+Dès lors, il existe deux possibilités pour vous connecter selon la méthode que vous utilisez :
 
 #### 3.1 Depuis un terminal
 
-Une fois le terminal ouvert, utilisez la commande suivante en remplaçant les éléments « sshlogin », « sshserver » et « connectionport » par ceux adaptés à votre situation personnelle. 
+Une fois le terminal ouvert, utilisez la commande suivante en remplaçant les éléments « sshlogin », « sshserver » et « connectionport » par ceux adaptés à votre situation personnelle. 
 
 ```ssh
 ssh sshlogin@sshserver -p connectionport
 ```
 
-Après l'envoi de la commande, vous serez invité à renseigner le mot de passe de l’utilisateur SSH. Une fois connecté, poursuivez vers l'étape suivante « [Interagir en SSH avec son espace de stockage](./#etape-4-interagir-en-ssh-avec-son-espace-de-stockage) ».
+Après l'envoi de la commande, vous serez invité à renseigner le mot de passe de l’utilisateur SSH. Une fois connecté, poursuivez vers l'étape suivante « [Interagir en SSH avec son espace de stockage](./#etape-4-interagir-en-ssh-avec-son-espace-de-stockage) ».
 
 ![usessh](images/use-ssh-step3.png){.thumbnail}
 
 #### 3.2 Depuis un logiciel
 
-Une fois le logiciel (PuTTY par exemple) ouvert, vous devriez trouver un endroit où renseigner les informations de connexion. Cette manipulation étant inhérente à celui-ci, nous ne pouvons pas la détailler dans cette documentation. Si besoin, voici un rappel des informations que vous devrez y renseigner :
+Une fois le logiciel (PuTTY par exemple) ouvert, vous devriez trouver un endroit où renseigner les informations de connexion. Cette manipulation étant inhérente à celui-ci, nous ne pouvons pas la détailler dans cette documentation. Si besoin, voici un rappel des informations que vous devrez y renseigner :
 
 |Information à renseigner|Détails|
 |---|---|
-|Serveur SSH|Indiquez l'adresse de serveur SSH récupérée [lors de l'étape 2](./#etape-2-recuperer-les-informations-necessaires-pour-se-connecter). Selon le logiciel utilisé, la dénomination peut ressembler à : « Adresse de serveur », « Nom d'hôte », ou encore « Host Name ».|
+|Serveur SSH|Indiquez l'adresse de serveur SSH récupérée [lors de l'étape 2](./#etape-2-recuperer-les-informations-necessaires-pour-se-connecter). Selon le logiciel utilisé, la dénomination peut ressembler à : « Adresse de serveur », « Nom d'hôte », ou encore « Host Name ».|
 |Port de connexion|Renseignez le port de connexion SSH récupéré [lors de l'étape 2](./#etape-2-recuperer-les-informations-necessaires-pour-se-connecter).|
-|Login SSH|Renseignez l'utilisateur SSH. Selon le logiciel utilisé, la dénomination peut ressembler à « Nom d'utilisateur », « Identifiant », « Login » ou encore « Username ».|
-|Mot de passe de l'utilisateur SSH|Indiquez le mot de passe associé au login SSH.<br><br> Selon le logiciel utilisé, sa dénomination peut également ressembler à « Password ».|
+|Login SSH|Renseignez l'utilisateur SSH. Selon le logiciel utilisé, la dénomination peut ressembler à « Nom d'utilisateur », « Identifiant », « Login » ou encore « Username ».|
+|Mot de passe de l'utilisateur SSH|Indiquez le mot de passe associé au login SSH.<br><br> Selon le logiciel utilisé, sa dénomination peut également ressembler à « Password ».|
 
 Une fois connecté, poursuivez vers l'étape suivante.
 
@@ -103,7 +103,7 @@ Via une commande, vous pouvez également lancer un script en utilisant une versi
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Selon la version de PHP que vous souhaitez utiliser, il se peut que l'environnement d'exécution doive être modifié pour une question de compatibilité. Reportez-vous à notre documentation « [Modifier la configuration de son hébergement web](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/) » pour en apprendre plus. Si vous souhaitez utiliser la version par défaut de PHP renseignée dans votre [fichier .ovhconfig](../configurer-fichier-ovhconfig/), reportez-vous aux informations de la page ci-contre : <https://github.com/ovh/webhosting-ssh-bashrc>.
+Selon la version de PHP que vous souhaitez utiliser, il se peut que l'environnement d'exécution doive être modifié pour une question de compatibilité. Reportez-vous à notre documentation « [Modifier la configuration de son hébergement web](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/) » pour en apprendre plus. Si vous souhaitez utiliser la version par défaut de PHP renseignée dans votre [fichier .ovhconfig](../configurer-fichier-ovhconfig/), reportez-vous aux informations de la page ci-contre : <https://github.com/ovh/webhosting-ssh-bashrc>.
 
 ## Aller plus loin
 
