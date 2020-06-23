@@ -10,13 +10,13 @@ order: 2
 
 ## Objective
 
-This guideline will outline the steps to follow in order to export all elements of your website in a standard format, from an [OVHcloud web hosting plan](https://www.ovh.co.uk/web-hosting/).
+This guideline will outline the steps to follow in order to export all elements of your website in a standard format, from an [OVHcloud web hosting plan](https://www.ovh.com.au/web-hosting/).
 
 **Find out how to export an OVHcloud website.**
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
@@ -42,7 +42,7 @@ Once you have everything you need, there are two different ways of retrieving yo
 
 - **Using FTP- or SFTP-compatible software.** You will need to install a compatible program on your computer (e.g. FileZilla). Since OVHcloud did not create the software package you have installed, please contact the software’s publisher if you are experiencing difficulties using it.
 
-- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](https://www.ovh.com/ca/en/web-hosting/) are required to use this type of access. For further information on this, please refer to our guide on [Accessing your web hosting plan via SSH](../web_hosting_ssh_on_web_hosting_packages/). 
+- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](https://www.ovh.com.au/web-hosting/) are required to use this type of access. For further information on this, please refer to our guide on [Accessing your web hosting plan via SSH](../web_hosting_ssh_on_web_hosting_packages/). 
 
 #### 2.1 Upload the files from your storage space.
 
