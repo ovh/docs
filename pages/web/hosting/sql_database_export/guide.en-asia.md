@@ -16,8 +16,8 @@ Databases are used in virtually all modern content management systems (CMS), suc
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}
-- a database created as part of an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}
+- an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external}
+- a database created as part of an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external}
 - Depending on which backup method you use, you must be able to administer the Web Hosting plan from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, or have the information you need in order to connect to the database.
 
 ## Instructions
@@ -30,7 +30,7 @@ Before you begin, you must choose which method you are going to use to retrieve 
 
 - **Use a script to carry out the backup.** This method involves creating a script that is saved on your OVHcloud Web Hosting plan, which will carry out the backup. Writing this script requires a specific level of technical knowledge.
 
-- **Carry out the backup from an SSH command line.** This method involves using the SSH protocol to log in to your storage space, then using commands to interact with it. More advanced knowledge and a specific [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external} are required to use this method.
+- **Carry out the backup from an SSH command line.** This method involves using the SSH protocol to log in to your storage space, then using commands to interact with it. More advanced knowledge and a specific [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external} are required to use this method.
 
 Some of the methods listed above are not included in the OVHcloud interface. You will therefore need to rely on your own knowledge to carry out these methods. We have set out some general information below, but this is not a substitute for the assistance of a webmaster. 
 
