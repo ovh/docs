@@ -16,7 +16,7 @@ You can configure email addresses on email clients, if they are compatible. This
 
 ## Requirements
 
-- You need to have an MX Plan email address, available as part of our [Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/).
+- You need to have an MX Plan email address, available as part of our [Web Hosting plans](https://www.ovh.com/sg/web-hosting/).
 - You must have Microsoft Outlook installed on your Mac.
 - You must have the login details for the email address you want to set up.
 
@@ -76,7 +76,7 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive messages.
 
-OVHcloud also offers a web application that you can use to consult your email from a web browser. You can access this application at <https://www.ovh.com/ca/en/mail>. Just log in using your email login details.
+OVHcloud also offers a web application that you can use to consult your email from a web browser. You can access this application at <https://www.ovh.com/sg/mail>. Just log in using your email login details.
 
 ## Go further
 
