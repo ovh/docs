@@ -17,13 +17,13 @@ Les offres d'hébergement web d'OVHcloud donnent accès à un espace de stockage
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external}.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
 ### Étape 1 : accéder à la gestion des utilisateurs FTP
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `FTP - SSH`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `FTP - SSH`{.action}.
 
 Le tableau affiche les utilisateurs FTP créés sur votre hébergement. Ces utilisateurs vous permettent d'accéder à votre espace de stockage pour y mettre en ligne les fichiers de votre site internet. Un utilisateur est créé automatiquement lors de l'installation de votre hébergement.
 

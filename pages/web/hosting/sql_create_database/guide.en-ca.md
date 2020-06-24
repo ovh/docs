@@ -18,13 +18,13 @@ A *database* (“DB”) is used to store what are known as dynamic elements, suc
 
 - You must have an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/).
 - You must be able to create databases as part of your package.
-- You must have the necessary permissions to manage the Web Hosting plan in question from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+- You must have the necessary permissions to manage the Web Hosting plan in question from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
 
 ## Instructions
 
 ### Step 1: Access the Web Hosting database management section
 
-First of all, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then choose the web hosting plan concerned. Next, go to the `Databases`{.action} tab.
+First of all, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then choose the web hosting plan concerned. Next, go to the `Databases`{.action} tab.
 
 The table that pops up contains all the databases created as part of your Web Hosting plan.
 

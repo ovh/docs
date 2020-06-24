@@ -86,7 +86,7 @@ You can also complete your order with a [Web Hosting plan](https://www.ovh.com/c
 > - **Entering the DNS servers for your domain name.** If you are currently using your domain name to keep a website or email service online, you will need to specify their DNS servers in order to avoid any service interruptions.  
 >
 
-Once you receive the purchase order, pay the amount requested for the transfer process to begin. The process will only start when we receive your payment. Once you have done this, you can then track the transfer progress via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. To track progress, go to the `Domains`{.action} section via the menu bar on the left-hand side, then `Ongoing operations`{.action}.
+Once you receive the purchase order, pay the amount requested for the transfer process to begin. The process will only start when we receive your payment. Once you have done this, you can then track the transfer progress via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. To track progress, go to the `Domains`{.action} section via the menu bar on the left-hand side, then `Ongoing operations`{.action}.
 
 ### Step 4: Complete the first transfer validation step.
 
@@ -110,7 +110,7 @@ There are several possible outcomes to this stage, depending on the actions take
 |Neither of the contacts respond to the validation requests.|The transfer progresses to the second validation stage after a five-day period.|
 |A refusal is received (from either contact).|The transfer process is cancelled as soon as a refusal is received by either one of the contacts.|
 
-If a transfer is cancelled, please ensure that the various parties are in agreement with this, and that their email addresses are up-to-date. The transfer process can be restarted at a later stage from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in the `Domains`{.action} section, then `Ongoing operations`{.action}.
+If a transfer is cancelled, please ensure that the various parties are in agreement with this, and that their email addresses are up-to-date. The transfer process can be restarted at a later stage from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} in the `Domains`{.action} section, then `Ongoing operations`{.action}.
 
 ### Step 5: The second transfer validation step.
 
@@ -122,11 +122,11 @@ Once the second step has been initiated, the current domain name registrar (whic
 |No response received from the current registrar.|The transfer is completed after a five-day period.|
 |A refusal is received from the current registrar.|The transfer process is cancelled as soon as a refusal is received.|
 
-If a refusal response is sent by the current registrar, please contact them to find out why they refused it. The transfer process can be restarted from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in the `Domains`{.action} section, then `Ongoing operations`{.action}.
+If a refusal response is sent by the current registrar, please contact them to find out why they refused it. The transfer process can be restarted from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} in the `Domains`{.action} section, then `Ongoing operations`{.action}.
 
 ### Step 6: Manage your domain with OVHcloud.
 
-Once the transfer procedure is complete, you can manage your domain from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Once the transfer procedure is complete, you can manage your domain from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 To do this, click `Domains`{.action} in the services bar on the left-hand side, then click on the domain name concerned.
 

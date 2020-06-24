@@ -20,7 +20,7 @@ Cliquez [ici](http://www.ovh.com/ca/fr/hebergement-web/faq){.external} pour retr
 ## Consulter les statistiques et les logs
 
 ### Connexion a l'espace client
-Connectez-vous sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} à l'aide de votre couple identifiant (nic-handle) - mot de passe.
+Connectez-vous sur votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} à l'aide de votre couple identifiant (nic-handle) - mot de passe.
 
 Une fois connecté, sélectionner l'hébergement pour lequel vous souhaitez consulter les statistiques dans le menu de gauche.
 

@@ -16,18 +16,18 @@ Automated emails are messages that are sent via scripts. For example, they are u
 ## Requirements
 
 - You must have an[OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/).
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
 
 > [!primary]
 >
 > This guide is only relevant for emails sent using scripts located on your OVHcloud Web Hosting plan.
 >
-> Are you looking to manage email addresses included in your MX Plan solution, or in your [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}? Go to the `Emails`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+> Are you looking to manage email addresses included in your MX Plan solution, or in your [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}? Go to the `Emails`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 >
 
 ## Instructions
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, you can monitor and manage automated emails sent from your OVHcloud Web Hosting plan. To do this, log in to your Control Panel, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned from the list. Next, click `More +`{.action}, then `Email scripts`{.action}.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, you can monitor and manage automated emails sent from your OVHcloud Web Hosting plan. To do this, log in to your Control Panel, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned from the list. Next, click `More +`{.action}, then `Email scripts`{.action}.
 
 On the page that opens at this stage, you can monitor and manage automated emails sent from your OVHcloud Web Hosting plan.
 

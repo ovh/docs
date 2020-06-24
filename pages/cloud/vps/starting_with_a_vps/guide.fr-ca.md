@@ -24,12 +24,12 @@ Un serveur privé virtuel (VPS, pour Virtual Private Server) est un serveur déd
 ## Prérequis
 
 - Avoir réservé votre VPS sur le [site OVHcloud](https://www.ovhcloud.com/fr-ca/vps/){.external}.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
 - Disposer des informations de connexion envoyées par e-mail après l'installation
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `Server`{.action} et sélectionnez votre serveur dans la liste de navigation de gauche sous `VPS`{.action}. 
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `Server`{.action} et sélectionnez votre serveur dans la liste de navigation de gauche sous `VPS`{.action}. 
 
 Ce tableau de bord contient des informations importantes sur votre service et vous permet d'effectuer des opérations essentielles. Il apparaîtra différemment selon la gamme de votre VPS. 
 
