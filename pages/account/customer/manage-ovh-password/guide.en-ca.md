@@ -5,6 +5,8 @@ excerpt: 'Find out how to set, change and manage your password for the OVHcloud 
 section: 'Getting started'
 ---
 
+**Last updated 24th June 2020**
+
 ## Objective
 
 Your OVHcloud Control Panel password is required to access all of your services and information. It needs to meet a set of complexity requirements, and it must also be changed regularly to guarantee security.
@@ -70,7 +72,7 @@ If your password has been compromised, we strongly recommend [changing it as soo
 
 #### Via the OVHcloud Control Panel.
 
-- Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click your name in the top right-hand corner, then click on your initials.
+- Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click your name in the top right-hand corner, then click on your initials.
 
 ![manage-ovh-password](images/newhub2.png){.thumbnail}
 

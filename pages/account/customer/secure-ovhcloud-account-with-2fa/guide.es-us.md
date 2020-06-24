@@ -95,7 +95,7 @@ Si desea eliminar un dispositivo, inicie sesión en su [área de cliente de OVHc
 
 Haga clic en `«Seguridad»`{.action} (primer paso en la siguiente imagen) y, seguidamente, en el icono de 3 puntos `«...»`{.action} (segundo paso) a la derecha del dispositivo que va a eliminar. Por último, haga clic en `«Eliminar»`{.action} (tercer paso).
 
-![2FA](images/hub2FAc.png){.thumbnail}
+![2FA](images/remove_auth.png){.thumbnail}
 
 
 ## Más información
