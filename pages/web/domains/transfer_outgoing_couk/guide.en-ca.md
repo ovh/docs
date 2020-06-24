@@ -32,7 +32,7 @@ To transfer a .co.uk domain name or equivalent to another registrar, make sure t
 
 
 ## Step 1: Verify domain name information
-You can find the information in your [Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+You can find the information in your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
 You must log in as the administrative contact.
 
 

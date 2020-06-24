@@ -25,7 +25,7 @@ Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. 
 
 ## Prérequis
 
-* Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, visible dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Server`{.action}, puis `Serveurs Dédiés`{.action}.
+* Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, visible dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la partie `Server`{.action}, puis `Serveurs Dédiés`{.action}.
 
 
 ## En pratique
@@ -56,7 +56,7 @@ Lorsque votre serveur dédié est configuré pour la première fois, vous recevr
 
 ### Installation ou réinstallation de votre serveur dédié
 
-Accédez à la page de votre serveur dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, puis dans `Informations générales` cliquez sur `...`{.action} puis `Réinstaller`{.action} dans la section `Système (OS)`.
+Accédez à la page de votre serveur dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, puis dans `Informations générales` cliquez sur `...`{.action} puis `Réinstaller`{.action} dans la section `Système (OS)`.
 
 ![Bouton Réinstaller](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -73,7 +73,7 @@ Suivez le reste des instructions à l’écran, puis cliquez sur `Confirmer`{.ac
 
 > [!primary]
 >
-> Certains systèmes d'exploitation ou plateformes, tels que Plesk et Windows, nécessitent l'achat d'une licence avant leur installation. Vous pouvez acheter celle-ci par l'intermédiaire d'OVHcloud dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Dédié`{.action}, puis `Licences`{.action} ou auprès d'un revendeur. Vous devrez ensuite l'intégrer manuellement, via le système d'exploitation lui-même, ou via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+> Certains systèmes d'exploitation ou plateformes, tels que Plesk et Windows, nécessitent l'achat d'une licence avant leur installation. Vous pouvez acheter celle-ci par l'intermédiaire d'OVHcloud dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la partie `Dédié`{.action}, puis `Licences`{.action} ou auprès d'un revendeur. Vous devrez ensuite l'intégrer manuellement, via le système d'exploitation lui-même, ou via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. 
 > 
 
 
@@ -120,7 +120,7 @@ Pour plus d’informations, référez-vous au guide sur [l’utilisation de l’
 
 ### Mode rescue
 
-S'il y a un problème avec votre serveur, la première étape de dépannage est le redémarrage de votre serveur en mode rescue. Pour l'activer connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} et allez sur la page de votre serveur. Ensuite, allez sur `État du serveur`{.action}, puis sur `Informations générales`{.action} et `Boot`{.action}. Cliquez sur le bouton `Modifier`{.action} pour changer le mode démarrage.
+S'il y a un problème avec votre serveur, la première étape de dépannage est le redémarrage de votre serveur en mode rescue. Pour l'activer connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et allez sur la page de votre serveur. Ensuite, allez sur `État du serveur`{.action}, puis sur `Informations générales`{.action} et `Boot`{.action}. Cliquez sur le bouton `Modifier`{.action} pour changer le mode démarrage.
 
 ![Changer la sélection du démarrage](images/rescue-mode-01.png){.thumbnail}
 

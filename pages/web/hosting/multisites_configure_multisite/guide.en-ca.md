@@ -18,13 +18,13 @@ You can host several websites on a single Web Hosting plan, and you can do this 
 - a compatible [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external}
 - one or more [domain names](https://www.ovh.com/ca/en/domains/){.external}
 - the rights to modify configuration for the domains (via their DNS zones)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 ### Step 1: Access the Multisite management section.
 
-First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Go to the `Multisite`{.action} tab.
+First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Go to the `Multisite`{.action} tab.
 
 The table displayed will contain all of the domain names that have been added to your Web Hosting plan. Some of these will have been created automatically, when your Web Hosting plan was set up.
 

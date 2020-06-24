@@ -19,7 +19,7 @@ Les modules en 1 clic permettent l'installation facile et rapide d'un site Inter
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/) compatible.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
 - Ne pas avoir téléchargé de fichiers dans le répertoire où sera installé votre module.
 - Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site internet doit être déclaré en tant que multisite.
 

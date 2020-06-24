@@ -6,14 +6,7 @@ section: Databases
 order: 1
 ---
 
-title: 'Creating and managing a database in your Web Hosting plan'
-slug: creating-database
-excerpt: 'Find out how to use databases included in an OVHcloud Web Hosting plan'
-section: Databases
-order: 1
-
-
-**Last updated 23th June 2020**
+**Last updated 23rd June 2020**
 
 ## Objective
 

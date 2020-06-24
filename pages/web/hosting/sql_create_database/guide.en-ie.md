@@ -6,7 +6,7 @@ section: Databases
 order: 1
 ---
 
-**Last updated 23th June 2020**
+**Last updated 23rd June 2020**
 
 ## Objective
 

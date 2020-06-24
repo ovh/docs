@@ -17,7 +17,7 @@ With Real Time Monitoring (RTM), you can partially monitor your server and its a
 
 - You need to be logged in via SSH (or your graphical user interface) on your Linux server (*root* access).
 - You need to be logged in to the remote desktop on your Windows server (*administrator* access).
-- You need to be logged in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You need to be logged in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
 

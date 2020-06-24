@@ -16,7 +16,7 @@ There are many different types of website published online. With an [OVHcloud We
 ## Requirements
 
 - a compatible [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external} (excluding Cloud Web)
-- the ability to manage the Web Hosting plan from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), or access to the information you need to connect to the storage space 
+- the ability to manage the Web Hosting plan from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), or access to the information you need to connect to the storage space 
 
 ## Instructions
 
@@ -44,7 +44,7 @@ If you need to see which PHP version is currently used by your OVHcloud Web Host
 
 |Method|Description|
 |---|---|
-|Via the OVHcloud Control Panel|Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. In the `General information`{.action} tab, note down the version listed below **Global PHP version**. If a blue circle appears instead, please wait a few moments for the version to load.|
+|Via the OVHcloud Control Panel|Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. In the `General information`{.action} tab, note down the version listed below **Global PHP version**. If a blue circle appears instead, please wait a few moments for the version to load.|
 |Via a script|Create a **.php** script, containing only the code `<?php phpinfo(); ?>`. You need to put the script online on your storage space, then run it by accessing its full URL. |
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}
