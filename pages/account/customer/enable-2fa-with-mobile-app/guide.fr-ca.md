@@ -42,7 +42,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 Choisissez la méthode par application mobile et validez.
 
-![2FA mobileapp](images/2famobileapp1edit.png){.thumbnail}
+![2FA mobileapp](images/2FAmobileappCAedit.png){.thumbnail}
 
 ### Étape 3 : valider la double authentification
 
@@ -70,11 +70,11 @@ Vous pourrez les supprimer ou les regénérer dans votre espace client :
 
 Une fois l'authentification à double facteur activée, l'écran d'identification vous présentera l'une de vos méthodes de sécurité. Si vous souhaitez en utiliser une autre, cliquez sur le bouton `Essayer une autre méthode`{.action}.
 
-![2FA mobileapp](images/2famobileapploginedit.png){.thumbnail}
+![2FA mobileapp](images/mobile_auth.png){.thumbnail}
 
 Tous les choix que vous avez activés apparaîtront alors :
 
-![2FA mobileapp](images/2faloginchoice.png){.thumbnail}
+![2FA mobileapp](images/backupcode_auth.png){.thumbnail}
 
 ## Aller plus loin
 
