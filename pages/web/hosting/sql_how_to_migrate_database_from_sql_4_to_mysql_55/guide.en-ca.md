@@ -33,7 +33,7 @@ By following the steps in this guide, the migration should take between 10 and 4
 ## Find the access details, and access your database.
 
 ### Where to find your database’s access details
-First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 Then select the web hosting plan on the left, in the Hosting section. Next, go to the Databases tab.
 
@@ -49,7 +49,7 @@ Click on the **cogwheel icon on the right**: You can **change the password** for
 To log in to your database in MySQL version 4.0, you have two options:
 
 - Use [this link](https://phpmyadmin.ovh.net/old/){.external}.
-- In the Hosting & SQL tab section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click on the cogwheel icon to the right of your MySQL version 4.0 database, and "Access phpMyAdmin". Then click on [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/){.external} (at the bottom of the page).
+- In the Hosting & SQL tab section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the cogwheel icon to the right of your MySQL version 4.0 database, and "Access phpMyAdmin". Then click on [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/){.external} (at the bottom of the page).
 
 
 ![hosting](images/go-to-phpmyadmin.png){.thumbnail}
@@ -99,7 +99,7 @@ Following this operation, your database will be empty.
 
 
 ### How do I delete my database in MySQL version 4.0?
-You can now close phpMyAdmin. In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click on your web hosting plan, then on the SQL tab.
+You can now close phpMyAdmin. In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on your web hosting plan, then on the SQL tab.
 
 To the right of the line of your database in MySQL version 4.0, click on the cogwheel icon, then choose "Delete database".
 
@@ -114,7 +114,7 @@ You will then need to wait 10-15 minutes for your database to be deleted.
 ## How do I delete my database in MySQL version 5.6?
 
 ### How do I create my database in MySQL version 5.6?
-Now that you have deleted your database in MySQL version 4.0, you will now need to create a new database in MySQL version 5.6. To do this, go to the Hosting section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, then the SQL tab.
+Now that you have deleted your database in MySQL version 4.0, you will now need to create a new database in MySQL version 5.6. To do this, go to the Hosting section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then the SQL tab.
 
 Here, click on the “Create a database” button.
 
@@ -144,7 +144,7 @@ For other CMS or websites build by a developer, it is best to contact the provid
 
 Once you have found this file on your FTP space, you will need to edit it. First, copy the file locally to your computer, and edit it with text software, such as WordPad or a notepad.
 
-You need to modify the "DB_NAME", "DBPASSWORD", "DB_USER" and "DB_HOST" lines (may be named differently depending on the type of website), and replace the corresponding values with the new values found earlier in the SQL tab of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+You need to modify the "DB_NAME", "DBPASSWORD", "DB_USER" and "DB_HOST" lines (may be named differently depending on the type of website), and replace the corresponding values with the new values found earlier in the SQL tab of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Special cases

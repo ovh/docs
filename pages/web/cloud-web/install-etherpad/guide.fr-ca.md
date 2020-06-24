@@ -26,13 +26,13 @@ L'[hébergement Cloud Web OVH]({ovh_www}/hebergement-web/cloud-web.xml){.externa
 - Disposer d'un [hébergement Cloud Web OVH]({ovh_www}/hebergement-web/cloud-web.xml){.external}.
 - Avoir activé Node.js comme moteur d'exécution.
 - Avoir ajouté le nom de domaine concerné en tant que multisite et avoir défini Node.js comme étant son moteur d'exécution.
-- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
+- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
 
 ## En pratique
 
 ### Étape 1 : activer Node.js comme moteur d'exécution
 
-Pour accéder aux moteurs d'exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement Cloud Web concerné. Positionnez-vous enfin sur l'onglet `Moteurs d'exécution`{.action}.
+Pour accéder aux moteurs d'exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement Cloud Web concerné. Positionnez-vous enfin sur l'onglet `Moteurs d'exécution`{.action}.
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d'exécution Node.js est bien activé. Si tel est le cas, poursuivez vers l'étape 2 « [Associer Node.js à un multisite](./#etape-2-associer-nodejs-a-un-multisite) ».
 
@@ -154,7 +154,7 @@ demonon@cloudweb-ssh:~/etherpad [master]$ ln -fs node_modules/ep_etherpad-lite/n
 
 ### Étape 5 : redémarrer le *daemon* Node.js
 
-Pour redémarrer le *daemon* Node.js, retournez sur votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}. Positionnez-vous sur l'onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton représentant une roue dentée, puis sur `Redémarrer`{.action}
+Pour redémarrer le *daemon* Node.js, retournez sur votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Positionnez-vous sur l'onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton représentant une roue dentée, puis sur `Redémarrer`{.action}
 
 Une fois ceci fait, l'application sera accessible via le nom de domaine choisi dans la configuration de votre multisite.
 

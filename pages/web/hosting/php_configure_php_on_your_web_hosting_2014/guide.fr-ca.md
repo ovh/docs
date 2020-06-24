@@ -17,7 +17,7 @@ Sur le web, il existe une multitude de sites internet. Votre [hébergement web O
 ## Prérequis
 
 - Disposer d’une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external} (sauf Cloud Web).
-- Selon la méthode utilisée, disposer d’un accès à la gestion de l’offre d’hébergement web depuis l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) ou des informations permettant de se connecter à votre espace de stockage. 
+- Selon la méthode utilisée, disposer d’un accès à la gestion de l’offre d’hébergement web depuis l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) ou des informations permettant de se connecter à votre espace de stockage. 
 
 ## En pratique
 
@@ -45,7 +45,7 @@ Si cela est utile à votre démarche, vous avez la possibilité de connaître la
 
 |Moyens|Description|
 |---|---|
-|Via l'espace client|Connectez-vous à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Positionné sur l'onglet `Informations générales`{.action}, repérez la version en dessous de « **Version PHP globale** ». Si un symbole rond de couleur bleue est présent à la place, patientez quelques minutes le temps que la version s'actualise.|
+|Via l'espace client|Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Positionné sur l'onglet `Informations générales`{.action}, repérez la version en dessous de « **Version PHP globale** ». Si un symbole rond de couleur bleue est présent à la place, patientez quelques minutes le temps que la version s'actualise.|
 |Via un script|Créez un script **.php** contenant uniquement le code `<?php phpinfo(); ?>`. Vous devrez le mettre en ligne sur votre espace de stockage, puis l'appeler en accédant à son adresse URL complète.|
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}

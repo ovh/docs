@@ -12,31 +12,31 @@ section: 'Premiers pas'
 
 ### Que faire si mon site web dysfonctionne ? 
 
-Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site internet. Pour en identifier la cause, commencez par vérifier que tous vos services sont bien renouvelés et actifs, en vous connectant à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Une fois cette vérification faite, consultez les [tâches travaux en cours](http://travaux.ovh.net/){.external}. Si tous vos services sont actifs et qu'aucune tâche travaux n'impacte votre site, nous vous invitons à réaliser un diagnostic plus approfondi en vous aidant de [nos guides de diagnostic](../).
+Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site internet. Pour en identifier la cause, commencez par vérifier que tous vos services sont bien renouvelés et actifs, en vous connectant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Une fois cette vérification faite, consultez les [tâches travaux en cours](http://travaux.ovh.net/){.external}. Si tous vos services sont actifs et qu'aucune tâche travaux n'impacte votre site, nous vous invitons à réaliser un diagnostic plus approfondi en vous aidant de [nos guides de diagnostic](../).
 
-**Trucs et Astuces** : Si votre site est soudainement indisponible suite à une manipulation de votre part, vous pouvez restaurer son contenu depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Pour cela, dirigez-vous sur l'onglet `FTP - SSH` de votre hébergement et cliquez sur le bouton `Restaurer une sauvegarde`{.action}, situé à droite de votre écran. Vous pouvez également vous appuyer sur la documentation suivante : [Restaurer l’espace de stockage de son hébergement web](../restauration-ftp-filezilla-espace-client/).
+**Trucs et Astuces** : Si votre site est soudainement indisponible suite à une manipulation de votre part, vous pouvez restaurer son contenu depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Pour cela, dirigez-vous sur l'onglet `FTP - SSH` de votre hébergement et cliquez sur le bouton `Restaurer une sauvegarde`{.action}, situé à droite de votre écran. Vous pouvez également vous appuyer sur la documentation suivante : [Restaurer l’espace de stockage de son hébergement web](../restauration-ftp-filezilla-espace-client/).
 
 ### Comment configurer mon hébergement ? 
 
-Pour configurer votre hébergement, connectez-vous tout d'abord à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Depuis la rubrique `Hébergement` vous pourrez notamment gérer vos certificats SSL, vos versions PHP, vos CDN, vos multisites, vos bases de données, ...
+Pour configurer votre hébergement, connectez-vous tout d'abord à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Depuis la rubrique `Hébergement` vous pourrez notamment gérer vos certificats SSL, vos versions PHP, vos CDN, vos multisites, vos bases de données, ...
 
 **Trucs et Astuces** : Pour vous aider à configurer votre hébergement, nous vous invitons à prendre connaissance de la rubrique <br> « Premiers pas » que vous retrouverez [ici](../).
 
 ### Comment créer ou supprimer un élément sur mon produit/service (compte e-mail, base de données, ….) ?
 
-Pour créer ou supprimer un élément, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez le produit concerné <br> (`E-mail`, `Base de données`, `Modules`). Vous pourrez ainsi faire évoluer votre produit à votre convenance.
+Pour créer ou supprimer un élément, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez le produit concerné <br> (`E-mail`, `Base de données`, `Modules`). Vous pourrez ainsi faire évoluer votre produit à votre convenance.
 
-**Trucs et Astuces** : depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, vous avez la possibilité de réaliser des sauvegardes régulières de vos bases de données.
+**Trucs et Astuces** : depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, vous avez la possibilité de réaliser des sauvegardes régulières de vos bases de données.
 
 ### Comment gérer mes mots de passe ? 
 
-Pour gérer vos mots de passe, vous devez tout d'abord vous connecter à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. En cas d'oubli de votre identifiant ou de votre mot de passe, cliquez sur `Identifiant ou mot de passe oublié`{.action} sous la fenêtre de connexion. Un e-mail vous sera envoyé avec une procédure de réinitialisation. 
+Pour gérer vos mots de passe, vous devez tout d'abord vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. En cas d'oubli de votre identifiant ou de votre mot de passe, cliquez sur `Identifiant ou mot de passe oublié`{.action} sous la fenêtre de connexion. Un e-mail vous sera envoyé avec une procédure de réinitialisation. 
 Vous pouvez également consulter le guide [Définir et gérer le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/){.external}.
 
 Une fois connecté à votre espace client, vous pourrez gérer vos différents accès tels que : 
 
-* l'accès à votre serveur FTP et aux bases de données. Pour ce faire, accédez à la rubrique `Hébergement` de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et sélectionnez le produit/service concerné .
-* l'accès à vos e-mails, depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, rubrique `E-mail`.
+* l'accès à votre serveur FTP et aux bases de données. Pour ce faire, accédez à la rubrique `Hébergement` de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} et sélectionnez le produit/service concerné .
+* l'accès à vos e-mails, depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, rubrique `E-mail`.
 
 **Trucs et Astuces** : Dans le cas d'une offre E-mail Pro ou Exchange, vous pouvez également gérer vos accès depuis les webmails respectifs de ces offres.
 

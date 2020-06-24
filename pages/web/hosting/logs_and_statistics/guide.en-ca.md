@@ -8,7 +8,7 @@ legacy_guide_number: g1344
 
 ## Log in to your customer account
 
-Log in to your [Manager](https://ca.ovh.com/auth/?action=gotomanager) with your username (nic-handle) and password.
+Log in to your [Manager](https://www.ovh.com/auth/?action=gotomanager) with your username (nic-handle) and password.
 
 Once logged on, select the "hosting" platform that you want to view the statistics for in the left-hand menu.
 

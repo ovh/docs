@@ -16,7 +16,7 @@ With an OVHcloud Web Hosting plan, you get a storage space to host your websites
 ## Requirements
 
 - a [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/) (please note that this does not work with Cloud Web)
-- Depending on which method you use, you must be able to manage the Web Hosting plan from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), or have the FTP user password required to access your storage space. 
+- Depending on which method you use, you must be able to manage the Web Hosting plan from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), or have the FTP user password required to access your storage space. 
 
 ## Instructions
 
@@ -45,7 +45,7 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 
 ### Restore the storage space via the OVHcloud Control Panel.
 
-First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
+First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
 
 ![backupftp](images/backupftp-step1.png){.thumbnail}
 
@@ -84,7 +84,7 @@ First of all, decide which software or interface you would like to use in order 
 
 - **Using Cyberduck software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using Cyberduck](../web_hosting_cyberduck_user_guide_on_mac/). Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
 
-- **Using the FTP Explorer interface.** To use this method, you will need to log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager). Once you have logged in, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Go to the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
+- **Using the FTP Explorer interface.** To use this method, you will need to log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). Once you have logged in, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Go to the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
 
 Once you are ready to start making changes, continue to the next step.
 

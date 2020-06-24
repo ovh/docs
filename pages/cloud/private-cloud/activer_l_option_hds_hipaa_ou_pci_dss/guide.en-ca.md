@@ -22,13 +22,13 @@ You can adapt your Private Cloud for PCI DSS certifications, which could be esse
 >
 
 - a Private Cloud infrastructure in version 6.0 or higher
-- access to the `Dedicated`{.action} section of the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the `Dedicated`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
 ### Ensure that the security option is enabled.
 
-In order to adapt your Private Cloud for this certification, one of the corresponding security options must be enabled. To verify this, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager), and make sure you are in the “Dedicated” section. Click `Private Cloud`{.action} and select the service concerned. 
+In order to adapt your Private Cloud for this certification, one of the corresponding security options must be enabled. To verify this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager), and make sure you are in the “Dedicated” section. Click `Private Cloud`{.action} and select the service concerned. 
 
 In the window that appears, make sure you are on the `General Information`{.action} tab. Then check the activation status of the security options in the "Security Options" section. **It should be noted that it is currently not possible to accumulate several security options for the same Private Cloud.**
 

@@ -24,13 +24,13 @@ L’[hébergement Cloud Web d'OVH](https://www.ovh.com/fr/hebergement-web/cloud-
 ### Ce que vous devez avoir
 
 *     Disposer d’un [hébergement Cloud Web d'OVH](https://www.ovh.com/fr/hebergement-web/cloud-web.xml).
-*     Être connecté à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager), partie Web.
+*     Être connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager), partie Web.
 
 ## En pratique
 
 ### Étape 1 : activez Python comme moteur d’exécution
 
-Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager). Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l’hébergement Cloud Web concerné. Positionnez-vous enfin sur l’onglet `Moteurs d'exécution`{.action}.
+Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager). Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l’hébergement Cloud Web concerné. Positionnez-vous enfin sur l’onglet `Moteurs d'exécution`{.action}.
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d’exécution Python est bien activé. Si tel est le cas, poursuivez vers l’étape 2 : [« Associez Python à un multisite »](./#etape-2-associez-python-a-un-multisite).
 
@@ -284,7 +284,7 @@ Modifiez le fichier « mysite/settings.py » avec la commande suivante, en rem
     
 ### Étape 7 : redémarrez le _daemon_ Python
 
-Pour redémarrer le _daemon_ Python, retournez dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton représentant une roue dentée, puis choisissez `Redémarrer`{.action}.
+Pour redémarrer le _daemon_ Python, retournez dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton représentant une roue dentée, puis choisissez `Redémarrer`{.action}.
 
 Une fois ceci fait, l’application sera accessible via le nom de domaine choisi dans la configuration de votre multisite.
     

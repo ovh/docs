@@ -30,7 +30,7 @@ Effectuer des vérifications en mode rescue vous aide également à déterminer 
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## En pratique

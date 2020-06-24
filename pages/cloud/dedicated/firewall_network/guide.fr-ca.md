@@ -25,7 +25,7 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVH pr
 ## Prérequis
 
 - Posséder un service OVH bénéficiant d’un Firewall Network ([ serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, [ VPS](https://www.ovh.com/fr/vps/){.external},[ instance Public Cloud](https://www.ovh.com/fr/public-cloud/){.external}, [Private Cloud[IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external}, etc.)
-- Avoir accès à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Avoir accès à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## En pratique
@@ -37,7 +37,7 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVH pr
 > Le Firewall Network protège les adresses IP associées à une machine. Vous devez donc configurer chaque adresse IP indépendamment. Une configuration globale du serveur est impossible.
 > 
 
-`{.action}Connectez-vous à[ l’espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `IP`{.action} et cliquez sur ` ...  pour activer le pare-feu sur une adresse IPv4.
+`{.action}Connectez-vous à[ l’espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `IP`{.action} et cliquez sur ` ...  pour activer le pare-feu sur une adresse IPv4.
 
 ![Activation du Firewall Network](images/firewall_creation.png){.thumbnail}
 

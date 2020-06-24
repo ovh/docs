@@ -17,7 +17,7 @@ Lors de l’installation ou de la réinstallation d’une distribution ou d’un
 
 * Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
 * Être connecté en SSH avec l’identifiant root.
-* Avoir accès à l’[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Avoir accès à l’[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 

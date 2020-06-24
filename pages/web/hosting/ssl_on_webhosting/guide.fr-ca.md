@@ -18,7 +18,7 @@ Votre hébergement web vous permet de gérer un certificat SSL. Vous pouvez comm
 
 - Posséder un [hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
 - Avoir enregistré au moins un [nom de domaine](https://www.ovh.com/ca/fr/domaines/){.external}.
-- Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie « Web ».
+- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie « Web ».
 
 ## En pratique
 
@@ -40,7 +40,7 @@ Votre hébergement web OVHcloud vous permet d'activer un [certificat SSL selon p
 - un certificat SSL payant [en option avec un hébergemet web compatible](https://www.ovh.com/ca/fr/ssl/){.external} ;
 - l'importation d'un certificat SSL commandé auprès d'un autre fournisseur.
 
-Pour activer votre certificat, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis sélectionnez l'hébergement concerné. Cliquez sur l'onglet `Informations générales`{.action}. Sous l'onglet « Certificat SSL », la mention « Non » devrait apparaître, indiquant qu'aucun certificat SSL n'a été configuré ni installé sur votre hébergement web. Cliquez sur les trois points à côté de « Certificat SSL », puis `Commander un certificat SSL`{.action}.
+Pour activer votre certificat, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis sélectionnez l'hébergement concerné. Cliquez sur l'onglet `Informations générales`{.action}. Sous l'onglet « Certificat SSL », la mention « Non » devrait apparaître, indiquant qu'aucun certificat SSL n'a été configuré ni installé sur votre hébergement web. Cliquez sur les trois points à côté de « Certificat SSL », puis `Commander un certificat SSL`{.action}.
 
 Si le mot « Oui » apparaît, cela signifie qu'un certificat SSL a déjà été installé et configuré sur l'hébergement web. Par conséquent, vous ne pourrez pas commander un autre certificat tant que le certificat existant est installé.
 
@@ -66,7 +66,7 @@ Une fois la configuration effectuée, passez à l'étape « [Activer un certifi
 
 ### Activer un certificat SSL sur un multisite
 
-Selon le [certificat SSL ](https://www.ovh.com.ca/fr/ssl/){.external} que vous avez commandé, vous pouvez activer une connexion SSL sécurisée sur un ou plusieurs de vos multisites. Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Positionnez-vous ensuite sur l'onglet ` Multisite`{.action}.
+Selon le [certificat SSL ](https://www.ovh.com.ca/fr/ssl/){.external} que vous avez commandé, vous pouvez activer une connexion SSL sécurisée sur un ou plusieurs de vos multisites. Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Positionnez-vous ensuite sur l'onglet ` Multisite`{.action}.
 
 Le tableau qui s'affiche contient tous les noms de domaine ajoutés à votre hébergement web. La colonne « SSL » vous montre l'état d'activation des connexions SSL sécurisées sur vos multisites. 
 
@@ -95,7 +95,7 @@ Une fois que vous avez soumis la demande d'activation, l'état de la connexion s
 
 Une fois que vous avez activé une connexion SSL sécurisée sur un ou plusieurs de vos multisites, l'état indique alors « À générer ». Cette génération est essentielle pour pouvoir ajouter au certificat SSL de votre hébergement web.
 
-Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements` dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Cliquez sur l'onglet ` Informations générales`{.action}. Cliquez ensuite sur les trois points à côté de « Certificat SSL », puis sur`Regénérer le certificat SSL`{.action}.
+Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements` dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Cliquez sur l'onglet ` Informations générales`{.action}. Cliquez ensuite sur les trois points à côté de « Certificat SSL », puis sur`Regénérer le certificat SSL`{.action}.
 
 ![managessl](images/manage-ssl-step7.png){.thumbnail}
 
@@ -111,7 +111,7 @@ Vous pouvez également supprimer le certificat SSL actuellement installé sur vo
 
 Cette vérification étant inhérente aux paramètres de votre ou vos sites internet, nous vous recommandons de contacter un prestataire de services spécialisé si vous rencontrez des difficultés. Nous ne serons pas en mesure de vous fournir une assistance à ce propos.
 
-Dès que vous êtes prêt à supprimer le certificat SSL, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. Cliquez ensuite sur les trois points à côté de « Certificat SSL », puis sur `Supprimer le SSL`{.action}.
+Dès que vous êtes prêt à supprimer le certificat SSL, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. Cliquez ensuite sur les trois points à côté de « Certificat SSL », puis sur `Supprimer le SSL`{.action}.
 
 Sur la page qui apparaît, confirmez la suppression. Celle-ci sera effective sous quelques heures au maximum. 
 

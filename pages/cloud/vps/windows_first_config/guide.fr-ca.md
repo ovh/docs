@@ -16,7 +16,7 @@ Lors de l'installation d'un Windows Server 2012, 2012 R2 ou 2016 sur un VPS, il 
 ## Prérequis
 
 - Posséder un VPS avec une distribution Windows installée : Windows Server 2012, 2012 R2 ou 2016.
-- Avoir accès à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager).
+- Avoir accès à votre [espace client](https://www.ovh.com/auth/?action=gotomanager).
 
 
 ## En pratique

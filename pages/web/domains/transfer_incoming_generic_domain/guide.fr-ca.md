@@ -89,7 +89,7 @@ Vous pouvez également terminer votre commande avec un [hébergement web](https:
 > - **saisie des serveurs DNS pour votre nom de domaine.** Si vous utilisez actuellement votre nom de domaine pour maintenir un site internet ou un service de messagerie en ligne, vous devrez spécifier leurs serveurs DNS afin d'éviter toute interruption de service.
 >
 
-Une fois que vous avez reçu le bon de commande, réglez le montant demandé pour initier le processus de transfert. Celui-ci ne démarrera que lorsque nous recevrons votre paiement. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}. Pour suivre la progression, cliquez sur `Domaines`{.action} dans la barre de services située à gauche, puis ` Opérations en cours`{.action}.
+Une fois que vous avez reçu le bon de commande, réglez le montant demandé pour initier le processus de transfert. Celui-ci ne démarrera que lorsque nous recevrons votre paiement. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Pour suivre la progression, cliquez sur `Domaines`{.action} dans la barre de services située à gauche, puis ` Opérations en cours`{.action}.
 
 ### Étape 4 : effectuer la première étape de validation du transfert
 
@@ -113,7 +113,7 @@ Plusieurs résultats possibles peuvent être obtenus à cette étape, selon les 
 |Aucun des contacts ne répond aux demandes de validation.|Le transfert passe à la seconde étape de validation après une période de cinq (5) jours.|
 |Un refus est reçu de l'un des deux contacts.|Le processus de transfert est annulé dès qu'un refus est reçu par l'un des contacts.|
 
-En cas d'annulation d'un transfert, assurez-vous que les différentes parties sont d'accord avec cette manipulation et que leurs adresses de messagerie sont à jour. Ce processus peut être réitéré ultérieurement à partir de l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, section `Domaines`{.action}, puis `Opérations en cours`{.action}.
+En cas d'annulation d'un transfert, assurez-vous que les différentes parties sont d'accord avec cette manipulation et que leurs adresses de messagerie sont à jour. Ce processus peut être réitéré ultérieurement à partir de l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, section `Domaines`{.action}, puis `Opérations en cours`{.action}.
 
 ### Étape 5 : seconde étape de validation du transfert
 
@@ -125,11 +125,11 @@ Une fois la deuxième étape lancée, le bureau d'enregistrement du nom de domai
 |Aucune réponse reçue du bureau d'enregistrement actuel.|Le transfert est terminé après une période de cinq jours.|
 |Un refus est reçu du bureau d'enregistrement actuel.|Le processus de transfert est annulé dès qu'un refus est reçu.|
 
-Si une réponse de refus est envoyée par le bureau d'enregistrement actuel, contactez le pour savoir pourquoi il l'a refusée. Le processus de transfert peut être redémarré à partir de l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la section `Domaines`{.action}, puis `Opérations en cours`{.action}.
+Si une réponse de refus est envoyée par le bureau d'enregistrement actuel, contactez le pour savoir pourquoi il l'a refusée. Le processus de transfert peut être redémarré à partir de l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la section `Domaines`{.action}, puis `Opérations en cours`{.action}.
 
 ### Étape 6 : gérer son nom de domaine avec OVH
 
-Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}. Pour ce faire, cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis cliquez sur le nom de domaine concerné.
+Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Pour ce faire, cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis cliquez sur le nom de domaine concerné.
 
 ## Aller plus loin
 

@@ -17,7 +17,7 @@ Les adresses e-mail de l’offre MX Plan vous permettent d’envoyer et de recev
 ## Prérequis
 
 - Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}, l'[hébergement gratuit Start 10M]({ovh_www}/domaines/offre_hebergement_start10m.xml){.external}, ou l'offre MX Plan commandée séparément.
-- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la partie `Web`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail](https://www.ovh.com/ca/fr/mail/){.external} Outlook Web Messenger (OWA).
+- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Web`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail](https://www.ovh.com/ca/fr/mail/){.external} Outlook Web Messenger (OWA).
 
 > [!primary]
 >
@@ -28,7 +28,7 @@ Les adresses e-mail de l’offre MX Plan vous permettent d’envoyer et de recev
 
 Selon la date d'activation de votre service ou si [celui-ci a été récemment migré](../mxplan-migration/){.external}, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre MX Plan. Avant de poursuivre, vous devez identifier celle-ci. 
 
-Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie « Web ». Cliquez sur `E-mails`{.action} dans la barre de services à gauche, puis choisissez le nom du service MX Plan concerné. Poursuivez selon la version que vous possédez.
+Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie « Web ». Cliquez sur `E-mails`{.action} dans la barre de services à gauche, puis choisissez le nom du service MX Plan concerné. Poursuivez selon la version que vous possédez.
 
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|

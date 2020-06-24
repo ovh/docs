@@ -19,7 +19,7 @@ order: 1
 ## Requirements
 
 - an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 - no files stored in the directory that your module will be installed in
 - The website’s domain (with a subdomain, if applicable) must be declared as a multisite.
 

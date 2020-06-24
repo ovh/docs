@@ -19,7 +19,7 @@ This guide will take you through the steps you need to take to migrate a website
 - You need to have access to the website’s files.
 - You need access to the website’s databases, if applicable.
 - You must have the information (username, password, servers) that enables you to log in to your current email addresses.
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
 
@@ -59,7 +59,7 @@ You will need to follow several sub-steps to do this:
 |---|---|---|
 |1|Create a website backup|You will need to create a full backup of your website, including all of the files and the database (if applicable). This full website backup is essential for migrating your website to OVHcloud.|
 |2|Put your website online with OVHcloud|Log in to your storage space (via FTP) to import your website’s files onto it. You will need to put them online in the **"www"** folder. Your FTP login credentials will be sent to you via email.|
-|3|Create an OVHcloud database|If your website works with a database, you will need to [create a new one with OVHcloud](https://docs.ovh.com/ca/en/hosting/managing-a-database-on-a-web-hosting-package/){.external}, via your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.|
+|3|Create an OVHcloud database|If your website works with a database, you will need to [create a new one with OVHcloud](https://docs.ovh.com/ca/en/hosting/managing-a-database-on-a-web-hosting-package/){.external}, via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.|
 |4|Import the database backup|Import your database backup using [the OVHcloud tool, available in your Control Panel](https://docs.ovh.com/ca/en/hosting/web_hosting_guide_to_importing_a_mysql_database/){.external}.|
 |5|Link the website to the new database|The data stored in your old database is still present in your website’s configuration file. Modify this file in your OVHcloud storage space by entering the OVHcloud database's information.|
 
@@ -67,13 +67,13 @@ Your domain name’s configuration will remain unchanged, and your website will 
 
 #### Step 3: Recreate your email addresses with OVHcloud
 
-Once you have transferred your website, you will need to [recreate the same addresses](https://docs.ovh.com/ca/en/emails/hosted_email_how_to_set_up_an_email_address/){.external} you use with your current service provider, but at OVHcloud. They must be written identically. In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, in the services bar on the left-hand side, go to the `Emails`{.action} section, then click on the web hosting plan that you have just ordered (with the same heading as your domain name). Follow the steps for creating email addresses by clicking `Create an email address`{.action}.
+Once you have transferred your website, you will need to [recreate the same addresses](https://docs.ovh.com/ca/en/emails/hosted_email_how_to_set_up_an_email_address/){.external} you use with your current service provider, but at OVHcloud. They must be written identically. In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in the services bar on the left-hand side, go to the `Emails`{.action} section, then click on the web hosting plan that you have just ordered (with the same heading as your domain name). Follow the steps for creating email addresses by clicking `Create an email address`{.action}.
 
 Your domain name’s configuration will still remain unchanged, and you will still receive new emails via the email addresses created with your current service provider. You will also still need to use the email address created with your current service provider for sending emails.
 
 #### Step 4: Modify your domain name’s configuration
 
-Now that you have transferred your website and recreated your email addresses with OVHcloud, you will now need to modify your domain name’s configuration. You can do this by modifying your domain name’s DNS servers, replacing them with the OVHcloud DNS servers (which will be sent to you by email, and also displayed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}). This will do two things:
+Now that you have transferred your website and recreated your email addresses with OVHcloud, you will now need to modify your domain name’s configuration. You can do this by modifying your domain name’s DNS servers, replacing them with the OVHcloud DNS servers (which will be sent to you by email, and also displayed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}). This will do two things:
 
 - **Technically link your domain name to OVHcloud solutions.** Your OVHcloud web hosting plan will be used to display your website, and you will then start receiving new emails at the email addresses you have created with OVHcloud.
 - **Prevent any service interruptions.** If your registry decides to suspend your DNS servers immediately once you transfer your domain name, your services will not be affected, as you will already be using the OVHcloud configuration.
@@ -128,7 +128,7 @@ You will need to follow several sub-steps to do this.
 |---|---|---|
 |1|Create a website backup|You will need to create a full backup of your website, including all of the files and the database (if applicable). This full website backup is essential for migrating your website to OVHcloud.|
 |2|Put your website online with OVHcloud|Log in to your storage space (via FTP) to import your website’s files onto it. You will need to put them online in the **"www"** folder. Your FTP login credentials will be sent to you via email.|
-|3|Create an OVHcloud database|If your website works with a database, you will need to [create a new one with OVHcloud](https://docs.ovh.com/ca/en/hosting/managing-a-database-on-a-web-hosting-package/){.external}, via your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.|
+|3|Create an OVHcloud database|If your website works with a database, you will need to [create a new one with OVHcloud](https://docs.ovh.com/ca/en/hosting/managing-a-database-on-a-web-hosting-package/){.external}, via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.|
 |4|Import the database backup|Import your database backup using [the OVHcloud tool, available in your Control Panel](https://docs.ovh.com/ca/en/hosting/web_hosting_guide_to_importing_a_mysql_database/){.external}.|
 |5|Link the website to the new database|The data stored in your old database is still present in your website’s configuration file. Modify this file in your OVHcloud storage space by entering the OVHcloud database's information.|
 
@@ -136,7 +136,7 @@ Your domain name’s configuration will remain unchanged, and the web hosting pl
 
 #### Step 3: Recreate your email addresses with OVHcloud
 
-**Once the domain name transfer process is complete**, you will receive an email confirming that the email service linked to your web hosting plan has just been set up. Once you receive this confirmation, you will need to [recreate the same email addresses with OVHcloud,](https://docs.ovh.com/ca/en/emails/hosted_email_how_to_set_up_an_email_address/){.external} ensuring that they are completely identical to the addresses created with your current service provider. In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, in the left-hand services bar, go to the `Emails`{.action} section, then the web hosting plan you have just ordered (with the same heading as your domain). Follow the steps for creating email addresses by clicking `Create an email address`{.action}.
+**Once the domain name transfer process is complete**, you will receive an email confirming that the email service linked to your web hosting plan has just been set up. Once you receive this confirmation, you will need to [recreate the same email addresses with OVHcloud,](https://docs.ovh.com/ca/en/emails/hosted_email_how_to_set_up_an_email_address/){.external} ensuring that they are completely identical to the addresses created with your current service provider. In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in the left-hand services bar, go to the `Emails`{.action} section, then the web hosting plan you have just ordered (with the same heading as your domain). Follow the steps for creating email addresses by clicking `Create an email address`{.action}.
 
 Your domain name’s configuration will still remain unchanged, and you will continue to receive new emails via the email addresses created with your current service provider, if they have not suspended the DNS servers. You will also still need to use the email address created with your current service provider for sending emails.
 
@@ -144,7 +144,7 @@ Your domain name’s configuration will still remain unchanged, and you will con
 
 Now that you have transferred your website, recreated your email addresses, and transferred your domain name to OVHcloud, you will need to modify your domain name’s configuration. You can do this by modifying your domain name’s current DNS servers, replacing them with OVH DNS servers.
 
-You will need to modify them via your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. This guide with *[General information about DNS servers](https://docs.ovh.com/ca/en/domains/web_hosting_general_information_about_dns_servers/){.external}* will help you do this.
+You will need to modify them via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. This guide with *[General information about DNS servers](https://docs.ovh.com/ca/en/domains/web_hosting_general_information_about_dns_servers/){.external}* will help you do this.
 
 This modification will do several things:
 

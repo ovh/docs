@@ -24,7 +24,7 @@ Our Web Hosting services are compatible with some of the most popular content ma
 ## Requirements
 
 - a Web Hosting plan
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
@@ -32,7 +32,7 @@ Our Web Hosting services are compatible with some of the most popular content ma
 > [!primary]
 >**Automatic installation**
 >
->You can install each of these CMS automatically in a few clicks from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager). Please read the following guide:
+>You can install each of these CMS automatically in a few clicks from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). Please read the following guide:
 >
 >[Setting up your website with 1-click modules](../web_hosting_web_hosting_modules)
 >

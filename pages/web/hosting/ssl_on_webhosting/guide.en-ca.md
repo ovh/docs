@@ -18,7 +18,7 @@ You can manage an SSL certificate on your Web Hosting plan. You can either order
 
 - an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
 - at least one [domain name](https://www.ovh.com/ca/en/domains/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
@@ -40,7 +40,7 @@ With an OVHcloud Web Hosting plan, you can choose from a range of [SSL certifica
 - a paid SSL certificate ([available as an option with compatible Web Hosting plans](https://www.ovh.com/ca/en/ssl/){.external})
 - importing an SSL certificate ordered from another provider
 
-To start activating your certificate, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Click on the `General information`{.action} tab. Beneath ‘SSL certificate’, the word ‘No’ should be visible, showing that no SSL certificates have been set up on your Web Hosting plan. Click on the three dots next to ‘SSL certificate’, then `Order an SSL certificate`{.action}.
+To start activating your certificate, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Click on the `General information`{.action} tab. Beneath ‘SSL certificate’, the word ‘No’ should be visible, showing that no SSL certificates have been set up on your Web Hosting plan. Click on the three dots next to ‘SSL certificate’, then `Order an SSL certificate`{.action}.
 
 If the word ‘Yes’ is visible, this means that an SSL certificate has already been set up on the Web Hosting plan. As a result, you will not be able to order another certificate while the existing one is set up.
 
@@ -66,7 +66,7 @@ Once you have set it up, you can proceed with the [Activate an SSL certificate 
 
 ### Activate an SSL certificate on a multisite.
 
-Depending on which [SSL certificate](https://www.ovh.com/ca/en/ssl/){.external} you have ordered, you can activate a secure SSL connection on one or more of your multisites. To do this, log in to the OVHcloud Control Panel, click [Web hosting](https://ca.ovh.com/auth/?action=gotomanager){.external} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Go to the `Multisite`{.action} tab.
+Depending on which [SSL certificate](https://www.ovh.com/ca/en/ssl/){.external} you have ordered, you can activate a secure SSL connection on one or more of your multisites. To do this, log in to the OVHcloud Control Panel, click [Web hosting](https://www.ovh.com/auth/?action=gotomanager){.external} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Go to the `Multisite`{.action} tab.
 
 The table displayed will contain all of the domain names that have been added to your Web Hosting plan. In the ‘SSL’ column, you will see the activation status for secure SSL connections on your multisites. 
 
@@ -95,7 +95,7 @@ Once you have submitted the activation request, the SSL secure connection status
 
 Once you have activated a secure SSL connection across one or more of your multisites, the status will then change to “To generate”. This generation is essential for adding the domain names concerned to the SSL certificate on your Web Hosting plan. 
 
-To do this, log in to the OVHcloud Control Panel, click [Web hosting](https://ca.ovh.com/auth/?action=gotomanager){.external} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Click on the `General information`{.action} tab. Then click on the three dots next to ‘SSL certificate’, then `Regenerate SSL certificate`{.action}.
+To do this, log in to the OVHcloud Control Panel, click [Web hosting](https://www.ovh.com/auth/?action=gotomanager){.external} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Click on the `General information`{.action} tab. Then click on the three dots next to ‘SSL certificate’, then `Regenerate SSL certificate`{.action}.
 
 ![managessl](images/manage-ssl-step7.png){.thumbnail}
 
@@ -111,7 +111,7 @@ You can also delete an SSL certificate that has been set up on your Web Hosting 
 
 Since this verification involves checking your website settings, we recommend contacting a specialist service provider if you experience any difficulties in this regard. We will not be able to assist you with this ourselves. 
 
-Once you are ready to delete the SSL certificate, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the Web Hosting plan concerned. Click on the `General information`{.action} tab. Then click on the three dots next to ‘SSL certificate’, then `Delete SSL`{.action}.
+Once you are ready to delete the SSL certificate, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the Web Hosting plan concerned. Click on the `General information`{.action} tab. Then click on the three dots next to ‘SSL certificate’, then `Delete SSL`{.action}.
 
 On the page that appears, confirm the deletion. The deletion will take effect in a few hours, at most. 
 

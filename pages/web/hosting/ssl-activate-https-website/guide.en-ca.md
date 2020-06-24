@@ -18,7 +18,7 @@ With an OVHcloud Web Hosting plan, you can get a free SSL certificate. An SSL ce
 
 - an [SSL certificate](https://www.ovh.com/ca/en/ssl/) set up on your [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
 - at least one website set up and accessible via your OVHcloud Web Hosting plan
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
@@ -41,7 +41,7 @@ The table below provides a breakdown of the changes you will need to make.
 
 ### Step 1: Activate the SSL certificate on the Web Hosting plan.
 
-You can activate the SSL certificate on your Web Hosting plan via the  [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. To do this, you will need to make two separate changes:
+You can activate the SSL certificate on your Web Hosting plan via the  [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. To do this, you will need to make two separate changes:
 
 |Change|Description|
 |---|---|
@@ -50,7 +50,7 @@ You can activate the SSL certificate on your Web Hosting plan via the  [OVHcloud
 
 You can read a detailed version of the changes you need to make in our guide to [Managing an SSL certificate on a Web Hosting plan](../ssl-certificates-on-web-hosting-plans). If you have just ordered an OVHcloud Web Hosting plan, you may find that a free SSL certificate has already been set up on it, and that the multisite already has an active SSL connection.
 
-To check this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Click on the `General information`{.action} tab. Beneath ‘SSL certificate’, the word ‘Yes’ should be visible, showing that an SSL certificate is set up on your Web Hosting plan. 
+To check this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Click on the `General information`{.action} tab. Beneath ‘SSL certificate’, the word ‘Yes’ should be visible, showing that an SSL certificate is set up on your Web Hosting plan. 
 
 ![httpswebsite](images/activate-https-website-ssl-step2.png){.thumbnail}
 

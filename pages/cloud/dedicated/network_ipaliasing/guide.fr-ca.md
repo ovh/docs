@@ -561,7 +561,7 @@ ifconfig_eth0="inet FAILOVER_IP netmask 0 broadcast FAILOVER_IP"
 
 Où vous remplacerez « FAILOVER_IP » par la véritable IP fail-over.
 
-Ensuite, il vous suffit d'effectuer un ping depuis votre IP fail-over vers l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration devant être corrigée. Si, au contraire, l'adresse IP ne fonctionne toujours pas, veuillez ouvrir un ticket à l'équipe d'assistance via votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Ensuite, il vous suffit d'effectuer un ping depuis votre IP fail-over vers l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration devant être corrigée. Si, au contraire, l'adresse IP ne fonctionne toujours pas, veuillez ouvrir un ticket à l'équipe d'assistance via votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Aller plus loin
 

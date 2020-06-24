@@ -17,7 +17,7 @@ It is possible to transfer an OVHcloud domain name, allowing you to work with yo
 ## Requirements
 - You must have a domain name registered with OVHcloud.
 - You must be authorised to request the domain name transfer. Furthermore, the domain name holder and/or its administrators must be informed of the transfer request.
-- You must have the appropriate permissions to manage the domain name from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
+- You must have the appropriate permissions to manage the domain name from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 - The domain name must have been created over 61 days ago, and must not have been transferred or changed ownership during that period.
 
 > [!primary]
@@ -29,7 +29,7 @@ It is possible to transfer an OVHcloud domain name, allowing you to work with yo
 
 ### Step 1: Remove the transfer protection for the domain name
 
-To remove the transfer protection for your OVHcloud domain name, when you are logged in to your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click `Web`{.action} in the service bar at the top. Go to the `Domains`{.action} section on the left, then click on the domain name in question. In the `General information`{.action} tab, untick the `Protection against domain name transfer`{.action} box, then click `Confirm`{.action}.
+To remove the transfer protection for your OVHcloud domain name, when you are logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web`{.action} in the service bar at the top. Go to the `Domains`{.action} section on the left, then click on the domain name in question. In the `General information`{.action} tab, untick the `Protection against domain name transfer`{.action} box, then click `Confirm`{.action}.
 
 > [!primary]
 >

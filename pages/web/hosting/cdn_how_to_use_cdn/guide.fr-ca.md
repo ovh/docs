@@ -24,7 +24,7 @@ Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre sit
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - Posséder une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
 
 ## En pratique
@@ -37,7 +37,7 @@ Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre sit
 
 ####  Si vous n'avez pas de CDN sur votre hébergement Web
 
-Connectez-vous à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Commander un CDN`{.action}.
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Commander un CDN`{.action}.
 
 ![CDN](images/manage_CDN_01.png){.thumbnail}
 
@@ -45,7 +45,7 @@ Vous serez redirigé vers la génération du bon de commande. Une fois la comman
 
 #### Si le CDN est déjà activé sur votre hébergement Web
 
-Connectez-vous à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur la roue crantée à droite de l'entrée multisite puis cliquez sur `Modifier`{.action}.
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur la roue crantée à droite de l'entrée multisite puis cliquez sur `Modifier`{.action}.
 
 Cochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
@@ -95,7 +95,7 @@ Si vous n'utilisez pas de CMS, vous pouvez aussi bénéficier du cache du CDN. P
 
 Il est parfois utile de vider le cache du CDN, notamment lorsque vous modifiez vos fichiers statiques. Par exemple lors de la mise en production d'une nouvelle version de votre site. Dans ce cas, vous pouvez vider totalement le cache du CDN.
 
-Connectez-vous à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Vider le cache`{.action}.
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Vider le cache`{.action}.
 
 ![CDN](images/manage_CDN_02.png){.thumbnail}
 
@@ -103,7 +103,7 @@ Connectez-vous à votre [espace client](https://ca.ovh.com/auth/?action=gotomana
 
 Cette action permet de désactiver le CDN pour une ou plusieurs de vos entrées multisite sans supprimer l'option CDN de votre hébergement Web.
 
-Rendez-vous dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur la roue crantée à droite de l'entrée multisite puis `Modifier`{.action}.
+Rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur la roue crantée à droite de l'entrée multisite puis `Modifier`{.action}.
 
 Décochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
@@ -113,7 +113,7 @@ Décochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis s
 
 Cette action a pour but de supprimer l'option CDN pour l'ensemble de votre hébergement Web.
 
-Rendez-vous dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Résilier le CDN`{.action}.
+Rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Résilier le CDN`{.action}.
 
 ![CDN](images/manage_CDN_04.png){.thumbnail}
 

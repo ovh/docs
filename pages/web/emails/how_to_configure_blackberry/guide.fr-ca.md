@@ -53,7 +53,7 @@ Pour continuer le paramétrage cliquez sur "Suivant".
 
 ![emails](images/1750.png){.thumbnail}
 
-Renseignez le mot de passe défini dans votre [Manager](https://ca.ovh.com/auth/?action=gotomanager){.external} pour le compte mutualisé OVHcloud.
+Renseignez le mot de passe défini dans votre [Manager](https://www.ovh.com/auth/?action=gotomanager){.external} pour le compte mutualisé OVHcloud.
 
 Cliquez sur "Suivant" pour valider le mot de passe.
 
@@ -77,7 +77,7 @@ Nom d'utilisateur : *votre adresse e-mail entière.*
 
 Adresse électronique : *votre adresse e-mail entière.*
 
-Mot de passe : *le mot de passe défini dans votre* [Manager](https://ca.ovh.com/auth/?action=gotomanager){.external} *pour le compte mutualisé OVHcloud.*
+Mot de passe : *le mot de passe défini dans votre* [Manager](https://www.ovh.com/auth/?action=gotomanager){.external} *pour le compte mutualisé OVHcloud.*
 
 Adresse du serveur : **SSL0.OVH.NET**
 
@@ -89,7 +89,7 @@ Préfixe du chemin IMAP : *laissez le champ vide*
 
 Nom d'utilisateur SMTP : *votre adresse e-mail entière.*
 
-Mot de passe SMTP : *le mot de passe défini dans votre* [Manager](https://ca.ovh.com/auth/?action=gotomanager){.external} *pour le compte mutualisé OVHcloud.*
+Mot de passe SMTP : *le mot de passe défini dans votre* [Manager](https://www.ovh.com/auth/?action=gotomanager){.external} *pour le compte mutualisé OVHcloud.*
 
 Adresse du serveur SMTP : **SSL0.OVH.NET**
 
@@ -152,7 +152,7 @@ Voici les informations à retenir pour la configuration d'un compte e-mail **POP
 
 Configuration  **POP**  avec sécurisation SSL activée ou désactivée :
 
-Adresse Email : Votre adresse e-mail mutualisée entière. Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}. Nom d'utilisateur : Votre adresse e-mail mutualisée entière. Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET** Port serveur entrant : Le port du serveur entrant :  **995**  ou  **110** Serveur sortant : Le serveur d'envoi des e-mails :  **SSL0.OVH.NET** Port serveur sortant : Le port du serveur sortant :  **465**  ou  **587**
+Adresse Email : Votre adresse e-mail mutualisée entière. Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Nom d'utilisateur : Votre adresse e-mail mutualisée entière. Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET** Port serveur entrant : Le port du serveur entrant :  **995**  ou  **110** Serveur sortant : Le serveur d'envoi des e-mails :  **SSL0.OVH.NET** Port serveur sortant : Le port du serveur sortant :  **465**  ou  **587**
 
 Les ports  **110**  et  **587**  correspondent à la sécurisation SSL désactivée. Les ports  **995**  et  **465**  correspondent à la sécurisation SSL activée.
 
@@ -169,7 +169,7 @@ Voici les informations à retenir pour la configuration d'un compte e-mail **IMA
 
 Configuration  **IMAP**  avec sécurisation SSL activée ou désactivée :
 
-Adresse Email : Votre adresse e-mail mutualisée entière. Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}. Nom d'utilisateur : Votre adresse e-mail mutualisée entière. Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET** Port serveur entrant : Le port du serveur entrant :  **993**  ou  **143** Serveur sortant : Le serveur d'envoi des e-mails :  **SSL0.OVH.NET** Port serveur sortant : Le port du serveur sortant :  **465**  ou  **587**
+Adresse Email : Votre adresse e-mail mutualisée entière. Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Nom d'utilisateur : Votre adresse e-mail mutualisée entière. Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET** Port serveur entrant : Le port du serveur entrant :  **993**  ou  **143** Serveur sortant : Le serveur d'envoi des e-mails :  **SSL0.OVH.NET** Port serveur sortant : Le port du serveur sortant :  **465**  ou  **587**
 
 Les ports  **143**  et  **587**  correspondent à la sécurisation SSL désactivée. Les ports  **993**  et  **465**  correspondent à la sécurisation SSL activée.
 

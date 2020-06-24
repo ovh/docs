@@ -16,15 +16,15 @@ La zone Domain Name System (DNS) d'un nom de domaine constitue le fichier de con
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - Utiliser la configuration OVHcloud (ses serveurs DNS) pour le nom de domaine concerné.
 
 > [!warning]
 >
 > - Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
 > 
-> - Si votre nom de domaine est enregistré chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, rendez-vous dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, onglet `Serveurs DNS`{.action} une fois positionné sur le domaine concerné.
+> - Si votre nom de domaine est enregistré chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, onglet `Serveurs DNS`{.action} une fois positionné sur le domaine concerné.
 >
 
 ## En pratique
@@ -51,7 +51,7 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 ### Étape 1 : accéder à la gestion de la zone DNS OVHcloud de votre domaine
 
-Pour démarrer cette manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+Pour démarrer cette manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
 Le tableau qui apparaît affiche la configuration de votre nom de domaine chez OVHcloud. Elle est constituée de plusieurs enregistrements DNS, tous symbolisés par une ligne du tableau. Vous avez la possibilité d'en filtrer le contenu par type d'enregistrement ou par domaine.
 

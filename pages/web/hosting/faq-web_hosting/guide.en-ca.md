@@ -11,30 +11,30 @@ section: 'Getting started'
 
 ### What do I do if my website isn't working properly? 
 
-There are several possible reasons why your website may not be working properly. To identify the cause, start by logging in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and check that all of your services have been successfully renewed and are active. Once you have checked this, verify that there are no ongoing maintenance tasks by visiting the [Travaux webpage](http://travaux.ovh.net/){.external}. If all your services are active and no maintenance tasks are affecting your website, you can carry out a more in-depth diagnostic by reading our ["Diagnostic" guides](../). 
+There are several possible reasons why your website may not be working properly. To identify the cause, start by logging in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and check that all of your services have been successfully renewed and are active. Once you have checked this, verify that there are no ongoing maintenance tasks by visiting the [Travaux webpage](http://travaux.ovh.net/){.external}. If all your services are active and no maintenance tasks are affecting your website, you can carry out a more in-depth diagnostic by reading our ["Diagnostic" guides](../). 
 
-**Tips and tricks**: If your website suddenly goes down after an action on your part, you can restore the content via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. To do this, go to the `FTP - SSH` tab on your hosting page, and click the `Restore a backup`{.action} button on the right of your screen. For detailed instructions, you can use the following documentation: [Restoring your Web Hosting plan’s storage space](../restoring-ftp-filezilla-control-panel).
+**Tips and tricks**: If your website suddenly goes down after an action on your part, you can restore the content via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. To do this, go to the `FTP - SSH` tab on your hosting page, and click the `Restore a backup`{.action} button on the right of your screen. For detailed instructions, you can use the following documentation: [Restoring your Web Hosting plan’s storage space](../restoring-ftp-filezilla-control-panel).
 
 ### How do I configure my hosting space? 
 
-To configure your Web Hosting plan, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. In the `Hosting plans` section, you can manage your SSL certificates, PHP versions, CDN, multisites, databases, and more. 
+To configure your Web Hosting plan, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. In the `Hosting plans` section, you can manage your SSL certificates, PHP versions, CDN, multisites, databases, and more. 
 
 **Tips and tricks**: To help you configure your Web Hosting plan, we recommend reading documentation from the “Getting started” section [here](../).
 
 ### How do I create or delete an element of my product/service (email account, database, etc.)?
 
-To create or delete an element, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, then select the service concerned (`Email`, `Database`, `Modules`). This way, you can scale your product as you see fit. 
+To create or delete an element, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then select the service concerned (`Email`, `Database`, `Modules`). This way, you can scale your product as you see fit. 
 
-**Tips and tricks**: Via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, you can create regular backups of your databases.
+**Tips and tricks**: Via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, you can create regular backups of your databases.
 
 ### How do I manage my passwords? 
 
-To manage your password, start off by logging in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. If you have forgotten your username or password, click `Forgotten your username or password?`{.action} in the login window. You will be sent an email with the reset procedure. Please also read our [Setting and managing an account password](../../customer/manage-password) guide.
+To manage your password, start off by logging in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. If you have forgotten your username or password, click `Forgotten your username or password?`{.action} in the login window. You will be sent an email with the reset procedure. Please also read our [Setting and managing an account password](../../customer/manage-password) guide.
 
 Once you have logged in to the OVHcloud Control Panel, you can manage different types of access, such as: 
 
-* access to your FTP server and databases. To do this, access the `Hosting plans` section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and select the product/service concerned for email access. 
-* access to your email addresses. Go to the `Emails` section in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. 
+* access to your FTP server and databases. To do this, access the `Hosting plans` section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and select the product/service concerned for email access. 
+* access to your email addresses. Go to the `Emails` section in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. 
 
 **Tips and tricks**: If you have an Email Pro or Exchange solution, you can also manage access via the respective webmail platforms for these solutions.
 

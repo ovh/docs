@@ -17,13 +17,13 @@ Les offres d'hébergement web d'OVHcloud vous donnent accès à un espace de sto
 
 - Disposer d'une offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external} bénéficiant d'un accès SSH.
 - Être en possession des informations permettant de vous connecter en SSH à l'espace de stockage.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
 
 ## En pratique
 
 ### Étape 1 : s'assurer que l'accès SSH est actif
 
-Commencez en vous connectant à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors. 
+Commencez en vous connectant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors. 
 
 Repérez dans le tableau la colonne « SSH » afin de vérifier que l'utilisateur (ou « login ») SSH concerné dispose bien d'un accès SSH actif. La mention « Désactivé » apparaît si ce n'est pas le cas.
 

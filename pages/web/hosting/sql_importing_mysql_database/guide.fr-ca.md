@@ -19,15 +19,15 @@ Aujourd'hui utilisées par la quasi-totalité des systèmes de gestion de conten
 - Disposer d'une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external}.
 - Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external}.
 - Être en possession de la sauvegarde que vous souhaitez importer dans votre base de données ou être en mesure de pouvoir la récupérer.
-- Selon la méthode d'importation utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} ou des informations permettant de vous connecter à la base de données.
+- Selon la méthode d'importation utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} ou des informations permettant de vous connecter à la base de données.
 
 ## En pratique
 
 Avant de débuter, vous devez définir la méthode que vous allez utiliser pour importer la sauvegarde dans la base de données concernée. Plusieurs possibilités s’offrent à vous suivant les compétences techniques dont vous disposez sur le sujet.
 
-- **Restaurer en quelques clics votre base de données à une date antérieure** : cette solution permet de restaurer le contenu de vos bases de données grâce aux sauvegardes présentes dans l'outil de sauvegarde d'OVHcloud. Cette solution ne demande pas de compétences techniques particulières et est exécutable depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- **Restaurer en quelques clics votre base de données à une date antérieure** : cette solution permet de restaurer le contenu de vos bases de données grâce aux sauvegardes présentes dans l'outil de sauvegarde d'OVHcloud. Cette solution ne demande pas de compétences techniques particulières et est exécutable depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-- **Importer en quelques clics votre propre fichier de sauvegarde** : cette solution permet d'importer les données de votre propre fichier de sauvegarde, préalablement en votre possession, dans l'une de vos bases de données. Cette solution se réalise depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- **Importer en quelques clics votre propre fichier de sauvegarde** : cette solution permet d'importer les données de votre propre fichier de sauvegarde, préalablement en votre possession, dans l'une de vos bases de données. Cette solution se réalise depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 - **Effectuer l'import depuis l'interface web phpMyAdmin** : cette solution nécessite de vous connecter à l'interface phpMyAdmin pour y réaliser la manipulation. Des connaissances sur cette dernière sont donc nécessaires afin de pouvoir l'utiliser et une limite de taille sur le fichier de sauvegarde est imposée.
 
@@ -48,7 +48,7 @@ Poursuivez la lecture de cette documentation selon la méthode d'importation sou
 
 ### Restaurer une sauvegarde depuis l'espace client
 
-Pour effectuer la manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Pour effectuer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, cliquez sur les trois points à droite de la base de données que vous souhaitez restaurer à une date antérieure, puis sur `Restaurer une sauvegarde`{.action}. Sachez que cette action remplacera le contenu actuel de la base de données par celui de la sauvegarde.
 
@@ -62,7 +62,7 @@ Cliquez sur les trois points à droite de la sauvegarde que vous souhaitez resta
 
 ### Importer votre propre sauvegarde depuis l'espace client
 
-Pour effectuer la manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Pour effectuer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, cliquez sur les trois points à droite de la base de données dans laquelle vous souhaitez importer des données, puis sur `Importer un fichier`{.action}.
 
@@ -95,7 +95,7 @@ Une fois votre choix fait, cliquez sur le bouton `Valider`{.action} puis patient
 
 ### Réaliser l'import depuis l'interface web phpMyAdmin
 
-Pour réaliser la manipulation, vous devez vous connecter à phpMyAdmin. Pour connaître le lien d'accès à ce dernier, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Pour réaliser la manipulation, vous devez vous connecter à phpMyAdmin. Pour connaître le lien d'accès à ce dernier, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Cliquez dans ce dernier sur les trois points à droite de la base de données concernée, puis sur `Accéder à phpMyAdmin`{.action}.
 

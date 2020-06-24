@@ -37,7 +37,7 @@ Continue reading if you wish to edit the .ovhconfig file manually.
 
 Get your main FTP username, its password and the FTP server address. Once you have all these elements, log in to your storage space. If you are unsure how to do this, refer to the following guide: [Log in to your storage space](../web_hosting_how_to_get_my_website_online/#2-log-in-to-your-storage-space).
 
-**If you no longer have that information**, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, then click on `Hosting plans`{.action} in the services bar on the left. Select the name of the hosting plan concerned,and click on the `FTP - SSH`{.action} tab. There you will find the information you need to log in. With regards to the FTP user password, please refer to the instructions set out in our guide to [Modifying a FTP user password](../modify-ftp-user-password), if necessary.
+**If you no longer have that information**, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then click on `Hosting plans`{.action} in the services bar on the left. Select the name of the hosting plan concerned,and click on the `FTP - SSH`{.action} tab. There you will find the information you need to log in. With regards to the FTP user password, please refer to the instructions set out in our guide to [Modifying a FTP user password](../modify-ftp-user-password), if necessary.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 

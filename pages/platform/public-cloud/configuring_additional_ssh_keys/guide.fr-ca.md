@@ -16,7 +16,7 @@ Lors de la création d’une instance, il n’est pas possible de configurer une
 
 ## Prérequis
 
-* Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 * Posséder une [instance Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} dans votre compte OVH.
 * Avoir accès en ligne de commande à votre instance via SSH. 
 

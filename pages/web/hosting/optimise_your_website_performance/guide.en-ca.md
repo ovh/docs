@@ -20,7 +20,7 @@ This guide will help you get a basic understanding on what points can affect per
 - an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
 - an email confirming that your Web Hosting plan has been set up
 - a [domain name](https://www.ovh.com/ca/en/domains/) that can be used to access your website
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
@@ -85,7 +85,7 @@ You can find more details on this topic in the Step 5 below.
 ### Step 4: Optimising your scripts
 Correlate the graphs of resource usage of your hosting (more information below) to find the origin of the delays and consult the logs at the dates of these peaks.
 
-You can access your logs, statistics and graphs directly from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
+You can access your logs, statistics and graphs directly from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
 How to access the logs:
 - Click on the domain in the `Hosting`{.action} section,
@@ -156,7 +156,7 @@ _This step is optional if you are not using a database._
 You can access your database using PHPMyAdmin; instructions on how to use PHPMyAdmin would go beyond the scope of this guide, therefore it won't be furtherly detailed.
 However, lots of external guides exist on this matter.
 
-**How to access the database via phpMyAdmin:** To access your database via phpMyAdmin, here is the procedure to follow via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}:
+**How to access the database via phpMyAdmin:** To access your database via phpMyAdmin, here is the procedure to follow via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}:
 
 - Click on your domain under the `Hosting plans`{.action} section.
 - Go to the `Database`{.action} tab.

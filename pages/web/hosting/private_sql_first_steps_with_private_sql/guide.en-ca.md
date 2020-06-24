@@ -17,13 +17,13 @@ With the Private SQL service, you can get an SQL instance that works hand-in-han
 
 - You must have a Private SQL instance (included in [web hosting plans](https://www.ovh.com/ca/en/web-hosting/){.external}, or available to order as an [SQL option](https://www.ovh.com/ca/en/web-hosting/sql-options.xml){.external}).
 - You must have a [web hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external} hosted in the same datacentre as your Private SQL instance (you can view this information in your OVHcloud Control Panel).
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
 
 ### View general information on the instance
 
-In the services bar on the left-hand side of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then to the SQL instance concerned. Click on the `General information`{.action} tab.
+In the services bar on the left-hand side of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then to the SQL instance concerned. Click on the `General information`{.action} tab.
 
 > [!primary]
 >

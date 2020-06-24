@@ -33,7 +33,7 @@ En suivant les différentes étapes de ce guide, la migration devrait vous prend
 ## Retrouver les acces et acceder a votre base de donnees
 
 ### Ou retrouver les acces a votre base de donnees
-Dans un premier temps il faut vous connecter à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Dans un premier temps il faut vous connecter à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 Une fois identifié, sélectionnez votre hébergement concerné à gauche dans la partie Hébergement. Rendez-vous ensuite dans l'onglet Bases de données.
 
@@ -49,7 +49,7 @@ Cliquez sur le  **rouage à droite**  : Vous pourrez ainsi  **changer le mot de 
 Pour vous connecter à votre base de données en version MySQL 4, vous avez deux possibilités :
 
 - Utilisez [ce lien](https://phpmyadmin.ovh.net/old/){.external} .
-- Sur votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} , dans la partie Hébergement & onglet SQL, cliquez sur le rouage à droite de votre base de données en MySQL 4, et cliquez sur " Accéder à phpMyAdmin " puis sur [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/){.external} (en bas de la page).
+- Sur votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} , dans la partie Hébergement & onglet SQL, cliquez sur le rouage à droite de votre base de données en MySQL 4, et cliquez sur " Accéder à phpMyAdmin " puis sur [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/){.external} (en bas de la page).
 
 
 ![hosting](images/go-to-phpmyadmin.png){.thumbnail}
@@ -99,7 +99,7 @@ Suite à cette opération, votre base de donnée se retrouvera vide.
 
 
 ### Comment supprimer votre base de donnees en version MySQL 4 ?
-Vous pouvez maintenant quitter PhpMyAdmin. A nouveau sur votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur votre hébergement, puis sur l'onglet SQL.
+Vous pouvez maintenant quitter PhpMyAdmin. A nouveau sur votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur votre hébergement, puis sur l'onglet SQL.
 
 A droite de la ligne de votre base de données en version MYSQL v4.0, cliquez sur le rouage, puis choisissez "Supprimer la base de données".
 
@@ -114,7 +114,7 @@ Il faudra ensuite patienter un délai de 10-15 minutes pour que votre base soit 
 ## Créer et restaurer votre base de donnees en version MySQL 5.6.
 
 ### Comment créer votre base de donnees en version MySQL 5.6 ?
-Maintenant que vous avez supprimé votre base de données en version MySQL 4, il vous faut maintenant en créer une nouvelle en version MySQL 5.6. Pour cela rendez-vous sur votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, section Hébergement, onglet SQL.
+Maintenant que vous avez supprimé votre base de données en version MySQL 4, il vous faut maintenant en créer une nouvelle en version MySQL 5.6. Pour cela rendez-vous sur votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, section Hébergement, onglet SQL.
 
 Ici, cliquez sur le bouton Créer une base de données.
 
@@ -144,7 +144,7 @@ Pour les autres CMS ou les sites faits par un développeur, le mieux est de vous
 
 Une fois que vous avez retrouvé ce fichier sur votre espace FTP, il faut éditer ce fichier. Dans un premier temps, copiez le fichier en local sur votre ordinateur, et éditez le avec un logiciel de texte, comme WordPad ou un blocnote.
 
-Il vous faut modifier les lignes de type "DB_NAME", "DBPASSWORD", "DB_USER" et "DB_HOST" (peut s'appeler différemment en fonction du type de site), et modifier les valeurs correspondantes, par les nouvelles valeurs, que vous retrouvez sur votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, onglet SQL.
+Il vous faut modifier les lignes de type "DB_NAME", "DBPASSWORD", "DB_USER" et "DB_HOST" (peut s'appeler différemment en fonction du type de site), et modifier les valeurs correspondantes, par les nouvelles valeurs, que vous retrouvez sur votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, onglet SQL.
 
 
 ## Cas particuliers

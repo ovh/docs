@@ -16,15 +16,15 @@ The SPF (Sender Policy Framework) allows a server that receives an email to chec
 
 ## Requirements
 
-- You must have the appropriate permissions to manage the domain name from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You must have the appropriate permissions to manage the domain name from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - The domain name must use the OVHcloud configuration (i.e. the OVHcloud DNS servers).
 
 > [!warning]
 >
 > If your domain name does not use the OVHcloud configuration, you must modify the SPF record via the interface of whichever provider manages its domain name configuration.
 >
-> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Select the domain and go to the `DNS servers`{.action} tab.
+> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Select the domain and go to the `DNS servers`{.action} tab.
 >
 
 ## Instructions
@@ -59,7 +59,7 @@ When you order one of these solutions, we recommend that you use an SPF record w
 mypersonaldomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-If your domain uses the OVHcloud configuration, you can check if an SPF record is already configured in this way. To do this, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and go to the services menu on the left. Select the `Domains`{.action} section. Click on the domain in question, then go to the `DNS Zone`{.action} tab.
+If your domain uses the OVHcloud configuration, you can check if an SPF record is already configured in this way. To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and go to the services menu on the left. Select the `Domains`{.action} section. Click on the domain in question, then go to the `DNS Zone`{.action} tab.
 
 A table should appear. This will display the configuration of your OVHcloud domain. It is made up of several DNS records, one per row in the table.
 
@@ -85,7 +85,7 @@ You can filter the table to find the row with the OVHcloud SPF record. This can 
 
 ### Step 3: Modify the SPF
 
-To modify the SPF record in the OVHcloud configuration of your domain, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Select `Domains`{.action} in the services menu on the left-hand side, click on the domain, then go to the `DNS Zone`{.action}.
+To modify the SPF record in the OVHcloud configuration of your domain, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Select `Domains`{.action} in the services menu on the left-hand side, click on the domain, then go to the `DNS Zone`{.action}.
 
 The table displays the OVHcloud configuration of your domain. Each row corresponds to a DNS record.
 

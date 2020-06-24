@@ -12,13 +12,13 @@ order: 2
 
 This guide will tell you how you can monitor you jobs after submitting them. 
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager){.external} to use the Data Processing platform and you have already submitted a job. 
+In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external} to use the Data Processing platform and you have already submitted a job. 
 
 To read an introduction about Data Processing service you can visit [Data Processing Overview](../overview){.external}.
 
 ## Requirements 
 
-- Access to the [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- Access to the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external}
 - A job that has been already submitted to Data Processing
 
 ## Instructions

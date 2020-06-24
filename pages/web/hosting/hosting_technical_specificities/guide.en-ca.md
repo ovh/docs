@@ -16,7 +16,7 @@ order: 4
 ## Requirements
 
 - an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
@@ -29,11 +29,11 @@ order: 4
 
 ### FTP
 
-- Access error ("530 Login authentication failed"): You can make sure the access credentials to your hosting space are correct by checking via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) ("FTP - SSH"). Passwords are never displayed but they can be changed. Please refer to our [FTP guides](../).
+- Access error ("530 Login authentication failed"): You can make sure the access credentials to your hosting space are correct by checking via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) ("FTP - SSH"). Passwords are never displayed but they can be changed. Please refer to our [FTP guides](../).
 
 - FTP connections have to use **passive mode**. Please make sure your script or FTP client is adjusted accordingly.
 
-- In order to connect via **SFTP**, a [**Professional plan**](https://www.ovh.com/ca/en/web-hosting/) or better is required. You can upgrade your plan directly in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) ("General information", "Plan", "Change offer").
+- In order to connect via **SFTP**, a [**Professional plan**](https://www.ovh.com/ca/en/web-hosting/) or better is required. You can upgrade your plan directly in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) ("General information", "Plan", "Change offer").
 
 
 ### Databases / SQL
@@ -74,7 +74,7 @@ Please refer to [this guide](../creating-database/) for more information about m
 
 - You can verify the details of the configuration on our website; please see under [Web Hosting libraries](./#web-hosting-libraries) below. 
 
-- You will be able to change the PHP version for your Web Hosting, either in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) ("**Configuration**") or by editing the .ovhconfig file. Mixed configurations are also possible with the latter. Detailed instructions are available in our guides:
+- You will be able to change the PHP version for your Web Hosting, either in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) ("**Configuration**") or by editing the .ovhconfig file. Mixed configurations are also possible with the latter. Detailed instructions are available in our guides:
 
 [Configuring the .ovhconfig file of your Web Hosting plan](../configuring-file-ovhconfig/)  
 [Modifying the configuration of a Web Hosting plan](../modify_your_web_hosting_systems_runtime_environment/)
@@ -122,7 +122,7 @@ As an example, you can use the function *gethostbyaddr()* to retrieve the hostna
 
 We recommend to consult the information pages to verify the available libraries for your Web Hosting plan. You can find your "infos" page by using the respective cluster link: <http://cluster015.hosting.ovh.net/infos/>
 
-To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
+To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
 You can verify the cluster number of the Web Hosting on this page under **FTP server**.
 
 For CloudWeb Hostings, please refer to: <https://cloudweb-infos.hosting.ovh.net/>

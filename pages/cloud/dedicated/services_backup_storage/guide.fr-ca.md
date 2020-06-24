@@ -16,13 +16,13 @@ Dans le cadre des offres de [serveurs dédiés](https://docs.ovh.com/fr/dedicate
 ## Prérequis
 
 * Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
-* Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Dédié`{.action}.
+* Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Dédié`{.action}.
 
 ## En pratique
 
 ### Activer votre Backup Storage
 
-Connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Activer le Backup Storage`{.action}.
+Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Activer le Backup Storage`{.action}.
 
 ![Activer votre Backup Storage](images/backup-storage-01-edited.png){.thumbnail}
 
@@ -39,7 +39,7 @@ L'accès à votre espace de stockage est restreint par l'adresse IP à l'aide d'
 
 #### Ajouter un accès backup
 
-Connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Ajouter un accès`{.action}.
+Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Ajouter un accès`{.action}.
 
 ![Ajouter un accès backup](images/backup-storage-03-edited.png){.thumbnail}
 
@@ -78,7 +78,7 @@ L'accès au Backup Storage sera désormais révoqué pour ce bloc d’IP.
 
 ### Changer votre mot de passe
 
-Connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Mot de passe oublié ?`{.action}
+Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Mot de passe oublié ?`{.action}
 
 ![Changer votre mot de passe](images/backup-storage-04-edited.png){.thumbnail}
 
@@ -90,7 +90,7 @@ Un e-mail de récupération de mot de passe sera envoyé à l'adresse e-mail enr
 
 ### Supprimer le Backup Storage
 
-Connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Supprimer le Backup Storage`{.action}.
+Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Supprimer le Backup Storage`{.action}.
 
 ![Supprimer le Backup Storage](images/backup-storage-05-edited.png){.thumbnail}
 
@@ -102,7 +102,7 @@ Votre Backup Stockage sera supprimé après quelques minutes. Cette suppression 
 
 ### Commander de l'espace disque supplémentaire
 
-Connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Commander de l’espace disque`{.action}.
+Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Commander de l’espace disque`{.action}.
 
 ![Commander de l'espace disque supplémentaire](images/backup-storage-06-edited.png){.thumbnail}
 

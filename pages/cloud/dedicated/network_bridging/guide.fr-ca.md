@@ -19,7 +19,7 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 
 * Posséder un serveur dédié avec un hyperviseur installé ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, par exemple).
 * Bénéficier d'au moins une adresse [IP fail-over](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml) connectée au serveur.
-* Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
@@ -36,7 +36,7 @@ Pour cet exemple, nous utiliserons les valeurs suivantes dans nos exemples de co
 
 ### Assigner une adresse MAC virtuelle
 
-Connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le menu `Dédié`{.action}. Cliquez ensuite sur le menu `IP`{.action} dans la barre de services à gauche, puis recherchez votre adresse IP fail-over dans le tableau.
+Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le menu `Dédié`{.action}. Cliquez ensuite sur le menu `IP`{.action} dans la barre de services à gauche, puis recherchez votre adresse IP fail-over dans le tableau.
 
 ![Failover IP](images/virtual_mac_01.png){.thumbnail}
 
@@ -62,7 +62,7 @@ Votre adresse de passerelle sera alors :
 
 > [!primary]
 >
-Pour tous les systèmes d'exploitation et distributions, vous devez configurer votre machine virtuelle avec l'adresse MAC virtuelle créée dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Pour tous les systèmes d'exploitation et distributions, vous devez configurer votre machine virtuelle avec l'adresse MAC virtuelle créée dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 >
 
 #### Proxmox
@@ -348,7 +348,7 @@ ip addr add FAILOVER_IP/32 dev test-bridge
 
 Remplacez « MAC_ADDRESS » par l'adresse MAC virtuelle générée dans le panneau de configuration et « FAILOVER_IP » par l'IP fail-over réel.
 
-Ensuite, il vous suffit d'effectuer un ping sur votre IP fail-over depuis l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration sur la machine virtuelle ou sur l'hôte qui empêche l'IP fail-over de fonctionner en mode normal. Si, au contraire, l'IP ne fonctionne toujours pas, veuillez ouvrir un ticket à l'équipe d'assistance via votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} pour une enquête complémentaire.
+Ensuite, il vous suffit d'effectuer un ping sur votre IP fail-over depuis l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration sur la machine virtuelle ou sur l'hôte qui empêche l'IP fail-over de fonctionner en mode normal. Si, au contraire, l'IP ne fonctionne toujours pas, veuillez ouvrir un ticket à l'équipe d'assistance via votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} pour une enquête complémentaire.
 
 ## Aller plus loin
 

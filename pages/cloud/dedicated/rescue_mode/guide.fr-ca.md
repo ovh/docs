@@ -22,7 +22,7 @@ Le mode rescue est un outil de votre serveur dédié. Il vous permet de démarre
 
 ## En pratique
 
-Vous pouvez activer le mode rescue en vous connectant à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager/){.external}. Sélectionnez votre serveur en allant dans la partie `Dédié`{.action}, puis `Serveurs dédiés`{.action}. Cliquez ensuite successivement sur `État du serveur`{.action}, `Informations générales`{.action}, `…`{.action} et `Modifier`{.action} pour changer le mode de démarrage.
+Vous pouvez activer le mode rescue en vous connectant à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager/){.external}. Sélectionnez votre serveur en allant dans la partie `Dédié`{.action}, puis `Serveurs dédiés`{.action}. Cliquez ensuite successivement sur `État du serveur`{.action}, `Informations générales`{.action}, `…`{.action} et `Modifier`{.action} pour changer le mode de démarrage.
 
 ![Changer le mode de démarrage](images/rescue-mode-01.png){.thumbnail}
 
@@ -117,7 +117,7 @@ rescue:~# mount /dev/hda1 /mnt/
 
 #### Accéder à WinRescue
 
-Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identifiants de connexion en mode rescue. Pour les utiliser, vous devez télécharger et installer une console VNC ou utiliser le module `IPMI` dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager/){.external}.
+Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identifiants de connexion en mode rescue. Pour les utiliser, vous devez télécharger et installer une console VNC ou utiliser le module `IPMI` dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager/){.external}.
 
 ![WinRescue Windows](images/rescue-mode-06.png){.thumbnail}
 
