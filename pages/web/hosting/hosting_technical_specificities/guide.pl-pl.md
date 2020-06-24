@@ -69,7 +69,7 @@ Aby uzyskać więcej informacji na temat zarządzania bazami danych, zapoznaj si
 
 - Zapoznaj się z przewodnikiem po [ofertach hostingu WWW](https://www.ovh.pl/hosting/php.xml), aby upewnić się, że plan hostingu, który chcesz zamówić, odpowiada Twoim potrzebom.
 
-- Możesz sprawdzić szczegóły konfiguracji Twojego hostingu. W tym celu sprawdź rubrykę \[„Informacje techniczne o Twoim hostingu”] (./#informacje-techniczne-o-twoim-hostingu) na dole niniejszego przewodnika. 
+- Możesz sprawdzić szczegóły konfiguracji Twojego hostingu. W tym celu sprawdź rubrykę [„Informacje techniczne o Twoim hostingu”](./#informacje-techniczne-o-twoim-hostingu) na dole niniejszego przewodnika. 
 
 - Wersję PHP hostingu możesz zmienić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) („**Konfiguracja**”) lub modyfikując plik .ovhconfig. W przypadku tego drugiego rozwiązania możliwe są również konfiguracje mieszane. Szczegółowe instrukcje znajdują się w przewodnikach:
 

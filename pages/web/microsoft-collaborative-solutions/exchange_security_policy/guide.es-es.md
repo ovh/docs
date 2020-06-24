@@ -39,10 +39,10 @@ Continúe leyendo esta guía en el apartado correspondiente a la acción que des
 
 |Acción|Descripción| 
 |---|---| 
-|[Reforzar la seguridad de la conexión](./#renforcer-la-securite-a-la-connexion){.external}|Permite indicar si las cuentas deben bloquearse después de un cierto número de intentos de conexión fallidos.|
-|[Aumentar la seguridad de las contraseñas](./#complexifier-la-securite-des-mots-de-passe){.external}|Permite establecer requisitos de complejidad y reglas relativas al cambio de las contraseñas.|
-|[Reforzar la comprobación de los mensajes entrantes (solo para Exchange)](./#renforcer-la-verification-des-messages-entrants-exchange-uniquement){.external}|Permite indicar si los servidores de OVHcloud deben comprobar si los mensajes recibidos provienen de un origen legítimo (verificación DKIM y/o SPF).|
-|[Configurar la visualización de los mensajes no deseados (solo para Exchange)](./#definir-laffichage-des-messages-indesirables-exchange-uniquement){.external}|Permite indicar si los mensajes no deseados deben llevar una etiqueta que permita identificarlos o deben trasladarse automáticamente a la papelera.|
+|[Reforzar la seguridad de la conexión](./#reforzar-la-seguridad-de-la-conexion){.external}|Permite indicar si las cuentas deben bloquearse después de un cierto número de intentos de conexión fallidos.|
+|[Aumentar la seguridad de las contraseñas](./#aumentar-la-seguridad-de-las-contrasenas){.external}|Permite establecer requisitos de complejidad y reglas relativas al cambio de las contraseñas.|
+|[Reforzar la comprobación de los mensajes entrantes (solo para Exchange)](./#reforzar-la-comprobacion-de-los-mensajes-entrantes-solo-para-exchange){.external}|Permite indicar si los servidores de OVHcloud deben comprobar si los mensajes recibidos provienen de un origen legítimo (verificación DKIM y/o SPF).|
+|[Configurar la visualización de los mensajes no deseados (solo para Exchange)](./#configurar-la-visualizacion-de-los-mensajes-no-deseados-solo-para-exchange){.external}|Permite indicar si los mensajes no deseados deben llevar una etiqueta que permita identificarlos o deben trasladarse automáticamente a la papelera.|
 
 ### Reforzar la seguridad de la conexión
 
