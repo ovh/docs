@@ -9,7 +9,7 @@ legacy_guide_number: g1290
 **Last updated 5th May 2020**
 
 ## 
-Sign in to the [Control Panel](https://www.ovh.com/auth/?action=gotomanager) using your OVHcloud username (NIC) and password. 
+Sign in to the [Control Panel](https://ca.ovh.com/auth/?action=gotomanager) using your OVHcloud username (NIC) and password. 
 
 Select your web hosting platform in the "Hosting" section.
 

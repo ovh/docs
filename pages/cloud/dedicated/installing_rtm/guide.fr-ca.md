@@ -17,7 +17,7 @@ Le Real Time Monitoring (RTM) permet de surveiller partiellement votre serveur e
 
 - Vous devez être connecté via SSH (ou sur votre interface utilisateur graphique) sur votre serveur Linux (accès *root*)
 - Vous devez être connecté au bureau à distance sur votre serveur Windows (accès *administrateur*).
-- Vous devez être connecté à votre [Espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Vous devez être connecté à votre [Espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
 

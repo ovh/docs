@@ -19,13 +19,13 @@ Vous pouvez accueillir plusieurs sites internet sur une même offre d'hébergeme
 - Posséder une offre [d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} compatible.
 - Disposer d'un ou plusieurs [noms de domaine](https://www.ovh.com/fr/domaines/){.external}.
 - Pouvoir modifier la configuration de votre ou de vos noms de domaine (la zone DNS).
-- Être connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
 ### Étape 1 : accéder à la gestion multisite
 
-Tout d'abord, connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche, sélectionnez l'offre concernée, puis choisissez l'onglet `Multisite`{.action}.
+Tout d'abord, connectez-vous à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche, sélectionnez l'offre concernée, puis choisissez l'onglet `Multisite`{.action}.
 
 Le tableau qui s'affiche liste tous les noms de domaine ajoutés à votre solution d'hébergement web. Certains d’entre eux ont été créés automatiquement lors de l’installation de votre hébergement.
 

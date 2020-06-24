@@ -18,13 +18,13 @@ Une base de données (*database*, « DB » ou « BDD ») permet de stocker des �
 
 - Disposer d'une offre d’[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
 - Avoir la possibilité de créer des bases de données dans le cadre de votre offre.
-- Disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
 ### Étape 1 : accéder à la gestion des bases de données de l'hébergement
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web.
 

@@ -19,7 +19,7 @@ La page d'avertissement « Site non installé » vous signale que la configurati
 - Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
 - Pouvoir gérer votre [hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} (celui sur lequel est hébergé le site internet concerné).
 - Pouvoir gérer la configuration du nom de domaine concerné (c'est-à-dire sa zone DNS).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
@@ -34,7 +34,7 @@ Les deux étapes ci-dessous vous permettent de vérifier les deux configurations
 
 ### Étape 1 : vérifier la configuration de l'hébergement web (Multisite)
 
-Pour vérifier que le nom de domaine est correctement ajouté en tant que Multisite à votre hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Dans la liste de vos hébergements, cliquez sur celui qui héberge le site internet pour lequel la page « Site non installé » s'affiche. Positionnez-vous enfin sur l'onglet `Multisite`{.action}.
+Pour vérifier que le nom de domaine est correctement ajouté en tant que Multisite à votre hébergement web, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Dans la liste de vos hébergements, cliquez sur celui qui héberge le site internet pour lequel la page « Site non installé » s'affiche. Positionnez-vous enfin sur l'onglet `Multisite`{.action}.
 
 Le tableau qui s'affiche alors contient tous les noms de domaine qui ont été ajoutés à votre hébergement en tant que Multisite. La barre de recherche peut vous aider à retrouver le nom de domaine concerné.
 
@@ -58,14 +58,14 @@ Vous pouvez à présent vérifier la configuration DNS de votre nom de domaine. 
 
 > [!primary]
 >
-> Si votre nom de domaine est enregistré chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, toujours dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis sur le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Serveurs DNS`{.action}.
+> Si votre nom de domaine est enregistré chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, toujours dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis sur le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Serveurs DNS`{.action}.
 >
 
 La vérification peut s'effectuer à deux endroits différents selon la configuration utilisée par votre nom de domaine :
 
 - **votre nom de domaine n'utilise pas la configuration d'OVHcloud** : vous devez réaliser la vérification (décrite ci-dessous) depuis l'interface du prestataire gérant la configuration de votre nom de domaine ;
 
-- **votre nom de domaine utilise la configuration d'OVHcloud** : la vérification s'effectue depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Rendez-vous sur l'onglet `Zone DNS`{.action} une fois positionné sur le nom de domaine concerné. La configuration DNS s'affiche dans un tableau, chaque ligne représentant un enregistrement DNS particulier. Vous avez la possibilité de filtrer le contenu par type d’enregistrement ou par nom de domaine.
+- **votre nom de domaine utilise la configuration d'OVHcloud** : la vérification s'effectue depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Rendez-vous sur l'onglet `Zone DNS`{.action} une fois positionné sur le nom de domaine concerné. La configuration DNS s'affiche dans un tableau, chaque ligne représentant un enregistrement DNS particulier. Vous avez la possibilité de filtrer le contenu par type d’enregistrement ou par nom de domaine.
 
 ![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
 

@@ -19,8 +19,8 @@ En d'autres termes, ces enregistrements stockés sur des serveurs DNS rendent vo
 ## Prérequis
 
 - Posséder un nom de domaine enregistré chez OVHcloud.
-- Disposer des autorisations [appropriées pour gérer](../../customer/gestion-des-contacts/){.external} le nom de domaine depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Disposer des autorisations [appropriées pour gérer](../../customer/gestion-des-contacts/){.external} le nom de domaine depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 > [!warning]
 >
@@ -48,7 +48,7 @@ Toutefois, il est important de noter que :
 
 ### Étape 1 : accéder à la zone de gestion des serveurs DNS OVHcloud du  domaine
 
-Tout d'abord, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Domaines`{.action} dans la barre de services située à gauche, puis choisissez le nom de domaine concerné. Ensuite, accédez à l'onglet `Serveurs DNS`{.action}.
+Tout d'abord, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Domaines`{.action} dans la barre de services située à gauche, puis choisissez le nom de domaine concerné. Ensuite, accédez à l'onglet `Serveurs DNS`{.action}.
 
 Le tableau qui apparaît affiche les serveurs DNS actuellement définis avec OVHcloud pour votre nom de domaine. Plusieurs serveurs DNS peuvent être répertoriés, chacun possédant sa propre ligne dans le tableau.
 
@@ -73,7 +73,7 @@ Une fois que vous avez entré ces informations, cliquez sur `Appliquer la config
 
 Une fois les modifications requises effectuées, vous devez attendre qu'elles soient pleinement effectives. Deux périodes successives doivent être prises en compte :
 
-- la modification apportée côté OVHcloud doit être prise en compte par le registre qui gère votre extension de nom de domaine. Vous pouvez suivre la progression de cette opération dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} de configuration OVHcloud en accédant à la section `Domaines`{.action} de la barre de services située à gauche, puis `Opérations en cours`{.action} ;
+- la modification apportée côté OVHcloud doit être prise en compte par le registre qui gère votre extension de nom de domaine. Vous pouvez suivre la progression de cette opération dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} de configuration OVHcloud en accédant à la section `Domaines`{.action} de la barre de services située à gauche, puis `Opérations en cours`{.action} ;
 - une fois que la modification a été prise en compte par l'organisation qui gère votre extension de nom de domaine, vous devez attendre un maximum de 48 heures pour que les modifications que vous avez apportées soient entièrement propagées.
 
 ## Aller plus loin

@@ -17,7 +17,7 @@ A *database* (“DB”) is used to store what are known as dynamic elements, suc
 ## Requirements
 
 - You must have an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/).
-- You must have the correct permissions to manage the Web Hosting plan in question from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must have the correct permissions to manage the Web Hosting plan in question from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 > [!warning]
 >
@@ -41,7 +41,7 @@ Today, virtually all CMSs (WordPress, Joomla!, etc.) use a database for storing 
 
 ### Step 2: Access the Web Hosting database management area
 
-First of all, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, go to the `Databases`{.action} tab.
+First of all, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, go to the `Databases`{.action} tab.
 
 The table shown contains all the databases created as part of your Web Hosting plan.
 

@@ -17,13 +17,13 @@ OVHcloud Web Hosting plans provide you with access to a storage space you can us
 ## Requirements
 
 - You must have an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/).
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
 
 ### Step 1: Access the FTP user management interface
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the appropriate Web Hosting plan. Go to the `FTP - SSH`{.action} tab.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the appropriate Web Hosting plan. Go to the `FTP - SSH`{.action} tab.
 
 The table will provide you with a list of FTP user accounts created on your Web Hosting plan. You can use these user accounts to access your storage space and put your website’s files online. A user account will be created automatically when you set up your Web Hosting plan.
 

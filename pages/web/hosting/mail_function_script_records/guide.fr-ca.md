@@ -16,18 +16,18 @@ Les e-mails automatisés sont des messages envoyés via des scripts. Ils sont pa
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 > [!primary]
 >
 > Ce guide ne concerne que les e-mails envoyés depuis des scripts situés sur votre hébergement web OVHcloud.
 >
-> Vous souhaitez gérer les adresses e-mail comprises dans votre offre MX Plan ou dans votre offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} ? Rendez-vous dans la section `Emails`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+> Vous souhaitez gérer les adresses e-mail comprises dans votre offre MX Plan ou dans votre offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} ? Rendez-vous dans la section `Emails`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 >
 
 ## En pratique
 
-Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Pour cela, connectez-vous à ce dernier, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus +`{.action}, puis sur `Scripts emails`{.action}.
+Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Pour cela, connectez-vous à ce dernier, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus +`{.action}, puis sur `Scripts emails`{.action}.
 
 La page qui s'affiche alors vous permet de suivre et de gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud.
 
