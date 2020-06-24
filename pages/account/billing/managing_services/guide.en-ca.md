@@ -16,12 +16,12 @@ In the OVH Control Panel, you can manage all of your OVH services.
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislations, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to your OVH contracts, which you can access via the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} by going to `My services`{.action} then `My contracts`{.action}.
+> Depending on your place of residence and its local legislations, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to your OVH contracts, which you can access via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to `My services`{.action} then `My contracts`{.action}.
 >
 
 ## Requirements
 
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 - active OVH services
 
 ## Instructions
@@ -39,7 +39,7 @@ We recommend reading the following guides, and focusing on the operation you wis
 
 ### View your services via the “Manage my services” interface.
 
-Log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `My services`{.action}.
+Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `My services`{.action}.
 
 ![manageservices](images/manage-ovh-services-step1.png){.thumbnail}
 
@@ -64,7 +64,7 @@ If you have several solutions, the table may be more than one page long. You can
 
 ### Manage your services via the “Manage my services” interface.
 
-Log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `My services`{.action}.
+Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `My services`{.action}.
 
 ![manageservices](images/manage-ovh-services-step1.png){.thumbnail}
 

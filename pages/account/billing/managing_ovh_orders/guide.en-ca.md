@@ -9,18 +9,18 @@ section: 'Managing orders, bills and services'
 
 ## Objective
 
-There are various stages in the OVH order process, and you can track them in the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+There are various stages in the OVH order process, and you can track them in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 **This guide will provide you with more information on your purchase order, and its various statuses.**
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not be applicable to your situation. If you have any doubts, please refer to your OVH contracts, which you can access from the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} by going to `My services`{.action}, then `My contracts`{.action}.
+> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not be applicable to your situation. If you have any doubts, please refer to your OVH contracts, which you can access from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to `My services`{.action}, then `My contracts`{.action}.
 >
 
 ## Requirements
 
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 - at least one OVH product order
 
 
@@ -40,12 +40,12 @@ A purchase order is generated when you place an order. It lists the products ord
 |4|Here, you will find the available payment methods. We can only offer the payment methods authorised in the account’s country of origin, or those linked to the account type.|
 
 
-As a reminder, you can view your purchase order at any time in the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+As a reminder, you can view your purchase order at any time in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ### Access purchase orders via the OVH Control Panel.
 
-To access the area for managing orders, simply click on your first name in the top right-hand corner of the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, then `My orders`{.action}.
+To access the area for managing orders, simply click on your first name in the top right-hand corner of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then `My orders`{.action}.
 
 ![Control Panel](images/customer_panel_order.png){.thumbnail}
 
@@ -79,7 +79,7 @@ If you have a purchase order that is in the process of being delivered or awaiti
 
 Our [General Terms and Conditions of Services](https://www.ovh.com/ca/en/support/termsofservice/General_Terms_of_Service_CA.pdf){.action} detail the conditions required for withdrawal from a contract.
 
-If the eligibility criteria are met, you can withdraw from a service directly in the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. To do this, proceed as though you would like to view the purchase order, but instead of selecting `View order in HTML format`{.action}, select `Cancel the order`{.action}.
+If the eligibility criteria are met, you can withdraw from a service directly in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. To do this, proceed as though you would like to view the purchase order, but instead of selecting `View order in HTML format`{.action}, select `Cancel the order`{.action}.
 
 ![Cancel an order](images/cancel_order.png){.thumbnail}
 

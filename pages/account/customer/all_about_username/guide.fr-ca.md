@@ -24,7 +24,7 @@ Il est aussi appelé NIC-handle.
 
 ## Comment créer un identifiant client ?
 
-Si vous n'avez pas encore d'identifiant, il suffit de vous rendre sur la page de [création de compte OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. 
+Si vous n'avez pas encore d'identifiant, il suffit de vous rendre sur la page de [création de compte OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. 
 
 Entrez vos coordonnées sur ce formulaire en ligne, en veillant à nous communiquer **une adresse e-mail valide**.
 
@@ -70,7 +70,7 @@ En cliquant sur vos initiales, vous pourrez également retrouver le `code client
 
 ## Comment vous connecter à votre espace client ?
 
-Rendez-vous sur [la page d'authentification OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, renseignez votre identifiant et votre mot de passe.
+Rendez-vous sur [la page d'authentification OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, renseignez votre identifiant et votre mot de passe.
 
 ![identifiant client](images/nichandle03.png){.thumbnail}
 

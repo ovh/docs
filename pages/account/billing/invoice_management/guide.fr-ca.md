@@ -15,12 +15,12 @@ OVH met à votre disposition un espace vous permettant de consulter, gérer et r
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVH disponibles dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, rubrique `Mes services`{.action} puis `Mes contrats`{.action}.
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVH disponibles dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, rubrique `Mes services`{.action} puis `Mes contrats`{.action}.
 >
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - Être connecté en tant que contact facturation de votre service (plus de détails sur les différents contacts dans le guide « [Gérer les contacts de ses services](https://docs.ovh.com/fr/customer/gestion-des-contacts/){.external} »).
 
 
@@ -48,7 +48,7 @@ Les taxes seront ajoutées en bas, dans le récapitulatif global du montant indi
 
 > [!primary]
 >
-> Si la mention « Relevé de compte » apparaît au niveau du moyen de paiement utilisé, cela signifie qu'il s'agit d'un renouvellement automatique. Le moyen de paiement utilisé sera forcément celui qui a été validé dans l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+> Si la mention « Relevé de compte » apparaît au niveau du moyen de paiement utilisé, cela signifie qu'il s'agit d'un renouvellement automatique. Le moyen de paiement utilisé sera forcément celui qui a été validé dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
 >
 
 
@@ -56,7 +56,7 @@ Les taxes seront ajoutées en bas, dans le récapitulatif global du montant indi
 
 #### Consulter et gérer ses factures
 
-Pour consulter vos factures, rendez-vous dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la section `Facturation`{.action} en cliquant sur votre prénom en haut à droite. Vous arriverez alors sur une page récapitulative de vos différentes factures : 
+Pour consulter vos factures, rendez-vous dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la section `Facturation`{.action} en cliquant sur votre prénom en haut à droite. Vous arriverez alors sur une page récapitulative de vos différentes factures : 
 
 ![Récapitulatif des factures](images/billing_section.png){.thumbnail}
 
