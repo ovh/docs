@@ -18,10 +18,10 @@ La plupart du temps, une émission/réception d'e-mails impossible est liée à 
 
 Suite à l'envoi d'un e-mail sur votre compte mail, recevez-vous un message d'erreur ? Si oui, repérez le message d'erreur, il pourra vous en préciser la raison (boite pleine, boite non existante ...).
 
-Vous pouvez également vérifier que votre nom de domaine livre les e-mails au bon endroit. Pour cela, depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sélectionnez la zone DNS de votre nom de domaine et regardez les enregistrements de type MX mis en place. Ces enregistrements doivent être sous la forme « mx*.mail.ovh.net. » (remplacez * par un chiffre entre 0 et 3). 
+Vous pouvez également vérifier que votre nom de domaine livre les e-mails au bon endroit. Pour cela, depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, sélectionnez la zone DNS de votre nom de domaine et regardez les enregistrements de type MX mis en place. Ces enregistrements doivent être sous la forme « mx*.mail.ovh.net. » (remplacez * par un chiffre entre 0 et 3). 
 Si les enregistrements MX sont différents, c'est que vous avez potentiellement une offre e-mail d'un autre opérateur qu'OVHcloud.
 
-**Trucs et Astuces** : Si la connexion à votre webmail est impossible, votre mot de passe est peut-être erroné. Vérifiez-le et, si nécessaire, nous vous invitons à le modifier depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} et à renouveler votre connexion. Pour cela, vous pouvez vous appuyer sur [notre documentation](../utilisation-avancee-des-e-mails/).
+**Trucs et Astuces** : Si la connexion à votre webmail est impossible, votre mot de passe est peut-être erroné. Vérifiez-le et, si nécessaire, nous vous invitons à le modifier depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et à renouveler votre connexion. Pour cela, vous pouvez vous appuyer sur [notre documentation](../utilisation-avancee-des-e-mails/).
 
 ### Comment configurer mon adresse e-mail et l'utiliser avec le webmail ? 
 
@@ -34,18 +34,18 @@ Grâce au [webmail](https://www.ovh.com/ca/fr/mail/){.external}, vous pouvez acc
 
 ### Comment gérer mes services e-mails ? 
 
-L'ensemble de vos adresses e-mail se gère depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Pour cela, une fois connecté, accédez au produit concerné. Vous pouvez ainsi modifier le mot de passe de vos adresses e-mail, vérifier leur taux de remplissage, créer de nouvelles adresses ou supprimer des adresses existantes.
+L'ensemble de vos adresses e-mail se gère depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Pour cela, une fois connecté, accédez au produit concerné. Vous pouvez ainsi modifier le mot de passe de vos adresses e-mail, vérifier leur taux de remplissage, créer de nouvelles adresses ou supprimer des adresses existantes.
 
-**Trucs et Astuces** : Sur les offres e-mail MX Plan, vous pouvez déléguer la gestion d'un compte e-mail à un autre compte OVHcloud tout en gardant vous même la main sur celui-ci. Pour cela, il vous suffit de configurer une délégation, depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Vous pouvez vous appuyer sur [notre documentation](../deleguer-gestion-emails-autre-identifiant/). 
+**Trucs et Astuces** : Sur les offres e-mail MX Plan, vous pouvez déléguer la gestion d'un compte e-mail à un autre compte OVHcloud tout en gardant vous même la main sur celui-ci. Pour cela, il vous suffit de configurer une délégation, depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Vous pouvez vous appuyer sur [notre documentation](../deleguer-gestion-emails-autre-identifiant/). 
 
 ### Comment limiter la réception de spams ? 
 
 Pour limiter la réception de SPAMS, vous pouvez mettre en place des filtres sur vos e-mails (appelées « Filtres » sur l'offre MXPlan). Ils auront pour but de supprimer ou de déplacer des e-mails dans le dossier « courriers indésirables » dès leur réception. 
-Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, puis dans la rubrique `E-mail`, sélectionnez le domaine concerné , l'onglet `E-mail`{.action} puis dans la colonne `Filtre`{.action}, cliquez sur le bouton d'action.
+Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, puis dans la rubrique `E-mail`, sélectionnez le domaine concerné , l'onglet `E-mail`{.action} puis dans la colonne `Filtre`{.action}, cliquez sur le bouton d'action.
 
 Si la colonne `Filtre`{.action} n'est pas présente dans votre espace-client, la création de filtres doit alors s'effectuer via des règles de gestion de boîte de réception dans le [webmail](https://www.ovh.com/ca/fr/mail/){.external}. Vous pouvez consulter le guide suivant pour plus de détails : [Règles de boîte de réception depuis l'interface OWA](../../microsoft-collaborative-solutions/regles-boite-de-reception-owa/#exemple-2-filtrer-les-e-mails-indesirables-spam).
 
-**Trucs et Astuces** : Si vous définissez un filtre sur la réception de SPAMS, il est possible que des e-mails légitimes soient considérés comme étant des SPAMS. On appelle cela des « faux positifs ».Si cela vous arrive, nous vous invitons à déclarer une demande d'assistance dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} afin de nous en faire part. Nous pourrons ainsi faire le nécessaire afin que ceux-ci ne soient plus considérés comme SPAMS par la suite.
+**Trucs et Astuces** : Si vous définissez un filtre sur la réception de SPAMS, il est possible que des e-mails légitimes soient considérés comme étant des SPAMS. On appelle cela des « faux positifs ».Si cela vous arrive, nous vous invitons à déclarer une demande d'assistance dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} afin de nous en faire part. Nous pourrons ainsi faire le nécessaire afin que ceux-ci ne soient plus considérés comme SPAMS par la suite.
 
 ### L'offre Office 365 Pro Plus comprend-t-elle une licence Skype? 
 

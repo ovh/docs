@@ -16,7 +16,7 @@ A Domain Name System (DNS) zone is a domain name’s config file. It is composed
 
 ## Requirements
 
-- permission to manage the domain name from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- permission to manage the domain name from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 - the OVHcloud domain name configuration (on OVHcloud's DNS servers)
 - The DynHost record you are about to create must not already exist as an A record in your domain name’s OVHcloud DNS zone.
 
@@ -24,14 +24,14 @@ A Domain Name System (DNS) zone is a domain name’s config file. It is composed
 >
 > - If your domain name does not use OVHcloud's DNS servers, you will need to contact the service provider managing its configuration in order to find out what approach you need to take.
 > 
-> - If your domain name is registered with OVHcloud, you can check if the domain name is using our configuration. To do this, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the domain concerned, and go to the `DNS servers`{.action} tab.
+> - If your domain name is registered with OVHcloud, you can check if the domain name is using our configuration. To do this, go to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, select the domain concerned, and go to the `DNS servers`{.action} tab.
 >
 
 ## Instructions
 
 ### Step 1: Create a DynHost username.
 
-The first step involves creating a DynHost username. Once you do so, you can then update the dynamic DNS record you would like to create. First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Next, go to the `DynHost`{.action} tab.
+The first step involves creating a DynHost username. Once you do so, you can then update the dynamic DNS record you would like to create. First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Next, go to the `DynHost`{.action} tab.
 
 ![dynhost](images/use-dynhost-step1.png){.thumbnail}
 

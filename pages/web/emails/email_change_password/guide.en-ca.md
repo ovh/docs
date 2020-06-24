@@ -17,7 +17,7 @@ You can use the email addresses created as part of the MX Plan solution to send 
 ## Requirements
 
 - an MX Plan solution, available as part of our [web hosting plans](https://www.ovh.co.uk/web-hosting/){.external}, the [free Start 10M hosting plan](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.external}, or ordered separately as a standalone solution
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in the `Web`{.action} section, or access to the email address via Outlook Web Messenger (OWA) [webmail](https://www.ovh.co.uk/mail/){.external}
+- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} in the `Web`{.action} section, or access to the email address via Outlook Web Messenger (OWA) [webmail](https://www.ovh.co.uk/mail/){.external}
 
 > [!primary]
 >
@@ -28,7 +28,7 @@ You can use the email addresses created as part of the MX Plan solution to send 
 
 Depending on the date your service was activated and if [it was recently migrated](https://www.ovh.co.uk/mxplan-migration/){.external}, you will be using either the legacy version or the new version of the MX Plan solution. Before you proceed, you will need to check which version you are using. 
 
-To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the `Web`{.action} section. Click `Emails`{.action} in the service bar on the left-hand side, then choose the name of the MX Plan solution. You can now follow the instructions below for the version you own.
+To do this, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Web`{.action} section. Click `Emails`{.action} in the service bar on the left-hand side, then choose the name of the MX Plan solution. You can now follow the instructions below for the version you own.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|

@@ -17,7 +17,7 @@ Sur le web, il existe une multitude de sites internet. Qu’il s’agisse de cr�
 ## Prérequis
 
 - Disposer d’une offre d’[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} (sauf Cloud Web).
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
 
 ## En pratique
 
@@ -34,7 +34,7 @@ Lorsque vous changez la configuration de votre hébergement, vous modifiez celle
 
 #### Étape 1 : accéder à la gestion de la configuration de l'hébergement
 
-Pour démarrer cette manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. Cliquez ensuite sur le bouton représentant trois points, puis sur `Modifier la configuration`{.action}.
+Pour démarrer cette manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. Cliquez ensuite sur le bouton représentant trois points, puis sur `Modifier la configuration`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
