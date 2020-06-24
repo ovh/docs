@@ -6,7 +6,7 @@ section: Security
 hidden: true
 ---
 
-**Last updated 16th April 2020**
+**Last updated 24th June 2020**
 
 ## Objective
 
@@ -16,8 +16,8 @@ Two-factor authentication via Universal Second Factor (U2F) is one of the method
 
 ## Requirements
 
-- knowledge of the [two-factor authentication methods offered by OVHcloud](https://docs.ovh.com/gb/en/customer/secure-account-with-2FA/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- knowledge of the [two-factor authentication methods offered by OVHcloud](https://docs.ovh.com/ca/en/customer/secure-account-with-2FA/)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 - a U2F security key
 - a USB port on your computer
 
@@ -25,7 +25,7 @@ Two-factor authentication via Universal Second Factor (U2F) is one of the method
 
 ### Step 1: Enable two-factor authentication.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click your name in the top right-hand corner (1), then click your initials (2). Next, click `Security`{.action} (3) and `Enable two-factor authentication`{.action} (4).
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click your name in the top right-hand corner (1), then click your initials (2). Next, click `Security`{.action} (3) and `Enable two-factor authentication`{.action} (4).
 
 ![2FA securitykey](images/hub2FA.png){.thumbnail}
 
@@ -34,7 +34,7 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 Select the security key method, then confirm.
 
-![2FA securitykey](images/2fakey1edit.png){.thumbnail}
+![2FA securitykey](images/2fakeyeditca.png){.thumbnail}
 
 ### Step 3: Confirm two-factor authentication.
 
@@ -66,11 +66,11 @@ You can delete or regenerate them via the OVHcloud Control Panel.
 
 Once you have enabled two-factor authentication, the login screen will offer you one of your security methods. If you would like to use another method, click `Try another method`{.action}.
 
-![2FA securitykey](images/2fakeylogin.png){.thumbnail}
+![2FA securitykey](images/mobile_auth.png){.thumbnail}
 
 All of the choices you have enabled will then appear.
 
-![2FA securitykey](images/2faloginchoice.png){.thumbnail}
+![2FA securitykey](images/backupcode_auth.png){.thumbnail}
 
 ## Go further
 
