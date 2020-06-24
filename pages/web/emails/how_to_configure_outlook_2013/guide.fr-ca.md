@@ -79,7 +79,7 @@ Il vous est possible de choisir la manière de configurer votre compte e-mail. C
 ### Parametres des comptes POP - IMAP.
 Voici les informations à renseigner :
 
-Votre nom : Le nom de votre compte e-mail. Adresse de messagerie : Votre adresse e-mail mutualisé entière. Type de compte : Sélectionnez  **POP3** . Serveur de messagerie entrant : Le serveur de réception  **SSL0.OVH.NET** Serveur de messagerie sortant (SMTP ): Le serveur d'envoi  **SSL0.OVH.NET** Nom d'utilisateur : Votre adresse e-mail mutualisé entière. Mot de passe : Le mot de passe que vous avez défini dans [le manager](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Votre nom : Le nom de votre compte e-mail. Adresse de messagerie : Votre adresse e-mail mutualisé entière. Type de compte : Sélectionnez  **POP3** . Serveur de messagerie entrant : Le serveur de réception  **SSL0.OVH.NET** Serveur de messagerie sortant (SMTP ): Le serveur d'envoi  **SSL0.OVH.NET** Nom d'utilisateur : Votre adresse e-mail mutualisé entière. Mot de passe : Le mot de passe que vous avez défini dans [le manager](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 Cochez "Mémoriser le mot de passe" Décochez "Exiger l'authentification par mot de passe sécurisé (SPA) lors de la connexion"
 
@@ -150,7 +150,7 @@ Voici les informations à retenir pour la configuration d'un compte e-mail **POP
 Configuration  **POP**  avec sécurisation SSL activée ou désactivée :
 
 - Adresse Email : Votre adresse e-mail mutualisée entière.
-- Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - Nom d'utilisateur : Votre adresse e-mail mutualisée entière.
 - Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET**
 - Port serveur entrant : Le port du serveur entrant :  **995**  ou  **110**
@@ -175,7 +175,7 @@ Voici les informations à retenir pour la configuration d'un compte e-mail **IMA
 Configuration  **IMAP**  avec sécurisation SSL activée ou désactivée :
 
 - Adresse Email : Votre adresse e-mail mutualisée entière.
-- Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - Nom d'utilisateur : Votre adresse e-mail mutualisée entière.
 - Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET**
 - Port serveur entrant : Le port du serveur entrant :  **993**  ou  **143**

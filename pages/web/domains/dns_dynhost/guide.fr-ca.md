@@ -16,7 +16,7 @@ La zone Domain Name System (DNS) d’un nom de domaine constitue le fichier de c
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - Utiliser la configuration OVHcloud (ses serveurs DNS) pour le nom de domaine concerné.
 - L'enregistrement DynHost que vous vous apprêtez à créer ne doit pas déjà exister dans la zone DNS OVHcloud de votre nom de domaine en tant qu'enregistrement « A ».
 
@@ -24,14 +24,14 @@ La zone Domain Name System (DNS) d’un nom de domaine constitue le fichier de c
 >
 > - Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez vous rapprocher du prestataire gérant sa configuration afin de connaître la marche à suivre.
 > 
-> - Si votre nom de domaine est enregistré chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, onglet `Serveurs DNS`{.action} une fois positionné sur le domaine concerné.
+> - Si votre nom de domaine est enregistré chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, rendez-vous dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, onglet `Serveurs DNS`{.action} une fois positionné sur le domaine concerné.
 >
 
 ## En pratique
 
 ### Étape 1 : créer un utilisateur DynHost
 
-La première étape consiste à créer un utilisateur DynHost. Celui-ci vous permettra de réaliser la mise à jour de l'enregistrement DNS dynamique que vous souhaitez créer. Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `DynHost`{.action}.
+La première étape consiste à créer un utilisateur DynHost. Celui-ci vous permettra de réaliser la mise à jour de l'enregistrement DNS dynamique que vous souhaitez créer. Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `DynHost`{.action}.
 
 ![dynhost](images/use-dynhost-step1.png){.thumbnail}
 

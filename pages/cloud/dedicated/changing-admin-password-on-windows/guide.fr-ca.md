@@ -17,14 +17,14 @@ Lors de l’installation ou de la réinstallation d’un système d’exploitati
 ## Prérequis
 
 * Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} avec Windows installé.
-* Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## En pratique
 
 Pour commencer, démarrez votre serveur en mode rescue en utilisant l'environnement d'initialisation WinRescue. En cas de besoin, nous vous invitons à vous référer au guide relatif au [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external}. 
 
-Une fois le serveur redémarré, sélectionnez l'onglet `IPMI`{.action} sur la page de votre serveur dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Une fois le serveur redémarré, sélectionnez l'onglet `IPMI`{.action} sur la page de votre serveur dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 > [!primary]
 >

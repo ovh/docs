@@ -17,7 +17,7 @@ cPanel est un panneau de configuration conçu pour les hébergeurs web. Constitu
 ## Prérequis
 
 - Un [VPS de la gamme actuelle](https://www.ovhcloud.com/fr-ca/vps/){.external} (offres Value, Essential, Comfort ou Elite).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## En pratique
 
@@ -32,7 +32,7 @@ Quand votre VPS est prêt, vous recevez un e-mail vous donnant les accès pour v
  |    Vous pouvez vous connecter à cpanel depuis https://<ip>:2087/<session_parameters>
 ```
 
-Si vous disposez déjà d'un VPS et que vous souhaitez y installer cPanel, vous pouvez réinstaller le VPS à partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) à l'aide du modèle « CentOS 7 - cPanel » (disponible uniquement avec une offre VPS compatible).
+Si vous disposez déjà d'un VPS et que vous souhaitez y installer cPanel, vous pouvez réinstaller le VPS à partir de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) à l'aide du modèle « CentOS 7 - cPanel » (disponible uniquement avec une offre VPS compatible).
 
 > [!warning]
 >

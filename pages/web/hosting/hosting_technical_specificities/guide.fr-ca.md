@@ -15,7 +15,7 @@ order: 6
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external} compatible.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
@@ -28,11 +28,11 @@ order: 6
 
 ### FTP
 
-- Erreur d'accès ("Échec de l'authentification de connexion 530"): Vous pouvez vous assurer que les informations d'accès à votre espace FTP sont correctes en vérifiant celles-ci via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans l'onglet `FTP - SSH`. Les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés. Veuillez consulter nos [guides FTP](../connexion-espace-stockage-ftp-hebergement-web/).
+- Erreur d'accès ("Échec de l'authentification de connexion 530"): Vous pouvez vous assurer que les informations d'accès à votre espace FTP sont correctes en vérifiant celles-ci via votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} dans l'onglet `FTP - SSH`. Les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés. Veuillez consulter nos [guides FTP](../connexion-espace-stockage-ftp-hebergement-web/).
 
 - Les connexions FTP doivent utiliser le **mode passif**. Assurez-vous que votre script ou votre client FTP est ajusté en conséquence.
 
-- Afin de se connecter via **SFTP**, un [**hébergement Pro**](https://www.ovh.com/ca/fr/hebergement-web/) ou supérieur est requis. Vous pouvez mettre à jour votre offre directement dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) ("Informations générales", "Plan", "Offre de modification").
+- Afin de se connecter via **SFTP**, un [**hébergement Pro**](https://www.ovh.com/ca/fr/hebergement-web/) ou supérieur est requis. Vous pouvez mettre à jour votre offre directement dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) ("Informations générales", "Plan", "Offre de modification").
 
 ### Base de données / SQL
 
@@ -71,7 +71,7 @@ Pour plus d'informations sur la gestion des bases de données, reportez-vous au 
 
 - Vous pouvez vérifier les détails de la configuration de votre hébergement web. Pour cela, consultez la rubrique [« Informations techniques de votre hébergement Web »](./#informations-techniques de-votre-hebergement-web) en bas de ce guide. 
 
-- Vous pourrez modifier la version PHP de votre hébergement web, soit depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) ("**Configuration**"), soit en modifiant le fichier .ovhconfig. Des configurations mixtes sont également possibles avec ces dernières. Des instructions détaillées sont disponibles dans nos guides :
+- Vous pourrez modifier la version PHP de votre hébergement web, soit depuis [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) ("**Configuration**"), soit en modifiant le fichier .ovhconfig. Des configurations mixtes sont également possibles avec ces dernières. Des instructions détaillées sont disponibles dans nos guides :
 
 [Configurer le fichier .ovhconfig de son hébergement web](../configurer-fichier-ovhconfig/)  
 [Modifier la configuration de son hébergement web](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/)
@@ -119,7 +119,7 @@ Veuillez consulter les pages d'informations respectives pour vérifier les libra
 
 Il vous est possible de retrouver différentes informations sur votre cluster via ce lien : [https://cluster015.hosting.ovh.net/infos/](https://cluster015.hosting.ovh.net/infos/){.external}
 
-Remplacez le cluster indiqué dans l'URL par le vôtre. Pour savoir sur quel cluster d'hébergement web se trouve votre service, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} et sélectionnez `Web`{.action} dans la barre de navigation supérieure. Cliquez sur `Hébergement`{.action} dans la barre de services située à gauche, puis choisissez l'hébergement web concerné. Ensuite, cliquez sur l'onglet `FTP - SSH`{.action}. L'URL d'accès FTP à votre hébergement vous indiquera le numéro du cluster.
+Remplacez le cluster indiqué dans l'URL par le vôtre. Pour savoir sur quel cluster d'hébergement web se trouve votre service, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et sélectionnez `Web`{.action} dans la barre de navigation supérieure. Cliquez sur `Hébergement`{.action} dans la barre de services située à gauche, puis choisissez l'hébergement web concerné. Ensuite, cliquez sur l'onglet `FTP - SSH`{.action}. L'URL d'accès FTP à votre hébergement vous indiquera le numéro du cluster.
 
 Pour connaitre les spécificités technique de l'offre Cloud Web, dirigez-vous directement vers le lien <https://cloudweb-infos.hosting.ovh.net/>.
 

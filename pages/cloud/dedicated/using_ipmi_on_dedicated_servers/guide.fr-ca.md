@@ -15,7 +15,7 @@ La console IPMI (Intelligent Platform Management Interface) permet d’établir 
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager).
+- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager).
 
 
 ## En pratique

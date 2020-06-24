@@ -19,15 +19,15 @@ Databases are used in virtually all modern content management systems (CMS), suc
 - an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
 - a database created as part of an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
 - access to the backup that you want to import into your database, or the ability to retrieve it
-- Depending on which import method you use, you must be able to administer the Web Hosting plan from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, or have the information you need in order to connect to the database.
+- Depending on which import method you use, you must be able to administer the Web Hosting plan from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, or have the information you need in order to connect to the database.
 
 ## Instructions
 
 Before you start, you must choose which method you are going to use to import the backup into the database concerned. There are three ways to do this, depending on the level of technical knowledge you have.
 
-- **Restore an earlier version of your database in just a few clicks**: this method can be used to restore the contents of your databases, thanks to the backups present in the OVHcloud backup tool. This method does not require any particular technical knowledge, and can be carried out from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+- **Restore an earlier version of your database in just a few clicks**: this method can be used to restore the contents of your databases, thanks to the backups present in the OVHcloud backup tool. This method does not require any particular technical knowledge, and can be carried out from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
 
-- **Import your own backup file in just a few clicks**: this method lets you import the data from your own backup file, already in your possession, into one of your databases. This method can be carried out from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+- **Import your own backup file in just a few clicks**: this method lets you import the data from your own backup file, already in your possession, into one of your databases. This method can be carried out from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
 
 - **Carry out the import from the phpMyAdmin web interface**: this method involves logging in to the phpMyAdmin interface in order to carry out the procedure. You need to be familiar with the interface to use this method, and the backup file may not exceed a certain size.
 
@@ -47,7 +47,7 @@ We recommend reading this guide, and focusing on the import method you wish to u
 >
 
 ### Restore a backup from the Control Panel.
-First of all, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Next, go to the `Databases`{.action} tab.
+First of all, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Next, go to the `Databases`{.action} tab.
 
 The table shown contains all the databases created as part of your Web Hosting plan. You can now click on the three dots to the right of the database that you want to restore to an earlier version, then `Restore backup`{.action}. Please note that this will replace the current contents of the database with the contents of the backup.
 
@@ -60,7 +60,7 @@ Click on the three dots to the right of the backup that you would like to restor
 ![databaseimport](images/database-import-step6.png){.thumbnail}
 
 ### Import your own backup via your Control Panel.
-First of all, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Next, go to the `Databases`{.action} tab.
+First of all, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Next, go to the `Databases`{.action} tab.
 
 The table shown contains all the databases created as part of your Web Hosting plan. You can now click on the three dots to the right of the database you want to import data into, then on `Import file`{.action}.
 
@@ -93,7 +93,7 @@ Once you have made your choice, click the `Confirm`{.action} button, and wait fo
 
 ### Carry out the import from the phpMyAdmin web interface.
 
-To carry out this procedure, you will need to log in to phpMyAdmin. To get the access link for this interface, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Next, go to the `Databases`{.action} tab.
+To carry out this procedure, you will need to log in to phpMyAdmin. To get the access link for this interface, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Next, go to the `Databases`{.action} tab.
 
 The table shown contains all the databases created as part of your Web Hosting plan. In the table, click on the three dots to the right of the database concerned, then on `Go to phpMyAdmin`{.action}.
 
