@@ -6,7 +6,7 @@ section: Premiers pas
 order: 3
 ---
 
-**Dernière mise à jour le 14/11/2018**
+**Dernière mise à jour le 25/06/2020**
 
 ## Objectif
 
@@ -18,7 +18,7 @@ Ce système vous permettra d'accéder uniquement au dossier « upload-vpn » d
 
 ## Prérequis
 
-- Posséder un utilisateur actif créé depuis l’[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Posséder un utilisateur actif créé depuis l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
@@ -81,7 +81,7 @@ La commande `exit` vous permet de fermer la connexion.
 
 Dans votre interface vSphere, vous pourrez voir le contenu de ce que vous venez d’envoyer en parcourant votre datastore. Pour cela, cliquez sur le datastore souhaité dans le dossier « upload-vpn » :
 
-![Connexion SFTP via vSphere](images/connection_sftp_browse_datastore.png){.thumbnail}
+![Connexion SFTP via vSphere](images/sftpconnexion.png){.thumbnail}
 
 ## Aller plus loin
 
