@@ -7,13 +7,18 @@ section: Fonctionnalités OVH
 order: 01
 ---
 
-**Dernière mise à jour le 29/01/2019**
+**Dernière mise à jour le 25/06/2020**
 
 ## Objectif
 
 Un bloc IP peut vous servir à rendre vos services accessibles sur Internet. 
 
 **Ce guide explique comment commander un bloc IP associé à votre Private Cloud.**
+
+## Prérequis
+
+* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Posséder une [infrastructure Private Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} sur votre compte OVHcloud.
 
 ## En pratique
 
