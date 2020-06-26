@@ -109,6 +109,45 @@ Enfin, redémarrez le service réseau avec la commande suivante :
 ifup eth0
 ```
 
+#### Votre système démarre sur le shell de secour dracut
+
+Redémarrer votre vps en mode rescue.
+
+Une fois le vps démarré en mode rescue et connecté en ssh dessus : 
+monté votre disque dans le dossier /mnt : 
+```
+mount /dev/sdb1 /mnt
+```
+changer le répertoire racine du rescue : 
+```
+chroot /mnt
+```
+Listez les noyaux disponibles : 
+```
+awk -F\' '$1=="menuentry " {print i++ " : " $2}' /etc/grub2.cfg
+0 : CentOS Linux (3.10.0-862.6.3.el7.x86_64) 7 (Core)
+1 : CentOS 7, OVH kernel x.xx.xx-xxxx-std-ipv6-64-vps
+2 : CentOS Linux (3.10.0-514.26.2.el7.x86_64) 7 (Core)
+```
+
+Le noyaux qui nous intéresse est le noyaux OVH (dans ce noyaux les pilot virtio scsi sont directement compilé et activé par défaut).
+ Noyau OVH : CentOS 7, OVH kernel x.xx.xx-xxxx-std-ipv6-64-vps
+
+Listez la configuration par défaut de grub2 : 
+```
+grub2-editenv list
+saved_entry=CentOS Linux (3.10.0-514.26.2.el7.x86_64) 7 (Core)
+```
+
+Nous modifions la configuration afin que le noyau OVH soit le noyau par défaut (à adapter en fonction du retour de la liste des noyaux précédents ): 
+```
+grub2-set-default 1
+grub2-editenv list
+saved_entry=1
+```
+
+redémarrez votre vps.
+
 #### Configurer une adresse IP statique sur Debian
 
 ##### Configuration de l'interface réseau
