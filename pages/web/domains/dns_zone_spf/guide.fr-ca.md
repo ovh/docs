@@ -50,7 +50,7 @@ Vous devrez donc vous assurer de mettre dans le SPF les sources d'envoi que vous
 La configuration OVHcloud s'applique aux solutions ci-dessous :
 
 - MX Plan seule ou incluse dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} ;
-- [E-mail Pro](https://www.ovh.com/ca/fr/emails/email-pro/){.external} ;
+- [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external} ;
 - [Hosted Exchange](https://www.ovh.com/ca/fr/emails/hosted-exchange/){.external}.
 
 Lorsque vous commandez l'une de ces solutions, nous vous recommandons d'utiliser un SPF comportant les informations d'OVHcloud dans la configuration de votre domaine. Ce dernier ressemble à ceci :
