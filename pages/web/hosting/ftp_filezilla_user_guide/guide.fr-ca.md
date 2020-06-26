@@ -10,7 +10,7 @@ section: 'FTP et SSH'
 
 Retrouvez dans ce guide de l'aide concernant l'utilisation du logiciel FileZilla.
 
-Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovh.com/ca/fr/hebergement-web/faq/){.external} disponibles.
+Retrouvez nos [différents guides mutualisés/hébergement Web](https://docs.ovh.com/ca/fr/hosting/){.external} disponibles.
 
 > [!warning]
 >
@@ -86,7 +86,7 @@ Le SFTP (pour **S**ecure **F**ile **T**ransfer **P**rotocol) est un protocole si
 #### Verifiez l'activation de SFTP
 Avant d'aller plus loin, vérifiez tout d'abord que le SFTP est activé pour votre compte.
 
-Rendez-vous dans votre [espace client](https://www.ovh.com/manager/web){.external} > onglet SSH-FTP.
+Rendez-vous dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} > onglet SSH-FTP.
 
 S'il s'agit d'une offre d'hébergement "Start10M", vérifiez que "SFTP" est coché.
 
