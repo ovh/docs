@@ -113,8 +113,7 @@ Sur la nouvelle page, sélectionnez le droit souhaité en cliquant dessus. Pour 
 
 Cette étape s'applique uniquement si vous souhaitez importer une sauvegarde d'une base de données déjà existante (indispensable si vous migrez votre site chez OVHcloud ou si vous migrez vos bases de données vers votre nouvelle instance SQL Privé). Si vous n'avez aucune base de données à importer, vous pouvez passer à la manipulation suivante.
 
-Selon votre choix, il existe plusieurs techniques pour importer une base de données. OVHcloud met à disposition dans son espace client un outil permettant de le faire. Nous allons nous intéresser spécifiquement à cet outil. Pour utiliser une autre méthode d'importation, reportez-vous aux documentations suivantes : pour une [base de données MySQL ou MariaDB](../tout-sur-le-sql-prive/#export-et-import-de-base-de-donnees-mysql-ou-mariadb-hors-espace-client_1){.external} ; pour une [base de données en PostgreSQL](../tout-sur-le-sql-prive/#export-et-import-de-base-de-donnees-postgresql-hors-espace-client_1){.external}.
-
+Selon votre choix, il existe plusieurs techniques pour importer une base de données. OVHcloud met à disposition dans son espace client un outil permettant de le faire. Nous allons nous intéresser spécifiquement à cet outil. 
 #### Étape 1 : accéder à l'importation d'une base de données
 
 Rendez-vous dans l'onglet `Bases de données`{.action}, cliquez sur le logo en forme de roue dentée, puis sur `Importer un fichier`{.action}.
@@ -170,7 +169,5 @@ Dès lors, vous pourrez finaliser l'installation de votre site ou la migration d
 
 
 ## Aller plus loin
-
-[Tout sur le SQL Privé](../tout-sur-le-sql-prive/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com)
