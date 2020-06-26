@@ -20,7 +20,7 @@ Make sure that you have your nic-handle and password, so that you can log in to 
 
 
 - Retrieve your FTP ID and password so that you can connect to the server.
-There is a guide showing you how to change your FTP details:[Modifying a FTP user password](modify-ftp-user-password/)
+There is a guide showing you how to change your FTP details:[Modifying a FTP user password](../modify-ftp-user-password/)
 
 - You also need to have your SQL database ID and password so you can log on to the database.
 There is a guide showing you how to change your SQL credentials: [Changing the password for a Web Hosting plan database](../change-password-database/)

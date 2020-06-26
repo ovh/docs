@@ -161,6 +161,6 @@ If you would like to configure your email address on an email client or device (
 
 [Web hosting modules](../web_hosting_web_hosting_modules/){.external}
 
-[How to set up an email address]../../emails/hosted_email_how_to_set_up_an_email_address/){.external}
+[How to set up an email address](../../emails/hosted_email_how_to_set_up_an_email_address/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

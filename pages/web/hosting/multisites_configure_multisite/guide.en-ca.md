@@ -41,11 +41,11 @@ To add a new domain to your Web Hosting plan, click on the `Add a domain or sub-
 
 - **Adding an OVHcloud-registered domain**
 
-Only the domains that use the OVHcloud configuration and are listed as contacts in your NIC handle will appear. Choose one from the list, then click `Next`{.action}. Then follow [Step 3.1: Add an OVHcloud-registered domain](../multisites-configuring-multiple-websites/#step-31-add-an-ovh-registered-domain){.external}.
+Only the domains that use the OVHcloud configuration and are listed as contacts in your NIC handle will appear. Choose one from the list, then click `Next`{.action}. Then follow [Step 3.1: Add an OVHcloud-registered domain](../multisites-configuring-multiple-websites/#step-31-add-an-ovhcloud-registered-domain){.external}.
 
 - **Adding a non-OVHcloud registered domain**
 
-If the domain name does not appear in the list, it is considered external (to your NIC handle or to OVHcloud). If this is the case, select `Add an external domain`{.action}, then click `Next`{.action}. Then follow [Step 3.2: Add a non-OVHcloud registered domain name](../multisites-configuring-multiple-websites/#step-32-add-a-non-ovh-registered-domain-name){.external}.
+If the domain name does not appear in the list, it is considered external (to your NIC handle or to OVHcloud). If this is the case, select `Add an external domain`{.action}, then click `Next`{.action}. Then follow [Step 3.2: Add a non-OVHcloud registered domain name](../multisites-configuring-multiple-websites/#step-32-add-an-non-ovhcloud-registered-domain){.external}.
 
 ![multisite](images/add-multisite-step1.png){.thumbnail}
 
@@ -63,7 +63,7 @@ You will now need to customise the way you add your domain. Depending on the [OV
 |Domain|The domain that you have selected will be automatically entered by default. You can also add subdomains (e.g. blog.mypersonaldomain.ovh), and create the corresponding www subdomain at the same time (e.g. www.mypersonaldomain.ovh). This domain will be the website that you want to put online.|
 |Root directory|Defines the directory where the domain will be hosted on your storage space. This space is where the website files will be put online. For example, for blog.mypersonaldomain.ovh, the root directory will be ‘blog’. If the directory does not exist, it will be created automatically.|
 |Enable IPv6|Enables IPv6 protocol on the selected domain. Find out more about this on [our IP page](https://www.ovh.com/ca/en/web-hosting/ip.xml){.external}.|
-|SSL|Provides you with a secure connection (HTTPS://) on the selected domain. Find out more about this on [our SSL page](https://www.ovh.co.uk/ssl/){.external}. By enabling SSL and the CDN (Content Delivery Network), you can also benefit from **HTTP2** protocol (HTTP2 enabled by default on Gravelines).|
+|SSL|Provides you with a secure connection (HTTPS://) on the selected domain. Find out more about this on [our SSL page](https://www.ovh.com/ca/en/web-hosting/shared-ssl.xml){.external}. By enabling SSL and the CDN (Content Delivery Network), you can also benefit from **HTTP2** protocol (HTTP2 enabled by default on Gravelines).|
 |Enable CDN|Enables the CDN (which replicates and caches your website’s static elements, e.g. images) on the selected domain. To find out more about this, go to [our CDN page](https://www.ovh.com/ca/en/web-hosting/cdn.xml){.external}. By enabling SSL and the CDN, you can also benefit from **HTTP2** protocol (HTTP2 enabled by default on Gravelines).|
 |Geolocated IP|Provides you with a geolocated IP address (from a country list) for the selected domain. To find out more about this, go to [our IP page](https://www.ovh.com/ca/en/web-hosting/ip.xml){.external}.|
 |Enable firewall|Enables a firewall (request analysis) for the selected domain. To find out more about this, go to [our ModSecurity page](https://www.ovh.com/ca/en/web-hosting/mod_security.xml){.external}.|
@@ -82,7 +82,7 @@ Click `Confirm`{.action} to start adding the domain. This may take up to an hour
 
 Now that you have added the domain name, go to [Step 4: Put your website online](../multisites-configuring-multiple-websites/#step-4-put-your-website-online){.external}.
 
-### Step 3.2: Add an non-OVHcloud registered domain.
+### Step 3.2: Add a non-OVHcloud registered domain.
 
 > [!primary]
 >
