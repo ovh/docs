@@ -10,7 +10,7 @@ order: 3
 
 ## Objectif
 
-Sur le web, il existe une multitude de sites internet. Qu’il s’agisse de créer un blog ou une boutique en ligne, de partager une passion ou de promouvoir une activité professionnelle, votre [hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} vous permet d’héberger le site internet que vous souhaitez, dans la mesure où celui-ci est compatible avec la [configuration de nos infrastructures](http://pro.ovh.net/infos/){.external}.
+Sur le web, il existe une multitude de sites internet. Qu’il s’agisse de créer un blog ou une boutique en ligne, de partager une passion ou de promouvoir une activité professionnelle, votre [hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} vous permet d’héberger le site internet que vous souhaitez, dans la mesure où celui-ci est compatible avec la [configuration de nos infrastructures](https://cluster015.hosting.ovh.net/infos/){.external}.
 
 **Apprenez à modifier la configuration de votre hébergement web OVHcloud depuis votre espace client.**
 

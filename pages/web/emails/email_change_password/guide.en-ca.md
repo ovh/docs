@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 2
 ---
 
-**Last updated 26th March 2019**
+**Last updated 05th May 2020**
 
 ## Objective
 
@@ -16,8 +16,8 @@ You can use the email addresses created as part of the MX Plan solution to send 
 
 ## Requirements
 
-- an MX Plan solution, available as part of our [web hosting plans](https://www.ovh.co.uk/web-hosting/){.external}, the [free Start 10M hosting plan](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.external}, or ordered separately as a standalone solution
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} in the `Web`{.action} section, or access to the email address via Outlook Web Messenger (OWA) [webmail](https://www.ovh.co.uk/mail/){.external}
+- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/){.external}, the [free Start 10M hosting plan](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.external}, or ordered separately as a standalone solution
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} in the `Web`{.action} section, or access to the email address via Outlook Web Messenger (OWA) [webmail](https://www.ovh.com/ca/en/mail/){.external}
 
 > [!primary]
 >
@@ -28,7 +28,7 @@ You can use the email addresses created as part of the MX Plan solution to send 
 
 Depending on the date your service was activated and if [it was recently migrated](https://www.ovh.co.uk/mxplan-migration/){.external}, you will be using either the legacy version or the new version of the MX Plan solution. Before you proceed, you will need to check which version you are using. 
 
-To do this, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Web`{.action} section. Click `Emails`{.action} in the service bar on the left-hand side, then choose the name of the MX Plan solution. You can now follow the instructions below for the version you own.
+To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Web`{.action} section. Click `Emails`{.action} in the service bar on the left-hand side, then choose the name of the MX Plan solution. You can now follow the instructions below for the version you own.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|
@@ -44,11 +44,11 @@ If you are using the new version of the MX Plan solution, this is what you shoul
 There are two ways of changing the password for an email address. You can proceed according to which method you want to use.
 
 - [Change the password via OWA webmail](./#change-the-password-via-owa-webmail). You will need to have your current password for this method. 
-- [ Change the password via the OVH Control Panel](./#change-the-password-via-the-ovh-control-panel). You will not need your current password for this method.
+- [Change the password via the OVHcloud Control Panel](./#change-the-password-via-the-ovh-control-panel). You will not need your current password for this method.
 
 #### Change the password via OWA webmail.
 
-Firstly, go to the [webmail login](https://www.ovh.co.uk/mail/){.external} page. Enter your full email address and password, then click the `Login`{.action} button. 
+Firstly, go to the [webmail login](https://www.ovh.com/ca/en/mail/){.external} page. Enter your full email address and password, then click the `Login`{.action} button. 
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -69,7 +69,7 @@ In the new window that opens, enter your current password first. Then enter your
 
 ![email](images/mxplan-password-new-step5.png){.thumbnail}
 
-#### Change the password via the OVH Control Panel.
+#### Change the password via the OVHcloud Control Panel.
 
 To start with, go to the `Email accounts`{.action} tab. The table that appears will contain all of the email addresses you have created as part of your MX Plan solution. Next, click the `...`{.action} button to the right of the email address you want to change the password for, then click `Modify`{.action}.
 
@@ -83,7 +83,7 @@ Once you have done this, click the `Next`{.action} button, then click `Confirm`{
 
 Once you have changed your password, you can access your email address. There are two ways you can do this:
 
-- **Using webmail:** go to the [webmail login](https://www.ovh.co.uk/mail/){.external} page, then enter your email address and new password. If you have just changed your password and the login fails, wait a few moments, then try to sign in again. To find out how to use your email address via OWA webmail, use our guide guide on [Using an email address via Outlook Web Access (OWA) webmail](https://docs.ovh.com/gb/en/emails/using-owa){.external}.
+- **Using webmail:** go to the [webmail login](https://www.ovh.com/ca/en/mail/){.external} page, then enter your email address and new password. If you have just changed your password and the login fails, wait a few moments, then try to sign in again. To find out how to use your email address via OWA webmail, see our guide on [Using an email address via Outlook Web Access (OWA) webmail](../using-owa){.external}.
 
 - **Using compatible email software:** you will need to enter the new password on all of the devices your email address is linked to. To do this, a window may appear automatically, prompting you to enter your password. Otherwise, you can [refer to our configuration guides](../) or contact the publisher of the software or application you are using, as the process may be specific to the tool.
 
@@ -105,7 +105,7 @@ Once you have done this, click `Confirm`{.action}. The password change will take
 
 Once you have changed your password, you can access your email address. There are two ways you can do this.
 
-- **Using webmail**: go to the [webmail login]({ovh_www}/mail/){.external} page, then enter your email address and new password. If you have just changed your password and the login fails, wait a few moments, then try to sign in again.
+- **Using webmail**: go to the [webmail login](https://www.ovh.com/ca/en/mail/){.external} page, then enter your email address and new password. If you have just changed your password and the login fails, wait a few moments, then try to sign in again.
 
 - **Using compatible email software**: you will need to enter the new password on all of the devices your email address is linked to. To do this, a window may appear automatically, prompting you to enter your password. Otherwise, you can [refer to our configuration guides](../) or contact the publisher of the software or application you are using, as the process may be specific to the tool.
 

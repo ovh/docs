@@ -16,7 +16,7 @@ Beside [managing contacts](../../customer/managing-contacts/), to register a dom
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/manager/web){.external}
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 - a domain name registered with OVHcloud
 - access as the [admin contact](../../customer/managing-contacts/) for the domain name concerned
 - permission from the current domain name holder to change holders
@@ -73,6 +73,6 @@ Once the two recipients confirm their agreement via email, the domain name holde
 
 ## Go further
 
-[Managing contacts for your services](https://docs.ovh.com/ca/en/customer/managing-contacts/)
+[Managing contacts for your services](../.../customer/managing-contacts/)
 
 Join our community of users on https://community.ovh.com/en/.

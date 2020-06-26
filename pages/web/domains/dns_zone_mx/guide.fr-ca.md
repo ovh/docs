@@ -39,7 +39,7 @@ De manière générale, **changer les champs MX de son nom de domaine est une ma
 
 ### Étape 2 : connaître la configuration MX d'OVHcloud
 
-Retrouvez ci-dessous la configuration MX d'OVHcloud à utiliser pour nos solutions MX Plan (seule ou incluse dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}, [E-mail Pro](https://www.ovh.com/ca/fr/emails/email-pro/){.external} et [Exchange](https://www.ovh.com/ca/fr/emails/){.external}. Nos serveurs e-mail disposent d'un antispam et d'un antivirus.
+Retrouvez ci-dessous la configuration MX d'OVHcloud à utiliser pour nos solutions MX Plan (seule ou incluse dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}, [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external} et [Exchange](https://www.ovh.com/ca/fr/emails/){.external}. Nos serveurs e-mail disposent d'un antispam et d'un antivirus.
 
 |Domaine|TTL|Type d'enregistrement|Priorité|Cible|
 |---|---|---|---|---|
@@ -62,7 +62,7 @@ Si des champs MX existent déjà et que vous souhaitez les remplacer, cliquez su
 
 Pour cela, cliquez sur le bouton `Ajouter une entrée`{.action}, puis choisissez `MX`{.action}. Remplissez les informations demandées en fonction de la solution e-mail choisie :
 
-- **si vous disposez d'une solution e-mail OVHcloud** : reportez-vous aux informations données à l'[étape 2 : « connaître la configuration MX OVHcloud »](../#etape-2-connaitre-la-configuration-mx-dovh){.external} ;
+- **si vous disposez d'une solution e-mail OVHcloud** : reportez-vous aux informations données à l'[étape 2 : « connaître la configuration MX OVHcloud »](./#etape-2-connaitre-la-configuration-mx-dovh){.external} ;
 
 - **si vous disposez d'une autre solution e-mail** : reportez-vous aux informations communiquées par votre fournisseur de service e-mail.
 

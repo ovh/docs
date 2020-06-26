@@ -16,9 +16,9 @@ Pour pouvoir rapatrier un nom de domaine .co.uk ou sassimilés vers OVHcloud, as
 
 - Votre domaine ne doit pas être en période de rédemption ou de suppression. *
 - Le domaine n'est pas bloqué chez votre registrar. *
-- S'assurer que les coordonnées du propriétaire sont bien à jour sur le [whois](https://www.ovh.com/cgi-bin/whois.pl){.external} du domaine. *
+- S'assurer que les coordonnées du propriétaire sont bien à jour sur le [whois](https://www.ovh.com/fr/support/outils/check_whois.pl){.external} du domaine. *
 
-[whois](https://www.ovh.com/cgi-bin/whois.pl){.external} de votre nom de domaine.
+[whois](https://www.ovh.com/fr/support/outils/check_whois.pl){.external} de votre nom de domaine.
 
 
 ![hosting](images/3485.png){.thumbnail}
@@ -89,4 +89,4 @@ Si vous valider le mail qui est envoyé au propriétaire, le transfert prendra m
 
 
 ### Renouvellement du domaine suite a un transfert
-Le transfert étant gratuit, la date d'expiration du domaine suite à sont transfert sera la même qu'avant son transfert. Pour le renouveler suite au transfert, rendez-vous sur [ovh.com](https://www.ovh.com){.external}.
+Le transfert étant gratuit, la date d'expiration du domaine suite à sont transfert sera la même qu'avant son transfert. Pour le renouveler suite au transfert, rendez-vous sur [ovh.com](https://www.ovh.com/ca/fr){.external}.
