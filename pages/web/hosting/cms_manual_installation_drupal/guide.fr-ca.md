@@ -22,7 +22,7 @@ La version de Drupal utilisée dans ce guide est la versions 7.41.
 
 **La version 8 de Drupal est compatible avec les hébergements mutualisés, il vous suffit d'être en version stable.**
 
-Plus d'informations [dans ce guide](../modifier_environnement_execution_hebergement_web_optmisation/guide.fr-fr.md){.ref}.
+Plus d'informations [dans ce guide](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.ref}.
 
 Si vous souhaitez installer d'autres modules/CMS, consultez [ce guide](../mutualise-installer-manuellement-mon-cms/){.ref}.
 
@@ -38,19 +38,16 @@ Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovh.com/ca
 ### Partie 1 &#58; preparation de linstallation
 **Outils nécessaires**
 
-Pour installer le CMS  **Drupal**  sur votre offre d'hébergement mutualisé, nous vous conseillons de vous munir d'un logiciel  **FTP**  tel que **FileZilla**  (gratuit). *Assurez-vous d'être en possession de votre identifiant client (nic-handle) et de votre mot de passe, pour pouvoir vous connecter à votre* [espace client OVHcloud](https://www.ovh.com/manager/web/login/){.external} *si nécessaire.*
+Pour installer le CMS  **Drupal**  sur votre offre d'hébergement mutualisé, nous vous conseillons de vous munir d'un logiciel  **FTP**  tel que **FileZilla**  (gratuit). *Assurez-vous d'être en possession de votre identifiant client (nic-handle) et de votre mot de passe, pour pouvoir vous connecter à votre* [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} *si nécessaire.*
 
 - Récupérez votre identifiant et le mot de passe FTP qui vous permettent de vous connecter sur l'hébergement web.
 - Il est aussi nécessaire d'avoir en votre possession votre identifiant et le mot de passe de la base de données SQL qui vous permettent de vous connecter dans la base de données.
 
 
 ### Partie 2 &#58; recuperation des fichiers sources
-- Rendez-vous sur le site de [Drupal](http://drupalfr.org/){.external} .
-
+- Rendez-vous sur le site de [Drupal](http://drupal.com/){.external} .
 
 ![hosting](images/3234.png){.thumbnail}
-
-
 
 > [!success]
 >
