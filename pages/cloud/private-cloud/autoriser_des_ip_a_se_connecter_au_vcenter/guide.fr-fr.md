@@ -18,18 +18,22 @@ Il est possible de restreindre l'accès au vCenter en autorisant uniquement cert
 ## Prérequis
 
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-* Posséder une [infrastructure Private Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} sur votre compte OVHcloud.
+* Posséder une [infrastructure Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external} sur votre compte OVHcloud.
 
 ## En pratique
 
-Lorsque [la politique d'accès au vCenter est restreinte]({legacy}1442246), il est nécessaire d'ajouter les IPs qui seront autorisé à se connecter au service.
+Lorsque [la politique d'accès au vCenter est restreinte](../changer-la-politique-d-acces-au-vcenter/), il est nécessaire d'ajouter les IPs qui seront autorisées à se connecter au service.
 
-L'opération se réalise dans [l'espace client (Manager)](https://www.ovh.com/manager){.external-link}, Dans la section `Serveur`, cliquez sur la rubrique `Public Cloud`. Sélectionner l'infrastructure puis rendez-vous dans l'onglet `Serveur` et enfin cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action}.
+L'opération se réalise dans [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external-link}. Dans la section `Serveur`, cliquez sur la rubrique `Private Cloud`. Sélectionnez l'infrastructure puis rendez-vous dans l'onglet `Sécurité` et enfin cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 
-Rajouter ici l'IP concernée et éventuellement une description pour la retrouver facilement dans la liste plus tard.
+Rajoutez ici l'IP concernée et éventuellement une description pour la retrouver facilement dans la liste plus tard.
 
-Il ne reste plus qu'a valider en cliquant sur "Suivant" et une fois que l'IP est bien marquée comme **"Autorisée et mise en place"**, la connexion au vSphere sera possible depuis l'IP en question.
+Il ne reste plus qu'a valider en cliquant sur `Suivant`{.action} et une fois que l'IP est bien marquée comme **"Autorisée et mise en place"**, la connexion au vSphere sera possible depuis l'IP en question.
 
 ![vCenter](images/restrictIP2.JPG){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
