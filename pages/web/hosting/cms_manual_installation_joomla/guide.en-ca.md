@@ -20,7 +20,7 @@ Make sure that you have your customer ID (nic-handle) and password so you can lo
 
 
 - Get your FTP ID and password so you can log in to your hosting package. 
-There is an FTP credentials guide:[Modifying a FTP user password](modify-ftp-user-password/)
+There is an FTP credentials guide:[Modifying a FTP user password](../modify-ftp-user-password/)
 
 - You also need to have your SQL database ID and password so you can log in to the database.
 There is a guide showing you how to change your SQL credentials: [Changing the password for a Web Hosting plan database](../change-password-database/)
