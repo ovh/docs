@@ -16,7 +16,7 @@ If you have activated an OVHcloud Web Hosting plan, you can have email addresses
 
 ## Requirements
 
-- an MX plan solution, available via a [Web Hosting plan]({ovh_www}/web-hosting/) or [the free Start10M Hosting plan]({ovh_www}/domains/start10m_hosting_offer.xml)
+- an MX plan solution, available via a [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/) or [the free Start10M Hosting plan](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
@@ -64,7 +64,7 @@ Once you have configured your email addresses, you can start using them straight
 
 ##### 1. Use Outlook Web Access (OWA) webmail.
 
-Go to the [Webmail login]({ovh_www}/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button.
+Go to the [Webmail login](https://www.ovh.com/ca/en/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button.
 
 When you first log in to webmail, you will be prompted to set the interface language, and the time zone you are in. Your inbox will then appear. To find out how to use your email address via OWA webmail, you can refer to our [Outlook Web App user guide](../../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/){.external}.
 
@@ -133,7 +133,7 @@ Once you have configured your email addresses, you can start using them straight
 
 ##### 1. Use the Roundcube webmail interface.
 
-Go to the [Webmail login]({ovh_www}/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button. Your inbox will appear.
+Go to the [Webmail login](https://www.ovh.com/ca/en/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button. Your inbox will appear.
 
 ![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 

@@ -21,8 +21,6 @@ section: Diagnostic
 
 Si la syntaxe de .htaccess n'est pas correcte, le serveur web affichera erreur 500. Il faut renommer .htaccess en .htaccess_bak par exemple. Si votre site refonctionne alors c'est bien .htaccess qui est en cause.
 
-Reportez-vous au guide suivant pour de plus amples informations : [Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/){.external}
-
 
 ### Permissions/droits
 

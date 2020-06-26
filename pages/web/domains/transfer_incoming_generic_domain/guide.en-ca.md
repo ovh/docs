@@ -53,7 +53,7 @@ The transfer procedure has several steps. These steps will involve various entit
 
 > [!primary]
 >
-> If you do not know which registrar your domain is filed with, the "Registrar" lines, which will appear as part of the WHOIS [tool](https://www.ovh.co.uk/cgi-bin/whois.pl){.external} search result, can provide you with information on its identity.
+> If you do not know which registrar your domain is filed with, the "Registrar" lines, which will appear as part of the WHOIS [tool](https://www.ovh.co.uk/support/tools/check_whois.pl){.external} search result, can provide you with information on its identity.
 >
 
 ### Step 2: Unlock your domain and retrieve the transfer code.
@@ -132,6 +132,6 @@ To do this, click `Domains`{.action} in the services bar on the left-hand side, 
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](https://docs.ovh.com/ca/en/hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/){.external}
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

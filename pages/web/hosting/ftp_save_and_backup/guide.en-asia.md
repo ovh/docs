@@ -39,7 +39,7 @@ You also need to decide which restore method you will use:
 
 Once you are ready to do so, carry on reading the section of this guide that is relevant to the restore method you have chosen.
 
-- [Restore the storage space via the OVHcloud Control Panel](../restoring-ftp-filezilla-control-panel/#restore-the-storage-space-via-the-ovh-control-panel).
+- [Restore the storage space via the OVHcloud Control Panel](../restoring-ftp-filezilla-control-panel/#restore-the-storage-space-via-the-ovhcloud-control-panel).
 
 - [Restore a file using a software program or interface](../restoring-ftp-filezilla-control-panel/#restore-a-file-using-a-software-program-or-interface).
 
