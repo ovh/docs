@@ -42,7 +42,7 @@ La communauté française de Joomla! est très importante et apporte des aides e
 
 - [Module Joomla!](http://www.ovh.com/ca/fr/items/modules/cms/joomla.xml){.external}
 
-- [solution Joomla!](http://www.joomla.fr/){.external}.
+- [solution Joomla!](http://www.joomla.ca/){.external}.
 
 - Retrouvez le guide d' [installation manuelle de Joomla](../installer-manuellement-joomla/){.ref}
 
@@ -62,7 +62,7 @@ Depuis 2005, le logiciel ne cesse d'évoluer, jusqu'en 2013 : la version 1.5.4.1
 - [solution Prestashop](https://www.prestashop.com/forums/){.external}.
 
 - Retrouvez le guide d'installation manuelle de Prestashop : []({legacy}1979){.ref}
-- Si vous ne disposez pas encore d'un hébergement chez OVHcloud, vous pouvez dans ce cas commander un hébergement mutualisé Performance qui inclus l'installation de prestashop sur ce lien : [https://www.ovh.com/fr/solutions/prestashop/](https://www.ovh.com/ca/fr/solutions/prestashop/){.external}
+- Si vous ne disposez pas encore d'un hébergement chez OVHcloud, vous pouvez dans ce cas commander un hébergement mutualisé Performance qui inclus l'installation de prestashop sur ce lien : [https://www.ovh.com/ca/fr/solutions/prestashop/](https://www.ovh.com/ca/fr/solutions/prestashop/){.external}
 
 
 ![hosting](images/3381.png){.thumbnail}
@@ -73,9 +73,9 @@ Drupal est un CMS libre et open-source basé sur PHP qui a vu le jour en 2000, c
 
 **Drupal 8 est compatible avec les hébergements mutualisés, il vous suffit d'être en version stable.**
 
-Plus d'informations [dans ce guide](../modifier_environnement_execution_hebergement_web_optmisation/){.ref}
+Plus d'informations [dans ce guide](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.ref}
 
-Nous vous invitons à consulter les forums dédiés à la [solution Drupal](http://drupalfr.org/){.external}.
+Nous vous invitons à consulter les forums dédiés à la [solution Drupal](http://drupal.com/){.external}.
 
 - Retrouvez le guide d'[installation manuelle de Drupal](../installer-manuellement-drupal/){.ref}
 
