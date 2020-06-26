@@ -1,111 +1,170 @@
 ---
-title: Guide to Using the GeoCache Accelerator on a Web Hosting
-excerpt: User guide for the GeoCache Accelerator included in our Web Hosting plans
-id: '1290'
+title: 'Speeding up your website with CDN'
+excerpt: 'Find out how to improve your website by reducing loading times on a Web Hosting plan using the CDN'
 slug: guide_to_using_the_geocache_accelerator_on_a_web_hosting_package
-legacy_guide_number: g1290
+section: 'Website optimisation'
 ---
 
-**Last updated 5th May 2020**
+**Last updated 19th March 2020**
 
-## 
-Sign in to the [Control Panel](https://ca.ovh.com/auth/?action=gotomanager) using your OVHcloud username (NIC) and password. 
+## Objective
 
-Select your web hosting platform in the "Hosting" section.
+If you want to improve user experience by speeding up your website, the most effective technique is to enable the CDN (Content Delivery Network) option. This allows you to cache static files, such as images, CSS and JavaScript, on the closest servers to your visitors.
 
-![CDN1](images/img_2904.jpg){.thumbnail}
+**This guide explains how to manage the CDN option on your Web Hosting plan.**
 
+## Definition
 
-## Clearing the GeoCache Accelerator cache
+**How does a CDN work?**
 
-The TTL (Time to Live - the time that a cached file remains on a PoP) goes from 5 to 60 minutes (which is managed by our servers for optimisation purposes). After this time has passed, the cached file is deleted. A new visitor will then have to request the file before it will be re-cached on the related PoP.
+The CDN (Content Delivery Network) is literally a network dedicated to delivering content. It uses several servers around the world to display your website. The closer these servers are to your users, the faster your website performs for them.
 
-To replace a file cached on the PoPs after updating your website, you will need to clear the existing cache so that visitors will see the updated content. The files will be re-cached on each PoP when they are requested by visitors in the relevant zones.
+In order for this to work, each server stores a part of your website in its cached memory. It is generally advised that you include so-called "static" files: images, JavaScript files and CSS, that help your website to run but are rarely modified.
 
-To manually clear your cache on the PoPs of the OVHcloud network, you just have to click on "Clear CDN cache"
+## Requirements
 
-![CDN2](images/img_2957.jpg){.thumbnail}
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
 
+## Instructions
 
-## Disable your GeoCache Accelerator
+###  Enabling the CDN option
 
-If you don't want to use the GeoCache included with your hosting package, there are various ways to disable it:
+> [!primary]
+> 
+> The CDN option is already included in the "Performance" Web Hosting plans.
 
+#### If you do not have CDN in your Web Hosting plan:
 
-- Do not use the IP address (A record) associated with your hosting package. 
-- Modify the rules file in the root folder of your hosting system (see next section).
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Click `...`{.action} to the right of “CDN option”, then on `Order a CDN`{.action}.
 
+![CDN](images/manage_CDN_01.png){.thumbnail}
 
-Here we will explain how to change the IP address used by your hosting system.
+You will be redirected to a page where you can generate a purchase order. Once the order is paid, the service will be available within a few minutes.
 
-To do this, go to the "Domain & DNS" section of the domain associated with your hosting service which uses th GeoCache. Then go to "DNS Zone."
+#### If the CDN is already enabled on your Web Hosting plan:
 
-Look for the "A record" under the list of DNS records, with an IP address in 213.xxx.xxxx.xxx * format.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. On the `Multisite`{.action} tab, click on the cog to the right of the Multisite entry, then click on `Edit`{.action}.
 
-* This is the IP address of the GeoCache Accelerator linked to your hosting service. To restore the GeoCache it must be re-entered here. The list of IPs can be found below or you can also request it from the support team.
-Please make a note of this IP address so that you have it in the future when you need it.
+Select the “Activate the CDN” option, click `Next`{.action} and then `Confirm`{.action}.
 
-Then click on "Edit" (the page with a pencil icon) next to the 'A' record to modify it.
+![CDN](images/manage_CDN_01_02.gif){.thumbnail}
 
-You will be taken to a page with a form, where you will find the following fields:
+> [!warning]
+> 
+> If  an external (non-OVHcloud) domain name has been added to the Web Hosting as Multisite, you must enter the CDN’s IP address in the domain name’s DNS zone.<br>
+> Check the [IP address list for Web Hosting clusters](../list-of-ip-addresses-of-web-hosting-clusters/) to find the specific IP address for your cluster’s CDN.
 
-
-- Sub-domain: 'A' record selected by default (do not change it)
-- Select IP: select "Hosting"
-- Select a hosting service: choose the domain name linked to your hosting service
-- Select a country: you can geolocate your IP in the country of your choice
-
-
-Then confirm your selection by clicking on "OK" at the bottom. The IP of your hosting system will then be changed and the update will be applied shortly.
-
-Note: List of IPs related to the 3 PoPs/17 PoPs GeoCache
-
-You can find out which cluster corresponds to your Web Hosting in your Control Panel under "Hosting" > "FTP" option, or in the installation email that was sent to you on activating your offer.
-
-|Cluster|without Geocache|3 PoPs (Basic)|17 PoPs (Business)|
-|002|37.187.184.2|213.186.33.2 or 213.186.33.68|213.186.33.69|
-|003|37.187.184.4|213.186.33.4 or 213.186.33.84|213.186.33.85|
-|005|37.187.184.16|213.186.33.16 or 213.186.33.94|213.186.33.95|
-|006|37.187.184.17|213.186.33.17 or 213.186.33.96|213.186.33.97|
-|007|37.187.184.18|213.186.33.18 or 213.186.33.104|213.186.33.105|
-|010|37.187.184.19|213.186.33.19 or 213.186.33.106|213.186.33.107|
-|011|37.187.184.40|213.186.33.40 or 213.186.33.150|213.186.33.151|
-|012|37.187.184.48|213.186.33.48 or 213.186.33.152|213.186.33.153|
-|013|37.187.184.24|213.186.33.24 or 213.186.33.82|213.186.33.83|
-|014|37.187.184.87|213.186.33.87 or 213.186.33.168|213.186.33.169|
-
-|015|37.187.184.3|213.186.33.3 or
-213.186.33.170|213.186.33.171|
-|017|37.187.184.50|213.186.33.50 or 213.186.33.172|213.186.33.173|
+ 
+**Why can’t I use a geolocated IP with the CDN option?** <br>
+<br>
+The CDN uses the principle of "IP Anycast". You do not request the same server depending on your geolocation, which is very efficient for reducing the loading time of your static files. Therefore, a geolocated IP address is not needed. <br>
+In terms of SEO (search engine optimisation), the speed at which your website loads is more important that the geolocation of the IP addresses.
 
 
+### How do I cache my files in the CDN?
+
+**Using a CMS**
+
+The main CMSs distribute several plugins that allow static files to be cached so that they are automatically included by the CDN. Others automatically configure static files by enabling an integrated caching to the CMS. For further information, please refer to the official documentation for the CMS or plugin that you use.
+
+**Without using a CMS**
+
+If you are not using a CMS, you can also use the CDN cache. To do this, you must add headers to the HTTP requests. There are several ways in which you can add these headers. One of the easiest ways is to define rules within a .htaccess file according to the file extensions.
+
+```htaccess
+1. # Cache images for 1 week
+2. <FilesMatch "\.(jpg|jpeg|png|gif)$">
+3. Header set Cache-Control "max-age=604800, public"
+4. </FilesMatch>
+5. 
+6. # Cache JavaScript and CSS for 1 month
+7. <FilesMatch "\.(js|css)$">
+8. Header set Cache-Control "max-age=2592000"
+9. </FilesMatch>
+```
+> [!warning]
+>
+> Caching by using HTTP headers results in caching within the CDN but also within your users’ browsers. Therefore, to prevent your visitors from seeing an older cached version, it is recommended that you rename the files with every new version.
+> 
 
 
-## 
 
-To access this file you will need to connect to your hosting space via FTP. 
+### Clearing the CDN cache
 
-You can use the 'FileZilla' FTP client for this.
+It is sometimes useful to clear the CDN cache, particularly when you modify static files - for example, when launching a new version of your site. In this case, you can completely clear the CDN cache.
+
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Click `...`{.action} to the right of “CDN option”, then on `Clear cache`{.action}.
+
+![CDN](images/manage_CDN_02.png){.thumbnail}
+
+### Deactivating the CDN option
+
+This action allows you to deactivate the CDN for one or more of your Multisite entries without removing the CDN option from your Web Hosting.
+
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. On the `Multisite`{.action} tab, click on the cog to the right of the Multisite entry, then click on `Edit`{.action}.
+
+Untick “Activate the CDN”, click `Next`{.action} and then `Confirm`{.action}.
+
+![CDN](images/manage_CDN_03.png){.thumbnail}
+
+### Cancelling the CDN option
+
+This action will remove the CDN option from your entire Web Hosting solution.
+
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Click `...`{.action} to the right of “CDN option”, then on `Cancel the CDN`{.action}.
+
+![CDN](images/manage_CDN_04.png){.thumbnail}
+
+Click `Confirm`{.action} to continue with the cancellation.
+
+> [!warning]
+>
+> You will receive an email containing the CDN closure procedure. Please follow the instructions in the email in order to confirm or cancel the request. 
+> 
 
 
-## Enable/Disable the GeoCache Accelerator
+### Checking that your CDN is working
 
-Once you have logged into your hosting system via FTP, you will automatically reach the root directory. Several files and folders should be located here, including the ".ovhconfig" file.
-
-Download this file to your PC (by double clicking) and open using a text editor. Rename the file as 'ovhconfig.txt' if necessary.
-
-In the lines beginning with "environment" replace "production" with "development". 
-
-Rename the file as '.ovhconfig' again and return it to the FTP root, replacing the existing file. 
-
-To renable the GeoCache, simply replace environment" with "production" again.
-
-![CDN3](images/img_1207.jpg){.thumbnail}
-You can also add the following ling to your .htaccess file:
+You can check that the CDN is active on your domain name via a terminal with the following command:
 
 ```
-Header set Cache-Control "no-cache"
+curl -i http://yourpersonnaldomain.ovh/
 ```
 
+If your domain name is being processed by the CDN, you will receive a result like the one below:
 
+```
+HTTP/1.1 200 OK
+Date: Mon, 01 Jan 2020 00:00:00 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: SERVERID12345=123456; path=/; max-age=900
+Vary: Accept-Encoding
+X-Request-ID: 123456789
+X-CDN-Pop: rbx1
+X-CDN-Pop-IP: 00.111.22.333/44
+X-Cacheable: Cacheable
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-IPLB-Instance: 12345
+```
+The “*X-CDN*” headers confirm that the domain is running through the CDN.
 
+If the domain name is not running through the CDN, you will receive a result like the below:
+
+```
+HTTP/1.1 200 OK
+Date: Mon, 01 Jan 2020 00:00:00 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: SERVERID12345=123456; path=/; max-age=900
+Server: Apache
+X-Powered-By: PHP/7.1
+Vary: Accept-Encoding
+X-IPLB-Instance: 12345
+```
+
+The absence of the “*X-CDN*” header shows that you are not using a CDN.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

@@ -39,13 +39,13 @@ The sender sends an email to the mailing list. The moderator receives an email w
 ## Requirements
 
 - an MX Plan 100 minimum or [Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external} eligible for mailing lists
-- access to the [OVHcloud Control Panel](https://www.ovh.com/manager/web/login/){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 ### Create a mailing list.
 
-To create a mailing list, go to the [OVHcloud Control Panel](http://www.ovh.com/manager/web){.external} and click on the `Web`{.action} tab at the top.
+To create a mailing list, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Web`{.action} tab at the top.
 
 Next, click in the left-hand column, click on `Emails`{.action} — then click on the domain name concerned. Go to the `Mailing lists`{.action} tab for your email service.
 
@@ -139,8 +139,8 @@ There are two ways of adding and removing moderators:
 - importing a text file containing one email address per line, by clicking on the upload icon next to the manual entry button
 
 > [!primary]
-> \- When several moderators are defined on a mailing list, only one moderator needs to validate an email to send to subscribers.
-> \- When a moderator sends an email to the mailing list, only they receive the moderation email.
+> - When several moderators are defined on a mailing list, only one moderator needs to validate an email to send to subscribers.
+> - When a moderator sends an email to the mailing list, only they receive the moderation email.
 > 
 
 Depending on the number of subscribers you need to add, this may take some time to do.
@@ -257,4 +257,4 @@ Below is a list of files containing the reply texts, and a brief description of 
 
 ## Go further
 
-Join our community of users on https://community.ovh.com/en/
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/)

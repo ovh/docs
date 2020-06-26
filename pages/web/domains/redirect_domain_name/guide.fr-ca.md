@@ -17,7 +17,7 @@ La redirection d'un nom de domaine permet de rediriger celui-ci vers une nouvell
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
-- Être connecté à votre hébergement web (si vous souhaitez ajouter un [fichier .htaccess](../../hosting/mutualise-tout-sur-le-fichier-htaccess/){.external}).
+- Être connecté à votre hébergement web (si vous souhaitez ajouter un [fichier .htaccess](../../hosting/htaccess-reecriture-url-mod-rewrite/){.external}).
 
 ## En pratique
 
@@ -116,7 +116,7 @@ Les fichiers .htaccess sont des fichiers de configuration dans lesquels des comm
 
 Modifier un fichier .htaccess peut nécessiter des compétences techniques du fait qu'une manipulation incorrecte peut rendre inaccessible un ou plusieurs sites internet si vous utilisez des sous-répertoires sur votre hébergement. En cas de doute, et si vous désirez obtenir de l’aide concernant la modification d'un fichier .htaccess, nous vous recommandons de faire appel à un développeur web spécialisé sur la question.
 
-Vous pouvez également vous reporter à notre documentation [Tout sur le fichier .htaccess](../../hosting/mutualise-tout-sur-le-fichier-htaccess/){.external} qui vous donnera quelques astuces concernant son utilisation.
+Vous pouvez également vous reporter à notre documentation [Tout sur le fichier .htaccess](../../hosting/htaccess-reecriture-url-mod-rewrite/){.external} qui vous donnera quelques astuces concernant son utilisation.
 
 > [!primary]
 >
@@ -168,6 +168,6 @@ Redirect temp / http://autre_site_web.tld/site/
 
 [Tout sur le fichier .htaccess](../../hosting/mutualise-tout-sur-le-fichier-htaccess/){.external}.
 
-[Comment éditer ma zone DNS ?](../domains/editer-ma-zone-dns/){.external}
+[Comment éditer ma zone DNS ?](../editer-ma-zone-dns/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
