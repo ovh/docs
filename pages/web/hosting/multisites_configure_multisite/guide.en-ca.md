@@ -41,11 +41,11 @@ To add a new domain to your Web Hosting plan, click on the `Add a domain or sub-
 
 - **Adding an OVHcloud-registered domain**
 
-Only the domains that use the OVHcloud configuration and are listed as contacts in your NIC handle will appear. Choose one from the list, then click `Next`{.action}. Then follow [Step 3.1: Add an OVHcloud-registered domain](../multisites-configuring-multiple-websites/#step-31-add-an-ovhcloud-registered-domain){.external}.
+Only the domains that use the OVHcloud configuration and are listed as contacts in your NIC handle will appear. Choose one from the list, then click `Next`{.action}. Then follow [Step 3.1: Add an OVHcloud-registered domain](./#step-31-add-an-ovhcloud-registered-domain){.external}.
 
 - **Adding a non-OVHcloud registered domain**
 
-If the domain name does not appear in the list, it is considered external (to your NIC handle or to OVHcloud). If this is the case, select `Add an external domain`{.action}, then click `Next`{.action}. Then follow [Step 3.2: Add a non-OVHcloud registered domain name](../multisites-configuring-multiple-websites/#step-32-add-a-non-ovhcloud-registered-domain){.external}.
+If the domain name does not appear in the list, it is considered external (to your NIC handle or to OVHcloud). If this is the case, select `Add an external domain`{.action}, then click `Next`{.action}. Then follow [Step 3.2: Add a non-OVHcloud registered domain name](./#step-32-add-an-non-ovhcloud-registered-domain){.external}.
 
 ![multisite](images/add-multisite-step1.png){.thumbnail}
 
@@ -53,7 +53,7 @@ If the domain name does not appear in the list, it is considered external (to yo
 
 > [!primary]
 >
-> This step only applies if you have selected “Add an OVHcloud-registered domain”. For non-OVHcloud registered domain names, go to [Step 3.2: Add a non-OVHcloud registered domain name](../multisites-configuring-multiple-websites/#step-32-add-a-non-ovhcloud-registered-domain){.external}.
+> This step only applies if you have selected “Add an OVHcloud-registered domain”. For non-OVHcloud registered domain names, go to [Step 3.2: Add a non-OVHcloud registered domain name](./#step-32-add-an-non-ovhcloud-registered-domain){.external}.
 >
 
 You will now need to customise the way you add your domain. Depending on the [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external} you have purchased, some options may not be available.
@@ -79,13 +79,13 @@ Once you have selected an OVHcloud-registered domain, you can also configure its
 
 Click `Confirm`{.action} to start adding the domain. This may take up to an hour. Changes made to a domain name’s configuration can take between 4 and a maximum of 24 hours to propagate fully.
 
-Now that you have added the domain name, go to [Step 4: Put your website online](../multisites-configuring-multiple-websites/#step-4-put-your-website-online){.external}.
+Now that you have added the domain name, go to [Step 4: Put your website online](./#step-4-put-your-website-online){.external}.
 
 ### Step 3.2: Add a non-OVHcloud registered domain.
 
 > [!primary]
 >
-> You will only need to follow this step if you have selected “Add a non-OVHcloud registered domain name” (domains registered with a domain registrar other than OVHcloud, which you cannot manage from the OVHcloud Control Panel). For an OVHcloud-registered domain, go back to [Step 3.1: Add an OVHcloud-registered domain](https://docs.ovh.com/ca/en/hosting/multisites-configuring-multiple-websites/#step-31-add-an-ovhcloud-registered-domain){.external}.
+> You will only need to follow this step if you have selected “Add a non-OVHcloud registered domain name” (domains registered with a domain registrar other than OVHcloud, which you cannot manage from the OVHcloud Control Panel). For an OVHcloud-registered domain, go back to [Step 3.1: Add an OVHcloud-registered domain](./#step-31-add-an-ovhcloud-registered-domain){.external}.
 >
 
 You will now need to customise the way you add your domain. Please note that some of the options included in your [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external} cannot be enabled during this process. You will need to finalise this operation in order to activate the options, by changing the Multisite configuration when it is added.
