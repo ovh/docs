@@ -107,6 +107,53 @@ Finally, restart the network service with the following command:
 ifup eth0
 ```
 
+##### Your system starts on the dracut rescue shell
+
+Restart your VPS with rescue mode.
+
+Once the VPS has booted in rescue mode, connect to it via SSH and mount your disk in the /mnt folder:
+
+```
+mount /dev/sdb1 /mnt
+```
+
+Change the root directory of rescue:
+
+```
+chroot /mnt
+```
+
+List the available kernels:
+
+```
+awk -F\' '$1=="menuentry " {print i++ " : " $2}' /etc/grub2.cfg
+0 : CentOS Linux (3.10.0-862.6.3.el7.x86_64) 7 (Core)
+1 : CentOS 7, OVH kernel x.xx.xx-xxxx-std-ipv6-64-vps
+2 : CentOS Linux (3.10.0-514.26.2.el7.x86_64) 7 (Core)
+```
+
+The kernel we are interested in is the OVHcloud kernel (in which the VirtIO SCSI drivers are compiled and enabled by default):
+
+*CentOS 7, OVH kernel x.xx.xx-xxxx-std-ipv6-64-vps*
+
+List the default configuration for grub2: 
+
+```
+grub2-editenv list
+saved_entry=CentOS Linux (3.10.0-514.26.2.el7.x86_64) 7 (Core)
+```
+
+In the next step, modify the configuration so that the OVHcloud kernel becomes the default kernel (to be adapted according to the return of the kernel list):
+
+```
+grub2-set-default 1
+grub2-editenv list
+saved_entry=1
+```
+
+Finally, restart your VPS.
+
+
 #### Configure a static IP address with Debian
 
 ##### Configuring the network interface
