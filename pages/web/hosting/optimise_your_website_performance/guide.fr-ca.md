@@ -30,13 +30,13 @@ En cas de lenteur rencontrée voici quelques questions à se poser :
 
 
 ### Firebug
-Un outil d'analyse qu'il peut être intéressant d'utiliser est [Firebug](https://addons.mozilla.org/fr/firefox/addon/firebug/){.external}.
+Un outil d'analyse qu'il peut être intéressant d'utiliser est **Firebug**.
 
-C'est un module  **pour le navigateur Mozilla Firefox** .
+C'est un module **du navigateur Mozilla Firefox** .
 
 Il vous permet, entre autres, d'analyser en détail les temps de chargement de votre page.
 
-Pour cela vous devez accéder à l'onglet "Réseau".
+Pour cela, cliquez sur la touche `F12`de votre clavier et dirigez-vous vers l'onglet "Réseau".
 
 *Dans l'exemple ci-contre, on constate que la page met 5,6 secondes à charger. Grâce à Firebug, on se rend compte qu'une des images chargées "accueil.png" prend 2,42 secondes à être téléchargée car elle pèse plus de 1 Mo. On peut ainsi optimiser l'image afin d'améliorer le temps d'accès au site web.*
 
