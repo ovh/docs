@@ -141,12 +141,10 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre site
 
 [Choisir un CMS pour créer un site web](https://www.ovh.com/ca/fr/hebergement-web/site/comparatif-cms/){.external}
 
-[Comment partager mon hébergement Web entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
+[Comment partager mon hébergement web entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
 
-[Gestion d’une base de données depuis un hébergement mutualisé](../gestion-dune-base-de-donnees-depuis-un-hebergement-mutualise/){.external}
+[Créer une base de données sur son hébergement web](../creer-base-de-donnees/){.external}
 
 Découvrez nos [offres SQL Privé](https://www.ovh.com/ca/fr/hebergement-web/options-sql.xml){.external}
-
-Découvrez nos [offres CloudDB](https://www.ovh.com/ca/fr/cloud/cloud-databases/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
