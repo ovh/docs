@@ -24,7 +24,7 @@ Il est possible de restreindre l'accès au vCenter en autorisant uniquement cert
 
 Lorsque [la politique d'accès au vCenter est restreinte]({legacy}1442246), il est nécessaire d'ajouter les IPs qui seront autorisé à se connecter au service.
 
-L'opération se réalise dans [l'espace client (Manager)](https://www.ovh.com/manager){.external-link}, section **"Dédié"** puis **"Private Cloud"**. Sélectionner l'infrastructure puis rendez-vous dans l'onglet "**Sécurité"**et enfin****cliquer sur "**Ajout des IP".**
+L'opération se réalise dans [l'espace client (Manager)](https://www.ovh.com/manager){.external-link}, Dans la section `Serveur`, cliquez sur la rubrique `Public Cloud`. Sélectionner l'infrastructure puis rendez-vous dans l'onglet `Serveur` et enfin cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 
