@@ -16,7 +16,7 @@ En dehors de la [gestion des contacts](https://docs.ovh.com/ca/fr/customer/gesti
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/manager/web){.external}
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
 - Disposer d'un nom de domaine enregistré chez OVHcloud.
 - Être le [contact administrateur](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/) du nom de domaine concerné.
 - Disposer de l'accord du propriétaire actuel du nom de domaine pour effectuer le changement de propriétaire.
