@@ -98,9 +98,6 @@ RewriteRule ^(.*)$ https://www.votredomaine.com/$1 [R,L]
 ```
 
 
-## Le fichier .htaccess
-Tout sur le fichier .htaccess sur le lien suivant : [Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/){.ref}
-
 
 ## Aller plus loin
 

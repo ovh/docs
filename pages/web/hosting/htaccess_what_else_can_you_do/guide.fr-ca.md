@@ -85,9 +85,6 @@ DirectoryIndex accueil.html
 Vous pouvez pour cela vous rendre sur le lien suivant : [.htaccess: reecriture d’URL grace au mod_rewrite](../htaccess-reecriture-url-mod-rewrite/){.ref}
 
 
-## Le fichier .htaccess
-Tout sur le fichier .htaccess sur le lien suivant : [Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/){.ref}
-
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -98,7 +98,7 @@ Cette étape peut être facultative si vous ne souhaitez pas utiliser les adress
 
 Suivez les informations demandées jusqu'à la création de votre adresse e-mail. Répétez cette étape pour en créer plusieurs. Si vous êtes dans un processus de migration de vos e-mails chez OVHcloud, nous vous invitons à utiliser notre outil [OVHcloud Mail Migrator](https://omm.ovh.net/){.external} afin de vous aider dans vos démarches. 
 
-Si vous désirez obtenir plus d'informations sur la création d'une adresse e-mail ou sur la migration de vos services chez OVHcloud, consultez nos documentations : [Comment créer une adresse e-mail](../../emails/creation-dune-adresse-e-mail/){.external} et [Migrer mon site chez OVHcloud](../migrer-mon-site-chez-ovh/){.external} si ce dernier s'applique.
+Si vous désirez obtenir plus d'informations sur la création d'une adresse e-mail ou sur la migration de vos services chez OVHcloud, consultez nos documentations : [Comment créer une adresse e-mail](../../emails/generalites-sur-les-emails-mutualises/#etape-2-creer-vos-adresses-e-mail_1){.external} et [Migrer mon site chez OVHcloud](../migrer-mon-site-chez-ovh/){.external} si ce dernier s'applique.
 
 
 ### Étape 4 : vérifier ou modifier la configuration de votre domaine
@@ -163,7 +163,7 @@ Si vous désirez obtenir de l’aide concernant les fonctionnalités de votre si
 
 ### Étape 6 : utiliser vos adresses e-mail
 
-Il ne reste plus qu'à utiliser vos adresses e-mail. Pour cela, OVHcloud met à disposition un applicatif en ligne (webmail) : RoundCube. Ce dernier est accessible à l'adresse <https://mail.ovh.net/> où vous devrez y renseigner les identifiants relatifs à votre adresse e-mail créée chez OVHcloud.
+Il ne reste plus qu'à utiliser vos adresses e-mail. Pour cela, OVHcloud met à disposition un applicatif en ligne (webmail) : RoundCube. Ce dernier est accessible à l'adresse <https://www.ovh.com/ca/fr/mail/> où vous devrez y renseigner les identifiants relatifs à votre adresse e-mail créée chez OVHcloud.
 
 Si vous désirez obtenir plus de détails sur l'utilisation de RoundCube, consultez notre guide : [Utilisation de RoundCube](../../emails/utilisation-roundcube/){.external}. Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil (comme un smartphone ou une tablette), consultez nos documentations depuis ce portail : <https://docs.ovh.com/ca/fr/emails/>.
 
@@ -176,7 +176,7 @@ Si vous désirez obtenir plus de détails sur l'utilisation de RoundCube, consul
 
 [Installer son site avec les modules en 1 clic](../modules-en-1-clic/){.external}
 
-[Comment créer une adresse e-mail](../../emails/creation-dune-adresse-e-mail/){.external}
+[Comment créer une adresse e-mail](../../emails/generalites-sur-les-emails-mutualises/#etape-2-creer-vos-adresses-e-mail_1){.external}
 
 [Utilisation de RoundCube](../../emails/utilisation-roundcube/){.external}
 

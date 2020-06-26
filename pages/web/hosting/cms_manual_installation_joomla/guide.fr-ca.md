@@ -39,7 +39,7 @@ Pour installer la plateforme  **Joomla!**  sur votre offre d'hébergement mutual
 
 
 ### Partie 2 &#58; recuperation des fichiers sources
-- Rendez-vous sur le site du développeur de [Joomla!](http://aide.joomla.fr/telechargements/joomla-3-0-package-d-installation-et-patchs){.external} que vous pourrez télécharger.
+- Rendez-vous sur le site du développeur de [Joomla!](https://developer.joomla.org/cms/downloads.html){.external} que vous pourrez télécharger.
 
 **compressé**  (zippé), il faudra être en mesure de le  **décompresser**  (extraire) sur votre ordinateur. Vous trouverez sur Internet différentes aides à ce sujet.
 
@@ -206,7 +206,7 @@ Pour un aperçu du panel d'administration de Joomla!, cliquez sur l'image ci- co
 
 Vous pouvez également consulter les forums dédiés à la solution Joomla!.
 
-- Voici un lien vers un [forum d'entraide](http://forum.joomla.fr/){.external} dédié à ce CMS.
+- Voici un lien vers un [forum d'entraide](https://forum.joomla.org/){.external} dédié à ce CMS.
 
 Vous avez mis en place vos fichiers sur le FTP, cependant la page "site en construction" est toujours affichée.
 
