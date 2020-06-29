@@ -8,9 +8,9 @@ section: Premiers pas
 **Dernière mise à jour le 05/05/2020**
 
 ## L'acces au manager d'OVHcloud
-Il s'agit du mot de passe lié à votre identifiant* OVHcloud. Votre identifiant est sous la forme "ab12345-ovh". Cet identifiant est généré automatiquement lors de votre inscription depuis le site [OVHcloud](http://www.ovh.com){.external}.
+Il s'agit du mot de passe lié à votre identifiant* OVHcloud. Votre identifiant est sous la forme "ab12345-ovh". Cet identifiant est généré automatiquement lors de votre inscription depuis le site [OVHcloud](http://www.ovh.com/ca/fr){.external}.
 
-*L'identifiant OVHcloud est aussi appelé nic-handle ou nic.* Vous définissez vous-même le mot de passe lié à cet identifiant. Celui-ci ne vous sera pas transmis par e-mail pour des raisons de sécurité car depuis votre espace client vous pouvez gérer l'ensemble de vos services (création, suppression, modification). Si vous ne vous souvenez plus de votre mot de passe pour l'accès à votre [espace client](http://www.ovh.com/manager/web){.external}, vous pouvez modifier celui- ci depuis la page de connexion au manager OVHcloud.
+*L'identifiant OVHcloud est aussi appelé nic-handle ou nic.* Vous définissez vous-même le mot de passe lié à cet identifiant. Celui-ci ne vous sera pas transmis par e-mail pour des raisons de sécurité car depuis votre espace client vous pouvez gérer l'ensemble de vos services (création, suppression, modification). Si vous ne vous souvenez plus de votre mot de passe pour l'accès à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, vous pouvez modifier celui- ci depuis la page de connexion au manager OVHcloud.
 
 
 ![hosting](images/2847.png){.thumbnail}
@@ -20,8 +20,8 @@ Vous serez ensuite invité à saisir votre identifiant client (ex:"ab12345-ovh")
 
 ![hosting](images/2848.png){.thumbnail}
 
-Un e-mail sera ensuite envoyé vers l'adresse e-mail que vous avez utilisée lors de votre inscription. Il est nécessaire que celle-ci soit valide. Dans le cas contraire il faudra réaliser une procédure de [modification d'adresse
-e-mail](https://www.ovh.com/ca/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi){.external} avant de pouvoir modifier le mot de passe. Si vous n'avez ni votre identifiant et que l'adresse e-mail de contact n'est plus valide, veuillez dans ce cas contacter le support. Nous vous demanderons 3 points d'identifications. Si vous pouvez confirmer ces 3 points, votre identifiant vous sera communiqué.
+Un e-mail sera ensuite envoyé vers l'adresse e-mail que vous avez utilisée lors de votre inscription. Il est nécessaire que celle-ci soit valide. Dans le cas contraire il faudra réaliser une procédure de modification d'adresse
+e-mail avant de pouvoir modifier le mot de passe. Si vous n'avez ni votre identifiant et que l'adresse e-mail de contact n'est plus valide, veuillez dans ce cas contacter le support. Nous vous demanderons 3 points d'identifications. Si vous pouvez confirmer ces 3 points, votre identifiant vous sera communiqué.
 
 
 ## La connexion FTP
