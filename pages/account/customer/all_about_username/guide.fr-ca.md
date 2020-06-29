@@ -24,7 +24,7 @@ Il est aussi appelé NIC-handle.
 
 ## Comment créer un identifiant client ?
 
-Si vous n'avez pas encore d'identifiant, il suffit de vous rendre sur la page de [création de compte OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. 
+Si vous n'avez pas encore d'identifiant, il suffit de vous rendre sur la page de [création de compte OVHcloud](https://ca.ovh.com/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=QC){.external}. 
 
 Entrez vos coordonnées sur ce formulaire en ligne, en veillant à nous communiquer **une adresse e-mail valide**.
 
@@ -37,8 +37,8 @@ Dès que vous aurez validé le formulaire, vous recevrez un e-mail vous confirma
 
 Afin d'améliorer la sécurité de votre compte, nous vous conseillons de :
 
-- consulter [le guide sur la définition et la gestion du mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/) ;
-- sécuriser l'accès à votre compte en mettant en place une double authentification. Le guide suivant vous expliquera comment l'activer : « [Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/) ».
+- consulter [le guide sur la définition et la gestion du mot de passe de votre compte](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/) ;
+- sécuriser l'accès à votre compte en mettant en place une double authentification. Le guide suivant vous expliquera comment l'activer : « [Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/ca/fr/customer/securiser-son-compte-avec-une-2FA/) ».
 
 ## Comment retrouver votre identifiant client ?
 
@@ -74,7 +74,7 @@ Rendez-vous sur [la page d'authentification OVHcloud](https://ca.ovh.com/auth/?a
 
 ![identifiant client](images/nichandle03.png){.thumbnail}
 
-Le cas échéant, vous devrez compléter la procédure de [double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/). Cette sécurité supplémentaire sur votre compte vient compléter votre couple identifiant-mot de passe et est gérée depuis un appareil que vous possédez : un téléphone, une tablette ou une clé de sécurité.
+Le cas échéant, vous devrez compléter la procédure de [double authentification](https://docs.ovh.com/ca/fr/customer/securiser-son-compte-avec-une-2FA/). Cette sécurité supplémentaire sur votre compte vient compléter votre couple identifiant-mot de passe et est gérée depuis un appareil que vous possédez : un téléphone, une tablette ou une clé de sécurité.
 
 > [!primary]
 > Si vous n'avez pas sécurisé votre compte avec une double authentification, un code de vérification peut vous être demandé afin de valider votre identification. Celui-ci vous est envoyé par e-mail **sur l'adresse principale** du compte.  
@@ -84,13 +84,11 @@ Le cas échéant, vous devrez compléter la procédure de [double authentificati
 
 ### En cas de perte de votre mot de passe
 
-En cas de perte ou d'oubli de votre mot de passe, consultez [ce guide détaillant la marche à suivre pour le modifier](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#si-vous-ne-connaissez-plus-votre-mot-de-passe-actuel).
+En cas de perte ou d'oubli de votre mot de passe, consultez [ce guide détaillant la marche à suivre pour le modifier](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/#si-vous-ne-connaissez-plus-votre-mot-de-passe-actuel).
 
 ### En cas d'indisponibilité de votre adresse e-mail
 
-Si vous avez renseigné une adresse e-mail de secours, vous pouvez [contacter le support OVHcloud](https://www.ovh.com/fr/support/nous-contacter/) afin que cette adresse secondaire devienne la principale. Une fois cette action effectuée, il est essentiel de renseigner une nouvelle adresse e-mail de secours.
-
-Si vous n'avez pas renseigné d'adresse e-mail de secours ou que celle-ci est également indisponible, vous pouvez suivre cette [procédure](http://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi){.external} à nous adresser par courrier. Une fois celui-ci reçu par nos services, nous procéderons alors au remplacement de votre adresse e-mail de contact si tous les justificatifs réclamés sont conformes.
+Si vous avez renseigné une adresse e-mail de secours, vous pouvez [contacter le support OVHcloud](https://www.ovhcloud.com/fr-ca/contact/) afin que cette adresse secondaire devienne la principale. Une fois cette action effectuée, il est essentiel de renseigner une nouvelle adresse e-mail de secours.
 
 ## Comment gérer vos informations personnelles ?
 
@@ -149,17 +147,14 @@ Dans ces cas de figure, OVHcloud vous permet de donner des accès à votre compt
 
 ### Créer des utilisateurs
 
-Un utilisateur pourra détenir des droits en lecture ou en écriture sur votre compte et l'ensemble de vos services. Vous pourrez créer, administrer et supprimer ces utilisateurs depuis votre espace client. Pour en savoir davantage, consultez le [le guide sur la gestion des utilisateurs](https://docs.ovh.com/fr/customer/gestion-utilisateurs/).
+Un utilisateur pourra détenir des droits en lecture ou en écriture sur votre compte et l'ensemble de vos services. Vous pourrez créer, administrer et supprimer ces utilisateurs depuis votre espace client. Pour en savoir davantage, consultez le [le guide sur la gestion des utilisateurs](https://docs.ovh.com/ca/fr/customer/gestion-utilisateurs/).
 
-### Gérer les contacts
-
-Vous pouvez déléguer la gestion administrative **ou** technique **ou** de facturation d'un ou plusieurs services de votre compte à un autre identifiant client. Consultez le guide sur [la gestion des contacts](https://docs.ovh.com/fr/customer/gestion-des-contacts/) pour en savoir plus.
 
 ## Que faire en cas de suspicion d'usurpation d'identité ?
 
-Si vous recevez un e-mail vous indiquant une connexion inconnue à votre espace client, nous vous conseillons de [modifier immédiatement le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#modifier-votre-mot-de-passe) et de [sécuriser celui-ci via une double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/).
+Si vous recevez un e-mail vous indiquant une connexion inconnue à votre espace client, nous vous conseillons de [modifier immédiatement le mot de passe de votre compte](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/#modifier-votre-mot-de-passe) et de [sécuriser celui-ci via une double authentification](https://docs.ovh.com/ca/fr/customer/securiser-son-compte-avec-une-2FA/).
 
-Si vous constatez une activité suspecte sur votre compte, [contactez le support OVHcloud](https://www.ovh.com/fr/support/nous-contacter/) afin que nos équipes vous assistent dans les démarches à entreprendre.
+Si vous constatez une activité suspecte sur votre compte, [contactez le support OVHcloud](https://www.ovhcloud.com/fr-ca/contact/) afin que nos équipes vous assistent dans les démarches à entreprendre.
 
 ## Aller plus loin
 
