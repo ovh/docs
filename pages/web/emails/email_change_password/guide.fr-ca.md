@@ -26,7 +26,7 @@ Les adresses e-mail de l’offre MX Plan vous permettent d’envoyer et de recev
 
 ## En pratique
 
-Selon la date d'activation de votre service ou si [celui-ci a été récemment migré](../mxplan-migration/){.external}, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre MX Plan. Avant de poursuivre, vous devez identifier celle-ci. 
+Selon la date d'activation de votre service ou si celui-ci a été récemment migré, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre MX Plan. Avant de poursuivre, vous devez identifier celle-ci. 
 
 Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie « Web ». Cliquez sur `E-mails`{.action} dans la barre de services à gauche, puis choisissez le nom du service MX Plan concerné. Poursuivez selon la version que vous possédez.
 
