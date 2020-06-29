@@ -53,7 +53,7 @@ OVHcloud side:
 
 It is easy to activate Zerto features from the OVHcloud Control Panel. You just need to select the datacentre linked to the Hosted Private Cloud solution that you want to use, from the `Disaster Recovery Plan`{.action} tab.
 
-![](images/image-EN-2.png)
+![](images/image-EN-2-nucp.png)
 
 First select `Between your infrastructure and an OVHcloud Private Cloud`{.action}, then click `Activate Zerto DRP`{.action}. Next, select a free public IP from the dropdown menu and enter the desired network range for the ZVM deployment. Confirm the VRA Network range and then click `Install`{.action}.
 
