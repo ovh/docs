@@ -89,8 +89,4 @@ OVHcloud propose aussi une application web permettant d'accéder à votre adress
 
 ## Aller plus loin
 
-[Configurer son compte E-mail Pro sur Outlook 2016 pour Mac](../../configuration-outlook-2016-mac/){.external}.
-
-[Configurer son compte Exchange sur Outlook 2016 pour Mac](../../microsoft-collaborative-solutions/configuration-outlook-2016-mac/){.external}.
-
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -102,8 +102,4 @@ OVHcloud propose une application web permettant d'accéder à votre adresse e-ma
 
 ## Aller plus loin
 
-[Configurer son compte E-mail Pro sur Android via l'application Gmail](../../emails-pro/configuration-android/){.external}.
-
-[Configurer son compte Exchange sur Android via l'application Gmail](../../microsoft-collaborative-solutions/exchange-configuration-sous-android/){.external}.
-
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

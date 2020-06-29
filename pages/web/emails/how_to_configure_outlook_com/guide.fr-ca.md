@@ -60,8 +60,9 @@ Voici comment réaliser votre configuration en  **IMAP**  avec  **SSL** activé.
 
 - Remplissez les différents champs demandés puis cliquez sur `Ok`{.action}:
 
+|information|description|
 |---|---|
-|Nom complet|Le nom qui s'affichera chez le destinataire|
+| Nom complet| Le nom qui s'affichera chez le destinataire|
 |Adresse de messagerie|Votre adresse e-mail OVHcloud|
 |Nom d'utilisateur|Votre adresse e-mail OVHcloud|
 |Mot de passe|Le mot de passe de votre adresse e-mail OVHcloud|
@@ -121,6 +122,7 @@ Nous vous invitons à vous renseigner sur l'utilisation de ces deux protocoles a
 ### Configuration POP
 Si vous désirez configurer votre compte en POP, choisissez ce protocole lors de l'ajout de votre compte e-mail OVHcloud, puis indiquez ces paramètres :
 
+|information|description|
 |---|---|
 |Nom complet|Le nom qui s'affichera chez le destinataire|
 |Adresse de messagerie|Votre adresse e-mail OVHcloud|

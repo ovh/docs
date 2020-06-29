@@ -62,9 +62,6 @@ Pour vérifier le dossier dans lequel votre site internet est stocké, positionn
 Pour récupérer une sauvegarde de votre base de données, consultez notre guide :
 [« Récupérer la sauvegarde de la base de données d’un hébergement web »](../exportation-bases-donnees/){.external}.
 
-Si vous utilisez une base de données **SQL privé** pour votre site Web, consultez la section dédiée à la sauvegarde sur notre guide :
-[« Tout sur le SQL privé »](../tout-sur-le-sql-prive/#sauvegarde-restauration-et-importation-depuis-lespace-client_1){.external}.
-
 ### Étape 3 : récupérer les logs de votre hébergement OVHcloud
 
 Si vous souhaitez conserver l'historique des logs de votre site, un accès à ces derniers est disponible avec votre hébergement.
@@ -106,7 +103,5 @@ Lorsque vous avez sélectionné le type de logs sur le mois qui vous intéresse,
 [Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}. 
 
 [Récupérer la sauvegarde de la base de données d’un hébergement web](../exportation-bases-donnees/){.external}.
-
-[Tout sur le SQL privé](../tout-sur-le-sql-prive/#sauvegarde-restauration-et-importation-depuis-lespace-client_1){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

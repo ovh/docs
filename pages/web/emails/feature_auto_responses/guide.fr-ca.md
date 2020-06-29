@@ -23,7 +23,7 @@ order: 3
 
 ### Connexion a l'espace client
 - Connectez-vous dans [l'espace
-client](https://www.ovh.com/manager/web){.external} à l'aide de votre couple identifiant (nic-handle) - mot de passe.
+client](https://ca.ovh.com/auth/?action=gotomanager){.external} à l'aide de votre couple identifiant (nic-handle) - mot de passe.
 - Cliquez sur `Connexion`{.action} pour valider l'opération.
 
 

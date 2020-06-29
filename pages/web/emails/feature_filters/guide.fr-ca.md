@@ -26,11 +26,11 @@ Par exemple : vous souhaitez que tout e-mail contenant "[SPAM]" dans le sujet so
 ### Prérequis
 
 - Avoir une offre e-mail MX Plan ou un [Pack Hébergement Web](https://www.ovh.com/ca/fr/hebergement-web/){.external} .
-- Avoir l'accès à votre [espace client](https://www.ovh.com/manager/web/login/){.external}.
+- Avoir l'accès à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ### Ou se configurent les filtres d'e-mails ?
 
-Dans un premier temps, connectez-vous à votre [espace client](https://www.ovh.com/manager/web/login/){.external}.
+Dans un premier temps, connectez-vous à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 Une fois connecté, sélectionnez votre nom de domaine concerné dans la Section Emails.
 
