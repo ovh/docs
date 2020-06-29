@@ -29,7 +29,7 @@ To create or delete an element, log in to the [OVHcloud Control Panel](https://c
 
 ### How do I manage my passwords? 
 
-To manage your password, start off by logging in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. If you have forgotten your username or password, click `Forgotten your username or password?`{.action} in the login window. You will be sent an email with the reset procedure. Please also read our [Setting and managing an account password](../../customer/manage-password) guide.
+To manage your password, start off by logging in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. If you have forgotten your username or password, click `Forgotten your username or password?`{.action} in the login window. You will be sent an email with the reset procedure. Please also read our [Setting and managing an account password](https://docs.ovh.com/gb/en/customer/manage-password/) guide.
 
 Once you have logged in to the OVHcloud Control Panel, you can manage different types of access, such as: 
 
