@@ -38,7 +38,7 @@ Vous avez reçu un e-mail au nom d'OVHcloud et vous voulez être sûr qu'il soit
 |---|---|---|
 |1 - Expéditeur|Vérifiez que l’adresse utilisée pour l’envoi de l’e-mail se termine par « @ovh.com », « @soyoustart.com » ou « @kimsufi.com.|L'expéditeur du mail sera forcément une adresse qui ne vient pas d'OVHcloud.|
 |2 - Objet|Vérifiez que votre identifiant **(commençant par la première lettre du nom enregistré chez OVHcloud puis par la première lettre du prénom enregistré chez OVHcloud)** et/ou l’adresse e-mail de votre compte figurent dans l’objet du message.|La plupart du temps, l'e-mail sera marqué comme « spam » entre crochets et votre identifiant n'apparaîtra pas OU sera incorrect.|
-|3 - Lien|Passez votre souris sur le lien et vous en verrez directement le contenu sans avoir à cliquer dessus (tout en bas de votre navigateur). Ici, le lien renvoie bien vers https://www.ovhcloud.com/.|Dans notre exemple, en passant la souris sur le lien, vous remarquez que celui-ci n'a rien à voir avec OVHclouf. Ne cliquez pas.|
+|3 - Lien|Passez votre souris sur le lien et vous en verrez directement le contenu sans avoir à cliquer dessus (tout en bas de votre navigateur). Ici, le lien renvoie bien vers https://www.ovhcloud.com/.|Dans notre exemple, en passant la souris sur le lien, vous remarquez que celui-ci n'a rien à voir avec OVHcloud. Ne cliquez pas.|
 
 
 > [!primary]
