@@ -62,7 +62,9 @@ Cette étape vous permet de définir configuration réseau à appliquer à cette
 
 > [!warning]
 >
-> Si vous n'avez pas fait de personalisation de la machine virtuelle, il est nécessaire de modifier la configuration du Clone avant de la démarrer, afin d'éviter un conflit d'IP / MAC. Dans ce cas, il vous suffit simplement de décocher la carte réseau dans les paramètres de la machine virtuelle une fois celle ci clonée, juste avant de la démarrer**
+> Si vous n'avez pas fait de personalisation de la machine virtuelle, il est nécessaire de modifier la configuration du clone avant de la démarrer, afin d'éviter un conflit d'IP / MAC. 
+>
+>Dans ce cas, il vous suffit simplement de décocher la carte réseau dans les paramètres de la machine virtuelle une fois celle ci clonée, juste avant de la démarrer.
 >
 >![déconnecter vm](images/clonevm06.png){.thumbnail}
 >
