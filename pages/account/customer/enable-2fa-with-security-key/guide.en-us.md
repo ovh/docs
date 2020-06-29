@@ -16,7 +16,7 @@ Two-factor authentication via Universal Second Factor (U2F) is one of the method
 
 ## Requirements
 
-- knowledge of the [two-factor authentication methods offered by OVHcloud](https://docs.ovh.com/ca/en/customer/secure-account-with-2FA/)
+- knowledge of the [two-factor authentication methods offered by OVHcloud](https://docs.ovh.com/us/en/customer/secure-account-with-2FA/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 - a U2F security key
 - a USB port on your computer

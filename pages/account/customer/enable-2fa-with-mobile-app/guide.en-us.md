@@ -16,7 +16,7 @@ Two-factor authentication authentication with a one-time password (OTP) mobile a
 
 ## Requirements
 
-- knowledge of the [two-factor authentication methods offered by OVHcloud](https://docs.ovh.com/ca/en/customer/secure-account-with-2FA/)
+- knowledge of the [two-factor authentication methods offered by OVHcloud](https://docs.ovh.com/us/en/customer/secure-account-with-2FA/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 - an OTP mobile application installed on your Android or iOS smartphone or tablet
 
