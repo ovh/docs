@@ -34,7 +34,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 Choisissez la méthode par clé de sécurité et validez.
 
-![2FA securitykey](images/2FAYubeyKeyCA.png){.thumbnail}
+![2FA securitykey](images/2fakeyeditca.png){.thumbnail}
 
 ### Étape 3 : valider la double authentification
 
@@ -66,11 +66,11 @@ Vous pourrez les supprimer ou les regénérer dans votre espace client.
 
 Une fois votre authentification à double facteur activée, l'écran d'identification vous présentera une de vos méthodes de sécurité. Si vous souhaitez en utiliser une autre, cliquez sur le bouton `Essayer une autre méthode`{.action}.
 
-![2FA securitykey](images/2FAYubeyKeyFailedCA.png){.thumbnail}
+![2FA securitykey](images/mobile_auth.png){.thumbnail}
 
 Tous les choix que vous avez activés apparaîtront alors.
 
-![2FA securitykey](images/2FAYubeyKeyBackupCodeCA.png){.thumbnail}
+![2FA securitykey](images/backupcode_auth.png){.thumbnail}
 
 ## Aller plus loin
 

@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment améliorer la sécurité de votre compte OVHcloud e
 section: Sécurité
 ---
 
-**Dernière mise à jour le 15/04/2020**
+**Dernière mise à jour le 24/06/2020**
 
 ## Objectif
 
@@ -16,16 +16,14 @@ Vous pouvez activer une authentification à deux facteurs (2FA). Celle-ci vient 
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
 - Posséder un téléphone mobile (pour la méthode par SMS), un smartphone ou une tablette (pour la méthode via application mobile) ou une clé de sécurité Universal Second Factor (U2F).
-- Avoir pris connaissance des [recommandations sur la gestion du mot de passe d'accès à votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
+- Avoir pris connaissance des [recommandations sur la gestion du mot de passe d'accès à votre compte](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/).
 
 ## En pratique
 
 Vous pouvez activer une ou plusieurs méthodes de double authentification afin de sécuriser et de contrôler l'accès à votre espace client. 
-Nous vous proposons trois méthodes différentes :
-
-- **via SMS**. Renseignez votre numéro de téléphone mobile. Un code à usage unique vous sera envoyé par SMS à chaque tentative de connexion à votre compte OVHcloud. Le principal avantage de cette méthode est d'utiliser un code envoyé sur un autre périphérique que votre ordinateur. En cas d'intrusion sur celui-ci, via un malware par exemple, votre compte restera sécurisé. Vous devez cependant bénéficier d'une couverture réseau suffisante pour recevoir les SMS ;
+Nous vous proposons deux méthodes différentes :
 
 - **via une application mobile OTP**. Installez une application mobile OTP sur votre smartphone ou tablette Android ou iOS. Associez ensuite l'application à votre compte OVHcloud. À chaque tentative de connexion, l'application générera un code à usage unique valable pendant un court laps de temps.
 Une fois la première association de l'application à votre compte effectuée, il n'est plus nécessaire d'être connecté à Internet sur votre périphérique pour que les codes soient générés ;
@@ -35,9 +33,8 @@ Une fois la première association de l'application à votre compte effectuée, i
 
 ### Étape 1 : activer votre première méthode de double authentification
 
-- [Activer la méthode de double authentification par SMS](https://docs.ovh.com/fr/customer/activer-la-double-authentification-par-sms/).
-- [Activer la méthode de double authentification par application mobile](https://docs.ovh.com/fr/customer/activer-la-double-authentification-par-application-mobile/).
-- [Activer la méthode de double authentification par clé de sécurité](https://docs.ovh.com/fr/customer/activer-la-double-authentification-par-cle-de-securite/).
+- [Activer la méthode de double authentification par application mobile](https://docs.ovh.com/ca/fr/customer/activer-la-double-authentification-par-application-mobile/).
+- [Activer la méthode de double authentification par clé de sécurité](https://docs.ovh.com/ca/fr/customer/activer-la-double-authentification-par-cle-de-securite/).
 
 Une fois la première méthode ajoutée, vous pouvez également en ajouter une ou deux autres afin de disposer de multiples moyens de vous connecter à votre compte.
 
@@ -63,11 +60,11 @@ Vous pourrez les supprimer ou les regénérer depuis votre espace client :
 
 Une fois la double authentification activée, l'écran d'identification affiche la méthode de sécurité sélectionnée. Si vous souhaitez en utiliser une autre, cliquez sur `Essayer une autre méthode`{.action}.
 
-![2FA](images/2fasmsloginedit.png){.thumbnail}
+![2FA](images/mobile_auth.png){.thumbnail}
 
 Toutes les méthodes que vous avez activées apparaîtront alors :
 
-![2FA](images/2faloginchoice.png){.thumbnail}
+![2FA](images/backupcode_auth.png){.thumbnail}
 
 ### Que faire si l'un de mes périphériques est perdu ou cesse de fonctionner ?
 
@@ -91,13 +88,13 @@ Vous pouvez également utiliser l'un des codes de sécurité mis à votre dispos
 > - de codes de sécurité valides.
 > 
 
-Pour supprimer un périphérique, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur votre nom en haut à droite (première étape sur l'image ci-dessous), puis sur vos initiales (seconde étape). 
+Pour supprimer un périphérique, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur votre nom en haut à droite (première étape sur l'image ci-dessous), puis sur vos initiales (seconde étape). 
 
 ![2FA](images/hub2FAb.png){.thumbnail}
 
 Cliquez ensuite sur `Sécurité`{.action} (première étape sur l'image ci-dessous), puis sur les `...`{.action} (deuxième étape) à droite de votre périphérique à supprimer et enfin sur `Supprimer`{.action} (troisième étape).
 
-![2FA](images/hub2FAc.png){.thumbnail}
+![2FA](images/remove_auth.png){.thumbnail}
 
 
 ## Aller plus loin

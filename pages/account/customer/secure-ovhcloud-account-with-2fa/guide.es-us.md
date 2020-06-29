@@ -23,9 +23,7 @@ Puede activar la autentificación de dos factores (2FA). Esta se agrega a su nom
 ## Procedimiento
 
 Tiene la posibilidad de activar uno o varios métodos de doble autenticación con el fin de proteger y controlar el acceso a su área de cliente.
-Le proponemos tres métodos diferentes:
-
-- **Mediante SMS**. Introduzca su número de teléfono móvil. Se le enviará por SMS un código de uso único cada vez que intente conectarse a su cuenta de OVHcloud. La principal ventaja de este método es que utiliza un código que se envía a un dispositivo distinto a su ordenador. En caso de sufrir una intrusión, por ejemplo, de un programa maligno, su cuenta permanecerá protegida. Sin embargo, debe tener suficiente cobertura de red para recibir los SMS.
+Le proponemos dos métodos diferentes:
 
 - **Mediante una aplicación móvil de OTP**. Instale una aplicación móvil de OTP en su teléfono inteligente o tableta con sistema operativo Android o iOS. Luego, asocie la aplicación a su cuenta de OVHcloud. En cada intento de conexión, la aplicación generará un código de uso único válido durante un corto tiempo.
 Tras asociar por primera vez la aplicación a su cuenta, ya no será necesario que su dispositivo esté conectado a internet para que se generen los códigos.
