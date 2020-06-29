@@ -23,9 +23,7 @@ You can enable two-factor authentication (2FA). This is linked to your username-
 ## Instructions
 
 You can enable one or more two-factor authentication methods to secure and control access to the OVHcloud Control Panel.
-We offer three different methods:
-
-- **via SMS**. Enter your mobile phone number. You will be sent a one-time code via SMS each time you try to log in to your OVHcloud account. The main advantage of this method is that the code you use is sent to a device separate to your computer. If your computer’s security is compromised by malware, for example, your account will remain secure. However, it is important to keep in mind that you need sufficient network coverage to receive SMS messages.
+We offer two different methods:
 
 - **via an OTP mobile application**. Install an OTP mobile application on to your Android or iOS smartphone or tablet. Next, link the application to your OVHcloud account. Each time you try to log in to your account, the application will generate a one-time code valid for a short time period.
 Once you have linked the application to your account, your device no longer needs an internet connection for the codes to be generated.
