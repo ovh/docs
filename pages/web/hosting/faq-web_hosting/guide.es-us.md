@@ -29,7 +29,7 @@ Para crear o eliminar un elemento, conéctese al [área de cliente de OVHcloud](
 
 ### ¿Cómo administrar mis contraseñas? 
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} para gestionar sus contraseñas. Si ha olvidado su ID de cliente o contraseña, haga clic en «¿No recuerda su ID de cliente o contraseña?» en la página de conexión. Recibirá la información necesaria por correo electrónico. Para más información, consulte la siguiente documentación: [Establecer y gestionar la contraseña de su cuenta](../../customer/gestionar-su-contraseña).
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} para gestionar sus contraseñas. Si ha olvidado su ID de cliente o contraseña, haga clic en «¿No recuerda su ID de cliente o contraseña?» en la página de conexión. Recibirá la información necesaria por correo electrónico. Para más información, consulte la siguiente documentación: [Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrase%C3%B1a/).
 
 Una vez conectado al área de cliente, podrá gestionar los accesos a su servidor FTP y a las bases de datos. Para ello, acceda a la sección `Alojamientos` y seleccione el servicio correspondiente. Podrá acceder a sus mensajes de correo electrónico desde la sección `Correo electrónico` del área de cliente. 
 

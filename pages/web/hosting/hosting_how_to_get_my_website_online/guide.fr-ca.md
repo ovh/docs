@@ -109,7 +109,7 @@ Si vous êtes en train de migrer un site internet, récupérez la base de donné
 
 #### 2. Créer la base de données chez OVHcloud (facultatif).
 
-Si vous disposez déjà d'une base de données que vous souhaitez utiliser (issue d'une offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external} ou d'une solution [SQL Privé]({ovh_www}/hebergement-web/options-sql.xml){.external} ou [Cloud DB]({ovh_www}/cloud/cloud-databases/){.external}), munissez-vous du nom d'utilisateur et de son mot de passe, du nom de la base de données ainsi que de l'adresse du serveur. Poursuivez alors vers l'étape suivante.
+Si vous disposez déjà d'une base de données que vous souhaitez utiliser (issue d'une offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external} ou d'une solution [SQL Privé]({ovh_www}/hebergement-web/options-sql.xml){.external} ou Cloud DB, munissez-vous du nom d'utilisateur et de son mot de passe, du nom de la base de données ainsi que de l'adresse du serveur. Poursuivez alors vers l'étape suivante.
 
 Si vous souhaitez créer une nouvelle base de données chez OVHcloud, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `Base de données`{.action}.
 
