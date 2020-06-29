@@ -16,8 +16,8 @@ La double authentification par clé de sécurité Universal Second Factor (U2F) 
 
 ## Prérequis
 
-- Prendre connaissance des [différentes méthodes de double authentification proposées par OVHcloud](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/).
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Prendre connaissance des [différentes méthodes de double authentification proposées par OVHcloud](https://docs.ovh.com/ca/fr/customer/securiser-son-compte-avec-une-2FA/).
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - Posséder une clé de sécurité U2F.
 - Disposer d'un port USB libre sur votre ordinateur.
 
@@ -25,7 +25,7 @@ La double authentification par clé de sécurité Universal Second Factor (U2F) 
 
 ### Étape 1 : activer la double authentification
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur votre nom en haut à droite (1), puis sur vos initiales (2). Cliquez ensuite sur `Sécurité`{.action} (3) et enfin sur `Activer la double authentification`{.action} (4).
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur votre nom en haut à droite (1), puis sur vos initiales (2). Cliquez ensuite sur `Sécurité`{.action} (3) et enfin sur `Activer la double authentification`{.action} (4).
 
 ![2FA securitykey](images/hub2FA.png){.thumbnail}
 
@@ -34,7 +34,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Choisissez la méthode par clé de sécurité et validez.
 
-![2FA securitykey](images/2fakey1edit.png){.thumbnail}
+![2FA securitykey](images/2FAYubeyKeyCA.png){.thumbnail}
 
 ### Étape 3 : valider la double authentification
 
@@ -66,11 +66,11 @@ Vous pourrez les supprimer ou les regénérer dans votre espace client.
 
 Une fois votre authentification à double facteur activée, l'écran d'identification vous présentera une de vos méthodes de sécurité. Si vous souhaitez en utiliser une autre, cliquez sur le bouton `Essayer une autre méthode`{.action}.
 
-![2FA securitykey](images/2fakeylogin.png){.thumbnail}
+![2FA securitykey](images/2FAYubeyKeyFailedCA.png){.thumbnail}
 
 Tous les choix que vous avez activés apparaîtront alors.
 
-![2FA securitykey](images/2faloginchoice.png){.thumbnail}
+![2FA securitykey](images/2FAYubeyKeyBackupCodeCA.png){.thumbnail}
 
 ## Aller plus loin
 
