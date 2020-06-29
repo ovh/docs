@@ -16,7 +16,7 @@ Le clonage d'une VM permet de créer une copie de la VM source.
 
 ## Prérequis
 
-- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 - Disposer d'au moins une VM dans votre cluster.
 - Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
 
@@ -28,17 +28,17 @@ Dans votre [interface vSphere](../connexion-interface-vsphere/), placez-vous dan
 
 Faites un clic-droit sur la VM à cloner puis cliquez sur `Cloner`{.action} et sur `Cloner vers une machine virtuelle...`{.action}. 
 
-![Cloner vers une VM](images/clonevm01.jpg){.thumbnail}
+![Cloner vers une VM](images/clonevm01.png){.thumbnail}
 
 Donnez un nom à cette nouvelle VM et définissez son emplacement dans votre arborescence.
 
-![Nommer la vm](images/clonevm02.jpg){.thumbnail}
+![Nommer la vm](images/clonevm02.png){.thumbnail}
 
 ### Sélection de la ressource
 
 Spécifiez le cluster, l'hôte, la vApp ou le resource pool de cette VM.
 
-![Ressources de la vm](images/clonevm03.jpg){.thumbnail}
+![Ressources de la vm](images/clonevm03.png){.thumbnail}
 
 ### Choix du stockage
 
@@ -46,9 +46,9 @@ Définissez alors l'emplacement de stockage (espace-disque) cette VM.
 
 Le format de disque virtuel est de type « Thin Provision » (Provisionnement dynamique), ce qui veut dire qu'un disque virtuel sera créé mais il n'utilisera que l'espace-disque réellement employé sur le stockage, peu importe l'espace-disque précédemment utilisé sur la VM source.
 
-Vous pourrez choisir, via la ligne `VM Storage Policy`, la politique de stockage par défaut si vous avez des datastores, ou une politique personalisée si vous avez des hôtes [vSAN](https://docs.ovh.com/fr/private-cloud/vmware-vsan/){.external-link}, ou encore l'option [VM encryption](https://docs.ovh.com/fr/private-cloud/vm-encrypt/){.external-link}.
+Vous pourrez choisir, via la ligne `VM Storage Policy`, la politique de stockage par défaut si vous avez des datastores, ou une politique personalisée si vous avez des hôtes [vSAN](../vmware-vsan/){.external-link}, ou encore l'option [VM encryption](../vm-encrypt/){.external-link}.
 
-![stockage vm](images/clonevm04.jpg){.thumbnail}
+![stockage vm](images/clonevm04.png){.thumbnail}
 
 ### Configuration système
 
@@ -58,7 +58,7 @@ Cette étape vous permet de définir configuration réseau à appliquer à cette
 
 - `Personnaliser le matériel de cette machine virtuelle (Expérimental)`{.action} : cette option vous permettra de spécifier les nouvelles configurations que vous souhaitez mettre en place sur cette nouvelle VM.
 
-![réseau vm](images/clonevm05.jpg){.thumbnail}
+![réseau vm](images/clonevm05.png){.thumbnail}
 
 > [!warning]
 >
