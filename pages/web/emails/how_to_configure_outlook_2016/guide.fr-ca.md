@@ -25,7 +25,7 @@ Les adresses e-mail de l'offre MX Plan peuvent être configurées sur un logicie
 
 ## Prérequis
 
-- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external}).
+- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}).
 - Disposer du logiciel Microsoft Outlook 2016 installé sur votre appareil.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
@@ -100,12 +100,8 @@ Si vous êtes amené à renseigner manuellement des champs techniques dans les p
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/ca/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ## Aller plus loin
-
-[Configurer son compte E-mail Pro sur Outlook 2016 pour Windows](../../configuration-outlook-2016/){.external}
-
-[Configurer son compte Exchange sur Outlook 2016 pour Windows](../../microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook-2016/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
