@@ -25,7 +25,7 @@ Utile dans le cas ou vous souhaitez déléguer  **seulement un ou certains compt
 
 ### Pre-requis
 
-Dans un premier temps, connectez-vous à votre [espace client](https://www.ovh.com/manager/web){.external} à l'aide de votre couple identifiant (nic- handle) - mot de passe. Puis rendez-vous dans la section "Emails" sur la gauche.
+Dans un premier temps, connectez-vous à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} à l'aide de votre couple identifiant (nic- handle) - mot de passe. Puis rendez-vous dans la section "Emails" sur la gauche.
 
 ![hosting](images/4135.png){.thumbnail}
 
