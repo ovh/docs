@@ -1,13 +1,12 @@
 ---
 title: Cloner une VM
 slug: cloner-une-vm
-excerpt: Copier une VM existante à l'aide du clonage
-legacy_guide_number: '7766496'
+excerpt: Découvrez comment cloner une VM existante via vSphere
 section: Gestion des machines virtuelles
 order: 07
 ---
 
-**Dernière mise à jour le 28/01/2019**
+**Dernière mise à jour le 29/06/2020**
 
 ## Objectif
 
@@ -15,48 +14,58 @@ Le clonage d'une VM permet de créer une copie de la VM source.
 
 **Ce guide explique comment réaliser cette opération**
 
+## Prérequis
+
+- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Disposer d'au moins une VM dans votre cluster.
+- Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
+
 ## En pratique
 
-Faites un clic droit sur la VM à cloner puis sélectionnez  `Clone`{.action}, et `Clone To virtual Machine`{.action}. Spécifiez le nom de votre nouvelle VM et son emplacement dans votre arborescence :
+### Cloner la VM
 
-![](images/clone1.jpg){.thumbnail}
+Dans votre [interface vSphere](../connexion-interface-vsphere/), placez-vous dans la vue `Hôtes et clusters`.
+
+Faites un clic-droit sur la VM à cloner puis cliquez sur `Cloner`{.action} et sur `Cloner vers une machine virtuelle...`{.action}. 
+
+![Cloner vers une VM](images/clonevm01.jpg){.thumbnail}
+
+Donnez un nom à cette nouvelle VM et définissez son emplacement dans votre arborescence.
+
+![Nommer la vm](images/clonevm02.jpg){.thumbnail}
 
 ### Sélection de la ressource
 
-Spécifiez le cluster, l'hôte, la Vapp ou le ressource pool de cette VM :
+Spécifiez le cluster, l'hôte, la vApp ou le resource pool de cette VM.
 
-![](images/clone2.jpg){.thumbnail}
+![Ressources de la vm](images/clonevm03.jpg){.thumbnail}
 
 ### Choix du stockage
 
-Indiquez maintenant le stockage où sera l’espace disque de cette VM. Vous pouvez utiliser :
+Définissez alors l'emplacement de stockage (espace-disque) cette VM. 
 
-- `Same Format as Source` : la VM créée sera identique en tous points à la source.
-- `Thin provisioned format` : créera le disque, mais n’utilisera que l’espace disque réellement employé sur le stockage.
-- `Thick Format` : utilisera l’ensemble de l’espace disque correspondant à la VM sur le stockage.
+Le format de disque virtuel est de type « Thin Provision » (Provisionnement dynamique), ce qui veut dire qu'un disque virtuel sera créé mais il n'utilisera que l'espace-disque réellement employé sur le stockage, peu importe l'espace-disque précédemment utilisé sur la VM source.
 
-Vous retrouverez plus d'explications sur ces formats dans [ce guide](https://docs.ovh.com/fr/private-cloud/cloner-une-vm/){.external-link}.
+Vous pourrez choisir, via la ligne `VM Storage Policy`, la politique de stockage par défaut si vous avez des datastores, ou une politique personalisée si vous avez des hôtes [vSAN](https://docs.ovh.com/fr/private-cloud/vmware-vsan/){.external-link}, ou encore l'option [VM encryption](https://docs.ovh.com/fr/private-cloud/vm-encrypt/){.external-link}.
 
-Lors du choix de `VM Storage Policy`, vous pouvez choisir la politique de stockage par défaut si vous avez des datastores, ou une politique personalisée si vous avez des hôtes [vSAN](https://docs.ovh.com/fr/private-cloud/vmware-vsan/){.external-link}, ou encore l'option [VM encryption](https://docs.ovh.com/fr/private-cloud/vm-encrypt/){.external-link}.
-
-![](images/clone3.jpg){.thumbnail}
+![stockage vm](images/clonevm04.jpg){.thumbnail}
 
 ### Configuration système
 
-Nous arrivons maintenant à la configuration réseau à appliquer à cette VM. Vous avez deux choix :
+Cette étape vous permet de définir configuration réseau à appliquer à cette VM. Vous avez deux choix :
 
 - Si vous ne cochez rien, cela ne fera aucun changement sur la configuration réseau de la nouvelle VM par rapport à la source ;
 
-- `Customize using the operating system`{.action} : cette option vous permettra de spécifier les nouvelles configurations que vous souhaitez mettre en place sur cette nouvelle VM.
+- `Personnaliser le matériel de cette machine virtuelle (Expérimental)`{.action} : cette option vous permettra de spécifier les nouvelles configurations que vous souhaitez mettre en place sur cette nouvelle VM.
 
-![](images/clone4.jpg){.thumbnail}
+![réseau vm](images/clonevm05.jpg){.thumbnail}
 
 > [!warning]
 >
 > Si vous n'avez pas fait de personalisation de la machine virtuelle, il est nécessaire de modifier la configuration du Clone avant de la démarrer, afin d'éviter un conflit d'IP / MAC. Dans ce cas, il vous suffit simplement de décocher la carte réseau dans les paramètres de la machine virtuelle une fois celle ci clonée, juste avant de la démarrer**
 >
-
-![](images/clone6.png){.thumbnail}
+>![déconnecter vm](images/clonevm06.png){.thumbnail}
+>
 
 ## Aller plus loin
 
