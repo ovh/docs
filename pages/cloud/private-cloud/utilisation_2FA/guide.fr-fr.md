@@ -31,7 +31,7 @@ Pour cela, vous avez deux possibilités :
 
 ![Gateway Private Cloud](images/gatewayPCC.jpg){.thumbnail}
 
-- Directement via l'URL https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ ( attention à ne pas oublier le "/" final de l'adrese).
+- Directement via l'URL https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ ( attention à ne pas oublier le "/" final de l'adresse).
 
 Une fois connecté à l'interface de gestion, cliquez sur `Change Password`{.action}
 
@@ -57,7 +57,7 @@ Rendez-vous dans la partie `Operation validation`{.action} , chargez l'opératio
 
 ### Connexion
 
-Connectez-vous à votre client *web* via le lien habituelle, vous arriverez alors sur la page suivante:
+Connectez-vous à votre client *web* via le lien habituel, vous arriverez alors sur la page suivante:
 
 ![Connexion 2FA](images/2FAtoken.jpg){.thumbnail}
 
@@ -85,7 +85,7 @@ La seule différence sera l'autonomie ou non de l'utilisateur pour la validation
 
 Il est possible d'utiliser plusieurs applications tierces nécessitant la connexion au vCenter.
 
-Ces applications doivent être préalablement autorisées au travers de la politique d'accès au vCenter qui est paramètrable dans votre [espace client](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#securite)
+Ces applications doivent être préalablement autorisées au travers de la politique d'accès au vCenter qui est paramétrable dans votre [espace client](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#securite)
 
 Ces applications vont alors pouvoir accéder à nos infrastructures, mais ne vont pas forcément gérer la double authentification.
 
