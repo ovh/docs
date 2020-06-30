@@ -1,7 +1,7 @@
 ---
 title: Utilisation de la double authentification (2FA) sur votre infrastructure Private Cloud
 slug: utilisation-2FA
-excerpt: Apprenez à mette en place la double authentification pour protéger votre infrastructure
+excerpt: Apprenez à mettre en place la double authentification pour protéger votre infrastructure
 section: Fonctionnalités OVH
 order: 05
 ---
