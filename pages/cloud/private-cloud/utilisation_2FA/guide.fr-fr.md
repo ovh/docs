@@ -12,7 +12,7 @@ order: 05
 
 La mise en place d'une double authentification permet de protéger l'accès à votre Private Cloud en réduisant les risques liés, par exemple, à un vol de mot de passe.
 
-**Apprenez à mette en place la double authentification pour protéger votre infrastructure Private Cloud.**
+**Apprenez à mettre en place la double authentification pour protéger votre infrastructure Private Cloud.**
  
 ## Prérequis
 
