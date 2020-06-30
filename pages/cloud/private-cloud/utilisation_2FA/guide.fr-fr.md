@@ -1,38 +1,37 @@
 ---
-title: Utilisation de la double authentification (2FA)
+title: Utilisation de la double authentification (2FA) sur votre infrastructure Private Cloud
 slug: utilisation-2FA
 excerpt: Apprenez à mette en place la double authentification pour protéger votre infrastructure
 section: Fonctionnalités OVH
 order: 05
 ---
 
-**Dernière mise à jour le 11 janvier 2019**
+**Dernière mise à jour le 30 juin 2020**
 
 ## Objectif
 
-La mise en place d'une double authentification permet de protéger l'accès à votre infrastructure Private Cloud en réduisant les risques liés, par exemple, à un vol de mot de passe.
+La mise en place d'une double authentification permet de protéger l'accès à votre Private Cloud en réduisant les risques liés, par exemple, à un vol de mot de passe.
 
-**Apprenez à mette en place la double authentification pour protéger votre infrastructure.**
-
+**Apprenez à mette en place la double authentification pour protéger votre infrastructure Private Cloud.**
+ 
 ## Prérequis
 
-- Disposer d'une infrastructure Private Cloud avec l'option advanced security (inclus dans les offres PCI-DSS et HDS).
+- Disposer d'une infrastructure [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/) avec l'option de [sécurité avancée](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) (inclus dans les offres PCI-DSS et HDS).
 - Disposer d'un smartphone et d'une application d'authentification (exemples : Google Authenticator, Authy, OTP Auth...).
-
 
 ## En pratique
 
 ### Activation de la double authentification
 
-Afin de mettre en place la double authentification, il est nécessaire de se connecter sur l'interface certifiée de votre Private Cloud.
+Afin de mettre en place la double authentification sur votre infrastructure, il est nécessaire de se connecter sur l'interface certifiée de votre Private Cloud.
 
-Pour cela, deux possibilités s'offrent à vous :
+Pour cela, vous avez deux possibilités :
 	
-Via la gateway de votre Private Cloud (https://pcc-xxx-xxx-xxx-xxx.ovh.com) : 
+- Via la passerelle de votre Private Cloud (https://pcc-xxx-xxx-xxx-xxx.ovh.com) : 
 
 ![Gateway Private Cloud](images/gatewayPCC.jpg){.thumbnail}
 
-Ou directement via l'URL https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ ( attention à ne pas oublier le "/" final de l'adrese).
+- Directement via l'URL https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ ( attention à ne pas oublier le "/" final de l'adrese).
 
 Une fois connecté à l'interface de gestion, cliquez sur `Change Password`{.action}
 
@@ -53,21 +52,21 @@ Rendez-vous dans la partie `Operation validation`{.action} , chargez l'opératio
 
 > [!primary]
 >
-> Dans le cadre d'un mot de passe oublié, il sera nécessaire de lancer d'abord la procédure de "Password lost" , durant laquelle la mise en place d'une double authentification vous sera proposée.
+> Pour un mot de passe oublié, il est nécessaire de lancer d'abord la procédure de "Password lost" , durant laquelle la mise en place d'une double authentification vous sera proposée.
 >
 
 ### Connexion
 
-Vous pouvez maintenant vous connecter à votre client *web* via son url habituelle, et arriverez alors sur cette page.
+Connectez-vous à votre client *web* via le lien habituelle, vous arriverez alors sur la page suivante:
 
 ![Connexion 2FA](images/2FAtoken.jpg){.thumbnail}
 
-Il est désormais nécessaire de renseigner le token généré par l'application d'authentification installée sur votre smartphone avant de pouvoir vous connecter avec votre mot de passe.
+Renseignez alors le token généré par l'application d'authentification installée sur votre smartphone avant de saisir votre mot de passe.
 
 
 > [!warning]
 >
-> La double authentification sera active lors de la modification de mot de passe d'un des utilisateurs. Cela signifie que si un seul utilisateur modifie son mot de passe, l'ensemble des utilisateurs bénéficiera dela double authentification activée. 
+> La double authentification sera active lors de la modification de mot de passe d'un des utilisateurs. Cela signifie que si un seul utilisateur modifie son mot de passe, l'ensemble des utilisateurs bénéficiera de la double authentification activée. 
 >
 > Ils devront de ce fait renouveler leur mot de passe, puis mettre en place la double authentification sur leurs utilisateurs, sous peine de voir ces utilisateurs perdre la possibilité de se connecter.
 >
@@ -76,54 +75,55 @@ Il est désormais nécessaire de renseigner le token généré par l'application
 
 ### Création d'un nouvel utilisateur
 
-Lors de la création d'un nouvel utilisateur, vous avez maintenant le choix d'attribuer ou non un rôle de *token validator*.
+Lors de la création d'un nouvel utilisateur, vous choisissez d'attribuer ou non un rôle de *token validator*.
 
-Dans les deux cas de figure, il sera nécessaire de modifier le mot de passe à travers l'interface certifiée en suivant la procédure présentée précédement afin de mettre en place la 2FA.
+Dans les deux cas, il est nécessaire de modifier le mot de passe à travers l'interface certifiée en suivant la procédure précédente pour mettre en place la 2FA.
 
 La seule différence sera l'autonomie ou non de l'utilisateur pour la validation du token.
 
 ### Autorisation d'application
 
 Il est possible d'utiliser plusieurs applications tierces nécessitant la connexion au vCenter.
+
 Ces applications doivent être préalablement autorisées au travers de la politique d'accès au vCenter qui est paramètrable dans votre [espace client](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#securite)
 
 Ces applications vont alors pouvoir accéder à nos infrastructures, mais ne vont pas forcément gérer la double authentification.
 
 Dans ce cas, il sera nécessaire de créer une *whitelist* spécifique au *bypass* de la double authentification.
 
-Cette *whitelist* sera un complément de la liste principale regissant les accès au vCenter.
+Cette *whitelist* sera un complément de la liste principale régissant les accès au vCenter.
 
-Pour ajouter les IPs publiques de vos applicatifs à cette seconde *whitelist*, les appels API suivant devront être utilisés : 
+Pour ajouter les adresses IP publiques de vos applicatifs à cette seconde *whitelist*, vous devrez utiliser les appels API suivant : 
 
-- Vérifier les IPs autorisées à ne pas tenir compte de la double authentification.
+- Vérifier les adresses IP autorisées à ne pas tenir compte de la double authentification.
 
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
-- Ajouter une IP au *bypass* de la double authentification.
+- Ajouter une adresse IP au *bypass* de la double authentification.
 
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
-- Afficher les informations d'une IP autorisée (nécessite un ID récupéré avec le premier appel).
+- Afficher les informations d'une adresse IP autorisée (nécessite un ID récupéré avec le premier appel).
 
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
-- Supprimer une IP de la liste d'autorisation.
+- Supprimer une adresse IP de la liste d'autorisation.
 
 > [!api]
 >
 > @api {DELETE} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
-- Modifier les informations d'une IP autorisée.
+- Modifier les informations d'une adresse IP autorisée.
 
 > [!api]
 >
