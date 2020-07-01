@@ -35,11 +35,11 @@ To remove a datastore, right-click on the resource concerned. Then select `OVHcl
 
 A confirmation window will pop up. Confirm by clicking `Next`{.action}.
 
-![Confirm removal](images/emovedatastore02.png){.thumbnail}
+![Confirm removal](images/removedatastore02.png){.thumbnail}
 
 The removal request will then be processed.
 
-![Removal confirmed](images/emovedatastore03.png){.thumbnail}
+![Removal confirmed](images/removedatastore03.png){.thumbnail}
 
 
 You can also monitor the progress of the datastore removal in `Recent Tasks`{.action}.
