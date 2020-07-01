@@ -46,6 +46,8 @@ Définissez alors l'emplacement de stockage (espace-disque) cette VM.
 
 Le format de disque virtuel est de type « Thin Provision » (Provisionnement dynamique), ce qui veut dire qu'un disque virtuel sera créé mais il n'utilisera que l'espace-disque réellement employé sur le stockage, peu importe l'espace-disque précédemment utilisé sur la VM source.
 
+Vous retrouverez plus d'explications sur les formats de disque dans [ce guide](../quel-format-de-disque-choisir/){.external-link}.
+
 Vous pourrez choisir, via la ligne `VM Storage Policy`, la politique de stockage par défaut si vous avez des datastores, ou une politique personalisée si vous avez des hôtes [vSAN](../vmware-vsan/){.external-link}, ou encore l'option [VM encryption](../vm-encrypt/){.external-link}.
 
 ![stockage vm](images/clonevm04.png){.thumbnail}
