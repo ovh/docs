@@ -5,6 +5,7 @@ legacy_guide_number: '4816926'
 space_key: VS
 space_name: vSphere as a Service
 section: Services et options OVH
+hidden: true
 ---
 
 
