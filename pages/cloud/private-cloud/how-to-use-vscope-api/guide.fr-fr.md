@@ -18,12 +18,17 @@ Ces informations sont également disponibles via l'APIv6 et l'API Metrics.
 
 **Ce guide décrit l'utilisation de ces APIs**.
 
+## Prérequis
+
+- une [infrastructure Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
+- être connecté à l'interface de gestion vScope
+
 ## En pratique
 
-Le vScope met à disposition deux types d'informations :
+L'outil vScope met à disposition deux types d'informations :
 
-- des informations **live**, qui correspondent aux informations des différents composants à un instant T.
-- des graphiques présentant les données historiques de performance des différents composants. Ex: CPU, RAM d'une machine virtuelle.
+- des informations **live**, qui correspondent aux données des différents composants à un instant T.
+- des graphiques présentant les données historiques de performance des différents composants. Par exemple : CPU, RAM d'une machine virtuelle.
 
 
 ### Collecter les données **live**
@@ -65,10 +70,10 @@ L'utilisation de l'API se fait via ces trois appels APIv6 :
 
 Pour collecter et utiliser les données historiques (Graphs), nous utilisons le produit **Metrics Data Platforms**.
 
-Via le protocol Opentsdb ou WARP10, vous allez pouvoir récupérer vos données sous forme de points. Vous pourrez exploiter ces points via votre application ou directement les afficher selon le rendu souhaité.
+Via les protocoles Opentsdb ou WARP10, vous allez pouvoir récupérer vos données sous forme de points. Vous pourrez exploiter ces points via votre application ou directement les afficher selon le rendu souhaité.
 
 
-Cet article couvrira l'utilisation du protocol Opentsdb pour un affichage brut des données (pas de rendu graphique).
+Cet article couvrira l'utilisation du protocole Opentsdb pour un affichage brut des données (pas de rendu graphique).
 
 Pour pouvoir utiliser **Metrics Data Platforms**, vous aurez besoin d'obtenir un token de lecture. Avec la nouvelle version du vScope, chaque utilisateur de l'infrastructure possède un token de lecture. 
 
