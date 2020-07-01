@@ -6,35 +6,39 @@ section: Fonctionnalités VMware vSphere
 order: 10
 ---
 
-**Dernière mise à jour le 11 janvier 2019**
+**Dernière mise à jour le 1er juillet 2020**
 
-## Objectifs
+## Objectif
 
 Il est possible d'automatiser les actions au sein de votre infrastructure en utilisant le SDK vSphere.
 
-Ce guide explique la mise en place et l'utilisation dans différents langages.
+**Ce guide explique la mise en place et l'utilisation dans différents langages.**
 
-## Python
+## En pratique
 
-### Mise en place de l'environnement
+### Python
 
-#### OS
+#### Mise en place de l'environnement
 
-Ici nous utilisons une VM installée sur Debian 9, déployée depuis [les templates mis à disposition sur votre Private Cloud](https://docs.ovh.com/fr/private-cloud/deploiement-template-ovh/).
+##### OS
 
-#### Prérequis
+Ici nous utilisons une VM installée sur Debian 9, déployée depuis [les templates mis à disposition sur votre Private Cloud](../private-cloud/deploiement-template-ovh/).
+
+##### Prérequis
+
 Il est nécessaire d'installer les paquets suivants : 
 
 ```
 apt-get install python git python-pip
 ```
-#### SDK vSphere
+##### SDK vSphere
+
 Téléchargez le SDK vSphere avec la commande suivante : 
 
 ```
 git clone https://github.com/vmware/vsphere-automation-sdk-python.git
 ```
-Le répertoire "/vsphere-automation-sdk-python" sera crée, rendez vous dans ce dossier pour effectuer la commande d'installation : 
+Le répertoire « /vsphere-automation-sdk-python » sera créé, rendez vous dans ce dossier pour effectuer la commande d'installation : 
 
 ```
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///<absolute_path_to_sdk>/lib
@@ -49,10 +53,10 @@ pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url fi
 Le SDK est à présent installé, nous pouvons maintenant réaliser quelques scripts.
 
 
-### Exemple de script
+#### Exemple de script
 
 
-#### Connexion
+##### Connexion
 
 Dans ce premier exemple, nous testons la connexion et la déconnexion au vCenter. Cela permettra également de voir si tout s'est bien installé : 
 
@@ -85,9 +89,9 @@ print("Disconnecting..")
 vconnect()
 ```
 
-#### Lister les VMs présentes dans un Private Cloud
+##### Lister les VM présentes dans un Private Cloud
 
-Dans cet exemple, nous allons lister toutes les présentes sur le Private Cloud :
+Dans cet exemple, nous allons lister toutes les VM présentes sur le Private Cloud :
 
 ```python
 #!/usr/bin/env python
@@ -130,16 +134,17 @@ def vconnect():
 vconnect()
 ```
 
-## Perl
+### Perl
 
-### Mise en place de l'environnement
+#### Mise en place de l'environnement
 
-#### OS
+##### OS
 
-Ici nous utilisons une VM installée sur Ubuntu 18.04, déployée depuis [les templates mis à disposition sur votre Private Cloud](https://docs.ovh.com/fr/private-cloud/deploiement-template-ovh/).
+Ici nous utilisons une VM installée sur Ubuntu 18.04, déployée depuis [les templates mis à disposition sur votre Private Cloud](../deploiement-template-ovh/).
 
 
-#### Prérequis
+##### Prérequis
+
 Il est nécessaire d'installer les paquets suivants : 
 
 ```
@@ -152,13 +157,13 @@ cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List:
 
 ```
 
-#### SDK vSphere
+##### SDK vSphere
 
-Télécharger le SDK vSphere disponible sur ce lien : 
+Téléchargez le SDK vSphere disponible sur ce lien : 
 
 [https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67](https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67)
 
-Télécharger la version compatible avec votre système d'exploitation.
+Téléchargez la version compatible avec votre système d'exploitation.
 
 Dans cet exemple, nous téléchargerons "VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz"
 
@@ -168,7 +173,7 @@ Décompressez le ficher que vous venez de télécharger en utilisant la commande
 tar –zxvf VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz
 ```
 
-Et démarrer l'installeur en utilisant la commande suivante : 
+Et démarrez l'installeur en utilisant la commande suivante : 
 
 ```
 cd vmware-vsphere-cli-distrib
@@ -180,16 +185,16 @@ Puis :
 ./vmware-install.pl
 ```
 
-Après avoir lu les conditions, acceptez les et continuez en appuyant sur "entrée".
+Après avoir lu les conditions, acceptez-les et continuez en cliquant sur `Entrée`{.action}.
 
-A la suite de l'installation d'autres modules vont être installés, cliquez sur "entrée" pour continuer l'installation.
+A la suite de l'installation, d'autres modules vont être installés, cliquez sur `Entrée`{.action} pour continuer l'installation.
 
-Afin de terminer l'installation, vous devez choisir un répertoire dans lequel le SDK s'installera, par défaut, le répertoire est "/usr/bin".
+Afin de terminer l'installation, vous devez choisir un répertoire dans lequel le SDK s'installera. Par défaut, le répertoire est « /usr/bin ».
 
-### Exemple de script
+#### Exemple de script
 
 
-#### Connexion
+##### Connexion
 
 Dans ce premier exemple, nous testons la connexion et la déconnexion au vCenter. Cela permettra également de voir si tout s'est bien installé : 
 
@@ -212,9 +217,9 @@ Util::disconnect();
 print "Disconnected \n";
 ```
 
-#### Lister les VMs présentes dans un Private Cloud
+##### Lister les VM présentes dans un Private Cloud
 
-Dans cet exemple, nous allons lister toutes les présentes sur le Private Cloud :
+Dans cet exemple, nous allons lister toutes les VM présentes sur le Private Cloud :
 
 ```perl
 #!/usr/bin/perl
@@ -244,19 +249,19 @@ Util::disconnect();
 print "Disconnected \n";
 ```
 
-#### Utilisation des samples
+##### Utilisation des samples
 
-Dans cet exemple nous allons utiliser un script déjà crée et présent dans le répertoire "vmware-vsphere-cli-distrib/apps/vm/".
+Dans cet exemple, nous allons utiliser un script déjà crée et présent dans le répertoire « vmware-vsphere-cli-distrib/apps/vm/ ».
 
-Voici la liste des scipts déjà disponible dans ce répértoire :
+Voici la liste des scipts déjà disponibles dans ce répertoire :
 
 ```
 ls vmware-vsphere-cli-distrib/apps/vm/
 guestinfo.pl  sharesmanager.pl  snapshotmanager.pl  vdiskcreate.pl  vmclone.pl  vmcontrol.pl  vmcreate.pl  vminfo.pl  vmmigrate.pl  vmreconfig.pl  vmregister.pl  vmsnapshot.pl  vmtemplate.pl
 ```
-Nous allons créer un snapshot "test" sur la VM "Debian1"
+Nous allons créer un snapshot « test » sur la VM « Debian1 »
 
-Pour cela, effectuer la commande suivante :
+Pour cela, tapez la commande suivante :
 
 ```
 perl snapshotmanager.pl --server pcc-149-202-xxx-xxx.ovh.com --username damien --password MyPassword --operation create --vmname Debian1 --snapshotname test
