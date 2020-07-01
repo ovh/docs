@@ -271,7 +271,7 @@ Pour vérifier les informations de vos vLan, vous pouvez utiliser l'appel suivan
 Par défaut, si vous ne n'ajoutez pas de sous réseau, la plage IP utilisée est la suivante :
 
 ```
-192.168.0.0/24
+10.0.0.0/16
 ```
 
 Si vous souhaitez gérer vous même les affectations IP, vous devrez créer un sous-réseau.
@@ -409,7 +409,7 @@ Une fois l'appel effectué, si toutes les informations sont correctement renseig
 ><br>OpenStack n'étant pas en mesure de prioriser l'interface publique de l'interface vRack, il peut arriver que cette dernière passe en tant que route par défaut.
 ><br>La conséquence directe est que l'instance est injoignable depuis une IP publique.
 ><br>Un ou plusieurs redémarrages de l'instance depuis l'espace client peut permettre de rétablir la situation.
-><br>L'autre solution consite à vous connecter à l'instance.
+><br>L'autre solution consite à vous connecter à l'instance  en  SSH au travers d'un autre de vos serveurs présents dans le même réseau privé. Vous pouvez aussi corriger la configuration réseau de l'instance au travers du mode Rescue.
 >
 
 #### Cas d'une instance déjà existante
