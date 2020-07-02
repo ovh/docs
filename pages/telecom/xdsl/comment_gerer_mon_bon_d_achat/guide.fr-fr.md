@@ -69,4 +69,3 @@ Sélectionnez la ligne xDSL afin de générer votre bon d'achat et cliquez sur "
 Une demande de confirmation sera affichée lors de la validation de votre bon afin de valider le réengagement.
 
 ------------------------------------------------------------------------
-
