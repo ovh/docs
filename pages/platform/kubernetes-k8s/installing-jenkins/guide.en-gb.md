@@ -1,11 +1,11 @@
 ---
 title: Install Jenkins on OVHcloud Managed Kubernetes
 slug: installing-jenkins
-excerpt: 'Find out how to install Jenkins on OVHcloud Managed Kubernetes'
+excerpt: "Find out how to install Jenkins on OVHcloud Managed Kubernetes"
 section: Tutorials
 ---
 
-**Last updated 1<sup>st</sup> July, 2019.**
+**Last updated July 2<sup>nd</sup>, 2020.**
 
 <style>
  pre {
@@ -31,8 +31,7 @@ section: Tutorials
 
 In this tutorial we are going to guide you with the install of [Jenkins](https://jenkins.io/){.external} on your OVHcloud Managed Kubernetes Service.
 
-We are going to install Jenkins master and slave cluster utilizing the [Jenkins Kubernetes plugin](https://wiki.jenkins.io/display/JENKINS/Kubernetes+Plugin){.external}.
-
+We are going to install Jenkins master and slave cluster utilizing the [Jenkins Kubernetes plugin](https://plugins.jenkins.io/kubernetes/){.external}.
 
 ## Before you begin
 
@@ -40,85 +39,82 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
-
 ## Installing the Jenkins Helm chart
 
-For this tutorial we are using the [Jenkins Helm chart](https://github.com/helm/charts/tree/master/stable/jenkins){.external} found on Helm repositories.
+> [!warn]
+> As with Helm 2, the official Helm `stable` repository is currently deprecated.
+> The Helm community is currently transitioning to a hub model, with a [Helm Hub](https://hub.helm.sh/), where charts can be searched using `helm search hub <keyword>`
+> As most charts from the Helm _stable_ repository have been transferred to the [Bitnami repository](https://github.com/bitnami/charts/) we are using it in the tutorial.
 
-The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVHcloud Managed Kubernetes Service.
+For this tutorial we are using the [Jenkins Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/jenkins){.external} found on Bitnami Helm repositories.
 
-We are configuring the Helm chart to use `NodePort` as service type (because default `LoadBalancer` type isn't supported in the beta phase of OVHcloud Managed Kubernetes Service). 
+The chart is fully configurable, but here we are using the default configuration.
 
 > [!primary]
+>
 > ### Customizing your install
-> 
-> Maybe you would like your admin username to be different, or be able to set your admin password, or modify the resources allocated... 
 >
-> In order to customize your install, without having to leave the simplicity of using helm and the Jenkins helm chart, you can simply set some of the [configurable parameters of the Jenkins chart](https://github.com/helm/charts/tree/master/stable/jenkins#configuration). Then you can add it to your `helm install` with the `--set` option (`--set param1=value1,param2=value2`)
+> Maybe you would like your admin username to be different, or be able to set your admin password, or modify the resources allocated...
 >
+> In order to customize your install, without having to leave the simplicity of using helm and the Jenkins helm chart, you can simply set some of the [configurable parameters of the Jenkins chart](https://github.com/bitnami/charts/tree/master/bitnami/jenkins#parameters). Then you can add it to your `helm install` with the `--set` option (`--set param1=value1,param2=value2`)
 
-
-```
-helm install --set Master.ServiceType=NodePort stable/jenkins
+```bash
+helm install my-first-jenkins bitnami/jenkins
 ```
 
 This will install your Jenkins mater:
 
-<pre class="console"><code>$ helm install --set master.servicetype=NodePort stable/jenkins
-NAME:   kissed-stingray
-LAST DEPLOYED: Mon Oct 15 15:26:34 2018
+<pre class="console"><code>$ $ helm install my-first-jenkins bitnami/jenkins
+NAME: my-first-jenkins
+LAST DEPLOYED: Thu Jul  2 14:09:06 2020
 NAMESPACE: default
-STATUS: DEPLOYED
-
-RESOURCES:
-==> v1/Pod(related)
-NAME                                      READY  STATUS   RESTARTS  AGE
-kissed-stingray-jenkins-7b95fb74bf-llkb2  0/1    Pending  0         0s
-
-==> v1/Secret
-
-NAME                     AGE
-kissed-stingray-jenkins  1s
-
-==> v1/ConfigMap
-kissed-stingray-jenkins        1s
-kissed-stingray-jenkins-tests  1s
-
-==> v1/PersistentVolumeClaim
-kissed-stingray-jenkins  1s
-
-==> v1/Service
-kissed-stingray-jenkins-agent  1s
-kissed-stingray-jenkins        1s
-
-==> v1/Deployment
-kissed-stingray-jenkins  1s
-
-
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
 NOTES:
-1. Get your 'admin' user password by running:
-  printf $(kubectl get secret --namespace default kissed-stingray-jenkins -o jsonpath="{.data.jenkins-admin-password}" | base64 --decode);echo
-2. Get the Jenkins URL to visit by running these commands in the same shell:
-  export NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services kissed-stingray-jenkins)
-  export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
-  echo http://$NODE_IP:$NODE_PORT/login
+** Please be patient while the chart is being deployed **
 
-3. Login with the password from step 1 and the username: admin
+1. Get the Jenkins URL by running:
 
-For more information on running Jenkins on Kubernetes, visit:
-https://cloud.google.com/solutions/jenkins-on-container-engine
+** Please ensure an external IP is associated to the my-first-jenkins service before proceeding **
+** Watch the status using: kubectl get svc --namespace default -w my-first-jenkins **
+
+  export SERVICE_IP=$(kubectl get svc --namespace default my-first-jenkins --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
+  echo "Jenkins URL: http://$SERVICE_IP/"
+
+2. Login with the following credentials
+
+  echo Username: user
+  echo Password: $(kubectl get secret --namespace default my-first-jenkins -o jsonpath="{.data.jenkins-password}" | base64 --decode)
 </code></pre>
 
-The instructions aren't well suited to your OVHcloud Managed Kubernetes cluster, as they suppose you're deploying services with the `LoadBalancer` type. Instead of using `NODE_IP`, we should use the nodes URL found in the OVH Cloud Manager (see the  [OVHcloud Managed Kubernetes Quickstart](../deploying-hello-world/)).
+As the instructions say, you will need to wait a few moments to get the `LoadBalancer` URL.
+You can test if the `LoadBalancer` is ready using:
 
-In my case:
+```bash
+kubectl get svc --namespace default -w my-first-jenkins
+```
 
-<pre class="console"><code>$ export NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services kissed-stingray-jenkins)
-$ export NODE_URL=51amh7.nodes.c1.gra.k8s.ovh.net
-$ echo "Jenkins URL: http://$NODE_URL:$NODE_PORT/"
-Jenkins URL: http://2qar2x.nodes.c1.gra.k8s.ovh.net:32656/
-$ printf $(kubectl get secret --namespace default kissed-stingray-jenkins -o jsonpath="{.data.jenkins-admin-password}" | base64 --decode);echo
-sdfSDGvb
+After some minutes, you will get the `LoadBalancer` URL:
+
+<pre class="console"><code>$ kubectl get svc --namespace default -w my-first-jenkins
+NAME               TYPE           CLUSTER-IP    EXTERNAL-IP   PORT(S)                      AGE
+my-first-jenkins   LoadBalancer   10.3.227.29   &lt;pending>     80:32198/TCP,443:32750/TCP   2m13s
+my-first-jenkins   LoadBalancer   10.3.227.29   XXXXXXX.lb...    80:32198/TCP,443:32750/TCP   2m13s
+</code></pre>
+
+The URL under `EXTERNAL-IP` is your Jenkins URL. You can the follow the instructions on the Helm Chart to get the connection parameters. In my case:
+
+<pre class="console"><code>$ export SERVICE_IP=$(kubectl get svc --namespace default my-first-jenkins --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
+
+$ echo "Jenkins URL: http://$SERVICE_IP/"
+Jenkins URL: XXXXXXX.lb...
+
+$ echo Username: user
+Username: user
+
+$ echo Password: $(kubectl get secret --namespace default my-first-jenkins -o jsonpath="{.data.jenkins-password}" | base64 --decode)
+Password: sdg84d7c34
 </code></pre>
 
 And putting the URL in your browser will take you to the new Jenkins:
@@ -129,7 +125,18 @@ Login with user `admin` and the password you got before. And ere you have your J
 
 ![Leeeeeeeroy Jenkins!](images/installing-jenkins-02.png){.thumbnail}
 
-
 You have a working Jenkins on your OVHcloud Managed Kubernetes Service, congratulations!
 
+## Cleaning up
 
+To clean up your cluster, simply use Helm to delete your Jenkins release.
+
+```bash
+helm delete my-first-jenkins
+```
+
+It will delete your Jenkins and its associated resources from your cluster:
+
+<pre class="console"><code>$ helm delete my-first-jenkins
+release "my-first-jenkins" uninstalled
+</code></pre>
