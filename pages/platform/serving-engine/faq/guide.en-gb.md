@@ -77,7 +77,7 @@ Object Storage and Private Registry are not included in the ML Serving offer.
 
 ### What are the SLA linked to the ML Serving offer?
 
-For more information, we invite you to read the terms and conditions of use: 
+For more information, we invite you to read our [specific conditions for Public Cloud service](https://www.ovh.co.uk/support/termsofservice/Specific_Conditions_for_OVH_Public_Cloud_Service.pdf).
 
 ### How to monitor a cluster?  Is Datadog compatible?
 
