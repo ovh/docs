@@ -1,27 +1,25 @@
 ---
-title: 'Web hosting: How to transfer a .co.uk domain name'
-excerpt: 'Web hosting: How to transfer a .co.uk domain name'
+title: 'Transferring a .uk domain name to OVHcloud'
+excerpt: 'Find out how to transfer a .uk or related domain name to OVHcloud'
 slug: web_hosting_how_to_transfer_a_couk_domain_name
 section: Transfer
 order: 3
 ---
 
+**Last updated 22nd June 2020**
 
-## Prerequisites
-To transfer your .co.uk domain name or similar to OVH, make sure it meets the following conditions:
+## Objective
 
+Transferring a .uk (or similar) domain name requires a specific approach.
 
-- Your domain must not be in the Redemption period or Pending Delete status.  *
-- The domain must not be blocked by the registrar. *
-- Make sure that the owner contact details are correct in the [whois](https://www.ovh.co.uk/cgi-bin/whois.pl). *
+**This guide explains how to transfer a .uk (or similar) domain name to OVHcloud.**
 
-* Mandatory
+## Requirements
 
-
-To find out your current registrar, do a [whois](https://www.ovh.co.uk/cgi-bin/whois.pl) search for your domain name.
-
-![](images/img_3485.jpg){.thumbnail}
-
+- Your domain must not be in the Redemption period or Pending Delete status.
+- The domain must not be blocked by your registrar.
+- Owner contact information must be up to date in the [Whois](https://www.nominet.uk/whois){.external} data of the domain.
+- You are able to obtain the authorisation code that will be sent to the domain owner's email address. 
 
 ## Extensions in question
 
@@ -30,62 +28,47 @@ To find out your current registrar, do a [whois](https://www.ovh.co.uk/cgi-bin/w
 - .org.uk
 - .ltd.uk
 - .plc.uk
-- .uk.
+- .uk
+
+## Instructions
+
+### Step 1: Changing your domain TAG
+
+In order to transfer your domain to OVHcloud, you must first specify the OVHcloud TAG at your current registrar: "OVH-FR". The list of TAGs for the different registrars is available on the official [Nominet](http://www.nominet.uk/registrar-list){.external} registry website.
 
 
+> [!primary]
+>
+> If you cannot change your domain's TAG through your current registrar, you can apply to the Nominet registry to make the change for you. Nominet will charge a fee for this service.
+> Please refer to [Nominet's website](https://www.nominet.uk/domain-support/){.external} for more information. 
+>
 
+### Step 2: Obtaining the authorisation code
 
-## Step 1: Change your domain TAG
-To transfer your domain to OVH, you do not need to create an order, because the transfer is free and is managed by a TAG system.
-First you have to inform your current registrar of the OVH TAG.
-The OVH TAG is "OVH-FR"
-The list of TAGS[/ blue] for different registrars is available on Nominet's [official website](http://www.nominet.uk/registrar-list).
-If you do not manage to change your domain name TAG with your current registrar you can ask Nominet to change it for you. 
+After you change the TAG, the domain name owner will receive an authorisation code (authcode) by email after a few minutes. This is valid for 5 days and required to initiate the (free) domain transfer order at OVHcloud.
 
-Please go to the Registrar's website:
-[Manage your domain - Change registrar](http://www.nominet.org.uk/uk-domain-names/manage-your-domain/change-registrar).
-Please note, Nominet will charge for this service.
+### Step 3: Ordering the free transfer
 
+Once you have your authorisation code, you can create the transfer order for your domain name on the OVHcloud [website](https://www.ovh.co.uk/). This order is similar to that of a generic domain name.
 
-## Step 2: Transfer domain to OVH
-Once you have changed the TAG, the domain will automatically be transferred to OVH in a few hours.
+Your domain will then be available in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) within a few hours.
 
+### Additional information
 
-## Step 3: Contact confirmation
-Following the transfer, the domain name owner will receive an email to the contact address that is stated in the whois.
-You will be asked to specify your chosen contacts for this domain name, in normal or expert mode:
+#### Cost of a .uk domain transfer (or similar)
 
-Normal mode:
+The transfer is free.
 
-- Enter the Nichandle which will be the Administration, Technical and Billing contact for this domain. 
-- Check the boxes to confirm the transfer, then click "save".
+#### Authorisation code validity
 
+The authorisation code is generated automatically as a result of the modification of the TAG. If the order is not made within 5 days, the transfer will be cancelled by the registrar.
 
+#### Domain renewal due to transfer
 
-![](images/img_3487.jpg){.thumbnail}
-Expert mode:
+The transfer being free, the domain's expiry date after changing registrars will be the same as before. To renew a domain after the transfer, you can create a renewal order on the [OVHcloud website](https://www.ovh.co.uk/cgi-bin/order/renew.cgi).
 
-- Enter the different Nichandles or the Administrative, Technical and Billing contacts for this domain. 
-- Tick the boxes to authorise the transfer, then click "save" to confirm.
+## Go further
 
+[Transferring a domain name to OVHcloud](../transfer-generic-domain/)
 
-
-![](images/img_3486.jpg){.thumbnail}
-
-
-## Step 4: Completion
-Your domain will be available in your customer account in a few hours’ time.
-
-
-## Cost of .co.uk domain name transfer or similar
-Transfer is free.
-
-
-## Time it takes to transfer a .co.uk domain name or similar
-If you verify the email sent to the owner, the transfer will take under 24h.
-
-
-## Renewing a domain after a transfer
-As the transfer is free, the expiration date following the transfer will be the same as it was before the transfer.
-To renew it following the transfer, go to [ovh.co.uk](https://www.ovh.co.uk/).
-
+Join our community of users on <https://community.ovh.com/en/>.

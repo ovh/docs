@@ -17,7 +17,7 @@ Tiene el siguiente formato: **dm429850-OVH**
 
 
 ## ¿Cómo crear un ID de cliente?
-Si aún no tiene un ID de cliente, acceda a la siguiente [página](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+Si aún no tiene un ID de cliente, acceda a la siguiente [página](https://ca.ovh.com/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=WS){.external}.
 
 Complete el formulario para crear su cuenta introduciendo una dirección de correo electrónico válida.
 
@@ -45,11 +45,10 @@ Al conectarse a su área de cliente, su ID de cliente aparece en la esquina supe
 
 
 ## ¿Cómo recuperar mi contraseña?
-Puede recuperar su contraseña desde la página de conexión. Para ello, haga clic en el enlace «¿No recuerda su ID de cliente o contraseña?» que aparece en la página de conexión de su [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Puede recuperar su contraseña desde la página de conexión. Para ello, haga clic en el enlace «¿No recuerda su ID de cliente o contraseña?» que aparece en la página de conexión de su [área de cliente](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 Recibirá un mensaje de correo electrónico en la dirección de contacto con el que podrá modificar su contraseña.
 
-Si no puede acceder a esta dirección, utilice el siguiente  [procedimiento](https://www.ovh.es/cgi-bin/es/procedure/procedureChangeEmail.cgi){.external} para cambiar la dirección de correo electrónico asociada a su NIC.
 
 
 ![manager](images/3936.png){.thumbnail}

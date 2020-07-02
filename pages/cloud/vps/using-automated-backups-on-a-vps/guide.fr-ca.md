@@ -20,13 +20,13 @@ Cette option vous offre un moyen pratique de disposer fréquemment de sauvegarde
 
 ## Prérequis
 
-- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Être connecté à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
 - Un VPS OVHcloud déjà configuré
 - Un accès administrateur (root) en SSH à votre VPS (facultatif)
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Server` et sélectionnez votre serveur dans colonne de gauche sous la partie `VPS`{.action} .
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Server` et sélectionnez votre serveur dans colonne de gauche sous la partie `VPS`{.action} .
 
 ### Étape 1 : souscrire l'option de sauvegarde automatique
 

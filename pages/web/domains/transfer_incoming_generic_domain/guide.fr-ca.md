@@ -8,7 +8,6 @@ order: 1
 
 **Dernière mise à jour le 04/06/2019**
 
-
 ## Objectif
 
 En transférant votre nom de domaine, vous changerez de registre pour celui-ci. Vous pouvez aussi le transférer vers OVH. Ce processus prend généralement entre un et dix jours.
@@ -43,7 +42,7 @@ Celle-ci comporte plusieurs étapes, impliquant la prise de contact avec plusieu
 
 > [!warning]
 >
-> Cette procédure s'applique à la plupart des transferts. Cependant, selon votre extension de nom de domaine, elle peut être différente. Nous vous recommandons de vérifier les informations affichées sur la page pour l'extension concernée, via : <https://www.ovh.com/fr/domaines/tarifs/>.
+> Cette procédure s'applique à la plupart des transferts. Cependant, selon votre extension de nom de domaine, elle peut être différente. Nous vous recommandons de vérifier les informations affichées sur la page pour l'extension concernée, via : <https://www.ovh.com/ca/fr/domaines/tarifs/>.
 >
 
 ### Étape 1 : vérifier les informations associées au nom de domaine
@@ -56,7 +55,7 @@ Celle-ci comporte plusieurs étapes, impliquant la prise de contact avec plusieu
 
 > [!primary]
 >
-> Si vous ne savez pas dans quel bureau d'enregistrement votre nom de domaine est classé, les lignes « Registrar », qui apparaîtront dans le résultat de la recherche de l'[outil Whois](https://www.ovh.com/fr/cgi-bin/whois.pl){.external}, peuvent vous fournir des informations sur son identité.
+> Si vous ne savez pas dans quel bureau d'enregistrement votre nom de domaine est classé, les lignes « Registrar », qui apparaîtront dans le résultat de la recherche de l'[outil Whois](https://www.ovh.com/fr/support/outils/check_whois.pl){.external}, peuvent vous fournir des informations sur son identité.
 >
 
 ### Étape 2 : déverrouiller son nom de domaine et récupérer le code de transfert
@@ -74,11 +73,11 @@ Veuillez noter qu'OVH n'est pas le bureau d'enregistrement de votre nom de domai
 
 ### Étape 3 : demander un transfert de nom de domaine vers OVH
 
-Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVH depuis [notre site](https://www.ovh.com/fr/){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
+Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVH depuis [notre site](https://www.ovh.com/ca/fr/){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
 
 Lorsque vous êtes invité à fournir votre code de transfert, entrez-le dans la zone en face de votre nom de domaine. Si vous ne disposez pas du code de transfert, vous pouvez cocher la case intitulée `Entrer le code de transfert ultérieurement`{.action}. Toutefois, nous vous conseillons vivement de vous assurer que vous disposez du code à remettre avant de continuer.
 
-Vous pouvez également terminer votre commande avec un [hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} et d'autres solutions OVH. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVH. Notre guide intitulé « [Migrer mon site chez OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external} » vous fournira des instructions sur la façon de procéder.
+Vous pouvez également terminer votre commande avec un [hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external} et d'autres solutions OVH. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVH. Notre guide intitulé « [Migrer mon site chez OVH](https://docs.ovh.com/ca/fr/hosting/migrer-mon-site-chez-ovh/){.external} » vous fournira des instructions sur la façon de procéder.
 
 > [!warning]
 >
@@ -89,7 +88,7 @@ Vous pouvez également terminer votre commande avec un [hébergement web](https:
 > - **saisie des serveurs DNS pour votre nom de domaine.** Si vous utilisez actuellement votre nom de domaine pour maintenir un site internet ou un service de messagerie en ligne, vous devrez spécifier leurs serveurs DNS afin d'éviter toute interruption de service.
 >
 
-Une fois que vous avez reçu le bon de commande, réglez le montant demandé pour initier le processus de transfert. Celui-ci ne démarrera que lorsque nous recevrons votre paiement. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Pour suivre la progression, cliquez sur `Domaines`{.action} dans la barre de services située à gauche, puis ` Opérations en cours`{.action}.
+Une fois que vous avez reçu le bon de commande, réglez le montant demandé pour initier le processus de transfert. Celui-ci ne démarrera que lorsque nous recevrons votre paiement. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}. Pour suivre la progression, cliquez sur `Domaines`{.action} dans la barre de services située à gauche, puis ` Opérations en cours`{.action}.
 
 ### Étape 4 : effectuer la première étape de validation du transfert
 
@@ -113,7 +112,7 @@ Plusieurs résultats possibles peuvent être obtenus à cette étape, selon les 
 |Aucun des contacts ne répond aux demandes de validation.|Le transfert passe à la seconde étape de validation après une période de cinq (5) jours.|
 |Un refus est reçu de l'un des deux contacts.|Le processus de transfert est annulé dès qu'un refus est reçu par l'un des contacts.|
 
-En cas d'annulation d'un transfert, assurez-vous que les différentes parties sont d'accord avec cette manipulation et que leurs adresses de messagerie sont à jour. Ce processus peut être réitéré ultérieurement à partir de l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, section `Domaines`{.action}, puis `Opérations en cours`{.action}.
+En cas d'annulation d'un transfert, assurez-vous que les différentes parties sont d'accord avec cette manipulation et que leurs adresses de messagerie sont à jour. Ce processus peut être réitéré ultérieurement à partir de l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, section `Domaines`{.action}, puis `Opérations en cours`{.action}.
 
 ### Étape 5 : seconde étape de validation du transfert
 
@@ -125,14 +124,14 @@ Une fois la deuxième étape lancée, le bureau d'enregistrement du nom de domai
 |Aucune réponse reçue du bureau d'enregistrement actuel.|Le transfert est terminé après une période de cinq jours.|
 |Un refus est reçu du bureau d'enregistrement actuel.|Le processus de transfert est annulé dès qu'un refus est reçu.|
 
-Si une réponse de refus est envoyée par le bureau d'enregistrement actuel, contactez le pour savoir pourquoi il l'a refusée. Le processus de transfert peut être redémarré à partir de l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la section `Domaines`{.action}, puis `Opérations en cours`{.action}.
+Si une réponse de refus est envoyée par le bureau d'enregistrement actuel, contactez le pour savoir pourquoi il l'a refusée. Le processus de transfert peut être redémarré à partir de l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la section `Domaines`{.action}, puis `Opérations en cours`{.action}.
 
 ### Étape 6 : gérer son nom de domaine avec OVH
 
-Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Pour ce faire, cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis cliquez sur le nom de domaine concerné.
+Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}. Pour ce faire, cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis cliquez sur le nom de domaine concerné.
 
 ## Aller plus loin
 
-[Migration de votre site Web et de vos e-mails vers OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}
+[Migration de votre site Web et de vos e-mails vers OVH](https://docs.ovh.com/ca/fr/hosting/migrer-mon-site-chez-ovh/){.external}
 
 Rejoignez notre communauté d'utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/){.external} .

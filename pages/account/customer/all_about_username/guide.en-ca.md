@@ -24,7 +24,7 @@ At OVHcloud, it is known as a NIC handle.
 
 ## How to create a NIC handle
 
-If you do not have a NIC handle yet, go to the page for [creating an OVHcloud account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. 
+If you do not have a NIC handle yet, go to the page for [creating an OVHcloud account](https://ca.ovh.com/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=CA){.external}. 
 
 Fill in the online form, and please ensure you use a **valid email address**.
 
@@ -37,8 +37,8 @@ Once you have completed the form, you will receive an email confirming that your
 
 To improve security for your account, we recommend:
 
-- Reading our guide on [setting and managing an account password](https://docs.ovh.com/gb/en/customer/manage-password/).
-- Securing access to your account by setting up two-factor authentication. This guide will explain how to enable it: [Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/gb/en/customer/secure-account-with-2FA/).
+- Reading our guide on [setting and managing an account password](https://docs.ovh.com/ca/en/customer/manage-password/).
+- Securing access to your account by setting up two-factor authentication. This guide will explain how to enable it: [Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/ca/en/customer/secure-account-with-2FA/).
 
 ## How to find your NIC handle
 
@@ -68,11 +68,11 @@ By clicking on your initials, you will also be able to find the `client code` th
 
 ## How to log in to the OVHcloud Control Panel
 
-Go to the [OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager){.external}, and enter your NIC handle and password.
+Go to the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager){.external}, and enter your NIC handle and password.
 
 ![NIC handle](images/nichandle03.png){.thumbnail}
 
-If your login attempts are unsuccessful, you will need to follow the [two-factor authentication](https://docs.ovh.com/gb/en/customer/secure-account-with-2FA/) procedure. This additional layer of security on your account complements your username-password couple, and is managed via a device you own: e.g. a smartphone, tablet, or security key.
+If your login attempts are unsuccessful, you will need to follow the [two-factor authentication](https://docs.ovh.com/ca/en/customer/secure-account-with-2FA/) procedure. This additional layer of security on your account complements your username-password couple, and is managed via a device you own: e.g. a smartphone, tablet, or security key.
 
 > [!primary]
 > If you have not set up two-factor authentication on your account, you may be asked to enter a verification code in order to confirm your identity. The verification code is sent to the **primary email address** listed on your account.  
@@ -82,13 +82,11 @@ If your login attempts are unsuccessful, you will need to follow the [two-factor
 
 ### What to do if you have forgotten your password
 
-If you have lost or forgotten your password, please follow [this guide detailing the steps to take in order to change it](https://docs.ovh.com/gb/en/customer/manage-password/#if-you-have-forgotten-your-current-password).
+If you have lost or forgotten your password, please follow [this guide detailing the steps to take in order to change it](https://docs.ovh.com/ca/en/customer/manage-password/#if-you-have-forgotten-your-current-password).
 
 ### What to do if you cannot access your email address
 
-If you have entered a backup email address, you can [contact the OVHcloud support team](https://help.ovhcloud.com/en-gb/contact/)  and request for them to set your backup email as your primary email address. Once this action has been completed, please ensure that you enter a new backup email address.
-
-If you have not entered a backup email address, or it is also unavailable, please follow [the procedure detailed here](https://www.ovh.co.uk/cgi-bin/en/procedure/procedureChangeEmail.cgi){.external}. Once this has been processed by our services, we will replace your contact email address if all of the documents provided are valid.
+If you have entered a backup email address, you can [contact the OVHcloud support team](https://www.ovhcloud.com/en/contact/)  and request for them to set your backup email as your primary email address. Once this action has been completed, please ensure that you enter a new backup email address.
 
 ## How to manage your personal details
 
@@ -147,17 +145,14 @@ In this scenario, OVHcloud can enable you to give access to your account while p
 
 ### Create users.
 
-A user can have read or write access to your account, or all of your services. You can create, manage and delete these users via the OVHcloud Control Panel. To find out more, please refer to our [guide on user management](https://docs.ovh.com/gb/en/customer/managing-users/).
+A user can have read or write access to your account, or all of your services. You can create, manage and delete these users via the OVHcloud Control Panel. To find out more, please refer to our [guide on user management](https://docs.ovh.com/ca/en/customer/managing-users/).
 
-### Manage contacts.
-
-You can delegate admin **or** technical **or** billing management for one or more services on your account to another NIC handle. To find out more, please refer to our [guide on contact management](https://docs.ovh.com/gb/en/customer/managing-contacts/).
 
 ## What to do in the event of identity theft
 
-If you receive an email notifying you of an unknown connection to your OVHcloud account, we advise [changing your account password immediately](https://docs.ovh.com/gb/en/customer/manage-password/#change-your-password) and [securing it with two-factor authentication](https://docs.ovh.com/gb/en/customer/secure-account-with-2FA/).
+If you receive an email notifying you of an unknown connection to your OVHcloud account, we advise [changing your account password immediately](https://docs.ovh.com/ca/en/customer/manage-password/#change-your-password) and [securing it with two-factor authentication](https://docs.ovh.com/ca/en/customer/secure-account-with-2FA/).
 
-If you observe any suspicious activity on your account, [contact OVHcloud support](https://help.ovhcloud.com/en-gb/contact/), and our team can help guide you on the steps you need to take.
+If you observe any suspicious activity on your account, [contact OVHcloud support](https://www.ovhcloud.com/encontact/), and our team can help guide you on the steps you need to take.
 
 ## Go further
 

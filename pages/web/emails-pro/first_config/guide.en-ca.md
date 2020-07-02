@@ -18,13 +18,13 @@ You have just purchased a Email Pro solution, which gives you affordable profess
 - an [Email Pro]({ovh_www}/emails/email-pro/){.external} solution
 - an email confirming that your Email Pro solution has been set up
 - a domain name
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 ### Step 1: Log in to your service’s interface.
 
-Once the Email Pro service has been created and is available, you can manage it from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Once the Email Pro service has been created and is available, you can manage it from the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 To do this, log in to the Control Panel, click on `Email Pro`{.action} in the services menu on the left, then select the appropriate service.
 

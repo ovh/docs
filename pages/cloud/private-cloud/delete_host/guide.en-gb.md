@@ -6,7 +6,7 @@ legacy_guide_number: '1442308'
 section: 'OVH Features'
 ---
 
-**Last updated February 13<sup>th</sup> 2020**
+**Last updated July 1<sup>st</sup> 2020**
 
 ## Objective
 
@@ -16,7 +16,7 @@ There are some situations where it may be useful to remove a host server from yo
 
 ## Requirements
 
-* an [OVH Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
+* an [OVHcloud Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/){.external} solution
 * access to the vSphere interface
 
 
@@ -28,34 +28,34 @@ There are two steps to removing a host server. First you need to switch the reso
 
 Once you have logged in to vSphere, go to the inventory for your host servers and clusters. Select the host server concerned by right-clicking on it, then click `Maintenance Mode`{.action} and `Enter Maintenance Mode`{.action}. If there are any virtual machines (VMs) working on this host server, they will be automatically saved on to another server in your cluster (if HA (high availability) and DRS are activated).
 
-![Enable maintenance mode](images/hostmaintenancemode.png){.thumbnail}
+![Enable maintenance mode](images/removehost01.png){.thumbnail}
 
 A window will open asking you to confirm that you would like to switch to maintenance mode.
 
-![Confirm maintenance mode](images/confirmmaintenanceMode.png){.thumbnail}
+![Confirm maintenance mode](images/removehost02.png){.thumbnail}
 
 You can track the progress of the switch to maintenance mode in `Recent Tasks`.
 
-![Track maintenance mode](images/taskmaintenancemode.png){.thumbnail}
+![Track maintenance mode](images/removehost03.png){.thumbnail}
 
 
 ### Remove the host server.
 
-The host server is now in maintenance mode. Right-click on it, then click `OVH Private Cloud`{.action} and `Remove OVH host`{.action}.
+The host server is now in maintenance mode. Right-click on it, then click `OVHcloud`{.action} and `Remove OVH host`{.action}.
 
-![Remove host](images/removeovhhost_01.png){.thumbnail}
+![Remove host](images/removehost04.png){.thumbnail}
 
 Finally, in the window that appears, confirm that you wish to remove it by clicking `Next`{.action}.
 
-![Confirm removal](images/removeovhhost_02.png){.thumbnail}
+![Confirm removal](images/removehost05.png){.thumbnail}
 
 The removal request will then be processed.
 
-![Confirm removal](images/removeovhhost_03.png){.thumbnail}
+![Confirm removal](images/removehost06.png){.thumbnail}
 
 You can track the progress of the host server removal in `Recent Tasks`.
 
-![Removal task monitoring](images/taskremovehost.png){.thumbnail}
+![Removal task monitoring](images/removehost07.png){.thumbnail}
 
 Within a few minutes, the host server you have removed will no longer appear. 
 

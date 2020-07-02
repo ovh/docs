@@ -6,7 +6,9 @@ section: 'Configuring the Web Hosting plan'
 order: 2
 ---
 
+
 **Last updated 21st March 2018**
+
 
 ## Objective
 
@@ -91,4 +93,6 @@ If you have made all the changes required in steps 1 and 2, and taken into accou
 
 [Editing an OVHcloud DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
+
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+

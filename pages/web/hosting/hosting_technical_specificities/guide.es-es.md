@@ -6,196 +6,151 @@ legacy_guide_number: g1463
 section: 'Configuración del alojamiento'
 ---
 
-## Cliente FTP: modo pasivo
-Puede configurar su cliente de FTP como se indica a continuación:
+**Última actualización: 14/05/2020**
 
-FileZilla
+## Objetivo
 
-En el menú «Edición», seleccione «Opciones...» y, en la página de «Conexión», haga clic en «FTP».
+**Esta guía le informa de los detalles técnicos de la infraestructura de los alojamientos Web OVHcloud, en función de las preguntas más frecuentes**
 
-Marque la opción «Pasivo (recomendado)».
+## Requisitos
 
-Cyberduck
+- Tener contratado un [plan de hosting](https://www.ovh.es/hosting/){.external} compatible.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-Haga clic en «Nueva conexión».
+## Procedimiento
 
-Despliegue con la flecha «Más opciones» y, en «Modo de conectar», seleccione «Pasivo».
+> [!warning]
+>
+> La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
+> 
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
+> 
 
+### FTP
 
-## Conexiones simultáneas a la base de datos
-En el momento de la redacción de esta guía, las bases de datos compartidas («Personal», «Profesional» y «Módulo») están limitadas a 30 conexiones simultáneas.
+- Error de acceso ("Fallo de autenticación de conexión 530"): Puede comprobar que los datos de acceso a su espacio FTP son correctos verificándolos en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} en la pestaña `FTP - SSH`. Las contraseñas nunca se muestran, pero pueden modificarse. Consulte nuestras [guías FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/).
 
+- Las conexiones FTP deben utilizar el **modo pasivo**. Asegúrese de que su script o su cliente FTP estén configurados correctamente.
 
-## Conexiones desde un servidor externo
-Por motivos de seguridad, no es posible conectarse a una base de datos compartida desde un servidor externo.
+- Para conectarse por **SFTP**, se necesita un [**Hosting Profesional**](https://www.ovh.es/hosting/) o superior. Puede actualizar su servicio directamente en [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) ("Información general", "Plan", "Cambiar el plan").
 
-Los servidores compartidos de OVH son los únicos que pueden conectarse al servidor MySQL.
+### Bases de datos/SQL
 
-Cualquier otra conexión generará el siguiente error:
+### Conexiones simultáneas a la base de datos
 
+- En los planes de hosting (bases de datos compartidas), existe un límite de 30 conexiones simultáneas por base de datos (200 con la base de datos privada incluida). Consulte los [detalles de nuestros planes de hosting](https://www.ovh.es/hosting/) para comprobar las opciones disponibles en cada plan de alojamiento web.
 
+- También puede contratar bases de datos **SQL Privado** adicionales, que tienen opciones de personalización:
+
+    - *max_connections*: 100 por defecto, con posibilidad de pasar a 200
+
+    - *max_user_connections*: 50 por defecto, con posibilidad de pasar a 200
+
+Para saber más, consulte los detalles de nuestros [Planes de hosting](https://www.ovh.es/hosting/) y [nuestra guía](../primeros-pasos-con-sql-privado/).
+
+#### Conexiones desde un servidor externo
+
+- Por razones de seguridad, no es posible conectarse desde un servidor externo a la base de datos de un plan de hosting OVHcloud, ya sean bases de datos SQL compartidas o privadas. Solo los servidores OVHcloud Web Hosting pueden conectarse a los servidores de base de datos. Cualquier otra conexión generará el siguiente error:
+
+```bash
+Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
-Warning: MySQL Connection Failed: Host "ip.votre.connexion" is not allowed to connect ...
-```
 
 
-Actualmente sucede lo mismo con la oferta SQL Privado.
+#### Variables servidor SQL compartido
+
+- Conéctese a la interfaz PhpMyAdmin, e introduzca el comando **show variables** para verificar las variables del servidor MySQL.
+
+- La versión MySQL no puede modificarse para las bases de datos integradas en el alojamiento web.
+
+Para saber más sobre la gestión de las bases de datos, consulte la guía [Crear una base de datos en un alojamiento web](../crear-base-de-datos/).
+
+### PHP
+
+- Le recomendamos que consulte nuestros [planes de hosting](https://www.ovh.es/hosting/) para asegurarse de que el alojamiento web que desea contratar sea compatible con sus necesidades.
+
+- Puede verificar los detalles de la configuración de su alojamiento web. Para ello, consulte la sección [« Información técnica de su alojamiento web »](./#informacion-tecnica-de-su-alojamiento-web) al final de esta guía. 
+
+- Podrá modificar la versión PHP de su alojamiento web, o bien en [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) ("**Configuración**"), o bien modificando el archivo .ovhconfig. También se pueden llevar a cabo configuraciones mixtas en estas últimas. Tiene a su disposición instrucciones detalladas en nuestras guías:
+
+[Configurar el archivo .ovhconfig de un alojamiento web](../configurar-archivo-ovhconfig/)  
+[Modificar la configuración de un alojamiento web](../cambiar_el_entorno_de_ejecucion_de_un_alojamiento/)
 
 
-## Variables del servidor SQL compartido
-Desde phpMyAdmin, acceda a la consola de redacción de consultas SQL e introduzca:
+> [!primary]
+> El archivo .ovhconfig funciona en la raíz del alojamiento web y en las subcarpetas de primer nivel (normalmente _/www/_). La única forma de reemplazar los parámetros principales del archivo .ovhconfig es utilizar otro archivo .ovhconfig en una subcarpeta.
+> El hecho de ubicar este archivo más en profundidad en la estructura de la carpeta no tendrá ningún efecto (por ejemplo, _/www/test/_, _/www/test/test2/_). Asegúrese de que el archivo puede ser leído por su CMS (CHMOD 604 o 644).
 
 
-```
-show variables;
-```
+#### PHP-FPM
 
+PHP-FPM está activo por defecto en la infraestructura de alojamiento web con el objetivo de acelerar las respuestas PHP. Tenga en cuenta que puede que no esté activo si ejecuta un antiguo plan de alojamiento web que no haya actualizado (servicios contratados antes de 2014).
 
-Se mostrará lista de variables del servidor. Puede bajar hasta que encuentre la variable deseada.
-
-
-## PHP-FPM
-Con el objetivo de acelerar las respuestas PHP, hemos adaptado PHP-FPM a nuestra infraestructura web.
-
-En nuestros laboratorios de prueba obtenemos un rendimiento hasta 7 veces más rápido que el antiguo mecanismo.
-
-Para más información sobre el funcionamiento de PHP-FPM, consulte la guía [Activar la optimización de PHP en un alojamiento compartido OVH](https://docs.ovh.com/es/hosting/activar_la_optimizacion_de_php_en_un_alojamiento_compartido_ovh/){.external}.
-
-
-Al utilizar PHP-FPM, se modifican algunas variables de servidor: 
+*Algunas variables son diferentes sin PHP-FPM:*
 
 |Variable|Sin PHP-FPM|Con PHP-FPM|
-|----|----|----|
+|---|---|---|
 |max_execution_time|120s|300s|
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 
 
-Para el dominio principal, el archivo .ovhconfig funciona en la raíz del alojamiento y en las subcarpetas de primer nivel (p. ej.: /www/), pero no en las subcarpetas de segundo nivel o superior (p. ej.: /www/test/, /www/test/test2/).
+#### Scripts PHP
 
-PHP-FPM está activo por defecto en los planes de web hosting 2014.
+Una vez conectado a su alojamiento web por SSH, el tráfico saliente se bloqueará por razones de seguridad. Le recomendamos que utilice scripts PHP. Para más información, consulte nuestra [guía SSH](../web_hosting_ssh_en_alojamiento_compartido/). Puede consultar el manual oficial [PHP manual](https://www.php.net/manual/es/function.system.php) para la ejecución de comandos.
 
+Por ejemplo, puede utilizar la función *gethostbyaddr()* para recuperar el nombre del host:
 
-## Ruta absoluta del servidor
-Tras una actualización de seguridad en el servidor realizada el 4 de junio de 2014, la ruta absoluta que devuelve el servidor se modifica.
-
-Utilizando un script como el siguiente: 
-
-```
-<?php
-echo $_SERVER['SCRIPT_FILENAME'];
-?>
-```
-
-- La ruta que devolvía anteriormente era de tipo: /homez.XXX/usuario/nombre-de-la-carpeta/test.php
-
-- Actualmente, la ruta será: /home/usuario/nombre-de-la-carpeta/test.php
-
-
-La compatibilidad se garantiza por enlaces simbólicos (donde /homez.XXX/usuario enlaza a /home/usuario).
-
-Los enlaces simbólicos seguirán siendo efectivos.
-
-
-## Host del servidor
-No es posible obtener directamente el host con la función 'REMOTE_HOST':
-
-
-```
-<?php
-echo $_SERVER['REMOTE_HOST'] ;
-?>
+```php
+1. <?php
+2. echo gethostbyaddr($_SERVER["REMOTE_ADDR"]);
+3. ?>
 ```
 
 
-Sin embargo, sí puede utilizar la función gethostbyaddr():
+> [!warning]
+> OVHcloud no fuerza las actualizaciones PHP. Los clientes son los responsables de la seguridad de sus servicios y de la actualización periódica del software instalado.
+>
 
 
-```
-<?php
-echo gethostbyaddr($_SERVER["REMOTE_ADDR"]); 
-?>
-```
+#### Información técnica de su alojamiento web
 
+Consulte las páginas de información respectiva para verificar las librerías disponibles para su plan de hosting.
 
+Puede consultar información detallada de su cluster en este enlace: [https://cluster015.hosting.ovh.net/infos/](https://cluster015.hosting.ovh.net/infos/){.external}
 
+Sustituya el cluster indicado en la URL por el suyo. Para saber en qué cluster de alojamiento web se encuentra su servicio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y seleccione `Web`{.action} en la barra de navegación superior. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, haga clic en la pestaña `FTP - SSH`{.action}. La URL de acceso a su alojamiento le indicará el número de cluster.
 
-## FTP
-Tras una actualización de seguridad realizada el 4 de junio de 2014 en los servidores compartidos, ya no es posible conectar por FTP mediante PHP en modo activo.
+Para conocer las particularidades técnicas del hosting Cloud Web, diríjase directamente al enlace <https://cloudweb-infos.hosting.ovh.net/>.
 
-Es posible que aparezca el siguiente error de PHP: 
+## Política de cookies
 
-```
-Warning: ftp_put() [function.ftp-put]: bind() failed: Permission denied (13)
-```
+**Cookies y rastreadores utilizados como parte de la prestación del servicio de alojamiento compartido.**
 
+Para asegurar el correcto funcionamiento de los sitios web alojados como parte del servicio de alojamiento compartido, la cookie «SERVER ID» se almacena en los terminales de los visitantes de estos sitios web. La cookie «SERVER ID» permite garantizar un servicio de balanceo de carga del tráfico entrante entre las diferentes infraestructuras utilizadas para el alojamiento del sitio web (OVHcloud Load Balancer). Permite al usuario permanecer en el mismo servidor host durante toda la sesión. Esto permite mantener y garantizar la coherencia del recorrido del usuario.
 
-La función bind() ya no es posible. 
+La cookie SERVER ID constituye una escritura en el terminal del usuario que indica la instancia (servidor) de la infraestructura con la que el usuario interacciona. La cookie es anónima en el sentido de que no se utiliza ningún dato de carácter personal del usuario.
 
-Para evitarlo, solo hay que activar el modo pasivo con el siguiente código de PHP:
+La cookie «SERVER ID» se almacena en el terminal del usuario durante menos de 24 horas.
 
-```
-$conn_id = ftp_connect($ftp_server);
-$login_result = ftp_login($conn_id, $ftp_user_name, $ftp_user_pass);
-# switch to passive mode (mandatory on OVH shared hosting)
-ftp_pasv( $conn_id, true );
-```
+Al tratarse de una cookie necesaria para el funcionamiento del servicio de alojamiento compartido y anónimo, no requiere del consentimiento previo del visitante del sitio web en términos del Reglamento General de Protección de Datos (RGPD). 
 
+## Información sobre las herramientas estadísticas
 
-El FTP activo ya no es posible, por lo que deberá utilizar el modo pasivo.
+**OVHcloud Web Statistics**
 
+OVHcloud pone a disposición del cliente estadísticas de afluencia y de medición de audiencia del o de los sitios web alojados como parte del servicio de alojamiento compartido (en lo sucesivo «OVHcloud Web Statistics»). OVHcloud Web Statistics permite en particular identificar la zona geográfica de los visitantes de los sitios web alojados como parte del servicio de alojamiento compartido, las características de sus terminales, de las páginas visitadas y los códigos HTTP. OVHcloud Web Statistics se activa por defecto como parte del servicio de alojamiento compartido y puede desactivarse a petición del cliente contactando con el servicio técnico. Para ofrecer «OVHcloud Web Statistics», es necesario el tratamiento de datos por parte de OVHcloud.
 
-## Librerías compartidas
-Información sobre las librerías disponibles:
+Los informes de OVHcloud Web Statistics se realizan a partir de datos de tráfico anonimizados, como la dirección IP y los logs de los usuarios de los sitios web alojados como parte del servicio de alojamiento compartido, la URL de la consulta, la duración de la consulta y el «useragent».
 
-|Librería|Disponibilidad|
-|----|----|
-|Django Python|no activado|
-|FFmpeg|no activado|
-|memcached|no activado|
-|apc|no activado|
-|imagick|no activado|
-|GD|activado|
-|zend (opcache)|activado|
-|PDO|activado|
-|Zip - Gzip|activado|
+Para ser utilizados por OVHcloud Web Statistics, los datos mencionados anteriormente se anonimizan y se agrupan mediante algoritmos realizados por OVHcloud, en sus propias infraestructuras. En particular, la dirección IP del visitante presente en los datos de tráfico se extrae de forma anonimizada con el fin de procesarla y analizarla para determinar su geolocalización (a escala regional). De este modo no se conserva en el marco de OVHcloud Web Statistics ningún dato de carácter personal que permita la identificación directa o indirecta de los visitantes citados anteriormente.  
 
+## Más información
 
-Para consultar la información relativa a su cluster, visite la página [http://cluster015.ovh.net/infos/](http://cluster015.ovh.net/infos/), sustituyendo el número de cluster indicado en la URL por el suyo.
+[Conectarse al espacio de almacenamiento de su alojamiento web](../conexion-espacio-almacenamiento-ftp-alojamiento-web/)
 
-Para conocer su número de cluster, acceda a su área de cliente y seleccione la plataforma en la columna izquierda.
-Por motivos de seguridad, al utilizar PHP-FPM se desactivan las siguientes opciones (deprecadas por PHP):
+[Habilitar HTTPS en un sitio web con certificado SSL](../activar-https-en-un-sitio-web-con-ssl/)
 
+[Optimización del rendimiento de un sitio web](../web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web/)
 
-- register_globals
-- magic_quotes_gpc
-
-
-## Ejecutar un script de PHP por SSH
-Actualmente, en los alojamientos compartidos con SSH, la versión de PHP utilizada por defecto es la 4.4.9.
-
-A continuación se ofrece un ejemplo en línea de comandos para ejecutar el archivo test.php con la versión 4.4.9 de PHP:
-
-
-```
-php test.php
-```
-
-
-Si quiere utilizar la versión 5.3 de PHP en su script test.php:
-
-
-```
-php.ORIG.5_3 test.php
-```
-
-
-Si quiere utilizar la versión 5.4 de PHP en su script test.php:
-
-
-```
-php.ORIG.5_4 -c /usr/local/lib/php.ini-2 test.php
-```
-
-
-
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.

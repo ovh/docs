@@ -11,7 +11,7 @@ order: 1
 
 Netdata is gaining traction as a distributed, real-time, performance and health monitoring tool for systems and applications. Primarily focused on high granularity real-time insights, Netdata can forward collected time-based data to another tool for long-term storage or cross-nodes analytics.
 
-In this guide, you will learn how you might configure Netdata with Metrics Data Platform using [Beamium](https://github.com/ovh/beamium){.external} tool and Netdata prometheus format API.
+In this guide, you will learn how you might configure Netdata with Metrics Data Platform using or the Netdata Graphite TCP exporter or the [Beamium](https://github.com/ovh/beamium){.external} tool and Netdata prometheus format API.
 
 ## Requirements
 
@@ -19,6 +19,32 @@ In this guide, you will learn how you might configure Netdata with Metrics Data 
 - a UNIX/Linux machine with Netdata installed
 
 ## Instructions
+
+### Using Netdata with a Graphite exporter in TCP
+
+This guide does not cover Netdata overall installation and configuration, you might take a look first at [Netdata Github project](https://github.com/netdata/netdata#quick-start){.external}.
+
+With Netdata you can configure a Graphite exporter. As the Metrics Data Platform supports the Graphite protocol with TCP, you can use it to forward your Netdata Metrics into your OVHcloud Metrics account.
+
+This example will show you how to configure a graphite metrics exporter. To use Graphite with TCP you need to authenticate your Metrics pushed. To do it, you simply need to prefix them by your token and an `@`. Netdata supports the use of a prefix parameter, however in version 1.22.1 the prefix has to be set in the global section. We recommand to change the `update every` to push datapoints less frequently (here every 120s).
+
+To add a Graphite exporter, edit the `/netdata/conf.d/exporting.conf` file and set the following configuration:
+
+```ini
+[exporting:global]
+enabled = yes
+send configured labels = yes
+send automatic labels = yes
+update every = 120
+prefix = METRICS_WRITE_TOKEN@
+
+[graphite:OVH_Graphite]
+enabled = yes
+destination = graphite.gra1.metrics.ovh.net:2003
+send charts matching = *
+```
+
+You can find more detail about the netdata configuration exporter in their [documentation](https://learn.netdata.cloud/docs/agent/exporting#configuration){.external}.
 
 ### Netdata backend configuration
 
