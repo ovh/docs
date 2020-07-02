@@ -177,7 +177,7 @@ Validez les différentes régions souhaitées, saisissez un nom pour votre rése
 
 #### Créer un vLan depuis les APIv6 OVHcloud
 
-Pour créer un vLan depuis les APIv6 OVHcloud, cliquez [ici](../public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack) pour consulter le [guide spécifique à cette méthode](../public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack).
+Pour créer un vLan depuis les APIv6 OVHcloud, cliquez [ici](../public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1) pour consulter le [guide spécifique à cette méthode](../public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1).
 
 ### Étape 3 : Intégrer une instance dans le vRack
 
@@ -201,7 +201,7 @@ Consultez le guide [Créer une instance depuis l’espace client](../creer-insta
 
 ##### **Depuis les APIv6 OVHcloud**
 
-Cliquez [ici](../public-cloud-vrack-apiv6/#etape-4-integrer-une-instance-dans-le-vrack) pour consulter le [guide spécifique à cette méthode](../public-cloud-vrack-apiv6/#etape-4-integrer-une-instance-dans-le-vrack).
+Cliquez [ici](../public-cloud-vrack-apiv6/#etape-4-integrer-une-instance-dans-le-vrack_1) pour consulter le [guide spécifique à cette méthode](../public-cloud-vrack-apiv6/#etape-4-integrer-une-instance-dans-le-vrack_1).
 
 ##### **Depuis les API OpenStack**
 
@@ -396,7 +396,7 @@ Dans la pop-up qui apparaît, sélectionnez le réseau privé à attacher à vot
 
 ##### **Gestion des interfaces réseaux depuis les APIv6 OVHcloud**
 
-Cliquez [ici](../public-cloud-vrack-apiv6/#cas-d-une-instance-deja-existante) pour consulter le [guide spécifique à cette méthode](../public-cloud-vrack-apiv6/#cas-d-une-instance-deja-existante).
+Cliquez [ici](../public-cloud-vrack-apiv6/#cas-dune-instance-deja-existante_1) pour consulter le [guide spécifique à cette méthode](../public-cloud-vrack-apiv6/#cas-dune-instance-deja-existante_1).
 
 ##### **Gestion des interfaces réseaux depuis OpenStack Horizon**
 
