@@ -1,32 +1,37 @@
 ---
-title: 'How to use the vScope API'
+title: 'Using the vScope API'
 slug: vscopeapi
-excerpt: 'You can use the vScope API to collect monitoring data in your applications'
+excerpt: 'Find out how to use the vScope API to collect monitoring data in your applications'
 section: 'OVH services and options'
 order: 1
 ---
 
-**Last updated 25th November 2019**
+**Last updated 29th June 2020**
 
 ## Objective
 
-OVHcloud provides you with a tool called **vScope**, for supervising and monitoring your virtual machines and infrastructure.
+OVHcloud provides you with a tool called **vScope**, for supervising and monitoring your virtual machines and infrastructures.
 
-It is a webpage that displays all useful information on your resource usage.
+It is a webpage that displays useful information on your resource usage.
 
 You can also access this information via the APIv6 and Metrics API.
 
-**This guide outlines how to use these APIs**.
+**This guide explains how to use these APIs.**
+
+## Requirements
+
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- access to the management interface (vScope)
 
 ## Instructions
 
 vScope provides two types of information:
 
 - **Live** information which corresponds to the information on different components at a given time.
-- Graphs presenting logged performance data for different components, e.g. a virtual machine’s CPU and RAM.
+- Graphs presenting logged performance data for different components, such as a virtual machine’s CPU and RAM.
 
 
-### Collect **live** data.
+### Collecting **live** data
 
 **Live** data is is the data available via the vScope interface’s main page.
 
@@ -61,16 +66,16 @@ You can use the API via the following three APIv6 calls:
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 > 
 
-### Collect logged data (graphs).
+### Collecting logged data (graphs)
 
 To collect and use logged data (graphs), we use the **Metrics Data Platforms** product.
 
-Via Opentsdb or WARP10 protocol, you will be able to retrieve your data as points. You can use these points via your application, or directly display them in your choice of rendering.
+Via OpenTSDB or WARP10 protocol, you will be able to retrieve your data as points. You can use these points via your application, or directly display them in your choice of rendering.
 
 
-This article covers the use of the Opentsdb protocol for a raw data display (no graph rendering).
+The folllowing instructions cover the use of the OpenTSDB protocol for a raw data display (no graph rendering).
 
-To use **Metrics Data Platforms**, you will need to get a read token. With the new version of vScope, each infrastructure user has a read token. 
+To use **Metrics Data Platforms**, you will need to get a *read* token. With the new version of vScope, each infrastructure user has a *read* token. 
 
 Use the following APIv6 call to retrieve the read token for the user you want:
 
@@ -126,7 +131,7 @@ For each component type, there is a list of metrics, and it requires a number of
 | vscope.vm.disk.latency.read | VM disk latency in read mode | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
 | vscope.vm.disk.latency.write | VM disk latency in write mode | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
 
-#### Example of data gathered using the OpenTSDB protocol.
+#### Example of data gathered using the OpenTSDB protocol
 
 Now that you have retrieved your token, your endpoint, and your list of metrics, you can retrieve a host’s RAM usage data for a period of 1 day.
 
@@ -164,7 +169,7 @@ Below are explanations of the fields used:
 
 Other settings may also be provided. Please refer to the documentation for the OpenTSDB API for further details.
 
-You will then receive a json with the query summary, as well as the timestamps associated with their value in the **dps** field.
+You will then receive a *json* with the query summary, as well as the timestamps associated with their value in the **dps** field.
 For example:
 
 ```json

@@ -7,7 +7,7 @@ section: Fonctionnalités VMware vSphere
 order: 04
 ---
 
-**Dernière mise à jour le 21/02/2019**
+**Dernière mise à jour le 30/06/2020**
 
 ## Objectif
 
@@ -18,50 +18,53 @@ order: 04
 ## En pratique
 
 ### Déplacer une machine virtuelle
+
 Quand un token est reçu par SMS, celui-ci doit être renseigné dans l'interface sécurisée afin que la tâche en attente puisse s’exécuter.
 sur une autre ressource
 
-Pour déplacer une machine virtuelle sur une autre ressource, il vous suffit de faire un clic droit sur la machine virtuelle allumée puis de sélectionner le menu `Migrer...`{.action}
+Pour déplacer une machine virtuelle sur une autre ressource, il vous suffit de faire un clic droit sur la machine virtuelle allumée puis de sélectionner le menu `Migrer...`{.action}.
 
-![](images/Vmotion1.png){.thumbnail}
+![déplacer machine virtuelle](images/Vmotion1.png){.thumbnail}
 
 ## Choix du type de vMotion
 
-Le menu propose plusieurs options de Vmotion, dans notre exemple nous désirons uniquement migrer la machine virtuelle sur un autre hôte il faut donc sélectionner "Modifier uniquement la ressource de calcul".
+Le menu propose plusieurs options de Vmotion, dans notre exemple nous désirons uniquement migrer la machine virtuelle sur un autre hôte il faut donc sélectionner « Modifier uniquement la ressource de calcul ».
 
-L'option "Modifier uniquement le stockage" permet de migrer la machine virtuelle sur une autre banque de données. Cette opération appelé **Storage vMotion** est décrit dans [ce guide](https://docs.ovh.com/fr/private-cloud/vmware-storage-vmotion-new/){.external-link}.
+L'option « Modifier uniquement le stockage » permet de migrer la machine virtuelle sur une autre banque de données. Cette opération appelé **Storage vMotion** est décrit dans [ce guide](../vmware-storage-vmotion-new/).
 
-![](images/Vmotion2.png){.thumbnail}
+![choix du type de vMotion](images/Vmotion2.png){.thumbnail}
 
 ### Choix de la ressource
 
-Choisir vers quel ressource migrer la machine virtuelle. Il est possible de migrer la machine virtuelle sur un hôte, un cluster, un ressourcePool ou une Vapp, dans notre exemple nous allons la migrer sur l'hôte .50.
+Choisir vers quel ressource migrer la machine virtuelle. Il est possible de migrer la machine virtuelle sur un hôte, un cluster, un ressourcePool ou une Vapp.
 
-![](images/Vmotion3.png){.thumbnail}
+Dans notre exemple, nous allons la migrer sur l'hôte .50.
+
+![choix de la ressource](images/Vmotion3.png){.thumbnail}
 
 ### Choix du réseau
 
-Lors de cette étape, il vous est possible de choisit le réseau affecté à la machine virtuelle, dans notre exemple nous laissons la machine virtuelle sur son VLAN d'origine.
+Lors de cette étape, il vous est possible de choisir le réseau affecté à la machine virtuelle. Dans notre exemple, nous laissons la machine virtuelle sur son VLAN d'origine.
 
-![](images/Vmotion4.png){.thumbnail}
+![choix du réseau](images/Vmotion4.png){.thumbnail}
 
 ### Choix de la priorité
 
-Nous vous recommandons d'effectuer la migration en priorité haute, pour se faire sélectionnez "Planifier vMotion avec une priorité élevée".
+Nous vous recommandons d'effectuer la migration en priorité haute. Pour ce faire, sélectionnez « Planifier vMotion avec une priorité élevée ».
 
-![](images/Vmotion5.png){.thumbnail}
+![choix de la priorité](images/Vmotion5.png){.thumbnail}
 
 ### Finaliser le vMotion
 
-Cliquez sur "Terminer" pour lancer la procédure de migration.
+Cliquez sur `Terminer`{.action} pour lancer la procédure de migration.
 
-![](images/Vmotion6.png){.thumbnail}
+![finaliser vMotion](images/Vmotion6.png){.thumbnail}
 
 ## Suivi du vMotion
 
-Dans les tâches récentes, vous aurez l'état de la migration, celle-ci prends plus ou moins de temps cela dépend de la RAM attribuée, la charge sur la machine virtuelle et la bande passante utilisée.
+Dans les tâches récentes, vous pourrez suivre l'état de la migration. Celle-ci prend plus ou moins de temps selon la RAM attribuée, la charge sur la machine virtuelle et la bande passante utilisée.
 
-![](images/Vmotion7.png){.thumbnail}
+![suivi du vMotion](images/Vmotion7.png){.thumbnail}
 
 ## Aller plus loin
 

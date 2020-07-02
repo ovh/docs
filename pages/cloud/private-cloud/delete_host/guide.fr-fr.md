@@ -7,7 +7,7 @@ section: Fonctionnalités OVH
 order: 08
 ---
 
-**Dernière mise à jour le 10/08/2018**
+**Dernière mise à jour le 01/07/2020**
 
 ## Objectif
 
@@ -17,7 +17,7 @@ Dans certains cas il peut être utile de supprimer un serveur hôte (_host_) de 
 
 ## Prérequis
 
-* Posséder une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
+* Posséder une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 * Accéder à l’interface de gestion vSphere.
 
 
@@ -27,37 +27,37 @@ La suppression d’un serveur hôte se déroule en deux étapes : la mise en mod
 
 ### Activer le mode maintenance
 
-Une fois connecté dans vSphere, rendez-vous dans l'inventaire de vos serveurs hôtes et clusters. Sélectionnez le serveur hôte concerné avec un simple clic droit, puis choisissez `Maintenance Mode`{.action} et `Enter Maintenance Mode`{.action}. Si des machines virtuelles (VM) sont en fonctionnement sur ce serveur hôte, elles seront automatiquement enregistrées sur un autre serveur hôte présent dans votre cluster (modes HA et DRS activés).
+Une fois connecté dans vSphere, rendez-vous dans l'inventaire de vos serveurs hôtes et clusters. Sélectionnez le serveur hôte concerné avec un simple clic droit, puis choisissez `Mode de maintenance`{.action} et `Passer en mode maintenance`{.action}. Si des machines virtuelles (VM) sont en fonctionnement sur ce serveur hôte, elles seront automatiquement enregistrées sur un autre serveur hôte présent dans votre cluster (modes HA et DRS activés).
 
-![Activation du mode maintenance](images/hostmaintenancemode.png){.thumbnail}
+![Activation du mode maintenance](images/removehost01.png){.thumbnail}
 
 Vous avez accès à une fenêtre vous permettant de confirmer le passage en maintenance.
 
-![Confirmation du mode maintenance](images/confirmmaintenanceMode.png){.thumbnail}
+![Confirmation du mode maintenance](images/removehost02.png){.thumbnail}
 
 
-Vous pouvez suivre la progression du passage en mode maintenance dans la zone `Recent Tasks`.
+Vous pouvez suivre la progression du passage en mode maintenance dans la zone `Tâches récentes`.
 
-![Suivi du mode Maintenance](images/taskmaintenancemode.png){.thumbnail}
+![Suivi du mode Maintenance](images/removehost03.png){.thumbnail}
 
 
 ### Supprimer le serveur hôte
 
-Le serveur hôte est maintenant en mode maintenance. Faites un clic droit sur celui-ci, puis choisissez `OVH Private Cloud`{.action} et enfin `Remove OVH Host`{.action}
+Le serveur hôte est maintenant en mode maintenance. Faites un clic droit sur celui-ci, puis choisissez `OVHcloud`{.action} et enfin `Retirer ce Host...`{.action}
 
-![Retirer l'hôte](images/removeovhhost_01.png){.thumbnail}
+![Retirer l'hôte](images/removehost04.png){.thumbnail}
 
 Dans la fenêtre qui apparaît, il ne reste qu'à confirmer la suppression avec `Next`{.action}.
 
-![Confirmation de la suppression](images/removeovhhost_02.png){.thumbnail}
+![Confirmation de la suppression](images/removehost05.png){.thumbnail}
 
 La demande de suppression a dès lors été prise en compte.
 
-![Validation de la suppression](images/removeovhhost_03.png){.thumbnail}
+![Validation de la suppression](images/removehost06.png){.thumbnail}
 
-Vous pouvez suivre la progression de la suppression du serveur hôte dans la zone `Recent Tasks`.
+Vous pouvez suivre la progression de la suppression du serveur hôte dans la zone `Tâches récentes`.
 
-![Suivi de la tâche de suppression](images/taskremovehost.png){.thumbnail}
+![Suivi de la tâche de suppression](images/removehost07.png){.thumbnail}
 
 En quelques minutes, le serveur hôte est supprimé et n’est plus visible . 
 
