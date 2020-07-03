@@ -82,7 +82,7 @@ You can log out using the `exit` command.
 
 ### Overview from vSphere
 
-In your vSphere Client, you can see the contents that you have just sent in the Storage section: select your storage from the left-hand menu, switch to the `Folders`{.action} tab and click on the "upload-vpn" folder.
+In your vSphere Client, you can see the contents that you have just sent in the Storage section: select your storage from the left-hand menu, switch to the `Files`{.action} tab and click on the "upload-vpn" folder.
 
 ![SFTP connection via vSphere](images/sftpconnection.png){.thumbnail}
 
