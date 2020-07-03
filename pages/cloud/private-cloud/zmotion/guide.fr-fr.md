@@ -7,11 +7,11 @@ section: Services et options OVH
 order: 08
 ---
 
-**Dernière mise à jour le 26/02/2019**
+**Dernière mise à jour le 03/07/2020**
 
 ## Objectif
 
-ZMotion est une technologie OVH qui transfère les données à travers un réseau privé client entre 2 baies de stockage physiques.
+ZMotion est une technologie OVHcloud qui transfère les données à travers un réseau privé client entre 2 baies de stockage physiques.
 
 ## En pratique 
 
@@ -23,7 +23,7 @@ Cette technologie est appelée "ZMotion", pour "ZFS Motion".
 
 Le but de ZMotion est de libérer une banque de données (datastore) sans aucune action de vCenter (pas de vMotion, pas de clonage...) et sans aucune action de notre client.
 
-![](images/zmotionPrez.png){.thumbnail}
+![VMotion](images/zmotionPrez.png){.thumbnail}
 
 ### Etapes
 

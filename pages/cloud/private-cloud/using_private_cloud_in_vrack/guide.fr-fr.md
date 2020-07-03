@@ -7,11 +7,11 @@ section: Services et options OVH
 order: 02
 ---
 
-**Dernière mise à jour le 31/01/2019**
+**Dernière mise à jour le 02/07/2020**
 
 ## Objectif
 
-Le vRack, c’est la possibilité de connecter différents services cloud d'[OVH.com](http://ovh.com/){.external-link}([Serveurs dédiés](https://www.ovh.com/fr/serveurs_dedies/){.external-link}[Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external-link}[Private Cloud - SDDC](https://www.ovh.com/fr/sddc/){.external-link}) entre eux, au sein d’un ou plusieurs réseaux privés sécurisés (VLAN).
+Le vRack, c’est la possibilité de connecter différents services cloud de OVHcloud entre eux, au sein d’un ou plusieurs réseaux privés sécurisés (VLAN).
 
 **Ce guide explique comment le mettre en place**
 
@@ -19,9 +19,9 @@ Le vRack, c’est la possibilité de connecter différents services cloud d'[OVH
 
 ### Espace client
 
-Lors de la livraison de votre SDDC, la partie *datacenter* est déjà à l'intérieur d'un vrack.
+Lors de la livraison de votre service [Hosted Private Cloud], la partie *datacenter* est déjà à l'intérieur d'un vRack.
 
-![](images/vRackDatacenter.png){.thumbnail}
+![Datacenter](images/vRackDatacenter.PNG){.thumbnail}
 
 Il est possible de déplacer le *datacenter* de votre Private Cloud dans un autre vRack en cliquant sur le bouton `Déplacer`{.action}
 
@@ -31,12 +31,12 @@ Dans le client vSphere, vous pouvez retrouver les *VLANs* compatibles vRack dans
 
 > [!success]
 >
-> Par défaut, OVH vous livre une infrastructure SDDC avec 11 VLANs (VLAN10 à VLAN20).
+> Par défaut, OVHcloud vous livre une infrastructure avec 11 VLANs (VLAN10 à VLAN20).
 >
 
-![](images/vRackVsphere.png){.thumbnail}
+![vlan](images/vRackVsphere.png){.thumbnail}
 
-Il est possible de modifier leurs paramètres, ou d'en créer de nouveau en suivant le guide de [création de VxLAN](https://docs.ovh.com/fr/private-cloud/creation-vlan/){.external-link}.
+Il est possible de modifier leurs paramètres, ou d'en créer de nouveau en suivant le guide de [création de VxLAN](../creation-vlan/).
 
 Vous pourrez ensuite assigner ces *portgroup* sur les interfaces réseaux de vos machines virtuelles.
 
