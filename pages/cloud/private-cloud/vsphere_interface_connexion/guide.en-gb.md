@@ -66,7 +66,7 @@ You can then access this interface:
 On the `Home`{.action} page you can find your vCenter main menus. You will be able to perform a number of actions, such as:
 
 - deploying a virtual machine by going to `Hosts and Clusters`{.action}
-- if you have this option, using NSX by going to `Network & Security`{.action}
+- if you have this option, using NSX by going to `Networking & Security`{.action}
 - browsing your data stores.
 
 
