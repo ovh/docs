@@ -54,11 +54,12 @@ After you submit a job to the Data Processing platform, follow these steps to mo
 - Open [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login) and login with your OVHcloud account. 
 - Click on the Grafana logo at the upper left corner of the page and from the main menu select `Data Sources`{.action}
 - Click on the `Add data source`{.action} button. 
-- Fill the fields like the picture as follows: 
+- Fill in the fields like in the pictures with the following data: 
   - Name: Select a name for your data source (for example `My Data Source 1`). 
   - Type: `Warp10`
   - URL: `https://warp10.gra1.metrics.ovh.net`
   - Access: `direct`
+
 ![datasource](images/datasource.png){.thumbnail}
 
 - Click on the `Add`{.action} button. 
@@ -66,7 +67,7 @@ After you submit a job to the Data Processing platform, follow these steps to mo
 - Click on the Grafana logo at the upper left corner of the page and from the main menu select `Dashboards`{.action} -> `Import`{.action}
 ![grafana](images/grafana.png){.thumbnail}
 
-- In the import dashboard page, inside the `Grafana.com Dashboard` textbox write `11844` and click on the `Load`{.action} button. 
+- In the import dashboard page, inside the `Grafana.com Dashboard` textbox write `11844` and click on the `Load`{.action} button. (11844 is the ID of a Grafana template that has been created specifically for Data Processing monitoring)
 
 ![grafana import](images/import.png){.thumbnail}
 
