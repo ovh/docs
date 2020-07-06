@@ -1,23 +1,44 @@
 ---
-title: Associer un email à un utilisateur
+title: Associer un email à un utilisateur vSphere
+excerpt: Découvrez comment associer une adresse e-mail à votre utilisateur vSphere
 slug: associer-email-a-un-utilisateur
 legacy_guide_number: '1441987'
 section: Fonctionnalités OVH
 ---
 
+**Dernière mise à jour le 06/07/2020**
 
-Cette action se réalise dans l'[espace client OVH (Manager)](https://www.ovh.com/manager){.external-link}.
+## Objectif
 
-Ce menu permet d'ajouter un nom, prénom, numéro de téléphone et adresse email à un utilisateur vSphere.
+Il est possible d'associer un nom, prénom, numéro de téléphone et adresse e-mail à  l'utilisateur vSphere de votre Private cloud. L'adresse e-mail permet notamment la validation par token.
 
-Il permet également d'ajouter des droits d'édition aux adresse IP, IP Failover ainsi que le droit "Token validator" utilisé pour approuver certaines actions sensible sur des infrastructures ayant l'option**"Sécurité avancée"** d'activée.
+**Découvrez comment associer une adresse e-mail à votre utilisateur vSphere**
 
-Dans la section **Dédié →Private Cloud**, sélectionner ensuite l'infrastructure correspondante puis l'onglet **Utilisateurs.** Une fois sur l'utilisateur concerné, cliquer sur l'action **Modifier** dans la liste des actions disponibles.
+## Prérequis
 
-![](images/addMailOnUser.JPG){.thumbnail}
+- Disposer d'une offre [Hosted Private cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
-Les champs texte****de l'utilisateur seront alors modifiables. Il ne reste qu'à entrer l'adresse email et/ou le numéro de téléphone et/ou le nom/prénom ainsi qu'à cocher les cases correspondantes aux options que vous souhaitez activer pour cet utilisateur.
+## En pratique
 
-Penser à valider la modification en cliquant sur le **"V"** pour qu'elle soit bien prise en compte.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) et dirigez-vous dans la section `Server`. Cliquez sur `Private Cloud` dans la barre de services à gauche puis sélectionnez l'infrastructure concernée.
 
-![](images/addMailOnUser2.JPG){.thumbnail}
+![utilisateur vsphere](images/addMailOnUser01.JPG){.thumbnail}
+
+Dirigez-vous sur onglet `Utilisateurs`{.action}, cliquez sur `...`{.action} à droite de l'utilisateur concerné puis sur`Modifier`{.action} 
+
+![utilisateur vsphere](images/addMailOnUser02.JPG){.thumbnail}
+
+La fenêtre suivante s'affiche :
+
+![utilisateur vsphere](images/addMailOnUser03.JPG){.thumbnail}
+
+Vous pouvez définir vos nom, prénom, numéro de téléphone et adresse e-mail.
+
+Cette fenêtre permet également d'ajouter des droits d'édition aux adresse **IP**, **IP Failover**,**InterfaceNSX** ainsi que le droit **Token validator** utilisé pour approuver certaines actions sensible sur des infrastructures ayant l'option**"Sécurité avancée"** d'activée.
+
+Cliquez sur le bouton `Valider` pour confirmer vos modifications.
+
+## Aller plus loin
+
+Échangez avec notre communauté d’utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/){.external}.
