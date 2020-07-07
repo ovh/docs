@@ -88,13 +88,13 @@ You can modify your virtual machine’s network adapter, the connection to the a
 This interface is useful in the event of a network malfunction. You can verify that the *port ID* corresponds to the ID listed in the `Networking`{.action} and `Ports`{.action} tabs for that adapter.
 
 
-### The CD/DVD reader
+### The CD/DVD drive
 
-The CD/DVD reader allows you, for example, to mount ISO images on your virtual machine.
+A virtual CD/DVD drive allows you, for example, to mount ISO images on your virtual machine.
 
 ![Add a CD/DVD reader](images/hardware07.png){.thumbnail}
 
-We recommend that you delete the CD/DVD reader after using it, as it could in fact prevent the virtual machine from being moved.
+We recommend that you delete the CD/DVD drive after using it, as it could in fact prevent the virtual machine from being moved.
 
 
 ### Adding a device
