@@ -12,7 +12,7 @@ order: 1
 
 The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage the numerous settings of your Hosted Private Cloud infrastructure.
 
-**This guide explains the various options to manage your service.**
+**This guide explains the management options available in your Control Panel.**
 
 ## Requirements
 
