@@ -29,8 +29,6 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 ![Setting access policy](images/modifypolicy-01.png){.thumbnail}
 
-In the new Window, choose `Open` or "Restricted" from the drop-down list and click `Confirm`{.action} to apply your selection.
-
 Dans la fenêtre qui s'affiche, choisissez  « Ouverte » ou « Restreinte » dans le menu déroulant et cliquez sur `Valider`{.action} pour appliquer votre sélection.
 
 ![Setting access policy](images/modifypolicy-02.png){.thumbnail}
