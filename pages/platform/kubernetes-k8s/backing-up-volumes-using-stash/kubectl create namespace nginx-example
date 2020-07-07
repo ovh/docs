@@ -1,4 +1,0 @@
-kubectl create namespace nginx-example
-kubectl create secret generic -n nginx-example s3-secret --from-file=./AWS_ACCESS_KEY_ID   --from-file=./AWS_SECRET_ACCESS_KEY
-
-
