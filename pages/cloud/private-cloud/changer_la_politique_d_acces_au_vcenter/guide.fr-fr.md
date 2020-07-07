@@ -1,26 +1,49 @@
 ---
 title: Changer la politique d’accès au vCenter
 slug: changer-la-politique-d-acces-au-vcenter
+excerpt: Découvrez comment modifier la stratégie d'accès pour vCenter'
 legacy_guide_number: '1442246'
 space_key: VS
 space_name: vSphere as a Service
 section: Fonctionnalités OVH
 ---
 
+**Dernière mise à jour le 07/07/2020**
+
+## Objectif
+
+Pour améliorer la sécurité de votre infrastructure Hosted Private cloud, vous pouvez restreindre et gérer l'accès à vCenter.
+
+**Découvrez comment modifier la stratégie d'accès pour vCenter dans l'espace client OVHcloud.**
+
+## Prérequis
+
+- Disposer d'une offre [Hosted Private cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+
+## En pratique
+
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), dirigez-vous dans la section`Server`{.action}, puis sélectionnez votre service sous `Cloud privé`{.action} dans la barre de navigation de gauche.
+
+À partir de la page principale du service, cliquez sur l'onglet `Sécurité`{.action}, puis sur `Modifier la politique d'accès vCenter`{.action}.
+
+![Setting access policy](images/modifypolicy-01.png){.thumbnail}
+
+In the new Window, choose `Open` or "Restricted" from the drop-down list and click `Confirm`{.action} to apply your selection.
+
+Dans la fenêtre qui s'affiche, choisissez  « Ouverte » ou « Restreinte » dans le menu déroulant et cliquez sur `Valider`{.action} pour appliquer votre sélection.
+
+![Setting access policy](images/modifypolicy-02.png){.thumbnail}
+
+> [!primary]
+>
+> Si vous avez défini la politique d'accès sur « Restreinte », consultez le guide [« Autoriser des IP à se connecter au vCenter »](../autoriser-des-ip-a-se-connecter-au-vcenter/).
+> 
+
+## Aller plus loin
+
+[Autoriser des IP à se connecter au vCenter](../autoriser-des-ip-a-se-connecter-au-vcenter/)
+
+Échangez avec notre communauté d’utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/){.external}.
 
 
-
-L'opération se réalise depuis votre [espace client (Manager).](https://www.ovh.com/manager){.external-link}
-
-Section **"Dédié"** puis **"Private Cloud"**, sélectionner l'infrastructure correspondante. Ensuite rendez-vous dans l'onglet **"Sécurité"** puis cliquer sur **"Politique d'accès au vCenter"**.
-
-![](images/restrictSecurity.JPG){.thumbnail}
-
-Changer la politique par la politique souhaitée :
-
-![](images/restrictSecurity2.JPG){.thumbnail}
-
-Attention
----------
-
-Ne pas oublier de [rajouter les IPs qui seront autorisées à se connecter]({legacy}1442255).
