@@ -1,6 +1,6 @@
 ---
-title: 'Backing-up a OVHcloud Managed Kubernetes cluster using Velero'
-excerpt: 'Backing-up a OVHcloud Managed Kubernetes cluster using Velero'
+title: "Backing-up a OVHcloud Managed Kubernetes cluster using Velero"
+excerpt: "Backing-up a OVHcloud Managed Kubernetes cluster using Velero"
 slug: backing-up-cluster-with-velero
 section: Tutorials
 ---
@@ -27,11 +27,11 @@ section: Tutorials
  }
 </style>
 
-**Last updated April 10<sup>th</sup>, 2020.**
+**Last updated July 7<sup>th</sup>, 2020.**
 
-In this tutorial, we are using [Velero](https://velero.io/){.external} to backup and restore an OVHcloud Managed Kubernetes cluster.
+In this tutorial, we are using [Velero](https://velero.io/){.external} to backup and restore an OVHcloud Managed Kubernetes cluster configuration and resources.
 
-Velero is an open source tool to safely backup and restore, perform disaster recovery, and migrate Kubernetes cluster resources and persistent volumes.
+Velero is an open source tool to safely backup and restore, perform disaster recovery, and migrate Kubernetes cluster resources. It can be used for backing up volumes, but we don't support this usage, please look at our [Backing-up Persistent Volumes using Stash](../backing-up-volumes-using-stash/) tutorial for our recommended alternative.
 
 We are using our Public Cloud's Swift Object Storage with the Swift S3 API as storage backend for Velero. Velero uses the S3 protocol to store the cluster backups on a S3 compatible object storage.
 
@@ -148,26 +148,26 @@ velero install \
   --plugins velero/velero-plugin-for-aws:v1.0.1 \
   --bucket <your bucket name> \
   --secret-file ./credentials-velero \
-  --snapshot-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://storage.<public cloud region without digit>.cloud.ovh.net \
-  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://storage.<public cloud region without digit>.cloud.ovh.net
+  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.cloud.ovh.net
 ```
 
 In my case, with the cluster in the `GRA` region, that meant:
 
 ```bash
-velero install --provider aws --bucket mytestcluster-velero-s3 --secret-file ./credentials/credentials-velero --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://storage.gra.cloud.ovh.net --snapshot-location-config region=gra,s3ForcePathStyle="true",s3Url=https://storage.gra.cloud.ovh.net
-```
-
-```bash
-velero install --provider aws --plugins velero/velero-plugin-for-aws:v1.0.1 --bucket velero-s3 --secret-file ./credentials/credentials-velero --backup-location-config region=gra,s3Url=https://storage.gra.cloud.ovh.net --snapshot-location-config region=gra,s3Url=https://storage.gra.cloud.ovh.net
+velero install \
+  --provider aws \
+  --plugins velero/velero-plugin-for-aws:v1.0.1 \
+  --bucket velero-s3 \
+  --secret-file ./credentials/credentials-velero \
+  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net
 ```
 
 <pre class="console"><code>$ velero install \
   --provider aws \
+  --plugins velero/velero-plugin-for-aws:v1.0.1 \
   --bucket velero-s3 \
   --secret-file ./credentials/credentials-velero \
-  --snapshot-location-config region=gra,s3ForcePathStyle="true",s3Url=https://storage.gra.cloud.ovh.net \
-  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://storage.gra.cloud.ovh.net
+  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net
 CustomResourceDefinition/backups.velero.io: attempting to create resource
 CustomResourceDefinition/backups.velero.io: created
 CustomResourceDefinition/restores.velero.io: attempting to create resource
@@ -183,9 +183,7 @@ Now Velero is installed, you can try your first backup...
 
 ## Verifying Velero is working
 
-To verify that Velero is working correctly, let's try two exemples.
-
-### Exemple without PV
+To verify that Velero is working correctly, let's test with one example deployment:
 
 1. Copy the following code into a `velero-example-without-pv.yml` file:
 
@@ -215,10 +213,10 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx:1.7.9
-        name: nginx
-        ports:
-        - containerPort: 80
+        - image: nginx:1.7.9
+          name: nginx
+          ports:
+            - containerPort: 80
 
 ---
 apiVersion: v1
@@ -230,8 +228,8 @@ metadata:
   namespace: nginx-example
 spec:
   ports:
-  - port: 80
-    targetPort: 80
+    - port: 80
+      targetPort: 80
   selector:
     app: nginx
   type: LoadBalancer
@@ -267,7 +265,7 @@ kubectl delete namespaces nginx-example
 velero restore create --from-backup nginx-backup
 ```
 
-1. Verify that  the restore is correctly done
+1. Verify that the restore is correctly done
 
 ```bash
 kubectl get all -n nginx-example
@@ -326,181 +324,6 @@ deployment.apps/nginx-deployment   2/2     2            2           4m21s
 
 NAME                                          DESIRED   CURRENT   READY   AGE
 replicaset.apps/nginx-deployment-54f57cf6bf   2         2         2       4m21s
-</code></pre>
-
-### Exemple with PV
-
-1. Copy the following code into a `velero-example-with-pv.yml` file:
-
-```yaml
----
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: nginx-example
-  labels:
-    app: nginx
-
----
-kind: PersistentVolumeClaim
-apiVersion: v1
-metadata:
-  name: nginx-logs
-  namespace: nginx-example
-  labels:
-    app: nginx
-spec:
-  storageClassName: csi-cinder-high-speed
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 50Mi
-
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: nginx-deployment
-  namespace: nginx-example
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: nginx
-  template:
-    metadata:
-      labels:
-        app: nginx
-      annotations:
-        pre.hook.backup.velero.io/container: fsfreeze
-        pre.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--freeze", "/var/log/nginx"]'
-        post.hook.backup.velero.io/container: fsfreeze
-        post.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--unfreeze", "/var/log/nginx"]'
-    spec:
-      volumes:
-        - name: nginx-logs
-          persistentVolumeClaim:
-            claimName: nginx-logs
-      containers:
-      - image: nginx:1.7.9
-        name: nginx
-        ports:
-        - containerPort: 80
-        volumeMounts:
-          - mountPath: "/var/log/nginx"
-            name: nginx-logs
-            readOnly: false
-      - image: gcr.io/heptio-images/fsfreeze-pause:latest
-        name: fsfreeze
-        securityContext:
-          privileged: true
-        volumeMounts:
-          - mountPath: "/var/log/nginx"
-            name: nginx-logs
-            readOnly: false
-
----
-apiVersion: v1
-kind: Service
-metadata:
-  labels:
-    app: nginx
-  name: my-nginx
-  namespace: nginx-example
-spec:
-  ports:
-  - port: 80
-    targetPort: 80
-  selector:
-    app: nginx
-  type: LoadBalancer
-```
-
-1. Create a backup of the namespace with PV snapshotting
-
-```bash
-velero backup create nginx-backup-with-pv --include-namespaces nginx-example
-```
-
-1. Verify that the backup is done
-
-```bash
-velero backup describe nginx-backup
-```
-
-1. Simulate a disaster
-
-```bash
-kubectl delete namespaces nginx-example
-```
-
-Because the default reclaim policy for dynamically-provisioned PVs is "Delete", these commands should trigger your cloud provider to delete the disk that backs the PV. Deletion is asynchronous, so this may take some time. Before continuing to the next step, verify that the PV is deleted:
-
-```bash
-kubectl get pv --all-namespaces
-```
-
-1. Restore the deleted namespace
-
-```bash
-velero restore create --from-backup nginx-backup-with-pv
-```
-
-1. Verify that  the restore is correctly done
-
-```bash
-kubectl get all -n nginx-example
-```
-
-<pre class="console"><code>$ kubectl apply -f exemples/velero/velero-example-without-pv.yml
-namespace/nginx-example created
-persistentvolumeclaim/nginx-logs created
-deployment.apps/nginx-deployment created
-service/my-nginx created
-
-$ kubectl -n nginx-example get pvc
-NAME         STATUS   VOLUME                                                                   CAPACITY   ACCESS MODES   STORAGECLASS
-   AGE
-nginx-logs   Bound    ovh-managed-kubernetes-chw5gb-pvc-12511c29-xxxx-xxxx-xxxx-7228fe2adc22   1Gi        RWO            csi-cinder-high-speed
-   3s
-
-$ velero backup create nginx-backup-with-pv --include-namespaces nginx-example
-Backup request "nginx-backup-with-pv" submitted successfully.
-Run `velero backup describe nginx-backup-with-pv` or `velero backup logs nginx-backup-with-pv` for more details.
-
-$ kubectl delete namespaces nginx-example
-namespace "nginx-example" deleted
-
-$ kubectl get pv --all-namespaces
-No resources found.
-
-$ velero restore create --from-backup nginx-backup-with-pv
-Restore request "nginx-backup-with-pv-20191105184416" submitted successfully.
-Run `velero restore describe nginx-backup-with-pv-20191105184416` or `velero restore logs nginx-backup-with-pv-20191105184416` for more details.
-
-$ kubectl get all -n nginx-example
-NAME                                    READY   STATUS              RESTARTS   AGE
-pod/nginx-deployment-64dd76ffbb-t2bfk   0/2     ContainerCreating   0          22s
-
-NAME               TYPE           CLUSTER-IP   EXTERNAL-IP   PORT(S)        AGE
-service/my-nginx   LoadBalancer   10.3.76.8    &lt;pending>     80:30847/TCP   22s
-
-NAME                               READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/nginx-deployment   0/1     1            0           22s
-
-NAME                                          DESIRED   CURRENT   READY   AGE
-replicaset.apps/nginx-deployment-54f57cf6bf   0         0         0       22s
-replicaset.apps/nginx-deployment-64dd76ffbb   1         1         0       22s
-
-$ kubectl get pvc -n nginx-example
-NAME         STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS     AGE
-nginx-logs   Bound    pvc-71528d91-fd03-46c4-99d6-557d3e8fe9da   1Gi        RWO            cinder-classic   35s
-
-$ kubectl get pv -n nginx-example
-NAME                                      CAPACITY  ACCESS MODES  RECLAIM POLICY STATUS CLAIM
-  STORAGECLASS     REASON   AGE
-pvc-71528d91-fd03-46c4-99d6-557d3e8fe9da  1Gi       RWO           Delete         Bound  nginx-example/nginx-logs cinder-classic  39s
 </code></pre>
 
 ## Where do we go from here
