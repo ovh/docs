@@ -10,14 +10,14 @@ order: 10
 
 ## Objective
 
-Il arrive que, suite à un évènement lié au stockage, certaines partitions d'une machine Linux soient en lecture seule.
+Occasionally, as a result of a storage-related event, some partitions on a Linux machine may become read-only.
 
-**Ce guide explique comment corriger cet état et réduire ce risque**
+**This guide explains how to correct this status and reduce the risks of a switch.**
 
 
 ## Instructions
 
-Lorsque des partitions sont en lecture seule, plus aucune écriture n'est alors possible sur le système de fichiers.
+When partitions are read-only, writing to the file system is no longer possible.
 
 ```sh
 >     $ touch test
@@ -25,7 +25,7 @@ Lorsque des partitions sont en lecture seule, plus aucune écriture n'est alors 
 >     touch: cannot touch 'test': Read-only file system
 ```
 
-Il est possible de confirmer l'état du système de fichiers par la commande `mount`
+The file system status can be confirmed using the `mount` command:
 
 ```sh
 > $ mount
@@ -40,21 +40,21 @@ Il est possible de confirmer l'état du système de fichiers par la commande `mo
 > devpts on /dev/pts type devpts (rw,noexec,nosuid,gid=5,mode=620)
 ```
 
-Pour remonter la `/` en *lecture-ecriture*, il faut redémarrer la machine virtuelle.
+To restore `/` to *read-write*, the virtual machine must be restarted.
 
-### Solution de contournement
+### Workaround solution
 
-Par defaut sous Linux, le *timeout* des périphériques SCSI est à 30 secondes.
+By default, the timeout of SCSI devices is 30 seconds on Linux.
 
-Les VMware Tools montent cette durée à 180 secondes.
+*VMware Tools* can increase this time to 180 seconds.
 
-Il est recommandé d'augmenter cette durée à 3600 secondes. Cette commande permettra de le monter à 3600 dans la session courante.
+It is recommended to set the timeout to 3600 seconds. Using the following command will execute this for the current session.
 
 ```sh
 >     $ echo 3600 > /sys/block/`basename /dev/sda`/device/timeout
 ```
 
-Pour que cette valeur soit prise au démarrage de la machine :
+To set this value at the VM's start-up:
 
 ```sh
 >   $ nano /etc/rc.local 
