@@ -3,65 +3,65 @@ title: VMware Fault Tolerance
 slug: vmware-fault-tolerance-continuity
 excerpt: Find out how to assure continuous availability of your virtual machine by using Fault Tolerance
 legacy_guide_number: '2163251'
-section: Fonctionnalités VMware vSphere
-order: 06
+section: VMware vSphere features
+order: 6
 ---
 
-**Dernière mise à jour le 21/02/2018**
+**Last updated 7th July 2020**
 
-## Objectif
+## Objective
 
-La fonctionnalité **Fault Tolerance** (FT) de VMware vSphere permet de protéger une machine virtuelle des défaillances matérielles en clonant la machine sur deux hôtes distincts.
+The **Fault Tolerance** (FT) functionality of VMware's vSphere allows to protect a virtual machine from hardware failures by cloning the VM on two separate hosts.
 
 ![Fault Tolerance](images/FT10v2.gif){.thumbnail}
 
-**Découvrez comment utiliser la fonctionnalité Fault Tolerance sur votre machine virtuelle**
+**This guide explains the usage of Fault Tolerance on your VMs.**
 
-## Prérequis
+## Requirements
 
-- Activer vSphere HA.
-- Réservation de ressource égal à 100 % de la mémoire.
-- VMware Tools installés.
-- Processeurs de même génération.
-- 4 vCPUs maximum.
+- vSphere HA activated
+- Resource reservation equal to 100% of memory
+- VMware Tools installed
+- Same generation processors
+- 4 vCPUs maximum
 
-## En pratique 
+## Instructions
 
 
-Pour activer l'option **Fault Tolerance**, faites un clic droit sur une machine virtuelle, `Fault Tolerance` et `Activer Fault Tolerance`.
+To activate **Fault Tolerance**, right-click on a VM, then click `Fault Tolerance` and `Turn On Fault Tolerance`.
 
 ![Fault Tolerance](images/FT.png){.thumbnail}
 
-Une fenêtre de configuration s'ouvrira, vous invitant à séléctionner pour la machine virtuelle secondaire.
+A configuration window will open, prompting you to make choices for the secondary VM.
 
-La banque de données :
+- Datastores
 
 ![Fault Tolerance](images/FT1.png){.thumbnail}
 
-L'hôte : 
+- The host: 
 
 ![Fault Tolerance](images/FT2.png){.thumbnail}
 
-Enfin, un résumé des choix effectué. Validez pour activer la FT sur votre machine virtuelle :
+Finally, a summary of your choices is displayed. Validate to enable FT on your virtual machine.
 
 ![Fault Tolerance](images/FT3.png){.thumbnail}
 
-Votre machine virtuelle est maintenant protégée par **Fault Tolerance**, son icone est désormais différente et son nom affiche désormais le statut « Primaire ».
+Your virtual machine is now protected by **Fault Tolerance**, its icon is different and it will show as "primary".
 
 ![Fault Tolerance](images/FT4.png){.thumbnail}
 
-Plusieurs opérations sont désormais disponibles en fonction de votre besoin.
+Several operations are now available according to your needs.
 
 ![Fault Tolerance](images/FT5.png){.thumbnail}
 
-Le mode [résilience](https://docs.ovh.com/fr/private-cloud/mode-resilience/){.external-link} d'OVHcloud est un bon moyen de tester la très haute disponibilité de votre machine virtuelle en **Fault Tolérance**.
+The OVHcloud [Resilience mode](../resilience-mode/) is a good way to test your FT-activated virtual machine for high availability.
 
-## Actions impossibles et incompatibilités
+## Impossible and incompatible actions
 
-Sur une machine virtuelle avec **Fault Tolerance** activé, il n'est plus possible d'effectuer certaines actions, ni d'utiliser certains périphériques.
+On a virtual machine with **Fault Tolerance** enabled, it is no longer possible to perform certain actions or to use certain devices.
 
-Vous retrouver la liste des actions devenues impossibles sur [cette page](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-F5264795-11DA-4242-B774-8C3450997033.html){.external-link} et la liste des incompatibilités sur [celle-ci](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-C1749AD4-70E2-406C-864C-719F54BF1BC1.html){.external-link}.
+Please refer to [this documentation](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-F5264795-11DA-4242-B774-8C3450997033.html){.external-link} for more details on the topic. A list of Incompatible features and devices is available on [this page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-C1749AD4-70E2-406C-864C-719F54BF1BC1.html){.external-link}.
 
-## Aller plus loin
+## Go further
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.
