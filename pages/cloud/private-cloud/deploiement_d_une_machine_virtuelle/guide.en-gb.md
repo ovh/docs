@@ -12,7 +12,7 @@ order: 0
 
 In the vSphere interface, you have multiple possibilities to deploy a virtual machine (VM). 
 
-**This guide explains the various options of deploying a virtual machine.**
+**This guide explains the deployment of a virtual machine by means of an example.**
 
 ## Requirements
 
@@ -23,7 +23,7 @@ In the vSphere interface, you have multiple possibilities to deploy a virtual ma
 
 ### Deploying a virtual machine
 
-A new VM can be deployed from the vSphere client. Click on the `ACTIONS`{.action} button (or use a right-click) and select `New Virtual Machine`{.action}.
+A new VM can be deployed from the vSphere client. Right-click on your data centre (or use the  `ACTIONS`{.action} button) and select `New Virtual Machine`{.action}.
 
 ![Deploy a VM](images/vm01.png){.thumbnail}
 
@@ -66,7 +66,7 @@ In this step, choose a guest operating system. This does not install the operati
 
 ### Configuring the virtual machine
 
-Use the next steps to configure your VM's resources
+Follow the next steps to configure your VM's resources.
 
 The row `New Network` allows to add a network adapter:
 
