@@ -375,7 +375,7 @@ kubectl -n nginx-example get svc nginx-service -w
 And do some calls to the URL to generate some access logs:
 
 ```bash
-curl <EXTERNAL_IP>
+curl -I <EXTERNAL_IP>
 ```
 
 In my case:
@@ -563,7 +563,7 @@ We can see above that the backup session has succeeded. Now, we are going to ver
 
 The snapshots are visible on the . To see then, go to Object Storage section, where you will find the S3 bucket you have created. By clicking on the bucket you will see the list of objects, including all the snapshot beginning with the `/backup/demo/deployment/stash-demo` we had defined in the `Repository`:
 
-![Snapshots onb OVHcloud Manager](images/snapshot-on-manager.png)){.thumbnail}
+![Snapshots onb OVHcloud Manager](images/snapshot-on-manager.png){.thumbnail}
 
 ---
 
