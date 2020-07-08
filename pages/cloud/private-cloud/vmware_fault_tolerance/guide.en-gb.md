@@ -38,7 +38,7 @@ A configuration window will open, prompting you to make choices for the secondar
 
 ![Fault Tolerance](images/FT1.png){.thumbnail}
 
-- The host: 
+- The host
 
 ![Fault Tolerance](images/FT2.png){.thumbnail}
 
@@ -60,7 +60,7 @@ The OVHcloud [Resilience mode](../resilience-mode/) is a good way to test your F
 
 On a virtual machine with **Fault Tolerance** enabled, it is no longer possible to perform certain actions or to use certain devices.
 
-Please refer to [this documentation](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-F5264795-11DA-4242-B774-8C3450997033.html){.external-link} for more details on the topic. A list of Incompatible features and devices is available on [this page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-C1749AD4-70E2-406C-864C-719F54BF1BC1.html){.external-link}.
+Please refer to [this documentation](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-F5264795-11DA-4242-B774-8C3450997033.html){.external-link} for more details on the topic. A list of incompatible features and devices is available on [this page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-C1749AD4-70E2-406C-864C-719F54BF1BC1.html){.external-link}.
 
 ## Go further
 
