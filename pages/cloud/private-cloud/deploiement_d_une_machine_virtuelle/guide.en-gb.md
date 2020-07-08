@@ -8,105 +8,103 @@ order: 0
 
 **Last updated 29th June 2020**
 
-## Objectif
+## Objective
 
-Depuis votre interface vSphere, vous pouvez déployer des machines virtuelles de plusieurs manières. 
+In the vSphere interface, you have multiple possibilities to deploy a virtual machine (VM). 
 
-**Découvrez comment déployer une machine virtuelle depuis un fichier ISO.**
+**This guide explains the various options of deploying a virtual machine.**
 
-## Prérequis
+## Requirements
 
-- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
-- Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager))
 
-## En pratique
+## Instructions
 
-### Déployer la machine virtuelle
+### Deploying a virtual machine
 
-Le déploiement de la nouvelle machine virtuelle s'effectue depuis le client vSphere, dans la vue `Hôtes et clusters`.
+A new VM can be deployed from the vSphere client. Click on the `ACTIONS`{.action} button (or use a right-click) and select `New Virtual Machine`{.action}.
 
-Faites un clic-droit sur le cluster de votre choix et cliquez sur `Nouvelle machine virtuelle`{.action}.
+![Deploy a VM](images/vm01.png){.thumbnail}
 
-![deploy a vm](images/vm01.png){.thumbnail}
+You have multiple possibilities regarding the creation of a new VM:
 
-Vous avez plusieurs possibilité lors de la création d’une machine virtuelle :
+- It is possible to create it and select an ISO from your datastore in the process. You can upload ISO files by connecting [via SFTP](../sftp_connectionp/).
+- You can deploy a VM from your own template, an external template or an [OVHcloud template](../deploy-ovh-template/).
+- You can clone an existing VM (be careful to avoid IP address conflicts).
+- You can clone a VM into a template, so that you can deploy your next virtual machine more quickly.
+- You can clone a template into another template. Make use of this, for example, to have the template available on different datastores and thus prevent performance loss during a massive deployment.
+- You can convert a template into a VM. This will cause the template to be lost but may be useful if you want to modify it.
 
-- La création depuis un ISO, qui sera dans votre datastore et que vous aurez pu importer en suivant [le guide de connexion en SFTP](../connexion-en-sftp/)
-- Vous pouvez également déployer une machine virtuelle depuis un template que vous pouvez avoir ou un [template OVH](../deploiement-template-ovh/)
-- Vous pouvez cloner une machine virtuelle déjà existante (attention toutefois au risque de conflit d’adresses IP).
-- Vous pouvez cloner une machine virtuelle en template, en vue d’un déploiement plus rapide de vos prochaines machines virtuelles.
-- Vous pouvez cloner un template en un autre template pour, par exemple, avoir le template sur différents datastores et ne pas subir de baisse de performances lors d’un déploiement massif.
-- Vous pouvez convertir un template en machine virtuelle, ce qui occasionnera la perte du template mais peut être utile si vous souhaitez modifier celui-ci.
+![Choose a method](images/vm02.png){.thumbnail}
 
-![choix de créations](images/vm02.png){.thumbnail}
+The following instructions will focus on deploying a VM using an ISO (`Create a new virtual machine`{.action}).
 
-Ici, nous allons voir comment déployer une machine virtuelle depuis un ISO.
+The next step allows you to define a name for the VM and choose a location. If you do not choose a folder, it will be created at the root of the data centre.
 
-L'étape suivante vous permet de définir le nom de votre machine et de choisir son emplacement. Si vous ne choisissez pas de dossier, elle sera créée à la racine du datacentre.
+![VM location](images/vm03.png){.thumbnail}
 
-![emplacement de la  machine virtuelle](images/vm03.png){.thumbnail}
+You can then choose the cluster, host, [resource pool](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external-link}, or [vApp](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html){.external-link} to place it.
 
-Vous pouvez ensuite choisir le cluster, l’hôte, [le pool de ressources](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external-link}, ou [la vApp](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html){.external-link} où vous souhaitez la placer.
+In this case, the VM will be deployed according to the configured DRS rules, and will be placed at the root of the cluster.
 
-Dans ce cas, la machine virtuelle sera déployée selon les règles DRS configurées, et sera placée à la racine du cluster.
+![Choose resources](images/vm04.png){.thumbnail}
 
-![choix des ressources](images/vm04.png){.thumbnail}
+Next, you can choose which database to store the configuration and disk files in.
 
-Vous devrez ensuite choisir la banque de données dans laquelle stocker les fichiers de configuration et de disque.
+We do not recommend placing your virtual machine in "storageLocal", which corresponds to the local storage of your host. If your host fails, your VM will not be able to restart and will no longer be accessible.
 
-Nous vous déconseillons de placer votre machine virtuelle dans un « storageLocal », qui correspond au stockage local de votre hôte. En cas de défaillance de votre hôte, votre machine virtuelle ne pourra pas redémarrer et ne sera plus accessible.
+![Choose storage](images/vm05.png){.thumbnail}
 
-![choix du stockage](images/vm05.png){.thumbnail}
+Then select the compatibility between your VM and the host. Unless otherwise noted, it is recommended that you choose the latest one.
 
-Choisissez ensuite la compatibilité entre votre machine virtuelle et l’hôte. Sauf cas particulier, il est recommandé de prendre le plus récent.
+![Choose compatibility](images/vm06.png){.thumbnail}
 
-![choix compatibilité](images/vm06.png){.thumbnail}
+In this step, choose a guest operating system. This does not install the operating system, but pre-configures the VM for its usage (CPU/RAM, type of NIC, support for VMware tools installation).
 
-Choisissez alors un système d'exploitation invité. Le « Guest OS » n’installe pas le système d’exploitation, cependant vSphere configure la machine virtuelle de manière automatique (nombre de CPU/RAM, type de carte réseau, prise en charge de l’installation des VMware tools).
+![Choose guest OS](images/vm07.png){.thumbnail}
 
-![choix guest OS](images/vm07.png){.thumbnail}
+### Configuring the virtual machine
 
-### Configurer la machine virtuelle
+Use the next steps to configure your VM's resources
 
-Les étapes suivantes vous permettent de configurer les ressources de votre machine virtuelle.
+The row `New Network` allows to add a network adapter:
 
-La ligne `Nouveau Réseau` permet d’ajouter une carte réseau :
+- "VM Network" is used for the public network and direct internet access.
+- The VLANs will allow you to use the private network between your virtual machines (and other OVHcloud services when using vRack).
 
-- Le « VM Network » servira pour le réseau public et l’accès direct à internet.
-- Les VLAN permettront d’utiliser le réseau privé entre vos machines virtuelles (et avec d’autres services OVHcloud à travers le vRack).
+![Choose network](images/vm08.png){.thumbnail}
 
-![Choix du réseau](images/vm08.png){.thumbnail}
+In the row `New CD/DVD Drive`, you can select "Datastore ISO File".
 
-À la ligne `Nouveau lecteur CD/DVD`, vous pourrez choisir « Fichier ISO banque de données ».
+A new window will open where you can browse to your ISO file. It can also be added after the VM is created.
 
-Une fenêtre s’ouvrira alors pour que vous choisissiez votre fichier ISO. Celui-ci pourra également être ajouté après la création de la machine virtuelle.
+![Choose ISO](images/vm09.png){.thumbnail}
 
-![Choix du fichier ISO](images/vm09.png){.thumbnail}
+Once the file is selected, it will be displayed as shown below. Do not forget to tick the option `Connect At Power On`{.action}.
 
-Une fois le fichier sélectionné, Il s’affichera comme ci-dessous. N’oubliez pas de le connecter en cochant la case `Connecter lors de la mise sous tension`{.action}.
+![Connect ISO](images/vm10.png){.thumbnail}
 
-![Connecter ISO](images/vm10.png){.thumbnail}
+A summary of the VM specifications will be displayed. To change your configuration, you can click directly one of the configuration steps on the left.
 
-Un récapitulatif de la création de la machine virtuelle vous est alors présenté. Si vous souhaitez modifier votre configuration, cliquez directement sur l'une étapes de gauche.
+Click on `FINISH`{.action} to finalise the deployment.
 
-Cliquez sur `FINISH`{.action} pour terminer son déploiement.
+![Summary VM](images/vm11.png){.thumbnail}
 
-![Récapitulatif VM](images/vm11.png){.thumbnail}
+Once the VM is ready, you can start it by right-clicking on it and then clicking on `Power`{.action} and `Power On`{.action}. 
 
-Une fois la machine présente dans votre inventaire, vous pourrez la démarrer en faisant un clic-droit sur celle-ci et en cliquant successivement sur `Alimentation`{.action} puis `Mettre sous tension`{.action}. 
+Finally, click on `Open Remote Console`{.action} to access the 'screen' of the VM and begin the installation of the operating system.
 
-Enfin, cliquez sur `Ouvrir Remote Console`{.action} pour avoir accès à « l’écran » de la VM et commencer l’installation du système d’exploitation.
+![Starting VM](images/vm12.png){.thumbnail}
 
-![Démarrage VM](images/vm12.png){.thumbnail}
+The console will open in a new tab and after you have completed the installation, you will be able to use your virtual machine.
 
-La console s'ouvrira dans un nouvel onglet et, après avoir suivi l'installation, vous pourrez utiliser votre machine virtuelle.
-
-![console VM](images/vm13.png){.thumbnail}
+![Console VM](images/vm13.png){.thumbnail}
 
 > [!primary]
-> Une fois votre machine virtuelle installée, il est recommandé de déconnecter l'ISO dans les paramètres. Dans le cas contraire, vous ne pourrez pas déplacer la machine virtuelle.
+> Once your VM is installed, it is recommended that you disconnect the ISO in the settings. Otherwise, you will not be able to move the VM.
 >
 
-## Aller plus loin
+## Go further
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.
