@@ -61,8 +61,6 @@ Several fields will be required to create your IP block
 > IP renewal fees are free of charge.
 >
 
-Après avoir confirmé la dernière étape, vous obtenez le bon de commande de votre bloc IP. Si celui-ci est conforme à votre souhait, il vous suffit de le payer avec les moyens de paiement proposés en bas de page afin que celui-ci soit livré.
-
 After confirming the last step, you get the order form for your IP block. If the payment is in accordance with your wishes, you only have to pay it with the payment methods offered at the bottom of the page in order for it to be delivered.
 
 ## Go further
