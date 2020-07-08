@@ -10,9 +10,9 @@ order: 09
 
 ## Objective
 
-Il est possible de créer une alerte sur tous les éléments de votre Private Cloud : le datacentre lui-même, les clusters, les VM, les datastores, le réseau...
+You can create an alert on all items in your Private Cloud: the data center itself, the clusters, the VMs, the datastores, the network...
 
-**Ce guide explique comment créer des alertes.**
+**This guide explains how to create alerts on your vSphere client.**
 
 ## Requirements
 
