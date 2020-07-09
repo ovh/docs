@@ -11,63 +11,63 @@ order: 4
 
 ## Objective
 
-VMware propose 3 formats de disque pour les machines virtuelles.
+VMware offers 3 types of disks for virtual machines.
 
-** Ce guide explique les différences entre ces formats **
+**This guide explains the differences between the availale disk types.**
 
 ## Instructions
 
-### Thin provisioning
+### Thin provision
 
-Le *Thin provisioning* est un type de format de disque, faisant consommer uniquement l'espace dont il a besoin sur le datastore et grandissant au fur et à mesure.
+*Thin provisioning* means that only the actual size of the disk will be consumed on the datastore. The size will grow along with the content.
 
-On peut alors allouer un disque de 1To qui sera reconnu comme 1To par le système d'exploitation de la VM, mais n'occupera sur le datastore que l'espace occupé par le *guest OS* (par exemple 20Go). 
+For example, a 1TB disk can be allocated that will be recognised as 1TB by the VM operating system, but it will take up only the 20GB of space on the datastore the *guest OS* occupies.
 
-Ce qui veut dire qu'on pourrait allouer sur un datastore de 1.2To une capacité de 50 To (50 VM de 1To alloué) mais n'occuper que 1To (20Go occupé / VM dans notre exemple).
+One could allocate 50 TB (50 1TB VMs allocated) on a 1.2TB datastore, but only occupy 1TB (20GB occupied / VM in our example).
 
 > [!warning]
 >
-> Il est important dans cette situation de maîtriser la consommation d'écriture de ces VMs, afin de ne pas augmenter de manière conséquente l'occupation des différents disques des VMs et ainsi remplir le datastore. 
-> Le datastore rempli empêchera toute nouvelle écriture et pourra potentiellement provoquer l'arrêt des VMs.
+It is important in this situation to control the write consumption of these VMs, so as not to significantly increase the occupancy of the different disks of the VMs and thus fill the datastore.
+> The full datastore will prevent any new writing and may potentially cause the VMs to stop.
 >
 
-On ne peut pas réclamer l'espace qui a été occupé. 
+It is not possible to reclaim the occupied space.
 
-Exemple : si on occupe 40 Go sur un disk thin de 100Go et que l'on supprime 20Go de données dans la VM, l'espace occupé sur le datastore sera toujours de 40Go et l'espace alloué de 100Go.
+Example: If you occupy 40GB on a 100GB thin disk and delete 20GB of data in the VM, the space on the datastore will still be 40GB and the allocated space still 100GB.
 
 
 ### Thick Provision Eager Zeroed
 
-Le *Thick provisioning Eager zero* est un type de format de disque occupant tout l'espace alloué sur le datastore. 
+This type of disk will occupy all the allocated space on the datastore.
 
-Une VM de 100Go alloués en *thick* occupera 100Go d'espace sur le datastore.
+A 100GB *thick* VM will occupy 100GB of datastore space.
 
-Le disque de la VM est rempli de zéro à la création du disk sur le volume VMFS.
+The VM disk is zeroed out (filled with zeros) when the disk is created on the VMFS volume.
 
 ### Thick Provision Lazy Zeroed
 
-Le *Thick provisioning Lazy zero* est un type de format de disque occupant tout l'espace alloué sur le datastore.
+This type of disk will occupy all the allocated space on the datastore.
 
-Une VM de 100Go alloués en *thick*  occupera 100Go d'espace sur le datastore.
+A 100GB *thick* VM will occupy 100GB of datastore space.
 
-L'espace alloué est réservé au disque de la VM, mais les zéro sont écris au moment où la VM a besoin de l'espace disque.
+The allocated space is reserved for the VM disk, but the zeros are written when the VM needs the disk space.
 
 ### Example
 
-Exemple pour des VMs de 100Go avec un *Guest OS* de 40Go :
+Example summary for 100GB VMs with 40GB *guest OS*:
 
 
-|Type de disk|Espace alloué|Block zeroed|Espace occupé|
+|Disk type|Space allocated|Block zeroed|Space occupied|
 |---|---|---|---|
-|Eager Zero|À la création de VM|À la création de VM|100Go|
-|Lazy Zero|À la création de VM|Quand le block est écrit la première fois|100Go|
-|Thin|Quand le block est écrit la première fois|Quand le block est écrit la première fois|40Go|
+|Eager Zero|At VM creation|At VM creation|100GB|
+|Lazy Zero|At VM creation|When the block is first written|100GB|
+|Thin|When the block is first written|When the block is first written|40GB|
 
 ### OVHcloud disk types
 
-Sur le stockage de type datastore d'une infrastructure Private Cloud, seul le *Thin provisioning* est disponible.
+On the datastore storage of a Hosted Private Cloud infrastructure, only *Thin provisioning* is available.
 
-Sur le stockage vSan, les 3 types de formats sont possibles.
+On the vSan storage, all 3 types of disk are possible.
 
 ## Go further
 
