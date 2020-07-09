@@ -26,9 +26,9 @@ For example, a 1TB disk can be allocated that will be recognised as 1TB by the V
 One could allocate 50 TB (50 1TB VMs allocated) on a 1.2TB datastore, but only occupy 1TB (20GB occupied / VM in our example).
 
 > [!warning]
->
-It is important in this situation to control the write consumption of these VMs, so as not to significantly increase the occupancy of the different disks of the VMs and thus fill the datastore.
-> The full datastore will prevent any new writing and may potentially cause the VMs to stop.
+>It is important in this situation to control the write consumption of these VMs, so as not to significantly increase the occupancy of the different disks of the VMs and thus fill the datastore.
+> 
+>The full datastore will prevent any new writing and may potentially cause the VMs to stop.
 >
 
 It is not possible to reclaim the occupied space.
