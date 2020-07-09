@@ -5,7 +5,7 @@ excerpt: 'Find out how to renew your services via the OVHcloud API'
 section: 'Managing the renewal of services'
 ---
 
-**Last updated 5th May 2020**
+**Last updated 4th July 2020**
 
 
 ## Objective
@@ -16,12 +16,12 @@ Natively, OVHcloud offers you the option of renewing your solution automatically
 
 ## Requirements
 
-- You need to be connected to the [OVHcloud API](https://api.ovh.com/console){.external}.
-- You need to have [created your login details for the OVHcloud API](https://api.ovh.com/g934.first_step_with_api).
+- You need to be connected to the [OVHcloud API](https://ca.api.ovh.com/console){.external}.
+- You need to have [created your login details for the OVHcloud API](https://ca.api.ovh.com/g934.first_step_with_api).
 
 ## Instructions
 
-To use the [renewal API](https://api.ovh.com/console/#/service/{serviceId}/renew#GET){.external}, you will need your `serviceId`. You can get this information via the `serviceInfos` API, for example:
+To use the [renewal API](https://ca.api.ovh.com/console/#/service/{serviceId}/renew#GET){.external}, you will need your `serviceId`. You can get this information via the `serviceInfos` API, for example:
 
 > [!api]
 >
@@ -145,12 +145,12 @@ Which will give the following response:
   "priceWithTax": {
     "value": 45.44,
     "text": "45.44 \u20ac",
-    "currencyCode": "EUR"
+    "currencyCode": "CAD"
   },
  "tax": {
     "value": 7.57,
     "text": "7.57 \u20ac",
-    "currencyCode": "EUR"
+    "currencyCode": "CAD"
   },
   "pdfUrl": "https://www.ovh.com/cgi-bin/order/displayOrder.cgi?orderId=123456789&orderPassword=aBcD",
   "orderId": 123456789,
@@ -158,7 +158,7 @@ Which will give the following response:
   "priceWithoutTax": {
     "value": 37.87,
     "text": "37.87 \u20ac",
-    "currencyCode": "EUR"
+    "currencyCode": "CAD"
   },
  "retractionDate": null
 }
