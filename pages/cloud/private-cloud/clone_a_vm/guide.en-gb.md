@@ -1,7 +1,7 @@
 ---
-title: Clone a VM
+title: Cloning a VM
 slug: clone-a-vm
-excerpt: Learn how to clone an existing VM via vSphere
+excerpt: Learn how to clone an existing virtual machine in vSphere
 section: Maintenance and monitoring
 order: 07
 ---
@@ -12,64 +12,65 @@ order: 07
 
 Cloning a VM creates a copy of the source VM.
 
-**This guide explains how to clone a VM**
+**This guide explains how to clone a VM.**
 
 ## Requirements
 
 - a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
 - a user account with access to [vSphere](../login-vsphere-interface/) (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager))
-- a VM in your cluster.
+- a VM in your cluster
 
 ## Instructions
 
-### Clone a VM
+In your [vSphere interface](../login-vsphere-interface/), navigate to the `Hosts and Clusters` tab of your Private cloud.
 
-In your [vSphere interface](../login-vsphere-interface/), go in `Hosts and Clusters` tab of your Private cloud.
-
-Right-click on the VM to be cloned and click `Clone`{.action} then on `Clone to virtual machine...`{.action}.
+Right-click on the VM to be cloned and click on `Clone`{.action}, then `Clone to virtual machine...`{.action}.
 
 ![clone a VM](images/clonevm01.png){.thumbnail}
+
+## Select a name and folder
 
 Name this new VM and set its location in your tree.
 
 ![clone a VM](images/clonevm02.png){.thumbnail}
 
-### Select a resource
+### Select a compute resource
 
 Specify the cluster, host, vApp, or resource pool for this VM.
 
 ![clone a VM](images/clonevm03.png){.thumbnail}
 
-### Storage Choice
+### Select storage
 
 Set the storage location (disk space) for this VM. 
 
-The virtual disk format is on "Thin Provision", which means that a virtual disk will be created but will only use the actual disk space used on the storage, regardless of the disk space previously used on the source VM.
+The virtual disk type is on "Thin Provision", which means that a virtual disk will be created but will only use the actual disk space used on the storage, regardless of the disk space previously used on the source VM.
 
-More information about disk formats can be found in [this guide](../choosing-disk-type/){.external-link}.
+More information about disk types can be found in [this guide](../choosing-disk-type/){.external-link}.
 
-You will be able to choose, via the `VM Storage Policy' line, the default storage policy if you have datastores, or a custom policy if you have [vSAN hosts](../vmware-vsan/){.external-link}, or the [VM encryption](../vm-encrypt/){.external-link} option.
+You will be able to choose, via the `VM Storage Policy` row, the default storage policy if you have datastores, or a custom policy if you have [vSAN hosts](../vmware-vsan/){.external-link}, or the [VM encryption](../vm-encrypt/){.external-link} option.
 
-![Clone a VM](images/clonevm04.png){.thumbnail}
+![clone a VM](images/clonevm04.png){.thumbnail}
 
-### System configuration
+### Select clone options
 
-This step allows you to set the network configuration to apply to this VM. You have two choices:
+This step allows you to set the network configuration to apply to this VM.
 
-- If you do not check anything, this will not change the network configuration of the new VM compared to the source;
+- If you do not check anything, this will not change the network configuration of the new VM compared to the source.
 
 - `Customize the virtual machine's hardware`{.action}: This option allows you to specify the new configurations you want to implement on this new VM.
 
-![Clone a VM](images/clonevm05.png){.thumbnail}
+![clone a VM](images/clonevm05.png){.thumbnail}
 
 > [!warning]
 >
-> If you did not customize the virtual machine, it is necessary to change the clone configuration before starting it, in order to avoid an IP/MAC conflict. 
+> If you did not customise the virtual machine, it is necessary to change the clone configuration before starting it, in order to avoid an IP/MAC conflict. 
 >
 > In this case, you simply need to uncheck the network adapter in the virtual machine settings once it has been cloned, just before starting it.
 >
-> ![Clone a VM](images/clonevm06.png){.thumbnail}
->
+
+![clone a VM](images/clonevm06.png){.thumbnail}
+
 
 ## Go further
 
