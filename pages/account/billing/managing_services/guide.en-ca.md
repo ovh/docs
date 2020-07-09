@@ -41,7 +41,7 @@ We recommend reading the following guides, and focusing on the operation you wis
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `My services`{.action}.
 
-![manageservices](images/manage-ovh-services-step1.png){.thumbnail}
+![manageservices](images/manage-ovh-services-step1_2020.png){.thumbnail}
 
 The page that appears will contain a table for managing your OVH solutions. In this table, you will see:
 
@@ -50,23 +50,20 @@ The page that appears will contain a table for managing your OVH solutions. In t
 - its renewal or expiry date
 - its renewal frequency
 
-Some services may be connected (e.g. a Web Hosting plan and a domain name). If this is the case, you can disconnect them from one another by clicking on the arrow button in the table.
-
-![manageservices](images/manage-ovh-services-step2.png){.thumbnail}
+![manageservices](images/manage-ovh-services-step2_2020.png){.thumbnail}
 
 If you have several solutions, the table may be more than one page long. You can use filters to:
 
 - show a particular service by entering its name in the search field above the table, in the right-hand corner
 - sort your services by several criteria, using the filters located at the top of the table 
-- change the number of services displayed per page, by selecting a number from the drop-down menu below the table
 
-![manageservices](images/manage-ovh-services-step3.png){.thumbnail}
+![manageservices](images/manage-ovh-services-step3_2020.png){.thumbnail}
 
 ### Manage your services via the “Manage my services” interface.
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `My services`{.action}.
 
-![manageservices](images/manage-ovh-services-step1.png){.thumbnail}
+![manageservices](images/manage-ovh-services-step1_2020.png){.thumbnail}
 
 The page that appears will contain a table for managing your OVH solutions. If applicable for the service in question, you can:
 
@@ -84,7 +81,7 @@ To cancel a service, click on the three dots to the right of it. Then click `Ter
 
 You can undo this action up to 24 hours before the expiry date by clicking again on the three dots, then `Undo termination`{.action}.
 
-![manageservices](images/manage-ovh-services-step4.png){.thumbnail}
+![manageservices](images/manage-ovh-services-step4_2020.png){.thumbnail}
 
 #### Delete a service immediately.
 
@@ -94,7 +91,7 @@ This action is only available for Web Hosting plans, and deletes the service imm
 
 To delete a service immediately, click on the three dots to the right of it, and click `Delete web hosting plan immediately`{.action}. Read the information that appears, then launch your request by pressing `confirm`{.action}. Follow the instructions you receive via email to complete the action.
 
-![manageservices](images/manage-ovh-services-step5.png){.thumbnail}
+![manageservices](images/manage-ovh-services-step5_2020.png){.thumbnail}
 
 ## Go further
 
