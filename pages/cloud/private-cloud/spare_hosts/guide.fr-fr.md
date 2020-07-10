@@ -7,7 +7,11 @@ section: Fonctionnalités OVH
 order: 04
 ---
 
-**Dernière mise à jour le 30/01/2019**
+**Dernière mise à jour le 07/07/2020**
+
+## Prérequis
+
+- Disposer d'une offre [Hosted Private cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 
 ## Objectifs
 
@@ -17,7 +21,7 @@ OVH garantit dans ses contrats le remplacement d'un hôte inaccessible en moins 
 
 ## Livraison d’un hôte de spare
 
-Si l’un de vos hôtes est victime d’une panne, afin d’assurer la continuité de service, nous vous livrons automatiquement un hôte de remplacement gratuit dans votre infrastructure en moins de 15 minutes. 
+Si l’un de vos hôtes est victime d’une panne, afin d’assurer la continuité de service, nous vous livrons automatiquement un hôte de remplacement gratuit dans votre infrastructure. 
 
 Dès que ce hôte est livré, vous recevez un email vous indiquant toutes les informations concernant cet hôte ainsi que son adresse IP vous permettant de le retrouver facilement dans votre interface vSphere.
 
