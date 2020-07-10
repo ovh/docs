@@ -6,7 +6,7 @@ section: Premiers pas
 order: 3
 ---
 
-**Dernière mise à jour le 14/11/2018**
+**Dernière mise à jour le 25/06/2020**
 
 ## Objectif
 
@@ -18,7 +18,7 @@ Ce système vous permettra d'accéder uniquement au dossier « upload-vpn » d
 
 ## Prérequis
 
-- Posséder un utilisateur actif créé depuis l’[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Posséder un utilisateur actif créé depuis l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
@@ -65,14 +65,14 @@ sftp> pcc-000714
 Utilisez la commande `put` pour exporter des fichiers de votre datastore vers votre poste local.
 
 ```sh
-sftp> put /home/ubuntu-16.04.3-server-amd64.iso
-/datastore/pcc-000714/ubuntu-16.04.3-server-amd64.iso  
+sftp> put /home/ubuntu-18.04-server-amd64.iso
+/datastore/pcc-000714/ubuntu-18.04-server-amd64.iso  
 ```
 
 Utilisez la commande `get` pour importer des fichiers de votre poste local vers votre datastore.
 
 ```sh
-sftp> get /datastore/pcc-00714/ubuntu-16.04.3-server-amd64.iso /home/
+sftp> get /datastore/pcc-00714/ubuntu-18.04-server-amd64.iso /home/
 ```
 
 La commande `exit` vous permet de fermer la connexion.
@@ -81,7 +81,7 @@ La commande `exit` vous permet de fermer la connexion.
 
 Dans votre interface vSphere, vous pourrez voir le contenu de ce que vous venez d’envoyer en parcourant votre datastore. Pour cela, cliquez sur le datastore souhaité dans le dossier « upload-vpn » :
 
-![Connexion SFTP via vSphere](images/connection_sftp_browse_datastore.png){.thumbnail}
+![Connexion SFTP via vSphere](images/sftpconnection.png){.thumbnail}
 
 ## Aller plus loin
 

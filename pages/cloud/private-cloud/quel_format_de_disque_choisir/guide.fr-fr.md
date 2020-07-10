@@ -7,17 +7,19 @@ section: Gestion des machines virtuelles
 order: 04
 ---
 
-**Dernière mise à jour le 28/01/2019**
+**Dernière mise à jour le 25/06/2020**
 
-## Objectifs
+## Objectif
 
 VMware propose 3 formats de disque pour les machines virtuelles.
 
 ** Ce guide explique les différences entre ces formats **
 
-## Thin provisioning
+## En pratique
 
-- Le *Thin provisioning* est un type de format de disque, faisant consommer uniquement l'espace dont il a besoin sur le datastore et grandi au fur et à mesure.
+### Thin provisioning
+
+Le *Thin provisioning* est un type de format de disque, faisant consommer uniquement l'espace dont il a besoin sur le datastore et grandissant au fur et à mesure.
 
 On peut alors allouer un disque de 1To qui sera reconnu comme 1To par le système d'exploitation de la VM, mais n'occupera sur le datastore que l'espace occupé par le *guest OS* (par exemple 20Go). 
 
@@ -25,41 +27,43 @@ Ce qui veut dire qu'on pourrait allouer sur un datastore de 1.2To une capacité 
 
 > [!warning]
 >
-> Il est important dans cette situation de maitriser la consommation d'écriture de ces VMs, afin de ne pas augmenter de manière conséquente les différents disques des VMs et ainsi remplir le datastore. 
-> Le datastore rempli empechera toute nouvelle écriture et pourra potentiellement provoquer l'arrêt des VMs.
+> Il est important dans cette situation de maîtriser la consommation d'écriture de ces VMs, afin de ne pas augmenter de manière conséquente l'occupation des différents disques des VMs et ainsi remplir le datastore. 
+> Le datastore rempli empêchera toute nouvelle écriture et pourra potentiellement provoquer l'arrêt des VMs.
 >
 
-- On ne peut pas réclamé l'espace qui a été occupé. Exemple : si on occupe 40 Go sur un disk thin de 100Go et que l'on supprime 20Go de données dans la VM, l'espace occupé sur le datastore sera toujours de 40Go et l'espace alloué de 100Go.
+On ne peut pas réclamer l'espace qui a été occupé. 
+
+Exemple : si on occupe 40 Go sur un disk thin de 100Go et que l'on supprime 20Go de données dans la VM, l'espace occupé sur le datastore sera toujours de 40Go et l'espace alloué de 100Go.
 
 
-## Thick provisioning Eager zero
+### Thick provisioning Eager zero
 
-- Le *Thick provisioning Eager zero* est un type de format de disque occupant sur le datastore tout l'espace alloué. 
+Le *Thick provisioning Eager zero* est un type de format de disque occupant tout l'espace alloué sur le datastore. 
 
-Une VM de 100Go en *thick* alloué occupera 100Go d'espace sur le datastore.
+Une VM de 100Go alloués en *thick* occupera 100Go d'espace sur le datastore.
 
-- Le disque de la VM est rempli de zéro à la création du disk sur le volume VMFS
+Le disque de la VM est rempli de zéro à la création du disk sur le volume VMFS.
 
-## Thick provisioning Lazy zero
+### Thick provisioning Lazy zero
 
-- Le *Thick provisioning Lazy zero* est un type de format de disque occupant sur le datastore tout l'espace alloué.
+Le *Thick provisioning Lazy zero* est un type de format de disque occupant tout l'espace alloué sur le datastore.
 
-Une VM de 100Go en *thick* alloué occupera 100Go d'espace sur le datastore.
+Une VM de 100Go alloués en *thick*  occupera 100Go d'espace sur le datastore.
 
-- L'espace alloué est réservé au disque de la VM, mais les zéro sont écris au moment où la VM a besoin de l'espace disque.
+L'espace alloué est réservé au disque de la VM, mais les zéro sont écris au moment où la VM a besoin de l'espace disque.
 
-## Exemple
+### Exemple
 
 Exemple pour des VMs de 100Go avec un *Guest OS* de 40Go :
 
 
 |Type de disk|Espace alloué|Block zeroed|Espace occupé|
 |---|---|---|---|
-|Eager Zero|A la création de VM|A la création de VM|100Go|
-|Lazy Zero|A la création de VM|Quand le block est écrit la première fois|100Go|
+|Eager Zero|À la création de VM|À la création de VM|100Go|
+|Lazy Zero|À la création de VM|Quand le block est écrit la première fois|100Go|
 |Thin|Quand le block est écrit la première fois|Quand le block est écrit la première fois|40Go|
 
-## Format de disque chez OVH
+### Format de disque chez OVHcloud
 
 Sur le stockage de type datastore d'une infrastructure Private Cloud, seul le *Thin provisioning* est disponible.
 
