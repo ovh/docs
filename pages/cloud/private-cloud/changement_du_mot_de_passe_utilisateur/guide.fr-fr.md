@@ -59,6 +59,6 @@ Renseignez alors un nouveau mot de passe et confirmez-le.
 
 [Changer les droits d'un utilisateur](../changer-les-droits-d-un-utilisateur/)
 
-[Définir et gérer le mot de passe de votre compte OVHcloud](../customer/gerer-son-mot-de-passe/)
+[Définir et gérer le mot de passe de votre compte OVHcloud](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
