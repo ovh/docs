@@ -1,7 +1,7 @@
 ---
 title: VMware Storage vMotion
 slug: vmware_storage_vmotion
-excerpt: Find out how to move your virtual machine to a different host (hot migration)
+excerpt: Find out how to move your virtual machine to a different datastore (hot migration)
 legacy_guide_number: '7767010'
 section: VMware vSphere features
 order: 5
@@ -25,7 +25,7 @@ To move a virtual machine's files to another datastore, right-click on the virtu
 
 ### Choosing a migration type
 
-The menu offers several options for vMotion. In this example, only the VM storage is to be migrated to another datastore. Therefore, select "Change storage only".
+The menu offers several options for vMotion. In this example, the VM storage is to be migrated to another datastore. Therefore, select "Change storage only".
 
 The option "Change compute resource only" allows to migrate the VM to another host. It is explained in [this guide](../vmotion-new/).
 
@@ -33,7 +33,7 @@ The option "Change compute resource only" allows to migrate the VM to another ho
 
 ### Choosing a datastore
 
-Choisissez vers quel stockage migrer les données.
+Choose which storage to migrate the data to.
 
 You can also change the storage policy during this operation.
 
