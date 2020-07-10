@@ -1,23 +1,23 @@
 ---
-title: Comment éviter le disque en lecture seule sous linux ?
+title: Comment éviter le passage en lecture seule du disque de votre VM sous Linux
 slug: comment-eviter-le-disk-en-read-only-sous-linux
-excerpt: Eviter le passage en lecture seule du disque de votre VM linux
+excerpt: Eviter le passage en lecture seule du disque de votre VM Linux
 section: Gestion des machines virtuelles
 order: 10
 ---
 
-**Dernière mise à jour le 29/01/2019**
+**Dernière mise à jour le 25/06/2020**
 
 ## Objectif
 
-Il arrive que, suite à un évènement lié au stockage, certaines partitions d'une machine linux soient en lecture seule.
+Il arrive que, suite à un évènement lié au stockage, certaines partitions d'une machine Linux soient en lecture seule.
 
 **Ce guide explique comment corriger cet état et réduire ce risque**
 
 
 ## En pratique
 
-Lorsque des partitions sont en lecture seule, plus aucune écriture n'est alors possible sur le système de fichier.
+Lorsque des partitions sont en lecture seule, plus aucune écriture n'est alors possible sur le système de fichiers.
 
 ```sh
 >     $ touch test
@@ -25,7 +25,7 @@ Lorsque des partitions sont en lecture seule, plus aucune écriture n'est alors 
 >     touch: cannot touch 'test': Read-only file system
 ```
 
-Il est possible de confirmer l'état du système de fichier par la commande `mount`
+Il est possible de confirmer l'état du système de fichiers par la commande `mount`
 
 ```sh
 > $ mount
@@ -42,9 +42,9 @@ Il est possible de confirmer l'état du système de fichier par la commande `mou
 
 Pour remonter la `/` en *lecture-ecriture*, il faut redémarrer la machine virtuelle.
 
-## Solution de contournement
+### Solution de contournement
 
-Par default sous linux le *timeout* des périphériques scsi est à 30 secondes.
+Par defaut sous Linux, le *timeout* des périphériques SCSI est à 30 secondes.
 
 Les VMware Tools montent cette durée à 180 secondes.
 
@@ -54,7 +54,7 @@ Il est recommandé d'augmenter cette durée à 3600 secondes. Cette commande per
 >     $ echo 3600 > /sys/block/`basename /dev/sda`/device/timeout
 ```
 
-Pour que cette valeur soit prise au démarrage de la machine
+Pour que cette valeur soit prise au démarrage de la machine :
 
 ```sh
 >   $ nano /etc/rc.local 
@@ -67,7 +67,7 @@ Pour que cette valeur soit prise au démarrage de la machine
 	#
 	# Make sure that the script will "exit 0" on success or any other value on error.
 	#
-	# In order toenable or disable this script just change the execution
+	# In order to enable or disable this script just change the execution
 	# bits.
 	#
 	# By default this script does nothing.

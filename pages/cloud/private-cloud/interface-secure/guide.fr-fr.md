@@ -6,122 +6,118 @@ section: Services et options OVH
 order: 04
 ---
 
-**Dernière mise à jour le 25 janvier 2019**
+**Dernière mise à jour le 30 juin 2020**
 
-## Objectifs
+## Objectif
 
-Valider les opérations sensibles (changement de mot de passe, ajout d'utilisateur...) réalisées par des utilisateurs ou des tiers sur votre cloud privé HDS ou PCIDSS au travers de l'interface sécurisée.
+OVHcloud vous met à disposition une interface sécurisée pour valider les opérations sensibles (changement de mot de passe, ajout d'utilisateur...) réalisées par des utilisateurs ou des tiers sur votre Private Cloud HDS ou PCI-DSS.
 
 **Ce guide explique le fonctionnement de l'interface pour valider ces opérations.**
 
 ## Prérequis
 
-- Disposer d'une infrastructure avec l'option *security advanced* (inclus dans les offres PCI-DSS et HDS).Ce droit permet la validation.
-
+- Disposer d'une infrastructure avec l'option **advanced security** (inclus dans les offres [PCI-DSS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) et [HDS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/hds/)). Ce droit permet la validation.
 - Avoir accès à l'interface sécurisée du PCC, exemple : https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ (attention à ne pas oublier le “/” final de l’adresse).
 
+## En pratique
 
-## Utilisateurs
+La validation des opérations « sensibles » à partir de l'interface sécurisée n'est possible que pour les utilisateurs disposant de l'autorisation **token validator**. L'administrateur dispose déjà de ce privilège, car il est nécessaire d'activer l'option **advanced security**. 
 
-Dans une infrastructure HDS ou PCI-DSS, il est possible de donner un droit *token validator* à vos utilisateurs.
-Ce droit permet la reception de SMS contenant des tokens servant à la validation d'opérations sensibles.
+Notez qu'il est également possible d'accorder cette autorisation à d'autres utilisateurs via l'espace client OVHcloud. Reportez-vous si nécessaire à notre [Présentation de l’espace client Private Cloud OVHcloud](../manager-ovh-private-cloud/).
 
+A partir de l'interface sécurisée, vous pouvez effectuer trois opérations. Reportez-vous à la section appropriée de ce guide, selon l'opération à effectuer :
 
-Lors de l'activation de l'option, vous devez au minimum avoir l'utilisateur "admin" avec ce droit. 
-L'ajout de ce droit est possible sur les autres utilisateurs de votre choix dans [l'espace client OVH](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#utilisateurs).
+- [Valider une opération avec un token](./#valider-une-operation-avec-un-jeton)
+- [Modifier le mot de passe de l'utilisateur](./#modifier-le-mot-de-passe-de-lutilisateur)
+- [Réinitialiser un mot de passe](./#reinitialiser-un-mot-de-passe)
 
-## Validation des tokens
+### Valider une opération avec un token
 
-Quand un token est reçu par SMS, celui-ci doit être renseigné dans l'interface sécurisée afin que la tâche en attente puisse s’exécuter.
+Lorsqu'un token est reçu par SMS, il doit être entré dans l'interface sécurisée pour valider la tâche en attente.
 
 > [!warning]
 >
-> Attention, le token fourni n’est valable que 15 minutes. Sans validation de votre part en moins de 15 minutes, la tâche est annulée.
-> 
-> Elle vous sera à nouveau proposée par la suite (dans les cas de maintenance) ou vous devrez la relancer (dans le cas où cela fait suite à une action de votre part). 
-> 
+> Le token généré n'est valide que pour 15 minutes. Sans votre approbation, la tâche sera annulée une fois ce temps écoulé.
+>
+> Il sera ensuite de nouveau généré (dans le cas d'une maintenance), ou vous devrez le régénérer (s'il suit une action de votre part).
+>
 
+Voici un exemple de SMS envoyé:
 
-Voici un exemple de SMS que vous pouvez recevoir : 
+![Premier SMS](images/SMS1.png){.thumbnail}
 
-![First SMS](images/SMS1.png){.thumbnail}
+Ce message contient:
 
-Si nous décrivons ce SMS, nous retrouvons : 
+- l'utilisateur disposant de l'autorisation **token validator** qui a reçu le SMS. Cela peut vous aider à gérer les tokens à valider si vous avez entré votre numéro de téléphone dans plusieurs comptes utilisateurs.
+- le nom de l'opération qui nécessite une validation
+- l'ID de l'opération
+- le token de validation
+- un lien permettant de valider l'opération (notez que si votre téléphone n'est pas connecté à un réseau dont [l'adresse IP est autorisée](../manager-ovh-private-cloud/#securite), la page n'apparaîtra pas).
 
-- L'utilisateur avec le droit *token validator* ayant reçu le SMS. Si vous avez renseigné votre numéro de téléphone sur plusieurs utilisateurs, cela peut vous aider à vous retrouver sur les token à valider
+Pour valider l'opération, connectez-vous via le lien affiché dans le message. Accédez ensuite à la section `Operation calidation`{.action}.
 
-- Le nom de l'opération et son ID nécessitant une validation.
+![Validation de l'opération](images/operationValidation.png){.thumbnail}
 
-- L'opération ID
+Une fenêtre de connexion s'ouvre, dans laquelle seul un utilisateur disposant de l'autorisation **token validator** peut exécuter une validation.
 
-- Le token
+Chargez l'opération en entrant son ID dans le champ « ID d'opération » puis en cliquant sur le bouton `Charger l'opération`{.action}. Entrez ensuite le token que vous venez de recevoir par SMS et cliquez sur `Confirm operation`{.action}.
 
-- Le lien de validation. Attention, si votre téléphone n'est pas connecté à un réseau dont l'[IP est autorisée](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#securite), la page de validation ne s'affichera pas.
+![Jeton d'opération](images/operationIdAndToken.png){.thumbnail}
 
-
-Pour valider cette opération rendez vous dans la partie `Opertation Validation`{.action} :
-
-![Operation Validation](images/operationValidation.png){.thumbnail}
-
-Une fenêtre de connexion s'ouvrira, dans laquelle seul un utilisateur avec le droit *token validator* pourra s'authentifier.
-
-Chargez l'opération en renseignant l'ID de l'opération dans le champ prévu a cet effet, puis cliquez sur le bouton `Load operation`{.action}, puis renseignez le token que vous venez de recevoir.
-
-![Operation token](images/operationIdAndToken.png){.thumbnail}
-
-Les utilisateurs avec le droit *token validator* recevront un second SMS les informant de la validation de l'opération, et de l'utilisateur ayant effectué cette validation.
+Un SMS confirmant la validation de l'opération sera ensuite envoyé aux utilisateurs disposant de l'autorisation **token validator**. Voici un exemple:
 
 ![Second SMS](images/SMS2.png){.thumbnail}
 
-Pour ce second SMS, nous retrouvons : 
+Comme vous le verrez, ce message contient:
 
-- L'utilisateur avec le droit *token validator* ayant reçu le SMS de confirmation.
+- l'utilisateur disposant de l'autorisation **token validator** qui a reçu le SMS
+- le nom de l'opération et son ID
+- l'utilisateur disposant de l'autorisation **token validator** qui a confirmé la validation
 
-- Le nom et l'ID (entre parenthèse) de l'opération venant d'être validée.
+### Modifier le mot de passe de l'utilisateur
 
-- L'utilisateur avec le droit *token validator* ayant validé l'opération.
+Tout utilisateur peut modifier son mot de passe, même sans l'autorisation **token validator**. Toutefois, cette personne doit posséder son mot de passe actuel pour effectuer la manipulation.
 
+> [!primary]
+>
+> Si l'utilisateur n'a plus son mot de passe, il doit demander à un autre utilisateur disposant de l'autorisation **token validator** d'effectuer la modification pour lui, via la procédure [password reset](./#reinitialiser-un-mot-de-passe).
+> 
 
-## Changement de mot de passe
+Pour modifier le mot de passe d'un utilisateur, connectez-vous à l'interface sécurisée (`https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/`) et cliquez sur le bouton `Modifier le mot de passe`{.action}.
 
-Pour changer le mot de passe d'un utilisateur sans le droit *token validator* ou d'un utilisateur avec le droit *token validator*, n'ayant pas perdu son mot de passe, vous devez vous rendre sur l'interface sécurisée et cliquer sur le bouton `Change Password`{.action} : 
+![Modifier le mot de passe](images/changePassword.png){.thumbnail}
 
-![Change Password](images/changePassword.png){.thumbnail}
+Dans la page qui apparaît, sélectionnez l'utilisateur concerné, puis définissez son nouveau mot de passe.
 
-Choisir l'utilisateur et définir le nouveau mot de passe : 
+Un token sera ensuite envoyé aux utilisateurs avec l'autorisation [token validator](./#valider-une-operation-avec-un-jeton), afin qu'ils puissent **confirmer l'opération**.
 
-![Define Password](images/defineNewPassword.png){.thumbnail}
+![Définir le mot de passe](images/defineNewPassword.png){.thumbnail}
 
-Un token sera envoyé aux utilisateurs avec le droit *token validator* pour valider l'opération.
+### Réinitialiser un mot de passe
 
+Cette procédure n'est disponible que pour les utilisateurs disposant de l'autorisation **token validator**.
 
-## Mot de passe perdu
+> [!primary]
+>
+> Si un utilisateur qui ne dispose pas de l'autorisation **token validator** perd son mot de passe, il devra demander à un utilisateur disposant de ce privilège de le réinitialiser.
+> 
 
-En cas de perte de mot de passe, pour un utilisateur avec le droit *token validator*, il est possible d'effectuer une réinitialisation.
+Pour réinitialiser le mot de passe d'un utilisateur, connectez-vous à l'interface sécurisée (`https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/`) et cliquez sur le bouton `Password lost`{.action}.
 
-Pour cela rendez vous sur l'interface sécurisée et cliquer sur le bouton `Password lost`{.action} :
+![Mot de passe perdu](images/passwordLost.png){.thumbnail}
 
-![Password lost](images/passwordLost.png){.thumbnail}
+Un message indique que vous devez être en mesure de recevoir des messages SMS pour continuer. Si tel est le cas, renseignez les informations demandées (y compris l'utilisateur nécessitant une réinitialisation) et cliquez sur `Next step`{.action}.
 
-Un message vous avertira que cette procédure ne peut être faite que par un utilisateur pouvant recevoir des SMS.
-Si tel est le cas, poursuivez en démarrant la procédure.
+![Informations utilisateur](images/infoUser.png){.thumbnail}
 
-Remplissez les champs concernant votre utilisateur : 
+Entrez les deux jetons reçus par SMS et e-mail, puis définissez le nouveau mot de passe.
 
-![Informations User](images/infoUser.png){.thumbnail}
+> [!primary]
+>
+> Si la réinitialisation est effectuée pour un autre utilisateur, la personne qui a exécuté la procédure doit fournir le nouveau mot de passe. Nous vous recommandons ensuite vivement de [modifier ce mot de passe](./#modifier-le-mot-de-passe-de-lutilisateur) dès que possible.
+> 
 
-Une fois ces informations renseignées, rendez vous à l'étape suivante, et remplissez les champs avec les tokens que vous venez de recevoir par SMS et par mail, ainsi que votre nouveau mot de passe.
-
-## Cas particulier
-
-Un cas particulier peut arriver sur les infrastructures HDS / PCI-DSS : 
-
-Si un utilisateur n'ayant pas le droit *token validator* perd son mot de passe.
-
-Dans ce cas, un utilisateur avec le droit *token validator* devra faire le changement. 
-
-*Le mot de passe sera transmis en clair entre les utilisateurs, il est fortement recommandé de le modifier par la suite*
-
+![Jeton et mot de passe](images/tokenAndPassword.png){.thumbnail}
 
 ## Aller plus loin
 
