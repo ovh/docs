@@ -29,27 +29,25 @@ The menu offers several options for vMotion. In this example, the VM is to be mi
 
 The option "Change storage only" allows to migrate the VM to another datastore. It is explained in [this guide](../vmware_storage_vmotion/).
 
-L'option « Modifier uniquement le stockage » permet de migrer la machine virtuelle sur une autre banque de données. Cette opération appelé **Storage vMotion** est décrit dans [ce guide](../vmware-storage-vmotion-new/).
-
 ![choose vMotion type](images/Vmotion2.png){.thumbnail}
 
 ### Choosing a resource
 
-Choisir vers quel ressource migrer la machine virtuelle. Il est possible de migrer la machine virtuelle sur un hôte, un cluster, un ressourcePool ou une Vapp.
+Select a resource to which the virtual machine will be migrated. The VM can be migrated to a host, cluster, resource pool, or Vapp.
 
-Dans notre exemple, nous allons la migrer sur l'hôte .50.
+In this example, the host with the addresss ending in *.50* is chosen.
 
 ![choose resource](images/Vmotion3.png){.thumbnail}
 
 ### Choosing the network
 
-Lors de cette étape, il vous est possible de choisir le réseau affecté à la machine virtuelle. Dans notre exemple, nous laissons la machine virtuelle sur son VLAN d'origine.
+In this step, you can choose the network assigned to the VM. In this example, the VM is left on its original VLAN.
 
 ![choose network](images/Vmotion4.png){.thumbnail}
 
 ### Choosing the priority
 
-Nous vous recommandons d'effectuer la migration en priorité haute. Pour ce faire, sélectionnez « Planifier vMotion avec une priorité élevée ».
+It is recommended to perform the migration as a high priority. To do this, select "Schedule vMotion with high priority".
 
 ![choose priority](images/Vmotion5.png){.thumbnail}
 
