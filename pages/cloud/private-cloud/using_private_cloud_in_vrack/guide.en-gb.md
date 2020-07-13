@@ -11,34 +11,34 @@ order: 2
 
 ## Objective
 
-Le vRack, c’est la possibilité de connecter différents services cloud de OVHcloud entre eux, au sein d’un ou plusieurs réseaux privés sécurisés (VLAN).
+The OVHcloud vRack feature makes it possible to connect different cloud services with each other, within one or more secure private networks (VLANs).
 
-**Ce guide explique comment le mettre en place**
+**This guide explains how to set this up with a Hosted Private Cloud infrastructure.**
 
 ## Instructions
 
 ### OVHcloud Control Panel
 
-Lors de la livraison de votre service [Hosted Private Cloud], la partie *datacenter* est déjà à l'intérieur d'un vRack.
+After your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) is delivered, it will be displayed in the section `vRack` (under "Server" in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)) and the "datacenter" will be automatically included into a vRack.
 
 ![Data centre](images/vRackDatacenter.PNG){.thumbnail}
 
-Il est possible de déplacer le *datacenter* de votre Private Cloud dans un autre vRack en cliquant sur le bouton `Déplacer`{.action}
+You can move the "datacenter" of your Private Cloud to another vRack by selecting it and clicking on the `Move`{.action} button.
 
-### vSphere Client
+### vSphere client
 
-Dans le client vSphere, vous pouvez retrouver les *VLANs* compatibles vRack dans le switch virtuel distribué (vds), lui-même situé dans le dossier **vrack**.
+In the vSphere client, you can find vRack-capable VLANs in the `Networks` section, located in the *vrack* folder.
 
 > [!success]
 >
-> Par défaut, OVHcloud vous livre une infrastructure avec 11 VLANs (VLAN10 à VLAN20).
+> By default, OVHcloud delivers an infrastructure with 11 VLANs included (VLAN10 to VLAN20).
 >
 
 ![vlan](images/vRackVsphere.png){.thumbnail}
 
-Il est possible de modifier leurs paramètres, ou d'en créer de nouveau en suivant le guide de [création de VxLAN](../creation-vlan/).
+You can change their settings or create them again by following [this guide](../creation-vlan-vxlan/).
 
-Vous pourrez ensuite assigner ces *portgroup* sur les interfaces réseaux de vos machines virtuelles.
+You can then assign these *Distributed Port Groups* to the network interfaces of your virtual machines.
 
 ## Go further
 
