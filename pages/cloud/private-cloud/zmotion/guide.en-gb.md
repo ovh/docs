@@ -11,28 +11,28 @@ order: 8
 
 ## Objective
 
-ZMotion est une technologie OVHcloud qui transfère les données à travers un réseau privé client entre 2 baies de stockage physiques.
+OVHcloud Zmotion is a technology that transfers data across a customer private network between two physical storage arrays.
 
 ## Instructions
 
 ### Description
 
-Nos banques de données (datastores) exécutent NFS sur ZFS dans une baie de stockage maison appelée "Leclerc". Afin d'obtenir une meilleure flexibilité dans la gestion de notre matériel, nous avons développé un moyen de déplacer à chaud le stock de données ZFS d'un périphérique matériel à un autre.
+Our datastores run NFS on ZFS in a home storage array called *Leclerc*. In order to gain greater flexibility in the management of our hardware, we have developed a way to hot-migrate the stock of ZFS data from one hardware device to another.
 
-Cette technologie est appelée "ZMotion", pour "ZFS Motion".
+This is called "Zmotion" (for "ZFS motion").
 
-Le but de ZMotion est de libérer une banque de données (datastore) sans aucune action de vCenter (pas de vMotion, pas de clonage...) et sans aucune action de notre client.
+The goal of Zmotion is to free a datastore without any vCenter action necessary (no vMotion, no cloning...) and without any action from the customer's side.
 
-![VMotion](images/zmotionPrez.png){.thumbnail}
+![zmotion](images/zmotionPrez.png){.thumbnail}
 
-### Etapes
+### Steps in detail
 
-- Un datastore gratuit, sur un autre *Leclerc*, est réservé dans notre datacenter pour pousser toutes les données.
-- Nos propriétés réseau sont définies sur le datastore de destination
-- Le transfert de données commence dans un réseau privé dédié au client
-- Lorsque toutes les données sont transférées, le service NFS passe d'un tableau à un autre.
+- A free datastore, on another *Leclerc*, is reserved in our data centre to push all the data.
+- Our network properties are set on the destination datastore.
+- Data transfer begins in a private network dedicated to the client.
+- When all data is transferred, the NFS service moves from one table to another.
 
-Du point de vue de VMware, il n'y a pas de temps d'arrêt.
+From VMware's perspective, there is no downtime.
 
 ## Go further
 
