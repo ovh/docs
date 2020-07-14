@@ -16,15 +16,15 @@ Veeam Cloud Connect is an off-site backup solution. It provides an easy and secu
 ## Requirements
 
 - a subscription to the [Veeam Cloud Connect](https://www.ovh.co.uk/storage-solutions/veeam-cloud-connect/) solution
-
+- a compatible service (OVHcloud or external)
 
 ### Compatible services
 
-The main advantage of Veeam Cloud Connect, beyond its simplicity, is that it works no matter where your operating infrastructure is hosted. It can be hosted at OVHcloud, another provider, or at your own facilities.
+The main advantage of Veeam Cloud Connect, beyond its simplicity, is that it works regardless of where your operating infrastructure is hosted. It can be hosted at OVHcloud, another provider, or at your own facilities.
 
 OVHcloud services that are compatible with Veeam Cloud Connect:
 
-- [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
 - Virtual machines running on [dedicated servers](https://www.ovh.co.uk/dedicated_servers/), administrated with Microsoft Hyper-V or VMware ESXi
 
 
@@ -37,13 +37,13 @@ Order your solution on the [website](https://www.ovh.co.uk/storage-solutions/vee
 - the IP address and name of your service
 - username and password
 
-### OVHcloud Control Panel
+### Managing the service in the OVHcloud Control Panel
 
 In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), switch to the "Server" section and open the menu `Platforms and services`{.action} in the left-hand navigation bar.
 
 ![veeam cloud connect](images/veeam-cloud-connect-manager-start.png){.thumbnail}
 
-Click on your new service to view the `Home` page, where some general information is displayed.
+Click on your new service to view the `Home` tab, where some general information is displayed.
 
 ![veeam cloud connect](images/veeam-cloud-connect-manager.png){.thumbnail}
 
@@ -60,7 +60,7 @@ Define the new quota and click on `Edit`{.action} to confirm.
 ![veeam cloud connect](images/veeam-cloud-connect-manager-modif-espace-ok.png){.thumbnail}
 
 
-### Setting up the service 
+### Setting up your solution with the Veeam console
 
 Veeam Cloud Connect and the required Veeam backup server are managed from the Veeam Backup & Replication console, available from the official [Veeam website](https://www.veeam.com).
 
@@ -89,7 +89,7 @@ Your service will be added to the list in the console.
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-finish.png){.thumbnail}
 
 
-### Configuring backup tasks
+#### Configuring backup tasks
 
 In the left-hand menu, switch to the section "BACKUP & REPLICATION". Your backup tasks ("Jobs") will be listed here.
 
@@ -130,7 +130,7 @@ If the appropriate scheduling conditions are met, the new task will start to run
 ![veeam cloud connect](images/veeam-cloud-connect-replicat-cloud.png){.thumbnail}
 
 
-### Restoring backups
+#### Restoring backups
 
 In order to restore a backup, right-click on the task in the table. You can choose to restore the entire virtual machine, or certain files.
 
