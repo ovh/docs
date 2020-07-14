@@ -9,7 +9,7 @@ section: Veeam
 
 ## Objective
 
-Veeam Cloud Connect is a solution that provides an off-site backup without having to manage an infrastructure on a second site. The idea of Veeam Cloud Connect is to provide an easy and secure way to make backups and restore your data from the cloud.
+Veeam Cloud Connect is an off-site backup solution. It provides an easy and secure way to manage cloud backups without having to manage an infrastructure on a second site.
 
 **This guide explains the setup and usage of Veeam Cloud Connect.**
 
@@ -17,180 +17,143 @@ Veeam Cloud Connect is a solution that provides an off-site backup without havin
 
 - a subscription to the [Veeam Cloud Connect](https://www.ovh.co.uk/storage-solutions/veeam-cloud-connect/) solution
 
+
+### Compatible services
+
+The main advantage of Veeam Cloud Connect, beyond its simplicity, is that it works no matter where your operating infrastructure is hosted. It can be hosted at OVHcloud, another provider, or at your own facilities.
+
+OVHcloud services that are compatible with Veeam Cloud Connect:
+
+- [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- Virtual machines running on [dedicated servers](https://www.ovh.co.uk/dedicated_servers/), administrated with Microsoft Hyper-V or VMware ESXi
+
+
 ## Instructions
 
-### Produits compatibles
+### Subscribing to the Veeam Cloud Connect solution
 
-Le principal intérêt de Veeam Cloud Connect, en dehors de sa simplicité, est que cette solution fonctionne peu importe où est hébergée votre infrastructure d'exploitation. Celle-ci peut être hébergée chez OVH (un Private Cloud, ou encore un serveur dédié sur lequel vous réalisez vous-même de la virtualisation avec un hyperviseur VMware ou Microsoft), chez un autre fournisseur, ou encore dans vos locaux.
+Order your solution on the [website](https://www.ovh.co.uk/storage-solutions/veeam-cloud-connect/). Once the payment is processed, you will receive a confirmation email, containing:
 
-Liste des produits OVH compatibles :
+- the IP address and name of your service
+- username and password
 
-- [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}
-- Machines virtuelles hébergées sur nos [Serveurs dédiés](https://www.ovh.com/fr/serveurs_dedies/){.external} et administrées via Microsoft Hyper-V ou VMware ESXi.
+### OVHcloud Control Panel
 
-
-### Commande de l'offre
-
-L'offre peut être commandée depuis le site [OVH.com](https://www.ovh.com/fr/private-cloud/options/veeam-cloud-connect.xml){.external}
-
-Une fois le paiement effectué, vous recevrez un mail avec :
-
-- L'adresse IP/nom de votre service.
-- L'utilisateur et le mot de passe.
-
-
-### Espace client OVH
-
-Dans votre espace client OVH, rendez-vous dans la partie "Cloud" puis "Plateformes et Services".
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), switch to the "Server" section and open the menu `Platforms and services`{.action} in the left-hand navigation bar.
 
 ![veeam cloud connect](images/veeam-cloud-connect-manager-start.png){.thumbnail}
 
-Vous arriverez ensuite sur cette page reprenant la configuration de votre offre, votre abonnement, le lieu de stockage.
+Click on your new service to view the `Home` page, where some general information is displayed.
 
 ![veeam cloud connect](images/veeam-cloud-connect-manager.png){.thumbnail}
 
-Dans le second onglet "Espace de stockage", vous retrouverez le nom de votre espace de stockage, son utilisation, le quota, et le datacentre de réplication.
-
+On the second tab, `Storage Space`, you will find your storage space's name, usage, quota, and replication data centre.
 
 ![veeam cloud connect](images/veeam-cloud-connect-manager-espace.png){.thumbnail}
 
-Au bout de cette ligne, vous pouvez apercevoir un bouton.
-
-Celui-ci sert à augmenter ou diminuer le quota de stockage.
-
+You can use the `...`{.action} button on this page to modify the quota for your storage space.
 
 ![veeam cloud connect](images/veeam-cloud-connect-manager-modif-espace.png){.thumbnail}
 
-Lorsque vous avez modifié la valeur, ce message apparaîtra :
-
+Define the new quota and click on `Edit`{.action} to confirm.
 
 ![veeam cloud connect](images/veeam-cloud-connect-manager-modif-espace-ok.png){.thumbnail}
 
 
-### Installation
+### Setting up the service 
 
-Afin de mettre en place votre Veeam Cloud Connect, vous devez au préalable avoir votre propre serveur de sauvegarde Veeam.
+Veeam Cloud Connect and the required Veeam backup server are managed from the Veeam Backup & Replication console, available from the official [Veeam website](https://www.veeam.com).
 
-La mise en place du Veeam Cloud Connect se fait dans la même interface, la console Veeam Backup & Replication, téléchargeable sur le site de [Veeam](https://www.veeam.com/){.external}.
-
-
-> [!success]
->
-> Vous pouvez retrouver l'installation de la console sur cette page.
-> 
-
-Dans un premier temps, ajoutez le service dans votre console, en cliquant sur "ADD SERVICE PROVIDER"
-
+In the first step, add the service to your console by clicking on `ADD SERVICE PROVIDER`{.action} in the "Service Providers" menu.
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider.png){.thumbnail}
 
-Renseignez l'IP/nom de votre offre, qui vous a été transmis dans le mail.
-
+Fill in the IP address or name of your solution (received via email) and click on `Next`{.action}.
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-ip.png){.thumbnail}
 
-Ajoutez l'utilsateur et le mot de passe, puis appliquez pour valider.
-
+Add the username and password in this step and click on `OK`{.action}, then on `Apply`{.action}.
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-login.png){.thumbnail}
 
-Le résumé des resssources disponibles sur cette offre apparaîtra.
-
+A summary of the resources available on this service will appear.
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-ressources.png){.thumbnail}
 
-Et un dernier récapitulatif sera présent.
-
+On the final "Summary" page, click on `Finish`{.action}.
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-recap.png){.thumbnail}
 
-En cliquant sur `terminer`{.action}, vous retrouvez sur la console votre service
-
+Your service will be added to the list in the console.
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-finish.png){.thumbnail}
 
 
-### Configuration
+### Configuring backup tasks
 
-Afin de réaliser une réplication d'une de vos sauvegardes, rendez-vous dans l'onglet "Backup & Replication" situé en bas à gauche de la console.
+In the left-hand menu, switch to the section "BACKUP & REPLICATION". Your backup tasks ("Jobs") will be listed here.
 
-Vous retrouverez vos tâches de sauvegarde et vous devrez cliquer sur "Backup Copy", situé sur la barre d'action en haut de la console, pour commencer la configuration.
-
+Click on `Backup Copy`{.action} in the top menu bar to configure a backup replication.
 
 ![veeam cloud connect](images/veeam-cloud-connect-replicat.png){.thumbnail}
 
-Dans un premier temps, donnez un nom à cette nouvelle tâche. Vous pouvez également choisir la fréquence de cette dernière.
-
+First, give a name to this new task. You can also choose the frequency of this action.
 
 ![veeam cloud connect](images/veeam-cloud-connect-replicat-name.png){.thumbnail}
 
-En cliquant sur le bouton `Ajouter`{.action} vous aurez trois choix, détaillés sur [cette page](https://helpcenter.veeam.com/docs/backup/vsphere/backup_copy_vms.html?ver=95){.external}.
+On the next page, "Virtual Machines", you can add VMs using the `Add`{.action} button. Please refer to this [official documentation](https://helpcenter.veeam.com/docs/backup/vsphere/backup_copy_vms.html?ver=95){.external} for a detailed explanation of your choices.
 
-Ici, nous allons répliquer une sauvegarde.
-
+In this example, replication from backups is chosen.
 
 ![veeam cloud connect](images/veeam-cloud-connect-replicat-select.png){.thumbnail}
 
-Choisissez ensuite le répértoire de stockage vu précédemment.
-
+Next, select the repository assigned to the service (previously displayed on the "Resources" page at setup).
 
 ![veeam cloud connect](images/veeam-cloud-connect-replicat-target.png){.thumbnail}
 
-Afin de transférer votre sauvegarde de votre serveur, à notre infrastructure, à travers la solution Veaam Cloud Connect, vous pouvez, soit laisser la communication en direct, soit utiliser le WAN accelerator.
+To transfer data from your server to the OVHcloud infrastructure, there are two options. Depending on the availabe connection, you can select "Direct" or you can use the Veeam WAN Accelerator Service.
 
-Voici une page expliquant le fonctionnement du [WAN accelerator](https://helpcenter.veeam.com/docs/backup/vsphere/wan_hiw.html?ver=95){.external}.
-
+Please refer to this [official documentation](https://helpcenter.veeam.com/docs/backup/vsphere/wan_hiw.html?ver=95){.external} to learn how it operates.
 
 ![veeam cloud connect](images/veeam-cloud-connect-replicat-data.png){.thumbnail}
 
-Vous pourrez également programmer les périodes durant lesquelles cette tâche s'éxécutera.
-
+After clicking on `Next`{.action}, you can specify the time periods during which data transfer is allowed to take place.
 
 ![veeam cloud connect](images/veeam-cloud-connect-replicat-schedule.png){.thumbnail}
 
-Un résumé vous sera proposé, et il vous restera à cliquer sur "Terminer" pour finaliser l'ajout de cette tâche.
-
+On the "Summary" page, click on `Finish`{.action}.
 
 ![veeam cloud connect](images/veeam-cloud-connect-replicat-finish.png){.thumbnail}
 
-La case démarrant la tâche une fois validé étant resté cochée, la tâche est en cours.
-
-Vous retrouverez la page du début avec votre nouvelle tâche.
-
+If the appropriate scheduling conditions are met, the new task will start to run immediately and you can review it on the `Home` page.
 
 ![veeam cloud connect](images/veeam-cloud-connect-replicat-cloud.png){.thumbnail}
 
 
-### Restauration
+### Restoring backups
 
-Afin de restaurer votre backup, il vous suffira de faire un clic droit sur la tâche.
-
-Vous pourrez choisir de restaurer la machine virtuelle entière, ou certains fichiers.
-
+In order to restore a backup, right-click on the task in the table. You can choose to restore the entire virtual machine, or certain files.
 
 ![veeam cloud connect](images/veeam-cloud-connect-restore.png){.thumbnail}
 
-Choisissez la VM et la sauvegarde à restaurer.
-
+In the Restore Wizard, select the VM and the backup to be restored.
 
 ![veeam cloud connect](images/veeam-cloud-connect-restore-select.png){.thumbnail}
 
-Choisissez ensuite le lieu de restauration (inital ou différent).
-
+Next choose the "Restore Mode" (to the original or a different location).
 
 ![veeam cloud connect](images/veeam-cloud-connect-restore-mode.png){.thumbnail}
 
-Vous pourrez indiquer une raison si vous le souhaitez, et un résumé de l'opération s'affichera.
-
+You can additionally specify a "Reason" for your own documentation. Finally, a summary of the operation will be displayed.
 
 ![veeam cloud connect](images/veeam-cloud-connect-restore-resume.png){.thumbnail}
 
-Une fenêtre s'ouvrira dans votre console Veeam, indiquant les tâches en cours.
+Click on `Finish`{.action} and a window will open in your Veeam console, indicating the tasks that are in progress.
 
-Vous constaterez dans votre vSphere, différentes opérations lors de la restauration.
-
+In your vSphere client, you can verify that various events are logged when a restoration has been launched.
 
 ![veeam cloud connect](images/veeam-cloud-connect-restore-done.png){.thumbnail}
+
 
 ## Go further
 
