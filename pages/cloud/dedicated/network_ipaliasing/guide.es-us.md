@@ -15,8 +15,8 @@ El alias de IP (*IP aliasing* en inglés) es una configuración especial de la r
 
 ## Requisitos
 
-- Tener un servidor ([servidor dedicado](https://www.ovh.es/servidores_dedicados/){.external}, [VPS](https://www.ovh.es/vps/){.external} o [instancia de Public Cloud](https://www.ovh.es/public-cloud/instancias/){.external}).
-- Tener una o más direcciones [IP Failover](https://www.ovh.es/servidores_dedicados/ip_failover.xml){.external}.
+- Tener un servidor ([servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external}, [VPS](https://www.ovh.com/world/es/vps/){.external} o [instancia de Public Cloud](https://www.ovh.com/world/es/public-cloud/instancias/){.external}).
+- Tener una o más direcciones [IP Failover](https://www.ovh.com/world/es/servidores_dedicados/ip_failover.xml){.external}.
 - Estar conectado al servidor por SSH (acceso *root*).
 
 
@@ -256,7 +256,7 @@ Edite el archivo para añadir la IP Failover. En Gentoo, los alias se añaden di
 
 > [!warning]
 >
-> La IP por defecto del servidor debe estar en la misma línea que **config_eth0 =** para garantizar el buen funcionamiento de determinadas operaciones específicas de OVH.
+> La IP por defecto del servidor debe estar en la misma línea que **config_eth0 =** para garantizar el buen funcionamiento de determinadas operaciones específicas de OVHcloud.
 > 
 
 Inserte un salto de la línea después de la máscara de red **255.255.255.0** y añada su IP Failover (sustituya «SERVER_IP» por la IP principal de su servidor).

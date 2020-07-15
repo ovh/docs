@@ -9,16 +9,16 @@ section: 'Diagnóstico y modo de rescate'
 
 ## Objetivo
 
-Al instalar o reinstalar una distribución o sistema operativo, recibirá una contraseña para acceder en modo root. Es altamente recomendable cambiar esta contraseña, tal y como se explica en la guía [Proteger un servidor dedicado](https://docs.ovh.com/es/dedicated/seguridad-de-un-servidor-dedicado/){.external}. También es posible que necesite cambiarla porque la haya perdido.
+Al instalar o reinstalar una distribución o sistema operativo, recibirá una contraseña para acceder en modo root. Es altamente recomendable cambiar esta contraseña, tal y como se explica en la guía [Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/){.external}. También es posible que necesite cambiarla porque la haya perdido.
 
 **Esta guía explica cómo cambiar la contraseña root en un servidor dedicado Linux en ambos casos.**
 
 
 ## Requisitos
 
-* Tener un [servidor dedicado](https://www.ovh.es/servidores_dedicados/){.external} con una distribución Linux instalada.
+* Tener un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external} con una distribución Linux instalada.
 * Estar conectado por SSH con el usuario root (si dispone de la contraseña actual).
-* Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (si no dispone de la contraseña actual).
+* Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} (si no dispone de la contraseña actual).
 
 
 ## Procedimiento
@@ -48,7 +48,7 @@ passwd: password updated successfully
 
 #### 1. Identificar la partición del sistema
 
-Una vez activado el [modo de rescate](https://docs.ovh.com/es/dedicated/modo_de_rescate/){.external} en el servidor, debe identificar la partición del sistema. Para ello, ejecute el siguiente comando:
+Una vez activado el [modo de rescate](../modo_de_rescate/){.external} en el servidor, debe identificar la partición del sistema. Para ello, ejecute el siguiente comando:
 
 ```sh
 fdisk -l
@@ -110,8 +110,8 @@ Una vez modificada la contraseña, cambie el modo de arranque en el servidor sel
 
 ## Más información
 
-[Activar y utilizar el modo de rescate](https://docs.ovh.com/es/dedicated/modo_de_rescate/){.external}
+[Activar y utilizar el modo de rescate](../modo_de_rescate/){.external}
 
-[Cambiar la contraseña de administrador en un servidor dedicado Windows](https://docs.ovh.com/es/dedicated/cambiar-contrasena-administrador-en-servidor-windows/){.external}
+[Cambiar la contraseña de administrador en un servidor dedicado Windows](../cambiar-contrasena-administrador-en-servidor-windows/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://community.ovh.com){.external}.

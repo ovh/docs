@@ -22,7 +22,7 @@ Rescue mode is a tool on your server that allows you to boot into a temporary op
 
 ## Instructions
 
-You can activate rescue mode by logging into your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager/){.external} and going to your server's page. Then go to `Server Status`{.action} > `General information`{.action} >`Boot`{.action} and click the `Edit`{.action} button to change the boot mode.
+You can activate rescue mode by logging into your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager/){.external} and going to your server's page. Then go to `Server Status`{.action} > `General information`{.action} >`Boot`{.action} and click the `Edit`{.action} button to change the boot mode.
 
 ![Boot mode edit](images/rescue-mode-01.png){.thumbnail}
 
@@ -104,7 +104,7 @@ rescue:~# mount /dev/hda1 /mnt/
 
 #### Accessing WinRescue
 
-Once your server has rebooted, you'll receive an email with your rescue mode access credentials. To access rescue mode, you'll need to download and install a VNC console, or use the `IPMI` module in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager/){.external}.
+Once your server has rebooted, you'll receive an email with your rescue mode access credentials. To access rescue mode, you'll need to download and install a VNC console, or use the `IPMI` module in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager/){.external}.
 
 ![Winrescue window](images/rescue-mode-06.png){.thumbnail}
 
@@ -114,7 +114,7 @@ Once your server has rebooted, you'll receive an email with your rescue mode acc
 |---|---|
 |Freecommander|A file manager with all the standard functionality you would expect.|
 |NTPWdi|A user-friendly password manager. It lets you reactivate or change the passwords of user accounts on your server. This tool is very useful in the event of lost credentials, or for the reactivation of a security account.|
-|FileZilla|An open source FTP client. It supports SSH and SSLprotocols, and has a clear and intuitive drag and drop interface. It can be used for transferring your data to an FTP server, such as the FTP backup supplied with most of the OVH server models.|
+|FileZilla|An open source FTP client. It supports SSH and SSLprotocols, and has a clear and intuitive drag and drop interface. It can be used for transferring your data to an FTP server, such as the FTP backup supplied with most of the OVHcloud server models.|
 |7-ZIP|A file compression and archiving utility that reads the following formats: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR and Z. It also allows you to create your own archives in the following formats: z, XZ, BZIP2, GZIP, TAR, ZIP and WIM.|
 |Avast Virus Cleaner|An antivirus application with file scanning and cleansing capabilities.|
 |ActivNIC|Allows you to reactivate a deactivated network interface card.|

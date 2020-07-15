@@ -17,12 +17,12 @@ El modo *rescue* o modo de rescate permite arrancar un servidor dedicado sobre u
 
 ## Requisitos
 
-- Tener acceso por SSH (*root*) a su [servidor dedicado](https://www.ovh.es/servidores_dedicados/){.external}.
+- Tener acceso por SSH (*root*) a su [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external}.
 
 
 ## Procedimiento
 
-Para activar el modo de rescate, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager/){.external} y vaya a la sección `Dedicado`{.action}. En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor. Abra la pestaña `Estado del servidor`{.action}. En el recuadro **Información general**, haga clic en el botón `···`{.action} del apartado **Boot** y seleccione `Editar`{.action} para cambiar el modo de arranque.
+Para activar el modo de rescate, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager/){.external} y vaya a la sección `Dedicado`{.action}. En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor. Abra la pestaña `Estado del servidor`{.action}. En el recuadro **Información general**, haga clic en el botón `···`{.action} del apartado **Boot** y seleccione `Editar`{.action} para cambiar el modo de arranque.
 
 ![Cambiar el modo de arranque](images/rescue-mode-01.png){.thumbnail}
 
@@ -58,7 +58,7 @@ Una vez reiniciado el servidor, recibirá por correo electrónico las claves de 
 
 > [!primary]
 > 
-> Si utiliza una llave SSH (activa en su área de cliente de OVH), no recibirá ninguna contraseña. Una vez que haya arrancado el servidor en modo de rescate, podrá conectarse directamente con su llave SSH.
+> Si utiliza una llave SSH (activa en su área de cliente de OVHcloud), no recibirá ninguna contraseña. Una vez que haya arrancado el servidor en modo de rescate, podrá conectarse directamente con su llave SSH.
 >
 
 Una vez reiniciado el servidor, recibirá por correo electrónico las claves de acceso en modo de rescate. Deberá acceder a su servidor utilizando las líneas de comando habituales, pero con la contraseña *root* del modo de rescate en lugar de la suya.
@@ -112,7 +112,7 @@ rescue:~# mount /dev/hda1 /mnt/
 
 #### Acceder a WinRescue
 
-Una vez reiniciado el servidor, recibirá por correo electrónico las claves de acceso en modo de rescate. Para acceder en modo WinRescue, deberá descargar e instalar una consola VNC o utilizar el módulo **IPMI** del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager/){.external}.
+Una vez reiniciado el servidor, recibirá por correo electrónico las claves de acceso en modo de rescate. Para acceder en modo WinRescue, deberá descargar e instalar una consola VNC o utilizar el módulo **IPMI** del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager/){.external}.
 
 ![WinRescue Windows](images/rescue-mode-06.png){.thumbnail}
 
@@ -122,7 +122,7 @@ Una vez reiniciado el servidor, recibirá por correo electrónico las claves de 
 |---|---|
 |FreeCommander|Gestor de archivos con todas las funcionalidades estándar necesarias.|
 |NTPWdi|Gestor de contraseñas fácil de utilizar. Permite reactivar o cambiar las contraseñas de las cuentas de usuario en el servidor. Esta herramienta es muy útil si pierde las claves de acceso o desea reactivar una cuenta de seguridad.|
-|FileZilla|Cliente FTP de código abierto. Soporta los protocolos SSH y SSL, y dispone de una interfaz clara e intuitiva que permite arrastrar los elementos. Permite transferir los datos a un servidor FTP, como el espacio de backup FTP incluido con la mayoría de los servidores de OVH.|
+|FileZilla|Cliente FTP de código abierto. Soporta los protocolos SSH y SSL, y dispone de una interfaz clara e intuitiva que permite arrastrar los elementos. Permite transferir los datos a un servidor FTP, como el espacio de backup FTP incluido con la mayoría de los servidores de OVHcloud.|
 |7-Zip|Herramienta de compresión y archivado compatible con los siguientes formatos: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR y Z. Con 7-Zip también podrá crear sus propios archivos en los siguientes formatos: BZIP2, GZIP, TAR, WIM, XZ, Z y ZIP.|
 |Avast Virus Cleaner|Aplicación antivirus con capacidad de análisis y limpieza de archivos.|
 |ActivNIC|Herramienta que permite reactivar una tarjeta de red desactivada.|
@@ -134,4 +134,4 @@ Una vez reiniciado el servidor, recibirá por correo electrónico las claves de 
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/){.external}.

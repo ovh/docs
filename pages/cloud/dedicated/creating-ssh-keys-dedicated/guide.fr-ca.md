@@ -21,8 +21,8 @@ Veuillez noter qu'une clé SSH n'est pas utilisée pour s'authentifier sur un se
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
-- Disposer d’un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/) dans votre compte OVHcloud
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager)
+- Disposer d’un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/) dans votre compte OVHcloud
 - Disposer d’un accès administrateur (root) via SSH
 
 ## Instructions
@@ -170,7 +170,7 @@ Si vous avez copié l'intégralité de la chaine, l'identifiant qui suit la clé
 
 > [!primary]
 >
-> Toute clé enregistrée dans la section « Dédié » sera également utilisable pour vos services VPS. En ce qui concerne les clés SSH pour les services Public Cloud, veuillez vous référer à [ce guide](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/).
+> Toute clé enregistrée dans la section « Dédié » sera également utilisable pour vos services VPS. En ce qui concerne les clés SSH pour les services Public Cloud, veuillez vous référer à [ce guide](../public-cloud/creation-des-cles-ssh/).
 >
 
 

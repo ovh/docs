@@ -18,14 +18,14 @@ L’usure d’un serveur peut impliquer avec le temps des dysfonctionnements mat
 ## Prérequis
 
 * Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs-dedies/){.external}.
-* Avoir redémarré le serveur en [mode rescue](https://docs.ovh.com/ca/fr/dedicated/rescue-mode/){.external}.
+* Avoir redémarré le serveur en [mode rescue](../rescue-mode/){.external}.
 
 
 ## En pratique
 
 ### Utiliser l'interface web
 
-Une fois que votre serveur a redémarré en [mode rescue](https://docs.ovh.com/ca/fr/dedicated/rescue-mode/), vous recevrez un e-mail comportant les informations d'accès à votre service. Ce message contiendra également un lien vers l'interface web du mode rescue. Celui-ci ressemble en général à ceci : *https://IP_du_serveur:444*.
+Une fois que votre serveur a redémarré en [mode rescue](../rescue-mode/), vous recevrez un e-mail comportant les informations d'accès à votre service. Ce message contiendra également un lien vers l'interface web du mode rescue. Celui-ci ressemble en général à ceci : *https://IP_du_serveur:444*.
 
 Après avoir cliqué sur le lien, vous serez redirigé vers l'interface web comme indiqué ci-dessous.
 

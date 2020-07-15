@@ -27,7 +27,7 @@ La IP de su servidor, sustituyendo el último octeto por 254.
 ### 1. Determinar la pasarela
 Para configurar una máquina virtual, debe conocer la pasarela de su servidor (*nsxxx.ovh.net*; *ksxxx.ovh.net*; *nsxxxxxxx.ip-xxxxxx.eu*...). Para ello, sustituya el último grupo de cifras de su IP principal por .254.
 
-Para saber cuál es esa IP, puede consultar el emial de instalación del servidor o la sección IP del [área de cliente](https://www.ovh.com/manager/){.external} de OVH.
+Para saber cuál es esa IP, puede consultar el emial de instalación del servidor o la sección IP del [área de cliente](https://ca.ovh.com/manager/){.external} de OVHcloud.
 
 
 ### 2. Configuracion
@@ -70,7 +70,7 @@ iface eth0 inet static
 
 
 ```bash
-nameserver 213.186.33.99 # OVH DNS Server
+nameserver 213.186.33.99 # OVHcloud DNS Server
 ```
 
 
@@ -81,8 +81,8 @@ nameserver 213.186.33.99 # OVH DNS Server
 > 
 > ```bash
 > # dns-* options are implemented by the resolvconf package, if installed (default)
-> dns-nameservers 213.186.33.99 # OVH DNS Server
-> dns-search ovh.net # For faster hosts resolution on the OVH network
+> dns-nameservers 213.186.33.99 # OVHcloud DNS Server
+> dns-search ovh.net # For faster hosts resolution on the OVHcloud network
 > ```
 >
 No dude en consultar esta [guía de Debian](https://wiki.debian.org/fr/Bind9){.external} para una configuración más avanzada.
@@ -119,7 +119,7 @@ default via GATEWAY_VM dev eth0
 
 
 ```bash
-nameserver 213.186.33.99 # OVH DNS Server
+nameserver 213.186.33.99 # OVHcloud DNS Server
 ```
 
 
@@ -235,7 +235,7 @@ route_net2="default GATEWAY_VM"
 
 
 ```bash
-nameserver 213.186.33.99 # OVH DNS Server
+nameserver 213.186.33.99 # OVHcloud DNS Server
 ```
 
 
@@ -303,4 +303,4 @@ A continuación, deberá añadir la pasarela a la máquina virtual:
 route add GATEWAY_VM dev eth0
 route add default gw GATEWAY_VM
 ```
-Después será necesario configurar el DNS del servidor para que pueda hacer la resolución del dominio. La IP del servidor DNS de OVH es 213.186.33.99.
+Después será necesario configurar el DNS del servidor para que pueda hacer la resolución del dominio. La IP del servidor DNS de OVHcloud es 213.186.33.99.

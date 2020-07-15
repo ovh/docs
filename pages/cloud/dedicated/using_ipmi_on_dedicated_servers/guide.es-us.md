@@ -15,7 +15,7 @@ En otros documentos puede encontrar el término KVM, del inglés *keyboard, vide
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager), en la sección `Dedicado`{.action} > `Servidores dedicados`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager), en la sección `Dedicado`{.action} > `Servidores dedicados`{.action}.
 
 
 ## Procedimiento
@@ -28,7 +28,7 @@ Para que el applet funcione, debe tener Java instalado en su ordenador. Si todav
 
 Abra la pestaña `IPMI`{.action} del área de cliente y haga clic en el el botón `Desde un applet Java (KVM)`{.action}.
 
-![Inicio Java IPMI](images/java_ipmi_initiate.png){.thumbnail}
+![Inicio Java IPMI](images/java_ipmi_initiate_2020.png){.thumbnail}
 
 Descargue el archivo **kvm.jnlp** y ejecútelo.
 
@@ -44,7 +44,7 @@ Ya puede administrar su servidor con normalidad.
 
 Aunque le recomendamos utilizar la conexión a través del applet Java, también es posible usar IPMI mediante Serial Over LAN. Para ello, abra la pestaña `IPMI`{.action} y haga clic en el botón `Desde el navegador (SoL)`{.action}.
 
-![Activación SoL IPMI](images/sol_ipmi_activation.png){.thumbnail}
+![Activación SoL IPMI](images/sol_ipmi_activation_2020.png){.thumbnail}
 
 > [!warning]
 >
@@ -55,14 +55,14 @@ Aunque le recomendamos utilizar la conexión a través del applet Java, también
 
 Es posible que IPMI deje de responder. Si no puede acceder, realice una prueba haciendo clic en el botón `Probar IPMI`{.action} y consulte el resultado del diagnóstico.
 
-![Probar IPMI](images/ipmi_test.png){.thumbnail}
+![Probar IPMI](images/ipmi_test_2020.png){.thumbnail}
 
 Si todo funciona correctamente, como en el ejemplo, es probable que se trate de un problema local (conexión a internet, equipo informático local...). Si, por el contrario, existe un problema relacionado con IPMI, puede reiniciarlo haciendo clic en `Reiniciar IPMI`{.action}.
 
-![Probar IPMI](images/ipmi_reboot.png){.thumbnail}
+![Probar IPMI](images/ipmi_reboot_2020.png){.thumbnail}
 
 El reinicio puede tardar varios minutos.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/){.external}.

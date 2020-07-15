@@ -16,7 +16,7 @@ If you notice that a disk is faulty, or receive a notification email about a fau
 
 > [!warning]
 >
-> OVH is providing you with services that you will be responsible for. We have no access to these machines, and therefore cannot manage them, so we cannot provide administrative assistance. You are responsible for your own software and security management.
+> OVHcloud is providing you with services that you will be responsible for. We have no access to these machines, and therefore cannot manage them, so we cannot provide administrative assistance. You are responsible for your own software and security management.
 > 
 > This guide is designed to assist you in common tasks as much as possible. However, we recommend that you call upon a specialist service provider if you experience any issues or doubts when it comes to managing, using or securing your server. You can find more information in the “Go further” section of this guide.
 > 
@@ -47,7 +47,7 @@ If you receive an email alert, or notice any signs that you might have a faulty 
 
 #### Servers using soft RAID
 
-If you have a server that uses soft RAID, please refer to the [software RAID](https://docs.ovh.com/au/en/dedicated/raid-soft/){.external} guide to find the disks installed on your server.
+If you have a server that uses soft RAID, please refer to the [software RAID](../raid-soft/){.external} guide to find the disks installed on your server.
 
 Once you have found the access path for your disks, you can test them using the `smartctl` command, as follows:
 
@@ -91,7 +91,7 @@ In this case, the line to look out for is as follows:
 
 #### Servers using hard RAID
 
-If you have a server that uses hard RAID, please refer to the [hardware RAID](https://docs.ovh.com/au/en/dedicated/raid-hard/){.external} guide, and use the appropriate procedure for your RAID controller type to find the access paths to your disks.
+If you have a server that uses hard RAID, please refer to the [hardware RAID](../raid-hard/){.external} guide, and use the appropriate procedure for your RAID controller type to find the access paths to your disks.
 
 Once you have found the access path for your disks, you can test them using the `smartctl` command, as follows:
 
@@ -123,7 +123,7 @@ You will need to specify the RAID number (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAI
 
 #### Servers with NVMe disks
 
-If you have an NVMe disk, you will need to put the server into [rescue mode](https://docs.ovh.com/sg/en/dedicated/ovh-rescue/){.external}, on which the **nvme-cli** tool is installed by default.
+If you have an NVMe disk, you will need to put the server into [rescue mode](../ovh-rescue/){.external}, on which the **nvme-cli** tool is installed by default.
 
 You will then need to use the `nvme list` command, and retrieve your disks’ serial numbers:
 
@@ -140,9 +140,9 @@ root@rescue:~# nvme list
 
 #### Cold-swapping the disk (server downtime required)
 
-To request a disk replacement, you simply need to create a ticket through your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. You can speed up the process by providing the information required for the tests. Below is a list of what you will need to provide:
+To request a disk replacement, you simply need to create a ticket through your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. You can speed up the process by providing the information required for the tests. Below is a list of what you will need to provide:
 
-- **The serial number of the disk that needs to be replaced, as well as the serial numbers for all other disks that are working properly**. To retrieve the serial number of the disk that needs to be replaced, please follow [this guide](https://docs.ovh.com/au/en/dedicated/cloud/dedicated/find-disk-serial-number/){.external}. If, for any reason, you are unable to retrieve the disk’s serial number, please let us know in the ticket, and list the serial numbers of the disks that don’t need to be replaced. 
+- **The serial number of the disk that needs to be replaced, as well as the serial numbers for all other disks that are working properly**. To retrieve the serial number of the disk that needs to be replaced, please follow [this guide](../find-disk-serial-number/){.external}. If, for any reason, you are unable to retrieve the disk’s serial number, please let us know in the ticket, and list the serial numbers of the disks that don’t need to be replaced. 
 
 As a reminder, it’s important to include the serial numbers of all the disks. They will be sent to the datacentre technician, and this will avoid any mistakes being made as the replacement operation is carried out.
 
@@ -155,7 +155,7 @@ As a reminder, it’s important to include the serial numbers of all the disks. 
 
 > [!primary]
 >
-> This replacement type is only possible for [Big-HG](https://www.ovh.com/sg/dedicated-servers/hg/1801bhg01.xml){.external} servers that have a RAID card.
+> This replacement type is only possible for [Big-HG](https://www.ovh.com/sg/dedicated-servers/hg/){.external} servers that have a RAID card.
 > 
 
 If you are hot-swapping a disk on a server with a megaRAID card, please make the LED light flash for the disk that needs to be replaced, once the intervention has been scheduled. This will make the process easier for the teams who are working on the replacement operation.
@@ -201,16 +201,16 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 
 If you have a server that uses hard RAID, then the RAID will rebuild itself. Please note that *auto-rebuild* is enabled by default. For it to work, please ensure that you have not disabled it. The resync process will take a few minutes, and may decrease your RAID’s read/write performance.
 
-If you have a server that uses soft RAID, we recommend that you resync your disks manually. To do this, you can refer to our [software RAID](https://docs.ovh.com/au/en/dedicated/raid-soft/){.external} guide.
+If you have a server that uses soft RAID, we recommend that you resync your disks manually. To do this, you can refer to our [software RAID](../raid-soft/){.external} guide.
 
 
 ## Go further
 
-[Software RAID](https://docs.ovh.com/au/en/dedicated/raid-soft/){.external}
+[Software RAID](../raid-soft/){.external}
 
-[Hardware RAID](https://docs.ovh.com/au/en/dedicated/raid-hard/){.external}
+[Hardware RAID](../raid-hard/){.external}
 
-[Rescue Mode](https://docs.ovh.com/sg/en/dedicated/ovh-rescue/){.external}
+[Rescue Mode](../ovh-rescue/){.external}
 
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -11,13 +11,13 @@ section: 'RAID y discos'
 
 El RAID (Redundant Array of Independent Disks) es un conjunto de técnicas diseñadas para prevenir la pérdida de datos en un servidor, replicándolos en varios discos.
 
-El nivel de RAID por defecto en los servidores de OVH es RAID 1. Con este nivel de RAID, el volumen que ocupan los datos se duplica, por lo que el espacio en disco útil se reduce a la mitad.
+El nivel de RAID por defecto en los servidores de OVHcloud es RAID 1. Con este nivel de RAID, el volumen que ocupan los datos se duplica, por lo que el espacio en disco útil se reduce a la mitad.
 
 **Esta guía explica cómo configurar el RAID de un servidor en caso de que sea necesario reconstruirlo por corrupción o fallo del disco.**
 
 ## Requisitos
 
-* Tener un [servidor dedicado](https://www.ovh.es/servidores_dedicados/){.external} con RAID por software.
+* Tener un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external} con RAID por software.
 * Tener acceso al servidor por SSH como administrador (root).
 
 ## Procedimiento
@@ -263,8 +263,8 @@ mount /dev/md2 /home
 
 ## Más información
 
-[Sustituir un disco en caliente en un servidor con RAID por software](https://docs.ovh.com/es/dedicated/hotswap-raid-soft/){.external}
+[Sustituir un disco en caliente en un servidor con RAID por software](../hotswap-raid-soft/){.external}
 
-[RAID por hardware](https://docs.ovh.com/es/dedicated/raid-hardware/){.external}
+[RAID por hardware](../raid-hardware/){.external}
 
 Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.

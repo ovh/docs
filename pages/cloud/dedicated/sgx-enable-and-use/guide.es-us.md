@@ -14,16 +14,16 @@ La tecnología Intel SGX proporciona funciones avanzadas de seguridad mediante e
 
 ## Requisitos
 
-- Tener un [servidor dedicado de la gama Infrastructure](https://www.ovh.es/servidores_dedicados/infra/){.external}, con la opción [SGX](https://www.ovh.es/servidores_dedicados/software-guard-extensions/){.external}
+- Tener un [servidor dedicado de la gama Infrastructure](https://www.ovh.com/world/es/servidores_dedicados/infra/){.external}, con la opción [SGX](https://www.ovh.com/world/es/servidores_dedicados/software-guard-extensions/){.external}
 - Tener acceso al servidor por SSH como administrador (root)
-- Tener acceso a la [API de OVHcloud](https://api.ovh.com/console/){.external}
+- Tener acceso a la [API de OVHcloud](https://ca.api.ovh.com/console/){.external}
 - Tener instalado Ubuntu 18.04 o similar en el servidor
 
 ## Procedimiento
 
 ### Paso 1: acceder a la API
 
-Acceda a <https://api.ovh.com/console/> y, a continuación, haga clic en el botón `Login`{.action} situado en la esquina superior derecha de la página.  
+Acceda a <https://ca.api.ovh.com/console/> y, a continuación, haga clic en el botón `Login`{.action} situado en la esquina superior derecha de la página.  
 Identifíquese con los datos de acceso de su cuenta de OVHcloud en la página siguiente.
 
 ### Paso 2: Activar SGX

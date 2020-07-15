@@ -189,7 +189,7 @@ Now you have to edit the file to add the failover IP. In Gentoo, an alias is add
 
 > [!warning]
 >
-> The server’s default IP and config_eth0= should stay on the same line. This is to ensure that certain OVH-specific operations work properly.
+> The server’s default IP and config_eth0= should stay on the same line. This is to ensure that certain OVHcloud-specific operations work properly.
 > 
 
 All you need to do is add a line break after the netmask **255.255.255.0 **and add your failover IP (SERVER_IP must be replaced by your server’s primary IP).

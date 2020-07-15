@@ -11,7 +11,7 @@ section: 'Server Management'
 
 Redundant Array of Independent Disks (RAID) is a utility that mitigates data loss on a server by replicating data across two or more disks.
 
-The default RAID level for OVH server installations is RAID 1, which doubles the space taken up by your data, effectively halving the usable disk space.
+The default RAID level for OVHcloud server installations is RAID 1, which doubles the space taken up by your data, effectively halving the usable disk space.
 
 **This guide will help you to configure your server’s disks with RAID 0, which will allow you to use all your disks' usable space.**
 
@@ -22,18 +22,18 @@ The default RAID level for OVH server installations is RAID 1, which doubles the
 
 ## Requirements
 
-- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} with hardware RAID
+- a [dedicated server](https://www.ovh.com/ca/en/dedicated_servers/){.external} with hardware RAID
 - administrative (root) access to the server via SSH
 
 ## Instructions
 
-### Using the OVH Control Panel
+### Using the OVHcloud Control Panel
 
-In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Dedicated`{.action} menu and select your server.
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click on the `Dedicated`{.action} menu and select your server.
 
-Next, on the `Server status`{.action} tab, click the `Reinstall`{.action} button to install a new operating system with your custom RAID 0 configuration.
+Next, on the `General Information`{.action} tab, click the `Reinstall`{.action} button to install a new operating system with your custom RAID 0 configuration.
 
-Now select **Install from an OVH template** and then click `Next`{.action}.
+Now select **Install from an OVHcloud template** and then click `Next`{.action}.
 
 ![megaraid](images/server_installation_raid0_01.png){.thumbnail}
 
@@ -63,11 +63,11 @@ df -h
 
 ### Using rescue mode
 
-In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Dedicated`{.action} menu and select your server.
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click on the `Dedicated`{.action} menu and select your server.
 
-On the `Server status`{.action} tab, click the `Edit`{.action} button to change the boot system.
+On the `General Information`{.action} tab, click the `Modify`{.action} button to change the boot system.
 
-![megaraid](images/rescue_mode_raid0_01.png){.thumbnail}
+![megaraid](images/rescue_mode_raid0_01_2020.png){.thumbnail}
 
 Next, select `Boot on rescue mode`{.action} then select `rescue64-pro`{.action} from the drop-down list.
 
@@ -79,9 +79,9 @@ Click `Next`{.action} and then click `Confirm`{.action} on the following screen.
 
 ![megaraid](images/rescue_mode_raid0_03.png){.thumbnail}
 
-Click the `Restart`{.action} button in the [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Click the `Restart`{.action} button in the [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
-![megaraid](images/server_installation_raid0_06.png){.thumbnail}
+![megaraid](images/server_installation_raid0_06_2020.png){.thumbnail}
 
 When your server reboots, log in to it via SSH using the rescue mode credentials that were emailed to you.
 
@@ -114,10 +114,10 @@ MegaCli -LDInfo -Lall -a0 |grep -i size
 
 ## Go further
 
-[Hot Swap – Hardware RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external}
+[Hot Swap – Hardware RAID](../hotswap-raid-hard/){.external}
 
-[Hot Swap – Software RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/){.external}
+[Hot Swap – Software RAID](../hotswap-raid-soft/){.external}
 
-[Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} 
+[Hardware RAID](../raid-hard/){.external} 
 
 Join our community of users on <https://community.ovh.com/en/>

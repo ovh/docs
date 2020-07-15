@@ -9,9 +9,9 @@ section: Tutoriales
 
 Sus datos informáticos son activos muy valiosos: su pérdida o alteración podría afectar al desarrollo normal de su actividad. Aunque no es posible eliminar estos riesgos por completo, es aconsejable hacer copias de seguridad al menos una vez al día, preferentemente en un servidor o una solución de almacenamiento distinta de la que alberga la producción.
 
-OVH ofrece una [gama de servidores dedicados](https://www.ovh.es/servidores_dedicados/storage/){.external} específica para operaciones de almacenamiento. Estos servidores disponen de un mínimo de cuatro discos duros, y en ellos es posible realizar el backup de infraestructuras alojadas tanto en OVH como en otro proveedor, en este último caso a través de la red pública de internet.
+OVHcloud ofrece una [gama de servidores dedicados](https://www.ovh.com/world/es/servidores_dedicados/storage/){.external} específica para operaciones de almacenamiento. Estos servidores disponen de un mínimo de cuatro discos duros, y en ellos es posible realizar el backup de infraestructuras alojadas tanto en OVHcloud como en otro proveedor, en este último caso a través de la red pública de internet.
 
-Esta guía explica cómo configurar un servidor de almacenamiento de OVH para adaptarlo a sus necesidades, cómo crear el árbol de directorios en el que se guardarán las copias de seguridad y, por último, cómo automatizar la copia de seguridad de los datos de dos servidores remotos mediante el protocolo SCP.
+Esta guía explica cómo configurar un servidor de almacenamiento de OVHcloud para adaptarlo a sus necesidades, cómo crear el árbol de directorios en el que se guardarán las copias de seguridad y, por último, cómo automatizar la copia de seguridad de los datos de dos servidores remotos mediante el protocolo SCP.
 
 
 ## Requisitos
@@ -26,10 +26,10 @@ Esta guía explica cómo configurar un servidor de almacenamiento de OVH para ad
 
 ### Hardware y software necesarios
 
-- Un [servidor de almacenamiento](https://www.ovh.es/servidores_dedicados/storage/){.external} de OVH.
-- Una infraestructura de producción ([VPS](https://www.ovh.es/vps/){.external}, [servidor dedicado](https://www.ovh.es/servidores_dedicados/){.external}, [instancia de Public Cloud](https://www.ovh.es/public-cloud/instancias/){.external}…).
+- Un [servidor de almacenamiento](https://www.ovh.com/world/es/servidores_dedicados/storage/){.external} de OVHcloud.
+- Una infraestructura de producción ([VPS](https://www.ovh.com/world/es/vps/){.external}, [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external}, [instancia de Public Cloud](https://www.ovh.com/world/es/public-cloud/instancias/){.external}…).
 - Conexión SSH configurada entre el servidor de almacenamiento y la infraestructura de producción.
-- Una [red privada](https://www.ovh.es/soluciones/vrack/){.external} entre los servidores (recomendado).
+- Una [red privada](https://www.ovh.com/world/es/soluciones/vrack/){.external} entre los servidores (recomendado).
 
 
 
@@ -37,9 +37,9 @@ Esta guía explica cómo configurar un servidor de almacenamiento de OVH para ad
 
 ### 1. Elegir el nivel de RAID adecuado
 
-Los [servidores de almacenamiento](https://www.ovh.es/servidores_dedicados/storage/){.external} de OVH incluyen varios discos duros en su configuración de hardware. Para este tutorial, vamos a utilizar un servidor con RAID por software (o softRAID) y cuatro discos con una capacidad de 6 TB cada uno.
+Los [servidores de almacenamiento](https://www.ovh.com/world/es/servidores_dedicados/storage/){.external} de OVHcloud incluyen varios discos duros en su configuración de hardware. Para este tutorial, vamos a utilizar un servidor con RAID por software (o softRAID) y cuatro discos con una capacidad de 6 TB cada uno.
 
-OVH permite elegir entre los siguientes niveles de RAID para configurar el almacenamiento de los datos: 0, 1, 5, 6 y 10. Cada uno de estos niveles presenta ventajas e inconvenientes en cuanto a rendimiento y resiliencia. Con cuatro discos podríamos elegir entre RAID 5, 6 o 10 para almacenar nuestros datos eficazmente (en este caso, RAID 0 y 1 no son adecuados).
+OVHcloud permite elegir entre los siguientes niveles de RAID para configurar el almacenamiento de los datos: 0, 1, 5, 6 y 10. Cada uno de estos niveles presenta ventajas e inconvenientes en cuanto a rendimiento y resiliencia. Con cuatro discos podríamos elegir entre RAID 5, 6 o 10 para almacenar nuestros datos eficazmente (en este caso, RAID 0 y 1 no son adecuados).
 
 A continuación ofrecemos más información sobre estos niveles de RAID.
 
@@ -66,8 +66,8 @@ No existe un modo RAID mejor que otro, ya que cada uno responde a necesidades di
 
 ### 2. Instalar y configurar el servidor
 
-Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e instale el servidor.
- Como indicamos al principio, utilizaremos Debian 9.4. Para más información, consulte nuestra guía [Primeros pasos con un servidor dedicado](https://docs.ovh.com/es/dedicated/primeros-pasos-servidor-dedicado/#instalar-o-reinstalar-el-servidor-dedicado_1){.external}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} e instale el servidor.
+ Como indicamos al principio, utilizaremos Debian 9.4. Para más información, consulte nuestra guía [Primeros pasos con un servidor dedicado](../primeros-pasos-servidor-dedicado/#instalar-o-reinstalar-el-servidor-dedicado_1){.external}.
 
 Una vez seleccionado el sistema operativo, marque la casilla `Personalizar la configuración de las particiones`{.action} y haga clic en `Siguiente`{.action}.
 
@@ -125,7 +125,7 @@ El servidor de almacenamiento ya estará listo para recibir las copias de seguri
 
 > [!primary]
 > 
-> Si sus infraestructuras de producción están alojadas en OVH y disponen de nuestra solución de red privada vRack, podrá configurarlas para evitar que sus copias de seguridad pasen por la red pública (internet).
+> Si sus infraestructuras de producción están alojadas en OVHcloud y disponen de nuestra solución de red privada vRack, podrá configurarlas para evitar que sus copias de seguridad pasen por la red pública (internet).
 >
 
 Para ello, deberá conectarse por SSH a sus servidores de producción, que a su vez se conectarán al servidor de almacenamiento mediante el protocolo SCP. Es necesario que todos los recursos puedan comunicarse por SSH.
@@ -188,6 +188,6 @@ Para más información sobre la sintaxis de una tarea crontab, consulte un sitio
 
 ## Conclusiones
 
-En este tutorial hemos explicado cómo configurar un servidor de almacenamiento de OVH adaptado a sus necesidades, en el que hemos automatizado de forma básica el backup de los archivos. Esta es una medida importante para proteger su negocio evitando una posible pérdida de datos.
+En este tutorial hemos explicado cómo configurar un servidor de almacenamiento de OVHcloud adaptado a sus necesidades, en el que hemos automatizado de forma básica el backup de los archivos. Esta es una medida importante para proteger su negocio evitando una posible pérdida de datos.
 
-Como ya hemos mencionado anteriormente, existen otras formas, tanto gratuitas como de pago, de optimizar las copias de seguridad. Si sus datos son especialmente sensibles, le recomendamos también que los cifre y que solo utilice redes privadas, como el vRack de OVH, para su transmisión.
+Como ya hemos mencionado anteriormente, existen otras formas, tanto gratuitas como de pago, de optimizar las copias de seguridad. Si sus datos son especialmente sensibles, le recomendamos también que los cifre y que solo utilice redes privadas, como el vRack de OVHcloud, para su transmisión.

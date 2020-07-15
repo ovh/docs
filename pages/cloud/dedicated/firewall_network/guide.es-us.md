@@ -9,14 +9,14 @@ section: 'Red e IP'
 
 ## Objetivo
 
-Para proteger su infraestructura mundial y los servidores de sus clientes, OVH ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el firewall de red. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
+Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcloud ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el firewall de red. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
 
 **Esta guía explica cómo configurar el firewall de red.**
 
 
 > [!primary]
 >
-> Para más información sobre la solución anti-DDoS de OVH, consulte la página <https://www.ovh.es/anti-ddos/>.
+> Para más información sobre la solución anti-DDoS de OVHcloud, consulte la página <https://www.ovh.com/world/es/anti-ddos/>.
 > 
 
 ![El VAC en detalle](images/vac-inside.png){.thumbnail}
@@ -24,8 +24,8 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVH o
 
 ## Requisitos
 
-- Tener contratado un servicio de OVH que utilice el firewall de red ([servidores dedicados](https://www.ovh.es/servidores_dedicados/){.external}, [VPS](https://www.ovh.es/vps/){.external}, [instancias de Public Cloud](https://www.ovh.es/public-cloud/instancias/){.external}, [Private Cloud](https://www.ovh.es/private-cloud/){.external}, [IP Failover](https://www.ovh.es/servidores_dedicados/ip_failover.xml){.external}...).
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Dedicado`{.action}.
+- Tener contratado un servicio de OVH que utilice el firewall de red ([servidores dedicados](https://www.ovh.com/world/es/servidores_dedicados/){.external}, [VPS](https://www.ovh.com/world/es/vps/){.external}, [instancias de Public Cloud](https://www.ovh.com/world/es/public-cloud/instancias/){.external}, [Private Cloud](https://www.ovh.com/world/es/private-cloud/){.external}, [IP Failover](https://www.ovh.com/world/es/servidores_dedicados/ip_failover.xml){.external}...).
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la sección `Dedicado`{.action}.
 
 
 ## Procedimiento
@@ -39,15 +39,15 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVH o
 
 En la columna izquierda del área de cliente de OVH, haga clic en `IP`{.action}. En la pestaña `IP`{.action}, haga clic en el botón `···`{.action} situado al final de la línea correspondiente a la IPv4 en la que quiera activar el cortafuegos y seleccione `Crear firewall`{.action}.
 
-![Activación del firewall de red](images/firewall_creation.png){.thumbnail}
+![Activación del firewall de red](images/firewall_creation_2020.png){.thumbnail}
 
 Confirme la operación haciendo clic en `Aceptar`{.action}.
 
-![Confirmación](images/creationvalid.png){.thumbnail}
+![Confirmación](images/creationvalid_2020.png){.thumbnail}
 
 Una vez creado el firewall, es necesario activarlo y configurarlo. Para ello, vuelva a hacer clic en el botón `···`{.action} situado al final de la línea correspondiente a la IPv4 y seleccione `Activar el firewall`{.action} (1). Repita el proceso y seleccione `Configurar el firewall`{.action} (2).
 
-![Activación de la configuración](images/activationconfig.png){.thumbnail}
+![Activación de la configuración](images/activationconfig_2020.png){.thumbnail}
 
 Es posible añadir hasta **20 reglas por IP**.
 
@@ -70,7 +70,7 @@ Es posible añadir hasta **20 reglas por IP**.
 
 Para añadir una regla, haga clic en el botón `Añadir una regla`{.action}.
 
-![Añadir una regla](images/ajoutregle1.png){.thumbnail}
+![Añadir una regla](images/ajoutregle1_2020.png){.thumbnail}
 
 Para cada regla es necesario seleccionar:
 
@@ -82,7 +82,7 @@ Para cada regla es necesario seleccionar:
 - el puerto de destino (TCP y UDP)
 - las opciones TCP (solo TCP)
 
-![Añadir una regla](images/ajoutregle4.png){.thumbnail}
+![Añadir una regla](images/ajoutregle4_2020.png){.thumbnail}
 
 
 > [!primary]
@@ -95,7 +95,7 @@ Para cada regla es necesario seleccionar:
 
 Para dejar abiertos únicamente los puertos SSH (22), HTTP (80), HTTPS (443) y UDP (10000), autorizando el ICMP, utilice las reglas de la siguiente imagen:
 
-![Ejemplo de configuración](images/exemple.png){.thumbnail}
+![Ejemplo de configuración](images/exemple_2020.png){.thumbnail}
 
 Las reglas se ordenan cronológicamente de 0 (la primera regla leída) a 19 (la última regla leída). La cadena deja de recorrerse en el momento en el que pueda aplicarse una regla al paquete recibido.
 
@@ -108,4 +108,4 @@ Por ejemplo, para un paquete destinado al puerto 80/TCP, se aplicará la regla 2
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/){.external}.

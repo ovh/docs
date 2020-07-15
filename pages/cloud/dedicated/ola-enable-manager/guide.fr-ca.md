@@ -24,32 +24,32 @@ La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour
 
 ## En pratique
 
-Pour commencer à configurer OLA, connectez-vous à [votre espace client OVHcloud](https://www.ovh.com/manager/){.external}. Cliquez sur le bouton `Serveur`{.action} en haut de l'écran, puis sélectionnez le serveur en question dans le menu déroulant de la barre latérale gauche. Cliquez ensuite sur l'onglet `Interfaces réseau`{.action}. Une fois que vous avez confirmé que le serveur n'est connecté à aucun vRack, cliquez sur `J'ai effectué cette opération, puis passez à l'étape suivante`{.action}.
+Pour commencer à configurer OLA, connectez-vous à [votre espace client OVHcloud](https://ca.ovh.com/manager/){.external}. Cliquez sur le bouton `Serveur`{.action} en haut de l'écran, puis sélectionnez le serveur en question dans le menu déroulant de la barre latérale gauche. Cliquez ensuite sur l'onglet `Interfaces réseau`{.action}. Une fois que vous avez confirmé que le serveur n'est connecté à aucun vRack, cliquez sur `J'ai effectué cette opération, puis passez à l'étape suivante`{.action}.
 
-![network interfaces](images/network_interfaces.png){.thumbnail}
+![network interfaces](images/network_interfaces_2020.png){.thumbnail}
 
 A l'étape 2, cliquez sur le bouton `Configurer`{.action}.
 
-![configure](images/configure.png){.thumbnail}
+![configure](images/configure_2020.png){.thumbnail}
 
 Sélectionnez à présent l'option `Agrégation privée`{.action}  et donnez un nom à votre interface. Validez les informations en cliquant sur `Suivant`{.action}.
-![private aggregation](images/private_aggregation.png){.thumbnail}
+![private aggregation](images/private_aggregation_2020.png){.thumbnail}
 
 A l'étape suivante, cochez toutes les interfaces que vous souhaitez agréger via OLA et cliquez sur `Suivant`{.action}.
 
-![interface select](images/interface_select.png){.thumbnail}
+![interface select](images/interface_select_2020.png){.thumbnail}
 
 Vérifiez, à l'étape suivante, que toutes les informations sont correctes puis cliquez sur  `Créer`{.action}.
 
-![overview](images/overview.png){.thumbnail}
+![overview](images/overview_2020.png){.thumbnail}
 
 L'opération peut prendre quelques minutes. Une fois celle-ci terminée, l'étape suivante consiste à configurer les interfaces dans votre système d'exploitation via une liaison NIC ou une équipe NIC. Pour connaître la méthode à appliquer, consultez les guides suivants qui la détaillent pour les systèmes d'exploitation les plus populaires :
 
-[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Debian 9](https://docs.ovh.com/fr/dedicated//ola-debian9/){.ref}
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Debian 9](../ola-debian9/){.ref}
 
-[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous CentOS 7](https://docs.ovh.com/fr/dedicated/ola-centos7/){.ref}
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous CentOS 7](../ola-centos7/){.ref}
 
-[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](https://docs.ovh.com/fr/dedicated/ola-w2k19/){.ref}
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](../ola-w2k19/){.ref}
 
 ## Aller plus loin
 

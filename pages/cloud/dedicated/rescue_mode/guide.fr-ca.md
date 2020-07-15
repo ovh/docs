@@ -17,12 +17,12 @@ Le mode rescue est un outil de votre serveur dédié. Il vous permet de démarre
 
 ## Prérequis
 
-- Avoir un accès en SSH (root) à votre [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
+- Avoir un accès en SSH (root) à votre [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}.
 
 
 ## En pratique
 
-Vous pouvez activer le mode rescue en vous connectant à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager/){.external}. Sélectionnez votre serveur en allant dans la partie `Dédié`{.action}, puis `Serveurs dédiés`{.action}. Cliquez ensuite successivement sur `État du serveur`{.action}, `Informations générales`{.action}, `…`{.action} et `Modifier`{.action} pour changer le mode de démarrage.
+Vous pouvez activer le mode rescue en vous connectant à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager/){.external}. Sélectionnez votre serveur en allant dans la partie `Dédié`{.action}, puis `Serveurs dédiés`{.action}. Cliquez ensuite successivement sur `État du serveur`{.action}, `Informations générales`{.action}, `…`{.action} et `Modifier`{.action} pour changer le mode de démarrage.
 
 ![Changer le mode de démarrage](images/rescue-mode-01.png){.thumbnail}
 
@@ -48,7 +48,7 @@ Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identi
 - partitions (système de fichiers) : vérification du système de fichiers du serveur ; 
 - partitions (explore) : lancement d’un navigateur pour explorer les fichiers. Il n’est pas possible de les éditer avec cet outil, mais vous pouvez en faire une sauvegarde ;
 - mémoire : vérification de la RAM installée (cette opération nécessite un certain temps) ;
-- réseau : vérification de la connexion à un système de référence interne à OVH ainsi que de la connexion à votre navigateur.
+- réseau : vérification de la connexion à un système de référence interne à OVHcloud ainsi que de la connexion à votre navigateur.
 
 ![Interface web du mode rescue](images/rescue-mode-04.png){.thumbnail}
 
@@ -57,7 +57,7 @@ Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identi
 
 > [!primary]
 > 
-> Si vous utilisez une clé SSH (active également dans votre espace client OVH), aucun mot de passe ne vous sera envoyé. Une fois le serveur en mode rescue, vous pourrez vous connecter directement avec votre clé SSH.
+> Si vous utilisez une clé SSH (active également dans votre espace client OVHcloud), aucun mot de passe ne vous sera envoyé. Une fois le serveur en mode rescue, vous pourrez vous connecter directement avec votre clé SSH.
 >
 
 Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identifiants de connexion en mode rescue. Vous devrez alors joindre votre serveur via les lignes de commande habituelles, mais en utilisant le mot de passe root du mode rescue au lieu du vôtre.
@@ -117,7 +117,7 @@ rescue:~# mount /dev/hda1 /mnt/
 
 #### Accéder à WinRescue
 
-Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identifiants de connexion en mode rescue. Pour les utiliser, vous devez télécharger et installer une console VNC ou utiliser le module `IPMI` dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager/){.external}.
+Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identifiants de connexion en mode rescue. Pour les utiliser, vous devez télécharger et installer une console VNC ou utiliser le module `IPMI` dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager/){.external}.
 
 ![WinRescue Windows](images/rescue-mode-06.png){.thumbnail}
 
@@ -136,7 +136,7 @@ Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identi
 |Diskpart|Un outil vous permettant de manipuler les partitions du serveur.|
 |SysInternal|Une suite logicielle de Microsoft vous permettant d’effectuer la maintenance du réseau et de gérer les processus.|
 |TestDisk|Une puissante application de récupération de données. Elle vous permet de récupérer et de modifier des partitions corrompues, de trouver des partitions perdues, de réparer un secteur de démarrage et même de reconstruire un MBR défectueux.|
-|FileZilla|Un client FTP open source. Il prend en charge les protocoles SSH et SSL, et dispose d'une interface glisser-déposer claire et intuitive. Il peut être utilisé pour transférer vos données vers un serveur FTP, comme la sauvegarde FTP fournie avec la plupart des modèles de serveurs OVH.|
+|FileZilla|Un client FTP open source. Il prend en charge les protocoles SSH et SSL, et dispose d'une interface glisser-déposer claire et intuitive. Il peut être utilisé pour transférer vos données vers un serveur FTP, comme la sauvegarde FTP fournie avec la plupart des modèles de serveurs OVHcloud.|
 |7-ZIP|Un utilitaire de compression et d'archivage de fichiers qui lit les formats suivants : ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR et Z. Il vous permet également de créer vos propres archives dans les formats suivants : BZIP2, GZIP, TAR, WIM, XZ, Z et ZIP.|
 
 ## Aller plus loin

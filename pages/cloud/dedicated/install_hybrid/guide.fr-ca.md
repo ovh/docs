@@ -9,7 +9,7 @@ section: 'RAID & disques'
 
 ## Objectif
 
-Chez OVH, vous pouvez louer des [serveurs dédiés](https://www.ovh.com/ca/fr/serveurs-dedies/){.external} possédant une grappe de disques SATA et une grappe de disques SSD. Nous appelons ces types de serveurs des **serveurs hybrides**.
+Chez OVHcloud, vous pouvez louer des [serveurs dédiés](https://www.ovh.com/ca/fr/serveurs-dedies/){.external} possédant une grappe de disques SATA et une grappe de disques SSD. Nous appelons ces types de serveurs des **serveurs hybrides**.
 
 **Ce guide vous explique comment spécifier la grappe de disques sur laquelle installer le système d'exploitation.**
 
@@ -22,9 +22,9 @@ Chez OVH, vous pouvez louer des [serveurs dédiés](https://www.ovh.com/ca/fr/se
 
 ## Prérequis
 
-* Disposer d’un [serveur hybride OVH](https://www.ovh.com/ca/fr/serveurs-dedies/){.external}.
-* Avoir accès à l’[API OVH](https://ca.api.ovh.com/console/){.external}.
-* Être connecté à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Disposer d’un [serveur hybride OVHcloud](https://www.ovh.com/ca/fr/serveurs-dedies/){.external}.
+* Avoir accès à l’[API OVHcloud](https://ca.api.ovh.com/console/){.external}.
+* Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 > [!warning]
 >
@@ -33,7 +33,7 @@ Chez OVH, vous pouvez louer des [serveurs dédiés](https://www.ovh.com/ca/fr/se
 
 ## En pratique
 
-### Se connecter à l'API OVH et récupérer le nom du serveur
+### Se connecter à l'API OVHcloud et récupérer le nom du serveur
 
 Une fois connecté sur <https://ca.api.ovh.com/console/>, vous pourrez récupérer le nom du serveur via l'API suivante :
 
@@ -89,7 +89,7 @@ Après avoir spécifié toutes vos options, cliquez sur le bouton `Execute`{.act
 
 ![Installation](images/install-01.png){.thumbnail}
 
-Votre système d'exploitation va maintenant être installé. Vous pouvez vérifier la progression cette installation en actualisant la page de votre serveur dans l’[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} ou en effectuant l'appel API suivant, en saisissant les références de votre serveur dans le champ **serviceName**, puis en cliquant sur le bouton `Execute`{.action}:
+Votre système d'exploitation va maintenant être installé. Vous pouvez vérifier la progression cette installation en actualisant la page de votre serveur dans l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} ou en effectuant l'appel API suivant, en saisissant les références de votre serveur dans le champ **serviceName**, puis en cliquant sur le bouton `Execute`{.action}:
 
 > [!api]
 >

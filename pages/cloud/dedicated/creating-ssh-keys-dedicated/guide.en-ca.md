@@ -21,8 +21,8 @@ Please note that SSH keys are not used for authentication on servers running the
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/) in your OVHcloud account
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- a [dedicated server](https://www.ovh.com/ca/en/dedicated_servers/) in your OVHcloud account
 - administrative access (root) via SSH
 
 ## Instructions

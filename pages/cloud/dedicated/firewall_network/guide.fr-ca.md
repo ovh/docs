@@ -9,14 +9,14 @@ section: 'Réseau & IP'
 
 ## Objectif
 
-Pour protéger son infrastructure globale et les serveurs de ses clients, OVH propose un pare-feu paramétrable et intégré à la solution **Anti-DDoS** : le Firewall Network. Cette option vous permet de limiter l'exposition de votre service aux attaques provenant du réseau public.
+Pour protéger son infrastructure globale et les serveurs de ses clients, OVHcloud propose un pare-feu paramétrable et intégré à la solution **Anti-DDoS** : le Firewall Network. Cette option vous permet de limiter l'exposition de votre service aux attaques provenant du réseau public.
 
 **Ce guide vous explique comment configurer votre Firewall Network.**
 
 
 > [!primary]
 >
-> Pour plus d'informations sur notre solution Anti-DDoS, cliquez ici : <https://www.ovh.com/fr/anti-ddos/>.
+> Pour plus d'informations sur notre solution Anti-DDoS, cliquez ici : <https://www.ovh.com/ca/fr/anti-ddos/>.
 > 
 
 ![Le VAC en détail](images/vac-inside.png){.thumbnail}
@@ -24,8 +24,8 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVH pr
 
 ## Prérequis
 
-- Posséder un service OVH bénéficiant d’un Firewall Network ([ serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, [ VPS](https://www.ovh.com/fr/vps/){.external},[ instance Public Cloud](https://www.ovh.com/fr/public-cloud/){.external}, [Private Cloud[IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external}, etc.)
-- Avoir accès à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Posséder un service OVHcloud bénéficiant d’un Firewall Network ([ serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}, [ VPS](https://www.ovh.com/ca/fr/vps/){.external},[ instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/){.external}, [Private Cloud](https://www.ovh.com/ca/fr/cloud-prive){.externalP}, [IP fail-over](https://www.ovh.com/ca/fr/serveurs_dedies/ip_failover.xml){.external}, etc.)
+- Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## En pratique
@@ -37,17 +37,17 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVH pr
 > Le Firewall Network protège les adresses IP associées à une machine. Vous devez donc configurer chaque adresse IP indépendamment. Une configuration globale du serveur est impossible.
 > 
 
-`{.action}Connectez-vous à[ l’espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `IP`{.action} et cliquez sur ` ...  pour activer le pare-feu sur une adresse IPv4.
+`{.action}Connectez-vous à[ l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `IP`{.action} et cliquez sur ` ...  pour activer le pare-feu sur une adresse IPv4.
 
-![Activation du Firewall Network](images/firewall_creation.png){.thumbnail}
+![Activation du Firewall Network](images/firewall_creation_2020.png){.thumbnail}
 
 Vous serez alors invité à confirmer votre action.
 
-![Confirmation](images/creationvalid.png){.thumbnail}
+![Confirmation](images/creationvalid_2020.png){.thumbnail}
 
 Cliquez ensuite sur ` Activer le firewall`{.action} (1), puis sur ` Configurer le firewall`{.action} (2) pour commencer le paramétrage.
 
-![Activation de la configuration](images/activationconfig.png){.thumbnail}
+![Activation de la configuration](images/activationconfig_2020.png){.thumbnail}
 
 Vous pouvez configurer jusqu'à **20 règles par adresse IP**.
 
@@ -70,7 +70,7 @@ Vous pouvez configurer jusqu'à **20 règles par adresse IP**.
 
 Pour ajouter une règle, cliquez sur ` Ajouter une règle`{.action}.
 
-![Ajouter une règle](images/ajoutregle1.png){.thumbnail}
+![Ajouter une règle](images/ajoutregle1_2020.png){.thumbnail}
 
 Pour chaque règle, vous devez choisir :
 - une priorité (de 0 à 19, 0 étant la première règle à appliquer) ;
@@ -81,7 +81,7 @@ Pour chaque règle, vous devez choisir :
 - le port de destination (TCP uniquement) ;
 - les options TCP (TCP uniquement).
 
-![Détails sur l'ajout d'une règle](images/ajoutregle4.png){.thumbnail}
+![Détails sur l'ajout d'une règle](images/ajoutregle4_2020.png){.thumbnail}
 
 
 > [!primary]
@@ -94,7 +94,7 @@ Pour chaque règle, vous devez choisir :
 
 Pour vous assurer que seuls les ports SSH (22), HTTP (80), HTTPS (443) et UDP (10 000) restent ouverts lors de l'autorisation de l'ICMP, suivez les règles ci-dessous :
 
-![Exemple de configuration](images/exemple.png){.thumbnail}
+![Exemple de configuration](images/exemple_2020.png){.thumbnail}
 
 Les règles sont triées de 0 (la première règle lue) à 19 (la dernière). La chaîne cesse d'être analysée dès qu'une règle est appliquée au paquet reçu.
 

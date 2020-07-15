@@ -9,9 +9,9 @@ section: Tutoriel
 
 Vos données informatiques sont sensibles : une perte ou une altération de celles-ci peut vite entraîner des situations problématiques pour votre activité. Le risque zéro n'existant pas, il est conseillé de réaliser des sauvegardes au moins quotidiennement et, de préférence, dans un serveur ou une solution de stockage différent de vos infrastructures de production.
 
-OVH propose une gamme de [serveurs dédiés](https://www.ovh.com/fr/serveurs_dedies/stockage/){.external} adaptés à vos opérations de stockage et dotés au minimum de quatre disques durs. Il est possible d'utiliser ces ressources pour sauvegarder une infrastructure hébergée chez OVH ou chez un autre prestataire, via le réseau Internet public.
+OVHcloud propose une gamme de [serveurs dédiés](https://www.ovh.com/ca/fr/serveurs_dedies/stockage/){.external} adaptés à vos opérations de stockage et dotés au minimum de quatre disques durs. Il est possible d'utiliser ces ressources pour sauvegarder une infrastructure hébergée chez OVHcloud ou chez un autre prestataire, via le réseau Internet public.
 
-Dans ce tutoriel, vous configurerez un serveur de stockage OVH pour répondre à vos besoins, créerez l'arborescence de réception des sauvegardes, puis automatiserez la sauvegarde des données de deux serveurs distants via le protocole SCP.
+Dans ce tutoriel, vous configurerez un serveur de stockage OVHcloud pour répondre à vos besoins, créerez l'arborescence de réception des sauvegardes, puis automatiserez la sauvegarde des données de deux serveurs distants via le protocole SCP.
 
 
 ## Prérequis
@@ -26,10 +26,10 @@ Dans ce tutoriel, vous configurerez un serveur de stockage OVH pour répondre à
 
 ### Ce que vous devez avoir
 
-- Un [serveur de stockage OVH](https://www.ovh.com/fr/serveurs_dedies/stockage/){.external}.
-- Une infrastructure de production ([VPS](https://www.ovh.com/fr/vps/){.external}, [serveurs dédiés](https://www.ovh.com/fr/serveurs_dedies/){.external}, [Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external}…).
+- Un [serveur de stockage OVHcloud](https://www.ovh.com/ca/fr/serveurs_dedies/stockage/){.external}.
+- Une infrastructure de production ([VPS](https://www.ovh.com/ca/fr/vps/){.external}, [serveurs dédiés](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}, [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external}…).
 - Une connexion SSH configurée entre le serveur de stockage et l'infrastructure de production.
-- Conseillé : un réseau privé entre vos serveurs ([OVH vRack](https://www.ovh.com/fr/solutions/vrack/){.external}).
+- Conseillé : un réseau privé entre vos serveurs ([OVHcloud vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}).
 
 
 
@@ -37,9 +37,9 @@ Dans ce tutoriel, vous configurerez un serveur de stockage OVH pour répondre à
 
 ### Étape 1 : choisissez le mode RAID approprié
 
-OVH dispose d'une gamme de [serveurs de stockage](https://www.ovh.com/fr/serveurs_dedies/stockage/){.external} dont les configurations matérielles contiennent plusieurs disques durs. Dans notre exemple, nous possédons un RAID logiciel (ou _soft RAID_) de quatre disques d'une capacité de 6 To chacun.
+OVHcloud dispose d'une gamme de [serveurs de stockage](https://www.ovh.com/ca/fr/serveurs_dedies/stockage/){.external} dont les configurations matérielles contiennent plusieurs disques durs. Dans notre exemple, nous possédons un RAID logiciel (ou _soft RAID_) de quatre disques d'une capacité de 6 To chacun.
 
-OVH vous permet de choisir la configuration de stockage des données, en proposant les RAID 0, 1, 5, 6 et 10. Chacun de ces modes a ses avantages et inconvénients en matière de performance et de résilience. Ainsi, avec quatre disques, nous pouvons stocker des informations efficacement en RAID 5, 6 ou 10 (les RAID 0 et 1 ne sont ici pas pertinents).
+OVHcloud vous permet de choisir la configuration de stockage des données, en proposant les RAID 0, 1, 5, 6 et 10. Chacun de ces modes a ses avantages et inconvénients en matière de performance et de résilience. Ainsi, avec quatre disques, nous pouvons stocker des informations efficacement en RAID 5, 6 ou 10 (les RAID 0 et 1 ne sont ici pas pertinents).
 
 Voici quelques explications sur ces types de RAID.
 
@@ -66,7 +66,7 @@ Il n'existe pas de RAID meilleur que les autres, tous répondent à des besoins 
 
 ### Étape 2 : installez et configurez le serveur
 
-Rendez-vous dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} et installez votre serveur. Comme indiqué au début, nous allons utiliser Debian 9.4. Référez-vous à notre guide des [premiers pas sur un serveur dédié](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#installation-ou-reinstallation-de-votre-serveur-dedie_1){.external} pour plus d'informations.
+Rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et installez votre serveur. Comme indiqué au début, nous allons utiliser Debian 9.4. Référez-vous à notre guide des [premiers pas sur un serveur dédié](../premiers-pas-serveur-dedie/#installation-ou-reinstallation-de-votre-serveur-dedie_1){.external} pour plus d'informations.
 
 Une fois le système sélectionné pour l'installation, cochez la case `Personnaliser la configuration des partitions`{.action}.
 
@@ -124,7 +124,7 @@ Le serveur de stockage est maintenant prêt à recevoir vos différentes sauvega
 
 > [!primary]
 > 
-> Si vos infrastructures de production sont hébergées chez OVH et disposent de notre solution de réseaux privés vRack, n'hésitez pas à les configurer en ce sens. Ainsi, vos sauvegardes ne transiteront pas sur le réseau public (Internet).
+> Si vos infrastructures de production sont hébergées chez OVHcloud et disposent de notre solution de réseaux privés vRack, n'hésitez pas à les configurer en ce sens. Ainsi, vos sauvegardes ne transiteront pas sur le réseau public (Internet).
 >
 
 Le principe de cette étape est de se connecter via SSH à vos serveurs de productions, qui eux-mêmes se connecteront sur votre serveur de stockage via le protocole SCP. Pour cela, toutes ces ressources doivent pouvoir communiquer ensemble via SSH.
@@ -187,6 +187,6 @@ La syntaxe d'une *crontab* est particulière ; nous ne la détaillerons pas ici 
 
 ## Conclusion
 
-Vous venez de configurer un serveur de stockage OVH correspondant à vos besoins et d'automatiser de manière basique la sauvegarde de fichiers sur celui-ci. Il s'agit d'une étape importante pour éviter les pertes de données et sécuriser votre activité.
+Vous venez de configurer un serveur de stockage OVHcloud correspondant à vos besoins et d'automatiser de manière basique la sauvegarde de fichiers sur celui-ci. Il s'agit d'une étape importante pour éviter les pertes de données et sécuriser votre activité.
 
-Comme expliqué lors de ce tutoriel, il existe d'autres méthodes gratuites ou payantes pour optimiser davantage vos sauvegardes. Si vos données sont sensibles, nous vous conseillons également de les chiffrer et de transiter uniquement via des réseaux privés, comme le vRack d'OVH.
+Comme expliqué lors de ce tutoriel, il existe d'autres méthodes gratuites ou payantes pour optimiser davantage vos sauvegardes. Si vos données sont sensibles, nous vous conseillons également de les chiffrer et de transiter uniquement via des réseaux privés, comme le vRack d'OVHcloud.

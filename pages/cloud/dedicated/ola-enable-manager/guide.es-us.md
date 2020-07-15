@@ -22,33 +22,33 @@ Asegúrese de que ha contratado el servicio OLA a través del área de cliente a
 
 ## Procedimiento
 
-Para comenzar con la configuración de OLA, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/manager/){.external}.  Haga clic en el botón **Servidor** en la parte superior de la pantalla y seleccione el servidor en cuestión del menú desplegable de la izquierda. Haga clic en la pestaña **Interfaces de red**. Una vez haya confirmado que el servidor no está conectado a ningún vRack, haga clic en el botón **Ya he hecho eso, pasar al siguiente paso**. 
+Para comenzar con la configuración de OLA, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/manager/){.external}.  Haga clic en el botón **Servidor** en la parte superior de la pantalla y seleccione el servidor en cuestión del menú desplegable de la izquierda. Haga clic en la pestaña **Interfaces de red**. Una vez haya confirmado que el servidor no está conectado a ningún vRack, haga clic en el botón **Ya he hecho eso, pasar al siguiente paso**. 
 
-![network interfaces](images/network_interfaces.png){.thumbnail}
+![network interfaces](images/network_interfaces_2020.png){.thumbnail}
 
 En el paso «Configruación», haga clic en el botón **Configurar**.
 
-![configure](images/configure.png){.thumbnail}
+![configure](images/configure_2020.png){.thumbnail}
 
 Seleccione la opción «Private aggregation» y póngale un nombre a su interfaz. Haga clic en el botón **Siguiente** cuando haya verificado que todo está correcto.
 
-![private aggregation](images/private_aggregation.png){.thumbnail}
+![private aggregation](images/private_aggregation_2020.png){.thumbnail}
 
 En la pestaña siguiente, compruebe las interfaces que quiere añadir en OLA y haga clic en **Siguiente**.
 
-![interface select](images/interface_select.png){.thumbnail}
+![interface select](images/interface_select_2020.png){.thumbnail}
 
 Revise ahora el paso «Resumen de la configuración». Una vez haya confirmado que toda la información es correcta, haga clic en el botón **Crear**.
 
-![Presentación](images/overview.png){.thumbnail}
+![Presentación](images/overview_2020.png){.thumbnail}
 
 La operación puede tardar unos minutos. Cuando haya terminado, el paso siguiente será configurar las interfaces de su sistema operativo con un vínculo NIC o un equipo NIC. Para saber cómo proceder, puede consultar las siguientes guías diseñadas para los sistemas operativos más populares:
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9](https://docs.ovh.com/es/dedicated/ola-debian9/){.ref}
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9](../ola-debian9/){.ref}
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en CentOS 7](https://docs.ovh.com/es/dedicated/ola-centos7/){.ref}
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en CentOS 7](../ola-centos7/){.ref}
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en Windows Server 2019](https://docs.ovh.com/es/dedicated/ola-w2k19/){.ref}
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en Windows Server 2019](../ola-w2k19/){.ref}
 
 ## Conclusiones
 

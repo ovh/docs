@@ -11,7 +11,7 @@ section: 'Gestion du serveur'
 
 Le RAID (Redundant Array of Independent Disks) est un ensemble de techniques qui atténuent la perte de données sur un serveur, en répliquant les informations sur plusieurs disques.
 
-Le niveau de RAID par défaut des serveurs OVH est le RAID 1\. Celui-ci double le volume occupé par vos données, réduisant ainsi l'espace disponible.
+Le niveau de RAID par défaut des serveurs OVHcloud est le RAID 1\. Celui-ci double le volume occupé par vos données, réduisant ainsi l'espace disponible.
 
 **Découvrez comment paramétrer les disques de votre serveur en RAID 0, afin d'exploiter le maximum d’espace utilisable.**
 
@@ -22,18 +22,18 @@ Le niveau de RAID par défaut des serveurs OVH est le RAID 1\. Celui-ci double l
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} avec un RAID matériel.
+- Disposer d’un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external} avec un RAID matériel.
 - Avoir accès à votre serveur via SSH en tant qu'administrateur (root)
 
 ## En pratique
 
-### Utiliser votre espace client OVH
+### Utiliser votre espace client OVHcloud
 
-Dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Dédié`{.action} et sélectionnez votre serveur.
+Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Dédié`{.action} et sélectionnez votre serveur.
 
 Ensuite, sous l'onglet `État du serveur`{.action}, cliquez sur le bouton `Réinstaller`{.action} pour installer un nouveau système d'exploitation avec votre configuration RAID 0 personnalisée.
 
-Sélectionnez **Installer depuis un template OVH** puis cliquez sur `Suivant`{.action}.
+Sélectionnez **Installer depuis un template OVHcloud** puis cliquez sur `Suivant`{.action}.
 
 ![MegaRAID](images/server_installation_raid0_01.png){.thumbnail}
 
@@ -63,11 +63,11 @@ df -h
 
 ### Utiliser le mode rescue
 
-Dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Dédié`{.action} et sélectionnez votre serveur.
+Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Dédié`{.action} et sélectionnez votre serveur.
 
 Sous l'onglet `État du serveur`{.action}, cliquez sur le bouton `Modifier`{.action} pour changer le système de démarrage.
 
-![MegaRAID](images/rescue_mode_raid0_01.png){.thumbnail}
+![MegaRAID](images/rescue_mode_raid0_01_2020.png){.thumbnail}
 
 Ensuite, sélectionnez `Démarrer en mode rescue`{.action} et choisissez `rescue64-pro`{.action} dans la liste déroulante.
 
@@ -79,9 +79,9 @@ Cliquez sur `Suivant`{.action} puis sur `Confirmer`{.action} dans l'écran qui s
 
 ![MegaRAID](images/rescue_mode_raid0_03.png){.thumbnail}
 
-Cliquez sur le bouton `Redémarrer`{.action} dans [l’espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Cliquez sur le bouton `Redémarrer`{.action} dans [l’espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
-![MegaRAID](images/server_installation_raid0_06.png){.thumbnail}
+![MegaRAID](images/server_installation_raid0_06_2020.png){.thumbnail}
 
 Lorsque votre serveur redémarre, connectez-vous à ce dernier via SSH en utilisant vos identifiants du mode recue. Ceux-ci vous ont été envoyés à l’adresse e-mail fournie précédemment.
 
@@ -114,10 +114,10 @@ MegaCli -LDInfo -Lall -a0 |grep -i size
 
 ## Aller plus loin
 
-[« Remplacer à chaud un disque sur un serveur en RAID matériel. »](https://docs.ovh.com/fr/dedicated/hotswap-raid-hard/){.external}
+[« Remplacer à chaud un disque sur un serveur en RAID matériel. »](../hotswap-raid-hard/){.external}
 
-[« Remplacer à chaud un disque sur un serveur en RAID logiciel. »](https://docs.ovh.com/fr/dedicated/hotswap-raid-soft/){.external}
+[« Remplacer à chaud un disque sur un serveur en RAID logiciel. »](../hotswap-raid-soft/){.external}
 
-[« Gestion du RAID matériel. »](https://docs.ovh.com/fr/dedicated/raid-hard/){.external} 
+[« Gestion du RAID matériel. »](../raid-hard/){.external} 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

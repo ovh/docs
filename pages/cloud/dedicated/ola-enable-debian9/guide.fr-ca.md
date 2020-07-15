@@ -15,7 +15,7 @@ Découvrez comment regrouper vos NIC (Network Interface Controller) pour les uti
 
 ## Prérequis
 
-- [Comment configurer votre NIC pour la fonctionnalité OVHcloud Link Aggregation depuis l’espace client d’OVHcloud](https://docs.ovh.com/fr/dedicated/ola-manager){.external}
+- [Comment configurer votre NIC pour la fonctionnalité OVHcloud Link Aggregation depuis l’espace client d’OVHcloud](../ola-manager){.external}
 
 > [!warning]
 >
@@ -28,9 +28,9 @@ Découvrez comment regrouper vos NIC (Network Interface Controller) pour les uti
 
 ## En pratique
 
-Étant donné que nous avons une configuration privée-privée pour nos NIC sur OLA, il est impossible de se connecter en SSH au serveur. Par conséquent, vous devrez utiliser l’outil IPMI pour accéder au serveur. Pour cela, vous devez d'abord vous connecter à [l’espace client d’OVHcloud](https://www.ovh.com/manager/){.external}.  Sélectionnez ensuite le serveur que vous souhaitez configurer dans la barre latérale gauche et cliquez sur l’onglet `IPMI`{.action}.
+Étant donné que nous avons une configuration privée-privée pour nos NIC sur OLA, il est impossible de se connecter en SSH au serveur. Par conséquent, vous devrez utiliser l’outil IPMI pour accéder au serveur. Pour cela, vous devez d'abord vous connecter à [l’espace client d’OVHcloud](https://ca.ovh.com/manager/){.external}.  Sélectionnez ensuite le serveur que vous souhaitez configurer dans la barre latérale gauche et cliquez sur l’onglet `IPMI`{.action}.
 
-![remote kvm](images/remote_kvm.png){.thumbnail}
+![remote kvm](images/remote_kvm_2020.png){.thumbnail}
 
 Cliquez ensuite sur le bouton `Depuis un applet Java (KVM)`{.action}. Un logiciel JNLP sera téléchargé. Lancez le logiciel pour accéder à l’IPMI. Connectez-vous en utilisant les informations d’identification associées au serveur.
 

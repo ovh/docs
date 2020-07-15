@@ -15,7 +15,7 @@ El servicio Real Time Monitoring (RTM) le permite supervisar parcialmente su ser
 
 ## Requisitos
 
-- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager)
 - Tener acceso root al servidor por SSH (o por interfaz gráfica de usuario)
 
 
@@ -23,7 +23,7 @@ El servicio Real Time Monitoring (RTM) le permite supervisar parcialmente su ser
 
 > [!primary]
 >
-> Algunas restricciones del firewall podrían impedir la supervisión de la infraestructura, aunque haya instalado RTM. Por lo tanto, no olvide autorizar el acceso al servidor de las IP de monitorización de OVHcloud. En [esta guía](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh) encontrará más información.
+> Algunas restricciones del firewall podrían impedir la supervisión de la infraestructura, aunque haya instalado RTM. Por lo tanto, no olvide autorizar el acceso al servidor de las IP de monitorización de OVHcloud. En [esta guía](../monitoring-ip-ovh) encontrará más información.
 > 
 
 ### RTM en Linux
@@ -286,9 +286,9 @@ Una vez haya instalado RTM correctamente, podrá ver los datos de monitorizació
 
 ## Más información
 
-[Direcciones IP de monitorización de OVHcloud](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh)
+[Direcciones IP de monitorización de OVHcloud](../monitoring-ip-ovh)
 
-[Visualizar sus datos](https://docs.ovh.com/gb/en/metrics/usecase-visualize)
+[Visualizar sus datos](../metrics/usecase-visualize)
 
 [Activar y utilizar el modo de rescate](../modo_de_rescate/)
 

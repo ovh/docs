@@ -16,8 +16,8 @@ Al instalar un sistema operativo Windows Server, es posible que la clave de acti
 
 ## Requisitos
 
-- Disponer de un [servidor dedicado](https://www.ovh.es/servidores_dedicados/){.external} con Windows instalado.
-- Disponer de una licencia Windows SPLA o [contratar una](https://www.ovh.es/servidores_dedicados/precios-licencias-windows-2014.xml){.external}.
+- Disponer de un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external} con Windows instalado.
+- Disponer de una licencia Windows SPLA o [contratar una](https://www.ovh.com/world/es/servidores_dedicados/precios-licencias-windows-2014.xml){.external}.
 - Tener acceso al escritorio remoto.
 
 
@@ -98,4 +98,4 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/){.external}.

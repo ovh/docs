@@ -15,7 +15,7 @@ Les politiques anti-spam sont de plus en plus strictes. Afin de fluidifier vos e
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d'en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux dans ces tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur.
+> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d'en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux dans ces tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur.
 >
 
 ## Prérequis
@@ -40,7 +40,7 @@ Dans le cas d'une infrastructure dédiée (serveur dédié, VPS, instance Public
 
 Pour plus d'informations sur la syntaxe du champ SPF, référez-vous au lien suivant : <http://www.openspf.org/SPF_Record_Syntax>.
 
-Vous pouvez bien entendu aller plus loin, en configurant le champ SPF d'un domaine bien spécifique ou en spécifiant une IPv6. Vous trouverez des explications dans notre guide spécifique sur [le champ SPF](https://docs.ovh.com/fr/emails/le-champ-spf/).
+Vous pouvez bien entendu aller plus loin, en configurant le champ SPF d'un domaine bien spécifique ou en spécifiant une IPv6. Vous trouverez des explications dans notre guide spécifique sur [le champ SPF](../domains/le-champ-spf/).
 
 ### Configurer le champ DKIM
 
@@ -52,9 +52,9 @@ Cette authentification s'effectue par une clef DKIM à ajouter dans votre zone D
 
 Toujours dans le but d'optimiser l'envoi et d'éviter le blocage de vos e-mails, un *reverse IP* doit être configuré avec votre nom de domaine.
 
-Pour modifier votre *reverse IP* dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, allez dans la partie `Dédié`{.action} puis `IP`{.action}. Choisissez ensuite une IPv4, cliquez sur l'engrenage à droite puis sur `Modifier le reverse`{.action} :
+Pour modifier votre *reverse IP* dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, allez dans la partie `Dédié`{.action} puis `IP`{.action}. Choisissez ensuite une IPv4, cliquez sur l'engrenage à droite puis sur `Modifier le reverse`{.action} :
 
-![Reverse IP](images/reverse_ip.png)
+![Reverse IP](images/reverse_ip_2020.png)
 
 Vous pourrez y ajouter votre nom de domaine comme *reverse*.
 

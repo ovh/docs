@@ -9,7 +9,7 @@ section: vRack
 
 ## Objetivo
 
-Además del direccionamiento IP privado, el [vRack](https://www.ovh.es/soluciones/vrack/){.external} permite dirigir el tráfico IP público a través del puerto vRack del servidor mediante un bloque de direcciones IP públicas.
+Además del direccionamiento IP privado, el [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external} permite dirigir el tráfico IP público a través del puerto vRack del servidor mediante un bloque de direcciones IP públicas.
 
 **Esta guía explica cómo configurar en el vRack un bloque de direcciones IP públicas.**
 
@@ -18,9 +18,9 @@ Además del direccionamiento IP privado, el [vRack](https://www.ovh.es/solucione
 
 * Tener un bloque público de direcciones IP reservado en su cuenta, con un mínimo de cuatro direcciones.
 * Haber elegido un rango de direcciones IP privadas.
-* Tener un [servidor compatible con el vRack](https://www.ovh.es/servidores_dedicados/){.external}.
-* Haber activado un servicio [vRack](https://www.ovh.es/soluciones/vrack/){.external}.
-* Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Tener un [servidor compatible con el vRack](https://www.ovh.com/world/es/servidores_dedicados/){.external}.
+* Haber activado un servicio [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external}.
+* Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Procedimiento
@@ -128,10 +128,10 @@ Reinicie el servidor para que se apliquen los cambios realizados.
 
 ## Más información
 
-[Configurar varios servidores dedicados en el vRack](https://docs.ovh.com/es/dedicated/configurar-vrack-en-servidor-dedicado/){.external}
+[Configurar varios servidores dedicados en el vRack](../configurar-vrack-en-servidor-dedicado/){.external}
 
-[Crear varias VLAN en el vRack](https://docs.ovh.com/es/dedicated/crear-vlan-vrack/){.external}
+[Crear varias VLAN en el vRack](../crear-vlan-vrack/){.external}
 
-[Configurar el vRack entre la solución Public Cloud y un servidor dedicado](https://docs.ovh.com/es/dedicated/configurar-vrack-entre-public-cloud-servidor-dedicado/){.external}
+[Configurar el vRack entre la solución Public Cloud y un servidor dedicado](../configurar-vrack-entre-public-cloud-servidor-dedicado/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com){.external}.

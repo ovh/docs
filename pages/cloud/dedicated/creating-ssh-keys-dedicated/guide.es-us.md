@@ -21,8 +21,8 @@ Tenga en cuenta que las claves SSH no se utilizan con fines de autenticación en
 
 ## Requisitos
 
-- Tener acceso al [panel de control de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
-- Tener un [servidor dedicado](https://www.ovh.es/servidores_dedicados/) en su cuenta de OVHcloud.
+- Tener acceso al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
+- Tener un [servidor dedicado](https://www.ovh.com/world/esservidores_dedicados/) en su cuenta de OVHcloud.
 - Tener acceso de administrador (raíz) a través del protocolo/programa SSH.
 
 ## Procedimiento
@@ -170,7 +170,7 @@ Si ha copiado el resultado completo, ya debería estar incluido el identificador
 
 > [!primary]
 >
-> Las claves guardadas en la sección «Dedicada» también podrán utilizarse en sus servicios de servidores virtuales privados (VPS). Por lo que se refiere a las claves SSH para los servicios Public Cloud, consulte [esta guía](https://docs.ovh.com/es/public-cloud/crear-llave-ssh/).
+> Las claves guardadas en la sección «Dedicada» también podrán utilizarse en sus servicios de servidores virtuales privados (VPS). Por lo que se refiere a las claves SSH para los servicios Public Cloud, consulte [esta guía](../public-cloud/crear-llave-ssh/).
 >
 
 

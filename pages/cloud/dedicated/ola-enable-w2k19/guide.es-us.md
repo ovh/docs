@@ -13,13 +13,13 @@ La tecnología OVHcloud Link Aggregation (OLA) está diseñada para aumentar la 
 
 ## Requisitos
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en el área de cliente de OVHcloud](https://docs.ovh.com/es/dedicated/ola-manager){.external}
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en el área de cliente de OVHcloud](../ola-manager){.external}
 
 ## Procedimiento
 
-Nuestros NIC en OLA tienen una configuración privada-privada, por lo que no es posible acceder al servidor por RDP. Así pues, es necesario utilizar la herramienta IPMI para acceder al servidor. Para ello, en primer lugar, acceda al [área de cliente de OVHcloud](https://www.ovh.com/manager/){.external}.  En el menú de la izquierda, seleccione el servidor que quiere configurar y, a continuación, haga clic en **IPMI**.
+Nuestros NIC en OLA tienen una configuración privada-privada, por lo que no es posible acceder al servidor por RDP. Así pues, es necesario utilizar la herramienta IPMI para acceder al servidor. Para ello, en primer lugar, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/manager/){.external}.  En el menú de la izquierda, seleccione el servidor que quiere configurar y, a continuación, haga clic en **IPMI**.
 
-![remote kvm](images/remote_kvm.png){.thumbnail}
+![remote kvm](images/remote_kvm_2020.png){.thumbnail}
 
 Haga clic en el botón **Desde un applet Java (KVM)**. Se descargará un programa JNLP. Abra el programa una vez descargado para acceder a IPMI  e introduzca las claves asociadas al servidor.
 

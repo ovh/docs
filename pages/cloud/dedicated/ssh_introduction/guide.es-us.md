@@ -16,7 +16,7 @@ El servicio SSH (Secure Shell), que está instalado en todas las máquinas, perm
 
 ## Requisitos
 
-- Tener un servicio de OVH en el que el protocolo de comunicación SSH esté instalado de forma nativa: VPS, servidor dedicado o instancia de Public Cloud. 
+- Tener un servicio de OVHcloud en el que el protocolo de comunicación SSH esté instalado de forma nativa: VPS, servidor dedicado o instancia de Public Cloud. 
 
 
 ## Procedimiento
@@ -108,4 +108,4 @@ En caso de duda, consulte la documentación del cliente SSH que utilice.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [htps://community.ovh.com](https://community.ovh.com/){.external}.

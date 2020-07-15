@@ -1,6 +1,6 @@
 ---
 title: 'Actualizar el kernel en un servidor dedicado'
-excerpt: 'Cómo actualizar el kernel con una distribución que utilice un núcleo de OVH'
+excerpt: 'Cómo actualizar el kernel con una distribución que utilice un núcleo de OVHcloud'
 slug: actualizar-kernel-servidor-dedicado
 section: 'Uso avanzado'
 ---
@@ -9,18 +9,18 @@ section: 'Uso avanzado'
 
 ## Objetivo
 
-OVH ofrece la posibilidad de mantener actualizado el kernel de un sistema Linux gracias al sistema de arranque en red (*netboot*).
+OVHcloud ofrece la posibilidad de mantener actualizado el kernel de un sistema Linux gracias al sistema de arranque en red (*netboot*).
 
 No obstante, es altamente recomendable actualizar el sistema operativo (SO) en el disco al que esté vinculado el kernel.
 
-**Esta guía explica cómo actualizar el kernel con una distribución que utilice un núcleo de OVH.**
+**Esta guía explica cómo actualizar el kernel con una distribución que utilice un núcleo de OVHcloud.**
 
-Por defecto, las imágenes de sistema que ofrece OVH en sus servidores dedicados utilizan un núcleo optimizado por OVH. Los usuarios que hayan sustituido estas imágenes por su propia distribución pueden consultar la documentación oficial de esta última.
+Por defecto, las imágenes de sistema que ofrece OVHcloud en sus servidores dedicados utilizan un núcleo optimizado por OVHcloud. Los usuarios que hayan sustituido estas imágenes por su propia distribución pueden consultar la documentación oficial de esta última.
 
 
 > [!warning]
 >
-> La responsabilidad sobre las máquinas que OVH pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. 
+> La responsabilidad sobre las máquinas que OVHcloud pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. 
 > 
 > Esta guía le ayudará a realizar la actualización del kernel. No obstante, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado.
 >
@@ -106,7 +106,7 @@ reboot
 
 ### Deshacer la actualización
 
-En caso de que haya realizado alguna manipulación incorrecta o de aparezca algún error, puede volver atrás. Para ello, ponga el servidor en [modo de rescate](https://docs.ovh.com/es/dedicated/modo_de_rescate/){.external}. A continuación, monte el sistema con los siguientes comandos:
+En caso de que haya realizado alguna manipulación incorrecta o de aparezca algún error, puede volver atrás. Para ello, ponga el servidor en [modo de rescate](../modo_de_rescate/){.external}. A continuación, monte el sistema con los siguientes comandos:
 
 ```sh
 mount /dev/md1 /mnt
@@ -167,15 +167,15 @@ uname –r
 >
 > Si lo necesita, existen herramientas (por ejemplo, <https://github.com/speed47/spectre-meltdown-checker>) que permiten saber si el kernel utilizado es vulnerable o no.
 >
-> **OVH no puede garantizar que estas herramientas externas sean fiables; su uso corre por cuenta y riesgo del usuario.**
+> **OVHcloud no puede garantizar que estas herramientas externas sean fiables; su uso corre por cuenta y riesgo del usuario.**
 >
 
 ## Más información
 
-[Modo de rescate](https://docs.ovh.com/es/dedicated/modo_de_rescate/){.external}
+[Modo de rescate](../modo_de_rescate/){.external}
 
-[Información sobre las vulnerabilidades Meltdown y Spectre (EN)](https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/){.external}
+[Información sobre las vulnerabilidades Meltdown y Spectre (EN)](../information-about-meltdown-spectre-vulnerability-fixes/){.external}
 
-[Actualización tras las vulnerabilidades Meltdown y Spectre por sistema operativo (EN)](https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/){.external}
+[Actualización tras las vulnerabilidades Meltdown y Spectre por sistema operativo (EN)](../meltdown-spectre-kernel-update-per-operating-system/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com){.external}.

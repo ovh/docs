@@ -13,11 +13,11 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 
 ## Requirements
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in the OVH Manager](https://docs.ovh.com/gb/en/dedicated/ola-manager){.external}
+[How to Configure Your NIC for OVHcloud Link Aggregation in the OVHcloud Manager](../ola-manager){.external}
 
 > [!warning]
 >
-> You will need to download the ifenslave package on the server before enabling OLA in the OVH Manager or API. To do so, please use the following command:
+> You will need to download the ifenslave package on the server before enabling OLA in the OVHcloud Manager or API. To do so, please use the following command:
 >
 > ```
 > apt install ifenslave
@@ -26,13 +26,13 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 
 ## Instructions
 
-Because we have a private-private configuration for our NICs in OLA, we will be unable to SSH into the server. Thus, we will need to leverage the IPMI tool to access the server. To do so, first log in to the [OVH Manager](https://www.ovh.com/manager/){.external}.  Then select the server you wish to configure on the left-hand sidebar and click the **IPMI** tab.
+Because we have a private-private configuration for our NICs in OLA, we will be unable to SSH into the server. Thus, we will need to leverage the IPMI tool to access the server. To do so, first log in to the [OVHcloud Manager](https://ca.ovh.com/manager/){.external}.  Then select the server you wish to configure on the left-hand sidebar and click the **IPMI** tab.
 
-![remote kvm](images/remote_kvm.png){.thumbnail}
+![remote kvm](images/remote_kvm_2020.png){.thumbnail}
 
 Next, click the **From a Java applet (KVM)** button. A JNLP program will download. Open the program to enter the IPMI. Log in using valid credentials for the server.
 
-By default, using an OVH template, the NICs will be named either *ethX* or *enoX*. If you are not using an OVH template, you can find the names of your interfaces using the following command:
+By default, using an OVHcloud template, the NICs will be named either *ethX* or *enoX*. If you are not using an OVHcloud template, you can find the names of your interfaces using the following command:
 
 ```bash
 ip a
@@ -80,4 +80,4 @@ This restart may take several minutes since it is building the bond interface.  
 
 ## Conclusion
 
-OVHcloud gives our customers the freedom and flexibility to leverage their hardware in the way that best fits their needs. Now that you have read this article, you should be able to configure OVHcloud Link Aggregation (OLA) in Debian 9 in order to use both of your NICs as bonded private interfaces. 
+OVHcloud gives our customers the freedom and flexibility to leverage their hardware in the way that best fits their needs. Now that you have read this article, you should be able to configure OVHcloudcloud Link Aggregation (OLA) in Debian 9 in order to use both of your NICs as bonded private interfaces. 

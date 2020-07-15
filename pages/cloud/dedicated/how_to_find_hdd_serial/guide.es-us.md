@@ -15,7 +15,7 @@ Para minimizar el riesgo de error durante la sustitución de un disco duro, pedi
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovh.es/servidores_dedicados/){.external}.
+- Tener un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external}.
 - Tener acceso al servidor por SSH como administrador (root).
 - En servidores Windows, haber instalado la utilidad **sas2ircu** (disponible en el motor de búsqueda de [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
 
@@ -23,7 +23,7 @@ Para minimizar el riesgo de error durante la sustitución de un disco duro, pedi
 
 > [!primary]
 >
-> Si se trata de un disco NVMe, será necesario poner el servidor en [modo de rescate](https://docs.ovh.com/es/dedicated/modo_de_rescate/){.external} y utilizar la herramienta **nvme-cli**, instalada por defecto.
+> Si se trata de un disco NVMe, será necesario poner el servidor en [modo de rescate](../modo_de_rescate/){.external} y utilizar la herramienta **nvme-cli**, instalada por defecto.
 > 
 
 ### Obtener el número de serie de un disco (RAID por software)
@@ -72,7 +72,7 @@ Si el periférico (/dev/sda, /dev/sdb...) es detectado por el sistema operativo,
 
 ### Obtener el número de serie de un disco (RAID por hardware)
 
-Para más información sobre estos comandos y sobre cómo probar los discos duros, consulte nuestra guía [RAID por hardware](https://docs.ovh.com/es/dedicated/raid-hardware/){.external}.
+Para más información sobre estos comandos y sobre cómo probar los discos duros, consulte nuestra guía [RAID por hardware](../raid-hardware/){.external}.
 
 
 #### Controladora MegaRAID
@@ -162,7 +162,7 @@ No olvide sustituir en el comando anterior **N** por el Device Id y **sdX** por 
 
 Las tarjetas controladoras RAID LSI utilizan un módulo llamado **sg-map**, que asocia los periféricos a rutas de tipo /dev/sgX (siendo «X» el número del periférico).
 
-Para determinar qué periférico sg corresponde a cada disco duro, consulte nuestra guía [RAID por hardware](https://docs.ovh.com/es/dedicated/raid-hardware/){.external}.
+Para determinar qué periférico sg corresponde a cada disco duro, consulte nuestra guía [RAID por hardware](../raid-hardware/){.external}.
 
 Una vez que sepa qué periférico sg corresponde al disco duro que quiera analizar, utilice el siguiente comando:
 
@@ -176,4 +176,4 @@ No olvide sustituir en el comando anterior **sgX** por **/dev/sg0**, **/dev/sg1*
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/){.external}.

@@ -23,17 +23,17 @@ At some point during the life of your server, you may encounter a fault due to a
 
 ### Activate rescue mode
 
-You can activate rescue mode by logging into your [OVH control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and going to your server's page. Then go to `Server Status`{.action} > `General information`{.action} > `Boot`{.action} and click the `Edit`{.action} button to change the boot mode.
+You can activate rescue mode by logging into your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and going to your server's page. Then go to `General information`{.action} > `Boot`{.action} and click the `···`{.action} button and click `Modify`{.action} button  to change the boot mode.
 
-![General Information](images/rescue-mode-01.png){.thumbnail}
+![General Information](images/rescue-mode-01_2020.png){.thumbnail}
 
 On the next screen, select `Boot on rescue mode`{.action}. If your server has a Linux-based OS, select `rescue64-pro`{.action} from the dropdown list. If you have a Windows server, select `WinRescue`{.action}. Lastly, type your email address in the text field, then click `Next`{.action}.
 
-![Change the Netboot](images/rescue-mode-03.png){.thumbnail}
+![Change the Netboot](images/rescue-mode-03_2020.png){.thumbnail}
 
 Confirm your options on the next screen, and then reboot your server to apply your changes. Your server will now reboot in rescue mode, and you will receive the credentials for logging in via the email address you provided. To exit rescue mode, simply change the boot mode back to `Boot on the hard disk`{.action}, then reboot your server.
 
-![Reboot the server](images/rescue-mode-02.png){.thumbnail}
+![Reboot the server](images/rescue-mode-02_2020.png){.thumbnail}
 
 ### Use the web interface
 

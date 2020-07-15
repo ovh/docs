@@ -32,12 +32,12 @@ La passerelle de votre Block IPv6.
 
 > [!primary]
 >
-> Le serveur DNS OVH est en mesure de faire la résolution de noms de domaine IPv6. Réferez-vous à [ce guide](../network_bridging/guide.fr-fr.md).
+> Le serveur DNS OVHcloud est en mesure de faire la résolution de noms de domaine IPv6. Réferez-vous à [ce guide](../network_bridging/).
 > 
 
 Tous les serveurs dédiés comprennent un block /64 IPv6 mis à votre disposition.
 
-Si vous utilisez un système d'exploitation fourni par OVH. Vous constaterez que l’adresse IPv6 principale de votre block est déjà configurée.
+Si vous utilisez un système d'exploitation fourni par OVHcloud. Vous constaterez que l’adresse IPv6 principale de votre block est déjà configurée.
 
 Si vous désirez utiliser plus d’une adresse IPv6 sur votre serveur (ou si vous désirez l’utiliser sur une Machine Virtuelle) vous devez avoir une adresse IP failover configurée avec une vMAC. Autrement, l’adresse IPv6 ne sera pas routée par nos routeurs et switchs.
 

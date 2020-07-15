@@ -9,7 +9,7 @@ section: vRack
 
 ## Objectif
 
-Le [vRack]({ovh_www}/solutions/vrack/){.external} est un réseau privé vous permettant de configurer l’adressage entre deux ou plusieurs [serveurs dédiés]({ovh_www}/serveurs_dedies/){.external} OVH.
+Le [vRack]({ovh_www}/solutions/vrack/){.external} est un réseau privé vous permettant de configurer l’adressage entre deux ou plusieurs [serveurs dédiés]({ovh_www}/serveurs_dedies/){.external} OVHcloud.
 
 **Apprenez à définir une zone d'annonce d'un bloc IP dans le vRack.**
 
@@ -41,14 +41,14 @@ L'exemple ci-dessus montre que l'adresse IP testée est actuellement annoncée �
 
 ### Étape 2 : modifier l'annonce du bloc IP
 
-Rendez-vous sur le lien <https://api.ovh.com/console/>, puis connectez-vous avec votre identifiant client OVH. Dès lors, utilisez les API ci-dessous afin de modifier l'annonce du bloc IP.
+Rendez-vous sur le lien <https://ca.api.ovh.com/console/>, puis connectez-vous avec votre identifiant client OVHcloud. Dès lors, utilisez les API ci-dessous afin de modifier l'annonce du bloc IP.
 
 > [!api]
 >
 > @api {GET} /vrack#GET
 > 
 
-Cette API permet de récupérer la liste des services vRack. Si vous n'arrivez pas à identifier le service concerné grâce à ces références, aidez-vous de votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} pour le récupérer. Pour cela, positionnez-vous dans la partie « Cloud », puis « vRack ».
+Cette API permet de récupérer la liste des services vRack. Si vous n'arrivez pas à identifier le service concerné grâce à ces références, aidez-vous de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} pour le récupérer. Pour cela, positionnez-vous dans la partie « Cloud », puis « vRack ».
 
 > [!api]
 >

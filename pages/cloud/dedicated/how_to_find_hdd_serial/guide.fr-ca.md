@@ -15,7 +15,7 @@ Pour minimiser le risque d'erreur pendant le remplacement d’un disque dur, nou
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
+- Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}.
 - Avoir accès à votre serveur via SSH en tant qu'administrateur (root).
 - Avoir installé l'utilitaire sas2ircu sur votre serveur Windows (disponible via le moteur de recherche [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
 
@@ -72,7 +72,7 @@ Le périphérique sera détecté par le système d'exploitation et affiché comm
 
 ### Récupérer le numéro de série d'un disque (RAID matériel)
 
-Pour un aperçu détaillé de ces commandes et de la façon de tester vos disques durs, reportez-vous à [ce guide (contrôleur RAID LSI)](https://docs.ovh.com/fr/dedicated/raid-hard/){.external}.
+Pour un aperçu détaillé de ces commandes et de la façon de tester vos disques durs, reportez-vous à [ce guide (contrôleur RAID LSI)](../raid-hard/){.external}.
 
 
 #### Contrôleur MegaRaid
@@ -162,7 +162,7 @@ L'ID du périphérique RAID sera affiché comme suit: `/dev/sda` = 1er RAID, `/d
 
 Le contrôleur RAID LSI utilise un module appelé `sg-map` qui mappe les périphériques dans `/dev/sgX`, « X » correspondant au numéro définissant le périphérique.
 
-Vous pouvez vous référer à [ce guide (contrôleur RAID LSI)](https://docs.ovh.com/fr/dedicated/raid-hard/){.external} pour déterminer quel disque dur correspond à un périphérique « sg » désigné.
+Vous pouvez vous référer à [ce guide (contrôleur RAID LSI)](../raid-hard/){.external} pour déterminer quel disque dur correspond à un périphérique « sg » désigné.
 
 Une fois que vous avez trouvé ce périphérique lié au disque dur que vous voulez analyser, utilisez la commande suivante :
 

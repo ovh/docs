@@ -17,8 +17,8 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, un [VPS](https://www.ovh.com/fr/vps/){.external} ou une [instance Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external}.
-- Avoir une ou plusieurs [IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external}.
+- Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}, un [VPS](https://www.ovh.com/ca/fr/vps/){.external} ou une [instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external}.
+- Avoir une ou plusieurs [IP fail-over](https://www.ovh.com/ca/fr/serveurs_dedies/ip_failover.xml){.external}.
 - Être connecté en SSH au serveur (accès root).
 
 
@@ -248,7 +248,7 @@ Maintenant, vous devez modifier le fichier pour ajouter l'IP fail-over. Dans Gen
 
 > [!warning]
 >
-> L’IP par défaut du serveur et `config_eth0=` doivent rester sur la même ligne. Cela permet d'assurer le bon fonctionnement de certaines opérations spécifiques à OVH.
+> L’IP par défaut du serveur et `config_eth0=` doivent rester sur la même ligne. Cela permet d'assurer le bon fonctionnement de certaines opérations spécifiques à OVHcloud.
 > 
 
 Il vous suffit de faire un retour à la ligne après le masque de réseau **255.255.255.0** et d’y ajouter votre adresse IP fail-over. « SERVER_IP » doit être remplacé par l’IP principale de votre serveur.
@@ -561,7 +561,7 @@ ifconfig_eth0="inet FAILOVER_IP netmask 0 broadcast FAILOVER_IP"
 
 Où vous remplacerez « FAILOVER_IP » par la véritable IP fail-over.
 
-Ensuite, il vous suffit d'effectuer un ping depuis votre IP fail-over vers l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration devant être corrigée. Si, au contraire, l'adresse IP ne fonctionne toujours pas, veuillez ouvrir un ticket à l'équipe d'assistance via votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Ensuite, il vous suffit d'effectuer un ping depuis votre IP fail-over vers l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration devant être corrigée. Si, au contraire, l'adresse IP ne fonctionne toujours pas, veuillez ouvrir un ticket à l'équipe d'assistance via votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Aller plus loin
 

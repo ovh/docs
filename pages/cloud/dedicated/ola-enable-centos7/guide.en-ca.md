@@ -13,17 +13,17 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 
 ## Requirements
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in the OVH Manager](https://docs.ovh.com/gb/en/dedicated/ola-manager){.external}
+[How to Configure Your NIC for OVHcloud Link Aggregation in the OVHcloud Manager](../ola-manager){.external}
 
 ## Instructions
 
-Because we have a private-private configuration for our NICs in OLA, we will be unable to SSH into the server. Thus, we will need to leverage the IPMI tool to access the server. To do so, first log in to the [OVH Manager](https://www.ovh.com/manager/){.external}.  Then select the server you wish to configure on the left-hand sidebar and click the **IPMI** tab.
+Because we have a private-private configuration for our NICs in OLA, we will be unable to SSH into the server. Thus, we will need to leverage the IPMI tool to access the server. To do so, first log in to the [OVHcloud Manager](https://ca.ovh.com/manager/){.external}.  Then select the server you wish to configure on the left-hand sidebar and click the **IPMI** tab.
 
-![remote_kvm](images/remote_kvm.png){.thumbnail}
+![remote_kvm](images/remote_kvm_2020.png){.thumbnail}
 
 Next, click the **From a Java applet (KVM)** button. A JNLP program will download. Open the program to enter the IPMI. Log in using valid credentials for the server.
 
-By default, using an OVH template, the NICs will be named *eth0* and *eth1*. If you are not using an OVH template, you can find the names of your interfaces using the following command:
+By default, using an OVHcloud template, the NICs will be named *eth0* and *eth1*. If you are not using an OVHcloud template, you can find the names of your interfaces using the following command:
 
 ```bash
 ip a
@@ -59,7 +59,7 @@ BONDING_OPTS="mode=802.3ad miimon=100"
 > You can use any private IP address and subnet you wish you to use.
 >
 
-Save and exit the file once you have confirmed that the information is correct.  Next, we need to configure both physical interfaces. By default, on an OVH server, only *eth0* will have a configuration file. Open it using the following command:
+Save and exit the file once you have confirmed that the information is correct.  Next, we need to configure both physical interfaces. By default, on an OVHcloud server, only *eth0* will have a configuration file. Open it using the following command:
 
 ```bash
 vi /etc/sysconfig/network-scripts/ifcfg-eth0

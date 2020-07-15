@@ -15,9 +15,9 @@ When you install Windows on a server with a hardware RAID configuration, the RAI
 
 ## Requirements
 
-- a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external} with Windows installed and a hardware RAID card (LSI MegaRaid)
+- a [Dedicated Server](https://www.ovh.com/ca/en/dedicated_servers/){.external} with Windows installed and a hardware RAID card (LSI MegaRaid)
 - at least two identical disks
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
@@ -235,8 +235,8 @@ Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes 
 ```
 
-### Installing Windows from the OVH Control Panel
-Finally, go to the OVH Control Panel to proceed with the installation of Windows on your server.
+### Installing Windows from the OVHcloud Control Panel
+Finally, go to the OVHcloud Control Panel to proceed with the installation of Windows on your server.
 
 You will need to check the `Customize partition configuration`{.action} box, and change the current partition scheme to one specifying disk **C**, with a maximum size of 200GB.
 
@@ -244,6 +244,6 @@ Once the system is installed, log in to your Windows system and open up the util
 
 ## Go further
 
-[Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}.
+[Hardware RAID](../raid-hard/){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.

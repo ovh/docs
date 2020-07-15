@@ -26,12 +26,12 @@ Dans ce tutoriel, nous allons apprendre à installer et configurer ces quatre br
 
 ### Ce que vous devez avoir
 
-- Un serveur ou une machine virtuelle sous Linux (un [VPS](https://www.ovh.com/ca/fr/vps/){.external}, un [serveur dédié](https://www.ovh.com/ca/fr/serveurs-dedies/all_servers.xml){.external} ou une [instance Public Cloud OVH](https://www.ovh.com/ca/fr/cloud-public/instances/tarifs/){.external}).
+- Un serveur ou une machine virtuelle sous Linux (un [VPS](https://www.ovh.com/ca/fr/vps/){.external}, un [serveur dédié](https://www.ovh.com/ca/fr/serveurs-dedies/all_servers.xml){.external} ou une [instance Public Cloud OVHcloud](https://www.ovh.com/ca/fr/cloud-public/instances/tarifs/){.external}).
 - Les droits administrateur sur ce serveur (être « root »).
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
@@ -43,7 +43,7 @@ Dans ce tutoriel, nous allons apprendre à installer et configurer ces quatre br
 
 Sur une distribution Debian ou Ubuntu récente, nous vous conseillons de réinstaller totalement votre serveur si cela est possible sur votre machine. Attention, cette action **effacera totalement vos données**.
 
-Connectez-vous en SSH en tant qu'administrateur « root ». N'hésitez pas à vous reporter au [guide SSH](https://docs.ovh.com/ca/fr/dedicated/ssh-introduction/){.external}.
+Connectez-vous en SSH en tant qu'administrateur « root ». N'hésitez pas à vous reporter au [guide SSH](../ssh-introduction/){.external}.
 
 Une fois le système installé, il convient de le mettre à jour : 
 

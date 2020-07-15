@@ -21,7 +21,7 @@ El protocolo de internet versión 6 (IPv6) es la última versión del protocolo 
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovh.es/servidores_dedicados/) en su cuenta de OVHcloud
+- Tener un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/) en su cuenta de OVHcloud
 - Tener toda la información relativa a su IPv6 (prefijo, puerta de enlace, etc.)
 - Tener conocimientos básicos de redes y de [SSH](https://es.wikipedia.org/wiki/Secure_Shell)
 

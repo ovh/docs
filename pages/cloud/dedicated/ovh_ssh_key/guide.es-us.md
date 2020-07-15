@@ -1,7 +1,7 @@
 ---
-title: Instalar la llave SSH de OVH
+title: Instalar la llave SSH de OVHcloud
 slug: ovh-ssh-key
-excerpt: Cómo instalar una llave SSH de OVH en un servidor para que los técnicos puedan intervenir
+excerpt: Cómo instalar una llave SSH de OVHcloud en un servidor para que los técnicos puedan intervenir
 section: SSH y llave SSH
 ---
 
@@ -9,13 +9,13 @@ section: SSH y llave SSH
 
 ## Objetivo
 
-Hay situaciones que pueden requerir la intervención de un técnico de OVH en la infraestructura dedicada de un usuario. 
+Hay situaciones que pueden requerir la intervención de un técnico de OVHcloud en la infraestructura dedicada de un usuario. 
 
-**Esta guía explica cómo instalar una llave SSH de OVH para permitir la intervención de los administradores de OVH, y cómo desactivarla posteriormente.**
+**Esta guía explica cómo instalar una llave SSH de OVHcloud para permitir la intervención de los administradores de OVHcloud, y cómo desactivarla posteriormente.**
 
 ## Requisitos
 
-- [Estar conectado por SSH](https://docs.ovh.com/es/dedicated/introduccion-ssh/){.external} (acceso *root*).
+- [Estar conectado por SSH](../introduccion-ssh/){.external} (acceso *root*).
 
 ## Procedimiento
 
@@ -23,13 +23,13 @@ Hay situaciones que pueden requerir la intervención de un técnico de OVH en la
 
 Una vez se haya conectado por SSH, introduzca uno de los siguientes comandos:
 
-**Si el servidor está alojado en OVH Francia:**
+**Si el servidor está alojado en OVHcloud Francia:**
 
 ```sh
 wget ftp://ftp.ovh.net/made-in-ovh/cle-ssh-public/installer_la_cle.sh -O instalar_la_llave.sh ; sh instalar_la_llave.sh
 ```
 
-**Si el servidor está alojado en OVH Canadá:**
+**Si el servidor está alojado en OVHcloud Canadá:**
 
 ```sh
 wget ftp://ftp.ovh.net/made-in-ovh/cle-ssh-public/installer_la_cleCA.sh -O instalar_la_llave.sh ; sh instalar_la_llave.sh
@@ -118,7 +118,7 @@ cat /root/.ssh/authorized_keys2
 
 ## Más información
 
-[Introducción al SSH](https://docs.ovh.com/es/dedicated/introduccion-ssh/)
+[Introducción al SSH](../introduccion-ssh/)
 
 Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
 

@@ -13,7 +13,7 @@ Si necesita migrar sus datos, es posible que tenga que descargarlos desde su ser
 
 > [!warning]
 >
-En este tutorial explicamos cómo utilizar una o más soluciones de OVH con herramientas externas en un contexto concreto. Deberá adaptar las indicaciones a su caso particular. Si necesita ayuda, le recomendamos que contacte con un proveedor especializado o que comparta sus dudas con nuestra comunidad en <https://community.ovh.com/en/>. Nosotros no podremos asistirle.
+En este tutorial explicamos cómo utilizar una o más soluciones de OVHcloud con herramientas externas en un contexto concreto. Deberá adaptar las indicaciones a su caso particular. Si necesita ayuda, le recomendamos que contacte con un proveedor especializado o que comparta sus dudas con nuestra comunidad en <https://community.ovh.com/en/>. Nosotros no podremos asistirle.
 >
 
 
@@ -29,7 +29,7 @@ En este tutorial explicamos cómo utilizar una o más soluciones de OVH con herr
 
 ### Hardware y software necesarios
 
-* Tener al menos un servidor dedicado de OVH.
+* Tener al menos un servidor dedicado de OVHcloud.
 * Tener un cliente SFTP (en este tutorial utilizaremos [FileZilla](https://filezilla-project.org/){.external}).
 
 
@@ -63,7 +63,7 @@ El progreso de la transferencia se muestra en el panel inferior.
 
 #### Cuando el servidor está en modo «rescue» o de rescate 
 
-En modo de rescate, es necesario montar primero la partición. Para ello, siga los pasos que se describen en la guía [Activar y utilizar el modo de rescate](https://docs.ovh.com/es/dedicated/modo_de_rescate/).
+En modo de rescate, es necesario montar primero la partición. Para ello, siga los pasos que se describen en la guía [Activar y utilizar el modo de rescate](../modo_de_rescate/).
 
 Una vez montada la partición, vuelva a conectarse al puerto **22** con su cliente SFTP (en este caso FileZilla).
 
@@ -88,4 +88,4 @@ Una vez que se haya conectado al servidor en el que quiera subir datos, podrá a
 
 ## Más información
 
-Para más información, interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Para más información, interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com){.external}.

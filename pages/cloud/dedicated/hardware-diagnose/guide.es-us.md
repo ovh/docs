@@ -10,22 +10,22 @@ section: 'Diagnóstico y modo de rescate'
 ## Objetivo
 
 
-Es posible que, con el tiempo, se produzcan fallos de hardware en el servidor que provoquen un funcionamiento deficiente. Los servidores dedicados de OVH cuentan con diversas herramientas de diagnóstico que permiten identificar cuáles son los componentes de hardware que fallan.
+Es posible que, con el tiempo, se produzcan fallos de hardware en el servidor que provoquen un funcionamiento deficiente. Los servidores dedicados de OVHcloud cuentan con diversas herramientas de diagnóstico que permiten identificar cuáles son los componentes de hardware que fallan.
 
 **Esta guía explica cómo diagnosticar fallos de hardware en un servidor dedicado.**
 
 
 ## Requisitos
 
-* Tener un [servidor dedicado](https://www.ovh.es/servidores_dedicados/){.external}.
-* Haber reiniciado el servidor en [modo de rescate](https://docs.ovh.com/es/dedicated/modo_de_rescate/){.external}.
+* Tener un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external}.
+* Haber reiniciado el servidor en [modo de rescate](../modo_de_rescate/){.external}.
 
 
 ## Procedimiento
 
 ### Utilizar la interfaz web
 
-Una vez reiniciado el servidor en [modo de rescate](https://docs.ovh.com/es/dedicated/modo_de_rescate/){.external}, recibirá por correo electrónico las claves de acceso al servicio y un enlace hacia la interfaz web del modo de rescate con el siguiente formato: **https://IP_del_servidor:444**.
+Una vez reiniciado el servidor en [modo de rescate](../modo_de_rescate/){.external}, recibirá por correo electrónico las claves de acceso al servicio y un enlace hacia la interfaz web del modo de rescate con el siguiente formato: **https://IP_del_servidor:444**.
 
 Al hacer clic en el enlace, se abrirá en su navegador la interfaz web que se muestra a continuación.
 
@@ -86,4 +86,4 @@ La prueba de las particiones analiza el acceso al disco y verifica el sistema de
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/){.external}.
