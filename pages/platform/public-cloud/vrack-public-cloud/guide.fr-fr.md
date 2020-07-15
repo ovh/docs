@@ -1,10 +1,9 @@
 ---
-title: Configuration du vRack Public Cloud
+title: 'Configuration du vRack Public Cloud'
 excerpt: 'Découvrez comment configurer un vRack Public Cloud'
 slug: public-cloud-vrack
 section: vRack
 order: 1
-hidden: true
 ---
 
 **Dernière mise à jour le 10/06/2020**
@@ -55,7 +54,7 @@ Consultez le guide [Accéder à l'interface Horizon](../creer-un-acces-a-horizon
 Chaque action que vous effectuez dans l'espace client OVHcloud fait appel aux [APIv6 OVHcloud](https://api.ovh.com/). 
 Vous pouvez même aller plus loin dans les API que dans votre espace client.
 
- L'interface est moins visuelle que l'espace client OVHcloud mais vous permettra d'effectuer un grand nombre d'actions. Vous pourrez par ce biais gérer et personnaliser vos vLan, ajouter des interfaces à vos instances ou encore créer des serveurs hautement personnalisés.
+L'interface est moins visuelle que l'espace client OVHcloud mais vous permettra d'effectuer un grand nombre d'actions. Vous pourrez par ce biais gérer et personnaliser vos vLan, ajouter des interfaces à vos instances ou encore créer des serveurs hautement personnalisés.
 
 Il vous sera parfois nécessaire de récupérer plusieurs informations avant l'utilisation d'une API spécifique.
 
