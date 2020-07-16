@@ -1,10 +1,9 @@
 ---
-title: Configuration du vRack Public Cloud depuis les APIv6 OVHcloud
+title: 'Configuration du vRack Public Cloud depuis les APIv6 OVHcloud'
 excerpt: 'Découvrez comment activer et gérer un vRack Public Cloud depuis les APIv6 OVHcloud'
 slug: public-cloud-vrack-apiv6
 section: vRack
 order: 2
-hidden: true
 ---
 
 **Dernière mise à jour le 10/06/2020**
@@ -20,7 +19,7 @@ Le [vRack](https://www.ovh.com/fr/solutions/vrack/) est un réseau privé qui vo
 - Posséder un projet Public Cloud.
 - Avoir créer un utilisateur OpenStack.
 - Connaissances réseaux élémentaires.
-- Consulter le guide [Configuration du vRack Public Cloud](../public-cloud-vrack) pour connaître les différentes méthodes proposées pour gérer le vRack Public Cloud OVHcloud
+- Consulter le guide [Configuration du vRack Public Cloud](../public-cloud-vrack) pour connaître les différentes méthodes proposées pour gérer le vRack Public Cloud OVHcloud.
 - Consulter le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique

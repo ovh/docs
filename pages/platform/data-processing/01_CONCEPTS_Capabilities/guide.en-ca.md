@@ -17,15 +17,16 @@ In this document, we list all the features currently supported by the Data Proce
 
 ### Processing engine 
 
-- Currently the only available processing engine is [Apache Spark](http://spark.apache.org/).
-- During beta, the only available version of Apache Spark is 2.4.3
+- At this moment, OVHcloud Data Processing supports the following engines:
+
+  - Spark 2.4.3 
+
 - It is not possible to interact with Apache Spark cluster via command line.  
 
-### The Apache Spark job in Data Processing beta is limited to: 
+### The Apache Spark job in Data Processing is limited to: 
 
-- Minimum 1 and maximum 30 GB of RAM per Executor
-- Minimum 1 and maximum 8 Cores of CPU per Executor 
-- Minimum 1 and maximum 10 Executors per job 
+- Minimum 1 and maximum 60 GB of RAM per Executor
+- Minimum 1 and maximum 16 Cores of CPU per Executor 
 - Maximum 24 hours for the duration of each job 
 
 ### Supported languages for Apache Spark code
@@ -36,13 +37,24 @@ In this document, we list all the features currently supported by the Data Proce
 
 ### Available ports to public network
 
-- http (80 and 8080)
-- https (443)
-- Kafka (9092)
+- FTP (21)
+- HTTP (443, 80, 8443, 8080, 9090)
+- Kerberos (88)
+- Apache HDFS (8020, 9000)
+- Apache Hive (10000, 9083, 10500, 10001, 10501, 50111, 15551, 15004)
+- Apache HBase (16000, 8765)
+- Apache Solr (8886)
+- Apache Pulsar (6650, 6651)
+- Apache Kafka (9092, 9093, 6667)
+- RabbitMQ (5672)
+- MySQL (3306)
+- PostgreSQL (5432)
+- Microsoft SQL Server (1433)
+- MongoDB (27017, 27018, 27019)
 
 ### OVHcloud vRack
 
-Data Processing can not use or access OVHcloud vRack. 
+- Data Processing can not use or access OVHcloud vRack. 
 
 ### Available regions 
 

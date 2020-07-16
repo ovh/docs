@@ -1,22 +1,22 @@
 ---
-title: 'Using two-factor authentication (2FA)'
+title: 'Using two-factor authentication (2FA) on your Private Cloud infrastructure'
 slug: use-2FA
 excerpt: 'Find out how to enable the two-factor authentication to protect your infrastructure'
 section: 'OVH Features'
 order: 5
 ---
 
-**Last updated 19th May 2020**
+**Last updated 9th July 2020**
 
 ## Objective
 
-Having two-factor authentication activated helps to protect your Private Cloud infrastructure by reducing the risk of attacks (such as password theft).
+Having two-factor authentication activated helps to protect your Hosted Private Cloud infrastructure by reducing the risk of attacks (such as password theft).
 
 **This guide explains how to set up a second authentication method to protect your infrastructure.**
 
 ## Requirements
 
-- a Private Cloud infrastructure with advanced security option (included in PCI-DSS and HDS offerings)
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) with the [**advanced security** option](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/sddc/), (included in PCI-DSS and HDS offers)
 - a mobile device (smartphone) and authentication application (e.g. Google Authenticator, Authy, OTP Auth, etc.)
 
 ## Instructions
@@ -27,11 +27,11 @@ In order to set up two-factor authentication, it is necessary to connect to the 
 
 There are two possibilities for this:
 	
-Via the gateway to your Private Cloud (https://pcc-xxx-xxx-xxx-xxx.ovh.com): 
+- via the gateway to your Private Cloud (https://pcc-xxx-xxx-xxx-xxx.ovh.com)
 
 ![Gateway Private Cloud](images/gatewayPCC.jpg){.thumbnail}
 
-Or directly via the URL https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ (be careful not to forget the final "/" of the address).
+- directly with the URL https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ (be careful not to forget the final "/" of the address).
 
 Once connected to the management interface, click `Change password`{.action}
 
@@ -93,37 +93,37 @@ In this case, it will be necessary to create a **whitelist** to specifically byp
 
 This whitelist will be an addition to the main list of vCenter accesses.
 
-To add your application's public IP addresses to this second whitelist, the following API calls will need to be used: 
+To add your application's public IP addresses to this second whitelist, the following API calls will need to be used.
 
-- Check for IPs that are allowed to bypass 2FA.
+- Check for IPs that are allowed to bypass 2FA:
 
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
-- Add an IP to the bypass whitelist of 2FA.
+- Add an IP to the bypass whitelist of 2FA:
 
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
-- Display information for an allowed IP (requires an ID retrieved with the first call).
+- Display information for an allowed IP (requires an ID retrieved with the first call):
 
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
-- Remove an IP from the whitelist.
+- Remove an IP from the whitelist:
 
 > [!api]
 >
 > @api {DELETE} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
-- Change the information for an allowed IP.
+- Change the information for an allowed IP:
 
 > [!api]
 >

@@ -1,7 +1,7 @@
 ---
 title: Initialize a Namespace
 slug: initialize-namespace
-excerpt: Learn how to initialize an OVHcloud Serving Engine Namespace
+excerpt: Learn how to initialize an OVHcloud ML Serving Namespace
 section: How to
 order: 0
 ---
@@ -19,11 +19,11 @@ this first step.
 
 ## Instructions
 
-### Step 1 - Go to the serving engine menu
+### Step 1 - Go to the ML Serving menu
 
-All actions on the **serving engine** are made on the `Public Cloud`
-section of the **OVHcloud control panel** and are located under
-`Data & Analytics` \> `Serving Engine`
+All actions on the **ML Serving** are made on the `Public Cloud` section
+of the **OVHcloud control panel** and are located under
+`Data & Analytics` \> `ML Serving`
 
 ![image](images/00_serving_engine_menu.png){.align-center}
 
@@ -78,5 +78,5 @@ Your container should appear in the list.
 ## Going Further
 
 -   You can check the official documentation of the open source product
-    **serving engine** about
+    **ML Serving** about
     [Namespaces](https://serving-doc-mlg.ai.ovh.net/component/namespaces.html)

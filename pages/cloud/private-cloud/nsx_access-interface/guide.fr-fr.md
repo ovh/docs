@@ -6,7 +6,7 @@ section: NSX
 order: 01
 ---
 
-**Dernière mise à jour le 28/11/2017**
+**Dernière mise à jour le 29/06/2020**
 
 ## Objectif
 
@@ -17,12 +17,18 @@ NSX est une solution de Software Defined Network (SDN) développée par VMware q
 ## Prérequis
 
 - Posséder un identifiant utilisateur actif avec les droits spécifiques pour NSX
+- Être connecté à votre [interface vSphere](../connexion-interface-vsphere/)
 
 ## En pratique
 
-VMWare NSX n'est disponible que depuis le client web vSphere, vous ne pourrez pas y accéder depuis le client lourd. Nous vous invitons à vous référer au guide suivant : [Connexion à l'interface vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/){.external}.
+VMWare NSX n'est disponible que depuis l'interface vSphere.
 
-![Accueil Web](images/AccueilWeb.PNG){.thumbnail}
+Depuis la page d’accueil du client vSphere, cliquez sur la catégorie `Mise en réseau et sécurité`{.action} dans le menu de gauche :
+
+![Networking and Security](images/nsx01.png){.thumbnail}
+
+Vous avez alors accès à l'accueil NSX avec tous les menus associés.
+
 
 > [!primary]
 >
@@ -37,11 +43,6 @@ VMWare NSX n'est disponible que depuis le client web vSphere, vous ne pourrez pa
 > Pour des raisons de sécurité /api/1.0/ ne sont pas prises en charge.
 > 
 
-Depuis la page d’accueil du client web, cliquez sur la catégorie `Networking & Security`{.action} dans le menu de gauche ou au niveau de l'icône centrale :
-
-![Networking and Security](images/content-docs-cloud-private-cloud-nsx_connect_interface-images-interface_nsx_2.png){.thumbnail}
-
-Vous avez alors accès à l'accueil NSX avec tous les menus associés.
 
 ## Aller plus loin
 
