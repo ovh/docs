@@ -5,7 +5,7 @@ excerpt: Find out how to use Veeam Cloud Connect
 section: Veeam
 ---
 
-**Last updated 14th July 2020**
+**Last updated 16th July 2020**
 
 ## Objective
 
@@ -35,7 +35,7 @@ OVHcloud services that are compatible with Veeam Cloud Connect:
 Order your solution on the [website](https://www.ovh.co.uk/storage-solutions/veeam-cloud-connect/). Once the payment is processed, you will receive a confirmation email, containing:
 
 - the IP address and name of your service
-- username and password
+- user name and password
 
 ### Managing the service in the OVHcloud Control Panel
 
@@ -72,7 +72,7 @@ Fill in the IP address or name of your solution (received via email) and click o
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-ip.png){.thumbnail}
 
-Add the username and password in this step and click on `OK`{.action}, then on `Apply`{.action}.
+Add the user name and password in this step and click on `OK`{.action}, then on `Apply`{.action}.
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-login.png){.thumbnail}
 
@@ -93,7 +93,7 @@ Your service will be added to the list in the console.
 
 In the left-hand menu, switch to the section "BACKUP & REPLICATION". Your backup tasks ("Jobs") will be listed here.
 
-Click on `Backup Copy`{.action} in the top menu bar to configure a backup replication.
+Click on `Backup Copy`{.action} in the top menu bar to configure a backup copy job.
 
 ![veeam cloud connect](images/veeam-cloud-connect-replicat.png){.thumbnail}
 
@@ -103,7 +103,7 @@ First, give a name to this new task. You can also choose the frequency of this a
 
 On the next page, "Virtual Machines", you can add VMs using the `Add`{.action} button. Please refer to this [official documentation](https://helpcenter.veeam.com/docs/backup/vsphere/backup_copy_vms.html?ver=95){.external} for a detailed explanation of your choices.
 
-In this example, replication from backups is chosen.
+In this example, "from backups" is chosen.
 
 ![veeam cloud connect](images/veeam-cloud-connect-replicat-select.png){.thumbnail}
 
