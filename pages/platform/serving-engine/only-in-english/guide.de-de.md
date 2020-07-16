@@ -7,7 +7,7 @@ section: Getting started
 
 ## Nur auf Englisch verfügbar
 
-Die Dokumentation für unser Produkt *OVHcloud ML Serving* ist aktuell nicht in Ihrer Sprache verfügbar. Bitte lesen Sie die [englische Dokumentation](https://docs.ovh.com/gb/en/serving-engine/).
+Die Dokumentation für unser Produkt *OVHcloud ML Serving* ist aktuell nicht in Ihrer Sprache verfügbar. Bitte lesen Sie die [englische Dokumentation](https://docs.ovh.com/gb/en/ml-serving/).
 Dort finden Sie Setup-Anleitungen, Tutorials sowie eine vollständige Dokumentation zu den verfügbaren Funktionen und bekannten Einschränkungen. 
 
-Klicken  [Sie hier](https://docs.ovh.com/gb/en/serving-engine/), um zur Dokumentation für *OVHcloud ML Serving* zu gelangen.
+Klicken [Sie hier](https://docs.ovh.com/gb/en/ml-serving/), um zur Dokumentation für *OVHcloud ML Serving* zu gelangen.
