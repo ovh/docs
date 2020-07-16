@@ -102,8 +102,8 @@ pom.xml :
     <version>1.0-SNAPSHOT</version>
     
     <properties>
-        <spark.version>2.3.2</spark.version>
-        <hadoop.aws.version>2.7.5</hadoop.aws.version>
+        <spark.version>2.4.3</spark.version>
+        <hadoop.aws.version>2.8.5</hadoop.aws.version>
     </properties>
     
     <dependencies>

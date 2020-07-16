@@ -9,13 +9,13 @@ order: 3
 
 ## Objective
 
-Deploying models is the main feature of the **serving engine**. This
-guide provides step by step instructions on how to deploy a **serialized
+Deploying models is the main feature of the **ML Serving**. This guide
+provides step by step instructions on how to deploy a **serialized
 model**.
 
 ## Requirements
 
--   Having previously created a **serving engine namespace**. Steps are
+-   Having previously created a **ML Serving namespace**. Steps are
     described in section [Initializing
     namespace](../initialize-namespace)
 -   Having previously exported your **machine learning model** into a
@@ -52,8 +52,8 @@ the list of containers object.
 
 ### Step 2 - Reach model page
 
-Inside your **serving engine namespace** page there is a dedicated tab
-for managing models : `Models`.
+Inside your **ML Serving namespace** page there is a dedicated tab for
+managing models : `Models`.
 
 ![Model menu](images/03_model_menu.png){.align-center}
 
@@ -86,9 +86,9 @@ After you filled your wanted name, click the `Next` button.
 ### Step 6 - Choose your auto-scaling options
 
 A model is composed of one or several running instance(s). These
-instances are automaticaly scaled by the **serving engine** depending on
-the input load of your model. That step allows you to configure the
-minimum and maximum number of instances that you want to run.
+instances are automaticaly scaled by the **ML Serving** depending on the
+input load of your model. That step allows you to configure the minimum
+and maximum number of instances that you want to run.
 
 ![image](images/07_select_auto_scale.png){.align-center}
 
@@ -112,7 +112,7 @@ the wanted flavor among a list of existing ones.
 
 ### Step 8 - Wait for model deployment
 
-The **serving engine** will sequentially perform the following tasks :
+The **ML Serving** will sequentially perform the following tasks :
 
 -   The **building** of the model : you see the **build status** as
     `Building`.
@@ -152,7 +152,7 @@ different endpoints of your model if you want to test quickly.
 ## Going Further
 
 -   You can check the official documentation of the open source product
-    **serving engine** about
+    **ML Serving** about
     [Models](https://serving-doc-mlg.ai.ovh.net/component/models.html)
 -   You can check the [supported compatibilities for custom
     models](../compatibility-matrix)

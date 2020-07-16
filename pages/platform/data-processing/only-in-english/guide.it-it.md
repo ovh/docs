@@ -1,5 +1,5 @@
 ---
-title: Data Processing (Beta)
+title: Data Processing
 slug: only-in-english
 excerpt: Disponibile solo in inglese
 section: Concepts
