@@ -23,15 +23,16 @@ As an example, let's assume that you want to create a marketplace in which you, 
 
 The first part, as the application developer, is to register your application on OVHcloud.
 
-To do so, go to https://api.ovh.com/createApp/
+
+To do so, go to [OVHcloud API](https://ca.api.ovh.com/createApp/){.external}.
 
 You will need to log in and set an application name and description.
 
-![image](images/createapp.jpg)
+![image](images/createapp-ca.jpg)
 
 Once logged in, you will get your `Application Key` and `Application Secret`, later refered as `AK` and `AS`.
 
-![image](images/ak-as.jpg)
+![image](images/ak-as-ca.jpg)
 
 The `AK` is identifying your application. It can be publicly shared.
 
@@ -39,7 +40,7 @@ The `AS` is a key used to sign the API requests which will be made later by your
 
 #### Summary
 
-![sequence diagram](images/sequence01.png)
+![sequence diagram](images/sequence01-ca.png)
 
 ### Deploy your application
 
@@ -56,12 +57,12 @@ Let's assume that a customer browsing your marketplace selects a service to depl
 
 The first step is for your application to request permissions on the customer's API.
 
-To do so, your application will request credentials by calling https://api.ovh.com/console/#/auth/credential#POST and passing as argument a list of endpoints the application needs access to.
+To do so, your application will request credentials by calling https://ca.api.ovh.com/console/#/auth/credential#POST and passing as argument a list of endpoints the application needs access to.
 
 <!--
 Application Name: maketplace
 Application Description: my little marketplace
-Application Key: F7gzxgxN5eqwuAsK
+Application Key: FpAgU1C1fpnbyxoL
 Application Secret: UsNmaE8iqvAV6qT0VieCNVrSys9a5hkr
  -->
 
@@ -70,10 +71,10 @@ Application Secret: UsNmaE8iqvAV6qT0VieCNVrSys9a5hkr
 Example with curl with an access request to `GET /me`.
 
 ```bash
-export AK=F7gzxgxN5eqwuAsK
+export AK=FpAgU1C1fpnbyxoL
 export REDIRECT_URL=https://webhook.site/586c652e-061e-453f-bd71-51912e33419d # usefull for debug
 
-curl -H "Content-type: application/json" -H "X-Ovh-Application: $AK" -d '{"redirection": "$REDIRECT_URL", "accessRules": [{"method": "GET", "path": "/me"}]}' https://eu.api.ovh.com/1.0/auth/credential
+curl -H "Content-type: application/json" -H "X-Ovh-Application: $AK" -d '{"redirection": "$REDIRECT_URL", "accessRules": [{"method": "GET", "path": "/me"}]}' https://ca.api.ovh.com/1.0/auth/credential
 ```
 
 The result of that call will be a JSON dictionary
@@ -82,8 +83,7 @@ The result of that call will be a JSON dictionary
 {
   "state":"pendingValidation",
   "consumerKey":"5DU984kYxyoAe4lRaevZCGnmt9FVnKT2",
-  "validationUrl":"https://eu.api.ovh.com/auth/?credentialToken=RAXoRq9FvUQFI1S6hE0HmkySyVp8aDWwIqBA3fYrOr0vVSMdpjqxFqp3IjyjGAfu"
-}
+  "validationUrl":"https://ca.api.ovh.com/auth/?credentialToken=RAXoRq9FvUQFI1S6hE0HmkySyVp8aDWwIqBA3fYrOr0vVSMdpjqxFqp3IjyjGAfu"
 ```
 
 As the developer, you have to store the `consumerKey`, later refered as `CK`. This key will be used to sign the OVHcloud API requests on behalf of your customer.
@@ -94,7 +94,8 @@ The request has been made and you need your customer to accept it by redirecting
 
 After redirecting the client to `validationUrl`, he will be asked to confirm the rights delegation.
 
-![rights confirmation](images/validate-ck.jpg)
+![rights confirmation](images/validate-ck-ca.jpg)
+
 
 If successful, the client will be redirected to the url previously specified by `REDIRECT_URL` in the curl command.
 
@@ -110,12 +111,14 @@ From there, depending on the requested permissions, you can start managing your 
 
 #### Summary
 
-![sequence diagram](images/sequence02.png)
+![sequence diagram](images/sequence02-ca.png)
+
 
 Happy development !
 
 ## Go further
 
-- [API Console](https://api.ovh.com/){.external}
+- [API Console](https://ca.api.ovh.com/){.external}
+
 
 
