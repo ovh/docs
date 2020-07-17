@@ -23,7 +23,7 @@ Veeam Backup & Replication is a data protection software. It offers its users a 
 
 ### Setting up Veeam Backup & Replication
 
-Download the **Veeam Backup & Replication** solution from the Veeam website. You will need to create an account if you do not have one already (account setup is free).
+Download the **Veeam Backup & Replication** solution from the official [Veeam website](https://www.veeam.com). You will need to create an account if you do not have one already (account setup is free).
 
 The file is in the *ISO* disk image format. Once you have transferred it onto your server, select the server’s CD drive, then open the image.
 
