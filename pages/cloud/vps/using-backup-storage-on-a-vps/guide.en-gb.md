@@ -53,7 +53,7 @@ If you are sure that you would like to reset your VPS to the status of the snaps
 
 ## Go further
 
-[Using automated backups on a VPS](https://docs.ovh.com/gb/en/vps/using-automated-backups-on-a-vps)
+[Using automated backups on a VPS](../using-automated-backups-on-a-vps)
 
 
 Join our community of users on <https://community.ovh.com/en/>.
