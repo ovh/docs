@@ -824,7 +824,7 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 91.134.248.192
 ```
 
-### Cluster 051
+## Cluster 051
 
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
