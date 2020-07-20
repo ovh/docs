@@ -6,7 +6,7 @@ section: 'Configuring the Web Hosting plan'
 order: 3
 ---
 
-**Last updated 29th April 2020**
+**Last updated 20th July 2020**
 
 ## Objective
 
@@ -785,6 +785,26 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 
 ```bash
 91.134.248.192
+```
+
+## Cluster 051
+
+#### Cluster IP addresses per country
+
+|Country|Country Code|IPv4|IPv6|
+|---|---|----|---|
+|CA|CA|51.161.122.78|2607:5300:205:2::51|
+
+If you have activated the **CDN** option on your Web Hosting, use this IP address:
+
+```bash
+178.32.120.166
+```
+
+If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
+
+```bash
+51.161.94.36
 ```
 
 ## Go further
