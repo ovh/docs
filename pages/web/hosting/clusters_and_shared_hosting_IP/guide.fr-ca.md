@@ -830,7 +830,7 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
 |Pays|Code Pays|IPv4|IPv6|
 |---|---|----|---|
-|CA|CA|51.161.122.78|2607:5300:205:2::51|
+|Canada|CA|51.161.122.78|2607:5300:205:2::51|
 
 Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
