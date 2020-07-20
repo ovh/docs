@@ -20,12 +20,12 @@ These technologies form a stack, which you can use to host dynamic websites and 
 - SSH access 
 - access to edit text files in the command line (e.g. Vim, nano, Emacs)
 - ability to install a Linux distribution (here we are using Debian 9.4, but the guide steps are identical for Ubuntu 18.04)
-- a server or a virtual machine with a Linux distribution (a [VPS](https://www.ovh.com/sg/vps/){.external}, a [Dedicated Server](https://www.ovh.com/sg/dedicated-servers/all_servers.xml){.external} or [OVH Public Cloud instance](https://www.ovh.com/sg/public-cloud/instances/prices/){.external})
+- a server or a virtual machine with a Linux distribution (a [VPS](https://www.ovh.com/sg/vps/){.external}, a [Dedicated Server](https://www.ovh.com/sg/dedicated-servers/all_servers.xml){.external} or [OVHcloud Public Cloud instance](https://www.ovh.com/sg/public-cloud/instances/prices/){.external})
 - admin (root) access to the server
 
 > [!warning]
 >
-> OVH is providing you with services that you are responsible for. We cannot access these servers, as we are not administrators. For this reason, we cannot provide you with administrative assistance. You are responsible for your service’s software and security.
+> OVHcloud is providing you with services that you are responsible for. We cannot access these servers, as we are not administrators. For this reason, we cannot provide you with administrative assistance. You are responsible for your service’s software and security.
 > 
 > We have published this guide to assist you as much as we can with common tasks. However, we recommend contacting a specialist service provider if you experience any difficulties or have any doubts about managing, using and securing a server. You can find more information in the “Go further” section of this guide.
 >
@@ -36,7 +36,7 @@ These technologies form a stack, which you can use to host dynamic websites and 
 
 If you are using a recent Debian or Ubuntu distribution, we recommend reinstalling your server from scratch (if possible) on your machine. Please note that this action will **erase any data stored on it**.
 
-Connect via SSH as a root user. If you are unsure about how to do this, please refer to our guide to [Getting started with SSH](https://docs.ovh.com/sg/en/dedicated/ssh-introduction/){.external}.
+Connect via SSH as a root user. If you are unsure about how to do this, please refer to our guide to [Getting started with SSH](../ssh-introduction/){.external}.
 
 Once you have installed the operating system, we recommend updating it: 
 

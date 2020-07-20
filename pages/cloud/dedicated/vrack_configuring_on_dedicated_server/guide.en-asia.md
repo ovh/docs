@@ -20,7 +20,7 @@ The vRack or virtual rack allows multiple servers to be grouped together (regard
 - a [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} service in your account
 - two or more [vRack compatible servers](https://www.ovh.com/asia/dedicated-servers/){.external}
 - administrative (root) access to the server via SSH
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 - your chosen private IP address range
 
 ## Instructions
@@ -35,7 +35,7 @@ The vRack or virtual rack allows multiple servers to be grouped together (regard
 
 **Step 4.** From the list of eligible services, select the servers you want to add to the vRack and then click the `Add`{.action} button
 
-![vRack selection](images/vrack_selection.png){.thumbnail}
+![vRack selection](images/vrack_selection_2020.png){.thumbnail}
 
 ### Configure your network interfaces
 

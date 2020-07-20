@@ -16,8 +16,8 @@ Lors de l'installation d'un système d'exploitation Windows Server, il est possi
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} installé sous Windows.
-- Disposer d'une licence Windows SPLA ou en [acheter une](https://www.ovh.com/fr/serveurs_dedies/tarification-licences-windows-2014.xml){.external}.
+- Disposer d'un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external} installé sous Windows.
+- Disposer d'une licence Windows SPLA ou en [acheter une](https://www.ovh.com/ca/fr/serveurs_dedies/tarification-licences-windows-2014.xml){.external}.
 - Avoir un accès au bureau à distance.
 
 

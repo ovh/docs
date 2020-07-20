@@ -9,14 +9,14 @@ section: 'Diagnostic and rescue mode'
 
 ## Objective
 
-With Real Time Monitoring (RTM), you can partially monitor your server and its activity. In the OVH Control Panel, you will find information on the CPU (Central Processing Unit), RAM (Random Access Memory), open ports, etc. To view this information, you need to install the RTM package.
+With Real Time Monitoring (RTM), you can partially monitor your server and its activity. In the OVHcloud Control Panel, you will find information on the CPU (Central Processing Unit), RAM (Random Access Memory), open ports, etc. To view this information, you need to install the RTM package.
 
 **This guide will explain how to install RTM on Linux.**
 
 ## Requirements
 
 - You need to be logged in via SSH (or your graphical user interface) on your Linux server (*root* access).
-- You need to be logged in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You need to be logged in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
 
@@ -26,7 +26,7 @@ Once you have installed the RTM via the OVH Control Panel, you can monitor your 
 
 > [!primary]
 >
-> Some firewall restrictions could prevent your infrastructure from being monitored, even though you have added the RTM. Don’t forget to give OVH monitoring IP addresses access to your server. You can find more details [here](https://docs.ovh.com/ie/en/dedicated/monitoring-ip-ovh/){.external}.
+> Some firewall restrictions could prevent your infrastructure from being monitored, even though you have added the RTM. Don’t forget to give OVHcloud monitoring IP addresses access to your server. You can find more details [here](../monitoring-ip-ovh/){.external}.
 > 
 
 ### RTM in Linux
@@ -256,8 +256,8 @@ Edit the file /etc/crontab and remove the line with "rtm"
 
 ## Go further
 
-[What are the IP addresses of the OVH monitoring?](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/){.external}
+[What are the IP addresses of the OVHcloud monitoring?](../monitoring-ip-ovh/){.external}
 
-[Visualize your data](https://docs.ovh.com/gb/en/metrics/usecase-visualize/){.external}
+[Visualize your data](../metrics/usecase-visualize/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

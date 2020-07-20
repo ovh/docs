@@ -16,15 +16,15 @@ Intel SGX delivers advanced hardware and RAM security encryption features, in or
 
 - An [infrastructure dedicated server](https://www.ovh.com.au/dedicated-servers/infra/){.external}, with the [SGX](https://www.ovh.com.au/dedicated_servers/software-guard-extensions/){.external} option
 - Administrative (root) access to the server via SSH
-- Access to the [OVH API](https://api.ovh.com/console/){.external}
+- Access to the [OVHcloud API](https://ca.api.ovh.com/console/){.external}
 - Ubuntu 18.04 or similar installed on the server
 
 ## Instructions
 
 ### Step 1 - Log into the API console
 
-Go to <https://api.ovh.com/console/> and click the `Login`{.action} in the top-right corner of the page.  
-On the following page, log in with the credentials of your OVH account.
+Go to <https://ca.api.ovh.com/console/> and click the `Login`{.action} in the top-right corner of the page.  
+On the following page, log in with the credentials of your OVHcloud account.
 
 ### Step 2 - Enable SGX
 

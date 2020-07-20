@@ -9,110 +9,110 @@ section: Stockage
 
 ## Objectif
 
-Dans le cadre des offres de [serveurs dédiés](https://docs.ovh.com/fr/dedicated/securiser-un-serveur-dedie/){.external}, un espace de sauvegarde de 500 Go par serveur est mis à disposition et vous permet de [sécuriser vos données](https://docs.ovh.com/fr/dedicated/securiser-un-serveur-dedie/){.external}.
+Dans le cadre des offres de serveurs dédiés, un espace de sauvegarde de 500 Go par serveur est mis à disposition et vous permet de [sécuriser vos données](../securiser-un-serveur-dedie/){.external}.
 
 **Ce guide vous explique comment activer et utiliser cet espace de sauvegarde**.
 
 ## Prérequis
 
-* Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
-* Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Dédié`{.action}.
+* Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}.
+* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Dédié`{.action}.
 
 ## En pratique
 
 ### Activer votre Backup Storage
 
-Connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Activer le Backup Storage`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Activer le Backup Storage`{.action}.
 
-![Activer votre Backup Storage](images/backup-storage-01-edited.png){.thumbnail}
+![Activer votre Backup Storage](images/backup-storage-01-edited_2020.png){.thumbnail}
 
 
 Ensuite, cliquez sur `Confirmer`{.action}.
 
-![Activer votre Backup Storage](images/backup-storage-02.PNG){.thumbnail}
+![Activer votre Backup Storage](images/backup-storage-02_2020.PNG){.thumbnail}
 
 Vous recevrez alors un e-mail d'activation et votre Backup Storage sera configuré en quelques minutes.
 
 ### Configurer le contrôle d'accès
 
-L'accès à votre espace de stockage est restreint par l'adresse IP à l'aide d'une liste de contrôle d'accès (<i>Access Control List</i> ou ACL). Seules les adresses IP de votre compte OVH enregistrées dans l’ACL pourront accéder au stockage. Les autres protocoles (NFS et CIFS) ne sont pas autorisés par défaut. Pour les autoriser, vous devrez créer une ACL.
+L'accès à votre espace de stockage est restreint par l'adresse IP à l'aide d'une liste de contrôle d'accès (<i>Access Control List</i> ou ACL). Seules les adresses IP de votre compte OVHcloud enregistrées dans l’ACL pourront accéder au stockage. Les autres protocoles (NFS et CIFS) ne sont pas autorisés par défaut. Pour les autoriser, vous devrez créer une ACL.
 
 #### Ajouter un accès backup
 
-Connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Ajouter un accès`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Ajouter un accès`{.action}.
 
-![Ajouter un accès backup](images/backup-storage-03-edited.png){.thumbnail}
+![Ajouter un accès backup](images/backup-storage-03-edited_2020.png){.thumbnail}
 
 Sélectionnez le bloc IP que vous souhaitez autoriser. Une fois celui-ci sélectionné, choisissez le protocole à autoriser, puis cliquez sur `Suivant`{.action}.
 
 > [!primary]
 >
-> Vous pouvez uniquement autoriser des blocs d’adresses IP de votre compte OVH pour accéder au Backup Storage.
+> Vous pouvez uniquement autoriser des blocs d’adresses IP de votre compte OVHcloud pour accéder au Backup Storage.
 >
 
-![Ajouter un accès backup](images/backup-storage-07-edited.png){.thumbnail}
+![Ajouter un accès backup](images/backup-storage-07-edited_2020.png){.thumbnail}
 
 Il vous reste à confirmer l’ajout de l’accès en cliquant sur `Terminer`{.action}.
 
-![Ajouter un accès backup](images/backup-storage-08-edited.png){.thumbnail}
+![Ajouter un accès backup](images/backup-storage-08-edited_2020.png){.thumbnail}
 
 Vous pourrez alors accéder au Backup Storage de votre serveur à partir du bloc d’IP que vous avez sélectionné.
 
 #### Modifier un accès
 
-Pour modifier les protocoles d'un bloc d’IP autorisé, cliquez sur l'icône en forme de crayon correspondant au bloc IP que vous souhaitez modifier, puis cochez et/ou décochez les protocoles souhaités. Lorsque vous avez terminé, cliquez sur le bouton de validation pour enregistrer vos modifications.
+Pour modifier les protocoles d'un bloc d’IP autorisé, cliquez sur le bouton `···`{.action}  correspondant au bloc IP que vous souhaitez modifier, puis cochez et/ou décochez les protocoles souhaités. Lorsque vous avez terminé, cliquez sur le bouton de validation pour enregistrer vos modifications.
 
-![Modifier l’accès](images/modify_access.png){.thumbnail}
+![Modifier l’accès](images/backup-storage-13-edited_2020.png){.thumbnail}
 
 #### Supprimer un accès
 
-Pour révoquer l'autorisation d'un bloc d’IP, cliquez sur l'icône de la corbeille qui apparaît à la fin de la ligne.
+Pour révoquer l'autorisation d'un bloc d’IP, cliquez sur le bouton `···`{.action} qui apparaît à la fin de la ligne.
 
-![Modifier l’accès](images/delete_access.png){.thumbnail}
+![Modifier l’accès](images/backup-storage-14-edited_2020.png){.thumbnail}
 
 Puis cliquez pour confirmer.
 
-![Modifier l’accès](images/Confirm_IP_Removal.png){.thumbnail}
+![Modifier l’accès](images/backup-storage-15-edited_2020.png){.thumbnail}
 
 L'accès au Backup Storage sera désormais révoqué pour ce bloc d’IP.
 
 ### Changer votre mot de passe
 
-Connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Mot de passe oublié ?`{.action}
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Mot de passe oublié ?`{.action}
 
-![Changer votre mot de passe](images/backup-storage-04-edited.png){.thumbnail}
+![Changer votre mot de passe](images/backup-storage-04-edited_2020.png){.thumbnail}
 
 Ensuite, cliquez sur `Confirmer`{.action}.
 
-![Changer votre mot de passe](images/backup-storage-09.PNG){.thumbnail}
+![Changer votre mot de passe](images/backup-storage-09_2020.PNG){.thumbnail}
 
 Un e-mail de récupération de mot de passe sera envoyé à l'adresse e-mail enregistrée sur votre compte administrateur. Suivez les instructions qui y sont contenues pour réinitialiser votre mot de passe.
 
 ### Supprimer le Backup Storage
 
-Connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Supprimer le Backup Storage`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Supprimer le Backup Storage`{.action}.
 
-![Supprimer le Backup Storage](images/backup-storage-05-edited.png){.thumbnail}
+![Supprimer le Backup Storage](images/backup-storage-05-edited_2020.png){.thumbnail}
 
 Cliquez sur `Confirmer`{.action} sur le message d'avertissement pour procéder à la suppression.
 
-![Supprimer le Backup Storage](images/backup-storage-10.PNG){.thumbnail}
+![Supprimer le Backup Storage](images/backup-storage-10_2020.PNG){.thumbnail}
 
 Votre Backup Stockage sera supprimé après quelques minutes. Cette suppression est irréversible.
 
 ### Commander de l'espace disque supplémentaire
 
-Connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Commander de l’espace disque`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action}, puis cliquez sur le bouton `Commander de l’espace disque`{.action}.
 
-![Commander de l'espace disque supplémentaire](images/backup-storage-06-edited.png){.thumbnail}
+![Commander de l'espace disque supplémentaire](images/backup-storage-06-edited_2020.png){.thumbnail}
 
 Sélectionnez la capacité de stockage que vous souhaitez, puis cliquez sur `Suivant`{.action}.
 
-![Commander de l'espace disque supplémentaire](images/backup-storage-11-edited.png){.thumbnail}
+![Commander de l'espace disque supplémentaire](images/backup-storage-11-edited_2020.png){.thumbnail}
 
 Lisez les conditions générales et validez votre demande en cliquant sur `Confirmer`{.action}.
 
-![Commander de l'espace disque supplémentaire](images/backup-storage-12-edited.png){.thumbnail}
+![Commander de l'espace disque supplémentaire](images/backup-storage-12-edited_2020.png){.thumbnail}
 
 Un bon de commande va maintenant être créé. Une fois votre paiement effectué, l’espace de stockage supplémentaire sera mis à votre disposition.
 
@@ -120,7 +120,7 @@ Un bon de commande va maintenant être créé. Une fois votre paiement effectué
 
 > [!primary]
 >
-> Le service de Backup Storage n’effectue pas de sauvegarde automatique de vos données. Il ne fournit que l'espace et les protocoles d'accès. Il est de votre responsabilité de mettre en œuvre une stratégie de sauvegarde adéquate en utilisant les outils de votre choix. OVH ne pourra être tenu pour responsable des données contenues dans ces espaces.
+> Le service de Backup Storage n’effectue pas de sauvegarde automatique de vos données. Il ne fournit que l'espace et les protocoles d'accès. Il est de votre responsabilité de mettre en œuvre une stratégie de sauvegarde adéquate en utilisant les outils de votre choix. OVHcloud ne pourra être tenu pour responsable des données contenues dans ces espaces.
 >
 
 #### FTP/FTPS

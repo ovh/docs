@@ -6,24 +6,24 @@ section: Getting started
 order: 2
 ---
 
-**Last updated 20th June 2018**
+**Last updated 2018/06/20**
 
 ## Objective
 
-When you order your dedicated server, no security protocols are implemented natively. It is therefore up to you to secure your server, something which OVH takes no responsibility for.
+When you order your dedicated server, no security protocols are implemented natively. It is therefore up to you to secure your server, something which OVHcloud takes no responsibility for.
 
 **This guide offers some general tips for securing your server.**
 
 > [!warning]
 >
-> While OVH provides you with the devices, the responsibility for their security rests solely in your hands. Since we have no access to these machines, we are not their administrators. It is your responsibility to manage the software, and apply proper security measures on an ongoing basis. 
+> While OVHcloud provides you with the devices, the responsibility for their security rests solely in your hands. Since we have no access to these machines, we are not their administrators. It is your responsibility to manage the software, and apply proper security measures on an ongoing basis. 
 > 
 > This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
 >
 
 ## Requirements
 
-* a [dedicated server](https://www.ovh.com/sg/dedicated-servers/){.external}
+* a [dedicated server](https://www.ovh.com/asia/dedicated-servers/){.external}
 * a SSH access as administrative (root)
 
 ## Instructions
@@ -192,15 +192,15 @@ iptables -L
 
 It is recommended that you create and adjust the rules on this firewall to fit your needs. For more detailed information on how to configure the iptables, please refer to the official documentation of your Linux distribution.
 
-### Configure the OVH Network Firewall
+### Configure the OVHcloud Network Firewall
 
-OVH servers include a firewall at the entrance to the infrastructure, called the Network Firewall. Its implementation and configuration allow protocols to be blocked before they even arrive on your server.
+OVHcloud servers include a firewall at the entrance to the infrastructure, called the Network Firewall. Its implementation and configuration allow protocols to be blocked before they even arrive on your server.
 
-We also have a guide to configuring the Network Firewall: <https://docs.ovh.com/asia/en/dedicated/firewall-network/>.
+We also have a guide to configuring the [Network Firewall](../firewall-network){.external}.
 
 ### Back up your system and your data
 
-The concept of security is not limited to protecting a system against attacks. Securing your data is a key element, which is why OVH offers you 500GB of free backup storage with your server. You can activate this backup storage in your Control Panel, and access it using the following protocols:
+The concept of security is not limited to protecting a system against attacks. Securing your data is a key element, which is why OVHcloud offers you 500GB of free backup storage with your server. You can activate this backup storage in your Control Panel, and access it using the following protocols:
 
 * FTP
 * FTPS
@@ -209,7 +209,7 @@ The concept of security is not limited to protecting a system against attacks. S
 
 You will need a third-party backup solution to replicate your data and transfer it to your backup storage.
 
-For more information on our backup storage solutions, please see our [backup storage guide](https://docs.ovh.com/asia/en/dedicated/services-backup-storage/){.external}.
+For more information on our backup storage solutions, please see our [backup storage guide](../using-backup-storage/){.external}.
 
 ## Go further
 

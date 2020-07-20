@@ -72,7 +72,7 @@ The device will be detected by the OS, and displayed as follows: /dev/sda, /dev/
 
 ### Retrieve a disk's serial number (Hardware RAID)
 
-For an in-depth look of these commands and how to test your hard disks, refer to [this guide (LSI raid controller)](https://docs.ovh.com/au/en/dedicated/raid-hard/){.external}.
+For an in-depth look of these commands and how to test your hard disks, refer to [this guide (LSI raid controller)](../raid-hard/){.external}.
 
 
 #### MegaRaid Controller
@@ -162,7 +162,7 @@ The RAID Device ID will be displayed as follows: /dev/sda = 1st RAID, /dev/sdb =
 
 LSI RAID controller uses a module called sg-map which maps devices in /dev/sgX (**X** being the number defining the device).
 
-You can refer to [this guide (LSI raid controller)](https://docs.ovh.com/au/en/dedicated/raid-hard/){.external} to find which hard drive relates to a designated sg device.
+You can refer to [this guide (LSI raid controller)](../raid-hard/){.external} to find which hard drive relates to a designated sg device.
 
 Once you have found the sg device related to the hard disk you want to query, use the following command:
 

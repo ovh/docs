@@ -1,27 +1,27 @@
 ---
-title: 'Managing OVH bills'
+title: 'Managing OVHcloud bills'
 slug: manage-ovh-bills
 excerpt: 'Find out how to manage your bills and the payments associated with them'
 section: 'Managing orders, bills and services'
 ---
 
-**Last updated 2018/11/02**
+**Last updated 2020/07/04**
 
 ## Objective
 
-OVH provides you with a space where you can view, manage and pay your various bills, without experiencing any service interruptions.
+OVHcloud provides you with a space where you can view, manage and pay your various bills, without experiencing any service interruptions.
 
 **This guide will show you how to carry out the actions offered in this menu.**
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to your OVH contracts, which you can access from the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} by going to `My services`{.action} then `My contracts`{.action}.
+> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to your OVHcloud contracts, which you can access from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} by going to `My services`{.action} then `My contracts`{.action}.
 >
 
 ## Requirements
 
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
-- access as a billing contact for your service (you can read more about the different contact types in our guide to [Managing contacts for your services](https://docs.ovh.com/ca/en/customer/managing-contacts/){.external})
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- access as a billing contact for your service (you can read more about the different contact types in our guide to [Managing contacts for your services](../customer/managing-contacts/){.external})
 
 
 ## Instructions
@@ -30,7 +30,7 @@ OVH provides you with a space where you can view, manage and pay your various bi
 
 You are sent a bill when you pay for your order, and when your service is automatically renewed. It provides a summary of the products you have paid for (or that are awaiting payment), their renewal periods, and the total charged for the services. A bill reference always starts with two letters.
 
-![Bill detail](images/invoice_ovh.png){.thumbnail}
+![Bill detail](images/invoice-ovh_ca.png){.thumbnail}
 
 |Number|Description|
 |---|---|
@@ -48,7 +48,7 @@ VAT is added at the bottom of the bill in the overall total, marked as “Total 
 
 > [!primary]
 >
-> If “Account statement” appears as the payment method used, this means that the service has been renewed automatically. The payment method used will be the default payment method saved in the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+> If “Account statement” appears as the payment method used, this means that the service has been renewed automatically. The payment method used will be the default payment method saved in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 >
 
 
@@ -58,7 +58,7 @@ VAT is added at the bottom of the bill in the overall total, marked as “Total 
 
 To view your bills, go to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Billing`{.action} section by clicking on your first name in the top right-hand corner. You will then land on a page summarising your bills: 
 
-![Bill summary](images/billing_section.png){.thumbnail}
+![Bill summary](images/billing-section_ca.png){.thumbnail}
 
 On this page, you will see the following information:
 
@@ -77,7 +77,7 @@ On this page, you will see the following information:
 
 If ‘Information not available’ appears, this means that the bill is not linked to an automatic renewal. You can view this information by clicking `...`{.action}. Three options will appear:
 
-![Actions for bills](images/actions_choices.png){.thumbnail}
+![Actions for bills](images/action-choices_ca.png){.thumbnail}
 
 - `See HTML version`{.action}. The bill will open in a new tab in your web browser.
 - `See PDF version`{.action}. A PDF file will be generated, which you can then download.
@@ -86,7 +86,7 @@ If ‘Information not available’ appears, this means that the bill is not link
 
 To make this document easier to read, there are several filters:
 
-![Sort filters](images/sort_filters.png){.thumbnail}
+![Sort filters](images/sort_filters_ca.png){.thumbnail}
 
 To search for a specific bill, you can enter a reference ID, or check bills from a set time period: three months, six months, or a period that you can set manually.
 
@@ -96,16 +96,16 @@ With the `Export as CSV`{.action} button, you can download an Excel file in .csv
 
 To pay bills that are pending payment, click `Pay balance immediately`{.action}.
 
-![Pay a due amount](images/pay_debt.png){.thumbnail}
+![Pay a due amount](images/pay_debt_ca.png){.thumbnail}
 
-A [purchase order](https://docs.ovh.com/ca/en/billing/managing-ovh-orders/#purchase-order){.external} for the settlement will then be created. Once the payment has been made, your account will no longer be in debit.
+A [purchase order](../managing-ovh-orders/#purchase-order){.external} for the settlement will then be created. Once the payment has been made, your account will no longer be in debit.
 
 
 ### Track payments.
 
 You can track all of the payments you have made in the `Billing` section, in `Payment Tracking`{.action}. This way, you can see which payments and bills are linked to one another. The reference ID for a payment receipt always begins with the letters ‘PA_’.
 
-![Payment tracking](images/payment_tracking.png){.thumbnail}
+![Payment tracking](images/payment_tracking_ca.png){.thumbnail}
 
 In this section, you can also export your payment receipts in .csv format. As is the case for managing bills, you can filter the periods that will be shown.
 
