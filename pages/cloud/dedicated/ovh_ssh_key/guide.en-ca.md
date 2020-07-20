@@ -1,7 +1,7 @@
 ---
-title: Installing an OVH SSH key 
+title: Installing an OVHcloud SSH key 
 slug: ovh-ssh-key
-excerpt: This guide will explain how to install an OVH SSH key, allowing our administrators to make changes
+excerpt: This guide will explain how to install an OVHcloud SSH key, allowing our administrators to make changes
 section: Security
 ---
 
@@ -9,14 +9,14 @@ section: Security
 
 ## Objective
 
-In some cases, OVH administrators will need to perform interventions on your dedicated server. 
+In some cases, OVHcloud administrators will need to perform interventions on your dedicated server. 
 
-**This guide will explain how to install an OVH SSH key, allowing our administrators to make changes. It will also explain how to disable it.**
+**This guide will explain how to install an OVHcloud SSH key, allowing our administrators to make changes. It will also explain how to disable it.**
 
 
 ## Requirements
 
-- You must be [logged in via SSH](https://docs.ovh.com/ca/en/dedicated/ssh-introduction/){.external} (root access).
+- You must be [logged in via SSH](../ssh-introduction/){.external} (root access).
 
 
 ## Instructions
@@ -25,13 +25,13 @@ In some cases, OVH administrators will need to perform interventions on your ded
 
 Once you are logged in via SSH, enter the following command (listed in French below):
 
-- If your server is hosted by OVH in Europe:
+- If your server is hosted by OVHcloud in Europe:
 
 ```sh
 wget ftp://ftp.ovh.net/made-in-ovh/cle-ssh-public/installer_la_cle.sh -O installer_la_cle.sh ; sh installer_la_cle.sh
 ```
 
-- If your server is hosted by OVH in Canada:
+- If your server is hosted by OVHcloud in Canada:
 
 ```sh
 wget ftp://ftp.ovh.net/made-in-ovh/cle-ssh-public/installer_la_cleCA.sh -O installer_la_cle.sh ; sh installer_la_cle.sh
@@ -119,6 +119,6 @@ cat /root/.ssh/authorized_keys2
 
 ## Go further
 
-[Introduction to SSH](https://docs.ovh.com/ca/en/dedicated/ssh-introduction/).
+[Introduction to SSH](../ssh-introduction/).
 
 Join our community of users on <https://community.ovh.com/en/>.

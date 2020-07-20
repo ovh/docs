@@ -17,7 +17,7 @@ Le Real Time Monitoring (RTM) permet de surveiller partiellement votre serveur e
 
 - Vous devez être connecté via SSH (ou sur votre interface utilisateur graphique) sur votre serveur Linux (accès *root*)
 - Vous devez être connecté au bureau à distance sur votre serveur Windows (accès *administrateur*).
-- Vous devez être connecté à votre [Espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Vous devez être connecté à votre [Espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
 
@@ -27,7 +27,7 @@ Une fois RTM installé via votre Espace client, vous pouvez surveiller votre ser
 
 > [!primary]
 >
-> Certaines restrictions du firewall peuvent empêcher la surveillance de votre infrastructure, même si vous avez ajouté le RTM. N’oubliez pas d’autoriser l’accès des adresses IP de surveillance OVH à votre serveur. Vous pouvez trouver plus de détails [ici](https://docs.ovh.com/fr/dedicated/monitoring-ip-ovh/){.external}.
+> Certaines restrictions du firewall peuvent empêcher la surveillance de votre infrastructure, même si vous avez ajouté le RTM. N’oubliez pas d’autoriser l’accès des adresses IP de surveillance OVH à votre serveur. Vous pouvez trouver plus de détails [ici](../monitoring-ip-ovh/){.external}.
 > 
 
 ### RTM sur Linux
@@ -242,8 +242,8 @@ Le paquet RTM n'est pas encore compatible pour Windows. (en cours)
 
 ## Aller plus loin
 
-[Adresses IP pour la surveillance OVH](https://docs.ovh.com/fr/dedicated/monitoring-ip-ovh/){.external}.
+[Adresses IP pour la surveillance OVHcloud](../monitoring-ip-ovh/){.external}.
 
-[Visualiser vos donnees](https://docs.ovh.com/gb/en/metrics/usecase-visualize/){.external}.
+[Visualiser vos donnees](../metrics/usecase-visualize/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

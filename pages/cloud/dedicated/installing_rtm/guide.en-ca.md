@@ -9,7 +9,7 @@ section: 'Diagnostic and rescue mode'
 
 ## Objective
 
-With Real Time Monitoring (RTM), you can partially monitor your server and its activity. In the OVH Control Panel, you will find information on the CPU (Central Processing Unit), RAM (Random Access Memory), open ports, etc. To view this information, you need to install the RTM package.
+With Real Time Monitoring (RTM), you can partially monitor your server and its activity. In the OVHcloud Control Panel, you will find information on the CPU (Central Processing Unit), RAM (Random Access Memory), open ports, etc. To view this information, you need to install the RTM package.
 
 **This guide will explain how to install RTM on Linux or Windows.**
 
@@ -17,17 +17,17 @@ With Real Time Monitoring (RTM), you can partially monitor your server and its a
 
 - You need to be logged in via SSH (or your graphical user interface) on your Linux server (*root* access).
 - You need to be logged in to the remote desktop on your Windows server (*administrator* access).
-- You need to be logged in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You need to be logged in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
 
-Once you have installed the RTM via the OVH Control Panel, you can monitor your server in the `Dedicated`{.action} section. On the main page for your server, you can find the monitoring information under `Real Time Monitoring`:
+Once you have installed the RTM via the OVHcloud Control Panel, you can monitor your server in the `Dedicated`{.action} section. On the main page for your server, you can find the monitoring information under `Real Time Monitoring`:
 
 ![Real Time Monitoring](images/rtm.png){.thumbnail}
 
 > [!primary]
->
-> Some firewall restrictions could prevent your infrastructure from being monitored, even though you have added the RTM. Don’t forget to give OVH monitoring IP addresses access to your server. You can find more details [here](https://docs.ovh.com/ie/en/dedicated/monitoring-ip-ovh/){.external}.
+>I
+> Some firewall restrictions could prevent your infrastructure from being monitored, even though you have added the RTM. Don’t forget to give OVHcloud monitoring IP addresses access to your server. You can find more details [here](../monitoring-ip-ovh/){.external}.
 > 
 
 ### RTM in Linux
@@ -203,6 +203,6 @@ Once you are logged in to the remote desktop, take the following steps:
 
 ## Go further
 
-[IP addresses for OVH monitoring](https://docs.ovh.com/ie/en/dedicated/monitoring-ip-ovh/){.external}.
+[IP addresses for OVHcloud monitoring](../monitoring-ip-ovh/){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.

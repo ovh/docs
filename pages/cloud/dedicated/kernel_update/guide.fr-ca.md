@@ -1,7 +1,7 @@
 ---
 title: 'Mettre à jour le kernel sur un serveur dédié'
 slug: mettre-a-jour-kernel-serveur-dedie
-excerpt: 'Découvrez comment mettre à jour le kernel d’une distribution utilisant un noyau OVH'
+excerpt: 'Découvrez comment mettre à jour le kernel d’une distribution utilisant un noyau OVHcloud'
 section: 'Utilisation avancée'
 ---
 
@@ -9,29 +9,29 @@ section: 'Utilisation avancée'
 
 ## Objectif
 
-[Les serveurs dédiés OVH](https://www.ovh.com/fr/serveurs_dedies/){.external} peuvent facilement démarrer dans un système d'exploitation Linux en utilisant un kernel mis à jour, grâce au système de démarrage *netboot*. Cependant, il est recommandé de mettre à jour le kernel sur la machine locale.
+[Les serveurs dédiés OVHcloud](https://www.ovh.com/ca/fr/serveurs_dedies/){.external} peuvent facilement démarrer dans un système d'exploitation Linux en utilisant un kernel mis à jour, grâce au système de démarrage *netboot*. Cependant, il est recommandé de mettre à jour le kernel sur la machine locale.
 
 ## Qu'est-ce qu'un kernel ?
 
 Un kernel est un système de bas niveau, qui est chargé d'interfacer le système d'exploitation et les applications avec le matériel physique du serveur. Il permet également de partager des processus. 
 
-**Ce guide vous explique comment mettre à jour le kernel dans le cadre d’une distribution utilisant un noyau OVH.**
+**Ce guide vous explique comment mettre à jour le kernel dans le cadre d’une distribution utilisant un noyau OVHcloud.**
 
 > [!warning]
 >
-> Par défaut, l’ensemble des images système proposées sur [les serveurs dédiés OVH](https://www.ovh.com/fr/serveurs_dedies/){.external} utilisent un noyau OVH optimisé. Les utilisateurs ayant remplacé ces images par leur propre distribution sont invités à consulter la documentation officielle de cette dernière.
+> Par défaut, l’ensemble des images système proposées sur [les serveurs dédiés OVHcloud](https://www.ovh.com/ca/fr/serveurs_dedies/){.external} utilisent un noyau OVHcloud optimisé. Les utilisateurs ayant remplacé ces images par leur propre distribution sont invités à consulter la documentation officielle de cette dernière.
 >
 
 > [!primary]
 >
-> OVH met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 >
 > Nous mettons ce guide à votre disposition afin de vous accompagner sur cette mise à jour. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur.
 >
 
 ## Prérequis
 
-- Posséder un serveur dédié OVH.
+- Posséder un serveur dédié OVHcloud.
 - Être connecté en SSH avec l’identifiant root.
 - Avoir effectué au préalable une sauvegarde des données (consultez la documentation officielle de votre distribution).
 
@@ -39,7 +39,7 @@ Un kernel est un système de bas niveau, qui est chargé d'interfacer le systèm
 
 > [!warning]
 >
-> Veuillez noter que les modèles d'installation Ubuntu ne sont plus fournis avec les noyaux OVH, pour des raisons de copyright. Vous devez ajouter les dépôts OVH au fichier « /etc/apt/sources.list ».
+> Veuillez noter que les modèles d'installation Ubuntu ne sont plus fournis avec les noyaux OVHcloud, pour des raisons de copyright. Vous devez ajouter les dépôts OVHcloud au fichier « /etc/apt/sources.list ».
 >
 
 ### Identifier le kernel
@@ -61,7 +61,7 @@ uname -r
 Dans ce cas, la version du kernel est **4.09.76-xxxx-std-ipv6-64**.
 
 
-### Mettre à jour le kernel en utilisant les paquets OVH
+### Mettre à jour le kernel en utilisant les paquets OVHcloud
 
 Dans les distributions basées sur Debian et RedHat, le kernel est mis à jour en utilisant le gestionnaire de paquets.
 
@@ -88,7 +88,7 @@ reboot
 ```
 
 
-### Mettre à jour le kernel sans utiliser les paquets OVH
+### Mettre à jour le kernel sans utiliser les paquets OVHcloud
 
 #### Étape 1 : se placer dans le bon répertoire
 
@@ -144,7 +144,7 @@ reboot
 
 ### Revenir en arrière
 
-En cas de mauvaise manipulation ou d’erreur, vous avez la possibilité de revenir en arrière. Pour cela, il convient de passer le serveur en [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external}. Il faudra ensuite monter votre système avec les commandes ci-dessous :
+En cas de mauvaise manipulation ou d’erreur, vous avez la possibilité de revenir en arrière. Pour cela, il convient de passer le serveur en [mode rescue](../ovh-rescue/){.external}. Il faudra ensuite monter votre système avec les commandes ci-dessous :
 
 ```sh
 mount /dev/md1 /mnt
@@ -205,12 +205,12 @@ uname -r
 >
 > En cas de besoin, il existe un certain nombre d’outils (dont <https://github.com/speed47/spectre-meltdown-checker>) vous permettant de savoir si le kernel utilisé est vulnérable ou non.
 >
-> **OVH ne peut garantir la fiabilité d’outils externes, vous utilisez ces derniers à vos risques et périls.**
+> **OVHcloud ne peut garantir la fiabilité d’outils externes, vous utilisez ces derniers à vos risques et périls.**
 >
 
 ## Aller plus loin
 
-[Mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external}.
+[Mode rescue](../ovh-rescue/){.external}.
 
 [Informations sur les vulnérabilités Meltdown et Spectre (anglais)](https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/){.external}.
 

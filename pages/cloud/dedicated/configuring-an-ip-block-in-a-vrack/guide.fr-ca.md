@@ -20,7 +20,7 @@ En plus de l'adressage IP privé, le [vRack](https://www.ovh.com/ca/fr/solutions
 * Préparer votre plage d'adresses IP privées choisies.
 * Posséder un [serveur compatible vRack](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}.
 * Activer un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
-* Être connecté à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## En pratique
@@ -128,10 +128,10 @@ Redémarrez le serveur pour appliquer les modifications effectuées.
 
 ## Aller plus loin
 
-[Configurer plusieurs serveurs dédiés dans le vRack](https://docs.ovh.com/ca/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/){.external}
+[Configurer plusieurs serveurs dédiés dans le vRack](../configurer-plusieurs-serveurs-dedies-dans-le-vrack/){.external}
 
-[Créer plusieurs réseaux locaux virtuels dans un vRack](https://docs.ovh.com/ca/fr/dedicated/creer-vlan-vrack/){.external}
+[Créer plusieurs réseaux locaux virtuels dans un vRack](../creer-vlan-vrack/){.external}
 
-[Configurer un vRack entre une instance Public Cloud et un serveur dédié](https://docs.ovh.com/ca/fr/dedicated/configurer-vrack-entre-pci-serveur-dedie/){.external}
+[Configurer un vRack entre une instance Public Cloud et un serveur dédié](../configurer-vrack-entre-pci-serveur-dedie/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -15,7 +15,7 @@ Anti-spam policies are becoming increasingly strict. To ensure that your emails 
 
 > [!warning]
 >
-> OVH provides services that you are responsible for. In fact, as we do not not have administrative access to these machines, we are not administrators and we cannot provide you with support. This means that it is up to you to manage the software and security daily. 
+> OVHcloud provides services that you are responsible for. In fact, as we do not not have administrative access to these machines, we are not administrators and we cannot provide you with support. This means that it is up to you to manage the software and security daily. 
 We have provided you with this guide in order to help you with common tasks. However, we advise contacting a specialist provider if you experience any difficulties or doubts about administration, usage or server security.
 >
 
@@ -41,7 +41,7 @@ If you are using a dedicated infrastructure (e.g. a dedicated server, VPS, Publi
 
 For further information on the SPF record, refer to the following page: <http://www.openspf.org/SPF_Record_Syntax>.
 
-You can go even further by configuring the SPF record of a specific domain, or by specifying an IPV6 address. You can find out how to do this in our guide to [adding an SPF record](https://docs.ovh.com/gb/en/domains/web_hosting_the_spf_record/).
+You can go even further by configuring the SPF record of a specific domain, or by specifying an IPV6 address. You can find out how to do this in our guide to [adding an SPF record](../domains/web_hosting_the_spf_record/).
 
 ### Configure the DKIM record.
 
@@ -53,9 +53,9 @@ The authentication is carried out by a DKIM key that needs to be added in your D
 
 To further optimise email sending and stop your emails from being blocked, you can configure a reverse IP with your domain name.
 
-To modify your reverse IP in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Dedicated`{.action} section, then `IP`{.action}. Then select an IPv4 address, click the cogwheel on the right-hand side, then click `Modify the reverse`{.action}:
+To modify your reverse IP in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to the `Dedicated`{.action} section, then `IP`{.action}. Then select an IPv4 address, click the cogwheel on the right-hand side, then click `Modify the reverse`{.action}:
 
-![Reverse IP](images/reverse_ip.png)
+![Reverse IP](images/reverse_ip_2020.png)
 
 Here, you can add your domain name as a reverse IP.
 

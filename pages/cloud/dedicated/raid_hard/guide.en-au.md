@@ -384,10 +384,10 @@ RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 
 > [!alert]
 >
-> This RAID controller card is deprecated. We highly recommend that you contact OVH Support to schedule an intervention to replace the RAID controller with an LSI, as 3ware RAID controllers are proven to be rather unstable. This type of intervention requires a reinstallation of your server. Be sure to backup your data first.
+> This RAID controller card is deprecated. We highly recommend that you contact OVHcloud Support to schedule an intervention to replace the RAID controller with an LSI, as 3ware RAID controllers are proven to be rather unstable. This type of intervention requires a reinstallation of your server. Be sure to backup your data first.
 > 
 
 ## Go further
 
-[Configuring software RAID](https://docs.ovh.com/au/en/dedicated/raid-soft/){.external}
+[Configuring software RAID](../raid-soft/){.external}
 Join our community of users on <https://community.ovh.com/en/>.
