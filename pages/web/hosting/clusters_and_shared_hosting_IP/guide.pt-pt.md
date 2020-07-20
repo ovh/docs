@@ -5,7 +5,7 @@ section: 'Configuração do alojamento'
 order: 3
 ---
 
-**Última atualização: 12/05/2020**
+**Última atualização: 20/07/2020**
 
 Neste guia encontrará todos os endereços IP dos alojamentos web OVHcloud. Assim, poderá nomeadamente encontrar o endereço IP a indicar nas zonas DNS em função:
 
