@@ -823,3 +823,23 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ```bash
 91.134.248.192
 ```
+
+## Cluster 051
+
+A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
+
+|País|Código de país|IPv4|IPv6|
+|---|---|----|---|
+|Canadá|CA|51.161.122.78|2607:5300:205:2::51|
+
+Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+178.32.120.166
+```
+
+Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+51.161.94.36
+```

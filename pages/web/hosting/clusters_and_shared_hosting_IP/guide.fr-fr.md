@@ -823,3 +823,26 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```bash
 91.134.248.192
 ```
+
+## Cluster 051
+
+Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
+
+|Pays|Code Pays|IPv4|IPv6|
+|---|---|----|---|
+|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+
+Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+```bash
+178.32.120.166
+```
+
+
+Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
+
+
+
+```bash
+51.161.94.36
+```
