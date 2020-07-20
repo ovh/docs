@@ -5,7 +5,7 @@ section: 'Configurazione dell’hosting'
 order: 3
 ---
 
-**Ultimo aggiornamento: 17/09/2019**
+**Ultimo aggiornamento: 20/07/2020**
 
 In questa guida sono elencati tutti gli indirizzi IP degli hosting Web OVHcloud. In questo modo è possibile individuare l’indirizzo IP da inserire nella tua zona DNS, in base a:
 
@@ -822,4 +822,25 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 
 ```bash
 91.134.248.192
+```
+
+## Cluster 051
+
+Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
+
+|Paese|Codice Paese|IPv4|IPv6|
+|---|---|----|---|
+|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+
+Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
+
+```bash
+178.32.120.166
+```
+
+Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
+
+
+```bash
+51.161.94.36
 ```

@@ -6,7 +6,7 @@ section: Webhosting-Konfiguration
 order: 3
 ---
 
-**Letzte Aktualisierung am 29.04.2020**
+**Letzte Aktualisierung am 20.07.2020**
 
 ## Ziel
 
@@ -784,6 +784,26 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 
 ```bash
 91.134.248.192
+```
+
+## Cluster 051
+
+#### IP-Adressen der Cluster nach Land
+
+|Country|Country Code|IPv4|IPv6|
+|---|---|----|---|
+|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+
+Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+178.32.120.166
+```
+
+Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
+
+```bash
+51.161.94.36
 ```
 
 ## Weiterführende Informationen
