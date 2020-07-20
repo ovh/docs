@@ -823,3 +823,26 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 ```bash
 91.134.248.192
 ```
+
+## Cluster 051
+
+De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
+
+|País|Código de país|IPv4|IPv6|
+|---|---|----|---|
+|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+
+Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
+
+```bash
+178.32.120.166
+```
+
+
+Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
+
+
+
+```bash
+51.161.94.36
+```
