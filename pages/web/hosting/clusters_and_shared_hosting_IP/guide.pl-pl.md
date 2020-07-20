@@ -4,7 +4,7 @@ slug: lista-adresow-ip-klastrow-i-hostingow-www
 section: 'Konfiguracja hostingu'
 ---
 
-**Ostatnia aktualizacja z dnia 17-09-2019**
+**Ostatnia aktualizacja z dnia 20-07-2020**
 
 W tym przewodniku znajdziesz wszystkie adresy IP hostingów WWW OVHcloud. Dzięki temu dowiesz się na przykład, jaki adres IP wpisać w strefach DNS w zależności od elementów takich jak:
 
@@ -821,4 +821,27 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 
 ```bash
 91.134.248.192
+```
+
+## Klaster 051
+
+Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
+
+|Kraj|Kod kraju|IPv4|IPv6|
+|---|---|----|---|
+|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+
+Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
+
+```bash
+178.32.120.166 
+```
+
+
+Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
+
+
+
+```bash
+51.161.94.36
 ```
