@@ -1,10 +1,10 @@
 ---
-title: Automatisches Backup
+title: 'Automatisches Backup'
 excerpt: ''
 slug: automatisches_backup
 legacy_guide_number: g1486
+hidden: true
 ---
-
 
 ## 
 Zur Verwaltung des automatischen Backups benötigen Sie:
@@ -13,8 +13,6 @@ Zur Verwaltung des automatischen Backups benötigen Sie:
 - Einen VPS Cloud
 - Ihre Zugangsdaten für das OVH Kundencenter
 - Zugriff auf Ihren Server per SSH oder RDP
-
-
 
 
 ## Über das Kundencenter

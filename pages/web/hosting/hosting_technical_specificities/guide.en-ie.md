@@ -1,12 +1,12 @@
 ---
 title: 'Technical specifications of Web Hostings'
 slug: technical-specifications-web-hosting
-excerpt: 'Find out more about the technical capabilities of your Web Hosting plan '
+excerpt: 'Find out details about the technical capabilities of your Web Hosting plan '
 section: 'Configuring the Web Hosting plan'
 order: 4
 ---
 
-**Last updated 13th May 2020**
+**Last updated 11th June 2020**
 
 
 ## Objective
@@ -148,7 +148,7 @@ OVHcloud makes available to the client statistics on website visitors and audien
 
 OVHcloud Web Statistics reports are compiled from anonymised traffic data, such as the IP address and logs of users of the website, the url of the request, the duration of the request and the "user agent".
 
-In order to be used as part of OVHcloud Web Statistics Statistics, the aforementioned data is anonymised and aggregated using algorithms operated by OVHcloud on its own infrastructure. In particular, in order to be processed and analysed to determine the geolocation of the user (limited to a region), the IP address of the user, present in the above mentioned traffic data, is extracted in anonymised form. Thus, no personal data allowing the identification, direct or indirect, of the website users is stored as part of OVHcloud Web Statistics.
+In order to be used as part of OVHcloud Web Statistics, the aforementioned data is anonymised and aggregated using algorithms operated by OVHcloud on its own infrastructure. In particular, in order to be processed and analysed to determine the geolocation of the user (limited to a region), the IP address of the user, present in the above mentioned traffic data, is extracted in anonymised form. Thus, no personal data allowing the identification, direct or indirect, of the website users is stored as part of OVHcloud Web Statistics.
 
 
 ## Go further

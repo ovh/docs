@@ -3,7 +3,6 @@ title: Utiliser la fonctionnalité Bring Your Own Image
 excerpt: Apprenez à déployer vos images grâce à Bring Your Own Image
 slug: bringyourownimage
 section: Utilisation avancée
-hidden: true
 ---
 
 **Dernière mise à jour le 21/07/2020**
@@ -17,7 +16,7 @@ Grâce à la technologie Bring Your Own Image, il vous est désormais possible 
 ## Prérequis
 
 - Posséder un [serveur dédié OVHcloud](https://www.ovh.com/fr/serveurs_dedies/).
-- Avoir généré les [credentials pour utiliser l'APIv6](https://docs.ovh.com/fr/api/api-premiers-pas/)
+- Avoir généré les [credentials pour utiliser l'APIv6](https://docs.ovh.com/fr/api/api-premiers-pas/).
 
 > [!warning]
 >
@@ -57,7 +56,7 @@ Pour créer et déployer votre image, utilisez l'appel suivant et complétez les
 |-|-|
 | serviceName | Le nom de votre serveur. |
 | URL | L'URL où récupérer votre image. |
-| checkSum | Le checsum de votre image. |
+| checkSum | Le checksum de votre image. |
 | checkSumType | Le checksum de l'image à déployer (md5, sha1, sha256, sha512). |
 | description | Le nom de votre image. |
 | diskGroupId | L'id du disque qui doit être utilisé. |
@@ -66,7 +65,7 @@ Pour créer et déployer votre image, utilisez l'appel suivant et complétez les
 | sshKey | Votre clé SSH publique. |
 | type | Le type/format de votre image (qcow2, raw, ova). |
 | userData | Votre script de post-installation. |
-| userMetadatas | Meta datas utilisés par nova au moment du boot. |
+| userMetadatas | Meta datas utilisés par Nova au moment du boot. |
 
 
 ![POST API call](images/postapicall.png){.thumbnail}
