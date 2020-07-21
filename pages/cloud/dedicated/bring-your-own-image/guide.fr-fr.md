@@ -52,6 +52,7 @@ Pour créer et déployer votre image, utilisez l'appel suivant et complétez les
 > @api {POST} /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
+
 | Champ | Description |
 |-|-|
 | serviceName | Le nom de votre serveur. |
@@ -66,6 +67,7 @@ Pour créer et déployer votre image, utilisez l'appel suivant et complétez les
 | type | Le type/format de votre image (qcow2, raw, ova). |
 | userData | Votre script de post-installation. |
 | userMetadatas | Meta datas utilisés par nova au moment du boot. |
+
 
 ![POST API call](images/postapicall.png){.thumbnail}
 
