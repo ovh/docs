@@ -43,7 +43,7 @@ Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis 
 
 Vous disposez de trois appels API liés à la fonctionnalité BringYourOwnImage.
 
-![calls API](apicalls.png){.thumbnail}
+![calls API](images/apicalls.png){.thumbnail}
 
 Pour créer et déployer votre image, utilisez l'appel suivant et complétez les champs requis :
 
@@ -67,7 +67,7 @@ Pour créer et déployer votre image, utilisez l'appel suivant et complétez les
 | userData | Votre script de post-installation. |
 | userMetadatas | Meta datas utilisés par nova au moment du boot. |
 
-![POST API call](postapicall.png){.thumbnail}
+![POST API call](images/postapicall.png){.thumbnail}
 
 Une fois les champs complétés, lancez le déploiement en cliquant sur `Execute`{.action}.
 
@@ -82,7 +82,7 @@ Vous pouvez suivre le déploiement de votre image via l'appel API ci-dessous ou 
 
 Dans cet exemple, le déploiement est en cours de démarrage.
 
-![GET API call](getapicall.png){.thumbnail}
+![GET API call](images/getapicall.png){.thumbnail}
 
 Le déploiement peut durer une dizaine de minutes. Une fois l'opération terminée, le statut de votre déploiement passera en « done » et votre serveur aura redémarré sur disque.
 
