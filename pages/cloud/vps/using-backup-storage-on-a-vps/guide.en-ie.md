@@ -1,13 +1,12 @@
 ---
 title: 'Using snapshots on a VPS'
-excerpt: 'Find out how to how enable and use the Snapshot option in the OVHcloud Control Panel'
+excerpt: 'Find out how to enable and use the Snapshot option in the OVHcloud Control Panel'
 slug: using-snapshots-on-a-vps
 section: 'Backup options'
 order: 1
 ---
 
-**Last updated 21st July 2020**
-
+**Last updated 20th July 2020**
 
 ## Objective
 
@@ -50,6 +49,7 @@ Since you can only have one snapshot activated at a time, the existing snapshot 
 
 If you are sure that you would like to reset your VPS to the status of the snapshot, click `Restore the snapshot`{.action} and confirm the restoration task in the popup window.
 
+Please note that when you restore a VPS from a snapshot, the snapshot will be deleted.
 
 ### Best practice for using snapshots
 
@@ -120,7 +120,7 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Go further
 
-[Using automated backups on a VPS](https://docs.ovh.com/ie/en/vps/using-automated-backups-on-a-vps)
+[Using automated backups on a VPS](../using-automated-backups-on-a-vps)
 
 
 Join our community of users on <https://community.ovh.com/en/>.
