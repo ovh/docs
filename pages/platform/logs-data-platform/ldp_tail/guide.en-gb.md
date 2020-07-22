@@ -6,7 +6,7 @@ excerpt: This super-powered tail will follow and format your logs with flying co
 section: Features
 ---
 
-**Last updated 2nd April 2019**
+**Last updated 22nd July 2020**
 
 ## Objective
 
@@ -18,13 +18,13 @@ The Logs Data Platform allows you to connect different applications or servers t
 
 - **ldp-tail** can be run on Linux, Mac or Windows, locally or remotely
 - You will need an internet connection
-- A LDP Pro account with [an active stream](../quick_start/guide.en-gb.md){ref} and WebSocket option enabled
+- A LDP account with [an active stream](../quick_start/guide.en-gb.md){ref} and WebSocket option enabled
 
 ## Instructions
 
 ### Download and test ldp-tail in two minutes
 
-**ldp-tail** is derived from a internal tool used by OVH engineers to follow in real time hundreds of applications and servers logs. It is written in Go and is completely open-source. So if you're curious enough, you can check the code at [https://github.com/ovh/ldp-tail](https://github.com/ovh/ldp-tail){.external}. You can also download binary releases from this website. Go to [https://github.com/ovh/ldp-tail/releases](https://github.com/ovh/ldp-tail/releases){.external} to download the release for your platform. 64 bits versions of Linux, Windows and Mac OS X are currently supported.. Decompress the archive obtained and you will get the **ldp-tail** binary.
+**ldp-tail** is derived from a internal tool used by OVHcloud engineers to follow in real time hundreds of applications and servers logs. It is written in Go and is completely open-source. So if you're curious enough, you can check the code at [https://github.com/ovh/ldp-tail](https://github.com/ovh/ldp-tail){.external}. You can also download binary releases from this website. Go to [https://github.com/ovh/ldp-tail/releases](https://github.com/ovh/ldp-tail/releases){.external} to download the release for your platform. 64 bits versions of Linux, Windows and Mac OS X are currently supported.. Decompress the archive obtained and you will get the **ldp-tail** binary.
 
 You can test it right away on our demo stream by using this command in a terminal.
 
@@ -151,7 +151,7 @@ If you have any difficulty understanding this pattern or if you want help creati
 
 It's also possible to replay a given time window in the past.
 
-To proceed, give the begin & end as uri query parameter.
+To proceed, give the begin & end as uri query parameter. begin and end must be in [Unix timestamp format](https://en.wikipedia.org/wiki/Unix_time){.external}. 
 
 Sample:
 
@@ -167,4 +167,4 @@ To make the magic happens, replace begin and end values with timestamps that hav
 - Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
 - Documentation: [Guides](../product.en-gb.md){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
