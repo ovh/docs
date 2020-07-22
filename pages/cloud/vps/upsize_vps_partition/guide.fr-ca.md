@@ -14,7 +14,7 @@ Lors de l’upgrade de votre VPS, il est possible qu’un repartitionnement de v
 
 > [!warning]
 >
-> Le repartitionnement peut endommager définitivement vos données. OVH ne pourra être tenu responsable de leur détérioration ou de leur perte. Avant de faire quoi que ce soit, pensez donc à bien sauvegarder vos informations. 
+> Le repartitionnement peut endommager définitivement vos données. OVHcloud ne pourra être tenu responsable de leur détérioration ou de leur perte. Avant de faire quoi que ce soit, pensez donc à bien sauvegarder vos informations. 
 >
 
 **Découvrez comment augmenter votre espace de stockage après un upgrade de votre VPS.**
@@ -22,7 +22,7 @@ Lors de l’upgrade de votre VPS, il est possible qu’un repartitionnement de v
 ## Prérequis
 
 - Avoir accès en SSH au VPS (accès root).
-- Avoir redémarré le serveur en [mode rescue](https://docs.ovh.com/fr/vps/mode-rescue-vps/).
+- Avoir redémarré le serveur en [mode rescue](../mode-rescue-vps/).
 
 ## En pratique
 
@@ -34,7 +34,7 @@ La tentative d’étendre une partition peut entraîner une perte de données. P
 
 ### Démonter la partition
 
-Une fois connecté à votre VPS en [mode rescue](https://docs.ovh.com/fr/vps/mode-rescue-vps/), votre partition sera automatiquement montée. Pour la redimensionner, vous devez la démonter. Si vous connaissez le nom de votre partition, vous pouvez ignorer l'étape suivante. Dans le cas contraire, utilisez cette commande :
+Une fois connecté à votre VPS en [mode rescue](../mode-rescue-vps/), votre partition sera automatiquement montée. Pour la redimensionner, vous devez la démonter. Si vous connaissez le nom de votre partition, vous pouvez ignorer l'étape suivante. Dans le cas contraire, utilisez cette commande :
 
 ```sh
 lsblk

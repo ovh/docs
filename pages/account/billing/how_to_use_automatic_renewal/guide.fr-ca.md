@@ -6,7 +6,7 @@ section: 'Gérer mes services et leur renouvellement'
 order: 1
 ---
 
-**Dernière mise à jour le 10/04/2020**
+**Dernière mise à jour le 14 juillet 2020**
 
 ## Objectif
 
@@ -34,11 +34,11 @@ Mais il est également possible de paramétrer certains produits (Domaines, Héb
 
 Nous vous recommandons de lire les guides suivants, ainsi que de vous concentrer sur les opérations que vous souhaitez effectuer. 
 
-- [ Afficher les statuts de renouvellement de vos services. ](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#afficher-les-statuts-de-renouvellement-de-vos-services){.external} Ce guide vous aide à vérifier si vos services sont renouvelés automatiquement. Il vous permet également d'obtenir leur date de renouvellement ou d'expiration.
+- [ Afficher les statuts de renouvellement de vos services. ](https://docs.ovh.com/ca/fr/billing/renouvellement-automatique-ovh/#afficher-les-statuts-de-renouvellement-de-vos-services){.external} Ce guide vous aide à vérifier si vos services sont renouvelés automatiquement. Il vous permet également d'obtenir leur date de renouvellement ou d'expiration.
 
-- [Gérer le renouvellement de vos services.](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#le-renouvellement-chez-ovhcloud){.external} Ce guide vous aide à activer ou désactiver le renouvellement automatique, à modifier la fréquence de paiement d'un service, ainsi qu'à payer les renouvellements avant leur échéance.
+- [Gérer le renouvellement de vos services.](https://docs.ovh.com/ca/fr/billing/renouvellement-automatique-ovh/#le-renouvellement-chez-ovhcloud){.external} Ce guide vous aide à activer ou désactiver le renouvellement automatique, à modifier la fréquence de paiement d'un service, ainsi qu'à payer les renouvellements avant leur échéance.
 
-- [Gérer vos moyens de paiement.](https://docs.ovh.com/fr/billing/manage-payment-methods){.external} Ce guide vous permet de vous assurer que vous disposez d'un moyen de paiement enregistré pour les futurs renouvellements. Vous pouvez également ajouter et supprimer des moyens de paiement, si nécessaire.
+- [Gérer vos moyens de paiement.](https://docs.ovh.com/ca/fr/billing/manage-payment-methods){.external} Ce guide vous permet de vous assurer que vous disposez d'un moyen de paiement enregistré pour les futurs renouvellements. Vous pouvez également ajouter et supprimer des moyens de paiement, si nécessaire.
 
 ### Accéder au paramétrage de vos services
 
@@ -70,8 +70,6 @@ Si vous n'avez enregistré aucun moyen de paiement, une facture vous sera adress
 
 Pour les services ayant une fréquence de renouvellement automatique supérieure à 1 mois (3 mois, 6 mois, 12 mois), un rappel vous est également envoyé par e-mail le mois précédent, récapitulant les services allant être renouvelés prochainement.
 
-Si vous ne souhaitez pas prolonger l'un de ces services, il vous suffit alors de le résilier dans votre espace client.
-
 #### **Le renouvellement manuel**
 
 Vous avez également la possibilité, pour certains produits OVH (domaines, hébergements, VPS, serveurs dédiés), de les passer en **renouvellement manuel**. Ce mode de renouvellement est utile si vous n'êtes pas certain de vouloir conserver le service à échéance, ou si vous ne souhaitez pas que vos factures soient prélevées automatiquement sur votre moyen de paiement. 
@@ -81,8 +79,6 @@ Si vous choisissez ce mode, vous recevrez plusieurs relances par e-mail avant é
 > [!warning]
 >
 >Si vous n'effectuez pas de paiement pour un service en renouvellement manuel, celui-ci sera suspendu à sa date d'expiration puis supprimé au bout de quelques jours.
->
->En revanche, si vous ne souhaitez pas conserver ce service, il n'est pas nécessaire d'en demander la résiliation.
 >
 
 
@@ -107,15 +103,11 @@ Selon le service choisi, vous pouvez le paramétrer en renouvellement manuel, ou
 
 En fonction du choix effectué, vous seront précisés les futures dates de prélèvement, le moyen de paiement qui sera utilisé, ainsi que la date d'expiration du service.
 
-#### **Renouveler le service**
-
-Cette action est uniquement proposée pour les services paramétrés en renouvellement manuel, et vous redirige vers une interface de paiement en ligne. Vous pouvez renouveler ces services à tout moment avant leur expiration, ainsi que choisir la durée de leur renouvellement.
-
 #### **Anticiper le paiement**
 
-Cette action est proposée pour les services paramétrés en renouvellement automatique, et vous redirige vers une interface de paiement en ligne. Vous pouvez renouveler ces services à tout moment avant leur expiration, ainsi que choisir la durée de leur renouvellement. Dans ce cas, la durée de validité souscrite sera rajoutée au temps de validité en cours. Vous ne perdrez pas le temps de validité restant.
+Cette action vous redirige vers une interface de paiement en ligne. Vous pouvez renouveler un service à tout moment avant leur expiration, ainsi que choisir la durée de leur renouvellement. Dans ce cas, la durée de validité souscrite sera rajoutée au temps de validité en cours. Vous ne perdrez pas le temps de validité restant.
 
-#### **Résilier à expiration**
+#### **Résilier à la date d'échéance**
 
 Cette action est proposée pour les services paramétrés en renouvellement automatique. En choisissant cette action, le renouvellement et le prélèvement automatiques sont désactivés pour le service que vous avez sélectionné.
 
@@ -137,8 +129,6 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 |  Désactiver le paiement automatique |  Désactivez le renouvellement automatique sur plusieurs services en une seule fois. Si l'un ou plusieurs de vos services ne sont pas compatibles avec le renouvellement manuel, cela vous sera indiqué lors de la validation. |
 |  Activer le paiement automatique |  Réactivez le renouvellement automatique sur plusieurs services en une seule fois. Seuls les services éligibles seront mis à jour. |
 |  Exporter en CSV |  Exportez dans un fichier csv l'ensemble de vos services et leurs dates d'expiration. |
-|  Aligner les dates de renouvellement |  Permet d'aligner la date d'expiration de vos services à un jour calendaire. Seuls les services éligibles pourront être mis à jour. |
-
 
 ## Aller plus loin
 

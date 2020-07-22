@@ -6,7 +6,7 @@ section: 'Network Management'
 order: 1
 ---
 
-**Last updated 12th March 2020**
+**Last updated 2020/03/12**
 
 ## Objective
 
@@ -55,7 +55,7 @@ The IPv6 address and the IPv6 gateway assigned to your server will appear in the
 
 #### Via the OVHcloud API
 
-Go to <https://eu.api.ovh.com/console/> and log in with your OVHcloud ID. Then use the two APIs below.
+Go to <https://ca.api.ovh.com/console/> and log in with your OVHcloud ID. Then use the two APIs below.
 
 The first one allows you to recover the IPv6 address assigned to your server:
 
