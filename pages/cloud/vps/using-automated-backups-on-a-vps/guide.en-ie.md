@@ -39,7 +39,7 @@ In the next step, please take note of the pricing information, then click on `Or
 
 ### Step 2: Restoring a backup from the OVHcloud Control Panel
 
-After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu. There will be a maximum of 15 daily backups available. Click on `...`{.action} next to the backup you would like to restore and select `Restoration`{.action}.
+After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu. There will be a maximum of 7 daily backups available (15 with older VPS ranges). Click on `...`{.action} next to the backup you would like to restore and select `Restoration`{.action}.
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
 

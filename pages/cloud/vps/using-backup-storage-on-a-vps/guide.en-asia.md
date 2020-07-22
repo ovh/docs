@@ -6,7 +6,7 @@ section: 'Backup options'
 order: 1
 ---
 
-**Last updated 2020/04/22**
+**Last updated 21st July 2020**
 
 
 ## Objective
@@ -49,6 +49,8 @@ Since you can only have one snapshot activated at a time, the existing snapshot 
 ![snapshotvps](images/snapshot_vps_step2.png){.thumbnail}
 
 If you are sure that you would like to reset your VPS to the status of the snapshot, click `Restore the snapshot`{.action} and confirm the restoration task in the popup window.
+
+### Best practice for using snapshots
 
 ### Best practice for using snapshots
 

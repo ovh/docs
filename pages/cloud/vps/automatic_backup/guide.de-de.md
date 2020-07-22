@@ -1,23 +1,22 @@
 ---
-title: Automatisches Backup
+title: 'Automatisches Backup'
 excerpt: ''
 slug: automatisches_backup
 legacy_guide_number: g1486
+hidden: true
 ---
 
-
 ## 
-Zur Verwaltung des automatischen Backups benötigen Sie:
 
+Zur Verwaltung des automatischen Backups benötigen Sie:
 
 - Einen VPS Cloud
 - Ihre Zugangsdaten für das OVH Kundencenter
 - Zugriff auf Ihren Server per SSH oder RDP
 
 
-
-
 ## Über das Kundencenter
+
 Verbinden Sie sich zuerst über folgenden Link mit Ihrem OVH Kundencenter: [Kundencenter](https://www.ovh.com/manager/web/)
 
 ![](images/img_2080.jpg){.thumbnail}
@@ -89,6 +88,4 @@ mount -t cifs -o username=vpsXXXXX,password=YYYYYY //IP.IP.IP.IP/VPSXXXXX /mnt
 
 Dazu kann es eventuell erforderlich sein, unter Debian, Ubuntu und CentOS das Paket cifs-utils zu installieren.
 ```
-
-
 

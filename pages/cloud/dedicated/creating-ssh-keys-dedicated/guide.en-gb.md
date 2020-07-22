@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 4
 ---
 
-**Last updated 8th June 2020**
+**Last updated 20th July 2020**
 
 ## Objective
 
@@ -27,9 +27,9 @@ Please note that SSH keys are not used for authentication on servers running the
 
 ## Instructions
 
-### Creating an SSH key on Linux and Mac
+### Creating an SSH key using a Linux or Mac operating system
 
-On a Mac or Linux machine, open the Terminal (command line) app.
+From a Mac computer or a device with a Linux OS installed, first open the command line application (Terminal).
 
 Verify that you have a ".ssh" folder in your $HOME directory. If the folder does not exist, create it:
 
@@ -48,16 +48,16 @@ Using the "-t" option with this command allows you to specify a different encryp
 # ssh-keygen -t ed25519 -a 256
 ```
 
-The command will prompt you to save the newly created key:
+The command will prompt you to save the newly created key in the standard file:
 
 ```sh
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-Confirm, and you will now have the option to enter a passphrase to password-protect your SSH key. This is recommended for added security.
+You can accept the default file by pressing "↩". Now you will have the option to enter a passphrase to password-protect your SSH key. This is recommended for added security.
 
-Your SSH keys should be stored in the ".ssh" directory.
+Your SSH keys should be stored in the ".ssh" directory. The public key file will have ".pub" added to the filename.
 
 ```ssh
 Your identification has been saved in /home/user/.ssh/id_rsa.
@@ -83,7 +83,7 @@ The key's randomart image is:
 > The private key should always be kept safe, and access to it strictly limited to authorised people only.
 > 
 
-In order to read and export your public key, use the "cat" command on your key file and copy the output:
+In order to view and export your public key, use the "cat" command on your ".pub" key file and copy the output:
 
 ```ssh
 # cat ~/.ssh/id_rsa.pub
@@ -95,13 +95,23 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
  user@hostname
 ```
 
+> [!primary]
+>
+>In a MacOS Terminal, you can also use the "pbcopy" and "pbpaste" commands to handle key strings. For example, use this command to copy the key from the file "id_rsa.pub" to the clipboard:
+>
+
+```ssh
+$ pbcopy < ~/.ssh/id_rsa.pub
+```
+
+
 ### Creating an SSH key using PuTTY (for Windows)
 
 [PuTTY](https://putty.org/){.external} is an open source SSH client software with a graphical user interface, available for Windows and other operating systems. You can use it to remotely connect to a Linux server. Its companion software, PuTTY Key Generator (PuTTYgen), can be used to create SSH keys.
 
-First, download PuTTY [from the official website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), if it is not already installed. The recommended standard installation package includes PuTTYgen but it is available as a standalone file there as well. To find out if you have it available already, check your Windows "programs" menu or use Search.
+First, download PuTTY [from the official website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), if it is not already installed. The recommended standard installation package includes PuTTYgen but it is available as a standalone file there as well. To find out if you have it available already, check your "programs" menu or use the Windows Search.
 
-Next, run the software and select the key type. In our example, we choose a 4096 bit RSA key. Click the `Generate`{.action} button to start the creation process.
+Open PuTTYgen and select a supported encryption algorithm. The example uses RSA. Enter 4096 as the number of bits, then click the `Generate`{.action} button.
 
 ![putty key](images/puttygen_01.png){.thumbnail}
 
@@ -109,10 +119,11 @@ Now, randomly move your mouse cursor about the area below the progress bar:
 
 ![putty key](images/puttygen_02.gif){.thumbnail}
 
-The key is ready when the progress bar is full. You can copy the public key from this window. It is highly recommended to enter a passphrase for the key files before saving them.
+The key is ready when the progress bar is full.
 
 ![putty key](images/puttygen_03.png){.thumbnail}
 
+You can select and copy the public key from this window. There is also the option to save the keys into files.
 
 ### Adding SSH keys to your server
 
@@ -162,7 +173,7 @@ In "My services", switch to the `SSH keys`{.action} tab and click on `Add an SSH
 
 Select "Dedicated" from the drop-down menu.
 
-In the new window, enter an ID (a name of your choice) for the key. Paste the key string (copied from your ".pub" file) into the "Key" field.
+In the new window, enter an ID (a name of your choice) for the key. Paste the key string (copied from your ".pub" file or the PuTTYgen window) into the "Key" field.
 
 ![SSH key control panel](images/SSH_keys_panel_3.png){.thumbnail}
 

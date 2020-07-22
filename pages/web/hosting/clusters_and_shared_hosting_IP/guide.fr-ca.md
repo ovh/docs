@@ -1,11 +1,11 @@
 ---
 title: 'Liste des adresses IP des clusters et hebergements web'
 slug: liste-des-adresses-ip-des-clusters-et-hebergements-web
-section: 'Configuration de l'hébergement'
+section: 'Configuration de l’hébergement'
 order: 3
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 20/07/2020**
 
 Vous trouverez dans ce guide toutes les adresses IP des hébergements web OVHcloud. Cela vous permettra par exemple de trouver quelle adresse IP renseigner dans vos zones DNS, en fonction de :
 
@@ -822,4 +822,27 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 
 ```bash
 91.134.248.192
+```
+
+## Cluster 051
+
+Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
+
+|Pays|Code Pays|IPv4|IPv6|
+|---|---|----|---|
+|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+
+Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+```bash
+178.32.120.166
+```
+
+
+Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
+
+
+
+```bash
+51.161.94.36
 ```

@@ -324,3 +324,8 @@ To configure a failover IP address, please refer to this documentation:
 
 <https://docs.ovh.com/gb/en/public-cloud/configure_a_failover_ip>
 
+
+## Resolving snapshot issues
+
+If you encounter any issues regarding the [VPS snapshot option](https://www.ovhcloud.com/en-gb/vps/options/) after the migration, please refer to [our guide on using snapshots](../using-snapshots-on-a-vps/#best-practice-for-using-snapshots).
+

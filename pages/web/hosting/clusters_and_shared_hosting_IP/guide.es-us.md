@@ -5,7 +5,7 @@ legacy_guide_number: 2328
 section: 'Configuración del alojamiento'
 ---
 
-**Última actualización: 05/05/2020**
+**Última actualización: 20/07/2020**
 
 Esta guía recoge todas las direcciones IP de los alojamientos web de OVHcloud. Dichas direcciones le serán útiles para, por ejemplo, saber qué dirección IP debe introducir en sus zonas DNS en función de:
 
@@ -767,4 +767,59 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 
 ```bash
 91.134.248.249
+```
+
+### Cluster 029
+
+A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
+
+|País|Código del país|IPv4|IPv6|
+|---|---|----|---|
+|Francia|ES|51.91.236.255|2001:41d0:301::29|
+|Irlanda|IE|92.222.139.156|2001:41d0:301:3::29|
+|Portugal|PT|46.105.159.220|2001:41d0:301:2::29|
+|Reino Unido|UK|178.32.48.109|2001:41d0:301:12::29|
+|Italia|IT|178.32.137.139|2001:41d0:301:11::29|
+|España|ES|188.165.132.144|2001:41d0:301:4::29|
+|Polonia|PL|213.32.10.205|2001:41d0:301:5::29|
+|República Checa|CZ|5.196.248.55|2001:41d0:301:6::29|
+|Países Bajos|NL|51.83.124.4|2001:41d0:301:7::29|
+|Finlandia|FI|79.137.116.129|2001:41d0:301:8::29|
+|Lituania|LT|164.132.14.117|2001:41d0:301:9::29|
+|Alemania|DE|145.239.222.45|2001:41d0:301:1::29|
+|Bélgica|BE|178.32.44.140|2001:41d0:301:10::29|
+
+Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+ 51.255.215.242 
+```
+
+
+Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
+
+
+
+```bash
+91.134.248.192
+```
+
+### Cluster 051
+
+A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
+
+|País|Código de país|IPv4|IPv6|
+|---|---|----|---|
+|Canadá|CA|51.161.122.78|2607:5300:205:2::51|
+
+Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+178.32.120.166
+```
+
+Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+51.161.94.36
 ```

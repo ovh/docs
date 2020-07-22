@@ -336,3 +336,7 @@ Modifiez manuellement votre configuration IP en utilisant les adresses précéde
 Pour configurer une adresse IP failover, consultez le guide suivant :
 
 <https://docs.ovh.com/fr/public-cloud/configurer_une_ip_failover/>
+
+## Résolution des problèmes liés au Snapshot
+
+Si vous rencontrez des problèmes lors de l'utilisation de l'[option de Snapshot VPS](https://www.ovhcloud.com/fr/vps/options/) après la migration, reportez-vous à [notre guide sur l'utilisation du Snapshot](../snapshot-vps/#bonnes-pratiques-pour-la-creation-dun-snapshot).
