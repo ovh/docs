@@ -54,7 +54,7 @@ To deploy your image, use the following API call and complete the required field
 | Field | Description |
 |-|-|
 | serviceName | Your server's name. |
-| URL | L'URL où récupérer votre image. |
+| URL | The URL to retrieve your image from. |
 | checkSum | Your image's checksum. |
 | checkSumType | Your image's checksum type (md5, sha1, sha256, sha512). |
 | description | Your image's name. |
