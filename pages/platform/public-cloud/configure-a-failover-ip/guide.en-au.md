@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to configure a failover IP on various Lin
 section: Networking
 ---
 
-**Last updated 13/03/2019**
+**Last updated 2019/03/13**
 
 ## Objective
 
@@ -14,7 +14,7 @@ You may need to configure a failover IP address on your instances for one of the
 * you have a large number of websites on your instance
 * you host international projects
 
-In order to do this you can either buy or [import a failover IP address](https://docs.ovh.com/au/en/public-cloud/import_a_failover_ip/){.external} for your [Public Cloud instances](https://www.ovh.com.au/public-cloud/instances/){.external}.
+In order to do this you can either buy or [import a failover IP address](../import_a_failover_ip/){.external} for your [Public Cloud instances](https://www.ovh.com.au/public-cloud/instances/){.external}.
 
 However, failover IPs will not be automatically configured on your instance.
 
@@ -22,9 +22,9 @@ However, failover IPs will not be automatically configured on your instance.
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-* a [Public Cloud Instance](https://www.ovh.com.au/public-cloud/instances/){.external} in your OVH account
-* a [failover IP address](https://www.ovh.com.au/dedicated-servers/ip_failover.xml){.external} in your OVH account
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud Instance](https://www.ovh.com.au/public-cloud/instances/){.external} in your OVHcloud account
+* a [failover IP address](https://www.ovh.com.au/dedicated-servers/ip_failover.xml){.external} in your OVHcloud account
 * administrative (root) access to your instance with SSH (Linux only)
 * administrative access to your instance via RDP (Windows only)
 
@@ -222,8 +222,8 @@ Finally, add your failover IP address to the configuration.
 
 ## Go further
 
-[Import a failover IP](https://docs.ovh.com/au/en/public-cloud/import_a_failover_ip/){.external}
+[Import a failover IP](../import_a_failover_ip/){.external}
 
-[Migrating a failover IP](https://docs.ovh.com/gb/en/public-cloud/migrating_a_failover_ip/){.external}
+[Migrating a failover IP](../migrating_a_failover_ip/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

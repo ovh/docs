@@ -7,37 +7,37 @@ section: 'Getting started'
 hidden: true
 ---
 
-**Last updated 15/10/2018**
+**Last updated 2018/10/15**
 
 ## Objective
 
-[Public Cloud instances](https://www.ovh.com.au/public-cloud/instances/){.external} offer a flexible, pay-as-you-go solution for managing virtual resources. This means that you can add and remove resources (instances, storage, etc) as and when you need to.
+[Public Cloud instances]({ovh_www}/public-cloud/instances/){.external} offer a flexible, pay-as-you-go solution for managing virtual resources. This means that you can add and remove resources (instances, storage, etc) as and when you need to.
 
 **This guide will show you how to create your first Public Cloud project.**
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 ### Create a project
 
-Log into to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Once you're logged in, click on the `Cloud`{.action} menu.
+Log into to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Once you're logged in, click on the `Cloud`{.action} menu.
 
 ![cloud menu](images/menu.png){.thumbnail}
 
 Next, click on the `Order`{.action} button.
 
-![order button](images/order-button.png){.thumbnail}
+![order button](images/order-button_2020.png){.thumbnail}
 
 Under the 'Order' menu, click `Cloud project`{.action}.
 
-![order cloud project](images/order-cloud-project.png){.thumbnail}
+![order cloud project](images/order-cloud-project_2020.png){.thumbnail}
 
 You will now need to give the project a name and chose a payment method.
 
-![project details](images/project-details.png){.thumbnail}
+![project details](images/project-details_2020.png){.thumbnail}
 
 ### Select a payment method
 
@@ -49,46 +49,42 @@ This is the easiest method. When you register a bank card, you will automaticall
 
 * a credit/debit card
 * a PayPal account
-* a bank account
 
 > [!primary]
 >
-If this is your first payment with OVH, we will only accept credit cards with 3-D Secure.
+If this is your first payment with OVHcloud, we will only accept credit cards with 3-D Secure.
 >
 
-Select your desired method from the list and click the `Add`{.action} button.
+Select your desired method from the list and click the `Create my project`{.action} button.
 
-![register bank card](images/register-bank-card-01.png){.thumbnail}
+![register bank card](images/register-bank-card-01_2020.png){.thumbnail}
 
 Once you've clicked the `Add`{.action} button, you'll be prompted to complete the setup of your payment method, as shown below.
 
-![register bank card](images/register-bank-card-02.png){.thumbnail}
 
 #### Buy cloud credit
 
-You can also pay for your [Public Cloud](https://www.ovh.com.au/public-cloud/instances/){.external} usage using cloud credit. Your first cloud credit purchase will cost £30. Any resources you use after this will consume your credit. When your credit is depleted, you can purchase more using any accepted payment method.
+You can also pay for your [Public Cloud]({ovh_www}/public-cloud/instances/){.external} usage using cloud credit. Your first cloud credit purchase will cost $50. Any resources you use after this will consume your credit. When your credit is depleted, you can purchase more using any accepted payment method.
 
 Cloud credit is non-transferable or refundable. It has no monetary value, and if it is not used within 13 months it will be lost.
 
-![cloud credit](images/img_4658.jpg){.thumbnail}
 
 #### Use a voucher
 
 If you have a promotional code, you can add it during this stage to pay for your resources. The duration of the voucher may vary.
 
-![voucher](images/img_4661.jpg){.thumbnail}
+![voucher](images/voucher_2020.png){.thumbnail}
  
 Once you have created your project, it will be available in the left-hand menu.
 
 ### Add an instance or storage
 
-To add resources to your new project, click the `Actions`{.action} button on the `Infrastructure`{.action} tab.
+To add resources to your new project, select `Add a server`{.action} or `Add a disk`{.action}.
 
-![add a resource](images/add-a-resource-01.png){.thumbnail}
+![add a resource](images/add-a-resource-01_2020.png){.thumbnail}
 
-Next, from the dropdown menu, select either `Add a server`{.action} or `Add a disk`{.action}.
 
-![add a resource](images/add-a-resource-02.png){.thumbnail}
+
 
 ## Go further
 

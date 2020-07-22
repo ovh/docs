@@ -2,10 +2,10 @@
 title: 'Deploying a GPU instance'
 slug: deploying-a-gpu-instance
 excerpt: 'Find out how to deploy a GPU instance on Linux or Windows'
-section: 'From the OVH Control Panel'
+section: 'From the OVHcloud Control Panel'
 ---
 
-**Last updated 30/10/2018**
+**Last updated 2018/10/30**
 
 ## Objective
 
@@ -15,7 +15,7 @@ The GPUs offered are the NVIDIA GeForce GTX 1060, GTX 1070 and GTX 1080Ti.
 
 > [!warning]
 >
-> At the moment, GPU instances are only available in the GRA3, GRA5 and BHS3 datacentres. You may have to create a new project and choose the new 2017 range. [Find out more.](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/)
+> At the moment, GPU instances are only available in the GRA3, GRA5 and BHS3 datacentres. You may have to create a new project and choose the new 2017 range. [Find out more.](../faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/)
 > 
 
 **This guide explains how to deploy a GPU instance on Linux or Windows**
@@ -39,9 +39,9 @@ All the images we offer can be used on a GPU instance.
 > If you don’t feel comfortable with manually compiling a kernel module, we recommend using a distribution that is officially supported by Nvidia and for which they provide *turnkey* drivers: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Once you are logged in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, in your Public Cloud project, click on `Add server`{.action}and choose a GPU instance:
+Once you are logged in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, in your Public Cloud project, click on `Add server`{.action}and choose a GPU instance:
 
-![public-cloud](images/EN-Flavors.png){.thumbnail}
+![public-cloud](images/EN-Flavors_2020.png){.thumbnail}
 
 The instance will start a few seconds later. You can then log in and check for the graphics card: 
 
@@ -102,7 +102,7 @@ There are incompatibilities between the NVIDIA driver and the *KVM/pci_passthrou
 
 We offer special images, based on a virtual UEFI BIOS, which allow the driver to function correctly:
 
-![public-cloud](images/EN-WindowsImages.png){.thumbnail}
+![public-cloud](images/EN-WindowsImages_2020.png){.thumbnail}
 
 
 > [!warning]

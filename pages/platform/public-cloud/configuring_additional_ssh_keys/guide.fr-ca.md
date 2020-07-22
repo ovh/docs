@@ -17,14 +17,14 @@ Lors de la création d’une instance, il n’est pas possible de configurer une
 ## Prérequis
 
 * Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
-* Posséder une [instance Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} dans votre compte OVH.
+* Posséder une [instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} dans votre compte OVH.
 * Avoir accès en ligne de commande à votre instance via SSH. 
 
 ## Instructions
 
 ### Créer la clé SSH
 
-Suivez d’abord notre guide « [Créer votre première clé SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/){.external} ».
+Suivez d’abord notre guide « [Créer votre première clé SSH](../creation-des-cles-ssh/){.external} ».
 
 ### Configurer un nouvel utilisateur
 
@@ -85,9 +85,9 @@ admin@server-1:~$ sudo vim /home/admin/.ssh/authorized_keys
 
 ## Aller plus loin
 
-[Créer des clés SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/){.external}
+[Créer des clés SSH](../creation-des-cles-ssh/){.external}
 
-[Remplacement de votre paire de clés SSH perdue](https://docs.ovh.com/fr/public-cloud/changer-sa-cle-ssh-en-cas-de-perte/){.external}
+[Remplacement de votre paire de clés SSH perdue](../changer-sa-cle-ssh-en-cas-de-perte/){.external}
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

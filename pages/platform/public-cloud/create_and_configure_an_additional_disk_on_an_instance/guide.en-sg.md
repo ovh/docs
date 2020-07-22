@@ -1,11 +1,11 @@
 ---
 title: 'Create and configure an additional disk on an instance'
+slug: create_and_configure_an_additional_disk_on_an_instance
 excerpt: 'This guide explains how to create an additional disk and then configure it on one of your instances.'
-slug: create-and-configure-additional-disk-instance
 section: Storage
 ---
 
-**Last updated 11th January 2019**
+**Last updated 2019/01/31**
 
 ## Objective
 
@@ -20,13 +20,13 @@ This can be useful in cases where:
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
-* a [Public Cloud Instance](https://www.ovh.com/sg/public-cloud/instances/){.external} in your OVH account
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud Instance](https://www.ovh.com/sg/public-cloud/instances/){.external} in your OVHcloud account
 * administrative (root) access to your instance via SSH
 
 ## Instructions
 
-Firstly, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
+Firstly, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
 
 When you've found your project in the list, click it and then select the `Infrastructure`{.action} tab.
 

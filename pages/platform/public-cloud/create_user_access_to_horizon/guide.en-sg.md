@@ -1,13 +1,13 @@
 ---
 title: Accessing the Horizon interface
-slug: configure-user-access-to-horizon
+slug: configure_user_access_to_horizon
 legacy_guide_number: 1773
 excerpt: Find out how to access the Horizon interface
-section: In the Horizon interface
+section: Horizon
 order: 1
 ---
 
-**Last updated 25th June 2018**
+**Last updated 14th November 2019**
 
 ## Objective
 
@@ -19,22 +19,37 @@ Horizon is the graphical management interface for OpenStack. Certain features ca
 ## Requirements
 
 - a Public Cloud project activated
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
-
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 ### Create an OpenStack user account
 
-First of all, to access the Horizon interface, you need to create an OpenStack user account. To do this, log in to your Control Panel. Go to the `Cloud`{.action} section, then `Servers`{.action}, and select the project concerned. Next, click on the `OpenStack`{.action} tab in the left-hand column:
+First of all, to access the Horizon interface, you need to create an OpenStack user account. To do this, log in to your Control Panel and go to the `Public Cloud`{.action} section in the top-left corner of the page. Then, on the following screen, click the `arrow button`{.action} next to your project name in the top-left corner of the screen.
 
-![Add user](images/1_H_add_user.png){.thumbnail}
+![Add user](images/select_project.png){.thumbnail}
 
-Click `Add user`{.action}, and choose a user description. The username and password are then generated automatically. Once the operation is complete, a message will open confirming that the account has been created.
+Under "Project management" on the left-hand sidebar, select `Users & Roles user`{.action}.
 
-The password will be visible in the Control Panel until you refresh the page. You can note down this password, and use it when you access the interface again. You can also generate a new password by clicking on the refresh icon, located next to your current password:
+![User roles](images/users_roles.png){.thumbnail}
 
-![Project menu](images/2_H_user_manage.png){.thumbnail}
+Clique the `Create User`{.action} button to generate the following pop-up.
+
+![Add user](images/adduser.png){.thumbnail}
+
+The user description is not the username for the user. It is just a descriptive term to help you remember what kind of user it is. The next screen will allow you to grant user permissions. For each permissions box you check, the user will get the corresponding privileges as seen in the table below:
+
+![Permissions](images/permissions.png){.thumbnail}
+
+Click the `Confirm`{.action} button when you are finished and you will see the following screen:
+
+![User_pw](images/user_pw.png){.thumbnail}
+
+Be sure to save your password now as this is the only time you will be able to recover it. However, if you lose it you can always create a new one by clicking the ellipses (...) on the following menu and selecting `Generate a password:`{.action}
+
+![Generate](images/generatepw.png){.thumbnail}
+
+Once your user has been created, you can use these credentials to log into the Horizon interface using the `Horizon button`{.action} on the left-hand sidebar.
 
 ### Log in to OpenStack Horizon
 

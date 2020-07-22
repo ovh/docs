@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to test the number of input/output operat
 section: Storage
 ---
 
-**Last updated 4th April 2019**
+**Last 2019/04/04**
 
 ## Objective
 
@@ -15,7 +15,7 @@ You'll probably be called upon to check the speed of your disks when you carry o
 
 ## Requirements
 
-- a [Public Cloud Instance](https://www.ovh.com/sg/public-cloud/instances/){.external} in your OVH account
+- a [Public Cloud Instance]({ovh_www}public-cloud/instances/){.external} in your OVH account
 - administrative (root) access to your instance via SSH
 
 ## Instructions
@@ -113,8 +113,8 @@ We can see that disk performance is approximately 891 IOPS.
 
 ## Go further
 
-[Create and configure an additional disk on an Instance](https://docs.ovh.com/sg/en/public-cloud/create-and-configure-additional-disk-instance/){.external}
+[Create and configure an additional disk on an Instance](../create_and_configure_an_additional_disk_on_an_instance/){.external}
 
-[Add storage space](https://docs.ovh.com/sg/en/public-cloud/add_storage_space/){.external}
+[Add storage space](../add_storage_space/){.external}
 
 Join our community of users on https://community.ovh.com/en/.
