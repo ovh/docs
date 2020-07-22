@@ -32,7 +32,7 @@ Vos blocs IP sont affichés ici ainsi que quelques informations de base les conc
 
 ![Information about IPs and blocks](images/ovhcloudplugin_02.png){.thumbnail}
 
-Vous pouvez vérifier le « reverse » de chaque adresse et leur cible. Certaines d'entre elles seront marquées comme "Réservés". Veillez à ne pas utiliser ces **cinq adresses IP réservées à la configuration du bloc et à la haute disponibilité**, à savoir:
+Vous pouvez vérifier le « reverse » de chaque adresse et sa cible. Certaines adresses seront marquées comme "Réservées". Veillez à ne pas utiliser ces **cinq adresses IP réservées à la configuration du bloc et à la haute disponibilité**, à savoir:
 
 - la première IP, qui annonce votre bloc sur le routeur ;
 - la dernière IP, qui est celle de **broadcast** ;
@@ -49,7 +49,7 @@ Vous pouvez ensuite personnaliser le « reverse » de votre adresse IP dans ce t
 
 Entrez le « reverse » et cliquez sur `Confirm`{.action}.
 
-Le nouveau  « reverse » will then be displayed in the table.
+Le nouveau  « reverse » sera alors affiché dans le tableau.
 
 > [!primary]
 >
