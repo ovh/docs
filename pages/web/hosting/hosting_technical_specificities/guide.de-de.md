@@ -6,7 +6,7 @@ section: Webhosting-Konfiguration
 order: 4
 ---
 
-**Letzte Aktualisierung am 11.06.2020**
+**Letzte Aktualisierung am 20.07.2020**
 
 ## Ziel
 
@@ -68,7 +68,7 @@ Weitere Informationen zur Verwaltung von Datenbanken finden Sie in der Anleitung
 
 - Wir empfehlen Ihnen, die Details der [Webhosting Angebote](https://www.ovh.de/hosting/php.xml) auf unserer Website nachzulesen, um sicherzustellen, dass das gewünschte Angebot Ihren Anforderungen entspricht.
 
-- Sie können die Konfigurationsdetails Ihres Webhostings überprüfen. Gehen Sie hierzu zum Abschnitt [„Technische Informationen Ihres Webhostings“](./#technische-informationen-ihres-webhostings) am Ende dieser Anleitung. 
+- Sie können die Konfigurationsdetails Ihres Webhostings überprüfen. Gehen Sie hierzu zum Abschnitt [„Technische Konfigurationen der Webhostings“](./#technische-konfigurationen-der-webhostings) am Ende dieser Anleitung. 
 
 - Sie können die PHP Versions Ihres Webhostings ändern, entweder über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) („**Konfiguration**“) oder indem Sie die Datei .ovhconfig entsprechend bearbeiten. Es sind auch gemischte Konfigurationen möglich. Ausführliche Instruktionen finden Sie in folgenden Anleitungen:
 
@@ -116,9 +116,9 @@ Sie können zum Beispiel die Funktion *gethostbyaddr()* verwenden, um den Hostna
 
 Bitte lesen Sie die entsprechenden Informationsseiten, um die für Ihr Webhosting Angebot verfügbaren Bibliotheken zu überprüfen.
 
-Verschiedene Informationen zu Ihrem Cluster finden Sie über diesen Link: [https://cluster015.hosting.ovh.net/infos/](https://cluster015.hosting.ovh.net/infos/){.external}.
+Verschiedene Informationen zu Ihrem Cluster finden Sie jeweils über den Cluster-Link: <http://cluster015.hosting.ovh.net/infos/>
 
-Ersetzen Sie das Cluster in der URL durch Ihr eigenes Cluster. Um herauszufinden, in welchem Webhosting Cluster sich Ihr Dienst befindet, loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie im oberen Menü `Web`{.action} aus. Klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie dann auf den Tab `FTP - SSH`{.action}. Die Nummer des Clusters ist hier unter "FTP-Server" abzulesen.
+Ersetzen Sie die Zahlen in der URL mit Ihrer Clusternummer. Um herauszufinden, in welchem Webhosting Cluster sich Ihr Dienst befindet, loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie im oberen Menü `Web`{.action} aus. Klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie dann auf den Tab `FTP - SSH`{.action}. Die Nummer des Clusters ist hier unter "FTP-Server" abzulesen.
 
 Die technischen Eigenschaften des Cloud Web Angebots können Sie über folgenden Link einsehen: <https://cloudweb-infos.hosting.ovh.net/>.
 
