@@ -44,7 +44,7 @@ Nach der Auswahl Ihres VPS klicken Sie auf den Tab `Automatisches Backup`{.actio
 
 Wenn Sie kürzlich Ihr Root-Passwort geändert haben, aktivieren Sie im Popup-Fenster die Option „Root-Passwort im Zuge der Wiederherstellung ändern“, damit Ihr aktuelles Passwort beibehalten wird, und klicken Sie auf `Bestätigen`{.action}. Sie erhalten eine E-Mail, sobald der Task abgeschlossen ist. Die Wiederherstellung kann je nach verwendetem Speicherplatz eine Weile dauern.
 
-> \[!alert]
+> [!alert]
 >
 Bitte beachten Sie, dass die automatisierten Backups nicht Ihre zusätzlichen Festplatten umfassen.
 >
