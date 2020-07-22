@@ -35,7 +35,7 @@ La fenêtre suivante s'affiche :
 
 Vous pouvez définir vos nom, prénom, numéro de téléphone et adresse e-mail.
 
-Cette fenêtre permet également d'ajouter des droits d'édition aux adresse **IP**, **IP Failover**,**InterfaceNSX** ainsi que le droit **Token validator** utilisé pour approuver certaines actions sensible sur des infrastructures ayant l'option **Sécurité avancée** d'activée.
+Cette fenêtre permet également d'ajouter des droits d'édition aux adresse **IP**, **IP Failover**, **InterfaceNSX** ainsi que le droit **Token validator** utilisé pour approuver certaines actions sensibles sur des infrastructures ayant l'option **Sécurité avancée** d'activée.
 
 Cliquez sur le bouton `Valider`{.action} pour confirmer vos modifications.
 

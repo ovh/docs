@@ -6,13 +6,13 @@ section: 'Outlook Web Application (OWA)'
 order: 1
 ---
 
-**Last updated 26th February 2020**
+**Last updated 20th July 2020**
 
 ## Objective
 
 With OVHcloud Hosted Exchange you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web Application (OWA). Our [webmail login page](https://www.ovh.co.uk/mail) is the single point of access to the respective OWA for all active email accounts on MX Plan, Email Pro and Hosted Exchange.
 
-**This guide explains how to carry out common actions with your email address in the OWA interface.**
+**This guide explains how to use your email address with OWA and exemplifies the most important features of this interface.**
 
 ## Requirements
 
