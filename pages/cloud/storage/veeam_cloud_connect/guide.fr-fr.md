@@ -5,21 +5,12 @@ excerpt: Présentation de l’offre Veeam Cloud Connect
 section: Veeam
 ---
 
-**Dernière mise à jour le 10/07/2020**
-
-## Objectif
+## Présentation
 
 Veeam Cloud Connect est une solution proposée par l'éditeur Veeam. Elle permet de disposer d'une sauvegarde hors site et ce, sans avoir à gérer une infrastructure sur un second site. L'idée de Veeam Cloud Connect est de fournir un moyen facile et sécurisé de réaliser des backups et de restaurer vos données à partir du cloud.
 
-**Découvrez comment configurer votre offre Veeam Cloud Connect**
 
-## Prérequis
-
-- Avoir souscrit à l'offre [Veeam Cloud Connect](https://www.ovh.com/fr/storage-solutions/veeam-cloud-connect/){.external}.
-
-## En pratique
-
-### Produits compatibles
+## Produits compatibles
 
 Le principal intérêt de Veeam Cloud Connect, en dehors de sa simplicité, est que cette solution fonctionne peu importe où est hébergée votre infrastructure d'exploitation. Celle-ci peut être hébergée chez OVH (un Private Cloud, ou encore un serveur dédié sur lequel vous réalisez vous-même de la virtualisation avec un hyperviseur VMware ou Microsoft), chez un autre fournisseur, ou encore dans vos locaux.
 
@@ -29,7 +20,7 @@ Liste des produits OVH compatibles :
 - Machines virtuelles hébergées sur nos [Serveurs dédiés](https://www.ovh.com/fr/serveurs_dedies/){.external} et administrées via Microsoft Hyper-V ou VMware ESXi.
 
 
-### Commande de l'offre
+## Commande de l'offre
 
 L'offre peut être commandée depuis le site [OVH.com](https://www.ovh.com/fr/private-cloud/options/veeam-cloud-connect.xml){.external}
 
@@ -39,13 +30,15 @@ Une fois le paiement effectué, vous recevrez un mail avec :
 - L'utilisateur et le mot de passe.
 
 
-### Espace client OVH
+## Espace client OVH
 
 Dans votre espace client OVH, rendez-vous dans la partie "Cloud" puis "Plateformes et Services".
+
 
 ![veeam cloud connect](images/veeam-cloud-connect-manager-start.png){.thumbnail}
 
 Vous arriverez ensuite sur cette page reprenant la configuration de votre offre, votre abonnement, le lieu de stockage.
+
 
 ![veeam cloud connect](images/veeam-cloud-connect-manager.png){.thumbnail}
 
@@ -67,11 +60,12 @@ Lorsque vous avez modifié la valeur, ce message apparaîtra :
 ![veeam cloud connect](images/veeam-cloud-connect-manager-modif-espace-ok.png){.thumbnail}
 
 
-### Installation
+## Installation
 
 Afin de mettre en place votre Veeam Cloud Connect, vous devez au préalable avoir votre propre serveur de sauvegarde Veeam.
 
 La mise en place du Veeam Cloud Connect se fait dans la même interface, la console Veeam Backup & Replication, téléchargeable sur le site de [Veeam](https://www.veeam.com/){.external}.
+
 
 
 > [!success]
@@ -110,7 +104,7 @@ En cliquant sur `terminer`{.action}, vous retrouvez sur la console votre service
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-finish.png){.thumbnail}
 
 
-### Configuration
+## Configuration
 
 Afin de réaliser une réplication d'une de vos sauvegardes, rendez-vous dans l'onglet "Backup & Replication" situé en bas à gauche de la console.
 
@@ -161,7 +155,7 @@ Vous retrouverez la page du début avec votre nouvelle tâche.
 ![veeam cloud connect](images/veeam-cloud-connect-replicat-cloud.png){.thumbnail}
 
 
-### Restauration
+## Restauration
 
 Afin de restaurer votre backup, il vous suffira de faire un clic droit sur la tâche.
 
@@ -191,7 +185,3 @@ Vous constaterez dans votre vSphere, différentes opérations lors de la restaur
 
 
 ![veeam cloud connect](images/veeam-cloud-connect-restore-done.png){.thumbnail}
-
-## Aller plus loin
-
-Échangez avec notre communauté d’utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/){.external}.

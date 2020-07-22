@@ -15,8 +15,10 @@ Ce guide vous permettra aussi d'ajouter un ou des logins a ce sous-compte pour l
 
 ## Prérequis
 
-* Être connecté aux [API OVHcloud](https://api.ovh.com/console){.external}.
-* Avoir [créé ses identifiants pour l'API OVHcloud](https://docs.ovh.com/ca/fr/customer/first-steps-with-ovh-api/){.external}.
+* Être connecté aux [API OVHcloud](https://ca.api.ovh.com/console){.external}.
+* Avoir [créé ses identifiants pour l'API OVHcloud](../api-premiers-pas/){.external}.
+* Avoir un compte client avec un tag Reseller (Contactez votre commercial pour connaitre votre éligibilité le cas échéant).
+
 
 ## En pratique
 

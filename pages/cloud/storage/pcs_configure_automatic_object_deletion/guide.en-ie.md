@@ -15,7 +15,7 @@ This guide shows you how to set up automatic file deletion after a specified per
 
 ## Prerequisites
 
-- [Prepare the environment to use the OpenStack API]({legacy}1851)
+- [OpenStack API](https://docs.openstack.org/api-quick-start/){.external}
 - Set OpenStack environment variables
 
 

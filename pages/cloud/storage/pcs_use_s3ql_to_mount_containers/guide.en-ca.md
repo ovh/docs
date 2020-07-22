@@ -18,8 +18,8 @@ This guide shows you how to set up an object container as file system.
 
 ## Prerequisites
 
-- [Create user access to Horizon]({legacy}1773)
-- [Add storage space]({legacy}1790)
+- [Configure user access to Horizon](../platform/public-cloud/create_and_delete_a_user/guide.en-ca.md){.ref}
+- [Add storage space](../platform/public-cloud/add_storage_space/guide.en-ca.md){.ref}
 
 
 
@@ -106,10 +106,6 @@ swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
 
 
 You cannot use S3QL in offline mode, you should not configure persistance via the /etc/fstab file but by using a script which will run when your sever starts up.
-
-
-## F.A.Q.
-Please do not hesitate to see view the  [S3QL FAQ](https://bitbucket.org/nikratio/s3ql/wiki/FAQ)
 
 
 ## 

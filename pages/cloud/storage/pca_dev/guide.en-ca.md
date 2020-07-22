@@ -164,7 +164,8 @@ Each OVH Public Cloud project is identified by a unique id. For you to be able t
 ## Containers
 OVH Public Cloud Archive is a cloud storage service. To be able to transfer your archives, you first need to create a container in one of the OVH Public Cloud regions.
 
-In this section we will explain working with containers using the [Openstack Swift API](https://developer.openstack.org/api-ref/object-storage/){.external}.
+In this section we will explain working with containers using the [Openstack
+Swift API](https://developer.openstack.org/api-ref/object-storage/){.external}.
 
 
 ### Creating a container
@@ -213,7 +214,7 @@ When you upload an archive, OVH Public Cloud Archive updates the container inven
 
 In order to support the particularities of at-rest storage, OVH has slighty modified the generation of this inventory compared to regular Openstack Swift infrastructures with the aim to include additionnal information related to its particular storage process. This assures you have essential informations about your archive, such as its unsealing state and the retrieval delay before it is ready for download.
 
-See greater details about this [request](https://docs.ovh.com/gb/en/storage/pca/api/){.external}.
+See greater details about this [request](https://docs.ovh.com/au/en/storage/pca/api/){.external}.
 
 **Syntax**
 
@@ -356,7 +357,7 @@ OVH Public Cloud Archive stores data so that cost is optimal at the expense of s
 
 Archive unseal requests are identical to archive download requests. Only the response sent by OVH Public Cloud Archive differs and is a particularity of the underlying Openstack Swift infrastructure that OVH runs. Once an unsealing request is received it cannot be cancelled. Further unsealing requests will have no other effect than polling the operation ETA.
 
-See further explanations about this [request](https://docs.ovh.com/gb/en/storage/pca/api/){.external}.
+See further explanations about this [request]((../pca/api){.ref}.
 
 **Syntax**
 

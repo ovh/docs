@@ -17,7 +17,7 @@ Esta guía explica cómo mejorar la velocidad de los envíos hacia el Object Sto
 Para seguir todos los pasos de esta guía, es necesario:
 
 
-- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/) con el cliente python-swiftclient
+- [Preparar el entorno para utilizar la API de OpenStack](../preparar_el_entorno_para_utilizar_la_api_de_openstack){.ref} con el cliente python-swiftclient
 - Cargar las variables de entorno de OpenStack
 
 
