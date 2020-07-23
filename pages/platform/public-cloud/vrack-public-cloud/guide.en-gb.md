@@ -4,10 +4,9 @@ excerpt: 'Find out how to set up vRack for your Public Cloud instances'
 slug: public-cloud-vrack
 section: vRack
 order: 1
-hidden: true
 ---
 
-**Last updated 15th July 2020**
+**Last updated 20th July 2020**
 
 ## Objective
 
