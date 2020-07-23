@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 1
 ---
 
-**Ostatnia aktualizacja z dnia 29-05-2020**
+**Ostatnia aktualizacja z dnia 22-07-2020**
  
 ## Wprowadzenie
 
@@ -93,8 +93,9 @@ Po otwarciu się okna będziesz mieć do wyboru:
 
 > [!primary]
 >
-> Niektóre dystrybucje, jak Plesk czy Windows, wymagają uprzedniego wykupienia licencji. Możesz ją zamówić albo bezpośrednio u OVHcloud, albo u pośrednika. Następnie należy uruchomić ją ręcznie lub z poziomu Twojego panelu klienta. Licencjami możesz zarządzać udając się do sekcji `Serwer`{.action}, a następnie `Licencje`{.action}.
-Z tego samego miejsca możesz również zamawiać licencje (przycisk po prawej stronie `Zamów`{.action}) lub dodać Twoją własną licencję SPLA Windows albo SPLA SQL Server (przycisk po prawej stronie `Dodaj licencję SPLA`{.action}).
+> Niektóre zastrzeżone systemy operacyjne lub platformy, takie jak Plesk lub cPanel, wymagają licencji, które generują dodatkowe koszty. Licencjami można zarządzać w Panelu klienta OVHcloud: przejdź do sekcji `Serwer`{.action} w lewym górnym rogu Panelu klienta i kliknij `Licencje`{.action}.
+> 
+Aby system operacyjny **Windows** uruchomił się na serwerze VPS, **wybierz go na etapie zamówienia**. Na serwerze VPS, na którym zainstalowano inny system operacyjny, nie można zainstalować systemu Windows przy użyciu opisanej powyżej metody.
 > 
 
 W Twoim panelu klienta wyświetli się pasek postępu informujący o stanie zaawansowania procesu reinstalacji, która może trwać do 30 minut.
@@ -140,9 +141,10 @@ Po otwarciu się okna będziesz mieć do wyboru:
 
 > [!primary]
 >
-> Niektóre dystrybucje, jak Plesk czy Windows, wymagają uprzedniego wykupienia licencji. Możesz ją zamówić albo bezpośrednio u OVHcloud, albo u pośrednika. Następnie należy uruchomić ją ręcznie lub z poziomu Twojego panelu klienta. Licencjami możesz zarządzać udając się do sekcji `Serwer`{.action}, a następnie `Licencje`{.action}.
-Z tego samego miejsca możesz również zamawiać licencje (przycisk po prawej stronie `Zamów`{.action}) lub dodać Twoją własną licencję SPLA Windows albo SPLA SQL Server (przycisk po prawej stronie `Dodaj licencję SPLA`{.action}).
+> Niektóre zastrzeżone systemy operacyjne lub platformy, takie jak Plesk lub cPanel, wymagają licencji, które generują dodatkowe koszty. Licencjami można zarządzać w Panelu klienta OVHcloud: przejdź do sekcji `Serwer`{.action} w lewym górnym rogu Panelu klienta i kliknij `Licencje`{.action}.
 > 
+Aby system operacyjny **Windows** uruchomił się na serwerze VPS, **wybierz go na etapie zamówienia**. Na serwerze VPS, na którym zainstalowano inny system operacyjny, nie można zainstalować systemu Windows przy użyciu opisanej powyżej metody.
+>
 
 W Twoim panelu klienta wyświetli się pasek postępu informujący o stanie zaawansowania procesu reinstalacji, która może trwać do 30 minut.
 
