@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
 section: 'Network Management'
 ---
 
-**Last updated 19th May 2020**
+**Last updated 20th July 2020**
 
 ## Objective
 
@@ -55,7 +55,7 @@ If you are using an OVHcloud-provided Linux OS template to install your server, 
 
 #### Step 1: Use SSH to connect to your server
 
-[Find more information in this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
 
 #### Step 2: Open your server's network configuration file
 
@@ -75,7 +75,7 @@ post-up /sbin/ip -f inet6 route add default via IPv6_GATEWAY
 pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0
 pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
 ```
-additional IPv6 addresses can be added by `up /sbin/ifconfig eth0 inet6 add YOUR_2nd_IPv6/64` lines in the file.
+Additional IPv6 addresses can be added by `up /sbin/ifconfig eth0 inet6 add YOUR_2nd_IPv6/64` lines in the file.
 
 #### Step 4: Save the file and apply the changes
 
@@ -229,7 +229,8 @@ Address=IPv6_Address/64
 Destination=Gateway_Address
 Scope=link
 ```
-to add multiple IPv6 addresses, add multiple [Address] sections
+To add multiple IPv6 addresses, add multiple [Address] sections
+
 ```sh
 [Address]
 Address=IPv6_Address_2/64
@@ -267,6 +268,7 @@ Find more information in [this guide](../getting-started-dedicated-server/#loggi
 
 
 #### Step 2: Open your server's network configuration
+
 First, right-click on the network icon in the notification area to go to the `Network and Sharing Center`{.action}.
 
 ![Network and Sharing Center](images/ipv6_network_sharing_center.png){.thumbnail}
@@ -282,6 +284,7 @@ Right-click your network adapter, then click `Properties`{.action}.
 Select `Internet Protocol Version 6`{.action}, then click `Properties`{.action}.
 
 ![Properties](images/ipv6_properties.png){.thumbnail}
+
 #### Step 3: Amend the network configuration 
 
 Enter your IPv6 configuration (`IPv6 address` and `Default Gateway`) and click `OK`{.action}.
