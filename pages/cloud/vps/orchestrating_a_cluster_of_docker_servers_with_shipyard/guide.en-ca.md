@@ -135,7 +135,7 @@ iptables-persistent save
 
 
 ## 
-Once Docker is installed on our 3 servers (see [this guide](https://community.runabove.com/kb/en/instances/docker-in-5-minutes-on-runabove-with-docker-machine.html)). We're going bind the Docker daemon to a port, e.g. port 2375 - the official port assigned by [the IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker), so that these servers can communicate with the master server. Start by stopping Docker on every one of our servers with this command:
+Once Docker is installed on our 3 servers. We're going bind the Docker daemon to a port, e.g. port 2375 - the official port assigned by [the IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker), so that these servers can communicate with the master server. Start by stopping Docker on every one of our servers with this command:
 
 
 ```
@@ -230,7 +230,7 @@ You can now access the Shipyard interface via http://<your-host-ip>:8080 by logg
 Once you're in, we're going to add engines (nodes) via the Shipyard web interface under Engines:
 
 ![](images/img_2612.jpg){.thumbnail}
-Don't forget to copy/paste the security certificates that your generated in the SSL certificates, SSL key and CA certificate sections.
+Don't forget to copy/paste the security certificates that you generated in the SSL certificates, SSL key and CA certificate sections.
 You need to do this for each node (make sure you give each node a unique label).
 
 ![](images/img_2613.jpg){.thumbnail}
@@ -275,5 +275,8 @@ We can now see and manage all the containers deployed on our various nodes under
 Lastly, we will click DEPLOY to launch the containers on all nodes, or on specific nodes (by selecting the label for each node).
 
 ![](images/img_2616.jpg){.thumbnail}
-You now have a Docker server orchestration system which allows you to easily and quickly provision applications and containers in your cluster via a GUI. If you'd like to test Docker, you can sign up for our Sailabove alpha here: https://labs.runabove.com/docker. We've also just put in place an Ubuntu 14.04 + Docker (pre-installed) image on VPS Cloud & Classic (available on all our VPSs except VPS Classic 1, which doesn't have enough disk space), which will enable you to obtain container-ready servers directly and benefit from the inherent advantages of the OVH VPS.
+You now have a Docker server orchestration system which allows you to easily and quickly provision applications and containers in your cluster via a GUI. 
 
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

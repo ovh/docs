@@ -21,7 +21,7 @@ In this example, we use WinSCP but you can use any SFTP client. Configuration of
 
 
 ## OpenStack ID
-You can generate your OpenStack login & password using this [Guide](https://www.ovh.co.uk/g1773.configure_user_access_to_horizon){.external}
+You can generate your OpenStack login & password using this [Guide](../horizon){.ref}
 
 
 ## TenantName
@@ -32,10 +32,9 @@ The TenantName corresponds to the name of your Horizon Project. To get the Tenan
 
 
 ## Connection
-- Host Name : gateways.storage.{region}.cloud.ovh.net
+- Host Name : gateways.storage.<region>.cloud.ovh.net
 - User Name : pca
-- Password  : {TenantName}.{Username_Openstack}.{Password_Openstack}
-- Port      : 22
+- Password : <TenantName>.<Username_Openstack>.<Password_Openstack>
 
 
 ![connexion](images/image2.png){.thumbnail}
@@ -76,4 +75,4 @@ In this part we will disable two WinSCP options :
 
 
 ## Data Recovery
-Data recovery requires that the object be unlocked first. A GET request must be made on the object in question. If this command is not made beforehand, your SFTP client will return an error message when attempting to download a file. Consult our guide to learn how to unlock your object [here](../guide.en-gb.md){.ref}.
+Data recovery requires that the object be unlocked first. A GET request must be made on the object in question. If this command is not made beforehand, your SFTP client will return an error message when attempting to download a file. Consult our guide to learn how to unlock your object [here](../product.en-ca.md){.ref}.

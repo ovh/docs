@@ -13,7 +13,7 @@ This guide shows you how to configure a domain on your container.
 
 
 ### Prerequisites
-- [Have a storage space](../guide.en-gb.md){.ref}
+- [Have a storage space](../products.en-gb.md){.ref}
 - A domain name
 
 

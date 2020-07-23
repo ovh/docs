@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 15th June 2020**
+**Last updated 15/06/2020**
 
 ## Objective
 
@@ -23,7 +23,7 @@ A virtual private server (VPS) is a virtualised dedicated server. Unlike Web Hos
 
 ## Requirements
 
-- a [Virtual Private Server](https://www.ovhcloud.com/en-ca/vps) in your OVHcloud account
+- a [Virtual Private Server]({ovh_www}/vps) in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 - login credentials received via email after the installation
 
@@ -157,7 +157,7 @@ Once you have installed and secured your VPS, you may want to secure your domain
 
 You can install this SSL certificate yourself manually, directly on the VPS. Please refer to the official documentation that you have been using.
 
-For a more automated process, OVHcloud also offers the [SSL Gateway](https://www.ovh.com/ca/en/ssl-gateway/). For more information, please refer to the [product page](https://www.ovh.com/ca/en/ssl-gateway/){.external} or [guide documents](https://docs.ovh.com/gb/en/ssl-gateway/){.external} on this solution.
+For a more automated process, OVHcloud also offers the [SSL Gateway]({ovh_www}/ssl-gateway/). For more information, please refer to the [product page]({ovh_www}/ssl-gateway/){.external} or [guide documents](../ssl-gateway/){.external} on this solution.
 
 ## Go further
 

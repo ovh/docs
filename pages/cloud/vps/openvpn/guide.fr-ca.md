@@ -9,21 +9,22 @@ section: 'Utilisation avancée'
 ## Introduction
 OpenVPN est un logiciel permettant de créer un Réseau Virtuel Privé (ou Virtual Private Network), plus communément appelé VPN.
 
+## Prérequis
+
+- Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
+- Un [VPS OVHcloud](https://www.ovhcloud.com/fr-ca/vps/)
+
 
 ## Commande
-Afin de créer votre serveur OpenVPN, il faut d'abord commander un VPS avec la distribution OpenVPN.
 
+Afin de créer votre serveur OpenVPN, il faut d'abord commander un VPS. (Si vous possédez déjà un VPS, vous pouvez installer OpenVPN via votre panneau de contrôle OVHcloud)
 
-![horizon](images/openvpn_order.png){.thumbnail}
+![horizon](images/OpenVPN.png){.thumbnail}
 
 Quand votre VPS est prêt, vous recevez un e-mail vous donnant les accès pour vous connecter à votre serveur OpenVPN:
 
-```
- |    Les comptes supplémentaires ont été configurés sur le VPS :
- |    La gestion de votre serveur OpenVPN est possible depuis https://xxx.xxx.xxx.xxx:943/
- |    Utilisateur : openvpn
- |    Mot de passe : ovhisawesome
-```
+![horizon](images/opencredent2.png){.thumbnail}
+
 Votre serveur VPN est maintenant prêt à être utilisé.
 
 Rendez-vous sur l'url donnée.
@@ -123,6 +124,14 @@ Rendez-vous sur l'url donnée dans le mail et choisissez `Admin`:
 
 Connectez-vous avec les identifiants donnés dans le mail puis acceptez les conditions d'utilisation
 
+![horizon](images/openvpncredent.png){.thumbnail}
+
 Vous avez maintenant accès au panneau d'administration :
 
 ![horizon](images/admin_panel.png){.thumbnail}
+
+## Aller plus loin
+
+[Débuter avec un VPS](https://docs.ovh.com/ca/fr/vps/debuter-avec-vps/)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

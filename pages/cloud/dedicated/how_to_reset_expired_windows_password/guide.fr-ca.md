@@ -46,7 +46,7 @@ Votre mot de passe a été modifié. Vous pouvez à nouveau accéder au serveur 
 
 ### Utilisation du mode rescue
 
-Pour démarrer, démarrez votre serveur en [mode rescue](https://docs.ovh.com/ca/en/dedicated/rescue-mode/){.external} en utilisant  l'environnement d'initialisation WinRescue. Une fois le serveur redémarré, connectez-vous à l'aide d'une visionneuse VNC ou sélectionnez l'onglet "IPMI"{.action} sur la page de votre serveur dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Pour démarrer, démarrez votre serveur en [mode rescue](https://docs.ovh.com/ca/en/dedicated/ovh-rescue/){.external} en utilisant  l'environnement d'initialisation WinRescue. Une fois le serveur redémarré, connectez-vous à l'aide d'une visionneuse VNC ou sélectionnez l'onglet "IPMI"{.action} sur la page de votre serveur dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 Ensuite, ouvrez l'outil NTPWdi. S'il n'y apparaît pas, vous pouvez télécharger une copie [ici](http://cdslow.org.ru/files/ntpwedit/ntpwed07.zip){.external}
 

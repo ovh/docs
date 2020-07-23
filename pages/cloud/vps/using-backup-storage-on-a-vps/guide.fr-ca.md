@@ -26,7 +26,7 @@ Un snapshot ne constitue pas pour autant une sauvegarde complète du système.
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Server`{.action}. Cliquez sur `VPS`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, onglet `Server`{.action}. Cliquez sur `VPS`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné.
 
 ### Étape 1 : souscrire l'option snapshot
 
@@ -119,4 +119,4 @@ Running  QEMU-GA            QEMU Guest Agent
 
 [Utiliser la sauvegarde automatique sur un VPS](https://docs.ovh.com/ca/fr/vps/autobackup-vps/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

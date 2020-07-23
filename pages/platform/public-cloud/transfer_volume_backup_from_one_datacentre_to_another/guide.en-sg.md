@@ -6,11 +6,11 @@ legacy_guide_number: g1941
 section: 'Resource management'
 ---
 
-**Last updated 1st April 2019**
+**Last updated 2019/04/01**
 
 ## Objective
 
-It may become necessary to move additional volumes from one datacentre to another, either because you would prefer to move to a newly-available datacentre, or because you want to migrate from [OVH Labs](https://labs.ovh.com/){.external} (formerly RunAbove) to the [Public Cloud](https://www.ovh.com/sg/public-cloud/instances/){.external}.
+It may become necessary to move additional volumes from one datacentre to another, either because you would prefer to move to a newly-available datacentre, or because you want to migrate from [OVHcloud Labs](https://labs.ovh.com/){.external} (formerly RunAbove) to the [Public Cloud]({ovh_www}public-cloud/instances/){.external}.
 
 **This guide will show you how to transfer a volume backup from one datacentre to another.**
 
@@ -18,11 +18,11 @@ It may become necessary to move additional volumes from one datacentre to anothe
 
 Before following these steps, it’s recommended that you first complete this guide:
 
-* [Prepare the environment to use the OpenStack API](https://docs.ovh.com/sg/en/public-cloud/prepare-environment-for-using-openstack-api/){.external}
+* [Prepare the environment to use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/){.external}
 
 You will also need the following:
 
-* a [Public Cloud Instance](https://www.ovh.com/sg/public-cloud/instances/){.external} in your OVH account
+* a [Public Cloud Instance]({ovh_www}/public-cloud/instances/){.external} in your OVHcloud account
 * administrative (root) access to your datacentre via SSH
 
 > [!primary]
@@ -187,4 +187,4 @@ root@serveur:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12
 ## Go further
 
 * Join our community of users on <https://community.ovh.com/en/>.
-* [Transfer an instance backup from one datacentre to another](https://docs.ovh.com/sg/en/public-cloud/transfer_instance_backup_from_one_datacentre_to_another/){.external}
+* [Transfer an instance backup from one datacentre to another](../transfer_instance_backup_from_one_datacentre_to_another/){.external}

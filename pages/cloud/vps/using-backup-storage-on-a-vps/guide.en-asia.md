@@ -17,18 +17,18 @@ Creating a snapshot is a fast and simple way to secure a functioning system befo
 
 > [!primary]
 >
-Before applying backup options, we recommend to consult the [product pages and FAQ](https://www.ovhcloud.com/asia/vps/options/) for pricing comparisons and further details.
+Before applying backup options, we recommend to consult the [VPS options]({ovh_www}/vps/options/) for pricing comparisons and further details.
 >
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-- an OVHcloud [VPS service](https://www.ovhcloud.com/asia/vps/) already set up
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- an OVHcloud [VPS service]({ovh_www}/vps/) already set up
 
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), navigate to the "Server" section, and select your server from the left-hand sidebar under `VPS`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), navigate to the "Server" section, and select your server from the left-hand sidebar under `VPS`{.action}.
 
 ### Step 1: Subscribing to the snapshot option
 
@@ -50,6 +50,7 @@ Since you can only have one snapshot activated at a time, the existing snapshot 
 
 If you are sure that you would like to reset your VPS to the status of the snapshot, click `Restore the snapshot`{.action} and confirm the restoration task in the popup window.
 
+### Best practice for using snapshots
 
 ### Best practice for using snapshots
 
@@ -117,10 +118,8 @@ Status   Name               DisplayName
 Running  QEMU-GA            QEMU Guest Agent
 ```
 
-
 ## Go further
 
-[Using automated backups on a VPS](https://docs.ovh.com/asia/en/vps/using-automated-backups-on-a-vps)
-
+[Using automated backups on a VPS](../using-automated-backups-on-a-vps)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -12,20 +12,16 @@ Public Cloud is an unlimited storage solution with simple billing adapted to you
 - For static hosting (static website)
 - For private hosting (Example : storage of personal data)
 - For public hosting (for storing anything that is publicly accessible)
-- For cold storage (archiving)
 
 
 ## Add a container
-- Login to the [Manager](https://www.ovh.com/manager/cloud){.external}
+- Login to the [Manager](https://ca.ovh.com/auth){.external}
 - Click on your Public Cloud project
 - Click Storage
 - Click Create a Container
 - Select the datacentre
 
 You can then choose the container type you need.
-
-
-![projet](images/conteneur_en.png){.thumbnail}
 
 
 ### For static hosting

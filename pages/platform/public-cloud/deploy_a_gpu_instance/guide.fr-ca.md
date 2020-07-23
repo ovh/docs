@@ -2,7 +2,7 @@
 title: 'Déployer une instance GPU'
 slug: deployer-une-instance-gpu
 excerpt: 'Découvrez comment déployer une instance GPU sous Linux ou Windows'
-section: 'Depuis espace client OVH'
+section: 'Depuis espace client OVHcloud'
 ---
 
 **Dernière mise à jour le 2018/10/30**
@@ -39,9 +39,9 @@ Toutes les images que nous proposons peuvent être utilisées sur une instance G
 > Si vous n'êtes pas à l'aise avec la compilation manuelle de module noyau, nous vous recommandons d'utiliser une distribution officiellement supportée par Nvidia, pour laquelle ils fournissent des drivers *clés-en-main* : <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Une fois connecté dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} dans votre project Public Cloud, cliquez sur `Ajouter un serveur`{.action} et choisissez une instance GPU :
+Une fois connecté dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} dans votre project Public Cloud, cliquez sur `Ajouter un serveur`{.action} et choisissez une instance GPU :
 
-![public-cloud](images/EN-Flavors.png){.thumbnail}
+![public-cloud](images/EN-Flavors_2020.png){.thumbnail}
 
 Quelques secondes plus tard, l'instance est démarrée. Vous pourrez ensuite vous y connecter et vérifier la présence de la carte graphique : 
 
@@ -102,7 +102,7 @@ Il y a des incompatibilités entre le driver Nvidia et la solution de virtualisa
 
 Nous fournissons des images spéciales, reposant sur un BIOS virtuel UEFI, qui permettent au driver de fonctionner correctement :
 
-![public-cloud](images/EN-WindowsImages.png){.thumbnail}
+![public-cloud](images/EN-WindowsImages_2020.png){.thumbnail}
 
 
 > [!warning]
