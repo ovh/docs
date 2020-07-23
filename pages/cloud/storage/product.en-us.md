@@ -1,5 +1,5 @@
 ---
 title: Storage
 slug: storage
-excerpt: Start with OVH Storage Products
+excerpt: Start with OVHcloud Storage Products
 ---
