@@ -5,7 +5,7 @@ slug: utilisation-kvm-sur-vps
 section: Premiers pas
 ---
 
-**Dernière mise à jour le 2018/04/18**
+**Dernière mise à jour le 2020/07/20**
 
 ## Objectif
 
@@ -21,9 +21,9 @@ La console KVM permet une connexion directe à votre VPS sans avoir à utiliser 
 
 ### Connexion au KVM via l'espace client
 
-Une fois connecté à votre espace client, il vous suffit de vous rendre sur la page de gestion de votre VPS. Vous trouverez un bouton `KVM`{.action} :
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, onglet `Server`{.action}. Cliquez sur `VPS`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné. Cliquez sur le bouton `···`{.action} à côté du nom de votre VPS et vous verrez `KVM`{.action}:
 
-![Sélectionner le bouton KVM](images/activating_kvm_manager.png){.thumbnail}
+![Sélectionner le bouton KVM](images/activating_kvm_manager2.png){.thumbnail}
 
  
 Une fenêtre va alors initier la connexion sur votre VPS, ce qui peut durer quelques secondes. Vous n'aurez plus qu'à vous connecter :
@@ -38,21 +38,6 @@ Une fenêtre va alors initier la connexion sur votre VPS, ce qui peut durer quel
 ### Connexion au KVM via les API
 
 Il est parfois possible que vous rencontriez des difficultés à vous connecter au KVM via votre espace client. Il vous reste donc la solution des API. Connectez-vous d'abord sur [API OVH](https://api.ovh.com/).
-
-#### Sur un VPS 2014
-
-Sur les VPS 2014, des erreurs 1006 peuvent survenir, mais le passage par l'API peut résoudre ce problème. Voici l'API à utiliser :
-
-> [!api]
->
-> @api {POST} /vps/{serviceName}/openConsoleAccess
->
-
-Malgré le retour positif de l'API, il est possible que la connexion prenne une ou deux minutes pour s'établir, le temps que le port soit effectivement ouvert.
-
-#### Sur un VPS 2016
-
-En cas de problème avec le KVM, voici l'API conseillée pour l'accès au KVM :
 
 > [!api]
 >

@@ -95,7 +95,7 @@ If you would like to receive alerts when the forecast of your resource usage exc
 
 
 ## Instances
-The prices of cloud instances (or cloud servers) are listed in the OVHcloud Control Panel before you get started with an instance. You can also view prices on the [pricing page](https://www.ovh.com/ca/en/public-cloud/prices/){.external}.
+The prices of cloud instances (or cloud servers) are listed in the OVHcloud Control Panel before you get started with an instance. You can also view prices on the [pricing page](https://www.ovh.com/asia/public-cloud/prices/){.external}.
 
 
 
@@ -138,7 +138,7 @@ The calculation is: ( Price per GB per month / 720 ) x number of hours x number 
 
 The number of GB per hour corresponds to the maximum number of GB stored over the course of the hour. For example, if a user has 15GB at 16:20, 17GB at 16:40, and 14GB at 16:50, OVHcloud will charge 17GB for the 16:00 - 17:00 period.
 
-The storage prices are available directly on the [OVHcloud website](https://www.ovh.com/ca/en/public-cloud/storage/){.external}.
+The storage prices are available directly on the [OVHcloud website](https://www.ovh.com/asia/public-cloud/storage/){.external}.
 
 
 ### Additional volumes 
@@ -154,7 +154,7 @@ Snapshots of additional volumes are billed the same way as the volumes themselve
 
 
 ### Instance snapshots and images
-Both snapshots and images of instances (excluding the catalogue of images supplied by OVHcloud) are billed at a flat rate per GB per month, regardless of the original instance and image type. Go to the [pricing page](https://www.ovh.com/ca/en/public-cloud/instances/prices/){.external} to view prices.
+Both snapshots and images of instances (excluding the catalogue of images supplied by OVHcloud) are billed at a flat rate per GB per month, regardless of the original instance and image type. Go to the [pricing page](https://www.ovh.com/asia/public-cloud/instances/prices/){.external} to view prices.
 
 
 ### Object storage

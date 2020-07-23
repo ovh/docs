@@ -14,14 +14,11 @@ Public Cloud Archive est une offre de stockage froid destinée à héberger de g
 Lorsque vous stockez des données sur PCA, celles-ci sont directement gelées et ainsi ne peuvent pas être récupérées. Il vous faudra alors cliquer sur le bouton "Dégeler" afin d'entamer le processus de récupération.
 
 
-![public-cloud](images/PCARECUP.png){.manager}
+![public-cloud](images/PCA-unlock-1-fr.png){.thumbnail}
 
-Une fois que le procédé débuté, un délai apparaîtra à la place du bouton "dégeler". Votre fichier sera alors disponible au téléchargement à l'issue de ce délai.
-
-
-![public-cloud](images/PCARECUP2.png){.manager}
-
-Enfin votre fichier est accessible à l'issue du délai. Vous pouvez ainsi entammer le téléchargement directement par le navigateur ou via un client Swift/SFTP/SCP.
+Une fois que le procédé débuté, un délai apparaîtra à la place du bouton "dégeler". Votre fichier sera alors disponible au téléchargement à l'issue de ce délai. Enfin votre fichier est accessible à l'issue du délai. Vous pouvez ainsi entammer le téléchargement directement par le navigateur ou via un[client Swift/SFTP/SCP](../pca_sftp/guide.fr-fr.md){.ref}
 
 
-![public-cloud](images/PCARECUP3.png){.manager}
+![public-cloud](images/PCA-unlock-2-fr.png){.thumbnail}
+
+

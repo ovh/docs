@@ -17,18 +17,18 @@ Creating a snapshot is a fast and simple way to secure a functioning system befo
 
 > [!primary]
 >
-Before applying backup options, we recommend to consult the [product pages and FAQ](https://www.ovhcloud.com/en-sg/vps/options/) for pricing comparisons and further details.
+Before applying backup options, we recommend to consult the [VPS options]({ovh_www}/vps/options/) for pricing comparisons and further details.
 >
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-- an OVHcloud [VPS service](https://www.ovhcloud.com/en-sg/vps/) already set up
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- an OVHcloud [VPS service]({ovh_www}/vps/) already set up
 
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), navigate to the "Server" section, and select your server from the left-hand sidebar under `VPS`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), navigate to the "Server" section, and select your server from the left-hand sidebar under `VPS`{.action}.
 
 ### Step 1: Subscribing to the snapshot option
 
@@ -117,9 +117,37 @@ Running  QEMU-GA            QEMU Guest Agent
 ```
 
 
-## Go further
+#### Configuring the QEMU agent on a VPS
+
+Snapshots are instantaneous images of your running system ("live snapshot"). To ensure the availability of your system when the snapshot is created, the QEMU agent is used to prepare the filesystem for the process.
+
+The required *qemu-guest-agent* is not installed by default on most distributions. Moreover, licensing restrictions may prevent OVHcloud from including it in the available OS images. Therefore, it is best practice to verify and install the agent in case it is not activated on your VPS. Connect to your VPS via SSH and follow the instructions below, according to your operating system.
+
+##### **Debian-based distributions (Debian, Ubuntu)**
+
+Use the following command to check whether the system is properly set up for snapshots:
+
+```
+$ file /dev/virtio-ports/org.qemu.guest_agent.0
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+If the output is different ("No such file or directory"), install the latest package:
+
+```
+$ sudo apt-get update
+$ sudo apt-get install qemu-guest-agent
+```
+
+Start the service to ensure it is running:
+
+```
+$ sudo service qemu-guest-agent start
+```
+
+##### **Redhat-based distributions (Centos, Fedora)**
+
+Use the following command to check whether the system is properly set up for snapshots:
 
 [Using automated backups on a VPS](../using-automated-backups-on-a-vps)
-
 
 Join our community of users on <https://community.ovh.com/en/>.

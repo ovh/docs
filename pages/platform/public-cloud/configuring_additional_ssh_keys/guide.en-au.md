@@ -6,7 +6,7 @@ legacy_guide_number: g1924
 section: Security
 ---
 
-**Last updated 13/03/2019**
+**Last updated 2019/03/13**
 
 ## Objective
  
@@ -16,15 +16,15 @@ When creating an instance, it isn't possible to configure only one SSH key. Howe
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
-* a [Public Cloud Instance](https://www.ovh.com.au/public-cloud/instances/){.external} in your OVH account
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud Instance](https://www.ovh.com.au/public-cloud/instances/){.external} in your OVHcloud account
 * Command line access to your instance via SSH
 
 ## Instructions
 
 ### Creating the SSH key
 
-First, follow our guide to [Create your first SSH keys](https://docs.ovh.com/au/en/public-cloud/create-ssh-keys/){.external}.
+First, follow our guide to [Create your first SSH keys](../create-ssh-keys/){.external}.
 
 ### Configuring the new user
 
@@ -84,8 +84,8 @@ admin@server-1:~$ sudo vim /home/admin/.ssh/authorized_keys
 
 ## Go further
 
-[Create SSH keys](https://docs.ovh.com/au/en/public-cloud/create-ssh-keys/){.external}
+[Create SSH keys](../create-ssh-keys/){.external}
 
-[Replacing your lost SSH key pair](https://docs.ovh.com/au/en/public-cloud/replacing_your_lost_ssh_key_pair/){.external}
+[Replacing your lost SSH key pair](../replacing_your_lost_ssh_key_pair/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -5,11 +5,13 @@ excerpt: 'Craftez votre propre serveur et buildez votre monde !'
 section: Tutoriel
 ---
 
+**Dernière mise à jour le 2020/07/22**
+
 ## Introduction
 
 Minecraft est un jeu vidéo de construction au succès mondial. Il nécessite un serveur pour héberger votre partie, sur lequel vous vous connectez à distance avec vos amis.
 
-L'administration de ce serveur peut être déléguée à une entreprise externe, mais vous pouvez tout à fait l'héberger vous-même sur un [VPS](https://www.ovhcloud.com/fr/vps/){.external} ou un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}. Cela vous permet de réaliser des économies, ainsi que de personnaliser vos parties sans limite.
+L'administration de ce serveur peut être déléguée à une entreprise externe, mais vous pouvez tout à fait l'héberger vous-même sur un [VPS]({ovh_www}/vps/){.external} ou un [serveur dédié]({ovh_www}/serveurs_dedies/){.external}. Cela vous permet de réaliser des économies, ainsi que de personnaliser vos parties sans limite.
 
 Dans ce tutoriel, nous allons créer de A à Z un serveur Minecraft Java Edition sur un VPS OVHcloud et tester sa connectivité.
 
@@ -30,8 +32,8 @@ Dans ce tutoriel, nous allons créer de A à Z un serveur Minecraft Java Edition
 
 ### Ce que vous devez avoir
 
-- Disposer d'un [VPS SSD](https://www.ovhcloud.com/fr/vps/){.external}. Un minimum de 2 Go de RAM est conseillé.
-- Télécharger le paquet *minecraft_server.1.12.2.jar* sur <https://minecraft.net/fr-fr/download/server>.
+- Disposer d'un [VPS SSD]({ovh_www}/vps/){.external}. Un minimum de 2 Go de RAM est conseillé.
+- Télécharger le paquet *minecraft_server.1.16.1.jar* sur <https://minecraft.net/fr-fr/download/server>.
 
 
 ## En pratique
@@ -94,7 +96,7 @@ mkdir ~/server && cd ~/server
 >
 > 
 
-Rendez-vous sur le [site officiel de Minecraft](https://minecraft.net/fr-fr/download/server) pour télécharger le paquet. Dans notre cas, il suffit d'effectuer un clic droit sur `minecraft_server.1.12.2.jar` pour copier l'adresse du lien.
+Rendez-vous sur le [site officiel de Minecraft](https://minecraft.net/fr-fr/download/server) pour télécharger le paquet. Dans notre cas, il suffit d'effectuer un clic droit sur `minecraft_server.1.16.1.jar` pour copier l'adresse du lien.
 
 Maintenant que l'adresse du paquet est récupérée, téléchargez-le sur le VPS. Vérifiez que vous vous trouvez bien dans le dossier `server` créé précédemment, puis tapez :
 

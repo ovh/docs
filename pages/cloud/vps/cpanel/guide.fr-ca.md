@@ -72,7 +72,7 @@ Vous devriez à présent pouvoir vous connecter à WHM et en SSH en utilisant l'
 
 Nous vous recommandons de prendre toutes les mesures nécessaires pour sécuriser votre WHM et votre VPS. Pour cela, nous vous recommandons de lire les recommandations de cPanel [ici](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
 
-Nous vous recommandons également de consulter notre guide pour [sécuriser un VPS](../conseils-securisation-vps/), d'utiliser [nos solutions de sauvegarde](../) et de configurer le [Firewall Network](../../dedicated/firewall-network/).
+Nous vous recommandons également de consulter notre guide pour [sécuriser un VPS](../conseils-securisation-vps/), d'utiliser [nos solutions de sauvegarde](https://www.ovhcloud.com/fr-ca/vps/options/) et de configurer le [Firewall Network](../../dedicated/firewall-network/).
 
 ## Aller plus loin
 

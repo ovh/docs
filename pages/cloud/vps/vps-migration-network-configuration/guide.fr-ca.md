@@ -333,6 +333,10 @@ Modifiez manuellement votre configuration IP en utilisant les adresses précéde
 
 ![configure l'adresse IP statique](images/static-ip.png){.thumbnail}
 
-Pour configurer une adresse IP failover, consultez le guide suivant :
+Pour configurer une adresse IP failover, consultez le guide suivant [Configurer un IP failover](../public-cloud/configure_a_failover_ip)
 
-<https://docs.ovh.com/fr/public-cloud/configurer_une_ip_failover/>
+## Aller plus loin
+
+[Configurer un IP failover](../public-cloud/configure_a_failover_ip)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -94,7 +94,7 @@ Si vous souhaitez être alerté lorsque la projection de votre consommation dép
 
 
 ## Les instances
-Les prix des instances cloud (ou serveurs cloud) sont donnés dans l'interface client OVHcloud avant de démarrer une instance. Il peuvent également être directement consultés sur la [page tarif](https://www.ovh.com/fr/public-cloud/instances/tarifs/){.external}.
+Les prix des instances cloud (ou serveurs cloud) sont donnés dans l'interface client OVHcloud avant de démarrer une instance. Il peuvent également être directement consultés sur la [page tarif](https://www.ovh.com/ca/fr/public-cloud/instances/tarifs/){.external}.
 
 
 
@@ -137,7 +137,7 @@ Le calcul est : ( Prix du Go au mois / 720 ) x le nombre d'heure x le nombre de 
 
 Le nombre de Go par heure correspond à la quantitée maximale de Go stockée au cours de l'heure. Par exemple, si vous aviez 15 Go à 16h20, 17 Go à 16h40 et 14 Go à 16h50, alors OVH retiendra 17 Go pour la tranche horaire 16h-17h.
 
-Les prix du stockage sont disponibles directement sur [le site public OVHcloud](https://www.ovh.com/fr/public-cloud/storage/){.external}.
+Les prix du stockage sont disponibles directement sur [le site public OVHcloud](https://www.ovh.com/ca/fr/public-cloud/storage/){.external}.
 
 
 ### Volumes additionnels
@@ -153,7 +153,7 @@ Les snapshots de volumes additionnels sont facturés de la même manière que le
 
 
 ### Snapshots et images d'instance
-Les snapshots d'instances comme les images (hors catalogue d'images fourni par OVH) sont facturés à un prix fixe au Go par mois, quel que soit l'instance d'origine ou le type d'image. Rendez-vous sur la [page tarifs](https://www.ovh.com/fr/public-cloud/instances/tarifs/){.external} pour connaitre le tarif.
+Les snapshots d'instances comme les images (hors catalogue d'images fourni par OVH) sont facturés à un prix fixe au Go par mois, quel que soit l'instance d'origine ou le type d'image. Rendez-vous sur la [page tarifs](https://www.ovh.com/ca/fr/public-cloud/instances/tarifs/){.external} pour connaitre le tarif.
 
 
 ### Stockage Object

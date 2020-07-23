@@ -5,24 +5,24 @@ excerpt: 'This guide will show you which settings need to be changed to re-enabl
 section: 'Getting started'
 ---
 
-**Last updated 15th June 2019**
+**Last updated 2019/06/15**
 
 ## Objective
 
-When you install Windows Server 2012, 2012 R2 or 2016 on a [VPS](https://www.ovh.co.uk/vps/){.external}, the connection to your remote desktop can sometimes be disabled, as can the ICMP protocol response.
+When you install Windows Server on a [VPS](https://www.ovhcloud.com/en-ca/vps/){.external}, the connection to your remote desktop can sometimes be disabled, as can the ICMP protocol response.
 
 **This guide will show you which settings need to be changed to re-enable remote desktop connection and ICMP.**
 
 ## Requirements
 
-* a [VPS](https://www.ovh.co.uk/vps/){.external} with Windows Server 2012, 2012 R2 or 2016 installed
+* a [VPS](https://www.ovhcloud.com/en-ca/vps/){.external} with Windows Server installed
 * access to the OVH [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 ### Step 1: Log in to the KVM
 
-To access the KVM of your VPS, please follow the [VPS KVM guide](https://docs.ovh.com/gb/en/vps/use-kvm-for-vps/){.external}
+To access the KVM of your VPS, please follow the [VPS KVM guide](https://docs.ovh.com/ca/en/vps/use-kvm-for-vps/){.external}
 
 ### Step 2: Configure Windows settings
 
@@ -38,7 +38,7 @@ Windows will now apply your settings. When this is done, you will see the follow
 
 ![KVM](images/setup-05.png){.thumbnail}
 
-On the sign-in screen, enter the password you created for your Administrator account and hit the `Next`{.action} key on your keyboard.
+On the sign-in screen, enter the password you created for your Administrator account and hit the `Enter`{.action} key on your keyboard.
 
 ![KVM](images/setup-06.png){.thumbnail}
 

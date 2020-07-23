@@ -21,12 +21,12 @@ Cette option vous offre un moyen pratique de disposer fréquemment de sauvegarde
 ## Prérequis
 
 - Être connecté à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
-- Un VPS OVHcloud déjà configuré
+- Un [VPS OVHcloud](https://www.ovhcloud.com/fr-ca/vps/options/) déjà configuré
 - Un accès administrateur (root) en SSH à votre VPS (facultatif)
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Server` et sélectionnez votre serveur dans colonne de gauche sous la partie `VPS`{.action} .
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, onglet `Server` et sélectionnez votre serveur dans colonne de gauche sous la partie `VPS`{.action}.
 
 ### Étape 1 : souscrire l'option de sauvegarde automatique
 
@@ -71,7 +71,7 @@ Une fois le processus terminé, vous recevrez un e-mail. Vous pourrez alors vous
 
 Connectez-vous à votre VPS en SSH.
 
-Vous pouvez utiliser la commande suivante pour vérifier le nom du nouveau périphérique connecté :
+Vous pouvez utiliser la commande suivante pour vérifier le nom du nouveau périphérique connecté:
 ```
 # lsblk
 ```
@@ -101,6 +101,6 @@ Vous pouvez maintenant basculer vers ce dossier et accéder à vos données de s
 
 ## Aller plus loin
 
-[Utiliser les snapshots sur un VPS](https://docs.ovh.com/ca/fr/vps/snapshot-vps/)
+[Utiliser les snapshots sur un VPS](../snapshot-vps/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

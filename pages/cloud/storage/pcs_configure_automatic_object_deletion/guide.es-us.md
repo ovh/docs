@@ -17,7 +17,7 @@ Esta guía explica cómo eliminar los archivos de manera automática al cabo de 
 Para seguir todos los pasos de esta guía, es necesario:
 
 
-- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/)
+- [Preparar el entorno para utilizar la API de OpenStack](../preparar_el_entorno_para_utilizar_la_api_de_openstack){.ref}
 - Cargar las variables de entorno de OpenStack
 
 

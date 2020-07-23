@@ -20,7 +20,7 @@ L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VP
 
 ## Prérequis
 
-- Disposer d'un [serveur VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external}.
+- Disposer d'un [serveur VPS OVHcloud](https://www.ovhcloud.com/fr-ca/vps/){.external}.
 - Être connecté en SSH à votre VPS (accès root).
 - Disposer de connaissances basiques en réseau.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Cloud`{.action}.
@@ -46,8 +46,8 @@ Avant de débuter, et afin d’utiliser les mêmes terminologies durant les mani
 
 La première étape consiste à récupérer l’adresse IPV6 et la gateway IPv6 assignées à votre serveur. Deux méthodes sont possibles, poursuivez vers celle que vous souhaitez utiliser.
 
-- [Obtenir les informations réseau via l'espace client](https://docs.ovh.com/fr/vps/configurer-ipv6/#via-votre-espace-client).
-- [Obtenir les informations réseau via les API](https://docs.ovh.com/fr/vps/configurer-ipv6/#via-les-api-ovhcloud).
+- [Obtenir les informations réseau via l'espace client](./#via-votre-espace-client).
+- [Obtenir les informations réseau via les API](./#via-les-api-ovhcloud).
 
 #### Via votre espace client
 
@@ -59,7 +59,7 @@ L'adresse IPv6 et la gateway IPv6 assignées à votre serveur apparaissent dans 
 
 #### Via les API OVHcloud
 
-Rendez-vous sur le site <https://api.ovh.com/console/> et connectez-vous à ce dernier avec votre identifiant OVHcloud. Utilisez ensuite les deux API ci-dessous.
+Rendez-vous sur le site <https://ca.api.ovh.com/console/> et connectez-vous à ce dernier avec votre identifiant OVHcloud. Utilisez ensuite les deux API ci-dessous.
 
 La première vous permet de récupérer l'adresse IPv6 assignée à votre serveur.
 
@@ -79,7 +79,7 @@ Récupérez ces dernières puis poursuivez vers l'étape 2 « [Appliquer la conf
 
 ### Étape 2 : appliquer la configuration IPv6
 
-Une fois les informations nécessaires pour la configuration IPv6 en votre possession, connectez-vous en SSH à votre VPS. Si besoin, aidez-vous des informations de notre documentation « [Introduction au SSH](https://docs.ovh.com/fr/dedicated/ssh-introduction/){.external} ».
+Une fois les informations nécessaires pour la configuration IPv6 en votre possession, connectez-vous en SSH à votre VPS. Si besoin, aidez-vous des informations de notre documentation « [Introduction au SSH](https://docs.ovh.com/ca/fr/dedicated/ssh-introduction/){.external} ».
 
 Il existe plusieurs méthodes pour appliquer la configuration IPv6. En fonction de votre situation et de vos besoins, poursuivez vers celle que vous souhaitez utiliser.
 
@@ -112,9 +112,9 @@ Il existe deux méthodes pour configurer votre réseau selon le système d'explo
 
 - **pour Debian 8 et inférieure, Ubuntu 16.04 et inférieure** : utilisez la méthode basée sur le fichier "interfaces" ;
 
-- **pour Ubuntu 17.04 et versions ultérieures** : utilisez la méthode basée sur la fonction « Netplan ».
+- **pour Debian 9 Ubuntu 17.04 et versions ultérieures** : utilisez la méthode basée sur la fonction « Netplan ».
 
-Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spécifiée ci-dessus. Pour vous en assurer, naviguez dans votre système pour vérifier la méthode active dans votre cas (systemd-network, cloud-init ou interfaces).
+Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spécifiée ci-dessus. Pour vous en assurer, naviguez dans votre système pour vérifier la méthode active. Pour plus d'information, visitez <https://netplan.io/> si nécessaire.
 
 > [!warning]
 >
@@ -123,8 +123,8 @@ Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spé
 
 Poursuivez à présent vers la méthode qui correspond à votre situation.
 
-- [Configuration du fichier « interfaces »](../configurer-ipv6/#configuration-du-fichier-interfaces)
-- [Configuration via la fonction Netplan](../configurer-ipv6/#configuration-via-la-fonction-netplan)
+- [Configuration du fichier « interfaces »](./#configurer-ipv6/#configuration-du-fichier-interfaces)
+- [Configuration via la fonction Netplan](./#configurer-ipv6/#configuration-via-la-fonction-netplan)
 
 #####  Configuration du fichier « interfaces »
 

@@ -14,7 +14,7 @@ This is compatible with OVH Public Cloud Object Storage and lets you back up you
 
 ### Prerequisites
 - [Add storage space](../guide.en-gb.md){.ref}
-- [Configure user access to Horizon](https://www.ovh.com/fr/publiccloud/guides/g1773.creer_un_acces_a_horizon){.external}
+- [Configure user access to Horizon](../platform/public-cloud/create_and_delete_a_user/guide.en-gb.md){.ref}
 
 
 ## DiskStation Manager 6.0 configuration
