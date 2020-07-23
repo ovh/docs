@@ -116,7 +116,28 @@ If you go back to the **Security** window, you can check that the account has be
 
 #### Step 3: Register the Veeam Backup & Replication server
 
-You will need to do this via the OVHcloud API.
+##### **Using the OVHcloud Control Panel**
+
+In your OVHcloud Control Panel, open the `Server` section, then select your service labelled **backupserverenterprise** under `Platforms and services`{.action} in the left-hand navigation bar. On this page, click on `Activate licence`{.action} in the `Shortcuts` box.
+
+![control panel register](images/veeam001.png){.thumbnail}
+
+In the new window, enter the following information:
+
+- The public IP address through which your **Veeam Backup & Replication** server can be reached.
+- The port of your **Veeam Backup & Replication** server (usually **9392/TCP**).
+- The login credentials you have created previously (user name and password).
+
+Validate by clicking `OK`{.action}.
+
+![activation licence](images/veeam03.png){.thumbnail}
+
+Once the activation is complete, you will find the main information on the service page.
+
+![licence activated](images/veeam02.png){.thumbnail}
+
+
+##### **Using the OVHcloud API**
 
 First, retrieve your serviceName:
 
