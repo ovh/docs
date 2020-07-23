@@ -124,7 +124,7 @@ To activate and manage a vRack using the OVHcloud APIv6, please refer to [this s
 
 It is necessary to create a VLAN so that the connected instances can communicate with each other.
 
-For the Public Cloud service, you can create up to 4000 VLANs within one vRack. This means that you can use each private IP address up to 4,000 times.
+With the Public Cloud service, you can create up to 4,000 VLANs within one vRack. This means that you can use each private IP address up to 4,000 times.
 Thus, for example, 192.168.0.10 of VLAN 2 is different from IP 192.168.0.10 of VLAN 42.
 This can be useful in order to segment your vRack between multiple virtual networks.
 
@@ -155,7 +155,7 @@ Click on the button `Add Private Network`{.action}. The following page allows yo
 
 ![add private network](images/vrack5.png){.thumbnail}
 
-If you select the `Set a VLAN ID` option, you will need to choose a VLAN ID number between 2 and 4000.
+If you select the `Set a VLAN ID` option, you will need to choose a VLAN ID number between 2 and 4,000.
 
 If you have not ticked the box `Set a VLAN ID`, VLAN 0 will be set automatically.
 
@@ -599,3 +599,4 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 [Creating multiple vLANs in a vRack](../../dedicated/multiple-vlans/)
 
 Join our community of users on <https://community.ovh.com/en/>.
+
