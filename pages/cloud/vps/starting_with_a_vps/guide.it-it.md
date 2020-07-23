@@ -6,7 +6,7 @@ section: 'Per iniziare'
 order: 1
 ---
 
-**Ultimo aggiornamento: 08/06/2020**
+**Ultimo aggiornamento: 22/07/2020**
  
 ## Obiettivo
 
@@ -93,8 +93,9 @@ Si apre una finestra da cui potrai scegliere:
 
 > [!primary]
 >
-> Alcune distribuzioni come Plesk e Windows richiedono l’utilizzo di una licenza, che può essere acquistata in OVHcloud o presso un altro rivenditore. La licenza dovrà poi essere integrata manualmente o dallo Spazio Cliente OVHcloud. Accedendo alla sezione `Server`{.action}>` Licenze`{.action}
-è possibile gestire le tue licenze, ordinarne di nuove (pulsante `Ordina`{.action}) o aggiungere una licenza SPLA Windows o SPLA SQL Server (pulsante `Aggiungi una licenza SPLA`{.action}).
+> Alcuni sistemi operativi o piattaforme proprietarie come Plesk o cPanel richiedono licenze che generano costi aggiuntivi. Le operazioni di gestione delle licenze sono disponibili dallo Spazio Cliente: è sufficiente accedere alla sezione `Server` in alto a destra e cliccare su `Licenze`{.action}.
+> 
+> Un sistema operativo **Windows** può essere utilizzato su un VPS solo se questa **opzione viene selezionata in fase d’ordine**. Sui VPS con altri sistemi operativi non è quindi possibile reinstallare Windows.
 > 
 
 L’operazione di reinstallazione potrebbe richiedere fino a 30 minuti. Una barra di progressione ti mostrerà lo stato di avanzamento del processo:
@@ -140,8 +141,9 @@ Si apre una finestra da cui potrai scegliere:
 
 > [!primary]
 >
-> Alcune distribuzioni come Plesk e Windows richiedono l’utilizzo di una licenza, che può essere acquistata in OVHcloud o presso un altro rivenditore. La licenza dovrà poi essere integrata manualmente o dallo Spazio Cliente OVHcloud. Accedendo alla sezione `Server`{.action}>` Licenze`{.action}
-è possibile gestire le tue licenze, ordinarne di nuove (pulsante `Ordina`{.action}) o aggiungere una licenza SPLA Windows o SPLA SQL Server (pulsante `Aggiungi una licenza SPLA`{.action}).
+> Alcuni sistemi operativi o piattaforme proprietarie come Plesk o cPanel richiedono licenze che generano costi aggiuntivi. Le operazioni di gestione delle licenze sono disponibili dallo Spazio Cliente: è sufficiente accedere alla sezione `Server` in alto a destra e cliccare su `Licenze`{.action}.
+> 
+> Un sistema operativo **Windows** può essere utilizzato su un VPS solo se questa **opzione viene selezionata in fase d’ordine**. Sui VPS con altri sistemi operativi non è quindi possibile reinstallare Windows.
 > 
 
 L’operazione di reinstallazione potrebbe richiedere fino a 30 minuti. Una barra di progressione ti mostrerà lo stato di avanzamento del processo:
