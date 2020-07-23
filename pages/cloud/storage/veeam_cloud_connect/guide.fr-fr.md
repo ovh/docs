@@ -31,7 +31,7 @@ Liste des produits OVHcloud compatibles :
 
 ### Commande de l'offre
 
-L'offre peut être commandée depuis le site [OVH.com](https://www.ovh.com/fr/storage-solutions/veeam-cloud-connect/){.external}
+L'offre peut être commandée depuis le site [OVHcloud.com](https://www.ovh.com/fr/storage-solutions/veeam-cloud-connect/){.external}
 
 Une fois le paiement effectué, vous recevrez un mail avec :
 
@@ -43,28 +43,28 @@ Une fois le paiement effectué, vous recevrez un mail avec :
 
 Dans votre espace client OVHcloud, rendez-vous dans la partie `Server` puis `Plateformes et Services`.
 
-![veeam cloud connect](images/veeam-cloud-connect-manager-start.png){.thumbnail}
+![veeam cloud connect](images/veeam-cloud-connect-manager-start1.png){.thumbnail}
 
 Vous arriverez ensuite sur cette page reprenant la configuration de votre offre, votre abonnement, le lieu de stockage.
 
-![veeam cloud connect](images/veeam-cloud-connect-manager.png){.thumbnail}
+![veeam cloud connect](images/veeam-cloud-connect-manager1.png){.thumbnail}
 
 Dans le second onglet `Espace de stockage`, vous retrouverez le nom de votre espace de stockage, son utilisation, le quota, et le datacentre de réplication.
 
 
-![veeam cloud connect](images/veeam-cloud-connect-manager-espace.png){.thumbnail}
+![veeam cloud connect](images/veeam-cloud-connect-manager-espace1.png){.thumbnail}
 
 Au bout de cette ligne, vous pouvez apercevoir un bouton.
 
 Celui-ci sert à augmenter ou diminuer le quota de stockage.
 
 
-![veeam cloud connect](images/veeam-cloud-connect-manager-modif-espace.png){.thumbnail}
+![veeam cloud connect](images/veeam-cloud-connect-manager-modif-espace1.png){.thumbnail}
 
 Lorsque vous avez modifié la valeur, ce message apparaîtra :
 
 
-![veeam cloud connect](images/veeam-cloud-connect-manager-modif-espace-ok.png){.thumbnail}
+![veeam cloud connect](images/veeam-cloud-connect-manager-modif-espace-ok1.png){.thumbnail}
 
 
 ### Installation

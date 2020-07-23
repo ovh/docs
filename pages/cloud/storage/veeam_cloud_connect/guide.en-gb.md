@@ -41,23 +41,23 @@ Order your solution on the [website](https://www.ovh.co.uk/storage-solutions/vee
 
 In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), switch to the "Server" section and open the menu `Platforms and services`{.action} in the left-hand navigation bar.
 
-![veeam cloud connect](images/veeam-cloud-connect-manager-start.png){.thumbnail}
+![veeam cloud connect](images/veeam-cloud-connect-manager-start1.png){.thumbnail}
 
 Click on your new service to view the `Home` tab, where some general information is displayed.
 
-![veeam cloud connect](images/veeam-cloud-connect-manager.png){.thumbnail}
+![veeam cloud connect](images/veeam-cloud-connect-manager1.png){.thumbnail}
 
 On the second tab, `Storage Space`, you will find your storage space's name, usage, quota, and replication data centre.
 
-![veeam cloud connect](images/veeam-cloud-connect-manager-espace.png){.thumbnail}
+![veeam cloud connect](images/veeam-cloud-connect-manager-espace1.png){.thumbnail}
 
 You can use the `...`{.action} button on this page to modify the quota for your storage space.
 
-![veeam cloud connect](images/veeam-cloud-connect-manager-modif-espace.png){.thumbnail}
+![veeam cloud connect](images/veeam-cloud-connect-manager-modif-espace1.png){.thumbnail}
 
 Define the new quota and click on `Edit`{.action} to confirm.
 
-![veeam cloud connect](images/veeam-cloud-connect-manager-modif-espace-ok.png){.thumbnail}
+![veeam cloud connect](images/veeam-cloud-connect-manager-modif-espace-ok1.png){.thumbnail}
 
 
 ### Setting up your solution with the Veeam console
