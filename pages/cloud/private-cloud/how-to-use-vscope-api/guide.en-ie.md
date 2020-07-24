@@ -20,7 +20,7 @@ You can also access this information via the APIv6 and Metrics API.
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/)
 - access to the management interface (vScope)
 
 ## Instructions
