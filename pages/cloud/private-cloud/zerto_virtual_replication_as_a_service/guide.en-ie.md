@@ -15,7 +15,7 @@ This guide will present the concepts and steps required to setup Zerto Virtual R
 
 ## Requirements 
 
-- having 2 Private Cloud Platforms [Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/) on 2 different data centres
+- having 2 Private Cloud Platforms [Private Cloud](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/hosts/) on 2 different data centres
 - in each data centre, a free public IP must be available
 
 ### Zerto Virtual Replication Concepts
