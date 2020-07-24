@@ -17,7 +17,7 @@ Dans certains cas il peut être utile de supprimer un serveur hôte (_host_) de 
 
 ## Prérequis
 
-* Posséder une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+* Posséder une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
 * Accéder à l’interface de gestion vSphere.
 
 
