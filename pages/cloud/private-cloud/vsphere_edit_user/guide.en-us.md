@@ -16,12 +16,12 @@ You can associate a name, first name, phone number, and email address with a vSp
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) go to the section `Server`. Click on `Private Cloud` in the service bar on the left and select your infrastructure.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) go to the section `Server`. Click on `Private Cloud` in the service bar on the left and select your infrastructure.
 
 ![user vsphere](images/addMailOnUser01.png){.thumbnail}
 
