@@ -16,7 +16,7 @@ The OVHcloud Network plugin was developed to allow for a more focused management
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/asia/enterprise/products/hosted-private-cloud/)
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/)
 - an IP address block linked to your Hosted Private Cloud infrastructure
 - access to the vSphere interface
 
