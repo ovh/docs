@@ -16,7 +16,7 @@ La mise en place d'une double authentification permet de protéger l'accès à v
  
 ## Prérequis
 
-- Disposer d'une infrastructure [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/) avec l'option de [sécurité avancée](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) (inclus dans les offres PCI-DSS et HDS).
+- Disposer d'une infrastructure [Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/) avec l'option de [sécurité avancée](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) (inclus dans les offres PCI-DSS et HDS).
 - Disposer d'un smartphone et d'une application d'authentification (exemples : Google Authenticator, Authy, OTP Auth...).
 
 ## En pratique
@@ -85,7 +85,7 @@ La seule différence sera l'autonomie ou non de l'utilisateur pour la validation
 
 Il est possible d'utiliser plusieurs applications tierces nécessitant la connexion au vCenter.
 
-Ces applications doivent être préalablement autorisées au travers de la politique d'accès au vCenter qui est paramétrable dans votre [espace client](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#securite)
+Ces applications doivent être préalablement autorisées au travers de la politique d'accès au vCenter qui est paramétrable dans votre [espace client](../manager-ovh-private-cloud/#securite)
 
 Ces applications vont alors pouvoir accéder à nos infrastructures, mais ne vont pas forcément gérer la double authentification.
 
