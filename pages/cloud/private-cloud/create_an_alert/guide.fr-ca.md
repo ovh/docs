@@ -16,7 +16,7 @@ Il est possible de créer une alerte sur tous les éléments de votre Private Cl
 
 ## Prérequis
 
-- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
 - Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
 
 ## En pratique
