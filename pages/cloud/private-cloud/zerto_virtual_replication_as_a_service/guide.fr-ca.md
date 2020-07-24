@@ -15,7 +15,7 @@ Ce guide a pour objectif d’expliquer les concepts et les détails de la mise e
 
 ## Prérequis
 
-* Posséder deux offres [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external} sur deux locations différentes.
+* Posséder deux offres [Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external} sur deux locations différentes.
 * Avoir sur chacune d'entre elles une adresse IP publique libre.
 
 ### Concepts Zerto Virtual Replication
