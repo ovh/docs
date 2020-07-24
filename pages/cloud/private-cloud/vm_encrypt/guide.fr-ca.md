@@ -16,7 +16,7 @@ Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre de VM Enc
 
 ## Prérequis
 
-- Avoir souscrit une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
+- Avoir souscrit une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
 - Disposer d'un serveur de clé (KMS) externe compatible **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external} 1.1** et dans la [matrice de compatibilité](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} VMware.
 - Avoir accès à l’interface de gestion vSphere.
 - Posséder des machines virtuelles avec une version Hardware 13 (minimum).
