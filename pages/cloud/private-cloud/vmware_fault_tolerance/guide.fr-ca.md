@@ -54,7 +54,7 @@ Plusieurs opérations sont dès lors disponibles en fonction de votre besoin.
 
 ![Fault Tolerance](images/FT5.png){.thumbnail}
 
-Le mode [résilience](https://docs.ovh.com/fr/private-cloud/mode-resilience/){.external-link} d'OVHcloud est un bon moyen de tester la très haute disponibilité de votre machine virtuelle en **Fault Tolerance**.
+Le mode [résilience](../mode-resilience/){.external-link} d'OVHcloud est un bon moyen de tester la très haute disponibilité de votre machine virtuelle en **Fault Tolerance**.
 
 ## Actions impossibles et incompatibilités
 
