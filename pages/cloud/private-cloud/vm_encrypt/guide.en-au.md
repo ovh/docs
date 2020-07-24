@@ -13,7 +13,7 @@ This guide aims to explain the details of implementing VMencrypt on the OVHcloud
 
 ## Requirements
 
-- Have a [Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/){.external} offer.
+- Have a [Private Cloud](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/){.external} offer.
 - Have a external **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external} 1.1** compatible Key management server (KMS) and how are in VMware [compatibility matrix](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} VMware
 - Access to the vSphere management interface.
 - Have virtual machines with at least Hardware version 13
