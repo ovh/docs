@@ -15,7 +15,7 @@ Veeam Cloud Connect is an off-site backup solution. It provides an easy and secu
 
 ## Requirements
 
-- a subscription to the [Veeam Cloud Connect](https://www.ovh.co.uk/storage-solutions/veeam-cloud-connect/) solution
+- a subscription to the [Veeam Cloud Connect](https://www.ovh.com.au/storage-solutions/veeam-cloud-connect/) solution
 - a compatible service (OVHcloud or external)
 
 ### Compatible services
@@ -24,22 +24,22 @@ The main advantage of Veeam Cloud Connect, beyond its simplicity, is that it wor
 
 OVHcloud services that are compatible with Veeam Cloud Connect:
 
-- [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- Virtual machines running on [dedicated servers](https://www.ovh.co.uk/dedicated_servers/), administrated with Microsoft Hyper-V or VMware ESXi
+- [Hosted Private Cloud](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/)
+- Virtual machines running on [dedicated servers](https://www.ovh.com.au/dedicated-servers/), administrated with Microsoft Hyper-V or VMware ESXi
 
 
 ## Instructions
 
 ### Subscribing to the Veeam Cloud Connect solution
 
-Order your solution on the [website](https://www.ovh.co.uk/storage-solutions/veeam-cloud-connect/). Once the payment is processed, you will receive a confirmation email, containing:
+Order your solution on the [website](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/). Once the payment is processed, you will receive a confirmation email, containing:
 
 - the IP address and name of your service
 - user name and password
 
 ### Managing the service in the OVHcloud Control Panel
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), switch to the "Server" section and open the menu `Platforms and services`{.action} in the left-hand navigation bar.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), switch to the "Server" section and open the menu `Platforms and services`{.action} in the left-hand navigation bar.
 
 ![veeam cloud connect](images/veeam-cloud-connect-manager-start1.png){.thumbnail}
 
