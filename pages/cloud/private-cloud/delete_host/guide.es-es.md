@@ -41,7 +41,7 @@ Puede seguir el progreso de la operación en la zona **Recent Tasks**.
 
 ### 2. Eliminar el servidor host
 
-Una vez que el servidor esté en modo de mantenimiento, haga clic derecho sobre él y seleccione `OVHcloud`{.action} y luego `Remove OVH Host`{.action}.
+Una vez que el servidor esté en modo de mantenimiento, haga clic derecho sobre él y seleccione `OVHcloud`{.action} y luego `Remove this host`{.action}.
 
 ![Eliminar el host](images/removehost04.png){.thumbnail}
 
