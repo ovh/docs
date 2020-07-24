@@ -15,14 +15,14 @@ Existen situaciones en las que puede ser útil eliminar un datastore del cluster
 
 ## Requisitos
 
-* Tener contratado un servicio [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}.
+* Tener contratado un servicio [Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external}.
 * Estar conectado al cliente vSphere.
 
 ## Procedimiento
 
 > [!warning]
 >
-> Por motivos de seguridad, no es posible eliminar los **dos datastores de 300 GB o 1,2 TB** incluidos en un pack ni eliminar un datastore si este contiene máquinas virtuales (en la pantalla de confirmación puede ver la lista de máquinas virtuales alojadas en el datastore).
+> Por motivos de seguridad, no es posible eliminar los **dos datastores de 300 GB o 1,2 TB** incluidos en un pack ni eliminar un datastore si este contiene máquinas virtuales (en la pantalla de confirmación puede ver la lista de máquinas virtuales alojadas en el datastore).
 >
 
 Para eliminar un datastore, acceda al almacenamiento de su plataforma en la pestaña `Storage`{.action} de la columna izquierda. Haga clic derecho sobre el datastore correspondiente y seleccione `OVHcloud`{.action} y luego `Remove Storage`{.action}.
