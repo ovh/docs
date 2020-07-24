@@ -15,7 +15,7 @@ To ensure optimal security for your system, we recommend limiting access to it. 
 
 ## Requirements
 
-- You must be logged in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
 
@@ -23,14 +23,14 @@ To ensure optimal security for your system, we recommend limiting access to it. 
 
 This first method involves restricting access based on the user's IP address. For this purpose, we recommend continuing to work with a registration system that uses whitelisting. This technique refuses access by default for all IP addresses. You can then manually add the IPs that require access to your infrastructure.
 
-You can do this directly in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Go to the Private Cloud section, then `Security`{.action}. In this section, you will see a table listing all authorised or denied IP addresses. To add new ones, click `Add IPs`{.action} on the right-hand side:
+You can do this directly in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Go to the Private Cloud section, then `Security`{.action}. In this section, you will see a table listing all authorised or denied IP addresses. To add new ones, click `Add IPs`{.action} on the right-hand side:
 
 ![Add IP](images/adding_ip.png){.thumbnail}
 
 
 ### Create specific users
 
-We highly recommend creating personal accounts for each user that requires access to your infrastructure. You can also do this in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in the `Users`{.action} tab. To add new users, click the `Create User`{.external} button on the right-hand side.
+We highly recommend creating personal accounts for each user that requires access to your infrastructure. You can also do this in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, in the `Users`{.action} tab. To add new users, click the `Create User`{.external} button on the right-hand side.
 
 ![Users](images/users.png){.thumbnail}
 
@@ -59,7 +59,7 @@ You can then manage each user’s rights by clicking on the cogwheel icons at th
 
 When users finish a session, we recommend closing the session accordingly. To limit connection time, you can set a session expiry duration.
 
-To do this, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Go to the Private Cloud section, then `Security`{.action}. Next, click the `Change expiry duration`{.action} button, situated on the right-hand side of the screen. In the following window, you can choose the time (in minutes) before a session expires.
+To do this, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Go to the Private Cloud section, then `Security`{.action}. Next, click the `Change expiry duration`{.action} button, situated on the right-hand side of the screen. In the following window, you can choose the time (in minutes) before a session expires.
 
 ![Session expiry](images/expiration.png){.thumbnail}
 
