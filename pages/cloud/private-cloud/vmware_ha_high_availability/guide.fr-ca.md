@@ -22,7 +22,7 @@ La fonction principale de **VMware HA** (High Availability) en cas de défaillan
 ## Prérequis
 
 - Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
-- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
 
 ## En pratique
 
