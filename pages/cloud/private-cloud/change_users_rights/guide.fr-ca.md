@@ -14,8 +14,8 @@ Ce guide a pour objectif d'expliquer les détails de la gestion de droits utilis
 
 ## Prérequis
 
-* Posséder une offre [Hosted Private cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
-* Etre connecter à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Posséder une offre [Hosted Private cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
+* Etre connecter à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
