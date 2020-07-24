@@ -16,7 +16,7 @@ Depuis votre interface vSphere, vous pouvez déployer des machines virtuelles de
 
 ## Prérequis
 
-- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
 - Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
 
 ## En pratique
