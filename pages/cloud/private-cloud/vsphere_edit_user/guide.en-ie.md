@@ -16,7 +16,7 @@ You can associate a name, first name, phone number, and email address with a vSp
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
