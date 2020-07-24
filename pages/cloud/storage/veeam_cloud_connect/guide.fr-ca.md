@@ -15,7 +15,7 @@ Veeam Cloud Connect est une solution proposée par l'éditeur Veeam. Elle permet
 
 ## Prérequis
 
-- Avoir souscrit à l'offre [Veeam Cloud Connect](https://www.ovh.com/fr/storage-solutions/veeam-cloud-connect/){.external}.
+- Avoir souscrit à l'offre [Veeam Cloud Connect](https://www.ovh.com/ca/fr/storage-solutions/veeam-cloud-connect/){.external}.
 
 ## En pratique
 
@@ -25,13 +25,13 @@ Le principal intérêt de Veeam Cloud Connect, en dehors de sa simplicité, est 
 
 Liste des produits OVHcloud compatibles :
 
-- [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}
-- Machines virtuelles hébergées sur nos [Serveurs dédiés](https://www.ovh.com/fr/serveurs_dedies/){.external} et administrées via Microsoft Hyper-V ou VMware ESXi.
+- [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}
+- Machines virtuelles hébergées sur nos [Serveurs dédiés](https://www.ovh.com/ca/fr/serveurs-dedies/){.external} et administrées via Microsoft Hyper-V ou VMware ESXi.
 
 
 ### Commande de l'offre
 
-L'offre peut être commandée depuis le site [OVHcloud.com](https://www.ovh.com/fr/storage-solutions/veeam-cloud-connect/){.external}
+L'offre peut être commandée depuis le site [OVHcloud.com](https://www.ovh.com/ca/fr/storage-solutions/veeam-cloud-connect/){.external}
 
 Une fois le paiement effectué, vous recevrez un mail avec :
 
